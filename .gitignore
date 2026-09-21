@@ -36,3 +36,4 @@ App-EF-Lernvault/src-tauri/*.pub
 *.msi
 *.exe
 !**/tools/*.exe
+App-EF-Lernvault/*.tsbuildinfo
