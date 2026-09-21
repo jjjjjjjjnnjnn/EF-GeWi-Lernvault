@@ -1,3 +1,12 @@
+---
+fach: ""
+thema: "Glossar DE-ZH GeWi"
+operatoren: []
+klausurrelevant: false
+datum: 2026-09-21
+tags: [EF, Meta]
+---
+
 # Glossar-DE-ZH-GeWi 跨文科术语库
 
 | Deutsch | Chinesisch | Fach | Beispielsatz |

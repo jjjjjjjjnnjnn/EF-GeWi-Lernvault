@@ -14,8 +14,9 @@
 | Musik/Sport mündl. | ⏳ Phase 3 | 各目录 README | — | — | — | — |
 
 ## App（桌面软件，一站式入口）
-- [App-EF-Lernvault](../App-EF-Lernvault/README.md) — EF-Lernvault v0.1.0-prototype：笔记/背卡/刷题/AI助教/规划/导图六模块；`npm run dev` 预览。
-- [LICENSE](../App-EF-Lernvault/LICENSE)（半开源草案，待定稿） · [NOTICE](../App-EF-Lernvault/NOTICE.md)（第三方署名）
+- [App-EF-Lernvault](../App-EF-Lernvault/README.md) — EF-Lernvault：六模块 + 命令面板/快捷键/拖拽 + P1接线（顶栏打开真实vault，笔记/背卡/面板全切真实数据）；`npm run dev` 预览（1420）。
+- [LICENSE](../App-EF-Lernvault/LICENSE)（半开源，已定稿） · [NOTICE](../App-EF-Lernvault/NOTICE.md)（第三方署名，实测版本）
+- 规范：[UI-BRIEF](../App-EF-Lernvault/UI-BRIEF.md)（tufte简洁风） · [INTERACTION-BRIEF](../App-EF-Lernvault/INTERACTION-BRIEF.md)（交互）
 - 约定：App 只读 vault（内容源），不写回；commit 前缀 `[App]`；构建产物与签名密钥永不进 git。
 
 ## META
@@ -43,6 +44,7 @@
 - [2026-09-21-ui-redesign-tufte](Journal/2026-09-21-ui-redesign-tufte.md) — App UI 重做（Tufte Data-Ink 风格）
 - [2026-09-21-nav-icons](Journal/2026-09-21-nav-icons.md) — 导航去 emoji 换细线 SVG
 - [2026-09-21-interaction](Journal/2026-09-21-interaction.md) — 交互重做（命令面板/快捷键/拖拽）
+- [2026-09-21-p1-audit](Journal/2026-09-21-p1-audit.md) — P1 接线 + 全库审计
 - 约定：文件名 `YYYY-MM-DD-<thema>.md`，头部frontmatter（`fach`可空，`tags: [EF, Meta]`）。
 
 ## Dataview（Obsidian内自动索引，GitHub上仅作备份显示）

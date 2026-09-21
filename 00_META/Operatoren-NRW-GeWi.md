@@ -1,3 +1,12 @@
+---
+fach: ""
+thema: "Operatoren NRW GeWi"
+operatoren: []
+klausurrelevant: false
+datum: 2026-09-21
+tags: [EF, Meta]
+---
+
 # Operatoren-NRW-GeWi 文科Operatoren中德对照
 
 | Operator (Deutsch) | 中文 | 要求 | Beispielsatz |

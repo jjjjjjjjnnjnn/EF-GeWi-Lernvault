@@ -1,3 +1,12 @@
+---
+fach: ""
+thema: "Download Quellen"
+operatoren: []
+klausurrelevant: false
+datum: 2026-09-21
+tags: [EF, Meta]
+---
+
 # Download-Quellen — 公开资料本地采集清单
 
 > 规则：只收**开放许可**（CC-BY / CC-BY-SA / bpb免费 / 公有领域/Amtliche Werke §5 UrhG如Grundgesetz）。

@@ -1,3 +1,12 @@
+---
+fach: ""
+thema: "Ziele EF"
+operatoren: []
+klausurrelevant: false
+datum: 2026-09-21
+tags: [EF, Meta]
+---
+
 # Ziele (EF, NRW)
 
 - 学校：Schloss Heessen (NRW, Hamm), Gymnasium Klasse 11 = Einführungsphase (EF)

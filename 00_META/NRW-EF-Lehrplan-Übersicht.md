@@ -1,3 +1,12 @@
+---
+fach: ""
+thema: "NRW EF Lehrplan Übersicht"
+operatoren: []
+klausurrelevant: false
+datum: 2026-09-21
+tags: [EF, Meta]
+---
+
 # NRW-EF-Lehrplan-Übersicht (Kernlehrplan Sek II, ab 2022-08 EF)
 
 官方源（只放链接，不存全文）：

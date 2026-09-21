@@ -1,3 +1,12 @@
+---
+fach: ""
+thema: "DeepTutor Integration"
+operatoren: []
+klausurrelevant: false
+datum: 2026-09-21
+tags: [EF, Meta]
+---
+
 # DeepTutor 融合（提分引擎，非编程项目）
 
 > 结论：**DeepTutor直接完整使用**（本地免费tutor：Quiz刷题 + Mastery Path掌握度 + flashcards背单词）。

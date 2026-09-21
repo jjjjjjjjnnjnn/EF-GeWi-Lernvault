@@ -1,3 +1,12 @@
+---
+fach: ""
+thema: "Lernsystem"
+operatoren: []
+klausurrelevant: false
+datum: 2026-09-21
+tags: [EF, Meta]
+---
+
 # Lernsystem (Feynman + FSRS + Klausur-Drill)
 
 ## 1. 课后15分钟（每天每科）
