@@ -3,23 +3,32 @@
 > 结论：**DeepTutor直接完整使用**（本地免费tutor：Quiz刷题 + Mastery Path掌握度 + flashcards背单词）。
 > **awesome-rosetta-skills不整体采用**：169个skill全是大学research级（OLS回归、DID、fMRI、ERA5气候……），与Gymnasium Klausur无关；只借用它的 `SKILL.md` 文件格式，自研3个考试导向skill（见 `Skills/`）。
 
-## 0. 铁律（防污染vault）
+## 0. 铁律（防污染vault + 防Win乱码崩溃）
 
-- 每次开新终端先跑 `$env:DEEPTUTOR_HOME="C:\Users\rongj\.deeptutor-home"`，再跑任何 `deeptutor` 命令。
+- 每次开新终端先跑：
+  ```powershell
+  $env:DEEPTUTOR_HOME="C:\Users\rongj\.deeptutor-home"
+  chcp 65001 > $null; $env:PYTHONIOENCODING="utf-8"
+  ```
+  第二行不跑的话，德语变音符号会让Rich渲染崩溃（实测）而中途杀死回答。
 - vault里绝不能出现 `data/` 目录（已被gitignore）。如误建：删文件夹 + `git rm -r --cached data/`。
+- 出题/长回答一律用 `--format json` 重定向到文件再解析；rich直显在Win-GBK下不稳定。
 
 ## 0. 状态（2026-09-21已做）
 
 - [x] `pip install deeptutor==1.6.9`（Python 3.11 ✓，Node 24 ✓）
 - [x] workspace已指向本vault：`C:\Users\rongj\Desktop\学习`（Status: ready）
-- [x] 已装5个skill：`flashcard-deck`（笔记→抽认卡）· `quiz-generator`（出题）· `exam-blueprint`（按 syllabus出模拟卷）· `language-learning`（单词/语法drill）· `studying`（学习计划+retrieval practice）
-- [ ] **待你做（5分钟）**：见下 §1。原因是当时LM Studio没开，模型必须你亲手选。
+- [x] LLM已接本地：**llama-3-sauerkrautlm-8b-instruct**（德语特调，无思考拖沓；qwen3-8b实测90% token耗在英文思考上，已换下；qwen2.5-0.5b太小不用）。Embedding：本地nomic。
+- [x] `doctor --online` 全PASS；`run deep_question` 端到端跑通（result+done事件）。
+- [x] 已装5个skill：`flashcard-deck` · `quiz-generator` · `exam-blueprint` · `language-learning` · `studying`
 
 ## 1. 首次接模型（LM Studio，免费本地）
 
-1. 打开 LM Studio → 加载一个模型（8GB显存：选Qwen3 4B左右的GGUF即可做题背单词）。
-2. Start Server（默认 `http://localhost:1234/v1`）。
-3. PowerShell跑（runtime家目录在vault外，不污染git）：
+> 2026-09-21更新：已由agent直接写配置接好（LM Studio开着即可用），本节保留作重装备用。
+> 实测走弯路记录：`init`交互问答挂管道会卡死（hidden密码prompt），改直写`model_catalog.json`解决。
+
+1. 打开 LM Studio → 加载 **llama-3-sauerkrautlm-8b-instruct**（德语任务首选）→ Start Server（`http://localhost:1234/v1`）。
+2. PowerShell跑（runtime家目录在vault外，不污染git）：
    ```powershell
    $env:DEEPTUTOR_HOME="C:\Users\rongj\.deeptutor-home"
    deeptutor init --cli --home "C:\Users\rongj\.deeptutor-home"
@@ -48,12 +57,17 @@ deeptutor run chat "用language-learning考我这周的Englisch-Vokabeln, EN→D
 deeptutor run mastery_path "Soziale Mobilität" -l zh
 ```
 
-## 3. 和vault分工
+## 3. 和vault分工（含musespark fallback verdict）
+
+> 实测verdict（2026-09-21，SoWi-Ungleichheit quiz）：
+> - 本地8B（sauerkrautlm）：单词默写/抽认卡够用；但Klausur级出题偏水（问题泛、爱反问、缺Operatoren精度）。
+> - 所以路由：**机械记忆走本地DeepTutor（免费无限量），动脑的（出题精度/批改/Texte-Analyse）走 musespark（即本opencode会话）按 `Skills/` 执行**。这就是你说的fallback，已生效，不用再配。
 
 | 事情 | 在哪做 |
 |---|---|
 | 长期知识沉淀（笔记/csv/Fehlerlog） | 本vault（Obsidian+git，唯一真相源） |
-| 出题/背单词/模拟考/学习计划 | DeepTutor（读vault文件，用完结果写回vault对应 `Klausur-Training/`） |
+| 单词默写/抽认卡/学习计划 | DeepTutor本地（`flashcard-deck`/`language-learning`/`studying`，随便刷不花钱） |
+| Klausur出题/批改/模拟卷/文本解读 | musespark会话（`Skills/klausur-drill`等，质量优先） |
 | Agent写笔记规范 | `AGENTS.md` + `Skills/*.md` |
 
 ## 4. 评估记录：awesome-rosetta-skills（不采用）
