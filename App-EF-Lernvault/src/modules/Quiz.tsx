@@ -33,7 +33,7 @@ export default function Quiz() {
             setRun((r) => !r);
             if (!run && sec > 0) setSec(0);
           }}
-          className={`px-4 py-1.5 font-mono text-xs uppercase tracking-wider rounded-sm border transition-colors ${
+          className={`px-4 py-1.5 font-mono text-xs uppercase tracking-wider rounded-sm border transition-all duration-150 active:scale-[0.96] ${
             run
               ? "border-[#1C1B17] bg-[#1C1B17] text-white"
               : "border-[#E5E1D8] bg-white text-[#1C1B17] hover:border-[#4338CA] hover:text-[#4338CA]"

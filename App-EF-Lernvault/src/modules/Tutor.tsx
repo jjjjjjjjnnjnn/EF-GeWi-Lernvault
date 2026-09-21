@@ -79,7 +79,7 @@ export default function Tutor({ lang }: { lang: Lang }) {
         <button
           type="button"
           onClick={send}
-          className="rounded-sm border border-[#1C1B17] bg-[#1C1B17] px-4 py-2 text-xs font-mono uppercase tracking-wider text-white hover:bg-[#4338CA] hover:border-[#4338CA] transition-colors"
+          className="rounded-sm border border-[#1C1B17] bg-[#1C1B17] px-4 py-2 text-xs font-mono uppercase tracking-wider text-white hover:bg-[#4338CA] hover:border-[#4338CA] active:scale-[0.96] transition-all duration-150"
         >
           Senden
         </button>

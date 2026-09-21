@@ -32,7 +32,7 @@ export default function Flashcards({ lang }: { lang: Lang }) {
         <button
           type="button"
           onClick={() => setFlip((f) => !f)}
-          className={`card-inner ${flip ? "card-flipped" : ""} relative block h-64 w-full cursor-pointer text-left`}
+          className={`card-inner ${flip ? "card-flipped" : ""} relative block h-64 w-full cursor-pointer text-left transition-transform duration-150 active:scale-[0.99]`}
         >
           {/* Front: German serif headline */}
           <div className="card-face absolute inset-0 flex flex-col items-center justify-center rounded-sm border border-[#E5E1D8] bg-white p-8">
@@ -69,7 +69,7 @@ export default function Flashcards({ lang }: { lang: Lang }) {
             key={r}
             type="button"
             onClick={rate}
-            className="flex-1 py-2.5 text-center text-xs font-sans font-medium text-[#1C1B17] hover:text-[#4338CA] hover:bg-[#FAF9F6] transition-colors"
+            className="flex-1 py-2.5 text-center text-xs font-sans font-medium text-[#1C1B17] hover:text-[#4338CA] hover:bg-[#FAF9F6] active:bg-[#ECE7DC]/60 active:text-[#4338CA] transition-colors"
           >
             {r}
           </button>

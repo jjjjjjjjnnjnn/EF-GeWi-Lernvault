@@ -124,10 +124,10 @@ export default function App() {
               <button
                 key={n.id}
                 onClick={() => switchTab(n.id)}
-                className={`flex items-center gap-2.5 px-3 py-2 text-left text-sm transition-colors rounded-sm ${
+                className={`flex items-center gap-2.5 px-3 py-2 text-left text-sm transition-all duration-150 rounded-sm active:scale-[0.98] focus-visible:outline focus-visible:outline-1 focus-visible:outline-[#4338CA] ${
                   isActive
                     ? "font-medium text-[#4338CA] bg-[#ECE7DC]/60 border-l-2 border-[#4338CA]"
-                    : "text-[#6B675C] hover:text-[#1C1B17] hover:bg-[#ECE7DC]/30 border-l-2 border-transparent"
+                    : "text-[#6B675C] hover:text-[#1C1B17] hover:bg-[#ECE7DC]/30 active:bg-[#ECE7DC]/60 border-l-2 border-transparent"
                 }`}
               >
                 <span className="shrink-0 select-none">{n.icon}</span>
@@ -160,7 +160,7 @@ export default function App() {
           <div className="flex items-center gap-3">
             <button
               onClick={() => setLang((l) => (l === "zh" ? "de" : "zh"))}
-              className="rounded-sm border border-[#E5E1D8] bg-white px-3 py-1.5 text-xs font-sans text-[#1C1B17] hover:border-[#4338CA] hover:text-[#4338CA] transition-colors"
+              className="rounded-sm border border-[#E5E1D8] bg-white px-3 py-1.5 text-xs font-sans text-[#1C1B17] hover:border-[#4338CA] hover:text-[#4338CA] active:scale-95 transition-all duration-150"
               title="Sprache umschalten / 切换语言"
             >
               {lang === "zh" ? "DE / 德语" : "ZH / 中文"}

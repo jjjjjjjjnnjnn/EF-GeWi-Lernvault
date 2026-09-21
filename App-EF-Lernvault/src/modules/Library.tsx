@@ -30,7 +30,7 @@ export default function Library({ query }: { query: string }) {
               <button
                 key={f}
                 onClick={() => setFach(f)}
-                className={`px-2 py-1 text-xs font-sans rounded-sm transition-colors ${
+                className={`px-2 py-1 text-xs font-sans rounded-sm transition-all duration-150 active:scale-95 focus-visible:outline focus-visible:outline-1 focus-visible:outline-[#4338CA] ${
                   isSelected
                     ? "font-medium text-[#4338CA] border-b-2 border-[#4338CA]"
                     : "text-[#6B675C] hover:text-[#1C1B17]"
@@ -55,7 +55,7 @@ export default function Library({ query }: { query: string }) {
                 <button
                   key={n.id}
                   onClick={() => setOpenId(n.id)}
-                  className={`w-full p-3 text-left transition-colors block border-l-2 ${
+                  className={`w-full p-3 text-left transition-colors block border-l-2 active:bg-[#ECE7DC]/50 focus-visible:outline focus-visible:outline-1 focus-visible:outline-[#4338CA] ${
                     isSelected
                       ? "border-l-[#4338CA] bg-[#FAF9F6]"
                       : "border-l-transparent hover:bg-[#FAF9F6]"
