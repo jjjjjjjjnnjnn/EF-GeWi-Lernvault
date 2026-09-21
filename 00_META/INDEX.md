@@ -41,6 +41,7 @@
 - [2026-09-21-handover](Journal/2026-09-21-handover.md) — 建库全过程 + 待办
 - [2026-09-21-app-kickoff](Journal/2026-09-21-app-kickoff.md) — App 桌面软件立项
 - [2026-09-21-ui-redesign-tufte](Journal/2026-09-21-ui-redesign-tufte.md) — App UI 重做（Tufte Data-Ink 风格）
+- [2026-09-21-nav-icons](Journal/2026-09-21-nav-icons.md) — 导航去 emoji 换细线 SVG
 - 约定：文件名 `YYYY-MM-DD-<thema>.md`，头部frontmatter（`fach`可空，`tags: [EF, Meta]`）。
 
 ## Dataview（Obsidian内自动索引，GitHub上仅作备份显示）
