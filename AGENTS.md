@@ -40,8 +40,9 @@ tags: [EF, SoWi]      # 首标签=EF，次标签=学科
 ## 4. 版权红线（Public仓库！）
 
 - 只写原创笔记/总结。绝不提交：老师Klausur原题全文、出版社教材扫描、同学个人信息、学校内部文件全文。
-- `Ressourcen.md` 只放外链+许可注明（Serlo CC-BY-SA / OpenStax CC-BY / bpb免费 / LEIFI免费）。
+- `Ressourcen.md` 只放外链+许可注明（Serlo CC-BY-SA / OpenStax CC BY-NC-SA·仅本地学习 / bpb免费 / LEIFI免费）。
 - 对外引用第三方段落必须注明来源链接。
+- 批量下载只进本地 `_Downloads/`（gitignore，不推送），每文件配同名 `.quelle.txt`（来源+许可+日期）。`Anlagen/` 只放自制小图。清单唯一真相源：`00_META/Download-Quellen.md`。
 
 ## 5. Agent工作流
 

@@ -1,6 +1,7 @@
 {
   "appName": "EF-GeWi-Lernvault",
   "newFileLocation": "current",
+  "attachmentFolderPath": "Anlagen",
   "newLinkFormat": "relative",
   "useMarkdownLinks": false,
   "showLineNumber": true,

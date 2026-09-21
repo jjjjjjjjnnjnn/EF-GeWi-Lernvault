@@ -13,6 +13,9 @@
 Thumbs.db
 desktop.ini
 
+# 本地批量下载区（大PDF/视频，不进git，只留清单进仓库）
+_Downloads/
+
 # Anki 构建产物（只同步来源 csv/md，不同步 apkg 二进制）
 *.apkg
 *.colpkg
