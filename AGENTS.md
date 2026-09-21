@@ -52,14 +52,21 @@ tags: [EF, SoWi]      # 首标签=EF，次标签=学科
 
 1. 先读 `HANDOVER.md`（一页交接），再读 `00_META/INDEX.md` 定位，再读目标学科 `Lehrplan.md`，确认EF范围后再写。最后看 `00_META/Journal/` 最新一篇接上下文。
 2. 用户要刷题/背单词/改卷时，优先加载 `Skills/` 对应skill（klausur-drill / vokabel-trainer / texte-analyse）；DeepTutor可用时用它执行出题背诵，vault只做沉淀。
-2. 写完笔记后：更新 `00_META/INDEX.md` 的对应链接行（如新增主题），Glossar加术语行，csv加卡片行——三处同步，一次commit。
-3. 每次会话结束（或上下文交接前）在 `00_META/Journal/YYYY-MM-DD-<thema>.md` 留一条（做了什么/待办/阻塞），frontmatter见INDEX的Journal约定。
-4. Commit信息前缀：`[SoWi] / [Philo] / [Meta] / [Deutsch] / [Englisch] / [App]` + 动词短句。一次只做一科，不跨科混commit。
-5. 不装新Obsidian插件、不改 `.obsidian/*.json`（除非用户明确要求）；`workspace.json / cache / data.json` 永不提交。
-6. 跑任何 `deeptutor` 命令前先 `. .\scripts\dt-env.ps1`；`data/` 目录永不进vault（见 `00_META/DeepTutor.md` §0）。
-7. `scripts/*.ps1` 注释必须纯ASCII（PS 5.1读无BOM-UTF8中文注释会误解析，实测丢env；路径里的中文除外）。
+3. 写完笔记后：更新 `00_META/INDEX.md` 的对应链接行（如新增主题），Glossar加术语行，csv加卡片行——三处同步，一次commit。
+4. 每次会话结束（或上下文交接前）在 `00_META/Journal/YYYY-MM-DD-<thema>.md` 留一条（做了什么/待办/阻塞），frontmatter见INDEX的Journal约定。
+5. Commit信息前缀：`[SoWi] / [Philo] / [Meta] / [Deutsch] / [Englisch] / [App]` + 动词短句。一次只做一科，不跨科混commit。
+6. 不装新Obsidian插件、不改 `.obsidian/*.json`（除非用户明确要求）；`workspace.json / cache / data.json` 永不提交。
+7. 跑任何 `deeptutor` 命令前先 `. .\scripts\dt-env.ps1`；`data/` 目录永不进vault（见 `00_META/DeepTutor.md` §0）。
+8. `scripts/*.ps1` 注释必须纯ASCII（PS 5.1读无BOM-UTF8中文注释会误解析，实测丢env；路径里的中文除外）。
 
 ## 6. 检索入口
 
 - 人读：`README.md` → `00_META/INDEX.md`。
 - 机器查：按 `fach:` + `tags:` + 文件名kebab-case；Dataview示例见 `00_META/INDEX.md` 底部。
+
+## 7. App-EF-Lernvault 约定（桌面软件，半开源自有LICENSE）
+
+- 只读 vault（内容源），不写回；Fehlerlog/csv 增量只生成文本补丁，由用户回 Obsidian 确认提交。
+- 前端改完必须 `npm run build` 通过；不新增 npm 依赖（Tauri 官方包由主 Agent 加）；图标手写内联 SVG，禁 emoji；动效只走 `index.css` token。
+- 设计双规范：`UI-BRIEF.md`（tufte）+ `INTERACTION-BRIEF.md`（交互，新键先登记 `src/keys.ts`）。
+- 打包：`npx tauri build`（需 VS2022+ C++ workload + rust stable）；`src-tauri/target|gen`、签名 `.key`、安装包永不进 git；第三方署名变动同步 `NOTICE.md`。

@@ -16,6 +16,8 @@ Obsidian Vault + Git 版本管理，中德双语混合。
 - `01_Deutsch/` `02_Englisch/` `07_Philosophie/` `08_SoWi/` — 文科社科优先（本期填实）
 - `03_Mathe/` `04_Physik/` `05_Chemie/` `06_Bio/` `09_Musik-mündl/` `10_Sport-mündl/` — 本期占位，Phase 3再填
 - `Templates/` — 学科模板、课后15分钟模板、考前Drill模板、Anki卡模板
+- `Skills/` — 考试导向 skills（klausur-drill / vokabel-trainer / texte-analyse，SKILL.md格式）
+- `App-EF-Lernvault/` — 桌面软件源码（一站式学习App，半开源自有LICENSE；用法见其 README，安装包本地打、不进git）
 - 每科统一：`Lehrplan.md` / `Ressourcen.md` / `Vokabeln-Anki/` / `Klausur-Training/`（文科加 `Texte-Analyse/`）
 
 ## 检索入口
@@ -39,4 +41,4 @@ Obsidian Vault + Git 版本管理，中德双语混合。
 
 - 本仓库笔记为原创，采用 CC-BY-SA-4.0（见 LICENSE）。
 - 只放自己写的笔记，不放老师Klausur原题全文、出版社教材扫描、同学个人信息、学校内部文件全文。`Ressourcen.md` 只放外链。
-- 开源资源来源：Serlo (CC-BY-SA)、LEIFIphysik/LEIFIchemie (FWU, 免费)、OpenStax (CC-BY)、bpb.de (免费)、ZUM/teachSam (OER)。
+- 开源资源来源：Serlo (CC-BY-SA)、LEIFIphysik/LEIFIchemie (FWU, 免费)、OpenStax (CC BY-NC-SA·仅本地学习)、bpb.de (免费)、ZUM/teachSam (OER)。

@@ -25,4 +25,4 @@
 4. Phase 3再碰MINT。
 
 ## 铁律
-- 一次只做一科一commit（前缀`[SoWi]/[Philo]/[Meta]/...`）；`data/`、`_Downloads/`、`*.apkg`永不进git；只写原创笔记（版权红线见AGENTS.md §4）。
+- 一次只做一科一commit（前缀`[SoWi]/[Philo]/[Meta]/[Deutsch]/[Englisch]/[App]`）；`data/`、`_Downloads/`、`*.apkg`、App构建产物（`target|gen|dist|*.key|*.exe|*.msi`）永不进git；只写原创笔记（版权红线见AGENTS.md §4）。
