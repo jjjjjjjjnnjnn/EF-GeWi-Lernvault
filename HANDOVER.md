@@ -12,7 +12,7 @@
 - ✅ MINT/Musik/Sport：README占位（Phase 3）。
 - ✅ DeepTutor 1.6.9：workspace=本vault；LLM=本地sauerkrautlm-8b；5个skill已装；路由=记忆走本地，出题批改走musespark会话（verdict见`00_META/DeepTutor.md` §3）。
 - ✅ Skills/：klausur-drill / vokabel-trainer / texte-analyse（SKILL.md格式）。
-- ✅ App-EF-Lernvault：前端原型（tufte重做+交互重做：命令面板/快捷键/拖拽）+ P1接线完成（顶栏打开真实vault，笔记/背卡/面板全量切换，自测7篇36卡）；LICENSE三条式已定稿；UI-BRIEF/INTERACTION-BRIEF双规范；Rust 1.98.1已装，MSVC BuildTools待用户管理员安装。
+- ✅ App-EF-Lernvault：前端原型（tufte重做+交互重做：命令面板/快捷键/拖拽）+ P1接线完成（顶栏打开真实vault，笔记/背卡/面板全量切换，自测7篇36卡）；LICENSE三条式已定稿；UI-BRIEF/INTERACTION-BRIEF双规范；P0已出首个exe（VS2026 Community + MSVC 14.51，NSIS 1.8MB，窗口标题正常，常驻25MB）。
 
 ## 环境（接手必备）
 - 新终端先跑：`. .\scripts\dt-env.ps1`（设DEEPTUTOR_HOME + UTF-8，防data污染vault/防GBK崩溃）。
@@ -21,7 +21,7 @@
 ## 待办（按优先级）
 1. 用户贴第一节SoWi/Philo课堂笔记 → 按Fach-Template写首篇正式笔记（INDEX/Glossar/csv三同步）。
 2. Deutsch要Lektüre名、Englisch要Topic（问用户）。
-3. 用户管理员装MSVC BuildTools → 加src-tauri打首个exe（P0收尾）→ P2（ts-fsrs真实调度）。
+3. P2（ts-fsrs真实调度+到期队列）→ P3（LM Studio出题/批改）→ P5（签名+自动更新+公开发版）。
 4. Phase 3再碰MINT。
 
 ## 铁律
