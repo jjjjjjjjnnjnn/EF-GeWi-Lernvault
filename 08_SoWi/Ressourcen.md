@@ -3,6 +3,19 @@
 ## 官方课标
 - Lehrplannavigator NRW SoWi Sek II: https://lehrplannavigator.nrw.de/ (站内搜 Sozialwissenschaften)
 - Schulentwicklung NRW: https://www.schulentwicklung.nrw.de/lehrplaene/
+- 本地：`_Downloads/SoWi/klp_gost_sowi.pdf`（KLP全文，Amtliches Werk）
+
+## 官方考试文件（Standardsicherung，本地 `_Downloads/SoWi/`）
+
+- Operatorenübersicht（2015，唯一判分依据）：https://www.standardsicherung.schulministerium.nrw.de/zentralabitur-gost/faecher/sozialwissenschaften
+- Konstruktionsvorgaben + Erläuterungen（出题规则，P3组卷照此）：同上页
+- Korrekturzeichen（改卷符号，批改对齐用）：同上页
+- Beispiel Gestaltungsaufgabe GK/LK + Methodenblätter（Handlungsempfehlung/Redebeitrag，Q-phase难度，仅看格式）：同上页
+
+## 课用电子书（C.C.Buchner，需学校登录）
+
+- Sowi NRW EF click & study：https://www.click-and-study.de/Player/id/1162/page/14
+- 章节地图见 `Texte-Analyse/Sowi-NRW-EF-Buch-Navigator.md`（11章→vault落点；注意Ungleichheit无专章，vault独立写）
 
 ## 首选免费/OER
 - **bpb.de** (Bundeszentrale für politische Bildung, 全免费可引用): https://www.bpb.de/

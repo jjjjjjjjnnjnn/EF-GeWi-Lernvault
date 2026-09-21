@@ -16,7 +16,7 @@
 ## App（桌面软件，一站式入口）
 - [App-EF-Lernvault](../App-EF-Lernvault/README.md) — EF-Lernvault：六模块 + 命令面板/快捷键/拖拽 + P1接线（顶栏打开真实vault，笔记/背卡/面板全切真实数据）；`npm run dev` 预览（1420）。
 - [LICENSE](../App-EF-Lernvault/LICENSE)（半开源，已定稿） · [NOTICE](../App-EF-Lernvault/NOTICE.md)（第三方署名，实测版本）
-- 规范：[UI-BRIEF](../App-EF-Lernvault/UI-BRIEF.md)（tufte简洁风） · [INTERACTION-BRIEF](../App-EF-Lernvault/INTERACTION-BRIEF.md)（交互）
+- 规范：[UI-BRIEF](../App-EF-Lernvault/UI-BRIEF.md)（tufte简洁风） · [INTERACTION-BRIEF](../App-EF-Lernvault/INTERACTION-BRIEF.md)（交互） · [FEATURE-SPEC](../App-EF-Lernvault/FEATURE-SPEC.md)（功能需求，给外部AI）
 - 约定：App 只读 vault（内容源），不写回；commit 前缀 `[App]`；构建产物与签名密钥永不进 git。
 - P0产物（本地 `src-tauri/target/release/bundle/`，不进git）：`EF-Lernvault_0.1.0_x64-setup.exe`（1.8MB）· MSI（2.7MB），已验启动（窗口标题正常，常驻~25MB）。
 
@@ -33,6 +33,7 @@
 ### SoWi
 - Soziale Ungleichheit — 起点：[Lehrplan](../08_SoWi/Lehrplan.md)（待拆独立笔记）
 - Karikatur方法 — [Karikatur-Anleitung](../08_SoWi/Texte-Analyse/Karikatur-Anleitung.md)
+- 电子书11章地图 — [Sowi-NRW-EF-Buch-Navigator](../08_SoWi/Texte-Analyse/Sowi-NRW-EF-Buch-Navigator.md)（C.C.Buchner click & study，需学校登录；Ungleichheit无专章）
 
 ### Philosophie
 - Menschenbild — [Menschenbild-Überblick](../07_Philosophie/Texte-Analyse/Menschenbild-Überblick.md)
@@ -50,6 +51,7 @@
 - [2026-09-21-p0-exe](Journal/2026-09-21-p0-exe.md) — P0 首个 exe 出炉并验启动
 - [2026-09-21-maintenance](Journal/2026-09-21-maintenance.md) — 维护专场（卫生+文档同步）
 - [2026-09-21-webui](Journal/2026-09-21-webui.md) — 日常走 WebUI（一键脚本）
+- [2026-09-21-material](Journal/2026-09-21-material.md) — 资料大搜集（BWKI mining/电子书/官方下载/FEATURE-SPEC）
 - 约定：文件名 `YYYY-MM-DD-<thema>.md`，头部frontmatter（`fach`可空，`tags: [EF, Meta]`）。
 
 ## Dataview（Obsidian内自动索引，GitHub上仅作备份显示）

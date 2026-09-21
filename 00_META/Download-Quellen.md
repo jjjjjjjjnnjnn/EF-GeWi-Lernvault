@@ -22,6 +22,13 @@ tags: [EF, Meta]
 | S2 | OpenStax Sociology 3e (WEB-PDF, 48MB) | CC BY-NC-SA 4.0 (nur lokal, Namensnennung) | https://assets.openstax.org/oscms-prodcms/media/documents/introduction-sociology-3e_-_WEB.pdf | `_Downloads/SoWi/openstax-sociology-3e_WEB.pdf` | ok |
 | S3 | bpb IzPB Soziale Ungleichheit (Heft 354, HTML系列，按需单页存档) | bpb免费在线 | https://www.bpb.de/shop/zeitschriften/izpb/soziale-ungleichheit-354/ | 在线读，不下载 | 在线 |
 | S4 | bpb Datenreport 2018 (Sozialbericht, PDF) | bpb免费 | https://www.bpb.de/system/files/dokument_pdf/dr2018_bf_mit_korrekturseite_142_200525.pdf | `_Downloads/SoWi/bpb-Datenreport-2018.pdf` | pending（大，按需） |
+| S5 | KLP SoWi GOSt (2013/14, 435KB) | Amtliches Werk (MSB NRW) | https://lehrplannavigator.nrw.de/system/files/media/document/file/klp_gost_sowi.pdf | `_Downloads/SoWi/klp_gost_sowi.pdf` | ok |
+| S6 | Operatorenübersicht SoWi (2015) | Amtliches Werk | https://www.standardsicherung.schulministerium.nrw.de/zentralabitur-gost/faecher/sozialwissenschaften | `_Downloads/SoWi/af2-sw_operatoren.pdf` | ok |
+| S7 | Konstruktionsvorgaben + Erläuterungen | Amtliches Werk | 同上页 | `_Downloads/SoWi/konstruktionsvorgaben_sozialwissenschaften.pdf` + `erlaeuterungen_zu_den_konstruktionshinweisen_sw.pdf` | ok |
+| S8 | Korrekturzeichen SoWi | Amtliches Werk | 同上页 | `_Downloads/SoWi/korrekturzeichen_sozialwissenschaften.pdf` | ok |
+| S9 | Beispiel Gestaltungsaufgabe GK/LK (2020, Q-phase难度，看格式) | Amtliches Werk | 同上页 | `_Downloads/SoWi/sw21_w_g_xx_01_gg_beispiel_1.pdf` + `sw21_x_l_xx_01_gg_beispiel_1.pdf` | ok |
+| S10 | Methodenblätter Handlungsempfehlung/Redebeitrag + Darstellungsleistung | Amtliches Werk | 同上页 | `_Downloads/SoWi/sw_m_*.pdf` + `beurteilung_sprachliche_richtigkeit_2.pdf` | ok |
+| S11 | Sowi NRW EF电子书 (C.C.Buchner click & study) | 出版社版权，需学校Bildungslogin | https://www.click-and-study.de/Player/id/1162/page/14 | 不下载（Demo只给目录；只取章节标题作Navigator，正文零复制） | 在线 |
 
 ## Philosophie（优先）
 
@@ -29,6 +36,16 @@ tags: [EF, Meta]
 |---|---|---|---|---|---|
 | P1 | OpenStax Introduction to Philosophy (WEB-PDF, 48MB) | CC BY-NC-SA 4.0 (nur lokal, Namensnennung) | https://assets.openstax.org/oscms-prodcms/media/documents/Introduction_to_Philosophy-WEB.pdf | `_Downloads/Philosophie/openstax-introduction-to-philosophy_WEB.pdf` | ok |
 | P2 | GitHub源码 osbooks-introduction-philosophy | CC-BY | https://github.com/openstax/osbooks-introduction-philosophy | 不clone，按需在线读 | 在线 |
+| P3 | KLP Philosophie GOSt (2013/14, 287KB) | Amtliches Werk (MSB NRW) | https://lehrplannavigator.nrw.de/system/files/media/document/file/klp_gost_philosophie.pdf | `_Downloads/Philosophie/klp_gost_philosophie.pdf` | ok |
+| P4 | Operatorenübersicht + Konstruktion + Korrekturzeichen Philo | Amtliches Werk | https://www.standardsicherung.schulministerium.nrw.de/zentralabitur-gost/faecher/philosophie-gost | `_Downloads/Philosophie/af2-pl_operatoren_1.pdf` + `konstruktionsvorgaben_philosophie_0.pdf` + `korrekturzeichen_philosophie.pdf` | ok |
+| P5 | Beispielaufgaben GK/LK (2016) + GK ab 2025 (Typ II C) | Amtliches Werk | 同上页 | `_Downloads/Philosophie/pl17_x_*.pdf` + `philosophie_gk_beispielaufgaben_ababitur2025.pdf` | ok |
+
+## Deutsch（ZKE zentral！EF-Deutsch考什么看它）
+
+| # | 文件 | 许可 | URL | 本地 | 状态 |
+|---|---|---|---|---|---|
+| D1 | ZKE Deutsch Vorgaben 2027 (Rahmenbedingungen+新Operatorenliste) | Amtliches Werk | https://www.standardsicherung.schulministerium.nrw.de/zentrale-klausuren-einfuehrungsphase/faecher/zke-deutsch-fachliche-vorgaben-hinweise-und | `_Downloads/Deutsch/vorgaben_zke_deutsch_2027.pdf` | ok |
+| D2 | ZKE历年真题 (Deutsch/Mathe) | 官方但需登录 | 同上站 Aufgaben der letzten Jahre | 不爬（Login墙，尊重；找老师要） | 在线 |
 
 ## MINT（Phase 3，按需）
 
