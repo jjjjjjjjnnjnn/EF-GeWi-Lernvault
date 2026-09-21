@@ -3,7 +3,12 @@
 > 结论：**DeepTutor直接完整使用**（本地免费tutor：Quiz刷题 + Mastery Path掌握度 + flashcards背单词）。
 > **awesome-rosetta-skills不整体采用**：169个skill全是大学research级（OLS回归、DID、fMRI、ERA5气候……），与Gymnasium Klausur无关；只借用它的 `SKILL.md` 文件格式，自研3个考试导向skill（见 `Skills/`）。
 
-## 状态（2026-09-21已做）
+## 0. 铁律（防污染vault）
+
+- 每次开新终端先跑 `$env:DEEPTUTOR_HOME="C:\Users\rongj\.deeptutor-home"`，再跑任何 `deeptutor` 命令。
+- vault里绝不能出现 `data/` 目录（已被gitignore）。如误建：删文件夹 + `git rm -r --cached data/`。
+
+## 0. 状态（2026-09-21已做）
 
 - [x] `pip install deeptutor==1.6.9`（Python 3.11 ✓，Node 24 ✓）
 - [x] workspace已指向本vault：`C:\Users\rongj\Desktop\学习`（Status: ready）

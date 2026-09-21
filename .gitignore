@@ -16,6 +16,10 @@ desktop.ini
 # 本地批量下载区（大PDF/视频，不进git，只留清单进仓库）
 _Downloads/
 
+# DeepTutor runtime（家目录必须在vault外，见00_META/DeepTutor.md；误建的data/永不提交）
+data/
+deeptutor-data/
+
 # Anki 构建产物（只同步来源 csv/md，不同步 apkg 二进制）
 *.apkg
 *.colpkg
