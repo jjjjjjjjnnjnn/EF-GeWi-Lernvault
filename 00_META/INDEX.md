@@ -45,6 +45,7 @@
 - [2026-09-21-nav-icons](Journal/2026-09-21-nav-icons.md) — 导航去 emoji 换细线 SVG
 - [2026-09-21-interaction](Journal/2026-09-21-interaction.md) — 交互重做（命令面板/快捷键/拖拽）
 - [2026-09-21-p1-audit](Journal/2026-09-21-p1-audit.md) — P1 接线 + 全库审计
+- [2026-09-21-p0-tauri](Journal/2026-09-21-p0-tauri.md) — P0 脚手架就绪，待 MSVC 链接器
 - 约定：文件名 `YYYY-MM-DD-<thema>.md`，头部frontmatter（`fach`可空，`tags: [EF, Meta]`）。
 
 ## Dataview（Obsidian内自动索引，GitHub上仅作备份显示）
