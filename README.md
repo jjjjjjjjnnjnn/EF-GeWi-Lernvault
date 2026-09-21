@@ -3,6 +3,13 @@
 Gymnasium Klasse 11 (EF, NRW, Schloss Heessen) 学习提速库。
 Obsidian Vault + Git 版本管理，中德双语混合。
 
+## 5分钟上手（新用户/AI交接）
+
+1. 读 `HANDOVER.md`（一页：现状+待办+铁律）。
+2. Obsidian打开本文件夹；插件装 Templater + Dataview + Spaced-Repetition-Recall。
+3. 新终端跑 `. .\scripts\dt-env.ps1`（DeepTutor环境）。
+4. 导航：`00_META/INDEX.md`；规范：`AGENTS.md`。
+
 ## 结构
 
 - `00_META/` — 目标、NRW-EF课标总览、学习系统、文科Operatoren、术语库、`Journal/`每日笔记

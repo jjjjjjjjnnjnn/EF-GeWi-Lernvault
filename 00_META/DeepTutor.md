@@ -28,7 +28,7 @@
 > 实测走弯路记录：`init`交互问答挂管道会卡死（hidden密码prompt），改直写`model_catalog.json`解决。
 
 1. 打开 LM Studio → 加载 **llama-3-sauerkrautlm-8b-instruct**（德语任务首选）→ Start Server（`http://localhost:1234/v1`）。
-2. PowerShell跑（runtime家目录在vault外，不污染git）：
+2. PowerShell跑（或直接 `. .\scripts\dt-env.ps1`，一样）：
    ```powershell
    $env:DEEPTUTOR_HOME="C:\Users\rongj\.deeptutor-home"
    deeptutor init --cli --home "C:\Users\rongj\.deeptutor-home"
