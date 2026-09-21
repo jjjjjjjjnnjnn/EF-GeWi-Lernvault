@@ -46,6 +46,16 @@ tags: [EF, Meta]
 |---|---|---|---|---|---|
 | D1 | ZKE Deutsch Vorgaben 2027 (Rahmenbedingungen+新Operatorenliste) | Amtliches Werk | https://www.standardsicherung.schulministerium.nrw.de/zentrale-klausuren-einfuehrungsphase/faecher/zke-deutsch-fachliche-vorgaben-hinweise-und | `_Downloads/Deutsch/vorgaben_zke_deutsch_2027.pdf` | ok |
 | D2 | ZKE历年真题 (Deutsch/Mathe) | 官方但需登录 | 同上站 Aufgaben der letzten Jahre | 不爬（Login墙，尊重；找老师要） | 在线 |
+| D3 | KLP Deutsch 2023 (548KB) | Amtliches Werk | https://lehrplannavigator.nrw.de/sekundarstufe-ii/kernlehrplaene-fuer-die-gymnasiale-oberstufe-ab-20222023/deutsch-gymnasiale | `_Downloads/Deutsch/klp_deutsch_2023.pdf` | ok |
+| D4 | Operatoren ab 2023 + Konstruktion 2024 + Korrekturzeichen + Darstellungsleistung | Amtliches Werk | https://www.standardsicherung.schulministerium.nrw.de/zentralabitur-gost/faecher/deutsch-gost | `_Downloads/Deutsch/d_operatoren_ab2023.pdf` 等4件 | ok |
+
+## Englisch（Klausur Teil A+B结构看Konstruktionshinweise）
+
+| # | 文件 | 许可 | URL | 本地 | 状态 |
+|---|---|---|---|---|---|
+| E1 | KLP Englisch 2023 (469KB) | Amtliches Werk | https://lehrplannavigator.nrw.de/sekundarstufe-ii/kernlehrplaene-fuer-die-gymnasiale-oberstufe-ab-20222023/englisch-gymnasiale | `_Downloads/Englisch/klp_englisch_2023.pdf` | ok |
+| E2 | Konstruktionshinweise Klausuren moderne FS (Okt 2025, 45S) | Amtliches Werk | https://www.standardsicherung.schulministerium.nrw.de/zentralabitur-gost/faecher/englisch-gost | `_Downloads/Englisch/konstruktionshinweise_klausuren_fremdsprachen.pdf` | ok |
+| E3 | Operatoren ab 2025 + Zieltextformate + Korrekturzeichen | Amtliches Werk | 同上页 | `_Downloads/Englisch/e_operatoren_ab2025.pdf` 等3件 | ok |
 
 ## MINT（Phase 3，按需）
 

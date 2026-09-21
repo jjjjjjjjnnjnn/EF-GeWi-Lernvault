@@ -13,6 +13,7 @@ Skills/           # 考试导向skills (SKILL.md格式)：klausur-drill / vokabe
 scripts/          # dt-env.ps1（新终端先 `. .\scripts\dt-env.ps1`）
 HANDOVER.md       # 一页交接，新agent第一个读
 App-EF-Lernvault/ # 唯一例外：桌面软件源码（半开源自有LICENSE）；vault内容只读，App不写回vault
+Lernreise/        # 第二例外：互动课程脚本（App第7模块唯一课程源，只读消费）；格式见 App UI-SPEC-V2 §3.1
 ```
 
 每科固定子集：`Lehrplan.md` / `Ressourcen.md` / `Vokabeln-Anki/` / `Klausur-Training/`，文科加 `Texte-Analyse/`。

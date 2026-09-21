@@ -28,6 +28,10 @@ deeptutor-data/
 __pycache__/
 node_modules/
 
+# ebook-fetch：登录态 + 原文缓存（个人授权本地用，永不进git）
+scripts/ebook-fetch/auth.json
+scripts/ebook-fetch/__pycache__/
+
 # App-EF-Lernvault 构建产物（源码进git，产物/密钥不进）
 App-EF-Lernvault/dist/
 App-EF-Lernvault/src-tauri/target/

@@ -6,13 +6,11 @@
 1. 本文件 → 2. `AGENTS.md`（规范） → 3. `00_META/INDEX.md`（导航） → 4. 目标学科 `Lehrplan.md` → 5. `00_META/Journal/` 最新一篇（当前上下文）。
 
 ## 当前状态（2026-09-21）
-- ✅ 骨架：Obsidian vault + git + CC-BY-SA + link-check CI + `_Downloads/`(gitignore, 3份OER已下) + `Anlagen/`。
-- ✅ SoWi填实（Lehrplan/Satzbausteine/Karikatur-Anleitung/9卡）；Philo填实（Menschenbild/Utilitarismus-vs-Kant/9卡+Satzbausteine）。
-- ✅ Deutsch/Englisch：Lehrplan占位 + Phrasen-csv各9条 + Fehlerlog（等Lektüre/Topic填实）。
-- ✅ MINT/Musik/Sport：README占位（Phase 3）。
-- ✅ DeepTutor 1.6.9：workspace=本vault；LLM=本地sauerkrautlm-8b；5个skill已装；路由=记忆走本地，出题批改走musespark会话（verdict见`00_META/DeepTutor.md` §3）。
-- ✅ Skills/：klausur-drill / vokabel-trainer / texte-analyse（SKILL.md格式）。
-- ✅ App-EF-Lernvault：前端原型（tufte重做+交互重做：命令面板/快捷键/拖拽）+ P1接线完成（顶栏打开真实vault，笔记/背卡/面板全量切换，自测7篇36卡）；LICENSE三条式已定稿；UI-BRIEF/INTERACTION-BRIEF双规范；P0已出首个exe（VS2026 Community + MSVC 14.51，NSIS 1.8MB，窗口标题正常，常驻25MB）。
+- ✅ 骨架：Obsidian vault + git + CC-BY-SA + link-check CI + `_Downloads/`(gitignore, 39件官方PDF已下) + `Anlagen/`。
+- ✅ 10/10学科骨架：SoWi/Philo填实；Deutsch/Englisch KLP2023校准+csv各30条（等Lektüre/Topic）；MINT四科KLP校准+Formel-Spickzettel(KaTeX)；Musik/Sport口试骨架。
+- ✅ 官方弹药：SoWi/Philo/Deutsch/Englisch/Mathe全套Operatoren+Konstruktion+Korrekturzeichen+Beispiele；Formelsammlung NRW 2024。
+- ✅ Playwright电子书脚手架就绪（`scripts/ebook-fetch/`，等用户登录一次）。
+- ✅ App需求：FEATURE-SPEC + UI-SPEC-V2（全科+KaTeX+Lernreise第7模块）可发外部AI；首个示范课程 `Lernreise/Sowi-Soziale-Marktwirtschaft-L1.md`。
 
 ## 环境（接手必备）
 - 日常开发走本地 WebUI：vault根目录跑 `. .\scripts\webui.ps1`（起1420+自动开浏览器；热更新）。
@@ -21,10 +19,9 @@
 - DeepTutor家目录：`C:\Users\rongj\.deeptutor-home`（vault外）。LM Studio需开着（模型llama-3-sauerkrautlm-8b-instruct）。
 
 ## 待办（按优先级）
-1. 用户贴第一节SoWi/Philo课堂笔记 → 按Fach-Template写首篇正式笔记（INDEX/Glossar/csv三同步）。
-2. Deutsch要Lektüre名、Englisch要Topic（问用户）。
-3. P2（ts-fsrs真实调度+到期队列）→ P3（LM Studio出题/批改）→ P5（签名+自动更新+公开发版）。
-4. Phase 3再碰MINT。
+1. 用户贴：Deutsch Lektüre + Englisch Topic/Teil-B类型 + SoWi/Philo课堂笔记 → 首篇正式笔记（INDEX/Glossar/csv三同步）。
+2. 用户在自动化浏览器登录一次 → 跑SoWi全书原文（本地only）。
+3. UI-SPEC-V2发外部AI做界面；P2（ts-fsrs）→ P3（LM混合组卷）→ P5（发版）。
 
 ## 铁律
 - 一次只做一科一commit（前缀`[SoWi]/[Philo]/[Meta]/[Deutsch]/[Englisch]/[App]`）；`data/`、`_Downloads/`、`*.apkg`、App构建产物（`target|gen|dist|*.key|*.exe|*.msi`）永不进git；只写原创笔记（版权红线见AGENTS.md §4）。
