@@ -1,5 +1,6 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { notes } from "../data";
+import { isTyping } from "../keys";
 
 export default function Library({ query }: { query: string }) {
   const [fach, setFach] = useState("alle");
@@ -17,6 +18,23 @@ export default function Library({ query }: { query: string }) {
   );
 
   const open = notes.find((n) => n.id === openId) ?? list[0];
+
+  // j/k + arrows walk the filtered list (when search input is not focused).
+  useEffect(() => {
+    const onKey = (e: KeyboardEvent) => {
+      if (isTyping() || list.length === 0) return;
+      const i = Math.max(0, list.findIndex((n) => n.id === open?.id));
+      if (e.key === "j" || e.key === "ArrowDown") {
+        e.preventDefault();
+        setOpenId(list[Math.min(i + 1, list.length - 1)].id);
+      } else if (e.key === "k" || e.key === "ArrowUp") {
+        e.preventDefault();
+        setOpenId(list[Math.max(i - 1, 0)].id);
+      }
+    };
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  });
 
   return (
     <div className="flex gap-8 max-w-6xl mx-auto">
@@ -84,7 +102,7 @@ export default function Library({ query }: { query: string }) {
 
       {/* Right Column: Centered Reading Column (~46rem) */}
       <div className="flex-1 min-w-0">
-        <div className="max-w-[46rem] bg-white border border-[#E5E1D8] rounded-sm p-8 mx-auto">
+        <div key={open?.id} className="tab-enter max-w-[46rem] bg-white border border-[#E5E1D8] rounded-sm p-8 mx-auto">
           {open ? (
             <article>
               {/* Header Metadata */}

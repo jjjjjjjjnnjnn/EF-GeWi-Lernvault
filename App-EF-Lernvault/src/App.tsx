@@ -1,5 +1,9 @@
-import { useState, type ReactNode } from "react";
+import { useEffect, useMemo, useRef, useState, type ReactNode } from "react";
 import { t, type Lang } from "./i18n";
+import { notes } from "./data";
+import { isTyping } from "./keys";
+import Palette, { type PaletteItem } from "./components/Palette";
+import HelpOverlay from "./components/HelpOverlay";
 import Library from "./modules/Library";
 import Flashcards from "./modules/Flashcards";
 import Quiz from "./modules/Quiz";
@@ -104,6 +108,76 @@ export default function App() {
     { id: "mindmap", label: tr.mindmap, icon: icons.mindmap },
   ];
 
+  const TAB_ORDER: Tab[] = ["library", "flashcards", "quiz", "tutor", "planner", "mindmap"];
+  const [paletteOpen, setPaletteOpen] = useState(false);
+  const [helpOpen, setHelpOpen] = useState(false);
+  const searchRef = useRef<HTMLInputElement>(null);
+  const toggleLang = () => setLang((l) => (l === "zh" ? "de" : "zh"));
+
+  // Global keys: Ctrl/⌘K palette · / search · Alt1-6 tabs · L language · ? help.
+  useEffect(() => {
+    const onKey = (e: KeyboardEvent) => {
+      if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === "k") {
+        e.preventDefault();
+        setPaletteOpen((o) => !o);
+        return;
+      }
+      if (isTyping()) return;
+      if (e.key === "/") {
+        e.preventDefault();
+        if (tab !== "library") switchTab("library");
+        searchRef.current?.focus();
+      } else if (e.key === "?") {
+        setHelpOpen(true);
+      } else if (e.key.toLowerCase() === "l" && !e.altKey && !e.ctrlKey && !e.metaKey) {
+        toggleLang();
+      } else if (e.altKey && e.key >= "1" && e.key <= "6") {
+        e.preventDefault();
+        switchTab(TAB_ORDER[Number(e.key) - 1]);
+      }
+    };
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  });
+
+  const paletteItems: PaletteItem[] = useMemo(
+    () => [
+      ...nav.map((n, i) => ({
+        id: `tab-${n.id}`,
+        group: lang === "de" ? "Module" : "模块",
+        label: n.label,
+        hint: `Alt ${i + 1}`,
+        run: () => switchTab(n.id),
+      })),
+      ...notes.map((n) => ({
+        id: `note-${n.id}`,
+        group: lang === "de" ? "Notizen" : "笔记",
+        label: n.thema,
+        sub: `${n.fach} · ${n.zh}`,
+        run: () => {
+          switchTab("library");
+          setQuery(n.thema);
+        },
+      })),
+      {
+        id: "act-lang",
+        group: lang === "de" ? "Aktionen" : "操作",
+        label: lang === "de" ? "Sprache umschalten" : "切换语言",
+        hint: "L",
+        run: toggleLang,
+      },
+      {
+        id: "act-help",
+        group: lang === "de" ? "Aktionen" : "操作",
+        label: lang === "de" ? "Tastaturhilfe" : "快捷键帮助",
+        hint: "?",
+        run: () => setHelpOpen(true),
+      },
+    ],
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    [nav, lang]
+  );
+
   return (
     <div className="flex h-screen bg-[#FAFAF7] text-[#1C1B17] antialiased">
       {/* Sidebar: Quiet archival tone with hairline border */}
@@ -141,6 +215,8 @@ export default function App() {
           v0.1.0-prototype
           <br />
           lokal · offline-fähig
+          <br />
+          Strg K · ? Tastatur
         </div>
       </aside>
 
@@ -150,26 +226,43 @@ export default function App() {
         <header className="flex h-14 items-center justify-between gap-4 border-b border-[#E5E1D8] bg-[#FAFAF7] px-6">
           <div className="flex flex-1 items-center max-w-lg">
             <input
+              ref={searchRef}
               value={query}
               onChange={(e) => setQuery(e.target.value)}
               placeholder={tr.search}
+              title="/"
               className="w-full rounded-sm border border-[#E5E1D8] bg-white px-3 py-1.5 text-sm text-[#1C1B17] placeholder:text-[#6B675C] focus:border-[#4338CA] focus:outline-none transition-colors font-sans"
             />
           </div>
 
           <div className="flex items-center gap-3">
             <button
+              onClick={() => setPaletteOpen(true)}
+              className="rounded-sm border border-[#E5E1D8] bg-white px-3 py-1.5 text-xs font-sans text-[#1C1B17] hover:border-[#4338CA] hover:text-[#4338CA] active:scale-95 transition-all duration-150"
+              title="Strg/⌘ K"
+            >
+              {lang === "de" ? "Befehle" : "命令"}
+              <kbd className="ml-2 font-mono text-[10px] text-[#6B675C]">Strg K</kbd>
+            </button>
+            <button
               onClick={() => setLang((l) => (l === "zh" ? "de" : "zh"))}
               className="rounded-sm border border-[#E5E1D8] bg-white px-3 py-1.5 text-xs font-sans text-[#1C1B17] hover:border-[#4338CA] hover:text-[#4338CA] active:scale-95 transition-all duration-150"
-              title="Sprache umschalten / 切换语言"
+              title="Sprache umschalten / 切换语言 (L)"
             >
               {lang === "zh" ? "DE / 德语" : "ZH / 中文"}
+            </button>
+            <button
+              onClick={() => setHelpOpen(true)}
+              className="rounded-sm border border-[#E5E1D8] bg-white px-3 py-1.5 font-mono text-xs text-[#6B675C] hover:border-[#4338CA] hover:text-[#4338CA] active:scale-95 transition-all duration-150"
+              title="Tastaturhilfe / 快捷键 (?)"
+            >
+              ?
             </button>
           </div>
         </header>
 
         {/* Content Viewport */}
-        <div className="flex-1 overflow-y-auto p-8">
+        <div key={tab} className="tab-enter flex-1 overflow-y-auto p-8">
           {tab === "library" && <Library query={query} />}
           {tab === "flashcards" && <Flashcards lang={lang} />}
           {tab === "quiz" && <Quiz />}
@@ -178,6 +271,8 @@ export default function App() {
           {tab === "mindmap" && <Mindmap />}
         </div>
       </main>
+      <Palette open={paletteOpen} onClose={() => setPaletteOpen(false)} items={paletteItems} />
+      <HelpOverlay open={helpOpen} onClose={() => setHelpOpen(false)} lang={lang} />
     </div>
   );
 }

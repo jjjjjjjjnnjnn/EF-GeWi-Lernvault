@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { quizSteps } from "../data";
+import { isTyping } from "../keys";
 
 export default function Quiz() {
   const [sec, setSec] = useState(0);
@@ -11,6 +12,20 @@ export default function Quiz() {
     const id = setInterval(() => setSec((s) => s + 1), 1000);
     return () => clearInterval(id);
   }, [run]);
+
+  // Space toggles the timer (when not typing).
+  useEffect(() => {
+    const onKey = (e: KeyboardEvent) => {
+      if (isTyping() || e.code !== "Space") return;
+      e.preventDefault();
+      setRun((r) => {
+        if (!r && sec > 0) setSec(0);
+        return !r;
+      });
+    };
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, [sec]);
 
   const mm = String(Math.floor(sec / 60)).padStart(2, "0");
   const ss = String(sec % 60).padStart(2, "0");
