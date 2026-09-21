@@ -4,6 +4,7 @@ import { notes } from "./data";
 import { isTyping } from "./keys";
 import Palette, { type PaletteItem } from "./components/Palette";
 import HelpOverlay from "./components/HelpOverlay";
+import { pickVault, type VaultData } from "./vault/loader";
 import Library from "./modules/Library";
 import Flashcards from "./modules/Flashcards";
 import Quiz from "./modules/Quiz";
@@ -113,6 +114,23 @@ export default function App() {
   const [helpOpen, setHelpOpen] = useState(false);
   const searchRef = useRef<HTMLInputElement>(null);
   const toggleLang = () => setLang((l) => (l === "zh" ? "de" : "zh"));
+  const [vault, setVault] = useState<VaultData | null>(null);
+  const [vaultMsg, setVaultMsg] = useState("");
+
+  const openVault = async () => {
+    try {
+      if (!("showDirectoryPicker" in window)) {
+        setVaultMsg(lang === "de" ? "Bitte Edge/Chrome nutzen oder Tauri-Build abwarten." : "请用 Edge/Chrome 打开，或等 Tauri 打包版。");
+        return;
+      }
+      const v = await pickVault();
+      setVault(v);
+      setVaultMsg(`${v.rootName}: ${v.notes.length} Notizen · ${v.cards.length} Karten`);
+      if (v.notes.length > 0) switchTab("library");
+    } catch {
+      // Picker abgebrochen / 用户取消
+    }
+  };
 
   // Global keys: Ctrl/⌘K palette · / search · Alt1-6 tabs · L language · ? help.
   useEffect(() => {
@@ -149,16 +167,33 @@ export default function App() {
         hint: `Alt ${i + 1}`,
         run: () => switchTab(n.id),
       })),
-      ...notes.map((n) => ({
-        id: `note-${n.id}`,
-        group: lang === "de" ? "Notizen" : "笔记",
-        label: n.thema,
-        sub: `${n.fach} · ${n.zh}`,
-        run: () => {
-          switchTab("library");
-          setQuery(n.thema);
-        },
-      })),
+      ...(vault
+        ? vault.notes.map((n) => ({
+            id: `note-${n.id}`,
+            group: lang === "de" ? "Notizen" : "笔记",
+            label: n.thema,
+            sub: `${n.fach} · ${n.operatoren.join(" / ")}`,
+            run: () => {
+              switchTab("library");
+              setQuery(n.thema);
+            },
+          }))
+        : notes.map((n) => ({
+            id: `note-${n.id}`,
+            group: lang === "de" ? "Notizen" : "笔记",
+            label: n.thema,
+            sub: `${n.fach} · ${n.zh}`,
+            run: () => {
+              switchTab("library");
+              setQuery(n.thema);
+            },
+          }))),
+      {
+        id: "act-vault",
+        group: lang === "de" ? "Aktionen" : "操作",
+        label: lang === "de" ? "Vault öffnen" : "打开知识库",
+        run: () => void openVault(),
+      },
       {
         id: "act-lang",
         group: lang === "de" ? "Aktionen" : "操作",
@@ -236,6 +271,19 @@ export default function App() {
           </div>
 
           <div className="flex items-center gap-3">
+            {vaultMsg && (
+              <span className="hidden font-mono text-[11px] text-[#6B675C] lg:block">{vaultMsg}</span>
+            )}
+            <button
+              onClick={() => void openVault()}
+              className="flex items-center gap-1.5 rounded-sm border border-[#E5E1D8] bg-white px-3 py-1.5 text-xs font-sans text-[#1C1B17] hover:border-[#4338CA] hover:text-[#4338CA] active:scale-95 transition-all duration-150"
+              title={lang === "de" ? "Lokalen Vault-Ordner öffnen" : "打开本地知识库文件夹"}
+            >
+              <svg width="13" height="13" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                <path d="M1.5 4.5a1 1 0 0 1 1-1h3.2l1.3 1.6h6.5a1 1 0 0 1 1 1v5.4a1 1 0 0 1-1 1h-11a1 1 0 0 1-1-1V4.5z" />
+              </svg>
+              {lang === "de" ? "Vault öffnen" : "打开知识库"}
+            </button>
             <button
               onClick={() => setPaletteOpen(true)}
               className="rounded-sm border border-[#E5E1D8] bg-white px-3 py-1.5 text-xs font-sans text-[#1C1B17] hover:border-[#4338CA] hover:text-[#4338CA] active:scale-95 transition-all duration-150"
@@ -263,8 +311,8 @@ export default function App() {
 
         {/* Content Viewport */}
         <div key={tab} className="tab-enter flex-1 overflow-y-auto p-8">
-          {tab === "library" && <Library query={query} />}
-          {tab === "flashcards" && <Flashcards lang={lang} />}
+          {tab === "library" && <Library query={query} vault={vault?.notes ?? null} />}
+          {tab === "flashcards" && <Flashcards lang={lang} vault={vault?.cards ?? null} />}
           {tab === "quiz" && <Quiz />}
           {tab === "tutor" && <Tutor lang={lang} />}
           {tab === "planner" && <Planner />}

@@ -1,12 +1,28 @@
-import { useEffect, useRef, useState } from "react";
-import { cards } from "../data";
+import { useEffect, useMemo, useRef, useState } from "react";
+import { cards as mockCards } from "../data";
 import { t, type Lang } from "../i18n";
 import { isTyping } from "../keys";
+import type { VaultCard } from "../vault/parser";
 
 const RATINGS = [0, 1, 2, 3];
 
-export default function Flashcards({ lang }: { lang: Lang }) {
+interface Item {
+  front: string;
+  back: string;
+  example: string;
+  fach: string;
+  meta: string;
+}
+
+export default function Flashcards({ lang, vault }: { lang: Lang; vault: VaultCard[] | null }) {
   const tr = t(lang);
+  const items: Item[] = useMemo(
+    () =>
+      vault
+        ? vault.map((c) => ({ front: c.front, back: c.back, example: c.example, fach: c.fach, meta: c.thema || c.source }))
+        : mockCards.map((c) => ({ front: c.front, back: c.back, example: c.example, fach: c.fach, meta: c.dueIn })),
+    [vault]
+  );
   const [idx, setIdx] = useState(0);
   const [flip, setFlip] = useState(false);
   const [done, setDone] = useState(0);
@@ -14,9 +30,15 @@ export default function Flashcards({ lang }: { lang: Lang }) {
   const startX = useRef(0);
   const moved = useRef(false);
 
-  const card = cards[idx % cards.length];
-  const pos = idx % cards.length;
-  const round = Math.floor(idx / cards.length) + 1;
+  useEffect(() => {
+    setIdx(0);
+    setFlip(false);
+    setDrag(0);
+  }, [vault]);
+
+  const card = items[idx % items.length];
+  const pos = idx % items.length;
+  const round = Math.floor(idx / items.length) + 1;
 
   const rate = () => {
     setFlip(false);
@@ -63,13 +85,20 @@ export default function Flashcards({ lang }: { lang: Lang }) {
   const labels = [tr.again, tr.hard, tr.good, tr.easy];
   const edge = Math.min(1, Math.abs(drag) / 90);
 
+  if (items.length === 0) {
+    return (
+      <div className="mx-auto max-w-xl py-12 text-center font-sans text-sm text-[#6B675C]">
+        Keine Karten / 暂无卡片 — oben „Vault öffnen“ / 点顶部"打开知识库"
+      </div>
+    );
+  }
+
   return (
     <div className="mx-auto max-w-xl space-y-4">
-      {/* Due and progress metadata: small text line with hairline divider */}
+      {/* Source and progress metadata: small text line with hairline divider */}
       <div className="flex items-center justify-between text-xs font-mono text-[#6B675C] pb-2 border-b border-[#E5E1D8]">
         <span>
-          {card.fach} · {tr.due}:{" "}
-          <span className="text-[#4338CA] font-medium">{card.dueIn}</span>
+          {card.fach} · <span className="text-[#4338CA] font-medium">{card.meta}</span>
         </span>
         <span>
           {done} gelernt / 已学 · Runde {round}
@@ -80,7 +109,7 @@ export default function Flashcards({ lang }: { lang: Lang }) {
       <div className="h-px bg-[#E5E1D8]">
         <div
           className="h-px bg-[#4338CA] transition-all duration-200"
-          style={{ width: `${(((flip ? pos + 1 : pos) % cards.length) / cards.length) * 100}%` }}
+          style={{ width: `${(((flip ? pos + 1 : pos) % items.length) / items.length) * 100}%` }}
         />
       </div>
 

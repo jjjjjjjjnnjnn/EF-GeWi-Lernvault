@@ -1,23 +1,55 @@
 import { useEffect, useState } from "react";
-import { notes } from "../data";
+import { notes as mockNotes, type Note as MockNote } from "../data";
 import { isTyping } from "../keys";
+import Blocks from "../components/Blocks";
+import type { Block, VaultNote } from "../vault/parser";
 
-export default function Library({ query }: { query: string }) {
+interface Shown {
+  id: string;
+  fach: string;
+  thema: string;
+  sub: string;
+  operatoren: string[];
+  klausurrelevant: boolean;
+  blocks: Block[];
+}
+
+function fromMock(m: MockNote): Shown {
+  const blocks: Block[] = [];
+  m.bodyZH.forEach((z, i) => {
+    blocks.push({ kind: "p", text: z, lang: "zh" });
+    if (m.bodyDE[i]) blocks.push({ kind: "p", text: m.bodyDE[i], lang: "de" });
+  });
+  return { id: m.id, fach: m.fach, thema: m.thema, sub: m.zh, operatoren: m.operatoren, klausurrelevant: true, blocks };
+}
+
+function fromVault(n: VaultNote): Shown {
+  return { id: n.id, fach: n.fach, thema: n.thema, sub: n.path, operatoren: n.operatoren, klausurrelevant: n.klausurrelevant, blocks: n.blocks };
+}
+
+export default function Library({ query, vault }: { query: string; vault: VaultNote[] | null }) {
+  const shown: Shown[] = vault ? vault.map(fromVault) : mockNotes.map(fromMock);
   const [fach, setFach] = useState("alle");
-  const faecher = ["alle", ...Array.from(new Set(notes.map((n) => n.fach)))];
-  const [openId, setOpenId] = useState(notes[0].id);
+  const faecher = ["alle", ...Array.from(new Set(shown.map((n) => n.fach)))];
+  const [openId, setOpenId] = useState(shown[0]?.id ?? "");
+
+  // Reset selection when the source switches (mock <-> real vault).
+  useEffect(() => {
+    setOpenId(shown[0]?.id ?? "");
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [vault]);
 
   const q = query.trim().toLowerCase();
-  const list = notes.filter(
+  const list = shown.filter(
     (n) =>
       (fach === "alle" || n.fach === fach) &&
       (!q ||
         n.thema.toLowerCase().includes(q) ||
-        n.zh.includes(query.trim()) ||
-        n.fach.toLowerCase().includes(q))
+        n.sub.toLowerCase().includes(q) ||
+        n.blocks.some((b) => b.text.toLowerCase().includes(q)))
   );
 
-  const open = notes.find((n) => n.id === openId) ?? list[0];
+  const open = shown.find((n) => n.id === openId) ?? list[0];
 
   // j/k + arrows walk the filtered list (when search input is not focused).
   useEffect(() => {
@@ -90,8 +122,8 @@ export default function Library({ query }: { query: string }) {
                   <div className="font-serif text-sm font-semibold text-[#1C1B17] break-words leading-snug">
                     {n.thema}
                   </div>
-                  <div className="text-xs font-sans text-[#6B675C] mt-0.5">
-                    {n.zh}
+                  <div className="text-xs font-sans text-[#6B675C] mt-0.5 break-words">
+                    {n.sub}
                   </div>
                 </button>
               );
@@ -129,30 +161,15 @@ export default function Library({ query }: { query: string }) {
                 )}
               </div>
 
-              {/* Title & Chinese subtitle */}
+              {/* Title & source line */}
               <h1 className="font-serif text-2xl font-normal text-[#1C1B17] tracking-tight mb-1 break-words">
                 {open.thema}
               </h1>
-              <p className="font-sans text-sm text-[#6B675C] mb-6 pb-4 border-b border-[#E5E1D8]">
-                {open.zh}
+              <p className="font-sans text-sm text-[#6B675C] mb-6 pb-4 border-b border-[#E5E1D8] break-words">
+                {open.sub}
               </p>
 
-              {/* Bilingual Content Blocks: Chinese Sans gray above, German Serif full ink below */}
-              <div className="space-y-6">
-                {open.bodyZH.map((zhText, i) => (
-                  <div
-                    key={i}
-                    className="border-b border-[#E5E1D8]/60 pb-5 last:border-b-0"
-                  >
-                    <p className="font-sans text-xs text-[#6B675C] mb-1 tracking-wide">
-                      {zhText}
-                    </p>
-                    <p className="font-serif text-base text-[#1C1B17] leading-relaxed break-words">
-                      {open.bodyDE[i]}
-                    </p>
-                  </div>
-                ))}
-              </div>
+              <Blocks blocks={open.blocks} />
             </article>
           ) : (
             <div className="py-12 text-center text-sm font-sans text-[#6B675C]">
