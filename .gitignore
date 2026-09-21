@@ -27,3 +27,12 @@ deeptutor-data/
 # Python / Node（如后期加脚本）
 __pycache__/
 node_modules/
+
+# App-EF-Lernvault 构建产物（源码进git，产物/密钥不进）
+App-EF-Lernvault/dist/
+App-EF-Lernvault/src-tauri/target/
+App-EF-Lernvault/src-tauri/*.key
+App-EF-Lernvault/src-tauri/*.pub
+*.msi
+*.exe
+!**/tools/*.exe

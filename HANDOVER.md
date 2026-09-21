@@ -12,6 +12,7 @@
 - ✅ MINT/Musik/Sport：README占位（Phase 3）。
 - ✅ DeepTutor 1.6.9：workspace=本vault；LLM=本地sauerkrautlm-8b；5个skill已装；路由=记忆走本地，出题批改走musespark会话（verdict见`00_META/DeepTutor.md` §3）。
 - ✅ Skills/：klausur-drill / vokabel-trainer / texte-analyse（SKILL.md格式）。
+- ✅ App-EF-Lernvault v0.1.0-prototype：Tauri规划 + React前端原型（6模块mock），`npm run dev` 可预览；LICENSE三条式草案待用户过目；Rust 1.98.1已装，MSVC BuildTools后台安装中。
 
 ## 环境（接手必备）
 - 新终端先跑：`. .\scripts\dt-env.ps1`（设DEEPTUTOR_HOME + UTF-8，防data污染vault/防GBK崩溃）。

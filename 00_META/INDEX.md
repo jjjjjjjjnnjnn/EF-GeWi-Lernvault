@@ -13,6 +13,11 @@
 | Mathe/Physik/Chemie/Bio | ⏳ Phase 3 | 各目录 README | — | — | — | — |
 | Musik/Sport mündl. | ⏳ Phase 3 | 各目录 README | — | — | — | — |
 
+## App（桌面软件，一站式入口）
+- [App-EF-Lernvault](../App-EF-Lernvault/README.md) — EF-Lernvault v0.1.0-prototype：笔记/背卡/刷题/AI助教/规划/导图六模块；`npm run dev` 预览。
+- [LICENSE](../App-EF-Lernvault/LICENSE)（半开源草案，待定稿） · [NOTICE](../App-EF-Lernvault/NOTICE.md)（第三方署名）
+- 约定：App 只读 vault（内容源），不写回；commit 前缀 `[App]`；构建产物与签名密钥永不进 git。
+
 ## META
 
 - [HANDOVER](../HANDOVER.md) — 一页交接（新agent/用户先读）
