@@ -11,6 +11,11 @@ Obsidian Vault + Git 版本管理，中德双语混合。
 - `Templates/` — 学科模板、课后15分钟模板、考前Drill模板、Anki卡模板
 - 每科统一：`Lehrplan.md` / `Ressourcen.md` / `Vokabeln-Anki/` / `Klausur-Training/`（文科加 `Texte-Analyse/`）
 
+## 检索入口
+
+- 人读：`00_META/INDEX.md`（全库导航，优先看这个）。
+- Agent：先读 `AGENTS.md`，再读 `00_META/INDEX.md`。
+
 ## 用法（Obsidian）
 
 1. 用 Obsidian 打开本文件夹（Open folder as vault）。

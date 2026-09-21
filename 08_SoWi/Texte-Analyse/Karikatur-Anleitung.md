@@ -1,3 +1,12 @@
+---
+fach: SoWi
+thema: "Karikatur-Analyse Methode"
+operatoren: [beschreiben, analysieren, beurteilen]
+klausurrelevant: true
+datum: 2026-09-21
+tags: [EF, SoWi, Methode]
+---
+
 # Karikatur-Anleitung (SoWi Klausur)
 
 1. **beschreiben** (5句内)：Wer/Was/Wo + Symbol + Text. 不解释。

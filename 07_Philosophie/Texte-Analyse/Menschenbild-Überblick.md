@@ -1,3 +1,12 @@
+---
+fach: Philosophie
+thema: "Menschenbild Überblick"
+operatoren: [darstellen, erörtern]
+klausurrelevant: true
+datum: 2026-09-21
+tags: [EF, Philosophie, Anthropologie]
+---
+
 # Menschenbild-Überblick (人是什么)
 
 > 中文：人=自然存在+能反思、能负责的存在。EF常考两种张力：bestimmt (决定/自然) vs. frei (自由/选择)。

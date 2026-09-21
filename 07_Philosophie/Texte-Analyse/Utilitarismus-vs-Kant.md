@@ -1,3 +1,12 @@
+---
+fach: Philosophie
+thema: "Utilitarismus vs Kant"
+operatoren: [darstellen, beurteilen]
+klausurrelevant: true
+datum: 2026-09-21
+tags: [EF, Philosophie, Ethik]
+---
+
 # Utilitarismus vs. Kant (EF-Ethik最小可用版)
 
 > 中文：功利主义看后果（最大幸福），康德看动机/准则（能不能变成普遍法则）。
