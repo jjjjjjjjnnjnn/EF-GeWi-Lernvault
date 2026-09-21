@@ -26,6 +26,7 @@ Obsidian Vault + Git 版本管理，中德双语混合。
 ## 学习流程
 
 课后15分钟 → 周末Feynman（中文讲一遍+德语3句Klausur-Satz）→ 考前7天只刷 `Klausur-Training/` + Fehlerlog。详见 `00_META/Lernsystem.md`。
+刷题背单词引擎：`00_META/DeepTutor.md`（本地免费，需先接LM Studio一次）。
 
 ## 版权
 

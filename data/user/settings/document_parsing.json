@@ -1,0 +1,46 @@
+{
+  "version": 2,
+  "engine": "text_only",
+  "engines": {
+    "text_only": {},
+    "mineru": {
+      "mode": "local",
+      "api_base_url": "https://mineru.net",
+      "api_token": "",
+      "local_cli_path": "",
+      "model_download_source": "huggingface",
+      "model_download_endpoint": "",
+      "model_version": "pipeline",
+      "language": "auto",
+      "enable_formula": true,
+      "enable_table": true,
+      "is_ocr": false,
+      "allow_local_model_download": false
+    },
+    "docling": {
+      "mode": "local",
+      "api_base_url": "http://localhost:5001",
+      "api_token": "",
+      "do_ocr": false,
+      "do_table_structure": true,
+      "allow_local_model_download": false
+    },
+    "markitdown": {
+      "enable_llm_image_description": false
+    },
+    "pymupdf4llm": {
+      "write_images": true,
+      "image_format": "png",
+      "image_dpi": 150
+    },
+    "liteparse": {
+      "image_mode": "placeholder",
+      "extract_links": true,
+      "extract_images": false,
+      "max_pages": 0
+    },
+    "tika": {
+      "server_url": "http://localhost:9998"
+    }
+  }
+}

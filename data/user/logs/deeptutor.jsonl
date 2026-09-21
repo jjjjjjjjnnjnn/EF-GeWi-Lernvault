@@ -1,0 +1,4 @@
+{"timestamp": "2026-09-21T09:12:43.191349+00:00", "level": "INFO", "logger": "deeptutor.services.setup.init", "message": "Created default settings: C:\\Users\\rongj\\.deeptutor-home\\data\\user\\settings\\interface.json", "context": {}}
+{"timestamp": "2026-09-21T09:12:43.193098+00:00", "level": "INFO", "logger": "deeptutor.services.setup.init", "message": "Created default settings: C:\\Users\\rongj\\.deeptutor-home\\data\\user\\settings\\main.yaml", "context": {}}
+{"timestamp": "2026-09-21T09:12:43.198574+00:00", "level": "INFO", "logger": "deeptutor.services.setup.init", "message": "Created default settings: C:\\Users\\rongj\\.deeptutor-home\\data\\user\\settings\\agents.yaml", "context": {}}
+{"timestamp": "2026-09-21T09:12:43.308916+00:00", "level": "INFO", "logger": "deeptutor.services.setup.init", "message": "Seeded default personas: peer, research-assistant, teacher", "context": {}}

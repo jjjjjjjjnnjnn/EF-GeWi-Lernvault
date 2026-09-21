@@ -9,6 +9,7 @@
 01_Deutsch/ 02_Englisch/ 07_Philosophie/ 08_SoWi/   # 文科（本期）
 03_Mathe/ 04_Physik/ 05_Chemie/ 06_Bio/ 09_Musik-mündl/ 10_Sport-mündl/  # 占位（Phase 3）
 Templates/        # 唯一模板来源，新建笔记必须套模板
+Skills/           # 考试导向skills (SKILL.md格式)：klausur-drill / vokabel-trainer / texte-analyse
 ```
 
 每科固定子集：`Lehrplan.md` / `Ressourcen.md` / `Vokabeln-Anki/` / `Klausur-Training/`，文科加 `Texte-Analyse/`。
@@ -47,6 +48,7 @@ tags: [EF, SoWi]      # 首标签=EF，次标签=学科
 ## 5. Agent工作流
 
 1. 先读 `00_META/INDEX.md` 定位，再读目标学科 `Lehrplan.md`，确认EF范围后再写。
+2. 用户要刷题/背单词/改卷时，优先加载 `Skills/` 对应skill（klausur-drill / vokabel-trainer / texte-analyse）；DeepTutor可用时用它执行出题背诵，vault只做沉淀。
 2. 写完笔记后：更新 `00_META/INDEX.md` 的对应链接行（如新增主题），Glossar加术语行，csv加卡片行——三处同步，一次commit。
 3. Commit信息前缀：`[SoWi] / [Philo] / [Meta] / [Deutsch] / [Englisch]` + 动词短句。一次只做一科，不跨科混commit。
 4. 不装新Obsidian插件、不改 `.obsidian/*.json`（除非用户明确要求）；`workspace.json / cache / data.json` 永不提交。

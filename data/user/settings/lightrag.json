@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "top_k": 60,
+  "response_type": "Multiple Paragraphs",
+  "max_concurrent_files": 1,
+  "llm_model_max_async": 4,
+  "entity_extract_max_gleaning": 1,
+  "llm_profile_id": "",
+  "llm_model_id": ""
+}

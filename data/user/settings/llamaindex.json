@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "retrieval_profile": "hybrid",
+  "top_k": 5,
+  "vector_top_k_multiplier": 2,
+  "bm25_top_k_multiplier": 2,
+  "reranker_model": "",
+  "rerank_top_k": 50,
+  "vector_index_type": "flat",
+  "hnsw_m": 32,
+  "hnsw_ef_construction": 200,
+  "hnsw_ef_search": 64,
+  "chunk_size": 512,
+  "chunk_overlap": 50,
+  "image_description_concurrency": 4,
+  "image_description_timeout_seconds": 60
+}

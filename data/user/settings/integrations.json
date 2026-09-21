@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "pocketbase_url": "",
+  "pocketbase_port": 8090,
+  "pocketbase_external_url": "",
+  "pocketbase_admin_email": "",
+  "pocketbase_admin_password": "",
+  "turn_coordination": {
+    "backend": "memory",
+    "redis_url": "",
+    "key_prefix": "deeptutor",
+    "lease_ttl_seconds": 30,
+    "renew_interval_seconds": 10,
+    "recovery_interval_seconds": 10,
+    "stream_retention_seconds": 86400
+  }
+}
