@@ -49,6 +49,7 @@
 - [2026-09-21-p0-tauri](Journal/2026-09-21-p0-tauri.md) — P0 脚手架就绪，待 MSVC 链接器
 - [2026-09-21-p0-exe](Journal/2026-09-21-p0-exe.md) — P0 首个 exe 出炉并验启动
 - [2026-09-21-maintenance](Journal/2026-09-21-maintenance.md) — 维护专场（卫生+文档同步）
+- [2026-09-21-webui](Journal/2026-09-21-webui.md) — 日常走 WebUI（一键脚本）
 - 约定：文件名 `YYYY-MM-DD-<thema>.md`，头部frontmatter（`fach`可空，`tags: [EF, Meta]`）。
 
 ## Dataview（Obsidian内自动索引，GitHub上仅作备份显示）

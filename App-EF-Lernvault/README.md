@@ -4,15 +4,20 @@
 > 唯一入口：安装后打开 `EF-Lernvault`，左侧导航即全部功能。
 
 ## 状态
-- v0.1.0-prototype：纯前端原型（6模块+mock数据），`npm run dev` 预览。
-- P0目标：Tauri 打包出首个 `.exe`。
+- P0已出 exe（NSIS 1.8MB，常驻~25MB）；P1接线完成（顶栏打开真实vault）。
+- 日常开发走本地 WebUI（热更新），exe 只在发版时打。
 
 ## 快速开始（开发者）
 ```powershell
+# 懒人入口（vault根目录）：启动+自动开浏览器
+. .\scripts\webui.ps1
+
+# 手动：
 cd App-EF-Lernvault
 npm install
-npm run dev      # 浏览器预览 http://localhost:1420
-npm run build    # 类型检查+生产构建
+npm run dev      # WebUI http://localhost:1420（日常开发就用这个）
+npm run build    # 类型检查+生产构建（改完必须过）
+npx tauri build  # 仅发版时打 exe（需 VS C++ workload + rust stable）
 ```
 
 ## 许可

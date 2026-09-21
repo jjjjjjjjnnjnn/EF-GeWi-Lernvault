@@ -15,6 +15,8 @@
 - ✅ App-EF-Lernvault：前端原型（tufte重做+交互重做：命令面板/快捷键/拖拽）+ P1接线完成（顶栏打开真实vault，笔记/背卡/面板全量切换，自测7篇36卡）；LICENSE三条式已定稿；UI-BRIEF/INTERACTION-BRIEF双规范；P0已出首个exe（VS2026 Community + MSVC 14.51，NSIS 1.8MB，窗口标题正常，常驻25MB）。
 
 ## 环境（接手必备）
+- 日常开发走本地 WebUI：vault根目录跑 `. .\scripts\webui.ps1`（起1420+自动开浏览器；热更新）。
+- exe 仅发版时打（`npx tauri build`，需 VS C++ workload + rust stable）。
 - 新终端先跑：`. .\scripts\dt-env.ps1`（设DEEPTUTOR_HOME + UTF-8，防data污染vault/防GBK崩溃）。
 - DeepTutor家目录：`C:\Users\rongj\.deeptutor-home`（vault外）。LM Studio需开着（模型llama-3-sauerkrautlm-8b-instruct）。
 
