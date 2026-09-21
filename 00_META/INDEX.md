@@ -45,6 +45,7 @@
 - [2026-09-21-handover](Journal/2026-09-21-handover.md) — 建库全过程 + 待办
 - [2026-09-21-app-kickoff](Journal/2026-09-21-app-kickoff.md) — App 桌面软件立项
 - [2026-09-21-ui-redesign-tufte](Journal/2026-09-21-ui-redesign-tufte.md) — App UI 重做（Tufte Data-Ink 风格）
+- [2026-09-21-ui-spec-v2-lernreise](Journal/2026-09-21-ui-spec-v2-lernreise.md) — UI-SPEC-V2：10 科徽章 + KaTeX + Lernreise 第 7 模块
 - [2026-09-21-nav-icons](Journal/2026-09-21-nav-icons.md) — 导航去 emoji 换细线 SVG
 - [2026-09-21-interaction](Journal/2026-09-21-interaction.md) — 交互重做（命令面板/快捷键/拖拽）
 - [2026-09-21-p1-audit](Journal/2026-09-21-p1-audit.md) — P1 接线 + 全库审计

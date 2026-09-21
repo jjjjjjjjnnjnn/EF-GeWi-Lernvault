@@ -1,4 +1,18 @@
 @import "tailwindcss";
+@import "katex/dist/katex.min.css";
+
+/* Tufte KaTeX typography: ink black, loose line-height, zero colored decorations */
+.katex {
+  color: var(--ink) !important;
+  font-size: 1em;
+}
+.katex-display {
+  margin: 0.75em 0 !important;
+  font-size: 1.05em;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 0.25em 0;
+}
 
 :root {
   color-scheme: light;

@@ -60,6 +60,24 @@ export const notes: Note[] = [
     ],
     bodyZH: ["功利主义看后果：最大多数人的最大幸福。", "康德看义务：绝对命令、人的尊严。", "论述时按标准权衡双方。"],
   },
+  {
+    id: "mathe-formeln",
+    fach: "Mathe",
+    thema: "Formel-Spickzettel EF",
+    zh: "核心公式速查",
+    operatoren: [],
+    klausurrelevant: true,
+    bodyDE: [
+      "Potenzregel: $$(x^n)' = n \\cdot x^{n-1}$$",
+      "Mittlere Änderungsrate: $$m = \\frac{f(x_2)-f(x_1)}{x_2-x_1}$$",
+      "Die Ableitung an der Stelle $x_0$ gibt die lokale Änderungsrate (Tangentensteigung) an.",
+    ],
+    bodyZH: [
+      "幂函数求导法则：$$(x^n)' = n \\cdot x^{n-1}$$",
+      "平均变化率公式：$$m = \\frac{f(x_2)-f(x_1)}{x_2-x_1}$$",
+      "函数在 $x_0$ 处的导数即为局部瞬时变化率（切线斜率）。",
+    ],
+  },
 ];
 
 export const cards: Card[] = [

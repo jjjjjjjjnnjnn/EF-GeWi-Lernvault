@@ -2,6 +2,7 @@ import { useEffect, useMemo, useRef, useState, type ReactNode } from "react";
 import { t, type Lang } from "./i18n";
 import { notes } from "./data";
 import { isTyping } from "./keys";
+import { FAECHER } from "./fach";
 import Palette, { type PaletteItem } from "./components/Palette";
 import HelpOverlay from "./components/HelpOverlay";
 import { pickVault, type VaultData } from "./vault/loader";
@@ -11,8 +12,9 @@ import Quiz from "./modules/Quiz";
 import Tutor from "./modules/Tutor";
 import Planner from "./modules/Planner";
 import Mindmap from "./modules/Mindmap";
+import ReiseModule from "./modules/Reise";
 
-type Tab = "library" | "flashcards" | "quiz" | "tutor" | "planner" | "mindmap";
+type Tab = "library" | "flashcards" | "quiz" | "tutor" | "planner" | "mindmap" | "reise";
 
 // Tufte Data-Ink: hand-drawn hairline nav icons, no emoji. 16x16, stroke=currentColor.
 const iconProps = {
@@ -72,13 +74,19 @@ const icons: Record<Tab, ReactNode> = {
       <path d="M6.8 7.3l3.3-2M6.8 8.7l3.3 2" />
     </svg>
   ),
+  reise: (
+    <svg {...iconProps}>
+      <circle cx="8" cy="8" r="6" />
+      <path d="M10.8 5.2l-2.1 4.7-4-1.2 2.1-4.7 4 1.2z" />
+    </svg>
+  ),
 };
 
 const getInitialTab = (): Tab => {
   if (typeof window !== "undefined") {
     const params = new URLSearchParams(window.location.search);
     const t = params.get("tab") as Tab;
-    if (["library", "flashcards", "quiz", "tutor", "planner", "mindmap"].includes(t)) {
+    if (["library", "flashcards", "quiz", "tutor", "planner", "mindmap", "reise"].includes(t)) {
       return t;
     }
   }
@@ -88,7 +96,13 @@ const getInitialTab = (): Tab => {
 export default function App() {
   const [tab, setTab] = useState<Tab>(getInitialTab);
   const [lang, setLang] = useState<Lang>("zh");
-  const [query, setQuery] = useState("");
+  const [query, setQuery] = useState(() => {
+    if (typeof window !== "undefined") {
+      return new URLSearchParams(window.location.search).get("q") || "";
+    }
+    return "";
+  });
+  const [selectedFach, setSelectedFach] = useState<string>("alle");
   const tr = t(lang);
 
   const switchTab = (id: Tab) => {
@@ -107,9 +121,10 @@ export default function App() {
     { id: "tutor", label: tr.tutor, icon: icons.tutor },
     { id: "planner", label: tr.planner, icon: icons.planner },
     { id: "mindmap", label: tr.mindmap, icon: icons.mindmap },
+    { id: "reise", label: tr.reise, icon: icons.reise },
   ];
 
-  const TAB_ORDER: Tab[] = ["library", "flashcards", "quiz", "tutor", "planner", "mindmap"];
+  const TAB_ORDER: Tab[] = ["library", "flashcards", "quiz", "tutor", "planner", "mindmap", "reise"];
   const [paletteOpen, setPaletteOpen] = useState(false);
   const [helpOpen, setHelpOpen] = useState(false);
   const searchRef = useRef<HTMLInputElement>(null);
@@ -125,14 +140,14 @@ export default function App() {
       }
       const v = await pickVault();
       setVault(v);
-      setVaultMsg(`${v.rootName}: ${v.notes.length} Notizen · ${v.cards.length} Karten`);
+      setVaultMsg(`${v.rootName}: ${v.notes.length} Notizen · ${v.cards.length} Karten · ${v.reisen.length} Reisen`);
       if (v.notes.length > 0) switchTab("library");
     } catch {
       // Picker abgebrochen / 用户取消
     }
   };
 
-  // Global keys: Ctrl/⌘K palette · / search · Alt1-6 tabs · L language · ? help.
+  // Global keys: Ctrl/⌘K palette · / search · Alt 1-7 tabs · L language · ? help.
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
       if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === "k") {
@@ -149,7 +164,7 @@ export default function App() {
         setHelpOpen(true);
       } else if (e.key.toLowerCase() === "l" && !e.altKey && !e.ctrlKey && !e.metaKey) {
         toggleLang();
-      } else if (e.altKey && e.key >= "1" && e.key <= "6") {
+      } else if (e.altKey && e.key >= "1" && e.key <= "7") {
         e.preventDefault();
         switchTab(TAB_ORDER[Number(e.key) - 1]);
       }
@@ -166,6 +181,16 @@ export default function App() {
         label: n.label,
         hint: `Alt ${i + 1}`,
         run: () => switchTab(n.id),
+      })),
+      ...FAECHER.map((f) => ({
+        id: `fach-${f.id}`,
+        group: lang === "de" ? "Fächer" : "学科",
+        label: `${f.kurz} · ${lang === "de" ? f.nameDE : f.nameZH}`,
+        sub: lang === "de" ? "In Bibliothek nach Fach filtern" : "在笔记库中按此学科筛选",
+        run: () => {
+          setSelectedFach(f.id);
+          switchTab("library");
+        },
       })),
       ...(vault
         ? vault.notes.map((n) => ({
@@ -195,6 +220,21 @@ export default function App() {
         run: () => void openVault(),
       },
       {
+        id: "act-export-xp",
+        group: lang === "de" ? "Aktionen" : "操作",
+        label: lang === "de" ? "XP-Fortschritt exportieren (JSON)" : "导出学习积分与进度 (JSON)",
+        run: () => {
+          const raw = localStorage.getItem("eflernvault:xp:v1") || "{}";
+          const blob = new Blob([raw], { type: "application/json" });
+          const url = URL.createObjectURL(blob);
+          const a = document.createElement("a");
+          a.href = url;
+          a.download = "eflernvault-xp.json";
+          a.click();
+          URL.revokeObjectURL(url);
+        },
+      },
+      {
         id: "act-lang",
         group: lang === "de" ? "Aktionen" : "操作",
         label: lang === "de" ? "Sprache umschalten" : "切换语言",
@@ -210,7 +250,7 @@ export default function App() {
       },
     ],
     // eslint-disable-next-line react-hooks/exhaustive-deps
-    [nav, lang]
+    [nav, lang, vault]
   );
 
   return (
@@ -247,7 +287,7 @@ export default function App() {
         </nav>
 
         <div className="mt-auto pt-4 border-t border-[#E5E1D8] text-[11px] font-mono text-[#6B675C] leading-relaxed">
-          v0.1.0-prototype
+          v0.2.0-curriculum
           <br />
           lokal · offline-fähig
           <br />
@@ -311,12 +351,13 @@ export default function App() {
 
         {/* Content Viewport */}
         <div key={tab} className="tab-enter flex-1 overflow-y-auto p-8">
-          {tab === "library" && <Library query={query} vault={vault?.notes ?? null} />}
+          {tab === "library" && <Library query={query} vault={vault?.notes ?? null} selectedFach={selectedFach} />}
           {tab === "flashcards" && <Flashcards lang={lang} vault={vault?.cards ?? null} />}
           {tab === "quiz" && <Quiz />}
           {tab === "tutor" && <Tutor lang={lang} />}
           {tab === "planner" && <Planner />}
           {tab === "mindmap" && <Mindmap />}
+          {tab === "reise" && <ReiseModule lang={lang} vaultReisen={vault?.reisen ?? null} />}
         </div>
       </main>
       <Palette open={paletteOpen} onClose={() => setPaletteOpen(false)} items={paletteItems} />

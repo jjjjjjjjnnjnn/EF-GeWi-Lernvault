@@ -1,8 +1,9 @@
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { notes as mockNotes, type Note as MockNote } from "../data";
 import { isTyping } from "../keys";
 import Blocks from "../components/Blocks";
 import type { Block, VaultNote } from "../vault/parser";
+import { FAECHER } from "../fach";
 
 interface Shown {
   id: string;
@@ -27,11 +28,23 @@ function fromVault(n: VaultNote): Shown {
   return { id: n.id, fach: n.fach, thema: n.thema, sub: n.path, operatoren: n.operatoren, klausurrelevant: n.klausurrelevant, blocks: n.blocks };
 }
 
-export default function Library({ query, vault }: { query: string; vault: VaultNote[] | null }) {
+export default function Library({ query, vault, selectedFach }: { query: string; vault: VaultNote[] | null; selectedFach?: string }) {
   const shown: Shown[] = vault ? vault.map(fromVault) : mockNotes.map(fromMock);
-  const [fach, setFach] = useState("alle");
-  const faecher = ["alle", ...Array.from(new Set(shown.map((n) => n.fach)))];
+  const [fach, setFach] = useState(selectedFach ?? "alle");
   const [openId, setOpenId] = useState(shown[0]?.id ?? "");
+
+  // Subject counts for the 10-Fach badge system
+  const fachCounts = useMemo(() => {
+    const counts: Record<string, number> = {};
+    FAECHER.forEach((f) => {
+      counts[f.id] = shown.filter((n) => n.fach === f.id).length;
+    });
+    return counts;
+  }, [shown]);
+
+  useEffect(() => {
+    if (selectedFach) setFach(selectedFach);
+  }, [selectedFach]);
 
   // Reset selection when the source switches (mock <-> real vault).
   useEffect(() => {
@@ -49,7 +62,7 @@ export default function Library({ query, vault }: { query: string; vault: VaultN
         n.blocks.some((b) => b.text.toLowerCase().includes(q)))
   );
 
-  const open = shown.find((n) => n.id === openId) ?? list[0];
+  const open = list.find((n) => n.id === openId) ?? list[0];
 
   // j/k + arrows walk the filtered list (when search input is not focused).
   useEffect(() => {
@@ -72,21 +85,34 @@ export default function Library({ query, vault }: { query: string; vault: VaultN
     <div className="flex gap-8 max-w-6xl mx-auto">
       {/* Left Column: Subject Filter + Topic List */}
       <div className="w-80 shrink-0 space-y-4">
-        {/* Subject Filter Bar */}
+        {/* 10-Subject Filter Badges (Tufte hairline badges + counts) */}
         <div className="flex flex-wrap gap-1 border-b border-[#E5E1D8] pb-2">
-          {faecher.map((f) => {
-            const isSelected = fach === f;
+          <button
+            onClick={() => setFach("alle")}
+            className={`px-2 py-1 text-xs font-mono rounded-sm transition-all duration-150 active:scale-95 focus-visible:outline focus-visible:outline-1 focus-visible:outline-[#4338CA] ${
+              fach === "alle"
+                ? "font-medium text-[#4338CA] border-b-2 border-[#4338CA]"
+                : "text-[#6B675C] hover:text-[#1C1B17]"
+            }`}
+            title="Alle Fächer / 全部学科"
+          >
+            Alle ({shown.length})
+          </button>
+          {FAECHER.map((f) => {
+            const isSelected = fach === f.id;
+            const count = fachCounts[f.id] ?? 0;
             return (
               <button
-                key={f}
-                onClick={() => setFach(f)}
-                className={`px-2 py-1 text-xs font-sans rounded-sm transition-all duration-150 active:scale-95 focus-visible:outline focus-visible:outline-1 focus-visible:outline-[#4338CA] ${
+                key={f.id}
+                onClick={() => setFach(isSelected ? "alle" : f.id)}
+                className={`px-1.5 py-0.5 text-xs font-mono rounded-sm transition-all duration-150 active:scale-95 border ${
                   isSelected
-                    ? "font-medium text-[#4338CA] border-b-2 border-[#4338CA]"
-                    : "text-[#6B675C] hover:text-[#1C1B17]"
+                    ? "font-medium text-[#4338CA] border-[#4338CA] bg-[#ECE7DC]/40"
+                    : "border-[#E5E1D8] text-[#6B675C] hover:text-[#1C1B17] hover:border-[#1C1B17]"
                 }`}
+                title={`${f.nameDE} / ${f.nameZH} (${count} Notizen)`}
               >
-                {f === "alle" ? "Alle Fächer" : f}
+                {f.kurz} <span className="text-[10px] opacity-75">{count}</span>
               </button>
             );
           })}

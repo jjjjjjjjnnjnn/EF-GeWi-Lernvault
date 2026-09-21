@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { GLOBAL_SHORTCUTS, CARD_SHORTCUTS, QUIZ_SHORTCUTS, LIBRARY_SHORTCUTS, type Shortcut } from "../keys";
+import { GLOBAL_SHORTCUTS, CARD_SHORTCUTS, QUIZ_SHORTCUTS, LIBRARY_SHORTCUTS, REISE_SHORTCUTS, type Shortcut } from "../keys";
 import type { Lang } from "../i18n";
 
 function Rows({ rows, lang }: { rows: Shortcut[]; lang: Lang }) {
@@ -55,6 +55,8 @@ export default function HelpOverlay({
         <Rows rows={QUIZ_SHORTCUTS} lang={lang} />
         <h3 className="mb-1 mt-4 font-mono text-[11px] uppercase tracking-wider text-[#6B675C]">Bibliothek / 笔记库</h3>
         <Rows rows={LIBRARY_SHORTCUTS} lang={lang} />
+        <h3 className="mb-1 mt-4 font-mono text-[11px] uppercase tracking-wider text-[#6B675C]">Lernreise / 互动旅程</h3>
+        <Rows rows={REISE_SHORTCUTS} lang={lang} />
       </div>
     </div>
   );
