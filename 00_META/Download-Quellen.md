@@ -29,6 +29,7 @@ tags: [EF, Meta]
 | S9 | Beispiel Gestaltungsaufgabe GK/LK (2020, Q-phase难度，看格式) | Amtliches Werk | 同上页 | `_Downloads/SoWi/sw21_w_g_xx_01_gg_beispiel_1.pdf` + `sw21_x_l_xx_01_gg_beispiel_1.pdf` | ok |
 | S10 | Methodenblätter Handlungsempfehlung/Redebeitrag + Darstellungsleistung | Amtliches Werk | 同上页 | `_Downloads/SoWi/sw_m_*.pdf` + `beurteilung_sprachliche_richtigkeit_2.pdf` | ok |
 | S11 | Sowi NRW EF电子书 (C.C.Buchner click & study) | 出版社版权，需学校Bildungslogin | https://www.click-and-study.de/Player/id/1162/page/14 | 不下载（Demo只给目录；只取章节标题作Navigator，正文零复制） | 在线 |
+| S12 | 同上书全页原文（个人授权本地存档，RapidOCR） | 出版社版权，仅本地学习，永不提交 | Playwright + Lizenz bis 20.10.2027 | `_Downloads/SoWi/ebook-raw/{img,txt}/` + manifest.json | ok |
 
 ## Philosophie（优先）
 
