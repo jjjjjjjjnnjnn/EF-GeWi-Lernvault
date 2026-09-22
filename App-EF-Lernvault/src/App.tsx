@@ -285,12 +285,15 @@ export default function App() {
     <div className="flex h-screen bg-[#FAFAF7] text-[#1C1B17] antialiased">
       {/* Sidebar: Quiet archival tone with hairline border */}
       <aside className="flex w-60 flex-col border-r border-[#E5E1D8] bg-[#F7F5F0] p-5">
-        <div className="mb-8">
-          <div className="font-serif text-lg font-semibold tracking-tight text-[#1C1B17]">
-            EF-Lernvault
-          </div>
-          <div className="text-xs text-[#6B675C] font-sans tracking-wide">
-            Gymnasium Lernstudio · EF
+        <div className="mb-8 flex items-center gap-3">
+          <img src="/icon.svg" alt="EF-Lernvault Icon" className="h-8 w-8 shrink-0 rounded-sm" />
+          <div>
+            <div className="font-serif text-base font-semibold tracking-tight text-[#1C1B17]">
+              EF-Lernvault
+            </div>
+            <div className="text-[11px] text-[#6B675C] font-sans tracking-wide">
+              Gymnasium Lernstudio · EF
+            </div>
           </div>
         </div>
 
