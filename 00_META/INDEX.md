@@ -102,6 +102,7 @@
 - [2026-09-22-lane-a](Journal/2026-09-22-lane-a.md) — A路：Philo-L2九步试点+csv/Glossar/Fehlerlog三同步（v3跨科成立）
 - [2026-09-22-lane-b](Journal/2026-09-22-lane-b.md) — B路：Vergleich真数据管线+四维RUBRIC统一（V4技术债清零）
 - [2026-09-22-klett-rohrer-hygiene](Journal/2026-09-22-klett-rohrer-hygiene.md) — C路：Klett映射5单元23媒体+Rohrer补源3/5+文档卫生
+- [2026-09-23-luecken-doc20-notenlehre](Journal/2026-09-23-luecken-doc20-notenlehre.md) — Dokument 20破案（Buchner S.154–158 Impfpflicht）+ Notenlehre截断待补 + 问老师德语清单
 - 约定：文件名 `YYYY-MM-DD-<thema>.md`，头部frontmatter（`fach`可空，`tags: [EF, Meta]`）。
 
 ## Dataview（Obsidian内自动索引，GitHub上仅作备份显示）
