@@ -12,7 +12,8 @@
 - ✅ Playwright电子书脚手架就绪（`scripts/ebook-fetch/`，等用户登录一次）。
 - ✅ App需求：FEATURE-SPEC + UI-SPEC-V2；**外部AI已落地**（`b17999d`）：10科徽章+KaTeX离线公式+Lernreise第7模块（5步态+gating+XP localStorage），`npm run build`亲验通过；课程3个（SoWi-L1示范 + Musik-Höranalyse-L1 + Sport-Bewegung-L1，均muendlich步）。
 - ✅ 集成方法v2：`Lernmethoden-Evidenz.md`单真相源 + Template v2（检索优先/Pro-Contra/Fehlvorstellungen）+ `vault-check.py`四检PASS + parser修csv表头卡/quote/math块（build过）+ P3加Zitierpflicht。
-- ✅ 电子书抓取进行中：用户登录成功（Lizenz bis 20.10.2027），Playwright+RapidOCR后台跑（~6s/页，已340+页，conf 0.95+），原文只进 `_Downloads/SoWi/ebook-raw/`（gitignored）。
+- ✅ 电子书抓取**完工**（429/430页，缺media 2封面背）：已按11章切分进 `_Downloads/SoWi/split/`（gitignored，边界±2页待核），可写SoWi正式笔记。
+- ✅ UI-SPEC-V3就绪（`App-EF-Lernvault/UI-SPEC-V3.md`：P2/P3/P4界面需求+三态规范+文案表+验收清单），可直接发外部AI落实；主Agent只验build。
 
 ## 环境（接手必备）
 - 日常开发走本地 WebUI：vault根目录跑 `. .\scripts\webui.ps1`（起1420+自动开浏览器；热更新）。

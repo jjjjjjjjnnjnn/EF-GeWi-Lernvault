@@ -16,7 +16,7 @@
 ## App（桌面软件，一站式入口）
 - [App-EF-Lernvault](../App-EF-Lernvault/README.md) — EF-Lernvault：六模块 + 命令面板/快捷键/拖拽 + P1接线（顶栏打开真实vault，笔记/背卡/面板全切真实数据）；`npm run dev` 预览（1420）。
 - [LICENSE](../App-EF-Lernvault/LICENSE)（半开源，已定稿） · [NOTICE](../App-EF-Lernvault/NOTICE.md)（第三方署名，实测版本）
-- 规范：[UI-BRIEF](../App-EF-Lernvault/UI-BRIEF.md)（tufte简洁风） · [INTERACTION-BRIEF](../App-EF-Lernvault/INTERACTION-BRIEF.md)（交互） · [FEATURE-SPEC](../App-EF-Lernvault/FEATURE-SPEC.md)（功能需求，给外部AI） · [UI-SPEC-V2](../App-EF-Lernvault/UI-SPEC-V2.md)（全科+KaTeX+Lernreise，给外部AI）
+- 规范：[UI-BRIEF](../App-EF-Lernvault/UI-BRIEF.md)（tufte简洁风） · [INTERACTION-BRIEF](../App-EF-Lernvault/INTERACTION-BRIEF.md)（交互） · [FEATURE-SPEC](../App-EF-Lernvault/FEATURE-SPEC.md)（功能需求，给外部AI） · [UI-SPEC-V2](../App-EF-Lernvault/UI-SPEC-V2.md)（全科+KaTeX+Lernreise，给外部AI） · [UI-SPEC-V3](../App-EF-Lernvault/UI-SPEC-V3.md)（P2/P3/P4界面需求，给外部AI）
 - 互动课程源：[Lernreise/](../Lernreise/)（vault即课程，首个示范：Sowi-Soziale-Marktwirtschaft-L1）
 - 约定：App 只读 vault（内容源），不写回；commit 前缀 `[App]`；构建产物与签名密钥永不进 git。
 - P0产物（本地 `src-tauri/target/release/bundle/`，不进git）：`EF-Lernvault_0.1.0_x64-setup.exe`（1.8MB）· MSI（2.7MB），已验启动（窗口标题正常，常驻~25MB）。
@@ -59,6 +59,7 @@
 - [2026-09-21-ui-done](Journal/2026-09-21-ui-done.md) — UI落地验收+Web重启（7模块+构建通过）
 - [2026-09-21-audit](Journal/2026-09-21-audit.md) — 全项目审核（csv误报+两处修复）
 - [2026-09-22-integration-v2](Journal/2026-09-22-integration-v2.md) — 集成方法v2（记录·设计·执行）
+- [2026-09-22-ebook-ui-spec-v3](Journal/2026-09-22-ebook-ui-spec-v3.md) — 电子书完工切分+UI-SPEC-V3
 - 约定：文件名 `YYYY-MM-DD-<thema>.md`，头部frontmatter（`fach`可空，`tags: [EF, Meta]`）。
 
 ## Dataview（Obsidian内自动索引，GitHub上仅作备份显示）
