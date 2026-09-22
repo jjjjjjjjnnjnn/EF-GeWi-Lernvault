@@ -9,6 +9,13 @@ import {
   NeedsKeyError,
   type ChatMsg,
 } from "../ai/engine";
+import {
+  buildTutorSystem,
+  chunkNotes,
+  findFallbackNote,
+  verifySupport,
+} from "../engine/rag";
+import { retrieveHybrid } from "../engine/embed";
 
 interface Message {
   id: string;
@@ -16,11 +23,6 @@ interface Message {
   text: string;
   isError?: boolean;
 }
-
-const SYSTEM_PROMPT = `Du bist ein lokaler KI-Tutor für die gymnasiale Oberstufe (Einführungsphase EF, NRW).
-- Niveau: Präzise deutsche Fachbegriffe (EF-Niveau), gefolgt von einer knappen chinesischen Übersetzung/Erklärung.
-- Zitierpflicht: Jede Sachbehauptung MUSS mit der genauen Quelle im Notizen-Vault belegt werden, im Format: [Fach/Dateiname.md#Zeile] oder [Thema].
-- Relevanzgrenze: Beziehe dich streng auf den Lehrplan und die Vault-Notizen. Wenn ein Konzept den EF-Rahmen übersteigt oder nicht in den Notizen vorkommt, lehne die Beantwortung höflich ab (Hinweis: „liegt außerhalb des EF-Vaults / 超纲“).`;
 
 export default function Tutor({
   lang,
@@ -81,23 +83,17 @@ export default function Tutor({
     setIsThinking(true);
     setErrorMsg(null);
 
-    // Build context summary from vault notes if available
-    const availableContext = (vaultNotes || [])
-      .slice(0, 8)
-      .map(
-        (n) =>
-          `[${n.path || `${n.fach}/${n.thema}.md`}]: ${n.thema} (${n.fach}) - ${n.blocks
-            .map((b) => b.text)
-            .slice(0, 2)
-            .join(" ")}`
-      )
-      .join("\n");
+    // RAG-hybrid: L2 (embedModel) -> L1 (lokal, desktop) -> L0 (keyword).
+    // stille downgrades; L1-download mit fortschritt (lokal-%-anzeige).
+    const { chunks, level } = await retrieveHybrid(chunkNotes(vaultNotes || []), q, 8, {
+      onProgress: (p) => setLocalPct(p),
+    });
 
     try {
       const history: ChatMsg[] = [
         {
           role: "system",
-          content: `${SYSTEM_PROMPT}\n\nAktuell im Vault verfügbar:\n${availableContext}`,
+          content: buildTutorSystem(chunks),
         },
         ...messages
           .filter((m) => !m.isError)
@@ -113,12 +109,18 @@ export default function Tutor({
         onLocalProgress: (p) => setLocalPct(p),
       });
 
+      // Support-verifier (string-stufe): fremde [pfad#zeile] -> unsicher-markierung
+      const support = verifySupport(reply, chunks);
+      const checkedReply = support.supported
+        ? reply
+        : `${reply}\n\n(Unsicher — Beleg nicht im Vault gefunden: ${support.missing.join(", ")}. Bitte prüfen / 请核对。)`;
+
       setMessages((prev) => [
         ...prev,
-        { id: `ki-${Date.now()}`, role: "ki", text: reply },
+        { id: `ki-${Date.now()}`, role: "ki", text: checkedReply },
       ]);
       setIsDegraded(false);
-      setEngineTag(describeActiveEngine());
+      setEngineTag(`${describeActiveEngine()} · RAG-${level}`);
     } catch (err) {
       // Engine aus / Key fehlt / Anbieter down -> Vorlagen-Modus (wie bisher)
       if (err instanceof NeedsKeyError) {
@@ -129,12 +131,8 @@ export default function Tutor({
       }
       setIsDegraded(true);
 
-      // Search matching note in vault
-      const match = (vaultNotes || []).find((n) =>
-        q.toLowerCase().includes(n.thema.toLowerCase()) ||
-        n.tags.some((t) => q.toLowerCase().includes(t.toLowerCase())) ||
-        q.toLowerCase().includes(n.fach.toLowerCase())
-      );
+      // Search matching note in vault (vorlagen-modus)
+      const match = findFallbackNote(vaultNotes || [], q);
 
       if (match) {
         const pathRef = match.path || `${match.fach}/${match.thema}.md#1`;

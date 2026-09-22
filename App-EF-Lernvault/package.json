@@ -11,6 +11,7 @@
     "test:run": "vitest run"
   },
   "dependencies": {
+    "@huggingface/transformers": "^4.3.0",
     "@mlc-ai/web-llm": "^0.2.85",
     "@tauri-apps/api": "^2.0.0",
     "fuse.js": "^7.5.0",

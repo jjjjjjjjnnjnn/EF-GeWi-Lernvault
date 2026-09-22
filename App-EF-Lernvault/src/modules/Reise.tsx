@@ -11,6 +11,7 @@ import {
 import { FAECHER } from "../fach";
 import Blocks from "../components/Blocks";
 import { setFeedbackContext } from "../components/FeedbackBox";
+import { xpStore, type XpData } from "../engine/stores";
 import { isTyping } from "../keys";
 import type { Lang } from "../i18n";
 
@@ -21,32 +22,13 @@ interface ProgressData {
   done: Record<string, number>;
 }
 
-const STORAGE_KEY = "eflernvault:xp:v1";
-
 function loadProgress(): ProgressData {
-  try {
-    const raw = localStorage.getItem(STORAGE_KEY);
-    if (raw) {
-      const p = JSON.parse(raw);
-      return {
-        xp: Number(p.xp) || 0,
-        streak: Array.isArray(p.streak) ? p.streak : [],
-        badges: typeof p.badges === "object" && p.badges ? p.badges : {},
-        done: typeof p.done === "object" && p.done ? p.done : {},
-      };
-    }
-  } catch {
-    // fallback
-  }
-  return { xp: 0, streak: [], badges: {}, done: {} };
+  const p: XpData = xpStore.load();
+  return { xp: p.xp, streak: p.streak, badges: p.badges, done: p.done };
 }
 
 function saveProgress(p: ProgressData) {
-  try {
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(p));
-  } catch {
-    // ignore
-  }
+  xpStore.save({ version: 1, ...p });
 }
 
 function updateStreak(streak: string[]): string[] {

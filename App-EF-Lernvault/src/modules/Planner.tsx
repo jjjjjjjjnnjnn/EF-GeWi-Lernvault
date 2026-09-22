@@ -2,21 +2,10 @@ import { useEffect, useState } from "react";
 import { planWeek } from "../data";
 import { t, type Lang } from "../i18n";
 import type { VaultNote } from "../vault/parser";
+import { planStore, xpStore, type PlanTask } from "../engine/stores";
 
-export interface PlannerTask {
-  id: string;
-  day: string;
-  fach: string;
-  task: string;
-  done: boolean;
-}
+export type PlannerTask = PlanTask;
 
-interface PlannerStorage {
-  klausurDate: string;
-  tasks: PlannerTask[];
-}
-
-const STORAGE_KEY = "eflernvault:plan:v1";
 const DEFAULT_DATE = "2027-06-30";
 
 const default10Tasks: PlannerTask[] = [
@@ -42,17 +31,13 @@ export default function Planner({
   const [xp, setXp] = useState(0);
   const [streakDays, setStreakDays] = useState(0);
 
-  // Load from localStorage: eflernvault:plan:v1
+  // Load from store: eflernvault:plan:v1 (legacy ohne version wird gehoben)
   useEffect(() => {
-    try {
-      const raw = localStorage.getItem(STORAGE_KEY);
-      if (raw) {
-        const parsed: PlannerStorage = JSON.parse(raw);
-        if (parsed.klausurDate) setKlausurDate(parsed.klausurDate);
-        if (Array.isArray(parsed.tasks) && parsed.tasks.length > 0) {
-          setTasks(parsed.tasks);
-        }
-      } else if (vaultNotes && vaultNotes.length > 0) {
+    const stored = planStore.load();
+    if (stored.klausurDate) {
+      setKlausurDate(stored.klausurDate);
+      if (stored.tasks.length > 0) setTasks(stored.tasks);
+    } else if (vaultNotes && vaultNotes.length > 0) {
         // Initialize tasks seeded from real vault notes if no saved plan
         const seeded = vaultNotes.slice(0, 7).map((n, i) => {
           const days = ["Mo", "Di", "Mi", "Do", "Fr", "Sa", "So"];
@@ -65,37 +50,19 @@ export default function Planner({
           };
         });
         setTasks(seeded);
-      }
-    } catch (err) {
-      console.warn("Failed to load planner storage", err);
     }
   }, [vaultNotes]);
 
   // Load XP & streak
   useEffect(() => {
-    try {
-      const raw = localStorage.getItem("eflernvault:xp:v1");
-      if (raw) {
-        const data = JSON.parse(raw);
-        setXp(data.xp ?? 0);
-        setStreakDays(Array.isArray(data.streak) ? data.streak.length : 0);
-      }
-    } catch {
-      // fallback
-    }
+    const data = xpStore.load();
+    setXp(data.xp);
+    setStreakDays(data.streak.length);
   }, []);
 
-  // Save changes to localStorage: eflernvault:plan:v1
+  // Save changes to store: eflernvault:plan:v1
   const savePlan = (newDate: string, newTasks: PlannerTask[]) => {
-    try {
-      const payload: PlannerStorage = {
-        klausurDate: newDate,
-        tasks: newTasks,
-      };
-      localStorage.setItem(STORAGE_KEY, JSON.stringify(payload));
-    } catch (err) {
-      console.error("Failed to save plan storage", err);
-    }
+    planStore.save({ version: 1, klausurDate: newDate, tasks: newTasks });
   };
 
   const daysLeft = Math.max(

@@ -90,6 +90,7 @@ export interface AiConfig {
   apiKey: string;
   model: string;
   baseUrl: string; // nur bei custom genutzt
+  embedModel: string; // L2-vektor: leer = aus (hybrid faellt auf L1/L0)
 }
 
 export const AI_KEY = "eflernvault:ai:v1";
@@ -101,6 +102,7 @@ export const DEFAULT_AI: AiConfig = {
   apiKey: "",
   model: "openai/gpt-oss-20b:free",
   baseUrl: "",
+  embedModel: "",
 };
 
 export function getProvider(id: string): ProviderPreset {

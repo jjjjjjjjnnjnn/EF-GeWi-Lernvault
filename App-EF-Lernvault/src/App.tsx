@@ -7,7 +7,9 @@ import Palette, { type PaletteItem } from "./components/Palette";
 import HelpOverlay from "./components/HelpOverlay";
 import { FeedbackFloat, setFeedbackContext } from "./components/FeedbackBox";
 import { pickVault, type VaultData } from "./vault/loader";
+import { xpStore } from "./engine/stores";
 import Library from "./modules/Library";
+import Home from "./modules/Home";
 import Flashcards from "./modules/Flashcards";
 import Quiz from "./modules/Quiz";
 import Tutor from "./modules/Tutor";
@@ -17,7 +19,7 @@ import ReiseModule from "./modules/Reise";
 import Settings from "./modules/Settings";
 import Onboarding, { loadOnboarding, saveOnboarding, type OnboardingResult } from "./modules/Onboarding";
 
-type Tab = "library" | "flashcards" | "quiz" | "tutor" | "planner" | "mindmap" | "reise" | "einstellungen";
+type Tab = "home" | "library" | "flashcards" | "quiz" | "tutor" | "planner" | "mindmap" | "reise" | "einstellungen";
 
 // Tufte Data-Ink: hand-drawn hairline nav icons, no emoji. 16x16, stroke=currentColor.
 const iconProps = {
@@ -33,6 +35,13 @@ const iconProps = {
 } as const;
 
 const icons: Record<Tab, ReactNode> = {
+  home: (
+    <svg {...iconProps}>
+      <path d="M2.5 8.2L8 3l5.5 5.2" />
+      <path d="M4.3 7.4V13.5h7.4V7.4" />
+      <path d="M6.8 13.5v-3h2.4v3" />
+    </svg>
+  ),
   library: (
     <svg {...iconProps}>
       <path d="M2.5 13.5h11" />
@@ -95,11 +104,11 @@ const getInitialTab = (): Tab => {
   if (typeof window !== "undefined") {
     const params = new URLSearchParams(window.location.search);
     const t = params.get("tab") as Tab;
-    if (["library", "flashcards", "quiz", "tutor", "planner", "mindmap", "reise", "einstellungen"].includes(t)) {
+    if (["home", "library", "flashcards", "quiz", "tutor", "planner", "mindmap", "reise", "einstellungen"].includes(t)) {
       return t;
     }
   }
-  return "library";
+  return "home";
 };
 
 export default function App() {
@@ -147,8 +156,9 @@ export default function App() {
     }
   };
 
-  // Lern-Navigation (7 module); Einstellungen steht getrennt am seitenende (A4).
+  // Lern-Navigation (8 module, home zuerst); Einstellungen steht getrennt am seitenende (B3: Alt 9).
   const nav: { id: Tab; label: string; icon: ReactNode }[] = [
+    { id: "home", label: tr.home, icon: icons.home },
     { id: "library", label: tr.library, icon: icons.library },
     { id: "flashcards", label: tr.flashcards, icon: icons.flashcards },
     { id: "quiz", label: tr.quiz, icon: icons.quiz },
@@ -158,7 +168,7 @@ export default function App() {
     { id: "reise", label: tr.reise, icon: icons.reise },
   ];
 
-  const TAB_ORDER: Tab[] = ["library", "flashcards", "quiz", "tutor", "planner", "mindmap", "reise"];
+  const TAB_ORDER: Tab[] = ["home", "library", "flashcards", "quiz", "tutor", "planner", "mindmap", "reise"];
   const [paletteOpen, setPaletteOpen] = useState(false);
   const [helpOpen, setHelpOpen] = useState(false);
 
@@ -199,7 +209,7 @@ export default function App() {
   };
 
   const exportXp = () => {
-    const raw = localStorage.getItem("eflernvault:xp:v1") || "{}";
+    const raw = xpStore.raw() || '{"version":1,"xp":0,"streak":[],"badges":{},"done":{}}';
     const blob = new Blob([raw], { type: "application/json" });
     const url = URL.createObjectURL(blob);
     const a = document.createElement("a");
@@ -221,7 +231,7 @@ export default function App() {
     switchTab("reise");
   };
 
-  // Global keys: Ctrl/⌘K palette · Ctrl/⌘E export · / search · Alt 1-7 module + Alt 8 settings · L language · ? help.
+  // Global keys: Ctrl/⌘K palette · Ctrl/⌘E export · / search · Alt 1-8 module + Alt 9 settings · L language · ? help.
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
       if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === "k") {
@@ -243,9 +253,9 @@ export default function App() {
         setHelpOpen(true);
       } else if (e.key.toLowerCase() === "l" && !e.altKey && !e.ctrlKey && !e.metaKey) {
         toggleLang();
-      } else if (e.altKey && e.key >= "1" && e.key <= "8") {
+      } else if (e.altKey && e.key >= "1" && e.key <= "9") {
         e.preventDefault();
-        if (e.key === "8") switchTab("einstellungen");
+        if (e.key === "9") switchTab("einstellungen");
         else switchTab(TAB_ORDER[Number(e.key) - 1]);
       }
     };
@@ -336,7 +346,7 @@ export default function App() {
         id: "act-settings",
         group: lang === "de" ? "Aktionen" : "操作",
         label: tr.settings,
-        hint: "Alt 8",
+        hint: "Alt 9",
         run: () => switchTab("einstellungen"),
       },
     ],
@@ -397,11 +407,11 @@ export default function App() {
           })}
         </nav>
 
-        {/* Einstellungen: getrennt am seitenende, ausserhalb der lern-navigation (A4) */}
+        {/* Einstellungen: getrennt am seitenende, ausserhalb der lern-navigation (B3: Alt 9) */}
         <div className="mt-4 border-t border-[#E5E1D8] pt-3">
           <button
             onClick={() => switchTab("einstellungen")}
-            title={`${tr.settings} (Alt 8)`}
+            title={`${tr.settings} (Alt 9)`}
             className={`flex w-full items-center gap-2.5 px-3 py-2 text-left text-sm transition-all duration-150 rounded-sm active:scale-[0.98] focus-visible:outline focus-visible:outline-1 focus-visible:outline-[#4338CA] ${
               tab === "einstellungen"
                 ? "font-medium text-[#4338CA] bg-[#ECE7DC]/60 border-l-2 border-[#4338CA]"
@@ -410,7 +420,7 @@ export default function App() {
           >
             <span className="shrink-0 select-none">{icons.einstellungen}</span>
             <span className="font-sans">{tr.settings}</span>
-            <kbd className="ml-auto font-mono text-[10px] text-[#6B675C]">Alt 8</kbd>
+            <kbd className="ml-auto font-mono text-[10px] text-[#6B675C]">Alt 9</kbd>
           </button>
         </div>
 
@@ -448,9 +458,10 @@ export default function App() {
 
         {/* Content Viewport */}
         <div key={tab} className="tab-enter flex-1 overflow-y-auto p-8">
+          {tab === "home" && <Home lang={lang} cards={vault?.cards ?? null} onJumpToLibrary={jumpToLibrary} />}
           {tab === "library" && <Library query={query} vault={vault?.notes ?? null} selectedFach={selectedFach} onClearQuery={() => setQuery("")} />}
           {tab === "flashcards" && <Flashcards lang={lang} vault={vault?.cards ?? null} />}
-          {tab === "quiz" && <Quiz lang={lang} vault={vault?.notes ?? null} onJumpToLibrary={jumpToLibrary} />}
+          {tab === "quiz" && <Quiz lang={lang} vault={vault?.notes ?? null} cards={vault?.cards ?? null} onJumpToLibrary={jumpToLibrary} />}
           {tab === "tutor" && <Tutor lang={lang} vaultNotes={vault?.notes ?? null} onJumpToLibrary={jumpToLibrary} />}
           {tab === "planner" && <Planner lang={lang} vaultNotes={vault?.notes ?? null} />}
           {tab === "mindmap" && <Mindmap lang={lang} vaultNotes={vault?.notes ?? null} onJumpToLibrary={jumpToLibrary} />}

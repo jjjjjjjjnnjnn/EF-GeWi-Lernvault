@@ -97,6 +97,16 @@ export default function AiSettings({
               className="mt-1 block w-full rounded-sm border border-[#E5E1D8] bg-white px-2 py-1.5 font-mono text-xs text-[#1C1B17] focus:border-[#4338CA] focus:outline-none"
             />
           </label>
+          <label className="block">
+            <span className="font-sans text-xs text-[#6B675C]">{tr.aiEmbedModel}</span>
+            <input
+              value={cfg.embedModel}
+              onChange={(e) => update({ embedModel: e.target.value })}
+              placeholder="text-embedding-3-small"
+              spellCheck={false}
+              className="mt-1 block w-full rounded-sm border border-[#E5E1D8] bg-white px-2 py-1.5 font-mono text-xs text-[#1C1B17] focus:border-[#4338CA] focus:outline-none"
+            />
+          </label>
           {cfg.providerId === "custom" && (
             <label className="block sm:col-span-2">
               <span className="font-sans text-xs text-[#6B675C]">{tr.aiBaseUrl}</span>

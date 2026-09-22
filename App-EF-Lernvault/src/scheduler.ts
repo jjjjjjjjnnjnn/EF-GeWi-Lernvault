@@ -22,6 +22,9 @@ export interface FSRSStorage {
 
 const STORAGE_KEY = "eflernvault:fsrs:v1";
 
+/** Fuer wipe/export-snapshot (stores.allStoreKeys). */
+export const FSRS_STORAGE_KEY = STORAGE_KEY;
+
 const fsrsStore = defineStore<FSRSStorage>({
   key: STORAGE_KEY,
   version: 1,
@@ -41,6 +44,34 @@ export function saveFsrsStorage(storage: FSRSStorage): void {
 export function getCardState(cardId: string): CardState | undefined {
   const store = loadFsrsStorage();
   return store.cards[cardId];
+}
+
+/**
+ * Fehler-rueckfluss (B2): karte sofort faellig stellen (heute).
+ * Neue karten sind ohnehin in der queue; nur review-karten brauchen das.
+ */
+export function prioritizeCard(cardId: string): void {
+  const store = loadFsrsStorage();
+  const prev = store.cards[cardId];
+  if (!prev) return;
+  const now = new Date();
+  store.cards[cardId] = { ...prev, due: new Date(now.getTime() - 1000).toISOString() };
+  saveFsrsStorage(store);
+}
+
+/** Alle review-karten eines themas zurueck in den stapel; rueckgabe = anzahl. */
+export function prioritizeThema<T extends { id: string; thema: string }>(cards: T[], thema: string): number {
+  const store = loadFsrsStorage();
+  const now = new Date().toISOString();
+  let n = 0;
+  for (const c of cards) {
+    if (c.thema === thema && store.cards[c.id]) {
+      store.cards[c.id] = { ...store.cards[c.id], due: now };
+      n++;
+    }
+  }
+  if (n > 0) saveFsrsStorage(store);
+  return n;
 }
 
 /**

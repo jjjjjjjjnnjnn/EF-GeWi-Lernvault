@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { t, type Lang } from "../i18n";
 import { FAECHER, getFachLabel, type FachId } from "../fach";
+import { onboardingStore, planStore } from "../engine/stores";
 import { isTyping } from "../keys";
 
 export interface OnboardingResult {
@@ -9,8 +10,8 @@ export interface OnboardingResult {
   demo: boolean;
 }
 
-export const ONBOARDING_KEY = "eflernvault:onboarding:v1";
-export const PLAN_KEY = "eflernvault:plan:v1";
+export const ONBOARDING_KEY = onboardingStore.key;
+export const PLAN_KEY = planStore.key;
 export const DEFAULT_KLAUSUR_DATE = "2027-06-30";
 
 // Ehrlicher Ausbaustand je Fach (Stand: INDEX, wird mit dem Vault-Wachstum gepflegt).
@@ -18,32 +19,20 @@ const READY: FachId[] = ["SoWi", "Philosophie"];
 const ACTIVE: FachId[] = ["Deutsch", "Englisch", "Mathe", "Physik", "Bio", "Musik"];
 
 export function loadOnboarding(): OnboardingResult | null {
-  try {
-    const raw = localStorage.getItem(ONBOARDING_KEY);
-    if (!raw) return null;
-    const p = JSON.parse(raw);
-    if (p?.version !== 1 || p?.done !== true) return null;
-    return { faecher: p.faecher ?? [], klausurDate: p.klausurDate ?? DEFAULT_KLAUSUR_DATE, demo: !!p.demo };
-  } catch {
-    return null;
-  }
+  const s = onboardingStore.load();
+  if (!s.done) return null;
+  return {
+    faecher: s.faecher.filter((f): f is FachId => (FAECHER as { id: string }[]).some((x) => x.id === f)),
+    klausurDate: s.klausurDate || DEFAULT_KLAUSUR_DATE,
+    demo: s.demo,
+  };
 }
 
 export function saveOnboarding(r: OnboardingResult) {
-  try {
-    localStorage.setItem(ONBOARDING_KEY, JSON.stringify({ version: 1, done: true, ...r }));
-    // Klausurtermin in den Lernplan übernehmen (Tasks bleiben unangetastet).
-    const planRaw = localStorage.getItem(PLAN_KEY);
-    if (planRaw) {
-      const plan = JSON.parse(planRaw);
-      plan.klausurDate = r.klausurDate;
-      localStorage.setItem(PLAN_KEY, JSON.stringify(plan));
-    } else {
-      localStorage.setItem(PLAN_KEY, JSON.stringify({ klausurDate: r.klausurDate, tasks: [] }));
-    }
-  } catch {
-    // localStorage voll/blockiert: Onboarding bleibt wiederholbar, kein Absturz.
-  }
+  onboardingStore.save({ version: 1, done: true, faecher: r.faecher, klausurDate: r.klausurDate, demo: r.demo });
+  // Klausurtermin in den Lernplan übernehmen (Tasks bleiben unangetastet).
+  const plan = planStore.load();
+  planStore.save({ ...plan, klausurDate: r.klausurDate });
 }
 
 export default function Onboarding({

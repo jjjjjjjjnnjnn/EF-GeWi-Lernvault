@@ -1,44 +1,22 @@
 import { useEffect, useState } from "react";
 import type { Lang } from "../i18n";
+import { feedbackStore, type FeedbackEntry, type FeedbackData } from "../engine/stores";
 
 // Dev-Feedback: lets the learner drop in-place notes ("卡住了/看不懂/按钮没反应")
 // with exact context attached. Stored locally, one-click copy to paste back
 // to the developer. No network, no new shortcuts.
-export const FEEDBACK_STORAGE_KEY = "eflernvault:feedback:v1";
+export const FEEDBACK_STORAGE_KEY = feedbackStore.key;
 
-export interface FeedbackEntry {
-  id: string;
-  ts: string;
-  ctx: string;
-  text: string;
-}
+export type { FeedbackEntry };
 
-interface FeedbackStore {
-  version: 1;
-  entries: FeedbackEntry[];
-}
+interface FeedbackStore extends FeedbackData {}
 
 function loadStore(): FeedbackStore {
-  try {
-    const raw = localStorage.getItem(FEEDBACK_STORAGE_KEY);
-    if (raw) {
-      const parsed = JSON.parse(raw);
-      if (parsed && parsed.version === 1 && Array.isArray(parsed.entries)) {
-        return parsed as FeedbackStore;
-      }
-    }
-  } catch {
-    // corrupted storage -> start fresh
-  }
-  return { version: 1, entries: [] };
+  return feedbackStore.load();
 }
 
 function saveStore(store: FeedbackStore) {
-  try {
-    localStorage.setItem(FEEDBACK_STORAGE_KEY, JSON.stringify(store));
-  } catch {
-    // quota/full -> keep in-memory only
-  }
+  feedbackStore.save(store);
 }
 
 // Live context bus: modules report where the learner is

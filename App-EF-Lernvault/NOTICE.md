@@ -6,6 +6,7 @@
 - react / react-dom 19.3.0 — MIT — Meta Platforms, Inc.
 - fuse.js 7.x（笔记检索模糊层，精确优先∪fuzzy；用户特批引入 Phase A 2026-09-23）— MIT — Kiro Risk
 - @mlc-ai/web-llm 0.2.85（浏览器内本地推理，懒加载，仅本地引擎启用时下载模型权重；用户特批引入 2026-09-23）— Apache-2.0 — MLC AI (Apache TVM 社区)
+- @huggingface/transformers 3.x（浏览器内本地向量，懒加载，jina-embeddings-v2-base-de量化q8；移动端默认关闭；用户特批引入 Phase B 2026-09-23）— Apache-2.0 — Hugging Face
 - tauri 2.x / @tauri-apps/api 2.x（Rust 壳 + 前端桥）— MIT / Apache-2.0 — Tauri Programme
 - serde / serde_json 1.x（Rust 序列化）— MIT / Apache-2.0
 

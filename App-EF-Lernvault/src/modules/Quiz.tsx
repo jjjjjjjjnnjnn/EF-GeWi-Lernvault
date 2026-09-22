@@ -2,8 +2,16 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import { isTyping } from "../keys";
 import { t, type Lang } from "../i18n";
 import { setFeedbackContext } from "../components/FeedbackBox";
-import type { VaultNote } from "../vault/parser";
+import type { VaultNote, VaultCard } from "../vault/parser";
 import { chat } from "../ai/engine";
+import { isInterleaveOn, orderMixed, setInterleave } from "../engine/interleave";
+import { prioritizeThema } from "../scheduler";
+import {
+  buildKlausurPrompt,
+  buildVergleichPrompt,
+  KORREKTOR_SYSTEM,
+  parseRubricFlags,
+} from "../engine/rag";
 import {
   generateQuizFromNote,
   getAvailableThemen,
@@ -18,6 +26,7 @@ import {
 interface QuizProps {
   lang?: Lang;
   vault?: VaultNote[] | null;
+  cards?: VaultCard[] | null;
   onJumpToLibrary?: (query: string) => void;
 }
 
@@ -34,37 +43,9 @@ interface RubricEvaluation {
   points: number; // 0-15 Punkte
 }
 
-const VERGLEICH_STORAGE_KEY = "eflernvault:vergleich:v1";
+import { vergleichStore } from "../engine/stores";
 
-interface VergleichStorage {
-  version: 1;
-  nextTimes: Record<string, string>;
-}
-
-function loadVergleichStorage(): VergleichStorage {
-  try {
-    const raw = localStorage.getItem(VERGLEICH_STORAGE_KEY);
-    if (raw) {
-      const parsed = JSON.parse(raw);
-      if (parsed && parsed.version === 1 && typeof parsed.nextTimes === "object") {
-        return parsed as VergleichStorage;
-      }
-    }
-  } catch (err) {
-    console.warn("Failed to load vergleich storage", err);
-  }
-  return { version: 1, nextTimes: {} };
-}
-
-function saveVergleichStorage(storage: VergleichStorage) {
-  try {
-    localStorage.setItem(VERGLEICH_STORAGE_KEY, JSON.stringify(storage));
-  } catch (err) {
-    console.error("Failed to save vergleich storage", err);
-  }
-}
-
-export default function Quiz({ lang = "zh", vault = null, onJumpToLibrary }: QuizProps) {
+export default function Quiz({ lang = "zh", vault = null, cards = null, onJumpToLibrary }: QuizProps) {
   const tr = t(lang);
 
   // Sub-mode switcher: "klausur" (5-step essay drill) vs. "vergleich" (discrimination & contrast)
@@ -176,43 +157,27 @@ export default function Quiz({ lang = "zh", vault = null, onJumpToLibrary }: Qui
     setLmDegraded(false);
 
     try {
-      const prompt = `Du bist ein strenger Klausurkorrektor für die gymnasiale Oberstufe (EF, SoWi/Philosophie).
-Thema: ${currentQuiz.thema}
-Material: ${currentQuiz.materialQuote}
-Notizpfad: ${currentQuiz.notePath}
-
-Aufgaben und Schülerantworten:
-${currentQuiz.tasks
-  .map(
-    (t, i) => `${i + 1}. [${t.kind ?? "standard"}] ${t.promptDE}
-Antwort: ${answers[i] || "(keine Antwort eingegeben)"}`
-  )
-  .join("\n")}
-
-Prüfe für jede Teilaufgabe:
-- Operator verfehlt?
-- Fachbegriff falsch?
-- Beleg fehlt?
-- Vorgehen falsch? (falsches Verfahren / falscher Begriff gewählt oder Warum nicht begründet)
-Zitiere für jede Sachkritik exakt [${currentQuiz.notePath}#Zeile].
-Gib die Punkte (0-15) an.`;
+      const prompt = buildKlausurPrompt(
+        currentQuiz.thema,
+        currentQuiz.materialQuote,
+        currentQuiz.notePath,
+        currentQuiz.tasks,
+        answers
+      );
 
       const content = await chat(
         [
           {
             role: "system",
-            content:
-              "Du bist ein Klausur-Korrektor. Antworte sachlich, gib zu jeder Bemerkung einen Beleg [Pfad#Zeile].",
+            content: KORREKTOR_SYSTEM,
           },
           { role: "user", content: prompt },
         ],
         { temperature: 0.2, maxTokens: 800 }
       );
 
-      const opFail = /operator verfehlt/i.test(content);
-      const termFail = /fachbegriff (falsch|fehlt)/i.test(content);
-      const belegFail = /beleg fehlt/i.test(content);
-      const vorgehenFail = /vorgehen falsch/i.test(content);
+      const { operatorVerfehlt: opFail, fachbegriffFalsch: termFail, belegFehlt: belegFail, vorgehenFalsch: vorgehenFail } =
+        parseRubricFlags(content);
 
       setEvaluations([
         {
@@ -310,9 +275,31 @@ Gib die Punkte (0-15) an.`;
 
   // ==================== VERGLEICH-DRILL STATE (V4) ====================
   const vergleichItems = useMemo(() => getVergleichItems(vault), [vault]);
-  const [activeVergleichIdx, setActiveVergleichIdx] = useState(0);
-  const currentVergleich: VergleichItem = vergleichItems[activeVergleichIdx] || vergleichItems[0];
 
+  const [activeVergleichIdx, setActiveVergleichIdx] = useState(0);
+
+  // B2-interleave: sortierung folgt dem schalter des aktuellen fach (default je fach-evidenz).
+  const [ilOn, setIlOn] = useState<boolean | null>(null);
+  const [ilBackMsg, setIlBackMsg] = useState("");
+  const quizFachGuess =
+    drillMode === "klausur"
+      ? currentQuiz.fach
+      : (vergleichItems[activeVergleichIdx] || vergleichItems[0])?.fach ?? "";
+  const ilEffective = ilOn ?? isInterleaveOn(quizFachGuess);
+  const orderedThemen = orderMixed(availableThemen, (t) => t.fach, ilEffective, quizFachGuess);
+  const orderedVergleichItems = orderMixed(vergleichItems, (i) => i.fach, ilEffective, quizFachGuess);
+  const currentVergleich: VergleichItem = orderedVergleichItems[activeVergleichIdx] || orderedVergleichItems[0];
+
+  const toggleIl = () => {
+    const next = !ilEffective;
+    if (quizFachGuess) setInterleave(quizFachGuess, next);
+    setIlOn(next);
+  };
+
+  const sendBack = (thema: string) => {
+    const n = prioritizeThema(cards ?? [], thema);
+    setIlBackMsg(tr.ilBackDone(n));
+  };
   // Report live position to the global feedback float
   useEffect(() => {
     if (drillMode === "klausur") {
@@ -360,7 +347,7 @@ Gib die Punkte (0-15) an.`;
 
   // Load "下次先…" when changing item
   useEffect(() => {
-    const store = loadVergleichStorage();
+    const store = vergleichStore.load();
     setNextTimeText(store.nextTimes[currentVergleich.id] || "");
     if (prevVergleichId.current !== currentVergleich.id) {
       prevVergleichId.current = currentVergleich.id;
@@ -373,9 +360,9 @@ Gib die Punkte (0-15) an.`;
 
   const saveNextTime = (text: string) => {
     setNextTimeText(text);
-    const store = loadVergleichStorage();
+    const store = vergleichStore.load();
     store.nextTimes[currentVergleich.id] = text;
-    saveVergleichStorage(store);
+    vergleichStore.save(store);
   };
 
   const vMm = String(Math.floor(vSec / 60)).padStart(2, "0");
@@ -410,35 +397,25 @@ Gib die Punkte (0-15) an.`;
     const begruendung = warumText.trim();
     setVLmDegraded(false);
     try {
-      const prompt = `Du bist ein strenger Klausurkorrektor für die gymnasiale Oberstufe (EF, ${currentVergleich.fach}).
-Thema: ${currentVergleich.thema}
-Wahl: Option ${selectedOption ?? "-"} (korrekt: Option ${currentVergleich.correctOption})
-Begründung: ${begruendung || "(keine Angabe)"}
-Beleg: ${currentVergleich.sourceRef}
-
-Prüfe:
-- Operator verfehlt?
-- Fachbegriff falsch?
-- Beleg fehlt?
-- Vorgehen falsch? (falsches Verfahren / falscher Begriff gewählt oder Warum nicht begründet)
-Zitiere für jede Sachkritik exakt [${currentVergleich.sourceRef}].`;
+      const prompt = buildVergleichPrompt(
+        currentVergleich.fach,
+        currentVergleich.thema,
+        selectedOption,
+        currentVergleich.correctOption,
+        begruendung,
+        currentVergleich.sourceRef
+      );
       const content: string = await chat(
         [
           {
             role: "system",
-            content:
-              "Du bist ein Klausur-Korrektor. Antworte sachlich, gib zu jeder Bemerkung einen Beleg [Pfad#Zeile].",
+            content: KORREKTOR_SYSTEM,
           },
           { role: "user", content: prompt },
         ],
         { temperature: 0.2, maxTokens: 400 }
       );
-      setVergleichEval({
-        operatorVerfehlt: /operator verfehlt/i.test(content),
-        fachbegriffFalsch: /fachbegriff (falsch|fehlt)/i.test(content),
-        belegFehlt: /beleg fehlt/i.test(content),
-        vorgehenFalsch: /vorgehen falsch/i.test(content),
-      });
+      setVergleichEval(parseRubricFlags(content));
     } catch {
       setVLmDegraded(true);
       setVergleichEval({
@@ -528,6 +505,19 @@ Zitiere für jede Sachkritik exakt [${currentVergleich.sourceRef}].`;
         <span className="font-mono text-[10px] text-[#4338CA] border border-[#4338CA]/30 px-2 py-0.5 rounded-sm">
           {drillMode === "klausur" ? "AFB I–III · 5 Schritte" : "AFB II–III · Kontrast"}
         </span>
+        {/* B2-interleave-schalter (pro fach, default je evidenz) */}
+        <button
+          type="button"
+          onClick={toggleIl}
+          title={`${quizFachGuess}: ${ilEffective ? tr.ilOn : tr.ilOff}`}
+          className={`font-mono text-[10px] px-2 py-0.5 rounded-sm border transition-all active:scale-95 ${
+            ilEffective
+              ? "border-[#4338CA] text-[#4338CA]"
+              : "border-[#E5E1D8] text-[#6B675C] hover:text-[#1C1B17]"
+          }`}
+        >
+          {quizFachGuess} · {ilEffective ? tr.ilOn : tr.ilOff}
+        </button>
       </div>
 
       {/* ========================================================================= */}
@@ -597,8 +587,8 @@ Zitiere für jede Sachkritik exakt [${currentVergleich.sourceRef}].`;
               </p>
 
               <div className="divide-y divide-[#E5E1D8] border border-[#E5E1D8] bg-white rounded-sm">
-                {(availableThemen.length > 0
-                  ? availableThemen
+                {(orderedThemen.length > 0
+                  ? orderedThemen
                   : [{ thema: MOCK_QUIZ.thema, fach: MOCK_QUIZ.fach, note: null }]
                 ).map((item) => {
                   const isSelected = selectedThema === item.thema;
@@ -998,18 +988,35 @@ Zitiere für jede Sachkritik exakt [${currentVergleich.sourceRef}].`;
                       : "纯文本补丁，可一键复制并无缝粘入 Obsidian 对应错题日志。"}
                   </div>
                 </div>
-                <button
-                  type="button"
-                  onClick={copyPatch}
-                  className={`rounded-sm border px-3.5 py-1.5 font-mono text-xs transition-all duration-150 ${
-                    copied
-                      ? "border-[#4338CA] bg-[#4338CA] text-white"
-                      : "border-[#1C1B17] bg-[#1C1B17] text-white hover:bg-[#4338CA] hover:border-[#4338CA]"
-                  }`}
-                >
-                  {copied ? tr.copied : tr.copyPatch}
-                </button>
+                <span className="flex items-center gap-2">
+                  {/* B2-rueckfluss: thema zurueck in den kartenstapel */}
+                  <button
+                    type="button"
+                    onClick={() => sendBack(currentQuiz.thema)}
+                    title={tr.ilBack}
+                    className="rounded-sm border border-[#E5E1D8] bg-white px-3.5 py-1.5 font-mono text-xs text-[#6B675C] hover:border-[#4338CA] hover:text-[#4338CA] transition-all duration-150 active:scale-95"
+                  >
+                    {tr.ilBack}
+                  </button>
+                  <button
+                    type="button"
+                    onClick={copyPatch}
+                    className={`rounded-sm border px-3.5 py-1.5 font-mono text-xs transition-all duration-150 ${
+                      copied
+                        ? "border-[#4338CA] bg-[#4338CA] text-white"
+                        : "border-[#1C1B17] bg-[#1C1B17] text-white hover:bg-[#4338CA] hover:border-[#4338CA]"
+                    }`}
+                  >
+                    {copied ? tr.copied : tr.copyPatch}
+                  </button>
+                </span>
               </div>
+
+              {ilBackMsg && (
+                <div className="font-mono text-[11px] text-[#4338CA]">
+                  {ilBackMsg}
+                </div>
+              )}
 
               {/* V4 ddRetrieval mounting: inside Fehlerlog view */}
               <div className="font-mono text-[11px] text-[#6B675C]">
@@ -1115,9 +1122,9 @@ Zitiere für jede Sachkritik exakt [${currentVergleich.sourceRef}].`;
             </div>
           </div>
 
-          {/* Topic Selector Tabs for Vergleich items */}
+          {/* Topic Selector Tabs for Vergleich items (B2-sortiert) */}
           <div className="flex gap-2 overflow-x-auto pb-1">
-            {vergleichItems.map((item, idx) => (
+            {orderedVergleichItems.map((item, idx) => (
               <button
                 key={item.id}
                 type="button"
@@ -1486,7 +1493,7 @@ Zitiere für jede Sachkritik exakt [${currentVergleich.sourceRef}].`;
                   </div>
                 </div>
 
-                {/* "下次先…" 单行输入框 (存 localStorage: eflernvault:vergleich:v1) */}
+                {/* "下次先…" 单行输入框 (store: eflernvault:vergleich:v1) */}
                 <div className="space-y-1">
                   <label className="block text-xs font-mono text-[#6B675C]">
                     {tr.naechstesMal}
@@ -1514,9 +1521,19 @@ Zitiere für jede Sachkritik exakt [${currentVergleich.sourceRef}].`;
                 <div className="border border-[#E5E1D8] bg-[#FAF9F6] p-3 rounded-sm space-y-2">
                   <div className="flex items-center justify-between text-xs font-mono text-[#6B675C]">
                     <span>FEHLERLOG-PATCH / 错题补丁</span>
-                    <button
-                      type="button"
-                      onClick={copyVergleichPatch}
+                    <span className="flex items-center gap-2">
+                      {/* B2-rueckfluss: thema zurueck in den kartenstapel */}
+                      <button
+                        type="button"
+                        onClick={() => sendBack(currentVergleich.thema)}
+                        title={tr.ilBack}
+                        className="px-2.5 py-0.5 rounded-sm border border-[#E5E1D8] bg-white font-mono text-[11px] text-[#6B675C] hover:border-[#4338CA] hover:text-[#4338CA] transition-all active:scale-95"
+                      >
+                        {tr.ilBack}
+                      </button>
+                      <button
+                        type="button"
+                        onClick={copyVergleichPatch}
                       className={`px-2.5 py-0.5 rounded-sm border font-mono text-[11px] transition-all ${
                         copiedVergleichPatch
                           ? "border-[#4338CA] bg-[#4338CA] text-white"
@@ -1525,6 +1542,7 @@ Zitiere für jede Sachkritik exakt [${currentVergleich.sourceRef}].`;
                     >
                       {copiedVergleichPatch ? tr.copied : tr.copyPatch}
                     </button>
+                    </span>
                   </div>
                   <pre className="block bg-white border border-[#E5E1D8] p-2.5 font-mono text-[11px] text-[#1C1B17] rounded-sm overflow-x-auto select-all leading-relaxed">
 {`--- Fehlerlog.md
@@ -1538,6 +1556,11 @@ Zitiere für jede Sachkritik exakt [${currentVergleich.sourceRef}].`;
 +   - Belegstelle: ${currentVergleich.sourceRef}
 `}
                   </pre>
+                  {ilBackMsg && (
+                    <div className="font-mono text-[11px] text-[#4338CA]">
+                      {ilBackMsg}
+                    </div>
+                  )}
                 </div>
               </div>
             </div>

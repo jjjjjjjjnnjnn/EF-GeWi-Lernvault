@@ -84,6 +84,27 @@ export const t = (lang: Lang) => ({
   vergleichDrill:
     lang === "de" ? "Vergleich & Unterscheidung" : "对比辨析 (二选一与并排)",
 
+  //主页 (Home)
+  home: lang === "de" ? "Start" : "主页",
+  homeTitle: lang === "de" ? "Heute lernen" : "今日学习",
+  homeDue: lang === "de" ? "Fällig heute" : "今日到期",
+  homeNew: lang === "de" ? "Neue Karten" : "新卡",
+  homeXp: lang === "de" ? "XP gesamt" : "总积分",
+  homeStreak: lang === "de" ? "Tage in Folge" : "连击天数",
+  homeNext: lang === "de" ? "Zuerst wiederholen" : "优先重背",
+  homeEmpty: lang === "de" ? "Noch nichts fällig — Vault verbinden oder Karten lernen." : "暂无到期——先连接知识库或去背卡。",
+  homeMastery: lang === "de" ? "Beherrschung je Fach" : "各科掌握度",
+  homeNoPlan: lang === "de" ? "Kein Wochenplan" : "无周计划",
+  homeWeek: (p: number) => (lang === "de" ? `Woche: ${p} % erledigt` : `本周完成${p}%`),
+  homeKlausur: (d: number) => (lang === "de" ? `Klausur in ${d} Tagen` : `距考试${d}天`),
+  ilOn: lang === "de" ? "Interleaved an" : "交错开",
+  ilOff: lang === "de" ? "Interleaved aus" : "交错关",
+  ilBack: lang === "de" ? "Thema zurück in den Stapel" : "送回背卡堆",
+  ilBackDone: (n: number) =>
+    lang === "de"
+      ? `${n} Karte(n) zurück in den Stapel gelegt — heute wiederholen.`
+      : `已送回${n}张卡——今天重背。`,
+
   // Onboarding (Erststart-Assistent)
   obTitle: lang === "de" ? "Willkommen im Lernstudio" : "欢迎来到学习工作室",
   obSub:
@@ -120,6 +141,7 @@ export const t = (lang: Lang) => ({
   // KI-Einstellungen (AiSettings)
   aiProvider: lang === "de" ? "Anbieter" : "服务商",
   aiModel: lang === "de" ? "Modell (editierbar)" : "模型（可改）",
+  aiEmbedModel: lang === "de" ? "Embedding-Modell L2 (leer = aus)" : "向量模型L2（空=关闭）",
   aiBaseUrl: lang === "de" ? "Base-URL (nur Eigen-Anbieter)" : "Base-URL（仅自定义）",
   aiApiKey: lang === "de" ? "API-Key (nur lokal gespeichert)" : "API-Key（仅存本地）",
   aiManualHint:
