@@ -8,7 +8,7 @@ export interface VaultData {
   reisen: Reise[];
 }
 
-const SKIP = new Set(["App-EF-Lernvault", "_Downloads", "node_modules", "dist", "target"]);
+const SKIP = new Set(["App-EF-Lernvault", "_Downloads", "node_modules", "dist", "target", "Journal"]);
 
 async function walk(
   dir: FileSystemDirectoryHandle,

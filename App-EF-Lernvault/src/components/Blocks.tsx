@@ -115,6 +115,38 @@ export default function Blocks({ blocks }: { blocks: Block[] }) {
             </div>
           );
         }
+        if (b.kind === "quote") {
+          return (
+            <div
+              key={i}
+              className={`mb-2 border-l-2 border-[#E5E1D8] pl-3 italic ${
+                b.lang === "zh"
+                  ? "font-sans text-sm text-[#6B675C]"
+                  : "font-serif text-[15px] text-[#1C1B17]"
+              }`}
+            >
+              {renderMathText(b.text)}
+            </div>
+          );
+        }
+        if (b.kind === "math") {
+          try {
+            const html = katex.renderToString(b.text, { displayMode: true, throwOnError: false });
+            return (
+              <div
+                key={i}
+                className="my-2 overflow-x-auto text-center font-serif text-[#1C1B17]"
+                dangerouslySetInnerHTML={{ __html: html }}
+              />
+            );
+          } catch {
+            return (
+              <code key={i} className="mb-2 block text-center font-mono text-sm text-[#1C1B17]">
+                {b.text}
+              </code>
+            );
+          }
+        }
         return (
           <div
             key={i}

@@ -12,7 +12,7 @@ export interface VaultNote {
 }
 
 export interface Block {
-  kind: "h2" | "h3" | "p" | "li";
+  kind: "h2" | "h3" | "p" | "li" | "quote" | "math";
   text: string;
   lang: "zh" | "de";
 }
@@ -65,9 +65,31 @@ function inline(text: string): string {
 
 export function parseBody(body: string): Block[] {
   const blocks: Block[] = [];
+  let inMath = false;
+  let mathBuf: string[] = [];
   for (const rawLine of body.split("\n")) {
     const line = rawLine.trim();
-    if (!line || line.startsWith(">") || line.startsWith("```")) continue;
+    if (line.startsWith("```")) {
+      if (inMath) {
+        const code = mathBuf.join("\n").trim();
+        if (code) blocks.push({ kind: "math", text: code, lang: "de" });
+        mathBuf = [];
+        inMath = false;
+      } else {
+        inMath = true;
+      }
+      continue;
+    }
+    if (inMath) {
+      mathBuf.push(rawLine);
+      continue;
+    }
+    if (!line) continue;
+    if (line.startsWith(">")) {
+      const text = line.replace(/^>+\s*/, "").trim();
+      if (text) blocks.push({ kind: "quote", text: inline(text), lang: hasCJK(text) ? "zh" : "de" });
+      continue;
+    }
     if (line.startsWith("### ")) blocks.push({ kind: "h3", text: inline(line), lang: hasCJK(line) ? "zh" : "de" });
     else if (line.startsWith("## ")) blocks.push({ kind: "h2", text: inline(line), lang: hasCJK(line) ? "zh" : "de" });
     else if (/^[-*]\s+/.test(line)) blocks.push({ kind: "li", text: inline(line), lang: hasCJK(line) ? "zh" : "de" });
@@ -93,15 +115,24 @@ export function parseNoteFile(path: string, raw: string): VaultNote | null {
   };
 }
 
+const CSV_HEADER = new Set(["deutsch", "begriff", "vokabel", "term"]);
+
 export function parseCsv(path: string, raw: string): VaultCard[] {
   const cards: VaultCard[] = [];
   const dirFach = path.split("/")[0];
   let n = 0;
+  let first = true;
   for (const line of raw.split("\n")) {
     const t = line.trim();
     if (!t) continue;
     const cols = t.split(";");
     if (cols.length < 2) continue;
+    if (first) {
+      first = false;
+      // Skip header row (Deutsch;Chinesisch;Beispielsatz;Fach;Thema), never a card.
+      if (CSV_HEADER.has(cols[0].trim().toLowerCase())) continue;
+    }
+    if (cols.length !== 5) continue; // malformed: warn downstream, never shift fields
     n++;
     cards.push({
       id: `${path}#${n}`,

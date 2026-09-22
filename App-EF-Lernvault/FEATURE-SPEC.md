@@ -41,6 +41,7 @@
   - 材料只能用笔记 blocks 原文；Operatoren 动词必须出现在题干（对照 `_Downloads/SoWi/af2-sw_operatoren.pdf` 官方表）。
 - 改 `src/modules/Tutor.tsx`：fetch 接 LM Studio OpenAI-compatible `/chat/completions`（stream 可选，至少非 stream 可用）；system prompt 限定"EF 水平德语+中文对照+引用笔记原文"；loading 态=一行 mono 小字；**LM 不可达时降级回占位提示**（"请打开 LM Studio"，绝不白屏转圈）。
 - 改 `src/modules/Quiz.tsx`：流程"选主题→模板组卷→作答（Space 计时保留）→送 LM 批改→rubric 打分→Fehlerlog 文本补丁预览（复制按钮）"。
+- **Zitierpflicht（稳定性铁律，RAG不清零的对策）**：LM 批改/润色的每一条实质断言必须引用笔记块原文（`path#行号`）；无引用的断言视为无效，UI 显示降级提示"该条无出处，请对照笔记核对"。模板 rubric 本身不需引用（它是规则不是事实）。
 - **验收**：关 LM 时两模块降级不崩；开 LM 时 SoWi 主题端到端出一套+批改；无 vault 时用 mock 走通全流程。
 
 ## 4. P4 — 剩余三模块切真实数据（P2/P3 后顺手）
