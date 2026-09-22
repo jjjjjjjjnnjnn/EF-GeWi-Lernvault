@@ -42,4 +42,45 @@ export const t = (lang: Lang) => ({
     lang === "de"
       ? "FSRS Fortschritt exportieren"
       : "导出FSRS进度",
+
+  // UI-SPEC-V4 desirable difficulty strings
+  ddHard:
+    lang === "de"
+      ? "Schwer beim Üben, leicht in der Klausur"
+      : "练时难，考时易",
+  ddError:
+    lang === "de"
+      ? "Fehler sind gute Signale"
+      : "选错是好信号",
+  ddInterleave:
+    lang === "de"
+      ? "Mischen schlägt Pauken"
+      : "穿插刷比连刷记得牢",
+  ddRetrieval:
+    lang === "de"
+      ? "Abrufen schlägt Wiederlesen"
+      : "合上书默写，胜过重读三遍",
+  ddExample:
+    lang === "de"
+      ? "Erst Beispiel, dann selbst"
+      : "先看例题，再自己来",
+
+  // UI-SPEC-V4 Vergleich & feedback layers
+  vergleichen: lang === "de" ? "Vergleichen" : "对照看看",
+  zurErklaerung: lang === "de" ? "Zur Erklärung" : "进解析",
+  loesungVergleichen: lang === "de" ? "Lösung vergleichen" : "对照解析",
+  warumPlaceholder:
+    lang === "de" ? "Warum? Ein Satz genügt" : "为什么？一句话就够",
+  naechstesMal:
+    lang === "de" ? "Nächstes Mal zuerst…" : "下次先…",
+  naechstesMalPlaceholder:
+    lang === "de" ? "z. B. Erst Operator markieren" : "比如：先标 Operator",
+  richtig: lang === "de" ? "Richtig" : "对了",
+  falsch: lang === "de" ? "Falsch" : "错了",
+  belegkette: lang === "de" ? "Belegkette" : "证据链",
+  operatorabfolge: lang === "de" ? "Operatorabfolge" : "程序顺序",
+  klausurDrill:
+    lang === "de" ? "Klausur-Drill (5 Schritte)" : "模考大题 (五步长文)",
+  vergleichDrill:
+    lang === "de" ? "Vergleich & Unterscheidung" : "对比辨析 (二选一与并排)",
 });

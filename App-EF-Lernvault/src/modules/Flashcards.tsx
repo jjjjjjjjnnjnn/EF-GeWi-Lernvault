@@ -188,10 +188,13 @@ export default function Flashcards({
             {lang === "de" ? "Alle fälligen Karten wiederholt" : "今日需复习卡片已全部完成"}
           </div>
 
-          <div className="font-mono text-sm text-[#1C1B17] mb-6">
+          <div className="font-mono text-sm text-[#1C1B17] mb-2">
             {lang === "de"
               ? `${sessionDone} Karten gelernt · ${sessionAgain} Again`
               : `已复习 ${sessionDone} 张卡片 · ${sessionAgain} 次需要强化`}
+          </div>
+          <div className="font-mono text-[11px] text-[#6B675C] mb-6">
+            {tr.ddRetrieval}
           </div>
 
           <button

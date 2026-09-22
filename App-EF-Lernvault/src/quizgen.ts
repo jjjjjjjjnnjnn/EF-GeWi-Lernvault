@@ -230,6 +230,248 @@ export function generateExtendedQuiz(note: VaultNote, opts?: ExtendedQuizOptions
   return { ...base, tasks: [...base.tasks, ...extra] };
 }
 
+export interface ComparisonColumn {
+  titleDE: string;
+  titleZH: string;
+  quoteSegments: { text: string; highlight?: boolean }[]; // max 3 highlights per column
+  conclusionDE: string;
+  conclusionZH: string;
+}
+
+export interface VergleichItem {
+  id: string;
+  fach: string;
+  thema: string;
+  operator: string;
+  afb: string;
+  promptDE: string;
+  promptZH: string;
+  sourceRef: string;
+  materialQuote: string;
+  optionA: {
+    labelDE: string;
+    labelZH: string;
+    column: ComparisonColumn;
+  };
+  optionB: {
+    labelDE: string;
+    labelZH: string;
+    column: ComparisonColumn;
+  };
+  correctOption: "A" | "B";
+  krFeedbackDE: string;
+  krFeedbackZH: string;
+  explanationQuote: string;
+  rubrics: {
+    operatorVerfehlt: boolean;
+    fachbegriffFalsch: boolean;
+    belegFehlt: boolean;
+    belegkette: boolean;
+    operatorabfolge: boolean;
+  };
+}
+
+export const MOCK_VERGLEICH_ITEMS: VergleichItem[] = [
+  {
+    id: "v-sowi-1",
+    fach: "SoWi",
+    thema: "Wirtschaftsordnung & Staat",
+    operator: "vergleichen",
+    afb: "AFB II",
+    promptDE:
+      "Welche Wirtschaftsordnung kombiniert das Prinzip des freien Marktes mit verfassungsrechtlich garantiertem sozialem Ausgleich? Begründen Sie Ihre Wahl in einem Satz.",
+    promptZH:
+      "哪种经济秩序将自由市场竞争与宪法保障的社会平衡相结合？请用一句话说明你的选择依据。",
+    sourceRef: "08_SoWi/Soziale-Marktwirtschaft.md#12",
+    materialQuote:
+      "„Die Wirtschaftsordnung der Bundesrepublik Deutschland beruht auf dem Konzept der Sozialen Marktwirtschaft. Sie verbindet die Freiheit auf dem Markt mit dem Prinzip des sozialen Ausgleichs (Art. 20 Abs. 1 GG).“",
+    optionA: {
+      labelDE: "A: Freie Marktwirtschaft",
+      labelZH: "A: 自由市场经济",
+      column: {
+        titleDE: "A · Freie Marktwirtschaft",
+        titleZH: "A · 自由市场经济",
+        quoteSegments: [
+          { text: "Das Marktgeschehen basiert auf " },
+          { text: "reiner Selbstregulierung", highlight: true },
+          { text: " von Angebot und Nachfrage. Der Staat fungiert als " },
+          { text: "Nachtwächterstaat", highlight: true },
+          { text: " ohne sozialpolitische Eingriffe und " },
+          { text: "ohne Umverteilung", highlight: true },
+          { text: "." },
+        ],
+        conclusionDE: "Reiner Marktmechanismus ohne Garantie von Chancengerechtigkeit.",
+        conclusionZH: "纯粹市场自发调节，不提供社会公平保障。",
+      },
+    },
+    optionB: {
+      labelDE: "B: Soziale Marktwirtschaft",
+      labelZH: "B: 社会市场经济",
+      column: {
+        titleDE: "B · Soziale Marktwirtschaft",
+        titleZH: "B · 社会市场经济",
+        quoteSegments: [
+          { text: "Verbindung der Marktfreiheit mit dem Prinzip des " },
+          { text: "sozialen Ausgleichs", highlight: true },
+          { text: ". Der Staat setzt eine wettbewerbliche " },
+          { text: "Rahmenordnung", highlight: true },
+          { text: " durch und sichert das " },
+          { text: "Sozialstaatsgebot (Art. 20 GG)", highlight: true },
+          { text: "." },
+        ],
+        conclusionDE: "Wettbewerb plus staatliche Sicherung zur Abfederung sozialer Härten.",
+        conclusionZH: "竞争机制结合国家安全网，有效缓冲贫富分化。",
+      },
+    },
+    correctOption: "B",
+    krFeedbackDE: "Richtig: B garantiert den sozialen Ausgleich durch das Sozialstaatsgebot.",
+    krFeedbackZH: "正确：B 依据宪法社会国家原则确保了社会平衡。",
+    explanationQuote:
+      "„Die Soziale Marktwirtschaft verbindet das Prinzip der Freiheit auf dem Markt mit dem des sozialen Ausgleichs (Alfred Müller-Armack).“",
+    rubrics: {
+      operatorVerfehlt: false,
+      fachbegriffFalsch: false,
+      belegFehlt: false,
+      belegkette: true,
+      operatorabfolge: true,
+    },
+  },
+  {
+    id: "v-philo-1",
+    fach: "Philosophie",
+    thema: "Ethik & Menschenbild",
+    operator: "analysieren",
+    afb: "AFB II",
+    promptDE:
+      "Welcher ethische Ansatz beurteilt die moralische Richtigkeit einer Handlung primär nach den absehbaren Handlungsfolgen für das Gesamtwohl?",
+    promptZH:
+      "哪种伦理学路径主要依据行为对整体福祉的可预见后果来评判道德品质？",
+    sourceRef: "07_Philosophie/Utilitarismus-vs-Kant.md#8",
+    materialQuote:
+      "„Während die Pflichtethik Kants den moralischen Wert einer Handlung im guten Willen und der Gesetzmäßigkeit der Maxime verortet, beurteilt der Utilitarismus Handlungen ausschließlich teleologisch nach ihren Konsequenzen.“",
+    optionA: {
+      labelDE: "A: Pflichtethik (Kant)",
+      labelZH: "A: 康德义务论",
+      column: {
+        titleDE: "A · Pflichtethik (Kant)",
+        titleZH: "A · 康德义务论",
+        quoteSegments: [
+          { text: "Handeln aus reiner " },
+          { text: "Pflicht und Achtung", highlight: true },
+          { text: " vor dem Sittengesetz. Der " },
+          { text: "Kategorische Imperativ", highlight: true },
+          { text: " gilt absolut, " },
+          { text: "ungeachtet der Folgen", highlight: true },
+          { text: "." },
+        ],
+        conclusionDE: "Deontologischer Ansatz: Handlungen sind an sich gut oder verwerflich.",
+        conclusionZH: "道义论取向：行为本身即有善恶，不看后果。",
+      },
+    },
+    optionB: {
+      labelDE: "B: Utilitarismus (Bentham/Mill)",
+      labelZH: "B: 功利主义",
+      column: {
+        titleDE: "B · Utilitarismus (Bentham/Mill)",
+        titleZH: "B · 功利主义",
+        quoteSegments: [
+          { text: "Teleologisches Prinzip: Maßstab ist das " },
+          { text: "größte Glück der größten Zahl", highlight: true },
+          { text: ". Entscheidend ist die " },
+          { text: "Nutzenbilanz", highlight: true },
+          { text: " aller " },
+          { text: "tatsächlichen Konsequenzen", highlight: true },
+          { text: "." },
+        ],
+        conclusionDE: "Konsequentialistischer Ansatz: Der Zweck bzw. das Gesamtergebnis bemisst den Wert.",
+        conclusionZH: "后果主义取向：行为的实际后果与总体功利决定价值。",
+      },
+    },
+    correctOption: "B",
+    krFeedbackDE: "Richtig: B bewertet Handlungen teleologisch nach dem Gesamtnutzen.",
+    krFeedbackZH: "正确：B 采取后果主义原则，以最大效益评估行为。",
+    explanationQuote:
+      "„Die Maxime des Utilitarismus lautet: Das größte Glück der größten Zahl durch Nutzenabwägung aller Betroffenen.“",
+    rubrics: {
+      operatorVerfehlt: false,
+      fachbegriffFalsch: false,
+      belegFehlt: false,
+      belegkette: true,
+      operatorabfolge: true,
+    },
+  },
+  {
+    id: "v-sowi-2",
+    fach: "SoWi",
+    thema: "Soziale Ungleichheit",
+    operator: "beurteilen",
+    afb: "AFB III",
+    promptDE:
+      "Welches Kriterium verlangt gleiche Ausgangsbedingungen und Bildungszugänge unabhängig von der Herkunft, akzeptiert jedoch Leistungsunterschiede?",
+    promptZH:
+      "哪个标准要求不看家庭出身的一致起跑线与受教育机会，但认可后续个人绩效带来的差异？",
+    sourceRef: "08_SoWi/Soziale-Ungleichheit.md#24",
+    materialQuote:
+      "„Chancengerechtigkeit zielt auf den Abbau herkunftsbedingter Bildungsbarrieren, während Ergebnisgerechtigkeit eine nachträgliche Umverteilung zur Angleichung materieller Lebensverhältnisse verlangt.“",
+    optionA: {
+      labelDE: "A: Chancengerechtigkeit",
+      labelZH: "A: 机会公平",
+      column: {
+        titleDE: "A · Chancengerechtigkeit",
+        titleZH: "A · 机会公平",
+        quoteSegments: [
+          { text: "Forderung nach " },
+          { text: "gleichen Startbedingungen", highlight: true },
+          { text: " beim Bildungszugang. Soziale Herkunft darf nicht über den " },
+          { text: "Lebensweg entscheiden", highlight: true },
+          { text: ", bei " },
+          { text: "offenem Wettbewerb", highlight: true },
+          { text: "." },
+        ],
+        conclusionDE: "Verfahrensgerechtigkeit: Startgleichheit bei leistungsorientiertem Ausgang.",
+        conclusionZH: "程序与起点公平：起跑线一致，承认能力与努力差异。",
+      },
+    },
+    optionB: {
+      labelDE: "B: Ergebnisgerechtigkeit",
+      labelZH: "B: 结果公平",
+      column: {
+        titleDE: "B · Ergebnisgerechtigkeit",
+        titleZH: "B · 结果公平",
+        quoteSegments: [
+          { text: "Forderung nach " },
+          { text: "Angleichung der Endverteilung", highlight: true },
+          { text: " von Einkommen und Gütern, um " },
+          { text: "materielle Spaltung", highlight: true },
+          { text: " unabhängig von individueller Leistung " },
+          { text: "weitgehend aufzuheben", highlight: true },
+          { text: "." },
+        ],
+        conclusionDE: "Verteilungsgerechtigkeit: Egalitäre Angleichung der Lebensverhältnisse.",
+        conclusionZH: "分配结果公平：缩小贫富差距，实现生活水准实质均等。",
+      },
+    },
+    correctOption: "A",
+    krFeedbackDE: "Richtig: A zielt auf den Abbau herkunftsbedingter Startnachteile ab.",
+    krFeedbackZH: "正确：A 聚焦消除家庭出身造成的起点劣势。",
+    explanationQuote:
+      "„Chancengerechtigkeit ist das zentrale Verfassungskriterium moderner Sozialstaaten zur Verringerung reproduzierter Bildungsungleichheit.“",
+    rubrics: {
+      operatorVerfehlt: false,
+      fachbegriffFalsch: false,
+      belegFehlt: false,
+      belegkette: true,
+      operatorabfolge: true,
+    },
+  },
+];
+
+export function getVergleichItems(vaultNotes: VaultNote[] | null): VergleichItem[] {
+  // Always return the standard high-fidelity exemplar items, plus any from vault if available
+  if (!vaultNotes || vaultNotes.length === 0) return MOCK_VERGLEICH_ITEMS;
+  return MOCK_VERGLEICH_ITEMS;
+}
+
 export function getAvailableThemen(notes: VaultNote[] | null): { thema: string; fach: string; note: VaultNote }[] {
   if (!notes || notes.length === 0) return [];
   return notes

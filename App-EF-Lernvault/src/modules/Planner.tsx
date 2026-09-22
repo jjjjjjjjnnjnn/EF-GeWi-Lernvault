@@ -165,6 +165,9 @@ export default function Planner({
             </span>
             <span className="font-sans text-xs text-[#6B675C]">Tage / 天</span>
           </div>
+          <div className="font-mono text-[11px] text-[#6B675C] mt-1">
+            {tr.ddInterleave}
+          </div>
         </div>
       </div>
 
