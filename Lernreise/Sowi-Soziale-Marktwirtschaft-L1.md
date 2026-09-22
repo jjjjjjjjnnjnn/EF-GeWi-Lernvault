@@ -46,9 +46,9 @@ ENTDECKEN（1概念 + 1文字图解，双支柱）：
 
 中文：社会市场经济 = 市场管效率 + 社会管兜底。市场那条腿靠竞争和价格信号跑起来；社会那条腿靠规则和社保接住掉队的人。两条腿缺一不可：只有市场会马太分化，只有兜底会压抑活力。
 
-文字图解（Sozial + Markt双支柱，自己照着画一遍）：
+文字图解（Sozial + Markt双支柱，自己照着画一遍；App会按此稿自动配AI图解，离线看原稿）：
 
-```
+```diagram
         Soziale Marktwirtschaft
          /                \
    MARKT-Säule        SOZIAL-Säule
