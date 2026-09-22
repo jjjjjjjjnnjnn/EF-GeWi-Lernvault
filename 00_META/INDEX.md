@@ -102,7 +102,16 @@
 - [2026-09-22-lane-a](Journal/2026-09-22-lane-a.md) — A路：Philo-L2九步试点+csv/Glossar/Fehlerlog三同步（v3跨科成立）
 - [2026-09-22-lane-b](Journal/2026-09-22-lane-b.md) — B路：Vergleich真数据管线+四维RUBRIC统一（V4技术债清零）
 - [2026-09-22-klett-rohrer-hygiene](Journal/2026-09-22-klett-rohrer-hygiene.md) — C路：Klett映射5单元23媒体+Rohrer补源3/5+文档卫生
+- [2026-09-23-sowi-lehrer-r1](Journal/2026-09-23-sowi-lehrer-r1.md) — R1 SoWi富化：Kap4/Kap6/Karikatur Unterrichts-Anker
+- [2026-09-23-deutsch-lyrik-r2](Journal/2026-09-23-deutsch-lyrik-r2.md) — R2 Deutsch新笔记：Lyrik Sturm und Drang (Goethe)
+- [2026-09-23-englisch-rolemodels-r3](Journal/2026-09-23-englisch-rolemodels-r3.md) — R3 Englisch新笔记：Role Models Analysis
+- [2026-09-23-philo-fragen-r4](Journal/2026-09-23-philo-fragen-r4.md) — R4 Philo新笔记：Plickat五问
+- [2026-09-23-musik-beethoven-r5](Journal/2026-09-23-musik-beethoven-r5.md) — R5 Musik新笔记：Beethoven-Motiv + HEIC转码
+- [2026-09-23-mathe-funktionen-r6](Journal/2026-09-23-mathe-funktionen-r6.md) — R6 Mathe：Spickzettel补缺+Fehlerlog新建
+- [2026-09-23-physik-ggb-r7](Journal/2026-09-23-physik-ggb-r7.md) — R7 Physik新笔记：ggB训练
+- [2026-09-23-bio-zelle-r8](Journal/2026-09-23-bio-zelle-r8.md) — R8 Bio新笔记：Zellbiologie + Open-Book
 - [2026-09-23-luecken-doc20-notenlehre](Journal/2026-09-23-luecken-doc20-notenlehre.md) — Dokument 20破案（Buchner S.154–158 Impfpflicht）+ Notenlehre截断待补 + 问老师德语清单
+- [2026-09-23-audit-2](Journal/2026-09-23-audit-2.md) — 二轮全项目审核+维护+交接（212文件干净/build过/110链全有效）
 - 约定：文件名 `YYYY-MM-DD-<thema>.md`，头部frontmatter（`fach`可空，`tags: [EF, Meta]`）。
 
 ## Dataview（Obsidian内自动索引，GitHub上仅作备份显示）

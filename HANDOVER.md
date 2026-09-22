@@ -8,9 +8,9 @@
 ## 当前状态（2026-09-23午）
 - ✅ 缺口清理：Dokument 20破案（Buchner S.154–158 Impfpflicht/M21–M25，笔记+§8b+M23先例）；Notenlehre-Stufe-4源头截断（256KiB无EOF）待重发；问老师德语三问已拟（Journal 2026-09-23-luecken）。
 - ✅ 老师资料R4–R8（五agent并行，一科一commit）：Philo新笔记Plickat五问+Operatoren映射（csv+6）/ Musik新笔记Beethoven-Motiv+Hör-Bausteine（HEIC 4/4 ffmpeg转码成功；Notenlehre-Stufe-4 PDF截断待补）/ Mathe补Spickzettel八缺口+新建Fehlerlog（Zwei-Punkte符号错两条）/ Physik新笔记ggB训练（Excel四步+3,6换算）/ Bio新笔记Zellbiologie+Open-Book-Checkliste（dreamstime图只转述不复制）；原件全进`_Downloads/<Fach>/lehrer-2026-09/`+quelle。
-- ✅ 老师资料R1–R3（三agent并行，一科一commit）：SoWi富化Kap.4/Kap.6/Karikatur（Unterrichts-Anker+自制Lückentext，csv+2）/ Deutsch新笔记Lyrik-Sturm-Drang-Goethe（AB1四步+6 Mittel+Deutungshypothese-Lückentext，csv+8）/ Englisch新笔记Role-Models-Analysis（Teil A三任务链+P.E.E.+Comment句型，csv+10）；原件全进`_Downloads/<Fach>/lehrer-2026-09/`+quelle（gitignored），vault零原文复制；名单/Codes截图永不入库。vault-check PASS（notes=32 csv=175）。
-- ✅ 归属纠正：`2_Werkzeugkasten`实为SoWi Buchner S.148–153（WkV1–WkV5，无文本层，内容未进笔记）；`Fragen über Fragen`+09-21扫描归Philo（已归档，笔记待R4）；`Sprachdetektive`连字符改名已注quelle。
-- ✅ SoWi收官12/12：Ungleichheit独立篇 + Kap.1–11（csv 155行，INDEX 94链全有效，vault-check PASS）。
+- ✅ 老师资料R1–R3（三agent并行，一科一commit）：SoWi富化Kap.4/Kap.6/Karikatur（Unterrichts-Anker+自制Lückentext，csv+2）/ Deutsch新笔记Lyrik-Sturm-Drang-Goethe（AB1四步+6 Mittel+Deutungshypothese-Lückentext，csv+8）/ Englisch新笔记Role-Models-Analysis（Teil A三任务链+P.E.E.+Comment句型，csv+10）；原件全进`_Downloads/<Fach>/lehrer-2026-09/`+quelle（gitignored），vault零原文复制；名单/Codes截图永不入库。vault-check PASS（notes=36 csv=181 links=102）。
+- ✅ 归属纠正：`2_Werkzeugkasten`实为SoWi Buchner S.148–153（WkV1–WkV5，无文本层，内容未进笔记）；`Fragen über Fragen`+09-21扫描归Philo（已归档，R4已落地Plickat笔记）；`Sprachdetektive`连字符改名已注quelle。
+- ✅ SoWi收官12/12：Ungleichheit独立篇 + Kap.1–11（csv累计181行，INDEX 102链全有效，vault-check PASS）。
 - ✅ Philo-L2试点：`Lernreise/Philo-Utilitarismus-Kant-L2.md` 9步（德语Satz 11句）+ csv/Glossar/Fehlerlog三同步——v3模板跨科成立。
 - ✅ App Vergleich真管线：`getVergleichItems`从vault笔记生成（空才回MOCK），双RUBRIC统一四维；V4技术债清零，build过。
 - ✅ Englisch听力计划：Klett 5单元23媒体→Themenfelder映射 + Teil A四级顺序（混淆ID假设待Transition目录页核对）。
@@ -21,7 +21,7 @@
 - ✅ Klett Green Line Transition (ab 2024) Medien：23/23收官（mp3×9+mp4×14全验头+quelle.txt），落`_Downloads/Englisch/klett-bridge/`，Klett版权本地永不提交。
 - ✅ P2/P3/P4已落地并验收（外部AI `949984a` + 主Agent复核PASS；2处偏离接受）；抓取脚本锁全部原子化（fetch.lock/klett-fetch.lock防双跑）。
 - ✅ 骨架：Obsidian vault + git + CC-BY-SA + link-check CI + `_Downloads/`(gitignore约1480件/3.0GB) + `Anlagen/`。
-- ✅ 10/10学科骨架：SoWi/Philo填实；Deutsch/Englisch KLP2023校准+csv各30条（等Lektüre/Topic）；MINT四科KLP校准+Formel-Spickzettel(KaTeX)；Musik/Sport口试骨架。
+- ✅ 10/10学科骨架：SoWi/Philo填实；Deutsch开动（Lyrik笔记+csv 37行，待Drama名）/Englisch开动（Role Models笔记+csv 39行，Topic定，待Teil B）；MINT四科KLP校准+Formel-Spickzettel(KaTeX)+Mathe/Physik/Bio训练笔记；Musik口试开动（Beethoven-Motiv，待Halbjahr确认）；Sport口试骨架。
 - ✅ 官方弹药：SoWi/Philo/Deutsch/Englisch/Mathe全套Operatoren+Konstruktion+Korrekturzeichen+Beispiele；Formelsammlung NRW 2024。
 - ✅ Playwright电子书脚手架就绪（`scripts/ebook-fetch/`，等用户登录一次）。
 - ✅ App需求：FEATURE-SPEC + UI-SPEC-V2；**外部AI已落地**（`b17999d`）：10科徽章+KaTeX离线公式+Lernreise第7模块（5步态+gating+XP localStorage），`npm run build`亲验通过；课程4个（SoWi-L1示范 + Philo-L2试点 + Musik-Höranalyse-L1 + Sport-Bewegung-L1，均muendlich步）。
@@ -39,7 +39,7 @@
 ## 待办（按优先级）
 1. 用户侧验证：Sowi-L1走完Schritt 2→8（跳转修复后）+ 右下角浮窗写一条反馈贴回；Philo-L2试读反馈（顺则开Philo正式课）。
 2. Klett映射收尾：Transition目录页核对单元→Bereich对照（工作假设待实证）→ 开听力Stufe 1。
-3. 用户贴：Drama-Ganzschrift名（Deutsch）+ Englisch Teil B类型/Klausurtermin（问老师）+ 课堂笔记 → 开下一科R4–R8（Philo/Musik/Mathe/Physik/Bio；写→三同步→vault-check→一科一commit）。
+3. 等用户回：问老师三问答复（Halbjahr-Thema/Drama名/Teil B+Klausurtermine）+ Notenlehre-Stufe-4重发 → 补Musik §5 + Lehrplan TODO勾选。
 4. 近3年真题Login墙（找老师要Zugangsdaten）+ Stark纸书 + P5发版（最后）。
 5. 小尾巴：Methoden-Quellen C2行DOI待核；taylor-rohrer-2010/wittwer-renkl待图书馆渠道。
 
