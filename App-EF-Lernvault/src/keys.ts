@@ -13,7 +13,7 @@ export interface Shortcut {
 export const GLOBAL_SHORTCUTS: Shortcut[] = [
   { keys: "Strg/⌘ K", de: "Befehlspalette", zh: "命令面板" },
   { keys: "/", de: "Suche fokussieren", zh: "聚焦搜索" },
-  { keys: "Alt 1–7", de: "Modul wechseln", zh: "切换模块" },
+  { keys: "Alt 1–8", de: "Modul wechseln (8 = Einstellungen unten)", zh: "切换模块（8=底部设置）" },
   { keys: "L", de: "Sprache DE/ZH", zh: "中德切换" },
   { keys: "?", de: "Tastaturhilfe", zh: "快捷键帮助" },
   { keys: "Strg/⌘ E", de: "FSRS Fortschritt exportieren", zh: "导出FSRS进度" },

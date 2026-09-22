@@ -4,6 +4,7 @@
 
 ## A. 随包分发（runtime，打进 exe 的只有这些）
 - react / react-dom 19.3.0 — MIT — Meta Platforms, Inc.
+- fuse.js 7.x（笔记检索模糊层，精确优先∪fuzzy；用户特批引入 Phase A 2026-09-23）— MIT — Kiro Risk
 - @mlc-ai/web-llm 0.2.85（浏览器内本地推理，懒加载，仅本地引擎启用时下载模型权重；用户特批引入 2026-09-23）— Apache-2.0 — MLC AI (Apache TVM 社区)
 - tauri 2.x / @tauri-apps/api 2.x（Rust 壳 + 前端桥）— MIT / Apache-2.0 — Tauri Programme
 - serde / serde_json 1.x（Rust 序列化）— MIT / Apache-2.0
@@ -13,6 +14,7 @@
 - vite 7.3.6 / @vitejs/plugin-react — MIT — Evan You & contributors
 - tailwindcss 4.3.3 / @tailwindcss/vite — MIT — Tailwind Labs, Inc.
 - typescript 5.9.3 — Apache-2.0 — Microsoft Corporation
+- vitest 5.x / jsdom / @testing-library/react+jest-dom+user-event（单测工具链，用户特批引入 Phase A 2026-09-23）— MIT — Vitest Team / jsdom contributors / Testing Library
 - @tauri-apps/cli 2.x / tauri-build 2.x — MIT / Apache-2.0（打包工具，不进产物）
 - esbuild / rollup / postcss 等传递依赖 — MIT / ISC / BSD-3-Clause（全量扫描见 Journal 审计记录）
 - 例外（构建时、文件中转，不进产物）：caniuse-lite — CC-BY-4.0（浏览器数据表）；

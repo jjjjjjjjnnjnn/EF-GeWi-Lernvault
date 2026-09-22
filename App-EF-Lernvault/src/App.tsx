@@ -147,6 +147,7 @@ export default function App() {
     }
   };
 
+  // Lern-Navigation (7 module); Einstellungen steht getrennt am seitenende (A4).
   const nav: { id: Tab; label: string; icon: ReactNode }[] = [
     { id: "library", label: tr.library, icon: icons.library },
     { id: "flashcards", label: tr.flashcards, icon: icons.flashcards },
@@ -155,10 +156,9 @@ export default function App() {
     { id: "planner", label: tr.planner, icon: icons.planner },
     { id: "mindmap", label: tr.mindmap, icon: icons.mindmap },
     { id: "reise", label: tr.reise, icon: icons.reise },
-    { id: "einstellungen", label: tr.settings, icon: icons.einstellungen },
   ];
 
-  const TAB_ORDER: Tab[] = ["library", "flashcards", "quiz", "tutor", "planner", "mindmap", "reise", "einstellungen"];
+  const TAB_ORDER: Tab[] = ["library", "flashcards", "quiz", "tutor", "planner", "mindmap", "reise"];
   const [paletteOpen, setPaletteOpen] = useState(false);
   const [helpOpen, setHelpOpen] = useState(false);
 
@@ -221,7 +221,7 @@ export default function App() {
     switchTab("reise");
   };
 
-  // Global keys: Ctrl/⌘K palette · Ctrl/⌘E export · / search · Alt 1-7 tabs · L language · ? help.
+  // Global keys: Ctrl/⌘K palette · Ctrl/⌘E export · / search · Alt 1-7 module + Alt 8 settings · L language · ? help.
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
       if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === "k") {
@@ -245,7 +245,8 @@ export default function App() {
         toggleLang();
       } else if (e.altKey && e.key >= "1" && e.key <= "8") {
         e.preventDefault();
-        switchTab(TAB_ORDER[Number(e.key) - 1]);
+        if (e.key === "8") switchTab("einstellungen");
+        else switchTab(TAB_ORDER[Number(e.key) - 1]);
       }
     };
     window.addEventListener("keydown", onKey);
@@ -396,6 +397,23 @@ export default function App() {
           })}
         </nav>
 
+        {/* Einstellungen: getrennt am seitenende, ausserhalb der lern-navigation (A4) */}
+        <div className="mt-4 border-t border-[#E5E1D8] pt-3">
+          <button
+            onClick={() => switchTab("einstellungen")}
+            title={`${tr.settings} (Alt 8)`}
+            className={`flex w-full items-center gap-2.5 px-3 py-2 text-left text-sm transition-all duration-150 rounded-sm active:scale-[0.98] focus-visible:outline focus-visible:outline-1 focus-visible:outline-[#4338CA] ${
+              tab === "einstellungen"
+                ? "font-medium text-[#4338CA] bg-[#ECE7DC]/60 border-l-2 border-[#4338CA]"
+                : "text-[#6B675C] hover:text-[#1C1B17] hover:bg-[#ECE7DC]/30 active:bg-[#ECE7DC]/60 border-l-2 border-transparent"
+            }`}
+          >
+            <span className="shrink-0 select-none">{icons.einstellungen}</span>
+            <span className="font-sans">{tr.settings}</span>
+            <kbd className="ml-auto font-mono text-[10px] text-[#6B675C]">Alt 8</kbd>
+          </button>
+        </div>
+
         <div className="mt-auto pt-4 border-t border-[#E5E1D8] text-[11px] font-mono text-[#6B675C] leading-relaxed">
           v0.2.0-curriculum
           <br />
@@ -424,19 +442,7 @@ export default function App() {
             {vaultMsg && (
               <span className="hidden font-mono text-[11px] text-[#6B675C] lg:block">{vaultMsg}</span>
             )}
-            {/* Einstellungen-Hub: Sprache · Vault · KI · Export · Hilfe — alles an einem Ort (Alt 8) */}
-            <button
-              onClick={() => switchTab("einstellungen")}
-              className="flex items-center gap-1.5 rounded-sm border border-[#E5E1D8] bg-white px-3 py-1.5 text-xs font-sans text-[#1C1B17] hover:border-[#4338CA] hover:text-[#4338CA] active:scale-95 transition-all duration-150"
-              title={`${tr.settings} (Alt 8)`}
-            >
-              <svg width="13" height="13" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                <circle cx="8" cy="8" r="2.2" />
-                <path d="M8 1.6v2.1M8 12.3v2.1M1.6 8h2.1M12.3 8h2.1M3.5 3.5l1.5 1.5M11 11l1.5 1.5M12.5 3.5L11 5M5 11l-1.5 1.5" />
-              </svg>
-              {tr.settings}
-              <kbd className="ml-1 font-mono text-[10px] text-[#6B675C]">Alt 8</kbd>
-            </button>
+            {/* Einstellungen lebt am seitenende (sidebar unten, Alt 8) — topbar bleibt suche + status. */}
           </div>
         </header>
 

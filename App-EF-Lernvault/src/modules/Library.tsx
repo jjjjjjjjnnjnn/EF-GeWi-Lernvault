@@ -3,6 +3,7 @@ import { notes as mockNotes, type Note as MockNote } from "../data";
 import { isTyping } from "../keys";
 import Blocks from "../components/Blocks";
 import type { Block, VaultNote } from "../vault/parser";
+import { buildSearchIndex } from "../engine/index";
 import { FAECHER } from "../fach";
 
 interface Shown {
@@ -29,7 +30,10 @@ function fromVault(n: VaultNote): Shown {
 }
 
 export default function Library({ query, vault, selectedFach, onClearQuery }: { query: string; vault: VaultNote[] | null; selectedFach?: string; onClearQuery?: () => void }) {
-  const shown: Shown[] = vault ? vault.map(fromVault) : mockNotes.map(fromMock);
+  const shown: Shown[] = useMemo(
+    () => (vault ? vault.map(fromVault) : mockNotes.map(fromMock)),
+    [vault]
+  );
   const [fach, setFach] = useState(selectedFach ?? "alle");
   const [openId, setOpenId] = useState(shown[0]?.id ?? "");
 
@@ -53,14 +57,21 @@ export default function Library({ query, vault, selectedFach, onClearQuery }: { 
   }, [vault]);
 
   const q = query.trim().toLowerCase();
-  const list = shown.filter(
-    (n) =>
-      (fach === "alle" || n.fach === fach) &&
-      (!q ||
-        n.thema.toLowerCase().includes(q) ||
-        n.sub.toLowerCase().includes(q) ||
-        n.blocks.some((b) => b.text.toLowerCase().includes(q)))
+  // Einheitliche retrieval-schicht (engine/index): exakt zuerst, fuzzy fallback.
+  const searchIndex = useMemo(
+    () =>
+      buildSearchIndex(
+        shown.map((n) => ({
+          id: n.id,
+          thema: n.thema,
+          sub: n.sub,
+          text: n.blocks.map((b) => b.text).join(" "),
+        }))
+      ),
+    [shown]
   );
+  const hitIds = useMemo(() => new Set(searchIndex.query(query)), [searchIndex, query]);
+  const list = shown.filter((n) => (fach === "alle" || n.fach === fach) && (!q || hitIds.has(n.id)));
 
   const open = list.find((n) => n.id === openId) ?? list[0];
 

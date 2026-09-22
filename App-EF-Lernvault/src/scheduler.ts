@@ -13,6 +13,8 @@ export interface CardState {
   lastReview: string;
 }
 
+import { defineStore, isRecord } from "./engine/storage";
+
 export interface FSRSStorage {
   version: 1;
   cards: Record<string, CardState>;
@@ -20,26 +22,20 @@ export interface FSRSStorage {
 
 const STORAGE_KEY = "eflernvault:fsrs:v1";
 
+const fsrsStore = defineStore<FSRSStorage>({
+  key: STORAGE_KEY,
+  version: 1,
+  defaults: () => ({ version: 1, cards: {} }),
+  validate: (v: unknown): v is FSRSStorage =>
+    isRecord(v) && isRecord((v as Record<string, unknown>).cards),
+});
+
 export function loadFsrsStorage(): FSRSStorage {
-  try {
-    const raw = localStorage.getItem(STORAGE_KEY);
-    if (!raw) return { version: 1, cards: {} };
-    const parsed = JSON.parse(raw);
-    if (parsed && parsed.version === 1 && typeof parsed.cards === "object") {
-      return parsed as FSRSStorage;
-    }
-  } catch (err) {
-    console.warn("Failed to parse FSRS storage, resetting to default", err);
-  }
-  return { version: 1, cards: {} };
+  return fsrsStore.load();
 }
 
 export function saveFsrsStorage(storage: FSRSStorage): void {
-  try {
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(storage));
-  } catch (err) {
-    console.error("Failed to save FSRS storage", err);
-  }
+  fsrsStore.save(storage);
 }
 
 export function getCardState(cardId: string): CardState | undefined {
