@@ -80,6 +80,7 @@
 - [2026-09-22-stansi-runde4](Journal/2026-09-22-stansi-runde4.md) — StanSi全站通扫58件：9路并行+三科补缺+登录墙三站确认
 - [2026-09-22-ui-spec-v4-implementation](Journal/2026-09-22-ui-spec-v4-implementation.md) — UI-SPEC-V4落地（外部AI）：Vergleich步态+反馈三层+dd文案挂载
 - [2026-09-22-ui-spec-v4-review](Journal/2026-09-22-ui-spec-v4-review.md) — V4复核PASS：构建复现+零回归+2条技术债
+- [2026-09-22-reise-nav-fix-feedback](Journal/2026-09-22-reise-nav-fix-feedback.md) — Reise硬编码跳转修复+v3八步全通+Dev-Feedback两处挂载
 - [2026-09-22-lane-a](Journal/2026-09-22-lane-a.md) — A路占位（待A路agent补实）
 - [2026-09-22-lane-b](Journal/2026-09-22-lane-b.md) — B路占位（待B路agent补实）
 - [2026-09-22-klett-rohrer-hygiene](Journal/2026-09-22-klett-rohrer-hygiene.md) — C路：Klett映射5单元23媒体+Rohrer补源3/5+文档卫生
