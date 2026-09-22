@@ -5,6 +5,7 @@ import { isTyping } from "./keys";
 import { FAECHER } from "./fach";
 import Palette, { type PaletteItem } from "./components/Palette";
 import HelpOverlay from "./components/HelpOverlay";
+import { FeedbackFloat, setFeedbackContext } from "./components/FeedbackBox";
 import { pickVault, type VaultData } from "./vault/loader";
 import Library from "./modules/Library";
 import Flashcards from "./modules/Flashcards";
@@ -127,6 +128,12 @@ export default function App() {
   const TAB_ORDER: Tab[] = ["library", "flashcards", "quiz", "tutor", "planner", "mindmap", "reise"];
   const [paletteOpen, setPaletteOpen] = useState(false);
   const [helpOpen, setHelpOpen] = useState(false);
+
+  // Non-course tabs report a coarse position; reise/quiz modules
+  // override with their precise context via their own effects.
+  useEffect(() => {
+    if (tab !== "reise" && tab !== "quiz") setFeedbackContext(`tab:${tab}`);
+  }, [tab]);
   const searchRef = useRef<HTMLInputElement>(null);
   const toggleLang = () => setLang((l) => (l === "zh" ? "de" : "zh"));
   const [vault, setVault] = useState<VaultData | null>(null);
@@ -393,6 +400,7 @@ export default function App() {
       </main>
       <Palette open={paletteOpen} onClose={() => setPaletteOpen(false)} items={paletteItems} />
       <HelpOverlay open={helpOpen} onClose={() => setHelpOpen(false)} lang={lang} />
+      <FeedbackFloat lang={lang} />
     </div>
   );
 }

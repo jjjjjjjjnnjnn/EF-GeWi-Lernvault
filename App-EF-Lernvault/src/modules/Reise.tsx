@@ -10,7 +10,7 @@ import {
 } from "../reise";
 import { FAECHER } from "../fach";
 import Blocks from "../components/Blocks";
-import FeedbackBox from "../components/FeedbackBox";
+import { setFeedbackContext } from "../components/FeedbackBox";
 import { isTyping } from "../keys";
 import type { Lang } from "../i18n";
 
@@ -275,6 +275,18 @@ export default function ReiseModule({
   }, [allReisen, wizardFach, wizardZiel]);
 
   const currentSchritt = activeCourse?.schritte[stepIdx];
+
+  // Report live position to the global feedback float
+  useEffect(() => {
+    if (activeCourse) {
+      const s = activeCourse.schritte[stepIdx];
+      setFeedbackContext(
+        `${activeCourse.id}#Schritt${s?.stepNumber ?? stepIdx + 1}`
+      );
+    } else {
+      setFeedbackContext("reise:katalog");
+    }
+  }, [activeCourse, stepIdx]);
 
   // Helper formatting for seconds to mm:ss
   const formatTime = (total: number) => {
@@ -934,13 +946,8 @@ export default function ReiseModule({
               </div>
             )}
 
-            {/* Dev-Feedback: in-place notes with exact step context */}
-            {activeCourse && currentSchritt && (
-              <FeedbackBox
-                lang={lang}
-                context={`${activeCourse.id}#Schritt${currentSchritt.stepNumber}`}
-              />
-            )}
+            {/* Dev-Feedback lives in the global bottom-right float;
+                the step only reports its context. */}
           </div>
         </div>
       )}

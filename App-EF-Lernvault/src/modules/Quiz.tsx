@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { isTyping } from "../keys";
 import { t, type Lang } from "../i18n";
-import FeedbackBox from "../components/FeedbackBox";
+import { setFeedbackContext } from "../components/FeedbackBox";
 import type { VaultNote } from "../vault/parser";
 import {
   generateQuizFromNote,
@@ -321,6 +321,17 @@ Gib die Punkte (0-15) an.`;
   const vergleichItems = useMemo(() => getVergleichItems(vault), [vault]);
   const [activeVergleichIdx, setActiveVergleichIdx] = useState(0);
   const currentVergleich: VergleichItem = vergleichItems[activeVergleichIdx] || vergleichItems[0];
+
+  // Report live position to the global feedback float
+  useEffect(() => {
+    if (drillMode === "klausur") {
+      setFeedbackContext(`quiz:${currentQuiz?.notePath ?? "mock"}`);
+    } else {
+      setFeedbackContext(
+        `vergleich:${currentVergleich?.id ?? currentVergleich?.thema ?? "?"}`
+      );
+    }
+  }, [drillMode, currentQuiz, currentVergleich]);
 
   const [vSec, setVSec] = useState(0);
   const [vTimerRunning, setVTimerRunning] = useState(false);
@@ -1552,15 +1563,7 @@ Zitiere für jede Sachkritik exakt [${currentVergleich.sourceRef}].`;
         </div>
       )}
 
-      {/* Dev-Feedback: in-place notes with exact quiz context */}
-      <FeedbackBox
-        lang={lang}
-        context={
-          drillMode === "klausur"
-            ? `quiz:${currentQuiz?.notePath ?? "mock"}`
-            : `vergleich:${currentVergleich?.id ?? currentVergleich?.thema ?? "?"}`
-        }
-      />
+      {/* Dev-Feedback lives in the global bottom-right float. */}
     </div>
   );
 }
