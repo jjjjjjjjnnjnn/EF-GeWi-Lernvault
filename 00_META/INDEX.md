@@ -24,7 +24,7 @@
 ## META
 
 - [HANDOVER](../HANDOVER.md) — 一页交接（新agent/用户先读）
-- [Ziele](Ziele.md) · [NRW-EF-Lehrplan-Übersicht](NRW-EF-Lehrplan-Übersicht.md) · [Lernsystem](Lernsystem.md) · [Lernmethoden-Evidenz](Lernmethoden-Evidenz.md) · [Operatoren-NRW-GeWi](Operatoren-NRW-GeWi.md) · [Glossar-DE-ZH-GeWi](Glossar-DE-ZH-GeWi.md)
+- [Ziele](Ziele.md) · [NRW-EF-Lehrplan-Übersicht](NRW-EF-Lehrplan-Übersicht.md) · [Lernsystem](Lernsystem.md) · [Lernmethoden-Evidenz](Lernmethoden-Evidenz.md) · [Methoden-Quellen](Methoden-Quellen.md) · [Operatoren-NRW-GeWi](Operatoren-NRW-GeWi.md) · [Glossar-DE-ZH-GeWi](Glossar-DE-ZH-GeWi.md)
 - [Download-Quellen](Download-Quellen.md) — 本地 `_Downloads/` 采集清单（PDF不进git）
 - [DeepTutor](DeepTutor.md) — 提分引擎：Quiz/抽认卡/模拟卷命令手册
 - Skills：[klausur-drill](../Skills/klausur-drill/SKILL.md) · [vokabel-trainer](../Skills/vokabel-trainer/SKILL.md) · [texte-analyse](../Skills/texte-analyse/SKILL.md)
@@ -75,6 +75,7 @@
 - [2026-09-22-material-offensive](Journal/2026-09-22-material-offensive.md) — 考纲真题教材批量落地（80文件/1.15GB）
 - [2026-09-22-material-runde2](Journal/2026-09-22-material-runde2.md)
 - [2026-09-22-klett-handover-audit](Journal/2026-09-22-klett-handover-audit.md) — Klett交接18/23+更新+审核（vault-check PASS）
+- [2026-09-22-lernmethode-v3](Journal/2026-09-22-lernmethode-v3.md) — 学习方法v3：证据库§6–§9+Template v3+Sowi-L1试点+出题链升级+UI-SPEC-V4
 - 约定：文件名 `YYYY-MM-DD-<thema>.md`，头部frontmatter（`fach`可空，`tags: [EF, Meta]`）。
 
 ## Dataview（Obsidian内自动索引，GitHub上仅作备份显示）

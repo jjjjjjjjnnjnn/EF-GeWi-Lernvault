@@ -19,7 +19,8 @@
 - ✅ 电子书抓取**完工**（429/430页，缺media 2封面背）：已按11章切分进 `_Downloads/SoWi/split/`（gitignored，边界±2页待核），可写SoWi正式笔记。
 - ✅ UI-SPEC-V3就绪（`App-EF-Lernvault/UI-SPEC-V3.md`：P2/P3/P4界面需求+三态规范+文案表+验收清单），可直接发外部AI落实；主Agent只验build。
 - ✅ P2/P3/P4已落地并验收（外部AI `949984a` + 主Agent复核PASS：scheduler/Tutor-chips/五步Quiz/Planner/Mindmap/双export；2处偏离接受：手写DSR非ts-fsrs、附赠act-export-xp）。
-- ✅ SoWi收官12/12：Ungleichheit独立篇 + Kap.1–11（csv 147行，INDEX 79链全有效，vault-check PASS）。
+- ✅ SoWi收官12/12：Ungleichheit独立篇 + Kap.1–11（csv 147行，INDEX 82链全有效，vault-check PASS）。
+- ✅ 学习方法v3（Academy-Lernreise，6 agent并行）：证据库§6–§9（Adesope/Rohrer/Barbieri/Brummer/Mayer）+ `Methoden-Quellen.md`16篇 + 论文本地4/9（Rohrer主机502待补）+ Template v3（9步，旧字段全留）+ Sowi-L1试点重写 + quizgen辨别/对比题型与过程维 + `vault-check` vergleich规则 + `UI-SPEC-V4.md`（发外部AI）；vault-check PASS + build过。
 
 ## 环境（接手必备）
 - 日常开发走本地 WebUI：vault根目录跑 `. .\scripts\webui.ps1`（起1420+自动开浏览器；热更新）。
