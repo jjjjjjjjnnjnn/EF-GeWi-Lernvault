@@ -157,3 +157,7 @@ tags: [EF, Meta]
 | Septime | 七度 | Musik | Die Septime zieht stark zur Oktave. |
 | Sonatenhauptsatzform | 奏鸣曲式 | Musik | Exposition, Durchfuehrung und Reprise. |
 | Wiener Klassik | 维也纳古典乐派 | Musik | Haydn, Mozart und Beethoven. |
+| Exposition | 开场 | Deutsch | Die Exposition stellt Figuren und Konflikt vor. |
+| Peripetie | 转折点 | Deutsch | Die Peripetie wendet die Handlung. |
+| Figurenkonstellation | 人物关系结构 | Deutsch | Buendnisse und Gegensaetze sichtbar machen. |
+| Subtext | 潜台词 | Deutsch | Der Subtext verraet mehr als das Gesagte. |
