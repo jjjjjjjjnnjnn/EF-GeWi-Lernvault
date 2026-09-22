@@ -35,6 +35,8 @@ scripts/ebook-fetch/probe*.py
 scripts/ebook-fetch/probe*.json
 scripts/ebook-fetch/probe*.png
 scripts/ebook-fetch/test_*.jpg
+scripts/ebook-fetch/fetch.log
+scripts/ebook-fetch/fetch.lock
 scripts/ebook-fetch/__pycache__/
 
 # App-EF-Lernvault 构建产物（源码进git，产物/密钥不进）

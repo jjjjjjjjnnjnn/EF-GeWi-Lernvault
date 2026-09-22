@@ -11,7 +11,7 @@
 - ✅ 官方弹药：SoWi/Philo/Deutsch/Englisch/Mathe全套Operatoren+Konstruktion+Korrekturzeichen+Beispiele；Formelsammlung NRW 2024。
 - ✅ Playwright电子书脚手架就绪（`scripts/ebook-fetch/`，等用户登录一次）。
 - ✅ App需求：FEATURE-SPEC + UI-SPEC-V2；**外部AI已落地**（`b17999d`）：10科徽章+KaTeX离线公式+Lernreise第7模块（5步态+gating+XP localStorage），`npm run build`亲验通过；首个示范课程 `Lernreise/Sowi-Soziale-Marktwirtschaft-L1.md`。
-- ✅ 电子书抓取进行中：用户登录成功（Lizenz bis 20.10.2027），Playwright+RapidOCR后台跑（~6s/页，已300+页），原文只进 `_Downloads/SoWi/ebook-raw/`（gitignored）。
+- ✅ 电子书抓取进行中：用户登录成功（Lizenz bis 20.10.2027），Playwright+RapidOCR后台跑（~6s/页，已340+页，conf 0.95+），原文只进 `_Downloads/SoWi/ebook-raw/`（gitignored）。
 
 ## 环境（接手必备）
 - 日常开发走本地 WebUI：vault根目录跑 `. .\scripts\webui.ps1`（起1420+自动开浏览器；热更新）。

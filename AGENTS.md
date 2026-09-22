@@ -21,7 +21,7 @@ Lernreise/        # 第二例外：互动课程脚本（App第7模块唯一课�
 
 ## 2. Frontmatter（Wissensnotizen强制，固定文件豁免）
 
-`Lehrplan.md / Ressourcen.md / Satzbausteine.md / Fehlerlog.md / README.md` 豁免，其余每个 `.md` 笔记头必须：
+`Lehrplan.md / Ressourcen.md / Satzbausteine.md / Fehlerlog.md / README.md` 豁免（`Templates/` 下的脚手架模板亦豁免——它们是填空骨架不是笔记），其余每个 `.md` 笔记头必须：
 
 ```yaml
 ---
