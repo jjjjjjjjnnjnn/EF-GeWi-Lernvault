@@ -7,7 +7,7 @@
 | 学科 | 状态 | Lehrplan | Ressourcen | Anki | Klausur-Training | Texte |
 |---|---|---|---|---|---|---|
 | SoWi | ✅ 本期 | [Lehrplan](../08_SoWi/Lehrplan.md) | [Ressourcen](../08_SoWi/Ressourcen.md) | [SoWi-EF-Basis](../08_SoWi/Vokabeln-Anki/SoWi-EF-Basis.csv) | [Satzbausteine](../08_SoWi/Klausur-Training/Satzbausteine.md) · [Fehlerlog](../08_SoWi/Klausur-Training/Fehlerlog.md) | [Karikatur-Anleitung](../08_SoWi/Texte-Analyse/Karikatur-Anleitung.md) |
-| Philosophie | ✅ 本期 | [Lehrplan](../07_Philosophie/Lehrplan.md) | [Ressourcen](../07_Philosophie/Ressourcen.md) | [Philo-EF-Basis](../07_Philosophie/Vokabeln-Anki/Philo-EF-Basis.csv) | [Satzbausteine](../07_Philosophie/Klausur-Training/Satzbausteine.md) · [Fehlerlog](../07_Philosophie/Klausur-Training/Fehlerlog.md) | [Menschenbild](../07_Philosophie/Texte-Analyse/Menschenbild-Überblick.md) · [Utilitarismus-vs-Kant](../07_Philosophie/Texte-Analyse/Utilitarismus-vs-Kant.md) |
+| Philosophie | ✅ 本期 | [Lehrplan](../07_Philosophie/Lehrplan.md) | [Ressourcen](../07_Philosophie/Ressourcen.md) | [Philo-EF-Basis](../07_Philosophie/Vokabeln-Anki/Philo-EF-Basis.csv) | [Satzbausteine](../07_Philosophie/Klausur-Training/Satzbausteine.md) · [Fehlerlog](../07_Philosophie/Klausur-Training/Fehlerlog.md) | [Menschenbild](../07_Philosophie/Texte-Analyse/Menschenbild-Überblick.md) · [Utilitarismus-vs-Kant](../07_Philosophie/Texte-Analyse/Utilitarismus-vs-Kant.md) · [Fragen-Typen](../07_Philosophie/Texte-Analyse/Philosophische-Fragen-Typen.md) |
 | Deutsch | 🟡 本期开动 | [Lehrplan](../01_Deutsch/Lehrplan.md) | [Ressourcen](../01_Deutsch/Ressourcen.md) | [Deutsch-EF-Phrasen](../01_Deutsch/Vokabeln-Anki/Deutsch-EF-Phrasen.csv) | [Fehlerlog](../01_Deutsch/Klausur-Training/Fehlerlog.md) | [Lyrik-Sturm-Drang](../01_Deutsch/Texte-Analyse/Lyrik-Sturm-Drang-Goethe.md) |
 | Englisch | 🟡 本期开动 | [Lehrplan](../02_Englisch/Lehrplan.md) | [Ressourcen](../02_Englisch/Ressourcen.md) | [Englisch-EF-Phrasen](../02_Englisch/Vokabeln-Anki/Englisch-EF-Phrasen.csv) | [Fehlerlog](../02_Englisch/Klausur-Training/Fehlerlog.md) | [Role-Models](../02_Englisch/Texte-Analyse/Role-Models-Analysis.md) |
 | Mathe/Physik/Chemie/Bio | ✅ 骨架EF | [Mathe-Lehrplan](../03_Mathe/Lehrplan.md) · [Physik](../04_Physik/Lehrplan.md) · [Chemie](../05_Chemie/Lehrplan.md) · [Bio](../06_Bio/Lehrplan.md) | 各 `Ressourcen.md` + `_Downloads/` KLP全文 | — | — | 各 `Formel-Spickzettel.md` (KaTeX) |
@@ -50,6 +50,7 @@
 ### Philosophie
 - Menschenbild — [Menschenbild-Überblick](../07_Philosophie/Texte-Analyse/Menschenbild-Überblick.md)
 - Ethik: Utilitarismus vs Kant — [Utilitarismus-vs-Kant](../07_Philosophie/Texte-Analyse/Utilitarismus-vs-Kant.md)
+- Philosophische Fragen stellen (Plickat) — [Philosophische-Fragen-Typen](../07_Philosophie/Texte-Analyse/Philosophische-Fragen-Typen.md)（5 Fragetypen/Operatoren-Mapping）
 
 ### Deutsch
 - Lyrik: Sturm und Drang (Goethe) — [Lyrik-Sturm-Drang-Goethe](../01_Deutsch/Texte-Analyse/Lyrik-Sturm-Drang-Goethe.md)（Willkommen und Abschied/6 Mittel/Deutungshypothese）

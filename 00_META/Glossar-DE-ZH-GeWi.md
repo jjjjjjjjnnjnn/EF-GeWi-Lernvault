@@ -127,3 +127,6 @@ tags: [EF, Meta]
 | line of argument | 论证线索 | Englisch | Follow the author's line of argument first. |
 | connotation | 隐含意义 | Englisch | Hero has a positive connotation. |
 | counterargument | 反方论点 | Englisch | A fair comment needs one counterargument. |
+| philosophische Frage | 哲学问题 | Philosophie | Sie fragt nach Bedeutung, Gründen und Maßstäben. |
+| Angemessenheit | 恰当性/正当性 | Philosophie | Die Frage nach der Angemessenheit prüft den Maßstab selbst. |
+| Bedeutungsfrage | 含义澄清之问 | Philosophie | Was bedeutet das eigentlich? |
