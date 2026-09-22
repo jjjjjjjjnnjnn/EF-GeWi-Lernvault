@@ -151,3 +151,9 @@ tags: [EF, Meta]
 | Gewebe | 组织 | Bio | Aus Zellen bildet sich Gewebe, daraus Organe. |
 | Organismus | 个体 | Bio | Der Organismus ist die höchste Organisationsebene. |
 | erklären | 解释 | Bio | Erklären führt ein Phänomen auf Regeln zurück. |
+| Quarte | 纯四度 | Musik | Die Quarte erkenne ich am Liedanfang. |
+| Quinte | 纯五度 | Musik | Die Quinte klingt offen und stabil. |
+| Sexte | 六度 | Musik | Die Sexte uebe ich einzeln, sie ist schwer. |
+| Septime | 七度 | Musik | Die Septime zieht stark zur Oktave. |
+| Sonatenhauptsatzform | 奏鸣曲式 | Musik | Exposition, Durchfuehrung und Reprise. |
+| Wiener Klassik | 维也纳古典乐派 | Musik | Haydn, Mozart und Beethoven. |
