@@ -32,6 +32,21 @@ tags: [EF, Meta]
 > 缺口（需人工，见对话傻瓜指南）：StanSi Login墙内近3年真题（找老师要 Zugangsdaten）/ Stark纸书（按下单买）/
 > bpb IzPB 354纸质免费订 / 课堂Klausur拍照 / Lektüre+Topic+ Halbjahr-Thema。
 
+## Material-Runde 2 (2026-09-22, `scripts/fetch-material3.py` + fixup4/5, 分组并行)
+
+| # | 包 | 内容 | 本地 | 状态 |
+|---|---|---|---|---|
+| N1 | bpb IzPB 354 PDF (8MB) | Soziale Ungleichheit 全文（Ungleichheit笔记升级弹药） | `_Downloads/SoWi/bpb_izpb354_*` | ok |
+| N2 | bpb Sozialbericht 2024 (41MB) | Datenreport后继（Gini/Armut/Bildung数字核对） | `_Downloads/SoWi/bpb_sozialbericht-2024.pdf` | ok |
+| N3 | KMK NaWi 2020 | Bio/Chemie/Physik Bildungsstandards Abi | `_Downloads/{Bio,Chemie,Physik}/kmk_bildungsstandards_*_abi.pdf` | ok |
+| N4 | IQB深挖 (+36) | Mathe另6套/Englisch Schreiben×2/Deutsch Interpretation×5/NaWi各6 | `_Downloads/<Fach>/iqb_*` | ok |
+| N5 | StanSi深挖 | Deutsch Konstruktion+Gedichtvergleich+Ma-LK / Englisch Zieltextformate-Tabelle(1.5MB!)/Mathe Operatoren26+GK-Vorblatt+Pflicht/Wahlpflicht / ZKE-Mathe Vorgaben27+TeilA×4+TeilB CAS/WTR | `_Downloads/<Fach>/stansi_*` | ok |
+| N6 | 总量 | `_Downloads/` 1265件/1.23GB（全gitignored） | — | ok |
+
+> 确认不可下：GOSt-Prüfungsaufgaben页零直链（JS门）/ aufgaben-der-letzten-jahre需Login（0 pdf，墙实锤）/
+> IQB-HV无mp3直链（在线播放器）/ OpenStax需JS取链（已用Playwright解）/ Musik-Sport无中央考（只链Lehrplan）。
+> Serlo/LEIFI只收链接不批量（交互题，爬无意义；写笔记时按主题链）。
+
 ## SoWi（优先）
 
 | # | 文件 | 许可 | URL | 本地 | 状态 |
