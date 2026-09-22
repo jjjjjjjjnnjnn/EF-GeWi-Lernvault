@@ -55,6 +55,8 @@
 - [2026-09-21-webui](Journal/2026-09-21-webui.md) — 日常走 WebUI（一键脚本）
 - [2026-09-21-material](Journal/2026-09-21-material.md) — 资料大搜集（BWKI mining/电子书/官方下载/FEATURE-SPEC）
 - [2026-09-21-alle-faecher](Journal/2026-09-21-alle-faecher.md) — 全科进攻（10科骨架/39PDF/Playwright/SPEC-V2/Lernreise示范）
+- [2026-09-21-ebook](Journal/2026-09-21-ebook.md) — 电子书抓取（登录+管线+OCR后台）
+- [2026-09-21-ui-done](Journal/2026-09-21-ui-done.md) — UI落地验收+Web重启（7模块+构建通过）
 - 约定：文件名 `YYYY-MM-DD-<thema>.md`，头部frontmatter（`fach`可空，`tags: [EF, Meta]`）。
 
 ## Dataview（Obsidian内自动索引，GitHub上仅作备份显示）

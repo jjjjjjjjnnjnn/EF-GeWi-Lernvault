@@ -10,7 +10,8 @@
 - ✅ 10/10学科骨架：SoWi/Philo填实；Deutsch/Englisch KLP2023校准+csv各30条（等Lektüre/Topic）；MINT四科KLP校准+Formel-Spickzettel(KaTeX)；Musik/Sport口试骨架。
 - ✅ 官方弹药：SoWi/Philo/Deutsch/Englisch/Mathe全套Operatoren+Konstruktion+Korrekturzeichen+Beispiele；Formelsammlung NRW 2024。
 - ✅ Playwright电子书脚手架就绪（`scripts/ebook-fetch/`，等用户登录一次）。
-- ✅ App需求：FEATURE-SPEC + UI-SPEC-V2（全科+KaTeX+Lernreise第7模块）可发外部AI；首个示范课程 `Lernreise/Sowi-Soziale-Marktwirtschaft-L1.md`。
+- ✅ App需求：FEATURE-SPEC + UI-SPEC-V2；**外部AI已落地**（`b17999d`）：10科徽章+KaTeX离线公式+Lernreise第7模块（5步态+gating+XP localStorage），`npm run build`亲验通过；首个示范课程 `Lernreise/Sowi-Soziale-Marktwirtschaft-L1.md`。
+- ✅ 电子书抓取进行中：用户登录成功（Lizenz bis 20.10.2027），Playwright+RapidOCR后台跑（~6s/页，已300+页），原文只进 `_Downloads/SoWi/ebook-raw/`（gitignored）。
 
 ## 环境（接手必备）
 - 日常开发走本地 WebUI：vault根目录跑 `. .\scripts\webui.ps1`（起1420+自动开浏览器；热更新）。
@@ -19,9 +20,9 @@
 - DeepTutor家目录：`C:\Users\rongj\.deeptutor-home`（vault外）。LM Studio需开着（模型llama-3-sauerkrautlm-8b-instruct）。
 
 ## 待办（按优先级）
-1. 用户贴：Deutsch Lektüre + Englisch Topic/Teil-B类型 + SoWi/Philo课堂笔记 → 首篇正式笔记（INDEX/Glossar/csv三同步）。
-2. 用户在自动化浏览器登录一次 → 跑SoWi全书原文（本地only）。
-3. UI-SPEC-V2发外部AI做界面；P2（ts-fsrs）→ P3（LM混合组卷）→ P5（发版）。
+1. 电子书跑完 → 按11章切分清洗 → 写SoWi正式笔记（INDEX/Glossar/csv三同步）。
+2. 用户贴：Deutsch Lektüre + Englisch Topic/Teil-B类型 + 课堂笔记。
+3. P2（ts-fsrs）→ P3（LM混合组卷）→ P5（发版）。
 
 ## 铁律
 - 一次只做一科一commit（前缀`[SoWi]/[Philo]/[Meta]/[Deutsch]/[Englisch]/[App]`）；`data/`、`_Downloads/`、`*.apkg`、App构建产物（`target|gen|dist|*.key|*.exe|*.msi`）永不进git；只写原创笔记（版权红线见AGENTS.md §4）。
