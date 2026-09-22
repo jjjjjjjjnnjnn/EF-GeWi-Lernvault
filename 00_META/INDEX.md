@@ -118,6 +118,7 @@
 - [2026-09-23-onboarding](Journal/2026-09-23-onboarding.md) — App首次使用流三步引导+系统语言默认（build过/1420冒烟200）
 - [2026-09-23-dual-engine-ki](Journal/2026-09-23-dual-engine-ki.md) — 内置双引擎AI：API直连/WebLLM本地/关闭+8预设+AI-SETUP手册（LM Studio摘除）
 - [2026-09-23-feedback-fixes-3](Journal/2026-09-23-feedback-fixes-3.md) — 反馈三连修：搜索chip/设置中心/背卡会话快照（build过）
+- [2026-09-23-audit-3](Journal/2026-09-23-audit-3.md) — 三轮严格审核+维护+交接（226文件干净/38-203-117/build过/1420在线）
 - 约定：文件名 `YYYY-MM-DD-<thema>.md`，头部frontmatter（`fach`可空，`tags: [EF, Meta]`）。
 
 ## Dataview（Obsidian内自动索引，GitHub上仅作备份显示）
