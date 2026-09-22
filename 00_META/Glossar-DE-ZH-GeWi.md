@@ -139,3 +139,8 @@ tags: [EF, Meta]
 | y-Achsenabschnitt | y轴截距 | Mathe | b = f(0) ist der y-Achsenabschnitt. |
 | Scheitelpunkt | 顶点 | Mathe | S(d|e) ist der Scheitelpunkt der Parabel. |
 | Zwei-Punkte-Formel | 两点式 | Mathe | m = (y2-y1)/(x2-x1) aus zwei Punkten. |
+| gleichförmige Bewegung | 匀速直线运动 | Physik | Die gleichförmige Bewegung hat konstante Geschwindigkeit. |
+| Durchschnittsgeschwindigkeit | 平均速度 | Physik | Gesamtstrecke durch Gesamtzeit ergibt die Durchschnittsgeschwindigkeit. |
+| Momentangeschwindigkeit | 瞬时速度 | Physik | Die Momentangeschwindigkeit entspricht der Tangentensteigung. |
+| Ausgleichsgerade | 拟合直线 | Physik | Die Ausgleichsgerade fasst die Messpunkte zusammen. |
+| Messunsicherheit | 测量不确定度 | Physik | Jede Messung hat eine Messunsicherheit. |

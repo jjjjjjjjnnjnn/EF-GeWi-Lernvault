@@ -61,6 +61,9 @@
 ### Musik (mündlich)
 - Motiv und motivische Arbeit (Beethoven 5) — [Beethoven-Motiv-Hoeren](../09_Musik-mündl/Texte-Analyse/Beethoven-Motiv-Hoeren.md)（Motiv三要素/Verarbeitung表/Takt 1-20/Hör-Bausteine）
 
+### Physik
+- Gleichförmige Bewegung: Training — [Gleichfoermige-Bewegung-Training](../04_Physik/Gleichfoermige-Bewegung-Training.md)（s-t读画/平均vs瞬时/Excel四步/Klausur四行）
+
 ## Journal（每日/每次交接一条，最新在下）
 
 - [2026-09-21-handover](Journal/2026-09-21-handover.md) — 建库全过程 + 待办
