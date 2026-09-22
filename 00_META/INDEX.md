@@ -121,6 +121,7 @@
 - [2026-09-23-audit-3](Journal/2026-09-23-audit-3.md) — 三轮严格审核+维护+交接（226文件干净/38-203-117/build过/1420在线）
 - [2026-09-23-phase-a-lern-engine](Journal/2026-09-23-phase-a-lern-engine.md) — Phase A完工：48单测/engine检索+存储/设置下沉/LEARNING-ENGINE契约
 - [2026-09-23-phase-b-lern-engine](Journal/2026-09-23-phase-b-lern-engine.md) — Phase B完工：存储收敛/RAG三档/交错回流/主页tab（97单测全绿）
+- [2026-09-23-c-runde-sim-test](Journal/2026-09-23-c-runde-sim-test.md) — C轮：语义stage-2/云Backend/视觉契约/全链模拟（113单测全绿）
 - 约定：文件名 `YYYY-MM-DD-<thema>.md`，头部frontmatter（`fach`可空，`tags: [EF, Meta]`）。
 
 ## Dataview（Obsidian内自动索引，GitHub上仅作备份显示）
