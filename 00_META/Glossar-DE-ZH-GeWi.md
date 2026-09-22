@@ -49,4 +49,11 @@ tags: [EF, Meta]
 | Drittwirkung | 第三方效力 | SoWi | √ |
 | praktische Konkordanz | 实践调和 | SoWi | √ |
 
+| Zustimmungsgesetz | 需批准法 | SoWi | √ |
+| Einspruchsgesetz | 可反对法 | SoWi | √ |
+| Vermittlungsausschuss | 调解委员会 | SoWi | √ |
+| freies Mandat | 自由委任 | SoWi | √ |
+| Fraktionsdisziplin | 党团纪律 | SoWi | √ |
+| Politikzyklus | 政策周期 | SoWi | √ |
+
 > 每科笔记的新术语同步回此表一行，保持唯一真相源。
