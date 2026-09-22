@@ -6,6 +6,7 @@
 1. 本文件 → 2. `AGENTS.md`（规范） → 3. `00_META/INDEX.md`（导航） → 4. 目标学科 `Lehrplan.md` → 5. `00_META/Journal/` 最新一篇（当前上下文）。
 
 ## 当前状态（2026-09-23晚）
+- ✅ 反馈三连修（`[App] b2e5b4f`）：笔记库残留搜索chip一键清除 / 新设置中心tab（语言·Vault·AI·导出·快捷键·关于，顶栏只剩搜索+齿轮）/ 背卡会话快照（Again重排队尾，不再早退）；build过，1420在线。
 - ✅ 内置双引擎AI（LM Studio摘除）：KI-Tutor顶部AI设置三段切换（API直连/本地WebLLM/关闭）+ 8服务商预设 + Key自填 + AI-SETUP手册；Quiz同引擎；Zitierpflicht保留；web-llm 0.2.85特批入包（NOTICE同步）；build过，1420在线（Journal 2026-09-23-dual-engine-ki）。
 - ✅ App首次使用流：三步引导（Vault→Fächer三态→Klausurtermin进Lernplan）+ 首页DE/中文切换 + 默认语言跟系统（兜底德语，可切换持久化）+ 落地Lernreise；build过（Journal 2026-09-23-onboarding）。
 - ✅ 联网补缺口（用户拍板不等老师，假设版待核对）：Musik Halbjahr假设=IF1+IF2维也纳古典/奏鸣曲式+Stufe-4音程爬梯（csv新12卡）/ Deutsch Drama三选一（Dürrenmatt Besuch/Physiker、Frisch Andorra）+通用工具箱 / Englisch Teil-B双轨（HV四题型+Mediation三段式，官方评分表链）；vault-check PASS（notes=38 csv=203）。

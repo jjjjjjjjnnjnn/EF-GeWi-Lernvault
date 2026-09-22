@@ -117,6 +117,7 @@
 - [2026-09-23-internet-lueckenfueller](Journal/2026-09-23-internet-lueckenfueller.md) — 联网补缺口：Musik IF1+IF2假设/Drama三选一/Teil-B双轨（待老师核对）
 - [2026-09-23-onboarding](Journal/2026-09-23-onboarding.md) — App首次使用流三步引导+系统语言默认（build过/1420冒烟200）
 - [2026-09-23-dual-engine-ki](Journal/2026-09-23-dual-engine-ki.md) — 内置双引擎AI：API直连/WebLLM本地/关闭+8预设+AI-SETUP手册（LM Studio摘除）
+- [2026-09-23-feedback-fixes-3](Journal/2026-09-23-feedback-fixes-3.md) — 反馈三连修：搜索chip/设置中心/背卡会话快照（build过）
 - 约定：文件名 `YYYY-MM-DD-<thema>.md`，头部frontmatter（`fach`可空，`tags: [EF, Meta]`）。
 
 ## Dataview（Obsidian内自动索引，GitHub上仅作备份显示）
