@@ -77,4 +77,11 @@ tags: [EF, Meta]
 | Potentialität | 实现可能性 | SoWi | √ |
 | Radikalismus | 激进主义 | SoWi | √ |
 
+| Knappheit | 稀缺 | SoWi | √ |
+| homo oeconomicus | 经济人 | SoWi | √ |
+| Konsumentensouveränität | 消费者主权 | SoWi | √ |
+| Fremdbestimmung | 被操控 | SoWi | √ |
+| Nachhaltigkeit | 可持续性 | SoWi | √ |
+| Verbraucherpolitik | 消费者政策 | SoWi | √ |
+
 > 每科笔记的新术语同步回此表一行，保持唯一真相源。
