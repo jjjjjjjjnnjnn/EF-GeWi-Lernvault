@@ -10,7 +10,8 @@
 - ✅ 10/10学科骨架：SoWi/Philo填实；Deutsch/Englisch KLP2023校准+csv各30条（等Lektüre/Topic）；MINT四科KLP校准+Formel-Spickzettel(KaTeX)；Musik/Sport口试骨架。
 - ✅ 官方弹药：SoWi/Philo/Deutsch/Englisch/Mathe全套Operatoren+Konstruktion+Korrekturzeichen+Beispiele；Formelsammlung NRW 2024。
 - ✅ Playwright电子书脚手架就绪（`scripts/ebook-fetch/`，等用户登录一次）。
-- ✅ App需求：FEATURE-SPEC + UI-SPEC-V2；**外部AI已落地**（`b17999d`）：10科徽章+KaTeX离线公式+Lernreise第7模块（5步态+gating+XP localStorage），`npm run build`亲验通过；首个示范课程 `Lernreise/Sowi-Soziale-Marktwirtschaft-L1.md`。
+- ✅ App需求：FEATURE-SPEC + UI-SPEC-V2；**外部AI已落地**（`b17999d`）：10科徽章+KaTeX离线公式+Lernreise第7模块（5步态+gating+XP localStorage），`npm run build`亲验通过；课程3个（SoWi-L1示范 + Musik-Höranalyse-L1 + Sport-Bewegung-L1，均muendlich步）。
+- ✅ 集成方法v2：`Lernmethoden-Evidenz.md`单真相源 + Template v2（检索优先/Pro-Contra/Fehlvorstellungen）+ `vault-check.py`四检PASS + parser修csv表头卡/quote/math块（build过）+ P3加Zitierpflicht。
 - ✅ 电子书抓取进行中：用户登录成功（Lizenz bis 20.10.2027），Playwright+RapidOCR后台跑（~6s/页，已340+页，conf 0.95+），原文只进 `_Downloads/SoWi/ebook-raw/`（gitignored）。
 
 ## 环境（接手必备）

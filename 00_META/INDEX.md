@@ -24,7 +24,7 @@
 ## META
 
 - [HANDOVER](../HANDOVER.md) — 一页交接（新agent/用户先读）
-- [Ziele](Ziele.md) · [NRW-EF-Lehrplan-Übersicht](NRW-EF-Lehrplan-Übersicht.md) · [Lernsystem](Lernsystem.md) · [Operatoren-NRW-GeWi](Operatoren-NRW-GeWi.md) · [Glossar-DE-ZH-GeWi](Glossar-DE-ZH-GeWi.md)
+- [Ziele](Ziele.md) · [NRW-EF-Lehrplan-Übersicht](NRW-EF-Lehrplan-Übersicht.md) · [Lernsystem](Lernsystem.md) · [Lernmethoden-Evidenz](Lernmethoden-Evidenz.md) · [Operatoren-NRW-GeWi](Operatoren-NRW-GeWi.md) · [Glossar-DE-ZH-GeWi](Glossar-DE-ZH-GeWi.md)
 - [Download-Quellen](Download-Quellen.md) — 本地 `_Downloads/` 采集清单（PDF不进git）
 - [DeepTutor](DeepTutor.md) — 提分引擎：Quiz/抽认卡/模拟卷命令手册
 - Skills：[klausur-drill](../Skills/klausur-drill/SKILL.md) · [vokabel-trainer](../Skills/vokabel-trainer/SKILL.md) · [texte-analyse](../Skills/texte-analyse/SKILL.md)
@@ -58,6 +58,7 @@
 - [2026-09-21-ebook](Journal/2026-09-21-ebook.md) — 电子书抓取（登录+管线+OCR后台）
 - [2026-09-21-ui-done](Journal/2026-09-21-ui-done.md) — UI落地验收+Web重启（7模块+构建通过）
 - [2026-09-21-audit](Journal/2026-09-21-audit.md) — 全项目审核（csv误报+两处修复）
+- [2026-09-22-integration-v2](Journal/2026-09-22-integration-v2.md) — 集成方法v2（记录·设计·执行）
 - 约定：文件名 `YYYY-MM-DD-<thema>.md`，头部frontmatter（`fach`可空，`tags: [EF, Meta]`）。
 
 ## Dataview（Obsidian内自动索引，GitHub上仅作备份显示）
