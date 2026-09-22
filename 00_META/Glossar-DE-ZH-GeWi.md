@@ -130,3 +130,8 @@ tags: [EF, Meta]
 | philosophische Frage | 哲学问题 | Philosophie | Sie fragt nach Bedeutung, Gründen und Maßstäben. |
 | Angemessenheit | 恰当性/正当性 | Philosophie | Die Frage nach der Angemessenheit prüft den Maßstab selbst. |
 | Bedeutungsfrage | 含义澄清之问 | Philosophie | Was bedeutet das eigentlich? |
+| Motiv | 动机 | Musik | Das Motiv ist die kleinste musikalische Sinneinheit. |
+| motivische Arbeit | 动机加工 | Musik | Wiederholung, Sequenz und Variation formen den Satz. |
+| Abspaltung | 动机碎片化 | Musik | Bei der Abspaltung wird nur der Motivkopf wiederholt. |
+| Fermate | 延长记号 | Musik | Die Fermate hält den Puls an und dehnt die Zeit. |
+| Artikulation | 演奏法 | Musik | Legato bindet, Staccato trennt die Töne. |

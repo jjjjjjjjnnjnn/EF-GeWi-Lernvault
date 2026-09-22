@@ -24,6 +24,6 @@ tags: [EF, Musik]
 
 ## 3. TODO
 
-- [ ] Halbjahr-Thema (Epoche/Werk):
+- [ ] Halbjahr-Thema (Epoche/Werk): Stand 2026-09-23: `wahrscheinlich Beethoven/Klassik (aus Material erschlossen, unbestätigt — zu bestätigen)`.
 - [ ] Hörbeispiele-Liste:
 - [ ] Prüfungstermin + Dauer:

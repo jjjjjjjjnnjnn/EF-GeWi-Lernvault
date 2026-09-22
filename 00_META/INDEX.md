@@ -11,7 +11,7 @@
 | Deutsch | 🟡 本期开动 | [Lehrplan](../01_Deutsch/Lehrplan.md) | [Ressourcen](../01_Deutsch/Ressourcen.md) | [Deutsch-EF-Phrasen](../01_Deutsch/Vokabeln-Anki/Deutsch-EF-Phrasen.csv) | [Fehlerlog](../01_Deutsch/Klausur-Training/Fehlerlog.md) | [Lyrik-Sturm-Drang](../01_Deutsch/Texte-Analyse/Lyrik-Sturm-Drang-Goethe.md) |
 | Englisch | 🟡 本期开动 | [Lehrplan](../02_Englisch/Lehrplan.md) | [Ressourcen](../02_Englisch/Ressourcen.md) | [Englisch-EF-Phrasen](../02_Englisch/Vokabeln-Anki/Englisch-EF-Phrasen.csv) | [Fehlerlog](../02_Englisch/Klausur-Training/Fehlerlog.md) | [Role-Models](../02_Englisch/Texte-Analyse/Role-Models-Analysis.md) |
 | Mathe/Physik/Chemie/Bio | ✅ 骨架EF | [Mathe-Lehrplan](../03_Mathe/Lehrplan.md) · [Physik](../04_Physik/Lehrplan.md) · [Chemie](../05_Chemie/Lehrplan.md) · [Bio](../06_Bio/Lehrplan.md) | 各 `Ressourcen.md` + `_Downloads/` KLP全文 | — | — | 各 `Formel-Spickzettel.md` (KaTeX) |
-| Musik/Sport mündl. | 🟡 口试骨架 | [Musik](../09_Musik-mündl/Lehrplan.md) · [Sport](../10_Sport-mündl/Lehrplan.md) | 各 `Ressourcen.md` | — | — | — |
+| Musik/Sport mündl. | 🟡 口试开动 | [Musik](../09_Musik-mündl/Lehrplan.md) · [Sport](../10_Sport-mündl/Lehrplan.md) | 各 `Ressourcen.md` | — | — | [Beethoven-Motiv](../09_Musik-mündl/Texte-Analyse/Beethoven-Motiv-Hoeren.md) |
 
 ## App（桌面软件，一站式入口）
 - [App-EF-Lernvault](../App-EF-Lernvault/README.md) — EF-Lernvault：六模块 + 命令面板/快捷键/拖拽 + P1接线（顶栏打开真实vault，笔记/背卡/面板全切真实数据）；`npm run dev` 预览（1420）。
@@ -57,6 +57,9 @@
 
 ### Englisch
 - Role Models — [Role-Models-Analysis](../02_Englisch/Texte-Analyse/Role-Models-Analysis.md)（Teil A三任务链/Summary自查/P.E.E./Comment句型）
+
+### Musik (mündlich)
+- Motiv und motivische Arbeit (Beethoven 5) — [Beethoven-Motiv-Hoeren](../09_Musik-mündl/Texte-Analyse/Beethoven-Motiv-Hoeren.md)（Motiv三要素/Verarbeitung表/Takt 1-20/Hör-Bausteine）
 
 ## Journal（每日/每次交接一条，最新在下）
 
