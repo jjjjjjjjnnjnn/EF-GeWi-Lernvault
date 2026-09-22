@@ -82,8 +82,9 @@
 - [2026-09-22-ui-spec-v4-review](Journal/2026-09-22-ui-spec-v4-review.md) — V4复核PASS：构建复现+零回归+2条技术债
 - [2026-09-22-reise-nav-fix-feedback](Journal/2026-09-22-reise-nav-fix-feedback.md) — Reise硬编码跳转修复+v3八步全通+Dev-Feedback两处挂载
 - [2026-09-22-feedback-float](Journal/2026-09-22-feedback-float.md) — 反馈栏改全局右下角浮窗+上下文总线自动带位置
-- [2026-09-22-lane-a](Journal/2026-09-22-lane-a.md) — A路占位（待A路agent补实）
-- [2026-09-22-lane-b](Journal/2026-09-22-lane-b.md) — B路占位（待B路agent补实）
+- [2026-09-22-audit-handover](Journal/2026-09-22-audit-handover.md) — 全项目审核+维护+交接（git干净/build过/94链全有效）
+- [2026-09-22-lane-a](Journal/2026-09-22-lane-a.md) — A路：Philo-L2九步试点+csv/Glossar/Fehlerlog三同步（v3跨科成立）
+- [2026-09-22-lane-b](Journal/2026-09-22-lane-b.md) — B路：Vergleich真数据管线+四维RUBRIC统一（V4技术债清零）
 - [2026-09-22-klett-rohrer-hygiene](Journal/2026-09-22-klett-rohrer-hygiene.md) — C路：Klett映射5单元23媒体+Rohrer补源3/5+文档卫生
 - 约定：文件名 `YYYY-MM-DD-<thema>.md`，头部frontmatter（`fach`可空，`tags: [EF, Meta]`）。
 
