@@ -35,9 +35,9 @@
 - Identität & Jugend (Kap. 1) — [Identitaet-Jugend](../08_SoWi/Texte-Analyse/Identitaet-Jugend.md)（Shell/六模型/媒体/多元文化）
 - Sozialisation & Rolle (Kap. 2) — [Sozialisation-Rolle](../08_SoWi/Texte-Analyse/Sozialisation-Rolle.md)（初级/次级/角色三冲突/Rollendistanz）
 - Grundgesetz & Verfassungsprinzipien (Kap. 3) — [Grundgesetz-Verfassungsprinzipien](../08_SoWi/Texte-Analyse/Grundgesetz-Verfassungsprinzipien.md)（Art.1/20/79III/打架规则）
-- Verfassungsorgane (Kap. 4) — [Verfassungsorgane](../08_SoWi/Texte-Analyse/Verfassungsorgane.md)（立法路/党纪vs良心/2023选举改革）
+- Verfassungsorgane (Kap. 4) — [Verfassungsorgane](../08_SoWi/Texte-Analyse/Verfassungsorgane.md)（立法路/党纪vs良心/2023选举改革/§8 Unterrichts-Anker）
 - Parteien & Willensbildung (Kap. 5) — [Parteien-Willensbildung](../08_SoWi/Texte-Analyse/Parteien-Willensbildung.md)（Art.21/三思潮/人民党危机/媒体）
-- Partizipation (Kap. 6) — [Partizipation](../08_SoWi/Texte-Analyse/Partizipation.md)（青年参与/直接民主/公民委员会）
+- Partizipation (Kap. 6) — [Partizipation](../08_SoWi/Texte-Analyse/Partizipation.md)（青年参与/直接民主/公民委员会/§8 Kap6.1 Shell+M6+Lindner）
 - Wehrhafte Demokratie (Kap. 7) — [Wehrhafte-Demokratie](../08_SoWi/Texte-Analyse/Wehrhafte-Demokratie.md)（三色极端/民粹/NPD案）
 - Konsum & Wirtschaften (Kap. 8) — [Konsum-Wirtschaften](../08_SoWi/Texte-Analyse/Konsum-Wirtschaften.md)（概念链/经济人批判/可持续）
 - Soziale Marktwirtschaft (Kap. 9) — [Soziale-Marktwirtschaft](../08_SoWi/Texte-Analyse/Soziale-Marktwirtschaft.md)（Smith/弗莱堡/艾哈德/生态，配Lernreise L1）

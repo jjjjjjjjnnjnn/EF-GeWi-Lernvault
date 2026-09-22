@@ -115,3 +115,6 @@ tags: [EF, Meta]
 | abwägen | 权衡 | Philo | √ |
 
 > 每科笔记的新术语同步回此表一行，保持唯一真相源。
+
+| Gemeinsamer Ausschuss | 联合委员会（紧急议会） | SoWi | Der Gemeinsame Ausschuss tagt nur im Notfall. |
+| Bundesversammlung | 联邦大会 | SoWi | Die Bundesversammlung wählt den Bundespräsidenten. |

@@ -70,3 +70,14 @@ tags: [EF, SoWi, Politik]
 - [ ] Zustimmung（必须批）≠ Einspruch（可推翻），Vermittlung 是中间站
 - [ ] BVerfG 在 Karlsruhe，不在 Berlin
 - [ ] freies Mandat 引 Art.38，别写 Art.20
+
+## 8. Unterrichts-Anker (Lehrer-Material Sept 2026, nur lokal in `_Downloads/SoWi/lehrer-2026-09/`)
+
+> 中文：老师给了一张空白三列表（机关 | 组成 | 产生方式）+ 一张关系总图，本节只记"图里已有笔记缺的三块"，不抄原表。
+
+- **Lückentext练法（自制，不复印原表）**：把 7 行机关名留下，把"组成/产生"两列挖空，自己默写；重点挖：Bundesversammlung 两半构成、Gemeinsamer Ausschuss 比例、wählt/ernennt 动词链（谁选谁、谁任命谁）。错一处就回第 1 节重读。
+- **新增关系链一（Bundesversammlung 两半）**：一半是全体 Bundestag 成员，另一半是各州议会派出的同等人数代表；它的唯一职能就是选 Bundespräsident。中文：联邦大会=半国会+半州代表，选完总统就散。
+- **新增关系链二（Gemeinsamer Ausschuss "Notparlament"）**：2/3 来自 Bundestag、1/3 来自 Bundesrat，只在紧急状态时代行议会职能；平时不存在感，Klausur 考"它证明了什么"→答案：防瘫痪的备用设计。
+- **新增关系链三（wählt/ernennt 动词链）**：Bundestag 选 Kanzler（Kanzler 提名部长）→ Bundespräsident 提名 Kanzler 人选并任命 Kanzler+部长；Bundestag 与 Bundesrat 各选一半 BVerfG 法官；选民一票选 Bundestag、一票选州议会，州议会再派代表进 Bundesversammlung、州政府派代表进 Bundesrat。
+- 德语 Klausur-Satz: `Die Bundesversammlung besteht zur Hälfte aus Bundestagsmitgliedern und zur Hälfte aus Länderdelegierten; sie wählt den Bundespräsidenten.`
+- 德语 Klausur-Satz: `Der Gemeinsame Ausschuss (zwei Drittel Bundestag, ein Drittel Bundesrat) sichert als „Notparlament" die Handlungsfähigkeit im Ausnahmezustand.`

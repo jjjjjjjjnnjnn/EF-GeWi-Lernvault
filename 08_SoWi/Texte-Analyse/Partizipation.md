@@ -69,3 +69,15 @@ tags: [EF, SoWi, Politik]
 - [ ] Quorum 两道：签名门槛 vs 同意门槛，别混
 - [ ] begründen=主张+理由，不是只表态（≠ beurteilen 无标准不行）
 - [ ] 直接民主 Contra 必提 Minderheitenschutz（链 Kap.3 Grundrechte）
+
+## 8. Unterrichts-Anker Kap 6.1 (C.C. Buchner, nur lokal in `_Downloads/SoWi/lehrer-2026-09/`, eigene Worte)
+
+> 中文：本章入门是"年轻人不爱党但爱事"，三组材料各记一句话，不抄书。
+
+- **M1 Einstieg（Fridays for Future 2019）**：2019 年 9 月全球气候罢课，德国上百万人上街，科隆受访少女的话核心是"我们年轻，世界现在就要变，所以上街"。中文记忆：FFF=青年用身体投票，participation 不只等于投票。
+- **M2 Shell-Trend 一句话（2002→2019）**：政治兴趣从 30% 爬到 41%（2015 年 43% 见顶后微落），"亲自参与很重要"从 22% 涨到 34%，即兴趣与参与意愿十七年双升、2019 高位企稳。
+- **M6 Wahlbeteiligung（Jung vs. Alle）一句话**：18–24 岁投票率几乎每次都低于全体约 5–10 个百分点，2009/2013 年跌到谷底（约六成），2021 年回升到约七成，仍未追上平均线——"不投票≠不关心"（连回 M2）。
+- **Aufgabe 9 Lindner-Stellungnahme（2019，FFF 语境，论点正反各一）**：其立场转述为"未成年人看不懂全球关联、技术可行与经济可承受，应交给专业人士"。Pro-Lindner（可用的赞成理据）：气候政策确需专业权衡，情绪不能代替可行性审查。Contra-Lindner（反驳理据）：受影响最大的一代恰恰是青年，参与权不以"全知"为前提，否则等于用能力审查剥夺 Mündigkeit。
+- 德语 Satz (darstellen): `Die Shell-Daten zeigen von 2002 bis 2019 einen doppelten Anstieg: politisches Interesse (30 auf 41 %) und Engagementbereitschaft (22 auf 34 %).`
+- 德语 Satz (analysieren): `Die Jungwähler bleiben bei jeder Bundestagswahl unter dem Schnitt — Nichtwahl bedeutet nicht Desinteresse, sondern oft Parteienverdrossenheit bei gleichzeitig hohem Engagement (FFF, NGOs).`
+- 德语 Satz (Stellungnahme Aufgabe 9): `Lindners Profi-Argument schützt vor Überforderung, verkennt aber, dass Betroffenheit Teilhabe begründet: Wer die Folgen trägt, darf mitreden — Mündigkeit statt Wartezimmer.`
