@@ -41,3 +41,7 @@ export const REISE_SHORTCUTS: Shortcut[] = [
   { keys: "Enter / →", de: "Nächster Schritt / einreichen", zh: "下一步/提交" },
   { keys: "Space", de: "Szenario-Timer starten / stoppen", zh: "场景计时开始/停止" },
 ];
+
+export const ONBOARDING_SHORTCUTS: Shortcut[] = [
+  { keys: "Enter", de: "Weiter (außer in Eingabefeldern)", zh: "下一步（输入框内除外）" },
+];

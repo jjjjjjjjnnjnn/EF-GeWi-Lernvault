@@ -14,6 +14,7 @@ import Tutor from "./modules/Tutor";
 import Planner from "./modules/Planner";
 import Mindmap from "./modules/Mindmap";
 import ReiseModule from "./modules/Reise";
+import Onboarding, { loadOnboarding, saveOnboarding, type OnboardingResult } from "./modules/Onboarding";
 
 type Tab = "library" | "flashcards" | "quiz" | "tutor" | "planner" | "mindmap" | "reise";
 
@@ -96,7 +97,31 @@ const getInitialTab = (): Tab => {
 
 export default function App() {
   const [tab, setTab] = useState<Tab>(getInitialTab);
-  const [lang, setLang] = useState<Lang>("zh");
+  // Standardsprache: Systemsprache (zh → zh), sonst Deutsch; Nutzerwahl persistiert.
+  const [lang, setLangState] = useState<Lang>(() => {
+    if (typeof window !== "undefined") {
+      try {
+        const saved = localStorage.getItem("eflernvault:lang");
+        if (saved === "de" || saved === "zh") return saved;
+        if ((window.navigator?.language ?? "").toLowerCase().startsWith("zh")) return "zh";
+      } catch {
+        // Speicher blockiert: auf Deutsch zurückfallen.
+      }
+    }
+    return "de";
+  });
+  const setLang = (updater: Lang | ((l: Lang) => Lang)) => {
+    setLangState((prev) => {
+      const next = typeof updater === "function" ? (updater as (l: Lang) => Lang)(prev) : updater;
+      try {
+        localStorage.setItem("eflernvault:lang", next);
+      } catch {
+        // ignorieren
+      }
+      return next;
+    });
+  };
+  const [obOpen, setObOpen] = useState<boolean>(() => loadOnboarding() === null);
   const [query, setQuery] = useState(() => {
     if (typeof window !== "undefined") {
       return new URLSearchParams(window.location.search).get("q") || "";
@@ -168,6 +193,13 @@ export default function App() {
   const jumpToLibrary = (targetQuery: string) => {
     switchTab("library");
     setQuery(targetQuery);
+  };
+
+  const finishOnboarding = (r: OnboardingResult) => {
+    saveOnboarding(r);
+    if (r.faecher.length > 0) setSelectedFach(r.faecher[0]);
+    setObOpen(false);
+    switchTab("reise");
   };
 
   // Global keys: Ctrl/⌘K palette · Ctrl/⌘E export · / search · Alt 1-7 tabs · L language · ? help.
@@ -277,6 +309,12 @@ export default function App() {
         run: toggleLang,
       },
       {
+        id: "act-onboarding",
+        group: lang === "de" ? "Aktionen" : "操作",
+        label: tr.obRedo,
+        run: () => setObOpen(true),
+      },
+      {
         id: "act-help",
         group: lang === "de" ? "Aktionen" : "操作",
         label: lang === "de" ? "Tastaturhilfe" : "快捷键帮助",
@@ -287,6 +325,22 @@ export default function App() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
     [nav, lang, vault]
   );
+
+  // Erststart: Vollbild-Assistent statt Modul-Chrome (L für Sprache gilt weiter).
+  if (obOpen) {
+    return (
+      <div className="h-screen overflow-y-auto bg-[#FAFAF7] text-[#1C1B17] antialiased">
+        <Onboarding
+          lang={lang}
+          vaultConnected={vault !== null}
+          vaultMsg={vaultMsg}
+          onOpenVault={() => void openVault()}
+          onFinish={finishOnboarding}
+        />
+        <FeedbackFloat lang={lang} />
+      </div>
+    );
+  }
 
   return (
     <div className="flex h-screen bg-[#FAFAF7] text-[#1C1B17] antialiased">

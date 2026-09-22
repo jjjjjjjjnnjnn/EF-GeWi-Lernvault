@@ -83,4 +83,37 @@ export const t = (lang: Lang) => ({
     lang === "de" ? "Klausur-Drill (5 Schritte)" : "模考大题 (五步长文)",
   vergleichDrill:
     lang === "de" ? "Vergleich & Unterscheidung" : "对比辨析 (二选一与并排)",
+
+  // Onboarding (Erststart-Assistent)
+  obTitle: lang === "de" ? "Willkommen im Lernstudio" : "欢迎来到学习工作室",
+  obSub:
+    lang === "de"
+      ? "Drei Schritte, dann lernst du mit deinen echten Notizen."
+      : "三步设置，然后用你自己的笔记开始学习。",
+  obStep1: lang === "de" ? "Vault verbinden" : "连接知识库",
+  obStep2: lang === "de" ? "Fächer wählen" : "选择学科",
+  obStep3: lang === "de" ? "Ziel setzen" : "设定目标",
+  obVaultText:
+    lang === "de"
+      ? "Wähle deinen Vault-Ordner (die Notizen bleiben lokal, nichts wird hochgeladen). Ohne Vault startest du im Demo-Modus."
+      : "选择你的知识库文件夹（笔记只留在本地，不上传）。跳过则进入演示模式。",
+  obVaultOpen: lang === "de" ? "Vault-Ordner wählen" : "选择知识库文件夹",
+  obVaultDemo: lang === "de" ? "Ohne Vault fortfahren (Demo)" : "跳过，用演示数据",
+  obFachText:
+    lang === "de"
+      ? "Womit beginnst du? Fertige Fächer sind voll nutzbar, der Rest wächst mit."
+      : "先学哪几科？备好的 fully 可用，其余在持续补充。",
+  obFachReady: lang === "de" ? "Bereit" : "已备好",
+  obFachActive: lang === "de" ? "Im Aufbau" : "建设中",
+  obFachSkeleton: lang === "de" ? "Gerüst" : "仅骨架",
+  obDateText:
+    lang === "de"
+      ? "Wann ist deine nächste Klausur? Der Lernplan zählt von dort rückwärts."
+      : "下次考试是哪天？学习规划从那天倒数。",
+  obDateLabel: lang === "de" ? "Klausurtermin" : "考试日期",
+  obBack: lang === "de" ? "Zurück" : "上一步",
+  obNext: lang === "de" ? "Weiter" : "下一步",
+  obFinish: lang === "de" ? "Los geht's" : "开始学习",
+  obSkip: lang === "de" ? "Überspringen" : "跳过",
+  obRedo: lang === "de" ? "Einrichtung erneut zeigen" : "重新显示引导",
 });
