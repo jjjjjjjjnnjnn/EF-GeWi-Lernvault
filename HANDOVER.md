@@ -5,7 +5,8 @@
 ## 新agent阅读顺序（5分钟接手）
 1. 本文件 → 2. `AGENTS.md`（规范） → 3. `00_META/INDEX.md`（导航） → 4. 目标学科 `Lehrplan.md` → 5. `00_META/Journal/` 最新一篇（当前上下文）。
 
-## 当前状态（2026-09-23晚·四轮维护已验）
+## 当前状态（2026-09-23晚·AI中后端重构已验）
+- ✅ AI中后端全阶重构（`[App] 32345b5`+本交接）：统一流式传输(SSE/WebLLM/AbortSignal) + 结构化评分防假阳性(parseKlausurEvaluation) + IndexedDB高维向量二级持久化 + Token动态预算(3000上限) + 本地LLM心跳存活探针(1234/11434毫秒级感知)；22单测套件151测试全绿 / build过 / 1420在线（Journal 2026-09-23-ai-backend-overhaul）。
 - ✅ 维护-4（`[App] c29b4d5`+本交接）：262文件干净三扫零泄漏；130单测/build/vault-check(38/203/123)/1420全过；AI-SETUP向量章节补齐（Journal 2026-09-23-wartung-4）。
 - ✅ E轮下载卡死修复（`[App] 0166f47`）：auto永不隐式下载+HF镜像+显式加载按钮+本地引擎重置；130单测/build/vault-check(38/203/123)/1420全过（Journal 2026-09-23-e-runde-download-fix）。
 - ✅ D轮Reise动态化（`[SoWi] 284b5b6`+`[App] 9e959ca`）：diagram独立块+LLM-SVG/自动讲解追问/提交即点评/写作评分改写循环（FelloFish式）；128单测/build/vault-check(38/203/121)/1420全过（Journal 2026-09-23-d-runde-reise-ki）。
