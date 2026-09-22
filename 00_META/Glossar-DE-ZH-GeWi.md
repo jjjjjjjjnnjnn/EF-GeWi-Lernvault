@@ -35,4 +35,11 @@ tags: [EF, Meta]
 | Integration/Assimilation | 融合/同化 | SoWi | √ |
 | Vergleichsdruck | 比较压力 | SoWi | √ |
 
+| Sozialisation | 社会化 | SoWi | √ |
+| Homo sociologicus | 社会人 | SoWi | √ |
+| Sanktion | 制裁 | SoWi | √ |
+| Rollenkonflikt | 角色冲突 | SoWi | √ |
+| Rollendistanz | 角色距离 | SoWi | √ |
+| Peer-Group | 同龄群体 | SoWi | √ |
+
 > 每科笔记的新术语同步回此表一行，保持唯一真相源。
