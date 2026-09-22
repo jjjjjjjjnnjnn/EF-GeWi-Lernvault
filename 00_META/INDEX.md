@@ -126,6 +126,7 @@
 - [2026-09-23-e-runde-download-fix](Journal/2026-09-23-e-runde-download-fix.md) — E轮：下载卡死修复（auto零隐式下载+HF镜像+显式加载，130单测）
 - [2026-09-23-wartung-4](Journal/2026-09-23-wartung-4.md) — 第四轮维护：三扫干净/130绿/AI-SETUP向量章节补齐
 - [2026-09-23-ai-backend-overhaul](Journal/2026-09-23-ai-backend-overhaul.md) — AI中后端全阶重构：流式传输+打分防误判+IDB向量持久化+Token预算+心跳探针（151单测全绿）
+- [2026-09-23-tutor-zero-latency-history](Journal/2026-09-23-tutor-zero-latency-history.md) — 助教极速无感回复+瞬时前导卡+多会话历史记录抽屉+思考强度调配（162单测全绿）
 - 约定：文件名 `YYYY-MM-DD-<thema>.md`，头部frontmatter（`fach`可空，`tags: [EF, Meta]`）。
 
 ## Dataview（Obsidian内自动索引，GitHub上仅作备份显示）
