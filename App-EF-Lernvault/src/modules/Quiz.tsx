@@ -23,6 +23,7 @@ interface RubricEvaluation {
   operatorVerfehlt: boolean;
   fachbegriffFalsch: boolean;
   belegFehlt: boolean;
+  vorgehenFalsch: boolean;
   feedbackDE: string;
   feedbackZH: string;
   citation: string;
@@ -69,6 +70,7 @@ export default function Quiz({ lang = "zh", vault = null, onJumpToLibrary }: Qui
       operatorVerfehlt: false,
       fachbegriffFalsch: false,
       belegFehlt: false,
+      vorgehenFalsch: false,
       feedbackDE: "Ausführliche Analyse mit Fachterminologie und Textbezug.",
       feedbackZH: "回答结构清晰，术语使用准确，有较明确的材料依据。",
       citation: currentQuiz.tasks[0]?.sourceRef || `${currentQuiz.notePath}#1`,
@@ -78,6 +80,7 @@ export default function Quiz({ lang = "zh", vault = null, onJumpToLibrary }: Qui
       operatorVerfehlt: false,
       fachbegriffFalsch: false,
       belegFehlt: false,
+      vorgehenFalsch: false,
       feedbackDE: "Ursachen und Wirkungskette nachvollziehbar dargestellt.",
       feedbackZH: "因果关系与机制推演完整。",
       citation: currentQuiz.tasks[1]?.sourceRef || `${currentQuiz.notePath}#2`,
@@ -87,6 +90,7 @@ export default function Quiz({ lang = "zh", vault = null, onJumpToLibrary }: Qui
       operatorVerfehlt: false,
       fachbegriffFalsch: false,
       belegFehlt: false,
+      vorgehenFalsch: false,
       feedbackDE: "Kriterienorientierte Abwägung mit begründetem Schlusssatz.",
       feedbackZH: "评价标准明确，给出了有力的论据支撑。",
       citation: currentQuiz.tasks[2]?.sourceRef || `${currentQuiz.notePath}#3`,
@@ -104,13 +108,42 @@ export default function Quiz({ lang = "zh", vault = null, onJumpToLibrary }: Qui
     return () => clearInterval(id);
   }, [timerRunning]);
 
-  // Space key timer trigger (Only when Quiz is active and user is not actively typing in an input/textarea)
+  // Keep answers/evaluations in sync when an extended quiz carries optional
+  // tasks 4/5 (discrimination/contrast); first-3 AFB behavior is untouched.
+  useEffect(() => {
+    setAnswers((prev) => {
+      if (prev.length === currentQuiz.tasks.length) return prev;
+      return currentQuiz.tasks.map((_, i) => prev[i] ?? "");
+    });
+    setEvaluations((prev) => {
+      if (prev.length === currentQuiz.tasks.length) return prev;
+      return currentQuiz.tasks.map(
+        (task, i) =>
+          prev[i] ?? {
+            operatorVerfehlt: false,
+            fachbegriffFalsch: false,
+            belegFehlt: false,
+            vorgehenFalsch: false,
+            feedbackDE: "Noch nicht bewertet.",
+            feedbackZH: "尚未批改。",
+            citation: task.sourceRef || `${currentQuiz.notePath}#${i + 1}`,
+            points: 12,
+          }
+      );
+    });
+  }, [currentQuiz]);
+
+  // Quiz module keys (see src/keys.ts QUIZ_SHORTCUTS): Space toggles timer,
+  // D/V jump to the Aufgabe view where discrimination/contrast tasks live.
+  // Guarded by isTyping() per INTERACTION-BRIEF §4.
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
       if (isTyping()) return;
       if (e.code === "Space") {
         e.preventDefault();
         setTimerRunning((r) => !r);
+      } else if (e.key === "d" || e.key === "D" || e.key === "v" || e.key === "V") {
+        setStep(2);
       }
     };
     window.addEventListener("keydown", onKey);
@@ -132,17 +165,18 @@ Material: ${currentQuiz.materialQuote}
 Notizpfad: ${currentQuiz.notePath}
 
 Aufgaben und Schülerantworten:
-1. ${currentQuiz.tasks[0].promptDE}
-Antwort: ${answers[0] || "(keine Antwort eingegeben)"}
-2. ${currentQuiz.tasks[1].promptDE}
-Antwort: ${answers[1] || "(keine Antwort eingegeben)"}
-3. ${currentQuiz.tasks[2].promptDE}
-Antwort: ${answers[2] || "(keine Antwort eingegeben)"}
+${currentQuiz.tasks
+  .map(
+    (t, i) => `${i + 1}. [${t.kind ?? "standard"}] ${t.promptDE}
+Antwort: ${answers[i] || "(keine Antwort eingegeben)"}`
+  )
+  .join("\n")}
 
 Prüfe für jede Teilaufgabe:
 - Operator verfehlt?
 - Fachbegriff falsch?
 - Beleg fehlt?
+- Vorgehen falsch? (falsches Verfahren / falscher Begriff gewählt oder Warum nicht begründet)
 Zitiere für jede Sachkritik exakt [${currentQuiz.notePath}#Zeile].
 Gib die Punkte (0-15) an.`;
 
@@ -172,16 +206,18 @@ Gib die Punkte (0-15) an.`;
       const opFail = /operator verfehlt/i.test(content);
       const termFail = /fachbegriff (falsch|fehlt)/i.test(content);
       const belegFail = /beleg fehlt/i.test(content);
+      const vorgehenFail = /vorgehen falsch/i.test(content);
 
       setEvaluations([
         {
           operatorVerfehlt: opFail,
           fachbegriffFalsch: termFail,
           belegFehlt: belegFail,
+          vorgehenFalsch: vorgehenFail,
           feedbackDE: content.slice(0, 300) || "Korrektur abgeschlossen.",
           feedbackZH: "模型批改已完成，详见德文建议与引用出处。",
           citation: `${currentQuiz.notePath}#1`,
-          points: opFail || termFail || belegFail ? 9 : 13,
+          points: opFail || termFail || belegFail || vorgehenFail ? 9 : 13,
         },
         ...evaluations.slice(1),
       ]);
@@ -217,6 +253,7 @@ Gib die Punkte (0-15) an.`;
         if (i !== taskIdx) return ev;
         if (criterion === "operator") return { ...ev, operatorVerfehlt: !ev.operatorVerfehlt };
         if (criterion === "fachbegriff") return { ...ev, fachbegriffFalsch: !ev.fachbegriffFalsch };
+        if (criterion === "vorgehen") return { ...ev, vorgehenFalsch: !ev.vorgehenFalsch };
         return { ...ev, belegFehlt: !ev.belegFehlt };
       })
     );
@@ -235,6 +272,7 @@ Gib die Punkte (0-15) an.`;
           if (e.operatorVerfehlt) fails.push(`Teil ${idx + 1}: Operator verfehlt`);
           if (e.fachbegriffFalsch) fails.push(`Teil ${idx + 1}: Fachbegriff unpräzise`);
           if (e.belegFehlt) fails.push(`Teil ${idx + 1}: Beleg fehlt`);
+          if (e.vorgehenFalsch) fails.push(`Teil ${idx + 1}: Vorgehen falsch`);
           return fails.join(", ");
         })
         .filter(Boolean)
@@ -252,8 +290,10 @@ Gib die Punkte (0-15) an.`;
     if (e.operatorVerfehlt) pts -= 3;
     if (e.fachbegriffFalsch) pts -= 2;
     if (e.belegFehlt) pts -= 2;
+    if (e.vorgehenFalsch) pts -= 2;
     return sum + Math.max(0, pts);
   }, 0);
+  const maxScore = currentQuiz.tasks.length * 15;
 
   const stepsList: { num: QuizStep; labelDE: string; labelZH: string }[] = [
     { num: 1, labelDE: "Thema", labelZH: "主题" },
@@ -391,7 +431,7 @@ Gib die Punkte (0-15) an.`;
               </h2>
             </div>
             <span className="font-mono text-[11px] text-[#4338CA] border border-[#4338CA]/30 px-2 py-0.5 rounded-sm">
-              3 Teilaufgaben · 45 Pkt.
+              {currentQuiz.tasks.length} Teilaufgaben · {maxScore} Pkt.
             </span>
           </div>
 
@@ -419,7 +459,7 @@ Gib die Punkte (0-15) an.`;
             </div>
             <div className="divide-y divide-[#E5E1D8] border border-[#E5E1D8] bg-white rounded-sm">
               {currentQuiz.tasks.map((task, idx) => (
-                <div key={task.operator} className="p-4 space-y-1.5">
+                <div key={`${task.operator}-${task.kind ?? "standard"}-${idx}`} className="p-4 space-y-1.5">
                   <div className="flex items-center justify-between">
                     <div className="flex items-center gap-2">
                       <span className="font-mono text-xs font-bold text-[#1C1B17]">
@@ -504,7 +544,7 @@ Gib die Punkte (0-15) an.`;
           {/* 3 Textareas for each part */}
           <div className="space-y-4">
             {currentQuiz.tasks.map((task, idx) => (
-              <div key={task.operator} className="space-y-1.5">
+              <div key={`${task.operator}-${task.kind ?? "standard"}-${idx}`} className="space-y-1.5">
                 <div className="flex items-center justify-between text-xs">
                   <div className="flex items-center gap-2">
                     <span className="font-mono font-bold text-[#1C1B17]">Teil {idx + 1}:</span>
@@ -518,7 +558,7 @@ Gib die Punkte (0-15) an.`;
                 <p className="font-serif text-xs text-[#6B675C]">{task.promptDE}</p>
                 <textarea
                   rows={4}
-                  value={answers[idx]}
+                  value={answers[idx] ?? ""}
                   onChange={(e) => {
                     const val = e.target.value;
                     setAnswers((prev) => prev.map((a, i) => (i === idx ? val : a)));
@@ -585,9 +625,9 @@ Gib die Punkte (0-15) an.`;
                 Gesamturteil / 总体成绩
               </div>
               <div className="font-serif text-2xl font-normal text-[#1C1B17] mt-0.5">
-                {totalScore} / 45 Punkte{" "}
+                {totalScore} / {maxScore} Punkte{" "}
                 <span className="font-mono text-xs text-[#6B675C]">
-                  ({Math.round((totalScore / 45) * 100)}%)
+                  ({Math.round((totalScore / maxScore) * 100)}%)
                 </span>
               </div>
             </div>
@@ -601,9 +641,10 @@ Gib die Punkte (0-15) an.`;
           <div className="space-y-4">
             {currentQuiz.tasks.map((task, idx) => {
               const ev = evaluations[idx];
+              if (!ev) return null;
               return (
                 <div
-                  key={task.operator}
+                  key={`${task.operator}-${task.kind ?? "standard"}-${idx}`}
                   className="border border-[#E5E1D8] bg-white p-4 rounded-sm space-y-3"
                 >
                   <div className="flex items-center justify-between">
@@ -627,7 +668,7 @@ Gib die Punkte (0-15) an.`;
                     </button>
                   </div>
 
-                  {/* 3 Rubric Pills: Operator verfehlt | Fachbegriff falsch | Beleg fehlt */}
+                  {/* 4 Rubric Pills: Operator verfehlt | Fachbegriff falsch | Beleg fehlt | Vorgehen falsch */}
                   <div className="flex flex-wrap gap-2">
                     {RUBRIC_CRITERIA.map((criterion) => {
                       const isHit =
@@ -635,6 +676,8 @@ Gib die Punkte (0-15) an.`;
                           ? ev.operatorVerfehlt
                           : criterion.id === "fachbegriff"
                           ? ev.fachbegriffFalsch
+                          : criterion.id === "vorgehen"
+                          ? ev.vorgehenFalsch
                           : ev.belegFehlt;
                       return (
                         <button
@@ -733,13 +776,14 @@ Gib die Punkte (0-15) an.`;
     evaluations
       .map((e, idx) => {
         const fails = [];
-        if (e.operatorVerfehlt) fails.push(`Teil ${idx + 1}: Operator verfehlt`);
-        if (e.fachbegriffFalsch) fails.push(`Teil ${idx + 1}: Fachbegriff unpräzise`);
-        if (e.belegFehlt) fails.push(`Teil ${idx + 1}: Beleg fehlt`);
-        return fails.join(", ");
-      })
-      .filter(Boolean)
-      .join("; ") || "Keine gravierenden Mängel"
+          if (e.operatorVerfehlt) fails.push(`Teil ${idx + 1}: Operator verfehlt`);
+          if (e.fachbegriffFalsch) fails.push(`Teil ${idx + 1}: Fachbegriff unpräzise`);
+          if (e.belegFehlt) fails.push(`Teil ${idx + 1}: Beleg fehlt`);
+          if (e.vorgehenFalsch) fails.push(`Teil ${idx + 1}: Vorgehen falsch`);
+          return fails.join(", ");
+        })
+        .filter(Boolean)
+        .join("; ") || "Keine gravierenden Mängel"
   }
 +   - Belegstelle: ${currentQuiz.notePath}
 `}
@@ -760,7 +804,7 @@ Gib die Punkte (0-15) an.`;
                 setStep(1);
                 setSec(0);
                 setTimerRunning(false);
-                setAnswers(["", "", ""]);
+                setAnswers(currentQuiz.tasks.map(() => ""));
               }}
               className="rounded-sm border border-[#E5E1D8] bg-white px-4 py-2 text-xs font-sans text-[#1C1B17] hover:border-[#4338CA] hover:text-[#4338CA] transition-all"
             >

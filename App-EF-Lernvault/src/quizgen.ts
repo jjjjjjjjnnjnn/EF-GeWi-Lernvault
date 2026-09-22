@@ -1,6 +1,6 @@
 import type { VaultNote, Block } from "./vault/parser";
 
-export type RubricCriterion = "operator" | "fachbegriff" | "beleg";
+export type RubricCriterion = "operator" | "fachbegriff" | "beleg" | "vorgehen";
 
 export interface RubricItem {
   id: RubricCriterion;
@@ -32,16 +32,27 @@ export const RUBRIC_CRITERIA: RubricItem[] = [
     descriptionDE: "Behauptungen ohne direkte Zitate oder Verweise auf das Material formuliert.",
     descriptionZH: "断言缺少对材料文本或数据的具体行号/段落引用。",
   },
+  {
+    id: "vorgehen",
+    name: "Vorgehen falsch",
+    labelZH: "程序选择错误",
+    descriptionDE:
+      "Lösungsverfahren bzw. Begriffswahl falsch oder das Warum nicht begründet (Prozessdimension, gleichgewichtet mit Ergebnis: je −2, Operator −3).",
+    descriptionZH: "解题程序/概念选错，或未论证“为什么用它”（过程维，与结果项等权重：各 −2，动词偏离 −3）。",
+  },
 ];
+
+export type QuizTaskKind = "standard" | "discrimination" | "contrast";
 
 export interface QuizTask {
   operator: "darstellen" | "analysieren" | "beurteilen";
   afb: "AFB I" | "AFB II" | "AFB III";
+  kind?: QuizTaskKind; // default "standard" (AFB triple); v3 optional tasks use discrimination/contrast
   leadDE: string;
   leadZH: string;
   promptDE: string;
   promptZH: string;
-  sourceRef: string;
+  sourceRef: string; // Pflicht (Zitierpflicht): discrimination/contrast builders throw on empty
 }
 
 export interface GeneratedQuiz {
@@ -142,6 +153,81 @@ export function generateQuizFromNote(note: VaultNote): GeneratedQuiz {
     materialQuote,
     tasks,
   };
+}
+
+export function buildDiscriminationTask(
+  thema: string,
+  optionA: string,
+  optionB: string,
+  sourceRef: string
+): QuizTask {
+  if (!sourceRef || !sourceRef.trim()) {
+    throw new Error("discrimination task requires non-empty sourceRef (Zitierpflicht).");
+  }
+  return {
+    operator: "analysieren",
+    afb: "AFB II",
+    kind: "discrimination",
+    leadDE: "Welches Verfahren passt — und warum?",
+    leadZH: "这题用哪个程序/概念，为什么？",
+    promptDE: `Gegeben zwei leicht verwechselbare Verfahren/Begriffe („${optionA}“ vs. „${optionB}“): Entscheiden Sie begründet, welches auf „${thema}“ anzuwenden ist, und legen Sie das Warum mit Fachbegriffen und einem Materialbeleg dar.`,
+    promptZH: `给出两个易混程序/概念（“${optionA}” vs “${optionB}”）：判断“${thema}”本题该用哪一个并说明为什么，须用学科术语+材料依据论证。`,
+    sourceRef,
+  };
+}
+
+export function buildContrastTask(
+  thema: string,
+  loesungA: string,
+  loesungB: string,
+  sourceRef: string
+): QuizTask {
+  if (!sourceRef || !sourceRef.trim()) {
+    throw new Error("contrast task requires non-empty sourceRef (Zitierpflicht).");
+  }
+  return {
+    operator: "beurteilen",
+    afb: "AFB III",
+    kind: "contrast",
+    leadDE: "Zwei Lösungen vergleichen: Unterschiede, Stärken, Schwächen",
+    leadZH: "AB两解对比：差异与优劣",
+    promptDE: `Vergleichen Sie die Lösungswege A („${loesungA}“) und B („${loesungB}“) zu „${thema}“ (vgl. ${sourceRef}): Arbeiten Sie Unterschiede heraus und beurteilen Sie kriteriengeleitet Stärken und Schwächen beider Wege mit Materialbeleg.`,
+    promptZH: `对比关于“${thema}”的A解（“${loesungA}”）与B解（“${loesungB}”）（见${sourceRef}）：指出差异，并基于明确标准评判两解优劣，须附材料依据。`,
+    sourceRef,
+  };
+}
+
+export interface ExtendedQuizOptions {
+  discrimination?: { optionA: string; optionB: string };
+  contrast?: { loesungA: string; loesungB: string };
+}
+
+// AFB triple stays tasks[0..2]; v3 types append as optional tasks[3..4] only.
+export function generateExtendedQuiz(note: VaultNote, opts?: ExtendedQuizOptions): GeneratedQuiz {
+  const base = generateQuizFromNote(note);
+  const notePath = base.notePath;
+  const extra: QuizTask[] = [];
+  if (opts?.discrimination) {
+    extra.push(
+      buildDiscriminationTask(
+        base.thema,
+        opts.discrimination.optionA,
+        opts.discrimination.optionB,
+        `${notePath}#4`
+      )
+    );
+  }
+  if (opts?.contrast) {
+    extra.push(
+      buildContrastTask(
+        base.thema,
+        opts.contrast.loesungA,
+        opts.contrast.loesungB,
+        `${notePath}#${extra.length + 4}`
+      )
+    );
+  }
+  return { ...base, tasks: [...base.tasks, ...extra] };
 }
 
 export function getAvailableThemen(notes: VaultNote[] | null): { thema: string; fach: string; note: VaultNote }[] {

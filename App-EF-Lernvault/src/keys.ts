@@ -28,6 +28,8 @@ export const CARD_SHORTCUTS: Shortcut[] = [
 
 export const QUIZ_SHORTCUTS: Shortcut[] = [
   { keys: "Space", de: "Timer starten / stoppen", zh: "计时开始/停止" },
+  { keys: "D", de: "Diskriminationsaufgabe (Verfahren wählen + begründen)", zh: "辨别题（选程序+说理）" },
+  { keys: "V", de: "Kontrastaufgabe (Lösungen A/B vergleichen)", zh: "对比题（AB两解对比）" },
 ];
 
 export const LIBRARY_SHORTCUTS: Shortcut[] = [
