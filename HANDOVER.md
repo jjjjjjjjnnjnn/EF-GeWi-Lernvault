@@ -5,7 +5,9 @@
 ## 新agent阅读顺序（5分钟接手）
 1. 本文件 → 2. `AGENTS.md`（规范） → 3. `00_META/INDEX.md`（导航） → 4. 目标学科 `Lehrplan.md` → 5. `00_META/Journal/` 最新一篇（当前上下文）。
 
-## 当前状态（2026-09-22晚）
+## 当前状态（2026-09-23早）
+- ✅ 老师资料R1–R3（三agent并行，一科一commit）：SoWi富化Kap.4/Kap.6/Karikatur（Unterrichts-Anker+自制Lückentext，csv+2）/ Deutsch新笔记Lyrik-Sturm-Drang-Goethe（AB1四步+6 Mittel+Deutungshypothese-Lückentext，csv+8）/ Englisch新笔记Role-Models-Analysis（Teil A三任务链+P.E.E.+Comment句型，csv+10）；原件全进`_Downloads/<Fach>/lehrer-2026-09/`+quelle（gitignored），vault零原文复制；名单/Codes截图永不入库。vault-check PASS（notes=32 csv=175）。
+- ✅ 归属纠正：`2_Werkzeugkasten`实为SoWi Buchner S.148–153（WkV1–WkV5，无文本层，内容未进笔记）；`Fragen über Fragen`+09-21扫描归Philo（已归档，笔记待R4）；`Sprachdetektive`连字符改名已注quelle。
 - ✅ SoWi收官12/12：Ungleichheit独立篇 + Kap.1–11（csv 155行，INDEX 94链全有效，vault-check PASS）。
 - ✅ Philo-L2试点：`Lernreise/Philo-Utilitarismus-Kant-L2.md` 9步（德语Satz 11句）+ csv/Glossar/Fehlerlog三同步——v3模板跨科成立。
 - ✅ App Vergleich真管线：`getVergleichItems`从vault笔记生成（空才回MOCK），双RUBRIC统一四维；V4技术债清零，build过。
@@ -35,7 +37,7 @@
 ## 待办（按优先级）
 1. 用户侧验证：Sowi-L1走完Schritt 2→8（跳转修复后）+ 右下角浮窗写一条反馈贴回；Philo-L2试读反馈（顺则开Philo正式课）。
 2. Klett映射收尾：Transition目录页核对单元→Bereich对照（工作假设待实证）→ 开听力Stufe 1。
-3. 用户贴：Deutsch Lektüre + Englisch Topic/Teil-B类型 + 课堂笔记 → 开下一科（写→三同步→vault-check→一科一commit）。
+3. 用户贴：Drama-Ganzschrift名（Deutsch）+ Englisch Teil B类型/Klausurtermin（问老师）+ 课堂笔记 → 开下一科R4–R8（Philo/Musik/Mathe/Physik/Bio；写→三同步→vault-check→一科一commit）。
 4. 近3年真题Login墙（找老师要Zugangsdaten）+ Stark纸书 + P5发版（最后）。
 5. 小尾巴：Methoden-Quellen C2行DOI待核；taylor-rohrer-2010/wittwer-renkl待图书馆渠道。
 
