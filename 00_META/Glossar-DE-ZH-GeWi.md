@@ -135,3 +135,7 @@ tags: [EF, Meta]
 | Abspaltung | 动机碎片化 | Musik | Bei der Abspaltung wird nur der Motivkopf wiederholt. |
 | Fermate | 延长记号 | Musik | Die Fermate hält den Puls an und dehnt die Zeit. |
 | Artikulation | 演奏法 | Musik | Legato bindet, Staccato trennt die Töne. |
+| Steigung | 斜率 | Mathe | m in f(x) = mx + b gibt die Steigung an. |
+| y-Achsenabschnitt | y轴截距 | Mathe | b = f(0) ist der y-Achsenabschnitt. |
+| Scheitelpunkt | 顶点 | Mathe | S(d|e) ist der Scheitelpunkt der Parabel. |
+| Zwei-Punkte-Formel | 两点式 | Mathe | m = (y2-y1)/(x2-x1) aus zwei Punkten. |
