@@ -41,6 +41,7 @@ scripts/ebook-fetch/klett-fetch.lock
 scripts/ebook-fetch/*auth*.json
 scripts/ebook-fetch/klett-inventory.json
 scripts/ebook-fetch/klett-media-urls.txt
+scripts/ebook-fetch/klett-fetch.log
 scripts/fetch-material.log
 scripts/ebook-fetch/__pycache__/
 
