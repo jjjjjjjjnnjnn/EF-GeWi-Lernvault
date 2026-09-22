@@ -42,4 +42,11 @@ tags: [EF, Meta]
 | Rollendistanz | 角色距离 | SoWi | √ |
 | Peer-Group | 同龄群体 | SoWi | √ |
 
+| Menschenwürde | 人的尊严 | SoWi | √ |
+| Ewigkeitsklausel | 永恒条款 | SoWi | √ |
+| Verfassungsprinzipien | 宪法原则 | SoWi | √ |
+| Grundrechtskollision | 基本权利冲突 | SoWi | √ |
+| Drittwirkung | 第三方效力 | SoWi | √ |
+| praktische Konkordanz | 实践调和 | SoWi | √ |
+
 > 每科笔记的新术语同步回此表一行，保持唯一真相源。
