@@ -56,4 +56,11 @@ tags: [EF, Meta]
 | Fraktionsdisziplin | 党团纪律 | SoWi | √ |
 | Politikzyklus | 政策周期 | SoWi | √ |
 
+| Willensbildung | 意志形成 | SoWi | √ |
+| Volkspartei | 人民党 | SoWi | √ |
+| Sperrklausel | 门槛条款 | SoWi | √ |
+| Parteienverdrossenheit | 厌党情绪 | SoWi | √ |
+| Transmissionsriemen | 传动带 | SoWi | √ |
+| vierte Gewalt | 第四权 | SoWi | √ |
+
 > 每科笔记的新术语同步回此表一行，保持唯一真相源。
