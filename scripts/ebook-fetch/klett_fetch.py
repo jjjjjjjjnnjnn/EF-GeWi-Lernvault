@@ -11,10 +11,48 @@ HERE = Path(__file__).parent
 BASE = "https://bridge.klett.de/MSA-PH1QJUSMBT"
 OUT = (HERE / "../../_Downloads/Englisch/klett-bridge").resolve()
 TODAY = time.strftime("%Y-%m-%d")
+
+
+def single_instance():
+    import os
+    lock = HERE / "klett-fetch.lock"
+    for _ in range(5):
+        try:
+            with open(lock, "x", encoding="utf-8") as f:
+                f.write(str(os.getpid()))
+            return lock
+        except FileExistsError:
+            pass
+        try:
+            pid = int(lock.read_text(encoding="utf-8").strip())
+            os.kill(pid, 0)
+            return None  # live holder -> exit
+        except Exception:
+            pass
+        try:
+            lock.unlink()  # stale lock
+        except Exception:
+            pass
+        time.sleep(1)
+    return None
 OK_HEAD = (b"%PDF-", b"ID3", b"\xff\xfb", b"OggS", b"RIFF", b"\x00\x00\x00", b"ftyp", b"moov", b"mdat")
 
 
 async def main():
+    lock = single_instance()
+    if lock is None:
+        print("another klett_fetch instance runs, exit")
+        return
+    try:
+        await _run()
+    finally:
+        try:
+            lock.unlink()
+        except Exception:
+            pass
+
+
+async def _run():
     inv = json.loads((HERE / "klett-inventory.json").read_text(encoding="utf-8"))
     man_path = OUT / "manifest.json"
     done = set(json.loads(man_path.read_text(encoding="utf-8"))["done"]) if man_path.exists() else set()

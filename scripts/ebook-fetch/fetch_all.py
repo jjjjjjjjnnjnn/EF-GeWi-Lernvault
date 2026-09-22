@@ -28,15 +28,25 @@ def log(msg):
 
 def single_instance(here):
     lock = here / "fetch.lock"
-    if lock.exists():
+    for _ in range(5):
+        try:
+            with open(lock, "x", encoding="utf-8") as f:
+                f.write(str(os.getpid()))
+            return lock
+        except FileExistsError:
+            pass
         try:
             pid = int(lock.read_text(encoding="utf-8").strip())
             os.kill(pid, 0)  # alive -> another instance runs
             return None
         except Exception:
-            pass  # stale lock
-    lock.write_text(str(os.getpid()), encoding="utf-8")
-    return lock
+            pass
+        try:
+            lock.unlink()  # stale lock
+        except Exception:
+            pass
+        time.sleep(1)
+    return None
 
 async def main():
     here = Path(__file__).parent

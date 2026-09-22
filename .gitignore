@@ -37,6 +37,7 @@ scripts/ebook-fetch/probe*.png
 scripts/ebook-fetch/test_*.jpg
 scripts/ebook-fetch/fetch.log
 scripts/ebook-fetch/fetch.lock
+scripts/ebook-fetch/klett-fetch.lock
 scripts/ebook-fetch/*auth*.json
 scripts/ebook-fetch/klett-inventory.json
 scripts/ebook-fetch/klett-media-urls.txt
