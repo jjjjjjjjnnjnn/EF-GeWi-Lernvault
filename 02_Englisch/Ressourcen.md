@@ -2,6 +2,9 @@
 
 - BBC Learning English: https://www.bbc.co.uk/learningenglish
 - NRW课标：https://lehrplannavigator.nrw.de/ (搜 Englisch Sek II)
+- MSB Handreichung Hörverstehen + Mediation (frei): https://www.standardsicherung.schulministerium.nrw.de/system/files/media/document/file/ergaenzende_handreichung_hoerverstehen_und_mediation_im_fach_englisch.pdf
+- BR Düsseldorf EF-Bewertungsraster A/B/C + Hörverstehen-Leerdatei (frei): https://www.brd.nrw.de/Themen/Schule-Bildung/Lerntreffs/Englisch/Empfehlungen-und-fachliche-Unterstuetzungsmaterialien
+- Beispielaufgaben Hörverstehen (frei, mit Hördatei): https://www.standardsicherung.schulministerium.nrw.de/zentralabitur-gost/weitere-dokumente/beispielaufgaben-englisch-aufgabenformat-hoerverstehen
 
 ## 官方考试文件（本地 `_Downloads/Englisch/`，Amtliches Werk）
 

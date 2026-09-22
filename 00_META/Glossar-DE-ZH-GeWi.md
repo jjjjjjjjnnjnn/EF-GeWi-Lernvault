@@ -161,3 +161,6 @@ tags: [EF, Meta]
 | Peripetie | 转折点 | Deutsch | Die Peripetie wendet die Handlung. |
 | Figurenkonstellation | 人物关系结构 | Deutsch | Buendnisse und Gegensaetze sichtbar machen. |
 | Subtext | 潜台词 | Deutsch | Der Subtext verraet mehr als das Gesagte. |
+| gist | 大意 | Englisch | First listen for the gist. |
+| mediation | 转述调解 | Englisch | Mediation reshapes content into a target format. |
+| target format | 目标文本格式 | Englisch | Keep the required target format in mind. |

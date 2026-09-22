@@ -58,6 +58,7 @@
 
 ### Englisch
 - Role Models — [Role-Models-Analysis](../02_Englisch/Texte-Analyse/Role-Models-Analysis.md)（Teil A三任务链/Summary自查/P.E.E./Comment句型）
+- Teil B Doppelpack — [Klausur-Teil-B-Doppelpack](../02_Englisch/Texte-Analyse/Klausur-Teil-B-Doppelpack.md)（Hörverstehen四题型+Mediation三段式，待老师定考轨）
 
 ### Musik (mündlich)
 - Motiv und motivische Arbeit (Beethoven 5) — [Beethoven-Motiv-Hoeren](../09_Musik-mündl/Texte-Analyse/Beethoven-Motiv-Hoeren.md)（Motiv三要素/Verarbeitung表/Takt 1-20/Hör-Bausteine）
