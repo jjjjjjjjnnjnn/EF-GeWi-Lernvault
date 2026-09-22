@@ -6,12 +6,12 @@ import type { VaultNote, VaultCard } from "../vault/parser";
 import { chat } from "../ai/engine";
 import { isInterleaveOn, orderMixed, setInterleave } from "../engine/interleave";
 import { prioritizeThema } from "../scheduler";
+import { KORREKTOR_SYSTEM } from "../engine/rag";
 import {
-  buildKlausurPrompt,
-  buildVergleichPrompt,
-  KORREKTOR_SYSTEM,
-  parseRubricFlags,
-} from "../engine/rag";
+  parseKlausurEvaluation,
+  buildKlausurJsonPrompt,
+  buildVergleichJsonPrompt,
+} from "../ai/schema";
 import {
   generateQuizFromNote,
   getAvailableThemen,
@@ -157,7 +157,7 @@ export default function Quiz({ lang = "zh", vault = null, cards = null, onJumpTo
     setLmDegraded(false);
 
     try {
-      const prompt = buildKlausurPrompt(
+      const prompt = buildKlausurJsonPrompt(
         currentQuiz.thema,
         currentQuiz.materialQuote,
         currentQuiz.notePath,
@@ -176,19 +176,18 @@ export default function Quiz({ lang = "zh", vault = null, cards = null, onJumpTo
         { temperature: 0.2, maxTokens: 800 }
       );
 
-      const { operatorVerfehlt: opFail, fachbegriffFalsch: termFail, belegFehlt: belegFail, vorgehenFalsch: vorgehenFail } =
-        parseRubricFlags(content);
+      const parsed = parseKlausurEvaluation(content, `${currentQuiz.notePath}#1`);
 
       setEvaluations([
         {
-          operatorVerfehlt: opFail,
-          fachbegriffFalsch: termFail,
-          belegFehlt: belegFail,
-          vorgehenFalsch: vorgehenFail,
-          feedbackDE: content.slice(0, 300) || "Korrektur abgeschlossen.",
-          feedbackZH: "模型批改已完成，详见德文建议与引用出处。",
-          citation: `${currentQuiz.notePath}#1`,
-          points: opFail || termFail || belegFail || vorgehenFail ? 9 : 13,
+          operatorVerfehlt: parsed.operatorVerfehlt,
+          fachbegriffFalsch: parsed.fachbegriffFalsch,
+          belegFehlt: parsed.belegFehlt,
+          vorgehenFalsch: parsed.vorgehenFalsch,
+          feedbackDE: parsed.feedbackDE,
+          feedbackZH: parsed.feedbackZH,
+          citation: parsed.citation,
+          points: parsed.points,
         },
         ...evaluations.slice(1),
       ]);
@@ -397,7 +396,7 @@ export default function Quiz({ lang = "zh", vault = null, cards = null, onJumpTo
     const begruendung = warumText.trim();
     setVLmDegraded(false);
     try {
-      const prompt = buildVergleichPrompt(
+      const prompt = buildVergleichJsonPrompt(
         currentVergleich.fach,
         currentVergleich.thema,
         selectedOption,
@@ -415,7 +414,13 @@ export default function Quiz({ lang = "zh", vault = null, cards = null, onJumpTo
         ],
         { temperature: 0.2, maxTokens: 400 }
       );
-      setVergleichEval(parseRubricFlags(content));
+      const parsed = parseKlausurEvaluation(content, currentVergleich.sourceRef);
+      setVergleichEval({
+        operatorVerfehlt: parsed.operatorVerfehlt,
+        fachbegriffFalsch: parsed.fachbegriffFalsch,
+        belegFehlt: parsed.belegFehlt,
+        vorgehenFalsch: parsed.vorgehenFalsch,
+      });
     } catch {
       setVLmDegraded(true);
       setVergleichEval({

@@ -5,6 +5,7 @@
 import { effectiveBaseUrl, getProvider, loadAiConfig } from "../ai/providers";
 import { NeedsKeyError } from "../ai/engine";
 import { retrieveL0, type TextChunk } from "./rag";
+import { idbGetManyVectors, idbSetManyVectors, idbClearVectors } from "../storage/idb";
 
 export type VectorLevel = "L2" | "L1" | "L0";
 
@@ -192,28 +193,49 @@ const vecCache = new Map<string, { h: number; v: number[] }>();
 
 export function clearVecCache(): void {
   vecCache.clear();
+  idbClearVectors().catch(() => {});
 }
 
 async function vecsFor(
   chunks: TextChunk[],
   embedFn: (texts: string[]) => Promise<number[][]>
 ): Promise<Map<string, number[]>> {
-  const missing: TextChunk[] = [];
+  const missingFromMem: TextChunk[] = [];
   const out = new Map<string, number[]>();
   for (const c of chunks) {
     const hit = vecCache.get(c.id);
     if (hit && hit.h === hashText(c.text)) {
       out.set(c.id, hit.v);
     } else {
-      missing.push(c);
+      missingFromMem.push(c);
     }
   }
-  if (missing.length > 0) {
-    const vecs = await embedFn(missing.map((c) => c.text));
-    missing.forEach((c, i) => {
-      vecCache.set(c.id, { h: hashText(c.text), v: vecs[i] });
+
+  const missingFromIdb: TextChunk[] = [];
+  if (missingFromMem.length > 0) {
+    const idbHits = await idbGetManyVectors(missingFromMem.map((c) => c.id));
+    for (const c of missingFromMem) {
+      const hit = idbHits.get(c.id);
+      if (hit && hit.h === hashText(c.text)) {
+        vecCache.set(c.id, hit);
+        out.set(c.id, hit.v);
+      } else {
+        missingFromIdb.push(c);
+      }
+    }
+  }
+
+  if (missingFromIdb.length > 0) {
+    const vecs = await embedFn(missingFromIdb.map((c) => c.text));
+    const toPersist: { id: string; h: number; v: number[] }[] = [];
+    missingFromIdb.forEach((c, i) => {
+      const entry = { h: hashText(c.text), v: vecs[i] };
+      vecCache.set(c.id, entry);
       out.set(c.id, vecs[i]);
+      toPersist.push({ id: c.id, ...entry });
     });
+    // Asynchrone persistente Speicherung in IndexedDB
+    idbSetManyVectors(toPersist).catch(() => {});
   }
   return out;
 }

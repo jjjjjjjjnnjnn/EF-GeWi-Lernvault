@@ -3,12 +3,12 @@ import { t, type Lang } from "../i18n";
 import type { VaultNote } from "../vault/parser";
 import AiSettings from "../components/AiSettings";
 import {
-  chat,
   describeActiveEngine,
   EngineOffError,
   NeedsKeyError,
   type ChatMsg,
 } from "../ai/engine";
+import { chatStream } from "../ai/streamClient";
 import {
   buildTutorSystem,
   chunkNotes,
@@ -16,6 +16,7 @@ import {
   verifySupport,
 } from "../engine/rag";
 import { retrieveHybrid, chunkVectors, claimVectors, verifySemantic } from "../engine/embed";
+import { budgetContext } from "../engine/context";
 
 interface Message {
   id: string;
@@ -54,6 +55,13 @@ export default function Tutor({
   const [localPct, setLocalPct] = useState<number | null>(null);
   const [engineTag, setEngineTag] = useState(() => describeActiveEngine());
   const scrollRef = useRef<HTMLDivElement>(null);
+  const abortRef = useRef<AbortController | null>(null);
+
+  useEffect(() => {
+    return () => {
+      abortRef.current?.abort();
+    };
+  }, []);
 
   useEffect(() => {
     scrollRef.current?.scrollTo({
@@ -83,30 +91,58 @@ export default function Tutor({
     setIsThinking(true);
     setErrorMsg(null);
 
+    if (abortRef.current) {
+      abortRef.current.abort();
+    }
+    const controller = new AbortController();
+    abortRef.current = controller;
+
     // RAG-hybrid: L2 (embedModel) -> L1 (nur bereit/erlaubt, nie still laden) -> L0.
     // stille downgrades; L1-download mit fortschritt (lokal-%-anzeige).
     const { chunks, level } = await retrieveHybrid(chunkNotes(vaultNotes || []), q, 8, {
       onProgress: (p) => setLocalPct(p),
     });
 
+    const botId = `ki-${Date.now()}`;
+
     try {
+      const rawHistory: ChatMsg[] = messages
+        .filter((m) => !m.isError)
+        .map((m) => ({
+          role: (m.role === "ki" ? "assistant" : "user") as "assistant" | "user",
+          content: m.text,
+        }));
+
+      const budgeted = budgetContext(chunks, rawHistory, {
+        maxContextTokens: 3000,
+        generationReserve: 700,
+        systemReserve: 400,
+      });
+
       const history: ChatMsg[] = [
         {
           role: "system",
-          content: buildTutorSystem(chunks),
+          content: buildTutorSystem(budgeted.fittedChunks),
         },
-        ...messages
-          .filter((m) => !m.isError)
-          .map((m) => ({
-            role: (m.role === "ki" ? "assistant" : "user") as "assistant" | "user",
-            content: m.text,
-          })),
+        ...budgeted.fittedHistory,
         { role: "user", content: q },
       ];
-      const reply = await chat(history, {
+
+      const reply = await chatStream(history, {
         temperature: 0.3,
         maxTokens: 600,
+        signal: controller.signal,
         onLocalProgress: (p) => setLocalPct(p),
+        onChunk: (chunk) => {
+          setIsThinking(false);
+          setMessages((prev) => {
+            const exists = prev.some((m) => m.id === botId);
+            if (!exists) {
+              return [...prev, { id: botId, role: "ki", text: chunk.accumulated }];
+            }
+            return prev.map((m) => (m.id === botId ? { ...m, text: chunk.accumulated } : m));
+          });
+        },
       });
 
       // Support-verifier (string-stufe): fremde [pfad#zeile] -> unsicher-markierung
@@ -129,13 +165,22 @@ export default function Tutor({
         }
       }
 
-      setMessages((prev) => [
-        ...prev,
-        { id: `ki-${Date.now()}`, role: "ki", text: checkedReply },
-      ]);
+      setMessages((prev) => {
+        const exists = prev.some((m) => m.id === botId);
+        if (!exists) {
+          return [...prev, { id: botId, role: "ki", text: checkedReply }];
+        }
+        return prev.map((m) => (m.id === botId ? { ...m, text: checkedReply } : m));
+      });
       setIsDegraded(false);
       setEngineTag(`${describeActiveEngine()} · RAG-${level}`);
     } catch (err) {
+      if (err instanceof DOMException && err.name === "AbortError") {
+        return;
+      }
+      // Leere KI-Nachricht verwerfen falls Fehler vor Tokengenerierung auftrat
+      setMessages((prev) => prev.filter((m) => m.id !== botId || m.text.length > 0));
+
       // Engine aus / Key fehlt / Anbieter down -> Vorlagen-Modus (wie bisher)
       if (err instanceof NeedsKeyError) {
         setErrorMsg(tr.aiNeedKey);

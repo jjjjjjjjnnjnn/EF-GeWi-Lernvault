@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { t, type Lang } from "../i18n";
 import {
   PROVIDERS,
@@ -10,6 +10,12 @@ import {
   type AiEngine,
 } from "../ai/providers";
 import { isWebGpuAvailable, localModelName, resetLocalEngine } from "../ai/engine";
+import {
+  probeAiConnection,
+  subscribeHeartbeat,
+  getLastProbe,
+  type ProbeResult,
+} from "../ai/heartbeat";
 import {
   ensureLocalEmbedder,
   isLocalEmbedderReady,
@@ -30,6 +36,13 @@ export default function AiSettings({
   const [showKey, setShowKey] = useState(false);
   const [vecPct, setVecPct] = useState<number | null>(null);
   const [vecReady, setVecReady] = useState(() => isLocalEmbedderReady());
+  const [probe, setProbe] = useState<ProbeResult>(() => getLastProbe());
+
+  useEffect(() => {
+    const unsub = subscribeHeartbeat(setProbe);
+    probeAiConnection();
+    return unsub;
+  }, [cfg.engine, cfg.providerId, cfg.baseUrl, cfg.apiKey]);
 
   const update = (patch: Partial<AiConfig>) => {
     const next = { ...cfg, ...patch };
@@ -70,6 +83,39 @@ export default function AiSettings({
             </button>
           ))}
         </div>
+        {/* Heartbeat Status */}
+        {cfg.engine !== "off" && (
+          <div className="flex items-center gap-1.5 ml-1">
+            {probe.status === "online" && (
+              <span className="inline-flex items-center gap-1.5 px-2 py-0.5 rounded text-[11px] font-mono bg-[#EBF5EE] text-[#2E7D32] border border-[#C8E6C9]">
+                <span className="w-1.5 h-1.5 rounded-full bg-[#2E7D32]"></span>
+                {probe.latencyMs}ms · Online
+              </span>
+            )}
+            {probe.status === "offline" && (
+              <span
+                className="inline-flex items-center gap-1.5 px-2 py-0.5 rounded text-[11px] font-mono bg-[#FDEDEC] text-[#C62828] border border-[#FFCDD2]"
+                title={probe.error || "Offline"}
+              >
+                <span className="w-1.5 h-1.5 rounded-full bg-[#C62828]"></span>
+                {lang === "de" ? "Nicht erreichbar" : "不可达"}
+              </span>
+            )}
+            {probe.status === "checking" && (
+              <span className="inline-flex items-center gap-1.5 px-2 py-0.5 rounded text-[11px] font-mono bg-[#F4F4F2] text-[#6B675C] border border-[#E5E1D8]">
+                Ping...
+              </span>
+            )}
+            <button
+              type="button"
+              onClick={() => probeAiConnection()}
+              className="text-[10px] font-mono underline text-[#6B675C] hover:text-[#1C1B17] px-1"
+              title="Verbindung prüfen"
+            >
+              Ping
+            </button>
+          </div>
+        )}
         {cfg.engine === "local" && (
           <span className="font-mono text-[11px] text-[#6B675C]">
             {localModelName() ?? (isWebGpuAvailable() ? (lang === "de" ? "lädt beim ersten Aufruf (~1–2 GB)" : "首次调用时下载 (~1–2 GB)") : tr.aiNoWebgpu)}
