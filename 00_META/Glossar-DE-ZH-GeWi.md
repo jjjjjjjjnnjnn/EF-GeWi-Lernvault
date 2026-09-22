@@ -70,4 +70,11 @@ tags: [EF, Meta]
 | Clicktivism | 点击行动主义 | SoWi | √ |
 | konventionell | 常规的 | SoWi | √ |
 
+| fdGO | 自由民主基本秩序 | SoWi | √ |
+| Populismus | 民粹主义 | SoWi | √ |
+| Parteiverbot | 政党禁令 | SoWi | √ |
+| Verfassungsschutz | 宪法保卫局 | SoWi | √ |
+| Potentialität | 实现可能性 | SoWi | √ |
+| Radikalismus | 激进主义 | SoWi | √ |
+
 > 每科笔记的新术语同步回此表一行，保持唯一真相源。
