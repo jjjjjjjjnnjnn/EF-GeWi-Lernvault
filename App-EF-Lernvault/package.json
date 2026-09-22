@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@mlc-ai/web-llm": "^0.2.85",
     "@tauri-apps/api": "^2.0.0",
     "katex": "^0.18.7",
     "react": "^19.0.0",

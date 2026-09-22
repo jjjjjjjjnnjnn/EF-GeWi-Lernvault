@@ -1,6 +1,14 @@
 import { useState, useRef, useEffect } from "react";
 import { t, type Lang } from "../i18n";
 import type { VaultNote } from "../vault/parser";
+import AiSettings from "../components/AiSettings";
+import {
+  chat,
+  describeActiveEngine,
+  EngineOffError,
+  NeedsKeyError,
+  type ChatMsg,
+} from "../ai/engine";
 
 interface Message {
   id: string;
@@ -40,6 +48,9 @@ export default function Tutor({
   const [isDegraded, setIsDegraded] = useState(false);
   const [errorMsg, setErrorMsg] = useState<string | null>(null);
   const [retryCountdown, setRetryCountdown] = useState(0);
+  const [showAi, setShowAi] = useState(false);
+  const [localPct, setLocalPct] = useState<number | null>(null);
+  const [engineTag, setEngineTag] = useState(() => describeActiveEngine());
   const scrollRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -83,45 +94,39 @@ export default function Tutor({
       .join("\n");
 
     try {
-      const res = await fetch("http://localhost:1234/v1/chat/completions", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          model: "local-model",
-          messages: [
-            {
-              role: "system",
-              content: `${SYSTEM_PROMPT}\n\nAktuell im Vault verfügbar:\n${availableContext}`,
-            },
-            ...messages
-              .filter((m) => !m.isError)
-              .map((m) => ({
-                role: m.role === "ki" ? "assistant" : "user",
-                content: m.text,
-              })),
-            { role: "user", content: q },
-          ],
-          temperature: 0.3,
-          max_tokens: 600,
-        }),
+      const history: ChatMsg[] = [
+        {
+          role: "system",
+          content: `${SYSTEM_PROMPT}\n\nAktuell im Vault verfügbar:\n${availableContext}`,
+        },
+        ...messages
+          .filter((m) => !m.isError)
+          .map((m) => ({
+            role: (m.role === "ki" ? "assistant" : "user") as "assistant" | "user",
+            content: m.text,
+          })),
+        { role: "user", content: q },
+      ];
+      const reply = await chat(history, {
+        temperature: 0.3,
+        maxTokens: 600,
+        onLocalProgress: (p) => setLocalPct(p),
       });
-
-      if (!res.ok) {
-        throw new Error(`HTTP ${res.status}: LM Studio Anfrage fehlgeschlagen`);
-      }
-
-      const data = await res.json();
-      const reply =
-        data?.choices?.[0]?.message?.content ||
-        (lang === "de" ? "Keine Antwort erhalten." : "未收到有效回复。");
 
       setMessages((prev) => [
         ...prev,
         { id: `ki-${Date.now()}`, role: "ki", text: reply },
       ]);
       setIsDegraded(false);
-    } catch {
-      // LM Studio not running -> switch to degraded mode
+      setEngineTag(describeActiveEngine());
+    } catch (err) {
+      // Engine aus / Key fehlt / Anbieter down -> Vorlagen-Modus (wie bisher)
+      if (err instanceof NeedsKeyError) {
+        setErrorMsg(tr.aiNeedKey);
+        setShowAi(true);
+      } else if (!(err instanceof EngineOffError)) {
+        setErrorMsg(err instanceof Error ? err.message : String(err));
+      }
       setIsDegraded(true);
 
       // Search matching note in vault
@@ -134,7 +139,7 @@ export default function Tutor({
       if (match) {
         const pathRef = match.path || `${match.fach}/${match.thema}.md#1`;
         const lead = match.blocks[0]?.text || "Kernkonzept aus dem Vault.";
-        const fallbackText = `[${pathRef}] ${match.thema} (${match.fach}): ${lead}\n\n(Hinweis: Vorlagen-Modus aktiv, da LM Studio offline ist.)`;
+        const fallbackText = `[${pathRef}] ${match.thema} (${match.fach}): ${lead}\n\n(Hinweis: Vorlagen-Modus aktiv — KI-Engine aus oder nicht bereit.)`;
         setMessages((prev) => [
           ...prev,
           { id: `ki-${Date.now()}`, role: "ki", text: fallbackText },
@@ -143,8 +148,8 @@ export default function Tutor({
         const defaultRef = "08_SoWi/Soziale-Ungleichheit.md#1";
         const fallbackText =
           lang === "de"
-            ? `[${defaultRef}] Auszug aus den Grundlagen-Notizen: Für vertiefte Freitext-Beantwortung bitte LM Studio auf Port 1234 starten.`
-            : `[${defaultRef}] 知识库核心条目参考：如需自由文本问答交互，请在本地启动 LM Studio（默认端口 1234）。`;
+            ? `[${defaultRef}] Auszug aus den Grundlagen-Notizen: Für freie Antworten schalte oben eine KI-Engine ein (API-direkt oder lokal).`
+            : `[${defaultRef}] 知识库核心条目参考：自由问答请在上方开启一个AI引擎（直连或本地）。`;
         setMessages((prev) => [
           ...prev,
           { id: `ki-${Date.now()}`, role: "ki", text: fallbackText },
@@ -152,6 +157,7 @@ export default function Tutor({
       }
     } finally {
       setIsThinking(false);
+      setLocalPct(null);
     }
   };
 
@@ -226,7 +232,7 @@ export default function Tutor({
       {isDegraded && (
         <div className="border-b border-[#E5E1D8] border-l-2 border-[#B45309] bg-[#FAF9F6] px-4 py-2 text-xs font-mono text-[#B45309] flex items-center justify-between">
           <span>{tr.lmDown}</span>
-          <span className="text-[10px] text-[#6B675C]">http://localhost:1234</span>
+          <span className="text-[10px] text-[#6B675C]">{engineTag}</span>
         </div>
       )}
 
@@ -241,13 +247,23 @@ export default function Tutor({
           <span>
             {isDegraded
               ? "Vorlagen-Modus / 模板模式"
-              : "KI-Tutor · Lokales Modell (EF-Niveau)"}
+              : `KI-Tutor · ${engineTag}`}
           </span>
         </div>
-        <span className="text-[10px] uppercase tracking-wider text-[#6B675C]">
-          Zitierpflicht aktiv
+        <span className="flex items-center gap-3">
+          <span className="text-[10px] uppercase tracking-wider text-[#6B675C]">
+            Zitierpflicht aktiv
+          </span>
+          <button
+            onClick={() => setShowAi((s) => !s)}
+            aria-expanded={showAi}
+            className="rounded-sm border border-[#E5E1D8] bg-white px-2 py-0.5 font-sans text-[11px] text-[#1C1B17] hover:border-[#4338CA] hover:text-[#4338CA]"
+          >
+            {showAi ? tr.aiHideSettings : tr.aiShowSettings}
+          </button>
         </span>
       </div>
+      {showAi && <AiSettings lang={lang} onChanged={() => setEngineTag(describeActiveEngine())} />}
 
       {/* Error state if occurred */}
       {errorMsg && (
@@ -301,7 +317,7 @@ export default function Tutor({
         {isThinking && (
           <div className="max-w-[92%] border-l-2 border-[#E5E1D8] pl-3.5 py-1">
             <div className="font-mono text-xs text-[#6B675C] animate-pulse">
-              denkt nach… / 思考中…
+              {localPct !== null ? tr.aiLocalLoading(localPct) : "denkt nach… / 思考中…"}
             </div>
           </div>
         )}

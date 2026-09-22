@@ -4,6 +4,7 @@
 
 ## A. 随包分发（runtime，打进 exe 的只有这些）
 - react / react-dom 19.3.0 — MIT — Meta Platforms, Inc.
+- @mlc-ai/web-llm 0.2.85（浏览器内本地推理，懒加载，仅本地引擎启用时下载模型权重；用户特批引入 2026-09-23）— Apache-2.0 — MLC AI (Apache TVM 社区)
 - tauri 2.x / @tauri-apps/api 2.x（Rust 壳 + 前端桥）— MIT / Apache-2.0 — Tauri Programme
 - serde / serde_json 1.x（Rust 序列化）— MIT / Apache-2.0
 

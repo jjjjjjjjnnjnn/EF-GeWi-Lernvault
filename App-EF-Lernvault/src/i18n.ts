@@ -17,8 +17,8 @@ export const t = (lang: Lang) => ({
   easy: "Easy",
   offline:
     lang === "de"
-      ? "LM Studio ist offline — starte LM Studio für KI-Funktionen."
-      : "LM Studio 未启动——AI 功能需先启动 LM Studio。",
+      ? "KI-Engine aus oder nicht erreichbar — prüfe die KI-Einstellungen oben."
+      : "AI引擎未开启或不可达——请检查上方AI设置。",
 
   // UI-SPEC-V3 bilingual strings
   dueToday: (n: number, m: number) =>
@@ -29,8 +29,8 @@ export const t = (lang: Lang) => ({
   nextDue: (x: string | number) => (lang === "de" ? `→ ${x}d` : `${x}天后`),
   lmDown:
     lang === "de"
-      ? "LM Studio nicht erreichbar — Vorlagen-Modus"
-      : "LM 未连接——模板模式",
+      ? "KI-Engine nicht bereit — Vorlagen-Modus"
+      : "AI引擎未就绪——模板模式",
   noSource: lang === "de" ? "ohne Beleg" : "无出处",
   copyPatch: lang === "de" ? "Kopieren" : "复制",
   copied: lang === "de" ? "Kopiert ✓" : "已复制",
@@ -102,7 +102,7 @@ export const t = (lang: Lang) => ({
   obFachText:
     lang === "de"
       ? "Womit beginnst du? Fertige Fächer sind voll nutzbar, der Rest wächst mit."
-      : "先学哪几科？备好的 fully 可用，其余在持续补充。",
+      : "先学哪几科？备好的完全可用，其余在持续补充。",
   obFachReady: lang === "de" ? "Bereit" : "已备好",
   obFachActive: lang === "de" ? "Im Aufbau" : "建设中",
   obFachSkeleton: lang === "de" ? "Gerüst" : "仅骨架",
@@ -116,4 +116,20 @@ export const t = (lang: Lang) => ({
   obFinish: lang === "de" ? "Los geht's" : "开始学习",
   obSkip: lang === "de" ? "Überspringen" : "跳过",
   obRedo: lang === "de" ? "Einrichtung erneut zeigen" : "重新显示引导",
+
+  // KI-Einstellungen (AiSettings)
+  aiProvider: lang === "de" ? "Anbieter" : "服务商",
+  aiModel: lang === "de" ? "Modell (editierbar)" : "模型（可改）",
+  aiBaseUrl: lang === "de" ? "Base-URL (nur Eigen-Anbieter)" : "Base-URL（仅自定义）",
+  aiApiKey: lang === "de" ? "API-Key (nur lokal gespeichert)" : "API-Key（仅存本地）",
+  aiManualHint:
+    lang === "de"
+      ? "Anleitung + Free-Tiers: AI-SETUP.md im App-Ordner. Key bleibt in deinem Browser."
+      : "操作手册+免费额度见App目录AI-SETUP.md，Key只存你的浏览器。",
+  aiNoWebgpu: lang === "de" ? "Kein WebGPU — bitte Chrome/Edge 113+ nutzen" : "无WebGPU——请用 Chrome/Edge 113+",
+  aiNeedKey: lang === "de" ? "Bitte API-Key in den KI-Einstellungen eintragen." : "请在AI设置里填写API-Key。",
+  aiShowSettings: lang === "de" ? "KI-Einstellungen" : "AI设置",
+  aiHideSettings: lang === "de" ? "Einklappen" : "收起",
+  aiLocalLoading: (p: number) =>
+    lang === "de" ? `Lokales Modell lädt … ${Math.round(p * 100)} %` : `本地模型下载中…${Math.round(p * 100)}%`,
 });

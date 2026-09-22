@@ -3,6 +3,7 @@ import { isTyping } from "../keys";
 import { t, type Lang } from "../i18n";
 import { setFeedbackContext } from "../components/FeedbackBox";
 import type { VaultNote } from "../vault/parser";
+import { chat } from "../ai/engine";
 import {
   generateQuizFromNote,
   getAvailableThemen,
@@ -196,27 +197,17 @@ Prüfe für jede Teilaufgabe:
 Zitiere für jede Sachkritik exakt [${currentQuiz.notePath}#Zeile].
 Gib die Punkte (0-15) an.`;
 
-      const res = await fetch("http://localhost:1234/v1/chat/completions", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          model: "local-model",
-          messages: [
-            {
-              role: "system",
-              content:
-                "Du bist ein Klausur-Korrektor. Antworte sachlich, gib zu jeder Bemerkung einen Beleg [Pfad#Zeile].",
-            },
-            { role: "user", content: prompt },
-          ],
-          temperature: 0.2,
-          max_tokens: 800,
-        }),
-      });
-
-      if (!res.ok) throw new Error("LM Studio response not ok");
-      const data = await res.json();
-      const content = data?.choices?.[0]?.message?.content || "";
+      const content = await chat(
+        [
+          {
+            role: "system",
+            content:
+              "Du bist ein Klausur-Korrektor. Antworte sachlich, gib zu jeder Bemerkung einen Beleg [Pfad#Zeile].",
+          },
+          { role: "user", content: prompt },
+        ],
+        { temperature: 0.2, maxTokens: 800 }
+      );
 
       const opFail = /operator verfehlt/i.test(content);
       const termFail = /fachbegriff (falsch|fehlt)/i.test(content);
@@ -431,26 +422,17 @@ Prüfe:
 - Beleg fehlt?
 - Vorgehen falsch? (falsches Verfahren / falscher Begriff gewählt oder Warum nicht begründet)
 Zitiere für jede Sachkritik exakt [${currentVergleich.sourceRef}].`;
-      const res = await fetch("http://localhost:1234/v1/chat/completions", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          model: "local-model",
-          messages: [
-            {
-              role: "system",
-              content:
-                "Du bist ein Klausur-Korrektor. Antworte sachlich, gib zu jeder Bemerkung einen Beleg [Pfad#Zeile].",
-            },
-            { role: "user", content: prompt },
-          ],
-          temperature: 0.2,
-          max_tokens: 400,
-        }),
-      });
-      if (!res.ok) throw new Error("LM Studio response not ok");
-      const data = await res.json();
-      const content: string = data?.choices?.[0]?.message?.content || "";
+      const content: string = await chat(
+        [
+          {
+            role: "system",
+            content:
+              "Du bist ein Klausur-Korrektor. Antworte sachlich, gib zu jeder Bemerkung einen Beleg [Pfad#Zeile].",
+          },
+          { role: "user", content: prompt },
+        ],
+        { temperature: 0.2, maxTokens: 400 }
+      );
       setVergleichEval({
         operatorVerfehlt: /operator verfehlt/i.test(content),
         fachbegriffFalsch: /fachbegriff (falsch|fehlt)/i.test(content),
@@ -867,8 +849,8 @@ Zitiere für jede Sachkritik exakt [${currentVergleich.sourceRef}].`;
                   <div className="font-semibold">{tr.lmDown}</div>
                   <div className="font-sans text-[11px] text-[#6B675C] mt-0.5">
                     {lang === "de"
-                      ? "LM Studio ist nicht verbunden. Die Bewertung erfolgt im Selbstprüf-Modus anhand der offiziellen AFB-Rubriken."
-                      : "LM Studio 未连接。当前已降级为依据官方评分标准自检模式，绝不虚构评分。"}
+                      ? "KI-Engine ist nicht verbunden. Die Bewertung erfolgt im Selbstprüf-Modus anhand der offiziellen AFB-Rubriken (Engine in den KI-Einstellungen des KI-Tutors wählen)."
+                      : "AI引擎未连接。当前已降级为依据官方评分标准自检模式，绝不虚构评分（去KI-Tutor的AI设置里选引擎）。"}
                   </div>
                 </div>
               )}
