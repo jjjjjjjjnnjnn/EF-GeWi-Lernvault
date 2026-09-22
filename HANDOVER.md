@@ -17,7 +17,7 @@
 - ✅ App需求：FEATURE-SPEC + UI-SPEC-V2；**外部AI已落地**（`b17999d`）：10科徽章+KaTeX离线公式+Lernreise第7模块（5步态+gating+XP localStorage），`npm run build`亲验通过；课程3个（SoWi-L1示范 + Musik-Höranalyse-L1 + Sport-Bewegung-L1，均muendlich步）。
 - ✅ 集成方法v2：`Lernmethoden-Evidenz.md`单真相源 + Template v2（检索优先/Pro-Contra/Fehlvorstellungen）+ `vault-check.py`四检PASS + parser修csv表头卡/quote/math块（build过）+ P3加Zitierpflicht。
 - ✅ 电子书抓取**完工**（429/430页，缺media 2封面背）：已按11章切分进 `_Downloads/SoWi/split/`（gitignored，边界±2页待核），可写SoWi正式笔记。
-- ✅ UI-SPEC-V3就绪（`App-EF-Lernvault/UI-SPEC-V3.md`：P2/P3/P4界面需求+三态规范+文案表+验收清单），可直接发外部AI落实；主Agent只验build。
+- ✅ UI-SPEC-V4已落地并复核PASS（外部AI `a1ba979` + 主Agent复核：构建复现+5步零回归+Zitierpflicht未松；技术债：Vergleich暂用MOCK数据/双RUBRIC并存，下轮收）。
 - ✅ P2/P3/P4已落地并验收（外部AI `949984a` + 主Agent复核PASS：scheduler/Tutor-chips/五步Quiz/Planner/Mindmap/双export；2处偏离接受：手写DSR非ts-fsrs、附赠act-export-xp）。
 - ✅ SoWi收官12/12：Ungleichheit独立篇 + Kap.1–11（csv 147行，INDEX 82链全有效，vault-check PASS）。
 - ✅ 学习方法v3（Academy-Lernreise，6 agent并行）：证据库§6–§9（Adesope/Rohrer/Barbieri/Brummer/Mayer）+ `Methoden-Quellen.md`16篇 + 论文本地4/9（Rohrer主机502待补）+ Template v3（9步，旧字段全留）+ Sowi-L1试点重写 + quizgen辨别/对比题型与过程维 + `vault-check` vergleich规则 + `UI-SPEC-V4.md`（发外部AI）；vault-check PASS + build过。

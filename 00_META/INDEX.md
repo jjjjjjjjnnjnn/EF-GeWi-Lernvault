@@ -78,6 +78,8 @@
 - [2026-09-22-lernmethode-v3](Journal/2026-09-22-lernmethode-v3.md) — 学习方法v3：证据库§6–§9+Template v3+Sowi-L1试点+出题链升级+UI-SPEC-V4
 - [2026-09-22-lehrerkanal-runde3](Journal/2026-09-22-lehrerkanal-runde3.md) — 教师渠道全收95件：NRW官源/OER/媒体库/Goethe+商业只记链
 - [2026-09-22-stansi-runde4](Journal/2026-09-22-stansi-runde4.md) — StanSi全站通扫58件：9路并行+三科补缺+登录墙三站确认
+- [2026-09-22-ui-spec-v4-implementation](Journal/2026-09-22-ui-spec-v4-implementation.md) — UI-SPEC-V4落地（外部AI）：Vergleich步态+反馈三层+dd文案挂载
+- [2026-09-22-ui-spec-v4-review](Journal/2026-09-22-ui-spec-v4-review.md) — V4复核PASS：构建复现+零回归+2条技术债
 - 约定：文件名 `YYYY-MM-DD-<thema>.md`，头部frontmatter（`fach`可空，`tags: [EF, Meta]`）。
 
 ## Dataview（Obsidian内自动索引，GitHub上仅作备份显示）
