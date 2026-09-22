@@ -380,6 +380,82 @@ Gib die Punkte (0-15) an.`;
 
   const isCorrect = selectedOption === currentVergleich.correctOption;
 
+  // V4 Vergleich evaluation: v3-aligned 4-dim rubric, manually toggleable + LM-graded with same 4 regexes.
+  const [vergleichEval, setVergleichEval] = useState({
+    operatorVerfehlt: currentVergleich.rubrics.operatorVerfehlt,
+    fachbegriffFalsch: currentVergleich.rubrics.fachbegriffFalsch,
+    belegFehlt: currentVergleich.rubrics.belegFehlt,
+    vorgehenFalsch: currentVergleich.rubrics.vorgehenFalsch,
+  });
+  const [vLmDegraded, setVLmDegraded] = useState(false);
+
+  useEffect(() => {
+    setVergleichEval({ ...currentVergleich.rubrics });
+    setVLmDegraded(false);
+  }, [currentVergleich.id]);
+
+  const toggleVergleichPill = (criterion: RubricCriterion) => {
+    setVergleichEval((prev) => {
+      if (criterion === "operator") return { ...prev, operatorVerfehlt: !prev.operatorVerfehlt };
+      if (criterion === "fachbegriff") return { ...prev, fachbegriffFalsch: !prev.fachbegriffFalsch };
+      if (criterion === "vorgehen") return { ...prev, vorgehenFalsch: !prev.vorgehenFalsch };
+      return { ...prev, belegFehlt: !prev.belegFehlt };
+    });
+  };
+
+  const evaluateVergleichLM = async () => {
+    const begruendung = warumText.trim();
+    setVLmDegraded(false);
+    try {
+      const prompt = `Du bist ein strenger Klausurkorrektor für die gymnasiale Oberstufe (EF, ${currentVergleich.fach}).
+Thema: ${currentVergleich.thema}
+Wahl: Option ${selectedOption ?? "-"} (korrekt: Option ${currentVergleich.correctOption})
+Begründung: ${begruendung || "(keine Angabe)"}
+Beleg: ${currentVergleich.sourceRef}
+
+Prüfe:
+- Operator verfehlt?
+- Fachbegriff falsch?
+- Beleg fehlt?
+- Vorgehen falsch? (falsches Verfahren / falscher Begriff gewählt oder Warum nicht begründet)
+Zitiere für jede Sachkritik exakt [${currentVergleich.sourceRef}].`;
+      const res = await fetch("http://localhost:1234/v1/chat/completions", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          model: "local-model",
+          messages: [
+            {
+              role: "system",
+              content:
+                "Du bist ein Klausur-Korrektor. Antworte sachlich, gib zu jeder Bemerkung einen Beleg [Pfad#Zeile].",
+            },
+            { role: "user", content: prompt },
+          ],
+          temperature: 0.2,
+          max_tokens: 400,
+        }),
+      });
+      if (!res.ok) throw new Error("LM Studio response not ok");
+      const data = await res.json();
+      const content: string = data?.choices?.[0]?.message?.content || "";
+      setVergleichEval({
+        operatorVerfehlt: /operator verfehlt/i.test(content),
+        fachbegriffFalsch: /fachbegriff (falsch|fehlt)/i.test(content),
+        belegFehlt: /beleg fehlt/i.test(content),
+        vorgehenFalsch: /vorgehen falsch/i.test(content),
+      });
+    } catch {
+      setVLmDegraded(true);
+      setVergleichEval({
+        operatorVerfehlt: begruendung.length < 10,
+        fachbegriffFalsch: false,
+        belegFehlt: !(/[„"“]|Material|Art\.|§|#/.test(begruendung)),
+        vorgehenFalsch: selectedOption !== currentVergleich.correctOption && begruendung.length < 20,
+      });
+    }
+  };
+
   // Space toggles timer; 1/2 selects A/B in Vergleich; D/V switch modes
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
@@ -1178,7 +1254,10 @@ Gib die Punkte (0-15) an.`;
               <button
                 type="button"
                 disabled={!selectedOption}
-                onClick={() => setIsSubmitted(true)}
+                onClick={() => {
+                  setIsSubmitted(true);
+                  void evaluateVergleichLM();
+                }}
                 className="rounded-sm border border-[#4338CA] bg-white px-5 py-2 text-xs font-mono uppercase tracking-wider text-[#4338CA] hover:bg-[#4338CA] hover:text-white disabled:opacity-40 active:scale-[0.97] transition-all"
               >
                 {tr.vergleichen}
@@ -1327,29 +1406,36 @@ Gib die Punkte (0-15) an.`;
 
                 {showL2 && (
                   <div className="space-y-3 pt-2 pl-4 border-l-2 border-[#E5E1D8] animate-fade-in">
-                    {/* ① Rubric Pills */}
+                    {/* ① Rubric Pills (v3-aligned 4-dim, manually toggleable) */}
                     <div className="flex flex-wrap gap-2">
-                      <span className={`px-2.5 py-1 text-xs font-mono rounded-sm border ${
-                        currentVergleich.rubrics.operatorVerfehlt
-                          ? "bg-[#1C1B17] text-white border-[#1C1B17]"
-                          : "border-[#E5E1D8] text-[#6B675C]"
-                      }`}>
-                        Operator verfehlt
-                      </span>
-                      <span className={`px-2.5 py-1 text-xs font-mono rounded-sm border ${
-                        currentVergleich.rubrics.fachbegriffFalsch
-                          ? "bg-[#1C1B17] text-white border-[#1C1B17]"
-                          : "border-[#E5E1D8] text-[#6B675C]"
-                      }`}>
-                        Fachbegriff falsch
-                      </span>
-                      <span className={`px-2.5 py-1 text-xs font-mono rounded-sm border ${
-                        currentVergleich.rubrics.belegFehlt
-                          ? "bg-[#1C1B17] text-white border-[#1C1B17]"
-                          : "border-[#E5E1D8] text-[#6B675C]"
-                      }`}>
-                        Beleg fehlt
-                      </span>
+                      {RUBRIC_CRITERIA.map((criterion) => {
+                        const isHit =
+                          criterion.id === "operator"
+                            ? vergleichEval.operatorVerfehlt
+                            : criterion.id === "fachbegriff"
+                            ? vergleichEval.fachbegriffFalsch
+                            : criterion.id === "vorgehen"
+                            ? vergleichEval.vorgehenFalsch
+                            : vergleichEval.belegFehlt;
+                        return (
+                          <button
+                            key={criterion.id}
+                            type="button"
+                            onClick={() => toggleVergleichPill(criterion.id)}
+                            title={criterion.descriptionDE}
+                            className={`px-2.5 py-1 text-xs font-mono rounded-sm border transition-all ${
+                              isHit
+                                ? "bg-[#1C1B17] text-white border-[#1C1B17]"
+                                : "border-[#E5E1D8] text-[#6B675C] hover:border-[#6B675C]"
+                            }`}
+                          >
+                            {criterion.name}
+                            <span className="ml-1 text-[10px] opacity-75">
+                              {criterion.labelZH}
+                            </span>
+                          </button>
+                        );
+                      })}
                     </div>
 
                     {/* ② Zitierpflicht chip */}
@@ -1375,16 +1461,34 @@ Gib die Punkte (0-15) an.`;
 
               {/* L3 — 过程 + 元认知 (过程维 pills + "下次先…" + 文本补丁预览) */}
               <div className="space-y-4 pt-4 border-t border-[#E5E1D8]">
-                {/* 过程维展示 pills: Belegkette + Operatorabfolge */}
+                {/* 过程维展示 pill: v3 Vorgehen-dim (manually toggleable, same tokens) */}
                 <div className="flex items-center gap-3">
                   <span className="font-mono text-[11px] text-[#6B675C]">PROZESSDIMENSION / 过程维:</span>
                   <div className="flex gap-2">
-                    <span className="px-2 py-0.5 text-[10px] font-mono rounded-sm bg-[#1C1B17] text-white border border-[#1C1B17]">
-                      {tr.belegkette}
-                    </span>
-                    <span className="px-2 py-0.5 text-[10px] font-mono rounded-sm bg-[#1C1B17] text-white border border-[#1C1B17]">
-                      {tr.operatorabfolge}
-                    </span>
+                    {(() => {
+                      const criterion = RUBRIC_CRITERIA.find((c) => c.id === "vorgehen")!;
+                      const isHit = vergleichEval.vorgehenFalsch;
+                      return (
+                        <button
+                          type="button"
+                          onClick={() => toggleVergleichPill("vorgehen")}
+                          title={criterion.descriptionDE}
+                          className={`px-2 py-0.5 text-[10px] font-mono rounded-sm border transition-all ${
+                            isHit
+                              ? "bg-[#1C1B17] text-white border-[#1C1B17]"
+                              : "border-[#E5E1D8] text-[#6B675C] hover:border-[#6B675C]"
+                          }`}
+                        >
+                          {criterion.name}
+                          <span className="ml-1 opacity-75">{criterion.labelZH}</span>
+                        </button>
+                      );
+                    })()}
+                    {vLmDegraded && (
+                      <span className="px-2 py-0.5 text-[10px] font-mono text-[#B45309]">
+                        Vorlagen-Modus
+                      </span>
+                    )}
                   </div>
                 </div>
 

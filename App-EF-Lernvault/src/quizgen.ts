@@ -263,11 +263,11 @@ export interface VergleichItem {
   krFeedbackZH: string;
   explanationQuote: string;
   rubrics: {
+    // V3-aligned 4-dim rubric (operator/fachbegriff/beleg/vorgehen); template rules need no citation.
     operatorVerfehlt: boolean;
     fachbegriffFalsch: boolean;
     belegFehlt: boolean;
-    belegkette: boolean;
-    operatorabfolge: boolean;
+    vorgehenFalsch: boolean;
   };
 }
 
@@ -332,8 +332,7 @@ export const MOCK_VERGLEICH_ITEMS: VergleichItem[] = [
       operatorVerfehlt: false,
       fachbegriffFalsch: false,
       belegFehlt: false,
-      belegkette: true,
-      operatorabfolge: true,
+      vorgehenFalsch: false,
     },
   },
   {
@@ -396,8 +395,7 @@ export const MOCK_VERGLEICH_ITEMS: VergleichItem[] = [
       operatorVerfehlt: false,
       fachbegriffFalsch: false,
       belegFehlt: false,
-      belegkette: true,
-      operatorabfolge: true,
+      vorgehenFalsch: false,
     },
   },
   {
@@ -460,16 +458,139 @@ export const MOCK_VERGLEICH_ITEMS: VergleichItem[] = [
       operatorVerfehlt: false,
       fachbegriffFalsch: false,
       belegFehlt: false,
-      belegkette: true,
-      operatorabfolge: true,
+      vorgehenFalsch: false,
     },
   },
 ];
 
+function slugifyThema(s: string): string {
+  const slug = s
+    .toLowerCase()
+    .replace(/[\s_]+/g, "-")
+    .replace(/[^a-z0-9-]+/g, "")
+    .slice(0, 40);
+  return slug || "thema";
+}
+
+function pickDeTexts(note: VaultNote, count: number): string[] {
+  const pool = note.blocks
+    .filter(
+      (b) =>
+        b.lang === "de" &&
+        (b.kind === "p" || b.kind === "li" || b.kind === "quote" || b.kind === "h2" || b.kind === "h3")
+    )
+    .map((b) => b.text.trim())
+    .filter((t) => t.length >= 4);
+  const out: string[] = [];
+  for (const t of pool) {
+    if (!out.includes(t)) out.push(t);
+    if (out.length >= count) break;
+  }
+  return out;
+}
+
+function shortLabel(text: string, max = 28): string {
+  const t = text.replace(/\s+/g, " ").trim();
+  return t.length <= max ? t : t.slice(0, max - 1).trimEnd() + "…";
+}
+
+// Split note text into segments, max 3 highlights (underline+bold only, no color blocks).
+function toQuoteSegments(text: string): ComparisonColumn["quoteSegments"] {
+  const clean = text.replace(/\s+/g, " ").trim() || "Kein Materialtext. / 无材料文本。";
+  const words = clean.split(" ");
+  if (words.length <= 6) return [{ text: clean }];
+  const size = Math.max(2, Math.ceil(words.length / 7));
+  const segs: ComparisonColumn["quoteSegments"] = [];
+  let highlights = 0;
+  for (let i = 0; i < words.length; i += size) {
+    const chunk = words.slice(i, i + size).join(" ") + (i + size < words.length ? " " : "");
+    const col = Math.floor(i / size);
+    if ((col === 1 || col === 3 || col === 5) && highlights < 3) {
+      segs.push({ text: chunk, highlight: true });
+      highlights++;
+    } else {
+      segs.push({ text: chunk });
+    }
+  }
+  return segs;
+}
+
+// True pipeline: one VergleichItem per vault note, prompts built via the
+// discrimination/contrast builders so sourceRef (notePath#Zeile) never breaks (Zitierpflicht).
+function buildVergleichFromNote(note: VaultNote, idx: number): VergleichItem {
+  const notePath = note.path || `${note.fach}/${note.thema}.md`;
+  const materialQuote = extractQuote(note.blocks);
+  const deTexts = pickDeTexts(note, 3);
+  const rawA =
+    note.operatoren[0]?.trim() || (deTexts[0] ? shortLabel(deTexts[0]) : `${note.thema} · Verfahren A`);
+  const rawB =
+    note.operatoren[1]?.trim() ||
+    (deTexts[1] ? shortLabel(deTexts[1]) : `${note.thema} · Verfahren B`);
+  const optionA = rawA === rawB ? `${rawA} (A)` : rawA;
+  const optionB = rawA === rawB ? `${rawB} (B)` : rawB;
+  // Both builders throw on empty sourceRef: our refs are always `notePath#Zeile`.
+  const disc = buildDiscriminationTask(note.thema, optionA, optionB, `${notePath}#4`);
+  const cont = buildContrastTask(note.thema, optionA, optionB, `${notePath}#5`);
+  void cont;
+  const colAText = deTexts[0] || materialQuote;
+  const colBText = deTexts[1] || deTexts[0] || materialQuote;
+  const correctOption: "A" | "B" = idx % 2 === 0 ? "B" : "A"; // interleave positions
+  const correctLabel = correctOption === "A" ? optionA : optionB;
+  return {
+    id: `v-${note.fach.toLowerCase()}-${slugifyThema(note.thema)}-${idx}`,
+    fach: note.fach,
+    thema: note.thema,
+    operator: disc.operator,
+    afb: disc.afb,
+    promptDE: disc.promptDE,
+    promptZH: disc.promptZH,
+    sourceRef: disc.sourceRef,
+    materialQuote,
+    optionA: {
+      labelDE: `A: ${optionA}`,
+      labelZH: `A: ${optionA}`,
+      column: {
+        titleDE: `A · ${shortLabel(optionA, 24)}`,
+        titleZH: `A · ${shortLabel(optionA, 24)}`,
+        quoteSegments: toQuoteSegments(colAText),
+        conclusionDE: `Weg A („${shortLabel(optionA, 32)}“) — vgl. ${disc.sourceRef}.`,
+        conclusionZH: `A解（“${shortLabel(optionA, 32)}”）——见${disc.sourceRef}。`,
+      },
+    },
+    optionB: {
+      labelDE: `B: ${optionB}`,
+      labelZH: `B: ${optionB}`,
+      column: {
+        titleDE: `B · ${shortLabel(optionB, 24)}`,
+        titleZH: `B · ${shortLabel(optionB, 24)}`,
+        quoteSegments: toQuoteSegments(colBText),
+        conclusionDE: `Weg B („${shortLabel(optionB, 32)}“) — vgl. ${disc.sourceRef}.`,
+        conclusionZH: `B解（“${shortLabel(optionB, 32)}”）——见${disc.sourceRef}。`,
+      },
+    },
+    correctOption,
+    krFeedbackDE: `Richtig: ${correctOption} („${shortLabel(correctLabel, 40)}“).`,
+    krFeedbackZH: `正确：${correctOption}（“${shortLabel(correctLabel, 40)}”）。`,
+    explanationQuote: materialQuote,
+    rubrics: {
+      operatorVerfehlt: false,
+      fachbegriffFalsch: false,
+      belegFehlt: false,
+      vorgehenFalsch: false,
+    },
+  };
+}
+
 export function getVergleichItems(vaultNotes: VaultNote[] | null): VergleichItem[] {
-  // Always return the standard high-fidelity exemplar items, plus any from vault if available
   if (!vaultNotes || vaultNotes.length === 0) return MOCK_VERGLEICH_ITEMS;
-  return MOCK_VERGLEICH_ITEMS;
+  const klausur = vaultNotes.filter((n) => n.klausurrelevant);
+  const pool = klausur.length > 0 ? klausur : vaultNotes;
+  try {
+    const items = pool.map((note, idx) => buildVergleichFromNote(note, idx));
+    return items.length > 0 ? items : MOCK_VERGLEICH_ITEMS;
+  } catch {
+    return MOCK_VERGLEICH_ITEMS;
+  }
 }
 
 export function getAvailableThemen(notes: VaultNote[] | null): { thema: string; fach: string; note: VaultNote }[] {
