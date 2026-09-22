@@ -83,6 +83,8 @@ export const PROVIDERS: ProviderPreset[] = [
   { id: "custom", name: "Eigen (Base-URL)", baseUrl: "", needsKey: true, defaultModel: "", keyUrl: "", free: "" },
 ];
 
+export type VectorMode = "auto" | "on" | "off";
+
 export interface AiConfig {
   version: 1;
   engine: AiEngine;
@@ -91,6 +93,8 @@ export interface AiConfig {
   model: string;
   baseUrl: string; // nur bei custom genutzt
   embedModel: string; // L2-vektor: leer = aus (hybrid faellt auf L1/L0)
+  vectorMode: VectorMode; // auto = L1 nur wenn bereit (nie still laden), on = laden erlaubt, off = nie
+  hfMirror: string; // leer = offizieller hub; z.b. https://hf-mirror.com
 }
 
 export const AI_KEY = "eflernvault:ai:v1";
@@ -103,6 +107,8 @@ export const DEFAULT_AI: AiConfig = {
   model: "openai/gpt-oss-20b:free",
   baseUrl: "",
   embedModel: "",
+  vectorMode: "auto",
+  hfMirror: "",
 };
 
 export function getProvider(id: string): ProviderPreset {

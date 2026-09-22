@@ -19,7 +19,8 @@ vault md/csv → vault/parser（frontmatter/Block/CSV五列）
   → vault/loader（SKIP禁区：App-EF-Lernvault/_Downloads/node_modules/dist/target/Journal；fach+datum排序）
   → engine/index（检索：精确优先 ∪ fuse模糊；空query=全量；顺序=源顺序）
   → engine/rag（L0：Block切分 path#Zeile + prompt拼装 + verifySupport字符串校验）
-  → engine/embed（L2-API/L1-本地jina-de/静默降级链；移动端默认关；向量会话缓存）
+  → engine/embed（L2-API/L1-本地jina-de/静默降级链；移动端默认关；向量会话缓存；
+  E轮：auto永不隐式下载+HF镜像源+显式加载按钮；进度按loaded/total字节比）
   → engine/storage+stores（版本化 six键 + Backend接口 + legacy旧档heben）
   → scheduler（FSRS自研简化版；prioritizeCard/prioritizeThema错题回流）
   → engine/interleave（分科默认 + override + round-robin/blocked排序）

@@ -128,6 +128,13 @@ describe("stage-2 semantik", () => {
   });
 });
 describe("retrieveHybrid", () => {
+  it("auto ohne geladenen embedder -> L0, KEIN download (anti-haenger)", async () => {
+    const r = await retrieveHybrid(CHUNKS, "Staat", 8); // default config = auto
+    expect(r.level).toBe("L0");
+    expect(r.chunks.map((c) => c.id)).toEqual(["08_SoWi/t.md#1"]);
+    expect(tfState.calls).toBe(0); // pipeline nie beruehrt
+  });
+
   it("vector off -> L0 (exakt, kein modell-kontakt)", async () => {
     const r = await retrieveHybrid(CHUNKS, "Staat", 8, { vector: "off" });
     expect(r.level).toBe("L0");

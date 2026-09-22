@@ -104,6 +104,13 @@ describe("Settings", () => {
     expect(screen.getByPlaceholderText("https://mein-server/sync")).toBeInTheDocument();
   });
 
+  it("vektor-sektion rendert (idle, kein auto-download)", () => {
+    render(<Settings {...props} />);
+    expect(screen.getByText("本地向量检索L1")).toBeInTheDocument();
+    expect(screen.getByText("未加载·RAG-L0生效中（不会卡死）")).toBeInTheDocument();
+    expect(screen.getByText("现在加载向量模型（约300MB）")).toBeInTheDocument();
+  });
+
   it("sync ohne endpoint -> fehlermeldung", async () => {
     const user = userEvent.setup();
     render(<Settings {...props} />);

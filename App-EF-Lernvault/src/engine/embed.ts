@@ -128,6 +128,11 @@ export function resetLocalEmbedder(): void {
   localPipeLoading = null;
 }
 
+/** Bereits geladen (kein download noetig)? */
+export function isLocalEmbedderReady(): boolean {
+  return localPipe !== null;
+}
+
 export async function ensureLocalEmbedder(
   onProgress?: (pct: number, text: string) => void
 ): Promise<EmbedPipe> {
@@ -135,10 +140,24 @@ export async function ensureLocalEmbedder(
   if (localPipeLoading) return localPipeLoading;
   localPipeLoading = (async () => {
     const tf = await import("@huggingface/transformers");
+    // HF-spiegel (z.b. https://hf-mirror.com) gegen blockierte direktion
+    try {
+      const mirror = loadAiConfig().hfMirror.trim().replace(/\/$/, "");
+      if (mirror && tf.env) tf.env.remoteHost = mirror;
+    } catch {
+      // env nicht setzbar -> offizieller hub
+    }
     const pipe = (await tf.pipeline("feature-extraction", LOCAL_EMBED_MODEL, {
       dtype: "q8",
-      progress_callback: (p: { progress?: number; status?: string }) => {
-        if (typeof p?.progress === "number") onProgress?.(p.progress / 100, p.status ?? "");
+      progress_callback: (p: { progress?: number; loaded?: number; total?: number; status?: string; file?: string }) => {
+        // v3: loaded/total in bytes (exakt) oder progress 0-100 (datei)
+        const frac =
+          typeof p?.total === "number" && p.total > 0 && typeof p?.loaded === "number"
+            ? p.loaded / p.total
+            : typeof p?.progress === "number"
+              ? p.progress / 100
+              : null;
+        if (frac !== null) onProgress?.(Math.min(1, Math.max(0, frac)), p.status ?? p.file ?? "");
       },
     })) as unknown as EmbedPipe;
     localPipe = pipe;
@@ -227,21 +246,35 @@ export function isCoarsePointer(): boolean {
   }
 }
 
+export type VectorMode = "auto" | "on" | "off";
+
 export interface HybridOpts {
-  /** auto: mobil aus, desktop an. on erzwingt (tests/manuel). */
-  vector?: "auto" | "on" | "off";
+  /**
+   * Expliziter override (tests/manuel). Sonst config vectorMode:
+   * auto = L1 nur wenn bereits geladen (NIE implizit laden — anti-haenger),
+   * on = laden erlaubt, off = nie.
+   */
+  vector?: VectorMode;
   onProgress?: (pct: number, text: string) => void;
 }
 
-/** Hybrid: L2 (embedModel gesetzt) -> L1 (lokal) -> L0 (keyword). Fehler -> leise runter. */
+/** Hybrid: L2 (embedModel gesetzt) -> L1 (lokal, nur bereit/erlaubt) -> L0. Fehler -> leise runter. */
 export async function retrieveHybrid(
   chunks: TextChunk[],
   query: string,
   topK = 8,
   opts: HybridOpts = {}
 ): Promise<HybridResult> {
-  const mode = opts.vector ?? "auto";
-  const wantL1 = mode === "on" || (mode === "auto" && !isCoarsePointer());
+  let mode = opts.vector;
+  if (!mode) {
+    try {
+      mode = loadAiConfig().vectorMode ?? "auto";
+    } catch {
+      mode = "auto";
+    }
+  }
+  // auto: mobil nie, desktop nur wenn embedder BEREITS geladen (kein stiller riesen-download)
+  const wantL1 = mode === "on" || (mode === "auto" && !isCoarsePointer() && isLocalEmbedderReady());
   // L2 zuerst (cloud/online mit key)
   try {
     const cfg = loadAiConfig();
