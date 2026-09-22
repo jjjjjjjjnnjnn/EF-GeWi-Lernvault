@@ -34,6 +34,11 @@
 - lernen:digital Schulentwicklung-Broschüren（`_Downloads/SoWi/oer-bund/`，免费）
 - Hinweis: Elixier-SoWi Sek II零PDF直链（在线搜用）；twillo Fach材料在edu-sharing墙内（只记`twillo.de/oer-suche/`）
 
+## StanSi Runde4 本地（`_Downloads/SoWi/stansi-runde4/`，9件）
+
+- Vorgaben 2027/2028/2029 + bili-Operatoren + Gestaltungsaufgaben终版 + sl/vl 示例×5
+- Prüfungsaufgaben页登录墙确认（2024–26真题找老师要）
+
 ## 方法
 - Karikatur分析步骤见 `Texte-Analyse/Karikatur-Anleitung.md`
 - Statistik/Tabelle描述句型见 `Klausur-Training/Satzbausteine.md`

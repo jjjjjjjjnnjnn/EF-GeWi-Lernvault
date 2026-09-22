@@ -7,7 +7,7 @@
 
 ## 当前状态（2026-09-22）
 - ✅ SoWi收官12/12：Ungleichheit独立篇 + Kap.1–11（csv 147行，INDEX 82链全有效，vault-check PASS）。
-- ✅ Material三轮：`_Downloads/` 约1420件/3.0GB（全gitignored）——N8 NRW官源33（MINT-KLP补齐）+ N9 OER 29（ZUM CC系）+ N10 Siemens 16（免登录）+ N11 Goethe 17（B2/C1论证参照）；SESAM/FWU/eduki/StanSi真题墙清单已列（找老师要）。
+- ✅ Material四轮：`_Downloads/` 约1480件/约3.0GB（全gitignored）——N8 NRW官源33 + N9 OER 29 + N10 Siemens 16 + N11 Goethe 17 + **N14 StanSi全站通扫58（9路并行，Physik/Chemie/Bio三科operatoren/konstruktions/korrekturzeichen实缺已补）**；登录墙清单已列（StanSi真题/SESAM/FWU/eduki找老师要）。
 - ✅ Klett Green Line Transition (ab 2024) Medien：23/23收官（mp3×9+mp4×14全验头+quelle.txt），落`_Downloads/Englisch/klett-bridge/`，Klett版权本地永不提交。
 - ✅ P2/P3/P4已落地并验收（外部AI `949984a` + 主Agent复核PASS；2处偏离接受）；抓取脚本锁全部原子化（fetch.lock/klett-fetch.lock防双跑）。
 - ✅ 骨架：Obsidian vault + git + CC-BY-SA + link-check CI + `_Downloads/`(gitignore, 39件官方PDF已下) + `Anlagen/`。

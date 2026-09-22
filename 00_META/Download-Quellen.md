@@ -49,6 +49,7 @@ tags: [EF, Meta]
 | N11 | Goethe Deutschstunde/DaF | 17 PDF（B2/C1 Modellsatz论证参照+TnB练习册+AB集，101MB）+ 17条外链清单→Deutsch/Englisch Ressourcen.md | `_Downloads/{Deutsch,Englisch}/goethe/`（kostenfrei本地） | ok（dlapi被Akamai墙，20+PDF转在线用） |
 | N12 | 商业/社群（只记链接，不爬） | meinUnterricht / eduki / Friedrich Verlag / GEW / #twlz / Deutsch für dich / Zeitgeister / PASCH | 各科`Ressourcen.md`商业节 | ok |
 | N13 | 总量 | `_Downloads/` 约1420件/约3.0GB（全gitignored；本轮+95件/~180MB） | — | ok |
+| N14 | StanSi全站通扫Runde4（9路并行） | 58 PDF/~20MB：SoWi 9（Vorgaben 27–29+bili-Operatoren+Gestaltungsaufgaben终版+sl/vl示例×5）/ Philo 3（27–29）/ Deutsch 2（IVa示例+2026-09 Neuerungen PPP）/ Mathe 17（ab2026 Vorblatt+Teil1 LK+Teil2 GK/LK×14 Analysis·Geo·Stoch CAS/WTR）/ Physik 3+Chemie 3+Bio 1（**operatoren/konstruktions/korrekturzeichen此前误判已有实缺，本轮补齐**）/ Querschnitt 20（ZP10德英数Operatoren+GOSt Termine 27/28+Ergebnisberichte 23–25+Abi-Formulare+Recht）。Englisch 0新增（9件全已有）；3站Prüfungsaufgaben登录墙全确认未碰（各科manifest `loginwall`数组） | `_Downloads/<Fach>/stansi-runde4/`（Amtliches Werk） | ok |
 
 > 确认不可下：GOSt-Prüfungsaufgaben页零直链（JS门）/ aufgaben-der-letzten-jahre需Login（0 pdf，墙实锤）/
 > IQB-HV无mp3直链（在线播放器）/ OpenStax需JS取链（已用Playwright解）/ Musik-Sport无中央考（只链Lehrplan）。

@@ -11,6 +11,7 @@
 - **Operatoren ab 2023**（判分动词，ZKE同样适用）：`d_operatoren_ab2023.pdf`
 - Konstruktionsvorgaben 2024 + Korrekturzeichen + Darstellungsleistung：同目录
 - KLP Deutsch 2023全文：`klp_deutsch_2023.pdf`
+- Runde4新增（`_Downloads/Deutsch/stansi-runde4/`）：`d_25_mi-beispielaufgabe_lk.pdf`（Aufgabenart IVa示例）+ `ppp_kontinuitaten_iii_2026-09-10.pdf`（2026-09-10 Neuerungen PPP）
 - 历年真题需登录（找老师要，不爬）：https://www.standardsicherung.schulministerium.nrw.de/zentrale-klausuren-einfuehrungsphase/aufgaben-der-letzten-jahre/deutsch-aufgaben-der-letzten-jahre
 
 ## Goethe-Institut 免费（在线用；PDF仅 `_Downloads/Deutsch/goethe/` 本地）

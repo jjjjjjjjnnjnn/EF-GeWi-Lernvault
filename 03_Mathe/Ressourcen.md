@@ -13,3 +13,4 @@
 - **ZKE Vorgaben 2027 + Beispiel Teil A/B**（EF统考看什么）：`vorgaben_zke_mathematik_2027.pdf` + `zke_a_beispiel1.pdf` + `zke_b_beispiel_wtr.pdf`
 - **Formelsammlung NRW 2024**（考试允许带，3MB）：`formelsammlung_nrw_2024.pdf`
 - KLP Mathe 2023全文：`klp_mathe_2023.pdf`
+- Runde4新增（`_Downloads/Mathe/stansi-runde4/`，17件）：ab2026示例全系——Vorblatt LK + Teil1 LK（Pflicht/Wahlpflicht）+ Teil2 GK/LK×14（Analysis B1/B2、Geometrie B3、Stochastik B4，各CAS/WTR）

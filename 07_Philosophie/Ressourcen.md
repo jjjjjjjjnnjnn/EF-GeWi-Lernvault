@@ -12,6 +12,7 @@
   - GitHub: https://github.com/openstax/osbooks-introduction-philosophy
 - Elixier Hessen Philosophiegeschichte（许可o.A.，仅本地）：`_Downloads/Philosophie/oer-bund/elixier_hessen-philosophiegeschichte.pdf`
 - StanSi Darstellungsleistung-Hinweis（本地）：`_Downloads/Philosophie/nrw-amtlich/`
+- Vorgaben 2027/2028/2029（Runde4新收3件）：`_Downloads/Philosophie/stansi-runde4/`
 - **ZUM Philosophie** (OER): https://www.zum.de/ (站内搜 Philosophie/Ethik)
 - **Philosophie-Wiki / segu方法**：文本分析步骤可迁移自 Geschichte-Quellenanalyse。
 - Deutsch-Hilfe：论证重构先看 `08_SoWi/Klausur-Training/Satzbausteine.md` 的analysieren/beurteilen句型，Philo通用。

@@ -10,3 +10,4 @@
 ## 本地 (`_Downloads/Chemie/`，Amtliches Werk)
 
 - KLP Chemie 2022全文：`klp_chemie_2022.pdf`
+- Runde4补缺（`_Downloads/Chemie/stansi-runde4/`，3件）：Operatoren ab2025 + Konstruktionsvorgaben ab2025 + Korrekturzeichen（此前实缺，误判已有）

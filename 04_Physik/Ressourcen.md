@@ -12,3 +12,4 @@
 
 - KLP Physik 2022全文：`klp_physik_2022.pdf`
 - Formelsammlung（Mathe-Ordner mitnutzen）：`../Mathe/formelsammlung_nrw_2024.pdf`
+- Runde4补缺（`_Downloads/Physik/stansi-runde4/`，3件）：Konstruktionsvorgaben + Korrekturzeichen + LK-Beispiele ab2025（此前实缺，误判已有）
