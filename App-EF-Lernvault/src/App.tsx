@@ -147,12 +147,33 @@ export default function App() {
     }
   };
 
-  // Global keys: Ctrl/⌘K palette · / search · Alt 1-7 tabs · L language · ? help.
+  const exportFsrs = () => {
+    const raw = localStorage.getItem("eflernvault:fsrs:v1") || '{"version":1,"cards":{}}';
+    const blob = new Blob([raw], { type: "application/json" });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = "eflernvault-fsrs-v1.json";
+    a.click();
+    URL.revokeObjectURL(url);
+  };
+
+  const jumpToLibrary = (targetQuery: string) => {
+    switchTab("library");
+    setQuery(targetQuery);
+  };
+
+  // Global keys: Ctrl/⌘K palette · Ctrl/⌘E export · / search · Alt 1-7 tabs · L language · ? help.
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
       if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === "k") {
         e.preventDefault();
         setPaletteOpen((o) => !o);
+        return;
+      }
+      if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === "e") {
+        e.preventDefault();
+        exportFsrs();
         return;
       }
       if (isTyping()) return;
@@ -233,6 +254,13 @@ export default function App() {
           a.click();
           URL.revokeObjectURL(url);
         },
+      },
+      {
+        id: "act-export-fsrs",
+        group: lang === "de" ? "Aktionen" : "操作",
+        label: lang === "de" ? "FSRS Fortschritt exportieren (JSON)" : "导出FSRS学习进度 (JSON)",
+        hint: "Strg E",
+        run: exportFsrs,
       },
       {
         id: "act-lang",
@@ -353,10 +381,10 @@ export default function App() {
         <div key={tab} className="tab-enter flex-1 overflow-y-auto p-8">
           {tab === "library" && <Library query={query} vault={vault?.notes ?? null} selectedFach={selectedFach} />}
           {tab === "flashcards" && <Flashcards lang={lang} vault={vault?.cards ?? null} />}
-          {tab === "quiz" && <Quiz />}
-          {tab === "tutor" && <Tutor lang={lang} />}
-          {tab === "planner" && <Planner />}
-          {tab === "mindmap" && <Mindmap />}
+          {tab === "quiz" && <Quiz lang={lang} vault={vault?.notes ?? null} onJumpToLibrary={jumpToLibrary} />}
+          {tab === "tutor" && <Tutor lang={lang} vaultNotes={vault?.notes ?? null} onJumpToLibrary={jumpToLibrary} />}
+          {tab === "planner" && <Planner lang={lang} vaultNotes={vault?.notes ?? null} />}
+          {tab === "mindmap" && <Mindmap lang={lang} vaultNotes={vault?.notes ?? null} onJumpToLibrary={jumpToLibrary} />}
           {tab === "reise" && <ReiseModule lang={lang} vaultReisen={vault?.reisen ?? null} />}
         </div>
       </main>

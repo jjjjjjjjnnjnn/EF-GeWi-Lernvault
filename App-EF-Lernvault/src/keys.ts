@@ -16,6 +16,7 @@ export const GLOBAL_SHORTCUTS: Shortcut[] = [
   { keys: "Alt 1–7", de: "Modul wechseln", zh: "切换模块" },
   { keys: "L", de: "Sprache DE/ZH", zh: "中德切换" },
   { keys: "?", de: "Tastaturhilfe", zh: "快捷键帮助" },
+  { keys: "Strg/⌘ E", de: "FSRS Fortschritt exportieren", zh: "导出FSRS进度" },
   { keys: "Esc", de: "Schließen / zurück", zh: "关闭/返回" },
 ];
 
