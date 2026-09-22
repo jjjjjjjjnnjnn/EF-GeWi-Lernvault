@@ -172,6 +172,17 @@ export const t = (lang: Lang) => ({
     lang === "de"
       ? "Wirklich alle lokalen Daten löschen (FSRS, Plan, XP, KI-Key, Einrichtung)?"
       : "确定清除全部本地数据吗（记忆进度、规划、积分、Key、引导状态）？",
+  stSync: lang === "de" ? "Cloud-Sync (eigener Server)" : "云同步（自备服务器）",
+  stSyncEndpoint: lang === "de" ? "Sync-Endpoint (https://…)" : "同步地址（https://…）",
+  stSyncToken: lang === "de" ? "Token (optional)" : "令牌（可选）",
+  stSyncPush: lang === "de" ? "Hochladen" : "上传",
+  stSyncPull: lang === "de" ? "Herunterladen" : "下载",
+  stSyncOk: (n: number, dir: string) =>
+    lang === "de" ? `Sync ok: ${n} Schlüssel ${dir}.` : `同步成功：${dir}${n}个键。`,
+  stSyncErr:
+    lang === "de" ? "Sync fehlgeschlagen — Endpoint/Netz prüfen." : "同步失败——检查地址与网络。",
+  stSyncLast:
+    lang === "de" ? "Letzter Sync" : "上次同步",
   stAboutText:
     lang === "de"
       ? "EF-Lernvault v0.2.0-curriculum — lokal, offline-fähig. Vault ist einzige Quelle, App schreibt nie zurück."

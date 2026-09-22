@@ -44,6 +44,14 @@ vault md/csv → vault/parser（frontmatter/Block/CSV五列）
 `eflernvault:fsrs:v1`（经 storage.ts）· `eflernvault:xp:v1` · `eflernvault:vergleich:v1` ·
 `eflernvault:feedback:v1` · `eflernvault:plan:v1` · `eflernvault:onboarding:v1` · `eflernvault:interleave:v1` ·
 `eflernvault:lang` · `eflernvault:ai:v1`（Key 明文 + embedModel，见 AI-SETUP 风险告知）
+· `eflernvault:sync:v1`（endpoint/token/lastSync；Key material nur lokal）
+
+### Cloud-Protokoll（自备服务器实现，任意技术栈）
+
+- `GET {endpoint}/{key}` → `{ "value": "<raw-string>" }`，缺失回 404（客户端视为 null）
+- `PUT {endpoint}/{key}` + `{ "value": "<raw-string>" }` → 2xx
+- 鉴权：`Authorization: Bearer <token>`（token 为空则不带头）；key 须 `encodeURIComponent`
+- 语义：本地常驻（离线可用）；上传=全量 keys 覆盖；下载=服务端赢；冲突不合并（以后加 updatedAt 再谈）
 
 ## 5. 测试（`npm run test:run` 全绿门禁）
 
@@ -53,3 +61,21 @@ vault md/csv → vault/parser（frontmatter/Block/CSV五列）
 · `engine/stores`（legacy-heben/后端切换）· `engine/rag`（切分引用/检索/拼装/校验）
 · `engine/embed`（余弦/排序/mock-fetch/mock-pipeline/降级链/缓存）
 · `engine/interleave`（默认/覆盖/排序）· `engine/overview`（空档/到期/掌握度/计划率/倒计时）
+· `engine/sync`（mock-server roundtrip/404/500/头规范）· `engine/embed` stage-2（claim切分/阈值/缓存复用）
+· `flow`（vault→chunk→retrieve→quiz→rubric→lernsitzung→overview 全链模拟）
+· `modules`（Home/Library/Settings 渲染冒烟 + 芯片清除/同步报错交互）
+
+## 6. 视觉契约（给外部AI：只换皮，不改语义；行为见 §3）
+
+- Token（`index.css`）：纸面 `#FAFAF7` / 墨 `#1C1B17` / 灰 `#6B675C` / 线 `#E5E1D8` / 强调 `#4338CA`；
+  离线系统字体（serif 标题 + sans 正文 + mono 数据）；16×16 手绘细线 SVG 图标；禁 emoji
+- 导航：侧栏 8 学习 tab（主页首位）+ 底部独立设置区（分割线 + Alt 9）；顶栏=搜索 + 状态；
+  命令面板（Strg/⌘K）+ `?` 帮助 + 右下反馈浮窗常驻
+- 组件清单（改皮时逐个认领）：Home 四统计 + 优先重背 chips + 掌握度条；Library 学科徽章 + filter-chip +
+  双列阅读；Flashcards 翻卡 + 1-4 评分 + 拖拽；Quiz 五步 drill + 对比双栏 + 四维 rubric pills +
+  错题补丁 + 送回按钮；Tutor 对话 + 引用 chips + ohne-Beleg/Unsicher/Semantik 标记 + 引擎标签；
+  Planner 倒计时 + 周任务勾选；Mindmap 学科分组叶节点；Reise 五型步骤播放器 + XP/徽章；
+  Settings 六节 + 云同步区；Onboarding 三步全屏
+- 断点：桌面双列（Library/Quiz）；窄屏 <640px 单列堆叠、触摸目标 ≥40px；德语长词允许 break-words
+- 红线：引用 `[Pfad#Zeile]` 必须可点击回跳；降级标记（ohne Beleg/Unsicher）不可藏；
+  快捷键以 `keys.ts` 为唯一真相源（改键先登记）

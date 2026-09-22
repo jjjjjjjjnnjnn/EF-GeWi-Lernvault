@@ -15,7 +15,7 @@ import {
   findFallbackNote,
   verifySupport,
 } from "../engine/rag";
-import { retrieveHybrid } from "../engine/embed";
+import { retrieveHybrid, chunkVectors, claimVectors, verifySemantic } from "../engine/embed";
 
 interface Message {
   id: string;
@@ -111,9 +111,23 @@ export default function Tutor({
 
       // Support-verifier (string-stufe): fremde [pfad#zeile] -> unsicher-markierung
       const support = verifySupport(reply, chunks);
-      const checkedReply = support.supported
+      let checkedReply = support.supported
         ? reply
         : `${reply}\n\n(Unsicher — Beleg nicht im Vault gefunden: ${support.missing.join(", ")}. Bitte prüfen / 请核对。)`;
+      // Stage-2 (nur L1/L2-vektor): unbelegte behauptungen markieren, fehler -> still
+      if (level === "L1" || level === "L2") {
+        try {
+          const vecs = await chunkVectors(chunks, level);
+          const rep = await verifySemantic(checkedReply, [...vecs.values()], (t) => claimVectors(t, level));
+          const weak = rep.claims.filter((c) => !c.backed).slice(0, 2);
+          if (weak.length > 0) {
+            const short = weak.map((c) => (c.claim.length > 60 ? `${c.claim.slice(0, 60)}…` : c.claim));
+            checkedReply += `\n\n(Semantik-Check: schwach belegt — „${short.join("“ / „")}“ … bitte am Vault prüfen.)`;
+          }
+        } catch {
+          // embedder weg -> string-stufe gilt
+        }
+      }
 
       setMessages((prev) => [
         ...prev,

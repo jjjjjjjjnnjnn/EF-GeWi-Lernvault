@@ -15,13 +15,16 @@ vi.mock("@huggingface/transformers", () => ({
 }));
 
 import {
+  chunkVectors,
   clearVecCache,
   cosSim,
   embedViaApi,
   resetLocalEmbedder,
   retrieveHybrid,
   scoreClaimSupport,
+  splitClaims,
   topByScore,
+  verifySemantic,
 } from "./embed";
 import type { TextChunk } from "./rag";
 
@@ -89,6 +92,41 @@ describe("embedViaApi (L2)", () => {
   });
 });
 
+describe("stage-2 semantik", () => {
+  const fakeEmbed = async (texts: string[]) =>
+    texts.map((t) => (/staat/i.test(t) ? [1, 0] : [0, 1]));
+  const chunkVecs = [[1, 0]];
+
+  it("splitClaims: kurz-zeilen + reine refs raus", () => {
+    expect(splitClaims("Hi!\nDer Staat regelt den sozialen Ausgleich. [08_SoWi/t.md#1]\nOK")).toEqual([
+      "Der Staat regelt den sozialen Ausgleich",
+    ]);
+  });
+
+  it("verifySemantic: backed vs. unbelegt", async () => {
+    const r = await verifySemantic(
+      "Der Staat regelt den Ausgleich. Der Mond ist aus Käse gemacht.",
+      chunkVecs,
+      fakeEmbed,
+      0.5
+    );
+    expect(r.claims).toHaveLength(2);
+    expect(r.claims[0].backed).toBe(true);
+    expect(r.claims[1].backed).toBe(false);
+    expect(r.backed).toBe(false);
+  });
+
+  it("leer -> backed true (nichts zu pruefen)", async () => {
+    expect((await verifySemantic("Hi!", chunkVecs, fakeEmbed)).backed).toBe(true);
+    expect((await verifySemantic("Der Staat regelt den Ausgleich.", [], fakeEmbed)).backed).toBe(true);
+  });
+
+  it("chunkVectors nutzt cache-weg (mock-pipeline)", async () => {
+    const m = await chunkVectors(CHUNKS, "L1");
+    expect(m.size).toBe(3);
+    expect(m.get("08_SoWi/t.md#1")).toBeDefined();
+  });
+});
 describe("retrieveHybrid", () => {
   it("vector off -> L0 (exakt, kein modell-kontakt)", async () => {
     const r = await retrieveHybrid(CHUNKS, "Staat", 8, { vector: "off" });

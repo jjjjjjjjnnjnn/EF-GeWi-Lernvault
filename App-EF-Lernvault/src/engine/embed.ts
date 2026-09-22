@@ -46,6 +46,45 @@ export function scoreClaimSupport(claimVec: number[], chunkVecs: number[][]): nu
   return best;
 }
 
+export interface ClaimReport {
+  claim: string;
+  support: number; // 0-1 (max-kosinus zu chunks)
+  backed: boolean; // support >= schwelle
+}
+
+export interface SemanticReport {
+  claims: ClaimReport[];
+  backed: boolean; // alle claims backed (leere antwort = true)
+}
+
+/** Antwort -> saetze (claims); kurz-zeilen/gruesse fallen raus. */
+export function splitClaims(answer: string): string[] {
+  return answer
+    .split(/[.!?。！？\n]+/)
+    .map((s) => s.trim())
+    .filter((s) => s.length >= 15 && !/^\[.*\]$/.test(s));
+}
+
+/**
+ * Stage-2: jede behauptung gegen chunk-vektoren scoren.
+ * embedFn injizierbar (tests ohne modell; runtime: embedLocal/embedViaApi).
+ */
+export async function verifySemantic(
+  answer: string,
+  chunkVecs: number[][],
+  embedFn: (texts: string[]) => Promise<number[][]>,
+  threshold = 0.5
+): Promise<SemanticReport> {
+  const claims = splitClaims(answer);
+  if (claims.length === 0 || chunkVecs.length === 0) return { claims: [], backed: true };
+  const vecs = await embedFn(claims);
+  const out: ClaimReport[] = claims.map((claim, i) => {
+    const support = scoreClaimSupport(vecs[i] ?? [], chunkVecs);
+    return { claim, support, backed: support >= threshold };
+  });
+  return { claims: out, backed: out.every((c) => c.backed) };
+}
+
 // ---------- L2: api-embeddings (OpenAI-kompatibel) ----------
 
 export async function embedViaApi(
@@ -160,6 +199,25 @@ async function vecsFor(
   return out;
 }
 
+/** Chunk-vektoren zur stufe (fuer stage-2); wirft wenn embedder fehlt. */
+export async function chunkVectors(
+  chunks: TextChunk[],
+  level: "L2" | "L1",
+  onProgress?: (pct: number, text: string) => void
+): Promise<Map<string, number[]>> {
+  const fn = level === "L2" ? (t: string[]) => embedViaApi(t) : (t: string[]) => embedLocal(t, onProgress);
+  return vecsFor(chunks, fn);
+}
+
+/** Claim-vektoren zur stufe (fuer stage-2). */
+export async function claimVectors(
+  claims: string[],
+  level: "L2" | "L1",
+  onProgress?: (pct: number, text: string) => void
+): Promise<number[][]> {
+  const fn = level === "L2" ? (t: string[]) => embedViaApi(t) : (t: string[]) => embedLocal(t, onProgress);
+  return fn(claims);
+}
 /** Mobil (coarse pointer) default-aus: modell-download + wasm zu schwer. */
 export function isCoarsePointer(): boolean {
   try {
