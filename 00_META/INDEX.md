@@ -42,6 +42,7 @@
 - Konsum & Wirtschaften (Kap. 8) — [Konsum-Wirtschaften](../08_SoWi/Texte-Analyse/Konsum-Wirtschaften.md)（概念链/经济人批判/可持续）
 - Soziale Marktwirtschaft (Kap. 9) — [Soziale-Marktwirtschaft](../08_SoWi/Texte-Analyse/Soziale-Marktwirtschaft.md)（Smith/弗莱堡/艾哈德/生态，配Lernreise L1）
 - Betrieb & Mitbestimmung (Kap. 10) — [Betrieb-Mitbestimmung](../08_SoWi/Texte-Analyse/Betrieb-Mitbestimmung.md)（ Arbeit 4.0/两模式/共决三级/罢工案）
+- Marktwirtschaft in der Krise (Kap. 11) — [Marktwirtschaft-Krise](../08_SoWi/Texte-Analyse/Marktwirtschaft-Krise.md)（竞争/最低工资/能源三难，SoWi收官✅）
 - Soziale Ungleichheit — [Soziale-Ungleichheit](../08_SoWi/Texte-Analyse/Soziale-Ungleichheit.md)（EF最高频，Template v2首篇：Pro/Contra+三数+5 Klausur-Sätze）
 - Karikatur方法 — [Karikatur-Anleitung](../08_SoWi/Texte-Analyse/Karikatur-Anleitung.md)
 - 电子书11章地图 — [Sowi-NRW-EF-Buch-Navigator](../08_SoWi/Texte-Analyse/Sowi-NRW-EF-Buch-Navigator.md)（C.C.Buchner click & study，需学校登录；Ungleichheit无专章）

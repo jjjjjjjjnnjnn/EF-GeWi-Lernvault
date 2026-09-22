@@ -98,4 +98,11 @@ tags: [EF, Meta]
 | Arbeit 4.0 | 工作4.0 | SoWi | √ |
 | Kurzarbeit | 短工制 | SoWi | √ |
 
+| Mindestlohnkommission | 最低工资委员会 | SoWi | √ |
+| Aufstocker | 补差救济工 | SoWi | √ |
+| Wettbewerbspolitik | 竞争政策 | SoWi | √ |
+| Energiewende | 能源转型 | SoWi | √ |
+| Versorgungssicherheit | 供应安全 | SoWi | √ |
+| Preisbremse | 价格刹车 | SoWi | √ |
+
 > 每科笔记的新术语同步回此表一行，保持唯一真相源。
