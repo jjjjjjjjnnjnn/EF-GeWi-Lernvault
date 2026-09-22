@@ -40,6 +40,7 @@
 - Partizipation (Kap. 6) — [Partizipation](../08_SoWi/Texte-Analyse/Partizipation.md)（青年参与/直接民主/公民委员会）
 - Wehrhafte Demokratie (Kap. 7) — [Wehrhafte-Demokratie](../08_SoWi/Texte-Analyse/Wehrhafte-Demokratie.md)（三色极端/民粹/NPD案）
 - Konsum & Wirtschaften (Kap. 8) — [Konsum-Wirtschaften](../08_SoWi/Texte-Analyse/Konsum-Wirtschaften.md)（概念链/经济人批判/可持续）
+- Soziale Marktwirtschaft (Kap. 9) — [Soziale-Marktwirtschaft](../08_SoWi/Texte-Analyse/Soziale-Marktwirtschaft.md)（Smith/弗莱堡/艾哈德/生态，配Lernreise L1）
 - Soziale Ungleichheit — [Soziale-Ungleichheit](../08_SoWi/Texte-Analyse/Soziale-Ungleichheit.md)（EF最高频，Template v2首篇：Pro/Contra+三数+5 Klausur-Sätze）
 - Karikatur方法 — [Karikatur-Anleitung](../08_SoWi/Texte-Analyse/Karikatur-Anleitung.md)
 - 电子书11章地图 — [Sowi-NRW-EF-Buch-Navigator](../08_SoWi/Texte-Analyse/Sowi-NRW-EF-Buch-Navigator.md)（C.C.Buchner click & study，需学校登录；Ungleichheit无专章）

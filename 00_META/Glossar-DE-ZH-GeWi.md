@@ -84,4 +84,11 @@ tags: [EF, Meta]
 | Nachhaltigkeit | 可持续性 | SoWi | √ |
 | Verbraucherpolitik | 消费者政策 | SoWi | √ |
 
+| unsichtbare Hand | 看不见的手 | SoWi | √ |
+| Preismechanismus | 价格机制 | SoWi | √ |
+| Ordoliberalismus | 秩序自由主义 | SoWi | √ |
+| Tarifautonomie | 劳资自治 | SoWi | √ |
+| Externalität | 外部性 | SoWi | √ |
+| Nachtwächterstaat | 守夜国家 | SoWi | √ |
+
 > 每科笔记的新术语同步回此表一行，保持唯一真相源。
