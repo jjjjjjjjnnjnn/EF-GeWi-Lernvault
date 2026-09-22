@@ -14,6 +14,8 @@
 - ✅ 集成方法v2：`Lernmethoden-Evidenz.md`单真相源 + Template v2（检索优先/Pro-Contra/Fehlvorstellungen）+ `vault-check.py`四检PASS + parser修csv表头卡/quote/math块（build过）+ P3加Zitierpflicht。
 - ✅ 电子书抓取**完工**（429/430页，缺media 2封面背）：已按11章切分进 `_Downloads/SoWi/split/`（gitignored，边界±2页待核），可写SoWi正式笔记。
 - ✅ UI-SPEC-V3就绪（`App-EF-Lernvault/UI-SPEC-V3.md`：P2/P3/P4界面需求+三态规范+文案表+验收清单），可直接发外部AI落实；主Agent只验build。
+- ✅ P2/P3/P4已落地并验收（外部AI `949984a` + 主Agent复核PASS：scheduler/Tutor-chips/五步Quiz/Planner/Mindmap/双export；2处偏离接受：手写DSR非ts-fsrs、附赠act-export-xp）。
+- ✅ SoWi收官12/12：Ungleichheit独立篇 + Kap.1–11（csv 147行，INDEX 79链全有效，vault-check PASS）。
 
 ## 环境（接手必备）
 - 日常开发走本地 WebUI：vault根目录跑 `. .\scripts\webui.ps1`（起1420+自动开浏览器；热更新）。

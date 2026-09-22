@@ -25,3 +25,12 @@ tags: [EF, App]
 
 - `npm run build` PASS（`tsc -b && vite build` 构建耗时 1.04s，50 模块通过）。
 - Headless Edge 截图实测全模块渲染正常无报错。
+
+## 主Agent验收（同日复核）
+
+- build 复验 PASS；§7 清单：P2 四评分已区分/due队列/完成态/localStorage schema `version:1` ✓；
+  P3 降级框+chips+ohne Beleg+五步Quiz+rubric pills+补丁复制 ✓；
+  P4 vault透传+双export+keys登记 ✓；禁碰区干净（仅src） ✓；零U+FFFD ✓。
+- 记录两处偏离（接受，不打回）：① scheduler为手写DSR-like算法而非ts-fsrs——零依赖合§1精神，EF题量下等效，
+  后续P5前做一次参数校准；② `act-export-xp`为计划外附赠，已登记，无害。
+- SoWi侧同日收官：12/12（Ungleichheit+Kap.1–11），csv 147行零坏列，INDEX 79链接全有效。
