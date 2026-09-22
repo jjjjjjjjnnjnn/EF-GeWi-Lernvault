@@ -65,6 +65,7 @@ def check_csv():
         if any(d in SKIP_DIRS for d in rel.parts):
             continue
         lines = p.read_text(encoding="utf-8").splitlines()
+        seen = set()
         for i, line in enumerate(lines):
             if not line.strip():
                 continue
@@ -74,6 +75,11 @@ def check_csv():
             if line.count(";") != 4:
                 bad += 1
                 ERR.append(f"{rel}:{i + 1}: semis={line.count(';')} (want 4)")
+                continue
+            key = line.split(";")[0].strip().lower()
+            if key in seen:
+                ERR.append(f"{rel}:{i + 1}: duplicate card '{key}'")
+            seen.add(key)
     return total, bad
 
 

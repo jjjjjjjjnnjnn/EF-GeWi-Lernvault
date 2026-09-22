@@ -91,4 +91,11 @@ tags: [EF, Meta]
 | Externalität | 外部性 | SoWi | √ |
 | Nachtwächterstaat | 守夜国家 | SoWi | √ |
 
+| Betriebsrat | 企业委员会 | SoWi | √ |
+| Aufsichtsrat | 监事会 | SoWi | √ |
+| Shareholder | 股东 | SoWi | √ |
+| Stakeholder | 利益相关人 | SoWi | √ |
+| Arbeit 4.0 | 工作4.0 | SoWi | √ |
+| Kurzarbeit | 短工制 | SoWi | √ |
+
 > 每科笔记的新术语同步回此表一行，保持唯一真相源。
