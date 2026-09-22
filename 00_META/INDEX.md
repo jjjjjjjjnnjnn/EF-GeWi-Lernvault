@@ -122,6 +122,7 @@
 - [2026-09-23-phase-a-lern-engine](Journal/2026-09-23-phase-a-lern-engine.md) — Phase A完工：48单测/engine检索+存储/设置下沉/LEARNING-ENGINE契约
 - [2026-09-23-phase-b-lern-engine](Journal/2026-09-23-phase-b-lern-engine.md) — Phase B完工：存储收敛/RAG三档/交错回流/主页tab（97单测全绿）
 - [2026-09-23-c-runde-sim-test](Journal/2026-09-23-c-runde-sim-test.md) — C轮：语义stage-2/云Backend/视觉契约/全链模拟（113单测全绿）
+- [2026-09-23-d-runde-reise-ki](Journal/2026-09-23-d-runde-reise-ki.md) — D轮：Reise动态化FelloFish式（图解修复+自动讲解+写作评分改写循环，128单测）
 - 约定：文件名 `YYYY-MM-DD-<thema>.md`，头部frontmatter（`fach`可空，`tags: [EF, Meta]`）。
 
 ## Dataview（Obsidian内自动索引，GitHub上仅作备份显示）

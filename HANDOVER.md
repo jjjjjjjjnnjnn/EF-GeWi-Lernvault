@@ -6,6 +6,7 @@
 1. 本文件 → 2. `AGENTS.md`（规范） → 3. `00_META/INDEX.md`（导航） → 4. 目标学科 `Lehrplan.md` → 5. `00_META/Journal/` 最新一篇（当前上下文）。
 
 ## 当前状态（2026-09-23晚·三轮审核已验）
+- ✅ D轮Reise动态化（`[SoWi] 284b5b6`+`[App] 9e959ca`）：diagram独立块+LLM-SVG/自动讲解追问/提交即点评/写作评分改写循环（FelloFish式）；128单测/build/vault-check(38/203/121)/1420全过（Journal 2026-09-23-d-runde-reise-ki）。
 - ✅ C轮（`[App] 924facb`）：语义stage-2+云Backend（显式push/pull）+视觉契约§6+全链模拟测试；113单测/build/vault-check(38/203/120)/1420全过（Journal 2026-09-23-c-runde-sim-test）。
 - ✅ Phase B Lern-Engine（`[App] 24ec1ba`）：存储收敛+Backend接口 / RAG三档（L2-API/L1-jina-de/L0）+verifySupport / 交错开关+错题回流 / 主页tab+Alt1-9；97单测/build/vault-check(38/203/119)/1420全过（Journal 2026-09-23-phase-b-lern-engine）。
 - ✅ Phase A Lern-Engine（`[App] 505f205`）：48单测全绿 + `engine/`存储/检索层 + 设置沉底独立 + LEARNING-ENGINE.md契约；test:run/build/vault-check(38/203/118)/1420全过（Journal 2026-09-23-phase-a-lern-engine）。
