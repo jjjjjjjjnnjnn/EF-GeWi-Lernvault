@@ -72,6 +72,7 @@
 - [2026-09-22-integration-v2](Journal/2026-09-22-integration-v2.md) — 集成方法v2（记录·设计·执行）
 - [2026-09-22-ebook-ui-spec-v3](Journal/2026-09-22-ebook-ui-spec-v3.md) — 电子书完工切分+UI-SPEC-V3
 - [2026-09-22-ui-spec-v3-implementation](Journal/2026-09-22-ui-spec-v3-implementation.md) — P2/P3/P4落地+主Agent验收（2处偏离接受）
+- [2026-09-22-material-offensive](Journal/2026-09-22-material-offensive.md) — 考纲真题教材批量落地（80文件/1.15GB）
 - 约定：文件名 `YYYY-MM-DD-<thema>.md`，头部frontmatter（`fach`可空，`tags: [EF, Meta]`）。
 
 ## Dataview（Obsidian内自动索引，GitHub上仅作备份显示）

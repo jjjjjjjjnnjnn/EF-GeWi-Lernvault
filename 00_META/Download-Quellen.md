@@ -14,6 +14,24 @@ tags: [EF, Meta]
 > 大文件一律进本地 `_Downloads/`（gitignore，不推送）；仓库只留本清单 + 自己写的笔记。
 > 每条记录：URL + 许可 + 本地文件名 + 状态（pending/ok）。下载后在 `_Downloads/` 同目录放同名 `.quelle.txt` 写来源与许可。
 
+## Material-Offensive 2026-09-22（脚本 `scripts/fetch-material.py` + fixup，一键重跑）
+
+| # | 包 | 内容 | 许可 | 本地 | 状态 |
+|---|---|---|---|---|---|
+| M1 | KMK Bildungsstandards Abi | Deutsch + Englisch (Fortgef-FS) 全文 | KMK, frei | `_Downloads/Deutsch+Englisch/kmk_bildungsstandards_*` | ok |
+| M2 | Klett IQB-Themenfelder Englisch 2024-26 | 8 Themenbereiche→Green Line映射 | Klett, Unterrichtsgebrauch erlaubt | `_Downloads/Englisch/klett_iqb_themenfelder_*` | ok |
+| M3 | OpenStax ×4 | Biology 2e (392MB) / Chemistry 2e (213MB) / College-Physics 2e (257MB) / Psychology 2e (56MB) | CC BY-NC-SA, nur lokal | `_Downloads/{Bio,Chemie,Physik,Philosophie}/openstax-*_WEB.pdf` | ok |
+| M4 | StanSi Vorgaben 2027–2029 | Mathe/Deutsch/Englisch/Physik/Chemie/Bio 六科 | MSB NRW, UrhWissG 60b Lehr-/Lernzwecke | `_Downloads/<Fach>/stansi_*_2027|2028|2029_gg.pdf` | ok |
+| M5 | StanSi Operatoren+Konstruktion | Englisch ab2025/Klausuren Okt2025/Physik/Chemie(Formeldokument!)/Bio/Deutsch | 同上 | `_Downloads/<Fach>/stansi_*.pdf` | ok |
+| M6 | IQB Pool Mathe | 2017 Analysis (CAS/WTR, 6套) | IQB/KMK frei | `_Downloads/Mathe/iqb_2017*.pdf` | ok |
+| M7 | IQB Pool Englisch | Hörverstehen 2021–23 + Mediation 2021/2025 | 同上 | `_Downloads/Englisch/iqb_202*e*.pdf` | ok |
+| M8 | IQB Pool Deutsch | Analyse/Erörterung 2022–24 + Beispielaufgaben (Interpretation/materialgestützt) | 同上 | `_Downloads/Deutsch/iqb_202*.pdf` | ok |
+| M9 | IQB Pool NaWi 2025–26 | Physik/Chemie/Bio (含2026新题！) | 同上 | `_Downloads/{Physik,Chemie,Bio}/iqb_202*.pdf` | ok |
+| M10 | 本地总量 | 约80新文件，`_Downloads/` 共1121件/1.15GB（全gitignored） | — | — | ok |
+
+> 缺口（需人工，见对话傻瓜指南）：StanSi Login墙内近3年真题（找老师要 Zugangsdaten）/ Stark纸书（按下单买）/
+> bpb IzPB 354纸质免费订 / 课堂Klausur拍照 / Lektüre+Topic+ Halbjahr-Thema。
+
 ## SoWi（优先）
 
 | # | 文件 | 许可 | URL | 本地 | 状态 |
