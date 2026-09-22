@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { isTyping } from "../keys";
 import { t, type Lang } from "../i18n";
+import FeedbackBox from "../components/FeedbackBox";
 import type { VaultNote } from "../vault/parser";
 import {
   generateQuizFromNote,
@@ -1550,6 +1551,16 @@ Zitiere für jede Sachkritik exakt [${currentVergleich.sourceRef}].`;
           )}
         </div>
       )}
+
+      {/* Dev-Feedback: in-place notes with exact quiz context */}
+      <FeedbackBox
+        lang={lang}
+        context={
+          drillMode === "klausur"
+            ? `quiz:${currentQuiz?.notePath ?? "mock"}`
+            : `vergleich:${currentVergleich?.id ?? currentVergleich?.thema ?? "?"}`
+        }
+      />
     </div>
   );
 }

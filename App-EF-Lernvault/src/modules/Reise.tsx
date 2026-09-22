@@ -10,6 +10,7 @@ import {
 } from "../reise";
 import { FAECHER } from "../fach";
 import Blocks from "../components/Blocks";
+import FeedbackBox from "../components/FeedbackBox";
 import { isTyping } from "../keys";
 import type { Lang } from "../i18n";
 
@@ -186,6 +187,27 @@ export default function ReiseModule({
     if (!unlocked.includes(nextIdx)) {
       setUnlocked((prev) => [...prev, nextIdx]);
       addXP(xpReward, nextIdx - 1);
+    }
+  };
+
+  // Relative navigation: works for any course layout (v3 courses have
+  // 8 steps with repeated typs, so fixed indices 1/2/3 are wrong).
+  // Advances to stepIdx+1, or finishes the course on the last step.
+  const isLastStep =
+    !!activeCourse && stepIdx + 1 >= activeCourse.schritte.length;
+  const goNextOrFinish = (xpReward: number) => {
+    if (!activeCourse) return;
+    if (stepIdx + 1 < activeCourse.schritte.length) {
+      unlockNextStep(stepIdx + 1, xpReward);
+      setStepIdx(stepIdx + 1);
+    } else {
+      addXP(xpReward, stepIdx);
+      alert(
+        lang === "de"
+          ? `Kurs abgeschlossen! +${xpReward} XP`
+          : `恭喜完成本课程！+${xpReward} XP`
+      );
+      setActiveCourse(null);
     }
   };
 
@@ -493,13 +515,14 @@ export default function ReiseModule({
 
                 <div className="pt-4 border-t border-[#E5E1D8] flex justify-end">
                   <button
-                    onClick={() => {
-                      unlockNextStep(1, 5);
-                      setStepIdx(1);
-                    }}
+                    onClick={() => goNextOrFinish(5)}
                     className="px-5 py-2 font-mono text-xs uppercase tracking-wider bg-[#1C1B17] text-white hover:bg-[#4338CA] rounded-sm transition-colors"
                   >
-                    {lang === "de"
+                    {isLastStep
+                      ? lang === "de"
+                        ? "Abschließen (+5 XP) ✓"
+                        : "完成课程 (+5 XP) ✓"
+                      : lang === "de"
                       ? "Verstanden & Weiter (+5 XP) →"
                       : "已理解，下一步 (+5 XP) →"}
                   </button>
@@ -561,9 +584,9 @@ export default function ReiseModule({
                         return;
                       }
                       setTryFeedback(
-                        "Treffer! Zuordnung erkannt. Kernpunkte: Staatliche Ordnung vs. Wettbewerbsfreiheit."
+                        "Versuch notiert — prüfe dich mit der Musterlösung / 已记录作答，对照解析自查。"
                       );
-                      unlockNextStep(2, 15);
+                      unlockNextStep(stepIdx + 1, 15);
                     }}
                     className="px-4 py-2 font-mono text-xs uppercase border border-[#E5E1D8] hover:border-[#1C1B17] rounded-sm transition-colors text-[#1C1B17]"
                   >
@@ -571,15 +594,21 @@ export default function ReiseModule({
                   </button>
 
                   <button
-                    disabled={!unlocked.includes(2)}
-                    onClick={() => setStepIdx(2)}
+                    disabled={!unlocked.includes(stepIdx + 1)}
+                    onClick={() => goNextOrFinish(15)}
                     className={`px-5 py-2 font-mono text-xs uppercase tracking-wider rounded-sm transition-colors ${
-                      unlocked.includes(2)
+                      unlocked.includes(stepIdx + 1)
                         ? "bg-[#1C1B17] text-white hover:bg-[#4338CA]"
                         : "bg-[#E5E1D8] text-[#6B675C] cursor-not-allowed"
                     }`}
                   >
-                    {lang === "de" ? "Weiter (+15 XP) →" : "下一步 (+15 XP) →"}
+                    {isLastStep
+                      ? lang === "de"
+                        ? "Abschließen (+15 XP) ✓"
+                        : "完成课程 (+15 XP) ✓"
+                      : lang === "de"
+                      ? "Weiter (+15 XP) →"
+                      : "下一步 (+15 XP) →"}
                   </button>
                 </div>
               </div>
@@ -685,17 +714,20 @@ export default function ReiseModule({
                       </span>
                       <button
                         disabled={!allDone}
-                        onClick={() => {
-                          unlockNextStep(3, 20);
-                          setStepIdx(3);
-                        }}
+                        onClick={() => goNextOrFinish(20)}
                         className={`px-5 py-2 font-mono text-xs uppercase tracking-wider rounded-sm transition-colors ${
                           allDone
                             ? "bg-[#1C1B17] text-white hover:bg-[#4338CA]"
                             : "bg-[#E5E1D8] text-[#6B675C] cursor-not-allowed"
                         }`}
                       >
-                        {lang === "de" ? "Weiter (+20 XP) →" : "下一步 (+20 XP) →"}
+                        {isLastStep
+                          ? lang === "de"
+                            ? "Abschließen (+20 XP) ✓"
+                            : "完成课程 (+20 XP) ✓"
+                          : lang === "de"
+                          ? "Weiter (+20 XP) →"
+                          : "下一步 (+20 XP) →"}
                       </button>
                     </div>
                   );
@@ -900,6 +932,14 @@ export default function ReiseModule({
                   </button>
                 </div>
               </div>
+            )}
+
+            {/* Dev-Feedback: in-place notes with exact step context */}
+            {activeCourse && currentSchritt && (
+              <FeedbackBox
+                lang={lang}
+                context={`${activeCourse.id}#Schritt${currentSchritt.stepNumber}`}
+              />
             )}
           </div>
         </div>
