@@ -332,6 +332,7 @@ export default function App() {
       <div className="h-screen overflow-y-auto bg-[#FAFAF7] text-[#1C1B17] antialiased">
         <Onboarding
           lang={lang}
+          onLangChange={setLang}
           vaultConnected={vault !== null}
           vaultMsg={vaultMsg}
           onOpenVault={() => void openVault()}

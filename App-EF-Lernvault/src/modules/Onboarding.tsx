@@ -48,12 +48,14 @@ export function saveOnboarding(r: OnboardingResult) {
 
 export default function Onboarding({
   lang,
+  onLangChange,
   vaultConnected,
   vaultMsg,
   onOpenVault,
   onFinish,
 }: {
   lang: Lang;
+  onLangChange: (l: Lang) => void;
   vaultConnected: boolean;
   vaultMsg: string;
   onOpenVault: () => void;
@@ -89,8 +91,27 @@ export default function Onboarding({
 
   return (
     <div className="mx-auto max-w-2xl px-6 py-14">
-      <h1 className="font-serif text-3xl text-[#1C1B17]">{tr.obTitle}</h1>
-      <p className="mt-2 font-sans text-sm text-[#6B675C]">{tr.obSub}</p>
+      <div className="flex items-start justify-between gap-4">
+        <div>
+          <h1 className="font-serif text-3xl text-[#1C1B17]">{tr.obTitle}</h1>
+          <p className="mt-2 font-sans text-sm text-[#6B675C]">{tr.obSub}</p>
+        </div>
+        {/* Sprache direkt auf der Startseite (DE = Prüfungssprache, ZH = Verstehenssprache) */}
+        <div className="flex shrink-0 overflow-hidden rounded-sm border border-[#E5E1D8]" role="group" aria-label="Sprache / 语言">
+          {(["de", "zh"] as Lang[]).map((l) => (
+            <button
+              key={l}
+              onClick={() => onLangChange(l)}
+              aria-pressed={lang === l}
+              className={`px-3 py-1.5 font-mono text-xs transition-colors duration-150 ${
+                lang === l ? "bg-[#1C1B17] text-[#FAFAF7]" : "bg-white text-[#6B675C] hover:text-[#4338CA]"
+              }`}
+            >
+              {l === "de" ? "DE" : "中文"}
+            </button>
+          ))}
+        </div>
+      </div>
 
       {/* Schritt-Anzeige: Nummern + Haarlinie, kein Kartenstapel */}
       <ol className="mt-8 flex items-center gap-0 border-b border-[#E5E1D8] pb-4">
