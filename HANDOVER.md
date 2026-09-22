@@ -5,8 +5,10 @@
 ## 新agent阅读顺序（5分钟接手）
 1. 本文件 → 2. `AGENTS.md`（规范） → 3. `00_META/INDEX.md`（导航） → 4. 目标学科 `Lehrplan.md` → 5. `00_META/Journal/` 最新一篇（当前上下文）。
 
-## 当前状态（2026-09-23午）
-- ✅ 缺口清理：Dokument 20破案（Buchner S.154–158 Impfpflicht/M21–M25，笔记+§8b+M23先例）；Notenlehre-Stufe-4源头截断（256KiB无EOF）待重发；问老师德语三问已拟（Journal 2026-09-23-luecken）。
+## 当前状态（2026-09-23晚）
+- ✅ App首次使用流：三步引导（Vault→Fächer三态→Klausurtermin进Lernplan）+ 默认语言跟系统（兜底德语，可切换持久化）+ 落地Lernreise；build 1.15s，1420冒烟200（Journal 2026-09-23-onboarding）。
+- ✅ 联网补缺口（用户拍板不等老师，假设版待核对）：Musik Halbjahr假设=IF1+IF2维也纳古典/奏鸣曲式+Stufe-4音程爬梯（csv新12卡）/ Deutsch Drama三选一（Dürrenmatt Besuch/Physiker、Frisch Andorra）+通用工具箱 / Englisch Teil-B双轨（HV四题型+Mediation三段式，官方评分表链）；vault-check PASS（notes=38 csv=203）。
+- ✅ 缺口清理：Dokument 20破案（Buchner S.154–158 Impfpflicht/M21–M25，笔记+§8b+M23先例）；Notenlehre-Stufe-4源头截断（256KiB无EOF）待重发（§5b为公开结构反推假设版）；问老师德语三问已拟（Journal 2026-09-23-luecken）。
 - ✅ 老师资料R4–R8（五agent并行，一科一commit）：Philo新笔记Plickat五问+Operatoren映射（csv+6）/ Musik新笔记Beethoven-Motiv+Hör-Bausteine（HEIC 4/4 ffmpeg转码成功；Notenlehre-Stufe-4 PDF截断待补）/ Mathe补Spickzettel八缺口+新建Fehlerlog（Zwei-Punkte符号错两条）/ Physik新笔记ggB训练（Excel四步+3,6换算）/ Bio新笔记Zellbiologie+Open-Book-Checkliste（dreamstime图只转述不复制）；原件全进`_Downloads/<Fach>/lehrer-2026-09/`+quelle。
 - ✅ 老师资料R1–R3（三agent并行，一科一commit）：SoWi富化Kap.4/Kap.6/Karikatur（Unterrichts-Anker+自制Lückentext，csv+2）/ Deutsch新笔记Lyrik-Sturm-Drang-Goethe（AB1四步+6 Mittel+Deutungshypothese-Lückentext，csv+8）/ Englisch新笔记Role-Models-Analysis（Teil A三任务链+P.E.E.+Comment句型，csv+10）；原件全进`_Downloads/<Fach>/lehrer-2026-09/`+quelle（gitignored），vault零原文复制；名单/Codes截图永不入库。vault-check PASS（notes=36 csv=181 links=102）。
 - ✅ 归属纠正：`2_Werkzeugkasten`实为SoWi Buchner S.148–153（WkV1–WkV5，无文本层，内容未进笔记）；`Fragen über Fragen`+09-21扫描归Philo（已归档，R4已落地Plickat笔记）；`Sprachdetektive`连字符改名已注quelle。
@@ -21,7 +23,7 @@
 - ✅ Klett Green Line Transition (ab 2024) Medien：23/23收官（mp3×9+mp4×14全验头+quelle.txt），落`_Downloads/Englisch/klett-bridge/`，Klett版权本地永不提交。
 - ✅ P2/P3/P4已落地并验收（外部AI `949984a` + 主Agent复核PASS；2处偏离接受）；抓取脚本锁全部原子化（fetch.lock/klett-fetch.lock防双跑）。
 - ✅ 骨架：Obsidian vault + git + CC-BY-SA + link-check CI + `_Downloads/`(gitignore约1480件/3.0GB) + `Anlagen/`。
-- ✅ 10/10学科骨架：SoWi/Philo填实；Deutsch开动（Lyrik笔记+csv 37行，待Drama名）/Englisch开动（Role Models笔记+csv 39行，Topic定，待Teil B）；MINT四科KLP校准+Formel-Spickzettel(KaTeX)+Mathe/Physik/Bio训练笔记；Musik口试开动（Beethoven-Motiv，待Halbjahr确认）；Sport口试骨架。
+- ✅ 10/10学科骨架：SoWi/Philo填实；Deutsch开动（Lyrik+Drama候选笔记，csv 43行，待老师定书名）/Englisch开动（Role Models+Teil-B双轨笔记，csv 43行，Topic定，待定考轨）；MINT四科KLP校准+Formel-Spickzettel(KaTeX)+Mathe/Physik/Bio训练笔记；Musik口试开动（Beethoven-Motiv+Halbjahr假设+csv 12卡，待确认）；Sport口试骨架。
 - ✅ 官方弹药：SoWi/Philo/Deutsch/Englisch/Mathe全套Operatoren+Konstruktion+Korrekturzeichen+Beispiele；Formelsammlung NRW 2024。
 - ✅ Playwright电子书脚手架就绪（`scripts/ebook-fetch/`，等用户登录一次）。
 - ✅ App需求：FEATURE-SPEC + UI-SPEC-V2；**外部AI已落地**（`b17999d`）：10科徽章+KaTeX离线公式+Lernreise第7模块（5步态+gating+XP localStorage），`npm run build`亲验通过；课程4个（SoWi-L1示范 + Philo-L2试点 + Musik-Höranalyse-L1 + Sport-Bewegung-L1，均muendlich步）。
