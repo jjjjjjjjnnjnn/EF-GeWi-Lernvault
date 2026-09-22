@@ -5,7 +5,11 @@
 ## 新agent阅读顺序（5分钟接手）
 1. 本文件 → 2. `AGENTS.md`（规范） → 3. `00_META/INDEX.md`（导航） → 4. 目标学科 `Lehrplan.md` → 5. `00_META/Journal/` 最新一篇（当前上下文）。
 
-## 当前状态（2026-09-21）
+## 当前状态（2026-09-22）
+- ✅ SoWi收官12/12：Ungleichheit独立篇 + Kap.1–11（csv 147行，INDEX 82链全有效，vault-check PASS）。
+- ✅ Material两轮：`_Downloads/` 1302件/2.33GB（全gitignored）——KMK考纲全科+StanSi Vorgaben 27–29+IQB Pool+OpenStax×4+bpb IzPB354全文+Sozialbericht 2024(41MB)+ZKE-Mathe全套；脚本`fetch-material(3).py`+fixup可重跑。
+- ✅ Klett Green Line Transition (ab 2024) Medien：用户Bildungslogin一次，5单元23媒体已下18（manifest记账），最后5个（01_t1×1+02_t2×1+05_t5×3）后台断点续跑；落`_Downloads/Englisch/klett-bridge/`，Klett版权本地永不提交。
+- ✅ P2/P3/P4已落地并验收（外部AI `949984a` + 主Agent复核PASS；2处偏离接受）；抓取脚本锁全部原子化（fetch.lock/klett-fetch.lock防双跑）。
 - ✅ 骨架：Obsidian vault + git + CC-BY-SA + link-check CI + `_Downloads/`(gitignore, 39件官方PDF已下) + `Anlagen/`。
 - ✅ 10/10学科骨架：SoWi/Philo填实；Deutsch/Englisch KLP2023校准+csv各30条（等Lektüre/Topic）；MINT四科KLP校准+Formel-Spickzettel(KaTeX)；Musik/Sport口试骨架。
 - ✅ 官方弹药：SoWi/Philo/Deutsch/Englisch/Mathe全套Operatoren+Konstruktion+Korrekturzeichen+Beispiele；Formelsammlung NRW 2024。
@@ -24,9 +28,9 @@
 - DeepTutor家目录：`C:\Users\rongj\.deeptutor-home`（vault外）。LM Studio需开着（模型llama-3-sauerkrautlm-8b-instruct）。
 
 ## 待办（按优先级）
-1. 电子书跑完 → 按11章切分清洗 → 写SoWi正式笔记（INDEX/Glossar/csv三同步）。
-2. 用户贴：Deutsch Lektüre + Englisch Topic/Teil-B类型 + 课堂笔记。
-3. P2（ts-fsrs）→ P3（LM混合组卷）→ P5（发版）。
+1. Klett最后5媒体跑完 → 验收（点名+抽查试播）→ 单元→IQB主题映射表。
+2. 用户贴：Deutsch Lektüre + Englisch Topic/Teil-B类型 + 课堂笔记 → 开下一科（写→三同步→vault-check→一科一commit）。
+3. 近3年真题Login墙（找老师要Zugangsdaten）+ Stark纸书 + P5发版（最后）。
 
 ## 铁律
 - 一次只做一科一commit（前缀`[SoWi]/[Philo]/[Meta]/[Deutsch]/[Englisch]/[App]`）；`data/`、`_Downloads/`、`*.apkg`、App构建产物（`target|gen|dist|*.key|*.exe|*.msi`）永不进git；只写原创笔记（版权红线见AGENTS.md §4）。

@@ -41,8 +41,8 @@ tags: [EF, Meta]
 | N3 | KMK NaWi 2020 | Bio/Chemie/Physik Bildungsstandards Abi | `_Downloads/{Bio,Chemie,Physik}/kmk_bildungsstandards_*_abi.pdf` | ok |
 | N4 | IQB深挖 (+36) | Mathe另6套/Englisch Schreiben×2/Deutsch Interpretation×5/NaWi各6 | `_Downloads/<Fach>/iqb_*` | ok |
 | N5 | StanSi深挖 | Deutsch Konstruktion+Gedichtvergleich+Ma-LK / Englisch Zieltextformate-Tabelle(1.5MB!)/Mathe Operatoren26+GK-Vorblatt+Pflicht/Wahlpflicht / ZKE-Mathe Vorgaben27+TeilA×4+TeilB CAS/WTR | `_Downloads/<Fach>/stansi_*` | ok |
-| N6 | 总量 | `_Downloads/` 1265件/1.23GB（全gitignored） | — | ok |
-| N7 | Klett Green Line Transition (ab 2024) Medien | 5单元23媒体（mp3+mp4），用户Bildungslogin，脚本`klett_hold/map/fetch.py` | `_Downloads/Englisch/klett-bridge/`（Klett版权，本地，永不提交） | 跑-ing |
+| N6 | 总量 | `_Downloads/` 1302件/2.33GB（全gitignored，含Klett Bridge 18/23媒体） | — | ok |
+| N7 | Klett Green Line Transition (ab 2024) Medien | 5单元23媒体（mp3+mp4），用户Bildungslogin，脚本`klett_hold/map/fetch.py` | `_Downloads/Englisch/klett-bridge/`（Klett版权，本地，永不提交） | 18/23，后台续跑最后5个 |
 
 > 确认不可下：GOSt-Prüfungsaufgaben页零直链（JS门）/ aufgaben-der-letzten-jahre需Login（0 pdf，墙实锤）/
 > IQB-HV无mp3直链（在线播放器）/ OpenStax需JS取链（已用Playwright解）/ Musik-Sport无中央考（只链Lehrplan）。
