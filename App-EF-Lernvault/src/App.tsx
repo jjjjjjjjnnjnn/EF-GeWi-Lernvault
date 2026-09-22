@@ -14,9 +14,10 @@ import Tutor from "./modules/Tutor";
 import Planner from "./modules/Planner";
 import Mindmap from "./modules/Mindmap";
 import ReiseModule from "./modules/Reise";
+import Settings from "./modules/Settings";
 import Onboarding, { loadOnboarding, saveOnboarding, type OnboardingResult } from "./modules/Onboarding";
 
-type Tab = "library" | "flashcards" | "quiz" | "tutor" | "planner" | "mindmap" | "reise";
+type Tab = "library" | "flashcards" | "quiz" | "tutor" | "planner" | "mindmap" | "reise" | "einstellungen";
 
 // Tufte Data-Ink: hand-drawn hairline nav icons, no emoji. 16x16, stroke=currentColor.
 const iconProps = {
@@ -82,13 +83,19 @@ const icons: Record<Tab, ReactNode> = {
       <path d="M10.8 5.2l-2.1 4.7-4-1.2 2.1-4.7 4 1.2z" />
     </svg>
   ),
+  einstellungen: (
+    <svg {...iconProps}>
+      <circle cx="8" cy="8" r="2.2" />
+      <path d="M8 1.6v2.1M8 12.3v2.1M1.6 8h2.1M12.3 8h2.1M3.5 3.5l1.5 1.5M11 11l1.5 1.5M12.5 3.5L11 5M5 11l-1.5 1.5" />
+    </svg>
+  ),
 };
 
 const getInitialTab = (): Tab => {
   if (typeof window !== "undefined") {
     const params = new URLSearchParams(window.location.search);
     const t = params.get("tab") as Tab;
-    if (["library", "flashcards", "quiz", "tutor", "planner", "mindmap", "reise"].includes(t)) {
+    if (["library", "flashcards", "quiz", "tutor", "planner", "mindmap", "reise", "einstellungen"].includes(t)) {
       return t;
     }
   }
@@ -148,9 +155,10 @@ export default function App() {
     { id: "planner", label: tr.planner, icon: icons.planner },
     { id: "mindmap", label: tr.mindmap, icon: icons.mindmap },
     { id: "reise", label: tr.reise, icon: icons.reise },
+    { id: "einstellungen", label: tr.settings, icon: icons.einstellungen },
   ];
 
-  const TAB_ORDER: Tab[] = ["library", "flashcards", "quiz", "tutor", "planner", "mindmap", "reise"];
+  const TAB_ORDER: Tab[] = ["library", "flashcards", "quiz", "tutor", "planner", "mindmap", "reise", "einstellungen"];
   const [paletteOpen, setPaletteOpen] = useState(false);
   const [helpOpen, setHelpOpen] = useState(false);
 
@@ -190,6 +198,17 @@ export default function App() {
     URL.revokeObjectURL(url);
   };
 
+  const exportXp = () => {
+    const raw = localStorage.getItem("eflernvault:xp:v1") || "{}";
+    const blob = new Blob([raw], { type: "application/json" });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = "eflernvault-xp.json";
+    a.click();
+    URL.revokeObjectURL(url);
+  };
+
   const jumpToLibrary = (targetQuery: string) => {
     switchTab("library");
     setQuery(targetQuery);
@@ -224,7 +243,7 @@ export default function App() {
         setHelpOpen(true);
       } else if (e.key.toLowerCase() === "l" && !e.altKey && !e.ctrlKey && !e.metaKey) {
         toggleLang();
-      } else if (e.altKey && e.key >= "1" && e.key <= "7") {
+      } else if (e.altKey && e.key >= "1" && e.key <= "8") {
         e.preventDefault();
         switchTab(TAB_ORDER[Number(e.key) - 1]);
       }
@@ -283,16 +302,7 @@ export default function App() {
         id: "act-export-xp",
         group: lang === "de" ? "Aktionen" : "操作",
         label: lang === "de" ? "XP-Fortschritt exportieren (JSON)" : "导出学习积分与进度 (JSON)",
-        run: () => {
-          const raw = localStorage.getItem("eflernvault:xp:v1") || "{}";
-          const blob = new Blob([raw], { type: "application/json" });
-          const url = URL.createObjectURL(blob);
-          const a = document.createElement("a");
-          a.href = url;
-          a.download = "eflernvault-xp.json";
-          a.click();
-          URL.revokeObjectURL(url);
-        },
+        run: exportXp,
       },
       {
         id: "act-export-fsrs",
@@ -320,6 +330,13 @@ export default function App() {
         label: lang === "de" ? "Tastaturhilfe" : "快捷键帮助",
         hint: "?",
         run: () => setHelpOpen(true),
+      },
+      {
+        id: "act-settings",
+        group: lang === "de" ? "Aktionen" : "操作",
+        label: tr.settings,
+        hint: "Alt 8",
+        run: () => switchTab("einstellungen"),
       },
     ],
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -407,50 +424,44 @@ export default function App() {
             {vaultMsg && (
               <span className="hidden font-mono text-[11px] text-[#6B675C] lg:block">{vaultMsg}</span>
             )}
+            {/* Einstellungen-Hub: Sprache · Vault · KI · Export · Hilfe — alles an einem Ort (Alt 8) */}
             <button
-              onClick={() => void openVault()}
+              onClick={() => switchTab("einstellungen")}
               className="flex items-center gap-1.5 rounded-sm border border-[#E5E1D8] bg-white px-3 py-1.5 text-xs font-sans text-[#1C1B17] hover:border-[#4338CA] hover:text-[#4338CA] active:scale-95 transition-all duration-150"
-              title={lang === "de" ? "Lokalen Vault-Ordner öffnen" : "打开本地知识库文件夹"}
+              title={`${tr.settings} (Alt 8)`}
             >
               <svg width="13" height="13" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                <path d="M1.5 4.5a1 1 0 0 1 1-1h3.2l1.3 1.6h6.5a1 1 0 0 1 1 1v5.4a1 1 0 0 1-1 1h-11a1 1 0 0 1-1-1V4.5z" />
+                <circle cx="8" cy="8" r="2.2" />
+                <path d="M8 1.6v2.1M8 12.3v2.1M1.6 8h2.1M12.3 8h2.1M3.5 3.5l1.5 1.5M11 11l1.5 1.5M12.5 3.5L11 5M5 11l-1.5 1.5" />
               </svg>
-              {lang === "de" ? "Vault öffnen" : "打开知识库"}
-            </button>
-            <button
-              onClick={() => setPaletteOpen(true)}
-              className="rounded-sm border border-[#E5E1D8] bg-white px-3 py-1.5 text-xs font-sans text-[#1C1B17] hover:border-[#4338CA] hover:text-[#4338CA] active:scale-95 transition-all duration-150"
-              title="Strg/⌘ K"
-            >
-              {lang === "de" ? "Befehle" : "命令"}
-              <kbd className="ml-2 font-mono text-[10px] text-[#6B675C]">Strg K</kbd>
-            </button>
-            <button
-              onClick={() => setLang((l) => (l === "zh" ? "de" : "zh"))}
-              className="rounded-sm border border-[#E5E1D8] bg-white px-3 py-1.5 text-xs font-sans text-[#1C1B17] hover:border-[#4338CA] hover:text-[#4338CA] active:scale-95 transition-all duration-150"
-              title="Sprache umschalten / 切换语言 (L)"
-            >
-              {lang === "zh" ? "DE / 德语" : "ZH / 中文"}
-            </button>
-            <button
-              onClick={() => setHelpOpen(true)}
-              className="rounded-sm border border-[#E5E1D8] bg-white px-3 py-1.5 font-mono text-xs text-[#6B675C] hover:border-[#4338CA] hover:text-[#4338CA] active:scale-95 transition-all duration-150"
-              title="Tastaturhilfe / 快捷键 (?)"
-            >
-              ?
+              {tr.settings}
+              <kbd className="ml-1 font-mono text-[10px] text-[#6B675C]">Alt 8</kbd>
             </button>
           </div>
         </header>
 
         {/* Content Viewport */}
         <div key={tab} className="tab-enter flex-1 overflow-y-auto p-8">
-          {tab === "library" && <Library query={query} vault={vault?.notes ?? null} selectedFach={selectedFach} />}
+          {tab === "library" && <Library query={query} vault={vault?.notes ?? null} selectedFach={selectedFach} onClearQuery={() => setQuery("")} />}
           {tab === "flashcards" && <Flashcards lang={lang} vault={vault?.cards ?? null} />}
           {tab === "quiz" && <Quiz lang={lang} vault={vault?.notes ?? null} onJumpToLibrary={jumpToLibrary} />}
           {tab === "tutor" && <Tutor lang={lang} vaultNotes={vault?.notes ?? null} onJumpToLibrary={jumpToLibrary} />}
           {tab === "planner" && <Planner lang={lang} vaultNotes={vault?.notes ?? null} />}
           {tab === "mindmap" && <Mindmap lang={lang} vaultNotes={vault?.notes ?? null} onJumpToLibrary={jumpToLibrary} />}
           {tab === "reise" && <ReiseModule lang={lang} vaultReisen={vault?.reisen ?? null} />}
+          {tab === "einstellungen" && (
+            <Settings
+              lang={lang}
+              onLangChange={setLang}
+              vaultConnected={vault !== null}
+              vaultMsg={vaultMsg}
+              onOpenVault={() => void openVault()}
+              onExportFsrs={exportFsrs}
+              onExportXp={exportXp}
+              onRedoOnboarding={() => setObOpen(true)}
+              onOpenHelp={() => setHelpOpen(true)}
+            />
+          )}
         </div>
       </main>
       <Palette open={paletteOpen} onClose={() => setPaletteOpen(false)} items={paletteItems} />

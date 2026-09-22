@@ -132,4 +132,26 @@ export const t = (lang: Lang) => ({
   aiHideSettings: lang === "de" ? "Einklappen" : "收起",
   aiLocalLoading: (p: number) =>
     lang === "de" ? `Lokales Modell lädt … ${Math.round(p * 100)} %` : `本地模型下载中…${Math.round(p * 100)}%`,
+
+  // Einstellungen (Settings-Hub)
+  settings: lang === "de" ? "Einstellungen" : "设置",
+  stLanguage: lang === "de" ? "Sprache" : "语言",
+  stSource: lang === "de" ? "Wissensquelle" : "知识库",
+  stAi: lang === "de" ? "KI-Engine" : "AI引擎",
+  stData: lang === "de" ? "Daten & Export" : "数据与导出",
+  stKeys: lang === "de" ? "Tastaturkürzel" : "快捷键",
+  stAbout: lang === "de" ? "Über" : "关于",
+  stVaultOpen: lang === "de" ? "Vault-Ordner öffnen" : "打开知识库文件夹",
+  stVaultDemo: lang === "de" ? "Kein Vault verbunden — Demo-Modus mit Beispieldaten." : "未连接知识库——正用示例数据演示。",
+  stOpenHelp: lang === "de" ? "Tastaturhilfe öffnen" : "打开快捷键帮助",
+  stExportXp: lang === "de" ? "XP-Fortschritt exportieren" : "导出学习积分",
+  stWipe: lang === "de" ? "Alle App-Daten löschen" : "清除全部应用数据",
+  stWipeConfirm:
+    lang === "de"
+      ? "Wirklich alle lokalen Daten löschen (FSRS, Plan, XP, KI-Key, Einrichtung)?"
+      : "确定清除全部本地数据吗（记忆进度、规划、积分、Key、引导状态）？",
+  stAboutText:
+    lang === "de"
+      ? "EF-Lernvault v0.2.0-curriculum — lokal, offline-fähig. Vault ist einzige Quelle, App schreibt nie zurück."
+      : "EF-Lernvault v0.2.0-curriculum——本地、支持离线。知识库是唯一内容源，App从不写回。",
 });

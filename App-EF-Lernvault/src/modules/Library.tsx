@@ -28,7 +28,7 @@ function fromVault(n: VaultNote): Shown {
   return { id: n.id, fach: n.fach, thema: n.thema, sub: n.path, operatoren: n.operatoren, klausurrelevant: n.klausurrelevant, blocks: n.blocks };
 }
 
-export default function Library({ query, vault, selectedFach }: { query: string; vault: VaultNote[] | null; selectedFach?: string }) {
+export default function Library({ query, vault, selectedFach, onClearQuery }: { query: string; vault: VaultNote[] | null; selectedFach?: string; onClearQuery?: () => void }) {
   const shown: Shown[] = vault ? vault.map(fromVault) : mockNotes.map(fromMock);
   const [fach, setFach] = useState(selectedFach ?? "alle");
   const [openId, setOpenId] = useState(shown[0]?.id ?? "");
@@ -117,6 +117,24 @@ export default function Library({ query, vault, selectedFach }: { query: string;
             );
           })}
         </div>
+
+        {/* Aktiver Suchfilter: sichtbar + ein Klick zum Löschen.
+            (Früher filterte eine vergessene Suche aus Palette/Zitaten die
+            Liste unsichtbar — „Alle (4), aber nur 1 Karte".) */}
+        {q && (
+          <div className="flex items-center justify-between gap-2 border border-[#4338CA]/40 bg-[#4338CA]/5 px-2 py-1.5 rounded-sm">
+            <span className="truncate font-mono text-[11px] text-[#4338CA]">
+              Filter: “{query.trim()}” · {list.length} Treffer
+            </span>
+            <button
+              onClick={() => onClearQuery?.()}
+              title="Suche löschen / 清除搜索"
+              className="shrink-0 rounded-sm border border-[#E5E1D8] bg-white px-1.5 py-0.5 font-mono text-[11px] text-[#6B675C] hover:border-[#4338CA] hover:text-[#4338CA]"
+            >
+              ×
+            </button>
+          </div>
+        )}
 
         {/* Notes List */}
         <div className="border border-[#E5E1D8] bg-white rounded-sm divide-y divide-[#E5E1D8]">

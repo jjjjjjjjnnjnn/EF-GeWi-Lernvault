@@ -46,14 +46,15 @@ export default function Flashcards({
   );
 
   const [browseOnly, setBrowseOnly] = useState(false);
-  const [queueVersion, setQueueVersion] = useState(0);
 
-  // Partition items into due / new / future
-  const { activeQueue, dueCount, newCount, totalCards } = useMemo(() => {
-    return partitionQueue(allItems);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [allItems, queueVersion]);
-
+  // Session-Snapshot: Die Warteschlange wird EINMAL pro Sitzung eingefroren.
+  // (partitionQueue nach jeder Bewertung neu zu rechnen, schrumpft die
+  // Liste von beiden Enden — die Sitzung war nach ~der Hälfte „fertig".)
+  // Again-Karten werden ans Sitzungsende zurückgelegt (klassisch).
+  const [session, setSession] = useState<{ items: CardItem[]; newCount: number }>({
+    items: [],
+    newCount: 0,
+  });
   const [idx, setIdx] = useState(0);
   const [flip, setFlip] = useState(false);
   const [drag, setDrag] = useState(0);
@@ -66,6 +67,8 @@ export default function Flashcards({
   const badgeTimer = useRef<number | null>(null);
 
   useEffect(() => {
+    const { activeQueue, newCount } = partitionQueue(allItems);
+    setSession({ items: activeQueue, newCount });
     setIdx(0);
     setFlip(false);
     setDrag(0);
@@ -73,9 +76,11 @@ export default function Flashcards({
     setSessionAgain(0);
     setBrowseOnly(false);
     setTransientBadge(null);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [vault]);
 
-  const currentItems = browseOnly ? allItems : activeQueue;
+  const currentItems = browseOnly ? allItems : session.items;
+  const totalCards = allItems.length;
   const card = currentItems[idx] ?? null;
   const isFinished = !browseOnly && (currentItems.length === 0 || idx >= currentItems.length);
 
@@ -96,9 +101,10 @@ export default function Flashcards({
       setSessionDone((d) => d + 1);
       if (rating === 1) {
         setSessionAgain((a) => a + 1);
+        // Again → ans Sitzungsende zurücklegen (wird heute nochmals fällig).
+        setSession((s) => ({ ...s, items: [...s.items, card] }));
       }
       setIdx((i) => i + 1);
-      setQueueVersion((v) => v + 1);
     } else {
       // In browse mode, simply advance
       setIdx((i) => (i + 1) % allItems.length);
@@ -220,7 +226,7 @@ export default function Flashcards({
     );
   }
 
-  const remainingDue = Math.max(0, dueCount - idx);
+  const remainingDue = browseOnly ? 0 : Math.max(0, currentItems.length - idx);
 
   return (
     <div className="mx-auto max-w-xl space-y-4">
@@ -243,7 +249,7 @@ export default function Flashcards({
               ? lang === "de"
                 ? "Nur Durchsicht (kein Zähler)"
                 : "仅浏览模式（不计入排程）"
-              : `${tr.dueToday(remainingDue, totalCards)} · ${tr.newCards(newCount)}`}
+              : `${tr.dueToday(remainingDue, totalCards)} · ${tr.newCards(session.newCount)}`}
           </span>
           {transientBadge && (
             <span className="text-[#4338CA] font-medium bg-[#ECE7DC]/60 px-1.5 py-0.2 rounded-sm transition-opacity duration-300">
