@@ -81,3 +81,15 @@ tags: [EF, SoWi, Politik]
 - **新增关系链三（wählt/ernennt 动词链）**：Bundestag 选 Kanzler（Kanzler 提名部长）→ Bundespräsident 提名 Kanzler 人选并任命 Kanzler+部长；Bundestag 与 Bundesrat 各选一半 BVerfG 法官；选民一票选 Bundestag、一票选州议会，州议会再派代表进 Bundesversammlung、州政府派代表进 Bundesrat。
 - 德语 Klausur-Satz: `Die Bundesversammlung besteht zur Hälfte aus Bundestagsmitgliedern und zur Hälfte aus Länderdelegierten; sie wählt den Bundespräsidenten.`
 - 德语 Klausur-Satz: `Der Gemeinsame Ausschuss (zwei Drittel Bundestag, ein Drittel Bundesrat) sichert als „Notparlament" die Handlungsfähigkeit im Ausnahmezustand.`
+
+## 8b. Kap 4.3 Impfpflicht-Zeitstrahl (Buchner S.154–158, M21–M25, eigene Worte, Scan nur lokal)
+
+> 中文：这就是 Praxis-Politik 截图里那道"画 Zeitstrahl S.154–158"作业的完整底料。只记转述+数字，不抄书。
+
+- **12.01.2022（M24A）**：Scholz 首次政府问询挺 Impfpflicht（只限成人），理由"打不打不只是私事，医院要腾床位"。同时 Regierung 交不出统一草案（Ampel 内部分歧），只能走 fraktionsübergreifende Gruppenanträge。
+- **26.01.2022（M24B）**：Orientierungsdebatte，三小时，摆上桌面：成人版 / Ü50 版 / 强制咨询版 / AfD 反对版；不打 Fraktionszwang，Abgeordnete 可跨党投票。
+- **07.04.2022（M24C）**：namentliche Abstimmung 全灭——妥协版 ab 60（296 Ja / 378 Nein / 9 Enth.）、Union 版（172 / 496 / 9）、Kubicki 反对版（85 / 590 / 12）、AfD 版（79 / 606）。结论：Impfpflicht gescheitert。
+- **M25 Zimmermann-These（一句话）**：各党派打小算盘（Klein-Klein）、没人真想要 Kompromiss，国会错失 Vorsorge-Chance——这是 Leitfrage"Koalitionszwang schuld?"的 Contra 弹药（不是缺党纪，是缺合作意愿）。
+- **M23 法理锚（一句话）**：freies Mandat (Art.38) 平时被 Fraktionsdisziplin 覆盖（Mannschaftsspiel-Logik），只在 Gewissensfragen 放开——Merkel 2017"“Ehe für alle”"就是先例（CDU/CSU 放开投票）。
+- 德语 Klausur-Satz (Zeitstrahl): `Vom Scholz-Vorstoß (12.01.2022) über die Orientierungsdebatte (26.01.2022) bis zum Scheitern aller Anträge in namentlicher Abstimmung (07.04.2022) zeigt der Fall: Ohne Fraktionszwang fehlte die Mehrheit.`
+- 德语 Klausur-Satz (Leitfrage): `Die Impfpflicht scheiterte nicht am fehlenden Zwang, sondern am fehlenden Kompromisswillen — freies Mandat ohne Mehrheit bleibt wirkungslos.`

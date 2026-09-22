@@ -25,3 +25,4 @@ tags: [EF, SoWi, Methode]
 - **beurteilen（按上面 3 走）**：Kriterium=Repräsentation + Gewissensfreiheit；Pro 党纪（稳定执政）/ Contra（掏空 Art.38）；Urteil-Baustein（2 句，直接背）:
   - `Die Karikatur überzeichnet, aber sie trifft den Kern: Fraktionsdisziplin schränkt das freie Mandat faktisch ein.`
   - `Bei Gewissensfragen (Sterbehilfe, Impfpflicht) ist der Verzicht auf Fraktionszwang geboten — sonst wird Art. 38 GG zur Dekoration.`
+- **Zweitbeleg M23（转述）**：Merkel 2017 把"Ehe für alle"放开为 Gewissensentscheidung（CDU/CSU 可自由投票）——Klausur 里这是"党纪有例外"的标准例，与漫画主例正好一正一反。
