@@ -21,6 +21,7 @@ import {
   isLocalEmbedderReady,
   resetLocalEmbedder,
 } from "../engine/embed";
+import { applyQuickPreset } from "../ai/autoDispatch";
 
 // KI-Einstellungen: Engine-Umschalter (API | Lokal | Aus) + Provider-Key-Modell.
 // Alles liegt in localStorage, nichts im Repo. Anleitung: App-EF-Lernvault/AI-SETUP.md
@@ -136,6 +137,49 @@ export default function AiSettings({
         )}
       </div>
 
+      {/* Ein-Klick-Schnellkonfigurationen */}
+      <div className="mt-2.5 flex flex-wrap items-center gap-1.5 pt-2 border-t border-[#E5E1D8]/60">
+        <span className="font-mono text-[10px] uppercase tracking-wider text-[#6B675C]">
+          {lang === "de" ? "Schnellprofile" : "一键配置"}:
+        </span>
+        <button
+          type="button"
+          onClick={() => {
+            const next = applyQuickPreset("local-fast");
+            setCfg(next);
+            onChanged?.();
+          }}
+          className="rounded-xs border border-[#E5E1D8] bg-white px-2 py-0.5 font-mono text-[11px] text-[#1C1B17] hover:border-[#4338CA] hover:text-[#4338CA] transition-colors"
+          title="LM Studio / Ollama (Port 1234), 极速模式"
+        >
+          ⚡ {lang === "de" ? "Lokal-Schnell (1234)" : "本地极速 (1234)"}
+        </button>
+        <button
+          type="button"
+          onClick={() => {
+            const next = applyQuickPreset("deep-study");
+            setCfg(next);
+            onChanged?.();
+          }}
+          className="rounded-xs border border-[#E5E1D8] bg-white px-2 py-0.5 font-mono text-[11px] text-[#1C1B17] hover:border-[#4338CA] hover:text-[#4338CA] transition-colors"
+          title="深度考点多维解析模式"
+        >
+          🧠 {lang === "de" ? "Tiefen-Analyse" : "深度考点解析"}
+        </button>
+        <button
+          type="button"
+          onClick={() => {
+            const next = applyQuickPreset("cloud-free-fast");
+            setCfg(next);
+            onChanged?.();
+          }}
+          className="rounded-xs border border-[#E5E1D8] bg-white px-2 py-0.5 font-mono text-[11px] text-[#1C1B17] hover:border-[#4338CA] hover:text-[#4338CA] transition-colors"
+          title="SiliconFlow Qwen3-8B 永久免费极速"
+        >
+          🌐 {lang === "de" ? "Cloud-Free (Qwen3)" : "免密云端 (Qwen3)"}
+        </button>
+      </div>
+
       {/* API-Details */}
       {cfg.engine === "api" && (
         <div className="mt-3 grid gap-2 sm:grid-cols-2">
@@ -162,6 +206,24 @@ export default function AiSettings({
               spellCheck={false}
               className="mt-1 block w-full rounded-sm border border-[#E5E1D8] bg-white px-2 py-1.5 font-mono text-xs text-[#1C1B17] focus:border-[#4338CA] focus:outline-none"
             />
+            {probe.detectedModels.length > 0 && (
+              <div className="mt-1 flex flex-wrap items-center gap-1">
+                <span className="font-mono text-[10px] text-[#6B675C]">
+                  {lang === "de" ? "Erkannt:" : "发现:"}
+                </span>
+                {probe.detectedModels.slice(0, 3).map((mName) => (
+                  <button
+                    key={mName}
+                    type="button"
+                    onClick={() => update({ model: mName })}
+                    className="font-mono text-[10px] bg-[#ECE7DC]/70 hover:bg-[#4338CA]/10 hover:text-[#4338CA] px-1.5 py-0.5 rounded-xs"
+                    title={mName}
+                  >
+                    {mName.split("/").pop()}
+                  </button>
+                ))}
+              </div>
+            )}
           </label>
           <label className="block">
             <span className="font-sans text-xs text-[#6B675C]">{tr.aiEmbedModel}</span>
