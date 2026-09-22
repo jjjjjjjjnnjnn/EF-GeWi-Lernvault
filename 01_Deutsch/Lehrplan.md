@@ -24,5 +24,6 @@ klausurrelevant: true
 ## 3. TODO（你发我后填）
 
 - [ ] Lektüre名（大概率Drama-Ganzschrift，确认书名+作者）：
+- [ ] Lyrik-Thema: Goethe Sturm und Drang (Willkommen und Abschied), Stand 2026-09-23；Drama-Ganzschrift名仍offen
 - [ ] 本学期Sachtext话题：
 - [ ] Klausurtermin:

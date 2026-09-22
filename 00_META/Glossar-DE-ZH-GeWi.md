@@ -118,3 +118,8 @@ tags: [EF, Meta]
 
 | Gemeinsamer Ausschuss | 联合委员会（紧急议会） | SoWi | Der Gemeinsame Ausschuss tagt nur im Notfall. |
 | Bundesversammlung | 联邦大会 | SoWi | Die Bundesversammlung wählt den Bundespräsidenten. |
+| lyrisches Ich | 抒情主体 | Deutsch | Das lyrische Ich ist nicht mit dem Autor gleichzusetzen. |
+| Erlebnislyrik | 体验抒情 | Deutsch | Erlebnislyrik formt Erfahrung zu Kunst. |
+| Deutungshypothese | 阐释假设 | Deutsch | Die Deutungshypothese wird zuerst aufgestellt. |
+| Enjambement | 跨行 | Deutsch | Das Enjambement beschleunigt den Lesefluss. |
+| Sturm und Drang | 狂飙突进 | Deutsch | Der Sturm und Drang stellt Gefühl über Vernunft. |
