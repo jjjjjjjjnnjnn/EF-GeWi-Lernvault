@@ -144,3 +144,10 @@ tags: [EF, Meta]
 | Momentangeschwindigkeit | 瞬时速度 | Physik | Die Momentangeschwindigkeit entspricht der Tangentensteigung. |
 | Ausgleichsgerade | 拟合直线 | Physik | Die Ausgleichsgerade fasst die Messpunkte zusammen. |
 | Messunsicherheit | 测量不确定度 | Physik | Jede Messung hat eine Messunsicherheit. |
+| Lichtmikroskop | 光学显微镜 | Bio | Das Lichtmikroskop zeigt Bakterien, aber keine Viren. |
+| Zellwand | 细胞壁 | Bio | Die Zellwand aus Zellulose stützt die Pflanzenzelle. |
+| Chloroplast | 叶绿体 | Bio | Der Chloroplast betreibt Fotosynthese. |
+| Vakuole | 液泡 | Bio | Die große Vakuole speichert Wasser und erzeugt Turgor. |
+| Gewebe | 组织 | Bio | Aus Zellen bildet sich Gewebe, daraus Organe. |
+| Organismus | 个体 | Bio | Der Organismus ist die höchste Organisationsebene. |
+| erklären | 解释 | Bio | Erklären führt ein Phänomen auf Regeln zurück. |
