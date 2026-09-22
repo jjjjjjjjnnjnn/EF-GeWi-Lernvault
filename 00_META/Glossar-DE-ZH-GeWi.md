@@ -105,4 +105,13 @@ tags: [EF, Meta]
 | Versorgungssicherheit | 供应安全 | SoWi | √ |
 | Preisbremse | 价格刹车 | SoWi | √ |
 
+| Maxime | 准则/行动格言 | Philo | √ |
+| Nutzenprinzip | 功利原则/最大幸福原则 | Philo | √ |
+| kategorischer Imperativ | 绝对命令 | Philo | √ |
+| Menschenwürde | 人的尊严 | Philo | √ |
+| Selbstzweck | 目的自身 | Philo | √ |
+| Universalisierungstest | 普遍化检验 | Philo | √ |
+| Folgenethik | 后果论/结果伦理 | Philo | √ |
+| abwägen | 权衡 | Philo | √ |
+
 > 每科笔记的新术语同步回此表一行，保持唯一真相源。
