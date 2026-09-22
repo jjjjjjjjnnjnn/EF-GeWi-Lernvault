@@ -28,4 +28,11 @@ tags: [EF, Meta]
 | kulturelles Kapital | 文化资本 | SoWi | √ |
 | Umverteilung | 再分配 | SoWi | √ |
 
+| Ich-Identität | 自我同一性 | SoWi | √ |
+| Rollenpluralismus | 角色多元 | SoWi | √ |
+| außengeleitet | 他导型 | SoWi | √ |
+| Wertewandel | 价值观变迁 | SoWi | √ |
+| Integration/Assimilation | 融合/同化 | SoWi | √ |
+| Vergleichsdruck | 比较压力 | SoWi | √ |
+
 > 每科笔记的新术语同步回此表一行，保持唯一真相源。
