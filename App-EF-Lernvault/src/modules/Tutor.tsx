@@ -83,7 +83,7 @@ export default function Tutor({
     setIsThinking(true);
     setErrorMsg(null);
 
-    // RAG-hybrid: L2 (embedModel) -> L1 (lokal, desktop) -> L0 (keyword).
+    // RAG-hybrid: L2 (embedModel) -> L1 (nur bereit/erlaubt, nie still laden) -> L0.
     // stille downgrades; L1-download mit fortschritt (lokal-%-anzeige).
     const { chunks, level } = await retrieveHybrid(chunkNotes(vaultNotes || []), q, 8, {
       onProgress: (p) => setLocalPct(p),
