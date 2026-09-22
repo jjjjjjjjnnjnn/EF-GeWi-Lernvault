@@ -6,7 +6,8 @@
 1. 本文件 → 2. `AGENTS.md`（规范） → 3. `00_META/INDEX.md`（导航） → 4. 目标学科 `Lehrplan.md` → 5. `00_META/Journal/` 最新一篇（当前上下文）。
 
 ## 当前状态（2026-09-23晚）
-- ✅ App首次使用流：三步引导（Vault→Fächer三态→Klausurtermin进Lernplan）+ 默认语言跟系统（兜底德语，可切换持久化）+ 落地Lernreise；build 1.15s，1420冒烟200（Journal 2026-09-23-onboarding）。
+- ✅ 内置双引擎AI（LM Studio摘除）：KI-Tutor顶部AI设置三段切换（API直连/本地WebLLM/关闭）+ 8服务商预设 + Key自填 + AI-SETUP手册；Quiz同引擎；Zitierpflicht保留；web-llm 0.2.85特批入包（NOTICE同步）；build过，1420在线（Journal 2026-09-23-dual-engine-ki）。
+- ✅ App首次使用流：三步引导（Vault→Fächer三态→Klausurtermin进Lernplan）+ 首页DE/中文切换 + 默认语言跟系统（兜底德语，可切换持久化）+ 落地Lernreise；build过（Journal 2026-09-23-onboarding）。
 - ✅ 联网补缺口（用户拍板不等老师，假设版待核对）：Musik Halbjahr假设=IF1+IF2维也纳古典/奏鸣曲式+Stufe-4音程爬梯（csv新12卡）/ Deutsch Drama三选一（Dürrenmatt Besuch/Physiker、Frisch Andorra）+通用工具箱 / Englisch Teil-B双轨（HV四题型+Mediation三段式，官方评分表链）；vault-check PASS（notes=38 csv=203）。
 - ✅ 缺口清理：Dokument 20破案（Buchner S.154–158 Impfpflicht/M21–M25，笔记+§8b+M23先例）；Notenlehre-Stufe-4源头截断（256KiB无EOF）待重发（§5b为公开结构反推假设版）；问老师德语三问已拟（Journal 2026-09-23-luecken）。
 - ✅ 老师资料R4–R8（五agent并行，一科一commit）：Philo新笔记Plickat五问+Operatoren映射（csv+6）/ Musik新笔记Beethoven-Motiv+Hör-Bausteine（HEIC 4/4 ffmpeg转码成功；Notenlehre-Stufe-4 PDF截断待补）/ Mathe补Spickzettel八缺口+新建Fehlerlog（Zwei-Punkte符号错两条）/ Physik新笔记ggB训练（Excel四步+3,6换算）/ Bio新笔记Zellbiologie+Open-Book-Checkliste（dreamstime图只转述不复制）；原件全进`_Downloads/<Fach>/lehrer-2026-09/`+quelle。

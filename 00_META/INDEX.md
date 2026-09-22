@@ -116,6 +116,7 @@
 - [2026-09-23-audit-2](Journal/2026-09-23-audit-2.md) — 二轮全项目审核+维护+交接（212文件干净/build过/110链全有效）
 - [2026-09-23-internet-lueckenfueller](Journal/2026-09-23-internet-lueckenfueller.md) — 联网补缺口：Musik IF1+IF2假设/Drama三选一/Teil-B双轨（待老师核对）
 - [2026-09-23-onboarding](Journal/2026-09-23-onboarding.md) — App首次使用流三步引导+系统语言默认（build过/1420冒烟200）
+- [2026-09-23-dual-engine-ki](Journal/2026-09-23-dual-engine-ki.md) — 内置双引擎AI：API直连/WebLLM本地/关闭+8预设+AI-SETUP手册（LM Studio摘除）
 - 约定：文件名 `YYYY-MM-DD-<thema>.md`，头部frontmatter（`fach`可空，`tags: [EF, Meta]`）。
 
 ## Dataview（Obsidian内自动索引，GitHub上仅作备份显示）
