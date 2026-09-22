@@ -37,6 +37,7 @@
 - Grundgesetz & Verfassungsprinzipien (Kap. 3) — [Grundgesetz-Verfassungsprinzipien](../08_SoWi/Texte-Analyse/Grundgesetz-Verfassungsprinzipien.md)（Art.1/20/79III/打架规则）
 - Verfassungsorgane (Kap. 4) — [Verfassungsorgane](../08_SoWi/Texte-Analyse/Verfassungsorgane.md)（立法路/党纪vs良心/2023选举改革）
 - Parteien & Willensbildung (Kap. 5) — [Parteien-Willensbildung](../08_SoWi/Texte-Analyse/Parteien-Willensbildung.md)（Art.21/三思潮/人民党危机/媒体）
+- Partizipation (Kap. 6) — [Partizipation](../08_SoWi/Texte-Analyse/Partizipation.md)（青年参与/直接民主/公民委员会）
 - Soziale Ungleichheit — [Soziale-Ungleichheit](../08_SoWi/Texte-Analyse/Soziale-Ungleichheit.md)（EF最高频，Template v2首篇：Pro/Contra+三数+5 Klausur-Sätze）
 - Karikatur方法 — [Karikatur-Anleitung](../08_SoWi/Texte-Analyse/Karikatur-Anleitung.md)
 - 电子书11章地图 — [Sowi-NRW-EF-Buch-Navigator](../08_SoWi/Texte-Analyse/Sowi-NRW-EF-Buch-Navigator.md)（C.C.Buchner click & study，需学校登录；Ungleichheit无专章）

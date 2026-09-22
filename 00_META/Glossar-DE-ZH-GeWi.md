@@ -63,4 +63,11 @@ tags: [EF, Meta]
 | Transmissionsriemen | 传动带 | SoWi | √ |
 | vierte Gewalt | 第四权 | SoWi | √ |
 
+| E-Partizipation | 电子参与 | SoWi | √ |
+| Volksbegehren | 公民动议 | SoWi | √ |
+| Zustimmungsquorum | 同意门槛 | SoWi | √ |
+| Bürgerrat | 公民委员会 | SoWi | √ |
+| Clicktivism | 点击行动主义 | SoWi | √ |
+| konventionell | 常规的 | SoWi | √ |
+
 > 每科笔记的新术语同步回此表一行，保持唯一真相源。
