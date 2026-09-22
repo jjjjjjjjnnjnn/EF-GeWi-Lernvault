@@ -123,3 +123,7 @@ tags: [EF, Meta]
 | Deutungshypothese | 阐释假设 | Deutsch | Die Deutungshypothese wird zuerst aufgestellt. |
 | Enjambement | 跨行 | Deutsch | Das Enjambement beschleunigt den Lesefluss. |
 | Sturm und Drang | 狂飙突进 | Deutsch | Der Sturm und Drang stellt Gefühl über Vernunft. |
+| opinion piece | 观点文章 | Englisch | Sharing personal experience makes it an opinion piece. |
+| line of argument | 论证线索 | Englisch | Follow the author's line of argument first. |
+| connotation | 隐含意义 | Englisch | Hero has a positive connotation. |
+| counterargument | 反方论点 | Englisch | A fair comment needs one counterargument. |

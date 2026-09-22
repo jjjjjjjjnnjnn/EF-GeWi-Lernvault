@@ -25,6 +25,6 @@ klausurrelevant: true
 
 ## 3. TODO（你发我后填）
 
-- [ ] Topic (大概率Identity / young adult fiction，确认)：
+- [ ] Topic：Role Models (Stand 2026-09-23, LIN)：
 - [ ] Lektüre (young adult novel?)：
 - [ ] Klausurtermin + Teil B是Sprachmittlung还是Hörverstehen（问老师）：
