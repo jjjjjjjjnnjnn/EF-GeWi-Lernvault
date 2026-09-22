@@ -43,6 +43,12 @@ tags: [EF, Meta]
 | N5 | StanSi深挖 | Deutsch Konstruktion+Gedichtvergleich+Ma-LK / Englisch Zieltextformate-Tabelle(1.5MB!)/Mathe Operatoren26+GK-Vorblatt+Pflicht/Wahlpflicht / ZKE-Mathe Vorgaben27+TeilA×4+TeilB CAS/WTR | `_Downloads/<Fach>/stansi_*` | ok |
 | N6 | 总量 | `_Downloads/` 1302件/2.33GB（全gitignored，含Klett Bridge 18/23媒体） | — | ok |
 | N7 | Klett Green Line Transition (ab 2024) Medien | 5单元23媒体（mp3+mp4），用户Bildungslogin，脚本`klett_hold/map/fetch.py` | `_Downloads/Englisch/klett-bridge/`（Klett版权，本地，永不提交） | ok（23/23，mp3×9+mp4×14全验头） |
+| N8 | NRW官源（learn:line已死→QUA-LiS/Bildungsportal直采） | 33 PDF：Mathe/Physik/Chemie/Bio KLP缺口补齐 + StanSi Handreichungen/Beispiele ab2025 + APO-GOSt现行版 | `_Downloads/<Fach>/nrw-amtlich/`（Amtliches Werk/UrhWissG 60b） | ok（23.7MB） |
+| N9 | 联邦OER（Bildungsserver/Elixier/ZUM/twillo/lernen:digital） | 29件：ZUM 7PDF+8wikitext（CC-BY-SA）+ lernen:digital 4 Broschüren + Elixier 7（许可o.A.仅本地学）+ twillo 2 | `_Downloads/<Fach>/oer-bund/` | ok（43.8MB；oercontent.nrw域名已死/twillo-Fach在墙内） |
+| N10 | 媒体库（Siemens/SESAM/FWU/LEIFI/Serlo） | Siemens 16件免登录直下（CC BY-SA，EN版可作双语）+ LEIFI/Serlo EF链接清单 | `_Downloads/<Fach>/mediathek/` + 各科Ressourcen.md外链 | ok（11.2MB；SESAM/FWU登录墙实锤零下载） |
+| N11 | Goethe Deutschstunde/DaF | 17 PDF（B2/C1 Modellsatz论证参照+TnB练习册+AB集，101MB）+ 17条外链清单→Deutsch/Englisch Ressourcen.md | `_Downloads/{Deutsch,Englisch}/goethe/`（kostenfrei本地） | ok（dlapi被Akamai墙，20+PDF转在线用） |
+| N12 | 商业/社群（只记链接，不爬） | meinUnterricht / eduki / Friedrich Verlag / GEW / #twlz / Deutsch für dich / Zeitgeister / PASCH | 各科`Ressourcen.md`商业节 | ok |
+| N13 | 总量 | `_Downloads/` 约1420件/约3.0GB（全gitignored；本轮+95件/~180MB） | — | ok |
 
 > 确认不可下：GOSt-Prüfungsaufgaben页零直链（JS门）/ aufgaben-der-letzten-jahre需Login（0 pdf，墙实锤）/
 > IQB-HV无mp3直链（在线播放器）/ OpenStax需JS取链（已用Playwright解）/ Musik-Sport无中央考（只链Lehrplan）。

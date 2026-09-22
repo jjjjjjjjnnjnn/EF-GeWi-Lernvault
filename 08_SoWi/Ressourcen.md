@@ -28,6 +28,12 @@
 - Economics 2e / Government: https://openstax.org/ (搜 Economics, American Government)
 - GitHub镜像：https://github.com/philschatz/textbooks
 
+## NRW官源本地（2026-09-22新收，`_Downloads/SoWi/nrw-amtlich/`）
+
+- Gestaltungsaufgaben-Handreichung + bilin. Operatoren + sl/vl Beispielaufgaben×4（StanSi缺口补齐）
+- lernen:digital Schulentwicklung-Broschüren（`_Downloads/SoWi/oer-bund/`，免费）
+- Hinweis: Elixier-SoWi Sek II零PDF直链（在线搜用）；twillo Fach材料在edu-sharing墙内（只记`twillo.de/oer-suche/`）
+
 ## 方法
 - Karikatur分析步骤见 `Texte-Analyse/Karikatur-Anleitung.md`
 - Statistik/Tabelle描述句型见 `Klausur-Training/Satzbausteine.md`

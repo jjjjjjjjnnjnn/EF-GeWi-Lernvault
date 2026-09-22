@@ -1,6 +1,10 @@
 # Mathe Ressourcen (只放链接)
 
 - Serlo Mathe (CC-BY-SA, Hauptquelle): https://de.serlo.org/mathe
+  - EF Analysis：ableitung（/mathe/1795）→ differenzierbarkeit（/mathe/1651）→ integral（/mathe/1595）→ hauptsatz（/mathe/2049）→ stammfunktion（/mathe/1571）
+  - Vektoren：grundbegriffe（/mathe/24442）；Stochastik hub：/mathe/1290/stochastik
+- ZUM Wanderrechnen（Grenzwerte，本地）：`_Downloads/Mathe/oer-bund/zum_wanderrechnen-grenzwerte.pdf`（CC-BY-SA）
+- QUA-LiS Mathe EP材料（本地）：`_Downloads/Mathe/nrw-amtlich/`（4份Unterrichtsmaterial，Amtliches Werk）
 - LEIFIphysik Mathe-Anteile / Schulentwicklung NRW: https://www.schulentwicklung.nrw.de/lehrplaene/
 - OpenStax Calculus (EN, CC-BY): https://openstax.org/details/books/calculus-volume-1
 
