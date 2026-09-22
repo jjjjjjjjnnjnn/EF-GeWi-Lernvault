@@ -82,7 +82,14 @@ function renderInlineMath(text: string): ReactNode {
 }
 
 // Tufte: ZH (humanist sans, gray) vs DE (old-style serif, ink). KaTeX math integrated.
-export default function Blocks({ blocks }: { blocks: Block[] }) {
+export default function Blocks({
+  blocks,
+  renderDiagram,
+}: {
+  blocks: Block[];
+  /** Reise uebergibt LLM-figur; ohne -> statisches ascii-pre (offline-fallback). */
+  renderDiagram?: (spec: string, index: number) => ReactNode;
+}) {
   return (
     <div>
       {blocks.map((b, i) => {
@@ -127,6 +134,17 @@ export default function Blocks({ blocks }: { blocks: Block[] }) {
             >
               {renderMathText(b.text)}
             </div>
+          );
+        }
+        if (b.kind === "diagram") {
+          if (renderDiagram) return <div key={i}>{renderDiagram(b.text, i)}</div>;
+          return (
+            <pre
+              key={i}
+              className="my-2 overflow-x-auto rounded-sm border border-[#E5E1D8] bg-[#FAF9F6] p-3 font-mono text-xs leading-relaxed text-[#1C1B17]"
+            >
+              {b.text}
+            </pre>
           );
         }
         if (b.kind === "math") {

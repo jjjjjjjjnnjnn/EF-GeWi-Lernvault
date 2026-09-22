@@ -52,6 +52,22 @@ describe("parseBody", () => {
     expect(blocks[1].text).toBe("fett und #hashtag");
   });
 
+  it("```diagram -> diagram-block (kein katex-futter)", () => {
+    const blocks = parseBody("Text\n```diagram\nA --> B\n```\nDanach");
+    expect(blocks.map((b) => b.kind)).toEqual(["p", "diagram", "p"]);
+    expect(blocks[1].text).toBe("A --> B");
+  });
+
+  it("```Diagram (gross) + leerer diagram-block faellt raus", () => {
+    const blocks = parseBody("```Diagram\nX\n```\n```diagram\n```");
+    expect(blocks.map((b) => b.kind)).toEqual(["diagram"]);
+  });
+
+  it("normale fences bleiben math (keine regression)", () => {
+    const blocks = parseBody("```python\nprint(1)\n```");
+    expect(blocks[0]).toMatchObject({ kind: "math" });
+  });
+
   it("leere zeilen + einzelne # -> ignoriert", () => {
     expect(parseBody("\n\n# kein header\n\n")).toEqual([]);
   });

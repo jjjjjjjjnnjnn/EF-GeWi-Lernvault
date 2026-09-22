@@ -24,6 +24,7 @@ vault md/csv → vault/parser（frontmatter/Block/CSV五列）
   → scheduler（FSRS自研简化版；prioritizeCard/prioritizeThema错题回流）
   → engine/interleave（分科默认 + override + round-robin/blocked排序）
   → engine/overview（主页数据：到期/新卡/XP/连击/掌握度/周完成率/倒计时）
+  → engine/diagram（LLM-SVG约束生成+消毒allowlist+会话缓存）+ engine/reise-ki（entdecken/ausprobieren/check/szenario prompt构造）
 ```
 
 ## 3. 交互契约（触发 → 中后端调用 → UI状态）
@@ -38,6 +39,10 @@ vault md/csv → vault/parser（frontmatter/Block/CSV五列）
 - 主页 → `buildOverview(cards)`（到期/新卡/XP/连击/掌握度=stability映射/周完成率/考试倒计时）；nextUp 跳笔记库
 - 交错 → Quiz表头开关（当前学科，默认Mathe/Physik/Chemie/Bio开）；开=跨科轮排，关=本学科置顶成块
 - 错题回流 → Quiz两处"送回背卡堆" → `prioritizeThema(cards, thema)`（仅review卡即时到期）
+- Reise动态（FelloFish式）：entdecken进步骤自动KI讲解+追问；ausprobieren提交即AI点评；
+  check设"Warum"单题讲解；szenario/muendlich提交即AI校准打分（逐rubric+句型架+改写示范，记轮次取最佳）；
+  门禁仍看手动勾选（AI只做形成性）；引擎off全回静态
+- 图解 → ```diagram围栏独立成块（纯```仍走公式）；Reise按约束出SVG（消毒+缓存），离线/失败回ASCII原稿
 
 ## 4. 存储键（`version:1`，导出=整串 JSON，用户回 Obsidian 确认；App 永不写回 vault）
 

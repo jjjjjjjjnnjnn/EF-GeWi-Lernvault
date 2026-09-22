@@ -2,9 +2,29 @@
 import { describe, expect, it, vi } from "vitest";
 import { render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
+
+// reise.ts zieht die exemplar-lektion per `?raw` ausserhalb approved-roots:
+// fuer render-tests entkoppeln (parser gehoert reise.test-sphaere, hier nur UI).
+vi.mock("./reise", () => ({
+  exemplarReise: {
+    id: "kurs-1",
+    path: "Lernreise/kurs-1.md",
+    fach: "SoWi",
+    thema: "Kurs",
+    level: 1,
+    ziel: "Klausur",
+    xp: 100,
+    schritte: [
+      { typ: "entdecken", stepNumber: 1, title: "Entdecken", rawText: "Text hier.", blocks: [{ kind: "p", text: "Text hier.", lang: "de" }] },
+      { typ: "check", stepNumber: 2, title: "Check", items: [{ id: "q1", frage: "Frage?", antwort: "Antwort." }] },
+    ],
+  },
+}));
+
 import Home from "./modules/Home";
 import Library from "./modules/Library";
 import Settings from "./modules/Settings";
+import ReiseModule from "./modules/Reise";
 import type { VaultCard, VaultNote } from "./vault/parser";
 
 const note = (thema: string, fach = "SoWi"): VaultNote => ({
@@ -58,7 +78,13 @@ describe("Library", () => {
   });
 });
 
-describe("Settings", () => {
+describe("Reise", () => {
+  it("player rendert exemplar-schritt (engine aus -> kein KI-aufruf)", () => {
+    render(<ReiseModule lang="zh" />);
+    expect(screen.getByText("Text hier.")).toBeInTheDocument();
+    expect(screen.getByText(/Kurs/)).toBeInTheDocument();
+  });
+});
   const props = {
     lang: "zh" as const,
     onLangChange: vi.fn(),
@@ -71,6 +97,7 @@ describe("Settings", () => {
     onOpenHelp: vi.fn(),
   };
 
+describe("Settings", () => {
   it("sektionen + sync-felder rendern", () => {
     render(<Settings {...props} />);
     expect(screen.getByText("设置")).toBeInTheDocument();

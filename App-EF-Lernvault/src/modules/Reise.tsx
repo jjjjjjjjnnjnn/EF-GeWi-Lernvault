@@ -10,6 +10,15 @@ import {
 } from "../reise";
 import { FAECHER } from "../fach";
 import Blocks from "../components/Blocks";
+import DiagramFig from "../components/Diagram";
+import { chat, describeActiveEngine, type ChatMsg } from "../ai/engine";
+import {
+  REISE_SYSTEM,
+  buildCheckExplainPrompt,
+  buildExplainPrompt,
+  buildSzenarioScorePrompt,
+  buildTryFeedbackPrompt,
+} from "../engine/reise-ki";
 import { setFeedbackContext } from "../components/FeedbackBox";
 import { xpStore, type XpData } from "../engine/stores";
 import { isTyping } from "../keys";
@@ -99,6 +108,37 @@ export default function ReiseModule({
   const [oralSec, setOralSec] = useState(180);
   const [oralRunning, setOralRunning] = useState(false);
   const [oralChecks, setOralChecks] = useState<boolean[]>([]);
+  const [oralText, setOralText] = useState("");
+  const [oralScore, setOralScore] = useState<{ loading: boolean; text: string; rounds: number }>({
+    loading: false,
+    text: "",
+    rounds: 0,
+  });
+
+  // D2/D3: KI-boxen je schritt (key kurs#step); engine-aus -> still (statik steht)
+  interface KiBox {
+    loading: boolean;
+    text: string;
+    chat: { q: string; a: string }[];
+  }
+  const [kiStore, setKiStore] = useState<Record<string, KiBox>>({});
+  const [kiFollow, setKiFollow] = useState("");
+  const [checkWhy, setCheckWhy] = useState<Record<string, { loading: boolean; text: string }>>({});
+  const [szenarioScore, setSzenarioScore] = useState<{ loading: boolean; text: string; rounds: number }>({
+    loading: false,
+    text: "",
+    rounds: 0,
+  });
+
+  const kiOn = () => describeActiveEngine() !== "off";
+
+  const askKi = async (msgs: ChatMsg[]): Promise<string | null> => {
+    try {
+      return await chat(msgs, { temperature: 0.3, maxTokens: 600 });
+    } catch {
+      return null;
+    }
+  };
 
   // Reset step states when activeCourse changes
   useEffect(() => {
@@ -121,6 +161,12 @@ export default function ReiseModule({
         | SchrittMuendlich
         | undefined;
       setOralChecks(step5 ? step5.selbstcheck.map(() => false) : []);
+      setOralText("");
+      setOralScore({ loading: false, text: "", rounds: 0 });
+      setKiStore({});
+      setKiFollow("");
+      setCheckWhy({});
+      setSzenarioScore({ loading: false, text: "", rounds: 0 });
     }
   }, [activeCourse]);
 
@@ -257,6 +303,54 @@ export default function ReiseModule({
   }, [allReisen, wizardFach, wizardZiel]);
 
   const currentSchritt = activeCourse?.schritte[stepIdx];
+
+  const stepKey =
+    activeCourse && currentSchritt ? `${activeCourse.id}#${currentSchritt.stepNumber}` : "";
+  const kiBox: KiBox | undefined = stepKey ? kiStore[stepKey] : undefined;
+
+  // D2: entdecken-schritt betreten -> KI-erklaerung automatisch (nur wenn engine an)
+  useEffect(() => {
+    if (!activeCourse || !currentSchritt || currentSchritt.typ !== "entdecken" || !stepKey) return;
+    const box = kiStore[stepKey];
+    if (box?.text || box?.loading) return;
+    if (describeActiveEngine() === "off") return;
+    const s = currentSchritt as SchrittEntdecken;
+    const fach = activeCourse.fach;
+    const thema = activeCourse.thema;
+    setKiStore((prev) => ({ ...prev, [stepKey]: { loading: true, text: "", chat: [] } }));
+    void askKi(buildExplainPrompt(fach, thema, s.title, s.rawText, ""))
+      .then((r) =>
+        setKiStore((prev) => ({ ...prev, [stepKey]: { loading: false, text: r ?? "", chat: [] } }))
+      );
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [stepKey]);
+
+  const sendKiFollow = () => {
+    const q = kiFollow.trim();
+    if (!q || !stepKey || !activeCourse) return;
+    const box = kiStore[stepKey];
+    setKiFollow("");
+    setKiStore((prev) => ({
+      ...prev,
+      [stepKey]: { loading: true, text: prev[stepKey]?.text ?? "", chat: prev[stepKey]?.chat ?? [] },
+    }));
+    const hist = (box?.chat ?? []).slice(-3).map((c) => `F: ${c.q}\nA: ${c.a}`).join("\n");
+    void askKi([
+      { role: "system", content: REISE_SYSTEM },
+      {
+        role: "user",
+        content: `Kurs ${activeCourse.thema} (${activeCourse.fach}). Bisher erklärt: ${(box?.text ?? "").slice(0, 500)}\n${hist}\nRückfrage: ${q}`,
+      },
+    ]).then((a) =>
+      setKiStore((prev) => {
+        const b = prev[stepKey] ?? { loading: false, text: "", chat: [] };
+        return {
+          ...prev,
+          [stepKey]: { ...b, loading: false, chat: [...b.chat, { q, a: a ?? "(KI derzeit nicht erreichbar. / AI暂时不可用。)" }] },
+        };
+      })
+    );
+  };
 
   // Report live position to the global feedback float
   useEffect(() => {
@@ -504,8 +598,65 @@ export default function ReiseModule({
             {currentSchritt?.typ === "entdecken" && (
               <div className="space-y-6">
                 <div className="prose max-w-none">
-                  <Blocks blocks={(currentSchritt as SchrittEntdecken).blocks} />
+                  <Blocks
+                    blocks={(currentSchritt as SchrittEntdecken).blocks}
+                    renderDiagram={(spec, i) => (
+                      <DiagramFig
+                        spec={spec}
+                        courseId={activeCourse.id}
+                        step={(currentSchritt as SchrittEntdecken).stepNumber}
+                        index={i}
+                        thema={activeCourse.thema}
+                        fach={activeCourse.fach}
+                        lang={lang}
+                      />
+                    )}
+                  />
                 </div>
+
+                {/* D2: KI-erklaerung (auto) + rueckfragen */}
+                {(kiBox?.loading || kiBox?.text) && (
+                  <div className="rounded-sm border border-[#4338CA]/30 bg-[#FAF9F6] p-4 space-y-3">
+                    <div className="font-mono text-[11px] uppercase tracking-wider text-[#4338CA]">
+                      KI-Erklärung · AI讲解
+                    </div>
+                    {kiBox.loading && !kiBox.text ? (
+                      <div className="font-sans text-sm text-[#6B675C]">
+                        {lang === "de" ? "KI erklärt …" : "AI讲解中…"}
+                      </div>
+                    ) : (
+                      <div className="font-sans text-sm leading-relaxed text-[#1C1B17] whitespace-pre-wrap">
+                        {kiBox.text}
+                      </div>
+                    )}
+                    {kiBox.chat.map((c, i) => (
+                      <div key={i} className="space-y-1 border-t border-[#E5E1D8] pt-2">
+                        <div className="font-sans text-xs text-[#6B675C]">→ {c.q}</div>
+                        <div className="font-sans text-sm leading-relaxed text-[#1C1B17] whitespace-pre-wrap">
+                          {c.a}
+                        </div>
+                      </div>
+                    ))}
+                    <div className="flex gap-2">
+                      <input
+                        value={kiFollow}
+                        onChange={(e) => setKiFollow(e.target.value)}
+                        onKeyDown={(e) => {
+                          if (e.key === "Enter") sendKiFollow();
+                        }}
+                        placeholder={lang === "de" ? "Nachfragen …" : "追问…"}
+                        className="flex-1 rounded-sm border border-[#E5E1D8] bg-white px-2 py-1.5 font-sans text-sm text-[#1C1B17] focus:border-[#4338CA] focus:outline-none"
+                      />
+                      <button
+                        type="button"
+                        onClick={sendKiFollow}
+                        className="rounded-sm border border-[#1C1B17] bg-[#1C1B17] px-3 py-1.5 font-mono text-xs text-white hover:bg-[#4338CA] hover:border-[#4338CA] active:scale-95 transition-all"
+                      >
+                        {lang === "de" ? "Fragen" : "发送"}
+                      </button>
+                    </div>
+                  </div>
+                )}
 
                 <div className="pt-4 border-t border-[#E5E1D8] flex justify-end">
                   <button
@@ -564,7 +715,7 @@ export default function ReiseModule({
                 </div>
 
                 {tryFeedback && (
-                  <div className="border border-[#4338CA]/30 bg-[#FAF9F6] p-3 text-xs font-mono text-[#1C1B17] rounded-sm">
+                  <div className="border border-[#4338CA]/30 bg-[#FAF9F6] p-3 text-xs font-mono text-[#1C1B17] rounded-sm whitespace-pre-wrap leading-relaxed">
                     {tryFeedback}
                   </div>
                 )}
@@ -577,9 +728,22 @@ export default function ReiseModule({
                         setTryFeedback("Bitte zuerst einen Antwortversuch eingeben.");
                         return;
                       }
-                      setTryFeedback(
-                        "Versuch notiert — prüfe dich mit der Musterlösung / 已记录作答，对照解析自查。"
-                      );
+                      const st = currentSchritt as SchrittAusprobieren;
+                      if (!kiOn()) {
+                        setTryFeedback(
+                          "Versuch notiert — prüfe dich mit der Musterlösung / 已记录作答，对照解析自查。"
+                        );
+                      } else {
+                        setTryFeedback("KI liest mit … / AI正在点评…");
+                        void askKi(
+                          buildTryFeedbackPrompt(activeCourse.thema, st.aufgabe, st.antwort ?? "", tryInput)
+                        ).then((r) =>
+                          setTryFeedback(
+                            r ??
+                              "Versuch notiert — prüfe dich mit der Musterlösung / 已记录作答，对照解析自查。"
+                          )
+                        );
+                      }
                       unlockNextStep(stepIdx + 1, 15);
                     }}
                     className="px-4 py-2 font-mono text-xs uppercase border border-[#E5E1D8] hover:border-[#1C1B17] rounded-sm transition-colors text-[#1C1B17]"
@@ -648,6 +812,32 @@ export default function ReiseModule({
                         )}
 
                         <div className="flex items-center justify-end gap-2 pt-1">
+                          {/* D2: KI-erklaerung zum warum */}
+                          <button
+                            type="button"
+                            onClick={() => {
+                              if (!kiOn() || checkWhy[item.id]?.loading) return;
+                              setCheckWhy((prev) => ({ ...prev, [item.id]: { loading: true, text: "" } }));
+                              void askKi(
+                                buildCheckExplainPrompt(item.frage, item.antwort, activeCourse.thema)
+                              ).then((r) =>
+                                setCheckWhy((prev) => ({
+                                  ...prev,
+                                  [item.id]: {
+                                    loading: false,
+                                    text: r ?? "(KI derzeit nicht erreichbar. / AI暂时不可用。)",
+                                  },
+                                }))
+                              );
+                            }}
+                            className="px-2.5 py-1 text-xs font-mono rounded-sm border border-[#E5E1D8] text-[#6B675C] hover:border-[#4338CA] hover:text-[#4338CA]"
+                          >
+                            {checkWhy[item.id]?.loading
+                              ? "…"
+                              : lang === "de"
+                                ? "Warum? KI erklärt"
+                                : "为啥？AI讲解"}
+                          </button>
                           <button
                             type="button"
                             onClick={() => {
@@ -665,6 +855,11 @@ export default function ReiseModule({
                             {isPassed ? "✓ Bestanden / 已掌握" : "Selbstcheck / 标为通过"}
                           </button>
                         </div>
+                        {checkWhy[item.id]?.text && (
+                          <div className="border-l-2 border-[#4338CA] pl-3 text-xs font-sans text-[#1C1B17] bg-[#FAF9F6] py-1.5 whitespace-pre-wrap leading-relaxed">
+                            {checkWhy[item.id].text}
+                          </div>
+                        )}
                       </div>
                     );
                   })}
@@ -795,6 +990,57 @@ export default function ReiseModule({
                   ))}
                 </div>
 
+                {/* D3: KI-bewertung (FelloFish-stil) + ueberarbeiten-runden */}
+                <div className="flex items-center gap-2">
+                  <button
+                    type="button"
+                    onClick={() => {
+                      if (!szenarioText.trim() || szenarioScore.loading) return;
+                      const sc = currentSchritt as SchrittSzenario;
+                      if (!kiOn()) return;
+                      setSzenarioScore((prev) => ({ ...prev, loading: true }));
+                      void askKi(
+                        buildSzenarioScorePrompt(
+                          activeCourse.fach,
+                          activeCourse.thema,
+                          sc.situation,
+                          sc.rubricPoints,
+                          szenarioText
+                        )
+                      ).then((r) =>
+                        setSzenarioScore((prev) => ({
+                          loading: false,
+                          text: r ?? "(KI derzeit nicht erreichbar. / AI暂时不可用。)",
+                          rounds: prev.rounds + 1,
+                        }))
+                      );
+                    }}
+                    disabled={!szenarioText.trim() || szenarioScore.loading}
+                    className={`px-4 py-2 font-mono text-xs uppercase rounded-sm border transition-all ${
+                      !szenarioText.trim() || szenarioScore.loading
+                        ? "border-[#E5E1D8] text-[#6B675C] cursor-not-allowed"
+                        : "border-[#4338CA] text-[#4338CA] hover:bg-[#4338CA]/5 active:scale-95"
+                    }`}
+                  >
+                    {szenarioScore.loading
+                      ? lang === "de"
+                        ? "KI liest …"
+                        : "AI批改中…"
+                      : szenarioScore.rounds === 0
+                        ? lang === "de"
+                          ? "KI bewerten"
+                          : "AI批改"
+                        : lang === "de"
+                          ? `Überarbeitet? Erneut prüfen (${szenarioScore.rounds})`
+                          : `改完再评（第${szenarioScore.rounds}轮）`}
+                  </button>
+                </div>
+                {szenarioScore.text && (
+                  <div className="rounded-sm border border-[#4338CA]/30 bg-[#FAF9F6] p-4 font-sans text-sm leading-relaxed text-[#1C1B17] whitespace-pre-wrap">
+                    {szenarioScore.text}
+                  </div>
+                )}
+
                 {(() => {
                   const passedRubrics = rubricChecks.filter(Boolean).length >= 2;
                   return (
@@ -906,6 +1152,70 @@ export default function ReiseModule({
                       <span>{sc}</span>
                     </label>
                   ))}
+                </div>
+
+                {/* D3-muendlich: stichpunkte + gleiche score-pipeline */}
+                <div className="space-y-2">
+                  <label className="block text-xs font-mono uppercase text-[#6B675C]">
+                    Stichpunkte / Redetext (optional, für KI-Feedback) / 口述要点：
+                  </label>
+                  <textarea
+                    rows={3}
+                    value={oralText}
+                    onChange={(e) => setOralText(e.target.value)}
+                    placeholder="Kernpunkte in Stichworten …"
+                    className="w-full border border-[#E5E1D8] p-3 text-sm font-sans rounded-sm focus:border-[#4338CA] focus:outline-none"
+                  />
+                  <div className="flex items-center gap-2">
+                    <button
+                      type="button"
+                      onClick={() => {
+                        if (!oralText.trim() || oralScore.loading) return;
+                        const mu = currentSchritt as SchrittMuendlich;
+                        if (!kiOn()) return;
+                        setOralScore((prev) => ({ ...prev, loading: true }));
+                        void askKi(
+                          buildSzenarioScorePrompt(
+                            activeCourse.fach,
+                            activeCourse.thema,
+                            mu.ziehung,
+                            mu.selbstcheck,
+                            oralText
+                          )
+                        ).then((r) =>
+                          setOralScore((prev) => ({
+                            loading: false,
+                            text: r ?? "(KI derzeit nicht erreichbar. / AI暂时不可用。)",
+                            rounds: prev.rounds + 1,
+                          }))
+                        );
+                      }}
+                      disabled={!oralText.trim() || oralScore.loading}
+                      className={`px-4 py-2 font-mono text-xs uppercase rounded-sm border transition-all ${
+                        !oralText.trim() || oralScore.loading
+                          ? "border-[#E5E1D8] text-[#6B675C] cursor-not-allowed"
+                          : "border-[#4338CA] text-[#4338CA] hover:bg-[#4338CA]/5 active:scale-95"
+                      }`}
+                    >
+                      {oralScore.loading
+                        ? lang === "de"
+                          ? "KI liest …"
+                          : "AI批改中…"
+                        : lang === "de"
+                          ? "KI bewerten"
+                          : "AI批改"}
+                    </button>
+                    {oralScore.rounds > 0 && (
+                      <span className="font-mono text-[11px] text-[#6B675C]">
+                        {lang === "de" ? `Durchgang ${oralScore.rounds}` : `第${oralScore.rounds}轮`}
+                      </span>
+                    )}
+                  </div>
+                  {oralScore.text && (
+                    <div className="rounded-sm border border-[#4338CA]/30 bg-[#FAF9F6] p-4 font-sans text-sm leading-relaxed text-[#1C1B17] whitespace-pre-wrap">
+                      {oralScore.text}
+                    </div>
+                  )}
                 </div>
 
                 <div className="pt-4 border-t border-[#E5E1D8] flex justify-end">

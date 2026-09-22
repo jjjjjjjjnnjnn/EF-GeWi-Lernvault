@@ -12,7 +12,7 @@ export interface VaultNote {
 }
 
 export interface Block {
-  kind: "h2" | "h3" | "p" | "li" | "quote" | "math";
+  kind: "h2" | "h3" | "p" | "li" | "quote" | "math" | "diagram";
   text: string;
   lang: "zh" | "de";
 }
@@ -66,15 +66,28 @@ function inline(text: string): string {
 export function parseBody(body: string): Block[] {
   const blocks: Block[] = [];
   let inMath = false;
+  let inDiagram = false;
   let mathBuf: string[] = [];
+  let diagramBuf: string[] = [];
   for (const rawLine of body.split("\n")) {
     const line = rawLine.trim();
     if (line.startsWith("```")) {
-      if (inMath) {
-        const code = mathBuf.join("\n").trim();
-        if (code) blocks.push({ kind: "math", text: code, lang: "de" });
-        mathBuf = [];
-        inMath = false;
+      const fence = line.slice(3).trim().toLowerCase();
+      if (inMath || inDiagram) {
+        // schliessender fence: math wie bisher, diagram als eigene block-art
+        if (inMath) {
+          const code = mathBuf.join("\n").trim();
+          if (code) blocks.push({ kind: "math", text: code, lang: "de" });
+          mathBuf = [];
+          inMath = false;
+        } else {
+          const spec = diagramBuf.join("\n").trim();
+          if (spec) blocks.push({ kind: "diagram", text: spec, lang: "de" });
+          diagramBuf = [];
+          inDiagram = false;
+        }
+      } else if (fence.startsWith("diagram")) {
+        inDiagram = true;
       } else {
         inMath = true;
       }
@@ -82,6 +95,10 @@ export function parseBody(body: string): Block[] {
     }
     if (inMath) {
       mathBuf.push(rawLine);
+      continue;
+    }
+    if (inDiagram) {
+      diagramBuf.push(rawLine);
       continue;
     }
     if (!line) continue;
