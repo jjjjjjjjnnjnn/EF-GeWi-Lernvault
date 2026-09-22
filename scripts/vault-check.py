@@ -125,11 +125,39 @@ def check_reise():
     return n
 
 
+def check_vergleich():
+    # VERGLEICH rule (warn-only, never ERR): an ausprobieren step carrying a
+    # VERGLEICH: marker must ask which procedure/concept to use. Missing
+    # question -> WARN so exit code stays 0. check_reise allowlist untouched.
+    n = 0
+    d = ROOT / "Lernreise"
+    if not d.exists():
+        return 0
+    # "xuan-chengxu" / "xuan-gainian" below are unicode-escaped on purpose:
+    # this file stays pure ASCII (PS5.1 constraint covers comments and more).
+    want_a = "选程序"
+    want_b = "选概念"
+    for p in sorted(d.glob("*.md")):
+        body = parse_fm(p.read_text(encoding="utf-8"))[1]
+        m = re.search(r"##\s*Schritt\s*\d+\s*[-—]\s*ausprobieren\s*\n(.*?)(?=##\s*Schritt|\Z)",
+                      body, re.S | re.I)
+        if not m:
+            continue
+        block = m.group(1)
+        if "VERGLEICH:" not in block:
+            continue
+        n += 1
+        if want_a not in block and want_b not in block:
+            WARN.append(f"Lernreise/{p.name}: VERGLEICH block lacks procedure-choice question")
+    return n
+
+
 notes = check_notes()
 rows, badrows = check_csv()
 links, misslinks = check_index()
 reisen = check_reise()
-print(f"notes={notes} csv_rows={rows}(bad={badrows}) index_links={links}(missing={misslinks}) reisen={reisen}")
+vergleich = check_vergleich()
+print(f"notes={notes} csv_rows={rows}(bad={badrows}) index_links={links}(missing={misslinks}) reisen={reisen} vergleich={vergleich}")
 for w in WARN:
     print("WARN", w)
 for e in ERR:
