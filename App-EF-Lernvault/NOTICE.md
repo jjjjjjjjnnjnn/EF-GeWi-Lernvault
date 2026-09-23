@@ -32,7 +32,8 @@
   借鉴其多端点与路由管理设计模式：
   1. 多端点独立配置与活跃主路由切换（Active Endpoint Switch）；
   2. 故障级联自动转移机制（Active -> Fallback -> Vault Native）；
-  3. Token 消耗统计看板与每日预算预警管理（Token Ledger & Daily Budget Alert）。
+  3. Token 消耗统计看板与每日预算预警管理（Token Ledger & Daily Budget Alert）；
+  4. 供应商交互与模型自主选择映射（API Key 掩码显隐、请求地址 OpenAI 兼容提示、Model ID 自由输入与预设列表、显式保存动作反馈）。
 
 ## 待引入（P2+，引入时补记）
 - ts-fsrs — MIT — Open Spaced Repetition（记忆调度）

@@ -210,4 +210,64 @@ describe("Simulated Interactive Testing (应用内模拟交互测试规范)", ()
     expect(result.reply).toContain("Antwort von DeepSeek Backup");
     expect(callCount).toBe(2); // 第一次尝试 LM Studio 失败，第二次调用 DeepSeek 成功
   });
+
+  it("Tab 1: 模拟用户自主填写自定义模型并显式点击【保存设置】，验证配置持久化与即时保存提示", async () => {
+    render(<AiSettings lang="zh" />);
+
+    // 1. 找到自主模型输入框并输入自定义模型
+    const modelInput = screen.getByPlaceholderText(/例如: SenseChat-5, deepseek-chat/);
+    expect(modelInput).toBeDefined();
+
+    fireEvent.change(modelInput, { target: { value: "my-custom-qwen-model:14b" } });
+
+    // 2. 点击显式的“保存设置”按钮
+    const saveBtn = screen.getByText("保存设置");
+    expect(saveBtn).toBeDefined();
+    fireEvent.click(saveBtn);
+
+    // 3. 验证即时保存成功反馈提示
+    await waitFor(() => {
+      expect(screen.getByText(/设置已成功保存/)).toBeDefined();
+    });
+
+    // 4. 验证 localStorage 持久化了用户自主填写的模型
+    const { loadEndpoints } = await import("../ai/endpoints");
+    const endpoints = loadEndpoints();
+    const activeEp = endpoints.find((e) => e.id === "ep-lmstudio");
+    expect(activeEp?.model).toBe("my-custom-qwen-model:14b");
+  });
+
+  it("Tab 2: 模拟 CC-Switch 风格供应商编辑流（修改模型映射、显隐密钥、保存），验证全流程一致性", async () => {
+    render(<AiSettings lang="zh" />);
+
+    // 切换到端点管理 Tab
+    const endpointsTabBtn = screen.getByText("端点与路由");
+    fireEvent.click(endpointsTabBtn);
+
+    // 找到所有“编辑”按钮（预设端点也支持编辑）
+    const editBtns = screen.getAllByText("编辑");
+    expect(editBtns.length).toBeGreaterThan(0);
+
+    // 点击第一个端点的编辑
+    fireEvent.click(editBtns[0]);
+
+    // 验证进入 CC-Switch 风格的编辑界面：包含返回按钮、API Key、请求地址提示与模型选择映射
+    expect(screen.getByText(/编辑供应商:/)).toBeDefined();
+    expect(screen.getByText(/填写兼容 OpenAI Chat Completions 的服务端点地址/)).toBeDefined();
+    expect(screen.getByText(/实际请求模型 ID \(Primary Model\):/)).toBeDefined();
+
+    // 自主修改模型
+    const primaryModelInput = screen.getByPlaceholderText(/如: SenseChat-5, deepseek-chat/);
+    fireEvent.change(primaryModelInput, { target: { value: "SenseChat-5-Pro" } });
+
+    // 点击蓝底“保存”按钮
+    const saveEditorBtn = screen.getByText("保存");
+    fireEvent.click(saveEditorBtn);
+
+    // 验证保存成功提示并退回到列表
+    await waitFor(() => {
+      expect(screen.getByText(/供应商配置已成功保存/)).toBeDefined();
+      expect(screen.getByText("SenseChat-5-Pro")).toBeDefined();
+    });
+  });
 });

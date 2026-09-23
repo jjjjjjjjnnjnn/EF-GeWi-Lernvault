@@ -44,10 +44,12 @@ export default function Tutor({
   lang,
   vaultNotes = null,
   onJumpToLibrary,
+  onOpenSettings,
 }: {
   lang: Lang;
   vaultNotes?: VaultNote[] | null;
   onJumpToLibrary?: (query: string) => void;
+  onOpenSettings?: () => void;
 }) {
   const tr = t(lang);
 
@@ -709,16 +711,30 @@ export default function Tutor({
               {copyFeedback ? (lang === "de" ? "✓ Exportiert" : "✓ 已导出") : (lang === "de" ? "Export .md" : "导出 .md")}
             </button>
             <button
-              onClick={() => setShowAi((s) => !s)}
-              aria-expanded={showAi}
-              className="rounded-sm border border-[#E5E1D8] bg-white px-2 py-0.5 font-sans text-[11px] text-[#1C1B17] hover:border-[#4338CA] hover:text-[#4338CA]"
+              onClick={() => {
+                if (onOpenSettings) {
+                  onOpenSettings();
+                } else {
+                  setShowAi((s) => !s);
+                }
+              }}
+              title={lang === "de" ? "Zu den vollständigen KI-Einstellungen (Modelle, Endpunkte)" : "跳转到设置页面配置端点与模型"}
+              className="rounded-sm border border-[#E5E1D8] bg-white px-2.5 py-0.5 font-sans text-[11px] text-[#4338CA] hover:border-[#4338CA] hover:bg-[#EEF2FF] flex items-center gap-1 cursor-pointer transition-colors"
             >
-              {showAi ? tr.aiHideSettings : tr.aiShowSettings}
+              <svg className="w-3 h-3" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5">
+                <circle cx="8" cy="8" r="2.2" />
+                <path d="M8 1.6v2.1M8 12.3v2.1M1.6 8h2.1M12.3 8h2.1M3.5 3.5l1.5 1.5M11 11l1.5 1.5M12.5 3.5L11 5M5 11l-1.5 1.5" />
+              </svg>
+              <span>{lang === "de" ? "KI-Einstellungen" : "配置端点与模型"}</span>
             </button>
           </div>
         </div>
 
-        {showAi && <AiSettings lang={lang} onChanged={() => setEngineTag(describeActiveEngine())} />}
+        {!onOpenSettings && showAi && (
+          <div className="border-b border-[#E5E1D8] bg-white shadow-xs max-h-96 overflow-y-auto">
+            <AiSettings lang={lang} onChanged={() => setEngineTag(describeActiveEngine())} />
+          </div>
+        )}
 
         {/* Degraded State Notice */}
         {isDegraded && (

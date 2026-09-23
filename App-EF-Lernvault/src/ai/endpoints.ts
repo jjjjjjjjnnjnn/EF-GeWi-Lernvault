@@ -28,6 +28,11 @@ export interface AiEndpoint {
   lastChecked?: number;
   description?: string;
   lastTestResult?: EndpointTestResult;
+  upstreamFormat?: "openai" | "anthropic" | "custom";
+  modelFast?: string;
+  modelDeep?: string;
+  websiteUrl?: string;
+  recommendedModels?: string[];
 }
 
 export const PRESET_ENDPOINTS: AiEndpoint[] = [
@@ -37,11 +42,19 @@ export const PRESET_ENDPOINTS: AiEndpoint[] = [
     providerId: "ollama",
     baseUrl: "http://localhost:1234/v1",
     apiKey: "",
-    model: "qwen2.5:7b",
+    model: "llama-3-sauerkrautlm-8b-instruct",
     enabled: true,
     isPreset: true,
     status: "untested",
     description: "本地独立显卡/CPU 推理，免填 Key，100% 隐私",
+    websiteUrl: "https://lmstudio.ai",
+    upstreamFormat: "openai",
+    recommendedModels: [
+      "llama-3-sauerkrautlm-8b-instruct",
+      "qwen2.5:7b",
+      "mistral-7b-instruct",
+      "gemma-2-9b-it",
+    ],
   },
   {
     id: "ep-ollama",
@@ -54,6 +67,9 @@ export const PRESET_ENDPOINTS: AiEndpoint[] = [
     isPreset: true,
     status: "untested",
     description: "本地轻量级 Ollama 守护进程，免填 Key",
+    websiteUrl: "https://ollama.com",
+    upstreamFormat: "openai",
+    recommendedModels: ["qwen2.5:7b", "llama3:8b", "mistral:latest"],
   },
   {
     id: "ep-deepseek",
@@ -66,6 +82,9 @@ export const PRESET_ENDPOINTS: AiEndpoint[] = [
     isPreset: true,
     status: "untested",
     description: "高性价比、超强中文与逻辑理解，需填 Key",
+    websiteUrl: "https://platform.deepseek.com",
+    upstreamFormat: "openai",
+    recommendedModels: ["deepseek-chat", "deepseek-reasoner"],
   },
   {
     id: "ep-openrouter",
@@ -78,6 +97,13 @@ export const PRESET_ENDPOINTS: AiEndpoint[] = [
     isPreset: true,
     status: "untested",
     description: "汇聚数十款免费与商业大模型",
+    websiteUrl: "https://openrouter.ai",
+    upstreamFormat: "openai",
+    recommendedModels: [
+      "openai/gpt-oss-20b:free",
+      "meta-llama/llama-3.1-8b-instruct:free",
+      "google/gemini-2.0-flash-exp:free",
+    ],
   },
   {
     id: "ep-siliconflow",
@@ -90,6 +116,13 @@ export const PRESET_ENDPOINTS: AiEndpoint[] = [
     isPreset: true,
     status: "untested",
     description: "Qwen3-8B 永久免费极速体验",
+    websiteUrl: "https://cloud.siliconflow.cn",
+    upstreamFormat: "openai",
+    recommendedModels: [
+      "Qwen/Qwen3-8B",
+      "deepseek-ai/DeepSeek-V3",
+      "deepseek-ai/DeepSeek-R1",
+    ],
   },
   {
     id: "ep-sensenova",
@@ -102,6 +135,13 @@ export const PRESET_ENDPOINTS: AiEndpoint[] = [
     isPreset: true,
     status: "untested",
     description: "国内商用大模型，支持支付宝支付",
+    websiteUrl: "https://platform.sensenova.cn",
+    upstreamFormat: "openai",
+    recommendedModels: [
+      "SenseChat-5",
+      "SenseChat-5-Cantonese",
+      "SenseChat-Turbo",
+    ],
   },
 ];
 
@@ -126,8 +166,20 @@ export function loadEndpoints(): AiEndpoint[] {
       return PRESET_ENDPOINTS;
     }
 
-    // 确保内置预设存在（如新增预设则合并）
-    const merged = [...parsed];
+    // 确保内置预设存在（如新增预设则合并，并丰富元数据）
+    const merged: AiEndpoint[] = parsed.map((e: AiEndpoint) => {
+      const preset = PRESET_ENDPOINTS.find((p) => p.id === e.id);
+      if (preset) {
+        return {
+          ...preset,
+          ...e,
+          websiteUrl: e.websiteUrl || preset.websiteUrl,
+          recommendedModels: e.recommendedModels || preset.recommendedModels,
+          upstreamFormat: e.upstreamFormat || preset.upstreamFormat,
+        };
+      }
+      return e;
+    });
     for (const preset of PRESET_ENDPOINTS) {
       if (!merged.some((e) => e.id === preset.id)) {
         merged.push(preset);

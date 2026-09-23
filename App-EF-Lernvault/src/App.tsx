@@ -509,7 +509,14 @@ export default function App() {
               currentFach={selectedFach === "alle" ? "SoWi" : selectedFach}
             />
           )}
-          {tab === "tutor" && <Tutor lang={lang} vaultNotes={vault?.notes ?? null} onJumpToLibrary={jumpToLibrary} />}
+          {tab === "tutor" && (
+            <Tutor
+              lang={lang}
+              vaultNotes={vault?.notes ?? null}
+              onJumpToLibrary={jumpToLibrary}
+              onOpenSettings={() => switchTab("einstellungen")}
+            />
+          )}
           {tab === "planner" && <Planner lang={lang} vaultNotes={vault?.notes ?? null} />}
           {tab === "mindmap" && <Mindmap lang={lang} vaultNotes={vault?.notes ?? null} onJumpToLibrary={jumpToLibrary} />}
           {tab === "reise" && <ReiseModule lang={lang} vaultReisen={vault?.reisen ?? null} />}

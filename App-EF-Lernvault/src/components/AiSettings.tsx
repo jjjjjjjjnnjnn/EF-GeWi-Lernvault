@@ -41,6 +41,18 @@ import {
 
 type TabId = "simple" | "endpoints" | "tokens" | "advanced";
 
+const MODEL_DISPLAY_NAMES: Record<string, string> = {
+  "llama-3-sauerkrautlm-8b-instruct": "Llama 3 (Sauerkraut 8B)",
+  "qwen2.5:7b": "Qwen 2.5 (7B)",
+  "deepseek-chat": "DeepSeek V3",
+  "deepseek-reasoner": "DeepSeek R1",
+  "SenseChat-5": "SenseChat 5",
+  "SenseChat-5-Cantonese": "SenseChat 粤语",
+  "SenseChat-Turbo": "SenseChat Turbo",
+  "gpt-4o-mini": "GPT-4o Mini",
+  "Qwen/Qwen3-8B": "Qwen 3 (8B)",
+};
+
 export default function AiSettings({
   lang,
   onChanged,
@@ -65,28 +77,46 @@ export default function AiSettings({
   const [budgetLimit, setBudgetLimit] = useState<number>(() => loadTokenBudget());
   const [budgetStatus, setBudgetStatus] = useState(() => checkTokenBudget());
 
-  // 新增/编辑端点抽屉弹窗
+  // 保存操作反馈提示
+  const [saveFeedback, setSaveFeedback] = useState<string | null>(null);
+
+  // 简单模式下的自主模型输入与密码显隐
+  const activeEndpoint = endpoints.find((e) => e.id === activeEpId) || getActiveEndpoint();
+  const [simpleModelInput, setSimpleModelInput] = useState(activeEndpoint.model);
+  const [simpleApiKeyInput, setSimpleApiKeyInput] = useState(activeEndpoint.apiKey);
+  const [showSimpleKey, setShowSimpleKey] = useState(false);
+
+  // CC-Switch 风格端点编辑视图状态
   const [editingEp, setEditingEp] = useState<AiEndpoint | null>(null);
   const [isAdding, setIsAdding] = useState(false);
   const [formName, setFormName] = useState("");
   const [formBaseUrl, setFormBaseUrl] = useState("");
   const [formApiKey, setFormApiKey] = useState("");
   const [formModel, setFormModel] = useState("");
+  const [formModelFast, setFormModelFast] = useState("");
+  const [formModelDeep, setFormModelDeep] = useState("");
+  const [formUpstreamFormat, setFormUpstreamFormat] = useState<"openai" | "anthropic" | "custom">("openai");
+  const [showEditorKey, setShowEditorKey] = useState(false);
+  const [advancedOpen, setAdvancedOpen] = useState(false);
 
-  // 测速状态
+  // 测速与探测状态
   const [pingingAll, setPingingAll] = useState(false);
-
-  // 高级向量状态
-  const [vecPct, setVecPct] = useState<number | null>(null);
-  const [vecReady, setVecReady] = useState(() => isLocalEmbedderReady());
+  const [testingEpId, setTestingEpId] = useState<string | null>(null);
+  const [testResultMap, setTestResultMap] = useState<Record<string, EndpointTestResult>>({});
 
   // 模型拉取状态
   const [pullingEpId, setPullingEpId] = useState<string | null>(null);
   const [pulledModelsMap, setPulledModelsMap] = useState<Record<string, string[]>>({});
 
-  // 实时测试与诊断状态
-  const [testingEpId, setTestingEpId] = useState<string | null>(null);
-  const [testResultMap, setTestResultMap] = useState<Record<string, EndpointTestResult>>({});
+  // 高级向量状态
+  const [vecPct, setVecPct] = useState<number | null>(null);
+  const [vecReady, setVecReady] = useState(() => isLocalEmbedderReady());
+
+  // 同步简单模式下的当前端点输入
+  useEffect(() => {
+    setSimpleModelInput(activeEndpoint.model);
+    setSimpleApiKeyInput(activeEndpoint.apiKey);
+  }, [activeEpId, activeEndpoint.model, activeEndpoint.apiKey]);
 
   // 刷新 Token 统计
   const refreshTokens = () => {
@@ -94,6 +124,10 @@ export default function AiSettings({
     setRecentRecords(getTokenLedger().slice(0, 8));
     setBudgetStatus(checkTokenBudget());
   };
+
+  useEffect(() => {
+    refreshTokens();
+  }, [tab]);
 
   // 单端点连通性测试 (Ping)
   const handleTestPing = async (ep: AiEndpoint) => {
@@ -113,13 +147,16 @@ export default function AiSettings({
           ok: res.status === "online",
           latencyMs: res.latencyMs,
           errorMessage: res.error,
-          remedyTip: res.status === "offline"
-            ? (ep.baseUrl.includes("1234")
-                ? (lang === "de"
-                    ? "LM Studio: Bitte Server starten (Port 1234) & 'Enable CORS' aktivieren."
-                    : "LM Studio 用户：请确认 Local Server 已启动（端口 1234），且已勾选「Enable CORS」！")
-                : (lang === "de" ? "Dienst offline oder nicht erreichbar." : "服务未启动或网络端口不可达。"))
-            : undefined,
+          remedyTip:
+            res.status === "offline"
+              ? ep.baseUrl.includes("1234")
+                ? lang === "de"
+                  ? "LM Studio: Bitte Server starten (Port 1234) & 'Enable CORS' aktivieren."
+                  : "LM Studio 用户：请确认 Local Server 已启动（端口 1234），且已勾选「Enable CORS」！"
+                : lang === "de"
+                ? "Dienst offline oder nicht erreichbar."
+                : "服务未启动或网络端口不可达。"
+              : undefined,
         },
       }));
     } finally {
@@ -132,9 +169,10 @@ export default function AiSettings({
     if (testingEpId) return;
     setTestingEpId(ep.id);
     try {
-      const prompt = lang === "de"
-        ? "Hallo! Bestätige bitte kurz deine Bereitschaft für EF-Lernvault."
-        : "你好！请简短确认你可以正常协助高中 EF 备考。";
+      const prompt =
+        lang === "de"
+          ? "Hallo! Bestätige bitte kurz deine Bereitschaft für EF-Lernvault."
+          : "你好！请简短确认你可以正常协助高中 EF 备考。";
       const res = await testEndpointChat(ep, prompt, 6000);
       updateEndpoint(ep.id, {
         status: res.ok ? "online" : "offline",
@@ -151,10 +189,6 @@ export default function AiSettings({
       setTestingEpId(null);
     }
   };
-
-  useEffect(() => {
-    refreshTokens();
-  }, [tab]);
 
   // 切换活跃端点
   const handleSelectActive = (id: string) => {
@@ -203,30 +237,93 @@ export default function AiSettings({
   };
 
   // 拉取指定端点的模型列表
-  const handlePullModelsForEp = async (ep: AiEndpoint) => {
+  const handlePullModelsForEp = async (targetBaseUrl: string, targetApiKey: string, cacheKey: string) => {
     if (pullingEpId) return;
-    setPullingEpId(ep.id);
+    setPullingEpId(cacheKey);
     try {
-      const res = await pullModelList(ep.baseUrl, ep.apiKey, 6000);
+      const res = await pullModelList(targetBaseUrl, targetApiKey, 6000);
       if (res.models.length > 0) {
-        setPulledModelsMap((prev) => ({ ...prev, [ep.id]: res.models }));
+        setPulledModelsMap((prev) => ({ ...prev, [cacheKey]: res.models }));
       }
     } finally {
       setPullingEpId(null);
     }
   };
 
-  // 保存新增/编辑自定义端点
-  const handleSaveEndpointForm = () => {
+  // 保存简单模式配置
+  const handleSaveSimpleConfig = () => {
+    const updatedModel = simpleModelInput.trim() || activeEndpoint.model;
+    const updatedKey = simpleApiKeyInput.trim();
+
+    updateEndpoint(activeEndpoint.id, {
+      model: updatedModel,
+      apiKey: updatedKey,
+    });
+
+    const nextCfg: AiConfig = {
+      ...cfg,
+      engine: "api",
+      providerId: activeEndpoint.providerId,
+      baseUrl: activeEndpoint.baseUrl,
+      apiKey: updatedKey,
+      model: updatedModel,
+    };
+    setCfg(nextCfg);
+    saveAiConfig(nextCfg);
+    setEndpoints(loadEndpoints());
+
+    setSaveFeedback(lang === "de" ? "✓ Einstellungen gespeichert" : "✓ 设置已成功保存");
+    setTimeout(() => setSaveFeedback(null), 2500);
+    onChanged?.();
+  };
+
+  // 打开编辑抽屉 (CC-Switch 风格)
+  const handleOpenEditor = (ep: AiEndpoint) => {
+    setEditingEp(ep);
+    setIsAdding(false);
+    setFormName(ep.name);
+    setFormBaseUrl(ep.baseUrl);
+    setFormApiKey(ep.apiKey);
+    setFormModel(ep.model);
+    setFormModelFast(ep.modelFast || "");
+    setFormModelDeep(ep.modelDeep || "");
+    setFormUpstreamFormat(ep.upstreamFormat || "openai");
+    setShowEditorKey(false);
+    setAdvancedOpen(false);
+  };
+
+  // 打开新增抽屉
+  const handleOpenAdd = () => {
+    setIsAdding(true);
+    setEditingEp(null);
+    setFormName("");
+    setFormBaseUrl("https://");
+    setFormApiKey("");
+    setFormModel("deepseek-chat");
+    setFormModelFast("");
+    setFormModelDeep("");
+    setFormUpstreamFormat("openai");
+    setShowEditorKey(false);
+    setAdvancedOpen(false);
+  };
+
+  // 保存供应商编辑 (CC-Switch 风格保存)
+  const handleSaveEditor = () => {
     if (!formName.trim() || !formBaseUrl.trim()) return;
+
+    const trimmedModel = formModel.trim() || "gpt-4o-mini";
+    const trimmedBaseUrl = formBaseUrl.trim().replace(/\/+$/, "");
 
     if (isAdding) {
       const created = addEndpoint({
         name: formName.trim(),
         providerId: "custom",
-        baseUrl: formBaseUrl.trim(),
+        baseUrl: trimmedBaseUrl,
         apiKey: formApiKey.trim(),
-        model: formModel.trim() || "gpt-4o-mini",
+        model: trimmedModel,
+        modelFast: formModelFast.trim() || undefined,
+        modelDeep: formModelDeep.trim() || undefined,
+        upstreamFormat: formUpstreamFormat,
         enabled: true,
       });
       setEndpoints(loadEndpoints());
@@ -234,9 +331,12 @@ export default function AiSettings({
     } else if (editingEp) {
       updateEndpoint(editingEp.id, {
         name: formName.trim(),
-        baseUrl: formBaseUrl.trim(),
+        baseUrl: trimmedBaseUrl,
         apiKey: formApiKey.trim(),
-        model: formModel.trim(),
+        model: trimmedModel,
+        modelFast: formModelFast.trim() || undefined,
+        modelDeep: formModelDeep.trim() || undefined,
+        upstreamFormat: formUpstreamFormat,
       });
       setEndpoints(loadEndpoints());
       if (activeEpId === editingEp.id) {
@@ -246,14 +346,15 @@ export default function AiSettings({
 
     setIsAdding(false);
     setEditingEp(null);
+    setSaveFeedback(lang === "de" ? "✓ Anbieterkonfiguration gespeichert" : "✓ 供应商配置已成功保存");
+    setTimeout(() => setSaveFeedback(null), 2500);
+    onChanged?.();
   };
 
   // 删除端点
   const handleDeleteEp = (id: string) => {
     const confirmMsg =
-      lang === "de"
-        ? "Diesen Endpunkt wirklich löschen?"
-        : "确认删除该自定义端点吗？";
+      lang === "de" ? "Diesen Endpunkt wirklich löschen?" : "确认删除该自定义端点吗？";
     if (!window.confirm(confirmMsg)) return;
 
     deleteEndpoint(id);
@@ -279,7 +380,22 @@ export default function AiSettings({
     handleSelectActive(targetId);
   };
 
-  const activeEndpoint = getActiveEndpoint();
+  function updateLegacyCfg(patch: Partial<AiConfig>) {
+    const next = { ...cfg, ...patch };
+    setCfg(next);
+    saveAiConfig(next);
+    onChanged?.();
+  }
+
+  // 推荐模型快速列表
+  const currentRecommended =
+    activeEndpoint.recommendedModels || [
+      "SenseChat-5",
+      "llama-3-sauerkrautlm-8b-instruct",
+      "qwen2.5:7b",
+      "deepseek-chat",
+      "gpt-4o-mini",
+    ];
 
   return (
     <div className="border-b border-[#E5E1D8] bg-[#FAF9F6]">
@@ -301,7 +417,11 @@ export default function AiSettings({
                   : "bg-[#D97706]"
               }`}
             />
-            {cfg.engine === "off" ? (lang === "de" ? "Aus (Offline)" : "关闭 (离线)") : activeEndpoint.name}
+            {cfg.engine === "off"
+              ? lang === "de"
+                ? "Aus (Offline)"
+                : "关闭 (离线)"
+              : `${activeEndpoint.name} · ${activeEndpoint.model}`}
             {activeEndpoint.latencyMs !== undefined && activeEndpoint.latencyMs !== null && (
               <span className="text-[#6B675C]">({activeEndpoint.latencyMs}ms)</span>
             )}
@@ -320,7 +440,11 @@ export default function AiSettings({
           ).map((tItem) => (
             <button
               key={tItem.id}
-              onClick={() => setTab(tItem.id)}
+              onClick={() => {
+                setTab(tItem.id);
+                setEditingEp(null);
+                setIsAdding(false);
+              }}
               className={`px-2.5 py-1 text-xs font-sans rounded-xs transition-colors cursor-pointer ${
                 tab === tItem.id
                   ? "bg-[#1C1B17] text-[#FAFAF7] font-medium"
@@ -334,6 +458,19 @@ export default function AiSettings({
       </div>
 
       <div className="p-4">
+        {/* 全局保存反馈提示 */}
+        {saveFeedback && (
+          <div className="mb-3 flex items-center justify-between rounded-xs border border-[#A7F3D0] bg-[#ECFDF5] px-3 py-1.5 font-mono text-xs text-[#065F46] animate-fadeIn">
+            <span>{saveFeedback}</span>
+            <button
+              onClick={() => setSaveFeedback(null)}
+              className="text-[#047857] hover:opacity-70 text-[10px]"
+            >
+              ✕
+            </button>
+          </div>
+        )}
+
         {/* ==================== TAB 1: 极简推荐 (Simple Mode) ==================== */}
         {tab === "simple" && (
           <div className="space-y-4">
@@ -420,10 +557,10 @@ export default function AiSettings({
                 </button>
               </div>
 
-              {/* 卡片 3: 云端精选 (DeepSeek / SiliconFlow) */}
+              {/* 卡片 3: 云端精选 (DeepSeek / SenseNova / SiliconFlow) */}
               <div
                 className={`flex flex-col justify-between rounded-sm border p-3.5 transition-all ${
-                  cfg.engine === "api" && (activeEpId === "ep-deepseek" || activeEpId === "ep-siliconflow")
+                  cfg.engine === "api" && (activeEpId === "ep-deepseek" || activeEpId === "ep-sensenova" || activeEpId === "ep-siliconflow")
                     ? "border-[#4338CA] bg-white shadow-xs ring-1 ring-[#4338CA]/20"
                     : "border-[#E5E1D8] bg-white hover:border-[#6B675C]"
                 }`}
@@ -431,7 +568,7 @@ export default function AiSettings({
                 <div>
                   <div className="flex items-center justify-between mb-1.5">
                     <span className="font-mono text-xs font-semibold text-[#1C1B17]">
-                      {lang === "de" ? "DeepSeek / Cloud" : "云端大模型 (DeepSeek)"}
+                      {lang === "de" ? "DeepSeek / SenseNova" : "云端大模型 (商汤/DeepSeek)"}
                     </span>
                     <span className="text-[10px] font-mono px-1.5 py-0.2 rounded-xs bg-[#C7D2FE]/40 text-[#4338CA]">
                       {lang === "de" ? "Hohe Präzision" : "深度推理"}
@@ -439,36 +576,36 @@ export default function AiSettings({
                   </div>
                   <p className="font-sans text-xs text-[#6B675C] leading-relaxed">
                     {lang === "de"
-                      ? "DeepSeek V3 / R1 oder SiliconFlow. Höchste logische Schärfe für AFB III Klausurfragen."
-                      : "适合复杂的论述题与哲学家观点推演。需配置 API Key，高性价比与超强逻辑。"}
+                      ? "SenseNova SenseChat-5 oder DeepSeek. Höchste logische Schärfe für AFB III Klausurfragen."
+                      : "支持商汤 SenseNova、DeepSeek 等国内主流服务。适合复杂论述与哲学推演。"}
                   </p>
                 </div>
                 <button
                   type="button"
                   onClick={() => handleQuickActivate("deepseek")}
                   className={`mt-3 w-full py-1.5 text-xs font-sans rounded-xs transition-colors cursor-pointer ${
-                    cfg.engine === "api" && (activeEpId === "ep-deepseek" || activeEpId === "ep-siliconflow")
+                    cfg.engine === "api" && (activeEpId === "ep-deepseek" || activeEpId === "ep-sensenova" || activeEpId === "ep-siliconflow")
                       ? "bg-[#4338CA] text-white"
                       : "border border-[#E5E1D8] text-[#1C1B17] hover:bg-[#FAF9F6]"
                   }`}
                 >
-                  {cfg.engine === "api" && (activeEpId === "ep-deepseek" || activeEpId === "ep-siliconflow")
+                  {cfg.engine === "api" && (activeEpId === "ep-deepseek" || activeEpId === "ep-sensenova" || activeEpId === "ep-siliconflow")
                     ? lang === "de" ? "✓ Aktiv" : "✓ 正在使用"
                     : lang === "de" ? "Aktivieren & Key prüfen" : "激活并填 Key"}
                 </button>
               </div>
             </div>
 
-            {/* 当前活跃端点的状态诊断与快速测试控制台 (不再对 LM Studio / Ollama 隐藏) */}
+            {/* 当前活跃端点的精细配置：模型输入、API Key、显式保存与实时诊断 */}
             {cfg.engine === "api" && (
-              <div className="mt-4 rounded-sm border border-[#E5E1D8] bg-[#FAF9F6] p-3.5 space-y-3">
-                <div className="flex flex-wrap items-center justify-between gap-2 border-b border-[#E5E1D8]/60 pb-2">
+              <div className="mt-4 rounded-sm border border-[#E5E1D8] bg-white p-4 space-y-4">
+                <div className="flex flex-wrap items-center justify-between gap-2 border-b border-[#E5E1D8] pb-2.5">
                   <div className="flex items-center gap-2">
                     <span className="font-sans text-xs font-semibold text-[#1C1B17]">
                       {lang === "de" ? "Aktiver Endpunkt:" : "当前主路由端点:"} {activeEndpoint.name}
                     </span>
-                    <span className="text-[10px] font-mono px-1.5 py-0.5 rounded-xs bg-white border border-[#E5E1D8] text-[#6B675C]">
-                      {activeEndpoint.model}
+                    <span className="text-[10px] font-mono px-1.5 py-0.5 rounded-xs bg-[#FAF9F6] border border-[#E5E1D8] text-[#6B675C]">
+                      {activeEndpoint.baseUrl}
                     </span>
                   </div>
                   <div className="flex items-center gap-1.5">
@@ -501,71 +638,146 @@ export default function AiSettings({
                   </div>
                 </div>
 
-                {/* API Key 输入框 (对于非本地免 Key 端点) */}
+                {/* 1. 自主模型选择与直接输入 (用户核心需求) */}
+                <div>
+                  <div className="flex items-center justify-between mb-1">
+                    <label className="text-xs font-sans font-medium text-[#1C1B17]">
+                      {lang === "de" ? "Modell wählen oder manuell eingeben:" : "自主选择或填写模型名称 (Model ID):"}
+                    </label>
+                    <button
+                      type="button"
+                      onClick={() =>
+                        handlePullModelsForEp(activeEndpoint.baseUrl, activeEndpoint.apiKey, activeEndpoint.id)
+                      }
+                      disabled={pullingEpId === activeEndpoint.id}
+                      className="text-[11px] font-mono text-[#4338CA] hover:underline cursor-pointer flex items-center gap-1"
+                    >
+                      <span>⇩</span>
+                      <span>{pullingEpId === activeEndpoint.id ? "拉取中..." : "获取在线模型列表"}</span>
+                    </button>
+                  </div>
+                  <input
+                    type="text"
+                    value={simpleModelInput}
+                    onChange={(e) => setSimpleModelInput(e.target.value)}
+                    placeholder="例如: SenseChat-5, deepseek-chat, llama-3-sauerkrautlm-8b-instruct..."
+                    className="w-full rounded-xs border border-[#E5E1D8] bg-white px-2.5 py-1.5 text-xs font-mono text-[#1C1B17] focus:border-[#4338CA] focus:outline-none"
+                  />
+                  {/* 推荐模型标签 */}
+                  <div className="mt-1.5 flex flex-wrap items-center gap-1.5">
+                    <span className="text-[10px] font-mono text-[#6B675C]">推荐/常用:</span>
+                    {currentRecommended.map((mName) => (
+                      <button
+                        key={mName}
+                        type="button"
+                        onClick={() => setSimpleModelInput(mName)}
+                        className={`px-1.5 py-0.5 rounded-xs border text-[10px] font-mono cursor-pointer transition-colors ${
+                          simpleModelInput === mName
+                            ? "bg-[#1C1B17] text-white border-[#1C1B17]"
+                            : "bg-[#FAF9F6] text-[#1C1B17] border-[#E5E1D8] hover:border-[#4338CA]"
+                        }`}
+                      >
+                        {MODEL_DISPLAY_NAMES[mName] || mName.split("/").pop()}
+                      </button>
+                    ))}
+                    {pulledModelsMap[activeEndpoint.id]?.map((mName) => (
+                      <button
+                        key={mName}
+                        type="button"
+                        onClick={() => setSimpleModelInput(mName)}
+                        className={`px-1.5 py-0.5 rounded-xs border text-[10px] font-mono cursor-pointer transition-colors ${
+                          simpleModelInput === mName
+                            ? "bg-[#1C1B17] text-white border-[#1C1B17]"
+                            : "bg-[#ECFDF5] text-[#065F46] border-[#A7F3D0] hover:border-[#047857]"
+                        }`}
+                      >
+                        {mName.split("/").pop()}
+                      </button>
+                    ))}
+                  </div>
+                </div>
+
+                {/* 2. API Key 输入框 (带显隐切换) */}
                 {activeEndpoint.providerId !== "ollama" && (
                   <div>
-                    <label className="block text-xs font-sans text-[#6B675C] mb-1">
-                      API Key:
-                    </label>
-                    <input
-                      type="password"
-                      value={activeEndpoint.apiKey}
-                      onChange={(e) => {
-                        updateEndpoint(activeEndpoint.id, { apiKey: e.target.value });
-                        setEndpoints(loadEndpoints());
-                        updateLegacyCfg({ apiKey: e.target.value });
-                      }}
-                      placeholder="sk-..."
-                      className="w-full rounded-xs border border-[#E5E1D8] bg-white px-2.5 py-1 text-xs font-mono focus:border-[#4338CA] focus:outline-none"
-                    />
+                    <div className="flex items-center justify-between mb-1">
+                      <label className="text-xs font-sans text-[#6B675C]">API Key:</label>
+                      {activeEndpoint.websiteUrl && (
+                        <a
+                          href={activeEndpoint.websiteUrl}
+                          target="_blank"
+                          rel="noreferrer"
+                          className="text-[11px] font-mono text-[#4338CA] hover:underline"
+                        >
+                          {lang === "de" ? "API Key anfordern ↗" : "获取 API Key ↗"}
+                        </a>
+                      )}
+                    </div>
+                    <div className="relative flex items-center">
+                      <input
+                        type={showSimpleKey ? "text" : "password"}
+                        value={simpleApiKeyInput}
+                        onChange={(e) => setSimpleApiKeyInput(e.target.value)}
+                        placeholder="sk-..."
+                        className="w-full rounded-xs border border-[#E5E1D8] bg-white px-2.5 py-1.5 pr-8 text-xs font-mono focus:border-[#4338CA] focus:outline-none"
+                      />
+                      <button
+                        type="button"
+                        onClick={() => setShowSimpleKey((s) => !s)}
+                        title={showSimpleKey ? "隐藏密钥" : "显示密钥"}
+                        className="absolute right-2 text-[#6B675C] hover:text-[#1C1B17]"
+                      >
+                        <svg className="w-3.5 h-3.5" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5">
+                          {showSimpleKey ? (
+                            <path d="M2 2l12 12M6.7 6.8a2 2 0 0 0 2.5 2.5M4.1 4.3C2.8 5.3 1.5 8 1.5 8s2.5 4.5 6.5 4.5c1.4 0 2.7-.4 3.7-1.1M6.2 3.6c.6-.1 1.2-.1 1.8-.1 4 0 6.5 4.5 6.5 4.5s-.8 1.5-2.1 2.7" />
+                          ) : (
+                            <>
+                              <path d="M1.5 8s2.5-4.5 6.5-4.5 6.5 4.5 6.5 4.5-2.5 4.5-6.5 4.5-6.5-4.5-6.5-4.5z" />
+                              <circle cx="8" cy="8" r="2" />
+                            </>
+                          )}
+                        </svg>
+                      </button>
+                    </div>
                   </div>
                 )}
 
-                {/* 连通与对话测试动作按钮 */}
-                <div className="flex flex-wrap items-center gap-2 pt-1">
-                  <button
-                    type="button"
-                    onClick={() => handleTestPing(activeEndpoint)}
-                    disabled={testingEpId === activeEndpoint.id}
-                    className="inline-flex items-center rounded-xs border border-[#E5E1D8] bg-white px-3 py-1 text-xs font-sans text-[#1C1B17] hover:border-[#4338CA] hover:text-[#4338CA] disabled:opacity-50 cursor-pointer transition-colors"
-                  >
-                    {testingEpId === activeEndpoint.id ? (
-                      <>
-                        <svg className="animate-spin -ml-0.5 mr-1.5 h-3 w-3 text-[#4338CA]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-                          <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
-                          <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
-                        </svg>
-                        {lang === "de" ? "Teste Ping..." : "测试连接中..."}
-                      </>
-                    ) : (
-                      lang === "de" ? "⚡ Ping testen" : "⚡ 测试连接"
-                    )}
-                  </button>
+                {/* 3. 显式“保存设置”与测试动作栏 */}
+                <div className="flex flex-wrap items-center justify-between gap-2 border-t border-[#E5E1D8] pt-3">
+                  <div className="flex items-center gap-2">
+                    <button
+                      type="button"
+                      onClick={() => handleTestPing(activeEndpoint)}
+                      disabled={testingEpId === activeEndpoint.id}
+                      className="inline-flex items-center rounded-xs border border-[#E5E1D8] bg-white px-3 py-1.5 text-xs font-sans text-[#1C1B17] hover:border-[#4338CA] hover:text-[#4338CA] disabled:opacity-50 cursor-pointer transition-colors"
+                    >
+                      {testingEpId === activeEndpoint.id ? "测试中..." : "⚡ 测试连接"}
+                    </button>
 
-                  <button
-                    type="button"
-                    onClick={() => handleTestChatProbe(activeEndpoint)}
-                    disabled={testingEpId === activeEndpoint.id}
-                    className="inline-flex items-center rounded-xs border border-[#4338CA] bg-white px-3 py-1 text-xs font-sans text-[#4338CA] hover:bg-[#4338CA] hover:text-white disabled:opacity-50 cursor-pointer transition-colors"
-                  >
-                    {testingEpId === activeEndpoint.id ? (
-                      <>
-                        <svg className="animate-spin -ml-0.5 mr-1.5 h-3 w-3 text-[#4338CA]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-                          <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
-                          <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
-                        </svg>
-                        {lang === "de" ? "Sende Testnachricht..." : "发送探针中..."}
-                      </>
-                    ) : (
-                      lang === "de" ? "💬 In-App Test-Dialog" : "💬 实时对话探针"
-                    )}
-                  </button>
+                    <button
+                      type="button"
+                      onClick={() => handleTestChatProbe(activeEndpoint)}
+                      disabled={testingEpId === activeEndpoint.id}
+                      className="inline-flex items-center rounded-xs border border-[#4338CA] bg-white px-3 py-1.5 text-xs font-sans text-[#4338CA] hover:bg-[#4338CA] hover:text-white disabled:opacity-50 cursor-pointer transition-colors"
+                    >
+                      {testingEpId === activeEndpoint.id ? "探针发送中..." : "💬 实时对话探针"}
+                    </button>
+                  </div>
 
-                  <span className="text-[11px] font-mono text-[#6B675C]">
-                    {lang === "de"
-                      ? "Verbindet direkt im App-Fenster ohne externe Tools."
-                      : "完全在应用内部调用，无需切换到外部软件。"}
-                  </span>
+                  {/* 显式“保存当前配置”按钮 (CC-Switch 风格) */}
+                  <div className="flex items-center gap-2">
+                    <button
+                      type="button"
+                      onClick={handleSaveSimpleConfig}
+                      className="inline-flex items-center gap-1.5 rounded-xs bg-[#4338CA] px-5 py-1.5 text-xs font-sans font-medium text-white hover:bg-[#3730A3] shadow-xs active:scale-[0.98] transition-all cursor-pointer"
+                    >
+                      <svg className="w-3.5 h-3.5" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.6">
+                        <path d="M12.5 13.5H3.5a1 1 0 0 1-1-1v-9a1 1 0 0 1 1-1h6.5l3.5 3.5v6.5a1 1 0 0 1-1 1z" />
+                        <path d="M10.5 13.5v-4h-5v4M4.5 2.5v3h5" />
+                      </svg>
+                      <span>{lang === "de" ? "Einstellungen speichern" : "保存设置"}</span>
+                    </button>
+                  </div>
                 </div>
 
                 {/* 实时诊断反馈面板 */}
@@ -616,338 +828,528 @@ export default function AiSettings({
         {/* ==================== TAB 2: 端点与路由管理 (CC-Switch 风格) ==================== */}
         {tab === "endpoints" && (
           <div className="space-y-4">
-            {/* 操作控制栏 */}
-            <div className="flex flex-wrap items-center justify-between gap-2 border-b border-[#E5E1D8] pb-3">
-              <div className="flex items-center gap-2">
-                <button
-                  type="button"
-                  onClick={handlePingAll}
-                  disabled={pingingAll}
-                  className="rounded-xs border border-[#E5E1D8] bg-white px-2.5 py-1 text-xs font-sans text-[#1C1B17] hover:border-[#4338CA] hover:text-[#4338CA] disabled:opacity-50 transition-colors cursor-pointer"
-                >
-                  {pingingAll
-                    ? lang === "de" ? "Prüfe..." : "测速中..."
-                    : lang === "de" ? "⚡ Alle Endpunkte anpingen" : "⚡ 全部测速 (Ping All)"}
-                </button>
-                <button
-                  type="button"
-                  onClick={() => {
-                    setIsAdding(true);
-                    setEditingEp(null);
-                    setFormName("");
-                    setFormBaseUrl("https://");
-                    setFormApiKey("");
-                    setFormModel("");
-                  }}
-                  className="rounded-xs bg-[#1C1B17] text-[#FAFAF7] px-2.5 py-1 text-xs font-sans hover:bg-[#4338CA] transition-colors cursor-pointer"
-                >
-                  {lang === "de" ? "+ Endpunkt hinzufügen" : "+ 新增端点"}
-                </button>
-              </div>
-
-              {/* 故障转移备用端点设置 */}
-              <div className="flex items-center gap-2 text-xs font-sans">
-                <span className="text-[#6B675C]">
-                  {lang === "de" ? "Automatischer Fallback-Endpunkt:" : "自动容灾备用端点:"}
-                </span>
-                <select
-                  value={fallbackEpId || ""}
-                  onChange={(e) => handleSelectFallback(e.target.value || null)}
-                  className="rounded-xs border border-[#E5E1D8] bg-white px-2 py-1 text-xs font-mono focus:border-[#4338CA] focus:outline-none"
-                >
-                  <option value="">{lang === "de" ? "Keiner (Direkt zu Vault)" : "无 (直接兜底 Vault)"}</option>
-                  {endpoints
-                    .filter((e) => e.id !== activeEpId)
-                    .map((e) => (
-                      <option key={e.id} value={e.id}>
-                        {e.name} ({e.model})
-                      </option>
-                    ))}
-                </select>
-              </div>
-            </div>
-
-            {/* 端点卡片列表 (CC-Switch 风格) */}
-            <div className="grid gap-2.5 sm:grid-cols-2">
-              {endpoints.map((ep) => {
-                const isActive = activeEpId === ep.id;
-                const isFallback = fallbackEpId === ep.id;
-                const pulledList = pulledModelsMap[ep.id] || [];
-
-                return (
-                  <div
-                    key={ep.id}
-                    className={`rounded-sm border p-3 bg-white transition-all flex flex-col justify-between ${
-                      isActive
-                        ? "border-[#4338CA] ring-1 ring-[#4338CA]/20 shadow-xs"
-                        : "border-[#E5E1D8] hover:border-[#6B675C]"
-                    }`}
-                  >
-                    <div>
-                      {/* 标题 & 状态药丸 */}
-                      <div className="flex items-center justify-between mb-1">
-                        <div className="flex items-center gap-1.5">
-                          <span className="font-mono text-xs font-semibold text-[#1C1B17]">
-                            {ep.name}
-                          </span>
-                          {ep.isPreset && (
-                            <span className="text-[9px] font-mono px-1 py-0.2 rounded-xs bg-[#ECE7DC] text-[#6B675C]">
-                              Preset
-                            </span>
-                          )}
-                        </div>
-                        <div className="flex items-center gap-1">
-                          {isFallback && (
-                            <span className="text-[10px] font-mono px-1.5 py-0.5 rounded-xs bg-[#FEF3C7] text-[#92400E]">
-                              Fallback
-                            </span>
-                          )}
-                          <span
-                            className={`inline-flex items-center gap-1 px-1.5 py-0.5 rounded-xs text-[10px] font-mono ${
-                              ep.status === "online"
-                                ? "bg-[#EBF5EE] text-[#2E7D32]"
-                                : ep.status === "offline"
-                                ? "bg-[#FDEDEC] text-[#C62828]"
-                                : "bg-[#F4F4F2] text-[#6B675C]"
-                            }`}
-                          >
-                            <span
-                              className={`w-1.5 h-1.5 rounded-full ${
-                                ep.status === "online"
-                                  ? "bg-[#2E7D32]"
-                                  : ep.status === "offline"
-                                  ? "bg-[#C62828]"
-                                  : "bg-[#6B675C]"
-                              }`}
-                            />
-                            {ep.latencyMs ? `${ep.latencyMs}ms` : ep.status === "online" ? "Online" : ep.status === "offline" ? "Offline" : "Ping"}
-                          </span>
-                        </div>
-                      </div>
-
-                      {/* URL & 模型 */}
-                      <p className="font-mono text-[11px] text-[#6B675C] truncate mb-1" title={ep.baseUrl}>
-                        {ep.baseUrl}
-                      </p>
-                      <div className="flex items-center gap-1 mb-2">
-                        <span className="text-[10px] font-mono text-[#6B675C]">Model:</span>
-                        <span className="text-xs font-mono font-medium text-[#1C1B17] bg-[#FAF9F6] px-1.5 py-0.5 rounded-xs border border-[#E5E1D8]">
-                          {ep.model}
-                        </span>
-                        <button
-                          type="button"
-                          onClick={() => handlePullModelsForEp(ep)}
-                          disabled={pullingEpId === ep.id}
-                          className="text-[10px] font-mono text-[#4338CA] hover:underline px-1 cursor-pointer"
-                        >
-                          {pullingEpId === ep.id ? "..." : "⇩ 查模型"}
-                        </button>
-                      </div>
-
-                      {/* 动态查到的模型下拉推荐 */}
-                      {pulledList.length > 0 && (
-                        <div className="mb-2 p-1.5 rounded-xs bg-[#FAF9F6] border border-[#E5E1D8] text-[10px] font-mono max-h-24 overflow-y-auto">
-                          <span className="text-[#6B675C] block mb-1">选择检测到的模型:</span>
-                          <div className="flex flex-wrap gap-1">
-                            {pulledList.slice(0, 10).map((mName) => (
-                              <button
-                                key={mName}
-                                type="button"
-                                onClick={() => {
-                                  updateEndpoint(ep.id, { model: mName });
-                                  setEndpoints(loadEndpoints());
-                                  if (isActive) updateLegacyCfg({ model: mName });
-                                }}
-                                className={`px-1.5 py-0.5 rounded-xs border ${
-                                  ep.model === mName
-                                    ? "bg-[#1C1B17] text-white border-[#1C1B17]"
-                                    : "bg-white text-[#1C1B17] border-[#E5E1D8] hover:border-[#4338CA]"
-                                }`}
-                              >
-                                {mName.split("/").pop()}
-                              </button>
-                            ))}
-                          </div>
-                        </div>
-                      )}
-                      {/* 内嵌诊断反馈卡片 */}
-                      {testResultMap[ep.id] && (
-                        <div
-                          className={`mt-2 rounded-xs border p-2 text-[10px] font-mono leading-relaxed ${
-                            testResultMap[ep.id].ok
-                              ? "border-[#A7F3D0] bg-[#ECFDF5] text-[#065F46]"
-                              : "border-[#FECACA] bg-[#FEF2F2] text-[#991B1B]"
-                          }`}
-                        >
-                          <div className="flex items-center justify-between font-semibold">
-                            <span>
-                              {testResultMap[ep.id].ok ? "✓ 在线" : "✕ 离线"} ({testResultMap[ep.id].latencyMs}ms)
-                            </span>
-                            {testResultMap[ep.id].modelDetected && (
-                              <span className="text-[#4338CA] truncate max-w-[120px]">
-                                {testResultMap[ep.id].modelDetected}
-                              </span>
-                            )}
-                          </div>
-                          {testResultMap[ep.id].replyText && (
-                            <p className="mt-1 bg-white/70 p-1 rounded-xs text-[#1C1B17] line-clamp-2">
-                              {testResultMap[ep.id].replyText}
-                            </p>
-                          )}
-                          {testResultMap[ep.id].errorMessage && (
-                            <p className="mt-0.5 text-[#991B1B]">
-                              {testResultMap[ep.id].errorMessage}
-                            </p>
-                          )}
-                          {testResultMap[ep.id].remedyTip && (
-                            <p className="mt-0.5 text-[#B45309] bg-[#FFFBEB] p-1 rounded-xs border border-[#FDE68A]">
-                              {testResultMap[ep.id].remedyTip}
-                            </p>
-                          )}
-                        </div>
-                      )}
-                    </div>
-
-                    {/* 底部按钮栏 */}
-                    <div className="flex items-center justify-between border-t border-[#E5E1D8]/60 pt-2 mt-2">
-                      <div className="flex items-center gap-1.5">
-                        <button
-                          type="button"
-                          onClick={() => handleTestPing(ep)}
-                          disabled={testingEpId === ep.id}
-                          className="text-[11px] font-mono text-[#6B675C] hover:text-[#4338CA] px-1 disabled:opacity-50 cursor-pointer"
-                        >
-                          {testingEpId === ep.id ? "..." : "⚡ 测试连接"}
-                        </button>
-                        <button
-                          type="button"
-                          onClick={() => handleTestChatProbe(ep)}
-                          disabled={testingEpId === ep.id}
-                          className="text-[11px] font-mono text-[#4338CA] hover:underline px-1 disabled:opacity-50 cursor-pointer"
-                        >
-                          {testingEpId === ep.id ? "..." : "💬 对话探针"}
-                        </button>
-                        {!ep.isPreset && (
-                          <>
-                            <button
-                              type="button"
-                              onClick={() => {
-                                setEditingEp(ep);
-                                setIsAdding(false);
-                                setFormName(ep.name);
-                                setFormBaseUrl(ep.baseUrl);
-                                setFormApiKey(ep.apiKey);
-                                setFormModel(ep.model);
-                              }}
-                              className="text-[11px] font-mono text-[#6B675C] hover:text-[#1C1B17] px-1 cursor-pointer"
-                            >
-                              {lang === "de" ? "Bearbeiten" : "编辑"}
-                            </button>
-                            <button
-                              type="button"
-                              onClick={() => handleDeleteEp(ep.id)}
-                              className="text-[11px] font-mono text-[#C62828] hover:underline px-1 cursor-pointer"
-                            >
-                              {lang === "de" ? "Löschen" : "删除"}
-                            </button>
-                          </>
-                        )}
-                      </div>
-
-                      {isActive ? (
-                        <span className="font-mono text-[11px] font-semibold text-[#4338CA]">
-                          ✓ {lang === "de" ? "Aktiviert" : "当前主路由"}
-                        </span>
-                      ) : (
-                        <button
-                          type="button"
-                          onClick={() => handleSelectActive(ep.id)}
-                          className="rounded-xs border border-[#E5E1D8] bg-white px-2 py-0.5 text-xs font-sans hover:border-[#4338CA] hover:text-[#4338CA] cursor-pointer"
-                        >
-                          {lang === "de" ? "Als Aktiv setzen" : "设为主路由"}
-                        </button>
-                      )}
-                    </div>
+            {/* 模式 A: 供应商编辑视图 (参考 CC-Switch 截图 102424.png & 102431.png) */}
+            {editingEp || isAdding ? (
+              <div className="rounded-sm border border-[#E5E1D8] bg-white p-5 shadow-xs space-y-4">
+                {/* 顶部返回与标题 */}
+                <div className="flex items-center justify-between border-b border-[#E5E1D8] pb-3">
+                  <div className="flex items-center gap-2">
+                    <button
+                      type="button"
+                      onClick={() => {
+                        setEditingEp(null);
+                        setIsAdding(false);
+                      }}
+                      className="p-1 rounded-sm border border-[#E5E1D8] bg-[#FAF9F6] text-[#1C1B17] hover:border-[#4338CA] hover:text-[#4338CA] transition-colors"
+                      title="返回端点列表"
+                    >
+                      <svg className="w-3.5 h-3.5" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.8">
+                        <path d="M10 3.5L5.5 8l4.5 4.5" />
+                      </svg>
+                    </button>
+                    <h3 className="font-sans text-sm font-semibold text-[#1C1B17]">
+                      {isAdding
+                        ? lang === "de" ? "Neuen Anbieter hinzufügen" : "新增供应商"
+                        : lang === "de" ? `Anbieter bearbeiten: ${editingEp?.name}` : `编辑供应商: ${editingEp?.name}`}
+                    </h3>
                   </div>
-                );
-              })}
-            </div>
+                  {editingEp && (
+                    <span className="font-mono text-[10px] px-2 py-0.5 rounded-xs bg-[#FAF9F6] border border-[#E5E1D8] text-[#6B675C]">
+                      ID: {editingEp.id}
+                    </span>
+                  )}
+                </div>
 
-            {/* 新增/编辑端点抽屉 */}
-            {(isAdding || editingEp) && (
-              <div className="mt-4 rounded-sm border border-[#4338CA]/30 bg-white p-4 shadow-sm">
-                <h4 className="font-mono text-xs font-semibold text-[#1C1B17] mb-3">
-                  {isAdding
-                    ? lang === "de" ? "Neuen Endpunkt konfigurieren" : "添加自定义端点 (CC-Switch 风格)"
-                    : lang === "de" ? `Endpunkt bearbeiten: ${editingEp?.name}` : `编辑端点: ${editingEp?.name}`}
-                </h4>
-                <div className="grid gap-2.5 sm:grid-cols-2">
-                  <div>
-                    <label className="block text-xs font-sans text-[#6B675C] mb-1">
-                      {lang === "de" ? "Name:" : "端点名称:"}
-                    </label>
-                    <input
-                      value={formName}
-                      onChange={(e) => setFormName(e.target.value)}
-                      placeholder="z.B. Mein Schul-Relay"
-                      className="w-full rounded-xs border border-[#E5E1D8] px-2 py-1.5 text-xs font-sans focus:border-[#4338CA] focus:outline-none"
-                    />
+                {/* 1. 供应商名称 */}
+                <div>
+                  <label className="block text-xs font-sans text-[#6B675C] mb-1">
+                    {lang === "de" ? "Anbieter-Name:" : "供应商名称:"}
+                  </label>
+                  <input
+                    value={formName}
+                    onChange={(e) => setFormName(e.target.value)}
+                    placeholder="如: SenseNova 商汤 / LM Studio 本地 / 自建中继"
+                    className="w-full rounded-xs border border-[#E5E1D8] px-3 py-1.5 text-xs font-sans text-[#1C1B17] focus:border-[#4338CA] focus:outline-none"
+                  />
+                </div>
+
+                {/* 2. API Key (带显隐切换) */}
+                <div>
+                  <div className="flex items-center justify-between mb-1">
+                    <label className="text-xs font-sans text-[#6B675C]">API Key:</label>
+                    {editingEp?.websiteUrl && (
+                      <a
+                        href={editingEp.websiteUrl}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="text-[11px] font-mono text-[#4338CA] hover:underline"
+                      >
+                        {lang === "de" ? "API Key anfordern ↗" : "获取 API Key ↗"}
+                      </a>
+                    )}
                   </div>
-                  <div>
-                    <label className="block text-xs font-sans text-[#6B675C] mb-1">
-                      Base-URL:
-                    </label>
+                  <div className="relative flex items-center">
                     <input
-                      value={formBaseUrl}
-                      onChange={(e) => setFormBaseUrl(e.target.value)}
-                      placeholder="https://api.openai.com/v1"
-                      className="w-full rounded-xs border border-[#E5E1D8] px-2 py-1.5 text-xs font-mono focus:border-[#4338CA] focus:outline-none"
-                    />
-                  </div>
-                  <div>
-                    <label className="block text-xs font-sans text-[#6B675C] mb-1">
-                      API Key (optional):
-                    </label>
-                    <input
-                      type="password"
+                      type={showEditorKey ? "text" : "password"}
                       value={formApiKey}
                       onChange={(e) => setFormApiKey(e.target.value)}
                       placeholder="sk-..."
-                      className="w-full rounded-xs border border-[#E5E1D8] px-2 py-1.5 text-xs font-mono focus:border-[#4338CA] focus:outline-none"
+                      className="w-full rounded-xs border border-[#E5E1D8] px-3 py-1.5 pr-8 text-xs font-mono text-[#1C1B17] focus:border-[#4338CA] focus:outline-none"
                     />
+                    <button
+                      type="button"
+                      onClick={() => setShowEditorKey((s) => !s)}
+                      className="absolute right-2 text-[#6B675C] hover:text-[#1C1B17]"
+                    >
+                      <svg className="w-3.5 h-3.5" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5">
+                        {showEditorKey ? (
+                          <path d="M2 2l12 12M6.7 6.8a2 2 0 0 0 2.5 2.5M4.1 4.3C2.8 5.3 1.5 8 1.5 8s2.5 4.5 6.5 4.5c1.4 0 2.7-.4 3.7-1.1M6.2 3.6c.6-.1 1.2-.1 1.8-.1 4 0 6.5 4.5 6.5 4.5s-.8 1.5-2.1 2.7" />
+                        ) : (
+                          <>
+                            <path d="M1.5 8s2.5-4.5 6.5-4.5 6.5 4.5 6.5 4.5-2.5 4.5-6.5 4.5-6.5-4.5-6.5-4.5z" />
+                            <circle cx="8" cy="8" r="2" />
+                          </>
+                        )}
+                      </svg>
+                    </button>
                   </div>
-                  <div>
-                    <label className="block text-xs font-sans text-[#6B675C] mb-1">
-                      {lang === "de" ? "Standard-Modell:" : "默认模型名:"}
+                </div>
+
+                {/* 3. 请求地址 (Base URL) + CC-Switch 风格提示框 */}
+                <div>
+                  <div className="flex items-center justify-between mb-1">
+                    <label className="text-xs font-sans text-[#6B675C]">
+                      {lang === "de" ? "Anfrage-Adresse (Base-URL):" : "请求地址 (Base URL):"}
+                    </label>
+                    <button
+                      type="button"
+                      onClick={() => {
+                        const tempEp: AiEndpoint = {
+                          id: editingEp?.id || "temp",
+                          name: formName,
+                          providerId: "custom",
+                          baseUrl: formBaseUrl,
+                          apiKey: formApiKey,
+                          model: formModel,
+                          enabled: true,
+                        };
+                        handleTestChatProbe(tempEp);
+                      }}
+                      className="text-[11px] font-mono text-[#4338CA] hover:underline flex items-center gap-1 cursor-pointer"
+                    >
+                      <span>⚡</span>
+                      <span>{lang === "de" ? "Adresse testen" : "管理与测速"}</span>
+                    </button>
+                  </div>
+                  <input
+                    value={formBaseUrl}
+                    onChange={(e) => setFormBaseUrl(e.target.value)}
+                    placeholder="https://api.openai.com/v1 或 http://127.0.0.1:1234/v1"
+                    className="w-full rounded-xs border border-[#E5E1D8] px-3 py-1.5 text-xs font-mono text-[#1C1B17] focus:border-[#4338CA] focus:outline-none"
+                  />
+                  {/* CC-Switch 风格提示黄色横条 */}
+                  <div className="mt-1.5 rounded-xs border border-[#FDE68A] bg-[#FFFBEB] p-2 text-[11px] font-mono text-[#B45309] flex items-center gap-1.5">
+                    <span>💡</span>
+                    <span>{lang === "de" ? "OpenAI Chat-kompatible Basis-URL eingeben, ohne Slash am Ende." : "填写兼容 OpenAI Chat Completions 的服务端点地址，不要以斜杠结尾"}</span>
+                  </div>
+                </div>
+
+                {/* 4. 高级选项 (可折叠) */}
+                <div className="border border-[#E5E1D8] rounded-xs bg-[#FAF9F6] p-2.5">
+                  <button
+                    type="button"
+                    onClick={() => setAdvancedOpen((o) => !o)}
+                    className="flex w-full items-center justify-between font-sans text-xs font-medium text-[#1C1B17]"
+                  >
+                    <span>{lang === "de" ? "∨ Erweiterte Optionen" : "∨ 高级选项 (协议与网关代理)"}</span>
+                    <span className="font-mono text-[10px] text-[#6B675C]">{advancedOpen ? "收起" : "展开"}</span>
+                  </button>
+                  {advancedOpen && (
+                    <div className="mt-2.5 space-y-2 border-t border-[#E5E1D8] pt-2 text-xs">
+                      <div>
+                        <span className="text-[#6B675C] block mb-1">上游协议格式:</span>
+                        <select
+                          value={formUpstreamFormat}
+                          onChange={(e) => setFormUpstreamFormat(e.target.value as any)}
+                          className="rounded-xs border border-[#E5E1D8] bg-white px-2 py-1 font-mono text-xs focus:outline-none"
+                        >
+                          <option value="openai">OpenAI Chat Completions (标准兼容)</option>
+                          <option value="anthropic">Anthropic Messages</option>
+                          <option value="custom">自建网关 / 代理</option>
+                        </select>
+                      </div>
+                      <p className="text-[10px] font-mono text-[#6B675C] leading-relaxed">
+                        本地开发已接入统一无感代理 (/__ai_proxy)，远程云端接口（如 SenseNova 商汤）无需担心浏览器 CORS 限制与 404 探针阻断。
+                      </p>
+                    </div>
+                  )}
+                </div>
+
+                {/* 5. 模型选择与模型映射 (CC-Switch 风格核心) */}
+                <div className="border-t border-[#E5E1D8] pt-3">
+                  <div className="flex flex-wrap items-center justify-between gap-2 mb-2">
+                    <span className="font-sans text-xs font-semibold text-[#1C1B17]">
+                      {lang === "de" ? "Modell-Zuordnung & Eingabe:" : "模型选择与映射 (支持自主填写与列表拉取):"}
+                    </span>
+                    <div className="flex items-center gap-2">
+                      <button
+                        type="button"
+                        onClick={() =>
+                          handlePullModelsForEp(formBaseUrl, formApiKey, editingEp?.id || "temp")
+                        }
+                        disabled={pullingEpId === (editingEp?.id || "temp")}
+                        className="rounded-xs border border-[#E5E1D8] bg-white px-2.5 py-1 text-xs font-sans text-[#4338CA] hover:border-[#4338CA] flex items-center gap-1 cursor-pointer transition-colors"
+                      >
+                        <span>⇩</span>
+                        <span>{pullingEpId === (editingEp?.id || "temp") ? "获取中..." : "获取模型列表"}</span>
+                      </button>
+                    </div>
+                  </div>
+
+                  {/* 主模型填写框 */}
+                  <div className="space-y-1 mb-2">
+                    <label className="text-[11px] font-mono text-[#6B675C]">
+                      实际请求模型 ID (Primary Model):
                     </label>
                     <input
                       value={formModel}
                       onChange={(e) => setFormModel(e.target.value)}
-                      placeholder="gpt-4o-mini / deepseek-chat"
-                      className="w-full rounded-xs border border-[#E5E1D8] px-2 py-1.5 text-xs font-mono focus:border-[#4338CA] focus:outline-none"
+                      placeholder="如: SenseChat-5, deepseek-chat, llama-3-sauerkrautlm-8b-instruct..."
+                      className="w-full rounded-xs border border-[#E5E1D8] px-2.5 py-1.5 text-xs font-mono text-[#1C1B17] focus:border-[#4338CA] focus:outline-none"
                     />
                   </div>
+
+                  {/* 推荐或拉取到的模型一键填入 */}
+                  <div className="mb-3 flex flex-wrap gap-1">
+                    <span className="text-[10px] font-mono text-[#6B675C] py-0.5">点击填入:</span>
+                    {(editingEp?.recommendedModels || [
+                      "SenseChat-5",
+                      "llama-3-sauerkrautlm-8b-instruct",
+                      "qwen2.5:7b",
+                      "deepseek-chat",
+                      "gpt-4o-mini",
+                    ]).map((m) => (
+                      <button
+                        key={m}
+                        type="button"
+                        onClick={() => setFormModel(m)}
+                        className={`px-1.5 py-0.5 rounded-xs border text-[10px] font-mono cursor-pointer ${
+                          formModel === m
+                            ? "bg-[#1C1B17] text-white border-[#1C1B17]"
+                            : "bg-[#FAF9F6] text-[#1C1B17] border-[#E5E1D8] hover:border-[#4338CA]"
+                        }`}
+                      >
+                        {m.split("/").pop()}
+                      </button>
+                    ))}
+                    {pulledModelsMap[editingEp?.id || "temp"]?.map((m) => (
+                      <button
+                        key={m}
+                        type="button"
+                        onClick={() => setFormModel(m)}
+                        className="px-1.5 py-0.5 rounded-xs border bg-[#ECFDF5] text-[#065F46] border-[#A7F3D0] text-[10px] font-mono cursor-pointer hover:border-[#047857]"
+                      >
+                        {m.split("/").pop()}
+                      </button>
+                    ))}
+                  </div>
+
+                  {/* 细分角色映射表格 (CC-Switch 风格) */}
+                  <div className="border border-[#E5E1D8] rounded-xs overflow-hidden">
+                    <table className="w-full text-left font-mono text-xs">
+                      <thead className="bg-[#FAF9F6] border-b border-[#E5E1D8] text-[#6B675C]">
+                        <tr>
+                          <th className="p-2 w-1/3">功能角色</th>
+                          <th className="p-2">实际请求模型 (自定义填写)</th>
+                        </tr>
+                      </thead>
+                      <tbody className="divide-y divide-[#E5E1D8] bg-white">
+                        <tr>
+                          <td className="p-2 text-[#1C1B17]">主对话与考纲解答 (Chat)</td>
+                          <td className="p-1.5">
+                            <input
+                              value={formModel}
+                              onChange={(e) => setFormModel(e.target.value)}
+                              className="w-full rounded-xs border border-[#E5E1D8] px-2 py-1 text-xs font-mono focus:border-[#4338CA] focus:outline-none"
+                            />
+                          </td>
+                        </tr>
+                        <tr>
+                          <td className="p-2 text-[#1C1B17]">深度推理与模考批改 (Opus/Deep)</td>
+                          <td className="p-1.5">
+                            <input
+                              value={formModelDeep}
+                              onChange={(e) => setFormModelDeep(e.target.value)}
+                              placeholder={formModel || "默认沿用主模型"}
+                              className="w-full rounded-xs border border-[#E5E1D8] px-2 py-1 text-xs font-mono focus:border-[#4338CA] focus:outline-none"
+                            />
+                          </td>
+                        </tr>
+                        <tr>
+                          <td className="p-2 text-[#1C1B17]">快速闪卡与问答 (Haiku/Fast)</td>
+                          <td className="p-1.5">
+                            <input
+                              value={formModelFast}
+                              onChange={(e) => setFormModelFast(e.target.value)}
+                              placeholder={formModel || "默认沿用主模型"}
+                              className="w-full rounded-xs border border-[#E5E1D8] px-2 py-1 text-xs font-mono focus:border-[#4338CA] focus:outline-none"
+                            />
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
                 </div>
-                <div className="mt-3 flex items-center justify-end gap-2">
+
+                {/* 底部保存按钮 (CC-Switch 经典蓝底保存按钮，参考 102424.png / 102431.png) */}
+                <div className="flex items-center justify-between border-t border-[#E5E1D8] pt-3">
                   <button
                     type="button"
                     onClick={() => {
-                      setIsAdding(false);
                       setEditingEp(null);
+                      setIsAdding(false);
                     }}
-                    className="rounded-xs border border-[#E5E1D8] px-3 py-1 text-xs font-sans text-[#6B675C] hover:text-[#1C1B17] cursor-pointer"
+                    className="rounded-xs border border-[#E5E1D8] px-4 py-1.5 text-xs font-sans text-[#6B675C] hover:text-[#1C1B17] cursor-pointer"
                   >
                     {lang === "de" ? "Abbrechen" : "取消"}
                   </button>
+
                   <button
                     type="button"
-                    onClick={handleSaveEndpointForm}
-                    className="rounded-xs bg-[#1C1B17] text-white px-4 py-1 text-xs font-sans hover:bg-[#4338CA] cursor-pointer"
+                    onClick={handleSaveEditor}
+                    className="inline-flex items-center gap-1.5 rounded-xs bg-[#4338CA] text-white px-6 py-2 text-xs font-sans font-medium hover:bg-[#3730A3] shadow-xs active:scale-[0.98] transition-all cursor-pointer"
                   >
-                    {lang === "de" ? "Speichern" : "保存端点"}
+                    <svg className="w-3.5 h-3.5" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.6">
+                      <path d="M12.5 13.5H3.5a1 1 0 0 1-1-1v-9a1 1 0 0 1 1-1h6.5l3.5 3.5v6.5a1 1 0 0 1-1 1z" />
+                      <path d="M10.5 13.5v-4h-5v4M4.5 2.5v3h5" />
+                    </svg>
+                    <span>{lang === "de" ? "Speichern" : "保存"}</span>
                   </button>
                 </div>
               </div>
+            ) : (
+              /* 模式 B: 端点与供应商列表 (参考 CC-Switch 截图 102402.png) */
+              <>
+                <div className="flex flex-wrap items-center justify-between gap-2 border-b border-[#E5E1D8] pb-3">
+                  <div className="flex items-center gap-2">
+                    <button
+                      type="button"
+                      onClick={handlePingAll}
+                      disabled={pingingAll}
+                      className="rounded-xs border border-[#E5E1D8] bg-white px-2.5 py-1 text-xs font-sans text-[#1C1B17] hover:border-[#4338CA] hover:text-[#4338CA] disabled:opacity-50 transition-colors cursor-pointer"
+                    >
+                      {pingingAll
+                        ? lang === "de" ? "Prüfe..." : "测速中..."
+                        : lang === "de" ? "⚡ Alle Endpunkte anpingen" : "⚡ 全部测速 (Ping All)"}
+                    </button>
+                    <button
+                      type="button"
+                      onClick={handleOpenAdd}
+                      className="rounded-xs bg-[#1C1B17] text-[#FAFAF7] px-3 py-1 text-xs font-sans hover:bg-[#4338CA] transition-colors cursor-pointer"
+                    >
+                      {lang === "de" ? "+ Endpunkt hinzufügen" : "+ 新增端点"}
+                    </button>
+                  </div>
+
+                  {/* 故障转移备用端点设置 */}
+                  <div className="flex items-center gap-2 text-xs font-sans">
+                    <span className="text-[#6B675C]">
+                      {lang === "de" ? "Automatischer Fallback-Endpunkt:" : "自动容灾备用端点:"}
+                    </span>
+                    <select
+                      value={fallbackEpId || ""}
+                      onChange={(e) => handleSelectFallback(e.target.value || null)}
+                      className="rounded-xs border border-[#E5E1D8] bg-white px-2 py-1 text-xs font-mono focus:border-[#4338CA] focus:outline-none"
+                    >
+                      <option value="">{lang === "de" ? "Keiner (Direkt zu Vault)" : "无 (直接兜底 Vault)"}</option>
+                      {endpoints
+                        .filter((e) => e.id !== activeEpId)
+                        .map((e) => (
+                          <option key={e.id} value={e.id}>
+                            {e.name} ({e.model})
+                          </option>
+                        ))}
+                    </select>
+                  </div>
+                </div>
+
+                {/* 端点卡片列表 (CC-Switch 风格) */}
+                <div className="grid gap-2.5 sm:grid-cols-2">
+                  {endpoints.map((ep) => {
+                    const isActive = activeEpId === ep.id;
+                    const isFallback = fallbackEpId === ep.id;
+
+                    return (
+                      <div
+                        key={ep.id}
+                        className={`rounded-sm border p-3.5 bg-white transition-all flex flex-col justify-between ${
+                          isActive
+                            ? "border-[#4338CA] ring-1 ring-[#4338CA]/20 shadow-xs"
+                            : "border-[#E5E1D8] hover:border-[#6B675C]"
+                        }`}
+                      >
+                        <div>
+                          {/* 标题 & 状态药丸 */}
+                          <div className="flex items-center justify-between mb-1.5">
+                            <div className="flex items-center gap-1.5">
+                              <span className="font-mono text-xs font-semibold text-[#1C1B17]">
+                                {ep.name}
+                              </span>
+                              {ep.isPreset ? (
+                                <span className="text-[9px] font-mono px-1 py-0.2 rounded-xs bg-[#ECE7DC] text-[#6B675C]">
+                                  Preset
+                                </span>
+                              ) : (
+                                <span className="text-[9px] font-mono px-1 py-0.2 rounded-xs bg-[#EEF2FF] text-[#4338CA]">
+                                  Custom
+                                </span>
+                              )}
+                              <span className="text-[9px] font-mono px-1 py-0.2 rounded-xs bg-[#FAF9F6] border border-[#E5E1D8] text-[#6B675C]">
+                                {ep.baseUrl.includes("localhost") || ep.baseUrl.includes("127.0.0.1")
+                                  ? "本地直连"
+                                  : "网关代理 (免CORS)"}
+                              </span>
+                            </div>
+                            <div className="flex items-center gap-1">
+                              {isFallback && (
+                                <span className="text-[10px] font-mono px-1.5 py-0.5 rounded-xs bg-[#FEF3C7] text-[#92400E]">
+                                  Fallback
+                                </span>
+                              )}
+                              <span
+                                className={`inline-flex items-center gap-1 px-1.5 py-0.5 rounded-xs text-[10px] font-mono ${
+                                  ep.status === "online"
+                                    ? "bg-[#EBF5EE] text-[#2E7D32]"
+                                    : ep.status === "offline"
+                                    ? "bg-[#FDEDEC] text-[#C62828]"
+                                    : "bg-[#F4F4F2] text-[#6B675C]"
+                                }`}
+                              >
+                                <span
+                                  className={`w-1.5 h-1.5 rounded-full ${
+                                    ep.status === "online"
+                                      ? "bg-[#2E7D32]"
+                                      : ep.status === "offline"
+                                      ? "bg-[#C62828]"
+                                      : "bg-[#6B675C]"
+                                  }`}
+                                />
+                                {ep.latencyMs
+                                  ? `${ep.latencyMs}ms`
+                                  : ep.status === "online"
+                                  ? "Online"
+                                  : ep.status === "offline"
+                                  ? "Offline"
+                                  : "Ping"}
+                              </span>
+                            </div>
+                          </div>
+
+                          {/* URL & 模型 */}
+                          <p className="font-mono text-[11px] text-[#6B675C] truncate mb-1" title={ep.baseUrl}>
+                            {ep.baseUrl}
+                          </p>
+                          <div className="flex items-center gap-1.5 mb-2">
+                            <span className="text-[10px] font-mono text-[#6B675C]">Model:</span>
+                            <span className="text-xs font-mono font-medium text-[#1C1B17] bg-[#FAF9F6] px-1.5 py-0.5 rounded-xs border border-[#E5E1D8]">
+                              {ep.model}
+                            </span>
+                          </div>
+
+                          {/* 内嵌诊断反馈卡片 */}
+                          {testResultMap[ep.id] && (
+                            <div
+                              className={`mt-2 rounded-xs border p-2 text-[10px] font-mono leading-relaxed ${
+                                testResultMap[ep.id].ok
+                                  ? "border-[#A7F3D0] bg-[#ECFDF5] text-[#065F46]"
+                                  : "border-[#FECACA] bg-[#FEF2F2] text-[#991B1B]"
+                              }`}
+                            >
+                              <div className="flex items-center justify-between font-semibold">
+                                <span>
+                                  {testResultMap[ep.id].ok ? "✓ 在线" : "✕ 离线"} ({testResultMap[ep.id].latencyMs}ms)
+                                </span>
+                                {testResultMap[ep.id].modelDetected && (
+                                  <span className="text-[#4338CA] truncate max-w-[120px]">
+                                    {testResultMap[ep.id].modelDetected}
+                                  </span>
+                                )}
+                              </div>
+                              {testResultMap[ep.id].replyText && (
+                                <p className="mt-1 bg-white/70 p-1 rounded-xs text-[#1C1B17] line-clamp-2">
+                                  {testResultMap[ep.id].replyText}
+                                </p>
+                              )}
+                              {testResultMap[ep.id].errorMessage && (
+                                <p className="mt-0.5 text-[#991B1B]">
+                                  {testResultMap[ep.id].errorMessage}
+                                </p>
+                              )}
+                              {testResultMap[ep.id].remedyTip && (
+                                <p className="mt-0.5 text-[#B45309] bg-[#FFFBEB] p-1 rounded-xs border border-[#FDE68A]">
+                                  {testResultMap[ep.id].remedyTip}
+                                </p>
+                              )}
+                            </div>
+                          )}
+                        </div>
+
+                        {/* 底部按钮栏 (所有端点包括预设均可编辑!) */}
+                        <div className="flex items-center justify-between border-t border-[#E5E1D8]/60 pt-2 mt-2">
+                          <div className="flex items-center gap-1.5">
+                            <button
+                              type="button"
+                              onClick={() => handleTestPing(ep)}
+                              disabled={testingEpId === ep.id}
+                              className="text-[11px] font-mono text-[#6B675C] hover:text-[#4338CA] px-1 disabled:opacity-50 cursor-pointer"
+                            >
+                              {testingEpId === ep.id ? "..." : "⚡ 测试连接"}
+                            </button>
+                            <button
+                              type="button"
+                              onClick={() => handleTestChatProbe(ep)}
+                              disabled={testingEpId === ep.id}
+                              className="text-[11px] font-mono text-[#4338CA] hover:underline px-1 disabled:opacity-50 cursor-pointer"
+                            >
+                              {testingEpId === ep.id ? "..." : "💬 对话探针"}
+                            </button>
+                            <button
+                              type="button"
+                              onClick={() => handleOpenEditor(ep)}
+                              className="text-[11px] font-mono text-[#1C1B17] hover:text-[#4338CA] px-1 cursor-pointer font-medium"
+                            >
+                              {lang === "de" ? "Bearbeiten" : "编辑"}
+                            </button>
+                            {!ep.isPreset && (
+                              <button
+                                type="button"
+                                onClick={() => handleDeleteEp(ep.id)}
+                                className="text-[11px] font-mono text-[#C62828] hover:underline px-1 cursor-pointer"
+                              >
+                                {lang === "de" ? "Löschen" : "删除"}
+                              </button>
+                            )}
+                          </div>
+
+                          {isActive ? (
+                            <span className="font-mono text-[11px] font-semibold text-[#4338CA]">
+                              ✓ {lang === "de" ? "Aktiviert" : "当前主路由"}
+                            </span>
+                          ) : (
+                            <button
+                              type="button"
+                              onClick={() => handleSelectActive(ep.id)}
+                              className="rounded-xs border border-[#E5E1D8] bg-white px-2 py-0.5 text-xs font-sans hover:border-[#4338CA] hover:text-[#4338CA] cursor-pointer"
+                            >
+                              {lang === "de" ? "Als Aktiv setzen" : "设为主路由"}
+                            </button>
+                          )}
+                        </div>
+                      </div>
+                    );
+                  })}
+                </div>
+              </>
             )}
           </div>
         )}
@@ -1201,11 +1603,4 @@ export default function AiSettings({
       </div>
     </div>
   );
-
-  function updateLegacyCfg(patch: Partial<AiConfig>) {
-    const next = { ...cfg, ...patch };
-    setCfg(next);
-    saveAiConfig(next);
-    onChanged?.();
-  }
 }
