@@ -136,6 +136,7 @@
 - [2026-09-23-headroom-token-compression](Journal/2026-09-23-headroom-token-compression.md) — Headroom 启发式 Token 压缩与可逆缓存引擎落地（210单测，SmartCrusher+CCR+5D评分+三区KV-Cache优化）
 - [2026-09-23-wartung-5](Journal/2026-09-23-wartung-5.md) — 第五轮维护：三扫干净/210绿/契约文档Next-Gen补齐+拉取排错FAQ
 - [2026-09-23-ccswitch-endpoint-routing-token-ledger](Journal/2026-09-23-ccswitch-endpoint-routing-token-ledger.md) — CC-Switch 风格多端点路由与 Token 看板全栈落地（222单测，四Tab架构+智能故障级联+Token配额预警）
+- [2026-09-23-lmstudio-inapp-diagnostic-and-sim-test](Journal/2026-09-23-lmstudio-inapp-diagnostic-and-sim-test.md) — LM Studio 报错根治、全内置应用内诊断控制台与模拟交互测试规范落地（230单测，messages非空清洗+实时对话探针+全流程模拟交互）
 - 约定：文件名 `YYYY-MM-DD-<thema>.md`，头部frontmatter（`fach`可空，`tags: [EF, Meta]`）。
 
 ## Dataview（Obsidian内自动索引，GitHub上仅作备份显示）
