@@ -134,6 +134,7 @@
 - [2026-09-23-provider-modellpull](Journal/2026-09-23-provider-modellpull.md) — 新渠道Zen/商汤+Base-URL改写+ccswitch式模型拉取（199单测）
 - [2026-09-23-modellpull-proxy-fix](Journal/2026-09-23-modellpull-proxy-fix.md) — 拉取失败修复：dev代理+CORS诊断（202单测，代理实测回真名单）
 - [2026-09-23-headroom-token-compression](Journal/2026-09-23-headroom-token-compression.md) — Headroom 启发式 Token 压缩与可逆缓存引擎落地（210单测，SmartCrusher+CCR+5D评分+三区KV-Cache优化）
+- [2026-09-23-wartung-5](Journal/2026-09-23-wartung-5.md) — 第五轮维护：三扫干净/210绿/契约文档Next-Gen补齐+拉取排错FAQ
 - 约定：文件名 `YYYY-MM-DD-<thema>.md`，头部frontmatter（`fach`可空，`tags: [EF, Meta]`）。
 
 ## Dataview（Obsidian内自动索引，GitHub上仅作备份显示）
