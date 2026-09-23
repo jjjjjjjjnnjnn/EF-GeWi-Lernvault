@@ -5,3 +5,13 @@ Messunsicherheit;测量不确定度;Jede Messung traegt eine Unsicherheit.;Physi
 Tangente;切线;Die Tangente am Kurvenpunkt liefert die Momentangeschwindigkeit.;Physik;Diagramme
 Momentangeschwindigkeit;瞬时速度;Die Momentangeschwindigkeit folgt aus der Tangentensteigung.;Physik;Diagramme
 Mittelwert;平均值;Der Mittelwert glaettet zufaellige Schwankungen.;Physik;Messung
+Kraftdiagramm;受力分析图;Das Kraftdiagramm zeigt alle Kraefte mit Richtung.;Physik;CN
+Systemabgrenzung;整体隔离法;Erst das Gesamtsystem dann die Einzelteile betrachten.;Physik;CN
+Flaechenmethode;图像面积法;Die Flaeche unter der v-t-Linie gibt den Weg an.;Physik;CN
+Aequivalenzmethode;等效法;Die Ersatzkraft ersetzt mehrere Kraefte ohne Aenderung der Wirkung.;Physik;CN
+Dimensionsprobe;量纲检验;Die Dimensionsprobe prueft die Einheit vor der Zahl.;Physik;CN
+Zentripetalkraft;向心力;Die Zentripetalkraft zeigt zum Kreismittelpunkt.;Physik;CN
+Energieerhaltung;能量守恒;Energieerhaltung verbindet Lage und Bewegung.;Physik;CN
+Impulserhaltung;动量守恒;Bei Stoss ohne Reibung bleibt der Gesamtimpuls erhalten.;Physik;CN
+Gravitationsfeld;引力场;Das Gravitationsfeld beschreibt die Kraft pro Masse.;Physik;CN
+Elektrisches Feld;电场;Das elektrische Feld zeigt die Kraft pro Ladung.;Physik;CN

@@ -19,3 +19,10 @@
 - IQB Aufgabenpools Physik (Aufgabenstellung frei, nur lokal gelesen, nichts kopiert): https://www.iqb.hu-berlin.de/abitur/pools
 - StanSi Physik GOSt (Operatoren/Konstruktion/Korrekturzeichen, Amtliches Werk): https://www.standardsicherung.schulministerium.nrw.de/zentralabitur-gost/faecher/physik-gost
 - LEIFIphysik gleichfoermige Bewegung (Grundwissen + Aufgaben, paraphrasiert): https://www.leifiphysik.de/mechanik/gleichfoermige-bewegung
+
+## CN-Vernetzung 2026-09-23 (nur freie Links, nichts gescrapt)
+
+- LEIFI beschleunigte Bewegung (Grundwissen + Aufgaben, frei): https://www.leifiphysik.de/mechanik/gleichmaessig-beschleunigte-bewegung
+- Serlo-Physik (CC BY-SA, frei): https://de.serlo.org/physik
+- 人教物理教材门户 pep.com.cn (frei, CN-Vernetzung): https://www.pep.com.cn/
+- PhET Simulationen (frei, Univ. Colorado): https://phet.colorado.edu/sims
