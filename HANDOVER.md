@@ -5,7 +5,8 @@
 ## 新agent阅读顺序（5分钟接手）
 1. 本文件 → 2. `AGENTS.md`（规范） → 3. `00_META/INDEX.md`（导航） → 4. 目标学科 `Lehrplan.md` → 5. `00_META/Journal/` 最新一篇（当前上下文）。
 
-## 当前状态（2026-09-23晚·五轮维护已验）
+## 当前状态（2026-09-23晚·CC-Switch 风格端点路由与 Token 看板已验）
+- ✅ CC-Switch 风格多端点路由与 Token 看板全栈落地（`[App] 9eb40f2`+本交接）：Clean-Room 原生重构（零外部代码/依赖引入，NOTICE 署名 MIT）+ 四 Tab 专业架构（极简推荐/端点路由/Token看板/高级向量）+ 多端点管理与测速探针（`endpoints.ts`）+ Token 账本与每日预算预警（`tokenLedger.ts`）+ 智能级联故障转移（`router.ts`，主端点->备用端点->Vault离线兜底）+ 流式 `include_usage` 精准采集（`streamClient.ts`）；39 单测套件 222 测试全绿 / build 6.03s / vault-check(38/203/134) PASS（Journal 2026-09-23-ccswitch-endpoint-routing-token-ledger）。
 - ✅ 维护-5（`[App] 8e02537`+本交接）：315文件干净三扫零泄漏（2误报已证）；36套件210单测/build/vault-check(38/203/133)/1420全过；LEARNING-ENGINE Next-Gen补齐+AI-SETUP拉取排错FAQ（Journal 2026-09-23-wartung-5）。
 - ✅ Headroom 启发式 Token 压缩与可逆缓存引擎落地（`[App] 271d7d7`+本交接）：Clean-Room 原生实现（零外部代码/依赖引入，NOTICE 署名 Apache-2.0）+ FNV-1a CCR 可逆内容寻址双层缓存（`ccrStore.ts`）+ SmartCrusher 表格折叠与 5D 评分裁剪（`compressor.ts`，首轮/最近/错误100%保留）+ Hot/Warm/Live 三区 KV-Cache 优化组装（`context.ts`）+ AI 助教交互式 `[Ref: #h-xxxxxx]` 点击无损还原（`Tutor.tsx`）；36 单测套件 210 测试全绿 / build 6.1s / vault-check(38/203/133) PASS（Journal 2026-09-23-headroom-token-compression）。
 - ✅ 拉取失败修复（`[App] 627b670`+本交接）：dev同源代理Node代取（CORS-free，Key只走头）+直连兜底+错误分类中文明示；34单测套件202测试全绿 / build过 / vault-check(38/203/131) / 代理实测OpenRouter回200真名单（Journal 2026-09-23-modellpull-proxy-fix；opencode go端点待用户给URL）。
