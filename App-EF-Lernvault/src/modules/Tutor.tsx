@@ -43,7 +43,9 @@ import { getActiveEndpoint } from "../ai/endpoints";
 import { SatzbauLego } from "../components/pedagogy/SatzbauLego";
 import { BalanceBoard } from "../components/pedagogy/BalanceBoard";
 import { TextHighlighter } from "../components/pedagogy/TextHighlighter";
+import { TangentSlider } from "../components/pedagogy/TangentSlider";
 import { FehlerlogModal } from "../components/FehlerlogModal";
+
 import {
   type TutorPedagogyMode,
   type FehlerlogDraft,
@@ -90,7 +92,7 @@ export default function Tutor({
   const [engineTag, setEngineTag] = useState(() => describeActiveEngine());
   const [copyFeedback, setCopyFeedback] = useState(false);
   const [expandedCcr, setExpandedCcr] = useState<{ hash: string; content: string | null } | null>(null);
-  const [pedagogyTool, setPedagogyTool] = useState<"lego" | "balance" | "highlighter" | null>(null);
+  const [pedagogyTool, setPedagogyTool] = useState<"lego" | "balance" | "highlighter" | "tangent" | null>(null);
   const [pedagogyMode, setPedagogyMode] = useState<TutorPedagogyMode>(() => loadTutorPedagogyMode());
   const [fehlerDraft, setFehlerDraft] = useState<FehlerlogDraft | null>(null);
   const [attachedImage, setAttachedImage] = useState<{
@@ -906,6 +908,22 @@ export default function Tutor({
                 </svg>
                 <span>{lang === "de" ? "Dekonstruierer" : "文本解构"}</span>
               </button>
+
+              <button
+                type="button"
+                onClick={() => setPedagogyTool((t) => (t === "tangent" ? null : "tangent"))}
+                title={lang === "de" ? "Tangenten-Simulator öffnen (Differentialrechnung Δx → 0)" : "打开割线逼近切线沙盘 (导数几何直观)"}
+                className={`rounded-xs px-2 py-0.5 text-[11px] font-sans transition-all cursor-pointer flex items-center gap-1 ${
+                  pedagogyTool === "tangent"
+                    ? "bg-[#2563eb] text-white font-medium"
+                    : "text-[#1C1B17] hover:bg-[#FAF9F6]"
+                }`}
+              >
+                <svg className="w-3 h-3" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.6">
+                  <path d="M2 14L14 2M2 14h12M2 14V2" />
+                </svg>
+                <span>{lang === "de" ? "Tangenten-Sim" : "导数沙盘"}</span>
+              </button>
             </div>
 
             <button
@@ -972,6 +990,13 @@ export default function Tutor({
               <TextHighlighter
                 lang={lang}
                 onAnalysisGenerated={(a) => setInput(a)}
+              />
+            )}
+
+            {pedagogyTool === "tangent" && (
+              <TangentSlider
+                lang={lang}
+                onFormulaGenerated={(f) => setInput(f)}
               />
             )}
           </div>

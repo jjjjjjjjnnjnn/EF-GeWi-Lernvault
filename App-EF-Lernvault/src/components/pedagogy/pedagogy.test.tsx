@@ -1,9 +1,9 @@
-// Tests für die pädagogischen Komponenten (Satzbau-Lego, BalanceBoard, TextHighlighter)
 import { describe, it, expect, vi } from "vitest";
 import { render, screen, fireEvent } from "@testing-library/react";
 import { SatzbauLego, PRESET_TEMPLATES } from "./SatzbauLego";
 import { BalanceBoard, PRESET_CASES } from "./BalanceBoard";
 import { TextHighlighter, PRESET_PASSAGES } from "./TextHighlighter";
+import { TangentSlider } from "./TangentSlider";
 
 describe("Pädagogische Komponenten (Pedagogy UI Library)", () => {
   describe("SatzbauLego", () => {
@@ -92,4 +92,34 @@ describe("Pädagogische Komponenten (Pedagogy UI Library)", () => {
       expect(screen.getByText("实时论证层级树 (Gliederung):")).toBeDefined();
     });
   });
+
+  describe("TangentSlider", () => {
+    it("rendert den Tangenten-Simulator mit f(x) = x^2 und Koordinatennetz", () => {
+      render(<TangentSlider lang="zh" />);
+      expect(screen.getByTestId("tangent-slider")).toBeDefined();
+      expect(screen.getByText("割线逼近切线沙盘：直观理解导数 (Δx → 0)")).toBeDefined();
+      expect(screen.getByText("f(x) = x²")).toBeDefined();
+    });
+
+    it("berechnet Differenzenquotienten dynamisch bei Veränderung von deltaX", () => {
+      render(<TangentSlider lang="zh" />);
+      // Bei x0=1, deltaX=1.5 ist Steigung = 2*1 + 1.5 = 3.5
+      expect(screen.getByText("3.500")).toBeDefined();
+      expect(screen.getByText("2.00")).toBeDefined(); // f'(1) = 2
+    });
+
+    it("übernimmt Klausursatz bei Klick auf den Übernehmen-Button", () => {
+      const onGenerated = vi.fn();
+      render(<TangentSlider lang="zh" onFormulaGenerated={onGenerated} />);
+
+      const copyBtn = screen.getByText("带入此导数分析结论与 Klausursatz");
+      fireEvent.click(copyBtn);
+
+      expect(onGenerated).toHaveBeenCalled();
+      const calledFormula = onGenerated.mock.calls[0][0];
+      expect(calledFormula).toContain("差商 Δy/Δx");
+      expect(calledFormula).toContain("瞬时变化率");
+    });
+  });
 });
+
