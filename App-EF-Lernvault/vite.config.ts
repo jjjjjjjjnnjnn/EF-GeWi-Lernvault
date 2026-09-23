@@ -126,6 +126,26 @@ function aiGatewayProxy(): Plugin {
 
 export default defineConfig({
   plugins: [react(), tailwindcss(), aiGatewayProxy()],
+  build: {
+    rollupOptions: {
+      output: {
+        manualChunks(id) {
+          if (!id.includes("node_modules")) return undefined;
+          if (id.includes("/react/") || id.includes("/react-dom/") || id.includes("/scheduler/")) {
+            return "react-vendor";
+          }
+          if (id.includes("/@tauri-apps/")) return "tauri-vendor";
+          if (id.includes("/fuse.js/")) return "search-vendor";
+          if (id.includes("/@huggingface/") || id.includes("/onnxruntime")) {
+            return "transformers-vendor";
+          }
+          if (id.includes("/@mlc-ai/web-llm/")) return "webllm-vendor";
+          if (id.includes("/katex/")) return "katex-vendor";
+          return undefined;
+        },
+      },
+    },
+  },
   server: {
     port: 1420,
     strictPort: true,
