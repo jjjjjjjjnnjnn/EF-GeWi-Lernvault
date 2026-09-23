@@ -78,16 +78,20 @@
 ### Physik
 - Gleichförmige Bewegung: Training — [Gleichfoermige-Bewegung-Training](../04_Physik/Gleichfoermige-Bewegung-Training.md)（s-t读画/平均vs瞬时/Excel四步/Klausur四行）
 - IQB EF Training Diagramme/Messung — [Physik-IQB-EF-Training](../04_Physik/Physik-IQB-EF-Training.md)（4自编题+KaTeX）· [Operatoren-Check](../04_Physik/Klausur-Training/Physik-Operatoren-Check.md)
+- CN-Brücke Formelhandbuch + Tricks + Training — [CN-Formelhandbuch](../04_Physik/CN-Physik-Formelhandbuch.md) · [CN-Tricks](../04_Physik/CN-Physik-Tricks.md) · [CN-Training](../04_Physik/Klausur-Training/CN-Physik-Training.md)（三语对照/6方法/4自编题+EHZ）
 
 ### Bio
 - Zellbiologie-Grundlagen — [Zellbiologie-Grundlagen](../06_Bio/Zellbiologie-Grundlagen.md)（Mikroskop/Skala/Pflanze-Tier-Bakterium/Operatoren）
 - Bio-EF-Oekologie-Training — [Bio-EF-Oekologie-Training](../06_Bio/Bio-EF-Oekologie-Training.md)（Zellbio深化+Ökologie展望，4自编题）· [Operatoren-Check](../06_Bio/Klausur-Training/Bio-Operatoren-Check.md)
+- CN-Begriffe + Tricks + Training — [Begriffshandbuch](../06_Bio/CN-Bio-Begriffshandbuch.md) · [Tricks](../06_Bio/CN-Bio-Tricks.md) · [Training](../06_Bio/Klausur-Training/CN-Bio-Training.md)（三语桥/EF+Ausblick，4+6自编题）
 
 ### Mathe
 - ZKE 2027 Training — [Mathe-ZKE-2027-Training](../03_Mathe/Mathe-ZKE-2027-Training.md)（Teil A免工具+Teil B WTR/CAS，4自编题+解法）
+- CN Formelhandbuch DE-CN-EN · Tricks · Training — [CN-Mathe-Formelhandbuch](../03_Mathe/CN-Mathe-Formelhandbuch.md) · [CN-Mathe-Tricks](../03_Mathe/CN-Mathe-Tricks.md) · [CN-Mathe-Training](../03_Mathe/Klausur-Training/CN-Mathe-Training.md)（CN方法↔ZKE论证）
 
 ### Chemie
 - EF-Grundlagen-Training — [Chemie-EF-Grundlagen-Training](../05_Chemie/Chemie-EF-Grundlagen-Training.md)（Atombau/Bindung/配平/Mol，8自编题）· [Operatoren-Check](../05_Chemie/Klausur-Training/Chemie-Operatoren-Check.md)（StanSi ab 2025+Formeldokument）
+- CN Formelhandbuch · Tricks · Training — [CN-Chemie-Formelhandbuch](../05_Chemie/CN-Chemie-Formelhandbuch.md) · [CN-Chemie-Tricks](../05_Chemie/CN-Chemie-Tricks.md) · [CN-Chemie-Training](../05_Chemie/Klausur-Training/CN-Chemie-Training.md)（DE-CN-EN桥，全自编）
 
 ### Sport (mündlich)
 - Bewegungsanalyse Weitsprung — [Sport-Bewegungsanalyse](../10_Sport-mündl/Texte-Analyse/Sport-Bewegungsanalyse.md)（四相/纠错/5考官问）
@@ -164,6 +168,7 @@
 - [2026-09-23-ccswitch-llm-routing](Journal/2026-09-23-ccswitch-llm-routing.md) — CC-Switch 风格 LLM 路由、端点自定义与原生协议适配（234单测全绿，Anthropic Messages原生协议+端口字段+完整URL开关+认证字段选择）
 - [2026-09-23-ext-01-04-texte-analyse](Journal/2026-09-23-ext-01-04-texte-analyse.md) — EXT-01~04四科并行：Sachtextanalyse+Dilemmata+Karikatur三例+Mediation双范文（4 commits，全v3九步）
 - [2026-09-23-internet-offensive](Journal/2026-09-23-internet-offensive.md) — Internet-Offensive十科全线：Abitur沉淀10科+IQB补采37PDF（10+1 commits，vault-check 59/294/162）
+- [2026-09-23-cn-mint-vernetzung](Journal/2026-09-23-cn-mint-vernetzung.md) — 中德理科互通：MINT四科CN桥手册+技巧+改编训练（4+1 commits，vault-check 71/334/163）
 - [2026-09-23-pedagogy-ui-library](Journal/2026-09-23-pedagogy-ui-library.md) — 无痛自然习得教育组件库与AI助教全闭环集成（242单测全绿，句式积木+辩证天平+文本荧光解构）
 - [2026-09-23-tutor-socratic-fehlerlog-tangent](Journal/2026-09-23-tutor-socratic-fehlerlog-tangent.md) — 启发引导/考纲直出双态分流、错题补丁弹窗与数学割线逼近切线沙盘（253单测全绿，Sokratisch产婆术+FehlerlogPatch+多模态图片输入+TangentSlider）
 - 约定：文件名 `YYYY-MM-DD-<thema>.md`，头部frontmatter（`fach`可空，`tags: [EF, Meta]`）。

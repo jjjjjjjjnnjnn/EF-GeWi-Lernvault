@@ -235,6 +235,26 @@ tags: [EF, Meta]
 | Absprung | 起跳 | Sport | Entscheidend ist der schnelle Absprung, weil er die Weite bestimmt. |
 | Flugphase | 腾空阶段 | Sport | In der Flugphase bleibt die KSP-Bahn unveränderbar. |
 | Landung | 落地 | Sport | Die Landung federt mit Beugung sicher ab. |
+| Ableitungsregel | 求导法则 | Mathe | Die Ableitungsregel liefert zu jeder Potenz die Steigung. |
+| Satz von Vieta | 韦达定理 | Mathe | Nach dem Satz von Vieta prüfe ich Summe und Produkt. |
+| Ungleichung | 不等式 | Mathe | Die Ungleichung gilt nur für positive Zahlen. |
+| Tangente | 切线 | Mathe | Die Tangente nutzt Punkt und Steigung zusammen. |
+| Baumdiagramm | 树形图 | Mathe | Entlang dem Pfad multipliziere ich die Stufen. |
+| Kraftdiagramm | 受力分析图 | Physik | Das Kraftdiagramm zeigt alle Kräfte mit Richtung. |
+| Systemabgrenzung | 整体隔离法 | Physik | Erst das Gesamtsystem, dann die Einzelteile betrachten. |
+| Flächenmethode | 图像面积法 | Physik | Die Fläche unter der v-t-Linie gibt den Weg an. |
+| Dimensionsprobe | 量纲检验 | Physik | Die Dimensionsprobe prüft die Einheit vor der Zahl. |
+| Zentripetalkraft | 向心力 | Physik | Die Zentripetalkraft zeigt zum Kreismittelpunkt. |
+| die Konzentration | 浓度 | Chemie | Die Konzentration c folgt aus n geteilt durch V. |
+| das Gasgesetz | 气体定律 | Chemie | Das Gasgesetz verbindet Druck, Volumen und Temperatur. |
+| die Oxidationszahl | 氧化数 | Chemie | Die Oxidationszahl zeigt den Elektronenzustand an. |
+| die Anode / die Kathode | 阳极 / 阴极 | Chemie | An der Anode läuft die Oxidation ab. |
+| das Reduktionsmittel | 还原剂 | Chemie | Das Reduktionsmittel gibt Elektronen ab. |
+| Stammbaumanalyse | 系谱分析 | Bio | Der Stammbaum zeigt den Erbgang. |
+| Kontrollexperiment | 对照实验 | Bio | Nur eine Variable wird geändert. |
+| Kompensationspunkt | 补偿点 | Bio | Am Punkt gilt Fotosynthese gleich Atmung. |
+| Substratspezifität | 底物特异性 | Bio | Ein Enzym passt nur zu einem Substrat. |
+| Ökologische Nische | 生态位 | Bio | Die Nische trennt die Arten. |
 | Leserlenkung | 读者引导 | Deutsch | Der Autor lenkt die Leser mit einer Leitfrage. |
 | Argumentationsgang | 论证思路 | Deutsch | Der Argumentationsgang führt von der Konzession zum Mittelweg. |
 | Faktenargument | 事实论据 | Deutsch | Das Faktenargument untermauert die These mit Beobachtungen. |
