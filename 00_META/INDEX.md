@@ -45,20 +45,27 @@
 - Marktwirtschaft in der Krise (Kap. 11) — [Marktwirtschaft-Krise](../08_SoWi/Texte-Analyse/Marktwirtschaft-Krise.md)（竞争/最低工资/能源三难，SoWi收官✅）
 - Soziale Ungleichheit — [Soziale-Ungleichheit](../08_SoWi/Texte-Analyse/Soziale-Ungleichheit.md)（EF最高频，Template v2首篇：Pro/Contra+三数+5 Klausur-Sätze）
 - Karikatur方法 — [Karikatur-Anleitung](../08_SoWi/Texte-Analyse/Karikatur-Anleitung.md)
+- Karikatur三例 — [Karikatur-Fallbeispiele](../08_SoWi/Texte-Analyse/Karikatur-Fallbeispiele.md)（不平等/环境增长/厌政+AFB II-III EHZ+9句判语）
 - 电子书11章地图 — [Sowi-NRW-EF-Buch-Navigator](../08_SoWi/Texte-Analyse/Sowi-NRW-EF-Buch-Navigator.md)（C.C.Buchner click & study，需学校登录；Ungleichheit无专章）
 
 ### Philosophie
 - Menschenbild — [Menschenbild-Überblick](../07_Philosophie/Texte-Analyse/Menschenbild-Überblick.md)
 - Ethik: Utilitarismus vs Kant — [Utilitarismus-vs-Kant](../07_Philosophie/Texte-Analyse/Utilitarismus-vs-Kant.md)
 - Philosophische Fragen stellen (Plickat) — [Philosophische-Fragen-Typen](../07_Philosophie/Texte-Analyse/Philosophische-Fragen-Typen.md)（5 Fragetypen/Operatoren-Mapping）
+- Ethische Dilemmata: Kant vs Utilitarismus — [Ethische-Dilemmata-Sammlung](../07_Philosophie/Texte-Analyse/Ethische-Dilemmata-Sammlung.md)（4案例/双公式检验/快乐计算/8句Merksatz）
 
 ### Deutsch
 - Lyrik: Sturm und Drang (Goethe) — [Lyrik-Sturm-Drang-Goethe](../01_Deutsch/Texte-Analyse/Lyrik-Sturm-Drang-Goethe.md)（Willkommen und Abschied/6 Mittel/Deutungshypothese）
 - Drama-Ganzschrift: Kandidaten + Werkzeugkasten — [Drama-Ganzschrift-Kandidaten](../01_Deutsch/Texte-Analyse/Drama-Ganzschrift-Kandidaten.md)（Dürrenmatt/Frisch-Shortlist/五段/人物关系/对话分析，待老师定书名）
+- Sachtextanalyse: Argumentation — [Sachtextanalyse-Argumentation](../01_Deutsch/Texte-Analyse/Sachtextanalyse-Argumentation.md)（6论据类型+10动词句式+自写微型范文全程分析）
+- Sachtextanalyse: Argumentation & Leserlenkung — [Sachtextanalyse-Argumentation](../01_Deutsch/Texte-Analyse/Sachtextanalyse-Argumentation.md)（Pause vom Bildschirm?/6 Argumenttypen/10 Verben/AFB II Analyse vs AFB III Erörterung）
 
 ### Englisch
 - Role Models — [Role-Models-Analysis](../02_Englisch/Texte-Analyse/Role-Models-Analysis.md)（Teil A三任务链/Summary自查/P.E.E./Comment句型）
+- Mediation: Mustertexte (FSJ & Detox) — [Mediation-Mustertexte](../02_Englisch/Texte-Analyse/Mediation-Mustertexte.md)（formal letter vs forum post/3 Kernfakten/Connectors-Box）
+
 - Teil B Doppelpack — [Klausur-Teil-B-Doppelpack](../02_Englisch/Texte-Analyse/Klausur-Teil-B-Doppelpack.md)（Hörverstehen四题型+Mediation三段式，待老师定考轨）
+- Mediation范文两套 — [Mediation-Mustertexte](../02_Englisch/Texte-Analyse/Mediation-Mustertexte.md)（FSJ正式信+Detox论坛帖+双register Connectors）
 
 ### Musik (mündlich)
 - Motiv und motivische Arbeit (Beethoven 5) — [Beethoven-Motiv-Hoeren](../09_Musik-mündl/Texte-Analyse/Beethoven-Motiv-Hoeren.md)（Motiv三要素/Verarbeitung表/Takt 1-20/Hör-Bausteine）
@@ -139,6 +146,8 @@
 - [2026-09-23-lmstudio-inapp-diagnostic-and-sim-test](Journal/2026-09-23-lmstudio-inapp-diagnostic-and-sim-test.md) — LM Studio 报错根治、全内置应用内诊断控制台与模拟交互测试规范落地（230单测，messages非空清洗+实时对话探针+全流程模拟交互）
 - [2026-09-23-ccswitch-ui-model-save](Journal/2026-09-23-ccswitch-ui-model-save.md) — 助教教学区域轻量化、自主模型填写、显式保存设置与CC-Switch供应商交互流对齐（233单测全绿，保存反馈+密码显隐+端点全解禁编辑）
 - [2026-09-23-ccswitch-llm-routing](Journal/2026-09-23-ccswitch-llm-routing.md) — CC-Switch 风格 LLM 路由、端点自定义与原生协议适配（234单测全绿，Anthropic Messages原生协议+端口字段+完整URL开关+认证字段选择）
+- [2026-09-23-ext-01-04-texte-analyse](Journal/2026-09-23-ext-01-04-texte-analyse.md) — EXT-01~04四科并行：Sachtextanalyse+Dilemmata+Karikatur三例+Mediation双范文（4 commits，全v3九步）
+- [2026-09-23-pedagogy-ui-library](Journal/2026-09-23-pedagogy-ui-library.md) — 无痛自然习得教育组件库与AI助教全闭环集成（242单测全绿，句式积木+辩证天平+文本荧光解构）
 - 约定：文件名 `YYYY-MM-DD-<thema>.md`，头部frontmatter（`fach`可空，`tags: [EF, Meta]`）。
 
 ## Dataview（Obsidian内自动索引，GitHub上仅作备份显示）

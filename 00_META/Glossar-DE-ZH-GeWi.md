@@ -172,3 +172,30 @@ tags: [EF, Meta]
 | Reciprocal Rank Fusion (RRF) | 倒数排名融合检索 | Meta | RRF fusioniert lexikalische BM25- und semantische Vektor-Treffer. |
 | Bayesian Knowledge Tracing (BKT) | 贝叶斯知识追踪 | Meta | BKT modelliert die Beherrschungswahrscheinlichkeit jedes Lernziels. |
 | Lernserie (Streak) | 连续学习天数 | Meta | Die Lernserie visualisiert tägliches kontinuierliches Üben. |
+| Argumentationsgang | 论证思路 | Deutsch | Der Argumentationsgang führt von der Konzession zum Mittelweg. |
+| Leserlenkung | 读者引导 | Deutsch | Die Frage zu Beginn lenkt die Leser zur These. |
+| Konzession | 让步 | Deutsch | Die Konzession in Zeile 2 macht den Autor glaubwürdig. |
+| Faktenargument | 事实论据 | Deutsch | Das Faktenargument stützt die These mit Beobachtung. |
+| Plausibilitätsargument | 常识论据 | Deutsch | Das Plausibilitätsargument wirkt alltagsnah, bleibt aber unbelegt. |
+| Kategorischer Imperativ | 绝对命令 | Philosophie | Der kategorische Imperativ gilt unbedingt, ohne Rücksicht auf Folgen. |
+| Universalisierungsformel | 普遍化公式 | Philosophie | Die Universalisierungsformel prüft, ob alle nach derselben Maxime handeln könnten. |
+| Menschheitszweckformel | 人性目的公式 | Philosophie | Nach der Menschheitszweckformel darf man niemanden als bloßes Mittel benutzen. |
+| hedonistisches Kalkül | 快乐计算 | Philosophie | Das hedonistische Kalkül wägt Lust und Leid aller Betroffenen gegeneinander ab. |
+| Sündenbock | 替罪羊 | Philosophie | Einen unschuldigen Sündenbock zu opfern verletzt die Menschenwürde. |
+| Karikatur | 讽刺漫画 | SoWi | Die Karikatur spitzt einen Konflikt bildlich zu. |
+| Überzeichnung | 夸张手法 | SoWi | Die Überzeichnung macht die Kritik auf einen Blick sichtbar. |
+| Deutung | 解读 | SoWi | Jede Deutung braucht einen Realbezug zum EF-Thema. |
+| Zielkonflikt | 目标冲突 | SoWi | Wachstum oder Umwelt ist ein klassischer Zielkonflikt. |
+| Politikverdrossenheit | 厌党情绪 | SoWi | Politikverdrossenheit trifft Parteien, nicht die Demokratie. |
+| mediation | 转述 | Englisch | Mediation conveys only the relevant facts. |
+| source text | 源文本 | Englisch | Read the German source text twice before writing. |
+| target format | 目标文本格式 | Englisch | Keep the required target format in mind. |
+| to paraphrase | 改述 | Englisch | Paraphrase the German text in your own English words. |
+| register | 语域 | Englisch | A formal letter needs a formal register. |
+| Leserlenkung | 读者引导 | Deutsch | Der Autor lenkt die Leser mit einer Leitfrage. |
+| Argumentationsgang | 论证思路 | Deutsch | Der Argumentationsgang führt von der Konzession zum Mittelweg. |
+| Faktenargument | 事实论据 | Deutsch | Das Faktenargument untermauert die These mit Beobachtungen. |
+| normatives Argument | 价值规范论据 | Deutsch | Das normative Argument appelliert an die Selbstverantwortung. |
+| relevant aspects | 相关要点 | Englisch | Select only the relevant aspects for your reader. |
+| connectors | 连接词/逻辑衔接词 | Englisch | Connectors structure formal letters and forum posts. |
+

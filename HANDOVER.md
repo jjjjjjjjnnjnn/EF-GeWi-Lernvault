@@ -5,7 +5,9 @@
 ## 新agent阅读顺序（5分钟接手）
 1. 本文件 → 2. `AGENTS.md`（规范） → 3. `00_META/INDEX.md`（导航） → 4. 目标学科 `Lehrplan.md` → 5. `00_META/Journal/` 最新一篇（当前上下文）。
 
-## 当前状态（2026-09-23晚·CC-Switch风格LLM端点与路由重构及原生Anthropic适配）
+## 当前状态（2026-09-23晚·无痛自然习得组件库与教育内核落地）
+- ✅ EXT-01~04四科Texte-Analyse并行落地（`[Deutsch]/[Philosophie]/[SoWi]/[Englisch]` 4 commits+本交接）：Sachtextanalyse论证+Dilemmata案例集+Karikatur三例+Mediation双范文，全v3九步完整版，全原创；vault-check PASS（notes=42/csv=240/links=141）（Journal 2026-09-23-ext-01-04-texte-analyse）。
+- ✅ 无痛自然习得教育组件库与 AI 助教全闭环集成（`[App] c6402c1`+本交接）：贯彻“无痛、自然学会”教育哲学，解决长句下笔难与价值判断主观情绪化问题；落地 `SatzbauLego` 句式积木（出处/动词/手法/效果 4 大卡槽即插即拔拼装考纲句）、`BalanceBoard` 辩证天平（SVG 物理倾斜力矩与 AFB III 考纲级价值裁决合成器）、`TextHighlighter` 荧光文本标注解构画板（4色划词实时聚类论证树）；顶栏无缝嵌入 AI 助教工作台，一键将拼装成果与裁决文本推入聊天流；新增 8 项专用单测，41 单测套件 242 测试 100% 全绿 / build 6.23s 零错误 / 1420 在线（Journal 2026-09-23-pedagogy-ui-library）。
 - ✅ CC-Switch 风格 LLM 路由、端点自定义与原生协议适配（`[App] 28e4d7b`+`[App] 8fcc056`+`[App] 7afa925`+本交接）：彻底解决商汤（SenseNova）等代理报错（原生 Anthropic Messages 协议 `/v1/messages` + `x-api-key` + `anthropic-version: 2023-06-01` + 动态 `system` 字段与流式 `content_block_delta` 解析）；实测用户 Key（`sk-t6my3...`）200 OK 连通；落地 HTTP 429 限速自动退避重试（最多 3 次到达上限）；端点编辑保存后自动无缝激活为主路由；落地 CC-Switch 风格 Token 自动补齐机制（客户端启发式自动填补缺失的 Token 审计数据）；弹窗内即时闭环连通性测试与自愈排查反馈；对话历史去噪隔离过滤离线报错防止大模型复读错误话术；40 单测套件 234 测试 100% 全绿 / build 4.57s 零错误 / vault-check(38/203/135) PASS（Journal 2026-09-23-ccswitch-llm-routing）。
 - ✅ 助教教学区域轻量化、自主模型填写、显式保存设置与CC-Switch供应商交互流对齐（`[App] 5fdca6f`）：剥离 Tutor 教学区臃肿的内嵌设置，极简顶栏保留端点药丸+新增“⚙️ 配置端点与模型”直达全局设置；简单模式新增自主模型直接填写框与常见模型快捷标签，右侧提供显式“💾 保存设置”按钮与即时保存提示；对齐 CC-Switch 供应商交互流（全面解禁预设端点编辑权限、API Key 密码掩码显隐眼标、Base-URL 兼容提示、Model ID 自由输入与角色映射、蓝底显式“保存”按钮与 `✓ 配置已保存` 反馈）；新增两项端到端模拟交互单测；40 单测套件 233 测试 100% 全绿（Journal 2026-09-23-ccswitch-ui-model-save）。
 - ✅ LM Studio 报错根除、全内置应用内诊断与模拟交互测试规范落地（`[App] b7beb70`）：`sanitizeChatMessages` 规整清洗，彻底杜绝 LM Studio 400 `'messages' field is required`；内嵌“⚡ 测试连接 (Ping)”与“💬 实时对话探针 (Chat Probe)”控制台与自愈排查指引；落地端到端全流程模拟交互测试套件（`simulatedInteraction.test.tsx`）；40 单测套件 230 测试全绿（Journal 2026-09-23-lmstudio-inapp-diagnostic-and-sim-test）。
@@ -64,13 +66,13 @@
 
 > 💡 **使用指引**：本节专供用户直接复制 Prompt 派发给其他联网或大上下文 AI（如 Perplexity / Claude 3.5 / GPT-4o）。每个任务均定义了严格的学科格式与落盘路径，外部 AI 输出后直接保存到对应文件即可。
 
-### 📋 任务 1【德语 Sachtextanalyse 论据类型与范文语料】(TASK-EXT-01)
-- **派发给外部 AI 的 Prompt**：
+#### 📋 任务 1【德语 Sachtextanalyse 论据类型与范文语料】(TASK-EXT-01) — ✅ 已由外部 AI 完成并入库
+- **成果落盘路径**：`01_Deutsch/Texte-Analyse/Sachtextanalyse-Argumentation.md` 及 `Deutsch-EF-Phrasen.csv`
+- **派发给外部 AI 的 Prompt 存档**：
   > “请针对德国北威州高中 (NRW Gymnasium Oberstufe EF) 德语课 Sachtextanalyse（议论文分析）编写一份标准分析语料。要求：
   > 1. 列举 6 种考试必考论据类型（Faktenargument, Normatives Argument, Autoritätsargument, Analogisierendes Argument, Indirektes Argument, Plausibilitätsargument），每种附带 1 个贴合青年与数字化议题的德语典型例句及简要分析；
   > 2. 提供 10 句高分分析性动词句式（如 `verdeutlicht`, `appelliert an`, `entkräftet`, `fungiert als`）；
   > 3. 严格遵循双语规范：中文理解在上，德语 Klausur-Satz 在下。”
-- **输出落盘路径**：`01_Deutsch/Texte-Analyse/Sachtextanalyse-Argumentation.md`
 
 ### 📋 任务 2【哲学 Kant 绝对命令与四大伦理困境案例】(TASK-EXT-02)
 - **派发给外部 AI 的 Prompt**：
@@ -88,14 +90,15 @@
   > 3. 按照标准 AFB II / AFB III 给出 Erwartungshorizont (EHZ 踩分点) 与 3 句高分德语答案。”
 - **输出落盘路径**：`08_SoWi/Texte-Analyse/Karikatur-Fallbeispiele.md`
 
-### 📋 任务 4【英语 Mediation 中德调解写作高分题库与模板】(TASK-EXT-04)
-- **派发给外部 AI 的 Prompt**：
+### 📋 任务 4【英语 Mediation 中德调解写作高分题库与模板】(TASK-EXT-04) — ✅ 已由外部 AI 完成并入库
+- **成果落盘路径**：`02_Englisch/Texte-Analyse/Mediation-Mustertexte.md` 及 `Englisch-EF-Phrasen.csv`
+- **派发给外部 AI 的 Prompt 存档**：
   > “请针对 NRW Gymnasium EF 英语考试 Teil B (Mediation 德译英中继写作) 编写 2 篇全真训练题。要求：
   > 1. 提供一篇约 250 词的德语报刊材料（主题：Freiwilliges Soziales Jahr 或 Social Media Detox）；
   > 2. 设定英方收信人（如英国交换学校校长或国际青年论坛）；
   > 3. 给出标准写作指导：如何提炼 3 个关键事实，避免逐字翻译；
   > 4. 分别给出 Formal 与 Semi-formal 两篇地道满分范文，标注高分连接词 (Connectors)。”
-- **输出落盘路径**：`02_Englisch/Texte-Analyse/Mediation-Mustertexte.md`
+
 
 ---
 
