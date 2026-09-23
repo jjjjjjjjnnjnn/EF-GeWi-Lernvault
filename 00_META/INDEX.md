@@ -138,6 +138,7 @@
 - [2026-09-23-ccswitch-endpoint-routing-token-ledger](Journal/2026-09-23-ccswitch-endpoint-routing-token-ledger.md) — CC-Switch 风格多端点路由与 Token 看板全栈落地（222单测，四Tab架构+智能故障级联+Token配额预警）
 - [2026-09-23-lmstudio-inapp-diagnostic-and-sim-test](Journal/2026-09-23-lmstudio-inapp-diagnostic-and-sim-test.md) — LM Studio 报错根治、全内置应用内诊断控制台与模拟交互测试规范落地（230单测，messages非空清洗+实时对话探针+全流程模拟交互）
 - [2026-09-23-ccswitch-ui-model-save](Journal/2026-09-23-ccswitch-ui-model-save.md) — 助教教学区域轻量化、自主模型填写、显式保存设置与CC-Switch供应商交互流对齐（233单测全绿，保存反馈+密码显隐+端点全解禁编辑）
+- [2026-09-23-ccswitch-llm-routing](Journal/2026-09-23-ccswitch-llm-routing.md) — CC-Switch 风格 LLM 路由、端点自定义与原生协议适配（234单测全绿，Anthropic Messages原生协议+端口字段+完整URL开关+认证字段选择）
 - 约定：文件名 `YYYY-MM-DD-<thema>.md`，头部frontmatter（`fach`可空，`tags: [EF, Meta]`）。
 
 ## Dataview（Obsidian内自动索引，GitHub上仅作备份显示）
