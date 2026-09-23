@@ -3,3 +3,13 @@ Stoffmenge;物质的量;Die Stoffmenge wird in Mol angegeben.;Chemie;Mol
 molare Masse;摩尔质量;Die molare Masse verbindet Masse und Stoffmenge.;Chemie;Mol
 ausgleichen;配平;Die Gleichung wird nur mit Koeffizienten ausgeglichen.;Chemie;Gleichungen
 Valenzelektron;价电子;Gleiche Valenzelektronen bedeuten aehnliche Eigenschaften.;Chemie;Atombau
+Konzentration;浓度;Die Konzentration c folgt aus n geteilt durch V.;Chemie;CN
+Gasgesetz;气体定律;Das Gasgesetz verbindet Druck Volumen und Temperatur.;Chemie;CN
+pH-Wert;pH值;Der pH-Wert aendert sich logarithmisch mit der Konzentration.;Chemie;CN
+Oxidationszahl;氧化数;Die Oxidationszahl zeigt den Elektronenzustand an.;Chemie;CN
+Erhaltung;守恒;Die Erhaltung der Masse gilt fuer jede Reaktion.;Chemie;CN
+Massendifferenz;质量差;Die Massendifferenz zeigt die umgesetzte Menge.;Chemie;CN
+Anode;阳极;An der Anode laeuft die Oxidation ab.;Chemie;CN
+Kathode;阴极;An der Kathode laeuft die Reduktion ab.;Chemie;CN
+Reduktionsmittel;还原剂;Das Reduktionsmittel gibt Elektronen ab.;Chemie;CN
+Oxidationsmittel;氧化剂;Das Oxidationsmittel nimmt Elektronen auf.;Chemie;CN
