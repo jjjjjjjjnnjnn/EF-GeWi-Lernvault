@@ -6,6 +6,7 @@
 1. 本文件 → 2. `AGENTS.md`（规范） → 3. `00_META/INDEX.md`（导航） → 4. 目标学科 `Lehrplan.md` → 5. `00_META/Journal/` 最新一篇（当前上下文）。
 
 ## 当前状态（2026-09-23·下一代智能引擎与全真模考系统已验）
+- ✅ 用户反馈三修（`[App] ffd56d6`+本交接）：KaTeX懒加载独立chunk（首绘不再堵）+引擎off时KI按钮置灰明示+check步默写+AI打分纠错教学FelloFish循环；33单测套件195测试全绿 / build过 / vault-check(38/203/129) / 1420在线（Journal 2026-09-23-reise-katex-ki-fellofish）。
 - ✅ V1模拟走查（`[App] 6c9c100`+本交接）：真L1文件穿真解析真UI跑完8步（门禁/XP离线保底/反馈上下文全过）；32单测套件191测试全绿 / build过 / 1420在线（Journal 2026-09-23-v1-walkthrough-sim；V2–V4体感/整场仍待真人）。
 - ✅ 下一代智能引擎全栈落地（`[App] e20ed22`+本交接）：双引擎RRF混合检索(BM25+Vector) + 双向引用知识图谱网络(vaultGraph.ts，孤岛检测/核心节点) + BKT认知诊断与考纲掌握度模型(mastery.ts)支持自主开启/关闭学期管理(EF.1/EF.2/归档重置) + Oberstufe全真三段式Klausur模拟器(KlausurSim.tsx，算法动态抽取38篇笔记材料与AFB I-III试题，EPA 0-15评分) + 每日15分钟自适应混合极速冲刺(DailySprintModal.tsx，打卡连续Streak天数)；31单测套件189测试100%全绿 / npm run build 3.15s过 / 1420在线 / vault-check(38/203/127) PASS（Journal 2026-09-23-next-gen-learning-engine）。
 - ✅ AI助教极速无感回复与多会话历史系统（`[App] aa7169f`）：10ms瞬时前导卡(extractInstantSnippet) + 多会话抽屉管理(Heute/Gestern/Früher/重命名/删除/清空/导出.md) + 思考强度三档(Schnell/Ausgewogen/Tiefgründig) + 一键智能调配(LM Studio离线自动调配至Vault原生考点合成)；25单测套件162测试全绿 / build过 / 1420在线（Journal 2026-09-23-tutor-zero-latency-history）。
