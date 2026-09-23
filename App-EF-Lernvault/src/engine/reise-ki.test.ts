@@ -1,6 +1,7 @@
 import { describe, expect, it } from "vitest";
 import {
   buildCheckExplainPrompt,
+  buildCheckScorePrompt,
   buildExplainPrompt,
   buildSzenarioScorePrompt,
   buildTryFeedbackPrompt,
@@ -33,6 +34,17 @@ describe("reise-ki prompts", () => {
     expect(msgs[1].content).toContain("1. These in Satz 1");
     expect(msgs[1].content).toContain("Punkte 0-15");
     expect(msgs[1].content).toContain("Beispielsatz");
+    expect(msgs[1].content).toContain("chinesische Zusammenfassung");
+  });
+
+  it("check-score: fellofish-vier Relevanz (punkte/fehler/korrektur/lehre)", () => {
+    const msgs = buildCheckScorePrompt("Was ist Tarifautonomie?", "Löhne ohne Staat.", "Gewerkschaften machen Löhne.", "T");
+    expect(msgs[0].content).toBe(REISE_SYSTEM);
+    expect(msgs[1].content).toContain("PUNKTE");
+    expect(msgs[1].content).toContain("FEHLERANALYSE");
+    expect(msgs[1].content).toContain("KORREKTUR");
+    expect(msgs[1].content).toContain("LEHRE");
+    expect(msgs[1].content).toContain("Gewerkschaften machen Löhne.");
     expect(msgs[1].content).toContain("chinesische Zusammenfassung");
   });
 

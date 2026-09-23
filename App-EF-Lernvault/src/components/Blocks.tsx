@@ -1,6 +1,6 @@
 import type { ReactNode } from "react";
-import katex from "katex";
 import type { Block } from "../vault/parser";
+import MathHtml from "./MathHtml";
 
 export function renderMathText(text: string): ReactNode {
   if (!text || !text.includes("$")) return text;
@@ -16,22 +16,10 @@ export function renderMathText(text: string): ReactNode {
       parts.push(renderInlineMath(preText));
     }
     const mathCode = match[1].trim();
-    try {
-      const html = katex.renderToString(mathCode, { displayMode: true, throwOnError: false });
-      parts.push(
-        <div
-          key={`disp-${match.index}`}
-          className="my-2 overflow-x-auto text-center font-serif text-[#1C1B17]"
-          dangerouslySetInnerHTML={{ __html: html }}
-        />
-      );
-    } catch {
-      parts.push(
-        <code key={`disp-err-${match.index}`} className="block text-center font-mono text-sm text-[#1C1B17]">
-          {mathCode}
-        </code>
-      );
-    }
+    // async-hydration: erster paint sofort (rohtext), katex danach aus cache
+    parts.push(
+      <MathHtml key={`disp-${match.index}`} code={mathCode} display cacheKey={`D:${mathCode}`} />
+    );
     lastIndex = displayRegex.lastIndex;
   }
 
@@ -55,22 +43,9 @@ function renderInlineMath(text: string): ReactNode {
       parts.push(text.slice(lastIndex, match.index));
     }
     const mathCode = match[1].trim();
-    try {
-      const html = katex.renderToString(mathCode, { displayMode: false, throwOnError: false });
-      parts.push(
-        <span
-          key={`inline-${match.index}`}
-          className="font-serif text-[#1C1B17]"
-          dangerouslySetInnerHTML={{ __html: html }}
-        />
-      );
-    } catch {
-      parts.push(
-        <code key={`inline-err-${match.index}`} className="font-mono text-xs text-[#1C1B17]">
-          {mathCode}
-        </code>
-      );
-    }
+    parts.push(
+      <MathHtml key={`inline-${match.index}`} code={mathCode} display={false} cacheKey={`I:${mathCode}`} />
+    );
     lastIndex = inlineRegex.lastIndex;
   }
 
@@ -148,22 +123,7 @@ export default function Blocks({
           );
         }
         if (b.kind === "math") {
-          try {
-            const html = katex.renderToString(b.text, { displayMode: true, throwOnError: false });
-            return (
-              <div
-                key={i}
-                className="my-2 overflow-x-auto text-center font-serif text-[#1C1B17]"
-                dangerouslySetInnerHTML={{ __html: html }}
-              />
-            );
-          } catch {
-            return (
-              <code key={i} className="mb-2 block text-center font-mono text-sm text-[#1C1B17]">
-                {b.text}
-              </code>
-            );
-          }
+          return <MathHtml key={i} code={b.text} display cacheKey={`D:${b.text}`} />;
         }
         return (
           <div

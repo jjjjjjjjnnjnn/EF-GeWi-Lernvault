@@ -114,6 +114,14 @@ describe("UI-reise: katalog -> start -> alle schritte -> xp (simulierter user)",
     const weiter20 = screen.getByText("下一步 (+20 XP) →");
     expect(weiter20).toBeDisabled();
 
+    // B: engine aus -> KI-knoepfe disabled MIT hinweis (nutzer-bug Schritt6)
+    const warums = screen.getAllByText("为啥？AI讲解（AI未开启）");
+    expect(warums).toHaveLength(3);
+    warums.forEach((b) => expect(b).toBeDisabled());
+    const scores = screen.getAllByText("AI批改·打分（AI未开启）");
+    expect(scores).toHaveLength(3);
+    scores.forEach((b) => expect(b).toBeDisabled());
+
     // H: feedback-float traegt live kurs-kontext (mitten im kurs, schritt 6)
     await user.click(screen.getByText("Feedback / 反馈"));
     expect(screen.getByText(`位置：${kurs.id}#Schritt6`)).toBeInTheDocument();

@@ -49,6 +49,22 @@ export function buildCheckExplainPrompt(frage: string, erwarteteAntwort: string,
   ];
 }
 
+// FelloFish-schleife fuers check:默写→打分→错因→纠错→教学→再练
+export function buildCheckScorePrompt(
+  frage: string,
+  erwarteteAntwort: string,
+  studentText: string,
+  thema: string
+): ChatMsg[] {
+  return [
+    { role: "system", content: REISE_SYSTEM },
+    {
+      role: "user",
+      content: `Thema: ${thema}.\nFrage: ${frage}\nErwartete Antwort: ${erwarteteAntwort}\n\n默写 des Lernenden (合书回忆写出):\n${studentText.slice(0, 1200)}\n\nKorrigiere wie FelloFish — genau 4 Abschnitte:\n1. PUNKTE: 0-3 Sterne (★★★ voll richtig / ★★ fast / ★ ein Kern fehlt / 0 falsch) + ein Satz Urteil.\n2. FEHLERANALYSE: Was fehlt/falsch ist — zitiere die Stelle aus der默写 wörtlich.\n3. KORREKTUR: Die richtige Antwort in 2 Sätzen + ein Satzgerüst zum Abschreiben-und-Anpassen.\n4. LEHRE: Ein Merkhaken (Eselsbrücke/Bild) + zu welchem Schritt zurück (z.B. "Schritt 2 Begriffe").\nDeutsch schreiben, danach knappe chinesische Zusammenfassung (2 Sätze).`,
+    },
+  ];
+}
+
 export function buildSzenarioScorePrompt(
   fach: string,
   thema: string,

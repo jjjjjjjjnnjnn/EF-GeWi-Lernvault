@@ -15,6 +15,7 @@ import { chat, describeActiveEngine, type ChatMsg } from "../ai/engine";
 import {
   REISE_SYSTEM,
   buildCheckExplainPrompt,
+  buildCheckScorePrompt,
   buildExplainPrompt,
   buildSzenarioScorePrompt,
   buildTryFeedbackPrompt,
@@ -93,6 +94,9 @@ export default function ReiseModule({
   const [checkPassed, setCheckPassed] = useState<Record<string, boolean>>({});
   const [checkRevealed, setCheckRevealed] = useState<Record<string, boolean>>({});
   const [copiedPatch, setCopiedPatch] = useState(false);
+  // FelloFish-schleife:默写-text + score-box je item
+  const [checkText, setCheckText] = useState<Record<string, string>>({});
+  const [checkScore, setCheckScore] = useState<Record<string, { loading: boolean; text: string; rounds: number }>>({});
 
   // Step 4 (Szenario) state
   const [szenarioText, setSzenarioText] = useState("");
@@ -131,6 +135,14 @@ export default function ReiseModule({
   });
 
   const kiOn = () => describeActiveEngine() !== "off";
+  // B: engine aus -> KI-knoepfe sichtbar disabled statt still-tot (nutzer-bug Schritt6)
+  const kiOff = !kiOn();
+  const kiOffSuffix =
+    lang === "de" ? " (KI aus)" : "（AI未开启）";
+  const kiOffTitle =
+    lang === "de"
+      ? "KI-Engine ist aus — in AI-Einstellungen (Zahnrad) einschalten: API-direkt oder Lokal."
+      : "AI引擎未开启——点顶栏齿轮去AI设置打开：API直连或本地模型。";
 
   const askKi = async (msgs: ChatMsg[]): Promise<string | null> => {
     try {
@@ -150,6 +162,8 @@ export default function ReiseModule({
       setTryFeedback(null);
       setCheckPassed({});
       setCheckRevealed({});
+      setCheckText({});
+      setCheckScore({});
       setSzenarioText("");
       setSzenarioSec(0);
       setSzenarioRunning(false);
@@ -811,10 +825,69 @@ export default function ReiseModule({
                           </div>
                         )}
 
+                        {/* FelloFish:默写→AI打分·纠错·教学→再练 */}
+                        <div className="space-y-2">
+                          <textarea
+                            rows={2}
+                            value={checkText[item.id] ?? ""}
+                            onChange={(e) =>
+                              setCheckText((prev) => ({ ...prev, [item.id]: e.target.value }))
+                            }
+                            placeholder={lang === "de" ? "Antwort aus dem Kopf herschreiben …" : "合书默写答案…（先自己写，再点AI批改）"}
+                            className="w-full border border-[#E5E1D8] p-2.5 text-sm font-sans rounded-sm focus:border-[#4338CA] focus:outline-none"
+                          />
+                          <div className="flex items-center gap-2">
+                            <button
+                              type="button"
+                              disabled={!(checkText[item.id] ?? "").trim() || checkScore[item.id]?.loading || kiOff}
+                              title={kiOff ? kiOffTitle : undefined}
+                              onClick={() => {
+                                if (kiOff || checkScore[item.id]?.loading) return;
+                                setCheckScore((prev) => ({
+                                  ...prev,
+                                  [item.id]: { loading: true, text: prev[item.id]?.text ?? "", rounds: prev[item.id]?.rounds ?? 0 },
+                                }));
+                                void askKi(
+                                  buildCheckScorePrompt(item.frage, item.antwort, checkText[item.id] ?? "", activeCourse.thema)
+                                ).then((r) =>
+                                  setCheckScore((prev) => ({
+                                    ...prev,
+                                    [item.id]: {
+                                      loading: false,
+                                      text: r ?? "(KI derzeit nicht erreichbar. / AI暂时不可用。)",
+                                      rounds: (prev[item.id]?.rounds ?? 0) + 1,
+                                    },
+                                  }))
+                                );
+                              }}
+                              className={`px-2.5 py-1 text-xs font-mono rounded-sm border transition-all ${
+                                !(checkText[item.id] ?? "").trim() || checkScore[item.id]?.loading || kiOff
+                                  ? "border-[#E5E1D8] text-[#6B675C]/50 cursor-not-allowed"
+                                  : "border-[#4338CA] text-[#4338CA] hover:bg-[#4338CA]/5 active:scale-95"
+                              }`}
+                            >
+                              {checkScore[item.id]?.loading
+                                ? lang === "de" ? "KI liest …" : "AI批改中…"
+                                : (checkScore[item.id]?.rounds ?? 0) === 0
+                                  ? lang === "de" ? `KI bewerten${kiOff ? kiOffSuffix : ""}` : `AI批改·打分${kiOff ? kiOffSuffix : ""}`
+                                  : lang === "de"
+                                    ? `Erneut prüfen (${checkScore[item.id]?.rounds})`
+                                    : `改完再评（第${checkScore[item.id]?.rounds}轮）`}
+                            </button>
+                          </div>
+                          {checkScore[item.id]?.text && (
+                            <div className="border-l-2 border-[#4338CA] pl-3 text-xs font-sans text-[#1C1B17] bg-[#FAF9F6] py-1.5 whitespace-pre-wrap leading-relaxed">
+                              {checkScore[item.id].text}
+                            </div>
+                          )}
+                        </div>
+
                         <div className="flex items-center justify-end gap-2 pt-1">
                           {/* D2: KI-erklaerung zum warum */}
                           <button
                             type="button"
+                            disabled={kiOff}
+                            title={kiOff ? kiOffTitle : undefined}
                             onClick={() => {
                               if (!kiOn() || checkWhy[item.id]?.loading) return;
                               setCheckWhy((prev) => ({ ...prev, [item.id]: { loading: true, text: "" } }));
@@ -830,13 +903,17 @@ export default function ReiseModule({
                                 }))
                               );
                             }}
-                            className="px-2.5 py-1 text-xs font-mono rounded-sm border border-[#E5E1D8] text-[#6B675C] hover:border-[#4338CA] hover:text-[#4338CA]"
+                            className={`px-2.5 py-1 text-xs font-mono rounded-sm border border-[#E5E1D8] transition-all ${
+                              kiOff
+                                ? "text-[#6B675C]/50 cursor-not-allowed"
+                                : "text-[#6B675C] hover:border-[#4338CA] hover:text-[#4338CA]"
+                            }`}
                           >
                             {checkWhy[item.id]?.loading
                               ? "…"
                               : lang === "de"
-                                ? "Warum? KI erklärt"
-                                : "为啥？AI讲解"}
+                                ? `Warum? KI erklärt${kiOff ? kiOffSuffix : ""}`
+                                : `为啥？AI讲解${kiOff ? kiOffSuffix : ""}`}
                           </button>
                           <button
                             type="button"
@@ -1015,9 +1092,10 @@ export default function ReiseModule({
                         }))
                       );
                     }}
-                    disabled={!szenarioText.trim() || szenarioScore.loading}
+                    disabled={!szenarioText.trim() || szenarioScore.loading || kiOff}
+                    title={kiOff ? kiOffTitle : undefined}
                     className={`px-4 py-2 font-mono text-xs uppercase rounded-sm border transition-all ${
-                      !szenarioText.trim() || szenarioScore.loading
+                      !szenarioText.trim() || szenarioScore.loading || kiOff
                         ? "border-[#E5E1D8] text-[#6B675C] cursor-not-allowed"
                         : "border-[#4338CA] text-[#4338CA] hover:bg-[#4338CA]/5 active:scale-95"
                     }`}
@@ -1028,8 +1106,8 @@ export default function ReiseModule({
                         : "AI批改中…"
                       : szenarioScore.rounds === 0
                         ? lang === "de"
-                          ? "KI bewerten"
-                          : "AI批改"
+                          ? `KI bewerten${kiOff ? kiOffSuffix : ""}`
+                          : `AI批改${kiOff ? kiOffSuffix : ""}`
                         : lang === "de"
                           ? `Überarbeitet? Erneut prüfen (${szenarioScore.rounds})`
                           : `改完再评（第${szenarioScore.rounds}轮）`}
