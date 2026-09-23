@@ -60,12 +60,44 @@
 - 新终端先跑：`. .\scripts\dt-env.ps1`（设DEEPTUTOR_HOME + UTF-8，防data污染vault/防GBK崩溃）。
 - DeepTutor家目录：`C:\Users\rongj\.deeptutor-home`（vault外）。LM Studio需开着（模型llama-3-sauerkrautlm-8b-instruct）。
 
-## 待办（按优先级）
-1. 用户侧验证：Sowi-L1走完Schritt 2→8（跳转修复后）+ 右下角浮窗写一条反馈贴回；Philo-L2试读反馈（顺则开Philo正式课）。
-2. Klett映射收尾：Transition目录页核对单元→Bereich对照（工作假设待实证）→ 开听力Stufe 1。
-3. 等用户回：问老师三问答复（Halbjahr-Thema/Drama名/Teil B+Klausurtermine）+ Notenlehre-Stufe-4重发 → 补Musik §5 + Lehrplan TODO勾选。
-4. 近3年真题Login墙（找老师要Zugangsdaten）+ Stark纸书 + P5发版（最后）。
-5. 小尾巴：Methoden-Quellen C2行DOI待核；taylor-rohrer-2010/wittwer-renkl待图书馆渠道。
+## 外部 AI 专属外包任务包（Track A：资料搜集与学科语料提取）
+
+> 💡 **使用指引**：本节专供用户直接复制 Prompt 派发给其他联网或大上下文 AI（如 Perplexity / Claude 3.5 / GPT-4o）。每个任务均定义了严格的学科格式与落盘路径，外部 AI 输出后直接保存到对应文件即可。
+
+### 📋 任务 1【德语 Sachtextanalyse 论据类型与范文语料】(TASK-EXT-01)
+- **派发给外部 AI 的 Prompt**：
+  > “请针对德国北威州高中 (NRW Gymnasium Oberstufe EF) 德语课 Sachtextanalyse（议论文分析）编写一份标准分析语料。要求：
+  > 1. 列举 6 种考试必考论据类型（Faktenargument, Normatives Argument, Autoritätsargument, Analogisierendes Argument, Indirektes Argument, Plausibilitätsargument），每种附带 1 个贴合青年与数字化议题的德语典型例句及简要分析；
+  > 2. 提供 10 句高分分析性动词句式（如 `verdeutlicht`, `appelliert an`, `entkräftet`, `fungiert als`）；
+  > 3. 严格遵循双语规范：中文理解在上，德语 Klausur-Satz 在下。”
+- **输出落盘路径**：`01_Deutsch/Texte-Analyse/Sachtextanalyse-Argumentation.md`
+
+### 📋 任务 2【哲学 Kant 绝对命令与四大伦理困境案例】(TASK-EXT-02)
+- **派发给外部 AI 的 Prompt**：
+  > “请针对 NRW Gymnasium EF 哲学伦理学单元，整理 Kant 绝对命令 (Kategorischer Imperativ) 与功利主义 (Utilitarismus) 的 4 大经典案例对比库。要求：
+  > 1. 包含 4 个案例：电车难题 (Trolley-Problem)、撒谎救人案 (Lügenverbot)、无辜替罪案、器官移植救五人；
+  > 2. 每个案例提供：A. 情境描述（中德双语）；B. 功利主义视角（Hedonistisches Kalkül 计算）；C. 康德视角（普遍化公式 Universalisierungsformel 与目的公式 Menschheitszweckformel 检验）；D. 核心冲突价值（如 Leben vs Würde）；
+  > 3. 每个案例提炼 2 句标准德语 Klausur-Merksatz。”
+- **输出落盘路径**：`07_Philosophie/Texte-Analyse/Ethische-Dilemmata-Sammlung.md`
+
+### 📋 任务 3【SoWi 3 幅经典政治漫画 (Karikatur) 解构与评分细则】(TASK-EXT-03)
+- **派发给外部 AI 的 Prompt**：
+  > “请搜集或重构 3 幅德国 NRW 高中 SoWi 考试最常考的政治漫画题型（主题：1. 贫富差距 Soziale Ungleichheit; 2. 环保与经济增长 Zielkonflikt; 3. 青年政治参与 Politikverdrossenheit）。要求：
+  > 1. 每幅漫画提供详细视觉元素描述清单（Bildbeschreibung：人物、衣着、手持物、文字标签）；
+  > 2. 象征与隐喻解构（Deutung：每个元素代表什么现实经济/政治现象）；
+  > 3. 按照标准 AFB II / AFB III 给出 Erwartungshorizont (EHZ 踩分点) 与 3 句高分德语答案。”
+- **输出落盘路径**：`08_SoWi/Texte-Analyse/Karikatur-Fallbeispiele.md`
+
+### 📋 任务 4【英语 Mediation 中德调解写作高分题库与模板】(TASK-EXT-04)
+- **派发给外部 AI 的 Prompt**：
+  > “请针对 NRW Gymnasium EF 英语考试 Teil B (Mediation 德译英中继写作) 编写 2 篇全真训练题。要求：
+  > 1. 提供一篇约 250 词的德语报刊材料（主题：Freiwilliges Soziales Jahr 或 Social Media Detox）；
+  > 2. 设定英方收信人（如英国交换学校校长或国际青年论坛）；
+  > 3. 给出标准写作指导：如何提炼 3 个关键事实，避免逐字翻译；
+  > 4. 分别给出 Formal 与 Semi-formal 两篇地道满分范文，标注高分连接词 (Connectors)。”
+- **输出落盘路径**：`02_Englisch/Texte-Analyse/Mediation-Mustertexte.md`
+
+---
 
 ## 铁律
 - 一次只做一科一commit（前缀`[SoWi]/[Philo]/[Meta]/[Deutsch]/[Englisch]/[App]`）；`data/`、`_Downloads/`、`*.apkg`、App构建产物（`target|gen|dist|*.key|*.exe|*.msi`）永不进git；只写原创笔记（版权红线见AGENTS.md §4）。
