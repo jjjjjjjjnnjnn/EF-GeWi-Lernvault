@@ -13,3 +13,39 @@ Ortsvektor;位置向量;Der Ortsvektor zeigt vom Ursprung zum Punkt.;Mathe;CN
 Tangente;切线;Die Tangente nutzt Punkt und Steigung zusammen.;Mathe;CN
 Baumdiagramm;树形图;Entlang dem Pfad multipliziere ich die Stufen.;Mathe;CN
 Ausschlussverfahren;排除法;Mit dem Ausschlussverfahren streiche ich falsche Faelle.;Mathe;CN
+Definitionsbereich;定义域;Der Definitionsbereich enthaelt alle zulaessigen x-Werte.;Mathe;CN
+Wertebereich;值域;Der Wertebereich enthaelt alle y-Werte der Funktion.;Mathe;Abitur
+Nullstelle;零点;Am x-Wert einer Nullstelle ist der Funktionswert null.;Mathe;Abitur
+Potenzfunktion;幂函数;Potenzfunktionen besitzen die Form x hoch n.;Mathe;Abitur
+Ganzrationale Funktion;有理整函数;Eine ganzrationale Funktion ist ein Polynom.;Mathe;Abitur
+Symmetrieachse;对称轴;Die Symmetrieachse einer Parabel geht durch den Scheitel.;Mathe;Abitur
+Grenzverhalten;极限行为;Das Grenzverhalten beschreibt f im Unendlichen.;Mathe;Abitur
+Stetigkeit;连续性;Stetigkeit ertlaert, warum kein Sprung auftritt.;Mathe;CN
+Tangentensteigung;切线斜率;Die Tangentensteigung ist der Wert von f Strich an der Stelle x null.;Mathe;Abitur
+Normalensteigung;法线斜率;Die Normalensteigung steht senkrecht auf der Tangente.;Mathe;Abitur
+Monotonie;单调性;Die Monotonie beschreibt das Steigen oder Fallen der Funktion.;Mathe;Abitur
+Hochpunkt;极大点;Ein Hochpunkt kann durch einen Vorzeichenwechsel entstehen.;Mathe;Abitur
+Tiefpunkt;极小点;Ein Tiefpunkt kann durch einen Vorzeichenwechsel entstehen.;Mathe;Abitur
+Sattelpunkt;鞍点;Ein Sattelpunkt beschreibt einen Wechsel der Kruemmung.;Mathe;Abitur
+Vorzeichentabelle;符号表;Die Vorzeichentabelle zeigt das Vorzeichen der Ableitung.;Mathe;CN
+Notwendige Bedingung;必要条件;Nullstellen der ersten Ableitung sind notwendig fuer Extrema.;Mathe;Abitur
+Hinreichende Bedingung;充分条件;Der Vorzeichenwechsel ist eine hinreichende Bedingung fuer ein Extremum.;Mathe;Abitur
+Kruemmung;凹凸性;Die Kruemmung wird durch die zweite Ableitung beschrieben.;Mathe;Abitur
+Stammfunktion;原函数;Eine Stammfunktion F erfuellt F gleich F Strich.;Mathe;Abitur
+Integral;积分;Das Integral einer Aenderungsrate liefert die Gesamtaenderung.;Mathe;Abitur
+Skalarprodukt;标量积;Das Skalarprodukt zweier Vektoren ist eine Zahl.;Mathe;CN
+Vektorbetrag;向量模;Der Vektorbetrag gibt die Laenge des Vektors an.;Mathe;Abitur
+Richtungsvektor;方向向量;Ein Richtungsvektor gibt die Richtung einer Geraden an.;Mathe;Abitur
+Parameterform;参数式;Die Parameterform einer Geraden nutzt einen freien Parameter.;Mathe;CN
+Lagebeziehung;位置关系;Parallel schneidend und windschief sind Lagebeziehungen.;Mathe;Abitur
+Schnittpunkt;交点;Ein Schnittpunkt erfuellt die Gleichungen zweier Geraden.;Mathe;Abitur
+lineares Gleichungssystem;线性方程组;Ein lineares Gleichungssystem ordnet Gleichungen Variablen zu.;Mathe;Abitur
+Zufallsexperiment;随机实验;Ein Zufallsexperiment besitzt ein Ergebnisfeld.;Mathe;Abitur
+Ergebnismenge;样本空间;Die Ergebnismenge enthaelt alle moeglichen Ergebnisse.;Mathe;Abitur
+Gegenereignis;对立事件;Ein Gegenereignis schliesst das urspruengliche Ereignis aus.;Mathe;Abitur
+Laplace-Experiment;古典概型实验;Beim Laplace-Experiment sind alle Ergebnisse gleich wahrscheinlich.;Mathe;Abitur
+Mehrstufenexperiment;多阶段实验;Beim Mehrstufenexperiment werden Stufen nacheinander ausgefuehrt.;Mathe;CN
+Bedingte Wahrscheinlichkeit;条件概率;Die bedingte Wahrscheinlichkeit beruht auf einer bekannten Bedingung.;Mathe;CN
+Zufallsvariable;随机变量;Eine Zufallsvariable ordnet Ergebnisse Zahlen zu.;Mathe;Abitur
+Erwartungswert;期望值;Der Erwartungswert gewichtet Ergebnisse nach ihrer Wahrscheinlichkeit.;Mathe;Abitur
+Varianz;方差;Die Varianz beschreibt die Streuung um den Erwartungswert.;Mathe;Abitur
