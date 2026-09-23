@@ -13,3 +13,39 @@ Anode;阳极;An der Anode laeuft die Oxidation ab.;Chemie;CN
 Kathode;阴极;An der Kathode laeuft die Reduktion ab.;Chemie;CN
 Reduktionsmittel;还原剂;Das Reduktionsmittel gibt Elektronen ab.;Chemie;CN
 Oxidationsmittel;氧化剂;Das Oxidationsmittel nimmt Elektronen auf.;Chemie;CN
+Ordnungszahl;原子序数;Die Ordnungszahl ist gleich der Protonenzahl.;Chemie;Abitur
+Elektronenkonfiguration;电子排布;Die Elektronenkonfiguration verteilt Elektronen auf Schalen und Orbitale.;Chemie;CN
+Periode;周期;Eine Periode entspricht der Zahl der besetzten Schalen.;Chemie;Abitur
+Hauptgruppe;主族;Die Hauptgruppe folgt bei Hauptgruppenelementen aus den Valenzelektronen.;Chemie;Abitur
+Isotop;同位素;Isotope haben gleiche Protonen und verschiedene Neutronen.;Chemie;CN
+Ion;离子;Ein Ion besitzt eine andere Elektronenzahl als das neutrale Atom.;Chemie;Abitur
+Kation;阳离子;Ein Kation traegt eine positive Ladung.;Chemie;Abitur
+Anion;阴离子;Ein Anion traegt eine negative Ladung.;Chemie;Abitur
+Ionenbindung;离子键;Eine Ionenbindung entsteht durch Elektronenuebergang.;Chemie;CN
+Elektronenpaarbindung;共价键;Eine Elektronenpaarbindung entsteht durch gemeinsame Elektronenpaare.;Chemie;CN
+Metallbindung;金属键;Eine Metallbindung beruht auf beweglichen Elektronen im Metallgitter.;Chemie;Abitur
+Polaritaet;极性;Polaritaet beschreibt die ungleiche Verteilung einer Bindungselektronenpaare.;Chemie;Abitur
+Molekuel;分子;Ein Molekuel besteht aus chemisch gebundenen Atomen.;Chemie;Abitur
+Summenformel;分子式;Die Summenformel gibt Atomzahlen und Elemente an.;Chemie;Abitur
+Strukturformel;结构式;Die Strukturformel zeigt die Bindungsanordnung.;Chemie;Abitur
+Homologie;同系关系;Homologie bezeichnet eine Reihe gleicher funktioneller Gruppen.;Chemie;Abitur
+Isomerie;同分异构;Isomerie verbindet unterschiedliche Strukturen gleicher Summenformel.;Chemie;CN
+funktionelle Gruppe;官能团;Die funktionelle Gruppe bestimmt typische Reaktionen.;Chemie;CN
+Alkane;烷烃;Alkane sind gesaettigte Kohlenwasserstoffe ohne Doppelbindung.;Chemie;Abitur
+Alkene;烯烃;Alkene besitzen mindestens eine C-Doppelbindung.;Chemie;Abitur
+Alkine;炔烃;Alkine besitzen mindestens eine C-Dreifachbindung.;Chemie;Abitur
+Alkohol;醇;Ein Alkohol besitzt die funktionelle Gruppe OH.;Chemie;Abitur
+Aldehyd;醛;Ein Aldehyd besitzt die Gruppe CHO.;Chemie;Abitur
+Keton;酮;Ein Keton besitzt eine Carbonylgruppe zwischen zwei C-Atomen.;Chemie;Abitur
+Carbonsaeure;羧酸;Eine Carbonsaeure besitzt die Gruppe COOH.;Chemie;Abitur
+Ester;酯;Ein Ester entsteht aus Alkohol und Carbonsaeure.;Chemie;Abitur
+Substitutionsreaktion;取代反应;Bei einer Substitution wird ein Atom oder eine Gruppe ersetzt.;Chemie;CN
+Additionsreaktion;加成反应;Bei einer Addition wird ein Molekuel an eine Mehrfachbindung angelagert.;Chemie;CN
+Eliminierungsreaktion;消除反应;Bei einer Eliminierung werden kleine Molekuele abgespalten.;Chemie;CN
+Oxidation;氧化;Bei Oxidation werden Elektronen abgegeben oder Bindungselektronen entfernt.;Chemie;Abitur
+Reduktion;还原;Bei Reduktion werden Elektronen aufgenommen.;Chemie;Abitur
+Reaktionsgeschwindigkeit;反应速率;Die Reaktionsgeschwindigkeit beschreibt die Konzentrationsaenderung pro Zeit.;Chemie;CN
+Aktivierungsenergie;活化能;Ein Katalysator senkt die Aktivierungsenergie.;Chemie;CN
+Katalysator;催化剂;Ein Katalysator beschleunigt Reaktionen ohne selbst verbraucht zu werden.;Chemie;Abitur
+Massenwirkungsgesetz;质量作用定律;Das Massenwirkungsgesetz verknuepft Gleichgewichtskonzentrationen.;Chemie;CN
+Prinzip von Le Chatelier;勒夏特列原理;Das Prinzip von Le Chatelier beschreibt die Reaktion auf eine Stoerung.;Chemie;Abitur
