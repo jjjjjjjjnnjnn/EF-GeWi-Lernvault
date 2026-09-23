@@ -16,6 +16,18 @@ export interface BM25Options {
   tagsWeight?: number;  // 标签加权，默认 2.0
 }
 
+export function normalizeSearchText(text: string): string {
+  if (!text) return "";
+  return text
+    .normalize("NFD")
+    .toLowerCase()
+    .replace(/a\u0308/g, "ae")
+    .replace(/o\u0308/g, "oe")
+    .replace(/u\u0308/g, "ue")
+    .replace(/ß/g, "ss")
+    .replace(/\p{M}/gu, "");
+}
+
 // 常见德语基础停用词 (避免无意义词汇淹没倒排索引)
 const DE_STOPWORDS = new Set([
   "aber", "als", "am", "an", "auch", "auf", "aus", "bei", "bin", "bis", "bist",
@@ -32,6 +44,10 @@ const DE_STOPWORDS = new Set([
   "wie", "wieder", "will", "wir", "wird", "wirst", "wo", "zu", "zum", "zur"
 ]);
 
+const NORMALIZED_DE_STOPWORDS = new Set(
+  Array.from(DE_STOPWORDS, normalizeSearchText)
+);
+
 /**
  * 多语言分词器：
  * 1. 德语/拉丁语系按标点、空格、连字符分词并小写化，剔除单字符标点与停用词。
@@ -40,7 +56,7 @@ const DE_STOPWORDS = new Set([
 export function tokenize(text: string): string[] {
   if (!text) return [];
   const tokens: string[] = [];
-  const normalized = text.toLowerCase();
+  const normalized = normalizeSearchText(text);
 
   // 1. 匹配法律法规条文结构 (如 "art. 9", "abs. 3", "§ 20")
   const legalMatches = normalized.match(/(?:art\.|artikel|abs\.|absatz|§)\s*\d+[a-z]?/gu) || [];
@@ -56,17 +72,21 @@ export function tokenize(text: string): string[] {
     // 如果包含连字符，同时将拆分的单子词加入
     if (clean.includes("-")) {
       for (const part of clean.split("-")) {
-        if (part.length >= 2 && !DE_STOPWORDS.has(part)) tokens.push(part);
+        if (part.length >= 2 && !DE_STOPWORDS.has(part) && !NORMALIZED_DE_STOPWORDS.has(part)) tokens.push(part);
       }
     }
-    if ((clean.length >= 2 || /\d/.test(clean)) && !DE_STOPWORDS.has(clean)) {
+    if (
+      (clean.length >= 2 || /\d/.test(clean)) &&
+      !DE_STOPWORDS.has(clean) &&
+      !NORMALIZED_DE_STOPWORDS.has(clean)
+    ) {
       tokens.push(clean);
     }
   }
 
   // 3. 提取 CJK 字符并生成 unigram & bigram
   const cjkChars: string[] = [];
-  for (const char of text) {
+  for (const char of normalized) {
     if (/[\u4e00-\u9fff]/.test(char)) {
       cjkChars.push(char);
     }
@@ -170,7 +190,7 @@ export class BM25Index {
     if (queryTokens.length === 0) return [];
 
     const scores = new Map<string, number>();
-    const trimmedLower = query.trim().toLowerCase();
+    const trimmedLower = normalizeSearchText(query.trim());
 
     for (const token of queryTokens) {
       const postingsList = this.postings.get(token);
@@ -195,10 +215,10 @@ export class BM25Index {
       const doc = this.docMap.get(docId);
       if (!doc) continue;
       let boost = 0;
-      if (doc.thema.toLowerCase().includes(trimmedLower)) {
+      if (normalizeSearchText(doc.thema).includes(trimmedLower)) {
         boost += 5.0;
       }
-      if (doc.text.toLowerCase().includes(trimmedLower)) {
+      if (normalizeSearchText(doc.text).includes(trimmedLower)) {
         boost += 2.5;
       }
       if (boost > 0) {

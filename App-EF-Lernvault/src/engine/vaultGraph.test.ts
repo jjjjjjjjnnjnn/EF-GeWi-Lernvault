@@ -1,4 +1,4 @@
-import { describe, it, expect } from "vitest";
+import { describe, expect, it } from "vitest";
 import { VaultGraph, extractLinks, normalizeLinkTarget } from "./vaultGraph";
 
 describe("VaultGraph Link Extraction", () => {
@@ -24,8 +24,8 @@ describe("VaultGraph Link Extraction", () => {
     expect(links[1].target).toBe("07_Philosophie/Utilitarismus.md#kant");
   });
 
-  it("normalizes link targets to clean lowercase identifier", () => {
-    expect(normalizeLinkTarget("08_SoWi/Soziale-Ungleichheit.md")).toBe("soziale-ungleichheit");
+  it("normalizes link targets as case-insensitive paths", () => {
+    expect(normalizeLinkTarget("08_SoWi/Soziale-Ungleichheit.md")).toBe("08_sowi/soziale-ungleichheit");
     expect(normalizeLinkTarget("Utilitarismus.md#kant")).toBe("utilitarismus");
     expect(normalizeLinkTarget("Soziale Marktwirtschaft")).toBe("soziale marktwirtschaft");
   });
@@ -63,15 +63,13 @@ describe("VaultGraph Adjacency & Topology", () => {
     const graph = new VaultGraph();
     graph.build(notes);
 
-    // Forward links from "Soziale Marktwirtschaft"
     const fwdMarkt = graph.getForwardLinks("sowi/markt");
-    expect(fwdMarkt.map((n) => n.id)).toContain("sowi/gg20");
-    expect(fwdMarkt.map((n) => n.id)).toContain("sowi/tarif");
+    expect(fwdMarkt.map((node) => node.id)).toContain("sowi/gg20");
+    expect(fwdMarkt.map((node) => node.id)).toContain("sowi/tarif");
 
-    // Backlinks to "Grundgesetz-Art-20"
     const backGg = graph.getBacklinks("sowi/gg20");
-    expect(backGg.map((n) => n.id)).toContain("sowi/markt");
-    expect(backGg.map((n) => n.id)).toContain("sowi/tarif");
+    expect(backGg.map((node) => node.id)).toContain("sowi/markt");
+    expect(backGg.map((node) => node.id)).toContain("sowi/tarif");
   });
 
   it("detects orphan nodes", () => {
@@ -88,7 +86,6 @@ describe("VaultGraph Adjacency & Topology", () => {
     graph.build(notes);
 
     const hubs = graph.getHubNodes(2);
-    // sowi/gg20 has 2 inbound links, sowi/markt has 2 outbound links
     expect(hubs[0].degree).toBeGreaterThanOrEqual(2);
   });
 
@@ -97,9 +94,70 @@ describe("VaultGraph Adjacency & Topology", () => {
     graph.build(notes);
 
     const sub1 = graph.getNeighborhood("sowi/tarif", 1);
-    const subNodeIds = sub1.nodes.map((n) => n.id);
+    const subNodeIds = sub1.nodes.map((node) => node.id);
     expect(subNodeIds).toContain("sowi/tarif");
     expect(subNodeIds).toContain("sowi/gg20");
-    expect(subNodeIds).toContain("sowi/markt"); // connected via inbound edge from markt
+    expect(subNodeIds).toContain("sowi/markt");
+  });
+
+  it("keeps same-named files in different folders as separate nodes", () => {
+    const graph = new VaultGraph();
+    graph.build([
+      {
+        id: "03_Mathe/Formel-Spickzettel.md",
+        thema: "Formel-Spickzettel Mathematik",
+        fach: "Mathe",
+        content: "[[Formel-Spickzettel]]",
+      },
+      {
+        id: "04_Physik/Formel-Spickzettel.md",
+        thema: "Formel-Spickzettel Physik",
+        fach: "Physik",
+        content: "unverbunden",
+      },
+      {
+        id: "08_SoWi/Verweis.md",
+        thema: "Verweis",
+        fach: "SoWi",
+        content: "[[04_Physik/Formel-Spickzettel.md]]",
+      },
+    ]);
+
+    const exported = graph.exportFullGraph();
+    expect(exported.nodes.filter((node) => node.id.endsWith("Formel-Spickzettel.md"))).toHaveLength(2);
+    expect(graph.getForwardLinks("08_SoWi/Verweis.md").map((node) => node.id)).toEqual([
+      "04_Physik/Formel-Spickzettel.md",
+    ]);
+    expect(graph.getForwardLinks("03_Mathe/Formel-Spickzettel.md")).toEqual([]);
+  });
+
+  it("resolves relative paths while refusing ambiguous basename links", () => {
+    const graph = new VaultGraph();
+    graph.build([
+      {
+        id: "08_SoWi/Verweis.md",
+        thema: "Verweis",
+        fach: "SoWi",
+        content: "[Physik](../04_Physik/Formel-Spickzettel.md) [Mathematik](Formel-Spickzettel.md)",
+      },
+      {
+        id: "03_Mathe/Formel-Spickzettel.md",
+        thema: "Formel-Spickzettel Mathematik",
+        fach: "Mathe",
+        content: "",
+      },
+      {
+        id: "04_Physik/Formel-Spickzettel.md",
+        thema: "Formel-Spickzettel Physik",
+        fach: "Physik",
+        content: "",
+      },
+    ]);
+
+    expect(graph.getForwardLinks("08_SoWi/Verweis.md").map((node) => node.id)).toEqual([
+      "04_Physik/Formel-Spickzettel.md",
+    ]);
+    expect(graph.getForwardLinks("03_Mathe/Formel-Spickzettel.md")).toEqual([]);
+    expect(graph.getForwardLinks("04_Physik/Formel-Spickzettel.md")).toEqual([]);
   });
 });

@@ -60,7 +60,7 @@ export function buildCheckScorePrompt(
     { role: "system", content: REISE_SYSTEM },
     {
       role: "user",
-      content: `Thema: ${thema}.\nFrage: ${frage}\nErwartete Antwort: ${erwarteteAntwort}\n\n默写 des Lernenden (合书回忆写出):\n${studentText.slice(0, 1200)}\n\nKorrigiere wie FelloFish — genau 4 Abschnitte:\n1. PUNKTE: 0-3 Sterne (★★★ voll richtig / ★★ fast / ★ ein Kern fehlt / 0 falsch) + ein Satz Urteil.\n2. FEHLERANALYSE: Was fehlt/falsch ist — zitiere die Stelle aus der默写 wörtlich.\n3. KORREKTUR: Die richtige Antwort in 2 Sätzen + ein Satzgerüst zum Abschreiben-und-Anpassen.\n4. LEHRE: Ein Merkhaken (Eselsbrücke/Bild) + zu welchem Schritt zurück (z.B. "Schritt 2 Begriffe").\nDeutsch schreiben, danach knappe chinesische Zusammenfassung (2 Sätze).`,
+      content: `Thema: ${thema}.\nFrage: ${frage}\nErwartete Antwort: ${erwarteteAntwort}\n\n默写 des Lernenden (合书回忆写出):\n${studentText.slice(0, 1200)}\n\nKorrigiere wie FelloFish — genau 4 Abschnitte:\n1. PUNKTE: 0-3 Sterne (3/3 voll richtig / 2/3 fast / 1/3 ein Kern fehlt / 0 falsch) + ein Satz Urteil.\n2. FEHLERANALYSE: Was fehlt/falsch ist — zitiere die Stelle aus der默写 wörtlich.\n3. KORREKTUR: Die richtige Antwort in 2 Sätzen + ein Satzgerüst zum Abschreiben-und-Anpassen.\n4. LEHRE: Ein Merkhaken (Eselsbrücke/Bild) + zu welchem Schritt zurück (z.B. "Schritt 2 Begriffe").\nDeutsch schreiben, danach knappe chinesische Zusammenfassung (2 Sätze).`,
     },
   ];
 }

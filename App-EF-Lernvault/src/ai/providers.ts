@@ -1,6 +1,7 @@
 // Einheitliche KI-Anbindung: API-direkt (OpenAI-kompatibel) oder lokal (WebLLM).
 // Der Key liegt nur in localStorage, nie im Repo. Kein Request ohne Engine-Wahl.
 import type { Lang } from "../i18n";
+import { AI_CONFIG_STORAGE_KEY } from "../engine/storageKeys";
 
 export type AiEngine = "api" | "local" | "off";
 
@@ -115,7 +116,7 @@ export interface AiConfig {
   hfMirror: string; // leer = offizieller hub; z.b. https://hf-mirror.com
 }
 
-export const AI_KEY = "eflernvault:ai:v1";
+export const AI_KEY = AI_CONFIG_STORAGE_KEY;
 
 export const DEFAULT_AI: AiConfig = {
   version: 1,

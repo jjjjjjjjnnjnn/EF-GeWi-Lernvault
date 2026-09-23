@@ -46,6 +46,7 @@ describe("reise-ki prompts", () => {
     expect(msgs[1].content).toContain("LEHRE");
     expect(msgs[1].content).toContain("Gewerkschaften machen Löhne.");
     expect(msgs[1].content).toContain("chinesische Zusammenfassung");
+    expect(msgs[1].content).not.toMatch(/[★☆]/);
   });
 
   it("lange texte werden gedeckelt (kein prompt-sprengen)", () => {

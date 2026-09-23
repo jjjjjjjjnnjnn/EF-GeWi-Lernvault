@@ -84,6 +84,12 @@ describe("socratic.ts - Didaktische Lehrmodi & Fehlerlog-Erfassung", () => {
     expect(getFachFolderName("Bio")).toBe("06_Bio");
     expect(getFachFolderName("Philosophie")).toBe("07_Philosophie");
     expect(getFachFolderName("SoWi")).toBe("08_SoWi");
+    expect(getFachFolderName("Musik")).toBe("09_Musik-mündl");
+    expect(getFachFolderName("Sport")).toBe("10_Sport-mündl");
+  });
+
+  it("lehnt unbekannte Fachnamen statt eines falschen SoWi-Pfads ab", () => {
+    expect(() => getFachFolderName("Kunst")).toThrow("Unbekanntes Fach: Kunst");
   });
 
   it("extrahiert treffsicher Fehlerlog-Entwürfe aus Q&A-Turns", () => {

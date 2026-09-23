@@ -4,6 +4,7 @@
 import type { VaultCard, VaultNote } from "../vault/parser";
 import { partitionQueue } from "../scheduler";
 import { MasteryEngine } from "./mastery";
+import { DAILY_STREAK_STORAGE_KEY } from "./storageKeys";
 
 export interface DailySprintQuizItem {
   id: string;
@@ -32,7 +33,7 @@ export interface DailySprintSession {
   estimatedMinutes: number;
 }
 
-const STREAK_KEY = "ef_lernvault_daily_streak_v1";
+const STREAK_KEY = DAILY_STREAK_STORAGE_KEY;
 
 export interface StreakData {
   currentStreak: number;

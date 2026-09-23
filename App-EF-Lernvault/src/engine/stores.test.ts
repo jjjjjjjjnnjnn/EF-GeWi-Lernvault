@@ -1,6 +1,12 @@
 import { beforeEach, describe, expect, it } from "vitest";
 import { getStorageBackend, localBackend, setStorageBackend, type StorageBackend } from "./storage";
 import {
+  DAILY_STREAK_STORAGE_KEY,
+  INTERLEAVE_STORAGE_KEY,
+  LANG_STORAGE_KEY,
+  MASTERY_STORAGE_KEY,
+} from "./storageKeys";
+import {
   allStoreKeys,
   feedbackStore,
   onboardingStore,
@@ -82,10 +88,15 @@ describe("backend-swap (cloud-vorbereitung)", () => {
 });
 
 describe("allStoreKeys", () => {
-  it("enthaelt alle 6 verwalteten keys, eindeutig", () => {
+  it("enthaelt alle 10 synchronisierten state-keys, eindeutig", () => {
     const keys = allStoreKeys();
-    expect(keys).toHaveLength(6);
-    expect(new Set(keys).size).toBe(6);
-    for (const k of keys) expect(k.startsWith("eflernvault:")).toBe(true);
+    expect(keys).toHaveLength(10);
+    expect(new Set(keys).size).toBe(10);
+    expect(keys).toEqual(expect.arrayContaining([
+      LANG_STORAGE_KEY,
+      MASTERY_STORAGE_KEY,
+      DAILY_STREAK_STORAGE_KEY,
+      INTERLEAVE_STORAGE_KEY,
+    ]));
   });
 });

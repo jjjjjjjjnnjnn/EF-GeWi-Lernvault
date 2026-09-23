@@ -1,5 +1,6 @@
 import { describe, it, expect } from "vitest";
 import { extractKlausurFromNote, evaluateKlausurLocally } from "./klausurExtractor";
+import { parseBody, parseNoteFile } from "../vault/parser";
 import { percentToNotenpunkte } from "../types/klausur";
 
 describe("percentToNotenpunkte", () => {
@@ -66,6 +67,107 @@ tags: [EF, SoWi, Ungleichheit]
     expect(exam.aufgaben[2].afb).toBe("AFB III");
     expect(exam.aufgaben[2].operator).toBe("Beurteilen");
     expect(exam.aufgaben[2].maxPoints).toBe(30);
+  });
+
+  it("extracts Pro/Contra material and operator sentences from stripped parser-block text", () => {
+    const blocks = parseBody(`## 2. 争议/辨析
+### Pro
+- Leistung muss sich lohnen (Davis-Moore).
+### Contra
+- Bildungstrichter zeigt ungleiche Startchancen.
+## 3. 德语 Klausur-Sätze (用Operatoren)
+- Darstellen: \`Soziale Ungleichheit bezeichnet die ungleiche Verteilung von Ressourcen.\`
+- Analysieren: \`Der Bildungstrichter zeigt die Vererbung von Bildungschancen.\`
+- Beurteilen: \`Nach dem Kriterium der Chancengerechtigkeit ist staatliche Umverteilung legitim.\``);
+    const strippedContent = blocks.map((block) => block.text).join("\n");
+
+    const exam = extractKlausurFromNote({
+      path: "08_SoWi/Texte-Analyse/Soziale-Ungleichheit.md",
+      fach: "SoWi",
+      thema: "Soziale Ungleichheit",
+      content: strippedContent,
+    });
+
+    expect(exam.material.text).toContain("Davis-Moore");
+    expect(exam.material.text).toContain("Bildungstrichter");
+    expect(exam.aufgaben[0].sampleSolution).toBe(
+      "Soziale Ungleichheit bezeichnet die ungleiche Verteilung von Ressourcen."
+    );
+    expect(exam.aufgaben[1].sampleSolution).toBe(
+      "Der Bildungstrichter zeigt die Vererbung von Bildungschancen."
+    );
+    expect(exam.aufgaben[2].sampleSolution).toBe(
+      "Nach dem Kriterium der Chancengerechtigkeit ist staatliche Umverteilung legitim."
+    );
+  });
+
+  it("retains non-empty Pro/Contra and operator criteria for stripped parser blocks", () => {
+    const blocks = parseBody(`## 2. 争议/辨析
+### Pro
+- Chancengerechtigkeit stärkt gesellschaftliche Teilhabe.
+### Contra
+- Fördermaßnahmen können Fehlsteuerungen verstärken.
+## 3. 德语 Klausur-Sätze
+- Darstellen: Teilhabe bezeichnet die Möglichkeiten gesellschaftlicher Beteiligung.
+- Analysieren: Förderung kann Hindernisse abbauen oder neue schaffen.
+- Beurteilen: Wirksamkeit ist nach Zielgenauigkeit und Nebenfolgen zu prüfen.`);
+    const exam = extractKlausurFromNote({
+      path: "08_SoWi/Teilhabe.md",
+      fach: "SoWi",
+      thema: "Teilhabe",
+      content: blocks.map((block) => block.text).join("\n"),
+    });
+
+    expect(exam.material.text).toContain("### Pro");
+    expect(exam.material.text).toContain("### Contra");
+    expect(exam.aufgaben[0].expectedPoints).toEqual([
+      "Teilhabe bezeichnet die Möglichkeiten gesellschaftlicher Beteiligung.",
+    ]);
+    expect(exam.aufgaben[1].expectedPoints).toEqual([
+      "Förderung kann Hindernisse abbauen oder neue schaffen.",
+    ]);
+    expect(exam.aufgaben[2].expectedPoints).toEqual([
+      "Wirksamkeit ist nach Zielgenauigkeit und Nebenfolgen zu prüfen.",
+    ]);
+  });
+
+  it("extracts a complete exam from the real VaultNote block shape", () => {
+    const parsed = parseNoteFile(
+      "08_SoWi/Teilhabe.md",
+      `---
+fach: SoWi
+thema: Teilhabe
+operatoren: [darstellen, analysieren, beurteilen]
+klausurrelevant: true
+datum: 2026-09-23
+tags: [EF, SoWi]
+---
+## 2. 争议/辨析
+### Pro
+- Teilhabe stärkt gesellschaftliche Beteiligung.
+### Contra
+- Förderung kann neue Barrieren erzeugen.
+## 3. Klausur-Sätze
+- Darstellen: Teilhabe bezeichnet die Möglichkeiten gesellschaftlicher Beteiligung.
+- Analysieren: Fördermaßnahmen können Hindernisse abbauen oder neu erzeugen.
+- Beurteilen: Wirksamkeit ist anhand von Zielgenauigkeit und Nebenfolgen zu prüfen.`
+    );
+    expect(parsed).not.toBeNull();
+
+    const exam = extractKlausurFromNote({
+      path: parsed!.path,
+      fach: parsed!.fach,
+      thema: parsed!.thema,
+      content: parsed!.blocks.map((block) => block.text).join("\n"),
+      operatoren: parsed!.operatoren,
+      klausurrelevant: parsed!.klausurrelevant,
+    });
+
+    expect(exam.material.text).toContain("gesellschaftliche Beteiligung");
+    expect(exam.material.text).toContain("neue Barrieren");
+    expect(exam.aufgaben[0].sampleSolution).toContain("gesellschaftlicher Beteiligung");
+    expect(exam.aufgaben[1].sampleSolution).toContain("Hindernisse");
+    expect(exam.aufgaben[2].sampleSolution).toContain("Nebenfolgen");
   });
 
   it("evaluates student response and generates EPA scores and Fehlerlog patches", () => {

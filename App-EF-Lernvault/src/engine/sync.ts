@@ -6,6 +6,7 @@
 // synchron, http nicht). Server-seitig beliebig — doku LEARNING-ENGINE § cloud.
 import { defineStore, getStorageBackend, type VersionedStore } from "./storage";
 import { allStoreKeys } from "./stores";
+import { SYNC_STORAGE_KEY } from "./storageKeys";
 
 export interface SyncData {
   version: 1;
@@ -15,7 +16,7 @@ export interface SyncData {
 }
 
 export const syncStore: VersionedStore<SyncData> = defineStore<SyncData>({
-  key: "eflernvault:sync:v1",
+  key: SYNC_STORAGE_KEY,
   version: 1,
   defaults: () => ({ version: 1, endpoint: "", token: "", lastSync: "" }),
   validate: (v: unknown): v is SyncData => {

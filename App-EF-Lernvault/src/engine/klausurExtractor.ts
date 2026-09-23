@@ -14,17 +14,50 @@ export interface RawNoteInput {
   klausurrelevant?: boolean;
 }
 
+function inferStrippedHeading(line: string): string | null {
+  const trimmed = line.trim();
+  if (!trimmed) return null;
+  if (/^(?:Pro|Contra)(?:\s*\/\s*.*)?$/i.test(trimmed)) return `### ${trimmed}`;
+  if (/^\d+[.)]\s+\S.{0,110}$/.test(trimmed)) return `## ${trimmed}`;
+  if (/^(?:争议|辨析|Kontroverse)(?:\s*[/／].*)?$/i.test(trimmed)) return `## ${trimmed}`;
+  if (/^(?:Klausur-Sätze|Operatoren)(?:\s*.*)?$/i.test(trimmed)) return `## ${trimmed}`;
+  if (/^(?:.*(?:Feynman|Grundlagen|Einführung).*|.*讲一遍.*)$/i.test(trimmed)) {
+    return `## ${trimmed}`;
+  }
+  return null;
+}
+
+function normalizeSectionContent(content: string): string {
+  const closingFrontmatter = content.match(/\r?\n---(?:\r?\n|$)/);
+  const body = content.startsWith("---") && closingFrontmatter
+    ? content.slice((closingFrontmatter.index ?? 0) + closingFrontmatter[0].length)
+    : content;
+  return body
+    .split("\n")
+    .map((line) => {
+      if (/^\s*#{1,6}\s+/.test(line)) return line;
+      return inferStrippedHeading(line) ?? line;
+    })
+    .join("\n");
+}
+
 /** 提取 Markdown 中指定标题二级或三级章节内容 */
 function extractSection(content: string, headingRegex: RegExp): string {
   const lines = content.split("\n");
   let capturing = false;
+  let targetLevel = 0;
   const captured: string[] = [];
 
   for (const line of lines) {
-    if (/^##\s+/.test(line)) {
-      if (capturing) break;
-      if (headingRegex.test(line)) {
+    const heading = line.match(/^(#{2,4})\s+/);
+    if (heading) {
+      const level = heading[1].length;
+      if (capturing) {
+        const isArgumentHeading = /^#{2,4}\s+(?:Pro|Contra)(?:\s*\/\s*.*)?$/i.test(line);
+        if (level <= targetLevel && !isArgumentHeading) break;
+      } else if (headingRegex.test(line)) {
         capturing = true;
+        targetLevel = level;
         continue;
       }
     }
@@ -48,8 +81,12 @@ function extractOperatorSentences(klausurSection: string): Record<string, string
 
   const lines = klausurSection.split("\n");
   for (const line of lines) {
-    const trimmed = line.replace(/^[-*]\s+/, "").trim();
-    const match = trimmed.match(/^([A-Za-zäöüÄÖÜ]+)\s*:\s*`?([^`]+)`?/i);
+    const trimmed = line
+      .replace(/^[-*]\s+/, "")
+      .replace(/^[*_]+/, "")
+      .replace(/[*_]+$/, "")
+      .trim();
+    const match = trimmed.match(/^([A-Za-zäöüÄÖÜß]+)\s*(?::|\s[-–—]\s)\s*`?(.+?)`?$/i);
     if (match) {
       const op = match[1].toLowerCase();
       const sentence = match[2].trim();
@@ -66,16 +103,21 @@ function extractOperatorSentences(klausurSection: string): Record<string, string
 
 /** 从笔记源码算法抽取生成 KlausurExam */
 export function extractKlausurFromNote(note: RawNoteInput): KlausurExam {
-  const controversySec = extractSection(note.content, /(争议|辨析|Pro|Contra|Kontroverse)/i);
-  const klausurSaetzeSec = extractSection(note.content, /(Klausur-Sätze|Operatoren|德语)/i);
+  const content = normalizeSectionContent(note.content);
+  const controversySec = extractSection(content, /(争议|辨析|Pro|Contra|Kontroverse)/i);
+  const klausurSaetzeSec = extractSection(content, /(Klausur-Sätze|Operatoren|德语)/i);
   const opMap = extractOperatorSentences(klausurSaetzeSec);
 
   // 1. 组装材料 (Material / Textgrundlage)
   let materialText = controversySec;
-  if (!materialText || materialText.length < 50) {
+  const controversyHasContent = controversySec
+    .replace(/^#{2,4}\s+/gm, "")
+    .replace(/^[-*]\s+/gm, "")
+    .trim().length > 0;
+  if (!materialText || !controversyHasContent) {
     // 降级使用正文第一部分 (中文/概念梳理)
-    const firstSec = extractSection(note.content, /(讲一遍|Feynman|Grundlagen|Einführung)/i);
-    materialText = firstSec || note.content.slice(0, 500);
+    const firstSec = extractSection(content, /(讲一遍|Feynman|Grundlagen|Einführung)/i);
+    materialText = firstSec || content.slice(0, 500);
   }
 
   // 提取关键词

@@ -1,3 +1,5 @@
+import { TUTOR_PEDAGOGY_MODE_STORAGE_KEY } from "../engine/storageKeys";
+
 // socratic.ts: Didaktische Lehrstufen (Sokratisch vs. Klausur-Direkt)
 // und fehlertolerante Erfassung von Fehlerlog-Eintraegen (Patches fuer Obsidian).
 
@@ -15,7 +17,7 @@ export interface FehlerlogDraft {
   datum: string;
 }
 
-const STORAGE_KEY_MODE = "eflernvault:tutor:pedagogy_mode:v1";
+const STORAGE_KEY_MODE = TUTOR_PEDAGOGY_MODE_STORAGE_KEY;
 
 /**
  * Laedt den gespeicherten Lehrmodus oder gibt "socratic" als Standard zurueck.
@@ -105,29 +107,23 @@ export function formatFehlerlogPatch(draft: FehlerlogDraft): string {
 /**
  * Mappt den Fachnamen auf das standardisierte Vault-Verzeichnis.
  */
+export const FACH_FOLDER_NAMES: Readonly<Record<string, string>> = {
+  deutsch: "01_Deutsch",
+  englisch: "02_Englisch",
+  mathe: "03_Mathe",
+  physik: "04_Physik",
+  chemie: "05_Chemie",
+  bio: "06_Bio",
+  philosophie: "07_Philosophie",
+  sowi: "08_SoWi",
+  musik: "09_Musik-mündl",
+  sport: "10_Sport-mündl",
+};
+
 export function getFachFolderName(fach: string): string {
-  switch (fach.toLowerCase()) {
-    case "deutsch":
-      return "01_Deutsch";
-    case "englisch":
-      return "02_Englisch";
-    case "mathe":
-      return "03_Mathe";
-    case "physik":
-      return "04_Physik";
-    case "chemie":
-      return "05_Chemie";
-    case "bio":
-    case "biologie":
-      return "06_Bio";
-    case "philo":
-    case "philosophie":
-      return "07_Philosophie";
-    case "sowi":
-    case "sozialwissenschaften":
-    default:
-      return "08_SoWi";
-  }
+  const folder = FACH_FOLDER_NAMES[fach.trim().toLowerCase()];
+  if (typeof folder !== "string") throw new Error(`Unbekanntes Fach: ${fach}`);
+  return folder;
 }
 
 /**

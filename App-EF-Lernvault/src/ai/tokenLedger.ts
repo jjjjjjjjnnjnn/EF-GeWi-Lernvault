@@ -1,4 +1,8 @@
 // Token 消耗追踪、账本统计与预算配额管理 (Clean-Room 原生实现)
+import {
+  TOKEN_BUDGET_STORAGE_KEY,
+  TOKEN_LEDGER_STORAGE_KEY,
+} from "../engine/storageKeys";
 // 记录 Prompt Token、Completion Token 以及 CCR 压缩算法节约的 Token，并支持每日预算告警
 
 export interface TokenRecord {
@@ -21,8 +25,8 @@ export interface TokenSummary {
   requestCount: number;
 }
 
-const TOKEN_LEDGER_KEY = "eflernvault:token_ledger:v1";
-const TOKEN_BUDGET_KEY = "eflernvault:token_budget:v1";
+const TOKEN_LEDGER_KEY = TOKEN_LEDGER_STORAGE_KEY;
+const TOKEN_BUDGET_KEY = TOKEN_BUDGET_STORAGE_KEY;
 const DEFAULT_DAILY_BUDGET = 100000; // 默认每日预算 10 万 Token
 const MAX_RECORDS_STORED = 500; // 最多保留近 500 次调用记录，防止 localStorage 膨胀
 

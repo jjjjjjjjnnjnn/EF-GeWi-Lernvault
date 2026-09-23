@@ -2,6 +2,7 @@
 // 支持认知状态动态追踪、薄弱点诊断、以及自主开启/关闭的学期归档与重置 (EF.1 / EF.2)
 
 import { resolveInhaltsfeld, NRW_LEHRPLAN_IFS } from "./competencyMap";
+import { MASTERY_STORAGE_KEY } from "./storageKeys";
 
 export interface BKTParameters {
   pL0: number; // 初始掌握先验概率，默认 0.15
@@ -28,6 +29,63 @@ export interface TopicMastery {
   lastUpdated: string;    // ISO 时间戳
 }
 
+export interface MasteryRankingOptions {
+  masteryWeight?: number;
+  recencyWeight?: number;
+  now?: Date | number;
+}
+
+export function getTopicRankingWeight(
+  mastery: TopicMastery | null,
+  datum?: string,
+  options: MasteryRankingOptions = {}
+): number {
+  const masteryWeight = Math.max(0, options.masteryWeight ?? 0.25);
+  const recencyWeight = Math.max(0, options.recencyWeight ?? 0.08);
+  const requestedNow = options.now instanceof Date ? options.now.getTime() : options.now;
+  const now = requestedNow !== undefined && Number.isFinite(requestedNow) ? requestedNow : Date.now();
+  let weight = 0;
+
+  if (mastery) {
+    const probability = Number.isFinite(mastery.pMastery)
+      ? Math.min(1, Math.max(0, mastery.pMastery))
+      : 0;
+    weight += (1 - probability) * masteryWeight;
+  }
+
+  if (datum?.trim()) {
+    const timestamp = Date.parse(datum);
+    if (Number.isFinite(timestamp)) {
+      const ageDays = Math.max(0, (now - timestamp) / 86_400_000);
+      weight += Math.max(0, 1 - ageDays / 365) * recencyWeight;
+    }
+  }
+
+  return weight;
+}
+
+export interface ExamTopicSelectionOptions {
+  weakTopicBoost?: number;
+  unattemptedMastery?: number;
+}
+
+export function getExamTopicSelectionWeight(
+  mastery: TopicMastery | null,
+  options: ExamTopicSelectionOptions = {}
+): number {
+  const requestedBoost = options.weakTopicBoost ?? 3;
+  const weakTopicBoost = Number.isFinite(requestedBoost) ? Math.max(0, requestedBoost) : 3;
+  const requestedDefault = options.unattemptedMastery ?? 0.15;
+  const unattemptedMastery = Number.isFinite(requestedDefault)
+    ? Math.min(1, Math.max(0, requestedDefault))
+    : 0.15;
+  const masteryProbability = mastery?.pMastery;
+  const probability = typeof masteryProbability === "number" && Number.isFinite(masteryProbability)
+    ? Math.min(1, Math.max(0, masteryProbability))
+    : unattemptedMastery;
+  return 1 + weakTopicBoost * (1 - probability);
+}
+
 export type TermIdentifier = "EF.1" | "EF.2" | "ALL";
 
 export interface TermArchive {
@@ -43,7 +101,7 @@ export interface MasteryStoreState {
   archives: TermArchive[];
 }
 
-const STORAGE_KEY = "ef_lernvault_mastery_state_v1";
+const STORAGE_KEY = MASTERY_STORAGE_KEY;
 
 export class MasteryEngine {
   private state: MasteryStoreState;
@@ -190,6 +248,14 @@ export class MasteryEngine {
   public getTopicMastery(topicId: string): TopicMastery | null {
     const term = this.getEffectiveTerm();
     return this.state.masteryByTerm[term]?.[topicId] ?? null;
+  }
+
+  public getRankingWeight(
+    topicId: string,
+    datum?: string,
+    options: MasteryRankingOptions = {}
+  ): number {
+    return getTopicRankingWeight(this.getTopicMastery(topicId), datum, options);
   }
 
   /** 获取当前学期所有主题的掌握度列表 */

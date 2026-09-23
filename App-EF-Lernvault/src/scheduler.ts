@@ -14,16 +14,16 @@ export interface CardState {
 }
 
 import { defineStore, isRecord } from "./engine/storage";
+import { FSRS_STORAGE_KEY as CENTRAL_FSRS_STORAGE_KEY } from "./engine/storageKeys";
 
 export interface FSRSStorage {
   version: 1;
   cards: Record<string, CardState>;
 }
 
-const STORAGE_KEY = "eflernvault:fsrs:v1";
+const STORAGE_KEY = CENTRAL_FSRS_STORAGE_KEY;
 
-/** Fuer wipe/export-snapshot (stores.allStoreKeys). */
-export const FSRS_STORAGE_KEY = STORAGE_KEY;
+export { CENTRAL_FSRS_STORAGE_KEY as FSRS_STORAGE_KEY };
 
 const fsrsStore = defineStore<FSRSStorage>({
   key: STORAGE_KEY,

@@ -9,6 +9,32 @@ import {
   syncStore,
   type HttpAccess,
 } from "./sync";
+import {
+  DAILY_STREAK_STORAGE_KEY,
+  FEEDBACK_STORAGE_KEY,
+  FSRS_STORAGE_KEY,
+  INTERLEAVE_STORAGE_KEY,
+  LANG_STORAGE_KEY,
+  MASTERY_STORAGE_KEY,
+  ONBOARDING_STORAGE_KEY,
+  PLAN_STORAGE_KEY,
+  SYNCED_STORAGE_KEYS,
+  VERGLEICH_STORAGE_KEY,
+  XP_STORAGE_KEY,
+} from "./storageKeys";
+
+const EXPECTED_SYNCED_KEYS = [
+  FSRS_STORAGE_KEY,
+  XP_STORAGE_KEY,
+  VERGLEICH_STORAGE_KEY,
+  FEEDBACK_STORAGE_KEY,
+  PLAN_STORAGE_KEY,
+  ONBOARDING_STORAGE_KEY,
+  LANG_STORAGE_KEY,
+  MASTERY_STORAGE_KEY,
+  DAILY_STREAK_STORAGE_KEY,
+  INTERLEAVE_STORAGE_KEY,
+];
 
 // In-memory fake-server: key -> value
 function fakeServer(initial: Record<string, string> = {}, failAt?: string) {
@@ -64,6 +90,25 @@ describe("pushAll/pullAll", () => {
     f.db.set("eflernvault:xp:v1", JSON.stringify({ version: 1, xp: 42, streak: [], badges: {}, done: {} }));
     expect(await pullAll(h)).toEqual(["eflernvault:xp:v1"]);
     expect(JSON.parse(localStorage.getItem("eflernvault:xp:v1")!).xp).toBe(42);
+  });
+
+  it("iterates every synced key in both directions", async () => {
+    expect(SYNCED_STORAGE_KEYS).toEqual(EXPECTED_SYNCED_KEYS);
+    for (const key of EXPECTED_SYNCED_KEYS) localStorage.setItem(key, `local:${key}`);
+    const server = fakeServer();
+    const access = httpAccess("https://x", "", server.fetchFn);
+
+    expect(await pushAll(access)).toBe(EXPECTED_SYNCED_KEYS.length);
+    expect(server.calls.filter((call) => call.method === "PUT").map((call) => call.key)).toEqual(
+      EXPECTED_SYNCED_KEYS
+    );
+
+    localStorage.clear();
+    for (const key of EXPECTED_SYNCED_KEYS) server.db.set(key, `remote:${key}`);
+    expect(await pullAll(access)).toEqual(EXPECTED_SYNCED_KEYS);
+    expect(EXPECTED_SYNCED_KEYS.map((key) => localStorage.getItem(key))).toEqual(
+      EXPECTED_SYNCED_KEYS.map((key) => `remote:${key}`)
+    );
   });
 
   it("leerer server -> pull [] ohne schreiben", async () => {

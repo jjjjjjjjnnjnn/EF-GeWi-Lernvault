@@ -123,7 +123,7 @@ export async function executeChatWithRouting(
             reply: fallbackReply,
             source: "fallback",
             endpointUsed: fallbackEp,
-            badge: `⚡ 故障转移: ${fallbackEp.name}`,
+            badge: `故障转移: ${fallbackEp.name}`,
             tokens: capturedTokens ?? undefined,
           };
         } catch {

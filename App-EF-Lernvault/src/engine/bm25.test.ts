@@ -33,6 +33,31 @@ describe("BM25 Tokenizer", () => {
     expect(tokens).toContain("社会");
     expect(tokens).toContain("流动");
   });
+  it("normalizes German umlauts while preserving CJK and mixed-script retrieval", () => {
+    const idx = new BM25Index();
+    idx.build([
+      {
+        id: "de",
+        thema: "Größe und Möglichkeiten",
+        text: "Straßenverkehr und Größenordnung",
+      },
+      {
+        id: "zh",
+        thema: "Chancengerechtigkeit",
+        text: "为什么社会流动需要机会公平",
+      },
+      {
+        id: "mixed",
+        thema: "Soziale Ungleichheit",
+        text: "Ungleichheit 社会流动与机会公平",
+      },
+    ]);
+
+    expect(idx.search("Groesse", 1)[0]?.id).toBe("de");
+    expect(idx.search("Moeglichkeiten", 1)[0]?.id).toBe("de");
+    expect(idx.search("为什么社会流动需要机会公平", 1)[0]?.id).toBe("zh");
+    expect(idx.search("Ungleichheit 社会", 1)[0]?.id).toBe("mixed");
+  });
 });
 
 describe("BM25 Index & Search", () => {

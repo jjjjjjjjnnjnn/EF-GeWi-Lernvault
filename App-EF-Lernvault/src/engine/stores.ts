@@ -1,8 +1,15 @@
 // Alle versionierten app-stores an einem ort (B0).
 // fach-spezifische typen (karten/plaene) gehoeren hierher, damit module
-// duenne huelsen bleiben. lang/ai bleiben vorerst direkt (kein versionsbedarf).
+// duenne huelsen bleiben.
 import { defineStore, isRecord, type VersionedStore } from "./storage";
-import { FSRS_STORAGE_KEY } from "../scheduler";
+import {
+  FEEDBACK_STORAGE_KEY,
+  ONBOARDING_STORAGE_KEY,
+  PLAN_STORAGE_KEY,
+  SYNCED_STORAGE_KEYS,
+  VERGLEICH_STORAGE_KEY,
+  XP_STORAGE_KEY,
+} from "./storageKeys";
 
 // ---------- XP / Reise-fortschritt ----------
 export interface XpData {
@@ -32,7 +39,7 @@ function numRec(v: unknown): Record<string, number> {
 }
 
 export const xpStore: VersionedStore<XpData> = defineStore<XpData>({
-  key: "eflernvault:xp:v1",
+  key: XP_STORAGE_KEY,
   version: 1,
   defaults: () => ({ version: 1, xp: 0, streak: [], badges: {}, done: {} }),
   validate: (v: unknown): v is XpData =>
@@ -61,7 +68,7 @@ export interface VergleichData {
 }
 
 export const vergleichStore: VersionedStore<VergleichData> = defineStore<VergleichData>({
-  key: "eflernvault:vergleich:v1",
+  key: VERGLEICH_STORAGE_KEY,
   version: 1,
   defaults: () => ({ version: 1, nextTimes: {} }),
   validate: (v: unknown): v is VergleichData => isRecord(v) && isRecord(v.nextTimes),
@@ -91,7 +98,7 @@ function isEntry(v: unknown): v is FeedbackEntry {
 }
 
 export const feedbackStore: VersionedStore<FeedbackData> = defineStore<FeedbackData>({
-  key: "eflernvault:feedback:v1",
+  key: FEEDBACK_STORAGE_KEY,
   version: 1,
   defaults: () => ({ version: 1, entries: [] }),
   validate: (v: unknown): v is FeedbackData =>
@@ -129,7 +136,7 @@ function planTasks(v: unknown): PlanTask[] {
 }
 
 export const planStore: VersionedStore<PlanData> = defineStore<PlanData>({
-  key: "eflernvault:plan:v1",
+  key: PLAN_STORAGE_KEY,
   version: 1,
   defaults: () => ({ version: 1, klausurDate: "", tasks: [] }),
   validate: (v: unknown): v is PlanData =>
@@ -152,7 +159,7 @@ export interface OnboardingData {
 }
 
 export const onboardingStore: VersionedStore<OnboardingData> = defineStore<OnboardingData>({
-  key: "eflernvault:onboarding:v1",
+  key: ONBOARDING_STORAGE_KEY,
   version: 1,
   defaults: () => ({ version: 1, done: false, faecher: [], klausurDate: "", demo: false }),
   validate: (v: unknown): v is OnboardingData =>
@@ -163,7 +170,6 @@ export const onboardingStore: VersionedStore<OnboardingData> = defineStore<Onboa
     typeof v.demo === "boolean",
 });
 
-/** Alle verwalteten keys (fuer wipe/export-snapshot). lang/ai bleiben separat. */
 export function allStoreKeys(): string[] {
-  return [FSRS_STORAGE_KEY, xpStore.key, vergleichStore.key, feedbackStore.key, planStore.key, onboardingStore.key];
+  return [...SYNCED_STORAGE_KEYS];
 }

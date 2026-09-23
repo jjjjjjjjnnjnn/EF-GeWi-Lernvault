@@ -7,6 +7,7 @@ import type { StreamOptions } from "./streamClient";
 import type { ChatMsg } from "./engine";
 import type { VaultNote } from "../vault/parser";
 import type { TextChunk } from "../engine/rag";
+import { THINKING_INTENSITY_STORAGE_KEY } from "../engine/storageKeys";
 
 export type ThinkingIntensity = "fast" | "balanced" | "deep";
 
@@ -24,29 +25,29 @@ export const INTENSITY_PRESETS: Record<ThinkingIntensity, IntensityConfig> = {
     temperature: 0.2,
     maxTokens: 450,
     topKChunks: 4,
-    labelDE: "⚡ Schnell",
-    labelZH: "⚡ 极速",
+    labelDE: "Schnell",
+    labelZH: "极速",
     systemModifierDE: "Antworte extrem präzise, stichpunktartig und fokussiere dich sofort auf den Klausur-Merksatz.",
   },
   balanced: {
     temperature: 0.3,
     maxTokens: 750,
     topKChunks: 8,
-    labelDE: "⚖️ Ausgewogen",
-    labelZH: "⚖️ 均衡",
+    labelDE: "Ausgewogen",
+    labelZH: "均衡",
     systemModifierDE: "Gib eine sokratische Erklärung mit Fachbegriffen und genauen [Pfad#Zeile]-Belegen.",
   },
   deep: {
     temperature: 0.4,
     maxTokens: 1300,
     topKChunks: 12,
-    labelDE: "🧠 Tiefgründig",
-    labelZH: "🧠 深度思考",
+    labelDE: "Tiefgründig",
+    labelZH: "深度思考",
     systemModifierDE: "Führe eine ausführliche Mehrperspektiven-Analyse durch: Pro/Contra, historischer Kontext, Operatoren-Check und Transfer.",
   },
 };
 
-const INTENSITY_KEY = "eflernvault:thinking_intensity:v1";
+const INTENSITY_KEY = THINKING_INTENSITY_STORAGE_KEY;
 
 export function loadThinkingIntensity(): ThinkingIntensity {
   try {

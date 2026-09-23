@@ -3,6 +3,11 @@
 // 零外部代码依赖，严格遵守项目规范与 MIT/Apache 署名契约
 
 import { resolveAiRequestUrl } from "./providers";
+import {
+  ACTIVE_AI_ENDPOINT_STORAGE_KEY,
+  AI_ENDPOINTS_STORAGE_KEY,
+  FALLBACK_AI_ENDPOINT_STORAGE_KEY,
+} from "../engine/storageKeys";
 
 export interface EndpointTestResult {
   ok: boolean;
@@ -153,9 +158,9 @@ export const PRESET_ENDPOINTS: AiEndpoint[] = [
   },
 ];
 
-const ENDPOINTS_STORAGE_KEY = "eflernvault:endpoints:v1";
-const ACTIVE_ENDPOINT_KEY = "eflernvault:active_endpoint:v1";
-const FALLBACK_ENDPOINT_KEY = "eflernvault:fallback_endpoint:v1";
+const ENDPOINTS_STORAGE_KEY = AI_ENDPOINTS_STORAGE_KEY;
+const ACTIVE_ENDPOINT_KEY = ACTIVE_AI_ENDPOINT_STORAGE_KEY;
+const FALLBACK_ENDPOINT_KEY = FALLBACK_AI_ENDPOINT_STORAGE_KEY;
 
 /**
  * 加载所有配置端点（包含内置预设与用户自定义端点，并自动迁移旧配置）
@@ -518,7 +523,7 @@ export async function testEndpointChat(
         return {
           ok: true,
           latencyMs,
-          replyText: (retryNote + (reply || "✓ 连通成功 (模型返回了空响应体)")).trim(),
+          replyText: (retryNote + (reply || "连通成功（模型返回了空响应体）")).trim(),
           modelDetected: model,
         };
       }

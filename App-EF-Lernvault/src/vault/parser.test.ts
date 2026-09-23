@@ -36,6 +36,7 @@ describe("parseBody", () => {
   it("h2/h3/li/quote/p + zh/de-erkennung", () => {
     const blocks = parseBody("## Titel\nEin deutscher Satz.\n这是中文句子。\n- Punkt eins\n> Zitat hier");
     expect(blocks.map((b) => b.kind)).toEqual(["h2", "p", "p", "li", "quote"]);
+    expect(blocks[0].raw).toBe("## Titel");
     expect(blocks[1].lang).toBe("de");
     expect(blocks[2].lang).toBe("zh"); // >=2 CJK
     expect(blocks[4].lang).toBe("de");

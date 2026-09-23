@@ -2,8 +2,9 @@
 // wort-/text-lastige faecher aus/blocked), pro-fach override im store,
 // listen-sortierung round-robin vs. geblockt.
 import { defineStore, type VersionedStore } from "./storage";
+import { INTERLEAVE_STORAGE_KEY } from "./storageKeys";
 
-const KEY = "eflernvault:interleave:v1";
+const KEY = INTERLEAVE_STORAGE_KEY;
 
 export interface InterleaveData {
   version: 1;
