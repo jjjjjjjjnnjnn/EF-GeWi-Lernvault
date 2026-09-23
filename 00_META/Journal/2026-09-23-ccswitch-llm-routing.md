@@ -31,6 +31,9 @@ tags: [EF, Meta]
      - 动态提示条自适应提示 Claude API 规范与 OpenAI Completions 规范。
      - 高级选项支持上游协议格式选择与认证字段环境变量名/请求头定制。
      - 端点卡片自适应显示 `Claude/Anthropic` 协议标识与自定义端口标牌。
-4. **质量验证**：
-   - 40 个测试套件，234 项单元测试（含端点构建、Anthropic 协议与交互仿真）100% 全部通过。
-   - `npm run build` 生产构建 0 错误（3.03s 完成）。
+4. **质量验证与限速重试机制 (`[App] 8fcc056`)**：
+   - 实测验证用户商汤 API Key (`sk-t6my3...`)：直连 `https://token.sensenova.cn/v1/messages` (Anthropic 原生) 与 `/v1/chat/completions` (OpenAI 协议) 均返回 200 OK 且流式输出流畅。
+   - 彻底修复端点编辑保存后未自动切换主路由导致依旧 fallback 至离线 LM Studio 的问题。
+   - 落地服务商限速（HTTP 429）自动退避重试机制（指数退避 1.5s/3s/4.5s，上限 3 次，达到测试上限后才抛出提示）。
+   - 拦截并清理 `instantGrounding.ts` 中错误将降级离线提示存入 `qaCache` 的缺陷，杜绝相同问题返回陈旧离线答复。
+   - 40 个测试套件，234 项单元测试 100% 全部通过，生产编译 0 错误（3.00s 完成）。
