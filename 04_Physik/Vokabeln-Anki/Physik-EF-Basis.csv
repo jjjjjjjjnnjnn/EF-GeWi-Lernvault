@@ -15,3 +15,37 @@ Energieerhaltung;能量守恒;Energieerhaltung verbindet Lage und Bewegung.;Phys
 Impulserhaltung;动量守恒;Bei Stoss ohne Reibung bleibt der Gesamtimpuls erhalten.;Physik;CN
 Gravitationsfeld;引力场;Das Gravitationsfeld beschreibt die Kraft pro Masse.;Physik;CN
 Elektrisches Feld;电场;Das elektrische Feld zeigt die Kraft pro Ladung.;Physik;CN
+Kinematik;运动学;Die Kinematik beschreibt Bewegung ohne Kraftanalyse.;Physik;Abitur
+Dynamik;动力学;Die Dynamik erklaert Bewegung durch Kraefte.;Physik;Abitur
+Beschleunigung;加速度;Die Beschleunigung ist die zeitliche Aenderung der Geschwindigkeit.;Physik;Abitur
+resultierende Kraft;合力;Die resultierende Kraft ist die Summe aller Kraftevektoren.;Physik;CN
+Gewichtskraft;重力;Die Gewichtskraft wirkt naeherungsweise senkrecht nach unten.;Physik;Abitur
+Newtonsches Gesetz;牛顿定律;Nach dem Newtonschen Gesetz gilt F gleich m mal a.;Physik;Abitur
+Kraeftegleichgewicht;力平衡;Im Kraeftegleichgewicht ist die resultierende Kraft null.;Physik;Abitur
+Haftreibung;静摩擦;Die Haftreibung verhindert das Gleiten.;Physik;Abitur
+Gleitreibung;滑动摩擦;Die Gleitreibung wirkt entgegen der Relativbewegung.;Physik;Abitur
+Reibungskoeffizient;摩擦系数;Der Reibungskoeffizient charakterisiert die Reibung.;Physik;CN
+Arbeit;功;Arbeit ist Kraft mal Weg unter Beruecksichtigung der Richtung.;Physik;Abitur
+Leistung;功率;Die Leistung ist Arbeit pro Zeit.;Physik;Abitur
+Kinetische Energie;动能;Kinetische Energie ist proportional zu m mal v quadrat.;Physik;CN
+Potenzielle Energie;势能;Potenzielle Energie ist bei der Schwerkraft m mal g mal h.;Physik;CN
+Elastische Energie;弹性势能;Eine gedehnte Feder speichert elastische Energie.;Physik;CN
+Impuls;动量;Der Impuls eines Koerpers ist Masse mal Geschwindigkeit.;Physik;Abitur
+Stossimpuls;碰撞冲量;Der Stossimpuls ist die Aenderung des Gesamtimpuls.;Physik;Abitur
+unelastischer Stoss;非弹性碰撞;Beim unelastischen Stoss wird nicht die gesamte kinetische Energie erhalten.;Physik;CN
+Kreisbewegung;圆周运动;Bei einer Kreisbewegung aendert sich staendig die Richtung.;Physik;CN
+Periodendauer;周期;Die Periodendauer ist die Dauer einer vollen Schwingung.;Physik;Abitur
+Schwingenergie;振荡能量;Die Schwingenergie wechselt zwischen kinetischer und potenzieller Form.;Physik;CN
+Winkelgeschwindigkeit;角速度;Die Winkelgeschwindigkeit ist der Drehwinkel pro Zeit.;Physik;Abitur
+Gravitationsgesetz;万有引力定律;Das Gravitationsgesetz gilt fuer zwei sich anziehende Koerper.;Physik;Abitur
+Gravitationskonstante;引力常数;Die Gravitationskonstante ist eine Naturkonstante.;Physik;Abitur
+Hebelgesetz;杠杆定律;Beim Hebelgleichgewicht sind Drehmomente und Hebelarme abzuwaegen.;Physik;CN
+Drehmoment;力矩;Das Drehmoment ist Kraft mal Abstand zur Drehachse.;Physik;CN
+elektrische Ladung;电荷;Die elektrische Ladung kann positiv oder negativ sein.;Physik;Abitur
+elektrische Spannung;电压;Die elektrische Spannung ist Energie pro Ladung.;Physik;Abitur
+Stromstaerke;电流强度;Die Stromstaerke ist Ladung pro Zeit.;Physik;Abitur
+Ohmsches Gesetz;欧姆定律;Das Ohmsche Gesetz lautet U gleich R mal I.;Physik;CN
+harmonische Schwingung;简谐振动;Eine harmonische Schwingung folgt einem Sinus.;Physik;Abitur
+Wellenlaenge;波长;Die Wellenlaenge ist der Abstand zweier gleicher Phasen.;Physik;Abitur
+Atomkern;原子核;Der Atomkern enthaelt Protonen und Neutronen.;Physik;Abitur
+Radioaktivitaet;放射性;Radioaktivitaet entsteht durch den Zerfall instabiler Atomkerne.;Physik;Abitur
