@@ -27,6 +27,7 @@ export interface TutorChatMessage {
   isError?: boolean;
   instantSnippet?: InstantSnippet;
   engineTag?: string;
+  imageUrl?: string;
 }
 
 const STORE_SESSIONS = "tutor_sessions";

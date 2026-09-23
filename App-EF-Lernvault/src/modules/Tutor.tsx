@@ -43,6 +43,16 @@ import { getActiveEndpoint } from "../ai/endpoints";
 import { SatzbauLego } from "../components/pedagogy/SatzbauLego";
 import { BalanceBoard } from "../components/pedagogy/BalanceBoard";
 import { TextHighlighter } from "../components/pedagogy/TextHighlighter";
+import { FehlerlogModal } from "../components/FehlerlogModal";
+import {
+  type TutorPedagogyMode,
+  type FehlerlogDraft,
+  loadTutorPedagogyMode,
+  saveTutorPedagogyMode,
+  buildPedagogyModeModifier,
+  extractFehlerDraftFromMessage,
+} from "../ai/socratic";
+
 
 export default function Tutor({
   lang,
@@ -81,6 +91,15 @@ export default function Tutor({
   const [copyFeedback, setCopyFeedback] = useState(false);
   const [expandedCcr, setExpandedCcr] = useState<{ hash: string; content: string | null } | null>(null);
   const [pedagogyTool, setPedagogyTool] = useState<"lego" | "balance" | "highlighter" | null>(null);
+  const [pedagogyMode, setPedagogyMode] = useState<TutorPedagogyMode>(() => loadTutorPedagogyMode());
+  const [fehlerDraft, setFehlerDraft] = useState<FehlerlogDraft | null>(null);
+  const [attachedImage, setAttachedImage] = useState<{
+    name: string;
+    dataUrl: string;
+    sizeKb: number;
+  } | null>(null);
+  const fileInputRef = useRef<HTMLInputElement>(null);
+
 
   const handleExpandCcr = async (hash: string) => {
     if (expandedCcr?.hash === hash) {
@@ -276,10 +295,12 @@ export default function Tutor({
 
   // Auto-Scroll
   useEffect(() => {
-    scrollRef.current?.scrollTo({
-      top: scrollRef.current.scrollHeight,
-      behavior: "smooth",
-    });
+    if (typeof scrollRef.current?.scrollTo === "function") {
+      scrollRef.current.scrollTo({
+        top: scrollRef.current.scrollHeight,
+        behavior: "smooth",
+      });
+    }
   }, [messages, isThinking]);
 
   // Retry-Countdown
@@ -289,13 +310,59 @@ export default function Tutor({
     return () => clearTimeout(tId);
   }, [retryCountdown]);
 
+  const handleImageFile = (file: File) => {
+    if (!file.type.startsWith("image/")) return;
+    const reader = new FileReader();
+    reader.onload = () => {
+      if (typeof reader.result === "string") {
+        setAttachedImage({
+          name: file.name || "bild.png",
+          dataUrl: reader.result,
+          sizeKb: Math.round(file.size / 1024),
+        });
+      }
+    };
+    reader.readAsDataURL(file);
+  };
+
+  const handlePaste = (e: React.ClipboardEvent<HTMLInputElement>) => {
+    const items = e.clipboardData?.items;
+    if (!items) return;
+    for (let i = 0; i < items.length; i++) {
+      if (items[i].type.startsWith("image/")) {
+        const file = items[i].getAsFile();
+        if (file) {
+          handleImageFile(file);
+          e.preventDefault();
+          break;
+        }
+      }
+    }
+  };
+
+  const handleCaptureFehler = (botMsg: TutorChatMessage) => {
+    const botIdx = messages.findIndex((m) => m.id === botMsg.id);
+    const prevUser = botIdx > 0 ? messages[botIdx - 1] : undefined;
+    const userText = prevUser?.role === "du" ? prevUser.text : "Frage zu Klausurthema";
+
+    const draft = extractFehlerDraftFromMessage(
+      userText,
+      botMsg.text,
+      "SoWi",
+      botMsg.instantSnippet?.thema || ""
+    );
+    setFehlerDraft(draft);
+  };
+
   // Nachricht senden mit Zero-Perceived Latency
   const sendMessage = async (retryContent?: string) => {
     const q = (retryContent ?? input).trim();
     if (!q || isThinking || !currentSessionId) return;
 
+    const currentImg = attachedImage;
     if (!retryContent) {
       setInput("");
+      setAttachedImage(null);
     }
 
     setIsThinking(true);
@@ -319,6 +386,7 @@ export default function Tutor({
       role: "du",
       text: q,
       timestamp: Date.now(),
+      imageUrl: currentImg?.dataUrl,
     };
 
     const initialBotMsg: TutorChatMessage = {
@@ -346,7 +414,7 @@ export default function Tutor({
 
     // 2. SCHRITT: Schneller QA-Cache-Check (0ms Rückgabe bei wiederholten Fragen)
     const cachedReply = lookupQaCache(q);
-    if (cachedReply) {
+    if (cachedReply && !currentImg) {
       setIsThinking(false);
       const finalBot: TutorChatMessage = {
         ...initialBotMsg,
@@ -365,6 +433,10 @@ export default function Tutor({
       INTENSITY_PRESETS[intensity].topKChunks,
       { onProgress: (p) => setLocalPct(p) }
     );
+
+    const effectiveQuery = currentImg
+      ? `[Bildanhang: ${currentImg.name}]\n${q}`
+      : q;
 
     try {
       const rawHistory: ChatMsg[] = messages
@@ -389,12 +461,15 @@ export default function Tutor({
           content: m.text,
         }));
 
+      const pedagogyMod = buildPedagogyModeModifier(pedagogyMode);
+      const fullModifier = `${INTENSITY_PRESETS[intensity].systemModifierDE}\n\n${pedagogyMod}`;
+
       const optimized = await assembleOptimizedContext(chunks, rawHistory, {
-        query: q,
+        query: effectiveQuery,
         maxContextTokens: 3000,
         generationReserve: INTENSITY_PRESETS[intensity].maxTokens,
         systemReserve: 400,
-        intensityModifier: INTENSITY_PRESETS[intensity].systemModifierDE,
+        intensityModifier: fullModifier,
       });
 
       const history: ChatMsg[] = optimized.messages;
@@ -402,7 +477,7 @@ export default function Tutor({
       // 4. SCHRITT: Auto-Dispatch Stream (automatischer Failover bei offline LM Studio)
       const res = await autoDispatchChat(
         history,
-        q,
+        effectiveQuery,
         vaultNotes || [],
         chunks,
         {
@@ -717,7 +792,7 @@ export default function Tutor({
                   setIntensity(st);
                   saveThinkingIntensity(st);
                 }}
-                className={`px-2 py-0.5 rounded-xs text-[11px] font-sans transition-colors ${
+                className={`px-2 py-0.5 rounded-xs text-[11px] font-sans transition-colors cursor-pointer ${
                   intensity === st
                     ? "bg-[#1C1B17] text-[#FAFAF7]"
                     : "text-[#6B675C] hover:text-[#1C1B17]"
@@ -728,6 +803,56 @@ export default function Tutor({
               </button>
             ))}
           </div>
+
+          {/* Lehrmodus: Sokratisch vs. Klausur-Direkt */}
+          <div className="flex items-center gap-1 border border-[#E5E1D8] rounded-sm bg-white p-0.5">
+            <button
+              type="button"
+              onClick={() => {
+                setPedagogyMode("socratic");
+                saveTutorPedagogyMode("socratic");
+              }}
+              className={`px-2 py-0.5 rounded-xs text-[11px] font-sans transition-colors cursor-pointer flex items-center gap-1 ${
+                pedagogyMode === "socratic"
+                  ? "bg-[#4338CA] text-white font-medium shadow-2xs"
+                  : "text-[#6B675C] hover:text-[#1C1B17]"
+              }`}
+              title={
+                lang === "de"
+                  ? "Sokratische Mäeutik: Führt mit schrittweisen Leitfragen zur Lösung (nicht vorsagen)"
+                  : "启发引导模式：苏格拉底产婆术，反抛出引导性问题，启发自主解题"
+              }
+            >
+              <svg className="w-2.5 h-2.5" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.8">
+                <circle cx="8" cy="8" r="6" />
+                <path d="M8 5v3l2 2" />
+              </svg>
+              <span>{lang === "de" ? "Sokratisch" : "启发引导"}</span>
+            </button>
+            <button
+              type="button"
+              onClick={() => {
+                setPedagogyMode("direct");
+                saveTutorPedagogyMode("direct");
+              }}
+              className={`px-2 py-0.5 rounded-xs text-[11px] font-sans transition-colors cursor-pointer flex items-center gap-1 ${
+                pedagogyMode === "direct"
+                  ? "bg-[#047857] text-white font-medium shadow-2xs"
+                  : "text-[#6B675C] hover:text-[#1C1B17]"
+              }`}
+              title={
+                lang === "de"
+                  ? "Klausur-Direkt: Liefert sofort Erwartungshorizont, Klausursatz & Fehlerwarnung"
+                  : "考纲直出模式：标准Erwartungshorizont踩分点与满分答题句"
+              }
+            >
+              <svg className="w-2.5 h-2.5" viewBox="0 0 16 16" fill="currentColor">
+                <polygon points="9 1 3 9 8 9 7 15 13 7 8 7 9 1" />
+              </svg>
+              <span>{lang === "de" ? "Klausur-Direkt" : "考纲直出"}</span>
+            </button>
+          </div>
+
 
           <div className="flex items-center gap-2">
             {/* 无痛学习交互工具箱 (Satzbau-Lego / Balance / Highlighter) */}
@@ -931,6 +1056,23 @@ export default function Tutor({
 
                 {/* AI Text Stream */}
                 {renderAiText(m.text)}
+
+                {/* 📌 In Fehlerlog erfassen */}
+                {m.text && !m.isError && (
+                  <div className="mt-2 pt-1.5 border-t border-[#E5E1D8]/60 flex items-center justify-between">
+                    <button
+                      type="button"
+                      onClick={() => handleCaptureFehler(m)}
+                      title={lang === "de" ? "Diesen Turn als Fehlerlog-Eintrag erfassen" : "提炼并沉淀为对应学科的错题补丁"}
+                      className="inline-flex items-center gap-1.5 text-[11px] font-sans text-[#6B675C] hover:text-[#B45309] hover:bg-[#FEF3C7]/40 px-2 py-0.5 rounded-xs transition-colors cursor-pointer"
+                    >
+                      <svg className="w-3 h-3 text-[#B45309]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                        <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
+                      </svg>
+                      <span>{lang === "de" ? "📌 In Fehlerlog erfassen" : "📌 沉淀为错题"}</span>
+                    </button>
+                  </div>
+                )}
               </div>
             ) : (
               <div
@@ -940,6 +1082,11 @@ export default function Tutor({
                 <div className="text-[10px] font-mono uppercase tracking-wider text-[#6B675C] mb-1">
                   Du / 你
                 </div>
+                {m.imageUrl && (
+                  <div className="mb-2 max-w-[200px] rounded-xs overflow-hidden border border-[#E5E1D8]">
+                    <img src={m.imageUrl} alt="Bildanhang" className="w-full h-auto object-cover max-h-48" />
+                  </div>
+                )}
                 <p className="leading-relaxed whitespace-pre-wrap">{m.text}</p>
               </div>
             )
@@ -961,6 +1108,31 @@ export default function Tutor({
 
         {/* Eingabebereich */}
         <div className="border-t border-[#E5E1D8] bg-[#FAF9F6] p-3">
+          {/* Bild-Vorschau vor Absenden */}
+          {attachedImage && (
+            <div className="mb-2 flex items-center gap-2 bg-white border border-[#E5E1D8] px-2.5 py-1 rounded-sm w-fit max-w-full">
+              <img
+                src={attachedImage.dataUrl}
+                alt="Vorschau"
+                className="w-7 h-7 object-cover rounded-xs border border-[#E5E1D8]"
+              />
+              <span className="text-xs font-mono text-[#1C1B17] truncate max-w-[180px]">
+                {attachedImage.name}
+              </span>
+              <span className="text-[10px] font-mono text-[#6B675C]">
+                ({attachedImage.sizeKb} KB)
+              </span>
+              <button
+                type="button"
+                onClick={() => setAttachedImage(null)}
+                className="text-xs text-[#6B675C] hover:text-[#991B1B] ml-1 cursor-pointer font-bold"
+                title="Bild entfernen"
+              >
+                ✕
+              </button>
+            </div>
+          )}
+
           <form
             onSubmit={(e) => {
               e.preventDefault();
@@ -968,10 +1140,40 @@ export default function Tutor({
             }}
             className="flex items-center gap-2"
           >
+            {/* Bild hochladen */}
+            <input
+              type="file"
+              ref={fileInputRef}
+              accept="image/*"
+              className="hidden"
+              onChange={(e) => {
+                const file = e.target.files?.[0];
+                if (file) handleImageFile(file);
+                e.target.value = "";
+              }}
+            />
+            <button
+              type="button"
+              onClick={() => fileInputRef.current?.click()}
+              title={
+                lang === "de"
+                  ? "Bild / Karikatur / Diagramm anhängen (oder mit Strg+V einfügen)"
+                  : "添加图片 / 政治漫画 / 图表（支持 Ctrl+V 粘贴）"
+              }
+              className="p-2 rounded-sm border border-[#E5E1D8] bg-white text-[#6B675C] hover:text-[#4338CA] hover:border-[#4338CA] transition-colors cursor-pointer flex items-center justify-center flex-shrink-0"
+            >
+              <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
+                <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
+                <circle cx="8.5" cy="8.5" r="1.5" />
+                <polyline points="21 15 16 10 5 21" />
+              </svg>
+            </button>
+
             <input
               type="text"
               value={input}
               onChange={(e) => setInput(e.target.value)}
+              onPaste={handlePaste}
               placeholder={
                 lang === "de"
                   ? "Frage an den KI-Tutor (z.B. Was ist soziale Ungleichheit?)..."
@@ -982,8 +1184,8 @@ export default function Tutor({
             />
             <button
               type="submit"
-              disabled={isThinking || !input.trim()}
-              className="rounded-sm bg-[#1C1B17] px-4 py-2 text-sm font-sans text-[#FAFAF7] hover:bg-[#4338CA] disabled:opacity-40 transition-colors cursor-pointer"
+              disabled={isThinking || (!input.trim() && !attachedImage)}
+              className="rounded-sm bg-[#1C1B17] px-4 py-2 text-sm font-sans text-[#FAFAF7] hover:bg-[#4338CA] disabled:opacity-40 transition-colors cursor-pointer flex-shrink-0"
             >
               {lang === "de" ? "Senden" : "发送"}
             </button>
@@ -1004,6 +1206,16 @@ export default function Tutor({
           </div>
         </div>
       </main>
+
+      {/* Fehlerlog-Modal */}
+      {fehlerDraft && (
+        <FehlerlogModal
+          draft={fehlerDraft}
+          onClose={() => setFehlerDraft(null)}
+          lang={lang === "de" ? "de" : "zh"}
+        />
+      )}
+
 
       {/* CCR (Compress-Cache-Retrieve) Unkomprimierte Originalansicht */}
       {expandedCcr && (

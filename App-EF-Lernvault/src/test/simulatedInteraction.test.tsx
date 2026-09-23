@@ -16,6 +16,8 @@ import {
   setFallbackEndpointId,
 } from "../ai/endpoints";
 import { saveAiConfig } from "../ai/providers";
+import Tutor from "../modules/Tutor";
+
 
 describe("Simulated Interactive Testing (应用内模拟交互测试规范)", () => {
   beforeEach(() => {
@@ -270,4 +272,27 @@ describe("Simulated Interactive Testing (应用内模拟交互测试规范)", ()
       expect(screen.getByText("SenseChat-5-Pro")).toBeDefined();
     });
   });
+
+  it("Tutor 模拟交互: 验证启发引导与考纲直出双态切换及图片上传入口", async () => {
+    render(<Tutor lang="zh" />);
+
+    // 1. 验证教学模式双态切换按钮已渲染
+    const socraticBtn = screen.getByText("启发引导");
+    const directBtn = screen.getByText("考纲直出");
+    expect(socraticBtn).toBeDefined();
+    expect(directBtn).toBeDefined();
+
+    // 2. 模拟点击“考纲直出”
+    fireEvent.click(directBtn);
+    expect(localStorage.getItem("eflernvault:tutor:pedagogy_mode:v1")).toBe("direct");
+
+    // 3. 模拟点击“启发引导”
+    fireEvent.click(socraticBtn);
+    expect(localStorage.getItem("eflernvault:tutor:pedagogy_mode:v1")).toBe("socratic");
+
+    // 4. 验证图片/政治漫画/图表附件上传入口存在
+    const imgUploadBtn = screen.getByTitle(/添加图片 \/ 政治漫画 \/ 图表/);
+    expect(imgUploadBtn).toBeDefined();
+  });
 });
+
