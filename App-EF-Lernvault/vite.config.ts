@@ -5,7 +5,12 @@ import tailwindcss from "@tailwindcss/vite";
 
 export default defineConfig({
   plugins: [react(), tailwindcss()],
-  server: { port: 1420, strictPort: true },
+  server: {
+    port: 1420,
+    strictPort: true,
+    // vault-md per ?raw (exemplar-kurs aus ../../Lernreise) — dev + vitest
+    fs: { allow: [".."] },
+  },
   test: {
     environment: "jsdom",
     setupFiles: ["./src/test/setup.ts"],
