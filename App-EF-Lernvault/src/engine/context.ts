@@ -6,6 +6,7 @@ import type { TextChunk } from "./rag";
 import { TUTOR_SYSTEM } from "./rag";
 import type { ChatMsg } from "../ai/engine";
 import { compressRAGChunks, compressDialogHistory } from "./compressor";
+import { findVernetzungBridge, formatBridgeForPrompt, type VernetzungBridge } from "./vernetzung";
 
 /**
  * Schätzt die Token-Anzahl für gemischten Text (Deutsch + Chinesisch + Code).
@@ -98,6 +99,8 @@ export interface OptimizedContextOptions extends BudgetConfig {
   query: string;
   intensityModifier?: string;
   enableCCR?: boolean;
+  currentSubject?: string;
+  enableVernetzung?: boolean;
 }
 
 export interface ContextStats {
@@ -114,12 +117,13 @@ export interface OptimizedContext {
   messages: ChatMsg[];
   compressedChunks: TextChunk[];
   stats: ContextStats;
+  vernetzungBridge?: VernetzungBridge | null;
 }
 
 /**
  * Headroom-inspirierter dreizoniger Kontext-Assembler:
  * 1. Hot-Zone (KV Cache hit): Byte-invariante TUTOR_SYSTEM Prompt-Basis
- * 2. Warm-Zone (Knowledge Grounding): Extraktiv verdichtete RAG-Chunks mit CCR-Hinterlegung
+ * 2. Warm-Zone (Knowledge Grounding): Extraktiv verdichtete RAG-Chunks mit CCR-Hinterlegung + 0ms Vernetzung (<50 Tokens)
  * 3. Live-Zone (Dynamic Turns): 5D-optimierter Dialogverlauf + aktuelle Nutzeranfrage
  */
 export async function assembleOptimizedContext(
@@ -144,11 +148,23 @@ export async function assembleOptimizedContext(
   const warmChunksText = ragComp.compressed
     .map((c) => `[${c.id}]: ${c.thema} (${c.fach}) - ${c.text}`)
     .join("\n");
-  const warmTokens = estimateTokens(warmChunksText);
+
+  // 2b. Warm-Zone Vernetzung: 0ms Cross-Subject Topological Anchor (< 50 Tokens)
+  let vernetzungBridge: VernetzungBridge | null = null;
+  let vernetzungText = "";
+  if (opts.enableVernetzung !== false) {
+    vernetzungBridge = findVernetzungBridge(opts.query, opts.currentSubject);
+    if (vernetzungBridge) {
+      vernetzungText = "\n\n" + formatBridgeForPrompt(vernetzungBridge);
+    }
+  }
+
+  const warmTokens = estimateTokens(warmChunksText + vernetzungText);
 
   const systemContent = [
     hotPrompt,
     "\n\nAktuell im Vault verfügbar:\n" + warmChunksText,
+    vernetzungText,
     opts.intensityModifier ? `\n\nModus-Vorgabe: ${opts.intensityModifier}` : "",
   ].join("");
 
@@ -183,5 +199,6 @@ export async function assembleOptimizedContext(
       compressionRatio: ratio,
       ccrRefsCount,
     },
+    vernetzungBridge,
   };
 }

@@ -14,6 +14,7 @@ import {
 } from "../engine/rag";
 import { retrieveHybrid, chunkVectors, claimVectors, verifySemantic } from "../engine/embed";
 import { assembleOptimizedContext } from "../engine/context";
+import { findVernetzungBridge } from "../engine/vernetzung";
 import { retrieveFromCCR } from "../storage/ccrStore";
 import {
   type TutorSession,
@@ -419,9 +420,11 @@ export default function Tutor({
     const cachedReply = lookupQaCache(q);
     if (cachedReply && !currentImg) {
       setIsThinking(false);
+      const bridge = findVernetzungBridge(q);
       const finalBot: TutorChatMessage = {
         ...initialBotMsg,
         text: cachedReply,
+        vernetzungBridge: bridge ?? undefined,
       };
       const finalMsgs = [...messages, userMsg, finalBot];
       setMessages(finalMsgs);
@@ -483,6 +486,7 @@ export default function Tutor({
         generationReserve: INTENSITY_PRESETS[intensity].maxTokens,
         systemReserve: 400,
         intensityModifier: fullModifier,
+        currentSubject: chunks[0]?.fach,
       });
 
       const history: ChatMsg[] = optimized.messages;
@@ -548,6 +552,7 @@ export default function Tutor({
         text: checkedReply,
         engineTag: fullEngineTag,
         isError: res.source === "vault-autofallback",
+        vernetzungBridge: optimized.vernetzungBridge ?? undefined,
       };
 
       setMessages((prev) => {
@@ -1137,6 +1142,36 @@ export default function Tutor({
 
                 {/* AI Text Stream */}
                 {renderAiText(m.text)}
+
+                {/* 🔗 Fachübergreifende Vernetzung (Cross-Subject Thought Bridge Capsule) */}
+                {m.vernetzungBridge && (
+                  <div className="mt-2.5 rounded-sm border border-[#047857]/30 bg-[#F0FDF4] px-3 py-1.5 text-xs font-sans">
+                    <div className="flex items-center justify-between">
+                      <div className="flex items-center gap-1.5 text-[#065F46] font-medium text-[11px]">
+                        <svg className="w-3.5 h-3.5 text-[#047857]" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.6">
+                          <path d="M6.5 9.5l3-3M5 11l-1.5 1.5a2.121 2.121 0 0 1-3-3L2 8a2.121 2.121 0 0 1 3-3h1M11 5l1.5-1.5a2.121 2.121 0 0 1 3 3L14 8a2.121 2.121 0 0 1-3 3h-1" />
+                        </svg>
+                        <span>{lang === "de" ? "Fachübergreifende Vernetzung:" : "跨学科思维桥:"}</span>
+                        <span className="font-semibold text-[#047857]">{m.vernetzungBridge.badgeLabel}</span>
+                      </div>
+                      <button
+                        type="button"
+                        onClick={() => onJumpToLibrary?.(m.vernetzungBridge!.targetNotePath)}
+                        className="text-[10px] font-mono text-[#047857] hover:underline cursor-pointer flex items-center gap-0.5"
+                        title={lang === "de" ? "In Notizen öffnen" : "在笔记库中查看"}
+                      >
+                        <span>[{m.vernetzungBridge.targetSubject}]</span>
+                        <svg className="w-2.5 h-2.5" viewBox="0 0 16 16" fill="currentColor">
+                          <polygon points="6 3 11 8 6 13" />
+                        </svg>
+                      </button>
+                    </div>
+                    <div className="mt-1 text-[11px] text-[#064E3B] font-serif flex flex-col gap-0.5 border-t border-[#047857]/15 pt-1">
+                      <div className="italic">„{m.vernetzungBridge.anchorFormulaOrSentenceDE}“</div>
+                      <div className="text-[10px] text-[#047857]/80 font-sans">{m.vernetzungBridge.anchorSentenceZH}</div>
+                    </div>
+                  </div>
+                )}
 
                 {/* In Fehlerlog erfassen */}
                 {m.text && !m.isError && (

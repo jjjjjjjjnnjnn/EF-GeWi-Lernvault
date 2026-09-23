@@ -28,6 +28,16 @@ export interface TutorChatMessage {
   instantSnippet?: InstantSnippet;
   engineTag?: string;
   imageUrl?: string;
+  vernetzungBridge?: {
+    id: string;
+    dimension: string;
+    targetSubject: string;
+    targetThema: string;
+    targetNotePath: string;
+    badgeLabel: string;
+    anchorFormulaOrSentenceDE: string;
+    anchorSentenceZH: string;
+  };
 }
 
 const STORE_SESSIONS = "tutor_sessions";

@@ -98,4 +98,30 @@ describe("src/engine/context.ts - Token Budgeting & Multi-Zone Assembly", () => 
     expect(opt.stats.liveTokens).toBeGreaterThan(0);
     expect(opt.stats.totalTokens).toBeGreaterThan(0);
   });
+
+  it("injects cross-subject vernetzung bridge into Warm-Zone with low token footprint", async () => {
+    const dummyChunks: TextChunk[] = [
+      {
+        id: "mathe/ableitung#1",
+        path: "03_Mathe/Analysis.md",
+        fach: "Mathe",
+        thema: "Differentialrechnung",
+        operatoren: ["berechnen"],
+        kind: "text",
+        lang: "de",
+        text: "Die 1. Ableitung f'(x) gibt die Steigung der Tangente an.",
+      },
+    ];
+
+    const opt = await assembleOptimizedContext(dummyChunks, [], {
+      query: "Welche Bedeutung hat die Ableitung für die Momentangeschwindigkeit in der Physik?",
+      currentSubject: "Mathe",
+      maxContextTokens: 2000,
+    });
+
+    expect(opt.vernetzungBridge).not.toBeNull();
+    expect(opt.vernetzungBridge?.targetSubject).toBe("Physik");
+    expect(opt.messages[0].content).toContain("Fachübergreifende Vernetzung: [Physik]");
+  });
 });
+
