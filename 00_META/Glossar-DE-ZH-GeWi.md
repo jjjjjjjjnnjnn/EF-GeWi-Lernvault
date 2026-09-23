@@ -268,3 +268,206 @@ tags: [EF, Meta]
 | Schleier des Nichtwissens | 无知之幕 | Philo | Hinter dem Schleier des Nichtwissens wählen Menschen faire Grundregeln. |
 | Fließgleichgewicht | 动态流平衡 | Bio | Lebende Zellen befinden sich im dynamischen Fließgleichgewicht. |
 | P.E.E.-Schema | 观点-证据-解释结构 | Englisch | The P.E.E. schema structures argumentative paragraphs effectively. |
+| Definitionsbereich | 定义域 | Mathe | Das Definitionsbereich enthaelt alle zulaessigen x-Werte. |
+| Wertebereich | 值域 | Mathe | Der Wertebereich enthaelt alle y-Werte der Funktion. |
+| Nullstelle | 零点 | Mathe | Am x-Wert einer Nullstelle ist der Funktionswert null. |
+| Potenzfunktion | 幂函数 | Mathe | Potenzfunktionen besitzen die Form x hoch n. |
+| Ganzrationale Funktion | 有理整函数 | Mathe | Eine ganzrationale Funktion ist ein Polynom. |
+| Symmetrieachse | 对称轴 | Mathe | Die Symmetrieachse einer Parabel geht durch den Scheitel. |
+| Grenzverhalten | 极限行为 | Mathe | Das Grenzverhalten beschreibt f im Unendlichen. |
+| Stetigkeit | 连续性 | Mathe | Stetigkeit ertlaert, warum kein Sprung auftritt. |
+| Tangentensteigung | 切线斜率 | Mathe | Die Tangentensteigung ist der Wert von f Strich an der Stelle x null. |
+| Normalensteigung | 法线斜率 | Mathe | Die Normalensteigung steht senkrecht auf der Tangente. |
+| Monotonie | 单调性 | Mathe | Die Monotonie beschreibt das Steigen oder Fallen der Funktion. |
+| Hochpunkt | 极大点 | Mathe | Ein Hochpunkt kann durch einen Vorzeichenwechsel entstehen. |
+| Tiefpunkt | 极小点 | Mathe | Ein Tiefpunkt kann durch einen Vorzeichenwechsel entstehen. |
+| Sattelpunkt | 鞍点 | Mathe | Ein Sattelpunkt beschreibt einen Wechsel der Kruemmung. |
+| Vorzeichentabelle | 符号表 | Mathe | Die Vorzeichentabelle zeigt das Vorzeichen der Ableitung. |
+| Notwendige Bedingung | 必要条件 | Mathe | Nullstellen der ersten Ableitung sind notwendig fuer Extrema. |
+| Hinreichende Bedingung | 充分条件 | Mathe | Der Vorzeichenwechsel ist eine hinreichende Bedingung fuer ein Extremum. |
+| Kruemmung | 凹凸性 | Mathe | Die Kruemmung wird durch die zweite Ableitung beschrieben. |
+| Stammfunktion | 原函数 | Mathe | Eine Stammfunktion F erfuellt F gleich F Strich. |
+| Integral | 积分 | Mathe | Das Integral einer Aenderungsrate liefert die Gesamtaenderung. |
+| Skalarprodukt | 标量积 | Mathe | Das Skalarprodukt zweier Vektoren ist eine Zahl. |
+| Vektorbetrag | 向量模 | Mathe | Der Vektorbetrag gibt die Laenge des Vektors an. |
+| Richtungsvektor | 方向向量 | Mathe | Ein Richtungsvektor gibt die Richtung einer Geraden an. |
+| Parameterform | 参数式 | Mathe | Die Parameterform einer Geraden nutzt einen freien Parameter. |
+| Lagebeziehung | 位置关系 | Mathe | Parallel schneidend und windschief sind Lagebeziehungen. |
+| Schnittpunkt | 交点 | Mathe | Ein Schnittpunkt erfuellt die Gleichungen zweier Geraden. |
+| lineares Gleichungssystem | 线性方程组 | Mathe | Ein lineares Gleichungssystem ordnet Gleichungen Variablen zu. |
+| Zufallsexperiment | 随机实验 | Mathe | Ein Zufallsexperiment besitzt ein Ergebnisfeld. |
+| Ergebnismenge | 样本空间 | Mathe | Die Ergebnismenge enthaelt alle moeglichen Ergebnisse. |
+| Gegenereignis | 对立事件 | Mathe | Ein Gegenereignis schliesst das urspruengliche Ereignis aus. |
+| Laplace-Experiment | 古典概型实验 | Mathe | Beim Laplace-Experiment sind alle Ergebnisse gleich wahrscheinlich. |
+| Mehrstufenexperiment | 多阶段实验 | Mathe | Beim Mehrstufenexperiment werden Stufen nacheinander ausgefuehrt. |
+| Bedingte Wahrscheinlichkeit | 条件概率 | Mathe | Die bedingte Wahrscheinlichkeit beruht auf einer bekannten Bedingung. |
+| Zufallsvariable | 随机变量 | Mathe | Eine Zufallsvariable ordnet Ergebnisse Zahlen zu. |
+| Erwartungswert | 期望值 | Mathe | Der Erwartungswert gewichtet Ergebnisse nach ihrer Wahrscheinlichkeit. |
+| Varianz | 方差 | Mathe | Die Varianz beschreibt die Streuung um den Erwartungswert. |
+| Prüfungsteil | 考试部分 | Mathe | Der erste Prüfungsteil wird ohne Hilfsmittel bearbeitet. |
+| Pflichtteil | 必答部分 | Mathe | Der Pflichtteil enthaelt Aufgaben, die alle loesen muessen. |
+| Pflichtaufgabe | 必答题 | Mathe | Die Pflichtaufgabe kann nicht uebersprungen werden. |
+| Wahlpflichtteil | 选答部分 | Mathe | Aus dem Wahlpflichtteil werden zwei Aufgaben gewaehlt. |
+| Wahlpflichtaufgabe | 选答题 | Mathe | Zwei Wahlpflichtaufgaben werden ausgewaehlt. |
+| Sachgebiet | 内容领域 | Mathe | Jedes Sachgebiet verlangt eine passende Strategie. |
+| modulares Mathematiksystem | 模块化数学系统 | Mathe | Das modulare Mathematiksystem unterstuetzt die Rechnung im zweiten Teil. |
+| Bewertungseinheit | 评分单位 | Mathe | Jede vollstaendige Bewertungseinheit traegt Punkte. |
+| Formelsammlung | 公式册 | Mathe | Die Formelsammlung ist im zweiten Prüfungsteil ein Hilfsmittel. |
+| Hilfsmittel | 辅助工具 | Mathe | Im ersten Prüfungsteil sind keine mathematischen Hilfsmittel erlaubt. |
+| Analysis | 分析学 | Mathe | Analysis untersucht Aenderungen mit Differenzen und Ableitungen. |
+| Analytische Geometrie | 解析几何 | Mathe | Die analytische Geometrie beschreibt Geraden und Ebenen mit Vektoren. |
+| Vektorgeometrie | 向量几何 | Mathe | Die Vektorgeometrie untersucht Punkt- und Geradenlagen. |
+| Stochastik | 概率论 | Mathe | Stochastik untersucht Zufall und Wahrscheinlichkeiten. |
+| Lösungsweg | 解题路径 | Mathe | Der Lösungsweg muss nachvollziehbar dokumentiert werden. |
+| Auswahlzeit | 选题时间 | Mathe | Die Auswahlzeit ist in der Gesamtarbeitszeit enthalten. |
+| Kinematik | 运动学 | Physik | Die Kinematik beschreibt Bewegung ohne Kraftanalyse. |
+| Dynamik | 动力学 | Physik | Die Dynamik erklaert Bewegung durch Kraefte. |
+| Beschleunigung | 加速度 | Physik | Die Beschleunigung ist die zeitliche Aenderung der Geschwindigkeit. |
+| resultierende Kraft | 合力 | Physik | Die resultierende Kraft ist die Summe aller Kraftevektoren. |
+| Gewichtskraft | 重力 | Physik | Die Gewichtskraft wirkt naeherungsweise senkrecht nach unten. |
+| Newtonsches Gesetz | 牛顿定律 | Physik | Nach dem Newtonschen Gesetz gilt F gleich m mal a. |
+| Kraeftegleichgewicht | 力平衡 | Physik | Im Kraeftegleichgewicht ist die resultierende Kraft null. |
+| Haftreibung | 静摩擦 | Physik | Die Haftreibung verhindert das Gleiten. |
+| Gleitreibung | 滑动摩擦 | Physik | Die Gleitreibung wirkt entgegen der Relativbewegung. |
+| Reibungskoeffizient | 摩擦系数 | Physik | Der Reibungskoeffizient charakterisiert die Reibung. |
+| Arbeit | 功 | Physik | Arbeit ist Kraft mal Weg unter Beruecksichtigung der Richtung. |
+| Leistung | 功率 | Physik | Die Leistung ist Arbeit pro Zeit. |
+| Kinetische Energie | 动能 | Physik | Kinetische Energie ist proportional zu m mal v quadrat. |
+| Potenzielle Energie | 势能 | Physik | Potenzielle Energie ist bei der Schwerkraft m mal g mal h. |
+| Elastische Energie | 弹性势能 | Physik | Eine gedehnte Feder speichert elastische Energie. |
+| Impuls | 动量 | Physik | Der Impuls eines Koerpers ist Masse mal Geschwindigkeit. |
+| Stossimpuls | 碰撞冲量 | Physik | Der Stossimpuls ist die Aenderung des Gesamtimpuls. |
+| unelastischer Stoss | 非弹性碰撞 | Physik | Beim unelastischen Stoss wird nicht die gesamte kinetische Energie erhalten. |
+| Kreisbewegung | 圆周运动 | Physik | Bei einer Kreisbewegung aendert sich staendig die Richtung. |
+| Periodendauer | 周期 | Physik | Die Periodendauer ist die Dauer einer vollen Schwingung. |
+| Schwingenergie | 振荡能量 | Physik | Die Schwingenergie wechselt zwischen kinetischer und potenzieller Form. |
+| Winkelgeschwindigkeit | 角速度 | Physik | Die Winkelgeschwindigkeit ist der Drehwinkel pro Zeit. |
+| Gravitationsgesetz | 万有引力定律 | Physik | Das Gravitationsgesetz gilt fuer zwei sich anziehende Koerper. |
+| Gravitationskonstante | 引力常数 | Physik | Die Gravitationskonstante ist eine Naturkonstante. |
+| Hebelgesetz | 杠杆定律 | Physik | Beim Hebelgleichgewicht werden Drehmomente verglichen. |
+| Drehmoment | 力矩 | Physik | Das Drehmoment ist Kraft mal Abstand zur Drehachse. |
+| elektrische Ladung | 电荷 | Physik | Die elektrische Ladung kann positiv oder negativ sein. |
+| elektrische Spannung | 电压 | Physik | Die elektrische Spannung ist Energie pro Ladung. |
+| Stromstaerke | 电流强度 | Physik | Die Stromstaerke ist Ladung pro Zeit. |
+| Ohmsches Gesetz | 欧姆定律 | Physik | Das Ohmsche Gesetz lautet U gleich R mal I. |
+| harmonische Schwingung | 简谐振动 | Physik | Eine harmonische Schwingung folgt einem Sinus. |
+| Wellenlaenge | 波长 | Physik | Die Wellenlaenge ist der Abstand zweier gleicher Phasen. |
+| Atomkern | 原子核 | Physik | Der Atomkern enthaelt Protonen und Neutronen. |
+| Radioaktivitaet | 放射性 | Physik | Radioaktivitaet entsteht durch den Zerfall instabiler Atomkerne. |
+| Aufgabensatz | 完整题组 | Physik | Von vier Aufgaben werden drei bearbeitet. |
+| Arbeitszeit | 考试总时长 | Physik | Die Arbeitszeit umfasst die Auswahlzeit. |
+| fachpraktische Aufgabe | 含专业实践的题 | Physik | Der zusaetzliche Zeitaufwand steht in der fachpraktischen Aufgabe. |
+| zusätzlicher Zeitaufwand | 附加时间 | Physik | Der zusätzliche Zeitaufwand wird in der Aufgabe verbindlich ausgewiesen. |
+| Gesamtarbeitszeit | 全部考试时间 | Physik | Die Gesamtarbeitszeit kann bei fachpraktischen Anteilen steigen. |
+| Messreihe | 测量系列 | Physik | Die Messreihe wird als Diagramm mit Einheiten dargestellt. |
+| Restenergie | 剩余能量 | Physik | Die Restenergie wird in kinetische Energie umgesetzt. |
+| Hookesches Gesetz | 胡克定律 | Physik | Das Hookesche Gesetz verbindet Kraft und Auslenkung. |
+| Normalkraft | 支持力 | Physik | Die Normalkraft steht senkrecht auf der Kontaktflaeche. |
+| Bremsbeschleunigung | 制动加速度 | Physik | Die Bremsbeschleunigung ist bei der gleichmaessigen Bremsung konstant. |
+| Plausibilitaet | 合理性 | Physik | Die Plausibilitaet wird durch Einheit und Groessenordnung geprueft. |
+| Ordnungszahl | 原子序数 | Chemie | Die Ordnungszahl ist gleich der Protonenzahl. |
+| Elektronenkonfiguration | 电子排布 | Chemie | Die Elektronenkonfiguration verteilt Elektronen auf Schalen und Orbitale. |
+| Periode | 周期 | Chemie | Eine Periode entspricht der Zahl der besetzten Schalen. |
+| Hauptgruppe | 主族 | Chemie | Die Hauptgruppe folgt aus den Valenzelektronen. |
+| Isotop | 同位素 | Chemie | Isotope haben gleiche Protonen und verschiedene Neutronen. |
+| Ion | 离子 | Chemie | Ein Ion besitzt eine andere Elektronenzahl als das neutrale Atom. |
+| Kation | 阳离子 | Chemie | Ein Kation traegt eine positive Ladung. |
+| Anion | 阴离子 | Chemie | Ein Anion traegt eine negative Ladung. |
+| Ionenbindung | 离子键 | Chemie | Eine Ionenbindung entsteht durch Elektronenuebergang. |
+| Elektronenpaarbindung | 共价键 | Chemie | Eine Elektronenpaarbindung entsteht durch gemeinsame Elektronenpaare. |
+| Metallbindung | 金属键 | Chemie | Eine Metallbindung beruht auf beweglichen Elektronen im Metallgitter. |
+| Polaritaet | 极性 | Chemie | Polaritaet beschreibt die ungleiche Elektronenverteilung in einer Bindung. |
+| Molekuel | 分子 | Chemie | Ein Molekuel besteht aus chemisch gebundenen Atomen. |
+| Summenformel | 分子式 | Chemie | Die Summenformel gibt Atomzahlen und Elemente an. |
+| Strukturformel | 结构式 | Chemie | Die Strukturformel zeigt die Bindungsanordnung. |
+| Homologie | 同系关系 | Chemie | Homologie bezeichnet eine Reihe gleicher funktioneller Gruppen. |
+| Isomerie | 同分异构 | Chemie | Isomerie verbindet unterschiedliche Strukturen gleicher Summenformel. |
+| funktionelle Gruppe | 官能团 | Chemie | Die funktionelle Gruppe bestimmt typische Reaktionen. |
+| Alkane | 烷烃 | Chemie | Alkane sind gesaettigte Kohlenwasserstoffe ohne Doppelbindung. |
+| Alkene | 烯烃 | Chemie | Alkene besitzen mindestens eine C-Doppelbindung. |
+| Alkine | 炔烃 | Chemie | Alkine besitzen mindestens eine C-Dreifachbindung. |
+| Alkohol | 醇 | Chemie | Ein Alkohol besitzt die funktionelle Gruppe OH. |
+| Aldehyd | 醛 | Chemie | Ein Aldehyd besitzt die Gruppe CHO. |
+| Keton | 酮 | Chemie | Ein Keton besitzt eine Carbonylgruppe zwischen zwei C-Atomen. |
+| Carbonsaeure | 羧酸 | Chemie | Eine Carbonsaeure besitzt die Gruppe COOH. |
+| Ester | 酯 | Chemie | Ein Ester entsteht aus Alkohol und Carbonsaeure. |
+| Substitutionsreaktion | 取代反应 | Chemie | Bei einer Substitution wird ein Atom oder eine Gruppe ersetzt. |
+| Additionsreaktion | 加成反应 | Chemie | Bei einer Addition wird ein Molekuel an eine Mehrfachbindung angelagert. |
+| Eliminierungsreaktion | 消除反应 | Chemie | Bei einer Eliminierung werden kleine Molekuele abgespalten. |
+| Oxidation | 氧化 | Chemie | Bei Oxidation werden Elektronen abgegeben oder Bindungselektronen entfernt. |
+| Reduktion | 还原 | Chemie | Bei Reduktion werden Elektronen aufgenommen. |
+| Reaktionsgeschwindigkeit | 反应速率 | Chemie | Die Reaktionsgeschwindigkeit beschreibt die Konzentrationsaenderung pro Zeit. |
+| Aktivierungsenergie | 活化能 | Chemie | Ein Katalysator senkt die Aktivierungsenergie. |
+| Katalysator | 催化剂 | Chemie | Ein Katalysator beschleunigt Reaktionen ohne selbst verbraucht zu werden. |
+| Massenwirkungsgesetz | 质量作用定律 | Chemie | Das Massenwirkungsgesetz verknuepft Gleichgewichtskonzentrationen. |
+| Prinzip von Le Chatelier | 勒夏特列原理 | Chemie | Das Prinzip von Le Chatelier beschreibt die Reaktion auf eine Stoerung. |
+| Stoffmengenverhaeltnis | 物质的量比 | Chemie | Nach dem Ausgleichen entsprechen die Koeffizienten dem Stoffmengenverhaeltnis. |
+| Beobachtung | 观察 | Chemie | Zuerst wird die Beobachtung ohne Ursache beschrieben. |
+| Fachregel | 学科规律 | Chemie | Die Deutung stuetzt sich auf eine passende Fachregel. |
+| Reaktionsordnung | 反应级数 | Chemie | Die Reaktionsordnung beschreibt den Zusammenhang zwischen Rate und Konzentration. |
+| Gleichgewichtslage | 平衡位置 | Chemie | Die Temperatur kann die Gleichgewichtslage und Kc veraendern. |
+| Koeffizientenverhaeltnis | 化学计量比 | Chemie | Das Koeffizientenverhaeltnis wird nach dem Ausgleich gelesen. |
+| Reaktionsgleichung | 化学方程式 | Chemie | Die Reaktionsgleichung wird nur durch Koeffizienten ausgeglichen. |
+| Verbrennungsstoechiometrie | 燃烧计量 | Chemie | Die Verbrennungsstoechiometrie nutzt ausgeglichene Koeffizienten. |
+| Standardbedingungen | 标准状况 | Chemie | Unter Standardbedingungen betraegt das molare Gasvolumen 22,4 Liter. |
+| Edukt | 反应物 | Chemie | Ein Edukt wird beim Aufbau zum Produkt umgewandelt. |
+| Produkt | 生成物 | Chemie | Ein Produkt entsteht durch Reaktion aus Edukten. |
+| exotherme Reaktion | 放热反应 | Chemie | Eine exotherme Reaktion gibt Waerme an die Umgebung ab. |
+| endotherme Reaktion | 吸热反应 | Chemie | Eine endotherme Reaktion nimmt Waerme aus der Umgebung auf. |
+| Zellkern | 细胞核 | Bio | Der Zellkern schuetzt die DNA und steuert die Zelle. |
+| Mitochondrium | 线粒体 | Bio | Das Mitochondrium liefert ATP durch Zellatmung. |
+| Ribosom | 核糖体 | Bio | Das Ribosom synthetisiert Proteine. |
+| Endoplasmatisches Retikulum | 内质网 | Bio | Das endoplasmatische Retikulum bearbeitet und transportiert Proteine. |
+| Golgi-Apparat | 高尔基体 | Bio | Der Golgi-Apparat modifiziert und sortiert Proteine. |
+| Cytoplasma | 细胞质 | Bio | Das Cytoplasma umgibt die Zellorganellen. |
+| Cytoskelett | 细胞骨架 | Bio | Das Cytoskelett stabilisiert Form und Zellbewegung. |
+| Membranprotein | 膜蛋白 | Bio | Ein Membranprotein kann Stoffe transportieren. |
+| Phospholipid | 磷脂 | Bio | Phospholipide bilden die Doppelschicht der Biomembran. |
+| Diffusion | 扩散 | Bio | Die Diffusion folgt dem Konzentrationsgefaelle. |
+| aktiver Transport | 主动运输 | Bio | Der aktive Transport nutzt Energie gegen das Gefaelle. |
+| Endocytose | 胞吞 | Bio | Die Endocytose nimmt Material in Vesikeln auf. |
+| Exocytose | 胞吐 | Bio | Die Exocytose schleust Stoffe aus der Zelle aus. |
+| ATP | 三磷酸腺苷 | Bio | ATP liefert Energie fuer viele Zellprozesse. |
+| Enzym | 酶 | Bio | Ein Enzym katalysiert eine bestimmte Reaktion. |
+| Substrat | 底物 | Bio | Das Substrat bindet am aktiven Zentrum des Enzyms. |
+| aktives Zentrum | 活性中心 | Bio | Das aktive Zentrum bindet das Substrat. |
+| RGT-Regel | 温度系数规则 | Bio | Bei zehn Kelvin Temperaturerhoehung steigt die Rate meist. |
+| Chlorophyll | 叶绿素 | Bio | Chlorophyll nimmt Lichtenergie fuer Fotosynthese auf. |
+| Lichtreaktion | 光反应 | Bio | Die Lichtreaktion laeuft in der Thylakoidmembran ab. |
+| Calvin-Zyklus | 卡尔文循环 | Bio | Der Calvin-Zyklus fixiert Kohlenstoffdioxid im Stroma. |
+| Zellzyklus | 细胞周期 | Bio | Der Zellzyklus umfasst Wachstum und Teilung. |
+| Mitose | 有丝分裂 | Bio | Die Mitose erzeugt zwei genetisch gleiche Tochterzellen. |
+| Meiose | 减数分裂 | Bio | Die Meiose bildet haploide Keimzellen. |
+| DNA | 脱氧核糖核酸 | Bio | Die DNA speichert genetische Information. |
+| RNA | 核糖核酸 | Bio | RNA beteiligt sich an der Proteinsynthese. |
+| Genotyp | 基因型 | Bio | Der Genotyp beschreibt die ererbte Merkmalskombination. |
+| Chromosom | 染色体 | Bio | Ein Chromosom traegt Erbanlagen. |
+| Karyotyp | 核型 | Bio | Der Karyotyp zeigt die Chromosomenzahl und Form. |
+| Peptidbindung | 肽键 | Bio | Eine Peptidbindung verbindet zwei Aminosaeurebausteine. |
+| Proteinsynthese | 蛋白质合成 | Bio | Die Proteinsynthese setzt Ribosomen und RNA ein. |
+| Stoffwechsel | 新陈代谢 | Bio | Der Stoffwechsel umfasst Aufbau Abbau und Energiefluss. |
+| Thylakoid | 类囊体 | Bio | Der Thylakoid traegt die Membran der Lichtreaktion. |
+| Photosystem | 光系统 | Bio | Ein Photosystem absorbiert Lichtenergie im Thylakoid. |
+| Energieentwertung | 能量耗散 | Bio | Bei Stoffwechseln geht Energie als Waerme verloren. |
+| mikroskopische Vergrösserung | 显微镜放大倍数 | Bio | Okular mal Objektiv ergibt die mikroskopische Vergrösserung. |
+| Aufloesungsgrenze | 分辨极限 | Bio | Unterhalb der Aufloesungsgrenze ist eine reliable Trennung nicht moeglich. |
+| Zellgroesse | 细胞尺寸 | Bio | Die Zellgroesse wird mit dem Bildmassstab berechnet. |
+| Kerndurchmesser | 核直径 | Bio | Der Kerndurchmesser folgt aus Zeichengroesse und Bildmassstab. |
+| limitierender Faktor | 限制因子 | Bio | Der limitierende Faktor aendert sich mit den Bedingungen. |
+| relative Reaktionsrate | 相对反应速率 | Bio | Die relative Reaktionsrate betraegt 100 Prozent am Optimum. |
+| Hemmung | 抑制 | Bio | Eine reversible Hemmung kann durch Bedingungswechsel aufhoeren. |
+| Endosymbiose | 内共生 | Bio | Eigene DNA und Doppelmembran stuetzen die Endosymbiose. |
+| Sauerstoffbilanz | 氧气收支 | Bio | Die Sauerstoffbilanz zeigt welchen Prozess die Aenderung dominiert. |
+| Fotosynthese | 光合作用 | Bio | Fotosynthese wandelt Lichtenergie in chemische Energie um. |
+| Zellatmung | 细胞呼吸 | Bio | Zellatmung verbraucht Sauerstoff und liefert ATP. |
+| Stroma | 叶绿体基质 | Bio | Das Stroma ist der Ort des Calvin-Zyklus. |
+| Thylakoidmembran | 类囊体膜 | Bio | Die Thylakoidmembran trägt die Lichtreaktion. |
+| Prüfungsleistung | 考试表现 | Mathe | Die Prüfungsleistung umfasst die nachvollziehbare Bearbeitung. |
+| Hilfsmittelfreiheit | 无辅助工具要求 | Mathe | Die Hilfsmittelfreiheit gilt im ersten Prüfungsteil. |
+| Kostenfunktion | 成本函数 | Mathe | Die Kostenfunktion ordnet der Menge die Kosten zu. |
+| Linearität | 线性关系 | Physik | Die Messwerte sprechen fuer eine lineare Beziehung. |
+| chemisches Gleichgewicht | 化学平衡 | Chemie | Das chemische Gleichgewicht ist dynamisch und von der Temperatur abhaengig. |
+| Gleichgewichtskonstante | 平衡常数 | Chemie | Die Gleichgewichtskonstante beschreibt die Gleichgewichtszusammensetzung bei fester Temperatur. |
+| Bildmassstab | 图像比例尺 | Bio | Der Bildmassstab rechnet Zeichenlaenge in Wirklichkeit um. |
+| Spezies | 物种 | Bio | Die Skizze belegt allein keine eindeutige Spezies. |
+| Stoffaustausch | 物质交换 | Bio | Die Biomembran regelt den selektiven Stoffaustausch. |

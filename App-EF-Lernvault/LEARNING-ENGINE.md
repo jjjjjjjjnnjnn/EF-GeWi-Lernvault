@@ -25,12 +25,17 @@ vault md/csv → vault/parser（frontmatter/Block/CSV五列）
   E轮：auto永不隐式下载+HF镜像源+显式加载按钮；进度按loaded/total字节比）
   → engine/storage+stores（版本化 keys + Backend接口 + legacy旧档heben）
   → engine/mastery（BKT掌握度/学期EF.1-EF.2开关/归档重置）+ engine/dailyMix（4到期卡+1薄弱题+1对比题）
-  → engine/klausurExtractor（38笔记动态抽AFB I-III三段卷+EPA 0-15）+ Tutor压缩（compressor/ccrStore/context三区组装）
+  → engine/examComposer（多篇组卷：官方2026时长表+Mathe三分领域配额+Deutsch四选一+BKT薄弱加权+种子确定性+整分评分）
+  → engine/klausurExtractor（单篇笔记抽AFB I-III三段卷+百分制；兼容原始Markdown与parser剥离heading的block）
+  → engine/storageKeys（19个持久化localStorage键的单一真相源：全量擦除 + 10键云同步白名单）
+  → engine/competencyMap（NRW官方Inhaltsfeld映射，mastery的IF归类层）
+  → engine/instantGrounding（<10ms本地vault片段+7天QA缓存，Tutor零延迟首答）
+  → Tutor压缩（compressor/ccrStore/context三区组装）
   → scheduler（FSRS自研简化版；prioritizeCard/prioritizeThema错题回流）
   → engine/interleave（分科默认 + override + round-robin/blocked排序）
   → engine/overview（主页数据：到期/新卡/XP/连击/掌握度/周完成率/倒计时）
   → engine/diagram（LLM-SVG约束生成+消毒allowlist+会话缓存）+ engine/reise-ki（entdecken/ausprobieren/check/szenario prompt构造）
-  → engine/vernetzung（跨学科思维桥：VERNETZUNG_BRIDGES常量表→findVernetzungBridge按query+学科匹配→formatBridgeForPrompt单行注入<50 tokens）
+  → engine/vernetzung（跨学科思维桥：VERNETZUNG_BRIDGES常量表→findVernetzungBridge(query, currentSubject?)位置参数匹配→formatBridgeForPrompt单行注入<50 tokens）
 ```
 
 ## 3. 交互契约（触发 → 中后端调用 → UI状态）
@@ -41,7 +46,7 @@ vault md/csv → vault/parser（frontmatter/Block/CSV五列）
 - Quiz 生成 → `generateQuizFromNote / generateExtendedQuiz / getVergleichItems`
   （AFB triple 恒为 tasks[0..2]；sourceRef 非空强制，空则抛错；无 vault/无 klausurrelevant → MOCK 兜底）
 - Vault 接入 → `pickVault()`（File System Access，需 Edge/Chrome；取消=静默）
-- 设置 → 侧栏底部独立区（Alt 9），与 8 学习 tab 分离；顶栏只剩搜索 + 状态
+- 设置 → 侧栏底部独立区（`Alt 0`），与 9 学习 tab 分离；顶栏=搜索 + 状态
 - 主页 → `buildOverview(cards)`（到期/新卡/XP/连击/掌握度=stability映射/周完成率/考试倒计时）；nextUp 跳笔记库
 - 交错 → Quiz表头开关（当前学科，默认Mathe/Physik/Chemie/Bio开）；开=跨科轮排，关=本学科置顶成块
 - 错题回流 → Quiz两处"送回背卡堆" → `prioritizeThema(cards, thema)`（仅review卡即时到期）
@@ -53,7 +58,7 @@ vault md/csv → vault/parser（frontmatter/Block/CSV五列）
 - 公式 → `MathHtml`懒加载：首绘立即出原文占位，KaTeX动态import异步排版+公式缓存+idle预取（katex独立chunk）
 - 模型拉取（ccswitch式）→ `pullModelList`：dev同源代理`/__models`（Node代取CORS-free，Key只走头）优先，直连兜底；
   错误分类（HTTP码/CORS_BLOCK/超时）；10预设（Zen/SenseNova在内）+任意预设Base-URL改写；点选即写入模型框
-- 跨学科思维桥（无感胶囊）→ `findVernetzungBridge({query, currentSubject})` 匹配 → 消息气泡底部渲染细线SVG胶囊（禁emoji）→
+- 跨学科思维桥（无感胶囊）→ `findVernetzungBridge(query, currentSubject?)`（位置参数）匹配 → 消息气泡底部渲染细线SVG胶囊（禁emoji）→
   点击展开对照 + `formatBridgeForPrompt`（DE公式锚 + ZH说明，压进LLM上下文）；两张地图为内容源：
   `00_META/MINT-Vernetzung-Konzeptkarte.md`（数理化生公理化公理：Aenderungsrate/Erhaltung/Gleichgewicht）+
   `00_META/GeWi-Vernetzung-Urteilskarte.md`（德英社哲大一统：Urteilskompetenz/Argumentation/Staat-Individuum）
@@ -85,7 +90,10 @@ vault md/csv → vault/parser（frontmatter/Block/CSV五列）
  · `modules`（Home/Library/Settings 渲染冒烟 + 芯片清除/同步报错交互）
  · Next-Gen：`engine/bm25`（切分/停用词/法条/加权）· `engine/rrfSearch`（融合排序）
  · `engine/vaultGraph`（双向图/孤岛/邻域）· `engine/mastery`（BKT更新/学期/归档）
- · `engine/dailyMix`（冲刺组装）· `engine/klausurExtractor`（动态抽卷/换算）
+ · `engine/dailyMix`（冲刺组装）· `engine/klausurExtractor`（原始MD与剥离heading双兼容抽取）
+· `engine/examComposer`（官方2026时长表/Mathe三领域配额/Deutsch四选一/薄弱加权/种子确定性/整分评分）
+· `engine/storageKeys`（19键注册表唯一性+生产源码字面量审计+擦除/同步成员）· `engine/sync`（10键往返）
+· `engine/index`（BM25+Fuse RRF排序+变音正规化+精确命中字段优先+薄弱/时序加权）· `engine/bm25`（CJK一元+二元/德语停用词/法条）
  · `ai/heartbeat`（探针/pull代理优先/直连兜底/错误分类）· `ai/providers`（10预设/override三态）
  · `walkthrough`（真L1穿真UI：门禁/XP/离线保底/反馈上下文）· `MathHtml`（首绘原文/异步排版/缓存）
  · `engine/reise-ki`（含check四段打分prompt）· Tutor压缩三件套（compressor/ccrStore/context）

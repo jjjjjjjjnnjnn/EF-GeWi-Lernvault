@@ -10,7 +10,7 @@
 | Philosophie | ✅ 本期 | [Lehrplan](../07_Philosophie/Lehrplan.md) | [Ressourcen](../07_Philosophie/Ressourcen.md) | [Philo-EF-Basis](../07_Philosophie/Vokabeln-Anki/Philo-EF-Basis.csv) | [Satzbausteine](../07_Philosophie/Klausur-Training/Satzbausteine.md) · [Fehlerlog](../07_Philosophie/Klausur-Training/Fehlerlog.md) | [Menschenbild](../07_Philosophie/Texte-Analyse/Menschenbild-Überblick.md) · [Utilitarismus-vs-Kant](../07_Philosophie/Texte-Analyse/Utilitarismus-vs-Kant.md) · [Fragen-Typen](../07_Philosophie/Texte-Analyse/Philosophische-Fragen-Typen.md) |
 | Deutsch | 🟡 本期开动 | [Lehrplan](../01_Deutsch/Lehrplan.md) | [Ressourcen](../01_Deutsch/Ressourcen.md) | [Deutsch-EF-Phrasen](../01_Deutsch/Vokabeln-Anki/Deutsch-EF-Phrasen.csv) | [Fehlerlog](../01_Deutsch/Klausur-Training/Fehlerlog.md) | [Lyrik-Sturm-Drang](../01_Deutsch/Texte-Analyse/Lyrik-Sturm-Drang-Goethe.md) |
 | Englisch | 🟡 本期开动 | [Lehrplan](../02_Englisch/Lehrplan.md) | [Ressourcen](../02_Englisch/Ressourcen.md) | [Englisch-EF-Phrasen](../02_Englisch/Vokabeln-Anki/Englisch-EF-Phrasen.csv) | [Fehlerlog](../02_Englisch/Klausur-Training/Fehlerlog.md) | [Role-Models](../02_Englisch/Texte-Analyse/Role-Models-Analysis.md) |
-| Mathe/Physik/Chemie/Bio | ✅ 骨架EF | [Mathe-Lehrplan](../03_Mathe/Lehrplan.md) · [Physik](../04_Physik/Lehrplan.md) · [Chemie](../05_Chemie/Lehrplan.md) · [Bio](../06_Bio/Lehrplan.md) | 各 `Ressourcen.md` + `_Downloads/` KLP全文 | — | — | 各 `Formel-Spickzettel.md` (KaTeX) |
+| Mathe/Physik/Chemie/Bio | ✅ 骨架EF | [Mathe-Lehrplan](../03_Mathe/Lehrplan.md) · [Physik](../04_Physik/Lehrplan.md) · [Chemie](../05_Chemie/Lehrplan.md) · [Bio](../06_Bio/Lehrplan.md) | 各 `Ressourcen.md` + `_Downloads/` KLP全文 | [Mathe-Anki](../03_Mathe/Vokabeln-Anki/Mathe-EF-Basis.csv) · [Physik-Anki](../04_Physik/Vokabeln-Anki/Physik-EF-Basis.csv) · [Chemie-Anki](../05_Chemie/Vokabeln-Anki/Chemie-EF-Basis.csv) · [Bio-Anki](../06_Bio/Vokabeln-Anki/Bio-EF-Basis.csv) | [Mathe-Training](../03_Mathe/Klausur-Training/Mathe-Abitur-Aufgabentraining.md) · [Physik-Training](../04_Physik/Klausur-Training/Physik-Abitur-Aufgabentraining.md) · [Chemie-Training](../05_Chemie/Klausur-Training/Chemie-Abitur-Aufgabentraining.md) · [Bio-Training](../06_Bio/Klausur-Training/Bio-Abitur-Aufgabentraining.md) | [Mathe-Formel-Spickzettel](../03_Mathe/Formel-Spickzettel.md) · [Physik-Formel-Spickzettel](../04_Physik/Formel-Spickzettel.md) · [Chemie-Formel-Spickzettel](../05_Chemie/Formel-Spickzettel.md) · [Bio-Formel-Spickzettel](../06_Bio/Formel-Spickzettel.md) |
 | Musik/Sport mündl. | 🟡 口试开动 | [Musik](../09_Musik-mündl/Lehrplan.md) · [Sport](../10_Sport-mündl/Lehrplan.md) | 各 `Ressourcen.md` | — | — | [Beethoven-Motiv](../09_Musik-mündl/Texte-Analyse/Beethoven-Motiv-Hoeren.md) |
 
 ## App（桌面软件，一站式入口）
@@ -61,15 +61,12 @@
 - Rhetorik & Mediation — [Rhetorik-Mediation-Vernetzung](../01_Deutsch/Texte-Analyse/Rhetorik-Mediation-Vernetzung.md)（德语议论文剖析与英语中继写作跨语言联动）
 - Lyrik: Sturm und Drang (Goethe) — [Lyrik-Sturm-Drang-Goethe](../01_Deutsch/Texte-Analyse/Lyrik-Sturm-Drang-Goethe.md)（Willkommen und Abschied/6 Mittel/Deutungshypothese）
 - Drama-Ganzschrift: Kandidaten + Werkzeugkasten — [Drama-Ganzschrift-Kandidaten](../01_Deutsch/Texte-Analyse/Drama-Ganzschrift-Kandidaten.md)（Dürrenmatt/Frisch-Shortlist/五段/人物关系/对话分析，待老师定书名）
-- Sachtextanalyse: Argumentation — [Sachtextanalyse-Argumentation](../01_Deutsch/Texte-Analyse/Sachtextanalyse-Argumentation.md)（6论据类型+10动词句式+自写微型范文全程分析）
 - Abitur-Aufgabenarten I-IV + ZKE-Anschluss — [Deutsch-Abitur-Aufgabenarten](../01_Deutsch/Texte-Analyse/Deutsch-Abitur-Aufgabenarten.md)（I-IV/AFB/IV材料写作/Gedichtvergleich/ZKE-D1=IIa）· [IQB-Training](../01_Deutsch/Klausur-Training/Deutsch-IQB-Training.md)（自写150词范文+EHZ）
 - Sachtextanalyse: Argumentation & Leserlenkung — [Sachtextanalyse-Argumentation](../01_Deutsch/Texte-Analyse/Sachtextanalyse-Argumentation.md)（Pause vom Bildschirm?/6 Argumenttypen/10 Verben/AFB II Analyse vs AFB III Erörterung）
 
 ### Englisch
 - Role Models — [Role-Models-Analysis](../02_Englisch/Texte-Analyse/Role-Models-Analysis.md)（Teil A三任务链/Summary自查/P.E.E./Comment句型）
 - Klett Bridge→IQB Themenfelder映射 — [Klett-Themenfelder-Mapping](../02_Englisch/Texte-Analyse/Klett-Themenfelder-Mapping.md)（5单元23媒体→Bereich1/2/5/7，混淆ID工作假设待目录页核对）
-- Mediation: Mustertexte (FSJ & Detox) — [Mediation-Mustertexte](../02_Englisch/Texte-Analyse/Mediation-Mustertexte.md)（formal letter vs forum post/3 Kernfakten/Connectors-Box）
-
 - Teil B Doppelpack — [Klausur-Teil-B-Doppelpack](../02_Englisch/Texte-Analyse/Klausur-Teil-B-Doppelpack.md)（Hörverstehen四题型+Mediation三段式，待老师定考轨）
 - Mediation范文两套 — [Mediation-Mustertexte](../02_Englisch/Texte-Analyse/Mediation-Mustertexte.md)（FSJ正式信+Detox论坛帖+双register Connectors）
 - Abitur-Themenfelder (UK/USA/Nigeria+Identität+Medien) — [Englisch-Abitur-Themenfelder](../02_Englisch/Texte-Analyse/Englisch-Abitur-Themenfelder.md)（5 Felder+Comment句）· [IQB-Writing-Training](../02_Englisch/Klausur-Training/Englisch-IQB-Writing-Training.md)（Lagos/London自写文+三步）
@@ -175,20 +172,23 @@
 - [2026-09-23-internet-offensive](Journal/2026-09-23-internet-offensive.md) — Internet-Offensive十科全线：Abitur沉淀10科+IQB补采37PDF（10+1 commits，vault-check 59/294/162）
 - [2026-09-23-cn-mint-vernetzung](Journal/2026-09-23-cn-mint-vernetzung.md) — 中德理科互通：MINT四科CN桥手册+技巧+改编训练（4+1 commits，vault-check 71/334/163）
 - [2026-09-23-wartung-6](Journal/2026-09-23-wartung-6.md) — 第六轮维护：389文件三扫零泄漏/264绿/vault-check 77-340-182 PASS/修2文档债（Klett孤立笔记+思维桥契约）
+- [2026-09-23-parallel-w1-w7](Journal/2026-09-23-parallel-w1-w7.md) — 全并行W1–W7：四真Bug修复+三休眠引擎上线+UI契约收口(emoji清零)+KlausurSim NRW多篇组卷+MINT内容补课（316绿/vault-check 81-481-196）
 - [2026-09-23-pedagogy-ui-library](Journal/2026-09-23-pedagogy-ui-library.md) — 无痛自然习得教育组件库与AI助教全闭环集成（242单测全绿，句式积木+辩证天平+文本荧光解构）
 - [2026-09-23-tutor-socratic-fehlerlog-tangent](Journal/2026-09-23-tutor-socratic-fehlerlog-tangent.md) — 启发引导/考纲直出双态分流、错题补丁弹窗与数学割线逼近切线沙盘（253单测全绿，Sokratisch产婆术+FehlerlogPatch+多模态图片输入+TangentSlider）
 - [2026-09-23-tutor-dialog-ui-fix](Journal/2026-09-23-tutor-dialog-ui-fix.md) — AI助教对话复读异常根除、错题按钮去Emoji与Tufte双层顶栏重构（256单测全绿，首条消息规范+唯一ID+引用豁免）
+- [2026-09-23-mint-abiturtraining](Journal/2026-09-23-mint-abiturtraining.md) — MINT四科Abitur训练+141张Anki补强+INDEX十科覆盖
 - 约定：文件名 `YYYY-MM-DD-<thema>.md`，头部frontmatter（`fach`可空，`tags: [EF, Meta]`）。
 
 
 ## Dataview（Obsidian内自动索引，GitHub上仅作备份显示）
 
 ```dataview
-TABLE thema, datum FROM "07_Philosophie" OR "08_SoWi" OR "01_Deutsch" OR "02_Englisch"
+TABLE thema, datum FROM "01_Deutsch" OR "02_Englisch" OR "03_Mathe" OR "04_Physik" OR "05_Chemie" OR "06_Bio" OR "07_Philosophie" OR "08_SoWi" OR "09_Musik-mündl" OR "10_Sport-mündl"
 WHERE klausurrelevant = true
 SORT datum DESC
 ```
 
 ```dataview
-LIST FROM #EF WHERE fach = "SoWi"
+LIST FROM "01_Deutsch" OR "02_Englisch" OR "03_Mathe" OR "04_Physik" OR "05_Chemie" OR "06_Bio" OR "07_Philosophie" OR "08_SoWi" OR "09_Musik-mündl" OR "10_Sport-mündl"
+WHERE klausurrelevant = true
 ```
