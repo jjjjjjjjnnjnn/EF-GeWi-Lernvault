@@ -40,6 +40,9 @@ import {
   autoDispatchChat,
 } from "../ai/autoDispatch";
 import { getActiveEndpoint } from "../ai/endpoints";
+import { SatzbauLego } from "../components/pedagogy/SatzbauLego";
+import { BalanceBoard } from "../components/pedagogy/BalanceBoard";
+import { TextHighlighter } from "../components/pedagogy/TextHighlighter";
 
 export default function Tutor({
   lang,
@@ -77,6 +80,7 @@ export default function Tutor({
   const [engineTag, setEngineTag] = useState(() => describeActiveEngine());
   const [copyFeedback, setCopyFeedback] = useState(false);
   const [expandedCcr, setExpandedCcr] = useState<{ hash: string; content: string | null } | null>(null);
+  const [pedagogyTool, setPedagogyTool] = useState<"lego" | "balance" | "highlighter" | null>(null);
 
   const handleExpandCcr = async (hash: string) => {
     if (expandedCcr?.hash === hash) {
@@ -726,6 +730,59 @@ export default function Tutor({
           </div>
 
           <div className="flex items-center gap-2">
+            {/* 无痛学习交互工具箱 (Satzbau-Lego / Balance / Highlighter) */}
+            <div className="flex items-center gap-1 border border-[#E5E1D8] rounded-sm bg-white p-0.5">
+              <button
+                type="button"
+                onClick={() => setPedagogyTool((t) => (t === "lego" ? null : "lego"))}
+                title={lang === "de" ? "Satzbau-Lego öffnen" : "打开句式积木 (Satzbau-Lego)"}
+                className={`rounded-xs px-2 py-0.5 text-[11px] font-sans transition-all cursor-pointer flex items-center gap-1 ${
+                  pedagogyTool === "lego"
+                    ? "bg-[#4338CA] text-white font-medium"
+                    : "text-[#1C1B17] hover:bg-[#FAF9F6]"
+                }`}
+              >
+                <svg className="w-3 h-3" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.6">
+                  <rect x="2" y="5" width="12" height="9" rx="1" />
+                  <circle cx="5" cy="3" r="1.5" />
+                  <circle cx="11" cy="3" r="1.5" />
+                </svg>
+                <span>{lang === "de" ? "Satzbau-Lego" : "句式积木"}</span>
+              </button>
+
+              <button
+                type="button"
+                onClick={() => setPedagogyTool((t) => (t === "balance" ? null : "balance"))}
+                title={lang === "de" ? "Dialektische Waage öffnen" : "打开辩证天平 (Urteils-Waage)"}
+                className={`rounded-xs px-2 py-0.5 text-[11px] font-sans transition-all cursor-pointer flex items-center gap-1 ${
+                  pedagogyTool === "balance"
+                    ? "bg-[#047857] text-white font-medium"
+                    : "text-[#1C1B17] hover:bg-[#FAF9F6]"
+                }`}
+              >
+                <svg className="w-3 h-3" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.6">
+                  <path d="M8 2v12M3 14h10M4 6l4-2 4 2M4 6l-2 5h4l-2-5M12 6l-2 5h4l-2-5" />
+                </svg>
+                <span>{lang === "de" ? "Urteils-Waage" : "辩证天平"}</span>
+              </button>
+
+              <button
+                type="button"
+                onClick={() => setPedagogyTool((t) => (t === "highlighter" ? null : "highlighter"))}
+                title={lang === "de" ? "Text-Dekonstruierer öffnen" : "打开荧光标注解构画板"}
+                className={`rounded-xs px-2 py-0.5 text-[11px] font-sans transition-all cursor-pointer flex items-center gap-1 ${
+                  pedagogyTool === "highlighter"
+                    ? "bg-[#BE185D] text-white font-medium"
+                    : "text-[#1C1B17] hover:bg-[#FAF9F6]"
+                }`}
+              >
+                <svg className="w-3 h-3" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.6">
+                  <path d="M11 2l3 3-8 8H3v-3l8-8zM9 4l3 3" />
+                </svg>
+                <span>{lang === "de" ? "Dekonstruierer" : "文本解构"}</span>
+              </button>
+            </div>
+
             <button
               onClick={handleExportMarkdown}
               title={lang === "de" ? "Dialog als Markdown exportieren" : "导出当前对话为 Markdown"}
@@ -752,6 +809,48 @@ export default function Tutor({
             </button>
           </div>
         </div>
+
+        {/* Pädagogischer Lern-Werkzeugkasten (Collapsible Drawer) */}
+        {pedagogyTool && (
+          <div className="border-b border-[#E5E1D8] bg-[#FAF9F6] p-3 max-h-[500px] overflow-y-auto animate-in slide-in-from-top-2 duration-150">
+            <div className="flex items-center justify-between mb-2">
+              <span className="text-[10px] font-mono text-[#6B675C] uppercase tracking-wider">
+                {lang === "de" ? "Pädagogisches Werkzeug aktiv (Ergebnisse fließen direkt in den Chat ein):" : "无痛学习交互工具（生成句式可一键带入下方对话框）："}
+              </span>
+              <button
+                type="button"
+                onClick={() => setPedagogyTool(null)}
+                className="text-xs font-mono text-[#6B675C] hover:text-[#1C1B17] cursor-pointer"
+              >
+                ✕ {lang === "de" ? "Schließen" : "收起"}
+              </button>
+            </div>
+
+            {pedagogyTool === "lego" && (
+              <SatzbauLego
+                lang={lang}
+                onSentenceComplete={(s) => setInput(s)}
+                onJumpToFehlerlog={(incorrect) => {
+                  setErrorMsg(`已记录该不匹配项：${incorrect}`);
+                }}
+              />
+            )}
+
+            {pedagogyTool === "balance" && (
+              <BalanceBoard
+                lang={lang}
+                onUrteilGenerated={(u) => setInput(u)}
+              />
+            )}
+
+            {pedagogyTool === "highlighter" && (
+              <TextHighlighter
+                lang={lang}
+                onAnalysisGenerated={(a) => setInput(a)}
+              />
+            )}
+          </div>
+        )}
 
         {!onOpenSettings && showAi && (
           <div className="border-b border-[#E5E1D8] bg-white shadow-xs max-h-96 overflow-y-auto">
