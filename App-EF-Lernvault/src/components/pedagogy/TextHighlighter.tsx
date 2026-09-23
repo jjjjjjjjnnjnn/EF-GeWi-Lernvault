@@ -18,8 +18,10 @@ export interface TextSpan {
 export interface TextPassage {
   id: string;
   titelDE: string;
+  titelZH?: string;
   autor: string;
   quelle: string;
+  quelleZH?: string;
   spans: TextSpan[];
 }
 
@@ -27,8 +29,10 @@ export const PRESET_PASSAGES: TextPassage[] = [
   {
     id: "deutsch-digital-jugend",
     titelDE: "Die Illusion der permanenten Vernetzung",
+    titelZH: "永久在线的幻象",
     autor: "Dr. L. Weimann",
     quelle: "Frankfurter Allgemeine Zeitung (EF-Übungsmaterial)",
+    quelleZH: "《法兰克福汇报》EF练习材料",
     spans: [
       { id: "s1", text: "Die zunehmende Digitalisierung der jugendlichen Lebenswelt führt zu einer tiefgreifenden Transformation der Kommunikationskultur.", type: "these", annotationDE: "Zentrale Ausgangsthese", annotationZH: "核心论点：数字化深刻改变青少年交流文化" },
       { id: "s2", text: "Denn", type: "konnektor", annotationDE: "Kausale Begründungseinleitung", annotationZH: "因果逻辑衔接词" },
@@ -48,34 +52,34 @@ const HIGHLIGHT_CONFIG: Record<
   these: {
     labelDE: "These / Kernbehauptung",
     labelZH: "① 核心论点 (These)",
-    bgClass: "bg-[#D1FAE5]",
-    borderClass: "border-[#047857]",
-    textClass: "text-[#065F46]",
-    dotClass: "bg-[#047857]",
+    bgClass: "bg-[var(--paper-subtle)]",
+    borderClass: "border-[var(--accent)]",
+    textClass: "text-[var(--ink)]",
+    dotClass: "bg-[var(--accent)]",
   },
   argument: {
     labelDE: "Argument / Beleg",
     labelZH: "② 事实与论据 (Argument)",
-    bgClass: "bg-[#FEF3C7]",
-    borderClass: "border-[#B45309]",
-    textClass: "text-[#92400E]",
-    dotClass: "bg-[#B45309]",
+    bgClass: "bg-[var(--paper)]",
+    borderClass: "border-[var(--gray)]",
+    textClass: "text-[var(--ink)]",
+    dotClass: "bg-[var(--gray)]",
   },
   stilmittel: {
     labelDE: "Rhetorisches Stilmittel",
     labelZH: "③ 修辞手法 (Stilmittel)",
-    bgClass: "bg-[#FCE7F3]",
-    borderClass: "border-[#BE185D]",
-    textClass: "text-[#831843]",
-    dotClass: "bg-[#BE185D]",
+    bgClass: "bg-[var(--paper)]",
+    borderClass: "border-[var(--line)]",
+    textClass: "text-[var(--gray)]",
+    dotClass: "bg-[var(--gray)]",
   },
   konnektor: {
     labelDE: "Konnektor / Scharnier",
     labelZH: "④ 关联与转折词 (Konnektor)",
-    bgClass: "bg-[#E0E7FF]",
-    borderClass: "border-[#4338CA]",
-    textClass: "text-[#312E81]",
-    dotClass: "bg-[#4338CA]",
+    bgClass: "bg-[var(--paper-subtle)]",
+    borderClass: "border-[var(--line)]",
+    textClass: "text-[var(--ink)]",
+    dotClass: "bg-[var(--gray)]",
   },
 };
 
@@ -136,36 +140,39 @@ export function TextHighlighter({
   const totalMarked = Object.keys(userHighlights).length;
 
   return (
-    <div className="rounded-sm border border-[#E5E1D8] bg-white p-4 sm:p-5 shadow-xs">
+    <div className="rounded-[var(--radius)] border border-[var(--line)] bg-[var(--surface)] p-4 sm:p-5 ">
       {/* 头部：标题与出处 */}
-      <div className="flex flex-wrap items-center justify-between gap-2 border-b border-[#E5E1D8] pb-3 mb-4">
+      <div className="flex flex-wrap items-center justify-between gap-2 border-b border-[var(--line)] pb-3 mb-4">
         <div>
           <div className="flex items-center gap-2">
-            <span className="inline-block w-2.5 h-2.5 rounded-full bg-[#BE185D]" />
-            <h3 className="font-serif text-base font-semibold text-[#1C1B17]">
+            <span className="inline-block w-2.5 h-2.5 rounded-full bg-[var(--gray)]" />
+            <h3 className="font-serif text-base  text-[var(--ink)]">
               {lang === "de" ? "Text-Dekonstruierer & Markier-Canvas" : "荧光标注解构画板 (Text-Dekonstruierer)"}
             </h3>
-            <span className="rounded-xs bg-[#BE185D]/10 text-[#BE185D] px-2 py-0.5 text-[10px] font-mono uppercase tracking-wider">
-              Deutsch · Sachtextanalyse
+            <span className="rounded-[var(--radius)] bg-[var(--gray)]/10 text-[var(--gray)] px-2 py-0.5 text-[var(--text-meta)] font-mono uppercase tracking-wider">
+              Deutsch · Sachtextanalyse / 德语 · 议论文分析
             </span>
           </div>
-          <p className="mt-1 font-serif text-xs text-[#1C1B17] font-medium">
-            „{passage.titelDE}“ — <span className="font-sans text-[#6B675C]">{passage.autor} ({passage.quelle})</span>
+          <p className="mt-1 text-xs">
+            <span className="de-reading block text-[var(--ink)]">
+              „{passage.titelDE}“ — <span className="font-sans text-[var(--gray)]">{passage.autor} ({passage.quelle})</span>
+            </span>
+            <span className="zh-translation">{passage.titelZH} — {passage.quelleZH}</span>
           </p>
         </div>
 
         <button
           type="button"
           onClick={clearAll}
-          className="rounded-xs border border-[#E5E1D8] bg-[#FAF9F6] px-2 py-1 text-xs font-mono text-[#6B675C] hover:text-[#1C1B17] cursor-pointer"
+          className="rounded-[var(--radius)] border border-[var(--line)] bg-[var(--paper)] px-2 py-1 text-xs font-mono text-[var(--gray)] hover:text-[var(--ink)] cursor-pointer"
         >
           {lang === "de" ? "Marker leeren" : "清空全部标记"}
         </button>
       </div>
 
       {/* 荧光笔工具箱 (Highlighter Tool Palette) */}
-      <div className="mb-4 flex flex-wrap items-center gap-2 border-b border-[#E5E1D8] pb-3">
-        <span className="text-[11px] font-mono uppercase tracking-wider text-[#6B675C] mr-1">
+      <div className="mb-4 flex flex-wrap items-center gap-2 border-b border-[var(--line)] pb-3">
+        <span className="text-[var(--text-meta)] font-mono uppercase tracking-wider text-[var(--gray)] mr-1">
           {lang === "de" ? "Stift wählen:" : "选择高光笔:"}
         </span>
         {(["these", "argument", "stilmittel", "konnektor"] as HighlightType[]).map((type) => {
@@ -177,10 +184,11 @@ export function TextHighlighter({
               key={type}
               type="button"
               onClick={() => setActiveTool(type)}
-              className={`inline-flex items-center gap-1.5 px-3 py-1 text-xs font-mono rounded-xs border transition-all cursor-pointer ${
+              aria-pressed={isSelected}
+              className={`inline-flex items-center gap-1.5 px-3 py-1 text-xs font-mono rounded-[var(--radius)] border transition-colors cursor-pointer ${
                 isSelected
-                  ? `${cfg.borderClass} ${cfg.bgClass} ${cfg.textClass} font-semibold ring-1 ${cfg.borderClass}/30 shadow-xs`
-                  : "border-[#E5E1D8] bg-[#FAF9F6] text-[#1C1B17] hover:border-[#6B675C]"
+                  ? `${cfg.borderClass} ${cfg.bgClass} ${cfg.textClass}  ring-1 ${cfg.borderClass}/30 `
+                  : "border-[var(--line)] bg-[var(--paper)] text-[var(--ink)] hover:border-[var(--gray)]"
               }`}
             >
               <span className={`w-2 h-2 rounded-full ${cfg.dotClass}`} />
@@ -193,7 +201,7 @@ export function TextHighlighter({
       {/* 主体：左侧交互文本区，右侧实时论证骨架树 */}
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-5">
         {/* 左侧可点击文本材料 (7 Spalten) */}
-        <div className="lg:col-span-7 rounded-xs border border-[#E5E1D8] bg-[#FAF9F6] p-4 text-justify font-serif text-sm leading-loose">
+        <div className="lg:col-span-7 rounded-[var(--radius)] border border-[var(--line)] bg-[var(--paper)] p-4 text-justify font-serif text-sm leading-loose">
           <p className="space-x-1">
             {passage.spans.map((span) => {
               const currentType = userHighlights[span.id];
@@ -203,11 +211,21 @@ export function TextHighlighter({
                 <span
                   key={span.id}
                   onClick={() => toggleSpan(span.id)}
-                  title={span.annotationDE ? `${span.annotationDE} (${span.annotationZH})` : "Klicken zum Markieren"}
-                  className={`inline px-1 py-0.5 rounded-xs transition-all cursor-pointer select-none ${
+                  onKeyDown={(event) => {
+                    if (event.key === "Enter" || event.key === " ") {
+                      event.preventDefault();
+                      toggleSpan(span.id);
+                    }
+                  }}
+                  role="button"
+                  tabIndex={0}
+                  aria-pressed={Boolean(currentType)}
+                  aria-label={`${span.text}. ${span.annotationDE ?? "Markieren"} / ${span.annotationZH ?? "标记"}`}
+                  title={span.annotationDE ? `${span.annotationDE} / ${span.annotationZH}` : "Klicken oder Enter zum Markieren / 点击或按 Enter 标记"}
+                  className={`inline px-1 py-0.5 rounded-[var(--radius)] transition-colors cursor-pointer select-none ${
                     cfg
                       ? `${cfg.bgClass} ${cfg.textClass} border-b-2 ${cfg.borderClass} font-medium`
-                      : "hover:bg-[#E5E1D8]/60 text-[#1C1B17]"
+                      : "hover:bg-[var(--paper-subtle)] text-[var(--ink)]"
                   }`}
                 >
                   {span.text}
@@ -215,20 +233,20 @@ export function TextHighlighter({
               );
             })}
           </p>
-          <div className="mt-3 text-[10px] font-mono text-[#6B675C] flex items-center justify-between border-t border-[#E5E1D8] pt-2">
-            <span>{lang === "de" ? "Tipp: Klicken zum Umschalten" : "提示：点击句子应用当前选中的荧光笔颜色"}</span>
+          <div className="mt-3 text-[var(--text-meta)] font-mono text-[var(--gray)] flex items-center justify-between border-t border-[var(--line)] pt-2">
+            <span>{lang === "de" ? "Tipp: Klicken oder Enter zum Umschalten / 点击或按 Enter 切换标记" : "提示：点击句子或按 Enter 应用当前标记"}</span>
             <span>{totalMarked}/{passage.spans.length} {lang === "de" ? "Segmente aktiv" : "个片段已标注"}</span>
           </div>
         </div>
 
         {/* 右侧自动提炼结构树 (5 Spalten) */}
-        <div className="lg:col-span-5 rounded-xs border border-[#E5E1D8] bg-white p-3.5 flex flex-col justify-between">
+        <div className="lg:col-span-5 rounded-[var(--radius)] border border-[var(--line)] bg-[var(--surface)] p-3.5 flex flex-col justify-between">
           <div>
-            <div className="flex items-center justify-between mb-2 pb-1.5 border-b border-[#E5E1D8]">
-              <span className="text-[11px] font-mono uppercase tracking-wider text-[#6B675C] font-semibold">
+            <div className="flex items-center justify-between mb-2 pb-1.5 border-b border-[var(--line)]">
+              <span className="text-[var(--text-meta)] font-mono uppercase tracking-wider text-[var(--gray)] ">
                 {lang === "de" ? "Extrahierte Argumentationsstruktur:" : "实时论证层级树 (Gliederung):"}
               </span>
-              <span className="text-[10px] font-mono text-[#4338CA]">AFB II</span>
+              <span className="text-[var(--text-meta)] font-mono text-[var(--accent)]">AFB II</span>
             </div>
 
             <div className="space-y-3">
@@ -239,17 +257,17 @@ export function TextHighlighter({
 
                 return (
                   <div key={type} className="text-xs">
-                    <span className={`inline-flex items-center gap-1 font-mono text-[10px] font-semibold ${cfg.textClass} mb-1`}>
+                    <span className={`inline-flex items-center gap-1 font-mono text-[var(--text-meta)]  ${cfg.textClass} mb-1`}>
                       <span className={`w-1.5 h-1.5 rounded-full ${cfg.dotClass}`} />
                       {lang === "de" ? cfg.labelDE : cfg.labelZH} ({items.length})
                     </span>
-                    <ul className="space-y-1 pl-2 border-l border-[#E5E1D8]">
+                    <ul className="space-y-1 pl-2 border-l border-[var(--line)]">
                       {items.map((it) => (
-                        <li key={it.id} className="text-[11px] font-serif text-[#1C1B17] leading-snug">
+                        <li key={it.id} className="text-[var(--text-meta)] font-serif text-[var(--ink)] leading-snug">
                           „{it.text.length > 45 ? `${it.text.slice(0, 42)}…` : it.text}“
                           {it.annotationZH && (
-                            <span className="block font-sans text-[10px] text-[#6B675C]">
-                              ↳ {it.annotationZH}
+                            <span className="block font-sans text-[var(--text-meta)] text-[var(--gray)]">
+                              {it.annotationZH}
                             </span>
                           )}
                         </li>
@@ -260,7 +278,7 @@ export function TextHighlighter({
               })}
 
               {totalMarked === 0 && (
-                <div className="py-8 text-center text-xs font-sans text-[#6B675C]">
+                <div className="py-8 text-center text-xs font-sans text-[var(--gray)]">
                   {lang === "de"
                     ? "Wähle oben eine Farbe und markiere die Passagen links."
                     : "在上方挑选高光笔，点击左侧文本片段进行结构解构。"}
@@ -271,10 +289,10 @@ export function TextHighlighter({
 
           {/* 自动生成分析陈述句 */}
           {groupedSpans.these.length > 0 && groupedSpans.argument.length > 0 && (
-            <div className="mt-4 pt-2.5 border-t border-[#E5E1D8] text-[11px] font-mono text-[#065F46] bg-[#ECFDF5] p-2.5 rounded-xs border border-[#A7F3D0]">
+            <div className="mt-4 pt-2.5 border-t border-[var(--line)] text-[var(--text-meta)] font-mono text-[var(--success)] bg-[var(--paper-subtle)] p-2.5 rounded-[var(--radius)] border border-[var(--success)]">
               <div className="flex items-center justify-between mb-1">
-                <span className="font-semibold block">
-                  {lang === "de" ? "✓ Synthese für deine Klausur:" : "✓ 提炼出的考纲分析句雏形:"}
+                <span className=" block">
+                  {lang === "de" ? "Synthese für deine Klausur / 考纲分析句雏形" : "考纲分析句雏形 / Synthese für deine Klausur"}
                 </span>
                 <button
                   type="button"
@@ -283,13 +301,14 @@ export function TextHighlighter({
                     navigator.clipboard.writeText(synth);
                     onAnalysisGenerated?.(synth);
                   }}
-                  className="rounded-xs bg-[#047857] text-white px-2 py-0.5 text-[10px] font-sans hover:bg-[#065F46] transition-colors cursor-pointer"
+                  className="rounded-[var(--radius)] border border-[var(--success)] px-2 py-0.5 font-sans text-[var(--text-meta)] text-[var(--success)] transition-colors"
                 >
-                  {lang === "de" ? "In Chat übernehmen" : "带入对话框"}
+                  {lang === "de" ? "In Chat übernehmen / 带入对话框" : "带入对话框 / In Chat übernehmen"}
                 </button>
               </div>
-              <p className="font-serif text-xs text-[#1C1B17] font-medium leading-relaxed">
+              <p className="de-reading text-xs leading-relaxed text-[var(--ink)]">
                 Der Autor stützt seine zentrale These („{groupedSpans.these[0].text.slice(0, 30)}…“) vor allem durch {groupedSpans.argument.length} Begründungen sowie bildhafte Rhetorik.
+                <span className="zh-translation font-sans">作者主要通过{groupedSpans.argument.length}项论证与形象修辞来支撑其核心论点。</span>
               </p>
             </div>
           )}

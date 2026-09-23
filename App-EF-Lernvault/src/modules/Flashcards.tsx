@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { cards as mockCards } from "../data";
 import { t, type Lang } from "../i18n";
-import { isTyping } from "../keys";
+import { PER_MODULE_KEYS, isTyping, matchesKey } from "../keys";
 import type { VaultCard } from "../vault/parser";
 import { gradeCard, partitionQueue, type Rating } from "../scheduler";
 
@@ -93,7 +93,7 @@ export default function Flashcards({
   };
 
   const handleRate = (rating: Rating) => {
-    if (!card) return;
+    if (!card || !flip) return;
 
     if (!browseOnly) {
       const { intervalDays } = gradeCard(card.id, rating);
@@ -117,23 +117,18 @@ export default function Flashcards({
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
       if (isTyping()) return;
-      if (e.code === "Space" || e.key === "Enter") {
+      if (matchesKey(e, PER_MODULE_KEYS.flashcards[0])) {
         e.preventDefault();
-        if (!isFinished) setFlip((f) => !f);
-      } else if (flip && !isFinished) {
-        if (e.key === "1") {
-          e.preventDefault();
-          handleRate(1);
-        } else if (e.key === "2") {
-          e.preventDefault();
-          handleRate(2);
-        } else if (e.key === "3") {
-          e.preventDefault();
-          handleRate(3);
-        } else if (e.key === "4") {
-          e.preventDefault();
-          handleRate(4);
-        }
+        if (!isFinished) setFlip((current) => !current);
+        return;
+      }
+      if (!flip || isFinished) return;
+      const ratingIndex = PER_MODULE_KEYS.flashcards
+        .slice(1)
+        .findIndex((binding) => matchesKey(e, binding));
+      if (ratingIndex >= 0) {
+        e.preventDefault();
+        handleRate((ratingIndex + 1) as Rating);
       }
     };
     window.addEventListener("keydown", onKey);
@@ -251,11 +246,13 @@ export default function Flashcards({
                 : "仅浏览模式（不计入排程）"
               : `${tr.dueToday(remainingDue, totalCards)} · ${tr.newCards(session.newCount)}`}
           </span>
-          {transientBadge && (
-            <span className="text-[#4338CA] font-medium bg-[#ECE7DC]/60 px-1.5 py-0.2 rounded-sm transition-opacity duration-300">
-              {transientBadge}
-            </span>
-          )}
+          <span aria-live="polite" aria-atomic="true">
+            {transientBadge && (
+              <span className="text-[#4338CA] font-medium bg-[#ECE7DC]/60 px-1.5 py-0.2 rounded-sm transition-opacity duration-300">
+                {transientBadge}
+              </span>
+            )}
+          </span>
         </div>
       </div>
 
@@ -302,7 +299,9 @@ export default function Flashcards({
             onClick={() => {
               if (!moved.current) setFlip((f) => !f);
             }}
-            className={`card-inner ${flip ? "card-flipped" : ""} relative block h-64 w-full cursor-pointer select-none text-left transition-transform duration-150 active:scale-[0.99]`}
+            aria-pressed={flip}
+            aria-label={flip ? "Antwort verbergen" : "Antwort anzeigen"}
+            className={`card-inner ${flip ? "card-flipped" : ""} relative block h-64 w-full cursor-pointer select-none text-left active:scale-[0.99]`}
           >
             {/* Front: German serif headline */}
             <div className="card-face absolute inset-0 flex flex-col items-center justify-center rounded-sm border border-[#E5E1D8] bg-white p-8">
@@ -334,20 +333,26 @@ export default function Flashcards({
       </div>
 
       {/* Rating actions: unified row of text buttons with hairline dividers */}
-      <div className="flex border border-[#E5E1D8] bg-white rounded-sm divide-x divide-[#E5E1D8]">
-        {labels.map((item) => (
-          <button
-            key={item.key}
-            type="button"
-            title={`Taste ${item.key}`}
-            onClick={() => handleRate(item.rating)}
-            className="flex-1 py-2.5 text-center text-xs font-sans font-medium text-[#1C1B17] hover:text-[#4338CA] hover:bg-[#FAF9F6] active:bg-[#ECE7DC]/60 active:text-[#4338CA] transition-colors"
-          >
-            {item.label}{" "}
-            <span className="ml-1 font-mono text-[10px] text-[#6B675C]">{item.key}</span>
-          </button>
-        ))}
-      </div>
+      {flip ? (
+        <div className="flex border border-[#E5E1D8] bg-white rounded-sm divide-x divide-[#E5E1D8]">
+          {labels.map((item) => (
+            <button
+              key={item.key}
+              type="button"
+              title={`Taste ${item.key}`}
+              onClick={() => handleRate(item.rating)}
+              className="flex-1 py-2.5 text-center text-xs font-sans font-medium text-[#1C1B17] hover:text-[#4338CA] hover:bg-[#FAF9F6] active:bg-[#ECE7DC]/60 active:text-[#4338CA] transition-colors"
+            >
+              {item.label}{" "}
+              <span className="ml-1 font-mono text-[10px] text-[#6B675C]">{item.key}</span>
+            </button>
+          ))}
+        </div>
+      ) : (
+        <p role="status" className="border-y border-[#E5E1D8] py-2.5 text-center text-xs font-sans text-[#6B675C]">
+          {lang === "de" ? "Antwort anzeigen, bevor du bewertest." : "显示答案后再评分。"}
+        </p>
+      )}
       <p className="text-center font-mono text-[11px] text-[#6B675C]">
         Space = umdrehen · 1–4 = bewerten · ziehen = wischen / 空格翻卡 · 数字评分 · 拖拽
       </p>

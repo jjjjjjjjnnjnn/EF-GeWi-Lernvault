@@ -1,13 +1,14 @@
 import { useEffect, useMemo, useRef, useState, type ReactNode } from "react";
 import { t, type Lang } from "./i18n";
 import { notes } from "./data";
-import { isTyping } from "./keys";
+import { GLOBAL_KEYS, MODULE_KEYS, isTyping, matchesKey } from "./keys";
 import { FAECHER } from "./fach";
 import Palette, { type PaletteItem } from "./components/Palette";
 import HelpOverlay from "./components/HelpOverlay";
 import { FeedbackFloat, setFeedbackContext } from "./components/FeedbackBox";
 import { pickVault, type VaultData } from "./vault/loader";
 import { xpStore } from "./engine/stores";
+import { FSRS_STORAGE_KEY, LANG_STORAGE_KEY } from "./engine/storageKeys";
 import Library from "./modules/Library";
 import Home from "./modules/Home";
 import Flashcards from "./modules/Flashcards";
@@ -24,10 +25,12 @@ import Onboarding, { loadOnboarding, saveOnboarding, type OnboardingResult } fro
 
 type Tab = "home" | "library" | "flashcards" | "quiz" | "klausursim" | "tutor" | "planner" | "mindmap" | "reise" | "einstellungen";
 
+const settingsShortcut = MODULE_KEYS.find((binding) => binding.module === "einstellungen")!;
+
 // Tufte Data-Ink: hand-drawn hairline nav icons, no emoji. 16x16, stroke=currentColor.
 const iconProps = {
-  width: 15,
-  height: 15,
+  width: 16,
+  height: 16,
   viewBox: "0 0 16 16",
   fill: "none",
   stroke: "currentColor",
@@ -127,7 +130,7 @@ export default function App() {
   const [lang, setLangState] = useState<Lang>(() => {
     if (typeof window !== "undefined") {
       try {
-        const saved = localStorage.getItem("eflernvault:lang");
+        const saved = localStorage.getItem(LANG_STORAGE_KEY);
         if (saved === "de" || saved === "zh") return saved;
         if ((window.navigator?.language ?? "").toLowerCase().startsWith("zh")) return "zh";
       } catch {
@@ -140,13 +143,17 @@ export default function App() {
     setLangState((prev) => {
       const next = typeof updater === "function" ? (updater as (l: Lang) => Lang)(prev) : updater;
       try {
-        localStorage.setItem("eflernvault:lang", next);
+        localStorage.setItem(LANG_STORAGE_KEY, next);
       } catch {
         // ignorieren
       }
       return next;
     });
   };
+  useEffect(() => {
+    document.documentElement.lang = lang;
+  }, [lang]);
+
   const [obOpen, setObOpen] = useState<boolean>(() => loadOnboarding() === null);
   const [query, setQuery] = useState(() => {
     if (typeof window !== "undefined") {
@@ -166,7 +173,6 @@ export default function App() {
     }
   };
 
-  // Lern-Navigation (9 module, home zuerst); Einstellungen steht getrennt am seitenende (B3: Alt 9).
   const nav: { id: Tab; label: string; icon: ReactNode }[] = [
     { id: "home", label: tr.home, icon: icons.home },
     { id: "library", label: tr.library, icon: icons.library },
@@ -179,7 +185,6 @@ export default function App() {
     { id: "reise", label: tr.reise, icon: icons.reise },
   ];
 
-  const TAB_ORDER: Tab[] = ["home", "library", "flashcards", "quiz", "klausursim", "tutor", "planner", "mindmap", "reise"];
   const [paletteOpen, setPaletteOpen] = useState(false);
   const [helpOpen, setHelpOpen] = useState(false);
   const [sprintOpen, setSprintOpen] = useState(false);
@@ -202,7 +207,11 @@ export default function App() {
       }
       const v = await pickVault();
       setVault(v);
-      setVaultMsg(`${v.rootName}: ${v.notes.length} Notizen · ${v.cards.length} Karten · ${v.reisen.length} Reisen`);
+      setVaultMsg(
+        lang === "de"
+          ? `${v.rootName}: ${v.notes.length} Notizen · ${v.cards.length} Karten · ${v.reisen.length} Reisen`
+          : `${v.rootName}：${v.notes.length} 篇笔记 · ${v.cards.length} 张卡片 · ${v.reisen.length} 条互动旅程`
+      );
       if (v.notes.length > 0) switchTab("library");
     } catch {
       // Picker abgebrochen / 用户取消
@@ -210,7 +219,7 @@ export default function App() {
   };
 
   const exportFsrs = () => {
-    const raw = localStorage.getItem("eflernvault:fsrs:v1") || '{"version":1,"cards":{}}';
+    const raw = localStorage.getItem(FSRS_STORAGE_KEY) || '{"version":1,"cards":{}}';
     const blob = new Blob([raw], { type: "application/json" });
     const url = URL.createObjectURL(blob);
     const a = document.createElement("a");
@@ -243,36 +252,42 @@ export default function App() {
     switchTab("reise");
   };
 
-  // Global keys: Ctrl/⌘K palette · Ctrl/⌘E export · / search · Alt 1-8 module + Alt 9 settings · L language · ? help.
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
-      if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === "k") {
+      const primaryBinding = GLOBAL_KEYS.find(
+        (binding) => binding.match.primary && matchesKey(e, binding, { allowWhileTyping: true })
+      );
+      if (primaryBinding) {
         e.preventDefault();
-        setPaletteOpen((o) => !o);
+        if (primaryBinding.id === "command-palette") setPaletteOpen((open) => !open);
+        if (primaryBinding.id === "export-fsrs") exportFsrs();
         return;
       }
-      if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === "e") {
-        e.preventDefault();
-        exportFsrs();
-        return;
-      }
+
       if (isTyping()) return;
-      if (e.key === "/") {
-        e.preventDefault();
-        if (tab !== "library") switchTab("library");
-        searchRef.current?.focus();
-      } else if (e.key === "?") {
-        setHelpOpen(true);
-      } else if (e.key.toLowerCase() === "l" && !e.altKey && !e.ctrlKey && !e.metaKey) {
-        toggleLang();
-      } else if (e.altKey && ((e.key >= "1" && e.key <= "9") || e.key === "0")) {
-        e.preventDefault();
-        if (e.key === "0") {
-          switchTab("einstellungen");
-        } else {
-          const target = TAB_ORDER[Number(e.key) - 1];
-          if (target) switchTab(target);
+
+      const globalBinding = GLOBAL_KEYS.find((binding) => matchesKey(e, binding));
+      if (globalBinding) {
+        if (globalBinding.id === "search") {
+          e.preventDefault();
+          if (tab !== "library") switchTab("library");
+          window.requestAnimationFrame(() => searchRef.current?.focus());
+        } else if (globalBinding.id === "help") {
+          setHelpOpen(true);
+        } else if (globalBinding.id === "language") {
+          toggleLang();
+        } else if (globalBinding.id === "escape") {
+          if (paletteOpen) setPaletteOpen(false);
+          else if (helpOpen) setHelpOpen(false);
+          else if (sprintOpen) setSprintOpen(false);
         }
+        return;
+      }
+
+      const moduleBinding = MODULE_KEYS.find((binding) => matchesKey(e, binding));
+      if (moduleBinding) {
+        e.preventDefault();
+        switchTab(moduleBinding.module);
       }
     };
     window.addEventListener("keydown", onKey);
@@ -281,13 +296,17 @@ export default function App() {
 
   const paletteItems: PaletteItem[] = useMemo(
     () => [
-      ...nav.map((n, i) => ({
-        id: `tab-${n.id}`,
-        group: lang === "de" ? "Module" : "模块",
-        label: n.label,
-        hint: `Alt ${i + 1}`,
-        run: () => switchTab(n.id),
-      })),
+      ...nav.map((n) => {
+        const binding = MODULE_KEYS.find((candidate) => candidate.module === n.id);
+        return {
+          id: `tab-${n.id}`,
+          shortcutId: binding?.id,
+          group: lang === "de" ? "Module" : "模块",
+          label: n.label,
+          hint: binding?.altHint,
+          run: () => switchTab(n.id),
+        };
+      }),
       ...FAECHER.map((f) => ({
         id: `fach-${f.id}`,
         group: lang === "de" ? "Fächer" : "学科",
@@ -373,9 +392,10 @@ export default function App() {
       },
       {
         id: "act-settings",
+        shortcutId: settingsShortcut.id,
         group: lang === "de" ? "Aktionen" : "操作",
         label: tr.settings,
-        hint: "Alt 9",
+        hint: settingsShortcut.altHint,
         run: () => switchTab("einstellungen"),
       },
     ],
@@ -386,7 +406,7 @@ export default function App() {
   // Erststart: Vollbild-Assistent statt Modul-Chrome (L für Sprache gilt weiter).
   if (obOpen) {
     return (
-      <div className="h-screen overflow-y-auto bg-[#FAFAF7] text-[#1C1B17] antialiased">
+      <div className="h-screen overflow-y-auto bg-[var(--paper)] text-[var(--ink)] antialiased">
         <Onboarding
           lang={lang}
           onLangChange={setLang}
@@ -401,17 +421,20 @@ export default function App() {
   }
 
   return (
-    <div className="flex h-screen bg-[#FAFAF7] text-[#1C1B17] antialiased">
+    <div className="flex h-screen bg-[var(--paper)] text-[var(--ink)] antialiased">
       {/* Sidebar: Quiet archival tone with hairline border */}
-      <aside className="flex w-60 flex-col border-r border-[#E5E1D8] bg-[#F7F5F0] p-5">
-        <div className="mb-8 flex items-center gap-3">
-          <img src="/icon.svg" alt="EF-Lernvault Icon" className="h-8 w-8 shrink-0 rounded-sm" />
-          <div>
-            <div className="font-serif text-base font-semibold tracking-tight text-[#1C1B17]">
+      <aside className="flex w-16 shrink-0 flex-col border-r border-[var(--line)] bg-[var(--paper-subtle)] p-2 xl:w-60 xl:p-5">
+        <div className="mb-8 flex items-center justify-center gap-3 xl:justify-start">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" className="shrink-0 text-[var(--accent)]">
+            <path d="M2.5 3.2c1.8-.7 3.6-.7 5.5.4v9.2c-1.9-1.1-3.7-1.1-5.5-.4z" />
+            <path d="M13.5 3.2c-1.8-.7-3.6-.7-5.5.4v9.2c1.9-1.1 3.7-1.1 5.5-.4z" />
+          </svg>
+          <div className="hidden xl:block">
+            <div className="de-heading text-base tracking-tight text-[var(--ink)]">
               EF-Lernvault
             </div>
-            <div className="text-[11px] text-[#6B675C] font-sans tracking-wide">
-              Gymnasium Lernstudio · EF
+            <div className="font-sans text-[var(--text-meta)] tracking-wide text-[var(--gray)]">
+              Gymnasium Lernstudio · EF / 文理中学学习工作室
             </div>
           </div>
         </div>
@@ -423,90 +446,128 @@ export default function App() {
               <button
                 key={n.id}
                 onClick={() => switchTab(n.id)}
-                className={`flex items-center gap-2.5 px-3 py-2 text-left text-sm transition-all duration-150 rounded-sm active:scale-[0.98] focus-visible:outline focus-visible:outline-1 focus-visible:outline-[#4338CA] ${
+                aria-current={isActive ? "page" : undefined}
+                aria-label={n.label}
+                title={n.label}
+                className={`flex items-center justify-center gap-2.5 px-2 py-2 text-left text-sm transition-colors duration-[var(--dur-normal)] rounded-[var(--radius)] active:scale-[0.98] xl:justify-start xl:px-3 ${
                   isActive
-                    ? "font-medium text-[#4338CA] bg-[#ECE7DC]/60 border-l-2 border-[#4338CA]"
-                    : "text-[#6B675C] hover:text-[#1C1B17] hover:bg-[#ECE7DC]/30 active:bg-[#ECE7DC]/60 border-l-2 border-transparent"
+                    ? "font-medium text-[var(--accent)] bg-[var(--paper-subtle)]/60 border-l-2 border-[var(--accent)]"
+                    : "text-[var(--gray)] hover:text-[var(--ink)] hover:bg-[var(--paper-subtle)]/30 active:bg-[var(--paper-subtle)]/60 border-l-2 border-transparent"
                 }`}
               >
                 <span className="shrink-0 select-none">{n.icon}</span>
-                <span className="font-sans">{n.label}</span>
+                <span className="hidden font-sans xl:inline">{n.label}</span>
               </button>
             );
           })}
         </nav>
 
-        {/* Einstellungen: getrennt am seitenende, ausserhalb der lern-navigation (B3: Alt 0) */}
-        <div className="mt-4 border-t border-[#E5E1D8] pt-3">
+        <div className="mt-4 border-t border-[var(--line)] pt-3">
           <button
             onClick={() => switchTab("einstellungen")}
-            title={`${tr.settings} (Alt 0)`}
-            className={`flex w-full items-center gap-2.5 px-3 py-2 text-left text-sm transition-all duration-150 rounded-sm active:scale-[0.98] focus-visible:outline focus-visible:outline-1 focus-visible:outline-[#4338CA] ${
+            aria-current={tab === "einstellungen" ? "page" : undefined}
+            aria-label={tr.settings}
+            title={`${tr.settings} (${settingsShortcut.altHint})`}
+            className={`flex w-full items-center justify-center gap-2.5 px-2 py-2 text-left text-sm transition-colors duration-[var(--dur-normal)] rounded-[var(--radius)] active:scale-[0.98] xl:justify-start xl:px-3 ${
               tab === "einstellungen"
-                ? "font-medium text-[#4338CA] bg-[#ECE7DC]/60 border-l-2 border-[#4338CA]"
-                : "text-[#6B675C] hover:text-[#1C1B17] hover:bg-[#ECE7DC]/30 active:bg-[#ECE7DC]/60 border-l-2 border-transparent"
+                ? "font-medium text-[var(--accent)] bg-[var(--paper-subtle)]/60 border-l-2 border-[var(--accent)]"
+                : "text-[var(--gray)] hover:text-[var(--ink)] hover:bg-[var(--paper-subtle)]/30 active:bg-[var(--paper-subtle)]/60 border-l-2 border-transparent"
             }`}
           >
             <span className="shrink-0 select-none">{icons.einstellungen}</span>
-            <span className="font-sans">{tr.settings}</span>
-            <kbd className="ml-auto font-mono text-[10px] text-[#6B675C]">Alt 0</kbd>
+            <span className="hidden font-sans xl:inline">{tr.settings}</span>
+            <kbd className="ml-auto hidden font-mono text-[var(--text-meta)] text-[var(--gray)] xl:inline">{settingsShortcut.altHint}</kbd>
           </button>
         </div>
 
-        <div className="mt-auto pt-4 border-t border-[#E5E1D8] text-[11px] font-mono text-[#6B675C] leading-relaxed">
+        <div className="mt-auto hidden pt-4 border-t border-[var(--line)] text-[var(--text-meta)] font-mono text-[var(--gray)] leading-relaxed xl:block">
           v0.2.0-curriculum
           <br />
-          lokal · offline-fähig
+          lokal · offline-fähig / 本地 · 可离线
           <br />
-          Strg K · ? Tastatur
+          Strg K · ? Tastatur / 快捷键
         </div>
       </aside>
 
       {/* Main Workspace */}
-      <main className="flex flex-1 flex-col overflow-hidden bg-[#FAFAF7]">
+      <main className="flex min-w-0 flex-1 flex-col overflow-hidden bg-[var(--paper)]">
         {/* Top bar with hairline divider */}
-        <header className="flex h-14 items-center justify-between gap-4 border-b border-[#E5E1D8] bg-[#FAFAF7] px-6">
-          <div className="flex flex-1 items-center max-w-lg">
+        <header className="flex min-h-14 flex-wrap items-center justify-between gap-3 border-b border-[var(--line)] bg-[var(--paper)] px-4 py-2 sm:px-6">
+          <div className="flex min-w-64 flex-1 items-center max-w-lg">
             <input
               ref={searchRef}
               value={query}
               onChange={(e) => setQuery(e.target.value)}
               placeholder={tr.search}
               title="/"
-              className="w-full rounded-sm border border-[#E5E1D8] bg-white px-3 py-1.5 text-sm text-[#1C1B17] placeholder:text-[#6B675C] focus:border-[#4338CA] focus:outline-none transition-colors font-sans"
+              className="w-full rounded-[var(--radius)] border border-[var(--line)] bg-[var(--surface)] px-3 py-1.5 font-sans text-sm text-[var(--ink)] placeholder:text-[var(--gray)] focus:border-[var(--accent)]"
             />
           </div>
 
-          <div className="flex items-center gap-3">
-            <button
-              onClick={() => setSprintOpen(true)}
-              className="flex items-center gap-1.5 px-3 py-1.5 rounded text-xs font-mono border border-stone-300 dark:border-stone-700 bg-[#ECE7DC]/40 hover:bg-[#ECE7DC] text-[#1C1B17] transition-colors"
+          <div className="flex flex-wrap items-center justify-end gap-3">
+            <div
+              role="group"
+              aria-label={tr.languageSwitchLabel}
+              className="flex items-center rounded-full border border-[var(--line)] bg-[var(--surface)] p-0.5"
             >
-              <span>⚡</span>
+              <button
+                type="button"
+                onClick={() => setLang("de")}
+                aria-label={tr.languageGermanLabel}
+                aria-pressed={lang === "de"}
+                title={tr.languageGermanLabel}
+                className={`rounded-full px-2 py-1 font-mono text-[var(--text-meta)] ${
+                  lang === "de" ? "bg-[var(--accent)] text-white" : "text-[var(--gray)] hover:text-[var(--ink)]"
+                }`}
+              >
+                DE
+              </button>
+              <button
+                type="button"
+                onClick={() => setLang("zh")}
+                aria-label={tr.languageChineseLabel}
+                aria-pressed={lang === "zh"}
+                title={tr.languageChineseLabel}
+                className={`rounded-full px-2 py-1 font-sans text-[var(--text-meta)] ${
+                  lang === "zh" ? "bg-[var(--accent)] text-white" : "text-[var(--gray)] hover:text-[var(--ink)]"
+                }`}
+              >
+                中文
+              </button>
+            </div>
+            <button
+              type="button"
+              onClick={() => setSprintOpen(true)}
+              className="flex items-center gap-1.5 rounded-[var(--radius)] border border-[var(--line)] bg-[var(--surface)] px-3 py-1.5 font-mono text-xs text-[var(--ink)] transition-colors hover:bg-[var(--paper-subtle)]"
+            >
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                <path d="M8 2.5v3M8 10.5v3M2.5 8h3M10.5 8h3" />
+                <circle cx="8" cy="8" r="3.2" />
+              </svg>
               <span>{tr.dailySprint}</span>
               {getStudyStreak().currentStreak > 0 && (
-                <span className="ml-1 px-1.5 py-0.2 bg-amber-200 text-amber-900 rounded-full text-[10px]">
+                <span className="ml-1 rounded-[var(--radius)] border border-[var(--success)] px-1.5 py-0.5 text-[var(--text-meta)] text-[var(--success)]">
                   {getStudyStreak().currentStreak}d
                 </span>
               )}
             </button>
             {vaultMsg && (
-              <span className="hidden font-mono text-[11px] text-[#6B675C] lg:block">{vaultMsg}</span>
+              <span className="hidden font-mono text-[var(--text-meta)] text-[var(--gray)] lg:block">{vaultMsg}</span>
             )}
-            {/* Einstellungen lebt am seitenende (sidebar unten, Alt 8) — topbar bleibt suche + status. */}
           </div>
         </header>
 
         {/* Content Viewport */}
-        <div key={tab} className="tab-enter flex-1 overflow-y-auto p-8">
+        <div key={tab} className="tab-enter min-w-0 flex-1 overflow-y-auto p-4 sm:p-6 xl:p-8">
           {tab === "home" && <Home lang={lang} cards={vault?.cards ?? null} onJumpToLibrary={jumpToLibrary} />}
-          {tab === "library" && <Library query={query} vault={vault?.notes ?? null} selectedFach={selectedFach} onClearQuery={() => setQuery("")} />}
+          {tab === "library" && <Library query={query} vault={vault?.notes ?? null} selectedFach={selectedFach} onClearQuery={() => setQuery("")} onSubjectChange={setSelectedFach} />}
           {tab === "flashcards" && <Flashcards lang={lang} vault={vault?.cards ?? null} />}
           {tab === "quiz" && <Quiz lang={lang} vault={vault?.notes ?? null} cards={vault?.cards ?? null} onJumpToLibrary={jumpToLibrary} />}
           {tab === "klausursim" && (
             <KlausurSim
               notes={vault?.notes ?? []}
-              currentFach={selectedFach === "alle" ? "SoWi" : selectedFach}
+              currentFach={selectedFach === "alle" ? undefined : selectedFach}
+              onSubjectChange={setSelectedFach}
             />
           )}
           {tab === "tutor" && (
@@ -539,6 +600,7 @@ export default function App() {
       <HelpOverlay open={helpOpen} onClose={() => setHelpOpen(false)} lang={lang} />
       <DailySprintModal
         isOpen={sprintOpen}
+        lang={lang}
         onClose={() => setSprintOpen(false)}
         cards={vault?.cards ?? []}
         notes={vault?.notes ?? []}

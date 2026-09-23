@@ -1,378 +1,674 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect, useMemo, useState } from "react";
+import type { CSSProperties } from "react";
 import type { VaultNote } from "../vault/parser";
-import type { KlausurExam, KlausurGradingResult } from "../types/klausur";
-import { extractKlausurFromNote, evaluateKlausurLocally } from "../engine/klausurExtractor";
 import { MasteryEngine } from "../engine/mastery";
 import { MasteryRadar } from "../components/MasteryRadar";
+import {
+  EXAM_SUBJECT_ORDER,
+  composeExamVariants,
+  getActiveTaskIds,
+  getExamAfbPointTotals,
+  getExamMaxPoints,
+  gradeComposedExam,
+  normalizeExamSubject,
+  type ComposedExam,
+  type ComposedExamGrade,
+  type ComposedExamTask,
+  type ExamCourseType,
+  type ExamOptionSelections,
+  type MathToolset,
+} from "../engine/examComposer";
 
-interface KlausurSimProps {
+export interface KlausurSimProps {
   notes: VaultNote[];
-  currentFach: string;
+  currentFach?: string;
+  onSubjectChange?: (fach: string) => void;
 }
 
-export const KlausurSim: React.FC<KlausurSimProps> = ({ notes, currentFach }) => {
-  const [selectedNotePath, setSelectedNotePath] = useState<string>("");
-  const [exam, setExam] = useState<KlausurExam | null>(null);
-  const [activeStep, setActiveStep] = useState<0 | 1 | 2>(0);
-  const [answers, setAnswers] = useState<[string, string, string]>(["", "", ""]);
-  const [secondsRemaining, setSecondsRemaining] = useState<number>(45 * 60);
-  const [isTimerRunning, setIsTimerRunning] = useState<boolean>(false);
-  const [gradingResult, setGradingResult] = useState<KlausurGradingResult | null>(null);
-  const [copiedPatch, setCopiedPatch] = useState<boolean>(false);
-  const [masterySaved, setMasterySaved] = useState<boolean>(false);
-  const [showRadar, setShowRadar] = useState<boolean>(false);
+const PRACTICE_MINUTES = 45;
 
-  // 筛选属于当前学科的有效笔记
-  const fachNotes = notes.filter(
-    (n) => n.fach.toLowerCase() === currentFach.toLowerCase() && n.blocks.length > 0
+const pageStyle: CSSProperties = {
+  color: "var(--ink)",
+  background: "var(--paper)",
+  borderColor: "var(--line, var(--hairline))",
+};
+
+const panelStyle: CSSProperties = {
+  color: "var(--ink)",
+  background: "var(--paper-subtle)",
+  border: "1px solid var(--line, var(--hairline))",
+  borderRadius: 2,
+};
+
+const paperPanelStyle: CSSProperties = {
+  color: "var(--ink)",
+  background: "var(--paper)",
+  border: "1px solid var(--line, var(--hairline))",
+  borderRadius: 2,
+};
+
+const controlStyle: CSSProperties = {
+  color: "var(--ink)",
+  background: "var(--paper)",
+  border: "1px solid var(--line, var(--hairline))",
+  borderRadius: 2,
+  minHeight: 32,
+  padding: "4px 8px",
+};
+
+const buttonStyle: CSSProperties = {
+  color: "var(--ink)",
+  background: "var(--paper)",
+  border: "1px solid var(--line, var(--hairline))",
+  borderRadius: 2,
+  padding: "5px 10px",
+  cursor: "pointer",
+};
+
+const primaryButtonStyle: CSSProperties = {
+  ...buttonStyle,
+  color: "var(--paper)",
+  background: "var(--accent)",
+  borderColor: "var(--accent)",
+};
+
+const mutedStyle: CSSProperties = {
+  color: "var(--gray, var(--ink-secondary))",
+};
+
+function formatTimer(seconds: number): string {
+  const safeSeconds = Math.max(0, Math.floor(seconds));
+  const hours = Math.floor(safeSeconds / 3600);
+  const minutes = Math.floor((safeSeconds % 3600) / 60);
+  const rest = safeSeconds % 60;
+  return [hours, minutes, rest]
+    .map((part) => part.toString().padStart(2, "0"))
+    .join(":");
+}
+
+function formatMinutes(minutes: number | null): string {
+  if (minutes === null) return "nicht vorgesehen";
+  const hours = Math.floor(minutes / 60);
+  const rest = minutes % 60;
+  return hours > 0 ? `${hours} Std. ${rest} Min.` : `${rest} Min.`;
+}
+
+function orderSubjects(subjects: readonly string[]): string[] {
+  const unique = Array.from(new Set(subjects.filter(Boolean)));
+  const known = EXAM_SUBJECT_ORDER.filter((subject) => unique.includes(subject));
+  const additional = unique
+    .filter((subject) => !EXAM_SUBJECT_ORDER.includes(subject as (typeof EXAM_SUBJECT_ORDER)[number]))
+    .sort((a, b) => a.localeCompare(b, "de"));
+  return [...known, ...additional];
+}
+
+function defaultSelections(exam: ComposedExam): ExamOptionSelections {
+  return Object.fromEntries(
+    Object.entries(exam.defaultOptionSelections).map(([groupId, taskIds]) => [groupId, [...taskIds]])
+  );
+}
+
+export const KlausurSim: React.FC<KlausurSimProps> = ({
+  notes,
+  currentFach,
+  onSubjectChange,
+}) => {
+  const availableSubjects = useMemo(
+    () => orderSubjects(notes.map((note) => note.fach)),
+    [notes]
+  );
+  const initialSubject =
+    currentFach && currentFach !== "alle" && availableSubjects.includes(currentFach)
+      ? currentFach
+      : availableSubjects[0] ?? "Deutsch";
+  const [subject, setSubject] = useState(initialSubject);
+  const [courseType, setCourseType] = useState<ExamCourseType>("LK");
+  const [mathToolset, setMathToolset] = useState<MathToolset>("WTR");
+  const [compositionMode, setCompositionMode] = useState<"auto" | "variant">("auto");
+  const [variantIndex, setVariantIndex] = useState(0);
+  const [composeNonce, setComposeNonce] = useState(0);
+  const [exam, setExam] = useState<ComposedExam | null>(null);
+  const [optionSelections, setOptionSelections] = useState<ExamOptionSelections>({});
+  const [answers, setAnswers] = useState<Record<string, string>>({});
+  const [gradingResult, setGradingResult] = useState<ComposedExamGrade | null>(null);
+  const [timerMode, setTimerMode] = useState<"practice" | "official">("practice");
+  const [secondsRemaining, setSecondsRemaining] = useState(PRACTICE_MINUTES * 60);
+  const [deadline, setDeadline] = useState<number | null>(null);
+  const [timerExpired, setTimerExpired] = useState(false);
+  const [showRadar, setShowRadar] = useState(false);
+  const [radarVersion, setRadarVersion] = useState(0);
+  const [masterySaved, setMasterySaved] = useState(false);
+  const [copiedPatch, setCopiedPatch] = useState(false);
+  const masteryEngine = useMemo(() => new MasteryEngine(), []);
+
+  const subjectNotes = useMemo(
+    () =>
+      notes.filter((note) => {
+        const normalizedNote = normalizeExamSubject(note.fach) ?? note.fach;
+        const normalizedSubject = normalizeExamSubject(subject) ?? subject;
+        return normalizedNote === normalizedSubject;
+      }),
+    [notes, subject]
   );
 
-  // 默认加载首篇笔记
   useEffect(() => {
-    if (fachNotes.length > 0 && !selectedNotePath) {
-      setSelectedNotePath(fachNotes[0].path);
-    }
-  }, [fachNotes, selectedNotePath]);
-
-  // 当选择笔记改变时，算法动态提取考卷
-  useEffect(() => {
-    if (!selectedNotePath) {
-      setExam(null);
+    if (currentFach && currentFach !== "alle" && availableSubjects.includes(currentFach)) {
+      setSubject(currentFach);
       return;
     }
-    const note = notes.find((n) => n.path === selectedNotePath);
-    if (!note) return;
+    const fallbackSubject = availableSubjects[0];
+    setSubject((current) =>
+      availableSubjects.includes(current) ? current : fallbackSubject ?? current
+    );
+    if (
+      currentFach &&
+      currentFach !== "alle" &&
+      fallbackSubject &&
+      currentFach !== fallbackSubject
+    ) {
+      onSubjectChange?.(fallbackSubject);
+    }
+  }, [availableSubjects, currentFach, onSubjectChange]);
 
-    // 重构原文纯文本供抽取
-    const content = note.blocks.map((b) => b.text).join("\n");
-    const extracted = extractKlausurFromNote({
-      path: note.path,
-      fach: note.fach,
-      thema: note.thema,
-      content,
-      operatoren: note.operatoren,
-      klausurrelevant: note.klausurrelevant,
-    });
-    setExam(extracted);
-    setAnswers(["", "", ""]);
-    setActiveStep(0);
+  const composition = useMemo(() => {
+    if (subjectNotes.length === 0) {
+      return { exams: [] as ComposedExam[], error: null as string | null };
+    }
+    try {
+      return {
+        exams: composeExamVariants(subjectNotes, subject, courseType, 3, {
+          seed: (2026 + composeNonce * 1009) >>> 0,
+          masteryLookup: (topicId) => masteryEngine.getTopicMastery(topicId),
+          weakTopicBoost: 3,
+          mathToolset,
+        }),
+        error: null,
+      };
+    } catch (error) {
+      return {
+        exams: [] as ComposedExam[],
+        error: error instanceof Error ? error.message : "Die Prüfung konnte nicht zusammengestellt werden.",
+      };
+    }
+  }, [composeNonce, courseType, masteryEngine, mathToolset, subject, subjectNotes]);
+
+  useEffect(() => {
+    if (variantIndex >= composition.exams.length) setVariantIndex(0);
+  }, [composition.exams.length, variantIndex]);
+
+  const activeVariantIndex = Math.min(
+    variantIndex,
+    Math.max(0, composition.exams.length - 1)
+  );
+  const activeExam = composition.exams[activeVariantIndex] ?? null;
+
+  useEffect(() => {
+    setExam(activeExam);
+    if (!activeExam) {
+      setOptionSelections({});
+      setAnswers({});
+      setGradingResult(null);
+      return;
+    }
+    setOptionSelections(defaultSelections(activeExam));
+    setAnswers({});
     setGradingResult(null);
     setMasterySaved(false);
     setCopiedPatch(false);
-    setSecondsRemaining(extracted.recommendedMinutes * 60);
-    setIsTimerRunning(false);
-  }, [selectedNotePath, notes]);
+  }, [activeExam]);
 
-  // 考场倒计时
+  const officialMinutes = activeExam?.officialWorkingTimeMinutes ?? null;
+  const effectiveMinutes = timerMode === "practice" ? PRACTICE_MINUTES : officialMinutes;
+
   useEffect(() => {
-    if (!isTimerRunning) return;
-    const timer = setInterval(() => {
-      setSecondsRemaining((sec) => {
-        if (sec <= 1) {
-          clearInterval(timer);
-          setIsTimerRunning(false);
-          return 0;
-        }
-        return sec - 1;
-      });
-    }, 1000);
-    return () => clearInterval(timer);
-  }, [isTimerRunning]);
+    if (timerMode === "official" && officialMinutes === null) setTimerMode("practice");
+  }, [officialMinutes, timerMode]);
 
-  const formatTimer = (sec: number) => {
-    const m = Math.floor(sec / 60);
-    const s = sec % 60;
-    return `${m.toString().padStart(2, "0")}:${s.toString().padStart(2, "0")}`;
+  useEffect(() => {
+    const seconds = (effectiveMinutes ?? 0) * 60;
+    setSecondsRemaining(seconds);
+    setDeadline(null);
+    setTimerExpired(false);
+  }, [effectiveMinutes, exam?.id]);
+
+  useEffect(() => {
+    if (deadline === null) return;
+    const update = () => {
+      const remaining = Math.max(0, Math.ceil((deadline - Date.now()) / 1000));
+      setSecondsRemaining(remaining);
+      if (remaining === 0) {
+        setDeadline(null);
+        setTimerExpired(true);
+      }
+    };
+    update();
+    const interval = window.setInterval(update, 250);
+    return () => window.clearInterval(interval);
+  }, [deadline]);
+
+  const activeTaskIds = exam ? getActiveTaskIds(exam, optionSelections) : [];
+  const activeTaskIdSet = new Set(activeTaskIds);
+  const activeTasks = exam?.tasks.filter((task) => activeTaskIdSet.has(task.id)) ?? [];
+  const totalPoints = exam ? getExamMaxPoints(exam, optionSelections) : 0;
+  const afbTotals = exam
+    ? getExamAfbPointTotals(exam, optionSelections)
+    : { "AFB I": 0, "AFB II": 0, "AFB III": 0 };
+
+  const handleSubjectChange = (nextSubject: string) => {
+    setSubject(nextSubject);
+    setVariantIndex(0);
+    setCompositionMode("auto");
+    setComposeNonce((value) => value + 1);
+    setTimerMode("practice");
+    onSubjectChange?.(nextSubject);
   };
 
-  const handleAnswerChange = (text: string) => {
-    const updated = [...answers] as [string, string, string];
-    updated[activeStep] = text;
-    setAnswers(updated);
+  const handleCourseChange = (nextCourse: ExamCourseType) => {
+    setCourseType(nextCourse);
+    setVariantIndex(0);
+    setComposeNonce((value) => value + 1);
   };
 
-  const handleSubmitExam = () => {
+  const handleRecompose = () => {
+    setComposeNonce((value) => value + 1);
+    setVariantIndex(0);
+    setCompositionMode("auto");
+  };
+
+  const handleTimerToggle = () => {
+    setGradingResult(null);
+    if (deadline !== null) {
+      setDeadline(null);
+      return;
+    }
+    const startingSeconds = secondsRemaining > 0
+      ? secondsRemaining
+      : (effectiveMinutes ?? PRACTICE_MINUTES) * 60;
+    setSecondsRemaining(startingSeconds);
+    setTimerExpired(false);
+    setDeadline(Date.now() + startingSeconds * 1000);
+  };
+
+  const handleAnswerChange = (taskId: string, value: string) => {
+    setAnswers((current) => ({ ...current, [taskId]: value }));
+  };
+
+  const handleOptionChange = (groupId: string, taskId: string) => {
     if (!exam) return;
-    setIsTimerRunning(false);
-    const result = evaluateKlausurLocally(exam, answers);
-    setGradingResult(result);
+    const group = exam.optionGroups.find((item) => item.id === groupId);
+    if (!group) return;
+    const current = optionSelections[groupId] ?? exam.defaultOptionSelections[groupId] ?? [];
+    let next: string[];
+    if (group.choose === 1) {
+      next = [taskId];
+    } else if (current.includes(taskId)) {
+      next = [...current];
+    } else if (current.length < group.choose) {
+      next = [...current, taskId];
+    } else {
+      next = [current[0], taskId];
+    }
+    setOptionSelections((selections) => ({ ...selections, [groupId]: next }));
+    setGradingResult(null);
+  };
+
+  const handleSubmit = () => {
+    if (!exam) return;
+    setDeadline(null);
+    setGradingResult(gradeComposedExam(exam, answers, optionSelections));
   };
 
   const handleRecordToMastery = () => {
     if (!exam || !gradingResult) return;
-    const engine = new MasteryEngine();
-    // 达到 4+ (50%+) 及以上即视为该考点通过本次考核
-    const isPassing = gradingResult.percentage >= 50;
-    engine.recordAttempt(
-      exam.sourceNotePath,
-      exam.thema,
-      exam.fach,
-      isPassing,
-      [exam.fach]
-    );
+    const outcomes = new Map<string, { note: VaultNote | undefined; passed: boolean }>();
+    for (const task of activeTasks) {
+      const taskGrade = gradingResult.taskGrades.find((item) => item.taskId === task.id);
+      const passed = taskGrade ? taskGrade.points / Math.max(1, taskGrade.maxPoints) >= 0.5 : false;
+      const note = subjectNotes.find((item) => item.path === task.sourceNotePaths[0]);
+      for (const topicId of task.topicIds) {
+        const current = outcomes.get(topicId);
+        outcomes.set(topicId, { note: note ?? current?.note, passed: passed || Boolean(current?.passed) });
+      }
+    }
+    for (const [topicId, outcome] of outcomes) {
+      masteryEngine.recordAttempt(
+        topicId,
+        outcome.note?.thema ?? exam.subject,
+        exam.subject,
+        outcome.passed,
+        [exam.subject, ...(outcome.note?.tags ?? [])]
+      );
+    }
     setMasterySaved(true);
+    setRadarVersion((version) => version + 1);
   };
 
-  const handleCopyFehlerlogPatch = () => {
-    if (!gradingResult) return;
-    const patch = gradingResult.fehlerlogPatch.join("\n");
-    navigator.clipboard.writeText(patch);
-    setCopiedPatch(true);
-    setTimeout(() => setCopiedPatch(false), 2500);
+  const handleCopyPatch = () => {
+    if (!gradingResult || !exam) return;
+    const patch = gradingResult.taskGrades
+      .flatMap((taskGrade) => {
+        const task = exam.tasks.find((item) => item.id === taskGrade.taskId);
+        return taskGrade.missingCriteriaDE.map(
+          (criterion) => `- [ ] ${task?.sourceNotePaths[0] ?? exam.subject} (${task?.code ?? taskGrade.taskId}): ${criterion}`
+        );
+      })
+      .join("\n");
+    if (!navigator.clipboard) return;
+    void navigator.clipboard.writeText(patch).then(() => {
+      setCopiedPatch(true);
+      window.setTimeout(() => setCopiedPatch(false), 2500);
+    });
   };
 
-  if (fachNotes.length === 0) {
+  if (availableSubjects.length === 0) {
     return (
-      <div className="p-6 text-center text-stone-500 font-mono text-sm">
-        Keine Klausur-Notizen für das Fach {currentFach} vorhanden. Bitte wählen Sie ein anderes Fach.
+      <div className="font-sans p-8 text-center" style={panelStyle}>
+        <p>Für die Vollsimulation werden Lernnotizen mit Fachzuordnung benötigt.</p>
       </div>
     );
   }
 
   return (
-    <div className="space-y-4 max-w-5xl mx-auto p-2 font-sans text-stone-800 dark:text-stone-200">
-      {/* 顶部控制栏与考卷选择 */}
-      <div className="flex flex-wrap items-center justify-between gap-3 border-b border-stone-200 dark:border-stone-800 pb-3">
-        <div className="flex items-center gap-3">
-          <label className="font-serif font-semibold text-sm">Fallstudie / Thema:</label>
-          <select
-            value={selectedNotePath}
-            onChange={(e) => setSelectedNotePath(e.target.value)}
-            className="border border-stone-300 dark:border-stone-700 bg-white dark:bg-stone-900 px-2 py-1 rounded text-xs"
-          >
-            {fachNotes.map((n) => (
-              <option key={n.path} value={n.path}>
-                {n.thema} ({n.path.split("/").pop()})
-              </option>
-            ))}
-          </select>
-        </div>
-
-        <div className="flex items-center gap-3">
-          {/* 倒计时器 */}
-          <div className="flex items-center gap-1.5 font-mono text-xs border border-stone-300 dark:border-stone-700 px-2 py-1 rounded bg-stone-100 dark:bg-stone-800">
-            <span className="text-stone-500">Zeit:</span>
-            <span className={secondsRemaining < 300 ? "text-red-600 font-bold" : "text-stone-800 dark:text-stone-100"}>
-              {formatTimer(secondsRemaining)}
-            </span>
-            <button
-              onClick={() => setIsTimerRunning(!isTimerRunning)}
-              className="ml-1 text-[10px] text-stone-600 dark:text-stone-400 hover:text-stone-900"
-            >
-              {isTimerRunning ? "Pause" : "Start"}
-            </button>
+    <div className="max-w-6xl mx-auto p-2 font-sans space-y-4" style={pageStyle}>
+      <section className="p-4 space-y-4" style={panelStyle}>
+        <div className="flex flex-wrap items-start justify-between gap-3">
+          <div>
+            <h1 className="font-serif text-xl font-semibold">Vollsimulationsprüfung</h1>
+            <p className="text-xs mt-1" style={mutedStyle}>
+              Selbst zusammengestellte Übungsaufgaben aus {subjectNotes.length} Lernnotizen. Die ausgewiesenen Indikatoren bleiben für diese Übung fix.
+            </p>
           </div>
-
-          <button
-            onClick={() => setShowRadar(!showRadar)}
-            className="px-2 py-1 border border-stone-300 dark:border-stone-700 rounded text-xs hover:bg-stone-100 dark:hover:bg-stone-800"
-          >
-            {showRadar ? "Radar verbergen" : "Kompetenz-Radar"}
+          <button type="button" style={buttonStyle} onClick={() => setShowRadar((value) => !value)}>
+            {showRadar ? "Kompetenz-Radar ausblenden" : "Kompetenz-Radar anzeigen"}
           </button>
         </div>
-      </div>
 
-      {/* 可折叠考纲掌握度雷达 */}
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-3">
+          <label className="text-xs space-y-1">
+            <span className="block">Fach</span>
+            <select
+              className="w-full font-sans text-sm"
+              style={controlStyle}
+              value={subject}
+              onChange={(event) => handleSubjectChange(event.target.value)}
+            >
+              {availableSubjects.map((item) => (
+                <option key={item} value={item}>{item}</option>
+              ))}
+            </select>
+          </label>
+          <label className="text-xs space-y-1">
+            <span className="block">Kursform</span>
+            <select
+              className="w-full font-sans text-sm"
+              style={controlStyle}
+              value={courseType}
+              onChange={(event) => handleCourseChange(event.target.value as ExamCourseType)}
+            >
+              <option value="GK">Grundkurs (GK)</option>
+              <option value="LK">Leistungskurs (LK)</option>
+            </select>
+          </label>
+          {subject === "Mathe" && (
+            <label className="text-xs space-y-1">
+              <span className="block">Teil-2-System</span>
+              <select
+                className="w-full font-sans text-sm"
+                style={controlStyle}
+                value={mathToolset}
+                onChange={(event) => {
+                  setMathToolset(event.target.value as MathToolset);
+                  setComposeNonce((value) => value + 1);
+                  setVariantIndex(0);
+                }}
+              >
+                <option value="WTR">WTR</option>
+                <option value="CAS">CAS/MMS</option>
+              </select>
+            </label>
+          )}
+          <label className="text-xs space-y-1">
+            <span className="block">Zusammenstellung</span>
+            <select
+              className="w-full font-sans text-sm"
+              style={controlStyle}
+              value={compositionMode}
+              onChange={(event) => setCompositionMode(event.target.value as "auto" | "variant")}
+            >
+              <option value="auto">Automatisch nach BKT-Schwäche</option>
+              <option value="variant">Variante auswählen</option>
+            </select>
+          </label>
+        </div>
+
+        <div className="flex flex-wrap items-end gap-3">
+          {compositionMode === "variant" && composition.exams.length > 0 && (
+            <label className="text-xs space-y-1">
+              <span className="block">Variante</span>
+              <select
+                className="font-sans text-sm"
+                style={controlStyle}
+                value={activeVariantIndex}
+                onChange={(event) => setVariantIndex(Number(event.target.value))}
+              >
+                {composition.exams.map((item, index) => (
+                  <option key={item.id} value={index}>Variante {index + 1}</option>
+                ))}
+              </select>
+            </label>
+          )}
+          <button type="button" style={buttonStyle} onClick={handleRecompose}>
+            Neu automatisch komponieren
+          </button>
+          <div className="text-xs" style={mutedStyle}>
+            Amtliche Arbeitszeit: {formatMinutes(officialMinutes)}
+          </div>
+        </div>
+      </section>
+
       {showRadar && (
-        <div className="mb-4">
-          <MasteryRadar fach={currentFach} />
+        <MasteryRadar key={`${subject}-${radarVersion}`} fach={subject} />
+      )}
+
+      {composition.error && (
+        <div className="p-4 text-sm" style={paperPanelStyle}>
+          {composition.error}
         </div>
       )}
 
       {exam && (
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          {/* 左栏：Textgrundlage / Material */}
-          <div className="border border-stone-300 dark:border-stone-700 bg-stone-50 dark:bg-stone-900/50 p-4 rounded text-xs space-y-3">
-            <div className="border-b border-stone-200 dark:border-stone-800 pb-2">
-              <span className="text-[10px] font-mono text-stone-500 uppercase tracking-wider block">
-                {exam.material.authorOrSource}
-              </span>
-              <h2 className="font-serif font-semibold text-sm text-stone-900 dark:text-stone-100">
-                {exam.material.title}
-              </h2>
+        <>
+          <section className="p-4 space-y-3" style={panelStyle}>
+            <div className="flex flex-wrap items-center justify-between gap-3">
+              <div>
+                <h2 className="font-serif text-lg font-semibold">
+                  {exam.subject} · {courseType === "LK" ? "Leistungskurs" : "Grundkurs"}
+                </h2>
+                <p className="text-xs mt-1" style={mutedStyle}>
+                  {timerMode === "practice"
+                    ? `Praxismodus: ${PRACTICE_MINUTES} Minuten, nicht die reale Prüfungszeit.`
+                    : `Prüfungsmodus: ${formatMinutes(officialMinutes)} gemäß NRW 2026.`}
+                </p>
+              </div>
+              <div className="flex flex-wrap items-center gap-2">
+                <select
+                  aria-label="Zeitmodus"
+                  className="font-sans text-xs"
+                  style={controlStyle}
+                  value={timerMode}
+                  onChange={(event) => {
+                    setTimerMode(event.target.value as "practice" | "official");
+                    setGradingResult(null);
+                  }}
+                >
+                  <option value="practice">Praxiszeit: {PRACTICE_MINUTES} Min.</option>
+                  <option value="official" disabled={officialMinutes === null}>
+                    Prüfungszeit: {formatMinutes(officialMinutes)}
+                  </option>
+                </select>
+                <div className="font-mono text-lg font-semibold" style={secondsRemaining <= 300 ? { color: "var(--accent)" } : undefined}>
+                  {formatTimer(secondsRemaining)}
+                </div>
+                <button type="button" style={buttonStyle} onClick={handleTimerToggle}>
+                  {deadline !== null ? "Pause" : secondsRemaining === 0 ? "Neu starten" : "Start"}
+                </button>
+              </div>
             </div>
-
-            <div className="prose dark:prose-invert max-w-none text-stone-700 dark:text-stone-300 leading-relaxed font-serif text-[13px] whitespace-pre-wrap max-h-96 overflow-y-auto pr-1">
-              {exam.material.text}
+            {timerExpired && (
+              <p className="text-xs font-semibold" style={{ color: "var(--accent)" }}>
+                Zeit abgelaufen. Die verbleibende Zeit kann nicht als Prüfungszeit weiterlaufen.
+              </p>
+            )}
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-2 text-xs">
+              <div style={paperPanelStyle} className="p-2">Gesamt: {totalPoints} Übungspunkte</div>
+              <div style={paperPanelStyle} className="p-2">AFB I: {afbTotals["AFB I"]} P.</div>
+              <div style={paperPanelStyle} className="p-2">AFB II: {afbTotals["AFB II"]} P.</div>
+              <div style={paperPanelStyle} className="p-2">AFB III: {afbTotals["AFB III"]} P.</div>
             </div>
+            <ul className="text-xs space-y-1" style={mutedStyle}>
+              {exam.rulesDE.map((rule) => <li key={rule}>{rule}</li>)}
+            </ul>
+          </section>
 
-            <div className="pt-2 border-t border-stone-200 dark:border-stone-800 text-[11px] text-stone-500">
-              <span className="font-semibold">Schlüsselbegriffe: </span>
-              {exam.material.keywords.join(", ")}
-            </div>
-          </div>
-
-          {/* 右栏：三段式答题区 (AFB I - II - III) 或 评分报告 */}
-          <div className="border border-stone-300 dark:border-stone-700 bg-white dark:bg-stone-900 p-4 rounded text-xs space-y-4 flex flex-col justify-between">
-            {!gradingResult ? (
-              <>
-                {/* AFB 切换 Tabs */}
-                <div className="flex border-b border-stone-200 dark:border-stone-800 pb-2 gap-2">
-                  {exam.aufgaben.map((aufg, i) => (
-                    <button
-                      key={aufg.afb}
-                      onClick={() => setActiveStep(i as 0 | 1 | 2)}
-                      className={`px-3 py-1 rounded text-xs font-mono transition-colors ${
-                        activeStep === i
-                          ? "bg-stone-800 text-white dark:bg-stone-200 dark:text-stone-900 font-semibold"
-                          : "text-stone-600 hover:bg-stone-100 dark:text-stone-400 dark:hover:bg-stone-800"
-                      }`}
-                    >
-                      {aufg.afb} ({aufg.maxPoints}P)
-                    </button>
-                  ))}
-                </div>
-
-                {/* 当前 Aufgabe 题目与引导 */}
-                <div className="space-y-2">
-                  <div className="flex items-center justify-between">
-                    <span className="font-mono text-[11px] text-stone-500 uppercase">
-                      Operator: <strong className="text-stone-800 dark:text-stone-200">{exam.aufgaben[activeStep].operator}</strong>
-                    </span>
-                    <span className="text-[11px] text-stone-400">
-                      Max. {exam.aufgaben[activeStep].maxPoints} Punkte
-                    </span>
+          {exam.optionGroups.length > 0 && (
+            <section className="p-4 space-y-3" style={paperPanelStyle}>
+              {exam.optionGroups.map((group) => {
+                const selected = optionSelections[group.id] ?? exam.defaultOptionSelections[group.id] ?? [];
+                return (
+                  <div key={group.id} className="space-y-2">
+                    <h3 className="font-serif font-semibold text-sm">{group.titleDE}</h3>
+                    <p className="text-xs" style={mutedStyle}>Auswahl: {selected.length} / {group.choose}</p>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
+                      {group.taskIds.map((taskId) => {
+                        const task = exam.tasks.find((item) => item.id === taskId);
+                        if (!task) return null;
+                        const checked = selected.includes(taskId);
+                        return (
+                          <label
+                            key={task.id}
+                            className="flex items-start gap-2 p-2 text-xs"
+                            style={{ ...paperPanelStyle, cursor: "pointer" }}
+                          >
+                            <input
+                              type={group.choose === 1 ? "radio" : "checkbox"}
+                              name={group.id}
+                              checked={checked}
+                              onChange={() => handleOptionChange(group.id, task.id)}
+                              style={{ accentColor: "var(--accent)", marginTop: 3 }}
+                            />
+                            <span>
+                              <strong>{task.code} · {task.afb} · {task.points} P.</strong>
+                              <span className="block" style={mutedStyle}>{task.sourceNotePaths.join(", ")}</span>
+                            </span>
+                          </label>
+                        );
+                      })}
+                    </div>
                   </div>
+                );
+              })}
+            </section>
+          )}
 
-                  <p className="font-serif text-sm font-medium text-stone-900 dark:text-stone-100">
-                    {exam.aufgaben[activeStep].promptDE}
-                  </p>
-                  <p className="text-[11px] text-stone-500">
-                    💡 {exam.aufgaben[activeStep].promptZH}
-                  </p>
+          {exam.sections.map((section) => {
+            const sectionTasks = section.taskIds
+              .map((taskId) => exam.tasks.find((task) => task.id === taskId))
+              .filter((task): task is ComposedExamTask => Boolean(task))
+              .filter((task) => activeTaskIdSet.has(task.id));
+            return (
+              <section key={section.id} className="space-y-3">
+                <div className="pb-2" style={{ borderBottom: "1px solid var(--line, var(--hairline))" }}>
+                  <h2 className="font-serif text-lg font-semibold">{section.titleDE}</h2>
+                  <p className="text-xs mt-1" style={mutedStyle}>{section.instructionDE}</p>
+                  {section.aidsDE && <p className="text-xs font-semibold mt-1">{section.aidsDE}</p>}
                 </div>
-
-                {/* 作答输入区 */}
-                <div className="space-y-1 flex-1 flex flex-col">
-                  <textarea
-                    value={answers[activeStep]}
-                    onChange={(e) => handleAnswerChange(e.target.value)}
-                    placeholder="Formulieren Sie Ihre Antwort hier in präziser deutscher Fachsprache..."
-                    className="w-full flex-1 min-h-[160px] p-2.5 border border-stone-300 dark:border-stone-700 rounded bg-stone-50 dark:bg-stone-800/40 text-xs font-serif leading-relaxed focus:outline-none focus:ring-1 focus:ring-stone-500"
-                  />
-                  <div className="flex justify-between items-center text-[10px] text-stone-400 font-mono">
-                    <span>
-                      Wortanzahl: {answers[activeStep].split(/\s+/).filter(Boolean).length} Wörter
-                    </span>
-                    <span>
-                      Erwartete Punkte: {exam.aufgaben[activeStep].expectedPoints.length} Aspekte
-                    </span>
-                  </div>
-                </div>
-
-                {/* 底部导航与提交按钮 */}
-                <div className="flex items-center justify-between pt-2 border-t border-stone-200 dark:border-stone-800">
-                  <div className="flex gap-1">
-                    {activeStep > 0 && (
-                      <button
-                        onClick={() => setActiveStep((activeStep - 1) as 0 | 1 | 2)}
-                        className="px-2.5 py-1 border border-stone-300 dark:border-stone-700 rounded text-xs"
-                      >
-                        ← Zurück
-                      </button>
-                    )}
-                    {activeStep < 2 && (
-                      <button
-                        onClick={() => setActiveStep((activeStep + 1) as 0 | 1 | 2)}
-                        className="px-2.5 py-1 border border-stone-300 dark:border-stone-700 rounded text-xs"
-                      >
-                        Weiter →
-                      </button>
-                    )}
-                  </div>
-
-                  <button
-                    onClick={handleSubmitExam}
-                    className="px-4 py-1.5 bg-stone-900 text-white dark:bg-stone-100 dark:text-stone-900 rounded font-semibold text-xs hover:opacity-90 transition-opacity"
-                  >
-                    Klausur abgeben & nach EPA bewerten
-                  </button>
-                </div>
-              </>
-            ) : (
-              /* 评分报告视图 */
-              <div className="space-y-4">
-                <div className="flex items-center justify-between border-b border-stone-200 dark:border-stone-800 pb-2">
-                  <div>
-                    <span className="text-[10px] font-mono text-stone-400 uppercase">EPA Klausurergebnis</span>
-                    <h3 className="font-serif text-lg font-bold text-stone-900 dark:text-stone-100">
-                      {gradingResult.notenpunkte} Notenpunkte ({gradingResult.deutscheNote})
-                    </h3>
-                  </div>
-                  <div className="text-right font-mono">
-                    <span className="text-sm font-semibold">{gradingResult.percentage}%</span>
-                    <span className="text-xs text-stone-400 block">
-                      {gradingResult.totalPoints} / {gradingResult.maxTotalPoints} P.
-                    </span>
-                  </div>
-                </div>
-
-                {/* 各 AFB 成绩列表 */}
-                <div className="space-y-2">
-                  {gradingResult.afbScores.map((score, i) => (
-                    <div key={score.afb} className="border border-stone-200 dark:border-stone-800 p-2 rounded text-xs space-y-1">
-                      <div className="flex justify-between font-mono">
-                        <span className="font-semibold">{score.afb}</span>
-                        <span>{score.points} / {score.maxPoints} P.</span>
+                {sectionTasks.map((task) => {
+                  const taskGrade = gradingResult?.taskGrades.find((item) => item.taskId === task.id);
+                  return (
+                    <article key={task.id} className="p-4 space-y-3" style={paperPanelStyle}>
+                      <div className="flex flex-wrap items-center justify-between gap-2 text-xs">
+                        <span className="font-mono font-semibold">{task.code} · {task.afb} · {task.points} Punkte</span>
+                        <span style={mutedStyle}>Quelle: {task.sourceNotePaths.join(", ")}</span>
                       </div>
-                      <p className="text-[11px] text-stone-600 dark:text-stone-400">{score.feedbackDE}</p>
-                      {score.missingKeyPoints.length > 0 && (
-                        <div className="text-[10px] text-amber-700 dark:text-amber-400">
-                          <span className="font-semibold">Fehlende Aspekte: </span>
-                          {score.missingKeyPoints.join("; ")}
+                      <div>
+                        <p className="font-serif text-base font-semibold">{task.promptDE}</p>
+                        <p className="text-xs mt-1" style={{ ...mutedStyle, fontSize: 12 }}>{task.promptZH}</p>
+                      </div>
+                      <div className="text-xs" style={mutedStyle}>Operator: {task.operator}</div>
+                      <textarea
+                        aria-label={`Antwort zu ${task.code}`}
+                        className="w-full font-serif text-sm leading-relaxed"
+                        style={{ ...controlStyle, minHeight: 150, resize: "vertical" }}
+                        value={answers[task.id] ?? ""}
+                        onChange={(event) => handleAnswerChange(task.id, event.target.value)}
+                        disabled={Boolean(gradingResult)}
+                        placeholder="Formulieren Sie Ihre Antwort in präziser deutscher Fachsprache."
+                      />
+                      <div className="flex justify-between text-xs" style={mutedStyle}>
+                        <span>Wörter: {(answers[task.id] ?? "").split(/\s+/).filter(Boolean).length}</span>
+                        {taskGrade && <span>Ergebnis: {taskGrade.points} / {taskGrade.maxPoints} P.</span>}
+                      </div>
+                      {taskGrade && (
+                        <div className="text-xs space-y-1" style={paperPanelStyle}>
+                          <div className="font-semibold">Feste Bewertungsindikatoren</div>
+                          {taskGrade.criterionGrades.map((criterion) => (
+                            <div key={criterion.criterionId} className="flex justify-between gap-3">
+                              <span>{criterion.indicatorDE}</span>
+                              <span className="font-mono shrink-0">
+                                {criterion.points} / {task.criteria.find((item) => item.id === criterion.criterionId)?.points ?? 0} P.
+                              </span>
+                            </div>
+                          ))}
                         </div>
                       )}
-                      <div className="text-[10px] text-stone-500 font-serif pt-1 border-t border-stone-100 dark:border-stone-800">
-                        <span className="font-semibold font-mono">Muster: </span>
-                        {exam.aufgaben[i].sampleSolution}
-                      </div>
-                    </div>
-                  ))}
+                    </article>
+                  );
+                })}
+              </section>
+            );
+          })}
 
-                  <div className="border border-stone-200 dark:border-stone-800 p-2 rounded text-xs">
-                    <div className="flex justify-between font-mono">
-                      <span className="font-semibold">Darstellungsleistung</span>
-                      <span>{gradingResult.darstellungScore.points} / 20 P.</span>
-                    </div>
-                    <p className="text-[11px] text-stone-600 dark:text-stone-400">
-                      {gradingResult.darstellungScore.feedbackDE}
-                    </p>
-                  </div>
+          {!gradingResult && (
+            <div className="flex justify-end">
+              <button type="button" style={primaryButtonStyle} onClick={handleSubmit}>
+                Abgeben und lokale Indikatorauswertung starten
+              </button>
+            </div>
+          )}
+
+          {gradingResult && (
+            <section className="p-4 space-y-3" style={panelStyle} aria-live="polite">
+              <div className="flex flex-wrap items-center justify-between gap-2">
+                <div>
+                  <h2 className="font-serif text-lg font-semibold">Lokale Übungsauswertung</h2>
+                  <p className="text-xs mt-1" style={mutedStyle}>
+                    {gradingResult.totalPoints} / {gradingResult.maxTotalPoints} ganze Punkte ({gradingResult.percentage} %).
+                  </p>
                 </div>
-
-                {/* 联动操作按钮 */}
-                <div className="flex flex-wrap items-center justify-between gap-2 pt-2 border-t border-stone-200 dark:border-stone-800">
-                  <div className="flex gap-2">
-                    <button
-                      onClick={handleCopyFehlerlogPatch}
-                      className="px-2.5 py-1 border border-stone-300 dark:border-stone-700 rounded text-xs hover:bg-stone-100 dark:hover:bg-stone-800"
-                    >
-                      {copiedPatch ? "✓ Patch kopiert" : "Fehlerlog-Patch kopieren"}
-                    </button>
-                    <button
-                      onClick={handleRecordToMastery}
-                      disabled={masterySaved}
-                      className={`px-2.5 py-1 rounded text-xs font-semibold ${
-                        masterySaved
-                          ? "bg-emerald-700 text-white"
-                          : "bg-stone-800 text-white dark:bg-stone-200 dark:text-stone-900"
-                      }`}
-                    >
-                      {masterySaved ? "✓ In Radar gespeichert" : "In Kompetenz-Radar eintragen"}
-                    </button>
-                  </div>
-
-                  <button
-                    onClick={() => setGradingResult(null)}
-                    className="px-2.5 py-1 text-xs text-stone-500 hover:text-stone-800 underline"
-                  >
-                    Klausur erneut bearbeiten
-                  </button>
-                </div>
+                <span className="text-xs" style={mutedStyle}>{exam.pointBasisDE}</span>
               </div>
-            )}
-          </div>
-        </div>
+              <p className="text-xs" style={mutedStyle}>
+                Diese lokale Heuristik ist keine amtliche Korrektur. Bewertet werden ausschließlich die festen ganzen Punkte der erzeugten Übungsaufgabe.
+              </p>
+              <div className="flex flex-wrap gap-2">
+                <button type="button" style={buttonStyle} onClick={handleCopyPatch}>
+                  {copiedPatch ? "Patch kopiert" : "Fehlerlog-Patch kopieren"}
+                </button>
+                <button
+                  type="button"
+                  style={masterySaved ? buttonStyle : primaryButtonStyle}
+                  onClick={handleRecordToMastery}
+                  disabled={masterySaved}
+                >
+                  {masterySaved ? "In Kompetenz-Radar gespeichert" : "In Kompetenz-Radar eintragen"}
+                </button>
+                <button type="button" style={buttonStyle} onClick={() => setGradingResult(null)}>
+                  Bearbeitung fortsetzen
+                </button>
+              </div>
+            </section>
+          )}
+        </>
       )}
     </div>
   );

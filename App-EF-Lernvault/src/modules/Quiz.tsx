@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useRef, useState } from "react";
-import { isTyping } from "../keys";
+import { PER_MODULE_KEYS, isTyping, matchesKey } from "../keys";
 import { t, type Lang } from "../i18n";
 import { setFeedbackContext } from "../components/FeedbackBox";
 import type { VaultNote, VaultCard } from "../vault/parser";
@@ -437,25 +437,18 @@ export default function Quiz({ lang = "zh", vault = null, cards = null, onJumpTo
     const onKey = (e: KeyboardEvent) => {
       if (isTyping()) return;
 
-      if (e.code === "Space") {
+      if (matchesKey(e, PER_MODULE_KEYS.quiz[0])) {
         e.preventDefault();
-        if (drillMode === "klausur") {
-          setTimerRunning((r) => !r);
-        } else {
-          setVTimerRunning((r) => !r);
-        }
-      } else if (drillMode === "vergleich") {
-        if (e.key === "1") {
-          e.preventDefault();
-          setSelectedOption("A");
-        } else if (e.key === "2") {
-          e.preventDefault();
-          setSelectedOption("B");
-        }
-      } else if (drillMode === "klausur") {
-        if (e.key === "d" || e.key === "D" || e.key === "v" || e.key === "V") {
-          setDrillMode("vergleich");
-        }
+        if (drillMode === "klausur") setTimerRunning((running) => !running);
+        else setVTimerRunning((running) => !running);
+      } else if (drillMode === "vergleich" && matchesKey(e, PER_MODULE_KEYS.quiz[1])) {
+        e.preventDefault();
+        setSelectedOption(e.key === "1" ? "A" : "B");
+      } else if (
+        drillMode === "klausur" &&
+        (matchesKey(e, PER_MODULE_KEYS.quiz[2]) || matchesKey(e, PER_MODULE_KEYS.quiz[3]))
+      ) {
+        setDrillMode("vergleich");
       }
     };
     window.addEventListener("keydown", onKey);
@@ -838,7 +831,7 @@ export default function Quiz({ lang = "zh", vault = null, cards = null, onJumpTo
 
           {/* Step 4: Korrektur */}
           {step === 4 && (
-            <div className="space-y-6">
+            <div className="space-y-6" aria-live="polite">
               {lmDegraded && (
                 <div className="border border-[#E5E1D8] border-l-2 border-[#B45309] bg-[#FAF9F6] p-3 text-xs font-mono text-[#B45309]">
                   <div className="font-semibold">{tr.lmDown}</div>
@@ -1347,7 +1340,7 @@ export default function Quiz({ lang = "zh", vault = null, cards = null, onJumpTo
 
           {/* §1.3 Gating & §2 反馈三层 (L1 即时 KR → L2 延迟展开 → L3 过程+元认知) */}
           {isSubmitted && (
-            <div className="border border-[#E5E1D8] bg-white p-5 rounded-sm space-y-5 animate-fade-in">
+            <div className="border border-[#E5E1D8] bg-white p-5 rounded-sm space-y-5 animate-fade-in" aria-live="polite">
               {/* L1 — 即时 KR (Knowledge of Result) */}
               <div className="space-y-2 border-b border-[#E5E1D8] pb-4">
                 <div className="flex items-center justify-between">

@@ -77,9 +77,9 @@ export function TangentSlider({ lang = "zh", onFormulaGenerated }: TangentSlider
     return `M ${toSvgX(p1X)} ${toSvgY(p1Y)} L ${toSvgX(p2X)} ${toSvgY(p2Y)}`;
   }, [x0, y0, tangentenSteigung]);
 
-  const klausursatz = lang === "de"
-    ? `Der Differenzenquotient Δy/Δx = (${y1.toFixed(2)} - ${y0.toFixed(2)}) / ${deltaX.toFixed(2)} = ${sekantenSteigung.toFixed(2)} beschreibt die mittlere Änderungsrate (Sekante). Im Grenzwert Δx → 0 konvergiert er gegen den Differentialquotienten f'(${x0.toFixed(1)}) = ${tangentenSteigung.toFixed(1)} (momentane Änderungsrate der Tangente).`
-    : `差商 Δy/Δx = (${y1.toFixed(2)} - ${y0.toFixed(2)}) / ${deltaX.toFixed(2)} = ${sekantenSteigung.toFixed(2)} 描述割线的平均变化率。当割线步长 Δx → 0 时，割线逐渐与切线重合，收敛于瞬时变化率 (导数) f'(${x0.toFixed(1)}) = ${tangentenSteigung.toFixed(1)}。`;
+  const klausursatzDE = `Der Differenzenquotient Δy/Δx = (${y1.toFixed(2)} - ${y0.toFixed(2)}) / ${deltaX.toFixed(2)} = ${sekantenSteigung.toFixed(2)} beschreibt die mittlere Änderungsrate (Sekante). Im Grenzwert Δx → 0 konvergiert er gegen den Differentialquotienten f'(${x0.toFixed(1)}) = ${tangentenSteigung.toFixed(1)} (momentane Änderungsrate der Tangente).`;
+  const klausursatzZH = `差商 Δy/Δx = (${y1.toFixed(2)} - ${y0.toFixed(2)}) / ${deltaX.toFixed(2)} = ${sekantenSteigung.toFixed(2)} 描述割线的平均变化率。当割线步长 Δx → 0 时，割线逐渐与切线重合，收敛于瞬时变化率（导数）f'(${x0.toFixed(1)}) = ${tangentenSteigung.toFixed(1)}。`;
+  const klausursatz = lang === "de" ? klausursatzDE : klausursatzZH;
 
   const handleCopyOrInsert = () => {
     onFormulaGenerated?.(klausursatz);
@@ -91,28 +91,29 @@ export function TangentSlider({ lang = "zh", onFormulaGenerated }: TangentSlider
   return (
     <div
       data-testid="tangent-slider"
-      className="rounded-sm border border-[#E5E1D8] bg-[#FAF9F6] p-3 text-[#1C1B17] font-sans"
+      className="rounded-[var(--radius)] border border-[var(--line)] bg-[var(--paper)] p-3 text-[var(--ink)] font-sans"
     >
-      <div className="flex items-center justify-between border-b border-[#E5E1D8] pb-2 mb-3">
+      <div className="flex items-center justify-between border-b border-[var(--line)] pb-2 mb-3">
         <div className="flex items-center gap-2">
-          <svg className="w-4 h-4 text-[#2563eb]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-            <path d="M4 19L20 5M4 19h16M4 19V5" />
+          <svg width="16" height="16" className="text-[var(--accent)]" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.4" aria-hidden="true">
+            <path d="M2.5 13.5l11-11M2.5 13.5h11M2.5 13.5v-11" />
           </svg>
-          <span className="font-semibold text-xs text-[#0f172a]">
-            {lang === "de" ? "Dynamischer Tangenten-Simulator (Δx → 0)" : "割线逼近切线沙盘：直观理解导数 (Δx → 0)"}
+          <span className="de-heading bilingual text-xs text-[var(--ink)]">
+            <span>{lang === "de" ? "Dynamischer Tangenten-Simulator (Δx → 0)" : "割线逼近切线沙盘：直观理解导数 (Δx → 0)"}</span>
+            <span className="zh-translation font-sans">{lang === "de" ? "割线逼近切线沙盘：直观理解导数 (Δx → 0)" : "Dynamischer Tangenten-Simulator (Δx → 0)"}</span>
           </span>
-          <span className="text-[10px] font-mono px-1.5 py-0.2 rounded-xs bg-[#eff6ff] text-[#2563eb] border border-[#bfdbfe]">
+          <span className="text-[var(--text-meta)] font-mono px-1.5 py-0.2 rounded-[var(--radius)] bg-[var(--paper-subtle)] text-[var(--accent)] border border-[var(--line)]">
             f(x) = x²
           </span>
         </div>
-        <span className="text-[10px] font-mono text-[#64748b]">
-          NRW EF Mathe · Differentialrechnung
+        <span className="text-[var(--text-meta)] font-mono text-[var(--gray)]">
+          NRW EF Mathe · Differentialrechnung / 微积分
         </span>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
         {/* SVG Visualisierung */}
-        <div className="bg-white rounded-sm border border-[#E5E1D8] p-2 flex flex-col items-center justify-center relative overflow-hidden">
+        <div className="bg-[var(--surface)] rounded-[var(--radius)] border border-[var(--line)] p-2 flex flex-col items-center justify-center relative overflow-hidden">
           <svg width={svgWidth} height={svgHeight} className="overflow-visible select-none">
             {/* Koordinatengitter */}
             <line
@@ -120,7 +121,7 @@ export function TangentSlider({ lang = "zh", onFormulaGenerated }: TangentSlider
               y1={toSvgY(0)}
               x2={svgWidth - margin.right}
               y2={toSvgY(0)}
-              stroke="#cbd5e1"
+              stroke="var(--line)"
               strokeWidth="1.5"
             />
             <line
@@ -128,26 +129,26 @@ export function TangentSlider({ lang = "zh", onFormulaGenerated }: TangentSlider
               y1={svgHeight - margin.bottom}
               x2={toSvgX(0)}
               y2={margin.top}
-              stroke="#cbd5e1"
+              stroke="var(--line)"
               strokeWidth="1.5"
             />
 
             {/* Achsenbeschriftung */}
-            <text x={svgWidth - margin.right + 2} y={toSvgY(0) + 4} fontSize="10" fill="#64748b" fontFamily="monospace">
+            <text x={svgWidth - margin.right + 2} y={toSvgY(0) + 4} fontSize="12" fill="var(--gray)" fontFamily="monospace">
               x
             </text>
-            <text x={toSvgX(0) - 12} y={margin.top - 4} fontSize="10" fill="#64748b" fontFamily="monospace">
+            <text x={toSvgX(0) - 12} y={margin.top - 4} fontSize="12" fill="var(--gray)" fontFamily="monospace">
               y
             </text>
 
             {/* Funktion f(x) = x^2 */}
-            <path d={curvePath} fill="none" stroke="#64748b" strokeWidth="2" strokeLinecap="round" />
+            <path d={curvePath} fill="none" stroke="var(--gray)" strokeWidth="2" strokeLinecap="round" />
 
             {/* Tangente (Grün, f'(x0)) */}
-            <path d={tangentPath} fill="none" stroke="#16a34a" strokeWidth="1.5" strokeOpacity="0.75" />
+            <path d={tangentPath} fill="none" stroke="var(--accent)" strokeWidth="1.5" strokeOpacity="0.75" />
 
             {/* Sekante (Blau gestrichelt) */}
-            <path d={secantPath} fill="none" stroke="#2563eb" strokeWidth="2" strokeDasharray="4 2" />
+            <path d={secantPath} fill="none" stroke="var(--ink)" strokeWidth="2" strokeDasharray="4 2" />
 
             {/* Steigungsdreieck */}
             {deltaX > 0.05 && (
@@ -158,7 +159,7 @@ export function TangentSlider({ lang = "zh", onFormulaGenerated }: TangentSlider
                   y1={toSvgY(y0)}
                   x2={toSvgX(x1)}
                   y2={toSvgY(y0)}
-                  stroke="#0284c7"
+                  stroke="var(--gray)"
                   strokeWidth="1.5"
                   strokeDasharray="2 2"
                 />
@@ -168,7 +169,7 @@ export function TangentSlider({ lang = "zh", onFormulaGenerated }: TangentSlider
                   y1={toSvgY(y0)}
                   x2={toSvgX(x1)}
                   y2={toSvgY(y1)}
-                  stroke="#9333ea"
+                  stroke="var(--accent)"
                   strokeWidth="1.5"
                   strokeDasharray="2 2"
                 />
@@ -176,28 +177,28 @@ export function TangentSlider({ lang = "zh", onFormulaGenerated }: TangentSlider
             )}
 
             {/* Basispunkt P(x0, y0) */}
-            <circle cx={toSvgX(x0)} cy={toSvgY(y0)} r="4.5" fill="#16a34a" stroke="#ffffff" strokeWidth="1.5" />
-            <text x={toSvgX(x0) - 18} y={toSvgY(y0) - 8} fontSize="10" fontWeight="bold" fill="#16a34a">
+            <circle cx={toSvgX(x0)} cy={toSvgY(y0)} r="4.5" fill="var(--accent)" stroke="var(--surface)" strokeWidth="1.5" />
+            <text x={toSvgX(x0) - 18} y={toSvgY(y0) - 8} fontSize="12" fontWeight="bold" fill="var(--accent)">
               P({x0.toFixed(1)}|{y0.toFixed(1)})
             </text>
 
             {/* Sekantenpunkt Q(x1, y1) */}
-            <circle cx={toSvgX(x1)} cy={toSvgY(y1)} r="4.5" fill="#2563eb" stroke="#ffffff" strokeWidth="1.5" />
-            <text x={toSvgX(x1) + 6} y={toSvgY(y1) + 4} fontSize="10" fontWeight="bold" fill="#2563eb">
+            <circle cx={toSvgX(x1)} cy={toSvgY(y1)} r="4.5" fill="var(--ink)" stroke="var(--surface)" strokeWidth="1.5" />
+            <text x={toSvgX(x1) + 6} y={toSvgY(y1) + 4} fontSize="12" fontWeight="bold" fill="var(--ink)">
               Q
             </text>
           </svg>
 
           {/* Legende */}
-          <div className="flex items-center gap-3 text-[10px] font-mono mt-1 text-[#64748b]">
+          <div className="flex items-center gap-3 text-[var(--text-meta)] font-mono mt-1 text-[var(--gray)]">
             <span className="flex items-center gap-1">
-              <span className="w-2.5 h-0.5 bg-[#64748b]" /> f(x)
+              <span className="w-2.5 h-0.5 bg-[var(--gray)]" /> f(x)
             </span>
-            <span className="flex items-center gap-1 text-[#2563eb]">
-              <span className="w-2.5 h-0.5 bg-[#2563eb] border-b border-dashed" /> Sekante (m={sekantenSteigung.toFixed(2)})
+            <span className="flex items-center gap-1 text-[var(--ink)]">
+              <span className="w-2.5 h-0.5 bg-[var(--ink)] border-b border-dashed" /> Sekante / 割线 (m={sekantenSteigung.toFixed(2)})
             </span>
-            <span className="flex items-center gap-1 text-[#16a34a]">
-              <span className="w-2.5 h-0.5 bg-[#16a34a]" /> Tangente (f'={tangentenSteigung.toFixed(1)})
+            <span className="flex items-center gap-1 text-[var(--accent)]">
+              <span className="w-2.5 h-0.5 bg-[var(--accent)]" /> Tangente / 切线 (f'={tangentenSteigung.toFixed(1)})
             </span>
           </div>
         </div>
@@ -207,10 +208,10 @@ export function TangentSlider({ lang = "zh", onFormulaGenerated }: TangentSlider
           {/* Slider 1: Basispunkt x0 */}
           <div>
             <div className="flex justify-between text-xs font-mono mb-1">
-              <span className="text-[#475569]">
+              <span className="text-[var(--gray)]">
                 {lang === "de" ? "Basispunkt x₀:" : "基准点 x₀:"}
               </span>
-              <span className="font-bold text-[#0f172a]">{x0.toFixed(1)}</span>
+              <span className=" text-[var(--ink)]">{x0.toFixed(1)}</span>
             </div>
             <input
               type="range"
@@ -219,17 +220,18 @@ export function TangentSlider({ lang = "zh", onFormulaGenerated }: TangentSlider
               step="0.1"
               value={x0}
               onChange={(e) => setX0(parseFloat(e.target.value))}
-              className="w-full h-1.5 bg-[#e2e8f0] rounded-lg appearance-none cursor-pointer accent-[#16a34a]"
+              aria-label={lang === "de" ? "Basispunkt x₀ / 基准点 x₀" : "基准点 x₀ / Basispunkt x₀"}
+              className="w-full h-1.5 bg-[var(--line)] rounded-[var(--radius)] appearance-none cursor-pointer accent-[var(--accent)]"
             />
           </div>
 
           {/* Slider 2: Δx Annäherung */}
-          <div className="bg-[#eff6ff] p-2.5 rounded-sm border border-[#bfdbfe]">
+          <div className="bg-[var(--paper-subtle)] p-2.5 rounded-[var(--radius)] border border-[var(--line)]">
             <div className="flex justify-between text-xs font-mono mb-1">
-              <span className="font-semibold text-[#1e40af]">
+              <span className=" text-[var(--accent)]">
                 {lang === "de" ? "Intervallbreite Δx (Schrittweite h):" : "步长 Δx (拖动逼近 0):"}
               </span>
-              <span className="font-bold text-[#1e40af] text-sm">{deltaX.toFixed(2)}</span>
+              <span className=" text-[var(--accent)] text-sm">{deltaX.toFixed(2)}</span>
             </div>
             <input
               type="range"
@@ -238,47 +240,59 @@ export function TangentSlider({ lang = "zh", onFormulaGenerated }: TangentSlider
               step="0.02"
               value={deltaX}
               onChange={(e) => setDeltaX(parseFloat(e.target.value))}
-              className="w-full h-2 bg-[#bfdbfe] rounded-lg appearance-none cursor-pointer accent-[#2563eb]"
+              aria-label={lang === "de" ? "Intervallbreite Δx / 步长 Δx" : "步长 Δx / Intervallbreite Δx"}
+              className="w-full h-2 bg-[var(--paper-subtle)] rounded-[var(--radius)] appearance-none cursor-pointer accent-[var(--accent)]"
             />
-            <div className="flex justify-between text-[10px] font-mono text-[#60a5fa] mt-1">
-              <span>0.02 (fast Tangente)</span>
-              <span>2.00 (große Sekante)</span>
+            <div className="flex justify-between text-[var(--text-meta)] font-mono text-[var(--gray)] mt-1">
+              <span>0.02 (fast Tangente / 接近切线)</span>
+              <span>2.00 (große Sekante / 大步长割线)</span>
             </div>
           </div>
 
           {/* Mathematische Formelbox */}
-          <div className="rounded-sm border border-[#E5E1D8] bg-white p-2.5 font-mono text-xs space-y-1.5">
-            <div className="flex justify-between items-center text-[#475569] text-[11px]">
-              <span>Differenzenquotient (Sekantensteigung):</span>
-              <span className="font-bold text-[#2563eb] text-sm">{sekantenSteigung.toFixed(3)}</span>
+          <div className="rounded-[var(--radius)] border border-[var(--line)] bg-[var(--surface)] p-2.5 font-mono text-xs space-y-1.5">
+            <div className="flex justify-between items-center text-[var(--gray)] text-[var(--text-meta)]">
+              <span>Differenzenquotient / 差商 (Sekantensteigung / 割线斜率):</span>
+              <span className=" text-[var(--accent)] text-sm">{sekantenSteigung.toFixed(3)}</span>
             </div>
-            <div className="text-[10px] text-[#64748b] bg-[#f8fafc] p-1.5 rounded-xs border border-[#e2e8f0]">
+            <div className="text-[var(--text-meta)] text-[var(--gray)] bg-[var(--paper)] p-1.5 rounded-[var(--radius)] border border-[var(--line)]">
               m = Δy / Δx = ({y1.toFixed(2)} - {y0.toFixed(2)}) / {deltaX.toFixed(2)} = 2·{x0.toFixed(1)} + {deltaX.toFixed(2)}
             </div>
 
-            <div className="flex justify-between items-center text-[#16a34a] text-[11px] pt-1 border-t border-[#f1f5f9]">
-              <span>Differentialquotient (Tangente f'):</span>
-              <span className="font-bold text-sm">{tangentenSteigung.toFixed(2)}</span>
+            <div className="flex justify-between items-center text-[var(--accent)] text-[var(--text-meta)] pt-1 border-t border-[var(--line)]">
+              <span>Differentialquotient / 微分商 (Tangente f' / 切线斜率):</span>
+              <span className=" text-sm">{tangentenSteigung.toFixed(2)}</span>
             </div>
-            <div className="text-[10px] text-[#16a34a]">
+            <div className="text-[var(--text-meta)] text-[var(--accent)]">
               lim(Δx→0) [2·{x0.toFixed(1)} + Δx] = <strong>{tangentenSteigung.toFixed(1)}</strong>
             </div>
           </div>
 
           {/* Klausursatz einfügen */}
+          <div className="exam-reading border-t border-[var(--line)] pt-2 text-xs leading-relaxed text-[var(--ink)]">
+            <p className="de-reading">{klausursatzDE}</p>
+            <p className="zh-translation font-sans">{klausursatzZH}</p>
+          </div>
           <button
             type="button"
             onClick={handleCopyOrInsert}
-            className="w-full py-1.5 px-3 rounded-sm bg-[#1C1B17] text-white hover:bg-[#4338CA] transition-colors text-xs font-sans flex items-center justify-center gap-1.5 cursor-pointer shadow-xs"
+            className="flex w-full cursor-pointer items-center justify-center gap-1.5 rounded-[var(--radius)] border border-[var(--accent)] px-3 py-1.5 text-xs text-[var(--accent)] transition-colors"
           >
-            <svg className="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-              <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" />
-              <rect x="8" y="2" width="8" height="4" rx="1" ry="1" />
+            <svg width="16" height="16" aria-hidden="true" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.4">
+              <rect x="5.5" y="5.5" width="8" height="8" rx="1" />
+              <path d="M10.5 5.5v-2a1 1 0 0 0-1-1h-6a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h2" />
             </svg>
-            <span>
-              {copied
-                ? (lang === "de" ? "✓ In Chat & Zwischenablage übernommen!" : "✓ 已带入对话框并复制！")
-                : (lang === "de" ? "Erkenntnis in Klausursatz übernehmen" : "带入此导数分析结论与 Klausursatz")}
+            <span className="bilingual">
+              <span>
+                {copied
+                  ? (lang === "de" ? "In Chat & Zwischenablage übernommen" : "已带入对话框并复制")
+                  : (lang === "de" ? "Erkenntnis in Klausursatz übernehmen" : "带入此导数分析结论与 Klausursatz")}
+              </span>
+              <span className="zh-translation font-sans">
+                {copied
+                  ? (lang === "de" ? "已带入对话框并复制" : "In Chat & Zwischenablage übernommen")
+                  : (lang === "de" ? "带入此导数分析结论与 Klausursatz" : "Erkenntnis in Klausursatz übernehmen")}
+              </span>
             </span>
           </button>
         </div>

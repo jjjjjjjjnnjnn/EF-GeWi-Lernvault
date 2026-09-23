@@ -70,14 +70,14 @@ export default function Blocks({
       {blocks.map((b, i) => {
         if (b.kind === "h2") {
           return (
-            <h3 key={i} className="mb-1 mt-4 font-serif text-lg text-[#1C1B17]">
+            <h3 key={i} className="mb-1 mt-4 font-serif text-lg text-[var(--ink)]">
               {renderMathText(b.text)}
             </h3>
           );
         }
         if (b.kind === "h3") {
           return (
-            <h4 key={i} className="mb-1 mt-3 font-serif text-base text-[#1C1B17]">
+            <h4 key={i} className="mb-1 mt-3 font-serif text-base text-[var(--ink)]">
               {renderMathText(b.text)}
             </h4>
           );
@@ -88,11 +88,11 @@ export default function Blocks({
               key={i}
               className={`mb-1 pl-3 ${
                 b.lang === "zh"
-                  ? "font-sans text-sm text-[#6B675C]"
-                  : "font-serif text-[15px] text-[#1C1B17]"
+                  ? "font-sans text-sm text-[var(--gray)]"
+                  : "font-serif text-[15px] text-[var(--ink)]"
               }`}
             >
-              <span className="mr-2 text-[#6B675C]">–</span>
+              <span className="mr-2 text-[var(--gray)]">–</span>
               {renderMathText(b.text)}
             </div>
           );
@@ -101,10 +101,10 @@ export default function Blocks({
           return (
             <div
               key={i}
-              className={`mb-2 border-l-2 border-[#E5E1D8] pl-3 italic ${
+              className={`mb-2 border-l-2 border-[var(--line)] pl-3 ${
                 b.lang === "zh"
-                  ? "font-sans text-sm text-[#6B675C]"
-                  : "font-serif text-[15px] text-[#1C1B17]"
+                  ? "font-sans text-sm text-[var(--gray)]"
+                  : "font-serif text-[15px] text-[var(--ink)]"
               }`}
             >
               {renderMathText(b.text)}
@@ -116,7 +116,7 @@ export default function Blocks({
           return (
             <pre
               key={i}
-              className="my-2 overflow-x-auto rounded-sm border border-[#E5E1D8] bg-[#FAF9F6] p-3 font-mono text-xs leading-relaxed text-[#1C1B17]"
+              className="my-2 overflow-x-auto rounded-[var(--radius)] border border-[var(--line)] bg-[var(--paper)] p-3 font-mono text-xs leading-relaxed text-[var(--ink)]"
             >
               {b.text}
             </pre>
@@ -130,8 +130,8 @@ export default function Blocks({
             key={i}
             className={`mb-2 ${
               b.lang === "zh"
-                ? "font-sans text-sm text-[#6B675C]"
-                : "font-serif text-[15px] leading-relaxed text-[#1C1B17]"
+                ? "font-sans text-sm text-[var(--gray)]"
+                : "font-serif text-[15px] leading-relaxed text-[var(--ink)]"
             }`}
           >
             {renderMathText(b.text)}

@@ -1,6 +1,7 @@
 import { useMemo } from "react";
 import { notes as mockNotes } from "../data";
 import { getFach } from "../fach";
+import { VaultGraph } from "../engine/vaultGraph";
 import type { VaultNote } from "../vault/parser";
 import type { Lang } from "../i18n";
 
@@ -10,6 +11,33 @@ interface MindmapNote {
   thema: string;
   sub: string;
   operatoren: string[];
+  content: string;
+  tags: string[];
+}
+
+interface LayoutNode {
+  key: string;
+  kind: "root" | "subject" | "topic";
+  label: string;
+  sub: string;
+  query: string;
+  x: number;
+  y: number;
+  width: number;
+  height: number;
+  note?: MindmapNote;
+}
+
+interface LayoutEdge {
+  from: string;
+  to: string;
+}
+
+interface DiagramLayout {
+  width: number;
+  height: number;
+  nodes: LayoutNode[];
+  edges: LayoutEdge[];
 }
 
 export default function Mindmap({
@@ -21,147 +49,330 @@ export default function Mindmap({
   vaultNotes?: VaultNote[] | null;
   onJumpToLibrary?: (query: string) => void;
 }) {
-
-  const notesList: MindmapNote[] = useMemo(() => {
+  const notesList = useMemo<MindmapNote[]>(() => {
     if (vaultNotes && vaultNotes.length > 0) {
-      return vaultNotes.map((n) => ({
-        id: n.id,
-        fach: n.fach,
-        thema: n.thema,
-        sub: n.path,
-        operatoren: n.operatoren,
+      return vaultNotes.map((note) => ({
+        id: note.id,
+        fach: note.fach,
+        thema: note.thema,
+        sub: note.path,
+        operatoren: note.operatoren,
+        content: note.blocks.map((block) => block.text).join("\n"),
+        tags: note.tags,
       }));
     }
-    return mockNotes.map((m) => ({
-      id: m.id,
-      fach: m.fach,
-      thema: m.thema,
-      sub: m.zh,
-      operatoren: m.operatoren,
+    return mockNotes.map((note) => ({
+      id: note.id,
+      fach: note.fach,
+      thema: note.thema,
+      sub: note.zh,
+      operatoren: note.operatoren,
+      content: [...note.bodyDE, ...note.bodyZH].join("\n"),
+      tags: [],
     }));
   }, [vaultNotes]);
 
-  // Group notes by Fach
+  const graph = useMemo(() => {
+    const vaultGraph = new VaultGraph();
+    vaultGraph.build(
+      notesList.map((note) => ({
+        id: note.id,
+        thema: note.thema,
+        fach: note.fach,
+        content: note.content,
+        tags: note.tags,
+      }))
+    );
+    return vaultGraph;
+  }, [notesList]);
+
+  const graphData = useMemo(() => graph.exportFullGraph(), [graph]);
   const grouped = useMemo(() => {
     const map = new Map<string, MindmapNote[]>();
-    for (const n of notesList) {
-      const list = map.get(n.fach) || [];
-      list.push(n);
-      map.set(n.fach, list);
+    for (const note of notesList) {
+      const list = map.get(note.fach) ?? [];
+      list.push(note);
+      map.set(note.fach, list);
     }
     return map;
   }, [notesList]);
 
+  const degreeById = useMemo(() => {
+    const degrees = new Map<string, number>();
+    for (const edge of graphData.edges) {
+      degrees.set(edge.source, (degrees.get(edge.source) ?? 0) + 1);
+      degrees.set(edge.target, (degrees.get(edge.target) ?? 0) + 1);
+    }
+    return degrees;
+  }, [graphData.edges]);
+
+  const hubIds = useMemo(
+    () =>
+      new Set(
+        graph
+          .getHubNodes(3)
+          .filter((entry) => entry.degree > 0)
+          .map((entry) => entry.node.id)
+      ),
+    [graph]
+  );
+
+  const layout = useMemo<DiagramLayout>(() => {
+    const subjects = Array.from(grouped.entries());
+    const columnWidth = Math.max(180, 1000 / Math.max(1, subjects.length));
+    const width = Math.max(1000, columnWidth * subjects.length);
+    const maxTopicCount = Math.max(0, ...subjects.map(([, notes]) => notes.length));
+    const height = Math.max(520, 340 + maxTopicCount * 112);
+    const rootLabel = lang === "de" ? "Wissensnetzwerk" : "知识网络";
+    const nodes: LayoutNode[] = [
+      {
+        key: "root",
+        kind: "root",
+        label: rootLabel,
+        sub: lang === "de" ? "Gymnasium EF · vernetzt" : "高中阶段 (EF) · 关联",
+        query: "",
+        x: width / 2,
+        y: 54,
+        width: 260,
+        height: 52,
+      },
+    ];
+    const edges: LayoutEdge[] = [];
+    const topicNodes = new Map<string, LayoutNode>();
+
+    subjects.forEach(([fachName, subjectNotes], subjectIndex) => {
+      const info = getFach(fachName);
+      const kurz = info?.kurz ?? fachName.slice(0, 2).toUpperCase();
+      const label = lang === "de" ? info?.nameDE ?? fachName : info?.nameZH ?? fachName;
+      const x = subjectIndex * columnWidth + columnWidth / 2;
+      const subjectNode: LayoutNode = {
+        key: `subject:${fachName}`,
+        kind: "subject",
+        label,
+        sub: `${kurz} · ${subjectNotes.length} ${lang === "de" ? "Notizen" : "笔记"}`,
+        query: fachName,
+        x,
+        y: 174,
+        width: Math.min(170, columnWidth - 16),
+        height: 50,
+      };
+      nodes.push(subjectNode);
+      edges.push({ from: "root", to: subjectNode.key });
+
+      const topicWidth = Math.min(220, Math.max(140, columnWidth - 24));
+      subjectNotes.forEach((note, topicIndex) => {
+        const topicNode: LayoutNode = {
+          key: `topic:${note.id}`,
+          kind: "topic",
+          label: note.thema,
+          sub: note.sub,
+          query: note.thema,
+          x,
+          y: 304 + topicIndex * 112,
+          width: topicWidth,
+          height: 78,
+          note,
+        };
+        nodes.push(topicNode);
+        topicNodes.set(note.id, topicNode);
+        edges.push({ from: subjectNode.key, to: topicNode.key });
+      });
+    });
+
+    for (const edge of graphData.edges) {
+      const source = topicNodes.get(edge.source);
+      const target = topicNodes.get(edge.target);
+      if (source && target) edges.push({ from: source.key, to: target.key });
+    }
+
+    return { width, height, nodes, edges };
+  }, [graphData.edges, grouped, lang]);
+
   if (notesList.length === 0) {
     return (
       <div className="mx-auto max-w-xl py-12 text-center font-sans text-sm text-[#6B675C]">
-        Keine Themen gefunden / 暂无知识树节点 — oben „Vault öffnen“ / 点顶部"打开知识库"
+        Keine Themen gefunden / 暂无知识树节点 — oben „Vault öffnen“ / 点顶部“打开知识库”
       </div>
     );
   }
 
+  const nodeByKey = new Map(layout.nodes.map((node) => [node.key, node]));
+
   return (
-    <div className="mx-auto max-w-5xl space-y-6">
-      {/* Top Header */}
-      <div className="flex items-center justify-between border-b border-[#E5E1D8] pb-3">
+    <div className="mx-auto max-w-6xl space-y-5">
+      <div className="flex items-center justify-between gap-4 border-b border-[#E5E1D8] pb-3">
         <div>
           <h2 className="font-serif text-xl font-normal text-[#1C1B17]">
             {lang === "de" ? "Wissensnetzwerk · Gymnasium EF" : "学科知识网络 · 高中阶段 (EF)"}
           </h2>
-          <p className="font-sans text-xs text-[#6B675C] mt-0.5">
+          <p className="mt-0.5 font-sans text-xs text-[#6B675C]">
             {lang === "de"
-              ? "Fach-Hierarchie aus Notiz-Struktur. Klick auf Thema öffnet Notiz in der Bibliothek."
-              : "基于知识库笔记层级自动生成。点击任意主题节点直接跳转笔记库搜索。"}
+              ? "Verbindungen folgen internen Notizlinks. Ein Klick öffnet die Bibliothekssuche."
+              : "连线来自笔记内部链接。点击节点即可打开笔记库搜索。"}
           </p>
         </div>
-        <div className="font-mono text-xs text-[#6B675C]">
-          {grouped.size} Fächer · {notesList.length} Themen
+        <div className="shrink-0 font-mono text-xs text-[#6B675C]">
+          {grouped.size} {lang === "de" ? "Fächer" : "学科"} · {notesList.length}{" "}
+          {lang === "de" ? "Themen" : "主题"}
         </div>
       </div>
 
-      {/* Mindmap Subject Branches */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        {Array.from(grouped.entries()).map(([fachName, themen]) => {
-          const fachInfo = getFach(fachName);
-          const kurz = fachInfo?.kurz || fachName.slice(0, 2).toUpperCase();
-          const fullName =
-            lang === "de"
-              ? fachInfo?.nameDE || fachName
-              : fachInfo?.nameZH || fachName;
+      <div
+        className="overflow-x-auto border border-[#E5E1D8] bg-white"
+        style={{ borderRadius: "2px" }}
+      >
+        <div
+          style={{
+            position: "relative",
+            minWidth: `${layout.width}px`,
+            height: `${layout.height}px`,
+            margin: "0 auto",
+          }}
+        >
+          <svg
+            aria-hidden="true"
+            viewBox={`0 0 ${layout.width} ${layout.height}`}
+            preserveAspectRatio="none"
+            style={{
+              position: "absolute",
+              inset: 0,
+              width: "100%",
+              height: "100%",
+              pointerEvents: "none",
+            }}
+          >
+            {layout.edges.map((edge, index) => {
+              const source = nodeByKey.get(edge.from);
+              const target = nodeByKey.get(edge.to);
+              if (!source || !target) return null;
+              return (
+                <line
+                  key={`${edge.from}-${edge.to}-${index}`}
+                  x1={source.x}
+                  y1={source.y}
+                  x2={target.x}
+                  y2={target.y}
+                  stroke="#D8D4CA"
+                  strokeWidth="1"
+                />
+              );
+            })}
+          </svg>
 
-          return (
-            <div
-              key={fachName}
-              className="border border-[#E5E1D8] bg-white rounded-sm p-4 space-y-3"
-            >
-              {/* Root Subject Badge */}
-              <div className="flex items-center justify-between border-b border-[#E5E1D8] pb-2">
-                <div className="flex items-center gap-2">
-                  <span className="font-mono text-xs font-semibold px-2 py-0.5 rounded-sm border border-[#4338CA]/30 text-[#4338CA] bg-[#4338CA]/5">
-                    {kurz}
-                  </span>
-                  <span className="font-serif text-base font-normal text-[#1C1B17]">
-                    {fullName}
-                  </span>
-                </div>
-                <span className="font-mono text-[10px] text-[#6B675C]">
-                  {themen.length} Notizen
+          {layout.nodes.map((node) => {
+            const degree = node.note ? degreeById.get(node.note.id) ?? 0 : 0;
+            const isHub = node.note ? hubIds.has(node.note.id) : false;
+            const rootStyle = node.kind === "root";
+            return (
+              <button
+                key={node.key}
+                type="button"
+                data-node-kind={node.kind}
+                data-node-id={node.note?.id ?? node.key}
+                aria-label={`${node.label}${node.sub ? ` · ${node.sub}` : ""}`}
+                title={node.sub ? `${node.label} · ${node.sub}` : node.label}
+                onClick={() => onJumpToLibrary?.(node.query)}
+                className="focus-visible:outline focus-visible:outline-1 focus-visible:outline-[#4338CA]"
+                style={{
+                  position: "absolute",
+                  left: `${(node.x / layout.width) * 100}%`,
+                  top: `${node.y}px`,
+                  transform: "translate(-50%, -50%)",
+                  width: `${(node.width / layout.width) * 100}%`,
+                  minWidth: rootStyle ? "150px" : "105px",
+                  minHeight: `${node.height}px`,
+                  padding: rootStyle ? "10px 14px" : "8px 9px",
+                  border: "1px solid #1C1B17",
+                  borderRadius: "2px",
+                  backgroundColor: rootStyle ? "#1C1B17" : "#FFFFFF",
+                  color: rootStyle ? "#FFFFFF" : "#1C1B17",
+                  boxShadow: "none",
+                  textAlign: "center",
+                  cursor: "pointer",
+                  zIndex: 1,
+                  fontFamily: rootStyle ? "ui-monospace, SFMono-Regular, monospace" : "ui-serif, Georgia, serif",
+                  lineHeight: 1.2,
+                }}
+              >
+                <span
+                  style={{
+                    display: "block",
+                    overflow: "hidden",
+                    textOverflow: "ellipsis",
+                    whiteSpace: "nowrap",
+                    fontSize: rootStyle ? "14px" : node.kind === "subject" ? "13px" : "12px",
+                    fontWeight: rootStyle || isHub ? 600 : 400,
+                  }}
+                >
+                  {node.label}
                 </span>
-              </div>
-
-              {/* Branch Lines and Thema Leaf Nodes */}
-              <div className="pl-3 border-l-2 border-[#E5E1D8] space-y-2.5 py-1">
-                {themen.map((item) => (
-                  <div key={item.id} className="relative flex items-center gap-2">
-                    {/* Horizontal connector hairline */}
-                    <div className="w-3 h-px bg-[#E5E1D8] -ml-3" />
-
-                    <button
-                      type="button"
-                      onClick={() => onJumpToLibrary?.(item.thema)}
-                      title={
-                        lang === "de"
-                          ? `In Bibliothek öffnen: ${item.thema}`
-                          : `跳转笔记库: ${item.thema}`
-                      }
-                      className="group flex-1 flex items-center justify-between p-2.5 rounded-sm border border-[#E5E1D8] bg-[#FAF9F6] hover:border-[#4338CA] hover:bg-white active:scale-[0.98] transition-all text-left cursor-pointer"
-                    >
-                      <div className="min-w-0 pr-2">
-                        <div className="font-serif text-sm font-normal text-[#1C1B17] group-hover:text-[#4338CA] transition-colors truncate">
-                          {item.thema}
-                        </div>
-                        {item.sub && (
-                          <div className="font-sans text-[11px] text-[#6B675C] truncate mt-0.2">
-                            {item.sub}
-                          </div>
-                        )}
-                      </div>
-
-                      {item.operatoren.length > 0 && (
-                        <div className="hidden sm:flex gap-1 shrink-0">
-                          {item.operatoren.slice(0, 2).map((op) => (
-                            <span
-                              key={op}
-                              className="font-mono text-[9px] uppercase text-[#6B675C] border border-[#E5E1D8] px-1 py-0.2 rounded-sm bg-white"
-                            >
-                              {op}
-                            </span>
-                          ))}
-                        </div>
-                      )}
-                    </button>
-                  </div>
-                ))}
-              </div>
-            </div>
-          );
-        })}
+                {node.sub && (
+                  <span
+                    style={{
+                      display: "block",
+                      marginTop: "4px",
+                      overflow: "hidden",
+                      textOverflow: "ellipsis",
+                      whiteSpace: "nowrap",
+                      color: rootStyle ? "#E5E1D8" : "#6B675C",
+                      fontFamily: "ui-sans-serif, system-ui, sans-serif",
+                      fontSize: "10px",
+                    }}
+                  >
+                    {node.sub}
+                  </span>
+                )}
+                {node.kind === "topic" && node.note && (
+                  <>
+                    {node.note.operatoren.length > 0 && (
+                      <span
+                        style={{
+                          display: "block",
+                          marginTop: "4px",
+                          overflow: "hidden",
+                          textOverflow: "ellipsis",
+                          whiteSpace: "nowrap",
+                          color: "#6B675C",
+                          fontFamily: "ui-monospace, SFMono-Regular, monospace",
+                          fontSize: "9px",
+                        }}
+                      >
+                        {node.note.operatoren.slice(0, 2).join(" · ")}
+                      </span>
+                    )}
+                    {degree > 0 && (
+                      <span
+                        style={{
+                          display: "block",
+                          marginTop: "3px",
+                          color: "#6B675C",
+                          fontFamily: "ui-monospace, SFMono-Regular, monospace",
+                          fontSize: "9px",
+                        }}
+                      >
+                        {isHub ? `${lang === "de" ? "Hub" : "枢纽"} · ` : ""}
+                        {degree} {lang === "de" ? "Links" : "链接"}
+                      </span>
+                    )}
+                  </>
+                )}
+              </button>
+            );
+          })}
+        </div>
       </div>
 
-      {/* Footer hint */}
-      <div className="border-t border-[#E5E1D8] pt-3 flex items-center justify-between text-xs font-mono text-[#6B675C]">
-        <span>Struktur: Fach (Wurzel) → Thema (Blatt) / 学科（根）→ 主题（叶）</span>
-        <span>Direktsprung zur Bibliothek aktiv</span>
+      <div className="flex flex-wrap items-center justify-between gap-2 border-t border-[#E5E1D8] pt-3 font-mono text-xs text-[#6B675C]">
+        <span>
+          {lang === "de"
+            ? "Struktur: Netzwerk (Wurzel) → Fach → Thema"
+            : "结构：网络（根）→ 学科 → 主题"}
+        </span>
+        <span>
+          {lang === "de"
+            ? "Hubs zeigen die Anzahl der Verbindungen"
+            : "枢纽显示连接数量"}
+        </span>
       </div>
     </div>
   );

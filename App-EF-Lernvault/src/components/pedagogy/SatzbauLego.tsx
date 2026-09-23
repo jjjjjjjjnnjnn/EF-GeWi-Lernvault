@@ -5,6 +5,39 @@
 
 import { useState } from "react";
 
+function CloseIcon() {
+  return (
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.4" aria-hidden="true">
+      <path d="M3.5 3.5l9 9M12.5 3.5l-9 9" />
+    </svg>
+  );
+}
+
+function ResetIcon() {
+  return (
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+      <path d="M3 5.5A5.5 5.5 0 1 1 2.8 10M3 2.5v3h3" />
+    </svg>
+  );
+}
+
+function CheckIcon() {
+  return (
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+      <path d="M3 8.5l3 3L13 4.5" />
+    </svg>
+  );
+}
+
+function InfoIcon() {
+  return (
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.4" aria-hidden="true">
+      <circle cx="8" cy="8" r="6" />
+      <path d="M8 7v4M8 4.7v.2" />
+    </svg>
+  );
+}
+
 export type LegoCategory = "fundstelle" | "verb" | "mittel" | "wirkung";
 
 export interface LegoBlock {
@@ -24,6 +57,7 @@ export interface SatzbauTemplate {
   targetSlots: LegoCategory[];
   availableBlocks: LegoBlock[];
   idealSentenceDE: string;
+  idealSentenceZH?: string;
 }
 
 export const PRESET_TEMPLATES: SatzbauTemplate[] = [
@@ -48,6 +82,7 @@ export const PRESET_TEMPLATES: SatzbauTemplate[] = [
       { id: "w3", category: "wirkung", textDE: "um die Glaubwürdigkeit der eigenen Position zu festigen.", textZH: "从而巩固自身立场的公信力与说服力。", hint: "Wirkungsabsicht" },
     ],
     idealSentenceDE: "In Zeile 14–18 verdeutlicht der Autor mithilfe eines normativen Arguments, um die gesellschaftliche Dringlichkeit hervorzuheben.",
+    idealSentenceZH: "在第14至18行中，作者借助规范性论据明确阐释观点，以突出社会层面的紧迫性。",
   },
   {
     id: "sowi-ungleichheit-1",
@@ -67,6 +102,7 @@ export const PRESET_TEMPLATES: SatzbauTemplate[] = [
       { id: "sw2", category: "wirkung", textDE: "was den Abbau von Startchancen systematisch behindert.", textZH: "在系统层面上阻碍了起点机会均等的实现。", hint: "Klausur-Fazit" },
     ],
     idealSentenceDE: "Im Hinblick auf das Hradil-Modell erweist sich die Bildungsherkunft als primäre Determinante sozialer Mobilität, wodurch das meritokratische Leistungsprinzip partiell ausgehebelt wird.",
+    idealSentenceZH: "从哈迪尔模型来看，家庭教育背景是社会流动的首要决定因素，因而在一定程度上削弱了绩效原则。",
   },
   {
     id: "philo-kant-1",
@@ -86,6 +122,7 @@ export const PRESET_TEMPLATES: SatzbauTemplate[] = [
       { id: "pw2", category: "wirkung", textDE: "da eine Instrumentalisierung der menschlichen Würde vorliegt.", textZH: "因其构成了对人类尊严的工具化侵犯。", hint: "Klausur-Schluss" },
     ],
     idealSentenceDE: "Gemäß der kantischen Pflichtethik widerspricht die geplante Handlung der Menschheitszweckformel (Instrumentalisierungsverbot), da eine Instrumentalisierung der menschlichen Würde vorliegt.",
+    idealSentenceZH: "按照康德义务伦理学，拟定行为违背了人的目的公式（禁止工具化），因为它侵犯了人的尊严。",
   },
 ];
 
@@ -96,34 +133,34 @@ const CATEGORY_META: Record<
   fundstelle: {
     labelDE: "Fundstelle / Kontext",
     labelZH: "① 出处与情境",
-    colorBorder: "border-[#4338CA]",
-    colorBg: "bg-[#EEF2FF]",
-    colorText: "text-[#312E81]",
-    dotColor: "bg-[#4338CA]",
+    colorBorder: "border-[var(--accent)]",
+    colorBg: "bg-[var(--paper-subtle)]",
+    colorText: "text-[var(--ink)]",
+    dotColor: "bg-[var(--accent)]",
   },
   verb: {
     labelDE: "Analytisches Verb",
     labelZH: "② 分析性动词",
-    colorBorder: "border-[#047857]",
-    colorBg: "bg-[#ECFDF5]",
-    colorText: "text-[#065F46]",
-    dotColor: "bg-[#047857]",
+    colorBorder: "border-[var(--line)]",
+    colorBg: "bg-[var(--paper)]",
+    colorText: "text-[var(--ink)]",
+    dotColor: "bg-[var(--gray)]",
   },
   mittel: {
     labelDE: "Mittel / Argumenttyp",
     labelZH: "③ 手法与论据",
-    colorBorder: "border-[#B45309]",
-    colorBg: "bg-[#FFFBEB]",
-    colorText: "text-[#92400E]",
-    dotColor: "bg-[#B45309]",
+    colorBorder: "border-[var(--line)]",
+    colorBg: "bg-[var(--paper)]",
+    colorText: "text-[var(--ink)]",
+    dotColor: "bg-[var(--gray)]",
   },
   wirkung: {
     labelDE: "Wirkungsabsicht / Fazit",
     labelZH: "④ 效果与结论",
-    colorBorder: "border-[#BE185D]",
-    colorBg: "bg-[#FDF2F8]",
-    colorText: "text-[#831843]",
-    dotColor: "bg-[#BE185D]",
+    colorBorder: "border-[var(--line)]",
+    colorBg: "bg-[var(--paper)]",
+    colorText: "text-[var(--ink)]",
+    dotColor: "bg-[var(--gray)]",
   },
 };
 
@@ -213,21 +250,22 @@ export function SatzbauLego({
     activeTemplate.idealSentenceDE.toLowerCase().replace(/[^a-zäöüß0-9]/g, "");
 
   return (
-    <div className="rounded-sm border border-[#E5E1D8] bg-white p-4 sm:p-5 shadow-xs">
+    <div className="rounded-[var(--radius)] border border-[var(--line)] bg-[var(--surface)] p-4 sm:p-5 ">
       {/* 头部：标题与预设选择 */}
-      <div className="flex flex-wrap items-center justify-between gap-2 border-b border-[#E5E1D8] pb-3 mb-4">
+      <div className="flex flex-wrap items-center justify-between gap-2 border-b border-[var(--line)] pb-3 mb-4">
         <div>
           <div className="flex items-center gap-2">
-            <span className="inline-block w-2.5 h-2.5 rounded-full bg-[#4338CA]" />
-            <h3 className="font-serif text-base font-semibold text-[#1C1B17]">
+            <span className="inline-block w-2.5 h-2.5 rounded-full bg-[var(--accent)]" />
+            <h3 className="font-serif text-base  text-[var(--ink)]">
               {lang === "de" ? "Satzbau-Lego" : "句式积木 (Satzbau-Lego)"}
             </h3>
-            <span className="rounded-xs bg-[#4338CA]/10 text-[#4338CA] px-2 py-0.5 text-[10px] font-mono uppercase tracking-wider">
+            <span className="rounded-[var(--radius)] bg-[var(--accent)]/10 text-[var(--accent)] px-2 py-0.5 text-[var(--text-meta)] font-mono uppercase tracking-wider">
               {activeTemplate.fach}
             </span>
           </div>
-          <p className="mt-1 text-xs font-sans text-[#6B675C]">
-            {lang === "de" ? activeTemplate.descriptionDE : activeTemplate.descriptionZH}
+          <p className="mt-1 font-sans text-xs text-[var(--gray)]">
+            <span className="de-reading block text-[var(--ink)]">{activeTemplate.descriptionDE}</span>
+            <span className="zh-translation">{activeTemplate.descriptionZH}</span>
           </p>
         </div>
 
@@ -238,7 +276,7 @@ export function SatzbauLego({
             setSelectedTemplateId(e.target.value);
             handleReset();
           }}
-          className="rounded-xs border border-[#E5E1D8] bg-[#FAF9F6] px-2.5 py-1 text-xs font-mono text-[#1C1B17] focus:border-[#4338CA] focus:outline-none cursor-pointer"
+          className="rounded-[var(--radius)] border border-[var(--line)] bg-[var(--paper)] px-2.5 py-1 text-xs font-mono text-[var(--ink)] focus:border-[var(--accent)] cursor-pointer"
         >
           {PRESET_TEMPLATES.map((tmpl) => (
             <option key={tmpl.id} value={tmpl.id}>
@@ -251,15 +289,16 @@ export function SatzbauLego({
       {/* 拼装工作台 (Slots) */}
       <div className="mb-4">
         <div className="flex items-center justify-between mb-2">
-          <span className="text-[11px] font-mono uppercase tracking-wider text-[#6B675C]">
+          <span className="text-[var(--text-meta)] font-mono uppercase tracking-wider text-[var(--gray)]">
             {lang === "de" ? "Steck-Platte (Ziel-Satz):" : "拼装底板 (目标卡槽):"}
           </span>
           <button
             type="button"
             onClick={handleReset}
-            className="text-[10px] font-mono text-[#6B675C] hover:text-[#1C1B17] cursor-pointer"
+            className="inline-flex items-center gap-1 font-mono text-[var(--text-meta)] text-[var(--gray)] hover:text-[var(--ink)]"
           >
-            {lang === "de" ? "↺ Zurücksetzen" : "↺ 清空插槽"}
+            <ResetIcon />
+            {lang === "de" ? "Zurücksetzen / 清空插槽" : "清空插槽 / Zurücksetzen"}
           </button>
         </div>
 
@@ -271,14 +310,14 @@ export function SatzbauLego({
             return (
               <div
                 key={cat}
-                className={`min-h-[72px] rounded-xs border-2 border-dashed p-2 flex flex-col justify-between transition-all ${
+                className={`min-h-[72px] rounded-[var(--radius)] border-2 border-dashed p-2 flex flex-col justify-between transition-colors ${
                   block
-                    ? `${meta.colorBorder} ${meta.colorBg} border-solid shadow-xs`
-                    : "border-[#E5E1D8] bg-[#FAF9F6] hover:border-[#6B675C]"
+                    ? `${meta.colorBorder} ${meta.colorBg} border-solid `
+                    : "border-[var(--line)] bg-[var(--paper)] hover:border-[var(--gray)]"
                 }`}
               >
                 <div className="flex items-center justify-between mb-1">
-                  <span className="flex items-center gap-1.5 text-[10px] font-mono font-medium text-[#6B675C]">
+                  <span className="flex items-center gap-1.5 text-[var(--text-meta)] font-mono font-medium text-[var(--gray)]">
                     <span className={`w-1.5 h-1.5 rounded-full ${meta.dotColor}`} />
                     {lang === "de" ? meta.labelDE : meta.labelZH}
                   </span>
@@ -286,26 +325,27 @@ export function SatzbauLego({
                     <button
                       type="button"
                       onClick={() => handleUndock(cat)}
-                      className="text-[#6B675C] hover:text-[#991B1B] text-xs font-mono px-1 cursor-pointer"
-                      title={lang === "de" ? "Lösen" : "取下积木"}
+                      className="rounded-[var(--radius)] p-1 font-mono text-[var(--gray)] hover:text-[var(--warning)]"
+                      title={lang === "de" ? "Lösen / 取下积木" : "取下积木 / Lösen"}
+                      aria-label={lang === "de" ? "Baustein lösen / 取下积木" : "取下积木 / Baustein lösen"}
                     >
-                      ✕
+                      <CloseIcon />
                     </button>
                   )}
                 </div>
 
                 {block ? (
-                  <div className="animate-in fade-in zoom-in-95 duration-150">
+                  <div className="">
                     <p className={`font-serif text-xs font-medium ${meta.colorText} leading-tight`}>
                       {block.textDE}
                     </p>
-                    <p className="mt-0.5 font-sans text-[10px] text-[#6B675C] truncate">
+                    <p className="mt-0.5 font-sans text-[var(--text-meta)] text-[var(--gray)] truncate">
                       {block.textZH}
                     </p>
                   </div>
                 ) : (
-                  <div className="flex items-center justify-center h-8 text-[11px] font-sans text-[#6B675C]/60 italic">
-                    {lang === "de" ? "Baustein wählen ↓" : "点击下方积木放入 ↓"}
+                  <div className="flex items-center justify-center h-8 text-[var(--text-meta)] font-sans text-[var(--gray)]/60">
+                    {lang === "de" ? "Baustein wählen / 点击下方选择积木" : "点击下方选择积木 / Baustein wählen"}
                   </div>
                 )}
               </div>
@@ -316,10 +356,10 @@ export function SatzbauLego({
 
       {/* 拼装成果实时预览条 */}
       {isFull && (
-        <div className="mb-4 rounded-xs border border-[#C7D2FE] bg-[#F5F7FF] p-3 text-xs leading-relaxed animate-in fade-in duration-200">
-          <div className="flex items-center justify-between font-mono text-[10px] text-[#4338CA] mb-1.5">
-            <span className="flex items-center gap-1 font-semibold">
-              <svg className="w-3.5 h-3.5" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.6">
+        <div className="mb-4 rounded-[var(--radius)] border border-[var(--accent)] bg-[var(--paper-subtle)] p-3 text-xs leading-relaxed">
+          <div className="flex items-center justify-between font-mono text-[var(--text-meta)] text-[var(--accent)] mb-1.5">
+            <span className="flex items-center gap-1 ">
+              <svg width="16" height="16" aria-hidden="true" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.6">
                 <path d="M2.5 8.5l3.5 3.5 7.5-7.5" />
               </svg>
               <span>{lang === "de" ? "Vollständiger Klausur-Satz" : "拼装完成的高分考纲句"}</span>
@@ -328,53 +368,58 @@ export function SatzbauLego({
               <button
                 type="button"
                 onClick={() => setChecked(true)}
-                className="text-[10px] font-mono text-[#4338CA] hover:underline cursor-pointer"
+                className="text-[var(--text-meta)] font-mono text-[var(--accent)] hover:underline cursor-pointer"
               >
                 {lang === "de" ? "Prüfen" : "考纲标准度校验"}
               </button>
               <button
                 type="button"
                 onClick={handleCopy}
-                className="inline-flex items-center gap-1 rounded-xs bg-[#4338CA] text-white px-2.5 py-0.5 text-[10px] font-sans hover:bg-[#3730A3] transition-colors cursor-pointer"
+                className="inline-flex items-center gap-1 rounded-[var(--radius)] border border-[var(--accent)] px-2.5 py-0.5 font-sans text-[var(--text-meta)] text-[var(--accent)] transition-colors"
               >
-                <svg className="w-3 h-3" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.6">
+                <svg width="16" height="16" aria-hidden="true" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.6">
                   <path d="M11.5 4.5H4.5a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1v-6a1 1 0 0 0-1-1z" />
                   <path d="M4.5 4.5V3a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v6a1 1 0 0 1-1 1h-1.5" />
                 </svg>
-                <span>{copied ? (lang === "de" ? "✓ Kopiert" : "✓ 已复制") : (lang === "de" ? "Kopieren" : "复制句子")}</span>
+                <span>{copied ? (lang === "de" ? "Kopiert / 已复制" : "已复制 / Kopiert") : (lang === "de" ? "Kopieren / 复制句子" : "复制句子 / Kopieren")}</span>
               </button>
             </div>
           </div>
 
-          <p className="font-serif text-sm text-[#1C1B17] font-medium leading-relaxed">
+          <p className="font-serif text-sm text-[var(--ink)] font-medium leading-relaxed">
             „{constructedSentence}“
           </p>
 
           {checked && (
             <div
-              className={`mt-2 rounded-xs border p-2 text-[11px] font-mono leading-relaxed transition-all ${
+              className={`mt-2 rounded-[var(--radius)] border p-2 text-[var(--text-meta)] font-mono leading-relaxed transition-colors ${
                 isExactIdeal
-                  ? "border-[#A7F3D0] bg-[#ECFDF5] text-[#065F46]"
-                  : "border-[#FDE68A] bg-[#FFFBEB] text-[#92400E]"
+                  ? "border-[var(--success)] bg-[var(--paper-subtle)] text-[var(--success)]"
+                  : "border-[var(--warning)] bg-[var(--paper-subtle)] text-[var(--warning)]"
               }`}
             >
               {isExactIdeal ? (
-                <span>
-                  ✓ {lang === "de" ? "Exzellent! Erfüllt alle AFB-II/III Kriterien optimal." : "完美组合！完全契合北威州评分细目表 (EHZ) 与分析句动词搭配。"}
+                <span className="inline-flex items-start gap-1.5">
+                  <CheckIcon />
+                  <span>{lang === "de" ? "Exzellent! Erfüllt alle AFB-II/III Kriterien optimal. / 完美组合，完全满足考纲要求。" : "完美组合！完全契合北威州评分细目表 (EHZ) 与分析句动词搭配。 / Exzellent!"}</span>
                 </span>
               ) : (
                 <div className="flex items-center justify-between">
-                  <span>
-                    ℹ {lang === "de" ? "Syntaktisch valide! Tipp: Prüfe die ideale Formulierung:" : "语法完全成立！亦可参考官方标杆表述："}
-                    <span className="block font-serif font-medium mt-0.5 text-[#1C1B17]">
-                      „{activeTemplate.idealSentenceDE}“
+                  <span className="inline-flex items-start gap-1.5">
+                    <InfoIcon />
+                    <span>
+                      {lang === "de" ? "Syntaktisch valide! Tipp: Prüfe die ideale Formulierung: / 语法成立，可参考标杆句：" : "语法完全成立！亦可参考官方标杆表述： / Syntaktisch valide!"}
+                      <span className="mt-0.5 block font-serif text-[var(--ink)]">
+                        „{activeTemplate.idealSentenceDE}“
+                        <span className="zh-translation font-sans">{activeTemplate.idealSentenceZH}</span>
+                      </span>
                     </span>
                   </span>
                   {onJumpToFehlerlog && (
                     <button
                       type="button"
                       onClick={() => onJumpToFehlerlog(constructedSentence)}
-                      className="shrink-0 text-[10px] text-[#B45309] underline hover:text-[#1C1B17] ml-2 cursor-pointer"
+                      className="shrink-0 text-[var(--text-meta)] text-[var(--warning)] underline hover:text-[var(--ink)] ml-2 cursor-pointer"
                     >
                       {lang === "de" ? "In Fehlerlog" : "存入错题备查"}
                     </button>
@@ -389,10 +434,10 @@ export function SatzbauLego({
       {/* 待选积木池 (Block Reservoir) */}
       <div>
         <div className="flex items-center justify-between mb-2">
-          <span className="text-[11px] font-mono uppercase tracking-wider text-[#6B675C]">
+          <span className="text-[var(--text-meta)] font-mono uppercase tracking-wider text-[var(--gray)]">
             {lang === "de" ? "Verfügbare Bausteine (Klicken zum Einstecken):" : "可用备选积木库 (点击自动放入对应卡槽):"}
           </span>
-          <span className="text-[10px] font-mono text-[#6B675C]">
+          <span className="text-[var(--text-meta)] font-mono text-[var(--gray)]">
             {activeTemplate.availableBlocks.length} {lang === "de" ? "Bausteine" : "块积木"}
           </span>
         </div>
@@ -407,27 +452,27 @@ export function SatzbauLego({
                 key={blk.id}
                 type="button"
                 onClick={() => (isDocked ? handleUndock(blk.category) : handleDock(blk))}
-                className={`group flex flex-col justify-between rounded-xs border p-2.5 text-left transition-all cursor-pointer ${
+                className={`group flex flex-col justify-between rounded-[var(--radius)] border p-2.5 text-left transition-colors cursor-pointer ${
                   isDocked
-                    ? `${meta.colorBorder} ${meta.colorBg} ring-1 ${meta.colorBorder}/20 shadow-xs`
-                    : "border-[#E5E1D8] bg-[#FAF9F6] hover:border-[#6B675C] hover:bg-white"
+                    ? `${meta.colorBorder} ${meta.colorBg} ring-1 ${meta.colorBorder}/20 `
+                    : "border-[var(--line)] bg-[var(--paper)] hover:border-[var(--gray)] hover:bg-[var(--surface)]"
                 }`}
               >
                 <div className="flex items-center justify-between mb-1.5 w-full">
-                  <span className={`inline-flex items-center gap-1 rounded-xs px-1.5 py-0.2 text-[9px] font-mono ${meta.colorBg} ${meta.colorText} border ${meta.colorBorder}/30`}>
+                  <span className={`inline-flex items-center gap-1 rounded-[var(--radius)] px-1.5 py-0.2 text-[var(--text-meta)] font-mono ${meta.colorBg} ${meta.colorText} border ${meta.colorBorder}/30`}>
                     <span className={`w-1 h-1 rounded-full ${meta.dotColor}`} />
                     {lang === "de" ? meta.labelDE : meta.labelZH}
                   </span>
-                  <span className="text-[9px] font-mono text-[#6B675C]">
-                    {isDocked ? (lang === "de" ? "✓ Gesteckt" : "✓ 已插入") : "+ 插卡"}
+                  <span className="text-[var(--text-meta)] font-mono text-[var(--gray)]">
+                    {isDocked ? (lang === "de" ? "Gesteckt / 已插入" : "已插入 / Gesteckt") : (lang === "de" ? "Einstecken / 插卡" : "插卡 / Einstecken")}
                   </span>
                 </div>
 
                 <div className="w-full">
-                  <p className="font-serif text-xs font-semibold text-[#1C1B17] group-hover:text-[#4338CA] transition-colors leading-tight">
+                  <p className="font-serif text-xs  text-[var(--ink)] group-hover:text-[var(--accent)] transition-colors leading-tight">
                     {blk.textDE}
                   </p>
-                  <p className="mt-1 font-sans text-[10px] text-[#6B675C] line-clamp-1">
+                  <p className="mt-1 font-sans text-[var(--text-meta)] text-[var(--gray)] line-clamp-1">
                     {blk.textZH}
                   </p>
                 </div>

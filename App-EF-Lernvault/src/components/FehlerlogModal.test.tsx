@@ -1,5 +1,5 @@
 import { describe, it, expect, vi, beforeEach } from "vitest";
-import { render, screen, fireEvent, waitFor } from "@testing-library/react";
+import { render, screen, fireEvent, waitFor, within } from "@testing-library/react";
 import { FehlerlogModal } from "./FehlerlogModal";
 import type { FehlerlogDraft } from "../ai/socratic";
 
@@ -36,6 +36,23 @@ describe("FehlerlogModal.tsx - Interaktiver Fehler-Erfassungs-Dialog", () => {
     fireEvent.change(fachSelect, { target: { value: "Philosophie" } });
 
     expect(screen.getByText(/07_Philosophie\/Klausur-Training\/Fehlerlog\.md/)).toBeTruthy();
+  });
+
+  it("offers all ten subjects and closes on Escape", () => {
+    const closeSpy = vi.fn();
+    render(
+      <FehlerlogModal
+        draft={{ ...mockDraft, fach: "Musik" }}
+        onClose={closeSpy}
+        lang="zh"
+      />
+    );
+
+    const select = screen.getByDisplayValue("Musik (09_Musik-mündl)");
+    expect(within(select).getAllByRole("option")).toHaveLength(10);
+    expect(screen.getByText(/09_Musik-mündl\/Klausur-Training\/Fehlerlog\.md/)).toBeTruthy();
+    fireEvent.keyDown(screen.getByRole("dialog"), { key: "Escape" });
+    expect(closeSpy).toHaveBeenCalledOnce();
   });
 
   it("kopiert den generierten Patch in die Zwischenablage und zeigt Feedback", async () => {

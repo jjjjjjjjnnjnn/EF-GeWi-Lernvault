@@ -1,4 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from "react";
+import { MODULE_KEYS } from "../keys";
+import { useDialogFocus } from "./HelpOverlay";
 
 export interface PaletteItem {
   id: string;
@@ -6,30 +8,24 @@ export interface PaletteItem {
   label: string;
   sub?: string;
   hint?: string;
+  shortcutId?: string;
   run: () => void;
 }
 
-export default function Palette({
-  open,
-  onClose,
-  items,
-}: {
-  open: boolean;
-  onClose: () => void;
-  items: PaletteItem[];
-}) {
+export default function Palette({ open, onClose, items }: { open: boolean; onClose: () => void; items: PaletteItem[] }) {
   const [q, setQ] = useState("");
   const [active, setActive] = useState(0);
   const inputRef = useRef<HTMLInputElement>(null);
+  const dialogRef = useDialogFocus(open, onClose);
 
   const filtered = useMemo(() => {
-    const s = q.trim().toLowerCase();
-    if (!s) return items;
+    const search = q.trim().toLowerCase();
+    if (!search) return items;
     return items.filter(
-      (i) =>
-        i.label.toLowerCase().includes(s) ||
-        (i.sub ?? "").toLowerCase().includes(s) ||
-        i.group.toLowerCase().includes(s)
+      (item) =>
+        item.label.toLowerCase().includes(search) ||
+        (item.sub ?? "").toLowerCase().includes(search) ||
+        item.group.toLowerCase().includes(search)
     );
   }, [q, items]);
 
@@ -37,26 +33,22 @@ export default function Palette({
     if (open) {
       setQ("");
       setActive(0);
-      setTimeout(() => inputRef.current?.focus(), 30);
     }
-  }, [open ]);
+  }, [open]);
 
   useEffect(() => setActive(0), [q]);
 
   useEffect(() => {
     if (!open) return;
-    const onKey = (e: KeyboardEvent) => {
-      if (e.key === "Escape") {
-        e.preventDefault();
-        onClose();
-      } else if (e.key === "ArrowDown") {
-        e.preventDefault();
-        setActive((a) => Math.min(a + 1, filtered.length - 1));
-      } else if (e.key === "ArrowUp") {
-        e.preventDefault();
-        setActive((a) => Math.max(a - 1, 0));
-      } else if (e.key === "Enter") {
-        e.preventDefault();
+    const onKey = (event: KeyboardEvent) => {
+      if (event.key === "ArrowDown") {
+        event.preventDefault();
+        setActive((current) => Math.min(current + 1, filtered.length - 1));
+      } else if (event.key === "ArrowUp") {
+        event.preventDefault();
+        setActive((current) => Math.max(current - 1, 0));
+      } else if (event.key === "Enter") {
+        event.preventDefault();
         const item = filtered[active];
         if (item) {
           onClose();
@@ -70,58 +62,69 @@ export default function Palette({
 
   if (!open) return null;
   let lastGroup = "";
+
   return (
     <div
-      className="fixed inset-0 z-50 flex justify-center bg-[#1C1B17]/20 pt-[14vh]"
-      onClick={onClose}
+      className="fixed inset-0 z-50 flex justify-center bg-[var(--overlay)] pt-[14vh]"
+      onMouseDown={(event) => {
+        if (event.target === event.currentTarget) onClose();
+      }}
     >
       <div
-        className="palette-enter h-fit w-full max-w-xl border border-[#E5E1D8] bg-[#FAFAF7]"
-        onClick={(e) => e.stopPropagation()}
+        ref={dialogRef}
+        className="palette-enter h-fit w-full max-w-xl rounded-[var(--radius)] border border-[var(--line)] bg-[var(--surface)]"
         role="dialog"
+        aria-modal="true"
         aria-label="Befehlspalette / 命令面板"
+        tabIndex={-1}
       >
         <input
           ref={inputRef}
+          data-dialog-initial-focus
           value={q}
-          onChange={(e) => setQ(e.target.value)}
+          onChange={(event) => setQ(event.target.value)}
           placeholder="Befehl oder Notiz suchen… / 搜索命令或笔记…"
-          className="w-full border-b border-[#E5E1D8] bg-transparent px-4 py-3 font-sans text-sm text-[#1C1B17] placeholder:text-[#6B675C] focus:outline-none"
+          className="w-full border-b border-[var(--line)] bg-transparent px-4 py-3 font-sans text-sm text-[var(--ink)] placeholder:text-[var(--gray)]"
         />
         <div className="max-h-80 overflow-y-auto py-1">
-          {filtered.map((item, i) => {
-            const head =
+          {filtered.map((item, index) => {
+            const shortcut = item.shortcutId
+              ? MODULE_KEYS.find((binding) => binding.id === item.shortcutId)
+              : undefined;
+            const hint = shortcut?.altHint ?? item.hint;
+            const heading =
               item.group !== lastGroup ? (
-                <div className="px-4 pb-1 pt-2 font-mono text-[11px] uppercase tracking-wider text-[#6B675C]">
+                <div className="px-4 pb-1 pt-2 font-mono text-[var(--text-meta)] uppercase tracking-wider text-[var(--gray)]">
                   {item.group}
                 </div>
               ) : null;
             lastGroup = item.group;
             return (
               <div key={item.id}>
-                {head}
+                {heading}
                 <button
                   type="button"
                   onClick={() => {
                     onClose();
                     item.run();
                   }}
-                  onMouseEnter={() => setActive(i)}
+                  onMouseEnter={() => setActive(index)}
+                  aria-current={index === active ? "true" : undefined}
                   className={`flex w-full items-center justify-between px-4 py-2 text-left ${
-                    i === active ? "bg-[#ECE7DC]/50" : ""
+                    index === active ? "bg-[var(--paper-subtle)]" : ""
                   }`}
                 >
                   <span>
-                    <span className="block font-sans text-sm text-[#1C1B17]">{item.label}</span>
-                    {item.sub && <span className="block font-sans text-xs text-[#6B675C]">{item.sub}</span>}
+                    <span className="block font-sans text-sm text-[var(--ink)]">{item.label}</span>
+                    {item.sub && <span className="block font-sans text-xs text-[var(--gray)]">{item.sub}</span>}
                   </span>
-                  {item.hint && <span className="font-mono text-[11px] text-[#6B675C]">{item.hint}</span>}
+                  {hint && <span className="font-mono text-[var(--text-meta)] text-[var(--gray)]">{hint}</span>}
                 </button>
               </div>
             );
           })}
           {filtered.length === 0 && (
-            <div className="px-4 py-6 text-center font-sans text-sm text-[#6B675C]">
+            <div className="px-4 py-6 text-center font-sans text-sm text-[var(--gray)]">
               Keine Treffer / 无结果
             </div>
           )}

@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { t, type Lang } from "../i18n";
 import { FAECHER, getFachLabel, type FachId } from "../fach";
 import { onboardingStore, planStore } from "../engine/stores";
-import { isTyping } from "../keys";
+import { ONBOARDING_KEYS, isTyping, matchesKey } from "../keys";
 
 export interface OnboardingResult {
   faecher: FachId[];
@@ -58,9 +58,9 @@ export default function Onboarding({
   // Enter = weiter, aber nie aus Eingabefeldern heraus (isTyping-Schutz).
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
-      if (e.key !== "Enter" || isTyping()) return;
+      if (isTyping() || !matchesKey(e, ONBOARDING_KEYS[0])) return;
       e.preventDefault();
-      setStep((s) => Math.min(s + 1, 2));
+      setStep((current) => Math.min(current + 1, 2));
     };
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
@@ -169,7 +169,11 @@ export default function Onboarding({
                           on ? "border-[#4338CA] bg-[#4338CA] text-white" : "border-[#6B675C] text-transparent"
                         }`}
                       >
-                        ✓
+                        {on && (
+                          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                            <path d="M3.5 8.5l3 3 6-7" />
+                          </svg>
+                        )}
                       </span>
                       <span className="font-mono text-[11px] text-[#6B675C]">{f.kurz}</span>
                       <span className={`font-sans text-sm ${on ? "font-medium text-[#1C1B17]" : "text-[#6B675C]"}`}>

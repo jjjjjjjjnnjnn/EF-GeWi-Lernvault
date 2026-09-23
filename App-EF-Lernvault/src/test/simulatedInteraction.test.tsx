@@ -61,7 +61,7 @@ describe("Simulated Interactive Testing (应用内模拟交互测试规范)", ()
     expect(screen.getAllByText(/LM Studio/).length).toBeGreaterThan(0);
 
     // 2. 验证测试按钮存在并点击
-    const pingBtn = screen.getByText("⚡ 测试连接");
+    const pingBtn = screen.getByText(/Verbindung testen \/ 测试连接|测试连接 \/ Verbindung testen/);
     expect(pingBtn).toBeDefined();
 
     fireEvent.click(pingBtn);
@@ -98,7 +98,7 @@ describe("Simulated Interactive Testing (应用内模拟交互测试规范)", ()
 
     render(<AiSettings lang="zh" />);
 
-    const probeBtn = screen.getByText("💬 实时对话探针");
+    const probeBtn = screen.getByText(/Chat-Test \/ 实时对话探针|实时对话探针 \/ Chat-Test/);
     expect(probeBtn).toBeDefined();
 
     fireEvent.click(probeBtn);
@@ -128,7 +128,7 @@ describe("Simulated Interactive Testing (应用内模拟交互测试规范)", ()
 
     render(<AiSettings lang="zh" />);
 
-    const probeBtn = screen.getByText("💬 实时对话探针");
+    const probeBtn = screen.getByText(/Chat-Test \/ 实时对话探针|实时对话探针 \/ Chat-Test/);
     fireEvent.click(probeBtn);
 
     // 验证在界面上直接给出针对性建议，用户不用切出 App
@@ -161,7 +161,7 @@ describe("Simulated Interactive Testing (应用内模拟交互测试规范)", ()
     fireEvent.click(endpointsTabBtn);
 
     // 找到卡片上的对话探针按钮并触发
-    const probeButtons = screen.getAllByText("💬 对话探针");
+    const probeButtons = screen.getAllByText(/Chat-Test \/ (实时)?对话探针|(实时)?对话探针 \/ Chat-Test/);
     expect(probeButtons.length).toBeGreaterThan(0);
 
     fireEvent.click(probeButtons[0]);

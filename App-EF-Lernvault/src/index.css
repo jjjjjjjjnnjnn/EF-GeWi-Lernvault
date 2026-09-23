@@ -1,84 +1,182 @@
 @import "tailwindcss";
 @import "katex/dist/katex.min.css";
 
-/* Tufte KaTeX typography: ink black, loose line-height, zero colored decorations */
-.katex {
-  color: var(--ink) !important;
-  font-size: 1em;
-}
-.katex-display {
-  margin: 0.75em 0 !important;
-  font-size: 1.05em;
-  overflow-x: auto;
-  overflow-y: hidden;
-  padding: 0.25em 0;
-}
-
 :root {
   color-scheme: light;
   --paper: #FAFAF7;
   --paper-subtle: #F3EFE6;
+  --surface: #FFFEFB;
+  --overlay: rgba(28, 27, 23, 0.28);
   --ink: #1C1B17;
-  --ink-secondary: #6B675C;
-  --hairline: #E5E1D8;
+  --gray: #6B675C;
+  --line: #E5E1D8;
   --accent: #4338CA;
-  /* Motion (Linear-grade): micro 100ms, standard 150ms, view 250ms, ease-out only */
-  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --focus: #4338CA;
+  --success: #3F6B52;
+  --warning: #A55245;
+  --sp-1: 2px;
+  --sp-2: 4px;
+  --sp-3: 8px;
+  --sp-4: 12px;
+  --sp-5: 16px;
+  --sp-6: 24px;
+  --sp-7: 32px;
+  --sp-8: 48px;
+  --radius: 3px;
+  --text-meta: 12px;
+  --font-de: Georgia, "Songti SC", "SimSun", serif;
+  --font-zh: system-ui, -apple-system, "Segoe UI", "PingFang SC", "Noto Sans SC", "Microsoft YaHei", sans-serif;
+  --font-mono: ui-monospace, "SF Mono", Consolas, "Liberation Mono", Menlo, monospace;
+  --ease-out: cubic-bezier(0.16,1,0.3,1);
   --dur-fast: 100ms;
   --dur-normal: 150ms;
   --dur-view: 250ms;
+  --dur-card: 0.48s;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: var(--paper);
 }
 
 body {
-  background-color: var(--paper);
-  color: var(--ink);
-  font-family: system-ui, -apple-system, "Segoe UI", "PingFang SC", "Noto Sans SC", "Microsoft YaHei", sans-serif;
   margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-de);
+  font-size: 16px;
+  line-height: 1.5;
   -webkit-font-smoothing: antialiased;
 }
 
-/* Classical serif font for German academic text and primary headings */
-.font-serif {
-  font-family: Georgia, "Songti SC", "SimSun", "Times New Roman", serif;
+button,
+input,
+select,
+textarea {
+  font: inherit;
 }
 
-/* Humanist sans for Chinese annotations and UI labels */
-.font-sans {
-  font-family: system-ui, -apple-system, "Segoe UI", "PingFang SC", "Noto Sans SC", "Microsoft YaHei", sans-serif;
+button:not(:disabled) {
+  cursor: pointer;
 }
 
-/* Monospace for exam timers, operator codes, and specimen boxes */
+:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 2px;
+}
+
+.katex {
+  color: var(--ink) !important;
+  font-size: 1em;
+}
+
+.katex-display {
+  margin: 0.75em 0 !important;
+  padding: 0.25em 0;
+  overflow-x: auto;
+  overflow-y: hidden;
+  font-size: 1.05em;
+}
+
+.font-serif,
+.de-reading {
+  font-family: var(--font-de);
+  font-weight: 400;
+}
+
+.font-sans,
+.zh-translation {
+  font-family: var(--font-zh);
+}
+
 .font-mono {
-  font-family: ui-monospace, "SF Mono", Consolas, "Liberation Mono", Menlo, monospace;
+  font-family: var(--font-mono);
 }
 
-/* German compound words overflow prevention */
+.de-heading,
+.de-heading h1,
+.de-heading h2,
+.de-heading h3 {
+  font-family: var(--font-de);
+  font-weight: 400;
+  letter-spacing: -0.01em;
+}
+
+.de-heading h1,
+h1.de-heading {
+  font-size: 1.8rem;
+  line-height: 1.25;
+}
+
+.de-heading h2,
+h2.de-heading {
+  font-size: 1.3rem;
+  line-height: 1.3;
+}
+
+.de-heading h3,
+h3.de-heading {
+  font-size: 1.1rem;
+  line-height: 1.35;
+}
+
+.bilingual {
+  display: flex;
+  flex-direction: column;
+}
+
+.zh-translation {
+  display: block;
+  color: var(--gray);
+  font-size: 0.875em;
+  line-height: 1.45;
+}
+
+.exam-reading,
+.exam-reading i,
+.exam-reading em {
+  font-style: normal;
+}
+
+.meta-text {
+  font-size: var(--text-meta);
+}
+
+.token-radius {
+  border-radius: var(--radius);
+}
+
 .break-words {
   overflow-wrap: break-word;
   word-break: break-word;
   hyphens: auto;
 }
 
-/* Smooth 3D card flip without bouncy spring */
 .card-flip {
   perspective: 1200px;
 }
+
 .card-inner {
   transform-style: preserve-3d;
-  transition: transform 0.48s cubic-bezier(0.25, 1, 0.5, 1);
+  transition: transform var(--dur-card) cubic-bezier(0.25, 1, 0.5, 1);
 }
+
 .card-flipped {
   transform: rotateY(180deg);
 }
+
 .card-face {
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
 }
+
 .card-back {
   transform: rotateY(180deg);
 }
 
-/* View transitions: opacity + 6px rise, ease-out, no bounce */
 @keyframes rise {
   from {
     opacity: 0;
@@ -89,9 +187,26 @@ body {
     transform: translateY(0);
   }
 }
+
 .tab-enter {
   animation: rise 180ms var(--ease-out);
 }
+
 .palette-enter {
-  animation: rise 150ms var(--ease-out);
+  animation: rise var(--dur-normal) var(--ease-out);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
 }

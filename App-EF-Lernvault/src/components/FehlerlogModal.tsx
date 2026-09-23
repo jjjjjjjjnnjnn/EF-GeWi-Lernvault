@@ -1,10 +1,11 @@
-import { useState, useId } from "react";
+import { useId, useState } from "react";
 import {
   type FehlerlogDraft,
   formatFehlerlogMarkdownRow,
   formatFehlerlogPatch,
   getFachFolderName,
 } from "../ai/socratic";
+import { useDialogFocus } from "./HelpOverlay";
 
 interface FehlerlogModalProps {
   draft: FehlerlogDraft;
@@ -12,9 +13,19 @@ interface FehlerlogModalProps {
   lang?: "de" | "zh";
 }
 
+function FieldLabel({ htmlFor, de, zh }: { htmlFor: string; de: string; zh: string }) {
+  return (
+    <label htmlFor={htmlFor} className="mb-1 block font-sans text-[var(--text-meta)] font-medium text-[var(--gray)]">
+      <span className="de-reading">{de}</span>
+      <span className="zh-translation">{zh}</span>
+    </label>
+  );
+}
+
 export function FehlerlogModal({ draft: initialDraft, onClose, lang = "zh" }: FehlerlogModalProps) {
   const [draft, setDraft] = useState<FehlerlogDraft>(initialDraft);
   const [copied, setCopied] = useState(false);
+  const dialogRef = useDialogFocus(true, onClose);
 
   const fachSelectId = useId();
   const themaInputId = useId();
@@ -30,13 +41,12 @@ export function FehlerlogModal({ draft: initialDraft, onClose, lang = "zh" }: Fe
       setCopied(true);
       setTimeout(() => setCopied(false), 2500);
     } catch {
-      // Fallback
-      const ta = document.createElement("textarea");
-      ta.value = patch;
-      document.body.appendChild(ta);
-      ta.select();
+      const textarea = document.createElement("textarea");
+      textarea.value = patch;
+      document.body.appendChild(textarea);
+      textarea.select();
       document.execCommand("copy");
-      document.body.removeChild(ta);
+      document.body.removeChild(textarea);
       setCopied(true);
       setTimeout(() => setCopied(false), 2500);
     }
@@ -44,101 +54,58 @@ export function FehlerlogModal({ draft: initialDraft, onClose, lang = "zh" }: Fe
 
   const folder = getFachFolderName(draft.fach);
   const markdownRow = formatFehlerlogMarkdownRow(draft);
+  const inputClass = "w-full rounded-[var(--radius)] border border-[var(--line)] bg-[var(--surface)] px-3 py-1.5 font-sans text-[13px] text-[var(--ink)]";
 
   return (
     <div
-      role="dialog"
-      aria-modal="true"
-      aria-labelledby="fehlerlog-modal-title"
-      style={{
-        position: "fixed",
-        inset: 0,
-        backgroundColor: "rgba(15, 23, 42, 0.45)",
-        backdropFilter: "blur(2px)",
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
-        zIndex: 9999,
-        padding: "16px",
-      }}
-      onClick={(e) => {
-        if (e.target === e.currentTarget) onClose();
+      className="fixed inset-0 z-[9999] flex items-center justify-center bg-[var(--overlay)] p-4"
+      onMouseDown={(event) => {
+        if (event.target === event.currentTarget) onClose();
       }}
     >
       <div
-        style={{
-          backgroundColor: "#ffffff",
-          borderRadius: "8px",
-          width: "100%",
-          maxWidth: "640px",
-          maxHeight: "90vh",
-          display: "flex",
-          flexDirection: "column",
-          boxShadow: "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1)",
-          border: "1px solid #e2e8f0",
-          overflow: "hidden",
-        }}
+        ref={dialogRef}
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="fehlerlog-modal-title"
+        tabIndex={-1}
+        className="flex max-h-[90vh] w-full max-w-[640px] flex-col overflow-hidden rounded-[var(--radius)] border border-[var(--line)] bg-[var(--surface)]"
       >
-        {/* Header */}
-        <div
-          style={{
-            padding: "16px 20px",
-            borderBottom: "1px solid #e2e8f0",
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "space-between",
-            backgroundColor: "#f8fafc",
-          }}
-        >
-          <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2563eb" strokeWidth="2">
-              <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
+        <div className="flex items-center justify-between border-b border-[var(--line)] bg-[var(--paper-subtle)] px-5 py-4">
+          <div className="flex items-start gap-2">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.4" aria-hidden="true" className="mt-1 text-[var(--accent)]">
+              <path d="M4 2.5h5l3 3v8H4z" />
+              <path d="M9 2.5v3h3M6 8h4M6 10.5h4" />
             </svg>
-            <h2 id="fehlerlog-modal-title" style={{ margin: 0, fontSize: "16px", fontWeight: 600, color: "#0f172a" }}>
+            <h2 id="fehlerlog-modal-title" className="de-heading text-base text-[var(--ink)]">
               {lang === "de" ? "In Fehlerlog erfassen (Obsidian-Patch)" : "沉淀为错题补丁 (Fehlerlog Patch)"}
+              <span className="zh-translation mt-0.5 font-sans text-xs font-normal">
+                {lang === "de" ? "将错题写入 Fehlerlog 补丁" : "In Fehlerlog erfassen (Obsidian-Patch)"}
+              </span>
             </h2>
           </div>
           <button
+            type="button"
             onClick={onClose}
-            aria-label="Schließen"
-            style={{
-              border: "none",
-              background: "none",
-              cursor: "pointer",
-              color: "#64748b",
-              padding: "4px",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              borderRadius: "4px",
-            }}
+            aria-label={lang === "de" ? "Schließen / 关闭" : "关闭 / Schließen"}
+            data-dialog-initial-focus
+            className="rounded-[var(--radius)] p-1 text-[var(--gray)] hover:text-[var(--ink)]"
           >
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-              <line x1="18" y1="6" x2="6" y2="18" />
-              <line x1="6" y1="6" x2="18" y2="18" />
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.4" aria-hidden="true">
+              <path d="M3.5 3.5l9 9M12.5 3.5l-9 9" />
             </svg>
           </button>
         </div>
 
-        {/* Form Body */}
-        <div style={{ padding: "20px", overflowY: "auto", display: "flex", flexDirection: "column", gap: "14px" }}>
-          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "12px" }}>
+        <div className="flex flex-col gap-3 overflow-y-auto p-5">
+          <div className="grid grid-cols-1 gap-3 xl:grid-cols-2">
             <div>
-              <label htmlFor={fachSelectId} style={{ display: "block", fontSize: "12px", fontWeight: 500, color: "#475569", marginBottom: "4px" }}>
-                {lang === "de" ? "Fach" : "学科 (Fach)"}
-              </label>
+              <FieldLabel htmlFor={fachSelectId} de="Fach" zh="学科" />
               <select
                 id={fachSelectId}
                 value={draft.fach}
-                onChange={(e) => setDraft({ ...draft, fach: e.target.value })}
-                style={{
-                  width: "100%",
-                  padding: "6px 10px",
-                  borderRadius: "6px",
-                  border: "1px solid #cbd5e1",
-                  fontSize: "13px",
-                  backgroundColor: "#ffffff",
-                }}
+                onChange={(event) => setDraft({ ...draft, fach: event.target.value })}
+                className={inputClass}
               >
                 <option value="SoWi">SoWi (08_SoWi)</option>
                 <option value="Philosophie">Philosophie (07_Philosophie)</option>
@@ -148,219 +115,128 @@ export function FehlerlogModal({ draft: initialDraft, onClose, lang = "zh" }: Fe
                 <option value="Physik">Physik (04_Physik)</option>
                 <option value="Chemie">Chemie (05_Chemie)</option>
                 <option value="Bio">Bio (06_Bio)</option>
+                <option value="Musik">Musik (09_Musik-mündl)</option>
+                <option value="Sport">Sport (10_Sport-mündl)</option>
               </select>
             </div>
-
             <div>
-              <label htmlFor={themaInputId} style={{ display: "block", fontSize: "12px", fontWeight: 500, color: "#475569", marginBottom: "4px" }}>
-                {lang === "de" ? "Thema" : "主题 (Thema)"}
-              </label>
+              <FieldLabel htmlFor={themaInputId} de="Thema" zh="主题" />
               <input
                 id={themaInputId}
                 type="text"
                 value={draft.thema}
-                onChange={(e) => setDraft({ ...draft, thema: e.target.value })}
-                style={{
-                  width: "100%",
-                  padding: "6px 10px",
-                  borderRadius: "6px",
-                  border: "1px solid #cbd5e1",
-                  fontSize: "13px",
-                  boxSizing: "border-box",
-                }}
+                onChange={(event) => setDraft({ ...draft, thema: event.target.value })}
+                className={inputClass}
               />
             </div>
           </div>
 
           <div>
-            <label htmlFor={typSelectId} style={{ display: "block", fontSize: "12px", fontWeight: 500, color: "#475569", marginBottom: "4px" }}>
-              {lang === "de" ? "Fehlertyp" : "错因类型 (Fehlertyp)"}
-            </label>
+            <FieldLabel htmlFor={typSelectId} de="Fehlertyp" zh="错因类型" />
             <select
               id={typSelectId}
               value={draft.fehlertyp}
-              onChange={(e) => setDraft({ ...draft, fehlertyp: e.target.value as FehlerlogDraft["fehlertyp"] })}
-              style={{
-                width: "100%",
-                padding: "6px 10px",
-                borderRadius: "6px",
-                border: "1px solid #cbd5e1",
-                fontSize: "13px",
-                backgroundColor: "#ffffff",
-              }}
+              onChange={(event) => setDraft({ ...draft, fehlertyp: event.target.value as FehlerlogDraft["fehlertyp"] })}
+              className={inputClass}
             >
-              <option value="Wissenslücke">Wissenslücke (知识盲区 / 概念未掌握)</option>
-              <option value="Logik/Begründung">Logik/Begründung (论证漏洞 / 缺少因果支撑)</option>
-              <option value="Fachsprache/Ausdruck">Fachsprache/Ausdruck (德语表达 / 术语不精确)</option>
-              <option value="Aufgabenbezug/AFB">Aufgabenbezug/AFB (审题偏离 / 未达AFB要求)</option>
+              <option value="Wissenslücke">Wissenslücke / 知识盲区</option>
+              <option value="Logik/Begründung">Logik/Begründung / 论证漏洞</option>
+              <option value="Fachsprache/Ausdruck">Fachsprache/Ausdruck / 术语表达</option>
+              <option value="Aufgabenbezug/AFB">Aufgabenbezug/AFB / 审题与AFB</option>
             </select>
           </div>
 
           <div>
-            <label htmlFor={fehlerTextId} style={{ display: "block", fontSize: "12px", fontWeight: 500, color: "#475569", marginBottom: "4px" }}>
-              {lang === "de" ? "Eigener Fehler / Fehlvorstellung" : "我的错误理解 / 漏洞点 (Eigener Fehler)"}
-            </label>
+            <FieldLabel htmlFor={fehlerTextId} de="Eigener Fehler / Fehlvorstellung" zh="我的错误理解 / 漏洞点" />
             <textarea
               id={fehlerTextId}
               rows={2}
               value={draft.meinFehler}
-              onChange={(e) => setDraft({ ...draft, meinFehler: e.target.value })}
-              style={{
-                width: "100%",
-                padding: "6px 10px",
-                borderRadius: "6px",
-                border: "1px solid #cbd5e1",
-                fontSize: "13px",
-                boxSizing: "border-box",
-                resize: "vertical",
-              }}
+              onChange={(event) => setDraft({ ...draft, meinFehler: event.target.value })}
+              className={`${inputClass} resize-y`}
             />
           </div>
 
           <div>
-            <label htmlFor={korrekturTextId} style={{ display: "block", fontSize: "12px", fontWeight: 500, color: "#475569", marginBottom: "4px" }}>
-              {lang === "de" ? "Korrektur / Erkenntnis" : "纠偏认识 / 核心考点 (Korrektur)"}
-            </label>
+            <FieldLabel htmlFor={korrekturTextId} de="Korrektur / Erkenntnis" zh="纠偏认识 / 核心考点" />
             <textarea
               id={korrekturTextId}
               rows={2}
               value={draft.korrektur}
-              onChange={(e) => setDraft({ ...draft, korrektur: e.target.value })}
-              style={{
-                width: "100%",
-                padding: "6px 10px",
-                borderRadius: "6px",
-                border: "1px solid #cbd5e1",
-                fontSize: "13px",
-                boxSizing: "border-box",
-                resize: "vertical",
-              }}
+              onChange={(event) => setDraft({ ...draft, korrektur: event.target.value })}
+              className={`${inputClass} resize-y`}
             />
           </div>
 
           <div>
-            <label htmlFor={klausursatzTextId} style={{ display: "block", fontSize: "12px", fontWeight: 500, color: "#475569", marginBottom: "4px" }}>
-              {lang === "de" ? "Mustergültiger Klausursatz (kopierfertig)" : "满分德语标准答题句 (Klausursatz)"}
-            </label>
+            <FieldLabel htmlFor={klausursatzTextId} de="Mustergültiger Klausursatz (kopierfertig)" zh="满分德语标准答题句（可复制）" />
             <input
               id={klausursatzTextId}
               type="text"
               value={draft.klausursatz}
-              onChange={(e) => setDraft({ ...draft, klausursatz: e.target.value })}
+              onChange={(event) => setDraft({ ...draft, klausursatz: event.target.value })}
               placeholder="z. B. Die Maßnahme stärkt die Effizienz, gefährdet jedoch die soziale Gerechtigkeit."
-              style={{
-                width: "100%",
-                padding: "6px 10px",
-                borderRadius: "6px",
-                border: "1px solid #cbd5e1",
-                fontSize: "13px",
-                boxSizing: "border-box",
-              }}
+              className={inputClass}
             />
           </div>
 
-          {/* Vorschau & Zielort */}
-          <div
-            style={{
-              backgroundColor: "#f8fafc",
-              border: "1px solid #e2e8f0",
-              borderRadius: "6px",
-              padding: "10px 12px",
-              fontSize: "12px",
-              color: "#334155",
-            }}
-          >
-            <div style={{ display: "flex", justifyContent: "space-between", marginBottom: "6px" }}>
-              <span style={{ fontWeight: 600, color: "#0f172a" }}>
-                {lang === "de" ? "Zielort im Vault:" : "目标落盘文件 (Obsidian):"}
+          <div className="rounded-[var(--radius)] border border-[var(--line)] bg-[var(--paper-subtle)] p-3 text-[var(--text-meta)] text-[var(--gray)]">
+            <div className="mb-2 flex flex-wrap items-center justify-between gap-2">
+              <span className="font-medium text-[var(--ink)]">
+                {lang === "de" ? "Zielort im Vault" : "目标落盘文件 (Obsidian)"}
+                <span className="zh-translation font-sans">
+                  {lang === "de" ? "Vault 中的目标文件" : "Zielort im Vault"}
+                </span>
               </span>
-              <code style={{ color: "#2563eb", backgroundColor: "#eff6ff", padding: "1px 4px", borderRadius: "3px" }}>
-                {folder}/Klausur-Training/Fehlerlog.md
-              </code>
+              <code className="break-all font-mono text-[var(--accent)]">{folder}/Klausur-Training/Fehlerlog.md</code>
             </div>
-            <div
-              style={{
-                fontFamily: "monospace",
-                fontSize: "11px",
-                backgroundColor: "#ffffff",
-                padding: "8px",
-                border: "1px solid #e2e8f0",
-                borderRadius: "4px",
-                overflowX: "auto",
-                whiteSpace: "nowrap",
-                color: "#475569",
-              }}
-            >
+            <div className="overflow-x-auto whitespace-pre-wrap break-words rounded-[var(--radius)] border border-[var(--line)] bg-[var(--surface)] p-2 font-mono text-[var(--text-meta)] text-[var(--gray)]">
               {markdownRow}
             </div>
-            <p style={{ margin: "6px 0 0 0", fontSize: "11px", color: "#64748b", lineHeight: 1.4 }}>
-              {lang === "de"
-                ? "💡 Gemäß AGENTS.md schreibt die App nicht direkt in den Vault. Kopiere den Patch und füge ihn in Obsidian ein."
-                : "💡 遵循 AGENTS.md 规范：App 只读 Vault，不直接修改文件。请点击下方按钮复制文本补丁，在 Obsidian 中确认粘贴。"}
+            <p className="mt-2 flex items-start gap-2 leading-relaxed">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.4" aria-hidden="true" className="mt-0.5 shrink-0">
+                <circle cx="8" cy="8" r="6" />
+                <path d="M8 7v4M8 4.7v.2" />
+              </svg>
+              <span>
+                {lang === "de"
+                  ? "Gemäß AGENTS.md schreibt die App nicht direkt in den Vault. Kopiere den Patch und füge ihn in Obsidian ein."
+                  : "遵循 AGENTS.md 规范：App 只读 Vault，不直接修改文件。请复制文本补丁，在 Obsidian 中确认粘贴。"}
+              </span>
             </p>
           </div>
         </div>
 
-        {/* Footer Actions */}
-        <div
-          style={{
-            padding: "12px 20px",
-            borderTop: "1px solid #e2e8f0",
-            backgroundColor: "#f8fafc",
-            display: "flex",
-            justifyContent: "flex-end",
-            alignItems: "center",
-            gap: "10px",
-          }}
-        >
+        <div className="flex items-center justify-end gap-2 border-t border-[var(--line)] bg-[var(--paper-subtle)] px-5 py-3">
           <button
+            type="button"
             onClick={onClose}
-            style={{
-              padding: "7px 14px",
-              borderRadius: "6px",
-              border: "1px solid #cbd5e1",
-              backgroundColor: "#ffffff",
-              fontSize: "13px",
-              color: "#475569",
-              cursor: "pointer",
-            }}
+            className="rounded-[var(--radius)] border border-[var(--line)] bg-[var(--surface)] px-3 py-1.5 font-sans text-[13px] text-[var(--gray)] hover:text-[var(--ink)]"
           >
-            {lang === "de" ? "Abbrechen" : "取消"}
+            {lang === "de" ? "Abbrechen / 取消" : "取消"}
           </button>
-
           <button
+            type="button"
             onClick={handleCopy}
-            style={{
-              display: "flex",
-              alignItems: "center",
-              gap: "6px",
-              padding: "7px 16px",
-              borderRadius: "6px",
-              border: "none",
-              backgroundColor: copied ? "#16a34a" : "#2563eb",
-              color: "#ffffff",
-              fontSize: "13px",
-              fontWeight: 500,
-              cursor: "pointer",
-              transition: "background-color 0.15s ease",
-            }}
+            className={`inline-flex items-center gap-2 rounded-[var(--radius)] border px-4 py-1.5 font-sans text-[13px] font-medium ${
+              copied
+                ? "border-[var(--success)] text-[var(--success)]"
+                : "border-[var(--accent)] text-[var(--accent)] hover:bg-[var(--paper-subtle)]"
+            }`}
           >
             {copied ? (
-              <>
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
-                  <polyline points="20 6 9 17 4 12" />
-                </svg>
-                {lang === "de" ? "Patch kopiert!" : "补丁已复制！"}
-              </>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true">
+                <path d="M3 8.5l3 3L13 4.5" />
+              </svg>
             ) : (
-              <>
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                  <rect x="9" y="9" width="13" height="13" rx="2" ry="2" />
-                  <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1" />
-                </svg>
-                {lang === "de" ? "Patch kopieren" : "复制 Fehlerlog 补丁"}
-              </>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.4" aria-hidden="true">
+                <rect x="5.5" y="5.5" width="8" height="8" rx="1" />
+                <path d="M10.5 5.5v-2a1 1 0 0 0-1-1h-7a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h2" />
+              </svg>
             )}
+            {copied
+              ? lang === "de" ? "Patch kopiert / 补丁已复制！" : "补丁已复制！"
+              : lang === "de" ? "Patch kopieren / 复制 Fehlerlog 补丁" : "复制 Fehlerlog 补丁"}
           </button>
         </div>
       </div>

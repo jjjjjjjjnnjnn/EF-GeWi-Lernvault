@@ -2,9 +2,16 @@ import { useState } from "react";
 import { t, type Lang } from "../i18n";
 import AiSettings from "../components/AiSettings";
 import { httpAccess, pullAll, pushAll, stampSync, syncStore } from "../engine/sync";
+import { allPersistedKeys } from "../engine/storageKeys";
 
 // Einstellungen-Hub: bündelt verstreute Funktionen an einem Ort
 // (Sprache · Vault · KI-Engine · Daten/Export · Tastatur · Über).
+export function wipePersistedAppData(
+  storage: Pick<Storage, "removeItem"> = localStorage
+): void {
+  allPersistedKeys().forEach((key) => storage.removeItem(key));
+}
+
 export default function Settings({
   lang,
   onLangChange,
@@ -31,9 +38,7 @@ export default function Settings({
   const wipe = () => {
     if (!window.confirm(tr.stWipeConfirm)) return;
     try {
-      Object.keys(localStorage)
-        .filter((k) => k.startsWith("eflernvault:"))
-        .forEach((k) => localStorage.removeItem(k));
+      wipePersistedAppData();
     } catch {
       // ignorieren
     }

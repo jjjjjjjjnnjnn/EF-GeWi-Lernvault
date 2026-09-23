@@ -2,6 +2,22 @@ import { useEffect, useState } from "react";
 import type { Lang } from "../i18n";
 import { feedbackStore, type FeedbackEntry, type FeedbackData } from "../engine/stores";
 
+function CheckIcon() {
+  return (
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true">
+      <path d="M3 8.5l3 3L13 4.5" />
+    </svg>
+  );
+}
+
+function CloseIcon() {
+  return (
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.4" aria-hidden="true">
+      <path d="M3.5 3.5l9 9M12.5 3.5l-9 9" />
+    </svg>
+  );
+}
+
 // Dev-Feedback: lets the learner drop in-place notes ("卡住了/看不懂/按钮没反应")
 // with exact context attached. Stored locally, one-click copy to paste back
 // to the developer. No network, no new shortcuts.
@@ -98,35 +114,40 @@ export default function FeedbackBox({
   };
 
   return (
-    <div className="border border-dashed border-[#E5E1D8] bg-[#F7F5F0] p-4 rounded-sm">
+    <div className="border border-dashed border-[var(--line)] bg-[var(--paper-subtle)] p-4 rounded-[var(--radius)]">
       <div className="flex items-center justify-between">
         <button
           type="button"
           onClick={() => setOpen((o) => !o)}
-          className="text-xs font-mono text-[#6B675C] hover:text-[#4338CA]"
+          className="text-xs font-mono text-[var(--gray)] hover:text-[var(--accent)]"
         >
           {open
-            ? "[- DEV-FEEDBACK / 收起反馈]"
-            : `[+ DEV-FEEDBACK / 写反馈${entries.length > 0 ? ` (${entries.length})` : ""}]`}
+            ? "DEV-FEEDBACK schließen / 收起反馈"
+            : `DEV-FEEDBACK öffnen / 写反馈${entries.length > 0 ? ` (${entries.length})` : ""}`}
         </button>
         {entries.length > 0 && (
           <button
             type="button"
             onClick={copyAll}
-            className="text-xs font-mono text-[#4338CA] hover:underline"
+            className="text-xs font-mono text-[var(--accent)] hover:underline"
           >
-            {copied
-              ? "✓ Kopiert!"
-              : lang === "de"
-              ? "Alle kopieren"
-              : "复制全部"}
+            {copied ? (
+              <span className="inline-flex items-center gap-1 text-[var(--success)]">
+                <CheckIcon />
+                {lang === "de" ? "Kopiert / 已复制" : "已复制 / Kopiert"}
+              </span>
+            ) : lang === "de" ? (
+              "Alle kopieren / 复制全部"
+            ) : (
+              "复制全部 / Alle kopieren"
+            )}
           </button>
         )}
       </div>
 
       {open && (
         <div className="mt-3 space-y-3">
-          <div className="text-xs font-mono text-[#6B675C]">
+          <div className="text-xs font-mono text-[var(--gray)]">
             {lang === "de"
               ? `Kontext: ${context} — kurz schreiben, was klemmt.`
               : `位置：${context} —— 哪卡住了/看不懂，直接写一句。`}
@@ -140,20 +161,23 @@ export default function FeedbackBox({
                 ? "z.B. Button reagiert nicht / Satz unklar / ..."
                 : "如：按钮点不动 / 这句看不懂 / …"
             }
-            className="w-full border border-[#E5E1D8] bg-white p-2.5 text-xs font-sans rounded-sm focus:border-[#4338CA] focus:outline-none"
+            className="w-full border border-[var(--line)] bg-[var(--surface)] p-2.5 text-xs font-sans rounded-[var(--radius)] focus:border-[var(--accent)]"
           />
           <div className="flex justify-end">
             <button
               type="button"
               onClick={saveDraft}
               disabled={!draft.trim()}
-              className={`px-4 py-1.5 font-mono text-xs uppercase rounded-sm transition-colors ${
+              className={`px-4 py-1.5 font-mono text-xs uppercase rounded-[var(--radius)] transition-colors ${
                 draft.trim()
-                  ? "bg-[#1C1B17] text-white hover:bg-[#4338CA]"
-                  : "bg-[#E5E1D8] text-[#6B675C] cursor-not-allowed"
+                  ? "bg-[var(--ink)] text-white hover:bg-[var(--accent)]"
+                  : "bg-[var(--line)] text-[var(--gray)] cursor-not-allowed"
               }`}
             >
-              {lang === "de" ? "Speichern" : "保存反馈"}
+              <span className="bilingual">
+                <span>{lang === "de" ? "Speichern" : "保存反馈"}</span>
+                <span className="zh-translation">{lang === "de" ? "保存反馈" : "Speichern"}</span>
+              </span>
             </button>
           </div>
           {entries.length > 0 && (
@@ -161,10 +185,10 @@ export default function FeedbackBox({
               {entries.slice(0, 5).map((e) => (
                 <li
                   key={e.id}
-                  className="flex items-start justify-between gap-2 bg-white border border-[#E5E1D8] p-2 rounded-sm text-xs font-mono text-[#1C1B17]"
+                  className="flex items-start justify-between gap-2 bg-[var(--surface)] border border-[var(--line)] p-2 rounded-[var(--radius)] text-xs font-mono text-[var(--ink)]"
                 >
                   <span className="flex-1">
-                    <span className="text-[#6B675C]">
+                    <span className="text-[var(--gray)]">
                       [{e.ts.slice(0, 16).replace("T", " ")}] {e.ctx}:
                     </span>{" "}
                     {e.text}
@@ -172,10 +196,10 @@ export default function FeedbackBox({
                   <button
                     type="button"
                     onClick={() => removeEntry(e.id)}
-                    className="text-[#6B675C] hover:text-[#C62828] shrink-0"
-                    aria-label="Eintrag löschen"
+                    className="shrink-0 text-[var(--gray)] hover:text-[var(--warning)] focus-visible:opacity-100"
+                    aria-label={lang === "de" ? "Eintrag löschen / 删除反馈" : "删除反馈 / Eintrag löschen"}
                   >
-                    ×
+                    <CloseIcon />
                   </button>
                 </li>
               ))}
@@ -203,26 +227,31 @@ export function FeedbackFloat({ lang }: { lang: Lang }) {
   return (
     <div className="fixed bottom-5 right-5 z-50 flex flex-col items-end gap-2">
       {open && (
-        <div className="w-80 max-h-[60vh] overflow-y-auto border border-[#E5E1D8] bg-white p-4 rounded-sm shadow-[0_8px_30px_rgba(28,27,23,0.12)] space-y-3">
+        <div id="feedback-float-panel" className="w-80 max-h-[60vh] space-y-3 overflow-y-auto rounded-[var(--radius)] border border-[var(--line)] bg-[var(--surface)] p-4">
           <div className="flex items-center justify-between">
-            <span className="font-mono text-xs uppercase tracking-wider text-[#1C1B17]">
+            <span className="font-mono text-xs uppercase tracking-wider text-[var(--ink)]">
               Dev-Feedback / 反馈
             </span>
             {entries.length > 0 && (
               <button
                 type="button"
                 onClick={copyAll}
-                className="text-xs font-mono text-[#4338CA] hover:underline"
+                className="text-xs font-mono text-[var(--accent)] hover:underline"
               >
-                {copied
-                  ? "✓ Kopiert!"
-                  : lang === "de"
-                  ? "Alle kopieren"
-                  : "复制全部"}
+                {copied ? (
+                  <span className="inline-flex items-center gap-1 text-[var(--success)]">
+                    <CheckIcon />
+                    {lang === "de" ? "Kopiert / 已复制" : "已复制 / Kopiert"}
+                  </span>
+                ) : lang === "de" ? (
+                  "Alle kopieren / 复制全部"
+                ) : (
+                  "复制全部 / Alle kopieren"
+                )}
               </button>
             )}
           </div>
-          <div className="text-xs font-mono text-[#6B675C] break-words">
+          <div className="text-xs font-mono text-[var(--gray)] break-words">
             {lang === "de"
               ? `Kontext: ${ctx || "global"}`
               : `位置：${ctx || "global"}`}
@@ -236,20 +265,23 @@ export function FeedbackFloat({ lang }: { lang: Lang }) {
                 ? "Was klemmt? Kurz schreiben …"
                 : "哪卡住了？直接写一句 …"
             }
-            className="w-full border border-[#E5E1D8] bg-[#FAF9F6] p-2.5 text-xs font-sans rounded-sm focus:border-[#4338CA] focus:outline-none"
+            className="w-full border border-[var(--line)] bg-[var(--paper)] p-2.5 text-xs font-sans rounded-[var(--radius)] focus:border-[var(--accent)]"
           />
           <div className="flex justify-end">
             <button
               type="button"
               onClick={saveDraft}
               disabled={!draft.trim()}
-              className={`px-4 py-1.5 font-mono text-xs uppercase rounded-sm transition-colors ${
+              className={`px-4 py-1.5 font-mono text-xs uppercase rounded-[var(--radius)] transition-colors ${
                 draft.trim()
-                  ? "bg-[#1C1B17] text-white hover:bg-[#4338CA]"
-                  : "bg-[#E5E1D8] text-[#6B675C] cursor-not-allowed"
+                  ? "bg-[var(--ink)] text-white hover:bg-[var(--accent)]"
+                  : "bg-[var(--line)] text-[var(--gray)] cursor-not-allowed"
               }`}
             >
-              {lang === "de" ? "Speichern" : "保存反馈"}
+              <span className="bilingual">
+                <span>{lang === "de" ? "Speichern" : "保存反馈"}</span>
+                <span className="zh-translation">{lang === "de" ? "保存反馈" : "Speichern"}</span>
+              </span>
             </button>
           </div>
           {entries.length > 0 && (
@@ -257,10 +289,10 @@ export function FeedbackFloat({ lang }: { lang: Lang }) {
               {entries.slice(0, 5).map((e) => (
                 <li
                   key={e.id}
-                  className="flex items-start justify-between gap-2 bg-[#FAF9F6] border border-[#E5E1D8] p-2 rounded-sm text-xs font-mono text-[#1C1B17]"
+                  className="flex items-start justify-between gap-2 bg-[var(--paper)] border border-[var(--line)] p-2 rounded-[var(--radius)] text-xs font-mono text-[var(--ink)]"
                 >
                   <span className="flex-1 break-words">
-                    <span className="text-[#6B675C]">
+                    <span className="text-[var(--gray)]">
                       [{e.ts.slice(0, 16).replace("T", " ")}] {e.ctx}:
                     </span>{" "}
                     {e.text}
@@ -268,10 +300,10 @@ export function FeedbackFloat({ lang }: { lang: Lang }) {
                   <button
                     type="button"
                     onClick={() => removeEntry(e.id)}
-                    className="text-[#6B675C] hover:text-[#C62828] shrink-0"
-                    aria-label="Eintrag löschen"
+                    className="shrink-0 text-[var(--gray)] hover:text-[var(--warning)] focus-visible:opacity-100"
+                    aria-label={lang === "de" ? "Eintrag löschen / 删除反馈" : "删除反馈 / Eintrag löschen"}
                   >
-                    ×
+                    <CloseIcon />
                   </button>
                 </li>
               ))}
@@ -281,12 +313,13 @@ export function FeedbackFloat({ lang }: { lang: Lang }) {
       )}
       <button
         type="button"
-        onClick={() => setOpen((o) => !o)}
-        className="px-4 py-2 font-mono text-xs uppercase tracking-wider rounded-full bg-[#1C1B17] text-white hover:bg-[#4338CA] shadow-[0_4px_16px_rgba(28,27,23,0.25)] transition-colors"
+        onClick={() => setOpen((current) => !current)}
+        aria-expanded={open}
+        aria-controls="feedback-float-panel"
+        className="inline-flex items-center gap-2 rounded-[var(--radius)] border border-[var(--line)] bg-[var(--surface)] px-4 py-2 font-mono text-xs uppercase tracking-wider text-[var(--ink)] transition-colors hover:bg-[var(--paper-subtle)] focus-visible:opacity-100"
       >
-        {open
-          ? "×"
-          : `Feedback / 反馈${entries.length > 0 ? ` (${entries.length})` : ""}`}
+        {open && <CloseIcon />}
+        {`Feedback / 反馈${entries.length > 0 ? ` (${entries.length})` : ""}`}
       </button>
     </div>
   );

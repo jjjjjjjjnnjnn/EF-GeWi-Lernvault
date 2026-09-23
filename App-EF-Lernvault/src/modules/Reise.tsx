@@ -22,7 +22,7 @@ import {
 } from "../engine/reise-ki";
 import { setFeedbackContext } from "../components/FeedbackBox";
 import { xpStore, type XpData } from "../engine/stores";
-import { isTyping } from "../keys";
+import { PER_MODULE_KEYS, isTyping, matchesKey } from "../keys";
 import type { Lang } from "../i18n";
 
 interface ProgressData {
@@ -253,18 +253,21 @@ export default function ReiseModule({
     }
   };
 
-  // Keyboard navigation: Enter to submit/advance, ArrowRight to next step (when unlocked)
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
-      if (isTyping() && e.key !== "Enter") return;
+      if (isTyping()) return;
 
-      if (e.key === "ArrowRight") {
-        if (activeCourse && stepIdx < activeCourse.schritte.length - 1) {
-          if (unlocked.includes(stepIdx + 1)) {
-            e.preventDefault();
-            setStepIdx((i) => i + 1);
-          }
+      if (matchesKey(e, PER_MODULE_KEYS.reise[0])) {
+        if (activeCourse && stepIdx < activeCourse.schritte.length - 1 && unlocked.includes(stepIdx + 1)) {
+          e.preventDefault();
+          setStepIdx((index) => index + 1);
         }
+      } else if (
+        matchesKey(e, PER_MODULE_KEYS.reise[1]) &&
+        activeCourse?.schritte[stepIdx]?.typ === "szenario"
+      ) {
+        e.preventDefault();
+        setSzenarioRunning((running) => !running);
       }
     };
     window.addEventListener("keydown", onKey);
@@ -386,10 +389,10 @@ export default function ReiseModule({
   };
 
   return (
-    <div className="mx-auto max-w-5xl space-y-6">
+    <div className="mx-auto w-full min-w-0 max-w-5xl space-y-6">
       {/* Top Header: Navigation between wizard & course, plus XP and streak */}
       <div className="flex flex-wrap items-center justify-between border-b border-[#E5E1D8] pb-3 text-xs font-mono text-[#6B675C]">
-        <div className="flex items-center gap-3">
+        <div className="flex flex-wrap items-center gap-3">
           <button
             onClick={() => setActiveCourse(null)}
             className={`transition-colors ${
@@ -410,7 +413,7 @@ export default function ReiseModule({
           )}
         </div>
 
-        <div className="flex items-center gap-4">
+        <div className="flex flex-wrap items-center gap-4">
           <span>
             XP: <strong className="text-[#1C1B17]">{progress.xp}</strong>
           </span>
@@ -509,7 +512,7 @@ export default function ReiseModule({
                 {wizardCourses.map((c) => (
                   <div
                     key={c.id}
-                    className="flex items-center justify-between p-4 hover:bg-[#FAF9F6] transition-colors"
+                    className="flex flex-wrap items-center justify-between gap-3 p-4 hover:bg-[#FAF9F6] transition-colors"
                   >
                     <div>
                       <div className="flex items-center gap-2 mb-1">
@@ -572,7 +575,11 @@ export default function ReiseModule({
                     <span className="font-sans uppercase text-[11px] tracking-wider">
                       {s.typ}
                     </span>
-                    {isPast && <span className="text-[#2E7D32]">✓</span>}
+                    {isPast && (
+                      <span className="text-[#2E7D32]">
+                        {lang === "de" ? "Erledigt" : "已完成"}
+                      </span>
+                    )}
                   </button>
                 );
               })}
@@ -586,7 +593,7 @@ export default function ReiseModule({
 
           {/* Current Step Body */}
           <div className="border border-[#E5E1D8] bg-white p-8 rounded-sm space-y-6">
-            <div className="border-b border-[#E5E1D8] pb-3 flex items-baseline justify-between">
+            <div className="flex flex-wrap items-baseline justify-between gap-3 border-b border-[#E5E1D8] pb-3">
               <div>
                 <span className="font-mono text-xs uppercase tracking-wider text-[#4338CA]">
                   Schritt {currentSchritt?.stepNumber} · {currentSchritt?.typ}
@@ -651,7 +658,7 @@ export default function ReiseModule({
                         </div>
                       </div>
                     ))}
-                    <div className="flex gap-2">
+            <div className="flex flex-wrap gap-2">
                       <input
                         value={kiFollow}
                         onChange={(e) => setKiFollow(e.target.value)}
@@ -679,8 +686,8 @@ export default function ReiseModule({
                   >
                     {isLastStep
                       ? lang === "de"
-                        ? "Abschließen (+5 XP) ✓"
-                        : "完成课程 (+5 XP) ✓"
+                        ? "Abschließen (+5 XP)"
+                        : "完成课程 (+5 XP)"
                       : lang === "de"
                       ? "Verstanden & Weiter (+5 XP) →"
                       : "已理解，下一步 (+5 XP) →"}
@@ -734,7 +741,7 @@ export default function ReiseModule({
                   </div>
                 )}
 
-                <div className="pt-4 border-t border-[#E5E1D8] flex items-center justify-between">
+                      <div className="flex flex-wrap items-center justify-between gap-3 border-t border-[#E5E1D8] pt-4">
                   <button
                     type="button"
                     onClick={() => {
@@ -776,8 +783,8 @@ export default function ReiseModule({
                   >
                     {isLastStep
                       ? lang === "de"
-                        ? "Abschließen (+15 XP) ✓"
-                        : "完成课程 (+15 XP) ✓"
+                        ? "Abschließen (+15 XP)"
+                        : "完成课程 (+15 XP)"
                       : lang === "de"
                       ? "Weiter (+15 XP) →"
                       : "下一步 (+15 XP) →"}
@@ -929,7 +936,7 @@ export default function ReiseModule({
                                 : "border-[#E5E1D8] text-[#6B675C] hover:border-[#1C1B17]"
                             }`}
                           >
-                            {isPassed ? "✓ Bestanden / 已掌握" : "Selbstcheck / 标为通过"}
+                            {isPassed ? "Bestanden / 已掌握" : "Selbstcheck / 标为通过"}
                           </button>
                         </div>
                         {checkWhy[item.id]?.text && (
@@ -956,7 +963,7 @@ export default function ReiseModule({
                       }}
                       className="text-xs font-mono text-[#4338CA] hover:underline"
                     >
-                      {copiedPatch ? "✓ Kopiert!" : "Kopieren / 复制补丁"}
+                      {copiedPatch ? "Kopiert!" : "Kopieren / 复制补丁"}
                     </button>
                   </div>
                   <code className="block bg-white border border-[#E5E1D8] p-2.5 font-mono text-xs text-[#1C1B17] rounded-sm">
@@ -972,10 +979,10 @@ export default function ReiseModule({
                     checkItems.every((item) => checkPassed[item.id]);
 
                   return (
-                    <div className="pt-4 border-t border-[#E5E1D8] flex items-center justify-between">
+                <div className="flex flex-wrap items-center justify-between gap-3 border-t border-[#E5E1D8] pt-4">
                       <span className="text-xs font-mono text-[#6B675C]">
                         {allDone
-                          ? "✓ Alle 3 Fragen gemeistert / 3 题已全部掌握"
+                          ? "Alle 3 Fragen gemeistert / 3 题已全部掌握"
                           : "3 Fragen müssen als bestanden markiert sein."}
                       </span>
                       <button
@@ -989,8 +996,8 @@ export default function ReiseModule({
                       >
                         {isLastStep
                           ? lang === "de"
-                            ? "Abschließen (+20 XP) ✓"
-                            : "完成课程 (+20 XP) ✓"
+                            ? "Abschließen (+20 XP)"
+                            : "完成课程 (+20 XP)"
                           : lang === "de"
                           ? "Weiter (+20 XP) →"
                           : "下一步 (+20 XP) →"}
@@ -1014,7 +1021,7 @@ export default function ReiseModule({
                 </div>
 
                 {/* Timer row */}
-                <div className="flex items-center justify-between border border-[#E5E1D8] p-3 rounded-sm bg-white">
+                <div className="flex flex-wrap items-center justify-between gap-3 border border-[#E5E1D8] p-3 rounded-sm bg-white">
                   <div className="flex items-baseline gap-2">
                     <span className="font-mono text-2xl font-normal tabular-nums text-[#1C1B17]">
                       {formatTime(szenarioSec)}
@@ -1146,8 +1153,8 @@ export default function ReiseModule({
                             ? "Weiter (+30 XP) →"
                             : "下一步 (+30 XP) →"
                           : lang === "de"
-                          ? "Abschließen (+30 XP) ✓"
-                          : "完成课程 (+30 XP) ✓"}
+                          ? "Abschließen (+30 XP)"
+                          : "完成课程 (+30 XP)"}
                       </button>
                     </div>
                   );
@@ -1310,7 +1317,7 @@ export default function ReiseModule({
                         : "bg-[#E5E1D8] text-[#6B675C] cursor-not-allowed"
                     }`}
                   >
-                    Abschließen (+30 XP) ✓
+                    Abschließen (+30 XP)
                   </button>
                 </div>
               </div>

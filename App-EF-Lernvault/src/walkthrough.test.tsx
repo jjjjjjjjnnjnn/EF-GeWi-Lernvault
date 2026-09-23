@@ -147,7 +147,7 @@ describe("UI-reise: katalog -> start -> alle schritte -> xp (simulierter user)",
     await user.click(screen.getByText("下一步 (+30 XP) →"));
 
     // G: schritt 8 -> abschliessen -> xp + katalog
-    await user.click(screen.getByText("完成课程 (+5 XP) ✓"));
+    await user.click(screen.getByText("完成课程 (+5 XP)"));
     expect(window.alert).toHaveBeenCalled();
     expect(xpStore.load().xp).toBeGreaterThan(0);
     expect(screen.getByText("Soziale Marktwirtschaft")).toBeInTheDocument(); // zurueck im katalog

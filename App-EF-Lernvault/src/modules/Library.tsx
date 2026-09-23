@@ -1,9 +1,10 @@
 import { useEffect, useMemo, useState } from "react";
 import { notes as mockNotes, type Note as MockNote } from "../data";
-import { isTyping } from "../keys";
+import { PER_MODULE_KEYS, isTyping, matchesKey } from "../keys";
 import Blocks from "../components/Blocks";
 import type { Block, VaultNote } from "../vault/parser";
 import { buildSearchIndex } from "../engine/index";
+import { MasteryEngine } from "../engine/mastery";
 import { FAECHER } from "../fach";
 
 interface Shown {
@@ -13,6 +14,8 @@ interface Shown {
   sub: string;
   operatoren: string[];
   klausurrelevant: boolean;
+  datum: string;
+  tags: string[];
   blocks: Block[];
 }
 
@@ -22,20 +25,29 @@ function fromMock(m: MockNote): Shown {
     blocks.push({ kind: "p", text: z, lang: "zh" });
     if (m.bodyDE[i]) blocks.push({ kind: "p", text: m.bodyDE[i], lang: "de" });
   });
-  return { id: m.id, fach: m.fach, thema: m.thema, sub: m.zh, operatoren: m.operatoren, klausurrelevant: true, blocks };
+  return { id: m.id, fach: m.fach, thema: m.thema, sub: m.zh, operatoren: m.operatoren, klausurrelevant: true, datum: "", tags: [], blocks };
 }
 
 function fromVault(n: VaultNote): Shown {
-  return { id: n.id, fach: n.fach, thema: n.thema, sub: n.path, operatoren: n.operatoren, klausurrelevant: n.klausurrelevant, blocks: n.blocks };
+  return { id: n.id, fach: n.fach, thema: n.thema, sub: n.path, operatoren: n.operatoren, klausurrelevant: n.klausurrelevant, datum: n.datum, tags: n.tags, blocks: n.blocks };
 }
 
-export default function Library({ query, vault, selectedFach, onClearQuery }: { query: string; vault: VaultNote[] | null; selectedFach?: string; onClearQuery?: () => void }) {
+interface LibraryProps {
+  query: string;
+  vault: VaultNote[] | null;
+  selectedFach?: string;
+  onClearQuery?: () => void;
+  onSubjectChange?: (fach: string) => void;
+}
+
+export default function Library({ query, vault, selectedFach, onClearQuery, onSubjectChange }: LibraryProps) {
   const shown: Shown[] = useMemo(
     () => (vault ? vault.map(fromVault) : mockNotes.map(fromMock)),
     [vault]
   );
   const [fach, setFach] = useState(selectedFach ?? "alle");
   const [openId, setOpenId] = useState(shown[0]?.id ?? "");
+  const [masteryEngine] = useState(() => new MasteryEngine());
 
   // Subject counts for the 10-Fach badge system
   const fachCounts = useMemo(() => {
@@ -50,14 +62,18 @@ export default function Library({ query, vault, selectedFach, onClearQuery }: { 
     if (selectedFach) setFach(selectedFach);
   }, [selectedFach]);
 
+  const selectFach = (nextFach: string) => {
+    setFach(nextFach);
+    onSubjectChange?.(nextFach);
+  };
+
   // Reset selection when the source switches (mock <-> real vault).
   useEffect(() => {
     setOpenId(shown[0]?.id ?? "");
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [vault]);
 
-  const q = query.trim().toLowerCase();
-  // Einheitliche retrieval-schicht (engine/index): exakt zuerst, fuzzy fallback.
+  const q = query.trim();
   const searchIndex = useMemo(
     () =>
       buildSearchIndex(
@@ -66,12 +82,26 @@ export default function Library({ query, vault, selectedFach, onClearQuery }: { 
           thema: n.thema,
           sub: n.sub,
           text: n.blocks.map((b) => b.text).join(" "),
-        }))
+          fach: n.fach,
+          tags: n.tags,
+          datum: n.datum,
+        })),
+        {
+          rankingWeight: (doc) => masteryEngine.getRankingWeight(doc.id, doc.datum),
+        }
       ),
-    [shown]
+    [shown, masteryEngine]
   );
-  const hitIds = useMemo(() => new Set(searchIndex.query(query)), [searchIndex, query]);
-  const list = shown.filter((n) => (fach === "alle" || n.fach === fach) && (!q || hitIds.has(n.id)));
+  const rankedIds = useMemo(() => searchIndex.query(query), [searchIndex, query]);
+  const list = useMemo(() => {
+    const byId = new Map(shown.map((note) => [note.id, note]));
+    return rankedIds
+      .map((id) => byId.get(id))
+      .filter((note): note is Shown => {
+        if (!note) return false;
+        return fach === "alle" || note.fach === fach;
+      });
+  }, [rankedIds, shown, fach]);
 
   const open = list.find((n) => n.id === openId) ?? list[0];
 
@@ -79,13 +109,13 @@ export default function Library({ query, vault, selectedFach, onClearQuery }: { 
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
       if (isTyping() || list.length === 0) return;
-      const i = Math.max(0, list.findIndex((n) => n.id === open?.id));
-      if (e.key === "j" || e.key === "ArrowDown") {
+      const currentIndex = Math.max(0, list.findIndex((note) => note.id === open?.id));
+      if (matchesKey(e, PER_MODULE_KEYS.library[0])) {
         e.preventDefault();
-        setOpenId(list[Math.min(i + 1, list.length - 1)].id);
-      } else if (e.key === "k" || e.key === "ArrowUp") {
+        setOpenId(list[Math.min(currentIndex + 1, list.length - 1)].id);
+      } else if (matchesKey(e, PER_MODULE_KEYS.library[1])) {
         e.preventDefault();
-        setOpenId(list[Math.max(i - 1, 0)].id);
+        setOpenId(list[Math.max(currentIndex - 1, 0)].id);
       }
     };
     window.addEventListener("keydown", onKey);
@@ -93,13 +123,13 @@ export default function Library({ query, vault, selectedFach, onClearQuery }: { 
   });
 
   return (
-    <div className="flex gap-8 max-w-6xl mx-auto">
+    <div className="mx-auto flex max-w-6xl flex-col gap-6 xl:flex-row xl:gap-8">
       {/* Left Column: Subject Filter + Topic List */}
-      <div className="w-80 shrink-0 space-y-4">
+      <div className="w-full shrink-0 space-y-4 xl:w-80">
         {/* 10-Subject Filter Badges (Tufte hairline badges + counts) */}
         <div className="flex flex-wrap gap-1 border-b border-[#E5E1D8] pb-2">
           <button
-            onClick={() => setFach("alle")}
+            onClick={() => selectFach("alle")}
             className={`px-2 py-1 text-xs font-mono rounded-sm transition-all duration-150 active:scale-95 focus-visible:outline focus-visible:outline-1 focus-visible:outline-[#4338CA] ${
               fach === "alle"
                 ? "font-medium text-[#4338CA] border-b-2 border-[#4338CA]"
@@ -115,7 +145,7 @@ export default function Library({ query, vault, selectedFach, onClearQuery }: { 
             return (
               <button
                 key={f.id}
-                onClick={() => setFach(isSelected ? "alle" : f.id)}
+                onClick={() => selectFach(isSelected ? "alle" : f.id)}
                 className={`px-1.5 py-0.5 text-xs font-mono rounded-sm transition-all duration-150 active:scale-95 border ${
                   isSelected
                     ? "font-medium text-[#4338CA] border-[#4338CA] bg-[#ECE7DC]/40"
@@ -189,7 +219,7 @@ export default function Library({ query, vault, selectedFach, onClearQuery }: { 
 
       {/* Right Column: Centered Reading Column (~46rem) */}
       <div className="flex-1 min-w-0">
-        <div key={open?.id} className="tab-enter max-w-[46rem] bg-white border border-[#E5E1D8] rounded-sm p-8 mx-auto">
+        <div key={open?.id} className="tab-enter mx-auto max-w-[46rem] bg-white border border-[#E5E1D8] rounded-sm p-5 sm:p-8">
           {open ? (
             <article>
               {/* Header Metadata */}

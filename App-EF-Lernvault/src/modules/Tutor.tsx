@@ -46,6 +46,7 @@ import { BalanceBoard } from "../components/pedagogy/BalanceBoard";
 import { TextHighlighter } from "../components/pedagogy/TextHighlighter";
 import { TangentSlider } from "../components/pedagogy/TangentSlider";
 import { FehlerlogModal } from "../components/FehlerlogModal";
+import { useDialogFocus } from "../components/HelpOverlay";
 
 import {
   type TutorPedagogyMode,
@@ -93,6 +94,7 @@ export default function Tutor({
   const [engineTag, setEngineTag] = useState(() => describeActiveEngine());
   const [copyFeedback, setCopyFeedback] = useState(false);
   const [expandedCcr, setExpandedCcr] = useState<{ hash: string; content: string | null } | null>(null);
+  const ccrDialogRef = useDialogFocus(Boolean(expandedCcr), () => setExpandedCcr(null));
   const [pedagogyTool, setPedagogyTool] = useState<"lego" | "balance" | "highlighter" | "tangent" | null>(null);
   const [pedagogyMode, setPedagogyMode] = useState<TutorPedagogyMode>(() => loadTutorPedagogyMode());
   const [fehlerDraft, setFehlerDraft] = useState<FehlerlogDraft | null>(null);
@@ -680,7 +682,7 @@ export default function Tutor({
   }, [sessions, lang]);
 
   return (
-    <div className="mx-auto flex h-[78vh] max-w-5xl rounded-sm border border-[#E5E1D8] bg-white overflow-hidden shadow-xs">
+    <div className="mx-auto flex h-[78vh] w-full min-w-0 max-w-5xl rounded-sm border border-[#E5E1D8] bg-white overflow-hidden">
       {/* Linke Spalte: Sitzungs-Verlauf / Multi-Session Sidebar */}
       {showSidebar && (
         <aside className="w-60 flex-shrink-0 flex flex-col border-r border-[#E5E1D8] bg-[#FAF9F6]">
@@ -713,7 +715,7 @@ export default function Tutor({
                       onClick={() => !isEditing && switchSession(sess.id)}
                       className={`group relative flex items-center justify-between rounded-sm px-2.5 py-2 text-xs transition-colors cursor-pointer ${
                         isActive
-                          ? "bg-white border-l-2 border-[#4338CA] font-medium text-[#1C1B17] shadow-xs"
+                          ? "bg-white border-l-2 border-[#4338CA] font-medium text-[#1C1B17]"
                           : "text-[#4A473F] hover:bg-[#F2EFE9] border-l-2 border-transparent"
                       }`}
                     >
@@ -734,7 +736,7 @@ export default function Tutor({
                             onClick={() => handleSaveRename(sess.id)}
                             className="text-[10px] text-[#2E7D32] hover:underline"
                           >
-                            ✓
+                            OK
                           </button>
                         </div>
                       ) : (
@@ -766,9 +768,12 @@ export default function Tutor({
                             <button
                               onClick={(e) => handleDeleteSession(sess.id, e)}
                               title={lang === "de" ? "Löschen" : "删除"}
+                              aria-label={lang === "de" ? "Chat löschen" : "删除对话"}
                               className="text-[#6B675C] hover:text-[#991B1B] p-0.5"
                             >
-                              ✕
+                              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" aria-hidden="true">
+                                <path d="M4 4l8 8M12 4l-8 8" />
+                              </svg>
                             </button>
                           </div>
                         </>
@@ -798,7 +803,7 @@ export default function Tutor({
         {/* Model status bar & Controls (Tufte 2-Tier Toolbar) */}
         <div className="border-b border-[#E5E1D8] bg-[#FAF9F6]">
           {/* Tier 1: System-Status & Kernmodi */}
-          <div className="flex items-center justify-between px-3 py-1.5 text-xs font-mono text-[#6B675C] border-b border-[#E5E1D8]/60 gap-2">
+          <div className="flex flex-wrap items-center justify-between gap-2 border-b border-[#E5E1D8]/60 px-3 py-1.5 text-xs font-mono text-[#6B675C]">
             <div className="flex items-center gap-2 min-w-0">
               <button
                 onClick={() => setShowSidebar((s) => !s)}
@@ -826,7 +831,7 @@ export default function Tutor({
               </span>
             </div>
 
-            <div className="flex items-center gap-2 shrink-0">
+            <div className="flex flex-wrap items-center gap-2 xl:shrink-0">
               {/* Denkintensitäts-Auswahl (Schnell | Ausgewogen | Tiefgründig) */}
               <div className="flex items-center gap-0.5 border border-[#E5E1D8] rounded-sm bg-white p-0.5">
                 {(["fast", "balanced", "deep"] as ThinkingIntensity[]).map((st) => (
@@ -858,7 +863,7 @@ export default function Tutor({
                   }}
                   className={`px-2 py-0.5 rounded-xs text-[11px] font-sans transition-colors cursor-pointer flex items-center gap-1 ${
                     pedagogyMode === "socratic"
-                      ? "bg-[#4338CA] text-white font-medium shadow-2xs"
+                      ? "bg-[#4338CA] text-white font-medium"
                       : "text-[#6B675C] hover:text-[#1C1B17]"
                   }`}
                   title={
@@ -881,7 +886,7 @@ export default function Tutor({
                   }}
                   className={`px-2 py-0.5 rounded-xs text-[11px] font-sans transition-colors cursor-pointer flex items-center gap-1 ${
                     pedagogyMode === "direct"
-                      ? "bg-[#047857] text-white font-medium shadow-2xs"
+                      ? "bg-[#047857] text-white font-medium"
                       : "text-[#6B675C] hover:text-[#1C1B17]"
                   }`}
                   title={
@@ -919,12 +924,12 @@ export default function Tutor({
           </div>
 
           {/* Tier 2: 学科启发工具条与导出 */}
-          <div className="flex items-center justify-between px-3 py-1 text-xs font-mono text-[#6B675C]">
-            <div className="flex items-center gap-2">
+          <div className="flex flex-wrap items-center justify-between gap-2 px-3 py-1 text-xs font-mono text-[#6B675C]">
+            <div className="flex min-w-0 flex-wrap items-center gap-2">
               <span className="text-[10px] text-[#8C877B] uppercase tracking-wider font-sans">
                 {lang === "de" ? "Didaktik-Tools:" : "学科辅助工具:"}
               </span>
-              <div className="flex items-center gap-1">
+              <div className="flex flex-wrap items-center gap-1">
                 <button
                   type="button"
                   onClick={() => setPedagogyTool((t) => (t === "lego" ? null : "lego"))}
@@ -1001,7 +1006,7 @@ export default function Tutor({
               <svg className="w-3 h-3 text-[#6B675C]" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.6">
                 <path d="M8 2v9M4 7l4 4 4-4M2 14h12" />
               </svg>
-              <span>{copyFeedback ? (lang === "de" ? "✓ Exportiert" : "✓ 已导出") : (lang === "de" ? "Export .md" : "导出 .md")}</span>
+              <span>{copyFeedback ? (lang === "de" ? "Exportiert" : "已导出") : (lang === "de" ? "Export .md" : "导出 .md")}</span>
             </button>
           </div>
         </div>
@@ -1016,9 +1021,12 @@ export default function Tutor({
               <button
                 type="button"
                 onClick={() => setPedagogyTool(null)}
-                className="text-xs font-mono text-[#6B675C] hover:text-[#1C1B17] cursor-pointer"
+                className="inline-flex items-center gap-1 text-xs font-mono text-[#6B675C] hover:text-[#1C1B17] cursor-pointer"
               >
-                ✕ {lang === "de" ? "Schließen" : "收起"}
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" aria-hidden="true">
+                  <path d="M4 4l8 8M12 4l-8 8" />
+                </svg>
+                <span>{lang === "de" ? "Schließen" : "收起"}</span>
               </button>
             </div>
 
@@ -1056,7 +1064,7 @@ export default function Tutor({
         )}
 
         {!onOpenSettings && showAi && (
-          <div className="border-b border-[#E5E1D8] bg-white shadow-xs max-h-96 overflow-y-auto">
+          <div className="border-b border-[#E5E1D8] bg-white max-h-96 overflow-y-auto">
             <AiSettings
               lang={lang}
               onChanged={() => {
@@ -1117,7 +1125,7 @@ export default function Tutor({
                   )}
                 </div>
 
-                {/* ⚡ Instant Grounding Card (<10ms) */}
+                {/* Instant Grounding Card (<10ms) */}
                 {m.instantSnippet && (
                   <div className="mb-2.5 rounded-sm border border-[#C7D2FE] bg-[#F5F7FF] px-3 py-2 text-xs font-serif">
                     <div className="flex items-center justify-between text-[10px] font-mono text-[#4338CA] mb-1">
@@ -1136,14 +1144,14 @@ export default function Tutor({
                         [{m.instantSnippet.notePath}]
                       </button>
                     </div>
-                    <p className="text-[#1E1B4B] italic">„{m.instantSnippet.excerpt}“</p>
+                    <p className="text-[#1E1B4B]">„{m.instantSnippet.excerpt}“</p>
                   </div>
                 )}
 
                 {/* AI Text Stream */}
                 {renderAiText(m.text)}
 
-                {/* 🔗 Fachübergreifende Vernetzung (Cross-Subject Thought Bridge Capsule) */}
+                {/* Fachübergreifende Vernetzung (Cross-Subject Thought Bridge Capsule) */}
                 {m.vernetzungBridge && (
                   <div className="mt-2.5 rounded-sm border border-[#047857]/30 bg-[#F0FDF4] px-3 py-1.5 text-xs font-sans">
                     <div className="flex items-center justify-between">
@@ -1167,7 +1175,7 @@ export default function Tutor({
                       </button>
                     </div>
                     <div className="mt-1 text-[11px] text-[#064E3B] font-serif flex flex-col gap-0.5 border-t border-[#047857]/15 pt-1">
-                      <div className="italic">„{m.vernetzungBridge.anchorFormulaOrSentenceDE}“</div>
+                      <div>„{m.vernetzungBridge.anchorFormulaOrSentenceDE}“</div>
                       <div className="text-[10px] text-[#047857]/80 font-sans">{m.vernetzungBridge.anchorSentenceZH}</div>
                     </div>
                   </div>
@@ -1243,8 +1251,11 @@ export default function Tutor({
                 onClick={() => setAttachedImage(null)}
                 className="text-xs text-[#6B675C] hover:text-[#991B1B] ml-1 cursor-pointer font-bold"
                 title="Bild entfernen"
+                aria-label="Bild entfernen"
               >
-                ✕
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" aria-hidden="true">
+                  <path d="M4 4l8 8M12 4l-8 8" />
+                </svg>
               </button>
             </div>
           )}
@@ -1335,22 +1346,39 @@ export default function Tutor({
 
       {/* CCR (Compress-Cache-Retrieve) Unkomprimierte Originalansicht */}
       {expandedCcr && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/40 p-4">
-          <div className="w-full max-w-xl rounded-sm border border-[#E5E1D8] bg-[#FAFAF7] p-5 shadow-lg max-h-[80vh] flex flex-col">
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center bg-[var(--overlay)] p-4"
+          onMouseDown={(event) => {
+            if (event.target === event.currentTarget) setExpandedCcr(null);
+          }}
+        >
+          <div
+            ref={ccrDialogRef}
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="ccr-dialog-title"
+            tabIndex={-1}
+            className="flex max-h-[80vh] w-full max-w-xl flex-col rounded-[var(--radius)] border border-[var(--line)] bg-[var(--surface)] p-5"
+          >
             <div className="flex items-center justify-between border-b border-[#E5E1D8] pb-2 mb-3">
-              <div className="flex items-center gap-2">
+            <div className="flex min-w-0 flex-wrap items-center gap-2">
                 <span className="w-2 h-2 rounded-full bg-[#047857]" />
-                <h4 className="font-mono text-xs font-semibold text-[#1C1B17]">
+                <h4 id="ccr-dialog-title" className="font-mono text-xs font-semibold text-[#1C1B17]">
                   CCR #{expandedCcr.hash} (
                   {lang === "de" ? "Originaltext vor Kompression" : "无损还原原文"}
                   )
                 </h4>
               </div>
               <button
+                type="button"
+                data-dialog-initial-focus
                 onClick={() => setExpandedCcr(null)}
-                className="text-xs font-mono text-[#6B675C] hover:text-[#1C1B17] px-2 py-0.5 border border-[#E5E1D8] rounded-xs cursor-pointer"
+                className="inline-flex items-center gap-1 text-xs font-mono text-[#6B675C] hover:text-[#1C1B17] px-2 py-0.5 border border-[#E5E1D8] rounded-xs cursor-pointer"
               >
-                {lang === "de" ? "Schließen ✕" : "关闭 ✕"}
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" aria-hidden="true">
+                  <path d="M4 4l8 8M12 4l-8 8" />
+                </svg>
+                <span>{lang === "de" ? "Schließen" : "关闭"}</span>
               </button>
             </div>
             <div className="flex-1 overflow-y-auto text-xs font-mono whitespace-pre-wrap text-[#1C1B17] bg-white border border-[#E5E1D8] p-3 rounded-sm leading-relaxed">
