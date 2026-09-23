@@ -14,3 +14,11 @@
 - **Formelsammlung NRW 2024**（考试允许带，3MB）：`formelsammlung_nrw_2024.pdf`
 - KLP Mathe 2023全文：`klp_mathe_2023.pdf`
 - Runde4新增（`_Downloads/Mathe/stansi-runde4/`，17件）：ab2026示例全系——Vorblatt LK + Teil1 LK（Pflicht/Wahlpflicht）+ Teil2 GK/LK×14（Analysis B1/B2、Geometrie B3、Stochastik B4，各CAS/WTR）
+
+## CN-Vernetzung (frei/offiziell, nur Links, nichts gescrapt)
+
+- pep.com.cn 数学教材信息 (offiziell, nur Link): https://www.pep.com.cn/
+- gaokao.neea.edu.cn 官方考试信息 (offiziell, nur Link): https://gaokao.neea.edu.cn/
+- LEIFIphysik (frei, Mathe-Anteile): https://www.leifiphysik.de/
+- Serlo Ableitung (CC-BY-SA): https://de.serlo.org/mathe/1795/ableitung
+- Serlo Vektoren Grundbegriffe (CC-BY-SA): https://de.serlo.org/mathe/24442/vektoren-grundbegriffe
