@@ -9,12 +9,12 @@ import {
   type ChatMsg,
 } from "../ai/engine";
 import {
-  buildTutorSystem,
   chunkNotes,
   verifySupport,
 } from "../engine/rag";
 import { retrieveHybrid, chunkVectors, claimVectors, verifySemantic } from "../engine/embed";
-import { budgetContext } from "../engine/context";
+import { assembleOptimizedContext } from "../engine/context";
+import { retrieveFromCCR } from "../storage/ccrStore";
 import {
   type TutorSession,
   type TutorChatMessage,
@@ -72,6 +72,16 @@ export default function Tutor({
   const [localPct, setLocalPct] = useState<number | null>(null);
   const [engineTag, setEngineTag] = useState(() => describeActiveEngine());
   const [copyFeedback, setCopyFeedback] = useState(false);
+  const [expandedCcr, setExpandedCcr] = useState<{ hash: string; content: string | null } | null>(null);
+
+  const handleExpandCcr = async (hash: string) => {
+    if (expandedCcr?.hash === hash) {
+      setExpandedCcr(null);
+      return;
+    }
+    const content = await retrieveFromCCR(hash);
+    setExpandedCcr({ hash, content });
+  };
 
   const scrollRef = useRef<HTMLDivElement>(null);
   const abortRef = useRef<AbortController | null>(null);
@@ -356,19 +366,15 @@ export default function Tutor({
           content: m.text,
         }));
 
-      const budgeted = budgetContext(chunks, rawHistory, {
+      const optimized = await assembleOptimizedContext(chunks, rawHistory, {
+        query: q,
         maxContextTokens: 3000,
         generationReserve: INTENSITY_PRESETS[intensity].maxTokens,
         systemReserve: 400,
+        intensityModifier: INTENSITY_PRESETS[intensity].systemModifierDE,
       });
 
-      const systemPrompt = `${buildTutorSystem(budgeted.fittedChunks)}\n\nModus-Vorgabe: ${INTENSITY_PRESETS[intensity].systemModifierDE}`;
-
-      const history: ChatMsg[] = [
-        { role: "system", content: systemPrompt },
-        ...budgeted.fittedHistory,
-        { role: "user", content: q },
-      ];
+      const history: ChatMsg[] = optimized.messages;
 
       // 4. SCHRITT: Auto-Dispatch Stream (automatischer Failover bei offline LM Studio)
       const res = await autoDispatchChat(
@@ -419,16 +425,22 @@ export default function Tutor({
         saveQaCache(q, checkedReply);
       }
 
+      const compBadge = optimized.stats.savedTokens > 0
+        ? ` · CCR -${optimized.stats.savedTokens}tok`
+        : "";
+      const baseBadge = res.badge ?? `${describeActiveEngine()} · RAG-${level}`;
+      const fullEngineTag = `${baseBadge}${compBadge}`;
+
       const finalBot: TutorChatMessage = {
         ...initialBotMsg,
         text: checkedReply,
-        engineTag: res.badge ?? `${describeActiveEngine()} · RAG-${level}`,
+        engineTag: fullEngineTag,
       };
 
       const finalMessages = [...messages, userMsg, finalBot];
       setMessages(finalMessages);
       setIsDegraded(res.source === "vault-autofallback");
-      setEngineTag(res.badge ?? `${describeActiveEngine()} · RAG-${level}`);
+      setEngineTag(fullEngineTag);
       await saveSessionMessages(currentSessionId, finalMessages);
     } catch (err) {
       if (err instanceof DOMException && err.name === "AbortError") {
@@ -449,9 +461,9 @@ export default function Tutor({
     }
   };
 
-  // Zitat-Parser für Antworten
+  // Zitat- & CCR-Parser für Antworten
   const renderAiText = (text: string) => {
-    const citationRegex = /\[([A-Za-z0-9_\-./äöüÄÖÜß]+\.md(?:#\d+)?)\]/g;
+    const tokenRegex = /(\[([A-Za-z0-9_\-./äöüÄÖÜß]+\.md(?:#\d+)?)\]|\[Ref:\s*#(h-[0-9a-f]{8})\])/g;
     const lines = text.split("\n");
 
     return (
@@ -466,24 +478,42 @@ export default function Tutor({
           let match: RegExpExecArray | null;
           let hasCitation = false;
 
-          citationRegex.lastIndex = 0;
-          while ((match = citationRegex.exec(line)) !== null) {
+          tokenRegex.lastIndex = 0;
+          while ((match = tokenRegex.exec(line)) !== null) {
             hasCitation = true;
             if (match.index > lastIndex) {
               parts.push(line.slice(lastIndex, match.index));
             }
-            const citeTarget = match[1];
-            parts.push(
-              <button
-                key={`${lIdx}-${match.index}`}
-                onClick={() => onJumpToLibrary?.(citeTarget)}
-                title={lang === "de" ? "In Notizen öffnen" : "在笔记库中查看"}
-                className="inline-flex items-center font-mono text-[10px] text-[#4338CA] bg-[#4338CA]/10 hover:bg-[#4338CA]/20 px-1 py-0.5 rounded-sm mx-1 transition-colors cursor-pointer"
-              >
-                [{citeTarget}]
-              </button>
-            );
-            lastIndex = citationRegex.lastIndex;
+
+            if (match[2]) {
+              // Notiz-Zitat [Fach/Dateiname.md#Zeile]
+              const citeTarget = match[2];
+              parts.push(
+                <button
+                  key={`cite-${lIdx}-${match.index}`}
+                  onClick={() => onJumpToLibrary?.(citeTarget)}
+                  title={lang === "de" ? "In Notizen öffnen" : "在笔记库中查看"}
+                  className="inline-flex items-center font-mono text-[10px] text-[#4338CA] bg-[#4338CA]/10 hover:bg-[#4338CA]/20 px-1 py-0.5 rounded-sm mx-1 transition-colors cursor-pointer"
+                >
+                  [{citeTarget}]
+                </button>
+              );
+            } else if (match[3]) {
+              // CCR-Referenz [Ref: #h-a1b2c3d4]
+              const ccrHash = match[3];
+              parts.push(
+                <button
+                  key={`ccr-${lIdx}-${match.index}`}
+                  onClick={() => handleExpandCcr(ccrHash)}
+                  title={lang === "de" ? `CCR-Original (${ccrHash}) anzeigen` : `展开查看 CCR 无损压缩前原文 (#${ccrHash})`}
+                  className="inline-flex items-center gap-1 font-mono text-[10px] text-[#047857] bg-[#047857]/10 hover:bg-[#047857]/20 px-1.5 py-0.5 rounded-sm mx-1 transition-colors cursor-pointer"
+                >
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#047857]" />
+                  [Ref: #{ccrHash}]
+                </button>
+              );
+            }
+            lastIndex = tokenRegex.lastIndex;
           }
 
           if (lastIndex < line.length) {
@@ -825,6 +855,33 @@ export default function Tutor({
           </div>
         </div>
       </main>
+
+      {/* CCR (Compress-Cache-Retrieve) Unkomprimierte Originalansicht */}
+      {expandedCcr && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/40 p-4">
+          <div className="w-full max-w-xl rounded-sm border border-[#E5E1D8] bg-[#FAFAF7] p-5 shadow-lg max-h-[80vh] flex flex-col">
+            <div className="flex items-center justify-between border-b border-[#E5E1D8] pb-2 mb-3">
+              <div className="flex items-center gap-2">
+                <span className="w-2 h-2 rounded-full bg-[#047857]" />
+                <h4 className="font-mono text-xs font-semibold text-[#1C1B17]">
+                  CCR #{expandedCcr.hash} (
+                  {lang === "de" ? "Originaltext vor Kompression" : "无损还原原文"}
+                  )
+                </h4>
+              </div>
+              <button
+                onClick={() => setExpandedCcr(null)}
+                className="text-xs font-mono text-[#6B675C] hover:text-[#1C1B17] px-2 py-0.5 border border-[#E5E1D8] rounded-xs cursor-pointer"
+              >
+                {lang === "de" ? "Schließen ✕" : "关闭 ✕"}
+              </button>
+            </div>
+            <div className="flex-1 overflow-y-auto text-xs font-mono whitespace-pre-wrap text-[#1C1B17] bg-white border border-[#E5E1D8] p-3 rounded-sm leading-relaxed">
+              {expandedCcr.content ?? (lang === "de" ? "Eintrag nicht mehr im CCR-Speicher." : "条目已过期或不存在。")}
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

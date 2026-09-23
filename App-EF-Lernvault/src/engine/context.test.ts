@@ -1,9 +1,14 @@
-import { describe, it, expect } from "vitest";
-import { estimateTokens, budgetContext } from "./context";
+import { describe, it, expect, beforeEach } from "vitest";
+import { estimateTokens, budgetContext, assembleOptimizedContext } from "./context";
+import { clearCCR } from "../storage/ccrStore";
 import type { TextChunk } from "./rag";
 import type { ChatMsg } from "../ai/engine";
 
-describe("src/engine/context.ts - Token Budgeting & Estimation", () => {
+describe("src/engine/context.ts - Token Budgeting & Multi-Zone Assembly", () => {
+  beforeEach(async () => {
+    await clearCCR();
+  });
+
   it("schätzt Tokenanzahl für gemischte deutsche und chinesische Texte sinnvoll", () => {
     const german = "Dies ist ein einfacher Satz zur Prüfung."; // 40 Zeichen -> ~12 Tokens
     const zh = "这是一个测试句子"; // 8 CJK Zeichen -> 12 Tokens
@@ -41,5 +46,56 @@ describe("src/engine/context.ts - Token Budgeting & Estimation", () => {
     expect(budgeted.fittedHistory.length).toBeLessThan(10);
     expect(budgeted.fittedHistory.length).toBeGreaterThanOrEqual(1);
     expect(budgeted.totalTokens).toBeLessThanOrEqual(600);
+  });
+
+  it("assembles optimized 3-zone context (Hot/Warm/Live) with compression stats", async () => {
+    const dummyChunks: TextChunk[] = [
+      {
+        id: "sowi/ungl#1",
+        path: "08_SoWi/Ungleichheit.md",
+        fach: "SoWi",
+        thema: "Ungleichheit",
+        operatoren: ["darstellen"],
+        kind: "text",
+        lang: "de",
+        text: "Top-1 Chunk bleibt stets komplett erhalten.",
+      },
+      {
+        id: "sowi/gini#1",
+        path: "08_SoWi/Gini.md",
+        fach: "SoWi",
+        thema: "Gini-Koeffizient",
+        operatoren: ["analysieren"],
+        kind: "text",
+        lang: "de",
+        text: "Langer Vorlauf ohne Substanz.\nKlausur-Satz: Der Gini-Koeffizient misst die Ungleichverteilung von 0 bis 1.\nLanger Nachlauf.",
+      },
+    ];
+
+    const dummyHistory: ChatMsg[] = [
+      { role: "user", content: "Was ist der Gini-Koeffizient?" },
+      { role: "assistant", content: "Der Gini-Koeffizient ist ein statistisches Maß. " + "Langer Text... ".repeat(20) },
+      { role: "user", content: "Wie hoch ist er in Deutschland?" },
+      { role: "assistant", content: "In Deutschland liegt der Netto-Gini bei etwa 0,29 bis 0,31." },
+    ];
+
+    const opt = await assembleOptimizedContext(dummyChunks, dummyHistory, {
+      query: "Wie interpretiert man die Lorenzkurve?",
+      intensityModifier: "Kurz und prägnant",
+      maxContextTokens: 2000,
+    });
+
+    // Struktur prüfen
+    expect(opt.messages.length).toBeGreaterThanOrEqual(3);
+    expect(opt.messages[0].role).toBe("system");
+    expect(opt.messages[0].content).toContain("Du bist ein lokaler KI-Tutor"); // Hot-Zone
+    expect(opt.messages[0].content).toContain("Modus-Vorgabe: Kurz und prägnant");
+    expect(opt.messages[opt.messages.length - 1].content).toBe("Wie interpretiert man die Lorenzkurve?");
+
+    // Stats prüfen
+    expect(opt.stats.hotTokens).toBeGreaterThan(0);
+    expect(opt.stats.warmTokens).toBeGreaterThan(0);
+    expect(opt.stats.liveTokens).toBeGreaterThan(0);
+    expect(opt.stats.totalTokens).toBeGreaterThan(0);
   });
 });

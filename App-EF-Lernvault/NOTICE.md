@@ -22,5 +22,13 @@
   lightningcss — MPL-2.0（CSS 压缩器，文件级弱 copyleft，未修改、未链接分发）
 - 门禁：运行 `npm run build` 产物仅含 A 组代码；B 组永不打包（Tauri 打包时复查）。
 
+## C. 架构与算法设计借鉴（Clean-Room 原生实现，零外部代码复制，零新 npm 依赖）
+- Headroom — Apache-2.0 — Headroom Labs, Inc.
+  借鉴其上下文管理核心理念：
+  1. CCR (Compress-Cache-Retrieve) 可逆内容寻址缓存（FNV-1a 哈希键 `h-xxxxxx` + IndexedDB/内存双层存储，保留压缩前全文以供随时无损还原）；
+  2. SmartCrusher 结构化表格折叠（表头抽取与 Markdown 表格模式压缩）；
+  3. 5D Scoring 上下文裁剪（首轮 Anchor 1 永久锚定、最近两轮 Rezenz 保留、学生答题错误与助教批改 100% Error Preservation 保留）。
+
 ## 待引入（P2+，引入时补记）
 - ts-fsrs — MIT — Open Spaced Repetition（记忆调度）
+
