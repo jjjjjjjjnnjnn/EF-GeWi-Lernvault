@@ -192,6 +192,49 @@ tags: [EF, Meta]
 | target format | 目标文本格式 | Englisch | Keep the required target format in mind. |
 | to paraphrase | 改述 | Englisch | Paraphrase the German text in your own English words. |
 | register | 语域 | Englisch | A formal letter needs a formal register. |
+| Fokussierung | 聚焦小点 | SoWi | Die Fokussierung grenzt die Prüfungsschwerpunkte ein. |
+| Staatsverschuldung | 国家债务 | SoWi | Die Debatte um die Staatsverschuldung spaltet die Konzeptionen. |
+| Protektionismus | 贸易保护主义 | SoWi | Protektionismus schützt Branchen, verteuert aber Importe. |
+| Milieumodell | 生活方式群体模型 | SoWi | Das Milieumodell ergänzt Schicht und Lage um Werte und Lebensstil. |
+| Handlungsempfehlung | 行动建议 | SoWi | Die Handlungsempfehlung berät den Adressaten mit zwei begründeten Massnahmen. |
+| Redebeitrag | 发言稿 | SoWi | Der Redebeitrag antwortet auf den Vorredner und überzeugt das Publikum. |
+| Eudaimonie | 好生活 | Philosophie | Eudaimonie bedeutet ein gelingendes Leben durch Tätigkeit. |
+| Mesotes | 中道 | Philosophie | Die Mesotes liegt zwischen Mangel und Übermass. |
+| Gemeinwille | 公意 | Philosophie | Der Gemeinwille zielt auf das gemeinsame Interesse aller Bürger. |
+| Entwurf | 自我筹划 | Philosophie | Sartre versteht Freiheit als Entwurf in die Zukunft. |
+| Determinismus | 决定论 | Philosophie | Der Determinismus erklärt jede Entscheidung durch Ursachen. |
+| Aufgabenart | 任务类型 | Deutsch | Die Aufgabenart I deutet Literatur, Typ II analysiert Sachtexte. |
+| Anforderungsbereich | 能力层级 | Deutsch | Der Anforderungsbereich II verlangt Reorganisation statt Reproduktion. |
+| weiterführender Schreibauftrag | 后续写作任务 | Deutsch | Nach der Analyse folgt ein kurzer weiterführender Schreibauftrag. |
+| materialgestütztes Verfassen | 材料支撑写作 | Deutsch | Das materialgestützte Verfassen richtet sich an echte Leser. |
+| in Beziehung setzen | 建立关联 | Deutsch | Der zweite Teil setzt den Text in Beziehung zu bekanntem Wissen. |
+| colonial heritage | 殖民遗产 | Englisch | The colonial heritage shapes national identity. |
+| national identity | 国家认同 | Englisch | National identity is debated in the UK. |
+| the American Dream | 美国梦 | Englisch | The American Dream promises freedom and equality. |
+| belonging | 归属感 | Englisch | She searches for belonging between two cultures. |
+| manipulation | 操纵 | Englisch | Manipulation is a risk of digital platforms. |
+| die Ableitung | 导数 | Mathe | Die Ableitung an der Stelle x0 gibt die Tangentensteigung an. |
+| die mittlere Änderungsrate | 平均变化率 | Mathe | Die Sekante durch zwei Punkte zeigt die mittlere Änderungsrate. |
+| kollinear | 共线 | Mathe | Die Vektoren sind kollinear, da b = 2 mal a gilt. |
+| der Wendepunkt | 拐点 | Mathe | Am Wendepunkt wechselt der Graph die Krümmung. |
+| die Steigung | 斜率 | Physik | Die Steigung im s-t-Diagramm gibt die Geschwindigkeit an. |
+| die Ausgleichsgerade | 拟合直线 | Physik | Die Ausgleichsgerade fasst die streuenden Punkte sinnvoll zusammen. |
+| die Messunsicherheit | 测量不确定度 | Physik | Jede Messung trägt eine Unsicherheit. |
+| die Tangente | 切线 | Physik | Die Tangente am Kurvenpunkt liefert die Momentangeschwindigkeit. |
+| Stoffmenge | 物质的量 | Chemie | Die Stoffmenge wird in Mol angegeben. |
+| molare Masse | 摩尔质量 | Chemie | Die molare Masse verbindet Masse und Stoffmenge. |
+| ausgleichen | 配平 | Chemie | Die Gleichung wird nur mit Koeffizienten ausgeglichen. |
+| Valenzelektron | 价电子 | Chemie | Gleiche Valenzelektronen bedeuten ähnliche Eigenschaften. |
+| Osmose | 渗透作用 | Bio | Wasser folgt dem Konzentrationsgefälle. |
+| Turgor | 膨压 | Bio | Turgor stabilisiert die Pflanze. |
+| Denaturierung | 变性 | Bio | Hitze denaturiert das Enzym irreversibel. |
+| Toleranzbereich | 耐受范围 | Bio | Ausserhalb des Toleranzbereichs sinkt die Fitness. |
+| Exposition | 呈示部 | Musik | Die Exposition stellt zwei Themen in zwei Tonarten vor. |
+| Durchführung | 展开部 | Musik | Die Durchführung zerlegt das Motiv und moduliert. |
+| Reprise | 再现部 | Musik | Die Reprise holt beide Themen in die Haupttonart zurück. |
+| Absprung | 起跳 | Sport | Entscheidend ist der schnelle Absprung, weil er die Weite bestimmt. |
+| Flugphase | 腾空阶段 | Sport | In der Flugphase bleibt die KSP-Bahn unveränderbar. |
+| Landung | 落地 | Sport | Die Landung federt mit Beugung sicher ab. |
 | Leserlenkung | 读者引导 | Deutsch | Der Autor lenkt die Leser mit einer Leitfrage. |
 | Argumentationsgang | 论证思路 | Deutsch | Der Argumentationsgang führt von der Konzession zum Mittelweg. |
 | Faktenargument | 事实论据 | Deutsch | Das Faktenargument untermauert die These mit Beobachtungen. |

@@ -55,6 +55,20 @@ tags: [EF, Meta]
 > IQB-HV无mp3直链（在线播放器）/ OpenStax需JS取链（已用Playwright解）/ Musik-Sport无中央考（只链Lehrplan）。
 > Serlo/LEIFI只收链接不批量（交互题，爬无意义；写笔记时按主题链）。
 
+## Internet-Offensive 2026-09-23（F1/F2补采：IQB真缺口 + KLP艺体；登录墙再确认）
+
+| # | 包 | 内容 | 许可 | 本地 | 状态 |
+|---|---|---|---|---|---|
+| F1 | IQB Mathe 2018–2023 | Geometrie+Stochastik B-Teil WTR, LK+GK（每年前4套，共20套；2017 Analysis已有跳过，Analysis 18–26非缺口） | IQB/KMK frei | `_Downloads/Mathe/iqb_2018*` ~ `iqb_2023*` | ok |
+| F1b | IQB Mathe 2024–2026 | GK-Stoch 2024 + LK-Stoch 2025 + GK-Geo 2026（最新3套） | IQB/KMK frei | `_Downloads/Mathe/iqb_2024m*` + `iqb_2025m*` + `iqb_2026m*` | ok |
+| F2.1 | IQB Englisch HV 2024 | 5套 Aufgabe+EHZ（erhöht1–3, grundlegend1–2） | IQB frei | `_Downloads/Englisch/iqb_2024ehoer*` | ok |
+| F2.2 | IQB Englisch HV 2025 | 5套 Aufgabe+EHZ（同上结构） | IQB frei | `_Downloads/Englisch/iqb_2025ehoer*` | ok |
+| F2.3 | KLP Musik GOSt (Heft 4702) | 全文 | Amtliches Werk | `_Downloads/Musik/klp_gost_musik.pdf` | ok |
+| F2.4 | KLP Sport GOSt (Heft 4734) | 全文 | Amtliches Werk | `_Downloads/Sport-muendl/klp_gost_sport.pdf` | ok |
+
+> 本轮确认不可下：Englisch HV 2026（404，池止于2025）/ Deutsch 2026-Pool（404，官方止于2025）/ Schreiben 2022–2025（池内无）/ IQB-Erwartungshorizonte Mathe（站内无直链，仅Aufgaben）/ IQB-HV mp3（仅播放器）/ StanSi近3年真题+ZKE往年卷（登录墙，找老师）/ `iqb.hu-berlin.de/abitur`与`pools2024`旧链已死（Anubis墙），改走`?page=N`分页。
+> 每PDF配同名`.quelle.txt`（URL+许可+2026-09-23）。本轮+37 PDF/~9MB（F1 25件6.1MB + F2 12件）。
+
 ## SoWi（优先）
 
 | # | 文件 | 许可 | URL | 本地 | 状态 |

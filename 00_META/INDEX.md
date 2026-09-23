@@ -46,6 +46,7 @@
 - Soziale Ungleichheit — [Soziale-Ungleichheit](../08_SoWi/Texte-Analyse/Soziale-Ungleichheit.md)（EF最高频，Template v2首篇：Pro/Contra+三数+5 Klausur-Sätze）
 - Karikatur方法 — [Karikatur-Anleitung](../08_SoWi/Texte-Analyse/Karikatur-Anleitung.md)
 - Karikatur三例 — [Karikatur-Fallbeispiele](../08_SoWi/Texte-Analyse/Karikatur-Fallbeispiele.md)（不平等/环境增长/厌政+AFB II-III EHZ+9句判语）
+- Abitur-Fokussierungen IF4+IF6 (2027–2029) — [Sowi-Abitur-Fokussierungen](../08_SoWi/Texte-Analyse/Sowi-Abitur-Fokussierungen.md)（Wirtschaftspolitik+Ungleichheit，EF衔接Kap.1–11）· [Gestaltungsaufgabe-Training](../08_SoWi/Klausur-Training/SW-Gestaltungsaufgabe-Training.md)（Redebeitrag/Handlungsempfehlung+EHZ）
 - 电子书11章地图 — [Sowi-NRW-EF-Buch-Navigator](../08_SoWi/Texte-Analyse/Sowi-NRW-EF-Buch-Navigator.md)（C.C.Buchner click & study，需学校登录；Ungleichheit无专章）
 
 ### Philosophie
@@ -53,11 +54,13 @@
 - Ethik: Utilitarismus vs Kant — [Utilitarismus-vs-Kant](../07_Philosophie/Texte-Analyse/Utilitarismus-vs-Kant.md)
 - Philosophische Fragen stellen (Plickat) — [Philosophische-Fragen-Typen](../07_Philosophie/Texte-Analyse/Philosophische-Fragen-Typen.md)（5 Fragetypen/Operatoren-Mapping）
 - Ethische Dilemmata: Kant vs Utilitarismus — [Ethische-Dilemmata-Sammlung](../07_Philosophie/Texte-Analyse/Ethische-Dilemmata-Sammlung.md)（4案例/双公式检验/快乐计算/8句Merksatz）
+- Abitur-Kernstellen (Aristoteles/Kant/Rousseau/Sartre) — [Philo-Abitur-Kernstellen](../07_Philosophie/Texte-Analyse/Philo-Abitur-Kernstellen.md)（4×3句论证+EF-Anschluss）· [II B/II C Training](../07_Philosophie/Klausur-Training/Philo-Textanalyse-Training.md)（EHZ+Lena-Übung）
 
 ### Deutsch
 - Lyrik: Sturm und Drang (Goethe) — [Lyrik-Sturm-Drang-Goethe](../01_Deutsch/Texte-Analyse/Lyrik-Sturm-Drang-Goethe.md)（Willkommen und Abschied/6 Mittel/Deutungshypothese）
 - Drama-Ganzschrift: Kandidaten + Werkzeugkasten — [Drama-Ganzschrift-Kandidaten](../01_Deutsch/Texte-Analyse/Drama-Ganzschrift-Kandidaten.md)（Dürrenmatt/Frisch-Shortlist/五段/人物关系/对话分析，待老师定书名）
 - Sachtextanalyse: Argumentation — [Sachtextanalyse-Argumentation](../01_Deutsch/Texte-Analyse/Sachtextanalyse-Argumentation.md)（6论据类型+10动词句式+自写微型范文全程分析）
+- Abitur-Aufgabenarten I-IV + ZKE-Anschluss — [Deutsch-Abitur-Aufgabenarten](../01_Deutsch/Texte-Analyse/Deutsch-Abitur-Aufgabenarten.md)（I-IV/AFB/IV材料写作/Gedichtvergleich/ZKE-D1=IIa）· [IQB-Training](../01_Deutsch/Klausur-Training/Deutsch-IQB-Training.md)（自写150词范文+EHZ）
 - Sachtextanalyse: Argumentation & Leserlenkung — [Sachtextanalyse-Argumentation](../01_Deutsch/Texte-Analyse/Sachtextanalyse-Argumentation.md)（Pause vom Bildschirm?/6 Argumenttypen/10 Verben/AFB II Analyse vs AFB III Erörterung）
 
 ### Englisch
@@ -66,15 +69,28 @@
 
 - Teil B Doppelpack — [Klausur-Teil-B-Doppelpack](../02_Englisch/Texte-Analyse/Klausur-Teil-B-Doppelpack.md)（Hörverstehen四题型+Mediation三段式，待老师定考轨）
 - Mediation范文两套 — [Mediation-Mustertexte](../02_Englisch/Texte-Analyse/Mediation-Mustertexte.md)（FSJ正式信+Detox论坛帖+双register Connectors）
+- Abitur-Themenfelder (UK/USA/Nigeria+Identität+Medien) — [Englisch-Abitur-Themenfelder](../02_Englisch/Texte-Analyse/Englisch-Abitur-Themenfelder.md)（5 Felder+Comment句）· [IQB-Writing-Training](../02_Englisch/Klausur-Training/Englisch-IQB-Writing-Training.md)（Lagos/London自写文+三步）
 
 ### Musik (mündlich)
 - Motiv und motivische Arbeit (Beethoven 5) — [Beethoven-Motiv-Hoeren](../09_Musik-mündl/Texte-Analyse/Beethoven-Motiv-Hoeren.md)（Motiv三要素/Verarbeitung表/Takt 1-20/Hör-Bausteine）
+- Sonatenhauptsatzform IF1+IF2 — [Musik-Halbjahr-IF1-IF2](../09_Musik-mündl/Texte-Analyse/Musik-Halbjahr-IF1-IF2.md)（呈示/展开/再现+听辨+5考官问）
 
 ### Physik
 - Gleichförmige Bewegung: Training — [Gleichfoermige-Bewegung-Training](../04_Physik/Gleichfoermige-Bewegung-Training.md)（s-t读画/平均vs瞬时/Excel四步/Klausur四行）
+- IQB EF Training Diagramme/Messung — [Physik-IQB-EF-Training](../04_Physik/Physik-IQB-EF-Training.md)（4自编题+KaTeX）· [Operatoren-Check](../04_Physik/Klausur-Training/Physik-Operatoren-Check.md)
 
 ### Bio
 - Zellbiologie-Grundlagen — [Zellbiologie-Grundlagen](../06_Bio/Zellbiologie-Grundlagen.md)（Mikroskop/Skala/Pflanze-Tier-Bakterium/Operatoren）
+- Bio-EF-Oekologie-Training — [Bio-EF-Oekologie-Training](../06_Bio/Bio-EF-Oekologie-Training.md)（Zellbio深化+Ökologie展望，4自编题）· [Operatoren-Check](../06_Bio/Klausur-Training/Bio-Operatoren-Check.md)
+
+### Mathe
+- ZKE 2027 Training — [Mathe-ZKE-2027-Training](../03_Mathe/Mathe-ZKE-2027-Training.md)（Teil A免工具+Teil B WTR/CAS，4自编题+解法）
+
+### Chemie
+- EF-Grundlagen-Training — [Chemie-EF-Grundlagen-Training](../05_Chemie/Chemie-EF-Grundlagen-Training.md)（Atombau/Bindung/配平/Mol，8自编题）· [Operatoren-Check](../05_Chemie/Klausur-Training/Chemie-Operatoren-Check.md)（StanSi ab 2025+Formeldokument）
+
+### Sport (mündlich)
+- Bewegungsanalyse Weitsprung — [Sport-Bewegungsanalyse](../10_Sport-mündl/Texte-Analyse/Sport-Bewegungsanalyse.md)（四相/纠错/5考官问）
 
 ## Journal（每日/每次交接一条，最新在下）
 
@@ -147,6 +163,7 @@
 - [2026-09-23-ccswitch-ui-model-save](Journal/2026-09-23-ccswitch-ui-model-save.md) — 助教教学区域轻量化、自主模型填写、显式保存设置与CC-Switch供应商交互流对齐（233单测全绿，保存反馈+密码显隐+端点全解禁编辑）
 - [2026-09-23-ccswitch-llm-routing](Journal/2026-09-23-ccswitch-llm-routing.md) — CC-Switch 风格 LLM 路由、端点自定义与原生协议适配（234单测全绿，Anthropic Messages原生协议+端口字段+完整URL开关+认证字段选择）
 - [2026-09-23-ext-01-04-texte-analyse](Journal/2026-09-23-ext-01-04-texte-analyse.md) — EXT-01~04四科并行：Sachtextanalyse+Dilemmata+Karikatur三例+Mediation双范文（4 commits，全v3九步）
+- [2026-09-23-internet-offensive](Journal/2026-09-23-internet-offensive.md) — Internet-Offensive十科全线：Abitur沉淀10科+IQB补采37PDF（10+1 commits，vault-check 59/294/162）
 - [2026-09-23-pedagogy-ui-library](Journal/2026-09-23-pedagogy-ui-library.md) — 无痛自然习得教育组件库与AI助教全闭环集成（242单测全绿，句式积木+辩证天平+文本荧光解构）
 - [2026-09-23-tutor-socratic-fehlerlog-tangent](Journal/2026-09-23-tutor-socratic-fehlerlog-tangent.md) — 启发引导/考纲直出双态分流、错题补丁弹窗与数学割线逼近切线沙盘（253单测全绿，Sokratisch产婆术+FehlerlogPatch+多模态图片输入+TangentSlider）
 - 约定：文件名 `YYYY-MM-DD-<thema>.md`，头部frontmatter（`fach`可空，`tags: [EF, Meta]`）。

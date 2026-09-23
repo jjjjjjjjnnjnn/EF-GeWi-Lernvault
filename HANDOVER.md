@@ -6,6 +6,7 @@
 1. 本文件 → 2. `AGENTS.md`（规范） → 3. `00_META/INDEX.md`（导航） → 4. 目标学科 `Lehrplan.md` → 5. `00_META/Journal/` 最新一篇（当前上下文）。
 
 ## 当前状态（2026-09-23晚·启发式引导/考纲直出双态分流、错题补丁与数学导数几何沙盘）
+- ✅ Internet-Offensive十科全线（10 commits+本交接）：Abitur-Fokussierungen/Kernstellen/Aufgabenarten/Themenfelder+各科Training/EHZ转述+新csv5科+MINT题库，全v3原创；IQB真缺口补采37 PDF（Mathe18–26/HV24–25/KLP艺体）；vault-check PASS（notes=59/csv=294/links=162）（Journal 2026-09-23-internet-offensive；登录墙真题待老师）。
 - ✅ 启发引导/考纲直出双态分流、错题补丁弹窗与数学割线逼近切线沙盘（`[App] 6d378af`+`[App] 55792bc`+本交接）：落地苏格拉底产婆术启发引导（Socratic）与官方 Erwartungshorizont 考纲直出（Direct Exam）双态无缝切换；消息气泡一键「📌 沉淀为错题」并自动生成合规 Markdown 表格行文本补丁（严格遵循 App 只读 Vault 规范）；原生图片/漫画粘贴与本地图表选择；首创理科几何直观工具 `TangentSlider`（割线 $\Delta x \to 0$ 连续逼近切线过程动态力学与差商收敛模拟）；43 单测套件 256 测试 100% 全绿 / build 6.45s 零错误（Journal 2026-09-23-tutor-socratic-fehlerlog-tangent）。
 - ✅ EXT-01~04四科Texte-Analyse并行落地（`[Deutsch]/[Philosophie]/[SoWi]/[Englisch]` 4 commits+本交接）：Sachtextanalyse论证+Dilemmata案例集+Karikatur三例+Mediation双范文，全v3九步完整版，全原创；vault-check PASS（notes=42/csv=240/links=141）（Journal 2026-09-23-ext-01-04-texte-analyse）。
 - ✅ 无痛自然习得教育组件库与 AI 助教全闭环集成（`[App] c6402c1`+本交接）：贯彻“无痛、自然学会”教育哲学，解决长句下笔难与价值判断主观情绪化问题；落地 `SatzbauLego` 句式积木（出处/动词/手法/效果 4 大卡槽即插即拔拼装考纲句）、`BalanceBoard` 辩证天平（SVG 物理倾斜力矩与 AFB III 考纲级价值裁决合成器）、`TextHighlighter` 荧光文本标注解构画板（4色划词实时聚类论证树）；顶栏无缝嵌入 AI 助教工作台，一键将拼装成果与裁决文本推入聊天流；新增 8 项专用单测，41 单测套件 242 测试 100% 全绿 / build 6.23s 零错误 / 1420 在线（Journal 2026-09-23-pedagogy-ui-library）。
