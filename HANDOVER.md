@@ -5,8 +5,9 @@
 ## 新agent阅读顺序（5分钟接手）
 1. 本文件 → 2. `AGENTS.md`（规范） → 3. `00_META/INDEX.md`（导航） → 4. 目标学科 `Lehrplan.md` → 5. `00_META/Journal/` 最新一篇（当前上下文）。
 
-## 当前状态（2026-09-23晚·助教无感回复与会话管理已验）
-- ✅ AI助教极速无感回复与多会话历史系统（`[App] aa7169f`+本交接）：10ms瞬时前导卡(extractInstantSnippet) + 多会话抽屉管理(Heute/Gestern/Früher/重命名/删除/清空/导出.md) + 思考强度三档(Schnell/Ausgewogen/Tiefgründig) + 一键智能调配(LM Studio离线自动调配至Vault原生考点合成)；25单测套件162测试全绿 / build过 / 1420在线（Journal 2026-09-23-tutor-zero-latency-history）。
+## 当前状态（2026-09-23·下一代智能引擎与全真模考系统已验）
+- ✅ 下一代智能引擎全栈落地（`[App] e20ed22`+本交接）：双引擎RRF混合检索(BM25+Vector) + 双向引用知识图谱网络(vaultGraph.ts，孤岛检测/核心节点) + BKT认知诊断与考纲掌握度模型(mastery.ts)支持自主开启/关闭学期管理(EF.1/EF.2/归档重置) + Oberstufe全真三段式Klausur模拟器(KlausurSim.tsx，算法动态抽取38篇笔记材料与AFB I-III试题，EPA 0-15评分) + 每日15分钟自适应混合极速冲刺(DailySprintModal.tsx，打卡连续Streak天数)；31单测套件189测试100%全绿 / npm run build 3.15s过 / 1420在线 / vault-check(38/203/127) PASS（Journal 2026-09-23-next-gen-learning-engine）。
+- ✅ AI助教极速无感回复与多会话历史系统（`[App] aa7169f`）：10ms瞬时前导卡(extractInstantSnippet) + 多会话抽屉管理(Heute/Gestern/Früher/重命名/删除/清空/导出.md) + 思考强度三档(Schnell/Ausgewogen/Tiefgründig) + 一键智能调配(LM Studio离线自动调配至Vault原生考点合成)；25单测套件162测试全绿 / build过 / 1420在线（Journal 2026-09-23-tutor-zero-latency-history）。
 - ✅ AI中后端全阶重构（`[App] 32345b5`）：统一流式传输(SSE/WebLLM/AbortSignal) + 结构化评分防假阳性(parseKlausurEvaluation) + IndexedDB高维向量二级持久化 + Token动态预算(3000上限) + 本地LLM心跳存活探针(1234/11434毫秒级感知)；22单测套件151测试全绿（Journal 2026-09-23-ai-backend-overhaul）。
 - ✅ 维护-4（`[App] c29b4d5`+本交接）：262文件干净三扫零泄漏；130单测/build/vault-check(38/203/123)/1420全过；AI-SETUP向量章节补齐（Journal 2026-09-23-wartung-4）。
 - ✅ E轮下载卡死修复（`[App] 0166f47`）：auto永不隐式下载+HF镜像+显式加载按钮+本地引擎重置；130单测/build/vault-check(38/203/123)/1420全过（Journal 2026-09-23-e-runde-download-fix）。

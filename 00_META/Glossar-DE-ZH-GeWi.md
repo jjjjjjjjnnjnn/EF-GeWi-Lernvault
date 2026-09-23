@@ -164,3 +164,11 @@ tags: [EF, Meta]
 | gist | 大意 | Englisch | First listen for the gist. |
 | mediation | 转述调解 | Englisch | Mediation reshapes content into a target format. |
 | target format | 目标文本格式 | Englisch | Keep the required target format in mind. |
+| Inhaltsfeld (IF) | 考纲内容领域 | Meta | Das Inhaltsfeld definiert den thematischen Rahmen im NRW-Kernlehrplan. |
+| Anforderungsbereich (AFB) | 考查能力层级 | Meta | Klausuren gliedern sich in AFB I, AFB II und AFB III. |
+| Inhaltsleistung | 内容得分/实质表述 | Meta | Die Inhaltsleistung macht den Hauptteil der Klausurbewertung aus. |
+| Darstellungsleistung | 形式表现/语言表述分 | Meta | Darstellungsleistung bewertet Fachsprache, Struktur und Zitierweise. |
+| Erwartungshorizont (EH) | 期望答题要点 | Meta | Der Erwartungshorizont bildet die Referenz für die Punktevergabe. |
+| Reciprocal Rank Fusion (RRF) | 倒数排名融合检索 | Meta | RRF fusioniert lexikalische BM25- und semantische Vektor-Treffer. |
+| Bayesian Knowledge Tracing (BKT) | 贝叶斯知识追踪 | Meta | BKT modelliert die Beherrschungswahrscheinlichkeit jedes Lernziels. |
+| Lernserie (Streak) | 连续学习天数 | Meta | Die Lernserie visualisiert tägliches kontinuierliches Üben. |
