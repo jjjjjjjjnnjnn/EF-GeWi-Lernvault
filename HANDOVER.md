@@ -5,7 +5,8 @@
 ## 新agent阅读顺序（5分钟接手）
 1. 本文件 → 2. `AGENTS.md`（规范） → 3. `00_META/INDEX.md`（导航） → 4. 目标学科 `Lehrplan.md` → 5. `00_META/Journal/` 最新一篇（当前上下文）。
 
-## 当前状态（2026-09-23晚·启发式引导/考纲直出双态分流、错题补丁与数学导数几何沙盘）
+## 当前状态（2026-09-23夜·AI助教对话异常根治、UI去Emoji与Tufte双层顶栏重构）
+- ✅ AI助教对话复读异常根除、错题按钮去Emoji与Tufte双层顶栏重构（`[App]`+本交接）：彻底排查并根除对话复读欢迎语 Bug（`rawHistory` 强制过滤本地欢迎语、`sanitizeChatMessages` 严苛对齐 Anthropic/OpenAI user-first 消息流规范、会话专属唯一主键 `${sessionId}_welcome` 消除 IndexedDB 覆盖冲突、函数式状态更新）；修复错题沉淀按钮 Feather Dollar Sign 错误 SVG 路径并手写内联 Bookmark SVG，彻底移除 `📌`、`⚡`、`✏️` 等全部 emoji；`renderAiText` 智能豁免欢迎语、引导问句与角色寒暄，杜绝假阳性 `[无出处]` 警告；顶栏重构为规范的两层 Tufte 紧凑工作台（主控状态层+学科工具条），消除任何中窄屏折行与挤压；43 单测套件 256 测试 100% 全绿 / build 3.24s 零错误（Journal 2026-09-23-tutor-dialog-ui-fix）。
 - ✅ 中德理科互通扩展（4 commits+本交接）：MINT四科CN桥（DE-CN-EN手册+6招技巧+4题改编训练，全v3三语原创；真题只收官链不爬）；vault-check PASS（notes=71/csv=334/links=163）（Journal 2026-09-23-cn-mint-vernetzung）。
 - ✅ Internet-Offensive十科全线（10 commits+本交接）：Abitur-Fokussierungen/Kernstellen/Aufgabenarten/Themenfelder+各科Training/EHZ转述+新csv5科+MINT题库，全v3原创；IQB真缺口补采37 PDF（Mathe18–26/HV24–25/KLP艺体）；vault-check PASS（notes=59/csv=294/links=162）（Journal 2026-09-23-internet-offensive；登录墙真题待老师）。
 - ✅ 启发引导/考纲直出双态分流、错题补丁弹窗与数学割线逼近切线沙盘（`[App] 6d378af`+`[App] 55792bc`+本交接）：落地苏格拉底产婆术启发引导（Socratic）与官方 Erwartungshorizont 考纲直出（Direct Exam）双态无缝切换；消息气泡一键「📌 沉淀为错题」并自动生成合规 Markdown 表格行文本补丁（严格遵循 App 只读 Vault 规范）；原生图片/漫画粘贴与本地图表选择；首创理科几何直观工具 `TangentSlider`（割线 $\Delta x \to 0$ 连续逼近切线过程动态力学与差商收敛模拟）；43 单测套件 256 测试 100% 全绿 / build 6.45s 零错误（Journal 2026-09-23-tutor-socratic-fehlerlog-tangent）。
