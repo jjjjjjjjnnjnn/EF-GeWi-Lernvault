@@ -265,10 +265,14 @@ export default function App() {
         setHelpOpen(true);
       } else if (e.key.toLowerCase() === "l" && !e.altKey && !e.ctrlKey && !e.metaKey) {
         toggleLang();
-      } else if (e.altKey && e.key >= "1" && e.key <= "9") {
+      } else if (e.altKey && ((e.key >= "1" && e.key <= "9") || e.key === "0")) {
         e.preventDefault();
-        if (e.key === "9") switchTab("einstellungen");
-        else switchTab(TAB_ORDER[Number(e.key) - 1]);
+        if (e.key === "0") {
+          switchTab("einstellungen");
+        } else {
+          const target = TAB_ORDER[Number(e.key) - 1];
+          if (target) switchTab(target);
+        }
       }
     };
     window.addEventListener("keydown", onKey);
@@ -432,11 +436,11 @@ export default function App() {
           })}
         </nav>
 
-        {/* Einstellungen: getrennt am seitenende, ausserhalb der lern-navigation (B3: Alt 9) */}
+        {/* Einstellungen: getrennt am seitenende, ausserhalb der lern-navigation (B3: Alt 0) */}
         <div className="mt-4 border-t border-[#E5E1D8] pt-3">
           <button
             onClick={() => switchTab("einstellungen")}
-            title={`${tr.settings} (Alt 9)`}
+            title={`${tr.settings} (Alt 0)`}
             className={`flex w-full items-center gap-2.5 px-3 py-2 text-left text-sm transition-all duration-150 rounded-sm active:scale-[0.98] focus-visible:outline focus-visible:outline-1 focus-visible:outline-[#4338CA] ${
               tab === "einstellungen"
                 ? "font-medium text-[#4338CA] bg-[#ECE7DC]/60 border-l-2 border-[#4338CA]"
@@ -445,7 +449,7 @@ export default function App() {
           >
             <span className="shrink-0 select-none">{icons.einstellungen}</span>
             <span className="font-sans">{tr.settings}</span>
-            <kbd className="ml-auto font-mono text-[10px] text-[#6B675C]">Alt 9</kbd>
+            <kbd className="ml-auto font-mono text-[10px] text-[#6B675C]">Alt 0</kbd>
           </button>
         </div>
 
