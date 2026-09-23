@@ -6,6 +6,7 @@
 1. 本文件 → 2. `AGENTS.md`（规范） → 3. `00_META/INDEX.md`（导航） → 4. 目标学科 `Lehrplan.md` → 5. `00_META/Journal/` 最新一篇（当前上下文）。
 
 ## 当前状态（2026-09-23·下一代智能引擎与全真模考系统已验）
+- ✅ 拉取失败修复（`[App] 627b670`+本交接）：dev同源代理Node代取（CORS-free，Key只走头）+直连兜底+错误分类中文明示；34单测套件202测试全绿 / build过 / vault-check(38/203/131) / 代理实测OpenRouter回200真名单（Journal 2026-09-23-modellpull-proxy-fix；opencode go端点待用户给URL）。
 - ✅ 新渠道+模型拉取（`[App] fd4ed3d`+本交接）：OpenCode Zen/SenseNova商汤预设+Base-URL改写+ccswitch式⇩拉取模型列表点选即用；34单测套件199测试全绿 / build过 / vault-check(38/203/130) / 1420在线（Journal 2026-09-23-provider-modellpull）。
 - ✅ 用户反馈三修（`[App] ffd56d6`+本交接）：KaTeX懒加载独立chunk（首绘不再堵）+引擎off时KI按钮置灰明示+check步默写+AI打分纠错教学FelloFish循环；33单测套件195测试全绿 / build过 / vault-check(38/203/129) / 1420在线（Journal 2026-09-23-reise-katex-ki-fellofish）。
 - ✅ V1模拟走查（`[App] 6c9c100`+本交接）：真L1文件穿真解析真UI跑完8步（门禁/XP离线保底/反馈上下文全过）；32单测套件191测试全绿 / build过 / 1420在线（Journal 2026-09-23-v1-walkthrough-sim；V2–V4体感/整场仍待真人）。
