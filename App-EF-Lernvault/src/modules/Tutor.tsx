@@ -138,7 +138,7 @@ export default function Tutor({
 
         const initMsgs: TutorChatMessage[] = [
           {
-            id: "welcome",
+            id: `${first.id}_welcome`,
             sessionId: first.id,
             role: "ki",
             text: welcomeText,
@@ -155,7 +155,7 @@ export default function Tutor({
         if (!mounted) return;
         setMessages(msgs.length > 0 ? msgs : [
           {
-            id: "welcome",
+            id: `${active.id}_welcome`,
             sessionId: active.id,
             role: "ki",
             text: welcomeText,
@@ -179,7 +179,7 @@ export default function Tutor({
     const msgs = await loadSessionMessages(sessId);
     setMessages(msgs.length > 0 ? msgs : [
       {
-        id: "welcome",
+        id: `${sessId}_welcome`,
         sessionId: sessId,
         role: "ki",
         text: welcomeText,
@@ -198,7 +198,7 @@ export default function Tutor({
 
     const initMsgs: TutorChatMessage[] = [
       {
-        id: "welcome",
+        id: `${newSess.id}_welcome`,
         sessionId: newSess.id,
         role: "ki",
         text: welcomeText,
@@ -252,7 +252,7 @@ export default function Tutor({
     setCurrentSessionId(fresh.id);
     const initMsgs: TutorChatMessage[] = [
       {
-        id: "welcome",
+        id: `${fresh.id}_welcome`,
         sessionId: fresh.id,
         role: "ki",
         text: welcomeText,
@@ -260,6 +260,7 @@ export default function Tutor({
       },
     ];
     setMessages(initMsgs);
+    await saveSessionMessages(fresh.id, initMsgs);
   };
 
   // Exportieren als Markdown
@@ -275,10 +276,10 @@ export default function Tutor({
 
     for (const m of messages) {
       if (m.role === "du") {
-        lines.push(`### 👤 Frage: ${m.text}\n`);
+        lines.push(`### [Frage / 用户提问]: ${m.text}\n`);
       } else {
         if (m.instantSnippet) {
-          lines.push(`> ⚡ [${m.instantSnippet.notePath}] ${m.instantSnippet.thema}: ${m.instantSnippet.excerpt}\n`);
+          lines.push(`> [Instant Grounding: ${m.instantSnippet.notePath}] ${m.instantSnippet.thema}: ${m.instantSnippet.excerpt}\n`);
         }
         lines.push(`${m.text}\n\n---\n`);
       }
@@ -444,6 +445,16 @@ export default function Tutor({
       const rawHistory: ChatMsg[] = messages
         .filter((m) => {
           if (m.isError) return false;
+          // 本地欢迎引导语与招呼语绝不可混入历史上下文，杜绝大模型依样复读
+          if (
+            m.id === "welcome" ||
+            m.id.endsWith("_welcome") ||
+            m.text === welcomeText ||
+            m.text.includes("我是你的本地高中助教") ||
+            m.text.includes("lokaler EF-Tutor")
+          ) {
+            return false;
+          }
           // 杜绝将离线/网络报错兜底话术混入上下文，防止大模型依样画葫芦复读报错
           if (
             m.text.includes("离线") ||
@@ -539,11 +550,15 @@ export default function Tutor({
         isError: res.source === "vault-autofallback",
       };
 
-      const finalMessages = [...messages, userMsg, finalBot];
-      setMessages(finalMessages);
+      setMessages((prev) => {
+        const withoutBot = prev.filter((m) => m.id !== botMsgId);
+        const hasUser = withoutBot.some((m) => m.id === userMsg.id);
+        const next = hasUser ? [...withoutBot, finalBot] : [...withoutBot, userMsg, finalBot];
+        saveSessionMessages(currentSessionId, next);
+        return next;
+      });
       setIsDegraded(res.source === "vault-autofallback");
       setEngineTag(fullEngineTag);
-      await saveSessionMessages(currentSessionId, finalMessages);
     } catch (err) {
       if (err instanceof DOMException && err.name === "AbortError") {
         return;
@@ -623,8 +638,19 @@ export default function Tutor({
           }
 
           const trimmed = line.trim();
-          const isShortOrGreeting = trimmed.length < 15 || trimmed.startsWith("#") || trimmed.startsWith("-");
-          const needsWarning = !hasCitation && !isShortOrGreeting;
+          const isGreetingOrMeta =
+            trimmed.includes("我是你的本地高中助教") ||
+            trimmed.includes("lokaler EF-Tutor") ||
+            trimmed.includes("Willkommen") ||
+            trimmed.startsWith("Hallo") ||
+            trimmed.startsWith("你好") ||
+            trimmed.endsWith("?") ||
+            trimmed.endsWith("？") ||
+            trimmed.endsWith(":") ||
+            trimmed.endsWith("：");
+          const isShortOrMarkdown =
+            trimmed.length < 15 || trimmed.startsWith("#") || trimmed.startsWith("-") || trimmed.startsWith("*");
+          const needsWarning = !hasCitation && !isShortOrMarkdown && !isGreetingOrMeta;
 
           return (
             <p key={lIdx} className="leading-relaxed">
@@ -709,7 +735,11 @@ export default function Tutor({
                       ) : (
                         <>
                           <div className="flex items-center gap-1.5 truncate pr-1">
-                            {sess.pinned && <span className="text-[10px]">📌</span>}
+                            {sess.pinned && (
+                              <svg className="w-2.5 h-2.5 text-[#B45309] shrink-0" viewBox="0 0 16 16" fill="currentColor">
+                                <path d="M4 2v1l2 2v4l-2 2v1h8v-1l-2-2V5l2-2V2H4zm4 11v3h1v-3H8z" />
+                              </svg>
+                            )}
                             <span className="truncate font-serif">{sess.title}</span>
                           </div>
 
@@ -724,7 +754,9 @@ export default function Tutor({
                               title={lang === "de" ? "Umbenennen" : "重命名"}
                               className="text-[#6B675C] hover:text-[#1C1B17] p-0.5"
                             >
-                              ✏️
+                              <svg className="w-3 h-3" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5">
+                                <path d="M11 2l3 3-8 8H3v-3l8-8zM9 4l3 3" />
+                              </svg>
                             </button>
                             <button
                               onClick={(e) => handleDeleteSession(sess.id, e)}
@@ -758,197 +790,213 @@ export default function Tutor({
 
       {/* Rechte Spalte: Haupt-Chatbereich */}
       <main className="flex-1 flex flex-col min-w-0 bg-white">
-        {/* Model status bar & Intensity Switcher */}
-        <div className="flex flex-wrap items-center justify-between border-b border-[#E5E1D8] bg-[#FAF9F6] px-3 py-2 text-xs font-mono text-[#6B675C] gap-2">
-          <div className="flex items-center gap-2">
-            <button
-              onClick={() => setShowSidebar((s) => !s)}
-              title={showSidebar ? (lang === "de" ? "Sidebar verbergen" : "折叠侧栏") : (lang === "de" ? "Sidebar zeigen" : "展开侧栏")}
-              className="p-1 rounded-sm border border-[#E5E1D8] bg-white text-[#1C1B17] hover:border-[#4338CA] hover:text-[#4338CA]"
-            >
-              ☰
-            </button>
-            <span
-              className={`h-2 w-2 rounded-full ${
-                isDegraded ? "bg-[#B45309]" : "bg-[#10B981]"
-              }`}
-            />
-            <span className="truncate max-w-[260px] flex items-center gap-1.5 font-sans">
-              <span className="font-medium text-[#1C1B17]">
-                {isDegraded ? "Auto-Dispatch · Vault" : activeEp.name}
-              </span>
-              {!isDegraded && (
-                <span className="text-[10px] font-mono text-[#4338CA] bg-[#EEF2FF] border border-[#C7D2FE] px-1 py-0.2 rounded-xs truncate max-w-[120px]">
-                  {activeEp.model.split("/").pop()}
+        {/* Model status bar & Controls (Tufte 2-Tier Toolbar) */}
+        <div className="border-b border-[#E5E1D8] bg-[#FAF9F6]">
+          {/* Tier 1: System-Status & Kernmodi */}
+          <div className="flex items-center justify-between px-3 py-1.5 text-xs font-mono text-[#6B675C] border-b border-[#E5E1D8]/60 gap-2">
+            <div className="flex items-center gap-2 min-w-0">
+              <button
+                onClick={() => setShowSidebar((s) => !s)}
+                title={showSidebar ? (lang === "de" ? "Sidebar verbergen" : "折叠侧栏") : (lang === "de" ? "Sidebar zeigen" : "展开侧栏")}
+                className="p-1 rounded-sm border border-[#E5E1D8] bg-white text-[#1C1B17] hover:border-[#4338CA] hover:text-[#4338CA] cursor-pointer"
+              >
+                <svg className="w-3.5 h-3.5" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.8">
+                  <path d="M2.5 4h11M2.5 8h11M2.5 12h11" />
+                </svg>
+              </button>
+              <span
+                className={`h-2 w-2 rounded-full shrink-0 ${
+                  isDegraded ? "bg-[#B45309]" : "bg-[#10B981]"
+                }`}
+              />
+              <span className="truncate flex items-center gap-1.5 font-sans">
+                <span className="font-medium text-[#1C1B17] truncate">
+                  {isDegraded ? "Auto-Dispatch · Vault" : activeEp.name}
                 </span>
-              )}
-            </span>
-          </div>
+                {!isDegraded && (
+                  <span className="text-[10px] font-mono text-[#4338CA] bg-[#EEF2FF] border border-[#C7D2FE] px-1 py-0.2 rounded-xs truncate max-w-[130px]">
+                    {activeEp.model.split("/").pop()}
+                  </span>
+                )}
+              </span>
+            </div>
 
-          {/* Denkintensitäts-Auswahl (Schnell | Ausgewogen | Tiefgründig) */}
-          <div className="flex items-center gap-1 border border-[#E5E1D8] rounded-sm bg-white p-0.5">
-            {(["fast", "balanced", "deep"] as ThinkingIntensity[]).map((st) => (
+            <div className="flex items-center gap-2 shrink-0">
+              {/* Denkintensitäts-Auswahl (Schnell | Ausgewogen | Tiefgründig) */}
+              <div className="flex items-center gap-0.5 border border-[#E5E1D8] rounded-sm bg-white p-0.5">
+                {(["fast", "balanced", "deep"] as ThinkingIntensity[]).map((st) => (
+                  <button
+                    key={st}
+                    onClick={() => {
+                      setIntensity(st);
+                      saveThinkingIntensity(st);
+                    }}
+                    className={`px-2 py-0.5 rounded-xs text-[11px] font-sans transition-colors cursor-pointer ${
+                      intensity === st
+                        ? "bg-[#1C1B17] text-[#FAFAF7]"
+                        : "text-[#6B675C] hover:text-[#1C1B17]"
+                    }`}
+                    title={INTENSITY_PRESETS[st].systemModifierDE}
+                  >
+                    {lang === "de" ? INTENSITY_PRESETS[st].labelDE : INTENSITY_PRESETS[st].labelZH}
+                  </button>
+                ))}
+              </div>
+
+              {/* Lehrmodus: Sokratisch vs. Klausur-Direkt */}
+              <div className="flex items-center gap-0.5 border border-[#E5E1D8] rounded-sm bg-white p-0.5">
+                <button
+                  type="button"
+                  onClick={() => {
+                    setPedagogyMode("socratic");
+                    saveTutorPedagogyMode("socratic");
+                  }}
+                  className={`px-2 py-0.5 rounded-xs text-[11px] font-sans transition-colors cursor-pointer flex items-center gap-1 ${
+                    pedagogyMode === "socratic"
+                      ? "bg-[#4338CA] text-white font-medium shadow-2xs"
+                      : "text-[#6B675C] hover:text-[#1C1B17]"
+                  }`}
+                  title={
+                    lang === "de"
+                      ? "Sokratische Mäeutik: Führt mit schrittweisen Leitfragen zur Lösung (nicht vorsagen)"
+                      : "启发引导模式：苏格拉底产婆术，反抛出引导性问题，启发自主解题"
+                  }
+                >
+                  <svg className="w-2.5 h-2.5" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.8">
+                    <circle cx="8" cy="8" r="6" />
+                    <path d="M8 5v3l2 2" />
+                  </svg>
+                  <span>{lang === "de" ? "Sokratisch" : "启发引导"}</span>
+                </button>
+                <button
+                  type="button"
+                  onClick={() => {
+                    setPedagogyMode("direct");
+                    saveTutorPedagogyMode("direct");
+                  }}
+                  className={`px-2 py-0.5 rounded-xs text-[11px] font-sans transition-colors cursor-pointer flex items-center gap-1 ${
+                    pedagogyMode === "direct"
+                      ? "bg-[#047857] text-white font-medium shadow-2xs"
+                      : "text-[#6B675C] hover:text-[#1C1B17]"
+                  }`}
+                  title={
+                    lang === "de"
+                      ? "Klausur-Direkt: Liefert sofort Erwartungshorizont, Klausursatz & Fehlerwarnung"
+                      : "考纲直出模式：标准Erwartungshorizont踩分点与满分答题句"
+                  }
+                >
+                  <svg className="w-2.5 h-2.5" viewBox="0 0 16 16" fill="currentColor">
+                    <polygon points="9 1 3 9 8 9 7 15 13 7 8 7 9 1" />
+                  </svg>
+                  <span>{lang === "de" ? "Klausur-Direkt" : "考纲直出"}</span>
+                </button>
+              </div>
+
+              {/* 端点与模型设置按钮 */}
               <button
-                key={st}
                 onClick={() => {
-                  setIntensity(st);
-                  saveThinkingIntensity(st);
+                  if (onOpenSettings) {
+                    onOpenSettings();
+                  } else {
+                    setShowAi((s) => !s);
+                  }
                 }}
-                className={`px-2 py-0.5 rounded-xs text-[11px] font-sans transition-colors cursor-pointer ${
-                  intensity === st
-                    ? "bg-[#1C1B17] text-[#FAFAF7]"
-                    : "text-[#6B675C] hover:text-[#1C1B17]"
-                }`}
-                title={INTENSITY_PRESETS[st].systemModifierDE}
+                title={lang === "de" ? "Zu den vollständigen KI-Einstellungen (Modelle, Endpunkte)" : "配置端点与模型"}
+                className="rounded-sm border border-[#E5E1D8] bg-white px-2 py-0.5 font-sans text-[11px] text-[#4338CA] hover:border-[#4338CA] hover:bg-[#EEF2FF] flex items-center gap-1 cursor-pointer transition-colors"
               >
-                {lang === "de" ? INTENSITY_PRESETS[st].labelDE : INTENSITY_PRESETS[st].labelZH}
+                <svg className="w-3 h-3" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5">
+                  <circle cx="8" cy="8" r="2.2" />
+                  <path d="M8 1.6v2.1M8 12.3v2.1M1.6 8h2.1M12.3 8h2.1M3.5 3.5l1.5 1.5M11 11l1.5 1.5M12.5 3.5L11 5M5 11l-1.5 1.5" />
+                </svg>
+                <span>{lang === "de" ? "Modell-Setup" : "配置端点与模型"}</span>
               </button>
-            ))}
+            </div>
           </div>
 
-          {/* Lehrmodus: Sokratisch vs. Klausur-Direkt */}
-          <div className="flex items-center gap-1 border border-[#E5E1D8] rounded-sm bg-white p-0.5">
-            <button
-              type="button"
-              onClick={() => {
-                setPedagogyMode("socratic");
-                saveTutorPedagogyMode("socratic");
-              }}
-              className={`px-2 py-0.5 rounded-xs text-[11px] font-sans transition-colors cursor-pointer flex items-center gap-1 ${
-                pedagogyMode === "socratic"
-                  ? "bg-[#4338CA] text-white font-medium shadow-2xs"
-                  : "text-[#6B675C] hover:text-[#1C1B17]"
-              }`}
-              title={
-                lang === "de"
-                  ? "Sokratische Mäeutik: Führt mit schrittweisen Leitfragen zur Lösung (nicht vorsagen)"
-                  : "启发引导模式：苏格拉底产婆术，反抛出引导性问题，启发自主解题"
-              }
-            >
-              <svg className="w-2.5 h-2.5" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.8">
-                <circle cx="8" cy="8" r="6" />
-                <path d="M8 5v3l2 2" />
-              </svg>
-              <span>{lang === "de" ? "Sokratisch" : "启发引导"}</span>
-            </button>
-            <button
-              type="button"
-              onClick={() => {
-                setPedagogyMode("direct");
-                saveTutorPedagogyMode("direct");
-              }}
-              className={`px-2 py-0.5 rounded-xs text-[11px] font-sans transition-colors cursor-pointer flex items-center gap-1 ${
-                pedagogyMode === "direct"
-                  ? "bg-[#047857] text-white font-medium shadow-2xs"
-                  : "text-[#6B675C] hover:text-[#1C1B17]"
-              }`}
-              title={
-                lang === "de"
-                  ? "Klausur-Direkt: Liefert sofort Erwartungshorizont, Klausursatz & Fehlerwarnung"
-                  : "考纲直出模式：标准Erwartungshorizont踩分点与满分答题句"
-              }
-            >
-              <svg className="w-2.5 h-2.5" viewBox="0 0 16 16" fill="currentColor">
-                <polygon points="9 1 3 9 8 9 7 15 13 7 8 7 9 1" />
-              </svg>
-              <span>{lang === "de" ? "Klausur-Direkt" : "考纲直出"}</span>
-            </button>
-          </div>
+          {/* Tier 2: 学科启发工具条与导出 */}
+          <div className="flex items-center justify-between px-3 py-1 text-xs font-mono text-[#6B675C]">
+            <div className="flex items-center gap-2">
+              <span className="text-[10px] text-[#8C877B] uppercase tracking-wider font-sans">
+                {lang === "de" ? "Didaktik-Tools:" : "学科辅助工具:"}
+              </span>
+              <div className="flex items-center gap-1">
+                <button
+                  type="button"
+                  onClick={() => setPedagogyTool((t) => (t === "lego" ? null : "lego"))}
+                  title={lang === "de" ? "Satzbau-Lego öffnen" : "打开句式积木 (Satzbau-Lego)"}
+                  className={`rounded-xs px-2 py-0.5 text-[11px] font-sans transition-all cursor-pointer flex items-center gap-1 border border-[#E5E1D8] ${
+                    pedagogyTool === "lego"
+                      ? "bg-[#4338CA] text-white font-medium border-[#4338CA]"
+                      : "bg-white text-[#1C1B17] hover:bg-[#FAF9F6]"
+                  }`}
+                >
+                  <svg className="w-3 h-3" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.6">
+                    <rect x="2" y="5" width="12" height="9" rx="1" />
+                    <circle cx="5" cy="3" r="1.5" />
+                    <circle cx="11" cy="3" r="1.5" />
+                  </svg>
+                  <span>{lang === "de" ? "Satzbau-Lego" : "句式积木"}</span>
+                </button>
 
+                <button
+                  type="button"
+                  onClick={() => setPedagogyTool((t) => (t === "balance" ? null : "balance"))}
+                  title={lang === "de" ? "Dialektische Waage öffnen" : "打开辩证天平 (Urteils-Waage)"}
+                  className={`rounded-xs px-2 py-0.5 text-[11px] font-sans transition-all cursor-pointer flex items-center gap-1 border border-[#E5E1D8] ${
+                    pedagogyTool === "balance"
+                      ? "bg-[#047857] text-white font-medium border-[#047857]"
+                      : "bg-white text-[#1C1B17] hover:bg-[#FAF9F6]"
+                  }`}
+                >
+                  <svg className="w-3 h-3" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.6">
+                    <path d="M8 2v12M3 14h10M4 6l4-2 4 2M4 6l-2 5h4l-2-5M12 6l-2 5h4l-2-5" />
+                  </svg>
+                  <span>{lang === "de" ? "Urteils-Waage" : "辩证天平"}</span>
+                </button>
 
-          <div className="flex items-center gap-2">
-            {/* 无痛学习交互工具箱 (Satzbau-Lego / Balance / Highlighter) */}
-            <div className="flex items-center gap-1 border border-[#E5E1D8] rounded-sm bg-white p-0.5">
-              <button
-                type="button"
-                onClick={() => setPedagogyTool((t) => (t === "lego" ? null : "lego"))}
-                title={lang === "de" ? "Satzbau-Lego öffnen" : "打开句式积木 (Satzbau-Lego)"}
-                className={`rounded-xs px-2 py-0.5 text-[11px] font-sans transition-all cursor-pointer flex items-center gap-1 ${
-                  pedagogyTool === "lego"
-                    ? "bg-[#4338CA] text-white font-medium"
-                    : "text-[#1C1B17] hover:bg-[#FAF9F6]"
-                }`}
-              >
-                <svg className="w-3 h-3" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.6">
-                  <rect x="2" y="5" width="12" height="9" rx="1" />
-                  <circle cx="5" cy="3" r="1.5" />
-                  <circle cx="11" cy="3" r="1.5" />
-                </svg>
-                <span>{lang === "de" ? "Satzbau-Lego" : "句式积木"}</span>
-              </button>
+                <button
+                  type="button"
+                  onClick={() => setPedagogyTool((t) => (t === "highlighter" ? null : "highlighter"))}
+                  title={lang === "de" ? "Text-Dekonstruierer öffnen" : "打开荧光标注解构画板"}
+                  className={`rounded-xs px-2 py-0.5 text-[11px] font-sans transition-all cursor-pointer flex items-center gap-1 border border-[#E5E1D8] ${
+                    pedagogyTool === "highlighter"
+                      ? "bg-[#BE185D] text-white font-medium border-[#BE185D]"
+                      : "bg-white text-[#1C1B17] hover:bg-[#FAF9F6]"
+                  }`}
+                >
+                  <svg className="w-3 h-3" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.6">
+                    <path d="M11 2l3 3-8 8H3v-3l8-8zM9 4l3 3" />
+                  </svg>
+                  <span>{lang === "de" ? "Dekonstruierer" : "文本解构"}</span>
+                </button>
 
-              <button
-                type="button"
-                onClick={() => setPedagogyTool((t) => (t === "balance" ? null : "balance"))}
-                title={lang === "de" ? "Dialektische Waage öffnen" : "打开辩证天平 (Urteils-Waage)"}
-                className={`rounded-xs px-2 py-0.5 text-[11px] font-sans transition-all cursor-pointer flex items-center gap-1 ${
-                  pedagogyTool === "balance"
-                    ? "bg-[#047857] text-white font-medium"
-                    : "text-[#1C1B17] hover:bg-[#FAF9F6]"
-                }`}
-              >
-                <svg className="w-3 h-3" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.6">
-                  <path d="M8 2v12M3 14h10M4 6l4-2 4 2M4 6l-2 5h4l-2-5M12 6l-2 5h4l-2-5" />
-                </svg>
-                <span>{lang === "de" ? "Urteils-Waage" : "辩证天平"}</span>
-              </button>
-
-              <button
-                type="button"
-                onClick={() => setPedagogyTool((t) => (t === "highlighter" ? null : "highlighter"))}
-                title={lang === "de" ? "Text-Dekonstruierer öffnen" : "打开荧光标注解构画板"}
-                className={`rounded-xs px-2 py-0.5 text-[11px] font-sans transition-all cursor-pointer flex items-center gap-1 ${
-                  pedagogyTool === "highlighter"
-                    ? "bg-[#BE185D] text-white font-medium"
-                    : "text-[#1C1B17] hover:bg-[#FAF9F6]"
-                }`}
-              >
-                <svg className="w-3 h-3" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.6">
-                  <path d="M11 2l3 3-8 8H3v-3l8-8zM9 4l3 3" />
-                </svg>
-                <span>{lang === "de" ? "Dekonstruierer" : "文本解构"}</span>
-              </button>
-
-              <button
-                type="button"
-                onClick={() => setPedagogyTool((t) => (t === "tangent" ? null : "tangent"))}
-                title={lang === "de" ? "Tangenten-Simulator öffnen (Differentialrechnung Δx → 0)" : "打开割线逼近切线沙盘 (导数几何直观)"}
-                className={`rounded-xs px-2 py-0.5 text-[11px] font-sans transition-all cursor-pointer flex items-center gap-1 ${
-                  pedagogyTool === "tangent"
-                    ? "bg-[#2563eb] text-white font-medium"
-                    : "text-[#1C1B17] hover:bg-[#FAF9F6]"
-                }`}
-              >
-                <svg className="w-3 h-3" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.6">
-                  <path d="M2 14L14 2M2 14h12M2 14V2" />
-                </svg>
-                <span>{lang === "de" ? "Tangenten-Sim" : "导数沙盘"}</span>
-              </button>
+                <button
+                  type="button"
+                  onClick={() => setPedagogyTool((t) => (t === "tangent" ? null : "tangent"))}
+                  title={lang === "de" ? "Tangenten-Simulator öffnen (Differentialrechnung Δx → 0)" : "打开割线逼近切线沙盘 (导数几何直观)"}
+                  className={`rounded-xs px-2 py-0.5 text-[11px] font-sans transition-all cursor-pointer flex items-center gap-1 border border-[#E5E1D8] ${
+                    pedagogyTool === "tangent"
+                      ? "bg-[#2563eb] text-white font-medium border-[#2563eb]"
+                      : "bg-white text-[#1C1B17] hover:bg-[#FAF9F6]"
+                  }`}
+                >
+                  <svg className="w-3 h-3" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.6">
+                    <path d="M2 14L14 2M2 14h12M2 14V2" />
+                  </svg>
+                  <span>{lang === "de" ? "Tangenten-Sim" : "导数沙盘"}</span>
+                </button>
+              </div>
             </div>
 
             <button
               onClick={handleExportMarkdown}
               title={lang === "de" ? "Dialog als Markdown exportieren" : "导出当前对话为 Markdown"}
-              className="rounded-sm border border-[#E5E1D8] bg-white px-2 py-0.5 font-sans text-[11px] text-[#1C1B17] hover:border-[#4338CA] hover:text-[#4338CA]"
+              className="rounded-sm border border-[#E5E1D8] bg-white px-2 py-0.5 font-sans text-[11px] text-[#1C1B17] hover:border-[#4338CA] hover:text-[#4338CA] flex items-center gap-1 cursor-pointer"
             >
-              {copyFeedback ? (lang === "de" ? "✓ Exportiert" : "✓ 已导出") : (lang === "de" ? "Export .md" : "导出 .md")}
-            </button>
-            <button
-              onClick={() => {
-                if (onOpenSettings) {
-                  onOpenSettings();
-                } else {
-                  setShowAi((s) => !s);
-                }
-              }}
-              title={lang === "de" ? "Zu den vollständigen KI-Einstellungen (Modelle, Endpunkte)" : "跳转到设置页面配置端点与模型"}
-              className="rounded-sm border border-[#E5E1D8] bg-white px-2.5 py-0.5 font-sans text-[11px] text-[#4338CA] hover:border-[#4338CA] hover:bg-[#EEF2FF] flex items-center gap-1 cursor-pointer transition-colors"
-            >
-              <svg className="w-3 h-3" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5">
-                <circle cx="8" cy="8" r="2.2" />
-                <path d="M8 1.6v2.1M8 12.3v2.1M1.6 8h2.1M12.3 8h2.1M3.5 3.5l1.5 1.5M11 11l1.5 1.5M12.5 3.5L11 5M5 11l-1.5 1.5" />
+              <svg className="w-3 h-3 text-[#6B675C]" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.6">
+                <path d="M8 2v9M4 7l4 4 4-4M2 14h12" />
               </svg>
-              <span>{lang === "de" ? "KI-Einstellungen" : "配置端点与模型"}</span>
+              <span>{copyFeedback ? (lang === "de" ? "✓ Exportiert" : "✓ 已导出") : (lang === "de" ? "Export .md" : "导出 .md")}</span>
             </button>
           </div>
         </div>
@@ -1017,7 +1065,12 @@ export default function Tutor({
         {/* Degraded State Notice */}
         {isDegraded && (
           <div className="border-b border-[#E5E1D8] border-l-2 border-[#B45309] bg-[#FAF9F6] px-4 py-2 text-xs font-mono text-[#B45309] flex items-center justify-between">
-            <span>⚡ {lang === "de" ? "Auto-Dispatch: Lokales Modell offline · Antwort nativ aus Vault" : "自动调配：本地模型离线，已原生调用知识库考点"}</span>
+            <span className="flex items-center gap-1.5">
+              <svg className="w-3 h-3 text-[#B45309]" viewBox="0 0 16 16" fill="currentColor">
+                <polygon points="9 1 3 9 8 9 7 15 13 7 8 7 9 1" />
+              </svg>
+              <span>{lang === "de" ? "Auto-Dispatch: Lokales Modell offline · Antwort nativ aus Vault" : "自动调配：本地模型离线，已原生调用知识库考点"}</span>
+            </span>
             <span className="text-[10px] text-[#6B675C]">{engineTag}</span>
           </div>
         )}
@@ -1065,7 +1118,10 @@ export default function Tutor({
                     <div className="flex items-center justify-between text-[10px] font-mono text-[#4338CA] mb-1">
                       <span className="flex items-center gap-1 font-sans">
                         <span className="inline-block w-1.5 h-1.5 rounded-full bg-[#4338CA]" />
-                        ⚡ {lang === "de" ? "Vault-Sofortauszug" : "知识库瞬时定义"}
+                        <svg className="w-2.5 h-2.5 text-[#4338CA]" viewBox="0 0 16 16" fill="currentColor">
+                          <polygon points="9 1 3 9 8 9 7 15 13 7 8 7 9 1" />
+                        </svg>
+                        <span>{lang === "de" ? "Vault-Sofortauszug" : "知识库瞬时定义"}</span>
                       </span>
                       <button
                         onClick={() => onJumpToLibrary?.(m.instantSnippet!.notePath)}
@@ -1082,7 +1138,7 @@ export default function Tutor({
                 {/* AI Text Stream */}
                 {renderAiText(m.text)}
 
-                {/* 📌 In Fehlerlog erfassen */}
+                {/* In Fehlerlog erfassen */}
                 {m.text && !m.isError && (
                   <div className="mt-2 pt-1.5 border-t border-[#E5E1D8]/60 flex items-center justify-between">
                     <button
@@ -1091,10 +1147,10 @@ export default function Tutor({
                       title={lang === "de" ? "Diesen Turn als Fehlerlog-Eintrag erfassen" : "提炼并沉淀为对应学科的错题补丁"}
                       className="inline-flex items-center gap-1.5 text-[11px] font-sans text-[#6B675C] hover:text-[#B45309] hover:bg-[#FEF3C7]/40 px-2 py-0.5 rounded-xs transition-colors cursor-pointer"
                     >
-                      <svg className="w-3 h-3 text-[#B45309]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                        <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
+                      <svg className="w-3.5 h-3.5 text-[#B45309]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                        <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z" />
                       </svg>
-                      <span>{lang === "de" ? "📌 In Fehlerlog erfassen" : "📌 沉淀为错题"}</span>
+                      <span>{lang === "de" ? "In Fehlerlog erfassen" : "沉淀为错题"}</span>
                     </button>
                   </div>
                 )}

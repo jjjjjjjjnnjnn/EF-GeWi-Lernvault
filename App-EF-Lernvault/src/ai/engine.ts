@@ -35,6 +35,12 @@ export function sanitizeChatMessages(messages: ChatMsg[]): ChatMsg[] {
     return [{ role: "user", content: "Hallo" }];
   }
 
+  // 严苛对齐 Anthropic Messages 协议与对话规范：首条非 system 消息绝不可为 assistant
+  const firstNonSysIdx = cleaned.findIndex((m) => m.role !== "system");
+  if (firstNonSysIdx !== -1 && cleaned[firstNonSysIdx].role === "assistant") {
+    cleaned.splice(firstNonSysIdx, 0, { role: "user", content: "Hallo" });
+  }
+
   const hasUser = cleaned.some((m) => m.role === "user");
   if (!hasUser) {
     cleaned.push({ role: "user", content: "Bitte beginnen." });

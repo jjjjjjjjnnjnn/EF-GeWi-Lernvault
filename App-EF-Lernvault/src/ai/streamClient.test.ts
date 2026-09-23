@@ -142,6 +142,16 @@ describe("src/ai/streamClient.ts - SSE Parsing and Streaming", () => {
           { role: "assistant", content: "" },
         ])
       ).toEqual([{ role: "user", content: "Hallo" }]);
+      expect(
+        sanitizeChatMessages([
+          { role: "system", content: "SYS" },
+          { role: "assistant", content: "Hi" },
+        ])
+      ).toEqual([
+        { role: "system", content: "SYS" },
+        { role: "user", content: "Hallo" },
+        { role: "assistant", content: "Hi" },
+      ]);
     });
   });
 });
