@@ -12,9 +12,11 @@ import {
 import { isWebGpuAvailable, localModelName, resetLocalEngine } from "../ai/engine";
 import {
   probeAiConnection,
+  pullModelList,
   subscribeHeartbeat,
   getLastProbe,
   type ProbeResult,
+  type ModelPullResult,
 } from "../ai/heartbeat";
 import {
   ensureLocalEmbedder,
@@ -41,17 +43,37 @@ export default function AiSettings({
   // ccswitch-stil: manueller modell-pull (volle /models-liste, klick-uebernahme)
   const [pulling, setPulling] = useState(false);
   const [showAllModels, setShowAllModels] = useState(false);
+  const [pulled, setPulled] = useState<ModelPullResult | null>(null);
 
   const pullModels = () => {
     if (pulling) return;
     setPulling(true);
     setShowAllModels(true);
-    void probeAiConnection(fetch, 8000).finally(() => setPulling(false));
+    const base = cfg.baseUrl.trim() || getProvider(cfg.providerId).baseUrl;
+    void pullModelList(base, cfg.apiKey, 8000)
+      .then((r) => {
+        setPulled(r);
+        if (r.models.length > 0) setShowAllModels(true);
+        void probeAiConnection(); // status-pill synchron halten
+      })
+      .finally(() => setPulling(false));
   };
+
+  const pullErrorText = (e: string): string => {
+    if (e === "CORS_BLOCK")
+      return lang === "de"
+        ? "Browser blockt Direktzugriff (CORS). Läuft WebUI ohne Proxy? Einmal neu starten (.\\scripts\\webui.ps1) — dann zieht der lokale Proxy."
+        : "浏览器拦截了直连（CORS）。WebUI是旧进程？重启一次（.\\scripts\\webui.ps1），本地代理就会接管拉取。";
+    return e;
+  };
+
+  // Anzeige-liste: frischer pull schlaegt heartbeat-chips
+  const listModels = pulled && (pulled.models.length > 0 || pulled.error) ? pulled.models : probe.detectedModels;
 
   useEffect(() => {
     const unsub = subscribeHeartbeat(setProbe);
     probeAiConnection();
+    setPulled(null); // endpoint/key-wechsel -> alte pull-liste ungültig
     return unsub;
   }, [cfg.engine, cfg.providerId, cfg.baseUrl, cfg.apiKey]);
 
@@ -218,12 +240,12 @@ export default function AiSettings({
               spellCheck={false}
               className="mt-1 block w-full rounded-sm border border-[#E5E1D8] bg-white px-2 py-1.5 font-mono text-xs text-[#1C1B17] focus:border-[#4338CA] focus:outline-none"
             />
-            {probe.detectedModels.length > 0 && (
+            {listModels.length > 0 && (
               <div className="mt-1 flex flex-wrap items-center gap-1">
                 <span className="font-mono text-[10px] text-[#6B675C]">
                   {lang === "de" ? "Erkannt:" : "发现:"}
                 </span>
-                {(showAllModels ? probe.detectedModels : probe.detectedModels.slice(0, 3)).map((mName) => (
+                {(showAllModels ? listModels : listModels.slice(0, 3)).map((mName) => (
                   <button
                     key={mName}
                     type="button"
@@ -236,9 +258,10 @@ export default function AiSettings({
                 ))}
               </div>
             )}
-            {showAllModels && probe.detectedModels.length > 8 && (
+            {showAllModels && listModels.length > 8 && (
               <p className="mt-0.5 font-mono text-[10px] text-[#6B675C]">
-                {probe.detectedModels.length} {lang === "de" ? "Modelle (klicken übernimmt)" : "个模型（点选即用）"}
+                {listModels.length} {lang === "de" ? "Modelle (klicken übernimmt)" : "个模型（点选即用）"}
+                {pulled && pulled.models.length > 0 && (pulled.via === "proxy" ? (lang === "de" ? " · via lokal-proxy" : " · 经本地代理") : "")}
               </p>
             )}
             <div className="mt-1 flex flex-wrap items-center gap-2">
@@ -253,12 +276,17 @@ export default function AiSettings({
                   ? (lang === "de" ? "Rufe ab …" : "拉取中…")
                   : (lang === "de" ? "⇩ Modelle abrufen" : "⇩ 拉取模型列表")}
               </button>
-              {probe.status === "offline" && probe.error && (
+              {pulled?.error ? (
+                <span className="font-mono text-[10px] text-[#C62828]" title={pulled.error}>
+                  {lang === "de" ? "Abruf fehlgeschlagen: " : "拉取失败："}
+                  {pullErrorText(pulled.error).length > 90 ? `${pullErrorText(pulled.error).slice(0, 90)}…` : pullErrorText(pulled.error)}
+                </span>
+              ) : probe.status === "offline" && probe.error ? (
                 <span className="font-mono text-[10px] text-[#C62828]" title={probe.error}>
                   {lang === "de" ? "Abruf fehlgeschlagen: " : "拉取失败："}
                   {probe.error.length > 60 ? `${probe.error.slice(0, 60)}…` : probe.error}
                 </span>
-              )}
+              ) : null}
               {probe.status === "online" && probe.detectedModels.length === 0 && (
                 <span className="font-mono text-[10px] text-[#6B675C]">
                   {lang === "de" ? "Online, aber /models leer (Modellname von Hand eintragen)" : "已连通但/models为空（请手填模型名）"}

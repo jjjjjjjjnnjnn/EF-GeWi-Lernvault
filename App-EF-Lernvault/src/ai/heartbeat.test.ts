@@ -1,5 +1,5 @@
 import { describe, it, expect, vi, beforeEach } from "vitest";
-import { probeAiConnection, subscribeHeartbeat } from "./heartbeat";
+import { probeAiConnection, pullModelList, subscribeHeartbeat } from "./heartbeat";
 import * as providers from "./providers";
 
 describe("src/ai/heartbeat.ts - AI Engine Heartbeat & Probe", () => {
@@ -118,5 +118,43 @@ describe("src/ai/heartbeat.ts - AI Engine Heartbeat & Probe", () => {
     expect(received).toContain("disabled");
 
     unsubscribe();
+  });
+
+  it("pull: dev-proxy zuerst (CORS-frei)", async () => {
+    const mockFetch = vi.fn().mockImplementation((url: string) => {
+      if (String(url).includes("/__models?")) {
+        return Promise.resolve({
+          ok: true,
+          json: async () => ({ ok: true, status: 200, body: JSON.stringify({ data: [{ id: "a" }, { id: "b" }, {}] }) }),
+        });
+      }
+      return Promise.reject(new Error("darf nicht direkt"));
+    });
+    const r = await pullModelList("https://relay.example/v1", "sk-x", 8000, mockFetch as unknown as typeof fetch);
+    expect(r.via).toBe("proxy");
+    expect(r.models).toEqual(["a", "b"]);
+  });
+
+  it("pull: ohne proxy -> direkt fallback + HTTP-status durchgereicht", async () => {
+    const mockFetch = vi.fn().mockImplementation((url: string) => {
+      if (String(url).includes("/__models?")) {
+        return Promise.resolve({ ok: false, json: async () => ({}) }); // kein envelope
+      }
+      return Promise.resolve({ ok: false, status: 401, json: async () => ({}) });
+    });
+    const r = await pullModelList("https://relay.example/v1/", "sk-x", 8000, mockFetch as unknown as typeof fetch);
+    expect(r.via).toBe("direct");
+    expect(r.error).toBe("HTTP 401");
+    expect(r.models).toEqual([]);
+  });
+
+  it("pull: browser-CORS (TypeError) -> CORS_BLOCK statt kauderwelsch", async () => {
+    const mockFetch = vi.fn().mockImplementation((url: string) => {
+      if (String(url).includes("/__models?")) return Promise.reject(new TypeError("fetch failed"));
+      return Promise.reject(new TypeError("Failed to fetch"));
+    });
+    const r = await pullModelList("https://relay.example/v1", "sk-x", 8000, mockFetch as unknown as typeof fetch);
+    expect(r.via).toBe("direct");
+    expect(r.error).toBe("CORS_BLOCK");
   });
 });

@@ -46,6 +46,96 @@ export function getLastProbe(): ProbeResult {
   return lastResult;
 }
 
+// ---- ccswitch-stil modell-pull: dev-proxy zuerst (kein CORS), direkt als fallback ----
+
+export interface ModelPullResult {
+  models: string[];
+  error?: string;
+  via: "proxy" | "direct" | "none";
+  status?: number;
+}
+
+/** Browser wirft bei CORS-block nur TypeError("Failed to fetch") — als solches melden. */
+export function isCorsLikeError(err: unknown): boolean {
+  if (err instanceof DOMException && err.name === "AbortError") return false;
+  const m = err instanceof Error ? err.message : String(err);
+  return /failed to fetch|networkerror|network error|load failed|fetch failed|blocked by cors|cors/i.test(m);
+}
+
+function idsFromModelsJson(data: unknown): string[] {
+  if (typeof data !== "object" || data === null) return [];
+  const d = (data as { data?: unknown }).data;
+  if (!Array.isArray(d)) return [];
+  return d.map((m) => (typeof m === "object" && m !== null ? String((m as { id?: unknown }).id ?? "") : "")).filter(Boolean);
+}
+
+/**
+ * Modellliste holen: 1) same-origin dev-proxy `/__models` (node-seitig, CORS-frei),
+ * 2) direkter browser-fetch. Fehler klassifiziert (HTTP-Status / CORS_BLOCK / Timeout).
+ */
+export async function pullModelList(
+  baseUrl: string,
+  apiKey: string,
+  timeoutMs = 8000,
+  fetchFn: typeof fetch = fetch
+): Promise<ModelPullResult> {
+  const base = baseUrl.trim().replace(/\/$/, "");
+  if (!base) return { models: [], error: "Keine Base-URL hinterlegt", via: "none" };
+
+  // 1) dev-proxy (nur wenn same-origin http(s))
+  try {
+    const origin = typeof location !== "undefined" ? location.origin : "";
+    if (origin.startsWith("http")) {
+      const ctl = new AbortController();
+      const t = setTimeout(() => ctl.abort(), 2500);
+      try {
+        const headers: Record<string, string> = {};
+        if (apiKey.trim()) headers["x-proxy-auth"] = `Bearer ${apiKey.trim()}`; // nur header, nie URL
+        const r = await fetchFn(`${origin}/__models?target=${encodeURIComponent(base)}`, {
+          headers,
+          signal: ctl.signal,
+        });
+        const env = (await r.json()) as { ok: boolean; status: number; body?: string; error?: string };
+        if (env && typeof env === "object" && typeof env.status === "number") {
+          if (env.ok) {
+            try {
+              return { models: idsFromModelsJson(JSON.parse(env.body ?? "{}")), via: "proxy", status: env.status };
+            } catch {
+              return { models: [], error: "/models antwortet kein JSON", via: "proxy", status: env.status };
+            }
+          }
+          return { models: [], error: `HTTP ${env.status}`, via: "proxy", status: env.status };
+        }
+        // kein envelope -> kein proxy (produktion): weiter zu direkt
+      } finally {
+        clearTimeout(t);
+      }
+    }
+  } catch {
+    // proxy down/alt-server -> direkt versuchen
+  }
+
+  // 2) direkt
+  try {
+    const ctl = new AbortController();
+    const t = setTimeout(() => ctl.abort(), Math.max(1000, timeoutMs));
+    try {
+      const headers: Record<string, string> = { "Content-Type": "application/json" };
+      if (apiKey.trim()) headers.Authorization = `Bearer ${apiKey.trim()}`;
+      const r = await fetchFn(`${base}/models`, { method: "GET", headers, signal: ctl.signal });
+      if (!r.ok) return { models: [], error: `HTTP ${r.status}`, via: "direct", status: r.status };
+      return { models: idsFromModelsJson(await r.json()), via: "direct", status: r.status };
+    } finally {
+      clearTimeout(t);
+    }
+  } catch (err) {
+    if (err instanceof DOMException && err.name === "AbortError")
+      return { models: [], error: `Timeout nach ${Math.max(1000, timeoutMs)}ms`, via: "direct" };
+    if (isCorsLikeError(err)) return { models: [], error: "CORS_BLOCK", via: "direct" };
+    return { models: [], error: err instanceof Error ? err.message : "Verbindung fehlgeschlagen", via: "direct" };
+  }
+}
+
 /**
  * Führt eine gezielte Ping-Prüfung gegen die konfigurierte Engine durch.
  * Timeout default 2000ms (verhindert Hänger); manueller Modell-Pull darf
