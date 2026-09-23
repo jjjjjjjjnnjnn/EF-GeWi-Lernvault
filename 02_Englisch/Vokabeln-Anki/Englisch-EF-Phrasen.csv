@@ -1,4 +1,4 @@
-Deutsch;Chinesisch;Beispielsatz;Fach;Thema
+﻿Deutsch;Chinesisch;Beispielsatz;Fach;Thema
 summary;Zusammenfassung;The summary must be in your own words.;Englisch;Summary
 to point out;hinweisen;The author points out that …;Englisch;Analysis
 to emphasize;betonen;This image emphasizes the contrast.;Englisch;Analysis
@@ -42,3 +42,11 @@ multiple choice;选择题;Multiple choice has one correct answer only.;Englisch;
 matching;配对题;Matching asks you to pair items.;Englisch;Hoerverstehen
 short answer;简答题;Short answers need keywords, not full sentences.;Englisch;Hoerverstehen
 target format;目标文本格式;Keep the required target format in mind.;Englisch;Mediation
+relevant aspects;相关要点;Select only the relevant aspects for your reader.;Englisch;Mediation
+source text;源文本;Read the German source text twice before writing.;Englisch;Mediation
+to select;挑选;Select three key facts, do not translate everything.;Englisch;Mediation
+formal letter;正式信函;A formal letter opens with Dear Sir or Madam.;Englisch;Mediation
+furthermore;此外;Furthermore, volunteers gain work experience.;Englisch;Mediation
+consequently;因此;Consequently, many school leavers choose an FSJ.;Englisch;Mediation
+nevertheless;然而;Nevertheless, the workload should not be underestimated.;Englisch;Mediation
+all in all;总而言之;All in all, the detox improved my concentration.;Englisch;Mediation
