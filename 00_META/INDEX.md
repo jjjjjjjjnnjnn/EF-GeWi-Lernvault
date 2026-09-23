@@ -133,6 +133,7 @@
 - [2026-09-23-reise-katex-ki-fellofish](Journal/2026-09-23-reise-katex-ki-fellofish.md) — 用户反馈三修：公式懒加载+为啥置灰+check步FelloFish批改（195单测）
 - [2026-09-23-provider-modellpull](Journal/2026-09-23-provider-modellpull.md) — 新渠道Zen/商汤+Base-URL改写+ccswitch式模型拉取（199单测）
 - [2026-09-23-modellpull-proxy-fix](Journal/2026-09-23-modellpull-proxy-fix.md) — 拉取失败修复：dev代理+CORS诊断（202单测，代理实测回真名单）
+- [2026-09-23-headroom-token-compression](Journal/2026-09-23-headroom-token-compression.md) — Headroom 启发式 Token 压缩与可逆缓存引擎落地（210单测，SmartCrusher+CCR+5D评分+三区KV-Cache优化）
 - 约定：文件名 `YYYY-MM-DD-<thema>.md`，头部frontmatter（`fach`可空，`tags: [EF, Meta]`）。
 
 ## Dataview（Obsidian内自动索引，GitHub上仅作备份显示）

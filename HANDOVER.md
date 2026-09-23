@@ -5,7 +5,8 @@
 ## 新agent阅读顺序（5分钟接手）
 1. 本文件 → 2. `AGENTS.md`（规范） → 3. `00_META/INDEX.md`（导航） → 4. 目标学科 `Lehrplan.md` → 5. `00_META/Journal/` 最新一篇（当前上下文）。
 
-## 当前状态（2026-09-23·下一代智能引擎与全真模考系统已验）
+## 当前状态（2026-09-23·Headroom 启发式 Token 压缩与可逆缓存落地）
+- ✅ Headroom 启发式 Token 压缩与可逆缓存引擎落地（`[App] 271d7d7`+本交接）：Clean-Room 原生实现（零外部代码/依赖引入，NOTICE 署名 Apache-2.0）+ FNV-1a CCR 可逆内容寻址双层缓存（`ccrStore.ts`）+ SmartCrusher 表格折叠与 5D 评分裁剪（`compressor.ts`，首轮/最近/错误100%保留）+ Hot/Warm/Live 三区 KV-Cache 优化组装（`context.ts`）+ AI 助教交互式 `[Ref: #h-xxxxxx]` 点击无损还原（`Tutor.tsx`）；36 单测套件 210 测试全绿 / build 6.1s / vault-check(38/203/132) PASS（Journal 2026-09-23-headroom-token-compression）。
 - ✅ 拉取失败修复（`[App] 627b670`+本交接）：dev同源代理Node代取（CORS-free，Key只走头）+直连兜底+错误分类中文明示；34单测套件202测试全绿 / build过 / vault-check(38/203/131) / 代理实测OpenRouter回200真名单（Journal 2026-09-23-modellpull-proxy-fix；opencode go端点待用户给URL）。
 - ✅ 新渠道+模型拉取（`[App] fd4ed3d`+本交接）：OpenCode Zen/SenseNova商汤预设+Base-URL改写+ccswitch式⇩拉取模型列表点选即用；34单测套件199测试全绿 / build过 / vault-check(38/203/130) / 1420在线（Journal 2026-09-23-provider-modellpull）。
 - ✅ 用户反馈三修（`[App] ffd56d6`+本交接）：KaTeX懒加载独立chunk（首绘不再堵）+引擎off时KI按钮置灰明示+check步默写+AI打分纠错教学FelloFish循环；33单测套件195测试全绿 / build过 / vault-check(38/203/129) / 1420在线（Journal 2026-09-23-reise-katex-ki-fellofish）。
