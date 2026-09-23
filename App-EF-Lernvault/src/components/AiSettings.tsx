@@ -108,6 +108,8 @@ export default function AiSettings({
   const [pingingAll, setPingingAll] = useState(false);
   const [testingEpId, setTestingEpId] = useState<string | null>(null);
   const [testResultMap, setTestResultMap] = useState<Record<string, EndpointTestResult>>({});
+  const [modalTesting, setModalTesting] = useState(false);
+  const [modalTestResult, setModalTestResult] = useState<EndpointTestResult | null>(null);
 
   // 模型拉取状态
   const [pullingEpId, setPullingEpId] = useState<string | null>(null);
@@ -301,6 +303,7 @@ export default function AiSettings({
     setFormCustomAuthHeader(ep.customAuthHeader || "");
     setShowEditorKey(false);
     setAdvancedOpen(false);
+    setModalTestResult(null);
   };
 
   // 打开新增抽屉
@@ -320,6 +323,48 @@ export default function AiSettings({
     setFormCustomAuthHeader("");
     setShowEditorKey(false);
     setAdvancedOpen(false);
+    setModalTestResult(null);
+  };
+
+  // 在弹窗内即时深度测试该端点配置 (CC-Switch 风格)
+  const handleTestInsideModal = async () => {
+    if (modalTesting) return;
+    setModalTesting(true);
+    setModalTestResult(null);
+    try {
+      const parsedPort = formCustomPort.trim() ? parseInt(formCustomPort.trim(), 10) : undefined;
+      const tempEp: AiEndpoint = {
+        id: editingEp?.id || "temp",
+        name: formName.trim() || "测试端点",
+        providerId: editingEp?.providerId || (formUpstreamFormat === "anthropic" ? "sensenova" : "custom"),
+        baseUrl: formBaseUrl.trim(),
+        apiKey: formApiKey.trim(),
+        model: formModel.trim() || (formUpstreamFormat === "anthropic" ? "sensenova-6.8-flash-lite" : "default"),
+        enabled: true,
+        upstreamFormat: formUpstreamFormat,
+        authHeaderType: formAuthHeaderType,
+        customAuthHeader: formCustomAuthHeader.trim() || undefined,
+        customPort: !isNaN(parsedPort as number) && (parsedPort as number) > 0 ? parsedPort : undefined,
+        isFullUrl: formIsFullUrl,
+      };
+      const prompt =
+        lang === "de"
+          ? "Hallo! Bestätige bitte kurz deine Bereitschaft für EF-Lernvault."
+          : "你好！请简短确认你可以正常协助高中 EF 备考。";
+      const res = await testEndpointChat(tempEp, prompt, 10000);
+      setModalTestResult(res);
+      if (editingEp?.id) {
+        updateEndpoint(editingEp.id, {
+          status: res.ok ? "online" : "offline",
+          latencyMs: res.latencyMs,
+          lastChecked: Date.now(),
+          lastTestResult: res,
+        });
+        setEndpoints(loadEndpoints());
+      }
+    } finally {
+      setModalTesting(false);
+    }
   };
 
   // 保存供应商编辑 (CC-Switch 风格保存)
@@ -957,28 +1002,16 @@ export default function AiSettings({
                       </label>
                       <button
                         type="button"
-                        onClick={() => {
-                          const parsedPort = formCustomPort.trim() ? parseInt(formCustomPort.trim(), 10) : undefined;
-                          const tempEp: AiEndpoint = {
-                            id: editingEp?.id || "temp",
-                            name: formName || "测试端点",
-                            providerId: editingEp?.providerId || "custom",
-                            baseUrl: formBaseUrl,
-                            apiKey: formApiKey,
-                            model: formModel,
-                            enabled: true,
-                            upstreamFormat: formUpstreamFormat,
-                            authHeaderType: formAuthHeaderType,
-                            customAuthHeader: formCustomAuthHeader.trim() || undefined,
-                            customPort: !isNaN(parsedPort as number) ? parsedPort : undefined,
-                            isFullUrl: formIsFullUrl,
-                          };
-                          handleTestChatProbe(tempEp);
-                        }}
+                        onClick={handleTestInsideModal}
+                        disabled={modalTesting}
                         className="text-[11px] font-mono text-[#4338CA] hover:underline flex items-center gap-1 cursor-pointer"
                       >
                         <span>⚡</span>
-                        <span>{lang === "de" ? "Adresse testen" : "管理与测速"}</span>
+                        <span>
+                          {modalTesting
+                            ? (lang === "de" ? "Prüfe..." : "测试中...")
+                            : (lang === "de" ? "Adresse testen" : "测试连接")}
+                        </span>
                       </button>
                     </div>
                   </div>
@@ -1200,30 +1233,88 @@ export default function AiSettings({
                   </div>
                 </div>
 
-                {/* 底部保存按钮 (CC-Switch 经典蓝底保存按钮，参考 102424.png / 102431.png) */}
+                {/* 实时测试反馈卡片 (CC-Switch 风格应用内即时闭环) */}
+                {modalTestResult && (
+                  <div
+                    className={`rounded-xs border p-3 text-xs font-mono leading-relaxed transition-all ${
+                      modalTestResult.ok
+                        ? "border-[#A7F3D0] bg-[#ECFDF5] text-[#065F46]"
+                        : "border-[#FECACA] bg-[#FEF2F2] text-[#991B1B]"
+                    }`}
+                  >
+                    <div className="flex items-center justify-between font-semibold mb-1">
+                      <span>
+                        {modalTestResult.ok
+                          ? `✓ ${lang === "de" ? "Erfolgreich verbunden" : "连通成功"} (${modalTestResult.latencyMs}ms)`
+                          : `✗ ${lang === "de" ? "Verbindung fehlgeschlagen" : "连通失败"} (${modalTestResult.latencyMs}ms)`}
+                      </span>
+                      {modalTestResult.modelDetected && (
+                        <span className="text-[10px] text-[#4338CA] bg-white px-1.5 py-0.5 rounded-xs border border-[#C7D2FE]">
+                          {modalTestResult.modelDetected}
+                        </span>
+                      )}
+                    </div>
+                    {modalTestResult.replyText && (
+                      <p className="mt-1 text-[11px] bg-white/70 p-2 rounded-xs text-[#1C1B17]">
+                        <span className="font-semibold">{lang === "de" ? "Modell-Antwort: " : "模型回复: "}</span>
+                        {modalTestResult.replyText}
+                      </p>
+                    )}
+                    {modalTestResult.errorMessage && (
+                      <p className="mt-1 text-[11px] text-[#991B1B]">
+                        {modalTestResult.errorMessage}
+                      </p>
+                    )}
+                    {modalTestResult.remedyTip && (
+                      <p className="mt-1.5 text-[11px] text-[#B45309] bg-[#FFFBEB] p-2 rounded-xs border border-[#FDE68A]">
+                        <span className="font-semibold">{lang === "de" ? "Hinweis: " : "排查建议: "}</span>
+                        {modalTestResult.remedyTip}
+                      </p>
+                    )}
+                  </div>
+                )}
+
+                {/* 底部保存与测试按钮 (CC-Switch 经典蓝底保存按钮，参考 102424.png / 102431.png) */}
                 <div className="flex items-center justify-between border-t border-[#E5E1D8] pt-3">
                   <button
                     type="button"
                     onClick={() => {
                       setEditingEp(null);
                       setIsAdding(false);
+                      setModalTestResult(null);
                     }}
                     className="rounded-xs border border-[#E5E1D8] px-4 py-1.5 text-xs font-sans text-[#6B675C] hover:text-[#1C1B17] cursor-pointer"
                   >
                     {lang === "de" ? "Abbrechen" : "取消"}
                   </button>
 
-                  <button
-                    type="button"
-                    onClick={handleSaveEditor}
-                    className="inline-flex items-center gap-1.5 rounded-xs bg-[#4338CA] text-white px-6 py-2 text-xs font-sans font-medium hover:bg-[#3730A3] shadow-xs active:scale-[0.98] transition-all cursor-pointer"
-                  >
-                    <svg className="w-3.5 h-3.5" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.6">
-                      <path d="M12.5 13.5H3.5a1 1 0 0 1-1-1v-9a1 1 0 0 1 1-1h6.5l3.5 3.5v6.5a1 1 0 0 1-1 1z" />
-                      <path d="M10.5 13.5v-4h-5v4M4.5 2.5v3h5" />
-                    </svg>
-                    <span>{lang === "de" ? "Speichern" : "保存"}</span>
-                  </button>
+                  <div className="flex items-center gap-2">
+                    <button
+                      type="button"
+                      onClick={handleTestInsideModal}
+                      disabled={modalTesting}
+                      className="rounded-xs border border-[#4338CA] bg-white px-3.5 py-1.5 text-xs font-sans text-[#4338CA] hover:bg-[#F5F7FF] disabled:opacity-50 transition-colors flex items-center gap-1.5 cursor-pointer font-medium"
+                    >
+                      <span>⚡</span>
+                      <span>
+                        {modalTesting
+                          ? (lang === "de" ? "Teste..." : "正在测试...")
+                          : (lang === "de" ? "Verbindung testen" : "测试连通性")}
+                      </span>
+                    </button>
+
+                    <button
+                      type="button"
+                      onClick={handleSaveEditor}
+                      className="inline-flex items-center gap-1.5 rounded-xs bg-[#4338CA] text-white px-6 py-1.5 text-xs font-sans font-medium hover:bg-[#3730A3] shadow-xs active:scale-[0.98] transition-all cursor-pointer"
+                    >
+                      <svg className="w-3.5 h-3.5" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.6">
+                        <path d="M12.5 13.5H3.5a1 1 0 0 1-1-1v-9a1 1 0 0 1 1-1h6.5l3.5 3.5v6.5a1 1 0 0 1-1 1z" />
+                        <path d="M10.5 13.5v-4h-5v4M4.5 2.5v3h5" />
+                      </svg>
+                      <span>{lang === "de" ? "Speichern" : "保存"}</span>
+                    </button>
+                  </div>
                 </div>
               </div>
             ) : (

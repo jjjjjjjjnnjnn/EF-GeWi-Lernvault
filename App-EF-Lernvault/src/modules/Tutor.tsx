@@ -364,7 +364,22 @@ export default function Tutor({
 
     try {
       const rawHistory: ChatMsg[] = messages
-        .filter((m) => !m.isError)
+        .filter((m) => {
+          if (m.isError) return false;
+          // 杜绝将离线/网络报错兜底话术混入上下文，防止大模型依样画葫芦复读报错
+          if (
+            m.text.includes("离线") ||
+            m.text.includes("未连通") ||
+            m.text.includes("未收录相关笔记") ||
+            m.text.includes("HTTP 4") ||
+            m.text.includes("HTTP 5") ||
+            m.text.includes("Failed to fetch") ||
+            m.text.includes("CORS")
+          ) {
+            return false;
+          }
+          return true;
+        })
         .map((m) => ({
           role: (m.role === "ki" ? "assistant" : "user") as "assistant" | "user",
           content: m.text,
@@ -440,6 +455,7 @@ export default function Tutor({
         ...initialBotMsg,
         text: checkedReply,
         engineTag: fullEngineTag,
+        isError: res.source === "vault-autofallback",
       };
 
       const finalMessages = [...messages, userMsg, finalBot];
@@ -880,7 +896,11 @@ export default function Tutor({
             <span className="flex items-center gap-2">
               <span>{INTENSITY_PRESETS[intensity].labelDE}</span>
               <span>·</span>
-              <span>100% Lokal & Privat</span>
+              <span>
+                {activeEp?.baseUrl && !activeEp.baseUrl.includes("localhost") && !activeEp.baseUrl.includes("127.0.0.1")
+                  ? `${activeEp.name} · 云端 API`
+                  : "100% Lokal & Privat"}
+              </span>
             </span>
           </div>
         </div>

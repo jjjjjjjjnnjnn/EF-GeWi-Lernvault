@@ -82,13 +82,20 @@ export function parseSseStream(
           onDelta(delta);
         }
 
-        // 2. Token-Verbrauch extrahieren (OpenAI usage oder Anthropic message_delta/usage)
-        const usageData = json.usage || (json.type === "message_delta" ? json.usage : null);
+        // 2. Token-Verbrauch extrahieren (CC-Switch 风格协议兼容：OpenAI usage / Anthropic message_start & message_delta)
+        const anthropicStartUsage = json.type === "message_start" ? json.message?.usage : null;
+        const anthropicDeltaUsage = json.type === "message_delta" ? json.usage : null;
+        const openAiUsage = json.usage ?? null;
+        const usageData = openAiUsage || anthropicDeltaUsage || anthropicStartUsage;
+
         if (usageData && onUsage) {
+          const inTok = usageData.prompt_tokens ?? usageData.input_tokens ?? 0;
+          const outTok = usageData.completion_tokens ?? usageData.output_tokens ?? 0;
+          const totTok = usageData.total_tokens ?? (inTok + outTok);
           onUsage({
-            promptTokens: usageData.prompt_tokens ?? usageData.input_tokens ?? 0,
-            completionTokens: usageData.completion_tokens ?? usageData.output_tokens ?? 0,
-            totalTokens: usageData.total_tokens ?? ((usageData.input_tokens ?? 0) + (usageData.output_tokens ?? 0)),
+            promptTokens: inTok,
+            completionTokens: outTok,
+            totalTokens: totTok,
           });
         }
       } catch {
@@ -111,13 +118,18 @@ export async function chatStream(
   const cfg = loadAiConfig();
   opts?.onStatusChange?.("connecting");
 
-  if (cfg.engine === "off") {
+  // Wenn ein expliziter Endpoint vom Router übergeben wurde, die Legacy-Engine-Gate
+  // (off/local) komplett umgehen und direkt zum API-Pfad springen.
+  // Der Router hat bereits entschieden, welchen Endpoint er verwenden will.
+  const hasExplicitEndpoint = !!opts?.endpoint;
+
+  if (!hasExplicitEndpoint && cfg.engine === "off") {
     opts?.onStatusChange?.("error");
     throw new EngineOffError("KI-Engine ist ausgeschaltet / AI 引擎已关闭");
   }
 
-  // 1. Lokales WebLLM im Browser
-  if (cfg.engine === "local") {
+  // 1. Lokales WebLLM im Browser (nur wenn kein expliziter Endpoint)
+  if (!hasExplicitEndpoint && cfg.engine === "local") {
     try {
       await ensureLocalEngine(opts?.onLocalProgress);
       if (opts?.signal?.aborted) throw new DOMException("Aborted", "AbortError");
@@ -285,7 +297,9 @@ export async function chatStream(
 
   opts?.onStatusChange?.("streaming");
   let accumulated = "";
-  let capturedUsage: TokenUsageReport | null = null;
+  let runningPromptTokens = 0;
+  let runningCompletionTokens = 0;
+  let runningTotalTokens = 0;
 
   // Wenn der Server SSE-Stream liefert (ReadableStream vorhanden)
   if (res.body && typeof res.body.getReader === "function") {
@@ -311,7 +325,9 @@ export async function chatStream(
             opts?.onChunk?.({ delta, accumulated });
           },
           (usage) => {
-            capturedUsage = usage;
+            if (usage.promptTokens > 0) runningPromptTokens = usage.promptTokens;
+            if (usage.completionTokens > 0) runningCompletionTokens = usage.completionTokens;
+            if (usage.totalTokens > 0) runningTotalTokens = usage.totalTokens;
           }
         );
         buffer = remainingBuffer;
@@ -326,26 +342,31 @@ export async function chatStream(
     accumulated = data?.choices?.[0]?.message?.content?.trim() || "";
     opts?.onChunk?.({ delta: accumulated, accumulated });
     if (data?.usage) {
-      capturedUsage = {
-        promptTokens: data.usage.prompt_tokens ?? 0,
-        completionTokens: data.usage.completion_tokens ?? 0,
-        totalTokens: data.usage.total_tokens ?? 0,
-      };
+      runningPromptTokens = data.usage.prompt_tokens ?? data.usage.input_tokens ?? 0;
+      runningCompletionTokens = data.usage.completion_tokens ?? data.usage.output_tokens ?? 0;
+      runningTotalTokens = data.usage.total_tokens ?? (runningPromptTokens + runningCompletionTokens);
     }
   }
 
-  // Falls der Server keine Verbrauchsdaten geliefert hat, Token schätzen
-  if (!capturedUsage) {
-    const pTok = estimateTokens(messages.map((m) => m.content).join("\n"));
-    const cTok = estimateTokens(accumulated);
-    capturedUsage = {
-      promptTokens: pTok,
-      completionTokens: cTok,
-      totalTokens: pTok + cTok,
-    };
+  // CC-Switch 风格 Token 自动补齐 (Token Backfill):
+  // 某些服务商（如部分本地或聚合中继）不返回 Token 消耗或返回 0，客户端基于分词测算全自动补齐
+  if (runningPromptTokens <= 0) {
+    runningPromptTokens = estimateTokens(messages.map((m) => m.content).join("\n"));
+  }
+  if (runningCompletionTokens <= 0) {
+    runningCompletionTokens = estimateTokens(accumulated);
+  }
+  if (runningTotalTokens <= 0) {
+    runningTotalTokens = runningPromptTokens + runningCompletionTokens;
   }
 
-  opts?.onUsage?.(capturedUsage);
+  const finalUsage: TokenUsageReport = {
+    promptTokens: runningPromptTokens,
+    completionTokens: runningCompletionTokens,
+    totalTokens: runningTotalTokens,
+  };
+
+  opts?.onUsage?.(finalUsage);
   opts?.onStatusChange?.("done");
   return accumulated;
 }

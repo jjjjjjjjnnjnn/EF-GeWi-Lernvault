@@ -14,6 +14,7 @@ import type { VaultNote } from "../vault/parser";
 import type { TextChunk } from "../engine/rag";
 import { findMatchingVaultNote } from "../engine/instantGrounding";
 import { recordTokenUsage } from "./tokenLedger";
+import { loadAiConfig, saveAiConfig } from "./providers";
 
 export interface RouteExecutionResult {
   reply: string;
@@ -40,6 +41,20 @@ export async function executeChatWithRouting(
 ): Promise<RouteExecutionResult> {
   const primaryEp = getActiveEndpoint();
   let capturedTokens: TokenUsageReport | null = null;
+
+  // Auto-Fix: Wenn ein gueltiger Endpoint aktiv ist, aber engine noch "off",
+  // automatisch auf "api" umstellen, damit UI und Dispatch synchron bleiben.
+  const cfg = loadAiConfig();
+  if (cfg.engine === "off" && primaryEp && primaryEp.baseUrl) {
+    saveAiConfig({
+      ...cfg,
+      engine: "api",
+      providerId: primaryEp.providerId,
+      baseUrl: primaryEp.baseUrl,
+      apiKey: primaryEp.apiKey,
+      model: primaryEp.model,
+    });
+  }
 
   const usageTracker = (u: TokenUsageReport) => {
     capturedTokens = u;
