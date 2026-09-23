@@ -58,7 +58,7 @@
 - ✅ 骨架：Obsidian vault + git + CC-BY-SA + link-check CI + `_Downloads/`(gitignore约1710件/3.2GB) + `Anlagen/`。
 - ✅ 10/10学科骨架：SoWi/Philo填实；Deutsch开动（Lyrik+Drama候选笔记，csv 43行，待老师定书名）/Englisch开动（Role Models+Teil-B双轨笔记，csv 43行，Topic定，待定考轨）；MINT四科KLP校准+Formel-Spickzettel(KaTeX)+Mathe/Physik/Bio训练笔记；Musik口试开动（Beethoven-Motiv+Halbjahr假设+csv 12卡，待确认）；Sport口试骨架。
 - ✅ 官方弹药：SoWi/Philo/Deutsch/Englisch/Mathe全套Operatoren+Konstruktion+Korrekturzeichen+Beispiele；Formelsammlung NRW 2024。
-- ✅ Playwright电子书脚手架就绪（`scripts/ebook-fetch/`，等用户登录一次）。
+- ✅ 电子书抓取**完工**（429/430页，缺media 2封面背）：已按11章切分进 `_Downloads/SoWi/split/`（gitignored，边界±2页待核），可写SoWi正式笔记。（上方「Playwright脚手架就绪/等登录」为历史行，抓取已完成）
 - ✅ App需求：FEATURE-SPEC + UI-SPEC-V2；**外部AI已落地**（`b17999d`）：10科徽章+KaTeX离线公式+Lernreise第7模块（5步态+gating+XP localStorage），`npm run build`亲验通过；课程4个（SoWi-L1示范 + Philo-L2试点 + Musik-Höranalyse-L1 + Sport-Bewegung-L1，均muendlich步）。
 - ✅ 集成方法v2：`Lernmethoden-Evidenz.md`单真相源 + Template v2（检索优先/Pro-Contra/Fehlvorstellungen）+ `vault-check.py`四检PASS + parser修csv表头卡/quote/math块（build过）+ P3加Zitierpflicht。
 - ✅ 电子书抓取**完工**（429/430页，缺media 2封面背）：已按11章切分进 `_Downloads/SoWi/split/`（gitignored，边界±2页待核），可写SoWi正式笔记。
@@ -83,7 +83,7 @@
   > 2. 提供 10 句高分分析性动词句式（如 `verdeutlicht`, `appelliert an`, `entkräftet`, `fungiert als`）；
   > 3. 严格遵循双语规范：中文理解在上，德语 Klausur-Satz 在下。”
 
-### 📋 任务 2【哲学 Kant 绝对命令与四大伦理困境案例】(TASK-EXT-02)
+### 📋 任务 2【哲学 Kant 绝对命令与四大伦理困境案例】(TASK-EXT-02) — ✅ 已完成并入库
 - **派发给外部 AI 的 Prompt**：
   > “请针对 NRW Gymnasium EF 哲学伦理学单元，整理 Kant 绝对命令 (Kategorischer Imperativ) 与功利主义 (Utilitarismus) 的 4 大经典案例对比库。要求：
   > 1. 包含 4 个案例：电车难题 (Trolley-Problem)、撒谎救人案 (Lügenverbot)、无辜替罪案、器官移植救五人；
@@ -91,7 +91,7 @@
   > 3. 每个案例提炼 2 句标准德语 Klausur-Merksatz。”
 - **输出落盘路径**：`07_Philosophie/Texte-Analyse/Ethische-Dilemmata-Sammlung.md`
 
-### 📋 任务 3【SoWi 3 幅经典政治漫画 (Karikatur) 解构与评分细则】(TASK-EXT-03)
+### 📋 任务 3【SoWi 3 幅经典政治漫画 (Karikatur) 解构与评分细则】(TASK-EXT-03) — ✅ 已完成并入库
 - **派发给外部 AI 的 Prompt**：
   > “请搜集或重构 3 幅德国 NRW 高中 SoWi 考试最常考的政治漫画题型（主题：1. 贫富差距 Soziale Ungleichheit; 2. 环保与经济增长 Zielkonflikt; 3. 青年政治参与 Politikverdrossenheit）。要求：
   > 1. 每幅漫画提供详细视觉元素描述清单（Bildbeschreibung：人物、衣着、手持物、文字标签）；
@@ -111,5 +111,37 @@
 
 ---
 
+## 🔴 待办与阻塞（接手必读 · 全部需要「人」推进，代码无法解决）
+
+### A. 阻塞学习内容（等老师回复，3 个问题可直接转发）
+1. **Musik**：`Was ist das Halbjahr-Thema (Epoche/Werk) und wie läuft die mündliche Prüfung ab (Dauer, Hörbeispiel?)`
+2. **Deutsch**：`Welche Ganzschrift (Drama?) lesen wir, und wann ist die Klausur?`
+3. **Englisch**：`Ist Teil B Sprachmittlung oder Hörverstehen, und wann ist die Klausur? Gibt es eine Lektüre (novel)?`
+4. **Sport**：课程项目（可换短跑/铅球）+ 考试形式，仍是假设。
+→ 这四项未定前，相关 `Lehrplan.md` 的「待确认」段不要写成定论。
+
+### B. 阻塞真题弹药（需要账号）
+- **StanSi** 近 3 年真题 + ZKE 往年卷（JS 门 + 登录墙）；**SESAM / FWU / eduki** 同。
+- **Notenlehre Stufe 4 AB PDF 已损坏**（恰好截断 256.0 KiB、无 `%%EOF`、0 页可读）→ 需重发或改用照片。
+- Stark 纸质教辅需购买；IQB-HV mp3 仅播放器无直链；官方真题池止于 2025（2026 池 404）。
+
+### C. 阻塞产品验收（需要真人）
+- **V2–V4 走查**：V2 三档延迟体感与前导卡；V3 45 分钟整场模考 + 评分可信度；V4 每日冲刺凑齐感。
+- **窄屏真机**：1100px / 640px 真实换行与裁切、480ms 翻卡手感、字体实际加载与灰字对比度、KaTeX 字体与溢出。
+  （jsdom 只能证结构，证不了这些——测试已明确声明该边界。）
+- **Tauri 打包**：当前仅浏览器 File System Access 路径可用；`npx tauri build` 需 VS2022 C++ workload + rust stable，从未实跑。
+
+### D. 工程待办（不阻塞，可随时做）
+- `worker/compute.ts` 已转真 Web Worker 但**零生产调用方** → 接线或删除。
+- `webllm-vendor` 6 MB / `transformers-vendor` 583 kB 仍触发 chunk 警告；内嵌 WebLLM 是否值得待质疑。
+- `engine/diagram.ts` 4 处 SVG 约束色（prompt 内，非 UI）。
+- 云同步白名单已显式化；若日后新增持久化键，**必须显式决策**是否进云，不要依赖自动包含。
+- 官方时长表建议同时引用 `BASS 13-32 Nr. 3.2`（规章）与 `Nr. 6`（年度时长表）。
+- `.gitignore` 的 `probe*.py` 过宽，会隐藏真实源码（`scripts/ebook-fetch/probe-klett.py` 当前被忽略）→ 收窄或消毒后纳管。
+- `Block.raw` 已删；若再有人加回，注意它是无用字段。
+- **并行协作铁律**：subagent 必须用 `general`（`explore` 无写盘工具）；文件所有权必须零重叠划分；**主线程必须独立复核每条「缺陷」声明**（本轮出现过基于旧快照的误报）；共享文件（`index.css`/`App.tsx`/`keys.ts`/`examComposer.ts`/`parser.ts`）只能指派单一所有者。
+
+---
+
 ## 铁律
-- 一次只做一科一commit（前缀`[SoWi]/[Philo]/[Meta]/[Deutsch]/[Englisch]/[App]`）；`data/`、`_Downloads/`、`*.apkg`、App构建产物（`target|gen|dist|*.key|*.exe|*.msi`）永不进git；只写原创笔记（版权红线见AGENTS.md §4）。
+- 一次只做一科一commit（前缀`[Deutsch]/[Englisch]/[Mathe]/[Physik]/[Chemie]/[Bio]/[Philosophie]/[SoWi]/[Musik]/[Sport]/[App]/[Meta]`）；`data/`、`_Downloads/`、`*.apkg`、App构建产物（`target|gen|dist|*.key|*.exe|*.msi`）永不进git；只写原创笔记（版权红线见AGENTS.md §4）。
