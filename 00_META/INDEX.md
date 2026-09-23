@@ -129,6 +129,7 @@
 - [2026-09-23-tutor-zero-latency-history](Journal/2026-09-23-tutor-zero-latency-history.md) — 助教极速无感回复+瞬时前导卡+多会话历史记录抽屉+思考强度调配（162单测全绿）
 - [2026-09-23-next-gen-learning-engine](Journal/2026-09-23-next-gen-learning-engine.md) — 下一代引擎落地：RRF混合检索+双向图谱+BKT认知诊断+Oberstufe全真模考+每日15分极速冲刺（189单测全绿）
 - [2026-09-23-audit-handover-nextgen](Journal/2026-09-23-audit-handover-nextgen.md) — 全项目对齐、架构维护与交接验证（189单测/build/vault-check PASS）
+- [2026-09-23-v1-walkthrough-sim](Journal/2026-09-23-v1-walkthrough-sim.md) — V1模拟走查：真L1穿真UI全绿（191单测，门禁/XP/反馈上下文全过）
 - 约定：文件名 `YYYY-MM-DD-<thema>.md`，头部frontmatter（`fach`可空，`tags: [EF, Meta]`）。
 
 ## Dataview（Obsidian内自动索引，GitHub上仅作备份显示）
