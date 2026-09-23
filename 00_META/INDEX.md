@@ -131,6 +131,7 @@
 - [2026-09-23-audit-handover-nextgen](Journal/2026-09-23-audit-handover-nextgen.md) — 全项目对齐、架构维护与交接验证（189单测/build/vault-check PASS）
 - [2026-09-23-v1-walkthrough-sim](Journal/2026-09-23-v1-walkthrough-sim.md) — V1模拟走查：真L1穿真UI全绿（191单测，门禁/XP/反馈上下文全过）
 - [2026-09-23-reise-katex-ki-fellofish](Journal/2026-09-23-reise-katex-ki-fellofish.md) — 用户反馈三修：公式懒加载+为啥置灰+check步FelloFish批改（195单测）
+- [2026-09-23-provider-modellpull](Journal/2026-09-23-provider-modellpull.md) — 新渠道Zen/商汤+Base-URL改写+ccswitch式模型拉取（199单测）
 - 约定：文件名 `YYYY-MM-DD-<thema>.md`，头部frontmatter（`fach`可空，`tags: [EF, Meta]`）。
 
 ## Dataview（Obsidian内自动索引，GitHub上仅作备份显示）
