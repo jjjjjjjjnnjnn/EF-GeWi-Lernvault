@@ -30,6 +30,7 @@ vault md/csv → vault/parser（frontmatter/Block/CSV五列）
   → engine/interleave（分科默认 + override + round-robin/blocked排序）
   → engine/overview（主页数据：到期/新卡/XP/连击/掌握度/周完成率/倒计时）
   → engine/diagram（LLM-SVG约束生成+消毒allowlist+会话缓存）+ engine/reise-ki（entdecken/ausprobieren/check/szenario prompt构造）
+  → engine/vernetzung（跨学科思维桥：VERNETZUNG_BRIDGES常量表→findVernetzungBridge按query+学科匹配→formatBridgeForPrompt单行注入<50 tokens）
 ```
 
 ## 3. 交互契约（触发 → 中后端调用 → UI状态）
@@ -52,6 +53,10 @@ vault md/csv → vault/parser（frontmatter/Block/CSV五列）
 - 公式 → `MathHtml`懒加载：首绘立即出原文占位，KaTeX动态import异步排版+公式缓存+idle预取（katex独立chunk）
 - 模型拉取（ccswitch式）→ `pullModelList`：dev同源代理`/__models`（Node代取CORS-free，Key只走头）优先，直连兜底；
   错误分类（HTTP码/CORS_BLOCK/超时）；10预设（Zen/SenseNova在内）+任意预设Base-URL改写；点选即写入模型框
+- 跨学科思维桥（无感胶囊）→ `findVernetzungBridge({query, currentSubject})` 匹配 → 消息气泡底部渲染细线SVG胶囊（禁emoji）→
+  点击展开对照 + `formatBridgeForPrompt`（DE公式锚 + ZH说明，压进LLM上下文）；两张地图为内容源：
+  `00_META/MINT-Vernetzung-Konzeptkarte.md`（数理化生公理化公理：Aenderungsrate/Erhaltung/Gleichgewicht）+
+  `00_META/GeWi-Vernetzung-Urteilskarte.md`（德英社哲大一统：Urteilskompetenz/Argumentation/Staat-Individuum）
 
 ## 4. 存储键（`version:1`，导出=整串 JSON，用户回 Obsidian 确认；App 永不写回 vault）
 
@@ -84,6 +89,8 @@ vault md/csv → vault/parser（frontmatter/Block/CSV五列）
  · `ai/heartbeat`（探针/pull代理优先/直连兜底/错误分类）· `ai/providers`（10预设/override三态）
  · `walkthrough`（真L1穿真UI：门禁/XP/离线保底/反馈上下文）· `MathHtml`（首绘原文/异步排版/缓存）
  · `engine/reise-ki`（含check四段打分prompt）· Tutor压缩三件套（compressor/ccrStore/context）
+ · `engine/vernetzung`（BRIDGES表/按query+学科匹配/单行压缩<50 tokens/estimateBridgeTokens）
+ · 教学组件（`SatzbauLego` 句式积木/`BalanceBoard` 辩证天平/`TextHighlighter` 论证树/`TangentSlider` 割线逼近切线）
 
 ## 6. 视觉契约（给外部AI：只换皮，不改语义；行为见 §3）
 

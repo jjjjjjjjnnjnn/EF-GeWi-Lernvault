@@ -67,6 +67,7 @@
 
 ### Englisch
 - Role Models — [Role-Models-Analysis](../02_Englisch/Texte-Analyse/Role-Models-Analysis.md)（Teil A三任务链/Summary自查/P.E.E./Comment句型）
+- Klett Bridge→IQB Themenfelder映射 — [Klett-Themenfelder-Mapping](../02_Englisch/Texte-Analyse/Klett-Themenfelder-Mapping.md)（5单元23媒体→Bereich1/2/5/7，混淆ID工作假设待目录页核对）
 - Mediation: Mustertexte (FSJ & Detox) — [Mediation-Mustertexte](../02_Englisch/Texte-Analyse/Mediation-Mustertexte.md)（formal letter vs forum post/3 Kernfakten/Connectors-Box）
 
 - Teil B Doppelpack — [Klausur-Teil-B-Doppelpack](../02_Englisch/Texte-Analyse/Klausur-Teil-B-Doppelpack.md)（Hörverstehen四题型+Mediation三段式，待老师定考轨）
@@ -173,6 +174,7 @@
 - [2026-09-23-ext-01-04-texte-analyse](Journal/2026-09-23-ext-01-04-texte-analyse.md) — EXT-01~04四科并行：Sachtextanalyse+Dilemmata+Karikatur三例+Mediation双范文（4 commits，全v3九步）
 - [2026-09-23-internet-offensive](Journal/2026-09-23-internet-offensive.md) — Internet-Offensive十科全线：Abitur沉淀10科+IQB补采37PDF（10+1 commits，vault-check 59/294/162）
 - [2026-09-23-cn-mint-vernetzung](Journal/2026-09-23-cn-mint-vernetzung.md) — 中德理科互通：MINT四科CN桥手册+技巧+改编训练（4+1 commits，vault-check 71/334/163）
+- [2026-09-23-wartung-6](Journal/2026-09-23-wartung-6.md) — 第六轮维护：389文件三扫零泄漏/264绿/vault-check 77-340-182 PASS/修2文档债（Klett孤立笔记+思维桥契约）
 - [2026-09-23-pedagogy-ui-library](Journal/2026-09-23-pedagogy-ui-library.md) — 无痛自然习得教育组件库与AI助教全闭环集成（242单测全绿，句式积木+辩证天平+文本荧光解构）
 - [2026-09-23-tutor-socratic-fehlerlog-tangent](Journal/2026-09-23-tutor-socratic-fehlerlog-tangent.md) — 启发引导/考纲直出双态分流、错题补丁弹窗与数学割线逼近切线沙盘（253单测全绿，Sokratisch产婆术+FehlerlogPatch+多模态图片输入+TangentSlider）
 - [2026-09-23-tutor-dialog-ui-fix](Journal/2026-09-23-tutor-dialog-ui-fix.md) — AI助教对话复读异常根除、错题按钮去Emoji与Tufte双层顶栏重构（256单测全绿，首条消息规范+唯一ID+引用豁免）
