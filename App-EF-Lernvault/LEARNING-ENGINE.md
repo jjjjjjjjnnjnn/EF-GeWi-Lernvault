@@ -18,10 +18,14 @@
 vault md/csv → vault/parser（frontmatter/Block/CSV五列）
   → vault/loader（SKIP禁区：App-EF-Lernvault/_Downloads/node_modules/dist/target/Journal；fach+datum排序）
   → engine/index（检索：精确优先 ∪ fuse模糊；空query=全量；顺序=源顺序）
+  → engine/bm25（德语切分/停用词/法条结构/中文双字/字段加权）+ engine/rrfSearch（RRF倒数融合）
+  + engine/vaultGraph（[[双链]]入链/出链/孤岛检测/邻域子图）
   → engine/rag（L0：Block切分 path#Zeile + prompt拼装 + verifySupport字符串校验）
   → engine/embed（L2-API/L1-本地jina-de/静默降级链；移动端默认关；向量会话缓存；
   E轮：auto永不隐式下载+HF镜像源+显式加载按钮；进度按loaded/total字节比）
-  → engine/storage+stores（版本化 six键 + Backend接口 + legacy旧档heben）
+  → engine/storage+stores（版本化 keys + Backend接口 + legacy旧档heben）
+  → engine/mastery（BKT掌握度/学期EF.1-EF.2开关/归档重置）+ engine/dailyMix（4到期卡+1薄弱题+1对比题）
+  → engine/klausurExtractor（38笔记动态抽AFB I-III三段卷+EPA 0-15）+ Tutor压缩（compressor/ccrStore/context三区组装）
   → scheduler（FSRS自研简化版；prioritizeCard/prioritizeThema错题回流）
   → engine/interleave（分科默认 + override + round-robin/blocked排序）
   → engine/overview（主页数据：到期/新卡/XP/连击/掌握度/周完成率/倒计时）
@@ -41,15 +45,19 @@ vault md/csv → vault/parser（frontmatter/Block/CSV五列）
 - 交错 → Quiz表头开关（当前学科，默认Mathe/Physik/Chemie/Bio开）；开=跨科轮排，关=本学科置顶成块
 - 错题回流 → Quiz两处"送回背卡堆" → `prioritizeThema(cards, thema)`（仅review卡即时到期）
 - Reise动态（FelloFish式）：entdecken进步骤自动KI讲解+追问；ausprobieren提交即AI点评；
-  check设"Warum"单题讲解；szenario/muendlich提交即AI校准打分（逐rubric+句型架+改写示范，记轮次取最佳）；
-  门禁仍看手动勾选（AI只做形成性）；引擎off全回静态
+  check设"Warum"单题讲解+**默写框+AI打分（PUNKTE星/FEHLERANALYSE/KORREKTUR/LEHRE四段，可改完再评多轮）**；
+  szenario/muendlich提交即AI校准打分（逐rubric+句型架+改写示范，记轮次取最佳）；
+  门禁仍看手动勾选（AI只做形成性）；引擎off时KI按钮置灰+后缀（AI未开启）指路齿轮设置
 - 图解 → ```diagram围栏独立成块（纯```仍走公式）；Reise按约束出SVG（消毒+缓存），离线/失败回ASCII原稿
+- 公式 → `MathHtml`懒加载：首绘立即出原文占位，KaTeX动态import异步排版+公式缓存+idle预取（katex独立chunk）
+- 模型拉取（ccswitch式）→ `pullModelList`：dev同源代理`/__models`（Node代取CORS-free，Key只走头）优先，直连兜底；
+  错误分类（HTTP码/CORS_BLOCK/超时）；10预设（Zen/SenseNova在内）+任意预设Base-URL改写；点选即写入模型框
 
 ## 4. 存储键（`version:1`，导出=整串 JSON，用户回 Obsidian 确认；App 永不写回 vault）
 
 `eflernvault:fsrs:v1`（经 storage.ts）· `eflernvault:xp:v1` · `eflernvault:vergleich:v1` ·
 `eflernvault:feedback:v1` · `eflernvault:plan:v1` · `eflernvault:onboarding:v1` · `eflernvault:interleave:v1` ·
-`eflernvault:lang` · `eflernvault:ai:v1`（Key 明文 + embedModel，见 AI-SETUP 风险告知）
+`eflernvault:lang` · `eflernvault:ai:v1`（Key 明文 + embedModel + vectorMode/hfMirror，见 AI-SETUP 风险告知）
 · `eflernvault:sync:v1`（endpoint/token/lastSync；Key material nur lokal）
 
 ### Cloud-Protokoll（自备服务器实现，任意技术栈）
@@ -68,14 +76,20 @@ vault md/csv → vault/parser（frontmatter/Block/CSV五列）
 · `engine/embed`（余弦/排序/mock-fetch/mock-pipeline/降级链/缓存）
 · `engine/interleave`（默认/覆盖/排序）· `engine/overview`（空档/到期/掌握度/计划率/倒计时）
 · `engine/sync`（mock-server roundtrip/404/500/头规范）· `engine/embed` stage-2（claim切分/阈值/缓存复用）
-· `flow`（vault→chunk→retrieve→quiz→rubric→lernsitzung→overview 全链模拟）
-· `modules`（Home/Library/Settings 渲染冒烟 + 芯片清除/同步报错交互）
+ · `flow`（vault→chunk→retrieve→quiz→rubric→lernsitzung→overview 全链模拟）
+ · `modules`（Home/Library/Settings 渲染冒烟 + 芯片清除/同步报错交互）
+ · Next-Gen：`engine/bm25`（切分/停用词/法条/加权）· `engine/rrfSearch`（融合排序）
+ · `engine/vaultGraph`（双向图/孤岛/邻域）· `engine/mastery`（BKT更新/学期/归档）
+ · `engine/dailyMix`（冲刺组装）· `engine/klausurExtractor`（动态抽卷/换算）
+ · `ai/heartbeat`（探针/pull代理优先/直连兜底/错误分类）· `ai/providers`（10预设/override三态）
+ · `walkthrough`（真L1穿真UI：门禁/XP/离线保底/反馈上下文）· `MathHtml`（首绘原文/异步排版/缓存）
+ · `engine/reise-ki`（含check四段打分prompt）· Tutor压缩三件套（compressor/ccrStore/context）
 
 ## 6. 视觉契约（给外部AI：只换皮，不改语义；行为见 §3）
 
 - Token（`index.css`）：纸面 `#FAFAF7` / 墨 `#1C1B17` / 灰 `#6B675C` / 线 `#E5E1D8` / 强调 `#4338CA`；
   离线系统字体（serif 标题 + sans 正文 + mono 数据）；16×16 手绘细线 SVG 图标；禁 emoji
-- 导航：侧栏 8 学习 tab（主页首位）+ 底部独立设置区（分割线 + Alt 9）；顶栏=搜索 + 状态；
+- 导航：侧栏 9 学习 tab（主页首位，`Alt 1–9`）+ 底部独立设置区（分割线 + `Alt 0`）；顶栏=搜索 + 状态；
   命令面板（Strg/⌘K）+ `?` 帮助 + 右下反馈浮窗常驻
 - 组件清单（改皮时逐个认领）：Home 四统计 + 优先重背 chips + 掌握度条；Library 学科徽章 + filter-chip +
   双列阅读；Flashcards 翻卡 + 1-4 评分 + 拖拽；Quiz 五步 drill + 对比双栏 + 四维 rubric pills +

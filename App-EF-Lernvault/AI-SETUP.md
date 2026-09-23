@@ -48,6 +48,7 @@ Quiz 批改自动跟随同一引擎；Zitierpflicht（断言必须带 `[Pfad#Zei
 
 - “请填 API-Key”→ AI设置里选对服务商、粘 Key（`sk-…`，注意别粘多空格）。
 - HTTP 401 → Key 错/过期；HTTP 429 → 免费额度撞墙，换服务商或等次日（OpenRouter 可切 `:free` 别家）。
+- 拉取一直失败（networkerror/Failed to fetch）→ 不是你的网，是浏览器跨域拦截：刷新页面让新版 dev 代理接管（经本地代理拉取会标注"经本地代理"）；仍失败看报错：HTTP 401=Key错/过期，空名单=该站不支持/models（手填模型名即可）。
 - 本地模型白屏转圈 → 看是否 WebGPU 被禁（`chrome://gpu`）；无独显的旧机直接用 API 档。
 - 引用 `[Pfad#Zeile]` 点不开 → 先在顶栏打开 Vault 文件夹（知识库未连接时只有演示数据）。
 
