@@ -4,3 +4,13 @@ Turgor;膨压;Turgor stabilisiert die Pflanze.;Bio;Zelle
 Denaturierung;变性;Hitze denaturiert das Enzym irreversibel.;Bio;Enzyme
 Toleranzbereich;耐受范围;Ausserhalb des Toleranzbereichs sinkt die Fitness.;Bio;Oekologie
 Zellmembran;细胞膜;Die Zellmembran regelt den Stoffaustausch.;Bio;Zelle
+Stammbaumanalyse;系谱分析;Der Stammbaum zeigt den Erbgang.;Bio;CN
+Konzentrationsgefaelle;浓度梯度;Transport folgt dem Konzentrationsgefaelle.;Bio;CN
+Kontrollexperiment;对照实验;Nur eine Variable wird geaendert.;Bio;CN
+Reaktionsrate;反应速率;Die Reaktionsrate hat ein Maximum.;Bio;CN
+Substratspezifitaet;底物特异性;Ein Enzym passt nur zu einem Substrat.;Bio;CN
+Fotosynthesegleichung;光合作用方程式;Kohlenstoffdioxid plus Wasser ergibt Glukose und Sauerstoff.;Bio;CN
+Zellatmung;细胞呼吸;Atmung setzt Energie aus Glukose frei.;Bio;CN
+Oekologische Nische;生态位;Die Nische trennt die Arten.;Bio;CN
+Allel;等位基因;Ein Allel stammt vom Vater, eines von der Mutter.;Bio;CN
+Erwartungshorizont;踩分点;Der Erwartungshorizont listet die Teilpunkte.;Bio;CN

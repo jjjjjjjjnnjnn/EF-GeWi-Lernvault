@@ -11,3 +11,9 @@
 
 - KLP Bio 2022全文：`klp_bio_2022.pdf`
 - Runde4补缺（`_Downloads/Bio/stansi-runde4/`，1件）：Korrekturzeichen Bio（此前实缺）
+
+## CN-Vernetzung 2026-09-23 (nur freie Links, nichts gescrapt)
+
+- 人教高中生物必修1（分子与细胞）pep.com.cn: https://www.pep.com.cn/ (frei lesbar, CN-Vernetzung)
+- 人教高中生物必修2（遗传与进化）pep.com.cn: https://www.pep.com.cn/ (frei lesbar, Ausblick Genetik)
+- Learn.Genetics Utah (frei, EN, Ausblick Genetik): https://learn.genetics.utah.edu
