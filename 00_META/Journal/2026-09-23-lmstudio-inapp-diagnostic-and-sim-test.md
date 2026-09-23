@@ -40,3 +40,12 @@ tags: [EF, Meta]
      - 模拟服务未启动或 CORS 拦截，验证 UI 弹出友好排查指引；
      - 模拟 Tab 2 卡片上探针测试；
      - 模拟级联容灾 Failover（LM Studio 断线时自动无缝切换到备用端点或本地考纲库）。
+
+5. **商汤 SenseNova / 远程 HTTPS 端点 CORS 拦截与 404 Ping 修复 (`[App] 3648eb9`，231 单测全绿)**
+   - **用户截图实测排查 (`firefox.exe_20260923_100721.png`)**：用户在测试 SenseNova 时界面报 `Connection Failed (625ms)`。
+   - **深层根因 1 (CORS Preflight 拒绝)**：商汤开放平台服务端对跨域预检 `OPTIONS` 请求返回 404 且缺少 `Access-Control-Allow-Headers`，导致浏览器直接将其定性为 NetworkError 拦截。
+   - **深层根因 2 (无 /models 接口)**：SenseNova 仅提供 `/v1/chat/completions` (POST)，请求 `GET /v1/models` 会直接 404。
+   - **技术解法**：
+     - 在 `vite.config.ts` 中引入通用 `aiGatewayProxy` (`/__ai_proxy`)，将浏览器同源请求由 Node.js 服务端直连外部商用大模型，彻底免除浏览器 CORS 与 preflight 拦截，完美支持 SSE 流式传输；
+     - 在 `providers.ts` 中实现 `resolveAiRequestUrl`，本地端点（LM Studio / Ollama）直连，远程 HTTPS 端点走代取；
+     - 在 `endpoints.ts` 中针对 SenseNova 采用 `POST /chat/completions` 专用测速探针，连通状态与 Key 鉴权 100% 正常响应。
