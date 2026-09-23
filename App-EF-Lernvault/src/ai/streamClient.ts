@@ -11,7 +11,12 @@ import {
   ensureLocalEngine,
   sanitizeChatMessages,
 } from "./engine";
-import { type AiEndpoint, getActiveEndpoint } from "./endpoints";
+import {
+  type AiEndpoint,
+  getActiveEndpoint,
+  buildEndpointUrl,
+  buildEndpointHeaders,
+} from "./endpoints";
 import { estimateTokens } from "../engine/context";
 
 export interface StreamChunk {
@@ -66,21 +71,24 @@ export function parseSseStream(
       try {
         const json = JSON.parse(dataStr);
 
-        // 1. Text-Delta extrahieren
+        // 1. Text-Delta extrahieren (unterstuetzt OpenAI choices[0].delta sowie Anthropic content_block_delta)
         const delta =
           json.choices?.[0]?.delta?.content ??
           json.choices?.[0]?.text ??
+          (json.type === "content_block_delta" ? json.delta?.text : undefined) ??
+          json.delta?.text ??
           "";
         if (delta) {
           onDelta(delta);
         }
 
-        // 2. Token-Verbrauch extrahieren (wenn stream_options: { include_usage: true } gesendet wurde)
-        if (json.usage && onUsage) {
+        // 2. Token-Verbrauch extrahieren (OpenAI usage oder Anthropic message_delta/usage)
+        const usageData = json.usage || (json.type === "message_delta" ? json.usage : null);
+        if (usageData && onUsage) {
           onUsage({
-            promptTokens: json.usage.prompt_tokens ?? 0,
-            completionTokens: json.usage.completion_tokens ?? 0,
-            totalTokens: json.usage.total_tokens ?? 0,
+            promptTokens: usageData.prompt_tokens ?? usageData.input_tokens ?? 0,
+            completionTokens: usageData.completion_tokens ?? usageData.output_tokens ?? 0,
+            totalTokens: usageData.total_tokens ?? ((usageData.input_tokens ?? 0) + (usageData.output_tokens ?? 0)),
           });
         }
       } catch {
@@ -144,31 +152,31 @@ export async function chatStream(
     }
   }
 
-  // 2. API-Modus (OpenAI-kompatibel): Bevorzuge opts.endpoint, falle auf activeEndpoint oder Legacy zurück
+  // 2. API-Modus (OpenAI-kompatibel / Anthropic-kompatibel): Bevorzuge opts.endpoint, falle auf activeEndpoint oder Legacy zurück
+  let targetEp: AiEndpoint | undefined = opts?.endpoint;
+  if (!targetEp) {
+    const activeEp = getActiveEndpoint();
+    if (activeEp && activeEp.baseUrl) {
+      targetEp = activeEp;
+    }
+  }
+
   let base: string;
   let apiKey: string;
   let model: string;
   let endpointName: string;
 
-  if (opts?.endpoint) {
-    base = opts.endpoint.baseUrl.trim();
-    apiKey = opts.endpoint.apiKey.trim();
-    model = opts.endpoint.model.trim();
-    endpointName = opts.endpoint.name;
+  if (targetEp) {
+    base = targetEp.baseUrl.trim();
+    apiKey = targetEp.apiKey.trim();
+    model = targetEp.model.trim();
+    endpointName = targetEp.name;
   } else {
-    const activeEp = getActiveEndpoint();
-    if (activeEp && activeEp.baseUrl) {
-      base = activeEp.baseUrl.trim();
-      apiKey = activeEp.apiKey.trim();
-      model = activeEp.model.trim();
-      endpointName = activeEp.name;
-    } else {
-      const preset = getProvider(cfg.providerId);
-      base = effectiveBaseUrl(cfg);
-      apiKey = cfg.apiKey.trim();
-      model = cfg.model.trim() || preset.defaultModel;
-      endpointName = preset.name;
-    }
+    const preset = getProvider(cfg.providerId);
+    base = effectiveBaseUrl(cfg);
+    apiKey = cfg.apiKey.trim();
+    model = cfg.model.trim() || preset.defaultModel;
+    endpointName = preset.name;
   }
 
   if (!base) {
@@ -176,11 +184,55 @@ export async function chatStream(
     throw new NeedsKeyError("Base-URL fehlt / 端点 Base-URL 为空");
   }
 
-  const headers: Record<string, string> = { "Content-Type": "application/json" };
-  if (apiKey) headers.Authorization = `Bearer ${apiKey}`;
+  const resolvedEp: AiEndpoint = targetEp ?? {
+    id: "legacy",
+    name: endpointName,
+    providerId: "custom",
+    baseUrl: base,
+    apiKey,
+    model,
+    enabled: true,
+    upstreamFormat: "openai",
+    authHeaderType: "Bearer",
+  };
 
+  const headers = buildEndpointHeaders(resolvedEp);
+  const targetUrl = buildEndpointUrl(resolvedEp, "chat");
+  const fetchUrl = resolveAiRequestUrl(targetUrl);
   const sanitizedMessages = sanitizeChatMessages(messages);
-  const fetchUrl = resolveAiRequestUrl(`${base.replace(/\/$/, "")}/chat/completions`);
+
+  let requestBody: Record<string, unknown>;
+  if (resolvedEp.upstreamFormat === "anthropic") {
+    const systemParts: string[] = [];
+    const chatParts: { role: "user" | "assistant"; content: string }[] = [];
+    for (const m of sanitizedMessages) {
+      if (m.role === "system") {
+        systemParts.push(m.content);
+      } else {
+        chatParts.push({ role: m.role, content: m.content });
+      }
+    }
+    if (chatParts.length === 0) {
+      chatParts.push({ role: "user", content: "Hallo" });
+    }
+    requestBody = {
+      model,
+      system: systemParts.length > 0 ? systemParts.join("\n\n") : undefined,
+      messages: chatParts,
+      temperature: opts?.temperature ?? 0.3,
+      max_tokens: opts?.maxTokens ?? 1024,
+      stream: true,
+    };
+  } else {
+    requestBody = {
+      model,
+      messages: sanitizedMessages,
+      temperature: opts?.temperature ?? 0.3,
+      max_tokens: opts?.maxTokens ?? 700,
+      stream: true,
+      stream_options: { include_usage: true },
+    };
+  }
 
   let res: Response;
   try {
@@ -188,14 +240,7 @@ export async function chatStream(
       method: "POST",
       headers,
       signal: opts?.signal,
-      body: JSON.stringify({
-        model,
-        messages: sanitizedMessages,
-        temperature: opts?.temperature ?? 0.3,
-        max_tokens: opts?.maxTokens ?? 700,
-        stream: true,
-        stream_options: { include_usage: true },
-      }),
+      body: JSON.stringify(requestBody),
     });
   } catch (err) {
     opts?.onStatusChange?.("error");

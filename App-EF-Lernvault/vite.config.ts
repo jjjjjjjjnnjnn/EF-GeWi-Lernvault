@@ -73,14 +73,14 @@ function aiGatewayProxy(): Plugin {
           const reqBody = chunks.length > 0 ? Buffer.concat(chunks) : undefined;
 
           const forwardHeaders: Record<string, string> = {};
-          if (req.headers["authorization"]) {
-            forwardHeaders["Authorization"] = String(req.headers["authorization"]);
+          for (const [k, v] of Object.entries(req.headers)) {
+            const lk = k.toLowerCase();
+            if (lk !== "host" && lk !== "connection" && lk !== "origin" && lk !== "referer" && v !== undefined) {
+              forwardHeaders[k] = Array.isArray(v) ? v.join(", ") : String(v);
+            }
           }
-          if (req.headers["x-proxy-auth"]) {
+          if (req.headers["x-proxy-auth"] && !forwardHeaders["authorization"]) {
             forwardHeaders["Authorization"] = String(req.headers["x-proxy-auth"]);
-          }
-          if (req.headers["content-type"]) {
-            forwardHeaders["Content-Type"] = String(req.headers["content-type"]);
           }
 
           const controller = new AbortController();

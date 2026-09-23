@@ -14,10 +14,12 @@ export interface EndpointTestResult {
   remedyTip?: string;
 }
 
+export type AuthFieldType = "Bearer" | "x-api-key" | "ANTHROPIC_AUTH_TOKEN" | "custom";
+
 export interface AiEndpoint {
   id: string;
   name: string;
-  providerId: string; // e.g. "lmstudio" | "ollama" | "deepseek" | "openrouter" | "siliconflow" | "custom"
+  providerId: string; // e.g. "lmstudio" | "ollama" | "deepseek" | "openrouter" | "siliconflow" | "sensenova" | "custom"
   baseUrl: string;
   apiKey: string;
   model: string;
@@ -29,6 +31,10 @@ export interface AiEndpoint {
   description?: string;
   lastTestResult?: EndpointTestResult;
   upstreamFormat?: "openai" | "anthropic" | "custom";
+  authHeaderType?: AuthFieldType;
+  customAuthHeader?: string;
+  customPort?: number | string;
+  isFullUrl?: boolean;
   modelFast?: string;
   modelDeep?: string;
   websiteUrl?: string;
@@ -126,21 +132,23 @@ export const PRESET_ENDPOINTS: AiEndpoint[] = [
   },
   {
     id: "ep-sensenova",
-    name: "SenseNova (商汤日日新)",
+    name: "SenseNova (商汤)",
     providerId: "sensenova",
-    baseUrl: "https://token.sensenova.cn/v1",
+    baseUrl: "https://token.sensenova.cn",
     apiKey: "",
-    model: "SenseChat-5",
+    model: "sensenova-6.8-flash-lite",
     enabled: true,
     isPreset: true,
     status: "untested",
-    description: "国内商用大模型，支持支付宝支付",
+    description: "国内大模型，兼容 Claude Messages 原生协议",
     websiteUrl: "https://platform.sensenova.cn",
-    upstreamFormat: "openai",
+    upstreamFormat: "anthropic",
+    authHeaderType: "ANTHROPIC_AUTH_TOKEN",
     recommendedModels: [
+      "sensenova-6.8-flash-lite",
       "SenseChat-5",
+      "deepseek-v4-flash",
       "SenseChat-5-Cantonese",
-      "SenseChat-Turbo",
     ],
   },
 ];
@@ -322,6 +330,75 @@ export function deleteEndpoint(id: string): boolean {
 }
 
 /**
+ * 构造统一请求头，严格支持认证字段类型（Bearer / x-api-key / ANTHROPIC_AUTH_TOKEN / 自定义Header）
+ */
+export function buildEndpointHeaders(endpoint: AiEndpoint): Record<string, string> {
+  const headers: Record<string, string> = { "Content-Type": "application/json" };
+  const key = endpoint.apiKey.trim();
+  if (!key) return headers;
+
+  const authType =
+    endpoint.authHeaderType ||
+    (endpoint.upstreamFormat === "anthropic" ? "ANTHROPIC_AUTH_TOKEN" : "Bearer");
+
+  if (authType === "ANTHROPIC_AUTH_TOKEN") {
+    headers["x-api-key"] = key;
+    headers["anthropic-version"] = "2023-06-01";
+    headers["Authorization"] = `Bearer ${key}`;
+  } else if (authType === "x-api-key") {
+    headers["x-api-key"] = key;
+    headers["anthropic-version"] = "2023-06-01";
+  } else if (authType === "custom" && endpoint.customAuthHeader?.trim()) {
+    headers[endpoint.customAuthHeader.trim()] = key;
+    headers["Authorization"] = `Bearer ${key}`;
+  } else {
+    // "Bearer" default
+    headers["Authorization"] = `Bearer ${key}`;
+    if (endpoint.upstreamFormat === "anthropic") {
+      headers["x-api-key"] = key;
+      headers["anthropic-version"] = "2023-06-01";
+    }
+  }
+  return headers;
+}
+
+/**
+ * 构造请求端点 URL，支持完整 URL 开关、自定义端口绑定与上游协议格式自动适配
+ */
+export function buildEndpointUrl(endpoint: AiEndpoint, pathType: "chat" | "models"): string {
+  let base = endpoint.baseUrl.trim();
+  if (endpoint.customPort && !base.includes(`:${endpoint.customPort}`)) {
+    try {
+      const u = new URL(base);
+      u.port = String(endpoint.customPort);
+      base = u.toString().replace(/\/$/, "");
+    } catch {
+      // 非标准 URL 结构保持原样
+    }
+  }
+  base = base.replace(/\/+$/, "");
+
+  // 1. 若开启了“完整 URL”开关，直接使用用户指定的地址
+  if (endpoint.isFullUrl) {
+    return base;
+  }
+
+  // 2. 模型拉取路径
+  if (pathType === "models") {
+    return base.endsWith("/v1") ? `${base}/models` : `${base}/v1/models`;
+  }
+
+  // 3. 对话聊天路径
+  if (endpoint.upstreamFormat === "anthropic") {
+    // Anthropic Messages 协议
+    return base.endsWith("/v1") ? `${base}/messages` : `${base}/v1/messages`;
+  }
+
+  // OpenAI Chat Completions 协议
+  return base.endsWith("/v1") ? `${base}/chat/completions` : `${base}/v1/chat/completions`;
+}
+
+/**
  * 单个端点测速与连通性探针 (Ping)
  */
 export async function pingEndpoint(
@@ -329,34 +406,36 @@ export async function pingEndpoint(
   timeoutMs = 5000
 ): Promise<{ status: "online" | "offline"; latencyMs: number; error?: string }> {
   const start = performance.now();
-  const base = endpoint.baseUrl.trim().replace(/\/$/, "");
   const controller = new AbortController();
   const timer = setTimeout(() => controller.abort(), timeoutMs);
 
-  const headers: Record<string, string> = {};
-  if (endpoint.apiKey.trim()) {
-    headers.Authorization = `Bearer ${endpoint.apiKey.trim()}`;
-  }
-
-  // 针对 SenseNova 等无 /models 接口或仅支持 POST 的端点，自动探测 /chat/completions
-  const isPostOnly = endpoint.providerId === "sensenova" || base.includes("sensenova");
-  const targetUrl = isPostOnly ? `${base}/chat/completions` : `${base}/models`;
+  const headers = buildEndpointHeaders(endpoint);
+  const isAnthropic = endpoint.upstreamFormat === "anthropic";
+  const isPostOnly = isAnthropic || endpoint.providerId === "sensenova" || endpoint.baseUrl.includes("sensenova");
+  const targetUrl = isPostOnly
+    ? buildEndpointUrl(endpoint, "chat")
+    : buildEndpointUrl(endpoint, "models");
   const fetchUrl = resolveAiRequestUrl(targetUrl);
 
   try {
     const res = await fetch(fetchUrl, {
       method: isPostOnly ? "POST" : "GET",
-      headers: {
-        ...headers,
-        ...(isPostOnly ? { "Content-Type": "application/json" } : {}),
-      },
+      headers,
       signal: controller.signal,
       body: isPostOnly
-        ? JSON.stringify({
-            model: endpoint.model.trim() || "default",
-            messages: [{ role: "user", content: "ping" }],
-            max_tokens: 1,
-          })
+        ? JSON.stringify(
+            isAnthropic
+              ? {
+                  model: endpoint.model.trim() || "sensenova-6.8-flash-lite",
+                  messages: [{ role: "user", content: "ping" }],
+                  max_tokens: 1,
+                }
+              : {
+                  model: endpoint.model.trim() || "default",
+                  messages: [{ role: "user", content: "ping" }],
+                  max_tokens: 1,
+                }
+          )
         : undefined,
     });
     clearTimeout(timer);
@@ -379,7 +458,8 @@ export async function pingEndpoint(
  * 针对指定端点进行深度应用内连通与对话测试 (Chat Probe)
  * 1. 严格确保请求体包含合法的 messages 数组，防止 LM Studio 等报 400 'messages' field is required
  * 2. 检查 CORS、端口拒连 (Connection Refused)、401 未授权、模型未加载等典型场景
- * 3. 返回真实模型回复与智能自愈排查指引 (Remedy Tip)，用户在 App 内部闭环解决
+ * 3. 自动适配 OpenAI 与 Anthropic Messages 原生请求与回复格式
+ * 4. 返回真实模型回复与智能自愈排查指引 (Remedy Tip)，用户在 App 内部闭环解决
  */
 export async function testEndpointChat(
   endpoint: AiEndpoint,
@@ -387,37 +467,43 @@ export async function testEndpointChat(
   timeoutMs = 8000
 ): Promise<EndpointTestResult> {
   const start = performance.now();
-  const base = endpoint.baseUrl.trim().replace(/\/$/, "");
   const controller = new AbortController();
   const timer = setTimeout(() => controller.abort(), timeoutMs);
 
-  const headers: Record<string, string> = { "Content-Type": "application/json" };
-  if (endpoint.apiKey.trim()) {
-    headers.Authorization = `Bearer ${endpoint.apiKey.trim()}`;
-  }
+  const headers = buildEndpointHeaders(endpoint);
+  const targetUrl = buildEndpointUrl(endpoint, "chat");
+  const fetchUrl = resolveAiRequestUrl(targetUrl);
+  const isAnthropic = endpoint.upstreamFormat === "anthropic";
 
-  // 严格确保 messages 字段非空且为规范数组，杜绝 'messages' field is required
-  const messages = [{ role: "user", content: prompt }];
-  const fetchUrl = resolveAiRequestUrl(`${base}/chat/completions`);
+  const requestBody = isAnthropic
+    ? {
+        model: endpoint.model.trim() || "sensenova-6.8-flash-lite",
+        messages: [{ role: "user", content: prompt }],
+        max_tokens: 120,
+      }
+    : {
+        model: endpoint.model.trim() || "default",
+        messages: [{ role: "user", content: prompt }],
+        temperature: 0.3,
+        max_tokens: 120,
+      };
 
   try {
     const res = await fetch(fetchUrl, {
       method: "POST",
       headers,
       signal: controller.signal,
-      body: JSON.stringify({
-        model: endpoint.model.trim() || "default",
-        messages,
-        temperature: 0.3,
-        max_tokens: 120,
-      }),
+      body: JSON.stringify(requestBody),
     });
     clearTimeout(timer);
     const latencyMs = Math.round(performance.now() - start);
 
     if (res.ok) {
       const data = await res.json().catch(() => null);
-      const reply = data?.choices?.[0]?.message?.content?.trim() || "";
+      const reply =
+        data?.content?.[0]?.text?.trim() ||
+        data?.choices?.[0]?.message?.content?.trim() ||
+        "";
       const model = data?.model || endpoint.model;
       return {
         ok: true,
@@ -435,7 +521,7 @@ export async function testEndpointChat(
         latencyMs,
         errorType: "auth",
         errorMessage: `HTTP ${res.status} 未授权`,
-        remedyTip: "请检查 API Key 是否正确填入，或密钥是否已欠费/过期。",
+        remedyTip: "请检查 API Key 是否正确填入，或核对认证字段（ANTHROPIC_AUTH_TOKEN / Bearer / x-api-key）。",
       };
     }
 
@@ -455,7 +541,7 @@ export async function testEndpointChat(
         latencyMs,
         errorType: "unknown",
         errorMessage: "HTTP 404 接口未找到",
-        remedyTip: `请核对 Base-URL（当前为 ${base}）。LM Studio 通常需后缀 /v1。`,
+        remedyTip: `请核对请求地址（当前为 ${targetUrl}）。若是 Claude/商汤原生协议请选 Anthropic 格式。`,
       };
     }
 
@@ -471,37 +557,39 @@ export async function testEndpointChat(
   } catch (err) {
     clearTimeout(timer);
     const latencyMs = Math.round(performance.now() - start);
+    const isCors = err instanceof TypeError && err.message.includes("Failed to fetch");
 
-    if (err instanceof DOMException && err.name === "AbortError") {
-      return {
-        ok: false,
-        latencyMs,
-        errorType: "timeout",
-        errorMessage: `连接超时 (> ${timeoutMs}ms)`,
-        remedyTip: "服务器未能在规定时间内响应，请确认本地服务未挂起或网络是否通畅。",
-      };
-    }
-
-    const isCors = err instanceof TypeError && (err.message.includes("Failed to fetch") || err.message.includes("NetworkError"));
     if (isCors) {
       return {
         ok: false,
         latencyMs,
         errorType: "cors",
-        errorMessage: "网络连接失败 / CORS 跨域拦截",
+        errorMessage: "CORS 跨域错误或连接被拒绝 (Failed to fetch)",
         remedyTip: endpoint.baseUrl.includes("1234")
-          ? "LM Studio 用户：请确认 Local Server 已启动（Port 1234），且已勾选「Enable CORS」！"
-          : "无法连接到该端口或域名，请确认服务已启动且未被系统防火墙拦截。",
+          ? "LM Studio 用户：请确认 Local Server 已启动（端口 1234），且已勾选「Enable CORS」！"
+          : "无法连接到该服务。请核对地址与端口是否正确。",
+      };
+    }
+
+    const isTimeout = err instanceof DOMException && err.name === "AbortError";
+    if (isTimeout) {
+      return {
+        ok: false,
+        latencyMs,
+        errorType: "timeout",
+        errorMessage: `请求超时 (${timeoutMs}ms)`,
+        remedyTip: "服务端响应缓慢，请核对本地显卡/CPU负载或网络状态。",
       };
     }
 
     return {
       ok: false,
       latencyMs,
-      errorType: "unknown",
-      errorMessage: err instanceof Error ? err.message : String(err),
-      remedyTip: "请检查网络连接及服务端口状态。",
+      errorType: "refused",
+      errorMessage: `连接异常: ${err instanceof Error ? err.message : String(err)}`,
+      remedyTip: "请确认该端点服务已在本机或网络开启运行。",
     };
   }
 }
+
 

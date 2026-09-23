@@ -21,6 +21,7 @@ import {
   testEndpointChat,
   type AiEndpoint,
   type EndpointTestResult,
+  type AuthFieldType,
 } from "../ai/endpoints";
 import {
   getTokenSummary,
@@ -96,6 +97,10 @@ export default function AiSettings({
   const [formModelFast, setFormModelFast] = useState("");
   const [formModelDeep, setFormModelDeep] = useState("");
   const [formUpstreamFormat, setFormUpstreamFormat] = useState<"openai" | "anthropic" | "custom">("openai");
+  const [formCustomPort, setFormCustomPort] = useState<string>("");
+  const [formIsFullUrl, setFormIsFullUrl] = useState<boolean>(false);
+  const [formAuthHeaderType, setFormAuthHeaderType] = useState<AuthFieldType>("ANTHROPIC_AUTH_TOKEN");
+  const [formCustomAuthHeader, setFormCustomAuthHeader] = useState<string>("");
   const [showEditorKey, setShowEditorKey] = useState(false);
   const [advancedOpen, setAdvancedOpen] = useState(false);
 
@@ -288,6 +293,12 @@ export default function AiSettings({
     setFormModelFast(ep.modelFast || "");
     setFormModelDeep(ep.modelDeep || "");
     setFormUpstreamFormat(ep.upstreamFormat || "openai");
+    setFormCustomPort(ep.customPort ? String(ep.customPort) : "");
+    setFormIsFullUrl(!!ep.isFullUrl);
+    setFormAuthHeaderType(
+      ep.authHeaderType || (ep.upstreamFormat === "anthropic" ? "ANTHROPIC_AUTH_TOKEN" : "Bearer")
+    );
+    setFormCustomAuthHeader(ep.customAuthHeader || "");
     setShowEditorKey(false);
     setAdvancedOpen(false);
   };
@@ -303,6 +314,10 @@ export default function AiSettings({
     setFormModelFast("");
     setFormModelDeep("");
     setFormUpstreamFormat("openai");
+    setFormCustomPort("");
+    setFormIsFullUrl(false);
+    setFormAuthHeaderType("Bearer");
+    setFormCustomAuthHeader("");
     setShowEditorKey(false);
     setAdvancedOpen(false);
   };
@@ -313,6 +328,8 @@ export default function AiSettings({
 
     const trimmedModel = formModel.trim() || "gpt-4o-mini";
     const trimmedBaseUrl = formBaseUrl.trim().replace(/\/+$/, "");
+    const parsedPort = formCustomPort.trim() ? parseInt(formCustomPort.trim(), 10) : undefined;
+    const finalPort = !isNaN(parsedPort as number) && (parsedPort as number) > 0 ? parsedPort : undefined;
 
     if (isAdding) {
       const created = addEndpoint({
@@ -324,6 +341,10 @@ export default function AiSettings({
         modelFast: formModelFast.trim() || undefined,
         modelDeep: formModelDeep.trim() || undefined,
         upstreamFormat: formUpstreamFormat,
+        authHeaderType: formAuthHeaderType,
+        customAuthHeader: formCustomAuthHeader.trim() || undefined,
+        customPort: finalPort,
+        isFullUrl: formIsFullUrl,
         enabled: true,
       });
       setEndpoints(loadEndpoints());
@@ -337,6 +358,10 @@ export default function AiSettings({
         modelFast: formModelFast.trim() || undefined,
         modelDeep: formModelDeep.trim() || undefined,
         upstreamFormat: formUpstreamFormat,
+        authHeaderType: formAuthHeaderType,
+        customAuthHeader: formCustomAuthHeader.trim() || undefined,
+        customPort: finalPort,
+        isFullUrl: formIsFullUrl,
       });
       setEndpoints(loadEndpoints());
       if (activeEpId === editingEp.id) {
@@ -915,42 +940,82 @@ export default function AiSettings({
                   </div>
                 </div>
 
-                {/* 3. 请求地址 (Base URL) + CC-Switch 风格提示框 */}
+                {/* 3. 请求地址 (Base URL) + 完整 URL 开关 + 端口 + CC-Switch 风格提示框 */}
                 <div>
                   <div className="flex items-center justify-between mb-1">
                     <label className="text-xs font-sans text-[#6B675C]">
                       {lang === "de" ? "Anfrage-Adresse (Base-URL):" : "请求地址 (Base URL):"}
                     </label>
-                    <button
-                      type="button"
-                      onClick={() => {
-                        const tempEp: AiEndpoint = {
-                          id: editingEp?.id || "temp",
-                          name: formName,
-                          providerId: "custom",
-                          baseUrl: formBaseUrl,
-                          apiKey: formApiKey,
-                          model: formModel,
-                          enabled: true,
-                        };
-                        handleTestChatProbe(tempEp);
-                      }}
-                      className="text-[11px] font-mono text-[#4338CA] hover:underline flex items-center gap-1 cursor-pointer"
-                    >
-                      <span>⚡</span>
-                      <span>{lang === "de" ? "Adresse testen" : "管理与测速"}</span>
-                    </button>
+                    <div className="flex items-center gap-3">
+                      <label className="flex items-center gap-1.5 cursor-pointer text-xs font-sans text-[#6B675C] select-none">
+                        <input
+                          type="checkbox"
+                          checked={formIsFullUrl}
+                          onChange={(e) => setFormIsFullUrl(e.target.checked)}
+                          className="rounded-xs border-[#E5E1D8] text-[#4338CA] focus:ring-0 cursor-pointer"
+                        />
+                        <span>{lang === "de" ? "Vollständige URL" : "完整 URL"}</span>
+                      </label>
+                      <button
+                        type="button"
+                        onClick={() => {
+                          const parsedPort = formCustomPort.trim() ? parseInt(formCustomPort.trim(), 10) : undefined;
+                          const tempEp: AiEndpoint = {
+                            id: editingEp?.id || "temp",
+                            name: formName || "测试端点",
+                            providerId: editingEp?.providerId || "custom",
+                            baseUrl: formBaseUrl,
+                            apiKey: formApiKey,
+                            model: formModel,
+                            enabled: true,
+                            upstreamFormat: formUpstreamFormat,
+                            authHeaderType: formAuthHeaderType,
+                            customAuthHeader: formCustomAuthHeader.trim() || undefined,
+                            customPort: !isNaN(parsedPort as number) ? parsedPort : undefined,
+                            isFullUrl: formIsFullUrl,
+                          };
+                          handleTestChatProbe(tempEp);
+                        }}
+                        className="text-[11px] font-mono text-[#4338CA] hover:underline flex items-center gap-1 cursor-pointer"
+                      >
+                        <span>⚡</span>
+                        <span>{lang === "de" ? "Adresse testen" : "管理与测速"}</span>
+                      </button>
+                    </div>
                   </div>
-                  <input
-                    value={formBaseUrl}
-                    onChange={(e) => setFormBaseUrl(e.target.value)}
-                    placeholder="https://api.openai.com/v1 或 http://127.0.0.1:1234/v1"
-                    className="w-full rounded-xs border border-[#E5E1D8] px-3 py-1.5 text-xs font-mono text-[#1C1B17] focus:border-[#4338CA] focus:outline-none"
-                  />
+                  <div className="flex gap-2">
+                    <input
+                      value={formBaseUrl}
+                      onChange={(e) => setFormBaseUrl(e.target.value)}
+                      placeholder={
+                        formUpstreamFormat === "anthropic"
+                          ? "https://token.sensenova.cn"
+                          : "https://api.openai.com/v1 或 http://127.0.0.1:1234/v1"
+                      }
+                      className="flex-1 rounded-xs border border-[#E5E1D8] px-3 py-1.5 text-xs font-mono text-[#1C1B17] focus:border-[#4338CA] focus:outline-none"
+                    />
+                    <div className="w-28 shrink-0">
+                      <input
+                        value={formCustomPort}
+                        onChange={(e) => setFormCustomPort(e.target.value)}
+                        placeholder="端口 (如 1234)"
+                        className="w-full rounded-xs border border-[#E5E1D8] px-2 py-1.5 text-xs font-mono text-[#1C1B17] focus:border-[#4338CA] focus:outline-none"
+                        title="指定服务端口（选填）"
+                      />
+                    </div>
+                  </div>
                   {/* CC-Switch 风格提示黄色横条 */}
                   <div className="mt-1.5 rounded-xs border border-[#FDE68A] bg-[#FFFBEB] p-2 text-[11px] font-mono text-[#B45309] flex items-center gap-1.5">
                     <span>💡</span>
-                    <span>{lang === "de" ? "OpenAI Chat-kompatible Basis-URL eingeben, ohne Slash am Ende." : "填写兼容 OpenAI Chat Completions 的服务端点地址，不要以斜杠结尾"}</span>
+                    <span>
+                      {formUpstreamFormat === "anthropic"
+                        ? (lang === "de"
+                            ? "Anthropic Messages / Claude API kompatible Basis-URL eingeben, ohne Slash am Ende."
+                            : "填写兼容 Claude API 的服务端点地址，不要以斜杠结尾")
+                        : (lang === "de"
+                            ? "OpenAI Chat-kompatible Basis-URL eingeben, ohne Slash am Ende."
+                            : "填写兼容 OpenAI Chat Completions 的服务端点地址，不要以斜杠结尾")}
+                    </span>
                   </div>
                 </div>
 
@@ -961,25 +1026,60 @@ export default function AiSettings({
                     onClick={() => setAdvancedOpen((o) => !o)}
                     className="flex w-full items-center justify-between font-sans text-xs font-medium text-[#1C1B17]"
                   >
-                    <span>{lang === "de" ? "∨ Erweiterte Optionen" : "∨ 高级选项 (协议与网关代理)"}</span>
+                    <span>{lang === "de" ? "∨ Erweiterte Optionen (Protokoll & Authentifizierung)" : "∨ 高级选项 (上游格式、认证字段与代理)"}</span>
                     <span className="font-mono text-[10px] text-[#6B675C]">{advancedOpen ? "收起" : "展开"}</span>
                   </button>
                   {advancedOpen && (
-                    <div className="mt-2.5 space-y-2 border-t border-[#E5E1D8] pt-2 text-xs">
+                    <div className="mt-2.5 space-y-2.5 border-t border-[#E5E1D8] pt-2.5 text-xs">
                       <div>
-                        <span className="text-[#6B675C] block mb-1">上游协议格式:</span>
+                        <span className="text-[#6B675C] block mb-1">上游格式 (协议标准):</span>
                         <select
                           value={formUpstreamFormat}
-                          onChange={(e) => setFormUpstreamFormat(e.target.value as any)}
-                          className="rounded-xs border border-[#E5E1D8] bg-white px-2 py-1 font-mono text-xs focus:outline-none"
+                          onChange={(e) => {
+                            const fmt = e.target.value as "openai" | "anthropic" | "custom";
+                            setFormUpstreamFormat(fmt);
+                            if (fmt === "anthropic" && formAuthHeaderType === "Bearer") {
+                              setFormAuthHeaderType("ANTHROPIC_AUTH_TOKEN");
+                            } else if (fmt === "openai" && formAuthHeaderType === "ANTHROPIC_AUTH_TOKEN") {
+                              setFormAuthHeaderType("Bearer");
+                            }
+                          }}
+                          className="w-full rounded-xs border border-[#E5E1D8] bg-white px-2 py-1 font-mono text-xs focus:outline-none"
                         >
                           <option value="openai">OpenAI Chat Completions (标准兼容)</option>
-                          <option value="anthropic">Anthropic Messages</option>
+                          <option value="anthropic">Anthropic Messages (原生，如商汤/Claude)</option>
                           <option value="custom">自建网关 / 代理</option>
                         </select>
                       </div>
+
+                      <div>
+                        <span className="text-[#6B675C] block mb-1">认证字段 (写入请求头或认证名):</span>
+                        <select
+                          value={formAuthHeaderType}
+                          onChange={(e) => setFormAuthHeaderType(e.target.value as AuthFieldType)}
+                          className="w-full rounded-xs border border-[#E5E1D8] bg-white px-2 py-1 font-mono text-xs focus:outline-none"
+                        >
+                          <option value="ANTHROPIC_AUTH_TOKEN">ANTHROPIC_AUTH_TOKEN (默认，附带 x-api-key & anthropic-version)</option>
+                          <option value="Bearer">Authorization: Bearer [token]</option>
+                          <option value="x-api-key">x-api-key [token]</option>
+                          <option value="custom">自定义 Header</option>
+                        </select>
+                      </div>
+
+                      {formAuthHeaderType === "custom" && (
+                        <div>
+                          <span className="text-[#6B675C] block mb-1">自定义 Header 名称:</span>
+                          <input
+                            value={formCustomAuthHeader}
+                            onChange={(e) => setFormCustomAuthHeader(e.target.value)}
+                            placeholder="如: X-API-Token"
+                            className="w-full rounded-xs border border-[#E5E1D8] bg-white px-2 py-1 font-mono text-xs focus:outline-none"
+                          />
+                        </div>
+                      )}
+
                       <p className="text-[10px] font-mono text-[#6B675C] leading-relaxed">
-                        本地开发已接入统一无感代理 (/__ai_proxy)，远程云端接口（如 SenseNova 商汤）无需担心浏览器 CORS 限制与 404 探针阻断。
+                        本地开发已接入统一无感代理 (/__ai_proxy)，远程云端接口（如 SenseNova 商汤）自动转发全部凭据头并解除浏览器 CORS。
                       </p>
                     </div>
                   )}
@@ -1209,6 +1309,16 @@ export default function AiSettings({
                                   ? "本地直连"
                                   : "网关代理 (免CORS)"}
                               </span>
+                              {ep.upstreamFormat === "anthropic" && (
+                                <span className="text-[9px] font-mono px-1 py-0.2 rounded-xs bg-[#FEF3C7] text-[#B45309] border border-[#FDE68A]">
+                                  Claude/Anthropic
+                                </span>
+                              )}
+                              {ep.customPort && (
+                                <span className="text-[9px] font-mono px-1 py-0.2 rounded-xs bg-[#FAF9F6] border border-[#E5E1D8] text-[#6B675C]">
+                                  :{ep.customPort}
+                                </span>
+                              )}
                             </div>
                             <div className="flex items-center gap-1">
                               {isFallback && (

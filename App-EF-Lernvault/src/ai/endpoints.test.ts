@@ -124,4 +124,57 @@ describe("src/ai/endpoints.ts - CC-Switch Style Endpoint Management", () => {
     expect(probeRes.errorType).toBe("cors");
     expect(probeRes.remedyTip).toContain("Enable CORS");
   });
+
+  it("builds correct headers and URLs for Anthropic Messages, custom ports, and full URLs", async () => {
+    const { buildEndpointHeaders, buildEndpointUrl } = await import("./endpoints");
+
+    // 1. Anthropic format headers
+    const anthropicEp = {
+      id: "ep-sensenova",
+      name: "SenseNova",
+      providerId: "sensenova" as const,
+      baseUrl: "https://token.sensenova.cn",
+      apiKey: "sk-sensenova-test",
+      model: "sensenova-6.8-flash-lite",
+      enabled: true,
+      upstreamFormat: "anthropic" as const,
+      authHeaderType: "ANTHROPIC_AUTH_TOKEN" as const,
+    };
+
+    const headers = buildEndpointHeaders(anthropicEp);
+    expect(headers["x-api-key"]).toBe("sk-sensenova-test");
+    expect(headers["anthropic-version"]).toBe("2023-06-01");
+    expect(headers["Authorization"]).toBe("Bearer sk-sensenova-test");
+
+    // 2. Anthropic format chat URL
+    const anthropicUrl = buildEndpointUrl(anthropicEp, "chat");
+    expect(anthropicUrl).toBe("https://token.sensenova.cn/v1/messages");
+
+    // 3. Custom port URL
+    const portEp = {
+      ...anthropicEp,
+      baseUrl: "http://192.168.1.100",
+      customPort: 8080,
+    };
+    const portUrl = buildEndpointUrl(portEp, "chat");
+    expect(portUrl).toBe("http://192.168.1.100:8080/v1/messages");
+
+    // 4. Full URL toggle
+    const fullUrlEp = {
+      ...anthropicEp,
+      baseUrl: "https://my-relay.internal/custom-path",
+      isFullUrl: true,
+    };
+    const fullUrl = buildEndpointUrl(fullUrlEp, "chat");
+    expect(fullUrl).toBe("https://my-relay.internal/custom-path");
+
+    // 5. Custom Auth Header
+    const customHeaderEp = {
+      ...anthropicEp,
+      authHeaderType: "custom" as const,
+      customAuthHeader: "X-Custom-Token",
+    };
+    const customHeaders = buildEndpointHeaders(customHeaderEp);
+    expect(customHeaders["X-Custom-Token"]).toBe("sk-sensenova-test");
+  });
 });
