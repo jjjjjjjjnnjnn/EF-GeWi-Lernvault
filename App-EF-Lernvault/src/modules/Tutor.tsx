@@ -39,6 +39,7 @@ import {
   INTENSITY_PRESETS,
   autoDispatchChat,
 } from "../ai/autoDispatch";
+import { getActiveEndpoint } from "../ai/endpoints";
 
 export default function Tutor({
   lang,
@@ -72,6 +73,7 @@ export default function Tutor({
   const [retryCountdown, setRetryCountdown] = useState(0);
   const [showAi, setShowAi] = useState(false);
   const [localPct, setLocalPct] = useState<number | null>(null);
+  const [activeEp, setActiveEp] = useState(() => getActiveEndpoint());
   const [engineTag, setEngineTag] = useState(() => describeActiveEngine());
   const [copyFeedback, setCopyFeedback] = useState(false);
   const [expandedCcr, setExpandedCcr] = useState<{ hash: string; content: string | null } | null>(null);
@@ -674,10 +676,15 @@ export default function Tutor({
                 isDegraded ? "bg-[#B45309]" : "bg-[#10B981]"
               }`}
             />
-            <span className="truncate max-w-[200px]">
-              {isDegraded
-                ? "Auto-Dispatch · Vault"
-                : `KI-Tutor · ${engineTag}`}
+            <span className="truncate max-w-[260px] flex items-center gap-1.5 font-sans">
+              <span className="font-medium text-[#1C1B17]">
+                {isDegraded ? "Auto-Dispatch · Vault" : activeEp.name}
+              </span>
+              {!isDegraded && (
+                <span className="text-[10px] font-mono text-[#4338CA] bg-[#EEF2FF] border border-[#C7D2FE] px-1 py-0.2 rounded-xs truncate max-w-[120px]">
+                  {activeEp.model.split("/").pop()}
+                </span>
+              )}
             </span>
           </div>
 
@@ -732,7 +739,13 @@ export default function Tutor({
 
         {!onOpenSettings && showAi && (
           <div className="border-b border-[#E5E1D8] bg-white shadow-xs max-h-96 overflow-y-auto">
-            <AiSettings lang={lang} onChanged={() => setEngineTag(describeActiveEngine())} />
+            <AiSettings
+              lang={lang}
+              onChanged={() => {
+                setActiveEp(getActiveEndpoint());
+                setEngineTag(describeActiveEngine());
+              }}
+            />
           </div>
         )}
 

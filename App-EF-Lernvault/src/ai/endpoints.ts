@@ -9,7 +9,7 @@ export interface EndpointTestResult {
   latencyMs: number;
   replyText?: string;
   modelDetected?: string;
-  errorType?: "cors" | "refused" | "auth" | "model_unloaded" | "timeout" | "messages_error" | "unknown";
+  errorType?: "cors" | "refused" | "auth" | "model_unloaded" | "timeout" | "messages_error" | "rate_limit" | "unknown";
   errorMessage?: string;
   remedyTip?: string;
 }
@@ -464,12 +464,9 @@ export async function pingEndpoint(
 export async function testEndpointChat(
   endpoint: AiEndpoint,
   prompt = "Hallo! Bitte bestätige kurz deine Bereitschaft.",
-  timeoutMs = 8000
+  timeoutMs = 8000,
+  maxRetries = 3
 ): Promise<EndpointTestResult> {
-  const start = performance.now();
-  const controller = new AbortController();
-  const timer = setTimeout(() => controller.abort(), timeoutMs);
-
   const headers = buildEndpointHeaders(endpoint);
   const targetUrl = buildEndpointUrl(endpoint, "chat");
   const fetchUrl = resolveAiRequestUrl(targetUrl);
@@ -488,108 +485,150 @@ export async function testEndpointChat(
         max_tokens: 120,
       };
 
-  try {
-    const res = await fetch(fetchUrl, {
-      method: "POST",
-      headers,
-      signal: controller.signal,
-      body: JSON.stringify(requestBody),
-    });
-    clearTimeout(timer);
-    const latencyMs = Math.round(performance.now() - start);
+  let attempt = 0;
+  let lastStatus = 0;
+  let lastErrorBody = "";
+  let lastLatencyMs = 0;
 
-    if (res.ok) {
-      const data = await res.json().catch(() => null);
-      const reply =
-        data?.content?.[0]?.text?.trim() ||
-        data?.choices?.[0]?.message?.content?.trim() ||
-        "";
-      const model = data?.model || endpoint.model;
-      return {
-        ok: true,
-        latencyMs,
-        replyText: reply || "✓ 连通成功 (模型返回了空响应体)",
-        modelDetected: model,
-      };
-    }
+  while (attempt <= maxRetries) {
+    attempt++;
+    const start = performance.now();
+    const controller = new AbortController();
+    const timer = setTimeout(() => controller.abort(), timeoutMs);
 
-    const errorBody = await res.text().catch(() => "");
+    try {
+      const res = await fetch(fetchUrl, {
+        method: "POST",
+        headers,
+        signal: controller.signal,
+        body: JSON.stringify(requestBody),
+      });
+      clearTimeout(timer);
+      const latencyMs = Math.round(performance.now() - start);
+      lastLatencyMs = latencyMs;
 
-    if (res.status === 401 || res.status === 403) {
+      if (res.ok) {
+        const data = await res.json().catch(() => null);
+        const reply =
+          data?.content?.[0]?.text?.trim() ||
+          data?.choices?.[0]?.message?.content?.trim() ||
+          "";
+        const model = data?.model || endpoint.model;
+        const retryNote = attempt > 1 ? `(触发限速经 ${attempt - 1} 次重试后成功) ` : "";
+        return {
+          ok: true,
+          latencyMs,
+          replyText: (retryNote + (reply || "✓ 连通成功 (模型返回了空响应体)")).trim(),
+          modelDetected: model,
+        };
+      }
+
+      lastStatus = res.status;
+      lastErrorBody = await res.text().catch(() => "");
+
+      // 针对 HTTP 429 限速错误进行自动退避重试，直至达到测试上限
+      if (res.status === 429) {
+        if (attempt <= maxRetries) {
+          const backoffMs = attempt * 1500;
+          await new Promise((r) => setTimeout(r, backoffMs));
+          continue;
+        }
+        return {
+          ok: false,
+          latencyMs,
+          errorType: "rate_limit",
+          errorMessage: `HTTP 429: 服务商接口限速 (已自动重试 ${maxRetries} 次达到上限)`,
+          remedyTip: `服务商并发或速率达到上限。系统已完成 ${maxRetries} 次退避重试并达到测试上限。请稍候片刻再试，或切换至备用模型。`,
+        };
+      }
+
+      if (res.status === 401 || res.status === 403) {
+        return {
+          ok: false,
+          latencyMs,
+          errorType: "auth",
+          errorMessage: `HTTP ${res.status} 未授权`,
+          remedyTip: "请检查 API Key 是否正确填入，或核对认证字段（ANTHROPIC_AUTH_TOKEN / Bearer / x-api-key）。",
+        };
+      }
+
+      if (lastErrorBody.includes("messages' field is required") || lastErrorBody.includes("messages field is required")) {
+        return {
+          ok: false,
+          latencyMs,
+          errorType: "messages_error",
+          errorMessage: "请求体缺少有效 messages 字段",
+          remedyTip: "已在客户端规整，请重试。",
+        };
+      }
+
+      if (res.status === 404) {
+        return {
+          ok: false,
+          latencyMs,
+          errorType: "unknown",
+          errorMessage: "HTTP 404 接口未找到",
+          remedyTip: `请核对请求地址（当前为 ${targetUrl}）。若是 Claude/商汤原生协议请选 Anthropic 格式。`,
+        };
+      }
+
       return {
         ok: false,
         latencyMs,
-        errorType: "auth",
-        errorMessage: `HTTP ${res.status} 未授权`,
-        remedyTip: "请检查 API Key 是否正确填入，或核对认证字段（ANTHROPIC_AUTH_TOKEN / Bearer / x-api-key）。",
+        errorType: "model_unloaded",
+        errorMessage: `HTTP ${res.status}: ${lastErrorBody.slice(0, 100) || "服务端错误"}`,
+        remedyTip: endpoint.providerId === "ollama"
+          ? "请确认 LM Studio / Ollama 已加载对应模型，且处于运行状态。"
+          : "服务端报错，请核对模型名是否支持或配置项是否有误。",
       };
-    }
+    } catch (err) {
+      clearTimeout(timer);
+      const latencyMs = Math.round(performance.now() - start);
+      lastLatencyMs = latencyMs;
+      const isCors = err instanceof TypeError && err.message.includes("Failed to fetch");
 
-    if (errorBody.includes("messages' field is required") || errorBody.includes("messages field is required")) {
-      return {
-        ok: false,
-        latencyMs,
-        errorType: "messages_error",
-        errorMessage: "请求体缺少有效 messages 字段",
-        remedyTip: "已在客户端规整，请重试。",
-      };
-    }
+      if (isCors) {
+        return {
+          ok: false,
+          latencyMs,
+          errorType: "cors",
+          errorMessage: "CORS 跨域错误或连接被拒绝 (Failed to fetch)",
+          remedyTip: endpoint.baseUrl.includes("1234")
+            ? "LM Studio 用户：请确认 Local Server 已启动（端口 1234），且已勾选「Enable CORS」！"
+            : "无法连接到该服务。请核对地址与端口是否正确。",
+        };
+      }
 
-    if (res.status === 404) {
+      const isTimeout = err instanceof DOMException && err.name === "AbortError";
+      if (isTimeout) {
+        if (attempt <= maxRetries) {
+          continue;
+        }
+        return {
+          ok: false,
+          latencyMs,
+          errorType: "timeout",
+          errorMessage: `请求超时 (${timeoutMs}ms)`,
+          remedyTip: "服务端响应缓慢，请核对本地显卡/CPU负载或网络状态。",
+        };
+      }
+
       return {
         ok: false,
         latencyMs,
         errorType: "unknown",
-        errorMessage: "HTTP 404 接口未找到",
-        remedyTip: `请核对请求地址（当前为 ${targetUrl}）。若是 Claude/商汤原生协议请选 Anthropic 格式。`,
+        errorMessage: err instanceof Error ? err.message : "未知错误",
+        remedyTip: "网络连接失败，请确认端点服务是否已正常启动。",
       };
     }
-
-    return {
-      ok: false,
-      latencyMs,
-      errorType: "model_unloaded",
-      errorMessage: `HTTP ${res.status}: ${errorBody.slice(0, 100) || "服务端错误"}`,
-      remedyTip: endpoint.providerId === "ollama"
-        ? "请确认 LM Studio / Ollama 已加载对应模型，且处于运行状态。"
-        : "服务端报错，请核对模型名是否支持或配置项是否有误。",
-    };
-  } catch (err) {
-    clearTimeout(timer);
-    const latencyMs = Math.round(performance.now() - start);
-    const isCors = err instanceof TypeError && err.message.includes("Failed to fetch");
-
-    if (isCors) {
-      return {
-        ok: false,
-        latencyMs,
-        errorType: "cors",
-        errorMessage: "CORS 跨域错误或连接被拒绝 (Failed to fetch)",
-        remedyTip: endpoint.baseUrl.includes("1234")
-          ? "LM Studio 用户：请确认 Local Server 已启动（端口 1234），且已勾选「Enable CORS」！"
-          : "无法连接到该服务。请核对地址与端口是否正确。",
-      };
-    }
-
-    const isTimeout = err instanceof DOMException && err.name === "AbortError";
-    if (isTimeout) {
-      return {
-        ok: false,
-        latencyMs,
-        errorType: "timeout",
-        errorMessage: `请求超时 (${timeoutMs}ms)`,
-        remedyTip: "服务端响应缓慢，请核对本地显卡/CPU负载或网络状态。",
-      };
-    }
-
-    return {
-      ok: false,
-      latencyMs,
-      errorType: "refused",
-      errorMessage: `连接异常: ${err instanceof Error ? err.message : String(err)}`,
-      remedyTip: "请确认该端点服务已在本机或网络开启运行。",
-    };
   }
+
+  return {
+    ok: false,
+    latencyMs: lastLatencyMs,
+    errorMessage: `HTTP ${lastStatus}: 达到测试重试上限`,
+    remedyTip: "多次重试后仍然无法连通，请检查端点配置或网络连接。",
+  };
 }
 
 

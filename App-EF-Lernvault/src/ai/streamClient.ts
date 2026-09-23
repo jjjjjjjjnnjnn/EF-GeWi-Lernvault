@@ -234,32 +234,53 @@ export async function chatStream(
     };
   }
 
-  let res: Response;
-  try {
-    res = await fetch(fetchUrl, {
-      method: "POST",
-      headers,
-      signal: opts?.signal,
-      body: JSON.stringify(requestBody),
-    });
-  } catch (err) {
-    opts?.onStatusChange?.("error");
-    const isCors = err instanceof TypeError && err.message.includes("Failed to fetch");
-    if (isCors) {
-      throw new Error(`CORS 跨域拦截或网络不可达 (${endpointName})。本地模型请确认已开启 CORS。`);
+  const maxStreamRetries = 3;
+  let streamAttempt = 0;
+  let res: Response | null = null;
+
+  while (streamAttempt <= maxStreamRetries) {
+    streamAttempt++;
+    try {
+      res = await fetch(fetchUrl, {
+        method: "POST",
+        headers,
+        signal: opts?.signal,
+        body: JSON.stringify(requestBody),
+      });
+    } catch (err) {
+      opts?.onStatusChange?.("error");
+      const isCors = err instanceof TypeError && err.message.includes("Failed to fetch");
+      if (isCors) {
+        throw new Error(`CORS 跨域拦截或网络不可达 (${endpointName})。本地模型请确认已开启 CORS。`);
+      }
+      throw err;
     }
-    throw err;
+
+    if (res.status === 429) {
+      if (streamAttempt <= maxStreamRetries) {
+        const waitMs = streamAttempt * 1500;
+        opts?.onLocalProgress?.(0, `触发服务商限速 (HTTP 429)，正在第 ${streamAttempt}/${maxStreamRetries} 次自动退避重试...`);
+        await new Promise((r) => setTimeout(r, waitMs));
+        continue;
+      }
+      opts?.onStatusChange?.("error");
+      throw new Error(`HTTP 429: 请求过于频繁 / 服务商限速 (已自动重试 ${maxStreamRetries} 次达到上限) (${endpointName})`);
+    }
+
+    if (!res.ok) {
+      opts?.onStatusChange?.("error");
+      if (res.status === 401 || res.status === 403) {
+        throw new NeedsKeyError(`HTTP ${res.status}: API Key 无效或未授权 (${endpointName})`);
+      }
+      throw new Error(`HTTP ${res.status} (${endpointName})`);
+    }
+
+    break;
   }
 
-  if (!res.ok) {
+  if (!res || !res.ok) {
     opts?.onStatusChange?.("error");
-    if (res.status === 401 || res.status === 403) {
-      throw new NeedsKeyError(`HTTP ${res.status}: API Key 无效或未授权 (${endpointName})`);
-    }
-    if (res.status === 429) {
-      throw new Error(`HTTP 429: 请求过于频繁 (Rate Limit) (${endpointName})`);
-    }
-    throw new Error(`HTTP ${res.status} (${endpointName})`);
+    throw new Error(`无法从端点获取有效响应 (${endpointName})`);
   }
 
   opts?.onStatusChange?.("streaming");

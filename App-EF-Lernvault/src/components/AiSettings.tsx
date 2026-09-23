@@ -364,14 +364,12 @@ export default function AiSettings({
         isFullUrl: formIsFullUrl,
       });
       setEndpoints(loadEndpoints());
-      if (activeEpId === editingEp.id) {
-        handleSelectActive(editingEp.id);
-      }
+      handleSelectActive(editingEp.id);
     }
 
     setIsAdding(false);
     setEditingEp(null);
-    setSaveFeedback(lang === "de" ? "✓ Anbieterkonfiguration gespeichert" : "✓ 供应商配置已成功保存");
+    setSaveFeedback(lang === "de" ? "✓ Anbieterkonfiguration gespeichert & aktiviert" : "✓ 供应商配置已成功保存（并设为当前主路由）");
     setTimeout(() => setSaveFeedback(null), 2500);
     onChanged?.();
   };
@@ -389,7 +387,7 @@ export default function AiSettings({
   };
 
   // 极简预设卡片激活
-  const handleQuickActivate = (type: "vault" | "lmstudio" | "deepseek" | "siliconflow") => {
+  const handleQuickActivate = (type: "vault" | "lmstudio" | "deepseek" | "siliconflow" | "sensenova") => {
     if (type === "vault") {
       const next: AiConfig = { ...cfg, engine: "off" };
       setCfg(next);
@@ -401,6 +399,7 @@ export default function AiSettings({
     let targetId = "ep-lmstudio";
     if (type === "deepseek") targetId = "ep-deepseek";
     if (type === "siliconflow") targetId = "ep-siliconflow";
+    if (type === "sensenova") targetId = "ep-sensenova";
 
     handleSelectActive(targetId);
   };

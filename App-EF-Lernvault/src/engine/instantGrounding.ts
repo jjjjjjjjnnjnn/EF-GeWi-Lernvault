@@ -76,6 +76,15 @@ export function lookupQaCache(query: string): string | null {
   const norm = normalizeQuery(query);
   const hit = qaCache.get(norm);
   if (!hit) return null;
+  // 若命中内容包含错误/离线/降级提示，立即淘汰
+  if (
+    hit.reply.includes("离线") ||
+    hit.reply.includes("未连通") ||
+    hit.reply.includes("未收录相关笔记")
+  ) {
+    qaCache.delete(norm);
+    return null;
+  }
   // Cache gültig für 7 Tage
   if (Date.now() - hit.ts > 7 * 86400000) {
     qaCache.delete(norm);
@@ -89,6 +98,17 @@ export function lookupQaCache(query: string): string | null {
  */
 export function saveQaCache(query: string, reply: string): void {
   if (!query.trim() || !reply.trim()) return;
+  // 杜绝缓存离线、未收录或降级错误信息
+  if (
+    reply.includes("离线") ||
+    reply.includes("未连通") ||
+    reply.includes("未收录相关笔记") ||
+    reply.includes("连接失败") ||
+    reply.includes("HTTP 4") ||
+    reply.includes("HTTP 5")
+  ) {
+    return;
+  }
   const norm = normalizeQuery(query);
   if (qaCache.size >= MAX_CACHE_SIZE) {
     // Ältesten Eintrag entfernen
