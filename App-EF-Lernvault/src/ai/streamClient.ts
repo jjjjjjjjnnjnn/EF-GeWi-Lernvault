@@ -3,7 +3,7 @@
 // sowie asynchrone Generatoren für lokales WebLLM.
 // Inklusive AbortSignal für Abbrüche, Token-Usage-Erfassung und robuster Fehlerbehandlung.
 
-import { loadAiConfig, effectiveBaseUrl, getProvider } from "./providers";
+import { loadAiConfig, effectiveBaseUrl, getProvider, resolveAiRequestUrl } from "./providers";
 import {
   type ChatMsg,
   EngineOffError,
@@ -180,10 +180,11 @@ export async function chatStream(
   if (apiKey) headers.Authorization = `Bearer ${apiKey}`;
 
   const sanitizedMessages = sanitizeChatMessages(messages);
+  const fetchUrl = resolveAiRequestUrl(`${base.replace(/\/$/, "")}/chat/completions`);
 
   let res: Response;
   try {
-    res = await fetch(`${base.replace(/\/$/, "")}/chat/completions`, {
+    res = await fetch(fetchUrl, {
       method: "POST",
       headers,
       signal: opts?.signal,

@@ -2,7 +2,7 @@
 // engine "api": OpenAI-kompatibler fetch (Key aus localStorage).
 // engine "local": WebLLM im Browser (lazy import, kein Bundle-Ballast).
 // engine "off": wirft EngineOffError — Aufrufer zeigen Vorlagen-Modus.
-import { loadAiConfig, effectiveBaseUrl, getProvider } from "./providers";
+import { loadAiConfig, effectiveBaseUrl, getProvider, resolveAiRequestUrl } from "./providers";
 
 export interface ChatMsg {
   role: "system" | "user" | "assistant";
@@ -127,7 +127,8 @@ export async function chat(
   const headers: Record<string, string> = { "Content-Type": "application/json" };
   if (cfg.apiKey.trim()) headers.Authorization = `Bearer ${cfg.apiKey.trim()}`;
   const sanitized = sanitizeChatMessages(messages);
-  const res = await fetch(`${base.replace(/\/$/, "")}/chat/completions`, {
+  const fetchUrl = resolveAiRequestUrl(`${base.replace(/\/$/, "")}/chat/completions`);
+  const res = await fetch(fetchUrl, {
     method: "POST",
     headers,
     body: JSON.stringify({

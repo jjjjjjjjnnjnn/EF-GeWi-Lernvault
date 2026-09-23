@@ -2,6 +2,8 @@
 // 支持多端点独立配置、延迟探测、连通状态监控与活跃路由切换
 // 零外部代码依赖，严格遵守项目规范与 MIT/Apache 署名契约
 
+import { resolveAiRequestUrl } from "./providers";
+
 export interface EndpointTestResult {
   ok: boolean;
   latencyMs: number;
@@ -272,7 +274,7 @@ export function deleteEndpoint(id: string): boolean {
  */
 export async function pingEndpoint(
   endpoint: AiEndpoint,
-  timeoutMs = 4000
+  timeoutMs = 5000
 ): Promise<{ status: "online" | "offline"; latencyMs: number; error?: string }> {
   const start = performance.now();
   const base = endpoint.baseUrl.trim().replace(/\/$/, "");
@@ -284,17 +286,32 @@ export async function pingEndpoint(
     headers.Authorization = `Bearer ${endpoint.apiKey.trim()}`;
   }
 
+  // 针对 SenseNova 等无 /models 接口或仅支持 POST 的端点，自动探测 /chat/completions
+  const isPostOnly = endpoint.providerId === "sensenova" || base.includes("sensenova");
+  const targetUrl = isPostOnly ? `${base}/chat/completions` : `${base}/models`;
+  const fetchUrl = resolveAiRequestUrl(targetUrl);
+
   try {
-    const res = await fetch(`${base}/models`, {
-      method: "GET",
-      headers,
+    const res = await fetch(fetchUrl, {
+      method: isPostOnly ? "POST" : "GET",
+      headers: {
+        ...headers,
+        ...(isPostOnly ? { "Content-Type": "application/json" } : {}),
+      },
       signal: controller.signal,
+      body: isPostOnly
+        ? JSON.stringify({
+            model: endpoint.model.trim() || "default",
+            messages: [{ role: "user", content: "ping" }],
+            max_tokens: 1,
+          })
+        : undefined,
     });
     clearTimeout(timer);
     const latency = Math.round(performance.now() - start);
 
-    if (res.ok || res.status === 401 || res.status === 403) {
-      // 401/403 说明服务器在线且响应，仅凭据需校验
+    if (res.ok || res.status === 401 || res.status === 403 || res.status === 400) {
+      // 401/403/400 说明服务器在线且响应，仅凭据需校验或模型正常通信
       return { status: "online", latencyMs: latency };
     }
     return { status: "offline", latencyMs: latency, error: `HTTP ${res.status}` };
@@ -315,7 +332,7 @@ export async function pingEndpoint(
 export async function testEndpointChat(
   endpoint: AiEndpoint,
   prompt = "Hallo! Bitte bestätige kurz deine Bereitschaft.",
-  timeoutMs = 6000
+  timeoutMs = 8000
 ): Promise<EndpointTestResult> {
   const start = performance.now();
   const base = endpoint.baseUrl.trim().replace(/\/$/, "");
@@ -329,9 +346,10 @@ export async function testEndpointChat(
 
   // 严格确保 messages 字段非空且为规范数组，杜绝 'messages' field is required
   const messages = [{ role: "user", content: prompt }];
+  const fetchUrl = resolveAiRequestUrl(`${base}/chat/completions`);
 
   try {
-    const res = await fetch(`${base}/chat/completions`, {
+    const res = await fetch(fetchUrl, {
       method: "POST",
       headers,
       signal: controller.signal,

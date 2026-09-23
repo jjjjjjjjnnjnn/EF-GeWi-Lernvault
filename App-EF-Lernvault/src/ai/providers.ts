@@ -165,3 +165,31 @@ export function engineLabel(e: AiEngine, lang: Lang): string {
   if (e === "local") return lang === "de" ? "Lokal (WebLLM)" : "本地模型";
   return lang === "de" ? "Aus (Vorlagen)" : "关闭(仅模板)";
 }
+
+/**
+ * 解析并适配 AI 请求的目标地址。
+ * 当应用在浏览器环境运行（如 Vite 开发服务器 http://localhost:1420），
+ * 且目标地址为远程外部 HTTPS 域名（如 https://token.sensenova.cn, https://api.deepseek.com 等），
+ * 浏览器会强制执行 CORS preflight (OPTIONS)，若外部服务商不支持 preflight 将直接被浏览器拦截报错。
+ * 此时自动转由 Vite 开发服务器的同源代理 /__ai_proxy 转发（Node.js 端无 CORS 限制）。
+ * 本地服务（LM Studio 1234, Ollama 11434）保留直连。
+ */
+export function resolveAiRequestUrl(rawUrl: string): string {
+  if (typeof location === "undefined") return rawUrl;
+  const origin = location.origin;
+  if (!origin || !origin.startsWith("http")) return rawUrl;
+
+  // 本地服务（localhost、127.0.0.1、0.0.0.0 如 LM Studio、Ollama）保持直连
+  const isLocalHost = /^https?:\/\/(localhost|127\.0\.0\.1|0\.0\.0\.0)(:\d+)?/i.test(rawUrl);
+  if (isLocalHost) {
+    return rawUrl;
+  }
+
+  // 网页端访问远程 https 接口走同源代理
+  if (origin.startsWith("http://localhost:") || origin.startsWith("http://127.0.0.1:")) {
+    if (/^https:\/\//i.test(rawUrl)) {
+      return `${origin}/__ai_proxy?target=${encodeURIComponent(rawUrl)}`;
+    }
+  }
+  return rawUrl;
+}

@@ -34,4 +34,21 @@ describe("provider-presets", () => {
       "https://token.sensenova.cn/v1"
     );
   });
+
+  it("resolveAiRequestUrl: leitet remote HTTPS in localhost Web-Dev an same-origin Proxy weiter, haelt local direct", async () => {
+    const { resolveAiRequestUrl } = await import("./providers");
+    // 本地服务直接直连
+    expect(resolveAiRequestUrl("http://localhost:1234/v1/chat/completions")).toBe(
+      "http://localhost:1234/v1/chat/completions"
+    );
+    expect(resolveAiRequestUrl("http://127.0.0.1:11434/v1/models")).toBe(
+      "http://127.0.0.1:11434/v1/models"
+    );
+
+    // 远程商用 HTTPS 接口通过 same-origin dev-proxy 转发解决浏览器 CORS 与 preflight 失败
+    const remoteUrl = "https://token.sensenova.cn/v1/chat/completions";
+    const proxied = resolveAiRequestUrl(remoteUrl);
+    expect(proxied).toContain("/__ai_proxy?target=");
+    expect(proxied).toContain(encodeURIComponent(remoteUrl));
+  });
 });
