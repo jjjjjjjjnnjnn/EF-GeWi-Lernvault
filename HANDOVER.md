@@ -5,9 +5,11 @@
 ## 新agent阅读顺序（5分钟接手）
 1. 本文件 → 2. `AGENTS.md`（规范） → 3. `00_META/INDEX.md`（导航） → 4. 目标学科 `Lehrplan.md` → 5. `00_META/Journal/` 最新一篇（当前上下文）。
 
-## 当前状态（2026-09-23晚·无痛自然习得组件库与教育内核落地）
+## 当前状态（2026-09-23晚·启发式引导/考纲直出双态分流、错题补丁与数学导数几何沙盘）
+- ✅ 启发引导/考纲直出双态分流、错题补丁弹窗与数学割线逼近切线沙盘（`[App] 6d378af`+`[App] 55792bc`+本交接）：落地苏格拉底产婆术启发引导（Socratic）与官方 Erwartungshorizont 考纲直出（Direct Exam）双态无缝切换；消息气泡一键「📌 沉淀为错题」并自动生成合规 Markdown 表格行文本补丁（严格遵循 App 只读 Vault 规范）；原生图片/漫画粘贴与本地图表选择；首创理科几何直观工具 `TangentSlider`（割线 $\Delta x \to 0$ 连续逼近切线过程动态力学与差商收敛模拟）；43 单测套件 256 测试 100% 全绿 / build 6.45s 零错误（Journal 2026-09-23-tutor-socratic-fehlerlog-tangent）。
 - ✅ EXT-01~04四科Texte-Analyse并行落地（`[Deutsch]/[Philosophie]/[SoWi]/[Englisch]` 4 commits+本交接）：Sachtextanalyse论证+Dilemmata案例集+Karikatur三例+Mediation双范文，全v3九步完整版，全原创；vault-check PASS（notes=42/csv=240/links=141）（Journal 2026-09-23-ext-01-04-texte-analyse）。
 - ✅ 无痛自然习得教育组件库与 AI 助教全闭环集成（`[App] c6402c1`+本交接）：贯彻“无痛、自然学会”教育哲学，解决长句下笔难与价值判断主观情绪化问题；落地 `SatzbauLego` 句式积木（出处/动词/手法/效果 4 大卡槽即插即拔拼装考纲句）、`BalanceBoard` 辩证天平（SVG 物理倾斜力矩与 AFB III 考纲级价值裁决合成器）、`TextHighlighter` 荧光文本标注解构画板（4色划词实时聚类论证树）；顶栏无缝嵌入 AI 助教工作台，一键将拼装成果与裁决文本推入聊天流；新增 8 项专用单测，41 单测套件 242 测试 100% 全绿 / build 6.23s 零错误 / 1420 在线（Journal 2026-09-23-pedagogy-ui-library）。
+
 - ✅ CC-Switch 风格 LLM 路由、端点自定义与原生协议适配（`[App] 28e4d7b`+`[App] 8fcc056`+`[App] 7afa925`+本交接）：彻底解决商汤（SenseNova）等代理报错（原生 Anthropic Messages 协议 `/v1/messages` + `x-api-key` + `anthropic-version: 2023-06-01` + 动态 `system` 字段与流式 `content_block_delta` 解析）；实测用户 Key（`sk-t6my3...`）200 OK 连通；落地 HTTP 429 限速自动退避重试（最多 3 次到达上限）；端点编辑保存后自动无缝激活为主路由；落地 CC-Switch 风格 Token 自动补齐机制（客户端启发式自动填补缺失的 Token 审计数据）；弹窗内即时闭环连通性测试与自愈排查反馈；对话历史去噪隔离过滤离线报错防止大模型复读错误话术；40 单测套件 234 测试 100% 全绿 / build 4.57s 零错误 / vault-check(38/203/135) PASS（Journal 2026-09-23-ccswitch-llm-routing）。
 - ✅ 助教教学区域轻量化、自主模型填写、显式保存设置与CC-Switch供应商交互流对齐（`[App] 5fdca6f`）：剥离 Tutor 教学区臃肿的内嵌设置，极简顶栏保留端点药丸+新增“⚙️ 配置端点与模型”直达全局设置；简单模式新增自主模型直接填写框与常见模型快捷标签，右侧提供显式“💾 保存设置”按钮与即时保存提示；对齐 CC-Switch 供应商交互流（全面解禁预设端点编辑权限、API Key 密码掩码显隐眼标、Base-URL 兼容提示、Model ID 自由输入与角色映射、蓝底显式“保存”按钮与 `✓ 配置已保存` 反馈）；新增两项端到端模拟交互单测；40 单测套件 233 测试 100% 全绿（Journal 2026-09-23-ccswitch-ui-model-save）。
 - ✅ LM Studio 报错根除、全内置应用内诊断与模拟交互测试规范落地（`[App] b7beb70`）：`sanitizeChatMessages` 规整清洗，彻底杜绝 LM Studio 400 `'messages' field is required`；内嵌“⚡ 测试连接 (Ping)”与“💬 实时对话探针 (Chat Probe)”控制台与自愈排查指引；落地端到端全流程模拟交互测试套件（`simulatedInteraction.test.tsx`）；40 单测套件 230 测试全绿（Journal 2026-09-23-lmstudio-inapp-diagnostic-and-sim-test）。

@@ -148,7 +148,9 @@
 - [2026-09-23-ccswitch-llm-routing](Journal/2026-09-23-ccswitch-llm-routing.md) — CC-Switch 风格 LLM 路由、端点自定义与原生协议适配（234单测全绿，Anthropic Messages原生协议+端口字段+完整URL开关+认证字段选择）
 - [2026-09-23-ext-01-04-texte-analyse](Journal/2026-09-23-ext-01-04-texte-analyse.md) — EXT-01~04四科并行：Sachtextanalyse+Dilemmata+Karikatur三例+Mediation双范文（4 commits，全v3九步）
 - [2026-09-23-pedagogy-ui-library](Journal/2026-09-23-pedagogy-ui-library.md) — 无痛自然习得教育组件库与AI助教全闭环集成（242单测全绿，句式积木+辩证天平+文本荧光解构）
+- [2026-09-23-tutor-socratic-fehlerlog-tangent](Journal/2026-09-23-tutor-socratic-fehlerlog-tangent.md) — 启发引导/考纲直出双态分流、错题补丁弹窗与数学割线逼近切线沙盘（253单测全绿，Sokratisch产婆术+FehlerlogPatch+多模态图片输入+TangentSlider）
 - 约定：文件名 `YYYY-MM-DD-<thema>.md`，头部frontmatter（`fach`可空，`tags: [EF, Meta]`）。
+
 
 ## Dataview（Obsidian内自动索引，GitHub上仅作备份显示）
 
