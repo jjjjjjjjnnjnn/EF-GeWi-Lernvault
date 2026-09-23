@@ -18,7 +18,9 @@ import {
   updateEndpoint,
   deleteEndpoint,
   pingEndpoint,
+  testEndpointChat,
   type AiEndpoint,
+  type EndpointTestResult,
 } from "../ai/endpoints";
 import {
   getTokenSummary,
@@ -82,11 +84,72 @@ export default function AiSettings({
   const [pullingEpId, setPullingEpId] = useState<string | null>(null);
   const [pulledModelsMap, setPulledModelsMap] = useState<Record<string, string[]>>({});
 
+  // 实时测试与诊断状态
+  const [testingEpId, setTestingEpId] = useState<string | null>(null);
+  const [testResultMap, setTestResultMap] = useState<Record<string, EndpointTestResult>>({});
+
   // 刷新 Token 统计
   const refreshTokens = () => {
     setTokenSummary(getTokenSummary());
     setRecentRecords(getTokenLedger().slice(0, 8));
     setBudgetStatus(checkTokenBudget());
+  };
+
+  // 单端点连通性测试 (Ping)
+  const handleTestPing = async (ep: AiEndpoint) => {
+    if (testingEpId) return;
+    setTestingEpId(ep.id);
+    try {
+      const res = await pingEndpoint(ep, 4000);
+      updateEndpoint(ep.id, {
+        status: res.status,
+        latencyMs: res.latencyMs,
+        lastChecked: Date.now(),
+      });
+      setEndpoints(loadEndpoints());
+      setTestResultMap((prev) => ({
+        ...prev,
+        [ep.id]: {
+          ok: res.status === "online",
+          latencyMs: res.latencyMs,
+          errorMessage: res.error,
+          remedyTip: res.status === "offline"
+            ? (ep.baseUrl.includes("1234")
+                ? (lang === "de"
+                    ? "LM Studio: Bitte Server starten (Port 1234) & 'Enable CORS' aktivieren."
+                    : "LM Studio 用户：请确认 Local Server 已启动（端口 1234），且已勾选「Enable CORS」！")
+                : (lang === "de" ? "Dienst offline oder nicht erreichbar." : "服务未启动或网络端口不可达。"))
+            : undefined,
+        },
+      }));
+    } finally {
+      setTestingEpId(null);
+    }
+  };
+
+  // 深度应用内对话探针测试 (Chat Probe)
+  const handleTestChatProbe = async (ep: AiEndpoint) => {
+    if (testingEpId) return;
+    setTestingEpId(ep.id);
+    try {
+      const prompt = lang === "de"
+        ? "Hallo! Bestätige bitte kurz deine Bereitschaft für EF-Lernvault."
+        : "你好！请简短确认你可以正常协助高中 EF 备考。";
+      const res = await testEndpointChat(ep, prompt, 6000);
+      updateEndpoint(ep.id, {
+        status: res.ok ? "online" : "offline",
+        latencyMs: res.latencyMs,
+        lastChecked: Date.now(),
+        lastTestResult: res,
+      });
+      setEndpoints(loadEndpoints());
+      setTestResultMap((prev) => ({
+        ...prev,
+        [ep.id]: res,
+      }));
+    } finally {
+      setTestingEpId(null);
+    }
   };
 
   useEffect(() => {
@@ -396,40 +459,155 @@ export default function AiSettings({
               </div>
             </div>
 
-            {/* 当前活跃端点的 Key 快捷补充框 */}
-            {cfg.engine === "api" && activeEndpoint.providerId !== "ollama" && (
-              <div className="mt-3 rounded-sm border border-[#E5E1D8] bg-white p-3 flex flex-wrap items-center justify-between gap-2">
-                <div className="flex-1 min-w-[240px]">
-                  <label className="block text-xs font-sans text-[#6B675C] mb-1">
-                    {activeEndpoint.name} — API Key:
-                  </label>
-                  <input
-                    type="password"
-                    value={activeEndpoint.apiKey}
-                    onChange={(e) => {
-                      updateEndpoint(activeEndpoint.id, { apiKey: e.target.value });
-                      setEndpoints(loadEndpoints());
-                      updateLegacyCfg({ apiKey: e.target.value });
-                    }}
-                    placeholder="sk-..."
-                    className="w-full rounded-xs border border-[#E5E1D8] px-2.5 py-1 text-xs font-mono focus:border-[#4338CA] focus:outline-none"
-                  />
+            {/* 当前活跃端点的状态诊断与快速测试控制台 (不再对 LM Studio / Ollama 隐藏) */}
+            {cfg.engine === "api" && (
+              <div className="mt-4 rounded-sm border border-[#E5E1D8] bg-[#FAF9F6] p-3.5 space-y-3">
+                <div className="flex flex-wrap items-center justify-between gap-2 border-b border-[#E5E1D8]/60 pb-2">
+                  <div className="flex items-center gap-2">
+                    <span className="font-sans text-xs font-semibold text-[#1C1B17]">
+                      {lang === "de" ? "Aktiver Endpunkt:" : "当前主路由端点:"} {activeEndpoint.name}
+                    </span>
+                    <span className="text-[10px] font-mono px-1.5 py-0.5 rounded-xs bg-white border border-[#E5E1D8] text-[#6B675C]">
+                      {activeEndpoint.model}
+                    </span>
+                  </div>
+                  <div className="flex items-center gap-1.5">
+                    <span
+                      className={`inline-flex items-center gap-1 px-1.5 py-0.5 rounded-xs text-[10px] font-mono ${
+                        activeEndpoint.status === "online"
+                          ? "bg-[#EBF5EE] text-[#2E7D32]"
+                          : activeEndpoint.status === "offline"
+                          ? "bg-[#FDEDEC] text-[#C62828]"
+                          : "bg-white text-[#6B675C] border border-[#E5E1D8]"
+                      }`}
+                    >
+                      <span
+                        className={`w-1.5 h-1.5 rounded-full ${
+                          activeEndpoint.status === "online"
+                            ? "bg-[#2E7D32]"
+                            : activeEndpoint.status === "offline"
+                            ? "bg-[#C62828]"
+                            : "bg-[#6B675C]"
+                        }`}
+                      />
+                      {activeEndpoint.latencyMs
+                        ? `${activeEndpoint.latencyMs}ms`
+                        : activeEndpoint.status === "online"
+                        ? "Online"
+                        : activeEndpoint.status === "offline"
+                        ? "Offline"
+                        : "Untested"}
+                    </span>
+                  </div>
                 </div>
-                <button
-                  type="button"
-                  onClick={() => {
-                    void pingEndpoint(activeEndpoint, 4000).then((res) => {
-                      updateEndpoint(activeEndpoint.id, {
-                        status: res.status,
-                        latencyMs: res.latencyMs,
-                      });
-                      setEndpoints(loadEndpoints());
-                    });
-                  }}
-                  className="rounded-xs border border-[#E5E1D8] bg-white px-3 py-1 text-xs font-sans hover:border-[#4338CA] hover:text-[#4338CA] cursor-pointer"
-                >
-                  {lang === "de" ? "Key & Ping testen" : "测试连接"}
-                </button>
+
+                {/* API Key 输入框 (对于非本地免 Key 端点) */}
+                {activeEndpoint.providerId !== "ollama" && (
+                  <div>
+                    <label className="block text-xs font-sans text-[#6B675C] mb-1">
+                      API Key:
+                    </label>
+                    <input
+                      type="password"
+                      value={activeEndpoint.apiKey}
+                      onChange={(e) => {
+                        updateEndpoint(activeEndpoint.id, { apiKey: e.target.value });
+                        setEndpoints(loadEndpoints());
+                        updateLegacyCfg({ apiKey: e.target.value });
+                      }}
+                      placeholder="sk-..."
+                      className="w-full rounded-xs border border-[#E5E1D8] bg-white px-2.5 py-1 text-xs font-mono focus:border-[#4338CA] focus:outline-none"
+                    />
+                  </div>
+                )}
+
+                {/* 连通与对话测试动作按钮 */}
+                <div className="flex flex-wrap items-center gap-2 pt-1">
+                  <button
+                    type="button"
+                    onClick={() => handleTestPing(activeEndpoint)}
+                    disabled={testingEpId === activeEndpoint.id}
+                    className="inline-flex items-center rounded-xs border border-[#E5E1D8] bg-white px-3 py-1 text-xs font-sans text-[#1C1B17] hover:border-[#4338CA] hover:text-[#4338CA] disabled:opacity-50 cursor-pointer transition-colors"
+                  >
+                    {testingEpId === activeEndpoint.id ? (
+                      <>
+                        <svg className="animate-spin -ml-0.5 mr-1.5 h-3 w-3 text-[#4338CA]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                          <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
+                          <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                        </svg>
+                        {lang === "de" ? "Teste Ping..." : "测试连接中..."}
+                      </>
+                    ) : (
+                      lang === "de" ? "⚡ Ping testen" : "⚡ 测试连接"
+                    )}
+                  </button>
+
+                  <button
+                    type="button"
+                    onClick={() => handleTestChatProbe(activeEndpoint)}
+                    disabled={testingEpId === activeEndpoint.id}
+                    className="inline-flex items-center rounded-xs border border-[#4338CA] bg-white px-3 py-1 text-xs font-sans text-[#4338CA] hover:bg-[#4338CA] hover:text-white disabled:opacity-50 cursor-pointer transition-colors"
+                  >
+                    {testingEpId === activeEndpoint.id ? (
+                      <>
+                        <svg className="animate-spin -ml-0.5 mr-1.5 h-3 w-3 text-[#4338CA]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                          <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
+                          <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                        </svg>
+                        {lang === "de" ? "Sende Testnachricht..." : "发送探针中..."}
+                      </>
+                    ) : (
+                      lang === "de" ? "💬 In-App Test-Dialog" : "💬 实时对话探针"
+                    )}
+                  </button>
+
+                  <span className="text-[11px] font-mono text-[#6B675C]">
+                    {lang === "de"
+                      ? "Verbindet direkt im App-Fenster ohne externe Tools."
+                      : "完全在应用内部调用，无需切换到外部软件。"}
+                  </span>
+                </div>
+
+                {/* 实时诊断反馈面板 */}
+                {testResultMap[activeEndpoint.id] && (
+                  <div
+                    className={`rounded-xs border p-2.5 text-xs font-mono leading-relaxed transition-all ${
+                      testResultMap[activeEndpoint.id].ok
+                        ? "border-[#A7F3D0] bg-[#ECFDF5] text-[#065F46]"
+                        : "border-[#FECACA] bg-[#FEF2F2] text-[#991B1B]"
+                    }`}
+                  >
+                    <div className="flex items-center justify-between font-semibold mb-1">
+                      <span>
+                        {testResultMap[activeEndpoint.id].ok
+                          ? `✓ ${lang === "de" ? "Erfolgreich verbunden" : "连通成功"} (${testResultMap[activeEndpoint.id].latencyMs}ms)`
+                          : `✕ ${lang === "de" ? "Verbindung fehlgeschlagen" : "连通失败"} (${testResultMap[activeEndpoint.id].latencyMs}ms)`}
+                      </span>
+                      {testResultMap[activeEndpoint.id].modelDetected && (
+                        <span className="text-[10px] text-[#4338CA] bg-white px-1.5 py-0.5 rounded-xs border border-[#C7D2FE]">
+                          {testResultMap[activeEndpoint.id].modelDetected}
+                        </span>
+                      )}
+                    </div>
+                    {testResultMap[activeEndpoint.id].replyText && (
+                      <p className="mt-1 text-[11px] bg-white/70 p-1.5 rounded-xs text-[#1C1B17]">
+                        <span className="font-semibold">{lang === "de" ? "Modell-Antwort: " : "模型回复: "}</span>
+                        {testResultMap[activeEndpoint.id].replyText}
+                      </p>
+                    )}
+                    {testResultMap[activeEndpoint.id].errorMessage && (
+                      <p className="mt-1 text-[11px] text-[#991B1B]">
+                        {testResultMap[activeEndpoint.id].errorMessage}
+                      </p>
+                    )}
+                    {testResultMap[activeEndpoint.id].remedyTip && (
+                      <p className="mt-1 text-[10px] text-[#B45309] bg-[#FFFBEB] p-1.5 rounded-xs border border-[#FDE68A]">
+                        <span className="font-semibold">{lang === "de" ? "Hinweis: " : "排查建议: "}</span>
+                        {testResultMap[activeEndpoint.id].remedyTip}
+                      </p>
+                    )}
+                  </div>
+                )}
               </div>
             )}
           </div>
@@ -592,6 +770,42 @@ export default function AiSettings({
                           </div>
                         </div>
                       )}
+                      {/* 内嵌诊断反馈卡片 */}
+                      {testResultMap[ep.id] && (
+                        <div
+                          className={`mt-2 rounded-xs border p-2 text-[10px] font-mono leading-relaxed ${
+                            testResultMap[ep.id].ok
+                              ? "border-[#A7F3D0] bg-[#ECFDF5] text-[#065F46]"
+                              : "border-[#FECACA] bg-[#FEF2F2] text-[#991B1B]"
+                          }`}
+                        >
+                          <div className="flex items-center justify-between font-semibold">
+                            <span>
+                              {testResultMap[ep.id].ok ? "✓ 在线" : "✕ 离线"} ({testResultMap[ep.id].latencyMs}ms)
+                            </span>
+                            {testResultMap[ep.id].modelDetected && (
+                              <span className="text-[#4338CA] truncate max-w-[120px]">
+                                {testResultMap[ep.id].modelDetected}
+                              </span>
+                            )}
+                          </div>
+                          {testResultMap[ep.id].replyText && (
+                            <p className="mt-1 bg-white/70 p-1 rounded-xs text-[#1C1B17] line-clamp-2">
+                              {testResultMap[ep.id].replyText}
+                            </p>
+                          )}
+                          {testResultMap[ep.id].errorMessage && (
+                            <p className="mt-0.5 text-[#991B1B]">
+                              {testResultMap[ep.id].errorMessage}
+                            </p>
+                          )}
+                          {testResultMap[ep.id].remedyTip && (
+                            <p className="mt-0.5 text-[#B45309] bg-[#FFFBEB] p-1 rounded-xs border border-[#FDE68A]">
+                              {testResultMap[ep.id].remedyTip}
+                            </p>
+                          )}
+                        </div>
+                      )}
                     </div>
 
                     {/* 底部按钮栏 */}
@@ -599,18 +813,19 @@ export default function AiSettings({
                       <div className="flex items-center gap-1.5">
                         <button
                           type="button"
-                          onClick={() => {
-                            void pingEndpoint(ep).then((res) => {
-                              updateEndpoint(ep.id, {
-                                status: res.status,
-                                latencyMs: res.latencyMs,
-                              });
-                              setEndpoints(loadEndpoints());
-                            });
-                          }}
-                          className="text-[11px] font-mono text-[#6B675C] hover:text-[#1C1B17] px-1 cursor-pointer"
+                          onClick={() => handleTestPing(ep)}
+                          disabled={testingEpId === ep.id}
+                          className="text-[11px] font-mono text-[#6B675C] hover:text-[#4338CA] px-1 disabled:opacity-50 cursor-pointer"
                         >
-                          Ping
+                          {testingEpId === ep.id ? "..." : "⚡ 测试连接"}
+                        </button>
+                        <button
+                          type="button"
+                          onClick={() => handleTestChatProbe(ep)}
+                          disabled={testingEpId === ep.id}
+                          className="text-[11px] font-mono text-[#4338CA] hover:underline px-1 disabled:opacity-50 cursor-pointer"
+                        >
+                          {testingEpId === ep.id ? "..." : "💬 对话探针"}
                         </button>
                         {!ep.isPreset && (
                           <>

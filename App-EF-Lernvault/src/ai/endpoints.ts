@@ -2,6 +2,16 @@
 // 支持多端点独立配置、延迟探测、连通状态监控与活跃路由切换
 // 零外部代码依赖，严格遵守项目规范与 MIT/Apache 署名契约
 
+export interface EndpointTestResult {
+  ok: boolean;
+  latencyMs: number;
+  replyText?: string;
+  modelDetected?: string;
+  errorType?: "cors" | "refused" | "auth" | "model_unloaded" | "timeout" | "messages_error" | "unknown";
+  errorMessage?: string;
+  remedyTip?: string;
+}
+
 export interface AiEndpoint {
   id: string;
   name: string;
@@ -15,6 +25,7 @@ export interface AiEndpoint {
   latencyMs?: number | null;
   lastChecked?: number;
   description?: string;
+  lastTestResult?: EndpointTestResult;
 }
 
 export const PRESET_ENDPOINTS: AiEndpoint[] = [
@@ -294,3 +305,133 @@ export async function pingEndpoint(
     return { status: "offline", latencyMs: latency, error: msg };
   }
 }
+
+/**
+ * 针对指定端点进行深度应用内连通与对话测试 (Chat Probe)
+ * 1. 严格确保请求体包含合法的 messages 数组，防止 LM Studio 等报 400 'messages' field is required
+ * 2. 检查 CORS、端口拒连 (Connection Refused)、401 未授权、模型未加载等典型场景
+ * 3. 返回真实模型回复与智能自愈排查指引 (Remedy Tip)，用户在 App 内部闭环解决
+ */
+export async function testEndpointChat(
+  endpoint: AiEndpoint,
+  prompt = "Hallo! Bitte bestätige kurz deine Bereitschaft.",
+  timeoutMs = 6000
+): Promise<EndpointTestResult> {
+  const start = performance.now();
+  const base = endpoint.baseUrl.trim().replace(/\/$/, "");
+  const controller = new AbortController();
+  const timer = setTimeout(() => controller.abort(), timeoutMs);
+
+  const headers: Record<string, string> = { "Content-Type": "application/json" };
+  if (endpoint.apiKey.trim()) {
+    headers.Authorization = `Bearer ${endpoint.apiKey.trim()}`;
+  }
+
+  // 严格确保 messages 字段非空且为规范数组，杜绝 'messages' field is required
+  const messages = [{ role: "user", content: prompt }];
+
+  try {
+    const res = await fetch(`${base}/chat/completions`, {
+      method: "POST",
+      headers,
+      signal: controller.signal,
+      body: JSON.stringify({
+        model: endpoint.model.trim() || "default",
+        messages,
+        temperature: 0.3,
+        max_tokens: 120,
+      }),
+    });
+    clearTimeout(timer);
+    const latencyMs = Math.round(performance.now() - start);
+
+    if (res.ok) {
+      const data = await res.json().catch(() => null);
+      const reply = data?.choices?.[0]?.message?.content?.trim() || "";
+      const model = data?.model || endpoint.model;
+      return {
+        ok: true,
+        latencyMs,
+        replyText: reply || "✓ 连通成功 (模型返回了空响应体)",
+        modelDetected: model,
+      };
+    }
+
+    const errorBody = await res.text().catch(() => "");
+
+    if (res.status === 401 || res.status === 403) {
+      return {
+        ok: false,
+        latencyMs,
+        errorType: "auth",
+        errorMessage: `HTTP ${res.status} 未授权`,
+        remedyTip: "请检查 API Key 是否正确填入，或密钥是否已欠费/过期。",
+      };
+    }
+
+    if (errorBody.includes("messages' field is required") || errorBody.includes("messages field is required")) {
+      return {
+        ok: false,
+        latencyMs,
+        errorType: "messages_error",
+        errorMessage: "请求体缺少有效 messages 字段",
+        remedyTip: "已在客户端规整，请重试。",
+      };
+    }
+
+    if (res.status === 404) {
+      return {
+        ok: false,
+        latencyMs,
+        errorType: "unknown",
+        errorMessage: "HTTP 404 接口未找到",
+        remedyTip: `请核对 Base-URL（当前为 ${base}）。LM Studio 通常需后缀 /v1。`,
+      };
+    }
+
+    return {
+      ok: false,
+      latencyMs,
+      errorType: "model_unloaded",
+      errorMessage: `HTTP ${res.status}: ${errorBody.slice(0, 100) || "服务端错误"}`,
+      remedyTip: endpoint.providerId === "ollama"
+        ? "请确认 LM Studio / Ollama 已加载对应模型，且处于运行状态。"
+        : "服务端报错，请核对模型名是否支持或配置项是否有误。",
+    };
+  } catch (err) {
+    clearTimeout(timer);
+    const latencyMs = Math.round(performance.now() - start);
+
+    if (err instanceof DOMException && err.name === "AbortError") {
+      return {
+        ok: false,
+        latencyMs,
+        errorType: "timeout",
+        errorMessage: `连接超时 (> ${timeoutMs}ms)`,
+        remedyTip: "服务器未能在规定时间内响应，请确认本地服务未挂起或网络是否通畅。",
+      };
+    }
+
+    const isCors = err instanceof TypeError && (err.message.includes("Failed to fetch") || err.message.includes("NetworkError"));
+    if (isCors) {
+      return {
+        ok: false,
+        latencyMs,
+        errorType: "cors",
+        errorMessage: "网络连接失败 / CORS 跨域拦截",
+        remedyTip: endpoint.baseUrl.includes("1234")
+          ? "LM Studio 用户：请确认 Local Server 已启动（Port 1234），且已勾选「Enable CORS」！"
+          : "无法连接到该端口或域名，请确认服务已启动且未被系统防火墙拦截。",
+      };
+    }
+
+    return {
+      ok: false,
+      latencyMs,
+      errorType: "unknown",
+      errorMessage: err instanceof Error ? err.message : String(err),
+      remedyTip: "请检查网络连接及服务端口状态。",
+    };
+  }
+}
+

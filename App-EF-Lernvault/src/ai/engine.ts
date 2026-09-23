@@ -9,6 +9,40 @@ export interface ChatMsg {
   content: string;
 }
 
+/**
+ * 校验并规范化 ChatMsg 数组，确保 100% 满足 OpenAI 与 LM Studio / Ollama 的严格请求约束：
+ * 1. 数组非空（若为空自动填充默认打招呼消息）
+ * 2. 过滤 content 为空字符串或 undefined/null 的消息
+ * 3. 确保至少包含 1 条 role 为 "user" 的消息（防止服务端因仅有 system 消息报 400）
+ */
+export function sanitizeChatMessages(messages: ChatMsg[]): ChatMsg[] {
+  if (!Array.isArray(messages) || messages.length === 0) {
+    return [{ role: "user", content: "Hallo" }];
+  }
+  const cleaned: ChatMsg[] = [];
+  for (const m of messages) {
+    if (!m) continue;
+    const content = typeof m.content === "string" ? m.content.trim() : "";
+    if (content.length > 0) {
+      cleaned.push({
+        role: m.role || "user",
+        content,
+      });
+    }
+  }
+
+  if (cleaned.length === 0) {
+    return [{ role: "user", content: "Hallo" }];
+  }
+
+  const hasUser = cleaned.some((m) => m.role === "user");
+  if (!hasUser) {
+    cleaned.push({ role: "user", content: "Bitte beginnen." });
+  }
+
+  return cleaned;
+}
+
 export class EngineOffError extends Error {}
 export class NeedsKeyError extends Error {}
 export class LocalLoadError extends Error {}
@@ -92,12 +126,13 @@ export async function chat(
   if (preset.needsKey && !cfg.apiKey.trim()) throw new NeedsKeyError("API-Key fehlt (in den KI-Einstellungen eintragen)");
   const headers: Record<string, string> = { "Content-Type": "application/json" };
   if (cfg.apiKey.trim()) headers.Authorization = `Bearer ${cfg.apiKey.trim()}`;
+  const sanitized = sanitizeChatMessages(messages);
   const res = await fetch(`${base.replace(/\/$/, "")}/chat/completions`, {
     method: "POST",
     headers,
     body: JSON.stringify({
       model: cfg.model.trim() || preset.defaultModel,
-      messages,
+      messages: sanitized,
       temperature: opts?.temperature ?? 0.3,
       max_tokens: opts?.maxTokens ?? 600,
     }),

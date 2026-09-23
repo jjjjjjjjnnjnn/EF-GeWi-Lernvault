@@ -83,4 +83,45 @@ describe("src/ai/endpoints.ts - CC-Switch Style Endpoint Management", () => {
     expect(res.status).toBe("online");
     expect(res.latencyMs).toBeGreaterThanOrEqual(0);
   });
+
+  it("tests in-app chat probe with valid messages payload and parses reply", async () => {
+    const { testEndpointChat } = await import("./endpoints");
+    let capturedBody: any = null;
+
+    global.fetch = vi.fn().mockImplementation(async (_url, init) => {
+      capturedBody = JSON.parse(init.body as string);
+      return {
+        ok: true,
+        status: 200,
+        json: async () => ({
+          model: "llama-3-sauerkrautlm-8b-instruct",
+          choices: [{ message: { content: "Bereit für Klausurfragen." } }],
+        }),
+      } as unknown as Response;
+    });
+
+    const ep = getActiveEndpoint();
+    const probeRes = await testEndpointChat(ep, "Hallo Test");
+
+    expect(probeRes.ok).toBe(true);
+    expect(probeRes.replyText).toBe("Bereit für Klausurfragen.");
+    expect(probeRes.modelDetected).toBe("llama-3-sauerkrautlm-8b-instruct");
+    // 验证请求体 messages 字段绝对非空
+    expect(capturedBody).toBeDefined();
+    expect(Array.isArray(capturedBody.messages)).toBe(true);
+    expect(capturedBody.messages.length).toBeGreaterThan(0);
+    expect(capturedBody.messages[0].role).toBe("user");
+  });
+
+  it("provides helpful remedy tips when LM Studio port or CORS fails", async () => {
+    const { testEndpointChat } = await import("./endpoints");
+    global.fetch = vi.fn().mockRejectedValue(new TypeError("Failed to fetch"));
+
+    const ep = getActiveEndpoint(); // baseUrl: http://localhost:1234/v1
+    const probeRes = await testEndpointChat(ep);
+
+    expect(probeRes.ok).toBe(false);
+    expect(probeRes.errorType).toBe("cors");
+    expect(probeRes.remedyTip).toContain("Enable CORS");
+  });
 });

@@ -1,5 +1,6 @@
 import { describe, it, expect, vi, beforeEach } from "vitest";
 import { parseSseStream, chatStream } from "./streamClient";
+import { sanitizeChatMessages } from "./engine";
 import * as providers from "./providers";
 
 describe("src/ai/streamClient.ts - SSE Parsing and Streaming", () => {
@@ -127,6 +128,20 @@ describe("src/ai/streamClient.ts - SSE Parsing and Streaming", () => {
         completionTokens: 5,
         totalTokens: 20,
       });
+    });
+
+    it("stellt sicher, dass leere Nachrichtenarrays für LM Studio normiert werden (sanitizeChatMessages)", () => {
+      expect(sanitizeChatMessages([])).toEqual([{ role: "user", content: "Hallo" }]);
+      expect(sanitizeChatMessages([{ role: "system", content: "You are a tutor" }])).toEqual([
+        { role: "system", content: "You are a tutor" },
+        { role: "user", content: "Bitte beginnen." },
+      ]);
+      expect(
+        sanitizeChatMessages([
+          { role: "user", content: "   " },
+          { role: "assistant", content: "" },
+        ])
+      ).toEqual([{ role: "user", content: "Hallo" }]);
     });
   });
 });

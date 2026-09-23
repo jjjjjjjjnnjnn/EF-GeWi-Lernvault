@@ -9,6 +9,7 @@ import {
   EngineOffError,
   NeedsKeyError,
   ensureLocalEngine,
+  sanitizeChatMessages,
 } from "./engine";
 import { type AiEndpoint, getActiveEndpoint } from "./endpoints";
 import { estimateTokens } from "../engine/context";
@@ -178,6 +179,8 @@ export async function chatStream(
   const headers: Record<string, string> = { "Content-Type": "application/json" };
   if (apiKey) headers.Authorization = `Bearer ${apiKey}`;
 
+  const sanitizedMessages = sanitizeChatMessages(messages);
+
   let res: Response;
   try {
     res = await fetch(`${base.replace(/\/$/, "")}/chat/completions`, {
@@ -186,7 +189,7 @@ export async function chatStream(
       signal: opts?.signal,
       body: JSON.stringify({
         model,
-        messages,
+        messages: sanitizedMessages,
         temperature: opts?.temperature ?? 0.3,
         max_tokens: opts?.maxTokens ?? 700,
         stream: true,
