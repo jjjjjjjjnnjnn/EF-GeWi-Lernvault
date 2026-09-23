@@ -1,7 +1,7 @@
 // Einheitlicher KI-Streaming-Client für Tutor, Quiz und Lernreise.
 // Unterstützt SSE (Server-Sent Events) für API-Provider (LM Studio, Ollama, OpenRouter etc.)
 // sowie asynchrone Generatoren für lokales WebLLM.
-// Inklusive AbortSignal für Abbrüche und robuster Fehlerbehandlung.
+// Inklusive AbortSignal für Abbrüche, Token-Usage-Erfassung und robuster Fehlerbehandlung.
 
 import { loadAiConfig, effectiveBaseUrl, getProvider } from "./providers";
 import {
@@ -10,6 +10,8 @@ import {
   NeedsKeyError,
   ensureLocalEngine,
 } from "./engine";
+import { type AiEndpoint, getActiveEndpoint } from "./endpoints";
+import { estimateTokens } from "../engine/context";
 
 export interface StreamChunk {
   delta: string;
@@ -18,21 +20,31 @@ export interface StreamChunk {
 
 export type AiStatus = "idle" | "connecting" | "streaming" | "done" | "error";
 
+export interface TokenUsageReport {
+  promptTokens: number;
+  completionTokens: number;
+  totalTokens: number;
+}
+
 export interface StreamOptions {
   temperature?: number;
   maxTokens?: number;
   signal?: AbortSignal;
+  endpoint?: AiEndpoint;
   onChunk?: (chunk: StreamChunk) => void;
   onStatusChange?: (status: AiStatus) => void;
   onLocalProgress?: (pct: number, text: string) => void;
+  onUsage?: (usage: TokenUsageReport) => void;
 }
 
 /**
  * Parst einen SSE-Textpuffer (Server-Sent Events) und ruft für jedes Token die Callback-Funktion auf.
+ * Extrahiert optional Token-Verbrauchsdaten aus stream_options (OpenAI-Standard).
  */
 export function parseSseStream(
   textBuffer: string,
-  onDelta: (delta: string) => void
+  onDelta: (delta: string) => void,
+  onUsage?: (usage: TokenUsageReport) => void
 ): { remainingBuffer: string; isDone: boolean } {
   const lines = textBuffer.split(/\r?\n/);
   let isDone = false;
@@ -52,12 +64,23 @@ export function parseSseStream(
       const dataStr = trimmed.slice(5).trim();
       try {
         const json = JSON.parse(dataStr);
+
+        // 1. Text-Delta extrahieren
         const delta =
           json.choices?.[0]?.delta?.content ??
           json.choices?.[0]?.text ??
           "";
         if (delta) {
           onDelta(delta);
+        }
+
+        // 2. Token-Verbrauch extrahieren (wenn stream_options: { include_usage: true } gesendet wurde)
+        if (json.usage && onUsage) {
+          onUsage({
+            promptTokens: json.usage.prompt_tokens ?? 0,
+            completionTokens: json.usage.completion_tokens ?? 0,
+            totalTokens: json.usage.total_tokens ?? 0,
+          });
         }
       } catch {
         // Unvollständige oder nicht-JSON Zeile im Stream tolerieren
@@ -81,7 +104,7 @@ export async function chatStream(
 
   if (cfg.engine === "off") {
     opts?.onStatusChange?.("error");
-    throw new EngineOffError("KI-Engine ist ausgeschaltet");
+    throw new EngineOffError("KI-Engine ist ausgeschaltet / AI 引擎已关闭");
   }
 
   // 1. Lokales WebLLM im Browser
@@ -103,6 +126,16 @@ export async function chatStream(
       const accumulated = full;
       opts?.onChunk?.({ delta: full, accumulated });
       opts?.onStatusChange?.("done");
+
+      // Lokale Token-Schätzung
+      const pTok = estimateTokens(messages.map((m) => m.content).join("\n"));
+      const cTok = estimateTokens(accumulated);
+      opts?.onUsage?.({
+        promptTokens: pTok,
+        completionTokens: cTok,
+        totalTokens: pTok + cTok,
+      });
+
       return accumulated;
     } catch (err) {
       opts?.onStatusChange?.("error");
@@ -110,20 +143,40 @@ export async function chatStream(
     }
   }
 
-  // 2. API-Modus (OpenAI-kompatibel: LM Studio, Ollama, Groq, OpenRouter etc.)
-  const preset = getProvider(cfg.providerId);
-  const base = effectiveBaseUrl(cfg);
+  // 2. API-Modus (OpenAI-kompatibel): Bevorzuge opts.endpoint, falle auf activeEndpoint oder Legacy zurück
+  let base: string;
+  let apiKey: string;
+  let model: string;
+  let endpointName: string;
+
+  if (opts?.endpoint) {
+    base = opts.endpoint.baseUrl.trim();
+    apiKey = opts.endpoint.apiKey.trim();
+    model = opts.endpoint.model.trim();
+    endpointName = opts.endpoint.name;
+  } else {
+    const activeEp = getActiveEndpoint();
+    if (activeEp && activeEp.baseUrl) {
+      base = activeEp.baseUrl.trim();
+      apiKey = activeEp.apiKey.trim();
+      model = activeEp.model.trim();
+      endpointName = activeEp.name;
+    } else {
+      const preset = getProvider(cfg.providerId);
+      base = effectiveBaseUrl(cfg);
+      apiKey = cfg.apiKey.trim();
+      model = cfg.model.trim() || preset.defaultModel;
+      endpointName = preset.name;
+    }
+  }
+
   if (!base) {
     opts?.onStatusChange?.("error");
-    throw new NeedsKeyError("Base-URL fehlt");
-  }
-  if (preset.needsKey && !cfg.apiKey.trim()) {
-    opts?.onStatusChange?.("error");
-    throw new NeedsKeyError("API-Key fehlt");
+    throw new NeedsKeyError("Base-URL fehlt / 端点 Base-URL 为空");
   }
 
   const headers: Record<string, string> = { "Content-Type": "application/json" };
-  if (cfg.apiKey.trim()) headers.Authorization = `Bearer ${cfg.apiKey.trim()}`;
+  if (apiKey) headers.Authorization = `Bearer ${apiKey}`;
 
   let res: Response;
   try {
@@ -132,25 +185,37 @@ export async function chatStream(
       headers,
       signal: opts?.signal,
       body: JSON.stringify({
-        model: cfg.model.trim() || preset.defaultModel,
+        model,
         messages,
         temperature: opts?.temperature ?? 0.3,
         max_tokens: opts?.maxTokens ?? 700,
         stream: true,
+        stream_options: { include_usage: true },
       }),
     });
   } catch (err) {
     opts?.onStatusChange?.("error");
+    const isCors = err instanceof TypeError && err.message.includes("Failed to fetch");
+    if (isCors) {
+      throw new Error(`CORS 跨域拦截或网络不可达 (${endpointName})。本地模型请确认已开启 CORS。`);
+    }
     throw err;
   }
 
   if (!res.ok) {
     opts?.onStatusChange?.("error");
-    throw new Error(`HTTP ${res.status} (${preset.name})`);
+    if (res.status === 401 || res.status === 403) {
+      throw new NeedsKeyError(`HTTP ${res.status}: API Key 无效或未授权 (${endpointName})`);
+    }
+    if (res.status === 429) {
+      throw new Error(`HTTP 429: 请求过于频繁 (Rate Limit) (${endpointName})`);
+    }
+    throw new Error(`HTTP ${res.status} (${endpointName})`);
   }
 
   opts?.onStatusChange?.("streaming");
   let accumulated = "";
+  let capturedUsage: TokenUsageReport | null = null;
 
   // Wenn der Server SSE-Stream liefert (ReadableStream vorhanden)
   if (res.body && typeof res.body.getReader === "function") {
@@ -169,10 +234,16 @@ export async function chatStream(
         if (done) break;
 
         buffer += decoder.decode(value, { stream: true });
-        const { remainingBuffer, isDone } = parseSseStream(buffer, (delta) => {
-          accumulated += delta;
-          opts?.onChunk?.({ delta, accumulated });
-        });
+        const { remainingBuffer, isDone } = parseSseStream(
+          buffer,
+          (delta) => {
+            accumulated += delta;
+            opts?.onChunk?.({ delta, accumulated });
+          },
+          (usage) => {
+            capturedUsage = usage;
+          }
+        );
         buffer = remainingBuffer;
         if (isDone) break;
       }
@@ -184,8 +255,27 @@ export async function chatStream(
     const data = await res.json();
     accumulated = data?.choices?.[0]?.message?.content?.trim() || "";
     opts?.onChunk?.({ delta: accumulated, accumulated });
+    if (data?.usage) {
+      capturedUsage = {
+        promptTokens: data.usage.prompt_tokens ?? 0,
+        completionTokens: data.usage.completion_tokens ?? 0,
+        totalTokens: data.usage.total_tokens ?? 0,
+      };
+    }
   }
 
+  // Falls der Server keine Verbrauchsdaten geliefert hat, Token schätzen
+  if (!capturedUsage) {
+    const pTok = estimateTokens(messages.map((m) => m.content).join("\n"));
+    const cTok = estimateTokens(accumulated);
+    capturedUsage = {
+      promptTokens: pTok,
+      completionTokens: cTok,
+      totalTokens: pTok + cTok,
+    };
+  }
+
+  opts?.onUsage?.(capturedUsage);
   opts?.onStatusChange?.("done");
   return accumulated;
 }

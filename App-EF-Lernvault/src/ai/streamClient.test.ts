@@ -115,5 +115,18 @@ describe("src/ai/streamClient.ts - SSE Parsing and Streaming", () => {
         })
       ).rejects.toThrow();
     });
+
+    it("extrahiert Token-Usage aus SSE-Chunk", () => {
+      let reportedUsage: any = null;
+      const buffer = `data: {"choices":[{"delta":{"content":"Hi"}}]}\n\ndata: {"choices":[],"usage":{"prompt_tokens":15,"completion_tokens":5,"total_tokens":20}}\n\ndata: [DONE]\n\n`;
+      parseSseStream(buffer, () => {}, (u) => {
+        reportedUsage = u;
+      });
+      expect(reportedUsage).toEqual({
+        promptTokens: 15,
+        completionTokens: 5,
+        totalTokens: 20,
+      });
+    });
   });
 });

@@ -28,6 +28,11 @@
   1. CCR (Compress-Cache-Retrieve) 可逆内容寻址缓存（FNV-1a 哈希键 `h-xxxxxx` + IndexedDB/内存双层存储，保留压缩前全文以供随时无损还原）；
   2. SmartCrusher 结构化表格折叠（表头抽取与 Markdown 表格模式压缩）；
   3. 5D Scoring 上下文裁剪（首轮 Anchor 1 永久锚定、最近两轮 Rezenz 保留、学生答题错误与助教批改 100% Error Preservation 保留）。
+- CC-Switch — MIT — farion1231/cc-switch
+  借鉴其多端点与路由管理设计模式：
+  1. 多端点独立配置与活跃主路由切换（Active Endpoint Switch）；
+  2. 故障级联自动转移机制（Active -> Fallback -> Vault Native）；
+  3. Token 消耗统计看板与每日预算预警管理（Token Ledger & Daily Budget Alert）。
 
 ## 待引入（P2+，引入时补记）
 - ts-fsrs — MIT — Open Spaced Repetition（记忆调度）

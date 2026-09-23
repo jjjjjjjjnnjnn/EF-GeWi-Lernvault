@@ -385,6 +385,7 @@ export default function Tutor({
         {
           signal: controller.signal,
           intensity,
+          savedTokensCCR: optimized.stats.savedTokens,
           onLocalProgress: (p) => setLocalPct(p),
           onChunk: (chunk) => {
             setIsThinking(false);
