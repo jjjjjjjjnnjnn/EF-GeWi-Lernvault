@@ -21,10 +21,13 @@ Quiz 批改自动跟随同一引擎；Zitierpflicht（断言必须带 `[Pfad#Zei
 - **Mistral**：https://console.mistral.ai/api-keys（免卡；$10/月 Free 额度；注意免费档默认参与训练）。默认 `mistral-small-latest`。
 - **DeepSeek**（最便宜付费）：https://platform.deepseek.com/api_keys（1M 上下文；V4 Flash 级约 $0.15/百万输入）。默认 `deepseek-chat`。
 - **SiliconFlow**（中文界面+支付宝）：https://cloud.siliconflow.cn/account/ak（Qwen3-8B 永久免费档）。默认 `Qwen/Qwen3-8B`。
+- **OpenCode Zen**（订阅制多模型）：Base-URL `https://opencode.ai/zen/v1`，Key：https://opencode.ai。默认 `claude-sonnet-4-5`（模型名以站内为准，直接改文本框）。
+- **SenseNova / 商汤日日新**（中文+支付宝）：Base-URL `https://token.sensenova.cn/v1`，Key：https://platform.sensenova.cn。默认 `SenseChat-5`（以站内模型名为准）。
+- **任意中转（R4Qodes/command-code等）**：选任一预设后在 **Base-URL改写** 栏直接贴你的 endpoint（如 `https://xxx/v1`），留空则用预设；或选 **Eigen** 从零手填。切换预设时改写自动清空，不串台。
 - **Lokal (Ollama / LM Studio)**：本机服务，无 Key。Ollama 默认 `http://localhost:11434/v1` + `qwen3:8b`；LM Studio 把 Base-URL 改成 `http://localhost:1234/v1` 即可沿用旧习惯。
 - **Eigen**：任何 OpenAI-compatible 地址（校内网关/自建 vLLM），手填 Base-URL + Key + 模型名。
 
-模型名是**可编辑文本框**——服务商改 Roster 时照站内最新名填写即可，不用等 App 更新。
+模型名是**可编辑文本框**——服务商改 Roster 时照站内最新名填写即可，不用等 App 更新。更省事：模型框下点 **⇩ 拉取模型列表**（ccswitch式，GET `{base}/models` 8秒超时自动带Key），拉回全量名单后点选即用；拉取失败会显示 HTTP 码/报错，401=Key错、空名单=该站不支持/models（手填即可）。
 
 ## 3. 本地模型 (WebLLM) / 本地模型
 

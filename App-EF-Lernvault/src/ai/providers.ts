@@ -80,6 +80,24 @@ export const PROVIDERS: ProviderPreset[] = [
     keyUrl: "",
     free: "Eigener Rechner, kein Key (LM Studio: Port 1234)",
   },
+  {
+    id: "opencode-zen",
+    name: "OpenCode Zen",
+    baseUrl: "https://opencode.ai/zen/v1",
+    needsKey: true,
+    defaultModel: "claude-sonnet-4-5",
+    keyUrl: "https://opencode.ai",
+    free: "Abo ($20/Monat) inkl. Nutzung, viele Modelle",
+  },
+  {
+    id: "sensenova",
+    name: "SenseNova (商汤)",
+    baseUrl: "https://token.sensenova.cn/v1",
+    needsKey: true,
+    defaultModel: "SenseChat-5",
+    keyUrl: "https://platform.sensenova.cn",
+    free: "Chinesisch, Alipay, OpenAI-kompatibel",
+  },
   { id: "custom", name: "Eigen (Base-URL)", baseUrl: "", needsKey: true, defaultModel: "", keyUrl: "", free: "" },
 ];
 
@@ -117,7 +135,9 @@ export function getProvider(id: string): ProviderPreset {
 
 export function effectiveBaseUrl(cfg: AiConfig): string {
   if (cfg.providerId === "custom") return cfg.baseUrl.trim();
-  return getProvider(cfg.providerId).baseUrl;
+  // Override: leeres feld = preset-default; befuellt = freie endpoint-wahl
+  // (relays wie R4Qodes/command-code etc. ohne eigenes preset nutzbar).
+  return cfg.baseUrl.trim() || getProvider(cfg.providerId).baseUrl;
 }
 
 export function loadAiConfig(): AiConfig {

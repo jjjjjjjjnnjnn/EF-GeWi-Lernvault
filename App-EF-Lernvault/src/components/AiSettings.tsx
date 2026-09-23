@@ -38,6 +38,16 @@ export default function AiSettings({
   const [vecPct, setVecPct] = useState<number | null>(null);
   const [vecReady, setVecReady] = useState(() => isLocalEmbedderReady());
   const [probe, setProbe] = useState<ProbeResult>(() => getLastProbe());
+  // ccswitch-stil: manueller modell-pull (volle /models-liste, klick-uebernahme)
+  const [pulling, setPulling] = useState(false);
+  const [showAllModels, setShowAllModels] = useState(false);
+
+  const pullModels = () => {
+    if (pulling) return;
+    setPulling(true);
+    setShowAllModels(true);
+    void probeAiConnection(fetch, 8000).finally(() => setPulling(false));
+  };
 
   useEffect(() => {
     const unsub = subscribeHeartbeat(setProbe);
@@ -53,6 +63,8 @@ export default function AiSettings({
       if (!cfg.model.trim() || cfg.model.trim() === oldDef) {
         next.model = getProvider(patch.providerId).defaultModel;
       }
+      // Base-URL-override nicht verschleppen (ausser custom bleibt custom).
+      if (patch.providerId !== "custom") next.baseUrl = "";
     }
     setCfg(next);
     saveAiConfig(next);
@@ -211,7 +223,7 @@ export default function AiSettings({
                 <span className="font-mono text-[10px] text-[#6B675C]">
                   {lang === "de" ? "Erkannt:" : "发现:"}
                 </span>
-                {probe.detectedModels.slice(0, 3).map((mName) => (
+                {(showAllModels ? probe.detectedModels : probe.detectedModels.slice(0, 3)).map((mName) => (
                   <button
                     key={mName}
                     type="button"
@@ -224,6 +236,35 @@ export default function AiSettings({
                 ))}
               </div>
             )}
+            {showAllModels && probe.detectedModels.length > 8 && (
+              <p className="mt-0.5 font-mono text-[10px] text-[#6B675C]">
+                {probe.detectedModels.length} {lang === "de" ? "Modelle (klicken übernimmt)" : "个模型（点选即用）"}
+              </p>
+            )}
+            <div className="mt-1 flex flex-wrap items-center gap-2">
+              <button
+                type="button"
+                onClick={pullModels}
+                disabled={pulling}
+                className="rounded-xs border border-[#E5E1D8] bg-white px-2 py-0.5 font-mono text-[11px] text-[#1C1B17] hover:border-[#4338CA] hover:text-[#4338CA] transition-colors disabled:opacity-50"
+                title={lang === "de" ? "GET {base}/models (8s-Timeout, Key wird mitgesendet)" : "请求 {base}/models（8秒超时，自动带Key）"}
+              >
+                {pulling
+                  ? (lang === "de" ? "Rufe ab …" : "拉取中…")
+                  : (lang === "de" ? "⇩ Modelle abrufen" : "⇩ 拉取模型列表")}
+              </button>
+              {probe.status === "offline" && probe.error && (
+                <span className="font-mono text-[10px] text-[#C62828]" title={probe.error}>
+                  {lang === "de" ? "Abruf fehlgeschlagen: " : "拉取失败："}
+                  {probe.error.length > 60 ? `${probe.error.slice(0, 60)}…` : probe.error}
+                </span>
+              )}
+              {probe.status === "online" && probe.detectedModels.length === 0 && (
+                <span className="font-mono text-[10px] text-[#6B675C]">
+                  {lang === "de" ? "Online, aber /models leer (Modellname von Hand eintragen)" : "已连通但/models为空（请手填模型名）"}
+                </span>
+              )}
+            </div>
           </label>
           <label className="block">
             <span className="font-sans text-xs text-[#6B675C]">{tr.aiEmbedModel}</span>
@@ -235,13 +276,26 @@ export default function AiSettings({
               className="mt-1 block w-full rounded-sm border border-[#E5E1D8] bg-white px-2 py-1.5 font-mono text-xs text-[#1C1B17] focus:border-[#4338CA] focus:outline-none"
             />
           </label>
-          {cfg.providerId === "custom" && (
+          {cfg.providerId === "custom" ? (
             <label className="block sm:col-span-2">
               <span className="font-sans text-xs text-[#6B675C]">{tr.aiBaseUrl}</span>
               <input
                 value={cfg.baseUrl}
                 onChange={(e) => update({ baseUrl: e.target.value })}
                 placeholder="https://…/v1"
+                spellCheck={false}
+                className="mt-1 block w-full rounded-sm border border-[#E5E1D8] bg-white px-2 py-1.5 font-mono text-xs text-[#1C1B17] focus:border-[#4338CA] focus:outline-none"
+              />
+            </label>
+          ) : (
+            <label className="block sm:col-span-2">
+              <span className="font-sans text-xs text-[#6B675C]">
+                {lang === "de" ? "Base-URL-Override (leer = Preset)" : "Base-URL改写（空=用预设）"}
+              </span>
+              <input
+                value={cfg.baseUrl}
+                onChange={(e) => update({ baseUrl: e.target.value })}
+                placeholder={getProvider(cfg.providerId).baseUrl}
                 spellCheck={false}
                 className="mt-1 block w-full rounded-sm border border-[#E5E1D8] bg-white px-2 py-1.5 font-mono text-xs text-[#1C1B17] focus:border-[#4338CA] focus:outline-none"
               />

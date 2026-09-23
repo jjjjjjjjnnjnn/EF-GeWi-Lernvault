@@ -71,6 +71,33 @@ describe("src/ai/heartbeat.ts - AI Engine Heartbeat & Probe", () => {
     expect(res.error).toContain("Connection refused");
   });
 
+  it("manueller pull: haengender endpoint bricht nach timeoutMs ab", async () => {
+    vi.spyOn(providers, "loadAiConfig").mockReturnValue({
+      version: 1,
+      engine: "api",
+      providerId: "custom",
+      apiKey: "sk-x",
+      model: "",
+      baseUrl: "https://relay.example/v1",
+      embedModel: "",
+      vectorMode: "auto",
+      hfMirror: "",
+    });
+
+    // nie antwortend + abort beachten (ccswitch-pull darf nicht haengen)
+    const mockFetch = vi.fn().mockImplementation((_url: string, opts?: { signal?: AbortSignal }) => {
+      return new Promise((_resolve, reject) => {
+        opts?.signal?.addEventListener("abort", () => reject(new DOMException("aborted", "AbortError")));
+      });
+    });
+
+    const res = await probeAiConnection(mockFetch as unknown as typeof fetch, 500);
+    expect(res.status).toBe("offline");
+    expect(mockFetch).toHaveBeenCalledOnce();
+    const calledUrl = mockFetch.mock.calls[0][0] as string;
+    expect(calledUrl).toBe("https://relay.example/v1/models");
+  });
+
   it("benachrichtigt Abonnenten über Zustandsänderungen", async () => {
     vi.spyOn(providers, "loadAiConfig").mockReturnValue({
       version: 1,

@@ -48,9 +48,10 @@ export function getLastProbe(): ProbeResult {
 
 /**
  * Führt eine gezielte Ping-Prüfung gegen die konfigurierte Engine durch.
- * Timeout: 2000ms (verhindert Hänger).
+ * Timeout default 2000ms (verhindert Hänger); manueller Modell-Pull darf
+ * laenger (z.B. 8000ms, CN-Relays).
  */
-export async function probeAiConnection(fetchFn: typeof fetch = fetch): Promise<ProbeResult> {
+export async function probeAiConnection(fetchFn: typeof fetch = fetch, timeoutMs = 2000): Promise<ProbeResult> {
   const cfg = loadAiConfig();
 
   if (cfg.engine === "off") {
@@ -98,7 +99,7 @@ export async function probeAiConnection(fetchFn: typeof fetch = fetch): Promise<
   notify({ ...lastResult, status: "checking", url: baseUrl });
 
   const controller = new AbortController();
-  const timer = setTimeout(() => controller.abort(), 2000);
+  const timer = setTimeout(() => controller.abort(), Math.max(500, timeoutMs));
   const startTime = Date.now();
 
   try {
