@@ -50,6 +50,7 @@
 - 电子书11章地图 — [Sowi-NRW-EF-Buch-Navigator](../08_SoWi/Texte-Analyse/Sowi-NRW-EF-Buch-Navigator.md)（C.C.Buchner click & study，需学校登录；Ungleichheit无专章）
 
 ### Philosophie
+- Gerechtigkeit & Wirtschaftsethik — [Gerechtigkeit-Wirtschaftsethik-Vernetzung](../07_Philosophie/Gerechtigkeit-Wirtschaftsethik-Vernetzung.md)（Rawls差异原则/无知之幕/SoWi不平等再分配跨学科）
 - Menschenbild — [Menschenbild-Überblick](../07_Philosophie/Texte-Analyse/Menschenbild-Überblick.md)
 - Ethik: Utilitarismus vs Kant — [Utilitarismus-vs-Kant](../07_Philosophie/Texte-Analyse/Utilitarismus-vs-Kant.md)
 - Philosophische Fragen stellen (Plickat) — [Philosophische-Fragen-Typen](../07_Philosophie/Texte-Analyse/Philosophische-Fragen-Typen.md)（5 Fragetypen/Operatoren-Mapping）
@@ -57,6 +58,7 @@
 - Abitur-Kernstellen (Aristoteles/Kant/Rousseau/Sartre) — [Philo-Abitur-Kernstellen](../07_Philosophie/Texte-Analyse/Philo-Abitur-Kernstellen.md)（4×3句论证+EF-Anschluss）· [II B/II C Training](../07_Philosophie/Klausur-Training/Philo-Textanalyse-Training.md)（EHZ+Lena-Übung）
 
 ### Deutsch
+- Rhetorik & Mediation — [Rhetorik-Mediation-Vernetzung](../01_Deutsch/Texte-Analyse/Rhetorik-Mediation-Vernetzung.md)（德语议论文剖析与英语中继写作跨语言联动）
 - Lyrik: Sturm und Drang (Goethe) — [Lyrik-Sturm-Drang-Goethe](../01_Deutsch/Texte-Analyse/Lyrik-Sturm-Drang-Goethe.md)（Willkommen und Abschied/6 Mittel/Deutungshypothese）
 - Drama-Ganzschrift: Kandidaten + Werkzeugkasten — [Drama-Ganzschrift-Kandidaten](../01_Deutsch/Texte-Analyse/Drama-Ganzschrift-Kandidaten.md)（Dürrenmatt/Frisch-Shortlist/五段/人物关系/对话分析，待老师定书名）
 - Sachtextanalyse: Argumentation — [Sachtextanalyse-Argumentation](../01_Deutsch/Texte-Analyse/Sachtextanalyse-Argumentation.md)（6论据类型+10动词句式+自写微型范文全程分析）
@@ -86,10 +88,12 @@
 - CN-Begriffe + Tricks + Training — [Begriffshandbuch](../06_Bio/CN-Bio-Begriffshandbuch.md) · [Tricks](../06_Bio/CN-Bio-Tricks.md) · [Training](../06_Bio/Klausur-Training/CN-Bio-Training.md)（三语桥/EF+Ausblick，4+6自编题）
 
 ### Mathe
+- Analysis & Kinetik — [Analysis-Physik-Kinetik-Vernetzung](../03_Mathe/Analysis-Physik-Kinetik-Vernetzung.md)（微积分导数与运动学瞬时速度深度联动）
 - ZKE 2027 Training — [Mathe-ZKE-2027-Training](../03_Mathe/Mathe-ZKE-2027-Training.md)（Teil A免工具+Teil B WTR/CAS，4自编题+解法）
 - CN Formelhandbuch DE-CN-EN · Tricks · Training — [CN-Mathe-Formelhandbuch](../03_Mathe/CN-Mathe-Formelhandbuch.md) · [CN-Mathe-Tricks](../03_Mathe/CN-Mathe-Tricks.md) · [CN-Mathe-Training](../03_Mathe/Klausur-Training/CN-Mathe-Training.md)（CN方法↔ZKE论证）
 
 ### Chemie
+- Kinetik & Enzymbiologie — [Kinetik-Gleichgewicht-Bio-Vernetzung](../05_Chemie/Kinetik-Gleichgewicht-Bio-Vernetzung.md)（反应动力学/勒夏特列与生物酶催化/流平衡联动）
 - EF-Grundlagen-Training — [Chemie-EF-Grundlagen-Training](../05_Chemie/Chemie-EF-Grundlagen-Training.md)（Atombau/Bindung/配平/Mol，8自编题）· [Operatoren-Check](../05_Chemie/Klausur-Training/Chemie-Operatoren-Check.md)（StanSi ab 2025+Formeldokument）
 - CN Formelhandbuch · Tricks · Training — [CN-Chemie-Formelhandbuch](../05_Chemie/CN-Chemie-Formelhandbuch.md) · [CN-Chemie-Tricks](../05_Chemie/CN-Chemie-Tricks.md) · [CN-Chemie-Training](../05_Chemie/Klausur-Training/CN-Chemie-Training.md)（DE-CN-EN桥，全自编）
 

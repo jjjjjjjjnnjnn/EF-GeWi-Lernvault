@@ -261,4 +261,10 @@ tags: [EF, Meta]
 | normatives Argument | 价值规范论据 | Deutsch | Das normative Argument appelliert an die Selbstverantwortung. |
 | relevant aspects | 相关要点 | Englisch | Select only the relevant aspects for your reader. |
 | connectors | 连接词/逻辑衔接词 | Englisch | Connectors structure formal letters and forum posts. |
-
+| Differentialquotient | 导数/瞬时变化率 | Mathe | Der Differentialquotient beschreibt die Momentangeschwindigkeit als 1. Ableitung. |
+| Reaktionskinetik | 反应动力学 | Chemie | Die Reaktionskinetik untersucht die Geschwindigkeit chemischer Reaktionen. |
+| Michaelis-Menten-Kinetik | 米氏动力学 | Bio | Die Michaelis-Menten-Kinetik beschreibt die Substratsättigung bei Enzymreaktionen. |
+| Differenzprinzip | 差异原则 | Philo | Nach dem Differenzprinzip sind Ungleichheiten nur gerecht, wenn sie den Schwächsten nützen. |
+| Schleier des Nichtwissens | 无知之幕 | Philo | Hinter dem Schleier des Nichtwissens wählen Menschen faire Grundregeln. |
+| Fließgleichgewicht | 动态流平衡 | Bio | Lebende Zellen befinden sich im dynamischen Fließgleichgewicht. |
+| P.E.E.-Schema | 观点-证据-解释结构 | Englisch | The P.E.E. schema structures argumentative paragraphs effectively. |
