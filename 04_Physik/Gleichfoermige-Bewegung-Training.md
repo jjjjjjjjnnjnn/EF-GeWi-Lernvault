@@ -71,3 +71,8 @@ Alltags-Kontexttypen（只谈题型，不抄题干数字）：
 - Methode原创总结；题型对应 `_Downloads/Physik/lehrer-2026-09/` 内 Lehrer-Material（nur lokales Lernen, keine Weitergabe；题干原文与数字不抄入本笔记）。
 - 公式源：`04_Physik/Formel-Spickzettel.md`（ggB-覆盖：$s = v\cdot t$ 已有；本篇补读图/评价链）。
 - Lehrplan-Anker：`04_Physik/Lehrplan.md` §1 Grundlagen der Mechanik（Kinematik gleichförmig + digitale Messdatenauswertung）。
+
+## 6. Vernetzung
+
+- [[00_META/MINT-Vernetzung-Konzeptkarte|MINT-Vernetzung-Konzeptkarte]] — 理科大一统图谱（变化率、守恒、平衡）
+- [[03_Mathe/Analysis-Physik-Kinetik-Vernetzung|Analysis-Physik-Kinetik-Vernetzung]] — 微积分导数与运动学速度瞬时变化率深度联动
