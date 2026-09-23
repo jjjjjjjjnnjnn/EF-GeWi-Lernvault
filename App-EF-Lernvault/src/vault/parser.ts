@@ -15,7 +15,6 @@ export interface Block {
   kind: "h2" | "h3" | "p" | "li" | "quote" | "math" | "diagram";
   text: string;
   lang: "zh" | "de";
-  raw?: string;
 }
 
 export interface VaultCard {
@@ -70,8 +69,8 @@ export function parseBody(body: string): Block[] {
   let inDiagram = false;
   let mathBuf: string[] = [];
   let diagramBuf: string[] = [];
-  for (const rawLine of body.split("\n")) {
-    const line = rawLine.trim();
+  for (const sourceLine of body.split("\n")) {
+    const line = sourceLine.trim();
     if (line.startsWith("```")) {
       const fence = line.slice(3).trim().toLowerCase();
       if (inMath || inDiagram) {
@@ -95,11 +94,11 @@ export function parseBody(body: string): Block[] {
       continue;
     }
     if (inMath) {
-      mathBuf.push(rawLine);
+      mathBuf.push(sourceLine);
       continue;
     }
     if (inDiagram) {
-      diagramBuf.push(rawLine);
+      diagramBuf.push(sourceLine);
       continue;
     }
     if (!line) continue;
@@ -108,10 +107,10 @@ export function parseBody(body: string): Block[] {
       if (text) blocks.push({ kind: "quote", text: inline(text), lang: hasCJK(text) ? "zh" : "de" });
       continue;
     }
-    if (line.startsWith("### ")) blocks.push({ kind: "h3", text: inline(line), lang: hasCJK(line) ? "zh" : "de", raw: rawLine });
-    else if (line.startsWith("## ")) blocks.push({ kind: "h2", text: inline(line), lang: hasCJK(line) ? "zh" : "de", raw: rawLine });
-    else if (/^[-*]\s+/.test(line)) blocks.push({ kind: "li", text: inline(line), lang: hasCJK(line) ? "zh" : "de", raw: rawLine });
-    else if (!line.startsWith("#")) blocks.push({ kind: "p", text: inline(line), lang: hasCJK(line) ? "zh" : "de", raw: rawLine });
+    if (line.startsWith("### ")) blocks.push({ kind: "h3", text: inline(line), lang: hasCJK(line) ? "zh" : "de" });
+    else if (line.startsWith("## ")) blocks.push({ kind: "h2", text: inline(line), lang: hasCJK(line) ? "zh" : "de" });
+    else if (/^[-*]\s+/.test(line)) blocks.push({ kind: "li", text: inline(line), lang: hasCJK(line) ? "zh" : "de" });
+    else if (!line.startsWith("#")) blocks.push({ kind: "p", text: inline(line), lang: hasCJK(line) ? "zh" : "de" });
   }
   return blocks;
 }

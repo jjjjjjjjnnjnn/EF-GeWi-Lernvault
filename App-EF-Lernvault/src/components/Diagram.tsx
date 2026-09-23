@@ -58,18 +58,18 @@ export default function DiagramFig({
   }, [key]);
 
   return (
-    <figure className="my-2 overflow-x-auto rounded-sm border border-[#E5E1D8] bg-white p-3">
+    <figure className="my-2 overflow-x-auto rounded-sm border border-[var(--line)] bg-[var(--surface)] p-3">
       {svg ? (
         <div
           className="mx-auto max-w-[420px] [&_svg]:h-auto [&_svg]:w-full"
           dangerouslySetInnerHTML={{ __html: svg }}
         />
       ) : (
-        <pre className="overflow-x-auto font-mono text-xs leading-relaxed text-[#1C1B17]">
+        <pre className="overflow-x-auto font-mono text-xs leading-relaxed text-[var(--ink)]">
           {spec}
         </pre>
       )}
-      <figcaption className="mt-1 font-mono text-[10px] text-[#6B675C]">
+      <figcaption className="mt-1 font-mono text-[10px] text-[var(--gray)]">
         {loading
           ? lang === "de"
             ? "KI zeichnet …"

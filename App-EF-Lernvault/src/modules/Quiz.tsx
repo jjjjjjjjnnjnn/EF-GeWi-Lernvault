@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { PER_MODULE_KEYS, isTyping, matchesKey } from "../keys";
 import { t, type Lang } from "../i18n";
 import { setFeedbackContext } from "../components/FeedbackBox";
@@ -16,12 +16,101 @@ import {
   generateQuizFromNote,
   getAvailableThemen,
   getVergleichItems,
+  buildKlausurFehlerlogPatch,
+  buildVergleichFehlerlogPatch,
   MOCK_QUIZ,
   RUBRIC_CRITERIA,
+  type FehlerlogDefizit,
   type GeneratedQuiz,
   type RubricCriterion,
   type VergleichItem,
 } from "../quizgen";
+
+export function formatTimerSeconds(totalSeconds: number): string {
+  const safeSeconds = Math.max(0, Math.floor(totalSeconds));
+  const minutes = String(Math.floor(safeSeconds / 60)).padStart(2, "0");
+  const seconds = String(safeSeconds % 60).padStart(2, "0");
+  return `${minutes}:${seconds}`;
+}
+
+export function calculateQuizTimerSeconds(baseSeconds: number, startedAt: number, now: number): number {
+  const elapsed = Math.max(0, Math.floor((now - startedAt) / 1000));
+  return baseSeconds + elapsed;
+}
+
+export function useQuizTimer() {
+  const [seconds, setSeconds] = useState(0);
+  const [running, setRunning] = useState(false);
+  const secondsRef = useRef(0);
+  const baseSecondsRef = useRef(0);
+  const startedAtRef = useRef(0);
+  const runningRef = useRef(false);
+
+  const publish = useCallback((nextSeconds: number) => {
+    secondsRef.current = nextSeconds;
+    setSeconds(nextSeconds);
+  }, []);
+
+  const start = useCallback(() => {
+    baseSecondsRef.current = secondsRef.current;
+    startedAtRef.current = Date.now();
+    runningRef.current = true;
+    setRunning(true);
+  }, []);
+
+  const stop = useCallback(() => {
+    if (!runningRef.current) return;
+    publish(calculateQuizTimerSeconds(baseSecondsRef.current, startedAtRef.current, Date.now()));
+    runningRef.current = false;
+    setRunning(false);
+  }, [publish]);
+
+  const toggle = useCallback(() => {
+    if (runningRef.current) stop();
+    else start();
+  }, [start, stop]);
+
+  const reset = useCallback(() => {
+    baseSecondsRef.current = 0;
+    startedAtRef.current = Date.now();
+    publish(0);
+  }, [publish]);
+
+  useEffect(() => {
+    if (!running) return;
+    let timeoutId = 0;
+
+    const scheduleDeadline = () => {
+      const now = Date.now();
+      const elapsed = Math.max(0, Math.floor((now - startedAtRef.current) / 1000));
+      publish(calculateQuizTimerSeconds(baseSecondsRef.current, startedAtRef.current, now));
+      const nextDeadline = startedAtRef.current + (elapsed + 1) * 1000;
+      timeoutId = window.setTimeout(scheduleDeadline, Math.max(0, nextDeadline - Date.now()));
+    };
+
+    scheduleDeadline();
+    return () => window.clearTimeout(timeoutId);
+  }, [publish, running]);
+
+  return {
+    seconds,
+    running,
+    formatted: formatTimerSeconds(seconds),
+    start,
+    stop,
+    toggle,
+    reset,
+  };
+}
+
+const primaryTextActionClass =
+  "px-1 py-1 font-mono text-xs text-[var(--accent)] underline decoration-[var(--line)] underline-offset-4 transition-colors hover:decoration-[var(--accent)] disabled:cursor-not-allowed disabled:opacity-40";
+const secondaryTextActionClass =
+  "px-1 py-1 font-sans text-sm text-[var(--gray)] underline decoration-[var(--line)] underline-offset-4 transition-colors hover:text-[var(--ink)] hover:decoration-[var(--ink)]";
+const quietActionClass =
+  "px-1 py-1 font-mono text-xs text-[var(--gray)] underline decoration-transparent underline-offset-4 transition-colors hover:text-[var(--accent)] hover:decoration-[var(--accent)]";
+const rubricControlClass =
+  "px-2 py-1 font-mono text-xs border-b-2 transition-colors";
 
 interface QuizProps {
   lang?: Lang;
@@ -32,21 +121,20 @@ interface QuizProps {
 
 type QuizStep = 1 | 2 | 3 | 4 | 5;
 
-interface RubricEvaluation {
-  operatorVerfehlt: boolean;
-  fachbegriffFalsch: boolean;
-  belegFehlt: boolean;
-  vorgehenFalsch: boolean;
+interface RubricEvaluation extends FehlerlogDefizit {
   feedbackDE: string;
   feedbackZH: string;
   citation: string;
-  points: number; // 0-15 Punkte
+  points: number;
 }
 
 import { vergleichStore } from "../engine/stores";
 
 export default function Quiz({ lang = "zh", vault = null, cards = null, onJumpToLibrary }: QuizProps) {
   const tr = t(lang);
+  const essayTimer = useQuizTimer();
+  const vergleichTimer = useQuizTimer();
+  const [patchDate] = useState(() => new Date().toISOString().slice(0, 10));
 
   // Sub-mode switcher: "klausur" (5-step essay drill) vs. "vergleich" (discrimination & contrast)
   const [drillMode, setDrillMode] = useState<"klausur" | "vergleich">(() => {
@@ -77,8 +165,6 @@ export default function Quiz({ lang = "zh", vault = null, cards = null, onJumpTo
   }, [availableThemen, selectedThema]);
 
   // Step 3 state: User answers and Timer
-  const [sec, setSec] = useState(0);
-  const [timerRunning, setTimerRunning] = useState(false);
   const [answers, setAnswers] = useState<string[]>(["", "", ""]);
 
   // Step 4 state: Evaluation & rubric pills
@@ -119,13 +205,6 @@ export default function Quiz({ lang = "zh", vault = null, cards = null, onJumpTo
 
   const [copied, setCopied] = useState(false);
 
-  // Timer interval for Klausur-drill
-  useEffect(() => {
-    if (!timerRunning) return;
-    const id = setInterval(() => setSec((s) => s + 1), 1000);
-    return () => clearInterval(id);
-  }, [timerRunning]);
-
   useEffect(() => {
     setAnswers((prev) => {
       if (prev.length === currentQuiz.tasks.length) return prev;
@@ -148,9 +227,6 @@ export default function Quiz({ lang = "zh", vault = null, cards = null, onJumpTo
       );
     });
   }, [currentQuiz]);
-
-  const mm = String(Math.floor(sec / 60)).padStart(2, "0");
-  const ss = String(sec % 60).padStart(2, "0");
 
   const evaluateAnswers = async () => {
     setIsEvaluating(true);
@@ -228,28 +304,21 @@ export default function Quiz({ lang = "zh", vault = null, cards = null, onJumpTo
     );
   };
 
+  const klausurPatch = useMemo(
+    () =>
+      buildKlausurFehlerlogPatch({
+        fach: currentQuiz.fach,
+        thema: currentQuiz.thema,
+        notePath: currentQuiz.notePath,
+        date: patchDate,
+        time: essayTimer.formatted,
+        evaluations,
+      }),
+    [currentQuiz, essayTimer.formatted, evaluations, patchDate]
+  );
+
   const copyPatch = () => {
-    const patch = `--- Fehlerlog.md
-+++ Fehlerlog.md
-+ - [ ] [${currentQuiz.fach}] Thema: ${currentQuiz.thema} (Klausur-Drill)
-+   - Datum: ${new Date().toISOString().slice(0, 10)}
-+   - Zeit: ${mm}:${ss}
-+   - Defizite: ${
-      evaluations
-        .map((e, idx) => {
-          const fails = [];
-          if (e.operatorVerfehlt) fails.push(`Teil ${idx + 1}: Operator verfehlt`);
-          if (e.fachbegriffFalsch) fails.push(`Teil ${idx + 1}: Fachbegriff unpräzise`);
-          if (e.belegFehlt) fails.push(`Teil ${idx + 1}: Beleg fehlt`);
-          if (e.vorgehenFalsch) fails.push(`Teil ${idx + 1}: Vorgehen falsch`);
-          return fails.join(", ");
-        })
-        .filter(Boolean)
-        .join("; ") || "Keine gravierenden Mängel"
-    }
-+   - Belegstelle: ${currentQuiz.notePath}
-`;
-    navigator.clipboard.writeText(patch);
+    void navigator.clipboard.writeText(klausurPatch);
     setCopied(true);
     setTimeout(() => setCopied(false), 1500);
   };
@@ -310,8 +379,6 @@ export default function Quiz({ lang = "zh", vault = null, cards = null, onJumpTo
     }
   }, [drillMode, currentQuiz, currentVergleich]);
 
-  const [vSec, setVSec] = useState(0);
-  const [vTimerRunning, setVTimerRunning] = useState(false);
   const [selectedOption, setSelectedOption] = useState<"A" | "B" | null>(() => {
     if (typeof window !== "undefined") {
       const opt = new URLSearchParams(window.location.search).get("opt");
@@ -335,13 +402,6 @@ export default function Quiz({ lang = "zh", vault = null, cards = null, onJumpTo
   const [nextTimeText, setNextTimeText] = useState("");
   const [copiedVergleichPatch, setCopiedVergleichPatch] = useState(false);
 
-  // Timer interval for Vergleich
-  useEffect(() => {
-    if (!vTimerRunning) return;
-    const id = setInterval(() => setVSec((s) => s + 1), 1000);
-    return () => clearInterval(id);
-  }, [vTimerRunning]);
-
   const prevVergleichId = useRef(currentVergleich.id);
 
   // Load "下次先…" when changing item
@@ -364,10 +424,21 @@ export default function Quiz({ lang = "zh", vault = null, cards = null, onJumpTo
     vergleichStore.save(store);
   };
 
-  const vMm = String(Math.floor(vSec / 60)).padStart(2, "0");
-  const vSs = String(vSec % 60).padStart(2, "0");
-
   const isCorrect = selectedOption === currentVergleich.correctOption;
+  const vergleichPatch = useMemo(
+    () =>
+      buildVergleichFehlerlogPatch({
+        fach: currentVergleich.fach,
+        thema: currentVergleich.thema,
+        sourceRef: currentVergleich.sourceRef,
+        date: patchDate,
+        isCorrect,
+        selectedOption,
+        justification: warumText,
+        nextTime: nextTimeText,
+      }),
+    [currentVergleich, isCorrect, nextTimeText, patchDate, selectedOption, warumText]
+  );
 
   // V4 Vergleich evaluation: v3-aligned 4-dim rubric, manually toggleable + LM-graded with same 4 regexes.
   const [vergleichEval, setVergleichEval] = useState({
@@ -439,8 +510,8 @@ export default function Quiz({ lang = "zh", vault = null, cards = null, onJumpTo
 
       if (matchesKey(e, PER_MODULE_KEYS.quiz[0])) {
         e.preventDefault();
-        if (drillMode === "klausur") setTimerRunning((running) => !running);
-        else setVTimerRunning((running) => !running);
+        if (drillMode === "klausur") essayTimer.toggle();
+        else vergleichTimer.toggle();
       } else if (drillMode === "vergleich" && matchesKey(e, PER_MODULE_KEYS.quiz[1])) {
         e.preventDefault();
         setSelectedOption(e.key === "1" ? "A" : "B");
@@ -453,20 +524,10 @@ export default function Quiz({ lang = "zh", vault = null, cards = null, onJumpTo
     };
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
-  }, [drillMode]);
+  }, [drillMode, essayTimer.toggle, vergleichTimer.toggle]);
 
   const copyVergleichPatch = () => {
-    const patch = `--- Fehlerlog.md
-+++ Fehlerlog.md
-+ - [ ] [${currentVergleich.fach}] Vergleich: ${currentVergleich.thema}
-+   - Datum: ${new Date().toISOString().slice(0, 10)}
-+   - Ergebnis: ${isCorrect ? "Richtig" : "Falsch (gute Signale zur Schärfung)"}
-+   - Gewählt: Option ${selectedOption || "-"}
-+   - Begründung: ${warumText.trim() || "(keine Angabe)"}
-+   - Nächstes Mal: ${nextTimeText.trim() || "Erst Operator markieren"}
-+   - Belegstelle: ${currentVergleich.sourceRef}
-`;
-    navigator.clipboard.writeText(patch);
+    void navigator.clipboard.writeText(vergleichPatch);
     setCopiedVergleichPatch(true);
     setTimeout(() => setCopiedVergleichPatch(false), 1500);
   };
@@ -474,15 +535,16 @@ export default function Quiz({ lang = "zh", vault = null, cards = null, onJumpTo
   return (
     <div className="mx-auto max-w-3xl space-y-6">
       {/* Top Drill-Mode Switcher: Klausur-Drill vs. Vergleich-Training */}
-      <div className="flex items-center justify-between border-b border-[#E5E1D8] pb-2">
+      <div className="flex flex-wrap items-center justify-between gap-3 border-b border-[var(--line)] pb-2">
         <div className="flex items-center gap-5">
           <button
             type="button"
             onClick={() => setDrillMode("klausur")}
-            className={`font-serif text-sm transition-all pb-1 border-b-2 ${
+            aria-pressed={drillMode === "klausur"}
+            className={`border-b-2 pb-1 font-serif text-sm transition-colors ${
               drillMode === "klausur"
-                ? "border-[#4338CA] text-[#4338CA] font-medium"
-                : "border-transparent text-[#6B675C] hover:text-[#1C1B17]"
+                ? "border-[var(--accent)] text-[var(--accent)]"
+                : "border-transparent text-[var(--gray)] hover:text-[var(--ink)]"
             }`}
           >
             {tr.klausurDrill}
@@ -490,31 +552,28 @@ export default function Quiz({ lang = "zh", vault = null, cards = null, onJumpTo
           <button
             type="button"
             onClick={() => setDrillMode("vergleich")}
-            className={`font-serif text-sm transition-all pb-1 border-b-2 ${
+            aria-pressed={drillMode === "vergleich"}
+            className={`border-b-2 pb-1 font-serif text-sm transition-colors ${
               drillMode === "vergleich"
-                ? "border-[#4338CA] text-[#4338CA] font-medium"
-                : "border-transparent text-[#6B675C] hover:text-[#1C1B17]"
+                ? "border-[var(--accent)] text-[var(--accent)]"
+                : "border-transparent text-[var(--gray)] hover:text-[var(--ink)]"
             }`}
           >
             {tr.vergleichDrill}
           </button>
         </div>
 
-        <span className="font-mono text-[10px] text-[#4338CA] border border-[#4338CA]/30 px-2 py-0.5 rounded-sm">
-          {drillMode === "klausur" ? "AFB I–III · 5 Schritte" : "AFB II–III · Kontrast"}
+        <span className="font-mono meta-text text-[var(--accent)]">
+          {drillMode === "klausur" ? "AFB I–III, 5 Schritte" : "AFB II–III, Kontrast"}
         </span>
-        {/* B2-interleave-schalter (pro fach, default je evidenz) */}
         <button
           type="button"
           onClick={toggleIl}
           title={`${quizFachGuess}: ${ilEffective ? tr.ilOn : tr.ilOff}`}
-          className={`font-mono text-[10px] px-2 py-0.5 rounded-sm border transition-all active:scale-95 ${
-            ilEffective
-              ? "border-[#4338CA] text-[#4338CA]"
-              : "border-[#E5E1D8] text-[#6B675C] hover:text-[#1C1B17]"
-          }`}
+          aria-pressed={ilEffective}
+          className={`${quietActionClass} ${ilEffective ? "text-[var(--accent)]" : ""}`}
         >
-          {quizFachGuess} · {ilEffective ? tr.ilOn : tr.ilOff}
+          {quizFachGuess}: {ilEffective ? tr.ilOn : tr.ilOff}
         </button>
       </div>
 
@@ -524,9 +583,9 @@ export default function Quiz({ lang = "zh", vault = null, cards = null, onJumpTo
       {drillMode === "klausur" && (
         <div className="space-y-6">
           {/* 5-Step Progress Hairline */}
-          <div className="space-y-2 border-b border-[#E5E1D8] pb-3">
+          <div className="space-y-2 border-b border-[var(--line)] pb-3">
             <div className="flex items-center justify-between">
-              {stepsList.map((s, i) => {
+              {stepsList.map((s) => {
                 const isActive = step === s.num;
                 const isDone = step > s.num;
                 return (
@@ -534,34 +593,34 @@ export default function Quiz({ lang = "zh", vault = null, cards = null, onJumpTo
                     key={s.num}
                     type="button"
                     onClick={() => setStep(s.num)}
+                    aria-current={isActive ? "step" : undefined}
                     className={`flex items-center gap-1.5 font-mono text-xs transition-colors ${
                       isActive
-                        ? "text-[#4338CA] font-medium"
+                        ? "text-[var(--accent)]"
                         : isDone
-                        ? "text-[#1C1B17] hover:text-[#4338CA]"
-                        : "text-[#6B675C] hover:text-[#1C1B17]"
+                        ? "text-[var(--ink)] hover:text-[var(--accent)]"
+                        : "text-[var(--gray)] hover:text-[var(--ink)]"
                     }`}
                   >
                     <span
-                      className={`flex h-4 w-4 items-center justify-center rounded-sm text-[10px] ${
+                      className={`meta-text flex h-5 w-5 items-center justify-center border-b text-center ${
                         isActive
-                          ? "bg-[#4338CA] text-white"
+                          ? "border-[var(--accent)] text-[var(--accent)]"
                           : isDone
-                          ? "border border-[#1C1B17] text-[#1C1B17]"
-                          : "border border-[#E5E1D8] text-[#6B675C]"
+                          ? "border-[var(--ink)] text-[var(--ink)]"
+                          : "border-[var(--line)] text-[var(--gray)]"
                       }`}
                     >
                       {s.num}
                     </span>
                     <span>{lang === "de" ? s.labelDE : `${s.labelDE} ${s.labelZH}`}</span>
-                    {i < stepsList.length - 1 && <span className="ml-2 text-[#E5E1D8]">·</span>}
                   </button>
                 );
               })}
             </div>
 
             {/* V4 ddHard mounting: below step hairline, permanent mono 11px gray */}
-            <div className="text-[11px] font-mono text-[#6B675C]">
+            <div className="meta-text font-mono text-[var(--gray)]">
               {tr.ddHard}
             </div>
           </div>
@@ -570,21 +629,21 @@ export default function Quiz({ lang = "zh", vault = null, cards = null, onJumpTo
           {step === 1 && (
             <div className="space-y-4">
               <div className="flex items-center justify-between">
-                <h2 className="font-serif text-lg font-normal text-[#1C1B17]">
+                <h2 className="font-serif text-lg font-normal text-[var(--ink)]">
                   {lang === "de" ? "1. Klausur-Thema wählen" : "1. 选择自测模考主题"}
                 </h2>
-                <span className="font-mono text-[10px] text-[#4338CA] border border-[#4338CA]/30 px-2 py-0.5 rounded-sm">
-                  AFB I–III · Klausurrelevant
+                <span className="font-mono meta-text text-[var(--accent)]">
+                  AFB I–III, Klausurrelevant
                 </span>
               </div>
 
-              <p className="font-sans text-xs text-[#6B675C]">
+              <p className="zh-translation">
                 {lang === "de"
                   ? "Auswahl basiert ausschließlich auf Notizen mit klausurrelevant: true (Lehrplan EF)."
                   : "题目严格基于标记为 klausurrelevant: true 的 EF 大纲知识库笔记生成。"}
               </p>
 
-              <div className="divide-y divide-[#E5E1D8] border border-[#E5E1D8] bg-white rounded-sm">
+              <div className="divide-y divide-[var(--line)]">
                 {(orderedThemen.length > 0
                   ? orderedThemen
                   : [{ thema: MOCK_QUIZ.thema, fach: MOCK_QUIZ.fach, note: null }]
@@ -595,44 +654,36 @@ export default function Quiz({ lang = "zh", vault = null, cards = null, onJumpTo
                       key={item.thema}
                       type="button"
                       onClick={() => setSelectedThema(item.thema)}
-                      className={`flex w-full items-center justify-between p-4 text-left transition-colors ${
-                        isSelected ? "bg-[#ECE7DC]/40" : "hover:bg-[#FAF9F6]"
+                      aria-pressed={isSelected}
+                      className={`flex w-full items-center justify-between border-l-2 py-4 pl-4 pr-2 text-left transition-colors ${
+                        isSelected
+                          ? "border-[var(--accent)]"
+                          : "border-transparent hover:border-[var(--line)]"
                       }`}
                     >
                       <div>
                         <div className="flex items-center gap-2">
-                          <span className="font-serif text-base font-normal text-[#1C1B17]">
+                          <span className="font-serif text-base font-normal text-[var(--ink)]">
                             {item.thema}
                           </span>
-                          <span className="font-mono text-[10px] uppercase text-[#6B675C] border border-[#E5E1D8] px-1 py-0.2 rounded-sm">
+                          <span className="font-mono meta-text uppercase text-[var(--gray)]">
                             {item.fach}
                           </span>
                         </div>
-                        <div className="font-sans text-xs text-[#6B675C] mt-0.5">
+                        <div className="zh-translation mt-0.5">
                           {lang === "de"
-                            ? "3-stufige Klausuraufgabe (darstellen · analysieren · beurteilen)"
-                            : "三段式经典大题（概述 · 分析 · 评价）"}
+                            ? "Selbst zusammengestellte Übungsaufgabe (darstellen · analysieren · beurteilen)"
+                            : "自编三段式练习大题（概述 · 分析 · 评价）"}
                         </div>
                       </div>
-                      <div className="flex items-center gap-3">
-                        <span className="font-mono text-[10px] border border-[#6B675C]/30 text-[#6B675C] px-1.5 py-0.5 rounded-sm">
-                          AFB II
-                        </span>
-                        <span
-                          className={`h-3 w-3 rounded-full border ${
-                            isSelected
-                              ? "border-[#4338CA] bg-[#4338CA]"
-                              : "border-[#E5E1D8] bg-white"
-                          }`}
-                        />
-                      </div>
+                      <span className="font-mono meta-text text-[var(--gray)]">AFB II</span>
                     </button>
                   );
                 })}
               </div>
 
               {/* V4 ddInterleave mounting: below topics list, permanent mono 11px gray */}
-              <div className="font-mono text-[11px] text-[#6B675C] pt-1">
+              <div className="font-mono meta-text text-[var(--gray)] pt-1">
                 {tr.ddInterleave}
               </div>
 
@@ -640,9 +691,9 @@ export default function Quiz({ lang = "zh", vault = null, cards = null, onJumpTo
                 <button
                   type="button"
                   onClick={() => setStep(2)}
-                  className="rounded-sm border border-[#1C1B17] bg-[#1C1B17] px-5 py-2 text-xs font-mono uppercase tracking-wider text-white hover:bg-[#4338CA] hover:border-[#4338CA] active:scale-[0.97] transition-all"
+                  className={primaryTextActionClass}
                 >
-                  {lang === "de" ? "Aufgabe anzeigen →" : "查看题目 →"}
+                  {lang === "de" ? "Aufgabe anzeigen" : "查看题目"}
                 </button>
               </div>
             </div>
@@ -651,91 +702,89 @@ export default function Quiz({ lang = "zh", vault = null, cards = null, onJumpTo
           {/* Step 2: Aufgabe */}
           {step === 2 && (
             <div className="space-y-6">
-              <div className="flex items-center justify-between border-b border-[#E5E1D8] pb-2">
+              <div className="flex items-center justify-between border-b border-[var(--line)] pb-2">
                 <div>
-                  <span className="font-mono text-[10px] uppercase text-[#6B675C]">
+                  <span className="font-mono meta-text uppercase text-[var(--gray)]">
                     {currentQuiz.fach} · Klausurteil
                   </span>
-                  <h2 className="font-serif text-xl font-normal text-[#1C1B17]">
+                  <h2 className="font-serif text-xl font-normal text-[var(--ink)]">
                     {currentQuiz.thema}
                   </h2>
                 </div>
-                <span className="font-mono text-[11px] text-[#4338CA] border border-[#4338CA]/30 px-2 py-0.5 rounded-sm">
-                  {currentQuiz.tasks.length} Teilaufgaben · {maxScore} Pkt.
+                <span className="font-mono meta-text text-[var(--accent)]">
+                  {currentQuiz.tasks.length} Teilaufgaben, {maxScore} Pkt.
                 </span>
               </div>
 
               {/* Material block */}
               <div className="space-y-1.5">
                 {/* V4 ddExample mounting: one line above quote block, permanent mono 11px gray */}
-                <div className="font-mono text-[11px] text-[#6B675C]">
+                <div className="font-mono meta-text text-[var(--gray)]">
                   {tr.ddExample}
                 </div>
 
-                <div className="flex items-center justify-between text-xs font-mono text-[#6B675C]">
+                <div className="flex items-center justify-between text-xs font-mono text-[var(--gray)]">
                   <span>MATERIAL / 原始素材</span>
                   <button
                     type="button"
                     onClick={() => onJumpToLibrary?.(currentQuiz.thema)}
-                    className="text-[10px] text-[#4338CA] hover:underline"
+                    className="meta-text text-[var(--accent)] hover:underline"
                   >
                     [{currentQuiz.notePath}]
                   </button>
                 </div>
-                <blockquote className="border-l-2 border-[#E5E1D8] bg-[#FAF9F6] p-4 font-serif text-sm leading-relaxed text-[#1C1B17]">
+                <blockquote className="de-reading border-l-2 border-[var(--line)] pl-4 text-sm leading-relaxed text-[var(--ink)]">
                   {currentQuiz.materialQuote}
                 </blockquote>
               </div>
 
               {/* Tasks List */}
               <div className="space-y-3">
-                <div className="text-xs font-mono text-[#6B675C]">
+                <div className="text-xs font-mono text-[var(--gray)]">
                   AUFGABENSTELLUNG / 题目指令
                 </div>
-                <div className="divide-y divide-[#E5E1D8] border border-[#E5E1D8] bg-white rounded-sm">
+                <ol className="divide-y divide-[var(--line)]">
                   {currentQuiz.tasks.map((task, idx) => (
-                    <div key={task.operator + idx} className="p-4 space-y-1.5">
+                    <li key={task.operator + idx} className="space-y-1.5 py-4">
                       <div className="flex items-center justify-between">
                         <div className="flex items-center gap-2">
-                          <span className="font-mono text-xs font-bold text-[#1C1B17]">
+                          <span className="font-mono text-xs font-bold text-[var(--ink)]">
                             {idx + 1}.
                           </span>
-                          <span className="font-mono text-xs font-semibold uppercase text-[#4338CA] border border-[#4338CA]/30 px-1.5 py-0.2 rounded-sm">
+                          <span className="font-mono text-xs font-semibold uppercase text-[var(--accent)]">
                             {task.operator}
                           </span>
-                          <span className="font-mono text-[10px] text-[#6B675C]">
+                          <span className="font-mono meta-text text-[var(--gray)]">
                             {task.afb}
                           </span>
                         </div>
-                        <span className="font-mono text-[10px] text-[#6B675C]">
+                        <span className="font-mono meta-text text-[var(--gray)]">
                           [{task.sourceRef}]
                         </span>
                       </div>
-                      <p className="font-serif text-sm text-[#1C1B17] leading-relaxed">
+                      <p className="de-reading text-sm leading-relaxed text-[var(--ink)]">
                         {task.promptDE}
                       </p>
-                      <p className="font-sans text-xs text-[#6B675C]">
-                        {task.promptZH}
-                      </p>
-                    </div>
+                      <p className="zh-translation">{task.promptZH}</p>
+                    </li>
                   ))}
-                </div>
+                </ol>
               </div>
 
               <div className="flex justify-between pt-2">
                 <button
                   type="button"
                   onClick={() => setStep(1)}
-                  className="rounded-sm border border-[#E5E1D8] bg-white px-4 py-2 text-xs font-sans text-[#6B675C] hover:text-[#1C1B17] transition-all"
+                  className={secondaryTextActionClass}
                 >
-                  ← {lang === "de" ? "Zurück" : "上一步"}
+                  {lang === "de" ? "Zurück" : "上一步"}
                 </button>
                 <button
                   type="button"
                   onClick={() => setStep(3)}
-                  className="rounded-sm border border-[#1C1B17] bg-[#1C1B17] px-5 py-2 text-xs font-mono uppercase tracking-wider text-white hover:bg-[#4338CA] hover:border-[#4338CA] active:scale-[0.97] transition-all"
+                  className={primaryTextActionClass}
                 >
-                  {lang === "de" ? "Zur Antwort & Timer →" : "开始作答与计时 →"}
+                  {lang === "de" ? "Zur Antwort & Timer" : "开始作答与计时"}
                 </button>
               </div>
             </div>
@@ -744,33 +793,30 @@ export default function Quiz({ lang = "zh", vault = null, cards = null, onJumpTo
           {/* Step 3: Antwort */}
           {step === 3 && (
             <div className="space-y-6">
-              <div className="flex items-center justify-between border border-[#E5E1D8] bg-white p-4 rounded-sm">
+              <div className="flex flex-wrap items-center justify-between gap-3 border-b border-[var(--line)] pb-3">
                 <div className="flex items-baseline gap-3">
-                  <span className="font-mono text-3xl font-normal tabular-nums text-[#1C1B17] tracking-tight">
-                    {mm}:{ss}
+                  <span
+                    role="timer"
+                    aria-label={`Bearbeitungszeit ${essayTimer.formatted}`}
+                    className="font-mono text-3xl font-normal tabular-nums tracking-tight text-[var(--ink)]"
+                  >
+                    {essayTimer.formatted}
                   </span>
-                  <span className="font-mono text-xs text-[#6B675C]">
-                    / 45:00 Klausurziel (Space zum Starten/Stoppen)
+                  <span className="font-mono text-xs text-[var(--gray)]">
+                    / 45:00 Klausurziel, Space zum Starten oder Stoppen
                   </span>
                 </div>
-                <div className="flex items-center gap-2">
-                  <button
-                    type="button"
-                    onClick={() => setSec(0)}
-                    className="px-2.5 py-1.5 font-mono text-[11px] text-[#6B675C] hover:text-[#1C1B17]"
-                  >
+                <div className="flex items-center gap-3">
+                  <button type="button" onClick={essayTimer.reset} className={quietActionClass}>
                     Reset
                   </button>
                   <button
                     type="button"
-                    onClick={() => setTimerRunning((r) => !r)}
-                    className={`px-4 py-1.5 font-mono text-xs uppercase tracking-wider rounded-sm border transition-all duration-150 active:scale-[0.96] ${
-                      timerRunning
-                        ? "border-[#1C1B17] bg-[#1C1B17] text-white"
-                        : "border-[#E5E1D8] bg-white text-[#1C1B17] hover:border-[#4338CA] hover:text-[#4338CA]"
-                    }`}
+                    onClick={essayTimer.toggle}
+                    aria-pressed={essayTimer.running}
+                    className={`${quietActionClass} ${essayTimer.running ? "text-[var(--accent)]" : ""}`}
                   >
-                    {timerRunning ? "Stopp" : "Start"}
+                    {essayTimer.running ? "Stopp" : "Start"}
                   </button>
                 </div>
               </div>
@@ -780,16 +826,23 @@ export default function Quiz({ lang = "zh", vault = null, cards = null, onJumpTo
                   <div key={task.operator + idx} className="space-y-1.5">
                     <div className="flex items-center justify-between text-xs">
                       <div className="flex items-center gap-2">
-                        <span className="font-mono font-bold text-[#1C1B17]">Teil {idx + 1}:</span>
-                        <span className="font-mono uppercase text-[#4338CA]">{task.operator}</span>
-                        <span className="font-mono text-[10px] text-[#6B675C]">({task.afb})</span>
+                        <span className="font-mono font-bold text-[var(--ink)]">Teil {idx + 1}:</span>
+                        <span className="font-mono uppercase text-[var(--accent)]">{task.operator}</span>
+                        <span className="font-mono meta-text text-[var(--gray)]">({task.afb})</span>
                       </div>
-                      <span className="font-mono text-[10px] text-[#6B675C]">
+                      <span className="font-mono meta-text text-[var(--gray)]">
                         [{task.sourceRef}]
                       </span>
                     </div>
-                    <p className="font-serif text-xs text-[#6B675C]">{task.promptDE}</p>
+                    <label
+                      htmlFor={`quiz-answer-${idx}`}
+                      className="de-reading block text-sm leading-relaxed text-[var(--ink)]"
+                    >
+                      {task.promptDE}
+                    </label>
+                    <p className="zh-translation">{task.promptZH}</p>
                     <textarea
+                      id={`quiz-answer-${idx}`}
                       rows={4}
                       value={answers[idx]}
                       onChange={(e) => {
@@ -801,7 +854,7 @@ export default function Quiz({ lang = "zh", vault = null, cards = null, onJumpTo
                           ? `Ihre Ausarbeitung zu „${task.operator}“ hier eingeben…`
                           : `在此输入针对“${task.operator}”的作答文本…`
                       }
-                      className="w-full rounded-sm border border-[#E5E1D8] bg-white p-3 font-serif text-sm text-[#1C1B17] placeholder:font-sans placeholder:text-xs placeholder:text-[#6B675C] focus:border-[#4338CA] focus:outline-none transition-colors leading-relaxed"
+                      className="w-full rounded-[var(--radius)] border border-[var(--line)] bg-[var(--surface)] p-3 font-serif text-sm text-[var(--ink)] placeholder:font-sans placeholder:text-xs placeholder:text-[var(--gray)] focus:border-[var(--accent)] transition-colors leading-relaxed"
                     />
                   </div>
                 ))}
@@ -811,9 +864,9 @@ export default function Quiz({ lang = "zh", vault = null, cards = null, onJumpTo
                 <button
                   type="button"
                   onClick={() => setStep(2)}
-                  className="rounded-sm border border-[#E5E1D8] bg-white px-4 py-2 text-xs font-sans text-[#6B675C] hover:text-[#1C1B17] transition-all"
+                  className={secondaryTextActionClass}
                 >
-                  ← {lang === "de" ? "Zurück" : "上一步"}
+                  {lang === "de" ? "Zurück" : "上一步"}
                 </button>
                 <button
                   type="button"
@@ -821,9 +874,9 @@ export default function Quiz({ lang = "zh", vault = null, cards = null, onJumpTo
                     setStep(4);
                     await evaluateAnswers();
                   }}
-                  className="rounded-sm border border-[#1C1B17] bg-[#1C1B17] px-5 py-2 text-xs font-mono uppercase tracking-wider text-white hover:bg-[#4338CA] hover:border-[#4338CA] active:scale-[0.97] transition-all"
+                  className={primaryTextActionClass}
                 >
-                  {lang === "de" ? "Zur Korrektur & Bewertung →" : "提交批改与评分 →"}
+                  {lang === "de" ? "Zur Korrektur & Bewertung" : "提交批改与评分"}
                 </button>
               </div>
             </div>
@@ -833,9 +886,9 @@ export default function Quiz({ lang = "zh", vault = null, cards = null, onJumpTo
           {step === 4 && (
             <div className="space-y-6" aria-live="polite">
               {lmDegraded && (
-                <div className="border border-[#E5E1D8] border-l-2 border-[#B45309] bg-[#FAF9F6] p-3 text-xs font-mono text-[#B45309]">
-                  <div className="font-semibold">{tr.lmDown}</div>
-                  <div className="font-sans text-[11px] text-[#6B675C] mt-0.5">
+                <div className="border-l-2 border-[var(--warning)] pl-3 text-sm text-[var(--warning)]">
+                  <div className="font-mono font-semibold">{tr.lmDown}</div>
+                  <div className="zh-translation mt-0.5">
                     {lang === "de"
                       ? "KI-Engine ist nicht verbunden. Die Bewertung erfolgt im Selbstprüf-Modus anhand der offiziellen AFB-Rubriken (Engine in den KI-Einstellungen des KI-Tutors wählen)."
                       : "AI引擎未连接。当前已降级为依据官方评分标准自检模式，绝不虚构评分（去KI-Tutor的AI设置里选引擎）。"}
@@ -844,7 +897,7 @@ export default function Quiz({ lang = "zh", vault = null, cards = null, onJumpTo
               )}
 
               {isEvaluating && (
-                <div className="p-6 text-center font-mono text-xs text-[#6B675C]">
+                <div className="py-6 text-center font-mono text-xs text-[var(--gray)]">
                   denkt nach… / 智能批改评估中…
                 </div>
               )}
@@ -853,28 +906,28 @@ export default function Quiz({ lang = "zh", vault = null, cards = null, onJumpTo
               {evaluations.some(
                 (e) => e.operatorVerfehlt || e.fachbegriffFalsch || e.belegFehlt || e.vorgehenFalsch
               ) && (
-                <div className="font-mono text-[11px] text-[#6B675C] bg-[#FAF9F6] border border-[#E5E1D8] p-2 rounded-sm flex items-center justify-between">
+                <div className="flex items-center justify-between border-y border-[var(--line)] py-2 font-mono meta-text text-[var(--gray)]">
                   <span>{tr.ddError}</span>
-                  <span className="text-[10px] text-[#B45309]">Defizite erkannt / 发现待优化项</span>
+                  <span className="meta-text text-[var(--warning)]">Defizite erkannt / 发现待优化项</span>
                 </div>
               )}
 
               {/* Total score summary header */}
-              <div className="flex items-center justify-between border border-[#E5E1D8] bg-white p-4 rounded-sm">
+              <div className="flex items-center justify-between border-y border-[var(--line)] py-3">
                 <div>
-                  <div className="font-mono text-xs text-[#6B675C] uppercase">
+                  <div className="font-mono text-xs text-[var(--gray)] uppercase">
                     Gesamturteil / 总体成绩
                   </div>
-                  <div className="font-serif text-2xl font-normal text-[#1C1B17] mt-0.5">
+                  <div className="font-serif text-2xl font-normal text-[var(--ink)] mt-0.5">
                     {totalScore} / {maxScore} Punkte{" "}
-                    <span className="font-mono text-xs text-[#6B675C]">
+                    <span className="font-mono text-xs text-[var(--gray)]">
                       ({Math.round((totalScore / maxScore) * 100)}%)
                     </span>
                   </div>
                 </div>
                 <div className="text-right">
-                  <span className="font-mono text-xs text-[#6B675C]">Bearbeitungszeit / 用时</span>
-                  <div className="font-mono text-base text-[#1C1B17]">{mm}:{ss}</div>
+                  <span className="font-mono text-xs text-[var(--gray)]">Bearbeitungszeit / 用时</span>
+                  <div className="font-mono text-base text-[var(--ink)]">{essayTimer.formatted}</div>
                 </div>
               </div>
 
@@ -885,24 +938,24 @@ export default function Quiz({ lang = "zh", vault = null, cards = null, onJumpTo
                   return (
                     <div
                       key={task.operator + idx}
-                      className="border border-[#E5E1D8] bg-white p-4 rounded-sm space-y-3"
+                      className="space-y-3 border-t border-[var(--line)] pt-4"
                     >
                       <div className="flex items-center justify-between">
                         <div className="flex items-center gap-2">
-                          <span className="font-mono text-xs font-bold text-[#1C1B17]">
+                          <span className="font-mono text-xs font-bold text-[var(--ink)]">
                             Teil {idx + 1}:
                           </span>
-                          <span className="font-mono text-xs uppercase text-[#4338CA]">
+                          <span className="font-mono text-xs uppercase text-[var(--accent)]">
                             {task.operator}
                           </span>
-                          <span className="font-mono text-[10px] text-[#6B675C]">
+                          <span className="font-mono meta-text text-[var(--gray)]">
                             ({task.afb})
                           </span>
                         </div>
                         <button
                           type="button"
                           onClick={() => onJumpToLibrary?.(currentQuiz.thema)}
-                          className="font-mono text-[10px] text-[#4338CA] hover:underline"
+                          className="font-mono meta-text text-[var(--accent)] hover:underline"
                         >
                           [{ev?.citation || currentQuiz.notePath}]
                         </button>
@@ -925,14 +978,15 @@ export default function Quiz({ lang = "zh", vault = null, cards = null, onJumpTo
                               type="button"
                               onClick={() => togglePill(idx, criterion.id)}
                               title={criterion.descriptionDE}
-                              className={`rounded-sm px-2.5 py-1 text-xs font-mono transition-all ${
+                              aria-pressed={Boolean(isHit)}
+                              className={`${rubricControlClass} ${
                                 isHit
-                                  ? "bg-[#1C1B17] text-white border border-[#1C1B17]"
-                                  : "bg-transparent text-[#6B675C] border border-[#E5E1D8] hover:border-[#6B675C]"
+                                  ? "border-[var(--warning)] text-[var(--warning)]"
+                                  : "border-transparent text-[var(--gray)] hover:border-[var(--line)]"
                               }`}
                             >
                               {criterion.name}
-                              <span className="ml-1 text-[10px] opacity-75">
+                              <span className="zh-translation ml-1">
                                 {criterion.labelZH}
                               </span>
                             </button>
@@ -940,13 +994,11 @@ export default function Quiz({ lang = "zh", vault = null, cards = null, onJumpTo
                         })}
                       </div>
 
-                      <div className="bg-[#FAF9F6] p-3 rounded-sm border border-[#E5E1D8]/60 space-y-1">
-                        <p className="font-serif text-xs text-[#1C1B17] leading-relaxed">
+                      <div className="space-y-1 border-l-2 border-[var(--line)] pl-3">
+                        <p className="de-reading text-sm leading-relaxed text-[var(--ink)]">
                           {ev?.feedbackDE}
                         </p>
-                        <p className="font-sans text-[11px] text-[#6B675C]">
-                          {ev?.feedbackZH}
-                        </p>
+                        <p className="zh-translation">{ev?.feedbackZH}</p>
                       </div>
                     </div>
                   );
@@ -957,16 +1009,16 @@ export default function Quiz({ lang = "zh", vault = null, cards = null, onJumpTo
                 <button
                   type="button"
                   onClick={() => setStep(3)}
-                  className="rounded-sm border border-[#E5E1D8] bg-white px-4 py-2 text-xs font-sans text-[#6B675C] hover:text-[#1C1B17] transition-all"
+                  className={secondaryTextActionClass}
                 >
-                  ← {lang === "de" ? "Zurück zur Antwort" : "返回作答"}
+                  {lang === "de" ? "Zurück zur Antwort" : "返回作答"}
                 </button>
                 <button
                   type="button"
                   onClick={() => setStep(5)}
-                  className="rounded-sm border border-[#1C1B17] bg-[#1C1B17] px-5 py-2 text-xs font-mono uppercase tracking-wider text-white hover:bg-[#4338CA] hover:border-[#4338CA] active:scale-[0.97] transition-all"
+                  className={primaryTextActionClass}
                 >
-                  {lang === "de" ? "Zum Fehlerlog-Entwurf →" : "生成错题补丁 →"}
+                  {lang === "de" ? "Zum Fehlerlog-Entwurf" : "生成错题补丁"}
                 </button>
               </div>
             </div>
@@ -975,12 +1027,18 @@ export default function Quiz({ lang = "zh", vault = null, cards = null, onJumpTo
           {/* Step 5: Fehlerlog */}
           {step === 5 && (
             <div className="space-y-6">
-              <div className="flex items-center justify-between border-b border-[#E5E1D8] pb-2">
+              <div className="flex items-center justify-between border-b border-[var(--line)] pb-2">
                 <div>
-                  <h2 className="font-serif text-xl font-normal text-[#1C1B17]">
+                  <h2 className="font-serif text-xl font-normal text-[var(--ink)]">
                     {lang === "de" ? "5. Fehlerlog-Eintrag" : "5. 错题日志标本与同步"}
                   </h2>
-                  <div className="font-sans text-xs text-[#6B675C] mt-0.5">
+                  <div
+                    className={
+                      lang === "de"
+                        ? "de-reading mt-0.5 text-sm text-[var(--gray)]"
+                        : "zh-translation mt-0.5"
+                    }
+                  >
                     {lang === "de"
                       ? "Reines Text-Patch zum Einfügen in Obsidian (00_META/Klausur-Training/Fehlerlog.md)."
                       : "纯文本补丁，可一键复制并无缝粘入 Obsidian 对应错题日志。"}
@@ -992,18 +1050,14 @@ export default function Quiz({ lang = "zh", vault = null, cards = null, onJumpTo
                     type="button"
                     onClick={() => sendBack(currentQuiz.thema)}
                     title={tr.ilBack}
-                    className="rounded-sm border border-[#E5E1D8] bg-white px-3.5 py-1.5 font-mono text-xs text-[#6B675C] hover:border-[#4338CA] hover:text-[#4338CA] transition-all duration-150 active:scale-95"
+                    className={quietActionClass}
                   >
                     {tr.ilBack}
                   </button>
                   <button
                     type="button"
                     onClick={copyPatch}
-                    className={`rounded-sm border px-3.5 py-1.5 font-mono text-xs transition-all duration-150 ${
-                      copied
-                        ? "border-[#4338CA] bg-[#4338CA] text-white"
-                        : "border-[#1C1B17] bg-[#1C1B17] text-white hover:bg-[#4338CA] hover:border-[#4338CA]"
-                    }`}
+                    className={`${primaryTextActionClass} ${copied ? "text-[var(--ink)]" : ""}`}
                   >
                     {copied ? tr.copied : tr.copyPatch}
                   </button>
@@ -1011,42 +1065,23 @@ export default function Quiz({ lang = "zh", vault = null, cards = null, onJumpTo
               </div>
 
               {ilBackMsg && (
-                <div className="font-mono text-[11px] text-[#4338CA]">
+                <div className="font-mono meta-text text-[var(--accent)]">
                   {ilBackMsg}
                 </div>
               )}
 
               {/* V4 ddRetrieval mounting: inside Fehlerlog view */}
-              <div className="font-mono text-[11px] text-[#6B675C]">
+              <div className="font-mono meta-text text-[var(--gray)]">
                 {tr.ddRetrieval}
               </div>
 
-              <div className="border border-[#E5E1D8] bg-[#FAF9F6] p-4 rounded-sm space-y-2">
-                <div className="flex items-center justify-between text-xs font-mono text-[#6B675C]">
+              <div className="space-y-2 border-t border-[var(--line)] pt-4">
+                <div className="flex items-center justify-between text-xs font-mono text-[var(--gray)]">
                   <span>DIFF-PATCH / 增量文本</span>
                   <span>Obsidian Format</span>
                 </div>
-                <pre className="block bg-white border border-[#E5E1D8] p-3.5 font-mono text-xs text-[#1C1B17] rounded-sm overflow-x-auto leading-relaxed select-all">
-{`--- Fehlerlog.md
-+++ Fehlerlog.md
-+ - [ ] [${currentQuiz.fach}] Thema: ${currentQuiz.thema} (Klausur-Drill)
-+   - Datum: ${new Date().toISOString().slice(0, 10)}
-+   - Zeit: ${mm}:${ss} (Ziel 45 Min)
-+   - Defizite: ${
-    evaluations
-      .map((e, idx) => {
-        const fails = [];
-        if (e.operatorVerfehlt) fails.push(`Teil ${idx + 1}: Operator verfehlt`);
-        if (e.fachbegriffFalsch) fails.push(`Teil ${idx + 1}: Fachbegriff unpräzise`);
-        if (e.belegFehlt) fails.push(`Teil ${idx + 1}: Beleg fehlt`);
-        if (e.vorgehenFalsch) fails.push(`Teil ${idx + 1}: Vorgehen falsch`);
-        return fails.join(", ");
-      })
-      .filter(Boolean)
-      .join("; ") || "Keine gravierenden Mängel"
-  }
-+   - Belegstelle: ${currentQuiz.notePath}
-`}
+                <pre className="block overflow-x-auto border-l-2 border-[var(--line)] pl-3 font-mono text-xs leading-relaxed text-[var(--ink)] select-all">
+                  {klausurPatch}
                 </pre>
               </div>
 
@@ -1054,19 +1089,19 @@ export default function Quiz({ lang = "zh", vault = null, cards = null, onJumpTo
                 <button
                   type="button"
                   onClick={() => setStep(4)}
-                  className="rounded-sm border border-[#E5E1D8] bg-white px-4 py-2 text-xs font-sans text-[#6B675C] hover:text-[#1C1B17] transition-all"
+                  className={secondaryTextActionClass}
                 >
-                  ← {lang === "de" ? "Zurück zur Korrektur" : "返回批改"}
+                  {lang === "de" ? "Zurück zur Korrektur" : "返回批改"}
                 </button>
                 <button
                   type="button"
                   onClick={() => {
                     setStep(1);
-                    setSec(0);
-                    setTimerRunning(false);
+                    essayTimer.stop();
+                    essayTimer.reset();
                     setAnswers(["", "", ""]);
                   }}
-                  className="rounded-sm border border-[#E5E1D8] bg-white px-4 py-2 text-xs font-sans text-[#1C1B17] hover:border-[#4338CA] hover:text-[#4338CA] transition-all"
+                  className={primaryTextActionClass}
                 >
                   {lang === "de" ? "Neuen Durchlauf starten" : "开始新一轮自测"}
                 </button>
@@ -1082,68 +1117,69 @@ export default function Quiz({ lang = "zh", vault = null, cards = null, onJumpTo
       {drillMode === "vergleich" && (
         <div className="space-y-6">
           {/* Header & Sub-Bar */}
-          <div className="flex items-center justify-between border-b border-[#E5E1D8] pb-3">
+          <div className="flex flex-wrap items-center justify-between gap-3 border-b border-[var(--line)] pb-3">
             <div>
               <div className="flex items-center gap-2">
-                <span className="font-mono text-xs font-bold text-[#1C1B17]">
+                <span className="font-mono text-xs font-bold text-[var(--ink)]">
                   {currentVergleich.fach}
                 </span>
-                <span className="text-[#E5E1D8]">·</span>
-                <span className="font-serif text-lg font-normal text-[#1C1B17]">
+                <span className="font-serif text-lg font-normal text-[var(--ink)]">
                   {currentVergleich.thema}
                 </span>
-                <span className="font-mono text-[10px] text-[#4338CA] border border-[#4338CA]/30 px-1.5 py-0.2 rounded-sm">
+                <span className="font-mono meta-text text-[var(--accent)]">
                   {currentVergleich.afb}
                 </span>
               </div>
-              <div className="font-mono text-[11px] text-[#6B675C] mt-1">
+              <div className="font-mono meta-text text-[var(--gray)] mt-1">
                 {tr.ddHard}
               </div>
             </div>
 
             {/* Timer */}
             <div className="flex items-center gap-3">
-              <span className="font-mono text-2xl font-normal tabular-nums text-[#1C1B17]">
-                {vMm}:{vSs}
+              <span
+                role="timer"
+                aria-label={`Vergleichszeit ${vergleichTimer.formatted}`}
+                className="font-mono text-2xl font-normal tabular-nums text-[var(--ink)]"
+              >
+                {vergleichTimer.formatted}
               </span>
               <button
                 type="button"
-                onClick={() => setVTimerRunning((r) => !r)}
-                className={`px-3 py-1 font-mono text-xs uppercase tracking-wider rounded-sm border transition-all ${
-                  vTimerRunning
-                    ? "border-[#1C1B17] bg-[#1C1B17] text-white"
-                    : "border-[#E5E1D8] bg-white text-[#1C1B17] hover:border-[#4338CA]"
-                }`}
+                onClick={vergleichTimer.toggle}
+                aria-pressed={vergleichTimer.running}
+                className={`${quietActionClass} ${vergleichTimer.running ? "text-[var(--accent)]" : ""}`}
               >
-                {vTimerRunning ? "Stopp" : "Start"}
+                {vergleichTimer.running ? "Stopp" : "Start"}
               </button>
             </div>
           </div>
 
           {/* Topic Selector Tabs for Vergleich items (B2-sortiert) */}
-          <div className="flex gap-2 overflow-x-auto pb-1">
+          <nav aria-label="Vergleichsaufgaben" className="flex overflow-x-auto border-b border-[var(--line)]">
             {orderedVergleichItems.map((item, idx) => (
               <button
                 key={item.id}
                 type="button"
                 onClick={() => setActiveVergleichIdx(idx)}
-                className={`px-3 py-1 rounded-sm text-xs font-mono transition-all border ${
+                aria-current={activeVergleichIdx === idx ? true : undefined}
+                className={`-mb-px shrink-0 border-b-2 px-3 py-2 font-mono text-xs transition-colors ${
                   activeVergleichIdx === idx
-                    ? "border-[#4338CA] text-[#4338CA] bg-[#4338CA]/5 font-medium"
-                    : "border-[#E5E1D8] text-[#6B675C] hover:text-[#1C1B17] bg-white"
+                    ? "border-[var(--accent)] text-[var(--accent)]"
+                    : "border-transparent text-[var(--gray)] hover:text-[var(--ink)]"
                 }`}
               >
-                {idx + 1}. {item.fach} · {item.thema}
+                {idx + 1}. {item.fach}, {item.thema}
               </button>
             ))}
-          </div>
+          </nav>
 
           {/* §1.1 辨别题展示: 题干区 (DE serif 上 / ZH sans 小灰下) + Operator 高亮 */}
-          <div className="border border-[#E5E1D8] bg-white p-5 rounded-sm space-y-4">
+          <div className="space-y-4 border-b border-[var(--line)] pb-5">
             <div className="space-y-1.5">
-              <div className="flex items-center justify-between text-xs font-mono text-[#6B675C]">
+              <div className="flex items-center justify-between text-xs font-mono text-[var(--gray)]">
                 <div className="flex items-center gap-2">
-                  <span className="uppercase text-[#4338CA] font-semibold border border-[#4338CA]/30 px-1.5 py-0.2 rounded-sm">
+                  <span className="font-semibold uppercase text-[var(--accent)]">
                     {currentVergleich.operator}
                   </span>
                   <span>AUFGABE / 辨别任务</span>
@@ -1151,103 +1187,84 @@ export default function Quiz({ lang = "zh", vault = null, cards = null, onJumpTo
                 <button
                   type="button"
                   onClick={() => onJumpToLibrary?.(currentVergleich.thema)}
-                  className="text-[10px] text-[#4338CA] hover:underline"
+                  className="meta-text text-[var(--accent)] hover:underline"
                 >
                   [{currentVergleich.sourceRef}]
                 </button>
               </div>
 
-              <div className="font-serif text-base text-[#1C1B17] leading-relaxed">
+              <div className="de-reading text-base leading-relaxed text-[var(--ink)]">
                 {currentVergleich.promptDE}
               </div>
-              <div className="font-sans text-xs text-[#6B675C]">
-                {currentVergleich.promptZH}
-              </div>
+              <div className="zh-translation">{currentVergleich.promptZH}</div>
             </div>
 
             {/* Material Quote Block */}
-            <blockquote className="border-l-2 border-[#E5E1D8] bg-[#FAF9F6] p-3.5 font-serif text-xs leading-relaxed text-[#1C1B17]">
+            <blockquote className="de-reading border-l-2 border-[var(--line)] pl-4 text-sm leading-relaxed text-[var(--ink)]">
               {currentVergleich.materialQuote}
             </blockquote>
 
             {/* 二选一程序按钮 (A/B 文字按钮，下划线/细线分隔，不是两色大按钮，键盘 1/2 可选) */}
             <div className="space-y-1.5 pt-1">
-              <div className="flex items-center justify-between text-xs font-mono text-[#6B675C]">
+              <div className="flex items-center justify-between text-xs font-mono text-[var(--gray)]">
                 <span>VERFAHRENSWAHL / 程序概念选择 (1 / 2)</span>
                 <span>{selectedOption ? `Gewählt: Option ${selectedOption}` : "Bitte wählen"}</span>
               </div>
-              <div className="grid grid-cols-2 divide-x divide-[#E5E1D8] border border-[#E5E1D8] rounded-sm bg-white overflow-hidden">
+              <div className="grid grid-cols-2 divide-x divide-[var(--line)] border-y border-[var(--line)]">
                 <button
                   type="button"
                   onClick={() => setSelectedOption("A")}
-                  className={`py-3 px-4 text-left font-serif text-sm transition-colors cursor-pointer ${
+                  aria-pressed={selectedOption === "A"}
+                  className={`px-4 py-3 text-left font-serif text-sm transition-colors ${
                     selectedOption === "A"
-                      ? "bg-[#1C1B17] text-white"
-                      : "bg-white text-[#1C1B17] hover:bg-[#FAF9F6]"
+                      ? "bg-transparent text-[var(--accent)]"
+                      : "text-[var(--ink)] hover:text-[var(--accent)]"
                   }`}
                 >
-                  <div className="flex items-center justify-between">
-                    <span className="font-bold">{currentVergleich.optionA.labelDE}</span>
-                    <kbd className={`font-mono text-[10px] px-1 py-0.2 rounded-sm border ${
-                      selectedOption === "A"
-                        ? "border-white/40 text-white/80"
-                        : "border-[#E5E1D8] text-[#6B675C]"
-                    }`}>
-                      1
-                    </kbd>
+                  <div className="flex items-center justify-between gap-3">
+                    <span>{currentVergleich.optionA.labelDE}</span>
+                    <kbd className="font-mono meta-text text-[var(--gray)]">1</kbd>
                   </div>
-                  <div className={`font-sans text-xs mt-0.5 ${
-                    selectedOption === "A" ? "text-white/70" : "text-[#6B675C]"
-                  }`}>
-                    {currentVergleich.optionA.labelZH}
-                  </div>
+                  <div className="zh-translation mt-0.5">{currentVergleich.optionA.labelZH}</div>
                 </button>
 
                 <button
                   type="button"
                   onClick={() => setSelectedOption("B")}
-                  className={`py-3 px-4 text-left font-serif text-sm transition-colors cursor-pointer ${
+                  aria-pressed={selectedOption === "B"}
+                  className={`px-4 py-3 text-left font-serif text-sm transition-colors ${
                     selectedOption === "B"
-                      ? "bg-[#1C1B17] text-white"
-                      : "bg-white text-[#1C1B17] hover:bg-[#FAF9F6]"
+                      ? "bg-transparent text-[var(--accent)]"
+                      : "text-[var(--ink)] hover:text-[var(--accent)]"
                   }`}
                 >
-                  <div className="flex items-center justify-between">
-                    <span className="font-bold">{currentVergleich.optionB.labelDE}</span>
-                    <kbd className={`font-mono text-[10px] px-1 py-0.2 rounded-sm border ${
-                      selectedOption === "B"
-                        ? "border-white/40 text-white/80"
-                        : "border-[#E5E1D8] text-[#6B675C]"
-                    }`}>
-                      2
-                    </kbd>
+                  <div className="flex items-center justify-between gap-3">
+                    <span>{currentVergleich.optionB.labelDE}</span>
+                    <kbd className="font-mono meta-text text-[var(--gray)]">2</kbd>
                   </div>
-                  <div className={`font-sans text-xs mt-0.5 ${
-                    selectedOption === "B" ? "text-white/70" : "text-[#6B675C]"
-                  }`}>
-                    {currentVergleich.optionB.labelZH}
-                  </div>
+                  <div className="zh-translation mt-0.5">{currentVergleich.optionB.labelZH}</div>
                 </button>
               </div>
             </div>
 
             {/* "为什么" 输入框 (textarea 2行，hairline 框，聚焦时单键不劫持) */}
             <div className="space-y-1.5 pt-1">
-              <label className="block text-xs font-mono text-[#6B675C]">
+              <label htmlFor="vergleich-begruendung" className="block font-mono text-xs text-[var(--gray)]">
                 BEGRÜNDUNG / 为什么选它？
               </label>
               <textarea
+                id="vergleich-begruendung"
                 rows={2}
                 value={warumText}
                 onChange={(e) => setWarumText(e.target.value)}
                 placeholder={tr.warumPlaceholder}
-                className="w-full rounded-sm border border-[#E5E1D8] bg-white p-2.5 font-serif text-sm text-[#1C1B17] placeholder:font-sans placeholder:text-xs placeholder:text-[#6B675C] focus:border-[#4338CA] focus:outline-none transition-colors"
+                className="w-full rounded-[var(--radius)] border border-[var(--line)] bg-[var(--surface)] p-2.5 font-serif text-sm text-[var(--ink)] placeholder:font-sans placeholder:text-xs placeholder:text-[var(--gray)] focus:border-[var(--accent)] transition-colors"
               />
             </div>
 
             {/* 提交行: 主按钮 Vergleichen / 对照看看 (选错也可提交进解析，不锁死) */}
-            <div className="flex items-center justify-between pt-2 border-t border-[#E5E1D8]/70">
-              <span className="font-mono text-[11px] text-[#6B675C]">
+            <div className="flex items-center justify-between pt-2 border-t border-[var(--line)]/70">
+              <span className="font-mono meta-text text-[var(--gray)]">
                 {selectedOption ? "Bereit zum Vergleich" : "Wählen Sie A oder B"}
               </span>
               <button
@@ -1257,7 +1274,7 @@ export default function Quiz({ lang = "zh", vault = null, cards = null, onJumpTo
                   setIsSubmitted(true);
                   void evaluateVergleichLM();
                 }}
-                className="rounded-sm border border-[#4338CA] bg-white px-5 py-2 text-xs font-mono uppercase tracking-wider text-[#4338CA] hover:bg-[#4338CA] hover:text-white disabled:opacity-40 active:scale-[0.97] transition-all"
+                className={primaryTextActionClass}
               >
                 {tr.vergleichen}
               </button>
@@ -1266,26 +1283,26 @@ export default function Quiz({ lang = "zh", vault = null, cards = null, onJumpTo
 
           {/* §1.2 对比题 AB 并排 (Tufte 小多组图风格: 两列并排，差异高亮≤3处加粗底线，<900px自动堆叠) */}
           <div className="space-y-2">
-            <div className="flex items-center justify-between text-xs font-mono text-[#6B675C]">
+            <div className="flex items-center justify-between text-xs font-mono text-[var(--gray)]">
               <span>KONTRAST-VERGLEICH / 双向对照（Tufte 多重并排）</span>
-              <span className="text-[10px]">Max 3 Differenz-Markierungen</span>
+              <span className="meta-text">Max 3 Differenz-Markierungen</span>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 border border-[#E5E1D8] bg-white rounded-sm p-4 divide-y md:divide-y-0 md:divide-x divide-[#E5E1D8]">
+            <div className="grid grid-cols-1 gap-y-4 divide-y divide-[var(--line)] md:grid-cols-2 md:divide-x md:divide-y-0">
               {/* Column A */}
               <div className="space-y-2.5 pr-0 md:pr-4">
-                <div className="font-mono text-[11px] uppercase tracking-wider text-[#6B675C] border-b border-[#E5E1D8] pb-1">
-                  {currentVergleich.optionA.column.titleDE}
-                  <div className="font-sans text-[10px] text-[#6B675C]">
-                    {currentVergleich.optionA.column.titleZH}
-                  </div>
+                <div>
+                  <h3 className="de-reading border-b border-[var(--line)] pb-1 text-sm text-[var(--ink)]">
+                    {currentVergleich.optionA.column.titleDE}
+                  </h3>
+                  <p className="zh-translation">{currentVergleich.optionA.column.titleZH}</p>
                 </div>
-                <div className="font-serif text-xs leading-relaxed text-[#1C1B17] bg-[#FAF9F6] p-3 rounded-sm border border-[#E5E1D8]/60">
+                <div className="de-reading border-l-2 border-[var(--line)] pl-4 text-sm leading-relaxed text-[var(--ink)]">
                   {currentVergleich.optionA.column.quoteSegments.map((seg, sIdx) =>
                     seg.highlight ? (
                       <span
                         key={sIdx}
-                        className="font-medium underline decoration-[#4338CA] underline-offset-2"
+                        className="font-medium underline decoration-[var(--accent)] underline-offset-2"
                       >
                         {seg.text}
                       </span>
@@ -1295,10 +1312,10 @@ export default function Quiz({ lang = "zh", vault = null, cards = null, onJumpTo
                   )}
                 </div>
                 <div className="pt-1">
-                  <div className="font-serif text-xs text-[#1C1B17]">
+                  <div className="de-reading text-sm text-[var(--ink)]">
                     {currentVergleich.optionA.column.conclusionDE}
                   </div>
-                  <div className="font-sans text-[11px] text-[#6B675C] mt-0.5">
+                  <div className="zh-translation mt-0.5">
                     {currentVergleich.optionA.column.conclusionZH}
                   </div>
                 </div>
@@ -1306,18 +1323,18 @@ export default function Quiz({ lang = "zh", vault = null, cards = null, onJumpTo
 
               {/* Column B */}
               <div className="space-y-2.5 pt-4 md:pt-0 pl-0 md:pl-4">
-                <div className="font-mono text-[11px] uppercase tracking-wider text-[#6B675C] border-b border-[#E5E1D8] pb-1">
-                  {currentVergleich.optionB.column.titleDE}
-                  <div className="font-sans text-[10px] text-[#6B675C]">
-                    {currentVergleich.optionB.column.titleZH}
-                  </div>
+                <div>
+                  <h3 className="de-reading border-b border-[var(--line)] pb-1 text-sm text-[var(--ink)]">
+                    {currentVergleich.optionB.column.titleDE}
+                  </h3>
+                  <p className="zh-translation">{currentVergleich.optionB.column.titleZH}</p>
                 </div>
-                <div className="font-serif text-xs leading-relaxed text-[#1C1B17] bg-[#FAF9F6] p-3 rounded-sm border border-[#E5E1D8]/60">
+                <div className="de-reading border-l-2 border-[var(--line)] pl-4 text-sm leading-relaxed text-[var(--ink)]">
                   {currentVergleich.optionB.column.quoteSegments.map((seg, sIdx) =>
                     seg.highlight ? (
                       <span
                         key={sIdx}
-                        className="font-medium underline decoration-[#4338CA] underline-offset-2"
+                        className="font-medium underline decoration-[var(--accent)] underline-offset-2"
                       >
                         {seg.text}
                       </span>
@@ -1327,10 +1344,10 @@ export default function Quiz({ lang = "zh", vault = null, cards = null, onJumpTo
                   )}
                 </div>
                 <div className="pt-1">
-                  <div className="font-serif text-xs text-[#1C1B17]">
+                  <div className="de-reading text-sm text-[var(--ink)]">
                     {currentVergleich.optionB.column.conclusionDE}
                   </div>
-                  <div className="font-sans text-[11px] text-[#6B675C] mt-0.5">
+                  <div className="zh-translation mt-0.5">
                     {currentVergleich.optionB.column.conclusionZH}
                   </div>
                 </div>
@@ -1338,24 +1355,24 @@ export default function Quiz({ lang = "zh", vault = null, cards = null, onJumpTo
             </div>
           </div>
 
-          {/* §1.3 Gating & §2 反馈三层 (L1 即时 KR → L2 延迟展开 → L3 过程+元认知) */}
+          {/* §1.3 Gating & §2 反馈三层 (L1 即时 KR, L2 延迟展开, L3 过程+元认知) */}
           {isSubmitted && (
-            <div className="border border-[#E5E1D8] bg-white p-5 rounded-sm space-y-5 animate-fade-in" aria-live="polite">
+            <div className="space-y-5 border-y border-[var(--line)] py-5" aria-live="polite">
               {/* L1 — 即时 KR (Knowledge of Result) */}
-              <div className="space-y-2 border-b border-[#E5E1D8] pb-4">
+              <div className="space-y-2 border-b border-[var(--line)] pb-4">
                 <div className="flex items-center justify-between">
                   <div className="flex items-center gap-3">
                     {isCorrect ? (
-                      <span className="font-mono text-xs font-semibold px-2.5 py-1 rounded-sm bg-[#1C1B17] text-white border border-[#1C1B17]">
+                      <span className="font-mono text-sm font-semibold text-[var(--accent)]">
                         {tr.richtig}
                       </span>
                     ) : (
                       <div className="flex items-center gap-2">
-                        <span className="font-mono text-xs font-semibold px-2.5 py-1 rounded-sm bg-transparent text-[#991B1B] border border-[#991B1B]">
+                        <span className="font-mono text-sm font-semibold text-[var(--warning)]">
                           {tr.falsch}
                         </span>
                         {/* ddError: Fehler sind gute Signale / 选错是好信号 */}
-                        <span className="font-mono text-[11px] text-[#6B675C]">
+                        <span className="font-mono meta-text text-[var(--gray)]">
                           {tr.ddError}
                         </span>
                       </div>
@@ -1366,16 +1383,15 @@ export default function Quiz({ lang = "zh", vault = null, cards = null, onJumpTo
                   <button
                     type="button"
                     onClick={() => setShowL2(true)}
-                    className="font-mono text-xs text-[#4338CA] hover:underline cursor-pointer"
+                    className={primaryTextActionClass}
                   >
-                    {tr.zurErklaerung} →
+                    {tr.zurErklaerung}
                   </button>
                 </div>
 
-                <div className="font-mono text-[11px] text-[#6B675C] pt-1">
-                  {lang === "de"
-                    ? currentVergleich.krFeedbackDE
-                    : currentVergleich.krFeedbackZH}
+                <div className="pt-1">
+                  <p className="de-reading text-sm text-[var(--ink)]">{currentVergleich.krFeedbackDE}</p>
+                  <p className="zh-translation">{currentVergleich.krFeedbackZH}</p>
                 </div>
               </div>
 
@@ -1384,28 +1400,31 @@ export default function Quiz({ lang = "zh", vault = null, cards = null, onJumpTo
                 <button
                   type="button"
                   onClick={() => setShowL2((prev) => !prev)}
-                  className="flex items-center gap-2 font-mono text-xs text-[#1C1B17] hover:text-[#4338CA] transition-colors cursor-pointer"
+                  aria-expanded={showL2}
+                  aria-controls="vergleich-loesung"
+                  className="flex items-center gap-2 font-mono text-xs text-[var(--ink)] transition-colors hover:text-[var(--accent)]"
                 >
                   <svg
-                    width="12"
-                    height="12"
+                    width="16"
+                    height="16"
                     viewBox="0 0 16 16"
                     fill="none"
                     stroke="currentColor"
                     strokeWidth="1.6"
-                    className={`transition-transform duration-200 ${showL2 ? "rotate-90" : ""}`}
+                    aria-hidden="true"
+                    className={`transition-transform duration-150 ${showL2 ? "rotate-90" : ""}`}
                   >
                     <path d="M6 3.5l5 4.5-5 4.5" />
                   </svg>
                   <span>{tr.loesungVergleichen}</span>
-                  <span className="text-[10px] text-[#6B675C]">
+                  <span className="meta-text text-[var(--gray)]">
                     ({showL2 ? "geöffnet / 已展开" : "klicken zum Aufklappen / 点击展开"})
                   </span>
                 </button>
 
                 {showL2 && (
-                  <div className="space-y-3 pt-2 pl-4 border-l-2 border-[#E5E1D8] animate-fade-in">
-                    {/* ① Rubric Pills (v3-aligned 4-dim, manually toggleable) */}
+                  <div id="vergleich-loesung" className="space-y-3 border-l-2 border-[var(--line)] py-2 pl-4">
+                    {/* Rubric Pills (v3-aligned 4-dim, manually toggleable) */}
                     <div className="flex flex-wrap gap-2">
                       {RUBRIC_CRITERIA.map((criterion) => {
                         const isHit =
@@ -1422,14 +1441,15 @@ export default function Quiz({ lang = "zh", vault = null, cards = null, onJumpTo
                             type="button"
                             onClick={() => toggleVergleichPill(criterion.id)}
                             title={criterion.descriptionDE}
-                            className={`px-2.5 py-1 text-xs font-mono rounded-sm border transition-all ${
+                            aria-pressed={isHit}
+                            className={`${rubricControlClass} ${
                               isHit
-                                ? "bg-[#1C1B17] text-white border-[#1C1B17]"
-                                : "border-[#E5E1D8] text-[#6B675C] hover:border-[#6B675C]"
+                                ? "border-[var(--warning)] text-[var(--warning)]"
+                                : "border-transparent text-[var(--gray)] hover:border-[var(--line)]"
                             }`}
                           >
                             {criterion.name}
-                            <span className="ml-1 text-[10px] opacity-75">
+                            <span className="zh-translation ml-1">
                               {criterion.labelZH}
                             </span>
                           </button>
@@ -1437,21 +1457,21 @@ export default function Quiz({ lang = "zh", vault = null, cards = null, onJumpTo
                       })}
                     </div>
 
-                    {/* ② Zitierpflicht chip */}
+                    {/* Zitierpflicht chip */}
                     <div className="flex items-center gap-2 pt-1">
-                      <span className="font-mono text-xs text-[#6B675C]">Belegnachweis:</span>
+                      <span className="font-mono text-xs text-[var(--gray)]">Belegnachweis:</span>
                       <button
                         type="button"
                         onClick={() => onJumpToLibrary?.(currentVergleich.thema)}
-                        className="font-mono text-[10px] text-[#4338CA] bg-[#4338CA]/10 hover:bg-[#4338CA]/20 px-1.5 py-0.5 rounded-sm transition-colors cursor-pointer"
+                        className="font-mono meta-text text-[var(--accent)] underline decoration-[var(--line)] underline-offset-4 transition-colors hover:decoration-[var(--accent)]"
                         title={lang === "de" ? "In Bibliothek öffnen" : "在笔记库中查看"}
                       >
                         [{currentVergleich.sourceRef}]
                       </button>
                     </div>
 
-                    {/* ③ 笔记原文对照 quote */}
-                    <blockquote className="border-l-2 border-[#E5E1D8] bg-[#FAF9F6] p-3 font-serif text-xs leading-relaxed text-[#1C1B17]">
+                    {/* 笔记原文对照 quote */}
+                    <blockquote className="de-reading border-l-2 border-[var(--line)] pl-4 text-sm leading-relaxed text-[var(--ink)]">
                       {currentVergleich.explanationQuote}
                     </blockquote>
                   </div>
@@ -1459,10 +1479,10 @@ export default function Quiz({ lang = "zh", vault = null, cards = null, onJumpTo
               </div>
 
               {/* L3 — 过程 + 元认知 (过程维 pills + "下次先…" + 文本补丁预览) */}
-              <div className="space-y-4 pt-4 border-t border-[#E5E1D8]">
+              <div className="space-y-4 pt-4 border-t border-[var(--line)]">
                 {/* 过程维展示 pill: v3 Vorgehen-dim (manually toggleable, same tokens) */}
                 <div className="flex items-center gap-3">
-                  <span className="font-mono text-[11px] text-[#6B675C]">PROZESSDIMENSION / 过程维:</span>
+                  <span className="font-mono meta-text text-[var(--gray)]">PROZESSDIMENSION / 过程维:</span>
                   <div className="flex gap-2">
                     {(() => {
                       const criterion = RUBRIC_CRITERIA.find((c) => c.id === "vorgehen")!;
@@ -1472,19 +1492,20 @@ export default function Quiz({ lang = "zh", vault = null, cards = null, onJumpTo
                           type="button"
                           onClick={() => toggleVergleichPill("vorgehen")}
                           title={criterion.descriptionDE}
-                          className={`px-2 py-0.5 text-[10px] font-mono rounded-sm border transition-all ${
+                          aria-pressed={isHit}
+                          className={`${rubricControlClass} ${
                             isHit
-                              ? "bg-[#1C1B17] text-white border-[#1C1B17]"
-                              : "border-[#E5E1D8] text-[#6B675C] hover:border-[#6B675C]"
+                              ? "border-[var(--warning)] text-[var(--warning)]"
+                              : "border-transparent text-[var(--gray)] hover:border-[var(--line)]"
                           }`}
                         >
                           {criterion.name}
-                          <span className="ml-1 opacity-75">{criterion.labelZH}</span>
+                          <span className="zh-translation ml-1">{criterion.labelZH}</span>
                         </button>
                       );
                     })()}
                     {vLmDegraded && (
-                      <span className="px-2 py-0.5 text-[10px] font-mono text-[#B45309]">
+                      <span className="px-2 py-0.5 meta-text font-mono text-[var(--warning)]">
                         Vorlagen-Modus
                       </span>
                     )}
@@ -1493,10 +1514,11 @@ export default function Quiz({ lang = "zh", vault = null, cards = null, onJumpTo
 
                 {/* "下次先…" 单行输入框 (store: eflernvault:vergleich:v1) */}
                 <div className="space-y-1">
-                  <label className="block text-xs font-mono text-[#6B675C]">
+                  <label htmlFor="vergleich-naechstes-mal" className="block font-mono text-xs text-[var(--gray)]">
                     {tr.naechstesMal}
                   </label>
                   <input
+                    id="vergleich-naechstes-mal"
                     type="text"
                     value={nextTimeText}
                     onChange={(e) => saveNextTime(e.target.value)}
@@ -1506,9 +1528,9 @@ export default function Quiz({ lang = "zh", vault = null, cards = null, onJumpTo
                       }
                     }}
                     placeholder={tr.naechstesMalPlaceholder}
-                    className="w-full rounded-sm border border-[#E5E1D8] bg-white px-3 py-1.5 font-serif text-xs text-[#1C1B17] placeholder:font-sans placeholder:text-[#6B675C] focus:border-[#4338CA] focus:outline-none transition-colors"
+                    className="w-full rounded-[var(--radius)] border border-[var(--line)] bg-[var(--surface)] px-3 py-1.5 font-serif text-sm text-[var(--ink)] placeholder:font-sans placeholder:text-xs placeholder:text-[var(--gray)] focus:border-[var(--accent)] transition-colors"
                   />
-                  <div className="text-[10px] font-mono text-[#6B675C]">
+                  <div className="meta-text font-mono text-[var(--gray)]">
                     {lang === "de"
                       ? "Gespeichert in eflernvault:vergleich:v1 · Bleibt beim nächsten Durchlauf erhalten"
                       : "自动保存至 eflernvault:vergleich:v1 · 刷新与再次打开同主题时保留"}
@@ -1516,8 +1538,8 @@ export default function Quiz({ lang = "zh", vault = null, cards = null, onJumpTo
                 </div>
 
                 {/* 文本补丁预览与复制按钮 */}
-                <div className="border border-[#E5E1D8] bg-[#FAF9F6] p-3 rounded-sm space-y-2">
-                  <div className="flex items-center justify-between text-xs font-mono text-[#6B675C]">
+                <div className="space-y-2 border-t border-[var(--line)] pt-4">
+                  <div className="flex items-center justify-between text-xs font-mono text-[var(--gray)]">
                     <span>FEHLERLOG-PATCH / 错题补丁</span>
                     <span className="flex items-center gap-2">
                       {/* B2-rueckfluss: thema zurueck in den kartenstapel */}
@@ -1525,37 +1547,24 @@ export default function Quiz({ lang = "zh", vault = null, cards = null, onJumpTo
                         type="button"
                         onClick={() => sendBack(currentVergleich.thema)}
                         title={tr.ilBack}
-                        className="px-2.5 py-0.5 rounded-sm border border-[#E5E1D8] bg-white font-mono text-[11px] text-[#6B675C] hover:border-[#4338CA] hover:text-[#4338CA] transition-all active:scale-95"
+                        className={quietActionClass}
                       >
                         {tr.ilBack}
                       </button>
                       <button
                         type="button"
                         onClick={copyVergleichPatch}
-                      className={`px-2.5 py-0.5 rounded-sm border font-mono text-[11px] transition-all ${
-                        copiedVergleichPatch
-                          ? "border-[#4338CA] bg-[#4338CA] text-white"
-                          : "border-[#1C1B17] bg-[#1C1B17] text-white hover:bg-[#4338CA]"
-                      }`}
-                    >
-                      {copiedVergleichPatch ? tr.copied : tr.copyPatch}
-                    </button>
+                        className={`${primaryTextActionClass} ${copiedVergleichPatch ? "text-[var(--ink)]" : ""}`}
+                      >
+                        {copiedVergleichPatch ? tr.copied : tr.copyPatch}
+                      </button>
                     </span>
                   </div>
-                  <pre className="block bg-white border border-[#E5E1D8] p-2.5 font-mono text-[11px] text-[#1C1B17] rounded-sm overflow-x-auto select-all leading-relaxed">
-{`--- Fehlerlog.md
-+++ Fehlerlog.md
-+ - [ ] [${currentVergleich.fach}] Vergleich: ${currentVergleich.thema}
-+   - Datum: ${new Date().toISOString().slice(0, 10)}
-+   - Ergebnis: ${isCorrect ? "Richtig" : "Falsch (gute Signale zur Schärfung)"}
-+   - Gewählt: Option ${selectedOption || "-"}
-+   - Begründung: ${warumText.trim() || "(keine Angabe)"}
-+   - Nächstes Mal: ${nextTimeText.trim() || "Erst Operator markieren"}
-+   - Belegstelle: ${currentVergleich.sourceRef}
-`}
+                  <pre className="block overflow-x-auto border-l-2 border-[var(--line)] pl-3 font-mono text-xs leading-relaxed text-[var(--ink)] select-all">
+                    {vergleichPatch}
                   </pre>
                   {ilBackMsg && (
-                    <div className="font-mono text-[11px] text-[#4338CA]">
+                    <div className="font-mono meta-text text-[var(--accent)]">
                       {ilBackMsg}
                     </div>
                   )}

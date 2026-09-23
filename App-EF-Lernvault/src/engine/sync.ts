@@ -5,8 +5,7 @@
 // push/pull (button), kein transparenter backend-swap (sync-interface ist
 // synchron, http nicht). Server-seitig beliebig — doku LEARNING-ENGINE § cloud.
 import { defineStore, getStorageBackend, type VersionedStore } from "./storage";
-import { allStoreKeys } from "./stores";
-import { SYNC_STORAGE_KEY } from "./storageKeys";
+import { SYNC_STORAGE_ALLOWLIST, SYNC_STORAGE_KEY } from "./storageKeys";
 
 export interface SyncData {
   version: 1;
@@ -63,7 +62,7 @@ export async function pushKey(h: HttpAccess, key: string, value: string): Promis
 export async function pushAll(h: HttpAccess): Promise<number> {
   const local = getStorageBackend();
   let n = 0;
-  for (const key of allStoreKeys()) {
+  for (const { key } of SYNC_STORAGE_ALLOWLIST) {
     const raw = local.get(key);
     if (raw) {
       await pushKey(h, key, raw);
@@ -77,7 +76,7 @@ export async function pushAll(h: HttpAccess): Promise<number> {
 export async function pullAll(h: HttpAccess): Promise<string[]> {
   const local = getStorageBackend();
   const done: string[] = [];
-  for (const key of allStoreKeys()) {
+  for (const { key } of SYNC_STORAGE_ALLOWLIST) {
     const remote = await pullKey(h, key);
     if (remote !== null) {
       local.set(key, remote);

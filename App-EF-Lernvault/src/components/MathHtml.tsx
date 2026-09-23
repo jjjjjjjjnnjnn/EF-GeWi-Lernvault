@@ -73,25 +73,25 @@ export default function MathHtml({
   if (html === null) {
     // sofort-paint: rohtext im ziel-stil (layout-shift minimal)
     return display ? (
-      <div className="my-2 overflow-x-auto text-center font-mono text-sm text-[#1C1B17]">{code}</div>
+      <div className="my-2 overflow-x-auto text-center font-mono text-sm text-[var(--ink)]">{code}</div>
     ) : (
-      <span className="font-mono text-sm text-[#1C1B17]">{code}</span>
+      <span className="font-mono text-sm text-[var(--ink)]">{code}</span>
     );
   }
   if (html === "") {
     // katex fehlt/kaputt -> rohtext als code (nie leer)
     return display ? (
-      <code className="mb-2 block text-center font-mono text-sm text-[#1C1B17]">{code}</code>
+      <code className="mb-2 block text-center font-mono text-sm text-[var(--ink)]">{code}</code>
     ) : (
-      <code className="font-mono text-xs text-[#1C1B17]">{code}</code>
+      <code className="font-mono text-xs text-[var(--ink)]">{code}</code>
     );
   }
   return display ? (
     <div
-      className="my-2 overflow-x-auto text-center font-serif text-[#1C1B17]"
+      className="my-2 overflow-x-auto text-center font-serif text-[var(--ink)]"
       dangerouslySetInnerHTML={{ __html: html }}
     />
   ) : (
-    <span className="font-serif text-[#1C1B17]" dangerouslySetInnerHTML={{ __html: html }} />
+    <span className="font-serif text-[var(--ink)]" dangerouslySetInnerHTML={{ __html: html }} />
   );
 }

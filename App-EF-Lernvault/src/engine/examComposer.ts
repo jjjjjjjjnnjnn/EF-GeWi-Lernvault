@@ -1,9 +1,25 @@
 import type { AFBLevel } from "../types/klausur";
 import { getExamTopicSelectionWeight, type TopicMastery } from "./mastery";
 import { extractKlausurFromNote } from "./klausurExtractor";
+import {
+  toExamSourceNote,
+  type ExamNoteCandidate,
+  type ExamSourceNote,
+  type MathSachgebiet,
+} from "./examSource";
+
+export type {
+  ExamNoteCandidate,
+  ExamSourceBlock,
+  ExamSourceHeadingLevel,
+  ExamSourceNote,
+  MathSachgebiet,
+} from "./examSource";
+
+export const NRW_2026_WORKING_TIME_SOURCE =
+  "BASS 13-32 Nr. 3.2 (VVzAPO-GOSt), Fassung 2026/2027" as const;
 
 export type ExamCourseType = "GK" | "LK";
-export type MathSachgebiet = "analysis" | "geometry" | "stochastics";
 export type MathToolset = "WTR" | "CAS";
 
 export type ExamSubject =
@@ -17,28 +33,203 @@ export type ExamSubject =
   | "Religion"
   | "Kunst"
   | "Musik"
-  | "Sport";
+  | "Sport"
+  | "Latein"
+  | "Griechisch"
+  | "Hebräisch";
+
+export type ExamLanguageStatus = "continued" | "newlyBegun";
+
+export type ExamWorkingTimeSlot =
+  | { readonly kind: "written"; readonly minutes: number }
+  | { readonly kind: "not-in-written-exam" };
+
+export type ExamWorkingTimeSlots = Readonly<
+  Record<ExamCourseType, ExamWorkingTimeSlot>
+>;
+
+export type ExamTaskTimeExtension =
+  | { readonly kind: "none" }
+  | {
+      readonly kind: "fixed-addition";
+      readonly minutes: 60;
+      readonly appliesWhen: "aufgabenart-i" | "gestaltungsaufgabe";
+    };
+
+export type ExamPracticalTimeExtension = {
+  readonly kind: "task-indicated";
+  readonly trigger: "practical-components";
+  readonly additionalTime: "indicated-in-task";
+  readonly description: string;
+};
+
+export type ExamWorkingTimeEntry =
+  | {
+      readonly kind: "standard";
+      readonly source: typeof NRW_2026_WORKING_TIME_SOURCE;
+      readonly subjects: readonly ExamSubject[];
+      readonly courseTimes: ExamWorkingTimeSlots;
+      readonly taskExtension: { readonly kind: "none" };
+    }
+  | {
+      readonly kind: "language";
+      readonly source: typeof NRW_2026_WORKING_TIME_SOURCE;
+      readonly languageFamily: "modern" | "ancient";
+      readonly languageScope: "all-modern-languages" | "ancient-languages";
+      readonly subjects: readonly ExamSubject[];
+      readonly courseTimes: Readonly<Record<ExamLanguageStatus, ExamWorkingTimeSlots>>;
+      readonly taskExtension: { readonly kind: "none" };
+    }
+  | {
+      readonly kind: "subject-group";
+      readonly source: typeof NRW_2026_WORKING_TIME_SOURCE;
+      readonly groupId: "religion-kunst-musik";
+      readonly subjects: readonly ["Religion", "Kunst", "Musik"];
+      readonly courseTimes: ExamWorkingTimeSlots;
+      readonly taskExtensions: Readonly<
+        Record<"Religion" | "Kunst" | "Musik", ExamTaskTimeExtension>
+      >;
+    }
+  | {
+      readonly kind: "natural-science";
+      readonly source: typeof NRW_2026_WORKING_TIME_SOURCE;
+      readonly subjects: readonly ["Bio", "Chemie", "Physik"];
+      readonly courseTimes: ExamWorkingTimeSlots;
+      readonly practicalExtension: ExamPracticalTimeExtension;
+    }
+  | {
+      readonly kind: "sport-lk-only";
+      readonly source: typeof NRW_2026_WORKING_TIME_SOURCE;
+      readonly subjects: readonly ["Sport"];
+      readonly courseTimes: Readonly<{
+        GK: { readonly kind: "not-in-written-exam" };
+        LK: { readonly kind: "written"; readonly minutes: number };
+      }>;
+      readonly oralFourthExam: {
+        readonly kind: "separate";
+        readonly workingTimeStatus: "not-defined";
+      };
+    };
+
+function writtenTime(minutes: number): Extract<ExamWorkingTimeSlot, { kind: "written" }> {
+  return { kind: "written", minutes };
+}
+
+const notInWrittenExam = { kind: "not-in-written-exam" } as const;
+const noTaskExtension = { kind: "none" } as const;
+
+export const NATURAL_SCIENCE_PRACTICAL_EXTENSION_DESCRIPTION =
+  "Die zusätzliche Zeit wird im Aufgabentext ausgewiesen." as const;
+
+const DEUTSCH_WORKING_TIME = {
+  kind: "standard",
+  source: NRW_2026_WORKING_TIME_SOURCE,
+  subjects: ["Deutsch"],
+  courseTimes: { GK: writtenTime(255), LK: writtenTime(315) },
+  taskExtension: noTaskExtension,
+} as const satisfies ExamWorkingTimeEntry;
+
+const MODERN_LANGUAGE_WORKING_TIME = {
+  kind: "language",
+  source: NRW_2026_WORKING_TIME_SOURCE,
+  languageFamily: "modern",
+  languageScope: "all-modern-languages",
+  subjects: ["Englisch"],
+  courseTimes: {
+    continued: { GK: writtenTime(285), LK: writtenTime(315) },
+    newlyBegun: { GK: writtenTime(255), LK: notInWrittenExam },
+  },
+  taskExtension: noTaskExtension,
+} as const satisfies ExamWorkingTimeEntry;
+
+const MATHE_WORKING_TIME = {
+  kind: "standard",
+  source: NRW_2026_WORKING_TIME_SOURCE,
+  subjects: ["Mathe"],
+  courseTimes: { GK: writtenTime(255), LK: writtenTime(300) },
+  taskExtension: noTaskExtension,
+} as const satisfies ExamWorkingTimeEntry;
+
+const NATURAL_SCIENCE_WORKING_TIME = {
+  kind: "natural-science",
+  source: NRW_2026_WORKING_TIME_SOURCE,
+  subjects: ["Bio", "Chemie", "Physik"],
+  courseTimes: { GK: writtenTime(255), LK: writtenTime(300) },
+  practicalExtension: {
+    kind: "task-indicated",
+    trigger: "practical-components",
+    additionalTime: "indicated-in-task",
+    description: NATURAL_SCIENCE_PRACTICAL_EXTENSION_DESCRIPTION,
+  },
+} as const satisfies ExamWorkingTimeEntry;
+
+const SOWI_WORKING_TIME = {
+  kind: "standard",
+  source: NRW_2026_WORKING_TIME_SOURCE,
+  subjects: ["SoWi"],
+  courseTimes: { GK: writtenTime(240), LK: writtenTime(300) },
+  taskExtension: noTaskExtension,
+} as const satisfies ExamWorkingTimeEntry;
+
+const RELIGION_KUNST_MUSIK_WORKING_TIME = {
+  kind: "subject-group",
+  source: NRW_2026_WORKING_TIME_SOURCE,
+  groupId: "religion-kunst-musik",
+  subjects: ["Religion", "Kunst", "Musik"],
+  courseTimes: { GK: writtenTime(240), LK: writtenTime(300) },
+  taskExtensions: {
+    Religion: noTaskExtension,
+    Kunst: { kind: "fixed-addition", minutes: 60, appliesWhen: "aufgabenart-i" },
+    Musik: {
+      kind: "fixed-addition",
+      minutes: 60,
+      appliesWhen: "gestaltungsaufgabe",
+    },
+  },
+} as const satisfies ExamWorkingTimeEntry;
+
+const ANCIENT_LANGUAGE_WORKING_TIME = {
+  kind: "language",
+  source: NRW_2026_WORKING_TIME_SOURCE,
+  languageFamily: "ancient",
+  languageScope: "ancient-languages",
+  subjects: ["Latein", "Griechisch", "Hebräisch"],
+  courseTimes: {
+    continued: { GK: writtenTime(240), LK: writtenTime(300) },
+    newlyBegun: { GK: writtenTime(210), LK: notInWrittenExam },
+  },
+  taskExtension: noTaskExtension,
+} as const satisfies ExamWorkingTimeEntry;
+
+const SPORT_WORKING_TIME = {
+  kind: "sport-lk-only",
+  source: NRW_2026_WORKING_TIME_SOURCE,
+  subjects: ["Sport"],
+  courseTimes: { GK: notInWrittenExam, LK: writtenTime(300) },
+  oralFourthExam: { kind: "separate", workingTimeStatus: "not-defined" },
+} as const satisfies ExamWorkingTimeEntry;
 
 export const NRW_2026_WORKING_TIMES = {
-  Deutsch: { GK: 255, LK: 315 },
-  Englisch: { GK: 285, LK: 315 },
-  Mathe: { GK: 255, LK: 300 },
-  Bio: { GK: 255, LK: 300 },
-  Chemie: { GK: 255, LK: 300 },
-  Physik: { GK: 255, LK: 300 },
-  SoWi: { GK: 240, LK: 300 },
-  Religion: { GK: 240, LK: 300 },
-  Kunst: { GK: 240, LK: 300 },
-  Musik: { GK: 240, LK: 300 },
-  Sport: { GK: null, LK: 300 },
-} as const satisfies Readonly<
-  Record<ExamSubject, Readonly<Record<ExamCourseType, number | null>>>
->;
+  Deutsch: DEUTSCH_WORKING_TIME,
+  Englisch: MODERN_LANGUAGE_WORKING_TIME,
+  Mathe: MATHE_WORKING_TIME,
+  Bio: NATURAL_SCIENCE_WORKING_TIME,
+  Chemie: NATURAL_SCIENCE_WORKING_TIME,
+  Physik: NATURAL_SCIENCE_WORKING_TIME,
+  SoWi: SOWI_WORKING_TIME,
+  Religion: RELIGION_KUNST_MUSIK_WORKING_TIME,
+  Kunst: RELIGION_KUNST_MUSIK_WORKING_TIME,
+  Musik: RELIGION_KUNST_MUSIK_WORKING_TIME,
+  Sport: SPORT_WORKING_TIME,
+  Latein: ANCIENT_LANGUAGE_WORKING_TIME,
+  Griechisch: ANCIENT_LANGUAGE_WORKING_TIME,
+  Hebräisch: ANCIENT_LANGUAGE_WORKING_TIME,
+} as const satisfies Readonly<Record<ExamSubject, ExamWorkingTimeEntry>>;
 
 export const UNKNOWN_SUBJECT_WORKING_TIME_MINUTES = 300;
 
 export const NRW_2026_EXAM_RULES = {
-  source: "BASS 13-32 Nr. 3.2 (VVzAPO-GOSt), Fassung 2026/2027",
+  source: NRW_2026_WORKING_TIME_SOURCE,
   workingTime: {
     includesSelectionTime: true,
     starts: "unmittelbar nach Vorlage der Aufgaben",
@@ -77,7 +268,7 @@ export const NRW_2026_EXAM_RULES = {
     scopePointsAndTimeAdjustedFrom2025: true,
   },
   naturalSciences: {
-    practicalTaskExtraTime: "Die zusätzliche Zeit wird im Aufgabentext ausgewiesen.",
+    practicalTaskExtraTime: NATURAL_SCIENCE_PRACTICAL_EXTENSION_DESCRIPTION,
   },
 } as const;
 
@@ -93,6 +284,9 @@ export const EXAM_SUBJECT_ORDER: readonly ExamSubject[] = [
   "Kunst",
   "Musik",
   "Sport",
+  "Latein",
+  "Griechisch",
+  "Hebräisch",
 ];
 
 const SUBJECT_ALIASES: Readonly<Record<string, ExamSubject>> = {
@@ -100,7 +294,15 @@ const SUBJECT_ALIASES: Readonly<Record<string, ExamSubject>> = {
   "deutsch (klausur)": "Deutsch",
   englisch: "Englisch",
   "moderne fremdsprache": "Englisch",
+  "moderne fremdsprache (fortgeführt)": "Englisch",
+  "moderne fremdsprache (neu einsetzend)": "Englisch",
+  "moderne fremdsprache fortgeführt": "Englisch",
+  "moderne fremdsprache neu einsetzend": "Englisch",
+  "neu einsetzende moderne fremdsprache": "Englisch",
+  "fortgeführte moderne fremdsprache": "Englisch",
   "englisch (moderne fremdsprache)": "Englisch",
+  "englisch (fortgeführt)": "Englisch",
+  "englisch (neu einsetzend)": "Englisch",
   mathe: "Mathe",
   mathematik: "Mathe",
   bio: "Bio",
@@ -114,6 +316,15 @@ const SUBJECT_ALIASES: Readonly<Record<string, ExamSubject>> = {
   kunst: "Kunst",
   musik: "Musik",
   sport: "Sport",
+  latein: "Latein",
+  griechisch: "Griechisch",
+  hebräisch: "Hebräisch",
+  "latein (fortgeführt)": "Latein",
+  "latein (neu einsetzend)": "Latein",
+  "griechisch (fortgeführt)": "Griechisch",
+  "griechisch (neu einsetzend)": "Griechisch",
+  "hebräisch (fortgeführt)": "Hebräisch",
+  "hebräisch (neu einsetzend)": "Hebräisch",
 };
 
 export const MATH_SACHGEBIET_LABELS_DE: Readonly<Record<MathSachgebiet, string>> = {
@@ -121,26 +332,6 @@ export const MATH_SACHGEBIET_LABELS_DE: Readonly<Record<MathSachgebiet, string>>
   geometry: "Analytische Geometrie / Lineare Algebra",
   stochastics: "Stochastik",
 };
-
-export interface ExamNoteBlock {
-  kind: "h2" | "h3" | "p" | "li" | "quote" | "math" | "diagram";
-  text: string;
-  lang: "zh" | "de";
-  raw?: string;
-}
-
-export interface ExamNoteCandidate {
-  path: string;
-  fach: string;
-  thema: string;
-  operatoren?: readonly string[];
-  klausurrelevant?: boolean;
-  datum?: string;
-  tags?: readonly string[];
-  content?: string;
-  blocks?: readonly ExamNoteBlock[];
-  mathSachgebiete?: readonly MathSachgebiet[];
-}
 
 export interface ExamCriterion {
   id: string;
@@ -227,7 +418,7 @@ export interface ComposedExamGrade {
 }
 
 interface WeightedNote {
-  note: ExamNoteCandidate;
+  note: ExamSourceNote;
   topicId: string;
   weight: number;
 }
@@ -311,16 +502,44 @@ const STOP_WORDS = new Set([
 
 export function normalizeExamSubject(subject: string): ExamSubject | null {
   const key = subject.trim().toLowerCase();
-  return SUBJECT_ALIASES[key] ?? null;
+  const withoutVariant = key
+    .replace(/\s*\((?:fortgeführt|neu einsetzend)\)\s*$/u, "")
+    .replace(/\s+(?:fortgeführt|neu einsetzend)$/u, "")
+    .trim();
+  return SUBJECT_ALIASES[key] ?? SUBJECT_ALIASES[withoutVariant] ?? null;
+}
+
+function getLanguageStatus(
+  subject: string,
+  requestedStatus?: ExamLanguageStatus
+): ExamLanguageStatus {
+  if (requestedStatus) return requestedStatus;
+  return /\bneu einsetz|newly begun/iu.test(subject) ? "newlyBegun" : "continued";
+}
+
+export function getOfficialWorkingTimeEntry(subject: string): ExamWorkingTimeEntry | null {
+  const normalizedSubject = normalizeExamSubject(subject);
+  return normalizedSubject ? NRW_2026_WORKING_TIMES[normalizedSubject] : null;
 }
 
 export function getOfficialWorkingTimeMinutes(
   subject: string,
-  courseType: ExamCourseType
+  courseType: ExamCourseType,
+  languageStatus?: ExamLanguageStatus
 ): number | null {
-  const normalizedSubject = normalizeExamSubject(subject);
-  if (!normalizedSubject) return UNKNOWN_SUBJECT_WORKING_TIME_MINUTES;
-  return NRW_2026_WORKING_TIMES[normalizedSubject][courseType];
+  const entry = getOfficialWorkingTimeEntry(subject);
+  if (!entry) return UNKNOWN_SUBJECT_WORKING_TIME_MINUTES;
+  const courseTimes =
+    entry.kind === "language" ? entry.courseTimes[getLanguageStatus(subject, languageStatus)] : entry.courseTimes;
+  const slot = courseTimes[courseType];
+  return slot.kind === "written" ? slot.minutes : null;
+}
+
+export function getOfficialPracticalExtensionRule(
+  subject: string
+): ExamPracticalTimeExtension | null {
+  const entry = getOfficialWorkingTimeEntry(subject);
+  return entry?.kind === "natural-science" ? entry.practicalExtension : null;
 }
 
 function slug(value: string): string {
@@ -358,26 +577,24 @@ function safeRandomValue(value: number): number {
   return Math.min(1 - Number.EPSILON, Math.max(Number.EPSILON, value));
 }
 
-function getCandidateContent(note: ExamNoteCandidate): string {
-  if (note.content?.trim()) return note.content;
-  return (note.blocks ?? [])
+function getSourceContent(note: ExamSourceNote): string {
+  return note.blocks
     .map((block) => {
-      if (block.raw) return block.raw;
-      const prefix = block.kind === "h2" ? "## " : block.kind === "h3" ? "### " : "";
+      const prefix = block.headingLevel === null ? "" : `${"#".repeat(block.headingLevel)} `;
       return `${prefix}${block.text}`;
     })
     .join("\n");
 }
 
 function getEligibleNotes(
-  pool: readonly ExamNoteCandidate[],
+  pool: readonly ExamSourceNote[],
   subject: string
-): ExamNoteCandidate[] {
+): ExamSourceNote[] {
   const canonicalSubject = normalizeExamSubject(subject);
   const requested = subject.trim().toLowerCase();
   const seenPaths = new Set<string>();
   const matching = pool.filter((note) => {
-    const noteSubject = normalizeExamSubject(note.fach) ?? note.fach.trim().toLowerCase();
+    const noteSubject = normalizeExamSubject(note.subject) ?? note.subject.trim().toLowerCase();
     const subjectMatches = canonicalSubject
       ? noteSubject.toLowerCase() === canonicalSubject.toLowerCase()
       : noteSubject === requested;
@@ -385,23 +602,17 @@ function getEligibleNotes(
     seenPaths.add(note.path);
     return true;
   });
-  const relevant = matching.filter((note) => note.klausurrelevant !== false);
+  const relevant = matching.filter((note) => note.examRelevant);
   return (relevant.length > 0 ? relevant : matching).sort((a, b) =>
     a.path.localeCompare(b.path, "de")
   );
 }
 
-function inferMathSachgebiete(note: ExamNoteCandidate): MathSachgebiet[] {
+function inferMathSachgebiete(note: ExamSourceNote): MathSachgebiet[] {
   if (note.mathSachgebiete && note.mathSachgebiete.length > 0) {
     return Array.from(new Set(note.mathSachgebiete));
   }
-  const corpus = [
-    note.thema,
-    note.path,
-    ...(note.tags ?? []),
-    ...(note.operatoren ?? []),
-    getCandidateContent(note).slice(0, 40_000),
-  ]
+  const corpus = [note.title, note.path, getSourceContent(note).slice(0, 40_000)]
     .join(" ")
     .toLowerCase();
   return (Object.keys(MATH_KEYWORDS) as MathSachgebiet[]).filter((area) =>
@@ -410,7 +621,7 @@ function inferMathSachgebiete(note: ExamNoteCandidate): MathSachgebiet[] {
 }
 
 function buildWeightedNotes(
-  notes: readonly ExamNoteCandidate[],
+  notes: readonly ExamSourceNote[],
   subject: string,
   options: ComposeExamOptions
 ): WeightedNote[] {
@@ -477,14 +688,13 @@ function sanitizeIndicator(value: string): string {
     .trim();
 }
 
-function getNoteCriteria(note: ExamNoteCandidate, afb: AFBLevel): string[] {
+function getNoteCriteria(note: ExamSourceNote, afb: AFBLevel): string[] {
   const extracted = extractKlausurFromNote({
     path: note.path,
-    fach: note.fach,
-    thema: note.thema,
-    content: getCandidateContent(note),
-    operatoren: [...(note.operatoren ?? [])],
-    klausurrelevant: note.klausurrelevant,
+    fach: note.subject,
+    thema: note.title,
+    content: getSourceContent(note),
+    klausurrelevant: note.examRelevant,
   });
   const index = afb === "AFB I" ? 0 : afb === "AFB II" ? 1 : 2;
   return extracted.aufgaben[index].expectedPoints
@@ -498,11 +708,11 @@ function getNoteCriteria(note: ExamNoteCandidate, afb: AFBLevel): string[] {
 }
 
 function getIndicatorFallbacks(
-  note: ExamNoteCandidate,
+  note: ExamSourceNote,
   afb: AFBLevel,
   mathSachgebiet?: MathSachgebiet
 ): string[] {
-  const topic = `„${note.thema}“`;
+  const topic = `„${note.title}“`;
   if (mathSachgebiet) {
     const area = MATH_SACHGEBIET_LABELS_DE[mathSachgebiet].toLowerCase();
     if (mathSachgebiet === "analysis") {
@@ -549,7 +759,7 @@ function getIndicatorFallbacks(
 function createCriteria(
   taskId: string,
   points: number,
-  note: ExamNoteCandidate,
+  note: ExamSourceNote,
   afb: AFBLevel,
   mathSachgebiet?: MathSachgebiet
 ): ExamCriterion[] {
@@ -565,7 +775,7 @@ function createCriteria(
   );
   while (indicators.length < desiredCount) {
     indicators.push(
-      `Die fachliche Aussage zu ${note.thema} präzise, belegt und sprachlich korrekt formulieren.`
+      `Die fachliche Aussage zu ${note.title} präzise, belegt und sprachlich korrekt formulieren.`
     );
   }
   const allocations = allocateWholePoints(points, indicators.length);
@@ -578,10 +788,10 @@ function createCriteria(
 
 function getTaskPrompt(
   subject: ExamSubject | string,
-  note: ExamNoteCandidate,
+  note: ExamSourceNote,
   slot: TaskSlot
 ): { operator: string; promptDE: string; promptZH: string } {
-  const topic = note.thema;
+  const topic = note.title;
   if (normalizeExamSubject(subject) === "Deutsch") {
     if (slot.afb === "AFB I") {
       return {
@@ -698,7 +908,7 @@ function buildBaseRules(subject: string, courseType: ExamCourseType): string[] {
 }
 
 function composeGermanExam(
-  notes: readonly ExamNoteCandidate[],
+  notes: readonly ExamSourceNote[],
   subject: string,
   courseType: ExamCourseType,
   examId: string,
@@ -748,7 +958,7 @@ function composeGermanExam(
 }
 
 function composeMathExam(
-  notes: readonly ExamNoteCandidate[],
+  notes: readonly ExamSourceNote[],
   subject: string,
   courseType: ExamCourseType,
   examId: string,
@@ -870,7 +1080,7 @@ function composeMathExam(
 }
 
 function composeGenericExam(
-  notes: readonly ExamNoteCandidate[],
+  notes: readonly ExamSourceNote[],
   subject: string,
   courseType: ExamCourseType,
   examId: string,
@@ -913,7 +1123,7 @@ export function composeExam(
   courseType: ExamCourseType,
   options: ComposeExamOptions = {}
 ): ComposedExam {
-  const notes = getEligibleNotes(pool, subject);
+  const notes = getEligibleNotes(pool.map(toExamSourceNote), subject);
   if (notes.length === 0) throw new Error(`Keine Lernnotizen für ${subject} vorhanden.`);
   const seed = (options.seed ?? 0) >>> 0;
   const effectiveOptions: ComposeExamOptions = { ...options, seed };

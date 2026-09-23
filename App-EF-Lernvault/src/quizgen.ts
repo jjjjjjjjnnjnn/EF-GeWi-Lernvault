@@ -63,6 +63,73 @@ export interface GeneratedQuiz {
   tasks: QuizTask[];
 }
 
+export interface FehlerlogDefizit {
+  operatorVerfehlt: boolean;
+  fachbegriffFalsch: boolean;
+  belegFehlt: boolean;
+  vorgehenFalsch: boolean;
+}
+
+export interface KlausurFehlerlogPatchInput {
+  fach: string;
+  thema: string;
+  notePath: string;
+  date: string;
+  time: string;
+  evaluations: readonly FehlerlogDefizit[];
+}
+
+export interface VergleichFehlerlogPatchInput {
+  fach: string;
+  thema: string;
+  sourceRef: string;
+  date: string;
+  isCorrect: boolean;
+  selectedOption: "A" | "B" | null;
+  justification: string;
+  nextTime: string;
+}
+
+function formatFehlerlogDefizite(evaluations: readonly FehlerlogDefizit[]): string {
+  return (
+    evaluations
+      .map((evaluation, index) => {
+        const deficits: string[] = [];
+        if (evaluation.operatorVerfehlt) deficits.push(`Teil ${index + 1}: Operator verfehlt`);
+        if (evaluation.fachbegriffFalsch) deficits.push(`Teil ${index + 1}: Fachbegriff unpräzise`);
+        if (evaluation.belegFehlt) deficits.push(`Teil ${index + 1}: Beleg fehlt`);
+        if (evaluation.vorgehenFalsch) deficits.push(`Teil ${index + 1}: Vorgehen falsch`);
+        return deficits.join(", ");
+      })
+      .filter(Boolean)
+      .join("; ") || "Keine gravierenden Mängel"
+  );
+}
+
+export function buildKlausurFehlerlogPatch(input: KlausurFehlerlogPatchInput): string {
+  return `--- Fehlerlog.md
++++ Fehlerlog.md
++ - [ ] [${input.fach}] Thema: ${input.thema} (Klausur-Drill)
++   - Datum: ${input.date}
++   - Zeit: ${input.time} (Ziel 45 Min)
++   - Defizite: ${formatFehlerlogDefizite(input.evaluations)}
++   - Belegstelle: ${input.notePath}
+`;
+}
+
+export function buildVergleichFehlerlogPatch(input: VergleichFehlerlogPatchInput): string {
+  return `--- Fehlerlog.md
++++ Fehlerlog.md
++ - [ ] [${input.fach}] Vergleich: ${input.thema}
++   - Datum: ${input.date}
++   - Ergebnis: ${input.isCorrect ? "Richtig" : "Falsch (gute Signale zur Schärfung)"}
++   - Gewählt: Option ${input.selectedOption || "-"}
++   - Begründung: ${input.justification.trim() || "(keine Angabe)"}
++   - Nächstes Mal: ${input.nextTime.trim() || "Erst Operator markieren"}
++   - Belegstelle: ${input.sourceRef}
+`;
+}
+
 // Fallback exemplar when vault is empty or notes lack klausurrelevant tag
 export const MOCK_QUIZ: GeneratedQuiz = {
   thema: "Soziale Ungleichheit",

@@ -1,9 +1,10 @@
 import { beforeEach, describe, expect, it, vi } from "vitest";
 
-const tfState = vi.hoisted(() => ({ fail: false, calls: 0 }));
+const tfState = vi.hoisted(() => ({ fail: false, calls: 0, pipelineCalls: 0 }));
 
 vi.mock("@huggingface/transformers", () => ({
   pipeline: async () => {
+    tfState.pipelineCalls++;
     if (tfState.fail) throw new Error("modell-download kaputt");
     const pipe = async (texts: string | string[]) => {
       tfState.calls++;
@@ -19,6 +20,7 @@ import {
   clearVecCache,
   cosSim,
   embedViaApi,
+  ensureLocalEmbedder,
   resetLocalEmbedder,
   retrieveHybrid,
   scoreClaimSupport,
@@ -45,9 +47,17 @@ beforeEach(() => {
   localStorage.clear();
   tfState.fail = false;
   tfState.calls = 0;
+  tfState.pipelineCalls = 0;
   resetLocalEmbedder();
   clearVecCache();
   setAi();
+});
+
+it("teilt eine laufende lokale Embedder-Initialisierung zwischen gleichzeitigen Aufrufern", async () => {
+  const first = ensureLocalEmbedder();
+  const second = ensureLocalEmbedder();
+  await Promise.all([first, second]);
+  expect(tfState.pipelineCalls).toBe(1);
 });
 
 describe("mathe", () => {

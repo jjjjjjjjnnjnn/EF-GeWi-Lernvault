@@ -7,12 +7,14 @@ import {
   getExamMaxPoints,
   getExamTopicId,
   gradeComposedTask,
+  getOfficialPracticalExtensionRule,
   MATH_SACHGEBIET_LABELS_DE,
   NRW_2026_EXAM_RULES,
   NRW_2026_WORKING_TIMES,
+  NRW_2026_WORKING_TIME_SOURCE,
   UNKNOWN_SUBJECT_WORKING_TIME_MINUTES,
   getOfficialWorkingTimeMinutes,
-  type ExamNoteCandidate,
+  type ExamSourceNote,
   type MathSachgebiet,
 } from "./examComposer";
 import type { TopicMastery } from "./mastery";
@@ -23,15 +25,20 @@ function note(
   fach: string,
   thema: string,
   mathSachgebiete?: MathSachgebiet[]
-): ExamNoteCandidate {
+): ExamSourceNote {
   return {
     path,
-    fach,
-    thema,
-    operatoren: ["darstellen", "analysieren", "beurteilen"],
-    klausurrelevant: true,
-    tags: ["EF", fach],
-    content: `## Grundlagen\n${thema}\n## Klausur-Sätze\n- Darstellen: ${thema} wird fachlich eingeordnet.\n- Analysieren: Zusammenhänge werden begründet.\n- Beurteilen: Kriterien werden abgewogen.`,
+    subject: fach,
+    title: thema,
+    blocks: [
+      { headingLevel: 2, text: "Grundlagen" },
+      { headingLevel: null, text: thema },
+      { headingLevel: 2, text: "Klausur-Sätze" },
+      { headingLevel: null, text: `- Darstellen: ${thema} wird fachlich eingeordnet.` },
+      { headingLevel: null, text: "- Analysieren: Zusammenhänge werden begründet." },
+      { headingLevel: null, text: "- Beurteilen: Kriterien werden abgewogen." },
+    ],
+    examRelevant: true,
     mathSachgebiete,
   };
 }
@@ -66,7 +73,7 @@ function mastery(topicId: string, pMastery: number): TopicMastery {
   };
 }
 
-function mathPool(): ExamNoteCandidate[] {
+function mathPool(): ExamSourceNote[] {
   return [
     note("03_Mathe/Analysis-1.md", "Mathe", "Differenzierbarkeit", ["analysis"]),
     note("03_Mathe/Analysis-2.md", "Mathe", "Funktionsuntersuchung", ["analysis"]),
@@ -78,20 +85,128 @@ function mathPool(): ExamNoteCandidate[] {
 }
 
 describe("NRW 2026 exam composer", () => {
-  it("encodes the official working times and explicit fallback", () => {
-    expect(NRW_2026_EXAM_RULES.source).toContain("13-32 Nr. 3.2");
-    expect(NRW_2026_EXAM_RULES.source).not.toContain("19-11");
-    expect(NRW_2026_WORKING_TIMES.Deutsch).toEqual({ GK: 255, LK: 315 });
-    expect(NRW_2026_WORKING_TIMES.Englisch).toEqual({ GK: 285, LK: 315 });
-    expect(NRW_2026_WORKING_TIMES.Mathe).toEqual({ GK: 255, LK: 300 });
-    expect(NRW_2026_WORKING_TIMES.Bio).toEqual({ GK: 255, LK: 300 });
-    expect(NRW_2026_WORKING_TIMES.SoWi).toEqual({ GK: 240, LK: 300 });
-    expect(NRW_2026_WORKING_TIMES.Sport).toEqual({ GK: null, LK: 300 });
-    expect(getOfficialWorkingTimeMinutes("Physik", "LK")).toBe(300);
-    expect(getOfficialWorkingTimeMinutes("Religion", "GK")).toBe(240);
+  it("locks the Gymnasium VVzAPO-GOSt source citation", () => {
+    expect(NRW_2026_WORKING_TIME_SOURCE).toBe(
+      "BASS 13-32 Nr. 3.2 (VVzAPO-GOSt), Fassung 2026/2027"
+    );
+    expect(NRW_2026_EXAM_RULES.source).toBe(NRW_2026_WORKING_TIME_SOURCE);
+    expect(NRW_2026_WORKING_TIME_SOURCE).not.toContain("19-11");
+    expect(NRW_2026_WORKING_TIME_SOURCE).not.toContain("Weiterbildungskolleg");
+    expect(
+      Object.values(NRW_2026_WORKING_TIMES).every(
+        (entry) => entry.source === NRW_2026_WORKING_TIME_SOURCE
+      )
+    ).toBe(true);
+  });
+
+  it("preserves getOfficialWorkingTimeMinutes for previously supported subjects", () => {
+    const expected = [
+      ["Deutsch", "GK", 255],
+      ["Deutsch", "LK", 315],
+      ["Englisch", "GK", 285],
+      ["Englisch", "LK", 315],
+      ["Mathe", "GK", 255],
+      ["Mathe", "LK", 300],
+      ["Bio", "GK", 255],
+      ["Bio", "LK", 300],
+      ["Chemie", "GK", 255],
+      ["Chemie", "LK", 300],
+      ["Physik", "GK", 255],
+      ["Physik", "LK", 300],
+      ["SoWi", "GK", 240],
+      ["SoWi", "LK", 300],
+      ["Religion", "GK", 240],
+      ["Religion", "LK", 300],
+      ["Kunst", "GK", 240],
+      ["Kunst", "LK", 300],
+      ["Musik", "GK", 240],
+      ["Musik", "LK", 300],
+      ["Sport", "GK", null],
+      ["Sport", "LK", 300],
+    ] as const;
+    for (const [subject, courseType, minutes] of expected) {
+      expect(getOfficialWorkingTimeMinutes(subject, courseType)).toBe(minutes);
+    }
     expect(getOfficialWorkingTimeMinutes("Unbekanntes Fach", "LK")).toBe(
       UNKNOWN_SUBJECT_WORKING_TIME_MINUTES
     );
+  });
+
+  it("represents every modern and ancient language phase explicitly", () => {
+    expect(NRW_2026_WORKING_TIMES.Englisch).toMatchObject({
+      kind: "language",
+      languageFamily: "modern",
+      languageScope: "all-modern-languages",
+      courseTimes: {
+        continued: {
+          GK: { kind: "written", minutes: 285 },
+          LK: { kind: "written", minutes: 315 },
+        },
+        newlyBegun: {
+          GK: { kind: "written", minutes: 255 },
+          LK: { kind: "not-in-written-exam" },
+        },
+      },
+    });
+    expect(NRW_2026_WORKING_TIMES.Latein).toMatchObject({
+      kind: "language",
+      languageFamily: "ancient",
+      languageScope: "ancient-languages",
+      subjects: ["Latein", "Griechisch", "Hebräisch"],
+      courseTimes: {
+        continued: {
+          GK: { kind: "written", minutes: 240 },
+          LK: { kind: "written", minutes: 300 },
+        },
+        newlyBegun: {
+          GK: { kind: "written", minutes: 210 },
+          LK: { kind: "not-in-written-exam" },
+        },
+      },
+    });
+    expect(getOfficialWorkingTimeMinutes("Englisch (neu einsetzend)", "GK")).toBe(255);
+    expect(getOfficialWorkingTimeMinutes("Englisch (neu einsetzend)", "LK")).toBeNull();
+    expect(getOfficialWorkingTimeMinutes("Englisch", "GK", "newlyBegun")).toBe(255);
+    expect(getOfficialWorkingTimeMinutes("moderne fremdsprache neu einsetzend", "GK")).toBe(255);
+    for (const subject of ["Latein", "Griechisch", "Hebräisch"]) {
+      expect(getOfficialWorkingTimeMinutes(subject, "GK")).toBe(240);
+      expect(getOfficialWorkingTimeMinutes(subject, "LK")).toBe(300);
+      expect(getOfficialWorkingTimeMinutes(`${subject} (neu einsetzend)`, "GK")).toBe(210);
+      expect(getOfficialWorkingTimeMinutes(`${subject} (neu einsetzend)`, "LK")).toBeNull();
+    }
+  });
+
+  it("makes the Religion-Kunst-Musik group, practical rule, and Sport context explicit", () => {
+    const group = NRW_2026_WORKING_TIMES.Religion;
+    expect(group.kind).toBe("subject-group");
+    if (group.kind === "subject-group") {
+      expect(group.groupId).toBe("religion-kunst-musik");
+      expect(group.subjects).toEqual(["Religion", "Kunst", "Musik"]);
+      expect(group.taskExtensions.Kunst).toEqual({
+        kind: "fixed-addition",
+        minutes: 60,
+        appliesWhen: "aufgabenart-i",
+      });
+      expect(group.taskExtensions.Musik).toEqual({
+        kind: "fixed-addition",
+        minutes: 60,
+        appliesWhen: "gestaltungsaufgabe",
+      });
+    }
+    expect(getOfficialPracticalExtensionRule("Bio")).toEqual({
+      kind: "task-indicated",
+      trigger: "practical-components",
+      additionalTime: "indicated-in-task",
+      description: "Die zusätzliche Zeit wird im Aufgabentext ausgewiesen.",
+    });
+    expect(getOfficialPracticalExtensionRule("Mathe")).toBeNull();
+    const sport = NRW_2026_WORKING_TIMES.Sport;
+    expect(sport.kind).toBe("sport-lk-only");
+    if (sport.kind === "sport-lk-only") {
+      expect(sport.courseTimes.GK).toEqual({ kind: "not-in-written-exam" });
+      expect(sport.courseTimes.LK).toEqual({ kind: "written", minutes: 300 });
+      expect(sport.oralFourthExam).toEqual({ kind: "separate", workingTimeStatus: "not-defined" });
+    }
   });
 
   it("enforces all Mathe Sachgebiet quotas in Teil 1 and Teil 2", () => {
@@ -185,6 +300,24 @@ describe("NRW 2026 exam composer", () => {
         task.criteria.some((criterion) => criterion.indicatorDE.includes(markers[task.sourceNotePaths[0]]))
       ).toBe(true);
     }
+  });
+
+  it("composes identically from a real parsed note and an equivalent ExamSourceNote fixture", () => {
+    const parsed = parsedGermanNote("01_Deutsch/Sprachwandel.md", "Sprache", "Sprachwandel");
+    const fixture: ExamSourceNote = {
+      path: parsed.path,
+      subject: parsed.fach,
+      title: parsed.thema,
+      blocks: parsed.blocks.map((block) => ({
+        headingLevel: block.kind === "h2" ? 2 : block.kind === "h3" ? 3 : null,
+        text: block.text,
+      })),
+      examRelevant: parsed.klausurrelevant,
+    };
+
+    expect(composeExam([fixture], "Deutsch", "LK", { seed: 17 })).toEqual(
+      composeExam([parsed], "Deutsch", "LK", { seed: 17 })
+    );
   });
 
   it("weights low BKT mastery above high mastery", () => {

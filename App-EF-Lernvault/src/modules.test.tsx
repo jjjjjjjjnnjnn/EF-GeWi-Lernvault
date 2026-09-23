@@ -1,7 +1,7 @@
 /** Komponenten-rauchtests (RTL/jsdom): module rendern + kern-interaktion. */
 import { readFileSync, readdirSync } from "node:fs";
 import { join, resolve } from "node:path";
-import { beforeEach, describe, expect, it, vi } from "vitest";
+import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 import { fireEvent, render, screen, waitFor, within } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 
@@ -50,6 +50,7 @@ import {
   ONBOARDING_STORAGE_KEY,
   allPersistedKeys,
 } from "./engine/storageKeys";
+import { clearAllSessions } from "./storage/tutorHistory";
 import type { VaultCard, VaultNote } from "./vault/parser";
 
 const note = (thema: string, fach = "SoWi"): VaultNote => ({
@@ -108,6 +109,48 @@ describe("UI source contract", () => {
     });
 
     expect(violations).toEqual([]);
+  });
+
+  it("keeps Tutor on semantic tokens, compact controls, and the source icon contract", () => {
+    const source = readFileSync(resolve(process.cwd(), "src/modules/Tutor.tsx"), "utf8");
+    const allowedHex = new Set<string>();
+    const hexViolations = Array.from(source.matchAll(/#[0-9a-f]{3,8}/gi))
+      .filter((match) => !allowedHex.has(match[0].toLowerCase()))
+      .map((match) => `hex:${match[0]}`);
+    const violations = [
+      ...hexViolations,
+      ...Array.from(source.matchAll(/\bshadow-(?!none\b)[\w-]+/g), (match) => `shadow:${match[0]}`),
+      ...Array.from(source.matchAll(/\bitalic\b/g), (match) => `italic:${match[0]}`),
+      ...Array.from(source.matchAll(/[\u{1F000}-\u{1FAFF}\u{2600}-\u{27BF}]/gu), (match) => `emoji:${match[0]}`),
+      ...Array.from(source.matchAll(/\bboxShadow\s*[:=]/g), (match) => `box-shadow:${match[0]}`),
+      ...Array.from(source.matchAll(/\bborderRadius\s*[:=]/g), (match) => `radius:${match[0]}`),
+      ...Array.from(source.matchAll(/\brounded-(?:lg|xl|2xl|3xl)\b/g), (match) => `large-radius:${match[0]}`),
+      ...Array.from(source.matchAll(/\brounded-\[(?!\/?var\(--radius\)\])[^\]]+\]/g), (match) => `inline-radius:${match[0]}`),
+      ...Array.from(source.matchAll(/\btext-\[(?:9|10|11)px\]/g), (match) => `small-text:${match[0]}`),
+      ...Array.from(source.matchAll(/<(?:button|a)\b[^>]*>\s*[+·×✕✓✔←→↑↓⚙]+\s*<\/(?:button|a)>/gu), (match) => `symbol-control:${match[0]}`),
+    ];
+    const iconRequirements = [
+      { label: "width", pattern: /\bwidth="16"/ },
+      { label: "height", pattern: /\bheight="16"/ },
+      { label: "viewBox", pattern: /\bviewBox="0 0 16 16"/ },
+      { label: "fill", pattern: /\bfill="none"/ },
+      { label: "stroke", pattern: /\bstroke="currentColor"/ },
+      { label: "aria-hidden", pattern: /\baria-hidden="true"/ },
+    ];
+    const iconViolations = Array.from(source.matchAll(/<svg\b[^>]*>/g)).flatMap((match, index) =>
+      iconRequirements
+        .filter(({ pattern }) => !pattern.test(match[0]))
+        .map(({ label }) => `icon-${index + 1}:${label}`)
+    );
+
+    expect([...violations, ...iconViolations]).toEqual([]);
+    const politeStatusTags = Array.from(source.matchAll(/<[^>]+\brole="status"[^>]*>/g))
+      .map((match) => match[0])
+      .filter((tag) => /\baria-live="polite"/.test(tag));
+
+    expect(source).toContain("group-focus-within:opacity-100");
+    expect(politeStatusTags.length).toBeGreaterThanOrEqual(3);
+    expect(source).toContain("aria-busy={isThinking}");
   });
 });
 
@@ -281,6 +324,10 @@ describe("Keyboard UI registry", () => {
 });
 
 describe("Tutor overlays", () => {
+  afterEach(async () => {
+    await clearAllSessions();
+  });
+
   it("gives the CCR reference dialog semantics and closes it with Escape", async () => {
     const user = userEvent.setup();
     render(<Tutor lang="de" vaultNotes={[note("Teilhabe")]} />);
@@ -294,6 +341,43 @@ describe("Tutor overlays", () => {
     expect(dialog).toHaveAttribute("aria-modal", "true");
     fireEvent.keyDown(dialog, { key: "Escape" });
     await waitFor(() => expect(screen.queryByRole("dialog")).not.toBeInTheDocument());
+  });
+
+  it("uses real session buttons and reveals their actions during keyboard focus", async () => {
+    const user = userEvent.setup();
+    render(<Tutor lang="de" />);
+    await screen.findByRole("button", { name: "Neue Unterhaltung" });
+
+    await user.click(screen.getByRole("button", { name: "Neuer Chat" }));
+    const sessionButtons = await screen.findAllByRole("button", { name: "Neue Unterhaltung" });
+    const inactiveSession = sessionButtons.find((button) => button.getAttribute("aria-current") !== "true");
+    expect(inactiveSession).toBeInstanceOf(HTMLButtonElement);
+
+    inactiveSession!.focus();
+    await user.keyboard("{Enter}");
+    await waitFor(() => expect(inactiveSession).toHaveAttribute("aria-current", "true"));
+
+    const row = inactiveSession!.parentElement as HTMLElement;
+    const renameButton = within(row).getByRole("button", { name: "Chat umbenennen" });
+    renameButton.focus();
+    expect(renameButton).toHaveFocus();
+    expect(renameButton.parentElement).toHaveClass("group-focus-within:opacity-100");
+  });
+
+  it("renders German reading in serif with the smaller Chinese translation beneath it", async () => {
+    render(<Tutor lang="de" />);
+    const german = await screen.findByText(
+      "Willkommen! Ich bin dein lokaler EF-Tutor. Stelle Fragen zu SoWi, Philosophie oder Mathe. Jede Auskunft wird direkt aus deinen Vault-Notizen belegt.",
+      { selector: "p.de-reading" }
+    );
+    const chinese = await screen.findByText(
+      "你好！我是你的本地高中助教。支持 SoWi、哲学与核心公式提问，所有实质断言均附带知识库精确出处。",
+      { selector: "p.zh-translation" }
+    );
+
+    expect(german).toHaveClass("de-reading");
+    expect(chinese).toHaveClass("zh-translation");
+    expect(german.compareDocumentPosition(chinese)).toBe(Node.DOCUMENT_POSITION_FOLLOWING);
   });
 });
 
@@ -357,7 +441,7 @@ describe("Settings", () => {
   it("sync ohne endpoint -> fehlermeldung", async () => {
     const user = userEvent.setup();
     render(<Settings {...props} />);
-    await user.click(screen.getByText("↑ 上传"));
-    expect(screen.getByText("同步失败——检查地址与网络。")).toBeInTheDocument();
+    await user.click(screen.getByRole("button", { name: "上传" }));
+    expect(screen.getByRole("status")).toHaveTextContent("同步失败——检查地址与网络。");
   });
 });

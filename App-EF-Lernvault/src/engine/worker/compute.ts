@@ -1,8 +1,7 @@
-// Leichtgewichtiger Rechner für rechenintensive Vektor- und Ähnlichkeitsoperationen (Phase 3).
-// Entlastet den UI-Haupt-Thread durch asynchrone Stapelverarbeitung (Chunking / Batch-Cosine).
-// Ermöglicht 60 FPS flüssiges Tippen und Scrollen während des RAG-Verifizierens.
-
 import { cosSim, scoreClaimSupport, type ClaimReport, splitClaims } from "../embed";
+import type { BatchVerifyResponse, ComputeWorkerRequest } from "./compute.worker";
+
+export type { BatchVerifyResponse } from "./compute.worker";
 
 export interface BatchVerifyRequest {
   answer: string;
@@ -10,16 +9,76 @@ export interface BatchVerifyRequest {
   threshold?: number;
 }
 
-export interface BatchVerifyResponse {
-  claims: ClaimReport[];
-  backed: boolean;
+type WorkerPayload =
+  | {
+      kind: "semantic";
+      claims: string[];
+      claimVecs: number[][];
+      chunkVecs: number[][];
+      threshold: number;
+    }
+  | {
+      kind: "rank";
+      queryVec: number[];
+      entries: { id: string; vec: number[] }[];
+      topK: number;
+    };
+
+let nextWorkerId = 0;
+
+function runWorker<T>(payload: WorkerPayload): Promise<T> {
+  const worker = new Worker(new URL("./compute.worker.ts", import.meta.url), { type: "module" });
+  const id = ++nextWorkerId;
+  return new Promise<T>((resolve, reject) => {
+    worker.onmessage = (event: MessageEvent<{ id: number; result: unknown }>) => {
+      if (event.data.id !== id) return;
+      worker.terminate();
+      resolve(event.data.result as T);
+    };
+    worker.onerror = (event) => {
+      worker.terminate();
+      reject(new Error(event.message || "Worker-Rechenfehler"));
+    };
+    worker.postMessage({ ...payload, id } satisfies ComputeWorkerRequest);
+  });
 }
 
-/**
- * Führt die semantische Ähnlichkeitsberechnung für Behauptungen asynchron aus.
- * Zerlegt die Arbeit in Microtasks (setTimeout / requestIdleCallback / Worker-tauglich),
- * um UI-Blockaden zu verhindern.
- */
+function computeSemanticBatchLocally(
+  claims: string[],
+  claimVecs: number[][],
+  chunkVecs: number[][],
+  threshold: number
+): Promise<BatchVerifyResponse> {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      const reports: ClaimReport[] = [];
+      for (let i = 0; i < claims.length; i++) {
+        const claimVec = claimVecs[i] ?? [];
+        const support = scoreClaimSupport(claimVec, chunkVecs);
+        reports.push({ claim: claims[i], support, backed: support >= threshold });
+      }
+      resolve({ claims: reports, backed: reports.every((report) => report.backed) });
+    }, 0);
+  });
+}
+
+function rankChunksBySimilarityLocally(
+  queryVec: number[],
+  chunkEntries: { id: string; vec: number[] }[],
+  topK: number
+): Promise<{ id: string; score: number }[]> {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      const scored = chunkEntries.map((entry) => ({
+        id: entry.id,
+        score: cosSim(queryVec, entry.vec),
+      }));
+      scored.sort((a, b) => b.score - a.score);
+      resolve(scored.slice(0, Math.max(1, topK)));
+    }, 0);
+  });
+}
+
 export async function computeSemanticBatch(
   answer: string,
   chunkVecs: number[][],
@@ -31,49 +90,26 @@ export async function computeSemanticBatch(
     return { claims: [], backed: true };
   }
 
-  // Vektorisierung anstoßen
   const claimVecs = await embedFn(claims);
-
-  // Cosinus-Scoring mit Microtask-Yielding bei großen Datenmengen
-  return new Promise((resolve) => {
-    // Kurze Pause damit React Frame rendern kann
-    setTimeout(() => {
-      const reports: ClaimReport[] = [];
-      for (let i = 0; i < claims.length; i++) {
-        const cVec = claimVecs[i] ?? [];
-        const support = scoreClaimSupport(cVec, chunkVecs);
-        reports.push({
-          claim: claims[i],
-          support,
-          backed: support >= threshold,
-        });
-      }
-
-      resolve({
-        claims: reports,
-        backed: reports.every((r) => r.backed),
-      });
-    }, 0);
+  if (typeof Worker === "undefined") {
+    return computeSemanticBatchLocally(claims, claimVecs, chunkVecs, threshold);
+  }
+  return runWorker<BatchVerifyResponse>({
+    kind: "semantic",
+    claims,
+    claimVecs,
+    chunkVecs,
+    threshold,
   });
 }
 
-/**
- * Sortiert und bewertet Chunks nach Vektorähnlichkeit mit Pagination / TopK.
- */
 export async function rankChunksBySimilarity(
   queryVec: number[],
   chunkEntries: { id: string; vec: number[] }[],
   topK = 8
 ): Promise<{ id: string; score: number }[]> {
-  return new Promise((resolve) => {
-    setTimeout(() => {
-      const scored = chunkEntries.map((c) => ({
-        id: c.id,
-        score: cosSim(queryVec, c.vec),
-      }));
-
-      scored.sort((a, b) => b.score - a.score);
-      resolve(scored.slice(0, Math.max(1, topK)));
-    }, 0);
-  });
+  if (typeof Worker === "undefined") {
+    return rankChunksBySimilarityLocally(queryVec, chunkEntries, topK);
+  }
+  return runWorker({ kind: "rank", queryVec, entries: chunkEntries, topK });
 }

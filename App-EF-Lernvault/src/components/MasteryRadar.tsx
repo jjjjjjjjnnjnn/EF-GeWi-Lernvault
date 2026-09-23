@@ -47,7 +47,7 @@ export const MasteryRadar: React.FC<MasteryRadarProps> = ({ fach }) => {
   };
 
   return (
-    <div className="space-y-4 rounded-[var(--radius)] border border-[var(--line)] bg-[var(--surface)] p-4 font-sans text-xs">
+    <div className="space-y-4 border-y border-[var(--line)] py-4 font-sans text-xs">
       <div className="flex flex-wrap items-center justify-between gap-2 border-b border-[var(--line)] pb-3">
         <div>
           <h3 className="de-heading text-base text-[var(--ink)]">
@@ -81,7 +81,7 @@ export const MasteryRadar: React.FC<MasteryRadarProps> = ({ fach }) => {
                   aria-pressed={activeTerm === term}
                   className={`rounded-[var(--radius)] px-2 py-1 font-mono text-[var(--text-meta)] ${
                     activeTerm === term
-                      ? "bg-[var(--accent)] text-white"
+                      ? "bg-[var(--accent)] text-[var(--paper)]"
                       : "text-[var(--gray)] hover:text-[var(--ink)]"
                   }`}
                 >

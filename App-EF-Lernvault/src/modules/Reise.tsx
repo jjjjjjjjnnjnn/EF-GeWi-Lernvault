@@ -391,14 +391,15 @@ export default function ReiseModule({
   return (
     <div className="mx-auto w-full min-w-0 max-w-5xl space-y-6">
       {/* Top Header: Navigation between wizard & course, plus XP and streak */}
-      <div className="flex flex-wrap items-center justify-between border-b border-[#E5E1D8] pb-3 text-xs font-mono text-[#6B675C]">
+      <div className="flex flex-wrap items-center justify-between border-b border-[var(--line)] pb-3 text-xs font-mono text-[var(--gray)]">
         <div className="flex flex-wrap items-center gap-3">
           <button
+            type="button"
             onClick={() => setActiveCourse(null)}
             className={`transition-colors ${
               !activeCourse
-                ? "font-semibold text-[#4338CA] border-b border-[#4338CA]"
-                : "text-[#6B675C] hover:text-[#1C1B17]"
+                ? "font-semibold text-[var(--accent)] border-b border-[var(--accent)]"
+                : "text-[var(--gray)] hover:text-[var(--ink)]"
             }`}
           >
             ← {lang === "de" ? "Kurskatalog & Assistent" : "课程向导 / 目录"}
@@ -406,20 +407,25 @@ export default function ReiseModule({
           {activeCourse && (
             <>
               <span>/</span>
-              <span className="font-serif text-[#1C1B17] font-medium">
+              <span className="font-serif text-[var(--ink)] font-medium">
                 {activeCourse.fach} · {activeCourse.thema}
               </span>
             </>
           )}
         </div>
 
-        <div className="flex flex-wrap items-center gap-4">
+        <div
+          role="status"
+          aria-live="polite"
+          aria-atomic="true"
+          className="flex flex-wrap items-center gap-4"
+        >
           <span>
-            XP: <strong className="text-[#1C1B17]">{progress.xp}</strong>
+            XP: <strong className="text-[var(--ink)]">{progress.xp}</strong>
           </span>
           <span>·</span>
           <span>
-            连击: <strong className="text-[#1C1B17]">{progress.streak.length}</strong>{" "}
+            连击: <strong className="text-[var(--ink)]">{progress.streak.length}</strong>{" "}
             {lang === "de" ? "Tage" : "天"}
           </span>
         </div>
@@ -427,12 +433,12 @@ export default function ReiseModule({
 
       {/* VIEW 1: 3-QUESTION WIZARD (Katalog & Assistent) */}
       {!activeCourse ? (
-        <div className="border border-[#E5E1D8] bg-white p-8 rounded-sm space-y-8">
+        <div className="space-y-8 py-2">
           <div>
-            <h2 className="font-serif text-2xl text-[#1C1B17] tracking-tight">
+            <h2 className="font-serif text-2xl text-[var(--ink)] tracking-tight">
               Lernreise · {lang === "de" ? "Kurs-Assistent" : "互动学习向导"}
             </h2>
-            <p className="font-sans text-xs text-[#6B675C] mt-1">
+            <p className="font-sans text-xs text-[var(--gray)] mt-1">
               {lang === "de"
                 ? "Wähle Fach, Thema und Ziel — direkte, interaktive Begleitung durch das EF-Curriculum."
                 : "选择学科、主题与学习目标——沉浸式探索 Gymnasium EF 知识点。"}
@@ -441,7 +447,7 @@ export default function ReiseModule({
 
           {/* Question 1: Fach Selection */}
           <div className="space-y-2">
-            <label className="block text-xs font-mono uppercase tracking-wider text-[#6B675C]">
+            <label className="block text-xs font-mono uppercase tracking-wider text-[var(--gray)]">
               1. Fach / 目标学科
             </label>
             <div className="flex flex-wrap gap-1.5">
@@ -452,16 +458,17 @@ export default function ReiseModule({
                 const isSelected = wizardFach.toLowerCase() === f.id.toLowerCase();
                 return (
                   <button
+                    type="button"
                     key={f.id}
                     onClick={() => setWizardFach(f.id)}
-                    className={`px-2.5 py-1 text-xs font-mono rounded-sm border transition-all ${
+                    className={`px-2.5 py-1 text-xs font-mono rounded-[var(--radius)] border transition-all ${
                       isSelected
-                        ? "border-[#4338CA] text-[#4338CA] bg-[#ECE7DC]/40 font-medium"
-                        : "border-[#E5E1D8] text-[#6B675C] hover:text-[#1C1B17] hover:border-[#1C1B17]"
+                        ? "border-[var(--accent)] text-[var(--accent)] bg-[var(--paper-subtle)]/40 font-medium"
+                        : "border-[var(--line)] text-[var(--gray)] hover:text-[var(--ink)] hover:border-[var(--ink)]"
                     }`}
                   >
                     {f.kurz} · {lang === "de" ? f.nameDE : f.nameZH}{" "}
-                    <span className="text-[10px] opacity-75">({count})</span>
+                    <span className="text-[var(--text-meta)] opacity-75">({count})</span>
                   </button>
                 );
               })}
@@ -470,7 +477,7 @@ export default function ReiseModule({
 
           {/* Question 2: Ziel Filter */}
           <div className="space-y-2">
-            <label className="block text-xs font-mono uppercase tracking-wider text-[#6B675C]">
+            <label className="block text-xs font-mono uppercase tracking-wider text-[var(--gray)]">
               2. Lernziel / 学习目标
             </label>
             <div className="flex gap-2">
@@ -481,12 +488,13 @@ export default function ReiseModule({
                 { id: "muendlich", de: "Mündlich (口试)", zh: "Mündlich 口语表达" },
               ].map((z) => (
                 <button
+                  type="button"
                   key={z.id}
                   onClick={() => setWizardZiel(z.id)}
-                  className={`px-3 py-1 text-xs font-sans rounded-sm border transition-all ${
+                  className={`px-3 py-1 text-xs font-sans rounded-[var(--radius)] border transition-all ${
                     wizardZiel === z.id
-                      ? "border-[#4338CA] text-[#4338CA] font-medium"
-                      : "border-[#E5E1D8] text-[#6B675C] hover:text-[#1C1B17]"
+                      ? "border-[var(--accent)] text-[var(--accent)] font-medium"
+                      : "border-[var(--line)] text-[var(--gray)] hover:text-[var(--ink)]"
                   }`}
                 >
                   {lang === "de" ? z.de : z.zh}
@@ -497,47 +505,48 @@ export default function ReiseModule({
 
           {/* Question 3: Thema / Course List */}
           <div className="space-y-3 pt-2">
-            <label className="block text-xs font-mono uppercase tracking-wider text-[#6B675C]">
+            <label className="block text-xs font-mono uppercase tracking-wider text-[var(--gray)]">
               3. Thema / 可选课程清单 ({wizardCourses.length})
             </label>
 
             {wizardCourses.length === 0 ? (
-              <div className="border border-dashed border-[#E5E1D8] bg-[#FAF9F6] p-6 text-center text-xs font-mono text-[#6B675C] rounded-sm leading-relaxed">
+              <div className="border border-dashed border-[var(--line)] bg-[var(--paper-subtle)] p-6 text-center text-xs font-mono text-[var(--gray)] rounded-[var(--radius)] leading-relaxed">
                 {lang === "de"
                   ? "Für dieses Thema gibt es noch keine Lernreise. Lies zuerst die Notizen in der Bibliothek."
                   : "该学科/主题暂无互动旅程文件，去 Bibliothek 先读笔记。"}
               </div>
             ) : (
-              <div className="divide-y divide-[#E5E1D8] border border-[#E5E1D8] rounded-sm bg-white">
+                <div className="divide-y divide-[var(--line)] border-y border-[var(--line)]">
                 {wizardCourses.map((c) => (
                   <div
                     key={c.id}
-                    className="flex flex-wrap items-center justify-between gap-3 p-4 hover:bg-[#FAF9F6] transition-colors"
+                    className="flex flex-wrap items-center justify-between gap-3 p-4 hover:bg-[var(--paper-subtle)] transition-colors"
                   >
                     <div>
                       <div className="flex items-center gap-2 mb-1">
-                        <span className="font-mono text-xs uppercase text-[#4338CA] border border-[#4338CA]/30 px-1.5 py-0.2 rounded-sm">
+                        <span className="font-mono text-xs uppercase text-[var(--accent)] border border-[var(--accent)]/30 px-1.5 py-0.2 rounded-[var(--radius)]">
                           Level {c.level}
                         </span>
-                        <span className="font-mono text-xs text-[#6B675C]">
+                        <span className="font-mono text-xs text-[var(--gray)]">
                           Ziel: {c.ziel}
                         </span>
-                        <span className="text-xs font-mono text-[#6B675C]">
+                        <span className="text-xs font-mono text-[var(--gray)]">
                           · +{c.xp} XP
                         </span>
                       </div>
-                      <div className="font-serif text-base text-[#1C1B17] font-medium">
+                      <div className="font-serif text-base text-[var(--ink)] font-medium">
                         {c.thema}
                       </div>
-                      <div className="font-mono text-[11px] text-[#6B675C] mt-0.5">
+                      <div className="font-mono text-[var(--text-meta)] text-[var(--gray)] mt-0.5">
                         {c.schritte.length} Schritte (
                         {c.schritte.map((s) => s.typ).join(" → ")})
                       </div>
                     </div>
 
                     <button
+                      type="button"
                       onClick={() => setActiveCourse(c)}
-                      className="px-4 py-1.5 font-mono text-xs uppercase tracking-wider border border-[#1C1B17] bg-[#1C1B17] text-white hover:bg-[#4338CA] hover:border-[#4338CA] rounded-sm transition-colors"
+                      className="px-4 py-1.5 font-mono text-xs uppercase tracking-wider border border-[var(--ink)] bg-[var(--ink)] text-[var(--paper)] hover:bg-[var(--accent)] hover:border-[var(--accent)] rounded-[var(--radius)] transition-colors"
                     >
                       {lang === "de" ? "Starten →" : "开始学习 →"}
                     </button>
@@ -551,7 +560,7 @@ export default function ReiseModule({
         /* VIEW 2: 5-STEP INTERACTIVE COURSE PLAYER */
         <div className="space-y-6">
           {/* Step Navigation Rail (Tufte hairline step line) */}
-          <div className="border border-[#E5E1D8] bg-white p-4 rounded-sm flex flex-wrap items-center justify-between gap-3">
+          <div className="border-y border-[var(--line)] py-3 flex flex-wrap items-center justify-between gap-3">
             <div className="flex flex-wrap items-center gap-1.5">
               {activeCourse.schritte.map((s, idx) => {
                 const isCurrent = stepIdx === idx;
@@ -560,23 +569,24 @@ export default function ReiseModule({
 
                 return (
                   <button
+                    type="button"
                     key={idx}
                     disabled={!isUnlocked}
                     onClick={() => setStepIdx(idx)}
-                    className={`flex items-center gap-1.5 px-3 py-1.5 text-xs font-mono rounded-sm transition-all border ${
+                    className={`flex items-center gap-1.5 px-3 py-1.5 text-xs font-mono rounded-[var(--radius)] transition-all border ${
                       isCurrent
-                        ? "border-[#4338CA] text-[#4338CA] bg-[#ECE7DC]/40 font-semibold"
+                        ? "border-[var(--accent)] text-[var(--accent)] bg-[var(--paper-subtle)]/40 font-semibold"
                         : isUnlocked
-                        ? "border-[#E5E1D8] text-[#1C1B17] hover:border-[#1C1B17]"
-                        : "border-[#E5E1D8]/50 text-[#6B675C]/40 cursor-not-allowed"
+                        ? "border-[var(--line)] text-[var(--ink)] hover:border-[var(--ink)]"
+                        : "border-[var(--line)]/50 text-[var(--gray)]/40 cursor-not-allowed"
                     }`}
                   >
                     <span>0{s.stepNumber}</span>
-                    <span className="font-sans uppercase text-[11px] tracking-wider">
+                    <span className="font-sans uppercase text-[var(--text-meta)] tracking-wider">
                       {s.typ}
                     </span>
                     {isPast && (
-                      <span className="text-[#2E7D32]">
+                      <span className="text-[var(--success)]">
                         {lang === "de" ? "Erledigt" : "已完成"}
                       </span>
                     )}
@@ -585,24 +595,24 @@ export default function ReiseModule({
               })}
             </div>
 
-            <div className="text-xs font-mono text-[#6B675C]">
+            <div className="text-xs font-mono text-[var(--gray)]">
               {lang === "de" ? "Schritt" : "步骤"} {stepIdx + 1} /{" "}
               {activeCourse.schritte.length}
             </div>
           </div>
 
           {/* Current Step Body */}
-          <div className="border border-[#E5E1D8] bg-white p-8 rounded-sm space-y-6">
-            <div className="flex flex-wrap items-baseline justify-between gap-3 border-b border-[#E5E1D8] pb-3">
+          <div className="space-y-6 py-2">
+            <div className="flex flex-wrap items-baseline justify-between gap-3 border-b border-[var(--line)] pb-3">
               <div>
-                <span className="font-mono text-xs uppercase tracking-wider text-[#4338CA]">
+                <span className="font-mono text-xs uppercase tracking-wider text-[var(--accent)]">
                   Schritt {currentSchritt?.stepNumber} · {currentSchritt?.typ}
                 </span>
-                <h3 className="font-serif text-xl text-[#1C1B17] mt-0.5">
+                <h3 className="font-serif text-xl text-[var(--ink)] mt-0.5">
                   {currentSchritt?.title}
                 </h3>
               </div>
-              <span className="text-xs font-mono text-[#6B675C]">
+              <span className="text-xs font-mono text-[var(--gray)]">
                 Ziel: +
                 {currentSchritt?.typ === "entdecken"
                   ? 5
@@ -637,23 +647,27 @@ export default function ReiseModule({
 
                 {/* D2: KI-erklaerung (auto) + rueckfragen */}
                 {(kiBox?.loading || kiBox?.text) && (
-                  <div className="rounded-sm border border-[#4338CA]/30 bg-[#FAF9F6] p-4 space-y-3">
-                    <div className="font-mono text-[11px] uppercase tracking-wider text-[#4338CA]">
+                  <div
+                    aria-live="polite"
+                    aria-busy={kiBox.loading}
+                    className="rounded-[var(--radius)] border border-[var(--accent)]/30 bg-[var(--paper-subtle)] p-4 space-y-3"
+                  >
+                    <div className="font-mono text-[var(--text-meta)] uppercase tracking-wider text-[var(--accent)]">
                       KI-Erklärung · AI讲解
                     </div>
                     {kiBox.loading && !kiBox.text ? (
-                      <div className="font-sans text-sm text-[#6B675C]">
+                      <div role="status" className="font-sans text-sm text-[var(--gray)]">
                         {lang === "de" ? "KI erklärt …" : "AI讲解中…"}
                       </div>
                     ) : (
-                      <div className="font-sans text-sm leading-relaxed text-[#1C1B17] whitespace-pre-wrap">
+                      <div className="font-sans text-sm leading-relaxed text-[var(--ink)] whitespace-pre-wrap">
                         {kiBox.text}
                       </div>
                     )}
                     {kiBox.chat.map((c, i) => (
-                      <div key={i} className="space-y-1 border-t border-[#E5E1D8] pt-2">
-                        <div className="font-sans text-xs text-[#6B675C]">→ {c.q}</div>
-                        <div className="font-sans text-sm leading-relaxed text-[#1C1B17] whitespace-pre-wrap">
+                      <div key={i} className="space-y-1 border-t border-[var(--line)] pt-2">
+                        <div className="font-sans text-xs text-[var(--gray)]">→ {c.q}</div>
+                        <div className="font-sans text-sm leading-relaxed text-[var(--ink)] whitespace-pre-wrap">
                           {c.a}
                         </div>
                       </div>
@@ -666,12 +680,12 @@ export default function ReiseModule({
                           if (e.key === "Enter") sendKiFollow();
                         }}
                         placeholder={lang === "de" ? "Nachfragen …" : "追问…"}
-                        className="flex-1 rounded-sm border border-[#E5E1D8] bg-white px-2 py-1.5 font-sans text-sm text-[#1C1B17] focus:border-[#4338CA] focus:outline-none"
+                        className="flex-1 rounded-[var(--radius)] border border-[var(--line)] bg-[var(--surface)] px-2 py-1.5 font-sans text-sm text-[var(--ink)] focus:border-[var(--accent)] focus:outline-none"
                       />
                       <button
                         type="button"
                         onClick={sendKiFollow}
-                        className="rounded-sm border border-[#1C1B17] bg-[#1C1B17] px-3 py-1.5 font-mono text-xs text-white hover:bg-[#4338CA] hover:border-[#4338CA] active:scale-95 transition-all"
+                        className="rounded-[var(--radius)] border border-[var(--ink)] bg-[var(--ink)] px-3 py-1.5 font-mono text-xs text-[var(--paper)] hover:bg-[var(--accent)] hover:border-[var(--accent)] active:scale-95 transition-all"
                       >
                         {lang === "de" ? "Fragen" : "发送"}
                       </button>
@@ -679,10 +693,11 @@ export default function ReiseModule({
                   </div>
                 )}
 
-                <div className="pt-4 border-t border-[#E5E1D8] flex justify-end">
+                <div className="pt-4 border-t border-[var(--line)] flex justify-end">
                   <button
+                    type="button"
                     onClick={() => goNextOrFinish(5)}
-                    className="px-5 py-2 font-mono text-xs uppercase tracking-wider bg-[#1C1B17] text-white hover:bg-[#4338CA] rounded-sm transition-colors"
+                    className="px-5 py-2 font-mono text-xs uppercase tracking-wider bg-[var(--ink)] text-[var(--paper)] hover:bg-[var(--accent)] rounded-[var(--radius)] transition-colors"
                   >
                     {isLastStep
                       ? lang === "de"
@@ -699,7 +714,7 @@ export default function ReiseModule({
             {/* STEP 2: AUSPROBIEREN (动手) */}
             {currentSchritt?.typ === "ausprobieren" && (
               <div className="space-y-5">
-                <div className="border border-[#E5E1D8] bg-[#FAF9F6] p-4 rounded-sm font-serif text-base text-[#1C1B17] leading-relaxed">
+                <div className="border border-[var(--line)] bg-[var(--paper-subtle)] p-4 rounded-[var(--radius)] font-serif text-base text-[var(--ink)] leading-relaxed">
                   {(currentSchritt as SchrittAusprobieren).aufgabe}
                 </div>
 
@@ -708,14 +723,14 @@ export default function ReiseModule({
                     <button
                       type="button"
                       onClick={() => setTryShowHelp((h) => !h)}
-                      className="text-xs font-mono text-[#4338CA] hover:underline"
+                      className="text-xs font-mono text-[var(--accent)] hover:underline"
                     >
                       {tryShowHelp
                         ? "[- Hilfe verbergen / 隐藏提示]"
                         : "[+ Hilfe anzeigen / 显示解题提示]"}
                     </button>
                     {tryShowHelp && (
-                      <div className="mt-2 p-3 border border-dashed border-[#E5E1D8] bg-[#F7F5F0] text-xs font-sans text-[#6B675C] rounded-sm">
+                      <div className="mt-2 p-3 border border-dashed border-[var(--line)] bg-[var(--paper-subtle)] text-xs font-sans text-[var(--gray)] rounded-[var(--radius)]">
                         {(currentSchritt as SchrittAusprobieren).hilfe}
                       </div>
                     )}
@@ -723,7 +738,7 @@ export default function ReiseModule({
                 )}
 
                 <div className="space-y-2">
-                  <label className="block text-xs font-mono uppercase text-[#6B675C]">
+                  <label className="block text-xs font-mono uppercase text-[var(--gray)]">
                     Deine Antwort / 你的作答：
                   </label>
                   <textarea
@@ -731,17 +746,17 @@ export default function ReiseModule({
                     value={tryInput}
                     onChange={(e) => setTryInput(e.target.value)}
                     placeholder="Hier zuordnen oder Stichpunkte eingeben..."
-                    className="w-full border border-[#E5E1D8] p-3 text-sm font-sans rounded-sm focus:border-[#4338CA] focus:outline-none"
+                    className="w-full border border-[var(--line)] p-3 text-sm font-sans rounded-[var(--radius)] focus:border-[var(--accent)] focus:outline-none"
                   />
                 </div>
 
                 {tryFeedback && (
-                  <div className="border border-[#4338CA]/30 bg-[#FAF9F6] p-3 text-xs font-mono text-[#1C1B17] rounded-sm whitespace-pre-wrap leading-relaxed">
+                  <div role="status" aria-live="polite" aria-atomic="true" className="border border-[var(--accent)]/30 bg-[var(--paper-subtle)] p-3 text-xs font-mono text-[var(--ink)] rounded-[var(--radius)] whitespace-pre-wrap leading-relaxed">
                     {tryFeedback}
                   </div>
                 )}
 
-                      <div className="flex flex-wrap items-center justify-between gap-3 border-t border-[#E5E1D8] pt-4">
+                      <div className="flex flex-wrap items-center justify-between gap-3 border-t border-[var(--line)] pt-4">
                   <button
                     type="button"
                     onClick={() => {
@@ -767,18 +782,19 @@ export default function ReiseModule({
                       }
                       unlockNextStep(stepIdx + 1, 15);
                     }}
-                    className="px-4 py-2 font-mono text-xs uppercase border border-[#E5E1D8] hover:border-[#1C1B17] rounded-sm transition-colors text-[#1C1B17]"
+                    className="px-4 py-2 font-mono text-xs uppercase border border-[var(--line)] hover:border-[var(--ink)] rounded-[var(--radius)] transition-colors text-[var(--ink)]"
                   >
                     {lang === "de" ? "Antwort prüfen" : "检查答案"}
                   </button>
 
                   <button
+                    type="button"
                     disabled={!unlocked.includes(stepIdx + 1)}
                     onClick={() => goNextOrFinish(15)}
-                    className={`px-5 py-2 font-mono text-xs uppercase tracking-wider rounded-sm transition-colors ${
+                    className={`px-5 py-2 font-mono text-xs uppercase tracking-wider rounded-[var(--radius)] transition-colors ${
                       unlocked.includes(stepIdx + 1)
-                        ? "bg-[#1C1B17] text-white hover:bg-[#4338CA]"
-                        : "bg-[#E5E1D8] text-[#6B675C] cursor-not-allowed"
+                        ? "bg-[var(--ink)] text-[var(--paper)] hover:bg-[var(--accent)]"
+                        : "bg-[var(--line)] text-[var(--gray)] cursor-not-allowed"
                     }`}
                   >
                     {isLastStep
@@ -796,7 +812,7 @@ export default function ReiseModule({
             {/* STEP 3: CHECK (过关题) */}
             {currentSchritt?.typ === "check" && (
               <div className="space-y-6">
-                <div className="divide-y divide-[#E5E1D8] border border-[#E5E1D8] rounded-sm bg-white">
+              <div className="divide-y divide-[var(--line)] border-y border-[var(--line)]">
                   {(currentSchritt as SchrittCheck).items.map((item, idx) => {
                     const isPassed = checkPassed[item.id];
                     const isRevealed = checkRevealed[item.id];
@@ -805,10 +821,10 @@ export default function ReiseModule({
                       <div key={item.id} className="p-4 space-y-2">
                         <div className="flex items-start justify-between gap-3">
                           <div className="flex-1">
-                            <span className="font-mono text-xs font-semibold text-[#1C1B17] mr-2">
+                            <span className="font-mono text-xs font-semibold text-[var(--ink)] mr-2">
                               Frage {idx + 1}:
                             </span>
-                            <span className="font-serif text-sm text-[#1C1B17]">
+                            <span className="font-serif text-sm text-[var(--ink)]">
                               {item.frage}
                             </span>
                           </div>
@@ -820,14 +836,14 @@ export default function ReiseModule({
                                 [item.id]: !prev[item.id],
                               }))
                             }
-                            className="text-xs font-mono text-[#6B675C] hover:text-[#4338CA]"
+                            className="text-xs font-mono text-[var(--gray)] hover:text-[var(--accent)]"
                           >
                             {isRevealed ? "[Antwort]" : "[Lösung zeigen]"}
                           </button>
                         </div>
 
                         {isRevealed && (
-                          <div className="border-l-2 border-[#4338CA] pl-3 text-xs font-mono text-[#6B675C] bg-[#FAF9F6] py-1.5">
+                          <div className="border-l-2 border-[var(--accent)] pl-3 text-xs font-mono text-[var(--gray)] bg-[var(--paper-subtle)] py-1.5">
                             Erwartete Punkte: {item.antwort}
                           </div>
                         )}
@@ -841,7 +857,7 @@ export default function ReiseModule({
                               setCheckText((prev) => ({ ...prev, [item.id]: e.target.value }))
                             }
                             placeholder={lang === "de" ? "Antwort aus dem Kopf herschreiben …" : "合书默写答案…（先自己写，再点AI批改）"}
-                            className="w-full border border-[#E5E1D8] p-2.5 text-sm font-sans rounded-sm focus:border-[#4338CA] focus:outline-none"
+                            className="w-full border border-[var(--line)] p-2.5 text-sm font-sans rounded-[var(--radius)] focus:border-[var(--accent)] focus:outline-none"
                           />
                           <div className="flex items-center gap-2">
                             <button
@@ -867,10 +883,10 @@ export default function ReiseModule({
                                   }))
                                 );
                               }}
-                              className={`px-2.5 py-1 text-xs font-mono rounded-sm border transition-all ${
+                              className={`px-2.5 py-1 text-xs font-mono rounded-[var(--radius)] border transition-all ${
                                 !(checkText[item.id] ?? "").trim() || checkScore[item.id]?.loading || kiOff
-                                  ? "border-[#E5E1D8] text-[#6B675C]/50 cursor-not-allowed"
-                                  : "border-[#4338CA] text-[#4338CA] hover:bg-[#4338CA]/5 active:scale-95"
+                                  ? "border-[var(--line)] text-[var(--gray)]/50 cursor-not-allowed"
+                                  : "border-[var(--accent)] text-[var(--accent)] hover:bg-[var(--accent)]/5 active:scale-95"
                               }`}
                             >
                               {checkScore[item.id]?.loading
@@ -883,7 +899,7 @@ export default function ReiseModule({
                             </button>
                           </div>
                           {checkScore[item.id]?.text && (
-                            <div className="border-l-2 border-[#4338CA] pl-3 text-xs font-sans text-[#1C1B17] bg-[#FAF9F6] py-1.5 whitespace-pre-wrap leading-relaxed">
+                            <div role="status" aria-live="polite" aria-atomic="true" className="border-l-2 border-[var(--accent)] pl-3 text-xs font-sans text-[var(--ink)] bg-[var(--paper-subtle)] py-1.5 whitespace-pre-wrap leading-relaxed">
                               {checkScore[item.id].text}
                             </div>
                           )}
@@ -910,10 +926,10 @@ export default function ReiseModule({
                                 }))
                               );
                             }}
-                            className={`px-2.5 py-1 text-xs font-mono rounded-sm border border-[#E5E1D8] transition-all ${
+                            className={`px-2.5 py-1 text-xs font-mono rounded-[var(--radius)] border border-[var(--line)] transition-all ${
                               kiOff
-                                ? "text-[#6B675C]/50 cursor-not-allowed"
-                                : "text-[#6B675C] hover:border-[#4338CA] hover:text-[#4338CA]"
+                                ? "text-[var(--gray)]/50 cursor-not-allowed"
+                                : "text-[var(--gray)] hover:border-[var(--accent)] hover:text-[var(--accent)]"
                             }`}
                           >
                             {checkWhy[item.id]?.loading
@@ -930,17 +946,17 @@ export default function ReiseModule({
                                 [item.id]: !prev[item.id],
                               }));
                             }}
-                            className={`px-2.5 py-1 text-xs font-mono rounded-sm border ${
+                            className={`px-2.5 py-1 text-xs font-mono rounded-[var(--radius)] border ${
                               isPassed
-                                ? "border-[#2E7D32] bg-[#2E7D32]/10 text-[#2E7D32] font-semibold"
-                                : "border-[#E5E1D8] text-[#6B675C] hover:border-[#1C1B17]"
+                                ? "border-[var(--success)] bg-[var(--success)]/10 text-[var(--success)] font-semibold"
+                                : "border-[var(--line)] text-[var(--gray)] hover:border-[var(--ink)]"
                             }`}
                           >
                             {isPassed ? "Bestanden / 已掌握" : "Selbstcheck / 标为通过"}
                           </button>
                         </div>
                         {checkWhy[item.id]?.text && (
-                          <div className="border-l-2 border-[#4338CA] pl-3 text-xs font-sans text-[#1C1B17] bg-[#FAF9F6] py-1.5 whitespace-pre-wrap leading-relaxed">
+                          <div role="status" aria-live="polite" aria-atomic="true" className="border-l-2 border-[var(--accent)] pl-3 text-xs font-sans text-[var(--ink)] bg-[var(--paper-subtle)] py-1.5 whitespace-pre-wrap leading-relaxed">
                             {checkWhy[item.id].text}
                           </div>
                         )}
@@ -950,8 +966,8 @@ export default function ReiseModule({
                 </div>
 
                 {/* Fehlerlog Draft Specimen with Copy Button */}
-                <div className="border border-dashed border-[#E5E1D8] bg-[#F7F5F0] p-4 rounded-sm">
-                  <div className="flex items-center justify-between text-xs font-mono text-[#6B675C] mb-2">
+                <div className="border border-dashed border-[var(--line)] bg-[var(--paper-subtle)] p-4 rounded-[var(--radius)]">
+                  <div className="flex items-center justify-between text-xs font-mono text-[var(--gray)] mb-2">
                     <span>FEHLERLOG-ENTWURF / 错题补丁</span>
                     <button
                       type="button"
@@ -961,12 +977,13 @@ export default function ReiseModule({
                         setCopiedPatch(true);
                         setTimeout(() => setCopiedPatch(false), 2000);
                       }}
-                      className="text-xs font-mono text-[#4338CA] hover:underline"
+                      aria-live="polite"
+                      className="text-xs font-mono text-[var(--accent)] hover:underline"
                     >
                       {copiedPatch ? "Kopiert!" : "Kopieren / 复制补丁"}
                     </button>
                   </div>
-                  <code className="block bg-white border border-[#E5E1D8] p-2.5 font-mono text-xs text-[#1C1B17] rounded-sm">
+                  <code className="block bg-[var(--surface)] border border-[var(--line)] p-2.5 font-mono text-xs text-[var(--ink)] rounded-[var(--radius)]">
                     - [ ] [{activeCourse.fach}] {activeCourse.thema}: Check-Fehler nacharbeiten
                   </code>
                 </div>
@@ -979,19 +996,20 @@ export default function ReiseModule({
                     checkItems.every((item) => checkPassed[item.id]);
 
                   return (
-                <div className="flex flex-wrap items-center justify-between gap-3 border-t border-[#E5E1D8] pt-4">
-                      <span className="text-xs font-mono text-[#6B675C]">
+                <div className="flex flex-wrap items-center justify-between gap-3 border-t border-[var(--line)] pt-4">
+                      <span className="text-xs font-mono text-[var(--gray)]">
                         {allDone
                           ? "Alle 3 Fragen gemeistert / 3 题已全部掌握"
                           : "3 Fragen müssen als bestanden markiert sein."}
                       </span>
                       <button
+                        type="button"
                         disabled={!allDone}
                         onClick={() => goNextOrFinish(20)}
-                        className={`px-5 py-2 font-mono text-xs uppercase tracking-wider rounded-sm transition-colors ${
+                        className={`px-5 py-2 font-mono text-xs uppercase tracking-wider rounded-[var(--radius)] transition-colors ${
                           allDone
-                            ? "bg-[#1C1B17] text-white hover:bg-[#4338CA]"
-                            : "bg-[#E5E1D8] text-[#6B675C] cursor-not-allowed"
+                            ? "bg-[var(--ink)] text-[var(--paper)] hover:bg-[var(--accent)]"
+                            : "bg-[var(--line)] text-[var(--gray)] cursor-not-allowed"
                         }`}
                       >
                         {isLastStep
@@ -1011,36 +1029,36 @@ export default function ReiseModule({
             {/* STEP 4: SZENARIO (场景实战) */}
             {currentSchritt?.typ === "szenario" && (
               <div className="space-y-5">
-                <div className="border border-[#E5E1D8] bg-[#FAF9F6] p-4 rounded-sm space-y-2">
-                  <div className="text-xs font-mono uppercase text-[#4338CA]">
+                <div className="border border-[var(--line)] bg-[var(--paper-subtle)] p-4 rounded-[var(--radius)] space-y-2">
+                  <div className="text-xs font-mono uppercase text-[var(--accent)]">
                     Rolle: {(currentSchritt as SchrittSzenario).rolle}
                   </div>
-                  <div className="font-serif text-base text-[#1C1B17] leading-relaxed">
+                  <div className="font-serif text-base text-[var(--ink)] leading-relaxed">
                     {(currentSchritt as SchrittSzenario).situation}
                   </div>
                 </div>
 
                 {/* Timer row */}
-                <div className="flex flex-wrap items-center justify-between gap-3 border border-[#E5E1D8] p-3 rounded-sm bg-white">
+                <div className="flex flex-wrap items-center justify-between gap-3 border border-[var(--line)] p-3 rounded-[var(--radius)] bg-[var(--surface)]">
                   <div className="flex items-baseline gap-2">
-                    <span className="font-mono text-2xl font-normal tabular-nums text-[#1C1B17]">
+                    <span className="font-mono text-2xl font-normal tabular-nums text-[var(--ink)]">
                       {formatTime(szenarioSec)}
                     </span>
-                    <span className="font-mono text-xs text-[#6B675C]">
+                    <span className="font-mono text-xs text-[var(--gray)]">
                       / 02:00 Zielzeit
                     </span>
                   </div>
                   <button
                     type="button"
                     onClick={() => setSzenarioRunning((r) => !r)}
-                    className="px-3 py-1 font-mono text-xs uppercase border border-[#1C1B17] rounded-sm hover:bg-[#FAF9F6]"
+                    className="px-3 py-1 font-mono text-xs uppercase border border-[var(--ink)] rounded-[var(--radius)] hover:bg-[var(--paper-subtle)]"
                   >
                     {szenarioRunning ? "Stopp" : "Start"}
                   </button>
                 </div>
 
                 <div className="space-y-2">
-                  <label className="block text-xs font-mono uppercase text-[#6B675C]">
+                  <label className="block text-xs font-mono uppercase text-[var(--gray)]">
                     Plädoyer verfassen / 撰写辩论发言：
                   </label>
                   <textarea
@@ -1048,17 +1066,17 @@ export default function ReiseModule({
                     value={szenarioText}
                     onChange={(e) => setSzenarioText(e.target.value)}
                     placeholder="Beginne mit einer klaren These..."
-                    className="w-full border border-[#E5E1D8] p-3 text-sm font-serif rounded-sm focus:border-[#4338CA] focus:outline-none"
+                    className="w-full border border-[var(--line)] p-3 text-sm font-serif rounded-[var(--radius)] focus:border-[var(--accent)] focus:outline-none"
                   />
                 </div>
 
                 {/* Rubric Checklist */}
-                <div className="border border-[#E5E1D8] rounded-sm bg-[#FAF9F6] p-4 space-y-2">
-                  <div className="text-xs font-mono uppercase text-[#6B675C] tracking-wider mb-1">
+                <div className="border border-[var(--line)] rounded-[var(--radius)] bg-[var(--paper-subtle)] p-4 space-y-2">
+                  <div className="text-xs font-mono uppercase text-[var(--gray)] tracking-wider mb-1">
                     Rubric / 自评检查点（勾选核对）：
                   </div>
                   {(currentSchritt as SchrittSzenario).rubricPoints.map((p, i) => (
-                    <label key={i} className="flex items-start gap-2.5 text-xs font-mono text-[#1C1B17] cursor-pointer">
+                    <label key={i} className="flex items-start gap-2.5 text-xs font-mono text-[var(--ink)] cursor-pointer">
                       <input
                         type="checkbox"
                         checked={rubricChecks[i] ?? false}
@@ -1067,7 +1085,7 @@ export default function ReiseModule({
                             prev.map((v, j) => (j === i ? !v : v))
                           )
                         }
-                        className="mt-0.5 h-3.5 w-3.5 accent-[#4338CA]"
+                        className="mt-0.5 h-3.5 w-3.5 accent-[var(--accent)]"
                       />
                       <span>{p}</span>
                     </label>
@@ -1101,10 +1119,10 @@ export default function ReiseModule({
                     }}
                     disabled={!szenarioText.trim() || szenarioScore.loading || kiOff}
                     title={kiOff ? kiOffTitle : undefined}
-                    className={`px-4 py-2 font-mono text-xs uppercase rounded-sm border transition-all ${
+                    className={`px-4 py-2 font-mono text-xs uppercase rounded-[var(--radius)] border transition-all ${
                       !szenarioText.trim() || szenarioScore.loading || kiOff
-                        ? "border-[#E5E1D8] text-[#6B675C] cursor-not-allowed"
-                        : "border-[#4338CA] text-[#4338CA] hover:bg-[#4338CA]/5 active:scale-95"
+                        ? "border-[var(--line)] text-[var(--gray)] cursor-not-allowed"
+                        : "border-[var(--accent)] text-[var(--accent)] hover:bg-[var(--accent)]/5 active:scale-95"
                     }`}
                   >
                     {szenarioScore.loading
@@ -1121,7 +1139,7 @@ export default function ReiseModule({
                   </button>
                 </div>
                 {szenarioScore.text && (
-                  <div className="rounded-sm border border-[#4338CA]/30 bg-[#FAF9F6] p-4 font-sans text-sm leading-relaxed text-[#1C1B17] whitespace-pre-wrap">
+                  <div role="status" aria-live="polite" aria-atomic="true" className="rounded-[var(--radius)] border border-[var(--accent)]/30 bg-[var(--paper-subtle)] p-4 font-sans text-sm leading-relaxed text-[var(--ink)] whitespace-pre-wrap">
                     {szenarioScore.text}
                   </div>
                 )}
@@ -1129,8 +1147,9 @@ export default function ReiseModule({
                 {(() => {
                   const passedRubrics = rubricChecks.filter(Boolean).length >= 2;
                   return (
-                    <div className="pt-4 border-t border-[#E5E1D8] flex justify-end">
+                    <div className="pt-4 border-t border-[var(--line)] flex justify-end">
                       <button
+                        type="button"
                         disabled={!passedRubrics}
                         onClick={() => {
                           if (stepIdx + 1 < activeCourse.schritte.length) {
@@ -1142,10 +1161,10 @@ export default function ReiseModule({
                             setActiveCourse(null);
                           }
                         }}
-                        className={`px-5 py-2 font-mono text-xs uppercase tracking-wider rounded-sm transition-colors ${
+                        className={`px-5 py-2 font-mono text-xs uppercase tracking-wider rounded-[var(--radius)] transition-colors ${
                           passedRubrics
-                            ? "bg-[#1C1B17] text-white hover:bg-[#4338CA]"
-                            : "bg-[#E5E1D8] text-[#6B675C] cursor-not-allowed"
+                            ? "bg-[var(--ink)] text-[var(--paper)] hover:bg-[var(--accent)]"
+                            : "bg-[var(--line)] text-[var(--gray)] cursor-not-allowed"
                         }`}
                       >
                         {stepIdx + 1 < activeCourse.schritte.length
@@ -1165,21 +1184,21 @@ export default function ReiseModule({
             {/* STEP 5: MÜNDLICH (口试模拟 - 仅音频本地流) */}
             {currentSchritt?.typ === "muendlich" && (
               <div className="space-y-5">
-                <div className="border border-[#E5E1D8] bg-[#FAF9F6] p-4 rounded-sm">
-                  <span className="font-mono text-xs uppercase text-[#4338CA] block mb-1">
+                <div className="border border-[var(--line)] bg-[var(--paper-subtle)] p-4 rounded-[var(--radius)]">
+                  <span className="font-mono text-xs uppercase text-[var(--accent)] block mb-1">
                     Ziehung / 抽选题干
                   </span>
-                  <p className="font-serif text-base text-[#1C1B17]">
+                  <p className="font-serif text-base text-[var(--ink)]">
                     {(currentSchritt as SchrittMuendlich).ziehung}
                   </p>
                 </div>
 
-                <div className="flex items-center justify-between border border-[#E5E1D8] p-4 rounded-sm bg-white">
+                <div className="flex items-center justify-between border border-[var(--line)] p-4 rounded-[var(--radius)] bg-[var(--surface)]">
                   <div>
-                    <span className="font-mono text-2xl font-normal tabular-nums text-[#1C1B17]">
+                    <span className="font-mono text-2xl font-normal tabular-nums text-[var(--ink)]">
                       {formatTime(oralSec)}
                     </span>
-                    <span className="font-mono text-xs text-[#6B675C] ml-2">
+                    <span className="font-mono text-xs text-[var(--gray)] ml-2">
                       Verbleibend / 倒计时
                     </span>
                   </div>
@@ -1189,41 +1208,48 @@ export default function ReiseModule({
                       <button
                         type="button"
                         onClick={startRecording}
-                        className="px-4 py-1.5 font-mono text-xs uppercase border border-[#C62828] text-[#C62828] hover:bg-[#C62828]/10 rounded-sm"
+                        className="inline-flex items-center gap-1.5 px-4 py-1.5 font-mono text-xs uppercase border border-[var(--warning)] text-[var(--warning)] hover:bg-[var(--warning)]/10 rounded-[var(--radius)]"
                       >
-                        ● Aufnahme starten
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.4" aria-hidden="true">
+                          <circle cx="8" cy="8" r="3.25" />
+                        </svg>
+                        Aufnahme starten
                       </button>
                     ) : (
                       <button
                         type="button"
+                        aria-pressed="true"
                         onClick={stopRecording}
-                        className="px-4 py-1.5 font-mono text-xs uppercase bg-[#C62828] text-white rounded-sm animate-pulse"
+                        className="inline-flex items-center gap-1.5 px-4 py-1.5 font-mono text-xs uppercase bg-[var(--warning)] text-[var(--paper)] rounded-[var(--radius)]"
                       >
-                        ■ Aufnahme stoppen
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinejoin="round" aria-hidden="true">
+                          <rect x="4" y="4" width="8" height="8" rx="0.75" />
+                        </svg>
+                        Aufnahme stoppen
                       </button>
                     )}
                   </div>
                 </div>
 
                 {audioUrl && (
-                  <div className="border border-[#E5E1D8] p-3 bg-[#FAF9F6] rounded-sm flex items-center justify-between gap-4">
+                  <div className="border border-[var(--line)] p-3 bg-[var(--paper-subtle)] rounded-[var(--radius)] flex items-center justify-between gap-4">
                     <audio controls src={audioUrl} className="h-8 max-w-sm" />
                     <a
                       href={audioUrl}
                       download={`muendlich-${activeCourse.thema}.webm`}
-                      className="font-mono text-xs text-[#4338CA] hover:underline"
+                      className="font-mono text-xs text-[var(--accent)] hover:underline"
                     >
                       Audio herunterladen (Lokal)
                     </a>
                   </div>
                 )}
 
-                <div className="border border-[#E5E1D8] bg-[#FAF9F6] p-4 rounded-sm space-y-2">
-                  <div className="text-xs font-mono uppercase text-[#6B675C] mb-1">
+                <div className="border border-[var(--line)] bg-[var(--paper-subtle)] p-4 rounded-[var(--radius)] space-y-2">
+                  <div className="text-xs font-mono uppercase text-[var(--gray)] mb-1">
                     Selbstcheck / 自评准则：
                   </div>
                   {(currentSchritt as SchrittMuendlich).selbstcheck.map((sc, i) => (
-                    <label key={i} className="flex items-start gap-2.5 text-xs font-mono text-[#1C1B17] cursor-pointer">
+                    <label key={i} className="flex items-start gap-2.5 text-xs font-mono text-[var(--ink)] cursor-pointer">
                       <input
                         type="checkbox"
                         checked={oralChecks[i] ?? false}
@@ -1232,7 +1258,7 @@ export default function ReiseModule({
                             prev.map((v, j) => (j === i ? !v : v))
                           )
                         }
-                        className="mt-0.5 h-3.5 w-3.5 accent-[#4338CA]"
+                        className="mt-0.5 h-3.5 w-3.5 accent-[var(--accent)]"
                       />
                       <span>{sc}</span>
                     </label>
@@ -1241,7 +1267,7 @@ export default function ReiseModule({
 
                 {/* D3-muendlich: stichpunkte + gleiche score-pipeline */}
                 <div className="space-y-2">
-                  <label className="block text-xs font-mono uppercase text-[#6B675C]">
+                  <label className="block text-xs font-mono uppercase text-[var(--gray)]">
                     Stichpunkte / Redetext (optional, für KI-Feedback) / 口述要点：
                   </label>
                   <textarea
@@ -1249,7 +1275,7 @@ export default function ReiseModule({
                     value={oralText}
                     onChange={(e) => setOralText(e.target.value)}
                     placeholder="Kernpunkte in Stichworten …"
-                    className="w-full border border-[#E5E1D8] p-3 text-sm font-sans rounded-sm focus:border-[#4338CA] focus:outline-none"
+                    className="w-full border border-[var(--line)] p-3 text-sm font-sans rounded-[var(--radius)] focus:border-[var(--accent)] focus:outline-none"
                   />
                   <div className="flex items-center gap-2">
                     <button
@@ -1276,10 +1302,10 @@ export default function ReiseModule({
                         );
                       }}
                       disabled={!oralText.trim() || oralScore.loading}
-                      className={`px-4 py-2 font-mono text-xs uppercase rounded-sm border transition-all ${
+                      className={`px-4 py-2 font-mono text-xs uppercase rounded-[var(--radius)] border transition-all ${
                         !oralText.trim() || oralScore.loading
-                          ? "border-[#E5E1D8] text-[#6B675C] cursor-not-allowed"
-                          : "border-[#4338CA] text-[#4338CA] hover:bg-[#4338CA]/5 active:scale-95"
+                          ? "border-[var(--line)] text-[var(--gray)] cursor-not-allowed"
+                          : "border-[var(--accent)] text-[var(--accent)] hover:bg-[var(--accent)]/5 active:scale-95"
                       }`}
                     >
                       {oralScore.loading
@@ -1291,30 +1317,31 @@ export default function ReiseModule({
                           : "AI批改"}
                     </button>
                     {oralScore.rounds > 0 && (
-                      <span className="font-mono text-[11px] text-[#6B675C]">
+                      <span className="font-mono text-[var(--text-meta)] text-[var(--gray)]">
                         {lang === "de" ? `Durchgang ${oralScore.rounds}` : `第${oralScore.rounds}轮`}
                       </span>
                     )}
                   </div>
                   {oralScore.text && (
-                    <div className="rounded-sm border border-[#4338CA]/30 bg-[#FAF9F6] p-4 font-sans text-sm leading-relaxed text-[#1C1B17] whitespace-pre-wrap">
+                    <div role="status" aria-live="polite" aria-atomic="true" className="rounded-[var(--radius)] border border-[var(--accent)]/30 bg-[var(--paper-subtle)] p-4 font-sans text-sm leading-relaxed text-[var(--ink)] whitespace-pre-wrap">
                       {oralScore.text}
                     </div>
                   )}
                 </div>
 
-                <div className="pt-4 border-t border-[#E5E1D8] flex justify-end">
+                <div className="pt-4 border-t border-[var(--line)] flex justify-end">
                   <button
+                    type="button"
                     disabled={oralChecks.filter(Boolean).length === 0}
                     onClick={() => {
                       addXP(30, stepIdx);
                       alert(lang === "de" ? "Mündliche Prüfung abgeschlossen! +30 XP" : "口试模拟完成！+30 XP");
                       setActiveCourse(null);
                     }}
-                    className={`px-5 py-2 font-mono text-xs uppercase tracking-wider rounded-sm transition-colors ${
+                    className={`px-5 py-2 font-mono text-xs uppercase tracking-wider rounded-[var(--radius)] transition-colors ${
                       oralChecks.filter(Boolean).length > 0
-                        ? "bg-[#1C1B17] text-white hover:bg-[#4338CA]"
-                        : "bg-[#E5E1D8] text-[#6B675C] cursor-not-allowed"
+                        ? "bg-[var(--ink)] text-[var(--paper)] hover:bg-[var(--accent)]"
+                        : "bg-[var(--line)] text-[var(--gray)] cursor-not-allowed"
                     }`}
                   >
                     Abschließen (+30 XP)

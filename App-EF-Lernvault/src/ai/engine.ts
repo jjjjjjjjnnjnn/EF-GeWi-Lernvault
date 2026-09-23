@@ -2,7 +2,15 @@
 // engine "api": OpenAI-kompatibler fetch (Key aus localStorage).
 // engine "local": WebLLM im Browser (lazy import, kein Bundle-Ballast).
 // engine "off": wirft EngineOffError — Aufrufer zeigen Vorlagen-Modus.
-import { loadAiConfig, effectiveBaseUrl, getProvider, resolveAiRequestUrl } from "./providers";
+import {
+  loadAiConfig,
+  effectiveBaseUrl,
+  getProvider,
+  resolveAiRequestUrl,
+  NeedsKeyError,
+} from "./providers";
+
+export { NeedsKeyError } from "./providers";
 
 export interface ChatMsg {
   role: "system" | "user" | "assistant";
@@ -50,7 +58,6 @@ export function sanitizeChatMessages(messages: ChatMsg[]): ChatMsg[] {
 }
 
 export class EngineOffError extends Error {}
-export class NeedsKeyError extends Error {}
 export class LocalLoadError extends Error {}
 
 export function isWebGpuAvailable(): boolean {

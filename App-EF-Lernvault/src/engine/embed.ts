@@ -2,8 +2,7 @@
 // L1-lokale embeddings (transformers.js, lazy, mobil default-aus), hybrid mit
 // stillen downgrades L2 -> L1 -> L0. Tests mocken fetch + pipeline (kein
 // modell-download in CI).
-import { effectiveBaseUrl, getProvider, loadAiConfig } from "../ai/providers";
-import { NeedsKeyError } from "../ai/engine";
+import { effectiveBaseUrl, getProvider, loadAiConfig, NeedsKeyError } from "../ai/providers";
 import { retrieveL0, type TextChunk } from "./rag";
 import { idbGetManyVectors, idbSetManyVectors, idbClearVectors } from "../storage/idb";
 
@@ -134,36 +133,37 @@ export function isLocalEmbedderReady(): boolean {
   return localPipe !== null;
 }
 
+async function createLocalEmbedder(
+  onProgress?: (pct: number, text: string) => void
+): Promise<EmbedPipe> {
+  const tf = await import("@huggingface/transformers");
+  try {
+    const mirror = loadAiConfig().hfMirror.trim().replace(/\/$/, "");
+    if (mirror && tf.env) tf.env.remoteHost = mirror;
+  } catch {
+  }
+  const pipe = (await tf.pipeline("feature-extraction", LOCAL_EMBED_MODEL, {
+    dtype: "q8",
+    progress_callback: (p: { progress?: number; loaded?: number; total?: number; status?: string; file?: string }) => {
+      const frac =
+        typeof p?.total === "number" && p.total > 0 && typeof p?.loaded === "number"
+          ? p.loaded / p.total
+          : typeof p?.progress === "number"
+            ? p.progress / 100
+            : null;
+      if (frac !== null) onProgress?.(Math.min(1, Math.max(0, frac)), p.status ?? p.file ?? "");
+    },
+  })) as unknown as EmbedPipe;
+  localPipe = pipe;
+  return pipe;
+}
+
 export async function ensureLocalEmbedder(
   onProgress?: (pct: number, text: string) => void
 ): Promise<EmbedPipe> {
   if (localPipe) return localPipe;
   if (localPipeLoading) return localPipeLoading;
-  localPipeLoading = (async () => {
-    const tf = await import("@huggingface/transformers");
-    // HF-spiegel (z.b. https://hf-mirror.com) gegen blockierte direktion
-    try {
-      const mirror = loadAiConfig().hfMirror.trim().replace(/\/$/, "");
-      if (mirror && tf.env) tf.env.remoteHost = mirror;
-    } catch {
-      // env nicht setzbar -> offizieller hub
-    }
-    const pipe = (await tf.pipeline("feature-extraction", LOCAL_EMBED_MODEL, {
-      dtype: "q8",
-      progress_callback: (p: { progress?: number; loaded?: number; total?: number; status?: string; file?: string }) => {
-        // v3: loaded/total in bytes (exakt) oder progress 0-100 (datei)
-        const frac =
-          typeof p?.total === "number" && p.total > 0 && typeof p?.loaded === "number"
-            ? p.loaded / p.total
-            : typeof p?.progress === "number"
-              ? p.progress / 100
-              : null;
-        if (frac !== null) onProgress?.(Math.min(1, Math.max(0, frac)), p.status ?? p.file ?? "");
-      },
-    })) as unknown as EmbedPipe;
-    localPipe = pipe;
-    return pipe;
-  })();
+  localPipeLoading = createLocalEmbedder(onProgress);
   try {
     return await localPipeLoading;
   } finally {

@@ -5,6 +5,8 @@ import { AI_CONFIG_STORAGE_KEY } from "../engine/storageKeys";
 
 export type AiEngine = "api" | "local" | "off";
 
+export class NeedsKeyError extends Error {}
+
 export interface ProviderPreset {
   id: string;
   name: string;

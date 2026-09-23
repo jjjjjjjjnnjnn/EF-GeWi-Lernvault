@@ -21,13 +21,11 @@ function note(path: string, fach: string, thema: string): VaultNote {
         kind: "h2",
         text: "Klausur-Sätze",
         lang: "de",
-        raw: "## Klausur-Sätze",
       },
       {
         kind: "li",
         text: `Darstellen: ${thema} wird strukturiert eingeordnet.`,
         lang: "de",
-        raw: `- Darstellen: ${thema} wird strukturiert eingeordnet.`,
       },
     ],
   };

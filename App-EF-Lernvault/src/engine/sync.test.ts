@@ -15,10 +15,14 @@ import {
   FSRS_STORAGE_KEY,
   INTERLEAVE_STORAGE_KEY,
   LANG_STORAGE_KEY,
+  LOCAL_ONLY_STORAGE_KEYS,
   MASTERY_STORAGE_KEY,
   ONBOARDING_STORAGE_KEY,
   PLAN_STORAGE_KEY,
+  SYNC_STORAGE_ALLOWLIST,
   SYNCED_STORAGE_KEYS,
+  THINKING_INTENSITY_STORAGE_KEY,
+  TUTOR_PEDAGOGY_MODE_STORAGE_KEY,
   VERGLEICH_STORAGE_KEY,
   XP_STORAGE_KEY,
 } from "./storageKeys";
@@ -34,6 +38,18 @@ const EXPECTED_SYNCED_KEYS = [
   MASTERY_STORAGE_KEY,
   DAILY_STREAK_STORAGE_KEY,
   INTERLEAVE_STORAGE_KEY,
+  TUTOR_PEDAGOGY_MODE_STORAGE_KEY,
+  THINKING_INTENSITY_STORAGE_KEY,
+];
+
+const EXPECTED_LOCAL_ONLY_KEYS = [
+  "eflernvault:sync:v1",
+  "eflernvault:ai:v1",
+  "eflernvault:endpoints:v1",
+  "eflernvault:active_endpoint:v1",
+  "eflernvault:fallback_endpoint:v1",
+  "eflernvault:token_ledger:v1",
+  "eflernvault:token_budget:v1",
 ];
 
 // In-memory fake-server: key -> value
@@ -92,9 +108,12 @@ describe("pushAll/pullAll", () => {
     expect(JSON.parse(localStorage.getItem("eflernvault:xp:v1")!).xp).toBe(42);
   });
 
-  it("iterates every synced key in both directions", async () => {
+  it("iterates the complete allowlist and excludes local-only keys in both directions", async () => {
     expect(SYNCED_STORAGE_KEYS).toEqual(EXPECTED_SYNCED_KEYS);
+    expect(SYNC_STORAGE_ALLOWLIST.map(({ key }) => key)).toEqual(EXPECTED_SYNCED_KEYS);
+    expect(LOCAL_ONLY_STORAGE_KEYS).toEqual(EXPECTED_LOCAL_ONLY_KEYS);
     for (const key of EXPECTED_SYNCED_KEYS) localStorage.setItem(key, `local:${key}`);
+    for (const key of EXPECTED_LOCAL_ONLY_KEYS) localStorage.setItem(key, `local-only:${key}`);
     const server = fakeServer();
     const access = httpAccess("https://x", "", server.fetchFn);
 
@@ -102,12 +121,16 @@ describe("pushAll/pullAll", () => {
     expect(server.calls.filter((call) => call.method === "PUT").map((call) => call.key)).toEqual(
       EXPECTED_SYNCED_KEYS
     );
+    expect(server.calls.some((call) => EXPECTED_LOCAL_ONLY_KEYS.includes(call.key))).toBe(false);
 
-    localStorage.clear();
+    for (const key of EXPECTED_LOCAL_ONLY_KEYS) server.db.set(key, `remote:${key}`);
     for (const key of EXPECTED_SYNCED_KEYS) server.db.set(key, `remote:${key}`);
     expect(await pullAll(access)).toEqual(EXPECTED_SYNCED_KEYS);
     expect(EXPECTED_SYNCED_KEYS.map((key) => localStorage.getItem(key))).toEqual(
       EXPECTED_SYNCED_KEYS.map((key) => `remote:${key}`)
+    );
+    expect(EXPECTED_LOCAL_ONLY_KEYS.map((key) => localStorage.getItem(key))).toEqual(
+      EXPECTED_LOCAL_ONLY_KEYS.map((key) => `local-only:${key}`)
     );
   });
 

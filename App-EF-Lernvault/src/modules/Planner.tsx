@@ -96,7 +96,7 @@ export default function Planner({
 
   if (tasks.length === 0) {
     return (
-      <div className="mx-auto max-w-2xl py-12 text-center font-sans text-sm text-[#6B675C]">
+      <div className="mx-auto max-w-2xl py-12 text-center font-sans text-sm text-[var(--gray)]">
         Keine Aufgaben vorhanden / 暂无计划任务 — oben „Vault öffnen“ / 点顶部"打开知识库"
       </div>
     );
@@ -105,96 +105,92 @@ export default function Planner({
   return (
     <div className="mx-auto max-w-2xl space-y-6">
       {/* Countdown header: Tufte serif big digits + XP & Streak */}
-      <div className="flex items-center justify-between border border-[#E5E1D8] bg-white p-6 rounded-sm">
+      <section className="flex items-center justify-between border-b border-[var(--line)] pb-6">
         <div>
-          <label className="block text-xs font-mono uppercase tracking-wider text-[#6B675C] mb-2">
+          <label htmlFor="klausur-date" className="block text-xs font-mono uppercase tracking-wider text-[var(--gray)] mb-2">
             Nächste Klausur / 目标考试日期
           </label>
           <input
+            id="klausur-date"
             type="date"
             value={klausurDate}
             onChange={(e) => handleDateChange(e.target.value)}
-            className="rounded-sm border border-[#E5E1D8] bg-white px-3 py-1.5 text-xs font-mono text-[#1C1B17] focus:border-[#4338CA] focus:outline-none transition-colors"
+            className="rounded-[var(--radius)] border border-[var(--line)] bg-[var(--surface)] px-3 py-1.5 text-xs font-mono text-[var(--ink)] focus:border-[var(--accent)] focus:outline-none transition-colors"
           />
-          <div className="mt-2 text-xs font-mono text-[#6B675C]">
-            XP: <span className="font-semibold text-[#1C1B17]">{xp}</span> · 连击:{" "}
-            <span className="font-semibold text-[#1C1B17]">{streakDays}</span> Tage
+          <div
+            role="status"
+            aria-live="polite"
+            aria-atomic="true"
+            className="mt-2 text-xs font-mono text-[var(--gray)]"
+          >
+            XP: <span className="font-semibold text-[var(--ink)]">{xp}</span> · 连击:{" "}
+            <span className="font-semibold text-[var(--ink)]">{streakDays}</span> Tage
           </div>
         </div>
 
         <div className="text-right">
-          <div className="font-mono text-xs text-[#4338CA] mb-1">
+          <div className="font-mono text-xs text-[var(--accent)] mb-1">
             {tr.daysLeft(daysLeft, formattedKlausurDate)}
           </div>
           <div className="flex items-baseline justify-end gap-1.5">
-            <span className="font-serif text-4xl font-normal tabular-nums text-[#1C1B17]">
+            <span className="font-serif text-4xl font-normal tabular-nums text-[var(--ink)]">
               {daysLeft}
             </span>
-            <span className="font-sans text-xs text-[#6B675C]">Tage / 天</span>
+            <span className="font-sans text-xs text-[var(--gray)]">Tage / 天</span>
           </div>
-          <div className="font-mono text-[11px] text-[#6B675C] mt-1">
+          <div className="font-mono text-[var(--text-meta)] text-[var(--gray)] mt-1">
             {tr.ddInterleave}
           </div>
         </div>
-      </div>
+      </section>
 
       {/* Weekly schedule with Tufte square checkboxes */}
-      <div className="border border-[#E5E1D8] bg-white rounded-sm divide-y divide-[#E5E1D8]">
-        <div className="bg-[#FAF9F6] px-4 py-2 text-xs font-mono text-[#6B675C] uppercase tracking-wider flex items-center justify-between">
+      <section className="border-y border-[var(--line)] divide-y divide-[var(--line)]">
+        <div className="px-4 py-2 text-xs font-mono text-[var(--gray)] uppercase tracking-wider flex items-center justify-between">
           <span>Wochenplan (10 Fächer) / 本周任务清单</span>
-          <span className="text-[10px] text-[#6B675C]">
+          <span className="text-[var(--text-meta)] text-[var(--gray)]">
             {tasks.filter((t) => t.done).length} / {tasks.length} erledigt
           </span>
         </div>
 
         {tasks.map((item) => (
-          <div
+          <button
             key={item.id}
-            className="flex items-center gap-3.5 p-3.5 hover:bg-[#FAF9F6] transition-colors"
+            type="button"
+            onClick={() => toggleTask(item.id)}
+            aria-pressed={item.done}
+            aria-label={`${item.done ? "Als offen markieren" : "Als erledigt markieren"}: ${item.day}, ${item.task}`}
+            className="flex w-full items-center gap-3.5 p-3.5 text-left hover:bg-[var(--paper-subtle)] transition-colors"
           >
-            {/* Tufte square checkbox */}
-            <button
-              type="button"
-              onClick={() => toggleTask(item.id)}
-              aria-label={item.done ? "Erledigt" : "Offen"}
-              className={`h-4 w-4 shrink-0 border rounded-none flex items-center justify-center transition-colors cursor-pointer ${
+            <span
+              aria-hidden="true"
+              className={`h-4 w-4 shrink-0 border rounded-none flex items-center justify-center transition-colors ${
                 item.done
-                  ? "bg-[#1C1B17] border-[#1C1B17] text-white"
-                  : "bg-white border-[#6B675C] hover:border-[#1C1B17]"
+                  ? "bg-[var(--ink)] border-[var(--ink)] text-[var(--paper)]"
+                  : "bg-[var(--surface)] border-[var(--gray)] hover:border-[var(--ink)]"
               }`}
             >
               {item.done && (
-                <svg
-                  width="10"
-                  height="10"
-                  viewBox="0 0 10 10"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  aria-hidden="true"
-                >
-                  <path d="M2 5.2l2.2 2.3L8 2.5" />
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                  <path d="M3.5 8.5l3 3 6-7" />
                 </svg>
               )}
-            </button>
+            </span>
 
-            <span className="w-8 text-center font-mono text-xs font-medium text-[#6B675C] border border-[#E5E1D8] py-0.5 rounded-sm bg-[#FAF9F6] select-none">
+            <span aria-hidden="true" className="w-8 text-center font-mono text-xs font-medium text-[var(--gray)] border border-[var(--line)] py-0.5 rounded-[var(--radius)] bg-[var(--paper-subtle)] select-none">
               {item.day}
             </span>
 
             <span
-              onClick={() => toggleTask(item.id)}
-              className={`flex-1 font-sans text-sm break-words transition-colors cursor-pointer select-none ${
-                item.done ? "text-[#6B675C]/60 line-through" : "text-[#1C1B17]"
+              className={`flex-1 font-sans text-sm break-words transition-colors select-none ${
+                item.done ? "text-[var(--gray)]/60 line-through" : "text-[var(--ink)]"
               }`}
             >
               {item.task}
             </span>
-          </div>
+          </button>
         ))}
-      </div>
+      </section>
     </div>
   );
 }

@@ -2,6 +2,8 @@ import { describe, expect, it } from "vitest";
 import {
   buildContrastTask,
   buildDiscriminationTask,
+  buildKlausurFehlerlogPatch,
+  buildVergleichFehlerlogPatch,
   generateExtendedQuiz,
   generateQuizFromNote,
   getAvailableThemen,
@@ -89,6 +91,54 @@ describe("getVergleichItems", () => {
   it("ohne klausurrelevante -> alle notes", () => {
     const items = getVergleichItems([note({ klausurrelevant: false })]);
     expect(items).toHaveLength(1);
+  });
+});
+
+describe("Fehlerlog patch builders", () => {
+  it("builds deterministic Klausur und Vergleich payloads once for copy and preview consumers", () => {
+    const klausur = buildKlausurFehlerlogPatch({
+      fach: "SoWi",
+      thema: "Teilhabe",
+      notePath: "08_SoWi/Teilhabe.md",
+      date: "2026-09-23",
+      time: "01:02",
+      evaluations: [
+        {
+          operatorVerfehlt: true,
+          fachbegriffFalsch: false,
+          belegFehlt: true,
+          vorgehenFalsch: false,
+        },
+        {
+          operatorVerfehlt: false,
+          fachbegriffFalsch: false,
+          belegFehlt: false,
+          vorgehenFalsch: false,
+        },
+      ],
+    });
+
+    expect(klausur).toContain("- Zeit: 01:02 (Ziel 45 Min)");
+    expect(klausur).toContain(
+      "Teil 1: Operator verfehlt, Teil 1: Beleg fehlt"
+    );
+    expect(klausur).toContain("08_SoWi/Teilhabe.md\n");
+
+    const vergleich = buildVergleichFehlerlogPatch({
+      fach: "SoWi",
+      thema: "Teilhabe",
+      sourceRef: "08_SoWi/Teilhabe.md#4",
+      date: "2026-09-23",
+      isCorrect: true,
+      selectedOption: "A",
+      justification: "  Gleicher Ausgang  ",
+      nextTime: "  Operator präzisieren  ",
+    });
+
+    expect(vergleich).toContain("- Ergebnis: Richtig");
+    expect(vergleich).toContain("- Gewählt: Option A");
+    expect(vergleich).toContain("- Begründung: Gleicher Ausgang");
+    expect(vergleich).toContain("- Nächstes Mal: Operator präzisieren");
   });
 });
 

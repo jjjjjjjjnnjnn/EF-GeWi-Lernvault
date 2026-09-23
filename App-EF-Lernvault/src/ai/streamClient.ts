@@ -4,13 +4,7 @@
 // Inklusive AbortSignal für Abbrüche, Token-Usage-Erfassung und robuster Fehlerbehandlung.
 
 import { loadAiConfig, effectiveBaseUrl, getProvider, resolveAiRequestUrl } from "./providers";
-import {
-  type ChatMsg,
-  EngineOffError,
-  NeedsKeyError,
-  ensureLocalEngine,
-  sanitizeChatMessages,
-} from "./engine";
+import type { ChatMsg } from "./engine";
 import {
   type AiEndpoint,
   getActiveEndpoint,
@@ -18,6 +12,19 @@ import {
   buildEndpointHeaders,
 } from "./endpoints";
 import { estimateTokens } from "../engine/context";
+
+type ChatEngineModule = typeof import("./engine");
+let chatEnginePromise: Promise<ChatEngineModule> | null = null;
+
+function loadChatEngine(): Promise<ChatEngineModule> {
+  if (!chatEnginePromise) {
+    chatEnginePromise = import("./engine").catch((error) => {
+      chatEnginePromise = null;
+      throw error;
+    });
+  }
+  return chatEnginePromise;
+}
 
 export interface StreamChunk {
   delta: string;
@@ -125,19 +132,19 @@ export async function chatStream(
 
   if (!hasExplicitEndpoint && cfg.engine === "off") {
     opts?.onStatusChange?.("error");
+    const { EngineOffError } = await loadChatEngine();
     throw new EngineOffError("KI-Engine ist ausgeschaltet / AI 引擎已关闭");
   }
 
   // 1. Lokales WebLLM im Browser (nur wenn kein expliziter Endpoint)
   if (!hasExplicitEndpoint && cfg.engine === "local") {
     try {
+      const { ensureLocalEngine, chat } = await loadChatEngine();
       await ensureLocalEngine(opts?.onLocalProgress);
       if (opts?.signal?.aborted) throw new DOMException("Aborted", "AbortError");
 
       opts?.onStatusChange?.("streaming");
 
-      // WebLLM Chat completions
-      const { chat } = await import("./engine");
       const full = await chat(messages, {
         temperature: opts?.temperature,
         maxTokens: opts?.maxTokens,
@@ -165,6 +172,7 @@ export async function chatStream(
   }
 
   // 2. API-Modus (OpenAI-kompatibel / Anthropic-kompatibel): Bevorzuge opts.endpoint, falle auf activeEndpoint oder Legacy zurück
+  const { NeedsKeyError, sanitizeChatMessages } = await loadChatEngine();
   let targetEp: AiEndpoint | undefined = opts?.endpoint;
   if (!targetEp) {
     const activeEp = getActiveEndpoint();

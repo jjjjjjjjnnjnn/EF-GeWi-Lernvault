@@ -25,9 +25,10 @@ vault md/csv → vault/parser（frontmatter/Block/CSV五列）
   E轮：auto永不隐式下载+HF镜像源+显式加载按钮；进度按loaded/total字节比）
   → engine/storage+stores（版本化 keys + Backend接口 + legacy旧档heben）
   → engine/mastery（BKT掌握度/学期EF.1-EF.2开关/归档重置）+ engine/dailyMix（4到期卡+1薄弱题+1对比题）
-  → engine/examComposer（多篇组卷：官方2026时长表+Mathe三分领域配额+Deutsch四选一+BKT薄弱加权+种子确定性+整分评分）
+  → engine/examComposer（多篇组卷：官方2026时长表常量单一来源+Mathe三分领域配额+Deutsch四选一+BKT薄弱加权+种子确定性+整分评分）
+  → engine/examSource（组卷输入契约：标题/学科/有序块（heading层级+文本）/考试相关/Mathe领域覆盖提示；兼容真实解析笔记）
   → engine/klausurExtractor（单篇笔记抽AFB I-III三段卷+百分制；兼容原始Markdown与parser剥离heading的block）
-  → engine/storageKeys（19个持久化localStorage键的单一真相源：全量擦除 + 10键云同步白名单）
+  → engine/storageKeys（19个持久化localStorage键单一真相源：全量擦除19键 + 云同步显式白名单12键 + local-only 7键含凭据/端点/同步配置/token计量）
   → engine/competencyMap（NRW官方Inhaltsfeld映射，mastery的IF归类层）
   → engine/instantGrounding（<10ms本地vault片段+7天QA缓存，Tutor零延迟首答）
   → Tutor压缩（compressor/ccrStore/context三区组装）
@@ -91,9 +92,12 @@ vault md/csv → vault/parser（frontmatter/Block/CSV五列）
  · Next-Gen：`engine/bm25`（切分/停用词/法条/加权）· `engine/rrfSearch`（融合排序）
  · `engine/vaultGraph`（双向图/孤岛/邻域）· `engine/mastery`（BKT更新/学期/归档）
  · `engine/dailyMix`（冲刺组装）· `engine/klausurExtractor`（原始MD与剥离heading双兼容抽取）
-· `engine/examComposer`（官方2026时长表/Mathe三领域配额/Deutsch四选一/薄弱加权/种子确定性/整分评分）
-· `engine/storageKeys`（19键注册表唯一性+生产源码字面量审计+擦除/同步成员）· `engine/sync`（10键往返）
+· `engine/examComposer`（官方2026时长表全分支/语言begin阶段/Kunst-Musik附加时间/自然科学题内附加/Sport笔试缺席/Mathe三领域配额/Deutsch四选一/薄弱加权/种子确定性/整分评分）
+· `engine/examSource`（组卷输入稳定契约 `ExamSourceNote`，与 parser 内部解耦）
+· `engine/storageKeys`（19键持久化注册表 + **12键云同步显式白名单** + 7键local-only逐条理由；新增键不自动进云）
+· `engine/sync`（白名单双向往返；擦除走全量19键）
 · `engine/index`（BM25+Fuse RRF排序+变音正规化+精确命中字段优先+薄弱/时序加权）· `engine/bm25`（CJK一元+二元/德语停用词/法条）
+· `engine/worker`（真 Web Worker：`new Worker(new URL(...),{type:"module"})` + 无Worker环境回退）
  · `ai/heartbeat`（探针/pull代理优先/直连兜底/错误分类）· `ai/providers`（10预设/override三态）
  · `walkthrough`（真L1穿真UI：门禁/XP/离线保底/反馈上下文）· `MathHtml`（首绘原文/异步排版/缓存）
  · `engine/reise-ki`（含check四段打分prompt）· Tutor压缩三件套（compressor/ccrStore/context）

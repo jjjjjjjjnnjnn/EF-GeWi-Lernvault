@@ -171,7 +171,7 @@ export default function Flashcards({
   // 1. Empty state
   if (allItems.length === 0) {
     return (
-      <div className="mx-auto max-w-xl py-12 text-center font-sans text-sm text-[#6B675C]">
+      <div className="mx-auto max-w-xl py-12 text-center font-sans text-sm text-[var(--gray)]">
         Keine Karten / 暂无卡片 — oben „Vault öffnen“ / 点顶部"打开知识库"
       </div>
     );
@@ -181,20 +181,20 @@ export default function Flashcards({
   if (isFinished) {
     return (
       <div className="mx-auto max-w-xl space-y-6 pt-10 text-center">
-        <div className="border border-[#E5E1D8] bg-white p-8 rounded-sm shadow-none">
-          <div className="font-serif text-2xl text-[#1C1B17] mb-1">
+        <div className="border-y border-[var(--line)] p-8">
+          <div className="font-serif text-2xl text-[var(--ink)] mb-1">
             {tr.doneToday}
           </div>
-          <div className="font-sans text-xs text-[#6B675C] mb-6">
+          <div className="font-sans text-xs text-[var(--gray)] mb-6">
             {lang === "de" ? "Alle fälligen Karten wiederholt" : "今日需复习卡片已全部完成"}
           </div>
 
-          <div className="font-mono text-sm text-[#1C1B17] mb-2">
+          <div className="font-mono text-sm text-[var(--ink)] mb-2">
             {lang === "de"
               ? `${sessionDone} Karten gelernt · ${sessionAgain} Again`
               : `已复习 ${sessionDone} 张卡片 · ${sessionAgain} 次需要强化`}
           </div>
-          <div className="font-mono text-[11px] text-[#6B675C] mb-6">
+          <div className="font-mono text-[var(--text-meta)] text-[var(--gray)] mb-6">
             {tr.ddRetrieval}
           </div>
 
@@ -205,16 +205,16 @@ export default function Flashcards({
               setIdx(0);
               setFlip(false);
             }}
-            className="inline-flex items-center gap-1.5 rounded-sm border border-[#E5E1D8] bg-[#FAF9F6] px-4 py-2 text-xs font-sans text-[#1C1B17] hover:border-[#4338CA] hover:text-[#4338CA] active:scale-95 transition-all"
+            className="inline-flex items-center gap-1.5 rounded-[var(--radius)] border border-[var(--line)] bg-[var(--paper-subtle)] px-4 py-2 text-xs font-sans text-[var(--ink)] hover:border-[var(--accent)] hover:text-[var(--accent)] active:scale-95 transition-all"
           >
             {tr.browseAnyway}
-            <span className="font-mono text-[10px] text-[#6B675C]">
+            <span className="font-mono text-[var(--text-meta)] text-[var(--gray)]">
               {lang === "de" ? `(alle ${totalCards})` : `(共 ${totalCards} 张)`}
             </span>
           </button>
         </div>
 
-        <p className="font-mono text-[11px] text-[#6B675C]">
+        <p className="font-mono text-[var(--text-meta)] text-[var(--gray)]">
           FSRS v1 · {totalCards} Karten im Speicher / 卡片库总计 {totalCards} 张
         </p>
       </div>
@@ -222,14 +222,19 @@ export default function Flashcards({
   }
 
   const remainingDue = browseOnly ? 0 : Math.max(0, currentItems.length - idx);
+  const progressIndex =
+    currentItems.length > 0
+      ? Math.min(flip ? idx + 1 : idx, currentItems.length)
+      : 0;
+  const progressMaximum = Math.max(1, currentItems.length);
 
   return (
     <div className="mx-auto max-w-xl space-y-4">
       {/* Source and progress metadata */}
-      <div className="space-y-1 pb-2 border-b border-[#E5E1D8]">
-        <div className="flex items-center justify-between text-xs font-mono text-[#6B675C]">
+      <div className="space-y-1 pb-2 border-b border-[var(--line)]">
+        <div className="flex items-center justify-between text-xs font-mono text-[var(--gray)]">
           <span>
-            {card.fach} · <span className="text-[#4338CA] font-medium">{card.meta}</span>
+            {card.fach} · <span className="text-[var(--accent)] font-medium">{card.meta}</span>
           </span>
           <span>
             {browseOnly
@@ -238,7 +243,7 @@ export default function Flashcards({
           </span>
         </div>
         {/* UI-SPEC-V3 Due Header: fällig N / M · 新卡 K */}
-        <div className="flex items-center justify-between text-[11px] font-mono text-[#6B675C]">
+        <div className="flex items-center justify-between text-[var(--text-meta)] font-mono text-[var(--gray)]">
           <span>
             {browseOnly
               ? lang === "de"
@@ -248,7 +253,7 @@ export default function Flashcards({
           </span>
           <span aria-live="polite" aria-atomic="true">
             {transientBadge && (
-              <span className="text-[#4338CA] font-medium bg-[#ECE7DC]/60 px-1.5 py-0.2 rounded-sm transition-opacity duration-300">
+              <span className="text-[var(--accent)] font-medium bg-[var(--paper-subtle)]/60 px-1.5 py-0.2 rounded-[var(--radius)]">
                 {transientBadge}
               </span>
             )}
@@ -257,29 +262,31 @@ export default function Flashcards({
       </div>
 
       {/* Session progress: single hairline */}
-      <div className="h-px bg-[#E5E1D8]">
+      <div
+        role="progressbar"
+        aria-label="Kartenfortschritt / 卡片进度"
+        aria-valuemin={0}
+        aria-valuemax={progressMaximum}
+        aria-valuenow={progressIndex}
+        aria-valuetext={`${progressIndex} von ${progressMaximum}`}
+        className="h-px bg-[var(--line)]"
+      >
         <div
-          className="h-px bg-[#4338CA] transition-all duration-200"
-          style={{
-            width: `${
-              currentItems.length > 0
-                ? (((flip ? idx + 1 : idx) % currentItems.length) / currentItems.length) * 100
-                : 100
-            }%`,
-          }}
+          className="h-px bg-[var(--accent)] transition-[width] duration-[var(--dur-normal)]"
+          style={{ width: `${(progressIndex / progressMaximum) * 100}%` }}
         />
       </div>
 
       {/* Central Paper Card: click/Space flips; drag left/right after flip rates */}
       <div className="card-flip relative">
         <span
-          className="pointer-events-none absolute left-2 top-1/2 z-10 -translate-y-1/2 font-mono text-xs uppercase tracking-wider text-[#6B675C]"
+          className="pointer-events-none absolute left-2 top-1/2 z-10 -translate-y-1/2 font-mono text-xs uppercase tracking-wider text-[var(--gray)]"
           style={{ opacity: drag < 0 ? edge : 0 }}
         >
           ← {tr.again}
         </span>
         <span
-          className="pointer-events-none absolute right-2 top-1/2 z-10 -translate-y-1/2 font-mono text-xs uppercase tracking-wider text-[#4338CA]"
+          className="pointer-events-none absolute right-2 top-1/2 z-10 -translate-y-1/2 font-mono text-xs uppercase tracking-wider text-[var(--accent)]"
           style={{ opacity: drag > 0 ? edge : 0 }}
         >
           {tr.good} →
@@ -291,7 +298,7 @@ export default function Flashcards({
           style={
             drag
               ? { transform: `translateX(${drag}px) rotate(${drag / 24}deg)`, transition: "none" }
-              : { transition: "transform 180ms cubic-bezier(0.16,1,0.3,1)" }
+              : { transition: "transform var(--dur-normal) var(--ease-out)" }
           }
         >
           <button
@@ -304,27 +311,27 @@ export default function Flashcards({
             className={`card-inner ${flip ? "card-flipped" : ""} relative block h-64 w-full cursor-pointer select-none text-left active:scale-[0.99]`}
           >
             {/* Front: German serif headline */}
-            <div className="card-face absolute inset-0 flex flex-col items-center justify-center rounded-sm border border-[#E5E1D8] bg-white p-8">
-              <span className="text-xs font-mono text-[#6B675C] uppercase tracking-wider mb-3">
+            <div className="card-face absolute inset-0 flex flex-col items-center justify-center rounded-[var(--radius)] border border-[var(--line)] bg-[var(--surface)] p-8">
+              <span className="text-xs font-mono text-[var(--gray)] uppercase tracking-wider mb-3">
                 Terminus
               </span>
-              <div className="font-serif text-3xl font-normal text-[#1C1B17] text-center tracking-tight break-words px-4">
+              <div className="font-serif text-3xl font-normal text-[var(--ink)] text-center tracking-tight break-words px-4">
                 {card.front}
               </div>
-              <div className="mt-4 text-xs font-sans text-[#6B675C] tracking-wide">
+              <div className="mt-4 text-xs font-sans text-[var(--gray)] tracking-wide">
                 {flip ? "" : `[ ${tr.showAnswer} ]`}
               </div>
             </div>
 
             {/* Back: Paper white, Chinese answer + German example (no italics) */}
-            <div className="card-face card-back absolute inset-0 flex flex-col items-center justify-center rounded-sm border border-[#E5E1D8] bg-white p-8">
-              <span className="text-xs font-mono text-[#6B675C] uppercase tracking-wider mb-2">
+            <div className="card-face card-back absolute inset-0 flex flex-col items-center justify-center rounded-[var(--radius)] border border-[var(--line)] bg-[var(--surface)] p-8">
+              <span className="text-xs font-mono text-[var(--gray)] uppercase tracking-wider mb-2">
                 Bedeutung & Kontext
               </span>
-              <div className="font-sans text-2xl font-normal text-[#1C1B17] text-center mb-3">
+              <div className="font-sans text-2xl font-normal text-[var(--ink)] text-center mb-3">
                 {card.back}
               </div>
-              <div className="font-serif text-sm text-[#6B675C] text-center max-w-md leading-relaxed break-words px-4">
+              <div className="font-serif text-sm text-[var(--gray)] text-center max-w-md leading-relaxed break-words px-4">
                 {card.example}
               </div>
             </div>
@@ -334,26 +341,26 @@ export default function Flashcards({
 
       {/* Rating actions: unified row of text buttons with hairline dividers */}
       {flip ? (
-        <div className="flex border border-[#E5E1D8] bg-white rounded-sm divide-x divide-[#E5E1D8]">
+        <div className="flex border-y border-[var(--line)] divide-x divide-[var(--line)]">
           {labels.map((item) => (
             <button
               key={item.key}
               type="button"
               title={`Taste ${item.key}`}
               onClick={() => handleRate(item.rating)}
-              className="flex-1 py-2.5 text-center text-xs font-sans font-medium text-[#1C1B17] hover:text-[#4338CA] hover:bg-[#FAF9F6] active:bg-[#ECE7DC]/60 active:text-[#4338CA] transition-colors"
+              className="flex-1 py-2.5 text-center text-xs font-sans font-medium text-[var(--ink)] hover:text-[var(--accent)] hover:bg-[var(--paper-subtle)] active:bg-[var(--paper-subtle)]/60 active:text-[var(--accent)] transition-colors"
             >
               {item.label}{" "}
-              <span className="ml-1 font-mono text-[10px] text-[#6B675C]">{item.key}</span>
+              <span className="ml-1 font-mono text-[var(--text-meta)] text-[var(--gray)]">{item.key}</span>
             </button>
           ))}
         </div>
       ) : (
-        <p role="status" className="border-y border-[#E5E1D8] py-2.5 text-center text-xs font-sans text-[#6B675C]">
+        <p role="status" className="border-y border-[var(--line)] py-2.5 text-center text-xs font-sans text-[var(--gray)]">
           {lang === "de" ? "Antwort anzeigen, bevor du bewertest." : "显示答案后再评分。"}
         </p>
       )}
-      <p className="text-center font-mono text-[11px] text-[#6B675C]">
+      <p className="text-center font-mono text-[var(--text-meta)] text-[var(--gray)]">
         Space = umdrehen · 1–4 = bewerten · ziehen = wischen / 空格翻卡 · 数字评分 · 拖拽
       </p>
     </div>

@@ -88,10 +88,10 @@ describe("backend-swap (cloud-vorbereitung)", () => {
 });
 
 describe("allStoreKeys", () => {
-  it("enthaelt alle 10 synchronisierten state-keys, eindeutig", () => {
+  it("enthaelt alle 12 synchronisierten state-keys, eindeutig", () => {
     const keys = allStoreKeys();
-    expect(keys).toHaveLength(10);
-    expect(new Set(keys).size).toBe(10);
+    expect(keys).toHaveLength(12);
+    expect(new Set(keys).size).toBe(12);
     expect(keys).toEqual(expect.arrayContaining([
       LANG_STORAGE_KEY,
       MASTERY_STORAGE_KEY,

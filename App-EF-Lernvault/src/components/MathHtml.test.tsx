@@ -24,12 +24,8 @@ describe("MathHtml (katex-lazy)", () => {
       expect(document.querySelectorAll(".katex").length).toBeGreaterThan(0);
     });
     unmount();
-    document.body.innerHTML = "";
-    render(<MathHtml code="y_1" display={false} cacheKey="W:I:y1" />);
-    // aus cache: kein rohtext-fallback (font-mono) mehr im DOM
-    await waitFor(() => {
-      expect(document.querySelector(".katex")).not.toBeNull();
-    });
-    expect(document.querySelector("span.font-mono")).toBeNull();
+    const { container } = render(<MathHtml code="y_1" display={false} cacheKey="W:I:y1" />);
+    expect(container.querySelector(".katex")).not.toBeNull();
+    expect(container.querySelector(".font-mono")).toBeNull();
   });
 });

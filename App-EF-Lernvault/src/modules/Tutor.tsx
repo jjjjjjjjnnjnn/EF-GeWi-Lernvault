@@ -591,7 +591,7 @@ export default function Tutor({
     const lines = text.split("\n");
 
     return (
-      <div className="space-y-2">
+      <div className="exam-reading de-reading space-y-2">
         {lines.map((line, lIdx) => {
           if (!line.trim()) {
             return <div key={lIdx} className="h-2" />;
@@ -614,10 +614,11 @@ export default function Tutor({
               const citeTarget = match[2];
               parts.push(
                 <button
+                  type="button"
                   key={`cite-${lIdx}-${match.index}`}
                   onClick={() => onJumpToLibrary?.(citeTarget)}
                   title={lang === "de" ? "In Notizen öffnen" : "在笔记库中查看"}
-                  className="inline-flex items-center font-mono text-[10px] text-[#4338CA] bg-[#4338CA]/10 hover:bg-[#4338CA]/20 px-1 py-0.5 rounded-sm mx-1 transition-colors cursor-pointer"
+                  className="inline-flex items-center font-mono text-[var(--text-meta)] text-[var(--accent)] bg-[var(--accent)]/10 hover:bg-[var(--accent)]/20 px-1 py-0.5 rounded-[var(--radius)] mx-1 transition-colors cursor-pointer"
                 >
                   [{citeTarget}]
                 </button>
@@ -627,12 +628,13 @@ export default function Tutor({
               const ccrHash = match[3];
               parts.push(
                 <button
+                  type="button"
                   key={`ccr-${lIdx}-${match.index}`}
                   onClick={() => handleExpandCcr(ccrHash)}
                   title={lang === "de" ? `CCR-Original (${ccrHash}) anzeigen` : `展开查看 CCR 无损压缩前原文 (#${ccrHash})`}
-                  className="inline-flex items-center gap-1 font-mono text-[10px] text-[#047857] bg-[#047857]/10 hover:bg-[#047857]/20 px-1.5 py-0.5 rounded-sm mx-1 transition-colors cursor-pointer"
+                  className="inline-flex items-center gap-1 font-mono text-[var(--text-meta)] text-[var(--success)] bg-[var(--success)]/10 hover:bg-[var(--success)]/20 px-1.5 py-0.5 rounded-[var(--radius)] mx-1 transition-colors cursor-pointer"
                 >
-                  <span className="w-1.5 h-1.5 rounded-full bg-[#047857]" />
+                  <span className="w-1.5 h-1.5 rounded-full bg-[var(--success)]" />
                   [Ref: #{ccrHash}]
                 </button>
               );
@@ -645,6 +647,9 @@ export default function Tutor({
           }
 
           const trimmed = line.trim();
+          const chineseGlyphCount = (line.match(/[\u3400-\u9FFF]/g) ?? []).length;
+          const latinGlyphCount = (line.match(/[A-Za-zÄÖÜäöüß]/g) ?? []).length;
+          const isTranslation = chineseGlyphCount >= 4 && chineseGlyphCount > latinGlyphCount;
           const isGreetingOrMeta =
             trimmed.includes("我是你的本地高中助教") ||
             trimmed.includes("lokaler EF-Tutor") ||
@@ -660,12 +665,12 @@ export default function Tutor({
           const needsWarning = !hasCitation && !isShortOrMarkdown && !isGreetingOrMeta;
 
           return (
-            <p key={lIdx} className="leading-relaxed">
+            <p key={lIdx} className={`leading-relaxed ${isTranslation ? "zh-translation" : "de-reading"}`}>
               {parts}
               {needsWarning && (
                 <span
                   title={lang === "de" ? "Behauptung ohne Notizbeleg" : "此断言未标注笔记出处"}
-                  className="inline-block font-mono text-[10px] text-[#6B675C] bg-[#ECE7DC]/60 px-1.5 py-0.5 rounded-sm ml-1.5 select-none"
+                  className="inline-block font-mono text-[var(--text-meta)] text-[var(--gray)] bg-[var(--gray)]/10 px-1.5 py-0.5 rounded-[var(--radius)] ml-1.5 select-none"
                 >
                   {tr.noSource}
                 </span>
@@ -682,18 +687,21 @@ export default function Tutor({
   }, [sessions, lang]);
 
   return (
-    <div className="mx-auto flex h-[78vh] w-full min-w-0 max-w-5xl rounded-sm border border-[#E5E1D8] bg-white overflow-hidden">
+    <div className="mx-auto flex h-[78vh] w-full min-w-0 max-w-5xl rounded-[var(--radius)] border border-[var(--line)] bg-[var(--surface)] overflow-hidden">
       {/* Linke Spalte: Sitzungs-Verlauf / Multi-Session Sidebar */}
       {showSidebar && (
-        <aside className="w-60 flex-shrink-0 flex flex-col border-r border-[#E5E1D8] bg-[#FAF9F6]">
+        <aside id="tutor-session-sidebar" className="w-60 flex-shrink-0 flex flex-col border-r border-[var(--line)] bg-[var(--paper-subtle)]">
           {/* Neuer Chat Button */}
-          <div className="p-2.5 border-b border-[#E5E1D8]">
+          <div className="p-2.5 border-b border-[var(--line)]">
             <button
+              type="button"
               onClick={handleNewChat}
               disabled={isThinking}
-              className="w-full flex items-center justify-center gap-1.5 rounded-sm border border-[#E5E1D8] bg-white px-3 py-1.5 font-sans text-xs font-medium text-[#1C1B17] hover:border-[#4338CA] hover:text-[#4338CA] transition-colors disabled:opacity-50"
+              className="w-full flex items-center justify-center gap-1.5 rounded-[var(--radius)] border border-[var(--line)] bg-[var(--surface)] px-3 py-1.5 font-sans text-xs font-medium text-[var(--ink)] hover:border-[var(--accent)] hover:text-[var(--accent)] transition-colors disabled:opacity-50"
             >
-              <span>+</span>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" aria-hidden="true" className="shrink-0">
+                <path d="M8 3v10M3 8h10" />
+              </svg>
               <span>{lang === "de" ? "Neuer Chat" : "新建对话"}</span>
             </button>
           </div>
@@ -702,7 +710,7 @@ export default function Tutor({
           <div className="flex-1 overflow-y-auto p-1.5 space-y-3">
             {sessionGroups.map((grp) => (
               <div key={grp.group} className="space-y-0.5">
-                <div className="px-2 py-1 font-mono text-[10px] uppercase tracking-wider text-[#6B675C]">
+                <div className="px-2 py-1 font-mono text-[var(--text-meta)] uppercase tracking-wider text-[var(--gray)]">
                   {grp.group}
                 </div>
                 {grp.items.map((sess) => {
@@ -712,64 +720,72 @@ export default function Tutor({
                   return (
                     <div
                       key={sess.id}
-                      onClick={() => !isEditing && switchSession(sess.id)}
-                      className={`group relative flex items-center justify-between rounded-sm px-2.5 py-2 text-xs transition-colors cursor-pointer ${
+                      className={`group relative flex items-center rounded-[var(--radius)] border-l-2 pl-2.5 pr-1.5 text-xs transition-colors ${
                         isActive
-                          ? "bg-white border-l-2 border-[#4338CA] font-medium text-[#1C1B17]"
-                          : "text-[#4A473F] hover:bg-[#F2EFE9] border-l-2 border-transparent"
+                          ? "border-[var(--accent)] bg-[var(--surface)] font-medium text-[var(--ink)]"
+                          : "border-transparent text-[var(--ink)] hover:bg-[var(--paper-subtle)]"
                       }`}
                     >
                       {isEditing ? (
-                        <div className="flex items-center gap-1 w-full" onClick={(e) => e.stopPropagation()}>
+                        <div className="flex w-full items-center gap-1 py-2">
                           <input
                             type="text"
                             autoFocus
+                            aria-label={lang === "de" ? "Chat-Titel bearbeiten" : "编辑对话标题"}
                             value={editTitleInput}
                             onChange={(e) => setEditTitleInput(e.target.value)}
                             onKeyDown={(e) => {
                               if (e.key === "Enter") handleSaveRename(sess.id);
                               if (e.key === "Escape") setEditingSessionId(null);
                             }}
-                            className="w-full text-xs px-1 py-0.5 border border-[#4338CA] rounded-sm bg-white"
+                            className="w-full rounded-[var(--radius)] border border-[var(--focus)] bg-[var(--surface)] px-1 py-0.5 text-xs"
                           />
                           <button
+                            type="button"
                             onClick={() => handleSaveRename(sess.id)}
-                            className="text-[10px] text-[#2E7D32] hover:underline"
+                            className="text-[var(--text-meta)] text-[var(--success)] hover:underline"
                           >
                             OK
                           </button>
                         </div>
                       ) : (
                         <>
-                          <div className="flex items-center gap-1.5 truncate pr-1">
+                          <button
+                            type="button"
+                            onClick={() => switchSession(sess.id)}
+                            aria-current={isActive ? "true" : undefined}
+                            className="de-reading flex min-w-0 flex-1 items-center gap-1.5 truncate py-2 text-left"
+                          >
                             {sess.pinned && (
-                              <svg className="w-2.5 h-2.5 text-[#B45309] shrink-0" viewBox="0 0 16 16" fill="currentColor">
-                                <path d="M4 2v1l2 2v4l-2 2v1h8v-1l-2-2V5l2-2V2H4zm4 11v3h1v-3H8z" />
+                              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" className="h-3 w-3 shrink-0 text-[var(--warning)]">
+                                <path d="M5 2h6M6 2v4l-2 3h8l-2-3V2M8 9v5" />
                               </svg>
                             )}
-                            <span className="truncate font-serif">{sess.title}</span>
-                          </div>
+                            <span className="truncate">{sess.title}</span>
+                          </button>
 
                           {/* Hover-Aktionen: Umbenennen & Löschen */}
-                          <div className="opacity-0 group-hover:opacity-100 flex items-center gap-1 transition-opacity">
+                          <div className="flex items-center gap-1 opacity-0 transition-opacity group-hover:opacity-100 group-focus-within:opacity-100">
                             <button
-                              onClick={(e) => {
-                                e.stopPropagation();
+                              type="button"
+                              onClick={() => {
                                 setEditingSessionId(sess.id);
                                 setEditTitleInput(sess.title);
                               }}
                               title={lang === "de" ? "Umbenennen" : "重命名"}
-                              className="text-[#6B675C] hover:text-[#1C1B17] p-0.5"
+                              aria-label={lang === "de" ? "Chat umbenennen" : "重命名对话"}
+                              className="rounded-[var(--radius)] p-0.5 text-[var(--gray)] hover:text-[var(--ink)] focus-visible:opacity-100"
                             >
-                              <svg className="w-3 h-3" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5">
-                                <path d="M11 2l3 3-8 8H3v-3l8-8zM9 4l3 3" />
+                              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" className="h-3 w-3">
+                                <path d="M11.2 2.3l2.5 2.5-7.6 7.6-3.3.8.8-3.3 7.6-7.6zM9.8 3.7l2.5 2.5" />
                               </svg>
                             </button>
                             <button
+                              type="button"
                               onClick={(e) => handleDeleteSession(sess.id, e)}
                               title={lang === "de" ? "Löschen" : "删除"}
                               aria-label={lang === "de" ? "Chat löschen" : "删除对话"}
-                              className="text-[#6B675C] hover:text-[#991B1B] p-0.5"
+                              className="rounded-[var(--radius)] p-0.5 text-[var(--gray)] hover:text-[var(--warning)] focus-visible:opacity-100"
                             >
                               <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" aria-hidden="true">
                                 <path d="M4 4l8 8M12 4l-8 8" />
@@ -786,11 +802,12 @@ export default function Tutor({
           </div>
 
           {/* Sidebar Footer */}
-          <div className="p-2 border-t border-[#E5E1D8] flex items-center justify-between text-[11px] font-mono text-[#6B675C]">
+          <div className="p-2 border-t border-[var(--line)] flex items-center justify-between text-[var(--text-meta)] font-mono text-[var(--gray)]">
             <span>{sessions.length} {lang === "de" ? "Chats" : "个对话"}</span>
             <button
+              type="button"
               onClick={handleClearAll}
-              className="text-[#991B1B] hover:underline text-[10px]"
+              className="text-[var(--warning)] hover:underline text-[var(--text-meta)]"
             >
               {lang === "de" ? "Verlauf leeren" : "清空历史"}
             </button>
@@ -799,32 +816,37 @@ export default function Tutor({
       )}
 
       {/* Rechte Spalte: Haupt-Chatbereich */}
-      <main className="flex-1 flex flex-col min-w-0 bg-white">
+      <main className="flex-1 flex flex-col min-w-0 bg-[var(--surface)]">
         {/* Model status bar & Controls (Tufte 2-Tier Toolbar) */}
-        <div className="border-b border-[#E5E1D8] bg-[#FAF9F6]">
+        <div className="border-b border-[var(--line)] bg-[var(--paper-subtle)]">
           {/* Tier 1: System-Status & Kernmodi */}
-          <div className="flex flex-wrap items-center justify-between gap-2 border-b border-[#E5E1D8]/60 px-3 py-1.5 text-xs font-mono text-[#6B675C]">
+          <div className="flex flex-wrap items-center justify-between gap-2 border-b border-[var(--line)]/60 px-3 py-1.5 text-xs font-mono text-[var(--gray)]">
             <div className="flex items-center gap-2 min-w-0">
               <button
+                type="button"
                 onClick={() => setShowSidebar((s) => !s)}
                 title={showSidebar ? (lang === "de" ? "Sidebar verbergen" : "折叠侧栏") : (lang === "de" ? "Sidebar zeigen" : "展开侧栏")}
-                className="p-1 rounded-sm border border-[#E5E1D8] bg-white text-[#1C1B17] hover:border-[#4338CA] hover:text-[#4338CA] cursor-pointer"
+                aria-label={showSidebar ? (lang === "de" ? "Sidebar verbergen" : "折叠侧栏") : (lang === "de" ? "Sidebar zeigen" : "展开侧栏")}
+                aria-expanded={showSidebar}
+                aria-controls="tutor-session-sidebar"
+                className="cursor-pointer rounded-[var(--radius)] border border-[var(--line)] bg-[var(--surface)] p-1 text-[var(--ink)] hover:border-[var(--accent)] hover:text-[var(--accent)]"
               >
-                <svg className="w-3.5 h-3.5" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.8">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" aria-hidden="true" className="h-3.5 w-3.5">
                   <path d="M2.5 4h11M2.5 8h11M2.5 12h11" />
                 </svg>
               </button>
               <span
-                className={`h-2 w-2 rounded-full shrink-0 ${
-                  isDegraded ? "bg-[#B45309]" : "bg-[#10B981]"
+                aria-hidden="true"
+                className={`h-2 w-2 shrink-0 rounded-full ${
+                  isDegraded ? "bg-[var(--warning)]" : "bg-[var(--success)]"
                 }`}
               />
               <span className="truncate flex items-center gap-1.5 font-sans">
-                <span className="font-medium text-[#1C1B17] truncate">
+                <span className="font-medium text-[var(--ink)] truncate">
                   {isDegraded ? "Auto-Dispatch · Vault" : activeEp.name}
                 </span>
                 {!isDegraded && (
-                  <span className="text-[10px] font-mono text-[#4338CA] bg-[#EEF2FF] border border-[#C7D2FE] px-1 py-0.2 rounded-xs truncate max-w-[130px]">
+                  <span className="max-w-[130px] truncate rounded-[var(--radius)] border border-[var(--line)] bg-[var(--paper-subtle)] px-1 py-0.2 font-mono text-[var(--text-meta)] text-[var(--accent)]">
                     {activeEp.model.split("/").pop()}
                   </span>
                 )}
@@ -833,18 +855,20 @@ export default function Tutor({
 
             <div className="flex flex-wrap items-center gap-2 xl:shrink-0">
               {/* Denkintensitäts-Auswahl (Schnell | Ausgewogen | Tiefgründig) */}
-              <div className="flex items-center gap-0.5 border border-[#E5E1D8] rounded-sm bg-white p-0.5">
+              <div className="flex items-center gap-0.5 border border-[var(--line)] rounded-[var(--radius)] bg-[var(--surface)] p-0.5">
                 {(["fast", "balanced", "deep"] as ThinkingIntensity[]).map((st) => (
                   <button
+                    type="button"
                     key={st}
+                    aria-pressed={intensity === st}
                     onClick={() => {
                       setIntensity(st);
                       saveThinkingIntensity(st);
                     }}
-                    className={`px-2 py-0.5 rounded-xs text-[11px] font-sans transition-colors cursor-pointer ${
+                    className={`px-2 py-0.5 rounded-[var(--radius)] text-[var(--text-meta)] font-sans transition-colors cursor-pointer ${
                       intensity === st
-                        ? "bg-[#1C1B17] text-[#FAFAF7]"
-                        : "text-[#6B675C] hover:text-[#1C1B17]"
+                        ? "bg-[var(--ink)] text-[var(--paper)]"
+                        : "text-[var(--gray)] hover:text-[var(--ink)]"
                     }`}
                     title={INTENSITY_PRESETS[st].systemModifierDE}
                   >
@@ -854,17 +878,18 @@ export default function Tutor({
               </div>
 
               {/* Lehrmodus: Sokratisch vs. Klausur-Direkt */}
-              <div className="flex items-center gap-0.5 border border-[#E5E1D8] rounded-sm bg-white p-0.5">
+              <div className="flex items-center gap-0.5 border border-[var(--line)] rounded-[var(--radius)] bg-[var(--surface)] p-0.5">
                 <button
                   type="button"
+                  aria-pressed={pedagogyMode === "socratic"}
                   onClick={() => {
                     setPedagogyMode("socratic");
                     saveTutorPedagogyMode("socratic");
                   }}
-                  className={`px-2 py-0.5 rounded-xs text-[11px] font-sans transition-colors cursor-pointer flex items-center gap-1 ${
+                  className={`px-2 py-0.5 rounded-[var(--radius)] text-[var(--text-meta)] font-sans transition-colors cursor-pointer flex items-center gap-1 ${
                     pedagogyMode === "socratic"
-                      ? "bg-[#4338CA] text-white font-medium"
-                      : "text-[#6B675C] hover:text-[#1C1B17]"
+                      ? "bg-[var(--accent)] text-[var(--surface)] font-medium"
+                      : "text-[var(--gray)] hover:text-[var(--ink)]"
                   }`}
                   title={
                     lang === "de"
@@ -872,22 +897,23 @@ export default function Tutor({
                       : "启发引导模式：苏格拉底产婆术，反抛出引导性问题，启发自主解题"
                   }
                 >
-                  <svg className="w-2.5 h-2.5" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.8">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" className="h-3 w-3">
                     <circle cx="8" cy="8" r="6" />
-                    <path d="M8 5v3l2 2" />
+                    <path d="M8 4.5V8l2.5 2.5" />
                   </svg>
                   <span>{lang === "de" ? "Sokratisch" : "启发引导"}</span>
                 </button>
                 <button
                   type="button"
+                  aria-pressed={pedagogyMode === "direct"}
                   onClick={() => {
                     setPedagogyMode("direct");
                     saveTutorPedagogyMode("direct");
                   }}
-                  className={`px-2 py-0.5 rounded-xs text-[11px] font-sans transition-colors cursor-pointer flex items-center gap-1 ${
+                  className={`px-2 py-0.5 rounded-[var(--radius)] text-[var(--text-meta)] font-sans transition-colors cursor-pointer flex items-center gap-1 ${
                     pedagogyMode === "direct"
-                      ? "bg-[#047857] text-white font-medium"
-                      : "text-[#6B675C] hover:text-[#1C1B17]"
+                      ? "bg-[var(--success)] text-[var(--surface)] font-medium"
+                      : "text-[var(--gray)] hover:text-[var(--ink)]"
                   }`}
                   title={
                     lang === "de"
@@ -895,8 +921,8 @@ export default function Tutor({
                       : "考纲直出模式：标准Erwartungshorizont踩分点与满分答题句"
                   }
                 >
-                  <svg className="w-2.5 h-2.5" viewBox="0 0 16 16" fill="currentColor">
-                    <polygon points="9 1 3 9 8 9 7 15 13 7 8 7 9 1" />
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" className="h-3 w-3">
+                    <path d="M9.2 1.8L4.3 8.2h3.4l-.9 6 4.9-6.4H8.3l.9-6z" />
                   </svg>
                   <span>{lang === "de" ? "Klausur-Direkt" : "考纲直出"}</span>
                 </button>
@@ -904,6 +930,7 @@ export default function Tutor({
 
               {/* 端点与模型设置按钮 */}
               <button
+                type="button"
                 onClick={() => {
                   if (onOpenSettings) {
                     onOpenSettings();
@@ -912,9 +939,9 @@ export default function Tutor({
                   }
                 }}
                 title={lang === "de" ? "Zu den vollständigen KI-Einstellungen (Modelle, Endpunkte)" : "配置端点与模型"}
-                className="rounded-sm border border-[#E5E1D8] bg-white px-2 py-0.5 font-sans text-[11px] text-[#4338CA] hover:border-[#4338CA] hover:bg-[#EEF2FF] flex items-center gap-1 cursor-pointer transition-colors"
+                className="rounded-[var(--radius)] border border-[var(--line)] bg-[var(--surface)] px-2 py-0.5 font-sans text-[var(--text-meta)] text-[var(--accent)] hover:border-[var(--accent)] hover:bg-[var(--paper-subtle)] flex items-center gap-1 cursor-pointer transition-colors"
               >
-                <svg className="w-3 h-3" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" className="h-3 w-3">
                   <circle cx="8" cy="8" r="2.2" />
                   <path d="M8 1.6v2.1M8 12.3v2.1M1.6 8h2.1M12.3 8h2.1M3.5 3.5l1.5 1.5M11 11l1.5 1.5M12.5 3.5L11 5M5 11l-1.5 1.5" />
                 </svg>
@@ -924,23 +951,25 @@ export default function Tutor({
           </div>
 
           {/* Tier 2: 学科启发工具条与导出 */}
-          <div className="flex flex-wrap items-center justify-between gap-2 px-3 py-1 text-xs font-mono text-[#6B675C]">
+          <div className="flex flex-wrap items-center justify-between gap-2 px-3 py-1 text-xs font-mono text-[var(--gray)]">
             <div className="flex min-w-0 flex-wrap items-center gap-2">
-              <span className="text-[10px] text-[#8C877B] uppercase tracking-wider font-sans">
+              <span className="text-[var(--text-meta)] text-[var(--gray)] uppercase tracking-wider font-sans">
                 {lang === "de" ? "Didaktik-Tools:" : "学科辅助工具:"}
               </span>
               <div className="flex flex-wrap items-center gap-1">
                 <button
                   type="button"
+                  aria-pressed={pedagogyTool === "lego"}
+                  aria-controls="tutor-pedagogy-panel"
                   onClick={() => setPedagogyTool((t) => (t === "lego" ? null : "lego"))}
                   title={lang === "de" ? "Satzbau-Lego öffnen" : "打开句式积木 (Satzbau-Lego)"}
-                  className={`rounded-xs px-2 py-0.5 text-[11px] font-sans transition-all cursor-pointer flex items-center gap-1 border border-[#E5E1D8] ${
+                  className={`rounded-[var(--radius)] px-2 py-0.5 text-[var(--text-meta)] font-sans transition-colors cursor-pointer flex items-center gap-1 border border-[var(--line)] ${
                     pedagogyTool === "lego"
-                      ? "bg-[#4338CA] text-white font-medium border-[#4338CA]"
-                      : "bg-white text-[#1C1B17] hover:bg-[#FAF9F6]"
+                      ? "bg-[var(--accent)] text-[var(--surface)] font-medium border-[var(--accent)]"
+                      : "bg-[var(--surface)] text-[var(--ink)] hover:bg-[var(--paper-subtle)]"
                   }`}
                 >
-                  <svg className="w-3 h-3" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.6">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" className="h-3 w-3">
                     <rect x="2" y="5" width="12" height="9" rx="1" />
                     <circle cx="5" cy="3" r="1.5" />
                     <circle cx="11" cy="3" r="1.5" />
@@ -950,15 +979,17 @@ export default function Tutor({
 
                 <button
                   type="button"
+                  aria-pressed={pedagogyTool === "balance"}
+                  aria-controls="tutor-pedagogy-panel"
                   onClick={() => setPedagogyTool((t) => (t === "balance" ? null : "balance"))}
                   title={lang === "de" ? "Dialektische Waage öffnen" : "打开辩证天平 (Urteils-Waage)"}
-                  className={`rounded-xs px-2 py-0.5 text-[11px] font-sans transition-all cursor-pointer flex items-center gap-1 border border-[#E5E1D8] ${
+                  className={`rounded-[var(--radius)] px-2 py-0.5 text-[var(--text-meta)] font-sans transition-colors cursor-pointer flex items-center gap-1 border border-[var(--line)] ${
                     pedagogyTool === "balance"
-                      ? "bg-[#047857] text-white font-medium border-[#047857]"
-                      : "bg-white text-[#1C1B17] hover:bg-[#FAF9F6]"
+                      ? "bg-[var(--success)] text-[var(--surface)] font-medium border-[var(--success)]"
+                      : "bg-[var(--surface)] text-[var(--ink)] hover:bg-[var(--paper-subtle)]"
                   }`}
                 >
-                  <svg className="w-3 h-3" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.6">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" className="h-3 w-3">
                     <path d="M8 2v12M3 14h10M4 6l4-2 4 2M4 6l-2 5h4l-2-5M12 6l-2 5h4l-2-5" />
                   </svg>
                   <span>{lang === "de" ? "Urteils-Waage" : "辩证天平"}</span>
@@ -966,31 +997,35 @@ export default function Tutor({
 
                 <button
                   type="button"
+                  aria-pressed={pedagogyTool === "highlighter"}
+                  aria-controls="tutor-pedagogy-panel"
                   onClick={() => setPedagogyTool((t) => (t === "highlighter" ? null : "highlighter"))}
                   title={lang === "de" ? "Text-Dekonstruierer öffnen" : "打开荧光标注解构画板"}
-                  className={`rounded-xs px-2 py-0.5 text-[11px] font-sans transition-all cursor-pointer flex items-center gap-1 border border-[#E5E1D8] ${
+                  className={`rounded-[var(--radius)] px-2 py-0.5 text-[var(--text-meta)] font-sans transition-colors cursor-pointer flex items-center gap-1 border border-[var(--line)] ${
                     pedagogyTool === "highlighter"
-                      ? "bg-[#BE185D] text-white font-medium border-[#BE185D]"
-                      : "bg-white text-[#1C1B17] hover:bg-[#FAF9F6]"
+                      ? "bg-[var(--accent)] text-[var(--surface)] font-medium border-[var(--accent)]"
+                      : "bg-[var(--surface)] text-[var(--ink)] hover:bg-[var(--paper-subtle)]"
                   }`}
                 >
-                  <svg className="w-3 h-3" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.6">
-                    <path d="M11 2l3 3-8 8H3v-3l8-8zM9 4l3 3" />
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" className="h-3 w-3">
+                    <path d="M11.2 2.3l2.5 2.5-7.6 7.6-3.3.8.8-3.3 7.6-7.6zM9.8 3.7l2.5 2.5" />
                   </svg>
                   <span>{lang === "de" ? "Dekonstruierer" : "文本解构"}</span>
                 </button>
 
                 <button
                   type="button"
+                  aria-pressed={pedagogyTool === "tangent"}
+                  aria-controls="tutor-pedagogy-panel"
                   onClick={() => setPedagogyTool((t) => (t === "tangent" ? null : "tangent"))}
                   title={lang === "de" ? "Tangenten-Simulator öffnen (Differentialrechnung Δx → 0)" : "打开割线逼近切线沙盘 (导数几何直观)"}
-                  className={`rounded-xs px-2 py-0.5 text-[11px] font-sans transition-all cursor-pointer flex items-center gap-1 border border-[#E5E1D8] ${
+                  className={`rounded-[var(--radius)] px-2 py-0.5 text-[var(--text-meta)] font-sans transition-colors cursor-pointer flex items-center gap-1 border border-[var(--line)] ${
                     pedagogyTool === "tangent"
-                      ? "bg-[#2563eb] text-white font-medium border-[#2563eb]"
-                      : "bg-white text-[#1C1B17] hover:bg-[#FAF9F6]"
+                      ? "bg-[var(--accent)] text-[var(--surface)] font-medium border-[var(--accent)]"
+                      : "bg-[var(--surface)] text-[var(--ink)] hover:bg-[var(--paper-subtle)]"
                   }`}
                 >
-                  <svg className="w-3 h-3" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.6">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" className="h-3 w-3">
                     <path d="M2 14L14 2M2 14h12M2 14V2" />
                   </svg>
                   <span>{lang === "de" ? "Tangenten-Sim" : "导数沙盘"}</span>
@@ -999,29 +1034,32 @@ export default function Tutor({
             </div>
 
             <button
+              type="button"
               onClick={handleExportMarkdown}
               title={lang === "de" ? "Dialog als Markdown exportieren" : "导出当前对话为 Markdown"}
-              className="rounded-sm border border-[#E5E1D8] bg-white px-2 py-0.5 font-sans text-[11px] text-[#1C1B17] hover:border-[#4338CA] hover:text-[#4338CA] flex items-center gap-1 cursor-pointer"
+              className="rounded-[var(--radius)] border border-[var(--line)] bg-[var(--surface)] px-2 py-0.5 font-sans text-[var(--text-meta)] text-[var(--ink)] hover:border-[var(--accent)] hover:text-[var(--accent)] flex items-center gap-1 cursor-pointer"
             >
-              <svg className="w-3 h-3 text-[#6B675C]" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.6">
-                <path d="M8 2v9M4 7l4 4 4-4M2 14h12" />
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" className="h-3 w-3 text-[var(--gray)]">
+                <path d="M8 2v9M4.5 7.5L8 11l3.5-3.5M2.5 14h11" />
               </svg>
-              <span>{copyFeedback ? (lang === "de" ? "Exportiert" : "已导出") : (lang === "de" ? "Export .md" : "导出 .md")}</span>
+              <span aria-live="polite" aria-atomic="true">
+                {copyFeedback ? (lang === "de" ? "Exportiert" : "已导出") : (lang === "de" ? "Export .md" : "导出 .md")}
+              </span>
             </button>
           </div>
         </div>
 
         {/* Pädagogischer Lern-Werkzeugkasten (Collapsible Drawer) */}
         {pedagogyTool && (
-          <div className="border-b border-[#E5E1D8] bg-[#FAF9F6] p-3 max-h-[500px] overflow-y-auto animate-in slide-in-from-top-2 duration-150">
+          <div id="tutor-pedagogy-panel" className="tab-enter max-h-[500px] overflow-y-auto border-b border-[var(--line)] bg-[var(--paper-subtle)] p-3">
             <div className="flex items-center justify-between mb-2">
-              <span className="text-[10px] font-mono text-[#6B675C] uppercase tracking-wider">
+              <span className="text-[var(--text-meta)] font-mono text-[var(--gray)] uppercase tracking-wider">
                 {lang === "de" ? "Pädagogisches Werkzeug aktiv (Ergebnisse fließen direkt in den Chat ein):" : "无痛学习交互工具（生成句式可一键带入下方对话框）："}
               </span>
               <button
                 type="button"
                 onClick={() => setPedagogyTool(null)}
-                className="inline-flex items-center gap-1 text-xs font-mono text-[#6B675C] hover:text-[#1C1B17] cursor-pointer"
+                className="inline-flex items-center gap-1 text-xs font-mono text-[var(--gray)] hover:text-[var(--ink)] cursor-pointer"
               >
                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" aria-hidden="true">
                   <path d="M4 4l8 8M12 4l-8 8" />
@@ -1064,7 +1102,7 @@ export default function Tutor({
         )}
 
         {!onOpenSettings && showAi && (
-          <div className="border-b border-[#E5E1D8] bg-white max-h-96 overflow-y-auto">
+          <div className="border-b border-[var(--line)] bg-[var(--surface)] max-h-96 overflow-y-auto">
             <AiSettings
               lang={lang}
               onChanged={() => {
@@ -1077,26 +1115,26 @@ export default function Tutor({
 
         {/* Degraded State Notice */}
         {isDegraded && (
-          <div className="border-b border-[#E5E1D8] border-l-2 border-[#B45309] bg-[#FAF9F6] px-4 py-2 text-xs font-mono text-[#B45309] flex items-center justify-between">
+          <div role="status" aria-live="polite" aria-atomic="true" className="flex items-center justify-between border-b border-[var(--line)] border-l-2 border-l-[var(--warning)] bg-[var(--paper-subtle)] px-4 py-2 font-mono text-xs text-[var(--warning)]">
             <span className="flex items-center gap-1.5">
-              <svg className="w-3 h-3 text-[#B45309]" viewBox="0 0 16 16" fill="currentColor">
-                <polygon points="9 1 3 9 8 9 7 15 13 7 8 7 9 1" />
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" className="h-3 w-3">
+                <path d="M8 2.5L14 13H2L8 2.5zM8 6v3.5M8 11.5v.2" />
               </svg>
               <span>{lang === "de" ? "Auto-Dispatch: Lokales Modell offline · Antwort nativ aus Vault" : "自动调配：本地模型离线，已原生调用知识库考点"}</span>
             </span>
-            <span className="text-[10px] text-[#6B675C]">{engineTag}</span>
+            <span className="text-[var(--text-meta)] text-[var(--gray)]">{engineTag}</span>
           </div>
         )}
 
         {/* Error state if occurred */}
         {errorMsg && (
-          <div className="flex items-center justify-between border-b border-[#E5E1D8] bg-[#FEF2F2] px-4 py-2 text-xs font-mono text-[#991B1B]">
+          <div role="status" aria-live="polite" aria-atomic="true" className="flex items-center justify-between border-b border-[var(--line)] bg-[var(--warning)]/10 px-4 py-2 font-mono text-xs text-[var(--warning)]">
             <span>{errorMsg}</span>
             <button
               type="button"
               disabled={retryCountdown > 0}
               onClick={() => sendMessage(messages[messages.length - 1]?.text)}
-              className="border border-[#991B1B]/30 px-2 py-0.5 rounded-sm hover:bg-[#991B1B]/10 disabled:opacity-50"
+              className="border border-[var(--warning)]/30 px-2 py-0.5 rounded-[var(--radius)] hover:bg-[var(--warning)]/10 disabled:opacity-50"
             >
               {retryCountdown > 0
                 ? `Wiederholen (${retryCountdown}s)`
@@ -1106,45 +1144,46 @@ export default function Tutor({
         )}
 
         {/* Dialog-Stream */}
-        <div ref={scrollRef} className="flex-1 space-y-4 overflow-y-auto p-4 sm:p-5">
+        <div ref={scrollRef} aria-busy={isThinking} className="flex-1 space-y-4 overflow-y-auto p-4 sm:p-5">
           {messages.map((m) =>
             m.role === "ki" ? (
               <div
                 key={m.id}
-                className="max-w-[94%] border-l-2 border-[#4338CA] pl-3.5 py-1 text-sm font-serif text-[#1C1B17]"
+                className="de-reading max-w-[94%] border-l-2 border-[var(--accent)] py-1 pl-3.5 text-sm text-[var(--ink)]"
               >
-                <div className="text-[10px] font-mono uppercase tracking-wider text-[#6B675C] mb-1.5 flex items-center gap-2">
+                <div className="text-[var(--text-meta)] font-mono uppercase tracking-wider text-[var(--gray)] mb-1.5 flex items-center gap-2">
                   <span>KI-Tutor</span>
-                  <span className="text-[#E5E1D8]">·</span>
-                  <span className="text-[9px] text-[#4338CA]">Oberstufe EF</span>
+                  <span aria-hidden="true" className="h-3 w-px bg-[var(--line)]" />
+                  <span className="text-[var(--text-meta)] text-[var(--accent)]">Oberstufe EF</span>
                   {m.engineTag && (
                     <>
-                      <span className="text-[#E5E1D8]">·</span>
-                      <span className="text-[9px] text-[#6B675C]">{m.engineTag}</span>
+                      <span aria-hidden="true" className="h-3 w-px bg-[var(--line)]" />
+                      <span className="text-[var(--text-meta)] text-[var(--gray)]">{m.engineTag}</span>
                     </>
                   )}
                 </div>
 
                 {/* Instant Grounding Card (<10ms) */}
                 {m.instantSnippet && (
-                  <div className="mb-2.5 rounded-sm border border-[#C7D2FE] bg-[#F5F7FF] px-3 py-2 text-xs font-serif">
-                    <div className="flex items-center justify-between text-[10px] font-mono text-[#4338CA] mb-1">
+                  <div className="exam-reading de-reading mb-2.5 border-l-2 border-[var(--accent)] pl-3 text-sm">
+                    <div className="flex items-center justify-between text-[var(--text-meta)] font-mono text-[var(--accent)] mb-1">
                       <span className="flex items-center gap-1 font-sans">
-                        <span className="inline-block w-1.5 h-1.5 rounded-full bg-[#4338CA]" />
-                        <svg className="w-2.5 h-2.5 text-[#4338CA]" viewBox="0 0 16 16" fill="currentColor">
-                          <polygon points="9 1 3 9 8 9 7 15 13 7 8 7 9 1" />
+                        <span aria-hidden="true" className="inline-block h-1.5 w-1.5 rounded-full bg-[var(--accent)]" />
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" className="h-3 w-3 text-[var(--accent)]">
+                          <path d="M9.2 1.8L4.3 8.2h3.4l-.9 6 4.9-6.4H8.3l.9-6z" />
                         </svg>
                         <span>{lang === "de" ? "Vault-Sofortauszug" : "知识库瞬时定义"}</span>
                       </span>
                       <button
+                        type="button"
                         onClick={() => onJumpToLibrary?.(m.instantSnippet!.notePath)}
-                        className="underline hover:text-[#312E81] cursor-pointer"
+                        className="underline hover:text-[var(--accent)] cursor-pointer"
                         title={lang === "de" ? "In Notizen öffnen" : "在笔记库中查看"}
                       >
                         [{m.instantSnippet.notePath}]
                       </button>
                     </div>
-                    <p className="text-[#1E1B4B]">„{m.instantSnippet.excerpt}“</p>
+                    <p className="de-reading text-[var(--ink)]">„{m.instantSnippet.excerpt}“</p>
                   </div>
                 )}
 
@@ -1153,45 +1192,45 @@ export default function Tutor({
 
                 {/* Fachübergreifende Vernetzung (Cross-Subject Thought Bridge Capsule) */}
                 {m.vernetzungBridge && (
-                  <div className="mt-2.5 rounded-sm border border-[#047857]/30 bg-[#F0FDF4] px-3 py-1.5 text-xs font-sans">
+                  <div className="mt-2.5 border-y border-[var(--line)] py-2 text-xs font-sans">
                     <div className="flex items-center justify-between">
-                      <div className="flex items-center gap-1.5 text-[#065F46] font-medium text-[11px]">
-                        <svg className="w-3.5 h-3.5 text-[#047857]" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.6">
+                      <div className="flex items-center gap-1.5 text-[var(--success)] font-medium text-[var(--text-meta)]">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" className="h-3.5 w-3.5 text-[var(--success)]">
                           <path d="M6.5 9.5l3-3M5 11l-1.5 1.5a2.121 2.121 0 0 1-3-3L2 8a2.121 2.121 0 0 1 3-3h1M11 5l1.5-1.5a2.121 2.121 0 0 1 3 3L14 8a2.121 2.121 0 0 1-3 3h-1" />
                         </svg>
                         <span>{lang === "de" ? "Fachübergreifende Vernetzung:" : "跨学科思维桥:"}</span>
-                        <span className="font-semibold text-[#047857]">{m.vernetzungBridge.badgeLabel}</span>
+                        <span className="font-semibold text-[var(--success)]">{m.vernetzungBridge.badgeLabel}</span>
                       </div>
                       <button
                         type="button"
                         onClick={() => onJumpToLibrary?.(m.vernetzungBridge!.targetNotePath)}
-                        className="text-[10px] font-mono text-[#047857] hover:underline cursor-pointer flex items-center gap-0.5"
+                        className="text-[var(--text-meta)] font-mono text-[var(--success)] hover:underline cursor-pointer flex items-center gap-0.5"
                         title={lang === "de" ? "In Notizen öffnen" : "在笔记库中查看"}
                       >
                         <span>[{m.vernetzungBridge.targetSubject}]</span>
-                        <svg className="w-2.5 h-2.5" viewBox="0 0 16 16" fill="currentColor">
-                          <polygon points="6 3 11 8 6 13" />
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" className="h-3 w-3">
+                          <path d="M6 3.5L10.5 8 6 12.5" />
                         </svg>
                       </button>
                     </div>
-                    <div className="mt-1 text-[11px] text-[#064E3B] font-serif flex flex-col gap-0.5 border-t border-[#047857]/15 pt-1">
-                      <div>„{m.vernetzungBridge.anchorFormulaOrSentenceDE}“</div>
-                      <div className="text-[10px] text-[#047857]/80 font-sans">{m.vernetzungBridge.anchorSentenceZH}</div>
+                    <div className="mt-1 flex flex-col gap-1 border-t border-[var(--line)] pt-1 text-sm">
+                      <div className="de-reading text-[var(--ink)]">„{m.vernetzungBridge.anchorFormulaOrSentenceDE}“</div>
+                      <div className="zh-translation">{m.vernetzungBridge.anchorSentenceZH}</div>
                     </div>
                   </div>
                 )}
 
                 {/* In Fehlerlog erfassen */}
                 {m.text && !m.isError && (
-                  <div className="mt-2 pt-1.5 border-t border-[#E5E1D8]/60 flex items-center justify-between">
+                  <div className="mt-2 pt-1.5 border-t border-[var(--line)]/60 flex items-center justify-between">
                     <button
                       type="button"
                       onClick={() => handleCaptureFehler(m)}
                       title={lang === "de" ? "Diesen Turn als Fehlerlog-Eintrag erfassen" : "提炼并沉淀为对应学科的错题补丁"}
-                      className="inline-flex items-center gap-1.5 text-[11px] font-sans text-[#6B675C] hover:text-[#B45309] hover:bg-[#FEF3C7]/40 px-2 py-0.5 rounded-xs transition-colors cursor-pointer"
+                      className="inline-flex items-center gap-1.5 text-[var(--text-meta)] font-sans text-[var(--gray)] hover:text-[var(--warning)] hover:bg-[var(--warning)]/40 px-2 py-0.5 rounded-[var(--radius)] transition-colors cursor-pointer"
                     >
-                      <svg className="w-3.5 h-3.5 text-[#B45309]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                        <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z" />
+                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" className="h-3.5 w-3.5 text-[var(--warning)]">
+                        <path d="M4 2.5h8v11l-4-2.7-4 2.7v-11z" />
                       </svg>
                       <span>{lang === "de" ? "In Fehlerlog erfassen" : "沉淀为错题"}</span>
                     </button>
@@ -1201,13 +1240,13 @@ export default function Tutor({
             ) : (
               <div
                 key={m.id}
-                className="ml-auto max-w-[85%] rounded-sm bg-[#FAF9F6] border border-[#E5E1D8] px-3.5 py-2.5 text-sm font-sans text-[#1C1B17]"
+                className="ml-auto max-w-[85%] rounded-[var(--radius)] bg-[var(--paper-subtle)] border border-[var(--line)] px-3.5 py-2.5 text-sm font-sans text-[var(--ink)]"
               >
-                <div className="text-[10px] font-mono uppercase tracking-wider text-[#6B675C] mb-1">
+                <div className="text-[var(--text-meta)] font-mono uppercase tracking-wider text-[var(--gray)] mb-1">
                   Du / 你
                 </div>
                 {m.imageUrl && (
-                  <div className="mb-2 max-w-[200px] rounded-xs overflow-hidden border border-[#E5E1D8]">
+                  <div className="mb-2 max-w-[200px] rounded-[var(--radius)] overflow-hidden border border-[var(--line)]">
                     <img src={m.imageUrl} alt="Bildanhang" className="w-full h-auto object-cover max-h-48" />
                   </div>
                 )}
@@ -1217,8 +1256,8 @@ export default function Tutor({
           )}
 
           {isThinking && (
-            <div className="border-l-2 border-[#4338CA]/40 pl-3.5 py-1 text-xs font-mono text-[#6B675C] flex items-center gap-2">
-              <span className="inline-block h-1.5 w-1.5 rounded-full bg-[#4338CA] animate-pulse" />
+            <div role="status" aria-live="polite" aria-atomic="true" className="flex items-center gap-2 border-l-2 border-[var(--accent)]/40 py-1 pl-3.5 font-mono text-xs text-[var(--gray)]">
+              <span aria-hidden="true" className="inline-block h-1.5 w-1.5 animate-pulse rounded-full bg-[var(--accent)]" />
               <span>
                 {localPct !== null
                   ? `Lokal-Modell lädt: ${Math.round(localPct * 100)}%`
@@ -1231,25 +1270,25 @@ export default function Tutor({
         </div>
 
         {/* Eingabebereich */}
-        <div className="border-t border-[#E5E1D8] bg-[#FAF9F6] p-3">
+        <div className="border-t border-[var(--line)] bg-[var(--paper-subtle)] p-3">
           {/* Bild-Vorschau vor Absenden */}
           {attachedImage && (
-            <div className="mb-2 flex items-center gap-2 bg-white border border-[#E5E1D8] px-2.5 py-1 rounded-sm w-fit max-w-full">
+            <div className="mb-2 flex items-center gap-2 bg-[var(--surface)] border border-[var(--line)] px-2.5 py-1 rounded-[var(--radius)] w-fit max-w-full">
               <img
                 src={attachedImage.dataUrl}
                 alt="Vorschau"
-                className="w-7 h-7 object-cover rounded-xs border border-[#E5E1D8]"
+                className="w-7 h-7 object-cover rounded-[var(--radius)] border border-[var(--line)]"
               />
-              <span className="text-xs font-mono text-[#1C1B17] truncate max-w-[180px]">
+              <span className="text-xs font-mono text-[var(--ink)] truncate max-w-[180px]">
                 {attachedImage.name}
               </span>
-              <span className="text-[10px] font-mono text-[#6B675C]">
+              <span className="text-[var(--text-meta)] font-mono text-[var(--gray)]">
                 ({attachedImage.sizeKb} KB)
               </span>
               <button
                 type="button"
                 onClick={() => setAttachedImage(null)}
-                className="text-xs text-[#6B675C] hover:text-[#991B1B] ml-1 cursor-pointer font-bold"
+                className="text-xs text-[var(--gray)] hover:text-[var(--warning)] ml-1 cursor-pointer font-bold"
                 title="Bild entfernen"
                 aria-label="Bild entfernen"
               >
@@ -1287,17 +1326,19 @@ export default function Tutor({
                   ? "Bild / Karikatur / Diagramm anhängen (oder mit Strg+V einfügen)"
                   : "添加图片 / 政治漫画 / 图表（支持 Ctrl+V 粘贴）"
               }
-              className="p-2 rounded-sm border border-[#E5E1D8] bg-white text-[#6B675C] hover:text-[#4338CA] hover:border-[#4338CA] transition-colors cursor-pointer flex items-center justify-center flex-shrink-0"
+              aria-label={lang === "de" ? "Bild anhängen" : "添加图片"}
+              className="p-2 rounded-[var(--radius)] border border-[var(--line)] bg-[var(--surface)] text-[var(--gray)] hover:text-[var(--accent)] hover:border-[var(--accent)] transition-colors cursor-pointer flex items-center justify-center flex-shrink-0"
             >
-              <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
-                <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
-                <circle cx="8.5" cy="8.5" r="1.5" />
-                <polyline points="21 15 16 10 5 21" />
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                <rect x="2" y="3" width="12" height="10" rx="1" />
+                <circle cx="5.5" cy="6.5" r="1" />
+                <path d="M3 11l3-3 2.5 2.5 2-2L14 11" />
               </svg>
             </button>
 
             <input
               type="text"
+              aria-label={lang === "de" ? "Frage an den KI-Tutor" : "向 AI 助教提问"}
               value={input}
               onChange={(e) => setInput(e.target.value)}
               onPaste={handlePaste}
@@ -1307,23 +1348,23 @@ export default function Tutor({
                   : "向 AI 助教提问 (如：什么是社会不平等？)..."
               }
               disabled={isThinking}
-              className="flex-1 rounded-sm border border-[#E5E1D8] bg-white px-3 py-2 text-sm font-sans text-[#1C1B17] placeholder-[#6B675C] focus:border-[#4338CA] focus:outline-none"
+              className="flex-1 rounded-[var(--radius)] border border-[var(--line)] bg-[var(--surface)] px-3 py-2 font-sans text-sm text-[var(--ink)] placeholder-[var(--gray)] focus:border-[var(--focus)]"
             />
             <button
               type="submit"
               disabled={isThinking || (!input.trim() && !attachedImage)}
-              className="rounded-sm bg-[#1C1B17] px-4 py-2 text-sm font-sans text-[#FAFAF7] hover:bg-[#4338CA] disabled:opacity-40 transition-colors cursor-pointer flex-shrink-0"
+              className="rounded-[var(--radius)] bg-[var(--ink)] px-4 py-2 text-sm font-sans text-[var(--paper)] hover:bg-[var(--accent)] disabled:opacity-40 transition-colors cursor-pointer flex-shrink-0"
             >
               {lang === "de" ? "Senden" : "发送"}
             </button>
           </form>
-          <div className="mt-1.5 flex items-center justify-between text-[10px] font-mono text-[#6B675C]">
+          <div className="mt-1.5 flex items-center justify-between text-[var(--text-meta)] font-mono text-[var(--gray)]">
             <span>
               {lang === "de" ? "Antworten sind zitierpflichtig und stützen sich auf deinen Vault." : "助教严格遵守考纲引用规范，断言均带知识库出处。"}
             </span>
             <span className="flex items-center gap-2">
               <span>{INTENSITY_PRESETS[intensity].labelDE}</span>
-              <span>·</span>
+              <span aria-hidden="true" className="h-3 w-px bg-[var(--line)]" />
               <span>
                 {activeEp?.baseUrl && !activeEp.baseUrl.includes("localhost") && !activeEp.baseUrl.includes("127.0.0.1")
                   ? `${activeEp.name} · 云端 API`
@@ -1360,10 +1401,10 @@ export default function Tutor({
             tabIndex={-1}
             className="flex max-h-[80vh] w-full max-w-xl flex-col rounded-[var(--radius)] border border-[var(--line)] bg-[var(--surface)] p-5"
           >
-            <div className="flex items-center justify-between border-b border-[#E5E1D8] pb-2 mb-3">
+            <div className="flex items-center justify-between border-b border-[var(--line)] pb-2 mb-3">
             <div className="flex min-w-0 flex-wrap items-center gap-2">
-                <span className="w-2 h-2 rounded-full bg-[#047857]" />
-                <h4 id="ccr-dialog-title" className="font-mono text-xs font-semibold text-[#1C1B17]">
+                <span aria-hidden="true" className="h-2 w-2 rounded-full bg-[var(--success)]" />
+                <h4 id="ccr-dialog-title" className="font-mono text-xs font-semibold text-[var(--ink)]">
                   CCR #{expandedCcr.hash} (
                   {lang === "de" ? "Originaltext vor Kompression" : "无损还原原文"}
                   )
@@ -1373,7 +1414,7 @@ export default function Tutor({
                 type="button"
                 data-dialog-initial-focus
                 onClick={() => setExpandedCcr(null)}
-                className="inline-flex items-center gap-1 text-xs font-mono text-[#6B675C] hover:text-[#1C1B17] px-2 py-0.5 border border-[#E5E1D8] rounded-xs cursor-pointer"
+                className="inline-flex items-center gap-1 text-xs font-mono text-[var(--gray)] hover:text-[var(--ink)] px-2 py-0.5 border border-[var(--line)] rounded-[var(--radius)] cursor-pointer"
               >
                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" aria-hidden="true">
                   <path d="M4 4l8 8M12 4l-8 8" />
@@ -1381,7 +1422,7 @@ export default function Tutor({
                 <span>{lang === "de" ? "Schließen" : "关闭"}</span>
               </button>
             </div>
-            <div className="flex-1 overflow-y-auto text-xs font-mono whitespace-pre-wrap text-[#1C1B17] bg-white border border-[#E5E1D8] p-3 rounded-sm leading-relaxed">
+            <div className="exam-reading flex-1 overflow-y-auto whitespace-pre-wrap rounded-[var(--radius)] border border-[var(--line)] bg-[var(--surface)] p-3 font-mono text-xs leading-relaxed text-[var(--ink)]">
               {expandedCcr.content ?? (lang === "de" ? "Eintrag nicht mehr im CCR-Speicher." : "条目已过期或不存在。")}
             </div>
           </div>

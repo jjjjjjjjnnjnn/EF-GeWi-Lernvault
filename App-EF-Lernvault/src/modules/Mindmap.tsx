@@ -190,7 +190,7 @@ export default function Mindmap({
 
   if (notesList.length === 0) {
     return (
-      <div className="mx-auto max-w-xl py-12 text-center font-sans text-sm text-[#6B675C]">
+      <div className="mx-auto max-w-xl py-12 text-center font-sans text-sm text-[var(--gray)]">
         Keine Themen gefunden / 暂无知识树节点 — oben „Vault öffnen“ / 点顶部“打开知识库”
       </div>
     );
@@ -200,27 +200,24 @@ export default function Mindmap({
 
   return (
     <div className="mx-auto max-w-6xl space-y-5">
-      <div className="flex items-center justify-between gap-4 border-b border-[#E5E1D8] pb-3">
+      <div className="flex items-center justify-between gap-4 border-b border-[var(--line)] pb-3">
         <div>
-          <h2 className="font-serif text-xl font-normal text-[#1C1B17]">
+          <h2 className="font-serif text-xl font-normal text-[var(--ink)]">
             {lang === "de" ? "Wissensnetzwerk · Gymnasium EF" : "学科知识网络 · 高中阶段 (EF)"}
           </h2>
-          <p className="mt-0.5 font-sans text-xs text-[#6B675C]">
+          <p className="mt-0.5 font-sans text-xs text-[var(--gray)]">
             {lang === "de"
               ? "Verbindungen folgen internen Notizlinks. Ein Klick öffnet die Bibliothekssuche."
               : "连线来自笔记内部链接。点击节点即可打开笔记库搜索。"}
           </p>
         </div>
-        <div className="shrink-0 font-mono text-xs text-[#6B675C]">
+        <div className="shrink-0 font-mono text-xs text-[var(--gray)]">
           {grouped.size} {lang === "de" ? "Fächer" : "学科"} · {notesList.length}{" "}
           {lang === "de" ? "Themen" : "主题"}
         </div>
       </div>
 
-      <div
-        className="overflow-x-auto border border-[#E5E1D8] bg-white"
-        style={{ borderRadius: "2px" }}
-      >
+      <div className="overflow-x-auto">
         <div
           style={{
             position: "relative",
@@ -230,7 +227,11 @@ export default function Mindmap({
           }}
         >
           <svg
+            data-relationship-diagram="true"
             aria-hidden="true"
+            fill="none"
+            stroke="currentColor"
+            className="text-[var(--line)]"
             viewBox={`0 0 ${layout.width} ${layout.height}`}
             preserveAspectRatio="none"
             style={{
@@ -252,7 +253,6 @@ export default function Mindmap({
                   y1={source.y}
                   x2={target.x}
                   y2={target.y}
-                  stroke="#D8D4CA"
                   strokeWidth="1"
                 />
               );
@@ -272,7 +272,7 @@ export default function Mindmap({
                 aria-label={`${node.label}${node.sub ? ` · ${node.sub}` : ""}`}
                 title={node.sub ? `${node.label} · ${node.sub}` : node.label}
                 onClick={() => onJumpToLibrary?.(node.query)}
-                className="focus-visible:outline focus-visible:outline-1 focus-visible:outline-[#4338CA]"
+                className="rounded-[var(--radius)] focus-visible:outline focus-visible:outline-1 focus-visible:outline-[var(--accent)]"
                 style={{
                   position: "absolute",
                   left: `${(node.x / layout.width) * 100}%`,
@@ -282,15 +282,13 @@ export default function Mindmap({
                   minWidth: rootStyle ? "150px" : "105px",
                   minHeight: `${node.height}px`,
                   padding: rootStyle ? "10px 14px" : "8px 9px",
-                  border: "1px solid #1C1B17",
-                  borderRadius: "2px",
-                  backgroundColor: rootStyle ? "#1C1B17" : "#FFFFFF",
-                  color: rootStyle ? "#FFFFFF" : "#1C1B17",
-                  boxShadow: "none",
+                  border: "1px solid var(--ink)",
+                  backgroundColor: rootStyle ? "var(--ink)" : "var(--paper)",
+                  color: rootStyle ? "var(--paper)" : "var(--ink)",
                   textAlign: "center",
                   cursor: "pointer",
                   zIndex: 1,
-                  fontFamily: rootStyle ? "ui-monospace, SFMono-Regular, monospace" : "ui-serif, Georgia, serif",
+                  fontFamily: rootStyle ? "var(--font-mono)" : "var(--font-de)",
                   lineHeight: 1.2,
                 }}
               >
@@ -314,9 +312,9 @@ export default function Mindmap({
                       overflow: "hidden",
                       textOverflow: "ellipsis",
                       whiteSpace: "nowrap",
-                      color: rootStyle ? "#E5E1D8" : "#6B675C",
-                      fontFamily: "ui-sans-serif, system-ui, sans-serif",
-                      fontSize: "10px",
+                      color: rootStyle ? "var(--line)" : "var(--gray)",
+                      fontFamily: "var(--font-zh)",
+                      fontSize: "var(--text-meta)",
                     }}
                   >
                     {node.sub}
@@ -332,9 +330,9 @@ export default function Mindmap({
                           overflow: "hidden",
                           textOverflow: "ellipsis",
                           whiteSpace: "nowrap",
-                          color: "#6B675C",
-                          fontFamily: "ui-monospace, SFMono-Regular, monospace",
-                          fontSize: "9px",
+                          color: "var(--gray)",
+                          fontFamily: "var(--font-mono)",
+                          fontSize: "var(--text-meta)",
                         }}
                       >
                         {node.note.operatoren.slice(0, 2).join(" · ")}
@@ -345,9 +343,9 @@ export default function Mindmap({
                         style={{
                           display: "block",
                           marginTop: "3px",
-                          color: "#6B675C",
-                          fontFamily: "ui-monospace, SFMono-Regular, monospace",
-                          fontSize: "9px",
+                          color: "var(--gray)",
+                          fontFamily: "var(--font-mono)",
+                          fontSize: "var(--text-meta)",
                         }}
                       >
                         {isHub ? `${lang === "de" ? "Hub" : "枢纽"} · ` : ""}
@@ -362,7 +360,7 @@ export default function Mindmap({
         </div>
       </div>
 
-      <div className="flex flex-wrap items-center justify-between gap-2 border-t border-[#E5E1D8] pt-3 font-mono text-xs text-[#6B675C]">
+      <div className="flex flex-wrap items-center justify-between gap-2 border-t border-[var(--line)] pt-3 font-mono text-xs text-[var(--gray)]">
         <span>
           {lang === "de"
             ? "Struktur: Netzwerk (Wurzel) → Fach → Thema"
