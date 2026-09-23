@@ -14,3 +14,38 @@ Zellatmung;细胞呼吸;Atmung setzt Energie aus Glukose frei.;Bio;CN
 Oekologische Nische;生态位;Die Nische trennt die Arten.;Bio;CN
 Allel;等位基因;Ein Allel stammt vom Vater, eines von der Mutter.;Bio;CN
 Erwartungshorizont;踩分点;Der Erwartungshorizont listet die Teilpunkte.;Bio;CN
+Zellkern;细胞核;Der Zellkern schuetzt die DNA und steuert die Zelle.;Bio;Abitur
+Mitochondrium;线粒体;Das Mitochondrium liefert ATP durch Zellatmung.;Bio;Abitur
+Ribosom;核糖体;Das Ribosom synthetisiert Proteine.;Bio;Abitur
+Endoplasmatisches Retikulum;内质网;Das endoplasmatische Retikulum bearbeitet und transportiert Proteine.;Bio;Abitur
+Golgi-Apparat;高尔基体;Der Golgi-Apparat modifiziert und sortiert Proteine.;Bio;Abitur
+Cytoplasma;细胞质;Das Cytoplasma umgibt die Zellorganellen.;Bio;Abitur
+Cytoskelett;细胞骨架;Das Cytoskelett stabilisiert Form und Zellbewegung.;Bio;CN
+Membranprotein;膜蛋白;Ein Membranprotein kann Stoffe transportieren.;Bio;CN
+Phospholipid;磷脂;Phospholipide bilden die Doppelschicht der Biomembran.;Bio;Abitur
+Diffusion;扩散;Die Diffusion folgt dem Konzentrationsgefaelle.;Bio;Abitur
+aktiver Transport;主动运输;Der aktive Transport nutzt Energie gegen das Gefaelle.;Bio;Abitur
+Endocytose;胞吞;Die Endocytose nimmt Material in Vesikeln auf.;Bio;CN
+Exocytose;胞吐;Die Exocytose schleust Stoffe aus der Zelle aus.;Bio;CN
+ATP;三磷酸腺苷;ATP liefert Energie fuer viele Zellprozesse.;Bio;Abitur
+Enzym;酶;Ein Enzym katalysiert eine bestimmte Reaktion.;Bio;Abitur
+Substrat;底物;Das Substrat bindet am aktiven Zentrum des Enzyms.;Bio;Abitur
+aktives Zentrum;活性中心;Das aktive Zentrum bindet das Substrat.;Bio;CN
+RGT-Regel;温度系数规则;Bei zehn Kelvin Temperaturerhoehung steigt die Rate meist.;Bio;CN
+Chlorophyll;叶绿素;Chlorophyll nimmt Lichtenergie fuer Fotosynthese auf.;Bio;Abitur
+Lichtreaktion;光反应;Die Lichtreaktion laeuft in der Thylakoidmembran ab.;Bio;Abitur
+Calvin-Zyklus;卡尔文循环;Der Calvin-Zyklus fixiert Kohlenstoffdioxid im Stroma.;Bio;Abitur
+Zellzyklus;细胞周期;Der Zellzyklus umfasst Wachstum und Teilung.;Bio;Abitur
+Mitose;有丝分裂;Die Mitose erzeugt zwei genetisch gleiche Tochterzellen.;Bio;Abitur
+Meiose;减数分裂;Die Meiose bildet haploide Keimzellen.;Bio;Abitur
+DNA;脱氧核糖核酸;Die DNA speichert genetische Information.;Bio;Abitur
+RNA;核糖核酸;RNA beteiligt sich an der Proteinsynthese.;Bio;Abitur
+Genotyp;基因型;Der Genotyp beschreibt die ererbte Merkmalskombination.;Bio;CN
+Chromosom;染色体;Ein Chromosom traegt Erbanlagen.;Bio;Abitur
+Karyotyp;核型;Der Karyotyp zeigt die Chromosomenzahl und Form.;Bio;CN
+Peptidbindung;肽键;Eine Peptidbindung verbindet zwei Aminosaeurebausteine.;Bio;CN
+Proteinsynthese;蛋白质合成;Die Proteinsynthese setzt Ribosomen und RNA ein.;Bio;CN
+Stoffwechsel;新陈代谢;Der Stoffwechsel umfasst Aufbau Abbau und Energiefluss.;Bio;Abitur
+Thylakoid;类囊体;Der Thylakoid traegt die Membran der Lichtreaktion.;Bio;Abitur
+Photosystem;光系统;Ein Photosystem absorbiert Lichtenergie im Thylakoid.;Bio;Abitur
+Energieentwertung;能量耗散;Bei Stoffwechseln geht Energie als Waerme verloren.;Bio;Abitur
