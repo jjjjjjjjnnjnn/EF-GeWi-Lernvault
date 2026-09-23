@@ -16,10 +16,13 @@ import Tutor from "./modules/Tutor";
 import Planner from "./modules/Planner";
 import Mindmap from "./modules/Mindmap";
 import ReiseModule from "./modules/Reise";
+import { KlausurSim } from "./modules/KlausurSim";
+import { DailySprintModal } from "./components/DailySprintModal";
+import { getStudyStreak } from "./engine/dailyMix";
 import Settings from "./modules/Settings";
 import Onboarding, { loadOnboarding, saveOnboarding, type OnboardingResult } from "./modules/Onboarding";
 
-type Tab = "home" | "library" | "flashcards" | "quiz" | "tutor" | "planner" | "mindmap" | "reise" | "einstellungen";
+type Tab = "home" | "library" | "flashcards" | "quiz" | "klausursim" | "tutor" | "planner" | "mindmap" | "reise" | "einstellungen";
 
 // Tufte Data-Ink: hand-drawn hairline nav icons, no emoji. 16x16, stroke=currentColor.
 const iconProps = {
@@ -64,6 +67,13 @@ const icons: Record<Tab, ReactNode> = {
       <circle cx="2.8" cy="11.5" r="0.7" fill="currentColor" stroke="none" />
     </svg>
   ),
+  klausursim: (
+    <svg {...iconProps}>
+      <path d="M3.5 2.5h6l3.5 3.5v7.5a1 1 0 0 1-1 1h-8.5a1 1 0 0 1-1-1v-10a1 1 0 0 1 1-1z" />
+      <path d="M9.5 2.5v3.5h3.5" />
+      <path d="M5.5 8.5h5M5.5 11h3.5" />
+    </svg>
+  ),
   tutor: (
     <svg {...iconProps}>
       <path d="M2.5 3.2h11a1 1 0 0 1 1 1v5.6a1 1 0 0 1-1 1H7.2l-2.9 2.4v-2.4h-.8a1 1 0 0 1-1-1V4.2a1 1 0 0 1 1-1z" />
@@ -104,7 +114,7 @@ const getInitialTab = (): Tab => {
   if (typeof window !== "undefined") {
     const params = new URLSearchParams(window.location.search);
     const t = params.get("tab") as Tab;
-    if (["home", "library", "flashcards", "quiz", "tutor", "planner", "mindmap", "reise", "einstellungen"].includes(t)) {
+    if (["home", "library", "flashcards", "quiz", "klausursim", "tutor", "planner", "mindmap", "reise", "einstellungen"].includes(t)) {
       return t;
     }
   }
@@ -156,21 +166,23 @@ export default function App() {
     }
   };
 
-  // Lern-Navigation (8 module, home zuerst); Einstellungen steht getrennt am seitenende (B3: Alt 9).
+  // Lern-Navigation (9 module, home zuerst); Einstellungen steht getrennt am seitenende (B3: Alt 9).
   const nav: { id: Tab; label: string; icon: ReactNode }[] = [
     { id: "home", label: tr.home, icon: icons.home },
     { id: "library", label: tr.library, icon: icons.library },
     { id: "flashcards", label: tr.flashcards, icon: icons.flashcards },
     { id: "quiz", label: tr.quiz, icon: icons.quiz },
+    { id: "klausursim", label: tr.klausursim, icon: icons.klausursim },
     { id: "tutor", label: tr.tutor, icon: icons.tutor },
     { id: "planner", label: tr.planner, icon: icons.planner },
     { id: "mindmap", label: tr.mindmap, icon: icons.mindmap },
     { id: "reise", label: tr.reise, icon: icons.reise },
   ];
 
-  const TAB_ORDER: Tab[] = ["home", "library", "flashcards", "quiz", "tutor", "planner", "mindmap", "reise"];
+  const TAB_ORDER: Tab[] = ["home", "library", "flashcards", "quiz", "klausursim", "tutor", "planner", "mindmap", "reise"];
   const [paletteOpen, setPaletteOpen] = useState(false);
   const [helpOpen, setHelpOpen] = useState(false);
+  const [sprintOpen, setSprintOpen] = useState(false);
 
   // Non-course tabs report a coarse position; reise/quiz modules
   // override with their precise context via their own effects.
@@ -308,6 +320,19 @@ export default function App() {
         group: lang === "de" ? "Aktionen" : "操作",
         label: lang === "de" ? "Vault öffnen" : "打开知识库",
         run: () => void openVault(),
+      },
+      {
+        id: "act-daily-sprint",
+        group: lang === "de" ? "Aktionen" : "操作",
+        label: tr.dailySprint,
+        hint: "15 Min",
+        run: () => setSprintOpen(true),
+      },
+      {
+        id: "act-klausur-sim",
+        group: lang === "de" ? "Aktionen" : "操作",
+        label: tr.klausursim,
+        run: () => switchTab("klausursim"),
       },
       {
         id: "act-export-xp",
@@ -449,6 +474,18 @@ export default function App() {
           </div>
 
           <div className="flex items-center gap-3">
+            <button
+              onClick={() => setSprintOpen(true)}
+              className="flex items-center gap-1.5 px-3 py-1.5 rounded text-xs font-mono border border-stone-300 dark:border-stone-700 bg-[#ECE7DC]/40 hover:bg-[#ECE7DC] text-[#1C1B17] transition-colors"
+            >
+              <span>⚡</span>
+              <span>{tr.dailySprint}</span>
+              {getStudyStreak().currentStreak > 0 && (
+                <span className="ml-1 px-1.5 py-0.2 bg-amber-200 text-amber-900 rounded-full text-[10px]">
+                  {getStudyStreak().currentStreak}d
+                </span>
+              )}
+            </button>
             {vaultMsg && (
               <span className="hidden font-mono text-[11px] text-[#6B675C] lg:block">{vaultMsg}</span>
             )}
@@ -462,6 +499,12 @@ export default function App() {
           {tab === "library" && <Library query={query} vault={vault?.notes ?? null} selectedFach={selectedFach} onClearQuery={() => setQuery("")} />}
           {tab === "flashcards" && <Flashcards lang={lang} vault={vault?.cards ?? null} />}
           {tab === "quiz" && <Quiz lang={lang} vault={vault?.notes ?? null} cards={vault?.cards ?? null} onJumpToLibrary={jumpToLibrary} />}
+          {tab === "klausursim" && (
+            <KlausurSim
+              notes={vault?.notes ?? []}
+              currentFach={selectedFach === "alle" ? "SoWi" : selectedFach}
+            />
+          )}
           {tab === "tutor" && <Tutor lang={lang} vaultNotes={vault?.notes ?? null} onJumpToLibrary={jumpToLibrary} />}
           {tab === "planner" && <Planner lang={lang} vaultNotes={vault?.notes ?? null} />}
           {tab === "mindmap" && <Mindmap lang={lang} vaultNotes={vault?.notes ?? null} onJumpToLibrary={jumpToLibrary} />}
@@ -483,6 +526,13 @@ export default function App() {
       </main>
       <Palette open={paletteOpen} onClose={() => setPaletteOpen(false)} items={paletteItems} />
       <HelpOverlay open={helpOpen} onClose={() => setHelpOpen(false)} lang={lang} />
+      <DailySprintModal
+        isOpen={sprintOpen}
+        onClose={() => setSprintOpen(false)}
+        cards={vault?.cards ?? []}
+        notes={vault?.notes ?? []}
+        currentFach={selectedFach === "alle" ? "SoWi" : selectedFach}
+      />
       <FeedbackFloat lang={lang} />
     </div>
   );

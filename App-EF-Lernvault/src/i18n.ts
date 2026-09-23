@@ -9,6 +9,8 @@ export const t = (lang: Lang) => ({
   planner: lang === "de" ? "Lernplan" : "学习规划",
   mindmap: lang === "de" ? "Mindmap" : "思维导图",
   reise: lang === "de" ? "Lernreise" : "互动旅程",
+  klausursim: lang === "de" ? "Klausur-Sim" : "全真模考",
+  dailySprint: lang === "de" ? "Heute lernen (15 Min)" : "今日极速冲刺 (15分钟)",
   due: lang === "de" ? "fällig" : "到期",
   showAnswer: lang === "de" ? "Antwort zeigen" : "显示答案",
   again: "Again",
