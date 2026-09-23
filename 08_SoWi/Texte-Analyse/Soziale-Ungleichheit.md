@@ -72,3 +72,9 @@ tags: [EF, SoWi, Ungleichheit]
 - [ ] Gini 定义（0=全平等）别写反
 - [ ] 贫困线是中位数60%，不是平均数
 - [ ] beurteilen 必须有 Kriterium（Chancengerechtigkeit），不能只表态
+
+## 8. Vernetzung
+
+- [[00_META/GeWi-Vernetzung-Urteilskarte|GeWi-Vernetzung-Urteilskarte]] — 人文社科价值判断大一统框架
+- [[07_Philosophie/Gerechtigkeit-Wirtschaftsethik-Vernetzung|Gerechtigkeit-Wirtschaftsethik-Vernetzung]] — 罗尔斯差异原则与不平等再分配伦理
+- [[07_Philosophie/Texte-Analyse/Utilitarismus-vs-Kant|Utilitarismus-vs-Kant]] — 功利主义福利最大化 vs 康德人尊严
