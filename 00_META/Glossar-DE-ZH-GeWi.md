@@ -502,3 +502,15 @@ tags: [EF, Meta]
 | Kanalprotein | 通道蛋白 | Bio | Kanalproteine ermoeglichen den schnellen selektiven Durchtritt polarer Teilchen. |
 | Plasmolyse | 质壁分离 | Bio | Bei der Plasmolyse loest sich der Protoplast im hypertonischen Milieu von der Zellwand. |
 | Deplasmolyse | 质壁分离复原 | Bio | Durch Wassereinstrom legt sich der Protoplast im hypotonischen Milieu wieder an die Zellwand an. |
+| Scheinargument | 假托论据（诡辩） | Deutsch | Ein Scheinargument taeuscht rationale Begruendung lediglich vor. |
+| antithetische Zuspitzung | 对立尖锐化 | Deutsch | Die antithetische Zuspitzung polarisiert die Positionen im Diskurs. |
+| pragmatische Leserintention | 语用读者意图 | Deutsch | Die pragmatische Leserintention steuert Einstellung und Handlung des Rezipienten. |
+| Dreischritt der Rhetorikanalyse | 修辞三步分析法 | Deutsch | Der Dreischritt umfasst Benennung, Textbeleg und funktionale Wirkungsanalyse. |
+| cultural contextualization | 文化语境释义 | Englisch | Cultural contextualization explains culture-specific German terms to foreign readers. |
+| target text format | 目标体裁格式 | Englisch | Adhering to the target text format guarantees communicatively successful mediation. |
+| selective mediation | 要点筛选中继 | Englisch | Selective mediation extracts only key facts strictly relevant to the task prompt. |
+| address-oriented register | 受众导向语域 | Englisch | An address-oriented register adapts tone and vocabulary to the target audience. |
+| Selbstzweckformel | 自为目的公式 | Philosophie | Die Selbstzweckformel verbietet die Instrumentalisierung des Menschen als blosses Mittel. |
+| widerspruchsfreie Denkbarkeit | 无矛盾可设想性 | Philosophie | Die widerspruchsfreie Denkbarkeit prueft den logischen Gehalt einer universalisierten Maxime. |
+| widerspruchsfreie Wollbarkeit | 无矛盾可意愿性 | Philosophie | Die widerspruchsfreie Wollbarkeit prueft, ob ein vernuenftiger Wille das Gesetz bejahen kann. |
+| deontologischer Pflichtbegriff | 义务论职责概念 | Philosophie | Der deontologische Pflichtbegriff bindet Moral an reine Pflicht statt an Folgen. |
