@@ -90,6 +90,7 @@ describe("keyboard registry", () => {
       "planner",
       "mindmap",
       "reise",
+      "werkzeuge",
       "einstellungen",
     ]);
     expect(MODULE_KEYS.map(({ altHint }) => altHint)).toEqual([
@@ -102,6 +103,7 @@ describe("keyboard registry", () => {
       "Alt 7",
       "Alt 8",
       "Alt 9",
+      "Alt W",
       "Alt 0",
     ]);
   });

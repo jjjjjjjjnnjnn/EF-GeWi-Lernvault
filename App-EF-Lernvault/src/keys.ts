@@ -8,6 +8,7 @@ export type ModuleId =
   | "planner"
   | "mindmap"
   | "reise"
+  | "werkzeuge"
   | "einstellungen";
 
 export type LearnModuleId = Exclude<ModuleId, "einstellungen">;
@@ -159,6 +160,14 @@ export const MODULE_KEYS: readonly ModuleKeyBinding[] = [
     label: { de: "Lernreise", zh: "互动旅程" },
   },
   {
+    id: "module-werkzeuge",
+    module: "werkzeuge",
+    match: { key: "w", code: "KeyW", alt: true },
+    keys: "Alt W",
+    altHint: "Alt W",
+    label: { de: "Fach-Werkzeuge", zh: "学科教具" },
+  },
+  {
     id: "module-einstellungen",
     module: "einstellungen",
     match: { key: "0", code: "Digit0", alt: true },
@@ -299,6 +308,7 @@ export const PER_MODULE_KEYS: Readonly<Record<LearnModuleId, readonly KeyBinding
       label: { de: "Szenario-Timer starten / stoppen", zh: "场景计时开始/停止" },
     },
   ],
+  werkzeuge: [],
 };
 
 export const ONBOARDING_KEYS: readonly KeyBinding[] = [

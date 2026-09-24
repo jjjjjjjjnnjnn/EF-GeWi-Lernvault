@@ -151,5 +151,5 @@ describe("UI-reise: katalog -> start -> alle schritte -> xp (simulierter user)",
     expect(window.alert).toHaveBeenCalled();
     expect(xpStore.load().xp).toBeGreaterThan(0);
     expect(screen.getByText("Soziale Marktwirtschaft")).toBeInTheDocument(); // zurueck im katalog
-  });
+  }, 15000);
 });

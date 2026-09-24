@@ -18,13 +18,14 @@ import Planner from "./modules/Planner";
 import Mindmap from "./modules/Mindmap";
 import ReiseModule from "./modules/Reise";
 import { KlausurSim } from "./modules/KlausurSim";
+import Werkzeuge from "./modules/Werkzeuge";
 import { DailySprintModal } from "./components/DailySprintModal";
 import { getStudyStreak } from "./engine/dailyMix";
 import Settings from "./modules/Settings";
 import Onboarding, { loadOnboarding, saveOnboarding, type OnboardingResult } from "./modules/Onboarding";
 import { initTheme } from "./engine/theme";
 
-type Tab = "home" | "library" | "flashcards" | "quiz" | "klausursim" | "tutor" | "planner" | "mindmap" | "reise" | "einstellungen";
+type Tab = "home" | "library" | "flashcards" | "quiz" | "klausursim" | "tutor" | "planner" | "mindmap" | "reise" | "werkzeuge" | "einstellungen";
 
 const settingsShortcut = MODULE_KEYS.find((binding) => binding.module === "einstellungen")!;
 
@@ -78,6 +79,12 @@ const icons: Record<Tab, ReactNode> = {
       <path d="M5.5 8.5h5M5.5 11h3.5" />
     </svg>
   ),
+  werkzeuge: (
+    <svg {...iconProps}>
+      <path d="M13.5 2.5L2.5 13.5h11V2.5z" />
+      <path d="M5.5 13.5v-2M8 13.5v-3.5M10.5 13.5v-2M13 13.5v-5" />
+    </svg>
+  ),
   tutor: (
     <svg {...iconProps}>
       <path d="M2.5 3.2h11a1 1 0 0 1 1 1v5.6a1 1 0 0 1-1 1H7.2l-2.9 2.4v-2.4h-.8a1 1 0 0 1-1-1V4.2a1 1 0 0 1 1-1z" />
@@ -118,7 +125,7 @@ const getInitialTab = (): Tab => {
   if (typeof window !== "undefined") {
     const params = new URLSearchParams(window.location.search);
     const t = params.get("tab") as Tab;
-    if (["home", "library", "flashcards", "quiz", "klausursim", "tutor", "planner", "mindmap", "reise", "einstellungen"].includes(t)) {
+    if (["home", "library", "flashcards", "quiz", "klausursim", "tutor", "planner", "mindmap", "reise", "werkzeuge", "einstellungen"].includes(t)) {
       return t;
     }
   }
@@ -175,17 +182,57 @@ export default function App() {
     }
   };
 
-  const nav: { id: Tab; label: string; icon: ReactNode }[] = [
-    { id: "home", label: tr.home, icon: icons.home },
-    { id: "library", label: tr.library, icon: icons.library },
-    { id: "flashcards", label: tr.flashcards, icon: icons.flashcards },
-    { id: "quiz", label: tr.quiz, icon: icons.quiz },
-    { id: "klausursim", label: tr.klausursim, icon: icons.klausursim },
-    { id: "tutor", label: tr.tutor, icon: icons.tutor },
-    { id: "planner", label: tr.planner, icon: icons.planner },
-    { id: "mindmap", label: tr.mindmap, icon: icons.mindmap },
-    { id: "reise", label: tr.reise, icon: icons.reise },
+  interface NavItem {
+    id: Tab;
+    label: string;
+    icon: ReactNode;
+  }
+
+  interface NavZone {
+    title: string;
+    items: NavItem[];
+  }
+
+  const navZones: NavZone[] = [
+    {
+      title: tr.navZoneOverview,
+      items: [
+        { id: "home", label: tr.home, icon: icons.home },
+        { id: "planner", label: tr.planner, icon: icons.planner },
+      ],
+    },
+    {
+      title: tr.navZoneKnowledge,
+      items: [
+        { id: "library", label: tr.library, icon: icons.library },
+        { id: "mindmap", label: tr.mindmap, icon: icons.mindmap },
+      ],
+    },
+    {
+      title: tr.navZoneTraining,
+      items: [
+        { id: "werkzeuge", label: tr.werkzeuge, icon: icons.werkzeuge },
+        { id: "flashcards", label: tr.flashcards, icon: icons.flashcards },
+        { id: "quiz", label: tr.quiz, icon: icons.quiz },
+        { id: "klausursim", label: tr.klausursim, icon: icons.klausursim },
+        { id: "reise", label: tr.reise, icon: icons.reise },
+      ],
+    },
+    {
+      title: tr.navZoneSystem,
+      items: [
+        { id: "tutor", label: tr.tutor, icon: icons.tutor },
+      ],
+    },
   ];
+
+  const allNavItems: NavItem[] = useMemo(() => navZones.flatMap((z) => z.items), [lang]);
+  const [tutorPrefilledInput, setTutorPrefilledInput] = useState<string | undefined>(undefined);
+
+  const jumpToTutor = (prefilled?: string) => {
+    if (prefilled) setTutorPrefilledInput(prefilled);
+    switchTab("tutor");
+  };
 
   const [paletteOpen, setPaletteOpen] = useState(false);
   const [helpOpen, setHelpOpen] = useState(false);
@@ -308,7 +355,7 @@ export default function App() {
 
   const paletteItems: PaletteItem[] = useMemo(
     () => [
-      ...nav.map((n) => {
+      ...allNavItems.map((n) => {
         const binding = MODULE_KEYS.find((candidate) => candidate.module === n.id);
         return {
           id: `tab-${n.id}`,
@@ -412,7 +459,7 @@ export default function App() {
       },
     ],
     // eslint-disable-next-line react-hooks/exhaustive-deps
-    [nav, lang, vault]
+    [allNavItems, lang, vault]
   );
 
   // Erststart: Vollbild-Assistent statt Modul-Chrome (L für Sprache gilt weiter).
@@ -451,27 +498,41 @@ export default function App() {
           </div>
         </div>
 
-        <nav className="flex flex-col space-y-0.5">
-          {nav.map((n) => {
-            const isActive = tab === n.id;
-            return (
-              <button
-                key={n.id}
-                onClick={() => switchTab(n.id)}
-                aria-current={isActive ? "page" : undefined}
-                aria-label={n.label}
-                title={n.label}
-                className={`flex items-center justify-center gap-2 px-2 py-1.5 text-left text-xs transition-all duration-[var(--dur-normal)] rounded-[var(--radius)] active:scale-[0.98] xl:justify-start xl:px-2.5 ${
-                  isActive
-                    ? "font-medium text-[var(--accent)] bg-[var(--surface)] border-l-2 border-[var(--accent)] shadow-none"
-                    : "text-[var(--gray)] hover:text-[var(--ink)] hover:bg-[var(--surface)]/60 active:bg-[var(--paper-subtle)] border-l-2 border-transparent"
-                }`}
-              >
-                <span className="shrink-0 select-none">{n.icon}</span>
-                <span className="hidden font-sans xl:inline">{n.label}</span>
-              </button>
-            );
-          })}
+        <nav className="flex flex-col space-y-2.5 overflow-y-auto">
+          {navZones.map((zone, zIdx) => (
+            <div key={zone.title} className="space-y-0.5">
+              <div className="hidden xl:block px-2.5 py-0.5 font-mono text-[10px] uppercase tracking-wider text-[var(--gray)] select-none">
+                {zone.title}
+              </div>
+              {zIdx > 0 && <div className="xl:hidden my-1 border-t border-[var(--line)]" />}
+              {zone.items.map((n) => {
+                const isActive = tab === n.id;
+                const shortcut = MODULE_KEYS.find((b) => b.module === n.id);
+                return (
+                  <button
+                    key={n.id}
+                    onClick={() => switchTab(n.id)}
+                    aria-current={isActive ? "page" : undefined}
+                    aria-label={n.label}
+                    title={`${n.label}${shortcut ? ` (${shortcut.altHint})` : ""}`}
+                    className={`flex items-center justify-center gap-2 px-2 py-1.5 text-left text-xs transition-all duration-[var(--dur-normal)] rounded-[var(--radius)] active:scale-[0.98] xl:justify-start xl:px-2.5 ${
+                      isActive
+                        ? "font-medium text-[var(--accent)] bg-[var(--surface)] border-l-2 border-[var(--accent)] shadow-none"
+                        : "text-[var(--gray)] hover:text-[var(--ink)] hover:bg-[var(--surface)]/60 active:bg-[var(--paper-subtle)] border-l-2 border-transparent"
+                    }`}
+                  >
+                    <span className="shrink-0 select-none">{n.icon}</span>
+                    <span className="hidden font-sans xl:inline truncate">{n.label}</span>
+                    {shortcut && (
+                      <kbd className="ml-auto hidden font-mono text-[10px] text-[var(--gray)] xl:inline">
+                        {shortcut.altHint}
+                      </kbd>
+                    )}
+                  </button>
+                );
+              })}
+            </div>
+          ))}
         </nav>
 
         <div className="mt-3 border-t border-[var(--line)] pt-2">
@@ -587,6 +648,14 @@ export default function App() {
               onJumpToLibrary={jumpToLibrary}
             />
           )}
+          {tab === "werkzeuge" && (
+            <Werkzeuge
+              lang={lang}
+              selectedFach={selectedFach}
+              onSubjectChange={setSelectedFach}
+              onDiscussInTutor={jumpToTutor}
+            />
+          )}
           {tab === "klausursim" && (
             <KlausurSim
               notes={vault?.notes ?? []}
@@ -599,6 +668,7 @@ export default function App() {
               lang={lang}
               vaultNotes={vault?.notes ?? null}
               activeFach={selectedFach === "alle" ? undefined : selectedFach}
+              initialInput={tutorPrefilledInput}
               onSubjectChange={setSelectedFach}
               onJumpToLibrary={jumpToLibrary}
               onOpenSettings={() => switchTab("einstellungen")}
