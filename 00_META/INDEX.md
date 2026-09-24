@@ -196,6 +196,7 @@
 - [2026-09-24-clean-buttons-and-all-subjects](Journal/2026-09-24-clean-buttons-and-all-subjects.md) — 快捷键显示清理、左侧导航按键等大化与全学科数据接入（零kbd徽标+h-10统一切换按钮+10科全图谱与真实考情卡片接入）
 - [2026-09-24-mint-deepening-and-score-booster](Journal/2026-09-24-mint-deepening-and-score-booster.md) — MINT 理科跨学科深度扩充与模考采分点诊断系统落地（BWKI图谱沉淀数理化深度笔记+506张词卡+模考算子合规与学术德语提分润色）
 - [2026-09-24-lernbaum-design](Journal/2026-09-24-lernbaum-design.md) — 十科学习树设计层落地：总纲+十科L0–L3 mindmap（大纲自顶向下，不挂笔记、不碰代码，主线程全量审核通过）
+- [2026-09-24-lernbaum-app](Journal/2026-09-24-lernbaum-app.md) — Lernbaum App落地：baum数据260×L3+搜索/状态引擎+交互模块（拖动平移/缩放/折叠/搜索）+Alt B接线（57套件379测试全绿）
 - 约定：文件名 `YYYY-MM-DD-<thema>.md`，头部frontmatter（`fach`可空，`tags: [EF, Meta]`）。
 
 

@@ -96,6 +96,7 @@ vault md/csv → vault/parser（frontmatter/Block/CSV五列）
 · `engine/examSource`（组卷输入稳定契约 `ExamSourceNote`，与 parser 内部解耦）
 · `engine/storageKeys`（19键持久化注册表 + **12键云同步显式白名单** + 7键local-only逐条理由；新增键不自动进云）
 · `engine/sync`（白名单双向往返；擦除走全量19键）
+· `baum/`（十科学习树：types契约 + 10科L0–L3数据260×L3 + engine搜索/匹配/状态 + index注册表；UI见modules/Lernbaum）
 · `engine/index`（BM25+Fuse RRF排序+变音正规化+精确命中字段优先+薄弱/时序加权）· `engine/bm25`（CJK一元+二元/德语停用词/法条）
 · `engine/worker`（真 Web Worker：`new Worker(new URL(...),{type:"module"})` + 无Worker环境回退）
  · `ai/heartbeat`（探针/pull代理优先/直连兜底/错误分类）· `ai/providers`（10预设/override三态）

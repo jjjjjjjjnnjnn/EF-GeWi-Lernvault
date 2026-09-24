@@ -8,6 +8,7 @@ export const t = (lang: Lang) => ({
   tutor: lang === "de" ? "KI-Tutor" : "AI 助教",
   planner: lang === "de" ? "Lernplan" : "学习规划",
   mindmap: lang === "de" ? "Mindmap" : "思维导图",
+  lernbaum: lang === "de" ? "Lernbaum" : "学习树",
   reise: lang === "de" ? "Lernreise" : "互动旅程",
   klausursim: lang === "de" ? "Klausur-Sim" : "全真模考",
   werkzeuge: lang === "de" ? "Fach-Werkzeuge" : "学科教具",

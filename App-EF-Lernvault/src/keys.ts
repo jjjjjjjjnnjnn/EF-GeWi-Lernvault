@@ -7,6 +7,7 @@ export type ModuleId =
   | "tutor"
   | "planner"
   | "mindmap"
+  | "lernbaum"
   | "reise"
   | "werkzeuge"
   | "einstellungen";
@@ -160,6 +161,14 @@ export const MODULE_KEYS: readonly ModuleKeyBinding[] = [
     label: { de: "Lernreise", zh: "互动旅程" },
   },
   {
+    id: "module-lernbaum",
+    module: "lernbaum",
+    match: { key: "b", code: "KeyB", alt: true },
+    keys: "Alt B",
+    altHint: "Alt B",
+    label: { de: "Lernbaum", zh: "学习树" },
+  },
+  {
     id: "module-werkzeuge",
     module: "werkzeuge",
     match: { key: "w", code: "KeyW", alt: true },
@@ -294,6 +303,38 @@ export const PER_MODULE_KEYS: Readonly<Record<LearnModuleId, readonly KeyBinding
   tutor: [],
   planner: [],
   mindmap: [],
+  lernbaum: [
+    {
+      id: "lernbaum-search",
+      match: { key: "f", code: "KeyF" },
+      keys: "F",
+      label: { de: "Baumsuche fokussieren", zh: "聚焦树搜索" },
+    },
+    {
+      id: "lernbaum-toggle-all",
+      match: { key: "e", code: "KeyE" },
+      keys: "E",
+      label: { de: "Alle Äste auf-/zuklappen", zh: "展开/折叠全部" },
+    },
+    {
+      id: "lernbaum-zoom-in",
+      match: { key: ["+", "="], code: ["Equal", "NumpadAdd"] },
+      keys: "+",
+      label: { de: "Vergrößern", zh: "放大" },
+    },
+    {
+      id: "lernbaum-zoom-out",
+      match: { key: ["-", "_"], code: ["Minus", "NumpadSubtract"] },
+      keys: "-",
+      label: { de: "Verkleinern", zh: "缩小" },
+    },
+    {
+      id: "lernbaum-zoom-reset",
+      match: { key: "0", code: "Digit0" },
+      keys: "0",
+      label: { de: "Ansicht zurücksetzen", zh: "重置视图" },
+    },
+  ],
   reise: [
     {
       id: "reise-next",
@@ -342,4 +383,5 @@ export const CARD_SHORTCUTS: Shortcut[] = [
 export const QUIZ_SHORTCUTS: Shortcut[] = shortcuts(PER_MODULE_KEYS.quiz);
 export const LIBRARY_SHORTCUTS: Shortcut[] = shortcuts(PER_MODULE_KEYS.library);
 export const REISE_SHORTCUTS: Shortcut[] = shortcuts(PER_MODULE_KEYS.reise);
+export const LERNBAUM_SHORTCUTS: Shortcut[] = shortcuts(PER_MODULE_KEYS.lernbaum);
 export const ONBOARDING_SHORTCUTS: Shortcut[] = shortcuts(ONBOARDING_KEYS);

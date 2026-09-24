@@ -6,6 +6,7 @@ import {
   QUIZ_SHORTCUTS,
   LIBRARY_SHORTCUTS,
   REISE_SHORTCUTS,
+  LERNBAUM_SHORTCUTS,
   ONBOARDING_SHORTCUTS,
   matchesKey,
   type Shortcut,
@@ -153,6 +154,8 @@ export default function HelpOverlay({ open, onClose, lang }: { open: boolean; on
         <Rows rows={LIBRARY_SHORTCUTS} lang={lang} />
         <SectionTitle de="Lernreise" zh="互动旅程" />
         <Rows rows={REISE_SHORTCUTS} lang={lang} />
+        <SectionTitle de="Lernbaum" zh="学习树" />
+        <Rows rows={LERNBAUM_SHORTCUTS} lang={lang} />
         <SectionTitle de="Start" zh="引导" />
         <Rows rows={ONBOARDING_SHORTCUTS} lang={lang} />
       </div>

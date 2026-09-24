@@ -90,6 +90,7 @@ describe("keyboard registry", () => {
       "planner",
       "mindmap",
       "reise",
+      "lernbaum",
       "werkzeuge",
       "einstellungen",
     ]);
@@ -103,9 +104,14 @@ describe("keyboard registry", () => {
       "Alt 7",
       "Alt 8",
       "Alt 9",
+      "Alt B",
       "Alt W",
       "Alt 0",
     ]);
+  });
+
+  it("exports Lernbaum actions as explicit bindings", () => {
+    expect(PER_MODULE_KEYS.lernbaum.map(({ keys }) => keys)).toEqual(["F", "E", "+", "-", "0"]);
   });
 
   it("exports Reise and onboarding actions as explicit bindings", () => {

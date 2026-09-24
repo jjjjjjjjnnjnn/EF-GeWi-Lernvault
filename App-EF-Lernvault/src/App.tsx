@@ -16,6 +16,8 @@ import Quiz from "./modules/Quiz";
 import Tutor from "./modules/Tutor";
 import Planner from "./modules/Planner";
 import Mindmap from "./modules/Mindmap";
+import Lernbaum from "./modules/Lernbaum";
+import { BAEUME_LISTE } from "./baum";
 import ReiseModule from "./modules/Reise";
 import { KlausurSim } from "./modules/KlausurSim";
 import Werkzeuge from "./modules/Werkzeuge";
@@ -25,7 +27,7 @@ import Settings from "./modules/Settings";
 import Onboarding, { loadOnboarding, saveOnboarding, type OnboardingResult } from "./modules/Onboarding";
 import { initTheme } from "./engine/theme";
 
-type Tab = "home" | "library" | "flashcards" | "quiz" | "klausursim" | "tutor" | "planner" | "mindmap" | "reise" | "werkzeuge" | "einstellungen";
+type Tab = "home" | "library" | "flashcards" | "quiz" | "klausursim" | "tutor" | "planner" | "mindmap" | "lernbaum" | "reise" | "werkzeuge" | "einstellungen";
 
 const settingsShortcut = MODULE_KEYS.find((binding) => binding.module === "einstellungen")!;
 
@@ -107,6 +109,16 @@ const icons: Record<Tab, ReactNode> = {
       <path d="M6.8 7.3l3.3-2M6.8 8.7l3.3 2" />
     </svg>
   ),
+  lernbaum: (
+    <svg {...iconProps}>
+      <path d="M8 13.5V4" />
+      <path d="M8 10.5L4.8 8M8 10.5l3.2-2.5M8 7L5.5 5M8 7l2.5-2" />
+      <circle cx="4.8" cy="8" r="1" />
+      <circle cx="11.2" cy="8" r="1" />
+      <circle cx="5.5" cy="5" r="1" />
+      <circle cx="10.5" cy="5" r="1" />
+    </svg>
+  ),
   reise: (
     <svg {...iconProps}>
       <circle cx="8" cy="8" r="6" />
@@ -125,7 +137,7 @@ const getInitialTab = (): Tab => {
   if (typeof window !== "undefined") {
     const params = new URLSearchParams(window.location.search);
     const t = params.get("tab") as Tab;
-    if (["home", "library", "flashcards", "quiz", "klausursim", "tutor", "planner", "mindmap", "reise", "werkzeuge", "einstellungen"].includes(t)) {
+    if (["home", "library", "flashcards", "quiz", "klausursim", "tutor", "planner", "mindmap", "lernbaum", "reise", "werkzeuge", "einstellungen"].includes(t)) {
       return t;
     }
   }
@@ -206,6 +218,7 @@ export default function App() {
       items: [
         { id: "library", label: tr.library, icon: icons.library },
         { id: "mindmap", label: tr.mindmap, icon: icons.mindmap },
+        { id: "lernbaum", label: tr.lernbaum, icon: icons.lernbaum },
       ],
     },
     {
@@ -692,6 +705,16 @@ export default function App() {
             />
           )}
           {tab === "reise" && <ReiseModule lang={lang} vaultReisen={vault?.reisen ?? null} />}
+          {tab === "lernbaum" && (
+            <Lernbaum
+              lang={lang}
+              baeume={BAEUME_LISTE}
+              vaultNotes={vault?.notes ?? null}
+              selectedFach={selectedFach}
+              onSubjectChange={setSelectedFach}
+              onJumpToLibrary={jumpToLibrary}
+            />
+          )}
           {tab === "einstellungen" && (
             <Settings
               lang={lang}

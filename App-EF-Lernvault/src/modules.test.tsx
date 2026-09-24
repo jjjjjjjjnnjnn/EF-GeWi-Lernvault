@@ -313,7 +313,7 @@ describe("Keyboard UI registry", () => {
     const dialog = screen.getByRole("dialog");
     const expectedModuleHints = MODULE_KEYS.map((binding) => binding.altHint);
     const renderedModuleHints = within(dialog)
-      .getAllByText(/^Alt ([0-9]|W)$/)
+      .getAllByText(/^Alt ([0-9]|W|B)$/)
       .map((element) => element.textContent);
     expect(renderedModuleHints).toEqual(expectedModuleHints);
     for (const shortcut of GLOBAL_SHORTCUTS) {
