@@ -884,8 +884,8 @@ export default function Tutor({
                     }}
                     className={`px-2 py-0.5 rounded-[var(--radius)] text-[var(--text-meta)] font-sans transition-colors cursor-pointer ${
                       intensity === st
-                        ? "bg-[var(--ink)] text-[var(--paper)]"
-                        : "text-[var(--gray)] hover:text-[var(--ink)]"
+                        ? "bg-[var(--paper-subtle)] text-[var(--ink)] font-medium border border-[var(--line)]"
+                        : "text-[var(--gray)] hover:text-[var(--ink)] border border-transparent"
                     }`}
                     title={INTENSITY_PRESETS[st].systemModifierDE}
                   >

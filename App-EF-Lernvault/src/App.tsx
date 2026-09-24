@@ -163,6 +163,7 @@ export default function App() {
     return "";
   });
   const [selectedFach, setSelectedFach] = useState<string>("alle");
+  const [selectedNoteId, setSelectedNoteId] = useState<string | undefined>(undefined);
   const tr = t(lang);
 
   const switchTab = (id: Tab) => {
@@ -245,9 +246,15 @@ export default function App() {
     URL.revokeObjectURL(url);
   };
 
-  const jumpToLibrary = (targetQuery: string) => {
+  const jumpToLibrary = (targetQuery: string, targetFach?: string, targetNoteId?: string) => {
     switchTab("library");
     setQuery(targetQuery);
+    if (targetFach) {
+      setSelectedFach(targetFach);
+    }
+    if (targetNoteId) {
+      setSelectedNoteId(targetNoteId);
+    }
   };
 
   const finishOnboarding = (r: OnboardingResult) => {
@@ -553,7 +560,16 @@ export default function App() {
         {/* Content Viewport */}
         <div key={tab} className="tab-enter min-w-0 flex-1 overflow-y-auto p-4 sm:p-6 xl:p-8">
           {tab === "home" && <Home lang={lang} cards={vault?.cards ?? null} onJumpToLibrary={jumpToLibrary} />}
-          {tab === "library" && <Library query={query} vault={vault?.notes ?? null} selectedFach={selectedFach} onClearQuery={() => setQuery("")} onSubjectChange={setSelectedFach} />}
+          {tab === "library" && (
+            <Library
+              query={query}
+              vault={vault?.notes ?? null}
+              selectedFach={selectedFach}
+              selectedNoteId={selectedNoteId}
+              onClearQuery={() => setQuery("")}
+              onSubjectChange={setSelectedFach}
+            />
+          )}
           {tab === "flashcards" && (
             <Flashcards
               lang={lang}

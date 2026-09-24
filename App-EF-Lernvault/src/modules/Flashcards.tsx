@@ -196,7 +196,7 @@ export default function Flashcards({
         onClick={() => onSubjectChange?.("alle")}
         className={`rounded-[var(--radius)] px-2 py-0.5 transition-colors cursor-pointer ${
           activeFach === "alle"
-            ? "bg-[var(--ink)] text-[var(--surface)] font-medium"
+            ? "bg-[var(--accent)] text-white font-medium"
             : "text-[var(--gray)] hover:bg-[var(--paper-subtle)] hover:text-[var(--ink)]"
         }`}
       >

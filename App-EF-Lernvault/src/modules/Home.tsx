@@ -10,7 +10,7 @@ export default function Home({
 }: {
   lang: Lang;
   cards?: VaultCard[] | null;
-  onJumpToLibrary?: (query: string) => void;
+  onJumpToLibrary?: (query: string, fach?: string) => void;
 }) {
   const tr = t(lang);
   const o = useMemo(() => buildOverview(cards ?? null), [cards]);
@@ -70,7 +70,7 @@ export default function Home({
               <button
                 key={n.id}
                 type="button"
-                onClick={() => onJumpToLibrary?.(n.thema)}
+                onClick={() => onJumpToLibrary?.(n.thema, n.fach)}
                 title={`${n.fach} · ${n.thema}`}
                 className="rounded-[var(--radius)] border border-[var(--line)] bg-[var(--paper)] px-3 py-1.5 font-mono text-xs text-[var(--ink)] hover:border-[var(--accent)] hover:text-[var(--accent)] hover:bg-[var(--surface)] transition-all cursor-pointer"
               >

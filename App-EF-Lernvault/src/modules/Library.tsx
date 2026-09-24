@@ -36,11 +36,12 @@ interface LibraryProps {
   query: string;
   vault: VaultNote[] | null;
   selectedFach?: string;
+  selectedNoteId?: string;
   onClearQuery?: () => void;
   onSubjectChange?: (fach: string) => void;
 }
 
-export default function Library({ query, vault, selectedFach, onClearQuery, onSubjectChange }: LibraryProps) {
+export default function Library({ query, vault, selectedFach, selectedNoteId, onClearQuery, onSubjectChange }: LibraryProps) {
   const shown: Shown[] = useMemo(
     () => (vault ? vault.map(fromVault) : mockNotes.map(fromMock)),
     [vault]
@@ -61,6 +62,17 @@ export default function Library({ query, vault, selectedFach, onClearQuery, onSu
   useEffect(() => {
     if (selectedFach) setFach(selectedFach);
   }, [selectedFach]);
+
+  useEffect(() => {
+    if (selectedNoteId) {
+      setOpenId(selectedNoteId);
+      const target = shown.find((n) => n.id === selectedNoteId);
+      if (target) {
+        setFach(target.fach);
+        onSubjectChange?.(target.fach);
+      }
+    }
+  }, [selectedNoteId, shown, onSubjectChange]);
 
   const selectFach = (nextFach: string) => {
     setFach(nextFach);
@@ -103,7 +115,57 @@ export default function Library({ query, vault, selectedFach, onClearQuery, onSu
       });
   }, [rankedIds, shown, fach]);
 
-  const open = list.find((n) => n.id === openId) ?? list[0];
+  const open =
+    list.find((n) => n.id === openId) ??
+    shown.find((n) => n.id === openId) ??
+    list[0];
+
+  useEffect(() => {
+    const qTrim = query.trim().toLowerCase();
+    if (!qTrim) return;
+
+    // 1. If query is an exact subject name (e.g. from clicking subject node in Mindmap)
+    const matchingSubject = FAECHER.find(
+      (f) =>
+        f.id.toLowerCase() === qTrim ||
+        f.kurz.toLowerCase() === qTrim ||
+        f.nameDE.toLowerCase() === qTrim ||
+        f.nameZH.toLowerCase() === qTrim
+    );
+    if (matchingSubject) {
+      setFach(matchingSubject.id);
+      onSubjectChange?.(matchingSubject.id);
+      return;
+    }
+
+    // 2. If query matches a note's thema or id
+    const exactNote = shown.find(
+      (n) => n.thema.toLowerCase() === qTrim || n.id.toLowerCase() === qTrim
+    );
+    if (exactNote) {
+      setOpenId(exactNote.id);
+      if (fach !== "alle" && fach.toLowerCase() !== exactNote.fach.toLowerCase()) {
+        setFach(exactNote.fach);
+        onSubjectChange?.(exactNote.fach);
+      }
+      return;
+    }
+
+    // 3. If query returns ranked results and the current subject has 0 matches:
+    if (rankedIds.length > 0) {
+      const topNote = shown.find((n) => n.id === rankedIds[0]);
+      if (topNote) {
+        setOpenId(topNote.id);
+        const hasCurrentSubjectMatch = shown.some(
+          (n) => n.fach.toLowerCase() === fach.toLowerCase() && rankedIds.includes(n.id)
+        );
+        if (fach !== "alle" && !hasCurrentSubjectMatch) {
+          setFach(topNote.fach);
+          onSubjectChange?.(topNote.fach);
+        }
+      }
+    }
+  }, [query, shown, rankedIds, fach, onSubjectChange]);
 
   // j/k + arrows walk the filtered list (when search input is not focused).
   useEffect(() => {

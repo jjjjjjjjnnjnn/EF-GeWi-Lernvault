@@ -117,7 +117,7 @@ interface QuizProps {
   vault?: VaultNote[] | null;
   cards?: VaultCard[] | null;
   preselectedFach?: string;
-  onJumpToLibrary?: (query: string) => void;
+  onJumpToLibrary?: (query: string, fach?: string) => void;
 }
 
 type QuizStep = 1 | 2 | 3 | 4 | 5;
@@ -737,7 +737,7 @@ export default function Quiz({ lang = "zh", vault = null, cards = null, preselec
                   <span>MATERIAL / 原始素材</span>
                   <button
                     type="button"
-                    onClick={() => onJumpToLibrary?.(currentQuiz.thema)}
+                    onClick={() => onJumpToLibrary?.(currentQuiz.thema, currentQuiz.fach)}
                     className="meta-text text-[var(--accent)] hover:underline"
                   >
                     [{currentQuiz.notePath}]

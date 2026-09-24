@@ -271,8 +271,8 @@ export default function Mindmap({
                 data-node-id={node.note?.id ?? node.key}
                 aria-label={`${node.label}${node.sub ? ` · ${node.sub}` : ""}`}
                 title={node.sub ? `${node.label} · ${node.sub}` : node.label}
-                onClick={() => onJumpToLibrary?.(node.query)}
                 className="rounded-[var(--radius)] focus-visible:outline focus-visible:outline-1 focus-visible:outline-[var(--accent)]"
+                onClick={() => onJumpToLibrary?.(node.query)}
                 style={{
                   position: "absolute",
                   left: `${(node.x / layout.width) * 100}%`,
