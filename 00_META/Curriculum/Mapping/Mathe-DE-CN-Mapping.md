@@ -1,5 +1,5 @@
 ---
-fach: Mathe
+fach: "Mathe"
 thema: "DE-CN Mapping"
 operatoren: []
 klausurrelevant: false
@@ -9,220 +9,430 @@ de_quelle: "Deutschland/Mathe-Oberstufe.md"
 cn_quelle: "China/Mathe-CN-Kursstandard.md"
 ---
 
-# Mathe — 中德考纲对照表（NRW ↔ 中国）
+# Mathe — 中德考纲对照表（NRW ↔ 中国）· 升级版
 
-> 德国源：[`Deutschland/Mathe-Oberstufe.md`](../Deutschland/Mathe-Oberstufe.md)（NRW KLP Mathe，Heft 4720，`2022/23`）
-> 中国源：[`China/Mathe-CN-Kursstandard.md`](../China/Mathe-CN-Kursstandard.md) ⚠️ **该文件尚未创建**，本表中国侧内容来自 `01-Quellen.md §B.1` 所载「2017年版数学课标」的结构信息与已归档调研结论。
+> 德国源：[`Deutschland/Mathe-Oberstufe.md`](../Deutschland/Mathe-Oberstufe.md)（NRW KLP Mathe，Heft `4720`，版本 `2022/23`，PDF `gost_klp_m_2023_06_07.pdf`）
+> 中国源：[`China/Mathe-CN-Kursstandard.md`](../China/Mathe-CN-Kursstandard.md)（教育部《普通高中数学课程标准》**2017 年版 2020 年修订**，ICTR 官方托管 PDF 全文解析）
 >
-> ⚠️ **无任何官方中德对照文件**。本表由本项目自行推导，每条结论须标注推理依据。
-> ⚠️ **中国侧版本风险**：仅取得 **2017 年版**（非 2020 修订），课程结构（必修/选择性必修/选修 + 四主线 + 六大核心素养 + 三级水平）**结构可信**，但逐字引用需注意版本。[据推断]
+> ⚠️ **无任何官方中德对照文件**。本表所有「对照结论」均为本项目自行推导，逐条标注。
+> ✅ **版本风险已解除**：上一版（228 行试点版）写作时中国侧文件尚未创建；本次已与该官方解析版全文交叉核对，并据此**修正了 3 处前期误判**（见 §9、变更记录）。
+>
+> ⚠️ **版权**：本文件只记录**结构级信息**（主题/单元/知识点名称、能力维度、题型规则）与**本项目原创的方法层归纳**。不搬运 KLP 正文、不搬运课标论述段落、不复制教材正文、不收录高考原题。
 
-## 状态码定义（固定四值）
+---
+
+## 0. 读法与使用前提
+
+### 0.1 本文件的定位
+
+以 **Abitur 应试**为唯一导向。它回答三个问题：
+
+1. 这个知识点**德国考不考、考到什么层（GK/LK、AFB I/II/III、Aufgabenart I/II）**？
+2. 中国侧有没有**更深或更系统的处理**？
+3. 若有，能不能以「**方法**」而非「**知识板块**」的形式嫁接进来（见 §4 技法卡）？
+
+### 0.2 两套体系的骨架差（对照前必读）
+
+| 维度 | 德国 NRW | 中国 |
+|---|---|---|
+| 组织单位 | **3 Inhaltsfeld（A/G/S）× 5 Kompetenzbereich**，二者**交叉**成 Kompetenzerwartungen | **4 主线 × 必修/选择性必修/选修**三层，主题—单元—编号条目 |
+| 内容侧 vs 过程侧 | **显式分离**（Gegenstände / Prozesse） | 融合在「内容要求」内表述 |
+| 学段切分 | EF（**A+G，无 S**）→ Q1/Q2（A+G+S，GK/LK 分叉） | 必修（全体）→ 选择性必修（高考）→ 选修（自招参考） |
+| 高考/Abitur 范围 | **全 KLP**；笔试须覆盖三 IF | **必修 + 选择性必修**（14 学分 252 课时）；**选修不在高考范围** [已验证] |
+| 计算工具 | **法定免工具题型** Aufgabenart I + 工具题型 Aufgabenart II（双重工具观） | 高考全程可用规定工具，**无强制免工具题** |
+| 课时 | **KLP 不规定课时** | 硬性学分/课时约束 |
+
+> 全部 [据推断]（结构对照本身）；两侧结构条目分别源自官方源解析 → [已验证]
+
+### 0.3 「Abitur 应试价值」分级（主表第 5 列）
+
+| 标记 | 含义 |
+|---|---|
+| ★★★ | **直接得分点**：Aufgabenart I/II 主干子题，GK 与 LK 皆可能命中 |
+| ★★ | **间接加成**：支撑 AFB II 的建模/迁移链条，或作为末段 AFB III 论证的载体 |
+| ★ | **拓展/限定**：仅 LK、或仅口试/探究性任务、或非必考但能提分 |
+| — | 不考（CN-only 或纯背景知识） |
+
+### 0.4 「依据」列的双段标注
+
+因为**条目来源**与**对照结论**的可信度不同，本表依据列采用双段写法：
+
+- `条目[已验证] · 对照[据推断]` —— 两侧条目均来自官方源解析（可信），但「这两个条目互相对应、且深度差如此」是本项目推导
+- `条目[据推断] · 对照[据推断]` —— 条目本身即含归纳成分（多见于中国**技法层**）
+- `[未获取到]` —— 明确缺失，绝不编造
+
+> 这个分布是**预期形态**，不是缺陷：DE 侧高 [已验证]（真读 KLP 原文），Mapping 侧必然高 [据推断]（无官方对照源）。见 `00-Design.md §1.6`。
+
+---
+
+## 1. 状态码定义（固定）
 
 | 状态码 | 含义 |
 |---|---|
 | `both-equal` | 两边都有，深度相当 |
-| `both-de-deeper` | 两边都有，德国更深 |
+| `both-de-deeper` | 两边都有，**德国更深** |
 | `both-cn-deeper` | 两边都有，**中国更深** ← 项目最关注 |
 | `DE-only` | 仅德国有 |
 | `CN-only` | 仅中国有 |
 
----
-
-## 0. 结构前提：两套体系的骨架完全不同
-
-必须先看清结构差，否则知识点对照会错位。
-
-| 结构维度 | 德国 NRW | 中国 |
-|---|---|---|
-| 组织单位 | **3 个 Inhaltsfeld**（A / G / S）+ **5 个 Kompetenzbereich** 交叉 | **4 条主线** + **必修/选择性必修/选修** 三层模块 + **6 大核心素养** |
-| 内容侧与过程侧 | **显式分离**（Gegenstände vs. Prozesse），再交叉为 Kompetenzerwartungen | **融合**，核心素养嵌在内容要求内表述 |
-| 学段切分 | EF（A+G，**无 S**）→ Q1/Q2（A+G+S，GK/LK 分叉） | 必修（全体，含 S）→ 选择性必修（升学）→ 选修 |
-| 数学主线 | Analysis / 线代与解析几何 / 随机 | **函数 / 几何与代数 / 概率与统计 / 数学建模活动与数学探究活动** |
-| 评价 | EPA 0–15 分制 + Zentralabitur + AFB I/II/III | 分级制：合格考（水平一）/ 等级考即高考（**水平二**）；数学**仅 3 级水平** |
-| 计算工具 | **法定免工具题型**（Aufgabenart I）+ 工具题型（Aufgabenart II） | 高考**全程可用规定工具**（无强制免工具题） |
-| 数列 | **无数列**（KLP 全文不设） | **独立主题**（选择性必修「函数」含数列） |
-| 平面解析几何 | **不考**（无圆/椭圆/双曲线/抛物线） | 选择性必修**独立主题**（平面解析几何） |
-| 复数 | **不考** | 必修含**复数** |
-
-> 全部 [据推断]（结构信息来自已归档调研结论；德国侧结构已在 DE 文件中逐条 [已验证]）
-
-**三个最刺眼的结构落差**（先记结论）：
-1. **中国有「数列」，德国没有** → 见 `CN-only` 项。
-2. **中国有「平面解析几何」，德国没有**（德国只做**空间向量**解析几何）→ 见 `CN-only` 项。
-3. **德国有「免工具能力」作为独立评价轴，中国没有** → 见 `DE-only` 项。
+> ⚠️ 当 GK/LK 结论相反时，本表**拆成两行**分别标码（如 A-03 / A-04），不做折中。
 
 ---
 
-## 1. 总览：覆盖面对比
+## 2. 主表：知识点级对照
 
-| 领域 | 德国 NRW | 中国 | 覆盖状态 |
-|---|---|---|---|
-| 函数概念与性质 | EF：幂函数(整指数)/整有理函数；性质六项 | 必修「函数」：概念与性质、幂指对函数、三角函数、应用 | `both-equal`（德国性质要求更细化） |
-| 初等函数种类 | 整有理 / 指数 /（LK）三角+ln+有理指数幂 | 幂、指数、对数、三角（**全部必修**） | `both-cn-deeper`（中国 LK 化的函数类在必修就全开） |
-| 三角 | EF 仅「参数对正弦函数的影响」+ 变换；**GK 不考三角求导** | 必修含**三角函数完整单元** + 三角恒等变换 | 🎯 `both-cn-deeper` |
-| 导数 | EF 起 + Q1 深化 + LK 三角函数/ln 求导 | 选择性必修「**一元函数导数及其应用**」 | `both-cn-deeper`（中国成体系） |
-| 积分 | Q1：六概念链 → Hauptsatz → 定积分；（LK）反常积分、旋转体 | 选择性必修导数应用中含**定积分/微积分基本定理** | `both-equal`（德国概念链更显式，中国应用更密） |
-| **数列** | **无** | 选择性必修**独立主题** | 🔵 `CN-only` |
-| 平面向量 | EF：加减/数乘/长度/共线/直线参数式 | 必修「几何与代数」：平面向量 | `both-equal`（中国含向量基本定理与坐标运算，更系统） |
-| 空间向量与立体几何 | EF 起（坐标/向量/直线）；Q1 加 Skalarprodukt/Ebenen；LK 距离全组合 | 选择性必修「空间向量与立体几何」 | `both-equal`（德国 LK `Abstände` 深度不低于中国） |
-| **平面解析几何** | **不考**（无圆锥曲线） | 选择性必修**独立主题** | 🔵 `CN-only` |
-| **立体几何初步（纯几何）** | 不考（只做向量法） | 必修：空间点线面、三视图、表面积体积 | 🔵 `CN-only` |
-| **复数** | **无** | 必修「几何与代数」含复数 | 🔵 `CN-only` |
-| 计数原理 | LK 仅二项系数 | 选择性必修「概率与统计」含**计数原理**（加法/乘法原理、排列组合） | 🔵 `CN-only`（GK 完全不涉及） |
-| 概率 | Q1：多阶段试验/条件概率/二项分布 | 选择性必修：计数原理 + 概率 | `both-equal` |
-| 统计与推断 | Q1 GK 至二项分布；**LK 含判断统计 + 正态分布** | 选择性必修：统计（含**成对数据统计**、回归） | `both-de-deeper`（LK 的 Konfidenzintervall/样本量属德国更强） |
-| **数学建模** | `Modellieren` 为**可评分的独立能力维度**，含四段闭环 | 「数学建模活动与数学探究活动」为**四主线之一** | `both-equal`（德国评价颗粒度更细，中国主线地位更重） |
-| **免工具操作** | **Aufgabenart I** 法定题型 + `Hilfsmittelfreies Operieren` 独立能力线 | 无对应强制题型 | ⚪ `DE-only` |
+> 编号：`A-*` 函数与分析 · `G-*` 几何与代数 · `S-*` 概率与统计 · `X-*` 跨域与结构
 
----
+### A 域：Funktionen und Analysis（函数与分析）
 
-## 2. 知识点级对照主表
-
-> 编号规则：`A-*` = 函数与分析域，`G-*` = 几何域，`S-*` = 概率统计域，`X-*` = 跨域/结构。
-
-### A 域：函数与分析
-
-| # | 德国（NRW） | 中国 | 状态 | 差异说明 | 依据 |
+| # | 德国 NRW | 中国 | 状态 | Abitur 应试价值 | 依据 |
 |---|---|---|---|---|---|
-| A-01 | 幂函数（**整数**指数）、整有理函数；性质：定义域/值域/零点/对称性/x→±∞ | 幂函数（**实数**指数，必修） | `both-cn-deeper` | 中国在必修即引入实数指数幂与幂函数一般讨论；德国 EF 限整数指数，有理指数幂推迟到 **LK** | [据推断] |
-| A-02 | 指数函数 `a^x`，须解释 `e^x` 特殊性（`f'=f`）；GK 求导链式法则仅限 `e^x ∘ 线性` | 指数函数（必修，含指数函数与对数函数互为反函数） | `both-cn-deeper` | 中国必修即建立「指数-对数」完整对照；德国 GK 对数函数**完全不出现**，LK 才引入 `ln` | [据推断] |
-| A-03 | 对数函数**仅 LK**；LK 须无工具求导、以 `ln x` 作 `1/x` 的原函数 | 对数函数必修（含对数运算律） | `both-cn-deeper` | 🎯 **德国 GK 无对数函数**——这是 GK/LK 最大的内容鸿沟之一，中国无此鸿沟 | [据推断] |
-| A-04 | EF：三角仅「参数对 Sinusfunktion 的影响」+ 坐标轴反射/平移/伸缩；LK：`a·sin(b(x+c))+d` 须无工具求导 | 必修「三角函数」完整单元 + 三角恒等变换 | `both-cn-deeper` | 🎯 **中国三角是独立大单元（含恒等变换、正余弦定理应用）**；德国只在变换与 LK 求导处触碰，GK 不求导三角函数 | [据推断] |
-| A-05 | EF 导数基础：平均/局部变化率、图形求导、割线/切线；propädeutischer Grenzwertbegriff + `lim` 记号 | 选择性必修「一元函数导数及其应用」：导数概念（瞬时变化率）、几何意义 | `both-equal` | 概念引入方式接近；德国显式强调「图形求导」与「前形式化极限」 | [据推断] |
-| A-06 | 求导规则：EF 幂/和/因子（**须证明其中一条**）；Q1 GK 加 `Produktregel` + 受限 `Kettenregel`；LK 一般 `Kettenregel` | 导数运算：基本初等函数导数公式 + 四则运算 + **复合函数求导（链式法则）** | `both-equal` | 德国把链式法则按 GK/LK 做了强限制（GK 仅 `e^x∘线性`），中国无此分层 | [据推断] |
-| A-07 | **`Funktionsscharen`（参数函数族）** 为 LK 独立 Schwerpunkt：解释参数含义 + 研究其对性质的影响 | 含参函数讨论（高考常见题型，非独立课标主题） | `both-equal` | 德国把「含参族」**制度化**为 LK 必修内容；中国靠题型训练达成，课标层不单列 | [据推断] |
-| A-08 | 单调性、极值（局部/全局）、拐点、曲率——散落在 EF（性质）与 Q1（Extremwertprobleme） | 导数应用：单调性、极值、最值、**生活中的优化问题**、**不等式证明** | 🎯 `both-cn-deeper` | **中国把导数应用做成成套解题程序，且含「用导数证明不等式」一整类题型——德国 KLP 无此项** | [据推断] |
-| A-09 | `Extremwertprobleme` 须**通过 `Nebenbedingung` 化为一元函数** | 优化问题（建模 + 求导 + 最值） | `both-equal` | 两者思路一致的「约束消元」，中国题型密度更高 | [据推断] |
-| A-10 | `Rekonstruktion von Funktionstermen`（即 **Steckbriefaufgaben**）：由情境条件定参数 | 待定系数法求函数解析式（教材常规方法） | `both-de-deeper` | 🎯 **德国把 Steckbriefaufgaben 做成独立 Schwerpunkt 与方法体系**（对应笔记 `Steckbriefaufgaben-und-Funktionsanpassung.md`）；中国是常规技法，非独立主题 | [据推断] |
-| A-11 | `Umkehrfunktion`：GK 仅 Wurzelfunktion 为例；**LK 须判定可逆性 + 求反函数解析式 + 说明原/反函数图像关系** | 反函数（课标提及，高考考查较轻） | `both-de-deeper` | 德国 LK 对反函数的**系统要求**（可逆性判定 + 图像对称关系）高于中国高中阶段的处理 | [据推断] |
-| A-12 | **`biquadratische Gleichungen`** 须无工具求解（LK 点名的技能） | 换元法解方程（常规） | `both-equal` | 无实质差异 | [据推断] |
-| A-13 | 积分概念链（**六概念逐步搭**）：Produktsumme → orientierte Fläche → Bestandsfunktion → Integralfunktion → Stammfunktion → bestimmtes Integral → Hauptsatz | 定积分、微积分基本定理（在导数应用单元内） | `both-de-deeper` | 🎯 **德国的「乘积和→定积分」概念链是教学法上最显式的部分**；中国直接从导数应用过渡到定积分，概念台阶更陡但应用更密 | [据推断] |
-| A-14 | 定积分求面积；**面积**为核心应用 | 定积分求面积 + **变速运动路程** + 体积（部分） | `both-equal` | 应用方向接近 | [据推断] |
-| A-15 | `uneigentliche Integrale` + **绕 x 轴旋转体体积**（仅 LK） | 旋转体体积（部分教材/选修涉及） | `both-equal` | 两边都在边缘位置处理 | [据推断] |
-| A-16 | **无「数列」** | 选择性必修「函数」含**数列**：等差、等比、递推、求和 | 🔵 `CN-only` | 🎯🎯 **德国 KLP 全文无数列主题**。中国的数列是**独立大板块**，含极强的技巧体系（递推构造、错位相减、裂项相消、数学归纳法配合） | [据推断] |
-| A-17 | 无对应 | **数学归纳法** | 🔵 `CN-only` | 德国 KLP 不作要求（LK 的推理要求止于「证明一条求导法则」与 Hauptsatz） | [据推断] |
+| A-01 | 幂函数：EF **整数指数**；LK 扩至**有理指数幂**。整有理函数为主载体 | 必修：幂函数含 `√x`，指数幂由整数→有理→**实数**逐级拓展 | `both-cn-deeper` | ★★ EF/Q1 免工具题载体；有理指数幂仅 LK | 条目[已验证]·对照[据推断] |
+| A-02 | 指数函数 `a^x` 为 Q 阶段**主函数类**；须解释 `e^x` 特殊性（`f'=f`） | 必修：指数函数（运算性质、单调性、特殊点） | `both-equal` | ★★★ 生长/衰减建模必考，AFB II 高频 | 条目[已验证]·对照[据推断] |
+| A-03 | **对数函数**：GK **完全不出现**（`Umkehrfunktion` 仅以 Wurzelfunktion 为例） | 必修：对数概念与运算律、换底公式、与指数函数互为反函数 | `both-cn-deeper` | ★★★（对 GK 是**最大内容鸿沟之一**；CN 技法可用于 LK 轨道预习） | 条目[已验证]·对照[据推断] |
+| A-04 | **LK**：`ln` 为独立函数类，须**无工具求导**，且以 `ln x` 作 `1/x` 的原函数 | 必修：对数函数（高考对 `ln` 求导的要求低于德国 LK） | `both-de-deeper` | ★★★（LK）免工具求导 + 积分反用，双重考法 | 条目[已验证]·对照[据推断] |
+| A-05 | 三角：EF 仅「参数对 Sinusfunktion 的影响」+ 变换；**GK 不求导三角**；LK 须无工具求导 `a·sin(b(x+c))+d` | 必修**独立大单元**：单位圆定义、图象性质、诱导公式、**三角恒等变换**（和差/倍角）、`y=A·sin(ωx+φ)` 参数体系 | `both-cn-deeper` | ★★ GK 弱；★★★ LK（求导 + 参数解释） | 条目[已验证]·对照[据推断] |
+| A-06 | 函数变换：`Spiegelung`（坐标轴）、`Verschiebung`、`Streckung` | 必修：图象变换 + `A/ω/φ` 三参数体系 | `both-equal` | ★★ 常作为免工具题的第一小问 | 条目[已验证]·对照[据推断] |
+| A-07 | 导数概念：`mittlere`/`lokale Änderungsrate`、`graphisches Ableiten`、割线↔切线、`propädeutischer Grenzwertbegriff` + `lim` 记号 | 选必：平均变化率→瞬时变化率、极限思想、切线斜率的几何意义 | `both-equal` | ★★ 概念解释题（AFB I/II），德国「图形求导」是特有问法 | 条目[已验证]·对照[据推断] |
+| A-08 | 求导法则：EF 幂/和/因子规则，**EF 已要求证明其中一条**；Q1 加 `Produktregel` | 选必：基本初等函数导数公式 + 四则运算法则 | `both-equal` | ★★★ 免工具题必考；「证明一条法则」是 EF 的法定要求 | 条目[已验证]·对照[据推断] |
+| A-09 | `Kettenregel` **分层**：GK 仅限 `e^x ∘ 线性`；**LK 一般化** | 选必：复合函数求导**限于 `f(ax+b)`** | `both-de-deeper` | ★★（GK）／★★★（LK）：GK/LK 的关键分界线 | 条目[已验证]·对照[据推断] |
+| A-10 | `Monotonie`、`Extrempunkte`、局部/全局 Extrema、`Krümmungsverhalten`、`Wendepunkte`（EF 已成体系 = Kurvendiskussion） | 选必：导数↔单调性/极值/最值，含极值**必要与充分条件**、闭区间最值 | `both-equal` | ★★★ Kurvendiskussion 是 A 域的骨架程序 | 条目[已验证]·对照[据推断] |
+| **A-11** | **无「用导数证明不等式」题型** | 选必技法层：构造辅助函数 → 求导 → 单调性定号 → 证不等式 | 🔵 `CN-only` | ★★★ **迁移后为 AFB III 主力**（详见 §4 技法卡 4） | 条目[据推断]·对照[据推断] |
+| A-12 | 无「恒成立/存在性」这一题型命名（相关内容散在 `Extremwertprobleme`） | 选必技法层：恒成立 ⇄ 最小值 ≥ 0；存在性 ⇄ 最大值 ≥ 0 | 🔵 `CN-only` | ★★ 与 A-14 同链，可作论证子题 | 条目[据推断]·对照[据推断] |
+| A-13 | `Extremwertprobleme` 须**经 `Nebenbedingung` 化为一元函数** | 选必：生活中的优化问题（建模 + 求导 + 最值） | `both-equal` | ★★★ 现实情境题的标准形态（innermathematisch : realitätsnah 均衡要求的落点） | 条目[已验证]·对照[据推断] |
+| A-14 | **`Funktionsscharen`（LK 独立 Schwerpunkt）**：解释参数含义 + 研究其对性质的影响 | 含参函数讨论（高考高频题型，课标不单列主题） | `both-de-deeper` | ★★★（LK）参数族 + CAS 作图 + 论证，LK 标志性考法 | 条目[已验证]·对照[据推断] |
+| A-15 | `Rekonstruktion von Funktionstermen`（**Steckbriefaufgaben**）：由条件反求参数，德国做成独立方法体系 | 待定系数法（常规技法，非独立主题） | `both-de-deeper` | ★★★ 已有笔记 `Steckbriefaufgaben-und-Funktionsanpassung.md` 直接对应 | 条目[已验证]·对照[据推断] |
+| A-16 | `Umkehrfunktion`：GK 仅 Wurzelfunktion；**LK 须判定可逆性 + 求解析式 + 说明图象关系** | 必修：指数↔对数互逆（课标层面反函数要求较轻） | `both-de-deeper` | ★★（LK）可逆性判定是 AFB II 的典型提问 | 条目[已验证]·对照[据推断] |
+| A-17 | 积分**概念链**（六步显式搭建）：`Produktsumme` → `orientierte Fläche` → `Bestandsfunktion` → `Integralfunktion` → `Stammfunktion` → `bestimmtes Integral` → `Hauptsatz` | ⚠️ **定积分不在高考范围**——课标将其置于**选修 A/B 类「微积分」专题**（牛顿-莱布尼茨公式）；选必「导数及其应用」不含定积分 | ⚪ `DE-only` | ★★★ 德国 Q1 必考；**前期误判修正**（见 §9-U1） | 条目[已验证]·对照[据推断] |
+| A-18 | 定积分求面积（GK）；LK 加 `uneigentliche Integrale` + **绕 x 轴旋转体体积** | 选修 A 类微积分含面积/体积/作功（非高考） | `both-equal` | ★★ 边缘位置，LK 为主 | 条目[已验证]·对照[据推断] |
+| **A-19** | **无数列主题**（KLP 全文不设） | 选必**独立主题**（等差/等比/递推/求和，`aₙ=Sₙ−Sₙ₋₁`，数学归纳法选学） | 🔵 `CN-only` | ★ → ★★ **嫁接入口为 `Iteration` / `Kumulation`**（详见 §4 技法卡 1–3） | 条目[已验证]·对照[据推断] |
+| A-20 | 无（LK 的推理要求止于「证一条求导法则」与 Hauptsatz） | 数学归纳法（选必选学） | 🔵 `CN-only` | — 不作 Abitur 内容；可作 Wissenschaftspropädeutik 素材 | 条目[已验证]·对照[据推断] |
+| A-21 | `Nullstellen` + EF 要求**无工具**解「可提公因式降次」的多项式方程 | 必修：函数零点与方程根、**零点存在定理**、**二分法**求近似解 | `both-equal` | ★★★ 免工具题常客（因式分解 → 零点 → 符号判定） | 条目[已验证]·对照[据推断] |
+| A-22 | 无「函数—方程—不等式三位一体」的显式表述（工具已具备：Nullstellen + 图象） | 必修：从函数观点看一元二次方程/不等式，**解集用集合表示** | 🔵 `CN-only` | ★★ 方法层可完全移植（见 §4 技法卡 10） | 条目[已验证]·对照[据推断] |
+| A-23 | 无（跨领域概念 `Mittelwert` 存在，但 AM-GM 未列） | 必修：**基本不等式** `√(ab) ≤ (a+b)/2`，用于求最值 | 🔵 `CN-only` | ★ 工具型引理，须先自证（见 §4 备选区） | 条目[已验证]·对照[据推断] |
 
-### G 域：几何与代数
+### G 域：Analytische Geometrie und Lineare Algebra（几何与代数）
 
-| # | 德国（NRW） | 中国 | 状态 | 差异说明 | 依据 |
+| # | 德国 NRW | 中国 | 状态 | Abitur 应试价值 | 依据 |
 |---|---|---|---|---|---|
-| G-01 | EF：空间坐标、`Ortsvektoren`、向量加法与数乘、`Länge`、`Kollinearität`；长度须用 **`Satz des Pythagoras`** 求 | 必修：平面向量（概念、线性运算、**基本定理与坐标表示**、数量积） | `both-cn-deeper` | 🎯 **中国必修的平面向量含「平面向量基本定理」（基底分解）——德国 EF 无此**；德国强调几何解释（位移/速度） | [据推断] |
-| G-02 | EF（**尚无 Skalarprodukt**）→ Q1 引入 `Skalarprodukt` 并作几何解释（正交/模/夹角） | 必修即含**数量积**（含坐标运算、夹角公式、垂直判定） | `both-cn-deeper` | 🎯 **中国把数量积放在必修**，与平面向量一体；德国把它推迟到 Q1，并作为「空间度量化的起点」 | [据推断] |
-| G-03 | EF：直线与线段 **`Parameterform`**；`Lagebeziehung`：identisch/parallel/**windschief**/sich schneidend | 必修/选择性必修：直线方程（**斜截式/点斜式/一般式**，平面）；空间直线（向量法） | `both-equal` | ⚠️ 表述差异大：德国 EF 直接用**参数式 + 空间位置关系（含异面 windschief）**；中国平面用**斜率式**体系，空间用向量式 | [据推断] |
-| G-04 | Q1：`Ebenen`（Parameterform / Koordinatenform / Normalenvektor）；**LK 加 `Normalenform`** | 选择性必修：空间向量与立体几何，含**平面法向量**与平面方程 | `both-equal` | 中国以「法向量」为核心工具贯穿证明（线面垂直/平行判定）；德国把法向量法与平面三种形式并列 | [据推断] |
-| G-05 | Q1：线与面交点、直线间交角、**线面交角、面面交角** | 空间角（线线角、线面角、**二面角**）通过向量法求解 | `both-equal` | 中国「二面角」是高考高频难点，题型密度高于德国 | [据推断] |
-| G-06 | **LK：`Abstände` — 点/直线/平面（所有组合）** | 空间距离（点面距、线面距、面面距等）向量法 | `both-equal` | 🎯 **两边都把空间距离作为体系化内容**；德国的「全组合」表述与中国的距离公式体系高度对应 | [据推断] |
-| G-07 | `Spiegelungen an Ebenen`；GK 简单情形，LK 一般化 | 对称问题（点/线关于平面、关于直线对称） | `both-equal` | 与 Abstand/对称性联动，两边均考 | [据推断] |
-| G-08 | `Lineare Gleichungssysteme`：算法化解法，**无工具**解最多 3 未知数；LK 须**解释解集** | 线性方程组（高斯消元在教材中，向量法解方程组） | `both-equal` | 德国把 LGS 与直线/平面位置关系绑定并**解释解集几何含义**（LK） | [据推断] |
-| G-09 | **无**（德国不做圆锥曲线） | 选择性必修独立主题：**平面解析几何**（直线、圆、**椭圆、双曲线、抛物线**、轨迹问题） | 🔵 `CN-only` | 🎯🎯🎯 **德国完全不考平面解析几何**。中国有独立主题，含圆锥曲线定义、标准方程、几何性质、**弦长/中点弦/轨迹**等成套技巧 | [据推断] |
-| G-10 | **无** | 必修：**立体几何初步**（空间点线面位置关系、**三视图**、空间几何体表面积与体积） | 🔵 `CN-only` | 德国只以向量法处理空间几何，**不做纯几何空间推理与三视图** | [据推断] |
-| G-11 | **无** | 必修：**复数**（概念、四则运算、几何意义） | 🔵 `CN-only` | ⚠️ **德国 NRW Mathe KLP 全文无复数** | [据推断] |
+| G-01 | EF：`Koordinatisierung`、Ortsvektoren、Addition、`Multiplikation mit einem Skalar`、`Länge`（**须用 Pythagoras**）、`Kollinearität` | 必修：平面向量（概念、线性运算及几何意义、共线） | `both-equal` | ★★ EF-G 基础；德国强调「位移/速度」的物理解释 | 条目[已验证]·对照[据推断] |
+| **G-02** | **EF 无基底分解思想**（只有加减、数乘、共线）；`Linearkombination` 只在 `Parameterform` 中隐式出现 | 必修：**平面向量基本定理**（基底分解、正交分解、坐标表示） | 🔵 `CN-only` | ★★ **Q1 断层上游**：Ebenen-Parameterform 与 LK 的 Parallelogramm/Dreieck 直接受益（§4 技法卡 7） | 条目[已验证]·对照[据推断] |
+| G-03 | `Skalarprodukt` **Q1 才引入**，且被定位为「空间**度量化**的起点」（正交性/模/夹角三重几何解释） | 必修即含数量积（由「功」引入、坐标运算、夹角公式、垂直判定） | `both-cn-deeper` | ★★★ Q1-G 的全部内容几乎建立在它之上 | 条目[已验证]·对照[据推断] |
+| G-04 | EF：直线**参数形式**；`Lagebeziehung`：identisch / parallel / **windschief** / sich schneidend（含异面分类） | 平面用斜率体系（点斜式/两点式/一般式，斜率判平行垂直）；空间用向量式 | `both-equal` | ★★ 表述体系不同，异面分类是德国 EF 的必学项 | 条目[已验证]·对照[据推断] |
+| G-05 | Q1：`Ebenen` 的 `Parameterform` + `Koordinatenform` + `Normalenvektor` | 选必：空间向量与立体几何（法向量为核心工具） | `both-equal` | ★★★ Q1-G 第二主干 | 条目[已验证]·对照[据推断] |
+| G-06 | **LK：`Normalenform`** 作为平面的第三种**独立专名形式** | 无对应专名（法向量式已涵盖） | ⚪ `DE-only` | ★★（LK）专名要记，术语题与免工具题都考 | 条目[已验证]·对照[据推断] |
+| G-07 | Q1：`Schnittwinkel`（Gerade-Gerade / Gerade-Ebene / Ebene-Ebene） | 空间角：线线角、线面角、**二面角**（高考高频难点） | `both-equal` | ★★ 中国题型密度更高，德国题型更规范 | 条目[已验证]·对照[据推断] |
+| G-08 | **LK：`Abstände` 全组合**（Punkt/Gerade/Ebene 之间所有距离） | 选必：点线距、点面距、线面距、面面距的向量法，并要求**描述解题程序** | `both-equal` | ★★★（LK）两边高度对应，是 LK 的区分点 | 条目[已验证]·对照[据推断] |
+| G-09 | Q1：`Lineare Gleichungssysteme`——须说明**算法化解法**、**无工具**解≤3 未知数；LK 加 `Interpretation der Lösungsmenge` | 三元方程组与高斯消元主要在**选修 A 类**（非高考）；高中课标主体未列 | `both-de-deeper` | ★★ 德国把 LGS 与位置关系绑定并要求解释解集几何含义 | 条目[已验证]·对照[据推断] |
+| G-10 | `Spiegelungen an Ebenen`（GK 简单情形 / LK 一般化）；GK 已要求利用几何对象**对称性** | 对称问题（点/线关于点、线、面对称） | `both-equal` | ★★ 与 Abstand 联动出现 | 条目[已验证]·对照[据推断] |
+| G-11 | **LK：`Parallelogramme und Dreiecke` 的参数形式表示** | 无对应专名条目 | ⚪ `DE-only` | ★（LK）与 G-02 基底分解天然衔接 | 条目[已验证]·对照[据推断] |
+| G-12 | **LK：`Lagebeziehungen` 系统研究**（平面间、线面全部组合） | 选必：线面/面面平行与垂直的**判定定理与性质定理**体系 | `both-equal` | ★★ 中国以定理体系承载，德国以「系统研究」承载 | 条目[已验证]·对照[据推断] |
+| G-13 | **无平面解析几何**（不做圆/椭圆/双曲线/抛物线/轨迹） | 选必**独立主题**：直线与圆、椭圆（掌握级）、抛物线与双曲线（了解级）、弦长/中点弦/轨迹 | 🔵 `CN-only` | — 德国完全不考；仅作参数化直觉的强化训练 | 条目[已验证]·对照[据推断] |
+| G-14 | **无**（只做向量法，不做纯几何空间推理） | 必修：立体几何初步（基本事实、判定/性质定理、**三视图**、表面积与体积、斜二测） | 🔵 `CN-only` | — 不考；中国「先直观感知、后向量论证」的**两段节奏**可借鉴（§4 技法卡 8） | 条目[已验证]·对照[据推断] |
+| G-15 | **无**（KLP 全文无复数） | 必修：复数（概念、四则运算、几何意义；三角表示选学） | 🔵 `CN-only` | — 不考 | 条目[已验证]·对照[据推断] |
 
-### S 域：概率与统计
+### S 域：Stochastik（概率与统计）
 
-| # | 德国（NRW） | 中国 | 状态 | 差异说明 | 依据 |
+| # | 德国 NRW | 中国 | 状态 | Abitur 应试价值 | 依据 |
 |---|---|---|---|---|---|
-| S-01 | Q1：多阶段随机试验、`Urnenmodelle`（有/无放回）、`Baumdiagramme`、`Vierfeldertafeln`、`Pfadregeln` | 选择性必修：古典概型、**互斥/独立事件**、条件概率 | `both-equal` | 德国把「有/无放回」与 Vierfeldertafel 作为固定工具；中国以事件运算为主线 | [据推断] |
-| S-02 | `bedingte Wahrscheinlichkeiten` | 条件概率、**全概率公式 / 贝叶斯**（部分教材/拓展） | `both-cn-deeper` | 中国在选择性必修已系统给出**全概率与贝叶斯视角**；德国 KLP 只列「条件概率问题」 | [据推断] |
-| S-03 | `Erwartungswert` / `Varianz` / `Standardabweichung`（离散随机变量） | 随机变量（离散型）及其分布列、均值、方差 | `both-equal` | 内容一致 | [据推断] |
-| S-04 | `Binomialverteilung`：GK 含 Kenngrößen/Histogramme；**LK 含 `Binomialkoeffizient`** | 二项分布与超几何分布（选择性必修） | `both-equal` | 中国额外含**超几何分布**；德国额外强调**直方图与参数 n/p 的图形影响** | [据推断] |
-| S-05 | **无**（GK 不含组合计数） | **计数原理**：加法原理、乘法原理、**排列与组合**、二项式定理 | 🔵 `CN-only` | 🎯 **德国 GK 完全不涉及组合计数**；LK 只在二项系数处触及组合意义 | [据推断] |
-| S-06 | Q1：相对频率作为未知概率的**估计** | 用样本估计总体 | `both-equal` | 概念一致 | [据推断] |
-| S-07 | **LK：`Beurteilende Statistik`** — `σ-Regeln`、**`Prognoseintervall`**、**`Konfidenzintervall`**、**`Stichprobenumfang` 估算** | 统计：用样本估计总体、**成对数据统计相关性/回归**；区间估计在高中较轻 | ⚪ `both-de-deeper` | 🎯 **德国 LK 的区间估计体系（置信区间 + 样本量估算）在高中阶段明显强于中国** | [据推断] |
-| S-08 | **LK：`Normalverteilung`** — 密度函数（Gauß'sche Glockenkurve）、参数 μ/σ、分布函数图像；`Verteilungsfunktion` 解释为 `Integralfunktion` | 正态分布（部分教材/选修涉及，高考考查较轻） | ⚪ `both-de-deeper` | 🎯 **德国 LK 把正态分布列为必学，并与积分建立交叉（S⇄A）**；中国高中对正态分布的处理明显更轻 | [据推断] |
-| S-09 | 无对应 | **成对数据的统计分析**（散点图、相关系数、一元线性回归） | 🔵 `CN-only` | 中国选择性必修「概率与统计」含回归分析入门；德国 KLP 未列出回归 | [据推断] |
+| S-01 | Q1：`mehrstufige Zufallsexperimente`、`Urnenmodelle`（有/无放回）、`Baumdiagramm`、`Vierfeldertafel`、`Pfadregeln` | 必修：样本空间、事件运算、古典概型；选必：条件概率 | `both-equal` | ★★★ S 域入门必考；德国把「有/无放回 + 四格表」做成固定工具 | 条目[已验证]·对照[据推断] |
+| S-02 | `bedingte Wahrscheinlichkeiten`（KLP 只列「条件概率问题」） | 选必：条件概率 + **乘法公式 + 全概率公式**（贝叶斯选学） | `both-cn-deeper` | ★★ 全概率是 Pfadregeln 的求和形式，可无成本移植（§4 技法卡 9） | 条目[已验证]·对照[据推断] |
+| S-03 | 离散随机变量：`Erwartungswert`、`Varianz`、`Standardabweichung` | 选必：离散型随机变量、分布列、均值与方差 | `both-equal` | ★★  Kenngrößen 计算为常规得分点 | 条目[已验证]·对照[据推断] |
+| S-04 | `Binomialverteilung`（GK：Kenngrößen + **Histogramme**；LK 加 `Binomialkoeffizient`） | 选必：伯努利试验、二项分布、超几何分布 | `both-equal` | ★★★ 二项分布是 GK 的 S 域顶点 | 条目[已验证]·对照[据推断] |
+| S-05 | 组合计数：**GK 完全不涉及**；LK 仅在二项系数处触及组合意义 | 选必**独立板块**：分类加法/分步乘法原理、排列组合、**二项式定理**（须证明） | 🔵 `CN-only` | ★（LK）为 LK 的 `Binomialkoeffizient` 提供地基；GK 不考 | 条目[已验证]·对照[据推断] |
+| S-06 | 相对频率作为未知概率的**估计** | 必修：简单随机抽样（抽签/随机数）、**分层随机抽样**（比例分配）、**百分位数**、标准差/方差/极差 | `both-cn-deeper` | ★★ 抽样设计题在德国为 Modellieren 载体，中国抽样体系更细 | 条目[已验证]·对照[据推断] |
+| **S-07** | **LK：`Beurteilende Statistik`** — `σ-Regeln`、`Prognoseintervall`、`Konfidenzintervall`、须**估算给定区间长度所需 `Stichprobenumfang`** | 区间估计在中国高中**明显轻量**（主要在选修 A/B 类） | ⚪ `both-de-deeper` | ★★★（LK）德国高中阶段最强项之一 | 条目[已验证]·对照[据推断] |
+| **S-08** | **LK：`Normalverteilung`** — `Dichtefunktion`（Gauß'sche Glockenkurve）、参数 μ/σ 解释、`Graph der Verteilungsfunktion` | 选必：正态分布属**了解级**（由误差模型 + 频率直方图直观引入） | ⚪ `both-de-deeper` | ★★★（LK）德国要求显著更高 | 条目[已验证]·对照[据推断] |
+| **S-09** | **LK 官方交叉点**：须把 `Verteilungsfunktion` 解释为 **`Integralfunktion`**（KLP 中 S⇄A 唯一显式交叉） | 无对应（中国选必不把正态分布与积分连接） | ⚪ `DE-only` | ★★★（LK）跨领域笔记的最佳素材；口试（≥2 IF）天然题目 | 条目[已验证]·对照[据推断] |
+| S-10 | 无 | 选必：成对数据统计相关性、**样本相关系数**、一元线性回归、最小二乘估计 | 🔵 `CN-only` | — 不考；但「标准化数据向量夹角 = 相关系数」是 G⇄S 的有趣对照 | 条目[已验证]·对照[据推断] |
+| S-11 | 无 | 选必：2×2 列联表与**独立性检验** | 🔵 `CN-only` | — 不考 | 条目[已验证]·对照[据推断] |
 
 ### X 域：跨域与结构
 
-| # | 德国（NRW） | 中国 | 状态 | 差异说明 | 依据 |
+| # | 德国 NRW | 中国 | 状态 | Abitur 应试价值 | 依据 |
 |---|---|---|---|---|---|
-| X-01 | **`Modellieren` 为 5 大能力维度之一**，含四段闭环：`Strukturieren` → `Mathematisieren` → `Interpretieren und Validieren`（含「指出模型边界」「改进模型」「比较模型适切性」） | 「数学建模活动与数学探究活动」为**四主线之一** | `both-equal` | 德国**评价颗粒度极细**（9 条 Kompetenzerwartungen，可评分）；中国主线地位更高但评价表述更粗 | [据推断] |
-| X-02 | **`Hilfsmittelfreies Operieren` 为独立能力线 + `Aufgabenart I` 法定题型** | 高考全程可用规定工具，无强制免工具题型 | ⚪ `DE-only` | 🎯 **德国把「无工具能力」写进 KLP 与 Abitur 题型**（对应现有笔记 `Mathe-ZKE-2027-Training.md` 的 Teil A/Teil B 设计） | [据推断] |
-| X-03 | **MMS 的 10 项规定动作**（CAS 解含参方程组、参数动态变化、作图、求导、求积分、概率分布参数变化…） | 课标无对应的工具能力清单 | ⚪ `DE-only` | 德国把数字工具使用**条目化**为能力要求；中国侧重「信息技术与课程整合」的原则性表述 | [据推断] |
-| X-04 | **13 条 heuristische Strategien 被 KLP 点名**（Analogie, Invarianten finden, Vorwärts-/Rückwärtsarbeiten, Spezialisieren/Verallgemeinern…） | 「数学探究活动」+ 六大核心素养中的**逻辑推理/直观想象** | `both-de-deeper` | 德国**逐条列出启发式策略名**，可直接做成方法卡；中国以素养表述，不列策略清单 | [据推断] |
-| X-05 | 6 大学科能力（5 Kompetenzbereich）+ AFB I/II/III | **6 大核心素养**：数学抽象、逻辑推理、数学建模、直观想象、数学运算、数据分析 | `both-equal` | 两者均为**过程取向框架**，名称与切分不同但覆盖面重叠度高（德国 `Argumentieren`⇄逻辑推理，`Modellieren`⇄数学建模，`Operieren`⇄数学运算） | [据推断] |
-| X-06 | EPA 0–15 分制；Zentralabitur；**AFB II 为重心** | 三级水平（水平一/二/三），**高考依据水平二**；等级分制 | `both-equal` | 无法直接换算；德国「水平」不按学段分级而按**题型难度域**分级 | [据推断] |
-| X-07 | 无 | **必修 8 学分 144 课时 + 选择性必修 6 学分 108 课时**（硬性课时） | ⚪ `DE-only` | ⚠️ 德国 KLP **不规定课时数**，只规定 obligatorische Inhalte，课时由学校/教师决定 | [据推断] |
+| X-01 | `Modellieren` 为 5 大能力维度之一，**四段闭环**（Strukturieren → Mathematisieren → Interpretieren → Validieren），含「指出模型边界」「改进模型」「比较模型适切性」的**可评分条目** | 「数学建模活动与数学探究活动」为**四主线之一**，须完成课题研究（选题→开题→做题→结题） | `both-equal` | ★★★ 德国评价颗粒度更细（直接进 Bewertungsraster）；中国主线地位更重 | 条目[已验证]·对照[据推断] |
+| X-02 | **`Hilfsmittelfreies Operieren` 独立能力线 + `Aufgabenart I` 法定题型** | 高考全程可用规定工具，无强制免工具题 | ⚪ `DE-only` | ★★★ **德国独有的第二评价轴**；现有笔记 `Mathe-ZKE-2027-Training.md` 的 Teil A/B 即为同构设计 | 条目[已验证]·对照[据推断] |
+| X-03 | **MMS 的 10 项规定动作**（CAS 解含参方程组、参数动态、作图、求导、积分、概率分布参数变化…） | 无对应工具能力清单（原则性表述） | ⚪ `DE-only` | ★★ 决定「哪些内容只能在 Aufgabenart II 出现」 | 条目[已验证]·对照[据推断] |
+| X-04 | **KLP 点名 13 条 heuristische Strategien**（Analogie / Invarianten finden / Vorwärts- und Rückwärtsarbeiten / Spezialisieren und Verallgemeinern / Zerlegen und Ergänzen …） | 逻辑推理与直观想象素养 + 探究活动；**不列策略清单** | `both-de-deeper` | ★★ 可直接做成方法卡，是 Problemlösen 的抓手 | 条目[已验证]·对照[据推断] |
+| X-05 | `Argumentieren`：4 种论证策略 + 8 类逻辑结构；EF 须证一条求导法则；LK 须证 Hauptsatz | 逻辑推理素养；证明集中在立体几何（向量法）与数列（归纳法） | `both-de-deeper` | ★★★ 德国证明密度更高 → **这正是 CN 技法卡 4 的补强目标** | 条目[已验证]·对照[据推断] |
+| X-06 | **五个跨领域概念**被 KLP 点名：`funktionaler Zusammenhang`、`Mittelwert`、`Kumulation`、`Iteration`、`Grenzwert` | 无对应显式列表 | ⚪ `DE-only` | ★★ **`Iteration` / `Kumulation` 是数列技法的合法嫁接入口** | 条目[已验证]·对照[据推断] |
+| X-07 | Abitur 结构规则：笔试**须覆盖全部三 IF**；`innermathematisch : realitätsnah` **须均衡**；Teilaufgabe 须「一处失误不致命」；口试 **20–30 min 且须涉及 ≥2 IF** | 高考结构（全国卷/省市卷），无 IF 覆盖规则 | ⚪ `DE-only` | ★★★ **备考的结构性约束，优先级最高** | 条目[已验证]·对照[据推断] |
+| X-08 | 5 个 Kompetenzbereich（`Reflektieren` 为 `Problemlösen` 子维度）+ AFB I/II/III | 6 大核心素养（数学抽象/逻辑推理/数学建模/直观想象/数学运算/数据分析）+ 三级水平 | `both-equal` | ★★ 框架不可换算，但 `Argumentieren`⇄逻辑推理、`Modellieren`⇄数学建模、`Operieren`⇄数学运算 可直接对译 | 条目[已验证]·对照[据推断] |
+| X-09 | EPA 0–15 点制 + `kriterielles Bewertungsraster`；**AFB II 为重心但全 AFB 必现** | 三级水平；**高考依据水平二**（合格考依据水平一） | `both-equal` | ★★ 不可换算 | 条目[已验证]·对照[据推断] |
+| X-10 | KLP **不规定课时** | 硬性：必修 8 学分 144 课时 + 选必 6 学分 108 课时 | ⚪ `DE-only` | — 背景信息 | 条目[已验证]·对照[据推断] |
+| X-11 | 无选修分化结构 | 选修 **A/B/C/D/E 五类方向**（数理 / 经济社会 / 人文 / 体艺 / 校本先修） | 🔵 `CN-only` | — 不考；A 类「微积分」是「导数证不等式」的理论升级版（**禁止引入，见 §4 备选区**） | 条目[已验证]·对照[据推断] |
 
 ---
 
-## 3. 高价值差异清单（**行动项**）
+## 3. 主表速查：状态分布
 
-> 本工程的产出目的：把中国的知识密度与解题技法，适配进德国框架。
+| 状态 | 条目 | 应试含义 |
+|---|---|---|
+| `both-cn-deeper` | A-01 / A-03 / A-05 / G-03 / S-02 / S-06 | 中国更早或更系统地教 → 德国学生可用 CN 材料**提前铺路** |
+| `both-de-deeper` | A-04 / A-09 / A-14 / A-15 / A-16 / G-09 / S-07 / S-08 / X-04 / X-05 | 德国更深 → **必须按德国标准练**，不可用 CN 材料替代 |
+| 🔵 `CN-only` | A-11 / A-12 / A-19 / A-20 / A-22 / A-23 / G-02 / G-13 / G-14 / G-15 / S-05 / S-10 / S-11 / X-11 | 分两类：**可移植的方法**（A-11/A-12/A-22/G-02）vs **不可移植的知识板块**（A-19/A-20/G-13/G-14/G-15/X-11） |
+| ⚪ `DE-only` | A-17 / G-06 / G-11 / S-09 / X-02 / X-03 / X-06 / X-07 / X-10 | 德国独家 → **备考主线**，其中 X-02/X-07 是结构性约束，S-09 是跨领域金矿 |
 
-### 🎯 中国更深/更系统 —— 值得借鉴改写
+---
 
-| 知识点 | 中国做法 | 德国现状 | 可产出 |
+## 4. CN-Methode 技法卡（本文件核心交付）
+
+> 遵循 `00_META/Lernbaum/00-Abi-Baum-Design.md §3.1` 三条铁律：
+> **① 只引入「方法」，不引入「超纲知识板块」；② 每条必标 DE-Anschluss；③ 来源分层 `[CN-课标]` / `[CN-教材]` / `[CN-高考]`。**
+> 来源分层说明：`[CN-课标]` = 课标明文内容要求；`[CN-教材]` = 人教版/北师大版等教材的结构性方法（**只记方法名与逻辑，不搬原文**）；`[CN-高考]` = 高考题型与解题套路（**原创改写，不搬原题**）。
+
+### CN-Methode: 递推构造（由 `aₙ₊₁ = p·aₙ + q` 化为等差/等比）
+
+- **技法内容**：面对「后一项由前一项决定」的迭代关系，先判断类型——只差一个常数（`+q`）就凑成等比数列 `aₙ₊₁ + c = p(aₙ + c)`，其中 `c = q/(p−1)`；若系数随 `n` 变化则改用累加或取倒数/取对数换元。核心动作是**把递推式改写为「新数列的后项 = 常数 × 前项」**，从而直接读出通项。
+- **DE-Anschluss**：`Iteration` 是 KLP 点名的五个跨领域概念之一 [已验证]；递推只用到 EF 已教的 `funktionaler Zusammenhang`、解一元一次方程与 `Multiplikation mit einem Skalar`；情境载体（人口/药物残留/复利）与 Q1 的 `Exponentialfunktionen` 增长模型同源 [已验证]。
+- **合规性**：⚠️ 需注意 —— **「数列（Folge）」作为独立知识板块在德国 KLP 中不存在（CN-only）**，因此**不能**作为考纲内容引入。只能以「迭代过程建模（Iterationsprozess）」的方法层出现，且题目包装必须用德国既有术语（Rekursion / Iteration / Kumulation）。
+- **Abitur 应用**：Aufgabenart II 的 `Modellieren` 子题（AFB II）——长期趋势、逐期衰减、分期偿还等情境；末段常接「模型边界评判」（AFB III）。口试可作「先算前几项 → 猜想闭式 → 论证」的 `Vermuten→Begründen` 素材。**非笔试必考**。
+- **产出物**：《Iterationsprozesse — 从递推关系到闭式表达（CN 技法嫁接卡）》+ Anki 术语组（Iteration / Rekursion / geschlossene Form）
+
+> 来源：`[CN-课标]` 数列：等差数列与等比数列概念、通项公式；`[CN-教材]` 待定系数构造；`[CN-高考]` 递推数列求通项
+
+### CN-Methode: 有限和四法（错位相减 / 裂项相消 / 分组求和 / 倒序相加）
+
+- **技法内容**：四类求和各自对应一种结构识别——**错位相减**用于「等差 × 等比」型（两边同乘公比后相减，中间项整体抵消）；**裂项相消**用于分式通项（把 `1/(n(n+1))` 拆成 `1/n − 1/(n+1)`，逐项抵消）；**分组求和**用于可拆成若干已知子列的数列；**倒序相加**用于对称结构（与等差数列求和公式的推导同源）。共同思路是**先把「求和」改造成「相消」**。
+- **DE-Anschluss**：`Kumulation` 同为 KLP 点名的跨领域概念 [已验证]；德国 Q1 的积分概念链 `Produktsumme → Bestandsfunktion → Integralfunktion` **本身就是累积思想的连续版本** [已验证]；运算层面只用到 EF 的因式分解与代数变形 [已验证]。
+- **合规性**：⚠️ 需注意 —— 载体（数列求和）属 CN-only 板块；且**中国课标自身明确要求「避免繁琐的技巧训练」** [CN-课标]，因此本项目只保留**四种结构识别的思路**，不做技巧刷题。
+- **Abitur 应用**：主要价值在 AFB II/III——为「有限项乘积和 → 定积分」的概念过渡提供可算的离散对照组；Aufgabenart I 若出现有限项求和，可作估算与上下界判断。**不作为直接得分训练**。
+- **产出物**：《Kumulation: 离散和与积分的对照（Q2 拓展卡）》——建议与 A-17 的积分概念链**并列成一张卡**，强化「离散⇄连续」双视角
+
+> 来源：`[CN-课标]` 等差数列与等比数列的前 n 项和公式；`[CN-教材]` 四类求和方法；`[CN-高考]` 数列求和综合题
+
+### CN-Methode: `aₙ = Sₙ − Sₙ₋₁`（存量 ⇄ 增量互化）
+
+- **技法内容**：把「部分和 `Sₙ`」与「通项 `aₙ`」看成一对互逆量：已知 `Sₙ` 时用 `aₙ = Sₙ − Sₙ₋₁` 反求通项（**必须单独验算 n=1**），已知 `aₙ` 时累加求 `Sₙ`。它把「求通项」和「求和」统一成一次差分运算，二者不必分开处理。
+- **DE-Anschluss**：德国 Q1 已有**连续版本**——`Bestandsfunktion` 与 `Integralfunktion` 的关系、`Hauptsatz der Differential- und Integralrechnung`（由变化率重构存量）[已验证]。离散版只是把微分/积分换成差分/求和，思想完全相同。
+- **合规性**：⚠️ 需注意 —— 概念载体（Folge）仍属 CN-only；但**思想本身德国已教**（连续版），故本条是数列系列中**最接近合规**的一条。使用前提：必须与 `Bestandsfunktion`/`Integralfunktion` 成对呈现，让学生看到「同一关系的两种外衣」，不可孤立引入数列术语。
+- **Abitur 应用**：AFB II 的 `Interpretieren` 子题——解释「某量的累计值与其每期增量之间的关系」（在德国完全可以包装成 `Bestandsfunktion` 的离散类比）；AFB III 可作「离散模型 vs 连续模型哪个更合适」的评判题。
+- **产出物**：《Bestands- und Aenderungsgroesse: 离散与连续的同一思想（A⇄跨领域卡）》
+
+> 来源：`[CN-课标]` 通项公式与前 n 项和公式的关系；`[CN-教材]` `aₙ=Sₙ−Sₙ₋₁` 的 n=1 验算规范；`[CN-高考]` 由 Sₙ 求 aₙ
+
+### CN-Methode: 用导数证明不等式（构造辅助函数）🎯 最高性价比
+
+- **技法内容**：要证 `f(x) ≥ g(x)`，作辅助函数 `F(x) = f(x) − g(x)`，把「证不等式」翻译成「证 `F` 的最小值 ≥ 0」。步骤固定为：**移项构造 → 求导 → 由 `F'` 符号定单调区间 → 算候选极值点与端点 → 比较得最小值 → 下结论**。若一阶导数符号不易判定，则对 `F'` 再求导（借 `Krümmungsverhalten` 定位 `F'` 的极值）；若区间需拆分，则分区间分别论证。
+- **DE-Anschluss**：**全部工具已在德国教过**——EF 的 `Monotonie`、`Extrempunkte`、`lokale und globale Extrema`、`Krümmungsverhalten`、`Wendepunkte` [已验证]；Q1 的 `Produktregel` [已验证]；LK 的 `allgemeine Kettenregel` 与 `ln x` [已验证]。**不需要任何一个 KLP 之外的知识点。**
+- **合规性**：✅ 完全合规 —— 这不是新知识，而是把德国已有的「**求**极值」重组为「**证**不等式」，属于 `Argumentieren`（AFB III）的方法层升级。载体仍必须限制在 KLP 允许的函数类内（GK：整有理函数 + `e^x`；LK：可加三角与 `ln`）。
+- **Abitur 应用**：① `Extremwertprobleme` 的后置论证——题目问「求最大收益」，末段常追加「证明这就是全局最大值」，本技法直接作答（AFB III）；② Aufgabenart I 的免工具论证题（整有理函数类，GK 亦可）；③ 口试的 `Begründen` 环节。它是**把德国偏弱的 AFB III 变成得分点**的最短路径。
+- **产出物**：《Vom Extremwert zum Beweis — 用导数证明不等式（GK+LK 通用）》★ **第一优先产出**；配套 Anki 卡组（构造→求导→定号→端点→结论 五步链）+ 12 题梯度题库（全部原创改写，从 GK 整有理到 LK `ln`/三角）
+
+> 来源：`[CN-课标]` 导数在研究函数中的应用（单调性、极值、最值）；`[CN-教材]` 构造辅助函数；`[CN-高考]` 导数与不等式证明（压轴题型）
+
+### CN-Methode: 恒成立 / 存在性 → 最值转化
+
+- **技法内容**：把含参数的「对所有 `x` 都成立」翻译成「`F(x)` 的最小值 ≥ 0」，把「存在某个 `x` 使之成立」翻译成「`F(x)` 的最大值 ≥ 0」；若参数可分离，则先**参数分离**（把参数单独留在不等式一侧），把问题降为「求一个不含参函数的最值」，再回代得参数范围。
+- **DE-Anschluss**：`Extremwertprobleme` + `Nebenbedingung`（Q1，须化为**一元**函数）[已验证]；`globale Extrema` 与闭区间端点比较（EF）[已验证]；`Funktionsscharen` 的参数含义分析（LK）[已验证]。
+- **合规性**：✅ 完全合规 —— 纯题型层，工具全在德国侧；「全局 vs 局部」「端点是否取到」恰是德国 `lokale und globale Extrema` 已经强调的区分点。
+- **Abitur 应用**：AFB II 的 `Optimierungsaufgabe` 变式；「是否存在某个参数使结论成立」是天然的 AFB III `Beurteilen` 载体。GK 与 LK 皆可（LK 可叠加含参族）。
+- **产出物**：《Parameterbereiche — 恒成立与存在性问题的统一处理（含参数分离）》
+
+> 来源：`[CN-课标]` 导数应用（最值）；`[CN-教材]` 参数分离法；`[CN-高考]` 恒成立/存在性求参数范围
+
+### CN-Methode: 含参单调性讨论（按参数分类讨论导函数零点）
+
+- **技法内容**：导函数含参数时，单调性可能随参数改变。做法是：先求导，令 `f'(x)=0`，**按判别式与零点是否落在定义域内**分类；每一类画一张符号表，得到该类下的单调区间；最后把结论按参数区间汇总。判据是「零点个数」与「零点位置」两个维度。
+- **DE-Anschluss**：`Funktionsscharen` 是 **LK 独立 Schwerpunkt**（须解释参数含义并研究其对性质的影响）[已验证]；`Monotonie` 与无工具解二次方程（含 `biquadratische Gleichungen`，LK）[已验证]；CAS 作参数动态图（MMS 规定动作）[已验证]。
+- **合规性**：⚠️ 需注意 —— **GK 无 `Funktionsscharen`**。GK 使用时必须限定在「参数已给定具体数值」或「单调性不随参数改变」的情形；**系统化的参数分类讨论只能用于 LK**。
+- **Abitur 应用**：LK 的 Aufgabenart II 高频——先用 CAS 观察参数变化（AFB I/II），再独立给出分类论证（AFB III）；口试中「Vermuten → Begründen」的经典载体。
+- **产出物**：《Funktionsscharen 与参数分类讨论（LK 专用）》——建议结构：判别式分类表 + 符号表模板 + 4 类典型参数族
+
+> 来源：`[CN-课标]` 导数与单调性；`[CN-教材]` 分类讨论规范；`[CN-高考]` 含参函数单调性讨论
+
+### CN-Methode: 平面向量基本定理（基底分解）🎯 补 EF→Q1 断层
+
+- **技法内容**：在平面内任取两个**不共线**向量作基底，则任一向量可**唯一**表示为它们的线性组合；求系数的方法是列方程组（待定系数 + 比较系数），或利用共线/分点的几何条件直接读出。基底选得合适（正交基底、沿已知方向取基底），运算量会小一个量级。
+- **DE-Anschluss**：**只用加法与数乘即可成立**——EF 已教 `Addition`、`Multiplikation mit einem Skalar`、`Kollinearität` [已验证]；EF 的 `Parameterform der Gerade`（起点 + 方向向量）**本身就是一次线性组合**，是现成的具身经验 [已验证]；`Ortsvektoren` 与 `Koordinatisierung`（EF）[已验证]。
+- **合规性**：✅ 完全合规 —— 基底分解的全部运算在 EF 范围内；无需 `Skalarprodukt`。⚠️ 但**「正交分解 + 用坐标算夹角」这部分要等 Q1 的 `Skalarprodukt`**，应标为 Q1 增量，不可在 EF 提前。
+- **Abitur 应用**：EF→Q1 衔接期（直接化解「G 域第二断层」）；Q1 的 `Ebenen`-`Parameterform`、LK 的 `Parallelogramme und Dreiecke` 参数形式、`LGS` 解集的几何解释全部建立在「线性组合唯一性」上（AFB I/II）。
+- **产出物**：《Basis und Linearkombination — 向量基本定理入门（EF-G 补缺）》★ **第二优先产出**；配套： EF 层只用加法/数乘的 8 题 + Q1 层加 `Skalarprodukt` 的 8 题
+
+> 来源：`[CN-课标]` 平面向量基本定理及其意义、正交分解及坐标表示；`[CN-教材]` 基底选取与待定系数；`[CN-高考]` 向量线性表示与共线条件
+
+### CN-Methode: 向量法统一立体几何（先直观猜想 → 后向量证明）
+
+- **技法内容**：对空间位置关系，先用直观判断**猜出**结论（平行？垂直？距离沿哪条线最短？），再用向量给出**证明**：建系 → 写出方向向量与法向量 → 用线性关系证平行/共面、用 `Skalarprodukt = 0` 证垂直、用投影与法向量算距离与夹角。中国的两段设计是**必修用综合法先建立直观，选必用向量法重证同一批定理**，因此每个结论都有「直观」与「代数」两种表述，互为校验。
+- **DE-Anschluss**：EF 的 `Lagebeziehung von Geraden`（identisch/parallel/windschief/schneidend）[已验证]；Q1 的 `Skalarprodukt`、`Ebenen`（Parameter-/Koordinatenform）、`Normalenvektor`、`Schnittwinkel`、`LGS` [已验证]；LK 的 `Abstände` 全组合、`Lagebeziehungen` 系统研究、`Interpretation der Lösungsmenge` [已验证]。
+- **合规性**：⚠️ 需注意 —— 本项目**只取「向量证法 + 先猜后证的节奏」**。中国的综合几何公理体系（基本事实 1–4、判定/性质定理的公理化链、三视图）属 **CN-only 知识板块**，**明确不引入**（见 §5 备选区 U-2）。
+- **Abitur 应用**：Q1/Q2 几何题的标准 AFB II 链条（"Begründen Sie" 的高频答法）；LK 的 `Abstände` 与解集几何解释直接受益；口试要求涉及 ≥2 个 IF，本技法天然可做 **G⇄A 交叉**（用 A 域的最值思想解释「最短距离」）。
+- **产出物**：《Vektor-Methode: 空间位置关系与距离的统一处理（Q1-G / LK）》——建议结构：三类对象（点/直线/平面）× 三类问题（位置/夹角/距离）一张总表 + 判定清单
+
+> 来源：`[CN-课标]` 空间向量与立体几何（法向量、方向向量、用向量方法证明判定定理、距离与夹角）；`[CN-教材]` 建系—设向量—列方程的三段程序；`[CN-高考]` 空间角与距离综合题
+
+### CN-Methode: 全概率与「反向树图」（条件概率的系统化）
+
+- **技法内容**：德国的树图是**正向**的（由阶段推结果）。补上半步：当题目问「已知结果，反推它是哪条路径来的」时，先用**全概率公式**把各路径的概率乘积累加得到结果概率，再用**比值**把概率按比例分配回各路径。四格表（`Vierfeldertafel`）与树图可互相译写——四格表适合两步、树图适合多步，遇到「正算容易反推难」时先换表征。
+- **DE-Anschluss**：GK 已教 `mehrstufige Zufallsexperimente`、`Baumdiagramm`、`Vierfeldertafel`、`bedingte Wahrscheinlichkeiten`、`Pfadregeln` [已验证]。全概率**就是路径概率的求和**，是 `Pfadregeln` 的直接推论，无需新概念；反向推断可用四格表的比值表述，不引入新术语。
+- **合规性**：✅ 完全合规 —— 纯属既有工具的系统化编排；且「换一种表征再算」正好落在 KLP 的 `Darstellungswechsel`（13 条启发式策略之一）[已验证]。
+- **Abitur 应用**：S 域 AFB II 高频情境（医疗检测、质量检验、故障溯源）；末段常接 AFB III 的「结果解释 / 模型评判」（例如「检测为阳性是否意味着很可能患病」）；Aufgabenart I 亦可用（数值设计为整除）。
+- **产出物**：《Baumdiagramm ↔ Vierfeldertafel: 条件概率与反向推断》+ 6 题情境题库（全部原创改写，避开医学敏感表述）
+
+> 来源：`[CN-课标]` 条件概率、乘法公式、全概率公式（贝叶斯选学）；`[CN-教材]` 树图与表格互译；`[CN-高考]` 全概率与条件概率综合
+
+### CN-Methode: 函数—方程—不等式三位一体（零点 → 解集）
+
+- **技法内容**：对同一个代数对象，三种提问是同一件事的三种说法：`f` 的**零点** ⇄ 方程 `f(x)=0` 的**根** ⇄ 不等式 `f(x)≥0` 的**解集端点**。操作顺序固定为：先因式分解求零点 → 用零点把数轴分段 → 每段取一个测试点（或看图）定符号 → 写出解集；端点是否取到由不等式是否带等号决定。
+- **DE-Anschluss**：EF 已教 `Nullstellen`、`Verlauf des Graphen`、`Verhalten für x→±∞`、`Definitionsbereich`/`Wertebereich` [已验证]；EF 已明确要求**无工具**解「可提公因式降为线性/二次」的多项式方程 [已验证]；德国的「解集」表述（`Lösungsmenge`、区间）与之完全兼容。
+- **合规性**：✅ 完全合规 —— 全为 EF 已有工具的组合；中国侧的表述优势只在**把三种提问显式并列**这一编排方式上，不含新知识。
+- **Abitur 应用**：**Aufgabenart I（免工具）的常客**——因式分解 → 零点 → 符号判定，三步都在免工具能力范围内（AFB I/II）；也是 `Extremwertprobleme` 与 `Steckbriefaufgaben` 中「先定定义域」的前置动作。
+- **产出物**：《Nullstellen — Gleichung — Ungleichung: 三位一体（EF→Q1 免工具训练）》——建议放在 Aufgabenart I 训练册的第一单元
+
+> 来源：`[CN-课标]` 从函数观点看一元二次方程和一元二次不等式、函数零点与方程根的关系；`[CN-教材]` 数轴标根法；`[CN-高考]` 不等式解集与参数
+
+### 备选技法（未成卡，附理由）
+
+| 候选技法 | 处置 | 理由 |
+|---|---|---|
+| 拉格朗日中值定理证不等式（`ln(1+x)<x`、`sin x < x`） | ❌ **否决** | 属中国**选修 A 类**内容，德国 KLP 完全无此定理 → 违反铁律 ①（引入超纲知识板块）。替代方案：用技法卡 4 的构造辅助函数法证同一批不等式（工具够用）[据推断] |
+| 数学归纳法 | ❌ **否决（作为考纲内容）** | 德国 KLP 不作要求；且 LK 的推理上限是「证一条求导法则」与 `Hauptsatz`。仅可作为 Wissenschaftspropädeutik 的课外素材，不入 Abitur 备考 [已验证] |
+| 平面解析几何联立消元链路（建系→联立→韦达定理→弦长/中点弦/定点定值） | ❌ **否决** | 圆锥曲线整体属 `CN-only` 且不考 → 违反铁律 ①。仅「联立 → 消元」这一步可并入 LGS 训练（G-09）[据推断] |
+| 基本不等式 `√(ab) ≤ (a+b)/2` 求最值 | ⚠️ **可选，降级使用** | 可由 `(√a − √b)² ≥ 0` 一步自证，只用 EF 的平方与平方根 → 属「工具型引理」而非知识板块。但 KLP 未列，**使用前必须先给出那一行证明**——这恰好是一次 `Argumentieren` 训练。建议作为技法卡 5 的附注，不单独立卡 [据推断] |
+| 复数 / 三视图 / 超几何分布 / 回归分析 | ❌ **否决** | 均为 CN-only 知识板块，不考且无法嫁接到德国任何 IF [已验证] |
+
+---
+
+## 5. 高价值差异清单（行动项）
+
+### 🎯 中国更深 / 更系统 —— 值得借鉴改写
+
+| 知识点 | 中国做法 | 德国现状 | 可产出（优先级） |
 |---|---|---|---|
-| **数列（等差/等比/递推/求和）** `A-16` | 独立主题；递推构造、错位相减、裂项相消、分组求和等**成套求和技法**；与数学归纳法配合 | **KLP 全文无数列**；仅在 `Verhalten für x→±∞` 与 gemeinsame Konzepte 中的 `Iteration`、`Kumulation` 间接触及 | **《数列技法卡（承接德国 Iteration/Kumulation 概念）》** + Anki 组；可作为 Q2 拓展单元，明确标注「非 Abitur 必考」 |
-| **导数证明不等式** `A-08` | 构造辅助函数 → 求导 → 单调性 → 证不等式，是高考固定题型 | KLP 无此题型；导数应用集中在校核单调性/极值/面积 | **《用导数证不等式 —— 从 Kurvendiskussion 到 Beweis》方法笔记**：把德国已有的「单调性 + 极值」能力**升级为证明工具**，无缝嫁接 |
-| **三角函数完整单元 + 恒等变换** `A-04` | 必修独立大单元，含和差化积、倍角、辅助角公式，与正余弦定理组成几何计算链 | EF 仅「参数对正弦函数的影响 + 变换」；**GK 不求导三角函数**；LK 求导但无恒等变换体系 | **《三角恒等变换与几何计算链》（LK 优先）**：补德国 LK 三角函数求导前缺的代数变形台阶 |
-| **平面解析几何（圆锥曲线）** `G-09` | 独立主题：圆/椭圆/双曲线/抛物线定义、标准方程、几何性质、**弦长/中点弦/轨迹** | **完全不考** | **《解析几何思维迁移：从圆锥曲线到空间曲面》**（选做）：明确标注「CN-only，不考但可强化向量/参数化直觉」 |
-| **平面向量基本定理（基底分解）** `G-01` | 必修即含向量基本定理与坐标运算 | EF 只有加减/数乘/共线；无基底分解思想 | **《基底与坐标 —— 向量基本定理入门》**：填补 EF-G 缺口，直接强化德国 Q1 的 `Linearkombination` 直觉 |
-| **计数原理（排列组合 + 二项式定理）** `S-05` | 选择性必修独立板块 | GK **完全不涉及**；LK 仅二项系数 | **《计数原理与二项式定理（LK 轨道）》**：为 LK 的 `Binomialkoeffizient` 提供中国式的组合计数地基 |
-| **条件概率的全概率/贝叶斯视角** `S-02` | 系统给出全概率公式与贝叶斯视角 | KLP 只列「条件概率问题」 | **《全概率与贝叶斯 —— 反向树图》**：德国已有的 Baumdiagramm/Vierfeldertafel 可直接承载 |
-| **导数应用的最值/优化题型密度** `A-09` | 生活优化问题密集训练 | `Extremwertprobleme` 概念清晰但题量依赖教师 | **题库**：中国式优化题 → 按德国 `Nebenbedingung` 框架重写 |
-| **数学归纳法** `A-17` | 独立方法板块 | 不作要求 | **《数学归纳法》**（拓展）：可作为 LK 科学预备（Wissenschaftspropädeutik）的加分内容 |
+| 用导数证明不等式 `A-11` | 构造辅助函数 → 求导 → 单调性定号，成套程序 | 无此题型；导数应用止于「求」单调性/极值 | **《Vom Extremwert zum Beweis》** ★★★ 第一优先（GK+LK 通用，直接补 AFB III） |
+| 平面向量基本定理 `G-02` | 必修即完成基底分解与坐标运算 | EF 只有加减/数乘/共线；Q1 的 G 域几乎全建在其上 | **《Basis und Linearkombination》** ★★★ 第二优先（EF-G 补缺 → 化解 Q1 断层） |
+| 数列（递推构造 / 求和四法 / `aₙ=Sₙ−Sₙ₋₁`）`A-19` | 选必独立主题，技法体系完整 | KLP 无数列；仅在 `Iteration` / `Kumulation` 上间接触及 | **《Iterationsprozesse》《Kumulation 离散⇄连续》** ★★（Q2 拓展单元，**明确标注非必考**） |
+| 向量法统一立体几何 `G-14`（节奏借鉴） | 必修直观 → 选必向量重证同一批定理 | 只有向量法一道，无「先猜后证」的显式节奏 | **《Vektor-Methode 总表》** ★★（Q1-G / LK） |
+| 条件概率的系统化 `S-02` | 乘法公式 + 全概率 + 反向推断 | 有树图与四格表，但未系统化为「反向推断」 | **《Baumdiagramm ↔ Vierfeldertafel》** ★★（GK/LK 皆可） |
+| 恒成立/存在性 → 最值 `A-12` | 题型化，含参数分离 | 散在 `Extremwertprobleme` 中 | **《Parameterbereiche》** ★★ |
+| 函数—方程—不等式三位一体 `A-22` | 必修显式并列三种提问 | 工具具备但未并列 | **《Nullstellen — Gleichung — Ungleichung》** ★★（放 Aufgabenart I 首单元） |
+| 对数函数 `A-03` | 必修全开（含换底、与指数互逆） | **GK 完全没有**，仅 LK | **《Logarithmus-Vorlauf（LK 轨道预习）》** ★（GK 学生若转 LK 的补缺材料） |
+| 三角恒等变换与 `A/ω/φ` 参数体系 `A-05` | 必修独立大单元 | EF 只做变换；GK 不求导；LK 求导但无恒等变换体系 | **《Trigonometrische Umformungen（LK 前置）》** ★（补 LK 三角求导前的代数台阶） |
+| 计数原理与二项式定理 `S-05` | 选必独立板块 | GK 无；LK 仅二项系数 | **《Abzaehlen und Binomialkoeffizient（LK）》** ★ |
 
-### ⚪ 德国独有
+### ⚪ 德国独有（备考主线，不可用中国材料替代）
 
-| 知识点 | 说明 |
-|---|---|
-| **`Hilfsmittelfreies Operieren` + `Aufgabenart I`** `X-02` | 把「免工具计算能力」制度化：既是 KLP 独立能力线，又是 Abitur 法定题型。中国高考无强制免工具题。**这是本项目现有笔记 `Mathe-ZKE-2027-Training.md` 已经在做的事** |
-| **`Modellieren` 四段闭环的细颗粒评价** `X-01` | 9 条可评分条目，要求「指出模型边界、比较模型适切性、改进模型」。中国建模主线无此细度 |
-| **`Beurteilende Statistik`（LK）** `S-07` | `Prognoseintervall`、`Konfidenzintervall`、`Stichprobenumfang` 估算——高中阶段的高强度区间估计 |
-| **`Normalverteilung`（LK）** `S-08` | 含密度函数、参数解释，且把 `Verteilungsfunktion` 解释为 **`Integralfunktion`**（S⇄A 官方交叉点） |
-| **`Funktionsscharen` 制度化（LK）** `A-07` | 参数函数族是 LK 独立 Schwerpunkt，非题型技巧 |
-| **`Normalenform`** `G-04` | 作为平面的**独立专名形式**（与 Parameterform、Koordinatenform 并列） |
-| **`windschief`（异面直线）作为 EF 必学分类** `G-03` | EF 即要求判别四种直线位置关系，含异面 |
-| **MMS 规定动作清单** `X-03` | 10 项数字工具能力条目化 |
-| **不规定课时数** `X-07` | 只规定 obligatorische Inhalte；中国课标硬性规定学分与课时 |
+| 知识点 | 说明 | 优先级 |
+|---|---|---|
+| **`Hilfsmittelfreies Operieren` + `Aufgabenart I`** `X-02` | 免工具是**独立评价轴**，写进 KLP 能力与 Abitur 题型。中国高考无强制免工具题 → **这部分中国材料完全帮不上**，必须按德国标准单独练 | ★★★ |
+| **Abitur 结构规则** `X-07` | 笔试须覆盖**全部三 IF**；`innermathematisch : realitätsnah` 须均衡；Teilaufgabe「一处失误不致命」；口试 20–30 min 且 ≥2 IF | ★★★ **结构性约束，优先级最高** |
+| **`Beurteilende Statistik`（LK）** `S-07` | `σ-Regeln`、`Prognoseintervall`、`Konfidenzintervall`、**由区间长度反推 `Stichprobenumfang`** —— 高中阶段德国明显强于中国 | ★★★（LK） |
+| **`Normalverteilung`（LK）** `S-08` | 密度函数、μ/σ 解释、分布函数图象；中国仅了解级 | ★★★（LK） |
+| **`Verteilungsfunktion = Integralfunktion`** `S-09` | KLP 中 **S⇄A 唯一显式交叉点** → 跨领域笔记的最佳素材，也是口试天然题 | ★★★（LK） |
+| **积分概念链六步** `A-17` | `Produktsumme → … → Hauptsatz` 教学法上最显式的概念搭建；中国的定积分在选修（非高考） | ★★★ |
+| **`Steckbriefaufgaben`** `A-15` | 德国做成独立 Schwerpunkt 与方法体系（已有笔记直接对应） | ★★★ |
+| **`Funktionsscharen`（LK）** `A-14` | 参数族为独立 Schwerpunkt，非题型技巧 | ★★★（LK） |
+| **`Modellieren` 四段闭环的细颗粒评价** `X-01` | 9 条可评分条目，含「指出模型边界 / 改进模型 / 比较适切性」 | ★★ |
+| **`Argumentieren` 的证明密度** `X-05` | 4 论证策略 + 8 逻辑结构；EF 证求导法则；LK 证 Hauptsatz | ★★ **是技法卡 4 的补强目标** |
+| **13 条启发式策略点名** `X-04` | 可直接做成方法卡（Analogie / Invarianten / Vorwärts-Rückwärts / Spezialisieren-Verallgemeinern …） | ★★ |
+| **`Normalenform`** `G-06` | 与 Parameter-/Koordinatenform 并列的独立专名形式 | ★（LK） |
+| **`LGS` 算法化 + 解集几何解释** `G-09` | 无工具解 ≤3 未知数；LK 须解释解集含义 | ★★ |
+| **MMS 的 10 项规定动作** `X-03` | 决定哪些内容只能在 Aufgabenart II 出现 | ★★ |
+| **`windschief` 作为 EF 必学分类** `G-04` | EF 即要求判别四种直线位置关系（含异面） | ★★（EF） |
+| **KLP 不规定课时** `X-10` | 只规定 obligatorische Inhalte | — 背景 |
 
 ### 🔵 中国独有（德国不考，仅供理解）
 
-| 知识点 | 说明 |
-|---|---|
-| **数列** `A-16` | 德国无。**但可作为「Iteration / Kumulation」概念的载体**，是最高价值的迁移入口 |
-| **平面解析几何（圆锥曲线）** `G-09` | 德国无。可作为**参数化与坐标法**的强化训练 |
-| **立体几何初步 + 三视图** `G-10` | 德国只做向量法，不做纯几何空间推理 |
-| **复数** `G-11` | 德国 Mathe KLP 全文无复数 |
-| **计数原理（排列组合）** `S-05` | 德国 GK 无；LK 仅二项系数 |
-| **数学归纳法** `A-17` | 德国无 |
-| **成对数据统计/回归** `S-09` | 德国 KLP 未列 |
-| **选修 A/B/C/D/E 分类体系** | 中国的「数理/经济社会/人文/体艺」选修分化，德国无对应结构 |
+| 知识点 | 说明 | 可否借用 |
+|---|---|---|
+| 数列 `A-19` | 德国无。**但 `Iteration` / `Kumulation` 是合法嫁接入口** | ✅ 方法层可借（技法卡 1–3） |
+| 平面向量基本定理 `G-02` | 德国无此条目，但工具（加法/数乘）已在 EF | ✅ 完全可借（技法卡 7） |
+| 用导数证不等式 `A-11` / 恒成立 `A-12` / 三位一体 `A-22` | 德国无此题型，但**工具全在** | ✅ **最高价值**（技法卡 4/5/10） |
+| 平面解析几何（圆/椭圆/双曲线/抛物线）`G-13` | 德国完全不考 | ❌ 知识板块，不可引入 |
+| 立体几何初步（综合几何、三视图、表面积体积）`G-14` | 德国只做向量法 | ⚠️ 只借「先直观后向量」的**节奏** |
+| 复数 `G-15` | 德国 KLP 全文无复数 | ❌ |
+| 计数原理（排列组合）`S-05` | GK 无；LK 仅二项系数 | ⚠️ 仅 LK 的 `Binomialkoeffizient` 可配 |
+| 数学归纳法 `A-20` | 德国不作要求 | ❌（仅课外） |
+| 成对数据统计 / 回归 / 独立性检验 `S-10/S-11` | 德国 KLP 未列 | ❌ |
+| 选修 A/B/C/D/E 分类体系 `X-11` | 德国无对应结构 | ❌ |
 
 ---
 
-## 4. 难度与节奏差异
+## 6. 德国更深条目专节（`both-de-deeper` 汇总）
+
+> 这一节的价值是**防止误判**：这些条目不能用中国材料替代，必须按德国标准练。全部 [已验证]（条目）·[据推断]（对照结论）。
+
+| 条目 | 德国要求 | 中国对应 | 差距性质 |
+|---|---|---|---|
+| **LK 判断统计学** `S-07` | `σ-Regeln` + `Prognoseintervall` + `Konfidenzintervall` + **由给定区间长度估算 `Stichprobenumfang`** 四项成体系 | 区间估计在中国高中**相当轻量**（主要落在选修 A/B 类，不在高考范围） | **知识板块级差距**：中国高考生一般不掌握样本量反推 → 只能按德国教材练 |
+| **`Verteilungsfunktion = Integralfunktion`** `S-09` | LK 明确要求把分布函数**解释为积分函数**，是 KLP 中 **S⇄A 唯一显式交叉点** | 中国选必把正态分布作了解级处理，且**不与积分连接** | **结构性差距**：这是德国独有的跨领域设计，中国无对应位 → **跨领域笔记的最佳素材** |
+| `Normalverteilung` `S-08` | LK 必学：密度函数（Glockenkurve）、μ/σ 参数解释、分布函数图象 | 了解级（误差模型 + 频率直方图直观引入） | 要求层级差 |
+| 积分概念链 `A-17` | 六概念逐步搭建，教学法最显式 | 定积分属选修，不在高考范围 | **方向性差距**：中国反而更浅（前期误判已修正，见 §9-U1） |
+| `Steckbriefaufgaben` `A-15` | 独立 Schwerpunkt + 方法体系 | 待定系数法（常规技法） | 制度化程度差 |
+| `Funktionsscharen` `A-14` | LK 独立 Schwerpunkt | 含参讨论靠题型训练，课标不单列 | 制度化程度差 |
+| `Umkehrfunktion`（LK）`A-16` | 须**判定可逆性** + 求解析式 + 说明图象关系 | 课标层面要求较轻 | 要求层级差 |
+| `Kettenregel`（LK）`A-09` | 一般化，与 Produktregel 并列为必用工具 | 限于 `f(ax+b)` | 范围差（仅 LK） |
+| `LGS` + 解集解释 `G-09` | 算法化解法 + 无工具 ≤3 未知数 + LK 解释解集几何含义 | 高斯消元主要在选修 A 类 | 高中阶段要求差 |
+| `Argumentieren` `X-05` | 4 论证策略 + 8 逻辑结构；EF 证求导法则；LK 证 Hauptsatz | 证明集中在立体几何与数列 | **密度差** → 由技法卡 4 补强 |
+| 13 条启发式策略 `X-04` | KLP 逐条点名 | 素养表述，无策略清单 | 显性化程度差 |
+| `Modellieren` 评价颗粒度 `X-01` | 9 条可评分条目，含模型边界与改进 | 建模主线表述更粗 | 评价细度差 |
+
+---
+
+## 7. 难度与节奏差异
 
 | 维度 | 德国 NRW | 中国 |
 |---|---|---|
-| **广度** | 窄而聚焦：3 个 Inhaltsfeld，**明确排除**数列、平面解析几何、复数、立体几何初步、计数原理 | 宽而全：4 主线 × 必修/选择性必修/选修三层，覆盖数列、圆锥曲线、复数、立体几何、计数原理 |
-| **深度** | 单点深：`Modellieren` 四段闭环、`Funktionsscharen`、判断统计、Hauptsatz 证明、免工具能力 | 单点略浅但**密度极高**：导数应用题型化、数列求和技法、圆锥曲线弦长体系、三角恒等变换链 |
-| **数学工具** | MMS/CAS **被制度化**（10 项规定动作）+ **法定免工具题型**（双重工具观） | 规定工具可用，但**无强制免工具要求**；强调手算与技巧熟练度 |
-| **题型侧重** | `innermathematisch : realitätsnah` **须均衡**；三领域**必须全覆盖**；AFB II 为重心；概念解释与论证占比高 | 题型高度模式化，运算与综合应用占比高；高考依据**水平二** |
-| **证明要求** | EF 须证明一条求导法则；LK 须证明 Hauptsatz；`Argumentieren` 含 4 种论证策略、8 类逻辑结构 | 证明集中在立体几何（向量法）与数列（数学归纳法）；总体证明密度低于德国 LK |
-| **评价方式** | EPA 0–15 / Zentralabitur / kriterielles Bewertungsraster | 高考等级制 / 学业水平考试分级（水平一、二、三） |
-| **课时约束** | **不规定课时**，只规定 obligatorische Inhalte | 硬性：必修 8 学分 144 课时 + 选择性必修 6 学分 108 课时 |
+| 广度 | **窄而聚焦**：3 个 IF，明确排除数列、平面解析几何、复数、立体几何初步、计数原理 | **宽而全**：4 主线 × 三层模块，覆盖德国不考的多个板块 |
+| 深度 | **单点深**：`Modellieren` 闭环、`Funktionsscharen`、判断统计、`Hauptsatz` 证明、免工具能力 | **单点略浅但密度极高**：导数应用题型化、数列求和技法、圆锥曲线体系、三角恒等变换链 |
+| 数学工具 | MMS/CAS **制度化**（10 项规定动作）+ **法定免工具题型**（双重工具观） | 规定工具可用，但无强制免工具要求；强调手算与技巧熟练度 |
+| 题型侧重 | `innermathematisch : realitätsnah` 须均衡；**三 IF 必须全覆盖**；AFB II 为重心；概念解释与论证占比高 | 高度模式化；运算与综合应用占比高；依据水平二 |
+| 证明要求 | EF 证一条求导法则；LK 证 Hauptsatz；`Argumentieren` 含 4 策略 8 结构 | 证明集中在立体几何（向量法）与数列（归纳法）；总体密度低于德国 LK |
+| 评价 | EPA 0–15 + `kriterielles Bewertungsraster` + AFB I/II/III | 高考等级制；学业水平考试（水平一/二/三） |
+| 课时 | **不规定**，只规定 obligatorische Inhalte | 硬约束：必修 144 + 选必 108 课时 |
+| 时间预算 | Abitur **LK 300 min / GK 255 min** [已验证] | 高考 120 min（全国卷）/ 部分省市 150 min [据推断] |
+
+> 时间预算差是**节奏设计的根因**：德国每题可用时间是中国的 2 倍以上，因此能承载「建模 + 论证 + 评判」的长链条；中国的解法密度是被 120 分钟逼出来的。**移植中国技法时，必须保留其「省时间」的一面，而把省下的时间投到德国要求的论证环节**——这是技法卡 4/5/10 的设计原则。[据推断]
 
 ---
 
-## 5. 待核实项
+## 8. 三条铁律自检表
 
-- [ ] **`China/Mathe-CN-Kursstandard.md` 尚未创建** —— 本表中国侧依赖 `01-Quellen.md §B.1` 的调研结论，未与该文件交叉核对
-- [ ] **中国侧版本**：仅取得 2017 年版（非 2020 修订）。需确认 2020 修订对数学是否有实质改动 [据推断：极小]
-- [ ] 中国选择性必修「概率与统计」中**全概率公式/贝叶斯**是否属必修范围，还是仅部分教材拓展 [据推断]
-- [ ] 中国**超几何分布、回归分析**的确切课标要求等级 [据推断]
-- [ ] 中国**旋转体体积**是否在必修/选择性必修的定积分应用中（还是仅选修）[据推断]
-- [ ] 德国 **Abitur 2027 数学 Fachliche Vorgaben** 的具体内容（仅验证了命名规律 `m_2027_gg.pdf`）[未获取到]
-- [ ] `Klausur-Formate/Klausur-und-Abitur-Formate.md` **目录尚未创建** [未获取到]
-- [ ] `Operatoren-NRW-Alle-Faecher.md` **尚未创建**；数学 Operatoren 直链已知为 `m_operatoren_ab_2023_1.pdf` [已验证，见 `01-Quellen.md §A.3`]
-- [ ] 德国 GK 的 `Umkehrfunktion` 说 Wurzelfunktion 为例 —— 需确认 Wurzelfunktion 本身是否在 EF 已引入 [据推断：EF 未列，Q1 GK 引入]
-- [ ] 「德国不做复数」的核对范围：本表结论基于 **NRW Mathe KLP 现行版全文检索无「komplex」/「Zahl i」** [据推断]
+| 技法卡 | 铁律① 只引方法不引超纲知识 | 铁律② 已标 DE-Anschluss | 铁律③ 来源分层 | 结论 |
+|---|---|---|---|---|
+| 1 递推构造 | ⚠️ 载体为 CN-only，须包装为 Iterationsprozess | ✅ `Iteration` + EF 代数工具 | ✅ 课标/教材/高考 | 通过（⚠️） |
+| 2 有限和四法 | ⚠️ 载体为 CN-only；且中国课标自身反对繁琐技巧训练 | ✅ `Kumulation` + 积分概念链 | ✅ 课标/教材/高考 | 通过（⚠️） |
+| 3 `aₙ=Sₙ−Sₙ₋₁` | ⚠️ 载体 CN-only，但思想为德国已有的连续版 | ✅ `Bestands-`/`Integralfunktion` | ✅ 课标/教材/高考 | 通过（⚠️） |
+| 4 导数证不等式 | ✅ 无新知识，纯重组 | ✅ EF 单调性/极值 + Q1/LK 求导工具 | ✅ 课标/教材/高考 | ✅ **完全通过** |
+| 5 恒成立→最值 | ✅ 纯题型层 | ✅ `Extremwertprobleme` + `Nebenbedingung` | ✅ 课标/教材/高考 | ✅ **完全通过** |
+| 6 含参单调性讨论 | ⚠️ **GK 无 `Funktionsscharen`**，仅限 LK | ✅ LK `Funktionsscharen` + `Monotonie` | ✅ 课标/教材/高考 | 通过（⚠️，限 LK） |
+| 7 基底分解 | ✅ 只用到加法与数乘 | ✅ EF 向量运算 + `Parameterform` | ✅ 课标/教材/高考 | ✅ **完全通过** |
+| 8 向量法统一立体几何 | ⚠️ 只取向量证法 + 节奏；**公理体系不引入** | ✅ EF 位置关系 + Q1 `Skalarprodukt`/Ebenen + LK `Abstände` | ✅ 课标/教材/高考 | 通过（⚠️） |
+| 9 全概率/反向树图 | ✅ `Pfadregeln` 的直接推论 | ✅ GK 树图/四格表/条件概率 | ✅ 课标/教材/高考 | ✅ **完全通过** |
+| 10 三位一体 | ✅ 全为 EF 已有工具的组合 | ✅ `Nullstellen` + 图象 + 无工具因式分解 | ✅ 课标/教材/高考 | ✅ **完全通过** |
+
+**合规性分布**：✅ 完全合规 5 条（4/5/7/9/10）· ⚠️ 需注意 5 条（1/2/3/6/8）。**无任何一条引入德国 KLP 之外的知识板块** —— 被否决的候选已在 §4 备选区列明。
+
+---
+
+## 9. 待核实项
+
+- [ ] **U1（本次修正）**：前期版本称中国选必「导数及其应用」含定积分/微积分基本定理。经与官方课标解析版核对，**定积分与牛顿-莱布尼茨公式属选修 A/B 类「微积分」专题，不在高考范围** → 主表 A-17 已改标 `DE-only`。**修正依据充分，但建议二次抽检课标原文「选择性必修 主题一 单元2」全条目** [据推断]
+- [ ] **U2**：中国选必「概率与统计」中**超几何分布、全概率公式**的确切要求等级（掌握/了解）未在解析版中逐条标出 [据推断]
+- [ ] **U3**：中国**正态分布**在等级考中的实际考查深度（课标为「了解」，但高考实战可能高于此）[据推断]
+- [ ] **U4**：德国 **Abitur 2027 数学 Fachliche Vorgaben** 的具体内容 [未获取到]（仅验证了命名规律 `m_2027_gg.pdf`）
+- [ ] **U5**：`Klausur-Formate/Klausur-und-Abitur-Formate.md` **目录尚未创建** [未获取到]
+- [ ] **U6**：`Operatoren-NRW-Alle-Faecher.md` **尚未创建**；数学 Operatoren 直链已知为 `m_operatoren_ab_2023_1.pdf` [已验证，见 `01-Quellen.md §A.3`]。技法卡的「产出物」若要标注 Operator 动词，须待该文件建成后回填
+- [ ] **U7**：德国 GK 的 `Umkehrfunktion` 以 Wurzelfunktion 为例 —— Wurzelfunktion 本身是否在 EF 已引入未确认 [据推断：EF 未列，Q1 GK 引入]
+- [ ] **U8**：技法卡 1–3（数列系列）在**真实 Abitur 真题中的出现频率**未做实证统计 → 标为「非必考」是保守判断，建议用近 5 年 NRW 真题抽检 [未获取到]
+- [ ] **U9**：「德国不做复数」的核对范围 —— 基于 NRW Mathe KLP 现行版全文检索无 `komplex` / `Zahl i` [据推断]
 
 ---
 
 ## 变更记录
 
-- 2026-09-24：创建（S1 试点阶段）。基于 DE 文件（官方 KLP `gost_klp_m_2023_06_07.pdf` 逐条核对）+ `01-Quellen.md §B` 中国侧调研结论。**无官方中德对照文件**，全表为项目自行推导，逐条标注推理依据。
+- 2026-09-24：创建（S1 试点阶段，228 行）。DE 侧基于官方 KLP 逐条核对；CN 侧当时**文件尚未创建**，依赖 `01-Quellen.md §B` 调研结论。
+- 2026-09-24：**升级版重写（v2，本版）**。变更如下：
+  - ✅ **CN 源已就位**：与 `China/Mathe-CN-Kursstandard.md`（官方「2017 年版 2020 年修订」全文解析）交叉核对，**前期「仅有 2017 年版」的版本风险解除**，已从头部移除该风险声明。
+  - 🔧 **修正 3 处前期误判**：
+    1. **A-17 定积分** —— 前期标 `both-equal` 并称中国选必含定积分；实为**选修 A/B 类内容、不在高考范围** → 改标 `DE-only`（见 U1）
+    2. **A-03/A-04 对数函数** —— 前期合并为一行；因 **GK 无 / LK 有且要求更高**，结论方向相反 → 拆为两行，分别标 `both-cn-deeper`（GK 视角）与 `both-de-deeper`（LK 视角）
+    3. **A-09 链式法则** —— 前期标 `both-equal`；因 LK 一般化而 CN 课标限于 `f(ax+b)` → 改标 `both-de-deeper`
+  - ➕ **主表扩充**：由 44 行（A 17 / G 11 / S 9 / X 7）增至 **60 行**（A 23 / G 15 / S 11 / X 11），另加 §3 状态速查表；「差异说明」列改为 **`Abitur 应试价值`** 列（★★★/★★/★/— 四级，定义见 §0.3）；依据列改为**双段标注**（条目来源 / 对照结论，见 §0.4）。
+  - ➕ **新增 §4 CN-Methode 技法卡 10 条**（试点版仅 3 条线索，无成卡）：递推构造 / 有限和四法 / `aₙ=Sₙ−Sₙ₋₁` / **导数证不等式** / 恒成立→最值 / 含参单调性讨论 / **基底分解** / 向量法统一立体几何 / 全概率反向树图 / 三位一体。每条严格套用「技法内容 / DE-Anschluss / 合规性 / Abitur 应用 / 产出物」五段式，并标来源分层。
+  - ➕ **新增 §4 备选技法否决区**：明确列出**拉格朗日中值定理、数学归纳法、圆锥曲线联立链路**等被否决项及理由（铁律①的反向证明）。
+  - ➕ **新增 §6 德国更深条目专节**：集中呈现 LK 判断统计学与 `Verteilungsfunktion = Integralfunktion`（KLP 中 S⇄A 唯一显式交叉点）。
+  - ➕ **新增 §8 三条铁律自检表**：10 条技法卡逐条对照铁律 ①②③，合规性分布为 ✅5 / ⚠️5。
+  - ➕ **新增 §7 时间预算分析**：Abitur 255/300 min vs 高考 120 min，作为「移植中国技法」的节奏设计原则。
+  - ⚠️ 仍坚持：**无任何官方中德对照文件**，全表对照结论均为本项目推导，逐条标注。
