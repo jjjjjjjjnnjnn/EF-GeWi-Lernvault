@@ -14,6 +14,31 @@ tags: [EF, Meta]
 > 大文件一律进本地 `_Downloads/`（gitignore，不推送）；仓库只留本清单 + 自己写的笔记。
 > 每条记录：URL + 许可 + 本地文件名 + 状态（pending/ok）。下载后在 `_Downloads/` 同目录放同名 `.quelle.txt` 写来源与许可。
 
+## CURRICULUM-Runde 2026-09-24（考纲工程专属：官方源批量采集）
+
+> 目标：`00_META/Curriculum/01-Quellen.md` 的本地实体层。全部落 `_Downloads/CURRICULUM/<Fach>/`（gitignored），
+> 每 PDF 配同名 `.quelle.txt`。许可统一为 **Amtliches Werk（MSB NRW）/ UrhWissG §60b** 或 **IQB/KMK frei** 或 **MOE 官方公开**。
+> 本轮新增 **203 PDF / 127MB**（CURRICULUM 现共 218 PDF；含 15 件前次遗留 scratch）。
+
+| # | 包 | 内容 | 本地 | 状态 |
+|---|---|---|---|---|
+| C1 | NRW KLP Sek II（10 科 ×2 版） | 现行版（2022/23 及 2013）+ 新版（ab SJ 2027/28）KLP，共 20 件 | `CURRICULUM/<Fach>/klp_*_20xx.pdf` | ok（20） |
+| C2 | Operatoren 各科官方 | Deutsch/Englisch/Philo/SoWi(+bili)/Musik/Sport/Mathe(×2)/Physik/Chemie/Bio(+bili) 共 13 件 | `CURRICULUM/_Operatoren/operatoren_*.pdf` | ok（13） |
+| C3 | Abitur-Vorgaben 2027–2029 | 10 科 ×3 年 GK（`_gg`）共 30 件 | `CURRICULUM/_Abitur-Vorgaben/vorgaben_*_20xx_gg.pdf` | ok（30） |
+| C4 | Konstruktionsvorgaben | 10 科 + SoWi-Erläuterungen 共 12 件 | `_Abitur-Vorgaben/konstruktionsvorgaben_*.pdf` | ok（12） |
+| C5 | Korrekturzeichen | 10 科 | `_Abitur-Vorgaben/korrekturzeichen_*.pdf` | ok（10） |
+| C6 | Beispielaufgaben ab Abitur 2025 | Philo/Physik(GK+LK)/Bio(GK+LK)/Chemie(GK+LK) + Deutsch 4 型 + Philo 2017 共 12 件 | `_Abitur-Vorgaben/beispielaufgaben_*.pdf` | ok（12） |
+| C7 | ZKE（EF 期末全州统考） | Deutsch/Mathe Vorgaben 2027 + Mathe Teil A Beispiel 1–4 + Teil B CAS/WTR 共 8 件 | `_Abitur-Vorgaben/zke_*.pdf` | ok（8） |
+| C8 | Mathe ab 2026 形式 | Vorblatt GK/LK + Prüfungsteil 1 GK/LK(Pflicht+Wahlpflicht) + digitale Werkzeuge 共 7 件 | `CURRICULUM/Mathe/pruefungsteil*/vorblatt*/anforderungen_*` | ok（7） |
+| C9 | Formelsammlung/Formeldokument | NRW Mathe-NaWi Formelsammlung 2024（Mathe+Physik）+ Mathe Formeldokument + Chemie Formeldokument + Nuklidkarten×2 | `CURRICULUM/{Mathe,Physik,Chemie}/…` | ok（6） |
+| C10 | IQB Abituraufgabenpools（公开） | Bio 12 / Chemie 12 / Deutsch 11+4 Beispiel / Englisch 12 / Physik 12 / Mathe 12，共 64 件 | `CURRICULUM/_IQB/<Fach>_*_Aufgabe.pdf` | ok（64） |
+| C11 | 中国高中课标（2017年版2020年修订） | 教育部官方发布包全 21 件（课程方案+语文/数学/英语/政治/史地/物化生/信息/通用技术/艺体/日俄德法西） | `CURRICULUM/_China/moe_put_2020_*.pdf` | ok（21，38MB ZIP 解包） |
+
+> **仅登记未下载（见对话报告）**：BASS 13-32 Nr. 6（`https://bass.schule.nrw/20012.htm`，仅 HTML 无 PDF，HEAD 405）/
+> IQB Bildungsstandards AHR 各科独立 PDF（页面仅导航，无直链）/ ICTR 课标下载中心（412 反爬）/ 人教社课标专页（403）。
+> **404 纠正**：`e_operatoren_ab2025.pdf` 不存在，实际为 `e_operatoren_ab_abitur2025.pdf`（改由 Fachseite 解析文件名）。
+> 采集方式：先 `curl -sIL` 验状态码+content-type，再下载并校验 `%PDF` 魔数；Fachseite/IQB 页 HTML 解析取真实文件名（不盲试）。
+
 ## Material-Offensive 2026-09-22（脚本 `scripts/fetch-material.py` + fixup，一键重跑）
 
 | # | 包 | 内容 | 许可 | 本地 | 状态 |
