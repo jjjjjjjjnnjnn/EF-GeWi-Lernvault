@@ -56,6 +56,24 @@ export const notes: Note[] = [
     ],
   },
   {
+    id: "deutsch-leserlenkung",
+    fach: "Deutsch",
+    thema: "Sachtextanalyse & Leserlenkung",
+    zh: "实用文读者引导与修辞功能链",
+    operatoren: ["analysieren", "untersuchen", "darstellen", "erörtern"],
+    klausurrelevant: true,
+    bodyDE: [
+      "Sinnabschnitte & Leserlenkung: Dekonstruktion des argumentativen Gangs in Sinnabschnitte und Identifikation persuasiver Absichten.",
+      "Dreischritt der Rhetorik: Benennung des Stilmittels, textgenauer Beleg mit Zeilenangabe und funktionale Wirkungsanalyse auf die Rezipienten.",
+      "Scheinargumente & Kritik: Aufdecken von logischen Fehlschlüssen (z.B. Scheinargumente, Verallgemeinerungen) im Rahmen von AFB III.",
+    ],
+    bodyZH: [
+      "意义段落与读者引导：按论证推演节点将实用文切分为意义段落，揭示作者对受众认知与情感的操控意图。",
+      "修辞分析三步法：修辞手法学术定名、精准行号引注原句、剖析微观功能如何直接反哺核心论点论证。",
+      "逻辑漏洞与批判审视：在 AFB III 评判中敏锐识别假托论据、诉诸大众偏见或稻草人谬误，实施有效反驳。",
+    ],
+  },
+  {
     id: "englisch-pee-method",
     fach: "Englisch",
     thema: "P.E.E. Method & Characterization",
@@ -71,6 +89,24 @@ export const notes: Note[] = [
       "观点（Point）：首句用一个明确的主题句直接亮出人物特质或核心论点。",
       "证据（Evidence）：无缝嵌入文本原句并精准附带行号引注（如 'cf. ll. 12-14'）。",
       "阐释（Explanation）：深入剖析语言风格与语域如何支撑论据并反哺核心人物动机。",
+    ],
+  },
+  {
+    id: "englisch-mediation",
+    fach: "Englisch",
+    thema: "Mediation & Communicative Strategies",
+    zh: "跨文化信息调解与交际策略",
+    operatoren: ["mediate", "summarize", "explain", "comment"],
+    klausurrelevant: true,
+    bodyDE: [
+      "Situational Embedding: Strict alignment with the communicative scenario, target audience, and required text format (e.g. email, article).",
+      "No 1:1 Translation: Selective extraction of key information and independent paraphrasing into idiomatic English.",
+      "Cultural Contextualization: Clear explanation of culture-specific German institutions (e.g. FSJ, Abitur, dual education) without borrowing German terms.",
+    ],
+    bodyZH: [
+      "交际情境锚定：严格契合题干设定的交际场景、目标受众身份与体裁格式（如正式邮件、校刊专栏文章）。",
+      "摒弃逐字死译：基于设问精准筛选德语核心事实，以地道英语主谓宾句型独立组织重写，杜绝德式英语。",
+      "德国本土文化释义：针对 FSJ 志愿年、Abitur 高考或双元制大学等概念提供精准英语定语从句解释。",
     ],
   },
   {
@@ -290,6 +326,24 @@ export const notes: Note[] = [
     ],
   },
   {
+    id: "philo-kant-maxime",
+    fach: "Philosophie",
+    thema: "Kategorischer Imperativ & Maximenprüfung",
+    zh: "康德定言命令与准则普遍化检验",
+    operatoren: ["rekonstruieren", "analysieren", "beurteilen", "erörtern"],
+    klausurrelevant: true,
+    bodyDE: [
+      "Deontologische Ethik: Moralität begründet sich im guten Willen und dem Handeln aus reiner Pflicht unter Achtung des Sittengesetzes.",
+      "Vier-Schritte-Maximenprüfung: Formulierung der Maxime, Erhebung zum Naturgesetz, Prüfung auf logischen Denkwiderspruch und Wollenswiderspruch.",
+      "Selbstzweckformel: Der Mensch muss jederzeit zugleich als Zweck an sich selbst und niemals bloß als relatives Mittel gebraucht werden.",
+    ],
+    bodyZH: [
+      "先验义务论伦理：行动的道德价值唯一取决于出于纯粹义务的善良意志，而非后验经验功利后果。",
+      "准则普遍化四步法：提炼主观准则、升格为普遍自然法、检验概念逻辑设想矛盾、检验理性意愿矛盾。",
+      "自为目的公式：人在任何情况下都必须作为自身的目的被尊重，严禁将其降格为谋取功利的冰冷工具手段。",
+    ],
+  },
+  {
     id: "musik-sonatenform",
     fach: "Musik",
     thema: "Sonatenhauptsatzform & Motivverarbeitung",
@@ -355,6 +409,10 @@ export const cards: Card[] = [
   { id: "c25", front: "Freier Fall", back: "自由落体运动", example: "Gleichmäßig beschleunigte Bewegung mit Erdbeschleunigung g ohne Luftwiderstand.", fach: "Physik", dueIn: "morgen" },
   { id: "c26", front: "Zwischenmolekulare Kräfte", back: "分子间作用力", example: "Van-der-Waals-Kräfte, Dipol-Dipol-Kräfte und Wasserstoffbrückenbindungen.", fach: "Chemie", dueIn: "heute" },
   { id: "c27", front: "Carrier- & Kanalproteine", back: "载体蛋白与通道蛋白", example: "Erleichterte Diffusion durch biologische Membranen entlang des Gradienten.", fach: "Bio", dueIn: "in 2 Tagen" },
+  { id: "c28", front: "Scheinargument", back: "假托论据（诡辩）", example: "Täuscht eine rationale Begründung lediglich vor.", fach: "Deutsch", dueIn: "heute" },
+  { id: "c29", front: "Cultural Contextualization", back: "文化语境释义", example: "Explaining culture-specific concepts like Abitur clearly.", fach: "Englisch", dueIn: "morgen" },
+  { id: "c30", front: "Selbstzweckformel", back: "人类自为目的公式", example: "Der Mensch darf niemals bloß als Mittel gebraucht werden.", fach: "Philosophie", dueIn: "heute" },
+  { id: "c31", front: "Maximenprüfung", back: "准则普遍化四步检验", example: "Prüfung subjektiver Handlungsmaximen auf Denk- und Wollenswiderspruch.", fach: "Philosophie", dueIn: "in 2 Tagen" },
 ];
 
 export const quizSteps = [

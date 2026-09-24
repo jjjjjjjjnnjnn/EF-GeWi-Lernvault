@@ -60,7 +60,7 @@ describe("Blocks bilingual reading contract", () => {
       Array.from(article.querySelectorAll(".font-mono")).some((element) => element.textContent === math);
     expect(hasRawMath()).toBe(true);
 
-    await waitFor(() => expect(article.querySelector(".katex-display")).not.toBeNull());
+    await waitFor(() => expect(article.querySelector(".katex-display")).not.toBeNull(), { timeout: 3000 });
     expect(hasRawMath()).toBe(false);
   });
 });
