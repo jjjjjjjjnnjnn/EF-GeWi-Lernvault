@@ -110,6 +110,24 @@ export const notes: Note[] = [
     ],
   },
   {
+    id: "mathe-steckbrief",
+    fach: "Mathe",
+    thema: "Steckbriefaufgaben & Funktionsanpassung",
+    zh: "待定系数法与几何条件逆推建模",
+    operatoren: ["aufstellen", "bestimmen", "berechnen"],
+    klausurrelevant: true,
+    bodyDE: [
+      "Ansatz & Grad: Für Polynom n-ten Grades $f(x) = a_n x^n + \\dots + a_0$ sind genau $n+1$ linear unabhängige Bedingungen erforderlich.",
+      "Geometrische Bedingungen: Punkte $f(x_0)=y_0$, Extrema $f'(x_0)=0$, Wendepunkte $f''(x_0)=0$, Wendetangente $f'(x_0)=m$.",
+      "Lineares Gleichungssystem: Aufstellen via Gauß-Algorithmus oder GTR/CAS; anschließende Definitions- und Randwertprüfung.",
+    ],
+    bodyZH: [
+      "函数设式与自由度：$n$ 次多项式 $f(x) = a_n x^n + \\dots + a_0$ 具有 $n+1$ 个待定系数，必须对应 $n+1$ 个线性无关条件。",
+      "几何特征翻译：过定点 $f(x_0)=y_0$、极值点 $f'(x_0)=0$、拐点 $f''(x_0)=0$、拐点切线斜率 $f'(x_0)=m$。",
+      "线性方程组求解：通过高斯消元法或图形计算器求解系数向量，最后验证对称性与区间边界合理性。",
+    ],
+  },
+  {
     id: "physik-kinematik",
     fach: "Physik",
     thema: "Kinematik & Newtonsche Axiome",
@@ -143,6 +161,24 @@ export const notes: Note[] = [
       "惯性与作用力定律：惯性定律（合力为零时保持静止或匀速直线运动）与反作用力定律（Actio = Reactio）。",
       "斜面受力分解模型：下滑力 $F_H = m \\cdot g \\cdot \\sin(\\alpha)$，法向正压力 $F_N = m \\cdot g \\cdot \\cos(\\alpha)$，摩擦力阻碍相对运动。",
       "机械能守恒定律：在只有重力做功的保守力场中，动能与重力势能之和保持恒定。",
+    ],
+  },
+  {
+    id: "physik-freier-fall",
+    fach: "Physik",
+    thema: "Gleichmäßig beschleunigte Bewegung & Freier Fall",
+    zh: "匀加速直线运动与自由落体定律",
+    operatoren: ["berechnen", "herleiten", "analysieren"],
+    klausurrelevant: true,
+    bodyDE: [
+      "Bewegungsgleichungen: $$v(t) = g t + v_0$$ und $$h(t) = -\\frac{1}{2} g t^2 + v_0 t + h_0$$ mit $g \\approx 9{,}81\\,\\text{m}/\\text{s}^2$.",
+      "Unabhängigkeit von Masse: Im Vakuum fallen alle Körper gleich schnell; Luftwiderstand führt zur Grenzgeschwindigkeit $v_{\\text{term}}$.",
+      "Superpositionsprinzip: Horizontale gleichförmige Bewegung überlagert ungestört vertikale Fallbewegung (Wurfparabel).",
+    ],
+    bodyZH: [
+      "运动学方程：$$v(t) = g t + v_0$$ 与 $$h(t) = -\\frac{1}{2} g t^2 + v_0 t + h_0$$，重力加速度 $g \\approx 9{,}81\\,\\text{m}/\\text{s}^2$。",
+      "质量无关性：真空中不同质量物体下落加速度严格相同；空气阻力随速率上升，终达受力平衡之终端速度 $v_{\\text{term}}$。",
+      "运动独立性原理：平抛运动在水平方向匀速与竖直方向自由落体互不干扰，合成轨迹为平抛抛物线。",
     ],
   },
   {
@@ -182,6 +218,24 @@ export const notes: Note[] = [
     ],
   },
   {
+    id: "chemie-zmk",
+    fach: "Chemie",
+    thema: "Zwischenmolekulare Kräfte & Stoffeigenschaften",
+    zh: "分子间作用力与物质物理性质",
+    operatoren: ["erläutern", "vergleichen", "begründen"],
+    klausurrelevant: true,
+    bodyDE: [
+      "Hierarchie der Kräfte: Van-der-Waals-Kräfte (temporäre Dipole) < Dipol-Dipol-Kräfte (permanente Dipole) < Wasserstoffbrückenbindungen (H an F, O, N).",
+      "Siedepunkt-Korrelation: Stärkere zwischenmolekulare Wechselwirkungen erfordern höhere thermische Energie zum Phasenübergang.",
+      "Löslichkeitsregel: 'Similia similibus solvuntur' — polare Substanzen lösen sich in polaren Solventien, unpolare in unpolaren.",
+    ],
+    bodyZH: [
+      "作用力强度阶梯：范德华力（瞬时偶极诱导）< 永久偶极-偶极力 < 氢键（H 连接强电负性原子 F、O、N）。",
+      "沸点与相变规律：分子间作用力越强，克服引力实现气化所需的活化热能越高，宏观沸点与熔点越高。",
+      "相似相溶原理：极性溶质易溶于水等极性溶剂，非极性溶质（如烷烃）易溶于有机非极性溶剂。",
+    ],
+  },
+  {
     id: "bio-zellbiologie",
     fach: "Bio",
     thema: "Biomembran & Enzymkinetik",
@@ -197,6 +251,24 @@ export const notes: Note[] = [
       "流动镶嵌模型：具选择透过性的磷脂双分子层骨架，嵌入贯穿蛋白与外周蛋白。",
       "酶催化机制：基于锁钥学说形成酶-底物复合物，显著降低化学反应所需的活化能 $E_A$。",
       "反应速率调控：最适温度前遵循范霍夫规则（RGT）；极端高温或强酸强碱导致空间三级构象不可逆变性。",
+    ],
+  },
+  {
+    id: "bio-biomembran-osmose",
+    fach: "Bio",
+    thema: "Biomembran-Transportmechanismen & Osmose",
+    zh: "跨膜运输机制与细胞渗透平衡",
+    operatoren: ["beschreiben", "vergleichen", "erklären"],
+    klausurrelevant: true,
+    bodyDE: [
+      "Transporttypen: Passive Diffusion (Kanal-/Carrierproteine ohne ATP entlang Gradient) vs. aktiver Transport (unter ATP-Verbrauch gegen Gradient).",
+      "Osmose & Tonizität: Gerichteter Wasserstrom durch Semipermeabilität; hyperton (Wasserverlust), isoton (Gleichgewicht), hypoton (Wassereinstrom).",
+      "Pflanzliche Plasmolyse: Ablösung des Protoplasten von Zellwand in hypertoner Lösung; Reversibilität durch Deplasmolyse.",
+    ],
+    bodyZH: [
+      "跨膜运输方式分类：被动转运（顺浓度梯度，无需消耗 ATP，如通道蛋白与载体蛋白协助扩散）vs 主动转运（逆浓度梯度，消耗 ATP）。",
+      "渗透作用与介质张力：半透膜两侧水分子定向移动；高渗环境失水、等渗动态平衡、低渗环境吸水膨胀。",
+      "植物质壁分离实验：在高渗溶液中原生质体收缩脱离细胞壁；移入纯水或低渗环境可实现质壁分离复原（Deplasmolyse）。",
     ],
   },
   {
@@ -279,6 +351,10 @@ export const cards: Card[] = [
   { id: "c21", front: "Kurvendiskussion", back: "曲线讨论（性质研究）", example: "Systematische Untersuchung von Symmetrie, Nullstellen und Extrema.", fach: "Mathe", dueIn: "heute" },
   { id: "c22", front: "Trägheitsgesetz", back: "牛顿第一惯性定律", example: "Ein kräftefreier Körper verharrt in Ruhe oder gleichförmiger Bewegung.", fach: "Physik", dueIn: "morgen" },
   { id: "c23", front: "Protolyse & pH", back: "酸碱质子转移与pH对数标度", example: "Säure als Protonendonator und pH = -lg[H3O+] in wässriger Lösung.", fach: "Chemie", dueIn: "heute" },
+  { id: "c24", front: "Steckbriefaufgabe", back: "求式建模（依几何条件求解析式）", example: "Bedingungen wie f'(2)=0 und f(0)=3 in ein lineares Gleichungssystem übersetzen.", fach: "Mathe", dueIn: "heute" },
+  { id: "c25", front: "Freier Fall", back: "自由落体运动", example: "Gleichmäßig beschleunigte Bewegung mit Erdbeschleunigung g ohne Luftwiderstand.", fach: "Physik", dueIn: "morgen" },
+  { id: "c26", front: "Zwischenmolekulare Kräfte", back: "分子间作用力", example: "Van-der-Waals-Kräfte, Dipol-Dipol-Kräfte und Wasserstoffbrückenbindungen.", fach: "Chemie", dueIn: "heute" },
+  { id: "c27", front: "Carrier- & Kanalproteine", back: "载体蛋白与通道蛋白", example: "Erleichterte Diffusion durch biologische Membranen entlang des Gradienten.", fach: "Bio", dueIn: "in 2 Tagen" },
 ];
 
 export const quizSteps = [
