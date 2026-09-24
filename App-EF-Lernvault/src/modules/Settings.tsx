@@ -3,6 +3,16 @@ import { t, type Lang } from "../i18n";
 import AiSettings from "../components/AiSettings";
 import { httpAccess, pullAll, pushAll, stampSync, syncStore } from "../engine/sync";
 import { allPersistedKeys } from "../engine/storageKeys";
+import {
+  THEMES,
+  DENSITIES,
+  getStoredTheme,
+  setStoredTheme,
+  getStoredDensity,
+  setStoredDensity,
+  type ThemeId,
+  type DensityId,
+} from "../engine/theme";
 
 // Einstellungen-Hub: bündelt verstreute Funktionen an einem Ort
 // (Sprache · Vault · KI-Engine · Daten/Export · Tastatur · Über).
@@ -73,6 +83,19 @@ export default function Settings({
     }
   };
 
+  const [currentTheme, setCurrentTheme] = useState<ThemeId>(() => getStoredTheme());
+  const [currentDensity, setCurrentDensity] = useState<DensityId>(() => getStoredDensity());
+
+  const handleSelectTheme = (th: ThemeId) => {
+    setStoredTheme(th);
+    setCurrentTheme(th);
+  };
+
+  const handleSelectDensity = (den: DensityId) => {
+    setStoredDensity(den);
+    setCurrentDensity(den);
+  };
+
   return (
     <div className="mx-auto max-w-2xl px-2 py-6">
       <h1 className="font-serif text-2xl text-[var(--ink)]">{tr.settings}</h1>
@@ -99,10 +122,80 @@ export default function Settings({
         </div>
       </section>
 
-      {/* 2. Wissensquelle */}
+      {/* 2. Erscheinungsbild / 外观与版式风格 */}
       <section className="mt-6 border-t border-[var(--line)] pt-4">
         <h2 className="font-mono text-[var(--text-meta)] uppercase tracking-wider text-[var(--gray)]">
-          2. {tr.stSource}
+          2. {lang === "de" ? "Erscheinungsbild & Layout" : "设计风格与版式密度"}
+        </h2>
+        <div className="mt-2 space-y-3">
+          <div>
+            <div className="text-xs font-mono text-[var(--gray)] mb-1.5">
+              {lang === "de" ? "Akademische Themes:" : "学术主题风格："}
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-2">
+              {THEMES.map((th) => {
+                const isSelected = currentTheme === th.id;
+                return (
+                  <button
+                    key={th.id}
+                    type="button"
+                    onClick={() => handleSelectTheme(th.id)}
+                    aria-pressed={isSelected}
+                    className={`p-3 text-left rounded-[var(--radius)] border transition-all ${
+                      isSelected
+                        ? "border-[var(--accent)] bg-[var(--surface)] text-[var(--accent)]"
+                        : "border-[var(--line)] bg-[var(--surface)] text-[var(--ink)] hover:border-[var(--gray)]"
+                    }`}
+                  >
+                    <div className="font-mono text-xs font-medium">
+                      {lang === "de" ? th.nameDE : th.nameZH}
+                    </div>
+                    <div className="font-sans text-[var(--text-meta)] text-[var(--gray)] mt-1 leading-snug">
+                      {lang === "de" ? th.descDE : th.descZH}
+                    </div>
+                  </button>
+                );
+              })}
+            </div>
+          </div>
+
+          <div>
+            <div className="text-xs font-mono text-[var(--gray)] mb-1.5">
+              {lang === "de" ? "Layout-Dichte:" : "信息与版式密度："}
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+              {DENSITIES.map((den) => {
+                const isSelected = currentDensity === den.id;
+                return (
+                  <button
+                    key={den.id}
+                    type="button"
+                    onClick={() => handleSelectDensity(den.id)}
+                    aria-pressed={isSelected}
+                    className={`p-2.5 text-left rounded-[var(--radius)] border transition-all ${
+                      isSelected
+                        ? "border-[var(--accent)] bg-[var(--surface)] text-[var(--accent)]"
+                        : "border-[var(--line)] bg-[var(--surface)] text-[var(--ink)] hover:border-[var(--gray)]"
+                    }`}
+                  >
+                    <div className="font-mono text-xs font-medium">
+                      {lang === "de" ? den.nameDE : den.nameZH}
+                    </div>
+                    <div className="font-sans text-[var(--text-meta)] text-[var(--gray)] mt-0.5 leading-snug">
+                      {lang === "de" ? den.descDE : den.descZH}
+                    </div>
+                  </button>
+                );
+              })}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 3. Wissensquelle */}
+      <section className="mt-6 border-t border-[var(--line)] pt-4">
+        <h2 className="font-mono text-[var(--text-meta)] uppercase tracking-wider text-[var(--gray)]">
+          3. {tr.stSource}
         </h2>
         <p className="mt-2 font-mono text-xs text-[var(--gray)]">
           {vaultConnected ? vaultMsg : tr.stVaultDemo}
@@ -117,20 +210,20 @@ export default function Settings({
         </div>
       </section>
 
-      {/* 3. KI-Engine */}
+      {/* 4. KI-Engine */}
       <section className="mt-6 border-t border-[var(--line)] pt-4">
         <h2 className="font-mono text-[var(--text-meta)] uppercase tracking-wider text-[var(--gray)]">
-          3. {tr.stAi}
+          4. {tr.stAi}
         </h2>
         <div className="mt-2">
           <AiSettings lang={lang} />
         </div>
       </section>
 
-      {/* 4. Daten & Export */}
+      {/* 5. Daten & Export */}
       <section className="mt-6 border-t border-[var(--line)] pt-4">
         <h2 className="font-mono text-[var(--text-meta)] uppercase tracking-wider text-[var(--gray)]">
-          4. {tr.stData}
+          5. {tr.stData}
         </h2>
         <div className="mt-2 flex flex-wrap gap-2">
           <button type="button" onClick={onExportFsrs} className={btn}>
@@ -192,10 +285,10 @@ export default function Settings({
         </div>
       </section>
 
-      {/* 5. Tastatur */}
+      {/* 6. Tastatur */}
       <section className="mt-6 border-t border-[var(--line)] pt-4">
         <h2 className="font-mono text-[var(--text-meta)] uppercase tracking-wider text-[var(--gray)]">
-          5. {tr.stKeys}
+          6. {tr.stKeys}
         </h2>
         <div className="mt-2">
           <button type="button" onClick={onOpenHelp} className={btn}>
@@ -204,10 +297,10 @@ export default function Settings({
         </div>
       </section>
 
-      {/* 6. Über */}
+      {/* 7. Über */}
       <section className="mt-6 border-y border-[var(--line)] py-4">
         <h2 className="font-mono text-[var(--text-meta)] uppercase tracking-wider text-[var(--gray)]">
-          6. {tr.stAbout}
+          7. {tr.stAbout}
         </h2>
         <p className="mt-2 font-sans text-xs leading-relaxed text-[var(--gray)]">{tr.stAboutText}</p>
       </section>

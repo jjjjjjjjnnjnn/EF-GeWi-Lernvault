@@ -1151,18 +1151,17 @@ export default function Tutor({
                 key={m.id}
                 className="max-w-[94%] rounded-[var(--radius)] border border-[var(--line)] bg-[var(--surface)] p-4 text-sm text-[var(--ink)] transition-colors"
               >
-                <div className="text-[var(--text-meta)] font-mono uppercase tracking-wider text-[var(--gray)] mb-3 flex items-center justify-between border-b border-[var(--line)]/50 pb-2">
+                <div className="text-[var(--text-meta)] font-mono uppercase tracking-wider text-[var(--gray)] mb-2.5 flex items-center justify-between border-b border-[var(--line)]/40 pb-1.5">
                   <div className="flex items-center gap-2">
-                    <span className="font-sans font-medium text-[var(--accent)] flex items-center gap-1.5">
-                      <span aria-hidden="true" className="w-1.5 h-1.5 rounded-full bg-[var(--accent)]" />
-                      KI-Tutor
+                    <span className="font-sans font-medium text-[var(--accent)]">
+                      {lang === "de" ? "Tutor-Kommentar" : "学术指导批注"}
                     </span>
                     <span aria-hidden="true" className="h-3 w-px bg-[var(--line)]" />
-                    <span className="text-[var(--text-meta)] text-[var(--gray)]">Gymnasiale Oberstufe EF</span>
+                    <span className="text-[var(--text-meta)] text-[var(--gray)]">EF-Lehrplan</span>
                   </div>
-                  {m.engineTag && (
-                    <span className="text-[var(--text-meta)] text-[var(--gray)] font-mono">{m.engineTag}</span>
-                  )}
+                  <span className="text-[var(--text-meta)] text-[var(--gray)] font-mono">
+                    {new Date(m.timestamp).toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" })}
+                  </span>
                 </div>
 
                 {/* Instant Grounding Card (<10ms) */}
@@ -1247,7 +1246,7 @@ export default function Tutor({
                 className="ml-auto max-w-[85%] rounded-[var(--radius)] bg-[var(--surface)] border border-[var(--line)] p-4 text-sm font-sans text-[var(--ink)]"
               >
                 <div className="text-[var(--text-meta)] font-mono uppercase tracking-wider text-[var(--gray)] mb-1.5 flex items-center justify-between">
-                  <span className="font-sans font-medium text-[var(--ink)]">Du / 你</span>
+                  <span className="font-sans font-medium text-[var(--ink)]">{lang === "de" ? "Frage / Notiz" : "学习提问"}</span>
                   <span>{new Date(m.timestamp).toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" })}</span>
                 </div>
                 {m.imageUrl && (
@@ -1365,16 +1364,12 @@ export default function Tutor({
           </form>
           <div className="mt-1.5 flex items-center justify-between text-[var(--text-meta)] font-mono text-[var(--gray)]">
             <span>
-              {lang === "de" ? "Antworten sind zitierpflichtig und stützen sich auf deinen Vault." : "助教严格遵守考纲引用规范，断言均带知识库出处。"}
+              {lang === "de" ? "Zitierpflichtig · Gestützt auf Lehrplan & Notizen" : "学术引用规范 · 严格基于考纲与原典出处"}
             </span>
             <span className="flex items-center gap-2">
               <span>{INTENSITY_PRESETS[intensity].labelDE}</span>
               <span aria-hidden="true" className="h-3 w-px bg-[var(--line)]" />
-              <span>
-                {activeEp?.baseUrl && !activeEp.baseUrl.includes("localhost") && !activeEp.baseUrl.includes("127.0.0.1")
-                  ? `${activeEp.name} · 云端 API`
-                  : "100% Lokal & Privat"}
-              </span>
+              <span>{activeEp.name}</span>
             </span>
           </div>
         </div>

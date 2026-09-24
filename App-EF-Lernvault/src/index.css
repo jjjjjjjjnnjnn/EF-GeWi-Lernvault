@@ -3,17 +3,18 @@
 
 :root {
   color-scheme: light;
-  --paper: #F9F8F5;
-  --paper-subtle: #F3EFE8;
+  /* Default Theme: Akademisch Schlicht (Pure grayscale & high-precision accent) */
+  --paper: #FAFAFA;
+  --paper-subtle: #F4F4F5;
   --surface: #FFFFFF;
-  --overlay: rgba(28, 27, 23, 0.28);
-  --ink: #1C1B17;
-  --gray: #6B675C;
-  --line: #E8E4DC;
-  --accent: #4338CA;
-  --focus: #4338CA;
-  --success: #3F6B52;
-  --warning: #A55245;
+  --overlay: rgba(24, 24, 27, 0.28);
+  --ink: #18181B;
+  --gray: #71717A;
+  --line: #E4E4E7;
+  --accent: #2563EB;
+  --focus: #2563EB;
+  --success: #16A34A;
+  --warning: #DC2626;
   --sp-1: 2px;
   --sp-2: 4px;
   --sp-3: 8px;
@@ -22,8 +23,8 @@
   --sp-6: 24px;
   --sp-7: 32px;
   --sp-8: 48px;
-  --radius: 5px;
-  --text-meta: 12px;
+  --radius: 4px;
+  --text-meta: 11px;
   --font-de: Georgia, "Songti SC", "SimSun", serif;
   --font-zh: system-ui, -apple-system, "Segoe UI", "PingFang SC", "Noto Sans SC", "Microsoft YaHei", sans-serif;
   --font-mono: ui-monospace, "SF Mono", Consolas, "Liberation Mono", Menlo, monospace;
@@ -32,6 +33,51 @@
   --dur-normal: 150ms;
   --dur-view: 250ms;
   --dur-card: 0.48s;
+}
+
+/* Theme 1: Akademisch Schlicht */
+[data-theme="academic"] {
+  --paper: #FAFAFA;
+  --paper-subtle: #F4F4F5;
+  --surface: #FFFFFF;
+  --ink: #18181B;
+  --gray: #71717A;
+  --line: #E4E4E7;
+  --accent: #2563EB;
+  --focus: #2563EB;
+  --success: #16A34A;
+  --warning: #DC2626;
+  --radius: 4px;
+}
+
+/* Theme 2: Klassik Papier (Warmes Elfenbein) */
+[data-theme="classic"] {
+  --paper: #F9F8F5;
+  --paper-subtle: #F3EFE8;
+  --surface: #FFFFFF;
+  --ink: #1C1B17;
+  --gray: #6B675C;
+  --line: #E8E4DC;
+  --accent: #4338CA;
+  --focus: #4338CA;
+  --success: #3F6B52;
+  --warning: #A55245;
+  --radius: 5px;
+}
+
+/* Theme 3: Oxford Schiefer (Tiefblau-Grau) */
+[data-theme="oxford"] {
+  --paper: #F1F5F9;
+  --paper-subtle: #E2E8F0;
+  --surface: #FFFFFF;
+  --ink: #0F172A;
+  --gray: #64748B;
+  --line: #CBD5E1;
+  --accent: #0284C7;
+  --focus: #0284C7;
+  --success: #059669;
+  --warning: #DC2626;
+  --radius: 4px;
 }
 
 * {
@@ -47,9 +93,21 @@ body {
   background: var(--paper);
   color: var(--ink);
   font-family: var(--font-zh);
-  font-size: 15px;
+  font-size: 13.5px;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+}
+
+[data-density="compact"] body,
+html[data-density="compact"] body {
+  font-size: 13.5px;
+  --text-meta: 11px;
+}
+
+[data-density="balanced"] body,
+html[data-density="balanced"] body {
+  font-size: 14.5px;
+  --text-meta: 12px;
 }
 
 button,

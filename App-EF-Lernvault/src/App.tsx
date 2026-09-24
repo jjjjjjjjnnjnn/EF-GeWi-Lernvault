@@ -22,6 +22,7 @@ import { DailySprintModal } from "./components/DailySprintModal";
 import { getStudyStreak } from "./engine/dailyMix";
 import Settings from "./modules/Settings";
 import Onboarding, { loadOnboarding, saveOnboarding, type OnboardingResult } from "./modules/Onboarding";
+import { initTheme } from "./engine/theme";
 
 type Tab = "home" | "library" | "flashcards" | "quiz" | "klausursim" | "tutor" | "planner" | "mindmap" | "reise" | "einstellungen";
 
@@ -188,6 +189,10 @@ export default function App() {
   const [paletteOpen, setPaletteOpen] = useState(false);
   const [helpOpen, setHelpOpen] = useState(false);
   const [sprintOpen, setSprintOpen] = useState(false);
+
+  useEffect(() => {
+    initTheme();
+  }, []);
 
   // Non-course tabs report a coarse position; reise/quiz modules
   // override with their precise context via their own effects.
@@ -423,23 +428,23 @@ export default function App() {
   return (
     <div className="flex h-screen bg-[var(--paper)] text-[var(--ink)] antialiased">
       {/* Sidebar: Quiet archival tone with hairline border */}
-      <aside className="flex w-16 shrink-0 flex-col border-r border-[var(--line)] bg-[var(--paper-subtle)] p-2 xl:w-60 xl:p-5">
-        <div className="mb-8 flex items-center justify-center gap-3 xl:justify-start">
+      <aside className="flex w-16 shrink-0 flex-col border-r border-[var(--line)] bg-[var(--paper-subtle)] p-2 xl:w-60 xl:p-4">
+        <div className="mb-4 flex items-center justify-center gap-2 xl:justify-start">
           <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" className="shrink-0 text-[var(--accent)]">
             <path d="M2.5 3.2c1.8-.7 3.6-.7 5.5.4v9.2c-1.9-1.1-3.7-1.1-5.5-.4z" />
             <path d="M13.5 3.2c-1.8-.7-3.6-.7-5.5.4v9.2c1.9-1.1 3.7-1.1 5.5-.4z" />
           </svg>
-          <div className="hidden xl:block">
-            <div className="de-heading text-base tracking-tight text-[var(--ink)]">
+          <div className="hidden xl:flex xl:items-baseline xl:gap-2">
+            <span className="font-mono text-sm font-semibold tracking-tight text-[var(--ink)]">
               EF-Lernvault
-            </div>
-            <div className="font-sans text-[var(--text-meta)] tracking-wide text-[var(--gray)]">
-              Gymnasium Lernstudio · EF / 文理中学学习工作室
-            </div>
+            </span>
+            <span className="font-mono text-[var(--text-meta)] text-[var(--gray)]">
+              Gymnasium EF
+            </span>
           </div>
         </div>
 
-        <nav className="flex flex-col space-y-1">
+        <nav className="flex flex-col space-y-0.5">
           {nav.map((n) => {
             const isActive = tab === n.id;
             return (
@@ -449,7 +454,7 @@ export default function App() {
                 aria-current={isActive ? "page" : undefined}
                 aria-label={n.label}
                 title={n.label}
-                className={`flex items-center justify-center gap-2.5 px-2 py-2 text-left text-sm transition-all duration-[var(--dur-normal)] rounded-[var(--radius)] active:scale-[0.98] xl:justify-start xl:px-3 ${
+                className={`flex items-center justify-center gap-2 px-2 py-1.5 text-left text-xs transition-all duration-[var(--dur-normal)] rounded-[var(--radius)] active:scale-[0.98] xl:justify-start xl:px-2.5 ${
                   isActive
                     ? "font-medium text-[var(--accent)] bg-[var(--surface)] border-l-2 border-[var(--accent)] shadow-none"
                     : "text-[var(--gray)] hover:text-[var(--ink)] hover:bg-[var(--surface)]/60 active:bg-[var(--paper-subtle)] border-l-2 border-transparent"
@@ -462,13 +467,13 @@ export default function App() {
           })}
         </nav>
 
-        <div className="mt-4 border-t border-[var(--line)] pt-3">
+        <div className="mt-3 border-t border-[var(--line)] pt-2">
           <button
             onClick={() => switchTab("einstellungen")}
             aria-current={tab === "einstellungen" ? "page" : undefined}
             aria-label={tr.settings}
             title={`${tr.settings} (${settingsShortcut.altHint})`}
-            className={`flex w-full items-center justify-center gap-2.5 px-2 py-2 text-left text-sm transition-all duration-[var(--dur-normal)] rounded-[var(--radius)] active:scale-[0.98] xl:justify-start xl:px-3 ${
+            className={`flex w-full items-center justify-center gap-2 px-2 py-1.5 text-left text-xs transition-all duration-[var(--dur-normal)] rounded-[var(--radius)] active:scale-[0.98] xl:justify-start xl:px-2.5 ${
               tab === "einstellungen"
                 ? "font-medium text-[var(--accent)] bg-[var(--surface)] border-l-2 border-[var(--accent)] shadow-none"
                 : "text-[var(--gray)] hover:text-[var(--ink)] hover:bg-[var(--surface)]/60 active:bg-[var(--paper-subtle)] border-l-2 border-transparent"
@@ -480,19 +485,18 @@ export default function App() {
           </button>
         </div>
 
-        <div className="mt-auto hidden pt-4 border-t border-[var(--line)] text-[var(--text-meta)] font-mono text-[var(--gray)] leading-relaxed xl:block">
-          v0.2.0-curriculum
-          <br />
-          lokal · offline-fähig / 本地 · 可离线
-          <br />
-          Strg K · ? Tastatur / 快捷键
+        <div className="mt-auto hidden pt-2 border-t border-[var(--line)] text-[var(--text-meta)] font-mono text-[var(--gray)] leading-relaxed xl:block">
+          <div className="flex items-center justify-between">
+            <span>v0.2.0 · Offline</span>
+            <span>? 帮助</span>
+          </div>
         </div>
       </aside>
 
       {/* Main Workspace */}
       <main className="flex min-w-0 flex-1 flex-col overflow-hidden bg-[var(--paper)]">
         {/* Top bar with hairline divider */}
-        <header className="flex min-h-14 flex-wrap items-center justify-between gap-3 border-b border-[var(--line)] bg-[var(--paper)] px-4 py-2 sm:px-6">
+        <header className="flex h-11 shrink-0 flex-wrap items-center justify-between gap-3 border-b border-[var(--line)] bg-[var(--paper)] px-4 py-1.5 sm:px-6">
           <div className="flex min-w-64 flex-1 items-center max-w-lg">
             <input
               ref={searchRef}
@@ -500,11 +504,11 @@ export default function App() {
               onChange={(e) => setQuery(e.target.value)}
               placeholder={tr.search}
               title="/"
-              className="w-full rounded-[var(--radius)] border border-[var(--line)] bg-[var(--surface)] px-3 py-1.5 font-sans text-sm text-[var(--ink)] placeholder:text-[var(--gray)] focus:border-[var(--accent)]"
+              className="w-full rounded-[var(--radius)] border border-[var(--line)] bg-[var(--surface)] px-2.5 py-1 font-sans text-xs text-[var(--ink)] placeholder:text-[var(--gray)] focus:border-[var(--accent)]"
             />
           </div>
 
-          <div className="flex flex-wrap items-center justify-end gap-3">
+          <div className="flex flex-wrap items-center justify-end gap-2.5">
             <div
               role="group"
               aria-label={tr.languageSwitchLabel}
@@ -516,7 +520,7 @@ export default function App() {
                 aria-label={tr.languageGermanLabel}
                 aria-pressed={lang === "de"}
                 title={tr.languageGermanLabel}
-                className={`rounded-full px-2 py-1 font-mono text-[var(--text-meta)] ${
+                className={`rounded-full px-2 py-0.5 font-mono text-[var(--text-meta)] ${
                   lang === "de" ? "bg-[var(--accent)] text-white" : "text-[var(--gray)] hover:text-[var(--ink)]"
                 }`}
               >
@@ -528,7 +532,7 @@ export default function App() {
                 aria-label={tr.languageChineseLabel}
                 aria-pressed={lang === "zh"}
                 title={tr.languageChineseLabel}
-                className={`rounded-full px-2 py-1 font-sans text-[var(--text-meta)] ${
+                className={`rounded-full px-2 py-0.5 font-sans text-[var(--text-meta)] ${
                   lang === "zh" ? "bg-[var(--accent)] text-white" : "text-[var(--gray)] hover:text-[var(--ink)]"
                 }`}
               >
@@ -538,15 +542,15 @@ export default function App() {
             <button
               type="button"
               onClick={() => setSprintOpen(true)}
-              className="flex items-center gap-1.5 rounded-[var(--radius)] border border-[var(--line)] bg-[var(--surface)] px-3 py-1.5 font-mono text-xs text-[var(--ink)] transition-colors hover:bg-[var(--paper-subtle)]"
+              className="flex items-center gap-1.5 rounded-[var(--radius)] border border-[var(--line)] bg-[var(--surface)] px-2.5 py-1 font-mono text-xs text-[var(--ink)] transition-colors hover:bg-[var(--paper-subtle)]"
             >
-              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" className="h-3.5 w-3.5">
                 <path d="M8 2.5v3M8 10.5v3M2.5 8h3M10.5 8h3" />
                 <circle cx="8" cy="8" r="3.2" />
               </svg>
               <span>{tr.dailySprint}</span>
               {getStudyStreak().currentStreak > 0 && (
-                <span className="ml-1 rounded-[var(--radius)] border border-[var(--success)] px-1.5 py-0.5 text-[var(--text-meta)] text-[var(--success)]">
+                <span className="ml-1 rounded-[var(--radius)] border border-[var(--success)] px-1 py-0.2 text-[var(--text-meta)] text-[var(--success)]">
                   {getStudyStreak().currentStreak}d
                 </span>
               )}
