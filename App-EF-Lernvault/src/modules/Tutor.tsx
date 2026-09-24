@@ -45,8 +45,15 @@ import { SatzbauLego } from "../components/pedagogy/SatzbauLego";
 import { BalanceBoard } from "../components/pedagogy/BalanceBoard";
 import { TextHighlighter } from "../components/pedagogy/TextHighlighter";
 import { TangentSlider } from "../components/pedagogy/TangentSlider";
+import FormulaScaffold from "../components/pedagogy/FormulaScaffold";
+import OralExamTimer from "../components/pedagogy/OralExamTimer";
 import { FehlerlogModal } from "../components/FehlerlogModal";
 import { useDialogFocus } from "../components/HelpOverlay";
+import {
+  getToolsForFach,
+  getFachDidaktik,
+  type DidaktikToolId,
+} from "../engine/fachDidaktik";
 
 import {
   type TutorPedagogyMode,
@@ -61,11 +68,15 @@ import {
 export default function Tutor({
   lang,
   vaultNotes = null,
+  activeFach,
+  onSubjectChange: _onSubjectChange,
   onJumpToLibrary,
   onOpenSettings,
 }: {
   lang: Lang;
   vaultNotes?: VaultNote[] | null;
+  activeFach?: string;
+  onSubjectChange?: (fach: string) => void;
   onJumpToLibrary?: (query: string) => void;
   onOpenSettings?: () => void;
 }) {
@@ -95,7 +106,13 @@ export default function Tutor({
   const [copyFeedback, setCopyFeedback] = useState(false);
   const [expandedCcr, setExpandedCcr] = useState<{ hash: string; content: string | null } | null>(null);
   const ccrDialogRef = useDialogFocus(Boolean(expandedCcr), () => setExpandedCcr(null));
-  const [pedagogyTool, setPedagogyTool] = useState<"lego" | "balance" | "highlighter" | "tangent" | null>(null);
+  const [pedagogyTool, setPedagogyTool] = useState<DidaktikToolId | null>(null);
+  const currentFach = activeFach && activeFach !== "alle" ? activeFach : "alle";
+  const allowedTools = useMemo(() => getToolsForFach(currentFach), [currentFach]);
+  const didaktikProfile = useMemo(
+    () => (activeFach && activeFach !== "alle" ? getFachDidaktik(activeFach) : undefined),
+    [activeFach]
+  );
   const [pedagogyMode, setPedagogyMode] = useState<TutorPedagogyMode>(() => loadTutorPedagogyMode());
   const [fehlerDraft, setFehlerDraft] = useState<FehlerlogDraft | null>(null);
   const [attachedImage, setAttachedImage] = useState<{
@@ -956,80 +973,134 @@ export default function Tutor({
               <span className="text-[var(--text-meta)] text-[var(--gray)] uppercase tracking-wider font-sans">
                 {lang === "de" ? "Didaktik-Tools:" : "学科辅助工具:"}
               </span>
+              {didaktikProfile && (
+                <span className="rounded-[var(--radius)] border border-[var(--line)] bg-[var(--surface)] px-1.5 py-0.5 text-[var(--text-meta)] font-mono text-[var(--accent)] font-medium">
+                  {currentFach} · {lang === "de" ? didaktikProfile.domainNameDE : didaktikProfile.domainNameZH}
+                </span>
+              )}
               <div className="flex flex-wrap items-center gap-1">
-                <button
-                  type="button"
-                  aria-pressed={pedagogyTool === "lego"}
-                  aria-controls="tutor-pedagogy-panel"
-                  onClick={() => setPedagogyTool((t) => (t === "lego" ? null : "lego"))}
-                  title={lang === "de" ? "Satzbau-Lego öffnen" : "打开句式积木 (Satzbau-Lego)"}
-                  className={`rounded-[var(--radius)] px-2 py-0.5 text-[var(--text-meta)] font-sans transition-colors cursor-pointer flex items-center gap-1 border border-[var(--line)] ${
-                    pedagogyTool === "lego"
-                      ? "bg-[var(--accent)] text-[var(--surface)] font-medium border-[var(--accent)]"
-                      : "bg-[var(--surface)] text-[var(--ink)] hover:bg-[var(--paper-subtle)]"
-                  }`}
-                >
-                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" className="h-3 w-3">
-                    <rect x="2" y="5" width="12" height="9" rx="1" />
-                    <circle cx="5" cy="3" r="1.5" />
-                    <circle cx="11" cy="3" r="1.5" />
-                  </svg>
-                  <span>{lang === "de" ? "Satzbau-Lego" : "句式积木"}</span>
-                </button>
+                {allowedTools.includes("lego") && (
+                  <button
+                    type="button"
+                    aria-pressed={pedagogyTool === "lego"}
+                    aria-controls="tutor-pedagogy-panel"
+                    onClick={() => setPedagogyTool((t) => (t === "lego" ? null : "lego"))}
+                    title={lang === "de" ? "Satzbau-Lego öffnen" : "打开句式积木 (Satzbau-Lego)"}
+                    className={`rounded-[var(--radius)] px-2 py-0.5 text-[var(--text-meta)] font-sans transition-colors cursor-pointer flex items-center gap-1 border border-[var(--line)] ${
+                      pedagogyTool === "lego"
+                        ? "bg-[var(--accent)] text-[var(--surface)] font-medium border-[var(--accent)]"
+                        : "bg-[var(--surface)] text-[var(--ink)] hover:bg-[var(--paper-subtle)]"
+                    }`}
+                  >
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" className="h-3 w-3">
+                      <rect x="2" y="5" width="12" height="9" rx="1" />
+                      <circle cx="5" cy="3" r="1.5" />
+                      <circle cx="11" cy="3" r="1.5" />
+                    </svg>
+                    <span>{lang === "de" ? "Satzbau-Lego" : "句式积木"}</span>
+                  </button>
+                )}
 
-                <button
-                  type="button"
-                  aria-pressed={pedagogyTool === "balance"}
-                  aria-controls="tutor-pedagogy-panel"
-                  onClick={() => setPedagogyTool((t) => (t === "balance" ? null : "balance"))}
-                  title={lang === "de" ? "Dialektische Waage öffnen" : "打开辩证天平 (Urteils-Waage)"}
-                  className={`rounded-[var(--radius)] px-2 py-0.5 text-[var(--text-meta)] font-sans transition-colors cursor-pointer flex items-center gap-1 border border-[var(--line)] ${
-                    pedagogyTool === "balance"
-                      ? "bg-[var(--success)] text-[var(--surface)] font-medium border-[var(--success)]"
-                      : "bg-[var(--surface)] text-[var(--ink)] hover:bg-[var(--paper-subtle)]"
-                  }`}
-                >
-                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" className="h-3 w-3">
-                    <path d="M8 2v12M3 14h10M4 6l4-2 4 2M4 6l-2 5h4l-2-5M12 6l-2 5h4l-2-5" />
-                  </svg>
-                  <span>{lang === "de" ? "Urteils-Waage" : "辩证天平"}</span>
-                </button>
+                {allowedTools.includes("balance") && (
+                  <button
+                    type="button"
+                    aria-pressed={pedagogyTool === "balance"}
+                    aria-controls="tutor-pedagogy-panel"
+                    onClick={() => setPedagogyTool((t) => (t === "balance" ? null : "balance"))}
+                    title={lang === "de" ? "Dialektische Waage öffnen" : "打开辩证天平 (Urteils-Waage)"}
+                    className={`rounded-[var(--radius)] px-2 py-0.5 text-[var(--text-meta)] font-sans transition-colors cursor-pointer flex items-center gap-1 border border-[var(--line)] ${
+                      pedagogyTool === "balance"
+                        ? "bg-[var(--success)] text-[var(--surface)] font-medium border-[var(--success)]"
+                        : "bg-[var(--surface)] text-[var(--ink)] hover:bg-[var(--paper-subtle)]"
+                    }`}
+                  >
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" className="h-3 w-3">
+                      <path d="M8 2v12M3 14h10M4 6l4-2 4 2M4 6l-2 5h4l-2-5M12 6l-2 5h4l-2-5" />
+                    </svg>
+                    <span>{lang === "de" ? "Urteils-Waage" : "辩证天平"}</span>
+                  </button>
+                )}
 
-                <button
-                  type="button"
-                  aria-pressed={pedagogyTool === "highlighter"}
-                  aria-controls="tutor-pedagogy-panel"
-                  onClick={() => setPedagogyTool((t) => (t === "highlighter" ? null : "highlighter"))}
-                  title={lang === "de" ? "Text-Dekonstruierer öffnen" : "打开荧光标注解构画板"}
-                  className={`rounded-[var(--radius)] px-2 py-0.5 text-[var(--text-meta)] font-sans transition-colors cursor-pointer flex items-center gap-1 border border-[var(--line)] ${
-                    pedagogyTool === "highlighter"
-                      ? "bg-[var(--accent)] text-[var(--surface)] font-medium border-[var(--accent)]"
-                      : "bg-[var(--surface)] text-[var(--ink)] hover:bg-[var(--paper-subtle)]"
-                  }`}
-                >
-                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" className="h-3 w-3">
-                    <path d="M11.2 2.3l2.5 2.5-7.6 7.6-3.3.8.8-3.3 7.6-7.6zM9.8 3.7l2.5 2.5" />
-                  </svg>
-                  <span>{lang === "de" ? "Dekonstruierer" : "文本解构"}</span>
-                </button>
+                {allowedTools.includes("highlighter") && (
+                  <button
+                    type="button"
+                    aria-pressed={pedagogyTool === "highlighter"}
+                    aria-controls="tutor-pedagogy-panel"
+                    onClick={() => setPedagogyTool((t) => (t === "highlighter" ? null : "highlighter"))}
+                    title={lang === "de" ? "Text-Dekonstruierer öffnen" : "打开荧光标注解构画板"}
+                    className={`rounded-[var(--radius)] px-2 py-0.5 text-[var(--text-meta)] font-sans transition-colors cursor-pointer flex items-center gap-1 border border-[var(--line)] ${
+                      pedagogyTool === "highlighter"
+                        ? "bg-[var(--accent)] text-[var(--surface)] font-medium border-[var(--accent)]"
+                        : "bg-[var(--surface)] text-[var(--ink)] hover:bg-[var(--paper-subtle)]"
+                    }`}
+                  >
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" className="h-3 w-3">
+                      <path d="M11.2 2.3l2.5 2.5-7.6 7.6-3.3.8.8-3.3 7.6-7.6zM9.8 3.7l2.5 2.5" />
+                    </svg>
+                    <span>{lang === "de" ? "Dekonstruierer" : "文本解构"}</span>
+                  </button>
+                )}
 
-                <button
-                  type="button"
-                  aria-pressed={pedagogyTool === "tangent"}
-                  aria-controls="tutor-pedagogy-panel"
-                  onClick={() => setPedagogyTool((t) => (t === "tangent" ? null : "tangent"))}
-                  title={lang === "de" ? "Tangenten-Simulator öffnen (Differentialrechnung Δx → 0)" : "打开割线逼近切线沙盘 (导数几何直观)"}
-                  className={`rounded-[var(--radius)] px-2 py-0.5 text-[var(--text-meta)] font-sans transition-colors cursor-pointer flex items-center gap-1 border border-[var(--line)] ${
-                    pedagogyTool === "tangent"
-                      ? "bg-[var(--accent)] text-[var(--surface)] font-medium border-[var(--accent)]"
-                      : "bg-[var(--surface)] text-[var(--ink)] hover:bg-[var(--paper-subtle)]"
-                  }`}
-                >
-                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" className="h-3 w-3">
-                    <path d="M2 14L14 2M2 14h12M2 14V2" />
-                  </svg>
-                  <span>{lang === "de" ? "Tangenten-Sim" : "导数沙盘"}</span>
-                </button>
+                {allowedTools.includes("tangent") && (
+                  <button
+                    type="button"
+                    aria-pressed={pedagogyTool === "tangent"}
+                    aria-controls="tutor-pedagogy-panel"
+                    onClick={() => setPedagogyTool((t) => (t === "tangent" ? null : "tangent"))}
+                    title={lang === "de" ? "Tangenten-Simulator öffnen (Differentialrechnung Δx → 0)" : "打开割线逼近切线沙盘 (导数几何直观)"}
+                    className={`rounded-[var(--radius)] px-2 py-0.5 text-[var(--text-meta)] font-sans transition-colors cursor-pointer flex items-center gap-1 border border-[var(--line)] ${
+                      pedagogyTool === "tangent"
+                        ? "bg-[var(--accent)] text-[var(--surface)] font-medium border-[var(--accent)]"
+                        : "bg-[var(--surface)] text-[var(--ink)] hover:bg-[var(--paper-subtle)]"
+                    }`}
+                  >
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" className="h-3 w-3">
+                      <path d="M2 14L14 2M2 14h12M2 14V2" />
+                    </svg>
+                    <span>{lang === "de" ? "Tangenten-Sim" : "导数沙盘"}</span>
+                  </button>
+                )}
+
+                {allowedTools.includes("formula") && (
+                  <button
+                    type="button"
+                    aria-pressed={pedagogyTool === "formula"}
+                    aria-controls="tutor-pedagogy-panel"
+                    onClick={() => setPedagogyTool((t) => (t === "formula" ? null : "formula"))}
+                    title={lang === "de" ? "4-Schritte-Lösungsweg öffnen (MINT)" : "打开MINT四步规范解题法"}
+                    className={`rounded-[var(--radius)] px-2 py-0.5 text-[var(--text-meta)] font-sans transition-colors cursor-pointer flex items-center gap-1 border border-[var(--line)] ${
+                      pedagogyTool === "formula"
+                        ? "bg-[var(--accent)] text-[var(--surface)] font-medium border-[var(--accent)]"
+                        : "bg-[var(--surface)] text-[var(--ink)] hover:bg-[var(--paper-subtle)]"
+                    }`}
+                  >
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" className="h-3 w-3">
+                      <path d="M3 4h4M5 4v8M9 5l4 6M13 5l-4 6" />
+                    </svg>
+                    <span>{lang === "de" ? "MINT-Scaffold" : "四步解题"}</span>
+                  </button>
+                )}
+
+                {allowedTools.includes("oralTimer") && (
+                  <button
+                    type="button"
+                    aria-pressed={pedagogyTool === "oralTimer"}
+                    aria-controls="tutor-pedagogy-panel"
+                    onClick={() => setPedagogyTool((t) => (t === "oralTimer" ? null : "oralTimer"))}
+                    title={lang === "de" ? "Mündliche Prüfung & Timing öffnen" : "打开口试备考与陈述计时器"}
+                    className={`rounded-[var(--radius)] px-2 py-0.5 text-[var(--text-meta)] font-sans transition-colors cursor-pointer flex items-center gap-1 border border-[var(--line)] ${
+                      pedagogyTool === "oralTimer"
+                        ? "bg-[var(--accent)] text-[var(--surface)] font-medium border-[var(--accent)]"
+                        : "bg-[var(--surface)] text-[var(--ink)] hover:bg-[var(--paper-subtle)]"
+                    }`}
+                  >
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" className="h-3 w-3">
+                      <circle cx="8" cy="8" r="6" />
+                      <path d="M8 4.5V8l2.5 1.5M6 2h4" />
+                    </svg>
+                    <span>{lang === "de" ? "Mündlich-Matrix" : "口试矩阵"}</span>
+                  </button>
+                )}
               </div>
             </div>
 
@@ -1096,6 +1167,22 @@ export default function Tutor({
               <TangentSlider
                 lang={lang}
                 onFormulaGenerated={(f) => setInput(f)}
+              />
+            )}
+
+            {pedagogyTool === "formula" && (
+              <FormulaScaffold
+                lang={lang}
+                fach={activeFach && activeFach !== "alle" ? activeFach : "Mathe"}
+                onFormulaStepComplete={(sol: string) => setInput(sol)}
+              />
+            )}
+
+            {pedagogyTool === "oralTimer" && (
+              <OralExamTimer
+                lang={lang}
+                fach={activeFach && activeFach !== "alle" ? activeFach : "Musik"}
+                onOutlineGenerated={(outl: string) => setInput(outl)}
               />
             )}
           </div>

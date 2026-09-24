@@ -509,35 +509,24 @@ export default function App() {
           </div>
 
           <div className="flex flex-wrap items-center justify-end gap-2.5">
-            <div
-              role="group"
-              aria-label={tr.languageSwitchLabel}
-              className="flex items-center rounded-full border border-[var(--line)] bg-[var(--surface)] p-0.5"
-            >
-              <button
-                type="button"
-                onClick={() => setLang("de")}
-                aria-label={tr.languageGermanLabel}
-                aria-pressed={lang === "de"}
-                title={tr.languageGermanLabel}
-                className={`rounded-full px-2 py-0.5 font-mono text-[var(--text-meta)] ${
-                  lang === "de" ? "bg-[var(--accent)] text-white" : "text-[var(--gray)] hover:text-[var(--ink)]"
-                }`}
+            <div className="flex items-center gap-1.5 rounded-[var(--radius)] border border-[var(--line)] bg-[var(--surface)] px-2 py-0.5">
+              <label htmlFor="header-fach-select" className="font-mono text-[var(--text-meta)] text-[var(--gray)]">
+                Fach:
+              </label>
+              <select
+                id="header-fach-select"
+                value={selectedFach}
+                onChange={(e) => setSelectedFach(e.target.value)}
+                aria-label={lang === "de" ? "Fach auswählen" : "选择学科"}
+                className="border-none bg-transparent font-sans text-xs text-[var(--ink)] focus:outline-none cursor-pointer"
               >
-                DE
-              </button>
-              <button
-                type="button"
-                onClick={() => setLang("zh")}
-                aria-label={tr.languageChineseLabel}
-                aria-pressed={lang === "zh"}
-                title={tr.languageChineseLabel}
-                className={`rounded-full px-2 py-0.5 font-sans text-[var(--text-meta)] ${
-                  lang === "zh" ? "bg-[var(--accent)] text-white" : "text-[var(--gray)] hover:text-[var(--ink)]"
-                }`}
-              >
-                中文
-              </button>
+                <option value="alle">{lang === "de" ? "Alle Fächer (10)" : "所有学科 (10)"}</option>
+                {FAECHER.map((f) => (
+                  <option key={f.id} value={f.id}>
+                    {f.kurz} · {lang === "de" ? f.nameDE : f.nameZH}
+                  </option>
+                ))}
+              </select>
             </div>
             <button
               type="button"
@@ -565,8 +554,23 @@ export default function App() {
         <div key={tab} className="tab-enter min-w-0 flex-1 overflow-y-auto p-4 sm:p-6 xl:p-8">
           {tab === "home" && <Home lang={lang} cards={vault?.cards ?? null} onJumpToLibrary={jumpToLibrary} />}
           {tab === "library" && <Library query={query} vault={vault?.notes ?? null} selectedFach={selectedFach} onClearQuery={() => setQuery("")} onSubjectChange={setSelectedFach} />}
-          {tab === "flashcards" && <Flashcards lang={lang} vault={vault?.cards ?? null} />}
-          {tab === "quiz" && <Quiz lang={lang} vault={vault?.notes ?? null} cards={vault?.cards ?? null} onJumpToLibrary={jumpToLibrary} />}
+          {tab === "flashcards" && (
+            <Flashcards
+              lang={lang}
+              vault={vault?.cards ?? null}
+              selectedFach={selectedFach}
+              onSubjectChange={setSelectedFach}
+            />
+          )}
+          {tab === "quiz" && (
+            <Quiz
+              lang={lang}
+              vault={vault?.notes ?? null}
+              cards={vault?.cards ?? null}
+              preselectedFach={selectedFach === "alle" ? undefined : selectedFach}
+              onJumpToLibrary={jumpToLibrary}
+            />
+          )}
           {tab === "klausursim" && (
             <KlausurSim
               notes={vault?.notes ?? []}
@@ -578,6 +582,8 @@ export default function App() {
             <Tutor
               lang={lang}
               vaultNotes={vault?.notes ?? null}
+              activeFach={selectedFach === "alle" ? undefined : selectedFach}
+              onSubjectChange={setSelectedFach}
               onJumpToLibrary={jumpToLibrary}
               onOpenSettings={() => switchTab("einstellungen")}
             />

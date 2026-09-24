@@ -116,6 +116,7 @@ interface QuizProps {
   lang?: Lang;
   vault?: VaultNote[] | null;
   cards?: VaultCard[] | null;
+  preselectedFach?: string;
   onJumpToLibrary?: (query: string) => void;
 }
 
@@ -130,7 +131,7 @@ interface RubricEvaluation extends FehlerlogDefizit {
 
 import { vergleichStore } from "../engine/stores";
 
-export default function Quiz({ lang = "zh", vault = null, cards = null, onJumpToLibrary }: QuizProps) {
+export default function Quiz({ lang = "zh", vault = null, cards = null, preselectedFach, onJumpToLibrary }: QuizProps) {
   const tr = t(lang);
   const essayTimer = useQuizTimer();
   const vergleichTimer = useQuizTimer();
@@ -147,13 +148,22 @@ export default function Quiz({ lang = "zh", vault = null, cards = null, onJumpTo
 
   // ==================== KLAUSUR-DRILL STATE (V3) ====================
   const availableThemen = useMemo(() => {
-    return getAvailableThemen(vault);
-  }, [vault]);
+    const all = getAvailableThemen(vault);
+    if (!preselectedFach || preselectedFach === "alle") return all;
+    const filtered = all.filter((t) => t.fach.toLowerCase() === preselectedFach.toLowerCase());
+    return filtered.length > 0 ? filtered : all;
+  }, [vault, preselectedFach]);
 
   const [step, setStep] = useState<QuizStep>(1);
   const [selectedThema, setSelectedThema] = useState<string>(
     availableThemen.length > 0 ? availableThemen[0].thema : MOCK_QUIZ.thema
   );
+
+  useEffect(() => {
+    if (availableThemen.length > 0 && !availableThemen.some((t) => t.thema === selectedThema)) {
+      setSelectedThema(availableThemen[0].thema);
+    }
+  }, [availableThemen, selectedThema]);
 
   const currentQuiz: GeneratedQuiz = useMemo(() => {
     if (availableThemen.length > 0) {

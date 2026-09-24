@@ -5,6 +5,8 @@ import { SatzbauLego, PRESET_TEMPLATES } from "./SatzbauLego";
 import { BalanceBoard, PRESET_CASES } from "./BalanceBoard";
 import { TextHighlighter, PRESET_PASSAGES } from "./TextHighlighter";
 import { TangentSlider } from "./TangentSlider";
+import FormulaScaffold from "./FormulaScaffold";
+import OralExamTimer from "./OralExamTimer";
 
 describe("Pädagogische Komponenten (Pedagogy UI Library)", () => {
   describe("SatzbauLego", () => {
@@ -149,6 +151,42 @@ describe("Pädagogische Komponenten (Pedagogy UI Library)", () => {
       const calledFormula = onGenerated.mock.calls[0][0];
       expect(calledFormula).toContain("差商 Δy/Δx");
       expect(calledFormula).toContain("瞬时变化率");
+    });
+  });
+
+  describe("FormulaScaffold", () => {
+    it("rendert alle 4 Schritte initial und laedt ein MINT-Beispiel", () => {
+      const onComplete = vi.fn();
+      render(<FormulaScaffold lang="zh" fach="Physik" onFormulaStepComplete={onComplete} />);
+      expect(screen.getByText("理科四步规范解题手架")).toBeInTheDocument();
+      expect(screen.getByText("(Physik)")).toBeInTheDocument();
+
+      fireEvent.click(screen.getByText("载入典型范例"));
+      expect(screen.getByDisplayValue(/s\(t\)/)).toBeInTheDocument();
+      expect(screen.getByDisplayValue(/a = 2.5 m\/s\^2/)).toBeInTheDocument();
+
+      fireEvent.click(screen.getByText("带入作答框"));
+      expect(onComplete).toHaveBeenCalled();
+      expect(onComplete.mock.calls[0][0]).toContain("[Physik] 4-Schritte-Lösungsweg");
+    });
+  });
+
+  describe("OralExamTimer", () => {
+    it("rendert 15-Minuten-Vorbereitungsphase und 3-teiliges Vortragsraster", () => {
+      const onGenerated = vi.fn();
+      render(<OralExamTimer lang="zh" fach="Musik" onOutlineGenerated={onGenerated} />);
+      expect(screen.getByText("口试试场全真模拟矩阵")).toBeInTheDocument();
+      expect(screen.getByRole("timer")).toHaveTextContent("15:00");
+
+      fireEvent.click(screen.getByText("5分钟独立陈述"));
+      expect(screen.getByRole("timer")).toHaveTextContent("05:00");
+
+      fireEvent.click(screen.getByText("载入典型范例"));
+      expect(screen.getByDisplayValue(/贝多芬/)).toBeInTheDocument();
+
+      fireEvent.click(screen.getByText("带入作答框"));
+      expect(onGenerated).toHaveBeenCalled();
+      expect(onGenerated.mock.calls[0][0]).toContain("[Musik] Mündliche Prüfung");
     });
   });
 });

@@ -17,9 +17,13 @@ interface CardItem {
 export default function Flashcards({
   lang,
   vault,
+  selectedFach = "alle",
+  onSubjectChange,
 }: {
   lang: Lang;
   vault: VaultCard[] | null;
+  selectedFach?: string;
+  onSubjectChange?: (fach: string) => void;
 }) {
   const tr = t(lang);
 
@@ -45,6 +49,24 @@ export default function Flashcards({
     [vault]
   );
 
+  const subjectCounts = useMemo(() => {
+    const counts: Record<string, number> = {};
+    for (const c of allItems) {
+      const f = c.fach || "Sonstiges";
+      counts[f] = (counts[f] || 0) + 1;
+    }
+    return counts;
+  }, [allItems]);
+
+  const activeFach = selectedFach ?? "alle";
+
+  const filteredItems: CardItem[] = useMemo(() => {
+    if (activeFach === "alle") return allItems;
+    return allItems.filter(
+      (c) => (c.fach || "").toLowerCase() === activeFach.toLowerCase()
+    );
+  }, [allItems, activeFach]);
+
   const [browseOnly, setBrowseOnly] = useState(false);
 
   // Session-Snapshot: Die Warteschlange wird EINMAL pro Sitzung eingefroren.
@@ -67,7 +89,7 @@ export default function Flashcards({
   const badgeTimer = useRef<number | null>(null);
 
   useEffect(() => {
-    const { activeQueue, newCount } = partitionQueue(allItems);
+    const { activeQueue, newCount } = partitionQueue(filteredItems);
     setSession({ items: activeQueue, newCount });
     setIdx(0);
     setFlip(false);
@@ -76,11 +98,10 @@ export default function Flashcards({
     setSessionAgain(0);
     setBrowseOnly(false);
     setTransientBadge(null);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [vault]);
+  }, [filteredItems]);
 
-  const currentItems = browseOnly ? allItems : session.items;
-  const totalCards = allItems.length;
+  const currentItems = browseOnly ? filteredItems : session.items;
+  const totalCards = filteredItems.length;
   const card = currentItems[idx] ?? null;
   const isFinished = !browseOnly && (currentItems.length === 0 || idx >= currentItems.length);
 
@@ -168,6 +189,36 @@ export default function Flashcards({
   ];
   const edge = Math.min(1, Math.abs(drag) / 90);
 
+  const renderSubjectFilter = () => (
+    <div className="flex flex-wrap items-center gap-1.5 border-b border-[var(--line)] pb-2 text-xs font-mono">
+      <button
+        type="button"
+        onClick={() => onSubjectChange?.("alle")}
+        className={`rounded-[var(--radius)] px-2 py-0.5 transition-colors cursor-pointer ${
+          activeFach === "alle"
+            ? "bg-[var(--ink)] text-[var(--surface)] font-medium"
+            : "text-[var(--gray)] hover:bg-[var(--paper-subtle)] hover:text-[var(--ink)]"
+        }`}
+      >
+        {lang === "de" ? "Alle" : "全部"} ({allItems.length})
+      </button>
+      {Object.entries(subjectCounts).map(([fach, count]) => (
+        <button
+          key={fach}
+          type="button"
+          onClick={() => onSubjectChange?.(fach)}
+          className={`rounded-[var(--radius)] px-2 py-0.5 transition-colors cursor-pointer ${
+            activeFach.toLowerCase() === fach.toLowerCase()
+              ? "bg-[var(--accent)] text-white font-medium"
+              : "text-[var(--gray)] hover:bg-[var(--paper-subtle)] hover:text-[var(--ink)]"
+          }`}
+        >
+          {fach} ({count})
+        </button>
+      ))}
+    </div>
+  );
+
   // 1. Empty state
   if (allItems.length === 0) {
     return (
@@ -177,10 +228,34 @@ export default function Flashcards({
     );
   }
 
+  // 1b. Empty subject state
+  if (filteredItems.length === 0) {
+    return (
+      <div className="mx-auto max-w-xl space-y-4 py-4">
+        {renderSubjectFilter()}
+        <div className="rounded-[var(--radius)] border border-[var(--line)] bg-[var(--surface)] p-8 text-center font-sans text-sm text-[var(--gray)]">
+          {lang === "de"
+            ? `Keine Lernkarten für das Fach „${activeFach}“ gefunden.`
+            : `未在学科“${activeFach}”中找到单词卡片。`}
+          <div className="mt-4">
+            <button
+              type="button"
+              onClick={() => onSubjectChange?.("alle")}
+              className="rounded-[var(--radius)] border border-[var(--line)] bg-[var(--paper-subtle)] px-3 py-1 font-mono text-xs text-[var(--ink)] hover:border-[var(--accent)]"
+            >
+              {lang === "de" ? "Alle Fächer anzeigen" : "查看全部学科"}
+            </button>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
   // 2. Completion state (Fertig für heute)
   if (isFinished) {
     return (
-      <div className="mx-auto max-w-xl space-y-6 pt-10 text-center">
+      <div className="mx-auto max-w-xl space-y-4 pt-4 text-center">
+        {renderSubjectFilter()}
         <div className="rounded-[var(--radius)] border border-[var(--line)] bg-[var(--surface)] p-8">
           <div className="font-serif text-2xl text-[var(--ink)] mb-1">
             {tr.doneToday}
@@ -230,6 +305,7 @@ export default function Flashcards({
 
   return (
     <div className="mx-auto max-w-xl space-y-4">
+      {renderSubjectFilter()}
       {/* Source and progress metadata */}
       <div className="space-y-1 pb-2 border-b border-[var(--line)]">
         <div className="flex items-center justify-between text-xs font-mono text-[var(--gray)]">
