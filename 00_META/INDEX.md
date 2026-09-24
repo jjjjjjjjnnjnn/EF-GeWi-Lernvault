@@ -77,6 +77,7 @@
 
 ### Physik
 - Gleichförmige Bewegung: Training — [Gleichfoermige-Bewegung-Training](../04_Physik/Gleichfoermige-Bewegung-Training.md)（s-t读画/平均vs瞬时/Excel四步/Klausur四行）
+- Newtonsche Gesetze & Dynamik — [Newtonsche-Gesetze-und-Krafte](../04_Physik/Newtonsche-Gesetze-und-Krafte.md)（三大定律/斜面受力分解/摩擦阻力/机械能守恒）
 - IQB EF Training Diagramme/Messung — [Physik-IQB-EF-Training](../04_Physik/Physik-IQB-EF-Training.md)（4自编题+KaTeX）· [Operatoren-Check](../04_Physik/Klausur-Training/Physik-Operatoren-Check.md)
 - CN-Brücke Formelhandbuch + Tricks + Training — [CN-Formelhandbuch](../04_Physik/CN-Physik-Formelhandbuch.md) · [CN-Tricks](../04_Physik/CN-Physik-Tricks.md) · [CN-Training](../04_Physik/Klausur-Training/CN-Physik-Training.md)（三语对照/6方法/4自编题+EHZ）
 
@@ -87,11 +88,13 @@
 
 ### Mathe
 - Analysis & Kinetik — [Analysis-Physik-Kinetik-Vernetzung](../03_Mathe/Analysis-Physik-Kinetik-Vernetzung.md)（微积分导数与运动学瞬时速度深度联动）
+- Kurvendiskussion & Polynome — [Ganzrationale-Funktionen-Kurvendiskussion](../03_Mathe/Ganzrationale-Funktionen-Kurvendiskussion.md)（多项式函数性质/极值拐点/实际极值问题建模）
 - ZKE 2027 Training — [Mathe-ZKE-2027-Training](../03_Mathe/Mathe-ZKE-2027-Training.md)（Teil A免工具+Teil B WTR/CAS，4自编题+解法）
 - CN Formelhandbuch DE-CN-EN · Tricks · Training — [CN-Mathe-Formelhandbuch](../03_Mathe/CN-Mathe-Formelhandbuch.md) · [CN-Mathe-Tricks](../03_Mathe/CN-Mathe-Tricks.md) · [CN-Mathe-Training](../03_Mathe/Klausur-Training/CN-Mathe-Training.md)（CN方法↔ZKE论证）
 
 ### Chemie
 - Kinetik & Enzymbiologie — [Kinetik-Gleichgewicht-Bio-Vernetzung](../05_Chemie/Kinetik-Gleichgewicht-Bio-Vernetzung.md)（反应动力学/勒夏特列与生物酶催化/流平衡联动）
+- Säure-Base-Gleichgewichte & pH — [Saeure-Base-Gleichgewichte-pH-Wert](../05_Chemie/Saeure-Base-Gleichgewichte-pH-Wert.md)（质子理论/水自耦电离/pH计算/滴定中和）
 - EF-Grundlagen-Training — [Chemie-EF-Grundlagen-Training](../05_Chemie/Chemie-EF-Grundlagen-Training.md)（Atombau/Bindung/配平/Mol，8自编题）· [Operatoren-Check](../05_Chemie/Klausur-Training/Chemie-Operatoren-Check.md)（StanSi ab 2025+Formeldokument）
 - CN Formelhandbuch · Tricks · Training — [CN-Chemie-Formelhandbuch](../05_Chemie/CN-Chemie-Formelhandbuch.md) · [CN-Chemie-Tricks](../05_Chemie/CN-Chemie-Tricks.md) · [CN-Chemie-Training](../05_Chemie/Klausur-Training/CN-Chemie-Training.md)（DE-CN-EN桥，全自编）
 
@@ -183,6 +186,7 @@
 - [2026-09-24-didaktik-fach-expansion](Journal/2026-09-24-didaktik-fach-expansion.md) — 顶栏语言切换移除与全学科教学法接入（四维认知域+导数沙盘+MINT规范四步解题+口试矩阵）
 - [2026-09-24-werkzeuge-and-ia-restructure](Journal/2026-09-24-werkzeuge-and-ia-restructure.md) — 学科教具独立专区与学术风四大信息架构重组（6大教具搬离Tutor+Alt W快捷键+4分区侧边栏+55套件354测试全绿）
 - [2026-09-24-clean-buttons-and-all-subjects](Journal/2026-09-24-clean-buttons-and-all-subjects.md) — 快捷键显示清理、左侧导航按键等大化与全学科数据接入（零kbd徽标+h-10统一切换按钮+10科全图谱与真实考情卡片接入）
+- [2026-09-24-mint-deepening-and-score-booster](Journal/2026-09-24-mint-deepening-and-score-booster.md) — MINT 理科跨学科深度扩充与模考采分点诊断系统落地（BWKI图谱沉淀数理化深度笔记+506张词卡+模考算子合规与学术德语提分润色）
 - 约定：文件名 `YYYY-MM-DD-<thema>.md`，头部frontmatter（`fach`可空，`tags: [EF, Meta]`）。
 
 

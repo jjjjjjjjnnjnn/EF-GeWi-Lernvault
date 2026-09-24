@@ -471,3 +471,22 @@ tags: [EF, Meta]
 | Bildmassstab | 图像比例尺 | Bio | Der Bildmassstab rechnet Zeichenlaenge in Wirklichkeit um. |
 | Spezies | 物种 | Bio | Die Skizze belegt allein keine eindeutige Spezies. |
 | Stoffaustausch | 物质交换 | Bio | Die Biomembran regelt den selektiven Stoffaustausch. |
+| ganzrationale Funktion | 整式多项式函数 | Mathe | Eine ganzrationale Funktion setzt sich aus Potenzen mit natuerlichen Exponenten zusammen. |
+| Kurvendiskussion | 曲线讨论（性质研究） | Mathe | Die Kurvendiskussion untersucht Symmetrie, Nullstellen und Extrempunkte eines Graphen. |
+| Globalverhalten | 全局极限行为 | Mathe | Das Globalverhalten fuer x gegen Unendlich wird durch den hoechsten Exponenten bestimmt. |
+| Achsensymmetrie | 轴对称性 | Mathe | Gilt f von minus x gleich f von x, so liegt Achsensymmetrie zur y-Achse vor. |
+| Punktsymmetrie | 中心对称性 | Mathe | Gilt f von minus x gleich minus f von x, so liegt Punktsymmetrie zum Ursprung vor. |
+| Extremwertproblem | 极值问题 | Mathe | Beim Extremwertproblem wird eine Zielfunktion unter einer Nebenbedingung optimiert. |
+| Trägheitsgesetz | 惯性定律（牛顿第一定律） | Physik | Nach dem Traegheitsgesetz verharrt ein Koerper ohne resultierende Kraft in Ruhe. |
+| Aktionsprinzip | 动量定律（牛顿第二定律） | Physik | Das Aktionsprinzip besagt, dass die resultierende Kraft Masse mal Beschleunigung ist. |
+| Reaktionsprinzip | 反作用力定律（牛顿第三定律） | Physik | Gemaess dem Reaktionsprinzip tritt jede Kraft mit einer gleich grossen Gegenkraft auf. |
+| Hangabtriebskraft | 下滑力 | Physik | Die Hangabtriebskraft beschleunigt den Koerper entlang der geneigten Ebene. |
+| Normalkraft | 法向正压力 | Physik | Die Normalkraft wirkt senkrecht auf die Auflageflaeche. |
+| Gleitreibung | 滑动摩擦 | Physik | Die Gleitreibung bremst die relative Bewegung zweier Oberflaechen. |
+| Protolyse | 质子转移反应 | Chemie | Bei einer Protolyse wird ein Proton von einer Saeure auf eine Base uebertragen. |
+| Protonendonator | 质子供体（酸） | Chemie | Nach Broensted fungiert eine Saeure als Protonendonator. |
+| Protonenakzeptor | 质子受体（碱） | Chemie | Nach Broensted fungiert eine Base als Protonenakzeptor. |
+| Autoprotolyse | 自耦电离 | Chemie | Die Autoprotolyse des Wassers fuehrt zur Bildung von Oxonium- und Hydroxidionen. |
+| Ionenprodukt des Wassers | 水离子积 | Chemie | Das Ionenprodukt des Wassers betraegt zehn hoch minus vierzehn. |
+| pH-Wert | pH值 | Chemie | Der pH-Wert ist der negative dekadische Logarithmus der Oxoniumionenkonzentration. |
+| Äquivalenzpunkt | 等当点（滴定化学计量点） | Chemie | Am Aequivalenzpunkt sind die Stoffmengen von Saeure und Base stoechiometrisch gleich. |
