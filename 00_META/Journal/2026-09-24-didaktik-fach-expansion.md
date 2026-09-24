@@ -31,7 +31,19 @@ tags: [EF, App, Meta]
 - **AI 助教自适应教具与徽章 (`Tutor.tsx`)**：根据当前学科动态展示对应的 Didaktik 专属工具按钮与教学法说明徽章，彻底避免通用生硬模板。
 - **模考与自测联动 (`Quiz.tsx`, `KlausurSim.tsx`)**：联动选中学科，优先筛选该科考点与试题。
 
-## 3. 质量与合规检验
+## 3. 思维导图跨学科跳转修复与选中高亮色调优化
+
+1. **思维导图跨学科跳转修复**：
+   - **根本原因**：此前在思维导图（`Mindmap`）中点击不同学科的笔记节点时，`jumpToLibrary` 仅将主题关键词推入 `query`，而未同步全局 `selectedFach`，导致 `Library` 依然在旧学科下过滤，因学科不匹配而过滤为空（“显示错了学科，未找到相关笔记”）。
+   - **修复落地**：
+     - `App.tsx` 的 `jumpToLibrary` 引入 `selectedNoteId` 与学科自动同步联动；
+     - `Library.tsx` 引入关键词/主题所属学科自动嗅探同步效应：当接收到笔记关键词或 ID 时，自动将学科标签切换至该笔记所在学科（`target.fach`），并选定打开该笔记，彻底消除“未找到相关笔记”与学科错位问题；
+     - `Home.tsx` 与 `Quiz.tsx` 的跳转亦同步对齐学科传参。
+2. **选择高亮色调过深优化**：
+   - 彻底移除 AI 助教顶栏思考强度（“极速 / 均衡 / 深度思考”）中过于刺眼沉重的纯黑背景（`bg-[var(--ink)] text-[var(--paper)]`），重塑为温润内敛的学术低对比底衬（`bg-[var(--paper-subtle)] text-[var(--ink)] border border-[var(--line)]`）；
+   - 同步优化卡片库（`Flashcards.tsx`）的“全部”胶囊，消除深黑块，使整体界面视觉更加轻盈、干净、学术。
+
+## 4. 质量与合规检验
 - `npx vitest run`: 55 个测试套件，354 项自动化测试 100% 全部通过。
 - `npm run build`: TypeScript 强类型校验与 Vite 生产构建 0 错误通过。
 - `python scripts/vault-check.py`: 81 篇笔记、481 行单词卡片、200 条索引链接全部合规 PASS。
