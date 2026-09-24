@@ -490,3 +490,15 @@ tags: [EF, Meta]
 | Ionenprodukt des Wassers | 水离子积 | Chemie | Das Ionenprodukt des Wassers betraegt zehn hoch minus vierzehn. |
 | pH-Wert | pH值 | Chemie | Der pH-Wert ist der negative dekadische Logarithmus der Oxoniumionenkonzentration. |
 | Äquivalenzpunkt | 等当点（滴定化学计量点） | Chemie | Am Aequivalenzpunkt sind die Stoffmengen von Saeure und Base stoechiometrisch gleich. |
+| Steckbriefaufgabe | 特征信息重构题 | Mathe | Bei einer Steckbriefaufgabe wird ein Funktionsterm aus geometrischen Bedingungen rekonstruiert. |
+| Funktionsrekonstruktion | 函数重构 | Mathe | Die Funktionsrekonstruktion bestimmt die Koeffizienten eines Polynoms ueber ein Gleichungssystem. |
+| gleichmäßig beschleunigte Bewegung | 匀加速直线运动 | Physik | Bei der gleichmaessig beschleunigten Bewegung ist die Beschleunigung zeitlich konstant. |
+| freier Fall | 自由落体 | Physik | Der freie Fall ist eine gleichmaessig beschleunigte Bewegung unter dem Einfluss der Schwerkraft. |
+| Superpositionsprinzip | 运动叠加原理 | Physik | Nach dem Superpositionsprinzip ueberlagern sich Teilbewegungen unbeeinflusst voneinander. |
+| zwischenmolekulare Kräfte | 分子间作用力 | Chemie | Zwischenmolekulare Kraefte bestimmen Siedepunkt und Loeslichkeit von Stoffen. |
+| Van-der-Waals-Kräfte | 范德华力 | Chemie | Van-der-Waals-Kraefte beruhen auf spontanen und induzierten Dipolen. |
+| Wasserstoffbrückenbindung | 氢键 | Chemie | Wasserstoffbrueckenbindungen entstehen zwischen polarisierten H-Atomen und F, O oder N. |
+| Carrierprotein | 载体蛋白 | Bio | Ein Carrierprotein transportiert Substrate ueber eine Konformationsaenderung. |
+| Kanalprotein | 通道蛋白 | Bio | Kanalproteine ermoeglichen den schnellen selektiven Durchtritt polarer Teilchen. |
+| Plasmolyse | 质壁分离 | Bio | Bei der Plasmolyse loest sich der Protoplast im hypertonischen Milieu von der Zellwand. |
+| Deplasmolyse | 质壁分离复原 | Bio | Durch Wassereinstrom legt sich der Protoplast im hypotonischen Milieu wieder an die Zellwand an. |

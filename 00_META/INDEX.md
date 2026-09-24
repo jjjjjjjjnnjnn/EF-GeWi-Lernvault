@@ -77,24 +77,28 @@
 
 ### Physik
 - Gleichförmige Bewegung: Training — [Gleichfoermige-Bewegung-Training](../04_Physik/Gleichfoermige-Bewegung-Training.md)（s-t读画/平均vs瞬时/Excel四步/Klausur四行）
+- Gleichmäßig beschleunigte Bewegung & Freier Fall — [Gleichmaessig-beschleunigte-Bewegung-Freier-Fall](../04_Physik/Gleichmaessig-beschleunigte-Bewegung-Freier-Fall.md)（匀加速公式/v-t面积积分/自由落体/平抛轨迹）
 - Newtonsche Gesetze & Dynamik — [Newtonsche-Gesetze-und-Krafte](../04_Physik/Newtonsche-Gesetze-und-Krafte.md)（三大定律/斜面受力分解/摩擦阻力/机械能守恒）
 - IQB EF Training Diagramme/Messung — [Physik-IQB-EF-Training](../04_Physik/Physik-IQB-EF-Training.md)（4自编题+KaTeX）· [Operatoren-Check](../04_Physik/Klausur-Training/Physik-Operatoren-Check.md)
 - CN-Brücke Formelhandbuch + Tricks + Training — [CN-Formelhandbuch](../04_Physik/CN-Physik-Formelhandbuch.md) · [CN-Tricks](../04_Physik/CN-Physik-Tricks.md) · [CN-Training](../04_Physik/Klausur-Training/CN-Physik-Training.md)（三语对照/6方法/4自编题+EHZ）
 
 ### Bio
 - Zellbiologie-Grundlagen — [Zellbiologie-Grundlagen](../06_Bio/Zellbiologie-Grundlagen.md)（Mikroskop/Skala/Pflanze-Tier-Bakterium/Operatoren）
+- Biomembran & Osmose — [Biomembran-Transportmechanismen-und-Osmose](../06_Bio/Biomembran-Transportmechanismen-und-Osmose.md)（流动镶嵌模型/被动与主动运输/质壁分离与复原实验）
 - Bio-EF-Oekologie-Training — [Bio-EF-Oekologie-Training](../06_Bio/Bio-EF-Oekologie-Training.md)（Zellbio深化+Ökologie展望，4自编题）· [Operatoren-Check](../06_Bio/Klausur-Training/Bio-Operatoren-Check.md)
 - CN-Begriffe + Tricks + Training — [Begriffshandbuch](../06_Bio/CN-Bio-Begriffshandbuch.md) · [Tricks](../06_Bio/CN-Bio-Tricks.md) · [Training](../06_Bio/Klausur-Training/CN-Bio-Training.md)（三语桥/EF+Ausblick，4+6自编题）
 
 ### Mathe
 - Analysis & Kinetik — [Analysis-Physik-Kinetik-Vernetzung](../03_Mathe/Analysis-Physik-Kinetik-Vernetzung.md)（微积分导数与运动学瞬时速度深度联动）
 - Kurvendiskussion & Polynome — [Ganzrationale-Funktionen-Kurvendiskussion](../03_Mathe/Ganzrationale-Funktionen-Kurvendiskussion.md)（多项式函数性质/极值拐点/实际极值问题建模）
+- Steckbriefaufgaben & Funktionsrekonstruktion — [Steckbriefaufgaben-und-Funktionsanpassung](../03_Mathe/Steckbriefaufgaben-und-Funktionsanpassung.md)（几何条件翻译/代数方程组/四步设解）
 - ZKE 2027 Training — [Mathe-ZKE-2027-Training](../03_Mathe/Mathe-ZKE-2027-Training.md)（Teil A免工具+Teil B WTR/CAS，4自编题+解法）
 - CN Formelhandbuch DE-CN-EN · Tricks · Training — [CN-Mathe-Formelhandbuch](../03_Mathe/CN-Mathe-Formelhandbuch.md) · [CN-Mathe-Tricks](../03_Mathe/CN-Mathe-Tricks.md) · [CN-Mathe-Training](../03_Mathe/Klausur-Training/CN-Mathe-Training.md)（CN方法↔ZKE论证）
 
 ### Chemie
 - Kinetik & Enzymbiologie — [Kinetik-Gleichgewicht-Bio-Vernetzung](../05_Chemie/Kinetik-Gleichgewicht-Bio-Vernetzung.md)（反应动力学/勒夏特列与生物酶催化/流平衡联动）
 - Säure-Base-Gleichgewichte & pH — [Saeure-Base-Gleichgewichte-pH-Wert](../05_Chemie/Saeure-Base-Gleichgewichte-pH-Wert.md)（质子理论/水自耦电离/pH计算/滴定中和）
+- Zwischenmolekulare Kräfte & Stoffeigenschaften — [Zwischenmolekulare-Kraefte-und-Stoffeigenschaften](../05_Chemie/Zwischenmolekulare-Kraefte-und-Stoffeigenschaften.md)（范德华力/偶极作用/氢键/沸点与溶解度机理解析）
 - EF-Grundlagen-Training — [Chemie-EF-Grundlagen-Training](../05_Chemie/Chemie-EF-Grundlagen-Training.md)（Atombau/Bindung/配平/Mol，8自编题）· [Operatoren-Check](../05_Chemie/Klausur-Training/Chemie-Operatoren-Check.md)（StanSi ab 2025+Formeldokument）
 - CN Formelhandbuch · Tricks · Training — [CN-Chemie-Formelhandbuch](../05_Chemie/CN-Chemie-Formelhandbuch.md) · [CN-Chemie-Tricks](../05_Chemie/CN-Chemie-Tricks.md) · [CN-Chemie-Training](../05_Chemie/Klausur-Training/CN-Chemie-Training.md)（DE-CN-EN桥，全自编）
 
