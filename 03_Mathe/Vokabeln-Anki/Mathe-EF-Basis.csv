@@ -57,4 +57,8 @@ Vorzeichenwechselkriterium;符号变换判据;Das Vorzeichenwechselkriterium erm
 Extremwertproblem;极值问题;Beim Extremwertproblem wird eine Zielfunktion unter einer Nebenbedingung optimiert.;Mathe;Analysis
 Zielfunktion;目标函数;Die Zielfunktion enthaelt die Groesse, die maximiert oder minimiert werden soll.;Mathe;Analysis
 Randwertpruefung;边界值检验;Bei der Randwertpruefung vergleicht man lokale Extrema mit den Grenzen des Definitionsbereichs.;Mathe;Analysis
+Steckbriefaufgabe;特征信息重构题;Bei einer Steckbriefaufgabe wird ein Funktionsterm aus geometrischen Bedingungen rekonstruiert.;Mathe;Analysis
+Funktionsrekonstruktion;函数重构;Die Funktionsrekonstruktion bestimmt die Koeffizienten eines Polynoms ueber ein Gleichungssystem.;Mathe;Analysis
+Bedingungsgleichung;条件等式;Jede geometrische Eigenschaft liefert eine algebraische Bedingungsgleichung.;Mathe;Analysis
+Wendetangente;拐点切线;Die Wendetangente beruehrt den Funktionsgraphen genau im Wendepunkt.;Mathe;Analysis
 
