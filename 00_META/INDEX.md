@@ -28,6 +28,7 @@
 - [Download-Quellen](Download-Quellen.md) — 本地 `_Downloads/` 采集清单（PDF不进git）
 - [DeepTutor](DeepTutor.md) — 提分引擎：Quiz/抽认卡/模拟卷命令手册
 - Skills：[klausur-drill](../Skills/klausur-drill/SKILL.md) · [vokabel-trainer](../Skills/vokabel-trainer/SKILL.md) · [texte-analyse](../Skills/texte-analyse/SKILL.md)
+- [Lernbaum十科学习树（设计层）](Lernbaum/00-Designprinzipien.md) — 总纲（L0–L3层级/节点四行/mermaid规范）+ 十科树：[Deutsch](Lernbaum/Lernbaum-Deutsch.md) · [Englisch](Lernbaum/Lernbaum-Englisch.md) · [Mathe](Lernbaum/Lernbaum-Mathe.md) · [Physik](Lernbaum/Lernbaum-Physik.md) · [Chemie](Lernbaum/Lernbaum-Chemie.md) · [Bio](Lernbaum/Lernbaum-Bio.md) · [Philosophie](Lernbaum/Lernbaum-Philosophie.md) · [SoWi](Lernbaum/Lernbaum-SoWi.md) · [Musik](Lernbaum/Lernbaum-Musik.md) · [Sport](Lernbaum/Lernbaum-Sport.md)（只设计：不挂笔记、不落地代码）
 
 ## 主题索引（新增一行一条）
 ### SoWi
@@ -55,6 +56,7 @@
 - Ethik: Utilitarismus vs Kant — [Utilitarismus-vs-Kant](../07_Philosophie/Texte-Analyse/Utilitarismus-vs-Kant.md)
 - Philosophische Fragen stellen (Plickat) — [Philosophische-Fragen-Typen](../07_Philosophie/Texte-Analyse/Philosophische-Fragen-Typen.md)（5 Fragetypen/Operatoren-Mapping）
 - Ethische Dilemmata: Kant vs Utilitarismus — [Ethische-Dilemmata-Sammlung](../07_Philosophie/Texte-Analyse/Ethische-Dilemmata-Sammlung.md)（4案例/双公式检验/快乐计算/8句Merksatz）
+- Kants Kategorischer Imperativ & Maximenprüfung — [Kant-Kategorischer-Imperativ-und-Maximenpruefung](../07_Philosophie/Kant-Kategorischer-Imperativ-und-Maximenpruefung.md)（四步检验法/无矛盾可设想性与可意愿性/人类自为目的公式）
 - Abitur-Kernstellen (Aristoteles/Kant/Rousseau/Sartre) — [Philo-Abitur-Kernstellen](../07_Philosophie/Texte-Analyse/Philo-Abitur-Kernstellen.md)（4×3句论证+EF-Anschluss）· [II B/II C Training](../07_Philosophie/Klausur-Training/Philo-Textanalyse-Training.md)（EHZ+Lena-Übung）
 
 ### Deutsch
@@ -63,9 +65,11 @@
 - Drama-Ganzschrift: Kandidaten + Werkzeugkasten — [Drama-Ganzschrift-Kandidaten](../01_Deutsch/Texte-Analyse/Drama-Ganzschrift-Kandidaten.md)（Dürrenmatt/Frisch-Shortlist/五段/人物关系/对话分析，待老师定书名）
 - Abitur-Aufgabenarten I-IV + ZKE-Anschluss — [Deutsch-Abitur-Aufgabenarten](../01_Deutsch/Texte-Analyse/Deutsch-Abitur-Aufgabenarten.md)（I-IV/AFB/IV材料写作/Gedichtvergleich/ZKE-D1=IIa）· [IQB-Training](../01_Deutsch/Klausur-Training/Deutsch-IQB-Training.md)（自写150词范文+EHZ）
 - Sachtextanalyse: Argumentation & Leserlenkung — [Sachtextanalyse-Argumentation](../01_Deutsch/Texte-Analyse/Sachtextanalyse-Argumentation.md)（Pause vom Bildschirm?/6 Argumenttypen/10 Verben/AFB II Analyse vs AFB III Erörterung）
+- Sachtextanalyse: Leserlenkung & Rhetorik — [Sachtextanalyse-Leserlenkung-und-Rhetorik](../01_Deutsch/Sachtextanalyse-Leserlenkung-und-Rhetorik.md)（形式-功能-读者效果三位一体/修辞功能链/假托论据识别）
 
 ### Englisch
 - Role Models — [Role-Models-Analysis](../02_Englisch/Texte-Analyse/Role-Models-Analysis.md)（Teil A三任务链/Summary自查/P.E.E./Comment句型）
+- Mediation & Kommunikative Strategien — [Mediation-und-Kommunikative-Strategien](../02_Englisch/Mediation-und-Kommunikative-Strategien.md)（Teil B跨文化调解准则/体裁格式契合/文化概念释义）
 - Klett Bridge→IQB Themenfelder映射 — [Klett-Themenfelder-Mapping](../02_Englisch/Texte-Analyse/Klett-Themenfelder-Mapping.md)（5单元23媒体→Bereich1/2/5/7，混淆ID工作假设待目录页核对）
 - Teil B Doppelpack — [Klausur-Teil-B-Doppelpack](../02_Englisch/Texte-Analyse/Klausur-Teil-B-Doppelpack.md)（Hörverstehen四题型+Mediation三段式，待老师定考轨）
 - Mediation范文两套 — [Mediation-Mustertexte](../02_Englisch/Texte-Analyse/Mediation-Mustertexte.md)（FSJ正式信+Detox论坛帖+双register Connectors）
@@ -191,6 +195,7 @@
 - [2026-09-24-werkzeuge-and-ia-restructure](Journal/2026-09-24-werkzeuge-and-ia-restructure.md) — 学科教具独立专区与学术风四大信息架构重组（6大教具搬离Tutor+Alt W快捷键+4分区侧边栏+55套件354测试全绿）
 - [2026-09-24-clean-buttons-and-all-subjects](Journal/2026-09-24-clean-buttons-and-all-subjects.md) — 快捷键显示清理、左侧导航按键等大化与全学科数据接入（零kbd徽标+h-10统一切换按钮+10科全图谱与真实考情卡片接入）
 - [2026-09-24-mint-deepening-and-score-booster](Journal/2026-09-24-mint-deepening-and-score-booster.md) — MINT 理科跨学科深度扩充与模考采分点诊断系统落地（BWKI图谱沉淀数理化深度笔记+506张词卡+模考算子合规与学术德语提分润色）
+- [2026-09-24-lernbaum-design](Journal/2026-09-24-lernbaum-design.md) — 十科学习树设计层落地：总纲+十科L0–L3 mindmap（大纲自顶向下，不挂笔记、不碰代码，主线程全量审核通过）
 - 约定：文件名 `YYYY-MM-DD-<thema>.md`，头部frontmatter（`fach`可空，`tags: [EF, Meta]`）。
 
 
