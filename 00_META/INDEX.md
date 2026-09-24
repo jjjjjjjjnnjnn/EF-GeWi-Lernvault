@@ -182,6 +182,7 @@
 - [2026-09-24-ui-elevation-redesign](Journal/2026-09-24-ui-elevation-redesign.md) — UI 美学升格与微卡片重塑：全局字体污染治理+象牙白温润纸感升格+仪表盘/助教/模考微卡化（55套件352单测全绿，build过，零阴影高阶书卷学术风）
 - [2026-09-24-didaktik-fach-expansion](Journal/2026-09-24-didaktik-fach-expansion.md) — 顶栏语言切换移除与全学科教学法接入（四维认知域+导数沙盘+MINT规范四步解题+口试矩阵）
 - [2026-09-24-werkzeuge-and-ia-restructure](Journal/2026-09-24-werkzeuge-and-ia-restructure.md) — 学科教具独立专区与学术风四大信息架构重组（6大教具搬离Tutor+Alt W快捷键+4分区侧边栏+55套件354测试全绿）
+- [2026-09-24-clean-buttons-and-all-subjects](Journal/2026-09-24-clean-buttons-and-all-subjects.md) — 快捷键显示清理、左侧导航按键等大化与全学科数据接入（零kbd徽标+h-10统一切换按钮+10科全图谱与真实考情卡片接入）
 - 约定：文件名 `YYYY-MM-DD-<thema>.md`，头部frontmatter（`fach`可空，`tags: [EF, Meta]`）。
 
 
