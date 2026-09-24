@@ -26,13 +26,16 @@
 - [HANDOVER](../HANDOVER.md) — 一页交接（新agent/用户先读）
 - [Plan-接手执行](Plan-接手执行.md) — 接手执行计划（任务状态/铁约束/优先级分层/A–D待办清单）
 - **考纲体系（Curriculum）** — [设计总纲](Curriculum/00-Design.md) · [官方源清单](Curriculum/01-Quellen.md)
-  - 德国 NRW：[SoWi](Curriculum/Deutschland/SoWi-Oberstufe.md) · [Mathe](Curriculum/Deutschland/Mathe-Oberstufe.md)
-  - 中德对照：[Mathe-DE-CN-Mapping](Curriculum/Mapping/Mathe-DE-CN-Mapping.md)
+  - 德国 NRW Oberstufe（EF–Q2，10 科）：[Deutsch](Curriculum/Deutschland/Deutsch-Oberstufe.md) · [Englisch](Curriculum/Deutschland/Englisch-Oberstufe.md) · [Philosophie](Curriculum/Deutschland/Philosophie-Oberstufe.md) · [SoWi](Curriculum/Deutschland/SoWi-Oberstufe.md) · [Musik](Curriculum/Deutschland/Musik-Oberstufe.md) · [Sport](Curriculum/Deutschland/Sport-Oberstufe.md) · [Mathe](Curriculum/Deutschland/Mathe-Oberstufe.md) · [Physik](Curriculum/Deutschland/Physik-Oberstufe.md) · [Chemie](Curriculum/Deutschland/Chemie-Oberstufe.md) · [Bio](Curriculum/Deutschland/Bio-Oberstufe.md)
+  - 中国高中课标（理科 4 科）：[Mathe-CN](Curriculum/China/Mathe-CN-Kursstandard.md) · [Physik-CN](Curriculum/China/Physik-CN-Kursstandard.md) · [Chemie-CN](Curriculum/China/Chemie-CN-Kursstandard.md) · [Bio-CN](Curriculum/China/Bio-CN-Kursstandard.md)
+  - 中德对照（理科 4 科，含 CN-Methode 技法卡）：[Mathe](Curriculum/Mapping/Mathe-DE-CN-Mapping.md) · [Physik](Curriculum/Mapping/Physik-DE-CN-Mapping.md) · [Chemie](Curriculum/Mapping/Chemie-DE-CN-Mapping.md) · [Bio](Curriculum/Mapping/Bio-DE-CN-Mapping.md)
+  - 跨科统一源：[Operatoren 十科汇总](Curriculum/Deutschland/Operatoren-NRW-Alle-Faecher.md)（230 动词）· [Klausur/Abitur 形式](Curriculum/Klausur-Formate/Klausur-und-Abitur-Formate.md)
 - [Ziele](Ziele.md) · [NRW-EF-Lehrplan-Übersicht](NRW-EF-Lehrplan-Übersicht.md) · [Lernsystem](Lernsystem.md) · [Lernmethoden-Evidenz](Lernmethoden-Evidenz.md) · [Methoden-Quellen](Methoden-Quellen.md) · [Operatoren-NRW-GeWi](Operatoren-NRW-GeWi.md) · [Glossar-DE-ZH-GeWi](Glossar-DE-ZH-GeWi.md)
 - [Download-Quellen](Download-Quellen.md) — 本地 `_Downloads/` 采集清单（PDF不进git）
 - [DeepTutor](DeepTutor.md) — 提分引擎：Quiz/抽认卡/模拟卷命令手册
 - Skills：[klausur-drill](../Skills/klausur-drill/SKILL.md) · [vokabel-trainer](../Skills/vokabel-trainer/SKILL.md) · [texte-analyse](../Skills/texte-analyse/SKILL.md)
-- [Lernbaum十科学习树（设计层）](Lernbaum/00-Designprinzipien.md) — 总纲（L0–L3层级/节点四行/mermaid规范）+ 十科树：[Deutsch](Lernbaum/Lernbaum-Deutsch.md) · [Englisch](Lernbaum/Lernbaum-Englisch.md) · [Mathe](Lernbaum/Lernbaum-Mathe.md) · [Physik](Lernbaum/Lernbaum-Physik.md) · [Chemie](Lernbaum/Lernbaum-Chemie.md) · [Bio](Lernbaum/Lernbaum-Bio.md) · [Philosophie](Lernbaum/Lernbaum-Philosophie.md) · [SoWi](Lernbaum/Lernbaum-SoWi.md) · [Musik](Lernbaum/Lernbaum-Musik.md) · [Sport](Lernbaum/Lernbaum-Sport.md)（只设计：不挂笔记、不落地代码）
+- **Abi-Baum 十科应试树（EF→Abitur，作战地图）** — [设计总纲](Lernbaum/00-Abi-Baum-Design.md) · 十科：[Deutsch](Lernbaum/Lernbaum-Deutsch.md) · [Englisch](Lernbaum/Lernbaum-Englisch.md) · [Mathe](Lernbaum/Lernbaum-Mathe.md) · [Physik](Lernbaum/Lernbaum-Physik.md) · [Chemie](Lernbaum/Lernbaum-Chemie.md) · [Bio](Lernbaum/Lernbaum-Bio.md) · [Philosophie](Lernbaum/Lernbaum-Philosophie.md) · [SoWi](Lernbaum/Lernbaum-SoWi.md) · [Musik](Lernbaum/Lernbaum-Musik.md) · [Sport](Lernbaum/Lernbaum-Sport.md)（每 L3 带应试四行 + 学习方法 + 理科 CN-Methode + 笔记缺口）
+- [Lernbaum十科学习树（旧设计层，EF 版）](Lernbaum/00-Designprinzipien.md) — 历史记录（已被 Abi-Baum 取代）
 
 ## 主题索引（新增一行一条）
 ### SoWi
@@ -206,6 +209,7 @@
 - [2026-09-24-wartung-7](Journal/2026-09-24-wartung-7.md) — 第七轮全项目维护：文件卫生零泄漏/102笔记-534词卡-234链接全一致/57套件379单测/build/1420全绿
 - [2026-09-24-uebernahme-audit-und-plan](Journal/2026-09-24-uebernahme-audit-und-plan.md) — 接手审计与执行计划：独立实测复核三门禁全绿（vault-check/379单测/build）+ 产出 `Plan-接手执行.md`
 - [2026-09-24-curriculum-framework-und-pilot](Journal/2026-09-24-curriculum-framework-und-pilot.md) — 考纲体系 S0+S1：框架建立（设计总纲+源清单+4模板）与试点（SoWi/Mathe大纲+中德映射），含 4 处上游纠错
+- [2026-09-24-abi-baum-und-curriculum-vollausbau](Journal/2026-09-24-abi-baum-und-curriculum-vollausbau.md) — **考纲体系 S0–S7 全量 + Abi-Baum 十科重构**（40 文件 ~17600 行，11 处上游纠错，38 条 CN-Methode 技法卡）
 - 约定：文件名 `YYYY-MM-DD-<thema>.md`，头部frontmatter（`fach`可空，`tags: [EF, Meta]`）。
 
 
