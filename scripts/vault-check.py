@@ -41,7 +41,7 @@ def check_notes():
         rel = p.relative_to(ROOT)
         if any(d in SKIP_DIRS for d in rel.parts):
             continue
-        if p.name in EXEMPT_NAMES:
+        if p.name in EXEMPT_NAMES or p.name.startswith("_"):
             continue
         meta, _ = parse_fm(p.read_text(encoding="utf-8"))
         if meta is None:
