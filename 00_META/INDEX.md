@@ -205,6 +205,7 @@
 - [2026-09-24-curriculum-deepening-batch2-and-fach-lernbaeume](Journal/2026-09-24-curriculum-deepening-batch2-and-fach-lernbaeume.md) — 全学科课程大纲深度化第二批与全10门学科独立学习树系统上线（修辞三步走+Mediation跨文化调解+康德四步检验法+全10科Inhaltsfelder三阶学习树，534词卡+57套件379测试全绿）
 - [2026-09-24-wartung-7](Journal/2026-09-24-wartung-7.md) — 第七轮全项目维护：文件卫生零泄漏/102笔记-534词卡-234链接全一致/57套件379单测/build/1420全绿
 - [2026-09-24-uebernahme-audit-und-plan](Journal/2026-09-24-uebernahme-audit-und-plan.md) — 接手审计与执行计划：独立实测复核三门禁全绿（vault-check/379单测/build）+ 产出 `Plan-接手执行.md`
+- [2026-09-24-curriculum-framework-und-pilot](Journal/2026-09-24-curriculum-framework-und-pilot.md) — 考纲体系 S0+S1：框架建立（设计总纲+源清单+4模板）与试点（SoWi/Mathe大纲+中德映射），含 4 处上游纠错
 - 约定：文件名 `YYYY-MM-DD-<thema>.md`，头部frontmatter（`fach`可空，`tags: [EF, Meta]`）。
 
 
