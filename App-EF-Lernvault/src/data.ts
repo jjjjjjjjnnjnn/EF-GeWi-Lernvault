@@ -92,6 +92,24 @@ export const notes: Note[] = [
     ],
   },
   {
+    id: "mathe-kurvendiskussion",
+    fach: "Mathe",
+    thema: "Ganzrationale Funktionen & Kurvendiskussion",
+    zh: "整式多项式函数与曲线讨论（极值与拐点）",
+    operatoren: ["berechnen", "bestimmen", "untersuchen"],
+    klausurrelevant: true,
+    bodyDE: [
+      "Symmetriekriterien: Achsensymmetrie zur y-Achse $f(-x) = f(x)$ bei geraden Exponenten; Punktsymmetrie zum Ursprung $f(-x) = -f(x)$ bei ungeraden Exponenten.",
+      "Extrema: Notwendige Bedingung $f'(x_0) = 0$; hinreichende Bedingung $f''(x_0) < 0$ (Hochpunkt) bzw. $f''(x_0) > 0$ (Tiefpunkt).",
+      "Extremwertprobleme im Sachzusammenhang: Hauptbedingung aufstellen, Nebenbedingung einsetzen und Zielfunktion unter Randwertprüfung optimieren.",
+    ],
+    bodyZH: [
+      "对称性判据：纯偶次项满足 $f(-x) = f(x)$（关于 y 轴对称）；纯奇次项满足 $f(-x) = -f(x)$（关于原点对称）。",
+      "极值判据：必要条件 $f'(x_0) = 0$；充分条件 $f''(x_0) < 0$ 为极大值点，$f''(x_0) > 0$ 为极小值点。",
+      "实际情境极值问题：建立目标函数，代入几何/经济约束条件，在定义域内求导并严格进行边界值检验。",
+    ],
+  },
+  {
     id: "physik-kinematik",
     fach: "Physik",
     thema: "Kinematik & Newtonsche Axiome",
@@ -110,6 +128,24 @@ export const notes: Note[] = [
     ],
   },
   {
+    id: "physik-newton-dynamik",
+    fach: "Physik",
+    thema: "Newtonsche Gesetze & Kräftezerlegung",
+    zh: "牛顿力学三大定律与斜面受力分析",
+    operatoren: ["analysieren", "berechnen", "begründen"],
+    klausurrelevant: true,
+    bodyDE: [
+      "Trägheit und Wechselwirkung: Trägheitsgesetz (kräftefreier Zustand verharrt in Ruhe/Gleichförmigkeit) und Reaktionsprinzip (Actio gleich Reactio).",
+      "Kräftezerlegung an der geneigten Ebene: Hangabtriebskraft $F_H = m \\cdot g \\cdot \\sin(\\alpha)$, Normalkraft $F_N = m \\cdot g \\cdot \\cos(\\alpha)$.",
+      "Mechanische Energieerhaltung: $E_{\\text{kin}} + E_{\\text{pot}} = \\frac{1}{2}mv^2 + mgh = \\text{konstant}$ im konservativen Schwerefeld.",
+    ],
+    bodyZH: [
+      "惯性与作用力定律：惯性定律（合力为零时保持静止或匀速直线运动）与反作用力定律（Actio = Reactio）。",
+      "斜面受力分解模型：下滑力 $F_H = m \\cdot g \\cdot \\sin(\\alpha)$，法向正压力 $F_N = m \\cdot g \\cdot \\cos(\\alpha)$，摩擦力阻碍相对运动。",
+      "机械能守恒定律：在只有重力做功的保守力场中，动能与重力势能之和保持恒定。",
+    ],
+  },
+  {
     id: "chemie-le-chatelier",
     fach: "Chemie",
     thema: "Chemisches Gleichgewicht & Le Chatelier",
@@ -125,6 +161,24 @@ export const notes: Note[] = [
       "质量作用定律（MWG）：对可逆反应 $$aA + bB \\rightleftharpoons cC + dD$$，平衡常数 $$K_c = \\frac{[C]^c [D]^d}{[A]^a [B]^b}$$。",
       "最小应激原理（勒夏特列）：改变外界压力、温度或反应物浓度，平衡向减弱该改变的方向移动。",
       "温度调控规律：升高温度永远促进吸热反应方向（$\\Delta H > 0$），降低温度促进放热方向。",
+    ],
+  },
+  {
+    id: "chemie-saeure-base",
+    fach: "Chemie",
+    thema: "Säure-Base-Gleichgewichte & pH-Wert",
+    zh: "布朗斯特酸碱质子理论与 pH 值计算",
+    operatoren: ["beschreiben", "berechnen", "begründen"],
+    klausurrelevant: true,
+    bodyDE: [
+      "Brønsted-Lowry-Konzept: Säure als Protonendonator ($H^+$ Abgabe), Base als Protonenakzeptor ($H^+$ Aufnahme) unter Bildung korrespondierender Paare.",
+      "Autoprotolyse des Wassers: $2\\,\\text{H}_2\\text{O} \\rightleftharpoons \\text{H}_3\\text{O}^+ + \\text{OH}^-$ mit Ionenprodukt $K_w = [H_3O^+][OH^-] = 10^{-14}\\,\\text{mol}^2/\\text{l}^2$.",
+      "Logarithmische pH-Skala: $\\text{pH} = -\\lg[H_3O^+]$ und Neutralisation $\\text{H}_3\\text{O}^+ + \\text{OH}^- \\to 2\\,\\text{H}_2\\text{O}$ am Äquivalenzpunkt.",
+    ],
+    bodyZH: [
+      "布朗斯特酸碱概念：酸为质子供体（给出质子），碱为质子受体（接收质子），形成共轭酸碱对。",
+      "水自耦电离平衡：$2\\,\\text{H}_2\\text{O} \\rightleftharpoons \\text{H}_3\\text{O}^+ + \\text{OH}^-$，常温下水离子积常数 $K_w = 10^{-14}\\,\\text{mol}^2/\\text{l}^2$。",
+      "对数 pH 标度：$\\text{pH} = -\\lg[H_3O^+]$，中和滴定化学计量点满足酸碱物质的量等当量平衡。",
     ],
   },
   {
@@ -222,6 +276,9 @@ export const cards: Card[] = [
   { id: "c18", front: "Krebs & Umkehrung", back: "逆行与倒影变奏技法", example: "Verarbeitungstechniken von Motiven in der klassischen Satzlehre.", fach: "Musik", dueIn: "in 4 Tagen" },
   { id: "c19", front: "Superkompensation", back: "超量恢复原理", example: "Wiederherstellung der energetischen Reserven über das Ausgangsniveau.", fach: "Sport", dueIn: "heute" },
   { id: "c20", front: "Anaerobe Schwelle", back: "无氧乳酸阈值", example: "Maximale Belastungsintensität mit Laktat-Gleichgewicht (ca. 4 mmol/l).", fach: "Sport", dueIn: "in 2 Tagen" },
+  { id: "c21", front: "Kurvendiskussion", back: "曲线讨论（性质研究）", example: "Systematische Untersuchung von Symmetrie, Nullstellen und Extrema.", fach: "Mathe", dueIn: "heute" },
+  { id: "c22", front: "Trägheitsgesetz", back: "牛顿第一惯性定律", example: "Ein kräftefreier Körper verharrt in Ruhe oder gleichförmiger Bewegung.", fach: "Physik", dueIn: "morgen" },
+  { id: "c23", front: "Protolyse & pH", back: "酸碱质子转移与pH对数标度", example: "Säure als Protonendonator und pH = -lg[H3O+] in wässriger Lösung.", fach: "Chemie", dueIn: "heute" },
 ];
 
 export const quizSteps = [
@@ -233,8 +290,8 @@ export const quizSteps = [
 export const planWeek = [
   { day: "Mo", task: "SoWi: 12 Karten + Ungleichheit & Wohlfahrt wiederholen", done: true },
   { day: "Di", task: "Philo & Deutsch: Utilitarismus vs Kant & TATTE-Schema trainieren", done: true },
-  { day: "Mi", task: "Mathe & Physik: Ableitungsregeln & Kinematik-Formeln durchrechnen", done: false },
-  { day: "Do", task: "Chemie & Bio: Le Chatelier & Enzymkinetik Karten durchgehen", done: false },
+  { day: "Mi", task: "Mathe & Physik: Kurvendiskussion & Newton-Dynamik durchrechnen", done: false },
+  { day: "Do", task: "Chemie & Bio: Säure-Base & Enzymkinetik Karten durchgehen", done: false },
   { day: "Fr", task: "Englisch & Musik: P.E.E. Klausur-Phrasen & Sonatensatz üben", done: false },
   { day: "Sa", task: "Sport: Superkompensation & Trainingslehre vertiefen", done: false },
   { day: "So", task: "Gesamt-Fehlerlog sichten & Klausur-Simulation (90 Min)", done: false },
@@ -242,14 +299,15 @@ export const planWeek = [
 
 export const mindmapNodes = [
   { label: "Gymnasiale Oberstufe (EF) 全学科图谱", x: 400, y: 30, root: true },
-  { label: "SoWi · 社会科学", x: 120, y: 120 },
-  { label: "Philosophie · 哲学", x: 260, y: 120 },
-  { label: "Deutsch · 德语文学", x: 400, y: 120 },
-  { label: "Englisch · 英语分析", x: 540, y: 120 },
-  { label: "Mathematik · 导数抽象", x: 680, y: 120 },
-  { label: "Physik · 运动规律", x: 120, y: 220 },
-  { label: "Chemie · 平衡反应", x: 260, y: 220 },
-  { label: "Biologie · 膜与酶", x: 400, y: 220 },
-  { label: "Musik · 奏鸣曲式", x: 540, y: 220 },
-  { label: "Sport · 训练超量", x: 680, y: 220 },
+  { label: "SoWi · 社会流动与不平等", x: 120, y: 120 },
+  { label: "Philosophie · 功利与义务论", x: 260, y: 120 },
+  { label: "Deutsch · 议论文与诗歌分析", x: 400, y: 120 },
+  { label: "Englisch · 调解与全球化分析", x: 540, y: 120 },
+  { label: "Mathematik · 多项式与微积分", x: 680, y: 120 },
+  { label: "Physik · 牛顿动力学与能量守恒", x: 120, y: 220 },
+  { label: "Chemie · 酸碱质子平衡与反应速率", x: 260, y: 220 },
+  { label: "Biologie · 生物膜流动与酶催化", x: 400, y: 220 },
+  { label: "Musik · 奏鸣曲式与动机展开", x: 540, y: 220 },
+  { label: "Sport · 训练超量与负荷调控", x: 680, y: 220 },
+  { label: "MINT-Brücke · 数理化跨学科公理网", x: 400, y: 320 },
 ];

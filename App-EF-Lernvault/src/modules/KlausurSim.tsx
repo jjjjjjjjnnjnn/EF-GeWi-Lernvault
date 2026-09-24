@@ -617,16 +617,38 @@ export const KlausurSim: React.FC<KlausurSimProps> = ({
                         {taskGrade && <span>Ergebnis: {taskGrade.points} / {taskGrade.maxPoints} P.</span>}
                       </div>
                       {taskGrade && (
-                        <div className="text-xs space-y-1" style={paperPanelStyle}>
-                          <div className="font-semibold">Feste Bewertungsindikatoren</div>
-                          {taskGrade.criterionGrades.map((criterion) => (
-                            <div key={criterion.criterionId} className="flex justify-between gap-3">
-                              <span>{criterion.indicatorDE}</span>
-                              <span className="font-mono shrink-0">
-                                {criterion.points} / {task.criteria.find((item) => item.id === criterion.criterionId)?.points ?? 0} P.
+                        <div className="text-xs space-y-2 p-3" style={paperPanelStyle}>
+                          <div className="space-y-1">
+                            <div className="font-semibold">Feste Bewertungsindikatoren</div>
+                            {taskGrade.criterionGrades.map((criterion) => (
+                              <div key={criterion.criterionId} className="flex justify-between gap-3">
+                                <span>{criterion.indicatorDE}</span>
+                                <span className="font-mono shrink-0">
+                                  {criterion.points} / {task.criteria.find((item) => item.id === criterion.criterionId)?.points ?? 0} P.
+                                </span>
+                              </div>
+                            ))}
+                          </div>
+
+                          <div className="pt-2 border-t border-[var(--line)] space-y-1">
+                            <div className="flex items-center justify-between font-semibold text-[var(--accent)]">
+                              <span>Operatoren-Diagnose ({task.operator} · {task.afb})</span>
+                              <span className="font-mono text-xs">
+                                {taskGrade.points >= taskGrade.maxPoints * 0.75 ? "Erfüllt" : "Ausbaufähig"}
                               </span>
                             </div>
-                          ))}
+                            <p className="text-[var(--gray)] leading-relaxed">
+                              {task.afb === "AFB III"
+                                ? "Klausur-Tipp: Bei Beurteilungsaufgaben stets explizite Kriterien voranstellen, Pro- und Contra-Argumente abwägen und mit einem klaren eigenständigen Fazit abschließen."
+                                : task.afb === "AFB II"
+                                ? "Klausur-Tipp: Zusammenhänge, Wirkungsmechanismen und Begründungen mit exakten Fachtermini und Materialbelegen absichern."
+                                : "Klausur-Tipp: Sachverhalte und Definitionen geordnet, neutral und ohne Ausschweifungen präzise darstellen."}
+                            </p>
+                            <div className="mt-1.5 rounded-[var(--radius)] bg-[var(--paper-subtle)] p-2 text-xs text-[var(--ink)]">
+                              <span className="font-semibold block text-[var(--accent)] mb-0.5">Akademische Veredelung (Alltagssprache -&gt; Fachsprache / Nominalstil):</span>
+                              <span className="text-[var(--gray)]">Verwenden Sie präzise Substantivierungen und Verknüpfungen (z. B. „Infolge der Allokation...“, „Daraus lässt sich folgern...“) anstelle umgangssprachlicher Formulierungen.</span>
+                            </div>
+                          </div>
                         </div>
                       )}
                     </article>
