@@ -65,9 +65,22 @@ tags: [EF, Meta]
 英语 KLP **没有 Inhaltsfelder**（全文无该词），采用纯能力导向模型（遵循 KMK Bildungsstandards 2012），5 个 Kompetenzbereiche。
 → 英语大纲文件**不套用 Inhaltsfeld 模板**，改用能力维度模板。这是事实不是缺失。
 
-### 1.5 SoWi 有双 Fachseite
+### 1.6 试点阶段（S1）验证出的规范修正（2026-09-24）
 
-`sozialwissenschaften-gost` 与 `sozialwissenschaftenwirtschaft-gost` 两个独立页。→ 归档时注意区分。
+> 以下由 S1 试点（SoWi + Mathe）实证得出，**已推翻/修正初版框架的若干预设**。
+
+| 项 | 初版预设 | 实证结论 | 影响 |
+|---|---|---|---|
+| SoWi PDF 乱码 | 报称 UTF-8 乱码，IF 标题"部分获取" | **乱码不存在**，正确提取，7 个 IF 精确标题全部 [已验证] | SoWi 大纲可信度高 |
+| Mathe 能力维度 | 六维（含 Reflektieren） | **五维**（Reflektieren 是 Problemlösen 子维度） | 模板已修正 |
+| Mathe EF 范围 | 以 Analysis 为主 | **EF 承载 A+G**；Stochastik 在 Q 阶段才引入 | EF→Q1 衔接分析需改写 |
+| SoWi 学段划分 | Q1 / Q2 分开 | KLP **只有 EF 与 Qualifikationsphase 两级**，无 Q1/Q2 标记 | 模板 `stufe` 字段语义需兼容 |
+| SoWi 双 Abschnitt | 未预料 | KLP **同时涵盖 SoWi 与 SoWi/Wirtschaft 两门课**，共用 7 IF | 文件须显式说明主线 |
+
+**新增的通用规范**：
+1. **不许盲信上游简报**——官方原文优先。试点中 2 处上游误述被 subagent 用原文纠正。
+2. **KLP 的学段划分不统一**：有的分 EF/Q1/Q2，有的只分 EF/Qualifikationsphase。`stufe` 字段须如实反映**源文件实际结构**，不得强行套用 EF/Q1/Q2。
+3. **标注密度可作为质量信号**：DE 侧高 [已验证]（真读原文）、Mapping 侧高 [据推断]（无官方对照源）——这是**正确**分布，不是缺陷。
 
 ---
 
@@ -240,11 +253,28 @@ version: "2017年版2020年修订"   # 必填，注意版本差异
 
 | 阶段 | 内容 | 状态 |
 |---|---|---|
-| **S0** | 框架与规范（本文件 + 模板 + 源清单） | 🔄 进行中 |
-| **S1** | 试点：SoWi（文科）+ Mathe（理科含映射）跑通 | ⏳ 待启动 |
-| **S2** | 用户验收试点 → 修正模板 | ⏳ |
-| **S3** | 德国 10 科全量（并行 subagent，一科一文件） | ⏳ |
+| **S0** | 框架与规范（本文件 + 模板 + 源清单） | ✅ 已完成 |
+| **S1** | 试点：SoWi（文科）+ Mathe（理科含映射）跑通 | ✅ 已完成（2026-09-24） |
+| **S2** | 用户验收试点 → 修正模板 | 🔄 待用户验收 |
+| **S3** | 德国 10 科全量（并行 subagent，一科一文件） | ⏳ 待启动 |
 | **S4** | 中国理科 4 科全量 | ⏳ |
 | **S5** | 中德映射 4 科 + 差异清单 | ⏳ |
 | **S6** | Operatoren / Klausur-Formate 统一源 | ⏳ |
 | **S7** | 上层对接：Lernbaum 扩展 EF→Q2、笔记缺口清单 | ⏳ |
+
+### S1 试点结论（2026-09-24）
+
+**已产出**：
+- `Deutschland/SoWi-Oberstufe.md`（299 行，7 IF × 双 Abschnitt × EF/QP）
+- `Deutschland/Mathe-Oberstufe.md`（391 行，含 55 条 [已验证]）
+- `Mapping/Mathe-DE-CN-Mapping.md`（228 行，50 条 [据推断]）
+
+**最高价值发现（Mathe 中德对照）**：
+
+1. 🎯 **数列**——德国 KLP 全文无此主题。中国有独立大板块（递推构造/错位相减/裂项相消/分组求和）。**合法嫁接入口**：KLP 点名的跨领域概念 `Iteration` 与 `Kumulation` 正是数列的语言。→ 产出《数列技法卡》，Q2 标为拓展单元。
+2. 🎯 **用导数证明不等式**——德国无此题型，但**不需要新知识点**（EF 已教单调性与极值）。是把曲线上「求极值」升级为「作证明」，直接补强德国偏弱的 `Argumentieren`（AFB III）。**性价比最高**。
+3. 🎯 **平面向量基本定理（基底分解）**——填 EF→Q1 断层上游。德国 EF 无 `Skalarprodukt`，而 Q1 的 G 域几乎全建立其上；中国在必修阶段就完成了。→ 提前化解 Q1 入门冲击。
+
+**德国反而更深**（`both-de-deeper`）：LK 的**判断统计学**（Konfidenzintervall + Stichprobenumfang 估算）；以及 `Normalverteilung` 官方把 `Verteilungsfunktion` 解释为 `Integralfunktion`——KLP 中 S⇄A 唯一显式交叉点，适合做跨领域笔记。
+
+**SoWi 缺口（供 S7 用）**：IF1/2/3（EF）笔记充足；**IF5 欧盟、IF7 全球完全空白**；**IF4 经济政策无正式笔记**（但 Abitur 2027 已聚焦 IF4+IF6，**优先级最高**）；14 篇现有笔记全部属 EF 层，**QP 层为零**。

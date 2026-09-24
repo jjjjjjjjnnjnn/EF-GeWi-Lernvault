@@ -25,6 +25,9 @@
 
 - [HANDOVER](../HANDOVER.md) — 一页交接（新agent/用户先读）
 - [Plan-接手执行](Plan-接手执行.md) — 接手执行计划（任务状态/铁约束/优先级分层/A–D待办清单）
+- **考纲体系（Curriculum）** — [设计总纲](Curriculum/00-Design.md) · [官方源清单](Curriculum/01-Quellen.md)
+  - 德国 NRW：[SoWi](Curriculum/Deutschland/SoWi-Oberstufe.md) · [Mathe](Curriculum/Deutschland/Mathe-Oberstufe.md)
+  - 中德对照：[Mathe-DE-CN-Mapping](Curriculum/Mapping/Mathe-DE-CN-Mapping.md)
 - [Ziele](Ziele.md) · [NRW-EF-Lehrplan-Übersicht](NRW-EF-Lehrplan-Übersicht.md) · [Lernsystem](Lernsystem.md) · [Lernmethoden-Evidenz](Lernmethoden-Evidenz.md) · [Methoden-Quellen](Methoden-Quellen.md) · [Operatoren-NRW-GeWi](Operatoren-NRW-GeWi.md) · [Glossar-DE-ZH-GeWi](Glossar-DE-ZH-GeWi.md)
 - [Download-Quellen](Download-Quellen.md) — 本地 `_Downloads/` 采集清单（PDF不进git）
 - [DeepTutor](DeepTutor.md) — 提分引擎：Quiz/抽认卡/模拟卷命令手册

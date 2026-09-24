@@ -48,7 +48,7 @@ cn_mapping: ""
 | Kommunikation | | 沟通能力（跨 IF 统摄） |
 | Bewertung | | 评价能力 |
 
-> ⚠️ 各科具体表述可能略有差异，须核对对应 KLP。数学为 prozessbezogene 六维，见 `Mathe-Oberstufe.md`。
+> ⚠️ 各科具体表述可能略有差异，须核对对应 KLP。**数学为 prozessbezogene 五维**（`Operieren` / `Modellieren` / `Problemlösen` / `Argumentieren` / `Kommunizieren`，注意 `Reflektieren` 是 `Problemlösen` 的子维度，**不是**第六维），见 `Mathe-Oberstufe.md`。
 
 ## 4. Progression EF → Q1 → Q2（**理科核心维度**）
 
