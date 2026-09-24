@@ -179,6 +179,7 @@
 - [2026-09-23-tutor-socratic-fehlerlog-tangent](Journal/2026-09-23-tutor-socratic-fehlerlog-tangent.md) — 启发引导/考纲直出双态分流、错题补丁弹窗与数学割线逼近切线沙盘（253单测全绿，Sokratisch产婆术+FehlerlogPatch+多模态图片输入+TangentSlider）
 - [2026-09-23-tutor-dialog-ui-fix](Journal/2026-09-23-tutor-dialog-ui-fix.md) — AI助教对话复读异常根除、错题按钮去Emoji与Tufte双层顶栏重构（256单测全绿，首条消息规范+唯一ID+引用豁免）
 - [2026-09-23-mint-abiturtraining](Journal/2026-09-23-mint-abiturtraining.md) — MINT四科Abitur训练+141张Anki补强+INDEX十科覆盖
+- [2026-09-24-ui-elevation-redesign](Journal/2026-09-24-ui-elevation-redesign.md) — UI 美学升格与微卡片重塑：全局字体污染治理+象牙白温润纸感升格+仪表盘/助教/模考微卡化（55套件352单测全绿，build过，零阴影高阶书卷学术风）
 - 约定：文件名 `YYYY-MM-DD-<thema>.md`，头部frontmatter（`fach`可空，`tags: [EF, Meta]`）。
 
 
