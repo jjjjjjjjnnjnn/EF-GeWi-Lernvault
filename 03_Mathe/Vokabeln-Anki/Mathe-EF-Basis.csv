@@ -49,3 +49,12 @@ Bedingte Wahrscheinlichkeit;条件概率;Die bedingte Wahrscheinlichkeit beruht 
 Zufallsvariable;随机变量;Eine Zufallsvariable ordnet Ergebnisse Zahlen zu.;Mathe;Abitur
 Erwartungswert;期望值;Der Erwartungswert gewichtet Ergebnisse nach ihrer Wahrscheinlichkeit.;Mathe;Abitur
 Varianz;方差;Die Varianz beschreibt die Streuung um den Erwartungswert.;Mathe;Abitur
+Kurvendiskussion;曲线讨论（性质研究）;Die Kurvendiskussion untersucht Symmetrie, Nullstellen und Extrempunkte eines Graphen.;Mathe;Analysis
+Globalverhalten;全局极限行为;Das Globalverhalten fuer x gegen Unendlich wird durch den hoechsten Exponenten bestimmt.;Mathe;Analysis
+Achsensymmetrie;轴对称性;Gilt f von minus x gleich f von x, so liegt Achsensymmetrie zur y-Achse vor.;Mathe;Analysis
+Punktsymmetrie;中心对称性;Gilt f von minus x gleich minus f von x, so liegt Punktsymmetrie zum Ursprung vor.;Mathe;Analysis
+Vorzeichenwechselkriterium;符号变换判据;Das Vorzeichenwechselkriterium ermoeglicht den Nachweis lokaler Extrema ohne zweite Ableitung.;Mathe;Analysis
+Extremwertproblem;极值问题;Beim Extremwertproblem wird eine Zielfunktion unter einer Nebenbedingung optimiert.;Mathe;Analysis
+Zielfunktion;目标函数;Die Zielfunktion enthaelt die Groesse, die maximiert oder minimiert werden soll.;Mathe;Analysis
+Randwertpruefung;边界值检验;Bei der Randwertpruefung vergleicht man lokale Extrema mit den Grenzen des Definitionsbereichs.;Mathe;Analysis
+
