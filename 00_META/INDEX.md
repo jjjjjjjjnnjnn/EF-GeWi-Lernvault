@@ -17,7 +17,7 @@
 - [App-EF-Lernvault](../App-EF-Lernvault/README.md) — EF-Lernvault：六模块 + 命令面板/快捷键/拖拽 + P1接线（顶栏打开真实vault，笔记/背卡/面板全切真实数据）；`npm run dev` 预览（1420）。
 - [LICENSE](../App-EF-Lernvault/LICENSE)（半开源，已定稿） · [NOTICE](../App-EF-Lernvault/NOTICE.md)（第三方署名，实测版本）
 - 规范：[UI-BRIEF](../App-EF-Lernvault/UI-BRIEF.md)（tufte简洁风） · [INTERACTION-BRIEF](../App-EF-Lernvault/INTERACTION-BRIEF.md)（交互） · [FEATURE-SPEC](../App-EF-Lernvault/FEATURE-SPEC.md)（功能需求，给外部AI） · [UI-SPEC-V2](../App-EF-Lernvault/UI-SPEC-V2.md)（全科+KaTeX+Lernreise，给外部AI） · [UI-SPEC-V3](../App-EF-Lernvault/UI-SPEC-V3.md)（P2/P3/P4界面需求，给外部AI）
-- 互动课程源：[Lernreise/](../Lernreise/)（vault即课程，首个示范：Sowi-Soziale-Marktwirtschaft-L1）
+- 互动课程源：[Lernreise/](../Lernreise/) · [Sowi-L1](../Lernreise/Sowi-Soziale-Marktwirtschaft-L1.md) · [Philo-L2](../Lernreise/Philo-Utilitarismus-Kant-L2.md) · [Musik-L1](../Lernreise/Musik-Hoeranalyse-L1.md) · [Sport-L1](../Lernreise/Sport-Bewegung-Erklaeren-L1.md)（vault即课程，首个示范：Sowi-Soziale-Marktwirtschaft-L1）
 - 约定：App 只读 vault（内容源），不写回；commit 前缀 `[App]`；构建产物与签名密钥永不进 git。
 - P0产物（本地 `src-tauri/target/release/bundle/`，不进git）：`EF-Lernvault_0.1.0_x64-setup.exe`（1.8MB）· MSI（2.7MB），已验启动（窗口标题正常，常驻~25MB）。
 
@@ -197,6 +197,9 @@
 - [2026-09-24-mint-deepening-and-score-booster](Journal/2026-09-24-mint-deepening-and-score-booster.md) — MINT 理科跨学科深度扩充与模考采分点诊断系统落地（BWKI图谱沉淀数理化深度笔记+506张词卡+模考算子合规与学术德语提分润色）
 - [2026-09-24-lernbaum-design](Journal/2026-09-24-lernbaum-design.md) — 十科学习树设计层落地：总纲+十科L0–L3 mindmap（大纲自顶向下，不挂笔记、不碰代码，主线程全量审核通过）
 - [2026-09-24-lernbaum-app](Journal/2026-09-24-lernbaum-app.md) — Lernbaum App落地：baum数据260×L3+搜索/状态引擎+交互模块（拖动平移/缩放/折叠/搜索）+Alt B接线（57套件379测试全绿）
+- [2026-09-24-curriculum-deepening-batch1-mint](Journal/2026-09-24-curriculum-deepening-batch1-mint.md) — 全学科课程大纲深度化第一批：MINT理科核心重难点与应用同步（待定系数建模+匀加速与自由落体+分子间作用力+跨膜运输与渗透，522词卡+55套件354测试全绿）
+- [2026-09-24-curriculum-deepening-batch2-and-fach-lernbaeume](Journal/2026-09-24-curriculum-deepening-batch2-and-fach-lernbaeume.md) — 全学科课程大纲深度化第二批与全10门学科独立学习树系统上线（修辞三步走+Mediation跨文化调解+康德四步检验法+全10科Inhaltsfelder三阶学习树，534词卡+57套件379测试全绿）
+- [2026-09-24-wartung-7](Journal/2026-09-24-wartung-7.md) — 第七轮全项目维护：文件卫生零泄漏/102笔记-534词卡-234链接全一致/57套件379单测/build/1420全绿
 - 约定：文件名 `YYYY-MM-DD-<thema>.md`，头部frontmatter（`fach`可空，`tags: [EF, Meta]`）。
 
 
