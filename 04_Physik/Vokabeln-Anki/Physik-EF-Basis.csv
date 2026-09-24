@@ -57,3 +57,7 @@ Normalkraft;法向正压力;Die Normalkraft wirkt senkrecht auf die Auflageflaec
 Gleitreibungskoeffizient;滑动摩擦因数;Der Gleitreibungskoeffizient bestimmt die Reibungskraft zwischen zwei Festkoerpern.;Physik;Dynamik
 Bremsverzoegerung;制动减速度;Die Bremsverzoegerung fuehrt zu einer negativen Beschleunigung des Fahrzeugs.;Physik;Dynamik
 Energieerhaltungssatz;机械能守恒定律;Im abgeschlossenen System bleibt die Summe aus kinetischer und potenzieller Energie konstant.;Physik;Dynamik
+gleichmaessig beschleunigte Bewegung;匀加速直线运动;Bei der gleichmaessig beschleunigten Bewegung ist die Beschleunigung zeitlich konstant.;Physik;Kinematik
+freier Fall;自由落体;Der freie Fall ist eine gleichmaessig beschleunigte Bewegung unter dem Einfluss der Schwerkraft.;Physik;Kinematik
+Superpositionsprinzip;运动叠加原理;Nach dem Superpositionsprinzip ueberlagern sich Teilbewegungen unbeeinflusst voneinander.;Physik;Kinematik
+Bahnkurve;运动轨迹曲线;Die Bahnkurve des waagerechten Wurfs ist eine Parabel.;Physik;Kinematik
