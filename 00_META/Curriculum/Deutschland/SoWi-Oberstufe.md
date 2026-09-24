@@ -4,10 +4,12 @@ thema: "Oberstufe Curriculum"
 operatoren: [analysieren, erläutern, erörtern, beurteilen, bewerten, vergleichen, beschreiben, ordnen, erklären]
 klausurrelevant: false
 datum: 2026-09-24
-tags: [EF, Meta, Curriculum]
+tags: [EF, Q1, Q2, Meta, Curriculum]
 klp_version: "2013"
 klp_heft: "4717"
 stufe: "EF|Q1|Q2"
+abitur_fokus_2027: [IF4, IF6]
+fachseiten: [sozialwissenschaften-gost, sozialwissenschaftenwirtschaft-gost]
 ---
 
 # SoWi — Gymnasiale Oberstufe 大纲（NRW）
@@ -131,6 +133,8 @@ stufe: "EF|Q1|Q2"
 
 ### IF4 — Wirtschaftspolitik（经济政策）
 
+> 🎯 **Abitur 2027–2029 聚焦域（与 IF6 并列）** —— 见 §6.5。本 IF 是当前**优先级最高**的笔记缺口。[据推断]（来源：项目 HANDOVER 记录；官方 `sozialwissenschaften_2027_gg.pdf` 正文未提取，故未升为 [已验证]）
+
 **Q1+Q2**（GK 与 LK 共有条目）
 
 | 德语原文 | 中文 |
@@ -171,6 +175,8 @@ stufe: "EF|Q1|Q2"
 ---
 
 ### IF6 — Strukturen sozialer Ungleichheit, sozialer Wandel und soziale Sicherung（社会不平等结构、社会变迁与社会保障）
+
+> 🎯 **Abitur 2027–2029 聚焦域（与 IF4 并列）** —— 见 §6.5。EF 层已有笔记，缺口在 **QP 层深化**（不平等理论模型 + 社会国家争议）。[据推断]（来源同上）
 
 **Q1+Q2**（GK 与 LK 共有条目）
 
@@ -253,6 +259,73 @@ stufe: "EF|Q1|Q2"
 
 ---
 
+## 5.5 Progression EF → Qualifikationsphase（**核心维度**）
+
+> ⚠️ 参照 `Mathe-Oberstufe.md` §4 的写法补入（Mathe 文件后做，结构更成熟）。
+> 本 KLP 无 Q1/Q2 标记（见 §0），故此处**只做 EF → QP 一个台阶**，不虚构 Q1→Q2 内部递进。
+
+```
+EF  (IF1 + IF2 + IF3 —— 三领域并列，微观/中观)
+ ├─ IF1 市场经济秩序：行为者角色 / 秩序要素与规范假设 / 市场体系绩效 / 竞争与秩序政策
+ │       ← 「市场如何运作」
+ ├─ IF2 政治结构过程参与：参与可能 / 民主理论 / 宪法基础 / 政党与 NGO / 民主的威胁
+ │       ← 「政治如何运作」
+ └─ IF3 个体与社会：社会化机构 / 未来构想与价值依附 / 群体行为 / 身份模型
+         / 角色冲突 / 结构功能主义 vs 行动理论 / 职业与日常定向
+         ← 「人如何被社会塑造」
+                    ↓
+QP  (IF4 + IF5 + IF6 + IF7 —— 四领域并列，全部宏观)
+ ├─ IF4 经济政策：国家经济行为正当性 / 总体经济目标量 / 质量增长与可持续
+ │       / 景气与增长波动 / 经济政策构想 / 政策领域与工具
+ │       [LK 增量] 欧洲经济货币联盟与欧洲货币政策 / （B 方向）经济与生态
+ ├─ IF5 欧盟：EU 规范与机制与机构 / 历史发展 / 内部市场 / 一体化模型 / 危机应对
+ │       [LK 增量] 欧洲货币与一体化 / （B 方向）欧盟经济财政与结构政策
+ ├─ IF6 社会不平等：表现形式与影响 / 不平等模型与理论 / 社会国家行为
+ │       +（按分支）社会变迁 / 结构变迁 / 劳动世界变迁趋势
+ │       [LK-B 增量] 工资政策构想
+ └─ IF7 全球：国际和平与安全 / 人权与民主的国际意义 / 全球化特征维度影响
+         / 国际经济关系 / 德国经济区位
+         [GK-A 增量] UN 贡献  [LK-A 增量] UN + Global Governance
+         [B 方向] + 全球化经济维度的机构 + 全球化批判（无 UN 条目）
+                    ↓
+Abitur 2027
+ └─ 聚焦 IF4 + IF6（见 §6.5）→ QP 六重点中的两个被官方点名，须综合出题
+```
+
+### EF → QP 的**四个台阶**（值得各做一篇过渡笔记）[据推断]
+
+> 说明：下述「台阶」由 §1 的 IF 归属、§2 的条目清单、§3 的能力描述**对比得出**，非 KLP 原文论述。
+
+| # | 台阶 | EF 侧 | QP 侧 | 应试含义 |
+|---|---|---|---|---|
+| **1** | **IF 完全换血，零重叠** | IF1–3（微观/中观） | IF4–7（全宏观） | 不是「加深」，是**换一整套分析对象**。EF 的 Markt/Partizipation/Sozialisation 三个抓手在 QP 不再出现，须重建四个宏观抓手 [已验证] |
+| **2** | **分析尺度：从「单主体」到「系统」** | 单个行为者、单一场域（消费者、政党、家庭） | 系统级目标冲突（目标量之间的 trade-off）、多层治理（国家/欧盟/全球） | 判断能力从「评价一个行为」升级为「评价一套政策体制」——**Urteilskompetenz 的对象复杂度陡增** |
+| **3** | **理论工具显性化** | 理论散见（结构功能主义、民主理论） | 每个 IF 都要求**模型与理论对照**（经济政策构想对照、不平等模型对照、一体化模型对照） | QP 的 `beurteilen` / `erörtern` 必须**先给出理论坐标**再评价。缺理论对照表 = AFB III 直接失分 |
+| **4** | **Karikatur / Gestaltungsaufgabe 转向宏观题材** | 现有训练基于 EF 题材 | Abitur 含 **Gestaltungsaufgabe**（设计任务，§4） | 已有方法层笔记（§6）可复用**方法**，但**素材须换成 IF4–IF7 题材**，否则用不上 |
+
+> **⚠️ 最大的隐性台阶是 #1。** 由于 EF 与 QP 的 IF **完全不共享**（§1），任何按「EF 笔记纵向加厚」的思路都补不上 QP；QP 只能**从零新建**。这也是 §6 中「14 篇全属 EF、QP 层为零」的根本原因——不是笔记没写够，而是**结构上 EF 笔记无法迁移到 QP**。
+
+### GK / LK 与 A / B 分支：两套差异叠加
+
+> SoWi 的差异维度比理科多一层：**GK/LK** 之外还有 **Abschnitt A/B**。读 §2 的表格须同时看两条轴。
+
+| 维度 | GK | LK |
+|---|---|---|
+| **IF4**（A 方向） | 6 条共有条目 | + 欧洲经济货币联盟与欧洲货币政策 |
+| **IF5**（A 方向） | 5 条共有条目 | + 欧洲货币与一体化 |
+| **IF6**（A 方向） | 社会变迁 + 3 条共有 | 社会经济结构变迁 + 3 条共有 |
+| **IF7**（A 方向） | + UN 贡献 | + UN 贡献 + Global Governance |
+| **IF7**（B 方向） | 全球化经济维度机构 + 全球化批判（**无 UN**） | 同上 + Global Governance（**无 UN**） |
+
+> 全部 [已验证]（据 §2 各 IF 的分支差异清单归并）。**LK 相对 GK 的增量集中在 IF4/IF5 的欧洲维度与 IF7 的 Global Governance**；IF6 的 LK 增量则高度依赖分支（A 方向是结构变迁，B 方向多出工资政策构想）。[据推断]
+
+### §5.5 缺口（供 S7 排优先级）
+
+QP 四个 IF 中 **IF4/IF5/IF6/IF7 的 QP 层笔记全部为零**；按 Abitur 2027 聚焦度排序，补笔记顺序应为：
+**① IF4 经济政策 → ② IF6 不平等理论模型与 Sozialstaat → ③ IF5 欧盟 → ④ IF7 全球**。
+
+---
+
 ## 6. 与现有笔记的对应（对接层）
 
 > 来源：`00_META/INDEX.md` §「主题索引 → SoWi」[已验证]。
@@ -279,6 +352,26 @@ stufe: "EF|Q1|Q2"
 4. **EF 层缺口较小**：IF1/IF2/IF3 各有 2–5 篇，仅需补「民主理论模型」「群体行为」「结构功能主义 vs 行动理论」三个专题
 5. **Kap.10 Betrieb & Mitbestimmung** 在 Abschnitt A 的 EF 中**无对应 IF 条目**，对应的是 Abschnitt B 的 IF1 变体 `Der Betrieb als wirtschaftliches und soziales System` —— 归档时须注意此分支差异
 
+### 6.5 Abitur 2027 的 Fokussierungen 与应试含义
+
+> **已知事实**：Abitur 2027–2029 该科**聚焦 IF4（Wirtschaftspolitik）+ IF6（Strukturen sozialer Ungleichheit）**。[据推断]
+> 来源：项目 HANDOVER 记录 + 现有笔记 [`Sowi-Abitur-Fokussierungen`](../../../08_SoWi/Texte-Analyse/Sowi-Abitur-Fokussierungen.md)（该笔记已标注 2027–2029 IF4+IF6）。
+> ⚠️ 官方依据应为 `sozialwissenschaften_2027_gg.pdf` 的 Fokussierungen 章节，**本项目尚未提取其正文** → 故此处标 [据推断]，不升为 [已验证]。**待 S6 阶段核对原文后升格。**
+
+**应试含义（三条，[据推断]）**：
+
+1. **IF4 从「四个 QP 之一」变成「两个必考之一」**。原本 IF4–IF7 各占约 25% 概率，聚焦后 **IF4 与 IF6 合计承担主要考查权重**，IF5/IF7 退居次级。→ 备考资源应**按这一权重重新分配**，而非平均用力。
+2. **IF4 的「经济政策构想对照」是 AFB III 的主战场**。IF4 条目中 `Wirtschaftspolitische Konzeptionen`（经济政策构想）与 `Zielgrößen der gesamtwirtschaftlichen Entwicklung`（目标量）天然构成**理论对照 + 目标冲突**结构，正好落在 `erörtern` / `beurteilen` 上。→ 需一张 **keynesianisch / angebotsorientiert / ordnungspolitisch 构想对照表**（含各自政策工具与目标量优先序），当前**完全没有**。
+3. **IF6 的考查点在「理论模型」而非「现象描述」**。`Modelle und Theorien gesellschaftlicher Ungleichheit` 是 IF6 三条共有条目中唯一带理论纵深的；EF 现有笔记 [`Soziale-Ungleichheit`](../../../08_SoWi/Texte-Analyse/Soziale-Ungleichheit.md) 偏现象层。→ 需补 **Klassen- / Schichten- / Milieu-Modelle 的系统对照**，并接入 `Sozialstaatliches Handeln` 的**财政可持续性与正当性争议**。
+
+**IF4 × IF6 的交叉点**（德国 Abitur 常见的综合出题角度，[据推断]）：
+- **社会国家 = IF6 的对象 + IF4 的手段**：Sozialstaat 的财政来源即经济政策的税收/分配工具 → 两 IF 天然连体
+- **失业**：既是 IF6 的不平等成因，又是 IF4 的目标量之一（`Beschäftigung`）
+- **分配政策**：`Lohnpolitische Konzeptionen`（IF6-LK-B）与 IF4 的收入政策工具重叠
+- **经济与生态**（IF4-LK-B `Ökonomie und Ökologie`）↔ IF6 的社会代价分配，是可延伸的第三层
+
+> 建议：**做一篇「IF4 × IF6 交叉综合」笔记**，把上述四个交叉点做成对照卡，专门应对 Abitur 综合题。
+
 ---
 
 ## 7. 待验证项（[未获取到] / [据推断] 清单）
@@ -291,9 +384,14 @@ stufe: "EF|Q1|Q2"
 | 两 Fachseite 页面级内容差异 | **[据推断]** | 本文件据 KLP PDF 的两 Abschnitt 判断；未逐页比对两个 Fachseite 网页 |
 | Abitur 2027 Gestaltungsaufgabe 具体题型 | **[据推断]** | 据 `sozialwissenschaften_2027_gg.pdf` 链接存在推断，未提取正文 |
 | IF 的 PUA/Font 编号（KLP 原文用私有字形 󰆂 等） | **[据推断]** | 原文 IF 编号为嵌入字体符号，无法转 ASCII；本文以顺序号 1–7 代指 |
+| **Abitur 2027–2029 Fokussierung = IF4 + IF6** | **[据推断]** | 来源为项目 HANDOVER 记录与现有笔记；官方 `sozialwissenschaften_2027_gg.pdf` 的 Fokussierungen 章节**正文未提取**。**待 S6 核对原文后升格为 [已验证]** |
+| **`sozialwissenschaften_2027_gg.pdf` 具体内容** | **[未获取到]** | 链接已验证存在（HTTP 200），但未下载提取正文 |
+| **EF→QP 四个台阶的官方表述** | **[据推断]** | §5.5 的台阶分析由 IF 归属 / 条目清单 / 能力描述对比得出，KLP **未以递进表形式明说**（KLP §5 Anhang 有 Progressionstabelle，但本项目**未提取**） |
+| **KLP §5 Anhang 的 Progressionstabelle 实际内容** | **[未获取到]** | 见 §3 注释：KLP 用 MK5 / HK6 等缩写标记 EF→QP 递进，**该表未提取**，故 §5.5 只能用推断方式重建 |
 
 ---
 
 ## 变更记录
 
 - 2026-09-24：创建（S0 框架阶段 · S1 试点）。实际访问官方 KLP PDF `klp_gost_sowi.pdf`（102 页，pypdf 提取 UTF-8 正常，**乱码问题未出现**），核对全部 7 个 IF 名称、两 Abschnitt 的 inhaltliche Schwerpunkte、4 个 Kompetenzbereich。
+- 2026-09-24（升级）：对齐 `Mathe-Oberstufe.md` 的成熟结构，**只做增量增强，未改动任何原有正确内容**。新增：frontmatter 增 `abitur_fokus_2027` / `fachseiten` 字段与 Q1/Q2 tags；IF4 / IF6 加 Abitur 聚焦标记；新增 **§5.5 Progression EF → QP**（EF→QP 四台阶 + 双轴差异表 GK/LK×A/B）；新增 **§6.5 Abitur 2027 Fokussierungen 与应试含义**（含 IF4×IF6 四个交叉点）；§7 补 5 条待验证项。**保留** `klp_version: "2013"` 与 `klp_heft: "4717"` 不变。

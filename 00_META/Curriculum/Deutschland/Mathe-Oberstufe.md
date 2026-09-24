@@ -253,9 +253,68 @@ Q2  (深化 + 交叉 + Abitur 综合)
  └─ 综合性：Aufgabenart I(免工具) + II(工具) 的固定配比
 ```
 
-**⚠️ EF → Q1 的两个「隐形台阶」**（值得单独做过渡笔记）：
+### 4.1 三段递进链（Per-Feld 摘要）
+
+> KLP 的结构是 **EF（第 2.3 章）→ Q-Phase（第 2.4 章，GK/LK 分列）**；Q1 与 Q2 之间 KLP **不给内容切分**，只给一份 Q-Phase Schwerpunkte 清单。
+> 下表 Q1/Q2 的归属是**本项目的教学排序建议**，非官方划分 → [据推断]；内容条目本身全部 [已验证]。
+
+| Inhaltsfeld | EF（打地基） | Q1（主体扩展） | Q2（深化/交叉/综合） |
+|---|---|---|---|
+| **A** | 幂函数(整指数)/整有理函数 → 变换 → 平均·局部变化率 → 导数规则(幂/和/因子) → 单调性/极值/拐点 [已验证] | 指数函数 → `Produktregel` → `Extremwertprobleme` → `Steckbriefaufgaben` → 积分学六概念链 → `Hauptsatz` → 定积分求面积 [已验证] | A⇄S 交叉（`Verteilungsfunktion als Integralfunktion`，LK）；LK 增量收口：`Funktionsscharen` / `uneigentliche Integrale` / 旋转体体积；综合题 [已验证/据推断] |
+| **G** | 空间坐标/向量加减数乘/长度/共线 → 直线参数式 → 直线位置关系（**无 Skalarprodukt、无 Ebenen**）[已验证] | `Skalarprodukt` → `Ebenen`(Parameter-/Koordinatenform) → 线面交点 → 交角 → LGS；LK：`Normalenform`、平面位置关系、`Abstände` [已验证] | LK 收口：`Abstände` 全组合 + `Interpretation der Lösungsmenge` + 一般化 `Spiegelungen`（按 LK 学时排序）[据推断] |
+| **S** | **不存在**——EF 完全无 S [已验证] | 多阶段试验 / Urnenmodell / Baumdiagramm / Vierfeldertafel / 条件概率 → Kenngrößen(EW,Var,σ) → 离散随机变量 → 二项分布 [已验证] | LK：`σ-Regeln` → `Beurteilende Statistik`（Prognose-/Konfidenzintervall、样本量）→ `Normalverteilung` → A⇄S 交叉 [已验证/据推断] |
+
+**EF→Q2 三段的能力侧递进**（与内容链平行，KLP 第 2 章的隐性线索）[据推断]：
+
+```
+EF  : 会算 → 会用表征（Kurvendiskussion 为标准程序）
+Q1  : 会建模 → 会选工具（Extremwertprobleme 需自设 Nebenbedingung）
+Q2  : 会论证 → 会评价（AFB III：论证、推广、模型质量评判）
+```
+
+### 4.1.1 Stochastik 在 Q 阶段的具体位置 ⚠️
+
+| 问题 | 结论 | 标注 |
+|---|---|---|
+| S 从哪个学段开始？ | **Q 阶段**（Qualifikationsphase），EF 完全缺席 | [已验证，m.txt L757-854] |
+| KLP 是否区分「Q1 的 S」与「Q2 的 S」？ | **否**。KLP 第 2.4 章只给一份 **Q-Phase** Schwerpunkte 清单，S 的所有条目（GK 四条 / LK 增量五条）**同属一份连续清单** | [已验证，m.txt L1100-1158] |
+| 本项目如何切 Q1/Q2？ | 建议 **Q1 = 概率建模主干**（多阶段试验 → 条件概率 → Kenngrößen → 离散分布 → 二项分布）；**Q2 = 判断统计与连续分布**（仅 LK：σ-Regeln / 区间估计 / 样本量 / 正态分布） | [据推断] |
+| 若按此切分，GK 的 S 会怎样？ | ⚠️ GK 的 S 清单**止于二项分布**，**没有任何「Q2 层专属内容」**——即 GK 学生在 Q2 无新增 S 知识点，只有综合运用。**这是 GK/LK 在 S 域最本质的差异** | [据推断] |
+| S 的先后顺序有无官方强约束？ | KLP 未规定域内教学顺序；但 `Normalverteilung` 的 `Verteilungsfunktion` 依赖 A 域的 `Integralfunktion`，故 **LK 的顺序须把 A 的积分链放在 S 的连续分布之前** | [据推断] |
+
+### 4.1.2 「内容 / 工具 / 题型」三条平行线的对应 ⚠️
+
+这是本文件新增的关键透视：KLP 的能力轴与 Abitur 的题型轴**不是两回事，是同一条轴的两端**。
+
+```
+内容轴（Inhaltsfeld）        A          G          S           ← Klausur 必须覆盖三者
+能力轴（Operieren 内部）   ┌──────────────────────────────┐
+                          │ Hilfsmittelfreies Operieren   │ ← 免工具操作
+                          │ Arbeit mit Medien u. Werkzeug │ ← 含工具操作
+                          └──────────────────────────────┘
+题型轴（Abitur Aufgabenart） Aufgabenart I（hilfsmittelfrei）
+                            Aufgabenart II（mit Hilfsmitteln）
+```
+
+- **同构关系**：`Hilfsmittelfreies Operieren` ↔ **Aufgabenart I**；`Arbeit mit Medien und Werkzeugen` ↔ **Aufgabenart II**。[已验证，m.txt L421-443, L1407-1409]
+- **为何是「平行线」而非「一题两做」**：免工具题**不承载**任何依赖 MMS 的 Schwerpunkt——例如 `Funktionsscharen` 的参数动态分析、`Lineare Gleichungssysteme` 的算法化解法、`Konfidenzintervall` 的数值计算，**只能在 Aufgabenart II 出现**。[据推断]
+- **项目现有笔记的验证**：`Mathe-ZKE-2027-Training.md` 的「Teil A 免工具 + Teil B WTR/CAS」**恰好复现了这一法定二分割**——ZKE 的 Teil A/B 与 Abitur 的 Aufgabenart I/II 应视为同一结构的两个命名。[已验证 + 据推断]
+- **GK/LK 在题型轴上的差异**：GK 与 LK 共享同一题型框架（I/II 皆出现），差异不在题型而在**该题型下可考内容的深度**（见 §4 表末「数学工具」行）。[据推断]
+
+### 4.2 GK / LK 差异的三个层次（总览）
+
+| 层次 | 提问方式 | GK | LK | 标注 |
+|---|---|---|---|---|
+| **① 内容广度** | 考不考？ | A+G+S 三领域的**核心子集**（A：整有理+指数；G：至坐标形式平面；S：至二项分布） | 三领域**全量**（+ 三角/ln/有理指数幂；+ Normalenform/Abstände；+ 判断统计/正态分布） | [已验证] |
+| **② 深度** | 要做到什么程度？ | **公式应用 + 标准程序**：`Umkehrfunktion` 仅认 Wurzelfunktion；`Kettenregel` 仅 `e^x∘线性` | **判定 + 构造 + 评价**：须判定可逆性、须分析参数族、须证明 `Hauptsatz`、须评价模型质量 | [已验证] |
+| **③ 数学工具（MMS 依赖）** | 允许多依赖工具？ | 工具用于**验证与作图**；积分只到定积分求面积 | 工具作为**解法组成部分**（CAS 解含参方程组、参数动态）；`uneigentliche Integrale`、旋转体体积 | [已验证/据推断] |
+
+> **README 级一句话**：GK→LK 的差别**不只是「多学了什么」，而是「同一内容上被要求的认知层数」**——GK 停在 AFB II（重组与迁移），LK 逼近 AFB III（论证、推广、评价）。这一判断与 `00-Design.md §1.2`「AFB II 是笔试重点、全科目必覆盖 AFB」的通则不冲突：AFB III 的出现是**下限要求**，LK 的要求是**占比更高**。[据推断]
+
+**⚠️ EF → Q1 的三个「隐形台阶」**（值得单独做过渡笔记）：
 1. **A**：EF 的导数只到「幂/和/因子规则 + 整有理函数」；Q1 一上来就要 `Produktregel`，LK 还要一般 `Kettenregel`。**复合函数求导是 EF→Q1 最大断层。** [已验证]
 2. **G**：EF 完全没有 `Skalarprodukt` 和 `Ebenen`；Q1 的 G 几乎全部建立在这两者之上。**从「向量=位移」跳到「向量=可度量的内积空间」是第二个断层。** [已验证]
+3. **S**：EF **零 S**，Q1 直接以「多阶段试验 + 条件概率」起步。**第三台阶不是难度断层而是「领域从零开始」**——且 GK/LK 在此处共享同一入门（LK 的差异要到 Q2 才显现，见 §4.1.1）。[据推断]
 
 ### GK / LK 差异总表
 
@@ -389,3 +448,10 @@ Q2  (深化 + 交叉 + Abitur 综合)
 ## 变更记录
 
 - 2026-09-24：创建（S1 试点阶段）。基于官方 KLP `gost_klp_m_2023_06_07.pdf`（sha256 `211bad80…`，HTTP 200，PDF 实体已核）结构化提取；**更正任务简报中「六维能力」为官方五维**，并明确 EF 承载 A+G（非仅 A）。
+- 2026-09-24：**增量升级（v2，对齐 `00-Design.md §3.2` 理科模板第 6 项要求）**。新增：
+  - §4.1 **三段递进链 Per-Feld 摘要表**（A/G/S × EF/Q1/Q2）+ 能力侧递进链
+  - §4.1.1 **Stochastik 在 Q 阶段的具体位置**（含「KLP 不分 Q1/Q2、GK 无 Q2 层 S」两项判断）
+  - §4.1.2 **「内容 / 工具 / 题型」三条平行线**（`Hilfsmittelfreies Operieren`↔Aufgabenart I，`Arbeit mit Medien u. Werkzeugen`↔Aufgabenart II）
+  - §4.2 **GK/LK 差异三层次**（内容广度 / 深度 / 数学工具）
+  - §4.2 隐形台阶由 **2 个增至 3 个**（补入 S 的「零起点」台阶）
+  - 上述新增中，**Q1/Q2 切分归属、GK 无 Q2 层 S、MMS 依赖判断、AFB 占比判断** 均为本文件自行推导 → 标 [据推断]；**内容条目与题型同构关系** 沿用官方原文 → 标 [已验证]。正确内容（五维能力、EF=A+G、GK/LK 增量表、§6 题型规则）**全部保留未动**。
