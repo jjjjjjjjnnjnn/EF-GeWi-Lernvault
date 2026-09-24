@@ -24,6 +24,7 @@
 ## META
 
 - [HANDOVER](../HANDOVER.md) — 一页交接（新agent/用户先读）
+- [Plan-接手执行](Plan-接手执行.md) — 接手执行计划（任务状态/铁约束/优先级分层/A–D待办清单）
 - [Ziele](Ziele.md) · [NRW-EF-Lehrplan-Übersicht](NRW-EF-Lehrplan-Übersicht.md) · [Lernsystem](Lernsystem.md) · [Lernmethoden-Evidenz](Lernmethoden-Evidenz.md) · [Methoden-Quellen](Methoden-Quellen.md) · [Operatoren-NRW-GeWi](Operatoren-NRW-GeWi.md) · [Glossar-DE-ZH-GeWi](Glossar-DE-ZH-GeWi.md)
 - [Download-Quellen](Download-Quellen.md) — 本地 `_Downloads/` 采集清单（PDF不进git）
 - [DeepTutor](DeepTutor.md) — 提分引擎：Quiz/抽认卡/模拟卷命令手册
@@ -200,6 +201,7 @@
 - [2026-09-24-curriculum-deepening-batch1-mint](Journal/2026-09-24-curriculum-deepening-batch1-mint.md) — 全学科课程大纲深度化第一批：MINT理科核心重难点与应用同步（待定系数建模+匀加速与自由落体+分子间作用力+跨膜运输与渗透，522词卡+55套件354测试全绿）
 - [2026-09-24-curriculum-deepening-batch2-and-fach-lernbaeume](Journal/2026-09-24-curriculum-deepening-batch2-and-fach-lernbaeume.md) — 全学科课程大纲深度化第二批与全10门学科独立学习树系统上线（修辞三步走+Mediation跨文化调解+康德四步检验法+全10科Inhaltsfelder三阶学习树，534词卡+57套件379测试全绿）
 - [2026-09-24-wartung-7](Journal/2026-09-24-wartung-7.md) — 第七轮全项目维护：文件卫生零泄漏/102笔记-534词卡-234链接全一致/57套件379单测/build/1420全绿
+- [2026-09-24-uebernahme-audit-und-plan](Journal/2026-09-24-uebernahme-audit-und-plan.md) — 接手审计与执行计划：独立实测复核三门禁全绿（vault-check/379单测/build）+ 产出 `Plan-接手执行.md`
 - 约定：文件名 `YYYY-MM-DD-<thema>.md`，头部frontmatter（`fach`可空，`tags: [EF, Meta]`）。
 
 

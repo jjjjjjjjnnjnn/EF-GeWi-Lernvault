@@ -12,7 +12,7 @@ EXEMPT_NAMES = {"Lehrplan.md", "Ressourcen.md", "Satzbausteine.md",
                 "AGENTS.md", "Anki-Karte-GeWi.md", "Klausur-Drill-GeWi.md",
                 "Fach-Template.md", "Stunden-Nachbereitung-GeWi.md",
                 ".gitkeep-note.md"}
-SKIP_DIRS = {".git", ".obsidian", "App-EF-Lernvault", "_Downloads",
+SKIP_DIRS = {".git", ".obsidian", ".workbuddy-ai", "App-EF-Lernvault", "_Downloads",
              "node_modules", "dist", "target", "Journal", "Templates",
              "Skills", "Lernreise", "scripts"}
 ERR, WARN = [], []

@@ -55,3 +55,6 @@ App-EF-Lernvault/src-tauri/*.pub
 *.exe
 !**/tools/*.exe
 App-EF-Lernvault/*.tsbuildinfo
+
+# WorkBuddy agent 内部数据（记忆/会话），不进仓库
+.workbuddy-ai/
