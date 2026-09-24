@@ -3,13 +3,13 @@
 
 :root {
   color-scheme: light;
-  --paper: #FAFAF7;
-  --paper-subtle: #F3EFE6;
-  --surface: #FFFEFB;
+  --paper: #F9F8F5;
+  --paper-subtle: #F3EFE8;
+  --surface: #FFFFFF;
   --overlay: rgba(28, 27, 23, 0.28);
   --ink: #1C1B17;
   --gray: #6B675C;
-  --line: #E5E1D8;
+  --line: #E8E4DC;
   --accent: #4338CA;
   --focus: #4338CA;
   --success: #3F6B52;
@@ -22,12 +22,12 @@
   --sp-6: 24px;
   --sp-7: 32px;
   --sp-8: 48px;
-  --radius: 3px;
+  --radius: 5px;
   --text-meta: 12px;
   --font-de: Georgia, "Songti SC", "SimSun", serif;
   --font-zh: system-ui, -apple-system, "Segoe UI", "PingFang SC", "Noto Sans SC", "Microsoft YaHei", sans-serif;
   --font-mono: ui-monospace, "SF Mono", Consolas, "Liberation Mono", Menlo, monospace;
-  --ease-out: cubic-bezier(0.16,1,0.3,1);
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
   --dur-fast: 100ms;
   --dur-normal: 150ms;
   --dur-view: 250ms;
@@ -46,8 +46,8 @@ body {
   margin: 0;
   background: var(--paper);
   color: var(--ink);
-  font-family: var(--font-de);
-  font-size: 16px;
+  font-family: var(--font-zh);
+  font-size: 15px;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
 }
@@ -56,7 +56,8 @@ button,
 input,
 select,
 textarea {
-  font: inherit;
+  font-family: var(--font-zh);
+  font-size: inherit;
 }
 
 button:not(:disabled) {
@@ -147,6 +148,13 @@ h3.de-heading {
 
 .token-radius {
   border-radius: var(--radius);
+}
+
+.tufte-card {
+  background-color: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  transition: border-color var(--dur-normal) var(--ease-out);
 }
 
 .break-words {

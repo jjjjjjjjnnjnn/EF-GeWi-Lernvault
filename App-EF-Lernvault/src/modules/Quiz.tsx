@@ -643,7 +643,7 @@ export default function Quiz({ lang = "zh", vault = null, cards = null, onJumpTo
                   : "题目严格基于标记为 klausurrelevant: true 的 EF 大纲知识库笔记生成。"}
               </p>
 
-              <div className="divide-y divide-[var(--line)]">
+              <div className="rounded-[var(--radius)] border border-[var(--line)] bg-[var(--surface)] divide-y divide-[var(--line)] overflow-hidden">
                 {(orderedThemen.length > 0
                   ? orderedThemen
                   : [{ thema: MOCK_QUIZ.thema, fach: MOCK_QUIZ.fach, note: null }]
@@ -655,10 +655,10 @@ export default function Quiz({ lang = "zh", vault = null, cards = null, onJumpTo
                       type="button"
                       onClick={() => setSelectedThema(item.thema)}
                       aria-pressed={isSelected}
-                      className={`flex w-full items-center justify-between border-l-2 py-4 pl-4 pr-2 text-left transition-colors ${
+                      className={`flex w-full items-center justify-between border-l-2 py-3 px-4 text-left transition-colors ${
                         isSelected
-                          ? "border-[var(--accent)]"
-                          : "border-transparent hover:border-[var(--line)]"
+                          ? "border-[var(--accent)] bg-[var(--paper-subtle)]"
+                          : "border-transparent hover:bg-[var(--paper-subtle)]/50"
                       }`}
                     >
                       <div>
@@ -1210,15 +1210,15 @@ export default function Quiz({ lang = "zh", vault = null, cards = null, onJumpTo
                 <span>VERFAHRENSWAHL / 程序概念选择 (1 / 2)</span>
                 <span>{selectedOption ? `Gewählt: Option ${selectedOption}` : "Bitte wählen"}</span>
               </div>
-              <div className="grid grid-cols-2 divide-x divide-[var(--line)] border-y border-[var(--line)]">
+              <div className="grid grid-cols-2 divide-x divide-[var(--line)] rounded-[var(--radius)] border border-[var(--line)] bg-[var(--surface)] overflow-hidden">
                 <button
                   type="button"
                   onClick={() => setSelectedOption("A")}
                   aria-pressed={selectedOption === "A"}
                   className={`px-4 py-3 text-left font-serif text-sm transition-colors ${
                     selectedOption === "A"
-                      ? "bg-transparent text-[var(--accent)]"
-                      : "text-[var(--ink)] hover:text-[var(--accent)]"
+                      ? "bg-[var(--paper-subtle)] text-[var(--accent)]"
+                      : "text-[var(--ink)] hover:text-[var(--accent)] hover:bg-[var(--paper-subtle)]/50"
                   }`}
                 >
                   <div className="flex items-center justify-between gap-3">
@@ -1234,8 +1234,8 @@ export default function Quiz({ lang = "zh", vault = null, cards = null, onJumpTo
                   aria-pressed={selectedOption === "B"}
                   className={`px-4 py-3 text-left font-serif text-sm transition-colors ${
                     selectedOption === "B"
-                      ? "bg-transparent text-[var(--accent)]"
-                      : "text-[var(--ink)] hover:text-[var(--accent)]"
+                      ? "bg-[var(--paper-subtle)] text-[var(--accent)]"
+                      : "text-[var(--ink)] hover:text-[var(--accent)] hover:bg-[var(--paper-subtle)]/50"
                   }`}
                 >
                   <div className="flex items-center justify-between gap-3">

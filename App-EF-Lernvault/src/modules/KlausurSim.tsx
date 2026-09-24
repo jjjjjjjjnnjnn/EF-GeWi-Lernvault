@@ -36,31 +36,39 @@ const pageStyle: CSSProperties = {
 const panelStyle: CSSProperties = {
   color: "var(--ink)",
   background: "var(--paper-subtle)",
-  border: "1px solid var(--line, var(--hairline))",
-  borderRadius: 2,
+  borderWidth: 1,
+  borderStyle: "solid",
+  borderColor: "var(--line, var(--hairline))",
+  borderRadius: "var(--radius, 5px)",
 };
 
 const paperPanelStyle: CSSProperties = {
   color: "var(--ink)",
-  background: "var(--paper)",
-  border: "1px solid var(--line, var(--hairline))",
-  borderRadius: 2,
+  background: "var(--surface)",
+  borderWidth: 1,
+  borderStyle: "solid",
+  borderColor: "var(--line, var(--hairline))",
+  borderRadius: "var(--radius, 5px)",
 };
 
 const controlStyle: CSSProperties = {
   color: "var(--ink)",
-  background: "var(--paper)",
-  border: "1px solid var(--line, var(--hairline))",
-  borderRadius: 2,
+  background: "var(--surface)",
+  borderWidth: 1,
+  borderStyle: "solid",
+  borderColor: "var(--line, var(--hairline))",
+  borderRadius: "var(--radius, 5px)",
   minHeight: 32,
   padding: "4px 8px",
 };
 
 const buttonStyle: CSSProperties = {
   color: "var(--ink)",
-  background: "var(--paper)",
-  border: "1px solid var(--line, var(--hairline))",
-  borderRadius: 2,
+  background: "var(--surface)",
+  borderWidth: 1,
+  borderStyle: "solid",
+  borderColor: "var(--line, var(--hairline))",
+  borderRadius: "var(--radius, 5px)",
   padding: "5px 10px",
   cursor: "pointer",
 };

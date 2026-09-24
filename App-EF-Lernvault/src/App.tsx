@@ -449,10 +449,10 @@ export default function App() {
                 aria-current={isActive ? "page" : undefined}
                 aria-label={n.label}
                 title={n.label}
-                className={`flex items-center justify-center gap-2.5 px-2 py-2 text-left text-sm transition-colors duration-[var(--dur-normal)] rounded-[var(--radius)] active:scale-[0.98] xl:justify-start xl:px-3 ${
+                className={`flex items-center justify-center gap-2.5 px-2 py-2 text-left text-sm transition-all duration-[var(--dur-normal)] rounded-[var(--radius)] active:scale-[0.98] xl:justify-start xl:px-3 ${
                   isActive
-                    ? "font-medium text-[var(--accent)] bg-[var(--paper-subtle)]/60 border-l-2 border-[var(--accent)]"
-                    : "text-[var(--gray)] hover:text-[var(--ink)] hover:bg-[var(--paper-subtle)]/30 active:bg-[var(--paper-subtle)]/60 border-l-2 border-transparent"
+                    ? "font-medium text-[var(--accent)] bg-[var(--surface)] border-l-2 border-[var(--accent)] shadow-none"
+                    : "text-[var(--gray)] hover:text-[var(--ink)] hover:bg-[var(--surface)]/60 active:bg-[var(--paper-subtle)] border-l-2 border-transparent"
                 }`}
               >
                 <span className="shrink-0 select-none">{n.icon}</span>
@@ -468,10 +468,10 @@ export default function App() {
             aria-current={tab === "einstellungen" ? "page" : undefined}
             aria-label={tr.settings}
             title={`${tr.settings} (${settingsShortcut.altHint})`}
-            className={`flex w-full items-center justify-center gap-2.5 px-2 py-2 text-left text-sm transition-colors duration-[var(--dur-normal)] rounded-[var(--radius)] active:scale-[0.98] xl:justify-start xl:px-3 ${
+            className={`flex w-full items-center justify-center gap-2.5 px-2 py-2 text-left text-sm transition-all duration-[var(--dur-normal)] rounded-[var(--radius)] active:scale-[0.98] xl:justify-start xl:px-3 ${
               tab === "einstellungen"
-                ? "font-medium text-[var(--accent)] bg-[var(--paper-subtle)]/60 border-l-2 border-[var(--accent)]"
-                : "text-[var(--gray)] hover:text-[var(--ink)] hover:bg-[var(--paper-subtle)]/30 active:bg-[var(--paper-subtle)]/60 border-l-2 border-transparent"
+                ? "font-medium text-[var(--accent)] bg-[var(--surface)] border-l-2 border-[var(--accent)] shadow-none"
+                : "text-[var(--gray)] hover:text-[var(--ink)] hover:bg-[var(--surface)]/60 active:bg-[var(--paper-subtle)] border-l-2 border-transparent"
             }`}
           >
             <span className="shrink-0 select-none">{icons.einstellungen}</span>

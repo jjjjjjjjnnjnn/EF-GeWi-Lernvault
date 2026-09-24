@@ -1144,28 +1144,30 @@ export default function Tutor({
         )}
 
         {/* Dialog-Stream */}
-        <div ref={scrollRef} aria-busy={isThinking} className="flex-1 space-y-4 overflow-y-auto p-4 sm:p-5">
+        <div ref={scrollRef} aria-busy={isThinking} className="flex-1 space-y-4 overflow-y-auto p-4 sm:p-6 bg-[var(--paper)]">
           {messages.map((m) =>
             m.role === "ki" ? (
               <div
                 key={m.id}
-                className="de-reading max-w-[94%] border-l-2 border-[var(--accent)] py-1 pl-3.5 text-sm text-[var(--ink)]"
+                className="max-w-[94%] rounded-[var(--radius)] border border-[var(--line)] bg-[var(--surface)] p-4 text-sm text-[var(--ink)] transition-colors"
               >
-                <div className="text-[var(--text-meta)] font-mono uppercase tracking-wider text-[var(--gray)] mb-1.5 flex items-center gap-2">
-                  <span>KI-Tutor</span>
-                  <span aria-hidden="true" className="h-3 w-px bg-[var(--line)]" />
-                  <span className="text-[var(--text-meta)] text-[var(--accent)]">Oberstufe EF</span>
+                <div className="text-[var(--text-meta)] font-mono uppercase tracking-wider text-[var(--gray)] mb-3 flex items-center justify-between border-b border-[var(--line)]/50 pb-2">
+                  <div className="flex items-center gap-2">
+                    <span className="font-sans font-medium text-[var(--accent)] flex items-center gap-1.5">
+                      <span aria-hidden="true" className="w-1.5 h-1.5 rounded-full bg-[var(--accent)]" />
+                      KI-Tutor
+                    </span>
+                    <span aria-hidden="true" className="h-3 w-px bg-[var(--line)]" />
+                    <span className="text-[var(--text-meta)] text-[var(--gray)]">Gymnasiale Oberstufe EF</span>
+                  </div>
                   {m.engineTag && (
-                    <>
-                      <span aria-hidden="true" className="h-3 w-px bg-[var(--line)]" />
-                      <span className="text-[var(--text-meta)] text-[var(--gray)]">{m.engineTag}</span>
-                    </>
+                    <span className="text-[var(--text-meta)] text-[var(--gray)] font-mono">{m.engineTag}</span>
                   )}
                 </div>
 
                 {/* Instant Grounding Card (<10ms) */}
                 {m.instantSnippet && (
-                  <div className="exam-reading de-reading mb-2.5 border-l-2 border-[var(--accent)] pl-3 text-sm">
+                  <div className="exam-reading mb-3 rounded-[var(--radius)] border border-[var(--accent)]/20 bg-[var(--paper-subtle)]/40 p-3 text-sm">
                     <div className="flex items-center justify-between text-[var(--text-meta)] font-mono text-[var(--accent)] mb-1">
                       <span className="flex items-center gap-1 font-sans">
                         <span aria-hidden="true" className="inline-block h-1.5 w-1.5 rounded-full bg-[var(--accent)]" />
@@ -1177,24 +1179,26 @@ export default function Tutor({
                       <button
                         type="button"
                         onClick={() => onJumpToLibrary?.(m.instantSnippet!.notePath)}
-                        className="underline hover:text-[var(--accent)] cursor-pointer"
+                        className="underline hover:text-[var(--accent)] cursor-pointer text-xs"
                         title={lang === "de" ? "In Notizen öffnen" : "在笔记库中查看"}
                       >
                         [{m.instantSnippet.notePath}]
                       </button>
                     </div>
-                    <p className="de-reading text-[var(--ink)]">„{m.instantSnippet.excerpt}“</p>
+                    <p className="de-reading text-[var(--ink)] leading-relaxed">„{m.instantSnippet.excerpt}“</p>
                   </div>
                 )}
 
                 {/* AI Text Stream */}
-                {renderAiText(m.text)}
+                <div className="de-reading text-[15px] leading-relaxed text-[var(--ink)]">
+                  {renderAiText(m.text)}
+                </div>
 
                 {/* Fachübergreifende Vernetzung (Cross-Subject Thought Bridge Capsule) */}
                 {m.vernetzungBridge && (
-                  <div className="mt-2.5 border-y border-[var(--line)] py-2 text-xs font-sans">
+                  <div className="mt-3.5 rounded-[var(--radius)] border border-[var(--success)]/25 bg-[var(--paper-subtle)]/30 p-3 text-xs font-sans">
                     <div className="flex items-center justify-between">
-                      <div className="flex items-center gap-1.5 text-[var(--success)] font-medium text-[var(--text-meta)]">
+                      <div className="flex items-center gap-1.5 text-[var(--success)] font-medium text-xs">
                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" className="h-3.5 w-3.5 text-[var(--success)]">
                           <path d="M6.5 9.5l3-3M5 11l-1.5 1.5a2.121 2.121 0 0 1-3-3L2 8a2.121 2.121 0 0 1 3-3h1M11 5l1.5-1.5a2.121 2.121 0 0 1 3 3L14 8a2.121 2.121 0 0 1-3 3h-1" />
                         </svg>
@@ -1204,7 +1208,7 @@ export default function Tutor({
                       <button
                         type="button"
                         onClick={() => onJumpToLibrary?.(m.vernetzungBridge!.targetNotePath)}
-                        className="text-[var(--text-meta)] font-mono text-[var(--success)] hover:underline cursor-pointer flex items-center gap-0.5"
+                        className="text-xs font-mono text-[var(--success)] hover:underline cursor-pointer flex items-center gap-0.5"
                         title={lang === "de" ? "In Notizen öffnen" : "在笔记库中查看"}
                       >
                         <span>[{m.vernetzungBridge.targetSubject}]</span>
@@ -1213,7 +1217,7 @@ export default function Tutor({
                         </svg>
                       </button>
                     </div>
-                    <div className="mt-1 flex flex-col gap-1 border-t border-[var(--line)] pt-1 text-sm">
+                    <div className="mt-1.5 flex flex-col gap-1 border-t border-[var(--line)]/50 pt-1.5 text-sm">
                       <div className="de-reading text-[var(--ink)]">„{m.vernetzungBridge.anchorFormulaOrSentenceDE}“</div>
                       <div className="zh-translation">{m.vernetzungBridge.anchorSentenceZH}</div>
                     </div>
@@ -1222,12 +1226,12 @@ export default function Tutor({
 
                 {/* In Fehlerlog erfassen */}
                 {m.text && !m.isError && (
-                  <div className="mt-2 pt-1.5 border-t border-[var(--line)]/60 flex items-center justify-between">
+                  <div className="mt-3 pt-2 border-t border-[var(--line)]/50 flex items-center justify-between">
                     <button
                       type="button"
                       onClick={() => handleCaptureFehler(m)}
                       title={lang === "de" ? "Diesen Turn als Fehlerlog-Eintrag erfassen" : "提炼并沉淀为对应学科的错题补丁"}
-                      className="inline-flex items-center gap-1.5 text-[var(--text-meta)] font-sans text-[var(--gray)] hover:text-[var(--warning)] hover:bg-[var(--warning)]/40 px-2 py-0.5 rounded-[var(--radius)] transition-colors cursor-pointer"
+                      className="inline-flex items-center gap-1.5 text-xs font-sans text-[var(--gray)] hover:text-[var(--warning)] hover:bg-[var(--warning)]/10 px-2.5 py-1 rounded-[var(--radius)] transition-colors cursor-pointer"
                     >
                       <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" className="h-3.5 w-3.5 text-[var(--warning)]">
                         <path d="M4 2.5h8v11l-4-2.7-4 2.7v-11z" />
@@ -1240,13 +1244,14 @@ export default function Tutor({
             ) : (
               <div
                 key={m.id}
-                className="ml-auto max-w-[85%] rounded-[var(--radius)] bg-[var(--paper-subtle)] border border-[var(--line)] px-3.5 py-2.5 text-sm font-sans text-[var(--ink)]"
+                className="ml-auto max-w-[85%] rounded-[var(--radius)] bg-[var(--surface)] border border-[var(--line)] p-4 text-sm font-sans text-[var(--ink)]"
               >
-                <div className="text-[var(--text-meta)] font-mono uppercase tracking-wider text-[var(--gray)] mb-1">
-                  Du / 你
+                <div className="text-[var(--text-meta)] font-mono uppercase tracking-wider text-[var(--gray)] mb-1.5 flex items-center justify-between">
+                  <span className="font-sans font-medium text-[var(--ink)]">Du / 你</span>
+                  <span>{new Date(m.timestamp).toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" })}</span>
                 </div>
                 {m.imageUrl && (
-                  <div className="mb-2 max-w-[200px] rounded-[var(--radius)] overflow-hidden border border-[var(--line)]">
+                  <div className="mb-2.5 max-w-[240px] rounded-[var(--radius)] overflow-hidden border border-[var(--line)]">
                     <img src={m.imageUrl} alt="Bildanhang" className="w-full h-auto object-cover max-h-48" />
                   </div>
                 )}

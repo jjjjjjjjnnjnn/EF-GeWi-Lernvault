@@ -181,7 +181,7 @@ export default function Flashcards({
   if (isFinished) {
     return (
       <div className="mx-auto max-w-xl space-y-6 pt-10 text-center">
-        <div className="border-y border-[var(--line)] p-8">
+        <div className="rounded-[var(--radius)] border border-[var(--line)] bg-[var(--surface)] p-8">
           <div className="font-serif text-2xl text-[var(--ink)] mb-1">
             {tr.doneToday}
           </div>
@@ -341,7 +341,7 @@ export default function Flashcards({
 
       {/* Rating actions: unified row of text buttons with hairline dividers */}
       {flip ? (
-        <div className="flex border-y border-[var(--line)] divide-x divide-[var(--line)]">
+        <div className="flex rounded-[var(--radius)] border border-[var(--line)] bg-[var(--surface)] divide-x divide-[var(--line)] overflow-hidden">
           {labels.map((item) => (
             <button
               key={item.key}
@@ -356,7 +356,7 @@ export default function Flashcards({
           ))}
         </div>
       ) : (
-        <p role="status" className="border-y border-[var(--line)] py-2.5 text-center text-xs font-sans text-[var(--gray)]">
+        <p role="status" className="rounded-[var(--radius)] border border-[var(--line)] bg-[var(--surface)] py-2.5 text-center text-xs font-sans text-[var(--gray)]">
           {lang === "de" ? "Antwort anzeigen, bevor du bewertest." : "显示答案后再评分。"}
         </p>
       )}
