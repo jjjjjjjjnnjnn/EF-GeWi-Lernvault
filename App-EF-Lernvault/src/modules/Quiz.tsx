@@ -1233,7 +1233,6 @@ export default function Quiz({ lang = "zh", vault = null, cards = null, preselec
                 >
                   <div className="flex items-center justify-between gap-3">
                     <span>{currentVergleich.optionA.labelDE}</span>
-                    <kbd className="font-mono meta-text text-[var(--gray)]">1</kbd>
                   </div>
                   <div className="zh-translation mt-0.5">{currentVergleich.optionA.labelZH}</div>
                 </button>
@@ -1250,7 +1249,6 @@ export default function Quiz({ lang = "zh", vault = null, cards = null, preselec
                 >
                   <div className="flex items-center justify-between gap-3">
                     <span>{currentVergleich.optionB.labelDE}</span>
-                    <kbd className="font-mono meta-text text-[var(--gray)]">2</kbd>
                   </div>
                   <div className="zh-translation mt-0.5">{currentVergleich.optionB.labelZH}</div>
                 </button>

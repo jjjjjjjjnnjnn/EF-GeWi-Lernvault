@@ -498,36 +498,34 @@ export default function App() {
           </div>
         </div>
 
-        <nav className="flex flex-col space-y-2.5 overflow-y-auto">
+        <nav className="flex flex-col space-y-2 overflow-y-auto">
           {navZones.map((zone, zIdx) => (
             <div key={zone.title} className="space-y-0.5">
-              <div className="hidden xl:block px-2.5 py-0.5 font-mono text-[10px] uppercase tracking-wider text-[var(--gray)] select-none">
+              <div className="hidden xl:block px-2.5 py-1 font-mono text-[10px] uppercase tracking-wider text-[var(--gray)] select-none">
                 {zone.title}
               </div>
               {zIdx > 0 && <div className="xl:hidden my-1 border-t border-[var(--line)]" />}
               {zone.items.map((n) => {
                 const isActive = tab === n.id;
-                const shortcut = MODULE_KEYS.find((b) => b.module === n.id);
                 return (
                   <button
                     key={n.id}
                     onClick={() => switchTab(n.id)}
                     aria-current={isActive ? "page" : undefined}
                     aria-label={n.label}
-                    title={`${n.label}${shortcut ? ` (${shortcut.altHint})` : ""}`}
-                    className={`flex items-center justify-center gap-2 px-2 py-1.5 text-left text-xs transition-all duration-[var(--dur-normal)] rounded-[var(--radius)] active:scale-[0.98] xl:justify-start xl:px-2.5 ${
+                    title={n.label}
+                    className={`group flex h-10 w-full items-center justify-center rounded-[var(--radius)] px-2.5 text-left text-xs transition-all duration-[var(--dur-normal)] cursor-pointer active:scale-[0.98] xl:justify-start xl:gap-2.5 ${
                       isActive
-                        ? "font-medium text-[var(--accent)] bg-[var(--surface)] border-l-2 border-[var(--accent)] shadow-none"
-                        : "text-[var(--gray)] hover:text-[var(--ink)] hover:bg-[var(--surface)]/60 active:bg-[var(--paper-subtle)] border-l-2 border-transparent"
+                        ? "border-l-2 border-[var(--accent)] bg-[var(--surface)] font-medium text-[var(--accent)] shadow-none"
+                        : "border-l-2 border-transparent text-[var(--gray)] hover:bg-[var(--surface)] hover:text-[var(--ink)] active:bg-[var(--paper-subtle)]"
                     }`}
                   >
-                    <span className="shrink-0 select-none">{n.icon}</span>
-                    <span className="hidden font-sans xl:inline truncate">{n.label}</span>
-                    {shortcut && (
-                      <kbd className="ml-auto hidden font-mono text-[10px] text-[var(--gray)] xl:inline">
-                        {shortcut.altHint}
-                      </kbd>
-                    )}
+                    <span className="flex h-5 w-5 shrink-0 items-center justify-center select-none text-current">
+                      {n.icon}
+                    </span>
+                    <span className="hidden truncate font-sans text-xs font-medium xl:inline">
+                      {n.label}
+                    </span>
                   </button>
                 );
               })}
@@ -540,23 +538,32 @@ export default function App() {
             onClick={() => switchTab("einstellungen")}
             aria-current={tab === "einstellungen" ? "page" : undefined}
             aria-label={tr.settings}
-            title={`${tr.settings} (${settingsShortcut.altHint})`}
-            className={`flex w-full items-center justify-center gap-2 px-2 py-1.5 text-left text-xs transition-all duration-[var(--dur-normal)] rounded-[var(--radius)] active:scale-[0.98] xl:justify-start xl:px-2.5 ${
+            title={tr.settings}
+            className={`group flex h-10 w-full items-center justify-center rounded-[var(--radius)] px-2.5 text-left text-xs transition-all duration-[var(--dur-normal)] cursor-pointer active:scale-[0.98] xl:justify-start xl:gap-2.5 ${
               tab === "einstellungen"
-                ? "font-medium text-[var(--accent)] bg-[var(--surface)] border-l-2 border-[var(--accent)] shadow-none"
-                : "text-[var(--gray)] hover:text-[var(--ink)] hover:bg-[var(--surface)]/60 active:bg-[var(--paper-subtle)] border-l-2 border-transparent"
+                ? "border-l-2 border-[var(--accent)] bg-[var(--surface)] font-medium text-[var(--accent)] shadow-none"
+                : "border-l-2 border-transparent text-[var(--gray)] hover:bg-[var(--surface)] hover:text-[var(--ink)] active:bg-[var(--paper-subtle)]"
             }`}
           >
-            <span className="shrink-0 select-none">{icons.einstellungen}</span>
-            <span className="hidden font-sans xl:inline">{tr.settings}</span>
-            <kbd className="ml-auto hidden font-mono text-[var(--text-meta)] text-[var(--gray)] xl:inline">{settingsShortcut.altHint}</kbd>
+            <span className="flex h-5 w-5 shrink-0 items-center justify-center select-none text-current">
+              {icons.einstellungen}
+            </span>
+            <span className="hidden truncate font-sans text-xs font-medium xl:inline">
+              {tr.settings}
+            </span>
           </button>
         </div>
 
         <div className="mt-auto hidden pt-2 border-t border-[var(--line)] text-[var(--text-meta)] font-mono text-[var(--gray)] leading-relaxed xl:block">
           <div className="flex items-center justify-between">
             <span>v0.2.0 · Offline</span>
-            <span>? 帮助</span>
+            <button
+              type="button"
+              onClick={() => setHelpOpen(true)}
+              className="hover:text-[var(--ink)] cursor-pointer transition-colors"
+            >
+              {lang === "de" ? "Hilfe" : "帮助"}
+            </button>
           </div>
         </div>
       </aside>
@@ -568,10 +575,10 @@ export default function App() {
           <div className="flex min-w-64 flex-1 items-center max-w-lg">
             <input
               ref={searchRef}
+              title="/"
               value={query}
               onChange={(e) => setQuery(e.target.value)}
               placeholder={tr.search}
-              title="/"
               className="w-full rounded-[var(--radius)] border border-[var(--line)] bg-[var(--surface)] px-2.5 py-1 font-sans text-xs text-[var(--ink)] placeholder:text-[var(--gray)] focus:border-[var(--accent)]"
             />
           </div>
@@ -675,7 +682,15 @@ export default function App() {
             />
           )}
           {tab === "planner" && <Planner lang={lang} vaultNotes={vault?.notes ?? null} />}
-          {tab === "mindmap" && <Mindmap lang={lang} vaultNotes={vault?.notes ?? null} onJumpToLibrary={jumpToLibrary} />}
+          {tab === "mindmap" && (
+            <Mindmap
+              lang={lang}
+              vaultNotes={vault?.notes ?? null}
+              selectedFach={selectedFach}
+              onSubjectChange={setSelectedFach}
+              onJumpToLibrary={jumpToLibrary}
+            />
+          )}
           {tab === "reise" && <ReiseModule lang={lang} vaultReisen={vault?.reisen ?? null} />}
           {tab === "einstellungen" && (
             <Settings

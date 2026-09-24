@@ -188,7 +188,7 @@ describe("remaining module source contract", () => {
     topic.focus();
     expect(topic).toHaveFocus();
     await user.click(topic);
-    expect(onJumpToLibrary).toHaveBeenCalledWith("Lernziel");
+    expect(onJumpToLibrary).toHaveBeenCalledWith("Lernziel", "SoWi", "08_SoWi/Lernziel.md");
     expect(operator.tagName).toBe("SPAN");
     expect(operator.getAttribute("style")).not.toMatch(/background|border|radius/i);
     expect(container.querySelector("svg[data-relationship-diagram]")).toHaveAttribute("aria-hidden", "true");

@@ -43,11 +43,15 @@ interface DiagramLayout {
 export default function Mindmap({
   lang = "zh",
   vaultNotes = null,
+  selectedFach = "alle",
+  onSubjectChange,
   onJumpToLibrary,
 }: {
   lang?: Lang;
   vaultNotes?: VaultNote[] | null;
-  onJumpToLibrary?: (query: string) => void;
+  selectedFach?: string;
+  onSubjectChange?: (fach: string) => void;
+  onJumpToLibrary?: (query: string, fach?: string, noteId?: string) => void;
 }) {
   const notesList = useMemo<MindmapNote[]>(() => {
     if (vaultNotes && vaultNotes.length > 0) {
@@ -117,8 +121,16 @@ export default function Mindmap({
     [graph]
   );
 
+  const filteredGrouped = useMemo(() => {
+    if (!selectedFach || selectedFach === "alle") return grouped;
+    const map = new Map<string, MindmapNote[]>();
+    const list = grouped.get(selectedFach);
+    if (list) map.set(selectedFach, list);
+    return map;
+  }, [grouped, selectedFach]);
+
   const layout = useMemo<DiagramLayout>(() => {
-    const subjects = Array.from(grouped.entries());
+    const subjects = Array.from(filteredGrouped.entries());
     const columnWidth = Math.max(180, 1000 / Math.max(1, subjects.length));
     const width = Math.max(1000, columnWidth * subjects.length);
     const maxTopicCount = Math.max(0, ...subjects.map(([, notes]) => notes.length));
@@ -212,10 +224,32 @@ export default function Mindmap({
           </p>
         </div>
         <div className="shrink-0 font-mono text-xs text-[var(--gray)]">
-          {grouped.size} {lang === "de" ? "Fächer" : "学科"} · {notesList.length}{" "}
+          {filteredGrouped.size} {lang === "de" ? "Fächer" : "学科"} · {notesList.length}{" "}
           {lang === "de" ? "Themen" : "主题"}
         </div>
       </div>
+
+      {onSubjectChange && (
+        <div className="flex flex-wrap items-center gap-1 border-b border-[var(--line)] pb-3">
+          {["alle", "Deutsch", "Englisch", "Mathe", "Physik", "Chemie", "Bio", "Philosophie", "SoWi", "Musik", "Sport"].map((f) => {
+            const active = (selectedFach || "alle") === f;
+            return (
+              <button
+                key={f}
+                type="button"
+                onClick={() => onSubjectChange(f)}
+                className={`rounded-[var(--radius)] px-2 py-0.5 font-sans text-xs transition-colors cursor-pointer ${
+                  active
+                    ? "bg-[var(--ink)] text-[var(--paper)] font-medium"
+                    : "border border-[var(--line)] bg-[var(--surface)] text-[var(--ink)] hover:bg-[var(--surface-hover)]"
+                }`}
+              >
+                {f === "alle" ? (lang === "de" ? "Alle" : "全部") : f}
+              </button>
+            );
+          })}
+        </div>
+      )}
 
       <div className="overflow-x-auto">
         <div
@@ -272,7 +306,13 @@ export default function Mindmap({
                 aria-label={`${node.label}${node.sub ? ` · ${node.sub}` : ""}`}
                 title={node.sub ? `${node.label} · ${node.sub}` : node.label}
                 className="rounded-[var(--radius)] focus-visible:outline focus-visible:outline-1 focus-visible:outline-[var(--accent)]"
-                onClick={() => onJumpToLibrary?.(node.query)}
+                onClick={() =>
+                  onJumpToLibrary?.(
+                    node.query,
+                    node.note?.fach ?? (node.kind === "subject" ? node.query : undefined),
+                    node.note?.id
+                  )
+                }
                 style={{
                   position: "absolute",
                   left: `${(node.x / layout.width) * 100}%`,
