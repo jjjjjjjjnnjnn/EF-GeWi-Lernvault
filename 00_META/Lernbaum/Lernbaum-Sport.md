@@ -610,3 +610,16 @@ mindmap
 - 核心转变：学段 EF→EF+Q1+Q2；新增 Methoden-Profil（含三层正交结构速查 + 6 选 2 规则）；每个 L3 补应试四行（覆盖笔试/口试/实践三轨道）；新增 §3 台阶（含考试轨道表）与 §4 缺口清单（26 项）。
 - ⚠️ 本学科**无中德对照**（按项目设计，CN-Methode 仅适用理科）。
 - ⚠️ 保持诚实的未获取项：平时 Klausur 时长；官方 Sport Operatoren AFB 表；本校 2 个 BF/SB；本校 2 个 Akzentuierungs-IF。
+
+---
+
+## Lernreise 索引（互动课程 · Lesson-v3）
+
+> 本学科互动课程已全部入库（`Lernreise/`，9 步制：entdecken / ausprobieren / check / szenario + Fehlvorstellung）。下表供学习树挂载与复习排程使用。
+
+| # | Thema (DE) | 课程文件 | Ziel | 状态 |
+|---|---|---|---|---|
+| 1 | Superkompensation und die Prinzipien des Ausdauertrainings | [Sport-Ausdauertraining-Prinzipien-L1.md](../../Lernreise/Sport-Ausdauertraining-Prinzipien-L1.md) | Klausur | ✅ 已建 |
+| 2 | Bewegung erklären | [Sport-Bewegung-Erklaeren-L1.md](../../Lernreise/Sport-Bewegung-Erklaeren-L1.md) | Klausur | ✅ 已建 |
+| 3 | Die Phasenstruktur der Bewegung und der Beobachtungsbogen | [Sport-Phasenstruktur-Meinel-L1.md](../../Lernreise/Sport-Phasenstruktur-Meinel-L1.md) | Klausur | ✅ 已建 |
+| 4 | Biomechanische Optimierung des Weitsprungs: Absprung und Flug | [Sport-Weitsprung-L1.md](../../Lernreise/Sport-Weitsprung-L1.md) | Klausur | ✅ 已建 |

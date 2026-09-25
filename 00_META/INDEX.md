@@ -17,7 +17,7 @@
 - [App-EF-Lernvault](../App-EF-Lernvault/README.md) — EF-Lernvault：六模块 + 命令面板/快捷键/拖拽 + P1接线（顶栏打开真实vault，笔记/背卡/面板全切真实数据）；`npm run dev` 预览（1420）。
 - [LICENSE](../App-EF-Lernvault/LICENSE)（半开源，已定稿） · [NOTICE](../App-EF-Lernvault/NOTICE.md)（第三方署名，实测版本）
 - 规范：[UI-BRIEF](../App-EF-Lernvault/UI-BRIEF.md)（tufte简洁风） · [INTERACTION-BRIEF](../App-EF-Lernvault/INTERACTION-BRIEF.md)（交互） · [FEATURE-SPEC](../App-EF-Lernvault/FEATURE-SPEC.md)（功能需求，给外部AI） · [UI-SPEC-V2](../App-EF-Lernvault/UI-SPEC-V2.md)（全科+KaTeX+Lernreise，给外部AI） · [UI-SPEC-V3](../App-EF-Lernvault/UI-SPEC-V3.md)（P2/P3/P4界面需求，给外部AI）
-- 互动课程源：[Lernreise/](../Lernreise/) · [Sowi-L1](../Lernreise/Sowi-Soziale-Marktwirtschaft-L1.md) · [Philo-L2](../Lernreise/Philo-Utilitarismus-Kant-L2.md) · [Musik-L1](../Lernreise/Musik-Hoeranalyse-L1.md) · [Sport-L1](../Lernreise/Sport-Bewegung-Erklaeren-L1.md)（vault即课程，首个示范：Sowi-Soziale-Marktwirtschaft-L1）
+- 互动课程源：[Lernreise/](../Lernreise/) — **十科全覆盖，共 70 篇**（每篇 9 步 Lesson-v3：entdecken / ausprobieren / check / szenario + Fehlvorstellung）。示例：[Sowi-Soziale-Marktwirtschaft-L1](../Lernreise/Sowi-Soziale-Marktwirtschaft-L1.md) · [Sowi-Preismechanismus-Markt-L1](../Lernreise/Sowi-Preismechanismus-Markt-L1.md) · [Mathe-Sekante-zu-Tangente-L1](../Lernreise/Mathe-Sekante-zu-Tangente-L1.md) · [Philo-Utilitarismus-Kant-L2](../Lernreise/Philo-Utilitarismus-Kant-L2.md) · [Musik-Sonatenhauptsatzform-L1](../Lernreise/Musik-Sonatenhauptsatzform-L1.md) · [Sport-Weitsprung-L1](../Lernreise/Sport-Weitsprung-L1.md)（vault即课程，App 第 7 模块只读消费）
 - 约定：App 只读 vault（内容源），不写回；commit 前缀 `[App]`；构建产物与签名密钥永不进 git。
 - P0产物（本地 `src-tauri/target/release/bundle/`，不进git）：`EF-Lernvault_0.1.0_x64-setup.exe`（1.8MB）· MSI（2.7MB），已验启动（窗口标题正常，常驻~25MB）。
 
@@ -59,6 +59,7 @@
 - Karikatur三例 — [Karikatur-Fallbeispiele](../08_SoWi/Texte-Analyse/Karikatur-Fallbeispiele.md)（不平等/环境增长/厌政+AFB II-III EHZ+9句判语）
 - Abitur-Fokussierungen IF4+IF6 (2027–2029) — [Sowi-Abitur-Fokussierungen](../08_SoWi/Texte-Analyse/Sowi-Abitur-Fokussierungen.md)（Wirtschaftspolitik+Ungleichheit，EF衔接Kap.1–11）· [Gestaltungsaufgabe-Training](../08_SoWi/Klausur-Training/SW-Gestaltungsaufgabe-Training.md)（Redebeitrag/Handlungsempfehlung+EHZ）
 - 电子书11章地图 — [Sowi-NRW-EF-Buch-Navigator](../08_SoWi/Texte-Analyse/Sowi-NRW-EF-Buch-Navigator.md)（C.C.Buchner click & study，需学校登录；Ungleichheit无专章）
+- Preismechanismus & Marktformen (IF Wirtschaft) — [Preismechanismus-und-Marktformen](../08_SoWi/Texte-Analyse/Preismechanismus-und-Marktformen.md)（供求/弹性/限价负效应+CN供求十字速画法，配 Lernreise L1）
 
 ### Philosophie
 - Gerechtigkeit & Wirtschaftsethik — [Gerechtigkeit-Wirtschaftsethik-Vernetzung](../07_Philosophie/Gerechtigkeit-Wirtschaftsethik-Vernetzung.md)（Rawls差异原则/无知之幕/SoWi不平等再分配跨学科）
@@ -222,6 +223,9 @@
 - [2026-09-25-ui-and-lernbaum-refactor](Journal/2026-09-25-ui-and-lernbaum-refactor.md) — **UI工作区重构与学习树自适应大纲系统升级**：侧边栏收敛为 5 大清晰主工作区 + 顶部微胶囊分段条；Lernbaum 彻底根治超宽裁切，新增「全图适应/Einpassen」与「Gliederung (大纲目录)」双模态切换
 - [2026-09-25-tutor-interaction-and-grounding-overhaul](Journal/2026-09-25-tutor-interaction-and-grounding-overhaul.md) — **KI助教交互体系重构与抗漂移精准锚定**：Sokratisch启发与Klausur-Direkt双模提示词升格抗漂移 + 检索切片Subject优先与Memo常驻 + 笔记引用精准高亮跳转 + 误报出处清零 + Tier 2学科胶囊栏 + 5组快捷提问芯片 + 单条回复一键复制
 - [2026-09-25-modular-learning-and-spec](Journal/2026-09-25-modular-learning-and-spec.md) — **三段模块化学习架构重构与全考纲内容搜集交付总纲**：学习/复习/练习三段工作区闭环 + 互动课程内嵌学科教具沙盘 + 全十科考纲缺口审计与外部AI批量生成标准规范（379单测/build/vault-check全绿）
+- [2026-09-25-external-ai-content-preismechanismus](Journal/2026-09-25-external-ai-content-preismechanismus.md) — **外部AI内容入库首单**：SoWi Preismechanismus 三件套（Lernreise L1 + 八段式笔记 + 18 词卡），三处同步 + vault-check PASS；判定 `.json` 不成立、须用 `.md`
+- [2026-09-25-lernreise-vollausbau](Journal/2026-09-25-lernreise-vollausbau.md) — **Lernreise 十科全量补齐**：10 个子 agent 并行生产 **65 篇** 9步互动课程（`Lernreise/` 5→**70** 篇），主线程独立复核 + 37 处「待建」标记翻转 + 19 文件陈旧标记清理，vault-check PASS(reisen=70)
+- [2026-09-25-lernreise-vertiefung](Journal/2026-09-25-lernreise-vertiefung.md) — **Lernreise 深化**：2 篇旧版试点重写为 9 步 + 70 篇全量插入 `Anekdote & Fun-Fact`（故事/冷知识）+ **+177 张 Anki 词卡**（1418→**1595**）+ 10 份 Lernbaum 补「Lernreise 索引」（70 行 0 死链）+ Lernmethoden §10（Seductive-Details 边界），vault-check PASS
 - 约定：文件名 `YYYY-MM-DD-<thema>.md`，头部frontmatter（`fach`可空，`tags: [EF, Meta]`）。
 
 

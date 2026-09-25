@@ -936,3 +936,20 @@ mindmap
   - ➕ **新增 §3 Abitur-Übergang**：9 级台阶表（含 EF 无 Skalarprodukt 的隐形台阶、LK 的 S 依赖 A 的积分链、GK 的 S 止于二项分布、工具轴 25→100 min 爬坡、口试 ≥2 IF）。
   - ➕ **新增 §4 笔记缺口清单**：现有 13 篇按 IF 归类 + **23 项缺口**（★★★ 优先 5 项），含指定产出《Vom Extremwert zum Beweis》《Basis und Linearkombination》《Vektor-Methode 总表》。
   - 🔧 保留原有 EF 内容（22 个节点的中文导读与 Klausur-Anbindung）并升级格式；明确 `Reflektieren` 为 `Problemlösen` 子维度（数学为**五**维 Kompetenzbereich）。
+
+---
+
+## Lernreise 索引（互动课程 · Lesson-v3）
+
+> 本学科互动课程已全部入库（`Lernreise/`，9 步制：entdecken / ausprobieren / check / szenario + Fehlvorstellung）。下表供学习树挂载与复习排程使用。
+
+| # | Thema (DE) | 课程文件 | Ziel | 状态 |
+|---|---|---|---|---|
+| 1 | Ableitungsregeln fuer Polynome | [Mathe-Ableitungsregeln-Polynome-L1.md](../../Lernreise/Mathe-Ableitungsregeln-Polynome-L1.md) | Klausur | ✅ 已建 |
+| 2 | CN-Formeln dreisprachig diktieren und rechnen | [Mathe-CN-Formeln-L1.md](../../Lernreise/Mathe-CN-Formeln-L1.md) | Klausur | ✅ 已建 |
+| 3 | CN-Training: vier Aufgaben unter Zeitdruck | [Mathe-CN-Training-L1.md](../../Lernreise/Mathe-CN-Training-L1.md) | Klausur | ✅ 已建 |
+| 4 | CN-Tricks: sechs Schnellverfahren | [Mathe-CN-Tricks-L1.md](../../Lernreise/Mathe-CN-Tricks-L1.md) | Klausur | ✅ 已建 |
+| 5 | Monotonie und Extrempunkte kompakt | [Mathe-Kurvendiskussion-Kompakt-L1.md](../../Lernreise/Mathe-Kurvendiskussion-Kompakt-L1.md) | Klausur | ✅ 已建 |
+| 6 | Von der Sekante zur Tangente | [Mathe-Sekante-zu-Tangente-L1.md](../../Lernreise/Mathe-Sekante-zu-Tangente-L1.md) | Klausur | ✅ 已建 |
+| 7 | Steckbriefaufgaben: Bedingungen in Gleichungen | [Mathe-Steckbriefaufgaben-Verfahren-L1.md](../../Lernreise/Mathe-Steckbriefaufgaben-Verfahren-L1.md) | Klausur | ✅ 已建 |
+| 8 | ZKE 2027: Teil A und Teil B im Zeitmodus | [Mathe-ZKE-2027-L1.md](../../Lernreise/Mathe-ZKE-2027-L1.md) | Klausur | ✅ 已建 |

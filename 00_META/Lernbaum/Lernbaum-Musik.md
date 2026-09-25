@@ -436,3 +436,16 @@ mindmap
 - 核心转变：学段 EF→EF+Q1+Q2；新增 Methoden-Profil（含共享基础层表）；每个 L3 补应试四行；新增口试专项台阶表；§4 缺口清单 14 项。
 - ⚠️ 本学科**无中德对照**（按项目设计，CN-Methode 仅适用理科）。
 - ⚠️ 保持诚实的未获取项：口试中 Aufgabenart III 的实操形态；Musik 官方 Operatoren 表版本年份；Abitur Fachliche Vorgaben 作品清单。
+
+---
+
+## Lernreise 索引（互动课程 · Lesson-v3）
+
+> 本学科互动课程已全部入库（`Lernreise/`，9 步制：entdecken / ausprobieren / check / szenario + Fehlvorstellung）。下表供学习树挂载与复习排程使用。
+
+| # | Thema (DE) | 课程文件 | Ziel | 状态 |
+|---|---|---|---|---|
+| 1 | Höranalyse Bausteine | [Musik-Hoeranalyse-L1.md](../../Lernreise/Musik-Hoeranalyse-L1.md) | Klausur | ✅ 已建 |
+| 2 | Motivische Verarbeitung: Sequenz, Umkehrung, Krebs, Abspaltung | [Musik-Motivische-Verarbeitung-L1.md](../../Lernreise/Musik-Motivische-Verarbeitung-L1.md) | Klausur | ✅ 已建 |
+| 3 | Sonatenhauptsatzform hoeren: Exposition, Durchfuehrung, Reprise | [Musik-Sonatenhauptsatzform-L1.md](../../Lernreise/Musik-Sonatenhauptsatzform-L1.md) | Klausur | ✅ 已建 |
+| 4 | Sonatensatzform analysieren: Tonartplan und Themenvergleich | [Musik-Sonatensatzform-Analyse-L1.md](../../Lernreise/Musik-Sonatensatzform-Analyse-L1.md) | Klausur | ✅ 已建 |

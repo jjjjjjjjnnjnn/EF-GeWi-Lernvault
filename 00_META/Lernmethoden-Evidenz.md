@@ -10,8 +10,8 @@ tags: [EF, Meta]
 # Lernmethoden-Evidenz v3 (单真相源：什么方法真有用)
 
 > 中文一句话：只信元分析，不信感觉。觉得"看懂了"是最不可靠的信号，合上书能默写出来才是。
-> v3 新增 §6–§9（练习测试精细化 / 穿插辨别 / 例题自解释边界 / 反馈多媒体），§1–§5 结论保留。16 篇论文明细见 `Methoden-Quellen.md`。
-> Quellen (nur Links, keine Zitate): Dunlosky et al. 2013, Psych. Science in the Public Interest 14, 4–58 · Karpicke & Blunt 2011, Science 331 · Adesope et al. 2017, Rev. Educ. Res. · Rowland 2014, Psych. Bull. · Rohrer & Taylor 2007 · Taylor & Rohrer 2010 · Rohrer et al. 2015 · Rohrer et al. 2020 · Foster et al. 2019 · Barbieri et al. 2023 · Wittwer & Renkl 2010 · Brummer et al. 2024 · Kandemir u.a. (Timing-Metaanalyse) · Mayer (CTML) · Cromley et al. 2025 · Ma et al. 2014 (ITS meta, g=.42/.57/.35) · von Hippel 2024, Education Next (two-sigma) · open-spaced-repetition/awesome-fsrs (Wiki: The Algorithm) · SuperMemo Guru (forgetting index) · Vectara FaithJudge 2025, arXiv:2505.04847 · JIM-Studie 2024/2025, mpfs.de
+> v3 新增 §6–§9（练习测试精细化 / 穿插辨别 / 例题自解释边界 / 反馈多媒体），§1–§5 结论保留；v3.1 补 §10（故事与冷知识的边界），§1–§9 结论保留。18 篇论文明细见 `Methoden-Quellen.md`。
+> Quellen (nur Links, keine Zitate): Dunlosky et al. 2013, Psych. Science in the Public Interest 14, 4–58 · Karpicke & Blunt 2011, Science 331 · Adesope et al. 2017, Rev. Educ. Res. · Rowland 2014, Psych. Bull. · Rohrer & Taylor 2007 · Taylor & Rohrer 2010 · Rohrer et al. 2015 · Rohrer et al. 2020 · Foster et al. 2019 · Barbieri et al. 2023 · Wittwer & Renkl 2010 · Brummer et al. 2024 · Kandemir u.a. (Timing-Metaanalyse) · Mayer (CTML) · Cromley et al. 2025 · Rey 2012, Educ. Res. Rev. · Sundararajan & Adesope 2020, Educ. Psych. Rev. 32, 707–734 · Ma et al. 2014 (ITS meta, g=.42/.57/.35) · von Hippel 2024, Education Next (two-sigma) · open-spaced-repetition/awesome-fsrs (Wiki: The Algorithm) · SuperMemo Guru (forgetting index) · Vectara FaithJudge 2025, arXiv:2505.04847 · JIM-Studie 2024/2025, mpfs.de
 
 ## 1. 十策略证据等级 (Dunlosky 2013)
 
@@ -67,6 +67,13 @@ tags: [EF, Meta]
 - 中文结论：反馈要"轻、快、分层"，课件要"一图一概念"。数字反馈整体 g≈0.41（Brummer 2024）；其中最简单的 KR（只告诉对错，knowledge of results）反而最强（g≈0.64）——先给对错，再给讲解；聚焦过程的反馈（哪里想错了、下一步改什么）胜过只盯任务结果的。反馈时机无差异（g≈0.03，Kandemir），所以延迟展开完全可行：做完一整套再统一对答案，不用做一题对一题。多媒体按 Mayer CTML 15 原则做减法（Cromley 2025 g≈0.37）：去装饰图、口语化、切小段；课程页一条规则——一图只讲一个概念。
 - vault动作：反馈三层走——KR（先判对错）→ 延迟展开（整套做完再讲）→ 过程+元认知（错因归类：辨别错/知识错/表达错，见 Fehlerlog）；Lernreise/笔记配图执行"一图一概念"，装饰图不进库。
 - 来源链接：[Brummer et al. 2024](https://scholar.google.com/scholar?q=Brummer+2024+digital+feedback+meta-analysis) · [Kandemir u.a. (Feedback-Timing)](https://scholar.google.com/scholar?q=Kandemir+feedback+timing+meta-analysis) · [Mayer CTML](https://scholar.google.com/scholar?q=Mayer+multimedia+learning+cognitive+theory) · [Cromley et al. 2025](https://scholar.google.com/scholar?q=Cromley+2025+multimedia+design+meta-analysis) · 明细见 `Methoden-Quellen.md` §D。
+
+## 10. 故事与冷知识的边界 (Rey 2012 / Sundararajan & Adesope 2020)
+
+- 中文结论：讲"有趣但**无关**"的附加信息（教育研究称之为 *seductive details*）会**损害**学习——两篇元分析方向一致（Rey 2012, *Educational Research Review*；Sundararajan & Adesope 2020, *Educational Psychology Review* 32, 707–734）。关键调节变量是**一致性 (coherence)**：只有当附加信息**服务于本课核心概念**时它才无害、甚至有助于编码（具体实例帮助理解抽象概念）；一旦无关，它就挤占工作记忆、打断"材料—概念"的连贯性。翻译成人话：**故事要么承载概念，要么不写**；"为了有趣"的故事是负资产。
+- vault动作：Lernreise 的 `## Anekdote & Fun-Fact` 小节强制三段式——① 德语故事/冷知识 → ② 中文解读（说明它印证哪个概念）→ ③ `Bezug zum Konzept` 一句拉回术语。**凡写不出第 ③ 句的，即判定为 seductive detail，删除**；同一学科内多篇课程的故事不得重复；不确定的"人名+年份"不写（宁可模糊限定）。
+- 来源链接：[Rey 2012, Educ. Res. Rev.](https://doi.org/10.1016/j.edurev.2012.10.001) · [Sundararajan & Adesope 2020, Educ. Psych. Rev.](https://doi.org/10.1007/s10648-020-09522-4) · 明细见 `Methoden-Quellen.md` §E。
+- 验证状态：来源与结论方向 **[已验证]**（2026-09-25 检索确认两篇元分析存在且结论方向一致）；具体效应量本页**不引用**（未取得全文）**[未获取到]**。
 
 ## Klausur-Satz（本页唯一德语存档句，v3）
 

@@ -1106,3 +1106,17 @@ mindmap
 
 - 2026-09-24：创建（EF 版 · 旧设计）。覆盖 NRW KLP Englisch 2023 的三个 EF Themenfelder + 一个非考纲工具枝，节点含 Operatoren / Klausur-Anbindung / Leitfrage DE-ZH。
 - 2026-09-24：**升级为 Abi-Baum（S7 重构）**。① frontmatter 新增 `stufe` / `abi_fokus` / `klp_quelle`，`operatoren` 补齐官方 22 动词；② **L1 由「3 Themenfelder + 1 工具枝」重构为 KLP 的 5 个 Kompetenzbereiche**（英语 KLP 无 Inhaltsfeld，§0.0 显著说明此为结构事实），原三话题下移为 KB2 的 L2/L3 并标 [已验证]/[据推断]；③ 新增 §0 Methoden-Profil（**AFB 权重按任务形态说明**、黄金学习法 8 条带证据、三大失分点、笔记结构模板、学段口径）；④ 全部 L3 节点（**82 个**）补齐「应试四行」（中文一句话 / Klausur-Anbindung / Operatoren / Lernweg ZH / Fehlerquelle / 📓 笔记）；⑤ 新增 Q1-Q2 与 LK 专属节点（三文化域、Welt im Wandel、口试两部分、Reden/Sachbuch、分化互参、Meinungsbildung（LK）、英国统治遗产（LK）、KI 批判反思、Beeinflussungsstrategien、WSE 变体等）；⑥ 新增 §3 Abitur-Übergang（**13 条台阶 + LK 专属台阶 9 项**）；⑦ 新增 §4 笔记缺口清单（7 篇已有按能力领域归档并标跨域 + **20 项缺口** + 分布统计）；⑧ **关闭旧版两个待确认项**：Abitur Teil B 方向确认为 **DE→EN** 且三段按固定顺序全考 [已验证]。依据：`Curriculum/Deutschland/Englisch-Oberstufe.md`、`Operatoren-NRW-Alle-Faecher.md`（Englisch 22 动词，B 组不按动词分 AFB）、`Klausur-Formate/Klausur-und-Abitur-Formate.md`、`00_META/Lernmethoden-Evidenz.md`。
+---
+
+## Lernreise 索引（互动课程 · Lesson-v3）
+
+> 本学科互动课程已全部入库（`Lernreise/`，9 步制：entdecken / ausprobieren / check / szenario + Fehlvorstellung）。下表供学习树挂载与复习排程使用。
+
+| # | Thema (DE) | 课程文件 | Ziel | 状态 |
+|---|---|---|---|---|
+| 1 | Abitur-Themenfelder: UK, USA, Nigeria, Identitaet, Medien | [Englisch-Abitur-Themenfelder-L1.md](../../Lernreise/Englisch-Abitur-Themenfelder-L1.md) | Klausur | ✅ 已建 |
+| 2 | Characterisation: Direct and Indirect Techniques | [Englisch-Characterisation-Techniques-L1.md](../../Lernreise/Englisch-Characterisation-Techniques-L1.md) | Klausur | ✅ 已建 |
+| 3 | Comment Writing: P.E.E. und Register | [Englisch-Comment-Writing-L1.md](../../Lernreise/Englisch-Comment-Writing-L1.md) | Klausur | ✅ 已建 |
+| 4 | IQB Writing: Summary, Analysis, Comment | [Englisch-IQB-Writing-L1.md](../../Lernreise/Englisch-IQB-Writing-L1.md) | Klausur | ✅ 已建 |
+| 5 | Mediation DE-EN: Ablauf und Textformate | [Englisch-Mediation-L1.md](../../Lernreise/Englisch-Mediation-L1.md) | Klausur | ✅ 已建 |
+| 6 | Mediation-Strategien: Register und Kulturtransfer | [Englisch-Mediation-Strategies-L1.md](../../Lernreise/Englisch-Mediation-Strategies-L1.md) | Klausur | ✅ 已建 |

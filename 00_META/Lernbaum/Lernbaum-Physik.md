@@ -1359,3 +1359,19 @@ mindmap
   - ➕ **新增 §3 Abitur-Übergang**：13 级台阶表（DGL 语言① / 场的数学化② / 二维运动电学化③ / ω 复用④ / 守恒广义化⑤ / Spannenergie⑥ / Millikan 层级⑦ / **动词等级上移⑧** / Bewerten 边界规则⑨ / GK⇄LK 两套 IF⑩ / Basiskonzepte⑪ / 自行设计实验⑫ / 90→255/300 min 与 4 选 3⑬）。
   - ➕ **新增 §4 笔记缺口清单**：现有 8 篇按 IF 归类 + **22 项缺口**（★★★ 8 项），含指定产出《**Lorentzkraft 轨迹几何法**》《**Impuls + 一维碰撞**》《**LK-DGL 前置包**》（小角线性化 + 微元法，可与 Mathe 联动）。
   - 🔧 保留原有 EF 内容（24 个节点的中文导读与 Klausur-Anbindung）并升级格式；补入 EF-1 的 `waagerechter Wurf`（KLP 明示条目，旧版遗漏）与 `vektorielle Größen`；保留 `Feldkonzept` 讲引力、EF 唯一的场、EF 唯一的非经典物理（`Zeitdilatation`/`Lichtuhr`）等已验证结论。
+
+---
+
+## Lernreise 索引（互动课程 · Lesson-v3）
+
+> 本学科互动课程已全部入库（`Lernreise/`，9 步制：entdecken / ausprobieren / check / szenario + Fehlvorstellung）。下表供学习树挂载与复习排程使用。
+
+| # | Thema (DE) | 课程文件 | Ziel | 状态 |
+|---|---|---|---|---|
+| 1 | CN-Training: vier Klausuraufgaben unter Zeitdruck | [Physik-CN-Training-L1.md](../../Lernreise/Physik-CN-Training-L1.md) | Klausur | ✅ 已建 |
+| 2 | CN-Tricks: sechs Verfahren fuer die Physik-Klausur | [Physik-CN-Tricks-L1.md](../../Lernreise/Physik-CN-Tricks-L1.md) | Klausur | ✅ 已建 |
+| 3 | Diagramme lesen, zeichnen und Messfehler beurteilen | [Physik-Diagramme-L1.md](../../Lernreise/Physik-Diagramme-L1.md) | Klausur | ✅ 已建 |
+| 4 | Mechanische Energieerhaltung | [Physik-Energieerhaltung-Mechanik-L1.md](../../Lernreise/Physik-Energieerhaltung-Mechanik-L1.md) | Klausur | ✅ 已建 |
+| 5 | Formelhandbuch Mechanik: dreisprachig und handgerechnet | [Physik-Formeln-L1.md](../../Lernreise/Physik-Formeln-L1.md) | Klausur | ✅ 已建 |
+| 6 | Kinematik: Messung und Diagramme | [Physik-Kinematik-Messung-L1.md](../../Lernreise/Physik-Kinematik-Messung-L1.md) | Klausur | ✅ 已建 |
+| 7 | Newtonsche Gesetze: Kraftzerlegung und Reibung | [Physik-Newton-Dynamik-L1.md](../../Lernreise/Physik-Newton-Dynamik-L1.md) | Klausur | ✅ 已建 |

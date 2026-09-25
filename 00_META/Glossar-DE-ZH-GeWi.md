@@ -780,3 +780,18 @@ tags: [EF, Meta]
 | Mängelwesen | 匮乏存在 | Philosophie | Arnold Gehlen begreift den Menschen als instinktarmes Mängelwesen mit Kulturzwang. |
 | Weltoffenheit | 世界开放性 | Philosophie | Nach Max Scheler zeichnet sich der Mensch durch Geist und Weltoffenheit aus. |
 | Speziesismus | 物种歧视主义 | Philosophie | Peter Singer kritisiert den Speziesismus als Verstoß gegen gleiche Interessenabwägung. |
+| Gleichgewichtspreis | 均衡价格 | SoWi | Im Gleichgewicht entspricht die angebotene der nachgefragten Menge. |
+| Nachfrageüberhang | 需求过剩（供不应求） | SoWi | Ein Höchstpreis erzeugt einen Nachfrageüberhang. |
+| Angebotsüberhang | 供给过剩（供大于求） | SoWi | Ein Mindestpreis erzeugt einen Angebotsüberhang. |
+| Preiselastizität | 价格弹性 | SoWi | Eine geringe Preiselastizität bedeutet eine kaum reagierende Nachfrage. |
+| Höchstpreis | 最高限价 | SoWi | Der Höchstpreis liegt unter dem Gleichgewichtspreis. |
+| Mindestpreis | 最低限价 | SoWi | Der Mindestpreis liegt über dem Gleichgewichtspreis. |
+| Polypol | 完全竞争市场 | SoWi | Im Polypol konkurrieren viele Anbieter miteinander. |
+| Oligopol | 寡头垄断市场 | SoWi | Im Oligopol bestimmen wenige Anbieter den Preis. |
+| Monopol | 垄断市场 | SoWi | Im Monopol fehlt der Wettbewerb. |
+| Allokationsfunktion | 资源配置功能 | SoWi | Die Allokationsfunktion lenkt die Produktionsfaktoren. |
+| Signalfunktion | 信号功能 | SoWi | Die Signalfunktion zeigt die Knappheit eines Gutes an. |
+| Räumungsfunktion | 市场出清功能 | SoWi | Die Räumungsfunktion räumt den Markt im Gleichgewicht. |
+| Mietpreisbremse | 租金管制 | SoWi | Die Mietpreisbremse wirkt als Höchstpreis. |
+| Schattenmarkt | 黑市 | SoWi | Bei einem Höchstpreis entsteht ein Schattenmarkt. |
+| Fehlallokation | 资源配置失误 | SoWi | Ein fixierter Preis führt zu einer Fehlallokation. |

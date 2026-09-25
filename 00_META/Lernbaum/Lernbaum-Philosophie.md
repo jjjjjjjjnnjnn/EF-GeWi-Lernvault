@@ -635,3 +635,16 @@ mindmap
 - 核心转变：学段 EF→EF+Q1+Q2；新增 Methoden-Profil；每个 L3 补应试四行；新增 §3 台阶与 §4 缺口清单（22 项）。
 - ⚠️ 本学科**无中德对照**（按项目设计，CN-Methode 仅适用理科）。
 - ⚠️ 保持诚实的未获取项：`rekonstruieren` 的精确 AFB 归属；SK/MK/UK 完整编号范围。
+
+---
+
+## Lernreise 索引（互动课程 · Lesson-v3）
+
+> 本学科互动课程已全部入库（`Lernreise/`，9 步制：entdecken / ausprobieren / check / szenario + Fehlvorstellung）。下表供学习树挂载与复习排程使用。
+
+| # | Thema (DE) | 课程文件 | Ziel | 状态 |
+|---|---|---|---|---|
+| 1 | Die Sonderstellung des Menschen bei Gehlen und Scheler | [Philo-Anthropologie-Sonderstellung-L1.md](../../Lernreise/Philo-Anthropologie-Sonderstellung-L1.md) | Klausur | ✅ 已建 |
+| 2 | Kants kategorischer Imperativ und die Maximenpruefung | [Philo-Kategorischer-Imperativ-L1.md](../../Lernreise/Philo-Kategorischer-Imperativ-L1.md) | Klausur | ✅ 已建 |
+| 3 | Das utilitaristische Kalkuel und Mills Qualitaetsunterscheidung | [Philo-Utilitarismus-Kalkuel-L1.md](../../Lernreise/Philo-Utilitarismus-Kalkuel-L1.md) | Klausur | ✅ 已建 |
+| 4 | Utilitarismus vs Kant | [Philo-Utilitarismus-Kant-L2.md](../../Lernreise/Philo-Utilitarismus-Kant-L2.md) | Klausur | ✅ 已建 |

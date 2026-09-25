@@ -7,7 +7,7 @@ datum: 2026-09-22
 tags: [EF, Meta]
 ---
 
-# Methoden-Quellen — 16 篇方法论文表（只链不抄）
+# Methoden-Quellen — 18 篇方法论文表（只链不抄）
 
 > 中文说明：本页是 `Lernmethoden-Evidenz.md` v3 的来源明细，只写原创一句话总结 + 链接，不抄论文原文句子。
 > 本地 PDF（如有）放 `_Downloads/_Papers/`（gitignored，不进库），每份配同名 `.quelle.txt`（来源+许可+日期），清单真相源见 `Download-Quellen.md`。
@@ -49,6 +49,13 @@ tags: [EF, Meta]
 | D4 | Cromley et al. 2025 | 元分析（多媒体设计） | 设计原则 g 约 0.37，一图一概念 | [Scholar](https://scholar.google.com/scholar?q=Cromley+2025+multimedia+design+meta-analysis) | `_Downloads/_Papers/Cromley-2025-multimedia.pdf` |
 | D5 | Ma et al. 2014 | J. Educ. Psych.（ITS 元分析） | 机器 tutor 胜大班 g 约 0.42、胜普通机辅 0.57；Bloom 2σ 已被证伪，按 0.5σ 设期望 | [Scholar](https://scholar.google.com/scholar?q=Ma+Adesope+Nesbit+Liu+2014+intelligent+tutoring+meta-analysis) | `_Downloads/_Papers/Ma-2014-ITS-meta.pdf` |
 
-## Weitere Quellen（不在 16 篇内，Evidenz 沿用）
+## E. 故事与冷知识的边界（2）
+
+| # | 作者年份 | 出处 | 效应量一句话（原创总结） | 链接 | 本地 |
+|---|---|---|---|---|---|
+| E1 | Rey 2012 | Educational Research Review（元分析） | "有趣但无关"的附加信息（seductive details）损害学习；一致性/相关性是关键调节变量 | [DOI](https://doi.org/10.1016/j.edurev.2012.10.001) | — |
+| E2 | Sundararajan & Adesope 2020 | Educational Psychology Review 32, 707–734（元分析） | 同上方向；标题即结论——"Keep it Coherent"，附加信息必须服务学习目标 | [Springer](https://doi.org/10.1007/s10648-020-09522-4) | — |
+
+## Weitere Quellen（不在 18 篇内，Evidenz 沿用）
 
 - von Hippel 2024, Education Next（two-sigma 证伪讨论）· FSRS（open-spaced-repetition Wiki）· SuperMemo Guru（forgetting index）· Vectara FaithJudge 2025（arXiv:2505.04847）· JIM-Studie 2024/2025（mpfs.de）

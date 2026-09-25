@@ -1261,3 +1261,18 @@ mindmap
   - ➕ **新增 §3 Abitur-Übergang**：11 级台阶表，含最高价值台阶（MWG 从算 K_c → 构建 K_S）、分子间作用力功能升级、静态结构 → 电子推演、酸碱领域断层、电化学全新领域、动词限定词消失、GK/LK 四条硬分界线、Le Chatelier 回接正反馈环、题型轴（材料/实验绑定 + 4 选 3 + 255/300 min）、表征双轨、口试 ≥ 宽任务要求。
   - ➕ **新增 §4 笔记缺口清单**：现有 12 篇按 IF 归类 + **26 项缺口**（★★★ 优先 7 项），含三项指定产出（MWG→K_S 推导链 / 电化学四要素 Raster / 升级 Formelhandbuch 为物质的量枢纽网络）与 ⛔ 三项明确不做（盐类水解 / 物质结构与性质整册 / 配合物系统板块）。
   - 🔧 保留原有 EF 内容（24 个节点的中文导读与 Klausur-Anbindung）并按新格式升级；标注 CN-Methode 10 的禁入判据以防后续 agent 误引入。
+---
+
+## Lernreise 索引（互动课程 · Lesson-v3）
+
+> 本学科互动课程已全部入库（`Lernreise/`，9 步制：entdecken / ausprobieren / check / szenario + Fehlvorstellung）。下表供学习树挂载与复习排程使用。
+
+| # | Thema (DE) | 课程文件 | Ziel | 状态 |
+|---|---|---|---|---|
+| 1 | CN-Formelhandbuch: sechs Formelkarten | [Chemie-CN-Formeln-L1.md](../../Lernreise/Chemie-CN-Formeln-L1.md) | Klausur | ✅ 已建 |
+| 2 | CN-Training: Zeitlimit und EHZ-Selbstbewertung | [Chemie-CN-Training-L1.md](../../Lernreise/Chemie-CN-Training-L1.md) | Klausur | ✅ 已建 |
+| 3 | CN-Tricks: sechs Loesungsverfahren | [Chemie-CN-Tricks-L1.md](../../Lernreise/Chemie-CN-Tricks-L1.md) | Klausur | ✅ 已建 |
+| 4 | Chemisches Gleichgewicht und Le Chatelier | [Chemie-Chemisches-Gleichgewicht-L1.md](../../Lernreise/Chemie-Chemisches-Gleichgewicht-L1.md) | Klausur | ✅ 已建 |
+| 5 | Chemische Grundlagen: Atombau, Bindung, Gleichungen, Mol | [Chemie-Grundlagen-L1.md](../../Lernreise/Chemie-Grundlagen-L1.md) | Klausur | ✅ 已建 |
+| 6 | Saeure-Base-Gleichgewichte und pH-Wert | [Chemie-Saeure-Base-pH-L1.md](../../Lernreise/Chemie-Saeure-Base-pH-L1.md) | Klausur | ✅ 已建 |
+| 7 | Zwischenmolekulare Kraefte und Stoffeigenschaften | [Chemie-Zwischenmolekulare-Kraefte-L1.md](../../Lernreise/Chemie-Zwischenmolekulare-Kraefte-L1.md) | Klausur | ✅ 已建 |

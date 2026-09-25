@@ -298,7 +298,7 @@ KLP 列出 12 项 übergreifende Bewertungskriterien（上位评分标准），*
 | 类型 | 已有笔记 | 说明 |
 |---|---|---|
 | **跨 IF：参数与分析语言层**（KLP 的「共享基础」） | [Beethoven-Motiv-Hoeren](../../../09_Musik-mündl/Texte-Analyse/Beethoven-Motiv-Hoeren.md) · [Lernreise Musik-Hoeranalyse-L1](../../../Lernreise/Musik-Hoeranalyse-L1.md) | 动机三要素、参数列表（Rhythmus/Melodie/Harmonie/Klangfarbe/Dynamik/Form）→ 对应 KLP 的 **Ordnungssysteme musikalischer Parameter**。**这是 3 个 IF 共同的分析语言，不归属单一 IF** [据推断] |
-| **跨 IF：口试表达训练** | [Lernreise Musik-Hoeranalyse-L1](../../../Lernreise/Musik-Hoeranalyse-L1.md)（Level 1，XP 60，`ziel: Muendlich`） | 关键句式 `Ich höre … (Parameter). Das wirkt …, weil … (Fachbegriff).` —— 直接服务 **Rezeption → Reflexion** 的过渡，与 §4.2 口试 Teil 1（连贯演讲）高度契合 [据推断] |
+| **跨 IF：口试表达训练** | [Lernreise Musik-Hoeranalyse-L1](../../../Lernreise/Musik-Hoeranalyse-L1.md)（Level 1，XP 100，`ziel: Muendlich`） | 关键句式 `Ich höre … (Parameter). Das wirkt …, weil … (Fachbegriff).` —— 直接服务 **Rezeption → Reflexion** 的过渡，与 §4.2 口试 Teil 1（连贯演讲）高度契合 [据推断] |
 | **课程层：EF 概览** | [09_Musik-mündl/Lehrplan.md](../../../09_Musik-mündl/Lehrplan.md) | 列出 EF 三重点（Hören & Beschreiben / Analysieren / Sprechen & Reflektieren）与口试流程（Hörbeispiel → Beschreibung → Analysefrage → Vortrag/Gespräch）。**注意**：这是**教师侧 EF 安排**，非 KLP 条目 [已验证] |
 | **资源索引** | [09_Musik-mündl/Ressourcen.md](../../../09_Musik-mündl/Ressourcen.md) | 材料来源清单 |
 | **词汇/Anki** | [Musik-EF-Basis.csv](../../../09_Musik-mündl/Vokabeln-Anki/Musik-EF-Basis.csv) | EF 基础术语卡 |

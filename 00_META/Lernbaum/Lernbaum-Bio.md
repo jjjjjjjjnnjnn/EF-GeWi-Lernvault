@@ -1015,3 +1015,19 @@ mindmap
 - 2026-09-24：创建（S7 Abi-Baum 重构）。由 EF 版（194 行）升级为 EF→Abitur 版。基于 `Bio-Oberstufe.md`（Heft 4722 官方 KLP）、`Bio-DE-CN-Mapping.md`（9 条技法卡）、`Operatoren-NRW-Alle-Faecher.md`（Bio 29 动词）、`Klausur-Formate`、`Lernmethoden-Evidenz.md`。
 - 核心转变：学段 EF→EF+Q1+Q2；新增 Methoden-Profil（AFB 权重 / 黄金学习法 / 三大失分点 / 八段笔记模板 / Basiskonzepte 五轴）；每个 L3 补应试四行；新增 8 处 CN-Methode（含 2 处 ⚠️ 合规提示）；新增 §3 台阶与 §4 缺口清单（34 项）。
 - ⚠️ 保持诚实的未获取项：Bio 官方 Operatoren 表标注为「不限」（不分层）；AFB 权重为经验分布 [据推断]。
+
+---
+
+## Lernreise 索引（互动课程 · Lesson-v3）
+
+> 本学科互动课程已全部入库（`Lernreise/`，9 步制：entdecken / ausprobieren / check / szenario + Fehlvorstellung）。下表供学习树挂载与复习排程使用。
+
+| # | Thema (DE) | 课程文件 | Ziel | 状态 |
+|---|---|---|---|---|
+| 1 | Biomembran und Transportmechanismen | [Bio-Biomembran-Transport-L1.md](../../Lernreise/Bio-Biomembran-Transport-L1.md) | Klausur | ✅ 已建 |
+| 2 | CN-Begriffe: dreisprachige Terminologie DE-CN-EN | [Bio-CN-Begriffe-L1.md](../../Lernreise/Bio-CN-Begriffe-L1.md) | Klausur | ✅ 已建 |
+| 3 | CN-Methodentraining mit Zeitlimit und EHZ | [Bio-CN-Training-L1.md](../../Lernreise/Bio-CN-Training-L1.md) | Klausur | ✅ 已建 |
+| 4 | CN-Methoden fuer die Bio-Klausur | [Bio-CN-Tricks-L1.md](../../Lernreise/Bio-CN-Tricks-L1.md) | Klausur | ✅ 已建 |
+| 5 | Enzymaktivitaet und Einflussfaktoren | [Bio-Enzymaktivitaet-Faktoren-L1.md](../../Lernreise/Bio-Enzymaktivitaet-Faktoren-L1.md) | Klausur | ✅ 已建 |
+| 6 | Oekologie: Nische, Population, Energiefluss | [Bio-Oekologie-L1.md](../../Lernreise/Bio-Oekologie-L1.md) | Klausur | ✅ 已建 |
+| 7 | Zellorganellen und Endosymbiontentheorie | [Bio-Zellorganellen-Struktur-L1.md](../../Lernreise/Bio-Zellorganellen-Struktur-L1.md) | Klausur | ✅ 已建 |

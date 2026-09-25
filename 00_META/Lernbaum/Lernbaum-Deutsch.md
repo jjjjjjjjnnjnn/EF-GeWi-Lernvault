@@ -904,3 +904,18 @@ DE: Medien stuetzt vor allem Aufgabenart IV und die mediale Variante von Ia; im 
 
 - 2026-09-24：创建（EF 版 · 旧设计）。覆盖 NRW KLP Deutsch 2023 四 IF，节点含 Operatoren / Klausur-Anbindung / Leitfrage DE-ZH。
 - 2026-09-24：**升级为 Abi-Baum（S7 重构）**。新增 frontmatter `stufe` / `abi_fokus` / `klp_quelle`；新增 §0 Methoden-Profil（AFB 权重表 + 黄金学习法 + 三大失分点 + 笔记结构模板 + 学段口径说明）；全部 L3 节点补齐「应试四行」（中文一句话 / Klausur-Anbindung / Operatoren / Lernweg ZH / Fehlerquelle / 📓 笔记）；新增 Q1-Q2 与 LK 专属节点（Strukturvergleich / Gedichtvergleich / Sprechsituation / Diachron-Synchron / Aufgabenarten I–IV 元层 / Öffentlichkeit-Manipulation / Vernetzte Kommunikation / Literaturumsetzung / Medientheorie 等）；新增 §3 Abitur-Übergang（13 条台阶 + LK 专属台阶 + 口头 Abitur）；新增 §4 笔记缺口清单（7 篇已有 / **16 项缺口** / 按 IF 统计）。依据：`Curriculum/Deutschland/Deutsch-Oberstufe.md`、`Operatoren-NRW-Alle-Faecher.md`（27 动词）、`Klausur-Formate/Klausur-und-Abitur-Formate.md`、`00_META/Lernmethoden-Evidenz.md`。
+
+---
+
+## Lernreise 索引（互动课程 · Lesson-v3）
+
+> 本学科互动课程已全部入库（`Lernreise/`，9 步制：entdecken / ausprobieren / check / szenario + Fehlvorstellung）。下表供学习树挂载与复习排程使用。
+
+| # | Thema (DE) | 课程文件 | Ziel | 状态 |
+|---|---|---|---|---|
+| 1 | Aufgabenarten I-IV und AFB-Gewichtung | [Deutsch-Aufgabenarten-L1.md](../../Lernreise/Deutsch-Aufgabenarten-L1.md) | Klausur | ✅ 已建 |
+| 2 | Szenenanalyse im Drama | [Deutsch-Drama-Szenenanalyse-L1.md](../../Lernreise/Deutsch-Drama-Szenenanalyse-L1.md) | Klausur | ✅ 已建 |
+| 3 | IQB-Training: Analyse und Eroerterung | [Deutsch-IQB-Training-L1.md](../../Lernreise/Deutsch-IQB-Training-L1.md) | Klausur | ✅ 已建 |
+| 4 | Sturm und Drang: Bildlichkeit und Deutungshypothese | [Deutsch-Lyrik-Sturm-und-Drang-L1.md](../../Lernreise/Deutsch-Lyrik-Sturm-und-Drang-L1.md) | Klausur | ✅ 已建 |
+| 5 | Argumentationsstruktur im Sachtext | [Deutsch-Sachtext-Argumentation-L1.md](../../Lernreise/Deutsch-Sachtext-Argumentation-L1.md) | Klausur | ✅ 已建 |
+| 6 | Leserlenkung und Rhetorik im Sachtext | [Deutsch-Sachtextanalyse-L1.md](../../Lernreise/Deutsch-Sachtextanalyse-L1.md) | Klausur | ✅ 已建 |

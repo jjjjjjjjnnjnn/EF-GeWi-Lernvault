@@ -947,3 +947,29 @@ mindmap
 
 - 2026-09-24：创建（EF 版，IF1 不平等 / IF2 政治 / IF3 经济 三分支，无 QP 层）。
 - 2026-09-24（S7 Abi-Baum 升级）：对齐 `../Curriculum/Deutschland/SoWi-Oberstufe.md` 的 **7 个官方 IF**，L1 编号按 KLP 重排（原 IF1 不平等→现 IF3 分支；原 IF3 经济→现 IF1）；新增 frontmatter 三字段 `stufe` / `abi_fokus` / `klp_quelle`；新增 **§0 Methoden-Profil**（AFB 权重 / 黄金学习法 / 三大失分点 / 笔记模板）；全部 L3 补「应试四行」（Klausur-Anbindung / Operatoren 取自 SoWi 官方 29 动词 / Lernweg ZH / Fehlerquelle / 📓 笔记）；新增 **IF4–IF7 全部 QP 节点**；新增 **§3 Abitur-Übergang**（EF→QP 四台阶 + GK/LK×A/B 双轴表 + 形式台阶）；新增 **§4 笔记缺口清单**（QP 22 + EF 3）。原有 EF 内容全部保留并增量增强。
+
+---
+
+## Lernreise 索引（互动课程 · Lesson-v3）
+
+> 本学科互动课程已全部入库（`Lernreise/`，9 步制：entdecken / ausprobieren / check / szenario + Fehlvorstellung）。下表供学习树挂载与复习排程使用。
+
+| # | Thema (DE) | 课程文件 | Ziel | 状态 |
+|---|---|---|---|---|
+| 1 | Betrieb und Mitbestimmung | [SoWi-Betrieb-Mitbestimmung-L1.md](../../Lernreise/SoWi-Betrieb-Mitbestimmung-L1.md) | Klausur | ✅ 已建 |
+| 2 | Grundgesetz und Verfassungsprinzipien | [SoWi-Grundgesetz-L1.md](../../Lernreise/SoWi-Grundgesetz-L1.md) | Klausur | ✅ 已建 |
+| 3 | Identität und Jugend | [SoWi-Identitaet-Jugend-L1.md](../../Lernreise/SoWi-Identitaet-Jugend-L1.md) | Klausur | ✅ 已建 |
+| 4 | Karikaturanalyse in drei Schritten | [SoWi-Karikatur-L1.md](../../Lernreise/SoWi-Karikatur-L1.md) | Klausur | ✅ 已建 |
+| 5 | Konsum und Wirtschaften | [SoWi-Konsum-Wirtschaften-L1.md](../../Lernreise/SoWi-Konsum-Wirtschaften-L1.md) | Klausur | ✅ 已建 |
+| 6 | Parteien und Willensbildung | [SoWi-Parteien-Willensbildung-L1.md](../../Lernreise/SoWi-Parteien-Willensbildung-L1.md) | Klausur | ✅ 已建 |
+| 7 | Partizipation | [SoWi-Partizipation-L1.md](../../Lernreise/SoWi-Partizipation-L1.md) | Klausur | ✅ 已建 |
+| 8 | Soziale Ungleichheit im Ueberblick | [SoWi-Soziale-Ungleichheit-L1.md](../../Lernreise/SoWi-Soziale-Ungleichheit-L1.md) | Klausur | ✅ 已建 |
+| 9 | Sozialisation und Rolle | [SoWi-Sozialisation-Rolle-L1.md](../../Lernreise/SoWi-Sozialisation-Rolle-L1.md) | Klausur | ✅ 已建 |
+| 10 | Verfassungsorgane | [SoWi-Verfassungsorgane-L1.md](../../Lernreise/SoWi-Verfassungsorgane-L1.md) | Klausur | ✅ 已建 |
+| 11 | Wehrhafte Demokratie und Extremismus | [SoWi-Wehrhafte-Demokratie-L1.md](../../Lernreise/SoWi-Wehrhafte-Demokratie-L1.md) | Klausur | ✅ 已建 |
+| 12 | Abitur-Fokus IF4 und IF6 | [Sowi-Abitur-Fokus-L1.md](../../Lernreise/Sowi-Abitur-Fokus-L1.md) | Klausur | ✅ 已建 |
+| 13 | Gesetzgebungsverfahren und Demokratie | [Sowi-Gesetzgebung-Demokratie-L1.md](../../Lernreise/Sowi-Gesetzgebung-Demokratie-L1.md) | Klausur | ✅ 已建 |
+| 14 | Gestaltungsaufgabe: Redebeitrag und Handlungsempfehlung | [Sowi-Gestaltung-L1.md](../../Lernreise/Sowi-Gestaltung-L1.md) | Klausur | ✅ 已建 |
+| 15 | Preismechanismus und Marktformen | [Sowi-Preismechanismus-Markt-L1.md](../../Lernreise/Sowi-Preismechanismus-Markt-L1.md) | Klausur | ✅ 已建 |
+| 16 | Lorenzkurve und Gini-Koeffizient | [Sowi-Soziale-Ungleichheit-Gini-L1.md](../../Lernreise/Sowi-Soziale-Ungleichheit-Gini-L1.md) | Klausur | ✅ 已建 |
+| 17 | Soziale Marktwirtschaft | [Sowi-Soziale-Marktwirtschaft-L1.md](../../Lernreise/Sowi-Soziale-Marktwirtschaft-L1.md) | Klausur | ✅ 已建 |

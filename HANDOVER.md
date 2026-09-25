@@ -17,7 +17,7 @@
 - **vault**（Obsidian 知识库，**内容真相源**）+ `App-EF-Lernvault/`（Tauri 桌面学习软件，**只读 vault、不写回**）。
 - 目标：德国 NRW Gymnasium EF 十科笔试/口试提分，中德双语，**完全离线**。
 - **内容铁律**：所有题目材料只能来自用户自己的笔记原文 —— **超纲率 = 0**。
-- **当前规模**：笔记 **359** · Anki 卡片 **1400** · 术语表 **755 行** · 十科 Abi-Baum 应试树 · 考纲体系（NRW 十科 + 中国理科四科 + 中德映射）。
+- **当前规模**：笔记 **361** · Anki 卡片 **1595** · 互动课程 **70 篇**（`Lernreise/`，十科全覆盖，9 步 Lesson-v3）· 术语表 **797 行** · 十科 Abi-Baum 应试树 · 考纲体系（NRW 十科 + 中国理科四科 + 中德映射）。
 
 ---
 
@@ -44,9 +44,9 @@ cd App-EF-Lernvault && npx vitest run              # 期望 57 套件 / 379 测�
 cd App-EF-Lernvault && npm run build               # 期望 ✓ built
 ```
 
-### 2. 外部 AI 海量内容搜集与批量充实（核心动作）
+### 2. 外部 AI 海量内容搜集与批量充实（核心动作）— ✅ 已完成（2026-09-25）
 
-按 [`00_META/Lehrplan-Content-Spezifikation.md`](00_META/Lehrplan-Content-Spezifikation.md) 中的【即用型外部 AI 批量提示词】，交由外部 AI（Claude 3.5 Sonnet / GPT-4o）批量产出各科紧缺的交互新课（`Lernreise/*.md`）与八段式知识笔记，按规范入库。
+按 [`00_META/Lehrplan-Content-Spezifikation.md`](00_META/Lehrplan-Content-Spezifikation.md) 中的【即用型外部 AI 批量提示词】，已由外部 AI 批量产出各科紧缺的交互新课并入库：`Lernreise/` 由 **5 篇 → 70 篇**（十科全覆盖，9 步 Lesson-v3），十科笔记缺口经审计**已全部收官**。详见 [`00_META/Journal/2026-09-25-lernreise-vollausbau.md`](00_META/Journal/2026-09-25-lernreise-vollausbau.md)。剩余可选动作：两篇旧版 5 步制试点（Musik-Hoeranalyse / Sport-Bewegung-Erklaeren）升级为 9 步；新课程配套 Anki 词卡。
 
 ### 3. 把德语问询稿发给老师 ← **唯一能解锁剩余阻塞的动作**
 
