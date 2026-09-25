@@ -1,3 +1,6 @@
+import { allVaultCards } from "./generatedCards";
+import { allVaultNotes } from "./generatedNotes";
+
 export interface Note {
   id: string;
   fach: string;
@@ -18,7 +21,7 @@ export interface Card {
   dueIn: string;
 }
 
-export const notes: Note[] = [
+const manualNotes: Note[] = [
   {
     id: "sowi-ungleichheit",
     fach: "SoWi",
@@ -381,7 +384,7 @@ export const notes: Note[] = [
   },
 ];
 
-export const cards: Card[] = [
+const presetCards: Card[] = [
   { id: "c1", front: "Soziale Mobilität", back: "社会流动", example: "Bildung ermöglicht intergenerationale soziale Mobilität.", fach: "SoWi", dueIn: "heute" },
   { id: "c2", front: "Chancengerechtigkeit", back: "机会公平", example: "Klausur-Urteile fordern die Explikation von Chancengerechtigkeit.", fach: "SoWi", dueIn: "heute" },
   { id: "c3", front: "TATTE-Formel", back: "德语分析导语五要素", example: "Textsorte, Autor, Titel, Thema, Erscheinungsjahr.", fach: "Deutsch", dueIn: "heute" },
@@ -413,6 +416,38 @@ export const cards: Card[] = [
   { id: "c29", front: "Cultural Contextualization", back: "文化语境释义", example: "Explaining culture-specific concepts like Abitur clearly.", fach: "Englisch", dueIn: "morgen" },
   { id: "c30", front: "Selbstzweckformel", back: "人类自为目的公式", example: "Der Mensch darf niemals bloß als Mittel gebraucht werden.", fach: "Philosophie", dueIn: "heute" },
   { id: "c31", front: "Maximenprüfung", back: "准则普遍化四步检验", example: "Prüfung subjektiver Handlungsmaximen auf Denk- und Wollenswiderspruch.", fach: "Philosophie", dueIn: "in 2 Tagen" },
+];
+
+const existingNoteIds = new Set(manualNotes.map((n) => n.id));
+export const notes: Note[] = [
+  ...manualNotes,
+  ...allVaultNotes
+    .filter((n) => !existingNoteIds.has(n.id))
+    .map((n) => ({
+      id: n.id,
+      fach: n.fach,
+      thema: n.thema,
+      zh: n.zh,
+      operatoren: n.operatoren,
+      klausurrelevant: n.klausurrelevant,
+      bodyDE: n.bodyDE,
+      bodyZH: n.bodyZH,
+    })),
+];
+
+const existingCardFronts = new Set(presetCards.map((c) => c.front.toLowerCase()));
+export const cards: Card[] = [
+  ...presetCards,
+  ...allVaultCards
+    .filter((c) => !existingCardFronts.has(c.front.toLowerCase()))
+    .map((c) => ({
+      id: c.id,
+      front: c.front,
+      back: c.back,
+      example: c.example,
+      fach: c.fach,
+      dueIn: c.dueIn,
+    })),
 ];
 
 export const quizSteps = [
