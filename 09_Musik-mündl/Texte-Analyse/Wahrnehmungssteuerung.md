@@ -200,7 +200,7 @@ stufe: "Q1|Q2"
 ## 7. Vernetzung
 
 - **上游**：IF3《Wirkungsabsichten-und-Stereotype.md》（EF 概念底座）·《Film-und-Werbemusik.md》（Diegese / 四功能 / Leitmotiv）
-- **下游**：IF3 QP《Musik-in-Kontexten.md》（非音乐语境，§4 #12）· IF3 QP《Gestaltung-und-Vertonung.md》（自制操控性配乐，§4 #14，待建）
+- **下游**：IF3 QP《Musik-in-Kontexten.md》（非音乐语境，§4 #12）· IF3 QP《Gestaltung-und-Vertonung.md》（自制操控性配乐，§4 #14，已建）
 - **横向**：IF1《Aesthetische-Konzeptionen.md》（美学构想）· IF2《Paradigmenwechsel.md》（配乐技术史）
 - **口试**：《Muendliche-Pruefung-Training.md》（Aufgabenart I/II 演讲模板）
 - **术语卡**：`Wahrnehmungssteuerung` · `Bild-Ton-Verhältnis` · `Semantisierung` · `Emotionalisierung` · `Erwartungssteuerung` · `Perspektivierung` · `Diegese` · `Manipulation`

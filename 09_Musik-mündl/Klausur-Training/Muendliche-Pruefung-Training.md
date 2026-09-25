@@ -225,7 +225,7 @@ stufe: "EF|Q1|Q2"
 ## 7. Vernetzung
 
 - **上游**：全部 IF 笔记（内容来源）：《Wirkungsabsichten-und-Stereotype.md》·《Film-und-Werbemusik.md》·《Paradigmenwechsel.md》·《Ausdrucksgesten-und-Konventionen.md》·《Klangfarbe-und-Instrumentation.md》
-- **下游**：《Gestaltung-und-Vertonung.md》（QP 创作流程，§4 #14，待建）
+- **下游**：《Gestaltung-und-Vertonung.md》（QP 创作流程，§4 #14，已建）
 - **横向**：Lernreise《Musik-Hoeranalyse-L1.md》（口试句式训练）
 - **术语卡**：`Teil 1 / Vortrag` · `Prüfungsgespräch` · `Aufgabenart I/II/III` · `Erwartungshorizont` · `Roter Faden` · `Gestaltungskonzept`
 

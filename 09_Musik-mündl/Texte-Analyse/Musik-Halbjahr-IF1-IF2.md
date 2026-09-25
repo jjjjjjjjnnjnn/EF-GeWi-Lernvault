@@ -89,7 +89,7 @@ Quelle (nur lokal, keine Weitergabe): `_Downloads/Musik/lehrer-2026-09/` (Folien
 
 ## 6. Lernreise
 
-- `Lernreise/Musik-Sonatenhauptsatzform-L1.md`（待建）
+- [Lernreise/Musik-Sonatenhauptsatzform-L1.md](../../Lernreise/Musik-Sonatenhauptsatzform-L1.md)（已建）
 
 ## 7. Fehlerlog
 

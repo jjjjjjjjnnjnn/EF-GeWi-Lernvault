@@ -198,7 +198,7 @@ stufe: "Q1|Q2"
 ## 7. Vernetzung
 
 - **上游**：EF 层《Musik-Halbjahr-IF1-IF2.md》（维也纳古典/奏鸣曲式锚点）；共享基础层《Klangfarbe-und-Instrumentation.md》
-- **下游**：《Gattungsmerkmale-im-Kontext.md》（IF2 QP，§4 #8，待建）· IF1 QP《Aesthetische-Konzeptionen.md》（§4 #3，待建）
+- **下游**：《Gattungsmerkmale-im-Kontext.md》（IF2 QP，§4 #8，已建）· IF1 QP《Aesthetische-Konzeptionen.md》（§4 #3，已建）
 - **横向**：IF3《Wirkungsabsichten-und-Stereotype.md》（套路的历史成因）
 - **口试**：《Muendliche-Pruefung-Training.md》（Aufgabenart II 演讲模板）
 - **术语卡**：`Paradigma` · `Paradigmenwechsel` · `Stilwandel` · `Kompositionsprinzip` · `Funktionswandel` · `Aufführungspraxis`

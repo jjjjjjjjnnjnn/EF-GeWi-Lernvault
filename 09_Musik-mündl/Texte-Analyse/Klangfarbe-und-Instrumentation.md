@@ -195,7 +195,7 @@ stufe: "EF|Q1|Q2"
 
 - **上游**：《Beethoven-Motiv-Hoeren.md》（动机识别）；《Musik-Hoeranalyse-L1.md》（Lernreise 参数听辨）
 - **下游**：所有 IF 笔记均以本层为底座：IF1《Ausdrucksgesten-und-Konventionen.md》· IF2《Paradigmenwechsel.md》· IF3《Film-und-Werbemusik.md》
-- **横向**：IF2 音响想象（Klangvorstellungen，§4 #5，待建）
+- **横向**：IF2 音响想象（Klangvorstellungen，§4 #5，已建）
 - **口试**：《Muendliche-Pruefung-Training.md》（参数描述模板）
 - **术语卡**：`Klangfarbe` · `Instrumentation` · `sordino` · `pizzicato` · `sul ponticello` · `Tutti` · `Register`
 

@@ -194,8 +194,8 @@ stufe: "Q1|Q2"
 ## 7. Vernetzung
 
 - **上游**：IF3《Wirkungsabsichten-und-Stereotype.md》（EF 概念底座）·《Film-und-Werbemusik.md》·《Wahrnehmungssteuerung.md》（操控机制）
-- **下游**：IF3 QP《Gestaltung-und-Vertonung.md》（为某语境自制音乐，§4 #14，待建）
-- **横向**：IF2《Gattungsmerkmale-im-Kontext.md》（体裁的社会语境，§4 #8，待建）· IF1《Aesthetische-Konzeptionen.md》（美学构想）
+- **下游**：IF3 QP《Gestaltung-und-Vertonung.md》（为某语境自制音乐，§4 #14，已建）
+- **横向**：IF2《Gattungsmerkmale-im-Kontext.md》（体裁的社会语境，§4 #8，已建）· IF1《Aesthetische-Konzeptionen.md》（美学构想）
 - **口试**：《Muendliche-Pruefung-Training.md》（Aufgabenart II 演讲模板）
 - **术语卡**：`außermusikalischer Kontext` · `Autonomie` · `Dienstfunktion` · `Programmmusik` · `Absolute Musik` · `Gebrauchsmusik` · `Ritualmusik` · `Funktionalisierung`
 

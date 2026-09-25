@@ -187,7 +187,7 @@ stufe: "EF"
 ## 7. Vernetzung
 
 - **上游**：共享基础层《Klangfarbe-und-Instrumentation.md》（音色手段）；《Beethoven-Motiv-Hoeren.md》（动机识别）
-- **下游**：IF1 QP《Aesthetische-Konzeptionen.md》（§4 #3，待建）·《Sprachcharakter-von-Musik.md》（§4 #4，待建）
+- **下游**：IF1 QP《Aesthetische-Konzeptionen.md》（§4 #3，已建）·《Sprachcharakter-von-Musik.md》（§4 #4，已建）
 - **横向**：IF3《Wirkungsabsichten-und-Stereotype.md》（惯例→套路）· IF2《Paradigmenwechsel.md》（惯例的历史来源）
 - **口试**：《Muendliche-Pruefung-Training.md》（Aufgabenart I 演讲模板）
 - **术语卡**：`Ausdrucksgeste` · `Konvention` · `Seufzer/Lamento` · `Passus duriusculus` · `Hornruf` · `Affektenlehre` · `Musica poetica`

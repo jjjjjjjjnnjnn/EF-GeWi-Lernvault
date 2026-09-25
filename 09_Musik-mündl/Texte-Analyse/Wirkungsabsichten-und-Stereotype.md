@@ -79,7 +79,7 @@ stufe: "EF"
 
 > *Klausur-Satz*: `Ich unterscheide die EF-Ebene des Benennens von der QP-Ebene des Analysierens der Wahrnehmungssteuerung; das wirkt präzise, weil derselbe Inhaltsfeld-Begriff je nach Anforderungsbereich anders zu bearbeiten ist.`
 
-> ⚠️ 口试含义：题目**不得只限单一学期**，因此**EF 与 QP 两层都可能被问到**。本笔记 EF 层打底，QP 层由《Wahrnehmungssteuerung.md》《Musik-in-Kontexten.md》（§4 #11/#12，待建）承接。
+> ⚠️ 口试含义：题目**不得只限单一学期**，因此**EF 与 QP 两层都可能被问到**。本笔记 EF 层打底，QP 层由《Wahrnehmungssteuerung.md》《Musik-in-Kontexten.md》（§4 #11/#12，已建）承接。
 
 ---
 

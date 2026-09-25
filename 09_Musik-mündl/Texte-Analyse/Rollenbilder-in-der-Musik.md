@@ -183,7 +183,7 @@ stufe: "EF"
 ## 7. Vernetzung
 
 - **上游**：共享基础层《Klangfarbe-und-Instrumentation.md》（音色的惯例联想）
-- **下游**：IF2 QP《Gattungsmerkmale-im-Kontext.md》（体裁的社会语境，§4 #8，待建）· IF3《Film-und-Werbemusik.md》（当代性别套路）
+- **下游**：IF2 QP《Gattungsmerkmale-im-Kontext.md》（体裁的社会语境，§4 #8，已建）· IF3《Film-und-Werbemusik.md》（当代性别套路）
 - **横向**：IF2《Klangvorstellungen-Epochenvergleich.md》（时代图景）· IF1《Ausdrucksgesten-und-Konventionen.md》（惯例系统）
 - **口试**：《Muendliche-Pruefung-Training.md》（Teil 2 接话模板）
 - **术语卡**：`Rollenbild` · `Geschlechterrolle` · `Stimmlage` · `Klangtopos` · `Libretto` · `Sujet` · `Subjekt/Objekt`

@@ -194,7 +194,7 @@ stufe: "EF|Q1|Q2"
 ## 7. Vernetzung
 
 - **上游**：共享基础层《Beethoven-Motiv-Hoeren.md》（动机三要素）·《Musik-Halbjahr-IF1-IF2.md》（维也纳古典/奏鸣曲式单锚点）
-- **下游**：IF2 QP《Paradigmenwechsel.md》（把锚点升级为范式判据）· IF2 QP《Gattungsmerkmale-im-Kontext.md》（§4 #8，待建）
+- **下游**：IF2 QP《Paradigmenwechsel.md》（把锚点升级为范式判据）· IF2 QP《Gattungsmerkmale-im-Kontext.md》（§4 #8，已建）
 - **横向**：IF2《Rollenbilder-in-der-Musik.md》（时代角色图景）· IF1《Ausdrucksgesten-und-Konventionen.md》（时代惯例）
 - **口试**：《Muendliche-Pruefung-Training.md》（Aufgabenart I 演讲模板）
 - **术语卡**：`Klangvorstellung` · `Stilmerkmal` · `Gattungsmerkmal` · `Generalbass` · `Affektenlehre` · `thematische Arbeit` · `Chromatik` · `Atonalität` · `Zwölftontechnik` · `Klangfläche`
