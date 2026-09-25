@@ -105,7 +105,7 @@ tags: [EF, Deutsch]
 
 ## 6. Lernreise
 
-- `Lernreise/Deutsch-Aufgabenarten-L1.md`（待建）
+- [Lernreise/Deutsch-Aufgabenarten-L1.md](../../Lernreise/Deutsch-Aufgabenarten-L1.md)（已建）
 
 ## 7. Fehlerlog
 

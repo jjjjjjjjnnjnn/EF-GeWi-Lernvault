@@ -144,7 +144,7 @@ tags: [EF, Deutsch]
 
 ## 6. Lernreise
 
-- `Lernreise/Deutsch-Sachtextanalyse-L1.md`（待建，本课暂无互动脚本）
+- [Lernreise/Deutsch-Sachtextanalyse-L1.md](../../Lernreise/Deutsch-Sachtextanalyse-L1.md)（已建，本课暂无互动脚本）
 
 ## 7. Fehlerlog
 

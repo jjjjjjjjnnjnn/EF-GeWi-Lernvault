@@ -124,7 +124,7 @@ tags: [EF, Deutsch]
 
 ## 6. Lernreise
 
-- `Lernreise/Deutsch-IQB-Training-L1.md`（待建）
+- [Lernreise/Deutsch-IQB-Training-L1.md](../../Lernreise/Deutsch-IQB-Training-L1.md)（已建）
 
 ## 7. Fehlerlog
 
