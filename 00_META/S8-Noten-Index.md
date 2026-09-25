@@ -7,10 +7,10 @@ datum: 2026-09-25
 tags: [EF, Meta, S8]
 ---
 
-# S8 笔记生产索引（224 篇，十科施工图已全部完成）
+# S8 笔记生产索引（225 篇，十科施工图已全部完成）
 
 > 由 [Notenproduktion-Plan](Lernbaum/00-Notenproduktion-Plan.md) 的施工图产出。按学科分组；链接从本文件（`00_META/`）出发。
-> 全库笔记 127 → **352 篇**；Anki 卡片 534 → **1396 张**。
+> 全库笔记 127 → **356 篇**；Anki 卡片 534 → **1400 张**。
 
 
 ## 01_Deutsch
@@ -190,6 +190,7 @@ tags: [EF, Meta, S8]
 - [Philosophie-Wissenschaft-Religion](../07_Philosophie/Philosophie-Wissenschaft-Religion.md)
 - [Popper-Falsifikation](../07_Philosophie/Popper-Falsifikation.md)
 - [Reichweite-menschlicher-Erkenntnis](../07_Philosophie/Reichweite-menschlicher-Erkenntnis.md)
+- [Sonderstellung-des-Menschen](../07_Philosophie/Sonderstellung-des-Menschen.md)
 - [Verantwortung-und-Anwendungsethik](../07_Philosophie/Verantwortung-und-Anwendungsethik.md)
 - [Wissenschaftliche-Erkenntnistheorie](../07_Philosophie/Wissenschaftliche-Erkenntnistheorie.md)
 

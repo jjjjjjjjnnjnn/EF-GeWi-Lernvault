@@ -776,3 +776,7 @@ tags: [EF, Meta]
 | Phasenmodell | 分相模型 | Sport | Das Phasenmodell teilt die Bewegung in Vorbereitung, Hauptphase und Endphase. |
 | Trainingsplan | 训练计划 | Sport | Der Trainingsplan folgt den Schritten Ist-Analyse, Zielsetzung, Planung und Kontrolle. |
 | Tapering | 赛前减量 | Sport | Beim Tapering sinkt der Umfang, während die Intensität erhalten bleibt. |
+| Sonderstellung | 人的特殊地位 | Philosophie | Die Sonderstellung des Menschen betont seine Vernunftbegabung gegenüber dem Tier. |
+| Mängelwesen | 匮乏存在 | Philosophie | Arnold Gehlen begreift den Menschen als instinktarmes Mängelwesen mit Kulturzwang. |
+| Weltoffenheit | 世界开放性 | Philosophie | Nach Max Scheler zeichnet sich der Mensch durch Geist und Weltoffenheit aus. |
+| Speziesismus | 物种歧视主义 | Philosophie | Peter Singer kritisiert den Speziesismus als Verstoß gegen gleiche Interessenabwägung. |

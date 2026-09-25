@@ -575,7 +575,7 @@ mindmap
 | # | L3 节点 | 目标笔记文件 | 状态 |
 |---|---|---|---|
 | **EF · IF1（重大缺口）** | | | |
-| 1 | Mensch-Tier-Abgrenzung | `07_Philosophie/Sonderstellung-des-Menschen.md` | ⚠️ 缺口 |
+| 1 | Mensch-Tier-Abgrenzung | [`Sonderstellung-des-Menschen.md`](../../../07_Philosophie/Sonderstellung-des-Menschen.md) | ✅ 已有 |
 | 2 | Kulturrelativismus vs Universalismus | `07_Philosophie/Kulturrelativismus-vs-Universalismus.md` | ⚠️ 缺口（★★★ EF 优先） |
 | 3 | Umfang und Grenzen staatlichen Handelns | `07_Philosophie/Grenzen-staatlichen-Handelns.md` | ⚠️ 缺口（★★★ EF 优先，QP 地基） |
 | 4 | Paternalismus | `07_Philosophie/Paternalismus.md` | ⚠️ 缺口 |
