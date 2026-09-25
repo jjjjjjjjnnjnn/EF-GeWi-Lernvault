@@ -89,7 +89,7 @@ Quelle (nur lokal): `10_Sport-mündl/Lehrplan.md` (Praxis Leichtathletik, Theori
 
 ## 6. Lernreise
 
-- `Lernreise/Sport-Weitsprung-L1.md`（待建）
+- [Lernreise/Sport-Weitsprung-L1.md](../../Lernreise/Sport-Weitsprung-L1.md)（已建）
 
 ## 7. Fehlerlog
 

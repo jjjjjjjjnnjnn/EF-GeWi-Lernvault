@@ -102,3 +102,18 @@ die Bewegungsanalyse;动作分析;Die Bewegungsanalyse beschreibt den Ablauf.;Sp
 die Bewegungsbeschreibung;动作描述;Die Bewegungsbeschreibung bleibt sachlich.;Sport;Bewegungsanalyse
 die Bewegungsbeobachtung;动作观察;Die Bewegungsbeobachtung folgt Kriterien.;Sport;Bewegungsanalyse
 das Qualitaetsmerkmal;质量特征;Das Qualitaetsmerkmal beschreibt die Ausfuehrung.;Sport;Bewegungsanalyse
+Drei-Phasen-Struktur;动作三相;Mit der Drei-Phasen-Struktur zerlege ich jede Bewegung in drei Teile.;Sport;Bewegungsanalyse
+Vorbereitungsphase;准备相;In der Vorbereitungsphase sammelt der Sportler Kraft und richtet sich aus.;Sport;Bewegungsanalyse
+Hauptphase;主相;Die Hauptphase entscheidet ueber das Ergebnis der Bewegung.;Sport;Bewegungsanalyse
+Endphase;结束相;Die Endphase faengt die Bewegung ab und stabilisiert den Koerper.;Sport;Bewegungsanalyse
+Fehlerbild;典型错误;Zu jedem Fehlerbild gehoert eine passende Korrektur.;Sport;Bewegungsanalyse
+Superkompensation;超量恢复;Nach der Erholung steigt die Leistung durch Superkompensation ueber das Ausgangsniveau.;Sport;Superkompensation
+Belastung;负荷;Jede Belastung setzt einen Reiz fuer den Koerper.;Sport;Superkompensation
+Ermuedung;疲劳;Nach harter Belastung sinkt die Leistung durch Ermuedung.;Sport;Superkompensation
+Uebertraining;过度训练;Zu dichte Reize fuehren zum Uebertraining.;Sport;Superkompensation
+optimale Relation von Belastung und Erholung;负荷—恢复最优关系;Nach der optimalen Relation von Belastung und Erholung folgt der naechste Reiz erst nach genug Pause.;Sport;Superkompensation
+Beobachtungsbogen;观察记录表;Mit dem Beobachtungsbogen notiere ich pro Phase den Beobachtungsschwerpunkt.;Sport;Bewegungsanalyse
+Absprung;起跳;Der Absprung ist die Hauptphase des Weitsprungs.;Sport;Weitsprung
+Flugphase;腾空相;In der Flugphase kann der Sportler nur die Haltung optimieren.;Sport;Weitsprung
+Koerper-Schwerpunkt;身体重心;Nach dem Absprung folgt der Koerper-Schwerpunkt einer festen Parabel.;Sport;Weitsprung
+Horizontal- und Vertikalgeschwindigkeit;水平/垂直速度;Horizontal- und Vertikalgeschwindigkeit bestimmen zusammen die Flugkurve.;Sport;Weitsprung
