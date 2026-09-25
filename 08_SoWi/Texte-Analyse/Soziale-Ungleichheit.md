@@ -65,7 +65,7 @@ tags: [EF, SoWi, Ungleichheit]
 
 ## 6. Lernreise
 
-- `Lernreise/SoWi-Soziale-Ungleichheit-L1.md`（待建：entdecken三资本 → ausprobieren漏斗图读数 → check三数 → szenario：Mindestlohn-Plädoyer）
+- [Lernreise/SoWi-Soziale-Ungleichheit-L1.md](../../Lernreise/SoWi-Soziale-Ungleichheit-L1.md)（已建：entdecken三资本 → ausprobieren漏斗图读数 → check三数 → szenario：Mindestlohn-Plädoyer）
 
 ## 7. Fehlerlog
 

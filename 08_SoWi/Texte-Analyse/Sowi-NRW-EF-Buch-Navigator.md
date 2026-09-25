@@ -16,17 +16,17 @@ tags: [EF, SoWi]
 
 | Buch-Kapitel | 内容 | vault笔记落点 | 状态 |
 |---|---|---|---|
-| 1 Zukunft/Identität Jugendlicher | Werte, Identitätsentwicklung, Social Media, multikulturelle Gesellschaft | Soziologie基础；vault首篇可从1.2 Sozialisation切入 | 待写 |
-| 2 Sozialisation & Rolle | Sozialisation, Mutter-Kind, Schule, Rollenbegriff, Peer-Groups | `Sozialisation-Rolle.md`（待建） | 待写 |
-| 3 Grundgesetz & Demokratie | Grundrechte, Verfassungsprinzipien, Ideengeschichte | `Grundgesetz-Verfassungsprinzipien.md`（待建；bpb Grundgesetz已下） | 待写 |
-| 4 Verfassungsorgane | Gesetzgebung, Erbschaftssteuer-Fall, Wahlrecht-Reform | `Verfassungsorgane.md`（待建） | 待写 |
-| 5 Parteien & Willensbildung | Leitideen, Wahlprogramme Klima, Volksparteien, Medien | `Parteien-Willensbildung.md`（待建） | 待写 |
-| 6 Partizipation | Engagement Jugend, direkte Demokratie, Bürgerräte | `Partizipation.md`（待建） | 待写 |
-| 7 Extremismus & wehrhafte Demokratie | Rechts-/Links-/islamistischer Extremismus, NPD/AfD, Populismus | `Wehrhafte-Demokratie.md`（待建） | 待写 |
-| 8 Konsum & Wirtschaften | Bedürfnisse, Rationalität, Konsumentensouveränität, Nachhaltigkeit | `Konsum-Wirtschaften.md`（待建） | 待写 |
-| 9 Soziale Marktwirtschaft | freie Marktwirtschaft, Soziale/sozial-ökologische Marktwirtschaft | `Soziale-Marktwirtschaft.md`（待建） | 待写 |
-| 10 Betrieb & Mitbestimmung | Shareholder/Stakeholder, Mitbestimmung, Tarifpolitik, Arbeit 4.0 | `Betrieb-Mitbestimmung.md`（待建） | 待写 |
-| 11 Marktwirtschaft in der Krise | Wettbewerb, Mindestlohn, Energiewirtschaft/Windenergie | `Marktwirtschaft-Krise.md`（待建） | 待写 |
+| 1 Zukunft/Identität Jugendlicher | Werte, Identitätsentwicklung, Social Media, multikulturelle Gesellschaft | Soziologie基础；vault首篇可从1.2 Sozialisation切入 | 已写 |
+| 2 Sozialisation & Rolle | Sozialisation, Mutter-Kind, Schule, Rollenbegriff, Peer-Groups | `Sozialisation-Rolle.md`（已建） | 已写 |
+| 3 Grundgesetz & Demokratie | Grundrechte, Verfassungsprinzipien, Ideengeschichte | `Grundgesetz-Verfassungsprinzipien.md`（已建；bpb Grundgesetz已下） | 已写 |
+| 4 Verfassungsorgane | Gesetzgebung, Erbschaftssteuer-Fall, Wahlrecht-Reform | `Verfassungsorgane.md`（已建） | 已写 |
+| 5 Parteien & Willensbildung | Leitideen, Wahlprogramme Klima, Volksparteien, Medien | `Parteien-Willensbildung.md`（已建） | 已写 |
+| 6 Partizipation | Engagement Jugend, direkte Demokratie, Bürgerräte | `Partizipation.md`（已建） | 已写 |
+| 7 Extremismus & wehrhafte Demokratie | Rechts-/Links-/islamistischer Extremismus, NPD/AfD, Populismus | `Wehrhafte-Demokratie.md`（已建） | 已写 |
+| 8 Konsum & Wirtschaften | Bedürfnisse, Rationalität, Konsumentensouveränität, Nachhaltigkeit | `Konsum-Wirtschaften.md`（已建） | 已写 |
+| 9 Soziale Marktwirtschaft | freie Marktwirtschaft, Soziale/sozial-ökologische Marktwirtschaft | `Soziale-Marktwirtschaft.md`（已建） | 已写 |
+| 10 Betrieb & Mitbestimmung | Shareholder/Stakeholder, Mitbestimmung, Tarifpolitik, Arbeit 4.0 | `Betrieb-Mitbestimmung.md`（已建） | 已写 |
+| 11 Marktwirtschaft in der Krise | Wettbewerb, Mindestlohn, Energiewirtschaft/Windenergie | `Marktwirtschaft-Krise.md`（已建） | 已写 |
 
 ## 重要发现：Soziale Ungleichheit 在书里没有独立章
 

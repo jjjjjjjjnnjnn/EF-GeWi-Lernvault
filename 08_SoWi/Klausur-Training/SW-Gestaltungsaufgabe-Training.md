@@ -94,7 +94,7 @@ tags: [EF, SoWi]
 
 ## 6. Lernreise
 
-- `Lernreise/Sowi-Gestaltung-L1.md`（待建：entdecken 两格式对照 → ausprobieren 鉴定人两条计时 → check 发言稿三段 → szenario：30 分钟 Gestaltung 全真）
+- [Lernreise/Sowi-Gestaltung-L1.md](../../Lernreise/Sowi-Gestaltung-L1.md)（已建：entdecken 两格式对照 → ausprobieren 鉴定人两条计时 → check 发言稿三段 → szenario：30 分钟 Gestaltung 全真）
 
 ## 7. Fehlerlog
 

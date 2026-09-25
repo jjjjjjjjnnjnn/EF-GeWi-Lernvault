@@ -131,7 +131,7 @@ tags: [EF, SoWi]
 
 ## 6. Lernreise
 
-- `Lernreise/SoWi-Karikatur-L1.md`（待建：entdecken三步法 → ausprobieren Fall 2 描述计时 → check Fall 3 → szenario：考场15分钟漫画题）
+- [Lernreise/SoWi-Karikatur-L1.md](../../Lernreise/SoWi-Karikatur-L1.md)（已建：entdecken三步法 → ausprobieren Fall 2 描述计时 → check Fall 3 → szenario：考场15分钟漫画题）
 
 ## 7. Fehlerlog
 

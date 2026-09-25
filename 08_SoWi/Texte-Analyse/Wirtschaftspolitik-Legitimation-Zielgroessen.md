@@ -191,7 +191,7 @@ stufe: "Q1|Q2"
 ## 7. Vernetzung
 
 - **上游**：EF《Soziale-Marktwirtschaft》（Staat 三活：定规则/当裁判/兜底线）
-- **下游**：`Wirtschaftspolitische-Konzeptionen.md`（构想如何选目标优先序）· `IF4xIF6-Synthese.md`（失业作为交叉点）· 待建《Wirtschaftspolitik-Instrumente.md》
+- **下游**：`Wirtschaftspolitische-Konzeptionen.md`（构想如何选目标优先序）· `IF4xIF6-Synthese.md`（失业作为交叉点）· 已建《Wirtschaftspolitik-Instrumente.md》
 - **横向**：IF6《Sozialstaat-Kontroverse》（再分配作为 Legitimation 理由）
 - **术语卡**：Magisches Viereck / Zielkonflikt / Marktversagen / Staatsversagen / Legitimation
 

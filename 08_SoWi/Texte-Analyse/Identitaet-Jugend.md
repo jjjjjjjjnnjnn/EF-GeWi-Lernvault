@@ -61,7 +61,7 @@ tags: [EF, SoWi, Soziologie]
 
 ## 6. Lernreise
 
-- `Lernreise/SoWi-Identitaet-Jugend-L1.md`（待建：entdecken六模型 → ausprobieren Shell表读数 → check → szenario：Abiball-Wertewandel debattieren）
+- [Lernreise/SoWi-Identitaet-Jugend-L1.md](../../Lernreise/SoWi-Identitaet-Jugend-L1.md)（已建：entdecken六模型 → ausprobieren Shell表读数 → check → szenario：Abiball-Wertewandel debattieren）
 
 ## 7. Fehlerlog
 

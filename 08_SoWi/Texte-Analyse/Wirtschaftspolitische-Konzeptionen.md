@@ -191,7 +191,7 @@ stufe: "Q1|Q2"
 ## 7. Vernetzung
 
 - **上游**：EF 篇《Soziale-Marktwirtschaft》（IF1 → IF4 的唯一概念桥）· KLP IF4 `Wirtschaftspolitische Konzeptionen` [已验证]
-- **下游**：`Wirtschaftspolitik-Legitimation-Zielgroessen.md`（Magisches Viereck）· `IF4xIF6-Synthese.md`（分配政策交叉）· 待建《Wirtschaftspolitik-Instrumente.md》
+- **下游**：`Wirtschaftspolitik-Legitimation-Zielgroessen.md`（Magisches Viereck）· `IF4xIF6-Synthese.md`（分配政策交叉）· 已建《Wirtschaftspolitik-Instrumente.md》
 - **横向**：IF6《Sozialstaat-Kontroverse》（财政工具重叠）· IF5 欧洲货币政策（LK）
 - **术语卡**：Keynesianismus / Angebotsorientierung / Ordoliberalismus / deficit spending / Crowding-out / Multiplikator
 

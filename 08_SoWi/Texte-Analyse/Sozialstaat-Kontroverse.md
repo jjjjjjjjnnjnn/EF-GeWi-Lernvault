@@ -198,7 +198,7 @@ stufe: "Q1|Q2"
 ## 7. Vernetzung
 
 - **上游**：EF《Soziale-Ungleichheit》（现象底）· `Ungleichheitsmodelle-Theorien.md`（模型→行为）
-- **下游**：`IF4xIF6-Synthese.md`（社会国家财政作为第一交叉点）· 待建《Sozialer-Wandel-Strukturwandel.md》
+- **下游**：`IF4xIF6-Synthese.md`（社会国家财政作为第一交叉点）· 已建《Sozialer-Wandel-Strukturwandel.md》
 - **横向**：IF4《Wirtschaftspolitische-Konzeptionen》（再分配工具）· IF4《…Zielgroessen》（失业作为目标量）
 - **术语卡**：Sozialstaatsgebot / Solidarität / Subsidiarität / Umlageverfahren / Generationengerechtigkeit
 

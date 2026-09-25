@@ -62,7 +62,7 @@ tags: [EF, SoWi, Wirtschaft]
 
 ## 6. Lernreise
 
-- `Lernreise/SoWi-Konsum-Wirtschaften-L1.md`（待建：entdecken概念链 → ausprobieren M17读图 → check → szenario：Werbeverbot-Plädoyer）
+- [Lernreise/SoWi-Konsum-Wirtschaften-L1.md](../../Lernreise/SoWi-Konsum-Wirtschaften-L1.md)（已建：entdecken概念链 → ausprobieren M17读图 → check → szenario：Werbeverbot-Plädoyer）
 
 ## 7. Fehlerlog
 

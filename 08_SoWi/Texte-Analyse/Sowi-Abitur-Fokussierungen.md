@@ -102,7 +102,7 @@ tags: [EF, SoWi]
 
 ## 6. Lernreise
 
-- `Lernreise/Sowi-Abitur-Fokus-L1.md`（待建：entdecken 四半年地图 → ausprobieren 跨块挂靠最低工资 → check 碳税挂靠 → szenario：三模型默写计时）
+- [Lernreise/Sowi-Abitur-Fokus-L1.md](../../Lernreise/Sowi-Abitur-Fokus-L1.md)（已建：entdecken 四半年地图 → ausprobieren 跨块挂靠最低工资 → check 碳税挂靠 → szenario：三模型默写计时）
 
 ## 7. Fehlerlog
 

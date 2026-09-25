@@ -62,7 +62,7 @@ tags: [EF, SoWi, Politik]
 
 ## 6. Lernreise
 
-- `Lernreise/SoWi-Wehrhafte-Demokratie-L1.md`（待建：entdecken三色+民粹 → ausprobieren报告读表 → check → szenario：BVerfG-Plädoyer NPD-Neuauflage）
+- [Lernreise/SoWi-Wehrhafte-Demokratie-L1.md](../../Lernreise/SoWi-Wehrhafte-Demokratie-L1.md)（已建：entdecken三色+民粹 → ausprobieren报告读表 → check → szenario：BVerfG-Plädoyer NPD-Neuauflage）
 
 ## 7. Fehlerlog
 

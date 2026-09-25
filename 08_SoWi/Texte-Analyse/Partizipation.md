@@ -62,7 +62,7 @@ tags: [EF, SoWi, Politik]
 
 ## 6. Lernreise
 
-- `Lernreise/SoWi-Partizipation-L1.md`（待建：entdecken分类轴 → ausprobieren投票率图读数 → check → szenario：Bürgerrat-Simulation Klima）
+- [Lernreise/SoWi-Partizipation-L1.md](../../Lernreise/SoWi-Partizipation-L1.md)（已建：entdecken分类轴 → ausprobieren投票率图读数 → check → szenario：Bürgerrat-Simulation Klima）
 
 ## 7. Fehlerlog
 

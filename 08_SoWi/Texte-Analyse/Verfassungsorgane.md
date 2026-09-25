@@ -63,7 +63,7 @@ tags: [EF, SoWi, Politik]
 
 ## 6. Lernreise
 
-- `Lernreise/SoWi-Verfassungsorgane-L1.md`（待建：entdecken五机关 → ausprobieren Heizkosten-Cycle套 → check → szenario：Bundesrat-Rede zur Wahlrechtsreform）
+- [Lernreise/SoWi-Verfassungsorgane-L1.md](../../Lernreise/SoWi-Verfassungsorgane-L1.md)（已建：entdecken五机关 → ausprobieren Heizkosten-Cycle套 → check → szenario：Bundesrat-Rede zur Wahlrechtsreform）
 
 ## 7. Fehlerlog
 

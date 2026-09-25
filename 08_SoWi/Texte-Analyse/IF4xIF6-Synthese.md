@@ -200,7 +200,7 @@ Kriteriengeleitetes Urteil (Effizienz + Gerechtigkeit + Finanzierbarkeit)
 ## 7. Vernetzung
 
 - **上游**：`Wirtschaftspolitische-Konzeptionen.md` · `Wirtschaftspolitik-Legitimation-Zielgroessen.md` · `Ungleichheitsmodelle-Theorien.md` · `Sozialstaat-Kontroverse.md`
-- **下游**：待建《QP-Materialien-Karikatur-Gestaltung.md》（宏观题材素材库）
+- **下游**：已建《QP-Materialien-Karikatur-Gestaltung.md》（宏观题材素材库）
 - **横向**：IF4-LK-B《Ökonomie und Ökologie》· IF5 欧盟社会政策（LK-B）
 - **术语卡**：Verteilungsgerechtigkeit / Chancengleichheit / Umverteilung / CO₂-Preis / Aktivierender Sozialstaat
 

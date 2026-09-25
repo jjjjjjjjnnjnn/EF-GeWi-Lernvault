@@ -185,7 +185,7 @@ stufe: "Q1|Q2"
 ## 7. Vernetzung
 
 - **上游**：EF《Soziale-Ungleichheit》（现象层底，先行组织者）· EF IF3《Strukturfunktionalismus vs. Handlungstheorie》（理论坐标桥）
-- **下游**：`Sozialstaat-Kontroverse.md`（模型→社会国家行为）· `IF4xIF6-Synthese.md`（失业/分配交叉）· 待建《Sozialer-Wandel-Strukturwandel.md》
+- **下游**：`Sozialstaat-Kontroverse.md`（模型→社会国家行为）· `IF4xIF6-Synthese.md`（失业/分配交叉）· 已建《Sozialer-Wandel-Strukturwandel.md》
 - **横向**：IF4《Wirtschaftspolitische-Konzeptionen》（分配政策工具重叠）
 - **术语卡**：Klasse / Schicht / Milieu / Produktionsverhältnisse / Marktchancen / strukturelle Benachteiligung
 

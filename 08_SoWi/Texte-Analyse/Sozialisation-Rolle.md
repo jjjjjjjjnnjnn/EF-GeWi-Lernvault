@@ -62,7 +62,7 @@ tags: [EF, SoWi, Soziologie]
 
 ## 6. Lernreise
 
-- `Lernreise/SoWi-Sozialisation-Rolle-L1.md`（待建：entdecken三冲突 → ausprobieren校园案例归类 → check → szenario：Klassenrat-Rollenspiel）
+- [Lernreise/SoWi-Sozialisation-Rolle-L1.md](../../Lernreise/SoWi-Sozialisation-Rolle-L1.md)（已建：entdecken三冲突 → ausprobieren校园案例归类 → check → szenario：Klassenrat-Rollenspiel）
 
 ## 7. Fehlerlog
 

@@ -61,7 +61,7 @@ tags: [EF, SoWi, Politik]
 
 ## 6. Lernreise
 
-- `Lernreise/SoWi-Grundgesetz-L1.md`（待建：entdecken四原则 → ausprobieren Schwimm-Fall subsumieren → check → szenario：Verfassungsbeschwerde-Plädoyer）
+- [Lernreise/SoWi-Grundgesetz-L1.md](../../Lernreise/SoWi-Grundgesetz-L1.md)（已建：entdecken四原则 → ausprobieren Schwimm-Fall subsumieren → check → szenario：Verfassungsbeschwerde-Plädoyer）
 
 ## 7. Fehlerlog
 

@@ -63,7 +63,7 @@ tags: [EF, SoWi, Politik]
 
 ## 6. Lernreise
 
-- `Lernreise/SoWi-Parteien-Willensbildung-L1.md`（待建：entdecken三思潮 → ausprobieren Klima纲领对比 → check → szenario：Wahlprogramm-Pitch）
+- [Lernreise/SoWi-Parteien-Willensbildung-L1.md](../../Lernreise/SoWi-Parteien-Willensbildung-L1.md)（已建：entdecken三思潮 → ausprobieren Klima纲领对比 → check → szenario：Wahlprogramm-Pitch）
 
 ## 7. Fehlerlog
 

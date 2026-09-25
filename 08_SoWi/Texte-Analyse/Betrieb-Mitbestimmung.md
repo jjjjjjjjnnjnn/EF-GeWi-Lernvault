@@ -62,7 +62,7 @@ tags: [EF, SoWi, Wirtschaft]
 
 ## 6. Lernreise
 
-- `Lernreise/SoWi-Betrieb-Mitbestimmung-L1.md`（待建：entdecken两模式 → ausprobieren EVG案归类 → check → szenario：Betriebsrat-Verhandlung Kurzarbeit）
+- [Lernreise/SoWi-Betrieb-Mitbestimmung-L1.md](../../Lernreise/SoWi-Betrieb-Mitbestimmung-L1.md)（已建：entdecken两模式 → ausprobieren EVG案归类 → check → szenario：Betriebsrat-Verhandlung Kurzarbeit）
 
 ## 7. Fehlerlog
 
