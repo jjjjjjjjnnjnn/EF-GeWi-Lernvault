@@ -120,7 +120,7 @@ tags: [EF, Bio]
 
 ## 6. Lernreise
 
-- Lernreise/Bio-Oekologie-L1.md（待建；无则先用本文件 + Zellbiologie-Grundlagen）
+- [Lernreise/Bio-Oekologie-L1.md](../Lernreise/Bio-Oekologie-L1.md)（已建；无则先用本文件 + Zellbiologie-Grundlagen）
 
 ## 7. Fehlerlog
 

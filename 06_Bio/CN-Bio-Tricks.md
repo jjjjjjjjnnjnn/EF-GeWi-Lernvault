@@ -123,7 +123,7 @@ tags: [EF, Bio, CN]
 
 ## 6. Lernreise
 
-- `Lernreise/Bio-CN-Tricks-L1.md`（待建）
+- [Lernreise/Bio-CN-Tricks-L1.md](../Lernreise/Bio-CN-Tricks-L1.md)（已建）
 
 ## 7. Fehlerlog
 

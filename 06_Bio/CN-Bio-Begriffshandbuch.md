@@ -132,7 +132,7 @@ tags: [EF, Bio, CN]
 
 ## 6. Lernreise
 
-- `Lernreise/Bio-CN-Begriffe-L1.md`（待建；无则先用本文件 + CN-Bio-Tricks）
+- [Lernreise/Bio-CN-Begriffe-L1.md](../Lernreise/Bio-CN-Begriffe-L1.md)（已建；无则先用本文件 + CN-Bio-Tricks）
 
 ## 7. Fehlerlog
 
