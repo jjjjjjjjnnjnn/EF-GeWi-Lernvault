@@ -23,7 +23,7 @@
 
 ## META
 
-- [HANDOVER](../HANDOVER.md) — 一页交接（新agent/用户先读）
+- [HANDOVER](../HANDOVER.md) — **一页交接（新agent/用户先读）** · 历史归档：[HANDOVER-Archiv](HANDOVER-Archiv.md)（2026-09-24 及以前里程碑 + 外部 AI 任务包）
 - [Plan-接手执行](Plan-接手执行.md) — 接手执行计划（任务状态/铁约束/优先级分层/A–D待办清单）
 - **考纲体系（Curriculum）** — [设计总纲](Curriculum/00-Design.md) · [官方源清单](Curriculum/01-Quellen.md)
   - 德国 NRW Oberstufe（EF–Q2，10 科）：[Deutsch](Curriculum/Deutschland/Deutsch-Oberstufe.md) · [Englisch](Curriculum/Deutschland/Englisch-Oberstufe.md) · [Philosophie](Curriculum/Deutschland/Philosophie-Oberstufe.md) · [SoWi](Curriculum/Deutschland/SoWi-Oberstufe.md) · [Musik](Curriculum/Deutschland/Musik-Oberstufe.md) · [Sport](Curriculum/Deutschland/Sport-Oberstufe.md) · [Mathe](Curriculum/Deutschland/Mathe-Oberstufe.md) · [Physik](Curriculum/Deutschland/Physik-Oberstufe.md) · [Chemie](Curriculum/Deutschland/Chemie-Oberstufe.md) · [Bio](Curriculum/Deutschland/Bio-Oberstufe.md)
@@ -214,6 +214,7 @@
 - [2026-09-24-abi-baum-und-curriculum-vollausbau](Journal/2026-09-24-abi-baum-und-curriculum-vollausbau.md) — **考纲体系 S0–S7 全量 + Abi-Baum 十科重构**（40 文件 ~17600 行，11 处上游纠错，38 条 CN-Methode 技法卡）
 - [2026-09-24-s8-notenproduktion](Journal/2026-09-24-s8-notenproduktion.md) — **S8 笔记生产第一轮**：建立施工宪法 + 八段模板，并行 subagent 产出 **156 篇新笔记**（全库 127→283），Deutsch/Englisch 两科收官，含 429 限流与中断教训
 - [2026-09-25-s8-abschluss](Journal/2026-09-25-s8-abschluss.md) — **S8 全部收官**：十科施工图 **224/228 完成**（全库 127→**352 篇**，卡片 534→**1396**，Glossar +730 行），本地固化 **218 个官方源 PDF**
+- [2026-09-25-handover-aktualisierung](Journal/2026-09-25-handover-aktualisierung.md) — **交接前 HANDOVER 重写**：65 条历史归档至 `HANDOVER-Archiv.md`，正文瘦身为真正的一页 + 新增「接手后下一步」可执行清单
 - 约定：文件名 `YYYY-MM-DD-<thema>.md`，头部frontmatter（`fach`可空，`tags: [EF, Meta]`）。
 
 

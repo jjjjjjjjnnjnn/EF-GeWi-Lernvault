@@ -1,0 +1,128 @@
+---
+fach: ""
+thema: "HANDOVER-Archiv"
+operatoren: []
+klausurrelevant: false
+datum: 2026-09-25
+tags: [EF, Meta]
+---
+
+# HANDOVER 归档 — 历史状态与外部 AI 任务包
+
+> 本文件是 `HANDOVER.md` 的**历史归档**。新接手者**不需要读**，只在追溯历史时查阅。
+> 当前状态见 [`../HANDOVER.md`](../HANDOVER.md)；阻塞见 [`Blocker-Register.md`](Blocker-Register.md)。
+
+---
+
+## 一、历史状态记录（倒序，最新在上）
+
+> 覆盖项目从骨架搭建到 2026-09-24 的全部里程碑。当前状态只保留最近 3 条在 `HANDOVER.md`。
+
+- ✅ 第七轮全项目维护与交接（`[Meta]`+本交接）：全库在库文件零 > 1MB、禁区路径（`data/`, `_Downloads/`, `.apkg` 等）零命中、敏感密钥/PII零泄漏；纠正德语变音符号路径（`2026-09-24-curriculum-deepening-batch2-and-fach-lernbaeume.md` 规范化），消除跨平台转义问题；全库 Frontmatter 校验 100% 格式合规（total bad = 0）；`INDEX.md` 补全 4 篇 `Lernreise` 课程文件直链与近三篇 Journal 记录；**57 单测套件 379/379 测试 100% 全绿** / `npm run build` 4.64s 零警告 / **vault-check PASS(102/534/234)** / 本地研习服务端口 1420 稳定在线（Journal 2026-09-24-wartung-7）。
+- ✅ 全学科课程大纲深度化第二批与全10门学科独立学习树系统上线（`[Deutsch]`+`[Englisch]`+`[Philo]`+`[App]`+`[Meta]`+本交接）：①**语文学科（文史哲）原创深度攻坚笔记**：德语实用文本分析修辞三步走与读者导向剖析 (`01_Deutsch/Sachtextanalyse-Leserlenkung-und-Rhetorik.md`)、英语跨文化中继翻译与受众适应策略 (`02_Englisch/Mediation-und-Kommunikative-Strategien.md`)、哲学康德定言命令四步检测法与目的自身公式 (`07_Philosophie/Kant-Kategorischer-Imperativ-und-Maximenpruefung.md`) ②**考纲词卡全面扩增至 534 张**：德语、英语、哲学各增补 4 张精准高考/会考题眼级双语抽认卡，Glossar 同步增补 12 条高阶术语释义，INDEX 全面收录 ③**全10门学科专属学习地图与学习树系统 (`curriculumTree.ts` & `Mindmap.tsx`)**：依照北威州 KLP 官方 Inhaltsfelder（IF 1/2/3...）为全 10 门高中 EF 学科（SoWi、Philosophie、Deutsch、Englisch、Mathe、Physik、Chemie、Bio、Musik、Sport）定制独立学习树，构建「基础定理 ➔ 核心分析/实验 ➔ 综合会考与批判」三阶里程碑拓扑，支持思维导图内随时折叠展开或一键下钻到特定学科，点击阶段直接连入双语核心精讲库 ④**前端应用与抽认卡全量同步 (`src/data.ts`)**：`mockNotes` 增补 3 篇文史哲双语精解，`cards` 增补 `c28`~`c31` ⑤**工程门禁全绿**：**57 套件 379 测试 100% 全绿** / `npm run build` 4.64s 零错误 / `vault-check PASS(102/534/227)` / 本地服务端口 1420 持续健康在线（Journal 2026-09-24-curriculum-deepening-batch2-and-fach-lernbaeume）。
+- ✅ 全学科课程大纲深度化第一批：MINT理科核心重难点与应用同步（`[Mathe]`+`[Physik]`+`[Chemie]`+`[Bio]`+`[App]`+`[Meta]`+本交接）：①**四大理科高频重难点原创深度笔记**：数学待定系数法与解析式逆推建模 (`03_Mathe/Steckbriefaufgaben-und-Funktionsanpassung.md`)、物理匀加速直线运动与自由落体定律 (`04_Physik/Gleichmaessig-beschleunigte-Bewegung-Freier-Fall.md`)、化学分子间作用力与物质宏观性质 (`05_Chemie/Zwischenmolekulare-Kraefte-und-Stoffeigenschaften.md`)、生物跨膜运输机制与质壁分离渗透平衡 (`06_Bio/Biomembran-Transportmechanismen-und-Osmose.md`) ②**考纲词卡全面扩增至 522 张**：数学、物理、化学、生物各补核心无重名词卡，Glossar 同步增补 12 条专业术语释义，INDEX 全面收录 ③**前端应用全量同步 (`src/data.ts`)**：`mockNotes` 增补 4 篇中德双语精解，`cards` 增补 `c24`~`c27`，全自动关联思维导图拓扑 ④**工程门禁全绿**：**55 套件 354 测试 100% 全绿** / `npm run build` 6.46s 零错误 / `vault-check PASS(88/522/211)` / 本地服务端口 1420 持续健康在线（Journal 2026-09-24-curriculum-deepening-batch1-mint）。
+- ✅ MINT跨学科深度扩充与模考采分点诊断系统落地（`[Mathe]`+`[Physik]`+`[Chemie]`+`[App]`+`[Meta]`+本交接）：①**BWKI-2026 LinguaGraph 知识图谱深度提取与考纲笔记建档**：汲取北威州（NRW）Sek II 考纲与 LinguaGraph 概念网络，产出 3 篇深度中德双语核心笔记——数学多项式与曲线讨论 (`03_Mathe/Ganzrationale-Funktionen-Kurvendiskussion.md`)、物理牛顿动力学与斜面分解 (`04_Physik/Newtonsche-Gesetze-und-Krafte.md`)、化学酸碱质子理论与pH对数标度 (`05_Chemie/Saeure-Base-Gleichgewichte-pH-Wert.md`) ②**考纲词卡全面扩增**：数学、物理、化学 Anki 词卡扩充至 506 张无重名卡片，Glossar 严格同步新增术语 ③**模考采分点合规诊断器上线 (`KlausurSim.tsx`)**：答卷评分面板内嵌 Operatoren-Diagnose，根据题型算子（AFB I/II/III）针对性指出评价准则/正反平衡/Fazit是否合规，并提供「学术德语提分精修建议」（Alltagssprache ➔ Fachsprache / Nominalstil）④**工程门禁全绿**：**55 套件 354 测试 100% 全绿** / `npm run build` 6.54s 零错误 / `vault-check PASS(84/506/207)`（Journal 2026-09-24-mint-deepening-and-score-booster）。
+- ✅ 快捷键去噪、侧栏等大化与全学科数据接入（`[App]`+`[Meta]`+本交接）：①**界面快捷键徽标全面清理**：移除侧栏所有 `<kbd>Alt 1~0</kbd>` 角标及 title 提示，移除 Quiz 选项 A/B 的 `<kbd>1/2</kbd>` 徽标，`? 帮助` 改为纯文本，保持纯净学术风同时保留全局盲打事件 ②**侧栏按键等大化**：所有一级按键与设置按钮统一为 `h-10 px-2.5 rounded-[var(--radius)]`，内联图标统一 `h-5 w-5` 容器，消除错位并优化触控与点击热区 ③**全10门学科真题笔记与知识网深度接入**：`src/data.ts` 扩充 10 门高中 EF 真实双语考纲笔记与抽认卡，`Mindmap.tsx` 集成全学科筛选与聚类拓扑，点击精准携带学科元数据联动 Library ④**学科教具独立专区与4分区学术IA重构**：6大教具（句式积木/辩证天平/文本解构/导数沙盘/四步解题/口试矩阵）剥离为独立一级模块 `Werkzeuge.tsx`（`Alt W`），左侧导航重构为四大功能专区（概览与规划/知识与图谱/训练与提分/辅助与系统）⑤**55 套件 354 测试 100% 全绿** / `npm run build` 零错误 / `vault-check PASS(81/481/203)`（Journal 2026-09-24-clean-buttons-and-all-subjects 与 2026-09-24-werkzeuge-and-ia-restructure）。
+- ✅ 思维导图跳转修复/选中色调优化与全学科教学法体系落地（`[App]`+`[Meta]`+本交接）：①**思维导图跨学科跳转修复**：修复在 Mindmap 中点击不同学科的笔记节点时 `selectedFach` 未联动导致 Library 在旧学科下过滤为空（“显示错了学科，未找到相关笔记”）的问题；`Library` 与 `App` 引入学科自动识别联动，确保精确选中目标笔记并对齐学科 ②**选中光标色调柔化**：彻底移除 AI 助教顶栏思考强度（“极速/均衡/深度思考”）及卡片库标签中刺眼的纯黑背景（`bg-[var(--ink)]`），替换为温润低对比的学术底衬（`bg-[var(--paper-subtle)] text-[var(--ink)] border border-[var(--line)]`）③**顶栏语言热切换胶囊移除**：按指令移除右上角 DE/中文 胶囊，语言设置收敛至系统设置（`Settings.tsx`）及全局快捷键（`L`）④**全学科教学法引擎上线 (`fachDidaktik.ts`)**：Gymnasium EF 10 科按四大领域（GeWi / Sprachen / MINT / Mündlich）划分，新增 MINT 规范求解器 `FormulaScaffold.tsx` + 口试试场模拟器 `OralExamTimer.tsx`；**55 套件 354 测试 100% 全绿** / `npm run build` 4.61s 零错误 / `vault-check PASS(81/481/200)`（Journal 2026-09-24-didaktik-fach-expansion）。
+- ✅ 极简学术风UI重构与多主题系统（`[App]`+`[Meta]`+本交接）：①**侧边栏与顶栏彻底瘦身**：Logo收敛为单行13.5px微标+副标，导航项内边距紧缩为`py-1.5`与13px，页脚收缩为单行`v0.2.0 · Offline · ? 帮助`，顶栏瘦身至44px（`h-11`），全屏空间最大限度让渡给学习刷题 ②**祛除AI玩具展厅感**：移除每一条气泡上的机械跳动点/技术诊断码/营销口号，重塑为干净的“学术指导批注”导师问答 ③**多版学术UI与密度自选引擎 (`theme.ts`)**：Settings落地3款高阶学术主题（极简学术/温润纸书/牛津沉静）+ 2档密度（紧凑/标准），实时点选即时生效并持久化 ④**55套件352测试100%全绿** / `npm run build` 3.07s零错误 / `vault-check PASS(81/481/200)`（Journal 2026-09-24-ui-elevation-redesign）。
+- ✅ 全并行X1–X8（8路subagent+主线程裁决集成冲突）：①**生产tsx硬编码色值944→0**、零shadow/零italic/零emoji（Tutor 170/Quiz 299/Reise 209/Library 44等逐文件清零，小字提至最小字号、符号控件全换16px手写SVG、Quiz删14处黑底填充）②Quiz计时器合并为绝对截止不漂移+Fehlerlog补丁去重 ③**云同步白名单显式化**（12键学习进度同步+7键凭据/端点/同步配置/token计量显式local-only，新增键不自动进云；擦除仍全量19键）④bundle拆分 entry 718→474kB（gzip −79kB，诚实：总传输未实质下降）⑤`worker/compute`转真WebWorker ⑥删`Block.raw`死字段+新增`examSource.ts`解耦parser ⑦官方时长表补全（新begin语言/古语/Kunst+60′/Musik+60′/自然科学题内附加/Sport笔试缺席）⑧测试加固20+项（背卡450ms契约/窄屏结构/德中渲染顺序/**引用诚实性不变量**/10份测试质量审计修最弱2份）；**55套件352测试全绿**（316→+36，全程264→352）/build过（Journal 2026-09-23-parallel-x1-x8）。
+- ✅ 全并行工作流W1–W7（7路subagent+主线程审核+对抗审校）：①修4个已验证真Bug（**KlausurSim抽取永久失效**因parser剥离heading而extractSection靠`##`定位、Fehlerlog补丁无Musik/Sport case静默落SoWi、删数据漏`ef_lernvault_*`两命名空间、`Alt+2`同时切模块并评分）②**BM25+RRF+VaultGraph三休眠引擎真正上线**（检索真排序+德语变音正规化+薄弱/时序加权+Mindmap改真关系图+修同名文件ID冲突）③UI契约收口（语义token+**全库emoji清零**+4弹层Esc/focus闭环+1100px窄屏+背卡未翻不评分）④**KlausurSim多篇组卷**（官方2026时长表+Mathe三分领域配额+Deutsch四选一+BKT薄弱加权+整分制）⑤MINT内容补课（4科Abitur训练笔记+Anki 14/16/14/15→各50+Glossar+203）⑥对抗审校修8项（含**BASS引用错误更正**为BASS 13-32 Nr.3.2 VVzAPO-GOSt）；**48套件316测试全绿**（264→+52）/build过/vault-check **PASS(81/481/196)**（Journal 2026-09-23-parallel-w1-w7）。
+- ✅ 第六轮全项目维护（`[Meta]`+本交接）：389在库文件零>1MB/禁区/密钥/PII全零；44套件264单测+build+1420+**vault-check PASS（77/340/182）**；修2项文档债——Klett映射孤立笔记补进INDEX、思维桥引擎`vernetzung.ts`+两张知识网地图补进LEARNING-ENGINE契约（Journal 2026-09-23-wartung-6）。
+- ✅ 跨学科知识网与低Token思维桥引擎全栈落地（`[App]`+`[Meta]`+各科多commits+本交接）：基于 Ausubel 先行组织者、Rohrer 穿插辨别、Sweller 认知负荷理论与 Mayer CTML，构建高结构跨学科知识网（`MINT-Vernetzung-Konzeptkarte.md` 数理化生公理化统一图谱 + `GeWi-Vernetzung-Urteilskarte.md` 德英社哲大一统价值判断与论证图谱）；落地 4 篇高阶深度联动核心笔记（数学微积分/运动学速度导数、化学反应动力学/生物酶催化、哲学正义论/社科分配政策、德语论证分析/英语中继写作）；研发纯前端 0ms 内存拓扑倒排思维桥引擎（`vernetzung.ts`），极简单行压缩注入（严格 < 50 tokens，平均 20-30 tokens），AI 助教消息气泡底部优雅呈现无感思维桥胶囊（手写内联细线 SVG，禁 emoji，点击即看跨学科对照）；全库审计 77 篇笔记 / 340 词条 / 181 链接全部 PASS；44 单测套件 264 测试 100% 全绿 / build 3.20s 零错误（Journal 2026-09-23-cross-subject-vernetzung）。
+- ✅ AI助教对话复读异常根除、错题按钮去Emoji与Tufte双层顶栏重构（`[App] 2b56349`+`[Meta] 525fb00`）：彻底排查并根除对话复读欢迎语 Bug（`rawHistory` 强制过滤本地欢迎语、`sanitizeChatMessages` 严苛对齐 Anthropic/OpenAI user-first 消息流规范、会话专属唯一主键 `${sessionId}_welcome` 消除 IndexedDB 覆盖冲突、函数式状态更新）；修复错题沉淀按钮 Feather Dollar Sign 错误 SVG 路径并手写内联 Bookmark SVG，彻底移除 `📌`、`⚡`、`✏️` 等全部 emoji；`renderAiText` 智能豁免欢迎语、引导问句与角色寒暄，杜绝假阳性 `[无出处]` 警告；顶栏重构为规范的两层 Tufte 紧凑工作台（主控状态层+学科工具条），消除任何中窄屏折行与挤压；43 单测套件 256 测试 100% 全绿 / build 3.24s 零错误（Journal 2026-09-23-tutor-dialog-ui-fix）。
+- ✅ 中德理科互通扩展（4 commits+本交接）：MINT四科CN桥（DE-CN-EN手册+6招技巧+4题改编训练，全v3三语原创；真题只收官链不爬）；vault-check PASS（notes=71/csv=334/links=163）（Journal 2026-09-23-cn-mint-vernetzung）。
+- ✅ Internet-Offensive十科全线（10 commits+本交接）：Abitur-Fokussierungen/Kernstellen/Aufgabenarten/Themenfelder+各科Training/EHZ转述+新csv5科+MINT题库，全v3原创；IQB真缺口补采37 PDF（Mathe18–26/HV24–25/KLP艺体）；vault-check PASS（notes=59/csv=294/links=162）（Journal 2026-09-23-internet-offensive；登录墙真题待老师）。
+- ✅ 启发引导/考纲直出双态分流、错题补丁弹窗与数学割线逼近切线沙盘（`[App] 6d378af`+`[App] 55792bc`+本交接）：落地苏格拉底产婆术启发引导（Socratic）与官方 Erwartungshorizont 考纲直出（Direct Exam）双态无缝切换；消息气泡一键「📌 沉淀为错题」并自动生成合规 Markdown 表格行文本补丁（严格遵循 App 只读 Vault 规范）；原生图片/漫画粘贴与本地图表选择；首创理科几何直观工具 `TangentSlider`（割线 $\Delta x \to 0$ 连续逼近切线过程动态力学与差商收敛模拟）；43 单测套件 256 测试 100% 全绿 / build 6.45s 零错误（Journal 2026-09-23-tutor-socratic-fehlerlog-tangent）。
+- ✅ EXT-01~04四科Texte-Analyse并行落地（`[Deutsch]/[Philosophie]/[SoWi]/[Englisch]` 4 commits+本交接）：Sachtextanalyse论证+Dilemmata案例集+Karikatur三例+Mediation双范文，全v3九步完整版，全原创；vault-check PASS（notes=42/csv=240/links=141）（Journal 2026-09-23-ext-01-04-texte-analyse）。
+- ✅ 无痛自然习得教育组件库与 AI 助教全闭环集成（`[App] c6402c1`+本交接）：贯彻“无痛、自然学会”教育哲学，解决长句下笔难与价值判断主观情绪化问题；落地 `SatzbauLego` 句式积木（出处/动词/手法/效果 4 大卡槽即插即拔拼装考纲句）、`BalanceBoard` 辩证天平（SVG 物理倾斜力矩与 AFB III 考纲级价值裁决合成器）、`TextHighlighter` 荧光文本标注解构画板（4色划词实时聚类论证树）；顶栏无缝嵌入 AI 助教工作台，一键将拼装成果与裁决文本推入聊天流；新增 8 项专用单测，41 单测套件 242 测试 100% 全绿 / build 6.23s 零错误 / 1420 在线（Journal 2026-09-23-pedagogy-ui-library）。
+
+- ✅ CC-Switch 风格 LLM 路由、端点自定义与原生协议适配（`[App] 28e4d7b`+`[App] 8fcc056`+`[App] 7afa925`+本交接）：彻底解决商汤（SenseNova）等代理报错（原生 Anthropic Messages 协议 `/v1/messages` + `x-api-key` + `anthropic-version: 2023-06-01` + 动态 `system` 字段与流式 `content_block_delta` 解析）；实测用户 Key（`sk-t6my3...`）200 OK 连通；落地 HTTP 429 限速自动退避重试（最多 3 次到达上限）；端点编辑保存后自动无缝激活为主路由；落地 CC-Switch 风格 Token 自动补齐机制（客户端启发式自动填补缺失的 Token 审计数据）；弹窗内即时闭环连通性测试与自愈排查反馈；对话历史去噪隔离过滤离线报错防止大模型复读错误话术；40 单测套件 234 测试 100% 全绿 / build 4.57s 零错误 / vault-check(38/203/135) PASS（Journal 2026-09-23-ccswitch-llm-routing）。
+- ✅ 助教教学区域轻量化、自主模型填写、显式保存设置与CC-Switch供应商交互流对齐（`[App] 5fdca6f`）：剥离 Tutor 教学区臃肿的内嵌设置，极简顶栏保留端点药丸+新增“⚙️ 配置端点与模型”直达全局设置；简单模式新增自主模型直接填写框与常见模型快捷标签，右侧提供显式“💾 保存设置”按钮与即时保存提示；对齐 CC-Switch 供应商交互流（全面解禁预设端点编辑权限、API Key 密码掩码显隐眼标、Base-URL 兼容提示、Model ID 自由输入与角色映射、蓝底显式“保存”按钮与 `✓ 配置已保存` 反馈）；新增两项端到端模拟交互单测；40 单测套件 233 测试 100% 全绿（Journal 2026-09-23-ccswitch-ui-model-save）。
+- ✅ LM Studio 报错根除、全内置应用内诊断与模拟交互测试规范落地（`[App] b7beb70`）：`sanitizeChatMessages` 规整清洗，彻底杜绝 LM Studio 400 `'messages' field is required`；内嵌“⚡ 测试连接 (Ping)”与“💬 实时对话探针 (Chat Probe)”控制台与自愈排查指引；落地端到端全流程模拟交互测试套件（`simulatedInteraction.test.tsx`）；40 单测套件 230 测试全绿（Journal 2026-09-23-lmstudio-inapp-diagnostic-and-sim-test）。
+- ✅ CC-Switch 风格多端点路由与 Token 看板全栈落地（`[App] 9eb40f2`+本交接）：Clean-Room 原生重构（零外部代码/依赖引入，NOTICE 署名 MIT）+ 四 Tab 专业架构（极简推荐/端点路由/Token看板/高级向量）+ 多端点管理与测速探针（`endpoints.ts`）+ Token 账本与每日预算预警（`tokenLedger.ts`）+ 智能级联故障转移（`router.ts`，主端点->备用端点->Vault离线兜底）+ 流式 `include_usage` 精准采集（`streamClient.ts`）；39 单测套件 222 测试全绿 / build 6.03s / vault-check(38/203/134) PASS（Journal 2026-09-23-ccswitch-endpoint-routing-token-ledger）。
+- ✅ 维护-5（`[App] 8e02537`+本交接）：315文件干净三扫零泄漏（2误报已证）；36套件210单测/build/vault-check(38/203/133)/1420全过；LEARNING-ENGINE Next-Gen补齐+AI-SETUP拉取排错FAQ（Journal 2026-09-23-wartung-5）。
+- ✅ Headroom 启发式 Token 压缩与可逆缓存引擎落地（`[App] 271d7d7`+本交接）：Clean-Room 原生实现（零外部代码/依赖引入，NOTICE 署名 Apache-2.0）+ FNV-1a CCR 可逆内容寻址双层缓存（`ccrStore.ts`）+ SmartCrusher 表格折叠与 5D 评分裁剪（`compressor.ts`，首轮/最近/错误100%保留）+ Hot/Warm/Live 三区 KV-Cache 优化组装（`context.ts`）+ AI 助教交互式 `[Ref: #h-xxxxxx]` 点击无损还原（`Tutor.tsx`）；36 单测套件 210 测试全绿 / build 6.1s / vault-check(38/203/133) PASS（Journal 2026-09-23-headroom-token-compression）。
+- ✅ 拉取失败修复（`[App] 627b670`+本交接）：dev同源代理Node代取（CORS-free，Key只走头）+直连兜底+错误分类中文明示；34单测套件202测试全绿 / build过 / vault-check(38/203/131) / 代理实测OpenRouter回200真名单（Journal 2026-09-23-modellpull-proxy-fix；opencode go端点待用户给URL）。
+- ✅ 新渠道+模型拉取（`[App] fd4ed3d`+本交接）：OpenCode Zen/SenseNova商汤预设+Base-URL改写+ccswitch式⇩拉取模型列表点选即用；34单测套件199测试全绿 / build过 / vault-check(38/203/130) / 1420在线（Journal 2026-09-23-provider-modellpull）。
+- ✅ 用户反馈三修（`[App] ffd56d6`+本交接）：KaTeX懒加载独立chunk（首绘不再堵）+引擎off时KI按钮置灰明示+check步默写+AI打分纠错教学FelloFish循环；33单测套件195测试全绿 / build过 / vault-check(38/203/129) / 1420在线（Journal 2026-09-23-reise-katex-ki-fellofish）。
+- ✅ V1模拟走查（`[App] 6c9c100`+本交接）：真L1文件穿真解析真UI跑完8步（门禁/XP离线保底/反馈上下文全过）；32单测套件191测试全绿 / build过 / 1420在线（Journal 2026-09-23-v1-walkthrough-sim；V2–V4体感/整场仍待真人）。
+- ✅ 下一代智能引擎全栈落地（`[App] e20ed22`+本交接）：双引擎RRF混合检索(BM25+Vector) + 双向引用知识图谱网络(vaultGraph.ts，孤岛检测/核心节点) + BKT认知诊断与考纲掌握度模型(mastery.ts)支持自主开启/关闭学期管理(EF.1/EF.2/归档重置) + Oberstufe全真三段式Klausur模拟器(KlausurSim.tsx，算法动态抽取38篇笔记材料与AFB I-III试题，EPA 0-15评分) + 每日15分钟自适应混合极速冲刺(DailySprintModal.tsx，打卡连续Streak天数)；31单测套件189测试100%全绿 / npm run build 3.15s过 / 1420在线 / vault-check(38/203/127) PASS（Journal 2026-09-23-next-gen-learning-engine）。
+- ✅ AI助教极速无感回复与多会话历史系统（`[App] aa7169f`）：10ms瞬时前导卡(extractInstantSnippet) + 多会话抽屉管理(Heute/Gestern/Früher/重命名/删除/清空/导出.md) + 思考强度三档(Schnell/Ausgewogen/Tiefgründig) + 一键智能调配(LM Studio离线自动调配至Vault原生考点合成)；25单测套件162测试全绿 / build过 / 1420在线（Journal 2026-09-23-tutor-zero-latency-history）。
+- ✅ AI中后端全阶重构（`[App] 32345b5`）：统一流式传输(SSE/WebLLM/AbortSignal) + 结构化评分防假阳性(parseKlausurEvaluation) + IndexedDB高维向量二级持久化 + Token动态预算(3000上限) + 本地LLM心跳存活探针(1234/11434毫秒级感知)；22单测套件151测试全绿（Journal 2026-09-23-ai-backend-overhaul）。
+- ✅ 维护-4（`[App] c29b4d5`+本交接）：262文件干净三扫零泄漏；130单测/build/vault-check(38/203/123)/1420全过；AI-SETUP向量章节补齐（Journal 2026-09-23-wartung-4）。
+- ✅ E轮下载卡死修复（`[App] 0166f47`）：auto永不隐式下载+HF镜像+显式加载按钮+本地引擎重置；130单测/build/vault-check(38/203/123)/1420全过（Journal 2026-09-23-e-runde-download-fix）。
+- ✅ D轮Reise动态化（`[SoWi] 284b5b6`+`[App] 9e959ca`）：diagram独立块+LLM-SVG/自动讲解追问/提交即点评/写作评分改写循环（FelloFish式）；128单测/build/vault-check(38/203/121)/1420全过（Journal 2026-09-23-d-runde-reise-ki）。
+- ✅ C轮（`[App] 924facb`）：语义stage-2+云Backend（显式push/pull）+视觉契约§6+全链模拟测试；113单测/build/vault-check(38/203/120)/1420全过（Journal 2026-09-23-c-runde-sim-test）。
+- ✅ Phase B Lern-Engine（`[App] 24ec1ba`）：存储收敛+Backend接口 / RAG三档（L2-API/L1-jina-de/L0）+verifySupport / 交错开关+错题回流 / 主页tab+Alt1-9；97单测/build/vault-check(38/203/119)/1420全过（Journal 2026-09-23-phase-b-lern-engine）。
+- ✅ Phase A Lern-Engine（`[App] 505f205`）：48单测全绿 + `engine/`存储/检索层 + 设置沉底独立 + LEARNING-ENGINE.md契约；test:run/build/vault-check(38/203/118)/1420全过（Journal 2026-09-23-phase-a-lern-engine）。
+- ✅ 三轮审核（亲验）：在库226文件零>1MB、禁区/PII/密钥零泄漏；vault-check PASS（38/203/117链）；build 1.92s；1420在线200；_Downloads实数1713件/3.23GB（下文两处旧数已订正）。
+- ✅ 反馈三连修（`[App] b2e5b4f`）：笔记库残留搜索chip一键清除 / 新设置中心tab（语言·Vault·AI·导出·快捷键·关于，顶栏只剩搜索+齿轮）/ 背卡会话快照（Again重排队尾，不再早退）；build过，1420在线。
+- ✅ 内置双引擎AI（LM Studio摘除）：KI-Tutor顶部AI设置三段切换（API直连/本地WebLLM/关闭）+ 8服务商预设 + Key自填 + AI-SETUP手册；Quiz同引擎；Zitierpflicht保留；web-llm 0.2.85特批入包（NOTICE同步）；build过，1420在线（Journal 2026-09-23-dual-engine-ki）。
+- ✅ App首次使用流：三步引导（Vault→Fächer三态→Klausurtermin进Lernplan）+ 首页DE/中文切换 + 默认语言跟系统（兜底德语，可切换持久化）+ 落地Lernreise；build过（Journal 2026-09-23-onboarding）。
+- ✅ 联网补缺口（用户拍板不等老师，假设版待核对）：Musik Halbjahr假设=IF1+IF2维也纳古典/奏鸣曲式+Stufe-4音程爬梯（csv新12卡）/ Deutsch Drama三选一（Dürrenmatt Besuch/Physiker、Frisch Andorra）+通用工具箱 / Englisch Teil-B双轨（HV四题型+Mediation三段式，官方评分表链）；vault-check PASS（notes=38 csv=203）。
+- ✅ 缺口清理：Dokument 20破案（Buchner S.154–158 Impfpflicht/M21–M25，笔记+§8b+M23先例）；Notenlehre-Stufe-4源头截断（256KiB无EOF）待重发（§5b为公开结构反推假设版）；问老师德语三问已拟（Journal 2026-09-23-luecken）。
+- ✅ 老师资料R4–R8（五agent并行，一科一commit）：Philo新笔记Plickat五问+Operatoren映射（csv+6）/ Musik新笔记Beethoven-Motiv+Hör-Bausteine（HEIC 4/4 ffmpeg转码成功；Notenlehre-Stufe-4 PDF截断待补）/ Mathe补Spickzettel八缺口+新建Fehlerlog（Zwei-Punkte符号错两条）/ Physik新笔记ggB训练（Excel四步+3,6换算）/ Bio新笔记Zellbiologie+Open-Book-Checkliste（dreamstime图只转述不复制）；原件全进`_Downloads/<Fach>/lehrer-2026-09/`+quelle。
+- ✅ 老师资料R1–R3（三agent并行，一科一commit）：SoWi富化Kap.4/Kap.6/Karikatur（Unterrichts-Anker+自制Lückentext，csv+2）/ Deutsch新笔记Lyrik-Sturm-Drang-Goethe（AB1四步+6 Mittel+Deutungshypothese-Lückentext，csv+8）/ Englisch新笔记Role-Models-Analysis（Teil A三任务链+P.E.E.+Comment句型，csv+10）；原件全进`_Downloads/<Fach>/lehrer-2026-09/`+quelle（gitignored），vault零原文复制；名单/Codes截图永不入库。vault-check PASS（notes=36 csv=181 links=102）。
+- ✅ 归属纠正：`2_Werkzeugkasten`实为SoWi Buchner S.148–153（WkV1–WkV5，无文本层，内容未进笔记）；`Fragen über Fragen`+09-21扫描归Philo（已归档，R4已落地Plickat笔记）；`Sprachdetektive`连字符改名已注quelle。
+- ✅ SoWi收官12/12：Ungleichheit独立篇 + Kap.1–11（csv累计181行，INDEX 102链全有效，vault-check PASS）。
+- ✅ Philo-L2试点：`Lernreise/Philo-Utilitarismus-Kant-L2.md` 9步（德语Satz 11句）+ csv/Glossar/Fehlerlog三同步——v3模板跨科成立。
+- ✅ App Vergleich真管线：`getVergleichItems`从vault笔记生成（空才回MOCK），双RUBRIC统一四维；V4技术债清零，build过。
+- ✅ Englisch听力计划：Klett 5单元23媒体→Themenfelder映射 + Teil A四级顺序（混淆ID假设待Transition目录页核对）。
+- ✅ 论文库7/9：Rohrer 2007/2015/2020补下（全验头+quelle）；taylor-2010/wittwer-renkl无合法开放源，放弃留证。
+- ✅ Reise跳转修复：硬编码1/2/3改为相对导航（v3八步全通）+ ausprobieren通用文案。
+- ✅ Dev-Feedback全局浮窗：右下角药丸钮，全模块可用，上下文总线自动带位置（`courseId#SchrittN`/`quiz:…`/`tab:…`），存`eflernvault:feedback:v1`。
+- ✅ Material四轮：`_Downloads/` 约1710件/约3.2GB（全gitignored，2026-09-23实数1713件/3.23GB）——N8 NRW官源33 + N9 OER 29 + N10 Siemens 16 + N11 Goethe 17 + **N14 StanSi全站通扫58（9路并行，Physik/Chemie/Bio三科operatoren/konstruktions/korrekturzeichen实缺已补）**；登录墙清单已列（StanSi真题/SESAM/FWU/eduki找老师要）。
+- ✅ Klett Green Line Transition (ab 2024) Medien：23/23收官（mp3×9+mp4×14全验头+quelle.txt），落`_Downloads/Englisch/klett-bridge/`，Klett版权本地永不提交。
+- ✅ P2/P3/P4已落地并验收（外部AI `949984a` + 主Agent复核PASS；2处偏离接受）；抓取脚本锁全部原子化（fetch.lock/klett-fetch.lock防双跑）。
+- ✅ 骨架：Obsidian vault + git + CC-BY-SA + link-check CI + `_Downloads/`(gitignore约1710件/3.2GB) + `Anlagen/`。
+- ✅ 10/10学科骨架：SoWi/Philo填实；Deutsch开动（Lyrik+Drama候选笔记，csv 43行，待老师定书名）/Englisch开动（Role Models+Teil-B双轨笔记，csv 43行，Topic定，待定考轨）；MINT四科KLP校准+Formel-Spickzettel(KaTeX)+Mathe/Physik/Bio训练笔记；Musik口试开动（Beethoven-Motiv+Halbjahr假设+csv 12卡，待确认）；Sport口试骨架。
+- ✅ 官方弹药：SoWi/Philo/Deutsch/Englisch/Mathe全套Operatoren+Konstruktion+Korrekturzeichen+Beispiele；Formelsammlung NRW 2024。
+- ✅ 电子书抓取**完工**（429/430页，缺media 2封面背）：已按11章切分进 `_Downloads/SoWi/split/`（gitignored，边界±2页待核），可写SoWi正式笔记。（上方「Playwright脚手架就绪/等登录」为历史行，抓取已完成）
+- ✅ App需求：FEATURE-SPEC + UI-SPEC-V2；**外部AI已落地**（`b17999d`）：10科徽章+KaTeX离线公式+Lernreise第7模块（5步态+gating+XP localStorage），`npm run build`亲验通过；课程4个（SoWi-L1示范 + Philo-L2试点 + Musik-Höranalyse-L1 + Sport-Bewegung-L1，均muendlich步）。
+- ✅ 集成方法v2：`Lernmethoden-Evidenz.md`单真相源 + Template v2（检索优先/Pro-Contra/Fehlvorstellungen）+ `vault-check.py`四检PASS + parser修csv表头卡/quote/math块（build过）+ P3加Zitierpflicht。
+- ✅ 电子书抓取**完工**（429/430页，缺media 2封面背）：已按11章切分进 `_Downloads/SoWi/split/`（gitignored，边界±2页待核），可写SoWi正式笔记。
+- ✅ UI-SPEC-V4已落地并复核PASS（外部AI `a1ba979` + 主Agent复核：构建复现+5步零回归+Zitierpflicht未松；技术债已清：Vergleich真管线+四维RUBRIC统一）。
+- ✅ 学习方法v3（Academy-Lernreise，6 agent并行）：证据库§6–§9（Adesope/Rohrer/Barbieri/Brummer/Mayer）+ `Methoden-Quellen.md`16篇 + 论文本地7/9（Rohrer 2007/2015/2020已补；taylor-2010/wittwer-renkl无开放源放弃）+ Template v3（9步，旧字段全留）+ Sowi-L1试点重写 + quizgen辨别/对比题型与过程维 + `vault-check` vergleich规则 + `UI-SPEC-V4.md`（发外部AI）；vault-check PASS + build过。
+
+---
+
+## 二、外部 AI 专属外包任务包（Track A：资料搜集与学科语料提取）
+
+> 4 项**全部已完成并入库**（2026-09-23）。保留 Prompt 存档，供日后同类任务复用。
+
+## 外部 AI 专属外包任务包（Track A：资料搜集与学科语料提取）
+
+> 💡 **使用指引**：本节专供用户直接复制 Prompt 派发给其他联网或大上下文 AI（如 Perplexity / Claude 3.5 / GPT-4o）。每个任务均定义了严格的学科格式与落盘路径，外部 AI 输出后直接保存到对应文件即可。
+
+#### 📋 任务 1【德语 Sachtextanalyse 论据类型与范文语料】(TASK-EXT-01) — ✅ 已由外部 AI 完成并入库
+- **成果落盘路径**：`01_Deutsch/Texte-Analyse/Sachtextanalyse-Argumentation.md` 及 `Deutsch-EF-Phrasen.csv`
+- **派发给外部 AI 的 Prompt 存档**：
+  > “请针对德国北威州高中 (NRW Gymnasium Oberstufe EF) 德语课 Sachtextanalyse（议论文分析）编写一份标准分析语料。要求：
+  > 1. 列举 6 种考试必考论据类型（Faktenargument, Normatives Argument, Autoritätsargument, Analogisierendes Argument, Indirektes Argument, Plausibilitätsargument），每种附带 1 个贴合青年与数字化议题的德语典型例句及简要分析；
+  > 2. 提供 10 句高分分析性动词句式（如 `verdeutlicht`, `appelliert an`, `entkräftet`, `fungiert als`）；
+  > 3. 严格遵循双语规范：中文理解在上，德语 Klausur-Satz 在下。”
+
+### 📋 任务 2【哲学 Kant 绝对命令与四大伦理困境案例】(TASK-EXT-02) — ✅ 已完成并入库
+- **派发给外部 AI 的 Prompt**：
+  > “请针对 NRW Gymnasium EF 哲学伦理学单元，整理 Kant 绝对命令 (Kategorischer Imperativ) 与功利主义 (Utilitarismus) 的 4 大经典案例对比库。要求：
+  > 1. 包含 4 个案例：电车难题 (Trolley-Problem)、撒谎救人案 (Lügenverbot)、无辜替罪案、器官移植救五人；
+  > 2. 每个案例提供：A. 情境描述（中德双语）；B. 功利主义视角（Hedonistisches Kalkül 计算）；C. 康德视角（普遍化公式 Universalisierungsformel 与目的公式 Menschheitszweckformel 检验）；D. 核心冲突价值（如 Leben vs Würde）；
+  > 3. 每个案例提炼 2 句标准德语 Klausur-Merksatz。”
+- **输出落盘路径**：`07_Philosophie/Texte-Analyse/Ethische-Dilemmata-Sammlung.md`
+
+### 📋 任务 3【SoWi 3 幅经典政治漫画 (Karikatur) 解构与评分细则】(TASK-EXT-03) — ✅ 已完成并入库
+- **派发给外部 AI 的 Prompt**：
+  > “请搜集或重构 3 幅德国 NRW 高中 SoWi 考试最常考的政治漫画题型（主题：1. 贫富差距 Soziale Ungleichheit; 2. 环保与经济增长 Zielkonflikt; 3. 青年政治参与 Politikverdrossenheit）。要求：
+  > 1. 每幅漫画提供详细视觉元素描述清单（Bildbeschreibung：人物、衣着、手持物、文字标签）；
+  > 2. 象征与隐喻解构（Deutung：每个元素代表什么现实经济/政治现象）；
+  > 3. 按照标准 AFB II / AFB III 给出 Erwartungshorizont (EHZ 踩分点) 与 3 句高分德语答案。”
+- **输出落盘路径**：`08_SoWi/Texte-Analyse/Karikatur-Fallbeispiele.md`
+
+### 📋 任务 4【英语 Mediation 中德调解写作高分题库与模板】(TASK-EXT-04) — ✅ 已由外部 AI 完成并入库
+- **成果落盘路径**：`02_Englisch/Texte-Analyse/Mediation-Mustertexte.md` 及 `Englisch-EF-Phrasen.csv`
+- **派发给外部 AI 的 Prompt 存档**：
+  > “请针对 NRW Gymnasium EF 英语考试 Teil B (Mediation 德译英中继写作) 编写 2 篇全真训练题。要求：
+  > 1. 提供一篇约 250 词的德语报刊材料（主题：Freiwilliges Soziales Jahr 或 Social Media Detox）；
+  > 2. 设定英方收信人（如英国交换学校校长或国际青年论坛）；
+  > 3. 给出标准写作指导：如何提炼 3 个关键事实，避免逐字翻译；
+  > 4. 分别给出 Formal 与 Semi-formal 两篇地道满分范文，标注高分连接词 (Connectors)。”
