@@ -63,6 +63,14 @@ ENTDECKEN（1概念 + 1文字图解，双支柱）：
 
 Klausur-Satz: `Wettbewerb schafft Wohlstand, der Sozialstaat fängt die Schwächsten auf — der Staat ist Schiedsrichter, nicht Spieler.`
 
+## Anekdote & Fun-Fact
+
+**Anekdote / Fun-Fact (DE)**: Der Begriff „Soziale Marktwirtschaft" geht auf Alfred Müller-Armack zurück, doch zum Symbol wurde Ludwig Erhard. Nach dem Krieg war die Wirtschaft zentral gelenkt und viele Waren rationiert. Bei der Währungsreform 1948 hob Erhard zugleich die meisten Preisvorschriften auf — und angeblich füllten sich über Nacht die Schaufenster wieder mit Waren. Auf den Vorwurf, er habe die Bewirtschaftung aufgehoben, soll Erhard geantwortet haben: „Ich habe sie nicht aufgehoben, ich habe sie nur nicht wiedereingeführt."
+
+**中文解读**: "社会市场经济"这个名称来自米勒-阿马克，但它的形象代言人是艾哈德。战后经济被中央管制、商品配给，1948 年货币改革时艾哈德同时取消了大部分价格管制，橱窗据说一夜之间重新摆满商品。他那句"我不是取消了配给，我只是没有重新引入它"（据传），恰好概括了本课的起点：让市场先跑起来，国家定规则、织安全网。
+
+**Bezug zum Konzept**: `Der Start der Sozialen Marktwirtschaft zeigt das Grundprinzip: Der Staat setzt den Ordnungsrahmen, überlässt Preise und Wettbewerb aber dem Markt.`
+
 ## Schritt 4 — ausprobieren
 
 BEISPIEL（正确例题示范，AB II analysieren，先遮住Musterlösung自己写3句，再对照）：

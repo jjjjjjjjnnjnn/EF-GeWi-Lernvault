@@ -63,6 +63,14 @@ ENTDECKEN（1概念 + 1文字图解，两把尺子）：
 
 Klausur-Satz: `Während der Utilitarismus die Folgen für die Mehrheit abwägt, prüft Kant, ob die Maxime alle als Zweck an sich achtet.`
 
+## Anekdote & Fun-Fact
+
+**Anekdote / Fun-Fact (DE)**: In der modernen Ethik ist das „Trolley-Problem" berühmt: Ein außer Kontrolle geratener Wagen rast auf fünf Menschen zu; man könnte eine Weiche umstellen, sodass er nur einen Menschen trifft. Ein Utilitarist rechnet die Folgen und würde umstellen, ein Kantianer fragt dagegen, ob dabei ein Mensch zum bloßen Mittel gemacht wird. Derselbe Fall, zwei völlig verschiedene Prüfungen – genau darum geht es in dieser Lektion.
+
+**中文解读**: 这个思想实验把本课的两副眼镜摆在一起：功利主义看"后果总账"（救五舍一），康德主义看"能否普遍化、有没有把人只当工具"。记住它，是因为它用同一个场景逼你做出"选程序"的决定——先确定用后果秤还是准则镜，再作答。
+
+**Bezug zum Konzept**: Das Trolley-Problem zeigt denselben Fall einmal durch die Folgen-Brille (Nutzenabwägung) und einmal durch die Pflicht-Brille (Maxime und Selbstzweck).
+
 ## Schritt 4 — ausprobieren
 
 BEISPIEL（正确例题示范，AFB II darstellen，先遮住Musterlösung自己写3句，再对照）：
