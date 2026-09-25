@@ -120,6 +120,75 @@ tags: [EF, Meta, Blocker]
 
 ---
 
+## F. 待填模板（答案到达后直接套用）
+
+> **目的**：把「等答案」变成「填空」。答案一到，只补占位符，**不重写结构**。
+> 已确认无需模板的：**A1 戏剧**（`Drama-Ganzschrift-Kandidaten.md` 已有 `Universal-Werkzeugkasten`，与书名无关）、**A7 音乐**（IF1–3 已全覆盖）、**A11 体育**（IF a–f 已全覆盖 + §A.1 速查表）。
+
+### F1. Deutsch · 戏剧专属段（A1 到达后 → 填入 `01_Deutsch/Texte-Analyse/Drama-Ganzschrift-Kandidaten.md`）
+
+```markdown
+## 4. Werk-Spezifisch: <Titel> (<Autor>, <Jahr>)
+
+| 项 | 内容 |
+|---|---|
+| Gattung / Epoche | <…> |
+| 作者与时代背景（3 句） | <…> |
+| 核心人物（5–7 位） | <名 — 一句话功能> |
+| 场次梗概（Akt I–V） | <每幕 2 句> |
+| 核心冲突 | <…> |
+| 主题线索（3 条） | <…> |
+| 与 Universal-Werkzeugkasten 的对接点 | <哪几个分析工具可直接用> |
+```
+
+配套：更新 `Lernbaum-Deutsch.md` §4 状态；若为 Ib 对照，同步 `Drama-Strukturvergleich-QP.md`。
+
+### F2. Englisch · 小说专属段（A4 到达后 → 填入 `02_Englisch/Texte-Analyse/Textsortenmerkmale-und-Belegtechniken.md`）
+
+```markdown
+## X. Lektüre-Spezifisch: <Titel> (<Autor>, <Jahr>)
+
+| 项 | 内容 |
+|---|---|
+| Genre / Zielgruppe | young adult novel |
+| Setting / Zeit | <…> |
+| Hauptfiguren + Entwicklung | <…> |
+| Zentrale Themen | <…> |
+| Erzählperspektive | <…> |
+| Typische Klausur-Aufgaben | character analysis / creative writing / comment |
+```
+
+### F3. Englisch · 第三文化国家替换清单（A5 回复 ≠ Nigeria 时）
+
+- [ ] `Bezugskultur-Nigeria-LK.md` → 重命名 + 重写（国别史 / 殖民遗产 / 当代议题 / 世界观与历史视角）
+- [ ] 去掉全文 `[据推断]` 标记（回复 = Nigeria 时**只做这一步**）
+- [ ] `Lernbaum-Englisch.md` §4 更新
+- [ ] `02_Englisch/Vokabeln-Anki` 对应术语卡替换
+
+### F4. Musik · 学期作品专属段（A7 到达后）
+
+```markdown
+## X. Halbjahr-Thema: <Epoche/Werk>
+
+| 项 | 内容 |
+|---|---|
+| Epoche / Werk | <…> |
+| 核心参数特征 | <Melodik / Harmonik / Rhythmik / Klangfarbe / Form> |
+| 与 IF1 / IF2 / IF3 的连接点 | <每个 IF 各 1 条> |
+| 可能的 Hörbeispiele | <…> |
+```
+
+配套：重排 `Lernbaum-Musik.md` §4 优先级；勾选 `09_Musik-mündl/Lehrplan.md` §3 TODO。
+
+### F5. Sport · IF 组合冲刺计划（A11 到达后）
+
+1. 用 §A.1 速查表列出「选中的 2 行 + 跨 IF 必读行」的笔记清单
+2. 排序：**理论骨架 → 口试话术 → 实践挂靠**
+3. **未选中的 4 个 IF 笔记保留作对照背景**（口试可能追问跨 IF 关系），但不投入主力时间
+4. 实践部分：按 A10/A13 圈定 BF/SB 与项目，用 `Phasenmodelle-und-Beobachtungsbogen.md` 建实例
+
+---
+
 ## 变更记录
 
 - 2026-09-25：创建。汇总 A（老师问询 15 项）· B（账号权限 6 项）· C（真人验收 3 项）· D（App 工程债 7 项）；本轮处理 A/B，C/D 暂缓（用户指示）。

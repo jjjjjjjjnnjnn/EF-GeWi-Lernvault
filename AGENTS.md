@@ -66,6 +66,7 @@ tags: [EF, SoWi]      # 首标签=EF，次标签=学科
 6. 不装新Obsidian插件、不改 `.obsidian/*.json`（除非用户明确要求）；`workspace.json / cache / data.json` 永不提交。
 7. 跑任何 `deeptutor` 命令前先 `. .\scripts\dt-env.ps1`；`data/` 目录永不进vault（见 `00_META/DeepTutor.md` §0）。
 8. `scripts/*.ps1` 注释必须纯ASCII（PS 5.1读无BOM-UTF8中文注释会误解析，实测丢env；路径里的中文除外）。
+9. **未定事项**用 `⏳ 待确认：` 标记并**继续按考纲常规分支展开**（不停摆），同时在 `00_META/Blocker-Register.md` 登记一条（含「阻断范围 / 脱敏状态 / 答案到达后的动作」）；需问老师的统一走 `00_META/Lehrkraft-Anfragen.md` 的德语问询稿，**不要分次打扰**。涉及 web/App 的阻塞（C/D 类）登记后暂缓。
 
 ## 6. 检索入口
 
