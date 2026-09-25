@@ -17,7 +17,7 @@
 - **vault**（Obsidian 知识库，**内容真相源**）+ `App-EF-Lernvault/`（Tauri 桌面学习软件，**只读 vault、不写回**）。
 - 目标：德国 NRW Gymnasium EF 十科笔试/口试提分，中德双语，**完全离线**。
 - **内容铁律**：所有题目材料只能来自用户自己的笔记原文 —— **超纲率 = 0**。
-- **当前规模**：笔记 **354** · Anki 卡片 **1396** · 术语表 **751 行** · 十科 Abi-Baum 应试树 · 考纲体系（NRW 十科 + 中国理科四科 + 中德映射）。
+- **当前规模**：笔记 **355** · Anki 卡片 **1396** · 术语表 **751 行** · 十科 Abi-Baum 应试树 · 考纲体系（NRW 十科 + 中国理科四科 + 中德映射）。
 
 ---
 
@@ -35,7 +35,7 @@
 ### 1. 先跑门禁建基线（3 条命令，确认「全绿」不是文档声明）
 
 ```bash
-python scripts/vault-check.py                      # 期望 PASS(354/1396/268)
+python scripts/vault-check.py                      # 期望 PASS(355/1396/270)
 cd App-EF-Lernvault && npx vitest run              # 期望 57 套件 / 379 测试
 cd App-EF-Lernvault && npm run build               # 期望 ✓ built
 ```
