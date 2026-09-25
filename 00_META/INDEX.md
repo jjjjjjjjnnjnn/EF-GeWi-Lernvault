@@ -216,6 +216,7 @@
 - [2026-09-24-s8-notenproduktion](Journal/2026-09-24-s8-notenproduktion.md) — **S8 笔记生产第一轮**：建立施工宪法 + 八段模板，并行 subagent 产出 **156 篇新笔记**（全库 127→283），Deutsch/Englisch 两科收官，含 429 限流与中断教训
 - [2026-09-25-s8-abschluss](Journal/2026-09-25-s8-abschluss.md) — **S8 全部收官**：十科施工图 **224/228 完成**（全库 127→**352 篇**，卡片 534→**1396**，Glossar +730 行），本地固化 **218 个官方源 PDF**
 - [2026-09-25-handover-aktualisierung](Journal/2026-09-25-handover-aktualisierung.md) — **交接前 HANDOVER 重写**：65 条历史归档至 `HANDOVER-Archiv.md`，正文瘦身为真正的一页 + 新增「接手后下一步」可执行清单
+- [2026-09-25-external-content-audit-and-app-sync](Journal/2026-09-25-external-content-audit-and-app-sync.md) — **外部成果审计收官与 App 全量数据管道打通**：十科 225/225 篇 100% 完工 + 1400 卡片/305 笔记打通客户端（三门禁全绿）
 - 约定：文件名 `YYYY-MM-DD-<thema>.md`，头部frontmatter（`fach`可空，`tags: [EF, Meta]`）。
 
 

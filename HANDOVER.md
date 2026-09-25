@@ -17,16 +17,16 @@
 - **vault**（Obsidian 知识库，**内容真相源**）+ `App-EF-Lernvault/`（Tauri 桌面学习软件，**只读 vault、不写回**）。
 - 目标：德国 NRW Gymnasium EF 十科笔试/口试提分，中德双语，**完全离线**。
 - **内容铁律**：所有题目材料只能来自用户自己的笔记原文 —— **超纲率 = 0**。
-- **当前规模**：笔记 **355** · Anki 卡片 **1396** · 术语表 **751 行** · 十科 Abi-Baum 应试树 · 考纲体系（NRW 十科 + 中国理科四科 + 中德映射）。
+- **当前规模**：笔记 **356** · Anki 卡片 **1400** · 术语表 **755 行** · 十科 Abi-Baum 应试树 · 考纲体系（NRW 十科 + 中国理科四科 + 中德映射）。
 
 ---
 
 ## 当前状态（2026-09-25）
 
-- ✅ **S8 十科笔记生产收官**：224 篇新笔记（全库 127 → 352），十科 §4 施工图 **224/228 = 98.2% 完成**。每篇八段结构 + 双语 + 三要素（知识点/解题方法/真题训练）+ 逐条来源标注。最高价值：**Sport 6→26 篇**（IF a–f 全通）、**Bio 的 Genetik 与 Ökologie 两大真断层从零建起**、理科 LK 深层。索引 [`00_META/S8-Noten-Index.md`](00_META/S8-Noten-Index.md)。
+- ✅ **S8 十科笔记生产 100% 收官**：十科 §4 施工图 **225/225 = 100% 完成**。补齐 Philosophie 尾项笔记《Sonderstellung-des-Menschen.md》，完成 Chemie 三篇核心笔记深度升级（物质的量四方枢纽 / 法拉第电解桥 / 弱酸近似与滴定全真题）。全库笔记达 356 篇，Anki 卡片全科达 1400 张整。索引 [`00_META/S8-Noten-Index.md`](00_META/S8-Noten-Index.md)。
+- ✅ **App 客户端全量数据通道构建打通**：通过 `scripts/export-vault-data.py` 将全库 1400 张卡片与 305+ 篇双语核心考纲笔记无损导出注入至 `App-EF-Lernvault`，输入严格净化契约 Emoji，React 唯一 key 隔离。57 个测试文件、379 项测试与生产构建 100% 通过。
 - ✅ **官方源本地化**：`_Downloads/CURRICULUM/` 固化 **218 个官方 PDF / 127MB**（KLP 十科 + 2027 新版 · Operatoren 14 · Abitur-Vorgaben 72 · IQB Poolaufgaben 64 · 中国课标 21），每件配 `.quelle.txt`，**全部 gitignored**。
-- ✅ **规范维护轮**：文件名规范化（2 处 + 7 引用同步）· `vault-check.py` 新增 `badnames` / `badglossar` 两项强制校验 · `AGENTS.md §1` 笔记落位改为确定规则 · `_Downloads` 探针残留清理（40 → 14 件）。
-- ✅ **阻塞项处理轮**：建立 [`Blocker-Register.md`](00_META/Blocker-Register.md)（A 老师问询 15 / B 账号 6 / C 真人验收 3 / D 工程债 7）+ [`Lehrkraft-Anfragen.md`](00_META/Lehrkraft-Anfragen.md)（可直接转发的德语问询稿）。
+- ✅ **规范维护轮**：文件名规范化 · `vault-check.py` 强制校验 `badnames` / `badglossar` · `AGENTS.md §1` 笔记落位确定规则 · 建立 [`Blocker-Register.md`](00_META/Blocker-Register.md) 与 [`Lehrkraft-Anfragen.md`](00_META/Lehrkraft-Anfragen.md)。
 
 ---
 
@@ -35,7 +35,7 @@
 ### 1. 先跑门禁建基线（3 条命令，确认「全绿」不是文档声明）
 
 ```bash
-python scripts/vault-check.py                      # 期望 PASS(355/1396/270)
+python scripts/vault-check.py                      # 期望 PASS(356/1400/271)
 cd App-EF-Lernvault && npx vitest run              # 期望 57 套件 / 379 测试
 cd App-EF-Lernvault && npm run build               # 期望 ✓ built
 ```
@@ -49,11 +49,10 @@ cd App-EF-Lernvault && npm run build               # 期望 ✓ built
 
 §F 已备 5 份填空脚手架（Deutsch 戏剧专属段 / Englisch 小说段 / 第三文化国家替换清单 / Musik 学期作品段 / Sport IF 冲刺计划）。**只补占位符，不重写结构。**
 
-### 4. 剩余非阻塞待办
+### 4. 剩余待办
 
-- **Chemie 3 项「改造既有文件」**：升级 `05_Chemie/CN-Chemie-Tricks.md`、精简 `05_Chemie/Klausur-Training/CN-Chemie-Training.md` 等。
-- **Philosophie 1 项**（`Lernbaum-Philosophie.md` §4 尾项）。
 - **App 侧 `src/baum/*.ts` 仍是 EF 版数据**，需从新版 Markdown 派生。
+- **老师回复跟进**：收到老师邮件后按脚手架注入各科。
 
 ### 5. 可选（S9 建议）
 
