@@ -272,6 +272,18 @@ export default function Library({ query, vault, selectedFach, selectedNoteId, on
                   <div className="text-xs font-sans text-[var(--gray)] mt-0.5 break-words">
                     {n.sub}
                   </div>
+                  {n.operatoren.length > 0 && (
+                    <div className="flex flex-wrap gap-1 mt-1.5">
+                      {n.operatoren.map((op) => (
+                        <span
+                          key={op}
+                          className="border border-[var(--line)] px-1 py-0.2 text-[10px] font-mono text-[var(--gray)] rounded-sm"
+                        >
+                          {op}
+                        </span>
+                      ))}
+                    </div>
+                  )}
                 </button>
               );
             })
@@ -298,6 +310,29 @@ export default function Library({ query, vault, selectedFach, selectedNoteId, on
                     </span>
                   ))}
                 </div>
+                {open.tags && open.tags.length > 0 && (
+                  <>
+                    <span>·</span>
+                    <div className="flex flex-wrap gap-1">
+                      {open.tags.map((tg) => (
+                        <span
+                          key={tg}
+                          className="border border-[var(--line)] bg-[var(--paper)] px-1.5 py-0.5 text-[10px] font-mono text-[var(--gray)] rounded-sm"
+                        >
+                          #{tg}
+                        </span>
+                      ))}
+                    </div>
+                  </>
+                )}
+                {open.datum && (
+                  <>
+                    <span>·</span>
+                    <span className="text-[11px] font-mono text-[var(--gray)]">
+                      {open.datum}
+                    </span>
+                  </>
+                )}
                 {open.klausurrelevant && (
                   <>
                     <span>·</span>

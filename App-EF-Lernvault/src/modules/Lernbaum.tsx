@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState, type ReactNode } from "react";
 import type { KeyboardEvent as ReactKeyboardEvent, PointerEvent as ReactPointerEvent } from "react";
 import {
   baueSuchIndex,
@@ -69,11 +69,11 @@ const BOX_W = 208;
 const BOX_H = 64;
 const ROOT_W = 256;
 const GAP_X = 28;
-const STEP_Y = 150;
+const STEP_Y = 124;
 const MIN_ZOOM = 0.5;
 const MAX_ZOOM = 1.6;
 const PENDING_MARK = "\u23F3";
-const CANVAS_HOEHE = 480;
+const CANVAS_HOEHE = 520;
 
 const KEY_SEARCH: KeyBinding = PER_MODULE_KEYS.lernbaum[0];
 const KEY_TOGGLE_ALL: KeyBinding = PER_MODULE_KEYS.lernbaum[1];
@@ -322,6 +322,7 @@ export default function Lernbaum({
   const [internesFach, setInternesFach] = useState("alle");
   const [reduziert, setReduziert] = useState(false);
   const [ziehen, setZiehen] = useState(false);
+  const [ansicht, setAnsicht] = useState<"karte" | "liste">("karte");
   const sucheRef = useRef<HTMLInputElement>(null);
   const flaecheRef = useRef<HTMLDivElement>(null);
   const zugRef = useRef({ aktiv: false, startX: 0, startY: 0, basisX: 0, basisY: 0 });
@@ -459,6 +460,21 @@ export default function Lernbaum({
     setZoom(1);
     setVersatz({ x: 0, y: 0 });
   }, []);
+
+  const einpassen = useCallback(() => {
+    const flaeche = flaecheRef.current;
+    if (!flaeche || layout.knoten.length === 0) return;
+    const flaecheB = flaeche.clientWidth || 800;
+    const flaecheH = flaeche.clientHeight || CANVAS_HOEHE;
+    const pad = 48;
+    const faktor = Math.min((flaecheB - pad) / layout.breite, (flaecheH - pad) / layout.hoehe);
+    const sauber = begrenzeZoom(Math.min(1.2, Math.max(MIN_ZOOM, faktor)));
+    setZoom(sauber);
+    setVersatz({
+      x: Math.round((flaecheB - layout.breite * sauber) / 2),
+      y: Math.max(16, Math.round((flaecheH - layout.hoehe * sauber) / 2)),
+    });
+  }, [layout]);
 
   const waehleFach = useCallback(
     (fach: string) => {
@@ -607,6 +623,111 @@ export default function Lernbaum({
       : (auswahl?.knoten.titleDE ?? "");
   const suchtAktiv = query.trim().length > 0;
 
+  function renderGliederungsKnoten(node: BaumNode, fach: string, tiefe: number): ReactNode {
+    const istEingeklappt = eingeklappt.has(node.id);
+    const istSelektiert = auswahlId === node.id;
+    const status = statusKarte.get(node.id) ?? "luecke";
+    const hatKinder = node.children.length > 0;
+    return (
+      <div key={node.id} className="space-y-1">
+        <div
+          className={`flex items-center justify-between gap-2 rounded-[var(--radius)] border px-3 py-2 transition-colors ${
+            istSelektiert
+              ? "border-[var(--accent)] bg-[var(--paper)]"
+              : "border-[var(--line)] bg-[var(--surface)] hover:bg-[var(--paper)]"
+          }`}
+          style={{ marginLeft: `${Math.min(tiefe * 16, 64)}px` }}
+        >
+          <div className="flex min-w-0 items-center gap-2">
+            {hatKinder ? (
+              <button
+                type="button"
+                onClick={() => schalteKnoten(node.id)}
+                aria-label={
+                  istEingeklappt
+                    ? lang === "de"
+                      ? `Ast aufklappen: ${node.titleDE}`
+                      : `展开分支：${node.titleDE}`
+                    : lang === "de"
+                      ? `Ast einklappen: ${node.titleDE}`
+                      : `收起分支：${node.titleDE}`
+                }
+                aria-expanded={!istEingeklappt}
+                className="flex h-5 w-5 shrink-0 items-center justify-center rounded-[var(--radius)] border border-[var(--line)] bg-[var(--paper)] text-[var(--ink)] cursor-pointer"
+              >
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="1.5"
+                  strokeLinecap="round"
+                  aria-hidden="true"
+                >
+                  {istEingeklappt ? (
+                    <path d="M6 4l4 4-4 4" />
+                  ) : (
+                    <path d="M4 6l4 4 4-4" />
+                  )}
+                </svg>
+              </button>
+            ) : (
+              <span className="h-5 w-5 shrink-0" aria-hidden="true" />
+            )}
+
+            <button
+              type="button"
+              onClick={() => setAuswahlId(node.id)}
+              aria-label={`${node.titleDE} · ${node.titleZH}`}
+              className="flex min-w-0 flex-1 flex-col text-left cursor-pointer"
+            >
+              <div className="flex flex-wrap items-baseline gap-2">
+                <span className="font-mono text-xs text-[var(--gray)]">
+                  [{node.code}]
+                </span>
+                <span
+                  className={`font-serif ${
+                    tiefe === 0 ? "text-base font-semibold" : "text-sm font-normal"
+                  } text-[var(--ink)]`}
+                >
+                  {node.titleDE}
+                </span>
+                <span className="font-sans text-xs text-[var(--gray)]">
+                  {node.titleZH}
+                </span>
+              </div>
+              {node.operatoren.length > 0 && (
+                <div className="mt-1 flex flex-wrap gap-1">
+                  {node.operatoren.map((op) => (
+                    <span
+                      key={op}
+                      className="rounded-[var(--radius)] border border-[var(--line)] px-1.5 py-0.5 font-mono text-xs text-[var(--gray)]"
+                    >
+                      {op}
+                    </span>
+                  ))}
+                </div>
+              )}
+            </button>
+          </div>
+
+          <div className="flex shrink-0 items-center gap-2">
+            <span className="rounded-[var(--radius)] border border-[var(--line)] px-2 py-0.5 font-mono text-xs text-[var(--gray)]">
+              {statusText(status, lang)}
+            </span>
+          </div>
+        </div>
+
+        {!istEingeklappt && hatKinder && (
+          <div className="space-y-1">
+            {node.children.map((kind) => renderGliederungsKnoten(kind, fach, tiefe + 1))}
+          </div>
+        )}
+      </div>
+    );
+  }
+
   return (
     <div className="mx-auto max-w-6xl space-y-5">
       <div className="flex items-center justify-between gap-4 border-b border-[var(--line)] pb-3">
@@ -743,6 +864,54 @@ export default function Lernbaum({
               <path d="M3 8a5 5 0 1 0 1.6-3.6M3 2.5V6h3.5" />
             </svg>
           </button>
+          <button
+            type="button"
+            onClick={einpassen}
+            aria-label={lang === "de" ? "Ansicht einpassen" : "全图适应"}
+            className="rounded-[var(--radius)] border border-[var(--line)] bg-[var(--surface)] p-1 text-[var(--ink)] hover:border-[var(--accent)]"
+          >
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="1.5"
+              strokeLinecap="round"
+              aria-hidden="true"
+            >
+              <path d="M2.5 5.5v-3h3M10.5 2.5h3v3M13.5 10.5v3h-3M5.5 13.5h-3v-3" />
+            </svg>
+          </button>
+        </div>
+
+        <div className="flex items-center gap-1 rounded-[var(--radius)] border border-[var(--line)] bg-[var(--surface)] p-0.5">
+          <button
+            type="button"
+            onClick={() => setAnsicht("karte")}
+            aria-label={lang === "de" ? "Kartenansicht" : "画布视图"}
+            aria-pressed={ansicht === "karte"}
+            className={`rounded-[var(--radius)] px-2 py-0.5 font-sans text-xs transition-colors cursor-pointer ${
+              ansicht === "karte"
+                ? "bg-[var(--ink)] text-[var(--paper)] font-medium"
+                : "text-[var(--gray)] hover:text-[var(--ink)]"
+            }`}
+          >
+            {lang === "de" ? "Karte" : "画布"}
+          </button>
+          <button
+            type="button"
+            onClick={() => setAnsicht("liste")}
+            aria-label={lang === "de" ? "Gliederungsansicht" : "大纲视图"}
+            aria-pressed={ansicht === "liste"}
+            className={`rounded-[var(--radius)] px-2 py-0.5 font-sans text-xs transition-colors cursor-pointer ${
+              ansicht === "liste"
+                ? "bg-[var(--ink)] text-[var(--paper)] font-medium"
+                : "text-[var(--gray)] hover:text-[var(--ink)]"
+            }`}
+          >
+            {lang === "de" ? "Gliederung" : "大纲"}
+          </button>
         </div>
       </div>
 
@@ -755,7 +924,9 @@ export default function Lernbaum({
             onPointerMove={onHintergrundZeigerBewegen}
             onPointerUp={onHintergrundZeigerHoch}
             onPointerLeave={onHintergrundZeigerHoch}
-            className="rounded-[var(--radius)] border border-[var(--line)] bg-[var(--paper)]"
+            className={`rounded-[var(--radius)] border border-[var(--line)] bg-[var(--paper)] ${
+              ansicht === "karte" ? "block" : "hidden"
+            }`}
             style={{
               position: "relative",
               height: `${CANVAS_HOEHE}px`,
@@ -946,6 +1117,33 @@ export default function Lernbaum({
               })}
             </div>
           </div>
+
+          {ansicht === "liste" && (
+            <div className="max-h-[520px] space-y-3 overflow-y-auto rounded-[var(--radius)] border border-[var(--line)] bg-[var(--paper)] p-3">
+              <div className="border-b border-[var(--line)] pb-2">
+                <p className="font-sans text-xs text-[var(--gray)]">
+                  {lang === "de"
+                    ? "Hierarchische Fachgliederung (100% responsive, klickbar für Details)"
+                    : "层级知识大纲（自适应宽度，点击查看考纲详情与笔记）"}
+                </p>
+              </div>
+              <div className="space-y-2">
+                {sichtbareBaeume.map((baum) => (
+                  <div key={baum.fach} className="space-y-1.5 border-b border-[var(--line)] pb-3 last:border-b-0">
+                    <div className="flex items-center justify-between gap-2 px-1">
+                      <span className="font-mono text-xs font-semibold text-[var(--accent)]">
+                        {baum.fach} · {baum.klpReferenz}
+                      </span>
+                      <span className="font-sans text-xs text-[var(--gray)]">
+                        {lang === "de" ? baum.klausurFokusDE : baum.klausurFokusZH}
+                      </span>
+                    </div>
+                    {renderGliederungsKnoten(baum.root, baum.fach, 0)}
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
         </div>
 
         <div className="w-full shrink-0 lg:w-80">

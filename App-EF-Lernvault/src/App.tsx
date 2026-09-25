@@ -185,8 +185,30 @@ export default function App() {
   const [selectedNoteId, setSelectedNoteId] = useState<string | undefined>(undefined);
   const tr = t(lang);
 
+  type PrimaryWorkspace = "home" | "wissen" | "karten" | "training" | "tutor" | "einstellungen";
+
+  const getWorkspaceForTab = (t: Tab): PrimaryWorkspace => {
+    if (t === "home") return "home";
+    if (["library", "lernbaum", "mindmap", "planner"].includes(t)) return "wissen";
+    if (t === "flashcards") return "karten";
+    if (["klausursim", "quiz", "werkzeuge"].includes(t)) return "training";
+    if (["tutor", "reise"].includes(t)) return "tutor";
+    return "einstellungen";
+  };
+
+  const [lastWissenTab, setLastWissenTab] = useState<Tab>("library");
+  const [lastTrainingTab, setLastTrainingTab] = useState<Tab>("klausursim");
+  const [lastTutorTab, setLastTutorTab] = useState<Tab>("tutor");
+
   const switchTab = (id: Tab) => {
     setTab(id);
+    if (["library", "lernbaum", "mindmap", "planner"].includes(id)) {
+      setLastWissenTab(id);
+    } else if (["klausursim", "quiz", "werkzeuge"].includes(id)) {
+      setLastTrainingTab(id);
+    } else if (["tutor", "reise"].includes(id)) {
+      setLastTutorTab(id);
+    }
     if (typeof window !== "undefined") {
       const url = new URL(window.location.href);
       url.searchParams.set("tab", id);
@@ -200,46 +222,92 @@ export default function App() {
     icon: ReactNode;
   }
 
-  interface NavZone {
-    title: string;
-    items: NavItem[];
+  interface SubNavItem extends NavItem {
+    shortcut: string;
   }
 
-  const navZones: NavZone[] = [
+  const wissenTabs: SubNavItem[] = [
+    { id: "library", label: tr.library, shortcut: "Alt 2", icon: icons.library },
+    { id: "lernbaum", label: tr.lernbaum, shortcut: "Alt B", icon: icons.lernbaum },
+    { id: "mindmap", label: tr.mindmap, shortcut: "Alt 8", icon: icons.mindmap },
+    { id: "planner", label: tr.planner, shortcut: "Alt 7", icon: icons.planner },
+  ];
+
+  const trainingTabs: SubNavItem[] = [
+    { id: "klausursim", label: tr.klausursim, shortcut: "Alt 5", icon: icons.klausursim },
+    { id: "quiz", label: tr.quiz, shortcut: "Alt 4", icon: icons.quiz },
+    { id: "werkzeuge", label: tr.werkzeuge, shortcut: "Alt W", icon: icons.werkzeuge },
+  ];
+
+  const tutorTabs: SubNavItem[] = [
+    { id: "tutor", label: tr.tutor, shortcut: "Alt 6", icon: icons.tutor },
+    { id: "reise", label: tr.reise, shortcut: "Alt 9", icon: icons.reise },
+  ];
+
+  interface PrimaryNavItem {
+    workspace: PrimaryWorkspace;
+    label: string;
+    icon: ReactNode;
+    shortcut: string;
+    onSelect: () => void;
+  }
+
+  const primaryNavItems: PrimaryNavItem[] = [
     {
-      title: tr.navZoneOverview,
-      items: [
-        { id: "home", label: tr.home, icon: icons.home },
-        { id: "planner", label: tr.planner, icon: icons.planner },
-      ],
+      workspace: "home",
+      label: tr.home,
+      icon: icons.home,
+      shortcut: "Alt 1",
+      onSelect: () => switchTab("home"),
     },
     {
-      title: tr.navZoneKnowledge,
-      items: [
-        { id: "library", label: tr.library, icon: icons.library },
-        { id: "mindmap", label: tr.mindmap, icon: icons.mindmap },
-        { id: "lernbaum", label: tr.lernbaum, icon: icons.lernbaum },
-      ],
+      workspace: "wissen",
+      label: lang === "de" ? "Wissen" : "知识库",
+      icon: icons.library,
+      shortcut: "Alt 2",
+      onSelect: () => switchTab(lastWissenTab),
     },
     {
-      title: tr.navZoneTraining,
-      items: [
-        { id: "werkzeuge", label: tr.werkzeuge, icon: icons.werkzeuge },
-        { id: "flashcards", label: tr.flashcards, icon: icons.flashcards },
-        { id: "quiz", label: tr.quiz, icon: icons.quiz },
-        { id: "klausursim", label: tr.klausursim, icon: icons.klausursim },
-        { id: "reise", label: tr.reise, icon: icons.reise },
-      ],
+      workspace: "karten",
+      label: tr.flashcards,
+      icon: icons.flashcards,
+      shortcut: "Alt 3",
+      onSelect: () => switchTab("flashcards"),
     },
     {
-      title: tr.navZoneSystem,
-      items: [
-        { id: "tutor", label: tr.tutor, icon: icons.tutor },
-      ],
+      workspace: "training",
+      label: lang === "de" ? "Training" : "训练模考",
+      icon: icons.klausursim,
+      shortcut: "Alt 5",
+      onSelect: () => switchTab(lastTrainingTab),
+    },
+    {
+      workspace: "tutor",
+      label: tr.tutor,
+      icon: icons.tutor,
+      shortcut: "Alt 6",
+      onSelect: () => switchTab(lastTutorTab),
     },
   ];
 
-  const allNavItems: NavItem[] = useMemo(() => navZones.flatMap((z) => z.items), [lang]);
+  const allNavItems: NavItem[] = useMemo(
+    () => [
+      { id: "home", label: tr.home, icon: icons.home },
+      { id: "library", label: tr.library, icon: icons.library },
+      { id: "lernbaum", label: tr.lernbaum, icon: icons.lernbaum },
+      { id: "mindmap", label: tr.mindmap, icon: icons.mindmap },
+      { id: "planner", label: tr.planner, icon: icons.planner },
+      { id: "flashcards", label: tr.flashcards, icon: icons.flashcards },
+      { id: "klausursim", label: tr.klausursim, icon: icons.klausursim },
+      { id: "quiz", label: tr.quiz, icon: icons.quiz },
+      { id: "werkzeuge", label: tr.werkzeuge, icon: icons.werkzeuge },
+      { id: "tutor", label: tr.tutor, icon: icons.tutor },
+      { id: "reise", label: tr.reise, icon: icons.reise },
+      { id: "einstellungen", label: tr.settings, icon: icons.einstellungen },
+    ],
+    [tr]
+  );
+  const currentWorkspace = getWorkspaceForTab(tab);
   const [tutorPrefilledInput, setTutorPrefilledInput] = useState<string | undefined>(undefined);
 
   const jumpToTutor = (prefilled?: string) => {
@@ -511,39 +579,31 @@ export default function App() {
           </div>
         </div>
 
-        <nav className="flex flex-col space-y-2 overflow-y-auto">
-          {navZones.map((zone, zIdx) => (
-            <div key={zone.title} className="space-y-0.5">
-              <div className="hidden xl:block px-2.5 py-1 font-mono text-[10px] uppercase tracking-wider text-[var(--gray)] select-none">
-                {zone.title}
-              </div>
-              {zIdx > 0 && <div className="xl:hidden my-1 border-t border-[var(--line)]" />}
-              {zone.items.map((n) => {
-                const isActive = tab === n.id;
-                return (
-                  <button
-                    key={n.id}
-                    onClick={() => switchTab(n.id)}
-                    aria-current={isActive ? "page" : undefined}
-                    aria-label={n.label}
-                    title={n.label}
-                    className={`group flex h-10 w-full items-center justify-center rounded-[var(--radius)] px-2.5 text-left text-xs transition-all duration-[var(--dur-normal)] cursor-pointer active:scale-[0.98] xl:justify-start xl:gap-2.5 ${
-                      isActive
-                        ? "border-l-2 border-[var(--accent)] bg-[var(--surface)] font-medium text-[var(--accent)] shadow-none"
-                        : "border-l-2 border-transparent text-[var(--gray)] hover:bg-[var(--surface)] hover:text-[var(--ink)] active:bg-[var(--paper-subtle)]"
-                    }`}
-                  >
-                    <span className="flex h-5 w-5 shrink-0 items-center justify-center select-none text-current">
-                      {n.icon}
-                    </span>
-                    <span className="hidden truncate font-sans text-xs font-medium xl:inline">
-                      {n.label}
-                    </span>
-                  </button>
-                );
-              })}
-            </div>
-          ))}
+        <nav className="flex flex-col space-y-1 overflow-y-auto">
+          {primaryNavItems.map((n) => {
+            const isWorkspaceActive = currentWorkspace === n.workspace;
+            return (
+              <button
+                key={n.workspace}
+                onClick={n.onSelect}
+                aria-current={isWorkspaceActive ? "page" : undefined}
+                aria-label={n.label}
+                title={`${n.label} (${n.shortcut})`}
+                className={`group flex h-10 w-full items-center justify-center rounded-[var(--radius)] px-2.5 text-left text-xs transition-all duration-[var(--dur-normal)] cursor-pointer active:scale-[0.98] xl:justify-start xl:gap-2.5 ${
+                  isWorkspaceActive
+                    ? "border-l-2 border-[var(--accent)] bg-[var(--surface)] font-medium text-[var(--accent)] shadow-none"
+                    : "border-l-2 border-transparent text-[var(--gray)] hover:bg-[var(--surface)] hover:text-[var(--ink)] active:bg-[var(--paper-subtle)]"
+                }`}
+              >
+                <span className="flex h-5 w-5 shrink-0 items-center justify-center select-none text-current">
+                  {n.icon}
+                </span>
+                <span className="hidden truncate font-sans text-xs font-medium xl:inline">
+                  {n.label}
+                </span>
+              </button>
+            );
+          })}
         </nav>
 
         <div className="mt-3 border-t border-[var(--line)] pt-2">
@@ -637,6 +697,42 @@ export default function App() {
             )}
           </div>
         </header>
+
+        {/* Workspace Sub-tabs Segment Bar */}
+        {(currentWorkspace === "wissen" || currentWorkspace === "training" || currentWorkspace === "tutor") && (
+          <div className="flex h-10 shrink-0 flex-wrap items-center gap-1.5 border-b border-[var(--line)] bg-[var(--paper-subtle)] px-4 sm:px-6">
+            <span className="font-mono text-[var(--text-meta)] uppercase tracking-wider text-[var(--gray)] mr-1">
+              {currentWorkspace === "wissen"
+                ? (lang === "de" ? "Wissen:" : "知识:")
+                : currentWorkspace === "training"
+                ? (lang === "de" ? "Training:" : "训练:")
+                : (lang === "de" ? "Tutor:" : "辅导:")}
+            </span>
+            {(currentWorkspace === "wissen" ? wissenTabs : currentWorkspace === "training" ? trainingTabs : tutorTabs).map((sub) => {
+              const isActive = tab === sub.id;
+              return (
+                <button
+                  key={sub.id}
+                  type="button"
+                  onClick={() => switchTab(sub.id)}
+                  aria-current={isActive ? "page" : undefined}
+                  aria-label={sub.label}
+                  className={`flex items-center gap-1.5 rounded-[var(--radius)] px-2.5 py-1 text-xs font-sans transition-colors cursor-pointer ${
+                    isActive
+                      ? "bg-[var(--ink)] text-[var(--paper)] font-medium"
+                      : "border border-[var(--line)] bg-[var(--surface)] text-[var(--ink)] hover:border-[var(--accent)]"
+                  }`}
+                >
+                  <span className="shrink-0">{sub.icon}</span>
+                  <span>{sub.label}</span>
+                  <span className={`font-mono text-[var(--text-meta)] ${isActive ? "text-[var(--paper-subtle)] opacity-75" : "text-[var(--gray)]"}`}>
+                    {sub.shortcut}
+                  </span>
+                </button>
+              );
+            })}
+          </div>
+        )}
 
         {/* Content Viewport */}
         <div key={tab} className="tab-enter min-w-0 flex-1 overflow-y-auto p-4 sm:p-6 xl:p-8">
