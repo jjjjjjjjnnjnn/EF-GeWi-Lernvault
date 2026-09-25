@@ -137,7 +137,7 @@ tags: [EF, Meta]
 | Artikulation | 演奏法 | Musik | Legato bindet, Staccato trennt die Töne. |
 | Steigung | 斜率 | Mathe | m in f(x) = mx + b gibt die Steigung an. |
 | y-Achsenabschnitt | y轴截距 | Mathe | b = f(0) ist der y-Achsenabschnitt. |
-| Scheitelpunkt | 顶点 | Mathe | S(d|e) ist der Scheitelpunkt der Parabel. |
+| Scheitelpunkt | 顶点 | Mathe | S(d, e) ist der Scheitelpunkt der Parabel. |
 | Zwei-Punkte-Formel | 两点式 | Mathe | m = (y2-y1)/(x2-x1) aus zwei Punkten. |
 | gleichförmige Bewegung | 匀速直线运动 | Physik | Die gleichförmige Bewegung hat konstante Geschwindigkeit. |
 | Durchschnittsgeschwindigkeit | 平均速度 | Physik | Gesamtstrecke durch Gesamtzeit ergibt die Durchschnittsgeschwindigkeit. |
@@ -514,3 +514,265 @@ tags: [EF, Meta]
 | widerspruchsfreie Denkbarkeit | 无矛盾可设想性 | Philosophie | Die widerspruchsfreie Denkbarkeit prueft den logischen Gehalt einer universalisierten Maxime. |
 | widerspruchsfreie Wollbarkeit | 无矛盾可意愿性 | Philosophie | Die widerspruchsfreie Wollbarkeit prueft, ob ein vernuenftiger Wille das Gesetz bejahen kann. |
 | deontologischer Pflichtbegriff | 义务论职责概念 | Philosophie | Der deontologische Pflichtbegriff bindet Moral an reine Pflicht statt an Folgen. |
+| Abwägung | 权衡 | Deutsch | Ohne Abwägung bleibt die Erörterung auf der Stufe der Aufzählung stehen. |
+| Textgrundlage | 文本基础 | Deutsch | Bei Aufgabenart IIIb bildet der pragmatische Text die Textgrundlage. |
+| geschlossene Form | 封闭戏剧形式 | Deutsch | Die geschlossene Form hält Ort, Zeit und Handlung streng zusammen. |
+| offene Form | 开放戏剧形式 | Deutsch | Die offene Form arbeitet mit vielen Stationen und Zeitsprüngen. |
+| Handlungsaufbau | 情节结构 | Deutsch | Der Handlungsaufbau wird über Akt- und Szenengliederung beschrieben. |
+| Vergleichsmaßstab | 比较维度 | Deutsch | Ohne gemeinsamen Vergleichsmaßstab bleibt der Vergleich beliebig. |
+| Auktoriale Erzählsituation | 全知叙述情境 | Deutsch | In der auktorialen Erzählsituation kommentiert der Erzähler das Geschehen. |
+| Personale Erzählsituation | 人物视角叙述情境 | Deutsch | In der personalen Erzählsituation bleibt der Erzähler an eine Figur gebunden. |
+| Ich-Erzählsituation | 第一人称叙述情境 | Deutsch | In der Ich-Erzählsituation ist der Erzähler selbst Teil der Handlung. |
+| Fokalisierung | 聚焦 | Deutsch | Die Fokalisierung legt fest, wessen Wahrnehmung der Text zeigt. |
+| Raffung | 叙事压缩 | Deutsch | Durch Raffung werden Jahre in wenigen Sätzen zusammengefasst. |
+| Dehnung | 叙事延展 | Deutsch | Die Dehnung breitet einen kurzen Moment über mehrere Seiten aus. |
+| Rückblende (Analepse) | 倒叙 | Deutsch | Die Rückblende erklärt die Vorgeschichte der Figur. |
+| Vorausdeutung (Prolepse) | 预叙 | Deutsch | Die Vorausdeutung deutet das spätere Unglück bereits an. |
+| Drei-Schritt-Kette | 引用三步链 | Deutsch | Die Drei-Schritt-Kette verbindet Zitat, Zeilenangabe und Wirkung. |
+| Wirkungssatz | 作用句 | Deutsch | Jeder Wirkungssatz erklärt, was das sprachliche Mittel beim Leser bewirkt. |
+| Formulierungsbaustein | 句式模块 | Deutsch | Ein Formulierungsbaustein lässt sich in vielen Analysen wiederverwenden. |
+| Sprechsituation | 说话情境 | Deutsch | Die Sprechsituation klärt, wer zu wem in welchem Ton spricht. |
+| Öffentlichkeit | 公共性 | Deutsch | Die Grenze zwischen Öffentlichkeit und Privatheit verläuft fließend. |
+| symmetrische Kommunikation | 对称交际 | Deutsch | Symmetrische Kommunikation setzt gleiche Redeanteile voraus. |
+| asymmetrische Kommunikation | 非对称交际 | Deutsch | Asymmetrische Kommunikation ist nicht automatisch Manipulation. |
+| vernetzte Kommunikation | 网络化交际 | Deutsch | Vernetzte Kommunikation ist mehrfach adressiert und leicht weiterleitbar. |
+| Sender / Empfänger | 发送者／接收者 | Deutsch | Im Sender-Empfänger-Modell wird die Botschaft kodiert und dekodiert. |
+| Materialdossier | 材料包 | Deutsch | Aus dem Materialdossier werden nur die relevanten Angaben ausgewählt. |
+| Zieltext | 目标文本 | Deutsch | Der Zieltext entscheidet über Textsorte und Register. |
+| Geltungsanspruch | 有效性主张 | Deutsch | Jede Nachricht erhebt einen Geltungsanspruch, der geprüft werden muss. |
+| Einstellungsgröße | 景别 | Deutsch | Die Einstellungsgröße reicht von der Totalen bis zur Detailaufnahme. |
+| Kameraperspektive | 摄影机视角 | Deutsch | Die Untersicht der Kameraperspektive lässt die Figur mächtig erscheinen. |
+| Montage | 剪辑 | Deutsch | Durch die Montage entstehen neue Bedeutungen zwischen den Bildern. |
+| Mise en scène | 场面调度 | Deutsch | Die Mise en scène umfasst Licht, Kostüm und Bildkomposition. |
+| Medialität | 媒介性 | Deutsch | Die Medialität prägt, was überhaupt erzählt werden kann. |
+| medialer Umbruch | 媒介断裂 | Deutsch | Der mediale Umbruch zur digitalen Vernetzung verändert die Rolle des Rezipienten. |
+| Prosument | 产消者 | Deutsch | Der Prosument ist zugleich Empfänger und Produzent von Inhalten. |
+| Aufmerksamkeitsökonomie | 注意力经济 | Deutsch | In der Aufmerksamkeitsökonomie konkurrieren alle Inhalte um dieselbe Zeit. |
+| Filterblase / Echokammer | 过滤气泡／回音室 | Deutsch | Algorithmen können eine Filterblase erzeugen, in der nur Gleiches sichtbar bleibt. |
+| Agenda-Setting | 议程设置 | Deutsch | Agenda-Setting erklärt, warum manche Themen öffentlich wichtig erscheinen. |
+| Phonologie | 语音学层面 | Deutsch | Auf der Ebene der Phonologie fallen Alliteration und Assonanz auf. |
+| Syntax | 句法 | Deutsch | Auf der Ebene der Syntax prägt die Häufung von Hypotaxen den Text. |
+| Semantik | 语义 | Deutsch | Die Semantik unterscheidet Denotation und Konnotation eines Wortes. |
+| Pragmatik | 语用 | Deutsch | Die Pragmatik fragt, was mit einer Äußerung im Kontext bewirkt wird. |
+| Soziolekt | 社会方言 | Deutsch | Ein Soziolekt markiert die Zugehörigkeit zu einer sozialen Gruppe. |
+| Arbitrarität | 任意性 | Deutsch | Die Arbitrarität des Zeichens bedeutet, dass Form und Bedeutung nicht natürlich verbunden sind. |
+| sprachliche Relativität | 语言相对性 | Deutsch | Die sprachliche Relativität besagt, dass Sprache das Denken beeinflusst. |
+| Sprachskepsis | 语言怀疑论 | Deutsch | Die Sprachskepsis bezweifelt, ob Sprache die Wirklichkeit treffen kann. |
+| ZKE | EF 期末全州统考 | Deutsch | Die ZKE dauert 100 Minuten und wird landeseinheitlich gestellt. |
+| Zeitbudget | 时间预算 | Englisch | A clear time budget keeps the three parts of the exam under control. |
+| sinngemäß | 按意思传译 | Englisch | A mediation renders the text sinngemäß, not word for word. |
+| Zieltextformat | 目标文本格式 | Englisch | The Zieltextformat is assessed separately in the mediation. |
+| Erläuterungen hinzufügen | 补充说明 | Englisch | I add short explanations when the target reader lacks the cultural background. |
+| Rückübersetzung | 回译 | Englisch | A back-translation quickly reveals what I actually left out. |
+| Kulturäquivalenz | 文化对等 | Englisch | Cultural equivalence is reached by explaining rather than by translating. |
+| Beeinflussungsstrategie | 影响/操控策略 | Englisch | Loaded language is a classic Beeinflussungsstrategie in tabloid articles. |
+| loaded language | 带倾向的语言 | Englisch | Loaded language frames migration as a natural disaster. |
+| rhetorical question | 修辞问句 | Englisch | A rhetorical question pushes the reader towards the author's view. |
+| appeal (pathos/ethos/logos) | 诉求（情感/人格/逻辑） | Englisch | The speech combines an appeal to pathos with an appeal to logos. |
+| World Standard English | 世界标准英语 | Englisch | Listening tasks use different varieties of World Standard English. |
+| Varietät (variety) | 语言变体 | Englisch | Nigerian English is one variety within World Standard English. |
+| Aneignung | 吸纳／挪用 | Englisch | Aneignung means using the colonial language for one's own literature. |
+| Abgrenzung | 划界／区隔 | Englisch | Abgrenzung means distancing oneself from the colonial legacy. |
+| Postkolonialismus | 后殖民主义 | Englisch | Postcolonialism examines the lasting effects of colonial rule. |
+| Othering | 他者化 | Englisch | Othering constructs the colonised as fundamentally different. |
+| Funktionswortschatz | 功能词汇 | Englisch | Functional vocabulary structures the text rather than describing it. |
+| Interpretationswortschatz | 阐释词汇 | Englisch | Interpretive vocabulary names what the text does to the reader. |
+| stylistic device | 修辞手段 | Englisch | Naming a stylistic device alone is only AFB I. |
+| word field | 词场 | Englisch | The word field of illness runs through the whole article. |
+| Fehlerschwerpunkt | 错误重点 | Englisch | Each Fehlerschwerpunkt needs a different remedy. |
+| Selbstevaluation | 自我评估 | Englisch | Regular self-evaluation shows where my writing actually stands. |
+| Mehrsprachigkeitsprofil | 多语档案 | Englisch | My Mehrsprachigkeitsprofil records which languages I use and how. |
+| Hörsehverstehen | 视听理解 | Englisch | Audiovisual comprehension links sound and image. |
+| Gesamtaussage | 总意 | Englisch | The first listening is only for the overall meaning. |
+| Einzelinformationen | 细节信息 | Englisch | Detailed information is collected during the second listening. |
+| implizite Informationen | 隐含信息 | Englisch | The quotation marks imply a critical attitude without stating it. |
+| multimodale Texte | 多模态文本 | Englisch | Multimodal texts combine writing, image and data. |
+| Belegtechnik | 举证技法 | Englisch | A precise quoting technique uses line numbers to support each claim. |
+| Textsortenmerkmal | 文本类型特征 | Englisch | Identifying text-type features tells me which analysis tools to use. |
+| diskontinuierlicher Text | 非连续文本 | Englisch | A single chart is a discontinuous text. |
+| europäische Verortung | 欧洲定位 | Englisch | After Brexit the European positioning of the UK is debated again. |
+| zwischen Wandel und Tradition | 变迁与传统之间 | Englisch | The phrase between change and tradition frames the UK, the USA and the third culture. |
+| Streben nach Glück | 对幸福的追求 | Englisch | The pursuit of happiness is one of the three American ideals. |
+| pragmatische Angemessenheit | 语用适切性 | Englisch | Pragmatic appropriateness means the language fits the situation and the reader. |
+| hedging | 模糊限定 | Englisch | Hedging such as arguably keeps a claim cautious. |
+| Re-creation of text | 文本再创作 | Englisch | A re-creation of text continues the original in a new text type. |
+| inner monologue | 内心独白 | Englisch | An inner monologue shows a character's thoughts from within. |
+| Sprachlernkompetenz | 语言学习能力 | Englisch | Language-learning competence means planning my own learning. |
+| Wörterbuchstrategie | 词典策略 | Englisch | A good dictionary strategy decides when a monolingual dictionary helps more. |
+| Nominalisierung | 名词化 | Englisch | Nominalisation makes an analysis sound more academic. |
+| Partizipialkonstruktion | 分词结构 | Englisch | A participle clause compresses two ideas into one sentence. |
+| Verständigungssicherung | 理解保障 | Englisch | Securing understanding means rephrasing, asking back and giving examples. |
+| zusammenhängendes Sprechen | 连贯表达 | Englisch | Connected speech is assessed in the first part of the oral exam. |
+| Vortrag | 报告 | Englisch | In the Vortrag I present a prepared topic as a coherent whole. |
+| Volkssouveränität | 人民主权 | Philosophie | Nach Rousseau liegt die Volkssouveränität beim gesamten Volk. |
+| Liberale Demokratie | 自由民主 | Philosophie | Die liberale Demokratie schützt individuelle Rechte vor der Mehrheit. |
+| Republikanische Demokratie | 共和民主 | Philosophie | Die republikanische Demokratie verlangt die aktive Teilhabe der Bürger. |
+| Deliberative Demokratie | 审议民主 | Philosophie | In der deliberativen Demokratie entscheidet die Kraft des besseren Arguments. |
+| Minderheitenschutz | 少数保护 | Philosophie | Der Minderheitenschutz begrenzt die Macht der Mehrheit. |
+| Gewaltenteilung | 分权 | Philosophie | Die Gewaltenteilung verteilt Gesetzgebung, Verwaltung und Rechtsprechung. |
+| Zivilgesellschaft | 公民社会 | Philosophie | Die Zivilgesellschaft bildet den Raum zwischen Staat und Markt. |
+| Kompatibilismus | 相容论 | Philosophie | Der Kompatibilismus hält Determinismus und Freiheit für vereinbar. |
+| Zurechenbarkeit | 可归责性 | Philosophie | Ohne Freiheit wäre die Zurechenbarkeit einer Handlung unmöglich. |
+| Rationalismus | 唯理论 | Philosophie | Der Rationalismus sucht sichere Erkenntnis in der Vernunft. |
+| Empirismus | 经验论 | Philosophie | Der Empirismus leitet alle Erkenntnis aus der Erfahrung ab. |
+| tabula rasa | 白板 | Philosophie | Nach Locke ist der Verstand zunächst eine tabula rasa. |
+| synthetisch a priori | 先天综合判断 | Philosophie | Das synthetisch a priori erweitert die Erkenntnis und gilt doch notwendig. |
+| Tugendethik | 德性伦理 | Philosophie | Die Tugendethik fragt nach dem Charakter des Handelnden. |
+| Phronesis | 实践智慧 | Philosophie | Die Phronesis erkennt in der konkreten Situation das Richtige. |
+| zoon politikon | 政治动物 | Philosophie | Als zoon politikon ist der Mensch auf die Gemeinschaft angewiesen. |
+| Kommunitarismus | 共同体主义 | Philosophie | Der Kommunitarismus kritisiert den atomistischen Menschenbegriff des Liberalismus. |
+| Gemeinwohl | 共同善 | Philosophie | Der Republikanismus orientiert sich am Gemeinwohl. |
+| negative Freiheit | 消极自由 | Philosophie | Negative Freiheit bedeutet, nicht von anderen behindert zu werden. |
+| positive Freiheit | 积极自由 | Philosophie | Positive Freiheit meint die selbstbestimmte Verwirklichung eigener Ziele. |
+| Schadensprinzip | 伤害原则 | Philosophie | Nach dem Schadensprinzip darf der Staat nur zum Schutz anderer eingreifen. |
+| Paternalismus | 家长主义 | Philosophie | Harter Paternalismus verbietet etwas auch gegen den erklärten Willen. |
+| Verhältnismäßigkeit | 比例原则 | Philosophie | Eine Maßnahme muss verhältnismäßig sein, um Freiheit zu beschränken. |
+| Naturzustand | 自然状态 | Philosophie | Bei Hobbes ist der Naturzustand ein Krieg aller gegen alle. |
+| Gesellschaftsvertrag | 社会契约 | Philosophie | Im Gesellschaftsvertrag geben die Menschen Rechte an die Gemeinschaft ab. |
+| Widerstandsrecht | 反抗权 | Philosophie | Bei Locke haben die Bürger ein Widerstandsrecht gegen Willkür. |
+| Urzustand | 原初状态 | Philosophie | Im Urzustand wählen die Menschen Gerechtigkeitsgrundsätze. |
+| Paradigma | 范式 | Philosophie | Nach Kuhn löst die normale Wissenschaft Rätsel innerhalb eines Paradigmas. |
+| Anomalie | 异常 | Philosophie | Eine Anomalie widerspricht der Erwartung des herrschenden Paradigmas. |
+| Inkommensurabilität | 不可通约性 | Philosophie | Die Inkommensurabilität erschwert den Vergleich zweier Paradigmen. |
+| Kulturrelativismus | 文化相对主义 | Philosophie | Der Kulturrelativismus bindet moralische Urteile an die jeweilige Kultur. |
+| normativer Relativismus | 规范性相对主义 | Philosophie | Der normative Relativismus bestreitet kulturübergreifende Maßstäbe. |
+| Universalismus | 普遍主义 | Philosophie | Der Universalismus hält an kulturübergreifenden Normen fest. |
+| Menschenrechte | 人权 | Philosophie | Die Menschenrechte gelten für jede Person unabhängig von ihrer Kultur. |
+| Ewiger Friede | 永久和平 | Philosophie | Kants Schrift Zum ewigen Frieden entwirft eine Friedensordnung. |
+| Definitivartikel | 正式条款 | Philosophie | Der erste Definitivartikel fordert eine republikanische Verfassung. |
+| Weltbürgerrecht | 世界公民权 | Philosophie | Das Weltbürgerrecht beschränkt sich auf das Recht auf Hospitalität. |
+| multiple Realisierbarkeit | 多重可实现性 | Philosophie | Die multiple Realisierbarkeit spricht gegen eine einfache Reduktion. |
+| Chinesisches Zimmer | 中文屋 | Philosophie | Das chinesische Zimmer zeigt, dass Syntax noch kein Verstehen ist. |
+| Qualia | 感受质 | Philosophie | Qualia sind der subjektive Erlebnisgehalt eines Zustands. |
+| Eigenschaftsdualismus | 属性二元论 | Philosophie | Der Eigenschaftsdualismus kennt nur eine Substanz mit zwei Eigenschaften. |
+| ontologischer Gottesbeweis | 本体论证明 | Philosophie | Der ontologische Gottesbeweis schließt vom Begriff Gottes auf seine Existenz. |
+| kosmologischer Gottesbeweis | 宇宙论证明 | Philosophie | Der kosmologische Gottesbeweis schließt von der Kontingenz der Welt auf einen notwendigen Grund. |
+| teleologischer Gottesbeweis | 目的论证明 | Philosophie | Der teleologische Gottesbeweis schließt aus der Ordnung der Welt auf einen Schöpfer. |
+| Theodizee | 神义论 | Philosophie | Die Theodizee fragt, wie sich Leid mit einem allgütigen Gott vereinbaren lässt. |
+| Falsifizierbarkeit | 可证伪性 | Philosophie | Nach Popper ist die Falsifizierbarkeit das Kriterium der Wissenschaftlichkeit. |
+| Modus tollens | 否定后件式 | Philosophie | Die Widerlegung einer Theorie folgt dem Modus tollens. |
+| Kritischer Rationalismus | 批判理性主义 | Philosophie | Der Kritische Rationalismus setzt auf Kritik statt auf Letztbegründung. |
+| Verantwortungsethik | 责任伦理 | Philosophie | Die Verantwortungsethik richtet den Blick auf die vorhersehbaren Folgen. |
+| Gesinnungsethik | 信念伦理 | Philosophie | Die Gesinnungsethik bewertet allein die Lauterkeit der Gesinnung. |
+| Generationengerechtigkeit | 代际正义 | Philosophie | Die Generationengerechtigkeit fordert, den Nachkommen keine Lasten aufzubürden. |
+| Deduktion | 演绎 | Philosophie | Die Deduktion schließt vom Allgemeinen auf das Notwendige. |
+| Intersubjektivität | 主体间性 | Philosophie | Intersubjektivität bedeutet, dass andere mein Ergebnis überprüfen können. |
+| Rechtsstaat | 法治国 | Philosophie | Im Rechtsstaat ist auch die staatliche Gewalt an das Gesetz gebunden. |
+| Polyarchie | 多头政治 | SoWi | Polyarchie ist Dahls Begriff für eine messbare Annäherung an Demokratie. |
+| Deliberation | 协商 | SoWi | Deliberation meint die öffentliche Beratung vor der Entscheidung. |
+| vier Grundfreiheiten | 四大自由 | SoWi | Der Binnenmarkt beruht auf den vier Grundfreiheiten. |
+| Zollunion | 关税同盟 | SoWi | Die Zollunion schafft innere Zollfreiheit und einen gemeinsamen Außenzoll. |
+| gegenseitige Anerkennung | 相互承认 | SoWi | Dank gegenseitiger Anerkennung genügt die Zulassung im Herkunftsland. |
+| Europäische Kommission | 欧盟委员会 | SoWi | Die Europäische Kommission besitzt das Initiativrecht. |
+| Europäischer Rat | 欧洲理事会 | SoWi | Der Europäische Rat setzt die strategische Richtung, ohne Gesetze zu erlassen. |
+| Subsidiaritätsprinzip | 辅助性原则 | SoWi | Das Subsidiaritätsprinzip begrenzt das Handeln der EU. |
+| Montanunion | 煤钢共同体 | SoWi | Die Montanunion von 1951 gilt als Ausgangspunkt der Integration. |
+| Vertrag von Maastricht | 马斯特里赫特条约 | SoWi | Der Vertrag von Maastricht begründete die Europäische Union. |
+| Supranationalismus | 超国家主义 | SoWi | Der Supranationalismus erklärt Integration durch überstaatliche Organe. |
+| Gewaltverbot | 禁止使用武力 | SoWi | Das Gewaltverbot der UN-Charta kennt nur wenige Ausnahmen. |
+| Sicherheitsrat | 安理会 | SoWi | Der Sicherheitsrat kann nach Kapitel VII verbindliche Maßnahmen beschließen. |
+| Vetorecht | 否决权 | SoWi | Das Vetorecht der ständigen Mitglieder blockiert viele Beschlüsse. |
+| Verteilungsgerechtigkeit | 分配正义 | SoWi | Verteilungsgerechtigkeit fragt, wie Ergebnisse fair verteilt werden. |
+| CO₂-Preis | 碳价 | SoWi | Ein CO₂-Preis macht die externen Kosten des Verbrauchs sichtbar. |
+| Konjunkturzyklus | 景气周期 | SoWi | Der Konjunkturzyklus verläuft in vier Phasen. |
+| Bruttoinlandsprodukt (BIP) | 国内生产总值 | SoWi | Das BIP misst die gesamte Produktion einer Volkswirtschaft. |
+| Nachfrageschock | 需求冲击 | SoWi | Ein Nachfrageschock senkt kurzfristig die gesamtwirtschaftliche Nachfrage. |
+| qualitatives Wachstum | 质量型增长 | SoWi | Qualitatives Wachstum fragt nach Struktur und Kosten des Wachstums. |
+| Drei-Säulen-Modell | 三支柱模型 | SoWi | Das Drei-Säulen-Modell verbindet Ökologie, Ökonomie und Soziales. |
+| externe Kosten | 外部成本 | SoWi | Externe Kosten erscheinen nicht im Preis eines Produkts. |
+| Individualisierung | 个体化 | SoWi | Individualisierung löst den Einzelnen aus traditionellen Bindungen. |
+| Tertiarisierung | 第三产业化 | SoWi | Die Tertiarisierung verschiebt die Beschäftigung in den Dienstleistungssektor. |
+| Prekarisierung | 不稳定化／边缘化 | SoWi | Prekarisierung bezeichnet Beschäftigung ohne sichere Absicherung. |
+| Sozialstaatsgebot | 社会国家原则 | SoWi | Das Sozialstaatsgebot verpflichtet den Staat zu sozialer Sicherheit. |
+| Solidarität | 团结原则 | SoWi | Solidarität verteilt soziale Risiken auf die Gemeinschaft. |
+| Strukturfunktionalismus | 结构功能主义 | SoWi | Der Strukturfunktionalismus erklärt Gesellschaft als System abhängiger Teile. |
+| Handlungstheorie | 行动理论 | SoWi | Die Handlungstheorie geht vom subjektiven Sinn der Akteure aus. |
+| AGIL-Schema | AGIL 图式 | SoWi | Das AGIL-Schema benennt vier Grundfunktionen sozialer Systeme. |
+| Anomie | 失范 | SoWi | Anomie entsteht, wenn Normen ihre Verbindlichkeit verlieren. |
+| Klasse | 阶级 | SoWi | Das Klassenmodell ordnet die Gesellschaft nach den Produktionsverhältnissen. |
+| Schicht | 阶层 | SoWi | Das Schichtenmodell denkt die Gesellschaft als kontinuierliche Rangordnung. |
+| Milieu | 生活圈 | SoWi | Das Milieumodell gruppiert Menschen nach Werten und Lebensstilen. |
+| Konformität | 从众 | SoWi | Konformität bedeutet, sich der Mehrheitsmeinung anzupassen. |
+| Gehorsam | 服从 | SoWi | Gehorsam gegenüber einer legitimen Autorität kann kritische Prüfung verdrängen. |
+| Deindividuation | 去个体化 | SoWi | Deindividuation schwächt die Selbstkontrolle in der Gruppe. |
+| Fiskalpolitik | 财政政策 | SoWi | Die Fiskalpolitik steuert die Wirtschaft über Steuern und Staatsausgaben. |
+| Geldpolitik | 货币政策 | SoWi | Die Geldpolitik im Euroraum verantwortet die EZB. |
+| automatische Stabilisatoren | 自动稳定器 | SoWi | Automatische Stabilisatoren wirken ohne politischen Beschluss. |
+| Marktversagen | 市场失灵 | SoWi | Marktversagen liefert die erste Begründung für staatliche Eingriffe. |
+| Staatsversagen | 国家失灵 | SoWi | Staatsversagen weist auf die Grenzen staatlicher Steuerung hin. |
+| Magisches Viereck | 四角魔方 | SoWi | Das Magische Viereck nennt Wachstum, Beschäftigung, Preisstabilität und Außenhandel. |
+| Nachfrageorientierung | 需求导向 | SoWi | Die Nachfrageorientierung sieht den Staat als aktiven Nachfrager in der Krise. |
+| Angebotsorientierung | 供给导向 | SoWi | Die Angebotsorientierung verbessert die Bedingungen für private Anbieter. |
+| Ausdrucksgeste | 表达姿态 | Musik | Ich deute die absteigende kleine Sekunde als Seufzer-Geste. |
+| musikalische Konvention | 音乐惯例 | Musik | Der Ausdruck wird erst durch die geteilte musikalische Konvention verständlich. |
+| Affektenlehre | 情感类型说 | Musik | Die Affektenlehre ordnet jeder Figur einen bestimmten Affekt zu. |
+| Seufzer (Lamento) | 叹息动机 | Musik | Der Seufzer ist eine absteigende kleine Sekunde. |
+| Filmmusik | 电影音乐 | Musik | Filmmusik deutet das Bild und steuert die Wahrnehmung des Zuschauers. |
+| Diegese | 叙事世界（故事内） | Musik | Diegetische Musik können auch die Figuren selbst hören. |
+| Leitmotiv | 主导动机 | Musik | Das Leitmotiv markiert eine Figur hörbar. |
+| Ohrwurm | 记忆钩 | Musik | Ein Ohrwurm macht die Werbemelodie sofort wiedererkennbar. |
+| Emotionstransfer | 情绪迁移 | Musik | Beim Emotionstransfer überträgt sich die Musikstimmung auf das Produkt. |
+| Klangfarbe | 音色 | Musik | Ich benenne die Instrumentengruppe und beschreibe ihre Klangfarbe. |
+| Instrumentation | 配器 | Musik | Die Instrumentation legt fest, welches Instrument welche Stimme spielt. |
+| Instrumentengruppen | 乐器组 | Musik | Streicher, Holzbläser, Blechbläser, Schlagwerk und Tasten sind die Instrumentengruppen. |
+| Klangvorstellung | 音响想象 | Musik | Klangvorstellungen sind die übergeordneten Hörerwartungen einer Epoche. |
+| Generalbass | 通奏低音 | Musik | Der Generalbass trägt die barocke Klangvorstellung. |
+| thematische Arbeit | 主题加工 | Musik | Die thematische Arbeit zerlegt und entwickelt ein Motiv. |
+| Chromatik | 半音化 | Musik | Die Chromatik schwächt die tonale Stabilität. |
+| Atonalität | 无调性 | Musik | In der Atonalität fehlt ein tonales Zentrum. |
+| Zwölftontechnik | 十二音技法 | Musik | Die Zwölftontechnik organisiert alle zwölf Töne in einer Reihe. |
+| Klangfläche | 音块／音响面 | Musik | Eine Klangfläche ersetzt Melodie und Harmonie durch das Klangganze. |
+| Dienstfunktion | 服务功能 | Musik | In der Werbung dominiert die Dienstfunktion der Musik. |
+| Programmmusik | 标题音乐 | Musik | Die Programmmusik verweist auf einen außermusikalischen Stoff. |
+| Stilwandel | 风格演变 | Musik | Ein Stilwandel bleibt innerhalb desselben Paradigmas. |
+| Kompositionsprinzip | 作曲原则 | Musik | Der Wechsel des Kompositionsprinzips belegt einen Paradigmenwechsel. |
+| Rollenbild | 角色图景 | Musik | Ich prüfe Rollenbilder auf Text-, Musik-, Institutions- und Perspektivebene. |
+| Wahrnehmungssteuerung | 感知操控 | Musik | Die Musik steuert die Wahrnehmung des Bildes. |
+| Semantisierung | 意义赋予 | Musik | Durch Semantisierung legt die Musik dem Bild eine Bedeutung bei. |
+| Wirkungsabsicht | 效果意图 | Musik | Ich unterscheide die Wirkungsabsicht des Produzenten von der tatsächlichen Wirkung. |
+| Stereotyp | 刻板印象 | Musik | Ich benenne das Stereotyp und ordne es dem Funktionskontext zu. |
+| phosphagenes System | 磷酸原系统 | Sport | Das phosphagene System liefert in den ersten Sekunden die Energie. |
+| anaerob-laktazid | 无氧乳酸供能 | Sport | Der 400-Meter-Lauf wird überwiegend anaerob-laktazid gedeckt. |
+| Laktatschwelle | 乳酸阈 | Sport | Die Laktatschwelle markiert den Übergang zur überwiegend anaeroben Belastung. |
+| maximale Sauerstoffaufnahme (VO₂max) | 最大摄氧量 | Sport | Die maximale Sauerstoffaufnahme gilt als zentrale Kennzahl der Ausdauer. |
+| Sauerstoffschuld (EPOC) | 氧债／运动后过量氧耗 | Sport | Nach dem Sprint bleibt eine Sauerstoffschuld, die in der Erholung abgebaut wird. |
+| Belastungsintensität | 负荷强度 | Sport | Die Belastungsintensität bestimmt, welches Energiesystem überwiegend arbeitet. |
+| Belastungsumfang | 负荷量 | Sport | Bei gleicher Intensität steigt der Belastungsumfang mit der Strecke. |
+| Belastungsdichte | 负荷密度 | Sport | Eine hohe Belastungsdichte verkürzt die Pausen zwischen den Serien. |
+| Reizschwelle | 刺激阈 | Sport | Unterhalb der Reizschwelle bleibt der Trainingsreiz ohne Wirkung. |
+| Dauermethode | 持续训练法 | Sport | Die extensive Dauermethode verbessert die aerobe Grundlagenausdauer. |
+| Intervallmethode | 间歇训练法 | Sport | Bei der Intervallmethode ist die Pause absichtlich nicht vollständig. |
+| motorische Hauptbeanspruchungsformen | 五大运动主负荷能力 | Sport | Ausdauer, Kraft, Schnelligkeit, Beweglichkeit und Koordination sind die motorischen Hauptbeanspruchungsformen. |
+| Maximalkraft | 最大力量 | Sport | Die Maximalkraft bezeichnet die größte Kraft, die einmal aufgebracht werden kann. |
+| Schnellkraft | 快速力量 | Sport | Die Schnellkraft entscheidet über den Absprung. |
+| feindselige Aggression | 敌意性攻击 | Sport | Feindselige Aggression zielt auf die Schädigung des Gegners selbst. |
+| Frustrations-Aggressions-Hypothese | 挫折—攻击假说 | Sport | Nach der Frustrations-Aggressions-Hypothese erzeugt Frustration aggressive Bereitschaft. |
+| Fairplay | 公平竞赛 | Sport | Fairplay bedeutet, den Gegner auch dort zu achten, wo die Regel schweigt. |
+| taktischer Regelverstoß | 战术性违规 | Sport | Ein taktischer Regelverstoß wird bewusst in Kauf genommen, um einen Vorteil zu sichern. |
+| Gestaltungskriterium | 编排准则 | Sport | Raum, Zeit, Dynamik und formaler Aufbau sind die vier Gestaltungskriterien. |
+| Ausführungskriterium | 执行准则 | Sport | Das Ausführungskriterium bewertet die Qualität der Bewegungsausführung. |
+| Spannungsbogen | 张力弧 | Sport | Ein klarer Spannungsbogen führt vom Beginn über den Höhepunkt zum Schluss. |
+| Dosis-Wirkung-Beziehung | 剂量-效应关系 | Sport | Die Dosis-Wirkung-Beziehung zeigt, dass zu viel Training dem Körper schadet. |
+| Übertraining | 过度训练 | Sport | Wer die Erholung vernachlässigt, riskiert ein Übertraining. |
+| progressive Belastungssteigerung | 渐进负荷提升 | Sport | Ohne progressive Belastungssteigerung stagniert die Anpassung. |
+| Periodisierung | 周期化 | Sport | Die Periodisierung ordnet die Belastung in Makro-, Meso- und Mikrozyklen. |
+| Superkompensation | 超量恢复 | Sport | Der nächste Reiz soll in der Phase der Superkompensation gesetzt werden. |
+| Grobkoordination | 粗糙协调 | Sport | In der Grobkoordination ist die Bewegung noch ungenau und verkrampft. |
+| Feinkoordination | 精细协调 | Sport | In der Feinkoordination läuft die Bewegung flüssig, braucht aber noch Aufmerksamkeit. |
+| analytisch-synthetische Methode | 分解-合成法 | Sport | Bei der analytisch-synthetischen Methode werden Teile geübt und danach zusammengesetzt. |
+| Antizipation | 预判 | Sport | Gute Antizipation erlaubt es, den Ball früher zu erreichen. |
+| Kopplungsfähigkeit | 连接能力 | Sport | Die Kopplungsfähigkeit verbindet Teilbewegungen zu einem Gesamtablauf. |
+| Improvisation | 即兴 | Sport | Improvisation entsteht spontan innerhalb eines vorgegebenen Rahmens. |
+| konstitutive Regel | 构成性规则 | Sport | Ohne die konstitutive Regel wäre das Spiel nicht mehr dieselbe Sportart. |
+| Taktikorientierung | 战术优先 | Sport | Die Taktikorientierung beginnt mit dem vereinfachten Spiel statt mit der Technik. |
+| Yerkes-Dodson-Gesetz | 耶克斯-多德森定律 | Sport | Nach dem Yerkes-Dodson-Gesetz ist die Leistung bei mittlerer Aktivierung am besten. |
+| Salutogenese | 健康生成取向 | Sport | Die Salutogenese fragt, welche Ressourcen Gesundheit entstehen lassen. |
+| Kohärenzgefühl | 一致感 | Sport | Ein starkes Kohärenzgefühl hilft, Belastungen als handhabbar zu erleben. |
+| Gleitfilamenttheorie | 滑行丝学说 | Sport | Nach der Gleitfilamenttheorie schieben sich die Aktinfilamente zwischen die Myosinfilamente. |
+| exzentrische Kontraktion | 离心收缩 | Sport | Bei der exzentrischen Kontraktion wird der Muskel unter Spannung länger. |
+| Leistungsdiagnostik | 成绩诊断 | Sport | Die Leistungsdiagnostik liefert den Ist-Zustand für die Trainingsplanung. |
+| Laktatstufentest | 乳酸阶梯测试 | Sport | Der Laktatstufentest bestimmt die Laktatschwelle. |
+| unphysiologische Maßnahme | 非生理性手段 | Sport | Eine unphysiologische Maßnahme umgeht die natürliche Anpassung des Körpers. |
+| Phasenmodell | 分相模型 | Sport | Das Phasenmodell teilt die Bewegung in Vorbereitung, Hauptphase und Endphase. |
+| Trainingsplan | 训练计划 | Sport | Der Trainingsplan folgt den Schritten Ist-Analyse, Zielsetzung, Planung und Kontrolle. |
+| Tapering | 赛前减量 | Sport | Beim Tapering sinkt der Umfang, während die Intensität erhalten bleibt. |
