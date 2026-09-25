@@ -147,6 +147,10 @@ export const KlausurSim: React.FC<KlausurSimProps> = ({
   const [radarVersion, setRadarVersion] = useState(0);
   const [masterySaved, setMasterySaved] = useState(false);
   const [copiedPatch, setCopiedPatch] = useState(false);
+  const [revealedCriteria, setRevealedCriteria] = useState<Record<string, boolean>>({});
+  const toggleCriteria = (taskId: string) => {
+    setRevealedCriteria((prev) => ({ ...prev, [taskId]: !prev[taskId] }));
+  };
   const masteryEngine = useMemo(() => new MasteryEngine(), []);
 
   const subjectNotes = useMemo(
@@ -612,10 +616,35 @@ export const KlausurSim: React.FC<KlausurSimProps> = ({
                         disabled={Boolean(gradingResult)}
                         placeholder="Formulieren Sie Ihre Antwort in präziser deutscher Fachsprache."
                       />
-                      <div className="flex justify-between text-xs" style={mutedStyle}>
+                      <div className="flex flex-wrap items-center justify-between gap-2 text-xs" style={mutedStyle}>
                         <span>Wörter: {(answers[task.id] ?? "").split(/\s+/).filter(Boolean).length}</span>
-                        {taskGrade && <span>Ergebnis: {taskGrade.points} / {taskGrade.maxPoints} P.</span>}
+                        <div className="flex items-center gap-2">
+                          <button
+                            type="button"
+                            onClick={() => toggleCriteria(task.id)}
+                            className="px-2 py-0.5 rounded border border-[var(--line)] bg-[var(--surface)] text-[var(--ink)] hover:bg-[var(--paper-subtle)] transition-colors cursor-pointer"
+                          >
+                            {revealedCriteria[task.id] ? "Kriterien verbergen" : "Erwartungshorizont einblenden"}
+                          </button>
+                          {taskGrade && <span>Ergebnis: {taskGrade.points} / {taskGrade.maxPoints} P.</span>}
+                        </div>
                       </div>
+                      {revealedCriteria[task.id] && !taskGrade && (
+                        <div className="text-xs space-y-2 p-3" style={paperPanelStyle}>
+                          <div className="flex items-center justify-between font-semibold text-[var(--accent)]">
+                            <span>Erwartungshorizont & Indikatoren</span>
+                            <span className="font-mono text-xs">{task.points} P. gesamt</span>
+                          </div>
+                          <div className="space-y-1">
+                            {task.criteria.map((c) => (
+                              <div key={c.id} className="flex justify-between gap-3 text-[var(--ink)]">
+                                <span>{c.indicatorDE}</span>
+                                <span className="font-mono shrink-0 text-[var(--gray)]">{c.points} P.</span>
+                              </div>
+                            ))}
+                          </div>
+                        </div>
+                      )}
                       {taskGrade && (
                         <div className="text-xs space-y-2 p-3" style={paperPanelStyle}>
                           <div className="space-y-1">

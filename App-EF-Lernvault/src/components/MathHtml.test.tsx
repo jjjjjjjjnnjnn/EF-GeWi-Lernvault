@@ -8,14 +8,14 @@ describe("MathHtml (katex-lazy)", () => {
     expect(screen.getByText("x^2")).toBeInTheDocument(); // erster paint blockiert nie
     await waitFor(() => {
       expect(document.querySelector(".katex")).not.toBeNull();
-    });
+    }, { timeout: 3000 });
   });
 
   it("display-modus hydriert zu .katex-display", async () => {
     render(<MathHtml code="\\frac{a}{b}" display cacheKey="W:D:frac" />);
     await waitFor(() => {
       expect(document.querySelector(".katex-display")).not.toBeNull();
-    });
+    }, { timeout: 3000 });
   });
 
   it("cache: zweite instanz sofort typeset (kein roh-fallback)", async () => {

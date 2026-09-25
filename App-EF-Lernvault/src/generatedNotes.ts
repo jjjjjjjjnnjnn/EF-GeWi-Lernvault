@@ -2039,6 +2039,30 @@ export const allVaultNotes: GeneratedNote[] = [
     "path": "03_Mathe/Klausur-Training/Mathe-Abitur-Aufgabentraining.md"
   },
   {
+    "id": "mathe-mathe-ef-klausurtraining-analysis",
+    "fach": "Mathe",
+    "thema": "Klausurtraining: Analysis im Sachkontext",
+    "zh": "雨水蓄水池容积与截面建模综合大题",
+    "operatoren": [
+      "berechnen",
+      "bestimmen",
+      "interpretieren",
+      "beurteilen"
+    ],
+    "klausurrelevant": true,
+    "bodyDE": [
+      "Bei Optimierungsproblemen im Sachkontext muss neben den stationären Punkten im Inneren des Definitionsbereichs ($f'(x)=0$) stets der Funktionswert an den Intervallgrenzen verglichen werden, um das globale Extremum zweifelsfrei zu identifizieren.",
+      "Die Wendestelle einer Profillinie $f(x)$ entspricht der lokalen Extremstelle der Ableitungsfunktion $f'(x)$ und markiert somit den Ort der maximalen Steigung bzw. des steilsten Gefälles.",
+      "Die Gleichung der Tangente an den Graphen von $f$ an der Stelle $x_0$ lautet $t(x) = f'(x_0) \\cdot (x - x_0) + f(x_0)$."
+    ],
+    "bodyZH": [
+      "在 NRW 高中阶段（EF），分析学（Analysis）的重点在于把微积分工具置于**真实情境（Sachkontext）**中进行建模与最值求解。",
+      "考题通常给出一个三次或四次多项式函数，描述横截面轮廓、注水速率或地形起伏。",
+      "解题的关键绝非单纯求导，而是**算子对齐与情境还原**： - 算子 `berechnen` 要求给出严密的代数推演步骤。"
+    ],
+    "path": "03_Mathe/Klausur-Training/Mathe-EF-Klausurtraining-Analysis.md"
+  },
+  {
     "id": "physik-basiskonzepte-vier-achsen",
     "fach": "Physik",
     "thema": "Basiskonzepte: Vier Achsen (Erhaltung, Superposition, Mathematisieren, Zufall)",
@@ -2815,6 +2839,30 @@ export const allVaultNotes: GeneratedNote[] = [
       "Physik 核心考纲笔记：Abitur-Aufgabentraining 2026。"
     ],
     "path": "04_Physik/Klausur-Training/Physik-Abitur-Aufgabentraining.md"
+  },
+  {
+    "id": "physik-physik-ef-klausurtraining-mechanik",
+    "fach": "Physik",
+    "thema": "Klausurtraining: Kinematik und Dynamik im Strassenverkehr",
+    "zh": "复合制动、相向防撞与能量守恒综合大题",
+    "operatoren": [
+      "berechnen",
+      "herleiten",
+      "erlaeutern",
+      "beurteilen"
+    ],
+    "klausurrelevant": true,
+    "bodyDE": [
+      "Der gesamte Anhalteweg setzt sich additiv aus dem Reaktionsweg während der Schrecksekunde ($s_R = v_0 \\cdot t_R$) und dem eigentlichen Bremsweg bei konstanter Verzögerung ($s_B = \\frac{v_0^2}{2a}$) zusammen: $s_{\\text{Anhalt}} = v_0 \\cdot t_R + \\frac{v_0^2}{2 \\cdot \\mu \\cdot g}$.",
+      "Da sowohl die Reibungskraft $F_R = \\mu \\cdot m \\cdot g$ als auch die erforderliche Bremskraft $F = m \\cdot a$ linear von der Masse abhängen, kürzt sich die Masse heraus, sodass die maximal erzielbare Bremsverzögerung $a = \\mu \\cdot g$ allein vom Haftungsbeiwert und der Erdbeschleunigung abhängt.",
+      "Beim Bremsvorgang wird die gesamte kinetische Energie des Fahrzeugs durch die Reibungsarbeit der Bremsklötze und Reifen vollständig in thermische innere Energie dissipiert ($E_{\\text{kin}} = W_{\\text{Reibung}}$)."
+    ],
+    "bodyZH": [
+      "在德国 NRW 高中物理（EF）考纲中，力学综合大题的核心是将**运动学（Kinematik，无受力的时空关系）**与**动力学（Dynamik，牛顿力学与能量守恒）**打通。",
+      "最典型的命题场景是道路交通安全与防撞分析（Straßenverkehrssicherheit）： 1. 车辆制动过程严格划分为两段：**反应阶段（Reaktionsphase）**为匀速直线运动（$s_R = v_0 \\cdot t_R$）。",
+      "**制动减速阶段（Bremsphase）**为匀减速直线运动（$s_B = \\frac{v_0^2}{2a}$）。"
+    ],
+    "path": "04_Physik/Klausur-Training/Physik-EF-Klausurtraining-Mechanik.md"
   },
   {
     "id": "physik-physik-operatoren-check",
@@ -5352,6 +5400,29 @@ export const allVaultNotes: GeneratedNote[] = [
       "SoWi 核心考纲笔记：Gestaltungsaufgabe GK/LK: Format + Kap.9-Uebung。"
     ],
     "path": "08_SoWi/Klausur-Training/SW-Gestaltungsaufgabe-Training.md"
+  },
+  {
+    "id": "sowi-sowi-ef-klausurtraining-ungleichheit",
+    "fach": "SoWi",
+    "thema": "Klausurtraining: Materialgestuetzte Analyse sozialer Ungleichheit",
+    "zh": "社会不平等与福利国家材料综合解析大题",
+    "operatoren": [
+      "darstellen",
+      "analysieren",
+      "beurteilen"
+    ],
+    "klausurrelevant": true,
+    "bodyDE": [
+      "Der Gini-Koeffizient misst das Ausmaß der statistischen Ungleichverteilung auf einer Skala von 0 (absolute Gleichverteilung) bis 1 (maximale Konzentration). In Deutschland liegt der Gini-Koeffizient des Nettoeinkommens bei ca. 0,29, während der Vermögens-Gini bei über 0,75 eine gravierende Vermögensungleichheit dokumentiert.",
+      "Das meritokratische Leistungsprinzip postuliert, dass sozialer Status allein durch individuelle Anstrengung und Qualifikation erworben wird; empirische Bildungsstudien belegen jedoch, dass herkunftsbedingte Bildungsaspirationen und kulturelles Kapital diesen Mechanismus systematisch verzerren.",
+      "Ein Sachurteil prüft Maßnahmen anhand empirischer Wirksamkeit, wirtschaftlicher Effizienz und Nebenfolgen; ein Werturteil bewertet denselben Sachverhalt anhand normativer Leitwerte wie Chancengerechtigkeit, Bedarfsgerechtigkeit und Leistungsgerechtigkeit."
+    ],
+    "bodyZH": [
+      "在 NRW 高中社会科学（SoWi）EF 阶段，期末与模拟考试的核心考核形式为**材料作文大题（Materialgestützte Klausuraufgabe）**。",
+      "试卷通常提供 1~2 份材料（如学者论著节选与统计图表），要求考生完成标准的**三阶题型（Dreischritt der AFB-Stufen）**： 1. **AFB I (`darstellen`)**：提取材料核心论点与图表量化数据，严禁用抄录长句，必须用自己的德语提炼并规范标注行号（`vgl. Z. 12-14`）。",
+      "2. **AFB II (`analysieren`)**：将材料现象挂钩到学科理论模型（如盖斯勒分层模型 Geißler-Schichtmodell、波恩/慕尼黑环境模型 Sinus-Milieus、福利国家三维度），剖析背后的制度性或结构性成因。"
+    ],
+    "path": "08_SoWi/Klausur-Training/SoWi-EF-Klausurtraining-Ungleichheit.md"
   },
   {
     "id": "sowi-betrieb-mitbestimmung",

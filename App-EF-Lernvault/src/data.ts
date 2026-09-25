@@ -1,5 +1,7 @@
 import { allVaultCards } from "./generatedCards";
 import { allVaultNotes } from "./generatedNotes";
+import { allVaultNotesWithBlocks } from "./generatedVaultNotes";
+import type { VaultNote } from "./vault/parser";
 
 export interface Note {
   id: string;
@@ -449,6 +451,8 @@ export const cards: Card[] = [
       dueIn: c.dueIn,
     })),
 ];
+
+export const defaultVaultNotes: VaultNote[] = allVaultNotesWithBlocks;
 
 export const quizSteps = [
   { op: "darstellen", de: "Worum geht es im Material? (3-Satz-Einleitung: Thema + Material + These)", zh: "材料讲什么？（三句导语：主题+材料+论点）" },

@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useRef, useState, type ReactNode } from "react";
 import { t, type Lang } from "./i18n";
-import { notes } from "./data";
+import { notes, defaultVaultNotes } from "./data";
 import { GLOBAL_KEYS, MODULE_KEYS, isTyping, matchesKey } from "./keys";
 import { FAECHER } from "./fach";
 import Palette, { type PaletteItem } from "./components/Palette";
@@ -662,7 +662,7 @@ export default function App() {
           {tab === "quiz" && (
             <Quiz
               lang={lang}
-              vault={vault?.notes ?? null}
+              vault={vault?.notes ?? defaultVaultNotes}
               cards={vault?.cards ?? null}
               preselectedFach={selectedFach === "alle" ? undefined : selectedFach}
               onJumpToLibrary={jumpToLibrary}
@@ -678,7 +678,7 @@ export default function App() {
           )}
           {tab === "klausursim" && (
             <KlausurSim
-              notes={vault?.notes ?? []}
+              notes={vault?.notes ?? defaultVaultNotes}
               currentFach={selectedFach === "alle" ? undefined : selectedFach}
               onSubjectChange={setSelectedFach}
             />
@@ -686,7 +686,7 @@ export default function App() {
           {tab === "tutor" && (
             <Tutor
               lang={lang}
-              vaultNotes={vault?.notes ?? null}
+              vaultNotes={vault?.notes ?? defaultVaultNotes}
               activeFach={selectedFach === "alle" ? undefined : selectedFach}
               initialInput={tutorPrefilledInput}
               onSubjectChange={setSelectedFach}
@@ -694,11 +694,11 @@ export default function App() {
               onOpenSettings={() => switchTab("einstellungen")}
             />
           )}
-          {tab === "planner" && <Planner lang={lang} vaultNotes={vault?.notes ?? null} />}
+          {tab === "planner" && <Planner lang={lang} vaultNotes={vault?.notes ?? defaultVaultNotes} />}
           {tab === "mindmap" && (
             <Mindmap
               lang={lang}
-              vaultNotes={vault?.notes ?? null}
+              vaultNotes={vault?.notes ?? defaultVaultNotes}
               selectedFach={selectedFach}
               onSubjectChange={setSelectedFach}
               onJumpToLibrary={jumpToLibrary}
@@ -709,7 +709,7 @@ export default function App() {
             <Lernbaum
               lang={lang}
               baeume={BAEUME_LISTE}
-              vaultNotes={vault?.notes ?? null}
+              vaultNotes={vault?.notes ?? defaultVaultNotes}
               selectedFach={selectedFach}
               onSubjectChange={setSelectedFach}
               onJumpToLibrary={jumpToLibrary}
