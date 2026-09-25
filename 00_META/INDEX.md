@@ -219,6 +219,7 @@
 - [2026-09-25-external-content-audit-and-app-sync](Journal/2026-09-25-external-content-audit-and-app-sync.md) — **外部成果审计收官与 App 全量数据管道打通**：十科 225/225 篇 100% 完工 + 1400 卡片/305 笔记打通客户端（三门禁全绿）
 - [2026-09-25-exam-expansion-and-client-optimization](Journal/2026-09-25-exam-expansion-and-client-optimization.md) — **数理社核心学科原创大题扩充与客户端全学科即开即考优化**：三大题配齐26/24/26 BE Erwartungshorizont + KlausurSim全量10科即开即考/采分对照
 - [2026-09-25-ui-and-lernbaum-refactor](Journal/2026-09-25-ui-and-lernbaum-refactor.md) — **UI工作区重构与学习树自适应大纲系统升级**：侧边栏收敛为 5 大清晰主工作区 + 顶部微胶囊分段条；Lernbaum 彻底根治超宽裁切，新增「全图适应/Einpassen」与「Gliederung (大纲目录)」双模态切换
+- [2026-09-25-tutor-interaction-and-grounding-overhaul](Journal/2026-09-25-tutor-interaction-and-grounding-overhaul.md) — **KI助教交互体系重构与抗漂移精准锚定**：Sokratisch启发与Klausur-Direkt双模提示词升格抗漂移 + 检索切片Subject优先与Memo常驻 + 笔记引用精准高亮跳转 + 误报出处清零 + Tier 2学科胶囊栏 + 5组快捷提问芯片 + 单条回复一键复制
 - 约定：文件名 `YYYY-MM-DD-<thema>.md`，头部frontmatter（`fach`可空，`tags: [EF, Meta]`）。
 
 
