@@ -37,6 +37,7 @@
 - **Abi-Baum 十科应试树（EF→Abitur，作战地图）** — [设计总纲](Lernbaum/00-Abi-Baum-Design.md) · 十科：[Deutsch](Lernbaum/Lernbaum-Deutsch.md) · [Englisch](Lernbaum/Lernbaum-Englisch.md) · [Mathe](Lernbaum/Lernbaum-Mathe.md) · [Physik](Lernbaum/Lernbaum-Physik.md) · [Chemie](Lernbaum/Lernbaum-Chemie.md) · [Bio](Lernbaum/Lernbaum-Bio.md) · [Philosophie](Lernbaum/Lernbaum-Philosophie.md) · [SoWi](Lernbaum/Lernbaum-SoWi.md) · [Musik](Lernbaum/Lernbaum-Musik.md) · [Sport](Lernbaum/Lernbaum-Sport.md)（每 L3 带应试四行 + 学习方法 + 理科 CN-Methode + 笔记缺口）
 - [Lernbaum十科学习树（旧设计层，EF 版）](Lernbaum/00-Designprinzipien.md) — 历史记录（已被 Abi-Baum 取代）
 - **S8 笔记生产** — [施工宪法/波次台账](Lernbaum/00-Notenproduktion-Plan.md) · [**S8 新增笔记索引（224 篇，按学科）**](S8-Noten-Index.md) · 模板：[Wissensnotiz-Template](../Templates/Wissensnotiz-Template.md) · 官方源（本地 `_Downloads/`，不进 git）：[Download-Quellen](Download-Quellen.md)
+- **阻塞项** — [**Blocker-Register（统一台账，唯一真相源）**](Blocker-Register.md) · [**Lehrkraft-Anfragen（可直接转发的德语问询稿）**](Lehrkraft-Anfragen.md)
 
 ## 主题索引（新增一行一条）
 ### SoWi

@@ -123,12 +123,19 @@
 
 ## 🔴 待办与阻塞（接手必读 · 全部需要「人」推进，代码无法解决）
 
-### A. 阻塞学习内容（等老师回复，3 个问题可直接转发）
-1. **Musik**：`Was ist das Halbjahr-Thema (Epoche/Werk) und wie läuft die mündliche Prüfung ab (Dauer, Hörbeispiel?)`
-2. **Deutsch**：`Welche Ganzschrift (Drama?) lesen wir, und wann ist die Klausur?`
-3. **Englisch**：`Ist Teil B Sprachmittlung oder Hörverstehen, und wann ist die Klausur? Gibt es eine Lektüre (novel)?`
-4. **Sport**：课程项目（可换短跑/铅球）+ 考试形式，仍是假设。
+### A. 阻塞学习内容（等老师回复）
+> **完整台账见 [`00_META/Blocker-Register.md`](00_META/Blocker-Register.md)**（A 类 15 项，含「阻断范围 / 脱敏状态 / 答案到达后的动作」三列）；
+> **可直接转发的德语问询稿见 [`00_META/Lehrkraft-Anfragen.md`](00_META/Lehrkraft-Anfragen.md)**（完整版 13 问 + 精简版 4 问 + 回复落地动作表）。
+
+**阻断面排序（先追前两个）**：
+1. 🔴 **A11 · Sport 的 2 个 Akzentuierungs-IF** —— 决定理论备考范围；已按 IF a–f 全覆盖写 26 篇，台账 §A.1 有「IF 组合速查」可 5 秒定位必读笔记。
+2. 🔴 **A1 · Deutsch Drama-Ganzschrift 书名 + 作者** —— 阻断面最大；已备候选短名单 + 通用工具箱。
+3. 🟡 **A7 · Musik Halbjahr-Thema** —— 已按 IF1–3 全覆盖，只影响优先级排序。
+4. 🟡 **A5 · Englisch 当届第三文化国家** —— 已按 Nigeria 写并标 `[据推断]`。
+5. 🟡 **A10/A12/A13 · Sport BF/SB、Abitur 轨道、实践项目** —— 均已脱敏，只待圈定。
+
 → 这四项未定前，相关 `Lehrplan.md` 的「待确认」段不要写成定论。
+→ **C（真人验收）与 D（App 工程债）本轮暂缓**（用户指示：暂不涉及 web/App）。
 
 ### B. 阻塞真题弹药（需要账号）
 - **StanSi** 近 3 年真题 + ZKE 往年卷（JS 门 + 登录墙）；**SESAM / FWU / eduki** 同。
