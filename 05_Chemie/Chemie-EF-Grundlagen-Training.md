@@ -105,7 +105,7 @@ Deutsch unten: Das Mol zaehlt Teilchen ($N_A = 6{,}022\times 10^{23}\,\mathrm{mo
 
 ## 9. Lernreise
 
-- `Lernreise/Chemie-Grundlagen-L1.md`（待建，本篇为课程源候选）。
+- [Lernreise/Chemie-Grundlagen-L1.md](../Lernreise/Chemie-Grundlagen-L1.md)（已建，本篇为课程源候选）。
 
 ## 10. Fehlerlog
 

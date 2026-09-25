@@ -113,7 +113,7 @@ English transfer sentences:
 
 ## 6. Lernreise
 
-- `Lernreise/Chemie-CN-Formeln-L1.md`（待建，本篇为课程源候选）
+- [Lernreise/Chemie-CN-Formeln-L1.md](../Lernreise/Chemie-CN-Formeln-L1.md)（已建，本篇为课程源候选）
 
 ## 7. Fehlerlog
 

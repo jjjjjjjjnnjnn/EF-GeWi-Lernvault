@@ -113,7 +113,7 @@ tags: [EF, Chemie, CN]
 
 ## 6. Lernreise
 
-- `Lernreise/Chemie-CN-Training-L1.md`（待建）
+- [Lernreise/Chemie-CN-Training-L1.md](../../Lernreise/Chemie-CN-Training-L1.md)（已建）
 
 ## 7. Fehlerlog
 

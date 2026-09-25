@@ -131,7 +131,7 @@ English transfer:
 
 ## 6. Lernreise
 
-- `Lernreise/Chemie-CN-Tricks-L1.md`（待建，本篇为课程源候选）
+- [Lernreise/Chemie-CN-Tricks-L1.md](../Lernreise/Chemie-CN-Tricks-L1.md)（已建，本篇为课程源候选）
 
 ## 7. Fehlerlog
 
