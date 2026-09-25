@@ -143,7 +143,7 @@ EN note: No formula plus unit, no full marks.
 
 ## 6. Lernreise
 
-- `Lernreise/Physik-Formeln-L1.md`（待建，本篇为唯一课程源候选，只读消费）
+- [Lernreise/Physik-Formeln-L1.md](../Lernreise/Physik-Formeln-L1.md)（已建，本篇为唯一课程源候选，只读消费）
 
 ## 7. Fehlerlog
 

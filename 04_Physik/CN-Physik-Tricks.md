@@ -133,7 +133,7 @@ EN note: Picture first, formula second, number last.
 
 ## 6. Lernreise
 
-- `Lernreise/Physik-CN-Tricks-L1.md`（待建，本篇为唯一课程源候选，只读消费）
+- [Lernreise/Physik-CN-Tricks-L1.md](../Lernreise/Physik-CN-Tricks-L1.md)（已建，本篇为唯一课程源候选，只读消费）
 
 ## 7. Fehlerlog
 

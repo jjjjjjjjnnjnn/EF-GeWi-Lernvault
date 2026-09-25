@@ -139,3 +139,23 @@ vektorielle Groesse;矢量量;Eine vektorielle Groesse hat Betrag und Richtung.;
 Vektoraddition;矢量加法;Bei der Vektoraddition werden Kraefte grafisch aneinandergereiht.;Physik;Mechanik
 Vektorzerlegung;矢量分解;Die Vektorzerlegung zerlegt eine Kraft in zwei Komponenten.;Physik;Mechanik
 Betrag und Richtung;大小与方向;Jede Kraft wird durch Betrag und Richtung beschrieben.;Physik;Mechanik
+Erwartungshorizont;评分踩分点;Der Erwartungshorizont zeigt, fuer welchen Teilschritt es Punkte gibt.;Physik;CN-Training
+Loesungsweg;解题路径;Der Loesungsweg wird Schritt fuer Schritt mit Formel und Einheit aufgeschrieben.;Physik;CN-Training
+Transfersatz;迁移句;Der Transfersatz uebertraegt das Ergebnis auf eine neue Situation.;Physik;CN-Training
+Teilflaeche;分块面积;Die Teilflaeche im v-t-Diagramm ergibt den Weg eines Abschnitts.;Physik;CN-Training
+Mehrfachmessung;多次测量;Eine Mehrfachmessung verkleinert den zufaelligen Fehler durch Mittelung.;Physik;CN-Training
+Kraeftediagramm;受力图;Im Kraeftediagramm wird jede Kraft als Pfeil mit Richtung gezeichnet.;Physik;CN-Tricks
+System;系统;Beim Ganzheitsverfahren wird das ganze System auf einmal betrachtet.;Physik;CN-Tricks
+Flaeche unter der Kurve;曲线下面积;Die Flaeche unter der Kurve im v-t-Diagramm ist der zurueckgelegte Weg.;Physik;CN-Tricks
+Ersatzkraft;等效力;Eine Ersatzkraft ersetzt mehrere Kraefte mit gleicher Wirkung.;Physik;CN-Tricks
+zufaelliger Fehler;随机误差;Ein zufaelliger Fehler streut die Messpunkte nach oben und unten.;Physik;Diagramme
+systematischer Fehler;系统误差;Ein systematischer Fehler verschiebt alle Messwerte in dieselbe Richtung.;Physik;Diagramme
+Punktdiagramm;散点图;Im Punktdiagramm werden nur die Messpunkte ohne Verbindungslinie gezeichnet.;Physik;Diagramme
+Lageenergie;重力势能;Die Lageenergie eines Koerpers waechst mit seiner Hoehe ueber dem Nullniveau.;Physik;Energieerhaltung
+Dissipation;耗散;Durch Dissipation wird mechanische Energie in innere Energie umgewandelt.;Physik;Energieerhaltung
+Geschwindigkeit;速度;Die Geschwindigkeit gibt an, welcher Weg in einer Sekunde zurueckgelegt wird.;Physik;Formeln
+Kraft;力;Eine Kraft erkennt man daran, dass sie die Bewegung eines Koerpers aendert.;Physik;Formeln
+Energie;能量;Die Energie eines Koerpers wird in Joule gemessen.;Physik;Formeln
+Strecke;路程;Die Strecke ist die gesamte Laenge des zurueckgelegten Weges.;Physik;Kinematik
+Flaeche unter der Linie;曲线下面积;Die Flaeche unter der Linie im v-t-Diagramm liefert die Strecke.;Physik;Kinematik
+Reibungskraft;摩擦力;Die Reibungskraft wirkt immer entgegen der relativen Bewegung.;Physik;Dynamik
