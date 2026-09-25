@@ -164,7 +164,7 @@ tags: [EF, Englisch]
 
 ## 6. Lernreise
 
-- `Lernreise/Englisch-Mediation-L1.md`（待建）
+- [Lernreise/Englisch-Mediation-L1.md](../../Lernreise/Englisch-Mediation-L1.md)（已建）
 
 ## 7. Fehlerlog
 

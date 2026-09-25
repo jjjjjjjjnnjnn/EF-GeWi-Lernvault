@@ -177,7 +177,7 @@ stufe: "Q1"
 ## 7. Vernetzung
 
 - **上游**：`Englisch-Abitur-Themenfelder.md`（UK 块 5 词 + 1 句，本篇为其系统深化）
-- **下游**：`Bezugskultur-Nigeria-LK.md`（§4 #10，待建；`Aneignung vs Abgrenzung` 与 UK 殖民遗产形成对照）
+- **下游**：`Bezugskultur-Nigeria-LK.md`（§4 #10，已建；`Aneignung vs Abgrenzung` 与 UK 殖民遗产形成对照）
 - **横向**：`Orientierungswissen-USA.md`（三域共用 Wandel-Tradition 框架）· `Sprechen-Muendliche-Abiturpruefung.md`（口试 Teil 2）
 - **术语卡**：national self-concept / colonial heritage / European positioning / devolution / Brexit divide
 

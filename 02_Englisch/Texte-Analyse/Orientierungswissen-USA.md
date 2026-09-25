@@ -190,7 +190,7 @@ stufe: "Q1"
 ## 7. Vernetzung
 
 - **上游**：`Englisch-Abitur-Themenfelder.md`（USA 块 5 词 + 1 句，本篇为其系统深化）
-- **下游**：`Identitaet-Diversitaet-Welt-im-Wandel.md`（§4 #17，待建）
+- **下游**：`Identitaet-Diversitaet-Welt-im-Wandel.md`（§4 #17，已建）
 - **横向**：`Orientierungswissen-UK.md`（三域共用 Wandel-Tradition 框架 + 防串锚点）· `Sprechen-Muendliche-Abiturpruefung.md`（口试 Teil 2）
 - **术语卡**：American ideals / the pursuit of happiness / the American Dream / gap between ideal and reality / melting pot vs salad bowl
 

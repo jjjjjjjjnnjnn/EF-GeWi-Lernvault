@@ -184,7 +184,7 @@ stufe: "Q2"
 ## 7. Vernetzung
 
 - **上游**：`Klausur-Teil-B-Doppelpack.md`（EF 四题型骨架）· `Klett-Themenfelder-Mapping.md`（mp3/mp4 四阶练法素材）
-- **下游**：`Multimodale-Texte-Journalismus-und-Social-Media.md`（§4 #12，待建；图文声互参深化）
+- **下游**：`Multimodale-Texte-Journalismus-und-Social-Media.md`（§4 #12，已建；图文声互参深化）
 - **横向**：`Leseverstehen-Strategien-Implizit.md`（隐含信息，听读同源）· `Beeinflussungsstrategien-und-WSE-Varietaeten.md`（WSE 变体听辨）
 - **术语卡**：Gesamtaussage / Hauptaussagen / Einzelinformationen / Hintergrundgeräusche / Bild-Text-Relation
 

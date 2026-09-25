@@ -189,7 +189,7 @@ stufe: "Q1"
 ## 7. Vernetzung
 
 - **上游**：`Sprechen-Muendliche-Abiturpruefung.md`（口试两部分结构，本篇是其 Teil 2 与附加项细化）
-- **下游**：`Orientierungswissen-UK.md` / `Orientierungswissen-USA.md`（谈话内容底座）· `Beeinflussungsstrategien-und-WSE-Varietaeten.md`（§4 #14，待建）
+- **下游**：`Orientierungswissen-UK.md` / `Orientierungswissen-USA.md`（谈话内容底座）· `Beeinflussungsstrategien-und-WSE-Varietaeten.md`（§4 #14，已建）
 - **横向**：`Mediation-und-Kommunikative-Strategien.md`（文化释义句 → 谈话中的澄清）
 - **术语卡**：Verständigungssicherung / Sprechabsicht / turn-taking / hedging / intonation
 

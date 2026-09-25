@@ -176,7 +176,7 @@ stufe: "Q1"
 ## 7. Vernetzung
 
 - **上游**：`Role-Models-Analysis.md`（Analysis 三线 + P.E.E.，隐含信息是其证据来源）
-- **下游**：`Textsortenmerkmale-und-Belegtechniken.md`（§4 #11，待建）· `Multimodale-Texte-Journalismus-und-Social-Media.md`（§4 #12，待建）
+- **下游**：`Textsortenmerkmale-und-Belegtechniken.md`（§4 #11，已建）· `Multimodale-Texte-Journalismus-und-Social-Media.md`（§4 #12，已建）
 - **横向**：`Hoer-und-Hoersehverstehen-QPhase.md`（隐含信息听读同源）· `Beeinflussungsstrategien-und-WSE-Varietaeten.md`（语言操控识别）
 - **术语卡**：implizite Information / Einstellung / multimodaler Text / Belegtechnik / Bild-Text-Relation
 

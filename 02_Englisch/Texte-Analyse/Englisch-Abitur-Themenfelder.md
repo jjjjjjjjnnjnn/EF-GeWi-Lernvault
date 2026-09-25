@@ -127,7 +127,7 @@ tags: [EF, Englisch]
 
 ## 6. Lernreise
 
-- `Lernreise/Englisch-Abitur-Themenfelder-L1.md`（待建）
+- [Lernreise/Englisch-Abitur-Themenfelder-L1.md](../../Lernreise/Englisch-Abitur-Themenfelder-L1.md)（已建）
 
 ## 7. Fehlerlog
 
