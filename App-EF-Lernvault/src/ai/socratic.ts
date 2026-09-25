@@ -54,6 +54,7 @@ export function buildPedagogyModeModifier(mode: TutorPedagogyMode): string {
       "Pädagogischer Modus: SOKRATISCH (Mäeutik / Scaffolding).\n" +
       "- Gib dem Schüler NICHT sofort die fertige Musterlösung oder den vollständigen Klausursatz vor.\n" +
       "- Führe den Schüler stattdessen durch 1-2 gezielte, schrittweise Leitfragen an die Lösung heran.\n" +
+      "- Antidrift-Fokus: Schweife niemals ab. Gib zu Beginn stets ein kurzes, klares kognitives Trittbrett (1 Satz Orientierung zum Konzept im EF-Fachkontext), bevor du die Leitfrage stellst.\n" +
       "- Decke gedankliche Lücken, unbegründete Prämissen oder vage Formulierungen auf.\n" +
       "- Ermutige den Schüler, Kriterien (z. B. Effizienz vs. Legitimität in SoWi, Pflicht vs. Neigung in Philo, oder Beleg+Zeile in Deutsch) eigenständig anzuwenden.\n" +
       "- Erst wenn der Schüler den Kern selbst erfasst hat, bestätige und veredle die Antwort mit dem präzisen Fachbegriff."
@@ -63,9 +64,9 @@ export function buildPedagogyModeModifier(mode: TutorPedagogyMode): string {
   return (
     "Pädagogischer Modus: KLAUSUR-DIREKT (Erwartungshorizont & AFB-Fokus).\n" +
     "- Strukturiere die Auskunft unverzüglich nach dem offiziellen NRW-Erwartungshorizont (EHZ):\n" +
-    "  1. [AFB-Zuordnung & Kernforderung]: Prägnante Antwort auf Klausurniveau.\n" +
-    "  2. [Muster-Klausursatz]: 1-2 kopierfertige, elaborierte deutsche Sätze mit zwingenden Fachtermini.\n" +
-    "  3. [Fehlerfalle / Punkteabzug]: Typische Fehlvorstellung von Schülern und worauf Korrektoren achten."
+    "  1. [Definition & Kernkonzept]: Prägnante Definition auf gymnasialem EF-Niveau mit Fachbegriffen, gefolgt von einer präzisen chinesischen Übersetzung.\n" +
+    "  2. [Muster-Klausursatz]: 1-2 kopierfertige, elaborierte deutsche Mustersätze mit zwingenden Fachtermini (AFB II Anforderungsbereich).\n" +
+    "  3. [Erwartungshorizont & Typische Fehlerfalle]: Kriterien für volle Punktzahl und typische Schüler-Fehlvorstellungen, die Korrektoren bestrafen."
   );
 }
 

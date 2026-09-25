@@ -159,15 +159,30 @@ export interface SupportReport {
 
 const REF_RE = /\[([A-Za-z0-9_\-./äöüÄÖÜß]+\.md#\d+)\]/g;
 
-/** Jede [pfad.md#n]-referenz muss in den gereichten chunks vorkommen. */
-export function verifySupport(answer: string, chunks: TextChunk[]): SupportReport {
+/** Jede [pfad.md#n]-referenz muss in den gereichten chunks vorkommen (oder im gesamten Vault-Bestand, falls übergeben). */
+export function verifySupport(answer: string, chunks: TextChunk[], allChunks?: TextChunk[]): SupportReport {
   const ids = new Set(chunks.map((c) => c.id));
+  const paths = new Set(chunks.map((c) => c.path));
+  const allIds = allChunks ? new Set(allChunks.map((c) => c.id)) : null;
+  const allPaths = allChunks ? new Set(allChunks.map((c) => c.path)) : null;
+
   const refs: string[] = [];
   let m: RegExpExecArray | null;
   REF_RE.lastIndex = 0;
   while ((m = REF_RE.exec(answer)) !== null) {
     if (!refs.includes(m[1])) refs.push(m[1]);
   }
-  const missing = refs.filter((r) => !ids.has(r));
+  const missing = refs.filter((r) => {
+    if (ids.has(r)) return false;
+    const pathOnly = r.replace(/#\d+$/, "");
+    if (paths.has(pathOnly)) return false;
+    if (allIds && allIds.has(r)) return false;
+    if (allPaths) {
+      if (allPaths.has(pathOnly)) return false;
+      const base = pathOnly.split("/").pop();
+      if (base && [...allPaths].some((p) => p.endsWith(base) || p.endsWith(`${base}.md`))) return false;
+    }
+    return true;
+  });
   return { supported: missing.length === 0, refs, missing };
 }

@@ -81,6 +81,53 @@ export default function Tutor({
   const [editingSessionId, setEditingSessionId] = useState<string | null>(null);
   const [editTitleInput, setEditTitleInput] = useState("");
 
+  // Fachauswahl & Verankerung
+  const [selectedFach, setSelectedFach] = useState<string>(_activeFach || "alle");
+  const [copiedMsgId, setCopiedMsgId] = useState<string | null>(null);
+
+  useEffect(() => {
+    if (_activeFach) {
+      setSelectedFach(_activeFach);
+    }
+  }, [_activeFach]);
+
+  const handleSelectFach = (f: string) => {
+    setSelectedFach(f);
+    if (_onSubjectChange) {
+      _onSubjectChange(f);
+    }
+  };
+
+  const handleCopyMessage = (id: string, text: string) => {
+    try {
+      navigator.clipboard.writeText(text);
+      setCopiedMsgId(id);
+      setTimeout(() => setCopiedMsgId(null), 2000);
+    } catch {
+      // Ignorieren falls Clipboard gesperrt
+    }
+  };
+
+  // Memoisiertes Chunking aller Vault-Notizen (behebt CPU-Drossel bei jedem Turn)
+  const allVaultChunks = useMemo(() => chunkNotes(vaultNotes || []), [vaultNotes]);
+
+  // Bereinigt Zitate für verlässlichen Sprung in die Notizen-Bibliothek
+  const cleanCitationTarget = (raw: string): string => {
+    const withoutHash = raw.replace(/#\d+$/, "").replace(/\.md$/, "");
+    const base = withoutHash.split("/").pop() || withoutHash;
+    if (vaultNotes && vaultNotes.length > 0) {
+      const found = vaultNotes.find(
+        (n) =>
+          n.path.includes(base) ||
+          n.thema.toLowerCase() === base.toLowerCase() ||
+          n.thema.toLowerCase().includes(base.toLowerCase()) ||
+          base.toLowerCase().includes(n.thema.toLowerCase())
+      );
+      if (found) return found.thema;
+    }
+    return base.replace(/-/g, " ");
+  };
+
   // Denkintensität
   const [intensity, setIntensity] = useState<ThinkingIntensity>(() => loadThinkingIntensity());
 
@@ -442,9 +489,20 @@ export default function Tutor({
       return;
     }
 
-    // 3. SCHRITT: Hybrid RAG & Token-Budgetierung
+    // 3. SCHRITT: Hybrid RAG & Token-Budgetierung (mit Fach-Priorisierung)
+    let candidateChunks = allVaultChunks;
+    if (selectedFach && selectedFach !== "alle") {
+      const subjectChunks = allVaultChunks.filter(
+        (c) => c.fach.toLowerCase() === selectedFach.toLowerCase()
+      );
+      const otherChunks = allVaultChunks.filter(
+        (c) => c.fach.toLowerCase() !== selectedFach.toLowerCase()
+      );
+      candidateChunks = [...subjectChunks, ...otherChunks];
+    }
+
     const { chunks, level } = await retrieveHybrid(
-      chunkNotes(vaultNotes || []),
+      candidateChunks,
       q,
       INTENSITY_PRESETS[intensity].topKChunks,
       { onProgress: (p) => setLocalPct(p) }
@@ -458,7 +516,7 @@ export default function Tutor({
       const rawHistory: ChatMsg[] = messages
         .filter((m) => {
           if (m.isError) return false;
-          // 本地欢迎引导语与招呼语绝不可混入历史上下文，杜绝大模型依样复读
+          // Lokale Begrüßungs- und Willkommensführung niemals in Kontext schleusen
           if (
             m.id === "welcome" ||
             m.id.endsWith("_welcome") ||
@@ -468,7 +526,7 @@ export default function Tutor({
           ) {
             return false;
           }
-          // 杜绝将离线/网络报错兜底话术混入上下文，防止大模型依样画葫芦复读报错
+          // Verbindungsfehler und Fallback-Hinweise nicht reproduzieren
           if (
             m.text.includes("离线") ||
             m.text.includes("未连通") ||
@@ -489,6 +547,7 @@ export default function Tutor({
 
       const pedagogyMod = buildPedagogyModeModifier(pedagogyMode);
       const fullModifier = `${INTENSITY_PRESETS[intensity].systemModifierDE}\n\n${pedagogyMod}`;
+      const effectiveSubject = selectedFach !== "alle" ? selectedFach : (chunks[0]?.fach || undefined);
 
       const optimized = await assembleOptimizedContext(chunks, rawHistory, {
         query: effectiveQuery,
@@ -496,7 +555,7 @@ export default function Tutor({
         generationReserve: INTENSITY_PRESETS[intensity].maxTokens,
         systemReserve: 400,
         intensityModifier: fullModifier,
-        currentSubject: chunks[0]?.fach,
+        currentSubject: effectiveSubject,
       });
 
       const history: ChatMsg[] = optimized.messages;
@@ -525,9 +584,9 @@ export default function Tutor({
 
       let checkedReply = res.reply;
 
-      // Support-Verifier bei LLM-Generierung
+      // Support-Verifier bei LLM-Generierung (gegen gesamten Vault validiert, um Fehlalarme zu vermeiden)
       if (res.source === "llm") {
-        const support = verifySupport(checkedReply, chunks);
+        const support = verifySupport(checkedReply, chunks, allVaultChunks);
         if (!support.supported) {
           checkedReply += `\n\n(Unsicher — Beleg nicht im Vault gefunden: ${support.missing.join(", ")}. Bitte prüfen / 请核对。)`;
         }
@@ -618,17 +677,18 @@ export default function Tutor({
             }
 
             if (match[2]) {
-              // Notiz-Zitat [Fach/Dateiname.md#Zeile]
+              // Notiz-Zitat [Fach/Dateiname.md#Zeile] -> Zielsicherer Sprung in Notizen-Bibliothek
               const citeTarget = match[2];
+              const cleanTarget = cleanCitationTarget(citeTarget);
               parts.push(
                 <button
                   type="button"
                   key={`cite-${lIdx}-${match.index}`}
-                  onClick={() => onJumpToLibrary?.(citeTarget)}
-                  title={lang === "de" ? "In Notizen öffnen" : "在笔记库中查看"}
+                  onClick={() => onJumpToLibrary?.(cleanTarget)}
+                  title={lang === "de" ? `In Notizen öffnen: ${cleanTarget}` : `在笔记库中查看: ${cleanTarget}`}
                   className="inline-flex items-center font-mono text-[var(--text-meta)] text-[var(--accent)] bg-[var(--accent)]/10 hover:bg-[var(--accent)]/20 px-1 py-0.5 rounded-[var(--radius)] mx-1 transition-colors cursor-pointer"
                 >
-                  [{citeTarget}]
+                  [{cleanTarget}]
                 </button>
               );
             } else if (match[3]) {
@@ -664,13 +724,25 @@ export default function Tutor({
             trimmed.includes("Willkommen") ||
             trimmed.startsWith("Hallo") ||
             trimmed.startsWith("你好") ||
-            trimmed.endsWith("?") ||
-            trimmed.endsWith("？") ||
             trimmed.endsWith(":") ||
             trimmed.endsWith("：");
           const isShortOrMarkdown =
-            trimmed.length < 15 || trimmed.startsWith("#") || trimmed.startsWith("-") || trimmed.startsWith("*");
-          const needsWarning = !hasCitation && !isShortOrMarkdown && !isGreetingOrMeta;
+            trimmed.length < 15 ||
+            trimmed.startsWith("#") ||
+            trimmed.startsWith("-") ||
+            trimmed.startsWith("*") ||
+            trimmed.startsWith("1.") ||
+            trimmed.startsWith("2.") ||
+            trimmed.startsWith("3.") ||
+            trimmed.startsWith("4.") ||
+            trimmed.startsWith(">") ||
+            trimmed.startsWith("[");
+          const isQuestionOrPrompt =
+            trimmed.endsWith("?") ||
+            trimmed.endsWith("？") ||
+            trimmed.includes("Leitfrage") ||
+            trimmed.includes("Überlege");
+          const needsWarning = !hasCitation && !isShortOrMarkdown && !isGreetingOrMeta && !isQuestionOrPrompt && !isTranslation;
 
           return (
             <p key={lIdx} className={`leading-relaxed ${isTranslation ? "zh-translation" : "de-reading"}`}>
@@ -972,6 +1044,30 @@ export default function Tutor({
               </button>
             </div>
           </div>
+
+          {/* Tier 2: Fach-Verankerung (Subject Anchor Selector) */}
+          <div className="flex items-center gap-1 overflow-x-auto px-3 py-1 text-xs border-t border-[var(--line)]/60 bg-[var(--surface)]">
+            <span className="font-mono text-[var(--text-meta)] text-[var(--gray)] mr-1 shrink-0">
+              {lang === "de" ? "Fach:" : "学科:"}
+            </span>
+            {(["alle", "SoWi", "Deutsch", "Philosophie", "Mathe", "Physik", "Chemie", "Bio", "Englisch", "Musik", "Sport"] as const).map((f) => {
+              const isSel = (selectedFach === f) || (!selectedFach && f === "alle");
+              return (
+                <button
+                  key={f}
+                  type="button"
+                  onClick={() => handleSelectFach(f)}
+                  className={`px-2 py-0.5 rounded-[var(--radius)] font-sans text-xs transition-colors shrink-0 cursor-pointer ${
+                    isSel
+                      ? "bg-[var(--ink)] text-[var(--paper)] font-medium"
+                      : "text-[var(--gray)] hover:text-[var(--ink)] hover:bg-[var(--paper-subtle)]"
+                  }`}
+                >
+                  {f === "alle" ? (lang === "de" ? "Alle Fächer" : "全部学科") : f}
+                </button>
+              );
+            })}
+          </div>
         </div>
 
         {!onOpenSettings && showAi && (
@@ -1050,11 +1146,11 @@ export default function Tutor({
                       </span>
                       <button
                         type="button"
-                        onClick={() => onJumpToLibrary?.(m.instantSnippet!.notePath)}
+                        onClick={() => onJumpToLibrary?.(cleanCitationTarget(m.instantSnippet!.notePath))}
                         className="underline hover:text-[var(--accent)] cursor-pointer text-xs"
                         title={lang === "de" ? "In Notizen öffnen" : "在笔记库中查看"}
                       >
-                        [{m.instantSnippet.notePath}]
+                        [{cleanCitationTarget(m.instantSnippet!.notePath)}]
                       </button>
                     </div>
                     <p className="de-reading text-[var(--ink)] leading-relaxed">„{m.instantSnippet.excerpt}“</p>
@@ -1079,7 +1175,7 @@ export default function Tutor({
                       </div>
                       <button
                         type="button"
-                        onClick={() => onJumpToLibrary?.(m.vernetzungBridge!.targetNotePath)}
+                        onClick={() => onJumpToLibrary?.(cleanCitationTarget(m.vernetzungBridge!.targetNotePath))}
                         className="text-xs font-mono text-[var(--success)] hover:underline cursor-pointer flex items-center gap-0.5"
                         title={lang === "de" ? "In Notizen öffnen" : "在笔记库中查看"}
                       >
@@ -1096,7 +1192,7 @@ export default function Tutor({
                   </div>
                 )}
 
-                {/* In Fehlerlog erfassen */}
+                {/* In Fehlerlog erfassen & Nachricht kopieren */}
                 {m.text && !m.isError && (
                   <div className="mt-3 pt-2 border-t border-[var(--line)]/50 flex items-center justify-between">
                     <button
@@ -1109,6 +1205,22 @@ export default function Tutor({
                         <path d="M4 2.5h8v11l-4-2.7-4 2.7v-11z" />
                       </svg>
                       <span>{lang === "de" ? "In Fehlerlog erfassen" : "沉淀为错题"}</span>
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() => handleCopyMessage(m.id, m.text)}
+                      title={lang === "de" ? "Antwort in Zwischenablage kopieren" : "复制此回答"}
+                      className="inline-flex items-center gap-1.5 text-xs font-sans text-[var(--gray)] hover:text-[var(--ink)] hover:bg-[var(--paper-subtle)] px-2 py-1 rounded-[var(--radius)] transition-colors cursor-pointer"
+                    >
+                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" className="h-3.5 w-3.5">
+                        <rect x="5" y="5" width="8" height="8" rx="1" />
+                        <path d="M3 11V3h8" />
+                      </svg>
+                      <span>
+                        {copiedMsgId === m.id
+                          ? (lang === "de" ? "Kopiert" : "已复制")
+                          : (lang === "de" ? "Kopieren" : "复制")}
+                      </span>
                     </button>
                   </div>
                 )}
@@ -1175,6 +1287,51 @@ export default function Tutor({
               </button>
             </div>
           )}
+
+          {/* Starter-Prompt-Chips */}
+          <div className="mb-2 flex items-center gap-1.5 overflow-x-auto text-xs pb-0.5">
+            <span className="font-mono text-[var(--text-meta)] text-[var(--gray)] shrink-0">
+              {lang === "de" ? "Prompt-Chips:" : "快捷提问:"}
+            </span>
+            {[
+              {
+                labelDE: "Definition & Kernkonzept",
+                labelZH: "核心定义 (AFB I)",
+                template: "Erkläre das Kernkonzept und die Definition von: ",
+              },
+              {
+                labelDE: "Muster-Klausursatz (AFB II)",
+                labelZH: "答题原句 (AFB II)",
+                template: "Formuliere einen Muster-Klausursatz mit Fachtermini zu: ",
+              },
+              {
+                labelDE: "Urteil & Kriterien (AFB III)",
+                labelZH: "评价标准 (AFB III)",
+                template: "Welche Beurteilungskriterien (z.B. Effizienz vs. Legitimität) gelten für: ",
+              },
+              {
+                labelDE: "Typische Fehlerfalle",
+                labelZH: "易错防坑点",
+                template: "Welche typische Fehlvorstellung führt bei Korrektoren zu Punktabzug bei: ",
+              },
+              {
+                labelDE: "Übungsaufgabe stellen",
+                labelZH: "出一道考题",
+                template: "Stelle mir eine klausurnahe EF-Übungsaufgabe mit Operator zu: ",
+              },
+            ].map((chip) => (
+              <button
+                key={chip.labelDE}
+                type="button"
+                onClick={() => {
+                  setInput(chip.template);
+                }}
+                className="px-2 py-0.5 rounded-[var(--radius)] border border-[var(--line)] bg-[var(--surface)] text-[var(--gray)] hover:text-[var(--ink)] hover:border-[var(--accent)] font-sans text-xs shrink-0 cursor-pointer transition-colors"
+              >
+                {lang === "de" ? chip.labelDE : chip.labelZH}
+              </button>
+            ))}
+          </div>
 
           <form
             onSubmit={(e) => {

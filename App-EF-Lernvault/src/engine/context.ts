@@ -160,10 +160,12 @@ export async function assembleOptimizedContext(
   }
 
   const warmTokens = estimateTokens(warmChunksText + vernetzungText);
+  const subjectText = opts.currentSubject ? `\n\nAktuelles Fach / Lehrplan-Kontext: ${opts.currentSubject} (Gymnasiale Oberstufe EF, NRW)` : "";
 
   const systemContent = [
     hotPrompt,
     "\n\nAktuell im Vault verfügbar:\n" + warmChunksText,
+    subjectText,
     vernetzungText,
     opts.intensityModifier ? `\n\nModus-Vorgabe: ${opts.intensityModifier}` : "",
   ].join("");
