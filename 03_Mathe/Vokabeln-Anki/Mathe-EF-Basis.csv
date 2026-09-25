@@ -61,4 +61,82 @@ Steckbriefaufgabe;特征信息重构题;Bei einer Steckbriefaufgabe wird ein Fun
 Funktionsrekonstruktion;函数重构;Die Funktionsrekonstruktion bestimmt die Koeffizienten eines Polynoms ueber ein Gleichungssystem.;Mathe;Analysis
 Bedingungsgleichung;条件等式;Jede geometrische Eigenschaft liefert eine algebraische Bedingungsgleichung.;Mathe;Analysis
 Wendetangente;拐点切线;Die Wendetangente beruehrt den Funktionsgraphen genau im Wendepunkt.;Mathe;Analysis
-
+Linearkombination;线性组合;Jeder Vektor der Ebene laesst sich als Linearkombination zweier nicht kollinearer Vektoren darstellen.;Mathe;Geometrie
+Basis;基底;Zwei nicht kollineare Vektoren bilden eine Basis der Ebene.;Mathe;Geometrie
+lineare Unabhaengigkeit;线性无关;Lineare Unabhaengigkeit liegt vor, wenn nur die triviale Kombination den Nullvektor ergibt.;Mathe;Geometrie
+Kollinearitaet;共线性;Die Kollinearitaet zweier Vektoren erkennt man an einem gemeinsamen Faktor.;Mathe;Geometrie
+Pfadregel;路径法则;Nach der Pfadregel werden die Wahrscheinlichkeiten entlang eines Pfades multipliziert.;Mathe;Stochastik
+Vierfeldertafel;四格表;In der Vierfeldertafel stehen die Randwahrscheinlichkeiten am Rand.;Mathe;Stochastik
+totale Wahrscheinlichkeit;全概率;Die totale Wahrscheinlichkeit ist die Summe der Wahrscheinlichkeiten aller disjunkten Pfade.;Mathe;Stochastik
+Rueckwaerts-Schluss;反向推断;Beim Rueckwaerts-Schluss wird die Gesamtwahrscheinlichkeit als Nenner verwendet.;Mathe;Stochastik
+Exponentialfunktion;指数函数;Die Exponentialfunktion f von x gleich a hoch x hat den Wertebereich null bis unendlich.;Mathe;Analysis
+Wachstumsfaktor;增长因子;Der Wachstumsfaktor gibt an, mit welcher Zahl pro Zeiteinheit multipliziert wird.;Mathe;Analysis
+Wachstumsrate;增长率;Die Wachstumsrate p folgt aus dem Wachstumsfaktor durch a gleich eins plus p.;Mathe;Analysis
+Halbwertszeit;半衰期;Die Halbwertszeit ist die Zeit, nach der sich die Masse halbiert.;Mathe;Analysis
+natuerliche Exponentialfunktion;自然指数函数;Die natuerliche Exponentialfunktion e hoch x stimmt mit ihrer eigenen Ableitung ueberein.;Mathe;Analysis
+Funktionsschar;函数族;Eine Funktionsschar fasst mehrere Funktionen mit einem Parameter zusammen.;Mathe;Analysis
+Scharparameter;族参数;Der Scharparameter t beeinflusst die Lage und Gestalt des Graphen.;Mathe;Analysis
+Ortskurve;轨迹曲线;Die Ortskurve der Extrempunkte erhaelt man durch Eliminieren des Parameters.;Mathe;Analysis
+Fallunterscheidung;分类讨论;Die Fallunterscheidung richtet sich nach dem Vorzeichen der Diskriminante.;Mathe;Analysis
+Diskriminante;判别式;Die Diskriminante entscheidet ueber die Anzahl der Nullstellen.;Mathe;Analysis
+Stuetzvektor;支点向量;Der Stuetzvektor zeigt vom Ursprung zu einem Punkt der Geraden.;Mathe;Geometrie
+Punktprobe;点检验;Bei der Punktprobe muessen alle drei Zeilen denselben Parameter liefern.;Mathe;Geometrie
+identisch;重合;Zwei Geraden sind identisch, wenn ihre Richtungsvektoren kollinear sind und ein Punkt auf der anderen liegt.;Mathe;Geometrie
+windschief;异面;Zwei Geraden sind windschief, wenn sie sich nicht schneiden und nicht parallel sind.;Mathe;Geometrie
+Produktsumme;乘积和;Die Produktsumme approximiert den Flaecheninhalt durch schmale Rechtecke.;Mathe;Analysis
+orientierte Flaeche;有向面积;Bei der orientierten Flaeche zaehlen Flaechen unterhalb der x-Achse negativ.;Mathe;Analysis
+Bestandsfunktion;存量函数;Die Bestandsfunktion wird aus einer gegebenen Aenderungsrate rekonstruiert.;Mathe;Analysis
+Integralfunktion;积分函数;Die Integralfunktion hat die Variable als obere Grenze.;Mathe;Analysis
+Hauptsatz;微积分基本定理;Nach dem Hauptsatz ist die Integralfunktion eine Stammfunktion des Integranden.;Mathe;Analysis
+Loesungsmenge;解集;Die Loesungsmenge eines LGS kann ein Punkt, eine Gerade oder eine Ebene sein.;Mathe;Geometrie
+Gauss-Algorithmus;高斯消元;Mit dem Gauss-Algorithmus formt man das System in Stufenform um.;Mathe;Geometrie
+Stufenform;阶梯形;In der Stufenform liest man die Anzahl der Loesungen direkt ab.;Mathe;Geometrie
+Aequivalenzumformung;等价变换;Eine Aequivalenzumformung veraendert die Loesungsmenge nicht.;Mathe;Geometrie
+Differenzenquotient;差商;Der Differenzenquotient beschreibt die Steigung der Sekante.;Mathe;Analysis
+h-Methode;h 方法;Mit der h-Methode wird die Ableitung ueber den Grenzwert des Differenzenquotienten bestimmt.;Mathe;Analysis
+Grenzwert;极限;Der Grenzwert des Differenzenquotienten fuer h gegen null ist die lokale Aenderungsrate.;Mathe;Analysis
+Summenregel;和法则;Nach der Summenregel gilt f plus g Strich gleich f Strich plus g Strich.;Mathe;Analysis
+Faktorregel;因子法则;Nach der Faktorregel bleibt ein konstanter Faktor beim Ableiten erhalten.;Mathe;Analysis
+Linearfaktor;一次因式;Jeder Linearfaktor entspricht einer Nullstelle der Funktion.;Mathe;Analysis
+Satz vom Nullprodukt;零积定理;Nach dem Satz vom Nullprodukt wird jeder Faktor einzeln gleich null gesetzt.;Mathe;Analysis
+Vielfachheit;重数;Bei gerader Vielfachheit durchquert der Graph die x-Achse nicht.;Mathe;Analysis
+Ausklammern;提公因式;Durch Ausklammern von x wird der Term in ein Produkt zerlegt.;Mathe;Analysis
+Produktregel;乘积法则;Die Produktregel wird bei einem Produkt zweier Funktionen angewendet.;Mathe;Analysis
+Kettenregel;链式法则;Die Kettenregel verknuepft die Ableitung der inneren und der aeusseren Funktion.;Mathe;Analysis
+Verkettung;复合;Eine Verkettung entsteht, wenn eine Funktion in eine andere eingesetzt wird.;Mathe;Analysis
+innere Funktion;内层函数;Die innere Funktion wird beim Ableiten zuerst betrachtet.;Mathe;Analysis
+aeussere Funktion;外层函数;Die aeussere Funktion wird nach der inneren abgeleitet.;Mathe;Analysis
+Orthogonalitaet;正交性;Zwei Vektoren sind orthogonal, wenn ihr Skalarprodukt null ist.;Mathe;Geometrie
+Normalenvektor;法向量;Der Normalenvektor steht senkrecht auf der Ebene.;Mathe;Geometrie
+Koordinatenform;坐标式;Die Koordinatenform einer Ebene nutzt einen Normalenvektor.;Mathe;Geometrie
+Normalenform;法线式;In der Normalenform wird die Ebene durch einen Normalenvektor und einen Punkt beschrieben.;Mathe;Geometrie
+Schnittwinkel;夹角;Der Schnittwinkel wird ueber das Skalarprodukt berechnet.;Mathe;Geometrie
+Verschiebung;平移;Eine Verschiebung veraendert die Lage des Graphen.;Mathe;Analysis
+Streckung;伸缩;Eine Streckung veraendert die Form des Graphen in Richtung einer Achse.;Mathe;Analysis
+Scheitelpunktform;顶点式;Die Scheitelpunktform zeigt den Scheitelpunkt direkt an.;Mathe;Analysis
+Amplitude;振幅;Die Amplitude gibt die maximale Auslenkung einer Schwingung an.;Mathe;Analysis
+Periode;周期;Die Periode beschreibt die Laenge eines vollstaendigen Musters.;Mathe;Analysis
+Urnenmodell;瓮模型;Beim Urnenmodell unterscheidet man Ziehen mit und ohne Zuruecklegen.;Mathe;Stochastik
+Binomialverteilung;二项分布;Die Binomialverteilung beschreibt eine feste Anzahl unabhaengiger Versuche.;Mathe;Stochastik
+Standardabweichung;标准差;Die Standardabweichung hat dieselbe Einheit wie die Zufallsvariable.;Mathe;Stochastik
+Mehrstufiges Zufallsexperiment;多阶段随机试验;Ein mehrstufiges Zufallsexperiment wird im Baumdiagramm dargestellt.;Mathe;Stochastik
+Sinusfunktion;正弦函数;Die Sinusfunktion ist periodisch und hat die Periode zwei pi.;Mathe;Analysis
+Kosinusfunktion;余弦函数;Die Kosinusfunktion ist eine um pi verschobene Sinusfunktion.;Mathe;Analysis
+natuerliche Logarithmusfunktion;自然对数函数;Die natuerliche Logarithmusfunktion ist die Umkehrfunktion von e hoch x.;Mathe;Analysis
+Periodenlaenge;周期长度;Die Periodenlaenge laesst sich aus dem Faktor vor dem Argument ablesen.;Mathe;Analysis
+Umkehrfunktion;反函数;Die Umkehrfunktion entsteht durch Spiegelung an der Geraden y gleich x.;Mathe;Analysis
+Umkehrbarkeit;可逆性;Umkehrbarkeit setzt voraus, dass die Funktion streng monoton ist.;Mathe;Analysis
+Einschraenkung des Definitionsbereichs;定义域限制;Durch die Einschraenkung des Definitionsbereichs wird die Funktion umkehrbar.;Mathe;Analysis
+Logarithmus als Umkehrfunktion;对数作为反函数;Der Logarithmus ist die Umkehrfunktion der Exponentialfunktion zur selben Basis.;Mathe;Analysis
+Verbindungsvektor;连接向量;Der Verbindungsvektor zeigt von einem Punkt zum anderen.;Mathe;Geometrie
+Gegenvektor;反向量;Der Gegenvektor hat dieselbe Laenge, aber die entgegengesetzte Richtung.;Mathe;Geometrie
+Betrag eines Vektors;向量长度;Der Betrag eines Vektors gibt seine Laenge an.;Mathe;Geometrie
+Vektoraddition;向量加法;Bei der Vektoraddition werden die Komponenten einzeln addiert.;Mathe;Geometrie
+Hilfsfunktion;辅助函数;Als Hilfsfunktion wird die Differenz der beiden Funktionen gebildet.;Mathe;Analysis
+globales Minimum;全局最小值;Das globale Minimum der Hilfsfunktion muss groesser oder gleich null sein.;Mathe;Analysis
+Kruemmungsverhalten;凹凸性;Das Kruemmungsverhalten hilft, wenn das Vorzeichen der Ableitung schwer zu bestimmen ist.;Mathe;Analysis
+Extremwertbeweis;极值证明;Beim Extremwertbeweis wird eine Ungleichung auf ein Extremwertproblem zurueckgefuehrt.;Mathe;Analysis
+Abstand;距离;Der Abstand zwischen zwei Objekten wird im LK ueber Projektionen berechnet.;Mathe;Geometrie
+Lotfusspunkt;垂足;Der Lotfusspunkt ist der naechste Punkt auf der Geraden.;Mathe;Geometrie
+Aufpunkt;支点;Der Aufpunkt legt zusammen mit dem Richtungsvektor die Gerade fest.;Mathe;Geometrie
+Projektion;投影;Mithilfe der Projektion laesst sich der Abstand Punkt-Ebene bestimmen.;Mathe;Geometrie

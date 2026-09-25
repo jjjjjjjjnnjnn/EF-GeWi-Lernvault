@@ -61,3 +61,81 @@ gleichmaessig beschleunigte Bewegung;匀加速直线运动;Bei der gleichmaessig
 freier Fall;自由落体;Der freie Fall ist eine gleichmaessig beschleunigte Bewegung unter dem Einfluss der Schwerkraft.;Physik;Kinematik
 Superpositionsprinzip;运动叠加原理;Nach dem Superpositionsprinzip ueberlagern sich Teilbewegungen unbeeinflusst voneinander.;Physik;Kinematik
 Bahnkurve;运动轨迹曲线;Die Bahnkurve des waagerechten Wurfs ist eine Parabel.;Physik;Kinematik
+Erkenntnisgewinnung;科学探究;Die Erkenntnisgewinnung folgt dem Weg von der Frage zum Experiment.;Physik;Methoden
+Variablenkontrolle;变量控制;Bei der Variablenkontrolle wird nur eine Groesse geaendert.;Physik;Methoden
+Reproduzierbarkeit;可重复性;Reproduzierbarkeit bedeutet, dass andere dasselbe Ergebnis erhalten.;Physik;Methoden
+Falsifizierbarkeit;可证伪性;Falsifizierbarkeit ist ein Kennzeichen wissenschaftlicher Aussagen.;Physik;Methoden
+Basiskonzept;基础概念;Basiskonzepte ordnen die Physik in wenige Grundideen.;Physik;Methoden
+Erhaltung und Gleichgewicht;守恒与平衡;Erhaltung und Gleichgewicht verbinden viele Teilgebiete der Physik.;Physik;Methoden
+Superposition und Komponenten;叠加与分量;Superposition und Komponenten beschreiben die Ueberlagerung von Wirkungen.;Physik;Methoden
+Zufall und Determiniertheit;随机与确定性;Zufall und Determiniertheit treten in der Quantenphysik nebeneinander auf.;Physik;Methoden
+Bezugssystem;参考系;Geschwindigkeiten haengen vom gewaehlten Bezugssystem ab.;Physik;Relativitaet
+Lichtuhr;光钟;Die Lichtuhr veranschaulicht die Zeitdilatation.;Physik;Relativitaet
+Zeitdilatation;时间膨胀;Die Zeitdilatation besagt, dass bewegte Uhren langsamer gehen.;Physik;Relativitaet
+Lorentzfaktor;洛伦兹因子;Der Lorentzfaktor wird fuer Geschwindigkeiten nahe der Lichtgeschwindigkeit deutlich groesser als eins.;Physik;Relativitaet
+Sachkompetenz;专业能力;Die Sachkompetenz umfasst das Fachwissen der Physik.;Physik;Methoden
+Kommunikationskompetenz;交流能力;Die Kommunikationskompetenz zeigt sich im Darstellen von Ergebnissen.;Physik;Methoden
+Bewertungskompetenz;评价能力;Bewertungskompetenz bedeutet, Folgen physikalischer Anwendungen zu beurteilen.;Physik;Methoden
+Intersubjektivitaet;主体间性;Intersubjektivitaet bedeutet, dass Ergebnisse nachpruefbar sind.;Physik;Methoden
+Federpendel;弹簧摆;Beim Federpendel ist die Rueckstellkraft proportional zur Auslenkung.;Physik;Schwingungen
+Huygenssches Prinzip;惠更斯原理;Nach dem Huygensschen Prinzip geht von jedem Wellenpunkt eine Elementarwelle aus.;Physik;Wellen
+Interferenz;干涉;Bei der Interferenz ueberlagern sich Wellen zu Verstaerkung oder Ausloeschung.;Physik;Wellen
+Doppelspalt;双缝;Am Doppelspalt entsteht ein Interferenzmuster.;Physik;Wellen
+Photon;光子;Ein Photon traegt die Energie h mal f.;Physik;Quantenphysik
+Photoeffekt;光电效应;Beim Photoeffekt loest Licht Elektronen aus einer Metalloberflaeche.;Physik;Quantenphysik
+Austrittsarbeit;逸出功;Die Austrittsarbeit ist die Mindestenergie zum Herausloesen eines Elektrons.;Physik;Quantenphysik
+De-Broglie-Wellenlaenge;德布罗意波长;Die De-Broglie-Wellenlaenge verknuepft Impuls und Wellenlaenge.;Physik;Quantenphysik
+Komplementaritaet;互补性;Die Komplementaritaet besagt, dass Wellen- und Teilchenbild einander ergaenzen.;Physik;Quantenphysik
+magnetischer Fluss;磁通量;Der magnetische Fluss haengt von Feldstaerke und Flaeche ab.;Physik;Induktion
+Induktionsgesetz;电磁感应定律;Nach dem Induktionsgesetz entsteht Spannung durch Flussaenderung.;Physik;Induktion
+Lenzsche Regel;楞次定律;Nach der Lenzschen Regel wirkt der Induktionsstrom seiner Ursache entgegen.;Physik;Induktion
+Transformator;变压器;Der Transformator uebertraegt Energie zwischen zwei Spulen.;Physik;Induktion
+Wechselspannung;交流电压;Eine Wechselspannung aendert periodisch ihr Vorzeichen.;Physik;Induktion
+Linienspektrum;线状谱;Ein Linienspektrum entsteht durch Uebergaenge zwischen Energieniveaus.;Physik;Atomphysik
+Franck-Hertz-Versuch;弗兰克-赫兹实验;Der Franck-Hertz-Versuch weist diskrete Energieniveaus nach.;Physik;Atomphysik
+Energieniveauschema;能级图;Im Energieniveauschema sind die erlaubten Zustaende eingezeichnet.;Physik;Atomphysik
+Zerfallsgesetz;衰变定律;Das Zerfallsgesetz beschreibt die Abnahme der Anzahl instabiler Kerne.;Physik;Atomphysik
+Massendefekt;质量亏损;Der Massendefekt entspricht der Bindungsenergie des Kerns.;Physik;Atomphysik
+Grundkurs;基础课程;Im Grundkurs werden die Grundlagen ohne Logarithmus behandelt.;Physik;Methoden
+Leistungskurs;提高课程;Im Leistungskurs kommen zusaetzliche Inhalte wie die Selbstinduktion hinzu.;Physik;Methoden
+Kursart;课程类型;Die Kursart bestimmt den Umfang der Inhalte.;Physik;Methoden
+Selbstinduktion;自感;Bei der Selbstinduktion induziert eine Spule in sich selbst eine Spannung.;Physik;Induktion
+Kraftstoss;冲量;Der Kraftstoss ist das Produkt aus Kraft und Einwirkdauer.;Physik;Mechanik
+Impulserhaltungssatz;动量守恒定律;Nach dem Impulserhaltungssatz bleibt der Gesamtimpuls ohne aeussere Kraft erhalten.;Physik;Mechanik
+elastischer Stoss;弹性碰撞;Beim elastischen Stoss bleibt die kinetische Energie erhalten.;Physik;Mechanik
+vollkommen unelastischer Stoss;完全非弹性碰撞;Beim vollkommen unelastischen Stoss bewegen sich die Koerper danach gemeinsam.;Physik;Mechanik
+Umlaufzeit;周期;Die Umlaufzeit ist die Dauer eines vollen Umlaufs.;Physik;Mechanik
+Keplersche Gesetze;开普勒定律;Nach den Keplerschen Gesetzen sind die Planetenbahnen Ellipsen.;Physik;Mechanik
+Bahngeschwindigkeit;轨道速度;Die Bahngeschwindigkeit ist der zurueckgelegte Weg pro Zeit auf der Kreisbahn.;Physik;Mechanik
+Radialbeschleunigung;径向加速度;Die Radialbeschleunigung zeigt stets zum Kreismittelpunkt.;Physik;Mechanik
+Kraftansatz;力的方法;Beim Kraftansatz wird die Bewegungsgleichung ueber die Kraefte aufgestellt.;Physik;Mechanik
+Energieansatz;能量方法;Beim Energieansatz wird die Energiebilanz des Systems betrachtet.;Physik;Mechanik
+Energiebilanz;能量衡算;Die Energiebilanz vergleicht Anfangs- und Endenergie.;Physik;Mechanik
+Spannenergie;弹性势能;Die Spannenergie einer Feder waechst mit dem Quadrat der Auslenkung.;Physik;Mechanik
+Coulombsches Gesetz;库仑定律;Das Coulombsche Gesetz beschreibt die Kraft zwischen zwei Ladungen.;Physik;Elektrizitaetslehre
+elektrische Feldstaerke;电场强度;Die elektrische Feldstaerke ist Kraft pro Ladung.;Physik;Elektrizitaetslehre
+elektrisches Potential;电势;Das elektrische Potential ist die Energie pro Ladung.;Physik;Elektrizitaetslehre
+Potentialdifferenz;电势差;Die Potentialdifferenz entspricht der Spannung zwischen zwei Punkten.;Physik;Elektrizitaetslehre
+Plattenkondensator;平行板电容器;Im Plattenkondensator ist das Feld naeherungsweise homogen.;Physik;Elektrizitaetslehre
+Induktivitaet;电感;Die Induktivitaet beschreibt die Faehigkeit einer Spule, Fluss zu erzeugen.;Physik;Induktion
+Wirbelstroeme;涡流;Wirbelstroeme entstehen in leitenden Koerpern bei Flussaenderung.;Physik;Induktion
+Einschaltverzoegerung;接通延迟;Die Einschaltverzoegerung folgt aus der Selbstinduktion der Spule.;Physik;Induktion
+Ausschaltspannungsspitze;断路电压尖峰;Die Ausschaltspannungsspitze entsteht beim schnellen Unterbrechen des Stroms.;Physik;Induktion
+Differentialgleichung;微分方程;Die Bewegungsgleichung des Federpendels ist eine Differentialgleichung.;Physik;Schwingungen
+Kleinwinkelnaeherung;小角近似;Mit der Kleinwinkelnaeherung wird der Sinus durch den Winkel ersetzt.;Physik;Schwingungen
+Eigenfrequenz;固有频率;Die Eigenfrequenz haengt nur von Masse und Federkonstante ab.;Physik;Schwingungen
+Elementarisieren;元化简化;Beim Elementarisieren wird ein komplizierter Zusammenhang auf ein Grundmodell reduziert.;Physik;Methoden
+Zeitkonstante;时间常数;Die Zeitkonstante gibt an, wie schnell sich ein System aendert.;Physik;Schwingungen
+Lorentzkraft;洛伦兹力;Die Lorentzkraft wirkt auf bewegte Ladungen im Magnetfeld.;Physik;Elektrizitaetslehre
+Kreisbahnradius;圆轨道半径;Der Kreisbahnradius waechst mit der Geschwindigkeit des Teilchens.;Physik;Elektrizitaetslehre
+Zentriwinkel;圆心角;Der Zentriwinkel beschreibt den zurueckgelegten Bogen.;Physik;Elektrizitaetslehre
+spezifische Ladung;比荷;Die spezifische Ladung ist das Verhaeltnis von Ladung zu Masse.;Physik;Elektrizitaetslehre
+waagerechter Wurf;平抛运动;Beim waagerechten Wurf ueberlagern sich gleichfoermige und beschleunigte Bewegung.;Physik;Mechanik
+Feldbeschleunigung;场加速度;Die Feldbeschleunigung wirkt im elektrischen Feld auf geladene Teilchen.;Physik;Mechanik
+Ablenkwinkel;偏转角;Der Ablenkwinkel beschreibt die Richtungsaenderung des Teilchens.;Physik;Mechanik
+Parabelbahn;抛物线轨迹;Die Bahn des waagerechten Wurfs ist eine Parabelbahn.;Physik;Mechanik
+Komponentenzerlegung;分量分解;Durch Komponentenzerlegung werden Bewegung und Kraft getrennt betrachtet.;Physik;Mechanik
+vektorielle Groesse;矢量量;Eine vektorielle Groesse hat Betrag und Richtung.;Physik;Mechanik
+Vektoraddition;矢量加法;Bei der Vektoraddition werden Kraefte grafisch aneinandergereiht.;Physik;Mechanik
+Vektorzerlegung;矢量分解;Die Vektorzerlegung zerlegt eine Kraft in zwei Komponenten.;Physik;Mechanik
+Betrag und Richtung;大小与方向;Jede Kraft wird durch Betrag und Richtung beschrieben.;Physik;Mechanik

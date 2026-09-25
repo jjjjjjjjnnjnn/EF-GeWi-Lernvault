@@ -53,3 +53,139 @@ Carrierprotein;载体蛋白;Ein Carrierprotein transportiert Substrate ueber ein
 Kanalprotein;通道蛋白;Kanalproteine ermoeglichen den schnellen selektiven Durchtritt polarer Teilchen.;Bio;Zellbiologie
 Plasmolyse;质壁分离;Bei der Plasmolyse loest sich der Protoplast im hypertonischen Milieu von der Zellwand.;Bio;Zellbiologie
 Deplasmolyse;质壁分离复原;Durch Wassereinstrom legt sich der Protoplast im hypotonischen Milieu wieder an die Zellwand an.;Bio;Zellbiologie
+ATP-ADP-System;ATP-ADP 系统;Das ATP-ADP-System ist der universelle Energietraeger der Zelle.;Bio;Energiehaushalt
+Phosphorylierung;磷酸化;Bei der Phosphorylierung wird eine Phosphatgruppe uebertragen.;Bio;Energiehaushalt
+Hydrolyse;水解;Bei der Hydrolyse von ATP wird Energie frei.;Bio;Energiehaushalt
+Redoxreaktion;氧化还原反应;Bei einer Redoxreaktion werden Elektronen uebertragen.;Bio;Energiehaushalt
+unabhaengige Variable;自变量;Die unabhaengige Variable wird vom Versuchsleiter geaendert.;Bio;Methoden
+abhaengige Variable;因变量;Die abhaengige Variable wird gemessen.;Bio;Methoden
+Kontrollansatz;对照设计;Ein Kontrollansatz laeuft ohne die zu pruefende Bedingung.;Bio;Methoden
+Geltungsbereich;适用范围;Der Geltungsbereich gibt an, fuer welche Faelle die Aussage gilt.;Bio;Methoden
+Zytostatika;细胞抑制剂;Zytostatika hemmen die Zellteilung von Tumorzellen.;Bio;Bewertung
+embryonale Stammzellen;胚胎干细胞;Embryonale Stammzellen koennen sich in viele Zelltypen entwickeln.;Bio;Bewertung
+pluripotent;多能性;Pluripotente Zellen koennen sich in fast alle Gewebe differenzieren.;Bio;Bewertung
+Sachurteil;事实判断;Ein Sachurteil beschreibt den Zustand ohne Wertung.;Bio;Bewertung
+limitierender Faktor;限制因子;Der limitierende Faktor bestimmt die maximale Rate.;Bio;Methoden
+Saettigung;饱和;Bei der Saettigung steigt die Kurve nicht weiter an.;Bio;Methoden
+Plateau;平台期;Das Plateau zeigt den Bereich konstanter Werte.;Bio;Methoden
+Optimum;最适值;Am Optimum erreicht die Kurve ihren hoechsten Wert.;Bio;Methoden
+Erbgang;遗传方式;Der Erbgang beschreibt, wie ein Merkmal vererbt wird.;Bio;Genetik
+X-chromosomal-rezessiv;X 连锁隐性;Bei einem X-chromosomal-rezessiven Erbgang sind ueberwiegend Maenner betroffen.;Bio;Genetik
+Konduktorin;携带者;Eine Konduktorin ist heterozygot und selbst gesund.;Bio;Genetik
+Produktregel;乘法法则;Mit der Produktregel werden die Wahrscheinlichkeiten unabhaengiger Ereignisse multipliziert.;Bio;Genetik
+Chemiosmose;化学渗透;Bei der Chemiosmose treibt ein Protonengradient die ATP-Bildung an.;Bio;Energiehaushalt
+Protonengradient;质子梯度;Der Protonengradient entsteht ueber der inneren Membran.;Bio;Energiehaushalt
+ATP-Synthase;ATP 合酶;Die ATP-Synthase bildet ATP aus ADP und Phosphat.;Bio;Energiehaushalt
+oxidative Phosphorylierung;氧化磷酸化;Die oxidative Phosphorylierung findet an der Atmungskette statt.;Bio;Energiehaushalt
+Endosymbiontentheorie;内共生学说;Die Endosymbiontentheorie erklaert die Entstehung von Mitochondrien.;Bio;Evolution
+Doppelmembran;双层膜;Mitochondrien besitzen eine Doppelmembran.;Bio;Evolution
+ringfoermige DNA;环状 DNA;Mitochondrien enthalten ringfoermige DNA.;Bio;Evolution
+Zweiteilung;二分裂;Mitochondrien vermehren sich durch Zweiteilung.;Bio;Evolution
+Aktivierungsenergie;活化能;Ein Enzym senkt die Aktivierungsenergie einer Reaktion.;Bio;Enzyme
+kompetitive Hemmung;竞争性抑制;Bei der kompetitiven Hemmung besetzt der Hemmstoff das aktive Zentrum.;Bio;Enzyme
+Endprodukthemmung;终产物抑制;Bei der Endprodukthemmung hemmt das Produkt ein Enzym der Kette.;Bio;Enzyme
+allosterisches Zentrum;变构位点;Am allosterischen Zentrum kann ein Regulator das Enzym beeinflussen.;Bio;Enzyme
+saltatorische Erregungsleitung;跳跃式传导;Die saltatorische Erregungsleitung springt von Schnuerring zu Schnuerring.;Bio;Neurobiologie
+Myelinscheide;髓鞘;Die Myelinscheide isoliert das Axon.;Bio;Neurobiologie
+Ranvierscher Schnuerring;郎飞结;An den Ranvierschen Schnuerringen wird das Aktionspotenzial erneuert.;Bio;Neurobiologie
+Demyelinisierung;脱髓鞘;Bei der Demyelinisierung sinkt die Leitungsgeschwindigkeit.;Bio;Neurobiologie
+Primaerreaktion;原初反应;Die Primaerreaktion wandelt Lichtenergie in chemische Energie um.;Bio;Fotosynthese
+Sekundaerreaktion;次级反应;In der Sekundaerreaktion wird Kohlenstoffdioxid fixiert.;Bio;Fotosynthese
+Rubisco;Rubisco 酶;Rubisco katalysiert die Fixierung von Kohlenstoffdioxid.;Bio;Fotosynthese
+Absorptionsspektrum;吸收光谱;Das Absorptionsspektrum zeigt, welches Licht Chlorophyll nutzt.;Bio;Fotosynthese
+Genmutation;基因突变;Eine Genmutation veraendert die Basensequenz eines Gens.;Bio;Genetik
+Rastermutation;移码突变;Eine Rastermutation verschiebt das Leseraster.;Bio;Genetik
+Substitution;置换;Bei einer Substitution wird eine Base durch eine andere ersetzt.;Bio;Genetik
+Nonsense-Mutation;无义突变;Eine Nonsense-Mutation erzeugt ein vorzeitiges Stoppcodon.;Bio;Genetik
+Transkriptionsfaktoren;转录因子;Transkriptionsfaktoren steuern die Genexpression.;Bio;Genetik
+DNA-Methylierung;DNA 甲基化;Die DNA-Methylierung hemmt meist die Transkription.;Bio;Genetik
+Epigenetik;表观遗传学;Die Epigenetik untersucht veraenderbare Genaktivitaet.;Bio;Genetik
+differentielle Genexpression;差异基因表达;Durch differentielle Genexpression entstehen verschiedene Zelltypen.;Bio;Genetik
+Hormonwirkung;激素作用;Die Hormonwirkung beginnt mit der Bindung an einen Rezeptor.;Bio;Hormone
+HPA-Achse;下丘脑-垂体-肾上腺轴;Die HPA-Achse steuert die Reaktion auf Stress.;Bio;Hormone
+Cortisol;皮质醇;Cortisol erhoeht den Blutzuckerspiegel in Stresssituationen.;Bio;Hormone
+negative Rueckkopplung;负反馈;Durch negative Rueckkopplung wird die Hormonausschuettung gebremst.;Bio;Hormone
+Karyogramm;核型图;Im Karyogramm sind die Chromosomen nach Groesse geordnet.;Bio;Genetik
+Genommutation;基因组突变;Bei einer Genommutation aendert sich die Chromosomenzahl.;Bio;Genetik
+Chromosomenmutation;染色体突变;Bei einer Chromosomenmutation aendert sich die Struktur eines Chromosoms.;Bio;Genetik
+Trisomie;三体;Bei einer Trisomie liegt ein Chromosom dreifach vor.;Bio;Genetik
+C4-Pflanze;C4 植物;C4-Pflanzen betreiben eine Vorfixierung von Kohlenstoffdioxid.;Bio;Fotosynthese
+PEP-Carboxylase;PEP 羧化酶;Die PEP-Carboxylase fixiert Kohlenstoffdioxid in C4-Pflanzen.;Bio;Fotosynthese
+Buendelzellscheide;维管束鞘;Die Buendelzellscheide umgibt die Leitbuendel im Blatt.;Bio;Fotosynthese
+Tracer-Methode;示踪法;Mit der Tracer-Methode werden Stoffwechselwege verfolgt.;Bio;Fotosynthese
+Onkogen;原癌基因;Ein Onkogen foerdert die unkontrollierte Zellteilung.;Bio;Genetik
+Anti-Onkogen;抑癌基因;Ein Anti-Onkogen bremst die Zellteilung.;Bio;Genetik
+PCR;聚合酶链式反应;Mit der PCR wird DNA in vitro vervielfaeltigt.;Bio;Genetik
+Gelelektrophorese;凝胶电泳;Mit der Gelelektrophorese werden DNA-Fragmente nach Groesse getrennt.;Bio;Genetik
+Reduktionsteilung;减数第一次分裂;Die Reduktionsteilung halbiert die Chromosomenzahl.;Bio;Genetik
+Aequationsteilung;均等分裂;Die Aequationsteilung trennt die Schwesterchromatiden.;Bio;Genetik
+Crossing-over;交叉互换;Beim Crossing-over werden Abschnitte homologer Chromosomen ausgetauscht.;Bio;Genetik
+Rekombination;重组;Durch Rekombination entstehen neue Genkombinationen.;Bio;Genetik
+semikonservative Replikation;半保留复制;Die semikonservative Replikation erhaelt je einen alten Strang.;Bio;Genetik
+Transkription;转录;Bei der Transkription wird DNA in RNA umgeschrieben.;Bio;Genetik
+Translation;翻译;Bei der Translation wird die RNA in eine Aminosaeuresequenz uebersetzt.;Bio;Genetik
+Codon;密码子;Ein Codon besteht aus drei Basen.;Bio;Genetik
+Neuronale Plastizitaet;神经可塑性;Neuronale Plastizitaet ermoeglicht Lernen und Gedaechtnis.;Bio;Neurobiologie
+raeumliche Summation;空间总和;Bei der raeumlichen Summation wirken mehrere Synapsen gleichzeitig.;Bio;Neurobiologie
+LTP;长时程增强;Die LTP verstaerkt die synaptische Uebertragung dauerhaft.;Bio;Neurobiologie
+NMDA-Rezeptor;NMDA 受体;Der NMDA-Rezeptor ist an der Entstehung von LTP beteiligt.;Bio;Neurobiologie
+Konkurrenzausschlussprinzip;竞争排斥原理;Nach dem Konkurrenzausschlussprinzip koennen zwei Arten nicht dieselbe Nische besetzen.;Bio;Oekologie
+Nischendifferenzierung;生态位分化;Durch Nischendifferenzierung wird Konkurrenz vermieden.;Bio;Oekologie
+Mutualismus;互利共生;Beim Mutualismus ziehen beide Arten einen Nutzen.;Bio;Oekologie
+Raeuber-Beute-Beziehung;捕食关系;Die Raeuber-Beute-Beziehung zeigt periodische Schwankungen.;Bio;Oekologie
+exponentielles Wachstum;指数增长;Beim exponentiellen Wachstum steigt die Population unbegrenzt.;Bio;Oekologie
+logistisches Wachstum;逻辑斯谛增长;Beim logistischen Wachstum naehert sich die Population der Umweltkapazitaet.;Bio;Oekologie
+Umweltkapazitaet;环境容纳量;Die Umweltkapazitaet begrenzt die maximale Populationsgroesse.;Bio;Oekologie
+dichteabhaengige Faktoren;密度制约因子;Dichteabhaengige Faktoren wirken staerker bei hoher Populationsdichte.;Bio;Oekologie
+Ruhepotenzial;静息电位;Das Ruhepotenzial liegt bei etwa minus siebzig Millivolt.;Bio;Neurobiologie
+Aktionspotenzial;动作电位;Das Aktionspotenzial entsteht durch Ionenstroeme ueber die Membran.;Bio;Neurobiologie
+Depolarisation;去极化;Bei der Depolarisation wird das Membranpotenzial positiver.;Bio;Neurobiologie
+Schwellenwert;阈值;Erst oberhalb des Schwellenwerts wird ein Aktionspotenzial ausgeloest.;Bio;Neurobiologie
+Signaltransduktion;信号转导;Bei der Signaltransduktion wird ein Signal in eine Zellantwort umgewandelt.;Bio;Neurobiologie
+Ligand;配体;Ein Ligand bindet spezifisch an einen Rezeptor.;Bio;Neurobiologie
+Second Messenger;第二信使;Der Second Messenger verstaerkt das Signal in der Zelle.;Bio;Neurobiologie
+Signalkaskade;信号级联;Eine Signalkaskade verstaerkt das Signal schrittweise.;Bio;Neurobiologie
+primaere Sinneszelle;初级感觉细胞;Bei einer primaeren Sinneszelle ist die Rezeptorzelle selbst das Neuron.;Bio;Neurobiologie
+sekundaere Sinneszelle;次级感觉细胞;Bei einer sekundaeren Sinneszelle wird das Signal auf ein Neuron uebertragen.;Bio;Neurobiologie
+Rezeptorpotenzial;感受器电位;Das Rezeptorpotenzial ist ein graduiertes Potenzial.;Bio;Neurobiologie
+Adaptation;适应;Durch Adaptation sinkt die Empfindlichkeit bei anhaltendem Reiz.;Bio;Neurobiologie
+phylogenetischer Stammbaum;系统发生树;Der phylogenetische Stammbaum zeigt Verwandtschaftsbeziehungen.;Bio;Evolution
+Synapomorphie;共有衍征;Eine Synapomorphie ist ein gemeinsames abgeleitetes Merkmal.;Bio;Evolution
+Homologie;同源;Homologe Merkmale gehen auf einen gemeinsamen Vorfahren zurueck.;Bio;Evolution
+reproduktive Isolation;生殖隔离;Reproduktive Isolation verhindert den Genaustausch zwischen Populationen.;Bio;Evolution
+Monomer;单体;Ein Monomer ist der Grundbaustein eines Polymers.;Bio;Stoffgruppen
+Polymer;聚合物;Ein Polymer entsteht durch Verkettung vieler Monomere.;Bio;Stoffgruppen
+Kondensation;缩合;Bei der Kondensation wird Wasser abgespalten.;Bio;Stoffgruppen
+Aminosaeure;氨基酸;Eine Aminosaeure besitzt eine Amino- und eine Carboxylgruppe.;Bio;Stoffgruppen
+Stoffkreislauf;物质循环;Im Stoffkreislauf werden Naehrstoffe immer wieder genutzt.;Bio;Oekologie
+Energiefluss;能量流动;Der Energiefluss im Oekosystem ist gerichtet und nimmt ab.;Bio;Oekologie
+Trophieebene;营养级;Jede Trophieebene nimmt Energie aus der vorherigen auf.;Bio;Oekologie
+Destruent;分解者;Destruenten bauen organisches Material ab.;Bio;Oekologie
+Synapse;突触;An der Synapse wird das Signal auf die naechste Zelle uebertragen.;Bio;Neurobiologie
+Acetylcholin;乙酰胆碱;Acetylcholin ist ein Neurotransmitter an der Synapse.;Bio;Neurobiologie
+Acetylcholinesterase;乙酰胆碱酯酶;Die Acetylcholinesterase baut Acetylcholin ab.;Bio;Neurobiologie
+neuromuskulaere Synapse;神经肌肉接头;An der neuromuskulaeren Synapse wird der Muskel erregt.;Bio;Neurobiologie
+Synthetische Evolutionstheorie;现代综合进化论;Die Synthetische Evolutionstheorie verbindet Genetik und Darwinismus.;Bio;Evolution
+Gendrift;遗传漂变;Gendrift veraendert Allelfrequenzen zufaellig.;Bio;Evolution
+reproduktive Fitness;繁殖适应度;Die reproduktive Fitness misst den Fortpflanzungserfolg.;Bio;Evolution
+Allelfrequenz;等位基因频率;Die Allelfrequenz beschreibt den Anteil eines Allels in der Population.;Bio;Evolution
+Toleranzkurve;耐受曲线;Die Toleranzkurve zeigt die Reaktion auf einen Umweltfaktor.;Bio;Oekologie
+oekologische Potenz;生态幅;Die oekologische Potenz beschreibt den Toleranzbereich einer Art.;Bio;Oekologie
+stenoek;窄生态幅;Stenoeke Arten haben einen engen Toleranzbereich.;Bio;Oekologie
+euryoek;广生态幅;Euryoeke Arten tolerieren einen weiten Bereich.;Bio;Oekologie
+anthropogener Treibhauseffekt;人为温室效应;Der anthropogene Treibhauseffekt wird durch Menschen verstaerkt.;Bio;Oekologie
+Ursache-Wirkungs-Kette;因果链;Die Ursache-Wirkungs-Kette verbindet Emissionen mit Folgen.;Bio;Oekologie
+Renaturierung;生态恢复;Bei der Renaturierung wird ein Oekosystem wiederhergestellt.;Bio;Oekologie
+nachhaltige Nutzung;可持续利用;Eine nachhaltige Nutzung erhaelt die Ressourcen fuer die Zukunft.;Bio;Oekologie
+Glykolyse;糖酵解;Die Glykolyse findet im Cytoplasma statt.;Bio;Energiehaushalt
+oxidative Decarboxylierung;氧化脱羧;Bei der oxidativen Decarboxylierung entsteht Acetyl-CoA.;Bio;Energiehaushalt
+Tricarbonsaeurezyklus;三羧酸循环;Der Tricarbonsaeurezyklus laeuft in der Matrix ab.;Bio;Energiehaushalt
+Atmungskette;呼吸链;Die Atmungskette liegt an der inneren Mitochondrienmembran.;Bio;Energiehaushalt
+Interphase;间期;In der Interphase waechst die Zelle und verdoppelt die DNA.;Bio;Zellbiologie
+S-Phase;S 期;In der S-Phase wird die DNA repliziert.;Bio;Zellbiologie
+Checkpoint;检查点;Am Checkpoint wird der Zellzyklus kontrolliert.;Bio;Zellbiologie
+Spindelapparat;纺锤体;Der Spindelapparat verteilt die Chromosomen.;Bio;Zellbiologie
+Kompartimentierung;区室化;Durch Kompartimentierung laufen Reaktionen getrennt ab.;Bio;Zellbiologie
+Zelldifferenzierung;细胞分化;Bei der Zelldifferenzierung entstehen spezialisierte Zellen.;Bio;Zellbiologie
+Arbeitsteilung;分工;Die Arbeitsteilung der Organellen erhoeht die Effizienz.;Bio;Zellbiologie
+selektive Genexpression;选择性基因表达;Durch selektive Genexpression werden nur bestimmte Gene aktiv.;Bio;Zellbiologie

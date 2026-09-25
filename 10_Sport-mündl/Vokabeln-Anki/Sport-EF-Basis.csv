@@ -2,3 +2,103 @@ Deutsch;Chinesisch;Beispielsatz;Fach;Thema
 Absprungwinkel;起跳角度;Ein flacher Absprungwinkel traegt weit.;Sport;Weitsprung
 Koerperschwerpunkt;身体重心;Der Koerperschwerpunkt fliegt auf einer Parabel.;Sport;Weitsprung
 Landung;落地;Die Landung federt mit Beugung ab.;Sport;Weitsprung
+die aerobe Ausdauer;有氧耐力;Die aerobe Ausdauer traegt die Grundlage.;Sport;Ausdauer
+die anaerobe Ausdauer;无氧耐力;Die anaerobe Ausdauer sichert die Spurtkraft.;Sport;Ausdauer
+die Dauermethode;持续法;Die Dauermethode laeuft ohne Pause.;Sport;Ausdauer
+die Intervallmethode;间歇法;Die Intervallmethode wechselt Last und Pause.;Sport;Ausdauer
+die Belastungsintensitaet;负荷强度;Die Belastungsintensitaet beschreibt das Wie.;Sport;Belastung
+der Belastungsumfang;负荷量;Der Belastungsumfang beschreibt das Wie viel.;Sport;Belastung
+die Belastungsdauer;负荷时长;Die Belastungsdauer misst die Zeit des Reizes.;Sport;Belastung
+die Belastungsdichte;负荷密度;Die Belastungsdichte steigt mit kurzer Pause.;Sport;Belastung
+das ATP;三磷酸腺苷;ATP ist die direkte Energie der Muskeln.;Sport;Energie
+das Kreatinphosphat;磷酸肌酸;Kreatinphosphat erneuert ATP schnell.;Sport;Energie
+die Glykolyse;糖酵解;Die Glykolyse liefert Energie ohne Sauerstoff.;Sport;Energie
+die Laktatschwelle;乳酸阈;Die Laktatschwelle trennt die Intensitaetsbereiche.;Sport;Energie
+die Aggression;攻击性;Aggression richtet sich gegen andere.;Sport;Sozial
+die feindselige Aggression;敌意性攻击;Die feindselige Aggression will schaden.;Sport;Sozial
+die instrumentelle Aggression;工具性攻击;Die instrumentelle Aggression dient einem Ziel.;Sport;Sozial
+die Fairness;公平;Fairness achtet den Gegner.;Sport;Sozial
+die Grundlagenausdauer;基础耐力;Die Grundlagenausdauer ist die Basis.;Sport;Fitness
+der Trainingszustand;训练状态;Der Trainingszustand ist veraenderlich.;Sport;Fitness
+der motorische Test;运动测试;Der motorische Test misst die Fitness.;Sport;Fitness
+die WHO-Bewegungsempfehlung;WHO运动建议;Die WHO-Bewegungsempfehlung nennt 150 Minuten pro Woche.;Sport;Fitness
+das Gestaltungskriterium;编排准则;Das Gestaltungskriterium ordnet die Analyse.;Sport;Gestaltung
+der Raum;空间;Der Raum ordnet die Bewegung.;Sport;Gestaltung
+die Zeit;时间;Die Zeit ordnet den Rhythmus.;Sport;Gestaltung
+die Dynamik;动态;Die Dynamik zeigt den Krafteinsatz.;Sport;Gestaltung
+der gesundheitliche Nutzen;健康益处;Der gesundheitliche Nutzen waechst mit regelmaessigem Training.;Sport;Gesundheit
+die Dosis-Wirkung-Beziehung;剂量-效应关系;Die Dosis-Wirkung-Beziehung zeigt die Grenzen.;Sport;Gesundheit
+die Praevention;预防;Die Praevention senkt das Verletzungsrisiko.;Sport;Gesundheit
+das Schlagvolumen;每搏输出量;Das Schlagvolumen steigt durch Ausdauertraining.;Sport;Gesundheit
+die Handlungssteuerung;行动调控;Die Handlungssteuerung regelt das Handeln.;Sport;Psyche
+die Aktivierung;激活水平;Die Aktivierung beeinflusst die Leistung.;Sport;Psyche
+das Yerkes-Dodson-Gesetz;耶克斯-多德森定律;Das Yerkes-Dodson-Gesetz beschreibt die Kurve.;Sport;Psyche
+die Emotionsregulation;情绪调节;Die Emotionsregulation senkt die Aufregung.;Sport;Psyche
+die Improvisation;即兴;Die Improvisation entsteht im Moment.;Sport;Gestaltung
+die Variation;变奏;Die Variation veraendert ein Merkmal gezielt.;Sport;Gestaltung
+das Variationskriterium;变奏准则;Das Variationskriterium aendert nur eines.;Sport;Gestaltung
+die Verfremdung;陌生化;Die Verfremdung macht Vertrautes fremd.;Sport;Gestaltung
+die Informationsaufnahme;信息接收;Die Informationsaufnahme beginnt mit den Sinnen.;Sport;Lernen
+die Wahrnehmung;感知;Die Wahrnehmung deutet die Reize.;Sport;Lernen
+die Antizipation;预判;Die Antizipation erkennt die Bewegung voraus.;Sport;Lernen
+die Reaktionszeit;反应时;Die Reaktionszeit endet mit dem Bewegungsstart.;Sport;Lernen
+die koordinativen Faehigkeiten;协调能力;Die koordinativen Faehigkeiten steuern die Bewegung.;Sport;Koordination
+die Gleichgewichtsfaehigkeit;平衡能力;Die Gleichgewichtsfaehigkeit haelt die Lage.;Sport;Koordination
+die Orientierungsfaehigkeit;定向能力;Die Orientierungsfaehigkeit ordnet den Raum.;Sport;Koordination
+die Rhythmisierungsfaehigkeit;节奏能力;Die Rhythmisierungsfaehigkeit traegt den Takt.;Sport;Koordination
+das Doping;兴奋剂使用;Doping verstoesst gegen die Verbotsliste.;Sport;Doping
+die Anabolika;合成代谢类固醇;Anabolika foerdern den Muskelaufbau.;Sport;Doping
+das EPO;促红细胞生成素;EPO erhoeht die Sauerstoffaufnahme.;Sport;Doping
+das Blutdoping;血液兴奋剂;Blutdoping erhoeht die Ausdauer.;Sport;Doping
+das Gesundheitskonzept;健康概念;Das Gesundheitskonzept erklaert die Gesundheit.;Sport;Gesundheit
+die Pathogenese;病理取向;Die Pathogenese fragt nach den Ursachen.;Sport;Gesundheit
+die Salutogenese;健康生成取向;Die Salutogenese fragt nach den Quellen der Gesundheit.;Sport;Gesundheit
+das Kohaerenzgefuehl;一致感;Das Kohaerenzgefuehl staerkt die Gesundheit.;Sport;Gesundheit
+die Leistungsdiagnostik;成绩诊断;Die Leistungsdiagnostik misst die Leistung.;Sport;Diagnostik
+die Objektivitaet;客观性;Die Objektivitaet haengt nicht vom Tester ab.;Sport;Diagnostik
+die Reliabilitaet;可靠性;Die Reliabilitaet zeigt stabile Werte.;Sport;Diagnostik
+die Validitaet;效度;Die Validitaet prueft, was gemessen wird.;Sport;Diagnostik
+das Spielvermittlungsmodell;球类教学模型;Das Spielvermittlungsmodell ordnet den Weg.;Sport;Spiel
+die Technikorientierung;技术优先;Die Technikorientierung uebt zuerst die Technik.;Sport;Spiel
+die Taktikorientierung;战术优先;Die Taktikorientierung beginnt mit dem Spiel.;Sport;Spiel
+die Spielfaehigkeit;比赛能力;Die Spielfaehigkeit verbindet Technik und Taktik.;Sport;Spiel
+die Steuerung;调控;Die Steuerung beeinflusst die Bedingungen.;Sport;Ethik
+die Spielmanipulation;操纵比赛;Die Spielmanipulation folgt dem Wettbetrug.;Sport;Ethik
+die Kommerzialisierung;商业化;Die Kommerzialisierung praegt den Sport.;Sport;Ethik
+die Integritaet;诚信;Die Integritaet schuetzt den Wettkampf.;Sport;Ethik
+die Ganzheitsmethode;整体法;Die Ganzheitsmethode uebt das ganze Bewegungsbild.;Sport;Lernen
+die analytisch-synthetische Methode;分解合成法;Die analytisch-synthetische Methode zerlegt die Bewegung.;Sport;Lernen
+die methodische Uebungsreihe;方法练习序列;Die methodische Uebungsreihe steigert die Schwierigkeit.;Sport;Lernen
+die Erleichterung;简化;Die Erleichterung senkt die Anforderung.;Sport;Lernen
+das Motiv;动因;Das Motiv wirkt als stabile Neigung.;Sport;Motivation
+die Motivation;动机;Die Motivation entsteht aus Situation und Motiv.;Sport;Motivation
+die intrinsische Motivation;内在动机;Die intrinsische Motivation kommt von der Sache.;Sport;Motivation
+die extrinsische Motivation;外在动机;Die extrinsische Motivation folgt dem Lohn.;Sport;Motivation
+das motorische Lernen;运动学习;Das motorische Lernen fuehrt zur Fertigkeit.;Sport;Lernen
+die Bewegungsfertigkeit;运动技能;Die Bewegungsfertigkeit wird durch Ueben stabil.;Sport;Lernen
+die Lernphase;学习阶段;Die Lernphase gliedert den Lernweg.;Sport;Lernen
+die Grobkoordination;粗糙协调;Die Grobkoordination zeigt viele Fehler.;Sport;Lernen
+die Skelettmuskulatur;骨骼肌;Die Skelettmuskulatur bewegt das Skelett.;Sport;Muskulatur
+die isometrische Kontraktion;等长收缩;Die isometrische Kontraktion haelt die Spannung.;Sport;Muskulatur
+die konzentrische Kontraktion;向心收缩;Die konzentrische Kontraktion verkuerzt den Muskel.;Sport;Muskulatur
+die exzentrische Kontraktion;离心收缩;Die exzentrische Kontraktion bremst die Bewegung.;Sport;Muskulatur
+das Phasenmodell;分相模型;Das Phasenmodell gliedert die Bewegung.;Sport;Bewegungsanalyse
+die Vorbereitungsphase;准备相;Die Vorbereitungsphase sammelt Kraft.;Sport;Bewegungsanalyse
+die Hauptphase;主相;Die Hauptphase entscheidet die Leistung.;Sport;Bewegungsanalyse
+die Endphase;结束相;Die Endphase sichert die Landung.;Sport;Bewegungsanalyse
+die konstitutive Regel;构成性规则;Die konstitutive Regel macht das Spiel aus.;Sport;Spiel
+die regulative Regel;调节性规则;Die regulative Regel ordnet das Verhalten.;Sport;Spiel
+die Spielgelegenheit;比赛机会;Die Spielgelegenheit schafft Beteiligung.;Sport;Spiel
+die Spielidee;比赛理念;Die Spielidee traegt das Spiel.;Sport;Spiel
+die Superkompensation;超量恢复;Die Superkompensation hebt das Niveau.;Sport;Anpassung
+die Erholung;恢复;Die Erholung stellt das Niveau wieder her.;Sport;Anpassung
+die Anpassung;适应;Die Anpassung folgt dem Reiz.;Sport;Anpassung
+die Reversibilitaet;可逆性;Die Reversibilitaet laesst die Anpassung schwinden.;Sport;Anpassung
+der wirksame Belastungsreiz;有效刺激原则;Der wirksame Belastungsreiz ueberschreitet die Schwelle.;Sport;Trainingsprinzip
+die progressive Belastungssteigerung;渐进负荷提升;Die progressive Belastungssteigerung hebt die Last.;Sport;Trainingsprinzip
+die Variation der Trainingsbelastung;负荷变化原则;Die Variation der Trainingsbelastung vermeidet Stillstand.;Sport;Trainingsprinzip
+die Periodisierung;周期化;Die Periodisierung ordnet die Trainingsjahre.;Sport;Trainingsprinzip
+die Bewegungsanalyse;动作分析;Die Bewegungsanalyse beschreibt den Ablauf.;Sport;Bewegungsanalyse
+die Bewegungsbeschreibung;动作描述;Die Bewegungsbeschreibung bleibt sachlich.;Sport;Bewegungsanalyse
+die Bewegungsbeobachtung;动作观察;Die Bewegungsbeobachtung folgt Kriterien.;Sport;Bewegungsanalyse
+das Qualitaetsmerkmal;质量特征;Das Qualitaetsmerkmal beschreibt die Ausfuehrung.;Sport;Bewegungsanalyse
