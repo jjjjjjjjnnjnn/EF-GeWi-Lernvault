@@ -163,7 +163,7 @@ EN: Goals — represent formulas trilingually; explain CN mnemonics in German ex
 
 ## 6. Lernreise
 
-- `Lernreise/Mathe-CN-Formeln-L1.md`（待建：三语听写加手算5分钟）
+- [Lernreise/Mathe-CN-Formeln-L1.md](../Lernreise/Mathe-CN-Formeln-L1.md)（已建：三语听写加手算5分钟）
 
 ## 7. Fehlerlog
 

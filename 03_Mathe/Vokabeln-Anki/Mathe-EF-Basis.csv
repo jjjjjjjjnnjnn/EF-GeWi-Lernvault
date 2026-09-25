@@ -140,3 +140,23 @@ Abstand;距离;Der Abstand zwischen zwei Objekten wird im LK ueber Projektionen 
 Lotfusspunkt;垂足;Der Lotfusspunkt ist der naechste Punkt auf der Geraden.;Mathe;Geometrie
 Aufpunkt;支点;Der Aufpunkt legt zusammen mit dem Richtungsvektor die Gerade fest.;Mathe;Geometrie
 Projektion;投影;Mithilfe der Projektion laesst sich der Abstand Punkt-Ebene bestimmen.;Mathe;Geometrie
+Potenzregel;幂法则;Mit der Potenzregel leite ich x hoch drei zu drei x hoch zwei ab.;Mathe;Ableitungsregeln
+konstante Funktion;常数函数;Eine konstante Funktion hat ueberall die Steigung null.;Mathe;Ableitungsregeln
+Ableitungsfunktion;导函数;Die Ableitungsfunktion gibt an jeder Stelle die Tangentensteigung an.;Mathe;Ableitungsregeln
+AM-GM-Ungleichung;均值不等式;Mit der AM-GM-Ungleichung schaetze ich die Summe zweier positiver Zahlen nach unten ab.;Mathe;CN-Formeln
+Erwartungshorizont;期望视野;Der Erwartungshorizont listet alle Punkte fuer eine Aufgabe auf.;Mathe;CN-Training
+Spezialwert-Methode;特殊值法;Mit der Spezialwert-Methode setze ich zuerst x gleich null ein.;Mathe;CN-Tricks
+Skizze / Veranschaulichung;数形结合;Eine Skizze macht die Nullstellen und die Monotonie sofort sichtbar.;Mathe;CN-Tricks
+Parametertrennung;分离参数;Durch Parametertrennung steht der Parameter allein auf einer Seite.;Mathe;CN-Tricks
+Pruefsatz;检验句;Im Pruefsatz formuliere ich das Ergebnis als einen klaren deutschen Satz.;Mathe;CN-Tricks
+monoton steigend;单调递增;Auf diesem Intervall ist die Funktion monoton steigend.;Mathe;Kurvendiskussion
+monoton fallend;单调递减;Links vom Tiefpunkt ist die Funktion monoton fallend.;Mathe;Kurvendiskussion
+Lokale Aenderungsrate;瞬时变化率;Die lokale Aenderungsrate ist der Wert der Ableitung an einer Stelle.;Mathe;Sekante-Tangente
+Sekante;割线;Eine Sekante schneidet den Graphen in zwei verschiedenen Punkten.;Mathe;Sekante-Tangente
+allgemeiner Ansatz;一般式;Mit dem allgemeinen Ansatz schreibe ich alle unbekannten Koeffizienten auf.;Mathe;Steckbriefaufgaben
+Koeffizienten;待定系数;Die Koeffizienten werden aus den gegebenen Bedingungen bestimmt.;Mathe;Steckbriefaufgaben
+Uebersetzung der Bedingungen;几何条件翻译;Die Uebersetzung der Bedingungen macht aus jeder Eigenschaft eine Gleichung.;Mathe;Steckbriefaufgaben
+Probe;验算;Nach dem Loesen mache ich mit einer Probe die Kontrolle.;Mathe;Steckbriefaufgaben
+hilfsmittelfreier Teil;免工具部分;Im hilfsmittelfreien Teil darf ich keinen Taschenrechner benutzen.;Mathe;ZKE
+Teil B mit Hilfsmitteln;工具部分;Im Teil B mit Hilfsmitteln schreibe ich jeden Rechenschritt auf.;Mathe;ZKE
+Darstellungsleistung;呈现能力;Die Darstellungsleistung bewertet den vollstaendigen Loesungsweg.;Mathe;ZKE

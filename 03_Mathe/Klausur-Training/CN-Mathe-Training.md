@@ -142,7 +142,7 @@ EN: Compute derivative chains; use vectors and trees; find extrema with AM-GM.
 
 ## 6. Lernreise
 
-- `Lernreise/Mathe-CN-Training-L1.md`（待建：4题限时60分钟加EHZ自评）
+- [Lernreise/Mathe-CN-Training-L1.md](../../Lernreise/Mathe-CN-Training-L1.md)（已建：4题限时60分钟加EHZ自评）
 
 ## 7. Fehlerlog
 

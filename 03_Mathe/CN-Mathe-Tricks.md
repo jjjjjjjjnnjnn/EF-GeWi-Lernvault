@@ -139,7 +139,7 @@ EN: Apply six tricks with conditions; justify each quick result in German; judge
 
 ## 6. Lernreise
 
-- `Lernreise/Mathe-CN-Tricks-L1.md`（待建：每法1道自编题加德语检验句）
+- [Lernreise/Mathe-CN-Tricks-L1.md](../Lernreise/Mathe-CN-Tricks-L1.md)（已建：每法1道自编题加德语检验句）
 
 ## 7. Fehlerlog
 

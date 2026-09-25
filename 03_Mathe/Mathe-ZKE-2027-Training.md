@@ -89,7 +89,7 @@ Deutsch: Diese fuenf Begriffe vor dem Training aktiv beherrschen, erst dann Aufg
 
 ## 6. Lernreise
 
-- Lernreise/Mathe-ZKE-2027-L1.md（待建：A卷25分钟模拟加B卷论证链）
+- [Lernreise/Mathe-ZKE-2027-L1.md](../Lernreise/Mathe-ZKE-2027-L1.md)（已建：A卷25分钟模拟加B卷论证链）
 
 ## 7. Fehlerlog
 
