@@ -24,6 +24,83 @@ import { setFeedbackContext } from "../components/FeedbackBox";
 import { xpStore, type XpData } from "../engine/stores";
 import { PER_MODULE_KEYS, isTyping, matchesKey } from "../keys";
 import type { Lang } from "../i18n";
+import { SatzbauLego } from "../components/pedagogy/SatzbauLego";
+import { BalanceBoard } from "../components/pedagogy/BalanceBoard";
+import { TextHighlighter } from "../components/pedagogy/TextHighlighter";
+import { TangentSlider } from "../components/pedagogy/TangentSlider";
+import FormulaScaffold from "../components/pedagogy/FormulaScaffold";
+import OralExamTimer from "../components/pedagogy/OralExamTimer";
+
+function renderEmbeddedTool(toolName: string, lang: Lang, fach: string) {
+  const t = toolName.toLowerCase().trim();
+  if (t === "tangent" || t === "tangente" || t === "ableitung") {
+    return (
+      <div className="my-3 p-3.5 border border-[var(--line)] bg-[var(--surface)] rounded-[var(--radius)]">
+        <div className="flex items-center justify-between text-xs font-mono text-[var(--accent)] mb-2 font-medium">
+          <span>{lang === "de" ? "Interaktives Werkzeug: Tangenten-Simulator" : "交互教具：割线逼近切线导数沙盘"}</span>
+          <span className="text-[var(--text-meta)] text-[var(--gray)]">Mathe (Analysis)</span>
+        </div>
+        <TangentSlider />
+      </div>
+    );
+  }
+  if (t === "balance" || t === "waage" || t === "urteil") {
+    return (
+      <div className="my-3 p-3.5 border border-[var(--line)] bg-[var(--surface)] rounded-[var(--radius)]">
+        <div className="flex items-center justify-between text-xs font-mono text-[var(--accent)] mb-2 font-medium">
+          <span>{lang === "de" ? "Interaktives Werkzeug: Urteils-Waage" : "交互教具：辩证价值裁决天平"}</span>
+          <span className="text-[var(--text-meta)] text-[var(--gray)]">SoWi & Philo</span>
+        </div>
+        <BalanceBoard lang={lang} />
+      </div>
+    );
+  }
+  if (t === "lego" || t === "satzbau") {
+    return (
+      <div className="my-3 p-3.5 border border-[var(--line)] bg-[var(--surface)] rounded-[var(--radius)]">
+        <div className="flex items-center justify-between text-xs font-mono text-[var(--accent)] mb-2 font-medium">
+          <span>{lang === "de" ? "Interaktives Werkzeug: Satzbau-Lego" : "交互教具：考场学术句式积木"}</span>
+          <span className="text-[var(--text-meta)] text-[var(--gray)]">{fach}</span>
+        </div>
+        <SatzbauLego lang={lang} fach={fach} />
+      </div>
+    );
+  }
+  if (t === "highlighter" || t === "text" || t === "dekonstruieren") {
+    return (
+      <div className="my-3 p-3.5 border border-[var(--line)] bg-[var(--surface)] rounded-[var(--radius)]">
+        <div className="flex items-center justify-between text-xs font-mono text-[var(--accent)] mb-2 font-medium">
+          <span>{lang === "de" ? "Interaktives Werkzeug: Text-Dekonstruierer" : "交互教具：多维文本解构器"}</span>
+          <span className="text-[var(--text-meta)] text-[var(--gray)]">Deutsch & Englisch</span>
+        </div>
+        <TextHighlighter lang={lang} />
+      </div>
+    );
+  }
+  if (t === "formula" || t === "formel" || t === "mint") {
+    return (
+      <div className="my-3 p-3.5 border border-[var(--line)] bg-[var(--surface)] rounded-[var(--radius)]">
+        <div className="flex items-center justify-between text-xs font-mono text-[var(--accent)] mb-2 font-medium">
+          <span>{lang === "de" ? "Interaktives Werkzeug: MINT-Scaffold" : "交互教具：理科四步规范解题脚手架"}</span>
+          <span className="text-[var(--text-meta)] text-[var(--gray)]">MINT</span>
+        </div>
+        <FormulaScaffold lang={lang} />
+      </div>
+    );
+  }
+  if (t === "oral-timer" || t === "oraltimer" || t === "timer") {
+    return (
+      <div className="my-3 p-3.5 border border-[var(--line)] bg-[var(--surface)] rounded-[var(--radius)]">
+        <div className="flex items-center justify-between text-xs font-mono text-[var(--accent)] mb-2 font-medium">
+          <span>{lang === "de" ? "Interaktives Werkzeug: Mündliche Prüfung Timer" : "交互教具：口试倒计时器"}</span>
+          <span className="text-[var(--text-meta)] text-[var(--gray)]">Musik & Sport</span>
+        </div>
+        <OralExamTimer lang={lang} />
+      </div>
+    );
+  }
+  return null;
+}
 
 interface ProgressData {
   xp: number;
@@ -645,6 +722,13 @@ export default function ReiseModule({
                   />
                 </div>
 
+                {/* Eingebettetes didaktisches Werkzeug falls im Text deklariert */}
+                {(() => {
+                  const raw = (currentSchritt as SchrittEntdecken).rawText || "";
+                  const match = /\[Werkzeug:\s*([a-zA-Z0-9_\-]+)\]/i.exec(raw);
+                  return match ? renderEmbeddedTool(match[1], lang, activeCourse.fach) : null;
+                })()}
+
                 {/* D2: KI-erklaerung (auto) + rueckfragen */}
                 {(kiBox?.loading || kiBox?.text) && (
                   <div
@@ -712,11 +796,18 @@ export default function ReiseModule({
             )}
 
             {/* STEP 2: AUSPROBIEREN (动手) */}
-            {currentSchritt?.typ === "ausprobieren" && (
-              <div className="space-y-5">
-                <div className="border border-[var(--line)] bg-[var(--paper-subtle)] p-4 rounded-[var(--radius)] font-serif text-base text-[var(--ink)] leading-relaxed">
-                  {(currentSchritt as SchrittAusprobieren).aufgabe}
-                </div>
+            {currentSchritt?.typ === "ausprobieren" && (() => {
+              const aufgabe = (currentSchritt as SchrittAusprobieren).aufgabe || "";
+              const match = /\[Werkzeug:\s*([a-zA-Z0-9_\-]+)\]/i.exec(aufgabe);
+              const cleanAufgabe = aufgabe.replace(/\[Werkzeug:\s*[a-zA-Z0-9_\-]+\]/gi, "").trim();
+
+              return (
+                <div className="space-y-5">
+                  <div className="border border-[var(--line)] bg-[var(--paper-subtle)] p-4 rounded-[var(--radius)] font-serif text-base text-[var(--ink)] leading-relaxed">
+                    {cleanAufgabe}
+                  </div>
+
+                  {match && renderEmbeddedTool(match[1], lang, activeCourse.fach)}
 
                 {(currentSchritt as SchrittAusprobieren).hilfe && (
                   <div>
@@ -807,7 +898,8 @@ export default function ReiseModule({
                   </button>
                 </div>
               </div>
-            )}
+            );
+          })()}
 
             {/* STEP 3: CHECK (过关题) */}
             {currentSchritt?.typ === "check" && (

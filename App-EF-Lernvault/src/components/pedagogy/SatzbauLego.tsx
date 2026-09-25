@@ -3,7 +3,7 @@
 // Streng nach NRW AFB II/III Bewertungsraster: Fundstelle + Analytisches Verb + Mittel + Wirkung.
 // Reines Inline-SVG, kein Emoji, Tufte-Design-Token.
 
-import { useState } from "react";
+import { useMemo, useState } from "react";
 
 function CloseIcon() {
   return (
@@ -167,6 +167,7 @@ const CATEGORY_META: Record<
 export interface SatzbauLegoProps {
   templateId?: string;
   lang?: "de" | "zh";
+  fach?: string;
   onSentenceComplete?: (sentenceDE: string) => void;
   onJumpToFehlerlog?: (incorrectAttempt: string) => void;
 }
@@ -174,12 +175,20 @@ export interface SatzbauLegoProps {
 export function SatzbauLego({
   templateId,
   lang = "zh",
+  fach,
   onSentenceComplete,
   onJumpToFehlerlog,
 }: SatzbauLegoProps) {
-  const [selectedTemplateId, setSelectedTemplateId] = useState<string>(
-    templateId || PRESET_TEMPLATES[0].id
-  );
+  const initialTemplateId = useMemo(() => {
+    if (templateId) return templateId;
+    if (fach) {
+      const match = PRESET_TEMPLATES.find((t) => t.fach.toLowerCase() === fach.toLowerCase());
+      if (match) return match.id;
+    }
+    return PRESET_TEMPLATES[0].id;
+  }, [templateId, fach]);
+
+  const [selectedTemplateId, setSelectedTemplateId] = useState<string>(initialTemplateId);
   const activeTemplate =
     PRESET_TEMPLATES.find((t) => t.id === selectedTemplateId) || PRESET_TEMPLATES[0];
 

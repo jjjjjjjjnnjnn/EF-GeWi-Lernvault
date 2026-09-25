@@ -185,29 +185,28 @@ export default function App() {
   const [selectedNoteId, setSelectedNoteId] = useState<string | undefined>(undefined);
   const tr = t(lang);
 
-  type PrimaryWorkspace = "home" | "wissen" | "karten" | "training" | "tutor" | "einstellungen";
+  type PrimaryWorkspace = "home" | "lernen" | "wiederholen" | "ueben" | "einstellungen";
 
   const getWorkspaceForTab = (t: Tab): PrimaryWorkspace => {
     if (t === "home") return "home";
-    if (["library", "lernbaum", "mindmap", "planner"].includes(t)) return "wissen";
-    if (t === "flashcards") return "karten";
-    if (["klausursim", "quiz", "werkzeuge"].includes(t)) return "training";
-    if (["tutor", "reise"].includes(t)) return "tutor";
+    if (["reise", "library", "lernbaum", "mindmap"].includes(t)) return "lernen";
+    if (["flashcards", "planner"].includes(t)) return "wiederholen";
+    if (["klausursim", "quiz", "tutor", "werkzeuge"].includes(t)) return "ueben";
     return "einstellungen";
   };
 
-  const [lastWissenTab, setLastWissenTab] = useState<Tab>("library");
-  const [lastTrainingTab, setLastTrainingTab] = useState<Tab>("klausursim");
-  const [lastTutorTab, setLastTutorTab] = useState<Tab>("tutor");
+  const [lastLernenTab, setLastLernenTab] = useState<Tab>("reise");
+  const [lastWiederholenTab, setLastWiederholenTab] = useState<Tab>("flashcards");
+  const [lastUebenTab, setLastUebenTab] = useState<Tab>("klausursim");
 
   const switchTab = (id: Tab) => {
     setTab(id);
-    if (["library", "lernbaum", "mindmap", "planner"].includes(id)) {
-      setLastWissenTab(id);
-    } else if (["klausursim", "quiz", "werkzeuge"].includes(id)) {
-      setLastTrainingTab(id);
-    } else if (["tutor", "reise"].includes(id)) {
-      setLastTutorTab(id);
+    if (["reise", "library", "lernbaum", "mindmap"].includes(id)) {
+      setLastLernenTab(id);
+    } else if (["flashcards", "planner"].includes(id)) {
+      setLastWiederholenTab(id);
+    } else if (["klausursim", "quiz", "tutor", "werkzeuge"].includes(id)) {
+      setLastUebenTab(id);
     }
     if (typeof window !== "undefined") {
       const url = new URL(window.location.href);
@@ -226,22 +225,23 @@ export default function App() {
     shortcut: string;
   }
 
-  const wissenTabs: SubNavItem[] = [
+  const lernenTabs: SubNavItem[] = [
+    { id: "reise", label: lang === "de" ? "Lernreise" : "新知课程", shortcut: "Alt 9", icon: icons.reise },
     { id: "library", label: tr.library, shortcut: "Alt 2", icon: icons.library },
     { id: "lernbaum", label: tr.lernbaum, shortcut: "Alt B", icon: icons.lernbaum },
     { id: "mindmap", label: tr.mindmap, shortcut: "Alt 8", icon: icons.mindmap },
+  ];
+
+  const wiederholenTabs: SubNavItem[] = [
+    { id: "flashcards", label: tr.flashcards, shortcut: "Alt 3", icon: icons.flashcards },
     { id: "planner", label: tr.planner, shortcut: "Alt 7", icon: icons.planner },
   ];
 
-  const trainingTabs: SubNavItem[] = [
+  const uebenTabs: SubNavItem[] = [
     { id: "klausursim", label: tr.klausursim, shortcut: "Alt 5", icon: icons.klausursim },
     { id: "quiz", label: tr.quiz, shortcut: "Alt 4", icon: icons.quiz },
-    { id: "werkzeuge", label: tr.werkzeuge, shortcut: "Alt W", icon: icons.werkzeuge },
-  ];
-
-  const tutorTabs: SubNavItem[] = [
     { id: "tutor", label: tr.tutor, shortcut: "Alt 6", icon: icons.tutor },
-    { id: "reise", label: tr.reise, shortcut: "Alt 9", icon: icons.reise },
+    { id: "werkzeuge", label: tr.werkzeuge, shortcut: "Alt W", icon: icons.werkzeuge },
   ];
 
   interface PrimaryNavItem {
@@ -261,32 +261,25 @@ export default function App() {
       onSelect: () => switchTab("home"),
     },
     {
-      workspace: "wissen",
-      label: lang === "de" ? "Wissen" : "知识库",
-      icon: icons.library,
+      workspace: "lernen",
+      label: lang === "de" ? "Lernen" : "学习 (新知)",
+      icon: icons.reise,
       shortcut: "Alt 2",
-      onSelect: () => switchTab(lastWissenTab),
+      onSelect: () => switchTab(lastLernenTab),
     },
     {
-      workspace: "karten",
-      label: tr.flashcards,
+      workspace: "wiederholen",
+      label: lang === "de" ? "Wiederholen" : "复习 (卡片)",
       icon: icons.flashcards,
       shortcut: "Alt 3",
-      onSelect: () => switchTab("flashcards"),
+      onSelect: () => switchTab(lastWiederholenTab),
     },
     {
-      workspace: "training",
-      label: lang === "de" ? "Training" : "训练模考",
+      workspace: "ueben",
+      label: lang === "de" ? "Üben" : "练习 (实战)",
       icon: icons.klausursim,
-      shortcut: "Alt 5",
-      onSelect: () => switchTab(lastTrainingTab),
-    },
-    {
-      workspace: "tutor",
-      label: tr.tutor,
-      icon: icons.tutor,
-      shortcut: "Alt 6",
-      onSelect: () => switchTab(lastTutorTab),
+      shortcut: "Alt 4",
+      onSelect: () => switchTab(lastUebenTab),
     },
   ];
 
@@ -699,16 +692,16 @@ export default function App() {
         </header>
 
         {/* Workspace Sub-tabs Segment Bar */}
-        {(currentWorkspace === "wissen" || currentWorkspace === "training" || currentWorkspace === "tutor") && (
+        {(currentWorkspace === "lernen" || currentWorkspace === "wiederholen" || currentWorkspace === "ueben") && (
           <div className="flex h-10 shrink-0 flex-wrap items-center gap-1.5 border-b border-[var(--line)] bg-[var(--paper-subtle)] px-4 sm:px-6">
             <span className="font-mono text-[var(--text-meta)] uppercase tracking-wider text-[var(--gray)] mr-1">
-              {currentWorkspace === "wissen"
-                ? (lang === "de" ? "Wissen:" : "知识:")
-                : currentWorkspace === "training"
-                ? (lang === "de" ? "Training:" : "训练:")
-                : (lang === "de" ? "Tutor:" : "辅导:")}
+              {currentWorkspace === "lernen"
+                ? (lang === "de" ? "Lernen:" : "学习:")
+                : currentWorkspace === "wiederholen"
+                ? (lang === "de" ? "Wiederholen:" : "复习:")
+                : (lang === "de" ? "Üben:" : "练习:")}
             </span>
-            {(currentWorkspace === "wissen" ? wissenTabs : currentWorkspace === "training" ? trainingTabs : tutorTabs).map((sub) => {
+            {(currentWorkspace === "lernen" ? lernenTabs : currentWorkspace === "wiederholen" ? wiederholenTabs : uebenTabs).map((sub) => {
               const isActive = tab === sub.id;
               return (
                 <button
