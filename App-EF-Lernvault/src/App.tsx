@@ -19,6 +19,7 @@ import Mindmap from "./modules/Mindmap";
 import Lernbaum from "./modules/Lernbaum";
 import { BAEUME_LISTE } from "./baum";
 import ReiseModule from "./modules/Reise";
+import { defaultVaultReisen } from "./reise";
 import { KlausurSim } from "./modules/KlausurSim";
 import Werkzeuge from "./modules/Werkzeuge";
 import { DailySprintModal } from "./components/DailySprintModal";
@@ -793,7 +794,7 @@ export default function App() {
               onJumpToLibrary={jumpToLibrary}
             />
           )}
-          {tab === "reise" && <ReiseModule lang={lang} vaultReisen={vault?.reisen ?? null} />}
+          {tab === "reise" && <ReiseModule lang={lang} vaultReisen={vault?.reisen ?? defaultVaultReisen} />}
           {tab === "lernbaum" && (
             <Lernbaum
               lang={lang}

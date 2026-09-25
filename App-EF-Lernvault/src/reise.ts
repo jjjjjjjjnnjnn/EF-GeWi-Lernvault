@@ -203,8 +203,23 @@ export function parseReiseFile(path: string, raw: string): Reise | null {
   };
 }
 
-// Built-in exemplar course parsed from vault Lernreise/Sowi-Soziale-Marktwirtschaft-L1.md
-export const exemplarReise: Reise | null = parseReiseFile(
-  "Lernreise/Sowi-Soziale-Marktwirtschaft-L1.md",
-  exemplarCourseRaw
-);
+// Statically bundle all Lernreise courses from vault
+const globFn = (import.meta as unknown as { glob?: (pattern: string, options: unknown) => Record<string, string> }).glob;
+const reisenFiles: Record<string, string> = globFn
+  ? globFn("../../Lernreise/*.md", { query: "?raw", import: "default", eager: true })
+  : {};
+
+export const defaultVaultReisen: Reise[] = Object.entries(reisenFiles)
+  .map(([path, raw]) => {
+    const cleanPath = path.replace(/^.*\/Lernreise\//, "Lernreise/");
+    return parseReiseFile(cleanPath, String(raw));
+  })
+  .filter((r): r is Reise => r !== null)
+  .sort((a, b) => a.fach.localeCompare(b.fach) || a.thema.localeCompare(b.thema));
+
+// Built-in exemplar course parsed from vault
+export const exemplarReise: Reise | null =
+  defaultVaultReisen.find((r) => r.path.includes("Sowi-Soziale-Marktwirtschaft-L1")) ??
+  parseReiseFile("Lernreise/Sowi-Soziale-Marktwirtschaft-L1.md", exemplarCourseRaw) ??
+  defaultVaultReisen[0] ??
+  null;

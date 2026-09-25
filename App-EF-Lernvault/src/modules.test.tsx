@@ -8,6 +8,7 @@ import userEvent from "@testing-library/user-event";
 // reise.ts zieht die exemplar-lektion per `?raw` ausserhalb approved-roots:
 // fuer render-tests entkoppeln (parser gehoert reise.test-sphaere, hier nur UI).
 vi.mock("./reise", () => ({
+  defaultVaultReisen: [],
   exemplarReise: {
     id: "kurs-1",
     path: "Lernreise/kurs-1.md",

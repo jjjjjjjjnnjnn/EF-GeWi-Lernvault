@@ -155,6 +155,7 @@ export default function ReiseModule({
   // Wizard filters
   const [wizardFach, setWizardFach] = useState<string>("SoWi");
   const [wizardZiel, setWizardZiel] = useState<string>("alle");
+  const [courseQuery, setCourseQuery] = useState<string>("");
 
   // Gamification progress state
   const [progress, setProgress] = useState<ProgressData>(loadProgress);
@@ -389,12 +390,20 @@ export default function ReiseModule({
 
   // Filtered courses for wizard
   const wizardCourses = useMemo(() => {
-    return allReisen.filter(
-      (r) =>
-        r.fach.toLowerCase() === wizardFach.toLowerCase() &&
-        (wizardZiel === "alle" || r.ziel.toLowerCase() === wizardZiel.toLowerCase())
-    );
-  }, [allReisen, wizardFach, wizardZiel]);
+    const q = courseQuery.trim().toLowerCase();
+    return allReisen.filter((r) => {
+      const matchFach =
+        wizardFach === "alle" || r.fach.toLowerCase() === wizardFach.toLowerCase();
+      const matchZiel =
+        wizardZiel === "alle" || r.ziel.toLowerCase() === wizardZiel.toLowerCase();
+      const matchQuery =
+        !q ||
+        r.thema.toLowerCase().includes(q) ||
+        r.fach.toLowerCase().includes(q) ||
+        (r.tags && r.tags.some((t) => t.toLowerCase().includes(q)));
+      return matchFach && matchZiel && matchQuery;
+    });
+  }, [allReisen, wizardFach, wizardZiel, courseQuery]);
 
   const currentSchritt = activeCourse?.schritte[stepIdx];
 
@@ -528,6 +537,18 @@ export default function ReiseModule({
               1. Fach / 目标学科
             </label>
             <div className="flex flex-wrap gap-1.5">
+              <button
+                type="button"
+                onClick={() => setWizardFach("alle")}
+                className={`px-2.5 py-1 text-xs font-mono rounded-[var(--radius)] border transition-all ${
+                  wizardFach === "alle"
+                    ? "border-[var(--accent)] text-[var(--accent)] bg-[var(--paper-subtle)]/40 font-medium"
+                    : "border-[var(--line)] text-[var(--gray)] hover:text-[var(--ink)] hover:border-[var(--ink)]"
+                }`}
+              >
+                {lang === "de" ? "Alle Fächer" : "全部学科"}{" "}
+                <span className="text-[var(--text-meta)] opacity-75">({allReisen.length})</span>
+              </button>
               {FAECHER.map((f) => {
                 const count = allReisen.filter(
                   (r) => r.fach.toLowerCase() === f.id.toLowerCase()
@@ -585,6 +606,32 @@ export default function ReiseModule({
             <label className="block text-xs font-mono uppercase tracking-wider text-[var(--gray)]">
               3. Thema / 可选课程清单 ({wizardCourses.length})
             </label>
+
+            <div className="relative">
+              <input
+                type="text"
+                value={courseQuery}
+                onChange={(e) => setCourseQuery(e.target.value)}
+                placeholder={
+                  lang === "de"
+                    ? "Kurse filtern (Thema, Fach, Stichwort)..."
+                    : "搜索课程（主题、学科、关键词）..."
+                }
+                className="w-full rounded-[var(--radius)] border border-[var(--line)] bg-[var(--surface)] px-3 py-1.5 text-xs font-sans text-[var(--ink)] placeholder-[var(--gray)] focus:border-[var(--accent)] focus:outline-none"
+              />
+              {courseQuery && (
+                <button
+                  type="button"
+                  onClick={() => setCourseQuery("")}
+                  aria-label={lang === "de" ? "Suche leeren" : "清除搜索"}
+                  className="absolute right-2.5 top-1/2 -translate-y-1/2 p-1 text-[var(--gray)] hover:text-[var(--ink)] cursor-pointer"
+                >
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                    <path d="M4 4l8 8M12 4l-8 8" />
+                  </svg>
+                </button>
+              )}
+            </div>
 
             {wizardCourses.length === 0 ? (
               <div className="border border-dashed border-[var(--line)] bg-[var(--paper-subtle)] p-6 text-center text-xs font-mono text-[var(--gray)] rounded-[var(--radius)] leading-relaxed">

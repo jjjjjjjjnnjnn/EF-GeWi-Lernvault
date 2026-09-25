@@ -5993,6 +5993,29 @@ export const allVaultNotes: GeneratedNote[] = [
     "path": "08_SoWi/Texte-Analyse/Partizipation.md"
   },
   {
+    "id": "sowi-preismechanismus-und-marktformen",
+    "fach": "SoWi",
+    "thema": "Preismechanismus-und-Marktformen",
+    "zh": "价格机制与市场形态",
+    "operatoren": [
+      "darstellen",
+      "analysieren",
+      "beurteilen"
+    ],
+    "klausurrelevant": true,
+    "bodyDE": [
+      "Der Preis erfüllt im vollkommenen Markt vier zentrale Funktionen: Signal-, Allokations-, Ausgleichs- und Selektionsfunktion.",
+      "Da die Nachfragekurve mit steigendem Preis fällt und die Angebotskurve steigt, stellt sich am Schnittpunkt beider Kurven der markträumende Gleichgewichtspreis ein.",
+      "Eine Preisänderung des betrachteten Gutes bewirkt eine Bewegung auf der Kurve, während veränderte Präferenzen oder Einkommen die gesamte Nachfragekurve verschieben."
+    ],
+    "bodyZH": [
+      "价格机制是市场经济的心脏。",
+      "在 EF 的 \"Wirtschaft & Markt\" 内容域里，它回答一个核心问题：**没有中央指令，千万个分散的买卖决定如何被协调？** 答案就是价格——供给过剩则价格下跌抑制生产，需求过剩则价格上涨刺激生产，价格在两条曲线的交点处实现自动出清。",
+      "考卷里这一考点极少单独出现，通常以\"材料 + 图表\"的形态与**国家价格干预**绑定：法定最低工资 (Mindestlohn)、租金管制 (Mietpreisbremse)、农业保护价等，要求你分析干预造成的过剩/短缺与福利损失。"
+    ],
+    "path": "08_SoWi/Texte-Analyse/Preismechanismus-und-Marktformen.md"
+  },
+  {
     "id": "sowi-qp-materialien-karikatur-gestaltung",
     "fach": "SoWi",
     "thema": "QP-Materialien: Karikatur und Gestaltungsaufgabe (Materialpool + Buchlandkarte)",

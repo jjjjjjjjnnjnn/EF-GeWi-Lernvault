@@ -69,10 +69,25 @@ export default function Blocks({
     <div>
       {blocks.map((b, i) => {
         if (b.kind === "h2") {
+          const isAnekdote = b.text.toLowerCase().includes("anekdote");
           return (
-            <h3 key={i} className="mb-1 mt-4 font-serif text-lg text-[var(--ink)]">
-              {renderMathText(b.text)}
-            </h3>
+            <div
+              key={i}
+              className={
+                isAnekdote
+                  ? "mt-6 mb-3 p-3 rounded-[var(--radius)] border border-[var(--line)] bg-[var(--paper-subtle)]"
+                  : "mb-1 mt-4"
+              }
+            >
+              <h3 className="font-serif text-lg text-[var(--ink)] flex items-center gap-2">
+                {isAnekdote && (
+                  <span className="font-mono text-xs uppercase tracking-wider px-1.5 py-0.5 rounded-[var(--radius)] border border-[var(--accent)]/40 text-[var(--accent)] font-medium">
+                    Exkurs
+                  </span>
+                )}
+                <span>{renderMathText(b.text)}</span>
+              </h3>
+            </div>
           );
         }
         if (b.kind === "h3") {
