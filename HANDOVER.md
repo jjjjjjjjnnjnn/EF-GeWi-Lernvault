@@ -26,6 +26,7 @@
 - ✅ **S8 十科笔记生产 100% 收官**：十科 §4 施工图 **225/225 = 100% 完成**。补齐 Philosophie 尾项笔记《Sonderstellung-des-Menschen.md》，完成 Chemie 三篇核心笔记深度升级（物质的量四方枢纽 / 法拉第电解桥 / 弱酸近似与滴定全真题）。
 - ✅ **核心学科原创大题扩充**：新增 Mathe（Analysis雨水池最值建模）、Physik（复合制动与机械能守恒）、SoWi（社会不平等材料解析）三道高难原创大题，配齐完整 26/24/26 BE Erwartungshorizont。全库笔记达 **359 篇**。
 - ✅ **App 客户端全量数据通道与 KlausurSim 优化**：导出带 blocks 的 `generatedVaultNotes.ts` 作为客户端全量底座，KlausurSim/Quiz 消除空数据门槛，全十科即开即考，并提供「Erwartungshorizont einblenden」自评采分对照。
+- ✅ **UI 工作区重构与学习树自适应大纲升级**：侧边栏收敛为 5 大清晰主工作区（Übersicht, Wissen, Karteikarten, Training, KI-Tutor + Einstellungen），配备现代微胶囊分段条（Segment Pills）；Lernbaum 彻底根治超宽裁切，垂直步长紧凑化，新增「全图适应 / Einpassen」与「Gliederung (大纲目录)」双模态切换，100% 自适应屏幕。全部 57 套件 379 测试与构建 100% 绿。
 - ✅ **官方源本地化**：`_Downloads/CURRICULUM/` 固化 **218 个官方 PDF / 127MB**（KLP 十科 + 2027 新版 · Operatoren 14 · Abitur-Vorgaben 72 · IQB Poolaufgaben 64 · 中国课标 21），每件配 `.quelle.txt`，**全部 gitignored**。
 - ✅ **规范维护轮**：文件名规范化 · `vault-check.py` 强制校验 `badnames` / `badglossar` · `AGENTS.md §1` 笔记落位确定规则 · 建立 [`Blocker-Register.md`](00_META/Blocker-Register.md) 与 [`Lehrkraft-Anfragen.md`](00_META/Lehrkraft-Anfragen.md)。
 
@@ -36,7 +37,7 @@
 ### 1. 先跑门禁建基线（3 条命令，确认「全绿」不是文档声明）
 
 ```bash
-python scripts/vault-check.py                      # 期望 PASS(359/1400/272)
+python scripts/vault-check.py                      # 期望 PASS(359/1400/274)
 cd App-EF-Lernvault && npx vitest run              # 期望 57 套件 / 379 测试
 cd App-EF-Lernvault && npm run build               # 期望 ✓ built
 ```
