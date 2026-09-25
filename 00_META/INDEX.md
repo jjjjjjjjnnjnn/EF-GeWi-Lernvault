@@ -24,6 +24,7 @@
 ## META
 
 - [HANDOVER](../HANDOVER.md) — **一页交接（新agent/用户先读）** · 历史归档：[HANDOVER-Archiv](HANDOVER-Archiv.md)（2026-09-24 及以前里程碑 + 外部 AI 任务包）
+- [Lehrplan-Content-Spezifikation](Lehrplan-Content-Spezifikation.md) — **考纲全量内容搜集与生成规范（外置AI主交接案）**
 - [Plan-接手执行](Plan-接手执行.md) — 接手执行计划（任务状态/铁约束/优先级分层/A–D待办清单）
 - **考纲体系（Curriculum）** — [设计总纲](Curriculum/00-Design.md) · [官方源清单](Curriculum/01-Quellen.md)
   - 德国 NRW Oberstufe（EF–Q2，10 科）：[Deutsch](Curriculum/Deutschland/Deutsch-Oberstufe.md) · [Englisch](Curriculum/Deutschland/Englisch-Oberstufe.md) · [Philosophie](Curriculum/Deutschland/Philosophie-Oberstufe.md) · [SoWi](Curriculum/Deutschland/SoWi-Oberstufe.md) · [Musik](Curriculum/Deutschland/Musik-Oberstufe.md) · [Sport](Curriculum/Deutschland/Sport-Oberstufe.md) · [Mathe](Curriculum/Deutschland/Mathe-Oberstufe.md) · [Physik](Curriculum/Deutschland/Physik-Oberstufe.md) · [Chemie](Curriculum/Deutschland/Chemie-Oberstufe.md) · [Bio](Curriculum/Deutschland/Bio-Oberstufe.md)
@@ -220,6 +221,7 @@
 - [2026-09-25-exam-expansion-and-client-optimization](Journal/2026-09-25-exam-expansion-and-client-optimization.md) — **数理社核心学科原创大题扩充与客户端全学科即开即考优化**：三大题配齐26/24/26 BE Erwartungshorizont + KlausurSim全量10科即开即考/采分对照
 - [2026-09-25-ui-and-lernbaum-refactor](Journal/2026-09-25-ui-and-lernbaum-refactor.md) — **UI工作区重构与学习树自适应大纲系统升级**：侧边栏收敛为 5 大清晰主工作区 + 顶部微胶囊分段条；Lernbaum 彻底根治超宽裁切，新增「全图适应/Einpassen」与「Gliederung (大纲目录)」双模态切换
 - [2026-09-25-tutor-interaction-and-grounding-overhaul](Journal/2026-09-25-tutor-interaction-and-grounding-overhaul.md) — **KI助教交互体系重构与抗漂移精准锚定**：Sokratisch启发与Klausur-Direkt双模提示词升格抗漂移 + 检索切片Subject优先与Memo常驻 + 笔记引用精准高亮跳转 + 误报出处清零 + Tier 2学科胶囊栏 + 5组快捷提问芯片 + 单条回复一键复制
+- [2026-09-25-modular-learning-and-spec](Journal/2026-09-25-modular-learning-and-spec.md) — **三段模块化学习架构重构与全考纲内容搜集交付总纲**：学习/复习/练习三段工作区闭环 + 互动课程内嵌学科教具沙盘 + 全十科考纲缺口审计与外部AI批量生成标准规范（379单测/build/vault-check全绿）
 - 约定：文件名 `YYYY-MM-DD-<thema>.md`，头部frontmatter（`fach`可空，`tags: [EF, Meta]`）。
 
 

@@ -27,6 +27,8 @@
 - ✅ **核心学科原创大题扩充**：新增 Mathe（Analysis雨水池最值建模）、Physik（复合制动与机械能守恒）、SoWi（社会不平等材料解析）三道高难原创大题，配齐完整 26/24/26 BE Erwartungshorizont。全库笔记达 **359 篇**。
 - ✅ **App 客户端全量数据通道与 KlausurSim 优化**：导出带 blocks 的 `generatedVaultNotes.ts` 作为客户端全量底座，KlausurSim/Quiz 消除空数据门槛，全十科即开即考，并提供「Erwartungshorizont einblenden」自评采分对照。
 - ✅ **UI 工作区重构与学习树自适应大纲升级**：侧边栏收敛为 5 大清晰主工作区（Übersicht, Wissen, Karteikarten, Training, KI-Tutor + Einstellungen），配备现代微胶囊分段条（Segment Pills）；Lernbaum 彻底根治超宽裁切，垂直步长紧凑化，新增「全图适应 / Einpassen」与「Gliederung (大纲目录)」双模态切换，100% 自适应屏幕。全部 57 套件 379 测试与构建 100% 绿。
+- ✅ **KI 助教交互体系全面重构与抗漂移精准锚定**：重塑 Sokratisch 启发引导（引入认知支架，严禁脱纲）与 Klausur-Direkt 考纲直出双模态；支持笔记引用无缝精准跳转与全库出处校验；顶部加入学科胶囊切换与快捷提问芯片。
+- 📋 **外部 AI 全量内容搜集大师规范编制就绪**：发布 [`00_META/Lehrplan-Content-Spezifikation.md`](00_META/Lehrplan-Content-Spezifikation.md)，包含十科缺口清单、9步交互课程规范、八段式笔记规范、Anki卡片规范与即用型外置 AI 提示词。
 - ✅ **官方源本地化**：`_Downloads/CURRICULUM/` 固化 **218 个官方 PDF / 127MB**（KLP 十科 + 2027 新版 · Operatoren 14 · Abitur-Vorgaben 72 · IQB Poolaufgaben 64 · 中国课标 21），每件配 `.quelle.txt`，**全部 gitignored**。
 - ✅ **规范维护轮**：文件名规范化 · `vault-check.py` 强制校验 `badnames` / `badglossar` · `AGENTS.md §1` 笔记落位确定规则 · 建立 [`Blocker-Register.md`](00_META/Blocker-Register.md) 与 [`Lehrkraft-Anfragen.md`](00_META/Lehrkraft-Anfragen.md)。
 
@@ -37,28 +39,28 @@
 ### 1. 先跑门禁建基线（3 条命令，确认「全绿」不是文档声明）
 
 ```bash
-python scripts/vault-check.py                      # 期望 PASS(359/1400/274)
+python scripts/vault-check.py                      # 期望 PASS(359/1400/275)
 cd App-EF-Lernvault && npx vitest run              # 期望 57 套件 / 379 测试
 cd App-EF-Lernvault && npm run build               # 期望 ✓ built
 ```
 
-### 2. 把德语问询稿发给老师 ← **唯一能解锁剩余阻塞的动作**
+### 2. 外部 AI 海量内容搜集与批量充实（核心动作）
+
+按 [`00_META/Lehrplan-Content-Spezifikation.md`](00_META/Lehrplan-Content-Spezifikation.md) 中的【即用型外部 AI 批量提示词】，交由外部 AI（Claude 3.5 Sonnet / GPT-4o）批量产出各科紧缺的交互新课（`Lernreise/*.md`）与八段式知识笔记，按规范入库。
+
+### 3. 把德语问询稿发给老师 ← **唯一能解锁剩余阻塞的动作**
 
 复制 [`00_META/Lehrkraft-Anfragen.md`](00_META/Lehrkraft-Anfragen.md) 的「Nachricht」整段。
 **阻断面排序**：① 🔴 Sport 2 个 Akzentuierungs-IF → ② 🔴 Deutsch Drama 书名 → ③ 🟡 Musik 学期主题 → ④ 🟡 Englisch 第三文化国家 → ⑤ 🟡 Sport BF/SB / Abitur 轨道。
 
-### 3. 答案到达后 → 按 [`Blocker-Register.md`](00_META/Blocker-Register.md) §F 填空
+### 4. 答案到达后 → 按 [`Blocker-Register.md`](00_META/Blocker-Register.md) §F 填空
 
 §F 已备 5 份填空脚手架（Deutsch 戏剧专属段 / Englisch 小说段 / 第三文化国家替换清单 / Musik 学期作品段 / Sport IF 冲刺计划）。**只补占位符，不重写结构。**
 
-### 4. 剩余待办
+### 5. 剩余待办
 
 - **App 侧 `src/baum/*.ts` 仍是 EF 版数据**，需从新版 Markdown 派生。
 - **老师回复跟进**：收到老师邮件后按脚手架注入各科。
-
-### 5. 可选（S9 建议）
-
-把 `_Downloads/CURRICULUM/_IQB/` 的 Poolaufgaben 与 `_Abitur-Vorgaben/` 的 Beispielaufgaben（共 136 份官方题）系统转化为**原创改编训练题**，补进各科 `Klausur-Training/` —— 素材已在手，且完全合规。
 
 ---
 
