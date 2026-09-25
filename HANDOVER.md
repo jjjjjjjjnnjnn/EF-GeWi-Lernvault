@@ -17,14 +17,15 @@
 - **vault**（Obsidian 知识库，**内容真相源**）+ `App-EF-Lernvault/`（Tauri 桌面学习软件，**只读 vault、不写回**）。
 - 目标：德国 NRW Gymnasium EF 十科笔试/口试提分，中德双语，**完全离线**。
 - **内容铁律**：所有题目材料只能来自用户自己的笔记原文 —— **超纲率 = 0**。
-- **当前规模**：笔记 **356** · Anki 卡片 **1400** · 术语表 **755 行** · 十科 Abi-Baum 应试树 · 考纲体系（NRW 十科 + 中国理科四科 + 中德映射）。
+- **当前规模**：笔记 **359** · Anki 卡片 **1400** · 术语表 **755 行** · 十科 Abi-Baum 应试树 · 考纲体系（NRW 十科 + 中国理科四科 + 中德映射）。
 
 ---
 
 ## 当前状态（2026-09-25）
 
-- ✅ **S8 十科笔记生产 100% 收官**：十科 §4 施工图 **225/225 = 100% 完成**。补齐 Philosophie 尾项笔记《Sonderstellung-des-Menschen.md》，完成 Chemie 三篇核心笔记深度升级（物质的量四方枢纽 / 法拉第电解桥 / 弱酸近似与滴定全真题）。全库笔记达 356 篇，Anki 卡片全科达 1400 张整。索引 [`00_META/S8-Noten-Index.md`](00_META/S8-Noten-Index.md)。
-- ✅ **App 客户端全量数据通道构建打通**：通过 `scripts/export-vault-data.py` 将全库 1400 张卡片与 305+ 篇双语核心考纲笔记无损导出注入至 `App-EF-Lernvault`，输入严格净化契约 Emoji，React 唯一 key 隔离。57 个测试文件、379 项测试与生产构建 100% 通过。
+- ✅ **S8 十科笔记生产 100% 收官**：十科 §4 施工图 **225/225 = 100% 完成**。补齐 Philosophie 尾项笔记《Sonderstellung-des-Menschen.md》，完成 Chemie 三篇核心笔记深度升级（物质的量四方枢纽 / 法拉第电解桥 / 弱酸近似与滴定全真题）。
+- ✅ **核心学科原创大题扩充**：新增 Mathe（Analysis雨水池最值建模）、Physik（复合制动与机械能守恒）、SoWi（社会不平等材料解析）三道高难原创大题，配齐完整 26/24/26 BE Erwartungshorizont。全库笔记达 **359 篇**。
+- ✅ **App 客户端全量数据通道与 KlausurSim 优化**：导出带 blocks 的 `generatedVaultNotes.ts` 作为客户端全量底座，KlausurSim/Quiz 消除空数据门槛，全十科即开即考，并提供「Erwartungshorizont einblenden」自评采分对照。
 - ✅ **官方源本地化**：`_Downloads/CURRICULUM/` 固化 **218 个官方 PDF / 127MB**（KLP 十科 + 2027 新版 · Operatoren 14 · Abitur-Vorgaben 72 · IQB Poolaufgaben 64 · 中国课标 21），每件配 `.quelle.txt`，**全部 gitignored**。
 - ✅ **规范维护轮**：文件名规范化 · `vault-check.py` 强制校验 `badnames` / `badglossar` · `AGENTS.md §1` 笔记落位确定规则 · 建立 [`Blocker-Register.md`](00_META/Blocker-Register.md) 与 [`Lehrkraft-Anfragen.md`](00_META/Lehrkraft-Anfragen.md)。
 
@@ -35,7 +36,7 @@
 ### 1. 先跑门禁建基线（3 条命令，确认「全绿」不是文档声明）
 
 ```bash
-python scripts/vault-check.py                      # 期望 PASS(356/1400/271)
+python scripts/vault-check.py                      # 期望 PASS(359/1400/272)
 cd App-EF-Lernvault && npx vitest run              # 期望 57 套件 / 379 测试
 cd App-EF-Lernvault && npm run build               # 期望 ✓ built
 ```
