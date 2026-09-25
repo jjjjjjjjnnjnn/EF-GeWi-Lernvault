@@ -43,7 +43,12 @@ tags: [EF, Chemie, CN]
 
 ### Trick 1 守恒法 shouheng-fa（Erhaltung)
 
-- 原理：原子守恒 + 电荷守恒 + 电子守恒；配平方程式就是守恒的书写。Mini 例题见 BEISPIEL（Mg/HCl，自编）。德语映射：`begruende mit Massenerhaltung` / `stelle die Gleichung auf`。EN: atoms, charge and electrons are conserved.
+- 原理：原子守恒 + 电荷守恒 + 电子守恒；配平方程式就是守恒的书写。
+- **电子守恒 $\to$ Faraday 显式桥梁 (Faraday-Bruecke)**：
+  - 反应中流经电极的电荷量 $$Q$$ 与转移电子物质的量 $$n(e^-)$$ 满足：
+    $$Q = I \cdot t = n(e^-) \cdot F \quad (F = 96485\,\mathrm{C/mol})$$
+  - 析出物质的物质的量：$$n(\text{Stoff}) = \frac{n(e^-)}{z} = \frac{I \cdot t}{z \cdot F}$$（$$z$$ 为转移电子化学计量数）。
+- 德语映射：`begruende mit Massenerhaltung` / `stelle die Teilreaktionen auf` / `berechne ueber Ladungsmenge`. EN: mass, charge and electron conservation.
 
 ### Trick 2 差量法 chaliang-fa（Differenzmethode)
 
@@ -57,13 +62,26 @@ tags: [EF, Chemie, CN]
 
 - 原理：一眼认官能团就知道反应类型：R-OH 醇（取代/消去/氧化），C=C 双键（加成），-COOH 羧基（酸性/酯化）。Mini 例题（自编）：未知物 X 使溴水褪色且能与 Na 放 H2 → 含 C=C（加成褪色）+ R-OH（与 Na 反应），EF 只要求认出两类。德语映射：`ordne die Stoffklasse zu` / `beschreibe die typische Reaktion`。EN: functional group determines reaction type.
 
-### Trick 5 电化学口诀 dianhuaxue-koujue（Elektrochemie-Merksatz)
+### Trick 5 电化学四要素矩阵与口诀 (Elektrochemie-Vier-Elemente-Raster)
 
-- 原理：中文口诀"阳氧阴还" = 阳极氧化（失电子）、阴极还原（得电子）；德语桥：AnOde = Oxidation（o 对 o），Kathode = Reduktion。Mini 例题（自编）：Zn/Cu 原电池，Zn 极质量减小 → Zn 失电子为阳极（负极），$$Zn \rightarrow Zn^{2+} + 2e^-$$；Cu 极增重为阴极。德语映射：`ordne Anode/Kathode zu und begruende den Elektronenfluss`。EN: anode oxidation, cathode reduction (AnOx, CathRed).
+- **一页四格矩阵 (Vier-Elemente-Raster)**：
+  1. **Reaktionsort (氧化还原地点)**：**Anode = Oxidation**（失电子）；**Kathode = Reduktion**（得电子）。中文"阳氧阴还"（AnOx / CathRed 绝不随装置改变！）。
+  2. **Polaritaet (极性正负)**：
+     - 原电池 (Galvanische Zelle)：自发产生电子，Anode 为负极 ($$-$$ Pol)，Kathode 为正极 ($$+$$ Pol)。
+     - 电解池 (Elektrolysezelle)：外电源强行抽电子，Anode 接正极 ($$+$$ Pol)，Kathode 接负极 ($$-$$ Pol)。
+  3. **Elektronenfluss (外电路电子流)**：永远由 Anode 经外电路导线流向 Kathode。
+  4. **Ionenwanderung (溶液离子迁移)**：Anionen (阴离子) 向 Anode 迁移；Kationen (阳离子) 向 Kathode 迁移（以维持两半电池电中性）。
+- 德语映射：`ordne Anode/Kathode und Polaritaet zu und begruende den Ionen- und Elektronenfluss`。
 
 ### Trick 6 氧化数-Schnelltest yanghuashu（Oxidationszahl-Test)
 
 - 原理：三秒判 redox——标氧化数，升高失电子被氧化（还原剂），降低得电子被还原（氧化剂）。Mini 例题（自编）：$$Zn + Cu^{2+} \rightarrow Zn^{2+} + Cu$$：Zn 0→+2（升失氧，做还原剂），Cu +2→0（降得还，做氧化剂）。德语映射：`bestimme die Oxidationszahlen und benenne Oxidations-/Reduktionsmittel`。EN: OILRIG, oxidant vs reductant.
+
+### ⚠️ 考纲禁区警示：严禁引入「盐类水解」口诀 (Keine Salzhydrolyse!)
+- **核心禁令**：中国化学体系常讲"谁强显谁性/盐类水解"口诀。但在德国 NRW KLP 中**没有 "Salzhydrolyse" 这一概念系统**！
+- **德国评分标准**：必须严格写成 **Brønsted 酸碱质子转移平衡**（Protolyse）：
+  - 例如 $$NH_4Cl$$ 水溶液显酸性，答卷必须写：$$NH_4^+ + H_2O \rightleftharpoons NH_3 + H_3O^+$$（$$NH_4^+$$ 作为 Brønsted-Säure 供质子）。
+  - 若在德语卷上写 "Salz hydrolysiert"，直接扣除 Fachsprache 分并无法得分。
 
 Deutsch unten: Jedes CN-Verfahren endet in einer deutschen Klausurhandlung: aufstellen, ausgleichen, berechnen, zuordnen, begruenden, auswerten.
 

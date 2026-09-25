@@ -52,14 +52,29 @@ tags: [EF, Chemie, CN]
 - EHZ（5 分）：氧化数 2 + 试剂命名 1 + 电子方向论证 1 + 旁观者说明 1（CN 口诀：升失氧还，降得还氧）。
 - DE-Transfer-Satz：`Fe wird oxidiert und ist das Reduktionsmittel, Cu2+ wird reduziert und ist das Oxidationsmittel, weil die Elektronenzahl erhalten bleibt.`
 
-## 4. 中文讲一遍：Aufgabe 4 Bindung/PSE（成键与周期表·自编）
+## 4. 中文讲一遍：Aufgabe 4 Q-1 Titration & Puffer（酸碱滴定与缓冲·自编）
 
-- Aufgabe（Operator erklaeren/beschreiben）：Erklaere (selbst gestellt): (a) Ordne Ne (Z = 10) in Periode/Gruppe ein. (b) Begruende die Bindungsart in KBr und in O2.
-- Loesungsweg：(a) Ne：10 电子 → 2,8 排布 → 2. Periode, 8. Hauptgruppe（ Edelgas，稳定不满反应）。(b) KBr = Metall + Nichtmetall → Ionenbindung（K+ / Br-）；O2 = 同种非金属 → 非极性共价键（共用 2 对电子，双键）。避开旧题 Na/MgO/Cl2，换 Ne/KBr/O2。
-- EHZ（4 分）：周期族定位 1 + 稳定性解释 1 + 两种键型论证 2。
-- DE-Transfer-Satz：`Die Stellung im Periodensystem folgt aus der Elektronenkonfiguration; die Bindungsart folgt aus den Partnern.`
+- Aufgabe（Operator berechnen/begruenden）：Bei der Titration von $$20{,}0\,\mathrm{mL}$$ Essigsaeure ($$c_0 = 0{,}10\,\mathrm{mol/L}$$, $$pK_S = 4{,}75$$) mit $$NaOH$$ ($$c = 0{,}10\,\mathrm{mol/L}$$) werden genau $$10{,}0\,\mathrm{mL}$$ $$NaOH$$ zugegeben (Halbaequivalenzpunkt). (a) Berechne den pH-Wert. (b) Begruende die Pufferwirkung.
+- Loesungsweg：
+  - (a) Bei Halbtitration gilt: genau die Haelfte der Essigsaeure ist deprotoniert, d. h. $$c(\mathrm{CH_3COOH}) = c(\mathrm{CH_3COO^-})$$.
+  - Nach Henderson-Hasselbalch: $$pH = pK_S + \lg \frac{c(\mathrm{CH_3COO^-})}{c(\mathrm{CH_3COOH})} = 4{,}75 + \lg(1) = 4{,}75$$.
+  - (b) Pufferwirkung: Zugegebene $$H_3O^+$$ werden von $$CH_3COO^-$$ abgefangen ($$CH_3COO^- + H_3O^+ \rightarrow CH_3COOH + H_2O$$), zugegebene $$OH^-$$ von $$CH_3COOH$$ neutralisiert.
+- EHZ（5 分）：Halbaequivalenz-Bedingung erkannt 1 + Henderson-Hasselbalch Ansatz 1 + pH-Berechnung 1 + Pufferreaktionen aufgestellt 2.
+- DE-Transfer-Satz：`Am Halbaequivalenzpunkt entspricht der pH-Wert dem pKS-Wert, da Saeure und konjugierte Base in gleicher Konzentration vorliegen.`
 
-## 2. 争议/辨析
+## 5. 中文讲一遍：Aufgabe 5 Q-2 Elektrochemie & Faraday（原电池与法拉第·自编）
+
+- Aufgabe（Operator berechnen/auswerten）：Ein Daniell-Element besteht aus $$Zn/Zn^{2+}$$ ($$E^\circ = -0{,}76\,\mathrm{V}$$) und $$Cu/Cu^{2+}$$ ($$E^\circ = +0{,}34\,\mathrm{V}$$). (a) Berechne die Zellspannung unter Standardbedingungen. (b) Das Element liefert einen konstanten Strom von $$0{,}50\,\mathrm{A}$$ ueber $$1930\,\mathrm{s}$$. Berechne die Masse des an der Kathode abgeschiedenen Kupfers ($$M(Cu) = 63{,}5\,\mathrm{g/mol}$$, $$F = 96485\,\mathrm{C/mol}$$).
+- Loesungsweg：
+  - (a) Kathode ist die edlere Halbzelle (Reduktion von $$Cu^{2+}$$), Anode ist $$Zn$$. $$U^\circ = E^\circ(\text{Kathode}) - E^\circ(\text{Anode}) = 0{,}34\,\mathrm{V} - (-0{,}76\,\mathrm{V}) = 1{,}10\,\mathrm{V}$$.
+  - (b) Ladungsmenge: $$Q = I \cdot t = 0{,}50\,\mathrm{A} \times 1930\,\mathrm{s} = 965\,\mathrm{C}$$.
+  - Elektronenzahl: $$n(e^-) = \frac{Q}{F} = \frac{965}{96485} = 0{,}010\,\mathrm{mol}$$.
+  - Da $$Cu^{2+} + 2e^- \rightarrow Cu$$, gilt $$z = 2$$: $$n(Cu) = \frac{n(e^-)}{2} = 0{,}0050\,\mathrm{mol}$$.
+  - Masse: $$m(Cu) = n \cdot M = 0{,}0050\,\mathrm{mol} \times 63{,}5\,\mathrm{g/mol} = 0{,}318\,\mathrm{g} \approx 0{,}32\,\mathrm{g}$$.
+- EHZ（6 分）：Zellspannungsformel 1 + Vorzeichen und Wert 1,10 V 1 + Q-Berechnung 1 + n(e-) 1 + Stoechiometrie z=2 1 + Endmasse mit Einheit 1.
+- DE-Transfer-Satz：`Die Standard-Zellspannung ergibt sich aus der Differenz der Standardpotenziale von Kathode und Anode; die Stoffmenge des abgeschiedenen Metalls folgt ueber die Faraday-Konstante.`
+
+## 6. 争议/辨析
 
 ### Pro / 常见正确理解
 

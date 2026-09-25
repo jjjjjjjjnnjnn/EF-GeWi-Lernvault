@@ -41,12 +41,28 @@ tags: [EF, Chemie, CN]
 
 ## 1. 中文讲一遍 (Feynman)
 
-- 摩尔组（Mol/摩尔/mole）：$$n = m/M$$，$$N = n \cdot N_A$$。中文记"三量桥"：质量 m、摩尔 n、粒子数 N，M 与 NA 是桥墩。EN: mass to moles via M, particles via Avogadro constant.
-- 浓度组（浓度/concentration）：$$c = n/V$$，稀释守恒 $$c_1 V_1 = c_2 V_2$$。中文记"溶质不增减，加水只变 V"。EN: dilution keeps solute amount constant.
-- 气体组（气体/gas）：$$pV = nRT$$，标准状况摩尔体积 $$V_m = 22{,}4\,\mathrm{L/mol}$$（0 °C, 101,3 kPa）。中文记"四量知三求一"。EN: ideal gas, three knowns give the fourth.
-- pH 组（pH/pH）：$$pH = -\lg[H^+]$$，$$[H^+] = 10^{-pH}$$，$$K_w = [H^+][OH^-] = 10^{-14}$$（25 °C）。中文记"每差 1 个 pH，浓度差 10 倍"。EN: each pH unit means factor 10.
-- 氧化还原组（氧化还原/redox）：升失氧（氧化数升高=失电子=氧化）、降得还（降低=得电子=还原）。电子守恒：$$n(e^-_{\mathrm{abgegeben}}) = n(e^-_{\mathrm{aufgenommen}})$$。EN: OILRIG (oxidation is loss, reduction is gain).
-- 平衡组（平衡/equilibrium）：对 $$aA + bB \rightleftharpoons cC + dD$$ 有 $$K_c = \frac{[C]^c[D]^d}{[A]^a[B]^b}$$（纯固体与纯液体不写入）。Le Chatelier：加压向气体分子数少的一边，升温向吸热一边。EN: system counteracts the disturbance.
+### 1.1 物质的量核心枢纽换算网 (Stoffmenge-Drehkreuz-Netzwerk)
+- 核心枢纽：所有宏观与微观定量计算以 $$n$$ (mol) 为绝对中心桥墩，严禁两端非 $n$ 量跨步硬算。
+- **四支路桥墩表 (Vier-Pfeiler-System)**：
+  1. 质量支路 (Masse $$m$$)：$$n = \frac{m}{M} \iff m = n \cdot M$$（$$M$$ 单位 $$\mathrm{g/mol}$$）。
+  2. 粒子数支路 (Teilchenzahl $$N$$)：$$n = \frac{N}{N_A} \iff N = n \cdot N_A$$（$$N_A = 6{,}022 \times 10^{23}\,\mathrm{mol^{-1}}$$）。
+  3. 气体体积支路 (Gasvolumen $$V$$)：$$n = \frac{V}{V_m} \iff V = n \cdot V_m$$（标况 $$V_m = 22{,}4\,\mathrm{L/mol}$$；非标况走 $$pV = nRT$$）。
+  4. 溶液浓度支路 (Konzentration $$c$$)：$$n = c \cdot V \iff c = \frac{n}{V}$$（$$V$$ 单位必须换为 $$\mathrm{L}$$）。
+- **两步走万能法则 (Zwei-Schritt-Verfahren)**：
+  - 第一步（归集枢纽）：$$\text{Ausgangsgroesse} \xrightarrow{\text{Pfeiler}} n_1$$；
+  - 第二步（化学计量与目标发散）：$$n_1 \xrightarrow{\text{Stoechiometrie}} n_2 \xrightarrow{\text{Pfeiler}} \text{Zielgroesse}$$。
+
+### 1.2 酸碱电离与双标校准 ($$K_S/pK_S$$ 与 $$K_a/pK_a$$)
+- 概念校准：德国考纲统称 Säurekonstante $$K_S$$ 与 $$pK_S = -\lg K_S$$；国际与英语教材称 $$K_a$$ 与 $$pK_a$$。两者符号等价：$$K_S \equiv K_a$$，$$K_B \equiv K_b$$。
+- 强酸强碱（vollstaendige Protolyse）：$$pH = -\lg c_0(\text{HA})$$，$$pOH = -\lg c_0(\text{B})$$，常温下 $$pH + pOH = 14$$。
+- 弱酸部分电离（Ostwald 稀释近似）：$$c(\mathrm{H_3O^+}) \approx \sqrt{K_S \cdot c_0(\mathrm{HA})}$$，即 $$pH = \frac{1}{2}(pK_S - \lg c_0(\mathrm{HA}))$$。
+- 缓冲体系（Henderson-Hasselbalch）：$$pH = pK_S + \lg \frac{c(\mathrm{A^-})}{c(\mathrm{HA})}$$。
+
+### 1.3 氧化还原与平衡计算 (Redox & MWG)
+- 氧化还原电子守恒：$$\sum n(e^-_{\text{abgegeben}}) = \sum n(e^-_{\text{aufgenommen}})$$。
+- 质量作用定律 (MWG) 与三段式 (ICE-Tabelle)：
+  - 对 $$a\mathrm{A} + b\mathrm{B} \rightleftharpoons c\mathrm{C} + d\mathrm{D}$$，列 **I**nitial (起始), **C**hange (变化量 $$\Delta c = \nu \cdot x$$), **E**quilibrium (平衡量 $$c_{eq} = c_0 \pm \nu x$$)。
+  - 代入 $$K_c = \frac{[\mathrm{C}]^c [\mathrm{D}]^d}{[\mathrm{A}]^a [\mathrm{B}]^b}$$ 解出 $$x$$。纯固体与纯水作为溶剂不写入 $$K_c$$ 表达式。
 
 Deutsch unten: Jede Rechnung beginnt mit der Formel, traegt Einheiten durch alle Schritte und endet mit einer Groessenordnungspruefung.
 
