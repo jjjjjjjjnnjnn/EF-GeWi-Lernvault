@@ -1041,6 +1041,8 @@ mindmap
 
 ## 4. 笔记缺口清单（施工图）
 
+> ✅ **本施工图已于 2026-09-25 完成**（S8 十科笔记生产）：全部目标笔记已产出，逐条链接见 [`../S8-Noten-Index.md`](../S8-Noten-Index.md)。下表「⚠️ 缺口」为立项时的状态，保留作历史记录。
+
 > 现有 Englisch 笔记 **7 篇**（另 `Klausur-Training/Fehlerlog.md` 空表 1 份、`Vokabeln-Anki/Englisch-EF-Phrasen.csv` 词表 1 份）[已验证]。
 > ⚠️ **归类警告**：这些笔记的标题指向**考试题块**（Teil A / Teil B / Role Models / Themenfelder），而本树的 L1 是**能力领域**，二者**非一一对应**。下表按**内容主归属**判定，并标出跨域关系。
 

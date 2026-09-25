@@ -127,7 +127,7 @@ mindmap
   - Operatoren：`rekonstruieren`, `vergleichen`, `eroertern`, `beurteilen`
   - Lernweg ZH：做「判据 → 支持者 → 反驳」三列表（对比辨别），再问「哪个判据最经得起推敲」。
   - Fehlerquelle：只罗列判据不做评判（漏 AFB III）；把「生物学差异」与「哲学意义的特殊性」混为一谈。
-  - 📓 笔记：🟡 [`Menschenbild-Überblick.md`](../../../07_Philosophie/Texte-Analyse/Menschenbild-Überblick.md)（部分覆盖）
+  - 📓 笔记：🟡 [`Menschenbild-Ueberblick.md`](../../../07_Philosophie/Texte-Analyse/Menschenbild-Ueberblick.md)（部分覆盖）
 - **Kriterien der Sonderstellung（特殊性判据的检验）** `[EF]`
   - 中文一句话：每个判据都要接受「反例检验」——动物有没有语言？机器有没有理性？
   - Klausur-Anbindung：评价题；`Kriterien pruefen und eigene Position entwickeln`（AFB III）。
@@ -276,7 +276,7 @@ mindmap
   - Operatoren：`analysieren`, `eroertern`, `beurteilen`
   - Lernweg ZH：做「自然论证 vs 文化论证」对照表，用统一标准评判。
   - Fehlerquelle：陷入非此即彼（哲学答案通常是「两者交互」）。
-  - 📓 笔记：✅ [`Menschenbild-Überblick.md`](../../../07_Philosophie/Texte-Analyse/Menschenbild-Überblick.md)
+  - 📓 笔记：✅ [`Menschenbild-Ueberblick.md`](../../../07_Philosophie/Texte-Analyse/Menschenbild-Ueberblick.md)
 - **Anlage und Umwelt（天赋与环境）** `[QP]`
   - 中文一句话：行为有多少由基因决定、多少由环境塑造？这直接影响「自由」问题。
   - Klausur-Anbindung：分析题；`Anlage-Umwelt-Debatte philosophisch beurteilen`（AFB II→III）。
@@ -567,6 +567,8 @@ mindmap
 
 ## 4. 笔记缺口清单（施工图）
 
+> ✅ **本施工图已于 2026-09-25 完成**（S8 十科笔记生产）：全部目标笔记已产出，逐条链接见 [`../S8-Noten-Index.md`](../S8-Noten-Index.md)。下表「⚠️ 缺口」为立项时的状态，保留作历史记录。
+
 > 依据 `00_META/INDEX.md` 与 `07_Philosophie/` 实际文件核对。
 > ⚠️ **核心矛盾**：**用户当前在读 EF，但现有 8 篇笔记全部落在 QP（IF3–IF5）题材上，EF 的两个 IF（IF1/IF2）实质为零。**
 
@@ -587,7 +589,7 @@ mindmap
 | 9 | Leib-Seele: Dualismus vs Monismus | `07_Philosophie/Leib-Seele-Dualismus-vs-Monismus.md` | ⚠️ 缺口（🟡 深度缺口） |
 | 10 | Determinismus vs Indeterminismus | `07_Philosophie/Determinismus-und-Willensfreiheit.md` | ⚠️ 缺口（🟡 深度缺口） |
 | 11 | [LK] Neurowissenschaften und KI | `07_Philosophie/LK-Neurowissenschaften-und-KI.md` | ⚠️ 缺口（LK 专属） |
-| — | Menschenbild | [`Menschenbild-Überblick.md`](../../../07_Philosophie/Texte-Analyse/Menschenbild-Überblick.md) | ✅ 已有 |
+| — | Menschenbild | [`Menschenbild-Ueberblick.md`](../../../07_Philosophie/Texte-Analyse/Menschenbild-Ueberblick.md) | ✅ 已有 |
 | **QP · IF4（密度最高）** | | | |
 | 12 | Eudämonismus / Tugendethik | `07_Philosophie/Eudaemonismus-und-Tugendethik.md` | ⚠️ 缺口（🟡 LK 明确要求归入此传统） |
 | 13 | Verantwortung in Anwendungskontexten | `07_Philosophie/Verantwortung-und-Anwendungsethik.md` | ⚠️ 缺口 |

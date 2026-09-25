@@ -878,6 +878,8 @@ mindmap
 
 ## 4. 笔记缺口清单（施工图）
 
+> ✅ **本施工图已于 2026-09-25 完成**（S8 十科笔记生产）：全部目标笔记已产出，逐条链接见 [`../S8-Noten-Index.md`](../S8-Noten-Index.md)。下表「⚠️ 缺口」为立项时的状态，保留作历史记录。
+
 > 依据 `00_META/INDEX.md` 的 Mathe 小节与 `03_Mathe/` 实际文件清单核对。**现有 13 篇笔记的 IF 归类**：A 域 4 篇（Kurvendiskussion / Steckbrief / Kinetik-Vernetzung / ZKE-Training）· 跨领域与工具 6 篇（CN-Formelhandbuch / CN-Tricks / CN-Training / Formel-Spickzettel / Fehlerlog / Abitur-Aufgabentraining）· 元信息 3 篇（Lehrplan / Ressourcen / README）。
 > **结论：现有笔记几乎全部集中于 IF-A 且集中于 EF 层；G 与 S 两个领域、以及 Q1/Q2 深化层是最大缺口。**
 

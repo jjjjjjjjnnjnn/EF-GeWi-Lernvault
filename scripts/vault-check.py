@@ -152,12 +152,47 @@ def check_vergleich():
     return n
 
 
+def check_filenames():
+    # AGENTS.md 1: Thema-DE-kebab-case.md, no umlauts (ae/oe/ue), no spaces.
+    umlauts = "\u00e4\u00f6\u00fc\u00c4\u00d6\u00dc\u00df"
+    bad = 0
+    for p in sorted(ROOT.rglob("*.md")):
+        rel = p.relative_to(ROOT)
+        if any(d in SKIP_DIRS for d in rel.parts):
+            continue
+        if any(c in p.name for c in umlauts):
+            bad += 1
+            ERR.append(f"{rel}: filename has umlaut (use ae/oe/ue)")
+        if " " in p.name:
+            bad += 1
+            ERR.append(f"{rel}: filename has space")
+    return bad
+
+
+def check_glossar():
+    # 00_META/Glossar-DE-ZH-GeWi.md must stay a well-formed 4-col table.
+    p = ROOT / "00_META" / "Glossar-DE-ZH-GeWi.md"
+    if not p.exists():
+        return 0
+    bad = 0
+    for i, line in enumerate(p.read_text(encoding="utf-8").splitlines()):
+        if not line.startswith("|"):
+            continue
+        if line.count("|") != 5:
+            bad += 1
+            ERR.append(f"Glossar-DE-ZH-GeWi.md:{i + 1}: pipes={line.count('|')} (want 5)")
+    return bad
+
+
 notes = check_notes()
 rows, badrows = check_csv()
 links, misslinks = check_index()
 reisen = check_reise()
 vergleich = check_vergleich()
-print(f"notes={notes} csv_rows={rows}(bad={badrows}) index_links={links}(missing={misslinks}) reisen={reisen} vergleich={vergleich}")
+badnames = check_filenames()
+badgloss = check_glossar()
+print(f"notes={notes} csv_rows={rows}(bad={badrows}) index_links={links}(missing={misslinks}) "
+      f"reisen={reisen} vergleich={vergleich} badnames={badnames} badglossar={badgloss}")
 for w in WARN:
     print("WARN", w)
 for e in ERR:

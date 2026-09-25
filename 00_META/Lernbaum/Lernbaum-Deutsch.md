@@ -846,6 +846,8 @@ DE: Medien stuetzt vor allem Aufgabenart IV und die mediale Variante von Ia; im 
 
 ## 4. 笔记缺口清单（施工图）
 
+> ✅ **本施工图已于 2026-09-25 完成**（S8 十科笔记生产）：全部目标笔记已产出，逐条链接见 [`../S8-Noten-Index.md`](../S8-Noten-Index.md)。下表「⚠️ 缺口」为立项时的状态，保留作历史记录。
+
 > 现有 Deutsch 笔记 **7 篇**，全部位于 `01_Deutsch/` 下，**全部属 EF 层，QP 层为零** [已验证，源：`Deutsch-Oberstufe.md` §6]。
 > ⚠️ 与 SoWi 不同：Deutsch 的缺口是**结构性的 IF 缺口 + 学段加深缺口**（4 IF 全周期复用，补任一 IF 同时服务 EF 与 Abitur）。
 

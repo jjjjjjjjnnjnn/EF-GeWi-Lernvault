@@ -17,7 +17,14 @@ Lernreise/        # 第二例外：互动课程脚本（App第7模块唯一课�
 ```
 
 每科固定子集：`Lehrplan.md` / `Ressourcen.md` / `Vokabeln-Anki/` / `Klausur-Training/`，文科加 `Texte-Analyse/`。
-新知识笔记放：学科根目录或 `Texte-Analyse/`，文件名 `Thema-DE-kebab-case.md`（如 `Soziale-Mobilitaet.md`，不用变音符号，ae/oe/ue代替ä/ö/ü）。
+
+**新知识笔记落位（固定规则，2026-09-25 规范化）**：
+- **文科/社科**（Deutsch · Englisch · Philosophie · SoWi · Musik · Sport）→ 学科下 **`Texte-Analyse/`**
+- **理科**（Mathe · Physik · Chemie · Bio）→ 学科**根目录**
+- **考试训练 / 错题 / 话术库** → **`Klausur-Training/`**
+
+文件名 `Thema-DE-kebab-case.md`（如 `Soziale-Mobilitaet.md`）；**禁用变音符号**（ae/oe/ue 代替 ä/ö/ü）与空格 —— `scripts/vault-check.py` 已强制校验（`badnames`）。
+新笔记必须套 **`Templates/Wissensnotiz-Template.md`**（八段：中文理解→核心概念→知识结构→解题方法→🇨🇳CN-Methode→Klausur-Training→Fehlerquellen→Vernetzung），且必含**知识点 + 解题方法 + 真题/训练题**三要素；产出规范见 `00_META/Lernbaum/00-Notenproduktion-Plan.md`（S8 施工宪法），进度索引见 `00_META/S8-Noten-Index.md`。
 
 ## 2. Frontmatter（Wissensnotizen强制，固定文件豁免）
 

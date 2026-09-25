@@ -1182,6 +1182,8 @@ mindmap
 
 ## 4. 笔记缺口清单（施工图）
 
+> ✅ **本施工图已于 2026-09-25 完成**（S8 十科笔记生产）：全部目标笔记已产出，逐条链接见 [`../S8-Noten-Index.md`](../S8-Noten-Index.md)。下表「⚠️ 缺口」为立项时的状态，保留作历史记录。
+
 > 依据 `00_META/INDEX.md` 的 Chemie 小节与 `05_Chemie/` 实际文件清单核对。**现有 Chemie 笔记共 12 篇**（含任务列出的 8 篇 + `Formel-Spickzettel.md` / `Klausur-Training/Chemie-Abitur-Aufgabentraining.md` + 元信息 3 篇 + Vokabeln-Anki）。
 > **结论**：EF-1 有机仅部分覆盖、EF-2 覆盖度最高；**Q 阶段四个 IF 中有三个完全零覆盖**（Q-2 电化学 / Q-3 有机路径 / Q-4 材料），Q-1 的 **LK 侧全零**。
 

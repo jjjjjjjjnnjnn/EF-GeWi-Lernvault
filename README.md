@@ -12,13 +12,16 @@ Obsidian Vault + Git 版本管理，中德双语混合。
 
 ## 结构
 
-- `00_META/` — 目标、NRW-EF课标总览、学习系统、文科Operatoren、术语库、`Journal/`每日笔记
-- `01_Deutsch/` `02_Englisch/` `07_Philosophie/` `08_SoWi/` — 文科社科优先（本期填实）
-- `03_Mathe/` `04_Physik/` `05_Chemie/` `06_Bio/` `09_Musik-mündl/` `10_Sport-mündl/` — 本期占位，Phase 3再填
-- `Templates/` — 学科模板、课后15分钟模板、考前Drill模板、Anki卡模板
+- `00_META/` — 目标、课标总览、学习系统、Operatoren、术语库、`Journal/` 每日笔记
+  - `Curriculum/` — **跨国考纲体系**：NRW **十科** Oberstufe 大纲（EF–Q2）+ 中国理科**四科**课标 + 中德**映射四科**（38 条 CN-Methode 技法卡）+ Operatoren 十科汇总（230 动词）+ Klausur/Abitur 形式统一源
+  - `Lernbaum/` — **Abi-Baum 十科应试树**（EF→Abitur，每 L3 带「应试四行」）+ `00-Notenproduktion-Plan.md`（S8 施工宪法）
+  - `S8-Noten-Index.md` — S8 新增 **224 篇**笔记逐条索引
+- **十科笔记（全部已填实）**：`01_Deutsch/` `02_Englisch/` `03_Mathe/` `04_Physik/` `05_Chemie/` `06_Bio/` `07_Philosophie/` `08_SoWi/` `09_Musik-mündl/` `10_Sport-mündl/`
+- `Templates/` — 学科模板、课后15分钟、考前Drill、Anki卡、**Wissensnotiz-Template（八段知识笔记模板）**
 - `Skills/` — 考试导向 skills（klausur-drill / vokabel-trainer / texte-analyse，SKILL.md格式）
 - `App-EF-Lernvault/` — 桌面软件源码（一站式学习App，半开源自有LICENSE；用法见其 README，安装包本地打、不进git）
 - 每科统一：`Lehrplan.md` / `Ressourcen.md` / `Vokabeln-Anki/` / `Klausur-Training/`（文科加 `Texte-Analyse/`）
+- `_Downloads/` — 本地采集区（**gitignored，永不进仓库**），每件配 `.quelle.txt`；清单唯一真相源 `00_META/Download-Quellen.md`
 
 ## 检索入口
 

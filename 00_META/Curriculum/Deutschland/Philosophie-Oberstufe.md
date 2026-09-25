@@ -115,7 +115,7 @@ stufe: "EF|Qualifikationsphase"
 
 **KLP 对本题域的定位** [已验证]（标题级归纳）：处理**哲学人类学**问题，反思**人可能的本性**；追问人作为自然存在兼文化存在、身—心关系、意志自由；呈现**自然主义-还原论**与**非还原论**两种回答之间的张力 → 发展**反思性的人之图景**，作为个人与社会语境中负责任行动的基础。
 
-> **🎯 与现有笔记的强关联**：既有 `Menschenbild-Überblick.md` 直落于此 IF（EF 层笔记，但题材属 QP IF3）。
+> **🎯 与现有笔记的强关联**：既有 `Menschenbild-Ueberblick.md` 直落于此 IF（EF 层笔记，但题材属 QP IF3）。
 
 ---
 
@@ -276,14 +276,14 @@ stufe: "EF|Qualifikationsphase"
 
 | Inhaltsfeld | 已有笔记 | 缺口 |
 |---|---|---|
-| **IF1** Der Mensch und sein Handeln（EF） | `Menschenbild-Überblick.md`（部分——其「人之图景」主线更偏 IF3，EF 语境下仅覆盖 IF1 的 `Die Sonderstellung des Menschen`） | ⚠️ **重大缺口**：缺 `Werte und Normen des Handelns im interkulturellen Kontext`（**跨文化伦理相对主义 vs 普遍主义**）独立笔记；缺 `Umfang und Grenzen staatlichen Handelns`（**国家行动界限 / 个体 vs 国家优先性**）笔记。EF 是用户**当前实际在读学段**，此缺口优先级最高 |
+| **IF1** Der Mensch und sein Handeln（EF） | `Menschenbild-Ueberblick.md`（部分——其「人之图景」主线更偏 IF3，EF 语境下仅覆盖 IF1 的 `Die Sonderstellung des Menschen`） | ⚠️ **重大缺口**：缺 `Werte und Normen des Handelns im interkulturellen Kontext`（**跨文化伦理相对主义 vs 普遍主义**）独立笔记；缺 `Umfang und Grenzen staatlichen Handelns`（**国家行动界限 / 个体 vs 国家优先性**）笔记。EF 是用户**当前实际在读学段**，此缺口优先级最高 |
 | **IF2** Erkenntnis und ihre Grenzen（EF） | `Philosophische-Fragen-Typen.md`（部分——5 Fragetypen 对应本 IF 的 `Eigenart philosophischen Fragens und Denkens`） | ⚠️ **重大缺口**：缺 `Metaphysische Probleme`（上帝存在 / 死后生命 as 理性认识挑战）笔记；缺 `Prinzipien und Reichweite menschlicher Erkenntnis`（**Empirismus vs Rationalismus** 对照）笔记。**IF2 是 EF 两个 IF 中笔记覆盖更薄的一个** |
 
 ### QP 层归属（IF3–IF6）
 
 | Inhaltsfeld | 已有笔记 | 缺口 |
 |---|---|---|
-| **IF3** Das Selbstverständnis des Menschen（QP） | [Menschenbild-Überblick](../../../07_Philosophie/Texte-Analyse/Menschenbild-Überblick.md) | 基本覆盖 `Der Mensch als Natur- und Kulturwesen`。缺：**Leib-Seele（Dualismus vs Monismus）** 专篇；**Determinismus vs Indeterminismus / Willensfreiheit** 专篇；**LK 专属**的 `Menschenbild der Neurowissenschaften und der KI` 完全空缺 |
+| **IF3** Das Selbstverständnis des Menschen（QP） | [Menschenbild-Ueberblick](../../../07_Philosophie/Texte-Analyse/Menschenbild-Ueberblick.md) | 基本覆盖 `Der Mensch als Natur- und Kulturwesen`。缺：**Leib-Seele（Dualismus vs Monismus）** 专篇；**Determinismus vs Indeterminismus / Willensfreiheit** 专篇；**LK 专属**的 `Menschenbild der Neurowissenschaften und der KI` 完全空缺 |
 | **IF4** Werte und Normen des Handelns（QP） | [Utilitarismus-vs-Kant](../../../07_Philosophie/Texte-Analyse/Utilitarismus-vs-Kant.md) · [Ethische-Dilemmata-Sammlung](../../../07_Philosophie/Texte-Analyse/Ethische-Dilemmata-Sammlung.md) · [Kant-Kategorischer-Imperativ-und-Maximenpruefung](../../../07_Philosophie/Kant-Kategorischer-Imperativ-und-Maximenpruefung.md) | **笔记密度最高（3 篇）**，直落 `Nützlichkeit und Pflicht als ethische Prinzipien`。缺：`Grundsätze eines gelingenden Lebens`（**eudämonistische 传统**——即 antički 幸福论，LK 明确要求归入此传统）；缺 `Verantwortung in ethischen Anwendungskontexten` 系统化（环境伦理 / 应用伦理）；缺 **LK 专属** `Unterschiedliche Grundlagen moralischer Orientierungen` |
 | **IF5** Zusammenleben in Staat und Gesellschaft（QP） | [Gerechtigkeit-Wirtschaftsethik-Vernetzung](../../../07_Philosophie/Gerechtigkeit-Wirtschaftsethik-Vernetzung.md) · [Philo-Abitur-Kernstellen](../../../07_Philosophie/Texte-Analyse/Philo-Abitur-Kernstellen.md)（Rousseau 部分） | 覆盖 `Konzepte von Demokratie und sozialer Gerechtigkeit`。缺：`Gemeinschaft als Prinzip`（**共同体主义 / 古希腊城邦模型**）专篇；缺 **Kontraktualismus 系统对照**（Hobbes vs Locke vs Rousseau vs Rawls——现有笔记只零散涉及）；缺 **LK 专属** `Bedingungen einer dauerhaften Friedensordnung`（康德《永久和平论》条目，**这是 LK 独有且与 HK4「参与当下政治讨论」强关联**） |
 | **IF6** Geltungsansprüche der Wissenschaften（QP） | — | ⚠️ **完全空缺**。缺：科学认识论基础（**Empirismus vs Rationalismus**，注意与 EF 的 IF2 同名但深度不同）；`Der Anspruch der Naturwissenschaften auf Objektivität`（Popper Falsifikation / Kuhn Paradigma）；**LK 专属** `Erkenntnis in den Geisteswissenschaften`（Dilthey / Gadamer 诠释学） |
