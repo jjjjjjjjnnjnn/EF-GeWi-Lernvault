@@ -517,26 +517,30 @@ export default function ReiseModule({
         </div>
       </div>
 
-      {/* VIEW 1: 3-QUESTION WIZARD (Katalog & Assistent) */}
+      {/* VIEW 1: SYLLABUS & CURRICULUM OVERVIEW */}
       {!activeCourse ? (
-        <div className="space-y-8 py-2">
-          <div>
-            <h2 className="font-serif text-2xl text-[var(--ink)] tracking-tight">
-              Lernreise · {lang === "de" ? "Kurs-Assistent" : "互动学习向导"}
-            </h2>
-            <p className="font-sans text-xs text-[var(--gray)] mt-1">
-              {lang === "de"
-                ? "Wähle Fach, Thema und Ziel — direkte, interaktive Begleitung durch das EF-Curriculum."
-                : "选择学科、主题与学习目标——沉浸式探索 Gymnasium EF 知识点。"}
-            </p>
+        <div className="space-y-6 py-2">
+          {/* Header & Meta */}
+          <div className="flex flex-wrap items-baseline justify-between gap-4 border-b border-[var(--line)] pb-4">
+            <div>
+              <h2 className="font-serif text-2xl text-[var(--ink)] tracking-tight">
+                {lang === "de" ? "Curriculum · Interaktive Lektionen" : "Curriculum · 互动课程目录"}
+              </h2>
+              <p className="font-sans text-xs text-[var(--gray)] mt-1">
+                {lang === "de"
+                  ? "Strukturierter EF-Lehrplan — 5 Phasen von Entdecken bis Klausurszenario."
+                  : "结构化 Gymnasium EF 教学大纲——从概念探索到考试情景实战。"}
+              </p>
+            </div>
+            <div className="font-mono text-xs text-[var(--gray)]">
+              <span className="text-[var(--ink)] font-medium">{wizardCourses.length}</span> / {allReisen.length} {lang === "de" ? "Lektionen verfügbar" : "门可用课程"}
+            </div>
           </div>
 
-          {/* Question 1: Fach Selection */}
-          <div className="space-y-2">
-            <label className="block text-xs font-mono uppercase tracking-wider text-[var(--gray)]">
-              1. Fach / 目标学科
-            </label>
-            <div className="flex flex-wrap gap-1.5">
+          {/* Filter Bar (Subject tabs + Search + Ziel) */}
+          <div className="space-y-3">
+            {/* Subject Tabs */}
+            <div className="flex flex-wrap items-center gap-1.5 border-b border-[var(--line)] pb-2.5">
               <button
                 type="button"
                 onClick={() => setWizardFach("alle")}
@@ -571,114 +575,133 @@ export default function ReiseModule({
                 );
               })}
             </div>
-          </div>
 
-          {/* Question 2: Ziel Filter */}
-          <div className="space-y-2">
-            <label className="block text-xs font-mono uppercase tracking-wider text-[var(--gray)]">
-              2. Lernziel / 学习目标
-            </label>
-            <div className="flex gap-2">
-              {[
-                { id: "alle", de: "Alle Ziele", zh: "全部目标" },
-                { id: "klausur", de: "Klausur (笔试)", zh: "Klausur 笔试" },
-                { id: "verstehen", de: "Verstehen (基础)", zh: "Verstehen 概念理解" },
-                { id: "muendlich", de: "Mündlich (口试)", zh: "Mündlich 口语表达" },
-              ].map((z) => (
-                <button
-                  type="button"
-                  key={z.id}
-                  onClick={() => setWizardZiel(z.id)}
-                  className={`px-3 py-1 text-xs font-sans rounded-[var(--radius)] border transition-all ${
-                    wizardZiel === z.id
-                      ? "border-[var(--accent)] text-[var(--accent)] font-medium"
-                      : "border-[var(--line)] text-[var(--gray)] hover:text-[var(--ink)]"
-                  }`}
-                >
-                  {lang === "de" ? z.de : z.zh}
-                </button>
-              ))}
-            </div>
-          </div>
-
-          {/* Question 3: Thema / Course List */}
-          <div className="space-y-3 pt-2">
-            <label className="block text-xs font-mono uppercase tracking-wider text-[var(--gray)]">
-              3. Thema / 可选课程清单 ({wizardCourses.length})
-            </label>
-
-            <div className="relative">
-              <input
-                type="text"
-                value={courseQuery}
-                onChange={(e) => setCourseQuery(e.target.value)}
-                placeholder={
-                  lang === "de"
-                    ? "Kurse filtern (Thema, Fach, Stichwort)..."
-                    : "搜索课程（主题、学科、关键词）..."
-                }
-                className="w-full rounded-[var(--radius)] border border-[var(--line)] bg-[var(--surface)] px-3 py-1.5 text-xs font-sans text-[var(--ink)] placeholder-[var(--gray)] focus:border-[var(--accent)] focus:outline-none"
-              />
-              {courseQuery && (
-                <button
-                  type="button"
-                  onClick={() => setCourseQuery("")}
-                  aria-label={lang === "de" ? "Suche leeren" : "清除搜索"}
-                  className="absolute right-2.5 top-1/2 -translate-y-1/2 p-1 text-[var(--gray)] hover:text-[var(--ink)] cursor-pointer"
-                >
-                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                    <path d="M4 4l8 8M12 4l-8 8" />
-                  </svg>
-                </button>
-              )}
-            </div>
-
-            {wizardCourses.length === 0 ? (
-              <div className="border border-dashed border-[var(--line)] bg-[var(--paper-subtle)] p-6 text-center text-xs font-mono text-[var(--gray)] rounded-[var(--radius)] leading-relaxed">
-                {lang === "de"
-                  ? "Für dieses Thema gibt es noch keine Lernreise. Lies zuerst die Notizen in der Bibliothek."
-                  : "该学科/主题暂无互动旅程文件，去 Bibliothek 先读笔记。"}
-              </div>
-            ) : (
-                <div className="divide-y divide-[var(--line)] border-y border-[var(--line)]">
-                {wizardCourses.map((c) => (
-                  <div
-                    key={c.id}
-                    className="flex flex-wrap items-center justify-between gap-3 p-4 hover:bg-[var(--paper-subtle)] transition-colors"
+            {/* Filter Tools Row: Search + Objective Filter */}
+            <div className="flex flex-wrap items-center justify-between gap-3 pt-1">
+              {/* Search Box */}
+              <div className="relative flex-1 min-w-[240px]">
+                <input
+                  type="text"
+                  value={courseQuery}
+                  onChange={(e) => setCourseQuery(e.target.value)}
+                  placeholder={
+                    lang === "de"
+                      ? "Thema, Fach, Stichwort filtern..."
+                      : "快速检索主题、学科、知识点..."
+                  }
+                  className="w-full rounded-[var(--radius)] border border-[var(--line)] bg-[var(--surface)] px-3 py-1.5 text-xs font-sans text-[var(--ink)] placeholder-[var(--gray)] focus:border-[var(--accent)] focus:outline-none"
+                />
+                {courseQuery && (
+                  <button
+                    type="button"
+                    onClick={() => setCourseQuery("")}
+                    aria-label={lang === "de" ? "Suche leeren" : "清除搜索"}
+                    className="absolute right-2.5 top-1/2 -translate-y-1/2 p-1 text-[var(--gray)] hover:text-[var(--ink)] cursor-pointer"
                   >
-                    <div>
-                      <div className="flex items-center gap-2 mb-1">
-                        <span className="font-mono text-xs uppercase text-[var(--accent)] border border-[var(--accent)]/30 px-1.5 py-0.2 rounded-[var(--radius)]">
-                          Level {c.level}
-                        </span>
-                        <span className="font-mono text-xs text-[var(--gray)]">
-                          Ziel: {c.ziel}
-                        </span>
-                        <span className="text-xs font-mono text-[var(--gray)]">
-                          · +{c.xp} XP
-                        </span>
-                      </div>
-                      <div className="font-serif text-base text-[var(--ink)] font-medium">
-                        {c.thema}
-                      </div>
-                      <div className="font-mono text-[var(--text-meta)] text-[var(--gray)] mt-0.5">
-                        {c.schritte.length} Schritte (
-                        {c.schritte.map((s) => s.typ).join(" → ")})
-                      </div>
-                    </div>
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                      <path d="M4 4l8 8M12 4l-8 8" />
+                    </svg>
+                  </button>
+                )}
+              </div>
 
+              {/* Ziel Tabs */}
+              <div className="flex items-center gap-1.5">
+                <span className="text-xs font-mono text-[var(--gray)] mr-1">
+                  {lang === "de" ? "Ziel:" : "目标:"}
+                </span>
+                {[
+                  { id: "alle", de: "Alle", zh: "全部" },
+                  { id: "klausur", de: "Klausur", zh: "笔试" },
+                  { id: "verstehen", de: "Verstehen", zh: "理解" },
+                  { id: "muendlich", de: "Mündlich", zh: "口试" },
+                ].map((z) => (
+                  <button
+                    type="button"
+                    key={z.id}
+                    onClick={() => setWizardZiel(z.id)}
+                    className={`px-2.5 py-1 text-xs font-sans rounded-[var(--radius)] border transition-all ${
+                      wizardZiel === z.id
+                        ? "border-[var(--accent)] text-[var(--accent)] font-medium bg-[var(--paper-subtle)]/40"
+                        : "border-[var(--line)] text-[var(--gray)] hover:text-[var(--ink)]"
+                    }`}
+                  >
+                    {lang === "de" ? z.de : z.zh}
+                  </button>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          {/* Syllabus Course List Table */}
+          {wizardCourses.length === 0 ? (
+            <div className="border border-dashed border-[var(--line)] bg-[var(--paper-subtle)] p-8 text-center text-xs font-mono text-[var(--gray)] rounded-[var(--radius)] leading-relaxed">
+              {lang === "de"
+                ? "Für dieses Thema gibt es noch keine interaktive Lektion. Lies zuerst die Notizen in der Bibliothek."
+                : "该学科/主题暂无互动课程文件，去 Bibliothek 先读笔记。"}
+            </div>
+          ) : (
+            <div className="border border-[var(--line)] rounded-[var(--radius)] overflow-hidden divide-y divide-[var(--line)] bg-[var(--surface)]">
+              {/* Table Header */}
+              <div className="grid grid-cols-12 gap-3 px-4 py-2 bg-[var(--paper-subtle)] text-[var(--text-meta)] font-mono text-[var(--gray)] uppercase tracking-wider">
+                <div className="col-span-1">#</div>
+                <div className="col-span-6 sm:col-span-7">Thema / 课程主题</div>
+                <div className="col-span-2 hidden sm:block">Ziel / 目标</div>
+                <div className="col-span-5 sm:col-span-2 text-right sm:text-left">Struktur & XP</div>
+                <div className="col-span-6 sm:col-span-1 text-right">Aktion</div>
+              </div>
+
+              {/* Rows */}
+              {wizardCourses.map((c, idx) => (
+                <div
+                  key={c.id}
+                  className="grid grid-cols-12 gap-3 items-center px-4 py-3 hover:bg-[var(--paper-subtle)] transition-colors text-xs"
+                >
+                  {/* Index / Fach */}
+                  <div className="col-span-1 font-mono text-[var(--gray)]">
+                    {String(idx + 1).padStart(2, "0")}
+                  </div>
+
+                  {/* Thema & Details */}
+                  <div className="col-span-6 sm:col-span-7 pr-2">
+                    <div className="font-serif text-sm text-[var(--ink)] font-medium">
+                      {c.thema}
+                    </div>
+                    <div className="font-mono text-[var(--text-meta)] text-[var(--gray)] mt-0.5 flex flex-wrap items-center gap-1.5">
+                      <span className="uppercase text-[var(--accent)] font-medium">{c.fach}</span>
+                      <span>·</span>
+                      <span>Level {c.level}</span>
+                      <span>·</span>
+                      <span>{c.schritte.length} Schritte ({c.schritte.map((s) => s.typ).join(" → ")})</span>
+                    </div>
+                  </div>
+
+                  {/* Ziel */}
+                  <div className="col-span-2 hidden sm:block font-mono text-[var(--text-meta)] text-[var(--gray)]">
+                    <span className="border border-[var(--line)] px-1.5 py-0.5 rounded-[var(--radius)]">
+                      {c.ziel}
+                    </span>
+                  </div>
+
+                  {/* XP */}
+                  <div className="col-span-5 sm:col-span-2 text-right sm:text-left font-mono text-[var(--text-meta)] text-[var(--accent)]">
+                    +{c.xp} XP
+                  </div>
+
+                  {/* Action */}
+                  <div className="col-span-6 sm:col-span-1 text-right">
                     <button
                       type="button"
                       onClick={() => setActiveCourse(c)}
-                      className="px-4 py-1.5 font-mono text-xs uppercase tracking-wider border border-[var(--ink)] bg-[var(--ink)] text-[var(--paper)] hover:bg-[var(--accent)] hover:border-[var(--accent)] rounded-[var(--radius)] transition-colors"
+                      className="inline-flex items-center gap-1 px-3 py-1 font-mono text-xs border border-[var(--ink)] bg-[var(--ink)] text-[var(--paper)] hover:bg-[var(--accent)] hover:border-[var(--accent)] rounded-[var(--radius)] transition-colors whitespace-nowrap"
                     >
-                      {lang === "de" ? "Starten →" : "开始学习 →"}
+                      {lang === "de" ? "Lektion starten →" : "开始学习 →"}
                     </button>
                   </div>
-                ))}
-              </div>
-            )}
-          </div>
+                </div>
+              ))}
+            </div>
+          )}
         </div>
       ) : (
         /* VIEW 2: 5-STEP INTERACTIVE COURSE PLAYER */

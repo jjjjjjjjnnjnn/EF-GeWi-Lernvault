@@ -196,19 +196,8 @@ export default function App() {
     return "einstellungen";
   };
 
-  const [lastLernenTab, setLastLernenTab] = useState<Tab>("reise");
-  const [lastWiederholenTab, setLastWiederholenTab] = useState<Tab>("flashcards");
-  const [lastUebenTab, setLastUebenTab] = useState<Tab>("klausursim");
-
   const switchTab = (id: Tab) => {
     setTab(id);
-    if (["reise", "library", "lernbaum", "mindmap"].includes(id)) {
-      setLastLernenTab(id);
-    } else if (["flashcards", "planner"].includes(id)) {
-      setLastWiederholenTab(id);
-    } else if (["klausursim", "quiz", "tutor", "werkzeuge"].includes(id)) {
-      setLastUebenTab(id);
-    }
     if (typeof window !== "undefined") {
       const url = new URL(window.location.href);
       url.searchParams.set("tab", id);
@@ -245,44 +234,7 @@ export default function App() {
     { id: "werkzeuge", label: tr.werkzeuge, shortcut: "Alt W", icon: icons.werkzeuge },
   ];
 
-  interface PrimaryNavItem {
-    workspace: PrimaryWorkspace;
-    label: string;
-    icon: ReactNode;
-    shortcut: string;
-    onSelect: () => void;
-  }
 
-  const primaryNavItems: PrimaryNavItem[] = [
-    {
-      workspace: "home",
-      label: tr.home,
-      icon: icons.home,
-      shortcut: "Alt 1",
-      onSelect: () => switchTab("home"),
-    },
-    {
-      workspace: "lernen",
-      label: lang === "de" ? "Lernen" : "学习 (新知)",
-      icon: icons.reise,
-      shortcut: "Alt 2",
-      onSelect: () => switchTab(lastLernenTab),
-    },
-    {
-      workspace: "wiederholen",
-      label: lang === "de" ? "Wiederholen" : "复习 (卡片)",
-      icon: icons.flashcards,
-      shortcut: "Alt 3",
-      onSelect: () => switchTab(lastWiederholenTab),
-    },
-    {
-      workspace: "ueben",
-      label: lang === "de" ? "Üben" : "练习 (实战)",
-      icon: icons.klausursim,
-      shortcut: "Alt 4",
-      onSelect: () => switchTab(lastUebenTab),
-    },
-  ];
 
   const allNavItems: NavItem[] = useMemo(
     () => [
@@ -573,50 +525,158 @@ export default function App() {
           </div>
         </div>
 
-        <nav className="flex flex-col space-y-1 overflow-y-auto">
-          {primaryNavItems.map((n) => {
-            const isWorkspaceActive = currentWorkspace === n.workspace;
-            return (
-              <button
-                key={n.workspace}
-                onClick={n.onSelect}
-                aria-current={isWorkspaceActive ? "page" : undefined}
-                aria-label={n.label}
-                title={`${n.label} (${n.shortcut})`}
-                className={`group flex h-10 w-full items-center justify-center rounded-[var(--radius)] px-2.5 text-left text-xs transition-all duration-[var(--dur-normal)] cursor-pointer active:scale-[0.98] xl:justify-start xl:gap-2.5 ${
-                  isWorkspaceActive
-                    ? "border-l-2 border-[var(--accent)] bg-[var(--surface)] font-medium text-[var(--accent)] shadow-none"
-                    : "border-l-2 border-transparent text-[var(--gray)] hover:bg-[var(--surface)] hover:text-[var(--ink)] active:bg-[var(--paper-subtle)]"
-                }`}
-              >
-                <span className="flex h-5 w-5 shrink-0 items-center justify-center select-none text-current">
-                  {n.icon}
-                </span>
-                <span className="hidden truncate font-sans text-xs font-medium xl:inline">
-                  {n.label}
-                </span>
-              </button>
-            );
-          })}
+        <nav className="flex flex-col space-y-2.5 overflow-y-auto flex-1">
+          {/* Home */}
+          <div>
+            <button
+              onClick={() => switchTab("home")}
+              aria-current={tab === "home" ? "page" : undefined}
+              aria-label={tr.home}
+              title={`${tr.home} (Alt 1)`}
+              className={`group flex h-8 w-full items-center justify-center rounded-[var(--radius)] px-2 text-left text-xs transition-colors cursor-pointer xl:justify-start xl:gap-2 ${
+                tab === "home"
+                  ? "border-l-2 border-[var(--accent)] bg-[var(--surface)] font-medium text-[var(--accent)] shadow-none"
+                  : "border-l-2 border-transparent text-[var(--gray)] hover:bg-[var(--surface)] hover:text-[var(--ink)]"
+              }`}
+            >
+              <span className="flex h-4 w-4 shrink-0 items-center justify-center select-none text-current">
+                {icons.home}
+              </span>
+              <span className="hidden truncate font-sans text-xs font-medium xl:inline">
+                {tr.home}
+              </span>
+              <span className="ml-auto hidden font-mono text-[var(--text-meta)] text-[var(--gray)] xl:inline">
+                Alt 1
+              </span>
+            </button>
+          </div>
+
+          {/* Section 1: Lernen */}
+          <div className="space-y-0.5">
+            <div className="hidden px-2 pb-1 font-mono text-[var(--text-meta)] uppercase tracking-wider text-[var(--gray)] xl:block">
+              {lang === "de" ? "Lernen" : "学习 · Lernen"}
+            </div>
+            <div className="border-t border-[var(--line)] my-1 xl:hidden" />
+            {lernenTabs.map((sub) => {
+              const isActive = tab === sub.id;
+              return (
+                <button
+                  key={sub.id}
+                  onClick={() => switchTab(sub.id)}
+                  aria-current={isActive ? "page" : undefined}
+                  aria-label={sub.label}
+                  title={`${sub.label} (${sub.shortcut})`}
+                  className={`group flex h-8 w-full items-center justify-center rounded-[var(--radius)] px-2 text-left text-xs transition-colors cursor-pointer xl:justify-start xl:gap-2 ${
+                    isActive
+                      ? "border-l-2 border-[var(--accent)] bg-[var(--surface)] font-medium text-[var(--accent)] shadow-none"
+                      : "border-l-2 border-transparent text-[var(--gray)] hover:bg-[var(--surface)] hover:text-[var(--ink)]"
+                  }`}
+                >
+                  <span className="flex h-4 w-4 shrink-0 items-center justify-center select-none text-current">
+                    {sub.icon}
+                  </span>
+                  <span className="hidden truncate font-sans text-xs font-medium xl:inline">
+                    {sub.label}
+                  </span>
+                  <span className="ml-auto hidden font-mono text-[var(--text-meta)] text-[var(--gray)] xl:inline">
+                    {sub.shortcut}
+                  </span>
+                </button>
+              );
+            })}
+          </div>
+
+          {/* Section 2: Wiederholen */}
+          <div className="space-y-0.5">
+            <div className="hidden px-2 pb-1 font-mono text-[var(--text-meta)] uppercase tracking-wider text-[var(--gray)] xl:block">
+              {lang === "de" ? "Wiederholen" : "复习 · Wiederholen"}
+            </div>
+            <div className="border-t border-[var(--line)] my-1 xl:hidden" />
+            {wiederholenTabs.map((sub) => {
+              const isActive = tab === sub.id;
+              return (
+                <button
+                  key={sub.id}
+                  onClick={() => switchTab(sub.id)}
+                  aria-current={isActive ? "page" : undefined}
+                  aria-label={sub.label}
+                  title={`${sub.label} (${sub.shortcut})`}
+                  className={`group flex h-8 w-full items-center justify-center rounded-[var(--radius)] px-2 text-left text-xs transition-colors cursor-pointer xl:justify-start xl:gap-2 ${
+                    isActive
+                      ? "border-l-2 border-[var(--accent)] bg-[var(--surface)] font-medium text-[var(--accent)] shadow-none"
+                      : "border-l-2 border-transparent text-[var(--gray)] hover:bg-[var(--surface)] hover:text-[var(--ink)]"
+                  }`}
+                >
+                  <span className="flex h-4 w-4 shrink-0 items-center justify-center select-none text-current">
+                    {sub.icon}
+                  </span>
+                  <span className="hidden truncate font-sans text-xs font-medium xl:inline">
+                    {sub.label}
+                  </span>
+                  <span className="ml-auto hidden font-mono text-[var(--text-meta)] text-[var(--gray)] xl:inline">
+                    {sub.shortcut}
+                  </span>
+                </button>
+              );
+            })}
+          </div>
+
+          {/* Section 3: Ueben */}
+          <div className="space-y-0.5">
+            <div className="hidden px-2 pb-1 font-mono text-[var(--text-meta)] uppercase tracking-wider text-[var(--gray)] xl:block">
+              {lang === "de" ? "Üben" : "练习 · Üben"}
+            </div>
+            <div className="border-t border-[var(--line)] my-1 xl:hidden" />
+            {uebenTabs.map((sub) => {
+              const isActive = tab === sub.id;
+              return (
+                <button
+                  key={sub.id}
+                  onClick={() => switchTab(sub.id)}
+                  aria-current={isActive ? "page" : undefined}
+                  aria-label={sub.label}
+                  title={`${sub.label} (${sub.shortcut})`}
+                  className={`group flex h-8 w-full items-center justify-center rounded-[var(--radius)] px-2 text-left text-xs transition-colors cursor-pointer xl:justify-start xl:gap-2 ${
+                    isActive
+                      ? "border-l-2 border-[var(--accent)] bg-[var(--surface)] font-medium text-[var(--accent)] shadow-none"
+                      : "border-l-2 border-transparent text-[var(--gray)] hover:bg-[var(--surface)] hover:text-[var(--ink)]"
+                  }`}
+                >
+                  <span className="flex h-4 w-4 shrink-0 items-center justify-center select-none text-current">
+                    {sub.icon}
+                  </span>
+                  <span className="hidden truncate font-sans text-xs font-medium xl:inline">
+                    {sub.label}
+                  </span>
+                  <span className="ml-auto hidden font-mono text-[var(--text-meta)] text-[var(--gray)] xl:inline">
+                    {sub.shortcut}
+                  </span>
+                </button>
+              );
+            })}
+          </div>
         </nav>
 
-        <div className="mt-3 border-t border-[var(--line)] pt-2">
+        <div className="mt-2 border-t border-[var(--line)] pt-2">
           <button
             onClick={() => switchTab("einstellungen")}
             aria-current={tab === "einstellungen" ? "page" : undefined}
             aria-label={tr.settings}
-            title={tr.settings}
-            className={`group flex h-10 w-full items-center justify-center rounded-[var(--radius)] px-2.5 text-left text-xs transition-all duration-[var(--dur-normal)] cursor-pointer active:scale-[0.98] xl:justify-start xl:gap-2.5 ${
+            title={`${tr.settings} (Alt 0)`}
+            className={`group flex h-8 w-full items-center justify-center rounded-[var(--radius)] px-2 text-left text-xs transition-colors cursor-pointer xl:justify-start xl:gap-2 ${
               tab === "einstellungen"
                 ? "border-l-2 border-[var(--accent)] bg-[var(--surface)] font-medium text-[var(--accent)] shadow-none"
-                : "border-l-2 border-transparent text-[var(--gray)] hover:bg-[var(--surface)] hover:text-[var(--ink)] active:bg-[var(--paper-subtle)]"
+                : "border-l-2 border-transparent text-[var(--gray)] hover:bg-[var(--surface)] hover:text-[var(--ink)]"
             }`}
           >
-            <span className="flex h-5 w-5 shrink-0 items-center justify-center select-none text-current">
+            <span className="flex h-4 w-4 shrink-0 items-center justify-center select-none text-current">
               {icons.einstellungen}
             </span>
             <span className="hidden truncate font-sans text-xs font-medium xl:inline">
               {tr.settings}
+            </span>
+            <span className="ml-auto hidden font-mono text-[var(--text-meta)] text-[var(--gray)] xl:inline">
+              Alt 0
             </span>
           </button>
         </div>
@@ -639,7 +699,23 @@ export default function App() {
       <main className="flex min-w-0 flex-1 flex-col overflow-hidden bg-[var(--paper)]">
         {/* Top bar with hairline divider */}
         <header className="flex h-11 shrink-0 flex-wrap items-center justify-between gap-3 border-b border-[var(--line)] bg-[var(--paper)] px-4 py-1.5 sm:px-6">
-          <div className="flex min-w-64 flex-1 items-center max-w-lg">
+          <div className="flex items-center gap-2">
+            <span className="font-mono text-[var(--text-meta)] uppercase tracking-wider text-[var(--gray)]">
+              {currentWorkspace === "lernen"
+                ? (lang === "de" ? "Lernen" : "学习")
+                : currentWorkspace === "wiederholen"
+                ? (lang === "de" ? "Wiederholen" : "复习")
+                : currentWorkspace === "ueben"
+                ? (lang === "de" ? "Üben" : "练习")
+                : "Home"}
+            </span>
+            <span className="text-[var(--gray)] text-xs">/</span>
+            <span className="font-serif text-sm font-medium text-[var(--ink)]">
+              {allNavItems.find((n) => n.id === tab)?.label}
+            </span>
+          </div>
+
+          <div className="flex min-w-48 flex-1 items-center max-w-sm">
             <input
               ref={searchRef}
               title="/"
@@ -673,7 +749,7 @@ export default function App() {
             <button
               type="button"
               onClick={() => setSprintOpen(true)}
-              className="flex items-center gap-1.5 rounded-[var(--radius)] border border-[var(--line)] bg-[var(--surface)] px-2.5 py-1 font-mono text-xs text-[var(--ink)] transition-colors hover:bg-[var(--paper-subtle)]"
+              className="flex items-center gap-1.5 rounded-[var(--radius)] border border-[var(--line)] bg-[var(--surface)] px-2.5 py-1 font-mono text-xs text-[var(--ink)] transition-colors hover:bg-[var(--paper-subtle)] cursor-pointer"
             >
               <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" className="h-3.5 w-3.5">
                 <path d="M8 2.5v3M8 10.5v3M2.5 8h3M10.5 8h3" />
@@ -691,42 +767,6 @@ export default function App() {
             )}
           </div>
         </header>
-
-        {/* Workspace Sub-tabs Segment Bar */}
-        {(currentWorkspace === "lernen" || currentWorkspace === "wiederholen" || currentWorkspace === "ueben") && (
-          <div className="flex h-10 shrink-0 flex-wrap items-center gap-1.5 border-b border-[var(--line)] bg-[var(--paper-subtle)] px-4 sm:px-6">
-            <span className="font-mono text-[var(--text-meta)] uppercase tracking-wider text-[var(--gray)] mr-1">
-              {currentWorkspace === "lernen"
-                ? (lang === "de" ? "Lernen:" : "学习:")
-                : currentWorkspace === "wiederholen"
-                ? (lang === "de" ? "Wiederholen:" : "复习:")
-                : (lang === "de" ? "Üben:" : "练习:")}
-            </span>
-            {(currentWorkspace === "lernen" ? lernenTabs : currentWorkspace === "wiederholen" ? wiederholenTabs : uebenTabs).map((sub) => {
-              const isActive = tab === sub.id;
-              return (
-                <button
-                  key={sub.id}
-                  type="button"
-                  onClick={() => switchTab(sub.id)}
-                  aria-current={isActive ? "page" : undefined}
-                  aria-label={sub.label}
-                  className={`flex items-center gap-1.5 rounded-[var(--radius)] px-2.5 py-1 text-xs font-sans transition-colors cursor-pointer ${
-                    isActive
-                      ? "bg-[var(--ink)] text-[var(--paper)] font-medium"
-                      : "border border-[var(--line)] bg-[var(--surface)] text-[var(--ink)] hover:border-[var(--accent)]"
-                  }`}
-                >
-                  <span className="shrink-0">{sub.icon}</span>
-                  <span>{sub.label}</span>
-                  <span className={`font-mono text-[var(--text-meta)] ${isActive ? "text-[var(--paper-subtle)] opacity-75" : "text-[var(--gray)]"}`}>
-                    {sub.shortcut}
-                  </span>
-                </button>
-              );
-            })}
-          </div>
-        )}
 
         {/* Content Viewport */}
         <div key={tab} className="tab-enter min-w-0 flex-1 overflow-y-auto p-4 sm:p-6 xl:p-8">

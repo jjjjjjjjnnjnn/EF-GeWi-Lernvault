@@ -204,10 +204,11 @@ export function parseReiseFile(path: string, raw: string): Reise | null {
 }
 
 // Statically bundle all Lernreise courses from vault
-const globFn = (import.meta as unknown as { glob?: (pattern: string, options: unknown) => Record<string, string> }).glob;
-const reisenFiles: Record<string, string> = globFn
-  ? globFn("../../Lernreise/*.md", { query: "?raw", import: "default", eager: true })
-  : {};
+const reisenFiles: Record<string, string> = import.meta.glob("../../Lernreise/*.md", {
+  query: "?raw",
+  import: "default",
+  eager: true,
+});
 
 export const defaultVaultReisen: Reise[] = Object.entries(reisenFiles)
   .map(([path, raw]) => {
