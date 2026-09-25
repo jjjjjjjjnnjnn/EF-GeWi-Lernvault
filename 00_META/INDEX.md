@@ -36,7 +36,7 @@
 - Skills：[klausur-drill](../Skills/klausur-drill/SKILL.md) · [vokabel-trainer](../Skills/vokabel-trainer/SKILL.md) · [texte-analyse](../Skills/texte-analyse/SKILL.md)
 - **Abi-Baum 十科应试树（EF→Abitur，作战地图）** — [设计总纲](Lernbaum/00-Abi-Baum-Design.md) · 十科：[Deutsch](Lernbaum/Lernbaum-Deutsch.md) · [Englisch](Lernbaum/Lernbaum-Englisch.md) · [Mathe](Lernbaum/Lernbaum-Mathe.md) · [Physik](Lernbaum/Lernbaum-Physik.md) · [Chemie](Lernbaum/Lernbaum-Chemie.md) · [Bio](Lernbaum/Lernbaum-Bio.md) · [Philosophie](Lernbaum/Lernbaum-Philosophie.md) · [SoWi](Lernbaum/Lernbaum-SoWi.md) · [Musik](Lernbaum/Lernbaum-Musik.md) · [Sport](Lernbaum/Lernbaum-Sport.md)（每 L3 带应试四行 + 学习方法 + 理科 CN-Methode + 笔记缺口）
 - [Lernbaum十科学习树（旧设计层，EF 版）](Lernbaum/00-Designprinzipien.md) — 历史记录（已被 Abi-Baum 取代）
-- **S8 笔记生产** — [施工宪法/波次台账](Lernbaum/00-Notenproduktion-Plan.md) · [**S8 新增笔记索引（156 篇，按学科）**](S8-Noten-Index.md) · 模板：[Wissensnotiz-Template](../Templates/Wissensnotiz-Template.md)
+- **S8 笔记生产** — [施工宪法/波次台账](Lernbaum/00-Notenproduktion-Plan.md) · [**S8 新增笔记索引（224 篇，按学科）**](S8-Noten-Index.md) · 模板：[Wissensnotiz-Template](../Templates/Wissensnotiz-Template.md) · 官方源（本地 `_Downloads/`，不进 git）：[Download-Quellen](Download-Quellen.md)
 
 ## 主题索引（新增一行一条）
 ### SoWi
@@ -212,6 +212,7 @@
 - [2026-09-24-curriculum-framework-und-pilot](Journal/2026-09-24-curriculum-framework-und-pilot.md) — 考纲体系 S0+S1：框架建立（设计总纲+源清单+4模板）与试点（SoWi/Mathe大纲+中德映射），含 4 处上游纠错
 - [2026-09-24-abi-baum-und-curriculum-vollausbau](Journal/2026-09-24-abi-baum-und-curriculum-vollausbau.md) — **考纲体系 S0–S7 全量 + Abi-Baum 十科重构**（40 文件 ~17600 行，11 处上游纠错，38 条 CN-Methode 技法卡）
 - [2026-09-24-s8-notenproduktion](Journal/2026-09-24-s8-notenproduktion.md) — **S8 笔记生产第一轮**：建立施工宪法 + 八段模板，并行 subagent 产出 **156 篇新笔记**（全库 127→283），Deutsch/Englisch 两科收官，含 429 限流与中断教训
+- [2026-09-25-s8-abschluss](Journal/2026-09-25-s8-abschluss.md) — **S8 全部收官**：十科施工图 **224/228 完成**（全库 127→**352 篇**，卡片 534→**1396**，Glossar +730 行），本地固化 **218 个官方源 PDF**
 - 约定：文件名 `YYYY-MM-DD-<thema>.md`，头部frontmatter（`fach`可空，`tags: [EF, Meta]`）。
 
 

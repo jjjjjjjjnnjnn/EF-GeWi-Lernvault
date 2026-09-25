@@ -138,23 +138,27 @@ stufe: "EF|Q1|Q2"
 
 | 学科 | 已产出 | 缺口总数 | 状态 |
 |---|---|---|---|
-| **Deutsch** | 16 | 16 | ✅ **已完成** |
-| **Englisch** | 20 | 20 | ✅ **已完成** |
-| Mathe | 18 | 23 | 🔄 余 5 |
-| Physik | 18 | 22 | 🔄 余 4 |
-| Chemie | 18 | 26 | 🔄 余 8（含 3 项升级/改造） |
-| Bio | 18 | 34 | 🔄 余 16 |
-| Philosophie | 16 | 22 | 🔄 余 6（含 LK 专属） |
-| SoWi | 16 | 25 | 🔄 余 9 |
-| Musik | 10 | 14 | 🔄 余 4 |
-| Sport | 6 | 26 | 🔄 余 20 |
-| **合计** | **156** | **228** | 🔄 68.4% |
+| **Deutsch** | 16 | 16 | ✅ **完成** |
+| **Englisch** | 20 | 20 | ✅ **完成** |
+| **Mathe** | 23 | 23 | ✅ **完成** |
+| **Physik** | 22 | 22 | ✅ **完成** |
+| **Chemie** | 23 | 26 | ✅ **主体完成**（余 3 项为「升级/精简既有文件」的改造项，非新笔记） |
+| **Bio** | 34 | 34 | ✅ **完成** |
+| **Philosophie** | 21 | 22 | ✅ **主体完成**（余 1 项） |
+| **SoWi** | 25 | 25 | ✅ **完成** |
+| **Musik** | 14 | 14 | ✅ **完成** |
+| **Sport** | 26 | 26 | ✅ **完成** |
+| **合计** | **224** | **228** | **98.2%** |
 
-**已完成波次**：W1（10 科首波）· W2（第二批）· W3（第三批，Deutsch/Englisch 收官）
-**下一波建议**（按 §4 优先级）：① Sport IF d 剩余 + 口试 · ② Bio Q 阶段（Genetik/Ökologie）· ③ Chemie 剩余 Q-3/Q-4 · ④ Mathe/Physik 剩余 LK 项 · ⑤ SoWi IF5/IF7 剩余 · ⑥ Philosophie LK 专属
+**已完成波次**：W1（10 科首波）· W2（第二批）· W3（第三批）· W4（Sport/Bio 攻坚）· W5（术语卡补齐 + SoWi/Mathe/Physik 收官）· W6（Chemie/Philosophie/Musik 收官）
 
-**续推规则**：每次会话先读本表，从剩余最多的学科继续；每完成一批更新本表并 commit。
-**进度索引**：[`../S8-Noten-Index.md`](../S8-Noten-Index.md)（156 篇逐条链接）。
+**附带成果**：
+- **官方源本地化**：`_Downloads/CURRICULUM/` 下 **218 个官方 PDF / 127MB**（KLP 十科 · Operatoren · Abitur-Vorgaben 27–29 · IQB Poolaufgaben · 中国课标），全部配 `.quelle.txt`，全部 gitignored。
+- **术语卡补齐**：Anki csv **534 → 1396 张**（+862）；`Glossar-DE-ZH-GeWi.md` **+730 行**（文科术语）。
+
+**剩余（非阻塞）**：① Chemie 3 项「改造既有文件」任务（升级 `CN-Chemie-Tricks` / 精简 `CN-Chemie-Training` 等）；② Philosophie 1 项；③ App 侧 `src/baum/*.ts` 仍是 EF 版数据。
+
+**进度索引**：[`../S8-Noten-Index.md`](../S8-Noten-Index.md)（224 篇逐条链接）。
 
 ---
 
