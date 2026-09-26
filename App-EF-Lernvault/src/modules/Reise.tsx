@@ -220,6 +220,7 @@ export default function ReiseModule({
   // Wizard filters
   const [wizardFach, setWizardFach] = useState<string>("SoWi");
   const [wizardZiel, setWizardZiel] = useState<string>("alle");
+  const [wizardEdition, setWizardEdition] = useState<"alle" | "de" | "bilingual">("alle");
   const [courseQuery, setCourseQuery] = useState<string>("");
 
   // Gamification progress state
@@ -465,14 +466,22 @@ export default function ReiseModule({
         wizardFach === "alle" || r.fach.toLowerCase() === wizardFach.toLowerCase();
       const matchZiel =
         wizardZiel === "alle" || r.ziel.toLowerCase() === wizardZiel.toLowerCase();
+      const isDe = r.path.includes("-DE-");
+      const isCn = r.path.includes("-CN-");
+      const matchEdition =
+        wizardEdition === "alle"
+          ? true
+          : wizardEdition === "de"
+          ? isDe || (!isCn && !/[\u4e00-\u9fff]/.test(r.thema))
+          : isCn || (!isDe && /[\u4e00-\u9fff]/.test(r.thema));
       const matchQuery =
         !q ||
         r.thema.toLowerCase().includes(q) ||
         r.fach.toLowerCase().includes(q) ||
         (r.tags && r.tags.some((t) => t.toLowerCase().includes(q)));
-      return matchFach && matchZiel && matchQuery;
+      return matchFach && matchZiel && matchEdition && matchQuery;
     });
-  }, [allReisen, wizardFach, wizardZiel, courseQuery]);
+  }, [allReisen, wizardFach, wizardZiel, wizardEdition, courseQuery]);
 
   const currentSchritt = activeCourse?.schritte[stepIdx];
 
@@ -674,6 +683,31 @@ export default function ReiseModule({
                 )}
               </div>
 
+              {/* Edition Tabs */}
+              <div className="flex items-center gap-1.5">
+                <span className="text-xs font-mono text-[var(--gray)] mr-1">
+                  {lang === "de" ? "Edition:" : "版本:"}
+                </span>
+                {[
+                  { id: "alle" as const, de: "Alle", zh: "全部" },
+                  { id: "de" as const, de: "DE rein", zh: "纯德语" },
+                  { id: "bilingual" as const, de: "Bilingual", zh: "双语桥接" },
+                ].map((ed) => (
+                  <button
+                    type="button"
+                    key={ed.id}
+                    onClick={() => setWizardEdition(ed.id)}
+                    className={`px-2.5 py-1 text-xs font-sans rounded-[var(--radius)] border transition-all ${
+                      wizardEdition === ed.id
+                        ? "border-[var(--accent)] text-[var(--accent)] font-medium bg-[var(--paper-subtle)]/40"
+                        : "border-[var(--line)] text-[var(--gray)] hover:text-[var(--ink)]"
+                    }`}
+                  >
+                    {lang === "de" ? ed.de : ed.zh}
+                  </button>
+                ))}
+              </div>
+
               {/* Ziel Tabs */}
               <div className="flex items-center gap-1.5">
                 <span className="text-xs font-mono text-[var(--gray)] mr-1">
@@ -738,6 +772,15 @@ export default function ReiseModule({
                     </div>
                     <div className="font-mono text-[var(--text-meta)] text-[var(--gray)] mt-0.5 flex flex-wrap items-center gap-1.5">
                       <span className="uppercase text-[var(--accent)] font-medium">{c.fach}</span>
+                      {c.path.includes("-DE-") ? (
+                        <span className="border border-[var(--accent)] text-[var(--accent)] px-1.5 py-0.5 rounded-[var(--radius)] text-xs">
+                          DE rein
+                        </span>
+                      ) : c.path.includes("-CN-") ? (
+                        <span className="border border-[var(--line)] text-[var(--gray)] px-1.5 py-0.5 rounded-[var(--radius)] text-xs">
+                          Bilingual
+                        </span>
+                      ) : null}
                       <span>·</span>
                       <span>Level {c.level}</span>
                       <span>·</span>
