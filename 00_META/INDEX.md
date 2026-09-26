@@ -240,6 +240,7 @@
 - [2026-09-26-scientific-note-architecture-and-global-roadmap](Journal/2026-09-26-scientific-note-architecture-and-global-roadmap.md) — **科学笔记系统融合重构与八线外部AI生产总纲**：九段全息科学笔记模板+认知负荷理论融合+十科考纲全量覆盖交付总纲
 - [2026-09-26-single-page-document-and-toc](Journal/2026-09-26-single-page-document-and-toc.md) — **互动课程单页长文档化、右侧大纲导航栏(TOC)与德语受众体验重构**：流式全开长文档+右侧吸顶大纲TOC+平滑滚动+双模无缝切换+德语版自动分流映射（59套件389测试全绿）
 - [2026-09-26-d-paket-batch-enrichment-completion](Journal/2026-09-26-d-paket-batch-enrichment-completion.md) — **D包收官：全学科-DE-纯德语互动课件四段式科学精讲与KaTeX定量全量落地**：四段式生动精讲+定量科学公式+98篇覆盖+零CJK+门禁全绿
+- [2026-09-26-interactive-pedagogy-and-scroll-sync](Journal/2026-09-26-interactive-pedagogy-and-scroll-sync.md) — **互动探索式学习重构、滚动同步与学科教具严格隔离**：TOC视口联动+回到顶部修复+入课置顶+生物/化学专有实验沙盘上线+排版重点升格（59套件391测试全绿）
 - 约定：文件名 `YYYY-MM-DD-<thema>.md`，头部frontmatter（`fach`可空，`tags: [EF, Meta]`）。
 
 
