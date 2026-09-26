@@ -10,99 +10,118 @@ stufe: "EF"
 
 # <德语标题> (<中文标题>)
 
-> **中文理解**：<3–6 句。这个概念是什么？在 KLP 的哪个 Inhaltsfeld / 学段？考试里以什么形态出现（题型 / Operator / AFB）？>
+> 💡 **直觉破冰与生活隐喻 (Der intuitive Anker / Alltagsanalogie)**：
+> <3–5 句。用最接地气的生活经验、物理运动或商业现象打比方，彻底消除对抽象概念的陌生感。中德双通道投影，让德国学生与中国学生都能在 30 秒内建立脑内空间直觉。>
 >
-> **Klausur-Relevanz**：<一句话说明为什么它是必考或高价值点>
+> **Klausur-Relevanz (Abitur 核心考点定位)**：
+> <一句话指明在 NRW KLP 考纲中的定位、题型分值（AFB I/II/III）及采分权重。>
 
 ---
 
-## 1. 核心概念 (Kernbegriffe)
+## 1. 核心概念与 SBF 机理解构 (Kernbegriffe & SBF-Modell)
 
-| 术语 (DE) | 中文 | English | 定义 / 公式 | 备注 |
+### 1.1 术语与中德对齐表
+| 术语 (DE) | 对应中文 | English (US/AP) | 严谨学术定义 (Fachsprache) / 核心公式 | 考场易错标记 |
 |---|---|---|---|---|
 |  |  |  |  |  |
 
----
-
-## 2. 知识结构 (Struktur)
-
-### 2.1 <子主题>
-
-<中文理解>
-
-> *Klausur-Satz*: <可直接写进答卷的德语标准句>
+### 1.2 系统 SBF 维度拆解 (Struktur - Verhalten - Funktion)
+- **Struktur (系统结构与变量)**：<系统由哪些要素/点/参数构成？如基础坐标、物理量、市场主体>
+- **Verhalten (动态行为与演化因果)**：<变量如何相互作用？极限如何逼近？曲线如何平移？因果链条是怎样的？>
+- **Funktion (宏观功能与学科价值)**：<系统最终实现了什么功能？几何斜率、物理守恒还是市场出清？>
 
 ---
 
-## 3. 解题方法 (Methoden)
+## 2. 知识结构与双重编码图解 (Struktur & Visual Schema)
 
-### 3.1 <方法名>
+```diagram
+    <此处放置 ASCII / SVG 空间图、函数拓扑图、回路因果图或受力矢量图>
+    <通过视觉空间布局 (Visual Code) 与文字因果链 (Verbal Code) 严密对齐，消除注意力分散效应>
+```
 
-**编号步骤**：
-1. <步骤> —— *KLP 工具：<这一步用的官方工具/概念>*
-2. …
+### 2.1 核心原理解构
+<结构化知识点展开，中德专业语言逐层递进>
 
-> **判据 / 决策点**：<在什么条件下选这个方法>
-
----
-
-## 4. 🇨🇳 CN-Methode
-
-<!-- 理科必填；文科写「不适用（该科无中国对照技法）」并说明理由 -->
-
-### CN-Methode: <技法名>
-- **技法内容**：
-- **DE-Anschluss**：<用到的工具，德国 KLP 是否已教>
-- **合规性**：✅ 完全合规 / ⚠️ 需注意（原因）
-- **Abitur 应用**：
-- **来源**：`[CN-教材]` / `[CN-高考]` / `[CN-课标]`
+> *Klausur-Satz (德语核心公理句)*: `<可以直接写进答卷或教材的规范学术德语句>`
 
 ---
 
-## 5. Klausur-Training
+## 3. 解题方法与决策树 (Methoden & Entscheidungsbaum)
+
+```diagram
+               [考场题目信号词 / 识别判定 (Signalwörter)]
+                                  |
+         +------------------------+------------------------+
+         |                                                 |
+  【条件分支 A: 特征关键词】                         【条件分支 B: 特征关键词】
+         |                                                 |
+  选择程序/算法 A (Schrittfolge A)                  选择程序/算法 B (Schrittfolge B)
+         |                                                 |
+  1. 第一步操作                                     1. 第一步操作
+  2. 第二步推导                                     2. 第二步推导
+  3. 最终代入检验                                   3. 最终代入检验
+```
+
+### 3.1 专家解题标准步骤
+1. **Schritt 1: Ansatz & Modellierung** —— *官方工具/前置定理：<所用定理>*
+2. **Schritt 2: Rechnerische Durchführung** —— *运算过程与推导*
+3. **Schritt 3: Interpretation & Antwortsatz** —— *结合现实情境下结论*
+
+---
+
+## 4. 🇨🇳 中德思维桥梁与技法衔接 (CN-Methode & Transfer)
+
+<!-- 理科必填：对比中国教材解法与德国 Abitur 评分逻辑的异同；文科写「不适用（该科无中国对照技法）」并说明德国特色论证要求 -->
+
+### CN-Methode: <技法名 / 思维转换桥>
+- **技法优势与直觉转换**：<中国学生熟悉的几何技巧、物理受力正交分解、公式口诀如何迁移到德国概念>
+- **DE-Anschluss (德国考纲合规对接)**：<德国老师评分看重哪些步骤，如何避免因“跳步”或“写中国习惯符号”被扣分>
+- **符号规范化对照**：`f'(x)` 德标表达、区间记号 `[a, b]` vs `]a, b[`、向量表示法等。
+
+---
+
+## 5. Klausur-Training & Erwartungshorizont (考场全真训练)
 
 ### 5.1 官方题型定位
-
-| 项 | 内容 |
+| 项 | 内容规范 |
 |---|---|
-| Aufgabenart |  |
-| Operator |  |
-| AFB |  |
-| 建议分值 / 时长 |  |
+| Aufgabenart | Klausuraufgabe (Hilfsmittelfrei / Mit GTR/CAS) |
+| Operator | [如: berechnen, begründen, beurteilen] |
+| AFB-Anforderung | AFB I (20%) + AFB II (50%) + AFB III (30%) |
+| 建议时长 / 分值 | XX 分钟 / XX BE |
 
-### 5.2 训练题
+### 5.2 德语考卷满分原句 (Klausur-Satzbausteine)
+- **定义重现句 (AFB I)**：`<德语标准定义句，直击第一问得分点>`
+- **分析推导句 (AFB II)**：`<因果链句型，Da... folgt... Daraus ergibt sich...>`
+- **情境解释与评价句 (AFB III)**：`<Im Sachzusammenhang bedeutet dies, dass... Einerseits... Andererseits...>`
 
-**Aufgabe 1** `[来源层级]`
-> <题干>
+### 5.3 全真训练题与评分细则 (Aufgabe & Musterlösung)
+**Aufgabe** `[Originalgetreuer Kontext]`
+> <题干背景与设问，紧扣真实生活情境>
 
-**Aufgabe 2** `[来源层级]`
-> <题干>
-
-### 5.3 Musterlösung
-
-**Aufgabe 1**
-1. <步骤> ✓ 得分点
-2. …
-
----
-
-## 6. Fehlerquellen（典型错误）
-
-| 类型 | 表现 | 对策 |
-|---|---|---|
-| 辨别错 |  |  |
-| 知识错 |  |  |
-| 表达错 |  |  |
+**Musterlösung mit BE-Verteilung (采分点解析)**
+1. <步骤 1 与数学公式> *(X BE)*
+2. <步骤 2 与规范文字解释> *(X BE)*
+3. <规范德语结语 (Antwortsatz)> *(X BE)*
 
 ---
 
-## 7. Vernetzung
+## 6. Fehlerquellen & 易混对抗矩阵 (Pitfalls & Kontrast)
 
-- **上游**：<前置节点 / 笔记>
-- **下游**：<后继节点 / 笔记>
-- **横向**：<跨科关联>
-- **术语卡**：<建议加入 csv 的条目>
+| 混淆概念对 / 典型错误 | 概念本质差异 | 图像/符号表征差异 | 阅卷老师扣分红线与防错绝招 |
+|---|---|---|---|
+| **概念 A vs 概念 B** |  |  |  |
+| **运算/推导高发陷阱** |  |  |  |
 
 ---
 
-> **来源标注说明**：`[已验证]` = 实际访问官方源确认 · `[据推断]` = 基于搜索摘要 · `[未获取到]` = 未找到，如实标注。
+## 7. 融会贯通与跨学科迁移 (Vernetzung & Meta-Transfer)
+
+- **学科横向联结 (Interdisziplinär)**：
+  - 🔗 物理/化学/生物联结：<微积分在运动学/反应速率/种群动态中的映射>
+  - 🔗 政治经济/社科联结：<边际成本、供求弹性在经济学模型中的应用>
+- **认知系统上下游**：
+  - 前置奠基节点：[[前置笔记文件名]]
+  - 后继进阶节点：[[进阶笔记文件名]]
+- **Anki 术语记忆卡沉淀**：
+  - `Fachbegriff (DE);中文释义;Klausur-Beispielsatz;Fach;Thema`

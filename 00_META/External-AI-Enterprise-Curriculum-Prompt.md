@@ -134,6 +134,65 @@ tags: [EF, Meta]
 
 生成的文件合入仓库前，确保满足：
 1. 文件保存在 `Lernreise/` 根目录下，文件名为 `<Fach>-<Thema>-L1.md`（纯英文 kebab-case，禁用空格和特殊字符）；
-2. 包含 `## Schritt 1` 到 `## Schritt 6` 全部 6 步；
-3. `Schritt 4` 含有有效的 `[Werkzeug: <id>]` 标签；
+2. 包含 `## Schritt 1` 到 `## Schritt 8` 全部步骤（含 `## Fehlvorstellung` 与 `## Anekdote & Fun-Fact`）；
+3. `Schritt 4` 含有有效的 `[Werkzeug: <id>]` 标签，`Schritt 5` 含有 `VERGLEICH:` 选程序/选概念；
 4. 运行 `python scripts/vault-check.py`，输出必须为 `PASS`，0 badnames，0 badglossar。
+
+---
+
+## 4. 外部 AI 六阶全息科学笔记生成提示词 (Painless-Mastery Knowledge Note Prompt)
+
+> **使用说明**：当您需要为 `01_Deutsch/` 到 `10_Sport-mündl/` 扩充核心学科笔记时，使用此 Prompt 发送给外部高级 AI，产出兼顾「德国本土高中生地道学术德语」与「中国留学生无痛认知直通」的满分笔记。
+
+```markdown
+请你扮演北威州最高级别重点文理中学（Gymnasium NRW）教研组长兼认知科学教育专家。
+你的任务是为德国高中 EF-Q2 阶段（Abitur 考纲体系）编写一篇达到【费曼直觉隐喻 + 双重编码图式 + 德语学术严谨性 (Fachsprache) + Abitur 考纲采分点】标准的终极学科知识笔记。
+目标受众：同时满足德国本土文理高中生（语言地道、深度透彻）与中国在德留学生（思维破冰、无痛上手）。
+
+### 待编写课题信息：
+- 学科 (Fach): 【填写学科，如：Mathe / Physik / Chemie / Bio / SoWi / Philosophie / Deutsch / Englisch / Musik / Sport】
+- 主题 (Thema): 【填写具体主题，如：Von der Sekante zur Tangente / Marktmechanismus und Marktversagen】
+- 考纲定位: NRW Gymnasium Sek II (KLP EF/Q1/Q2, Abitur)
+- 对应 Operator: 【如：darstellen, analysieren, beurteilen, berechnen】
+
+---
+
+### 严格的生产规范（必须严格遵循 Templates/Wissensnotiz-Template.md 六阶全融合结构）：
+
+1. **Frontmatter**:
+```yaml
+---
+fach: <Fach>
+thema: "<Thema-DE>"
+operatoren: [op1, op2]
+klausurrelevant: true
+datum: 2026-09-26
+tags: [EF, <Fach>, <Inhaltsfeld>]
+stufe: "EF"
+---
+```
+
+2. **标题与 Stage 1: 直觉破冰与生活隐喻 (Der intuitive Anker / Alltagsanalogie)**：
+   - 3-5 句。用最接地气的生活经验、物理运动或商业现象打比方，彻底消除对抽象概念的陌生感。
+   - 紧随 Klausur-Relevanz，一句话指明在 NRW Abitur 中的题型与采分权重。
+
+3. **Stage 2: 核心概念与 SBF 系统机理解构 (Kernbegriffe & SBF-Modell)**：
+   - 中德术语对齐表（术语 DE、中文、English、学术定义/公式、易错点）。
+   - SBF 维度拆解：系统结构 (Struktur: 变量/要素) -> 动态行为 (Verhalten: 因果/机制) -> 宏观功能 (Funktion: 价值/出清/守恒)。
+
+4. **Stage 3: 知识结构与双重编码图解 (Struktur & Visual Schema)**：
+   - 必须包含严整的 ASCII/SVG 拓扑图、回路因果图或受力推导图，消除注意力分散效应。
+   - 结构化展开核心原理，并附带一条加粗高亮的 *Klausur-Satz (德语核心公理句)*。
+
+5. **Stage 4: 解题方法与考场决策树 (Methoden & Entscheidungsbaum)**：
+   - 包含 ASCII 决策树（根据题干信号词判断走哪条解题程序）。
+   - 规范的三步专家解题步骤（Ansatz -> Durchführung -> Interpretation）。
+
+6. **Stage 5: 中德思维桥梁与技法衔接 (CN-Methode & Transfer)**：
+   - 理科对比中国教材解法与德国 Abitur 评分逻辑的异同；避免因格式或符号差异失分。
+
+7. **Stage 6: Klausur-Training、易混对抗矩阵与跨科融通 (Klausur, Kontrast & Vernetzung)**：
+   - 给出全真题干与按 BE 点数严格拆解的 Musterlösung；
+   - 必须提供「易混概念对抗矩阵 (Kontrast-Matrix)」，对比高发混淆概念并标明阅卷扣分红线；
+   - 跨学科横向联结 (Interdisziplinär) 与上下游笔记引用。
+```

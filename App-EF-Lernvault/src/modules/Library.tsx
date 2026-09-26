@@ -86,7 +86,6 @@ export default function Library({
   const [pageSize, setPageSize] = useState<number>(8);
   const [filterAfb, setFilterAfb] = useState<"all" | "afb1" | "afb2" | "afb3">("all");
   const [klausurOnly, setKlausurOnly] = useState<boolean>(false);
-  const [viewMode, setViewMode] = useState<"split" | "gallery">("split");
 
   // Subject counts for the 10-Fach badge system
   const fachCounts = useMemo(() => {
@@ -402,32 +401,6 @@ export default function Library({
             </div>
           </div>
 
-          <div className="flex items-center rounded-[var(--radius)] border border-[var(--line)] bg-[var(--surface)] p-0.5">
-            <button
-              type="button"
-              onClick={() => setViewMode("split")}
-              className={`px-1.5 py-0.2 rounded-[var(--radius)] transition-colors cursor-pointer ${
-                viewMode === "split"
-                  ? "bg-[var(--paper)] text-[var(--ink)] font-bold"
-                  : "text-[var(--gray)] hover:text-[var(--ink)]"
-              }`}
-              title="Split View"
-            >
-              List
-            </button>
-            <button
-              type="button"
-              onClick={() => setViewMode("gallery")}
-              className={`px-1.5 py-0.2 rounded-[var(--radius)] transition-colors cursor-pointer ${
-                viewMode === "gallery"
-                  ? "bg-[var(--paper)] text-[var(--ink)] font-bold"
-                  : "text-[var(--gray)] hover:text-[var(--ink)]"
-              }`}
-              title="Grid View"
-            >
-              Grid
-            </button>
-          </div>
         </div>
 
         {/* Active Search Filter */}
@@ -511,140 +484,100 @@ export default function Library({
         />
       </div>
 
-      {/* Right Column: Centered Reading Column (~46rem) OR Gallery Grid */}
+      {/* Right Column: Centered Reading Column (~46rem) */}
       <div className="flex-1 min-w-0">
-        {viewMode === "split" ? (
-          <div key={open?.id} className="tab-enter mx-auto max-w-[46rem] bg-[var(--surface)] border border-[var(--line)] rounded-[var(--radius)] p-5 sm:p-8">
-            {open ? (
-              <article>
-                {/* Header Metadata with Next/Prev Switcher */}
-                <div className="flex flex-wrap items-center justify-between gap-2 border-b border-[var(--line)] pb-3 mb-4 text-xs font-mono text-[var(--gray)]">
-                  <div className="flex flex-wrap items-center gap-1.5">
-                    <span className="font-medium text-[var(--ink)]">{open.fach}</span>
-                    <span>·</span>
-                    <div className="flex flex-wrap gap-1.5">
-                      {open.operatoren.map((op) => (
-                        <span
-                          key={op}
-                          className="border border-[var(--line)] px-1.5 py-0.5 text-[11px] text-[var(--gray)] rounded-sm"
-                        >
-                          {op}
-                        </span>
-                      ))}
-                    </div>
-                    {open.tags && open.tags.length > 0 && (
-                      <>
-                        <span>·</span>
-                        <div className="flex flex-wrap gap-1">
-                          {open.tags.map((tg) => (
-                            <span
-                              key={tg}
-                              className="border border-[var(--line)] bg-[var(--paper)] px-1.5 py-0.5 text-[10px] font-mono text-[var(--gray)] rounded-[var(--radius)]"
-                            >
-                              #{tg}
-                            </span>
-                          ))}
-                        </div>
-                      </>
-                    )}
-                    {open.klausurrelevant && (
-                      <>
-                        <span>·</span>
-                        <span className="border border-[var(--accent)] text-[var(--accent)] text-[10px] font-mono uppercase px-1.5 py-0.5 rounded-[var(--radius)]">
-                          Klausurrelevant
-                        </span>
-                      </>
-                    )}
+        <div key={open?.id} className="tab-enter mx-auto max-w-[46rem] bg-[var(--surface)] border border-[var(--line)] rounded-[var(--radius)] p-5 sm:p-8">
+          {open ? (
+            <article>
+              {/* Header Metadata with Next/Prev Switcher */}
+              <div className="flex flex-wrap items-center justify-between gap-2 border-b border-[var(--line)] pb-3 mb-4 text-xs font-mono text-[var(--gray)]">
+                <div className="flex flex-wrap items-center gap-1.5">
+                  <span className="font-medium text-[var(--ink)]">{open.fach}</span>
+                  <span>·</span>
+                  <div className="flex flex-wrap gap-1.5">
+                    {open.operatoren.map((op) => (
+                      <span
+                        key={op}
+                        className="border border-[var(--line)] px-1.5 py-0.5 text-[11px] text-[var(--gray)] rounded-sm"
+                      >
+                        {op}
+                      </span>
+                    ))}
                   </div>
-
-                  <div className="flex items-center gap-1">
-                    <span className="text-[11px] mr-1">
-                      {currentNoteIndex >= 0 ? `${currentNoteIndex + 1}/${list.length}` : ""}
-                    </span>
-                    <button
-                      type="button"
-                      onClick={handlePrevNote}
-                      disabled={currentNoteIndex <= 0}
-                      className={`px-1.5 py-0.5 rounded-[var(--radius)] border border-[var(--line)] bg-[var(--paper)] text-xs transition-colors ${
-                        currentNoteIndex <= 0
-                          ? "opacity-30 cursor-not-allowed"
-                          : "hover:border-[var(--ink)] cursor-pointer text-[var(--ink)]"
-                      }`}
-                      title="Vorherige (j/k)"
-                    >
-                      ←
-                    </button>
-                    <button
-                      type="button"
-                      onClick={handleNextNote}
-                      disabled={currentNoteIndex >= list.length - 1}
-                      className={`px-1.5 py-0.5 rounded-[var(--radius)] border border-[var(--line)] bg-[var(--paper)] text-xs transition-colors ${
-                        currentNoteIndex >= list.length - 1
-                          ? "opacity-30 cursor-not-allowed"
-                          : "hover:border-[var(--ink)] cursor-pointer text-[var(--ink)]"
-                      }`}
-                      title="Nächste (j/k)"
-                    >
-                      →
-                    </button>
-                  </div>
+                  {open.tags && open.tags.length > 0 && (
+                    <>
+                      <span>·</span>
+                      <div className="flex flex-wrap gap-1">
+                        {open.tags.map((tg) => (
+                          <span
+                            key={tg}
+                            className="border border-[var(--line)] bg-[var(--paper)] px-1.5 py-0.5 text-[10px] font-mono text-[var(--gray)] rounded-[var(--radius)]"
+                          >
+                            #{tg}
+                          </span>
+                        ))}
+                      </div>
+                    </>
+                  )}
+                  {open.klausurrelevant && (
+                    <>
+                      <span>·</span>
+                      <span className="border border-[var(--accent)] text-[var(--accent)] text-[10px] font-mono uppercase px-1.5 py-0.5 rounded-[var(--radius)]">
+                        Klausurrelevant
+                      </span>
+                    </>
+                  )}
                 </div>
 
-                {/* Title & source line */}
-                <h1 className="font-serif text-2xl font-normal text-[var(--ink)] tracking-tight mb-1 break-words">
-                  {open.thema}
-                </h1>
-                <p className="font-sans text-sm text-[var(--gray)] mb-6 pb-4 border-b border-[var(--line)] break-words">
-                  {open.sub}
-                </p>
-
-                <Blocks blocks={open.blocks} />
-              </article>
-            ) : (
-              <div className="py-12 text-center text-sm font-sans text-[var(--gray)]">
-                Keine Treffer / 无结果
+                <div className="flex items-center gap-1">
+                  <span className="text-[11px] mr-1">
+                    {currentNoteIndex >= 0 ? `${currentNoteIndex + 1}/${list.length}` : ""}
+                  </span>
+                  <button
+                    type="button"
+                    onClick={handlePrevNote}
+                    disabled={currentNoteIndex <= 0}
+                    className={`px-1.5 py-0.5 rounded-[var(--radius)] border border-[var(--line)] bg-[var(--paper)] text-xs transition-colors ${
+                      currentNoteIndex <= 0
+                        ? "opacity-30 cursor-not-allowed"
+                        : "hover:border-[var(--ink)] cursor-pointer text-[var(--ink)]"
+                    }`}
+                    title="Vorherige (j/k)"
+                  >
+                    ←
+                  </button>
+                  <button
+                    type="button"
+                    onClick={handleNextNote}
+                    disabled={currentNoteIndex >= list.length - 1}
+                    className={`px-1.5 py-0.5 rounded-[var(--radius)] border border-[var(--line)] bg-[var(--paper)] text-xs transition-colors ${
+                      currentNoteIndex >= list.length - 1
+                        ? "opacity-30 cursor-not-allowed"
+                        : "hover:border-[var(--ink)] cursor-pointer text-[var(--ink)]"
+                    }`}
+                    title="Nächste (j/k)"
+                  >
+                    →
+                  </button>
+                </div>
               </div>
-            )}
-          </div>
-        ) : (
-          <div className="space-y-4">
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
-              {paginatedList.map((n) => (
-                <div
-                  key={n.id}
-                  onClick={() => handleSelectNote(n.id)}
-                  className="group flex flex-col justify-between rounded-[var(--radius)] border border-[var(--line)] bg-[var(--surface)] p-3.5 hover:border-[var(--ink)] transition-all cursor-pointer"
-                >
-                  <div>
-                    <div className="flex items-center justify-between text-xs font-mono text-[var(--gray)] border-b border-[var(--line)] pb-1 mb-2">
-                      <span className="font-bold text-[var(--accent)]">{n.fach}</span>
-                      {n.klausurrelevant && (
-                        <span className="text-[10px] text-[var(--accent)] border border-[var(--accent)]/40 px-1 rounded-[var(--radius)]">
-                          Klausur
-                        </span>
-                      )}
-                    </div>
-                    <h3 className="font-serif text-sm font-semibold text-[var(--ink)] group-hover:text-[var(--accent)] transition-colors line-clamp-2 leading-snug">
-                      {n.thema}
-                    </h3>
-                    <p className="mt-1 font-sans text-xs text-[var(--gray)] line-clamp-2">
-                      {n.sub}
-                    </p>
-                  </div>
 
-                  <div className="mt-3 pt-2 border-t border-[var(--line)] flex items-center justify-between text-xs font-mono text-[var(--gray)]">
-                    <span className="text-[10px]">
-                      {n.operatoren[0] || ""}
-                    </span>
-                    <span className="text-[var(--ink)] group-hover:translate-x-0.5 transition-transform">
-                      →
-                    </span>
-                  </div>
-                </div>
-              ))}
+              {/* Title & source line */}
+              <h1 className="font-serif text-2xl font-normal text-[var(--ink)] tracking-tight mb-1 break-words">
+                {open.thema}
+              </h1>
+              <p className="font-sans text-sm text-[var(--gray)] mb-6 pb-4 border-b border-[var(--line)] break-words">
+                {open.sub}
+              </p>
+
+              <Blocks blocks={open.blocks} />
+            </article>
+          ) : (
+            <div className="py-12 text-center text-sm font-sans text-[var(--gray)]">
+              Keine Treffer / 无结果
             </div>
-          </div>
-        )}
+          )}
+        </div>
       </div>
     </div>
   );

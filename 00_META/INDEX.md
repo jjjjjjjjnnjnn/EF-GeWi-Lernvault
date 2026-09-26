@@ -119,6 +119,7 @@
 - Kurvendiskussion & Polynome — [Ganzrationale-Funktionen-Kurvendiskussion](../03_Mathe/Ganzrationale-Funktionen-Kurvendiskussion.md)（多项式函数性质/极值拐点/实际极值问题建模）
 - Steckbriefaufgaben & Funktionsrekonstruktion — [Steckbriefaufgaben-und-Funktionsanpassung](../03_Mathe/Steckbriefaufgaben-und-Funktionsanpassung.md)（几何条件翻译/代数方程组/四步设解）
 - ZKE 2027 Training — [Mathe-ZKE-2027-Training](../03_Mathe/Mathe-ZKE-2027-Training.md)（Teil A免工具+Teil B WTR/CAS，4自编题+解法）
+- Sekante zu Tangente & Lokale Änderungsrate — [Sekante-zu-Tangente-Lokale-Aenderungsrate](../03_Mathe/Sekante-zu-Tangente-Lokale-Aenderungsrate.md)（六阶全息标杆笔记：割线逼近切线极限演变/SBF机理/决策树/满分得分句/对抗矩阵）
 - CN Formelhandbuch DE-CN-EN · Tricks · Training — [CN-Mathe-Formelhandbuch](../03_Mathe/CN-Mathe-Formelhandbuch.md) · [CN-Mathe-Tricks](../03_Mathe/CN-Mathe-Tricks.md) · [CN-Mathe-Training](../03_Mathe/Klausur-Training/CN-Mathe-Training.md)（CN方法↔ZKE论证）
 
 ### Chemie
