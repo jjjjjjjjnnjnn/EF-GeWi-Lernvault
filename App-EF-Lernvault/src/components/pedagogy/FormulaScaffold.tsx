@@ -1,5 +1,6 @@
 import { useState } from "react";
 import type { Lang } from "../../i18n";
+import MathHtml from "../MathHtml";
 
 interface FormulaScaffoldProps {
   lang?: Lang;
@@ -102,14 +103,14 @@ export default function FormulaScaffold({
           <span className="font-mono text-xs font-semibold text-[var(--ink)]">
             {lang === "de" ? "MINT 4-Schritte-Lösungsweg" : "理科四步规范解题手架"}
           </span>
-          <span className="font-mono text-[var(--text-meta)] text-[var(--gray)]">
+          <span className="font-mono text-xs text-[var(--gray)]">
             ({fach})
           </span>
         </div>
         <button
           type="button"
           onClick={loadPreset}
-          className="rounded-[var(--radius)] border border-[var(--line)] bg-[var(--paper-subtle)] px-2 py-0.5 font-mono text-[var(--text-meta)] text-[var(--ink)] hover:border-[var(--accent)] transition-colors"
+          className="rounded-[var(--radius)] border border-[var(--line)] bg-[var(--paper-subtle)] px-2 py-0.5 font-mono text-xs text-[var(--ink)] hover:border-[var(--accent)] transition-colors"
         >
           {lang === "de" ? "Beispiel laden" : "载入典型范例"}
         </button>
@@ -119,7 +120,7 @@ export default function FormulaScaffold({
         {/* Schritt 1: Gegeben & Gesucht */}
         <div className="space-y-1.5">
           <label className="block">
-            <span className="font-mono text-[var(--text-meta)] text-[var(--gray)] uppercase tracking-wider">
+            <span className="font-mono text-xs text-[var(--gray)] uppercase tracking-wider">
               1. Gegeben / 已知量 (mit Einheiten):
             </span>
             <input
@@ -130,8 +131,16 @@ export default function FormulaScaffold({
               className="mt-1 w-full rounded-[var(--radius)] border border-[var(--line)] bg-[var(--surface)] px-2.5 py-1 text-xs text-[var(--ink)] placeholder:text-[var(--gray)] focus:border-[var(--accent)]"
             />
           </label>
+          {gegeben.trim() && (gegeben.includes("=") || gegeben.includes("^")) && (
+            <div className="mt-1 px-2 py-1 rounded-[var(--radius)] bg-[var(--paper-subtle)] border border-[var(--line)] text-xs font-serif text-[var(--ink)] flex items-center gap-2">
+              <span className="font-mono text-xs text-[var(--gray)] shrink-0">Vorschau:</span>
+              <div className="overflow-x-auto">
+                <MathHtml code={gegeben.replace(/\s*,\s*/g, ",\\; ")} display={false} cacheKey={`scaffold-g:${gegeben}`} />
+              </div>
+            </div>
+          )}
           <label className="block">
-            <span className="font-mono text-[var(--text-meta)] text-[var(--gray)] uppercase tracking-wider">
+            <span className="font-mono text-xs text-[var(--gray)] uppercase tracking-wider">
               Gesucht / 待求量:
             </span>
             <input
@@ -147,7 +156,7 @@ export default function FormulaScaffold({
         {/* Schritt 2: Formelansatz */}
         <div className="space-y-1.5">
           <label className="block">
-            <span className="font-mono text-[var(--text-meta)] text-[var(--gray)] uppercase tracking-wider">
+            <span className="font-mono text-xs text-[var(--gray)] uppercase tracking-wider">
               2. Formelansatz / 公式定理 (LaTeX):
             </span>
             <input
@@ -158,8 +167,16 @@ export default function FormulaScaffold({
               className="mt-1 w-full rounded-[var(--radius)] border border-[var(--line)] bg-[var(--surface)] px-2.5 py-1 font-mono text-xs text-[var(--ink)] placeholder:text-[var(--gray)] focus:border-[var(--accent)]"
             />
           </label>
+          {formel.trim() && (
+            <div className="mt-1 px-2 py-1.5 rounded-[var(--radius)] border border-[var(--line)] bg-[var(--paper-subtle)] flex items-center justify-between gap-2">
+              <span className="font-mono text-xs text-[var(--gray)] shrink-0">Vorschau / 公式预览:</span>
+              <div className="flex-1 overflow-x-auto text-center px-1">
+                <MathHtml code={formel} display={false} cacheKey={`scaffold-f:${formel}`} />
+              </div>
+            </div>
+          )}
           <label className="block">
-            <span className="font-mono text-[var(--text-meta)] text-[var(--gray)] uppercase tracking-wider">
+            <span className="font-mono text-xs text-[var(--gray)] uppercase tracking-wider">
               Ziel-Einheit / 预期单位:
             </span>
             <input
@@ -176,7 +193,7 @@ export default function FormulaScaffold({
       {/* Schritt 3 & 4 */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-3 pt-1">
         <label className="block">
-          <span className="font-mono text-[var(--text-meta)] text-[var(--gray)] uppercase tracking-wider">
+          <span className="font-mono text-xs text-[var(--gray)] uppercase tracking-wider">
             3. Rechnung / 代入与单位换算:
           </span>
           <textarea
@@ -188,7 +205,7 @@ export default function FormulaScaffold({
           />
         </label>
         <label className="block">
-          <span className="font-mono text-[var(--text-meta)] text-[var(--gray)] uppercase tracking-wider">
+          <span className="font-mono text-xs text-[var(--gray)] uppercase tracking-wider">
             4. Antwortsatz / 物理/数学意义结论:
           </span>
           <textarea

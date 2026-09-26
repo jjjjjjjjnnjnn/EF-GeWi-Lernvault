@@ -113,7 +113,12 @@ export function localModelName(): string | null {
 
 export async function chat(
   messages: ChatMsg[],
-  opts?: { temperature?: number; maxTokens?: number; onLocalProgress?: (pct: number, text: string) => void }
+  opts?: {
+    temperature?: number;
+    maxTokens?: number;
+    image?: string;
+    onLocalProgress?: (pct: number, text: string) => void;
+  }
 ): Promise<string> {
   const cfg = loadAiConfig();
 
@@ -122,8 +127,17 @@ export async function chat(
   if (cfg.engine === "local") {
     const modelId = await ensureLocalEngine(opts?.onLocalProgress);
     if (!localEngine) throw new LocalLoadError("Lokales Modell nicht bereit");
+    const localMsgs = messages.map((m, idx) => {
+      if (idx === messages.length - 1 && opts?.image && m.role === "user") {
+        return {
+          ...m,
+          content: `${m.content}\n[Hinweis: Ein Bild/Foto der handschriftlichen Lösung wurde beigefügt]`,
+        };
+      }
+      return m;
+    });
     const res = await localEngine.chat.completions.create({
-      messages,
+      messages: localMsgs,
       temperature: opts?.temperature ?? 0.3,
       max_tokens: opts?.maxTokens ?? 600,
     });
@@ -140,13 +154,25 @@ export async function chat(
   const headers: Record<string, string> = { "Content-Type": "application/json" };
   if (cfg.apiKey.trim()) headers.Authorization = `Bearer ${cfg.apiKey.trim()}`;
   const sanitized = sanitizeChatMessages(messages);
+  const apiMessages = sanitized.map((m, idx) => {
+    if (idx === sanitized.length - 1 && opts?.image && m.role === "user") {
+      return {
+        role: m.role,
+        content: [
+          { type: "text", text: m.content },
+          { type: "image_url", image_url: { url: opts.image } },
+        ],
+      };
+    }
+    return m;
+  });
   const fetchUrl = resolveAiRequestUrl(`${base.replace(/\/$/, "")}/chat/completions`);
   const res = await fetch(fetchUrl, {
     method: "POST",
     headers,
     body: JSON.stringify({
       model: cfg.model.trim() || preset.defaultModel,
-      messages: sanitized,
+      messages: apiMessages,
       temperature: opts?.temperature ?? 0.3,
       max_tokens: opts?.maxTokens ?? 600,
     }),

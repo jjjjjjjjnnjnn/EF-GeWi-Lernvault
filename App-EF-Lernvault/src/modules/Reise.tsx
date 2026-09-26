@@ -32,6 +32,7 @@ import FormulaScaffold from "../components/pedagogy/FormulaScaffold";
 import OralExamTimer from "../components/pedagogy/OralExamTimer";
 import { MarktMechanismusSim } from "../components/pedagogy/MarktMechanismusSim";
 import { KinematikSim } from "../components/pedagogy/KinematikSim";
+import ImageAnswerUpload from "../components/ImageAnswerUpload";
 
 function getAutoToolForContext(fach: string, thema: string): string | null {
   const f = (fach || "").toLowerCase();
@@ -229,6 +230,7 @@ export default function ReiseModule({
 
   // Step 2 (Ausprobieren) state
   const [tryInput, setTryInput] = useState("");
+  const [tryImage, setTryImage] = useState<string | null>(null);
   const [tryShowHelp, setTryShowHelp] = useState(false);
   const [tryFeedback, setTryFeedback] = useState<string | null>(null);
 
@@ -242,6 +244,7 @@ export default function ReiseModule({
 
   // Step 4 (Szenario) state
   const [szenarioText, setSzenarioText] = useState("");
+  const [szenarioImage, setSzenarioImage] = useState<string | null>(null);
   const [szenarioSec, setSzenarioSec] = useState(0);
   const [szenarioRunning, setSzenarioRunning] = useState(false);
   const [rubricChecks, setRubricChecks] = useState<boolean[]>([]);
@@ -286,9 +289,9 @@ export default function ReiseModule({
       ? "KI-Engine ist aus — in AI-Einstellungen (Zahnrad) einschalten: API-direkt oder Lokal."
       : "AI引擎未开启——点顶栏齿轮去AI设置打开：API直连或本地模型。";
 
-  const askKi = async (msgs: ChatMsg[]): Promise<string | null> => {
+  const askKi = async (msgs: ChatMsg[], opts?: { image?: string }): Promise<string | null> => {
     try {
-      return await chat(msgs, { temperature: 0.3, maxTokens: 600 });
+      return await chat(msgs, { temperature: 0.3, maxTokens: 600, ...opts });
     } catch {
       return null;
     }
@@ -300,6 +303,7 @@ export default function ReiseModule({
       setStepIdx(0);
       setUnlocked([0]);
       setTryInput("");
+      setTryImage(null);
       setTryShowHelp(false);
       setTryFeedback(null);
       setCheckPassed({});
@@ -307,6 +311,7 @@ export default function ReiseModule({
       setCheckText({});
       setCheckScore({});
       setSzenarioText("");
+      setSzenarioImage(null);
       setSzenarioSec(0);
       setSzenarioRunning(false);
       const step4 = activeCourse.schritte.find((s) => s.typ === "szenario") as
@@ -978,6 +983,13 @@ export default function ReiseModule({
                     placeholder="Hier zuordnen oder Stichpunkte eingeben..."
                     className="w-full border border-[var(--line)] p-3 text-sm font-sans rounded-[var(--radius)] focus:border-[var(--accent)] focus:outline-none"
                   />
+                  <ImageAnswerUpload
+                    lang={lang}
+                    onImageSelected={setTryImage}
+                    onTextTranscribed={(transcription) => {
+                      setTryInput((prev) => (prev.trim() ? prev + "\n\n" + transcription : transcription));
+                    }}
+                  />
                 </div>
 
                 {tryFeedback && (
@@ -990,8 +1002,12 @@ export default function ReiseModule({
                   <button
                     type="button"
                     onClick={() => {
-                      if (!tryInput.trim()) {
-                        setTryFeedback("Bitte zuerst einen Antwortversuch eingeben.");
+                      if (!tryInput.trim() && !tryImage) {
+                        setTryFeedback(
+                          lang === "de"
+                            ? "Bitte zuerst einen Antwortversuch eingeben oder Bild hochladen."
+                            : "请先输入作答或上传手写作答图片。"
+                        );
                         return;
                       }
                       const st = currentSchritt as SchrittAusprobieren;
@@ -1002,7 +1018,13 @@ export default function ReiseModule({
                       } else {
                         setTryFeedback("KI liest mit … / AI正在点评…");
                         void askKi(
-                          buildTryFeedbackPrompt(activeCourse.thema, st.aufgabe, st.antwort ?? "", tryInput)
+                          buildTryFeedbackPrompt(
+                            activeCourse.thema,
+                            st.aufgabe,
+                            st.antwort ?? "",
+                            tryInput || (tryImage ? "[Siehe hochgeladenes Bild / 见上传手写作答]" : "")
+                          ),
+                          tryImage ? { image: tryImage } : undefined
                         ).then((r) =>
                           setTryFeedback(
                             r ??
@@ -1299,6 +1321,13 @@ export default function ReiseModule({
                     placeholder="Beginne mit einer klaren These..."
                     className="w-full border border-[var(--line)] p-3 text-sm font-serif rounded-[var(--radius)] focus:border-[var(--accent)] focus:outline-none"
                   />
+                  <ImageAnswerUpload
+                    lang={lang}
+                    onImageSelected={setSzenarioImage}
+                    onTextTranscribed={(transcription) => {
+                      setSzenarioText((prev) => (prev.trim() ? prev + "\n\n" + transcription : transcription));
+                    }}
+                  />
                 </div>
 
                 {/* Rubric Checklist */}
@@ -1328,7 +1357,7 @@ export default function ReiseModule({
                   <button
                     type="button"
                     onClick={() => {
-                      if (!szenarioText.trim() || szenarioScore.loading) return;
+                      if ((!szenarioText.trim() && !szenarioImage) || szenarioScore.loading) return;
                       const sc = currentSchritt as SchrittSzenario;
                       if (!kiOn()) return;
                       setSzenarioScore((prev) => ({ ...prev, loading: true }));
@@ -1338,8 +1367,9 @@ export default function ReiseModule({
                           activeCourse.thema,
                           sc.situation,
                           sc.rubricPoints,
-                          szenarioText
-                        )
+                          szenarioText || (szenarioImage ? "[Siehe hochgeladenes Dokument / 见上传手写与作答图]" : "")
+                        ),
+                        szenarioImage ? { image: szenarioImage } : undefined
                       ).then((r) =>
                         setSzenarioScore((prev) => ({
                           loading: false,
@@ -1348,10 +1378,10 @@ export default function ReiseModule({
                         }))
                       );
                     }}
-                    disabled={!szenarioText.trim() || szenarioScore.loading || kiOff}
+                    disabled={(!szenarioText.trim() && !szenarioImage) || szenarioScore.loading || kiOff}
                     title={kiOff ? kiOffTitle : undefined}
                     className={`px-4 py-2 font-mono text-xs uppercase rounded-[var(--radius)] border transition-all ${
-                      !szenarioText.trim() || szenarioScore.loading || kiOff
+                      (!szenarioText.trim() && !szenarioImage) || szenarioScore.loading || kiOff
                         ? "border-[var(--line)] text-[var(--gray)] cursor-not-allowed"
                         : "border-[var(--accent)] text-[var(--accent)] hover:bg-[var(--accent)]/5 active:scale-95"
                     }`}
