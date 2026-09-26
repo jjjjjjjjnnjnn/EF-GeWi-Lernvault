@@ -847,6 +847,7 @@ export default function ReiseModule({
                 <div className="prose max-w-none">
                   <Blocks
                     blocks={(currentSchritt as SchrittEntdecken).blocks}
+                    pureGerman={lang === "de"}
                     renderDiagram={(spec, i) => (
                       <DiagramFig
                         spec={spec}
@@ -921,14 +922,14 @@ export default function ReiseModule({
                   <button
                     type="button"
                     onClick={() => goNextOrFinish(5)}
-                    className="px-5 py-2 font-mono text-xs uppercase tracking-wider bg-[var(--ink)] text-[var(--paper)] hover:bg-[var(--accent)] rounded-[var(--radius)] transition-colors"
+                    className="px-4 py-2 font-mono text-xs uppercase tracking-wider bg-[var(--ink)] text-[var(--paper)] hover:bg-[var(--accent)] rounded-[var(--radius)] transition-colors whitespace-normal text-center"
                   >
                     {isLastStep
                       ? lang === "de"
                         ? "Abschließen (+5 XP)"
                         : "完成课程 (+5 XP)"
                       : lang === "de"
-                      ? "Verstanden & Weiter (+5 XP) →"
+                      ? "Weiter (+5 XP) →"
                       : "已理解，下一步 (+5 XP) →"}
                   </button>
                 </div>
@@ -961,7 +962,11 @@ export default function ReiseModule({
                       className="text-xs font-mono text-[var(--accent)] hover:underline"
                     >
                       {tryShowHelp
-                        ? "[- Hilfe verbergen / 隐藏提示]"
+                        ? lang === "de"
+                          ? "[- Hilfe verbergen]"
+                          : "[- Hilfe verbergen / 隐藏提示]"
+                        : lang === "de"
+                        ? "[+ Hilfe anzeigen]"
                         : "[+ Hilfe anzeigen / 显示解题提示]"}
                     </button>
                     {tryShowHelp && (
@@ -974,13 +979,13 @@ export default function ReiseModule({
 
                 <div className="space-y-2">
                   <label className="block text-xs font-mono uppercase text-[var(--gray)]">
-                    Deine Antwort / 你的作答：
+                    {lang === "de" ? "Deine Antwort:" : "Deine Antwort / 你的作答："}
                   </label>
                   <textarea
                     rows={3}
                     value={tryInput}
                     onChange={(e) => setTryInput(e.target.value)}
-                    placeholder="Hier zuordnen oder Stichpunkte eingeben..."
+                    placeholder={lang === "de" ? "Hier Antwort eingeben …" : "Hier zuordnen oder Stichpunkte eingeben..."}
                     className="w-full border border-[var(--line)] p-3 text-sm font-sans rounded-[var(--radius)] focus:border-[var(--accent)] focus:outline-none"
                   />
                   <ImageAnswerUpload
@@ -1013,10 +1018,12 @@ export default function ReiseModule({
                       const st = currentSchritt as SchrittAusprobieren;
                       if (!kiOn()) {
                         setTryFeedback(
-                          "Versuch notiert — prüfe dich mit der Musterlösung / 已记录作答，对照解析自查。"
+                          lang === "de"
+                            ? "Versuch notiert — prüfe dich mit der Musterlösung."
+                            : "Versuch notiert — prüfe dich mit der Musterlösung / 已记录作答，对照解析自查。"
                         );
                       } else {
-                        setTryFeedback("KI liest mit … / AI正在点评…");
+                        setTryFeedback(lang === "de" ? "KI liest mit …" : "KI liest mit … / AI正在点评…");
                         void askKi(
                           buildTryFeedbackPrompt(
                             activeCourse.thema,
@@ -1028,13 +1035,15 @@ export default function ReiseModule({
                         ).then((r) =>
                           setTryFeedback(
                             r ??
-                              "Versuch notiert — prüfe dich mit der Musterlösung / 已记录作答，对照解析自查。"
+                              (lang === "de"
+                                ? "Versuch notiert — prüfe dich mit der Musterlösung."
+                                : "Versuch notiert — prüfe dich mit der Musterlösung / 已记录作答，对照解析自查。")
                           )
                         );
                       }
                       unlockNextStep(stepIdx + 1, 15);
                     }}
-                    className="px-4 py-2 font-mono text-xs uppercase border border-[var(--line)] hover:border-[var(--ink)] rounded-[var(--radius)] transition-colors text-[var(--ink)]"
+                    className="px-4 py-2 font-mono text-xs uppercase border border-[var(--line)] hover:border-[var(--ink)] rounded-[var(--radius)] transition-colors text-[var(--ink)] whitespace-normal text-center"
                   >
                     {lang === "de" ? "Antwort prüfen" : "检查答案"}
                   </button>
@@ -1333,7 +1342,7 @@ export default function ReiseModule({
                 {/* Rubric Checklist */}
                 <div className="border border-[var(--line)] rounded-[var(--radius)] bg-[var(--paper-subtle)] p-4 space-y-2">
                   <div className="text-xs font-mono uppercase text-[var(--gray)] tracking-wider mb-1">
-                    Rubric / 自评检查点（勾选核对）：
+                    {lang === "de" ? "Kriterienkatalog (Rubric):" : "Rubric / 自评检查点（勾选核对）："}
                   </div>
                   {(currentSchritt as SchrittSzenario).rubricPoints.map((p, i) => (
                     <label key={i} className="flex items-start gap-2.5 text-xs font-mono text-[var(--ink)] cursor-pointer">
@@ -1367,13 +1376,13 @@ export default function ReiseModule({
                           activeCourse.thema,
                           sc.situation,
                           sc.rubricPoints,
-                          szenarioText || (szenarioImage ? "[Siehe hochgeladenes Dokument / 见上传手写与作答图]" : "")
+                          szenarioText || (szenarioImage ? (lang === "de" ? "[Siehe hochgeladenes Bild]" : "[Siehe hochgeladenes Dokument / 见上传手写与作答图]") : "")
                         ),
                         szenarioImage ? { image: szenarioImage } : undefined
                       ).then((r) =>
                         setSzenarioScore((prev) => ({
                           loading: false,
-                          text: r ?? "(KI derzeit nicht erreichbar. / AI暂时不可用。)",
+                          text: r ?? (lang === "de" ? "(KI derzeit nicht erreichbar.)" : "(KI derzeit nicht erreichbar. / AI暂时不可用。)"),
                           rounds: prev.rounds + 1,
                         }))
                       );
@@ -1395,7 +1404,7 @@ export default function ReiseModule({
                           ? `KI bewerten${kiOff ? kiOffSuffix : ""}`
                           : `AI批改${kiOff ? kiOffSuffix : ""}`
                         : lang === "de"
-                          ? `Überarbeitet? Erneut prüfen (${szenarioScore.rounds})`
+                          ? `Erneut prüfen (${szenarioScore.rounds})`
                           : `改完再评（第${szenarioScore.rounds}轮）`}
                   </button>
                 </div>

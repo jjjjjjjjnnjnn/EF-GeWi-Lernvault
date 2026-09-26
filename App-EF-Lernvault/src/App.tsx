@@ -699,7 +699,7 @@ export default function App() {
       {/* Main Workspace */}
       <main className="flex min-w-0 flex-1 flex-col overflow-hidden bg-[var(--paper)]">
         {/* Top bar with hairline divider */}
-        <header className="flex h-11 shrink-0 flex-wrap items-center justify-between gap-3 border-b border-[var(--line)] bg-[var(--paper)] px-4 py-1.5 sm:px-6">
+        <header className="flex min-h-11 h-auto shrink-0 flex-wrap items-center justify-between gap-2.5 border-b border-[var(--line)] bg-[var(--paper)] px-4 py-1.5 sm:px-6">
           <div className="flex items-center gap-2">
             <span className="font-mono text-[var(--text-meta)] uppercase tracking-wider text-[var(--gray)]">
               {currentWorkspace === "lernen"
