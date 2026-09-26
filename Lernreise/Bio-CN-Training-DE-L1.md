@@ -16,32 +16,61 @@ version: Lesson-v3
 <!-- Lesson v3 9-Schritt-Architektur: Schritt 1 bis 8 feste Struktur; Fehlvorstellung zwischen Schritt 6 und 7 (Parser ueberspringt, zaehlt nicht); interaktives [Werkzeug: <id>]; Gating: check/szenario nicht bestanden = Weiter deaktiviert; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
 ## Schritt 1 — entdecken
-
 ZIELE (drei messbare Ziele dieser Lektion):
 
 1. Du kannst eine Materialaufgabe im Zeitlimit nach AFB I zu AFB III gliedern und jeden Abschnitt an den Punkten des Erwartungshorizonts ausrichten.
 2. Du kannst eine Kausalkette mit weil und deshalb schreiben und Beschreibung strikt von Erklaerung trennen.
 3. Du kannst die eigene Antwort mit dem Erwartungshorizont bewerten und Punktverluste den drei Typen Operator verfehlt, Fachbegriff falsch und Beleg fehlt zuordnen.
 
+### Hook / Phaenomen
+
+Brot wird beim langen Kauen suess: Amylase spaltet Staerke schon bei $37\,^\circ\mathrm{C}$ in Zucker — ein Enzym live im Mund. Doch in der Klausur zaehlt nicht das Erlebnis, sondern die Gliederung: $6$ Bewertungseinheiten in ca. $6$–$7$ Minuten, AFB I ohne weil-Satz, AFB II mit Kausalkette, AFB III mit Urteil. Wie verteilt man Zeit nach Punkten, statt nach Gefuehl?
+
+### Fachbegriff & Definition
+
+Der **Erwartungshorizont** ist die **Liste der erwarteten Teilleistungen mit Punkten** — Landkarte der Antwort. Die **Materialaufgabe** liefert Material (Kurve, Experiment, Stammbaum) plus Teilfragen; das **Zeitlimit** bemisst etwa eine Minute je Punkt, der Erklaerteil erhaelt den groessten Anteil. Die **Schichtung** lautet: AFB I nennt nur, was im Material steht, mit Zahlen und ohne weil-Saetze; AFB II erklaert mit Fachregel und **Kausalkette** (Ursache zu Mechanismus zu Ergebnis mit weil und deshalb); AFB III urteilt zuerst als Sachurteil, bei Bedarf als Werturteil. Die **Selbsteinschaetzung** gleicht danach Antwort mit Horizont ab.
+
+### Wirkungsgefuege / Modell
+
+Die Kausalkette lautet: **Budget, Schichten, Pruefen**. Erstens Zeit nach Punkten verteilen ($6$ BE zu ca. $6$–$7$ Minuten). Zweitens in drei Schichten schreiben: Materialwerte zitieren (etwa Anstieg bis $40\,^\circ\mathrm{C}$, Maximum, Abfall, Stille bei $70\,^\circ\mathrm{C}$), dann mit RGT und Denaturierung erklaeren, dann urteilen (keine Reaktivierung durch Abkuehlen, weil irreversibel). Drittens Selbstkontrolle: Operator getroffen? Fachbegriff korrekt? Beleg zitiert? Zuverlaessige Aussagen erfordern zusaetzlich Wiederholung und Kontrolle — ein einzelner Messwert belegt nur einen Hinweis, keinen Beweis.
+
 Klausur-Satz: `Nur wer Messwerte, Fachregel und Urteil sauber trennt, erreicht alle Punkte des Erwartungshorizonts.`
 
 ## Schritt 2 — entdecken
-
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
-- Erwartungshorizont: Liste der erwarteten Teilleistungen mit Punkten; Landkarte der Antwort.
-- Materialaufgabe: Aufgabe mit Material wie Kurve, Experiment oder Stammbaum plus Teilfragen.
-- Zeitlimit: Zeitbudget nach Bewertungseinheiten; etwa eine Minute je Punkt.
-- Kausalkette: Verknuepfung von Ursache zu Mechanismus zu Ergebnis mit weil und deshalb.
-- Selbsteinschaetzung: Abgleich der eigenen Antwort mit dem Erwartungshorizont.
+### Hook / Phaenomen
+
+Drei Punktverlust-Typen fressen Noten: Operator verfehlt, Fachbegriff falsch, Beleg fehlt. Welcher Typ steckt hinter einer Beschreibung mit weil-Satz — und welcher hinter einem Urteil ohne Materialzitat? Fuenf Begriffe machen Selbstbewertung moeglich.
+
+### Fachbegriffe & Definitionen
+
+- **Erwartungshorizont:** Liste der erwarteten Teilleistungen mit Punkten; Landkarte der Antwort — jede Teilleistung einzeln abhakbar.
+- **Materialaufgabe:** Aufgabe mit Material wie Kurve, Experiment oder Stammbaum plus Teilfragen — erst Material, dann Frage, dann Schicht.
+- **Zeitlimit:** Zeitbudget nach Bewertungseinheiten; etwa eine Minute je Punkt — Erklaerteil erhaelt den groessten Anteil.
+- **Kausalkette:** Verknuepfung von Ursache zu Mechanismus zu Ergebnis mit weil und deshalb — etwa RGT treibt Anstieg, Denaturierung bricht Abfall.
+- **Selbsteinschaetzung:** Abgleich der eigenen Antwort mit dem Erwartungshorizont — Punktverluste den drei Typen zuordnen und naechstes Mal meiden.
+
+### Wirkungsgefuege / Modell
+
+Die Begriffe bilden den Bewertungskreislauf: **Horizont lesen, Antwort schichten, Verlust typisieren**. Der Erwartungshorizont gibt vor, welche Teilleistungen fuer die volle Punktzahl erforderlich sind — wer ihn in Abschnitte zerlegt, richtet die Antwort gezielt an Punkten aus. Nur wer Messwerte, Fachregel und Urteil sauber trennt, erreicht alle Punkte: AFB I ohne weil, AFB II mit weil und deshalb, AFB III mit Sachurteil zuerst. Nach der Uhr folgt der Spiegel: Welcher Typ war es — Operator, Begriff oder Beleg?
 
 Klausur-Satz: `Der Erwartungshorizont gibt vor, welche Teilleistungen fuer die volle Punktzahl erforderlich sind.`
 
 ## Schritt 3 — entdecken
-
 TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
-Der Erfolg bei Materialaufgaben haengt von der Gliederung nach dem Erwartungshorizont ab. Zuerst wird die Zeit nach Punkten verteilt: Eine Aufgabe mit 6 Bewertungseinheiten erhaelt etwa 6 bis 7 Minuten, der Erklaerteil den groessten Anteil. Dann wird in drei Schichten geschrieben: AFB I nennt nur, was im Material steht, mit Zahlen und ohne weil-Saetze; AFB II erklaert mit Fachregel und Kausalkette; AFB III urteilt zuerst als Sachurteil und bei Bedarf als Werturteil. Zuletzt folgt die Selbstkontrolle mit dem Erwartungshorizont: Ist der Operator getroffen, ist der Fachbegriff korrekt, ist der Beleg aus dem Material zitiert. Zuverlaessige Aussagen erfordern zusaetzlich Wiederholung und Kontrolle; ein einzelner Messwert belegt nur einen Hinweis, keinen Beweis.
+### Hook / Phaenomen
+
+Enzymkurve mit $8$ BE in ca. $8$ Minuten: a) Verlauf auswerten ($3$ BE), b) Anstieg und Abfall erklaeren ($3$ BE), c) Reaktivierung beurteilen ($2$ BE). Drei Teilfragen, drei Schichten, ein Budget. Wie sieht eine Antwort aus, die keinen Punkt verschenkt?
+
+### Fachbegriff & Definition
+
+Die **Budget-Antwort** verteilt Zeit und Punkte parallel: AFB I beschreiben ($2$ P, ca. $2$ Minuten) — Werte zitieren ohne weil; AFB II erklaeren ($3$ P, ca. $3$ Minuten) — Fachregel plus Kausalkette; AFB III beurteilen ($1$ P, ca. $1$ Minute) — Sachurteil, bei Bedarf Werturteil. Das **Urteil** zu $70\,^\circ\mathrm{C}$ lautet: keine Reaktivierung, weil Denaturierung irreversibel ist — deshalb bleibt die Aktivitaet null. Wer den Erwartungshorizont in Abschnitte zerlegt, kann seine Antwort gezielt an den Punkten ausrichten.
+
+### Wirkungsgefuege / Modell
+
+Denke in Kausalkette: **Nennen, Erklaeren, Urteilen**. Erstens Material nennen und Werte zitieren — keine weil-Saetze. Zweitens Fachregel plus Kausalkette — weil RGT, deshalb Anstieg; weil Denaturierung, deshalb Abfall. Drittens Sachurteil faellen — bei Bedarf Werturteil. EHZ-Selbstcheck schliesst: Operator getroffen? Fachbegriff korrekt? Beleg zitiert? Drei Haken, volle Punktzahl.
 
 ```diagram
    Zeit- und Punkte-Budget (Beispiel: 6 P / ca. 6-7 min)

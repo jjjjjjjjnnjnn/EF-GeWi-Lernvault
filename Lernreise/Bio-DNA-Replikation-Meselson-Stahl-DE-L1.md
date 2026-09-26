@@ -16,39 +16,70 @@ version: Lesson-v3
 <!-- Lesson v3 9-Schritt-Architektur: Schritt 1 bis 8 feste Struktur; Fehlvorstellung zwischen Schritt 6 und 7 (Parser ueberspringt, zaehlt nicht); interaktives [Werkzeug: <id>]; Gating: check/szenario nicht bestanden = Weiter deaktiviert; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
 ## Schritt 1 — entdecken
-
 ZIELE (drei messbare Ziele dieser Lektion):
 
 1. Du kannst die Replikation als $DNA \to 2 \times DNA$ mit den Phasen Entwindung, Priming, Elongation und Korrektur beschreiben.
-2. Du kannst Leitstrang mit $5' \to 3'$ und Folgestrang mit Okazaki-Fragmenten unterscheiden.
+2. Du kannst Leitstrang mit $5' \to 3'$ und Folgestrang mit Okazaki-Fragmenten unterscheiden und die Stueckelung begruenden.
 3. Du kannst das Meselson-Stahl-Experiment mit $^{15}N$ und $^{14}N$ als Beleg fuer semikonservative Replikation deuten (AFB II).
+
+### Hook / Phaenomen
+
+Als Meselson und Stahl 1958 ihre Zentrifuge stoppten, sahen sie nach einer Nacht in $^{14}N$ nur eine einzige mittlere Bande — Stahl soll gerufen haben, das Ergebnis sei so klar wie ein Sonnenaufgang. Eine Ultrazentrifuge entschied an einem Abend den Streit dreier Modelle, ohne dass jemand je ein Enzym arbeiten sah. Wie beweist ein Bandenmuster einen Mechanismus?
+
+### Fachbegriff & Definition
+
+Die **Replikation** ($DNA \to 2 \times DNA$) verlaeuft **semikonservativ**: Jede **Tochter-DNA behaelt einen Elternstrang und erhaelt einen neuen Strang** ($1\,alt + 1\,neu$); die Gegenmodelle heissen **konservativ** (alt bleibt beisammen) und **dispersiv** (alt zerbrueselt verteilt). Die **Replikationsgabel** oeffnet mit **Helikase und Topoisomerase** ($A{=}T$ mit $2$, $G{\equiv}C$ mit $3$ Wasserstoffbruecken), die **DNA-Polymerase** baut aus $dNTP$ nur in $5' \to 3'$ und braucht ein freies $3'$-$OH$ — daher liefert ein **Primer** ($5'$-$ACGU$-$3'$) den Start.
+
+### Wirkungsgefuege / Modell
+
+Die Kausalkette lautet: **Oeffnen, Starten, Bauen, Verbinden**. Helikase entwindet, Primase legt Primer, Polymerase verlaengert $5' \to 3'$: Am **Leitstrang** laeuft sie kontinuierlich durch, am **Folgestrang** baut sie rueckwaerts **Okazaki-Fragmente** ($1000$–$2000$ Nukleotide), die **Ligase** mit Energie verbindet. Weil die Polymerase nur eine Richtung kennt, arbeitet ein Strang stueckweise — die Asymmetrie der Gabel erzwingt die Fragmente. Meselson und Stahl nutzten $^{15}N$ (schwer) gegen $^{14}N$ (leicht): Nach einer Teilung nur Hybrid ($^{15}N$/$^{14}N$) schliesst konservativ aus, nach zwei Teilungen halb Hybrid halb leicht schliesst dispersiv aus.
 
 Klausur-Satz: `Jede Tochter-DNA behaelt einen Elternstrang und erhaelt einen neuen Strang.`
 
 ## Schritt 2 — entdecken
-
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
-- Replikationsgabel: Y-foermige Oeffnung mit $Helikase + Topoisomerase$, Entwindung vor der Synthese in $5' \to 3'$-Richtung.
-- DNA-Polymerase: Enzym fuer $dNTP \to DNA + PP_i$, baut nur $5' \to 3'$ und braucht ein freies $3'$-OH.
-- Primer: Kurzes RNA-Stueck $5'-ACGU-3'$, Startpunkt der Polymerase, wird spaeter entfernt.
-- Okazaki-Fragment: Kurzer Abschnitt von $1000$-$2000$ Nukleotiden auf dem Folgestrang, durch $Ligase$ verknuepft.
-- Semikonservativ: Modell $1\,alt + 1\,neu$ pro Doppelhelix; Gegenmodelle sind konservativ und dispersiv.
+### Hook / Phaenomen
+
+Leitstrang durchgehend, Folgestrang stueckweise — warum baut dieselbe Polymerase zwei so verschiedene Straenge? Und warum braucht sie ueberhaupt einen Primer aus RNA, den sie spaeter wieder entfernt? Fuenf Begriffe loesen das Raetsel der Gabel.
+
+### Fachbegriffe & Definitionen
+
+- **Replikationsgabel:** Y-foermige Oeffnung mit Helikase und Topoisomerase; Entwindung vor der Synthese, Leserrichtung $3' \to 5'$, Baureichtung $5' \to 3'$.
+- **DNA-Polymerase:** Enzym fuer $dNTP \to DNA + PP_i$; baut nur $5' \to 3'$ und braucht ein freies $3'$-$OH$ als Ansatzpunkt.
+- **Primer:** Kurzes RNA-Stueck ($5'$-$ACGU$-$3'$), Startpunkt der Polymerase, wird spaeter entfernt und durch DNA ersetzt.
+- **Okazaki-Fragment:** Kurzer Abschnitt von $1000$–$2000$ Nukleotiden auf dem Folgestrang, durch Ligase mit Energieaufwand verknuepft.
+- **Semikonservativ:** Modell $1\,alt + 1\,neu$ pro Doppelhelix; Gegenmodelle sind konservativ (alt/alt plus neu/neu) und dispersiv (gemischt).
+
+### Wirkungsgefuege / Modell
+
+Die Begriffe bilden die Gabel: **Oeffnen** (Helikase), **Starten** (Primer), **Bauen** (Polymerase $5' \to 3'$), **Verbinden** (Ligase). Weil Oeffnen und Bauen entgegengesetzt laufen koennen, entsteht die Asymmetrie: Leitstrang kontinuierlich, Folgestrang in Fragmenten. Die Polymerase kennt nur eine Richtung, daher arbeitet ein Strang stueckweise — dieser Satz traegt jede Erklaerung der Stueckelung.
 
 Klausur-Satz: `Die Polymerase kennt nur eine Richtung, daher arbeitet ein Strang stueckweise.`
 
 ## Schritt 3 — entdecken
-
 TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
-Die Helikase oeffnet $A=T$ und $G \equiv C$, die Primase legt Primer, die Polymerase verlaengert $5' \to 3'$. Am Leitstrang laeuft sie durch, am Folgestrang baut sie rueckwaerts Fragmente, die Ligase mit $ATP \to AMP + PP_i$ verbindet. Meselson und Stahl zuechteten $^{15}N$-DNA, wechselten auf $^{14}N$ und fanden nach einer Teilung nur Hybridbanden $^{15}N$/$^{14}N$ — das schliesst konservativ aus; nach zwei Teilungen halb Hybrid, halb leicht — das schliesst dispersiv aus.
+### Hook / Phaenomen
+
+Zwei $^{15}N$-Helices starten in $^{14}N$-Medium: Nach einer Runde duerfte konservativ schwer plus leicht zeigen — doch es erscheint nur Hybrid. Nach zwei Runden duerfte dispersiv nur Hybrid zeigen — doch halb leicht erscheint. Zwei Bandenmuster widerlegen zwei Modelle; uebrig bleibt semikonservativ.
+
+### Fachbegriff & Definition
+
+Der **Bandenbeweis** lautet: Nach Trennung traegt jeder $^{15}N$-Elternstrang einen neuen $^{14}N$-Strang, also $2 \times (^{15}N$-$^{14}N)$ als eine mittlere Bande — konservativ haette $50\,\%$ schwer plus $50\,\%$ leicht verlangt und ist widerlegt. Nach zweiter Runde liefern die zwei $^{15}N$-Straenge wieder Hybrid und die zwei $^{14}N$-Straenge je $^{14}N$-$^{14}N$, also $50\,\%$ hybrid und $50\,\%$ leicht — dispersiv waere bei Hybrid geblieben und ist widerlegt. Bandenmuster beweisen den Mechanismus, ohne ein Enzym zu sehen.
+
+### Wirkungsgefuege / Modell
+
+Denke in Kausalkette: **Markieren, Teilen, Zaehlen**. Erstens Eltern mit $^{15}N$ markieren (schwer, unten). Zweitens in $^{14}N$ teilen und Straenge ergaenzen ($1\,alt + 1\,neu$). Drittens Banden zaehlen: eine Bande nach eins, zwei Banden nach zwei beweist semikonservativ. Die Basenpaarung sichert die Treue: $A{=}T$ mit zwei, $G{\equiv}C$ mit drei Wasserstoffbruecken — komplementaer paaren heisst fehlerarm kopieren.
 
 ```diagram
     Eltern:  15N-15N (schwer, unten)
     nach 1x: 15N-14N + 15N-14N (hybrid, Mitte)
+             -> konservativ widerlegt (haette schwer + leicht verlangt)
     nach 2x: 2x hybrid + 2x 14N-14N (Mitte + oben)
+             -> dispersiv widerlegt (waere bei hybrid geblieben)
     Leitstrang:  ----5'->3'----  kontinuierlich
-    Folgestrang: <-3' 5'--  Fragmente + Ligase
+    Folgestrang: <-3' 5'--  Fragmente (1000-2000) + Ligase
     A=T (2 H-Bindungen), G=C (3 H-Bindungen)
 ```
 

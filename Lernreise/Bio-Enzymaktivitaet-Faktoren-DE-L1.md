@@ -16,38 +16,67 @@ version: Lesson-v3
 <!-- Lesson v3 9-Schritt-Architektur: Schritt 1 bis 8 feste Struktur; Fehlvorstellung zwischen Schritt 6 und 7 (Parser ueberspringt, zaehlt nicht); interaktives [Werkzeug: <id>]; Gating: check/szenario nicht bestanden = Weiter deaktiviert; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
 ## Schritt 1 — entdecken
-
 ZIELE (drei messbare Ziele dieser Lektion):
 
 1. Du kannst drei Grundeigenschaften von Enzymen nennen — ueberwiegend Proteine, Senkung der Aktivierungsenergie $E_a$, kein Verbrauch — und erklaeren, dass Enzyme die Gleichgewichtslage nicht veraendern.
 2. Du kannst eine Temperatur- oder pH-Kurve lesen: Verlauf abschnittsweise beschreiben, Optimum benennen, Anstieg mit der RGT-Regel und Abfall mit der Denaturierung erklaeren.
 3. Du kannst eine Kausalkette mit weil und deshalb formulieren und Hemmung (reversibel) strikt von Denaturierung (irreversibel) unterscheiden.
 
+### Hook / Phaenomen
+
+Hohes Fieber ueber etwa $42\,^\circ\mathrm{C}$ ist lebensgefaehrlich — nicht wegen der Waerme selbst, sondern weil koerpereigene Enzyme ihre Form verlieren. Gleichzeitig arbeitet Speichelamylase bei $37\,^\circ\mathrm{C}$ so schnell, dass Brot beim langen Kauen suess wird. Dieselbe Temperaturskala foerdert und zerstoert — wo liegt die Grenze, und warum kommt ein denaturiertes Enzym nie zurueck?
+
+### Fachbegriff & Definition
+
+**Enzyme** sind ueberwiegend **Proteine als Biokatalysatoren**: Sie **senken die Aktivierungsenergie** $E_a$, aendern nur die Geschwindigkeit (nicht Richtung oder Gleichgewicht) und werden **nicht verbraucht**. Ihr **aktives Zentrum** ist der passgenaue Bereich fuer das Substrat — Grundlage von Spezifitaet und Schluessel-Schloss-Bindung. Die **Denaturierung** zerstoert die **Tertiaerstruktur** durch Hitze oder extremes $pH$ und ist **irreversibel**; das **Temperaturoptimum** (humane Enzyme oft ca. $37\,^\circ\mathrm{C}$) markiert die hoechste Aktivitaet.
+
+### Wirkungsgefuege / Modell
+
+Die Kausalkette lautet: **Binden, Senken, Freisetzen**. Das Substrat bindet im aktiven Zentrum, der Enzym-Substrat-Komplex senkt die Huerde $E_a$, das Enzym geht unverbraucht hervor. Unterhalb des Optimums erhoeht Erwaermung die kinetische Energie und die Zahl wirksamer Zusammenstoesse — die Geschwindigkeit steigt nach der **RGT-Regel** etwa auf das Doppelte je $10\,^\circ\mathrm{C}$. Oberhalb des Optimums zerstoert Hitze Wasserstoffbruecken und Ionenbindungen der Tertiaerstruktur, das aktive Zentrum verliert seine Form — Denaturierung, irreversibel. Auch der $pH$ besitzt ein Optimum (Pepsin ca. $pH$ $2$, Trypsin ca. $pH$ $8$); Abweichungen veraendern Ladungen, extreme Werte denaturieren.
+
 Klausur-Satz: `Enzyme senken als Biokatalysatoren die Aktivierungsenergie, besitzen ein Temperatur- und ein pH-Optimum und werden dabei nicht verbraucht.`
 
 ## Schritt 2 — entdecken
-
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
-- Enzym: Ueberwiegend ein Protein als Biokatalysator; aendert nur die Geschwindigkeit, nicht Richtung oder Gleichgewicht.
-- Aktivierungsenergie: Mindestenergie $E_a$ fuer den Reaktionsstart; das Enzym senkt sie.
-- Aktives Zentrum: Passgenauer Bereich fuer das Substrat; Grundlage der Spezifitaet.
-- Denaturierung: Zerstoerung der Tertiaerstruktur durch Hitze oder extremes pH; irreversibel.
-- Temperaturoptimum: Temperatur der hoechsten Aktivitaet; humane Enzyme oft bei ca. $37\,^{\circ}C$.
+### Hook / Phaenomen
+
+Ein Verdauungsenzym steigt bis $40\,^\circ\mathrm{C}$ stark an, faellt danach steil, bei $70\,^\circ\mathrm{C}$ herrscht Stille. Anstieg und Abfall sehen aehnlich aus — doch einer folgt einer Faustregel, der andere einer Zerstoerung. Fuenf Begriffe trennen Regel von Ruine.
+
+### Fachbegriffe & Definitionen
+
+- **Enzym:** Ueberwiegend ein Protein als Biokatalysator; aendert nur die Geschwindigkeit, nicht Richtung oder Gleichgewicht — und geht unverbraucht hervor.
+- **Aktivierungsenergie:** Mindestenergie $E_a$ fuer den Reaktionsstart; das Enzym senkt sie ueber den Enzym-Substrat-Komplex.
+- **Aktives Zentrum:** Passgenauer Bereich fuer das Substrat; Grundlage der Spezifitaet — Schluessel und Schloss auf Molekuelebene.
+- **Denaturierung:** Zerstoerung der Tertiaerstruktur durch Hitze oder extremes $pH$; irreversibel — Abkuehlen reaktiviert nichts.
+- **Temperaturoptimum:** Temperatur der hoechsten Aktivitaet; humane Enzyme oft bei ca. $37\,^\circ\mathrm{C}$ — darunter RGT-Regel, darueber Zerfall.
+
+### Wirkungsgefuege / Modell
+
+Die Begriffe bilden die Glocke: **Anstieg** nach RGT (mehr kinetische Energie, mehr wirksame Stoesse), **Gipfel** am Optimum, **Abfall** durch Denaturierung (Formverlust des aktiven Zentrums). Hemmung ist reversibel — der Hemmstoff geht, die Aktivitaet kehrt zurueck. Denaturierung ist irreversibel — die Struktur ist zerstoert. Wer Anstieg mit weil (RGT) und Abfall mit weil (Denaturierung) begruendet und mit deshalb schliesst, schreibt die vollstaendige Kausalkette.
 
 Klausur-Satz: `Unterhalb des Optimums steigt die Reaktionsgeschwindigkeit nach der RGT-Regel, oberhalb des Optimums fuehrt die Denaturierung zu einem steilen Abfall.`
 
 ## Schritt 3 — entdecken
-
 TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
-Das Enzym arbeitet nach Schluessel und Schloss: Das Substrat bindet im aktiven Zentrum, der Enzym-Substrat-Komplex senkt die Huerde, das Enzym geht unverbraucht hervor. Unterhalb des Optimums erhoeht Erwaermung die kinetische Energie und die Zahl wirksamer Zusammenstoesse; die Geschwindigkeit steigt nach der RGT-Regel etwa auf das Doppelte je $10\,^{\circ}C$. Oberhalb des Optimums zerstoert Hitze Wasserstoffbruecken und Ionenbindungen der Tertiaerstruktur, das aktive Zentrum verliert seine Form, das Substrat bindet nicht mehr — die Denaturierung ist irreversibel. Auch der pH besitzt ein Optimum (Pepsin ca. pH 2, Trypsin ca. pH 8); Abweichungen veraendern Ladungen im aktiven Zentrum, extreme Werte denaturieren.
+### Hook / Phaenomen
+
+Brot wird beim langen Kauen suess: Amylase spaltet Staerke schon bei $37\,^\circ\mathrm{C}$ in Zucker — mitten im Koerperoptimum. Doch was zeigt eine Enzymkurve dem Pruefer: drei Abschnitte, zwei Ursachen, ein Urteil ueber reversibel oder irreversibel?
+
+### Fachbegriff & Definition
+
+Die **Glockenkurve der Aktivitaet** traegt zwei Gesetze: Unterhalb des Optimums steigt die Geschwindigkeit nach der **RGT-Regel** (etwa Verdopplung je $10\,^\circ\mathrm{C}$), weil mehr Teilchen die Schwelle $E_a$ ueberwinden. Oberhalb faellt sie steil durch **Denaturierung** des aktiven Zentrums, weil Wasserstoffbruecken und Ionenbindungen brechen. Die $pH$-Kurve ist ebenfalls glockenfoermig: Pepsin piekt bei ca. $pH$ $2$ (Magen), Trypsin bei ca. $pH$ $8$ (Duodenum) — das Optimum spiegelt den Wirkungsort wider.
+
+### Wirkungsgefuege / Modell
+
+Denke in Kausalkette: **Lesen, Zuordnen, Urteilen**. Erstens Kurve abschnittsweise beschreiben — Anstieg, Maximum mit Werten, Abfall. Zweitens Ursachen zuordnen — RGT gegen Denaturierung, Ladungsaenderung gegen Strukturverlust. Drittens urteilen: Bei $70\,^\circ\mathrm{C}$ hilft Abkuehlen nicht, weil die Tertiaerstruktur zerstoert ist — irreversibel, keine Reaktivierung. Anstieg folgt der Regel, Abfall der Ruine.
 
 ```diagram
    Reaktions-
    geschwindigkeit
         ^
-        |            .-- Optimum
+        |            .-- Optimum (ca. 37-40 Grad C)
         |          .'   '.
         |        .'       '.
         |      .'  RGT-     '.  Denaturierung
@@ -56,11 +85,10 @@ Das Enzym arbeitet nach Schluessel und Schloss: Das Substrat bindet im aktiven Z
         |.'                        '.
         +------------------------------> Temperatur
          10   20   30   40   50   60   70  [Grad C]
-                         ^
-                    Temperaturoptimum (ca. 37-40 Grad C)
 
    pH-Kurve: glockenfoermig, Peak = pH-Optimum
-   Pepsin  ca. pH 2   |   Trypsin  ca. pH 8
+   Pepsin  ca. pH 2 (Magen)  |  Trypsin  ca. pH 8 (Duodenum)
+   Regel: Anstieg = RGT | Abfall = Denaturierung (kein Zurueck)
 ```
 
 Klausur-Satz: `Der Anstieg der Kurve folgt der RGT-Regel, der steile Abfall nach dem Optimum beruht auf der irreversiblen Denaturierung des aktiven Zentrums.`

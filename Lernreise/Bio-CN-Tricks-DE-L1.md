@@ -16,32 +16,61 @@ version: Lesson-v3
 <!-- Lesson v3 9-Schritt-Architektur: Schritt 1 bis 8 feste Struktur; Fehlvorstellung zwischen Schritt 6 und 7 (Parser ueberspringt, zaehlt nicht); interaktives [Werkzeug: <id>]; Gating: check/szenario nicht bestanden = Weiter deaktiviert; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
 ## Schritt 1 — entdecken
-
 ZIELE (drei messbare Ziele dieser Lektion):
 
 1. Du kannst vier Verfahren der Einfuehrungsphase nennen — Kurvenauswertung in drei Schritten, Kontrollprinzip, Reaktionsgleichungen und Enzym-Merkregel — und jedes an einer kleinen Aufgabe anwenden.
 2. Du kannst jedes Verfahren in einem klausurtauglichen deutschen Fachsatz formulieren.
 3. Du kannst leicht verwechselbare Verfahren unterscheiden und das passende Verfahren waehlen.
 
+### Hook / Phaenomen
+
+Pasteur liess mit Schwanenhalsflasche Keime in der Kruemmung haengen — die Bruehe blieb klar. Doch erst der Vergleich mit offener Probe machte die Aussage zulaessig: Eine Variable entscheidet ueber Beweis oder Behauptung. Vier Verfahren, ein Werkzeugkasten — Kurve, Kontrolle, Gleichung, Enzymregel. Welches Verfahren oeffnet welche Aufgabe?
+
+### Fachbegriff & Definition
+
+Die **vier EF-Verfahren** lauten: **Kurvenauswertung in drei Schritten** (Verlauf beschreiben, Maximum bestimmen, Ursache mit Fachregel erklaeren), **Kontrollprinzip** (nur eine Variable aendern, alle uebrigen konstant halten), **Reaktionsgleichungen** ($6CO_2 + 6H_2O \to C_6H_{12}O_6 + 6O_2$ und Zellatmung als Umkehrung — Gasbilanzen daraus ableiten) und **Enzym-Merkregel** (spezifisch, effizient, bei Extremen denaturiert; Hemmung reversibel, Denaturierung irreversibel). Jedes Verfahren endet im deutschen Fachsatz — etwa das $pH$-Optimum spiegelt den Wirkungsort wider.
+
+### Wirkungsgefuege / Modell
+
+Die Kausalkette lautet: **Erkennen, Anwenden, Formulieren**. Erstens Aufgabentyp erkennen — Kurve, Experiment, Gasbilanz oder Enzymfrage. Zweitens Verfahren anwenden: Temperaturkurve steigt bis ca. $37\,^\circ\mathrm{C}$ (RGT-Regel) und faellt danach (Denaturierung); $CO_2$-Versuch mit Hydrogencarbonat gegen destilliertes Wasser laesst genau eine Aussage zu; $O_2$-Anstieg verrät Fotosynthese-Uebergewicht. Drittens Fachsatz schreiben — in der Klausur zaehlt ausschliesslich der deutsche Fachsatz. Stammbaum und Nische gehoeren als Ausblick in die Qualifikationsphase.
+
 Klausur-Satz: `Die eingeuebten Loesungsverfahren dienen als Strukturhilfe; in der Klausur zaehlt jedoch ausschliesslich der deutsche Fachsatz.`
 
 ## Schritt 2 — entdecken
-
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
-- Kurvenauswertung in drei Schritten: Verlauf beschreiben, Maximum bestimmen, Ursache mit Fachregel erklaeren.
-- Kontrollprinzip: Nur eine Variable aendern, alle uebrigen Bedingungen konstant halten.
-- Eine einzige Variable: Genau ein Einflussfaktor wird veraendert.
-- Enzym-Merkregel: Spezifisch, effizient, bei extremen Bedingungen denaturiert; Hemmung ist reversibel, Denaturierung irreversibel.
-- Reaktionsgleichungen: $6 CO_2 + 6 H_2O \to C_6H_{12}O_6 + 6 O_2$ und die Umkehrung der Zellatmung; Gasbilanzen werden daraus abgeleitet.
+### Hook / Phaenomen
+
+Wasserpest im Licht blubbert, im Dunkeln schweigt — Hydrogencarbonat verstaerkt den Unterschied. Eine Variable, eine Kontrolle, eine Aussage. Doch was heisst Kontrolle praezise, und wie liest man eine Kurve ohne weil-Satz im falschen Abschnitt? Fuenf Begriffe sichern das Handwerk.
+
+### Fachbegriffe & Definitionen
+
+- **Kurvenauswertung in drei Schritten:** Verlauf beschreiben, Maximum bestimmen, Ursache mit Fachregel erklaeren — etwa RGT-Regel gegen Denaturierung.
+- **Kontrollprinzip:** Nur eine Variable aendern, alle uebrigen Bedingungen konstant halten — sonst ist keine Aussage zulaessig.
+- **Eine einzige Variable:** Genau ein Einflussfaktor wird veraendert — etwa $CO_2$-Angebot (Hydrogencarbonat gegen destilliertes Wasser).
+- **Enzym-Merkregel:** Spezifisch, effizient, bei extremen Bedingungen denaturiert; Hemmung ist reversibel, Denaturierung irreversibel — das $pH$-Optimum spiegelt den Wirkungsort.
+- **Reaktionsgleichungen:** $6CO_2 + 6H_2O \to C_6H_{12}O_6 + 6O_2$ und die Umkehrung der Zellatmung; Gasbilanzen werden daraus abgeleitet — $O_2$-Plus heisst Fotosynthese.
+
+### Wirkungsgefuege / Modell
+
+Die Begriffe bilden den Werkzeugkasten: **Kurve** misst (drei Schritte), **Kontrolle** sichert (eine Variable), **Gleichung** bilanziert ($O_2$-Bilanz zeigt Prozess), **Merkregel** deutet ($pH$-Optimum gleich Wirkungsort). Nur eine Variable wird geaendert, alle uebrigen Bedingungen bleiben konstant — dieser Satz traegt jede Kontrolleurfrage. Wer zuerst Verlauf und Maximum auswertet, dann den Wechsel mit der Fachregel erklaert, trennt sauber AFB I von AFB II.
 
 Klausur-Satz: `Nur eine Variable wird geaendert, alle uebrigen Bedingungen bleiben konstant.`
 
 ## Schritt 3 — entdecken
-
 TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
-Die vier Verfahren bilden einen Werkzeugkasten. Verfahren eins wertet jede Kurve in drei Schritten aus: Verlauf mit Werten beschreiben, Maximum oder Plateau benennen, Ursache mit der Fachregel erklaeren. Beispiel: Eine Temperaturkurve steigt bis etwa 37 Grad Celsius und faellt danach; der Anstieg folgt der RGT-Regel, der Abfall der Denaturierung. Verfahren zwei prueft Kontrollexperimente: Nur wenn sich Versuchs- und Kontrollansatz in genau einer Variablen unterscheiden, ist eine Aussage zulaessig. Verfahren drei nutzt Reaktionsgleichungen: Steigt die Sauerstoffmenge, ueberwiegt die Fotosynthese. Verfahren vier nutzt die Enzym-Merkregel: Das pH-Optimum spiegelt den Wirkungsort wider. Stammbaum und Nische gehoeren als Ausblick in die Qualifikationsphase und werden hier nur erwaehnt.
+### Hook / Phaenomen
+
+Ansatz A mit Hydrogencarbonat blubbert stark, Ansatz B mit destilliertem Wasser kaum — Licht und Temperatur identisch. Eine Blasenzaehlung wird zum $CO_2$-Beweis. Doch warum duerfte man ohne Kontrolle B gar nichts behaupten — und wie fasst ein Werkzeugkasten alle vier Verfahren auf einen Blick?
+
+### Fachbegriff & Definition
+
+Das **Kontroll-Experiment** beweist durch Unterschied in genau einer Variablen: Versuchs- und Kontrollansatz unterscheiden sich nur im $CO_2$-Angebot, also erklaert nur $CO_2$ die Blasendifferenz. Die **Drei-Schritt-Kurve** beschreibt erst Werte (Anstieg bis ca. $37\,^\circ\mathrm{C}$), benennt dann das Maximum und erklaert zuletzt mit RGT gegen Denaturierung. Die **Gleichungsbilanz** deutet $O_2$-Plus als Fotosynthese-Uebergewicht. Zuerst werte ich Verlauf und Maximum aus, dann erklaere ich den Wechsel mit der Fachregel.
+
+### Wirkungsgefuege / Modell
+
+Denke in Kausalkette: **Waehlen, Pruefen, Schliessen**. Erstens Verfahren am Signalwort waehlen — Kurve, Kontrolle, Gleichung oder Enzym. Zweitens Kontrolle pruefen — genau eine Variable? Drittens Fachsatz schliessen — Verlauf plus Regel plus Urteil. Wie bei Pasteurs Versuch wird eine Aussage erst durch die Kontrolle zulaessig, die sich in nur einer Variable vom Versuchsansatz unterscheidet.
 
 ```diagram
    Werkzeugkasten (EF)
@@ -58,6 +87,7 @@ Die vier Verfahren bilden einen Werkzeugkasten. Verfahren eins wertet jede Kurve
    Kurve:  /|        /|        RGT-Regel
           / |       / |   ->   Denaturierung
          /  |__    /  |__      Faktorwechsel
+   Kontrolle: A (mit) vs. B (ohne), Rest identisch -> Aussage ok
 ```
 
 Klausur-Satz: `Zuerst werte ich Verlauf und Maximum aus, dann erklaere ich den Wechsel mit der Fachregel.`

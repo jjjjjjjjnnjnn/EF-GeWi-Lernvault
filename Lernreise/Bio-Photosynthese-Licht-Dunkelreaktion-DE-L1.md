@@ -16,32 +16,61 @@ version: Lesson-v3
 <!-- Lesson v3 9-Schritt-Architektur: Schritt 1 bis 8 feste Struktur; Fehlvorstellung zwischen Schritt 6 und 7 (Parser ueberspringt, zaehlt nicht); interaktives [Werkzeug: <id>]; Gating: check/szenario nicht bestanden = Weiter deaktiviert; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
 ## Schritt 1 — entdecken
-
 ZIELE (drei messbare Ziele dieser Lektion):
 
-1. Du kannst die Gesamtgleichung $6 CO_2 + 6 H_2O + Lichtenergie \to C_6H_{12}O_6 + 6 O_2$ wiedergeben und ihre Umkehrung zur Zellatmung erklaeren.
+1. Du kannst die Gesamtgleichung $6CO_2 + 6H_2O + Lichtenergie \to C_6H_{12}O_6 + 6O_2$ wiedergeben und ihre Umkehrung zur Zellatmung erklaeren.
 2. Du kannst Licht- und Dunkelreaktion nach Ort (Thylakoidmembran gegen Stroma), Bedingung (Lichtbedarf gegen Unabhaengigkeit) und Produkten ($ATP + NADPH + O_2$ gegen Glucose) vergleichen.
 3. Du kannst die drei limitierenden Faktoren Lichtstaerke, $CO_2$-Konzentration und Temperatur nennen und Zusatzlicht mit $CO_2$-Anreicherung im Gewaechshaus erklaeren (AFB II).
+
+### Hook / Phaenomen
+
+Hollaendische Gewaechshaeuser beleuchten Tomaten im Winter mit LED-Licht und pumpen $CO_2$ aus Industrieabgasen in die Halle — der Ertrag steigt deutlich. Mehr Licht plus mehr Gas gleich mehr Tomaten: Bauern betreiben angewandte Fotosynthese-Optimierung. Doch warum hilft Zusatzlicht nichts mehr, sobald $CO_2$ knapp wird — und woher stammt der freigesetzte Sauerstoff wirklich?
+
+### Fachbegriff & Definition
+
+Die **Fotosynthese** nutzt **Lichtenergie, um aus Kohlenstoffdioxid und Wasser Glucose und Sauerstoff aufzubauen**: $6CO_2 + 6H_2O + Lichtenergie \to C_6H_{12}O_6 + 6O_2$ — die Umkehrung der Zellatmung. Die **Lichtreaktion** an der **Thylakoidmembran** braucht Licht, spaltet Wasser ($2H_2O \to O_2 + 4H^+ + 4e^-$) und bildet **$ATP + NADPH$**. Die **Dunkelreaktion (Calvin-Zyklus)** im **Stroma** braucht kein direktes Licht, fixiert $CO_2$ und reduziert es mit $ATP + NADPH$ zu Glucose — haengt aber vom Nachschub der Lichtreaktion ab.
+
+### Wirkungsgefuege / Modell
+
+Die Kausalkette lautet: **Laden, Transportieren, Produzieren**. Chlorophyll absorbiert Photonen, Wasser wird photolysiert, Elektronen bauen einen Protonengradienten fuer $ADP + P_i \to ATP$ auf und liefern $NADPH$ — Laden an der Thylakoidmembran. $ATP + NADPH$ wandern als Energie-Shuttle ins Stroma. Dort fixiert der Calvin-Zyklus $CO_2$ und baut $C_6H_{12}O_6$ — Produzieren ohne direktes Licht, aber nie ohne Nachschub. Schwaches Licht bremst das Laden, niedriges $CO_2$ das Fixieren, tiefe Temperatur die Enzyme: Gewaechshaeuser ergaenzen Licht und $CO_2$ und halten das Temperaturoptimum — erst wenn beide Stufen satt versorgt sind, wird die Temperatur zum neuen Engpass.
 
 Klausur-Satz: `Die Photosynthese nutzt Lichtenergie, um aus Kohlenstoffdioxid und Wasser Glucose und Sauerstoff aufzubauen.`
 
 ## Schritt 2 — entdecken
-
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
-- Lichtreaktion: An der Thylakoidmembran, braucht Licht; spaltet $2 H_2O \to O_2 + 4 H^+ + 4 e^-$ und bildet $ATP + NADPH$.
-- Dunkelreaktion (Calvin-Zyklus): Im Stroma, ohne direktes Licht; fixiert $CO_2$ mit $ATP + NADPH$ zu Glucose.
-- Thylakoid: Membransystem im Chloroplasten mit Chlorophyll und Elektronentransportkette; Ort der Lichtreaktion.
-- Stroma: Fluessiger Raum um die Thylakoide; Ort der Dunkelreaktion mit Calvin-Enzymen.
-- Limitierender Faktor: Lichtstaerke, $CO_2$-Konzentration oder Temperatur; jeweils das knappste Angebot begrenzt.
+### Hook / Phaenomen
+
+Ohne praezise Begriffe wird jede Klausur zum Ratespiel: Was genau treibt Licht, was verbraucht $CO_2$, was verbindet beide Stufen? Diese fuenf Bausteine brauchst du wie Werkzeug im Koffer — Ort, Bedingung und Produkt sitzen danach in Sekunden.
+
+### Fachbegriffe & Definitionen
+
+- **Lichtreaktion:** An der Thylakoidmembran, braucht Licht; spaltet $2H_2O \to O_2 + 4H^+ + 4e^-$ und bildet $ATP + NADPH$ — die Ladestufe.
+- **Dunkelreaktion (Calvin-Zyklus):** Im Stroma, ohne direktes Licht; fixiert $CO_2$ mit $ATP + NADPH$ zu Glucose — die Produktionsstufe.
+- **Thylakoid:** Membransystem im Chloroplasten mit Chlorophyll und Elektronentransportkette; Ort der Lichtreaktion mit Photolyse und Gradient.
+- **Stroma:** Fluessiger Raum um die Thylakoide; Ort der Dunkelreaktion mit Calvin-Enzymen — temperatursensibel wie jede Enzymstufe.
+- **Limitierender Faktor:** Lichtstaerke, $CO_2$-Konzentration oder Temperatur; jeweils das knappste Angebot begrenzt — das Minimumgesetz der Fotosynthese.
+
+### Wirkungsgefuege / Modell
+
+Die Begriffe greifen ineinander: Das **Thylakoid** laedt mit Licht $ATP$ und $NADPH$, das **Stroma** baut damit aus $CO_2$ Glucose. Licht treibt die Thylakoid-Stufe, $CO_2$ die Stroma-Stufe, die Temperatur das Enzymtempo beider Stufen. Der **limitierende Faktor** wechselt mit der Versorgung: Bei schwachem Licht bremst die Lichtreaktion den Nachschub, bei niedrigem $CO_2$ die Fixierung, bei Kaelte die Enzyme. Wer einen Ertrag steigern will, muss zuerst den Engpass finden — dann Zusatzlicht, $CO_2$ oder Waerme gezielt einsetzen.
 
 Klausur-Satz: `Die Lichtreaktion an der Thylakoidmembran liefert ATP und NADPH fuer die Dunkelreaktion im Stroma.`
 
 ## Schritt 3 — entdecken
-
 TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
-Die Fotosynthese arbeitet als Laden und Produzieren. Die Lichtreaktion laedt: Chlorophyll absorbiert Photonen, Wasser wird photolysiert, Elektronen bauen einen Protonengradienten fuer $ADP + P_i \to ATP$ auf und liefern $NADPH$. Die Dunkelreaktion produziert: $CO_2$ wird fixiert und mit $ATP + NADPH$ zu $C_6H_{12}O_6$ reduziert; sie braucht kein direktes Licht, haengt aber vom Nachschub der Lichtreaktion ab. Schwaches Licht bremst das Laden, niedriges $CO_2$ bremst das Fixieren, tiefe Temperatur bremst die Enzyme. Gewaechshaeuser ergaenzen daher Licht und $CO_2$ und halten das Temperaturoptimum.
+### Hook / Phaenomen
+
+Fuenfzehn Prozent mehr Licht, aber kein Gramm mehr Ertrag — sobald $CO_2$ der Engpass ist, verpufft jede Lampe. Der Streit um Zusatzlicht gegen $CO_2$-Anreicherung gegen Heizung laesst sich nur entscheiden, wenn man den Engpass sauber durch beide Stufen hindurchdenkt.
+
+### Fachbegriff & Definition
+
+Der **Engpasswechsel** besagt: Jede Stufe wird von ihrem knappsten Faktor begrenzt — Licht die Photolyse ($O_2$-Bildung aus Wasser, nicht aus $CO_2$), $CO_2$ die Fixierung (Glucose-Aufbau aus $CO_2$), Temperatur die Enzymgeschwindigkeit beider Stufen. Die Bruecke sind **$ATP + NADPH$**: Sie verbinden als Energietraeger die Thylakoid-Stufe mit dem Calvin-Zyklus. Faellt der Nachschub aus, stoppt die Dunkelreaktion trotz vollem $CO_2$ — Abhaengigkeit ohne direkten Lichtbedarf.
+
+### Wirkungsgefuege / Modell
+
+Denke in Kausalkette: **Versorgung, Engpass, Massnahme**. Erstens Versorgung pruefen — Licht, $CO_2$, Temperatur im Optimum? Zweitens Engpass benennen — Laden, Fixieren oder Enzymtempo. Drittens Massnahme waehlen — Zusatzlicht plus $CO_2$-Anreicherung mit Temperatur-Optimum verknuepft. Sauerstoff stammt aus Wasser, Zucker aus $CO_2$, Bruecke sind $ATP + NADPH$ — ein Satz, drei Fakten.
 
 ```diagram
    Licht + H2O + ADP + NADP+
@@ -58,6 +87,7 @@ Die Fotosynthese arbeitet als Laden und Produzieren. Die Lichtreaktion laedt: Ch
               |
       limitierende Faktoren: Licht | CO2 | Temperatur
       Gewaechshaus: Zusatzlicht + CO2-Anreicherung + Optimum-T
+      Merke: O2 aus H2O (Photolyse), Glucose aus CO2 (Fixierung)
 ```
 
 Klausur-Satz: `Die Lichtreaktion spaltet Wasser an der Thylakoidmembran und die Dunkelreaktion fixiert CO2 im Stroma mithilfe von ATP und NADPH.`

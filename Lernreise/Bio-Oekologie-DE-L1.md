@@ -16,32 +16,61 @@ version: Lesson-v3
 <!-- Lesson v3 9-Schritt-Architektur: Schritt 1 bis 8 feste Struktur; Fehlvorstellung zwischen Schritt 6 und 7 (Parser ueberspringt, zaehlt nicht); interaktives [Werkzeug: <id>]; Gating: check/szenario nicht bestanden = Weiter deaktiviert; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
 ## Schritt 1 — entdecken
-
 ZIELE (drei messbare Ziele dieser Lektion):
 
 1. Du kannst die oekologische Nische als mehrdimensionalen Funktionsraum vom Habitat als Aufenthaltsort unterscheiden und Nischendifferenzierung entlang von Morphologie, Zeit und Nahrung erklaeren.
 2. Du kannst exponentielles und logistisches Populationswachstum beschreiben und die Kapazitaetsgrenze $K$ deuten.
 3. Du kannst einseitigen Energiefluss mit etwa zehn Prozent Weitergabe je Trophieebene vom Stoffkreislauf unterscheiden und die Biomassepyramide erklaeren (AFB II).
 
+### Hook / Phaenomen
+
+Auf Galapagos knacken Finken harte Samen, picken Insekten oder stechen in Kakteen — ein Schnabel je Nahrung, ein Dutzend Arten auf engstem Raum. Warum vertreibt keine die andere? Gleichzeitig frisst ein Waldkauz Maeuse, wird aber nie so schwer wie alle Maeuse zusammen. Zwei Raetsel — Nische und Energie — entscheiden ueber Koexistenz und Pyramide.
+
+### Fachbegriff & Definition
+
+Die **oekologische Nische** ist der **mehrdimensionale Funktionsraum** einer Art aus Ressourcen, Zeit und Raum (Nahrung, Aktivitaetszeit, Fresshoehe, Toleranz) — das **Habitat** ist dagegen nur der **Aufenthaltsort** (wo). Ueberlappung erzeugt **Konkurrenz**, **Nischendifferenzierung** senkt sie und ermoeglicht **Koexistenz**. Die **Population** ($N$ Individuen einer Art zur gleichen Zeit) waechst bei freien Ressourcen **exponentiell** (J-Kurve) und bei Begrenzung **logistisch** (S-Kurve) bis zur **Kapazitaetsgrenze $K$**. Der **Energiefluss** fliesst **einseitig** mit Waermeverlust — pro Ebene nur ca. $10\,\%$ — waehrend die **Materie im Stoffkreislauf** zirkuliert.
+
+### Wirkungsgefuege / Modell
+
+Die Kausalkette lautet: **Teilen, Begrenzen, Weitergeben**. Erstens teilen Arten die Ressourcen per Differenzierung (Schnabel, Zeit, Hoehe) — Konkurrenz sinkt, Koexistenz steigt. Zweitens begrenzt $K$ das Wachstum: Vollt die Population die Ressourcen, flacht die S-Kurve ab. Drittens fliesst Energie von **Produzenten** ($6CO_2 + 6H_2O \to C_6H_{12}O_6 + 6O_2$) ueber **Konsumenten** zu **Destruenten** (Bakterien, Pilze) und nimmt je Ebene auf etwa ein Zehntel ab, weil Atmung Waerme abgibt; Materie kehrt ueber Destruenten als Anorganisches zurueck. Merksatz: Energie fliesst, Materie kreist.
+
 Klausur-Satz: `Energie fliesst in einem Oekosystem einseitig und nimmt pro Trophieebene ab, waehrend die Materie im Stoffkreislauf zirkuliert.`
 
 ## Schritt 2 — entdecken
-
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
-- Oekologische Nische: Funktionsraum einer Art aus Ressourcen, Zeit und Raum.
-- Population: Individuen einer Art in einem Gebiet zur gleichen Zeit; $N$ als Groesse, $K$ als Grenze.
-- Produzent: Baut mit Lichtenergie aus Anorganischem Organisches auf, zum Beispiel $6 CO_2 + 6 H_2O \to C_6H_{12}O_6 + 6 O_2$.
-- Destruent: Baut Totes zu Anorganischem ab und fuehrt es zurueck (Bakterien, Pilze).
-- Energiefluss: Einseitige Weitergabe mit Waermeverlust; pro Ebene nur ca. $10\,\%$.
+### Hook / Phaenomen
+
+Zwei Meisenarten im selben Wald: Art A sucht morgens kleine Insekten in aeusseren Zweigen, Art B nachmittags grosse in Rindenritzen. Gleicher Wald, kein Krieg — warum? Und warum wiegt die Vogelwelt nur einen Bruchteil der Blaetterwelt? Fuenf Begriffe beantworten beides.
+
+### Fachbegriffe & Definitionen
+
+- **Oekologische Nische:** Funktionsraum einer Art aus Ressourcen, Zeit und Raum — das wie der Lebensweise, nicht das wo.
+- **Population:** Individuen einer Art in einem Gebiet zur gleichen Zeit; $N$ als Groesse, $K$ als Grenze — J-Kurve frei, S-Kurve begrenzt.
+- **Produzent:** Baut mit Lichtenergie aus Anorganischem Organisches auf, zum Beispiel $6CO_2 + 6H_2O \to C_6H_{12}O_6 + 6O_2$ — Basis jeder Pyramide.
+- **Destruent:** Baut Totes zu Anorganischem ab und fuehrt es zurueck (Bakterien, Pilze) — Scharnier des Kreislaufs.
+- **Energiefluss:** Einseitige Weitergabe mit Waermeverlust; pro Ebene nur ca. $10\,\%$ — daher schrumpft die Biomasse nach oben.
+
+### Wirkungsgefuege / Modell
+
+Die Begriffe bilden das Oekosystem: **Produzenten, Konsumenten und Destruenten** sind die drei Stufen, ueber die Energie und Materie weitergegeben werden. Habitat antwortet auf wo, Nische auf wie: Nahrung, Zeit, Hoehe und Toleranz. Die Meisen teilen Zeit, Ort und Beute — ihre Nischen ueberlappen kaum, also koexistieren sie. Die Pyramide folgt der Zehn-Prozent-Regel: $100\,\%$ zu $10\,\%$ zu $1\,\%$ — oben bleibt wenig uebrig, weil jede Ebene Atmungswärme zahlt.
 
 Klausur-Satz: `Produzenten, Konsumenten und Destruenten bilden die drei Stufen, ueber die Energie und Materie im Oekosystem weitergegeben werden.`
 
 ## Schritt 3 — entdecken
-
 TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
-Habitat antwortet auf wo, Nische auf wie: Nahrung, Aktivitaetszeit, Fresshoehe und Toleranz. Ueberlappung erzeugt Konkurrenz, Differenzierung senkt sie und ermoeglicht Koexistenz. Populationen wachsen bei freien Ressourcen exponentiell (J-Kurve) und bei Begrenzung logistisch (S-Kurve) bis zur Kapazitaetsgrenze $K$. In der Gesamtbilanz fliesst Energie von Produzenten ueber Konsumenten zu Destruenten einseitig und nimmt je Ebene auf etwa ein Zehntel ab, weil Atmung Waerme abgibt; Materie wie Kohlenstoff kehrt ueber Destruenten als Anorganisches zurueck. Merksatz: Energie fliesst, Materie kreist.
+### Hook / Phaenomen
+
+Darwinfinken zeigen Nischendifferenzierung im Schnabel, die Biomassepyramide zeigt Energieverlust in Zahlen: $100$ zu $10$ zu $1$. Zwei Bilder, ein Prinzip — Teilung spart Konkurrenz, Fluss kostet Energie. Wie liest man beide Diagramme in einer Klausurantwort zusammen?
+
+### Fachbegriff & Definition
+
+Die **Doppelregel der Oekologie** lautet: **Konkurrenz meiden durch Differenzierung, Energie verlieren durch Fluss**. Ueberlappende Nischen treiben Verdrängung oder Anpassung; geteilte Nischen (Morphologie, Zeit, Nahrung) tragen Koexistenz. Exponentielles Wachstum ($J$) gilt nur ohne Grenze; logistisches ($S$) endet an $K$. Energie fliesst einseitig und nimmt pro Trophieebene auf etwa ein Zehntel ab, waehrend Kohlenstoff und Naehrstoffe ueber Destruenten kreisen — Biomasse nimmt nach oben ab, weil nur $10\,\%$ weitergegeben werden.
+
+### Wirkungsgefuege / Modell
+
+Denke in Kausalkette: **Ueberlappen, Teilen, Schichten**. Erstens Ueberlappung feststellen — gleiche Nahrung zur gleichen Zeit am gleichen Ort heisst Konkurrenz. Zweitens Teilung pruefen — Schnabel, Zeit oder Hoehe getrennt heisst Koexistenz. Drittens Pyramide bauen — Produzent $100\,\%$, Konsument $1$ ca. $10\,\%$, Konsument $2$ ca. $1\,\%$, Destruenten schliessen den Kreis. Da nur ein Zehntel weiterfliesst, trägt oben wenig Biomasse — die Pyramide ist kein Zufall, sondern Thermodynamik.
 
 ```diagram
    Nahrungsnetz                    Energiepyramide
@@ -59,6 +88,7 @@ Habitat antwortet auf wo, Nische auf wie: Nahrung, Aktivitaetszeit, Fresshoehe u
         |         .'                          |    .'
         |      .'                             |  .'
         +--------------> t                    +--------------> t
+   Merksatz: Energie fliesst, Materie kreist.
 ```
 
 Klausur-Satz: `Da auf jeder Trophieebene nur etwa zehn Prozent der Energie weitergegeben werden, nimmt die Biomasse nach oben hin ab.`

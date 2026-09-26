@@ -16,32 +16,61 @@ version: Lesson-v3
 <!-- Lesson v3 9-Schritt-Architektur: Schritt 1 bis 8 feste Struktur; Fehlvorstellung zwischen Schritt 6 und 7 (Parser ueberspringt, zaehlt nicht); interaktives [Werkzeug: <id>]; Gating: check/szenario nicht bestanden = Weiter deaktiviert; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
 ## Schritt 1 — entdecken
-
 ZIELE (drei messbare Ziele dieser Lektion):
 
 1. Du kannst die wichtigen Organellen — Zellkern, Mitochondrium, Chloroplast, endoplasmatisches Retikulum, Golgi-Apparat, Vakuole, Ribosom — benennen und jedem eine Struktur-Funktion-Aussage zuordnen.
 2. Du kannst die gemeinsamen Merkmale von Mitochondrium und Chloroplast — Doppelmembran, eigene ringfoermige $DNA$, eigene Ribosomen — als Belege der Endosymbiontentheorie nennen.
 3. Du kannst auf AFB II eine Struktur-Funktion erklaeren und auf AFB III die Endosymbiontentheorie mit Belegen beurteilen.
 
+### Hook / Phaenomen
+
+Margulis vertrat in den 1960er-Jahren eine kuehne Idee — Mitochondrien und Chloroplasten seien aufgenommene Bakterien — und Fachzeitschriften lehnten sie zunaechst ab. Heute gilt die Theorie als gut belegt: Doppelmembran, ringfoermige $DNA$, bakterienaehnliche Ribosomen. Wie verraten drei Merkmale eine Milliarden Jahre alte Aufnahme, die niemand beobachtete?
+
+### Fachbegriff & Definition
+
+Ein **Zellorganell** ist ein **abgegrenzter Funktionsraum** der Zelle — die Eukaryotenzelle arbeitet wie eine Fabrik mit Abteilungen: **Zellkern** mit $DNA$ steuert, **Ribosomen** bauen Proteine, **endoplasmatisches Retikulum** verarbeitet und transportiert, **Golgi-Apparat** modifiziert und verteilt, **Vakuole** speichert und haelt den Turgor, **Mitochondrien** liefern $ATP$, **Chloroplasten** liefern Zucker ($6CO_2 + 6H_2O \to C_6H_{12}O_6 + 6O_2$). Die **Endosymbiontentheorie** deutet Mitochondrien und Chloroplasten als **aufgenommene Prokaryoten**: Die **Doppelmembran** (innen vom Gast, aussen vom Wirt), eigene ringfoermige $DNA$ und eigene Ribosomen plus Teilung wie Bakterien sind ihre Belege.
+
+### Wirkungsgefuege / Modell
+
+Die Kausalkette lautet: **Struktur, Funktion, Herkunft**. Erstens Struktur zu Funktion: Die gefaltete Innenmembran der Mitochondrien vergroessert die Flaeche fuer die Zellatmung — aus der Struktur folgt die Funktion. Zweitens Merkmale vergleichen: Doppelmembran, eigene $DNA$, eigene Ribosomen teilen nur Mitochondrien und Chloroplasten mit Bakterien. Drittens Herkunft deuten: Ein Wirt nahm ein aerobes Bakterium und ein Cyanobakterium auf, verdaute sie nicht, sondern behielt sie als Symbionten. Vorgehen in Aufgaben: erst Struktur zu Funktion, dann Merkmal zu Herkunft — AFB II erklaert, AFB III urteilt mit Belegen.
+
 Klausur-Satz: `Mitochondrien und Chloroplasten besitzen eine Doppelmembran, eigene ringfoermige DNA und eigene Ribosomen, was als Beleg fuer die Endosymbiontentheorie gilt.`
 
 ## Schritt 2 — entdecken
-
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
-- Zellorganell: Abgegrenzter Funktionsraum der Zelle, zum Beispiel Mitochondrium oder Chloroplast.
-- Mitochondrium: Ort der Zellatmung; wandelt Energie aus Organischem in $ATP$ um.
-- Chloroplast: Ort der Fotosynthese mit Pigmenten und Thylakoiden; wandelt Licht in $6 CO_2 + 6 H_2O \to C_6H_{12}O_6 + 6 O_2$ um.
-- Endosymbiontentheorie: Mitochondrien und Chloroplasten stammen aus aufgenommenen Prokaryoten.
-- Doppelmembran: Zwei Huellmembranen; Hinweis auf Aufnahme durch einen Wirt.
+### Hook / Phaenomen
+
+Sieben Abteilungen, eine Fabrik — doch welche Abteilung steuert, welche liefert Energie, welche haelt den Turgor? Und warum tragen zwei Kraftwerke eine eigene Erbsubstanz, als waeren sie nie ganz eingemeindet worden? Fuenf Begriffe oeffnen die Fabriktore.
+
+### Fachbegriffe & Definitionen
+
+- **Zellorganell:** Abgegrenzter Funktionsraum der Zelle, zum Beispiel Mitochondrium oder Chloroplast — Abteilung mit Membran und Aufgabe.
+- **Mitochondrium:** Ort der Zellatmung; wandelt Energie aus Organischem in $ATP$ um — Kraftwerk mit gefalteter Innenmembran fuer maximale Flaeche.
+- **Chloroplast:** Ort der Fotosynthese mit Pigmenten und Thylakoiden; wandelt Licht in Zucker um ($6CO_2 + 6H_2O \to C_6H_{12}O_6 + 6O_2$).
+- **Endosymbiontentheorie:** Mitochondrien und Chloroplasten stammen aus aufgenommenen Prokaryoten — Aerobier und Cyanobakterium als ewige Gaeste.
+- **Doppelmembran:** Zwei Huellmembranen; Hinweis auf Aufnahme durch einen Wirt — innen Gast, aussen Wirt.
+
+### Wirkungsgefuege / Modell
+
+Die Begriffe bilden Fabrik und Geschichte: Kern, Ribosomen, $ER$, Golgi und Vakuole teilen Bau und Transport — vom Bauen ueber Verarbeiten und Verteilen bis Speichern. Mitochondrien und Chloroplasten fallen heraus: eigene $DNA$, eigene Ribosomen, eigene Teilung — Gaeste mit eigenem Haushalt. Aus der Struktur folgt die Funktion (Flaeche fuer Atmung und Licht), aus den Merkmalen die Herkunft (prokaryotischer Ursprung). Wer so trennt, beantwortet Strukturfragen und Herkunftsfragen mit demselben Geruest.
 
 Klausur-Satz: `Aus der Struktur folgt die Funktion: Die gefaltete Innenmembran der Mitochondrien vergroessert die Flaeche fuer die Zellatmung.`
 
 ## Schritt 3 — entdecken
-
 TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
-Die Eukaryotenzelle ist eine Fabrik mit Abteilungen: Der Kern mit $DNA$ steuert, Ribosomen bauen Proteine, das endoplasmatische Retikulum verarbeitet und transportiert, der Golgi-Apparat modifiziert und verteilt, die Vakuole speichert und haelt den Turgor, Mitochondrien liefern $ATP$, Chloroplasten liefern Zucker. Mitochondrien und Chloroplasten teilen drei Merkmale: Doppelmembran, eigene ringfoermige $DNA$ und eigene Ribosomen sowie Teilung wie Bakterien. Die Endosymbiontentheorie deutet dies als Aufnahme: Ein Wirt nahm ein aerobes Bakterium und ein Cyanobakterium auf, verdaute sie nicht, sondern behielt sie als Symbionten. Die innere Membran stammt vom Gast, die aeussere vom Wirt. Vorgehen in Aufgaben: Erst Struktur zu Funktion, dann Merkmal zu Herkunft.
+### Hook / Phaenomen
+
+Pflanzenzelle unter dem Mikroskop: Zellwand, Membran, Kern, grüne Chloroplasten, grosse Vakuole — und unsichtbar die Geschichte einer Aufnahme vor Jahrmilliarden. Drei Belege genuegen dem Pruefer: Huelle, Erbgut, Teilung. Wie baut man daraus ein Urteil auf AFB III?
+
+### Fachbegriff & Definition
+
+Der **Dreifachbeleg der Endosymbiose** lautet: **Doppelmembran** (Aufnahmehuelle), **eigene ringfoermige $DNA$** (eigener Bauplan) und **eigene bakterienaehnliche Ribosomen** (eigene Proteinproduktion) plus Teilung wie Bakterien. Mitochondrien und Chloroplasten sind von einer Doppelmembran umgeben und enthalten eigene $DNA$ sowie Ribosomen — was auf einen prokaryotischen Ursprung hinweist. Das Urteil auf AFB III wägt ab: Die Belege stuetzen die Aufnahme stark, die Integration (die meisten Gene wanderten in den Kern) erklaert die Abhaengigkeit — Symbionten, keine Gaeste mehr.
+
+### Wirkungsgefuege / Modell
+
+Denke in Kausalkette: **Merkmal, Vergleich, Urteil**. Erstens Merkmale nennen — Huelle, $DNA$, Ribosomen, Teilung. Zweitens mit Bakterien vergleichen — Uebereinstimmung statt Zufall. Drittens urteilen: Aufnahme statt Entstehung im Haus, Symbiose statt Verdauung. Die Fabrikkarte ordnet den Rest: Kern steuert, $ER$ und Golgi verarbeiten, Vakuole haelt Turgor, Kraftwerke liefern.
 
 ```diagram
    Pflanzenzelle (schematisch)
@@ -59,9 +88,9 @@ Die Eukaryotenzelle ist eine Fabrik mit Abteilungen: Der Kern mit $DNA$ steuert,
    +--------------------------------------------------+
 
    Endosymbiose: grosser Wirt + aufgenommener Prokaryot
-   ==> Mitochondrium (aus Aerobier)
-   ==> Chloroplast   (aus Cyanobakterium)
-   Belege: Doppelmembran + eigene DNA + eigene Ribosomen
+   ==> Mitochondrium (aus Aerobier, liefert ATP)
+   ==> Chloroplast   (aus Cyanobakterium, liefert Zucker)
+   Belege: Doppelmembran + eigene DNA + eigene Ribosomen + Teilung
 ```
 
 Klausur-Satz: `Mitochondrien und Chloroplasten sind von einer Doppelmembran umgeben und enthalten eigene DNA sowie Ribosomen, was auf einen prokaryotischen Ursprung hinweist.`

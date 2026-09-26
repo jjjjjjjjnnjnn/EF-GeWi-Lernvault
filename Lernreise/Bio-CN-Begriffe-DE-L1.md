@@ -16,32 +16,61 @@ version: Lesson-v3
 <!-- Lesson v3 9-Schritt-Architektur: Schritt 1 bis 8 feste Struktur; Fehlvorstellung zwischen Schritt 6 und 7 (Parser ueberspringt, zaehlt nicht); interaktives [Werkzeug: <id>]; Gating: check/szenario nicht bestanden = Weiter deaktiviert; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
 ## Schritt 1 — entdecken
-
 ZIELE (drei messbare Ziele dieser Lektion):
 
 1. Du kannst fuenf Kernbegriffe sicher zwischen den drei Arbeitssprachen zuordnen und die deutschen Fachwoerter mit Artikel und Plural korrekt schreiben.
 2. Du erkennst typische falsche Freunde zwischen zwei Sprachen und vermeidest eine wortwoertliche Uebertragung in die Klausur.
 3. Du formulierst aus einem Begriff einen vollstaendigen deutschen Fachsatz auf AFB-II-Niveau.
 
+### Hook / Phaenomen
+
+Hooke sah vor ueber 350 Jahren im Kork kleine Kammern und nannte sie cellulae — kleine Kammern. Aus einem Bildwort wurde die Zelle. Doch derselbe alltagssprachliche Ausdruck kann zwei Fachkonzepte meinen: den Gasaustausch des Organismus und den Glucoseabbau im Mitochondrium. Wer zuerst das Konzept klaert und erst dann den Begriff waehlt, vermeidet diese Falle — in der Klausur zaehlt allein der deutsche Fachsatz.
+
+### Fachbegriff & Definition
+
+Die **dreisprachige Terminologie** sichert die **korrekte und eindeutige Verwendung** in der Klausur: Jedes Konzept traegt drei Schilder — deutsch als Klausursprache, zwei weitere als Lernbruecke — plus **Artikel und Plural** (das Enzym, die Enzyme). Die Bruecke verlaeuft ueber das Konzept in drei Ebenen: **Konzept sichern, deutschen Fachbegriff mit Artikel waehlen, vollstaendigen Fachsatz bilden**. **Falsche Freunde** lauern bei aehnlichen Woertern: Atmung (Gasaustausch, Lunge) gegen Zellatmung (Stoffwechsel, Mitochondrium) — ein Alltagsausdruck, zwei Fachkonzepte.
+
+### Wirkungsgefuege / Modell
+
+Die Kausalkette lautet: **Konzept, Begriff, Satz**. Erstens Konzept klaeren — etwa Biokatalyse mit $E_a$-Senkung gegen Strukturverlust durch Hitze. Zweitens deutschen Begriff mit Artikel waehlen — das Enzym, die Osmose, die Denaturierung, die Fotosynthese. Drittens Fachsatz mit weil und deshalb bilden — etwa Enzyme sind Biokatalysatoren, die die Aktivierungsenergie senken, weil sie den Enzym-Substrat-Komplex bilden. Merksprueche dienen nur als Lernhilfe; wer wortwoertlich uebertraegt, landet beim falschen Freund.
+
 Klausur-Satz: `Die dreisprachige Zuordnung der Fachbegriffe sichert die korrekte und eindeutige Verwendung der Terminologie in der Klausur.`
 
 ## Schritt 2 — entdecken
-
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
-- Zelle: Grundeinheit des Lebens; Struktur bestimmt Funktion.
-- Enzym: Biokatalysator aus Protein, das Enzym, Plural die Enzyme; senkt die Aktivierungsenergie $E_a$.
-- Osmose: Diffusion von Wasser durch eine semipermeable Membran; es bewegt sich $H_2O$.
-- Denaturierung: Zerstoerung der Tertiaerstruktur durch Hitze oder extremes pH; irreversibel.
-- Fotosynthese: Umwandlung von Lichtenergie in chemische Energie unter Freisetzung von $O_2$.
+### Hook / Phaenomen
+
+Fuenf Karten, drei Sprachen, ein Ziel: kein falscher Freund in der Klausur. Welche Karte traegt $E_a$, welche $H_2O$, welche $O_2$ — und welcher Artikel gehoert dazu? Fuenf Begriffe liefern das Vokabelgeruest der EF-Biologie.
+
+### Fachbegriffe & Definitionen
+
+- **Zelle:** Grundeinheit des Lebens; Struktur bestimmt Funktion — von Hookes cellulae zum Fachbegriff die Zelle.
+- **Enzym:** Biokatalysator aus Protein, das Enzym, Plural die Enzyme; senkt die Aktivierungsenergie $E_a$ und geht unverbraucht hervor.
+- **Osmose:** Diffusion von Wasser durch eine semipermeable Membran; es bewegt sich $H_2O$ zum Ort der hoeheren Teilchenkonzentration.
+- **Denaturierung:** Zerstoerung der Tertiaerstruktur durch Hitze oder extremes $pH$; irreversibel — Abkuehlen hilft nicht.
+- **Fotosynthese:** Umwandlung von Lichtenergie in chemische Energie unter Freisetzung von $O_2$ ($6CO_2 + 6H_2O \to C_6H_{12}O_6 + 6O_2$).
+
+### Wirkungsgefuege / Modell
+
+Die Begriffe bilden die Bruecke **Konzept zu Sprachen zu Satz**: Jedes Konzept steht oben, die drei Sprachen darunter, der deutsche Fachsatz am Ende. Enzyme sind Biokatalysatoren, die die Aktivierungsenergie senken; Hitze oder extremes $pH$ denaturiert sie irreversibel — ein Satz, zwei Begriffe, null Uebertragungsfehler. Wer Herkunft kennt (cellulae zu Zelle), merkt sich Terminologie leichter und verwechselt sie seltener.
 
 Klausur-Satz: `Enzyme sind Biokatalysatoren, die die Aktivierungsenergie senken; Hitze oder extremes pH denaturiert sie irreversibel.`
 
 ## Schritt 3 — entdecken
-
 TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
-Die Bruecke zwischen den Sprachen verlaeuft ueber das Konzept in drei Ebenen: Konzept sichern, deutschen Fachbegriff mit Artikel waehlen, vollstaendigen Fachsatz bilden. Besonders vorsichtig ist die Zuordnung bei aehnlichen Woertern: Derselbe alltagssprachliche Ausdruck kann zwei verschiedene Fachkonzepte meinen, zum Beispiel den Gasaustausch des Organismus und den Abbau von Glucose in der Zelle. Wer zuerst das Konzept klaert und erst dann den Begriff waehlt, vermeidet diese Falle. Merksprueche dienen nur als Lernhilfe; in der Klausur zaehlt allein der deutsche Fachsatz mit weil und deshalb.
+### Hook / Phaenomen
+
+Chloroplast auf der Karte: zwei fremde Woerter, ein Artikel, ein Funktionssatz. Vollstaendig heisst: Entsprechungen nennen, Artikel setzen, Fachsatz mit weil formulieren. Wie sieht eine Terminologiekarte aus, die volle Punktzahl traegt?
+
+### Fachbegriff & Definition
+
+Die **Terminologiekarte** traegt vier Felder: **Konzept** (Bedeutungsebene), **deutschen Begriff mit Artikel und Plural**, **zwei fremdsprachige Entsprechungen** als Lernbruecke und **deutschen Fachsatz** auf AFB II. Beispiel Chloroplast: Ort der Fotosynthese mit Thylakoiden, wandelt Licht in $6CO_2 + 6H_2O \to C_6H_{12}O_6 + 6O_2$ um. Die Bruecke zwischen den drei Sprachen verlaeuft ueber das Konzept: Erst das Konzept sichern, dann den deutschen Fachbegriff waehlen, dann den Fachsatz bilden.
+
+### Wirkungsgefuege / Modell
+
+Denke in Kausalkette: **Sichern, Waehlen, Bilden**. Erstens Konzept sichern — Funktion und Mechanismus in eigenen Worten. Zweitens Begriff mit Artikel waehlen — der, die oder das plus Plural. Drittens Satz bilden — Fachbegriff, Mechanismus ($E_a$, $H_2O$, $O_2$) und weil-Begruendung. Falsche Freunde entlarvt man durch Konzeptvergleich: Atmung tauscht Gase, Zellatmung baut Glucose ab — ein Wort, zwei Welten.
 
 ```diagram
    Konzept-Ebene (Bedeutung)
@@ -60,6 +89,7 @@ Die Bruecke zwischen den Sprachen verlaeuft ueber das Konzept in drei Ebenen: Ko
    Achtung falsche Freunde:
    ein Alltagsausdruck  -->  Atmung      (Gasaustausch, Lunge)
                         -->  Zellatmung  (Stoffwechsel, Mitochondrium)
+   Regel: Konzept sichern -> Begriff waehlen -> Fachsatz bilden
 ```
 
 Klausur-Satz: `Die Bruecke zwischen den drei Sprachen verlaeuft ueber das Konzept: Erst das Konzept sichern, dann den deutschen Fachbegriff waehlen, dann den Fachsatz bilden.`
