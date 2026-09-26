@@ -231,3 +231,45 @@ export const exemplarReise: Reise | null =
   parseReiseFile("Lernreise/Sowi-Soziale-Marktwirtschaft-L1.md", exemplarCourseRaw) ??
   defaultVaultReisen[0] ??
   null;
+
+export function getExemplarReise(lang?: string): Reise | null {
+  if (lang === "de") {
+    const deCourse = defaultVaultReisen.find((r) => r.path.includes("Sowi-Soziale-Marktwirtschaft-DE-L1"));
+    if (deCourse) return deCourse;
+  }
+  return exemplarReise;
+}
+
+export function getStepTitle(typ: SchrittTyp, lang: "de" | "zh"): string {
+  if (lang === "de") {
+    switch (typ) {
+      case "entdecken": return "Erkundung & Konzept";
+      case "ausprobieren": return "Interaktive Praxis";
+      case "check": return "Verständnisprüfung";
+      case "szenario": return "Klausurtransfer & Rubric";
+      case "muendlich": return "Mündliche Prüfung";
+    }
+  }
+  switch (typ) {
+    case "entdecken": return "概念探索与精讲";
+    case "ausprobieren": return "动手实操与实验";
+    case "check": return "过关理解自测";
+    case "szenario": return "考试情境实战";
+    case "muendlich": return "口述模拟演练";
+  }
+}
+
+export function resolveCourseForAudience(course: Reise, allCourses: Reise[], lang: string): Reise {
+  if (lang === "de" && !course.path.includes("-DE-")) {
+    const deMatch = allCourses.find(
+      (c) =>
+        c.path.includes("-DE-") &&
+        c.fach.toLowerCase() === course.fach.toLowerCase() &&
+        (c.path.replace("-DE-", "-").replace(/-DE\./, ".") === course.path ||
+          c.thema.toLowerCase() === course.thema.toLowerCase())
+    );
+    if (deMatch) return deMatch;
+  }
+  return course;
+}
+

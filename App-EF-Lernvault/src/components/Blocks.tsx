@@ -340,7 +340,8 @@ export default function Blocks({
   renderDiagram?: (spec: string, index: number) => ReactNode;
   pureGerman?: boolean;
 }) {
-  const displayBlocks = pureGerman ? filterBlocksForGermanNative(blocks) : blocks;
+  const filtered = pureGerman ? filterBlocksForGermanNative(blocks) : blocks;
+  const displayBlocks = filtered.length > 0 ? filtered : blocks;
 
   return (
     <div>

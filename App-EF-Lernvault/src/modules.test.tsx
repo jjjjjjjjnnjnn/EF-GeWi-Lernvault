@@ -7,9 +7,8 @@ import userEvent from "@testing-library/user-event";
 
 // reise.ts zieht die exemplar-lektion per `?raw` ausserhalb approved-roots:
 // fuer render-tests entkoppeln (parser gehoert reise.test-sphaere, hier nur UI).
-vi.mock("./reise", () => ({
-  defaultVaultReisen: [],
-  exemplarReise: {
+vi.mock("./reise", () => {
+  const exemplar = {
     id: "kurs-1",
     path: "Lernreise/kurs-1.md",
     fach: "SoWi",
@@ -21,8 +20,15 @@ vi.mock("./reise", () => ({
       { typ: "entdecken", stepNumber: 1, title: "Entdecken", rawText: "Text hier.", blocks: [{ kind: "p", text: "Text hier.", lang: "de" }] },
       { typ: "check", stepNumber: 2, title: "Check", items: [{ id: "q1", frage: "Frage?", antwort: "Antwort." }] },
     ],
-  },
-}));
+  };
+  return {
+    defaultVaultReisen: [],
+    exemplarReise: exemplar,
+    getExemplarReise: () => exemplar,
+    getStepTitle: (typ: string) => typ,
+    resolveCourseForAudience: (c: any) => c,
+  };
+});
 
 vi.mock("./ai/autoDispatch", async (importOriginal) => {
   const actual = await importOriginal<typeof import("./ai/autoDispatch")>();
@@ -386,7 +392,7 @@ describe("Reise", () => {
   it("player rendert exemplar-schritt (engine aus -> kein KI-aufruf)", () => {
     render(<ReiseModule lang="zh" />);
     expect(screen.getByText("Text hier.")).toBeInTheDocument();
-    expect(screen.getByText(/Kurs/)).toBeInTheDocument();
+    expect(screen.getAllByText(/Kurs/).length).toBeGreaterThan(0);
   });
 
   it("uses Enter for registered next-step navigation only after unlock", async () => {

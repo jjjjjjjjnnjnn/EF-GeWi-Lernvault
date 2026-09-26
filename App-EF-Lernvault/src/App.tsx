@@ -841,6 +841,7 @@ export default function App() {
               lang={lang}
               vaultReisen={vault?.reisen ?? defaultVaultReisen}
               initialCourseId={activeReiseId}
+              initialViewMode="document"
             />
           )}
           {tab === "lernbaum" && (

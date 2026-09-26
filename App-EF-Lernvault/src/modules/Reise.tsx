@@ -1,12 +1,16 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import {
   type Reise,
+  type Schritt,
   type SchrittEntdecken,
   type SchrittAusprobieren,
   type SchrittCheck,
   type SchrittSzenario,
   type SchrittMuendlich,
   exemplarReise,
+  getExemplarReise,
+  getStepTitle,
+  resolveCourseForAudience,
 } from "../reise";
 import { FAECHER } from "../fach";
 import Blocks, { renderFormattedText } from "../components/Blocks";
@@ -33,6 +37,27 @@ import OralExamTimer from "../components/pedagogy/OralExamTimer";
 import { MarktMechanismusSim } from "../components/pedagogy/MarktMechanismusSim";
 import { KinematikSim } from "../components/pedagogy/KinematikSim";
 import ImageAnswerUpload from "../components/ImageAnswerUpload";
+
+function CheckMarkSvg() {
+  return (
+    <svg
+      width="16"
+      height="16"
+      viewBox="0 0 16 16"
+      fill="none"
+      stroke="currentColor"
+      aria-hidden="true"
+      className="w-3.5 h-3.5 inline-block shrink-0"
+    >
+      <path
+        d="M3 8.5l3.5 3.5L13 5"
+        strokeWidth="1.75"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+}
 
 function getAutoToolForContext(fach: string, thema: string): string | null {
   const f = (fach || "").toLowerCase();
@@ -181,10 +206,12 @@ export default function ReiseModule({
   lang,
   vaultReisen,
   initialCourseId,
+  initialViewMode = "steps",
 }: {
   lang: Lang;
   vaultReisen?: Reise[] | null;
   initialCourseId?: string | null;
+  initialViewMode?: "document" | "steps";
 }) {
   // Aggregate available courses: exemplar course + any courses from vault
   const allReisen = useMemo(() => {
@@ -201,10 +228,11 @@ export default function ReiseModule({
     typeof window !== "undefined" &&
     new URLSearchParams(window.location.search).get("mode") === "wizard"
       ? null
-      : exemplarReise;
+      : getExemplarReise(lang);
 
   const [activeCourse, setActiveCourse] = useState<Reise | null>(initialCourse);
   const [stepIdx, setStepIdx] = useState(0);
+  const [viewMode, setViewMode] = useState<"document" | "steps">(initialViewMode);
 
   useEffect(() => {
     if (initialCourseId) {
@@ -212,10 +240,15 @@ export default function ReiseModule({
         (r) => r.id === initialCourseId || r.path === initialCourseId || r.id.endsWith(initialCourseId)
       );
       if (found) {
-        setActiveCourse(found);
+        setActiveCourse(resolveCourseForAudience(found, allReisen, lang));
+      }
+    } else if (activeCourse && lang === "de" && !activeCourse.path.includes("-DE-")) {
+      const resolved = resolveCourseForAudience(activeCourse, allReisen, "de");
+      if (resolved.id !== activeCourse.id) {
+        setActiveCourse(resolved);
       }
     }
-  }, [initialCourseId, allReisen]);
+  }, [initialCourseId, allReisen, lang, activeCourse]);
 
   // Wizard filters
   const [wizardFach, setWizardFach] = useState<string>("SoWi");
@@ -234,6 +267,33 @@ export default function ReiseModule({
   const [tryImage, setTryImage] = useState<string | null>(null);
   const [tryShowHelp, setTryShowHelp] = useState(false);
   const [tryFeedback, setTryFeedback] = useState<string | null>(null);
+
+  // Multi-step document state maps
+  const [tryInputMap, setTryInputMap] = useState<Record<number, string>>({});
+  const [tryImageMap, setTryImageMap] = useState<Record<number, string | null>>({});
+  const [tryFeedbackMap, setTryFeedbackMap] = useState<Record<number, string | null>>({});
+  const [tryShowHelpMap, setTryShowHelpMap] = useState<Record<number, boolean>>({});
+
+  const getTryInput = (idx: number) => tryInputMap[idx] ?? tryInput;
+  const setTryInputFor = (idx: number, val: string) => {
+    setTryInput(val);
+    setTryInputMap((prev) => ({ ...prev, [idx]: val }));
+  };
+  const getTryImage = (idx: number) => tryImageMap[idx] ?? tryImage;
+  const setTryImageFor = (idx: number, img: string | null) => {
+    setTryImage(img);
+    setTryImageMap((prev) => ({ ...prev, [idx]: img }));
+  };
+  const getTryFeedback = (idx: number) => tryFeedbackMap[idx] ?? tryFeedback;
+  const setTryFeedbackFor = (idx: number, fb: string | null) => {
+    setTryFeedback(fb);
+    setTryFeedbackMap((prev) => ({ ...prev, [idx]: fb }));
+  };
+  const getTryShowHelp = (idx: number) => tryShowHelpMap[idx] ?? tryShowHelp;
+  const toggleTryShowHelpFor = (idx: number) => {
+    setTryShowHelp((prev) => !prev);
+    setTryShowHelpMap((prev) => ({ ...prev, [idx]: !prev[idx] }));
+  };
 
   // Step 3 (Check) state: checks per item
   const [checkPassed, setCheckPassed] = useState<Record<string, boolean>>({});
@@ -255,8 +315,6 @@ export default function ReiseModule({
   const [recording, setRecording] = useState(false);
   const mediaRecorderRef = useRef<MediaRecorder | null>(null);
   const audioChunksRef = useRef<Blob[]>([]);
-  const [oralSec, setOralSec] = useState(180);
-  const [oralRunning, setOralRunning] = useState(false);
   const [oralChecks, setOralChecks] = useState<boolean[]>([]);
   const [oralText, setOralText] = useState("");
   const [oralScore, setOralScore] = useState<{ loading: boolean; text: string; rounds: number }>({
@@ -338,13 +396,6 @@ export default function ReiseModule({
     const id = setInterval(() => setSzenarioSec((s) => s + 1), 1000);
     return () => clearInterval(id);
   }, [szenarioRunning]);
-
-  // Oral countdown tick
-  useEffect(() => {
-    if (!oralRunning) return;
-    const id = setInterval(() => setOralSec((s) => Math.max(0, s - 1)), 1000);
-    return () => clearInterval(id);
-  }, [oralRunning]);
 
   // Award XP and sync streak
   const addXP = (amount: number, stepIndex: number) => {
@@ -440,7 +491,6 @@ export default function ReiseModule({
       mediaRecorderRef.current = mr;
       mr.start();
       setRecording(true);
-      setOralRunning(true);
     } catch {
       alert(
         lang === "de"
@@ -454,7 +504,6 @@ export default function ReiseModule({
     if (mediaRecorderRef.current && recording) {
       mediaRecorderRef.current.stop();
       setRecording(false);
-      setOralRunning(false);
     }
   };
 
@@ -487,7 +536,6 @@ export default function ReiseModule({
 
   const stepKey =
     activeCourse && currentSchritt ? `${activeCourse.id}#${currentSchritt.stepNumber}` : "";
-  const kiBox: KiBox | undefined = stepKey ? kiStore[stepKey] : undefined;
 
   // D2: entdecken-schritt betreten -> KI-erklaerung automatisch (nur wenn engine an)
   useEffect(() => {
@@ -552,6 +600,845 @@ export default function ReiseModule({
     return `${mm}:${ss}`;
   };
 
+  const renderSchrittContent = (s: Schritt, idx: number, isDoc: boolean) => {
+    if (!activeCourse) return null;
+
+    // STEP 1: ENTDECKEN (讲解)
+    if (s.typ === "entdecken") {
+      const stepEnt = s as SchrittEntdecken;
+      const sKey = `${activeCourse.id}#${s.stepNumber}`;
+      const box = kiStore[sKey];
+
+      return (
+        <div className="space-y-6">
+          <div className="prose max-w-none">
+            <Blocks
+              blocks={stepEnt.blocks}
+              pureGerman={lang === "de"}
+              renderDiagram={(spec, i) => (
+                <DiagramFig
+                  spec={spec}
+                  courseId={activeCourse.id}
+                  step={s.stepNumber}
+                  index={i}
+                  thema={activeCourse.thema}
+                  fach={activeCourse.fach}
+                  lang={lang}
+                />
+              )}
+            />
+          </div>
+
+          {/* Eingebettetes didaktisches Werkzeug falls im Text deklariert */}
+          {(() => {
+            const raw = stepEnt.rawText || "";
+            const match = /\[Werkzeug:\s*([a-zA-Z0-9_\-]+)\]/i.exec(raw);
+            const tool = s.toolId || (match ? match[1] : null);
+            return tool ? renderEmbeddedTool(tool, lang, activeCourse.fach) : null;
+          })()}
+
+          {/* D2: KI-erklaerung (auto) + rueckfragen */}
+          {(box?.loading || box?.text) && (
+            <div
+              aria-live="polite"
+              aria-busy={box.loading}
+              className="rounded-[var(--radius)] border border-[var(--accent)]/30 bg-[var(--paper-subtle)] p-4 space-y-3"
+            >
+              <div className="font-mono text-[var(--text-meta)] uppercase tracking-wider text-[var(--accent)]">
+                KI-Erklärung · AI讲解
+              </div>
+              {box.loading && !box.text ? (
+                <div role="status" className="font-sans text-sm text-[var(--gray)]">
+                  {lang === "de" ? "KI erklärt …" : "AI讲解中…"}
+                </div>
+              ) : (
+                <div className="font-sans text-sm leading-relaxed text-[var(--ink)] whitespace-pre-wrap">
+                  {box.text}
+                </div>
+              )}
+              {box.chat.map((c, i) => (
+                <div key={i} className="space-y-1 border-t border-[var(--line)] pt-2">
+                  <div className="font-sans text-xs text-[var(--gray)]">→ {c.q}</div>
+                  <div className="font-sans text-sm leading-relaxed text-[var(--ink)] whitespace-pre-wrap">
+                    {c.a}
+                  </div>
+                </div>
+              ))}
+              <div className="flex flex-wrap gap-2">
+                <input
+                  value={kiFollow}
+                  onChange={(e) => setKiFollow(e.target.value)}
+                  onKeyDown={(e) => {
+                    if (e.key === "Enter") sendKiFollow();
+                  }}
+                  placeholder={lang === "de" ? "Nachfragen …" : "追问…"}
+                  className="flex-1 rounded-[var(--radius)] border border-[var(--line)] bg-[var(--surface)] px-2 py-1.5 font-sans text-sm text-[var(--ink)] focus:border-[var(--accent)] focus:outline-none"
+                />
+                <button
+                  type="button"
+                  onClick={sendKiFollow}
+                  className="rounded-[var(--radius)] border border-[var(--ink)] bg-[var(--ink)] px-3 py-1.5 font-mono text-xs text-[var(--paper)] hover:bg-[var(--accent)] hover:border-[var(--accent)] active:scale-95 transition-all"
+                >
+                  {lang === "de" ? "Fragen" : "发送"}
+                </button>
+              </div>
+            </div>
+          )}
+
+          <div className="pt-4 border-t border-[var(--line)] flex flex-wrap items-center justify-between gap-3">
+            <div className="text-xs font-mono text-[var(--gray)]">
+              {unlocked.includes(idx + 1) ? (
+                <span className="text-[var(--accent)] font-semibold flex items-center gap-1">
+                  <CheckMarkSvg /> {lang === "de" ? "Abschnitt gelesen" : "本节已阅读"}
+                </span>
+              ) : null}
+            </div>
+            {!isDoc ? (
+              <button
+                type="button"
+                onClick={() => goNextOrFinish(5)}
+                className="px-4 py-2 font-mono text-xs uppercase tracking-wider bg-[var(--ink)] text-[var(--paper)] hover:bg-[var(--accent)] rounded-[var(--radius)] transition-colors whitespace-normal text-center"
+              >
+                {isLastStep
+                  ? lang === "de"
+                    ? "Abschließen (+5 XP)"
+                    : "完成课程 (+5 XP)"
+                  : lang === "de"
+                  ? "Weiter (+5 XP) →"
+                  : "已理解，下一步 (+5 XP) →"}
+              </button>
+            ) : (
+              !unlocked.includes(idx + 1) && (
+                <button
+                  type="button"
+                  onClick={() => unlockNextStep(idx + 1, 5)}
+                  className="px-3 py-1.5 font-mono text-xs uppercase border border-[var(--accent)] text-[var(--accent)] hover:bg-[var(--accent)]/10 rounded-[var(--radius)] transition-colors"
+                >
+                  {lang === "de" ? "Als verstanden markieren (+5 XP)" : "标记为已理解 (+5 XP)"}
+                </button>
+              )
+            )}
+          </div>
+        </div>
+      );
+    }
+
+    // STEP 2: AUSPROBIEREN (动手)
+    if (s.typ === "ausprobieren") {
+      const stepAus = s as SchrittAusprobieren;
+      const aufgabe = stepAus.aufgabe || "";
+      const match = /\[Werkzeug:\s*([a-zA-Z0-9_\-]+)\]/i.exec(aufgabe);
+      const cleanAufgabe = aufgabe.replace(/\[Werkzeug:\s*[a-zA-Z0-9_\-]+\]/gi, "").trim();
+      const tool =
+        stepAus.toolId ||
+        (match ? match[1] : null) ||
+        getAutoToolForContext(activeCourse.fach, activeCourse.thema);
+
+      const curInput = isDoc ? getTryInput(s.stepNumber) : tryInput;
+      const curImage = isDoc ? getTryImage(s.stepNumber) : tryImage;
+      const curShowHelp = isDoc ? getTryShowHelp(s.stepNumber) : tryShowHelp;
+      const curFeedback = isDoc ? getTryFeedback(s.stepNumber) : tryFeedback;
+
+      return (
+        <div className="space-y-5">
+          <div className="border border-[var(--line)] bg-[var(--paper-subtle)] p-4 rounded-[var(--radius)] font-serif text-base text-[var(--ink)] leading-relaxed">
+            {renderFormattedText(cleanAufgabe)}
+          </div>
+
+          {tool && renderEmbeddedTool(tool, lang, activeCourse.fach)}
+
+          {stepAus.hilfe && (
+            <div>
+              <button
+                type="button"
+                onClick={() => (isDoc ? toggleTryShowHelpFor(s.stepNumber) : setTryShowHelp((h) => !h))}
+                className="text-xs font-mono text-[var(--accent)] hover:underline"
+              >
+                {curShowHelp
+                  ? lang === "de"
+                    ? "[- Hilfe verbergen]"
+                    : "[- Hilfe verbergen / 隐藏提示]"
+                  : lang === "de"
+                  ? "[+ Hilfe anzeigen]"
+                  : "[+ Hilfe anzeigen / 显示解题提示]"}
+              </button>
+              {curShowHelp && (
+                <div className="mt-2 p-3 border border-dashed border-[var(--line)] bg-[var(--paper-subtle)] text-xs font-sans text-[var(--gray)] rounded-[var(--radius)]">
+                  {renderFormattedText(stepAus.hilfe)}
+                </div>
+              )}
+            </div>
+          )}
+
+          <div className="space-y-2">
+            <label className="block text-xs font-mono uppercase text-[var(--gray)]">
+              {lang === "de" ? "Deine Antwort:" : "Deine Antwort / 你的作答："}
+            </label>
+            <textarea
+              rows={3}
+              value={curInput}
+              onChange={(e) =>
+                isDoc ? setTryInputFor(s.stepNumber, e.target.value) : setTryInput(e.target.value)
+              }
+              placeholder={lang === "de" ? "Hier Antwort eingeben …" : "Hier zuordnen oder Stichpunkte eingeben..."}
+              className="w-full border border-[var(--line)] p-3 text-sm font-sans rounded-[var(--radius)] focus:border-[var(--accent)] focus:outline-none"
+            />
+            <ImageAnswerUpload
+              lang={lang}
+              onImageSelected={(img) =>
+                isDoc ? setTryImageFor(s.stepNumber, img) : setTryImage(img)
+              }
+              onTextTranscribed={(transcription) => {
+                const prev = curInput;
+                const nextVal = prev.trim() ? prev + "\n\n" + transcription : transcription;
+                if (isDoc) setTryInputFor(s.stepNumber, nextVal);
+                else setTryInput(nextVal);
+              }}
+            />
+          </div>
+
+          {curFeedback && (
+            <div
+              role="status"
+              aria-live="polite"
+              aria-atomic="true"
+              className="border border-[var(--accent)]/30 bg-[var(--paper-subtle)] p-3 text-xs font-mono text-[var(--ink)] rounded-[var(--radius)] whitespace-pre-wrap leading-relaxed"
+            >
+              {curFeedback}
+            </div>
+          )}
+
+          <div className="flex flex-wrap items-center justify-between gap-3 border-t border-[var(--line)] pt-4">
+            <button
+              type="button"
+              onClick={() => {
+                if (!curInput.trim() && !curImage) {
+                  const msg =
+                    lang === "de"
+                      ? "Bitte zuerst einen Antwortversuch eingeben oder Bild hochladen."
+                      : "请先输入作答或上传手写作答图片。";
+                  if (isDoc) setTryFeedbackFor(s.stepNumber, msg);
+                  else setTryFeedback(msg);
+                  return;
+                }
+                if (!kiOn()) {
+                  const msg =
+                    lang === "de"
+                      ? "Versuch notiert — prüfe dich mit der Musterlösung."
+                      : "Versuch notiert — prüfe dich mit der Musterlösung / 已记录作答，对照解析自查。";
+                  if (isDoc) setTryFeedbackFor(s.stepNumber, msg);
+                  else setTryFeedback(msg);
+                } else {
+                  const waitMsg = lang === "de" ? "KI liest mit …" : "KI liest mit … / AI正在点评…";
+                  if (isDoc) setTryFeedbackFor(s.stepNumber, waitMsg);
+                  else setTryFeedback(waitMsg);
+                  void askKi(
+                    buildTryFeedbackPrompt(
+                      activeCourse.thema,
+                      stepAus.aufgabe,
+                      stepAus.antwort ?? "",
+                      curInput || (curImage ? "[Siehe hochgeladenes Bild / 见上传手写作答]" : "")
+                    ),
+                    curImage ? { image: curImage } : undefined
+                  ).then((r) => {
+                    const resMsg =
+                      r ??
+                      (lang === "de"
+                        ? "Versuch notiert — prüfe dich mit der Musterlösung."
+                        : "Versuch notiert — prüfe dich mit der Musterlösung / 已记录作答，对照解析自查。");
+                    if (isDoc) setTryFeedbackFor(s.stepNumber, resMsg);
+                    else setTryFeedback(resMsg);
+                  });
+                }
+                unlockNextStep(idx + 1, 15);
+              }}
+              className="px-4 py-2 font-mono text-xs uppercase border border-[var(--line)] hover:border-[var(--ink)] rounded-[var(--radius)] transition-colors text-[var(--ink)] whitespace-normal text-center"
+            >
+              {lang === "de" ? "Antwort prüfen" : "检查答案"}
+            </button>
+
+            {!isDoc ? (
+              <button
+                type="button"
+                disabled={!unlocked.includes(stepIdx + 1)}
+                onClick={() => goNextOrFinish(15)}
+                className={`px-5 py-2 font-mono text-xs uppercase tracking-wider rounded-[var(--radius)] transition-colors ${
+                  unlocked.includes(stepIdx + 1)
+                    ? "bg-[var(--ink)] text-[var(--paper)] hover:bg-[var(--accent)]"
+                    : "bg-[var(--line)] text-[var(--gray)] cursor-not-allowed"
+                }`}
+              >
+                {isLastStep
+                  ? lang === "de"
+                    ? "Abschließen (+15 XP)"
+                    : "完成课程 (+15 XP)"
+                  : lang === "de"
+                  ? "Weiter (+15 XP) →"
+                  : "下一步 (+15 XP) →"}
+              </button>
+            ) : (
+              unlocked.includes(idx + 1) && (
+                <span className="text-xs font-mono text-[var(--accent)] font-semibold flex items-center gap-1">
+                  <CheckMarkSvg /> {lang === "de" ? "Erledigt (+15 XP)" : "已完成 (+15 XP)"}
+                </span>
+              )
+            )}
+          </div>
+        </div>
+      );
+    }
+
+    // STEP 3: CHECK (过关题)
+    if (s.typ === "check") {
+      const stepCheck = s as SchrittCheck;
+      const checkItems = stepCheck.items;
+      const allDone = checkItems.length > 0 && checkItems.every((item) => checkPassed[item.id]);
+
+      return (
+        <div className="space-y-6">
+          <div className="divide-y divide-[var(--line)] border-y border-[var(--line)]">
+            {checkItems.map((item, itemIdx) => {
+              const isPassed = checkPassed[item.id];
+              const isRevealed = checkRevealed[item.id];
+
+              return (
+                <div key={item.id} className="p-4 space-y-2">
+                  <div className="flex items-start justify-between gap-3">
+                    <div className="flex-1">
+                      <span className="font-mono text-xs font-semibold text-[var(--ink)] mr-2">
+                        Frage {itemIdx + 1}:
+                      </span>
+                      <span className="font-serif text-sm text-[var(--ink)]">
+                        {renderFormattedText(item.frage)}
+                      </span>
+                    </div>
+                    <button
+                      type="button"
+                      onClick={() =>
+                        setCheckRevealed((prev) => ({
+                          ...prev,
+                          [item.id]: !prev[item.id],
+                        }))
+                      }
+                      className="text-xs font-mono text-[var(--gray)] hover:text-[var(--accent)]"
+                    >
+                      {isRevealed ? "[Antwort]" : "[Lösung zeigen]"}
+                    </button>
+                  </div>
+
+                  {isRevealed && (
+                    <div className="border-l-2 border-[var(--accent)] pl-3 text-xs font-mono text-[var(--gray)] bg-[var(--paper-subtle)] py-1.5">
+                      Erwartete Punkte: {renderFormattedText(item.antwort)}
+                    </div>
+                  )}
+
+                  {/* FelloFish:默写→AI打分·纠错·教学→再练 */}
+                  <div className="space-y-2">
+                    <textarea
+                      rows={2}
+                      value={checkText[item.id] ?? ""}
+                      onChange={(e) =>
+                        setCheckText((prev) => ({ ...prev, [item.id]: e.target.value }))
+                      }
+                      placeholder={lang === "de" ? "Antwort aus dem Kopf herschreiben …" : "合书默写答案…（先自己写，再点AI批改）"}
+                      className="w-full border border-[var(--line)] p-2.5 text-sm font-sans rounded-[var(--radius)] focus:border-[var(--accent)] focus:outline-none"
+                    />
+                    <div className="flex items-center gap-2">
+                      <button
+                        type="button"
+                        disabled={!(checkText[item.id] ?? "").trim() || checkScore[item.id]?.loading || kiOff}
+                        title={kiOff ? kiOffTitle : undefined}
+                        onClick={() => {
+                          if (kiOff || checkScore[item.id]?.loading) return;
+                          setCheckScore((prev) => ({
+                            ...prev,
+                            [item.id]: { loading: true, text: prev[item.id]?.text ?? "", rounds: prev[item.id]?.rounds ?? 0 },
+                          }));
+                          void askKi(
+                            buildCheckScorePrompt(item.frage, item.antwort, checkText[item.id] ?? "", activeCourse.thema)
+                          ).then((r) =>
+                            setCheckScore((prev) => ({
+                              ...prev,
+                              [item.id]: {
+                                loading: false,
+                                text: r ?? "(KI derzeit nicht erreichbar. / AI暂时不可用。)",
+                                rounds: (prev[item.id]?.rounds ?? 0) + 1,
+                              },
+                            }))
+                          );
+                        }}
+                        className={`px-2.5 py-1 text-xs font-mono rounded-[var(--radius)] border transition-all ${
+                          !(checkText[item.id] ?? "").trim() || checkScore[item.id]?.loading || kiOff
+                            ? "border-[var(--line)] text-[var(--gray)]/50 cursor-not-allowed"
+                            : "border-[var(--accent)] text-[var(--accent)] hover:bg-[var(--accent)]/5 active:scale-95"
+                        }`}
+                      >
+                        {checkScore[item.id]?.loading
+                          ? lang === "de" ? "KI liest …" : "AI批改中…"
+                          : (checkScore[item.id]?.rounds ?? 0) === 0
+                            ? lang === "de" ? `KI bewerten${kiOff ? kiOffSuffix : ""}` : `AI批改·打分${kiOff ? kiOffSuffix : ""}`
+                            : lang === "de"
+                              ? `Erneut prüfen (${checkScore[item.id]?.rounds})`
+                              : `改完再评（第${checkScore[item.id]?.rounds}轮）`}
+                      </button>
+                    </div>
+                    {checkScore[item.id]?.text && (
+                      <div role="status" aria-live="polite" aria-atomic="true" className="border-l-2 border-[var(--accent)] pl-3 text-xs font-sans text-[var(--ink)] bg-[var(--paper-subtle)] py-1.5 whitespace-pre-wrap leading-relaxed">
+                        {checkScore[item.id].text}
+                      </div>
+                    )}
+                  </div>
+
+                  <div className="flex items-center justify-end gap-2 pt-1">
+                    {/* D2: KI-erklaerung zum warum */}
+                    <button
+                      type="button"
+                      disabled={kiOff}
+                      title={kiOff ? kiOffTitle : undefined}
+                      onClick={() => {
+                        if (!kiOn() || checkWhy[item.id]?.loading) return;
+                        setCheckWhy((prev) => ({ ...prev, [item.id]: { loading: true, text: "" } }));
+                        void askKi(
+                          buildCheckExplainPrompt(item.frage, item.antwort, activeCourse.thema)
+                        ).then((r) =>
+                          setCheckWhy((prev) => ({
+                            ...prev,
+                            [item.id]: {
+                              loading: false,
+                              text: r ?? "(KI derzeit nicht erreichbar. / AI暂时不可用。)",
+                            },
+                          }))
+                        );
+                      }}
+                      className={`px-2.5 py-1 text-xs font-mono rounded-[var(--radius)] border border-[var(--line)] transition-all ${
+                        kiOff
+                          ? "text-[var(--gray)]/50 cursor-not-allowed"
+                          : "text-[var(--gray)] hover:border-[var(--accent)] hover:text-[var(--accent)]"
+                      }`}
+                    >
+                      {checkWhy[item.id]?.loading
+                        ? "…"
+                        : lang === "de"
+                          ? `Warum? KI erklärt${kiOff ? kiOffSuffix : ""}`
+                          : `为啥？AI讲解${kiOff ? kiOffSuffix : ""}`}
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() => {
+                        setCheckPassed((prev) => ({
+                          ...prev,
+                          [item.id]: !prev[item.id],
+                        }));
+                      }}
+                      className={`px-2.5 py-1 text-xs font-mono rounded-[var(--radius)] border ${
+                        isPassed
+                          ? "border-[var(--success)] bg-[var(--success)]/10 text-[var(--success)] font-semibold"
+                          : "border-[var(--line)] text-[var(--gray)] hover:border-[var(--ink)]"
+                      }`}
+                    >
+                      {isPassed
+                        ? lang === "de"
+                          ? "Bestanden"
+                          : "Bestanden / 已掌握"
+                        : lang === "de"
+                        ? "Selbstcheck"
+                        : "Selbstcheck / 标为通过"}
+                    </button>
+                  </div>
+                  {checkWhy[item.id]?.text && (
+                    <div role="status" aria-live="polite" aria-atomic="true" className="border-l-2 border-[var(--accent)] pl-3 text-xs font-sans text-[var(--ink)] bg-[var(--paper-subtle)] py-1.5 whitespace-pre-wrap leading-relaxed">
+                      {checkWhy[item.id].text}
+                    </div>
+                  )}
+                </div>
+              );
+            })}
+          </div>
+
+          {/* Fehlerlog Draft Specimen with Copy Button */}
+          <div className="border border-dashed border-[var(--line)] bg-[var(--paper-subtle)] p-4 rounded-[var(--radius)]">
+            <div className="flex items-center justify-between text-xs font-mono text-[var(--gray)] mb-2">
+              <span>{lang === "de" ? "FEHLERLOG-ENTWURF" : "FEHLERLOG-ENTWURF / 错题补丁"}</span>
+              <button
+                type="button"
+                onClick={() => {
+                  const patch = `- [ ] [${activeCourse.fach}] ${activeCourse.thema}: Check-Fehler nacharbeiten`;
+                  navigator.clipboard.writeText(patch);
+                  setCopiedPatch(true);
+                  setTimeout(() => setCopiedPatch(false), 2000);
+                }}
+                aria-live="polite"
+                className="text-xs font-mono text-[var(--accent)] hover:underline"
+              >
+                {copiedPatch ? "Kopiert!" : lang === "de" ? "Kopieren" : "Kopieren / 复制补丁"}
+              </button>
+            </div>
+            <code className="block bg-[var(--surface)] border border-[var(--line)] p-2.5 font-mono text-xs text-[var(--ink)] rounded-[var(--radius)]">
+              - [ ] [{activeCourse.fach}] {activeCourse.thema}: Check-Fehler nacharbeiten
+            </code>
+          </div>
+
+          {/* Gating Lock check */}
+          <div className="flex flex-wrap items-center justify-between gap-3 border-t border-[var(--line)] pt-4">
+            <span className="text-xs font-mono text-[var(--gray)]">
+              {allDone
+                ? lang === "de" ? "Alle Fragen gemeistert" : "所有题目已全部掌握"
+                : lang === "de" ? "Alle Fragen müssen als bestanden markiert sein." : "需将题目标为已掌握。"}
+            </span>
+            {!isDoc ? (
+              <button
+                type="button"
+                disabled={!allDone}
+                onClick={() => goNextOrFinish(20)}
+                className={`px-5 py-2 font-mono text-xs uppercase tracking-wider rounded-[var(--radius)] transition-colors ${
+                  allDone
+                    ? "bg-[var(--ink)] text-[var(--paper)] hover:bg-[var(--accent)]"
+                    : "bg-[var(--line)] text-[var(--gray)] cursor-not-allowed"
+                }`}
+              >
+                {isLastStep
+                  ? lang === "de"
+                    ? "Abschließen (+20 XP)"
+                    : "完成课程 (+20 XP)"
+                  : lang === "de"
+                  ? "Weiter (+20 XP) →"
+                  : "下一步 (+20 XP) →"}
+              </button>
+            ) : (
+              allDone && (
+                <span className="text-xs font-mono text-[var(--accent)] font-semibold flex items-center gap-1">
+                  <CheckMarkSvg /> {lang === "de" ? "Check bestanden (+20 XP)" : "已全部过关 (+20 XP)"}
+                </span>
+              )
+            )}
+          </div>
+        </div>
+      );
+    }
+
+    // STEP 4: SZENARIO (场景实战)
+    if (s.typ === "szenario") {
+      const stepSzen = s as SchrittSzenario;
+      const rubricPassed = rubricChecks.filter(Boolean).length;
+
+      return (
+        <div className="space-y-5">
+          <div className="border border-[var(--line)] bg-[var(--paper-subtle)] p-4 rounded-[var(--radius)] space-y-2">
+            <div className="text-xs font-mono uppercase text-[var(--accent)]">
+              Rolle: {stepSzen.rolle}
+            </div>
+            <div className="font-serif text-base text-[var(--ink)] leading-relaxed">
+              {renderFormattedText(stepSzen.situation)}
+            </div>
+          </div>
+
+          {/* Timer row */}
+          <div className="flex flex-wrap items-center justify-between gap-3 border border-[var(--line)] p-3 rounded-[var(--radius)] bg-[var(--surface)]">
+            <div className="flex items-baseline gap-2">
+              <span className="font-mono text-2xl font-normal tabular-nums text-[var(--ink)]">
+                {formatTime(szenarioSec)}
+              </span>
+              <span className="font-mono text-xs text-[var(--gray)]">
+                / 02:00 {lang === "de" ? "Zielzeit" : "目标用时"}
+              </span>
+            </div>
+            <button
+              type="button"
+              onClick={() => setSzenarioRunning((r) => !r)}
+              className="px-3 py-1 font-mono text-xs uppercase border border-[var(--ink)] rounded-[var(--radius)] hover:bg-[var(--paper-subtle)]"
+            >
+              {szenarioRunning ? "Stopp" : "Start"}
+            </button>
+          </div>
+
+          <div className="space-y-2">
+            <label className="block text-xs font-mono uppercase text-[var(--gray)]">
+              {lang === "de" ? "Plädoyer verfassen:" : "Plädoyer verfassen / 撰写辩论发言："}
+            </label>
+            <textarea
+              rows={4}
+              value={szenarioText}
+              onChange={(e) => setSzenarioText(e.target.value)}
+              placeholder={lang === "de" ? "Beginne mit einer klaren These …" : "Beginne mit einer klaren These..."}
+              className="w-full border border-[var(--line)] p-3 text-sm font-serif rounded-[var(--radius)] focus:border-[var(--accent)] focus:outline-none"
+            />
+            <ImageAnswerUpload
+              lang={lang}
+              onImageSelected={setSzenarioImage}
+              onTextTranscribed={(transcription) => {
+                setSzenarioText((prev) => (prev.trim() ? prev + "\n\n" + transcription : transcription));
+              }}
+            />
+          </div>
+
+          {/* Rubric Checklist */}
+          <div className="border border-[var(--line)] rounded-[var(--radius)] bg-[var(--paper-subtle)] p-4 space-y-2">
+            <div className="text-xs font-mono uppercase text-[var(--gray)] tracking-wider mb-1">
+              {lang === "de" ? "Kriterienkatalog (Rubric):" : "Rubric / 自评检查点（勾选核对）："}
+            </div>
+            {stepSzen.rubricPoints.map((p, i) => (
+              <label key={i} className="flex items-start gap-2.5 text-xs font-mono text-[var(--ink)] cursor-pointer">
+                <input
+                  type="checkbox"
+                  checked={rubricChecks[i] ?? false}
+                  onChange={() =>
+                    setRubricChecks((prev) =>
+                      prev.map((v, j) => (j === i ? !v : v))
+                    )
+                  }
+                  className="mt-0.5 h-3.5 w-3.5 accent-[var(--accent)]"
+                />
+                <span>{renderFormattedText(p)}</span>
+              </label>
+            ))}
+          </div>
+
+          {/* D3: KI-bewertung (FelloFish-stil) + ueberarbeiten-runden */}
+          <div className="flex items-center gap-2">
+            <button
+              type="button"
+              onClick={() => {
+                if ((!szenarioText.trim() && !szenarioImage) || szenarioScore.loading) return;
+                if (!kiOn()) return;
+                setSzenarioScore((prev) => ({ ...prev, loading: true }));
+                void askKi(
+                  buildSzenarioScorePrompt(
+                    activeCourse.fach,
+                    activeCourse.thema,
+                    stepSzen.situation,
+                    stepSzen.rubricPoints,
+                    szenarioText || (szenarioImage ? (lang === "de" ? "[Siehe hochgeladenes Bild]" : "[Siehe hochgeladenes Dokument / 见上传手写与作答图]") : "")
+                  ),
+                  szenarioImage ? { image: szenarioImage } : undefined
+                ).then((r) =>
+                  setSzenarioScore((prev) => ({
+                    loading: false,
+                    text: r ?? (lang === "de" ? "(KI derzeit nicht erreichbar.)" : "(KI derzeit nicht erreichbar. / AI暂时不可用。)"),
+                    rounds: prev.rounds + 1,
+                  }))
+                );
+              }}
+              disabled={(!szenarioText.trim() && !szenarioImage) || szenarioScore.loading || kiOff}
+              title={kiOff ? kiOffTitle : undefined}
+              className={`px-4 py-2 font-mono text-xs uppercase rounded-[var(--radius)] border transition-all ${
+                (!szenarioText.trim() && !szenarioImage) || szenarioScore.loading || kiOff
+                  ? "border-[var(--line)] text-[var(--gray)] cursor-not-allowed"
+                  : "border-[var(--accent)] text-[var(--accent)] hover:bg-[var(--accent)]/5 active:scale-95"
+              }`}
+            >
+              {szenarioScore.loading
+                ? lang === "de" ? "KI liest …" : "AI批改中…"
+                : szenarioScore.rounds === 0
+                  ? lang === "de" ? `KI bewerten${kiOff ? kiOffSuffix : ""}` : `AI批改·打分${kiOff ? kiOffSuffix : ""}`
+                  : lang === "de"
+                    ? `Erneut bewerten (${szenarioScore.rounds})`
+                    : `改完再评（第${szenarioScore.rounds}轮）`}
+            </button>
+            {szenarioScore.rounds > 0 && (
+              <span className="font-mono text-[var(--text-meta)] text-[var(--gray)]">
+                {lang === "de" ? `Durchgang ${szenarioScore.rounds}` : `第${szenarioScore.rounds}轮`}
+              </span>
+            )}
+          </div>
+          {szenarioScore.text && (
+            <div role="status" aria-live="polite" aria-atomic="true" className="rounded-[var(--radius)] border border-[var(--accent)]/30 bg-[var(--paper-subtle)] p-4 font-sans text-sm leading-relaxed text-[var(--ink)] whitespace-pre-wrap">
+              {szenarioScore.text}
+            </div>
+          )}
+
+          <div className="flex flex-wrap items-center justify-between gap-3 border-t border-[var(--line)] pt-4">
+            <span className="text-xs font-mono text-[var(--gray)]">
+              {lang === "de" ? `Rubric: ${rubricPassed} Kriterien erfüllt` : `已核对 ${rubricPassed} 个评分点（需至少 2 点）`}
+            </span>
+            {!isDoc ? (
+              <button
+                type="button"
+                disabled={rubricPassed < 2}
+                onClick={() => goNextOrFinish(30)}
+                className={`px-5 py-2 font-mono text-xs uppercase tracking-wider rounded-[var(--radius)] transition-colors ${
+                  rubricPassed >= 2
+                    ? "bg-[var(--ink)] text-[var(--paper)] hover:bg-[var(--accent)]"
+                    : "bg-[var(--line)] text-[var(--gray)] cursor-not-allowed"
+                }`}
+              >
+                {isLastStep
+                  ? lang === "de"
+                    ? "Abschließen (+30 XP)"
+                    : "完成课程 (+30 XP)"
+                  : lang === "de"
+                  ? "Weiter (+30 XP) →"
+                  : "下一步 (+30 XP) →"}
+              </button>
+            ) : (
+              rubricPassed >= 2 && (
+                <span className="text-xs font-mono text-[var(--accent)] font-semibold flex items-center gap-1">
+                  <CheckMarkSvg /> {lang === "de" ? "Szenario gemeistert (+30 XP)" : "场景已掌握 (+30 XP)"}
+                </span>
+              )
+            )}
+          </div>
+        </div>
+      );
+    }
+
+    // STEP 5: MUENDLICH (口试模拟)
+    if (s.typ === "muendlich") {
+      const stepMu = s as SchrittMuendlich;
+
+      return (
+        <div className="space-y-6">
+          <div className="border border-[var(--line)] bg-[var(--paper-subtle)] p-4 rounded-[var(--radius)] space-y-2">
+            <div className="text-xs font-mono uppercase text-[var(--accent)] font-semibold">
+              {lang === "de" ? "Prüfungsaufgabe (Ziehung):" : "考题抽签 (Ziehung)："}
+            </div>
+            <div className="font-serif text-base text-[var(--ink)] leading-relaxed">
+              {renderFormattedText(stepMu.ziehung)}
+            </div>
+          </div>
+
+          {/* D3-muendlich: 3-Minuten-Countdown / OralExamTimer */}
+          <OralExamTimer lang={lang} fach={activeCourse.fach} />
+
+          {/* Audio recording controls */}
+          <div className="border border-[var(--line)] p-4 rounded-[var(--radius)] bg-[var(--surface)] space-y-3">
+            <div className="flex items-center justify-between">
+              <span className="text-xs font-mono uppercase text-[var(--gray)]">
+                Sprachaufnahme (Audio-Antwort):
+              </span>
+              <span className="text-xs font-mono text-[var(--accent)]">
+                {recording ? "Aufnahme laeuft..." : audioUrl ? "Aufnahme bereit" : "Bereit"}
+              </span>
+            </div>
+            <div className="flex items-center gap-3">
+              {!recording ? (
+                <button
+                  type="button"
+                  onClick={startRecording}
+                  className="px-4 py-2 font-mono text-xs uppercase border border-[var(--ink)] rounded-[var(--radius)] hover:bg-[var(--paper-subtle)] transition-colors"
+                >
+                  Aufnahme starten
+                </button>
+              ) : (
+                <button
+                  type="button"
+                  onClick={stopRecording}
+                  className="px-4 py-2 font-mono text-xs uppercase bg-red-600 text-white rounded-[var(--radius)] hover:bg-red-700 transition-colors"
+                >
+                  Aufnahme stoppen
+                </button>
+              )}
+              {audioUrl && (
+                <audio controls src={audioUrl} className="h-8 flex-1" />
+              )}
+            </div>
+          </div>
+
+          {/* Self-check criteria */}
+          <div className="border border-[var(--line)] rounded-[var(--radius)] bg-[var(--paper-subtle)] p-4 space-y-2">
+            <div className="text-xs font-mono uppercase text-[var(--gray)] mb-1">
+              Selbstcheck / 自评准则：
+            </div>
+            {stepMu.selbstcheck.map((sc, i) => (
+              <label key={i} className="flex items-start gap-2.5 text-xs font-mono text-[var(--ink)] cursor-pointer">
+                <input
+                  type="checkbox"
+                  checked={oralChecks[i] ?? false}
+                  onChange={() =>
+                    setOralChecks((prev) =>
+                      prev.map((v, j) => (j === i ? !v : v))
+                    )
+                  }
+                  className="mt-0.5 h-3.5 w-3.5 accent-[var(--accent)]"
+                />
+                <span>{renderFormattedText(sc)}</span>
+              </label>
+            ))}
+          </div>
+
+          {/* D3-muendlich: stichpunkte + gleiche score-pipeline */}
+          <div className="space-y-2">
+            <label className="block text-xs font-mono uppercase text-[var(--gray)]">
+              Stichpunkte / Redetext (optional, für KI-Feedback) / 口述要点：
+            </label>
+            <textarea
+              rows={3}
+              value={oralText}
+              onChange={(e) => setOralText(e.target.value)}
+              placeholder="Kernpunkte in Stichworten …"
+              className="w-full border border-[var(--line)] p-3 text-sm font-sans rounded-[var(--radius)] focus:border-[var(--accent)] focus:outline-none"
+            />
+            <div className="flex items-center gap-2">
+              <button
+                type="button"
+                onClick={() => {
+                  if (!oralText.trim() || oralScore.loading) return;
+                  if (!kiOn()) return;
+                  setOralScore((prev) => ({ ...prev, loading: true }));
+                  void askKi(
+                    buildSzenarioScorePrompt(
+                      activeCourse.fach,
+                      activeCourse.thema,
+                      stepMu.ziehung,
+                      stepMu.selbstcheck,
+                      oralText
+                    )
+                  ).then((r) =>
+                    setOralScore((prev) => ({
+                      loading: false,
+                      text: r ?? "(KI derzeit nicht erreichbar. / AI暂时不可用。)",
+                      rounds: prev.rounds + 1,
+                    }))
+                  );
+                }}
+                disabled={!oralText.trim() || oralScore.loading}
+                className={`px-4 py-2 font-mono text-xs uppercase rounded-[var(--radius)] border transition-all ${
+                  !oralText.trim() || oralScore.loading
+                    ? "border-[var(--line)] text-[var(--gray)] cursor-not-allowed"
+                    : "border-[var(--accent)] text-[var(--accent)] hover:bg-[var(--accent)]/5 active:scale-95"
+                }`}
+              >
+                {oralScore.loading
+                  ? lang === "de" ? "KI liest …" : "AI批改中…"
+                  : lang === "de" ? "KI bewerten" : "AI批改"}
+              </button>
+              {oralScore.rounds > 0 && (
+                <span className="font-mono text-[var(--text-meta)] text-[var(--gray)]">
+                  {lang === "de" ? `Durchgang ${oralScore.rounds}` : `第${oralScore.rounds}轮`}
+                </span>
+              )}
+            </div>
+            {oralScore.text && (
+              <div role="status" aria-live="polite" aria-atomic="true" className="rounded-[var(--radius)] border border-[var(--accent)]/30 bg-[var(--paper-subtle)] p-4 font-sans text-sm leading-relaxed text-[var(--ink)] whitespace-pre-wrap">
+                {oralScore.text}
+              </div>
+            )}
+          </div>
+
+          <div className="pt-4 border-t border-[var(--line)] flex justify-end">
+            <button
+              type="button"
+              disabled={oralChecks.filter(Boolean).length === 0}
+              onClick={() => {
+                addXP(30, idx);
+                alert(lang === "de" ? "Mündliche Prüfung abgeschlossen! +30 XP" : "口试模拟完成！+30 XP");
+                setActiveCourse(null);
+              }}
+              className={`px-5 py-2 font-mono text-xs uppercase tracking-wider rounded-[var(--radius)] transition-colors ${
+                oralChecks.filter(Boolean).length > 0
+                  ? "bg-[var(--ink)] text-[var(--paper)] hover:bg-[var(--accent)]"
+                  : "bg-[var(--line)] text-[var(--gray)] cursor-not-allowed"
+              }`}
+            >
+              Abschließen (+30 XP)
+            </button>
+          </div>
+        </div>
+      );
+    }
+
+    return null;
+  };
+
   return (
     <div className="mx-auto w-full min-w-0 max-w-5xl space-y-6">
       {/* Top Header: Navigation between wizard & course, plus XP and streak */}
@@ -589,7 +1476,8 @@ export default function ReiseModule({
           </span>
           <span>·</span>
           <span>
-            连击: <strong className="text-[var(--ink)]">{progress.streak.length}</strong>{" "}
+            {lang === "de" ? "Streak:" : "连击:"}{" "}
+            <strong className="text-[var(--ink)]">{progress.streak.length}</strong>{" "}
             {lang === "de" ? "Tage" : "天"}
           </span>
         </div>
@@ -804,7 +1692,7 @@ export default function ReiseModule({
                   <div className="col-span-6 sm:col-span-1 text-right">
                     <button
                       type="button"
-                      onClick={() => setActiveCourse(c)}
+                      onClick={() => setActiveCourse(resolveCourseForAudience(c, allReisen, lang))}
                       className="inline-flex items-center gap-1 px-3 py-1 font-mono text-xs border border-[var(--ink)] bg-[var(--ink)] text-[var(--paper)] hover:bg-[var(--accent)] hover:border-[var(--accent)] rounded-[var(--radius)] transition-colors whitespace-nowrap"
                     >
                       {lang === "de" ? "Lektion starten →" : "开始学习 →"}
@@ -816,856 +1704,292 @@ export default function ReiseModule({
           )}
         </div>
       ) : (
-        /* VIEW 2: 5-STEP INTERACTIVE COURSE PLAYER */
+        /* VIEW 2: INTERACTIVE COURSE (DOCUMENT MODE OR STEP MODE) */
         <div className="space-y-6">
-          {/* Step Navigation Rail (Tufte hairline step line) */}
-          <div className="border-y border-[var(--line)] py-3 flex flex-wrap items-center justify-between gap-3">
-            <div className="flex flex-wrap items-center gap-1.5">
-              {activeCourse.schritte.map((s, idx) => {
-                const isCurrent = stepIdx === idx;
-                const isUnlocked = unlocked.includes(idx);
-                const isPast = idx < stepIdx;
-
-                return (
-                  <button
-                    type="button"
-                    key={idx}
-                    disabled={!isUnlocked}
-                    onClick={() => setStepIdx(idx)}
-                    className={`flex items-center gap-1.5 px-3 py-1.5 text-xs font-mono rounded-[var(--radius)] transition-all border ${
-                      isCurrent
-                        ? "border-[var(--accent)] text-[var(--accent)] bg-[var(--paper-subtle)]/40 font-semibold"
-                        : isUnlocked
-                        ? "border-[var(--line)] text-[var(--ink)] hover:border-[var(--ink)]"
-                        : "border-[var(--line)]/50 text-[var(--gray)]/40 cursor-not-allowed"
-                    }`}
-                  >
-                    <span>0{s.stepNumber}</span>
-                    <span className="font-sans uppercase text-[var(--text-meta)] tracking-wider">
-                      {s.typ}
-                    </span>
-                    {isPast && (
-                      <span className="text-[var(--success)]">
-                        {lang === "de" ? "Erledigt" : "已完成"}
-                      </span>
-                    )}
-                  </button>
-                );
-              })}
+          {/* Course Header & View Switcher */}
+          <div className="flex flex-wrap items-center justify-between gap-3 border-b border-[var(--line)] pb-3">
+            <div>
+              <span className="font-mono text-xs uppercase tracking-wider text-[var(--accent)]">
+                {activeCourse.fach} · {activeCourse.ziel} · Niveau {activeCourse.level}
+              </span>
+              <h2 className="font-serif text-xl sm:text-2xl text-[var(--ink)] mt-0.5">
+                {activeCourse.thema}
+              </h2>
             </div>
 
-            <div className="text-xs font-mono text-[var(--gray)]">
-              {lang === "de" ? "Schritt" : "步骤"} {stepIdx + 1} /{" "}
-              {activeCourse.schritte.length}
+            {/* Mode Switcher */}
+            <div className="flex items-center gap-2">
+              <span className="text-xs font-mono text-[var(--gray)] hidden sm:inline">
+                {lang === "de" ? "Ansicht:" : "视图:"}
+              </span>
+              <div className="inline-flex rounded-[var(--radius)] border border-[var(--line)] p-0.5 bg-[var(--surface)] text-xs font-mono">
+                <button
+                  type="button"
+                  onClick={() => setViewMode("document")}
+                  className={`px-2.5 py-1 rounded transition-colors ${
+                    viewMode === "document"
+                      ? "bg-[var(--ink)] text-[var(--paper)] font-semibold"
+                      : "text-[var(--gray)] hover:text-[var(--ink)]"
+                  }`}
+                >
+                  {lang === "de" ? "Dokument" : "全文文档"}
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setViewMode("steps")}
+                  className={`px-2.5 py-1 rounded transition-colors ${
+                    viewMode === "steps"
+                      ? "bg-[var(--ink)] text-[var(--paper)] font-semibold"
+                      : "text-[var(--gray)] hover:text-[var(--ink)]"
+                  }`}
+                >
+                  {lang === "de" ? "Schritte" : "分步卡片"}
+                </button>
+              </div>
             </div>
           </div>
 
-          {/* Current Step Body */}
-          <div className="space-y-6 py-2">
-            <div className="flex flex-wrap items-baseline justify-between gap-3 border-b border-[var(--line)] pb-3">
-              <div>
-                <span className="font-mono text-xs uppercase tracking-wider text-[var(--accent)]">
-                  Schritt {currentSchritt?.stepNumber} · {currentSchritt?.typ}
+          {/* VIEW MODE 1: DOCUMENT (Single continuous page with embedded interactions & sticky TOC) */}
+          {viewMode === "document" ? (
+            <div className="space-y-6">
+              {/* Mobile Quick Navigation Strip (horizontal scroll) */}
+              <div className="lg:hidden sticky top-0 z-10 -mx-4 px-4 py-2 bg-[var(--paper)]/95 backdrop-blur border-b border-[var(--line)] flex items-center gap-2 overflow-x-auto">
+                <span className="text-xs font-mono text-[var(--gray)] uppercase shrink-0 font-bold">
+                  {lang === "de" ? "Gliederung:" : "目录:"}
                 </span>
-                <h3 className="font-serif text-xl text-[var(--ink)] mt-0.5">
-                  {currentSchritt?.title}
-                </h3>
-              </div>
-              <span className="text-xs font-mono text-[var(--gray)]">
-                Ziel: +
-                {currentSchritt?.typ === "entdecken"
-                  ? 5
-                  : currentSchritt?.typ === "ausprobieren"
-                  ? 15
-                  : currentSchritt?.typ === "check"
-                  ? 20
-                  : 30}{" "}
-                XP
-              </span>
-            </div>
-
-            {/* STEP 1: ENTDECKEN (讲解) */}
-            {currentSchritt?.typ === "entdecken" && (
-              <div className="space-y-6">
-                <div className="prose max-w-none">
-                  <Blocks
-                    blocks={(currentSchritt as SchrittEntdecken).blocks}
-                    pureGerman={lang === "de"}
-                    renderDiagram={(spec, i) => (
-                      <DiagramFig
-                        spec={spec}
-                        courseId={activeCourse.id}
-                        step={(currentSchritt as SchrittEntdecken).stepNumber}
-                        index={i}
-                        thema={activeCourse.thema}
-                        fach={activeCourse.fach}
-                        lang={lang}
-                      />
-                    )}
-                  />
-                </div>
-
-                {/* Eingebettetes didaktisches Werkzeug falls im Text deklariert */}
-                {(() => {
-                  const raw = (currentSchritt as SchrittEntdecken).rawText || "";
-                  const match = /\[Werkzeug:\s*([a-zA-Z0-9_\-]+)\]/i.exec(raw);
-                  const tool = currentSchritt.toolId || (match ? match[1] : null);
-                  return tool ? renderEmbeddedTool(tool, lang, activeCourse.fach) : null;
-                })()}
-
-                {/* D2: KI-erklaerung (auto) + rueckfragen */}
-                {(kiBox?.loading || kiBox?.text) && (
-                  <div
-                    aria-live="polite"
-                    aria-busy={kiBox.loading}
-                    className="rounded-[var(--radius)] border border-[var(--accent)]/30 bg-[var(--paper-subtle)] p-4 space-y-3"
+                {activeCourse.schritte.map((s, idx) => (
+                  <button
+                    key={idx}
+                    type="button"
+                    onClick={() => {
+                      setStepIdx(idx);
+                      document.getElementById(`schritt-${s.stepNumber}`)?.scrollIntoView({ behavior: "smooth", block: "start" });
+                    }}
+                    className={`shrink-0 px-2.5 py-1 text-xs font-mono rounded border transition-colors ${
+                      stepIdx === idx
+                        ? "border-[var(--accent)] text-[var(--accent)] font-semibold bg-[var(--paper-subtle)]"
+                        : "border-[var(--line)] text-[var(--ink)]"
+                    }`}
                   >
-                    <div className="font-mono text-[var(--text-meta)] uppercase tracking-wider text-[var(--accent)]">
-                      KI-Erklärung · AI讲解
-                    </div>
-                    {kiBox.loading && !kiBox.text ? (
-                      <div role="status" className="font-sans text-sm text-[var(--gray)]">
-                        {lang === "de" ? "KI erklärt …" : "AI讲解中…"}
-                      </div>
-                    ) : (
-                      <div className="font-sans text-sm leading-relaxed text-[var(--ink)] whitespace-pre-wrap">
-                        {kiBox.text}
-                      </div>
-                    )}
-                    {kiBox.chat.map((c, i) => (
-                      <div key={i} className="space-y-1 border-t border-[var(--line)] pt-2">
-                        <div className="font-sans text-xs text-[var(--gray)]">→ {c.q}</div>
-                        <div className="font-sans text-sm leading-relaxed text-[var(--ink)] whitespace-pre-wrap">
-                          {c.a}
+                    0{s.stepNumber} {s.typ}
+                  </button>
+                ))}
+              </div>
+
+              {/* Grid: Main Document Stream (Col 9) + Sticky TOC (Col 3) */}
+              <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+                {/* Main Document Content */}
+                <div className="lg:col-span-9 space-y-12 min-w-0">
+                  {activeCourse.schritte.map((s, idx) => (
+                    <section
+                      key={s.stepNumber}
+                      id={`schritt-${s.stepNumber}`}
+                      className="scroll-mt-16 border-b border-[var(--line)] pb-10 space-y-6"
+                    >
+                      {/* Step Header */}
+                      <div className="flex flex-wrap items-baseline justify-between gap-3 border-b border-[var(--line)]/60 pb-3">
+                        <div>
+                          <span className="font-mono text-xs uppercase tracking-wider text-[var(--accent)]">
+                            0{s.stepNumber} · {getStepTitle(s.typ, lang)}
+                          </span>
+                          <h3 className="font-serif text-xl sm:text-2xl text-[var(--ink)] mt-0.5">
+                            {s.title}
+                          </h3>
                         </div>
+                        <span className="text-xs font-mono text-[var(--gray)] border border-[var(--line)] px-2 py-0.5 rounded-[var(--radius)]">
+                          +{s.typ === "entdecken" ? 5 : s.typ === "ausprobieren" ? 15 : s.typ === "check" ? 20 : 30} XP
+                        </span>
                       </div>
-                    ))}
-            <div className="flex flex-wrap gap-2">
-                      <input
-                        value={kiFollow}
-                        onChange={(e) => setKiFollow(e.target.value)}
-                        onKeyDown={(e) => {
-                          if (e.key === "Enter") sendKiFollow();
-                        }}
-                        placeholder={lang === "de" ? "Nachfragen …" : "追问…"}
-                        className="flex-1 rounded-[var(--radius)] border border-[var(--line)] bg-[var(--surface)] px-2 py-1.5 font-sans text-sm text-[var(--ink)] focus:border-[var(--accent)] focus:outline-none"
-                      />
+
+                      {/* Step Interactive Body */}
+                      {renderSchrittContent(s, idx, true)}
+                    </section>
+                  ))}
+
+                  {/* Course Conclusion Card */}
+                  <div className="border border-[var(--line)] bg-[var(--paper-subtle)]/50 p-6 sm:p-8 rounded-[var(--radius)] text-center space-y-4">
+                    <div className="font-mono text-xs uppercase tracking-wider text-[var(--accent)] font-semibold">
+                      {lang === "de" ? "Lektion abgeschlossen" : "课程学习进度"}
+                    </div>
+                    <h3 className="font-serif text-2xl text-[var(--ink)]">
+                      {activeCourse.thema} ({activeCourse.fach})
+                    </h3>
+                    <p className="font-sans text-xs sm:text-sm text-[var(--gray)] max-w-lg mx-auto leading-relaxed">
+                      {lang === "de"
+                        ? "Du hast alle interaktiven Stationen durchgearbeitet. Deine Lernfortschritte und XP wurden synchronisiert."
+                        : "你已浏览或完成了本课程的各个交互小节。学习记录与XP已自动同步。"}
+                    </p>
+                    <div className="flex flex-wrap justify-center gap-3 pt-2">
                       <button
                         type="button"
-                        onClick={sendKiFollow}
-                        className="rounded-[var(--radius)] border border-[var(--ink)] bg-[var(--ink)] px-3 py-1.5 font-mono text-xs text-[var(--paper)] hover:bg-[var(--accent)] hover:border-[var(--accent)] active:scale-95 transition-all"
+                        onClick={() => {
+                          addXP(activeCourse.xp, activeCourse.schritte.length - 1);
+                          alert(lang === "de" ? `Lektion abgeschlossen! +${activeCourse.xp} XP erhalten!` : `恭喜完成本课！获得 +${activeCourse.xp} XP！`);
+                          setActiveCourse(null);
+                        }}
+                        className="px-5 py-2 font-mono text-xs uppercase tracking-wider bg-[var(--ink)] text-[var(--paper)] hover:bg-[var(--accent)] rounded-[var(--radius)] transition-colors"
                       >
-                        {lang === "de" ? "Fragen" : "发送"}
+                        {lang === "de" ? `Lektion abschließen (+${activeCourse.xp} XP)` : `完成并结算 (+${activeCourse.xp} XP)`}
+                      </button>
+                      <button
+                        type="button"
+                        onClick={() => setActiveCourse(null)}
+                        className="px-4 py-2 font-mono text-xs border border-[var(--line)] text-[var(--ink)] hover:border-[var(--ink)] rounded-[var(--radius)] transition-colors"
+                      >
+                        {lang === "de" ? "← Zur Kursübersicht" : "← 返回课程大纲"}
                       </button>
                     </div>
                   </div>
-                )}
-
-                <div className="pt-4 border-t border-[var(--line)] flex justify-end">
-                  <button
-                    type="button"
-                    onClick={() => goNextOrFinish(5)}
-                    className="px-4 py-2 font-mono text-xs uppercase tracking-wider bg-[var(--ink)] text-[var(--paper)] hover:bg-[var(--accent)] rounded-[var(--radius)] transition-colors whitespace-normal text-center"
-                  >
-                    {isLastStep
-                      ? lang === "de"
-                        ? "Abschließen (+5 XP)"
-                        : "完成课程 (+5 XP)"
-                      : lang === "de"
-                      ? "Weiter (+5 XP) →"
-                      : "已理解，下一步 (+5 XP) →"}
-                  </button>
                 </div>
+
+                {/* Right Sticky Table of Contents (TOC) */}
+                <aside className="lg:col-span-3 hidden lg:block sticky top-20 self-start space-y-4">
+                  <div className="border border-[var(--line)] bg-[var(--surface)] p-4 rounded-[var(--radius)] space-y-3">
+                    <div className="flex items-center justify-between border-b border-[var(--line)] pb-2">
+                      <span className="font-mono text-xs uppercase tracking-wider font-semibold text-[var(--ink)]">
+                        {lang === "de" ? "Gliederung" : "大纲目录 · TOC"}
+                      </span>
+                      <span className="font-mono text-[var(--text-meta)] text-[var(--gray)]">
+                        {activeCourse.schritte.length} {lang === "de" ? "Stationen" : "小节"}
+                      </span>
+                    </div>
+
+                    <nav className="space-y-1 max-h-[calc(100vh-14rem)] overflow-y-auto pr-1">
+                      {activeCourse.schritte.map((s, idx) => {
+                        const isCurrent = stepIdx === idx;
+                        const isDone = unlocked.includes(idx + 1) || (idx === activeCourse.schritte.length - 1 && unlocked.includes(idx));
+                        return (
+                          <button
+                            key={idx}
+                            type="button"
+                            onClick={() => {
+                              setStepIdx(idx);
+                              const el = document.getElementById(`schritt-${s.stepNumber}`);
+                              if (el) {
+                                el.scrollIntoView({ behavior: "smooth", block: "start" });
+                              }
+                            }}
+                            className={`w-full text-left flex items-start gap-2 px-2 py-2 rounded-[var(--radius)] transition-all text-xs font-mono group border ${
+                              isCurrent
+                                ? "bg-[var(--paper-subtle)] text-[var(--accent)] border-[var(--accent)] font-semibold"
+                                : "border-transparent text-[var(--ink)] hover:bg-[var(--paper-subtle)]/70 hover:border-[var(--line)]"
+                            }`}
+                          >
+                            <span className={`shrink-0 font-bold ${isCurrent ? "text-[var(--accent)]" : "text-[var(--gray)]"}`}>
+                              0{s.stepNumber}
+                            </span>
+                            <div className="min-w-0 flex-1">
+                              <span className="text-xs uppercase text-[var(--gray)] block tracking-wider">
+                                {getStepTitle(s.typ, lang)}
+                              </span>
+                              <span className="truncate block font-serif text-xs leading-tight text-[var(--ink)]">
+                                {s.title}
+                              </span>
+                            </div>
+                            {isDone && (
+                              <span className="text-[var(--success)] shrink-0 font-bold">
+                                <CheckMarkSvg />
+                              </span>
+                            )}
+                          </button>
+                        );
+                      })}
+                    </nav>
+
+                    <div className="pt-2 border-t border-[var(--line)] flex flex-col gap-2">
+                      <button
+                        type="button"
+                        onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+                        className="w-full text-center py-1.5 text-xs font-mono text-[var(--gray)] hover:text-[var(--ink)] border border-[var(--line)] rounded-[var(--radius)] transition-colors hover:border-[var(--ink)]"
+                      >
+                        ↑ {lang === "de" ? "Nach oben" : "回到顶部"}
+                      </button>
+
+                      <button
+                        type="button"
+                        onClick={() => setViewMode("steps")}
+                        className="w-full text-center py-1 text-xs font-mono text-[var(--accent)] hover:underline"
+                      >
+                        {lang === "de" ? "Zu Einzelschritten wechseln →" : "切换为分步卡片 →"}
+                      </button>
+                    </div>
+                  </div>
+                </aside>
               </div>
-            )}
-
-            {/* STEP 2: AUSPROBIEREN (动手) */}
-            {currentSchritt?.typ === "ausprobieren" && (() => {
-              const aufgabe = (currentSchritt as SchrittAusprobieren).aufgabe || "";
-              const match = /\[Werkzeug:\s*([a-zA-Z0-9_\-]+)\]/i.exec(aufgabe);
-              const cleanAufgabe = aufgabe.replace(/\[Werkzeug:\s*[a-zA-Z0-9_\-]+\]/gi, "").trim();
-              const tool =
-                (currentSchritt as SchrittAusprobieren).toolId ||
-                (match ? match[1] : null) ||
-                getAutoToolForContext(activeCourse.fach, activeCourse.thema);
-
-              return (
-                <div className="space-y-5">
-                  <div className="border border-[var(--line)] bg-[var(--paper-subtle)] p-4 rounded-[var(--radius)] font-serif text-base text-[var(--ink)] leading-relaxed">
-                    {renderFormattedText(cleanAufgabe)}
-                  </div>
-
-                  {tool && renderEmbeddedTool(tool, lang, activeCourse.fach)}
-
-                {(currentSchritt as SchrittAusprobieren).hilfe && (
-                  <div>
-                    <button
-                      type="button"
-                      onClick={() => setTryShowHelp((h) => !h)}
-                      className="text-xs font-mono text-[var(--accent)] hover:underline"
-                    >
-                      {tryShowHelp
-                        ? lang === "de"
-                          ? "[- Hilfe verbergen]"
-                          : "[- Hilfe verbergen / 隐藏提示]"
-                        : lang === "de"
-                        ? "[+ Hilfe anzeigen]"
-                        : "[+ Hilfe anzeigen / 显示解题提示]"}
-                    </button>
-                    {tryShowHelp && (
-                      <div className="mt-2 p-3 border border-dashed border-[var(--line)] bg-[var(--paper-subtle)] text-xs font-sans text-[var(--gray)] rounded-[var(--radius)]">
-                        {renderFormattedText((currentSchritt as SchrittAusprobieren).hilfe!)}
-                      </div>
-                    )}
-                  </div>
-                )}
-
-                <div className="space-y-2">
-                  <label className="block text-xs font-mono uppercase text-[var(--gray)]">
-                    {lang === "de" ? "Deine Antwort:" : "Deine Antwort / 你的作答："}
-                  </label>
-                  <textarea
-                    rows={3}
-                    value={tryInput}
-                    onChange={(e) => setTryInput(e.target.value)}
-                    placeholder={lang === "de" ? "Hier Antwort eingeben …" : "Hier zuordnen oder Stichpunkte eingeben..."}
-                    className="w-full border border-[var(--line)] p-3 text-sm font-sans rounded-[var(--radius)] focus:border-[var(--accent)] focus:outline-none"
-                  />
-                  <ImageAnswerUpload
-                    lang={lang}
-                    onImageSelected={setTryImage}
-                    onTextTranscribed={(transcription) => {
-                      setTryInput((prev) => (prev.trim() ? prev + "\n\n" + transcription : transcription));
-                    }}
-                  />
-                </div>
-
-                {tryFeedback && (
-                  <div role="status" aria-live="polite" aria-atomic="true" className="border border-[var(--accent)]/30 bg-[var(--paper-subtle)] p-3 text-xs font-mono text-[var(--ink)] rounded-[var(--radius)] whitespace-pre-wrap leading-relaxed">
-                    {tryFeedback}
-                  </div>
-                )}
-
-                      <div className="flex flex-wrap items-center justify-between gap-3 border-t border-[var(--line)] pt-4">
-                  <button
-                    type="button"
-                    onClick={() => {
-                      if (!tryInput.trim() && !tryImage) {
-                        setTryFeedback(
-                          lang === "de"
-                            ? "Bitte zuerst einen Antwortversuch eingeben oder Bild hochladen."
-                            : "请先输入作答或上传手写作答图片。"
-                        );
-                        return;
-                      }
-                      const st = currentSchritt as SchrittAusprobieren;
-                      if (!kiOn()) {
-                        setTryFeedback(
-                          lang === "de"
-                            ? "Versuch notiert — prüfe dich mit der Musterlösung."
-                            : "Versuch notiert — prüfe dich mit der Musterlösung / 已记录作答，对照解析自查。"
-                        );
-                      } else {
-                        setTryFeedback(lang === "de" ? "KI liest mit …" : "KI liest mit … / AI正在点评…");
-                        void askKi(
-                          buildTryFeedbackPrompt(
-                            activeCourse.thema,
-                            st.aufgabe,
-                            st.antwort ?? "",
-                            tryInput || (tryImage ? "[Siehe hochgeladenes Bild / 见上传手写作答]" : "")
-                          ),
-                          tryImage ? { image: tryImage } : undefined
-                        ).then((r) =>
-                          setTryFeedback(
-                            r ??
-                              (lang === "de"
-                                ? "Versuch notiert — prüfe dich mit der Musterlösung."
-                                : "Versuch notiert — prüfe dich mit der Musterlösung / 已记录作答，对照解析自查。")
-                          )
-                        );
-                      }
-                      unlockNextStep(stepIdx + 1, 15);
-                    }}
-                    className="px-4 py-2 font-mono text-xs uppercase border border-[var(--line)] hover:border-[var(--ink)] rounded-[var(--radius)] transition-colors text-[var(--ink)] whitespace-normal text-center"
-                  >
-                    {lang === "de" ? "Antwort prüfen" : "检查答案"}
-                  </button>
-
-                  <button
-                    type="button"
-                    disabled={!unlocked.includes(stepIdx + 1)}
-                    onClick={() => goNextOrFinish(15)}
-                    className={`px-5 py-2 font-mono text-xs uppercase tracking-wider rounded-[var(--radius)] transition-colors ${
-                      unlocked.includes(stepIdx + 1)
-                        ? "bg-[var(--ink)] text-[var(--paper)] hover:bg-[var(--accent)]"
-                        : "bg-[var(--line)] text-[var(--gray)] cursor-not-allowed"
-                    }`}
-                  >
-                    {isLastStep
-                      ? lang === "de"
-                        ? "Abschließen (+15 XP)"
-                        : "完成课程 (+15 XP)"
-                      : lang === "de"
-                      ? "Weiter (+15 XP) →"
-                      : "下一步 (+15 XP) →"}
-                  </button>
-                </div>
-              </div>
-            );
-          })()}
-
-            {/* STEP 3: CHECK (过关题) */}
-            {currentSchritt?.typ === "check" && (
-              <div className="space-y-6">
-              <div className="divide-y divide-[var(--line)] border-y border-[var(--line)]">
-                  {(currentSchritt as SchrittCheck).items.map((item, idx) => {
-                    const isPassed = checkPassed[item.id];
-                    const isRevealed = checkRevealed[item.id];
+            </div>
+          ) : (
+            /* VIEW MODE 2: STEPS (Classic single card with tab bar) */
+            <div className="space-y-6">
+              {/* Step Navigation Rail (Tufte hairline step line) */}
+              <div className="border-y border-[var(--line)] py-3 flex flex-wrap items-center justify-between gap-3">
+                <div className="flex flex-wrap items-center gap-1.5">
+                  {activeCourse.schritte.map((s, idx) => {
+                    const isCurrent = stepIdx === idx;
+                    const isUnlocked = unlocked.includes(idx);
+                    const isPast = idx < stepIdx;
 
                     return (
-                      <div key={item.id} className="p-4 space-y-2">
-                        <div className="flex items-start justify-between gap-3">
-                          <div className="flex-1">
-                            <span className="font-mono text-xs font-semibold text-[var(--ink)] mr-2">
-                              Frage {idx + 1}:
-                            </span>
-                            <span className="font-serif text-sm text-[var(--ink)]">
-                              {renderFormattedText(item.frage)}
-                            </span>
-                          </div>
-                          <button
-                            type="button"
-                            onClick={() =>
-                              setCheckRevealed((prev) => ({
-                                ...prev,
-                                [item.id]: !prev[item.id],
-                              }))
-                            }
-                            className="text-xs font-mono text-[var(--gray)] hover:text-[var(--accent)]"
-                          >
-                            {isRevealed ? "[Antwort]" : "[Lösung zeigen]"}
-                          </button>
-                        </div>
-
-                        {isRevealed && (
-                          <div className="border-l-2 border-[var(--accent)] pl-3 text-xs font-mono text-[var(--gray)] bg-[var(--paper-subtle)] py-1.5">
-                            Erwartete Punkte: {renderFormattedText(item.antwort)}
-                          </div>
+                      <button
+                        type="button"
+                        key={idx}
+                        disabled={!isUnlocked}
+                        onClick={() => setStepIdx(idx)}
+                        className={`flex items-center gap-1.5 px-3 py-1.5 text-xs font-mono rounded-[var(--radius)] transition-all border ${
+                          isCurrent
+                            ? "border-[var(--accent)] text-[var(--accent)] bg-[var(--paper-subtle)]/40 font-semibold"
+                            : isUnlocked
+                            ? "border-[var(--line)] text-[var(--ink)] hover:border-[var(--ink)]"
+                            : "border-[var(--line)]/50 text-[var(--gray)]/40 cursor-not-allowed"
+                        }`}
+                      >
+                        <span>0{s.stepNumber}</span>
+                        <span className="font-sans uppercase text-[var(--text-meta)] tracking-wider">
+                          {s.typ}
+                        </span>
+                        {isPast && (
+                          <span className="text-[var(--success)]">
+                            {lang === "de" ? "Erledigt" : "已完成"}
+                          </span>
                         )}
-
-                        {/* FelloFish:默写→AI打分·纠错·教学→再练 */}
-                        <div className="space-y-2">
-                          <textarea
-                            rows={2}
-                            value={checkText[item.id] ?? ""}
-                            onChange={(e) =>
-                              setCheckText((prev) => ({ ...prev, [item.id]: e.target.value }))
-                            }
-                            placeholder={lang === "de" ? "Antwort aus dem Kopf herschreiben …" : "合书默写答案…（先自己写，再点AI批改）"}
-                            className="w-full border border-[var(--line)] p-2.5 text-sm font-sans rounded-[var(--radius)] focus:border-[var(--accent)] focus:outline-none"
-                          />
-                          <div className="flex items-center gap-2">
-                            <button
-                              type="button"
-                              disabled={!(checkText[item.id] ?? "").trim() || checkScore[item.id]?.loading || kiOff}
-                              title={kiOff ? kiOffTitle : undefined}
-                              onClick={() => {
-                                if (kiOff || checkScore[item.id]?.loading) return;
-                                setCheckScore((prev) => ({
-                                  ...prev,
-                                  [item.id]: { loading: true, text: prev[item.id]?.text ?? "", rounds: prev[item.id]?.rounds ?? 0 },
-                                }));
-                                void askKi(
-                                  buildCheckScorePrompt(item.frage, item.antwort, checkText[item.id] ?? "", activeCourse.thema)
-                                ).then((r) =>
-                                  setCheckScore((prev) => ({
-                                    ...prev,
-                                    [item.id]: {
-                                      loading: false,
-                                      text: r ?? "(KI derzeit nicht erreichbar. / AI暂时不可用。)",
-                                      rounds: (prev[item.id]?.rounds ?? 0) + 1,
-                                    },
-                                  }))
-                                );
-                              }}
-                              className={`px-2.5 py-1 text-xs font-mono rounded-[var(--radius)] border transition-all ${
-                                !(checkText[item.id] ?? "").trim() || checkScore[item.id]?.loading || kiOff
-                                  ? "border-[var(--line)] text-[var(--gray)]/50 cursor-not-allowed"
-                                  : "border-[var(--accent)] text-[var(--accent)] hover:bg-[var(--accent)]/5 active:scale-95"
-                              }`}
-                            >
-                              {checkScore[item.id]?.loading
-                                ? lang === "de" ? "KI liest …" : "AI批改中…"
-                                : (checkScore[item.id]?.rounds ?? 0) === 0
-                                  ? lang === "de" ? `KI bewerten${kiOff ? kiOffSuffix : ""}` : `AI批改·打分${kiOff ? kiOffSuffix : ""}`
-                                  : lang === "de"
-                                    ? `Erneut prüfen (${checkScore[item.id]?.rounds})`
-                                    : `改完再评（第${checkScore[item.id]?.rounds}轮）`}
-                            </button>
-                          </div>
-                          {checkScore[item.id]?.text && (
-                            <div role="status" aria-live="polite" aria-atomic="true" className="border-l-2 border-[var(--accent)] pl-3 text-xs font-sans text-[var(--ink)] bg-[var(--paper-subtle)] py-1.5 whitespace-pre-wrap leading-relaxed">
-                              {checkScore[item.id].text}
-                            </div>
-                          )}
-                        </div>
-
-                        <div className="flex items-center justify-end gap-2 pt-1">
-                          {/* D2: KI-erklaerung zum warum */}
-                          <button
-                            type="button"
-                            disabled={kiOff}
-                            title={kiOff ? kiOffTitle : undefined}
-                            onClick={() => {
-                              if (!kiOn() || checkWhy[item.id]?.loading) return;
-                              setCheckWhy((prev) => ({ ...prev, [item.id]: { loading: true, text: "" } }));
-                              void askKi(
-                                buildCheckExplainPrompt(item.frage, item.antwort, activeCourse.thema)
-                              ).then((r) =>
-                                setCheckWhy((prev) => ({
-                                  ...prev,
-                                  [item.id]: {
-                                    loading: false,
-                                    text: r ?? "(KI derzeit nicht erreichbar. / AI暂时不可用。)",
-                                  },
-                                }))
-                              );
-                            }}
-                            className={`px-2.5 py-1 text-xs font-mono rounded-[var(--radius)] border border-[var(--line)] transition-all ${
-                              kiOff
-                                ? "text-[var(--gray)]/50 cursor-not-allowed"
-                                : "text-[var(--gray)] hover:border-[var(--accent)] hover:text-[var(--accent)]"
-                            }`}
-                          >
-                            {checkWhy[item.id]?.loading
-                              ? "…"
-                              : lang === "de"
-                                ? `Warum? KI erklärt${kiOff ? kiOffSuffix : ""}`
-                                : `为啥？AI讲解${kiOff ? kiOffSuffix : ""}`}
-                          </button>
-                          <button
-                            type="button"
-                            onClick={() => {
-                              setCheckPassed((prev) => ({
-                                ...prev,
-                                [item.id]: !prev[item.id],
-                              }));
-                            }}
-                            className={`px-2.5 py-1 text-xs font-mono rounded-[var(--radius)] border ${
-                              isPassed
-                                ? "border-[var(--success)] bg-[var(--success)]/10 text-[var(--success)] font-semibold"
-                                : "border-[var(--line)] text-[var(--gray)] hover:border-[var(--ink)]"
-                            }`}
-                          >
-                            {isPassed ? "Bestanden / 已掌握" : "Selbstcheck / 标为通过"}
-                          </button>
-                        </div>
-                        {checkWhy[item.id]?.text && (
-                          <div role="status" aria-live="polite" aria-atomic="true" className="border-l-2 border-[var(--accent)] pl-3 text-xs font-sans text-[var(--ink)] bg-[var(--paper-subtle)] py-1.5 whitespace-pre-wrap leading-relaxed">
-                            {checkWhy[item.id].text}
-                          </div>
-                        )}
-                      </div>
+                      </button>
                     );
                   })}
                 </div>
 
-                {/* Fehlerlog Draft Specimen with Copy Button */}
-                <div className="border border-dashed border-[var(--line)] bg-[var(--paper-subtle)] p-4 rounded-[var(--radius)]">
-                  <div className="flex items-center justify-between text-xs font-mono text-[var(--gray)] mb-2">
-                    <span>FEHLERLOG-ENTWURF / 错题补丁</span>
-                    <button
-                      type="button"
-                      onClick={() => {
-                        const patch = `- [ ] [${activeCourse.fach}] ${activeCourse.thema}: Check-Fehler nacharbeiten`;
-                        navigator.clipboard.writeText(patch);
-                        setCopiedPatch(true);
-                        setTimeout(() => setCopiedPatch(false), 2000);
-                      }}
-                      aria-live="polite"
-                      className="text-xs font-mono text-[var(--accent)] hover:underline"
-                    >
-                      {copiedPatch ? "Kopiert!" : "Kopieren / 复制补丁"}
-                    </button>
-                  </div>
-                  <code className="block bg-[var(--surface)] border border-[var(--line)] p-2.5 font-mono text-xs text-[var(--ink)] rounded-[var(--radius)]">
-                    - [ ] [{activeCourse.fach}] {activeCourse.thema}: Check-Fehler nacharbeiten
-                  </code>
+                <div className="text-xs font-mono text-[var(--gray)]">
+                  {lang === "de" ? "Schritt" : "步骤"} {stepIdx + 1} /{" "}
+                  {activeCourse.schritte.length}
                 </div>
-
-                {/* Gating Lock check */}
-                {(() => {
-                  const checkItems = (currentSchritt as SchrittCheck).items;
-                  const allDone =
-                    checkItems.length > 0 &&
-                    checkItems.every((item) => checkPassed[item.id]);
-
-                  return (
-                <div className="flex flex-wrap items-center justify-between gap-3 border-t border-[var(--line)] pt-4">
-                      <span className="text-xs font-mono text-[var(--gray)]">
-                        {allDone
-                          ? "Alle 3 Fragen gemeistert / 3 题已全部掌握"
-                          : "3 Fragen müssen als bestanden markiert sein."}
-                      </span>
-                      <button
-                        type="button"
-                        disabled={!allDone}
-                        onClick={() => goNextOrFinish(20)}
-                        className={`px-5 py-2 font-mono text-xs uppercase tracking-wider rounded-[var(--radius)] transition-colors ${
-                          allDone
-                            ? "bg-[var(--ink)] text-[var(--paper)] hover:bg-[var(--accent)]"
-                            : "bg-[var(--line)] text-[var(--gray)] cursor-not-allowed"
-                        }`}
-                      >
-                        {isLastStep
-                          ? lang === "de"
-                            ? "Abschließen (+20 XP)"
-                            : "完成课程 (+20 XP)"
-                          : lang === "de"
-                          ? "Weiter (+20 XP) →"
-                          : "下一步 (+20 XP) →"}
-                      </button>
-                    </div>
-                  );
-                })()}
               </div>
-            )}
 
-            {/* STEP 4: SZENARIO (场景实战) */}
-            {currentSchritt?.typ === "szenario" && (
-              <div className="space-y-5">
-                <div className="border border-[var(--line)] bg-[var(--paper-subtle)] p-4 rounded-[var(--radius)] space-y-2">
-                  <div className="text-xs font-mono uppercase text-[var(--accent)]">
-                    Rolle: {(currentSchritt as SchrittSzenario).rolle}
-                  </div>
-                  <div className="font-serif text-base text-[var(--ink)] leading-relaxed">
-                    {renderFormattedText((currentSchritt as SchrittSzenario).situation)}
-                  </div>
-                </div>
-
-                {/* Timer row */}
-                <div className="flex flex-wrap items-center justify-between gap-3 border border-[var(--line)] p-3 rounded-[var(--radius)] bg-[var(--surface)]">
-                  <div className="flex items-baseline gap-2">
-                    <span className="font-mono text-2xl font-normal tabular-nums text-[var(--ink)]">
-                      {formatTime(szenarioSec)}
-                    </span>
-                    <span className="font-mono text-xs text-[var(--gray)]">
-                      / 02:00 Zielzeit
-                    </span>
-                  </div>
-                  <button
-                    type="button"
-                    onClick={() => setSzenarioRunning((r) => !r)}
-                    className="px-3 py-1 font-mono text-xs uppercase border border-[var(--ink)] rounded-[var(--radius)] hover:bg-[var(--paper-subtle)]"
-                  >
-                    {szenarioRunning ? "Stopp" : "Start"}
-                  </button>
-                </div>
-
-                <div className="space-y-2">
-                  <label className="block text-xs font-mono uppercase text-[var(--gray)]">
-                    Plädoyer verfassen / 撰写辩论发言：
-                  </label>
-                  <textarea
-                    rows={4}
-                    value={szenarioText}
-                    onChange={(e) => setSzenarioText(e.target.value)}
-                    placeholder="Beginne mit einer klaren These..."
-                    className="w-full border border-[var(--line)] p-3 text-sm font-serif rounded-[var(--radius)] focus:border-[var(--accent)] focus:outline-none"
-                  />
-                  <ImageAnswerUpload
-                    lang={lang}
-                    onImageSelected={setSzenarioImage}
-                    onTextTranscribed={(transcription) => {
-                      setSzenarioText((prev) => (prev.trim() ? prev + "\n\n" + transcription : transcription));
-                    }}
-                  />
-                </div>
-
-                {/* Rubric Checklist */}
-                <div className="border border-[var(--line)] rounded-[var(--radius)] bg-[var(--paper-subtle)] p-4 space-y-2">
-                  <div className="text-xs font-mono uppercase text-[var(--gray)] tracking-wider mb-1">
-                    {lang === "de" ? "Kriterienkatalog (Rubric):" : "Rubric / 自评检查点（勾选核对）："}
-                  </div>
-                  {(currentSchritt as SchrittSzenario).rubricPoints.map((p, i) => (
-                    <label key={i} className="flex items-start gap-2.5 text-xs font-mono text-[var(--ink)] cursor-pointer">
-                      <input
-                        type="checkbox"
-                        checked={rubricChecks[i] ?? false}
-                        onChange={() =>
-                          setRubricChecks((prev) =>
-                            prev.map((v, j) => (j === i ? !v : v))
-                          )
-                        }
-                        className="mt-0.5 h-3.5 w-3.5 accent-[var(--accent)]"
-                      />
-                      <span>{renderFormattedText(p)}</span>
-                    </label>
-                  ))}
-                </div>
-
-                {/* D3: KI-bewertung (FelloFish-stil) + ueberarbeiten-runden */}
-                <div className="flex items-center gap-2">
-                  <button
-                    type="button"
-                    onClick={() => {
-                      if ((!szenarioText.trim() && !szenarioImage) || szenarioScore.loading) return;
-                      const sc = currentSchritt as SchrittSzenario;
-                      if (!kiOn()) return;
-                      setSzenarioScore((prev) => ({ ...prev, loading: true }));
-                      void askKi(
-                        buildSzenarioScorePrompt(
-                          activeCourse.fach,
-                          activeCourse.thema,
-                          sc.situation,
-                          sc.rubricPoints,
-                          szenarioText || (szenarioImage ? (lang === "de" ? "[Siehe hochgeladenes Bild]" : "[Siehe hochgeladenes Dokument / 见上传手写与作答图]") : "")
-                        ),
-                        szenarioImage ? { image: szenarioImage } : undefined
-                      ).then((r) =>
-                        setSzenarioScore((prev) => ({
-                          loading: false,
-                          text: r ?? (lang === "de" ? "(KI derzeit nicht erreichbar.)" : "(KI derzeit nicht erreichbar. / AI暂时不可用。)"),
-                          rounds: prev.rounds + 1,
-                        }))
-                      );
-                    }}
-                    disabled={(!szenarioText.trim() && !szenarioImage) || szenarioScore.loading || kiOff}
-                    title={kiOff ? kiOffTitle : undefined}
-                    className={`px-4 py-2 font-mono text-xs uppercase rounded-[var(--radius)] border transition-all ${
-                      (!szenarioText.trim() && !szenarioImage) || szenarioScore.loading || kiOff
-                        ? "border-[var(--line)] text-[var(--gray)] cursor-not-allowed"
-                        : "border-[var(--accent)] text-[var(--accent)] hover:bg-[var(--accent)]/5 active:scale-95"
-                    }`}
-                  >
-                    {szenarioScore.loading
-                      ? lang === "de"
-                        ? "KI liest …"
-                        : "AI批改中…"
-                      : szenarioScore.rounds === 0
-                        ? lang === "de"
-                          ? `KI bewerten${kiOff ? kiOffSuffix : ""}`
-                          : `AI批改${kiOff ? kiOffSuffix : ""}`
-                        : lang === "de"
-                          ? `Erneut prüfen (${szenarioScore.rounds})`
-                          : `改完再评（第${szenarioScore.rounds}轮）`}
-                  </button>
-                </div>
-                {szenarioScore.text && (
-                  <div role="status" aria-live="polite" aria-atomic="true" className="rounded-[var(--radius)] border border-[var(--accent)]/30 bg-[var(--paper-subtle)] p-4 font-sans text-sm leading-relaxed text-[var(--ink)] whitespace-pre-wrap">
-                    {szenarioScore.text}
-                  </div>
-                )}
-
-                {(() => {
-                  const passedRubrics = rubricChecks.filter(Boolean).length >= 2;
-                  return (
-                    <div className="pt-4 border-t border-[var(--line)] flex justify-end">
-                      <button
-                        type="button"
-                        disabled={!passedRubrics}
-                        onClick={() => {
-                          if (stepIdx + 1 < activeCourse.schritte.length) {
-                            unlockNextStep(stepIdx + 1, 30);
-                            setStepIdx(stepIdx + 1);
-                          } else {
-                            addXP(30, stepIdx);
-                            alert(lang === "de" ? "Kurs abgeschlossen! +30 XP" : "恭喜完成本课程！+30 XP");
-                            setActiveCourse(null);
-                          }
-                        }}
-                        className={`px-5 py-2 font-mono text-xs uppercase tracking-wider rounded-[var(--radius)] transition-colors ${
-                          passedRubrics
-                            ? "bg-[var(--ink)] text-[var(--paper)] hover:bg-[var(--accent)]"
-                            : "bg-[var(--line)] text-[var(--gray)] cursor-not-allowed"
-                        }`}
-                      >
-                        {stepIdx + 1 < activeCourse.schritte.length
-                          ? lang === "de"
-                            ? "Weiter (+30 XP) →"
-                            : "下一步 (+30 XP) →"
-                          : lang === "de"
-                          ? "Abschließen (+30 XP)"
-                          : "完成课程 (+30 XP)"}
-                      </button>
-                    </div>
-                  );
-                })()}
-              </div>
-            )}
-
-            {/* STEP 5: MÜNDLICH (口试模拟 - 仅音频本地流) */}
-            {currentSchritt?.typ === "muendlich" && (
-              <div className="space-y-5">
-                <div className="border border-[var(--line)] bg-[var(--paper-subtle)] p-4 rounded-[var(--radius)]">
-                  <span className="font-mono text-xs uppercase text-[var(--accent)] block mb-1">
-                    Ziehung / 抽选题干
-                  </span>
-                  <p className="font-serif text-base text-[var(--ink)]">
-                    {(currentSchritt as SchrittMuendlich).ziehung}
-                  </p>
-                </div>
-
-                <div className="flex items-center justify-between border border-[var(--line)] p-4 rounded-[var(--radius)] bg-[var(--surface)]">
+              {/* Current Step Body */}
+              <div className="space-y-6 py-2">
+                <div className="flex flex-wrap items-baseline justify-between gap-3 border-b border-[var(--line)] pb-3">
                   <div>
-                    <span className="font-mono text-2xl font-normal tabular-nums text-[var(--ink)]">
-                      {formatTime(oralSec)}
+                    <span className="font-mono text-xs uppercase tracking-wider text-[var(--accent)]">
+                      Schritt {currentSchritt?.stepNumber} · {currentSchritt?.typ}
                     </span>
-                    <span className="font-mono text-xs text-[var(--gray)] ml-2">
-                      Verbleibend / 倒计时
-                    </span>
+                    <h3 className="font-serif text-xl text-[var(--ink)] mt-0.5">
+                      {currentSchritt?.title}
+                    </h3>
                   </div>
-
-                  <div className="flex items-center gap-2">
-                    {!recording ? (
-                      <button
-                        type="button"
-                        onClick={startRecording}
-                        className="inline-flex items-center gap-1.5 px-4 py-1.5 font-mono text-xs uppercase border border-[var(--warning)] text-[var(--warning)] hover:bg-[var(--warning)]/10 rounded-[var(--radius)]"
-                      >
-                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.4" aria-hidden="true">
-                          <circle cx="8" cy="8" r="3.25" />
-                        </svg>
-                        Aufnahme starten
-                      </button>
-                    ) : (
-                      <button
-                        type="button"
-                        aria-pressed="true"
-                        onClick={stopRecording}
-                        className="inline-flex items-center gap-1.5 px-4 py-1.5 font-mono text-xs uppercase bg-[var(--warning)] text-[var(--paper)] rounded-[var(--radius)]"
-                      >
-                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinejoin="round" aria-hidden="true">
-                          <rect x="4" y="4" width="8" height="8" rx="0.75" />
-                        </svg>
-                        Aufnahme stoppen
-                      </button>
-                    )}
-                  </div>
+                  <span className="text-xs font-mono text-[var(--gray)]">
+                    Ziel: +
+                    {currentSchritt?.typ === "entdecken"
+                      ? 5
+                      : currentSchritt?.typ === "ausprobieren"
+                      ? 15
+                      : currentSchritt?.typ === "check"
+                      ? 20
+                      : 30}{" "}
+                    XP
+                  </span>
                 </div>
 
-                {audioUrl && (
-                  <div className="border border-[var(--line)] p-3 bg-[var(--paper-subtle)] rounded-[var(--radius)] flex items-center justify-between gap-4">
-                    <audio controls src={audioUrl} className="h-8 max-w-sm" />
-                    <a
-                      href={audioUrl}
-                      download={`muendlich-${activeCourse.thema}.webm`}
-                      className="font-mono text-xs text-[var(--accent)] hover:underline"
-                    >
-                      Audio herunterladen (Lokal)
-                    </a>
-                  </div>
-                )}
-
-                <div className="border border-[var(--line)] bg-[var(--paper-subtle)] p-4 rounded-[var(--radius)] space-y-2">
-                  <div className="text-xs font-mono uppercase text-[var(--gray)] mb-1">
-                    Selbstcheck / 自评准则：
-                  </div>
-                  {(currentSchritt as SchrittMuendlich).selbstcheck.map((sc, i) => (
-                    <label key={i} className="flex items-start gap-2.5 text-xs font-mono text-[var(--ink)] cursor-pointer">
-                      <input
-                        type="checkbox"
-                        checked={oralChecks[i] ?? false}
-                        onChange={() =>
-                          setOralChecks((prev) =>
-                            prev.map((v, j) => (j === i ? !v : v))
-                          )
-                        }
-                        className="mt-0.5 h-3.5 w-3.5 accent-[var(--accent)]"
-                      />
-                      <span>{renderFormattedText(sc)}</span>
-                    </label>
-                  ))}
-                </div>
-
-                {/* D3-muendlich: stichpunkte + gleiche score-pipeline */}
-                <div className="space-y-2">
-                  <label className="block text-xs font-mono uppercase text-[var(--gray)]">
-                    Stichpunkte / Redetext (optional, für KI-Feedback) / 口述要点：
-                  </label>
-                  <textarea
-                    rows={3}
-                    value={oralText}
-                    onChange={(e) => setOralText(e.target.value)}
-                    placeholder="Kernpunkte in Stichworten …"
-                    className="w-full border border-[var(--line)] p-3 text-sm font-sans rounded-[var(--radius)] focus:border-[var(--accent)] focus:outline-none"
-                  />
-                  <div className="flex items-center gap-2">
-                    <button
-                      type="button"
-                      onClick={() => {
-                        if (!oralText.trim() || oralScore.loading) return;
-                        const mu = currentSchritt as SchrittMuendlich;
-                        if (!kiOn()) return;
-                        setOralScore((prev) => ({ ...prev, loading: true }));
-                        void askKi(
-                          buildSzenarioScorePrompt(
-                            activeCourse.fach,
-                            activeCourse.thema,
-                            mu.ziehung,
-                            mu.selbstcheck,
-                            oralText
-                          )
-                        ).then((r) =>
-                          setOralScore((prev) => ({
-                            loading: false,
-                            text: r ?? "(KI derzeit nicht erreichbar. / AI暂时不可用。)",
-                            rounds: prev.rounds + 1,
-                          }))
-                        );
-                      }}
-                      disabled={!oralText.trim() || oralScore.loading}
-                      className={`px-4 py-2 font-mono text-xs uppercase rounded-[var(--radius)] border transition-all ${
-                        !oralText.trim() || oralScore.loading
-                          ? "border-[var(--line)] text-[var(--gray)] cursor-not-allowed"
-                          : "border-[var(--accent)] text-[var(--accent)] hover:bg-[var(--accent)]/5 active:scale-95"
-                      }`}
-                    >
-                      {oralScore.loading
-                        ? lang === "de"
-                          ? "KI liest …"
-                          : "AI批改中…"
-                        : lang === "de"
-                          ? "KI bewerten"
-                          : "AI批改"}
-                    </button>
-                    {oralScore.rounds > 0 && (
-                      <span className="font-mono text-[var(--text-meta)] text-[var(--gray)]">
-                        {lang === "de" ? `Durchgang ${oralScore.rounds}` : `第${oralScore.rounds}轮`}
-                      </span>
-                    )}
-                  </div>
-                  {oralScore.text && (
-                    <div role="status" aria-live="polite" aria-atomic="true" className="rounded-[var(--radius)] border border-[var(--accent)]/30 bg-[var(--paper-subtle)] p-4 font-sans text-sm leading-relaxed text-[var(--ink)] whitespace-pre-wrap">
-                      {oralScore.text}
-                    </div>
-                  )}
-                </div>
-
-                <div className="pt-4 border-t border-[var(--line)] flex justify-end">
-                  <button
-                    type="button"
-                    disabled={oralChecks.filter(Boolean).length === 0}
-                    onClick={() => {
-                      addXP(30, stepIdx);
-                      alert(lang === "de" ? "Mündliche Prüfung abgeschlossen! +30 XP" : "口试模拟完成！+30 XP");
-                      setActiveCourse(null);
-                    }}
-                    className={`px-5 py-2 font-mono text-xs uppercase tracking-wider rounded-[var(--radius)] transition-colors ${
-                      oralChecks.filter(Boolean).length > 0
-                        ? "bg-[var(--ink)] text-[var(--paper)] hover:bg-[var(--accent)]"
-                        : "bg-[var(--line)] text-[var(--gray)] cursor-not-allowed"
-                    }`}
-                  >
-                    Abschließen (+30 XP)
-                  </button>
-                </div>
+                {currentSchritt && renderSchrittContent(currentSchritt, stepIdx, false)}
               </div>
-            )}
-
-            {/* Dev-Feedback lives in the global bottom-right float;
-                the step only reports its context. */}
-          </div>
+            </div>
+          )}
         </div>
       )}
     </div>
