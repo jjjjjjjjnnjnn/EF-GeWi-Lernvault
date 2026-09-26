@@ -112,7 +112,7 @@ Klausur-Satz: `Die resultierende Kraft laengs der schiefen Ebene ist F_res = m*g
 
 BEISPIEL (Musteraufgabe mit Loesungsweg):
 
-[Werkzeug: balance]
+[Werkzeug: kinematik]
 
 AUFGABE (berechnen, AFB II): Ein Kasten der Masse $m = 4{,}0\,\mathrm{kg}$ rutscht aus der Ruhe eine schiefe Ebene mit dem Neigungswinkel $\alpha = 30^{\circ}$ hinab. Der Gleitreibungskoeffizient betraegt $\mu = 0{,}20$, es gilt $g = 10\,\mathrm{m/s^2}$, $\sin(30^{\circ}) = 0{,}50$ und $\cos(30^{\circ}) = 0{,}87$. Berechnen Sie die Beschleunigung $a$ des Kastens und die Geschwindigkeit nach $s = 2{,}0\,\mathrm{m}$.
 

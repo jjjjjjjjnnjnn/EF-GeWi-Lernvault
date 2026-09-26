@@ -112,7 +112,7 @@ Klausur-Satz: `Da beim reibungsfreien Herabgleiten die gesamte Lageenergie in Be
 
 BEISPIEL (Musteraufgabe mit Loesungsweg):
 
-[Werkzeug: balance]
+[Werkzeug: kinematik]
 
 AUFGABE (berechnen, AFB II): Ein Wagen $m = 1{,}0\,\mathrm{kg}$ startet aus der Ruhe und rollt eine reibungsfreie Rampe der Hoehe $h = 0{,}80\,\mathrm{m}$ hinunter. Am Fuss trifft er auf eine horizontale Feder mit $D = 100\,\mathrm{N/m}$ ($g = 10\,\mathrm{m/s^2}$). Bestimmen Sie $v$ am Fuss und die maximale Stauchung $s$.
 

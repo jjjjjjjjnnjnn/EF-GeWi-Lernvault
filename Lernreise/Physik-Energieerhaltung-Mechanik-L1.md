@@ -79,7 +79,7 @@ Klausur-Satz: `Da beim reibungsfreien Herabgleiten die gesamte Lageenergie in Be
 
 BEISPIEL（正确例题示范，含教具操作与解答）：
 
-[Werkzeug: balance]
+[Werkzeug: kinematik]
 
 AUFGABE (berechnen, AFB II)：Ein Wagen der Masse m = 1,0 kg startet aus der Ruhe und rollt eine reibungsfreie Rampe der Höhe h = 0,80 m hinunter. Am Fuß der Rampe trifft er auf eine horizontale Feder mit der Federkonstante D = 100 N/m und staucht sie zusammen. Es gilt g = 10 m/s^2. Bestimmen Sie die Geschwindigkeit des Wagens am Fuß der Rampe sowie die maximale Zusammendrückung s der Feder.
 
