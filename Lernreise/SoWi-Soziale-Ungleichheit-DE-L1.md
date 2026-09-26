@@ -19,9 +19,21 @@ version: Lesson-v3
 
 ZIELE (drei messbare Ziele dieser Lektion):
 
-1. Du kannst den Leitbegriff der Lektion in einem Satz definieren und ein Beispiel zuordnen.
-2. Du kannst das Kernverfahren mit den Groessen $x_1$ und $x_2$ anwenden und die Differenz $d = x_2 - x_1$ deuten.
-3. Du kannst ein kriteriengeleitetes Urteil formulieren und mit einem Klausur-Satz abschliessen (AFB II/III).
+1. Du kannst **soziale Ungleichheit** und **Chancengleichheit** in je einem Satz definieren und Dimensionen korrekt zuordnen.
+2. Du kannst $Gini = 0.30$ und $c = 4$ deuten und Bildungstrichter als Herkunftseffekt erklaeren.
+3. Du kannst mit dem Kriterium **Chancengerechtigkeit** ein Urteil zu Anreiz und Ausgleich formulieren und mit einem Klausur-Satz schliessen (AFB II/III).
+
+### Hook / Phaenomen
+
+Akademikerkind studiert, Arbeiterkind bleibt draussen, obwohl Noten aehneln: Zufall oder Struktur? Bourdieu stieg selbst auf und fragte, warum so wenige folgen. Entscheidet Leistung oder Herkunft ueber Zukunft?
+
+### Fachbegriff & Definition
+
+**Soziale Ungleichheit** meint ungleiche Verteilung von **Einkommen, Bildung und Einfluss** mit Wirkung auf Lebenschancen. **Chancengleichheit** fordert gleiche Startbedingungen, nicht gleiche Ergebnisse. Der **Bildungstrichter** belegt Herkunftseffekt statt Meritokratie. Kurz: Ungleich starten heisst ungleich landen.
+
+### Wirkungsgefuege / Modell
+
+Der Mechanismus laeuft in drei Stufen: **Ressource, Chance, Folge**. Erstens praegt $Kapital = Geld + Bildung + Netz$ die Startposition. Zweitens filtert Schule mit $c = oben/unten = 4$ stark nach Herkunft. Drittens sichert $Gini = 0.30$ mittlere Einkommensspreizung bei ungleicher Bildung. Faellt Ausgleich aus, gilt $Vertrauen = sinkend$ und Demokratie verliert Glauben.
 
 Klausur-Satz: `Soziale Ungleichheit bezeichnet die ungleiche Verteilung von Ressourcen wie Einkommen, Bildung und Einfluss, die Lebenschancen systematisch prägt.`
 
@@ -29,11 +41,21 @@ Klausur-Satz: `Soziale Ungleichheit bezeichnet die ungleiche Verteilung von Ress
 
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
-- Leitbegriff: zentrale Definition der Lektion in einem Satz mit Klausurformulierung.
-- Kriterium: Massstab, an dem Faelle der Form $x_1$ und $x_2$ gemessen werden.
-- Verfahren: geregelte Abfolge von Rekonstruktion, Anwendung und Urteil.
-- Beleg: Text- oder Datenausschnitt, der jede Deutung $D$ mit einem Beleg $B$ stuetzt.
-- Urteil: begruendete Entscheidung aus Kriterium und Differenz $d = x_2 - x_1$.
+### Hook / Phaenomen
+
+Arm oder ungleich, fair oder verdient: Worte mischen alles. Diese fuenf Begriffe trennen Messen und Werten.
+
+### Fachbegriffe & Definitionen
+
+- **Einkommensdimension:** Die oekonomische Achse mit $Mass = Gini + Quote$. Sie misst $Geld = Verteilung$ zwischen Haushalten.
+- **Bildungsdimension:** Die soziale Achse mit $Mass = Trichter + Abschluss$. Sie zeigt $Herkunft = staerkerAlsNote$ als Filter.
+- **Armutsgefaehrdung:** Die relative Schwelle mit $Schwelle = 60ProzentMedian$. Sie definiert $Arm = StandardMinus$ als Teilhabe.
+- **Meritokratie:** Das Ideal mit $Erfolg = Leistung + Anstrengung$. Es scheitert, wenn $Herkunft > Leistung$ gilt.
+- **Kapitalsorten:** Bourdieus Trio mit $Kapital = Geld + Bildung + Netz$. Es erklaert $Chance = Summe$ ueber Generationen.
+
+### Wirkungsgefuege / Modell
+
+Die Begriffe greifen ineinander: **Einkommen** und **Bildung** liefern die Dimensionen $Geld + Wissen$. **Armutsgefaehrdung** markiert mit $60Prozent$ die Grenze relativer Armut. **Meritokratie** liefert das Versprechen $Leistung = Lohn$, **Kapitalsorten** die Kritik $Start = Erbe$. Wer in der Klausur urteilt, muss deshalb immer fragen: Misst du Ergebnis oder Chance?
 
 Klausur-Satz: `Chancengleichheit bedeutet gleiche Startbedingungen, nicht gleiche Ergebnisse — gemessen wird sie am Bildungstrichter und an der Armutsgefaehrdungsquote.`
 
@@ -41,12 +63,23 @@ Klausur-Satz: `Chancengleichheit bedeutet gleiche Startbedingungen, nicht gleich
 
 TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
-Das Kernmodell dieser Lektion verbindet Begriff, Verfahren und Urteil. Zuerst wird der Fall rekonstruiert, dann werden die Werte $x_1$ und $x_2$ bestimmt und schliesslich wird die Differenz $d = x_2 - x_1$ am Kriterium gemessen. Der $Gini$-Koeffizient mit $Gini = 1 - 2B$ liegt zwischen $0$ und $1$. Die Chancenquote lautet $c = c_{oben} / c_{unten}$.
+### Hook / Phaenomen
+
+Ganztag gratis und BAfoeG ohne Eltern: Rettung oder Giesskanne? Eine Seite ruft Eigenverantwortung, andere ruft Nachteilsausgleich. Halb so oft Abitur sagt mehr als Meinung. Genau hier zaehlt Kriterium.
+
+### Fachbegriff & Definition
+
+Das **Chancenmodell** verbindet Messung mit Deutung und Forderung. Es misst $Gini = 1 - 2B$ zwischen $0 = gleich$ und $1 = ungleich$. Es deutet $c = 4$ als vierfache Studienchance oben. Es fordert $Ausgleich = Ganztag + Foerderung$ nach Chancengerechtigkeit. Die Formel lautet $Gerecht \iff Herkunft < Leistung$.
+
+### Wirkungsgefuege / Modell
+
+Denke in Kausalkette: **Messen, Deuten, Handeln**. Erstens misst $Gini = 0.30$ mittlere Spreizung und $Trichter = Herkunft$ starke Filterung. Zweitens deutet funktionalistisch $Ungleich = Anreiz$ gegen konflikttheoretisch $Ungleich = Barriere$. Drittens handelt Ausgleich mit $Ganztag = Zeit + Sprache$ und $BAfoeG = Geld + Unabhaengigkeit$. Genau diese Kette verlangt in der Klausur ein **kriteriengeleitetes Urteil**, keine Einzelfallstory.
 
 ```diagram
-  Fall -> Rekonstruktion [x1, x2]
-  Rekonstruktion -> Kriterium -> Differenz d = x2 - x1
-  Differenz -> Urteil (AFB III)
+  Ressource [Geld + Bildung + Netz]
+  Ressource -> Messung [Gini + Trichter + Quote]
+  Messung -> Deutung [Anreiz vs Barriere]
+  Deutung -> Urteil (Ausgleich mit Mass)
 ```
 
 Klausur-Satz: `Der Bildungstrichter zeigt, dass der Bildungserfolg in Deutschland stark von der sozialen Herkunft abhaengt: Akademikerkinder erreichen deutlich haeufiger die Hochschule als Arbeiterkinder.`

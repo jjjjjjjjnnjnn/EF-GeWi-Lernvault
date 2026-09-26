@@ -19,9 +19,21 @@ version: Lesson-v3
 
 ZIELE (drei messbare Ziele dieser Lektion):
 
-1. Du kannst den Leitbegriff der Lektion in einem Satz definieren und ein Beispiel zuordnen.
-2. Du kannst das Kernverfahren mit den Groessen $x_1$ und $x_2$ anwenden und die Differenz $d = x_2 - x_1$ deuten.
-3. Du kannst ein kriteriengeleitetes Urteil formulieren und mit einem Klausur-Satz abschliessen (AFB II/III).
+1. Du kannst die **Soziale Marktwirtschaft** in einem Satz definieren und **Wettbewerb** von **sozialem Ausgleich** unterscheiden.
+2. Du kannst den **Preismechanismus** mit $p_N(q)$ und $p_A(q)$ erklaeren und $p_G$ sowie $q_G$ bestimmen.
+3. Du kannst einen Eingriff wie den **Mindestlohn** mit einem Kriterium beurteilen und mit einem Klausur-Satz abschliessen (AFB II/III).
+
+### Hook / Phaenomen
+
+Stell dir vor: Es ist Samstagmorgen, das Regal im Supermarkt ist voll, niemand steht an, niemand hamstert. Vor achtzig Jahren war das Gegenteil normal: Schlangen, Bezugsscheine, leere Schaufenster. Im Juni 1948 fuellten sich die Laeden in Westdeutschland fast ueber Nacht — nicht weil ueber Nacht mehr produziert wurde, sondern weil sich die Spielregeln aenderten. Wie kann eine blosse Regel das Verhalten von Millionen Menschen so radikal veraendern? Und warum braucht eine freie Wirtschaft trotzdem einen Sozialstaat?
+
+### Fachbegriff & Definition
+
+Die **Soziale Marktwirtschaft** ist die Wirtschaftsordnung der Bundesrepublik: **freier Wettbewerb auf dem Markt** plus **staatlich gesicherter sozialer Ausgleich**. Der Staat setzt den **Ordnungsrahmen** — Eigentum, Vertragsfreiheit, Wettbewerbsrecht, Geldwertstabilitaet — greift aber nicht direkt in **Preise** und **Loehne** ein. Wettbewerb sorgt fuer **Effizienz und Innovation**, der Sozialstaat fuer **Gerechtigkeit und Sicherheit**. Kurz: Der Staat ist **Schiedsrichter, nicht Spieler**.
+
+### Wirkungsgefuege / Modell
+
+Der Kernmechanismus laeuft in drei Stufen: **Anreiz, Koordination, Korrektur**. Erstens setzt **Konkurrenz** Anreize: Wer besser oder billiger anbietet, gewinnt Kunden. Zweitens koordiniert der **Preis** Angebot und Nachfrage: Steigt die Nachfrage, steigt $p$, mehr Anbieter kommen hinzu, bis $p_N(q) = p_A(q)$ mit $p_G$ und $q_G$ gilt. Drittens korrigiert der **Sozialstaat**, wo der Markt blind ist: bei Krankheit, Arbeitslosigkeit, Marktmacht oder Umweltkosten. Faellt eine Stufe aus — etwa durch Monopole oder fehlende Absicherung — kippt die Legitimation der Ordnung.
 
 Klausur-Satz: `Die Soziale Marktwirtschaft legitimiert sich durch zwei Versprechen: Effizienz durch Wettbewerb und Gerechtigkeit durch sozialen Ausgleich.`
 
@@ -29,11 +41,21 @@ Klausur-Satz: `Die Soziale Marktwirtschaft legitimiert sich durch zwei Versprech
 
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
-- Leitbegriff: zentrale Definition der Lektion in einem Satz mit Klausurformulierung.
-- Kriterium: Massstab, an dem Faelle der Form $x_1$ und $x_2$ gemessen werden.
-- Verfahren: geregelte Abfolge von Rekonstruktion, Anwendung und Urteil.
-- Beleg: Text- oder Datenausschnitt, der jede Deutung $D$ mit einem Beleg $B$ stuetzt.
-- Urteil: begruendete Entscheidung aus Kriterium und Differenz $d = x_2 - x_1$.
+### Hook / Phaenomen
+
+„Der Markt regelt das schon" — diesen Satz hoert man bei Mieten, Löhnen und Klimakosten. Aber was genau regelt der Markt, und was kann er prinzipiell nicht regeln? Ohne praezise Begriffe wird jede Klausur zum Ratespiel. Diese fuenf Bausteine brauchst du wie Werkzeug im Koffer.
+
+### Fachbegriffe & Definitionen
+
+- **Wettbewerb:** Rivalitaet vieler Anbieter um Kunden. Er zwingt zu **niedrigen Preisen, hoher Qualitaet und Innovation**. Voraussetzung sind offener Marktzutritt und Kartellverbot.
+- **Ordnungsrahmen (Ordnungspolitik):** Die staatlich gesetzten Spielregeln — **Eigentumsordnung, Wettbewerbsrecht, Vertragsfreiheit, stabile Waehrung**. Der Staat bestimmt das Spielfeld, nicht das Spielergebnis.
+- **Preismechanismus:** Die Lenkungsfunktion des Preises $p$. Ein Ueberschuss $q_A - q_N > 0$ drueckt $p$ nach unten, ein Mangel $q_A - q_N < 0$ treibt $p$ nach oben, bis $p_N(q) = p_A(q)$ gilt.
+- **Tarifautonomie:** Das Grundrecht, dass **Gewerkschaften und Arbeitgeber** Loehne und Arbeitsbedingungen ohne Staat aushandeln. Geschuetzt durch Art. 9 Abs. 3 GG.
+- **Sozialstaatlicher Ausgleich:** Staatliche Umverteilung durch **Steuern, Transfers, Sozialversicherung und Mindeststandards**. Er sichert Teilhabe, wo Markteinkommen nicht reichen.
+
+### Wirkungsgefuege / Modell
+
+Die Begriffe greifen ineinander: Der **Ordnungsrahmen** ermoeglicht **Wettbewerb**, Wettbewerb erzeugt ueber den **Preismechanismus** ein Gleichgewicht $p_G$ und $q_G$. Die **Tarifautonomie** loest die Lohnfindung aus dem Staat heraus und verlagert sie zu den Sozialpartnern. Der **sozialstaatliche Ausgleich** faengt Haerten auf, ohne den Preismechanismus grundsaetzlich ausser Kraft zu setzen. Wer in der Klausur einen Eingriff prueft, muss deshalb immer fragen: Stoert er den Mechanismus nur punktuell oder zerstoert er ihn?
 
 Klausur-Satz: `Der Staat setzt den Ordnungsrahmen, greift aber nicht direkt in Preise und Löhne ein.`
 
@@ -41,12 +63,23 @@ Klausur-Satz: `Der Staat setzt den Ordnungsrahmen, greift aber nicht direkt in P
 
 TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
-Das Kernmodell dieser Lektion verbindet Begriff, Verfahren und Urteil. Zuerst wird der Fall rekonstruiert, dann werden die Werte $x_1$ und $x_2$ bestimmt und schliesslich wird die Differenz $d = x_2 - x_1$ am Kriterium gemessen. Im Gleichgewicht gilt $p_N(q) = p_A(q)$ mit Gleichgewichtspreis $p_G$ und Gleichgewichtsmenge $q_G$. Der Angebotsueberhang bei einem Mindestpreis $p_{min}$ betraegt $q_A - q_N$.
+### Hook / Phaenomen
+
+Fuenfzehn Euro Mindestlohn — Rettung vor Armut oder Jobkiller? Gewerkschaften jubeln, Verbaende warnen vor Entlassungen, Oekonomen streiten mit Modellen. Beide Seiten berufen sich auf dieselbe Ordnung. Der Streit laesst sich nur entscheiden, wenn man den Eingriff sauber durch den Preismechanismus hindurchdenkt.
+
+### Fachbegriff & Definition
+
+Der **Gleichgewichtspreis** $p_G$ ist der Preis, bei dem **Nachfragemenge gleich Angebotsmenge** ist: $p_N(q) = p_A(q)$ mit Menge $q_G$. Ein **Mindestpreis** $p_{min} > p_G$ setzt dieses Raeumen ausser Kraft. Es entsteht ein **Angebotsueberhang** von $q_A - q_N > 0$. Auf dem Arbeitsmarkt heisst das: Zum Lohn $p_{min}$ bieten mehr Menschen Arbeit an, als Unternehmen nachfragen — moegliche **Beschaeftigungsverluste** gegen **Lohnschutz**.
+
+### Wirkungsgefuege / Modell
+
+Denke in Kausalkette: **Eingriff, Mengenreaktion, Bewertung**. Erstens fixiert der Staat $p_{min} = 25$ oberhalb von $p_G = 20$ aus $40 - 2q = 10 + q$, also $q_G = 10$. Zweitens reagieren die Mengen: $q_A = 15$, $q_N = 7{,}5$, Ueberhang $7{,}5$ Einheiten. Drittens wird bewertet: Nach dem Kriterium **Allokationseffizienz** liegt ein Wohlfahrtsverlust vor, nach dem Kriterium **Verteilungsgerechtigkeit** ein Schutz vor Armut trotz Arbeit. Genau diese Spannung macht die Soziale Marktwirtschaft aus — und genau sie verlangt in der Klausur ein **kriteriengeleitetes Urteil**, keine Bauchmeinung.
 
 ```diagram
-  Fall -> Rekonstruktion [x1, x2]
-  Rekonstruktion -> Kriterium -> Differenz d = x2 - x1
-  Differenz -> Urteil (AFB III)
+  Ordnung [Wettbewerb + Ausgleich]
+  Ordnung -> Preis p -> Gleichgewicht pG, qG
+  Mindestpreis pmin > pG -> Ueberhang qA - qN
+  Ueberhang -> Urteil (Effizienz vs. Gerechtigkeit)
 ```
 
 Klausur-Satz: `Tarifautonomie heißt: Löhne handeln Gewerkschaften und Arbeitgeber ohne den Staat aus.`

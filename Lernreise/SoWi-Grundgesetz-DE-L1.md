@@ -19,9 +19,21 @@ version: Lesson-v3
 
 ZIELE (drei messbare Ziele dieser Lektion):
 
-1. Du kannst den Leitbegriff der Lektion in einem Satz definieren und ein Beispiel zuordnen.
-2. Du kannst das Kernverfahren mit den Groessen $x_1$ und $x_2$ anwenden und die Differenz $d = x_2 - x_1$ deuten.
-3. Du kannst ein kriteriengeleitetes Urteil formulieren und mit einem Klausur-Satz abschliessen (AFB II/III).
+1. Du kannst **Menschenwuerde** und **Verfassungsprinzipien** in je einem Satz definieren und Art. 1 und Art. 20 korrekt zuordnen.
+2. Du kannst **Grundrechtskollision** mit $RechtA + RechtB = Ausgleich$ durch praktische Konkordanz loesen.
+3. Du kannst mit dem Kriterium **Wesensgehalt** ein Urteil zu Eingriff und Schranke formulieren und mit einem Klausur-Satz schliessen (AFB II/III).
+
+### Hook / Phaenomen
+
+Platzverbot gegen Versammlung, Verkehr gegen Meinung: Zwei Rechte prallen auf einem Platz aufeinander. Die Gemeinde will Ruhe, die Gruppe will Stimme. Wer darf was verbieten, wenn beide sich aufs Grundgesetz berufen?
+
+### Fachbegriff & Definition
+
+Das **Grundgesetz** gruendet die Ordnung auf **Menschenwuerde** als unantastbaren Anfang nach Art. 1 GG. Art. 20 GG nennt vier **Verfassungsprinzipien**: **Demokratie, Rechtsstaat, Sozialstaat und Bundesstaat**. **Grundrechte** binden alle Staatsgewalt unmittelbar und wirken mittelbar auch zwischen Buergern. Kurz: Wuerde zuerst, Prinzipien als Geruest, Rechte als Schutz.
+
+### Wirkungsgefuege / Modell
+
+Der Mechanismus laeuft in drei Stufen: **Schutz, Kollision, Ausgleich**. Erstens garantiert $Art1 = Wuerde + Bindung$ den Kern mit $Ewig = Art79Abs3$. Zweitens kollidieren Rechte mit $Versammlung + Verkehr = Konflikt$. Drittens verlangt **praktische Konkordanz** mit $Optimum = RechtA + RechtB$ statt $Sieg = EntwederOder$. Faellt Ausgleich aus, wird ein **Wesensgehalt** mit $Gehalt = 0$ angetastet und der Eingriff verfassungswidrig.
 
 Klausur-Satz: `Art. 1 GG erklärt die Menschenwürde für unantastbar; über Art. 1 Abs. 3 binden die Grundrechte alle Staatsgewalt unmittelbar.`
 
@@ -29,11 +41,21 @@ Klausur-Satz: `Art. 1 GG erklärt die Menschenwürde für unantastbar; über Art
 
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
-- Leitbegriff: zentrale Definition der Lektion in einem Satz mit Klausurformulierung.
-- Kriterium: Massstab, an dem Faelle der Form $x_1$ und $x_2$ gemessen werden.
-- Verfahren: geregelte Abfolge von Rekonstruktion, Anwendung und Urteil.
-- Beleg: Text- oder Datenausschnitt, der jede Deutung $D$ mit einem Beleg $B$ stuetzt.
-- Urteil: begruendete Entscheidung aus Kriterium und Differenz $d = x_2 - x_1$.
+### Hook / Phaenomen
+
+Vier Prinzipien, ein Ewigkeitskern, viele Kollisionen: Ohne Kompass wird Verfassungsrecht zum Zitatenraten. Diese fuenf Begriffe geben dir Ordnung und Massstab.
+
+### Fachbegriffe & Definitionen
+
+- **Menschenwuerde:** Der oberste Wert mit $Wuerde = unantastbar + unverfuegbar$. Sie steht in $Art1Abs1$ und traegt $Schutz = Staatspflicht$.
+- **Demokratieprinzip:** Die Herrschaft mit $Macht = Volk + Wahl + Wechsel$. Sie verlangt $Legitim = Mehrheit + Minderheitsschutz$.
+- **Rechtsstaat:** Die Bindung mit $Staat = Gesetz + Gericht + Grundrecht$. Er sichert $Freiheit = Abwehr + Verfahren$.
+- **Sozialstaat:** Der Ausgleich mit $Hilfe = Steuer + Transfer + Vorsorge$. Er ergaenzt Freiheit durch $Teilhabe = Chance$.
+- **Ewigkeitsklausel:** Die Sperre aus Art. 79 Abs. 3 GG mit $Unveraenderbar = Art1 + Art20$. Sie entzieht den Kern mit $Aenderung = verboten$ jeder Reform.
+
+### Wirkungsgefuege / Modell
+
+Die Begriffe greifen ineinander: **Menschenwuerde** gruendet mit $Wuerde = Anfang$ alle Rechte. **Demokratie** und **Rechtsstaat** balancieren mit $Mehrheit + Gericht$ Macht und Freiheit. **Sozialstaat** federt mit $Ausgleich = Umverteilung$ Haerten ab. Die **Ewigkeitsklausel** zementiert mit $Kern = unantastbar$ das Ganze. Wer in der Klausur prueft, muss deshalb immer fragen: Bleibt der Wesensgehalt erhalten?
 
 Klausur-Satz: `Art. 20 GG nennt vier Verfassungsprinzipien: Demokratie, Rechtsstaat, Sozialstaat und Bundesstaat.`
 
@@ -41,12 +63,23 @@ Klausur-Satz: `Art. 20 GG nennt vier Verfassungsprinzipien: Demokratie, Rechtsst
 
 TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
-Das Kernmodell dieser Lektion verbindet Begriff, Verfahren und Urteil. Zuerst wird der Fall rekonstruiert, dann werden die Werte $x_1$ und $x_2$ bestimmt und schliesslich wird die Differenz $d = x_2 - x_1$ am Kriterium gemessen. Leitformel des Moduls: $K = \text{Kriterium} \to \text{Urteil}$. Pruefgroessen werden als $x_1, x_2$ verglichen; die Differenz $d = x_2 - x_1$ stuettet das Urteil.
+### Hook / Phaenomen
+
+Versammlung blockiert Kreuzung, Polizei will raeumen, Veranstalter rufen Freiheit. Beide Seiten haben Recht, doch die Strasse ist nur einmal da. Wie vermittelt man, ohne ein Recht zu opfern? Genau hier arbeitet praktische Konkordanz.
+
+### Fachbegriff & Definition
+
+Die **praktische Konkordanz** optimiert kollidierende Grundrechte statt eines zu streichen. Sie prueft mit $Geeignet + Erforderlich + Angemessen$ die Verhaeltnismaessigkeit. Die Formel lautet $Loesung = RechtAOpt + RechtBOpt$ bei $Wesensgehalt > 0$. Der Ausgleich sucht Zeit, Ort und mildestes Mittel.
+
+### Wirkungsgefuege / Modell
+
+Denke in Kausalkette: **Kollision, Pruefung, Optimierung**. Erstens kollidieren $Versammlung = Art8$ und $Bewegung = Allgemeininteresse$ auf $Platz = knapp$. Zweitens prueft Verhaeltnismaessigkeit mit $Verbot = ungeeignet$ gegen $Verlegung = milder$ und $Auflage = Zeit + Route$. Drittens optimiert Konkordanz mit $Versammlung = erlaubt + verlegt$ und $Verkehr = fliesst + kurzGestoppt$. Genau dieser Ausgleich verlangt in der Klausur ein **kriteriengeleitetes Urteil**, kein EntwederOder.
 
 ```diagram
-  Fall -> Rekonstruktion [x1, x2]
-  Rekonstruktion -> Kriterium -> Differenz d = x2 - x1
-  Differenz -> Urteil (AFB III)
+  Kollision [Recht A + Recht B]
+  Kollision -> Pruefung [Geeignet + Erforderlich + Angemessen]
+  Pruefung -> Optimierung [Zeit + Ort + Mittel]
+  Optimierung -> Urteil (Wesensgehalt bleibt)
 ```
 
 Klausur-Satz: `Bei einer Grundrechtskollision verlangt die praktische Konkordanz, beide Rechte möglichst zu verwirklichen, ohne ihren Wesensgehalt anzutasten.`

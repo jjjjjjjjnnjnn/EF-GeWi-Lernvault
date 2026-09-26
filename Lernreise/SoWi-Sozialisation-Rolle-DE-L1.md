@@ -19,9 +19,21 @@ version: Lesson-v3
 
 ZIELE (drei messbare Ziele dieser Lektion):
 
-1. Du kannst den Leitbegriff der Lektion in einem Satz definieren und ein Beispiel zuordnen.
-2. Du kannst das Kernverfahren mit den Groessen $x_1$ und $x_2$ anwenden und die Differenz $d = x_2 - x_1$ deuten.
-3. Du kannst ein kriteriengeleitetes Urteil formulieren und mit einem Klausur-Satz abschliessen (AFB II/III).
+1. Du kannst **Sozialisation** und **Rolle** in je einem Satz definieren und primaer und sekundaer korrekt zuordnen.
+2. Du kannst **Homo sociologicus** mit $Handeln = Erwartung + Sanktion$ rekonstruieren und auf Handyregeln anwenden.
+3. Du kannst mit dem Kriterium **Berechenbarkeit** ein Urteil zu Freiheit und Bindung formulieren und mit einem Klausur-Satz schliessen (AFB II/III).
+
+### Hook / Phaenomen
+
+Verbot oder Freiheit fuers Handy, Streit um Fairness im Klassenrat: Zwei Schuelerinnen, eine Regel, zwei Gefuehle. Warum beruhigen Regeln, obwohl sie einengen? Genau hier wirken Rolle und Sanktion.
+
+### Fachbegriff & Definition
+
+**Sozialisation** ist der lebenslange Erwerb von Normen, Werten und Rollen einer Gesellschaft. **Rolle** meint Buendel von Erwartungen an eine Position wie Schueler oder Sprecher. Dahrendorfs **Homo sociologicus** handelt nach Erwartung, Abweichung loest **soziale Kontrolle** durch Sanktion aus. Kurz: Lernen, was gilt, spielen, was erwartet wird.
+
+### Wirkungsgefuege / Modell
+
+Der Mechanismus laeuft in drei Stufen: **Erwartung, Kontrolle, Spielraum**. Erstens sendet Umwelt mit $Erwartung = Muss + Soll + Kann$ klare Signale. Zweitens sichert Kontrolle mit $positiv = Lob$ und $negativ = Tadel$ die Befolgung. Drittens oeffnet **Rollendistanz** mit $Person > Rolle$ Freiheit im Spiel. Faellt Distanz aus, wird Mensch mit $Ich = Rolle$ zur Maske.
 
 Klausur-Satz: `Sozialisation bezeichnet den lebenslangen Prozess, in dem das Individuum Normen, Werte und Rollen seiner Gesellschaft erwirbt.`
 
@@ -29,11 +41,21 @@ Klausur-Satz: `Sozialisation bezeichnet den lebenslangen Prozess, in dem das Ind
 
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
-- Leitbegriff: zentrale Definition der Lektion in einem Satz mit Klausurformulierung.
-- Kriterium: Massstab, an dem Faelle der Form $x_1$ und $x_2$ gemessen werden.
-- Verfahren: geregelte Abfolge von Rekonstruktion, Anwendung und Urteil.
-- Beleg: Text- oder Datenausschnitt, der jede Deutung $D$ mit einem Beleg $B$ stuetzt.
-- Urteil: begruendete Entscheidung aus Kriterium und Differenz $d = x_2 - x_1$.
+### Hook / Phaenomen
+
+Familie praegt Sprache, Schule verteilt Noten, Peers setzen Stil: Wer formt dich am staerksten? Diese fuenf Begriffe geben dir Phasen und Werkzeuge.
+
+### Fachbegriffe & Definitionen
+
+- **Primaere Sozialisation:** Die fruehe Praegung mit $Ort = Familie$ durch Sprache und Vertrauen. Sie legt $Basis = Werte + Bindung$ als Fundament.
+- **Sekundaere Sozialisation:** Die spaete Formung mit $Ort = Schule + Peers$ durch Wissen und Status. Sie verteilt $Chance = Abschluss + Rolle$ selektiv.
+- **Sanktion:** Die Kontrolle mit $positiv = Lob + Note$ und $negativ = Tadel + Strafe$. Sie stabilisiert $Norm = Erwartung$.
+- **Rollenkonflikt:** Der Widerspruch mit $intra = eineRolle$ gegen $inter = zweiRollen$. Dazu kommt $PersonRolle = IchGegenPflicht$ als dritte Form.
+- **Rollendistanz:** Die Freiheit mit $Spiel = Humor + Reflexion$. Sie sichert $Selbst = Abstand$ ohne Bruch der Rolle.
+
+### Wirkungsgefuege / Modell
+
+Die Begriffe greifen ineinander: **Primaer** und **sekundaer** liefern die Phasen $frueh + spaet$. **Sanktion** sichert mit $Lohn + Strafe$ die Norm. **Konflikt** und **Distanz** liefern Problem und Loesung $Spannung + Spielraum$. Wer in der Klausur deutet, muss deshalb immer fragen: Welche Phase praegt, welcher Konflikt bremst, welche Distanz hilft?
 
 Klausur-Satz: `Dahrendorfs Homo sociologicus handelt nach Rollenerwartungen; Abweichung löst soziale Kontrolle in Form positiver oder negativer Sanktionen aus.`
 
@@ -41,12 +63,23 @@ Klausur-Satz: `Dahrendorfs Homo sociologicus handelt nach Rollenerwartungen; Abw
 
 TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
-Das Kernmodell dieser Lektion verbindet Begriff, Verfahren und Urteil. Zuerst wird der Fall rekonstruiert, dann werden die Werte $x_1$ und $x_2$ bestimmt und schliesslich wird die Differenz $d = x_2 - x_1$ am Kriterium gemessen. Leitformel des Moduls: $K = \text{Kriterium} \to \text{Urteil}$. Pruefgroessen werden als $x_1, x_2$ verglichen; die Differenz $d = x_2 - x_1$ stuettet das Urteil.
+### Hook / Phaenomen
+
+Halten oder brechen, gehorchen oder spotten: Eine Schuelerin folgt Regel, andere ruft ungerecht. Moderation braucht mehr als Machtwort. Hilft Distanz, den Streit zu loesen? Genau hier zeigt sich Rollenreife.
+
+### Fachbegriff & Definition
+
+Das **Rollen-Sanktions-Modell** verbindet Erwartung mit Folge und Freiheit. Es startet mit $Rolle = Muss + Soll + Kann$ als Skala der Verbindlichkeit. Es droht mit $Abweichung = Sanktion$ als Preis des Bruchs. Es rettet mit $Distanz = Reflexion$ die Person. Die Formel lautet $Ordnung \iff Erwartung + Kontrolle + Abstand$.
+
+### Wirkungsgefuege / Modell
+
+Denke in Kausalkette: **Regel, Bruch, Bruecke**. Erstens gilt $Handy = verbotenImUnterricht$ mit $Sanktion = Eintrag$. Zweitens bricht $PersonRolle = GewissenGegenRegel$ auf als Streit. Drittens baut **Distanz** mit $Gespraech = RolleErklaeren + KritikHoeren$ die Bruecke zu $Kompromiss = Zone + Zeit$. Genau diese Moderation verlangt in der Klausur ein **kriteriengeleitetes Urteil**, kein Machtwort.
 
 ```diagram
-  Fall -> Rekonstruktion [x1, x2]
-  Rekonstruktion -> Kriterium -> Differenz d = x2 - x1
-  Differenz -> Urteil (AFB III)
+  Erwartung [Muss + Soll + Kann]
+  Erwartung -> Kontrolle [Lob + Tadel]
+  Kontrolle -> Konflikt [intra + inter + Person]
+  Konflikt -> Distanz -> Urteil (Ordnung mit Freiheit)
 ```
 
 Klausur-Satz: `Rollen machen das Verhalten berechenbar, doch erst die Rollendistanz sichert dem Einzelnen Freiheit innerhalb der Rolle.`

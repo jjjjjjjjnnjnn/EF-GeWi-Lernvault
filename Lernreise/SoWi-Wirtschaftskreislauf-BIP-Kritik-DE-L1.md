@@ -19,9 +19,21 @@ version: Lesson-v3
 
 ZIELE (drei messbare Ziele dieser Lektion):
 
-1. Du kannst den Leitbegriff der Lektion in einem Satz definieren und ein Beispiel zuordnen.
-2. Du kannst das Kernverfahren mit den Groessen $x_1$ und $x_2$ anwenden und die Differenz $d = x_2 - x_1$ deuten.
-3. Du kannst ein kriteriengeleitetes Urteil formulieren und mit einem Klausur-Satz abschliessen (AFB II/III).
+1. Du kannst **Wirtschaftskreislauf** und **BIP** in je einem Satz definieren und fuenf Sektoren korrekt benennen.
+2. Du kannst $Y = C + I + G + Ex - Im$ als Verwendung darstellen und $g = Wachstum$ berechnen.
+3. Du kannst mit dem Kriterium **Wohlfahrt** ein Urteil zu BIP und Gruenem BIP formulieren und mit einem Klausur-Satz schliessen (AFB II/III).
+
+### Hook / Phaenomen
+
+Sturm zerstoert Wald, BIP steigt durch Repairatur: Zählt Zerstoerung als Fortschritt? Geld fliesst, Gueter fliessen, Natur schweigt. Misst Wachstum Wohlstand oder nur Umsatz?
+
+### Fachbegriff & Definition
+
+Der **erweiterte Wirtschaftskreislauf** zeigt Geld und Gueter zwischen **Haushalten, Unternehmen, Staat, Banken und Ausland**. Das **Bruttoinlandsprodukt** misst nur monetarisierte Produktion im Inland als $Y$ pro Jahr. **Geldstrom** und **Gueterstrom** laufen entgegengesetzt zwischen Akteuren. Kurz: Kreis sehen, Ausschnitt messen, Rest bedenken.
+
+### Wirkungsgefuege / Modell
+
+Der Mechanismus laeuft in drei Stufen: **Tausch, Erweiterung, Blindheit**. Erstens tauschen $Haushalt = Arbeit$ gegen $Lohn$ und $Firma = Gut$ gegen $Preis$. Zweitens ergaenzen $Staat = Steuer + Transfer$, $Bank = Kredit + Zins$ und $Ausland = Ex - Im$ den Kern. Drittens blendet $BIP = Markt$ Umwelt und Sorge mit $Wohlfahrt > BIP$ aus. Faellt Korrektur aus, subventioniert Natur mit $Kosten = 0$ das Wachstum.
 
 Klausur-Satz: `Der erweiterte Wirtschaftskreislauf zeigt die Geld- und Gueterstroeme zwischen fuenf Sektoren, das BIP misst nur deren monetarisierten Ausschnitt.`
 
@@ -29,11 +41,21 @@ Klausur-Satz: `Der erweiterte Wirtschaftskreislauf zeigt die Geld- und Gueterstr
 
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
-- Leitbegriff: zentrale Definition der Lektion in einem Satz mit Klausurformulierung.
-- Kriterium: Massstab, an dem Faelle der Form $x_1$ und $x_2$ gemessen werden.
-- Verfahren: geregelte Abfolge von Rekonstruktion, Anwendung und Urteil.
-- Beleg: Text- oder Datenausschnitt, der jede Deutung $D$ mit einem Beleg $B$ stuetzt.
-- Urteil: begruendete Entscheidung aus Kriterium und Differenz $d = x_2 - x_1$.
+### Hook / Phaenomen
+
+Wer zahlt, wer produziert, wer finanziert? Ohne Sektoren bleibt Kreis abstrakt. Diese fuenf Begriffe geben dir Strom und Massstab.
+
+### Fachbegriffe & Definitionen
+
+- **Haushalte:** Die Anbieter mit $Faktor = Arbeit$ gegen $Einkommen = Lohn$. Sie nutzen $Gebrauch = Konsum + Sparen$.
+- **Unternehmen:** Die Produzenten mit $Output = Gut$ gegen $Ertrag = Preis$. Sie tragen $Ziel = Gewinn$.
+- **Staat:** Der Umverteiler mit $Mittel = Steuer$ fuer $Leistung = Transfer + Gut$. Er sichert $Ordnung = Recht$.
+- **Banken:** Die Finanziers mit $Kredit = GeldHeute$ gegen $Zins = Preis$. Sie ermoeglichen $Invest = Morgen$.
+- **Ausland:** Der Partner mit $Saldo = Ex - Im$ als Aussenbeitrag. Er oeffnet $Markt = Welt$.
+
+### Wirkungsgefuege / Modell
+
+Die Begriffe greifen ineinander: **Haushalte** und **Unternehmen** bilden mit $Tausch = Lohn + Gut$ den Kern. **Staat** und **Banken** stabilisieren mit $Transfer + Kredit$ den Fluss. **Ausland** erweitert mit $Ex - Im$ den Raum. Wer in der Klausur zeichnet, muss deshalb immer fragen: Wo fliesst Geld, wo fliesst Gut, wer fehlt?
 
 Klausur-Satz: `Geldstroeme und Gueterstroeme laufen im Kreislauf in entgegengesetzter Richtung zwischen Haushalten und Unternehmen.`
 
@@ -41,12 +63,23 @@ Klausur-Satz: `Geldstroeme und Gueterstroeme laufen im Kreislauf in entgegengese
 
 TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
-Das Kernmodell dieser Lektion verbindet Begriff, Verfahren und Urteil. Zuerst wird der Fall rekonstruiert, dann werden die Werte $x_1$ und $x_2$ bestimmt und schliesslich wird die Differenz $d = x_2 - x_1$ am Kriterium gemessen. Es gilt $Y = C + I + G + (Ex - Im)$ als Verwendungsrechnung des $BIP$. Die Wachstumsrate betraegt $g = (BIP_t - BIP_{t-1}) / BIP_{t-1}$.
+### Hook / Phaenomen
+
+Reparatur zaehlt plus, Waldverlust zaehlt null: Ist Sturm Konjunktur? Gruene Rechnung will Kosten sichtbar machen. Genau hier scheidet Umsatz von Wohlfahrt.
+
+### Fachbegriff & Definition
+
+Das **BIP-Kritik-Modell** rechnet Verwendung und benennt Grenzen. Es startet mit $Y = C + I + G + Ex - Im$ als Verwendungsrechnung. Es misst $g = JetztMinusVorherDurchVorher$ als Wachstum. Es kritisiert $Blind = Umwelt + Sorge + Verteilung$ als Luecke. Die Formel lautet $Wohl = BIP - Schaden + Unbezahlt$.
+
+### Wirkungsgefuege / Modell
+
+Denke in Kausalkette: **Rechnen, Blenden, Korrigieren**. Erstens summiert $Y = Konsum + Invest + Staat + Aussen$ den Umsatz. Zweitens blendet $Sturm = plusBau$ bei $Wald = null$ wahre Kosten aus. Drittens korrigiert Gruen mit $Preis = Kosten + Umwelt$ zu ehrlicher Bilanz. Genau diese Korrektur verlangt in der Klausur ein **kriteriengeleitetes Urteil**, keine Zahlenglaeubigkeit.
 
 ```diagram
-  Fall -> Rekonstruktion [x1, x2]
-  Rekonstruktion -> Kriterium -> Differenz d = x2 - x1
-  Differenz -> Urteil (AFB III)
+  Kreislauf [Haushalt + Firma + Staat + Bank + Ausland]
+  Kreislauf -> BIP [Y = C + I + G + Ex - Im]
+  BIP -> Kritik [Blind + Verteilung + Umwelt]
+  Kritik -> Urteil (Wohlfahrt mit Mass)
 ```
 
 Klausur-Satz: `Im erweiterten Kreislauf ergaenzen Staat, Banken und Ausland den Tausch zwischen Haushalten und Unternehmen um Umverteilung, Finanzierung und Aussenhandel.`

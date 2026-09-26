@@ -19,9 +19,21 @@ version: Lesson-v3
 
 ZIELE (drei messbare Ziele dieser Lektion):
 
-1. Du kannst den Leitbegriff der Lektion in einem Satz definieren und ein Beispiel zuordnen.
-2. Du kannst das Kernverfahren mit den Groessen $x_1$ und $x_2$ anwenden und die Differenz $d = x_2 - x_1$ deuten.
-3. Du kannst ein kriteriengeleitetes Urteil formulieren und mit einem Klausur-Satz abschliessen (AFB II/III).
+1. Du kannst **Partei** und **Volkspartei** in je einem Satz definieren und Art. 21 GG korrekt wiedergeben.
+2. Du kannst **Stammwaehler** und **Wechselwaehler** mit $Bindung = fest$ gegen $Wahl = flexibel$ unterscheiden und Erosion deuten.
+3. Du kannst mit dem Kriterium **Repraesentation** ein Urteil zu 5ProzentHuerde formulieren und mit einem Klausur-Satz schliessen (AFB II/III).
+
+### Hook / Phaenomen
+
+Ueber 90 Prozent fuer zwei Parteien in den Siebzigern, heute braucht es oft drei Partner fuer eine Regierung. Stammwaehler schmelzen, Wechselwaehler entscheiden. Braucht Demokratie noch grosse Schiffe oder viele Boote?
+
+### Fachbegriff & Definition
+
+**Parteien** wirken nach Art. 21 GG an der politischen **Willensbildung** des Volkes mit. Ihre Gruendung ist frei, ihre innere Ordnung muss demokratisch sein, verbieten darf nur das **Bundesverfassungsgericht**. **Volksparteien** binden mehrere Schichten und Regionen und streben Regierungsfaehigkeit an. Kurz: Viele Meinungen, ein Verfahren, klare Huete.
+
+### Wirkungsgefuege / Modell
+
+Der Mechanismus laeuft in drei Stufen: **Angebot, Bindung, Entscheidung**. Erstens bieten Parteien mit $Programm = Werte + Massnahmen$ Orientierung aus drei Leitideen: konservativ, sozialistisch, liberal. Zweitens bindet $Stamm = Gewohnheit + Milieu$ treu, waehrend $Wechsel = Themen + Personen$ wandert. Drittens filtert die **Fuenfprozenthuerde** mit $Sitz = Huerde + Mandat$ Splitter gegen Stabilitaet. Faellt Bindung aus, steigt Volatilitaet mit $Volatilitaet = hoch$.
 
 Klausur-Satz: `Art. 21 GG gibt den Parteien den Auftrag, an der politischen Willensbildung des Volkes mitzuwirken; ihre Gründung ist frei, ihre innere Ordnung muss demokratisch sein.`
 
@@ -29,11 +41,21 @@ Klausur-Satz: `Art. 21 GG gibt den Parteien den Auftrag, an der politischen Will
 
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
-- Leitbegriff: zentrale Definition der Lektion in einem Satz mit Klausurformulierung.
-- Kriterium: Massstab, an dem Faelle der Form $x_1$ und $x_2$ gemessen werden.
-- Verfahren: geregelte Abfolge von Rekonstruktion, Anwendung und Urteil.
-- Beleg: Text- oder Datenausschnitt, der jede Deutung $D$ mit einem Beleg $B$ stuetzt.
-- Urteil: begruendete Entscheidung aus Kriterium und Differenz $d = x_2 - x_1$.
+### Hook / Phaenomen
+
+Drei Ideen praegen alle Programme, doch wer steht wofuer? Ohne Kompass wird Wahlkampf zum Rauschen. Diese fuenf Begriffe geben dir Achse und Massstab.
+
+### Fachbegriffe & Definitionen
+
+- **Konservatismus:** Die Leitidee mit $Wert = Ordnung + Tradition$. Sie betont $Wandel = massvoll$ und Staat als Hueter.
+- **Sozialismus:** Die Leitidee mit $Wert = Gleichheit + Solidaritat$. Sie fordert $Ausgleich = Staat + Umverteilung$ als Gerechtigkeit.
+- **Liberalismus:** Die Leitidee mit $Wert = Freiheit + Markt$. Sie verlangt $Staat = schlank$ und Eigenverantwortung.
+- **Volkspartei:** Der Typ mit $Basis = Schichten + Regionen$. Sie verbindet $Ziel = Mehrheit + Regierung$ mit Mitte.
+- **Parteienverdrossenheit:** Die Distanz mit $Kritik = Parteien + Personal$. Sie trifft nicht das System, sondern Akteure mit $Kritik = Personal$.
+
+### Wirkungsgefuege / Modell
+
+Die Begriffe greifen ineinander: **Konservatismus**, **Sozialismus** und **Liberalismus** liefern die Achsen $Ordnung + Gleichheit + Freiheit$. Die **Volkspartei** buendelt sie zur Mitte mit $Erfolg = Breite + Kompromiss$. **Parteienverdrossenheit** warnt mit $Vertrauen = sinkend$ vor Entfremdung. Wer in der Klausur vergleicht, muss deshalb immer fragen: Welche Idee traegt welches Programm?
 
 Klausur-Satz: `Die drei Leitideen — konservativ, sozialistisch und liberal — prägen bis heute die Programme der Bundestagsparteien.`
 
@@ -41,12 +63,23 @@ Klausur-Satz: `Die drei Leitideen — konservativ, sozialistisch und liberal —
 
 TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
-Das Kernmodell dieser Lektion verbindet Begriff, Verfahren und Urteil. Zuerst wird der Fall rekonstruiert, dann werden die Werte $x_1$ und $x_2$ bestimmt und schliesslich wird die Differenz $d = x_2 - x_1$ am Kriterium gemessen. Leitformel des Moduls: $K = \text{Kriterium} \to \text{Urteil}$. Pruefgroessen werden als $x_1, x_2$ verglichen; die Differenz $d = x_2 - x_1$ stuettet das Urteil.
+### Hook / Phaenomen
+
+Grosse oder kleine waehlen? Grosse versprechen Stabilitaet, kleine versprechen Naehe. Bildung als Beispiel: Wer liefert Massnahme und Geld? Genau hier hilft Erosionsdiagnose.
+
+### Fachbegriff & Definition
+
+Das **Erosionsmodell** misst Volksparteien an Stimmen, Bindung und Regierungsfaehigkeit. Es startet mit $Erosion = StammMinus + WechselPlus$ als Kernformel. Es prueft Programme mit $Vergleich = Massnahme + Finanzierung$ am Beispiel Klima und Bildung. Die Formel lautet $Stabil \iff Breite + Mitte > Splitterung$.
+
+### Wirkungsgefuege / Modell
+
+Denke in Kausalkette: **Befund, Grund, Wertung**. Erstens lautet der Befund $Anteil70er = 90Prozent$ gegen $AnteilHeute = 50Prozent$ mit $Koalition = 3Partner$. Zweitens gruenden $MilieuWandel + ThemenWandel$ den Trend zu Wechselwahl. Drittens wertet **Repraesentation**: Huerde sichert mit $Funktion = stabil$ das Parlament, kostet aber $Repraesentation = Vielfalt$. Genau diese Spannung verlangt in der Klausur ein **kriteriengeleitetes Urteil**, keine Nostalgie.
 
 ```diagram
-  Fall -> Rekonstruktion [x1, x2]
-  Rekonstruktion -> Kriterium -> Differenz d = x2 - x1
-  Differenz -> Urteil (AFB III)
+  Befund [Stimmen + Bindung + Partner]
+  Befund -> Grund [Milieu + Themen + Personen]
+  Grund -> Wahl [Stamm vs Wechsel]
+  Wahl -> Urteil (Stabilitaet vs Vielfalt)
 ```
 
 Klausur-Satz: `Die Verluste von CDU und SPD belegen die Erosion der Volksparteien: Stammwähler schmelzen, Wechselwähler entscheiden.`

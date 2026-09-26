@@ -19,9 +19,21 @@ version: Lesson-v3
 
 ZIELE (drei messbare Ziele dieser Lektion):
 
-1. Du kannst den Leitbegriff der Lektion in einem Satz definieren und ein Beispiel zuordnen.
-2. Du kannst das Kernverfahren mit den Groessen $x_1$ und $x_2$ anwenden und die Differenz $d = x_2 - x_1$ deuten.
-3. Du kannst ein kriteriengeleitetes Urteil formulieren und mit einem Klausur-Satz abschliessen (AFB II/III).
+1. Du kannst **Identitaet** und **Wertewandel** in je einem Satz definieren und Erikson und Krappmann korrekt zuordnen.
+2. Du kannst **Meads Spiegelmodell** mit $Ich = Reaktion + HaltungAnderer$ rekonstruieren und auf Netzwerke anwenden.
+3. Du kannst mit dem Kriterium **Balance** ein Urteil zu Gewinn oder Verlust formulieren und mit einem Klausur-Satz schliessen (AFB II/III).
+
+### Hook / Phaenomen
+
+Traditionelle Feier oder nachhaltiges Fest mit Familie und Sicherheit? Aeltere pochen auf Form, Juengere auf Sinn, Statistik zeigt neue Familienwerte. Bist du noch du, wenn alle dich spiegeln? Genau hier beginnt Identitaetsarbeit.
+
+### Fachbegriff & Definition
+
+**Identitaet** ist keine feste Eigenschaft, sondern lebenslange **Balanceleistung** zwischen Erwartung und Eigenem. Erikson deutet sie als Stufenweg der **Ich-Identitaet**, Krappmann als riskante Balance, die scheitern kann. Mead zeigt den Mechanismus: Selbst entsteht durch **Kommunikation** mit den Augen der Anderen. Kurz: Wer du bist, verhandelst du taeglich.
+
+### Wirkungsgefuege / Modell
+
+Der Mechanismus laeuft in drei Stufen: **Spiegel, Abgleich, Haltung**. Erstens spiegelt die Umwelt mit $Erwartung = Familie + Peers + Medien$. Zweitens gleicht das Ich ab mit $Balance = Anpassung + Einzigartigkeit$. Drittens droht bei $Druck > Ressource$ Diffusion oder bei $Anpassung = total$ Verlust des Selbst. Faellt Balance aus, kippt Identitaet in Krise mit $Krise = Umbau + Chance$.
 
 Klausur-Satz: `Identität entsteht nicht als feste Eigenschaft, sondern als lebenslange Balanceleistung zwischen gesellschaftlichen Erwartungen und eigenen Überzeugungen.`
 
@@ -29,11 +41,21 @@ Klausur-Satz: `Identität entsteht nicht als feste Eigenschaft, sondern als lebe
 
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
-- Leitbegriff: zentrale Definition der Lektion in einem Satz mit Klausurformulierung.
-- Kriterium: Massstab, an dem Faelle der Form $x_1$ und $x_2$ gemessen werden.
-- Verfahren: geregelte Abfolge von Rekonstruktion, Anwendung und Urteil.
-- Beleg: Text- oder Datenausschnitt, der jede Deutung $D$ mit einem Beleg $B$ stuetzt.
-- Urteil: begruendete Entscheidung aus Kriterium und Differenz $d = x_2 - x_1$.
+### Hook / Phaenomen
+
+Krise, Spiegel, Wandel: Alles klingt nach Alltag, meint aber Theorie. Wer Begriffe scharf hat, deutet Faelle sicher. Diese fuenf Bausteine geben dir Sprache und Massstab.
+
+### Fachbegriffe & Definitionen
+
+- **Ich-Identitaet:** Eriksons Kontinuitaet mit $Ich = Geschichte + Zukunft$. Sie waechst in $Stufen = Vertrauen bis Integritaet$ und bricht in Krisen auf.
+- **Balanceleistung:** Krappmanns Kern mit $Identitaet = Bindung + Einzigartigkeit$. Sie gelingt mit $Darstellung = Rolle + Distanz$ oder scheitert als Diffusion.
+- **Generalisierter Anderer:** Meads Spiegel mit $Selbst = BlickAnderer + Antwort$. Er erklaert $Bewusstsein = Kommunikation$ von Spiel bis Wettkampf.
+- **Aussengeleitetheit:** Riesmans Typ mit $Haltung = Zeitgeist + Radar$. Er folgt $Signal = Mode + Likes$ statt innerem Kompass.
+- **Wertewandel:** Die Verschiebung mit $WerteNeu = Familie + Sicherheit + Nachhaltigkeit$. Sie veraendert $Rahmen = Optionen + Druck$ fuer Jugend.
+
+### Wirkungsgefuege / Modell
+
+Die Begriffe greifen ineinander: **Ich-Identitaet** liefert den Prozess mit $Leben = Stufen$, **Balanceleistung** liefert das Risiko mit $Gelingen = Darstellung$. Der **generalisierte Andere** liefert den Mechanismus $Ich = Spiegel + Antwort$. **Aussengeleitetheit** und **Wertewandel** liefern den Zeitgeist mit $Anpassung + Sinnsuche$. Wer in der Klausur deutet, muss deshalb immer fragen: Gelingt Balance oder kippt sie?
 
 Klausur-Satz: `Während Erikson die Ich-Identität als lebenslangen Prozess deutet, betont Krappmann, dass diese Balance auch scheitern kann.`
 
@@ -41,12 +63,23 @@ Klausur-Satz: `Während Erikson die Ich-Identität als lebenslangen Prozess deut
 
 TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
-Das Kernmodell dieser Lektion verbindet Begriff, Verfahren und Urteil. Zuerst wird der Fall rekonstruiert, dann werden die Werte $x_1$ und $x_2$ bestimmt und schliesslich wird die Differenz $d = x_2 - x_1$ am Kriterium gemessen. Leitformel des Moduls: $K = \text{Kriterium} \to \text{Urteil}$. Pruefgroessen werden als $x_1, x_2$ verglichen; die Differenz $d = x_2 - x_1$ stuettet das Urteil.
+### Hook / Phaenomen
+
+Likes zaehlen, Filter formen, Vergleiche druecken: Netzwerke erweitern Buehne und peitschen zugleich. Befreit das Ich oder verkauft es sich? Genau hier braucht es Mead plus Krappmann als Doppelbrille.
+
+### Fachbegriff & Definition
+
+Das **Spiegel-Balance-Modell** verbindet Meads Entstehung mit Krappmanns Gelingen. Mead erklaert $Selbst = Play + Game + Anderer$ als Weg zum Bewusstsein. Krappmann prueft $Balance = Erwartung + Eigenheit$ auf Darstellung und Scheitern. Die Formel lautet $Stabil \iff Anerkennung + Distanz > Vergleichsdruck$.
+
+### Wirkungsgefuege / Modell
+
+Denke in Kausalkette: **Spiegelung, Leistung, Wertung**. Erstens spiegelt das Netz mit $Feed = Bilder + Normen$ staendig $Du = Vergleich$. Zweitens leistet das Ich $Post = Rolle + Filter$ zwischen $Anpassung = Likes$ und $Eigenheit = Stil$. Drittens wertet **Balance**: Gelingt $Distanz = Humor + Reflexion$, waechst Spielraum, dominiert $Aussen = Radar$, droht Diffusion. Genau diese Pruefung verlangt in der Klausur ein **kriteriengeleitetes Urteil**, keine Kulturklage.
 
 ```diagram
-  Fall -> Rekonstruktion [x1, x2]
-  Rekonstruktion -> Kriterium -> Differenz d = x2 - x1
-  Differenz -> Urteil (AFB III)
+  Spiegel [Familie + Peers + Netz]
+  Spiegel -> Ich [Play + Game + Anderer]
+  Ich -> Balance [Anpassung + Eigenheit]
+  Balance -> Urteil (Gelingen oder Krise)
 ```
 
 Klausur-Satz: `Mead zufolge wird sich das Individuum seiner selbst bewusst, indem es sich mit den Augen der Anderen betrachtet; Identität entsteht also in Kommunikation.`

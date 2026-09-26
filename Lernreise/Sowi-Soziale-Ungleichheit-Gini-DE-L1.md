@@ -19,9 +19,21 @@ version: Lesson-v3
 
 ZIELE (drei messbare Ziele dieser Lektion):
 
-1. Du kannst den Leitbegriff der Lektion in einem Satz definieren und ein Beispiel zuordnen.
-2. Du kannst das Kernverfahren mit den Groessen $x_1$ und $x_2$ anwenden und die Differenz $d = x_2 - x_1$ deuten.
-3. Du kannst ein kriteriengeleitetes Urteil formulieren und mit einem Klausur-Satz abschliessen (AFB II/III).
+1. Du kannst **Lorenzkurve** und **Gini-Koeffizient** in je einem Satz definieren und Diagonale korrekt deuten.
+2. Du kannst aus Quintilen mit $B = Trapezsumme$ die Flaeche bestimmen und $Gini = 1 - 2B$ berechnen.
+3. Du kannst mit dem Kriterium **Chancengerechtigkeit** ein Urteil zu Umverteilung formulieren und mit einem Klausur-Satz schliessen (AFB II/III).
+
+### Hook / Phaenomen
+
+Zwei Regionen, gleiche Zahl 0.34, voellig andere Armut: Wie kann eine Zahl luegen? Gini 0.4 als Warnlinie klingt nach Naturgesetz, ist aber Konvention. Was zeigt die Kurve, was verschweigt die Zahl?
+
+### Fachbegriff & Definition
+
+Die **Lorenzkurve** traegt kumulierte Bevoelkerung gegen kumuliertes Einkommen als Bogen unter der Diagonalen ab. Der **Gini-Koeffizient** fasst den Abstand als $Gini = A/(A + B)$ oder $Gini = 1 - 2B$ zwischen $0 = gleich$ und $1 = ungleich$. Die **Diagonale** markiert perfekte Gleichheit, die Woelbung markiert Ungleichheit. Kurz: Bogen sehen, Zahl rechnen, beide deuten.
+
+### Wirkungsgefuege / Modell
+
+Der Mechanismus laeuft in drei Stufen: **Sortieren, Flaechen, Deuten**. Erstens sortiert $Quintil = 8 + 13 + 17 + 23 + 39$ zu $kumuliert = 8 + 21 + 38 + 61 + 100$. Zweitens misst Trapez mit $B = SummeTrapez$ etwa $B = 0.33$ und $Gini = 1 - 2B = 0.34$. Drittens deutet $Skala = 0Bis1$ mittlere Ungleichheit bei $Warnung = 0.4$ als Konvention. Faellt Kurve aus, wird $Gini = Zahl$ blind fuer Form.
 
 Klausur-Satz: `Die Lorenzkurve veranschaulicht die Einkommensverteilung, und der Gini-Koeffizient fasst ihren Abstand zur Gleichverteilungsgeraden zu einer Zahl zwischen 0 und 1 zusammen.`
 
@@ -29,11 +41,21 @@ Klausur-Satz: `Die Lorenzkurve veranschaulicht die Einkommensverteilung, und der
 
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
-- Leitbegriff: zentrale Definition der Lektion in einem Satz mit Klausurformulierung.
-- Kriterium: Massstab, an dem Faelle der Form $x_1$ und $x_2$ gemessen werden.
-- Verfahren: geregelte Abfolge von Rekonstruktion, Anwendung und Urteil.
-- Beleg: Text- oder Datenausschnitt, der jede Deutung $D$ mit einem Beleg $B$ stuetzt.
-- Urteil: begruendete Entscheidung aus Kriterium und Differenz $d = x_2 - x_1$.
+### Hook / Phaenomen
+
+Flaeche, Bogen, Quote: Alles misst anders. Wer nur Zahl nennt, verliert Deutung. Diese fuenf Begriffe geben dir Lineal und Massstab.
+
+### Fachbegriffe & Definitionen
+
+- **Lorenzkurve:** Der Bogen mit $x = Bevoelkerung$ gegen $y = Einkommen$ kumuliert. Je tiefer $Bogen = durchhaengend$, desto ungleicher $Verteilung$.
+- **Gini-Koeffizient:** Die Zahl mit $Gini = 1 - 2B$ aus Flaeche $B$ unter Kurve. Es gilt $0 = gleich$ und $1 = maximal$ als Skala.
+- **Quintilsanteil:** Der Baustein mit $Teil = 20Prozent$ Gruppe zu Einkommen. Beispiel $8 + 13 + 17 + 23 + 39 = 100$ als Rohdaten.
+- **Armutsgefaehrdung:** Die Quote mit $Schwelle = 60ProzentMedian$. Sie ergaenzt $Gini = Verteilung$ durch $Teilhabe = Minimum$.
+- **Umverteilung:** Die Korrektur mit $MarktGini - StaatGini = Effekt$. Beispiel $0.50 - 0.29 = 0.21$ als Steuerwirkung.
+
+### Wirkungsgefuege / Modell
+
+Die Begriffe greifen ineinander: **Quintile** liefern mit $Roh = Prozent$ das Material, **Lorenzkurve** zeigt mit $Bogen = Form$ die Gestalt. **Gini** rechnet mit $Gini = 1 - 2B$ die Zahl, **Armut** und **Umverteilung** liefern $Sinn = Bewertung$. Wer in der Klausur vergleicht, muss deshalb immer fragen: Was sagt Form, was sagt Zahl, was folgt daraus?
 
 Klausur-Satz: `Der Gini-Koeffizient ergibt sich als Verhaeltnis der Flaeche zwischen Diagonale und Lorenzkurve zur Gesamtflaeche unter der Diagonalen.`
 
@@ -41,12 +63,23 @@ Klausur-Satz: `Der Gini-Koeffizient ergibt sich als Verhaeltnis der Flaeche zwis
 
 TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
-Das Kernmodell dieser Lektion verbindet Begriff, Verfahren und Urteil. Zuerst wird der Fall rekonstruiert, dann werden die Werte $x_1$ und $x_2$ bestimmt und schliesslich wird die Differenz $d = x_2 - x_1$ am Kriterium gemessen. $Gini = 1 - 2B$, wobei $B$ die Flaeche unter der Lorenzkurve und $Gini$ das Mass der Ungleichheit bezeichnet. Es gilt $0 \le Gini \le 1$.
+### Hook / Phaenomen
+
+Region A ungleicher als B, doch beide brauchen Politik: Reicht Zahl fuer Urteil? Trapez zaehlt, Kriterium wertet. Genau hier trennt sich Rechnen von Entscheiden.
+
+### Fachbegriff & Definition
+
+Das **Trapez-Verfahren** berechnet $B$ aus fuenf Trapezen der Breite $0.2$ und $Gini = 1 - 2B$. Es startet mit $kumuliertA = 8 + 21 + 38 + 61 + 100$ gegen $kumuliertB = 11 + 26 + 45 + 69 + 100$. Es vergleicht $GiniA > GiniB$ als Rangfolge. Die Formel lautet $Ungleicher \iff KurveTiefer + GiniHoeher$.
+
+### Wirkungsgefuege / Modell
+
+Denke in Kausalkette: **Auftragen, Rechnen, Urteilen**. Erstens traegt $x = 20 + 40 + 60 + 80 + 100$ gegen $y = kumuliert$ zwei Boegen ab. Zweitens rechnet $B = 0.33$ zu $Gini = 0.34$ bei A und kleiner bei B. Drittens urteilt **Chancengerechtigkeit**: Zahl plus Kurve plus Kontext begruenden $Umverteilung = jaBeiStruktur$. Genau diese Stufe verlangt in der Klausur ein **kriteriengeleitetes Urteil**, keine Zahl ohne Satz.
 
 ```diagram
-  Fall -> Rekonstruktion [x1, x2]
-  Rekonstruktion -> Kriterium -> Differenz d = x2 - x1
-  Differenz -> Urteil (AFB III)
+  Quintile [8 + 13 + 17 + 23 + 39]
+  Quintile -> Kurve [kumuliert + Bogen]
+  Kurve -> Zahl [B + Gini = 1 - 2B]
+  Zahl -> Urteil (Vergleich + Kriterium)
 ```
 
 Klausur-Satz: `Je staerker die Lorenzkurve nach unten gewoelbt ist, desto groesser ist der Gini-Koeffizient und desto ungleicher die Verteilung.`

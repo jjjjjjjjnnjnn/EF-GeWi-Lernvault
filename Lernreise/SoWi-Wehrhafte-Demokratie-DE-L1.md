@@ -19,9 +19,21 @@ version: Lesson-v3
 
 ZIELE (drei messbare Ziele dieser Lektion):
 
-1. Du kannst den Leitbegriff der Lektion in einem Satz definieren und ein Beispiel zuordnen.
-2. Du kannst das Kernverfahren mit den Groessen $x_1$ und $x_2$ anwenden und die Differenz $d = x_2 - x_1$ deuten.
-3. Du kannst ein kriteriengeleitetes Urteil formulieren und mit einem Klausur-Satz abschliessen (AFB II/III).
+1. Du kannst **Extremismus** und **Radikalismus** in je einem Satz definieren und fdGO-Bezug korrekt zuordnen.
+2. Du kannst **Parteiverbot** mit $Verbot = BVerfG + Art21$ darstellen und Potentialitaet als Huerde erklaeren.
+3. Du kannst mit dem Kriterium **Verhaeltnismaessigkeit** ein Urteil zu Verbot und Beobachtung formulieren und mit einem Klausur-Satz schliessen (AFB II/III).
+
+### Hook / Phaenomen
+
+Fuenf Prozent, voelkische Parolen, Zweifel an Wahl und Minderheit: verbieten oder streiten? Weimar schuetzt Feinde, Bonn lernt daraus. Darf Demokratie Feinde ausschliessen, um frei zu bleiben?
+
+### Fachbegriff & Definition
+
+**Wehrhafte Demokratie** meint die faehige Selbstverteidigung der Demokratie gegen ihre Abschaffung. **Extremismus** bekaempft die **freiheitliche demokratische Grundordnung** selbst, **Radikalismus** kritisiert grundlegend innerhalb der Ordnung. Schutzsaeulen sind **Parteiverbot**, **Verfassungsschutz** und **politische Bildung**. Kurz: Streiten ja, abschaffen nein.
+
+### Wirkungsgefuege / Modell
+
+Der Mechanismus laeuft in drei Stufen: **Erkennen, Pruefen, Schuetzen**. Erstens erkennt $Gefahr = Programm + Agitation$ den Angriff auf $fdGO = Wuerde + Wahl + Recht$. Zweitens prueft Karlsruhe mit $Huerde = Widrigkeit + Potentialitaet$ doppelt streng. Drittens schuetzt $Stufe = Beobachten + Bilden + Verbieten$ gestaffelt. Faellt Staffel aus, wird Abwehr mit $Verbot = sofort$ unverhaeltnismaessig.
 
 Klausur-Satz: `Extremismus richtet sich gegen die freiheitliche demokratische Grundordnung selbst, während Radikalismus systemimmanente Grundkritik übt.`
 
@@ -29,11 +41,21 @@ Klausur-Satz: `Extremismus richtet sich gegen die freiheitliche demokratische Gr
 
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
-- Leitbegriff: zentrale Definition der Lektion in einem Satz mit Klausurformulierung.
-- Kriterium: Massstab, an dem Faelle der Form $x_1$ und $x_2$ gemessen werden.
-- Verfahren: geregelte Abfolge von Rekonstruktion, Anwendung und Urteil.
-- Beleg: Text- oder Datenausschnitt, der jede Deutung $D$ mit einem Beleg $B$ stuetzt.
-- Urteil: begruendete Entscheidung aus Kriterium und Differenz $d = x_2 - x_1$.
+### Hook / Phaenomen
+
+Wer darf verbieten, wer darf beobachten? Ohne Huerden wird Schutz zur Willkuer. Diese fuenf Begriffe geben dir Schwelle und Massstab.
+
+### Fachbegriffe & Definitionen
+
+- **FdGO:** Der Kern mit $Kern = Wuerde + Demokratie + Recht$. Sie traegt $Schutz = Ewig$ und markiert $Feind = Abschaffer$.
+- **Radikalismus:** Die scharfe Kritik mit $Ziel = WandelImSystem$. Sie bleibt $Mittel = legal$ und ist geschuetzt.
+- **Extremismus:** Der Angriff mit $Ziel = Systemwechsel$ gegen $fdGO$. Er rechtfertigt $Abwehr = Staat$.
+- **Parteiverbot:** Das schaerfste Schwert mit $Nur = BVerfG$ nach Art 21 Abs 2. Es verlangt $doppelt = Widrigkeit + Chance$.
+- **Verfassungsschutz:** Die Fruehwarnung mit $Mittel = Beobachten + Berichten$. Sie entscheidet $Verbot = nein$, sondern warnt.
+
+### Wirkungsgefuege / Modell
+
+Die Begriffe greifen ineinander: **FdGO** definiert mit $Kern = unantastbar$ das Schutzgut. **Radikalismus** bleibt drinnen, **Extremismus** geht dagegen an. **Verfassungsschutz** beobachtet, **Parteiverbot** beendet mit $Letzt = Karlsruhe$. Wer in der Klausur prueft, muss deshalb immer fragen: Liegt Angriff auf Kern plus reale Chance vor?
 
 Klausur-Satz: `Ein Parteiverbot nach Art. 21 II GG setzt voraus, dass eine Partei die fdGO beeinträchtigt oder beseitigt und dafür eine reale Durchsetzungschance besteht.`
 
@@ -41,12 +63,23 @@ Klausur-Satz: `Ein Parteiverbot nach Art. 21 II GG setzt voraus, dass eine Parte
 
 TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
-Das Kernmodell dieser Lektion verbindet Begriff, Verfahren und Urteil. Zuerst wird der Fall rekonstruiert, dann werden die Werte $x_1$ und $x_2$ bestimmt und schliesslich wird die Differenz $d = x_2 - x_1$ am Kriterium gemessen. Leitformel des Moduls: $K = \text{Kriterium} \to \text{Urteil}$. Pruefgroessen werden als $x_1, x_2$ verglichen; die Differenz $d = x_2 - x_1$ stuettet das Urteil.
+### Hook / Phaenomen
+
+NPD verfassungswidrig, doch Verbot scheitert an Chance: Wie kann falsch legal bleiben? Publikum ruft weg damit, Gericht ruft Potentialitaet. Genau hier hilft Doppelpruefung.
+
+### Fachbegriff & Definition
+
+Das **Doppelhuerden-Modell** verlangt Widrigkeit plus Durchsetzungschance als kumulative Bedingung. **Verfassungswidrigkeit** meint $Programm = gegenFdGO$ als Inhalt. **Potentialitaet** meint $Chance = real$ als Kraft. Die Formel lautet $Verbot \iff widrig + maechtig$.
+
+### Wirkungsgefuege / Modell
+
+Denke in Kausalkette: **Inhalt, Kraft, Folge**. Erstens belegt Inhalt mit $Parolen = voelkisch + WahlZweifel$ den Verstoss. Zweitens fehlt Kraft mit $Stimmen = klein + Struktur = schwach$ die Chance. Drittens folgt $Urteil = beobachten + bilden$ statt Verbot nach **Verhaeltnismaessigkeit**. Genau diese Staffel verlangt in der Klausur ein **kriteriengeleitetes Urteil**, keinen Reflex.
 
 ```diagram
-  Fall -> Rekonstruktion [x1, x2]
-  Rekonstruktion -> Kriterium -> Differenz d = x2 - x1
-  Differenz -> Urteil (AFB III)
+  Fall [Programm + Stimmen + Struktur]
+  Fall -> Inhalt [Widrigkeit gegen fdGO]
+  Inhalt -> Kraft [Potentialitaet real]
+  Kraft -> Urteil (Verbot oder Staffel)
 ```
 
 Klausur-Satz: `Wehrhafte Demokratie schützt sich durch Parteiverbot (Art. 21 II, nur BVerfG), Beobachtung durch den Verfassungsschutz und politische Bildung.`

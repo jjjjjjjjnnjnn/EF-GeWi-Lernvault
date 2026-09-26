@@ -19,9 +19,21 @@ version: Lesson-v3
 
 ZIELE (drei messbare Ziele dieser Lektion):
 
-1. Du kannst den Leitbegriff der Lektion in einem Satz definieren und ein Beispiel zuordnen.
-2. Du kannst das Kernverfahren mit den Groessen $x_1$ und $x_2$ anwenden und die Differenz $d = x_2 - x_1$ deuten.
-3. Du kannst ein kriteriengeleitetes Urteil formulieren und mit einem Klausur-Satz abschliessen (AFB II/III).
+1. Du kannst **Verfassungsorgane** und **Gewaltenteilung** in je einem Satz definieren und fuenf Organe korrekt benennen.
+2. Du kannst **Bundestag** und **Bundesrat** mit $Volk = Wahl$ gegen $Laender = Regierung$ unterscheiden und Weg zum Gesetz darstellen.
+3. Du kannst mit dem Kriterium **Funktionsfaehigkeit** ein Urteil zu Verkleinerung formulieren und mit einem Klausur-Satz schliessen (AFB II/III).
+
+### Hook / Phaenomen
+
+Bundestag zu gross, Reform soll deckeln, Direktkandidaten bangen um Sitz trotz Sieg im Kreis. Karlsruhe prueft, Versammlung waehlt, Notparlament wartet. Wer sichert Demokratie, wenn Groesse laehmt?
+
+### Fachbegriff & Definition
+
+**Verfassungsorgane** sind die obersten Staatsorgane nach dem Grundgesetz: **Bundestag, Bundesrat, Bundesregierung, Bundespraesident und Bundesverfassungsgericht**. **Gewaltenteilung** verteilt Macht auf Gesetzgebung, Vollzug und Rechtsprechung zur gegenseitigen Kontrolle. Der **Bundestag** vertritt das Volk, der **Bundesrat** die Laender. Kurz: Fuenf Hueter, ein Gleichgewicht.
+
+### Wirkungsgefuege / Modell
+
+Der Mechanismus laeuft in drei Stufen: **Wahl, Gesetz, Kontrolle**. Erstens legitimiert $Wahl = Volk$ den Bundestag mit $Mandat = frei$. Zweitens entsteht Gesetz mit $Bundestag + Bundesrat + Praesident$ als Kette. Drittens kontrolliert Karlsruhe mit $Norm = Verfassung$ jede Macht. Faellt Balance aus, gilt $Macht = konzentriert$ und Freiheit schrumpft.
 
 Klausur-Satz: `Der Gang der Gesetzgebung führt vom Bundestag über den Bundesrat (Zustimmung oder Einspruch) und ggf. den Vermittlungsausschuss bis zur Ausfertigung durch den Bundespräsidenten.`
 
@@ -29,11 +41,21 @@ Klausur-Satz: `Der Gang der Gesetzgebung führt vom Bundestag über den Bundesra
 
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
-- Leitbegriff: zentrale Definition der Lektion in einem Satz mit Klausurformulierung.
-- Kriterium: Massstab, an dem Faelle der Form $x_1$ und $x_2$ gemessen werden.
-- Verfahren: geregelte Abfolge von Rekonstruktion, Anwendung und Urteil.
-- Beleg: Text- oder Datenausschnitt, der jede Deutung $D$ mit einem Beleg $B$ stuetzt.
-- Urteil: begruendete Entscheidung aus Kriterium und Differenz $d = x_2 - x_1$.
+### Hook / Phaenomen
+
+Wer waehlt wen, wer prueft was? Bonn gegen Berlin, Karlsruhe als Schiedsrichter. Diese fuenf Begriffe geben dir Karte und Kompass.
+
+### Fachbegriffe & Definitionen
+
+- **Bundestag:** Das Parlament mit $Funktion = Gesetz + Wahl + Kontrolle$. Es traegt $Mehrheit = Kanzler$ als Zentrum.
+- **Bundesrat:** Die Laenderkammer mit $Stimme = Regierung + Weisung$. Sie sichert $Foederalismus = Mitwirkung$ bei Gesetzen.
+- **Bundesregierung:** Die Exekutive mit $Spitze = Kanzler + Minister$. Sie fuehrt $Politik = Initiative + Vollzug$.
+- **Bundesversammlung:** Das Wahlgremium mit $Halb = Bundestag + HalbLaender$. Sie waehlt $Praesident = Repraesentation$.
+- **Bundesverfassungsgericht:** Der Hueter mit $Sitz = Karlsruhe$ und $Macht = Pruefung + Verbot$. Es schuetzt $Verfassung = Grundrecht + Prinzip$.
+
+### Wirkungsgefuege / Modell
+
+Die Begriffe greifen ineinander: **Bundestag** und **Bundesrat** geben $Gesetz = Volk + Laender$. **Regierung** handelt, **Versammlung** kuert, **Gericht** heilt mit $Kontrolle = letzt$. Wer in der Klausur ordnet, muss deshalb immer fragen: Wer handelt, wer segnet, wer stoppt?
 
 Klausur-Satz: `Art. 38 GG garantiert das freie Mandat: Abgeordnete sind an Aufträge nicht gebunden, sondern nur ihrem Gewissen unterworfen.`
 
@@ -41,12 +63,23 @@ Klausur-Satz: `Art. 38 GG garantiert das freie Mandat: Abgeordnete sind an Auftr
 
 TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
-Das Kernmodell dieser Lektion verbindet Begriff, Verfahren und Urteil. Zuerst wird der Fall rekonstruiert, dann werden die Werte $x_1$ und $x_2$ bestimmt und schliesslich wird die Differenz $d = x_2 - x_1$ am Kriterium gemessen. Leitformel des Moduls: $K = \text{Kriterium} \to \text{Urteil}$. Pruefgroessen werden als $x_1, x_2$ verglichen; die Differenz $d = x_2 - x_1$ stuettet das Urteil.
+### Hook / Phaenomen
+
+Weniger Sitze, gleiche Legitimation: Reform verspricht Tempo, Kritiker warnen vor Verlust. Direktmandat ohne Sitz klingt nach Bruch. Heilt Schnitt oder schadet Schnitt? Genau hier zaehlt Abwaegung.
+
+### Fachbegriff & Definition
+
+Das **Organmodell** prueft Reform an Repraesentation und Funktion. Es startet mit $Organe = 5$ und $Teilung = 3$ als Geruest. Es misst $Reform = SitzeMinus + KostenMinus$ gegen $Risiko = DirektMinus + NaeheMinus$. Die Formel lautet $Gut \iff funktionstuechtig + repraesentativ$.
+
+### Wirkungsgefuege / Modell
+
+Denke in Kausalkette: **Lage, Eingriff, Bilanz**. Erstens lautet Lage $Groesse = XXL$ mit $Kosten = hoch + Arbeit = schwer$. Zweitens greift Deckel mit $Sitz = Limit$ und $Mandat = ZweitstimmeDeckt$. Drittens bilanziert **Funktionsfaehigkeit**: Tempo steigt mit $Beschluss = schneller$, Legitimation sinkt bei $Verlierer = DirektOhneSitz$. Genau diese Bilanz verlangt in der Klausur ein **kriteriengeleitetes Urteil**, keine Zahl ohne Wert.
 
 ```diagram
-  Fall -> Rekonstruktion [x1, x2]
-  Rekonstruktion -> Kriterium -> Differenz d = x2 - x1
-  Differenz -> Urteil (AFB III)
+  Organe [BT + BR + Regierung + Praesident + Gericht]
+  Organe -> Gesetz [Beschluss + Zustimmung + Ausfertigung]
+  Gesetz -> Reform [Deckel + Mandat + Kosten]
+  Reform -> Urteil (Funktion vs Repraesentation)
 ```
 
 Klausur-Satz: `Der Bundesrat vertritt die Länder, der Bundestag das Volk; beide zusammen sichern im Föderalismus die Mitwirkung der Länder an der Gesetzgebung.`

@@ -19,9 +19,21 @@ version: Lesson-v3
 
 ZIELE (drei messbare Ziele dieser Lektion):
 
-1. Du kannst den Leitbegriff der Lektion in einem Satz definieren und ein Beispiel zuordnen.
-2. Du kannst das Kernverfahren mit den Groessen $x_1$ und $x_2$ anwenden und die Differenz $d = x_2 - x_1$ deuten.
-3. Du kannst ein kriteriengeleitetes Urteil formulieren und mit einem Klausur-Satz abschliessen (AFB II/III).
+1. Du kannst **Partizipation** und **Buergerrat** in je einem Satz definieren und konventionell und unkonventionell korrekt zuordnen.
+2. Du kannst **Initiative**, **Begehren** und **Entscheid** mit $Quorum = Unterschrift + Zustimmung$ als Weg zum Volksentscheid darstellen.
+3. Du kannst mit dem Kriterium **Minderheitenschutz** ein Urteil zu direkt und repraesentativ formulieren und mit einem Klausur-Satz schliessen (AFB II/III).
+
+### Hook / Phaenomen
+
+Fridays for Future fuellt Strassen, Parteien bleiben leer, online klicken Tausende in Sekunden. Jugend meidet Partei, sucht aber Wirkung. Zaehlt Klick so viel wie Stimme, und schuetzt Mehrheit auch Minderheit?
+
+### Fachbegriff & Definition
+
+**Politische Partizipation** meint alle freiwilligen Handlungen zur Einflussnahme auf Politik. **Konventionelle** Formen nutzen Wahlen und Parteien, **unkonventionelle** nutzen Demo und Petition legal ausserhalb. **Direkte Demokratie** entscheidet unmittelbar durch Volksabstimmung, **repraesentative** mittelbar durch Gewaehlte. Kurz: Mitmachen ja, doch Form und Schutz unterscheiden.
+
+### Wirkungsgefuege / Modell
+
+Der Mechanismus laeuft in drei Stufen: **Anlass, Form, Sicherung**. Erstens mobilisiert $Anlass = Klimakrise + Frust$ vor allem Junge mit $KostenOnline = niedrig$. Zweitens waehlt die Form $Wahl = selten + bindend$ gegen $Protest = oft + druckvoll$. Drittens sichert Repraesentation mit $Schutz = Grundrecht + Gericht$ die Minderheit, waehrend Mehrheit mit $Risiko = Ueberstimmung$ droht. Faellt Schutz aus, wird Beteiligung mit $Mehrheit = absolut$ zur Herrschaft.
 
 Klausur-Satz: `Jugendliche engagieren sich stark sozial und politisch (NGOs, Fridays for Future), meiden aber Parteien — Partizipation ja, Parteibindung nein.`
 
@@ -29,11 +41,21 @@ Klausur-Satz: `Jugendliche engagieren sich stark sozial und politisch (NGOs, Fri
 
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
-- Leitbegriff: zentrale Definition der Lektion in einem Satz mit Klausurformulierung.
-- Kriterium: Massstab, an dem Faelle der Form $x_1$ und $x_2$ gemessen werden.
-- Verfahren: geregelte Abfolge von Rekonstruktion, Anwendung und Urteil.
-- Beleg: Text- oder Datenausschnitt, der jede Deutung $D$ mit einem Beleg $B$ stuetzt.
-- Urteil: begruendete Entscheidung aus Kriterium und Differenz $d = x_2 - x_1$.
+### Hook / Phaenomen
+
+Legal oder illegal, wirksam oder symbolisch: Wer mischt, verliert Punkte. Diese fuenf Begriffe geben dir Achsen und Verfahren.
+
+### Fachbegriffe & Definitionen
+
+- **Konventionelle Partizipation:** Die verfasste Teilhabe mit $Form = Wahl + Partei + Amt$. Sie wirkt mit $Bindung = Gesetz$ und braucht $Organisation = dauerhaft$.
+- **Unkonventionelle Partizipation:** Die freie Teilhabe mit $Form = Demo + Petition + Boykott$. Sie wirkt mit $Druck = Oeffentlichkeit$ und bleibt $Gewalt = verboten$.
+- **Volksinitiative:** Die erste Stufe mit $Start = Anregung + Sammlung$. Sie verlangt $Huerde = niedrig$ und oeffnet $Weg = Begehren$.
+- **Volksbegehren:** Die zweite Stufe mit $QuorumU = Unterschriften$ in Frist. Sie prueft mit $Ernst = Zahl$ die Tragfaehigkeit.
+- **Volksentscheid:** Die dritte Stufe mit $QuorumZ = Zustimmung$ an Urne. Sie entscheidet mit $Ja = Mehrheit$ und bindet $Politik = Ergebnis$.
+
+### Wirkungsgefuege / Modell
+
+Die Begriffe greifen ineinander: **Konventionell** sichert mit $Stimme = Mandat$ Dauer, **unkonventionell** erzeugt mit $Menge = Bild$ Druck. **Initiative** startet, **Begehren** filtert mit $Zahl = Ernst$, **Entscheid** bindet mit $Votum = Gesetz$. Wer in der Klausur ordnet, muss deshalb immer fragen: Ist die Form verfasst oder frei, legal oder bereits illegitim?
 
 Klausur-Satz: `Der Weg zum Volksentscheid führt über Initiative, Begehren (Unterschriftenquorum) und Entscheid (Zustimmungsquorum).`
 
@@ -41,12 +63,23 @@ Klausur-Satz: `Der Weg zum Volksentscheid führt über Initiative, Begehren (Unt
 
 TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
-Das Kernmodell dieser Lektion verbindet Begriff, Verfahren und Urteil. Zuerst wird der Fall rekonstruiert, dann werden die Werte $x_1$ und $x_2$ bestimmt und schliesslich wird die Differenz $d = x_2 - x_1$ am Kriterium gemessen. Leitformel des Moduls: $K = \text{Kriterium} \to \text{Urteil}$. Pruefgroessen werden als $x_1, x_2$ verglichen; die Differenz $d = x_2 - x_1$ stuettet das Urteil.
+### Hook / Phaenomen
+
+Buergerrat zum Verkehr: echte Teilhabe oder Alibi mit Kaffee und Mikros? Empfehlungen klingen gut, binden aber niemanden. Staerkt Losverfahren Demokratie oder ersetzt es Wahl? Genau hier braucht es Massstab.
+
+### Fachbegriff & Definition
+
+Das **Ergaenzungsmodell** ordnet Buergerrat zwischen Protest und Parlament ein. Der **Buergerrat** lost Buerger mit $Los = Vielfalt$ und beraet mit $Empfehlung = Konsens$. **E-Partizipation** senkt mit $Kosten = Klick$ Huerden, ersetzt aber mit $Bindung = schwach$ keine Organisation. Die Formel lautet $Sinnvoll \iff Impuls + Oeffentlichkeit > Alibi$.
+
+### Wirkungsgefuege / Modell
+
+Denke in Kausalkette: **Luecke, Bruecke, Grenze**. Erstens zeigt die Luecke $Wahljung = niedrig$ bei $Engagement = hoch$ den Wandel. Zweitens baut der Rat mit $Los + Info + Deliberation$ die Bruecke zu $Empfehlung = Verkehrswende$. Drittens markiert **Minderheitenschutz** die Grenze: Ohne $Verbindlichkeit = Parlament$ bleibt Rat Impuls, mit Parlament wird er Ergaenzung. Genau diese Einordnung verlangt in der Klausur ein **kriteriengeleitetes Urteil**, keine Begeisterung.
 
 ```diagram
-  Fall -> Rekonstruktion [x1, x2]
-  Rekonstruktion -> Kriterium -> Differenz d = x2 - x1
-  Differenz -> Urteil (AFB III)
+  Luecke [Wahl niedrig + Protest hoch]
+  Luecke -> Rat [Los + Info + Beratung]
+  Rat -> Empfehlung [Konsens + Oeffentlichkeit]
+  Empfehlung -> Urteil (Ergaenzung mit Grenze)
 ```
 
 Klausur-Satz: `Die Wahlbeteiligung nach Alter zeigt, dass junge Menschen seltener wählen — Nichtwahl ist jedoch nicht gleich Desinteresse.`

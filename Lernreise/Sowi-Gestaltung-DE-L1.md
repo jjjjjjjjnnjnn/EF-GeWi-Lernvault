@@ -19,9 +19,21 @@ version: Lesson-v3
 
 ZIELE (drei messbare Ziele dieser Lektion):
 
-1. Du kannst den Leitbegriff der Lektion in einem Satz definieren und ein Beispiel zuordnen.
-2. Du kannst das Kernverfahren mit den Groessen $x_1$ und $x_2$ anwenden und die Differenz $d = x_2 - x_1$ deuten.
-3. Du kannst ein kriteriengeleitetes Urteil formulieren und mit einem Klausur-Satz abschliessen (AFB II/III).
+1. Du kannst **Redebeitrag** und **Handlungsempfehlung** in je einem Satz definieren und Anlass korrekt zuordnen.
+2. Du kannst ein Material mit $Grenze = Quelle + Aussage + Frage$ auswerten und zwei Massnahmen mit Wirkungskette entwerfen.
+3. Du kannst mit dem Kriterium **Adressatenkompetenz** ein Urteil zu Machbarkeit formulieren und mit einem Klausur-Satz schliessen (AFB II/III).
+
+### Hook / Phaenomen
+
+Dreißig Minuten, ein Stapel Material, eine leere Seite: Rede oder Empfehlung? Viele schreiben Meinung statt Handlung, Appell statt Kompetenz. Was unterscheidet Gestaltung von Geschwaetz? Genau hier entscheidet das Format.
+
+### Fachbegriff & Definition
+
+Die **Gestaltungsaufgabe** verlangt eigenstaendiges Entwickeln als **Redebeitrag** oder **Handlungsempfehlung** auf AFB III. Der **Redebeitrag** spricht ein Publikum an mit Anlass, Reaktion und Appell. Die **Handlungsempfehlung** berät einen Adressaten mit Daten, Massnahmen und Kompetenzpruefung. Kurz: Ueberzeugen durch Auftritt oder durch Plan.
+
+### Wirkungsgefuege / Modell
+
+Der Mechanismus laeuft in drei Stufen: **Erkennen, Bauen, Pruefen**. Erstens erkennt das Rollenwort mit $Rede = Publikum + Appell$ gegen $Empfehlung = Adressat + Massnahme$. Zweitens baut der Text mit $Rede = Anlass + Reaktion + Vorschlag + Schluss$ oder $Empfehlung = Kappe + Grenzen + Kette + Kompetenz$. Drittens prueft **Adressatenkompetenz** mit $Darf = Zustaendigkeit$, sonst bleibt Gestaltung wirkungslos. Faellt Pruefung aus, wird Plan zur Pose.
 
 Klausur-Satz: `Die Aufgabenarten C und D enden jeweils mit einer Gestaltungsaufgabe (AFB III); die Operatoren lauten gestalten Sie oder entwickeln Sie.`
 
@@ -29,11 +41,21 @@ Klausur-Satz: `Die Aufgabenarten C und D enden jeweils mit einer Gestaltungsaufg
 
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
-- Leitbegriff: zentrale Definition der Lektion in einem Satz mit Klausurformulierung.
-- Kriterium: Massstab, an dem Faelle der Form $x_1$ und $x_2$ gemessen werden.
-- Verfahren: geregelte Abfolge von Rekonstruktion, Anwendung und Urteil.
-- Beleg: Text- oder Datenausschnitt, der jede Deutung $D$ mit einem Beleg $B$ stuetzt.
-- Urteil: begruendete Entscheidung aus Kriterium und Differenz $d = x_2 - x_1$.
+### Hook / Phaenomen
+
+Gute Rede folgt antiker Ordnung, gute Empfehlung folgt Datenlogik. Wer Bausteine kennt, spart Zeit und Punkte. Diese fuenf Begriffe geben dir Bauplan und Massstab.
+
+### Fachbegriffe & Definitionen
+
+- **Redebeitrag:** Die muendliche Gestaltung mit $Rede = Anlass + Fremdposition + Vorschlag + Appell$. Sie lebt von $Adressierung = direkt + emotional$.
+- **Handlungsempfehlung:** Die schriftliche Beratung mit $Empfehlung = Kappe + Massnahme + Folge + Kompetenz$. Sie lebt von $Beleg = Daten + Quelle$.
+- **Datenkappe:** Die Einordnung mit $Kappe = Quelle + Zeitraum + Einheit$. Sie klaert, was $Material = sagt + verschweigt$.
+- **Wirkungskette:** Die Folgeabschaetzung mit $Kette = Massnahme \to Effekt + Nebenfolge$. Sie nennt Gewinner und Verlierer jeder Option.
+- **Adressatenkompetenz:** Die Zustaendigkeitspruefung mit $Kompetenz = darf + kann + zahlt$. Sie verhindert Vorschlaege an Unzustaendige.
+
+### Wirkungsgefuege / Modell
+
+Die Begriffe greifen ineinander: **Redebeitrag** braucht Buehne und Appell mit $Wirkung = Haltung + Beifall$. **Handlungsempfehlung** braucht **Datenkappe** und **Wirkungskette** mit $Wirkung = Beleg + Plan$. **Adressatenkompetenz** filtert mit $zustaendig = Ja$ das Machbare heraus. Wer in der Klausur gestaltet, muss deshalb immer fragen: Spreche ich zum Publikum oder rate ich dem Entscheider?
 
 Klausur-Satz: `Der Redebeitrag verlangt Anlassbezug, die Auseinandersetzung mit zwei fremden Aspekten, einen eigenen Vorschlag und eine ueberzeugende Adressierung.`
 
@@ -41,12 +63,23 @@ Klausur-Satz: `Der Redebeitrag verlangt Anlassbezug, die Auseinandersetzung mit 
 
 TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
-Das Kernmodell dieser Lektion verbindet Begriff, Verfahren und Urteil. Zuerst wird der Fall rekonstruiert, dann werden die Werte $x_1$ und $x_2$ bestimmt und schliesslich wird die Differenz $d = x_2 - x_1$ am Kriterium gemessen. Leitformel des Moduls: $K = \text{Kriterium} \to \text{Urteil}$. Pruefgroessen werden als $x_1, x_2$ verglichen; die Differenz $d = x_2 - x_1$ stuettet das Urteil.
+### Hook / Phaenomen
+
+Mehrwertsteuer auf Lebensmittel senken klingt sozial, doch wer zahlt die Luecke, wer profitiert wirklich? Eine Massnahme ohne Kette ist ein Wunsch, eine Kette ohne Kompetenz ist Theater. Genau hier zeigt sich Gestaltungsreife.
+
+### Fachbegriff & Definition
+
+Das **Empfehlungsmodell** baut in fuenf Schritten von der Kappe zum Urteil. Es startet mit $Kappe = Quelle + Grenze$ und nennt drei **Grenzen des Materials**. Es entwirft zwei Massnahmen mit je einer **Wirkungskette** aus Effekt und Nebenfolge. Die Formel lautet $Gut \iff konkret + begruendet + zustaendig$.
+
+### Wirkungsgefuege / Modell
+
+Denke in Kausalkette: **Sichern, Entwerfen, Sichern**. Erstens sichert die Kappe mit $Steuer = 7Prozent + Einnahme = Milliarden$ die Fakten und grenzt mit $Aussage \le Frage$ ein. Zweitens entwirft der Plan $Senkung \to Entlastung + Loch$ gegen $Gutschein \to Zielgenau + Aufwand$ mit je $Nebenfolge = Mitnahme + Verwaltung$. Drittens sichert **Adressatenkompetenz** mit $Bund = Steuer$, $Kommune = Ausgabe$ die Umsetzung. Genau diese Vollstaendigkeit verlangt in der Klausur ein **kriteriengeleitetes Urteil**, keine Meinung.
 
 ```diagram
-  Fall -> Rekonstruktion [x1, x2]
-  Rekonstruktion -> Kriterium -> Differenz d = x2 - x1
-  Differenz -> Urteil (AFB III)
+  Material [Quelle + Zeitraum + Einheit]
+  Material -> Grenzen [Aussage + Luecke + Frage]
+  Grenzen -> Massnahmen [Kette + Nebenfolge]
+  Massnahmen -> Kompetenz -> Urteil (Machbar)
 ```
 
 Klausur-Satz: `Die Handlungsempfehlung wertet Daten nach Quelle, Aussagebereich und Fragestellung aus und benennt zuerst die Grenzen des Materials.`

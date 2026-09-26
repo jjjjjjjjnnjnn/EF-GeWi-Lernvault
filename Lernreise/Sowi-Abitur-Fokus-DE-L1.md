@@ -19,9 +19,21 @@ version: Lesson-v3
 
 ZIELE (drei messbare Ziele dieser Lektion):
 
-1. Du kannst den Leitbegriff der Lektion in einem Satz definieren und ein Beispiel zuordnen.
-2. Du kannst das Kernverfahren mit den Groessen $x_1$ und $x_2$ anwenden und die Differenz $d = x_2 - x_1$ deuten.
-3. Du kannst ein kriteriengeleitetes Urteil formulieren und mit einem Klausur-Satz abschliessen (AFB II/III).
+1. Du kannst **IF4** und **IF6** mit je einem Fokusthema benennen und EF-Kapitel korrekt zuordnen.
+2. Du kannst das **Magische Viereck** mit $Z = Preis + Beschaeftigung + Aussen + Wachstum$ darstellen und Zielkonflikte erklaeren.
+3. Du kannst mit dem Kriterium **Passung** ein Urteil zur Modellwahl formulieren und mit einem Klausur-Satz schliessen (AFB II/III).
+
+### Hook / Phaenomen
+
+Vier Ziele, ein Widerspruch: Vollbeschaeftigung drueckt auf Preise, Wachstum belastet die Umwelt, stabile Preise bremsen Kredite. Das Magische Viereck heisst magisch, weil es fast nie gelingt. Wie lernst du fuer ein Abitur, das genau diese Spannung prueft?
+
+### Fachbegriff & Definition
+
+Die **Abitur-Fokussierungen** legen fest, welche Themen in **IF4 Wirtschaft** und **IF6 Ungleichheit** vertieft werden. IF4 verlangt **Staatsverschuldung** und **Freihandel gegen Protektionismus**, IF6 verlangt **Schichten, Lagen und Milieus**. Die EF-Kapitel liefern das Fundament: Stabilitaetspolitik traegt IF4, Ungleichheitsmessung traegt IF6.
+
+### Wirkungsgefuege / Modell
+
+Der Mechanismus laeuft in drei Stufen: **Vorgabe, Fundament, Transfer**. Erstens nennt die Vorgabe $Fokus = IF4 + IF6$ mit je zwei Schwerpunkten. Zweitens liefert das Fundament $EF = Kapitel9 + Kapitel11 + Gini$ die Begriffe und Kennzahlen. Drittens verlangt der Transfer $Urteil = Kriterium + Anwendung$: Dieselbe Mindestlohnforderung ist in IF4 ein Eingriff in $Tarifautonomie$, in IF6 eine Frage von $Gerechtigkeit$. Faellt die Zuordnung aus, wird Lernen beliebig.
 
 Klausur-Satz: `Die Vorgaben fuer das Zentralabitur verlangen in IF4 unter anderem die Legitimation staatlichen Handelns, die Zielgroessen des Stabilitaetsgesetzes und die internationalen Wirtschaftsbeziehungen.`
 
@@ -29,11 +41,21 @@ Klausur-Satz: `Die Vorgaben fuer das Zentralabitur verlangen in IF4 unter andere
 
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
-- Leitbegriff: zentrale Definition der Lektion in einem Satz mit Klausurformulierung.
-- Kriterium: Massstab, an dem Faelle der Form $x_1$ und $x_2$ gemessen werden.
-- Verfahren: geregelte Abfolge von Rekonstruktion, Anwendung und Urteil.
-- Beleg: Text- oder Datenausschnitt, der jede Deutung $D$ mit einem Beleg $B$ stuetzt.
-- Urteil: begruendete Entscheidung aus Kriterium und Differenz $d = x_2 - x_1$.
+### Hook / Phaenomen
+
+Ohne Landkarte verlierst du dich im Stoff. IF4 redet ueber Geld und Staat, IF6 ueber Schichten und Chancen. Diese fuenf Begriffe geben dir Kompass und Massstab.
+
+### Fachbegriffe & Definitionen
+
+- **Magisches Viereck:** Die vier Ziele $Z = Preisstabilitaet + Beschaeftigung + Aussenbilanz + Wachstum$. Es gilt $Zielkonflikt > 0$, weil mehr Wachstum oft $Preis = Anstieg$ bedeutet.
+- **Staatsverschuldung:** Die Debatte um Kredit gegen Vorsorge mit $Schuld = Ausgabe - Einnahme$. Sie prueft Legitimation und Grenzen staatlichen Handelns.
+- **Freihandel:** Der offene Guetertausch mit $Wohlstand = Spezialisierung + Wettbewerb$. Sein Gegenpol $Protektionismus = Zoll + Quote$ schuetzt, verteuert aber.
+- **Schichtenmodell:** Die vertikale Gliederung nach Einkommen und Bildung mit $Schicht = oben + mitte + unten$. Es misst Ungleichheit eindimensional.
+- **Milieumodell:** Die Gruppierung nach Werten und Lebensstilen mit $Milieu = Haltung + Alltag$. Es erklaert Wahl und Konsum jenseits des Geldes.
+
+### Wirkungsgefuege / Modell
+
+Die Begriffe greifen ineinander: Das **magische Viereck** definiert IF4 mit $Z = 4Ziele$, **Staatsverschuldung** und **Freihandel** liefern die Streitfragen dazu. **Schichtenmodell** und **Milieumodell** definieren IF6 mit $Struktur = vertikal + kulturell$. Wer in der Klausur antwortet, muss deshalb immer fragen: Bin ich in IF4 mit Instrumenten oder in IF6 mit Modellen?
 
 Klausur-Satz: `Als Fokussierungen sind in IF4 der Streit um die Staatsverschuldung und der Gegensatz von Freihandel und Protektionismus sowie in IF6 die Schichten-, Lagen- und Milieumodelle ausgewiesen.`
 
@@ -41,12 +63,24 @@ Klausur-Satz: `Als Fokussierungen sind in IF4 der Streit um die Staatsverschuldu
 
 TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
-Das Kernmodell dieser Lektion verbindet Begriff, Verfahren und Urteil. Zuerst wird der Fall rekonstruiert, dann werden die Werte $x_1$ und $x_2$ bestimmt und schliesslich wird die Differenz $d = x_2 - x_1$ am Kriterium gemessen. Leitformel des Moduls: $K = \text{Kriterium} \to \text{Urteil}$. Pruefgroessen werden als $x_1, x_2$ verglichen; die Differenz $d = x_2 - x_1$ stuettet das Urteil.
+### Hook / Phaenomen
+
+Drei Modelle, eine Statistik: Schichten zeigen Geld, Lagen zeigen Bildung plus Beruf, Milieus zeigen Werte. Welches passt zur Einkommensstatistik, welches zur Wahlwerbung? Die falsche Brille macht aus Daten Meinung.
+
+### Fachbegriff & Definition
+
+Das **Dreimodell-Raster** vergleicht Schichten, Lagen und Milieus nach Definition, Beispiel und Grenze. **Schichten** messen vertikal mit $Einkommen = hoch + niedrig$. **Lagen** messen mehrdimensional mit $Lage = Geld + Bildung + Beruf$. **Milieus** deuten kulturell mit $Stil = Werte + Konsum$. Die Wahlregel lautet $Statistik \to Schicht$, $Lebensstil \to Milieu$.
+
+### Wirkungsgefuege / Modell
+
+Denke in Kausalkette: **Rekonstruktion, Anwendung, Entscheidung**. Erstens werden alle drei mit $Definition + Beispiel + Grenze$ rekonstruiert. Zweitens wird angewendet: Fuer Einkommensstatistik gilt $Passung(Schicht) > Passung(Milieu)$ wegen $Messbarkeit = Euro$. Drittens wird entschieden nach **Passung**: Schichten siegen bei Geld, Milieus bei Kultur. Genau diese Begrueundung verlangt in der Klausur ein **kriteriengeleitetes Urteil**, keine Aufzaehlung.
 
 ```diagram
-  Fall -> Rekonstruktion [x1, x2]
-  Rekonstruktion -> Kriterium -> Differenz d = x2 - x1
-  Differenz -> Urteil (AFB III)
+  Frage [Statistik oder Kultur]
+  Frage -> Schicht = vertikal + Einkommen
+  Frage -> Lage = Geld + Bildung + Beruf
+  Frage -> Milieu = Werte + Stil
+  Modelle -> Urteil (Passung)
 ```
 
 Klausur-Satz: `Die EF-Kapitel 9 und 11 tragen IF4, waehrend die EF-Materialien zu Ungleichheit (Gini, Bildungstrichter, Umverteilung) IF6 fuellen.`

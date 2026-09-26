@@ -19,9 +19,21 @@ version: Lesson-v3
 
 ZIELE (drei messbare Ziele dieser Lektion):
 
-1. Du kannst den Leitbegriff der Lektion in einem Satz definieren und ein Beispiel zuordnen.
-2. Du kannst das Kernverfahren mit den Groessen $x_1$ und $x_2$ anwenden und die Differenz $d = x_2 - x_1$ deuten.
-3. Du kannst ein kriteriengeleitetes Urteil formulieren und mit einem Klausur-Satz abschliessen (AFB II/III).
+1. Du kannst **Karikatur** und **Zuspitzung** in je einem Satz definieren und Stilmittel korrekt benennen.
+2. Du kannst eine Karikatur mit $T = t1 + t2 + t3$ im Zeitverhaeltnis $30 + 40 + 30$ gliedern und Symbole deuten.
+3. Du kannst mit dem Kriterium **Teilhabe** ein Urteil zu Aussage und Grenze formulieren und mit einem Klausur-Satz schliessen (AFB II/III).
+
+### Hook / Phaenomen
+
+Wahlurne als Muelltonne, Sofa gegen Demo, Handy gegen Plakat: Ein Bild sagt Faulheit, meint aber Wandel. Lacht der Zeichner nur oder kritisiert er Macht? Genau hier beginnt methodisches Sehen.
+
+### Fachbegriff & Definition
+
+Die **Karikatur** ist eine ueberzeichnende Bildquelle, die durch **Zuspitzung** Strukturen sichtbar macht. **Beschreiben** erfasst nur Wahrnehmbares ohne Deutung, **Analysieren** uebersetzt Symbole in Kontext, **Beurteilen** misst Aussage an einem Kriterium. Die Zeitregel lautet $T = t1 + t2 + t3$ mit $t1 + t2 + t3 = 30 + 40 + 30$. Kurz: Sehen, deuten, werten.
+
+### Wirkungsgefuege / Modell
+
+Der Mechanismus laeuft in drei Stufen: **Zeigen, Meinen, Pruefen**. Erstens zeigt das Bild mit $Figur + Objekt + Text$ die Buehne. Zweitens meint es mit $Symbol = Deutung + Realbezug$ die Kritik, etwa $Waage = Verteilung$ und $LeiterAufzug = Chancen$. Drittens prueft das Urteil mit $Pro + Contra + Kriterium$ die Tragweite. Faellt Beleg aus, wird Deutung mit $D > B$ zur Behauptung.
 
 Klausur-Satz: `Die Karikaturanalyse erfolgt in drei Schritten: beschreiben, analysieren und beurteilen, wobei die Zeit im Verhaeltnis 30 zu 40 zu 30 verteilt wird.`
 
@@ -29,11 +41,21 @@ Klausur-Satz: `Die Karikaturanalyse erfolgt in drei Schritten: beschreiben, anal
 
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
-- Leitbegriff: zentrale Definition der Lektion in einem Satz mit Klausurformulierung.
-- Kriterium: Massstab, an dem Faelle der Form $x_1$ und $x_2$ gemessen werden.
-- Verfahren: geregelte Abfolge von Rekonstruktion, Anwendung und Urteil.
-- Beleg: Text- oder Datenausschnitt, der jede Deutung $D$ mit einem Beleg $B$ stuetzt.
-- Urteil: begruendete Entscheidung aus Kriterium und Differenz $d = x_2 - x_1$.
+### Hook / Phaenomen
+
+Ohne Handwerk wird aus Analyse Geschwafel. Was darf in Beschreibung stehen, was muss in Deutung stehen? Diese fuenf Begriffe geben dir Schnitt und Massstab.
+
+### Fachbegriffe & Definitionen
+
+- **Beschreibung:** Die wertfreie Erfassung mit $Bild = Figur + Objekt + Text$. Sie verbietet $Deutung = 0$ und Worte wie zeigt dass oder kritisiert.
+- **Symboldeutung:** Die Uebersetzung mit $D = Symbol + Realbezug$. Beispiel: $UrneMuell = Wahlmüdigkeit$ braucht $Beleg = Wahlbeteiligung$.
+- **Kontexteinordnung:** Die Verknuepfung mit $Kontext = EFThema + Wissen$. Sie bindet $Bild = Fall$ an $Politik = Partizipation$.
+- **Intention:** Die Absicht mit $Ziel = Kritik + Appell$. Sie fragt, wen der Zeichner mit $Mittel = Spott$ treffen will.
+- **Teilhabe:** Das Urteilskriterium mit $Teilhabe = Chance + Nutzung$. Es misst, ob $Bild = Klage$ oder $Loesung$ staerkt.
+
+### Wirkungsgefuege / Modell
+
+Die Begriffe greifen ineinander: **Beschreibung** sichert mit $Sehen = sachlich$ das Fundament. **Symboldeutung** und **Kontexteinordnung** bauen mit $D = B + Wissen$ die Bruecke zur Wirklichkeit. **Intention** und **Teilhabe** schliessen mit $Sinn + Massstab$ das Urteil. Wer in der Klausur arbeitet, muss deshalb immer fragen: Ist jede Deutung durch einen Beleg gedeckt?
 
 Klausur-Satz: `Die Zuspitzung ist kein Mangel, sondern Methode: Sie macht Strukturen sichtbar, die Statistiken nur abstrakt zeigen.`
 
@@ -41,12 +63,23 @@ Klausur-Satz: `Die Zuspitzung ist kein Mangel, sondern Methode: Sie macht Strukt
 
 TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
-Das Kernmodell dieser Lektion verbindet Begriff, Verfahren und Urteil. Zuerst wird der Fall rekonstruiert, dann werden die Werte $x_1$ und $x_2$ bestimmt und schliesslich wird die Differenz $d = x_2 - x_1$ am Kriterium gemessen. Analysezeit $T = t_1 + t_2 + t_3$ mit $t_1 : t_2 : t_3 = 30 : 40 : 30$. Jede Deutung $D$ braucht einen Beleg $B$ aus dem Bild.
+### Hook / Phaenomen
+
+Waehlen kein Bock, Demo bin dabei: Faulheit oder neuer Stil? Die Karikatur spitzt zu, doch die Wirklichkeit ist gemischt. Trifft die Pointe oder verzerrt sie? Genau hier hilft das Dreischritt-Modell.
+
+### Fachbegriff & Definition
+
+Das **Dreischritt-Modell** trennt Sehen, Deuten und Werten mit klarer Zeit und klarer Sprache. Es fordert $t1 = Beschreibung$, $t2 = Analyse$ und $t3 = Urteil$ mit $T = t1 + t2 + t3$. Jede Deutung braucht $D = B$ aus dem Bild plus Realbezug. Die Formel lautet $Gut \iff Beleg + Kontext + Kriterium$.
+
+### Wirkungsgefuege / Modell
+
+Denke in Kausalkette: **Sichern, Oeffnen, Entscheiden**. Erstens sichert $t1$ mit $fuenfSaetze = Figur + Objekt + Text$ das Sichtbare ohne Wertung. Zweitens oeffnet $t2$ mit $Urne = Muell + Nichtwahl$ und $SofaDemo = Wandel$ den Sinn im Kontext Partizipationswandel. Drittens entscheidet $t3$ mit $Teilhabe = Pro + Contra$ ob Warnung berechtigt bleibt. Genau diese Disziplin verlangt in der Klausur ein **kriteriengeleitetes Urteil**, keine Meinung.
 
 ```diagram
-  Fall -> Rekonstruktion [x1, x2]
-  Rekonstruktion -> Kriterium -> Differenz d = x2 - x1
-  Differenz -> Urteil (AFB III)
+  Bild [Figur + Objekt + Text]
+  Bild -> Analyse [Symbol + Kontext + Intention]
+  Analyse -> Urteil [Kriterium + Pro + Contra]
+  Urteil -> Zeit T = t1 + t2 + t3
 ```
 
 Klausur-Satz: `Der Karikaturist kritisiert ein Phaenomen, indem er es ueberzeichnet; jedes Symbol braucht eine Deutung mit konkretem Realbezug.`

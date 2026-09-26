@@ -19,9 +19,21 @@ version: Lesson-v3
 
 ZIELE (drei messbare Ziele dieser Lektion):
 
-1. Du kannst den Leitbegriff der Lektion in einem Satz definieren und ein Beispiel zuordnen.
-2. Du kannst das Kernverfahren mit den Groessen $x_1$ und $x_2$ anwenden und die Differenz $d = x_2 - x_1$ deuten.
-3. Du kannst ein kriteriengeleitetes Urteil formulieren und mit einem Klausur-Satz abschliessen (AFB II/III).
+1. Du kannst **Betriebsrat** und **Mitbestimmung** in je einem Satz definieren und Ebenen des Betriebs korrekt zuordnen.
+2. Du kannst **Shareholder** und **Stakeholder** mit $Wert = Rendite$ gegen $Wert = AlleBetroffene$ unterscheiden und auf Kurzarbeit anwenden.
+3. Du kannst mit dem Kriterium **SozialerFrieden** ein Urteil zu Tempo gegen Teilhabe formulieren und mit einem Klausur-Satz schliessen (AFB II/III).
+
+### Hook / Phaenomen
+
+Auftraege brechen ein, die Geschaeftsleitung will entlassen, der Betriebsrat schlaegt Kurzarbeit vor. Die einen nennen Mitbestimmung Bremsklotz, die anderen Rettungsanker. Bremst Teilhabe den Wandel oder sichert sie ihn erst?
+
+### Fachbegriff & Definition
+
+Der **Betrieb** ist die organisierte Einheit von Arbeit und Kapital zur Leistungserstellung. **Mitbestimmung** meint die gesetzliche Teilhabe der Beschaeftigten durch **Betriebsrat** und Aufsichtsrat. Der Betriebsrat hat **Information, Beratung und Mitbestimmung** nach dem Betriebsverfassungsgesetz, unterliegt aber der **Friedenspflicht**. Kurz: Mitreden ja, streiken nein.
+
+### Wirkungsgefuege / Modell
+
+Der Mechanismus laeuft in drei Stufen: **Interesse, Verfahren, Wirkung**. Erstens treffen $Kapital = Rendite$ und $Arbeit = Sicherheit$ aufeinander. Zweitens regelt das Verfahren $Mitbestimmung = Info + Beratung + Veto$ den Konflikt. Drittens entsteht die Wirkung $Frieden = Teilhabe - Tempo$: Entscheidungen dauern mit $Zeit = plus$, halten aber mit $Akzeptanz = hoch$. Faellt Mitbestimmung aus, steigt Tempo und sinkt Legitimation.
 
 Klausur-Satz: `Der Betriebsrat vertritt die Belegschaft nach dem Betriebsverfassungsgesetz (Information, Beratung, Mitbestimmung), darf aber nicht streiken.`
 
@@ -29,11 +41,21 @@ Klausur-Satz: `Der Betriebsrat vertritt die Belegschaft nach dem Betriebsverfass
 
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
-- Leitbegriff: zentrale Definition der Lektion in einem Satz mit Klausurformulierung.
-- Kriterium: Massstab, an dem Faelle der Form $x_1$ und $x_2$ gemessen werden.
-- Verfahren: geregelte Abfolge von Rekonstruktion, Anwendung und Urteil.
-- Beleg: Text- oder Datenausschnitt, der jede Deutung $D$ mit einem Beleg $B$ stuetzt.
-- Urteil: begruendete Entscheidung aus Kriterium und Differenz $d = x_2 - x_1$.
+### Hook / Phaenomen
+
+Wem gehoert das Unternehmen: den Aktionaeren oder allen, die davon leben? Die Antwort entscheidet ueber Lohn, Tempo und Moral. Diese fuenf Begriffe geben dir Brille und Massstab.
+
+### Fachbegriffe & Definitionen
+
+- **Shareholder-Ansatz:** Die Orientierung an $Wert = Rendite$ der Anteilseigner. Er maximiert $Gewinn = Umsatz - Kosten$ und duldet Entlassung als Mittel.
+- **Stakeholder-Ansatz:** Die Orientierung an $Wert = AlleBetroffene$ von Beschaeftigten bis Umwelt. Er wagt $Bilanz = Oekonomie + Soziales + Oekologie$.
+- **Betriebsrat:** Die gewaehlte Vertretung mit $Recht = Info + Beratung + Mitbestimmung$. Sie gilt ab $Groesse = 5$ und traegt $Frieden = Pflicht$.
+- **Tarifautonomie:** Das Grundrecht mit $Lohn = Gewerkschaft + Arbeitgeber$ ohne Staat. Sie erlaubt $Streik = letztesMittel$ nach Art. 9 Abs. 3 GG.
+- **Paritaetische Mitbestimmung:** Die gleiche Sitzteilung im Aufsichtsrat mit $Sitze = Kapital + Arbeit$. Sie verhindert Eskalation mit $Kosten = Tempo$.
+
+### Wirkungsgefuege / Modell
+
+Die Begriffe greifen ineinander: **Shareholder** gegen **Stakeholder** definiert das Ziel mit $Rendite$ gegen $Teilhabe$. **Betriebsrat** und **paritaetische Mitbestimmung** liefern das Verfahren $Info \to Beratung \to Veto$. **Tarifautonomie** verlagert Lohnfindung zu den Sozialpartnern mit $Staat = aussen$. Wer in der Klausur urteilt, muss deshalb immer fragen: Dient die Massnahme nur der Rendite oder allen Traegern?
 
 Klausur-Satz: `Während der Shareholder-Ansatz die Rendite der Anteilseigner maximiert, berücksichtigt der Stakeholder-Ansatz alle Betroffenen des Unternehmenshandelns.`
 
@@ -41,12 +63,23 @@ Klausur-Satz: `Während der Shareholder-Ansatz die Rendite der Anteilseigner max
 
 TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
-Das Kernmodell dieser Lektion verbindet Begriff, Verfahren und Urteil. Zuerst wird der Fall rekonstruiert, dann werden die Werte $x_1$ und $x_2$ bestimmt und schliesslich wird die Differenz $d = x_2 - x_1$ am Kriterium gemessen. Leitformel des Moduls: $K = \text{Kriterium} \to \text{Urteil}$. Pruefgroessen werden als $x_1, x_2$ verglichen; die Differenz $d = x_2 - x_1$ stuettet das Urteil.
+### Hook / Phaenomen
+
+Kurzarbeit statt Kuendigung klingt sozial, kostet aber Geld und Mut. Die Geschaeftsleitung zaehlt Kosten, der Betriebsrat zaehlt Schicksale. Oder geht beides: sichern und sparen? Genau hier zeigt sich, ob Mitbestimmung Zukunft hat.
+
+### Fachbegriff & Definition
+
+Das **Kurzarbeit-Modell** verbindet Mitbestimmung mit Stakeholder-Logik in drei Stufen. Es nutzt $Kurzarbeit = wenigerStunden + Lohnausgleich$ statt $Entlassung = Schnitt + Abfindung$. Der Betriebsrat prueft mit $Recht = Anhoerung + Zustimmung$ die Sozialauswahl. Die Formel lautet $Sinnvoll \iff Jobsicher + Qualifikationshalt > Kosten$.
+
+### Wirkungsgefuege / Modell
+
+Denke in Kausalkette: **Lage, Instrument, Bilanz**. Erstens lautet die Lage $Auftrag = minus30Prozent$ mit $Liquiditaet = knapp$. Zweitens wirkt das Instrument $Kurzarbeit = Einkommen70Prozent + Staatshilfe$, waehrend Knowhow mit $Wissen = bleibt$ erhalten wird. Drittens bilanziert das Kriterium **sozialer Frieden**: Kurzfristig gilt $Kosten > 0$, langfristig $Bindung + Motivation > Entlassungskosten$. Genau diese Rechnung verlangt in der Klausur ein **kriteriengeleitetes Urteil**, keine Parole.
 
 ```diagram
-  Fall -> Rekonstruktion [x1, x2]
-  Rekonstruktion -> Kriterium -> Differenz d = x2 - x1
-  Differenz -> Urteil (AFB III)
+  Lage [Auftrag minus + Liquiditaet knapp]
+  Lage -> Betriebsrat [Info + Beratung + Veto]
+  Betriebsrat -> Kurzarbeit [Stunden minus + Hilfe]
+  Kurzarbeit -> Urteil (Frieden vs Tempo)
 ```
 
 Klausur-Satz: `Mitbestimmung kauft sozialen Frieden mit Tempo — ob der Preis in der Transformation 4.0 noch tragbar ist, entscheidet über ihre Zukunft.`

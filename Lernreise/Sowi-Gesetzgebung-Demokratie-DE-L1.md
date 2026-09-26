@@ -19,9 +19,21 @@ version: Lesson-v3
 
 ZIELE (drei messbare Ziele dieser Lektion):
 
-1. Du kannst den Leitbegriff der Lektion in einem Satz definieren und ein Beispiel zuordnen.
-2. Du kannst das Kernverfahren mit den Groessen $x_1$ und $x_2$ anwenden und die Differenz $d = x_2 - x_1$ deuten.
-3. Du kannst ein kriteriengeleitetes Urteil formulieren und mit einem Klausur-Satz abschliessen (AFB II/III).
+1. Du kannst **Gesetzgebungsweg** und **freies Mandat** in je einem Satz definieren und Bundestag und Bundesrat korrekt zuordnen.
+2. Du kannst **Zustimmungsgesetz** und **Einspruchsgesetz** mit $Blockade = Ja$ gegen $Ueberstimmung = moeglich$ unterscheiden.
+3. Du kannst mit dem Kriterium **Funktionsfaehigkeit** ein Urteil zur Bundesratsrolle formulieren und mit einem Klausur-Satz schliessen (AFB II/III).
+
+### Hook / Phaenomen
+
+Der Bundestag beschliesst Entlastung fuer Kommunen, der Bundesrat stoppt das Gesetz, der Vermittlungsausschuss tagt nachts. Presse ruft Blockade, Laender rufen Mitsprache. Schuetzt der Bundesrat die Demokratie oder laehmt er sie?
+
+### Fachbegriff & Definition
+
+Das **Gesetzgebungsverfahren** ist der Weg vom Entwurf ueber Bundestag und **Bundesrat** bis zur Ausfertigung durch den **Bundespresidenten**. Abgeordnete handeln mit **freiem Mandat** nach Art. 38 GG, nur dem Gewissen verpflichtet. Bundesratsmitglieder stimmen dagegen **weisungsgebunden** nach Landesregierungen ab. Kurz: Ein Haus denkt frei, das andere spricht mit einer Stimme.
+
+### Wirkungsgefuege / Modell
+
+Der Mechanismus laeuft in drei Stufen: **Beschluss, Pruefung, Ausgleich**. Erstens beschliesst der Bundestag nach $Lesung1 + Ausschuss + Lesung2 + Lesung3$. Zweitens prueft der Bundesrat mit $Zustimmung = Pflicht$ oder $Einspruch = Ueberstimmbar$. Drittens sucht der **Vermittlungsausschuss** mit $Kompromiss = Bund + Laender$ den Ausgleich. Faellt Ausgleich aus, gilt $Stillstand > Gestaltung$ und Politikverflechtung blockiert.
 
 Klausur-Satz: `Der Gang der Gesetzgebung fuehrt vom Bundestag ueber den Bundesrat und ggf. den Vermittlungsausschuss bis zur Ausfertigung durch den Bundespraesidenten.`
 
@@ -29,11 +41,21 @@ Klausur-Satz: `Der Gang der Gesetzgebung fuehrt vom Bundestag ueber den Bundesra
 
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
-- Leitbegriff: zentrale Definition der Lektion in einem Satz mit Klausurformulierung.
-- Kriterium: Massstab, an dem Faelle der Form $x_1$ und $x_2$ gemessen werden.
-- Verfahren: geregelte Abfolge von Rekonstruktion, Anwendung und Urteil.
-- Beleg: Text- oder Datenausschnitt, der jede Deutung $D$ mit einem Beleg $B$ stuetzt.
-- Urteil: begruendete Entscheidung aus Kriterium und Differenz $d = x_2 - x_1$.
+### Hook / Phaenomen
+
+Wer darf was stoppen, wer darf ueberstimmen? Ohne diese Regeln bleibt Foederalismus Worthuelse. Diese fuenf Begriffe geben dir Fahrplan und Massstab.
+
+### Fachbegriffe & Definitionen
+
+- **Bundestag:** Das direkt gewaehlte Parlament mit $Funktion = Gesetz + Kontrolle$. Er beschliesst mit $Mehrheit = Kanzler + Haushalt$ und traegt Verantwortung.
+- **Bundesrat:** Die Laenderkammer mit $Stimme = Regierung + Weisung$. Sie sichert $Foederalismus = Mitwirkung$ bei Bundesgesetzen.
+- **Vermittlungsausschuss:** Das Gremium mit $Sitz = Bund + Laender$ zum Kompromiss. Er wandelt $Blockade = Nein$ in $Einigung = vielleicht$.
+- **Freies Mandat:** Die Garantie aus Art. 38 GG mit $Abgeordneter = Gewissen + KeinAuftrag$. Sie wird faktisch durch $Disziplin = Fraktion$ begrenzt.
+- **Demokratietheorie:** Die Brille mit $liberal = Schutz$, $republikanisch = Teilhabe$ und $prozedural = Verfahren$. Sie bewertet, ob Beteiligung oder Qualitaet zaehlt.
+
+### Wirkungsgefuege / Modell
+
+Die Begriffe greifen ineinander: **Bundestag** beschliesst, **Bundesrat** bremst oder segnet mit $Ja = Pflicht$ oder $Nein = Ueberstimmbar$. Der **Vermittlungsausschuss** uebersetzt Konflikt in Kompromiss mit $Vorschlag = Mitte$. **Freies Mandat** und **Demokratietheorie** liefern den Massstab $Legitim = Verfahren + Teilhabe$. Wer in der Klausur urteilt, muss deshalb immer fragen: Hemmt der Bundesrat Gestaltung oder schuetzt er Vielfalt?
 
 Klausur-Satz: `Art. 38 GG garantiert das freie Mandat: Abgeordnete sind an Auftraege nicht gebunden, sondern nur ihrem Gewissen unterworfen.`
 
@@ -41,12 +63,23 @@ Klausur-Satz: `Art. 38 GG garantiert das freie Mandat: Abgeordnete sind an Auftr
 
 TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
-Das Kernmodell dieser Lektion verbindet Begriff, Verfahren und Urteil. Zuerst wird der Fall rekonstruiert, dann werden die Werte $x_1$ und $x_2$ bestimmt und schliesslich wird die Differenz $d = x_2 - x_1$ am Kriterium gemessen. Leitformel des Moduls: $K = \text{Kriterium} \to \text{Urteil}$. Pruefgroessen werden als $x_1, x_2$ verglichen; die Differenz $d = x_2 - x_1$ stuettet das Urteil.
+### Hook / Phaenomen
+
+Kommunen rufen nach Geld, Laender sagen Nein, Berlin ruft Blockade. Der Vermittlungsausschuss wird zur Nachtschicht der Demokratie. Ist das Verhandeln oder Verschleppen? Genau hier hilft ein klares Verfahrensmodell.
+
+### Fachbegriff & Definition
+
+Das **Zwei-Kammer-Modell** prueft Gesetze in vier Stationen: Lesungen, Bundesrat, Vermittlung und Ausfertigung. **Zustimmungsgesetze** brauchen mit $Ja = zwingend$ den Bundesrat, **Einspruchsgesetze** kennen mit $Ueberstimmung = absoluteMehrheit$ einen Ausweg. Die Formel lautet $Inkraft \iff Bundestag + Bundesratstyp + Praesident$. Der Unterschied liegt im Vetorecht.
+
+### Wirkungsgefuege / Modell
+
+Denke in Kausalkette: **Weg, Weiche, Wertung**. Erstens laeuft der Weg $Entwurf \to Lesung \to Ausschuss \to Beschluss$ mit $Zeit = Wochen$. Zweitens stellt die Weiche $Finanzberuehrung = Ja$ auf Zustimmung, sonst auf Einspruch mit $Folge = BlockadeOderDebatte$. Drittens wertet das Kriterium **Funktionsfaehigkeit**: Zustimmung schuetzt Laender mit $Kosten = Tempo$, Einspruch sichert Gestalten mit $Risiko = Zentralismus$. Genau diese Abwaegung verlangt in der Klausur ein **kriteriengeleitetes Urteil**, keine Parole.
 
 ```diagram
-  Fall -> Rekonstruktion [x1, x2]
-  Rekonstruktion -> Kriterium -> Differenz d = x2 - x1
-  Differenz -> Urteil (AFB III)
+  Entwurf [Regierung + Bundestag + Bundesrat]
+  Entwurf -> Bundestag Lesung + Ausschuss + Beschluss
+  Beschluss -> Bundesrat Zustimmung oder Einspruch
+  Bundesrat -> Vermittlung -> Praesident -> Gesetz
 ```
 
 Klausur-Satz: `Beim Zustimmungsgesetz ist die Zustimmung des Bundesrates zwingend, waehrend der Einspruch gegen ein Einspruchsgesetz vom Bundestag ueberstimmt werden kann.`
