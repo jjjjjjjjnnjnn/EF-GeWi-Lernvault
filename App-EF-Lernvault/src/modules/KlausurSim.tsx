@@ -116,6 +116,31 @@ function defaultSelections(exam: ComposedExam): ExamOptionSelections {
   );
 }
 
+export function getNotenpunkteFromPercentage(percentage: number): {
+  np: number;
+  noteDE: string;
+  noteZH: string;
+  bestanden: boolean;
+} {
+  const p = Math.max(0, Math.min(100, Math.round(percentage)));
+  if (p >= 95) return { np: 15, noteDE: "1+ (sehr gut)", noteZH: "1+ (极优)", bestanden: true };
+  if (p >= 90) return { np: 14, noteDE: "1 (sehr gut)", noteZH: "1 (优)", bestanden: true };
+  if (p >= 85) return { np: 13, noteDE: "1- (sehr gut)", noteZH: "1- (优-)", bestanden: true };
+  if (p >= 80) return { np: 12, noteDE: "2+ (gut)", noteZH: "2+ (良+)", bestanden: true };
+  if (p >= 75) return { np: 11, noteDE: "2 (gut)", noteZH: "2 (良)", bestanden: true };
+  if (p >= 70) return { np: 10, noteDE: "2- (gut)", noteZH: "2- (良-)", bestanden: true };
+  if (p >= 65) return { np: 9, noteDE: "3+ (befriedigend)", noteZH: "3+ (中+)", bestanden: true };
+  if (p >= 60) return { np: 8, noteDE: "3 (befriedigend)", noteZH: "3 (中)", bestanden: true };
+  if (p >= 55) return { np: 7, noteDE: "3- (befriedigend)", noteZH: "3- (中-)", bestanden: true };
+  if (p >= 50) return { np: 6, noteDE: "4+ (ausreichend)", noteZH: "4+ (及格+)", bestanden: true };
+  if (p >= 45) return { np: 5, noteDE: "4 (ausreichend)", noteZH: "4 (及格)", bestanden: true };
+  if (p >= 40) return { np: 4, noteDE: "4- (ausreichend)", noteZH: "4- (及格-)", bestanden: true };
+  if (p >= 33) return { np: 3, noteDE: "5+ (mangelhaft)", noteZH: "5+ (不及格+)", bestanden: false };
+  if (p >= 27) return { np: 2, noteDE: "5 (mangelhaft)", noteZH: "5 (不及格)", bestanden: false };
+  if (p >= 20) return { np: 1, noteDE: "5- (mangelhaft)", noteZH: "5- (不及格-)", bestanden: false };
+  return { np: 0, noteDE: "6 (ungenügend)", noteZH: "6 (极差)", bestanden: false };
+}
+
 export const KlausurSim: React.FC<KlausurSimProps> = ({
   notes,
   currentFach,
@@ -144,6 +169,7 @@ export const KlausurSim: React.FC<KlausurSimProps> = ({
   const [deadline, setDeadline] = useState<number | null>(null);
   const [timerExpired, setTimerExpired] = useState(false);
   const [showRadar, setShowRadar] = useState(false);
+  const [isFocusMode, setIsFocusMode] = useState(false);
   const [radarVersion, setRadarVersion] = useState(0);
   const [masterySaved, setMasterySaved] = useState(false);
   const [copiedPatch, setCopiedPatch] = useState(false);
@@ -382,18 +408,49 @@ export const KlausurSim: React.FC<KlausurSimProps> = ({
 
   return (
     <div className="max-w-6xl mx-auto p-2 font-sans space-y-4" style={pageStyle}>
-      <section className="p-4 space-y-4" style={panelStyle}>
-        <div className="flex flex-wrap items-start justify-between gap-3">
-          <div>
-            <h1 className="font-serif text-xl font-semibold">Vollsimulationsprüfung</h1>
-            <p className="text-xs mt-1" style={mutedStyle}>
-              Selbst zusammengestellte Übungsaufgaben aus {subjectNotes.length} Lernnotizen. Die ausgewiesenen Indikatoren bleiben für diese Übung fix.
-            </p>
+      {isFocusMode ? (
+        <div className="flex flex-wrap items-center justify-between gap-3 p-3 text-xs border border-[var(--line)] rounded-[var(--radius)] bg-[var(--paper-subtle)]">
+          <div className="flex items-center gap-2">
+            <span className="font-mono text-[var(--accent)] font-semibold uppercase tracking-wider">
+              Fokus-Modus aktiv
+            </span>
+            <span className="text-[var(--gray)]">·</span>
+            <span className="font-serif text-[var(--ink)] font-medium">
+              {subject} ({courseType})
+            </span>
           </div>
-          <button type="button" style={buttonStyle} onClick={() => setShowRadar((value) => !value)}>
-            {showRadar ? "Kompetenz-Radar ausblenden" : "Kompetenz-Radar anzeigen"}
+          <button
+            type="button"
+            style={buttonStyle}
+            onClick={() => setIsFocusMode(false)}
+            className="text-xs px-2.5 py-1 font-mono"
+          >
+            Fokus-Modus beenden
           </button>
         </div>
+      ) : (
+        <section className="p-4 space-y-4" style={panelStyle}>
+          <div className="flex flex-wrap items-start justify-between gap-3">
+            <div>
+              <h1 className="font-serif text-xl font-semibold">Vollsimulationsprüfung</h1>
+              <p className="text-xs mt-1" style={mutedStyle}>
+                Selbst zusammengestellte Übungsaufgaben aus {subjectNotes.length} Lernnotizen. Die ausgewiesenen Indikatoren bleiben für diese Übung fix.
+              </p>
+            </div>
+            <div className="flex items-center gap-2">
+              <button
+                type="button"
+                style={buttonStyle}
+                onClick={() => setIsFocusMode(true)}
+                className="text-xs"
+              >
+                Fokus-Modus (Vollbild)
+              </button>
+              <button type="button" style={buttonStyle} onClick={() => setShowRadar((value) => !value)}>
+                {showRadar ? "Kompetenz-Radar ausblenden" : "Kompetenz-Radar anzeigen"}
+              </button>
+            </div>
+          </div>
 
         <div className="grid grid-cols-1 md:grid-cols-4 gap-3">
           <label className="text-xs space-y-1">
@@ -477,6 +534,7 @@ export const KlausurSim: React.FC<KlausurSimProps> = ({
           </div>
         </div>
       </section>
+      )}
 
       {showRadar && (
         <MasteryRadar key={`${subject}-${radarVersion}`} fach={subject} />
@@ -697,17 +755,40 @@ export const KlausurSim: React.FC<KlausurSimProps> = ({
 
           {gradingResult && (
             <section className="p-4 space-y-3" style={panelStyle} aria-live="polite">
-              <div className="flex flex-wrap items-center justify-between gap-2">
+              <div className="flex flex-wrap items-center justify-between gap-3 border-b border-[var(--line)] pb-3">
                 <div>
                   <h2 className="font-serif text-lg font-semibold">Lokale Übungsauswertung</h2>
                   <p className="text-xs mt-1" style={mutedStyle}>
                     {gradingResult.totalPoints} / {gradingResult.maxTotalPoints} ganze Punkte ({gradingResult.percentage} %).
                   </p>
                 </div>
-                <span className="text-xs" style={mutedStyle}>{exam.pointBasisDE}</span>
+                {(() => {
+                  const npInfo = getNotenpunkteFromPercentage(gradingResult.percentage);
+                  return (
+                    <div className="flex items-center gap-3">
+                      <div className="text-right">
+                        <div className="font-mono text-sm font-semibold text-[var(--accent)]">
+                          {npInfo.np} / 15 NP
+                        </div>
+                        <div className="text-xs text-[var(--gray)]">
+                          Note {npInfo.noteDE} · {npInfo.noteZH}
+                        </div>
+                      </div>
+                      <span
+                        className={`px-2 py-0.5 text-xs font-mono rounded-[var(--radius)] border ${
+                          npInfo.bestanden
+                            ? "border-[var(--line)] text-[var(--ink)] bg-[var(--surface)] font-medium"
+                            : "border-[var(--line)] text-[var(--gray)] bg-[var(--paper-subtle)]"
+                        }`}
+                      >
+                        {npInfo.bestanden ? "Bestanden" : "Defizit"}
+                      </span>
+                    </div>
+                  );
+                })()}
               </div>
               <p className="text-xs" style={mutedStyle}>
-                Diese lokale Heuristik ist keine amtliche Korrektur. Bewertet werden ausschließlich die festen ganzen Punkte der erzeugten Übungsaufgabe.
+                Diese lokale Heuristik ist keine amtliche Korrektur. Bewertet werden ausschließlich die festen ganzen Punkte der erzeugten Übungsaufgabe nach NRW Oberstufen-Punkteschlüssel (APO-GOSt).
               </p>
               <div className="flex flex-wrap gap-2">
                 <button type="button" style={buttonStyle} onClick={handleCopyPatch}>

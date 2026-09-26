@@ -119,6 +119,53 @@ export const allVaultNotes: GeneratedNote[] = [
     "path": "01_Deutsch/Klausur-Training/Deutsch-IQB-Training.md"
   },
   {
+    "id": "deutsch-mockklausur-nrw-deutsch",
+    "fach": "Deutsch",
+    "thema": "Mockklausur: Sachtextanalyse — Empfehlungsalgorithmus, Filterblase und öffentliche Meinungsbildung",
+    "zh": "Mockklausur: Sachtextanalyse — Empfehlungsalgorithmus, Filterblase und öffentliche Meinungsbildung",
+    "operatoren": [
+      "zusammenfassen",
+      "zuordnen",
+      "benennen",
+      "analysieren",
+      "untersuchen",
+      "erläutern",
+      "erörtern",
+      "Stellung nehmen"
+    ],
+    "klausurrelevant": true,
+    "bodyDE": [
+      "Thema: Mockklausur: Sachtextanalyse — Empfehlungsalgorithmus, Filterblase und öffentliche Meinungsbildung (Deutsch). Exam-relevante Wissensnotiz."
+    ],
+    "bodyZH": [
+      "Deutsch 核心考纲笔记：Mockklausur: Sachtextanalyse — Empfehlungsalgorithmus, Filterblase und öffentliche Meinungsbildung。"
+    ],
+    "path": "01_Deutsch/Klausur-Training/Mockklausur-NRW-Deutsch.md"
+  },
+  {
+    "id": "deutsch-muendliche-qa-kette-deutsch",
+    "fach": "Deutsch",
+    "thema": "Filterblase & digitale Öffentlichkeit — mündliche Abiturprüfung",
+    "zh": "Filterblase & digitale Öffentlichkeit — mündliche Abiturprüfung",
+    "operatoren": [
+      "beschreiben",
+      "analysieren",
+      "erläutern",
+      "in Beziehung setzen",
+      "beurteilen",
+      "Stellung nehmen"
+    ],
+    "klausurrelevant": true,
+    "bodyDE": [
+      "Bewertet werden nicht nur die fachliche Substanz, sondern ebenso die Fähigkeit, diese im Gespräch zu entfalten.",
+      "Notizen sind ausdrücklich erlaubt; entscheidend ist, dass der Vortrag frei formuliert bleibt."
+    ],
+    "bodyZH": [
+      "Deutsch 核心考纲笔记：Filterblase & digitale Öffentlichkeit — mündliche Abiturprüfung。"
+    ],
+    "path": "01_Deutsch/Klausur-Training/Muendliche-QA-Kette-Deutsch.md"
+  },
+  {
     "id": "deutsch-aufgabenart-iii-eroerterung",
     "fach": "Deutsch",
     "thema": "Aufgabenart III — Erörterung (IIIa / IIIb)",
@@ -476,6 +523,28 @@ export const allVaultNotes: GeneratedNote[] = [
     "path": "01_Deutsch/Texte-Analyse/Medientheorie-LK.md"
   },
   {
+    "id": "deutsch-primaertext-analyse-sprachkritik",
+    "fach": "Deutsch",
+    "thema": "Sachtextanalyse Primaertext: Sprachkritik — Anglizismen und Identitaet",
+    "zh": "Sachtextanalyse Primaertext: Sprachkritik — Anglizismen und Identitaet",
+    "operatoren": [
+      "analysieren",
+      "untersuchen",
+      "erläutern",
+      "deuten",
+      "erörtern",
+      "Stellung nehmen"
+    ],
+    "klausurrelevant": true,
+    "bodyDE": [
+      "Thema: Sachtextanalyse Primaertext: Sprachkritik — Anglizismen und Identitaet (Deutsch). Exam-relevante Wissensnotiz."
+    ],
+    "bodyZH": [
+      "Deutsch 核心考纲笔记：Sachtextanalyse Primaertext: Sprachkritik — Anglizismen und Identitaet。"
+    ],
+    "path": "01_Deutsch/Texte-Analyse/Primaertext-Analyse-Sprachkritik.md"
+  },
+  {
     "id": "deutsch-rhetorik-mediation-vernetzung",
     "fach": "Deutsch",
     "thema": "Rhetorik-Mediation-Vernetzung: Argumentation und Sprachmittlung im deutsch-englischen Vergleich",
@@ -722,6 +791,53 @@ export const allVaultNotes: GeneratedNote[] = [
       "Englisch 核心考纲笔记：IQB Writing Training: Teil-A-Dreischritt am Mini-Text Nigeria/Identitaet。"
     ],
     "path": "02_Englisch/Klausur-Training/Englisch-IQB-Writing-Training.md"
+  },
+  {
+    "id": "englisch-mockklausur-nrw-englisch",
+    "fach": "Englisch",
+    "thema": "Mockklausur NRW Englisch: AI in Education",
+    "zh": "Mockklausur NRW Englisch: AI in Education",
+    "operatoren": [
+      "outline",
+      "sum up",
+      "identify",
+      "analyse",
+      "examine",
+      "compare",
+      "evaluate"
+    ],
+    "klausurrelevant": true,
+    "bodyDE": [
+      "Thema: Mockklausur NRW Englisch: AI in Education (Englisch). Exam-relevante Wissensnotiz."
+    ],
+    "bodyZH": [
+      "材料的\"可考性\"在三点——① 段 [1] 末句就是可定位的 **These**。",
+      "② [2]–[5] 给出**四条论据**（禁令无效 / 个性化 / 评估形式失效 / 公平双刃）。",
+      "③ [5] 是**让步段**（Konzession），[7] 是**道德化收束**（Ringkomposition 回到 arms race → unarmed）。"
+    ],
+    "path": "02_Englisch/Klausur-Training/Mockklausur-NRW-Englisch.md"
+  },
+  {
+    "id": "englisch-muendliche-qa-kette-englisch",
+    "fach": "Englisch",
+    "thema": "Mündliche Abiturprüfung: Social Media, Mental Health and the Attention Economy",
+    "zh": "Mündliche Abiturprüfung: Social Media, Mental Health and the Attention Economy",
+    "operatoren": [
+      "present",
+      "outline",
+      "analyse",
+      "discuss",
+      "evaluate",
+      "comment"
+    ],
+    "klausurrelevant": true,
+    "bodyDE": [
+      "Thema: Mündliche Abiturprüfung: Social Media, Mental Health and the Attention Economy (Englisch). Exam-relevante Wissensnotiz."
+    ],
+    "bodyZH": [
+      "Englisch 核心考纲笔记：Mündliche Abiturprüfung: Social Media, Mental Health and the Attention Economy。"
+    ],
+    "path": "02_Englisch/Klausur-Training/Muendliche-QA-Kette-Englisch.md"
   },
   {
     "id": "englisch-abitur-zeitbudget-und-auswahlstrategie-en",
@@ -1142,6 +1258,30 @@ export const allVaultNotes: GeneratedNote[] = [
       "另有一条**三域共用**条目：**`Politik, Kultur, Gesellschaft – zwischen Wandel und Tradition`** [已验证]。"
     ],
     "path": "02_Englisch/Texte-Analyse/Orientierungswissen-USA.md"
+  },
+  {
+    "id": "englisch-primaertext-analyse-attention-economy-en",
+    "fach": "Englisch",
+    "thema": "The Attention Economy",
+    "zh": "The Attention Economy",
+    "operatoren": [
+      "analyse",
+      "explain",
+      "examine",
+      "comment",
+      "assess",
+      "evaluate",
+      "discuss"
+    ],
+    "klausurrelevant": true,
+    "bodyDE": [
+      "Thema: The Attention Economy (Englisch). Exam-relevante Wissensnotiz."
+    ],
+    "bodyZH": [
+      "六段是标准 op-ed 骨架：**钩子 → 稀缺性 → 自主性 → 设计 → 公共后果 → 让步+出路**。",
+      "Kernaussage 一列给出**原文英语原句**（可直接引用）+ 德语改写（Summary 用得着），因为本材料正文为英语。"
+    ],
+    "path": "02_Englisch/Texte-Analyse/Primaertext-Analyse-Attention-Economy-EN.md"
   },
   {
     "id": "englisch-register-und-formulierungsbausteine-en",
@@ -2063,6 +2203,56 @@ export const allVaultNotes: GeneratedNote[] = [
     "path": "03_Mathe/Klausur-Training/Mathe-EF-Klausurtraining-Analysis.md"
   },
   {
+    "id": "mathe-mockklausur-nrw-mathe",
+    "fach": "Mathe",
+    "thema": "Mockklausur: Waermepumpe — ganzrationale Leistungskurve und Integral",
+    "zh": "Mockklausur: Waermepumpe — ganzrationale Leistungskurve und Integral",
+    "operatoren": [
+      "beschreiben",
+      "darstellen",
+      "untersuchen",
+      "anwenden",
+      "überprüfen",
+      "in Beziehung setzen",
+      "beurteilen",
+      "bewerten"
+    ],
+    "klausurrelevant": true,
+    "bodyDE": [
+      "Die Leistungsaufnahme steigt von 0:00 Uhr bis etwa 6:00 Uhr von 1,20 kW auf ihren höchsten Wert an, fällt dann bis etwa 18:00 Uhr auf ihren niedrigsten Wert ab und steigt anschließend bis 24:00 Uhr wieder an.",
+      "Der Wechsel in den Wärmepumpenstromtarif lohnt sich unter den gegebenen Annahmen **nicht**, da die jährliche Ersparnis von 47,79 € unter den zusätzlichen Zählerkosten von 60,00 € liegt und das Modell selbst an der Taggrenze — also genau im Nachtfenster — mit $P(0) \\ne P(24)$ seine größte Unsicherheit aufweist."
+    ],
+    "bodyZH": [
+      "Mathe 核心考纲笔记：Mockklausur: Waermepumpe — ganzrationale Leistungskurve und Integral。"
+    ],
+    "path": "03_Mathe/Klausur-Training/Mockklausur-NRW-Mathe.md"
+  },
+  {
+    "id": "mathe-varianten-training-mathe",
+    "fach": "Mathe",
+    "thema": "Varianten-Training: Solaranlage — Kosten-Nutzen-Optimierung",
+    "zh": "Varianten-Training: Solaranlage — Kosten-Nutzen-Optimierung",
+    "operatoren": [
+      "beschreiben",
+      "darstellen",
+      "untersuchen",
+      "anwenden",
+      "überprüfen",
+      "in Beziehung setzen",
+      "beurteilen",
+      "bewerten",
+      "reflektieren"
+    ],
+    "klausurrelevant": true,
+    "bodyDE": [
+      "Thema: Varianten-Training: Solaranlage — Kosten-Nutzen-Optimierung (Mathe). Exam-relevante Wissensnotiz."
+    ],
+    "bodyZH": [
+      "Mathe 核心考纲笔记：Varianten-Training: Solaranlage — Kosten-Nutzen-Optimierung。"
+    ],
+    "path": "03_Mathe/Klausur-Training/Varianten-Training-Mathe.md"
+  },
+  {
     "id": "physik-basiskonzepte-vier-achsen",
     "fach": "Physik",
     "thema": "Basiskonzepte: Vier Achsen (Erhaltung, Superposition, Mathematisieren, Zufall)",
@@ -2826,6 +3016,32 @@ export const allVaultNotes: GeneratedNote[] = [
     "path": "04_Physik/Klausur-Training/CN-Physik-Training.md"
   },
   {
+    "id": "physik-mockklausur-nrw-physik",
+    "fach": "Physik",
+    "thema": "Mockklausur: Windkraftanlage — Kreisbewegung, Leistung und Energieertrag",
+    "zh": "Mockklausur: Windkraftanlage — Kreisbewegung, Leistung und Energieertrag",
+    "operatoren": [
+      "beschreiben",
+      "benennen",
+      "darstellen",
+      "wiedergeben",
+      "untersuchen",
+      "anwenden",
+      "analysieren",
+      "ueberpruefen",
+      "beurteilen",
+      "gestaltend entwerfen"
+    ],
+    "klausurrelevant": true,
+    "bodyDE": [
+      "Thema: Mockklausur: Windkraftanlage — Kreisbewegung, Leistung und Energieertrag (Physik). Exam-relevante Wissensnotiz."
+    ],
+    "bodyZH": [
+      "Physik 核心考纲笔记：Mockklausur: Windkraftanlage — Kreisbewegung, Leistung und Energieertrag。"
+    ],
+    "path": "04_Physik/Klausur-Training/Mockklausur-NRW-Physik.md"
+  },
+  {
     "id": "physik-physik-abitur-aufgabentraining",
     "fach": "Physik",
     "thema": "Abitur-Aufgabentraining 2026",
@@ -2883,6 +3099,28 @@ export const allVaultNotes: GeneratedNote[] = [
       "Physik 核心考纲笔记：Physik Operatoren Check。"
     ],
     "path": "04_Physik/Klausur-Training/Physik-Operatoren-Check.md"
+  },
+  {
+    "id": "physik-varianten-training-physik",
+    "fach": "Physik",
+    "thema": "E-Bike-Generator: Induktion, Leistung und Energieertrag",
+    "zh": "E-Bike-Generator: Induktion, Leistung und Energieertrag",
+    "operatoren": [
+      "beschreiben",
+      "berechnen",
+      "herleiten",
+      "erläutern",
+      "auswerten",
+      "bewerten"
+    ],
+    "klausurrelevant": true,
+    "bodyDE": [
+      "Thema: E-Bike-Generator: Induktion, Leistung und Energieertrag (Physik). Exam-relevante Wissensnotiz."
+    ],
+    "bodyZH": [
+      "Physik 核心考纲笔记：E-Bike-Generator: Induktion, Leistung und Energieertrag。"
+    ],
+    "path": "04_Physik/Klausur-Training/Varianten-Training-Physik.md"
   },
   {
     "id": "chemie-basiskonzepte-drei-achsen",
@@ -3625,6 +3863,51 @@ export const allVaultNotes: GeneratedNote[] = [
       "Chemie 核心考纲笔记：Chemie Operatoren-Check (StanSi ab 2025 + Formeldokument)。"
     ],
     "path": "05_Chemie/Klausur-Training/Chemie-Operatoren-Check.md"
+  },
+  {
+    "id": "chemie-mockklausur-nrw-chemie",
+    "fach": "Chemie",
+    "thema": "Abgaskatalysator — Kinetik, chemisches Gleichgewicht, MWG",
+    "zh": "Abgaskatalysator — Kinetik, chemisches Gleichgewicht, MWG",
+    "operatoren": [
+      "beschreiben",
+      "darstellen",
+      "zuordnen",
+      "erklären",
+      "anwenden",
+      "überprüfen",
+      "beurteilen",
+      "Stellung nehmen"
+    ],
+    "klausurrelevant": true,
+    "bodyDE": [
+      "Thema: Abgaskatalysator — Kinetik, chemisches Gleichgewicht, MWG (Chemie). Exam-relevante Wissensnotiz."
+    ],
+    "bodyZH": [
+      "Chemie 核心考纲笔记：Abgaskatalysator — Kinetik, chemisches Gleichgewicht, MWG。"
+    ],
+    "path": "05_Chemie/Klausur-Training/Mockklausur-NRW-Chemie.md"
+  },
+  {
+    "id": "chemie-varianten-training-chemie",
+    "fach": "Chemie",
+    "thema": "Saeure-Base-Titration von Essig",
+    "zh": "Saeure-Base-Titration von Essig",
+    "operatoren": [
+      "aufstellen",
+      "berechnen",
+      "begruenden",
+      "ueberpruefen",
+      "bewerten"
+    ],
+    "klausurrelevant": true,
+    "bodyDE": [
+      "Für die folgenden Berechnungen wird angenommen, dass die Temperatur 25 °C beträgt, die Aktivitäten durch Konzentrationen ersetzt werden dürfen und die Volumina additiv sind."
+    ],
+    "bodyZH": [
+      "Chemie 核心考纲笔记：Saeure-Base-Titration von Essig。"
+    ],
+    "path": "05_Chemie/Klausur-Training/Varianten-Training-Chemie.md"
   },
   {
     "id": "bio-atp-adp-und-redoxreaktionen",
@@ -4674,6 +4957,56 @@ export const allVaultNotes: GeneratedNote[] = [
     "path": "06_Bio/Klausur-Training/CN-Bio-Training.md"
   },
   {
+    "id": "bio-mockklausur-nrw-bio",
+    "fach": "Bio",
+    "thema": "Mockklausur Enzymkinetik — industrielle Amylase",
+    "zh": "Mockklausur Enzymkinetik — industrielle Amylase",
+    "operatoren": [
+      "beschreiben",
+      "benennen",
+      "darstellen",
+      "zusammenfassen",
+      "erklaeren",
+      "analysieren",
+      "anwenden",
+      "vergleichen",
+      "beurteilen",
+      "gestaltend entwerfen"
+    ],
+    "klausurrelevant": true,
+    "bodyDE": [
+      "Enzyme senken als Biokatalysatoren die Aktivierungsenergie einer Reaktion, ohne das Gleichgewicht zu verschieben; sie werden dabei nicht verbraucht, weil das aktive Zentrum nach der Produktfreisetzung aus dem Enzym-Substrat-Komplex wieder frei wird.",
+      "Das Material zeigt, dass das technische Enzym Amylotech NX-7 seine höchste Umsatzrate nur in einem engen Temperatur- und pH-Fenster erreicht, weshalb der Betrieb auf präzise Prozessführung statt auf maximale Hitze setzt; dies wird durch permanente pH-Pufferung, Ca²⁺-Stabilisierung (bzw. Immobilisierung des Enzyms) und eine Fahrweise knapp unterhalb des Optimums umgesetzt.",
+      "Unterhalb des Temperaturoptimums von 60 °C steigt die Umsatzrate nach der RGT-Regel, weil die Stoßrate zunimmt und mehr Moleküle die Aktivierungsenergie überschreiten; oberhalb des Optimums kommt es zur Denaturierung, da die Tertiärstruktur und damit das aktive Zentrum irreversibel zerstört werden, wie der Abfall auf 22 µmol·L⁻¹·s⁻¹ bei 70 °C zeigt."
+    ],
+    "bodyZH": [
+      "Bio 核心考纲笔记：Mockklausur Enzymkinetik — industrielle Amylase。"
+    ],
+    "path": "06_Bio/Klausur-Training/Mockklausur-NRW-Bio.md"
+  },
+  {
+    "id": "bio-varianten-training-bio",
+    "fach": "Bio",
+    "thema": "Populationsdynamik — exponentielles vs. logistisches Wachstum (Modellierung + Varianten)",
+    "zh": "Populationsdynamik — exponentielles vs. logistisches Wachstum (Modellierung + Varianten)",
+    "operatoren": [
+      "beschreiben",
+      "zuordnen",
+      "berechnen",
+      "begruenden",
+      "vergleichen",
+      "beurteilen"
+    ],
+    "klausurrelevant": true,
+    "bodyDE": [
+      "Thema: Populationsdynamik — exponentielles vs. logistisches Wachstum (Modellierung + Varianten) (Bio). Exam-relevante Wissensnotiz."
+    ],
+    "bodyZH": [
+      "Bio 核心考纲笔记：Populationsdynamik — exponentielles vs. logistisches Wachstum (Modellierung + Varianten)。"
+    ],
+    "path": "06_Bio/Klausur-Training/Varianten-Training-Bio.md"
+  },
+  {
     "id": "philosophie-demokratiemodelle",
     "fach": "Philosophie",
     "thema": "Demokratiemodelle (QP)",
@@ -5272,6 +5605,29 @@ export const allVaultNotes: GeneratedNote[] = [
     "path": "07_Philosophie/Wissenschaftliche-Erkenntnistheorie.md"
   },
   {
+    "id": "philosophie-mockklausur-nrw-philosophie",
+    "fach": "Philosophie",
+    "thema": "KI und Verantwortung — Utilitarismus vs. Kant",
+    "zh": "KI und Verantwortung — Utilitarismus vs. Kant",
+    "operatoren": [
+      "zusammenfassen",
+      "benennen",
+      "beschreiben",
+      "analysieren",
+      "vergleichen",
+      "anwenden",
+      "Stellung nehmen"
+    ],
+    "klausurrelevant": true,
+    "bodyDE": [
+      "Thema: KI und Verantwortung — Utilitarismus vs. Kant (Philosophie). Exam-relevante Wissensnotiz."
+    ],
+    "bodyZH": [
+      "Philosophie 核心考纲笔记：KI und Verantwortung — Utilitarismus vs. Kant。"
+    ],
+    "path": "07_Philosophie/Klausur-Training/Mockklausur-NRW-Philosophie.md"
+  },
+  {
     "id": "philosophie-philo-textanalyse-training",
     "fach": "Philosophie",
     "thema": "Textanalyse Training II B / II C",
@@ -5365,6 +5721,27 @@ export const allVaultNotes: GeneratedNote[] = [
     "path": "07_Philosophie/Texte-Analyse/Philosophische-Fragen-Typen.md"
   },
   {
+    "id": "philosophie-primaertext-analyse-willensfreiheit",
+    "fach": "Philosophie",
+    "thema": "Willensfreiheit und Neurowissenschaft",
+    "zh": "Willensfreiheit und Neurowissenschaft",
+    "operatoren": [
+      "rekonstruieren",
+      "analysieren",
+      "vergleichen",
+      "erörtern",
+      "Stellung nehmen"
+    ],
+    "klausurrelevant": true,
+    "bodyDE": [
+      "Thema: Willensfreiheit und Neurowissenschaft (Philosophie). Exam-relevante Wissensnotiz."
+    ],
+    "bodyZH": [
+      "Philosophie 核心考纲笔记：Willensfreiheit und Neurowissenschaft。"
+    ],
+    "path": "07_Philosophie/Texte-Analyse/Primaertext-Analyse-Willensfreiheit.md"
+  },
+  {
     "id": "philosophie-utilitarismus-vs-kant",
     "fach": "Philosophie",
     "thema": "Utilitarismus vs Kant",
@@ -5381,6 +5758,32 @@ export const allVaultNotes: GeneratedNote[] = [
       "Philosophie 核心考纲笔记：EF-Ethik最小可用版。"
     ],
     "path": "07_Philosophie/Texte-Analyse/Utilitarismus-vs-Kant.md"
+  },
+  {
+    "id": "sowi-mockklausur-nrw-sowi",
+    "fach": "SoWi",
+    "thema": "CO2-Preis zwischen Klimaschutz und sozialer Gerechtigkeit",
+    "zh": "CO2-Preis zwischen Klimaschutz und sozialer Gerechtigkeit",
+    "operatoren": [
+      "beschreiben",
+      "darstellen",
+      "analysieren",
+      "erläutern",
+      "vergleichen",
+      "überprüfen",
+      "beurteilen",
+      "gestaltend entwerfen"
+    ],
+    "klausurrelevant": true,
+    "bodyDE": [
+      "Thema: CO2-Preis zwischen Klimaschutz und sozialer Gerechtigkeit (SoWi). Exam-relevante Wissensnotiz."
+    ],
+    "bodyZH": [
+      "这是一篇「报纸首席评论」（Leitkommentar）风格的议论文。",
+      "第一段把碳价定位为**修正市场失灵的引导性税**。",
+      "第二段抛出**分配效应的累退性**。"
+    ],
+    "path": "08_SoWi/Klausur-Training/Mockklausur-NRW-SoWi.md"
   },
   {
     "id": "sowi-sw-gestaltungsaufgabe-training",
@@ -6016,6 +6419,25 @@ export const allVaultNotes: GeneratedNote[] = [
     "path": "08_SoWi/Texte-Analyse/Preismechanismus-und-Marktformen.md"
   },
   {
+    "id": "sowi-primaertext-und-karikatur-3-schritt",
+    "fach": "SoWi",
+    "thema": "Wohnungsmarkt, Mietpreisbremse und Karikatur-3-Schritt",
+    "zh": "Wohnungsmarkt, Mietpreisbremse und Karikatur-3-Schritt",
+    "operatoren": [
+      "beschreiben",
+      "analysieren",
+      "beurteilen"
+    ],
+    "klausurrelevant": true,
+    "bodyDE": [
+      "Thema: Wohnungsmarkt, Mietpreisbremse und Karikatur-3-Schritt (SoWi). Exam-relevante Wissensnotiz."
+    ],
+    "bodyZH": [
+      "SoWi 核心考纲笔记：Wohnungsmarkt, Mietpreisbremse und Karikatur-3-Schritt。"
+    ],
+    "path": "08_SoWi/Texte-Analyse/Primaertext-und-Karikatur-3-Schritt.md"
+  },
+  {
     "id": "sowi-qp-materialien-karikatur-gestaltung",
     "fach": "SoWi",
     "thema": "QP-Materialien: Karikatur und Gestaltungsaufgabe (Materialpool + Buchlandkarte)",
@@ -6472,6 +6894,36 @@ export const allVaultNotes: GeneratedNote[] = [
     "path": "09_Musik-mündl/Klausur-Training/Gestaltung-und-Vertonung.md"
   },
   {
+    "id": "musik-mockklausur-nrw-musik",
+    "fach": "Musik",
+    "thema": "Musikstreaming und Algorithmus: Wie Playlists das Hören steuern",
+    "zh": "Musikstreaming und Algorithmus: Wie Playlists das Hören steuern",
+    "operatoren": [
+      "benennen",
+      "beschreiben",
+      "zusammenfassen",
+      "darstellen",
+      "analysieren",
+      "erläutern",
+      "vergleichen",
+      "in Beziehung setzen",
+      "überprüfen",
+      "erörtern",
+      "Stellung nehmen",
+      "gestaltend entwerfen"
+    ],
+    "klausurrelevant": true,
+    "bodyDE": [
+      "Thema: Musikstreaming und Algorithmus: Wie Playlists das Hören steuern (Musik). Exam-relevante Wissensnotiz."
+    ],
+    "bodyZH": [
+      "这一份是**按 NRW Gymnasiale Oberstufe（EF → Q1 对标）笔试 Aufgabenart I（Analyse/Interpretation）+ II（Erörterung）+ III（Gestaltung）三型合一**设计的完整模拟卷。",
+      "材料是**原创仿写**的德语音乐学/媒体评论文本，配一段**虚构 Hörbeispiel 的参数化描述**（因为版权与实际听力材料限制，用文字参数代替音响，训练\"从参数读出音乐\"的能力）。",
+      "全卷 **100 BE，AFB I+II : AFB III = 80 : 20**，与 NRW 笔试权重一致。"
+    ],
+    "path": "09_Musik-mündl/Klausur-Training/Mockklausur-NRW-Musik.md"
+  },
+  {
     "id": "musik-muendliche-pruefung-training",
     "fach": "Musik",
     "thema": "Mündliche Prüfung: Teil 1 Vortrag (Aufgabenart I/II/III)",
@@ -6506,6 +6958,29 @@ export const allVaultNotes: GeneratedNote[] = [
       "总时长 **20–30 分钟**。"
     ],
     "path": "09_Musik-mündl/Klausur-Training/Muendliche-Pruefung-Training.md"
+  },
+  {
+    "id": "musik-muendliche-qa-kette-musik",
+    "fach": "Musik",
+    "thema": "Musik & Identität in der Jugendkultur",
+    "zh": "Musik & Identität in der Jugendkultur",
+    "operatoren": [
+      "beschreiben",
+      "analysieren",
+      "vergleichen",
+      "erläutern",
+      "einordnen",
+      "beurteilen",
+      "Stellung nehmen"
+    ],
+    "klausurrelevant": true,
+    "bodyDE": [
+      "Thema: Musik & Identität in der Jugendkultur (Musik). Exam-relevante Wissensnotiz."
+    ],
+    "bodyZH": [
+      "Musik 核心考纲笔记：Musik & Identität in der Jugendkultur。"
+    ],
+    "path": "09_Musik-mündl/Klausur-Training/Muendliche-QA-Kette-Musik.md"
   },
   {
     "id": "musik-aesthetische-konzeptionen",
@@ -6901,6 +7376,30 @@ export const allVaultNotes: GeneratedNote[] = [
     "path": "09_Musik-mündl/Texte-Analyse/Wirkungsabsichten-und-Stereotype.md"
   },
   {
+    "id": "sport-mockklausur-nrw-sport",
+    "fach": "Sport",
+    "thema": "Mockklausur Bewegungsmangel - Ausdauertrainingsplan begruenden",
+    "zh": "Mockklausur Bewegungsmangel - Ausdauertrainingsplan begruenden",
+    "operatoren": [
+      "beschreiben",
+      "zuordnen",
+      "darstellen",
+      "analysieren",
+      "erklaeren",
+      "anwenden",
+      "entwerfen",
+      "begruenden"
+    ],
+    "klausurrelevant": true,
+    "bodyDE": [
+      "Thema: Mockklausur Bewegungsmangel - Ausdauertrainingsplan begruenden (Sport). Exam-relevante Wissensnotiz."
+    ],
+    "bodyZH": [
+      "Sport 核心考纲笔记：Mockklausur Bewegungsmangel - Ausdauertrainingsplan begruenden。"
+    ],
+    "path": "10_Sport-mündl/Klausur-Training/Mockklausur-NRW-Sport.md"
+  },
+  {
     "id": "sport-muendliche-pruefung-training",
     "fach": "Sport",
     "thema": "Muendliche Pruefung Training Redemittel und Operatoren",
@@ -6942,6 +7441,33 @@ export const allVaultNotes: GeneratedNote[] = [
       "**Teil 2** = 考试对话（Prüfungsgespräch），讨论更大范围的专业与跨学科关联。"
     ],
     "path": "10_Sport-mündl/Klausur-Training/Muendliche-Pruefung-Training.md"
+  },
+  {
+    "id": "sport-muendliche-qa-kette-sport",
+    "fach": "Sport",
+    "thema": "Muendliche QA-Kette: Bewegungsmangel und Ausdauertraining",
+    "zh": "Muendliche QA-Kette: Bewegungsmangel und Ausdauertraining",
+    "operatoren": [
+      "beschreiben",
+      "erklaeren",
+      "erlaeutern",
+      "anwenden",
+      "auswerten",
+      "begruenden",
+      "entwerfen",
+      "beurteilen",
+      "Stellung nehmen"
+    ],
+    "klausurrelevant": true,
+    "bodyDE": [
+      "Thema: Muendliche QA-Kette: Bewegungsmangel und Ausdauertraining (Sport). Exam-relevante Wissensnotiz."
+    ],
+    "bodyZH": [
+      "本笔记是**体育口试一条链的全程演练包**——从拿到题的 15 分钟准备，到 10 分钟连贯陈述（Teil 1），再到 5–10 分钟 Prüfungsgespräch（Teil 2）被追问时的反套路话术，最后是卡壳时的急救德语。",
+      "主题落在 **IF d · Leistung**（训练计划与负荷调控），载体挂 **BF/SB3 Leichtathletik**（耐力跑）。",
+      "核心考点四件套：**Belastungsnormativa（Intensität / Umfang / Dauer / Dichte）· HFmax 与 HF-Zonen · Superkompensation · Trainingsprinzipien**，最终要落到\"能设计并论证一个训练计划\"（`entwerfen` + `begründen`，AFB III）。"
+    ],
+    "path": "10_Sport-mündl/Klausur-Training/Muendliche-QA-Kette-Sport.md"
   },
   {
     "id": "sport-trainingsplan-erstellen-lk",
