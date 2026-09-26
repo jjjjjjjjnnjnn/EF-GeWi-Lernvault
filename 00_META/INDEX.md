@@ -39,6 +39,16 @@
 - [Lernbaum十科学习树（旧设计层，EF 版）](Lernbaum/00-Designprinzipien.md) — 历史记录（已被 Abi-Baum 取代）
 - **S8 笔记生产** — [施工宪法/波次台账](Lernbaum/00-Notenproduktion-Plan.md) · [**S8 新增笔记索引（224 篇，按学科）**](S8-Noten-Index.md) · 模板：[Wissensnotiz-Template](../Templates/Wissensnotiz-Template.md) · 官方源（本地 `_Downloads/`，不进 git）：[Download-Quellen](Download-Quellen.md)
 - **阻塞项** — [**Blocker-Register（统一台账，唯一真相源）**](Blocker-Register.md) · [**Lehrkraft-Anfragen（可直接转发的德语问询稿）**](Lehrkraft-Anfragen.md)
+- **四套 Abitur 任务包（P1–P4，共 22 份）** — [**Pruefungspakete-Uebersicht（总入口：80:20 BE 口径 + 15 分换算表 + 三轮打法）**](Pruefungspakete-Uebersicht.md)
+
+## 考试包 P1–P4（2026-09-26 入库，共 22 份）
+
+> 十科统一 100 BE · AFB I+II : AFB III = 80 : 20；材料均为原创仿写。总入口：[Pruefungspakete-Uebersicht](Pruefungspakete-Uebersicht.md)
+
+- **P1 全真模拟卷（十科）** — [Deutsch](../01_Deutsch/Klausur-Training/Mockklausur-NRW-Deutsch.md) · [Englisch](../02_Englisch/Klausur-Training/Mockklausur-NRW-Englisch.md) · [Mathe](../03_Mathe/Klausur-Training/Mockklausur-NRW-Mathe.md) · [Physik](../04_Physik/Klausur-Training/Mockklausur-NRW-Physik.md) · [Chemie](../05_Chemie/Klausur-Training/Mockklausur-NRW-Chemie.md) · [Bio](../06_Bio/Klausur-Training/Mockklausur-NRW-Bio.md) · [Philosophie](../07_Philosophie/Klausur-Training/Mockklausur-NRW-Philosophie.md) · [SoWi](../08_SoWi/Klausur-Training/Mockklausur-NRW-SoWi.md) · [Musik](../09_Musik-mündl/Klausur-Training/Mockklausur-NRW-Musik.md) · [Sport](../10_Sport-mündl/Klausur-Training/Mockklausur-NRW-Sport.md)
+- **P2 文科一手材料 + 漫画** — [Deutsch Sprachkritik](../01_Deutsch/Texte-Analyse/Primaertext-Analyse-Sprachkritik.md) · [Englisch Attention Economy](../02_Englisch/Texte-Analyse/Primaertext-Analyse-Attention-Economy-EN.md) · [Philosophie Willensfreiheit](../07_Philosophie/Texte-Analyse/Primaertext-Analyse-Willensfreiheit.md) · [SoWi 材料 + Karikatur-3-Schritt](../08_SoWi/Texte-Analyse/Primaertext-und-Karikatur-3-Schritt.md)
+- **P3 理科变式 + CN 技法** — [Mathe Solaranlage](../03_Mathe/Klausur-Training/Varianten-Training-Mathe.md) · [Physik E-Bike-Generator](../04_Physik/Klausur-Training/Varianten-Training-Physik.md) · [Chemie Essig-Titration](../05_Chemie/Klausur-Training/Varianten-Training-Chemie.md) · [Bio Populationsdynamik](../06_Bio/Klausur-Training/Varianten-Training-Bio.md)
+- **P4 口语问答链** — [Deutsch](../01_Deutsch/Klausur-Training/Muendliche-QA-Kette-Deutsch.md) · [Englisch](../02_Englisch/Klausur-Training/Muendliche-QA-Kette-Englisch.md) · [Musik](../09_Musik-mündl/Klausur-Training/Muendliche-QA-Kette-Musik.md) · [Sport](../10_Sport-mündl/Klausur-Training/Muendliche-QA-Kette-Sport.md)
 
 ## 主题索引（新增一行一条）
 ### SoWi

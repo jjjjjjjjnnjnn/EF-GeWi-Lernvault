@@ -795,3 +795,123 @@ tags: [EF, Meta]
 | Mietpreisbremse | 租金管制 | SoWi | Die Mietpreisbremse wirkt als Höchstpreis. |
 | Schattenmarkt | 黑市 | SoWi | Bei einem Höchstpreis entsteht ein Schattenmarkt. |
 | Fehlallokation | 资源配置失误 | SoWi | Ein fixierter Preis führt zu einer Fehlallokation. |
+| Meinungsbildung | 舆论形成 | Deutsch | Die öffentliche Meinungsbildung setzt Informationsvielfalt voraus. |
+| Empfehlungsalgorithmus | 推荐算法 | Deutsch | Der Empfehlungsalgorithmus sortiert nach Verweildauer, nicht nach Relevanz. |
+| Personalisierung | 个性化推送 | Deutsch | Die Personalisierung verringert die thematische Vielfalt rezipierter Inhalte. |
+| Autoritätsargument | 权威论据 | Deutsch | Das Autoritätsargument stützt die These durch eine Metastudie. |
+| Analogieargument | 类比论据 | Deutsch | Das Analogieargument überträgt den Vorgang auf eine alltägliche Erfahrung. |
+| AI literacy | KI 素养（识别、质疑、标注机器输出的能力） | Englisch | Critical AI literacy means interrogating a source instead of accepting its output. |
+| generative artificial intelligence | 生成式人工智能 | Englisch | Generative artificial intelligence can produce a competent essay in a matter of seconds. |
+| personalised learning | 个性化学习 | Englisch | Personalised learning has long been promised to parents but rarely delivered in practice. |
+| digital divide | 数字鸿沟 | Englisch | Free tutoring software could narrow the digital divide between wealthy and poorer families. |
+| academic integrity | 学术诚信 | Englisch | Detectors punish the innocent and therefore damage academic integrity rather than protect it. |
+| antithesis | 对照/反衬（修辞） | Englisch | The antithesis “teach with these machines … think against them” condenses her whole thesis. |
+| das Lastprofil | 负荷曲线（功率随时间变化曲线） | Mathe | Das Lastprofil wird für $0 \le t \le 24$ durch eine ganzrationale Funktion dritten Grades modelliert. |
+| die Leistungszahl (COP) | 性能系数（制热量/耗电量之比） | Mathe | Bei einer Leistungszahl von 3,4 entstehen aus 46,08 kWh Strom etwa 156,7 kWh Wärme. |
+| der Steckbrief | （函数）条件清单 | Mathe | Aus dem Steckbrief mit vier Bedingungen ergibt sich das lineare Gleichungssystem für $a$, $b$, $c$ und $d$. |
+| die Plausibilitätskontrolle | 合理性检验 | Mathe | Die Plausibilitätskontrolle über die Wärmeenergie bestätigt das Integral als Tagesenergieverbrauch. |
+| Wirkungsgrad | 效率 | Physik | Der Wirkungsgrad ist das Verhaeltnis von Nutzleistung zu zugefuehrter Leistung. |
+| Energieertrag | 能量产出/年发电量 | Physik | Der Energieertrag einer Windkraftanlage wird ueber die Volllaststunden abgeschaetzt. |
+| Nennleistung | 额定功率 | Physik | Oberhalb der Nennwindgeschwindigkeit bleibt die Leistung auf der Nennleistung konstant. |
+| Volllaststunden | 满负荷小时数 | Physik | Die Volllaststunden geben an, wie viele Stunden die Anlage rechnerisch mit Nennleistung laufen muesste. |
+| Leistungsbeiwert | 功率系数 (c_p) | Physik | Der Leistungsbeiwert beschreibt den Anteil der Windleistung, den der Rotor nutzen kann. |
+| Zentripetalbeschleunigung | 向心加速度 | Physik | Die Zentripetalbeschleunigung zeigt zum Kreismittelpunkt und betraegt a_Z = v^2/r. |
+| das Prinzip vom kleinsten Zwang | 最小作用力原理（勒夏特列原理） | Chemie | Nach dem Prinzip vom kleinsten Zwang weicht ein exothermes Gleichgewicht einer Temperaturerhöhung nach links aus. |
+| der wirksame Stoß | 有效碰撞 | Chemie | Nur ein wirksamer Stoß mit ausreichender Energie und günstiger Orientierung führt zur Reaktion. |
+| die heterogene Katalyse | 多相催化 | Chemie | Bei der heterogenen Katalyse laufen Adsorption, Oberflächenreaktion und Desorption an der Metalloberfläche ab. |
+| die Anspringtemperatur | 起燃温度（起活温度） | Chemie | Unterhalb der Anspringtemperatur von 280 °C ist der Umsatz des Katalysators gering. |
+| die Adsorption | 吸附 | Chemie | Bei der Adsorption bindet das Reaktandmolekül an ein aktives Zentrum der Oberfläche. |
+| der Washcoat | 载体涂层 | Chemie | Der Washcoat aus Aluminiumoxid vergrößert die wirksame Oberfläche des Wabenkörpers. |
+| Enzym-Substrat-Komplex | 酶-底物复合物 | Bio | Aus Enzym und Substrat entsteht kurzzeitig der Enzym-Substrat-Komplex. |
+| kompetitive Hemmung | 竞争性抑制（可逆） | Bio | Bei der kompetitiven Hemmung besetzt das Produkt das aktive Zentrum und wird durch Substratüberschuss verdrängt. |
+| Temperaturoptimum / pH-Optimum | 最适温度 / 最适 pH | Bio | Die Amylase erreicht ihr Temperaturoptimum bei 60 °C und ihr pH-Optimum bei 6,5. |
+| Umsatzrate | 转化速率（单位时间产物量） | Bio | Die Umsatzrate wird in µmol·L⁻¹·s⁻¹ angegeben und erreicht im Plateau 80 µmol·L⁻¹·s⁻¹. |
+| Sättigung (Enzym) | （酶）饱和 | Bio | Bei Sättigung sind alle aktiven Zentren besetzt, die Umsatzrate bleibt im Plateau konstant. |
+| Nutzenkalkül | 效用计算 | Philosophie | Das Nutzenkalkül saldiert befriedigte Präferenzen, ist aber verteilungsblind. |
+| Zurechnung | （责任）归属 | Philosophie | Ohne institutionell gesicherte Zurechnung entsteht eine Verantwortungslücke. |
+| Zweck an sich selbst | 自在目的 | Philosophie | Kant fordert, jeden Menschen als Zweck an sich selbst anzuerkennen. |
+| Universalisierbarkeit | 可普遍化性 | Philosophie | Die Universalisierbarkeit einer Maxime wird in vier Schritten geprüft. |
+| Lenkungsabgabe | 引导性税（行为调节税） | SoWi | Der CO₂-Preis wirkt als Lenkungsabgabe: Er verteuert fossiles Heizen und setzt einen Anreiz zum Sparen. |
+| Verursacherprinzip | 污染者付费原则 | SoWi | Nach dem Verursacherprinzip soll derjenige zahlen, der die Emissionen verursacht. |
+| Verteilungswirkung | 分配效应 | SoWi | Die Verteilungswirkung des CO₂-Preises ist regressiv, weil die Belastungsquote mit dem Einkommen sinkt. |
+| regressive Wirkung | 累退效应 | SoWi | Eine Abgabe wirkt regressiv, wenn untere Einkommensgruppen prozentual stärker belastet werden. |
+| Internalisierung externer Kosten | 外部成本内部化 | SoWi | Der CO₂-Preis internalisiert externe Kosten, indem er Klimafolgeschäden in den Marktpreis einrechnet. |
+| Klimasozialausgleich (Klimadividende) | 气候社会返还（气候红利） | SoWi | Der Klimasozialausgleich zahlt die Einnahmen aus dem Emissionshandel pro Kopf an alle Bürger zurück. |
+| Verweildauer | 停留时长（平台指标） | Musik | Ein Titel gilt als erfolgreich, wenn er die Verweildauer erhöht. |
+| Kuratierung | 编排/策展（曲单挑选） | Musik | Die Kuratierung einer Playlist legt fest, wo Spannung entsteht und wo sie sich löst. |
+| Dynamikkompression | 动态压缩 | Musik | Durch Dynamikkompression sinkt der Abstand zwischen laut und leise auf etwa 4 LU. |
+| Hörerwartung | 聆听期待 | Musik | Ein konstantes Tempo ohne Abweichung enttäuscht jede Hörerwartung auf einen Höhepunkt. |
+| Streaming-Aestetik | 流媒体美学（为适配平台而形成的风格） | Musik | Kurze Einleitung, hallarmer Gesang und loop-basierte Produktion sind Merkmale einer Streaming-Aestetik. |
+| Bewegungsmangel | 身体活动不足 | Sport | Der Bewegungsmangel gilt als zentrale Ursache für den Rückgang der aeroben Ausdauerleistungsfähigkeit. |
+| aerobe Ausdauerleistungsfähigkeit | 有氧耐力（能力） | Sport | Die aerobe Ausdauerleistungsfähigkeit wird über die VO₂max operationalisiert. |
+| Belastungsnormativa | 负荷参数规范 | Sport | Zu den Belastungsnormativa zählen Häufigkeit, Intensität, Dauer und Umfang. |
+| Belastungsdauer | 负荷时长 | Sport | Die Belastungsdauer eines einzelnen Reizes entscheidet über das beanspruchte Energiesystem. |
+| maximale Herzfrequenz (HFmax) | 最大心率 | Sport | Die maximale Herzfrequenz wird näherungsweise nach der Formel 220 minus Lebensalter berechnet. |
+| Trainingshäufigkeit | 训练频率 | Sport | Die Trainingshäufigkeit bestimmt, ob der nächste Reiz in die Phase der Superkompensation fällt. |
+| Sprachkritik | 语言批评 | Deutsch | Die Sprachkritik prüft, welche soziale Funktion ein Wort übernimmt. |
+| Anglizismus | 英语借词 | Deutsch | Der Anglizismus „Podcast" schließt eine Benennungslücke. |
+| Sprachwandel (ungesteuert) | 语言变迁（无控） | Deutsch | Der ungesteuerte Sprachwandel folgt Kontakt, Prestige und Prägnanz. |
+| Sprachpurismus | 语言纯化主义 | Deutsch | Der Sprachpurismus erklärt Sprache zum Museumsobjekt. |
+| Denglisch | 德英混合语 | Deutsch | Als Denglisch wird die Mischung aus deutschen und englischen Elementen verspottet. |
+| Lehnwort | 借词 | Deutsch | Ein Lehnwort verliert seine Fremdheit, sobald es flektiert wird. |
+| Aufmerksamkeit als Währung | 注意力即货币 | Englisch | In der Aufmerksamkeitsökonomie zahlt der Nutzer nicht mit Geld, sondern mit Aufmerksamkeit. |
+| algorithmische Empfehlung | 算法推荐 | Englisch | Die algorithmische Empfehlung spiegelt Vorlieben nicht nur, sie erzeugt sie. |
+| Entscheidungsarchitektur | 选择架构 | Englisch | Die Entscheidungsarchitektur des Feeds nimmt dem Nutzer die Pause, in der er sich entscheiden könnte. |
+| Empörungsökonomie | 愤怒经济 | Englisch | Die Empörungsökonomie belohnt die zugespitzteste Version jeder Geschichte. |
+| Nudging | 助推（行为引导） | Englisch | Nudging wirkt ohne Verbot, indem es die Umgebung der Entscheidung verändert. |
+| Bildschirmzeit | 屏幕使用时长 | Englisch | Die Bildschirmzeit von 16- bis 24-Jährigen lag in der fiktiven Erhebung bei 4,7 Stunden pro Tag. |
+| Willensfreiheit | 意志自由 | Philosophie | Der Text verteidigt die Willensfreiheit gegen den Determinismus. |
+| Autonomie | 自律／自我立法 | Philosophie | Autonomie heißt bei Kant, dass sich der Wille durch Vernunftgründe bestimmen lässt. |
+| Bereitschaftspotential | 预备电位（脑电） | Philosophie | Das Bereitschaftspotential wurde 380 Millisekunden vor dem Entschluss gemessen. |
+| Daseinsvorsorge | 生存照护/基本公共服务保障 | SoWi | Die Daseinsvorsorge verpflichtet den Staat, bezahlbaren Wohnraum bereitzuhalten. |
+| Gentrifizierung | 士绅化/街区高档化 | SoWi | Gentrifizierung verdrängt einkommensschwache Mieter aus ihrem angestammten Quartier. |
+| Personifikation | 拟人化 | SoWi | Die Personifikation macht den Markt zur handelnden Figur der Karikatur. |
+| Übertreibung | 夸张（放大特征） | SoWi | Die Übertreibung vergrößert die Mietspirale ins Groteske. |
+| Non-Refoulement | 不推回原则 | SoWi | Der Grundsatz des Non-Refoulement verbietet die Zurückweisung in Lebensgefahr. |
+| strukturelle Arbeitslosigkeit | 结构性失业 | SoWi | Strukturelle Arbeitslosigkeit entsteht, wenn Qualifikationen und offene Stellen nicht zusammenpassen. |
+| die Amortisationsdauer | 投资回收期 | Mathe | Bei einem jährlichen Nutzen von 937,44 € und 9.600 € Investition beträgt die Amortisationsdauer rund 10,2 Jahre. |
+| die Eigenverbrauchsquote | 自用电比例 | Mathe | Bei einer Eigenverbrauchsquote von 70 % werden 2.646 kWh des Jahresertrags selbst verbraucht. |
+| die Einspeisevergütung | 上网电价补贴 | Mathe | Für die eingespeisten 1.134 kWh erhält der Betreiber eine Einspeisevergütung von 0,08 €/kWh. |
+| der Ertragsverlauf | 发电量/功率曲线 | Mathe | Der Ertragsverlauf wird im Modellierungszeitraum durch eine ganzrationale Funktion dritten Grades beschrieben. |
+| der Berührpunkt (doppelte Nullstelle) | 切点（二重零点） | Mathe | Wegen P(0) = P'(0) = 0 liegt bei t = 0 ein Berührpunkt des Graphen mit der Zeitachse vor. |
+| der Randwertvergleich | 端点值比较 | Mathe | Der Randwertvergleich mit P(0) = P(12) = 0 bestätigt, dass der Hochpunkt bei t = 8 das globale Maximum ist. |
+| magnetischer Fluss | 磁通量 | Physik | Der magnetische Fluss durch eine Windung betraegt Phi gleich B mal A mal cos theta. |
+| Induktionsspannung | 感应电压 | Physik | Die Induktionsspannung ist proportional zur Aenderung des magnetischen Flusses. |
+| Windungszahl | 线圈匝数 | Physik | Die Windungszahl der Spule bestimmt die Hoehe der induzierten Spannung. |
+| Lorentzkraft | 洛伦兹力 | Physik | Die Lorentzkraft auf die bewegten Ladungstraeger erklaert die Induktionsspannung. |
+| magnetische Flussdichte | 磁感应强度 | Physik | Die magnetische Flussdichte B wird in Tesla angegeben. |
+| Rekuperation | 制动能量回收 | Physik | Bei der Rekuperation wird Bremsenergie in elektrische Energie umgewandelt. |
+| der Indikator | 指示剂 | Chemie | Der Indikator zeigt das Ende der Titration durch einen Farbumschlag an. |
+| der Umschlagsbereich | 变色范围 | Chemie | Der Umschlagsbereich von Phenolphthalein liegt zwischen pH 8,2 und 10,0. |
+| die Titrationskurve | 滴定曲线 | Chemie | Der Wendepunkt der Titrationskurve kennzeichnet den Äquivalenzpunkt. |
+| der Massenanteil w | 质量分数 | Chemie | Der Massenanteil w ist der Quotient aus Stoffmasse und Probenmasse. |
+| die Säurekonstante K_S | 酸常数 | Chemie | Aus der Säurekonstante K_S folgt die Stärke einer schwachen Säure. |
+| die Pufferwirkung | 缓冲作用 | Chemie | Die Pufferwirkung beruht auf dem Nebeneinander von Säure und konjugierter Base. |
+| Wachstumsrate | 增长率 | Bio | Die Wachstumsrate r gibt die relative Zunahme des Bestandes pro Jahr an. |
+| Kapazitätsgrenze | 环境容纳量（K 值） | Bio | Die Kapazitätsgrenze K ist der Bestand, dem sich die Population asymptotisch nähert. |
+| Umweltwiderstand | 环境阻力 | Bio | Der Umweltwiderstand bremst das Wachstum, sobald die Bestandsdichte steigt. |
+| Wachstumsgeschwindigkeit | 增长速率 | Bio | Die Wachstumsgeschwindigkeit dN/dt ist bei N gleich K/2 maximal. |
+| Gleichgewichtsbestand | 平衡种群量 | Bio | Unter Praedation stellt sich ein niedrigerer Gleichgewichtsbestand ein. |
+| Geltungsgrenze | 模型适用边界 | Bio | Die Geltungsgrenze des Modells liegt in der Annahme einer konstanten Kapazitaetsgrenze. |
+| Empfehlungssystem | 推荐系统 | Deutsch | Empfehlungssysteme optimieren nicht auf Wahrheit, sondern auf Verweildauer. |
+| Rückkopplungseffekt | 反馈回路效应 | Deutsch | Der Rückkopplungseffekt entsteht, weil jede Auswahl die nächste Auswahl verändert. |
+| Informationsrepertoire | 信息来源组合 | Deutsch | Das Informationsrepertoire beschreibt, wie viele und welche Quellen jemand tatsächlich nutzt. |
+| Bestätigungsfehler | 确认偏误 | Deutsch | Der Bestätigungsfehler bezeichnet die Neigung, widersprechende Informationen zu meiden. |
+| Medienmündigkeit | 媒介素养／媒介自主 | Deutsch | Medienmündigkeit heißt zu bemerken, dass der eigene Feed eine Auswahl ist. |
+| Englisch (dt. Entsprechung) | Chinesisch | Fach | Beispielsatz |
+| attention economy (Aufmerksamkeitsökonomie) | 注意力经济 | Englisch | *"In the attention economy, attention itself is the commodity that is being sold."* |
+| variable reward (variable Belohnung) | 可变奖励／间歇强化 | Englisch | *"Variable reward is why the feed feels like a slot machine."* |
+| displacement hypothesis (Verdrängungshypothese) | 置换假说 | Englisch | *"The displacement hypothesis says scrolling displaces sleep, movement and real conversation."* |
+| reverse causality (umgekehrte Kausalität) | 反向因果 | Englisch | *"Reverse causality is plausible: low mood may drive use, not the other way round."* |
+| algorithmic transparency (algorithmische Transparenz) | 算法透明 | Englisch | *"Transparency would at least let us argue publicly about the goal function."* |
+| digital literacy (digitale Medienkompetenz) | 数字素养 | Englisch | *"Media literacy means naming the mechanism that is working on you."* |
+| Distinktion | 区隔／区分 | Musik | Durch Distinktion grenzt sich die Szene hörbar von anderen ab. |
+| Szene-Zugehörigkeit | 圈层归属 | Musik | Die Szene-Zugehörigkeit zeigt sich zuerst an Klangfarbe und Instrumentation. |
+| Hörbiografie | 聆听传记 | Musik | Meine Hörbiografie ist eine Kette von Entscheidungen, keine Zufallssumme. |
+| Refrain-Einsatz | 副歌进入点 | Musik | Der Refrain-Einsatz liegt bei 0:22, also vor der Skip-Marke von 34 Sekunden. |
+| Loop-Schichtung | 循环分层 | Musik | Die Loop-Schichtung ersetzt den Entwicklungsbogen durch das Aufbauen von Spuren. |
+| HFmax (maximale Herzfrequenz) | 最大心率 | Sport | Die HFmax lässt sich mit 220 minus Lebensalter abschätzen, streut aber individuell. |
+| aerobe Schwelle | 有氧阈 | Sport | Unterhalb der aeroben Schwelle bleibt die Energiebereitstellung überwiegend aerob. |
+| Regeneration | 恢复 | Sport | Die Anpassung entsteht nicht während der Belastung, sondern in der Regeneration. |
+| Mikrozyklus | 小周期 | Sport | Der Mikrozyklus ordnet Belastung und Erholung innerhalb einer Woche. |
+| Trainingssteuerung | 训练调控 | Sport | Trainingssteuerung bedeutet, Intensität und Umfang gegeneinander auszutarieren. |

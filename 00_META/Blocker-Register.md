@@ -189,6 +189,29 @@ tags: [EF, Meta, Blocker]
 
 ---
 
+## G. 四套 Abitur 任务包（P1–P4）遗留 ⏳（2026-09-26）
+
+> 全部 22 份文件已入库且正文内已按考纲常规分支展开（**不停摆**）；以下为需「人」给口径才能定稿的项。
+> 总入口：[`Pruefungspakete-Uebersicht.md`](Pruefungspakete-Uebersicht.md) §9。
+
+| # | 项 | 阻断范围 | 脱敏状态 | 答案到达后的动作 |
+|---|---|---|---|---|
+| G1 | 各科 Klausur 实际时长（90 / 120 / 135 min） | P1 十卷 §1 Prüfungsrahmen | 无个人信息 | 改 §1 表首行 + 按 §7 压缩/扩容时间表 |
+| G2 | Prozent-Punkte-Raster（校际差异，15 Punkte 起点 90 % 或 95 %） | P1 十卷 §5 | 无 | 替换换算表首档，其余行按等差顺延 |
+| G3 | 口试学科范围（现按 Deutsch/Englisch/Musik/Sport 展开） | P4 四份 | 无 | 若改 Philosophie/SoWi，六节结构整体迁移，替换主题与材料 |
+| G4 | 口试评分维度权重（现按 40/25/20/15 假设） | P4 四份 §1 | 无 | 改 §1 权重表并同步 §6 Selbstcheck 条目 |
+| G5 | Mathe/Physik/Chemie 的 Integral/Amortisation 是否属本班 EF 进度 | P1 理科 4 卷 + P3 理科 4 份 | 无 | 已内置「EF 先行子题」分支，按需删除 Q1 子题并重算 BE |
+| G6 | Teil B（Englisch）是 Sprachmittlung 还是 Hörverstehen | P1 Englisch、P2 Englisch | 无 | 按 A 类问询结果替换 §3 任务链（两份均预留两套写法） |
+| G7 | 口试是否允许使用词典 / 材料是否含视听材料 | P4 四份 §1 | 无 | 改 §1 Hilfsmittel 行；视听材料则准备时间 +10 min |
+
+### G.1 已就绪、不依赖老师的部分（可立即使用）
+
+- 十科模拟卷（题干 + EHZ 踩分点 + Musterlösung + 时间策略）**可直接计时训练**。
+- P2 修辞剖析表、P3 的 CN vs DE 对照表与失分清单、P4 的急救词库与追问话术，均为**口径无关**内容，可立即背用。
+
+---
+
 ## 变更记录
 
 - 2026-09-25：创建。汇总 A（老师问询 15 项）· B（账号权限 6 项）· C（真人验收 3 项）· D（App 工程债 7 项）；本轮处理 A/B，C/D 暂缓（用户指示）。
+- 2026-09-26：新增 §G（四套任务包 P1–P4 遗留 ⏳ 7 项 + 已就绪部分）；对应产出 22 份，见 [`Pruefungspakete-Uebersicht.md`](Pruefungspakete-Uebersicht.md)。
