@@ -31,35 +31,44 @@ tags: [EF, Meta]
 1. **Frontmatter 格式**：必须为标准 YAML，包含 fach, thema, level: 1, ziel: Klausur, xp: 100, operatoren: [...], klausurrelevant: true, datum: 2026-09-26, tags: [EF, <Fach>, ...], version: Enterprise-v3。
 2. **文件名命名法则**：`<Fach>-<Thema-Kebab-Case>-L1.md`（如 `Physik-Kinematik-Beschleunigte-Bewegung-L1.md`），**严禁变音符号与空格**（用 ae/oe/ue 代替 ä/ö/ü）。
 3. **语言排版铁律**：中文深度认知理解在上，德语考场高分学术表达（Klausur-Satz）在下。术语必须标注中德双语。严禁虚构原题原卷。
-4. **企业实训级 6 步教学闭环（必须完整包含以下 6 个步骤且标题固定）**：
+4. **数学与科学公式手写排版规范 (KaTeX LaTeX Strictness)**：
+   - 所有函数、方程、物理量与化学式**必须使用规范的 LaTeX 语法**（行内 `$f'(x) = \dots$`，独立行 `$$...$$`）；
+   - 严禁输出无样式的纯文本行内表达式（如 `f(x) = 4x^3 - 5x^2 + 7x - 2` 必须写为 `$f(x) = 4x^3 - 5x^2 + 7x - 2$`）；
+   - 重点名词使用粗体 `**概念**`，系统将自动渲染为带墨色下划线与高亮效果的印刷体，禁止裸露 Markdown 标记。
+5. **多模态手写草稿与作答适配 (Photo & OCR Ready)**：
+   - 题干应支持学生在纸上演算并拍照上传或直接在交互台上操作，设置明确的踩分台阶：`[Schritt 1: Ansatz / 建立模型]`, `[Schritt 2: Rechnung / 演算求解]`, `[Schritt 3: Klausur-Satz / 德语结论]`，以便多模态视觉模型进行高精度逐步批阅。
+6. **企业实训级 6 步教学闭环（必须完整包含以下 6 个步骤且标题固定）**：
 
 #### ## Schritt 1 — entdecken
-- **定位**：现实商业/科学/考场真实场景切入（Executive Hook & Case）。
+- **定位**：现实商业/科学/考场真实场景与趣味梗切入（Narrative Hook & Anecdote）。
 - **内容**：
+  - **趣味梗/生活痛点引入**：用生动有趣的现实矛盾、科学八卦（如牛顿与莱布尼茨争夺微积分发明权、超速抓拍雷达的工作原理、面包店降价为何反而倒闭）切入，彻底击碎抽象壁垒；
+  - **核心灵魂拷问**：抛出一个直觉反常识的思考题，引导学生在学公式前先进行直觉博弈；
   - 为什么必须学这个？如果不懂，现实中会发生什么事故或经济损失？在 Klausur 中会扣多少分？
-  - 明确本节课 3 条达标目标（先中文白话，再记德语要求）。
+  - 明确本节课 3 条达标目标（先中文白话，再记德语要求）；
   - Klausur-Satz: 给出本课最高频的核心德语学术论断句。
 
 #### ## Schritt 2 — entdecken
 - **定位**：术语预热盒（Pretraining 核心 5 词，降低认知负荷）。
 - **内容**：
-  - 列出 5 个中德对照核心概念，阐述字面含义与物理/逻辑本质。
+  - 列出 5 个中德对照核心概念，阐述字面含义与物理/逻辑本质；
   - Klausur-Satz: 串联这 5 个词的标准句式。
 
 #### ## Schritt 3 — entdecken
 - **定位**：拆解式深度教学与可视化原理（Interactive Concept Deconstruction）。
 - **内容**：
-  - 3 个最小认知单元拆解原理，拒绝纯死记硬背。
-  - 附带 ASCII 字符图解或 Mermaid 流程图（在 ```diagram 或 ```mermaid 代码块中）。
+  - 3 个最小认知单元拆解原理，拒绝纯死记硬背；
+  - 附带 ASCII 字符图解或 Mermaid 流程图（在 ```diagram 或 ```mermaid 代码块中）；
+  - 所有公式严格以 LaTeX KaTeX 排版；
   - Klausur-Satz: 对应原理解析的标准德语表述。
 
 #### ## Schritt 4 — ausprobieren
 - **定位**：上手互动实验台（Guided Hands-on Sandbox / PhET-style Lab）。
 - **内容**：
-  - 首行声明教具标签：`[Werkzeug: <toolId>]`（如 `[Werkzeug: tangent]` 或 `[Werkzeug: markt]` 或 `[Werkzeug: kinematik]`）。
-  - AUFGABE (berechnen/analysieren, AFB II): 明确的参数调节实验任务与计算要求。
-  - HILFE: 3 步实验调节指导与解题线索。
-  - MUSTERLÖSUNG: 详尽的实验现象分析、推导过程与数值验证。
+  - 首行声明教具标签：`[Werkzeug: <toolId>]`（如 `[Werkzeug: tangent]` 或 `[Werkzeug: markt]` 或 `[Werkzeug: kinematik]` 或 `[Werkzeug: balance]` 或 `[Werkzeug: highlighter]` 或 `[Werkzeug: formula]`）；
+  - AUFGABE (berechnen/analysieren, AFB II): 明确的参数调节实验任务与计算要求，引导学生在互动教具中观察并验证现象，支持在纸上草稿后拍照上传验证；
+  - HILFE: 3 步实验调节指导与解题线索；
+  - MUSTERLÖSUNG: 详尽的实验现象分析、推导过程与数值验证；
   - Klausur-Satz: 实验现象与推导结论的德语总结。
 
 #### ## Schritt 5 — check
@@ -72,10 +81,10 @@ tags: [EF, Meta]
 #### ## Schritt 6 — szenario
 - **定位**：考场真实综合论证挑战（Klausur Application Challenge, AFB III）。
 - **内容**：
-  - ROLLE: 考生扮演的角色（如：经济顾问 / 物理工程师 / 议会伦理代表）。
-  - SITUATION: 复杂的现实综合情境材料。
-  - AUFGABE (beurteilen/erörtern, AFB III): 高阶评价与决策任务。
-  - RUBRIC: 评分细则（包含 3 条得分点，每点包含事实标准与价值标准）。
+  - ROLLE: 考生扮演的角色（如：经济顾问 / 物理工程师 / 议会伦理代表）；
+  - SITUATION: 复杂的现实综合情境材料；
+  - AUFGABE (beurteilen/erörtern, AFB III): 高阶评价与决策任务，提示学生可手写推演草稿拍照上传提交；
+  - RUBRIC: 评分细则（包含 3 条得分点，每点包含事实标准与价值标准）；
   - KLAUSUR-SATZ: 满分范文结尾句。
 
 请直接输出符合上述规范的完整 Markdown 内容，不要带有额外的问候语或解释。
