@@ -236,7 +236,9 @@
 - [2026-09-25-modular-learning-and-spec](Journal/2026-09-25-modular-learning-and-spec.md) — **三段模块化学习架构重构与全考纲内容搜集交付总纲**：学习/复习/练习三段工作区闭环 + 互动课程内嵌学科教具沙盘 + 全十科考纲缺口审计与外部AI批量生成标准规范（379单测/build/vault-check全绿）
 - [2026-09-25-external-ai-content-preismechanismus](Journal/2026-09-25-external-ai-content-preismechanismus.md) — **外部AI内容入库首单**：SoWi Preismechanismus 三件套（Lernreise L1 + 八段式笔记 + 18 词卡），三处同步 + vault-check PASS；判定 `.json` 不成立、须用 `.md`
 - [2026-09-25-lernreise-vollausbau](Journal/2026-09-25-lernreise-vollausbau.md) — **Lernreise 十科全量补齐**：10 个子 agent 并行生产 **65 篇** 9步互动课程（`Lernreise/` 5→**70** 篇），主线程独立复核 + 37 处「待建」标记翻转 + 19 文件陈旧标记清理，vault-check PASS(reisen=70)
-- [2026-09-25-lernreise-vertiefung](Journal/2026-09-25-lernreise-vertiefung.md) — **Lernreise 深化**：2 篇旧版试点重写为 9 步 + 70 篇全量插入 `Anekdote & Fun-Fact`（故事/冷知识）+ **+177 张 Anki 词卡**（1418→**1595**）+ 10 份 Lernbaum 补「Lernreise 索引」（70 行 0 死链）+ Lernmethoden §10（Seductive-Details 边界），vault-check PASS
+- [2026-09-26-rich-typography-and-formula-rendering](Journal/2026-09-26-rich-typography-and-formula-rendering.md) — **富文本高亮排版、KaTeX公式手写体渲染与教学层次重构**：KaTeX双轨排版+公式代码嗅觉+星号清零+教学重点语义徽章+三门禁全绿
+- [2026-09-26-scientific-note-architecture-and-global-roadmap](Journal/2026-09-26-scientific-note-architecture-and-global-roadmap.md) — **科学笔记系统融合重构与八线外部AI生产总纲**：九段全息科学笔记模板+认知负荷理论融合+十科考纲全量覆盖交付总纲
+- [2026-09-26-single-page-document-and-toc](Journal/2026-09-26-single-page-document-and-toc.md) — **互动课程单页长文档化、右侧大纲导航栏(TOC)与德语受众体验重构**：流式全开长文档+右侧吸顶大纲TOC+平滑滚动+双模无缝切换+德语版自动分流映射（59套件389测试全绿）
 - 约定：文件名 `YYYY-MM-DD-<thema>.md`，头部frontmatter（`fach`可空，`tags: [EF, Meta]`）。
 
 
