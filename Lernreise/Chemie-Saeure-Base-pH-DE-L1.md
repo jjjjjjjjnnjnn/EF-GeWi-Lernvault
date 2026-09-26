@@ -16,61 +16,76 @@ version: Lesson-v3
 <!-- Lesson v3 9-Schritt-Architektur: Schritt 1 bis 8 feste Struktur; Fehlvorstellung zwischen Schritt 6 und 7 (Parser ueberspringt, zaehlt nicht); interaktive [Werkzeug: <id>]; Gating: check/szenario nicht bestanden = Weiter deaktiviert; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
 ## Schritt 1 — entdecken
+ZIELE (drei messbare Ziele dieser Lektion):
 
-ZIELE (diese Lektion in 15 Minuten: danach kannst du):
+1. Du kannst mit der Broensted-Theorie Protolysegleichungen aufstellen und korrespondierende Saeure-Base-Paare benennen.
+2. Du kannst mit $pH = -\lg[H_3O^+]$ und $pH + pOH = 14$ logarithmisch rechnen und begruenden, dass zehnfache Verduennung den $pH$ um $1$ hebt.
+3. Du kannst schwache Saeuren ueber die Dreisatztabelle berechnen, $c(H_3O^+)$ bestimmen und die Naeherung mit $x/c_0 < 5\,\%$ pruefen.
 
-1. Mit der Broensted-Theorie Protolysegleichungen aufstellen und korrespondierende Saeure-Base-Paare benennen.
-2. Mit $pH = -\lg[H_3O^+]$ und $pH + pOH = 14$ logarithmisch rechnen und begruenden, dass zehnfache Verduennung den $pH$ um 1 hebt.
-3. Schwache Saeuren ueber die Dreisatztabelle berechnen, $c(H_3O^+)$ bestimmen und die Naeherung mit $x/c_0 < 5\,\%$ pruefen.
+### Hook / Phaenomen
+
+Soerensen wollte beim Bierbrauen die Aciditaet kontrollieren — doch die Oxoniumkonzentrationen schwanken ueber viele Zehnerpotenzen, von $1$ bis $10^{-14}\,\mathrm{mol/L}$. Rohe Zahlen versagen, also waehlte er eine logarithmische Skala von $0$ bis $14$. Warum bedeutet ein Unterschied von zwei $pH$-Einheiten den Faktor $100$ — und warum schmeckt $0{,}10\,\mathrm{mol/L}$ Essigsaeure milder als $0{,}005\,\mathrm{mol/L}$ Salzsaeure?
+
+### Fachbegriff & Definition
+
+Nach **Broensted** ist eine **Saeure ein Protonendonator**, eine **Base ein Protonenakzeptor**; jede **Protolyse** verlaeuft als Gleichgewicht mit **korrespondierenden Paaren** — etwa $HCl/Cl^-$ oder $CH_3COOH/CH_3COO^-$. Wasser ist **amphoter** und ionisiert sich selbst: Das **Ionenprodukt** $K_w = [H_3O^+] \cdot [OH^-] = 1{,}0 \cdot 10^{-14}\,(\mathrm{mol/L})^2$ bei $25^\circ\mathrm{C}$ erzwingt $pH + pOH = 14$. Der **$pH$-Wert** $pH = -\lg[H_3O^+]$ ist der negative dekadische Massstab: $10^{-3}$ heisst $pH$ $3$, $5 \cdot 10^{-3}$ heisst $pH$ $2{,}30$ — jede Einheit bedeutet Faktor $10$.
+
+### Wirkungsgefuege / Modell
+
+Die Kausalkette lautet: **Staerke pruefen, Formel waehlen, Naeherung kontrollieren**. Starke Saeuren protolysieren fast vollstaendig — $[H_3O^+] = c_0$, ein $-\lg$ genuegt ($0{,}005\,\mathrm{mol/L}$ $HCl$ zu $pH$ $2{,}30$). Schwache Saeuren protolysieren nur teilweise und verlangen die Dreisatztabelle mit $K_S = \frac{[A^-][H_3O^+]}{[HA]}$ ($0{,}10\,\mathrm{mol/L}$ $HAc$ zu $x = 1{,}34 \cdot 10^{-3}$ und $pH$ $2{,}87$). Erster Schritt bleibt stets die Staerkepruefung, dann erst die Formelwahl, zuletzt $x/c_0 < 5\,\%$ — die Pruefung traegt eigene Punkte.
 
 Klausur-Satz: `Der pH-Wert ist der negative dekadische Logarithmus der Oxoniumionenkonzentration; er ändert sich um eine Einheit, wenn sich die Konzentration um den Faktor 10 ändert.`
 
 ## Schritt 2 — entdecken
+PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
-PRETRAINING (Kernbegriffe, erst lesen, dann abdecken und aktiv wiedergeben):
+### Hook / Phaenomen
 
-- Protolyse: Eine Saeure gibt ein Proton ($H^+$) an eine Base ab und bildet korrespondierende Paare.
-- Korrespondierendes Saeure-Base-Paar: Die Saeure wird nach Protonenabgabe zu ihrer Base (z. B. $HCl$ / $Cl^-$).
-- Ionenprodukt des Wassers $K_w$: $K_w = [H_3O^+] \cdot [OH^-] = 1{,}0 \cdot 10^{-14}\,(\mathrm{mol/L})^2$ bei $25^\circ\mathrm{C}$.
-- $pH$-Wert: $pH = -\lg[H_3O^+]$ als negativer dekadischer Massstab; eine Einheit entspricht Faktor 10.
-- Saeurekonstante $K_S$: $K_S = [A^-] \cdot [H_3O^+] / [HA]$; groesseres $K_S$ bedeutet staerkere Saeure.
+Salzsaeure mit $pH$ $4$ wird zehnfach verduennt — neuer $pH$? Wer logarithmisch denkt, antwortet in Sekunden: $5$. Wer linear denkt, scheitert an jeder Kurzfrage. Fuenf Begriffe liefern das logarithmische Gefuehl plus die Gleichgewichtsrechnung.
+
+### Fachbegriffe & Definitionen
+
+- **Protolyse:** Eine Saeure gibt ein Proton ($H^+$) an eine Base ab und bildet korrespondierende Paare — etwa $HCl + H_2O \to H_3O^+ + Cl^-$.
+- **Korrespondierendes Saeure-Base-Paar:** Die Saeure wird nach Protonenabgabe zu ihrer Base (z. B. $HCl$/$Cl^-$); jede Protolyse verlaeuft als Gleichgewicht.
+- **Ionenprodukt des Wassers $K_w$:** $K_w = [H_3O^+] \cdot [OH^-] = 1{,}0 \cdot 10^{-14}\,(\mathrm{mol/L})^2$ bei $25^\circ\mathrm{C}$; in neutraler Loesung beidseitig $10^{-7}\,\mathrm{mol/L}$.
+- **$pH$-Wert:** $pH = -\lg[H_3O^+]$ als negativer dekadischer Massstab; eine Einheit entspricht Faktor $10$ — Abkuerzung $-\lg(a \cdot 10^{-n}) = n - \lg(a)$ mit $\lg 2 = 0{,}30$, $\lg 5 = 0{,}70$.
+- **Saeurekonstante $K_S$:** $K_S = \frac{[A^-][H_3O^+]}{[HA]}$; groesseres $K_S$ bedeutet staerkere Saeure — schwache Saeuren rechnen ueber $K_S = x^2/(c_0 - x)$.
+
+### Wirkungsgefuege / Modell
+
+Die Begriffe greifen ineinander: **Broensted** liefert die Gleichung, $K_w$ die Wasserbasis, $pH$ den Massstab, $K_S$ die Staerke. Starke Saeuren rechnen einstufig ($pH = -\lg c_0$), starke Basen ueber $pOH$, schwache Partner ueber das Gleichgewicht mit Pflichtpruefung $x/c_0 < 5\,\%$. Neutralisation entscheidet die Stoffmengengleichheit $n(H_3O^+) = n(OH^-)$: stark gegen stark trifft am Aequivalenzpunkt $pH = 7$, schwach gegen stark liegt wegen der korrespondierenden Base im basischen Bereich.
 
 Klausur-Satz: `Eine Säure ist nach Brønsted ein Protonendonator, eine Base ein Protonenakzeptor; jede Protolyse verläuft als Gleichgewicht.`
 
 ## Schritt 3 — entdecken
+TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
-ENTDECKEN (ein Konzept plus Textdiagramm):
+### Hook / Phaenomen
 
-Saeure-Base-Chemie ist Protonenumzug: Die Saeure gibt das Proton, die Base nimmt es; nach der Abgabe wird die Saeure zu ihrer korrespondierenden Base. Wasser ist amphoter und ionisiert sich selbst zu $H_3O^+$ und $OH^-$ mit konstantem Produkt $1{,}0 \cdot 10^{-14}$; in neutraler Loesung gilt beidseitig $10^{-7}\,\mathrm{mol/L}$. Der $pH$ ist der negative Logarithmus von $[H_3O^+]$: $10^{-3}$ entspricht $pH$ 3, $5 \cdot 10^{-3}$ entspricht $pH$ 2,30. Die Trennlinie heisst stark oder schwach: Starke Saeuren protolysieren fast vollstaendig, $[H_3O^+]$ gleicht $c_0$, ein $-\lg$ genuegt; schwache Saeuren protolysieren nur teilweise und verlangen Dreisatztabelle mit $K_S$. Erster Schritt bleibt stets die Staerkepruefung, dann erst die Formelwahl.
+Salzsaeure $0{,}005\,\mathrm{mol/L}$ zu $pH$ $2{,}30$, Essigsaeure $0{,}10\,\mathrm{mol/L}$ zu $pH$ $2{,}87$ — zwanzigfache Konzentration, fast gleicher $pH$. Der Unterschied liegt nicht in der Menge, sondern im Dissoziationsgrad: $100\,\%$ gegen $1{,}3\,\%$. Ein Diagramm mit vier Formelkarten macht den Mechanismus rechenbar.
+
+### Fachbegriff & Definition
+
+Der **Protonenumzug** besagt: Die Saeure gibt das Proton, die Base nimmt es; nach der Abgabe wird die Saeure zu ihrer korrespondierenden Base. Die **Trennlinie stark oder schwach** entscheidet die Rechnung: Starke Saeuren protolysieren fast vollstaendig ($[H_3O^+] = c_0$), schwache nur teilweise (Dreisatztabelle mit $K_S$). Vier Formelkarten tragen die Klausur: starke Saeure $pH = -\lg c_0$; starke Base $pOH = -\lg c_0$, $pH = 14 - pOH$; Ionenprodukt $pH + pOH = 14$; schwache Saeure $K_S = x^2/(c_0 - x)$, dann $pH = -\lg x$.
+
+### Wirkungsgefuege / Modell
+
+Denke in Kausalkette: **Gleichung, Staerke, Tabelle, Pruefung**. Erstens Protolysegleichung mit Paaren aufstellen. Zweitens Staerke feststellen — $K_S$ gegeben heisst Tabelle. Drittens Dreisatztabelle (Start $c_0/0/0$, Aenderung $-x/+x/+x$) und $K_S$ einsetzen. Viertens $pH$ bilden und $x/c_0 < 5\,\%$ pruefen. Schwache Saeuren punkten nur in dieser Reihenfolge — Richtung ohne Begruendung verliert Punkte.
 
 ```diagram
-pH-Skala (25 C)         c(H3O+) in mol/L
-  0  |#####| sauer        1,0 * 10^0
-  1  |#### |              1,0 * 10^-1     <-- jede Einheit = Faktor 10
-  2  |###  |              1,0 * 10^-2
-  2,30|## |   HCl 0,005    5,0 * 10^-3   <-- pH = -lg(5*10^-3)
-  2,87|## |   HAc 0,10     1,34 * 10^-3  <-- schwach, aus K_S
-  7  |----| neutral        1,0 * 10^-7
- 14  |     | basisch        1,0 * 10^-14
+  pH-Skala (25 C)         c(H3O+) in mol/L
+    0  |#####| sauer        1,0 * 10^0
+    1  |#### |              1,0 * 10^-1     <-- jede Einheit = Faktor 10
+    2  |###  |              1,0 * 10^-2
+    2,30|## |   HCl 0,005    5,0 * 10^-3   <-- pH = -lg(5*10^-3)
+    2,87|## |   HAc 0,10     1,34 * 10^-3  <-- schwach, aus K_S
+    7  |----| neutral        1,0 * 10^-7
+   14  |     | basisch        1,0 * 10^-14
 
-  Merke:  pH + pOH = 14  (nur bei 25 C)
-  stark:  pH = -lg(c0)          schwach: K_S = x^2/(c0 - x)
+    Merke:  pH + pOH = 14  (nur bei 25 C)
+    stark:  pH = -lg(c0)          schwach: K_S = x^2/(c0 - x)
+    Abkuerzung: -lg(a*10^-n) = n - lg(a), lg2 = 0,30, lg5 = 0,70
 ```
-
-Vier Formelkarten zum Auswendiglernen:
-
-1. Starke Saeure: $pH = -\lg(c_0)$, weil $[H_3O^+] = c_0$.
-2. Starke Base: $pOH = -\lg(c_0)$, $pH = 14 - pOH$.
-3. Ionenprodukt: $K_w = [H_3O^+] \cdot [OH^-] = 1{,}0 \cdot 10^{-14}$, also $pH + pOH = 14$ bei $25^\circ\mathrm{C}$.
-4. Schwache Saeure: $K_S = x^2 / (c_0 - x)$, danach $pH = -\lg(x)$ mit Pruefung $x/c_0 < 5\,\%$.
-
-Logarithmus-Abkuerzung: $-\lg(a \cdot 10^{-n}) = n - \lg(a)$. Beispiel: $-\lg(5 \cdot 10^{-3}) = 3 - 0{,}70 = 2{,}30$; $-\lg(2 \cdot 10^{-3}) = 3 - 0{,}30 = 2{,}70$. Mit $\lg 2 = 0{,}30$ und $\lg 5 = 0{,}70$ geht die Abschaetzung ohne Rechner.
-
-Neutralisation: Saeure und Base reagieren in gleicher Stoffmenge, $n(H_3O^+) = n(OH^-)$, also $c_1 \cdot V_1 = c_2 \cdot V_2$. Stark gegen stark trifft am Aequivalenzpunkt $pH = 7$; schwach gegen stark liegt wegen der korrespondierenden Base im basischen Bereich.
-
-Klausur-Tipp: Schwache Saeuren punkten in fester Reihenfolge — Staerke feststellen, Dreisatztabelle, $K_S$ einsetzen, $x$ loesen, $pH$ bilden, Naeherung pruefen. Die Pruefung $x/c_0 < 5\,\%$ traegt eigene Punkte; ohne sie kostet selbst das richtige Ergebnis Abzug.
-
-Standardfrage: Salzsäure mit $pH$ 4 wird zehnfach verduennt — neuer $pH$? Starke Saeure, Konzentration auf ein Zehntel, $pH$ steigt um 1 auf 5. Dieses logarithmische Gefuehl entscheidet viele Kurzfragen in Sekunden.
 
 Klausur-Satz: `Während eine starke Säure in wässriger Lösung nahezu vollständig dissoziiert und pH = -lg(c0) gilt, stellt sich bei einer schwachen Säure ein Protolysegleichgewicht ein, das über K_S berechnet wird.`
 

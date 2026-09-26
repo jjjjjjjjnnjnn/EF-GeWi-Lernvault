@@ -16,59 +16,80 @@ version: Lesson-v3
 <!-- Lesson v3 9-Schritt-Architektur: Schritt 1 bis 8 feste Struktur; Fehlvorstellung zwischen Schritt 6 und 7 (Parser ueberspringt, zaehlt nicht); interaktive [Werkzeug: <id>]; Gating: check/szenario nicht bestanden = Weiter deaktiviert; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
 ## Schritt 1 — entdecken
+ZIELE (drei messbare Ziele dieser Lektion):
 
-ZIELE (diese Lektion in 15 Minuten: danach kannst du):
+1. Du kannst mit sechs Formelkarten (Mol, Konzentration, Gas, $pH$, Redox, Gleichgewicht) zwischen Masse, Volumen und Teilchenzahl umrechnen und jede Stufe mit Einheit schreiben.
+2. Du kannst jeden Kartennamen sicher als deutschen Klausur-Begriff nennen und die Formel zuordnen.
+3. Du kannst jedes Ergebnis mit einer Groessenordnungspruefung auf Deutsch als plausibel bewerten.
 
-1. Mit sechs Formelkarten (Mol, Konzentration, Gas, $pH$, Redox, Gleichgewicht) zwischen Masse, Volumen und Teilchenzahl umrechnen und jede Stufe mit Einheit schreiben.
-2. Jeden Kartennamen sicher als deutschen Klausur-Begriff nennen und die Formel zuordnen.
-3. Jedes Ergebnis mit einer Groessenordnungspruefung auf Deutsch als plausibel bewerten.
+### Hook / Phaenomen
+
+Avogadro erkannte: Gleiche Gasvolumina enthalten bei gleichem Druck und gleicher Temperatur gleich viele Teilchen — die Zahl $6{,}022 \cdot 10^{23}$ kannte er selbst nie, sie wurde erst nach seinem Tod bestimmt und nach ihm benannt. Bis heute ist das Mol vor allem eines: eine Zaehleinheit, die Masse und Teilchenzahl verbindet. Doch wie findet man in der Klausur in Sekunden die richtige von sechs Formeln?
+
+### Fachbegriff & Definition
+
+Die **Stoffmenge** $n$ ist der **zentrale Knoten** aller Rechnungen: Masse erreicht $n$ ueber $n = m/M$, Teilchenzahl ueber $N = n \cdot N_A$, Gasvolumen ueber $V = n \cdot V_m$ im Normzustand oder $pV = nRT$ sonst, Loesungen ueber $c = n/V$. Von $n$ strahlen drei Spezialkarten ab: $pH = -\lg[H_3O^+]$ mit $pH + pOH = 14$ (nur $25^\circ\mathrm{C}$), die **Elektronenerhaltung** der Redoxchemie ($\sum$ abgegeben gleich $\sum$ aufgenommen) und das **$K_c$ des Gleichgewichts** als Produkt durch Edukt hoch Koeffizient. Jede Aufgabe folgt zwei Schritten: erst alle Angaben auf $n$ zurueckfuehren, dann ueber das Koeffizientenverhaeltnis auf das $n$ des Zielstoffs springen.
+
+### Wirkungsgefuege / Modell
+
+Die Kausalkette lautet: **Ausgangsgroesse, Knoten, Zielgroesse, Pruefung**. Ausgangsgroesse zu $n_1$, ueber Koeffizienten zu $n_2$, dann in die Zielgroesse — etwa $m = n \cdot M$ oder $c = n/V$. Der haeufigste Fehler ist das direkte Verrechnen zweier Nicht-$n$-Groessen, etwa Gramm mal Konzentration — die Einheit verraet den Fehler sofort. Nach jeder Rechnung folgt die Groessenordnung: $1\,\mathrm{mol}$ Gas misst im Normzustand etwa $22{,}4\,\mathrm{L}$, $0{,}5\,\mathrm{mol/L}$ entspricht einer normalen Zuckerloesung, ein $pH$-Unterschied von $1$ bedeutet Faktor $10$.
 
 Klausur-Satz: `Jede Rechnung beginnt mit der Formel, führt die Einheiten durch alle Schritte und endet mit einer Größenordnungsprüfung.`
 
 ## Schritt 2 — entdecken
+PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
-PRETRAINING (Kernbegriffe, erst lesen, dann abdecken und aktiv wiedergeben):
+### Hook / Phaenomen
 
-- Stoffmenge $n$ (amount of substance): Zaehleinheit; $1\,\mathrm{mol} = 6{,}022 \cdot 10^{23}$ Teilchen.
-- Konzentration $c$ (concentration): Mol pro Volumen Loesung, $c = n/V$.
-- Gasgesetz (gas law): $pV = nRT$ verbindet Druck, Volumen, Temperatur und Molzahl.
-- $pH$-Wert (pH value): $pH = -\lg[H_3O^+]$, die logarithmische Skala fuer Saeuren und Basen.
-- Massenwirkungsgesetz MWG (law of mass action): Der $K_c$-Ausdruck beschreibt die Lage des Gleichgewichts.
+Sechs Karten, ein Knoten — doch in der Klausur zaehlt nicht die Karte, sondern der deutsche Satz dazu. Welche Karte oeffnet Gasvolumina, welche den $pH$, welche das Gleichgewicht? Fuenf Begriffe sichern die Zuordnung, bevor gerechnet wird.
+
+### Fachbegriffe & Definitionen
+
+- **Stoffmenge $n$ (amount of substance):** Zaehleinheit; $1\,\mathrm{mol} = 6{,}022 \cdot 10^{23}$ Teilchen — alle Wege fuehren ueber $n$.
+- **Konzentration $c$ (concentration):** Mol pro Volumen Loesung, $c = n/V$ in $\mathrm{mol/L}$ — etwa $0{,}5\,\mathrm{mol/L}$ wie eine normale Zuckerloesung.
+- **Gasgesetz (gas law):** $pV = nRT$ verbindet Druck, Volumen, Temperatur und Molzahl ($R = 8{,}314\,\mathrm{J/(mol \cdot K)}$, $T$ in Kelvin); im Normzustand $V_m = 22{,}4\,\mathrm{L/mol}$.
+- **$pH$-Wert (pH value):** $pH = -\lg[H_3O^+]$, $pOH = -\lg[OH^-]$, $pH + pOH = 14$ bei $25^\circ\mathrm{C}$; zehnfache Verduennung hebt den $pH$ um $1$.
+- **Massenwirkungsgesetz MWG (law of mass action):** Der $K_c$-Ausdruck beschreibt die Lage des Gleichgewichts — etwa $K_c = [CO_2]$ fuer $CaCO_3(s) \rightleftharpoons CaO(s) + CO_2(g)$.
+
+### Wirkungsgefuege / Modell
+
+Die Begriffe bilden den Stern mit $n$ in der Mitte: Masse, Teilchen, Gas und Loesung muenden in $n$; $pH$, Redox und $K_c$ strahlen von dort ab. Die Redoxkarte ergaenzt die Elektronenerhaltung: Steigende Oxidationszahl markiert das Reduktionsmittel, fallende das Oxidationsmittel. Wer nach jeder Rechnung die Groessenordnung prueft, faengt Einheiten- und Zehnerpotenzfehler automatisch ab — ein $pH$-Sprung von $3$ bei zehnfacher Verduennung waere sofort verdaechtig.
 
 Klausur-Satz: `Mit dem Ansatz c = n/V folgt die Konzentration einschließlich Einheit; die Größenordnung wird durch Vergleich mit Alltagswerten geprüft.`
 
 ## Schritt 3 — entdecken
+TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
-ENTDECKEN (ein Konzept plus Textdiagramm):
+### Hook / Phaenomen
 
-Sechs Formelkarten drehen sich um einen Knoten: die Stoffmenge $n$. Masse erreicht $n$ ueber $n = m/M$, Teilchenzahl ueber $N = n \cdot N_A$, Gasvolumen ueber $V = n \cdot V_m$ im Normzustand oder $pV = nRT$ sonst, Loesungen ueber $c = n/V$; von $n$ strahlen $pH = -\lg[H_3O^+]$, die Elektronenerhaltung der Redoxchemie und das $K_c$ des Gleichgewichts ab. Jede Aufgabe folgt zwei Schritten: Erst alle Angaben auf $n$ zurueckfuehren, dann ueber das Koeffizientenverhaeltnis auf das $n$ des Zielstoffs springen und in die Zielgroesse umrechnen. Der haeufigste Fehler ist das direkte Verrechnen zweier Nicht-$n$-Groessen, etwa Gramm mal Konzentration — die Einheit verrät den Fehler sofort. Nach jeder Rechnung folgt die Frage nach der Groessenordnung.
+Ein Ergebnis ohne Einheit ist in der Klausur kein Ergebnis: Der Mars Climate Orbiter ging 1999 verloren, weil ein Team metrisch, das andere amerikanisch rechnete — ein einziger fehlender Einheitenschritt kostete die Mission. Die Zwei-Schritt-Regel mit Groessenordnungspruefung verhindert genau diesen Fehler im Kleinen.
+
+### Fachbegriff & Definition
+
+Die **Zwei-Schritt-Regel** lautet: **Ausgangsgroesse zu $n_1$, ueber Koeffizienten zu $n_2$, dann zur Zielgroesse**. Die Gaskarte liefert $V_m = 22{,}4\,\mathrm{L/mol}$ im Normzustand, sonst $pV = nRT$. Die $pH$-Karte liefert $pH = -\lg[H_3O^+]$. Die Gleichgewichtskarte liefert $K_c$ als Produkt durch Edukt — reine Feststoffe entfallen. Die Redoxkarte liefert die Elektronenerhaltung. Jede Karte traegt denselben deutschen Schlusssatz: Formel nennen, Einheit durchfuehren, Groessenordnung pruefen.
+
+### Wirkungsgefuege / Modell
+
+Denke in Kausalkette: **Karte waehlen, $n$ bruecken, Einheit tragen**. Erstens Signalwort lesen — Gramm, Liter Gas, $pH$, Elektronen, Gleichgewicht — und Karte waehlen. Zweitens alles auf $n$ zurueckfuehren und im Koeffizientenverhaeltnis umsetzen. Drittens Zielgroesse mit Einheit nennen und Groessenordnung pruefen. Wer die Einheit durch alle Schritte fuehrt, findet jeden Fehler vor der Abgabe.
 
 ```diagram
                  Masse m (g)
                      |  n = m/M
                      v
- Teilchenzahl N <--> n (mol) <--> V (Gas, L)
-   N = n * N_A        |            V = n * V_m
-                      |  c = n/V
-                      v
+  Teilchenzahl N <--> n (mol) <--> V (Gas, L)
+    N = n * N_A        |            V = n * V_m (22,4 L/mol)
+                       |  c = n/V
+                       v
               Konzentration c (mol/L)
-                      |
-        +-------------+-------------+
-        v             v             v
-   pH = -lg[H3O+]   Redox      K_c (MWG)
+                       |
+        +--------------+--------------+
+        v              v              v
+   pH = -lg[H3O+]   Redox        K_c (MWG)
                     (e- Erhaltung)
 
-  Zwei-Schritt-Regel:  Ausgangsgroesse -> n1 -> (Koeffizienten) -> n2 -> Zielgroesse
+  Zwei-Schritt-Regel: Ausgang -> n1 -> (Koeff.) -> n2 -> Ziel
+  Pruefung: Einheit + Groessenordnung (22,4 L | 0,5 mol/L | Faktor 10)
 ```
-
-Drei Karten im Detail:
-
-1. Gaskarte: Im Normzustand gilt $V_m = 22{,}4\,\mathrm{L/mol}$; sonst gilt $pV = nRT$ mit $R = 8{,}314\,\mathrm{J/(mol \cdot K)}$ und $T$ in Kelvin.
-2. $pH$-Karte: $pH = -\lg[H_3O^+]$, $pOH = -\lg[OH^-]$, $pH + pOH = 14$ (nur bei $25^\circ\mathrm{C}$); zehnfache Verduennung hebt den $pH$ um 1.
-3. Gleichgewichtskarte: $K_c$ ist Produktkonzentration hoch Koeffizient durch Eduktkonzentration hoch Koeffizient; reine Feststoffe und Fluessigkeiten entfallen (z. B. gilt fuer $CaCO_3(s) \rightleftharpoons CaO(s) + CO_2(g)$ nur $K_c = [CO_2]$).
-4. Redoxkarte: Elektronenerhaltung $\sum n(e^-\text{ abgegeben}) = \sum n(e^-\text{ aufgenommen})$; steigende Oxidationszahl markiert das Reduktionsmittel, fallende das Oxidationsmittel.
-
-Groessenmassstab zum Mitpruefen: $1\,\mathrm{mol}$ Gas misst im Normzustand etwa $22{,}4\,\mathrm{L}$; $0{,}5\,\mathrm{mol/L}$ entspricht einer normalen Zuckerloesung; ein $pH$-Unterschied von 1 bedeutet Faktor 10 in der Konzentration. Wer nach jeder Rechnung die Groessenordnung prueft, faengt Einheiten- und Zehnerpotenzfehler automatisch ab.
 
 Klausur-Satz: `Alle quantitativen Aufgaben führen über die Stoffmenge n als zentralen Knoten, von dem aus die Zielgröße über die passende Formel bestimmt wird.`
 

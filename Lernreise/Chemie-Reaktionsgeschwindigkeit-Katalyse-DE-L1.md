@@ -16,32 +16,61 @@ version: Lesson-v3
 <!-- Lesson v3 9-Schritt-Architektur: Schritt 1 bis 8 feste Struktur; Fehlvorstellung zwischen Schritt 6 und 7 (Parser ueberspringt, zaehlt nicht); interaktive [Werkzeug: <id>]; Gating: check/szenario nicht bestanden = Weiter deaktiviert; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
 ## Schritt 1 — entdecken
+ZIELE (drei messbare Ziele dieser Lektion):
 
-ZIELE (diese Lektion in 15 Minuten: danach kannst du):
+1. Du kannst mit $v = \Delta c / \Delta t$ die Reaktionsgeschwindigkeit als Konzentrationsaenderung pro Zeit erklaeren und aus $c$-$t$-Daten die mittlere Geschwindigkeit berechnen.
+2. Du kannst drei Bedingungen wirksamer Zusammenstoesse (genug Energie, richtige Orientierung, wirksamer Kontakt) nennen und den Einfluss von Konzentration, Temperatur und Oberflaeche deuten.
+3. Du kannst die Katalysatorwirkung beschreiben — neuer Weg mit niedrigerer Aktivierungsenergie bei unveraendertem Katalysator — und die Abgasreaktion $2CO + 2NO \xrightarrow{Kat} 2CO_2 + N_2$ auf AFB-II-Niveau analysieren.
 
-1. Mit $v = \Delta c / \Delta t$ die Reaktionsgeschwindigkeit als Konzentrationsaenderung pro Zeit erklaeren und aus $c$-$t$-Daten die mittlere Geschwindigkeit berechnen.
-2. Drei Bedingungen wirksamer Zusammenstoesse (genug Energie, richtige Orientierung, wirksamer Kontakt) nennen und den Einfluss von Konzentration, Temperatur und Oberflaeche deuten.
-3. Die Katalysatorwirkung beschreiben — neuer Weg mit niedrigerer Aktivierungsenergie bei unveraendertem Katalysator — und die Abgasreaktion $2CO + 2NO \xrightarrow{Kat} 2CO_2 + N_2$ auf AFB-II-Niveau analysieren.
+### Hook / Phaenomen
+
+Eine Brausetablette im Ganzen braucht Minuten, zerkleinert nur Sekunden — und in warmem Wasser sprudelt sie heftiger als in kaltem. Dieselbe Tablette, dieselbe Wassermenge, voellig anderes Tempo. Zaehlt auf Teilchenebene die Zahl der Zusammenstoesse oder ihre Wucht? Und warum reinigt der Abgaskatalysator jahrelang tausende Kubikmeter Abgas, ohne je verbraucht zu werden?
+
+### Fachbegriff & Definition
+
+Die **Reaktionsgeschwindigkeit** $v = \frac{\Delta c}{\Delta t}$ misst die **Konzentrationsaenderung pro Zeit**, etwa in $\mathrm{mol/(L \cdot s)}$. Sie wird durch die Haeufigkeit **wirksamer Zusammenstoesse** bestimmt: Nur ein Stoss mit **genug Energie** zum Oeffnen alter Bindungen, **richtiger Orientierung** zur Treffstelle und **wirksamem Kontakt** setzt um. Mehr Konzentration heisst mehr Teilchen pro Volumen, Erwaermen heisst groesserer energiegenuegender Anteil, groessere Feststoffoberflaeche heisst mehr Begegnungen — alle drei erhoehen die Haeufigkeit wirksamer Stoesse und damit $v$.
+
+### Wirkungsgefuege / Modell
+
+Die Kausalkette lautet: **Bedingung, Stosshaeufigkeit, Tempo**. Konzentration erhoehen — mehr Stoesse pro Zeit. Erwaermen — groesserer Anteil ueberwindet die Schwelle $E_a$. Zerkleinern — mehr Angriffsflaeche. Der **Katalysator** geht einen anderen Weg: Er erhoeht nicht die Stosszahl, sondern oeffnet einen Pfad mit niedrigerer **Aktivierungsenergie** $E_a$, sodass ploetzlich viele bisher zu schwache Stoesse genuegen — etwa $2CO + 2NO \xrightarrow{Kat} 2CO_2 + N_2$ auf Platin und Rhodium. Da Start- und Zielenergie gleich bleiben, aendert sich die Gleichgewichtslage nicht, nur die Zeit bis dahin schrumpft.
 
 Klausur-Satz: `Die Reaktionsgeschwindigkeit v = Δc/Δt beschreibt die Konzentrationsaenderung pro Zeit und wird durch die Haeufigkeit wirksamer Zusammenstoesse bestimmt.`
 
 ## Schritt 2 — entdecken
+PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
-PRETRAINING (Kernbegriffe, erst lesen, dann abdecken und aktiv wiedergeben):
+### Hook / Phaenomen
 
-- Reaktionsgeschwindigkeit $v$: Konzentrationsaenderung pro Zeit, $v = \Delta c / \Delta t$, Einheit z. B. $\mathrm{mol/(L \cdot s)}$.
-- Wirksamer Zusammenstoss: Nur der Stoss mit genug Energie, richtiger Orientierung und wirksamem Kontakt setzt um.
-- Aktivierungsenergie $E_a$: Die Energieschwelle vor dem Umsatz; je niedriger, desto groesser der wirksame Anteil.
-- Katalysator: Ein Stoff, der einen Weg mit niedrigerer $E_a$ eroeffnet und dabei in Masse und chemischer Art unveraendert bleibt.
-- Abgaskatalyse: Auf Platin und Rhodium werden giftiges $CO$ und $NO$ zu $CO_2$ und $N_2$ umgesetzt.
+Drei Zeichen, ein Mechanismus: $v$, $E_a$, Kat. Wer im Abgasversuch die CO-Kurve sieht — von $0{,}80$ auf $0{,}40\,\mathrm{mol/L}$ in $20\,\mathrm{s}$ — muss Tempo berechnen, Teilchenbild deuten und Katalysatorwirkung begruenden koennen. Diese fuenf Bausteine brauchst du wie Werkzeug im Koffer.
+
+### Fachbegriffe & Definitionen
+
+- **Reaktionsgeschwindigkeit $v$:** Konzentrationsaenderung pro Zeit, $v = \Delta c / \Delta t$ in $\mathrm{mol/(L \cdot s)}$; aus $c$-$t$-Daten als mittlere Geschwindigkeit, als Tangentensteigung als Momentanwert.
+- **Wirksamer Zusammenstoss:** Stoss mit genug Energie, richtiger Orientierung und wirksamem Kontakt; nur er fuehrt zum Umsatz — alle anderen bleiben folgenlos.
+- **Aktivierungsenergie $E_a$:** Die Energieschwelle vor dem Umsatz; je niedriger $E_a$, desto groesser der wirksame Anteil bei gleicher Temperatur.
+- **Katalysator:** Stoff wie Platin, der einen Weg mit niedrigerer $E_a$ eroeffnet und in Masse und chemischer Art unveraendert bleibt; er senkt Hin- und Rueckreaktion gleich und verschiebt kein Gleichgewicht.
+- **Abgaskatalyse:** Auf Edelmetalloberflaechen werden giftiges $CO$ und $NO$ zu $CO_2$ und $N_2$ umgesetzt ($2CO + 2NO \xrightarrow{Kat} 2CO_2 + N_2$); Blei vergiftet die Oberflaeche dauerhaft.
+
+### Wirkungsgefuege / Modell
+
+Die Begriffe greifen ineinander: $v$ zaehlt die **wirksamen Stoesse**, $E_a$ bestimmt ihren Anteil, der **Katalysator** senkt die Schwelle. Konzentrations-, Temperatur- und Oberflaecheneinfluss wirken ueber die Stosshaeufigkeit; der Katalysator wirkt ueber die Schwellenhoehe. Im Energiebild erscheint ein Doppelberg: Ohne Katalysator ein hoher Gipfel, mit Katalysator zwei flache Huegel bei gleichen Start- und Zielenergien — daher bleibt die Gleichgewichtslage gleich, nur die Zeit bis $Q = K_c$ schrumpft.
 
 Klausur-Satz: `Ein Katalysator eroeffnet einen Reaktionsweg mit niedrigerer Aktivierungsenergie und bleibt dabei selbst unveraendert.`
 
 ## Schritt 3 — entdecken
+TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
-ENTDECKEN (ein Konzept plus Textdiagramm):
+### Hook / Phaenomen
 
-Die Geschwindigkeit zaehlt wirksame Zusammenstoesse. Teilchen stossen staendig zusammen, doch nur drei erfuellte Bedingungen zaehlen: genug Energie zum Oeffnen alter Bindungen, richtige Orientierung zur Treffstelle, ausreichender Kontakt. Mehr Konzentration heisst mehr Teilchen pro Volumen, Erwaermen heisst groesserer energiegenuegender Anteil, groessere Feststoffoberflaeche heisst mehr Begegnungen — alle drei erhoehen die Haeufigkeit wirksamer Stoesse. Der Katalysator waehlt einen anderen Weg: Er erhoeht nicht die Stosszahl, sondern oeffnet einen Pfad mit niedrigerer Aktivierungsenergie, sodass ploetzlich viele bisher zu schwache Stoesse genuegen. Im Energiebild erscheint ein Doppelberg: Ohne Katalysator ein hoher Gipfel, mit Katalysator zwei flache Huegel bei gleichen Start- und Zielenergien — daher bleibt die Gleichgewichtslage gleich, nur die Zeit bis dahin schrumpft.
+Der Abgasversuch liefert harte Zahlen: $0{,}80$ auf $0{,}40\,\mathrm{mol/L}$ in $20\,\mathrm{s}$, also $v = 0{,}020\,\mathrm{mol/(L \cdot s)}$. Doch was bedeutet diese Zahl auf Teilchenebene — und warum duerfte man sie mit Katalysator frueher messen, aber nie anders im Gleichgewicht?
+
+### Fachbegriff & Definition
+
+Der **Doppelpeak des Katalysatorwegs** besagt: Der Katalysator ersetzt den einen hohen Energieberg durch **zwei flache Huegel** — Adsorption und Reaktion auf der Oberflaeche, dann Desorption der Produkte. Die **Aktivierungsenergie** $E_a$ sinkt, weil jeder Teilschritt eine kleinere Huerde besitzt; **Edukt- und Produktenergie bleiben unveraendert**, sodass Hin- und Rueckreaktion gleichermassen beschleunigt werden. Genau deshalb gilt: schneller zum Gleichgewicht, aber keine andere Lage — $K_c$ bleibt, nur die Zeit bis $Q = K_c$ wird kuerzer.
+
+### Wirkungsgefuege / Modell
+
+Denke in Kausalkette: **Haften, Treffen, Verlassen**. Erstens haften $CO$ und $NO$ an Platin und Rhodium — guenstige Lage ohne Extrakosten. Zweitens treffen sie sich in richtiger Orientierung bei niedrigerer $E_a$ — viele bisher zu schwache Stoesse werden wirksam. Drittens verlassen $CO_2$ und $N_2$ das Blech, die Haftplaetze werden frei — der Katalysator geht unverbraucht hervor. Blei blockiert die Plaetze dauerhaft — Katalysatorgift ohne Beteiligung an der Bilanz.
 
 ```diagram
    Energie ^
@@ -54,7 +83,8 @@ Die Geschwindigkeit zaehlt wirksame Zusammenstoesse. Teilchen stossen staendig z
             Edukte          \    Kat-Weg  \   Produkte
                              Ea(ohne) > Ea(mit)
    Legende: Ea = Huerde, Kat = neuer Weg mit Doppelpeak
-   Formel: v = Δc/Δt, Beispiel: 2CO + 2NO --Kat--> 2CO2 + N2
+   Formel: v = Dc/Dt, Beispiel: 2CO + 2NO --Kat--> 2CO2 + N2
+   Messwert: Dc = 0,40 mol/L, Dt = 20 s, v = 0,020 mol/(L s)
 ```
 
 Klausur-Satz: `Der Katalysator senkt die Aktivierungsenergie ueber einen neuen Weg mit Doppelpeak, ohne Anfangs- und Endenergie zu veraendern.`

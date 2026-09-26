@@ -16,60 +16,79 @@ version: Lesson-v3
 <!-- Lesson v3 9-Schritt-Architektur: Schritt 1 bis 8 feste Struktur; Fehlvorstellung zwischen Schritt 6 und 7 (Parser ueberspringt, zaehlt nicht); interaktive [Werkzeug: <id>]; Gating: check/szenario nicht bestanden = Weiter deaktiviert; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
 ## Schritt 1 — entdecken
+ZIELE (drei messbare Ziele dieser Lektion):
 
-ZIELE (diese Lektion in 15 Minuten: danach kannst du):
+1. Du kannst den MWG-Ausdruck einer reversiblen Reaktion aufstellen — mit zwei Regeln: Exponent gleich Koeffizient, reine Feststoffe und Fluessigkeiten entfallen.
+2. Du kannst mit dem Reaktionsquotienten $Q$ gegen $K_c$ die Richtung der Verschiebung bestimmen ($Q < K_c$ nach rechts, $Q > K_c$ nach links).
+3. Du kannst mit dem Prinzip von Le Chatelier Konzentrations-, Druck- und Temperaturaenderungen deuten und begruenden, dass allein die Temperatur $K_c$ veraendert.
 
-1. Den MWG-Ausdruck einer reversiblen Reaktion aufstellen; zwei Regeln: Exponent gleich Koeffizient, reine Feststoffe und Fluessigkeiten entfallen.
-2. Mit dem Reaktionsquotienten $Q$ gegen $K_c$ die Richtung der Verschiebung bestimmen.
-3. Mit dem Prinzip von Le Chatelier Konzentrations-, Druck- und Temperaturstoerungen deuten und begruenden, dass allein die Temperatur $K_c$ veraendert.
+### Hook / Phaenomen
+
+Im Schullabor stehen zwei Kolben mit demselben Gasgemisch: Erwaermt man den einen, wird er dunkelbraun, kuehlt man den anderen, wird er fast farblos — obwohl nichts hineingegeben und nichts entnommen wurde. Dahinter steckt $2NO_2 \rightleftharpoons N_2O_4$: Braunes $NO_2$ und farbloses $N_2O_4$ wandeln sich staendig ineinander um. Wie kann ein System reagieren, ohne dass sich am Ende die Konzentrationen aendern? Und warum veraendert Erwaermen die Lage dauerhaft, Druckerhoehung aber nur voruebergehend?
+
+### Fachbegriff & Definition
+
+Das **dynamische Gleichgewicht** ist der Zustand einer reversiblen Reaktion, in dem **Hin- und Rueckreaktion gleich schnell** ablaufen ($v_{hin} = v_{rueck}$) und die Konzentrationen deshalb konstant bleiben — die Reaktion steht nicht still, sie laeuft nur unsichtbar in beide Richtungen. Seine Lage beschreibt das **Massenwirkungsgesetz (MWG)**: Fuer $aA + bB \rightleftharpoons cC + dD$ gilt $K_c = \frac{[C]^c \cdot [D]^d}{[A]^a \cdot [B]^b}$. Zwei Regeln gehoeren dazu: Der **Exponent ist der stoechiometrische Koeffizient**, und **reine Feststoffe und Fluessigkeiten entfallen**, weil ihre Konzentration konstant ist — etwa gilt fuer $CaCO_3(s) \rightleftharpoons CaO(s) + CO_2(g)$ nur $K_c = [CO_2]$.
+
+### Wirkungsgefuege / Modell
+
+Die Kausalkette lautet: **Stoerung, Vergleich, Ablauf**. Jede Aenderung von Konzentration oder Druck veraendert zunaechst nur den **Reaktionsquotienten** $Q$, also denselben Ausdruck mit Momentanwerten. Ist $Q < K_c$, fehlen Produkte und das System laeuft nach rechts; ist $Q > K_c$, liegt ein Ueberschuss vor und es laeuft nach links — bis wieder $Q = K_c$ gilt. Allein die **Temperatur veraendert $K_c$ selbst**: Erwaermen bevorzugt die endotherme Richtung, Abkuehlen die exotherme. Wer eine Verschiebung deutet, nennt deshalb immer drei Teile — Stoerung, Richtung und Begruendung ueber $Q$ gegen $K_c$.
 
 Klausur-Satz: `Nach dem Massenwirkungsgesetz ist die Gleichgewichtskonstante K_c der Quotient der mit ihren Koeffizienten potenzierten Gleichgewichtskonzentrationen von Produkten und Edukten; reine Feststoffe und Flüssigkeiten werden nicht aufgenommen.`
 
 ## Schritt 2 — entdecken
+PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
-PRETRAINING (Kernbegriffe, erst lesen, dann abdecken und aktiv wiedergeben):
+### Hook / Phaenomen
 
-- Dynamisches Gleichgewicht: Hin- und Rueckreaktion laufen gleich schnell, die Konzentrationen bleiben konstant, die Reaktion steht nicht still.
-- Massenwirkungsgesetz (MWG): Die Gleichgewichtskonzentrationen werden nach Koeffizienten potenziert als Quotient geschrieben und ergeben $K_c$.
-- Gleichgewichtskonstante $K_c$: Sie haengt nur von der Temperatur ab; ihr Wert zeigt, ob das Gleichgewicht auf Produkt- oder Eduktseite liegt.
-- Reaktionsquotient $Q$: Derselbe Ausdruck mit beliebigen Momentankonzentrationen; der Vergleich von $Q$ mit $K_c$ entscheidet die Richtung.
-- Prinzip von Le Chatelier: Nach einer Stoerung weicht das System so aus, dass es die Stoerung abschwaecht.
+Zwei Buchstaben entscheiden ueber die Richtung jeder Gleichgewichtsreaktion: $Q$ und $K_c$. In der Ammoniak-Anlage wird $NH_3$ staendig abgezogen, obwohl die Reaktion $N_2 + 3H_2 \rightleftharpoons 2NH_3$ laengst laeuft — warum kommt sie nie zum Stillstand? Und warum hilft Abkuehlen der Ausbeute, aber nicht der Geschwindigkeit? Ohne fuenf praezise Begriffe bleibt jede Klausurantwort ein Ratespiel.
+
+### Fachbegriffe & Definitionen
+
+- **Dynamisches Gleichgewicht:** Zustand mit $v_{hin} = v_{rueck}$; die Konzentrationen bleiben konstant, obwohl Hin- und Rueckreaktion weiterlaufen — kein Stillstand, sondern unsichtbarer Ausgleich.
+- **Massenwirkungsgesetz (MWG):** Vorschrift $K_c = \frac{[C]^c \cdot [D]^d}{[A]^a \cdot [B]^b}$; Exponenten sind die Koeffizienten, reine Feststoffe und Fluessigkeiten entfallen.
+- **Gleichgewichtskonstante $K_c$:** Haengt allein von der Temperatur ab; $K_c \gg 1$ bevorzugt die Produkte, $K_c \ll 1$ die Edukte — sie ist die Zielmarke des Systems.
+- **Reaktionsquotient $Q$:** Derselbe Ausdruck mit beliebigen Momentankonzentrationen; $Q < K_c$ treibt nach rechts, $Q > K_c$ nach links, $Q = K_c$ bedeutet Gleichgewicht.
+- **Prinzip von Le Chatelier:** Nach einer Stoerung weicht das System so aus, dass es die Stoerung abschwaecht — Eduktzugabe treibt nach rechts, Druckerhoehung auf die Seite mit weniger Gasteilchen, Erwaermen in die endotherme Richtung.
+
+### Wirkungsgefuege / Modell
+
+Die Begriffe greifen ineinander: Das **MWG** liefert den Ausdruck, $K_c$ die temperaturabhaengige Zielmarke und $Q$ den Momentanwert. **Le Chatelier** ist die qualitative Abkuerzung derselben Logik — jede Stoerung veraendert $Q$, das System laeuft, bis $Q$ wieder gleich $K_c$ ist. In der Klausur gehoeren beide Ebenen zusammen: erst die Richtung nach Le Chatelier nennen, dann mit $Q$ gegen $K_c$ begruenden. Nur die Temperatur verschiebt die Zielmarke $K_c$ selbst; Konzentration und Druck veraendern lediglich den Abstand $Q$ zu $K_c$.
 
 Klausur-Satz: `Ein dynamisches Gleichgewicht liegt vor, wenn die Geschwindigkeiten der Hin- und Rückreaktion gleich groß sind und die Konzentrationen konstant bleiben.`
 
 ## Schritt 3 — entdecken
+TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
-ENTDECKEN (ein Konzept plus Textdiagramm):
+### Hook / Phaenomen
 
-Eine reversible Reaktion laeuft nicht bis zum Ende, sondern bleibt an einer Stelle stehen: Hin- und Rueckreaktion werden gleich schnell, die Konzentrationen aendern sich nicht mehr — das ist das dynamische Gleichgewicht. Die Lage wird durch $K_c$ beschrieben: $K_c \gg 1$ bevorzugt die Produkte, $K_c \ll 1$ die Edukte. Die eigentliche Arbeitsregel ist das Prinzip von Le Chatelier: Jede Stoerung wird durch Ausweichen abgeschwaecht. Edukt zugeben treibt nach rechts; Druck senken bevorzugt die Seite mit mehr Gasteilchen; Erwaermen bevorzugt die endotherme Richtung. Entscheidend ist die Trennung: Konzentration und Druck aendern nur $Q$, sodass $Q \ne K_c$ gilt und das System laeuft, bis $Q$ wieder gleich $K_c$ ist; allein die Temperatur veraendert $K_c$ selbst.
+Die Haber-Bosch-Anlage arbeitet bei ueber 400 Grad Celsius, obwohl hohe Temperatur die Ammoniak-Ausbeute senkt — ein scheinbarer Widerspruch, der ueber Millionen Tonnen Duenger entscheidet. Er loest sich nur, wenn man Ausbeute und Geschwindigkeit getrennt denkt und jede Stoerung sauber durch den $Q$-$K_c$-Vergleich hindurchdenkt.
+
+### Fachbegriff & Definition
+
+Der **Zielkonflikt der Ammoniaksynthese** lautet: Die Hinreaktion $N_2 + 3H_2 \rightleftharpoons 2NH_3$ ist **exotherm** ($\Delta H < 0$), daher verschiebt Erwaermen das Gleichgewicht nach links und **senkt $K_c$** — die Ausbeute sinkt. Gleichzeitig verlangt die **Reaktionsgeschwindigkeit** hohe Temperatur, weil sonst kaum wirksame Zusammenstoesse stattfinden. Die Industrie waehlt deshalb einen Kompromiss: mittlerer Temperaturbereich plus **hoher Druck** (4 gegen 2 Gasteilchen, Verschiebung nach rechts) plus **Katalysator**, der nur die Zeit bis $Q = K_c$ verkuerzt, ohne die Lage zu veraendern.
+
+### Wirkungsgefuege / Modell
+
+Denke in Kausalkette: **Stoerung, Mengenreaktion, Kennzahl**. Edukt zugeben oder Produkt entziehen senkt $Q$ unter $K_c$ — Ablauf nach rechts bei unveraendertem $K_c$. Druck erhoehen bevorzugt die Seite mit weniger Gasteilchen — $Q$ passt sich an, $K_c$ bleibt. Temperatur erhoehen veraendert $K_c$ selbst — bei exothermer Hinreaktion sinkt $K_c$, das System laeuft nach links. Der **Katalysator** aendert weder $Q$ noch $K_c$, sondern nur die Geschwindigkeit, mit der $Q$ wieder gleich $K_c$ wird.
 
 ```diagram
-N2 + 3 H2  <==>  2 NH3      (Hinreaktion exotherm, dH < 0)
- Edukte: 4 Gasteilchen      Produkt: 2 Gasteilchen
+  N2 + 3 H2  <==>  2 NH3      (Hinreaktion exotherm, dH < 0)
+   Edukte: 4 Gasteilchen       Produkt: 2 Gasteilchen
 
- Stoerung (Stress)          Antwort des Systems      K_c?
- ------------------------------------------------  ------
- c(N2) oder c(H2) erhoehen  -> nach rechts (Produkt)  unveraendert
- c(NH3) entziehen           -> nach rechts            unveraendert
- Druck erhoehen             -> nach rechts (weniger   unveraendert
-                               Gasteilchen)
- Temperatur erhoehen        -> nach links (endotherm  sinkt
-                               Richtung bevorzugt)
- Katalysator zugeben        -> nur schneller, Lage     unveraendert
-                               unveraendert
+   Stoerung (Stress)           Antwort des Systems      K_c?
+   -------------------------------------------------  ------
+   c(N2) oder c(H2) erhoehen   -> nach rechts            unveraendert
+   c(NH3) entziehen            -> nach rechts            unveraendert
+   Druck erhoehen              -> nach rechts (weniger   unveraendert
+                                  Gasteilchen)
+   Temperatur erhoehen         -> nach links (endotherme sinkt
+                                  Richtung bevorzugt)
+   Katalysator zugeben         -> nur schneller, Lage    unveraendert
+                                  unveraendert
+
+   Regel: Q < K_c nach rechts, Q > K_c nach links, Q = K_c Gleichgewicht
 ```
-
-Drei Rechenaufgaben im Ueberblick:
-
-1. $K_c$ bestimmen: Gleichgewichtskonzentrationen gegeben, direkt in den MWG-Ausdruck einsetzen.
-2. Gleichgewichtskonzentration oder Umsatz bestimmen: $K_c$ und Startkonzentrationen gegeben, Dreisatztabelle aufstellen und nach $x$ loesen.
-3. Richtung bestimmen: $K_c$ und Momentankonzentrationen gegeben, $Q$ berechnen und vergleichen ($Q < K_c$ nach rechts, $Q > K_c$ nach links, $Q = K_c$ im Gleichgewicht).
-
-Zwei Grundregeln: Der Exponent ist der stoechiometrische Koeffizient; reine Feststoffe und Fluessigkeiten entfallen (z. B. gilt fuer $CaCO_3(s) \rightleftharpoons CaO(s) + CO_2(g)$ nur $K_c = [CO_2]$).
-
-Richtungsregel in einem Satz: Ist $Q$ kleiner als $K_c$, fehlen Produkte und die Reaktion laeuft nach rechts; ist $Q$ groesser, liegt ein Ueberschuss vor und sie laeuft nach links; bei Gleichheit ist das Gleichgewicht erreicht. Danach folgt der Satz, dass das System laeuft, bis $Q$ wieder gleich $K_c$ ist.
-
-Klausur-Tipp: Jede Antwort auf eine Verschiebungsfrage braucht drei Teile — die Stoerung, die Richtung und die Begruendung (Abschwaechung oder $Q$-$K_c$-Vergleich). Richtung ohne Begruendung verliert die Begruendungspunkte.
 
 Klausur-Satz: `Eine Änderung der Konzentration oder des Drucks verändert K_c nicht, sondern nur den Reaktionsquotienten Q; allein eine Temperaturänderung verändert K_c selbst.`
 

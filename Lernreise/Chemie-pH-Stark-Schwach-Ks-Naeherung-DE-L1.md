@@ -16,42 +16,70 @@ version: Lesson-v3
 <!-- Lesson v3 architecture: Schritte 1-8 fixed; Fehlvorstellung between Schritt 6 and 7 (parser skipped); embedded [Werkzeug: <id>]; gating: check/szenario failed = Weiter greyed; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
 ## Schritt 1 — entdecken
+ZIELE (drei messbare Ziele dieser Lektion):
 
-ZIELE (3 Ziele, nach 15 Minuten erreichbar):
+1. Du kannst den pH starker Saeuren direkt aus $pH = -\lg c_0$ berechnen, weil $[H_3O^+] = c_0$ gilt.
+2. Du kannst fuer schwache Saeuren die Naeherung $[H_3O^+] = \sqrt{K_s \cdot c_0}$ aus dem MWG herleiten und anwenden.
+3. Du kannst anhand von $K_s$ entscheiden, welche Formel zulaessig ist, und die Naeherung mit $x/c_0 < 5\,\%$ pruefen (AFB II).
 
-1. Den pH starker Saeuren direkt aus $pH = -\log c_0$ berechnen.
-2. Fuer schwache Saeuren die Naeherung $[H_3O^+] = \sqrt{K_s \cdot c_0}$ herleiten und anwenden.
-3. Anhand von $K_s$ entscheiden, welche Formel zulaessig ist (AFB II).
+### Hook / Phaenomen
 
-VORAUSSETZUNG: Logarithmus, MWG-Ausdruck und Protolysegleichungen.
+Reiner Zitronensaft und Magensalzsaeure schmecken beide sauer — doch ihre $pH$-Werte entstehen voellig anders: Die eine Saeure gibt fast jedes Proton ab, die andere nur einen Bruchteil. Der Geschmack taeuscht ueber die Chemie hinweg. Warum liefert $0{,}10\,\mathrm{mol/L}$ Essigsaeure nur $pH = 2{,}87$, waehrend $0{,}10\,\mathrm{mol/L}$ Salzsaeure $pH = 1{,}00$ zeigt — bei gleicher Konzentration fast zwei Einheiten Unterschied?
 
-VORGAENGER-VERWEIS: Diese Lektion setzt `Chemie-Saeure-Base-pH-L1.md` voraus und wiederholt sie nicht. Dort wurden pH-Definition, starke Saeuren und das Ablesen aus Skalen eingefuehrt. Hier folgt der enge Ausschnitt: nur die Unterscheidung stark/schwach mit $K_s$-Naeherung; Puffer und Titration gehoeren nicht hierher.
+### Fachbegriff & Definition
+
+Eine **starke Saeure** protolysiert **praktisch vollstaendig**, also gilt $[H_3O^+] = c_0$ und $pH = -\lg c_0$ — ein Schritt genuegt. Eine **schwache Saeure** steht im **Protolysegleichgewicht** $HA + H_2O \rightleftharpoons H_3O^+ + A^-$ mit $K_s = \frac{[H_3O^+][A^-]}{[HA]}$; nur der Bruchteil $x$ liegt als Ionen vor. Der **$pK_s$-Wert** ($pK_s = -\lg K_s$) ordnet die Staerke: je kleiner, desto staerker die Saeure. Die logarithmische Form der Naeherung heisst **Ostwald-Formel**: $pH = 0{,}5 \cdot (pK_s - \lg c_0)$.
+
+### Wirkungsgefuege / Modell
+
+Die Kausalkette lautet: **Staerke pruefen, Ansatz waehlen, Naeherung kontrollieren**. Mit $[H_3O^+] = [A^-] = x$ und $[HA] = c_0 - x$ folgt $K_s = x^2/(c_0 - x)$. Die Naeherung $x \ll c_0$ kuerzt den Nenner zu $c_0$, also $x = \sqrt{K_s \cdot c_0}$ und $pH = -\lg x$. Sie ist nur tragfaehig, wenn $x$ unter etwa $5\,\%$ von $c_0$ bleibt — etwa $x/c_0 = 1{,}34 \cdot 10^{-3}/0{,}10 = 1{,}3\,\%$ bei Essigsaeure. Sonst muss die quadratische Gleichung geloest werden; $K_s$ relativ zu $c_0$ entscheidet.
 
 Klausur-Satz: `Starke Saeuren protolysieren vollstaendig, schwache nur teilweise gemaess ihrer Saeurekonstante K_s.`
 
 ## Schritt 2 — entdecken
+PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
-PRETRAINING (Kernbegriffe):
+### Hook / Phaenomen
 
-- Starke Saeure: Protolysiert praktisch vollstaendig, also $[H_3O^+] = c_0$.
-- Schwache Saeure: Gleichgewicht $HA + H_2O \rightleftharpoons H_3O^+ + A^-$ mit $K_s = [H_3O^+][A^-]/[HA]$.
-- Naeherung: Bei $K_s \ll c_0$ gilt $[H_3O^+] = \sqrt{K_s \cdot c_0}$.
-- $pK_s$-Wert: $pK_s = -\log K_s$; je kleiner, desto staerker die Saeure.
-- Ostwald-Formel: $pH = 0{,}5 \cdot (pK_s - \log c_0)$ als logarithmische Form der Naeherung.
+Gleicher $pH$ aus hoher Konzentration einer schwachen oder niedriger Konzentration einer starken Saeure — der $pH$ allein verraet die Staerke nicht. Woran erkennt man in Sekunden, ob die Wurzelformel erlaubt ist oder die quadratische Gleichung droht? Fuenf Begriffe sind das Fruehwarnsystem.
+
+### Fachbegriffe & Definitionen
+
+- **Starke Saeure:** Protolysiert praktisch vollstaendig, also $[H_3O^+] = c_0$; Beispiele $HCl$ ($pK_s \approx -6$) und $HNO_3$ — direkt $pH = -\lg c_0$.
+- **Schwache Saeure:** Gleichgewicht $HA + H_2O \rightleftharpoons H_3O^+ + A^-$ mit $K_s = \frac{[H_3O^+][A^-]}{[HA]}$; Beispiel Essigsaeure mit $K_s = 1{,}8 \cdot 10^{-5}\,\mathrm{mol/L}$.
+- **Naeherung:** Bei $K_s \ll c_0$ gilt $[H_3O^+] = \sqrt{K_s \cdot c_0}$; der Nenner $c_0 - x$ wird zu $c_0$ gekuerzt.
+- **$pK_s$-Wert:** $pK_s = -\lg K_s$; je kleiner, desto staerker die Saeure — er ordnet $HCl$, $HAc$ und $H_2O$ auf einer Skala.
+- **Ostwald-Formel:** $pH = 0{,}5 \cdot (pK_s - \lg c_0)$ als logarithmische Form der Naeherung — ein Rechenschritt statt Wurzel plus Logarithmus.
+
+### Wirkungsgefuege / Modell
+
+Die Begriffe bilden die Entscheidungsstrasse: **$K_s$ lesen, Verfahren waehlen, $x/c_0$ pruefen**. Nur $c_0$ bei starker Saeure verlangt direktes $-\lg$; $K_s$ bei schwacher Saeure verlangt Dreisatztabelle mit Pruefung. Die Faustregel schuetzt vor dem klassischen Fehler — direktes Einsetzen bei schwachen Saeuren unterschaetzt den $pH$ um mehrere Einheiten. Nach jeder Rechnung folgt die Kontrolle $x/c_0 < 5\,\%$; ohne sie kostet selbst das richtige Ergebnis Abzug.
 
 Klausur-Satz: `Die Naeherung gilt nur fuer schwache Saeuren mit kleinem K_s relativ zur Ausgangskonzentration.`
 
 ## Schritt 3 — entdecken
+TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
-ENTDECKEN (ein Konzept plus Diagramm):
+### Hook / Phaenomen
 
-Bei starken Saeuren ist die Rechnung trivial, bei schwachen entscheidet das Gleichgewicht. Mit $[H_3O^+] = [A^-] = x$ und $[HA] = c_0 - x$ folgt $K_s = x^2/(c_0 - x)$. Die Naeherung $x \ll c_0$ kuerzt den Nenner zu $c_0$, also $x = \sqrt{K_s \cdot c_0}$. Sie ist nur tragfaehig, wenn $x$ unter etwa $5$ Prozent von $c_0$ bleibt; sonst muss die quadratische Gleichung geloest werden.
+Essigsaeure $c_0 = 0{,}10\,\mathrm{mol/L}$: Die Wurzel liefert $x = 1{,}34 \cdot 10^{-3}\,\mathrm{mol/L}$ und $pH = 2{,}87$ — bei zehnfacher Ausgangskonzentration gegenueber $0{,}005\,\mathrm{mol/L}$ Salzsaeure ($pH = 2{,}30$) nur wenig saurer. Woher kommt diese Daempfung, und wann bricht die Wurzelformel zusammen?
+
+### Fachbegriff & Definition
+
+Die **Wurzelnaeherung** folgt aus dem **MWG unter der Annahme geringer Protolyse**: Aus $K_s = x^2/(c_0 - x)$ wird mit $c_0 - x \approx c_0$ sofort $x = \sqrt{K_s \cdot c_0}$. Sie gilt nur fuer **schwache Saeuren mit kleinem $K_s$ relativ zu $c_0$** — bei $x/c_0 = 1{,}3\,\%$ ist sie zulaessig, oberhalb $5\,\%$ muss quadratisch geloest werden. Die Daempfung erklaert sich selbst: Je mehr protolysiert, desto staerker bremst das wachsende $x$ im Nenner — das Gleichgewicht schuetzt sich vor vollstaendiger Protolyse.
+
+### Wirkungsgefuege / Modell
+
+Denke in Kausalkette: **Gleichgewicht, Kuerzung, Kontrolle**. Erstens Dreisatztabelle: Start $c_0/0/0$, Aenderung $-x/+x/+x$, Gleichgewicht $c_0 - x/x/x$. Zweitens in $K_s$ einsetzen und bei kleinem $K_s$ kuerzen. Drittens $pH = -\lg x$ bilden und $x/c_0$ pruefen. Starke Saeuren ueberspringen alles — $[H_3O^+] = c_0$ in einem Schritt.
 
 ```diagram
-stark:   HA -> H3O+ + A-        [H3O+] = c_0        pH = -log c_0
-schwach: HA <-> H3O+ + A-       K_s = x^2/(c_0-x)   x = sqrt(K_s*c_0)
-Test:    x/c_0 < 0,05? Naeherung ok : quadratisch loesen
-pH-Skala: sauer <- 7 -> basisch, je Einheit Faktor 10
+  stark:   HA -> H3O+ + A-       [H3O+] = c0        pH = -lg c0
+  schwach: HA <-> H3O+ + A-      K_s = x^2/(c0-x)  x = sqrt(K_s*c0)
+  Test:    x/c0 < 0,05? Naeherung ok : quadratisch loesen
+  pH-Skala: sauer <- 7 -> basisch, je Einheit Faktor 10
+  Beispiel: HAc 0,10 mol/L, K_s = 1,8*10^-5
+    x = 1,34*10^-3 mol/L, pH = 2,87, x/c0 = 1,3 % ok
+  Ostwald: pH = 0,5 * (pK_s - lg c0)
 ```
 
 Klausur-Satz: `Die Wurzelformel folgt aus dem MWG unter der Annahme geringer Protolyse.`

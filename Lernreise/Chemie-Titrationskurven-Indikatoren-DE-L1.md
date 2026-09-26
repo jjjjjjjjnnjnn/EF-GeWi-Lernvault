@@ -16,47 +16,75 @@ version: Lesson-v3
 <!-- Lesson v3: Schritt 1-8 feste Struktur; Fehlvorstellung zwischen Schritt 6 und 7 (Parser skip); [Werkzeug: <id>] interaktiv; Gating: check/szenario nicht bestanden = Weiter grau; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
 ## Schritt 1 — entdecken
+ZIELE (drei messbare Ziele dieser Lektion):
 
-ZIELE (3 Ziele, nach 15 Minuten erreichbar):
-
-1. Du kannst die Titrationskurve $pH = f(V)$ einer starken Saeure mit starker Base in drei Abschnitten beschreiben.
+1. Du kannst die Titrationskurve $pH = f(V)$ einer starken Saeure mit starker Base in drei Abschnitten (Start, Sprung, Ueberschuss) beschreiben.
 2. Du kannst den Aequivalenzpunkt mit $n(H^+) = n(OH^-)$ berechnen und vom Neutralpunkt $pH = 7$ abgrenzen.
 3. Du kannst einen Indikator mit $pK_{In}$ passend zum Sprungbereich auswaehlen und begruenden (AFB II).
 
-EINSTIEG: Im Jahr 1867 vergiftete eine falsch etikettierte Lauge in einer Fabrik beinahe eine ganze Schicht, weil niemand die Konzentration pruefte. Titration rettet hier Leben: Tropfen fuer Tropfen verraten $pH$-Sprung und Gehalt. Wer den Umschlag trifft, kennt die Wahrheit in der Flasche.
+### Hook / Phaenomen
+
+Im Jahr 1867 vergiftete eine falsch etikettierte Lauge in einer Fabrik beinahe eine ganze Schicht, weil niemand die Konzentration pruefte. Titration rettet hier Leben: Tropfen fuer Tropfen verraet der $pH$-Sprung den wahren Gehalt der Flasche. Doch warum aendert ein einziger Tropfen den $pH$ um mehrere Einheiten — und woher weiss der Farbstoff, wann er umschlagen muss?
+
+### Fachbegriff & Definition
+
+Der **Aequivalenzpunkt** ist der Punkt mit **gleicher Stoffmenge** $n(H^+) = n(OH^-)$ — also $c_aV_a = c_bV_b$ — und haengt vom Salztyp ab: stark gegen stark trifft bei $pH = 7$, schwach gegen stark im basischen Bereich. Der **pH-Sprung** ist der steile Kurventeil um diesen Punkt: Nahe $n(H^+) = n(OH^-)$ dreht ein Tropfen das Verhaeltnis $[H^+]/[OH^-]$ um Groessenordnungen. Der **Indikator** als Farbstoffpaar $HIn \rightleftharpoons H^+ + In^-$ schlaegt bei $pH \approx pK_{In} \pm 1$ um — er muss im Steilbereich liegen, sonst verfaerbt er sich zu frueh oder zu spaet.
+
+### Wirkungsgefuege / Modell
+
+Die Kausalkette lautet: **Zutropfen, Umschlagen, Ablesen**. Erstens Massloesung zutropfen und $pH = f(V)$ verfolgen: flacher Start, steiler Sprung, flacher Ueberschuss. Zweitens Indikator waehlen, dessen $pK_{In}$ im Sprung liegt — etwa Bromthymolblau ($pK_{In} \approx 7{,}1$) fuer stark gegen stark mit Sprung von ca. $4$ bis $10$. Drittens am Umschlag $V_b$ ablesen und ueber $c_aV_a = c_bV_b$ die unbekannte Konzentration berechnen. Bei schwach gegen stark liegt der Aequivalenzpunkt wegen $CH_3COO^- + H_2O \rightleftharpoons CH_3COOH + OH^-$ oberhalb $7$ — dann passt Phenolphthalein, nicht Methylorange.
 
 Klausur-Satz: `Der pH-Sprung markiert den Aequivalenzpunkt, der Indikator macht ihn sichtbar.`
 
 ## Schritt 2 — entdecken
+PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
-GRUNDBEGRIFFE (5 Begriffe):
+### Hook / Phaenomen
 
-- **Titration**: Massanalyse mit $c = \frac{n}{V}$, bei der Massloesung bis zum Umschlag zugegeben wird.
-- **Aequivalenzpunkt**: Punkt mit $n(H^+) = n(OH^-)$, Stoffmengen gleich, $pH$ haengt vom Salztyp ab.
-- **Neutralpunkt**: $pH = 7$ bei $25^\circ\mathrm{C}$ aus $K_w = 10^{-14}$, nur bei stark/stark gleich dem Aequivalenzpunkt.
-- **Indikator**: Farbstoffpaar $HIn \rightleftharpoons H^+ + In^-$ mit Umschlag bei $pH \approx pK_{In} \pm 1$.
-- **Pufferbereich**: Flacher Kurventeil mit $pH = pK_a + \log\frac{[A^-]}{[HA]}$ nach Henderson-Hasselbalch.
+Zwanzig Milliliter Salzsaeure, unbekannte Lauge, ein Tropfen zu viel — und die Auswertung kippt. Was unterscheidet den Punkt, an dem die Stoffmengen gleich sind, vom Punkt $pH = 7$? Und warum zeigt der Pufferbereich fast keine $pH$-Aenderung, der Sprung aber eine riesige? Fuenf Begriffe klaeren das Bild.
+
+### Fachbegriffe & Definitionen
+
+- **Titration:** Massanalyse mit $c = n/V$, bei der Massloesung bis zum Farbumschlag zugegeben und das verbrauchte Volumen abgelesen wird.
+- **Aequivalenzpunkt:** Punkt mit $n(H^+) = n(OH^-)$; die Stoffmengen sind gleich, der $pH$ haengt vom Salztyp ab — nur stark gegen stark bei $7$.
+- **Neutralpunkt:** $pH = 7$ bei $25^\circ\mathrm{C}$ aus $K_w = 10^{-14}$; nur bei stark gegen stark identisch mit dem Aequivalenzpunkt.
+- **Indikator:** Farbstoffpaar $HIn \rightleftharpoons H^+ + In^-$ mit Umschlag bei $pH \approx pK_{In} \pm 1$ — er muss im Steilbereich der Kurve liegen.
+- **Pufferbereich:** Flacher Kurventeil mit $pH = pK_a + \log\frac{[A^-]}{[HA]}$ nach Henderson-Hasselbalch; zugesetzte $H^+$ oder $OH^-$ werden abgefangen.
+
+### Wirkungsgefuege / Modell
+
+Die Begriffe greifen ineinander: Die **Titration** erzeugt die Kurve $pH = f(V)$, der **Aequivalenzpunkt** markiert $n(H^+) = n(OH^-)$, der **Indikator** macht ihn sichtbar. **Neutralpunkt** und Aequivalenzpunkt fallen nur bei stark gegen stark zusammen; bei schwach gegen stark hydrolysiert das Salz und verschiebt den Punkt. Der **Pufferbereich** daempft, der Sprung verstaerkt — steil heisst empfindlich: Ein Tropfen aendert den $pH$ um mehrere Einheiten.
 
 Klausur-Satz: `Der Indikator muss im Steilbereich der Kurve umschlagen.`
 
 ## Schritt 3 — entdecken
+TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
-KONZEPT (ein Konzept plus ein Textdiagramm):
+### Hook / Phaenomen
 
-Bei stark/stark startet die Kurve tief, steigt flach, springt am Aequivalenzpunkt von etwa $pH = 4$ auf $pH = 10$ und flacht wieder ab. Der Sprung kommt daher, dass nahe $n(H^+) = n(OH^-)$ ein Tropfen das Verhaeltnis $\frac{[H^+]}{[OH^-]}$ um Groessenordnungen dreht. Bei schwach/stark liegt der Aequivalenzpunkt mit $pH > 7$, weil $CH_3COO^- + H_2O \rightleftharpoons CH_3COOH + OH^-$ basisch hydrolysiert.
+$20{,}0\,\mathrm{mL}$ Salzsaeure ($0{,}1\,\mathrm{mol/L}$) gegen Natronlauge ($0{,}1\,\mathrm{mol/L}$): Bei $20{,}0\,\mathrm{mL}$ schlaegt die Farbe um — gleiche Konzentration, gleiches Volumen. Zufall oder Gesetz? Und warum duerfte man hier Bromthymolblau nehmen, bei Essigsaeure aber nicht Methylorange?
+
+### Fachbegriff & Definition
+
+Die **stark-stark-Kurve** startet tief (Saeurevorlage), steigt flach, springt am Aequivalenzpunkt von etwa $pH = 4$ auf $pH = 10$ und flacht wieder ab. Der Sprung kommt daher, dass nahe $n(H^+) = n(OH^-)$ ein Tropfen das Verhaeltnis $[H^+]/[OH^-]$ um Groessenordnungen dreht. Bei **schwach gegen stark** liegt der Aequivalenzpunkt mit $pH > 7$, weil $CH_3COO^- + H_2O \rightleftharpoons CH_3COOH + OH^-$ basisch hydrolysiert — der Indikator muss dann oberhalb $7$ umschlagen.
+
+### Wirkungsgefuege / Modell
+
+Denke in Kausalkette: **Typ bestimmen, Punkt berechnen, Indikator waehlen**. Erstens Salztyp klaeren — stark/stark ($pH = 7$) oder schwach/stark ($pH \ne 7$). Zweitens $V_b = c_aV_a/c_b$ aus $n(H^+) = n(OH^-)$ berechnen — hier $V_b = 20{,}0\,\mathrm{mL}$. Drittens $pK_{In}$ in den Sprung legen: Bromthymolblau ($pK_{In} \approx 7{,}1$) passt in $4$ bis $10$, Methylorange ($pK_{In} \approx 3{,}7$) laege am Rand und waere unsicher.
 
 ```diagram
     pH
     12|                 ....------
-    10|               ..
-     8|              . Sprung
+    10|               ..  Sprung ca. 4 -> 10 (stark/stark)
+     8|              .
      6|              .
      4|  Start .....
      2|..
       +-------------------------------- V(Base)
        Start  Puffer  Aequivalenz  Ueberschuss
-       stark/stark: Sprung ca. 4 -> 10
-       schwach/stark: Aequivalenz bei pH > 7
+       stark/stark: Aequivalenz bei pH = 7, Vb = 20,0 mL
+       schwach/stark: Aequivalenz bei pH > 7 (Hydrolyse)
+       Indikator: pK_In im Sprung (BTB 7,1 ok; MO 3,7 unsicher)
 ```
 
 Klausur-Satz: `Steil heisst empfindlich: Ein Tropfen aendert den pH um mehrere Einheiten.`

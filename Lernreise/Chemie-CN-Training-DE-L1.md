@@ -16,52 +16,61 @@ version: Lesson-v3
 <!-- Lesson v3 9-Schritt-Architektur: Schritt 1 bis 8 feste Struktur; Fehlvorstellung zwischen Schritt 6 und 7 (Parser ueberspringt, zaehlt nicht); interaktive [Werkzeug: <id>]; Gating: check/szenario nicht bestanden = Weiter deaktiviert; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
 ## Schritt 1 — entdecken
+ZIELE (drei messbare Ziele dieser Lektion):
 
-ZIELE (diese Lektion in 15 Minuten: danach kannst du):
+1. Du kannst unter Zeitlimit vier Grundaufgaben in der festen Kette loesen: Ausgleichen, Koeffizientenverhaeltnis, Rechnung mit Einheit, Groessenordnungspruefung.
+2. Du kannst mit dem Erwartungshorizont (EHZ) die eigene Antwort schrittweise bepunktet und den punktlosen Schritt benennen.
+3. Du kannst jede Aufgabe mit einem deutschen Transfer-Satz auf AFB-II-Niveau schliessen.
 
-1. Unter Zeitlimit vier Grundaufgaben in der festen Kette Ausgleichen, Koeffizientenverhaeltnis, Rechnung mit Einheit, Groessenordnungspruefung loesen.
-2. Mit dem Erwartungshorizont (EHZ) die eigene Antwort schrittweise bepunktet und den punktlosen Schritt benennen.
-3. Jede Aufgabe mit einem deutschen Transfer-Satz auf AFB-II-Niveau schliessen.
+### Hook / Phaenomen
+
+Im Jahr 1999 ging der Mars Climate Orbiter verloren — kein technischer Defekt, sondern ein Einheitenfehler: Ein Team rechnete metrisch, das andere amerikanisch. Ein einziger fehlender Schritt kostete die Mission. In der Klausur kostet er Punkte — und der Erwartungshorizont verrät vorher, wo sie liegen. Wie trainiert man unter Zeitdruck Vollstaendigkeit statt nur Richtigkeit?
+
+### Fachbegriff & Definition
+
+Der **Erwartungshorizont (EHZ)** ist die **Punkteliste pro Loesungsschritt**: Gleichungsgeruest, Koeffizienten, Einheiten und Groessenordnungspruefung tragen je eigene Punkte. Die **feste Kette** lautet: Gleichung ausgleichen, Koeffizientenverhaeltnis als Molverhaeltnis ablesen, mit $n = m/M$ und Einheit rechnen, Groessenordnung pruefen und einen deutschen **Transfer-Satz** schreiben. Zeitlimit-Training prueft nicht das richtige Ergebnis, sondern die vollstaendige Darstellung unter Druck — $20$ Minuten, vier Aufgaben, danach Selbstkontrolle Schritt fuer Schritt.
+
+### Wirkungsgefuege / Modell
+
+Die Kausalkette lautet: **Kette einhalten, Punkte sichern, Luecke loggen**. Wer die Kette einhaelt — etwa $2Al + 6HCl \to 2AlCl_3 + 3H_2$ mit Zaehlkontrolle, $n = 0{,}10\,\mathrm{mol}$ und $V = 2{,}24\,\mathrm{L}$ mit $2$-L-Flaschenmass, $pH = 2{,}70$ aus $[H_3O^+] = c_0$ — sammelt Teilpunkte auch bei Rechenfehlern. Wer sie bricht, verliert ganze Bloecke. Nach dem Training wird der punktlose Schritt zum **Fehlerlog-Eintrag**: Beobachtung und Deutung trennen, erst Phaenomen beschreiben, dann mit der Regel erklaeren.
 
 Klausur-Satz: `Gleichung, Verhältnis, Einheit und Prüfung – jeder Schritt trägt Punkte.`
 
 ## Schritt 2 — entdecken
+PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
-PRETRAINING (Kernbegriffe, erst lesen, dann abdecken und aktiv wiedergeben):
+### Hook / Phaenomen
 
-- Ausgleichen: Nur Koeffizienten aendern, keine Indizes; danach die Atome beidseitig nachzaehlen.
-- Erwartungshorizont (EHZ): Die Punkteliste pro Loesungsschritt; jeder Schritt traegt eigene Punkte.
-- Stoffmenge $n$: Der Knoten zwischen Masse, Teilchenzahl und Konzentration.
-- Trennung von Beobachtung und Deutung: Erst das Phaenomen beschreiben, dann mit der Regel erklaeren.
-- Transfer-Satz: Der Schlusssatz auf Deutsch, der das Ergebnis klausurtauglich formuliert.
+Vier Aufgaben, $20$ Minuten, $18$ Punkte — doch die Punkte liegen nicht im Ergebnis, sondern in den Schritten. Welcher Schritt traegt wie viele Punkte, und woran erkennt man den eigenen punktlosen Schritt? Fuenf Begriffe machen das Training auswertbar.
+
+### Fachbegriffe & Definitionen
+
+- **Ausgleichen:** Nur Koeffizienten aendern, keine Indizes; danach die Atome beidseitig nachzaehlen — etwa $2Al + 6HCl \to 2AlCl_3 + 3H_2$ mit Kontrolle $Al$ $2$:$2$, $H$ $6$:$6$, $Cl$ $6$:$6$.
+- **Erwartungshorizont (EHZ):** Die Punkteliste pro Loesungsschritt; jeder Schritt traegt eigene Punkte — Geruest, Koeffizienten, Einheiten, Pruefung, Satz.
+- **Stoffmenge $n$:** Der Knoten zwischen Masse, Teilchenzahl und Konzentration — etwa $n = 4{,}4/44 = 0{,}10\,\mathrm{mol}$ und $V = 2{,}24\,\mathrm{L}$ mit Flaschenmass.
+- **Trennung von Beobachtung und Deutung:** Erst das Phaenomen beschreiben, dann mit der Regel erklaeren — kein weil-Satz in der Beschreibung.
+- **Transfer-Satz:** Der Schlusssatz auf Deutsch, der das Ergebnis klausurtauglich formuliert — etwa da Salzsäure vollständig dissoziiert, gilt $[H_3O^+] = c_0$.
+
+### Wirkungsgefuege / Modell
+
+Die Begriffe bilden den Trainingskreislauf: **Aufgabe loesen, EHZ anlegen, Luecke benennen**. Die vier Uebungsaufgaben decken Ausgleichen, Molrechnung, Redox ($Na: 0 \to +I$, $Cl: 0 \to -I$) und $pH$ ab; jede traegt EHZ-Punkte und einen Pruefsatz. Nach $20$ Minuten folgt die Selbstkontrolle Schritt fuer Schritt; der punktlose Schritt wird zum Fehlerlog-Eintrag. Beobachtung und Deutung bleiben getrennt: Zuerst wird das Phaenomen beschrieben, dann mit der Regel erklaert.
 
 Klausur-Satz: `Beobachtung und Deutung werden getrennt: Zuerst wird das Phänomen beschrieben, dann mit der Regel erklärt.`
 
 ## Schritt 3 — entdecken
+TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
-ENTDECKEN (ein Konzept plus Textdiagramm):
+### Hook / Phaenomen
 
-Zeitlimit-Training prueft nicht das richtige Ergebnis, sondern die vollstaendige Darstellung unter Druck. Der Erwartungshorizont (EHZ) zerlegt jede Aufgabe in Bepunktung: Gleichungsgeruest, Koeffizienten, Einheiten und Groessenordnungspruefung tragen je eigene Punkte. Daher folgt jede Aufgabe der festen Kette: Gleichung ausgleichen, Koeffizientenverhaeltnis als Molverhaeltnis ablesen, mit $n = m/M$ und Einheit rechnen, Groessenordnung pruefen und einen deutschen Transfer-Satz schreiben. Die vier Uebungsaufgaben decken Ausgleichen, Molrechnung, Redox und $pH$ ab; jede traegt EHZ-Punkte und einen Pruefsatz. Nach 20 Minuten folgt die Selbstkontrolle Schritt fuer Schritt; der punktlose Schritt wird zum Fehlerlog-Eintrag.
+$4{,}4\,\mathrm{g}$ $CO_2$ — wie viel Liter sind das, und woher weiss man ohne Rechner, ob $2{,}24\,\mathrm{L}$ plausibel sind? Die $2$-L-Flasche als Mass, die Einheit als Zeuge, der Transfer-Satz als Siegel. Vier Aufgaben trainieren genau diesen Dreiklang unter Zeitdruck.
 
-**Aufgabe 1 Ausgleichen (darstellen)**: Gleiche aus: Al + HCl -> AlCl3 + H2.
-Loesung: 2 Al + 6 HCl -> 2 AlCl3 + 3 H2; Kontrolle Al 2:2, H 6:6, Cl 6:6.
-EHZ (4 Punkte): Geruest 1 + Koeffizienten Al/HCl 2 + Koeffizienten AlCl3/H2 mit Zaehlkontrolle 1.
-Pruefsatz: `Die Gleichung ist richtig ausgeglichen, weil die Atomanzahl jedes Elements auf beiden Seiten gleich ist.`
+### Fachbegriff & Definition
 
-**Aufgabe 2 Mol-Rechnung (berechnen/auswerten)**: 4,4 g Kohlenstoffdioxid (CO2, M = 44 g/mol) liegen vor. Berechne n und V im Standardzustand (V_m = 22,4 L/mol).
-Loesung: n = 4,4 / 44 = 0,10 mol; V = 0,10 * 22,4 = 2,24 L.
-EHZ (5 Punkte): n-Formel mit Einheit 2 + V-Rechnung 1 + Groessenordnungsbewertung (etwa 2-L-Flasche, plausibel) 1 + deutscher Satz 1.
-Pruefsatz: `Mit n = m/M und dem molaren Volumen folgt V(CO2); die Größenordnung entspricht etwa einer 2-L-Flasche.`
+Die **feste Kette unter Zeitlimit** lautet: Gleichung aufstellen und ausgleichen, Koeffizientenverhaeltnis ablesen, $n = m/M$ mit Einheiten rechnen, Zielgroesse berechnen, Groessenordnung pruefen und deutschen Satz schreiben. Jede Station traegt EHZ-Punkte: Geruest $1$, Koeffizienten $2$, Zaehlkontrolle $1$; $n$-Formel mit Einheit $2$, $V$-Rechnung $1$, Groessenordnung $1$, Satz $1$. Redox traegt Oxidationszahlen $2$, Stoffbenennung $2$, Elektronenbilanz $1$. Wer die Kette kennt, verteilt die Zeit nach Punkten — etwa eine Minute je Punkt.
 
-**Aufgabe 3 Redox (bestimmen/begruenden)**: 2 Na + Cl2 -> 2 NaCl. Bestimme die Oxidationszahlen und benenne Oxidations- sowie Reduktionsmittel.
-Loesung: Na 0 -> +1 (steigt, gibt Elektronen ab, Reduktionsmittel); Cl 0 -> -1 (faellt, nimmt Elektronen auf, Oxidationsmittel); Elektronen 2:2 erhalten.
-EHZ (5 Punkte): Oxidationszahlen 2 + Stoffbenennung 2 + Elektronenbilanz 1.
-Pruefsatz: `Natrium wird oxidiert und ist das Reduktionsmittel, Chlor wird reduziert und ist das Oxidationsmittel.`
+### Wirkungsgefuege / Modell
 
-**Aufgabe 4 pH-Wert (berechnen)**: Eine Salzsäurelösung hat c0 = 0,002 mol/L. Berechne den pH-Wert.
-Loesung: HCl dissoziiert vollstaendig, also [H3O+] = 2,0 * 10^-3 mol/L; pH = -lg(2,0 * 10^-3) = -(0,30 - 3) = 2,70.
-EHZ (4 Punkte): Vollstaendige Dissoziation 1 + Logarithmusansatz 2 + Ergebnis mit Einheit 1.
-Pruefsatz: `Da Salzsäure vollständig dissoziiert, gilt [H3O+] = c0, und der pH-Wert beträgt 2,70.`
+Denke in Kausalkette: **Budget, Kette, Kontrolle**. Erstens Zeit nach Punkten verteilen. Zweitens jede Aufgabe durch die fuenf Stationen schieben. Drittens Selbst-Check: Fehlt eine Einheit? Fehlt die Pruefung? Fehlt der Satz? Der punktlose Schritt wandert ins Fehlerlog — beim naechsten Mal zuerst die Einheit, dann das Ergebnis.
 
 ```diagram
   ZEITLIMIT 20 min  --->  FESTE KETTE (jeder Schritt = Punkte)
@@ -73,6 +82,7 @@ Pruefsatz: `Da Salzsäure vollständig dissoziiert, gilt [H3O+] = c0, und der pH
   5. Groessenordnungspruefung + DE-Satz    [EHZ 1 P]
   ----------------------------------------------------------
   Selbst-Check:  fehlt eine Einheit? fehlt die Pruefung?
+  Beispiele: Al-Gleichung 2/6/2/3 | V(CO2) = 2,24 L | pH = 2,70
 ```
 
 Klausur-Satz: `Der Erwartungshorizont zeigt die Punkte pro Schritt, sodass jede Teilrechnung einzeln überprüft werden kann.`

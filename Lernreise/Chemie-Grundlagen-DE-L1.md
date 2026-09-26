@@ -16,59 +16,81 @@ version: Lesson-v3
 <!-- Lesson v3 9-Schritt-Architektur: Schritt 1 bis 8 feste Struktur; Fehlvorstellung zwischen Schritt 6 und 7 (Parser ueberspringt, zaehlt nicht); interaktive [Werkzeug: <id>]; Gating: check/szenario nicht bestanden = Weiter deaktiviert; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
 ## Schritt 1 — entdecken
+ZIELE (drei messbare Ziele dieser Lektion):
 
-ZIELE (diese Lektion in 15 Minuten: danach kannst du):
+1. Du kannst aus Protonenzahl und Elektronenverteilung Periode und Hauptgruppe bestimmen und die Aehnlichkeit innerhalb einer Gruppe erklaeren.
+2. Du kannst aus den Bindungspartnern auf Ionen-, Elektronenpaar- oder Metallbindung schliessen und Gleichungen nur ueber Koeffizienten ausgleichen.
+3. Du kannst mit $n = m/M$, $N = n \cdot N_A$ und $c = n/V$ zwischen Masse, Teilchenzahl und Konzentration umrechnen — mit Einheit und Groessenordnungspruefung.
 
-1. Aus Protonenzahl und Elektronenverteilung Periode und Hauptgruppe bestimmen und die Aehnlichkeit innerhalb einer Gruppe erklaeren.
-2. Aus den Bindungspartnern auf Ionen-, Elektronenpaar- oder Metallbindung schliessen und Gleichungen nur ueber Koeffizienten ausgleichen.
-3. Mit $n = m/M$, $N = n \cdot N_A$ und $c = n/V$ zwischen Masse, Teilchenzahl und Konzentration umrechnen — mit Einheit und Groessenordnungspruefung.
+### Hook / Phaenomen
+
+Mendelejew liess in seinem System Luecken und sagte Eigenschaften noch unentdeckter Elemente voraus — Jahre spaeter stimmten die Messwerte verblueffend genau. Wie kann ein Blatt Papier wissen, was noch niemand gesehen hat? Und warum verhaelt sich Natrium wie Kalium, aber nicht wie sein Nachbar Magnesium? Die Antwort steht im Atombau.
+
+### Fachbegriff & Definition
+
+Die **Ordnungszahl** (gleich **Protonenzahl** gleich **Kernladungszahl**) bestimmt das **Element**; die Neutronenzahl unterscheidet nur **Isotope**. Die **Periode** zaehlt die **Schalen**, die **Hauptgruppe** die **Valenzelektronen** — gleiche Gruppe heisst gleiche Valenzelektronen und aehnliche Eigenschaften. Das **Partnerpaar** entscheidet die Bindung: Metall plus Nichtmetall ergibt **Ionenbindung** (Elektronenuebergang, etwa $Mg^{2+}/O^{2-}$), Nichtmetall plus Nichtmetall ergibt **Elektronenpaarbindung** (gemeinsame Paare, etwa $Cl_2$), Metall plus Metall ergibt **Metallbindung** (Elektronengas).
+
+### Wirkungsgefuege / Modell
+
+Die Kausalkette lautet: **Bau, Stellung, Verhalten, Rechnung**. Erstens Protonenzahl lesen — Element und Kernladung stehen fest. Zweitens Schalen und Valenzelektronen zaehlen — Periode und Gruppe stehen fest. Drittens aus der Stellung das Verhalten folgern: In der Gruppe wachsen von oben nach unten Atomradius und Metallcharakter ($Na < K < Rb$); in der Periode sinken sie von links nach rechts, weil bei gleicher Schale die groessere Kernladung staerker zieht. Viertens Gleichungen nur ueber Koeffizienten ausgleichen ($C_3H_8 + 5O_2 \to 3CO_2 + 4H_2O$) — erst danach entspricht das Koeffizientenverhaeltnis dem Molverhaeltnis und $n = m/M$ darf angewendet werden.
 
 Klausur-Satz: `Die Stellung im Periodensystem folgt aus der Elektronenkonfiguration: Die Periode gibt die Schalenanzahl, die Hauptgruppe die Anzahl der Valenzelektronen an.`
 
 ## Schritt 2 — entdecken
+PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
-PRETRAINING (Kernbegriffe, erst lesen, dann abdecken und aktiv wiedergeben):
+### Hook / Phaenomen
 
-- Proton, Neutron, Elektron: Die Protonenzahl bestimmt das Element, die Valenzelektronen das chemische Verhalten.
-- Periode und Gruppe: Die Periode zaehlt die Schalen, die Hauptgruppe die Valenzelektronen.
-- Ionenbindung, Elektronenpaarbindung, Metallbindung: Metall plus Nichtmetall ergibt meist Ionen, zwei Nichtmetalle teilen Elektronenpaare, zwei Metalle bilden die Metallbindung.
-- Reaktionsgleichung und Koeffizient: Ausgleichen aendert nur Koeffizienten, niemals Indizes.
-- Stoffmenge $n$, Mol, molare Masse $M$: $n$ in Mol ist eine Zaehleinheit, keine Masse.
+Natrium-23: $11$ Protonen, $12$ Neutronen, Schalen $2$-$8$-$1$. Drei Zahlen, und schon weiss man Gruppe, Periode und Ion. Doch welche Zahl bestimmt das Element, welche nur das Isotop — und warum darf man beim Ausgleichen nie eine tiefgestellte Zahl anfassen? Fuenf Begriffe sichern das Fundament.
+
+### Fachbegriffe & Definitionen
+
+- **Proton, Neutron, Elektron:** Die Protonenzahl bestimmt das Element, die Neutronenzahl nur das Isotop ($A - Z$); die Valenzelektronen bestimmen das chemische Verhalten.
+- **Periode und Gruppe:** Die Periode zaehlt die besetzten Schalen, die Hauptgruppe die Valenzelektronen — etwa $Na$: 3. Periode, 1. Hauptgruppe, bildet $Na^+$.
+- **Ionenbindung, Elektronenpaarbindung, Metallbindung:** Metall plus Nichtmetall ergibt Ionen ($MgO$), zwei Nichtmetalle teilen Paare ($Cl_2$), zwei Metalle bilden das Elektronengas — die Partner verraten den Typ.
+- **Reaktionsgleichung und Koeffizient:** Ausgleichen aendert nur Koeffizienten, niemals Indizes; Kontrolle ist beidseitig gleiche Atomzahl je Element — die schriftliche Massenerhaltung.
+- **Stoffmenge $n$, Mol, molare Masse $M$:** $n$ in Mol ist eine Zaehleinheit, keine Masse; $n = m/M$, $N = n \cdot N_A$, $c = n/V$ verbinden Masse, Teilchen und Konzentration.
+
+### Wirkungsgefuege / Modell
+
+Die Begriffe bilden die Rechenkette **Formel, Einheit, Kontrolle**: Formel hinschreiben, mit Einheit einsetzen, Ergebnis mit Einheit nennen, Groessenordnung pruefen (Massenanker $H = 1$, $C = 12$, $O = 16$, $Na = 23$, $Cl = 35{,}5$). Die Ausgleichsregel folgt fester Reihenfolge — Metall, sonstige Nichtmetalle, Wasserstoff, Sauerstoff — und jeder Schritt aendert nur Koeffizienten. Antwort ohne Ansatz gibt nach dem Operator berechnen keine Punkte: Einheiten mitschreiben und Groessenordnung pruefen sichert alle Verfahrenspunkte.
 
 Klausur-Satz: `Die Bindungsart folgt aus den Bindungspartnern: Metall und Nichtmetall bilden Ionen, zwei Nichtmetalle teilen Elektronenpaare.`
 
 ## Schritt 3 — entdecken
+TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
-ENTDECKEN (ein Konzept plus Textdiagramm):
+### Hook / Phaenomen
 
-Vier Bausteine in fester Reihenfolge: Atombau, Periodensystem, Bindung, Gleichung mit Rechnung. Erstens bestimmt die Protonenzahl (gleich Kernladungszahl gleich Ordnungszahl) das Element, die Neutronenzahl unterscheidet nur Isotope; die Schalenzahl ergibt die Periode, die Valenzelektronenzahl die Hauptgruppe. Zweitens folgt das Verhalten aus der Stellung: Gleiche Gruppe bedeutet gleiche Valenzelektronen und aehnliche Eigenschaften; in einer Periode sinken von links nach rechts Atomradius und Metallcharakter. Drittens entscheidet das Partnerpaar: Metall plus Nichtmetall ergibt Ionenbindung (Elektronenuebergang), Nichtmetall plus Nichtmetall ergibt Elektronenpaarbindung (gemeinsame Paare), Metall plus Metall ergibt Metallbindung (Elektronengas). Viertens aendert Ausgleichen nur Koeffizienten; erst danach entspricht das Koeffizientenverhaeltnis dem Molverhaeltnis und $n = m/M$ darf angewendet werden.
+Drei Atome, drei Schicksale: Natrium gibt sein Elektron ab, Chlor nimmt eines auf, Eisen teilt seinen Pool mit Nachbarn. Woher weiss jedes Atom, was zu tun ist? Der Blick auf Schalen und Partner verraet es — und eine einzige Zahl verbindet danach Masse mit Teilchen.
+
+### Fachbegriff & Definition
+
+Der **Periodentrend** lautet: In der Gruppe wachsen von oben nach unten **Atomradius und Metallcharakter**; in der Periode sinken sie von links nach rechts, der **Nichtmetallcharakter** steigt. Die Merkregel: Bei gleicher Schale zieht die groessere Kernladung die Elektronen staerker an, der Radius schrumpft. Die **Molschluessel** $n = m/M$, $N = n \cdot N_A$ und $c = n/V$ uebersetzen danach jede Messgroesse in Teilchen — vier Rechenschritte (Formel, Einsetzen mit Einheit, Ergebnis mit Einheit, Groessenordnung) tragen jeden Punkt.
+
+### Wirkungsgefuege / Modell
+
+Denke in Kausalkette: **Stellung, Bindung, Bilanz**. Erstens Stellung bestimmen — Schalen und Valenzelektronen aus $Z$ ablesen. Zweitens Bindung aus den Partnern folgern — Ionen, Paare oder Elektronengas. Drittens Gleichung ausgleichen und ueber $n$ verrechnen. Wer zuerst die Stellung klaert, sagt Eigenschaften voraus wie Mendelejew — und wer zuerst ausgleicht, rechnet nie mit falschem Molverhaeltnis.
 
 ```diagram
-Na-23  (Z = 11, A = 23)
-   Protonen  = 11   (bestimmt das Element)
-   Elektronen = 11  (neutrales Atom)
-   Neutronen = 23 - 11 = 12
+  Na-23  (Z = 11, A = 23)
+     Protonen   = 11          (bestimmt das Element)
+     Elektronen = 11          (neutrales Atom)
+     Neutronen  = 23 - 11 = 12 (nur Isotop)
 
-   Schalen:  K:2  L:8  M:1   ->  3. Periode, 1. Hauptgruppe
-   Valenzelektronen = 1  ->  Alkalimetall, bildet Na+
+     Schalen:  K:2  L:8  M:1  ->  3. Periode, 1. Hauptgruppe
+     Valenzelektronen = 1  ->  Alkalimetall, bildet Na+
 
-Bindung aus den Partnern:
-   Metall + Nichtmetall  -> Ionenbindung      (z.B. MgO: Mg2+ / O2-)
-   Nichtmetall + Nichtmetall -> Elektronenpaarbindung (z.B. Cl2)
-   Metall + Metall       -> Metallbindung
+  Bindung aus den Partnern:
+     Metall + Nichtmetall       -> Ionenbindung (z.B. MgO: Mg2+/O2-)
+     Nichtmetall + Nichtmetall  -> Elektronenpaarbindung (z.B. Cl2)
+     Metall + Metall            -> Metallbindung (Elektronengas)
 
-Ausgleichen (nur Koeffizienten!):
-   C3H8 + 5 O2 -> 3 CO2 + 4 H2O
-   C 3:3   H 8:8   O 10:10   ->  Massenerhaltung erfuellt
+  Ausgleichen (nur Koeffizienten!):
+     C3H8 + 5 O2 -> 3 CO2 + 4 H2O
+     C 3:3   H 8:8   O 10:10  ->  Massenerhaltung erfuellt
+  Mol: n = m/M | N = n * N_A | c = n/V
 ```
-
-Ausgleichsregel in vier Schritten (Metall, sonstige Nichtmetalle, Wasserstoff, Sauerstoff): Erst Metallatome, dann Nichtmetalle ausser Sauerstoff und Wasserstoff, dann Wasserstoff, zuletzt Sauerstoff; jeder Schritt aendert nur Koeffizienten. Die Kontrolle bleibt: Beidseitig gleiche Atomzahl je Element — die schriftliche Massenerhaltung.
-
-Drei Molschluessel plus Rechenkette: $n = m/M$ (Masse gegen Mol), $N = n \cdot N_A$ (Teilchenzahl gegen Mol), $c = n/V$ (Konzentration gegen Mol). Vier Rechenschritte: Formel hinschreiben, mit Einheit einsetzen, Ergebnis mit Einheit nennen, Groessenordnung pruefen (Massenanker: H 1, C 12, O 16, Na 23, Cl 35,5).
-
-Periodentrend in einem Satz: In der Gruppe wachsen von oben nach unten Atomradius und Metallcharakter (Na < K < Rb); in der Periode sinken von links nach rechts Atomradius und Metallcharakter, der Nichtmetallcharakter steigt. Merkregel: Bei gleicher Schale zieht die groessere Kernladung die Elektronen staerker an, der Radius schrumpft.
-
-Klausur-Tipp: Rechenaufgaben brauchen Ansatz, Einsetzen, Einheit und Kontrolle — Antwort ohne Ansatz gibt nach der Operatordefinition von berechnen keine Punkte. Einheiten mitschreiben und Groessenordnung pruefen sichert alle Verfahrenspunkte.
 
 Klausur-Satz: `Eine Reaktionsgleichung ist richtig ausgeglichen, wenn die Anzahl der Atome jedes Elements auf beiden Seiten gleich ist.`
 

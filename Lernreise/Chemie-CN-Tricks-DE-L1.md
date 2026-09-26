@@ -16,62 +16,61 @@ version: Lesson-v3
 <!-- Lesson v3 9-Schritt-Architektur: Schritt 1 bis 8 feste Struktur; Fehlvorstellung zwischen Schritt 6 und 7 (Parser ueberspringt, zaehlt nicht); interaktive [Werkzeug: <id>]; Gating: check/szenario nicht bestanden = Weiter deaktiviert; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
 ## Schritt 1 — entdecken
+ZIELE (drei messbare Ziele dieser Lektion):
 
-ZIELE (diese Lektion in 15 Minuten: danach kannst du):
+1. Du kannst sechs Verfahren (Erhaltung, Differenz, Extremwert, funktionelle Gruppen, Elektrochemie, Oxidationszahl) nennen und jedes in einem Satz erklaeren.
+2. Du kannst jedes Verfahren der passenden deutschen Klausurfrage zuordnen und Formel oder Kriterium waehlen.
+3. Du kannst mit einer Merkregel je eine Mini-Aufgabe loesen und die Groessenordnung bewerten.
 
-1. Sechs Verfahren (Erhaltung, Differenz, Extremwert, funktionelle Gruppen, Elektrochemie, Oxidationszahl) nennen und jedes in einem Satz erklaeren.
-2. Jedes Verfahren der passenden deutschen Klausurfrage zuordnen und Formel oder Kriterium waehlen.
-3. Mit einer Merkregel je eine Mini-Aufgabe loesen und die Groessenordnung bewerten.
+### Hook / Phaenomen
+
+$5{,}6\,\mathrm{g}$ Eisen plus Schwefel — wie viel Eisensulfid entsteht, ohne dass man ein einziges Atom zaehlt? Sechs Suchgeraete loesen sechs Aufgabentypen: vom Dosieren ueber Gemische bis zur Batterie mit $U^\circ = 2{,}70\,\mathrm{V}$. Die Regel ist ein Suchgeraet, kein Beweis — doch wer das passende Verfahren in Sekunden waehlt, hat die halbe Klausur gewonnen.
+
+### Fachbegriff & Definition
+
+Alle sechs Tricks ruhen auf der **Erhaltung**: Atome, Ladungen und Elektronen bleiben insgesamt erhalten. **Ausgleichen** ist die schriftliche Form der Massenerhaltung; **Differenz** ist Massenerhaltung in Rechenform ($dm$ zu $n$); **Elektrochemie** ist Elektronenerhaltung ($U^\circ = E_{Kat} - E_{An}$); **Extremwert** ist die Grenze der Erhaltung (ganz A oder ganz B); **funktionelle Gruppen** sind qualitative Erhaltung (etwa $-COOH$ verrät Saeure plus Veresterung); **Oxidationszahlen** sind die Buchhaltung der Elektronen (Anstieg oxidiert, Abfall reduziert). Jedes Verfahren traegt eine Mini-Aufgabe und einen deutschen Pruefsatz.
+
+### Wirkungsgefuege / Modell
+
+Die Kausalkette lautet: **Signalwort, Verfahren, Pruefsatz**. Erstens Signalwort lesen — Gramm, Differenz, Gemisch, Gruppe, Zelle, Zahlenaenderung — und Verfahren waehlen. Zweitens Merkregel anwenden: $n(FeS) = 0{,}10\,\mathrm{mol}$ aus $5{,}6/56$; $n(CuO) = 0{,}15\,\mathrm{mol}$ aus $dm = 2{,}4\,\mathrm{g}$ Sauerstoff; $n(H_2)$ zwischen $0{,}15$ und $0{,}25\,\mathrm{mol}$ aus $Mg$ gegen $Ca$; Anode $Mg$, Kathode $Cu$, $U^\circ = 2{,}70\,\mathrm{V}$; $Mg$ Reduktionsmittel, $O$ Oxidationsmittel. Drittens deutsche Begruendungskette mit Pruefsatz schliessen — in der Klausur zaehlt allein der Fachsatz.
 
 Klausur-Satz: `Jedes CN-Verfahren endet in einer deutschen Klausurhandlung: aufstellen, ausgleichen, berechnen, zuordnen, begründen, auswerten.`
 
 ## Schritt 2 — entdecken
+PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
-PRETRAINING (Kernbegriffe, erst lesen, dann abdecken und aktiv wiedergeben):
+### Hook / Phaenomen
 
-- Erhaltung: Atome, Ladungen und Elektronen bleiben in der Reaktion insgesamt erhalten.
-- Differenzmethode: Aus der Massendifferenz von Feststoff oder Loesung auf die Stoffmenge schliessen.
-- Extremwertannahme: Mit den Faellen ganz A oder ganz B den wahren Wert eingrenzen.
-- Funktionelle Gruppe: Die Atomgruppe, die die Stoffklasse und den Reaktionstyp bestimmt.
-- Oxidationszahl: Das Buchungszeichen fuer Elektronenuebergaenge; Anstieg heisst oxidiert, Abfall heisst reduziert.
+Sechs Verfahren, sechs Mini-Aufgaben, sechs Pruefsaetze — doch alle stammen aus einer Wurzel. Wer die Wurzel versteht, muss nichts auswendig lernen, sondern leitet ab. Diese fuenf Begriffe (plus Elektrochemie als sechstes Werkzeug) sind das Besteck.
+
+### Fachbegriffe & Definitionen
+
+- **Erhaltung:** Atome, Ladungen und Elektronen bleiben in der Reaktion insgesamt erhalten — Ausgleichen ist ihre schriftliche Form ($Fe + S \to FeS$, $n = 0{,}10\,\mathrm{mol}$).
+- **Differenzmethode:** Aus der Massendifferenz von Feststoff oder Loesung auf die Stoffmenge schliessen — etwa $dm = 2{,}4\,\mathrm{g}$ Sauerstoff zu $n(CuO) = 0{,}15\,\mathrm{mol}$.
+- **Extremwertannahme:** Mit den Faellen ganz A oder ganz B den wahren Wert eingrenzen — etwa $n(H_2)$ zwischen $0{,}15$ und $0{,}25\,\mathrm{mol}$ fuer $Mg$/$Ca$-Gemisch.
+- **Funktionelle Gruppe:** Die Atomgruppe, die Stoffklasse und Reaktionstyp bestimmt — etwa $-COOH$ aus Rotfaerbung plus Veresterung mit Ethanol.
+- **Oxidationszahl:** Das Buchungszeichen fuer Elektronenuebergaenge; Anstieg heisst oxidiert (Reduktionsmittel), Abfall heisst reduziert (Oxidationsmittel) — etwa $Mg: 0 \to +II$.
+
+### Wirkungsgefuege / Modell
+
+Die Begriffe haengen an der Wurzel **Erhaltung**: Differenz ist Massenerhaltung in Rechenform, Elektrochemie ist Elektronenerhaltung (Anode gleich Oxidation, Kathode gleich Reduktion — Reaktionen merken, keine Pole), Extremwert ist die Grenze der Erhaltung, funktionelle Gruppen sind qualitative Erhaltung, Oxidationszahlen sind die Buchhaltung. In der Klausur folgt erst die Merkregel zur Auswahl, dann die deutsche Begruendungskette mit Pruefsatz — etwa Anode $Mg$, Kathode $Cu$, Elektronenfluss vom Magnesium zum Kupfer.
 
 Klausur-Satz: `Die Oxidationszahl steigt beim Reduktionsmittel und fällt beim Oxidationsmittel, weil die abgegebene Elektronenzahl gleich der aufgenommenen ist.`
 
 ## Schritt 3 — entdecken
+TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
-ENTDECKEN (ein Konzept plus Textdiagramm):
+### Hook / Phaenomen
 
-Sechs Merkregeln, eine Wurzel: die Erhaltung. Differenz ist Massenerhaltung in Rechenform, Elektrochemie ist Elektronenerhaltung, Extremwert ist die Grenze der Erhaltung, funktionelle Gruppen sind qualitative Erhaltung, Oxidationszahlen sind die Buchhaltung der Elektronen. Jedes Verfahren traegt eine Mini-Aufgabe und einen Pruefsatz; in der Klausur folgt erst die Merkregel zur Auswahl, dann die deutsche Begruendungskette. Die Regel ist ein Suchgeraet, kein Beweis.
+Eine galvanische Zelle aus $Mg$ ($E^\circ = -2{,}36\,\mathrm{V}$) und $Cu$ ($E^\circ = +0{,}34\,\mathrm{V}$) liefert $2{,}70\,\mathrm{V}$ — ohne dass man Pole auswendig lernt. Der Trick: Reaktionen merken, keine Pole. Wie fuegen sich alle sechs Verfahren zu einem Werkzeugkasten, der jede Klausuraufgabe in Sekunden einsortiert?
 
-**Trick 1 Erhaltung**: Ausgleichen ist die schriftliche Form der Erhaltung.
-Mini: 5,6 g Eisen (M = 56 g/mol) reagieren vollständig mit Schwefel nach Fe + S -> FeS. Berechne n(FeS).
-Loesung: n(Fe) = 5,6 / 56 = 0,10 mol; Verhaeltnis 1:1, also n(FeS) = 0,10 mol.
-Pruefsatz: `Aus der Massenerhaltung folgt, dass die Stoffmenge des Eisensulfids der des Eisens entspricht.`
+### Fachbegriff & Definition
 
-**Trick 2 Differenzmethode**: Die Massendifferenz entspricht einem festen Molverhaeltnis.
-Mini: 12,0 g Kupfer(II)-oxid werden zu Kupfer reduziert; es bleiben 9,6 g fest. Berechne n(CuO).
-Loesung: dm = 12,0 - 9,6 = 2,4 g (abgegebener Sauerstoff); n(O) = 2,4 / 16 = 0,15 mol, also n(CuO) = 0,15 mol.
-Pruefsatz: `Aus der Massendifferenz folgt die Stoffmenge des umgesetzten Anteils.`
+Der **Werkzeugkasten der sechs Tricks** ordnet jedes Verfahren einem Signalwort zu: Erhaltung zu Gleichungen, Differenz zu Massenaenderungen, Extremwert zu Gemischen, funktionelle Gruppen zu Stoffklassen, Elektrochemie zu Zellen, Oxidationszahlen zu Redoxfragen. Jeder Trick traegt Mini-Aufgabe und Pruefsatz — etwa Veresterung verrät $-COOH$, $U^\circ = 0{,}34 - (-2{,}36) = 2{,}70\,\mathrm{V}$. Die Regel bleibt ein Suchgeraet: Sie waehlt den Weg, der Beweis steht im deutschen Pruefsatz.
 
-**Trick 3 Extremwertannahme**: Gemische erst eingrenzen.
-Mini: 6,0 g eines Gemischs aus Mg und Ca reagieren mit Salzsäure. Schätze den Bereich für n(H2) ab.
-Loesung: Alles Mg ergibt n = 6,0 / 24 = 0,25 mol; alles Ca ergibt n = 6,0 / 40 = 0,15 mol; der wahre Wert liegt zwischen 0,15 und 0,25 mol.
-Pruefsatz: `Der wahre Wert liegt zwischen den beiden Extremfällen und wird so abgeschätzt.`
+### Wirkungsgefuege / Modell
 
-**Trick 4 Funktionelle Gruppen**: Die Gruppe verrät die Stoffklasse.
-Mini: Ein Stoff Y färbt Universalindikator rot und bildet mit Ethanol einen Ester. Welche funktionelle Gruppe liegt vor?
-Loesung: Rotfaerbung (sauer) plus Veresterung mit Alkohol verrät die Carboxygruppe -COOH.
-Pruefsatz: `Die Stoffklasse folgt aus der funktionellen Gruppe und bestimmt die typische Reaktion.`
-
-**Trick 5 Elektrochemie**: Anode gleich Oxidation, Kathode gleich Reduktion — Reaktionen merken, keine Pole.
-Mini: Eine galvanische Zelle aus Mg/Mg2+ (E° = -2,36 V) und Cu/Cu2+ (E° = +0,34 V). Benenne Anode, Kathode und U°.
-Loesung: Anode = Mg (Oxidation), Kathode = Cu (Reduktion); U° = 0,34 - (-2,36) = 2,70 V.
-Pruefsatz: `An der Anode läuft die Oxidation, an der Kathode die Reduktion; der Elektronenfluss verläuft vom Magnesium zum Kupfer.`
-
-**Trick 6 Oxidationszahl**: Zahlen bestimmen, Anstieg oxidiert, Abfall reduziert.
-Mini: 2 Mg + O2 -> 2 MgO. Bestimme Oxidations- und Reduktionsmittel.
-Loesung: Mg 0 -> +2 (Anstieg, gibt Elektronen ab, Reduktionsmittel); O 0 -> -2 (Abfall, nimmt Elektronen auf, Oxidationsmittel).
-Pruefsatz: `Die Oxidationszahl steigt beim Reduktionsmittel und fällt beim Oxidationsmittel.`
+Denke in Kausalkette: **Einordnen, Rechnen, Formulieren**. Erstens Aufgabe einem Trick zuordnen. Zweitens Merkregel rechnen — $n$, $dm$, Bereich, Gruppe, $U^\circ$, Zahlen. Drittens Pruefsatz auf Deutsch formulieren: aufstellen, ausgleichen, berechnen, zuordnen, begruenden, auswerten. Wer so arbeitet, endet jede Aufgabe in einer Klausurhandlung.
 
 ```diagram
               ALLE SECHS TRICKS RUHEN AUF: ERHALTUNG
@@ -82,8 +81,9 @@ Pruefsatz: `Die Oxidationszahl steigt beim Reduktionsmittel und fällt beim Oxid
   Funktionelle Gr. -OH / -COOH / C=C -> Reaktionstyp bestimmen
   Elektrochemie    Anode=Ox, Kathode=Red -> Elektronenfluss
   Oxidationszahl   0->+2 auf / +2->0 ab -> Redoxmittel benennen
-
-  Merksatz: Erhaltung zuerst, dann die fuenf Ableitungen!
+  ------------------------------------------------------------------
+  Beispiele: n(FeS)=0,10 | n(CuO)=0,15 | H2 in [0,15;0,25]
+             U° = 2,70 V (Mg-Anode, Cu-Kathode)
 ```
 
 Klausur-Satz: `Die CN-Tricks sind zulässige Heuristiken, weil sie auf Erhaltungssätzen beruhen; klausurtauglich werden sie erst mit Gleichung, Einheiten und Begründung.`

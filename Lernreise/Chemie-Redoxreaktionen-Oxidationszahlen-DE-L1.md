@@ -16,43 +16,71 @@ version: Lesson-v3
 <!-- Lesson v3: Schritt 1-8 feste Struktur; Fehlvorstellung zwischen Schritt 6 und 7 (Parser skip); [Werkzeug: <id>] interaktiv; Gating: check/szenario nicht bestanden = Weiter grau; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
 ## Schritt 1 — entdecken
+ZIELE (drei messbare Ziele dieser Lektion):
 
-ZIELE (3 Ziele, nach 15 Minuten erreichbar):
-
-1. Du kannst Oxidationszahlen mit den Regeln $O = -II$ und $H = +I$ bestimmen.
+1. Du kannst Oxidationszahlen mit den Regeln $O = -II$ und $H = +I$ bestimmen und die Summe mit der Ionenladung abgleichen.
 2. Du kannst Oxidation als $e^-$-Abgabe und Reduktion als $e^-$-Aufnahme definieren und Oxidationsmittel und Reduktionsmittel benennen.
 3. Du kannst eine Redoxgleichung wie $Zn + Cu^{2+} \to Zn^{2+} + Cu$ in Teilgleichungen aufstellen und ausgleichen (AFB II).
 
-EINSTIEG: Im Jahr 1839 verrostete die erste Eisenbahnbruecke ueber den Rhein so schnell, dass man sie nach wenigen Jahren sperren musste. Rost mit $4Fe + 3O_2 \to 2Fe_2O_3$ ist Redox im Alltag. Wer Elektronen wandern sieht, versteht Korrosion und Batterie zugleich.
+### Hook / Phaenomen
+
+Im Jahr 1839 rostete die erste Eisenbahnbruecke ueber den Rhein so schnell, dass man sie nach wenigen Jahren sperren musste — $4Fe + 3O_2 \to 2Fe_2O_3$ mitten im Alltag. Gleichzeitig liefert eine simple Zitrone mit zwei Blechen Strom fuer eine Uhr. Rost zerstoert, Batterie versorgt — doch beide Male wandern Elektronen. Wer diesen Uebergang sieht, versteht Korrosion und Batterie zugleich.
+
+### Fachbegriff & Definition
+
+Eine **Redoxreaktion** ist ein **Elektronenuebergang**: Die **Oxidation** gibt Elektronen ab ($Red \to Ox + e^-$), die **Reduktion** nimmt Elektronen auf ($Ox + e^- \to Red$) — beides laeuft stets gekoppelt. Die **Oxidationszahl** ist die fiktive Ladung zur Buchhaltung dieses Uebergangs ($O = -II$, $H = +I$, Alkalimetall $= +I$); ihre Summe entspricht der Ionenladung. Steigt die Zahl, war es Oxidation; faellt sie, war es Reduktion — das **Oxidationsmittel** (etwa $O_2$ oder $Cu^{2+}$) oxidiert und wird selbst reduziert, das **Reduktionsmittel** (etwa $Zn$ oder $H_2$) reduziert und wird selbst oxidiert.
+
+### Wirkungsgefuege / Modell
+
+Die Arbeitskette lautet: **Bestimmen, Vergleichen, Bilanzieren**. Erstens Oxidationszahlen aller Partner bestimmen. Zweitens Aenderungen vergleichen: Anstieg markiert das Reduktionsmittel, Abfall das Oxidationsmittel. Drittens Teilgleichungen schreiben und so erweitern, dass abgegebene gleich aufgenommener Elektronenzahl ist — etwa $Zn \to Zn^{2+} + 2e^-$ und $Cu^{2+} + 2e^- \to Cu$, addiert zu $Zn + Cu^{2+} \to Zn^{2+} + Cu$. Ohne Aenderung keiner Zahl liegt keine Redoxreaktion vor, sondern etwa eine Saeure-Base-Reaktion wie $H^+ + OH^- \to H_2O$.
 
 Klausur-Satz: `Redox heisst Elektronenuebergang: Oxidation gibt ab, Reduktion nimmt auf.`
 
 ## Schritt 2 — entdecken
+PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
-GRUNDBEGRIFFE (5 Begriffe):
+### Hook / Phaenomen
 
-- **Oxidationszahl**: Fiktive Ladung, z. B. $O = -II$, $H = +I$, Alkalimetall $= +I$, Summe gleich Ionenladung.
-- **Oxidation**: $Red \to Ox + e^-$, Abgabe von Elektronen, Oxidationszahl steigt.
-- **Reduktion**: $Ox + e^- \to Red$, Aufnahme von Elektronen, Oxidationszahl sinkt.
-- **Oxidationsmittel**: Stoff wie $O_2$ oder $Cu^{2+}$, der oxidiert und selbst reduziert wird.
-- **Reduktionsmittel**: Stoff wie $Zn$ oder $H_2$, der reduziert und selbst oxidiert wird.
+Zwei Reaktionen, eine Frage: $Zn + Cu^{2+} \to Zn^{2+} + Cu$ gegen $HCl + NaOH \to NaCl + H_2O$. Beide bilden neue Stoffe — doch nur eine ist Redox. Woran erkennt man in Sekunden, ob Elektronen wandern oder nur Protonen umziehen? Diese fuenf Begriffe sind das Pruefgeraet.
+
+### Fachbegriffe & Definitionen
+
+- **Oxidationszahl:** Fiktive Ladung zur Elektronenbuchhaltung, z. B. $O = -II$, $H = +I$, Alkalimetall $= +I$; die Summe entspricht der Ionenladung des Teilchens.
+- **Oxidation:** Elektronenabgabe nach $Red \to Ox + e^-$; die Oxidationszahl steigt — etwa $Zn \to Zn^{2+} + 2e^-$ von $0$ nach $+II$.
+- **Reduktion:** Elektronenaufnahme nach $Ox + e^- \to Red$; die Oxidationszahl sinkt — etwa $Cu^{2+} + 2e^- \to Cu$ von $+II$ nach $0$.
+- **Oxidationsmittel:** Stoff wie $O_2$ oder $Cu^{2+}$, der andere oxidiert und dabei selbst reduziert wird — er nimmt die Elektronen auf.
+- **Reduktionsmittel:** Stoff wie $Zn$ oder $H_2$, der andere reduziert und dabei selbst oxidiert wird — er gibt die Elektronen ab.
+
+### Wirkungsgefuege / Modell
+
+Die Begriffe bilden eine geschlossene Bilanz: Was das **Reduktionsmittel** abgibt, nimmt das **Oxidationsmittel** auf — abgegebene gleich aufgenommener Elektronenzahl. Die **Oxidationszahlen** verraten Richtung und Menge: Anstieg gegen Abfall, erweitert auf gleiche $e^-$-Zahl. Bleiben alle Zahlen unveraendert ($H = +I$, $O = -II$, $Na = +I$, $Cl = -I$ in $HCl + NaOH$), so liegt keine Redoxreaktion vor — dann greift das Sauerstoff- oder Protonenbild der Saeure-Base-Chemie.
 
 Klausur-Satz: `Steigt die Zahl, war es Oxidation; faellt sie, war es Reduktion.`
 
 ## Schritt 3 — entdecken
+TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
-KONZEPT (ein Konzept plus ein Textdiagramm):
+### Hook / Phaenomen
 
-Oxidationszahlen bilanzieren Elektronen ohne sie zu zaehlen. Beispiel Zink in Kupferloesung: $Zn$ geht von $0$ nach $+II$, gibt also $2e^-$ ab; $Cu^{2+}$ geht von $+II$ nach $0$, nimmt $2e^-$ auf. Die Bilanz $Zn + Cu^{2+} \to Zn^{2+} + Cu$ ist ausgeglichen, weil Abgabe gleich Aufnahme ist. Das Schema gilt auch fuer $2Mg + O_2 \to 2MgO$ mit $Mg: 0 \to +II$ und $O: 0 \to -II$.
+Zinkblech in blauer Kupferloesung: Nach Minuten ueberzieht sich das Blech rotbraun, die blaue Farbe verblasst. Kein Strom fliesst von aussen — und doch wandern Elektronen, direkt von Atom zu Atom. Wie bilanziert man einen Uebergang, den man nicht zaehlen kann?
+
+### Fachbegriff & Definition
+
+Die **Elektronenbilanz** ersetzt das Zaehlen unsichtbarer Teilchen durch den Vergleich der **Oxidationszahlen**: $Zn$ geht von $0$ nach $+II$ und gibt $2e^-$ ab; $Cu^{2+}$ geht von $+II$ nach $0$ und nimmt $2e^-$ auf. Die Bilanz $Zn + Cu^{2+} \to Zn^{2+} + Cu$ stimmt, weil Abgabe gleich Aufnahme ist. Dasselbe Schema traegt $2Mg + O_2 \to 2MgO$ mit $Mg: 0 \to +II$ und $O: 0 \to -II$ — ein Muster, zwei Faelle.
+
+### Wirkungsgefuege / Modell
+
+Denke in Kausalkette: **Zahlen, Teilgleichungen, Summe**. Erstens Zahlen bestimmen und Aenderungen markieren. Zweitens Teilgleichungen formulieren ($Mg \to Mg^{2+} + 2e^-$; $\frac{1}{2}O_2 + 2e^- \to O^{2-}$). Drittens auf gleiche $e^-$-Zahl erweitern und addieren — die Elektronen kuerzen sich, die Atombilanz bleibt. Die Kontrolle lautet: Summe der Oxidationszahlen links gleich Summe rechts.
 
 ```diagram
-    Zn(0) ---- 2 e- ----> Zn(+II)   Oxidation
+    Zn(0) ---- 2 e- ----> Zn(+II)   Oxidation (Abgabe)
               |
               v  Elektronenfluss
               |
-    Cu(+II) -- 2 e- ----> Cu(0)     Reduktion
+    Cu(+II) -- 2 e- ----> Cu(0)     Reduktion (Aufnahme)
     Bilanz: Zn + Cu2+ -> Zn2+ + Cu
     Regel: Summe der OZ links = Summe rechts
+    Kontrolle: 0 + (+II) = (+II) + 0
 ```
 
 Klausur-Satz: `Abgabe und Aufnahme muessen sich exakt ausgleichen.`

@@ -16,32 +16,61 @@ version: Lesson-v3
 <!-- Lesson v3 9-Schritt-Architektur: Schritt 1 bis 8 feste Struktur; Fehlvorstellung zwischen Schritt 6 und 7 (Parser ueberspringt, zaehlt nicht); interaktive [Werkzeug: <id>]; Gating: check/szenario nicht bestanden = Weiter deaktiviert; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
 ## Schritt 1 — entdecken
+ZIELE (drei messbare Ziele dieser Lektion):
 
-ZIELE (diese Lektion in 15 Minuten: danach kannst du):
+1. Du kannst jede Mengenaufgabe nach der Regel loesen: erst ausgleichen, dann alles auf $n$ zurueckfuehren ($n = m/M = cV$), dann im Koeffizientenverhaeltnis umsetzen.
+2. Du kannst das limitierende Reagenz bestimmen und den theoretischen Ertrag mit der Ausbeute ($Ausbeute = real/theoretisch \cdot 100\,\%$) berechnen — am NCM-Beispiel der Batteriefertigung begruenden, warum das Mischverhaeltnis exakt stimmen muss.
+3. Du kannst das Massenwirkungsgesetz $K_c$ aufstellen und damit Gleichgewichte pruefen: $Q < K_c$ laeuft vorwaerts, $Q > K_c$ laeuft rueckwaerts (AFB II).
 
-1. Die Regel erst ausgleichen, dann auf $n$ zurueckfuehren, dann im Koeffizientenverhaeltnis umsetzen: Alle Massen und Volumina werden erst $n = m/M = cV$, dann ueber die ausgeglichene Gleichung verrechnet.
-2. Das limitierende Reagenz bestimmen und theoretischen Ertrag mit Ausbeute ($Ausbeute = real/theoretisch \cdot 100\,\%$) berechnen; am NCM-Beispiel der Batteriefertigung begruenden, warum das Mischverhaeltnis exakt stimmen muss.
-3. Das Massenwirkungsgesetz $K_c$ aufstellen und damit Gleichgewichte pruefen und Verschiebungen vorhersagen: $Q < K$ laeuft vorwaerts, $Q > K$ laeuft rueckwaerts (AFB II).
+### Hook / Phaenomen
+
+In der Batteriefabrik zaehlt jedes Prozent Nickel, Kobalt und Mangan: Kippt das Verhaeltnis der NCM-Kathode, bleibt teures Material ungenutzt und die Kapazitaet sinkt — Tonnen Ausschuss aus einem kleinen Dosierfehler. Dahinter steckt dieselbe Regel wie beim Backen: Wer das Rezept halbiert, aber das Mehl vergisst, dessen Kuchen misslingt. Wie rechnet man Gramm, Liter und Teilchen so um, dass kein Partner frueh ausgeht?
+
+### Fachbegriff & Definition
+
+Die **Stoffmenge** $n$ ist die **Sammeleinheit der Teilchen** und der Knoten jeder Rechnung: $n = m/M$ verbindet Masse und Mol, $n = cV$ verbindet Konzentration und Volumen, $N = n \cdot N_A$ verbindet Mol und Teilchenzahl. Erst nach dem **Ausgleichen** — Koeffizienten so waehlen, dass die Atomzahlen beidseitig stimmen — entspricht das **Koeffizientenverhaeltnis dem Molverhaeltnis**. Das **limitierende Reagenz** ist der Reaktant, der im Koeffizientenverhaeltnis zuerst verbraucht ist und den Maximalertrag festlegt; die **Ausbeute** misst realen gegen theoretischen Ertrag in Prozent.
+
+### Wirkungsgefuege / Modell
+
+Die Kausalkette lautet: **Ausgleichen, Umrechnen, Umsetzen, Pruefen**. Alle Angaben erst auf $n$ zurueckfuehren, dann ueber die Koeffizienten auf das $n$ des Zielstoffs springen, dann in Masse oder Konzentration zurueckrechnen. Fuer jedes Reagenz $n$ durch Koeffizient teilen — der kleinste Quotient limitiert und bestimmt allein den theoretischen Ertrag. Das **Massenwirkungsgesetz** verlaengert denselben Gedanken ins Gleichgewicht: $K_c = \frac{[C]^c \cdot [D]^d}{[A]^a \cdot [B]^b}$ fixiert Produkt durch Edukt als Konstante, der Vergleich von momentanem $Q$ mit $K_c$ verraet die Richtung.
 
 Klausur-Satz: `Erst ausgleichen, dann alles in die Stoffmenge n = m/M = cV umrechnen und schliesslich im Verhaeltnis der Koeffizienten umsetzen.`
 
 ## Schritt 2 — entdecken
+PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
-PRETRAINING (Kernbegriffe, erst lesen, dann abdecken und aktiv wiedergeben):
+### Hook / Phaenomen
 
-- Stoffmenge $n$: Die Sammeleinheit der Teilchen; $n = m/M = cV$ verbindet Masse, Volumen und Gleichung.
-- Ausgleichen: Koeffizienten so waehlen, dass die Atomzahlen beidseitig stimmen; ihr Verhaeltnis ist Teilchen- und Molverhaeltnis.
-- Limitierendes Reagenz: Der Reaktant, der im Koeffizientenverhaeltnis zuerst verbraucht ist und den Maximalertrag festlegt.
-- Ausbeute: Realer Ertrag durch theoretischen Ertrag mal hundert Prozent; sie spiegelt Verluste und Nebenreaktionen.
-- Massenwirkungsgesetz: $K_c$ ist Produktkonzentration hoch Koeffizient durch Eduktkonzentration hoch Koeffizient; die Exponenten sind die Ausgleichskoeffizienten.
+Zehn Gramm Kalk, ein Ofen, eine Frage: Wie viel Brandkalk entsteht — und was passiert mit dem Gleichgewicht, wenn man das $CO_2$ abpumpt? Zwei Aufgabentypen, ein Knoten: $n$. Diese fuenf Begriffe sichern den Weg von der Waage bis $K_c$.
+
+### Fachbegriffe & Definitionen
+
+- **Stoffmenge $n$:** Sammeleinheit der Teilchen; $n = m/M = cV$ verbindet Masse, Volumen und Gleichung — der zentrale Knoten jeder Rechnung.
+- **Ausgleichen:** Koeffizienten so waehlen, dass die Atomzahlen beidseitig stimmen; nur Koeffizienten aendern, niemals Indizes — ihr Verhaeltnis ist Teilchen- und Molverhaeltnis.
+- **Limitierendes Reagenz:** Der Reaktant, der im Koeffizientenverhaeltnis zuerst verbraucht ist; man findet ihn ueber $n$ durch Koeffizient — der kleinste Quotient limitiert.
+- **Ausbeute:** Realer Ertrag durch theoretischen Ertrag mal hundert Prozent; sie spiegelt Verluste und Nebenreaktionen — etwa $4{,}50/5{,}60 \cdot 100\,\% = 80{,}4\,\%$.
+- **Massenwirkungsgesetz:** $K_c$ ist Produktkonzentration hoch Koeffizient durch Eduktkonzentration hoch Koeffizient; Exponenten sind die Ausgleichskoeffizienten, Feststoffe entfallen.
+
+### Wirkungsgefuege / Modell
+
+Die Begriffe bilden eine Rechenstrasse: **Ausgleichen** legt die Spurverhaeltnisse, $n$ ist die Fahrbahn, das **limitierende Reagenz** die kuerzeste Spur, die **Ausbeute** die Abrechnung am Ziel. Wer zwei Nicht-$n$-Groessen direkt verrechnet — etwa Gramm mal Konzentration — verlaesst die Strasse; die Einheit verraet den Fehler sofort. Das MWG prueft danach die Lage: $Q$ gegen $K_c$ entscheidet, ob das System noch laeuft und wohin.
 
 Klausur-Satz: `Die Koeffizienten der ausgeglichenen Gleichung geben das Stoffmengenverhaeltnis vor, K_c prueft die Lage des Gleichgewichts.`
 
 ## Schritt 3 — entdecken
+TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
-ENTDECKEN (ein Konzept plus Textdiagramm):
+### Hook / Phaenomen
 
-Stöchiometrie kennt nur eine Schnellstrasse: Alle Angaben erst auf $n$ zurueckfuehren, dann ueber Koeffizienten bruecken. Massen steigen mit $n = m/M$ ein, Loesungen mit $n = cV$, Gase in EF ebenfalls erst als $n$; auf der $n$-Strecke geben die Ausgleichskoeffizienten die Spurverhaeltnisse vor — etwa 2 mol zu 1 mol — danach faehrt das Ziel-$n$ als Masse oder Konzentration wieder ab. Das limitierende Reagenz ist die zuerst beendete Spur: Fuer jeden Reaktanten $n$ durch Koeffizient teilen, der kleinste Quotient limitiert und allein er bestimmt den theoretischen Ertrag. Das Massenwirkungsgesetz verlaengert denselben Gedanken ins Gleichgewicht: $K_c$ fixiert Produkt durch Edukt als Konstante, der Vergleich von momentanem $Q$ mit $K$ verrät die Richtung. Die NCM-Kathode der Lithiumbatterie ist die industrielle Fassung: Kippt das Nickel-Kobalt-Mangan-Verhaeltnis, bleibt teures Material ungenutzt und die Kapazitaet sinkt.
+Aus $10{,}0\,\mathrm{g}$ Kalkstein werden im Ofen $5{,}60\,\mathrm{g}$ Brandkalk — theoretisch. Real sind es $4{,}50\,\mathrm{g}$. Wo bleiben $1{,}10\,\mathrm{g}$, und warum treibt Abpumpen von $CO_2$ die Reaktion weiter nach rechts? Ein Rechenweg beantwortet beides.
+
+### Fachbegriff & Definition
+
+Die **Zwei-Schritt-Regel** lautet: **Ausgangsgroesse zu $n$, dann $n$ zur Zielgroesse**. Fuer $CaCO_3 \to CaO + CO_2$ (1:1:1) gilt $n(CaCO_3) = 10{,}0/100{,}1 = 0{,}0999\,\mathrm{mol}$, also $n(CaO) = 0{,}0999\,\mathrm{mol}$ und $m = 0{,}0999 \cdot 56{,}1 = 5{,}60\,\mathrm{g}$. Die **Ausbeute** $4{,}50/5{,}60 \cdot 100\,\% = 80{,}4\,\%$ misst Verlust und Nebenreaktion. Fuer das Gleichgewicht gilt $K_c \propto [CO_2]$, weil Feststoffe entfallen; $CO_2$ abpumpen senkt $Q$ unter $K_c$ — das System laeuft nach rechts, bis $Q$ wieder gleich $K_c$ ist.
+
+### Wirkungsgefuege / Modell
+
+Denke in Kausalkette: **Menge, Verhaeltnis, Lage**. Erstens Mengen ueber $n = m/M$ vergleichbar machen. Zweitens im Koeffizientenverhaeltnis umsetzen ($n_{Ziel} = n_{Start} \cdot Koeff_{Ziel}/Koeff_{Start}$). Drittens die Lage ueber $Q$ gegen $K_c$ pruefen. Die NCM-Kathode ist die industrielle Fassung: Kippt das Nickel-Kobalt-Mangan-Verhaeltnis, bleibt teures Material ungenutzt — das knappste Reagenz begrenzt den Ertrag wie die kuerzeste Daube das Fass.
 
 ```diagram
    m --(M)--> n <--(cV)-- V,c
@@ -51,7 +80,10 @@ Stöchiometrie kennt nur eine Schnellstrasse: Alle Angaben erst auf $n$ zurueckf
      n(Ziel) = n(Start) * (Coeff_Ziel / Coeff_Start)
                |
         m = n*M  |  c = n/V  |  Ausbeute = real/theoretisch
-   Beispiel MWG: aA + bB <=> cC + dD
+   Beispiel: CaCO3 -> CaO + CO2  (1:1:1)
+     n = 10,0/100,1 = 0,0999 mol -> m(CaO) = 5,60 g
+     Ausbeute = 4,50/5,60 = 80,4 %
+   MWG: aA + bB <=> cC + dD
    Kc = ([C]^c * [D]^d) / ([A]^a * [B]^b), Q vs K entscheidet
 ```
 

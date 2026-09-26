@@ -16,59 +16,75 @@ version: Lesson-v3
 <!-- Lesson v3 9-Schritt-Architektur: Schritt 1 bis 8 feste Struktur; Fehlvorstellung zwischen Schritt 6 und 7 (Parser ueberspringt, zaehlt nicht); interaktive [Werkzeug: <id>]; Gating: check/szenario nicht bestanden = Weiter deaktiviert; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
 ## Schritt 1 — entdecken
+ZIELE (drei messbare Ziele dieser Lektion):
 
-ZIELE (diese Lektion in 15 Minuten: danach kannst du):
+1. Du kannst kovalente Bindungen im Molekuel von Kraeften zwischen Molekuelen trennen und begruenden, dass Sieden und Schmelzen nur Letztere ueberwinden.
+2. Du kannst Van-der-Waals-Kraefte, Dipol-Dipol-Wechselwirkungen und Wasserstoffbruecken nach Staerke ordnen und Siedepunktsunterschiede damit erklaeren.
+3. Du kannst mit der Regel Gleiches loest sich in Gleichem die Loeslichkeit vorhersagen und auf AFB-II-Niveau deutsch begruenden.
 
-1. Kovalente Bindungen im Molekuel von Kraeften zwischen Molekuelen trennen und begruenden, dass Sieden und Schmelzen nur Letztere ueberwinden.
-2. Van-der-Waals-Kraefte, Dipol-Dipol-Wechselwirkungen und Wasserstoffbruecken nach Staerke ordnen und Siedepunktsunterschiede damit erklaeren.
-3. Mit der Regel Gleiches loest sich in Gleichem die Loeslichkeit vorhersagen und auf AFB-II-Niveau deutsch begruenden.
+### Hook / Phaenomen
+
+Spiritus auf der Haut verdunstet in Sekunden und kuehlt, Speiseoel bleibt klebrig zurueck — beides Fluessigkeiten, voellig anderes Verhalten. Und warum schwimmt Eis auf Wasser, statt zu sinken wie fast jeder andere Feststoff in seiner Schmelze? Der unsichtbare Klebstoff zwischen den Molekuelen entscheidet ueber Sieden, Loesen und Gefrieren.
+
+### Fachbegriff & Definition
+
+**Zwischenmolekulare Kraefte (ZMK)** sind die **Anziehung zwischen fertigen Molekuelen** — sie bestimmen Siede-, Schmelzpunkt und Loeslichkeit. Sie bilden eine Treppe: **Van-der-Waals-Kraefte** ($0{,}1$–$10\,\mathrm{kJ/mol}$) wirken zwischen allen Molekuelen und wachsen mit der Kontaktflaeche; **Dipol-Dipol-Wechselwirkungen** ($5$–$25\,\mathrm{kJ/mol}$) ziehen permanente Plus- und Minusenden polarer Molekuele an; **Wasserstoffbruecken** ($10$–$40\,\mathrm{kJ/mol}$) entstehen, wenn $H$ an kleines, stark elektronegatives $F$-, $O$- oder $N$-Atom gebunden ist. **Kovalente Bindungen** ($200$–$500\,\mathrm{kJ/mol}$) liegen eine Groessenordnung darueber — Sieden bricht nur die ZMK, die Molekuele bleiben heil.
+
+### Wirkungsgefuege / Modell
+
+Die Pruefkette lautet: **O-H suchen, Dipol pruefen, Kette vergleichen**. Erstens nach $O$-$H$ oder $N$-$H$ suchen — Treffer heisst Wasserstoffbruecken als Leitmotiv. Zweitens permanenten Dipol pruefen (polare Bindung plus unsymmetrischer Bau wie $C{=}O$ oder $C$-$Cl$) — Treffer heisst zusaetzliche Dipol-Dipol-Anteile. Drittens ohne Treffer reine Van-der-Waals-Kraefte — dann entscheidet die Kettenlaenge ueber die Kontaktflaeche. Staerkere Kraft heisst hoehere thermische Energie zum Sieden: $Butan < Propanal < Propan$-$1$-$ol$ bei fast gleicher Molmasse.
 
 Klausur-Satz: `Beim Sieden werden nur die zwischenmolekularen Kräfte überwunden, während die kovalenten Atombindungen innerhalb der Moleküle unverändert erhalten bleiben.`
 
 ## Schritt 2 — entdecken
+PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
-PRETRAINING (Kernbegriffe, erst lesen, dann abdecken und aktiv wiedergeben):
+### Hook / Phaenomen
 
-- Zwischenmolekulare Kraefte (ZMK): Die Anziehung zwischen Molekuelen; sie bestimmt Siede-, Schmelzpunkt und Loeslichkeit.
-- Van-der-Waals-Kraefte (Dispersionskraefte): Momentane Dipole induzieren Nachbarn; sie wirken zwischen allen Molekuelen und wachsen mit der Kontaktflaeche.
-- Dipol-Dipol-Wechselwirkung: Die elektrostatische Anziehung zwischen permanenten Plus- und Minusenden polarer Molekuele.
-- Wasserstoffbrueckenbindung: Starke ZMK, wenn H an ein kleines, stark elektronegatives F-, O- oder N-Atom gebunden ist.
-- Gleiches loest sich in Gleichem: Polare Stoffe loesen sich in polaren Loesungsmitteln, unpolare in unpolaren.
+Drei Stoffe, fast gleiche Molmasse ($58$–$60\,\mathrm{g/mol}$), drei Siedepunkte: $-0{,}5$, $+49$, $+97\,^\circ\mathrm{C}$. Woran erkennt man in zehn Sekunden, welcher Krafttyp wirkt — und warum loest sich der eine in Wasser, der andere nur in Hexan? Fuenf Begriffe liefern das Suchgeraet.
+
+### Fachbegriffe & Definitionen
+
+- **Zwischenmolekulare Kraefte (ZMK):** Anziehung zwischen Molekuelen; sie bestimmt Siede-, Schmelzpunkt und Loeslichkeit — nicht zu verwechseln mit der kovalenten Bindung im Molekuel.
+- **Van-der-Waals-Kraefte (Dispersionskraefte):** Momentane Dipole induzieren Nachbarn; sie wirken zwischen allen Molekuelen und wachsen mit Kettenlaenge und Kontaktflaeche.
+- **Dipol-Dipol-Wechselwirkung:** Elektrostatische Anziehung zwischen permanenten Plus- und Minusenden polarer Molekuele ($5$–$25\,\mathrm{kJ/mol}$), etwa bei $C{=}O$ oder $C$-$Cl$.
+- **Wasserstoffbrueckenbindung:** Staerkste ZMK ($10$–$40\,\mathrm{kJ/mol}$), wenn $H$ an kleines, stark elektronegatives $F$-, $O$- oder $N$-Atom gebunden ist — verantwortlich fuer die Anomalie des Wassers.
+- **Gleiches loest sich in Gleichem:** Polare Stoffe (Alkohole, Carbonsaeuren mit $O$-$H$) loesen sich in Wasser, unpolare (Alkane) in Hexan — erst Polaritaet bestimmen, dann die Regel anwenden.
+
+### Wirkungsgefuege / Modell
+
+Die Begriffe bilden die Kette **Krafttyp, Staerke, Siedepunkt**: Krafttyp bestimmen, Staerke einordnen, makroskopische Folge nennen. Vergleichsaufgaben folgen dem Satzmuster obwohl — unterscheiden sich, weil: Erst mit obwohl die scheinbare Gleichheit nennen (etwa aehnliche molare Masse), dann mit weil die wahre Ursache (verschiedener Krafttyp), zuletzt die Folge (Siedepunkt oder Loeslichkeit). Wasser siedet weit hoeher als artverwandtes $H_2S$, weil es Wasserstoffbruecken bildet — ein fast jaehrlicher Pruefungsfall.
 
 Klausur-Satz: `Mit zunehmender Kettenlänge und Moleküloberfläche wachsen die Van-der-Waals-Kräfte, während polare O-H-Gruppen zusätzlich Wasserstoffbrücken ausbilden.`
 
 ## Schritt 3 — entdecken
+TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
-ENTDECKEN (ein Konzept plus Textdiagramm):
+### Hook / Phaenomen
 
-Zwischenmolekulare Kraefte sind der unsichtbare Klebstoff zwischen fertigen Molekuelen. Die Grundregel lautet: Sieden bricht nur die Anziehung zwischen Molekuelen, die kovalenten C-C-, C-H- und O-H-Bindungen im Molekuel bleiben heil. Drei ZMK bilden eine Treppe: Van-der-Waals am schwaechsten ($0{,}1$–$10\,\mathrm{kJ/mol}$), Dipol-Dipol in der Mitte ($5$–$25\,\mathrm{kJ/mol}$), Wasserstoffbruecken am staerksten ($10$–$40\,\mathrm{kJ/mol}$); kovalente Bindungen liegen mit $200$–$500\,\mathrm{kJ/mol}$ eine Groessenordnung darueber und bleiben beim Sieden unangetastet. Die Reihenfolge der Pruefung bleibt stets zweistufig: Erst nach O-H oder N-H suchen (Treffer heisst Wasserstoffbruecken als Leitmotiv), dann auf permanenten Dipol pruefen (Treffer heisst zusaetzliche Dipol-Dipol-Anteile), sonst reine Van-der-Waals-Kraefte; innerhalb einer Reihe entscheidet die Kettenlaenge ueber die Kontaktflaeche. Struktur bestimmt Eigenschaft — das ist der EF-Kern dieser Lektion.
+Warum schwimmt Eis auf Wasser? Beim Gefrieren ordnen Wasserstoffbruecken die Molekuele in einem offenen Gitter mit viel leerem Raum — Eis ist leichter als fluessiges Wasser. Ohne diese Anomalie saenke Eis auf den Grund von Seen, und viele Lebewesen ueberlebten den Winter nicht. Eine einzige Kraft erklaert Dichte, Siedepunkt und Loeslichkeit zugleich.
+
+### Fachbegriff & Definition
+
+Die **Struktur-Eigenschafts-Kette** besagt: Molekuelbau bestimmt Krafttyp, Krafttyp bestimmt makroskopische Eigenschaft. $Butan$ ($CH_3$-$CH_2$-$CH_2$-$CH_3$) kennt nur Van-der-Waals — Sdp. $-0{,}5\,^\circ\mathrm{C}$. $Propanal$ ($CH_3$-$CH_2$-$CHO$) fuegt Dipol-Dipol hinzu — Sdp. $+49\,^\circ\mathrm{C}$. $Propan$-$1$-$ol$ ($CH_3$-$CH_2$-$CH_2$-$OH$) bildet Wasserstoffbruecken — Sdp. $+97\,^\circ\mathrm{C}$. Gleiche Molmasse, dreifache Antwort — obwohl sich die Massen gleichen, unterscheiden sich die Siedepunkte, weil der Krafttyp staerker wird.
+
+### Wirkungsgefuege / Modell
+
+Denke in Kausalkette: **Bau, Kraft, Folge**. Erstens Bau lesen: $O$-$H$ vorhanden? Dipol vorhanden? Kette lang? Zweitens Kraft zuordnen und Staerke nennen ($0{,}1$–$10$ gegen $5$–$25$ gegen $10$–$40\,\mathrm{kJ/mol}$). Drittens Folge ableiten: hoeherer Siedepunkt, bessere Wasserloeslichkeit, offenes Eisgitter. Loeslichkeit folgt derselben Logik: Polaritaet bestimmen, dann Gleiches-loest-sich anwenden.
 
 ```diagram
-Energie pro Teilchen (kJ/mol)      beim Sieden?
-  kovalente Bindung  [#########] 200-500    NEIN  (bleibt erhalten)
-  Wasserstoffbruecke [##]         10-40     JA    (wird ueberwunden)
-  Dipol-Dipol        [#]           5-25     JA
-  Van-der-Waals      [.]         0,1-10     JA
-  ---------------------------------------------
-  Siedetemperatur bei M ~ 58-60 g/mol:
-   -0,5 C  Butan        CH3-CH2-CH2-CH3   nur VdW      |#
-   +49  C  Propanal      CH3-CH2-CHO       VdW + Dipol  |###
-   +97  C  Propan-1-ol   CH3-CH2-CH2-OH    VdW + H-Bruecke |#######
+  Energie pro Teilchen (kJ/mol)      beim Sieden?
+    kovalente Bindung  [#########] 200-500    NEIN (bleibt erhalten)
+    Wasserstoffbruecke [##]         10-40     JA   (wird ueberwunden)
+    Dipol-Dipol        [#]           5-25     JA
+    Van-der-Waals      [.]         0,1-10     JA
+    ---------------------------------------------
+    Siedetemperatur bei M ~ 58-60 g/mol:
+     -0,5 C  Butan        CH3-CH2-CH2-CH3   nur VdW       |#
+     +49  C  Propanal     CH3-CH2-CHO       VdW + Dipol   |###
+     +97  C  Propan-1-ol  CH3-CH2-CH2-OH    VdW + H-Br.   |#######
+    Schnelltest: O-H/N-H? -> H-Br. | Dipol? -> Dipol | sonst VdW + Kette
 ```
-
-Schnelltest in drei Schritten (in zehn Sekunden zur Einordnung):
-
-1. Schritt A: O-H, N-H oder F-H suchen — Treffer heisst Wasserstoffbruecken als staerkste Kraft.
-2. Schritt B: Permanentem Dipol pruefen (polare Bindung plus unsymmetrischen Bau wie C=O oder C-Cl) — Treffer heisst Dipol-Dipol zusaetzlich zu Van-der-Waals.
-3. Schritt C: Ohne Treffer reine Van-der-Waals-Kraefte; dann Kettenlaenge vergleichen — laenger heisst staerker.
-
-Zahlenanker zum Auswendiglernen: Van-der-Waals $0{,}1$–$10$, Dipol-Dipol $5$–$25$, Wasserstoffbruecken $10$–$40$, kovalent $200$–$500\,\mathrm{kJ/mol}$. Jede Erklaerung folgt der Kette Krafttyp, Staerke, Siedepunkt.
-
-Loeslichkeit folgt derselben Logik: Polare Molekuele (Alkohole und Carbonsaeuren mit O-H) loesen sich in Wasser, unpolare (Alkane) in Hexan — Gleiches loest sich in Gleichem. Erst Polaritaet bestimmen, dann die Regel anwenden.
-
-Klausur-Tipp: Vergleichsaufgaben folgen dem Satzmuster obwohl, unterscheiden sich, weil. Erst mit obwohl die scheinbare Gleichheit nennen (etwa aehnliche molare Masse), dann mit weil die wahre Ursache (verschiedener Krafttyp), zuletzt die makroskopische Folge (Siedepunkt oder Loeslichkeit). Dieses Dreistueck passt auf jede Vergleichsfrage.
-
-Standardfrage: Warum siedet Wasser weit hoeher als artverwandtes $H_2S$? Wasser bildet Wasserstoffbruecken, $H_2S$ nur Dipol-Dipol- und Van-der-Waals-Kraefte — daher der anomal hohe Siedepunkt des Wassers, ein fast jaehrlicher Pruefungsfall.
 
 Klausur-Satz: `Da Wasserstoffbrücken deutlich stärker sind als Van-der-Waals-Kräfte, benötigen Moleküle mit O-H-Gruppen eine wesentlich höhere thermische Energie zum Sieden.`
 
