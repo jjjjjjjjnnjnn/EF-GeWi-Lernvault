@@ -17,45 +17,71 @@ version: Lesson-v3
 
 ## Schritt 1 — entdecken
 
-ZIELE (3 Ziele, in 15 Minuten erreichbar):
+ZIELE (drei messbare Ziele dieser Lektion):
 
-1. Du liest einen Satz als Tonartplan ($Hd$ nach $Dd$ nach $Hd$) und traegst fuer jeden Abschnitt Tonart und Modulationsstellen ein.
-2. Du erklaerst den Gegensatz von Hauptsatz und Seitensatz ueber eine Vergleichstabelle (Charakter, Lage, Rhythmus, Begleitung).
-3. Du bestimmst die Funktion der Coda (Bestaetigung nach der Reprise, keine zweite Entwicklung) und formulierst ein massstabsklares Urteil.
+1. Du kannst die **Sonatensatz-Analyse** in einem Satz definieren und als Arbeit mit Tonartplan plus Themenvergleich vom blossen Nacherzaehlen unterscheiden.
+2. Du kannst fuer Exposition, Durchfuehrung, Reprise und Coda je Tonart und Modulationsstellen eintragen und den Weg $H_d$ nach $D_d$ nach $H_d$ lesen.
+3. Du kannst Haupt- und Seitensatz tabellarisch vergleichen und die Funktion der Coda bestimmen und mit einem Klausur-Satz auf AFB-II-Niveau abschliessen.
+
+### Hook / Phaenomen
+
+Stell dir vor: Vor dir liegen zwei Seiten Noten, voller Themen, Ueberleitungen und Schlussgruppen. Die Prueferin fragt trocken: „Wo stehen wir — Aufbruch oder Heimkehr?" Wer jetzt die Melodien nachsingt, verliert den Faden. Wer dagegen eine einzige Tabelle zieht und sagt: „Hier bricht die Musik nach $D_d$ auf, dort kehrt sie nach $H_d$ zurueck", hat die Pruefung schon halb gewonnen. Wie wird aus Hoereindruecken ein lesbarer Plan?
+
+### Fachbegriff & Definition
+
+Die **Sonatensatz-Analyse** ist das Verfahren, einen klassischen Kopfsatz durch **Tonartplan und Themenvergleich** zu erschliessen. Der Tonartplan haelt fuer jeden Abschnitt Tonart und Ziel fest, der Themenvergleich stellt Hauptsatz und Seitensatz in Charakter, Lage, Rhythmus mit $T = 60/BPM$ und Begleitung gegenueber. Kurz: Die Analyse uebersetzt **Klang in Tabellen** und Tabellen in ein Urteil.
+
+### Wirkungsgefuege / Modell
+
+Der Kernmechanismus laeuft in drei Stufen: **Eintragen, Vergleichen, Urteilen**. Erstens wird der Tonartplan eingetragen: Exposition $H_d$ nach $D_d$, Durchfuehrung offen und modulierend, Reprise $H_d$ nach $H_d$, Coda als Bestaetigung in $H_d$. Zweitens werden Hauptsatz als markant und entschieden und Seitensatz als sanglich und weich verglichen. Drittens wird geurteilt: Steht der Seitensatz in $D_d$, liegt Exposition vor; steht er in $H_d$, liegt Reprise vor; moduliert der Schluss nicht mehr, liegt Coda vor. Faellt der Plan aus, bleibt alles Behauptung.
 
 Klausur-Satz: `Der Tonartplan der Sonatensatzform verlaeuft von der Haupttonart ueber die Dominantseite und zurueck zur Haupttonart, wobei die Coda den Abschluss bestaetigt.`
 
 ## Schritt 2 — entdecken
 
-PRETRAINING Begriffsbox (5 Kernbegriffe, zuerst dreimal lesen, dann aus dem Gedaechtnis abfragen):
+PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
-- Tonartplan: Tabelle aller Abschnittstonarten als Geruest der Sonatensatzanalyse.
-- Hauptsatz (Hauptthema): Erstes, meist entschiedenes Thema; begruendet die Haupttonart.
-- Seitensatz: Kontrastierendes zweites Thema; in der Exposition auf der Dominantseite, in der Reprise in der Haupttonart.
-- Ueberleitung: Bruecke zwischen Hauptsatz und Seitensatz mit modulierender und antreibender Funktion.
-- Coda: Anhang nach der Reprise zur Bestaetigung der Haupttonart ohne neue Ausweichung.
+### Hook / Phaenomen
+
+„Zwei Themen — fertig." So kurz faellt manche Analyse aus, und prompt folgt die Rueckfrage: „Und wo stehen sie tonal?" Denn manche Expositionen sind monothematisch, manche Seitensaetze stammen aus demselben Material wie der Hauptsatz. Wer nur Themen zaehlt, irrt. Diese fuenf Begriffe sichern die Analyse gegen genau diesen Irrtum.
+
+### Fachbegriffe & Definitionen
+
+- **Tonartplan:** Tabelle aller Abschnittstonarten als Geruest der Analyse mit Weg $H_d$ nach $D_d$ nach $H_d$. Er zeigt die tonale Richtung, nicht nur Namen.
+- **Hauptsatz:** Erstes, meist entschiedenes Thema in $H_d$ mit markantem Rhythmus bei $T = 60/BPM$. Er begruendet die Haupttonart.
+- **Seitensatz:** Kontrastierendes zweites Thema — in der Exposition auf der Dominantseite $D_d$, in der Reprise in $H_d$. Er traegt die tonale Spannung und ihre Loesung.
+- **Ueberleitung:** Modulierende Bruecke zwischen Hauptsatz und Seitensatz mit antreibender Funktion. Sie transportiert die Musik von $H_d$ nach $D_d$.
+- **Coda:** Anhang nach der Reprise zur Bestaetigung von $H_d$ ohne neue Ausweichung. Sie schliesst ab, statt zu entwickeln.
+
+### Wirkungsgefuege / Modell
+
+Die Begriffe greifen ineinander: Der **Tonartplan** gibt das Geruest $H_d-D_d-H_d$ vor, **Hauptsatz** und **Seitensatz** fuellen es thematisch, die **Ueberleitung** vollzieht den Tonartwechsel, die **Coda** besiegelt die Heimkehr. Wer in der Klausur analysiert, fuellt deshalb zuerst die Tonartspalte und erst danach die Themenvergleichstabelle — so entscheidet die Tonart ueber Exposition oder Reprise, nicht der erste Klangeindruck.
 
 Klausur-Satz: `Waehrend der Seitensatz in der Exposition die Dominantseite erreicht, wird er in der Reprise in die Haupttonart eingegliedert, sodass der Tonartplan geschlossen wird.`
 
 ## Schritt 3 — entdecken
 
-ENTDECKEN (1 Konzept + 1 Textdiagramm):
+TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
-Eine Analyse uebersetzt Hoereindruecke in zwei Tabellen. Die erste Tabelle ist der Tonartplan: Die Exposition startet in der Haupttonart ($Hd$), moduliert in der Ueberleitung und landet mit dem Seitensatz auf der Dominantseite ($Dd$); die Durchfuehrung wandert ohne festen Ruhepunkt; die Reprise holt beide Themen nach $Hd$ zurueck; die Coda bestaetigt $Hd$. Die zweite Tabelle vergleicht Hauptsatz und Seitensatz in Charakter, Lage, Rhythmus und Begleitung. Beide Tabellen zusammen tragen das Urteil.
+### Hook / Phaenomen
+
+G-Dur, dann D-Dur, dann viele Tonarten ohne Ruhepunkt, dann wieder G-Dur, dann noch einmal G-Dur — ist der letzte Abschnitt nun eine zweite Durchfuehrung oder bloss ein Anhang? An genau dieser Stelle scheiden sich in der Pruefung gute und sehr gute Analysen. Denn dicht und laut klingen beide, doch nur eine moduliert noch. Wie trennt man Entwicklung von Bestaetigung?
+
+### Fachbegriff & Definition
+
+Die **Coda als Bestaetigung** ist der Schlussabschnitt nach abgeschlossener Reprise, der die Haupttonart $H_d$ ohne neue Modulation be festigt. Im Gegensatz zur **Durchfuehrung**, die durch Fragmentierung und staendige Ausweichung Spannung aufbaut, stabilisiert die Coda mit festem $H_d$ und ruhigem Puls bei $T = 60/BPM$. Kriterium ist der feste tonale Zielpunkt: unstetes Wandern bedeutet Durchfuehrung, stabiles Verweilen bedeutet Coda.
+
+### Wirkungsgefuege / Modell
+
+Denke in Kausalkette: **Eintragen, Pruefen, Benennen**. Erstens wird der Tonartplan eingetragen: Hauptsatz $H_d$, Seitensatz $D_d$ oder $H_d$, Durchfuehrung offen. Zweitens wird der Schlussabschnitt geprueft: Moduliert er noch mit $f_{neu} = f_{alt} \cdot 2^{n/12}$ in neue Tonarten, bleibt es Durchfuehrung; verweilt er in $H_d$, ist es Coda. Drittens wird benannt: Exposition ist Aufbruch, Reprise ist Ausgleich, Coda ist Bestaetigung. Genau diese Kette schuetzt vor der Verwechslung von dichter Faktur mit echter Entwicklung.
 
 ```diagram
-  Abschnitt    | Exposition       | Durchfuehrung   | Reprise       | Coda
-  Hauptsatz    | $Hd$             | --              | $Hd$          | $Hd$
-  Ueberleitung | $Hd$ nach $Dd$   | Modulationen    | bleibt in $Hd$ | $Hd$
-  Seitensatz   | $Dd$             | --              | $Hd$          | $Hd$
-  Tonartziel   | $Hd$ nach $Dd$   | offen und unstet| $Hd$ Ausgleich| Bestaetigung
-
-  Themenvergleich im Kopf:
-  Merkmal    | Hauptsatz            | Seitensatz
-  Charakter  | markant, entschieden | sanglich, weich
-  Lage       | tief, akkordnah      | hoeher, melodisch
-  Rhythmus   | kurz, punktiert      | laenger, gebunden
-  Begleitung | Akkordpuls           | aufgeloest und fliessend
+  Analyse [Tonartplan + Themenvergleich -> Urteil]
+  Exposition [Hd -> Dd] -> Aufbruch offen
+  Durchfuehrung [Modulation unstet] -> Umweg spannungsvoll
+  Reprise [Hd -> Hd] -> Ausgleich geschlossen
+  Coda [Hd ohne Modulation] -> Bestaetigung
+  Themenvergleich: Charakter | Lage | Rhythmus T=60/BPM | Begleitung
 ```
 
 Klausur-Satz: `Der Tonartplan macht sichtbar, dass die Exposition mit der Dominante eine tonale Spannung aufbaut, die erst die Reprise durch die Rueckkehr beider Themen in die Haupttonart aufloest.`

@@ -17,44 +17,72 @@ version: Lesson-v3
 
 ## Schritt 1 — entdecken
 
-ZIELE (3 Ziele, in 15 Minuten erreichbar):
+ZIELE (drei messbare Ziele dieser Lektion):
 
-1. Du benennst die sechs diatonischen Dreiklaenge mit Stufe und Tongeschlecht (I Dur, ii Moll, iii Moll, IV Dur, V Dur, vi Moll) und ordnest sie den Funktionen $T-S-D-T$ zu.
-2. Du schreibst in C-Dur die authentische Kadenz $I-IV-V-I$ auf und erklaerst ihre Schlusswirkung ueber Bassquinten und Leittonzug.
-3. Du verbindest zwei Akkorde regelgerecht, indem du gemeinsame Toene haeltst, die uebrigen Stimmen stufenweise fuehrst und parallele Quinten und Oktaven vermeidest (AFB II).
+1. Du kannst die **authentische Kadenz** in einem Satz definieren und als Schlussformel $I-IV-V-I$ mit Bassquinten und Leittonzug erklaeren.
+2. Du kannst die sechs diatonischen Dreiklaenge mit Stufe und Tongeschlecht benennen und den Funktionen $T-S-D-T$ zuordnen.
+3. Du kannst zwei Akkorde regelgerecht verbinden — gemeinsamen Ton halten, stufenweise in Gegenbewegung fuehren, Parallelen meiden — und mit einem Klausur-Satz abschliessen (AFB II).
+
+### Hook / Phaenomen
+
+Stell dir vor: Ein Chor singt vier Akkorde, und ploetzlich atmet der ganze Raum auf — angekommen, geschlossen, fertig. Dieselben vier Akkorde in anderer Reihenfolge, und alles wirkt offen, fragend, unfertig. Woran hoert das Ohr, ob ein Schluss wirklich ein Schluss ist? Die Antwort liegt in zwei winzigen Bewegungen: einem Bassschritt und einem Halbton.
+
+### Fachbegriff & Definition
+
+Die **authentische Kadenz** ist die Standard-Schlussfolge **$I-IV-V-I$** in Dur, die Stufen- mit Funktionstheorie verbindet. Sie beginnt und endet auf der **Tonika**, durchlaeuft **Subdominante** und **Dominante** und schliesst durch **Bassquinten** und **Leittonaufloesung** von $H$ nach $C$. Kurz: Die Kadenz ist der **Schlusssatz der Harmonie**, der Spannung aufbaut und zu Hause aufloest.
+
+### Wirkungsgefuege / Modell
+
+Der Kernmechanismus laeuft in drei Stufen: **Aufbruch, Spannung, Aufloesung**. Erstens verlaesst $I$ mit $C-E-G$ die Heimat in Richtung $IV$ mit $F-A-C$. Zweitens spannt $V$ mit $G-H-D$ durch Quintlage und Leitton $H$ mit Halbtondrang nach $C$. Drittens loest $I$ mit Bassschritt $G$ nach $C$ als Quarte aufwaerts und $H$ nach $C$ als Halbton auf. Faellt der Leitton aus, bleibt der Schluss matt; folgt auf $V$ ein $IV$, zerstoert die Rueckwendung mit $D$ nach $S$ die Schlusswirkung.
 
 Klausur-Satz: `Die authentische Kadenz $I-IV-V-I$ verbindet Stufen- mit Funktionstheorie und schliesst durch Bassquinten und Leittonwirkung.`
 
 ## Schritt 2 — entdecken
 
-PRETRAINING Begriffsbox (5 Kernbegriffe, zuerst dreimal lesen, dann aus dem Gedaechtnis abfragen):
+PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
-- Stufe: Dreiklang auf je einer Tonleiterstufe in Terzschichtung, in C-Dur C-d-e-F-G-a.
-- Authentische Kadenz: Standard-Schlussfolge $I-IV-V-I$, beginnt und endet auf der Tonika.
-- Funktionsgruppe: Tonika $T$ ($I$, $vi$, $iii$), Subdominante $S$ ($IV$, $ii$), Dominante $D$ ($V$, $vii0$); Grundrichtung $T-S-D-T$.
-- Gemeinsamer Ton: Ton, der in zwei aufeinanderfolgenden Akkorden enthalten ist; er bleibt in derselben Stimme liegen.
-- Parallele Quinten/Oktaven: Zwei Stimmen bewegen sich gleichgerichtet im Abstand einer reinen Quinte oder Oktave; im traditionellen Satz verboten.
+### Hook / Phaenomen
+
+„C, F, G, C — fertig." So leicht klingt die Kadenz auf dem Papier. Doch wer sie vierstimmig ausschreibt, stolpert ueber Innensstimmen, verdoppelte Toene und verbotene Parallelen. Ohne praezise Begriffe wird der Satz zum Gluecksspiel. Diese fuenf Bausteine machen aus Akkordnamen einen singbaren Satz.
+
+### Fachbegriffe & Definitionen
+
+- **Stufe:** Dreiklang auf je einer Tonleiterstufe in Terzschichtung — in C-Dur $I=C$, $ii=d$, $iii=e$, $IV=F$, $V=G$, $vi=a$. Sie beantwortet die Frage, wo der Akkord steht.
+- **Funktion:** Streberichtung eines Akkords als **Tonika $T$**, **Subdominante $S$** oder **Dominante $D$** mit Grundrichtung $T-S-D-T$. Sie beantwortet die Frage, wohin der Akkord strebt.
+- **Leitton:** Halbton unter der Tonika — in C-Dur $H$ mit Zug nach $C$. Er traegt die Schluss-Spannung und muss sich aufwaerts aufloesen.
+- **Gemeinsamer Ton:** Ton, der in zwei Folgeakkorden zugleich enthalten ist. Er bleibt als Liegeton in derselben Stimme und sichert den fliessenden Anschluss.
+- **Parallele Quinten und Oktaven:** Gleichgerichtete Bewegung zweier Stimmen im Abstand $P5$ oder $P8$. Sie verschmelzen zwei Stimmen zu einer und sind im traditionellen Satz verboten.
+
+### Wirkungsgefuege / Modell
+
+Die Begriffe greifen ineinander: Die **Stufe** benennt den Akkord, die **Funktion** weist ihm die Richtung $T-S-D-T$ zu, der **Leitton** $H$ nach $C$ spannt den Schlusston, der **gemeinsame Ton** haelt den Satz zusammen, das Verbot von **Parallelen** mit $P5$ und $P8$ sichert die Selbstaendigkeit der Stimmen. Wer in der Klausur verbindet, haelt deshalb zuerst den gemeinsamen Ton fest und fuehrt dann alle uebrigen Stimmen stufenweise in Gegenbewegung zum Bass.
 
 Klausur-Satz: `Gemeinsame Toene werden gehalten, die uebrigen Stimmen bewegen sich stufenweise in Gegenbewegung zum Bass.`
 
 ## Schritt 3 — entdecken
 
-ENTDECKEN (1 Konzept + 1 Textdiagramm):
+TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
-Die Stufentheorie beantwortet die Frage, auf welcher Stufe ein Akkord steht. Die Funktionstheorie beantwortet die Frage, wohin er strebt. In C-Dur ist $I$ die Heimat, $V$ die Tuer mit Leittonzug von H nach C, $IV$ der zweite Weg. Die Richtung $T-S-D-T$ ist eine Einbahnstrasse: Die Tonika darf ueberallhin gehen, die Subdominante zur Dominante, die Dominante nach Hause. Die Folge $D$ vor $S$ ist als Kadenzschluss unzulaessig. Die Schlusswirkung entsteht durch den Bassschritt G nach C (Quarte aufwaerts, Quinte abwaerts) und die Halbtonaufloesung H nach C. Beim Verbinden zuerst den gemeinsamen Ton festhalten, dann die uebrigen Stimmen in kleinen Schritten und gegen den Bass fuehren.
+### Hook / Phaenomen
+
+Warum klingt $V-IV-I$ falsch, obwohl alle Akkorde richtig heissen? Zwei Prueflinge schreiben dieselben Stufen, nur die Reihenfolge ist vertauscht — und eine Arbeit bekommt volle Punkte, die andere einen dicken Rotstift. Der Unterschied liegt nicht im Was, sondern im Wohin. Die Kadenz ist eben kein Akkordvorrat, sondern eine Einbahnstrasse.
+
+### Fachbegriff & Definition
+
+Der **Funktionsweg $T-S-D-T$** ist die verbindliche Richtungsregel der Kadenz: Die **Tonika** darf ueberallhin gehen, die **Subdominante** strebt zur **Dominante**, die **Dominante** loest sich nur zur **Tonika** auf. Die Folge $D$ nach $S$ ist als Kadenzschluss unzulaessig. Die Schlusswirkung entsteht aus Bassquinte $G$ nach $C$ plus Halbton $H$ nach $C$ — Quintsprung plus Leittonaufloesung wirken gemeinsam schliessend.
+
+### Wirkungsgefuege / Modell
+
+Denke in Kausalkette: **Bestimmen, Fuehren, Pruefen**. Erstens werden Stufen und Funktionen bestimmt: $I=T$, $IV=S$, $V=D$. Zweitens werden die Stimmen gefuehrt: gemeinsamen Ton halten, Uebrige mit $s_{Schritt} \le 2$ Halbertoene in Gegenbewegung zum Bass, Leitton $H$ stets nach $C$ aufloesen. Drittens wird geprueft: Bass gegen Sopran auf $P5$ und $P8$ kontrollieren, Richtung $T-S-D-T$ bestaetigen. Genau diese Kette verwandelt richtige Akkordnamen in einen richtigen Satz.
 
 ```diagram
-  C-Dur Stufen (Dreiklaenge):
-  $I$=C   $ii$=d   $iii$=e   $IV$=F   $V$=G   $vi$=a
-  Dur    moll    moll     Dur     Dur    moll
-  [$T$]   [$S$]    [$T$]     [$S$]    [$D$]   [$T$]
-
-  Kadenzweg $T-S-D-T$:
-  $I$  ---->  $IV$  ---->  $V$  ---->  $I$
-  C         F          G         C
-  Bass: C -> F -> G -> C (Quarte + Quinte)
-  Leitton: H -> C (Halbton, nur in $V$-$I$)
-  Verboten: $S$ nach $D$ ja, $D$ nach $S$ nein
+  Kadenzweg [T-S-D-T als Einbahnstrasse]
+  I(T) -> IV(S) -> V(D) -> I(T)
+  C -> F -> G -> C
+  Bass: C -> F [Quarte] -> G [Schritt] -> C [Quinte abwaerts]
+  Leitton: H -> C [Halbton, nur V-I]
+  Stimmfuehrung: Ton halten + Schritt + Gegenbewegung
+  Verbot: D->S nein | Parallelen P5/P8 nein
 ```
 
 Klausur-Satz: `Die Kadenz folgt dem Weg $T-S-D-T$, weil nur diese Richtung Leittonspannung und Bassquinten zur Tonika aufloest.`

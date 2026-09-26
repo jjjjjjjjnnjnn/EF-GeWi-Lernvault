@@ -17,43 +17,71 @@ version: Lesson-v3
 
 ## Schritt 1 — entdecken
 
-ZIELE (3 Ziele, in 15 Minuten erreichbar):
+ZIELE (drei messbare Ziele dieser Lektion):
 
-1. Du erklaerst Funktion und Reihenfolge der drei Teile: Die Exposition stellt zwei Themen in zwei Tonarten vor, die Durchfuehrung zerlegt und moduliert, die Reprise holt beide Themen in die Haupttonart zurueck.
-2. Du bestimmst den Formteil beim einmaligen Hoeren mit drei Fragen (Wie viele Themen? Wechselt das zweite Thema die Tonart? Kehren beide in die Haupttonart zurueck?).
-3. Du formulierst Urteil und Begruendung im muendlichen Baustein auf AFB-II-Niveau.
+1. Du kannst die **Sonatenhauptsatzform** in einem Satz definieren und als Tonartfahrplan $H_d$ nach $D_d$ nach $H_d$ vom blossen Liedschema unterscheiden.
+2. Du kannst die drei Teile — **Exposition, Durchfuehrung, Reprise** — beim einmaligen Hoeren mit drei Fragen zu Themenzahl, Tonartwechsel und Heimkehr bestimmen.
+3. Du kannst ein Hoerurteil mit Fachbegriffen und dem Baustein Ich hoere, das wirkt, weil belegen und auf AFB-II-Niveau abschliessen.
+
+### Hook / Phaenomen
+
+Stell dir vor: Ein Orchester stellt zwei Melodien vor — erst markant und entschlossen, dann sanglich und weich. Die zweite klingt ploetzlich in fremder Tonart, alles draengt weiter, nichts kommt zur Ruhe. Spaeter kehren beide Melodien wieder, nun in derselben Tonart, und ploetzlich wirkt alles geloest. Dieselben Themen, voellig andere Wirkung — wie erkennt das Ohr, ob es aufbricht oder heimkehrt?
+
+### Fachbegriff & Definition
+
+Die **Sonatenhauptsatzform** ist die dreiteilige Anlage schneller klassischer Saetze aus **Exposition, Durchfuehrung und Reprise**. Die Exposition stellt zwei kontrastierende Themen in zwei Tonarten $H_d$ nach $D_d$ vor, die Durchfuehrung zerlegt und moduliert, die Reprise holt beide Themen in die Haupttonart $H_d$ zurueck. Kurz: Die Form ist ein **Tonartfahrplan**, kein dreiteiliges Lied — entscheidend ist der Weg der Tonarten, nicht die Zahl der Takte.
+
+### Wirkungsgefuege / Modell
+
+Der Kernmechanismus laeuft in drei Stufen: **Aufbruch, Umweg, Heimkehr**. Erstens verlaesst die Exposition mit dem zweiten Thema die Haupttonart $H_d$ in Richtung Dominantseite $D_d$ und laesst Spannung offen. Zweitens verzoegert die Durchfuehrung durch Fragmentierung mit Abspaltung und staendige Modulation bei $T = 60/BPM$ die Heimkehr. Drittens loest die Reprise durch Rueckholung beider Themen nach $H_d$ die Spannung. Faellt der Tonartwechsel aus, bleibt alles Liedform; fehlt die Heimkehr, bleibt alles offen.
 
 Klausur-Satz: `Die Exposition stellt zwei kontrastierende Themen in zwei Tonarten vor, die Durchfuehrung zerlegt und moduliert, und die Reprise holt beide Themen in die Haupttonart zurueck.`
 
 ## Schritt 2 — entdecken
 
-PRETRAINING Begriffsbox (5 Kernbegriffe, zuerst dreimal lesen, dann aus dem Gedaechtnis abfragen):
+PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
-- Sonatenhauptsatzform: Dreiteilige Anlage schneller Saetze: Exposition, Durchfuehrung, Reprise.
-- Exposition: Vorstellung zweier kontrastierender Themen; die Tonart wandert von der Haupttonart zur Dominantseite.
-- Durchfuehrung: Zerlegung der Motive in Fragmente mit staendiger Modulation; instabil und spannungsvoll.
-- Reprise: Wiederkehr beider Themen in der Haupttonart als tonaler Ausgleich.
-- Haupttonart (Tonika): Tonales Zuhause des Satzes; Bezugspunkt fuer alle Ausweichungen.
+### Hook / Phaenomen
+
+„Dreiteilig — also A-B-A." Dieser Kurzschluss kostet in der Pruefung die entscheidenden Punkte. Denn auch ein einfaches Lied ist dreiteilig, doch es kennt weder Themen-Dualismus noch Tonartplan. Ohne scharfe Begriffe klingt alles gleich. Diese fuenf Bausteine schaerfen das Ohr fuer den Unterschied.
+
+### Fachbegriffe & Definitionen
+
+- **Sonatenhauptsatzform:** Dreiteilige Anlage aus **Exposition, Durchfuehrung und Reprise** mit Themen-Dualismus plus Tonartplan $H_d-D_d-H_d$. Sie ist ein Fahrplan der Tonarten, kein blosses Wiederholungsschema.
+- **Exposition:** Vorstellung zweier kontrastierender Themen mit Aufbruch von $H_d$ nach $D_d$. Sie endet offen und draengend, weil die Fremdtonart noch nicht aufgeloest ist.
+- **Durchfuehrung:** Zerlegung vorhandener Motive in Fragmente mit staendiger Modulation. Sie ist instabil und spannungsvoll und fuehrt kein neues Thema ein.
+- **Reprise:** Wiederkehr beider Themen in der Haupttonart $H_d$ als tonaler Ausgleich. Sie schliesst, was die Exposition offengelassen hat.
+- **Haupttonart:** Tonales Zuhause des Satzes als Bezugspunkt aller Ausweichungen. Wer sie wiedererkennt, erkennt auch Aufbruch und Heimkehr.
+
+### Wirkungsgefuege / Modell
+
+Die Begriffe greifen ineinander: Die **Haupttonart** $H_d$ stiftet den Bezugspunkt, die **Exposition** bricht mit dem zweiten Thema nach $D_d$ auf, die **Durchfuehrung** haelt durch Modulation die Rueckkehr hinaus, die **Reprise** vollzieht mit $H_d$ nach $H_d$ den Ausgleich. Wer in der Pruefung bestimmt, fragt deshalb nie zuerst nach Schoenheit, sondern immer nach Themenzahl und Tonart des zweiten Themas — so trennt ein Hoermerkmal Exposition von Reprise.
 
 Klausur-Satz: `Die Haupttonart ist der tonale Ruhepunkt des Satzes, von dem die Exposition aufbricht und in den die Reprise zurueckkehrt.`
 
 ## Schritt 3 — entdecken
 
-ENTDECKEN (1 Konzept + 1 Textdiagramm):
+TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
-Die Sonatenhauptsatzform ist ein Tonartfahrplan, kein dreiteiliges Lied. Die Exposition verlaesst mit dem zweiten Thema die Haupttonart ($Hd$) in Richtung Dominantseite ($Dd$) und laesst Spannung offen. Die Durchfuehrung zerlegt vorhandenes Material, moduliert staendig und verzoegert die Heimkehr. Die Reprise bringt beide Themen in der Haupttonart und loest die Spannung. Zur Bestimmung zaehlt daher nicht die Melodie, sondern der Tonartplan: Bleibt die Musik draussen, hoerst du Exposition oder Durchfuehrung; stehen beide Themen in der Haupttonart, hoerst du die Reprise.
+### Hook / Phaenomen
+
+Ein Hoerprotokoll notiert: zwei Themen, das zweite in fremder Tonart, Ende offen und draengend. Ein zweites notiert: beide Themen in derselben Tonart, Ende beruhigt und geschlossen. Dieselbe Melodie, zwei entgegengesetzte Zustaende — woran entscheidet sich, ob die Musik noch unterwegs ist oder schon angekommen? Genau diese Frage stellt die Prueferin immer wieder.
+
+### Fachbegriff & Definition
+
+Der **Tonartplan $H_d-D_d-H_d$** ist das Verlaufsschema der Sonatenhauptsatzform: **Exposition** als Aufbruch $H_d$ nach $D_d$, **Durchfuehrung** als unsteter Umweg ohne Ruhepunkt, **Reprise** als Heimkehr $H_d$ nach $H_d$. Er beantwortet nicht, wie die Themen klingen, sondern wo sie stehen. Ohne Themen-Dualismus plus Tonartplan bleibt jede Dreiteiligkeit blosse Liedform $A-B-A$.
+
+### Wirkungsgefuege / Modell
+
+Denke in Kausalkette: **Zaehlen, Vergleichen, Entscheiden**. Erstens werden die Themen gezaehlt: Ein Thema spricht gegen Exposition und Reprise, zwei Themen sprechen dafuer. Zweitens wird die Tonart des zweiten Themas verglichen: Fremdtonart $D_d$ bedeutet noch unterwegs, Haupttonart $H_d$ bedeutet angekommen. Drittens wird entschieden: $H_d$ nach $D_d$ mit offenem Ende ist Exposition, Fragmente plus Modulation sind Durchfuehrung, $H_d$ nach $H_d$ mit geschlossenem Ende ist Reprise mit $T = 60/BPM$ als stabilem Puls der Heimkehr. Genau diese Kette macht das Hoerurteil ueberpruefbar.
 
 ```diagram
-  Exposition          Durchfuehrung           Reprise          Coda
-  Erster Gedanke $Hd$   Fragmente             Erster Gedanke $Hd$
-  Zweiter Gedanke $Dd$  plus Modulation       Zweiter Gedanke $Hd$
-  Aufbruch            Umweg und Spannung      Heimkehr         Bestaetigung
-  $Hd$ nach $Dd$      unstet und offen        $Hd$ nach $Hd$
-
-  Drei Hoerfragen:
-  1) Wie viele Themen?
-  2) Wechselt das zweite Thema die Tonart?
-  3) Kehren beide Themen in die Haupttonart zurueck?
+  Tonartplan [Hd -> Dd -> Hd als Fahrplan]
+  Exposition [Hd -> Dd] -> Spannung offen
+  Durchfuehrung [Fragmente + Modulation] -> Umweg unstet
+  Reprise [Hd -> Hd] -> Ausgleich geschlossen
+  Coda [Hd] -> Bestaetigung
+  Hoerfragen: Themenzahl? | Tonartwechsel? | Heimkehr?
 ```
 
 Klausur-Satz: `Waehrend die Exposition die Spannung durch den Tonartwechsel zur Dominantseite aufbaut, loest die Reprise sie auf, indem sie beide Themen in die Haupttonart zurueckfuehrt.`

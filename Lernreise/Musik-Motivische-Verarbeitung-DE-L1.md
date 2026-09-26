@@ -17,45 +17,70 @@ version: Lesson-v3
 
 ## Schritt 1 — entdecken
 
-ZIELE (3 Ziele, in 15 Minuten erreichbar):
+ZIELE (drei messbare Ziele dieser Lektion):
 
-1. Du erklaerst in einem Satz, was ein Motiv ist (kleinste, rhythmisch gepraegte musikalische Gestalt), und erkennst, ob es verarbeitet wurde.
-2. Du unterscheidest fuenf Verfahren (Sequenz, Umkehrung, Krebs, Dehnung und Stauchung, Abspaltung) und benennst ihre Hoerwirkung.
-3. Du sprichst im Pruefungsbaustein: Ich hoere eine Gestalt, das wirkt auf eine Weise, weil ein Fachbegriff es belegt.
+1. Du kannst das **Motiv** in einem Satz definieren und als kleinste rhythmisch gepraegte Gestalt im Hoerbeispiel wiedererkennen.
+2. Du kannst fuenf Verfahren — **Sequenz, Umkehrung, Krebs, Dehnung und Stauchung, Abspaltung** — am Notenbild und im Klang unterscheiden und zeitlich mit $T = 60/BPM$ einordnen.
+3. Du kannst eine Verarbeitung mit dem Baustein Ich hoere, das wirkt, weil belegen und mit einem Klausur-Satz abschliessen (AFB II).
+
+### Hook / Phaenomen
+
+Stell dir vor: Vier Toene, kaum zwei Sekunden lang, und ein ganzer Saal haelt den Atem an. Ta-ta-ta-taa — jeder kennt diesen Anfang, doch fast niemand bemerkt, dass aus diesen vier Toenen ein ganzer Sinfoniesatz waechst. Wie kann so wenig Material so viel Musik tragen? Die Antwort liegt nicht in neuen Einfaellen, sondern in der Kunst, einen einzigen Gedanken immer neu zu drehen, zu wenden und zuzuspitzen.
+
+### Fachbegriff & Definition
+
+Das **Motiv** ist die kleinste sinntragende musikalische Gestalt aus wenigen Toenen mit praegnantem Rhythmus. Es ist bewusst unvollstaendig angelegt: rhythmisch markant, intervallisch fassbar, harmonisch offen. Erst die **motivische Verarbeitung** — also Sequenz, Umkehrung, Krebs, Dehnung und Stauchung sowie Abspaltung — entfaltet daraus einen Abschnitt. Kurz: Das Motiv ist der **Keim**, die Verarbeitung ist das **Wachstum**.
+
+### Wirkungsgefuege / Modell
+
+Der Kernmechanismus laeuft in drei Stufen: **Befestigung, Veraenderung, Zuspitzung**. Erstens wird das Motiv durch unveraenderte Wiederholung als Keim befestigt. Zweitens veraendern Sequenz mit $f_{neu} = f_{alt} \cdot 2^{n/12}$ bei Versetzung um $n$ Halbertoene, Umkehrung und Krebs seine Kontur, waehrend Dehnung mit $T_{neu} = 2 \cdot T_{alt}$ und Stauchung mit $T_{neu} = T_{alt}/2$ seine Zeitdichte bei $T = 60/BPM$ steuern. Drittens spitzt die Abspaltung nur noch das Kopf-Fragment zu, bis die Spannung einen Hoehepunkt verlangt. Faellt die Befestigung aus, wirkt alles beliebig; fehlt die Zuspitzung, wirkt alles endlos.
 
 Klausur-Satz: `Ein Motiv ist die kleinste sinntragende musikalische Gestalt, die durch Verfahren wie Sequenz, Umkehrung, Krebs, Dehnung oder Abspaltung weiterverarbeitet wird.`
 
 ## Schritt 2 — entdecken
 
-PRETRAINING Begriffsbox (5 Kernbegriffe, zuerst dreimal lesen, dann aus dem Gedaechtnis abfragen):
+PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
-- Sequenz: Dasselbe Motivmodell wird stufenweise auf andere Tonhoehen versetzt; die Wirkung ist Antrieb und Steigerung.
-- Umkehrung: Intervallrichtungen werden gespiegelt (aufwaerts wird abwaerts); die Kontur wird kontrastiert.
-- Krebs: Das Motiv wird rueckwaerts von hinten nach vorn gelesen; die staerkste Verfremdung.
-- Dehnung und Stauchung: Notenwerte werden verlaengert oder verkuerzt; Zeitdichte und Ausdruck veraendern sich.
-- Abspaltung: Nur Kopf oder Schwanz des Motivs wird wiederholt; die Spannung steigt mit jeder Wiederholung.
+### Hook / Phaenomen
+
+„Das klingt irgendwie hoeher und enger" — mit solchen Alltagswoertern vergibt die Pruefung keine Punkte. Erst wenn du sagen kannst, ob die Tonhoehe wanderte, die Richtung spiegelte oder nur ein Fragment uebrig blieb, wird aus dem Eindruck ein Beleg. Diese fuenf Werkzeuge brauchst du wie einen Schluesselbund.
+
+### Fachbegriffe & Definitionen
+
+- **Sequenz:** Stufenweise Versetzung desselben Motivmodells auf andere Tonhoehen mit $f_{neu} = f_{alt} \cdot 2^{n/12}$. Sie erhaelt die Gestalt und erzeugt Antrieb und Steigerung.
+- **Umkehrung:** Spiegelung aller Intervallrichtungen bei gleicher Reihenfolge — aufwaerts wird abwaerts. Sie kontrastiert die Kontur bei erhaltenem Rhythmus.
+- **Krebs:** Rueckwaertslesung des Motivs von hinten nach vorn. Sie kehrt die zeitliche Reihenfolge um und erzeugt die staerkste Verfremdung.
+- **Dehnung und Stauchung:** Verlaengerung mit $T_{neu} = 2 \cdot T_{alt}$ oder Verkuerzung mit $T_{neu} = T_{alt}/2$ der Notenwerte bei $T = 60/BPM$. Sie veraendern Zeitdichte und Ausdruck von getragen bis draengend.
+- **Abspaltung (Fragmentierung):** Isolierung und Wiederholung nur des Kopf- oder Schwanz-Fragments. Sie verknappt das Material und steigert die Spannung mit jeder Wiederholung.
+
+### Wirkungsgefuege / Modell
+
+Die Begriffe greifen ineinander: Die **Sequenz** treibt durch Tonhoehenversetzung an, die **Umkehrung** und der **Krebs** kontrastieren durch Kontur- und Reihenfolgewechsel, **Dehnung und Stauchung** regeln ueber $T = 60/BPM$ die zeitliche Dichte, die **Abspaltung** spitzt durch Materialverknappung zu. Wer in der Pruefung ein Hoerbeispiel deutet, prueft deshalb immer in der Reihenfolge Kontur, Zeit, Material — so schliesst jede Antwort genau ein Verfahren ein und ein anderes aus.
 
 Klausur-Satz: `Bei der Sequenz bleibt die Gestalt des Motivs erhalten, waehrend die Tonhoehe versetzt wird; bei der Abspaltung wird nur ein Fragment des Motivs weitergefuehrt.`
 
 ## Schritt 3 — entdecken
 
-ENTDECKEN (1 Konzept + 1 Textdiagramm):
+TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
-Ein Motiv ist der kleinste sinnvolle Gedanke, oft nur wenige Toene mit praegnantem Rhythmus. Es wirkt unvollstaendig und verlangt Verarbeitung. Zur Bestimmung genuegen drei Prueffragen: Hat sich die Kontur veraendert (versetzt ist Sequenz, gespiegelt ist Umkehrung, rueckwaerts ist Krebs), hat sich die Zeit veraendert (laenger ist Dehnung, kuerzer ist Stauchung), hat sich das Material veraendert (nur Fragment ist Abspaltung). Klassische Komponisten entwickeln aus einem Motiv ganze Abschnitte: erst Befestigung durch Wiederholung, dann Antrieb durch Sequenz, Kontrast durch Umkehrung, Verfremdung durch Krebs, Zuspitzung durch Abspaltung.
+### Hook / Phaenomen
+
+Hoere genau hin: Erst erklingt ein kurzer Ruf, dann derselbe Ruf eine Stufe hoeher, dann ploetzlich nur noch sein Anfang, immer schneller, immer dringlicher. Kein einziges neues Motiv — und doch steigt die Spannung von Sekunde zu Sekunde. Wie baut ein Komponist aus Wiederholung Drama, ohne je neues Material zu erfinden?
+
+### Fachbegriff & Definition
+
+Die **Drei-Ebenen-Pruefung** ist das Entscheidungsverfahren zur Bestimmung jeder Verarbeitung: **Kontur-Ebene** (versetzt ist Sequenz, gespiegelt ist Umkehrung, rueckwaerts ist Krebs), **Zeit-Ebene** (verlaengert mit $T_{neu} = 2 \cdot T_{alt}$ ist Dehnung, verkuerzt mit $T_{neu} = T_{alt}/2$ ist Stauchung bei $T = 60/BPM$) und **Material-Ebene** (nur Fragment ist Abspaltung). Sie ordnet jede Hoerbeobachtung genau einer Veraenderung zu und macht die Deutung ueberpruefbar.
+
+### Wirkungsgefuege / Modell
+
+Denke in Kausalkette: **Erkennen, Einordnen, Deuten**. Erstens wird das Grundmotiv an Rhythmus und Intervallen erkannt und als Keim festgehalten. Zweitens wird jede Veraenderung auf den drei Ebenen einsortiert: Bleibt die Gestalt bei $f_{neu} = f_{alt} \cdot 2^{n/12}$ erhalten, liegt Sequenz vor; kehrt sich die Richtung um, liegt Umkehrung vor; schrumpft das Material aufs Fragment, liegt Abspaltung vor. Drittens wird die Hoerwirkung gedeutet: Sequenz treibt, Umkehrung kontrastiert, Krebs verfremdet, Stauchung draengt, Abspaltung spitzt zu. Genau diese Kette traegt in der Pruefung den Baustein Ich hoere, das wirkt, weil.
 
 ```diagram
-  Grundmotiv (Kern): drei kurze Toene plus ein langer Ton
-
-  Wiederholung: gleiche Gestalt, andere Lage oder Stimme
-  Sequenz:      gleiche Gestalt, hoeher versetzt, treibt an
-  Umkehrung:    Richtung gespiegelt, Kontrast
-  Krebs:        rueckwaerts gelesen, fremd
-  Dehnung:      Werte verlaengert, getragen
-  Stauchung:    Werte verkuerzt, draengend
-  Abspaltung:   nur Kopf-Fragment, Spannung
-
-  Prueffrage: Kontur? Zeit? Material?
-  In Worten: drei kurze Schlaege plus Zielton als Kernform
+  Keim [Motiv: Rhythmus + Intervalle]
+  Keim -> Kontur? [versetzt=Sequenz | gespiegelt=Umkehrung | rueckwaerts=Krebs]
+  Keim -> Zeit? [Tneu=2*Talt=Dehnung | Tneu=Talt/2=Stauchung mit T=60/BPM]
+  Keim -> Material? [voll=Fortspinnung | Fragment=Abspaltung]
+  Abspaltung + Stauchung -> Zuspitzung -> Urteil (treibend)
 ```
 
 Klausur-Satz: `Verarbeitungstechniken lassen sich danach ordnen, ob sie die Kontur, die Zeitgestalt oder das Material des Motivs veraendern.`

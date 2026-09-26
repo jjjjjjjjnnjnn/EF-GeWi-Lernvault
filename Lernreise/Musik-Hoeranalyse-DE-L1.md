@@ -17,49 +17,70 @@ version: Lesson-v3
 
 ## Schritt 1 — entdecken
 
-ZIELE (3 Ziele, in 15 Minuten erreichbar):
+ZIELE (drei messbare Ziele dieser Lektion):
 
-1. Du durchlaeufst eine Hoeranalyse in drei Schritten (Beschreiben, Deuten, Beurteilen) mit treffenden Fachbegriffen und begruendeten Urteilen.
-2. Du beschreibst die sechs Parameter (Rhythmus, Melodie, Harmonie, Klangfarbe, Dynamik, Form) je in einem deutschen Satz und ordnest jedem eine Wirkung zu.
-3. Du sprichst in der Pruefung nach dem Grundsatz Struktur vor Meinung: zuerst belegbare Hoereindruecke, dann Bewertung auf AFB-II-Niveau.
+1. Du kannst die **Hoeranalyse** in einem Satz definieren und als Dreischritt Beschreiben, Deuten, Beurteilen sicher durchlaufen.
+2. Du kannst die sechs **Parameter** — Rhythmus, Melodie, Harmonie, Klangfarbe, Dynamik, Form — je in einem Satz beschreiben und je eine Wirkung mit $T = 60/BPM$ oder $piano$ bis $forte$ belegen.
+3. Du kannst nach dem Grundsatz Struktur vor Meinung sprechen und mit einem Klausur-Satz auf AFB-II-Niveau abschliessen.
+
+### Hook / Phaenomen
+
+Stell dir vor: Die Prueferin drueckt auf Play, dreissig Sekunden Musik, dann Stille — und alle Augen richten sich auf dich. Was sagst du zuerst? Viele schueler beginnen mit „Es klingt traurig", und schon ist der erste Punkt verloren. Denn Gefuehle zaehlen nicht, solange kein Ton, kein Rhythmus, keine Dynamik sie traegt. Wie wird aus blossem Hoeren eine Analyse, die auch ohne Notenbild ueberzeugt?
+
+### Fachbegriff & Definition
+
+Die **Hoeranalyse** ist das Verfahren, gehoerte Musik in der festen Folge **Parameter plus Fachbegriff plus Urteil** zu erschliessen. Sie beschreibt zuerst objektiv Hoerbares, deutet dann die Wirkung mit einem Fachbegriff und faellt erst zuletzt ein begruendetes Urteil. Kurz: Erst die **Struktur**, dann die **Meinung**.
+
+### Wirkungsgefuege / Modell
+
+Der Kernmechanismus laeuft in drei Stufen: **Beschreiben, Deuten, Beurteilen**. Erstens sichert das Beschreiben Belege: Puls mit $T = 60/BPM$, Melodierichtung, Klangfarbe, Dynamik von $piano$ bis $forte$. Zweitens verknuepft das Deuten jeden Parameter ueber Ich hoere, das wirkt, weil mit einem Fachbegriff wie Crescendo oder Orgelpunkt. Drittens bewertet das Beurteilen nur, was zuvor belegt wurde. Faellt das Beschreiben aus, bleibt das Urteil ein blosser Eindruck; fehlt das Deuten, bleibt die Beschreibung eine blosse Liste.
 
 Klausur-Satz: `Ich hoere einen Parameter. Das wirkt auf eine bestimmte Weise, weil ein Fachbegriff diesen Eindruck erklaert.`
 
 ## Schritt 2 — entdecken
 
-PRETRAINING Begriffsbox (5 Kernbegriffe, zuerst dreimal lesen, dann aus dem Gedaechtnis abfragen):
+PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
-- Hoeranalyse: Gehoerte Musik wird in die Form Parameter plus Fachbegriff plus Urteil uebersetzt.
-- Parameter: Objektiv beschreibbares Merkmal der Musik: Rhythmus, Melodie, Harmonie, Klangfarbe, Dynamik, Form.
-- Klangfarbe: Farbe eines Instruments oder einer Stimme; sie entscheidet, ob der Eindruck hell, warm oder scharf wirkt.
-- Dynamik: Lautstaerke und ihre Veraenderung; Crescendo und Diminuendo formen die expressive Spannung unmittelbar.
-- Wirkung: Eindruck eines musikalischen Merkmals auf die Hoerenden; sie muss mit weil begruendet werden.
+### Hook / Phaenomen
+
+„Hell, laut, schnell" — das hoert jeder. Aber warum wirkt dieselbe Melodie einmal feierlich und einmal draengend? Ohne praezise Begriffe bleibt jede Klausur ein Ratespiel aus Adjektiven. Diese fuenf Bausteine verwandeln Alltagswoerter in Pruefungssprache.
+
+### Fachbegriffe & Definitionen
+
+- **Parameter:** Objektiv beschreibbares Merkmal der Musik: **Rhythmus, Melodie, Harmonie, Klangfarbe, Dynamik, Form**. Jeder Parameter wird sachlich benannt, bevor gewertet wird.
+- **Rhythmus und Metrum:** Zeitliche Ordnung der Toene mit Puls $T = 60/BPM$ und Taktart. Ein regelmaessiger Puls wirkt sammelnd, ein stockender Rhythmus wirkt spannungsvoll.
+- **Klangfarbe:** Charakteristische Farbe von Instrument oder Stimme — hell, warm, scharf, dumpf. Sie entscheidet, ob derselbe Ton feierlich oder bedrohlich wirkt.
+- **Dynamik:** Lautstaerke und ihre Veraenderung von $piano$ bis $forte$, als **Crescendo** anwachsend oder **Diminuendo** abnehmend. Sie formt die expressive Spannung unmittelbar.
+- **Form:** Grossanlage des Gehoerten — wiederholend, kontrastierend oder entwickelnd. Sie zeigt, ob Material befestigt, gegenuebergestellt oder verarbeitet wird.
+
+### Wirkungsgefuege / Modell
+
+Die Begriffe greifen ineinander: Die **Parameter** liefern das belegbare Material, **Rhythmus und Metrum** mit $T = 60/BPM$ sichern das Zeitgeruest, **Klangfarbe** und **Dynamik** von $piano$ bis $forte$ praegen die sinnliche Wirkung, die **Form** ordnet alles zum Verlauf. Wer in der Klausur deutet, verbindet deshalb immer einen Parameter ueber weil mit genau einer Wirkung — so wird aus Beschreibung Deutung und aus Deutung Urteil.
 
 Klausur-Satz: `Zuerst werden die Parameter beschrieben, dann wird die Wirkung mit einem Fachbegriff erklaert, und erst zuletzt wird geurteilt.`
 
 ## Schritt 3 — entdecken
 
-ENTDECKEN (1 Konzept + 1 Textdiagramm):
+TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
-Eine Hoeranalyse ist eine feste Abfolge: zuerst Beschreiben (Parameter sachlich nennen), dann Deuten (mit einem Fachbegriff erklaeren, warum diese Wirkung entsteht), dann Beurteilen (begruendetes Urteil formulieren). Entscheidend ist der Grundsatz Struktur vor Meinung: Erst Belege sammeln, dann werten. Beim Hoeren alle sechs Parameter der Reihe nach pruefen: Ist der Rhythmus draengend oder ruhig? Steigt oder faellt die Melodie? Wirkt die Harmonie stabil oder spannungsvoll? Ist die Klangfarbe hell oder dunkel? Nimmt die Dynamik zu oder ab? Ist die Form wiederholend, kontrastierend oder entwickelnd? Jeder Parameter wird ueber den Baustein Ich hoere, das wirkt, weil mit einer Wirkung verbunden.
+### Hook / Phaenomen
+
+Zwei Prueflinge hoeren denselben Ausschnitt. Der erste sagt: „Schoen und emotional." Der zweite sagt: „Ich hoere einen aufsteigenden Melodiebogen im Crescendo, das wirkt steigernd, weil Lautstaerke und Lage gemeinsam zum Hoehepunkt draengen." Wer bekommt die Punkte? Der Streit entscheidet sich nicht am Geschmack, sondern am Verfahren — und genau dieses Verfahren laesst sich trainieren.
+
+### Fachbegriff & Definition
+
+Der **Dreischritt Beschreiben, Deuten, Beurteilen** ist das Verlaufsschema jeder belastbaren Hoeranalyse. **Beschreiben** nennt den Parameter sachlich, **Deuten** verknuepft ihn mit Fachbegriff und weil zur Wirkung, **Beurteilen** formuliert erst danach ein begruendetes Urteil. Ein Urteil ohne vorherigen Parameterbeleg bleibt ein Eindruck und erhaelt keine Punkte.
+
+### Wirkungsgefuege / Modell
+
+Denke in Kausalkette: **Beleg, Begruendung, Bewertung**. Erstens werden der Reihe nach Rhythmus mit $T = 60/BPM$, Melodie, Harmonie, Klangfarbe, Dynamik von $piano$ bis $forte$ und Form gesammelt. Zweitens wird jeder Beleg ueber den Baustein Ich hoere, das wirkt, weil gedeutet — etwa: aufsteigender Melodiebogen plus Crescendo wirkt steigernd, weil beide Parameter gemeinsam Erwartung aufbauen. Drittens wird aus mehreren gedeuteten Belegen ein Urteil gebaut. Genau diese Kette trennt Struktur von Meinung und macht die Analyse wiederholbar.
 
 ```diagram
-  Hoeranalyse = drei Schritte in fester Reihenfolge
-
-  (1) BESCHREIBEN        (2) DEUTEN              (3) BEURTEILEN
-      Parameter              Wirkung + Fachbegriff    begruendetes Urteil
-      Was hoere ich?         Wie wirkt es?            Wie bewerte ich es?
-          |                       |                        |
-          v                       v                        v
-      Rhythmus   ----------> treibend / ruhig
-      Melodie    ----------> aufsteigend / klagend
-      Harmonie   ----------> spannungsvoll / stabil
-      Klangfarbe ----------> hell / dunkel
-      Dynamik    ----------> zu- / abnehmend
-      Form       ----------> wiederholend / kontrastierend / entwickelnd
-
-  Merksatz:  erst STRUKTUR (Parameter), dann MEINUNG (Urteil)
-  Baustein:  Ich hoere etwas, das wirkt auf eine Weise, weil ein Fachbegriff es traegt.
+  Hoeranalyse [Beschreiben -> Deuten -> Beurteilen]
+  Beschreiben -> Parameter [Rhythmus T=60/BPM | Melodie | Harmonie | Farbe | Dynamik p-f | Form]
+  Parameter -> Deuten [Ich hoere -> das wirkt -> weil Fachbegriff]
+  Deuten -> Beurteilen [begruendetes Urteil, kein Gefuehl]
+  Merksatz: erst STRUKTUR (Beleg), dann MEINUNG (Urteil)
 ```
 
 Klausur-Satz: `Eine belastbare Hoeranalyse nennt zuerst beschreibbare Parameter und leitet daraus mit einem Fachbegriff die Wirkung ab, bevor sie urteilt.`
