@@ -19,9 +19,25 @@ version: Lesson-v3
 
 ZIELE (diese Lektion in 15 Minuten: danach kannst du):
 
-1. Das Gravitationsgesetz $F = G\frac{mM}{r^2}$ nennen und jede Groesse erklaeren.
-2. Die Bahngeschwindigkeit $v = \sqrt{\frac{GM}{r}}$ herleiten und geostationaere von niedrigen Bahnen unterscheiden.
-3. Mit $\frac{mv^2}{r} = G\frac{mM}{r^2}$ Hoehe und Umlaufzeit begruenden.
+1. $F = G m M/r^2$ mit $G = 6{,}67 \cdot 10^{-11}$ und $r$ ab Erdmittelpunkt nennen.
+2. $v = \sqrt{G M/r}$ per $m v^2/r = G m M/r^2$ herleiten und GEO gegen LEO abgrenzen.
+3. $T^2 = 4\pi^2 r^3/(G M)$ deuten und $r \approx 42164\,\mathrm{km}$ zu $T = 24\,\mathrm{h}$ zuordnen.
+
+### Hook / Phaenomen
+
+Im Jahr 1957 piepste Sputnik — und fiel staendig, ohne je anzukommen. Ein Satellit stuerzt permanent zur Erde und verfehlt sie durch Seitengeschwindigkeit. Newton rechnete die Mondbahn mit $1/r^2$ nach und traf auf Prozent. Warum braucht hohe Bahn weniger Tempo — und welche einzige Gleichung haelt $300\,\mathrm{km}$-Shuttle und $36000\,\mathrm{km}$-Wettersatellit je auf Kurs?
+
+### Fachbegriff & Definition
+
+Fuer Bahnen gilt: **Die Gravitation liefert die Zentripetalkraft der Kreisbahn, also $m v^2/r = G m M/r^2$**. Es gilt das **Gravitationsgesetz $F = G m M/r^2$ mit $r$ ab Mittelpunkt**. Die **geostationaere Bahn mit $T = 24\,\mathrm{h}$ und $r \approx 42164\,\mathrm{km}$ steht scheinbar fest** ueber dem Aequator.
+
+### Wirkungsgefuege / Modell
+
+Der Mechanismus kuerzt $m$ und ein $r$: $m v^2/r = G m M/r^2$ zu $v^2 = G M/r$ und $v = \sqrt{G M/r}$. Also $v$ sinkt mit $\sqrt{r}$: LEO bei $r \approx 6671\,\mathrm{km}$ zu $v \approx 7{,}7\,\mathrm{km/s}$, GEO zu $v \approx 3{,}1\,\mathrm{km/s}$. Mit $v = 2\pi r/T$ folgt $T^2 = 4\pi^2 r^3/(G M)$ als Kepler III. Hoeher heisst langsamer und laenger.
+
+Schritt A: $F_{grav}$ und $F_Z$ gleichsetzen.
+Schritt B: $m$ und ein $r$ kuerzen und Wurzel ziehen.
+Schritt C: $T$ per Umfang durch Tempo bestimmen.
 
 Klausur-Satz: `Die Gravitation liefert die Zentripetalkraft der Kreisbahn.`
 
@@ -29,11 +45,21 @@ Klausur-Satz: `Die Gravitation liefert die Zentripetalkraft der Kreisbahn.`
 
 PRETRAINING (Kernbegriffe, erst lesen, dann abdecken und aktiv wiedergeben):
 
-- Gravitationskraft: $F = G\frac{mM}{r^2}$, Anziehung zwischen $m$ und $M$ im Abstand $r$.
-- Gravitationskonstante: $G = 6{,}67 \cdot 10^{-11}\,\frac{\mathrm{Nm}^2}{\mathrm{kg}^2}$, universelle Naturkonstante.
-- Zentripetalkraft: $F_z = \frac{mv^2}{r}$, Kraft zum Bahnzentrum auf der Kreisbahn.
-- Bahngeschwindigkeit: $v = \sqrt{\frac{GM}{r}}$, sinkt mit wachsendem $r$.
-- Geostationaere Bahn: Aequatorkreisbahn mit $T = 24\,\mathrm{h}$ und $r \approx 42164\,\mathrm{km}$, scheinbar fest ueber dem Boden.
+### Hook / Phaenomen
+
+Zwei Satelliten — einer tief und schnell, einer hoch und traege. Beide gehorchen derselben Formel, doch ihre Uhren ticken anders: $90$ Minuten gegen $24$ Stunden. Welche fuenf Groessen sortieren LEO gegen GEO ohne einzige Simulation?
+
+### Fachbegriffe & Definitionen
+
+- **Gravitationskraft:** $F = G m M/r^2$; Anziehung zwischen $m$ und $M$ im Abstand $r$.
+- **Gravitationskonstante:** $G = 6{,}67 \cdot 10^{-11}\,\mathrm{Nm^2/kg^2}$ als Naturkonstante.
+- **Zentripetalkraft:** $F_Z = m v^2/r$ zum Bahnzentrum auf der Kreisbahn.
+- **Bahngeschwindigkeit:** $v = \sqrt{G M/r}$; sinkt mit wachsendem $r$.
+- **Geostationaere Bahn:** Aequatorkreis mit $T = 24\,\mathrm{h}$ und $r \approx 42164\,\mathrm{km}$.
+
+### Wirkungsgefuege / Modell
+
+Die Kette stapelt $r$: $r$ gross zu $F$ klein per $1/r^2$ zu $v$ klein per $1/\sqrt{r}$ zu $T$ gross per $r^{3/2}$. GEO als Sonderfall mit $T$ gleich Erddrehung zu scheinbarem Stillstand — ideal fuer Wetter und TV. LEO mit kleinem $r$ zu $v \approx 7{,}7\,\mathrm{km/s}$ und $T \approx 90\,\mathrm{min}$ — ideal fuer Erdbeobachtung. Hoehe waehlt Mission.
 
 Klausur-Satz: `Groessere Bahnhoehe bedeutet kleinere Geschwindigkeit und groessere Umlaufzeit.`
 
@@ -41,14 +67,28 @@ Klausur-Satz: `Groessere Bahnhoehe bedeutet kleinere Geschwindigkeit und groesse
 
 ENTDECKEN (ein Konzept plus Textdiagramm):
 
-Ein Satellit faellt staendig zur Erde, verfehlt sie aber durch seine Seitengeschwindigkeit. Formal heisst das: Gravitation gleich Zentripetalkraft, also $\frac{mv^2}{r} = G\frac{mM}{r^2}$. Kuerzen von $m$ und ein $r$ liefert $v^2 = \frac{GM}{r}$. Mit $v = \frac{2\pi r}{T}$ folgt Keplers drittes Gesetz $T^2 = \frac{4\pi^2}{GM}r^3$.
+### Hook / Phaenomen
+
+Halley sagte $1758$ die Wiederkehr seines Kometen voraus — mit derselben $1/r^2$-Formel wie Newtons Mondrechnung. Sputnik $1957$ bewies es piepsend: staendiger Fall um die Erde. Wie wird aus dem Kraeftegleichgewicht Keplers drittes Gesetz — und warum enthaelt $T^2 \sim r^3$ keine Satellitenmasse mehr?
+
+### Fachbegriff & Definition
+
+Aus dem **Kraeftegleichgewicht folgen Bahngeschwindigkeit $v = \sqrt{G M/r}$ und Kepler-Gesetz $T^2 = 4\pi^2 r^3/(G M)$**. Dabei gilt **kleineres $r$ zu groesserem $v$ und kleinerem $T$**. Die **Masse $m$ kuerzt sich heraus** — jede Masse faellt gleich schnell auf gleicher Bahn.
+
+### Wirkungsgefuege / Modell
+
+Der Tiefenweg setzt $v = 2\pi r/T$ in $v^2 = G M/r$ ein: $4\pi^2 r^2/T^2 = G M/r$ zu $T^2 = 4\pi^2 r^3/(G M)$. Probe GEO $r = 42164\,\mathrm{km}$ zu $T = 86400\,\mathrm{s}$ konsistent mit $G M_{Erde} = 3{,}986 \cdot 10^{14}\,\mathrm{m^3/s^2}$. LEO $r = 6671\,\mathrm{km}$ zu $T \approx 5300\,\mathrm{s}$. $m$ fehlt ueberall — Bahnuhr tickt masselos.
+
+Schritt A: $v^2 = G M/r$ aus Gleichgewicht ziehen.
+Schritt B: $v = 2\pi r/T$ einsetzen und nach $T^2$ loesen.
+Schritt C: GEO und LEO als Zahlenproben einsetzen.
 
 ```diagram
               v (tangential)
               ---->
          . - ~ - .
       .'     O     '.   O = Erdmittelpunkt
-     /    r |        \  r = Bahnradius
+     /    r |        \  r = Bahnradius ab O
     |       |         |
     |   Erde|Satellit |
      \      |        /
@@ -56,6 +96,7 @@ Ein Satellit faellt staendig zur Erde, verfehlt sie aber durch seine Seitengesch
          ' - ~ - '
       F_grav zeigt zu O, F_z = m v^2 / r
       Gleichgewicht: m v^2 / r = G m M / r^2
+      Folge: v = Wurzel(GM/r), T^2 = 4pi^2 r^3/(GM)
 ```
 
 Klausur-Satz: `Aus dem Kraeftegleichgewicht folgen Bahngeschwindigkeit und Kepler-Gesetz.`

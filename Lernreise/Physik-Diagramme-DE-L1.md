@@ -19,9 +19,25 @@ version: Lesson-v3
 
 ZIELE (diese Lektion in 15 Minuten: danach kannst du):
 
-1. Ein Diagramm normgerecht zeichnen: Achsen mit Einheit beschriften, Messpunkte als Streuung eintragen, Ausgleichsgerade legen ohne Zickzack und ohne erzwungenen Ursprung.
-2. Aus der Steigung der Ausgleichsgeraden die gesuchte Groesse bestimmen und mit der Zweipunktformel gegenpruefen.
-3. Zufallsfehler und systematische Fehler unterscheiden und das Modell eingeschraenkt im Rahmen der Messunsicherheit beurteilen.
+1. Achsen mit Einheit beschriften, Punkte als Streuung ohne Zickzack und ohne erzwungenen Ursprung zeichnen.
+2. $v = \Delta s/\Delta t \approx 0{,}50\,\mathrm{m/s}$ per Zweipunktformel aus der Ausgleichsgeraden bestimmen.
+3. Zufall als Streuung beiderseits gegen Systematik als Verschiebung deuten und nur im Rahmen der Unsicherheit urteilen.
+
+### Hook / Phaenomen
+
+Im Jahr 2012 meldete CERN ein Neutrino schneller als Licht — Monate spaeter entpuppte sich ein lockeres Kabel als systematischer Fehler. Alle Punkte lagen zu hoch, die Mittelung half nichts. Ein Wagenversuch mit $v \approx 0{,}50\,\mathrm{m/s}$ stellt dasselbe Raetsel im Kleinen: Streuen die Punkte um die Gerade oder liegen alle daneben — und warum rettet Mitteln nur einen der beiden Fehler?
+
+### Fachbegriff & Definition
+
+Fuer Messungen gilt: **Die Ausgleichsgerade fasst streuende Punkte sinnvoll zusammen; ihre Steigung liefert die Groesse, die Streuung gibt die Unsicherheit an**. Dabei streuen **zufaellige Fehler unsystematisch um die Gerade, systematische verschieben alle Werte gleichsinnig**. Jedes **Urteil gilt nur im Rahmen der Messunsicherheit**.
+
+### Wirkungsgefuege / Modell
+
+Der Mechanismus legt die Gerade durch die Wolke: $s$-$t$ mit $v = \Delta s/\Delta t$ aus zwei fernen Geradenpunkten zu $v \approx 0{,}50\,\mathrm{m/s}$. Zweipunktprobe mit anderem Paar als Kontrolle. Streuung $\pm 0{,}03$ beiderseits zu Zufall per Mittelung klein; Verschiebung $+0{,}10$ einseitig zu Systematik per Startfehler — Mittelung hilft nicht. Ursprung nur bei $t = 0$ zu $s = 0$ physikalisch erzwungen.
+
+Schritt A: Tabelle mit Einheiten und Dezimalstellen anlegen.
+Schritt B: Punkte ohne Linie, dann Gerade nach Augenmass legen.
+Schritt C: Steigung per Zweipunktformel und Streuung als Unsicherheit lesen.
 
 Klausur-Satz: `Die Ausgleichsgerade fasst die streuenden Messpunkte sinnvoll zusammen; ihre Steigung liefert die gesuchte Groesse, und die Streuung der Punkte gibt die Messunsicherheit an.`
 
@@ -29,11 +45,21 @@ Klausur-Satz: `Die Ausgleichsgerade fasst die streuenden Messpunkte sinnvoll zus
 
 PRETRAINING (Kernbegriffe, erst lesen, dann abdecken und aktiv wiedergeben):
 
-- Ausgleichsgerade in der Physik: beste Gerade durch gestreute Punkte; ihre Steigung ist die gesuchte Groesse.
-- Messunsicherheit: jede Ablesung traegt Fehler; Aussagen gelten nur innerhalb dieses Rahmens.
-- Zufaelliger Fehler: unsystematische Streuung beiderseits der Geraden; Mittelung verkleinert ihn.
-- Systematischer Fehler: gleichsinnige Verschiebung aller Werte, etwa durch spaeten Start; Mittelung hilft nicht.
-- Punktdiagramm: Darstellung nur mit Punkten ohne Verbindungslinien zur Trendbeobachtung.
+### Hook / Phaenomen
+
+Zwei Messreihen — beide mit Mittel $0{,}50\,\mathrm{m/s}$. Eine streut wild, eine liegt ruhig. Der Mittelwert luegt: Nur die Streuung verrraet die Guete. Welche fuenf Begriffe trennen praezise und windige Messung in einem Blick?
+
+### Fachbegriffe & Definitionen
+
+- **Ausgleichsgerade:** Beste Gerade durch gestreute Punkte; Steigung ist die Groesse.
+- **Messunsicherheit:** Fehler jeder Ablesung; Aussagen nur innerhalb dieses Rahmens.
+- **Zufaelliger Fehler:** Streuung beiderseits; Mittelung verkleinert ihn.
+- **Systematischer Fehler:** Gleichsinnige Verschiebung wie spaeter Start; Mittelung hilft nicht.
+- **Punktdiagramm:** Nur Punkte ohne Verbindung; Trend statt Zickzack.
+
+### Wirkungsgefuege / Modell
+
+Die Kette sortiert Fehler nach Bild: Punkte oben und unten zu Zufall per $\pm$ und Mittel; alle oben zu Systematik per Versatz und Korrektur. Zickzacklinie zwischen Punkten taeuscht Genauigkeit vor — Daten sind diskret, Trend ist Gerade. Wer Achsen ohne Einheit laesst, verliert den ersten Punkt vor jeder Rechnung.
 
 Klausur-Satz: `Zufaellige Fehler streuen unsystematisch um die Ausgleichsgerade, waehrend systematische Fehler alle Messwerte in dieselbe Richtung verschieben.`
 
@@ -41,14 +67,28 @@ Klausur-Satz: `Zufaellige Fehler streuen unsystematisch um die Ausgleichsgerade,
 
 ENTDECKEN (ein Konzept plus Textdiagramm):
 
-Der Wert einer Messreihe liegt nicht in einer Zahl, sondern in ihrer Verlaesslichkeit. Das Verfahren hat vier Schritte. Erstens Tabelle mit Einheiten und sinnvollen Dezimalstellen. Zweitens Punktdiagramm mit beschrifteten Achsen; Punkte als Punkte, keine Zickzacklinie, denn Daten sind diskret. Drittens Ausgleichsgerade (Trendlinie oder Augenmass) legen und Steigung ablesen, etwa $v = \Delta s / \Delta t$ im $s$-$t$-Diagramm. Viertens beurteilen: Streuung um die Gerade zeigt Zufallsfehler, gleichsinnige Verschiebung zeigt Systemfehler. Mittelung hilft nur gegen Zufall; ein stets zu spaeter Start verschiebt auch den Mittelwert. Die Gerade wird nur dann durch den Ursprung gezwungen, wenn $t = 0$ physikalisch $s = 0$ verlangt. Die Zweipunktprobe sichert die Steigung; weicht sie stark ab, so sind zuerst Achse und Einheit zu pruefen.
+### Hook / Phaenomen
+
+Ein Schueler zwingt die Gerade durch den Ursprung — obwohl der Wagen bei $t = 0$ schon $0{,}20\,\mathrm{m}$ rollte. Die Steigung kippt, $v$ wird falsch. Sein Nachbar liest $v$ aus zwei nahen Punkten und erntet Rauschen. Wie legt man die Gerade richtig — und warum sichern ferne Zweipunkte plus Achsenprobe jede Steigung?
+
+### Fachbegriff & Definition
+
+Ein **Diagramm ohne beschriftete Achsen samt Einheiten ist wertlos, und eine Messreihe darf nur im Rahmen der Unsicherheit beurteilt werden**. Die **Steigung per $v = \Delta s/\Delta t$ aus fernen Geradenpunkten minimiert Ablesefehler**. Der **Ursprung wird nur bei physikalischem $0$-zu-$0$ erzwungen**.
+
+### Wirkungsgefuege / Modell
+
+Der Tiefenweg sichert $v$ in vier Griffen: Achsen $s$ in $\mathrm{m}$ gegen $t$ in $\mathrm{s}$; Punkte als Punkte; Gerade nach Augenmass ohne Zickzack; $v = (1{,}50-0{,}50)/(3{,}0-1{,}0) = 0{,}50\,\mathrm{m/s}$ aus fernen Punkten. Gegenprobe $(1{,}20-0{,}20)/(2{,}5-0{,}5) = 0{,}50$ bestaetigt. Streuung $\pm 0{,}05$ als Unsicherheit; Urteil nur als $v = 0{,}50 \pm 0{,}05\,\mathrm{m/s}$ mit weil-Satz zur Streuung.
+
+Schritt A: Achsen plus Einheiten und Punkte pruefen.
+Schritt B: Gerade legen und ferne Punkte waehlen.
+Schritt C: Steigung plus Unsicherheit als Urteil mit weil-Satz schreiben.
 
 ```diagram
     s ^
       |                        .   (Messpunkt, gestreut)
       |                     .     /
       |                  .       /  Ausgleichsgerade
-      |               .        /    (Steigung = v)
+      |               .        /    (Steigung = v = 0.50 m/s)
       |            .         .
       |         .       .
       |      .     .
@@ -59,6 +99,7 @@ Der Wert einer Messreihe liegt nicht in einer Zahl, sondern in ihrer Verlaesslic
 
     zufaellig:  Punkte oben UND unten  -> mitteln hilft
     systematisch: alle Punkte zu hoch -> mitteln hilft NICHT
+    Probe: (1.50-0.50)/(3.0-1.0) = 0.50 m/s bestaetigt
 ```
 
 Klausur-Satz: `Ein Diagramm ohne beschriftete Achsen samt Einheiten ist wertlos, und eine Messreihe darf nur im Rahmen der Messunsicherheit beurteilt werden.`

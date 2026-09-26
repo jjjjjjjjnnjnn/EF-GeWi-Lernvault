@@ -19,9 +19,25 @@ version: Lesson-v3
 
 ZIELE (diese Lektion in 15 Minuten: danach kannst du):
 
-1. Die Bewegungsgleichung $m \cdot a = m \cdot g - F_W$ aufstellen und $F_W$ beschreiben.
-2. Idealisierten Fall ($v = g \cdot t$) und realen Fall mit Saettigung unterscheiden.
-3. Aus $s$-$t$- und $v$-$t$-Diagrammen auf Luftwiderstand schliessen.
+1. $m a = m g - F_W(v)$ mit $F_W = k v$ oder $c v^2$ aufstellen und Richtungen benennen.
+2. Ideal $v = g t$ gegen real mit Saettigung $v_E$ unterscheiden und $v_E = 6{,}54\,\mathrm{m/s}$ einordnen.
+3. An $s$-$t$ Parabel gegen Linie und $v$-$t$ Gerade gegen Abflachung auf $F_W$ schliessen.
+
+### Hook / Phaenomen
+
+Im Jahr 2012 sprang Baumgartner aus $39\,\mathrm{km}$ — und wurde nicht immer schneller. Erst raste er, dann fiel er konstant, dann bremste die dichte Luft ihn sogar ab. Ein Fallschirmspringer ohne Schirm muesste nach $t = 10\,\mathrm{s}$ schon $v = 98\,\mathrm{m/s}$ erreichen — doch niemand faellt so schnell. Warum waechst der Widerstand mit der Geschwindigkeit — und welche einzige Bilanz stoppt den freien Fall bei $v_E$?
+
+### Fachbegriff & Definition
+
+Fuer den Fall mit Luft gilt: **Der Luftwiderstand waechst mit der Geschwindigkeit und begrenzt den freien Fall auf eine konstante Endgeschwindigkeit**. Es gilt die **Bewegungsgleichung $m a = m g - F_W(v)$ mit $F_W = k v$ oder $c v^2$**. Bei **$v_E$ kompensiert $F_W$ die Gewichtskraft, also $m g = F_W(v_E)$ mit $a = 0$**.
+
+### Wirkungsgefuege / Modell
+
+Der Mechanismus laesst $F_W$ wachsen: Start $v = 0$ zu $F_W = 0$ und $a = g = 9{,}81\,\mathrm{m/s^2}$. Mit $v$ steigt $F_W$, die Differenz $m g - F_W$ schrumpft, $a$ sinkt. Im Grenzfall $F_W = m g$ zu $a = 0$ und $v = v_E$ konstant. Fuer $F_W = k v$ folgt $v_E = m g/k$; die Messung $v_E = 6{,}54\,\mathrm{m/s}$ fixiert $k$. Ideal ohne Luft $v = g t$ als Gerade, real als abflachende Kurve gegen $v_E$.
+
+Schritt A: Kraefte $m g$ abwaerts und $F_W$ aufwaerts ansetzen.
+Schritt B: $m a = m g - F_W(v)$ schreiben und Start $a = g$ lesen.
+Schritt C: $m g = F_W(v_E)$ zu $v_E$ loesen und Kurve deuten.
 
 Klausur-Satz: `Der Luftwiderstand waechst mit der Geschwindigkeit und begrenzt den freien Fall auf eine konstante Endgeschwindigkeit.`
 
@@ -29,11 +45,21 @@ Klausur-Satz: `Der Luftwiderstand waechst mit der Geschwindigkeit und begrenzt d
 
 PRETRAINING (Kernbegriffe, erst lesen, dann abdecken und aktiv wiedergeben):
 
-- Freier Fall: Fall unter Schwerkraft mit $a = g = 9{,}81\,\mathrm{m/s^2}$ im Idealfall.
-- Luftwiderstand $F_W$: Kraft gegen die Bewegung, naeherungsweise $F_W = k \cdot v$ oder $F_W = c \cdot v^2$.
-- Bewegungsgleichung: $m \cdot a = m \cdot g - F_W(v)$.
-- Endgeschwindigkeit $v_E$: konstantes Tempo bei $m \cdot g = F_W(v_E)$.
-- $v$-$t$-Diagramm: realer Fall als abflachende Kurve statt Gerade.
+### Hook / Phaenomen
+
+Zwei Kugeln — Stahl und Styropor — fallen aus gleicher Hoehe. Galilei verspricht Gleichstand, der Schulhof sieht Styropor trudeln. Der Unterschied heisst $F_W(v)$: klein bei Stahl, gross bei Styropor relativ zu $m g$. Welche fuenf Begriffe trennen Ideal und Real in einer Gleichung?
+
+### Fachbegriffe & Definitionen
+
+- **Freier Fall:** Ideal nur unter $F_G$ mit $a = g = 9{,}81\,\mathrm{m/s^2}$ ohne Luft.
+- **Luftwiderstand $F_W$:** Gegen die Bewegung, $F_W = k v$ laminar oder $c v^2$ turbulent.
+- **Bewegungsgleichung:** $m a = m g - F_W(v)$; $a$ sinkt mit wachsendem $v$.
+- **Endgeschwindigkeit $v_E$:** Konstant bei $m g = F_W(v_E)$; dann $a = 0$.
+- **$v$-$t$-Diagramm:** Real als abflachende Kurve gegen $v_E$ statt Gerade $v = g t$.
+
+### Wirkungsgefuege / Modell
+
+Die Kette vergleicht Kurven: Ideal Gerade mit Steigung $g$, real Kurve mit Startsteigung $g$ und Horizontale $v_E$. Stahl mit grossem $m$ zu spaeter Saettigung, Styropor mit kleinem $m$ zu frueher. Die $v_E$-Formel $v_E = m g/k$ zeigt: doppelte Masse bei gleichem $k$ hebt $v_E$ — schwer faellt real schneller, nicht wegen Galilei, sondern wegen $F_W$.
 
 Klausur-Satz: `Bei Erreichen der Endgeschwindigkeit kompensiert der Luftwiderstand die Gewichtskraft, sodass die resultierende Kraft null ist.`
 
@@ -41,11 +67,25 @@ Klausur-Satz: `Bei Erreichen der Endgeschwindigkeit kompensiert der Luftwidersta
 
 ENTDECKEN (ein Konzept plus Textdiagramm):
 
-Zu Beginn dominiert die Gewichtskraft, der Koerper beschleunigt fast mit $g$. Mit wachsendem $v$ waechst $F_W$, die Differenz $m \cdot g - F_W$ schrumpft, $a$ sinkt. Im Grenzfall gilt $F_W = m \cdot g$, also $a = 0$: Der Koerper faellt mit konstanter Endgeschwindigkeit weiter. Im $v$-$t$-Diagramm startet die Kurve steil mit Steigung $g$ und schmiegt sich dann asymptotisch an die Horizontale $v = v_E$.
+### Hook / Phaenomen
+
+Ein Regentropfen faellt kilometerweit — und kommt mit wenigen Metern je Sekunde an. Ohne Luft muesste er mit $v > 100\,\mathrm{m/s}$ einschlagen. Die $v$-$t$-Kurve verrraet den Retter: steil gestartet mit $g$, dann abgeflacht gegen $6{,}54\,\mathrm{m/s}$. Wie liest man aus der Abflachung direkt das Kraeftegleichgewicht — und warum begrenzt $v_E$ jede reale Fallgeschwindigkeit nach unten wie nach oben?
+
+### Fachbegriff & Definition
+
+Die **Abflachung der $v$-$t$-Kurve zeigt das Anwachsen von $F_W$ bis zum Kraeftegleichgewicht $m g = F_W$**. Die **berechnete $v_E = 6{,}54\,\mathrm{m/s}$ begrenzt jede reale Kurve als Asymptote**. Ohne Luft gilt $s = 0{,}5 g t^2$ als Parabel; mit Luft knickt $s$-$t$ zur Geraden mit Steigung $v_E$.
+
+### Wirkungsgefuege / Modell
+
+Der Tiefenweg liest Steigung und Asymptote: Anfangssteigung $g = 9{,}81\,\mathrm{m/s^2}$ als Tangente an $t = 0$; Endsteigung $0$ als Horizontale $v_E$. Dazwischen $a(t) = g - F_W(v)/m$ fallend. Zahlenprobe $v_E = 6{,}54$ gegen Ideal $v = g \cdot 2 = 19{,}6\,\mathrm{m/s}$ nach $2\,\mathrm{s}$ — real liegt weit darunter. $s$-$t$ startet als Parabel und geht in Gerade mit $v_E$ ueber.
+
+Schritt A: Startsteigung $g$ an $t = 0$ ablesen.
+Schritt B: Horizontale $v_E$ als Asymptote bestimmen.
+Schritt C: $m g = F_W(v_E)$ als Gleichgewicht formulieren.
 
 ```diagram
 v ^
-  |                        ............ v_E (Endgeschwindigkeit)
+  |                        ............ v_E = 6.54 m/s
   |                   .....
   |               ....
   |            ...
@@ -55,8 +95,9 @@ v ^
   |    ..
   |  ..
   +----------------------------------> t
-  Startsteigung = g, dann Abflachung durch F_W(v)
+  Startsteigung = g = 9.81 m/s^2, dann Abflachung durch F_W(v)
   Kraefte: m*g nach unten, F_W nach oben
+  Bilanz: m*a = m*g - F_W(v), bei v_E gilt a = 0
 ```
 
 Klausur-Satz: `Die Abflachung der v-t-Kurve zeigt das Anwachsen des Luftwiderstands bis zum Kraeftegleichgewicht.`

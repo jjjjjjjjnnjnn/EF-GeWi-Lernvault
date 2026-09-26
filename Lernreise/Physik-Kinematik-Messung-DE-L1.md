@@ -19,9 +19,25 @@ version: Lesson-v3
 
 ZIELE (diese Lektion in 15 Minuten: danach kannst du):
 
-1. Aus einer Messreihe die Bewegungsart bestimmen: Gerade im $s$-$t$-Diagramm bedeutet gleichfoermig, Parabel im $s$-$t$ plus Gerade im $v$-$t$ bedeutet gleichmaessig beschleunigt.
-2. Die Auswertungsteilung nennen: Tangentensteigung im $s$-$t$-Diagramm liefert $v$, Flaeche unter der $v$-$t$-Linie liefert $s$, Steigung im $v$-$t$-Diagramm liefert $a$.
-3. Eine Aufgabe in vier Schritten loesen: Tabelle, Diagramm, Steigung oder Flaeche, Einheit — mit Ansatz und Ergebnissatz.
+1. An $s$-$t$ Gerade gegen Parabel und $v$-$t$ Gerade die Bewegungsart ablesen: gleichfoermig gegen gleichmaessig beschleunigt.
+2. $v$ als Steigung in $s$-$t$, $s$ als Flaeche in $v$-$t$ und $a$ als Steigung in $v$-$t$ mit $2s/t^2$ bestimmen.
+3. Tabelle, Diagramm, Steigung oder Flaeche plus Einheit mit Ansatz und Ergebnissatz in vier Schritten loesen.
+
+### Hook / Phaenomen
+
+Im Jahr 2019 krachte ein Testwagen in die Barriere — die Gutachter stritten: konstantes Tempo oder konstante Beschleunigung? Die Messpunkte lagen auf dem Tisch: $s = 0$, $2$, $8$, $18\,\mathrm{m}$ nach $0$, $1$, $2$, $3\,\mathrm{s}$. Eine Gerade oder eine Parabel entscheidet ueber Schuld und Konstruktion. Warum verraten $0$, $2$, $8$, $18$ sofort die Antwort — und welche einzige Rechnung sichert $a = 4{,}0\,\mathrm{m/s^2}$?
+
+### Fachbegriff & Definition
+
+Fuer die Kinematik gilt: **Im $s$-$t$-Diagramm liefert die Tangentensteigung die Momentangeschwindigkeit, waehrend im $v$-$t$-Diagramm die Flaeche unter der Linie den zurueckgelegten Weg angibt**. Dabei misst **$s$ in $\mathrm{m}$ die Strecke, $v$ in $\mathrm{m/s}$ das Tempo, $a$ in $\mathrm{m/s^2}$ die Aenderung**. Die **gleichmaessig beschleunigte Bewegung folgt $s = 0{,}5 a t^2$ und $v = a t + v_0$**.
+
+### Wirkungsgefuege / Modell
+
+Der Mechanismus liest Formen: Gerade in $s$-$t$ zu gleichfoermig, Parabel in $s$-$t$ plus Gerade in $v$-$t$ zu beschleunigt. Aus $s = 0{,}5 a t^2$ folgt $a = 2s/t^2$; fuer $s = 8\,\mathrm{m}$, $t = 2\,\mathrm{s}$ gilt $a = 16/4 = 4{,}0\,\mathrm{m/s^2}$. Probe an $t = 3\,\mathrm{s}$: $0{,}5 \cdot 4 \cdot 9 = 18\,\mathrm{m}$ trifft. Endgeschwindigkeit $v = a t = 12\,\mathrm{m/s}$; Umrechnung $\mathrm{km/h}$ durch $3{,}6$ zu $\mathrm{m/s}$ erst in SI rechnen.
+
+Schritt A: Punkte in $s$-$t$ auf Gerade oder Parabel pruefen.
+Schritt B: $a = 2s/t^2$ an mehreren Punkten gegenpruefen.
+Schritt C: $v$ per Steigung oder $v = a t$ plus Einheit und Satz schliessen.
 
 Klausur-Satz: `Im s-t-Diagramm liefert die Tangentensteigung die Momentangeschwindigkeit, waehrend im v-t-Diagramm die Flaeche unter der Linie den zurueckgelegten Weg angibt.`
 
@@ -29,11 +45,21 @@ Klausur-Satz: `Im s-t-Diagramm liefert die Tangentensteigung die Momentangeschwi
 
 PRETRAINING (Kernbegriffe, erst lesen, dann abdecken und aktiv wiedergeben):
 
-- Strecke $s$ in $\mathrm{m}$: zurueckgelegte Laenge, Achsengroesse des $s$-$t$-Diagramms.
-- Beschleunigung $a$ in $\mathrm{m/s^2}$: Aenderung der Geschwindigkeit, bei gleichmaessig beschleunigter Bewegung konstant.
-- Steigung: Neigung einer Linie; im $s$-$t$-Diagramm gleich $v$, im $v$-$t$-Diagramm gleich $a$.
-- Flaeche unter der Linie: Gebiet unter der $v$-$t$-Kurve; ihr Zahlenwert ist der Weg $s$.
-- Momentangeschwindigkeit $v$ in $\mathrm{m/s}$: Geschwindigkeit zu einem Zeitpunkt, gleich der Tangentensteigung im $s$-$t$-Diagramm.
+### Hook / Phaenomen
+
+Ein Fahrtenrekorder liefert $v$-$t$ als Dreieck und Rechteck — doch die Versicherung fragt nach Metern, nicht nach Kurven. Die Flaeche unter der Linie zaehlt Meter, die Steigung zaehlt Beschleunigung. Welche fuenf Zuordnungen verwandeln jede Kurve in eine Zahl mit Einheit?
+
+### Fachbegriffe & Definitionen
+
+- **Strecke $s$ in $\mathrm{m}$:** Zurueckgelegte Laenge; Achsengroesse des $s$-$t$-Diagramms.
+- **Momentangeschwindigkeit $v$ in $\mathrm{m/s}$:** Tempo zu einem Zeitpunkt; Tangentensteigung in $s$-$t$.
+- **Beschleunigung $a$ in $\mathrm{m/s^2}$:** Aenderung von $v$; konstant bei gleichmaessig beschleunigter Fahrt.
+- **Steigung:** Neigung der Linie; in $s$-$t$ gleich $v$, in $v$-$t$ gleich $a$ per $\Delta v / \Delta t$.
+- **Flaeche unter der Linie:** Gebiet unter $v$-$t$; ihr Wert ist der Weg $s$ als Dreieck oder Rechteck.
+
+### Wirkungsgefuege / Modell
+
+Die Kette ordnet Diagramm und Rechenweg: $s$-$t$ verlangt Steigung $v = \Delta s / \Delta t$; $v$-$t$ verlangt Flaeche $s$ als $0{,}5 \cdot Grund \cdot Hoehe$ oder $Grund \cdot Hoehe$; $a$-$t$ verlangt Hoehe $a$ und Flaeche als $\Delta v$. Wer $v$-$t$ nach Steigung statt Flaeche fragt, verwechselt Weg und Beschleunigung — der haeufigste Diagrammfehler. Erst Achse lesen, dann Steigung oder Flaeche waehlen, dann Einheit sichern.
 
 Klausur-Satz: `Die Beschleunigung ist im v-t-Diagramm die Steigung der Geraden, im a-t-Diagramm dagegen die Hoehe der waagerechten Linie.`
 
@@ -41,7 +67,21 @@ Klausur-Satz: `Die Beschleunigung ist im v-t-Diagramm die Steigung der Geraden, 
 
 ENTDECKEN (ein Konzept plus Textdiagramm):
 
-Alle Information steckt in zwei Kurven. Gleichfoermige Bewegung waechst linear, daher ist $s$-$t$ eine Gerade. Gleichmaessig beschleunigte Bewegung enthaelt $t^2$, daher ist $s$-$t$ eine Parabel mit $s = 0{,}5 \cdot a \cdot t^2$ und $v$-$t$ eine Gerade mit $v = a \cdot t + v_0$. Zwei Merksaetze: $s$-$t$ verlangt Steigung ($v = \Delta s / \Delta t$), $v$-$t$ verlangt Flaeche ($s$ als Dreieck oder Rechteck). Im $a$-$t$-Diagramm ist die horizontale Hoehe gleich $a$, die Flaeche darunter gleich dem Geschwindigkeitszuwachs. Die Zuordnung folgt aus der Punktform: liegen $s$-Punkte auf einer Geraden, so ist die Bewegung gleichfoermig; liegen sie auf einer Parabel, so ist sie beschleunigt. Umrechnung: $\mathrm{km/h}$ dividiert durch $3{,}6$ ergibt $\mathrm{m/s}$; erst in SI-Einheiten rechnen, dann bei Bedarf zurueckrechnen.
+### Hook / Phaenomen
+
+Ein Schueler misst $s = 2{,}0\,\mathrm{m}$ nach $2{,}0\,\mathrm{s}$ und meldet $a = 1{,}0\,\mathrm{m/s^2}$ — ein Wert, kein Beweis. Sein Lehrer fordert drei Quotienten $2s/t^2$ an drei Punkten plus $v = 4{,}0\,\mathrm{m/s}$ am Ende. Warum sichert erst die Konstanz von $2s/t^2$ die Aussage beschleunigt — und wie entlarvt ein einziger Ausreisser die Fehlmessung?
+
+### Fachbegriff & Definition
+
+Eine **gleichmaessig beschleunigte Bewegung erkennt man daran, dass die Messpunkte im $s$-$t$-Diagramm auf einer Parabel und im $v$-$t$-Diagramm auf einer steigenden Geraden liegen**. Der **Quotient $2s/t^2$ ist dann konstant und gleich $a$**. Die **Endgeschwindigkeit folgt $v = a t + v_0$** mit $v_0$ als Startwert.
+
+### Wirkungsgefuege / Modell
+
+Der Tiefenweg prueft Konstanz: $2 \cdot 0{,}5/1^2 = 1{,}0$, $2 \cdot 2{,}0/2^2 = 1{,}0$, $2 \cdot 4{,}5/3^2 = 1{,}0$ zu $a = 1{,}0\,\mathrm{m/s^2}$ stabil. Dann $v = 1{,}0 \cdot 4{,}0 = 4{,}0\,\mathrm{m/s}$ nach $4{,}0\,\mathrm{s}$. Schwankt der Quotient wie $1{,}0/1{,}4/1{,}1$, so liegt keine gleichmaessige Beschleunigung vor — Messfehler oder andere Bewegungsart. SI-Regel: erst $\mathrm{km/h}$ durch $3{,}6$ zu $\mathrm{m/s}$, dann rechnen, dann bei Bedarf zurueck.
+
+Schritt A: $2s/t^2$ an drei Punkten bilden und vergleichen.
+Schritt B: Parabel in $s$-$t$ und Gerade in $v$-$t$ zuordnen.
+Schritt C: $v$ und $s$ per Steigung oder Flaeche mit Einheit schliessen.
 
 ```diagram
    s ^                         v ^
@@ -60,6 +100,7 @@ Alle Information steckt in zwei Kurven. Gleichfoermige Bewegung waechst linear, 
        |    /             \
        +------------------------> t
         |__A1__|___A2___|_A3_|   s = A1 + A2 + A3
+   Test: 2s/t^2 konstant > a = 1.0 m/s^2, v = 4.0 m/s
 ```
 
 Klausur-Satz: `Eine gleichmaessig beschleunigte Bewegung erkennt man daran, dass die Messpunkte im s-t-Diagramm auf einer Parabel und im v-t-Diagramm auf einer steigenden Geraden liegen.`

@@ -19,9 +19,25 @@ version: Lesson-v3
 
 ZIELE (diese Lektion in 15 Minuten: danach kannst du):
 
-1. Sechs Loesungsverfahren nennen und jedem den deutschen Klausurschritt zuordnen.
-2. Flachenmethode und Einheitenprobe selbstaendig anwenden und gegenpruefen.
-3. Zwischen Gesamtsystem und freigeschnittenem Teil entscheiden und die Wahl begruenden.
+1. Sechs Verfahren nennen: Kraeftefolge, Gesamt und Teil, Flaeche, Ersatz, Einheit, Kurzregel je mit Pruefsatz.
+2. $F_H = 15\,\mathrm{N}$ zu $a = 5{,}0\,\mathrm{m/s^2}$ und $s = 25\,\mathrm{m}$ per $0{,}5 \cdot 5 \cdot 10$ rechnen.
+3. Gesamt gegen Teil entscheiden und Dimensionsprobe $v = s/t$ gegen $v = m s$ begruenden.
+
+### Hook / Phaenomen
+
+Im Jahr 1986 riss ein Seil — die Berechnung nutzte die innere Kraft als aeussere. Gesamt gegen Teil verwechselt: $15\,\mathrm{N}$ an $5{,}0\,\mathrm{kg}$ zu $a = 3{,}0\,\mathrm{m/s^2}$, doch innen wirken $9{,}0\,\mathrm{N}$ anders als aussen. Sechs Tricks versprechen Tempo — doch nur das Bild plus Formel plus Einheit traegt Punkte. Welcher einzige Pruefsatz trennt schnelle Vermutung und klausurfeste Loesung?
+
+### Fachbegriff & Definition
+
+Fuer Tricks gilt: **Die Verfahren liefern nur das Vorgehen; im Heft wird jeder Schritt zusaetzlich als Ansatz mit Formel und Einheit aufgeschrieben**. Es gilt **erst das Bild, dann die Formel, dann die Zahl — und vor dem Einsetzen wird die Einheit geprueft**. Die **Kraeftefolge Gewicht, Normale, Reibung, Zug sichert Vollstaendigkeit**.
+
+### Wirkungsgefuege / Modell
+
+Der Mechanismus koppelt Tempo und Norm: Kraeftefolge $m = 3{,}0$, $\alpha = 30^\circ$ zu $F_H = 3{,}0 \cdot 10 \cdot 0{,}50 = 15\,\mathrm{N}$ und $a = 15/3{,}0 = 5{,}0\,\mathrm{m/s^2}$. Flaeche $0$ bis $5\,\mathrm{s}$ auf $10\,\mathrm{m/s}$ zu $s = 0{,}5 \cdot 5 \cdot 10 = 25\,\mathrm{m}$. Einheit $v = s/t$ zu $\mathrm{m/s}$ erlaubt, $v = m s$ zu $\mathrm{kgm}$ verworfen. Jeder Trick schliesst mit Pruefsatz — ohne ihn bleibt Tempo punktlos.
+
+Schritt A: Bild mit Reihenfolge legen und System waehlen.
+Schritt B: Formel in Buchstaben mit Einheiten ansetzen.
+Schritt C: Zahl plus Pruefsatz mit Bedingung schliessen.
 
 Klausur-Satz: `Die chinesischen Verfahren liefern nur das Vorgehen; im deutschen Heft wird jeder Schritt zusaetzlich als Ansatz mit Formel und Einheit aufgeschrieben.`
 
@@ -29,11 +45,21 @@ Klausur-Satz: `Die chinesischen Verfahren liefern nur das Vorgehen; im deutschen
 
 PRETRAINING (Kernbegriffe, erst lesen, dann abdecken und aktiv wiedergeben):
 
-- Kraeftediagramm: alle Kraefte als Pfeile mit Richtung, keine zu viel, keine zu wenig.
-- System: als Einheit betrachtete Koerpergesamtheit einer Rechnung.
-- Flaeche unter der Kurve: Gebiet unter $v$-$t$ als Weg $s$.
-- Ersatzkraft: eine Kraft mit gleicher Wirkung wie mehrere Kraefte.
-- Dimensionsprobe: Einheitenkontrolle vor dem Einsetzen auf Zieleinheit.
+### Hook / Phaenomen
+
+Zwei Wagen $2{,}0$ plus $3{,}0\,\mathrm{kg}$ mit $15\,\mathrm{N}$ — gemeinsame Fahrt, doch innen zieht es mit $9{,}0\,\mathrm{N}$. Wer nur das Ganze sieht, uebersieht die Kupplung. Welche fuenf Begriffe schneiden das System an der richtigen Stelle auf?
+
+### Fachbegriffe & Definitionen
+
+- **Kraeftediagramm:** Alle Kraefte als Pfeile mit Richtung; keine zu viel, keine zu wenig.
+- **System:** Als Einheit betrachtete Koerpergesamtheit fuer gemeinsames $a$.
+- **Flaeche unter der Kurve:** Gebiet unter $v$-$t$ als Weg $s$ per Dreieck oder Rechteck.
+- **Ersatzkraft:** Eine Kraft mit gleicher Wirkung wie mehrere, etwa $D_{ges} = 60\,\mathrm{N/m}$.
+- **Dimensionsprobe:** Einheitenkontrolle vor Einsetzen auf Zieleinheit $\mathrm{m/s}$ oder $\mathrm{N}$.
+
+### Wirkungsgefuege / Modell
+
+Die Kette schneidet zweimal: Gesamt $a = 15/5{,}0 = 3{,}0\,\mathrm{m/s^2}$, dann Teil $F = 3{,}0 \cdot 3{,}0 = 9{,}0\,\mathrm{N}$ an $3{,}0\,\mathrm{kg}$. Ersatz parallel $D_{ges} = 60$ zu $s = 30/60 = 0{,}50\,\mathrm{m}$. Flaeche $25\,\mathrm{m}$ als Dreieck. Einheit $m s$ zu $\mathrm{kgm}$ verworfen gegen $s/t$ zu $\mathrm{m/s}$. Kurzregel $1:3:5$ nur mit Start aus Ruhe — sonst zurueck zu $s = 0{,}5 a t^2$.
 
 Klausur-Satz: `Erst das Bild, dann die Formel, dann die Zahl — und vor dem Einsetzen wird die Einheit geprueft.`
 
@@ -41,19 +67,21 @@ Klausur-Satz: `Erst das Bild, dann die Formel, dann die Zahl — und vor dem Ein
 
 ENTDECKEN (ein Konzept plus Textdiagramm):
 
-Systematik sichert Vollstaendigkeit, Normsprache sichert Punkte. Sechs Verfahren verbinden beides; jedes liefert Vorgehen plus Pruefsatz fuer das Heft.
+### Hook / Phaenomen
 
-Trick 1 Kraeftefolge: Reihenfolge Gewicht, Normale, Reibung, Zug; Beispiel $m = 3{,}0\,\mathrm{kg}$, $\alpha = 30^{\circ}$, reibungsfrei: $F_H = m \cdot g \cdot \sin(\alpha) = 3{,}0 \cdot 10 \cdot 0{,}50 = 15\,\mathrm{N}$, $a = F_H/m = 5{,}0\,\mathrm{m/s^2}$. Pruefsatz: `Alle Kraefte werden mit Richtung im Kraeftediagramm dargestellt, dann folgt der Ansatz F_res = m*a.`
+Ein Schueler nutzt $1:3:5$ ohne Start aus Ruhe — und halbiert seine Punkte. Sein Nachbar nennt die Bedingung und sichert alles. Sechs Verfahren, sechs Bedingungen: Kraeftefolge, Gesamt und Teil, Flaeche, Ersatz, Einheit, Kurzregel. Wie wird aus sechs Tricks ein System — und warum rettet nur der genannte Pruefsatz die schnelle Zahl?
 
-Trick 2 Gesamt und Teil: erst System fuer gemeinsames $a$, dann Schnitt fuer Innenkraft; Beispiel $2{,}0$ plus $3{,}0\,\mathrm{kg}$ mit $15\,\mathrm{N}$: $a = 15/5{,}0 = 3{,}0\,\mathrm{m/s^2}$; Schnitt an $3{,}0\,\mathrm{kg}$: $F = 3{,}0 \cdot 3{,}0 = 9{,}0\,\mathrm{N}$. Pruefsatz: `Zuerst wird das Gesamtsystem betrachtet, danach wird am freigeschnittenen Teil die innere Kraft berechnet.`
+### Fachbegriff & Definition
 
-Trick 3 Flaeche: erst Achse lesen, dann $v$-$t$-Flaeche als Weg; Beispiel $0$ bis $5\,\mathrm{s}$ auf $10\,\mathrm{m/s}$: $s = 0{,}5 \cdot 5 \cdot 10 = 25\,\mathrm{m}$. Pruefsatz: `Die Flaeche unter der v-t-Linie gibt den zurueckgelegten Weg an und wird als Dreiecksflaeche berechnet.`
+Die **sechs Verfahren beschleunigen das Loesen, aber erst der ausgeschriebene Ansatz mit Formel und Einheit macht die Loesung klausurfaehig**. Jede **Kurzregel wird nur mit genannter Bedingung benutzt und kurz begruendet**. Der **Block mit $F_{res} = 10\,\mathrm{N}$ zu $a = 2{,}0\,\mathrm{m/s^2}$ plus Dimensionsprobe bestaetigt** den Ansatz.
 
-Trick 4 Ersatz: gleiche Wirkung ersetzen; Beispiel zwei Federn parallel je $D = 30\,\mathrm{N/m}$: $D_{ges} = 60\,\mathrm{N/m}$; $3{,}0\,\mathrm{kg}$ ($30\,\mathrm{N}$): $s = 30/60 = 0{,}50\,\mathrm{m}$. Pruefsatz: `Mehrere Kraefte werden durch eine Ersatzkraft mit gleicher Wirkung ersetzt.`
+### Wirkungsgefuege / Modell
 
-Trick 5 Einheit: vor Zahlen Einheiten multiplizieren; Beispiel $v = m \cdot s$ traegt $\mathrm{kg \cdot m}$ statt $\mathrm{m/s}$ und scheidet aus; $v = s/t$ traegt $\mathrm{m/s}$. Pruefsatz: `Vor dem Einsetzen wird die Einheit geprueft, weil eine falsche Einheit auf einen falschen Ansatz hinweist.`
+Der Tiefenweg paart Trick und Satz: Gesamt $15\,\mathrm{N}$ an $5{,}0\,\mathrm{kg}$ zu $3{,}0\,\mathrm{m/s^2}$, Schnitt $9{,}0\,\mathrm{N}$; Flaeche $25\,\mathrm{m}$ als $0{,}5 \cdot 5 \cdot 10$; Ersatz $0{,}50\,\mathrm{m}$ aus $60$; Einheit $s/t$ gegen $m s$; Kurzregel $s_n = a(2n-1)/2$ zu $1{,}0/3{,}0/5{,}0$ nur mit Ruhe. Jeder Trick endet im Pruefsatz: Bild plus Formel plus Einheit — erst dann Punkte.
 
-Trick 6 Kurzregel: nur mit Bedingung; Beispiel Start aus Ruhe mit $a = 2{,}0\,\mathrm{m/s^2}$: Wege je Sekunde $1{,}0/3{,}0/5{,}0\,\mathrm{m}$ wie $1:3:5$ aus $s_n = a \cdot (2n-1)/2$. Pruefsatz: `Bekannte Kurzregeln werden nur mit genannter Bedingung benutzt und kurz begruendet.`
+Schritt A: Trick waehlen und Bedingung laut nennen.
+Schritt B: Ansatz mit Formel und Einheit schreiben.
+Schritt C: Zahl plus Pruefsatz als Urteil schliessen.
 
 ```diagram
    Kraeftediagramm (Reihenfolge: Gewicht, Normale, Reibung, Zug)
@@ -62,15 +90,9 @@ Trick 6 Kurzregel: nur mit Bedingung; Beispiel Start aus Ruhe mit $a = 2{,}0\,\m
         F_R  <--  [Block]  -->  F_Zug
                      |
                      v  F_G = m*g
-
-   Flaeche unter v-t:
-     v ^
-       |          .
-       |        . |
-       |      .   |   Dreieck: s = 0,5 * t * v
-       |    .     |
-       +--------------> t
-        0         5 s
+   Gesamt: a = 15/5.0 = 3.0 m/s^2, Teil: F = 3.0*3.0 = 9.0 N
+   Flaeche: s = 0.5*5*10 = 25 m | Ersatz: s = 30/60 = 0.50 m
+   Einheit: s/t > m/s erlaubt, m*s > kg*m verworfen
 ```
 
 Klausur-Satz: `Die sechs Verfahren beschleunigen das Loesen, aber erst der ausgeschriebene Ansatz mit Formel und Einheit macht die Loesung klausurfaehig.`

@@ -19,9 +19,25 @@ version: Lesson-v3
 
 ZIELE (diese Lektion in 15 Minuten: danach kannst du):
 
-1. Die sechs Kerngruppen der EF-Mechanik mit Buchstaben, Bedeutung und Einheit wiedergeben.
-2. Nach der Regel Bedingung waehlt Ansatz, Buchstabenform zuerst, Einheiten bis zum Ende vorgehen und handschriftlich rechnen.
-3. Das Ergebnis mit Groessenordnung und Alltagserfahrung auf Plausibilitaet pruefen.
+1. Sechs Kerngruppen mit Buchstaben, Bedeutung und Einheit nennen: $v$, $a$, $F$, $E$, $p$, Kreis.
+2. Per Bedingung waehlt Ansatz erst Buchstabenform, dann SI-Einheiten bis zum Ende, dann Zahl mit Einheit rechnen.
+3. Per $1\,\mathrm{N} = 1\,\mathrm{kgm/s^2}$ und Alltag $v = 100\,\mathrm{m}$, $W = 300\,\mathrm{kJ}$ auf Plausibilitaet pruefen.
+
+### Hook / Phaenomen
+
+Im Jahr 1999 vergluehte der Mars Climate Orbiter — Newton gegen Pfund, $\mathrm{N}$ gegen $\mathrm{lb}$. Jede Formel stimmte, jede Einheit nicht. Ein Pkw mit $a = 2{,}0\,\mathrm{m/s^2}$ und $F = 3000\,\mathrm{N}$ zu $s = 100\,\mathrm{m}$ und $W = 300\,\mathrm{kJ}$ erzaehlt dasselbe Raetsel bodenstaendig: Warum zaehlt der Weg ohne Ansatz null Punkte — und welche einzige Regel waehlt aus sechs Formeln die richtige?
+
+### Fachbegriff & Definition
+
+Fuer Heft und Klausur gilt: **Ohne Ansatz mit Formel und Einheit gibt es keine volle Punktzahl, denn bewertet wird der Weg, nicht nur die Zahl**. Es gilt **Bedingung waehlt Ansatz: reibungsfrei ohne Zeit zu Energie, Zeitfrage zu Kraft $F = m a$**. Jede **Formel gilt nur unter ihrer Bedingung** und erst in SI-Einheiten.
+
+### Wirkungsgefuege / Modell
+
+Der Mechanismus rechnet Buchstaben zuerst: $F = m a$ zu $a = 2{,}0\,\mathrm{m/s^2}$; $v^2 = 2 a s$ zu $s = v^2/(2a) = 400/4 = 100\,\mathrm{m}$; $W = F s = 3000 \cdot 100 = 300000\,\mathrm{J} = 300\,\mathrm{kJ}$ gegen $E_{kin} = 0{,}5 m v^2$ konsistent. Einheiten $1\,\mathrm{N} = 1\,\mathrm{kgm/s^2}$, $1\,\mathrm{J} = 1\,\mathrm{kgm^2/s^2}$, $\mathrm{km/h}$ durch $3{,}6$ zu $\mathrm{m/s}$. Erst SI, dann Zahl, dann Urteil — Plausibilitaet per Alltag: $100\,\mathrm{m}$ und $300\,\mathrm{kJ}$ als Pkw-Mass.
+
+Schritt A: Bedingung lesen und Ansatz in Buchstaben waehlen.
+Schritt B: SI-Einheiten sichern und einsetzen.
+Schritt C: Ergebnis mit Einheit plus Plausibilitaet schliessen.
 
 Klausur-Satz: `Ohne Ansatz mit Formel und Einheit gibt es keine volle Punktzahl, denn bewertet wird der Weg, nicht nur die Zahl.`
 
@@ -29,11 +45,21 @@ Klausur-Satz: `Ohne Ansatz mit Formel und Einheit gibt es keine volle Punktzahl,
 
 PRETRAINING (Kernbegriffe, erst lesen, dann abdecken und aktiv wiedergeben):
 
-- Geschwindigkeit $v$ in $\mathrm{m/s}$: Weg je Zeit; gleichfoermig $v = s/t$.
-- Beschleunigung $a$ in $\mathrm{m/s^2}$: Tempo der Geschwindigkeitsaenderung; $a = \Delta v / \Delta t$.
-- Kraft $F$ in $\mathrm{N}$: Ursache der Bewegungsaenderung; $1\,\mathrm{N} = 1\,\mathrm{kg \cdot m/s^2}$; $F = m \cdot a$.
-- Energie $E$ in $\mathrm{J}$: gespeicherte Arbeit; $1\,\mathrm{J} = 1\,\mathrm{N \cdot m}$; $E_{kin} = 0{,}5 \cdot m \cdot v^2$, $E_{pot} = m \cdot g \cdot h$.
-- Impuls $p = m \cdot v$ in $\mathrm{kg \cdot m/s}$: bei fehlenden aeusseren Stoessen erhalten.
+### Hook / Phaenomen
+
+Sechs Formeln, eine Aufgabe: $v$, $a$, $F$, $E$, $p$, Kreis. Wer die erste greift, irrt meist. Die Bedingung waehlt — nicht die Gewohnheit. Welche fuenf plus eins Buchstaben entscheiden in Sekunden ueber Kraft, Energie oder Impuls?
+
+### Fachbegriffe & Definitionen
+
+- **Geschwindigkeit $v$ in $\mathrm{m/s}$:** Weg je Zeit; gleichfoermig $v = s/t$.
+- **Beschleunigung $a$ in $\mathrm{m/s^2}$:** $a = \Delta v/\Delta t$ als Tempo der Aenderung.
+- **Kraft $F$ in $\mathrm{N}$:** $1\,\mathrm{N} = 1\,\mathrm{kgm/s^2}$; $F = m a$ plus $F_G$, $F_R$, $D s$.
+- **Energie $E$ in $\mathrm{J}$:** $1\,\mathrm{J} = 1\,\mathrm{Nm}$; $0{,}5 m v^2$, $m g h$, $0{,}5 D s^2$.
+- **Impuls $p = m v$ in $\mathrm{kgm/s}$:** Bei Stoss $p_{vor} = p_{nach}$ erhalten.
+
+### Wirkungsgefuege / Modell
+
+Die Kette fragt Bedingungen ab: Zeit oder Richtung zu $F = m a$; reibungsfrei plus $v$ oder $h$ zu $E_{vor} = E_{nach}$; Stoss zu $p_{vor} = p_{nach}$; Kreis zu $F_Z = m v^2/r$; kein $t$ zu $v^2-v_0^2 = 2 a s$. Kreis $v = \omega r$ aus realer Radialkraft. Wer Energie mit Reibung ohne $W_R$ nutzt, ueberschaetzt $v$ — Bedingung zuerst, Zahl danach.
 
 Klausur-Satz: `Jede Formel gilt nur unter ihrer Bedingung, daher wird zuerst die Bedingung geprueft und dann der Ansatz gewaehlt.`
 
@@ -41,7 +67,21 @@ Klausur-Satz: `Jede Formel gilt nur unter ihrer Bedingung, daher wird zuerst die
 
 ENTDECKEN (ein Konzept plus Textdiagramm):
 
-Das Handbuch ist ein Entscheidungsbaum: Bedingung waehlt Formel, Formel liefert Ansatz. Kinematik: gleichfoermig $s = v \cdot t$; beschleunigt $v = v_0 + a \cdot t$, $s = v_0 \cdot t + 0{,}5 \cdot a \cdot t^2$; ohne Zeit $v^2 - v_0^2 = 2 \cdot a \cdot s$. Kraft: $F = m \cdot a$ als Kern, dazu $F_G = m \cdot g$, $F_R = \mu \cdot F_N$, $F = D \cdot s$. Energie: $0{,}5 \cdot m \cdot v^2$, $m \cdot g \cdot h$, $0{,}5 \cdot D \cdot s^2$; ohne Reibung Summe konstant. Impuls $p = m \cdot v$ mit $p_{vor} = p_{nach}$ bei Stoss. Kreis: $v = \omega \cdot r$, $F_z = m \cdot v^2/r$ aus realer Radialkraft. Einheiten: $1\,\mathrm{N} = 1\,\mathrm{kg \cdot m/s^2}$; $1\,\mathrm{J} = 1\,\mathrm{kg \cdot m^2/s^2}$; $\mathrm{km/h}$ durch $3{,}6$ ergibt $\mathrm{m/s}$. Erst alles in SI umrechnen, dann einsetzen, dann bei Bedarf zurueckrechnen. Reihenfolge im Heft: Ansatz, Einsetzen mit Einheiten, Ergebnis mit Einheit und Urteil.
+### Hook / Phaenomen
+
+Ein Schueler loest die Pkw-Aufgabe mit Energie statt Kraft — und scheitert an der Zeitfrage. Sein Nachbar nutzt $F = m a$ bei reibungsfreier Hoehe ohne Zeit — und rechnet dreimal zu lang. Beide Formeln stimmen, beide Wege sind falsch gewaehlt. Wie entscheidet der Baum in fuenf Fragen — und warum fuehrt reibungsfrei ohne Zeit immer zu $E$, Zeit immer zu $F$?
+
+### Fachbegriff & Definition
+
+Der **Entscheidungsbaum waehlt per Bedingung: reibungsfrei ohne Zeit zu Energie $E_{pot}+E_{kin} = const$, Zeitfrage zu Kraft $F = m a$, Stoss zu Impuls, Kreis zu $F_Z$**. Ohne **$t$ gilt $v^2-v_0^2 = 2 a s$** als Abkuerzung. Im **Heft folgt Ansatz plus Einsetzen mit Einheiten plus Ergebnis mit Einheit und Urteil**.
+
+### Wirkungsgefuege / Modell
+
+Der Tiefenweg beantwortet fuenf Fragen: Nach Zeit zu $v = v_0+a t$ und $s = v_0 t+0{,}5 a t^2$; reibungsfrei nur $v$ oder $h$ zu $m g h = 0{,}5 m v^2$; Stoss zu $p_{vor} = p_{nach}$; Kreis zu $m v^2/r$; kein $t$ zu $v^2-v_0^2 = 2 a s$. Pkw-Probe $a = 2{,}0$ zu $s = 100\,\mathrm{m}$ zu $W = 300\,\mathrm{kJ}$ als Kette Kraft zu Weg zu Energie. Handschrift bis zum Ende in Buchstaben, Zahlen erst zuletzt — so bleibt die Einheit pruefbar.
+
+Schritt A: Baumfrage beantworten und Ansatz fixieren.
+Schritt B: Buchstabenform bis zum Ende tragen.
+Schritt C: Zahl mit Einheit plus Urteil und Probe schliessen.
 
 ```diagram
    Frage an die Aufgabe
@@ -60,6 +100,7 @@ Das Handbuch ist ein Entscheidungsbaum: Bedingung waehlt Formel, Formel liefert 
      1. Ansatz (Buchstabenformel)
      2. Einsetzen (Zahlen mit Einheiten)
      3. Ergebnis + Einheit + Urteil
+   Probe: a=2.0, s=100 m, W=300 kJ konsistent
 ```
 
 Klausur-Satz: `Die Bedingung waehlt den Ansatz: reibungsfrei und ohne Zeitangabe fuehrt zur Energieerhaltung, eine Zeitfrage dagegen zum Kraftansatz F = m*a.`

@@ -19,9 +19,25 @@ version: Lesson-v3
 
 ZIELE (diese Lektion in 15 Minuten: danach kannst du):
 
-1. Die Schwingungsgleichung $T = 2\pi\sqrt{\frac{m}{D}}$ nennen und $m$ sowie $D$ erklaeren.
-2. Aus $F = -Dx$ und $F = ma$ die Bewegungsgleichung $\ddot{x} + \frac{D}{m}x = 0$ aufstellen.
-3. Mit $\omega = \sqrt{\frac{D}{m}}$ und $f = \frac{1}{T}$ Messdaten zu Masse und Federhaerte auswerten.
+1. $T = 2\pi\sqrt{m/D}$ mit $m$ und $D$ nennen und $m = 0{,}50\,\mathrm{kg}$, $D = 20\,\mathrm{N/m}$ zu $T \approx 0{,}99\,\mathrm{s}$ rechnen.
+2. Aus $F = -D x$ und $F = m a$ zu $\ddot{x}+Dx/m = 0$ formen und Minus als Rueckstellung deuten.
+3. Per $\omega = \sqrt{D/m}$ und $f = 1/T$ aus $T$ auf $D$ oder $m$ schliessen.
+
+### Hook / Phaenomen
+
+Im Jahr 1656 baute Huygens die erste Pendeluhr — und machte Zeit erstmals alltagstauglich praezise. Galilei mass $1583$ die Domlampe mit seinem Puls und fand: Die Dauer haengt nicht von der Weite ab. Ein Federpendel stellt dasselbe Raetsel im Kleinen: Doppelte Masse heisst nicht doppelte Zeit. Warum folgt $T$ der Wurzel statt der Linie — und welche einzige Gleichung beweist den Kosinus?
+
+### Fachbegriff & Definition
+
+Fuer Schwingungen gilt: **Rueckstellkraft proportional zur Auslenkung erzeugt eine harmonische Schwingung, also $F = -D x$**. Es gilt **$T = 2\pi\sqrt{m/D}$ mit Masse $m$ und Federhaerte $D$**. Dabei misst **$\omega = \sqrt{D/m} = 2\pi f$ das Tempo in $1/\mathrm{s}$** und $x(t) = A\cos(\omega t+\phi_0)$ die Lage.
+
+### Wirkungsgefuege / Modell
+
+Der Mechanismus setzt Newton gegen Feder: $m\ddot{x} = -D x$ zu $\ddot{x}+Dx/m = 0$. Ansatz $x = A\cos(\omega t)$ liefert $\ddot{x} = -\omega^2 x$, also $\omega^2 = D/m$ und $\omega = \sqrt{D/m}$. Damit $T = 2\pi/\omega = 2\pi\sqrt{m/D}$. Zahlen $m = 0{,}50$, $D = 20$ zu $T = 2\pi\sqrt{0{,}025} \approx 0{,}99\,\mathrm{s}$. Energie $E = 0{,}5 D x^2+0{,}5 m v^2 = 0{,}5 D A^2$ pendelt zwischen Feder und Bewegung.
+
+Schritt A: $F = -D x$ mit $F = m\ddot{x}$ gleichsetzen.
+Schritt B: Kosinus einsetzen und $\omega^2 = D/m$ lesen.
+Schritt C: $T$ bilden und Energie als Probe nutzen.
 
 Klausur-Satz: `Rueckstellkraft proportional zur Auslenkung erzeugt eine harmonische Schwingung.`
 
@@ -29,11 +45,21 @@ Klausur-Satz: `Rueckstellkraft proportional zur Auslenkung erzeugt eine harmonis
 
 PRETRAINING (Kernbegriffe, erst lesen, dann abdecken und aktiv wiedergeben):
 
-- Auslenkung: $x(t) = A\cos(\omega t + \phi_0)$, momentaner Abstand von der Ruhelage.
-- Federkonstante: $D$ in $\frac{\mathrm{N}}{\mathrm{m}}$, Haerte der Feder aus $F = -Dx$.
-- Kreisfrequenz: $\omega = \sqrt{\frac{D}{m}} = 2\pi f$, Tempo der Schwingung in $\frac{1}{\mathrm{s}}$.
-- Periodendauer: $T = 2\pi\sqrt{\frac{m}{D}}$, Zeit einer vollen Schwingung.
-- Energieerhaltung: $E = \frac{1}{2}Dx^2 + \frac{1}{2}mv^2 = \frac{1}{2}DA^2$, Wechsel zwischen Feder- und Bewegungsenergie.
+### Hook / Phaenomen
+
+Zwei Federn — weich und hart — tragen gleiche Masse. Die weiche schwingt traege, die harte zappelt. Gleiche Masse, doppeltes Tempo: Der Unterschied steckt in $D$, nicht in $A$. Welche fuenf Groessen stimmen das Pendel wie ein Instrument?
+
+### Fachbegriffe & Definitionen
+
+- **Auslenkung:** $x(t) = A\cos(\omega t+\phi_0)$; Abstand von der Ruhelage mit Amplitude $A$.
+- **Federkonstante:** $D$ in $\mathrm{N/m}$; Haerte aus $F = -D x$.
+- **Kreisfrequenz:** $\omega = \sqrt{D/m} = 2\pi f$ in $1/\mathrm{s}$; Tempo der Schwingung.
+- **Periodendauer:** $T = 2\pi\sqrt{m/D}$; Zeit einer vollen Schwingung.
+- **Energieerhaltung:** $E = 0{,}5 D x^2+0{,}5 m v^2 = 0{,}5 D A^2$; Wechsel zwischen Feder und Bewegung.
+
+### Wirkungsgefuege / Modell
+
+Die Kette stimmt $T$: $m$ hoch zu $T$ lang per Wurzel, $D$ hoch zu $T$ kurz per Wurzel. Doppelte Masse zu $\sqrt{2}$-facher Zeit — nicht doppelt. Die Energieprobe sichert: Umkehr $x = A$ zu $E = 0{,}5 D A^2$ mit $v = 0$; Nulldurchgang $x = 0$ zu $E = 0{,}5 m v_{max}^2$. Wer linear statt Wurzel denkt, halbiert oder verdoppelt falsch.
 
 Klausur-Satz: `Groessere Masse verlaengert T, haertere Feder verkuerzt T.`
 
@@ -41,7 +67,21 @@ Klausur-Satz: `Groessere Masse verlaengert T, haertere Feder verkuerzt T.`
 
 ENTDECKEN (ein Konzept plus Textdiagramm):
 
-Die Ruhelage zieht stets zurueck: $F = -Dx$. Mit Newton $F = m\ddot{x}$ folgt $\ddot{x} = -\frac{D}{m}x$. Diese Gleichung loest die Kosinusfunktion $x(t) = A\cos(\omega t)$ mit $\omega^2 = \frac{D}{m}$. Die Energie pendelt zwischen $E_{pot} = \frac{1}{2}Dx^2$ an den Umkehrpunkten und $E_{kin} = \frac{1}{2}mv^2$ beim Nulldurchgang.
+### Hook / Phaenomen
+
+Ein Schueler verdoppelt $m$ und erwartet doppeltes $T$ — die Stoppuhr zeigt $\sqrt{2}$-fach. Seine Nachbarin verdoppelt $D$ und erwartet halbes $T$ — die Uhr zeigt $1/\sqrt{2}$. Beide irren linear in einer Wurzelwelt. Wie beweist das Minus in $F = -D x$ die Rueckstellung — und warum loest nur der Kosinus die Bewegungsgleichung?
+
+### Fachbegriff & Definition
+
+Das **Minus bedeutet Rueckstellung zur Ruhelage, der Kosinus $x(t) = A\cos(\omega t)$ loest $\ddot{x}+Dx/m = 0$ mit $\omega^2 = D/m$**. An der **Umkehr gilt $E = 0{,}5 D A^2$ mit $v = 0$, am Nulldurchgang $E = 0{,}5 m v_{max}^2$**. Das **Wurzelgesetz schlaegt lineare Intuition**: doppelte Masse heisst $\sqrt{2}$-fache Zeit.
+
+### Wirkungsgefuege / Modell
+
+Der Tiefenweg differenziert zweimal: $x = A\cos(\omega t)$ zu $\dot{x} = -A\omega\sin(\omega t)$ zu $\ddot{x} = -A\omega^2\cos(\omega t) = -\omega^2 x$. Einsetzen in $\ddot{x}+Dx/m = 0$ zu $(-\omega^2+D/m)x = 0$ erzwingt $\omega^2 = D/m$. Probe $m = 1{,}0$, $D = 10$ zu $\omega \approx 3{,}16$ und $T \approx 1{,}99\,\mathrm{s}$. Das Minus treibt zurueck, der Kosinus passt exakt.
+
+Schritt A: Kosinus zweimal ableiten und $-\omega^2 x$ lesen.
+Schritt B: In $\ddot{x}+Dx/m = 0$ einsetzen und $\omega$ bestimmen.
+Schritt C: $T$ und Energie an Umkehr und Nulldurchgang pruefen.
 
 ```diagram
     x
@@ -52,7 +92,7 @@ Die Ruhelage zieht stets zurueck: $F = -Dx$. Mit Newton $F = m\ddot{x}$ folgt $\
     -A|  Umkehr 0  Umkehr  0
       Ruhelage x=0: v maximal, E = m v^2 / 2
       Umkehr x=A: v=0, E = D A^2 / 2
-      T = 2 pi Wurzel(m/D)
+      T = 2 pi Wurzel(m/D), w^2 = D/m per Kosinusprobe
 ```
 
 Klausur-Satz: `Minuszeichen bedeutet Rueckstellung, Kosinus loest die Bewegungsgleichung.`

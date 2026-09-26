@@ -19,9 +19,25 @@ version: Lesson-v3
 
 ZIELE (diese Lektion in 15 Minuten: danach kannst du):
 
-1. Den Kernwiderspruch nennen: Betrag von $v$ konstant, Richtung staendig wechselnd, daher Zentripetalbeschleunigung zum Mittelpunkt.
-2. Die Formeln $v = 2\pi r/T$, $\omega = 2\pi f$, $F_Z = m v^2/r$ auf Kurve und Scheibe anwenden.
-3. Kurvenrutschen mit radialer Kraft deuten und die Fliehkraftaussage korrekt einordnen.
+1. Den Widerspruch nennen: $|v|$ konstant, Richtung wechselnd, daher $a_Z$ zum Zentrum.
+2. $v = 2\pi r/T$, $\omega = 2\pi f$ und $F_Z = m v^2/r$ an Kurve $r = 20\,\mathrm{m}$ und Scheibe anwenden.
+3. Rutschen per $F_Z$ gegen Haftung deuten und Fliehkraft als Traegheit im Auto einordnen.
+
+### Hook / Phaenomen
+
+Im Jahr 2005 rutschte ein Lkw in der Autobahnkurve — Tacho konstant, dennoch Abflug. Die Polizei mass $v$ und $r$: Die Tachonadel log nicht, die Richtung riss. Ein Karussellkind spuert dasselbe Raetsel: gleichmaessig schnell und doch staendig beschleunigt. Warum verlangt konstantes Tempo eine Kraft zum Zentrum — und warum vervierfacht doppeltes $v$ die Kraft?
+
+### Fachbegriff & Definition
+
+Fuer die Kreisbahn gilt: **Bei gleichfoermiger Kreisbewegung bleibt der Betrag der Geschwindigkeit konstant, die Richtung aendert sich staendig, sodass eine zum Mittelpunkt gerichtete Zentripetalkraft erforderlich ist**. Es gilt **$v = 2\pi r/T$ tangential und $F_Z = m v^2/r$ radial zum Zentrum**. Die **Zentripetalkraft ist keine neue Kraft, sondern die radiale Summe realer Kraefte**.
+
+### Wirkungsgefuege / Modell
+
+Der Mechanismus trennt Betrag und Richtung: Umfang $2\pi r$ je Zeit $T$ zu $v = 2\pi r/T$; Drehtempo $\omega = 2\pi f$ zu $v = \omega r$; Bedarf $F_Z = m v^2/r = m \omega^2 r$. Wegen $v^2$ vervierfacht doppeltes $v$ die Kraft: $v \to 2v$ zu $F_Z \to 4F_Z$. Reicht die Haftung $F_{max} = \mu F_N$ nicht, so folgt der Wagen tangential der Traegheit — scheinbar nach aussen, physikalisch geradeaus.
+
+Schritt A: $v$ aus $r$ und $T$ bilden und Richtung tangential legen.
+Schritt B: $F_Z = m v^2/r$ als Bedarf aus realer Radialkraft decken.
+Schritt C: $F_Z$ gegen Haftung vergleichen und Rutschen deuten.
 
 Klausur-Satz: `Bei der gleichfoermigen Kreisbewegung bleibt der Betrag der Geschwindigkeit konstant, die Richtung aendert sich jedoch staendig, sodass eine zum Mittelpunkt gerichtete Zentripetalkraft erforderlich ist.`
 
@@ -29,11 +45,21 @@ Klausur-Satz: `Bei der gleichfoermigen Kreisbewegung bleibt der Betrag der Gesch
 
 PRETRAINING (Kernbegriffe, erst lesen, dann abdecken und aktiv wiedergeben):
 
-- Gleichfoermige Kreisbewegung: Betrag konstant, Richtung kreisend und staendig wechselnd.
-- Umlaufdauer $T$ in $\mathrm{s}$: Zeit je Runde; Frequenz $f = 1/T$.
-- Winkelgeschwindigkeit $\omega = 2\pi f$ in $\mathrm{1/s}$: Drehwinkel je Zeit.
-- Bahngeschwindigkeit $v = 2\pi r/T = \omega r$ in $\mathrm{m/s}$: tangentiale Momentangeschwindigkeit.
-- Zentripetalkraft $F_Z = m v^2/r = m \omega^2 r$ in $\mathrm{N}$: radiale Resultierende zum Mittelpunkt aus realen Kraeften.
+### Hook / Phaenomen
+
+Ein Karussell zieht das Kind nach aussen — so fuehlt es sich an. Die Physik zeichnet den Pfeil nach innen. Beide beschreiben dasselbe, doch nur eine Sicht rechnet im Inertialsystem. Welche fuenf Groessen zaehmen das Karussell in Formeln?
+
+### Fachbegriffe & Definitionen
+
+- **Gleichfoermige Kreisbewegung:** $|v|$ konstant, Richtung kreisend und staendig wechselnd.
+- **Umlaufdauer $T$ in $\mathrm{s}$:** Zeit je Runde; Frequenz $f = 1/T$ in $\mathrm{Hz}$.
+- **Winkelgeschwindigkeit $\omega = 2\pi f$ in $1/\mathrm{s}$:** Drehwinkel je Zeit.
+- **Bahngeschwindigkeit $v = 2\pi r/T = \omega r$ in $\mathrm{m/s}$:** Tangentiale Momentangeschwindigkeit.
+- **Zentripetalkraft $F_Z = m v^2/r = m \omega^2 r$ in $\mathrm{N}$:** Radiale Resultierende zum Zentrum aus realen Kraeften.
+
+### Wirkungsgefuege / Modell
+
+Die Kette verbindet Drehen und Ziehen: $T$ zu $f$ zu $\omega$ zu $v$ zu $F_Z$. Seilkraft, Reibung oder Gewichtskomponente liefern die reale Radialkraft; $F_Z$ benennt nur ihren Bedarf. Die Fliehkraft erscheint nur im mitrotierenden System als Scheinkraft — im Strassenprotokoll zaehlt allein $F_Z$ gegen Haftung. Daher $v$ kappen oder $r$ weiten statt gegen die Scheinkraft kaempfen.
 
 Klausur-Satz: `Die Bahngeschwindigkeit zeigt tangential zur Kreisbahn, die Zentripetalkraft zeigt radial zum Mittelpunkt.`
 
@@ -41,7 +67,21 @@ Klausur-Satz: `Die Bahngeschwindigkeit zeigt tangential zur Kreisbahn, die Zentr
 
 ENTDECKEN (ein Konzept plus Textdiagramm):
 
-Gleichfoermig sichert nur die Tachonadel, nicht die Richtung. Richtungswechsel verlangt Kraft, und dauerndes Abbiegen verlangt Kraft zum Zentrum: $F_Z$. Sie ist keine neue Kraft, sondern die radiale Summe aus Reibung, Seilkraft oder Gewichtskomponente. Der Betrag folgt aus Umfang je Zeit $v = 2\pi r/T$, das Drehtempo aus $\omega = 2\pi f$, der Bedarf aus $F_Z = m v^2/r$. Doppelte Kurvengeschwindigkeit verlangt vierfache Seitenreibung; reicht die Haftung nicht, so folgt der Wagen der Traegheit tangential und rutscht nach aussen.
+### Hook / Phaenomen
+
+Ein Pkw nimmt die Kurve $r = 50\,\mathrm{m}$ mit $v = 15\,\mathrm{m/s}$ — und haelt. Mit $v = 30\,\mathrm{m/s}$ braucht er vierfache Haftung und rutscht. Der Gutachter rechnet $F_Z = m v^2/r$ und vergleicht mit $\mu m g$. Wie wird aus $v$ und $r$ ein Urteil ueber Rutschen — und warum hilft breitere Spur weniger als halbiertes Tempo?
+
+### Fachbegriff & Definition
+
+Die **Zentripetalkraft $F_Z = m v^2/r$ wirkt radial zum Zentrum und wird durch die reale Radialkomponente aufgebracht**. Mit **$v = 2\pi r/T$ und $\omega = 2\pi f$ folgt $F_Z = m \omega^2 r$** als Drehform. **Verdopplung von $v$ vervierfacht $F_Z$** wegen des Quadrats.
+
+### Wirkungsgefuege / Modell
+
+Der Tiefenweg rechnet Bedarf gegen Angebot: Bedarf $F_Z = 1000 \cdot 225/50 = 4500\,\mathrm{N}$ bei $15\,\mathrm{m/s}$; bei $30\,\mathrm{m/s}$ zu $18000\,\mathrm{N}$ als Vierfaches. Angebot $F_{max} = \mu m g$ mit $\mu = 0{,}8$ zu $7848\,\mathrm{N}$ — reicht bei $15$, versagt bei $30$. Also $v_{max} = \sqrt{\mu g r}$ als Kurvenlimit. Die $v^2$-Abhaengigkeit macht Tempo zum Hebel: halbiertes $v$ viertelt den Bedarf.
+
+Schritt A: $v$ und $r$ zu $F_Z$ formen.
+Schritt B: $F_Z$ gegen $\mu m g$ stellen.
+Schritt C: $v_{max} = \sqrt{\mu g r}$ als Urteil mit weil-Satz schreiben.
 
 ```diagram
               ^ v (tangential)
@@ -58,7 +98,8 @@ Gleichfoermig sichert nur die Tachonadel, nicht die Richtung. Richtungswechsel v
          \---+---/
               v
    Legende: r = Radius, v = tangential, F_Z = radial zum Zentrum
-   Formeln: v = 2πr/T, ω = 2πf, F_Z = m v^2/r
+   Formeln: v = 2*pi*r/T, w = 2*pi*f, F_Z = m*v^2/r
+   Bedarf: F_Z gegen Angebot mu*m*g, vmax = Wurzel(mu*g*r)
 ```
 
 Klausur-Satz: `Die Zentripetalkraft F_Z = m v^2/r wirkt radial zum Mittelpunkt und wird durch die reale Radialkomponente der Kraefte aufgebracht.`

@@ -19,9 +19,25 @@ version: Lesson-v3
 
 ZIELE (diese Lektion in 15 Minuten: danach kannst du):
 
-1. Die drei mechanischen Energien nennen: $E_{kin} = 0{,}5 \cdot m \cdot v^2$, $E_{pot} = m \cdot g \cdot h$, $E_{spann} = 0{,}5 \cdot D \cdot s^2$.
-2. Fuer reibungsfreie Vorgaenge mit $E_{vor} = E_{nach}$ Geschwindigkeit, Hoehe oder Dehnung bestimmen.
-3. Die Anwendbarkeit pruefen (Dissipation ja oder nein) und ein bedingtes Urteil formulieren.
+1. $E_{kin} = 0{,}5 m v^2$, $E_{pot} = m g h$ und $E_{spann} = 0{,}5 D s^2$ je mit Einheit $\mathrm{J}$ nennen.
+2. Reibungsfrei per $E_{vor} = E_{nach}$ zu $v = \sqrt{2 g h}$ und $s = \sqrt{2 m g h/D}$ loesen.
+3. Dissipation per $E_{vor} = E_{nach}+W_R$ pruefen und ein bedingtes Urteil mit weil-Satz formulieren.
+
+### Hook / Phaenomen
+
+Im Jahr 2010 blieb eine Achterbahn vor dem Looping stehen — zu wenig Starthoehe, zu viel Reibung. Die Ingenieure hatten $v = \sqrt{2 g h}$ gerechnet, doch die Bahn frass Energie. Der Wagen mit $v = 4{,}0\,\mathrm{m/s}$ am Fuss und $s = 0{,}40\,\mathrm{m}$ Federweg erzaehlt dasselbe Raetsel: Woher kennt die Energie Anfang und Ende, ohne den Weg dazwischen zu kennen — und wann bricht $E_{vor} = E_{nach}$ zusammen?
+
+### Fachbegriff & Definition
+
+Fuer reibungsfreie Systeme gilt: **In einem System mit nur konservativen Kraeften bleibt die Summe aus kinetischer, potenzieller und Spannenergie konstant**. Es gilt **$E_{kin} = 0{,}5 m v^2$, $E_{pot} = m g h$ und $E_{spann} = 0{,}5 D s^2$ in $\mathrm{J}$**. Mit **Reibung wird die dissipierte Energie $W_R$ abgezogen: $E_{vor} = E_{nach}+W_R$**.
+
+### Wirkungsgefuege / Modell
+
+Der Mechanismus vergleicht nur Anfang und Ende: Oben $E_{pot} = m g h$ mit $v = 0$, unten $E_{kin} = 0{,}5 m v^2$ mit $h = 0$. Gleichsetzen $m g h = 0{,}5 m v^2$ kuerzt $m$ und liefert $v = \sqrt{2 g h}$ — Winkel und Verlauf fallen heraus. Mit Feder am Ende $m g h = 0{,}5 D s^2$ zu $s = \sqrt{2 m g h/D}$. Mit Reibung $E_{vor} = E_{nach}+W_R$ als bedingte Bilanz.
+
+Schritt A: Nullniveau waehlen und $E_{vor}$ auflisten.
+Schritt B: $E_{nach}$ auflisten und gleichsetzen.
+Schritt C: Nach $v$, $h$ oder $s$ aufloesen und Bedingung nennen.
 
 Klausur-Satz: `In einem reibungsfreien System, in dem nur konservative Kraefte wirken, bleibt die Summe aus kinetischer, potenzieller und Spannenergie zu jedem Zeitpunkt konstant.`
 
@@ -29,11 +45,21 @@ Klausur-Satz: `In einem reibungsfreien System, in dem nur konservative Kraefte w
 
 PRETRAINING (Kernbegriffe, erst lesen, dann abdecken und aktiv wiedergeben):
 
-- Kinetische Energie $E_{kin} = 0{,}5 \cdot m \cdot v^2$ in $\mathrm{J}$: Energie der Bewegung, waechst quadratisch mit $v$.
-- Lageenergie $E_{pot} = m \cdot g \cdot h$ in $\mathrm{J}$: Energie der Hoehe ueber dem Nullniveau, proportional zu $h$.
-- Spannenergie $E_{spann} = 0{,}5 \cdot D \cdot s^2$ in $\mathrm{J}$: gespeicherte Federenergie mit Haerte $D$ und Dehnung $s$.
-- Energieerhaltung: ohne Verlust gilt $E_{vor} = E_{nach}$; Energie wird nur umgewandelt.
-- Dissipation: Umwandlung in innere Energie durch Reibung; sie wird in der Bilanz abgezogen.
+### Hook / Phaenomen
+
+Ein Wagen rollt die Rampe hinab — die Stoppuhr fragt nach Zeit, die Energie fragt nur nach Hoehe. Zwei Wege, zwei Antworten: Kraft ueber $F = m a$ braucht Sekunden, Energie ueber $E$ braucht nur Meter. Welche fuenf Bausteine entscheiden, wann der kurze Energieweg erlaubt ist?
+
+### Fachbegriffe & Definitionen
+
+- **Kinetische Energie:** $E_{kin} = 0{,}5 m v^2$ in $\mathrm{J}$; waechst quadratisch mit $v$.
+- **Lageenergie:** $E_{pot} = m g h$ in $\mathrm{J}$; proportional zu $h$ ueber Nullniveau.
+- **Spannenergie:** $E_{spann} = 0{,}5 D s^2$ in $\mathrm{J}$; Federhaerte $D$ mal Dehnung $s$.
+- **Energieerhaltung:** Ohne Verlust $E_{vor} = E_{nach}$; Energie wird nur umgewandelt.
+- **Dissipation:** Umwandlung in innere Energie per Reibung; sie wird abgezogen.
+
+### Wirkungsgefuege / Modell
+
+Die Kette bilanziert vorher gegen nachher: Erst alle Formen links und rechts auflisten, dann $W_R$ abziehen oder null setzen, dann loesen. Der Arbeitssatz $W_{ges} = \Delta E_{kin}$ mit $W = F s \cos(\alpha)$ verbindet Kraft- und Energiesicht. Wer $W_R$ vergisst, ueberschaetzt $v$ — der klassische Looping-Fehler. Die Bedingung reibungsfrei steht daher vor jeder $v = \sqrt{2 g h}$-Zeile.
 
 Klausur-Satz: `Bei der Energiebilanz werden alle Energieformen vor und nach dem Vorgang aufgefuehrt; bei Reibung wird die dissipierte Energie abgezogen.`
 
@@ -41,7 +67,21 @@ Klausur-Satz: `Bei der Energiebilanz werden alle Energieformen vor und nach dem 
 
 ENTDECKEN (ein Konzept plus Textdiagramm):
 
-Der Energieansatz vergleicht nur Anfang und Ende und ueberspringt alle Zwischenmomente. Ohne Reibung bleibt die mechanische Summe erhalten: Was oben Lageenergie war, ist unten Bewegungsenergie. Das Aufschreiben heisst Energiebilanz: Nullniveau waehlen (meist Tiefpunkt), dann Energien vorher und nachher auflisten und gleichsetzen. Beispiel Hang: $m \cdot g \cdot h = 0{,}5 \cdot m \cdot v^2$, also $v = \sqrt{2 \cdot g \cdot h}$ ohne Winkel und ohne Verlauf. Mit Feder am Ende gilt $m \cdot g \cdot h = 0{,}5 \cdot D \cdot s^2$. Mit Reibung gilt $E_{vor} = E_{nach} + W_{Reibung}$. Die Arbeit $W = F \cdot s \cdot \cos(\alpha)$ verbindet Kraft- und Energiesicht; der Arbeitssatz $W_{ges} = \Delta E_{kin}$ dient als Uebergang zwischen beiden Verfahren.
+### Hook / Phaenomen
+
+Ein Wagen startet in $h = 0{,}82\,\mathrm{m}$ und erreicht unten $v = 4{,}0\,\mathrm{m/s}$ — passt das zu $v = \sqrt{2 g h}$? Danach drueckt er eine Feder $s = 0{,}40\,\mathrm{m}$ ein. Zwei Messungen, eine Bilanz: $m g h$ zu $0{,}5 m v^2$ zu $0{,}5 D s^2$. Wie wird aus drei Energien eine Geschwindigkeit ohne einzige Zeitmessung — und warum beweist $v = \sqrt{2 g h}$ zugleich die Unabhaengigkeit vom Weg?
+
+### Fachbegriff & Definition
+
+Beim **reibungsfreien Herabgleiten wird gesamte Lageenergie in Bewegung verwandelt: $m g h = 0{,}5 m v^2$ und damit $v = \sqrt{2 g h}$**. Mit **Feder am Ende gilt $m g h = 0{,}5 D s^2$** zur maximalen Spannung. Die **Masse kuerzt sich bei $v$ heraus** — schwer und leicht fallen gleich schnell.
+
+### Wirkungsgefuege / Modell
+
+Der Tiefenweg kuerzt $m$: $m \cdot 9{,}81 \cdot 0{,}82 = 0{,}5 m v^2$ zu $v = \sqrt{2 \cdot 9{,}81 \cdot 0{,}82} \approx 4{,}0\,\mathrm{m/s}$. Federprobe $D = m g h / (0{,}5 s^2)$ zu $s = 0{,}40\,\mathrm{m}$ konsistent. Winkel und Rampenlaenge kommen nicht vor — genau darin liegt die Staerke: Der Energieweg ueberspringt alle Zwischenmomente. Mit Reibung $E_{vor} = E_{nach}+W_R$ als Korrektur statt Ersatz.
+
+Schritt A: $h$ und Nullniveau festlegen und $m g h$ bilden.
+Schritt B: $m$ kuerzen und $v = \sqrt{2 g h}$ ziehen.
+Schritt C: Feder per $0{,}5 D s^2$ oder Reibung per $W_R$ ergaenzen.
 
 ```diagram
     oben:  v = 0,  h > 0
@@ -57,6 +97,7 @@ Der Energieansatz vergleicht nur Anfang und Ende und ueberspringt alle Zwischenm
 
     mit Feder am Ende:  m*g*h = 0.5*D*s^2  =>  s = sqrt(2*m*g*h/D)
     mit Reibung:        E_vor = E_nach + W_Reibung
+    Zahlen: v = 4.0 m/s, s = 0.40 m konsistent
 ```
 
 Klausur-Satz: `Da beim reibungsfreien Herabgleiten die gesamte Lageenergie in Bewegungsenergie umgewandelt wird, gilt m*g*h = 0.5*m*v^2 und damit v = sqrt(2*g*h).`

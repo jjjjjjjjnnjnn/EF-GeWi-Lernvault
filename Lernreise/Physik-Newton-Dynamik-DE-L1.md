@@ -19,9 +19,25 @@ version: Lesson-v3
 
 ZIELE (diese Lektion in 15 Minuten: danach kannst du):
 
-1. Das zweite Newtonsche Gesetz nennen und anwenden: Die Beschleunigung folgt aus $F_{res} = m \cdot a$, die Kraft erzeugt Beschleunigung und erhaelt keine Geschwindigkeit.
-2. Die Gewichtskraft an der schiefen Ebene zerlegen in $F_H = m \cdot g \cdot \sin(\alpha)$ und $F_N = m \cdot g \cdot \cos(\alpha)$ und daraus mit Reibung die resultierende Kraft bestimmen.
-3. Zwischen Gleichgewicht ($a = 0$, also $F_{res} = 0$) und beschleunigter Bewegung ($F_{res} = m \cdot a$) entscheiden und den passenden Ansatz waehlen.
+1. $F_{res} = m \cdot a$ nennen und an $m = 2{,}0\,\mathrm{kg}$, $F_{res} = 10\,\mathrm{N}$ zu $a = 5{,}0\,\mathrm{m/s^2}$ ausrechnen.
+2. $F_G = m \cdot g$ an $\alpha = 30^\circ$ in $F_H = m g \sin(\alpha)$ und $F_N = m g \cos(\alpha)$ zerlegen und mit $\mu$ zu $F_{res}$ addieren.
+3. Zwischen $F_{res} = 0$ zu $a = 0$ und $F_{res} = m a$ entscheiden und den Ansatz mit Kraeftediagramm begruenden.
+
+### Hook / Phaenomen
+
+Im Jahr 2018 rutschte ein Lkw auf der schiefen Ladebruecke — die Bordwand hielt, die Ladung nicht. Die Polizei mass $\alpha = 12^\circ$ und nasse Reifen mit $\mu \approx 0{,}2$: Reichte die Hangabtriebskraft, um die Haftung zu brechen? Die Frage entscheidet ueber Schuld oder Freispruch. Warum haengt die Antwort nicht von der Masse ab — und welche einzige Gleichung trennt Stehen und Rutschen?
+
+### Fachbegriff & Definition
+
+Nach dem NRW-Kernlehrplan Mechanik gilt das **zweite Newtonsche Gesetz $F_{res} = m \cdot a$: Die Beschleunigung ist direkt proportional zur resultierenden Kraft und umgekehrt proportional zur Masse**. Die **resultierende Kraft $F_{res}$ ist die Vektorsumme aller Kraefte**; sie bestimmt Betrag und Richtung von $a$. An der **schiefen Ebene wird $F_G = m g$ in $F_H = m g \sin(\alpha)$ parallel und $F_N = m g \cos(\alpha)$ senkrecht zerlegt**.
+
+### Wirkungsgefuege / Modell
+
+Der Mechanismus addiert Kraefte laengs der Bewegung: $F_H = m g \sin(\alpha)$ zieht hangabwaerts, $F_R = \mu F_N = \mu m g \cos(\alpha)$ bremst. Also $F_{res} = m g \sin(\alpha) - \mu m g \cos(\alpha) = m a$, gekuerzt $a = g(\sin(\alpha)-\mu\cos(\alpha))$. Ohne Reibung $\mu = 0$ folgt $a = g\sin(\alpha)$ — $m$ kuerzt sich heraus, schwer und leicht rutschen gleich schnell.
+
+Schritt A: Kraeftediagramm in Reihenfolge $F_G$, $F_N$, $F_R$, Zug legen.
+Schritt B: $F_H$ und $F_N$ per Sinus und Kosinus bilden.
+Schritt C: $F_{res} = m a$ setzen und nach $a$ aufloesen.
 
 Klausur-Satz: `Nach dem zweiten Newtonschen Gesetz ist die Beschleunigung eines Koerpers direkt proportional zur resultierenden Kraft und umgekehrt proportional zu seiner Masse.`
 
@@ -29,11 +45,21 @@ Klausur-Satz: `Nach dem zweiten Newtonschen Gesetz ist die Beschleunigung eines 
 
 PRETRAINING (Kernbegriffe, erst lesen, dann abdecken und aktiv wiedergeben):
 
-- Resultierende Kraft: $F_{res}$ in $\mathrm{N}$; Vektorsumme aller Kraefte, sie bestimmt Betrag und Richtung von $a$.
-- Gewichtskraft: $F_G = m \cdot g$ in $\mathrm{N}$; wirkt senkrecht nach unten und ist Ausgang jeder Zerlegung.
-- Hangabtriebskraft: $F_H = m \cdot g \cdot \sin(\alpha)$ in $\mathrm{N}$; Komponente parallel zur Ebene, hangabwaerts.
-- Normalkraft: $F_N = m \cdot g \cdot \cos(\alpha)$ in $\mathrm{N}$; Komponente senkrecht in die Ebene, sie bestimmt die Reibung.
-- Reibungskraft: $F_R = \mu \cdot F_N$ in $\mathrm{N}$; wirkt der Relativbewegung entgegen, $\mu$ ist der Reibungskoeffizient.
+### Hook / Phaenomen
+
+Ein Kasten steht auf der Rampe — Motor aus, Bremse offen. Bei $10^\circ$ bleibt er stehen, bei $20^\circ$ rutscht er. Dieselbe Kiste, dieselbe Rampe, nur der Winkel wechselt. Welche fuenf Kraefte entscheiden ueber Stehen oder Rutschen — und warum waechst eine mit Sinus, die andere mit Kosinus?
+
+### Fachbegriffe & Definitionen
+
+- **Resultierende Kraft:** $F_{res}$ in $\mathrm{N}$; Vektorsumme aller Kraefte, sie bestimmt $a$ per $F_{res} = m a$.
+- **Gewichtskraft:** $F_G = m g$ in $\mathrm{N}$; senkrecht nach unten, Ausgang jeder Zerlegung.
+- **Hangabtriebskraft:** $F_H = m g \sin(\alpha)$ in $\mathrm{N}$; parallel hangabwaerts, waechst mit $\alpha$.
+- **Normalkraft:** $F_N = m g \cos(\alpha)$ in $\mathrm{N}$; senkrecht in die Ebene, sie bestimmt $F_R$.
+- **Reibungskraft:** $F_R = \mu F_N$ in $\mathrm{N}$; gegen die Bewegung, $\mu$ dimensionslos.
+
+### Wirkungsgefuege / Modell
+
+Die Kette zerlegt und bilanziert: $F_G$ senkrecht, $F_H$ parallel, $F_N$ senkrecht zur Ebene, $F_R$ gegen die Bewegung. Laengs gilt $F_{res} = F_H - F_R$, quer gilt Gleichgewicht $F_N$ gegen Unterlage. Fuer $m = 3{,}0\,\mathrm{kg}$, $\alpha = 30^\circ$, $\mu = 0{,}2$ folgt $F_H = 15\,\mathrm{N}$, $F_N \approx 26\,\mathrm{N}$, $F_R \approx 5{,}2\,\mathrm{N}$, also $F_{res} \approx 9{,}8\,\mathrm{N}$ zu $a \approx 3{,}3\,\mathrm{m/s^2}$. Genau diese Zahl entscheidet im Gutachten ueber Rutschen.
 
 Klausur-Satz: `Die Gewichtskraft wird an der schiefen Ebene in die Hangabtriebskraft und die Normalkraft zerlegt, wobei F_H = m*g*sin(alpha) und F_N = m*g*cos(alpha) gilt.`
 
@@ -41,7 +67,21 @@ Klausur-Satz: `Die Gewichtskraft wird an der schiefen Ebene in die Hangabtriebsk
 
 ENTDECKEN (ein Konzept plus Textdiagramm):
 
-Die Dynamik beantwortet eine Frage: Warum bewegt sich ein Koerper so? Antwort: Die resultierende Kraft bestimmt die Beschleunigung, die Beschleunigung aendert die Geschwindigkeit. Das Vorgehen beginnt stets mit dem Kraeftediagramm in fester Reihenfolge: Gewichtskraft, dann Stuetz- oder Zugkraefte, dann Reibung, dann aeussere Kraefte. An der schiefen Ebene wird die Gewichtskraft in zwei Richtungen zerlegt: parallel zur Ebene $F_H = m \cdot g \cdot \sin(\alpha)$ und senkrecht zur Ebene $F_N = m \cdot g \cdot \cos(\alpha)$. Aus $F_N$ folgt die Gleitreibung $F_R = \mu \cdot F_N$. Die Kraefte laengs der Bewegungsrichtung addieren sich zu $F_{res}$, daraus folgt $a = F_{res}/m$. Ohne Reibung gilt $a = g \cdot \sin(\alpha)$, unabhaengig von der Masse. Bei $F_{res} = 0$ liegt Gleichgewicht mit $a = 0$ vor, also der Fall des ersten Newtonschen Gesetzes. Das dritte Gesetz (actio gleich reactio) beschreibt Kraeftepaare an zwei Koerpern und darf nicht mit dem Kraeftegleichgewicht an einem Koerper verwechselt werden.
+### Hook / Phaenomen
+
+Ein Gutachter rechnet nach dem Unfall: Kasten $m = 3{,}0\,\mathrm{kg}$, Rampe $\alpha = 30^\circ$, Gleitreibung $\mu = 0{,}2$, Rutschweg $2{,}0\,\mathrm{m}$. Er behauptet $a \approx 3{,}3\,\mathrm{m/s^2}$ und $v \approx 3{,}6\,\mathrm{m/s}$ am Fuss — und trennt damit Gleichgewicht und Fahrt. Wie wird aus dem Kraeftebild eine Geschwindigkeit — und warum darf actio gleich reactio hier nicht mit Gleichgewicht verwechselt werden?
+
+### Fachbegriff & Definition
+
+Die **resultierende Kraft laengs der Ebene $F_{res} = m g \sin(\alpha) - \mu m g \cos(\alpha)$ liefert $a = g(\sin(\alpha)-\mu\cos(\alpha))$**. Bei **$F_{res} = 0$ liegt Gleichgewicht mit $a = 0$ nach dem ersten Gesetz** vor. Das **dritte Gesetz beschreibt Paare an zwei Koerpern und kein Gleichgewicht an einem Koerper**.
+
+### Wirkungsgefuege / Modell
+
+Der Tiefenweg rechnet $a$ und $v$ in Kette: $a = 9{,}81 \cdot (0{,}5 - 0{,}2 \cdot 0{,}866) \approx 3{,}3\,\mathrm{m/s^2}$. Ohne Zeit folgt $v^2 = 2 a s = 2 \cdot 3{,}3 \cdot 2{,}0 = 13{,}2$ zu $v \approx 3{,}6\,\mathrm{m/s}$. Probe ohne Reibung $a = g\sin(\alpha) \approx 4{,}9\,\mathrm{m/s^2}$ als Obergrenze. Actio gleich reactio wirkt zwischen Kasten und Rampe, nicht am Kasten allein — daher kein Abzug von $F_{res}$.
+
+Schritt A: $F_{res}$ und $a$ per Zerlegung bestimmen.
+Schritt B: $v$ per $v^2 = 2 a s$ ohne Zeit berechnen.
+Schritt C: $F_{res} = 0$ gegen $F_{res} = m a$ als Fallwahl deuten.
 
 ```diagram
       F_N  ^  (senkrecht zur Ebene)
@@ -57,6 +97,7 @@ Die Dynamik beantwortet eine Frage: Warum bewegt sich ein Koerper so? Antwort: D
 
    Bewegungsgleichung:  F_res = F_H - F_R = m*a
                         a = g*(sin(alpha) - mu*cos(alpha))
+   Zahlen: a ca. 3.3 m/s^2, v nach 2.0 m ca. 3.6 m/s
 ```
 
 Klausur-Satz: `Die resultierende Kraft laengs der schiefen Ebene ist F_res = m*g*sin(alpha) - mu*m*g*cos(alpha), woraus a = g*(sin(alpha) - mu*cos(alpha)) folgt.`

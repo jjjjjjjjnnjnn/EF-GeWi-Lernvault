@@ -19,9 +19,25 @@ version: Lesson-v3
 
 ZIELE (diese Lektion in 15 Minuten: danach kannst du):
 
-1. Diagrammaufgaben unter Zeitdruck nach Achse, Steigung oder Flaeche und Einheit in drei Schritten loesen.
-2. Kraft-Energie-Aufgaben zuerst ueber die Kraeftebedingung entscheiden, dann vollstaendig mit Einheit rechnen.
-3. Mit dem Erwartungshorizont selbst korrigieren und Messurteile auf neue Situationen uebertragen.
+1. $v$-$t$ in drei Abschnitten zu $s = 336\,\mathrm{m}$ und $\bar{v} \approx 9{,}3\,\mathrm{m/s}$ per Flaechen $48+240+48$ loesen.
+2. Kiste $3{,}0\,\mathrm{kg}$ per $F_{res} = 12\,\mathrm{N}$ zu $W = 48\,\mathrm{J}$ zu $h = 1{,}6\,\mathrm{m}$ per $m g h$ loesen.
+3. Per EHZ selbst bepunkten und jeden Ansatz mit Formel, Einheit und Urteil schreiben.
+
+### Hook / Phaenomen
+
+Im Jahr 2018 verpasste ein Zug den Anschluss — der Fahrplan zaehlte Minuten, die Physik Flaechen. $v$-$t$ mit $12\,\mathrm{m/s}$ ueber $20\,\mathrm{s}$ plus Anfahren und Bremsen ergibt $336\,\mathrm{m}$ in $36\,\mathrm{s}$: Wer nur $12 \cdot 36$ rechnet, ueberschaetzt um $96\,\mathrm{m}$. Warum zaehlt die Flaeche statt der Hoehe — und welche einzige Regel sichert jeden Teilpunkt per Ansatz plus Einheit?
+
+### Fachbegriff & Definition
+
+Fuer Training gilt: **Jeder Teilschritt traegt Punkte, daher wird jeder Ansatz mit Formel, Einheit und Urteil ausgeschrieben**. Der **Erwartungshorizont verteilt Punkte auf Teilschritte**; der Weg zaehlt oft mehr als die Zahl. Die **Flaeche unter $v$-$t$ gibt den Weg**, die **Bilanz $F_{res}$ waehlt Kraft gegen Energie**.
+
+### Wirkungsgefuege / Modell
+
+Der Mechanismus flaecht $v$-$t$: Anfahrt $0{,}5 \cdot 8 \cdot 12 = 48\,\mathrm{m}$, Mitte $20 \cdot 12 = 240\,\mathrm{m}$, Bremsen $0{,}5 \cdot 8 \cdot 12 = 48\,\mathrm{m}$ zu $s = 336\,\mathrm{m}$ und $\bar{v} = 336/36 \approx 9{,}3\,\mathrm{m/s}$. Kiste $F_{res} = 18-6{,}0 = 12\,\mathrm{N}$ zu $W = 12 \cdot 4{,}0 = 48\,\mathrm{J}$ zu $m g h = W$ mit $g = 10$ zu $h = 48/30 = 1{,}6\,\mathrm{m}$. Jede Zeile mit Formel und Einheit — sonst Teilpunkte weg.
+
+Schritt A: Achsen und Abschnitte sichern und Ansatz nennen.
+Schritt B: Teilflaechen oder $F_{res}$ rechnen.
+Schritt C: Summe plus Einheit und Urteil als Satz schliessen.
 
 Klausur-Satz: `Jeder Teilschritt traegt Punkte, daher wird jeder Ansatz mit Formel, Einheit und Urteil ausgeschrieben.`
 
@@ -29,11 +45,21 @@ Klausur-Satz: `Jeder Teilschritt traegt Punkte, daher wird jeder Ansatz mit Form
 
 PRETRAINING (Kernbegriffe, erst lesen, dann abdecken und aktiv wiedergeben):
 
-- Erwartungshorizont (EHZ): Punkte je Teilschritt; der Weg zaehlt oft mehr als die Zahl.
-- Loesungsweg: jeder Schritt nennt Gesetz oder Ansatz.
-- Transfersatz: Anwendung des Ergebnisses auf eine neue Lage in einem Satz.
-- Teilflaeche: Summe der Stuecke im $v$-$t$-Diagramm als Gesamtweg.
-- Mehrfachmessung: Wiederholung mit Mittelwert gegen Zufallsfehler.
+### Hook / Phaenomen
+
+Vier Aufgaben, ein EHZ: Diagramm, Kraft, Kreis, Messung. Wer nur Zahlen liefert, halbiert seine Punkte — der EHZ bepunktet Wege, nicht Ergebnisse. Welche fuenf Begriffe sichern jeden Teilpunkt vor der ersten Zahl?
+
+### Fachbegriffe & Definitionen
+
+- **Erwartungshorizont (EHZ):** Punkte je Teilschritt; der Weg zaehlt oft mehr als die Zahl.
+- **Loesungsweg:** Jeder Schritt nennt Gesetz oder Ansatz mit Formel.
+- **Transfersatz:** Anwendung auf neue Lage in einem Satz mit weil-Begruendung.
+- **Teilflaeche:** Stuecke in $v$-$t$ als $A_1+A_2+A_3 = s$ mit je eigener Formel.
+- **Mehrfachmessung:** Wiederholung mit Mittel gegen Zufallsfehler plus Streuung.
+
+### Wirkungsgefuege / Modell
+
+Die Kette schreibt alles hin: Achsen mit Einheiten und Abschnitte zu $1$ P; Dreieck $48$ zu $1$ P; Rechteck $240$ zu $1$ P; Dreieck $48$ zu $1$ P; Summe $336$ zu $1$ P; Mittel $9{,}3$ zu $1$ P. Kiste $F_{res}$ zu $2$ P, $W$ zu $2$ P, $m g h$ zu $2$ P, $h$ zu $2$ P, weil-Satz zu $1$ P. Ohne Formel kein Punkt — selbst bei richtiger Zahl.
 
 Klausur-Satz: `Der Erwartungshorizont verteilt die Punkte auf die Teilschritte, daher wird jeder Schritt hingeschrieben.`
 
@@ -41,17 +67,21 @@ Klausur-Satz: `Der Erwartungshorizont verteilt die Punkte auf die Teilschritte, 
 
 ENTDECKEN (ein Konzept plus Textdiagramm):
 
-Dieses Training uebt Zeiteinteilung, nicht nur Aufgaben. Vier Aufgaben decken vier EF-Kernformen ab: Diagramm, Kraft plus Energie, Kreis und Schwingung, Messung. Jede traegt Zeitvorgabe und EHZ; nach der Bearbeitung wird selbst korrigiert. Ein Ansatz ohne Formel gibt nur Teilpunkte, eine Zahl ohne Einheit verliert ebenfalls. Die feste Reihenfolge lautet: Achsen und Einheiten sichern, Bedingung und Ansatz notieren, Ergebnis mit Einheit und Urteil schliessen.
+### Hook / Phaenomen
 
-Aufgabenstamm (eigene Zahlen):
+Ein Schueler rechnet $s = 336\,\mathrm{m}$ korrekt — und erhaelt nur vier von sechs Punkten. Achsen, Abschnitte und Mittel fehlen. Seine Nachbarin schreibt jede Flaeche mit Formel und sichert alles. Warum belohnt der EHZ drei Flaechen statt einer Zahl — und wie uebertraegt der Transfersatz $336\,\mathrm{m}$ auf jede neue Fahrt?
 
-Aufgabe 1 Diagramm (12 min): $v$-$t$ einer Zugfahrt: $0$ bis $8\,\mathrm{s}$ gleichmaessig von $0$ auf $12\,\mathrm{m/s}$, $8$ bis $28\,\mathrm{s}$ konstant $12\,\mathrm{m/s}$, $28$ bis $36\,\mathrm{s}$ gleichmaessig auf $0$. Verlauf analysieren, Gesamtweg und Mittelgeschwindigkeit berechnen. EHZ: Achsen mit Einheiten und drei Abschnitte (1 P), Dreieck Anfahrt $0{,}5 \cdot 8 \cdot 12 = 48\,\mathrm{m}$ (1 P), Rechteck $20 \cdot 12 = 240\,\mathrm{m}$ (1 P), Dreieck Bremsen $48\,\mathrm{m}$ (1 P), Summe $s = 336\,\mathrm{m}$ (1 P), Mittel $336/36 \approx 9{,}3\,\mathrm{m/s}$ (1 P).
+### Fachbegriff & Definition
 
-Aufgabe 2 Kraft und Energie (15 min): Kiste $m = 3{,}0\,\mathrm{kg}$ wird $4{,}0\,\mathrm{m}$ mit $F = 18\,\mathrm{N}$ geschoben; Reibung $6{,}0\,\mathrm{N}$; danach reibungsfrei Rampe hinauf. Ansatz begruenden, erreichbare Hoehe mit $g = 10\,\mathrm{m/s^2}$ berechnen. EHZ: Bilanz $F_{res} = 18 - 6{,}0 = 12\,\mathrm{N}$ (2 P), Arbeit $W = 12 \cdot 4{,}0 = 48\,\mathrm{J}$ (2 P), Ansatz $m \cdot g \cdot h = W$ (2 P), $h = 48/(3{,}0 \cdot 10) = 1{,}6\,\mathrm{m}$ (2 P), weil-Satz (1 P).
+Die **vier Aufgabentypen folgen derselben Reihenfolge: Achsen und Bedingung pruefen, Ansatz aufschreiben, Ergebnis mit Einheit und Urteil notieren**. Die **Teilflaechen $A_1+A_2+A_3$ bilden $s = 336\,\mathrm{m}$**, daraus **$\bar{v} = s/t \approx 9{,}3\,\mathrm{m/s}$**. Der **Transfersatz wendet das Ergebnis auf neue Lagen** an.
 
-Aufgabe 3 Kreis und Schwingung (10 min): Kind $m = 25\,\mathrm{kg}$ auf Karussell $r = 4{,}0\,\mathrm{m}$, $T = 8{,}0\,\mathrm{s}$. Bahn erklaeren, $v$ und $F_z$ berechnen, reale Kraftquelle nennen. Zusatz: Periodendauer des Federpendels bei groesserer Masse oder haerterer Feder qualitativ. EHZ: $v = 2\pi r/T$ (2 P), $v \approx 3{,}1\,\mathrm{m/s}$ (2 P), $F_z = m v^2/r$ (2 P), $F_z \approx 62\,\mathrm{N}$ (2 P), Quelle (1 P), Schwingungsrichtung (1 P).
+### Wirkungsgefuege / Modell
 
-Aufgabe 4 Messung (10 min): Fadenpendel $1{,}00\,\mathrm{m}$; fuer $10$ Schwingungen $20{,}1/19{,}8/20{,}4\,\mathrm{s}$. Reihe auswerten und Guete beurteilen. EHZ: Mittel $T_{10} = 20{,}1\,\mathrm{s}$, $T \approx 2{,}0\,\mathrm{s}$ (2 P), Zufallsfehler aus Streuung ca. $0{,}06\,\mathrm{s}$ je Periode (2 P), zwei systematische Quellen (3 P), eingeschraenktes weil-Urteil (2 P).
+Der Tiefenweg zerlegt Trapez in drei Teile: $A_1 = 0{,}5 \cdot 8 \cdot 12 = 48$, $A_2 = 20 \cdot 12 = 240$, $A_3 = 0{,}5 \cdot 8 \cdot 12 = 48$ zu $336\,\mathrm{m}$. Kreis $v = 2\pi r/T \approx 3{,}1\,\mathrm{m/s}$ zu $F_Z = m v^2/r \approx 62\,\mathrm{N}$ als zweite Kette. Pendel $T_{10} = 20{,}1$ zu $T \approx 2{,}0\,\mathrm{s}$ mit Streuung $0{,}06$ als dritte. Jede Kette schliesst mit weil-Urteil — erst dann ist der EHZ erfuellt.
+
+Schritt A: Aufgabe per Achse oder Bedingung einsortieren.
+Schritt B: Ansatz mit Formel und Einheiten schreiben.
+Schritt C: Ergebnis plus Transfersatz als Urteil schliessen.
 
 ```diagram
    Aufgabe 1: v-t-Flaeche (Trapez aus drei Teilen)
@@ -63,12 +93,8 @@ Aufgabe 4 Messung (10 min): Fadenpendel $1{,}00\,\mathrm{m}$; fuer $10$ Schwingu
         0   8     28    36  (s)
         |A1 |   A2     |A3|
         A1 + A2 + A3 = s = 336 m
-
-   Vier Typen im Ueberblick:
-     1 Diagramm   -> Achse, Steigung/Flaeche, Einheit
-     2 Kraft+Energie -> Reibung abziehen, dann Energieansatz
-     3 Kreis/Schwingung -> wer stellt F_z? Richtung der Periode?
-     4 Messung    -> Mittelwert, Zufall vs. System
+        A1=48, A2=240, A3=48 > Mittel 336/36 ca. 9.3 m/s
+   Regel: Achsen sichern, Ansatz nennen, Einheit plus Urteil
 ```
 
 Klausur-Satz: `Die vier Aufgabentypen werden mit derselben Reihenfolge bearbeitet: Achsen und Bedingung pruefen, Ansatz aufschreiben, Ergebnis mit Einheit und Urteil notieren.`
