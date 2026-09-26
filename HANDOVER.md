@@ -17,16 +17,18 @@
 - **vault**（Obsidian 知识库，**内容真相源**）+ `App-EF-Lernvault/`（Tauri 桌面学习软件，**只读 vault、不写回**）。
 - 目标：德国 NRW Gymnasium EF 十科笔试/口试提分，中德双语，**完全离线**。
 - **内容铁律**：所有题目材料只能来自用户自己的笔记原文 —— **超纲率 = 0**。
-- **当前规模**：笔记 **361** · Anki 卡片 **1595** · 互动课程 **70 篇**（`Lernreise/`，十科全覆盖，9 步 Lesson-v3）· 术语表 **797 行** · 十科 Abi-Baum 应试树 · 考纲体系（NRW 十科 + 中国理科四科 + 中德映射）。
+- **当前规模**：笔记 **386** · Anki 卡片 **1595** · 互动课程 **70 篇**（`Lernreise/`，十科全覆盖）· 术语表 **797 行** · 十科 Abi-Baum 应试树 · 考纲体系（NRW 十科 + 中国理科四科 + 中德映射）。
 
 ---
 
-## 当前状态（2026-09-25）
+## 当前状态（2026-09-26）
 
-- ✅ **S8 十科笔记生产 100% 收官**：十科 §4 施工图 **225/225 = 100% 完成**。补齐 Philosophie 尾项笔记《Sonderstellung-des-Menschen.md》，完成 Chemie 三篇核心笔记深度升级（物质的量四方枢纽 / 法拉第电解桥 / 弱酸近似与滴定全真题）。
-- ✅ **核心学科原创大题扩充**：新增 Mathe（Analysis雨水池最值建模）、Physik（复合制动与机械能守恒）、SoWi（社会不平等材料解析）三道高难原创大题，配齐完整 26/24/26 BE Erwartungshorizont。全库笔记达 **359 篇**。
+- ✅ **知识网络 (Mindmap) 发散性星系图谱重构**：废除旧版竖向堆叠线性图，实现多中心发散算法（Multicentric Radial Divergent Algorithm）。支持全学科星系模式（Nebula：以中心辐射 10 学科并在外周扇形发散）与单学科环轨模式（Orbit：3 层同心轨道环绕）。支持节点悬停聚光灯高亮（Spotlight Hover）、视口多级平移缩放，严格遵循 SVG line 测试契约。
+- ✅ **笔记库 (Library) 分页检索与多维筛选升级**：消除 385 篇无节制长列表堆叠，开发支持 8/12/20 条切换的底部分页组件（`Pagination.tsx`）；引入 AFB I/II/III 认知层级与 `* Klausur` 复合分面筛选；实现列表分栏 (Split List) 与响应式 3 列卡片网格 (Card Grid) 双视图；支持 `[` / `]` 翻页与 `j` / `k` 上下篇键盘快捷精读。
+- ✅ **企业实训级沉浸式教学标准落地与外部 AI 指令发布**：发布 [`00_META/External-AI-Enterprise-Curriculum-Prompt.md`](00_META/External-AI-Enterprise-Curriculum-Prompt.md)，确立麦肯锡学院/PhET 级别的 6 步企业级实训课件标准（情境钩子 $\to$ 认知解构 $\to$ 图示原理 $\to$ 上手实验沙盒 `[Werkzeug: <id>]` $\to$ 形成性纠偏 $\to$ Klausur 真题实战）；梳理十科 40 门核心课表缺口矩阵，配套即拷即用的外部 AI 发卷 Prompt。
+- ✅ **S8 十科笔记生产 100% 收官**：十科 §4 施工图 **225/225 = 100% 完成**。补齐 Philosophie 尾项笔记《Sonderstellung-des-Menschen.md》，完成 Chemie 三篇核心笔记深度升级。全库笔记达 **386 篇**。
 - ✅ **App 客户端全量数据通道与 KlausurSim 优化**：导出带 blocks 的 `generatedVaultNotes.ts` 作为客户端全量底座，KlausurSim/Quiz 消除空数据门槛，全十科即开即考，并提供「Erwartungshorizont einblenden」自评采分对照。
-- ✅ **UI 工作区重构与学习树自适应大纲升级**：侧边栏收敛为 5 大清晰主工作区（Übersicht, Wissen, Karteikarten, Training, KI-Tutor + Einstellungen），配备现代微胶囊分段条（Segment Pills）；Lernbaum 彻底根治超宽裁切，垂直步长紧凑化，新增「全图适应 / Einpassen」与「Gliederung (大纲目录)」双模态切换，100% 自适应屏幕。全部 57 套件 379 测试与构建 100% 绿。
+- ✅ **UI 工作区重构与学习树自适应大纲升级**：侧边栏收敛为 5 大清晰主工作区（Übersicht, Wissen, Karteikarten, Training, KI-Tutor + Einstellungen），配备现代微胶囊分段条（Segment Pills）；Lernbaum 彻底根治超宽裁切，垂直步长紧凑化，新增「全图适应 / Einpassen」与「Gliederung (大纲目录)」双模态切换。全部 57 套件 382 测试与构建 100% 绿。
 - ✅ **KI 助教交互体系全面重构与抗漂移精准锚定**：重塑 Sokratisch 启发引导（引入认知支架，严禁脱纲）与 Klausur-Direkt 考纲直出双模态；支持笔记引用无缝精准跳转与全库出处校验；顶部加入学科胶囊切换与快捷提问芯片。
 - 📋 **外部 AI 全量内容搜集大师规范编制就绪**：发布 [`00_META/Lehrplan-Content-Spezifikation.md`](00_META/Lehrplan-Content-Spezifikation.md)，包含十科缺口清单、9步交互课程规范、八段式笔记规范、Anki卡片规范与即用型外置 AI 提示词。
 - ✅ **官方源本地化**：`_Downloads/CURRICULUM/` 固化 **218 个官方 PDF / 127MB**（KLP 十科 + 2027 新版 · Operatoren 14 · Abitur-Vorgaben 72 · IQB Poolaufgaben 64 · 中国课标 21），每件配 `.quelle.txt`，**全部 gitignored**。

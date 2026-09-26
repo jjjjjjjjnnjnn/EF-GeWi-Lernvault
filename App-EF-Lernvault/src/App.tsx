@@ -780,6 +780,7 @@ export default function App() {
               selectedNoteId={selectedNoteId}
               onClearQuery={() => setQuery("")}
               onSubjectChange={setSelectedFach}
+              lang={lang}
             />
           )}
           {tab === "flashcards" && (

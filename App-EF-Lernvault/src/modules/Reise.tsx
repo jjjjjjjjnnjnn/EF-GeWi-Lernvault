@@ -33,7 +33,7 @@ import OralExamTimer from "../components/pedagogy/OralExamTimer";
 import { MarktMechanismusSim } from "../components/pedagogy/MarktMechanismusSim";
 import { KinematikSim } from "../components/pedagogy/KinematikSim";
 
-export function getAutoToolForContext(fach: string, thema: string): string | null {
+function getAutoToolForContext(fach: string, thema: string): string | null {
   const f = (fach || "").toLowerCase();
   const th = (thema || "").toLowerCase();
   if (f === "mathe" || th.includes("ableitung") || th.includes("sekante") || th.includes("tangente") || th.includes("funktion")) {
