@@ -7,6 +7,10 @@ import { TextHighlighter, PRESET_PASSAGES } from "./TextHighlighter";
 import { TangentSlider } from "./TangentSlider";
 import FormulaScaffold from "./FormulaScaffold";
 import OralExamTimer from "./OralExamTimer";
+import { TitrationSimulator } from "./TitrationSimulator";
+import { BoxOptimizerSim } from "./BoxOptimizerSim";
+import { SchiefeEbeneSim } from "./SchiefeEbeneSim";
+import { GiniAllocatorSim } from "./GiniAllocatorSim";
 
 describe("Pädagogische Komponenten (Pedagogy UI Library)", () => {
   describe("SatzbauLego", () => {
@@ -187,6 +191,80 @@ describe("Pädagogische Komponenten (Pedagogy UI Library)", () => {
       fireEvent.click(screen.getByText("带入作答框"));
       expect(onGenerated).toHaveBeenCalled();
       expect(onGenerated.mock.calls[0][0]).toContain("[Musik] Mündliche Prüfung");
+    });
+  });
+
+  describe("TitrationSimulator", () => {
+    it("rendert Titrationslabor mit Ausgangsbedingungen und berechnet pH-Wert", () => {
+      render(<TitrationSimulator lang="zh" />);
+      expect(screen.getByText("学科教具：酸碱滴定中和反应与指示剂沙盘")).toBeInTheDocument();
+      expect(screen.getByText("pH = 1.00")).toBeInTheDocument();
+      expect(screen.getByText("黄色 (pH < 6.0)")).toBeInTheDocument();
+
+      // Schnell-Button Aequivalenzpunkt klicken
+      fireEvent.click(screen.getByText("等当点 (20 mL)"));
+      expect(screen.getByText("pH = 7.00")).toBeInTheDocument();
+      expect(screen.getByText("已达到化学计量等当点！(pH = 7.00)")).toBeInTheDocument();
+      expect(screen.getByText("绿色（中性突跃区, pH 6.0–7.6）")).toBeInTheDocument();
+    });
+
+    it("wechselt Indikator zu Phenolphthalein und aendert Farbanzeige", () => {
+      render(<TitrationSimulator lang="de" />);
+      const select = screen.getByRole("combobox");
+      fireEvent.change(select, { target: { value: "phenolphthalein" } });
+      expect(screen.getByText("Farblos (pH < 8,2)")).toBeInTheDocument();
+
+      // Ueberdosierung auf 40 mL
+      fireEvent.click(screen.getByText("+ 1.0 mL"));
+      // Slider auf 30 mL schieben
+      const slider = screen.getByRole("slider");
+      fireEvent.change(slider, { target: { value: "30" } });
+      expect(screen.getByText("Magenta / Pink (pH > 8,2)")).toBeInTheDocument();
+    });
+  });
+
+  describe("BoxOptimizerSim", () => {
+    it("rendert Schachtelproblem mit Karton-Skizze und berechnet Volumen", () => {
+      render(<BoxOptimizerSim lang="zh" />);
+      expect(screen.getByText("折纸盒问题：无盖盒子容积极大化探索")).toBeInTheDocument();
+      expect(screen.getByText("原始纸板：24 cm × 24 cm")).toBeInTheDocument();
+
+      // Initial x = 2.0 -> b = 20 -> V = 2 * 20 * 20 = 800
+      expect(screen.getByText("盒子容积 V(x) = 800 cm³")).toBeInTheDocument();
+
+      // Klick auf exaktes Optimum (x = 4) -> V = 4 * 16 * 16 = 1024
+      fireEvent.click(screen.getByText("直接跳转理论极值点 (x = 4 cm)"));
+      expect(screen.getByText("盒子容积 V(x) = 1024 cm³")).toBeInTheDocument();
+      expect(screen.getByText("满足必要极值条件：V'(x) = 0！（容积达到极大值）")).toBeInTheDocument();
+    });
+  });
+
+  describe("SchiefeEbeneSim", () => {
+    it("rendert Kraeftezerlegung und reagiert auf Neigungswinkel", () => {
+      render(<SchiefeEbeneSim lang="zh" />);
+      expect(screen.getByText("斜面动力学：下滑分力与摩擦阻力动态博弈")).toBeInTheDocument();
+
+      const angleSlider = screen.getByRole("slider", { name: "斜面倾角 α：" });
+      // Grossen Winkel einstellen damit der Klotz rutscht
+      fireEvent.change(angleSlider, { target: { value: "45" } });
+      expect(screen.getByText(/滑块加速滑落！/)).toBeInTheDocument();
+
+      // Kleinen Winkel einstellen damit der Klotz ruht
+      fireEvent.change(angleSlider, { target: { value: "10" } });
+      expect(screen.getByText("滑块静止（静摩擦阻力平衡下滑分力）")).toBeInTheDocument();
+    });
+  });
+
+  describe("GiniAllocatorSim", () => {
+    it("rendert Lorenz-Kurve und berechnet Gini-Koeffizienten bei Umverteilung", () => {
+      render(<GiniAllocatorSim lang="zh" />);
+      expect(screen.getByText("洛伦兹曲线与基尼系数动态再分配")).toBeInTheDocument();
+      expect(screen.getByText("G = 0.44")).toBeInTheDocument();
+
+      const slider = screen.getByRole("slider");
+      fireEvent.change(slider, { target: { value: "50" } });
+      // Gini sinkt bei starker Umverteilung
+      expect(screen.getByText("50%")).toBeInTheDocument();
     });
   });
 });

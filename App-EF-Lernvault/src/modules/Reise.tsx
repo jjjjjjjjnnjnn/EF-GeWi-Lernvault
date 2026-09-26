@@ -38,6 +38,10 @@ import { MarktMechanismusSim } from "../components/pedagogy/MarktMechanismusSim"
 import { KinematikSim } from "../components/pedagogy/KinematikSim";
 import { OsmoseSimulator } from "../components/pedagogy/OsmoseSimulator";
 import { GleichgewichtSimulator } from "../components/pedagogy/GleichgewichtSimulator";
+import { TitrationSimulator } from "../components/pedagogy/TitrationSimulator";
+import { BoxOptimizerSim } from "../components/pedagogy/BoxOptimizerSim";
+import { SchiefeEbeneSim } from "../components/pedagogy/SchiefeEbeneSim";
+import { GiniAllocatorSim } from "../components/pedagogy/GiniAllocatorSim";
 import ImageAnswerUpload from "../components/ImageAnswerUpload";
 
 function CheckMarkSvg() {
@@ -148,6 +152,13 @@ function renderEmbeddedTool(toolName: string, lang: Lang, fach: string) {
         </div>
       );
     }
+    if (t === "titration" || t === "titration-lab" || t === "saeure-base") {
+      return (
+        <div className="my-3 p-3.5 border border-[var(--line)] bg-[var(--surface)] rounded-[var(--radius)]">
+          <TitrationSimulator lang={lang} />
+        </div>
+      );
+    }
     // Default & specific for Chemie: GleichgewichtSimulator
     return (
       <div className="my-3 p-3.5 border border-[var(--line)] bg-[var(--surface)] rounded-[var(--radius)]">
@@ -180,6 +191,13 @@ function renderEmbeddedTool(toolName: string, lang: Lang, fach: string) {
         </div>
       );
     }
+    if (t === "schiefe-ebene" || t === "ebene" || t === "reibung") {
+      return (
+        <div className="my-3 p-3.5 border border-[var(--line)] bg-[var(--surface)] rounded-[var(--radius)]">
+          <SchiefeEbeneSim lang={lang} />
+        </div>
+      );
+    }
     // KinematikLab as default for Physik (guards against balance)
     return (
       <div className="my-3 p-3.5 border border-[var(--line)] bg-[var(--surface)] rounded-[var(--radius)]">
@@ -194,7 +212,7 @@ function renderEmbeddedTool(toolName: string, lang: Lang, fach: string) {
 
   // 4. MATHEMATIK TOOLS
   if (f.includes("mathe")) {
-    if (t === "formula" || t === "formel") {
+    if (t === "formula" || t === "formel" || t === "box-optimizer" || t === "box" || t === "optimizer") {
       return (
         <div className="my-3 p-3.5 border border-[var(--line)] bg-[var(--surface)] rounded-[var(--radius)]">
           <div className="flex items-center justify-between text-xs font-mono text-[var(--accent)] mb-2 font-medium">
@@ -202,6 +220,14 @@ function renderEmbeddedTool(toolName: string, lang: Lang, fach: string) {
             <span className="text-[var(--text-meta)] text-[var(--gray)]">Mathe</span>
           </div>
           <FormulaScaffold lang={lang} />
+        </div>
+      );
+    }
+    // tangent-slider / tangent / default -> Tangenten-Simulator
+    if (t === "box" || t === "box-optimizer" || t === "extremwert") {
+      return (
+        <div className="my-3 p-3.5 border border-[var(--line)] bg-[var(--surface)] rounded-[var(--radius)]">
+          <BoxOptimizerSim lang={lang} />
         </div>
       );
     }
@@ -218,7 +244,7 @@ function renderEmbeddedTool(toolName: string, lang: Lang, fach: string) {
 
   // 5. SOWI & PHILO TOOLS (BalanceBoard is STRICTLY restricted here)
   if (f.includes("sowi") || f.includes("philo") || f.includes("philosophie")) {
-    if (t === "markt" || t === "marktwirtschaft" || t === "preisbildung" || t === "angebot" || t === "nachfrage") {
+    if (t === "markt" || t === "markt-sim" || t === "marktwirtschaft" || t === "preisbildung" || t === "angebot" || t === "nachfrage") {
       return (
         <div className="my-3 p-3.5 border border-[var(--line)] bg-[var(--surface)] rounded-[var(--radius)]">
           <div className="flex items-center justify-between text-xs font-mono text-[var(--accent)] mb-2 font-medium">
@@ -226,6 +252,13 @@ function renderEmbeddedTool(toolName: string, lang: Lang, fach: string) {
             <span className="text-[var(--text-meta)] text-[var(--gray)]">SoWi (Wirtschaft)</span>
           </div>
           <MarktMechanismusSim lang={lang} />
+        </div>
+      );
+    }
+    if (t === "gini" || t === "gini-allocator" || t === "lorenz" || t === "verteilung" || t === "ungleichheit") {
+      return (
+        <div className="my-3 p-3.5 border border-[var(--line)] bg-[var(--surface)] rounded-[var(--radius)]">
+          <GiniAllocatorSim lang={lang} />
         </div>
       );
     }
@@ -277,7 +310,7 @@ function renderEmbeddedTool(toolName: string, lang: Lang, fach: string) {
 
   // 7. MUSIK & SPORT TOOLS
   if (f.includes("musik") || f.includes("sport") || f.includes("muendl")) {
-    if (t === "kinematik" || t === "bewegung") {
+    if (t === "kinematik" || t === "kinematik-lab" || t === "bewegung" || t === "weitsprung-sim" || t === "weitsprung" || t === "schiefe-ebene") {
       return (
         <div className="my-3 p-3.5 border border-[var(--line)] bg-[var(--surface)] rounded-[var(--radius)]">
           <div className="flex items-center justify-between text-xs font-mono text-[var(--accent)] mb-2 font-medium">
