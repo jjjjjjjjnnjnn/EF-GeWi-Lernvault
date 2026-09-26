@@ -75,6 +75,30 @@ function extractValue(text: string, prefix: string): string {
   return match ? match[1].trim() : "";
 }
 
+function resolveStepTitle(stepNum: number, typ: SchrittTyp, customTitle?: string): string {
+  if (customTitle && customTitle.trim().length > 1) {
+    return customTitle.trim();
+  }
+  switch (stepNum) {
+    case 1: return "Ziele & Phänomen-Einstieg";
+    case 2: return "Fachbegriffe & Pre-Training";
+    case 3: return "Kernkonzept & Wirkungsmodell";
+    case 4: return "Interaktives Experiment & Praxis";
+    case 5: return "Verfahrensvergleich & Abgrenzung";
+    case 6: return "Verständnisprüfung (Self-Check)";
+    case 7: return "Klausur-Transfer & Szenario";
+    case 8: return "Takeaway & Reflexion";
+    default:
+      switch (typ) {
+        case "entdecken": return "Erkundung & Konzept";
+        case "ausprobieren": return "Interaktive Praxis";
+        case "check": return "Verständnisprüfung";
+        case "szenario": return "Klausurtransfer";
+        case "muendlich": return "Mündliche Prüfung";
+      }
+  }
+}
+
 export function parseReiseFile(path: string, raw: string): Reise | null {
   const { meta, body } = parseFrontmatter(raw);
   const fach = meta.fach?.trim() ?? "";
@@ -86,9 +110,9 @@ export function parseReiseFile(path: string, raw: string): Reise | null {
   const xp = Number(meta.xp) || 100;
   const datum = meta.datum?.trim();
 
-  // Split steps by "## Schritt N — <typ>"
-  const stepRegex = /##\s*Schritt\s*(\d+)\s*[-—]\s*(\w+)/gi;
-  const matches: { index: number; stepNum: number; typ: SchrittTyp; header: string }[] = [];
+  // Split steps by "## Schritt N — <typ>[: <customTitle>]"
+  const stepRegex = /##\s*Schritt\s*(\d+)\s*[-—]\s*(\w+)(?:[:：]\s*([^\n\r]+))?/gi;
+  const matches: { index: number; stepNum: number; typ: SchrittTyp; header: string; customTitle?: string }[] = [];
   let m: RegExpExecArray | null;
 
   while ((m = stepRegex.exec(body)) !== null) {
@@ -107,6 +131,7 @@ export function parseReiseFile(path: string, raw: string): Reise | null {
       stepNum: Number(m[1]),
       typ,
       header: m[0],
+      customTitle: m[3]?.trim(),
     });
   }
 
@@ -126,7 +151,7 @@ export function parseReiseFile(path: string, raw: string): Reise | null {
       schritte.push({
         typ: "entdecken",
         stepNumber: cur.stepNum,
-        title: "Entdecken · 知识讲解",
+        title: resolveStepTitle(cur.stepNum, "entdecken", cur.customTitle),
         rawText: content,
         blocks: parseBody(content),
         toolId,
@@ -139,7 +164,7 @@ export function parseReiseFile(path: string, raw: string): Reise | null {
       schritte.push({
         typ: "ausprobieren",
         stepNumber: cur.stepNum,
-        title: "Ausprobieren · 动手实操",
+        title: resolveStepTitle(cur.stepNum, "ausprobieren", cur.customTitle),
         aufgabe,
         hilfe: hilfe || undefined,
         antwort: antwort || undefined,
@@ -163,7 +188,7 @@ export function parseReiseFile(path: string, raw: string): Reise | null {
       schritte.push({
         typ: "check",
         stepNumber: cur.stepNum,
-        title: "Check · 过关自测",
+        title: resolveStepTitle(cur.stepNum, "check", cur.customTitle),
         items,
       });
     } else if (cur.typ === "szenario") {
@@ -174,7 +199,7 @@ export function parseReiseFile(path: string, raw: string): Reise | null {
       schritte.push({
         typ: "szenario",
         stepNumber: cur.stepNum,
-        title: "Szenario · 场景实战",
+        title: resolveStepTitle(cur.stepNum, "szenario", cur.customTitle),
         rolle,
         situation,
         rubric,
@@ -189,7 +214,7 @@ export function parseReiseFile(path: string, raw: string): Reise | null {
       schritte.push({
         typ: "muendlich",
         stepNumber: cur.stepNum,
-        title: "Mündlich · 口述模拟",
+        title: resolveStepTitle(cur.stepNum, "muendlich", cur.customTitle),
         ziehung,
         zeitSec,
         selbstcheck,
