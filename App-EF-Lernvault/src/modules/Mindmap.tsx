@@ -1,8 +1,8 @@
-import { useMemo, useState } from "react";
+import { useMemo } from "react";
 import { notes as mockNotes } from "../data";
 import { getFach } from "../fach";
 import { VaultGraph } from "../engine/vaultGraph";
-import { getCurriculumTreeForFach, CURRICULUM_TREES } from "../engine/curriculumTree";
+
 import type { VaultNote } from "../vault/parser";
 import type { Lang } from "../i18n";
 
@@ -54,8 +54,7 @@ export default function Mindmap({
   onSubjectChange?: (fach: string) => void;
   onJumpToLibrary?: (query: string, fach?: string, noteId?: string) => void;
 }) {
-  const [showCurriculumMap, setShowCurriculumMap] = useState<boolean>(true);
-  const currentCurriculum = selectedFach && selectedFach !== "alle" ? getCurriculumTreeForFach(selectedFach) : null;
+
 
   const notesList = useMemo<MindmapNote[]>(() => {
     if (vaultNotes && vaultNotes.length > 0) {
@@ -255,181 +254,6 @@ export default function Mindmap({
             })}
           </div>
 
-          <button
-            type="button"
-            onClick={() => setShowCurriculumMap(!showCurriculumMap)}
-            className="flex items-center gap-1 rounded-[var(--radius)] border border-[var(--line)] bg-[var(--surface)] px-2.5 py-0.5 font-sans text-xs text-[var(--ink)] hover:bg-[var(--surface-hover)] transition-colors cursor-pointer"
-          >
-            <span className="font-mono text-xs text-[var(--gray)] font-semibold">
-              {showCurriculumMap ? "[-]" : "[+]"}
-            </span>
-            <span>
-              {lang === "de"
-                ? (selectedFach === "alle" ? "10 Fächer Lernbäume" : `${selectedFach}-Lernbaum`)
-                : (selectedFach === "alle" ? "10门学科大纲学习树" : `${selectedFach} 课程学习树`)}
-            </span>
-          </button>
-        </div>
-      )}
-
-      {showCurriculumMap && (
-        <div className="space-y-4">
-          {currentCurriculum ? (
-            <div className="rounded-[var(--radius)] border border-[var(--line)] bg-[var(--surface)] p-4 space-y-4">
-              <div className="flex flex-wrap items-center justify-between gap-2 border-b border-[var(--line)] pb-2.5">
-                <div>
-                  <div className="flex items-center gap-2">
-                    <span className="rounded-[var(--radius)] bg-[var(--paper)] px-1.5 py-0.5 font-mono text-xs font-semibold uppercase tracking-wider text-[var(--ink)] border border-[var(--line)]">
-                      {currentCurriculum.domain.toUpperCase()}
-                    </span>
-                    <span className="font-mono text-xs text-[var(--gray)]">
-                      {currentCurriculum.klpReferenz}
-                    </span>
-                  </div>
-                  <h3 className="mt-1 font-serif text-base font-semibold text-[var(--ink)]">
-                    {lang === "de" ? currentCurriculum.nameDE : currentCurriculum.nameZH} · {lang === "de" ? "Kompetenz-Lernlandkarte" : "课程学习树与知识能力地图"}
-                  </h3>
-                </div>
-                <div className="font-mono text-xs text-[var(--gray)]">
-                  {currentCurriculum.inhaltsfelder.length} {lang === "de" ? "Inhaltsfelder" : "内容领域"}
-                </div>
-              </div>
-
-              <div className="text-xs text-[var(--ink)] bg-[var(--paper)] p-2.5 rounded-[var(--radius)] border border-[var(--line)]">
-                <span className="font-mono font-semibold text-[var(--gray)] block mb-0.5">
-                  {lang === "de" ? "Klausur-Schwerpunkt:" : "考试题型与考查重点："}
-                </span>
-                <p className="font-sans text-[var(--ink)]">
-                  {lang === "de" ? currentCurriculum.klausurFokusDE : currentCurriculum.klausurFokusZH}
-                </p>
-              </div>
-
-              <div className="grid grid-cols-1 gap-3 md:grid-cols-2 lg:grid-cols-3">
-                {currentCurriculum.inhaltsfelder.map((field) => (
-                  <div
-                    key={field.code}
-                    className="flex flex-col rounded-[var(--radius)] border border-[var(--line)] bg-[var(--paper)] p-3"
-                  >
-                    <div className="border-b border-[var(--line)] pb-2">
-                      <div className="flex items-center justify-between">
-                        <span className="rounded-[var(--radius)] bg-[var(--paper-subtle)] px-1.5 py-0.5 font-mono text-xs font-semibold text-[var(--ink)] border border-[var(--line)]">
-                          {field.code}
-                        </span>
-                        <span className="font-mono text-xs text-[var(--gray)]">
-                          {field.milestones.length} {lang === "de" ? "Stufen" : "阶段"}
-                        </span>
-                      </div>
-                      <h4 className="mt-1 font-serif text-xs font-semibold text-[var(--ink)]">
-                        {lang === "de" ? field.titleDE : field.titleZH}
-                      </h4>
-                      <p className="mt-0.5 font-sans text-xs text-[var(--gray)] line-clamp-2">
-                        {lang === "de" ? field.leitgedankeDE : field.leitgedankeZH}
-                      </p>
-                    </div>
-
-                    <div className="mt-2.5 flex-1 space-y-2">
-                      {field.milestones.map((ms) => {
-                        const matched = notesList.filter(
-                          (n) =>
-                            n.fach.toLowerCase() === (selectedFach ?? "").toLowerCase() &&
-                            ms.noteKeywords.some(
-                              (kw) =>
-                                n.thema.toLowerCase().includes(kw) ||
-                                n.id.toLowerCase().includes(kw) ||
-                                n.content.toLowerCase().includes(kw)
-                            )
-                        );
-                        return (
-                          <div
-                            key={ms.stufe}
-                            className="rounded-[var(--radius)] border border-[var(--line)] bg-[var(--surface)] p-2 text-xs"
-                          >
-                            <div className="flex items-center justify-between text-xs font-mono text-[var(--gray)]">
-                              <span>{lang === "de" ? ms.stufeLabelDE : ms.stufeLabelZH}</span>
-                              <span className="text-[var(--ink)]">{ms.operatoren.slice(0, 2).join(" · ")}</span>
-                            </div>
-                            <div className="mt-0.5 font-sans text-xs font-medium text-[var(--ink)]">
-                              {lang === "de" ? ms.titleDE : ms.titleZH}
-                            </div>
-                            <div className="mt-0.5 font-sans text-xs text-[var(--gray)]">
-                              {lang === "de" ? ms.leitfrageDE : ms.leitfrageZH}
-                            </div>
-
-                            {matched.length > 0 && (
-                              <div className="mt-1.5 flex flex-wrap gap-1 border-t border-[var(--line)] pt-1.5">
-                                {matched.map((n) => (
-                                  <button
-                                    key={n.id}
-                                    type="button"
-                                    onClick={() => onJumpToLibrary?.(n.thema, n.fach, n.id)}
-                                    className="group inline-flex items-center gap-1 rounded-[var(--radius)] border border-[var(--line)] bg-[var(--paper)] px-1.5 py-0.5 text-left font-sans text-xs text-[var(--ink)] hover:border-[var(--ink)] transition-colors cursor-pointer"
-                                  >
-                                    <span className="truncate max-w-[150px]">{n.thema}</span>
-                                    <span className="font-mono text-xs text-[var(--gray)] group-hover:text-[var(--ink)]">{"->"}</span>
-                                  </button>
-                                ))}
-                              </div>
-                            )}
-                          </div>
-                        );
-                      })}
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-          ) : (
-            <div className="rounded-[var(--radius)] border border-[var(--line)] bg-[var(--surface)] p-4 space-y-3">
-              <div className="flex items-center justify-between border-b border-[var(--line)] pb-2">
-                <span className="font-serif text-sm font-semibold text-[var(--ink)]">
-                  {lang === "de" ? "Gymnasium EF · 10 Fächer Curriculum-Lernbäume" : "高中阶段 (EF) · 10门学科大纲学习树总览"}
-                </span>
-                <span className="font-mono text-xs text-[var(--gray)]">
-                  {lang === "de" ? "Fach anklicken für Detail-Lernbaum" : "点击学科卡片可直达专属学习地图"}
-                </span>
-              </div>
-              <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
-                {Object.values(CURRICULUM_TREES).map((tree) => {
-                  const count = notesList.filter(
-                    (n) => n.fach.toLowerCase() === tree.fach.toLowerCase()
-                  ).length;
-                  return (
-                    <button
-                      key={tree.fach}
-                      type="button"
-                      onClick={() => onSubjectChange?.(tree.fach)}
-                      className="group flex flex-col text-left rounded-[var(--radius)] border border-[var(--line)] bg-[var(--paper)] p-3 transition-all hover:border-[var(--ink)] cursor-pointer"
-                    >
-                      <div className="flex items-center justify-between border-b border-[var(--line)] pb-1.5">
-                        <span className="font-mono text-xs uppercase font-semibold text-[var(--accent)]">
-                          {tree.domain.toUpperCase()}
-                        </span>
-                        <span className="font-mono text-xs text-[var(--gray)]">
-                          {count} {lang === "de" ? "Notizen" : "笔记"}
-                        </span>
-                      </div>
-                      <h4 className="mt-1.5 font-serif text-xs font-semibold text-[var(--ink)] group-hover:underline">
-                        {lang === "de" ? tree.nameDE : tree.nameZH}
-                      </h4>
-                      <p className="mt-1 font-sans text-xs text-[var(--gray)] line-clamp-2">
-                        {lang === "de" ? tree.klausurFokusDE : tree.klausurFokusZH}
-                      </p>
-                      <div className="mt-2 flex flex-wrap gap-1 border-t border-[var(--line)] pt-1.5 text-xs font-mono text-[var(--gray)]">
-                        {tree.inhaltsfelder.map((field) => (
-                          <span
-                            key={field.code}
-                            className="rounded-[var(--radius)] bg-[var(--paper-subtle)] px-1 py-0.5 border border-[var(--line)]"
-                          >
-                            {field.code}
-                          </span>
-                        ))}
-                      </div>
-                    </button>
-                  );
-                })}
-              </div>
-            </div>
-          )}
         </div>
       )}
 

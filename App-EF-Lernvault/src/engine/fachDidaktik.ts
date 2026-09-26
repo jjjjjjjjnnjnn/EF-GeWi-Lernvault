@@ -8,7 +8,9 @@ export type DidaktikToolId =
   | "highlighter"
   | "tangent"
   | "formula"
-  | "oralTimer";
+  | "oralTimer"
+  | "markt"
+  | "kinematik";
 
 export interface FachDidaktikProfile {
   readonly fach: FachId;
@@ -32,7 +34,7 @@ export const FACH_DIDAKTIK: Record<FachId, FachDidaktikProfile> = {
     coreMethodZH: "标准导向价值裁决（效率与合法性评价）、宏观与微观社会理论应用",
     primaryOperators: ["darstellen", "analysieren", "beurteilen", "erörtern"],
     examFormat: "klausur",
-    recommendedTools: ["balance", "lego"],
+    recommendedTools: ["markt", "balance", "lego"],
   },
   Philosophie: {
     fach: "Philosophie",
@@ -87,7 +89,7 @@ export const FACH_DIDAKTIK: Record<FachId, FachDidaktikProfile> = {
     coreMethodZH: "物理现象到数学模型、受力分析图、严格量纲与单位换算检查",
     primaryOperators: ["erklären", "berechnen", "herleiten", "skizzieren"],
     examFormat: "klausur",
-    recommendedTools: ["formula"],
+    recommendedTools: ["kinematik", "formula"],
   },
   Chemie: {
     fach: "Chemie",
@@ -147,5 +149,5 @@ export function getToolsForFach(fach: string): readonly DidaktikToolId[] {
   const profile = getFachDidaktik(fach);
   if (profile) return profile.recommendedTools;
   // Fallback for "alle": return core representational set
-  return ["lego", "balance", "highlighter", "tangent", "formula", "oralTimer"];
+  return ["lego", "balance", "markt", "highlighter", "tangent", "kinematik", "formula", "oralTimer"];
 }

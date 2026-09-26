@@ -7,6 +7,7 @@ export interface SchrittBase {
   typ: SchrittTyp;
   stepNumber: number;
   title: string;
+  toolId?: string;
 }
 
 export interface SchrittEntdecken extends SchrittBase {
@@ -69,7 +70,7 @@ export interface Reise {
 }
 
 function extractValue(text: string, prefix: string): string {
-  const reg = new RegExp(`^${prefix}:?\\s*(.*)$`, "im");
+  const reg = new RegExp(`^${prefix}(?:\\s*\\([^)]*\\))?[:：]?\\s*(.*)$`, "im");
   const match = text.match(reg);
   return match ? match[1].trim() : "";
 }
@@ -118,6 +119,9 @@ export function parseReiseFile(path: string, raw: string): Reise | null {
     const nextIndex = i + 1 < matches.length ? matches[i + 1].index : body.length;
     const content = body.slice(cur.index + cur.header.length, nextIndex).trim();
 
+    const toolMatch = /\[Werkzeug:\s*([a-zA-Z0-9_\-]+)\]/i.exec(content);
+    const toolId = toolMatch ? toolMatch[1] : undefined;
+
     if (cur.typ === "entdecken") {
       schritte.push({
         typ: "entdecken",
@@ -125,11 +129,13 @@ export function parseReiseFile(path: string, raw: string): Reise | null {
         title: "Entdecken · 知识讲解",
         rawText: content,
         blocks: parseBody(content),
+        toolId,
       });
     } else if (cur.typ === "ausprobieren") {
-      const aufgabe = extractValue(content, "AUFGABE") || content;
+      const aufgabeMatch = content.match(/AUFGABE(?:\s*\([^)]*\))?[:：]?\s*([\s\S]*?)(?=(?:\n(?:HILFE|ANTWORT|MUSTERLÖSUNG|MUSTERLOESUNG|KLAUSUR-SATZ)[:：]|$))/i);
+      const aufgabe = aufgabeMatch ? aufgabeMatch[1].trim() : (extractValue(content, "AUFGABE") || content);
       const hilfe = extractValue(content, "HILFE");
-      const antwort = extractValue(content, "ANTWORT");
+      const antwort = extractValue(content, "ANTWORT") || extractValue(content, "MUSTERLÖSUNG") || extractValue(content, "MUSTERLOESUNG");
       schritte.push({
         typ: "ausprobieren",
         stepNumber: cur.stepNum,
@@ -137,6 +143,7 @@ export function parseReiseFile(path: string, raw: string): Reise | null {
         aufgabe,
         hilfe: hilfe || undefined,
         antwort: antwort || undefined,
+        toolId,
       });
     } else if (cur.typ === "check") {
       const items: CheckItem[] = [];

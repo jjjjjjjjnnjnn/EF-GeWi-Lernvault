@@ -8,6 +8,8 @@ import { TextHighlighter } from "../components/pedagogy/TextHighlighter";
 import { TangentSlider } from "../components/pedagogy/TangentSlider";
 import FormulaScaffold from "../components/pedagogy/FormulaScaffold";
 import OralExamTimer from "../components/pedagogy/OralExamTimer";
+import { MarktMechanismusSim } from "../components/pedagogy/MarktMechanismusSim";
+import { KinematikSim } from "../components/pedagogy/KinematikSim";
 
 interface WerkzeugeProps {
   lang: Lang;
@@ -59,6 +61,20 @@ const TOOLS_CONFIG: ToolMeta[] = [
     ),
   },
   {
+    id: "markt",
+    nameDE: "Markt-Simulator",
+    nameZH: "供求沙盘",
+    descDE: "Angebot, Nachfrage & Preisbildung: Simuliere Kurvenverschiebungen, Mindestpreise & Wohlfahrtseffekte.",
+    descZH: "供求曲线与价格机制：动态模拟供求曲线平移、最高/最低限价干预与市场出清状态。",
+    badgeDE: "SoWi (Wirtschaft)",
+    badgeZH: "社会科学 (经济)",
+    icon: (
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" className="h-4 w-4">
+        <path d="M2 14h12M4 11l4-4 2 2 4-5" />
+      </svg>
+    ),
+  },
+  {
     id: "highlighter",
     nameDE: "Text-Dekonstruierer",
     nameZH: "文本解构",
@@ -83,6 +99,20 @@ const TOOLS_CONFIG: ToolMeta[] = [
     icon: (
       <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" className="h-4 w-4">
         <path d="M2 14L14 2M2 14h12M2 14V2" />
+      </svg>
+    ),
+  },
+  {
+    id: "kinematik",
+    nameDE: "Kinematik-Labor",
+    nameZH: "运动实验",
+    descDE: "Bewegungsgesetze: Erforsche s(t), v(t) & a(t) für gleichförmige und beschleunigte Bewegungen.",
+    descZH: "运动学仿真物理沙盘：探索位移 s(t)、速度 v(t) 与加速度 a(t) 的运动规律与实时曲线。",
+    badgeDE: "Physik (Mechanik)",
+    badgeZH: "物理 (力学)",
+    icon: (
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" className="h-4 w-4">
+        <path d="M2 13.5h12M4 9l3-3 3 3 4-5" />
       </svg>
     ),
   },
@@ -319,6 +349,13 @@ export default function Werkzeuge({
               />
             )}
 
+            {activeTool === "markt" && (
+              <MarktMechanismusSim
+                lang={lang}
+                onFormulaGenerated={(sentence) => setLatestOutput(sentence)}
+              />
+            )}
+
             {activeTool === "highlighter" && (
               <TextHighlighter
                 lang={lang}
@@ -330,6 +367,13 @@ export default function Werkzeuge({
               <TangentSlider
                 lang={lang}
                 onFormulaGenerated={(formula) => setLatestOutput(formula)}
+              />
+            )}
+
+            {activeTool === "kinematik" && (
+              <KinematikSim
+                lang={lang}
+                onFormulaGenerated={(sentence) => setLatestOutput(sentence)}
               />
             )}
 

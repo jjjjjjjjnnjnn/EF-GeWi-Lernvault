@@ -30,6 +30,35 @@ import { TextHighlighter } from "../components/pedagogy/TextHighlighter";
 import { TangentSlider } from "../components/pedagogy/TangentSlider";
 import FormulaScaffold from "../components/pedagogy/FormulaScaffold";
 import OralExamTimer from "../components/pedagogy/OralExamTimer";
+import { MarktMechanismusSim } from "../components/pedagogy/MarktMechanismusSim";
+import { KinematikSim } from "../components/pedagogy/KinematikSim";
+
+export function getAutoToolForContext(fach: string, thema: string): string | null {
+  const f = (fach || "").toLowerCase();
+  const th = (thema || "").toLowerCase();
+  if (f === "mathe" || th.includes("ableitung") || th.includes("sekante") || th.includes("tangente") || th.includes("funktion")) {
+    return "tangent";
+  }
+  if (f === "sowi" || th.includes("markt") || th.includes("wirtschaft") || th.includes("preis")) {
+    return "markt";
+  }
+  if (f === "physik" || th.includes("bewegung") || th.includes("kraft") || th.includes("kinematik") || th.includes("beschleunigung")) {
+    return "kinematik";
+  }
+  if (f === "philosophie" || th.includes("ethik") || th.includes("moral") || th.includes("urteil") || th.includes("gerechtigkeit")) {
+    return "balance";
+  }
+  if (f === "deutsch" || f === "englisch" || th.includes("analyse") || th.includes("text") || th.includes("gedicht")) {
+    return "highlighter";
+  }
+  if (f === "chemie" || f === "bio") {
+    return "formula";
+  }
+  if (f.includes("muendl") || f === "musik" || f === "sport") {
+    return "oral-timer";
+  }
+  return null;
+}
 
 function renderEmbeddedTool(toolName: string, lang: Lang, fach: string) {
   const t = toolName.toLowerCase().trim();
@@ -40,7 +69,29 @@ function renderEmbeddedTool(toolName: string, lang: Lang, fach: string) {
           <span>{lang === "de" ? "Interaktives Werkzeug: Tangenten-Simulator" : "交互教具：割线逼近切线导数沙盘"}</span>
           <span className="text-[var(--text-meta)] text-[var(--gray)]">Mathe (Analysis)</span>
         </div>
-        <TangentSlider />
+        <TangentSlider lang={lang} />
+      </div>
+    );
+  }
+  if (t === "markt" || t === "marktwirtschaft" || t === "angebot" || t === "nachfrage" || t === "preisbildung") {
+    return (
+      <div className="my-3 p-3.5 border border-[var(--line)] bg-[var(--surface)] rounded-[var(--radius)]">
+        <div className="flex items-center justify-between text-xs font-mono text-[var(--accent)] mb-2 font-medium">
+          <span>{lang === "de" ? "Interaktives Werkzeug: Markt-Simulator" : "交互教具：供求均衡与价格形成沙盘"}</span>
+          <span className="text-[var(--text-meta)] text-[var(--gray)]">SoWi (Wirtschaft)</span>
+        </div>
+        <MarktMechanismusSim lang={lang} />
+      </div>
+    );
+  }
+  if (t === "kinematik" || t === "physik" || t === "bewegung" || t === "beschleunigung") {
+    return (
+      <div className="my-3 p-3.5 border border-[var(--line)] bg-[var(--surface)] rounded-[var(--radius)]">
+        <div className="flex items-center justify-between text-xs font-mono text-[var(--accent)] mb-2 font-medium">
+          <span>{lang === "de" ? "Interaktives Werkzeug: Kinematik-Labor" : "交互教具：直线运动与速度加速度实验室"}</span>
+          <span className="text-[var(--text-meta)] text-[var(--gray)]">Physik (Mechanik)</span>
+        </div>
+        <KinematikSim lang={lang} />
       </div>
     );
   }
@@ -809,7 +860,8 @@ export default function ReiseModule({
                 {(() => {
                   const raw = (currentSchritt as SchrittEntdecken).rawText || "";
                   const match = /\[Werkzeug:\s*([a-zA-Z0-9_\-]+)\]/i.exec(raw);
-                  return match ? renderEmbeddedTool(match[1], lang, activeCourse.fach) : null;
+                  const tool = currentSchritt.toolId || (match ? match[1] : null);
+                  return tool ? renderEmbeddedTool(tool, lang, activeCourse.fach) : null;
                 })()}
 
                 {/* D2: KI-erklaerung (auto) + rueckfragen */}
@@ -883,6 +935,10 @@ export default function ReiseModule({
               const aufgabe = (currentSchritt as SchrittAusprobieren).aufgabe || "";
               const match = /\[Werkzeug:\s*([a-zA-Z0-9_\-]+)\]/i.exec(aufgabe);
               const cleanAufgabe = aufgabe.replace(/\[Werkzeug:\s*[a-zA-Z0-9_\-]+\]/gi, "").trim();
+              const tool =
+                (currentSchritt as SchrittAusprobieren).toolId ||
+                (match ? match[1] : null) ||
+                getAutoToolForContext(activeCourse.fach, activeCourse.thema);
 
               return (
                 <div className="space-y-5">
@@ -890,7 +946,7 @@ export default function ReiseModule({
                     {cleanAufgabe}
                   </div>
 
-                  {match && renderEmbeddedTool(match[1], lang, activeCourse.fach)}
+                  {tool && renderEmbeddedTool(tool, lang, activeCourse.fach)}
 
                 {(currentSchritt as SchrittAusprobieren).hilfe && (
                   <div>
