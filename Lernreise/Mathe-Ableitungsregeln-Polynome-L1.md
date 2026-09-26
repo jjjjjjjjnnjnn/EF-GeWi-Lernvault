@@ -79,6 +79,7 @@ BEISPIEL（正确例题示范，含教具操作与解答）：
 [Werkzeug: formula]
 
 AUFGABE (berechnen, AFB II)：Gegeben ist die ganzrationale Funktion $f(x) = 4x^3 - 5x^2 + 7x - 2$. Bestimmen Sie $f'(x)$ sowie die lokale Aenderungsrate an der Stelle $x_0 = 2$.
+(Tipp: Du kannst deine Rechnung direkt eintippen, das Werkzeug nutzen oder deinen handschriftlichen Rechenweg per Foto/Clipboard hochladen und automatisch transkribieren lassen.)
 
 HILFE:
 1. Schritt 1: Jeden Summanden einzeln nach der Potenzregel ableiten (Exponent nach vorne, Exponent minus eins).
@@ -130,6 +131,7 @@ Klausur-Satz: `Potenz-, Faktor- und Summenregel gelten fuer ganzrationale Funkti
 
 ROLLE: Du bist Schueler-Tutor im Mathe-Foerderkurs der EF.
 SITUATION: Ein Mitschueler hat $f(x) = 4x^3 - 5x^2 + 7x - 2$ abgeleitet und als Ergebnis $12x^3 - 10x^2 + 7x$ herausbekommen. Erklaere ihm in einer zusammenhaengenden Darstellung (ca. 150 Woerter), welcher Regelverstoss vorliegt, fuehre die korrekte Ableitung vor und erlaeutere den Unterschied zwischen berechnen und nachweisen.
+(Tipp: Du kannst deine Erklärung handschriftlich auf Papier verfassen und als Foto oder Screenshot hochladen, um sie mit den Bewertungskriterien pruefen zu lassen.)
 RUBRIC (30 XP): Benennung des Fehlers — Exponent nicht verringert, Konstante nicht beachtet (5 XP) | Korrekte gliedweise Ableitung $f'(x) = 12x^2 - 10x + 7$ (10 XP) | Begruendung mit Potenz-, Faktor- und Summenregel (10 XP) | Abgrenzung berechnen gegen nachweisen (5 XP).
 
 ## Schritt 8 — entdecken
