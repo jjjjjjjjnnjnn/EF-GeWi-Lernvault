@@ -17,41 +17,71 @@ version: Lesson-v3
 
 ## Schritt 1 — entdecken
 
-ZIELE (3 Ziele, in 15 Minuten erreichbar):
+ZIELE (drei messbare Ziele dieser Lektion):
 
-1. Du erklaerst die drei Systeme nach Substrat, Geschwindigkeit und Dauer: Phosphatspeicher wirken am schnellsten, aber nur wenige Sekunden; anaerobe Glykolyse liegt in der Mitte; aerobe Oxidation wirkt am langsamsten, aber ueber Stunden.
-2. Du vergleichst die Systeme tabellarisch nach Leistung, Kapazitaet, Produkt und Erholung und ordnest jedem typische Sportarten zu.
-3. Du begruendest auf Deutsch, warum 100 m und Marathon an entgegengesetzten Enden des Spektrums liegen (AFB II bis III).
+1. Du kannst die **Energiebereitstellung** in einem Satz definieren und als Staffel dreier Systeme zur Wiederauffuellung von $ATP$ erklaeren.
+2. Du kannst die drei Systeme — **ATP-PCr, anaerob-laktazid, aerob** — nach Substrat, Sauerstoff, Leistung mit $P_{max}$ und Dauer unterscheiden und mit $HF_{max}$ einordnen.
+3. Du kannst begruenden, warum $100\,m$ und Marathon an entgegengesetzten Enden liegen, und mit einem Klausur-Satz auf AFB-II-Niveau abschliessen.
+
+### Hook / Phaenomen
+
+Stell dir vor: Ein Sprinter fuehrt zweihundert Meter scheinbar muehelos, dann wird er ploetzlich still und winkt ab. Daneben laeuft ein Marathonlaeufer Stunde um Stunde gleichmaessig weiter. Beide haben Muskeln, beide haben Willen — doch ihre Motoren laufen auf voellig verschiedenem Kraftstoff. Warum bestraft der Koerper jeden Tausch in Sekunden?
+
+### Fachbegriff & Definition
+
+Die **Energiebereitstellung** ist die Wiederauffuellung von **$ATP$ als direkter Energiewaehrung des Muskels** durch drei Systeme in Staffel. Das **ATP-PCr-System** liefert hoechste Leistung ohne Sauerstoff fuer Sekunden, die **anaerobe Glykolyse** liefert mittlere Leistung mit Laktat fuer ein bis zwei Minuten, die **aerobe Oxidation** liefert kleine Leistung mit Sauerstoff ueber Stunden. Kurz: Der Muskel kennt nur **$ATP$**, die Systeme sind seine **Tankstellen**.
+
+### Wirkungsgefuege / Modell
+
+Der Kernmechanismus laeuft in drei Stufen: **Start, Uebergang, Dauer**. Erstens zuendet $ATP-PCr$ fuer $0-6\,s$ mit $P_{max}$ und $HF$ steil zu $HF_{max}$. Zweitens uebernimmt laktazid fuer $30-120\,s$ mit mittlerer Leistung und Laktat als Preis. Drittens traegt aerob mit Sauerstoff ueber Stunden bei $65-85\% HF_{max}$. Faellt der aerobe Anteil durch zu schnelles Angehen aus, staut sich Laktat und hemmt die Enzyme; bleibt der phosphatgestuetzte Start ungenutzt, fehlt der zweite Rennhaelfte die Geschwindigkeit.
 
 Klausur-Satz: `Die drei Systeme ATP-PCr, anaerob-laktazid und aerob unterscheiden sich in Leistung, Kapazitaet und Dauer der Energiebereitstellung.`
 
 ## Schritt 2 — entdecken
 
-PRETRAINING Begriffsbox (5 Kernbegriffe, zuerst dreimal lesen, dann aus dem Gedaechtnis abfragen):
+PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
-- ATP: Direkte Energiewaehrung des Muskels; der Vorrat reicht nur fuer wenige Sekunden Maximalleistung.
-- ATP-PCr-System: Schnelle ATP-Erneuerung aus Kreatinphosphat ohne Sauerstoff und ohne Laktat; traegt den 100-m-Start.
-- Anaerob-laktazide Glykolyse: Zuckerabbau ohne Sauerstoff mit Laktatbildung; mittlere Geschwindigkeit und Dauer, traegt die 400-m-Strecke.
-- Aerobe Oxidation: Vollstaendige Verbrennung von Zucker und Fett mit Sauerstoff; langsam, aber mit riesiger Kapazitaet, traegt den Marathon.
-- Laktat: Produkt der anaeroben Glykolyse; hohe Werte hemmen Enzyme und erzwingen Tempodrosselung.
+### Hook / Phaenomen
+
+„Ohne Sauerstoff geht nichts." Dieser Satz klingt logisch — und ist doch falsch. Denn der schnellste Sprint lebt gerade ohne Sauerstoff, und auch im Marathon entsteht staendig Laktat. Wer Systeme verwechselt, trainiert am Ziel vorbei. Diese fuenf Begriffe sortieren Kraftstoff, Motor und Abgas.
+
+### Fachbegriffe & Definitionen
+
+- **$ATP$:** Direkte Energiewaehrung des Muskels fuer jede Kontraktion. Der Speicher reicht nur fuer wenige Sekunden Maximalleistung und muss staendig nachgefuellt werden.
+- **ATP-PCr-System:** Schnellste Nachfuellung aus **Kreatinphosphat** ohne $O_2$ und ohne Laktat fuer $0-8\,s$ mit $P_{max}$. Es traegt Start und Sprung bei $HF$ im Sprint zu $HF_{max}$.
+- **Anaerob-laktazide Glykolyse:** Zuckerabbau aus Glukose ohne $O_2$ mit **Laktat** als Produkt fuer $30-120\,s$. Sie liefert mittlere Leistung fuer $400\,m$ und kurze Intervalle.
+- **Aerobe Oxidation:** Vollstaendige Verbrennung von Glukose plus Fett mit $O_2$ zu $CO_2$ plus $H_2O$ plus viel $ATP$. Sie liefert kleine Leistung bei $65-85\% HF_{max}$ fast unbegrenzt ueber Stunden.
+- **Laktat und $pH$:** Produkt der laktaziden Glykolyse, das bei hohen Werten den $pH$ senkt, Schluesselenzyme hemmt und Tempodrosselung erzwingt. Es ist Massstab der Tempogestaltung.
+
+### Wirkungsgefuege / Modell
+
+Die Begriffe greifen ineinander: **$ATP$** wird verbraucht, **PCr** fuellt in Sekunden ohne $O_2$ nach, **laktazid** ueberbrueckt Minuten mit Laktat als Preis, **aerob** traegt Stunden mit $O_2$ bei moderatem $\% HF_{max}$, **Laktat und $pH$** begrenzen die mittlere Zone. Wer in der Klausur zuordnet, legt deshalb zuerst die Dauer auf die Zeitachse und liest dann das dominante System ab — so gehoeren $100\,m$ nach links und Marathon nach rechts.
 
 Klausur-Satz: `ATP ist die direkte Waehrung der Muskelarbeit, die drei Systeme fuellen es unterschiedlich schnell wieder auf.`
 
 ## Schritt 3 — entdecken
 
-ENTDECKEN (1 Konzept + 1 Textdiagramm):
+TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
-Der Muskel akzeptiert nur ATP, doch der Speicher ist klein. Drei Linien uebernehmen als Staffel nach Geschwindigkeit. Nach dem Startsignal traegt zuerst das Phosphatsystem fuer etwa 6 Sekunden, danach die anaerobe Glykolyse fuer etwa 30 bis 120 Sekunden mit Laktat als Preis, danach die aerobe Oxidation mit Sauerstoff ueber Stunden. Die Merkregel lautet schnell und klein und sauber, mittel und sauer, langsam und gross und ausdauernd: Je hoeher die Leistung, desto kuerzer die Dauer. 100 m laufen fast ohne Sauerstoff, der Marathon fast vollstaendig mit Sauerstoff, Mittelstrecken sind Mischzonen.
+### Hook / Phaenomen
+
+Ein Marathonlaeufer geht zu schnell an, fuehlt sich bei Kilometer zehn noch stark — und bricht bei Kilometer dreissig ein. Kein Einbruch der Moral, sondern der Chemie: Frueh gesammeltes Laktat, geleerte Glykogenspeicher, gedrosseltes Tempo. Dieselben Beine, derselbe Wille, voellig anderes Rennen. Wie erklaert die Zeitachse diesen Einbruch?
+
+### Fachbegriff & Definition
+
+Die **Zeitachsen-Staffel** ist das Ordnungsmodell der drei Systeme nach Dauer: **$0-8\,s$ phosphatgestuetzt** mit $P_{max}$, **$30-120\,s$ laktazid** mit Laktatstau, **darueber aerob** mit $O_2$ bei $65-85\% HF_{max}$. Sie besagt: Mit wachsender Belastungsdauer verschiebt sich der Anteil von $ATP-PCr$ ueber laktazid zu aerob. Die Merkregel lautet schnell und klein und sauber, mittel und sauer, langsam und gross und ausdauernd.
+
+### Wirkungsgefuege / Modell
+
+Denke in Kausalkette: **Dauer, Dominanz, Folge**. Erstens wird die Dauer eingetragen: $100\,m$ in $10-12\,s$ liegen links, $10\,km$ in Minuten liegen in der Mitte, Marathon ueber $2\,h$ liegt rechts. Zweitens wird die Dominanz abgelesen: links $PCr$ plus laktazider Uebergang, Mitte Mischzone, rechts fast rein aerob. Drittens wird die Folge gedeutet: Zu schnelles Angehen nutzt frueh laktazid, $Laktat$ hemmt Enzyme und leert Speicher, ab Kilometer dreissig fehlt aerober Nachschub bei hohem Tempo. Genau diese Kette traegt in der Klausur jede Sportartzuordnung.
 
 ```diagram
-  Zeitachse der Systeme (maximale Belastung):
-  0s ----6s---------40s----------120s--------> Marathon
-  | ATP-PCr | anaerob-laktazid |    aerob     |
-  | max Leistung | mittlere Leistung | kleine Leistung |
-  | mini Kapazitaet| mittlere Kapazitaet| riesige Kapazitaet |
-  | kein Laktat | viel Laktat  | kein Stau    |
-  100m = links (PCr plus laktazid), Marathon = rechts (aerob)
-  Formel: ATP-Verbrauch = PCr-Nachschub plus Glykolyse plus Oxidation
+  Staffel [PCr -> laktazid -> aerob nach Dauer]
+  0s-8s [PCr | Pmax | kein Laktat | 100m Start]
+  30s-120s [laktazid | mittel | viel Laktat | 400m]
+  >10min [aerob O2 65-85%HFmax | klein | kein Stau | Marathon]
+  Formel: ATP-Verbrauch = PCr + Glykolyse + Oxidation
+  Regel: Dauer lang -> Anteil aerob gross
 ```
 
 Klausur-Satz: `Mit wachsender Belastungsdauer verschiebt sich der Anteil von ATP-PCr ueber laktazid zu aerob.`

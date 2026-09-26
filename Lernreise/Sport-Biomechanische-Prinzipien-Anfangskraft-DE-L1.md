@@ -17,43 +17,70 @@ version: Lesson-v3
 
 ## Schritt 1 — entdecken
 
-ZIELE (3 Ziele, in 15 Minuten erreichbar):
+ZIELE (drei messbare Ziele dieser Lektion):
 
-1. Du erklaerst das Prinzip der Anfangskraft: Eine entgegengesetzte Vorbewegung vor der Hauptbewegung verlaengert den Beschleunigungsweg und erhoeht die Endgeschwindigkeit.
-2. Du deutest mit der Impulsformel $J = F mal t$ und der Arbeit $W = F mal s$, warum groessere Kraft, laengere Zeit und laengerer Weg die Abfluggeschwindigkeit steigern.
-3. Du zeigst am Gleitschritt im Kugelstossen, wie Auftakt, Angleiten und finaler Stoss Anfangsgeschwindigkeit und Beschleunigungsweg aufbauen (AFB II bis III).
+1. Du kannst das **Prinzip der Anfangskraft** in einem Satz definieren und als Verlaengerung des Beschleunigungsweges durch entgegengesetzte Vorbewegung erklaeren.
+2. Du kannst mit **Impuls $J = F \cdot t$** und **Arbeit $W = F \cdot s$** deuten, warum groessere Kraft, laengere Zeit und laengerer Weg die Abfluggeschwindigkeit $v$ steigern.
+3. Du kannst am Gleitschritt im Kugelstossen Auftakt, Angleiten und finalen Stoss gliedern und mit einem Klausur-Satz auf AFB-II-Niveau abschliessen.
+
+### Hook / Phaenomen
+
+Stell dir vor: Zwei Kugelstosser, derselbe Arm, dieselbe Kraft — doch eine Kugel fliegt fast zwei Meter weiter. Der Unterschied liegt nicht im Arm, sondern in den Beinen. Wie kann ein kleiner Schritt zurueck die Kugel weiter nach vorn bringen? Die Antwort liegt in einer Startbahn, die man erst bauen muss, bevor man sie nutzt.
+
+### Fachbegriff & Definition
+
+Das **Prinzip der Anfangskraft** besagt, dass eine **entgegengesetzte Vorbewegung vor der Hauptbewegung** den Beschleunigungsweg verlaengert und Anfangsgeschwindigkeit $v_0$ schafft. Wer vorher absenkt und angleitet, bringt den Koerperschwerpunkt bereits mit Geschwindigkeit in die Stossrichtung. Kurz: Erst **zurueck**, dann **nach vorn** — der Rueckweg erkauft den langen Vorwaertsweg.
+
+### Wirkungsgefuege / Modell
+
+Der Kernmechanismus laeuft in drei Stufen: **Ausholen, Beschleunigen, Buendeln**. Erstens schafft der Auftakt mit Absenken $v_0$ und Ausholweg. Zweitens verlaengert das Angleiten mit Beinschub $s$ und $t$ in $J = F \cdot t$ und $W = F \cdot s$. Drittens maximiert der finale Stoss mit Bein, Rumpf und Arm $F$ auf demselben langen Weg. Faellt das Angleiten aus, bleibt nur die Armlaenge als Bahn; bleibt $F$ klein, hilft auch der laengste Weg wenig.
 
 Klausur-Satz: `Das Prinzip der Anfangskraft besagt, dass eine entgegengesetzte Vorbewegung den Beschleunigungsweg verlaengert und so die Endgeschwindigkeit erhoeht.`
 
 ## Schritt 2 — entdecken
 
-PRETRAINING Begriffsbox (5 Kernbegriffe, zuerst dreimal lesen, dann aus dem Gedaechtnis abfragen):
+PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
-- Anfangskraft: Geschwindigkeit aus einer Gegenbewegung vor der Hauptbewegung; sie schafft guenstige Startbedingungen.
-- Impuls: Kraft mal Zeit ($J = F mal t$); er bestimmt die Geschwindigkeitsaenderung.
-- Beschleunigungsweg: Strecke, ueber die die Kraft wirkt; je laenger der Weg, desto groesser die Endgeschwindigkeit.
-- Angleitphase: Seitliches Gleiten im Kugelstossen als Uebergang zum finalen Stoss zum Sammeln von Geschwindigkeit.
-- Finale Stossphase: Gebuendelte Streckung von Bein, Rumpf und Arm unmittelbar vor dem Abwurf.
+### Hook / Phaenomen
+
+„Staerker stossen!" Dieser Zuruf trainiert den Arm, aber nicht die Weite. Denn die Kugel fliegt nicht durch Armkraft allein, sondern durch eine Kette von Bein ueber Rumpf bis Hand. Ohne scharfe Begriffe bleibt diese Kette unsichtbar. Diese fuenf Bausteine machen aus Kraft Weite.
+
+### Fachbegriffe & Definitionen
+
+- **Anfangskraft:** Geschwindigkeit $v_0$ aus einer Gegenbewegung vor der Hauptbewegung. Sie schafft guenstige Startbedingungen und verlaengert die Startbahn.
+- **Impuls $J = F \cdot t$:** Produkt aus Kraft und Wirkungszeit. Er bestimmt die Geschwindigkeitsaenderung — schon mittlere Kraft erzeugt ueber lange Zeit grossen Impuls.
+- **Beschleunigungsweg $s$:** Strecke, ueber die die Kraft in $W = F \cdot s$ wirkt. Je laenger $s$, desto groesser Arbeit und Endgeschwindigkeit $v$.
+- **Angleitphase:** Seitliches Gleiten als Uebergang zum finalen Stoss. Sie sammelt mit Beinschub $v_0$, $t$ und $s$ fuer die Endphase.
+- **Finale Stossphase:** Gebuendelte Streckung von Bein, Rumpf und Arm unmittelbar vor dem Abwurf. Sie addiert alle Teilkraefte in dieselbe Richtung.
+
+### Wirkungsgefuege / Modell
+
+Die Begriffe greifen ineinander: Die **Anfangskraft** liefert $v_0$, der **Impuls** $J = F \cdot t$ verwandelt Zeit in Geschwindigkeit, der **Beschleunigungsweg** $s$ verwandelt in $W = F \cdot s$ Weg in Energie, die **Angleitphase** baut beides auf, die **finale Stossphase** buendelt $F$ darauf. Wer in der Klausur deutet, prueft deshalb immer $F$, $t$ und $s$ gemeinsam — so wird aus Technik plus Kraft maximale Weite.
 
 Klausur-Satz: `Der Impuls aus Kraft und Zeit bestimmt zusammen mit dem Beschleunigungsweg die Abstossgeschwindigkeit.`
 
 ## Schritt 3 — entdecken
 
-ENTDECKEN (1 Konzept + 1 Textdiagramm):
+TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
-Das Prinzip lautet: erst zurueck, dann nach vorn. Wer aus dem Stand stoesst, nutzt nur die Armlaenge als Weg. Wer vorher absenkt und angleitet, bringt den Koerperschwerpunkt bereits mit Geschwindigkeit in die Stossrichtung. Zwei Gleichungen erklaeren den Effekt: Der Impuls $J = F mal t$ waechst mit Kraft und Zeit; die Arbeit $W = F mal s$ waechst mit Kraft und Weg. Das Gleiten verlaengert $s$ und die wirksame Zeit $t$, der finale Stoss maximiert $F$. Der Rueckweg beim Auftakt ist daher kein Umweg, sondern die Verlaengerung der Startbahn.
+### Hook / Phaenomen
+
+Ein leichter Athlet mit sauberem Gleitschritt stoesst weiter als ein deutlich staerkerer Athlet aus dem Stand. Ist Kraft also ueberfluessig? Keineswegs — doch Technik schlaegt rohe Kraft, solange die Bahn kurz bleibt. Erst wer beide Formeln zusammen denkt, versteht, warum Bestleistung immer Technikweg plus Kraftniveau braucht.
+
+### Fachbegriff & Definition
+
+Der **Anfangskraft-Weg** ist das Verfahren, Weite ueber $v_0$, $t$ und $s$ zu steigern statt nur ueber $F$. Er nutzt Auftakt als Bahn, Angleiten als Zeit und Weg, finalen Stoss als Kraftbuendelung. Im Gegensatz zum **Maximalkraft-Weg**, der nur $F$ ueber Querschnitt hebt, multipliziert er vorhandene Kraft mit $J = F \cdot t$ und $W = F \cdot s$ zu maximalem $v$.
+
+### Wirkungsgefuege / Modell
+
+Denke in Kausalkette: **Bahn, Zeit, Kraft**. Erstens schafft der Auftakt mit Absenken $v_0 > 0$ und Ausholweg. Zweitens verlaengert das Angleiten ueber etwa einen Meter $s$ und $t$, sodass schon mittleres $F$ grosses $J$ erzeugt. Drittens addiert der finale Stoss Beinstreckung plus Hueftdrehung plus Armstreckung nacheinander in dieselbe Richtung, sodass $W$ auf langem $s$ maximales $v$ erzeugt. Genau diese Kette erklaert, warum verkuerztes oder langsames Gleiten bei gleicher Kraft Weite verschenkt.
 
 ```diagram
-  ohne Anfangskraft (kurz):
-  Start(0) ----[Arm stoesst]----> Abwurf mit kleinem v
-           s = kurz
-
-  mit Anfangskraft (lang):
-  Auftakt rueck -> Absenken -> Angleiten ->
-     v0 groesser als 0 schon da -> Stoss -> Abwurf mit grossem V
-           s = lang (Bein + Rumpf + Arm)
-  Formel: $J = F mal t$ und $W = F mal s$
-  Ziel: $F$ gross plus $t$ lang plus $s$ lang = $v$ maximal
+  Anfangskraft [zurueck -> nach vorn als Startbahn]
+  ohne: Start(0) -> Armstoss [s kurz] -> v klein
+  mit: Auftakt [v0 + Bahn] -> Angleiten [s lang, t lang] -> Stoss [F gross] -> V maximal
+  Formeln: J = F*t | W = F*s | Ziel: F gross + t lang + s lang = v maximal
+  Regel: Technikweg verlaengert t und s, Kraftniveau hebt F
 ```
 
 Klausur-Satz: `Eine vorbereitende Gegenbewegung schafft Anfangsgeschwindigkeit und verlaengert den Weg der Hauptkraft.`

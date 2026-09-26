@@ -17,53 +17,72 @@ version: Lesson-v3
 
 ## Schritt 1 — entdecken
 
-ZIELE (3 Ziele, in 15 Minuten erreichbar):
+ZIELE (drei messbare Ziele dieser Lektion):
 
-1. Du beschreibst den Weitsprung in vier Teilen (Anlauf, Absprung, Flug, Landung), markierst den Absprung als Hauptphase und ordnest die vier Teile der allgemeinen Dreiteilung zu.
-2. Du erklaerst den Absprung mechanisch: Horizontale und vertikale Geschwindigkeit addieren sich zur Flugparabel des Koerperschwerpunkts; der Absprung bleibt flach und schnell statt steil.
-3. Du begrenzt die Flugoptimierung: Die Schwerpunktbahn steht beim Verlassen des Bretts fest; in der Luft gelingen nur Haltung und vorgestreckte Landung einschliesslich typischer Fehler und Korrekturen.
+1. Du kannst den **Weitsprung** in einem Satz definieren und als Vierteilung Anlauf, Absprung, Flug und Landung mit Rueckbezug auf die Dreiteilung erklaeren.
+2. Du kannst den **Absprung als Hauptphase** mechanisch deuten: $v_h$ plus $v_v$ formen die Parabel des Koerperschwerpunkts $x(t) = v_h \cdot t$, flach und schnell traegt weiter als steil.
+3. Du kannst die **Flugbegrenzung** begruenden — Schwerpunktbahn nach dem Brett fixiert, nur Haltung und Landung optimierbar — und mit einem Klausur-Satz abschliessen (AFB II).
+
+### Hook / Phaenomen
+
+Stell dir vor: 1968 in Mexiko-Stadt fliegt ein Springer so weit, dass die Anzeigetafel seine Weite gar nicht anzeigen kann — $8{,}90\,m$. Kein Wunder, sagen viele, duenne Luft eben. Doch die Luft trug ihn nicht, sie bremste ihn nur weniger. Die eigentliche Weite entstand vorher: in wenigen Schritten Anlauf und einem einzigen Abdruck von kaum zwei Zehntelsekunden. Warum entscheidet ein Augenblick ueber Meter?
+
+### Fachbegriff & Definition
+
+Der **Weitsprung** ist die leichtathletische Disziplin, Anlaufgeschwindigkeit in maximale Flugweite umzusetzen, gegliedert in **Anlauf, Absprung, Flug und Landung**. Der **Absprung** als einbeiniger Stemm- und Streckvorgang ist die Hauptphase: Er verwandelt horizontale in resultierende Geschwindigkeit. Kurz: Der Anlauf holt **Tempo**, der Absprung setzt **Weite**, Flug und Landung nutzen sie nur noch.
+
+### Wirkungsgefuege / Modell
+
+Der Kernmechanismus laeuft in drei Stufen: **Holen, Umsetzen, Nutzen**. Erstens holt der Anlauf $v_h$ mit rhythmischer Steigerung. Zweitens setzt der Absprung flach und schnell einen Teil in $v_v$ um, sodass $x(t) = v_h \cdot t$ und $y(t) = v_v \cdot t - g \cdot t^2/2$ die Parabel des Koerperschwerpunkts formen. Drittens nutzen Flug mit Schritt-Technik und Landung mit vorgestreckten Beinen nur noch die fixierte Bahn. Faellt $v_h$ durch Stemmen aus, verkuerzt sich die Parabel unwiderruflich; wird zu steil abgesprungen, frisst Hoehe Weite.
 
 Klausur-Satz: `Beim Weitsprung entscheidet der Absprung als Hauptphase ueber die Weite, weil dort die Anlaufgeschwindigkeit in eine optimale Flugkurve des Koerperschwerpunkts umgesetzt wird.`
 
 ## Schritt 2 — entdecken
 
-PRETRAINING Begriffsbox (5 Kernbegriffe, zuerst dreimal lesen, dann aus dem Gedaechtnis abfragen):
+PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
-- Absprung: Einbeiniger, schneller Stemm- und Streckvorgang als Hauptphase der Weitenumsetzung.
-- Flugphase: Parabelflug des Schwerpunkts nach dem Absprung; in der Luft ist kein neuer Antrieb mehr moeglich.
-- Koerper-Schwerpunkt (KSP): Referenzpunkt der Parabel; seine Bahn steht im Moment des Absprungs fest.
-- Absprungwinkel: Abdruckrichtung beim Verlassen des Bretts; flach und schnell traegt weiter als steil.
-- Horizontal- und Vertikalgeschwindigkeit: Beim Absprung aus horizontaler Geschwindigkeit erzeugte Vertikalkomponente; ihre Summe bestimmt die Weite.
+### Hook / Phaenomen
+
+„Hoeher springen heisst weiter springen." Dieser Irrtum fuellt Hallen mit steilen Spruengen, die hoch fliegen und kurz landen. Denn Weitsprung ist eine Vorwaertsdisziplin, keine Hochsprungdisziplin. Ohne scharfe Begriffe bleibt der Winkel ein Gefuehl. Diese fuenf Bausteine machen aus Gefuehl Mechanik.
+
+### Fachbegriffe & Definitionen
+
+- **Absprung:** Einbeiniger, schneller Stemm- und Streckvorgang mit kurzer Brettzeit $t_{K} < 0{,}15\,s$. Er ist die Hauptphase der Weitenumsetzung.
+- **Koerper-Schwerpunkt (KSP):** Referenzpunkt der Parabel mit $x(t) = v_h \cdot t$ und $y(t) = v_v \cdot t - g \cdot t^2/2$. Seine Bahn steht im Moment des Brettverlusts fest.
+- **Absprungwinkel:** Abdruckrichtung beim Verlassen des Bretts als Resultat von $v_h$ und $v_v$. Flach und schnell traegt weiter als steil und langsam.
+- **Horizontal- und Vertikalgeschwindigkeit:** Aus $v_h$ erzeugte Vertikalkomponente $v_v$; ihre Summe als $v = \sqrt{v_h^2 + v_v^2}$ bestimmt die Weite.
+- **Flugphase:** Parabelflug des Schwerpunkts ohne neue Antriebsmoeglichkeit. Sie sichert nur Haltung und Landung, etwa Schritt-Technik und vorgestreckte Beine.
+
+### Wirkungsgefuege / Modell
+
+Die Begriffe greifen ineinander: Der **Absprung** erzeugt aus $v_h$ das $v_v$, der **KSP** fliegt danach auf fixierter Parabel, der **Absprungwinkel** zeigt das Verhaeltnis von $v_h$ zu $v_v$, **$v_h$ und $v_v$** summieren sich zu $v$, die **Flugphase** nutzt nur noch. Wer in der Pruefung deutet, prueft deshalb zuerst $v_h$ und Winkel und erst danach Haltung — so trennt ein Messwert Absprungfehler von Flugfehler.
 
 Klausur-Satz: `Der Koerperschwerpunkt bewegt sich nach dem Absprung auf einer festgelegten Parabel, sodass die Weite im Absprung weitgehend bestimmt wird.`
 
 ## Schritt 3 — entdecken
 
-ENTDECKEN (1 Konzept + 1 Textdiagramm):
+TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
-Die Weite steht im Moment des Absprungs weitgehend fest. Der Anlauf liefert horizontale Geschwindigkeit; der Absprung verwandelt einen Teil davon flach und schnell in vertikale Geschwindigkeit. Die Summe beider Komponenten formt die Parabel des Koerperschwerpunkts. Ein zu steiler Winkel frisst horizontale Geschwindigkeit und verkuerzt die Weite. Entscheidend sind daher kurzer Brettkontakt, volle Streckung und aktiver Schwungbeineinsatz. Nach dem Verlassen des Bretts ist die Parabel fixiert; Schritt-Technik oder Hueftstreckung sichern nur Haltung und Landung. Optimiert wird daher in der Reihenfolge Anlauf, Absprung, Flug und Landung.
+### Hook / Phaenomen
+
+Ein Sportler bremst vor dem Brett ab, springt steil nach oben und landet mit dem Gesaess zuerst — drei Fehler, aber nur einer begrenzt die Weite wirklich. Denn was vor dem Brett verloren geht, holt keine Flugtechnik zurueck; was danach schiefgeht, kostet nur Ausnutzung. Wie trennt man Weitengrenze von blosser Ausnutzung?
+
+### Fachbegriff & Definition
+
+Die **Absprung-Optimierung** ist das Verfahren, die Weitengrenze ueber $v_h$, Winkel und Streckung zu sichern: $v_h$ maximal halten, Winkel flach halten, Brettzeit $t_{K} < 0{,}15\,s$ kurz halten. Im Gegensatz zur **Flug-Optimierung**, die nur Haltung und vorgestreckte Landung bei fixierter Parabel $x(t) = v_h \cdot t$ sichert, bestimmt sie die Laenge der Parabel selbst. Entscheidungsregel: Liegt der Fehler vor dem Brettverlassen, gilt Absprung-Optimierung; liegt er danach, gilt nur Flug-Optimierung.
+
+### Wirkungsgefuege / Modell
+
+Denke in Kausalkette: **Sichern, Umsetzen, Nutzen**. Erstens sichert der rhythmische Anlauf $v_h$ ohne Stemmen. Zweitens setzt der flache, schnelle Absprung mit voller Streckung und Schwungbein $v_h$ in $v = \sqrt{v_h^2 + v_v^2}$ um und fixiert die Parabel. Drittens nutzen Schritt-Technik und Landung mit Beinen nach vorn und gebeugten Knien nur noch die vorhandene Weite. Genau diese Kette traegt in der Pruefung jede Korrektur: Anlaufrhythmus und flacher Absprung zuerst, Haltung und Landung danach.
 
 ```diagram
-  Weitsprung: Absprung = Hauptphase (Geschwindigkeit wird Weite)
-  Anlauf (horizontal)        Absprung (Zerlegung)
-  ------>  v_h                  \
-                                   \  v (Resultierende)
-                              v_v   \
-                                    \ |
-                                     \|____  v_h bleibt moeglichst gross
-  -> flacher, schneller Absprung schlaegt steiles Springen
-
-  KSP-Bahn NACH dem Absprung = Parabel (fixiert)
-  Flug:   nur Haltung optimierbar (Schritt-Technik oder Hueftstreckung)
-  Landung: Beine nach vorn, Knie beugen, kein Rueckfallen
-
-  Kette:  Anlauf-Geschwindigkeit  ->  Absprung-Umsetzung  ->  Flug-Haltung  ->  Landung
-          (Vorbereitung)              (Hauptphase)          (Endphase vorn)   (Endphase hinten)
+  Weitsprung [Holen -> Umsetzen -> Nutzen]
+  Anlauf [v_h sichern, Rhythmus] -> Vorbereitung
+  Absprung [v_h + v_v -> v, tK<0,15s, flach] -> HAUPTPHASE Weitengrenze
+  KSP-Bahn [x=vh*t, y=vv*t-g*t2/2 fixiert] -> Parabel steht
+  Flug [Haltung Schritt-Technik] + Landung [Beine vor, kein Rueckfallen] -> Ausnutzung
+  Regel: Fehler vor Brett=Absprung | Fehler danach=Flug
 ```
-
-Entscheidungsregel: Liegt der Fehler vor dem Verlassen des Bretts (Anlauf, Winkel), geht es um die Weitengrenze und damit um Absprungoptimierung; liegt er danach (Haltung, Landung), geht es nur um Ausnutzung und damit um Flugoptimierung.
-
-Redemittel: `Ich gliedere den Sprung in vier Phasen und bestimme den Absprung als Hauptphase.`
 
 Klausur-Satz: `Ein zu steiler Absprungwinkel verringert die horizontale Geschwindigkeit, waehrend ein flacher, schneller Absprung die Flugkurve des Koerperschwerpunkts am besten traegt.`
 

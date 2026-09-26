@@ -17,54 +17,72 @@ version: Lesson-v3
 
 ## Schritt 1 — entdecken
 
-ZIELE (3 Ziele, in 15 Minuten erreichbar):
+ZIELE (drei messbare Ziele dieser Lektion):
 
-1. Du unterscheidest drei Bedeutungen von Phase: allgemeine Bewegungsphasen (Vorbereitung, Hauptphase, Endphase), sportartspezifische Teilphasen (zum Beispiel Weitsprung in vier Teilen) und Lernphasen (Grob-, Fein- und stabilisierte Feinkoordination).
-2. Du benennst Ziel und Beobachtungsschwerpunkt jeder Bewegungsphase auf Deutsch und markierst in jeder Bewegung die Hauptphase.
-3. Du fuellst einen Beobachtungsbogen (Phase, Schwerpunkt, Indikator, Beobachtung, Fehler, Korrektur) aus und stellst ihn muendlich nach der Regel erst beschreiben, dann urteilen vor.
+1. Du kannst die **Phasenstruktur nach Meinel und Schnabel** in einem Satz definieren und als didaktisches Analysemodell aus Vorbereitung, Hauptphase und Endphase erklaeren.
+2. Du kannst drei Bedeutungen von Phase — allgemeine Bewegungsphasen, sportartspezifische Teilphasen, Lernphasen mit Grob- und Feinkoordination — sicher trennen und mit $v = s/t$ belegen.
+3. Du kannst einen **Beobachtungsbogen** mit Schwerpunkt, Indikator, Beobachtung, Fehler und Korrektur fuellen und nach der Regel erst beschreiben, dann urteilen vorstellen (AFB II).
+
+### Hook / Phaenomen
+
+Stell dir vor: Ein Sportler bremst vor dem Brett ab — ist das nun schlechte Vorbereitung oder schwache Hauptphase? Und wenn der Trainer sagt: „Das ist noch Grobkoordination", meint er dann die Bewegung oder den Sportler? Wer Phasen verwechselt, korrigiert an der falschen Stelle. Wie schafft ein einziges Modell Ordnung in Bewegung, Sportart und Lernen zugleich?
+
+### Fachbegriff & Definition
+
+Die **Phasenstruktur der Bewegung** ist das Rahmenmodell von **Meinel und Schnabel**, das jede kontinuierliche Bewegung in **Vorbereitung, Hauptphase und Endphase** teilt. Die Vorbereitung beschleunigt und richtet aus, die Hauptphase setzt Energie mit $v = s/t$ in Ergebnis um, die Endphase faengt ab und stabilisiert. Kurz: Die Phasen sind ein **Analyseinstrument**, keine natuerlichen Grenzen — die Bewegung laeuft fliessend, das Modell schneidet zum Beobachten.
+
+### Wirkungsgefuege / Modell
+
+Der Kernmechanismus laeuft in drei Stufen: **Teilen, Beobachten, Trennen**. Erstens teilt jede Analyse in Vorbereitung mit Tempo und Lage, Hauptphase mit Winkel und Kraftreihenfolge, Endphase mit Balance ohne Extrabewegung. Zweitens beobachtet sie je Phase mit Schwerpunkt plus Indikator und markiert die Hauptphase als Kern mit etwa $80\%$ der Bewertung. Drittens trennt sie sauber Bewegungsphasen als Struktur der Bewegung von Lernphasen als Stand der Lernenden. Faellt das Trennen aus, werden Grobkoordination und Vorbereitung verwechselt und jede Korrektur greift daneben.
 
 Klausur-Satz: `Nach der allgemeinen Phasenstruktur gliedert sich jede Bewegung in eine Vorbereitungsphase, eine Hauptphase und eine Endphase.`
 
 ## Schritt 2 — entdecken
 
-PRETRAINING Begriffsbox (5 Kernbegriffe, zuerst dreimal lesen, dann aus dem Gedaechtnis abfragen):
+PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
-- Drei-Phasen-Struktur: Allgemeines Rahmenmodell, das jede Bewegung in Vorbereitung, Hauptphase und Endphase teilt.
-- Vorbereitungsphase: Schaffung optimaler Startbedingungen durch Beschleunigen, Spannen und Ausrichten.
-- Hauptphase: Ergebnisbestimmende Phase (zum Beispiel Abstoss oder Absprung); Kern jeder Bewegungsanalyse.
-- Endphase: Sichernder Abschluss durch Abfangen und Stabilisieren ohne Zusatzbewegung.
-- Beobachtungsbogen: Tabellenwerkzeug mit Spalten fuer Schwerpunkt, Indikator, Beobachtung, Fehlerbild und Korrektur.
+### Hook / Phaenomen
+
+„Grobkoordination ist die erste Phase." Dieser Satz klingt fachlich — und ist doch falsch. Denn Grobkoordination beschreibt den Schueler, nicht den Sprung. Wer Ebenen vermischt, fuellt den Beobachtungsbogen mit Wertungen statt Beobachtungen. Diese fuenf Begriffe trennen sauber Struktur, Lernen und Werkzeug.
+
+### Fachbegriffe & Definitionen
+
+- **Drei-Phasen-Struktur:** Allgemeines Rahmenmodell aus **Vorbereitung, Hauptphase und Endphase**. Es gilt ohne Sportartvorgabe als universelles Geruest jeder Analyse.
+- **Vorbereitungsphase:** Schaffung optimaler Startbedingungen durch Beschleunigen mit $v = s/t$, Spannen und Ausrichten. Beobachtet werden Tempo, Lage und Koerperbahn.
+- **Hauptphase:** Ergebnisbestimmende Phase wie Abstoss oder Absprung. Sie traegt den Kern jeder Begruendung und den Grossteil der Punkte.
+- **Endphase:** Sichernder Abschluss durch Abfangen und Stabilisieren ohne Zusatzbewegung. Beobachtet werden Puffer, Balance und Uebergang.
+- **Beobachtungsbogen:** Tabellenwerkzeug mit Spalten fuer **Phase, Schwerpunkt, Indikator, Beobachtung, Fehlerbild und Korrektur**. In der Beobachtung wird nur beschrieben, erst in Fehler und Korrektur gewertet.
+
+### Wirkungsgefuege / Modell
+
+Die Begriffe greifen ineinander: Die **Drei-Phasen-Struktur** gibt das Geruest, **Vorbereitung** und **Endphase** rahmen die **Hauptphase** als Kern, der **Beobachtungsbogen** macht jede Phase mit Indikator ueberpruefbar. Wer in der Pruefung arbeitet, teilt deshalb zuerst, markiert dann die Hauptphase und fuellt erst danach den Bogen — so steht in der Beobachtung nur Beschriebenes und in der Korrektur nur Begruendetes.
 
 Klausur-Satz: `Die Hauptphase ist diejenige Phase, die ueber das Ergebnis entscheidet und daher im Zentrum der Bewegungsanalyse steht.`
 
 ## Schritt 3 — entdecken
 
-ENTDECKEN (1 Konzept + 1 Textdiagramm):
+TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
-Jede Bewegung folgt dem Geruest Vorbereitung, Hauptphase, Endphase. Die Vorbereitung beschleunigt und richtet aus; die Hauptphase setzt Energie in Ergebnis um und traegt etwa 80 Prozent der Bewertung; die Endphase faengt ab und stabilisiert. Nach dem Teilen wird je Phase mit Schwerpunkt und Indikator beobachtet. Wichtig ist die Trennung von zwei Ebenen: Bewegungsphasen beschreiben die raeumlich-zeitliche Struktur der Bewegung; Lernphasen (Grob-, Fein- und stabilisierte Feinkoordination) beschreiben den Stand der Lernenden. Beide duerfen nicht verwechselt werden.
+### Hook / Phaenomen
+
+Ein Pruefer sagt: „Analysieren Sie eine beliebige Bewegung." Ein anderer sagt: „Beschreiben Sie den Weitsprung." Beide verlangen Phasen — doch wer beide Male dieselbe Dreiteilung herunterbetet, verschenkt Punkte. Denn einmal ist Freiheit gefragt, einmal Sportartwissen. Woran entscheidet sich, ob allgemein oder sportartspezifisch gegliedert wird?
+
+### Fachbegriff & Definition
+
+Die **sportartspezifische Gliederung** ist die Verfeinerung der allgemeinen Dreiteilung fuer eine genannte Sportart — beim Weitsprung **Anlauf, Absprung, Flug und Landung** mit Rueckbezug auf Vorbereitung, Hauptphase und Endphase. Sie gilt immer dann, wenn die Aufgabe eine Sportart nennt; sonst gilt direkt die allgemeine Struktur. Entscheidungsregel: Nennt die Aufgabe eine Sportart, gilt spezifisch mit Rueckbezug; sonst gilt allgemein mit schneller Markierung der Hauptphase.
+
+### Wirkungsgefuege / Modell
+
+Denke in Kausalkette: **Waehlen, Zuordnen, Beobachten**. Erstens wird gewaehlt: ohne Sportartvorgabe Verfahren mit Vorbereitung, Hauptphase und Endphase, mit Weitsprung Verfahren mit Anlauf, Absprung, Flug und Landung. Zweitens wird zugeordnet: Anlauf ist Vorbereitung, Absprung mit $v = s/t$ ist Hauptphase, Flug plus Landung sind Endphase. Drittens wird phasegenau beobachtet: Tempo und Lage in der Vorbereitung, Winkel und Kraftreihenfolge in der Hauptphase, Balance ohne Extrabewegung in der Endphase. Genau diese Kette schuetzt vor Verwechslung mit Lernphasen wie Grob- und Feinkoordination.
 
 ```diagram
-  Phasenstruktur der Bewegung (Meinel und Schnabel)
-  |-- Vorbereitung --|-- Hauptphase --|-- Endphase --|
-       Ziele:             Ziele:             Ziele:
-       beschleunigen      Ergebnis erzielen  abfangen
-       anspannen          Kraft umsetzen     stabilisieren
-       ausrichten         Timing treffen     uebergehen
-       ^                  ^                  ^
-       |                  |                  |
-  Beobachten:        Beobachten:        Beobachten:
-  Tempo, Lage,       Winkel, Kraft-     Puffer, Balance,
-  Koerperbahn        reihenfolge        keine Extrabewegung
-       \__________________|__________________/
-                  Hauptphase = Kern (80 Prozent der Punkte)
-
-  ACHTUNG: Lernphasen (grob, fein, stabilisiert) betreffen die LERNENDEN,
-  nicht die Bewegung. Nicht verwechseln!
+  Gliederung [allgemein <-> spezifisch mit Rueckbezug]
+  allgemein: Vorbereitung -> Hauptphase (Kern 80%) -> Endphase
+  spezifisch Weitsprung: Anlauf -> Absprung [v=s/t] -> Flug -> Landung
+  Rueckbezug: Anlauf=Vorbereitung | Absprung=Hauptphase | Flug+Landung=Endphase
+  Bogen: Phase | Schwerpunkt | Indikator | Beobachtung nur beschreiben | Fehler+Korrektur werten
+  Trennung: Bewegungsgliederung ist Struktur, Lernphase ist Stand
 ```
-
-Entscheidungsregel: Nennt die Aufgabe eine Sportart, gilt die sportartspezifische Gliederung; sonst gilt die allgemeine Dreiteilung. Nach dem Teilen zuerst die Hauptphase markieren.
-
-Redemittel: `Ich gliedere die Bewegung zunaechst in drei Phasen und markiere dann die Hauptphase.`
 
 Klausur-Satz: `Die allgemeine Phasenstruktur dient als universelles Geruest, das den Blick zuerst auf die entscheidende Hauptphase lenkt.`
 

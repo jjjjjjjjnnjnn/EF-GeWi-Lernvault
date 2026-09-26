@@ -17,48 +17,71 @@ version: Lesson-v3
 
 ## Schritt 1 — entdecken
 
-ZIELE (3 Ziele, in 15 Minuten erreichbar):
+ZIELE (drei messbare Ziele dieser Lektion):
 
-1. Du stellst eine Kursbewegung in drei Phasen (Vorbereitung, Hauptphase, Endphase) muendlich vor und beschreibst je Phase eine Taetigkeit.
-2. Du markierst die Hauptphase und begruendest sie mit einem weil-Satz auf biomechanischer oder physiologischer Grundlage.
-3. Du benennst einen typischen Fehler und gibst eine Korrektur, sodass Beschreibung, Begruendung und Korrektur vollstaendig sind.
+1. Du kannst das **Bewegungserklaeren** in einem Satz definieren und als Dreischritt Phasen teilen, Hauptphase markieren, mit Mechanismus begruenden vom blossen Beschreiben unterscheiden.
+2. Du kannst eine Kursbewegung in **Vorbereitung, Hauptphase und Endphase** gliedern und je Phase eine Taetigkeit von Armen, Beinen und Rumpf benennen.
+3. Du kannst die Hauptphase mit einem biomechanischen oder physiologischen weil-Satz und $v = s/t$ oder $HF$ belegen und mit einem Klausur-Satz abschliessen (AFB II).
+
+### Hook / Phaenomen
+
+Stell dir vor: Zwei Schueler zeigen denselben Kugelstoss. Der erste zaehlt auf: „Anlaufen, stossen, stehen bleiben." Der zweite sagt: „Entscheidend ist der Stoss, weil dort die Anlaufgeschwindigkeit in Weite umgesetzt wird." Nur einer bekommt die Punkte. Woran liegt es, dass blosses Aufzaehlen nie als Erklaeren zaehlt? Die Antwort liegt in einem einzigen kleinen Wort: weil.
+
+### Fachbegriff & Definition
+
+Das **Bewegungserklaeren** ist die muendliche Darstellung einer Bewegung in **drei Phasen plus begruendeter Hauptphase plus Fehler mit Korrektur**. Es teilt in Vorbereitung, Hauptphase und Endphase, markiert die ergebnisbestimmende Phase und begruendet sie mit einem konkreten Mechanismus. Kurz: Beschreiben zeigt das **Was**, Erklaeren zeigt das **Warum**.
+
+### Wirkungsgefuege / Modell
+
+Der Kernmechanismus laeuft in drei Stufen: **Gliedern, Markieren, Begruenden**. Erstens gliedert jede Erklaerung in Vorbereitung mit Anlaufen und Ausrichten, Hauptphase mit Beschleunigen und Umsetzen, Endphase mit Abfangen und Stabilisieren. Zweitens markiert sie die Hauptphase als ergebnisbestimmend mit $v = s/t$. Drittens begruendet sie mit Mechanismus: biomechanisch ueber Kraft, Winkel und Hebel oder physiologisch ueber $HF$, Energie und Steuerung. Faellt die Markierung aus, bleibt alles Aufzaehlung; fehlt der Mechanismus, bleibt das weil leer.
 
 Klausur-Satz: `Die Bewegung gliedert sich in Vorbereitung, Hauptphase und Endphase; entscheidend ist die Hauptphase, weil dort die Leistung biomechanisch beziehungsweise physiologisch bestimmt wird.`
 
 ## Schritt 2 — entdecken
 
-PRETRAINING Begriffsbox (5 Kernbegriffe, zuerst dreimal lesen, dann aus dem Gedaechtnis abfragen):
+PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
-- Drei-Phasen-Struktur: Allgemeines Geruest, das jede kontinuierliche Bewegung in Vorbereitung, Hauptphase und Endphase teilt.
-- Vorbereitungsphase: Aufbau von Spannung und Ausrichtung einschliesslich Aufwaermen als Voraussetzung der Hauptbewegung.
-- Hauptphase: Ergebnisbestimmende Phase; hier liegt der Schwerpunkt jeder Begruendung.
-- Endphase: Abfangen, Stabilisieren und Sichern ohne ueberfluessige Zusatzbewegung.
-- Typischer Fehler und Fehlerbild: Haeufige Abweichung von der Idealbewegung, stets mit einer Korrektur verbunden.
+### Hook / Phaenomen
+
+„Diese Phase ist wichtig." Solche Saetze klingen nach Begruendung, sind aber keine. Der Pruefer wartet auf Kraft, Winkel, Puls oder Energie — und hoert nur Wichtigkeit. Ohne scharfe Begriffe bleibt das Warum unbeantwortet. Diese fuenf Bausteine liefern das Handwerkszeug fuer jedes weil.
+
+### Fachbegriffe & Definitionen
+
+- **Drei-Phasen-Struktur:** Allgemeines Geruest aus **Vorbereitung, Hauptphase und Endphase** nach Meinel und Schnabel. Es ordnet jede kontinuierliche Bewegung unabhaengig von der Sportart.
+- **Vorbereitungsphase:** Aufbau von Spannung und Ausrichtung mit Anlauf, Ausholen und Aufwaermen. Sie schafft mit erhoehter Muskeltemperatur und $HF$ die Voraussetzung der Hauptbewegung.
+- **Hauptphase:** Ergebnisbestimmende Phase mit $v = s/t$ als Leitgroesse. Hier liegt der Schwerpunkt jeder Begruendung und der Grossteil der Bewertung.
+- **Endphase:** Abfangen, Stabilisieren und Sichern ohne ueberfluessige Zusatzbewegung. Sie schuetzt vor Verletzungen und sichert das Ergebnis.
+- **Fehlerbild mit Korrektur:** Haeufige Abweichung von der Idealbewegung plus konkrete methodische Korrektur. Ohne diesen Schluss bleibt jede Erklaerung unvollstaendig.
+
+### Wirkungsgefuege / Modell
+
+Die Begriffe greifen ineinander: Die **Drei-Phasen-Struktur** gibt das Geruest, die **Vorbereitungsphase** schafft mit $HF$ und Tempo die Voraussetzung, die **Hauptphase** entscheidet mit $v = s/t$ ueber das Ergebnis, die **Endphase** sichert es, das **Fehlerbild mit Korrektur** schliesst die Erklaerung methodisch ab. Wer in der Pruefung spricht, nennt deshalb zuerst alle drei Phasen und begruendet dann genau eine — so wird aus Aufzaehlung Erklaerung.
 
 Klausur-Satz: `Entscheidend ist die Hauptphase, weil in ihr die fuer das Ergebnis massgebliche Leistung erbracht wird.`
 
 ## Schritt 3 — entdecken
 
-ENTDECKEN (1 Konzept + 1 Textdiagramm):
+TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
-Eine Bewegung wird zuerst in drei Phasen geteilt: Vorbereitung (Anlauf nehmen, Ausholen, Ausrichten), Hauptphase (beschleunigen, umsetzen, treffen), Endphase (abfangen, stabilisieren, ausgleichen). Danach wird die entscheidende Phase markiert und begruendet. Die Begruendung kennt nur zwei Wege: biomechanisch (Kraft, Geschwindigkeit, Winkel, Hebel) oder physiologisch (Muskeltemperatur, Energiebereitstellung, nervale Steuerung). Ohne konkreten Mechanismus bleibt die Aussage leer. Ein Fehlerbild mit Korrektur schliesst die Erklaerung ab.
+### Hook / Phaenomen
+
+Ein Sportler bremst vor dem Brett ab und springt danach steil nach oben — die Weite bleibt klein. Ist nun der Anlauf, der Absprung oder die Landung schuld? Wer alle Phasen gleich behandelt, korrigiert am falschen Ende. Erst wer die entscheidende Phase kennt, weiss auch, wo Korrektur ueberhaupt wirken kann.
+
+### Fachbegriff & Definition
+
+Die **Hauptphasen-Begruendung** ist der weil-Satz, der die ergebnisbestimmende Phase mit einem **biomechanischen oder physiologischen Mechanismus** belegt. Biomechanisch traegt sie Kraft, Geschwindigkeit mit $v = s/t$, Winkel und Hebel vor; physiologisch traegt sie Muskeltemperatur, Energiebereitstellung und nervale Steuerung mit $HF$ vor. Ohne konkreten Mechanismus bleibt die Aussage leer und erhaelt keine Punkte.
+
+### Wirkungsgefuege / Modell
+
+Denke in Kausalkette: **Teilen, Markieren, Belegen**. Erstens wird geteilt: Vorbereitung mit Anlaufen und Ausrichten, Hauptphase mit Beschleunigen und Umsetzen, Endphase mit Abfangen. Zweitens wird markiert: Beim Weitsprung ist der Absprung entscheidend, beim Kugelstoss der finale Stoss. Drittens wird mit Mechanismus belegt: Der Absprung setzt $v_h$ in die Flugparabel um, das Aufwaermen hebt $HF$ und Muskeltemperatur als Voraussetzung. Genau diese Kette traegt in der Pruefung den Satz Entscheidend ist, weil.
 
 ```diagram
-  Bewegung erklaeren = 3 Phasen + 1 Begruendung
-  |-- Vorbereitung --|-- Hauptphase --|-- Endphase --|
-       was?               was?              was?
-       anlaufen           abschwingen       abfangen
-       ausholen           beschleunigen     stabilisieren
-       ausrichten         KSP beschleunigen ausgleichen
-       ^                  ^                 ^
-       |                  |                 |
-  vorbereiten        ENTSCHEIDEND!        absichern
-                     mit weil-Satz
-                     biomechanisch
-                     oder physiologisch
-
-  Kette: Phasen nennen -> Hauptphase markieren
-         -> weil-Begruendung -> Fehler plus Korrektur
+  Erklaeren [Teilen -> Markieren -> Begruenden]
+  Vorbereitung [anlaufen | ausholen | ausrichten | HF steigt] -> Voraussetzung
+  Hauptphase [beschleunigen | umsetzen mit v=s/t] -> ENTSCHEIDEND mit weil
+  Endphase [abfangen | stabilisieren] -> Sicherung
+  Schluss: Fehlerbild + Korrektur
+  Kette: Phasen nennen -> Hauptphase markieren -> Mechanismus -> Korrektur
 ```
 
 Klausur-Satz: `Entscheidend ist die Hauptphase, weil in ihr die biomechanisch oder physiologisch begruendete Leistung erbracht wird, die ueber das Ergebnis bestimmt.`

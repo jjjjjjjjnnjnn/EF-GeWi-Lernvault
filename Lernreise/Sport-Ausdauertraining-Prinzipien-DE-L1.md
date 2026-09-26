@@ -17,55 +17,72 @@ version: Lesson-v3
 
 ## Schritt 1 — entdecken
 
-ZIELE (3 Ziele, in 15 Minuten erreichbar):
+ZIELE (drei messbare Ziele dieser Lektion):
 
-1. Du zeichnest und liest die Superkompensationskurve (Belastung, Ermuedung, Erholung, Superkompensation, Rueckkehr) und bestimmst, in welchen Abschnitt der naechste Reiz fallen muss.
-2. Du erklaerst drei Zeitpunkte der Wiederbelastung: zu frueh bedeutet Uebertraining, passend bedeutet Leistungssteigerung, zu spaet bedeutet Stagnation.
-3. Du beurteilst einen Ausdauertrainingsplan mit den Trainingsprinzipien (optimale Relation von Belastung und Erholung, progressive Steigerung, Variation, Kontinuitaet, Individualitaet) und schlaegst Verbesserungen vor.
+1. Du kannst die **Superkompensation** in einem Satz definieren und als ueberschiessende Erholung ueber das Ausgangsniveau mit Kurvenverlauf erklaeren.
+2. Du kannst drei Zeitpunkte der Wiederbelastung — zu frueh mit Uebertraining, passend mit Steigerung, zu spaet mit Stagnation — unterscheiden und mit $HF_{max}$ und $HF_{Ruhe}$ einordnen.
+3. Du kannst einen Ausdauerplan mit den **Trainingsprinzipien** beurteilen und Verbesserungen mit Frequenz, Umfang und Intensitaet vorschlagen (AFB II bis III).
+
+### Hook / Phaenomen
+
+Stell dir vor: Zwei Laeufer trainieren gleich hart. Der eine wird von Woche zu Woche schneller, der andere immer mueder — obwohl beide dieselben Kilometer laufen. Der Unterschied liegt nicht im Schweiss, sondern in der Pause. Wie kann Nichtstun die Leistung steigern, und warum macht zu viel Training langsam statt schnell?
+
+### Fachbegriff & Definition
+
+Die **Superkompensation** ist die ueberschiessende Wiederherstellung der Leistungsfaehigkeit **ueber das Ausgangsniveau hinaus** nach Belastung und Erholung. Sie verlaeuft in vier Abschnitten: **Belastung, Ermuedung, Erholung, Superkompensation mit Rueckkehr**. Nur ein neuer Reiz genau im Gipfel hebt die Leistung schrittweise an. Kurz: Die Leistung waechst in der **Erholung**, nicht in der Belastung.
+
+### Wirkungsgefuege / Modell
+
+Der Kernmechanismus laeuft in drei Stufen: **Reiz, Erholung, Anpassung**. Erstens senkt der Reiz mit $HF$ nahe $HF_{max}$ die Leistung ins Tal der Ermuedung. Zweitens hebt die Erholung sie ueber das Ausgangsniveau auf den Gipfel. Drittens entscheidet der Zeitpunkt: Faellt der naechste Reiz in die Ermuedung, kumuliert Muedigkeit zu Uebertraining; faellt er auf den Gipfel, steigt die Leistung; faellt er nach der Rueckkehr, bleibt Stagnation. Die Intensitaet steuert die Pausenlaenge — lockeres Laufen erlaubt fast taegliche Reize, maximales Krafttraining verlangt $48$ bis $72$ Stunden Pause.
 
 Klausur-Satz: `Nach einer Belastung sinkt die Leistungsfaehigkeit zunaechst, steigt in der Erholung ueber das Ausgangsniveau (Superkompensation) und faellt danach wieder auf dieses zurueck.`
 
 ## Schritt 2 — entdecken
 
-PRETRAINING Begriffsbox (5 Kernbegriffe, zuerst dreimal lesen, dann aus dem Gedaechtnis abfragen):
+PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
-- Superkompensation: Ueberschreitende Wiederherstellung ueber das Ausgangsniveau nach Belastung; physiologische Grundlage wirksamen Trainings.
-- Belastung: Gesetzter Trainingsreiz als Ausgangspunkt der Kurve; je hoeher die Intensitaet, desto laenger die noetige Erholung.
-- Ermuedung: Voruebergehender Leistungsabfall nach Belastung; Tal der Kurve.
-- Uebertraining: Dauerhafter Leistungsabfall durch wiederholte Belastung ohne ausreichende Erholung.
-- Optimale Relation von Belastung und Erholung: Prinzip, das verlangt, den naechsten Reiz genau in die Superkompensationsphase zu legen.
+### Hook / Phaenomen
+
+„Viel hilft viel — Pause ist Schwaeche." Dieser Spruch fuellt Trainingsplaene mit Einheiten, aber leert die Speicher der Sportler. Erst wer Belastung und Erholung als Einheit denkt, versteht, warum Profis ihre Ruhetage so ernst nehmen wie ihre Intervalle. Diese fuenf Begriffe machen aus Bauchgefuehl Trainingslehre.
+
+### Fachbegriffe & Definitionen
+
+- **Superkompensation:** Ueberschiessende Wiederherstellung ueber das Ausgangsniveau nach Belastung. Sie ist die physiologische Grundlage jeder wirksamen Trainingssteigerung.
+- **Belastungsnormative:** Steuerungsgroessen des Reizes — **Belastungsdauer, Umfang, Intensitaet mit $\% HF_{max}$, Dichte und Haeufigkeit**. Sie bestimmen, wie tief das Tal und wie hoch der Gipfel ausfaellt.
+- **Erholung:** Wiederherstellung mit $HF$ zurueck in Richtung $HF_{Ruhe}$ bis zum ueberschiessenden Gipfel. Ohne sie bleibt jede Anpassung aus.
+- **Uebertraining:** Dauerhafter Leistungsabfall durch wiederholte Reize in der Ermuedungsphase ohne ausreichende Erholung. Er zeigt sich in Stagnation, Infektanfaelligkeit und Unlust.
+- **Optimale Relation von Belastung und Erholung:** Prinzip, das den naechsten Reiz genau in die Superkompensationsphase legt. Es verbindet Kurvenlage mit Trainingsplanung.
+
+### Wirkungsgefuege / Modell
+
+Die Begriffe greifen ineinander: Die **Belastungsnormative** mit $\% HF_{max}$ setzen die Tiefe der Ermuedung, die **Erholung** mit Rueckkehr zu $HF_{Ruhe}$ baut den Gipfel auf, die **Superkompensation** hebt das Niveau, das **Uebertraining** droht bei verfruehten Reizen, die **optimale Relation** sichert den richtigen Zeitpunkt. Wer in der Pruefung beurteilt, zeichnet deshalb zuerst die Kurve und prueft dann, in welchen Abschnitt der zweite Reiz faellt — so wird aus Lage Diagnose.
 
 Klausur-Satz: `Der naechste Trainingsreiz muss in die Phase der Superkompensation fallen; sonst stagniert die Leistung oder es kommt zum Uebertraining.`
 
 ## Schritt 3 — entdecken
 
-ENTDECKEN (1 Konzept + 1 Textdiagramm):
+TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
-Training wirkt durch ueberschiessende Erholung. Nach Belastung faellt die Leistung (Ermuedung), kehrt zum Ausgangsniveau zurueck (Erholung), ueberschreitet es (Superkompensation) und faellt danach wieder ab. Nur ein Reiz in der Superkompensationsphase hebt die Leistung schrittweise an. Ein zu frueher Reiz summiert Ermuedung und fuehrt zum Uebertraining; ein zu spaeter Reiz trifft nur noch das Ausgangsniveau und fuehrt zur Stagnation. Die Intensitaet bestimmt die Pausenlaenge: lockeres Ausdauertraining erlaubt fast taegliche Reize, maximales Krafttraining verlangt oft 48 bis 72 Stunden Pause. Dieses Modell begruendet die Prinzipien der optimalen Belastungs-Erholungs-Relation und der Kontinuitaet.
+### Hook / Phaenomen
+
+Siebenmal pro Woche maximales Krafttraining — nach zwei Wochen sinkt die Leistung. Ist der Sportler zu schwach oder der Plan zu stark? Viele antworten mit mehr Ehrgeiz und trainieren sich noch tiefer ins Tal. Erst die Kurve zeigt: Nicht der Wille fehlt, sondern die Pause. Wie liest man aus Abstaenden ein Urteil?
+
+### Fachbegriff & Definition
+
+Das **Prinzip der optimalen Relation von Belastung und Erholung** verlangt, den naechsten Reiz genau in den Gipfel der Superkompensation zu legen. Bei mittlerer Ausdauerbelastung mit $65-80\% HF_{max}$ genuegen oft $24$ bis $48$ Stunden, bei maximaler Kraftbelastung $48$ bis $72$ Stunden. Es begruendet zusaetzlich **Kontinuitaet, Progression, Variation und Individualitaet** — kein Gipfel ohne Rhythmus, keine Steigerung ohne Erholung.
+
+### Wirkungsgefuege / Modell
+
+Denke in Kausalkette: **Einordnen, Deuten, Verbessern**. Erstens wird der zweite Reiz auf der Kurve eingeordnet: Tal bedeutet Ermuedung, Gipfel bedeutet Superkompensation, Rueckkehr zum Ausgangsniveau bedeutet verpasste Anpassung. Zweitens wird gedeutet: zu frueh mit $HF$ dauerhaft hoch heisst Uebertraining, passend heisst Steigerung, zu spaet heisst Stagnation. Drittens wird verbessert: Ruhetage einfuegen, Intensitaet ueber $\% HF_{max}$ steuern, Umfang progressiv steigern. Genau diese Kette verwandelt einen vollen Plan in einen wirksamen Plan.
 
 ```diagram
-  Leistungsfaehigkeit
-     |                          Gipfel = Superkompensation
-     |                         /   \
-     |  ----------------------/-----\---- Ausgangsniveau
-     |            /\         /       \
-     |   /\      /  \       /         \
-     |  /  \    /    \     /           \
-     | /    \  /      \   /             \
-     |/      \/        \_/               v
-     +---------------------------------------> Zeit
-     Belastung  Ermuedung  Erholung   Rueckkehr
-       (Reiz)    (Tal)     (Anstieg)   (Abfall)
-
-  Naechster Reiz MUSS in die Superkompensationsphase fallen!
-  zu frueh  -> Uebertraining
-  passend   -> Leistungssteigerung
-  zu spaet  -> Stagnation
+  Kurve [Belastung -> Ermuedung -> Erholung -> Gipfel -> Rueckkehr]
+  Belastung [Reiz %HFmax] -> Tal [HF hoch, Leistung tief]
+  Tal -> Anstieg [HF zu HF_Ruhe] -> Gipfel [Superkompensation]
+  Gipfel -> Rueckkehr [Ausgangsniveau]
+  Naechster Reiz: frueh=Uebertraining | Gipfel=Steigerung | spaet=Stagnation
+  Regel: Intensitaet hoch -> Pause 48-72h | mittel -> Pause 24-48h
 ```
-
-Entscheidungsregel: Frage zuerst, in welchen Kurvenabschnitt der zweite Reiz faellt. Ermuedung bedeutet Uebertraining, Superkompensation bedeutet Steigerung, Rueckkehr bedeutet Stagnation.
-
-Redemittel: `Ich zeichne die Kurve und pruefe, in welche Phase der naechste Reiz faellt.`
 
 Klausur-Satz: `Das Superkompensationsmodell begruendet das Prinzip der optimalen Relation von Belastung und Erholung.`
 
