@@ -9,7 +9,7 @@ import {
   exemplarReise,
 } from "../reise";
 import { FAECHER } from "../fach";
-import Blocks from "../components/Blocks";
+import Blocks, { renderFormattedText } from "../components/Blocks";
 import DiagramFig from "../components/Diagram";
 import { chat, describeActiveEngine, type ChatMsg } from "../ai/engine";
 import {
@@ -943,7 +943,7 @@ export default function ReiseModule({
               return (
                 <div className="space-y-5">
                   <div className="border border-[var(--line)] bg-[var(--paper-subtle)] p-4 rounded-[var(--radius)] font-serif text-base text-[var(--ink)] leading-relaxed">
-                    {cleanAufgabe}
+                    {renderFormattedText(cleanAufgabe)}
                   </div>
 
                   {tool && renderEmbeddedTool(tool, lang, activeCourse.fach)}
@@ -961,7 +961,7 @@ export default function ReiseModule({
                     </button>
                     {tryShowHelp && (
                       <div className="mt-2 p-3 border border-dashed border-[var(--line)] bg-[var(--paper-subtle)] text-xs font-sans text-[var(--gray)] rounded-[var(--radius)]">
-                        {(currentSchritt as SchrittAusprobieren).hilfe}
+                        {renderFormattedText((currentSchritt as SchrittAusprobieren).hilfe!)}
                       </div>
                     )}
                   </div>
@@ -1056,7 +1056,7 @@ export default function ReiseModule({
                               Frage {idx + 1}:
                             </span>
                             <span className="font-serif text-sm text-[var(--ink)]">
-                              {item.frage}
+                              {renderFormattedText(item.frage)}
                             </span>
                           </div>
                           <button
@@ -1075,7 +1075,7 @@ export default function ReiseModule({
 
                         {isRevealed && (
                           <div className="border-l-2 border-[var(--accent)] pl-3 text-xs font-mono text-[var(--gray)] bg-[var(--paper-subtle)] py-1.5">
-                            Erwartete Punkte: {item.antwort}
+                            Erwartete Punkte: {renderFormattedText(item.antwort)}
                           </div>
                         )}
 
@@ -1265,7 +1265,7 @@ export default function ReiseModule({
                     Rolle: {(currentSchritt as SchrittSzenario).rolle}
                   </div>
                   <div className="font-serif text-base text-[var(--ink)] leading-relaxed">
-                    {(currentSchritt as SchrittSzenario).situation}
+                    {renderFormattedText((currentSchritt as SchrittSzenario).situation)}
                   </div>
                 </div>
 
@@ -1318,7 +1318,7 @@ export default function ReiseModule({
                         }
                         className="mt-0.5 h-3.5 w-3.5 accent-[var(--accent)]"
                       />
-                      <span>{p}</span>
+                      <span>{renderFormattedText(p)}</span>
                     </label>
                   ))}
                 </div>
@@ -1491,7 +1491,7 @@ export default function ReiseModule({
                         }
                         className="mt-0.5 h-3.5 w-3.5 accent-[var(--accent)]"
                       />
-                      <span>{sc}</span>
+                      <span>{renderFormattedText(sc)}</span>
                     </label>
                   ))}
                 </div>

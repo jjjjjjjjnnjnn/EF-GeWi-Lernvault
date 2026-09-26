@@ -94,7 +94,6 @@ def parse_markdown_blocks(body: str):
         return any("\u4e00" <= ch <= "\u9fff" for ch in s)
 
     def clean_inline(s):
-        s = re.sub(r"\*\*(.+?)\*\*", r"\1", s)
         s = re.sub(r"^#+\s*", "", s)
         s = re.sub(r"^[-*]\s+", "", s)
         return sanitize_text(s)

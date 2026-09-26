@@ -235,9 +235,6 @@ export default function Library({
 
   const handleSelectNote = (id: string) => {
     setOpenId(id);
-    if (viewMode === "gallery") {
-      setViewMode("split");
-    }
   };
 
   const handlePrevNote = () => {

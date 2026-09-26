@@ -48,10 +48,10 @@ describe("parseBody", () => {
     expect(blocks[0].lang).toBe("de");
   });
 
-  it("code-fence -> math-block, inline-markdown gestrippt", () => {
+  it("code-fence -> math-block, inline-markdown erhalten fuer Blocks-Rendering", () => {
     const blocks = parseBody("```\nE = mc^2\n```\n**fett** und #hashtag");
     expect(blocks[0]).toMatchObject({ kind: "math", text: "E = mc^2" });
-    expect(blocks[1].text).toBe("fett und #hashtag");
+    expect(blocks[1].text).toBe("**fett** und #hashtag");
   });
 
   it("```diagram -> diagram-block (kein katex-futter)", () => {

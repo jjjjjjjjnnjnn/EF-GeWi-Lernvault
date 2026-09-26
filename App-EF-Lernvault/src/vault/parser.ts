@@ -60,7 +60,7 @@ function hasCJK(s: string): boolean {
 }
 
 function inline(text: string): string {
-  return text.replace(/\*\*(.+?)\*\*/g, "$1").replace(/^#+\s*/, "").replace(/^[-*]\s+/, "").trim();
+  return text.replace(/^#+\s*/, "").replace(/^[-*]\s+/, "").trim();
 }
 
 export function parseBody(body: string): Block[] {

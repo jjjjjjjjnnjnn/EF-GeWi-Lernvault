@@ -31,33 +31,34 @@ PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→�
 
 中文在上，德语在下：
 
-- 幂法则 — Potenzregel：`(x^n)' = n * x^(n-1)`，指数下移作系数、指数减一。
-- 因子法则 — Faktorregel：`(c * f)' = c * f'`，常数因子在求导时照抄不动。
-- 和法则 — Summenregel：`(f + g)' = f' + g'`，和的导数等于导数之和。
-- 常数函数 — konstante Funktion：`f(x) = c` 的导数为 0，图像是水平线。
-- 导函数 — Ableitungsfunktion：把每个点的切线斜率作为函数值，记作 f'。
+- 幂法则 — Potenzregel：$(x^n)' = n \cdot x^{n-1}$，指数下移作系数、指数减一。
+- 因子法则 — Faktorregel：$(c \cdot f)' = c \cdot f'$，常数因子在求导时照抄不动。
+- 和法则 — Summenregel：$(f + g)' = f' + g'$，和的导数等于导数之和。
+- 常数函数 — konstante Funktion：$f(x) = c$ 的导数为 $0$，图像是水平线。
+- 导函数 — Ableitungsfunktion：把每个点的切线斜率作为函数值，记作 $f'$。
 
-Klausur-Satz: `Fuer eine Potenz gilt die Potenzregel (x^n)' = n * x^(n-1); Konstanten fallen beim Differenzieren weg.`
+Klausur-Satz: `Fuer eine Potenz gilt die Potenzregel (x^n)' = n \cdot x^{n-1}; Konstanten fallen beim Differenzieren weg.`
 
 ## Schritt 3 — entdecken
 
 ENTDECKEN（1概念 + 1文字图解）：
 
-中文：多项式求导是一条流水线。先把整式看成若干"单项之和"，再对每个单项做两件事：系数乘上原来的指数，指数减一；若该项不含 x（纯常数），直接归零。三件工具各司其职——幂法则管 `x^n`，因子法则管前面的数字系数，和法则管整条式子可以拆开逐项处理。因为和法则保证"和的导数等于导数之和"，我们才能放心地一项一项做，最后把结果相加。注意：因子法则只对"常数乘以函数"成立，对"两个含 x 的函数相乘"不成立（那是 Q1 的乘积法则）。
+中文：多项式求导是一条流水线。先把整式看成若干"单项之和"，再对每个单项做两件事：系数乘上原来的指数，指数减一；若该项不含 x（纯常数），直接归零。三件工具各司其职——幂法则管 $x^n$，因子法则管前面的数字系数，和法则管整条式子可以拆开逐项处理。因为和法则保证"和的导数等于导数之和"，我们才能放心地一项一项做，最后把结果相加。注意：因子法则只对"常数乘以函数"成立，对"两个含 x 的函数相乘"不成立（那是 Q1 的乘积法则）。
+
+$$f(x) = 4x^3 - 5x^2 + 7x - 2 \implies f'(x) = 12x^2 - 10x + 7$$
 
 文字图解（ASCII 结构图，App支持解析渲染）：
 
 ```diagram
-   f(x) = 4x^3 - 5x^2 + 7x - 2
-            |      |      |    |
-            v      v      v    v
-   幂+因子  幂+因子  幂   常数
-   4*3x^2   -5*2x   7    0
-            |      |      |    |
-            v      v      v    v
-   f'(x)= 12x^2 - 10x  + 7  + 0
-            \__________________/
-             Summenregel: gliedweise addieren
+   f(x)  =   4x^3    -    5x^2    +    7x    -    2
+               |            |           |         |
+               v            v           v         v
+   Regel:    4*3x^2       -5*2x         7         0
+               |            |           |         |
+               v            v           v         v
+   f'(x) =   12x^2   -    10x     +     7    +    0
+               \__________________________________/
+                Summenregel: gliedweise addieren
    指数降一, 系数乘指数; 纯常数 -> 0
 ```
 
@@ -77,14 +78,14 @@ BEISPIEL（正确例题示范，含教具操作与解答）：
 
 [Werkzeug: formula]
 
-AUFGABE (berechnen, AFB II)：Gegeben ist f(x) = 4x^3 - 5x^2 + 7x - 2. Bestimmen Sie f'(x) sowie die lokale Aenderungsrate an der Stelle x0 = 2.
+AUFGABE (berechnen, AFB II)：Gegeben ist die ganzrationale Funktion $f(x) = 4x^3 - 5x^2 + 7x - 2$. Bestimmen Sie $f'(x)$ sowie die lokale Aenderungsrate an der Stelle $x_0 = 2$.
 
 HILFE:
 1. Schritt 1: Jeden Summanden einzeln nach der Potenzregel ableiten (Exponent nach vorne, Exponent minus eins).
-2. Schritt 2: Den konstanten Summanden -2 zu 0 setzen und alle Ergebnisse mit der Summenregel addieren.
-3. Schritt 3: x0 = 2 in f'(x) einsetzen und den Wert als lokale Aenderungsrate deuten.
+2. Schritt 2: Den konstanten Summanden $-2$ zu $0$ setzen und alle Ergebnisse mit der Summenregel addieren.
+3. Schritt 3: $x_0 = 2$ in $f'(x)$ einsetzen und den Wert als lokale Aenderungsrate deuten.
 
-MUSTERLÖSUNG: Gliedweise ergibt sich: 4x^3 -> 4 * 3x^2 = 12x^2; -5x^2 -> -5 * 2x = -10x; 7x -> 7; -2 -> 0. Mit der Summenregel folgt f'(x) = 12x^2 - 10x + 7. An der Stelle x0 = 2 gilt f'(2) = 12 * 4 - 10 * 2 + 7 = 48 - 20 + 7 = 35. Die lokale Aenderungsrate betraegt also 35; der Graph steigt an dieser Stelle steil an.
+MUSTERLÖSUNG: Gliedweise ergibt sich: $4x^3 \to 4 \cdot 3x^2 = 12x^2$; $-5x^2 \to -5 \cdot 2x = -10x$; $7x \to 7$; $-2 \to 0$. Mit der Summenregel folgt $f'(x) = 12x^2 - 10x + 7$. An der Stelle $x_0 = 2$ gilt $f'(2) = 12 \cdot 2^2 - 10 \cdot 2 + 7 = 48 - 20 + 7 = 35$. Die lokale Aenderungsrate betraegt also $35$; der Graph steigt an dieser Stelle steil an.
 
 Klausur-Satz: `Mit Potenz-, Faktor- und Summenregel ergibt sich f'(x) = 12x^2 - 10x + 7 und damit f'(2) = 35.`
 
@@ -94,12 +95,12 @@ VERGLEICH辨别实验（双向辨析：套法则眼 vs. 差商眼）：
 
 VERGLEICH: Waehle erst das Verfahren — 【选程序】先看 Operator 是 (i) berechnen/bestimmen（直接用 Potenz-, Faktor- und Summenregel 求导函数）还是 (ii) nachweisen/zeigen（必须用 Differenzenquotient 加 Grenzuebergang 证明）—— dann loesen.
 
-AUFGABE A：Bestimmen Sie die Ableitung von f(x) = 3x^4 - 2x^2 + 9.
-AUFGABE B：Zeigen Sie mit Hilfe des Differenzenquotienten, dass die Funktion g(x) = x^2 an der Stelle x0 die Ableitung g'(x0) = 2x0 besitzt.
+AUFGABE A：Bestimmen Sie die Ableitung von $f(x) = 3x^4 - 2x^2 + 9$.
+AUFGABE B：Zeigen Sie mit Hilfe des Differenzenquotienten, dass die Funktion $g(x) = x^2$ an der Stelle $x_0$ die Ableitung $g'(x_0) = 2x_0$ besitzt.
 
 HILFE: A verlangt nur das Ergebnis -> Verfahren (i), gliedweise Potenzregel. B enthaelt das Verb zeigen -> Verfahren (ii), vollstaendiger Grenzprozess.【选程序：动词是 berechnen/bestimmen 走套法则；动词是 zeigen/nachweisen 走差商加极限，只写结果不给分。】
 
-ANTWORT: A erfordert Verfahren (i): f'(x) = 12x^3 - 4x. B erfordert Verfahren (ii): Der Differenzenquotient lautet ((x0 + h)^2 - x0^2) / h = (2x0*h + h^2) / h = 2x0 + h; der Grenzuebergang h gegen 0 liefert g'(x0) = 2x0.
+ANTWORT: A erfordert Verfahren (i): $f'(x) = 12x^3 - 4x$. B erfordert Verfahren (ii): Der Differenzenquotient lautet $\frac{(x_0 + h)^2 - x_0^2}{h} = \frac{2x_0 h + h^2}{h} = 2x_0 + h$; der Grenzuebergang $h \to 0$ liefert $g'(x_0) = 2x_0$.
 
 Klausur-Satz: `Bei berechnen genuegt das Ergebnis der Regelanwendung, bei nachweisen muss der Grenzprozess vollstaendig dargestellt werden.`
 
@@ -107,8 +108,8 @@ Klausur-Satz: `Bei berechnen genuegt das Ergebnis der Regelanwendung, bei nachwe
 
 CHECK检索默写（自测 3 题，与答案配对）：
 
-FRAGE: Wie lautet die Potenzregel fuer f(x) = x^n? | ANTWORT: f'(x) = n * x^(n-1), der Exponent wird zum Faktor und um eins verringert.
-FRAGE: Was ergibt die Ableitung eines konstanten Summanden wie -2? | ANTWORT: Null, da der Graph einer konstanten Funktion eine waagerechte Gerade ist.
+FRAGE: Wie lautet die Potenzregel fuer $f(x) = x^n$? | ANTWORT: $f'(x) = n \cdot x^{n-1}$, der Exponent wird zum Faktor und um eins verringert.
+FRAGE: Was ergibt die Ableitung eines konstanten Summanden wie $-2$? | ANTWORT: Null ($f'(x) = 0$), da der Graph einer konstanten Funktion eine waagerechte Gerade ist.
 FRAGE: Warum darf die Faktorregel nicht auf ein Produkt zweier Funktionen angewandt werden? | ANTWORT: Die Faktorregel gilt nur fuer einen konstanten Faktor; fuer Produkte zweier Funktionen braucht man die Produktregel.
 
 Klausur-Satz: `Potenz-, Faktor- und Summenregel gelten fuer ganzrationale Funktionen und werden gliedweise angewandt.`
@@ -118,7 +119,7 @@ Klausur-Satz: `Potenz-, Faktor- und Summenregel gelten fuer ganzrationale Funkti
 (非Schritt小节，Parser 自动识别，不计入步骤步数)
 
 1. 误解"求导时把指数直接抄下来当系数，指数保持不变"。
-   中文纠偏：顺序和指数都要处理。幂法则要求指数下移作系数、指数本身减一：`(x^3)' = 3x^2`，而不是 `3x^3`。写成后者的图像斜率会被严重高估。
+   中文纠偏：顺序和指数都要处理。幂法则要求指数下移作系数、指数本身减一：`$(x^3)' = 3x^2$`，而不是 `3x^3`。写成后者的图像斜率会被严重高估。
    Korrektur-Satz: `Die Potenzregel lautet (x^n)' = n * x^(n-1); der Exponent wird zum Faktor und zugleich um eins verringert.`
 
 2. 误解"只要出现两个因式相乘，就可以用因子法则把常数提出来"。
@@ -128,8 +129,8 @@ Klausur-Satz: `Potenz-, Faktor- und Summenregel gelten fuer ganzrationale Funkti
 ## Schritt 7 — szenario
 
 ROLLE: Du bist Schueler-Tutor im Mathe-Foerderkurs der EF.
-SITUATION: Ein Mitschueler hat f(x) = 4x^3 - 5x^2 + 7x - 2 abgeleitet und als Ergebnis 12x^3 - 10x^2 + 7x herausbekommen. Erklaere ihm in einer zusammenhaengenden Darstellung (ca. 150 Woerter), welcher Regelverstoss vorliegt, fuehre die korrekte Ableitung vor und erlaeutere den Unterschied zwischen berechnen und nachweisen.
-RUBRIC (30 XP): Benennung des Fehlers — Exponent nicht verringert, Konstante nicht beachtet (5 XP) | Korrekte gliedweise Ableitung f'(x) = 12x^2 - 10x + 7 (10 XP) | Begruendung mit Potenz-, Faktor- und Summenregel (10 XP) | Abgrenzung berechnen gegen nachweisen (5 XP).
+SITUATION: Ein Mitschueler hat $f(x) = 4x^3 - 5x^2 + 7x - 2$ abgeleitet und als Ergebnis $12x^3 - 10x^2 + 7x$ herausbekommen. Erklaere ihm in einer zusammenhaengenden Darstellung (ca. 150 Woerter), welcher Regelverstoss vorliegt, fuehre die korrekte Ableitung vor und erlaeutere den Unterschied zwischen berechnen und nachweisen.
+RUBRIC (30 XP): Benennung des Fehlers — Exponent nicht verringert, Konstante nicht beachtet (5 XP) | Korrekte gliedweise Ableitung $f'(x) = 12x^2 - 10x + 7$ (10 XP) | Begruendung mit Potenz-, Faktor- und Summenregel (10 XP) | Abgrenzung berechnen gegen nachweisen (5 XP).
 
 ## Schritt 8 — entdecken
 

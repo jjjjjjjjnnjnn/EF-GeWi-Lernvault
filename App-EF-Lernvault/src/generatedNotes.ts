@@ -1901,6 +1901,25 @@ export const allVaultNotes: GeneratedNote[] = [
     "path": "03_Mathe/Produkt-und-Kettenregel.md"
   },
   {
+    "id": "mathe-sekante-zu-tangente-lokale-aenderungsrate",
+    "fach": "Mathe",
+    "thema": "Von der Sekante zur Tangente",
+    "zh": "Von der Sekante zur Tangente",
+    "operatoren": [
+      "herleiten",
+      "berechnen",
+      "deuten"
+    ],
+    "klausurrelevant": true,
+    "bodyDE": [
+      "Die erste Ableitung f'(x_0) einer differenzierbaren Funktion beschreibt die Steigung der Tangente an der Stelle x_0 und entspricht der lokalen Änderungsrate der Funktion in diesem Punkt."
+    ],
+    "bodyZH": [
+      "Mathe 核心考纲笔记：Von der Sekante zur Tangente。"
+    ],
+    "path": "03_Mathe/Sekante-zu-Tangente-Lokale-Aenderungsrate.md"
+  },
+  {
     "id": "mathe-skalarprodukt-und-ebenen",
     "fach": "Mathe",
     "thema": "Skalarprodukt und Ebenen",
