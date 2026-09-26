@@ -1,6 +1,7 @@
 import type { ReactNode } from "react";
 import type { Block } from "../vault/parser";
 import MathHtml from "./MathHtml";
+import { filterBlocksForGermanNative } from "../config/audience";
 
 /**
  * Checks if an inline code snippet resembles a mathematical formula
@@ -332,14 +333,18 @@ export const renderMathText = renderFormattedText;
 export default function Blocks({
   blocks,
   renderDiagram,
+  pureGerman = false,
 }: {
   blocks: Block[];
   /** Reise uebergibt LLM-figur; ohne -> statisches ascii-pre (offline-fallback). */
   renderDiagram?: (spec: string, index: number) => ReactNode;
+  pureGerman?: boolean;
 }) {
+  const displayBlocks = pureGerman ? filterBlocksForGermanNative(blocks) : blocks;
+
   return (
     <div>
-      {blocks.map((b, i) => {
+      {displayBlocks.map((b, i) => {
         if (b.kind === "h2") {
           const isAnekdote = b.text.toLowerCase().includes("anekdote");
           return (

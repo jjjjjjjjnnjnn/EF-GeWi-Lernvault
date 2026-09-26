@@ -8,6 +8,7 @@ import { MasteryEngine } from "../engine/mastery";
 import { FAECHER } from "../fach";
 import { Pagination } from "../components/Pagination";
 import type { Lang } from "../i18n";
+import { getHighestAfb, getOperatorInfo } from "../config/audience";
 
 interface Shown {
   id: string;
@@ -86,6 +87,14 @@ export default function Library({
   const [pageSize, setPageSize] = useState<number>(8);
   const [filterAfb, setFilterAfb] = useState<"all" | "afb1" | "afb2" | "afb3">("all");
   const [klausurOnly, setKlausurOnly] = useState<boolean>(false);
+  const [readingMode, setReadingMode] = useState<"de-native" | "bilingual">(() =>
+    lang === "de" ? "de-native" : "bilingual"
+  );
+  const [activeOperatorTip, setActiveOperatorTip] = useState<string | null>(null);
+
+  useEffect(() => {
+    setReadingMode(lang === "de" ? "de-native" : "bilingual");
+  }, [lang]);
 
   // Subject counts for the 10-Fach badge system
   const fachCounts = useMemo(() => {
@@ -490,16 +499,31 @@ export default function Library({
               <div className="flex flex-wrap items-center justify-between gap-2 border-b border-[var(--line)] pb-3 mb-4 text-xs font-mono text-[var(--gray)]">
                 <div className="flex flex-wrap items-center gap-1.5">
                   <span className="font-medium text-[var(--ink)]">{open.fach}</span>
+                  {open.operatoren && open.operatoren.length > 0 && (
+                    <span
+                      className="border border-[var(--accent)]/40 bg-[var(--accent)]/10 text-[var(--accent)] text-[10px] font-mono uppercase px-1.5 py-0.5 rounded-[var(--radius)] font-medium"
+                      title="Anforderungsbereich nach NRW Kernlehrplan"
+                    >
+                      {getHighestAfb(open.operatoren)}
+                    </span>
+                  )}
                   <span>·</span>
                   <div className="flex flex-wrap gap-1.5">
-                    {open.operatoren.map((op) => (
-                      <span
-                        key={op}
-                        className="border border-[var(--line)] px-1.5 py-0.5 text-[11px] text-[var(--gray)] rounded-sm"
-                      >
-                        {op}
-                      </span>
-                    ))}
+                    {open.operatoren.map((op) => {
+                      const info = getOperatorInfo(op);
+                      return (
+                        <button
+                          key={op}
+                          type="button"
+                          onClick={() => setActiveOperatorTip((cur) => (cur === op ? null : op))}
+                          className="border border-[var(--line)] px-1.5 py-0.5 text-[11px] text-[var(--gray)] rounded-sm"
+                          style={activeOperatorTip === op ? { borderColor: "var(--accent)", color: "var(--accent)" } : undefined}
+                          title={info ? `${info.afb}: ${info.definitionDe}` : op}
+                        >
+                          {op}
+                        </button>
+                      );
+                    })}
                   </div>
                   {open.tags && open.tags.length > 0 && (
                     <>
@@ -526,38 +550,95 @@ export default function Library({
                   )}
                 </div>
 
-                <div className="flex items-center gap-1">
-                  <span className="text-[11px] mr-1">
-                    {currentNoteIndex >= 0 ? `${currentNoteIndex + 1}/${list.length}` : ""}
-                  </span>
-                  <button
-                    type="button"
-                    onClick={handlePrevNote}
-                    disabled={currentNoteIndex <= 0}
-                    className={`px-1.5 py-0.5 rounded-[var(--radius)] border border-[var(--line)] bg-[var(--paper)] text-xs transition-colors ${
-                      currentNoteIndex <= 0
-                        ? "opacity-30 cursor-not-allowed"
-                        : "hover:border-[var(--ink)] cursor-pointer text-[var(--ink)]"
-                    }`}
-                    title="Vorherige (j/k)"
-                  >
-                    ←
-                  </button>
-                  <button
-                    type="button"
-                    onClick={handleNextNote}
-                    disabled={currentNoteIndex >= list.length - 1}
-                    className={`px-1.5 py-0.5 rounded-[var(--radius)] border border-[var(--line)] bg-[var(--paper)] text-xs transition-colors ${
-                      currentNoteIndex >= list.length - 1
-                        ? "opacity-30 cursor-not-allowed"
-                        : "hover:border-[var(--ink)] cursor-pointer text-[var(--ink)]"
-                    }`}
-                    title="Nächste (j/k)"
-                  >
-                    →
-                  </button>
+                <div className="flex flex-wrap items-center gap-2">
+                  <div className="flex items-center gap-1 border border-[var(--line)] bg-[var(--paper)] rounded-[var(--radius)] p-0.5 text-[11px] font-mono">
+                    <button
+                      type="button"
+                      onClick={() => setReadingMode("de-native")}
+                      className={`px-2 py-0.5 rounded-[var(--radius)] transition-colors cursor-pointer ${
+                        readingMode === "de-native"
+                          ? "bg-[var(--surface)] text-[var(--accent)] font-semibold border border-[var(--line)]"
+                          : "text-[var(--gray)] hover:text-[var(--ink)]"
+                      }`}
+                      title={lang === "de" ? "Schlanker Modus für deutsche Schüler (ohne chinesische Übersetzungen)" : "精简德语（适合本地高中生，无中文干扰）"}
+                    >
+                      {lang === "de" ? "DE rein" : "精简德语"}
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() => setReadingMode("bilingual")}
+                      className={`px-2 py-0.5 rounded-[var(--radius)] transition-colors cursor-pointer ${
+                        readingMode === "bilingual"
+                          ? "bg-[var(--surface)] text-[var(--ink)] font-semibold border border-[var(--line)]"
+                          : "text-[var(--gray)] hover:text-[var(--ink)]"
+                      }`}
+                      title={lang === "de" ? "Zweisprachiger Modus (DE + ZH)" : "中德双语（含中文理解与对比）"}
+                    >
+                      {lang === "de" ? "Bilingual" : "中德双语"}
+                    </button>
+                  </div>
+
+                  <div className="flex items-center gap-1">
+                    <span className="text-[11px] mr-1">
+                      {currentNoteIndex >= 0 ? `${currentNoteIndex + 1}/${list.length}` : ""}
+                    </span>
+                    <button
+                      type="button"
+                      onClick={handlePrevNote}
+                      disabled={currentNoteIndex <= 0}
+                      className={`px-1.5 py-0.5 rounded-[var(--radius)] border border-[var(--line)] bg-[var(--paper)] text-xs transition-colors ${
+                        currentNoteIndex <= 0
+                          ? "opacity-30 cursor-not-allowed"
+                          : "hover:border-[var(--ink)] cursor-pointer text-[var(--ink)]"
+                      }`}
+                      title="Vorherige (j/k)"
+                    >
+                      ←
+                    </button>
+                    <button
+                      type="button"
+                      onClick={handleNextNote}
+                      disabled={currentNoteIndex >= list.length - 1}
+                      className={`px-1.5 py-0.5 rounded-[var(--radius)] border border-[var(--line)] bg-[var(--paper)] text-xs transition-colors ${
+                        currentNoteIndex >= list.length - 1
+                          ? "opacity-30 cursor-not-allowed"
+                          : "hover:border-[var(--ink)] cursor-pointer text-[var(--ink)]"
+                      }`}
+                      title="Nächste (j/k)"
+                    >
+                      →
+                    </button>
+                  </div>
                 </div>
               </div>
+
+              {activeOperatorTip && (() => {
+                const opInfo = getOperatorInfo(activeOperatorTip);
+                if (!opInfo) return null;
+                return (
+                  <div className="mb-4 p-3 rounded-[var(--radius)] border border-[var(--accent)]/30 bg-[var(--paper-subtle)] text-xs font-mono space-y-1">
+                    <div className="flex items-center justify-between text-[var(--ink)]">
+                      <span className="font-bold uppercase tracking-wider text-[var(--accent)]">
+                        Operator: {opInfo.operator} ({opInfo.afb})
+                      </span>
+                      <button
+                        type="button"
+                        onClick={() => setActiveOperatorTip(null)}
+                        className="text-[var(--gray)] hover:text-[var(--ink)] cursor-pointer px-1 font-mono text-xs"
+                        aria-label="Schließen"
+                      >
+                        x
+                      </button>
+                    </div>
+                    <p className="text-[var(--ink)] font-sans text-xs">
+                      {lang === "de" ? opInfo.definitionDe : `${opInfo.definitionDe} · ${opInfo.definitionZh}`}
+                    </p>
+                    <div className="text-[11px] text-[var(--accent)] pt-1">
+                      Klausur-Tipp: {opInfo.klausurTippDe}
+                    </div>
+                  </div>
+                );
+              })()}
 
               {/* Title & source line */}
               <h1 className="font-serif text-2xl font-normal text-[var(--ink)] tracking-tight mb-1 break-words">
@@ -567,7 +648,7 @@ export default function Library({
                 {open.sub}
               </p>
 
-              <Blocks blocks={open.blocks} />
+              <Blocks blocks={open.blocks} pureGerman={readingMode === "de-native"} />
             </article>
           ) : (
             <div className="py-12 text-center text-sm font-sans text-[var(--gray)]">
