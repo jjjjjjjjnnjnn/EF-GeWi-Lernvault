@@ -88,7 +88,7 @@ Klausur-Satz: `Eine Änderung der Konzentration oder des Drucks verändert K_c n
 
 BEISPIEL（正确例题示范，含教具操作与解答）：
 
-[Werkzeug: balance]
+[Werkzeug: gleichgewicht]
 
 AUFGABE (berechnen, AFB II)：Für die Reaktion H2(g) + I2(g) <-> 2 HI(g) gilt bei einer bestimmten Temperatur K_c = 64. Es werden H2 und I2 mit c0 = 0,50 mol/L eingesetzt, HI ist zu Beginn nicht vorhanden. Bestimmen Sie mithilfe einer Gleichgewichtstabelle die Gleichgewichtskonzentration von HI und den Umsetzungsgrad von H2.
 

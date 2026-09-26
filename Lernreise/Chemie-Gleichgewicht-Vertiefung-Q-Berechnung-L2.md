@@ -66,7 +66,7 @@ Klausur-Satz: `Jede Stoerung startet als Q-Sprung und endet als Q-Ausgleich auf 
 
 BEISPIEL (vollstaendige Musterloesung):
 
-[Werkzeug: balance]
+[Werkzeug: gleichgewicht]
 
 AUFGABE (berechnen, AFB II): Fuer $H_2 + I_2 \rightleftharpoons 2HI$ gilt $K_c = 64$. Im Moment liegen $c(H_2) = 0{,}20$, $c(I_2) = 0{,}20$ und $c(HI) = 0{,}80 \, mol/L$ vor. Berechnen Sie $Q$ und begruenden Sie die Richtung.
 

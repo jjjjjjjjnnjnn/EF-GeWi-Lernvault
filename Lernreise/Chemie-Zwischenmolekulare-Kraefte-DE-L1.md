@@ -98,7 +98,7 @@ Klausur-Satz: `Da Wasserstoffbrücken deutlich stärker sind als Van-der-Waals-K
 
 BEISPIEL (Musteraufgabe mit Loesungsweg):
 
-[Werkzeug: balance]
+[Werkzeug: formula]
 
 AUFGABE (vergleichen & erklaeren, AFB II): Die drei Stoffe Butan (C4H10, M = 58 g/mol, Sdp. -0,5 °C), Propanal (C3H6O, M = 58 g/mol, Sdp. +49 °C) und Propan-1-ol (C3H8O, M = 60 g/mol, Sdp. +97 °C) besitzen nahezu gleiche molare Massen. Vergleichen Sie die Siedetemperaturen und erklären Sie den Unterschied mit den wirkenden zwischenmolekularen Kräften.
 

@@ -94,7 +94,7 @@ Klausur-Satz: `Die Wurzelformel folgt aus dem MWG unter der Annahme geringer Pro
 
 BEISPIEL (vollstaendige Musterloesung):
 
-[Werkzeug: balance]
+[Werkzeug: formula]
 
 AUFGABE (berechnen, AFB II): Berechnen Sie den pH von Essigsaeure mit $c_0 = 0{,}10 \, \mathrm{mol/L}$ und $K_s = 1{,}8 \cdot 10^{-5}$. Pruefen Sie die Naeherung.
 
