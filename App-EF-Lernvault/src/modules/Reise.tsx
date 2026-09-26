@@ -128,9 +128,11 @@ function updateStreak(streak: string[]): string[] {
 export default function ReiseModule({
   lang,
   vaultReisen,
+  initialCourseId,
 }: {
   lang: Lang;
   vaultReisen?: Reise[] | null;
+  initialCourseId?: string | null;
 }) {
   // Aggregate available courses: exemplar course + any courses from vault
   const allReisen = useMemo(() => {
@@ -151,6 +153,17 @@ export default function ReiseModule({
 
   const [activeCourse, setActiveCourse] = useState<Reise | null>(initialCourse);
   const [stepIdx, setStepIdx] = useState(0);
+
+  useEffect(() => {
+    if (initialCourseId) {
+      const found = allReisen.find(
+        (r) => r.id === initialCourseId || r.path === initialCourseId || r.id.endsWith(initialCourseId)
+      );
+      if (found) {
+        setActiveCourse(found);
+      }
+    }
+  }, [initialCourseId, allReisen]);
 
   // Wizard filters
   const [wizardFach, setWizardFach] = useState<string>("SoWi");

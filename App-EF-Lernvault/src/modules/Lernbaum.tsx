@@ -20,6 +20,13 @@ import type { Lang } from "../i18n";
 import { matchesKey, PER_MODULE_KEYS } from "../keys";
 import type { KeyBinding } from "../keys";
 
+import type { Reise } from "../reise";
+import {
+  buildCurriculumMap,
+  type CurriculumNode,
+  type CurriculumUnit,
+} from "../engine/curriculumBridge";
+
 interface VaultNotizEingabe {
   id: string;
   fach: string;
@@ -34,9 +41,13 @@ interface LernbaumProps {
   lang?: Lang;
   baeume?: FachBaum[];
   vaultNotes?: VaultNotizEingabe[] | null;
+  vaultReisen?: Reise[] | null;
   selectedFach?: string;
+  initialAnsicht?: "pfad" | "karte" | "liste";
   onSubjectChange?: (fach: string) => void;
   onJumpToLibrary?: (query: string, fach?: string, noteId?: string) => void;
+  onStartCourse?: (courseId: string) => void;
+  onJumpToKlausur?: (fach: string) => void;
 }
 
 interface PositionsKnoten {
@@ -310,22 +321,32 @@ export default function Lernbaum({
   lang = "zh",
   baeume = [],
   vaultNotes = null,
+  vaultReisen = null,
   selectedFach,
+  initialAnsicht,
   onSubjectChange,
   onJumpToLibrary,
+  onStartCourse,
+  onJumpToKlausur,
 }: LernbaumProps) {
   const [query, setQuery] = useState("");
   const [auswahlId, setAuswahlId] = useState<string | null>(null);
+  const [selectedCurriculumNode, setSelectedCurriculumNode] = useState<CurriculumNode | null>(null);
   const [eingeklappteIds, setEingeklappteIds] = useState<string[]>([]);
   const [versatz, setVersatz] = useState({ x: 0, y: 0 });
   const [zoom, setZoom] = useState(1);
   const [internesFach, setInternesFach] = useState("alle");
   const [reduziert, setReduziert] = useState(false);
   const [ziehen, setZiehen] = useState(false);
-  const [ansicht, setAnsicht] = useState<"karte" | "liste">("karte");
+  const [ansicht, setAnsicht] = useState<"pfad" | "karte" | "liste">(initialAnsicht ?? "karte");
   const sucheRef = useRef<HTMLInputElement>(null);
   const flaecheRef = useRef<HTMLDivElement>(null);
   const zugRef = useRef({ aktiv: false, startX: 0, startY: 0, basisX: 0, basisY: 0 });
+
+  const schliesseDrawer = useCallback(() => {
+    setAuswahlId(null);
+    setSelectedCurriculumNode(null);
+  }, []);
 
   useEffect(() => {
     if (typeof window === "undefined" || typeof window.matchMedia !== "function") return;
@@ -479,10 +500,10 @@ export default function Lernbaum({
   const waehleFach = useCallback(
     (fach: string) => {
       setInternesFach(fach);
-      setAuswahlId(null);
+      schliesseDrawer();
       onSubjectChange?.(fach);
     },
-    [onSubjectChange]
+    [onSubjectChange, schliesseDrawer]
   );
 
   const zentriereAuf = useCallback(
@@ -511,6 +532,7 @@ export default function Lernbaum({
         eltern = elternKarteMemo.get(eltern) ?? null;
       }
       setEingeklappteIds([...offene]);
+      setSelectedCurriculumNode(null);
       setAuswahlId(eintrag.nodeId);
       zentriereAuf(eintrag.nodeId, offene);
     },
@@ -519,6 +541,10 @@ export default function Lernbaum({
 
   useEffect(() => {
     function onKeyDown(e: KeyboardEvent) {
+      if (e.key === "Escape") {
+        schliesseDrawer();
+        return;
+      }
       if (matchesKey(e, KEY_SEARCH)) {
         e.preventDefault();
         sucheRef.current?.focus();
@@ -547,7 +573,7 @@ export default function Lernbaum({
     }
     window.addEventListener("keydown", onKeyDown);
     return () => window.removeEventListener("keydown", onKeyDown);
-  }, [schalteAlle]);
+  }, [schalteAlle, schliesseDrawer]);
 
   function onSucheTaste(e: ReactKeyboardEvent<HTMLInputElement>) {
     if (e.key === "Enter" && treffer.length > 0) {
@@ -622,6 +648,22 @@ export default function Lernbaum({
       ? (auswahl.knoten.noteKeywords[0] ?? auswahl.knoten.titleDE)
       : (auswahl?.knoten.titleDE ?? "");
   const suchtAktiv = query.trim().length > 0;
+
+  const curriculumUnits = useMemo<CurriculumUnit[]>(() => {
+    return buildCurriculumMap(effektivesFach, vaultReisen, vaultNotes);
+  }, [effektivesFach, vaultReisen, vaultNotes]);
+
+  const matchedReise = useMemo(() => {
+    if (!auswahl || !vaultReisen || vaultReisen.length === 0) return null;
+    const normThema = norm(auswahl.knoten.titleDE);
+    return (
+      vaultReisen.find(
+        (r) =>
+          norm(r.fach) === norm(auswahl.fach) &&
+          (norm(r.thema).includes(normThema) || normThema.includes(norm(r.thema)))
+      ) ?? null
+    );
+  }, [auswahl, vaultReisen]);
 
   function renderGliederungsKnoten(node: BaumNode, fach: string, tiefe: number): ReactNode {
     const istEingeklappt = eingeklappt.has(node.id);
@@ -888,6 +930,19 @@ export default function Lernbaum({
         <div className="flex items-center gap-1 rounded-[var(--radius)] border border-[var(--line)] bg-[var(--surface)] p-0.5">
           <button
             type="button"
+            onClick={() => setAnsicht("pfad")}
+            aria-label={lang === "de" ? "Lernpfad-Ansicht" : "关卡路线视图"}
+            aria-pressed={ansicht === "pfad"}
+            className={`rounded-[var(--radius)] px-2 py-0.5 font-sans text-xs transition-colors cursor-pointer ${
+              ansicht === "pfad"
+                ? "bg-[var(--ink)] text-[var(--paper)] font-medium"
+                : "text-[var(--gray)] hover:text-[var(--ink)]"
+            }`}
+          >
+            {lang === "de" ? "Lernpfad" : "关卡路线"}
+          </button>
+          <button
+            type="button"
             onClick={() => setAnsicht("karte")}
             aria-label={lang === "de" ? "Kartenansicht" : "画布视图"}
             aria-pressed={ansicht === "karte"}
@@ -917,6 +972,168 @@ export default function Lernbaum({
 
       <div className="flex flex-col gap-4 lg:flex-row">
         <div className="min-w-0 flex-1 overflow-x-auto">
+          {ansicht === "pfad" && (
+            <div className="space-y-6">
+              <div className="flex flex-wrap items-center justify-between gap-2 border-b border-[var(--line)] pb-2">
+                <div>
+                  <h2 className="font-serif text-base font-normal text-[var(--ink)]">
+                    {lang === "de" ? "Interaktiver Lernpfad · Kompetenzstufen" : "进阶学习路径 · 关卡地图"}
+                  </h2>
+                  <p className="font-sans text-xs text-[var(--gray)]">
+                    {lang === "de"
+                      ? "Didaktisch gestufte Route von Grundlagen über Kernmodelle bis zur Klausursimulation"
+                      : "从前置概念、核心模型到全真模考的循序渐进闯关体系，点击关卡即可开始上课与练习"}
+                  </p>
+                </div>
+                <div className="flex items-center gap-2 font-mono text-xs text-[var(--gray)]">
+                  <span className="rounded-[var(--radius)] border border-[var(--line)] bg-[var(--surface)] px-2 py-0.5">
+                    {curriculumUnits.reduce((acc, u) => acc + u.nodes.length, 0)} {lang === "de" ? "Stationen" : "关卡"}
+                  </span>
+                </div>
+              </div>
+
+              {curriculumUnits.map((unit) => (
+                <div
+                  key={unit.stage}
+                  className="rounded-[var(--radius)] border border-[var(--line)] bg-[var(--surface)] p-4 space-y-3"
+                >
+                  <div className="flex flex-wrap items-center justify-between gap-2 border-b border-[var(--line)] pb-2">
+                    <div className="flex items-center gap-2">
+                      <span className="rounded-[var(--radius)] bg-[var(--ink)] px-2 py-0.5 font-mono text-xs font-medium text-[var(--paper)]">
+                        Unit {unit.stageNumber}
+                      </span>
+                      <span className="font-serif text-sm font-medium text-[var(--ink)]">
+                        {lang === "de" ? unit.titleDE : unit.titleZH}
+                      </span>
+                    </div>
+                    <span className="font-mono text-xs text-[var(--gray)]">
+                      {unit.nodes.length} {lang === "de" ? "Lektionen" : "门课程"}
+                    </span>
+                  </div>
+                  <p className="font-sans text-xs text-[var(--gray)]">
+                    {lang === "de" ? unit.descriptionDE : unit.descriptionZH}
+                  </p>
+
+                  {unit.nodes.length === 0 ? (
+                    <p className="font-sans text-xs text-[var(--gray)] py-2">
+                      {lang === "de" ? "Keine Lektionen in dieser Stufe." : "此阶段暂无课程。"}
+                    </p>
+                  ) : (
+                    <div className="grid grid-cols-1 gap-2.5 sm:grid-cols-2 xl:grid-cols-3 pt-1">
+                      {unit.nodes.map((node) => {
+                        const isSelected = selectedCurriculumNode?.id === node.id;
+                        return (
+                          <div
+                            key={node.id}
+                            className={`flex flex-col justify-between rounded-[var(--radius)] border p-3 transition-colors ${
+                              isSelected
+                                ? "border-[var(--accent)] bg-[var(--paper)]"
+                                : "border-[var(--line)] bg-[var(--paper)] hover:border-[var(--gray)]"
+                            }`}
+                          >
+                            <div className="space-y-1.5">
+                              <div className="flex items-center justify-between gap-2">
+                                <span className="rounded-[var(--radius)] border border-[var(--line)] bg-[var(--surface)] px-1.5 py-0.5 font-mono text-xs text-[var(--accent)]">
+                                  {node.afb}
+                                </span>
+                                <span className="font-mono text-xs text-[var(--gray)]">
+                                  +{node.xp} XP
+                                </span>
+                              </div>
+                              <div className="min-h-10">
+                                <h4 className="font-serif text-sm font-medium text-[var(--ink)] line-clamp-1">
+                                  {node.thema}
+                                </h4>
+                                <p className="font-sans text-xs text-[var(--gray)] line-clamp-2 mt-0.5">
+                                  {lang === "de" ? node.summaryDE : node.summaryZH}
+                                </p>
+                              </div>
+                            </div>
+
+                            <div className="mt-3 flex items-center justify-between gap-1.5 border-t border-[var(--line)] pt-2">
+                              <button
+                                type="button"
+                                onClick={() => {
+                                  setAuswahlId(null);
+                                  setSelectedCurriculumNode(node);
+                                }}
+                                className="rounded-[var(--radius)] border border-[var(--line)] px-2 py-0.5 font-sans text-xs text-[var(--ink)] hover:border-[var(--accent)] cursor-pointer"
+                              >
+                                {lang === "de" ? "Details" : "详情"}
+                              </button>
+
+                              {node.reiseId && onStartCourse ? (
+                                <button
+                                  type="button"
+                                  onClick={() => onStartCourse(node.reiseId!)}
+                                  className="flex items-center gap-1 rounded-[var(--radius)] bg-[var(--ink)] px-2.5 py-0.5 font-sans text-xs font-medium text-[var(--paper)] hover:bg-[var(--accent)] cursor-pointer"
+                                >
+                                  <svg
+                                    width="16"
+                                    height="16"
+                                    viewBox="0 0 16 16"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    strokeWidth="1.5"
+                                    strokeLinecap="round"
+                                    aria-hidden="true"
+                                  >
+                                    <polygon points="5 3 13 8 5 13 5 3" />
+                                  </svg>
+                                  <span>{lang === "de" ? "Starten" : "开始上课"}</span>
+                                </button>
+                              ) : node.noteId && onJumpToLibrary ? (
+                                <button
+                                  type="button"
+                                  onClick={() => onJumpToLibrary(node.thema, node.fach, node.noteId)}
+                                  className="flex items-center gap-1 rounded-[var(--radius)] border border-[var(--line)] bg-[var(--surface)] px-2 py-0.5 font-sans text-xs text-[var(--ink)] hover:border-[var(--accent)] cursor-pointer"
+                                >
+                                  <svg
+                                    width="16"
+                                    height="16"
+                                    viewBox="0 0 16 16"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    strokeWidth="1.5"
+                                    strokeLinecap="round"
+                                    aria-hidden="true"
+                                  >
+                                    <path d="M3 3h10v10H3zM6 6h4M6 9h4" />
+                                  </svg>
+                                  <span>{lang === "de" ? "Notiz" : "查看笔记"}</span>
+                                </button>
+                              ) : node.klausurThema && onJumpToKlausur ? (
+                                <button
+                                  type="button"
+                                  onClick={() => onJumpToKlausur(node.fach)}
+                                  className="flex items-center gap-1 rounded-[var(--radius)] bg-[var(--ink)] px-2.5 py-0.5 font-sans text-xs font-medium text-[var(--paper)] hover:bg-[var(--accent)] cursor-pointer"
+                                >
+                                  <svg
+                                    width="16"
+                                    height="16"
+                                    viewBox="0 0 16 16"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    strokeWidth="1.5"
+                                    strokeLinecap="round"
+                                    aria-hidden="true"
+                                  >
+                                    <path d="M4 2v12M8 4h4a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2H8" />
+                                  </svg>
+                                  <span>{lang === "de" ? "Klausur" : "进入模考"}</span>
+                                </button>
+                              ) : null}
+                            </div>
+                          </div>
+                        );
+                      })}
+                    </div>
+                  )}
+                </div>
+              ))}
+            </div>
+          )}
+
           <div
             ref={flaecheRef}
             aria-label={lang === "de" ? "Lernbaum-Karte" : "学习树画布"}
@@ -1146,103 +1363,315 @@ export default function Lernbaum({
           )}
         </div>
 
-        <div className="w-full shrink-0 lg:w-80">
-          {auswahl ? (
-            <aside
-              aria-label={lang === "de" ? "Knotendetails" : "节点详情"}
-              className="rounded-[var(--radius)] border border-[var(--line)] bg-[var(--surface)] p-4"
-            >
-              <h3 className="font-serif text-lg font-normal text-[var(--ink)]">
-                {auswahl.knoten.titleDE}
-              </h3>
-              <p className="mt-0.5 font-sans text-xs text-[var(--gray)]">
-                {auswahl.knoten.titleZH}
-              </p>
-              {auswahl.knoten.titleZH.includes(PENDING_MARK) && (
-                <p className="mt-1 font-sans text-xs text-[var(--gray)]">
-                  {lang === "de" ? "Inhalt待确认" : "待确认"}
-                </p>
-              )}
-              {auswahl.knoten.operatoren.length > 0 && (
-                <div className="mt-2 flex flex-wrap gap-1">
-                  {auswahl.knoten.operatoren.map((op) => (
-                    <span
-                      key={op}
-                      className="rounded-[var(--radius)] border border-[var(--line)] px-1.5 py-0.5 font-mono text-xs text-[var(--gray)]"
+        {(auswahl !== null || selectedCurriculumNode !== null) && (
+          <div className="w-full shrink-0 lg:w-80">
+            {auswahl ? (
+              <aside
+                role="complementary"
+                aria-label={lang === "de" ? "Knotendetails" : "节点详情"}
+                className="rounded-[var(--radius)] border border-[var(--line)] bg-[var(--surface)] p-4"
+              >
+                <div className="flex items-center justify-between border-b border-[var(--line)] pb-2">
+                  <span className="font-mono text-xs text-[var(--accent)]">
+                    {auswahl.knoten.code} · {auswahl.fach}
+                  </span>
+                  <button
+                    type="button"
+                    onClick={schliesseDrawer}
+                    aria-label={lang === "de" ? "Details schließen" : "关闭详情"}
+                    className="rounded-[var(--radius)] p-1 text-[var(--gray)] hover:text-[var(--ink)] cursor-pointer"
+                  >
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="1.5"
+                      strokeLinecap="round"
+                      aria-hidden="true"
                     >
-                      {op}
-                    </span>
-                  ))}
+                      <path d="M4 4l8 8M12 4l-8 8" />
+                    </svg>
+                  </button>
                 </div>
-              )}
-              <p className="mt-2 font-mono text-xs text-[var(--gray)]">
-                {lang === "de" ? "Status: " : "状态："}
-                {statusText(auswahlStatus, lang)}
-              </p>
-              <div className="mt-3 border-t border-[var(--line)] pt-2">
-                <p className="font-sans text-xs text-[var(--gray)]">
-                  {lang === "de" ? "Klausur-Anbindung" : "考试关联"}
+
+                <h3 className="mt-2 font-serif text-lg font-normal text-[var(--ink)]">
+                  {auswahl.knoten.titleDE}
+                </h3>
+                <p className="mt-0.5 font-sans text-xs text-[var(--gray)]">
+                  {auswahl.knoten.titleZH}
                 </p>
-                <p className="mt-0.5 font-serif text-sm font-normal text-[var(--ink)]">
-                  {auswahl.knoten.klausurDE}
-                </p>
-                <p className="font-sans text-xs text-[var(--gray)]">
-                  {auswahl.knoten.klausurZH}
-                </p>
-              </div>
-              <div className="mt-3 border-t border-[var(--line)] pt-2">
-                <p className="font-sans text-xs text-[var(--gray)]">
-                  {lang === "de" ? "Leitfrage" : "核心问题"}
-                </p>
-                <p className="mt-0.5 font-serif text-sm font-normal text-[var(--ink)]">
-                  {auswahl.knoten.leitfrageDE}
-                </p>
-                <p className="font-sans text-xs text-[var(--gray)]">
-                  {auswahl.knoten.leitfrageZH}
-                </p>
-              </div>
-              <div className="mt-3 border-t border-[var(--line)] pt-2">
-                <p className="font-sans text-xs text-[var(--gray)]">
-                  {lang === "de" ? "Verknüpfte Notizen" : "关联笔记"}
-                </p>
-                {notizTreffer.length === 0 ? (
+                {auswahl.knoten.titleZH.includes(PENDING_MARK) && (
                   <p className="mt-1 font-sans text-xs text-[var(--gray)]">
-                    {lang === "de"
-                      ? "Noch keine Notizen verknüpft (Lücke)"
-                      : "暂无关联笔记（缺口）"}
+                    {lang === "de" ? "Inhalt待确认" : "待确认"}
                   </p>
-                ) : (
-                  <div className="mt-1 flex flex-col gap-1">
-                    {notizTreffer.map((id) => {
-                      const vn = vaultBeiId.get(id);
-                      return (
-                        <button
-                          key={id}
-                          type="button"
-                          onClick={() =>
-                            onJumpToLibrary?.(schluesselwort, auswahl.fach, id)
-                          }
-                          className="rounded-[var(--radius)] border border-[var(--line)] bg-[var(--paper)] px-2 py-1 text-left font-sans text-xs text-[var(--ink)] hover:border-[var(--accent)]"
-                        >
-                          {vn ? `${vn.thema} · ${vn.path}` : id}
-                        </button>
-                      );
-                    })}
+                )}
+                {auswahl.knoten.operatoren.length > 0 && (
+                  <div className="mt-2 flex flex-wrap gap-1">
+                    {auswahl.knoten.operatoren.map((op) => (
+                      <span
+                        key={op}
+                        className="rounded-[var(--radius)] border border-[var(--line)] px-1.5 py-0.5 font-mono text-xs text-[var(--gray)]"
+                      >
+                        {op}
+                      </span>
+                    ))}
                   </div>
                 )}
-              </div>
-            </aside>
-          ) : (
-            <aside
-              aria-label={lang === "de" ? "Knotendetails" : "节点详情"}
-              className="rounded-[var(--radius)] border border-[var(--line)] bg-[var(--surface)] p-4 font-sans text-xs text-[var(--gray)]"
-            >
-              {lang === "de"
-                ? "Knoten wählen, um Details, Operatoren und Notizen zu sehen."
-                : "点击节点查看详情、算子与关联笔记。"}
-            </aside>
-          )}
-        </div>
+                <p className="mt-2 font-mono text-xs text-[var(--gray)]">
+                  {lang === "de" ? "Status: " : "状态："}
+                  {statusText(auswahlStatus, lang)}
+                </p>
+                <div className="mt-3 border-t border-[var(--line)] pt-2">
+                  <p className="font-sans text-xs text-[var(--gray)]">
+                    {lang === "de" ? "Klausur-Anbindung" : "考试关联"}
+                  </p>
+                  <p className="mt-0.5 font-serif text-sm font-normal text-[var(--ink)]">
+                    {auswahl.knoten.klausurDE}
+                  </p>
+                  <p className="font-sans text-xs text-[var(--gray)]">
+                    {auswahl.knoten.klausurZH}
+                  </p>
+                </div>
+                <div className="mt-3 border-t border-[var(--line)] pt-2">
+                  <p className="font-sans text-xs text-[var(--gray)]">
+                    {lang === "de" ? "Leitfrage" : "核心问题"}
+                  </p>
+                  <p className="mt-0.5 font-serif text-sm font-normal text-[var(--ink)]">
+                    {auswahl.knoten.leitfrageDE}
+                  </p>
+                  <p className="font-sans text-xs text-[var(--gray)]">
+                    {auswahl.knoten.leitfrageZH}
+                  </p>
+                </div>
+                <div className="mt-3 border-t border-[var(--line)] pt-2">
+                  <p className="font-sans text-xs text-[var(--gray)]">
+                    {lang === "de" ? "Verknüpfte Notizen" : "关联笔记"}
+                  </p>
+                  {notizTreffer.length === 0 ? (
+                    <p className="mt-1 font-sans text-xs text-[var(--gray)]">
+                      {lang === "de"
+                        ? "Noch keine Notizen verknüpft (Lücke)"
+                        : "暂无关联笔记（缺口）"}
+                    </p>
+                  ) : (
+                    <div className="mt-1 flex flex-col gap-1">
+                      {notizTreffer.map((id) => {
+                        const vn = vaultBeiId.get(id);
+                        return (
+                          <button
+                            key={id}
+                            type="button"
+                            onClick={() =>
+                              onJumpToLibrary?.(schluesselwort, auswahl.fach, id)
+                            }
+                            className="rounded-[var(--radius)] border border-[var(--line)] bg-[var(--paper)] px-2 py-1 text-left font-sans text-xs text-[var(--ink)] hover:border-[var(--accent)] cursor-pointer"
+                          >
+                            {vn ? `${vn.thema} · ${vn.path}` : id}
+                          </button>
+                        );
+                      })}
+                    </div>
+                  )}
+                </div>
+
+                <div className="mt-4 flex flex-col gap-2 border-t border-[var(--line)] pt-3">
+                  {matchedReise && onStartCourse && (
+                    <button
+                      type="button"
+                      onClick={() => onStartCourse(matchedReise.id)}
+                      className="flex w-full items-center justify-center gap-1.5 rounded-[var(--radius)] bg-[var(--ink)] px-3 py-1.5 font-sans text-xs font-medium text-[var(--paper)] hover:bg-[var(--accent)] cursor-pointer"
+                    >
+                      <svg
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="1.5"
+                        strokeLinecap="round"
+                        aria-hidden="true"
+                      >
+                        <polygon points="5 3 13 8 5 13 5 3" />
+                      </svg>
+                      <span>{lang === "de" ? "Interaktive Lektion starten" : "开始学习互动课"}</span>
+                    </button>
+                  )}
+                  {onJumpToKlausur && (
+                    <button
+                      type="button"
+                      onClick={() => onJumpToKlausur(auswahl.fach)}
+                      className="flex w-full items-center justify-center gap-1.5 rounded-[var(--radius)] border border-[var(--line)] bg-[var(--paper)] px-3 py-1.5 font-sans text-xs text-[var(--ink)] hover:border-[var(--accent)] cursor-pointer"
+                    >
+                      <svg
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="1.5"
+                        strokeLinecap="round"
+                        aria-hidden="true"
+                      >
+                        <path d="M4 2v12M8 4h4a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2H8" />
+                      </svg>
+                      <span>{lang === "de" ? "Klausur simulieren" : "模考全真推演"}</span>
+                    </button>
+                  )}
+                </div>
+              </aside>
+            ) : selectedCurriculumNode ? (
+              <aside
+                role="complementary"
+                aria-label={lang === "de" ? "Knotendetails" : "节点详情"}
+                className="rounded-[var(--radius)] border border-[var(--line)] bg-[var(--surface)] p-4"
+              >
+                <div className="flex items-center justify-between border-b border-[var(--line)] pb-2">
+                  <span className="font-mono text-xs text-[var(--accent)]">
+                    Unit {selectedCurriculumNode.stageNumber} · {selectedCurriculumNode.afb}
+                  </span>
+                  <button
+                    type="button"
+                    onClick={schliesseDrawer}
+                    aria-label={lang === "de" ? "Details schließen" : "关闭详情"}
+                    className="rounded-[var(--radius)] p-1 text-[var(--gray)] hover:text-[var(--ink)] cursor-pointer"
+                  >
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="1.5"
+                      strokeLinecap="round"
+                      aria-hidden="true"
+                    >
+                      <path d="M4 4l8 8M12 4l-8 8" />
+                    </svg>
+                  </button>
+                </div>
+
+                <h3 className="mt-2 font-serif text-lg font-normal text-[var(--ink)]">
+                  {selectedCurriculumNode.thema}
+                </h3>
+                <p className="mt-1 font-serif text-sm font-normal text-[var(--ink)]">
+                  {selectedCurriculumNode.summaryDE}
+                </p>
+                <p className="mt-0.5 font-sans text-xs text-[var(--gray)]">
+                  {selectedCurriculumNode.summaryZH}
+                </p>
+
+                <div className="mt-3 border-t border-[var(--line)] pt-2 space-y-1">
+                  <p className="font-mono text-xs text-[var(--gray)]">
+                    {lang === "de" ? "Lernziel: " : "学习目标："}
+                    <span className="text-[var(--ink)]">{selectedCurriculumNode.ziel}</span>
+                  </p>
+                  <p className="font-mono text-xs text-[var(--gray)]">
+                    {lang === "de" ? "Erfahrungspunkte: " : "奖励学分："}
+                    <span className="text-[var(--ink)]">+{selectedCurriculumNode.xp} XP</span>
+                  </p>
+                  <p className="font-mono text-xs text-[var(--gray)]">
+                    {lang === "de" ? "Fach: " : "学科："}
+                    <span className="text-[var(--ink)]">{selectedCurriculumNode.fach}</span>
+                  </p>
+                </div>
+
+                {selectedCurriculumNode.prerequisites.length > 0 && (
+                  <div className="mt-3 border-t border-[var(--line)] pt-2">
+                    <p className="font-sans text-xs text-[var(--gray)]">
+                      {lang === "de" ? "Voraussetzungen" : "前置知识点"}
+                    </p>
+                    <div className="mt-1 flex flex-wrap gap-1">
+                      {selectedCurriculumNode.prerequisites.map((p) => (
+                        <span
+                          key={p}
+                          className="rounded-[var(--radius)] border border-[var(--line)] bg-[var(--paper)] px-1.5 py-0.5 font-mono text-xs text-[var(--gray)]"
+                        >
+                          {p}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                )}
+
+                <div className="mt-4 flex flex-col gap-2 border-t border-[var(--line)] pt-3">
+                  {selectedCurriculumNode.reiseId && onStartCourse && (
+                    <button
+                      type="button"
+                      onClick={() => onStartCourse(selectedCurriculumNode.reiseId!)}
+                      className="flex w-full items-center justify-center gap-1.5 rounded-[var(--radius)] bg-[var(--ink)] px-3 py-1.5 font-sans text-xs font-medium text-[var(--paper)] hover:bg-[var(--accent)] cursor-pointer"
+                    >
+                      <svg
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="1.5"
+                        strokeLinecap="round"
+                        aria-hidden="true"
+                      >
+                        <polygon points="5 3 13 8 5 13 5 3" />
+                      </svg>
+                      <span>{lang === "de" ? "Lektion starten" : "开始学习互动课"}</span>
+                    </button>
+                  )}
+
+                  {selectedCurriculumNode.noteId && onJumpToLibrary && (
+                    <button
+                      type="button"
+                      onClick={() =>
+                        onJumpToLibrary(
+                          selectedCurriculumNode.thema,
+                          selectedCurriculumNode.fach,
+                          selectedCurriculumNode.noteId
+                        )
+                      }
+                      className="flex w-full items-center justify-center gap-1.5 rounded-[var(--radius)] border border-[var(--line)] bg-[var(--paper)] px-3 py-1.5 font-sans text-xs text-[var(--ink)] hover:border-[var(--accent)] cursor-pointer"
+                    >
+                      <svg
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="1.5"
+                        strokeLinecap="round"
+                        aria-hidden="true"
+                      >
+                        <path d="M3 3h10v10H3zM6 6h4M6 9h4" />
+                      </svg>
+                      <span>{lang === "de" ? "Notiz lesen" : "查看知识笔记"}</span>
+                    </button>
+                  )}
+
+                  {selectedCurriculumNode.klausurThema && onJumpToKlausur && (
+                    <button
+                      type="button"
+                      onClick={() => onJumpToKlausur(selectedCurriculumNode.fach)}
+                      className="flex w-full items-center justify-center gap-1.5 rounded-[var(--radius)] border border-[var(--line)] bg-[var(--paper)] px-3 py-1.5 font-sans text-xs text-[var(--ink)] hover:border-[var(--accent)] cursor-pointer"
+                    >
+                      <svg
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="1.5"
+                        strokeLinecap="round"
+                        aria-hidden="true"
+                      >
+                        <path d="M4 2v12M8 4h4a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2H8" />
+                      </svg>
+                      <span>{lang === "de" ? "Klausur simulieren" : "模考全真推演"}</span>
+                    </button>
+                  )}
+                </div>
+              </aside>
+            ) : null}
+          </div>
+        )}
       </div>
 
       <div className="flex flex-wrap items-center justify-between gap-2 border-t border-[var(--line)] pt-3 font-mono text-xs text-[var(--gray)]">

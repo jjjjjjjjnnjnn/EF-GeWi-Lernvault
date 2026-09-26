@@ -5,6 +5,7 @@ import userEvent from "@testing-library/user-event";
 import { beforeEach, describe, expect, it, vi } from "vitest";
 import Lernbaum from "./Lernbaum";
 import type { BaumNode, FachBaum } from "../baum/types";
+import type { Reise } from "../reise";
 
 const PENDING = "\u23F3";
 
@@ -372,3 +373,97 @@ describe("Lernbaum Quellvertrag", () => {
     expect(source).toContain("PER_MODULE_KEYS.lernbaum[4]");
   });
 });
+
+describe("Lernpfad Stufen und Aktionen", () => {
+  const mockReisen: Reise[] = [
+    {
+      id: "reise-sowi-markt",
+      path: "Lernreise/Sowi-Markt.md",
+      fach: "SoWi",
+      thema: "Markt und Preisbildung",
+      level: 1,
+      ziel: "Klausur",
+      xp: 100,
+      schritte: [],
+    },
+  ];
+
+  it("rendert im Pfad-Modus 4 Units und hat standardmäßig keinen störenden Details-Bereich", () => {
+    render(
+      <Lernbaum
+        lang="zh"
+        baeume={baeume}
+        vaultNotes={vaultNotes}
+        vaultReisen={mockReisen}
+        initialAnsicht="pfad"
+      />
+    );
+
+    expect(screen.getByText("Unit 1")).toBeInTheDocument();
+    expect(screen.getByText("Unit 2")).toBeInTheDocument();
+    expect(screen.getByText("Unit 3")).toBeInTheDocument();
+    expect(screen.getByText("Unit 4")).toBeInTheDocument();
+
+    // Störende Seitenleiste ist standardmäßig nicht im DOM
+    expect(screen.queryByRole("complementary")).not.toBeInTheDocument();
+  });
+
+  it("öffnet Details per Klick und schließt sie mit dem Schließen-Button oder Escape", async () => {
+    const user = userEvent.setup();
+    render(
+      <Lernbaum
+        lang="zh"
+        baeume={baeume}
+        vaultNotes={vaultNotes}
+        vaultReisen={mockReisen}
+        initialAnsicht="pfad"
+      />
+    );
+
+    const detailsButtons = screen.getAllByRole("button", { name: "详情" });
+    expect(detailsButtons.length).toBeGreaterThan(0);
+
+    // Details öffnen
+    await user.click(detailsButtons[0]);
+    expect(screen.getByRole("complementary", { name: "节点详情" })).toBeInTheDocument();
+
+    // Schließen-Button anklicken
+    const closeBtn = screen.getByRole("button", { name: "关闭详情" });
+    await user.click(closeBtn);
+    expect(screen.queryByRole("complementary")).not.toBeInTheDocument();
+
+    // Erneut öffnen und mit Escape schließen
+    await user.click(detailsButtons[0]);
+    expect(screen.getByRole("complementary", { name: "节点详情" })).toBeInTheDocument();
+    taste(window, { key: "Escape", code: "Escape" });
+    expect(screen.queryByRole("complementary")).not.toBeInTheDocument();
+  });
+
+  it("löst Kurs-Starten und Klausur-Simulation direkt aus", async () => {
+    const user = userEvent.setup();
+    const onStartCourse = vi.fn();
+    const onJumpToKlausur = vi.fn();
+
+    render(
+      <Lernbaum
+        lang="zh"
+        baeume={baeume}
+        vaultNotes={vaultNotes}
+        vaultReisen={mockReisen}
+        initialAnsicht="pfad"
+        onStartCourse={onStartCourse}
+        onJumpToKlausur={onJumpToKlausur}
+      />
+    );
+
+    const startBtn = screen.getByRole("button", { name: "开始上课" });
+    await user.click(startBtn);
+    expect(onStartCourse).toHaveBeenCalledWith("reise-sowi-markt");
+
+    const klausurBtns = screen.getAllByRole("button", { name: "进入模考" });
+    expect(klausurBtns.length).toBeGreaterThan(0);
+    await user.click(klausurBtns[0]);
+    expect(onJumpToKlausur).toHaveBeenCalledWith("SoWi");
+  });
+});
+

@@ -184,6 +184,7 @@ export default function App() {
   });
   const [selectedFach, setSelectedFach] = useState<string>("alle");
   const [selectedNoteId, setSelectedNoteId] = useState<string | undefined>(undefined);
+  const [activeReiseId, setActiveReiseId] = useState<string | null>(null);
   const tr = t(lang);
 
   type PrimaryWorkspace = "home" | "lernen" | "wiederholen" | "ueben" | "einstellungen";
@@ -834,15 +835,31 @@ export default function App() {
               onJumpToLibrary={jumpToLibrary}
             />
           )}
-          {tab === "reise" && <ReiseModule lang={lang} vaultReisen={vault?.reisen ?? defaultVaultReisen} />}
+          {tab === "reise" && (
+            <ReiseModule
+              lang={lang}
+              vaultReisen={vault?.reisen ?? defaultVaultReisen}
+              initialCourseId={activeReiseId}
+            />
+          )}
           {tab === "lernbaum" && (
             <Lernbaum
               lang={lang}
               baeume={BAEUME_LISTE}
               vaultNotes={vault?.notes ?? defaultVaultNotes}
+              vaultReisen={vault?.reisen ?? defaultVaultReisen}
               selectedFach={selectedFach}
+              initialAnsicht="pfad"
               onSubjectChange={setSelectedFach}
               onJumpToLibrary={jumpToLibrary}
+              onStartCourse={(courseId) => {
+                setActiveReiseId(courseId);
+                switchTab("reise");
+              }}
+              onJumpToKlausur={(fach) => {
+                setSelectedFach(fach);
+                switchTab("klausursim");
+              }}
             />
           )}
           {tab === "einstellungen" && (
