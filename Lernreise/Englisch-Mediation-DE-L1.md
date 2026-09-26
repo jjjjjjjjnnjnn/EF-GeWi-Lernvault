@@ -17,31 +17,75 @@ version: Lesson-v3
 
 ## Schritt 1 — entdecken
 
-OBJECTIVES (after 15 minutes you can):
+OBJECTIVES (three measurable goals of this lesson):
 
-1. Explain the three-step mediation (Sprachmittlung) routine — fix four situational elements, select (Selektion), write in the target format — and why it never means word-for-word translation.
-2. Build the skeletons of three target formats (Zieltextformat): formal letter, e-mail, blog and article, each with opening, body and closing conventions.
-3. Self-assess a DE-to-EN mediation on content, format and register (Register) and name missing points and format losses.
+1. You can explain the three-step **mediation** (Sprachmittlung) routine — fix four situational elements, select, write in the target format — and why it never means word-for-word translation.
+2. You can build the skeletons of three **target formats** (Zieltextformat) — formal letter, e-mail, blog and article — each with opening, body and closing conventions.
+3. You can self-assess a DE-to-EN mediation on **content, format and register** (Register) and name missing points and format losses.
+
+### Hook / Phenomenon
+
+Your British exchange partner asks how German work placements work. You translate every sentence faithfully — and still fail. Why does perfect translation score zero when the reader learns nothing useful?
+
+### Core Concept & Definition
+
+**Mediation** (Sprachmittlung) is the **selection of reader-relevant aspects** from a German source and their **reshaping into a required English genre**. It works through **purpose, addressee and format**, never through sentence equivalence. The decisive unit is the **relevant aspect** (relevanter Aspekt): only the two to four points named in the task score. Translating everything misses the examination point.
+
+### Causal Chain / Model
+
+The chain runs in four steps: **situation, selection, format, check**. First, the four elements — writer to reader (Adressat), purpose (Ziel), setting (Situation), genre (Zieltextformat) — fix what matters. Second, only the required aspects are marked while brilliant but unasked detail is deleted. Third, the aspects are rebuilt in the genre with salutation, subject line or blog title. Fourth, content and format are checked in parallel, since format marks never compensate for selection errors.
 
 Klausur-Satz: `Mediation means selecting the aspects a specific reader needs from a German source and reshaping them into the required English text format, not translating the text word for word.`
 
 ## Schritt 2 — entdecken
 
-PRETRAINING (five core terms; read, cover, reproduce actively):
+PRETRAINING-Box (five core terms with definitions):
 
-- Mediation (Sprachmittlung): conveying source information for a defined purpose and reader in the target language; never sentence-by-sentence translation.
-- Source text (Ausgangstext): here a German text supplying material only, never sentence patterns.
-- Relevant aspects (relevante Aspekte): the two to four points named in the task; only these score, extra material scores nothing.
-- Target-text format (Zieltextformat): output genre (letter, e-mail, blog); format marks run parallel to content marks.
-- Paraphrase (Paraphrase): detaching from German syntax and rebuilding the information in personal English.
+### Hook / Phenomenon
+
+"I translated everything" sounds diligent and fails reliably. Examiners do not count sentences, they count decisions. These five tools turn translation into mediation.
+
+### Core Terms & Definitions
+
+- **Mediation** (Sprachmittlung): conveying **source information for a defined purpose and reader** in the target language; never sentence-by-sentence translation.
+- **Source text** (Ausgangstext): a German text supplying **material only**, never sentence patterns for copying.
+- **Relevant aspects** (relevante Aspekte): the **two to four points named in the task**; only these score, extra material scores nothing.
+- **Target-text format** (Zieltextformat): the **output genre** such as letter, e-mail or blog; format marks run parallel to content marks.
+- **Paraphrase** (Paraphrase): **detaching from German syntax** and rebuilding the information in personal English.
+
+### How They Connect / Model
+
+The terms form one routine: the **source text** offers the quarry, the **relevant aspects** cut the choice, the **paraphrase** rebuilds the stone, the **target-text format** sets it into a wall. **Mediation** is the whole building act directed at a reader. Whoever skips selection builds with foreign stones; whoever skips format builds without mortar.
 
 Klausur-Satz: `I read the task first to identify the addressee and the relevant aspects, because selection is part of the examination and translating everything would miss the point.`
 
 ## Schritt 3 — entdecken
 
-DISCOVERY (one concept plus diagram):
+TIEFEN-KONZEPT (one concept with visual schema):
 
-The single core act is selection. The task never asks to "turn German into English"; it sets a communicative situation ("your British exchange partner wants to know X") and requires only the aspects relevant to that reader and question, rewritten in the set genre. Routine: first, fix four elements — writer to reader (Adressat), purpose (Ziel), setting (Ort and Situation), genre (Zieltextformat). Second, select — mark the two to four required aspects and delete brilliant but irrelevant detail. Third, write to format — letters need salutation and signature, e-mails need subject line and sign-off, blogs need title and direct address, bodies linked with connectors. Format is a hard mark parallel to content. Two classic losses: literal translation (selection zero) and missing format items (a forgotten "Yours sincerely" or blog title).
+### Hook / Phenomenon
+
+A missing "Yours sincerely" costs as much as a missing fact. Students call that unfair; examiners call it communication. Why does a polite formula weigh like an argument?
+
+### Core Concept & Definition
+
+**Format as a parallel mark** means that **genre conventions score independently** of content completeness. A formal letter needs **salutation and signature**, an e-mail needs **subject line and sign-off**, a blog needs **title and direct address**. The rule runs $Score = Content + Format$. A perfect paraphrase in the wrong shape remains half a performance.
+
+### Causal Chain / Model
+
+The chain runs: **reader, genre, body, register**. First, the addressee decides formal versus semi-formal address. Second, the genre fixes obligatory slots that must not stay empty. Third, the body carries only selected aspects linked with connectors. Fourth, the register stays consistent from opening to closing. Two classic losses follow: literal translation destroys selection, forgotten formulas destroy format.
+
+```diagram
+  MEDIATION — selection plus format
+  German source (material only)
+    -> [1] SITUATION: reader? purpose? setting? genre?
+    -> [2] SELECTION: only named aspects (2-4 points)
+    -> [3] TARGET GENRE: letter | e-mail | blog
+         letter: Dear ... + body + Yours sincerely
+         e-mail: Subject + Dear ... + body + Best regards
+         blog: Title + Hi all! + body + closing question
+    -> Register gate: formal vs. semi-formal (consistent)
+```
 
 ```diagram
    DEUTSCHER AUSGANGSTEXT (Quelle)

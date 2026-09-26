@@ -17,31 +17,73 @@ version: Lesson-v3
 
 ## Schritt 1 — entdecken
 
-OBJECTIVES (after 15 minutes you can):
+OBJECTIVES (three measurable goals of this lesson):
 
-1. Judge the source register (Register) and lock the target register, avoiding formal-colloquial mixing within one text.
-2. Handle culture-bound terms without equivalents (Abitur, A-levels, Betriebsrat) by keeping the original plus one explanatory gloss instead of forcing translation.
-3. Use back-translation (Rueckuebersetzung) to check completeness, accuracy and register; understand why EN-to-DE serves only as a private check while the exam direction stays DE-to-EN.
+1. You can judge the source **register** (Register) and lock the target register, avoiding formal-colloquial mixing within one text.
+2. You can handle **culture-bound terms** without equivalents such as Abitur or Betriebsrat by keeping the original plus one explanatory gloss.
+3. You can use **back-translation** (Rueckuebersetzung) to check completeness, accuracy and register while keeping DE-to-EN as the exam direction.
+
+### Hook / Phenomenon
+
+"After the Abitur" reads smoothly — for Germans. A British reader stops and wonders what examination you mean. When does faithful copying become failed communication?
+
+### Core Concept & Definition
+
+**Cultural glossing** (Kulturerklaerung) is the technique of **keeping the original term plus a short explanation** where no equivalent exists. It preserves the **German context** while securing **reader comprehension**. The standard form is an apposition such as "the Abitur, the German school-leaving exam". Forcing translation erases culture; bare copying blocks understanding.
+
+### Causal Chain / Model
+
+The chain runs: **detect, keep, gloss, check**. First, culture words such as Abitur or Betriebsrat are marked before drafting. Second, the original is kept to preserve institutional identity. Third, a gloss with apposition or relative clause makes the term readable for outsiders. Fourth, back-translation renders the gloss into German to verify that no attitude or number was distorted. Comprehension without erasure is the goal.
 
 Klausur-Satz: `When a term has no equivalent in the target language, I keep the original word and add a short explanation, because a mediation must be understood by its reader, not translated word for word.`
 
 ## Schritt 2 — entdecken
 
-PRETRAINING (five core terms; read, cover, reproduce actively):
+PRETRAINING-Box (five core terms with definitions):
 
-- Register shift and pragmatic adequacy (Registerwahl): source register (formal report vs forum post) and target register (who reads) may differ and must be chosen explicitly.
-- Adding explanations and cultural contextualisation (Kulturerklaerung): without an equivalent, keep the original and add a short gloss.
-- Back-translation (Rueckuebersetzung): rendering the English output back into German to expose gaps and distortions.
-- Omission and distortion (Auslassung and Verfaelschung): the two hard errors of the reverse check; attitude words and numbers fail most often.
-- Cultural equivalence (kulturelle Aequivalenz): direct translation only where both languages share the concept.
+### Hook / Phenomenon
+
+A formal report turns into slang halfway through, and nobody notices while writing. Register drift is invisible in the draft and glaring in the mark scheme. These five terms make tone checkable.
+
+### Core Terms & Definitions
+
+- **Register choice** (Registerwahl): explicit decision on **formal versus semi-formal tone**; English "you" stays neutral while German du or Sie must be resolved.
+- **Cultural explanation** (Kulturerklaerung): **keeping the original plus a short gloss** where the target language lacks the concept.
+- **Back-translation** (Rueckuebersetzung): rendering the **English output back into German** to expose gaps and distortions.
+- **Omission and distortion** (Auslassung and Verfaelschung): the **two hard errors** of the reverse check; attitude words and numbers fail most often.
+- **Cultural equivalence** (kulturelle Aequivalenz): **direct translation only** where both languages share the underlying institution.
+
+### How They Connect / Model
+
+The terms form a control loop: **register choice** locks the tone before drafting, **cultural explanation** secures alien terms during drafting, **back-translation** tests the result after drafting. **Omission and distortion** name what the test finds, **cultural equivalence** limits where literal transfer is allowed. Without the loop, errors stay invisible until marking.
 
 Klausur-Satz: `I translate my English mediation back into German and compare it with the source, because that is the only way I can see what I actually left out or changed.`
 
 ## Schritt 3 — entdecken
 
-DISCOVERY (one concept plus diagram):
+TIEFEN-KONZEPT (one concept with visual schema):
 
-Beyond selection and format, two strategies lift a pass into a top mark: register anchoring and cultural glossing. Register anchoring: judge whether the source is a formal report or a forum post, then lock the target register. English "you" is neutral while German must choose du or Sie, so register never transfers automatically; it must be set explicitly and kept consistent — formal opening plus slang ending is drift. Cultural glossing: terms such as Abitur, FSJ or Betriebsrat have no British counterpart; hard translation leaves the reader lost. Correct form: keep the original plus an apposition or relative clause, as in "the Abitur, the German school-leaving exam". The control tool is back-translation: render the English draft into German, compare point by point with the source, and omissions plus distortions surface — while drafting, unwritten points stay invisible. Note the direction: EN-to-DE checks privately; the Abitur writes DE-to-EN.
+### Hook / Phenomenon
+
+English has no du or Sie, yet every German text chooses one. Where does politeness go when "you" erases the difference? It must be rebuilt — or the tone collapses.
+
+### Core Concept & Definition
+
+**Register anchoring** is the **conscious locking of the target tone** before drafting and its **consistent keeping** until the closing line. It maps a formal German report onto **complete sentences without contractions** and a forum post onto **semi-formal address**. The rule runs $Register = Source_{tone} + Reader_{expectation}$. Formal opening plus slang ending counts as drift and loses appropriateness marks.
+
+### Causal Chain / Model
+
+The chain runs: **judge, lock, gloss, verify**. First, the source is judged as formal report or peer post. Second, the English register is locked and contractions are allowed or banned accordingly. Third, culture terms receive keep-plus-gloss treatment inside the locked tone. Fourth, back-translation checks three failures: omission of points, distortion of attitude or numbers, and drift of tone. Direction stays fixed: EN-to-DE controls privately while DE-to-EN scores publicly.
+
+```diagram
+  STRATEGIES — register plus culture plus control
+  German source -> judge tone (formal report? forum post?)
+    -> lock English register (formal: no contractions)
+    -> gloss culture (Abitur -> "the Abitur, the exam")
+    -> back-translate EN to DE (private check)
+    -> compare: omission? distortion? register drift?
+  Rule: DE-to-EN produces, EN-to-DE only controls.
+```
 
 ```diagram
    DE-QUELLE ----(Uebersetzen)----> EN-ZIELTEXT

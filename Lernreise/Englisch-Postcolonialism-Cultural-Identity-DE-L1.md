@@ -17,31 +17,73 @@ version: Lesson-v3
 
 ## Schritt 1 — entdecken
 
-OBJECTIVES (after 20 minutes you can):
+OBJECTIVES (three measurable goals of this lesson):
 
-1. Explain three core concepts in your own words — diaspora, othering, hybrid identity (hybride Identitaet) — each with one invented example sentence.
-2. Show with five Nigeria facts how colonial history shapes contemporary cultural identity (examine, AFB II).
-3. Write a discuss paragraph on "hybrid identity as burden or resource" with two sides plus verdict (AFB III).
+1. You can explain three core concepts in your own words — **diaspora**, **othering**, **hybrid identity** (hybride Identitaet) — each with one invented example sentence.
+2. You can show with five **Nigeria facts** how colonial history shapes contemporary cultural identity.
+3. You can write a **discuss paragraph** on hybrid identity as burden or resource with two sides plus verdict.
+
+### Hook / Phenomenon
+
+Two calendars hang in one London flat: school term dates and a grandmother's market days in Enugu. Which calendar tells the truth about home? Perhaps both — and that doubling is the whole question.
+
+### Core Concept & Definition
+
+**Postcolonial identity** emerges from the **tension between inherited traditions and imposed colonial structures**. It is negotiated daily through **language choice, family ritual and public labelling**. The decisive move is **doubling rather than halving**: one more language and one more calendar mean addition, not loss. Identity becomes a repertoire, not a root.
+
+### Causal Chain / Model
+
+The chain runs: **imposition, persistence, mixing, choice**. First, colonisers install English, mission schools and borders as standards through othering. Second, these standards persist after independence as colonial legacy in language and institutions. Third, home languages and faiths mix with them into hybrid everyday forms. Fourth, diaspora life turns the mix into daily decisions about belonging. History structures, individuals answer.
 
 Klausur-Satz: `Postcolonial identity emerges from the tension between inherited traditions and imposed colonial structures.`
 
 ## Schritt 2 — entdecken
 
-PRETRAINING (five core terms; read, cover, reproduce actively):
+PRETRAINING-Box (five core terms with definitions):
 
-- Diaspora: a community living outside its place of origin while keeping cultural ties to it.
-- Othering (Othering): portraying a group as fundamentally different and inferior in order to justify power over it.
-- Hybrid identity (hybride Identitaet): an identity blending elements of two or more cultures, often described as living "between worlds".
-- Colonial legacy (koloniales Erbe): lasting political, linguistic and cultural effects of colonial rule after independence.
-- Third culture (dritte Kultur): a shared way of life growing among people between their parents' home culture and the host society.
+### Hook / Phenomenon
+
+"Where are you really from?" sounds curious and lands like a verdict. One question turns belonging into strangeness. These five terms reveal the mechanism behind the politeness.
+
+### Core Terms & Definitions
+
+- **Diaspora:** a **community living outside its place of origin** while keeping cultural ties to it.
+- **Othering** (Othering): portraying a group as **fundamentally different and inferior** in order to justify power over it.
+- **Hybrid identity** (hybride Identitaet): an identity **blending elements of two or more cultures**, often described as living between worlds.
+- **Colonial legacy** (koloniales Erbe): lasting **political, linguistic and cultural effects** of colonial rule after independence.
+- **Third culture** (dritte Kultur): a **shared way of life** growing among people between their parents' home culture and the host society.
+
+### How They Connect / Model
+
+The terms form one history: **othering** justifies rule by writing the colonised as backward, **colonial legacy** carries schools, language and borders beyond independence, **hybrid identity** answers with creative doubling. **Diaspora** moves the answer to London or New York, **third culture** stabilises it as everyday practice. Power labels, people remix.
 
 Klausur-Satz: `Othering creates a hierarchy of "us" versus "them", while hybrid identity challenges this binary.`
 
 ## Schritt 3 — entdecken
 
-DISCOVERY (one concept plus diagram):
+TIEFEN-KONZEPT (one concept with visual schema):
 
-The postcolonial question is: who defines "normal". Colonisers used othering to write the colonised as backward others, installing English, mission schools and administrative borders as standards of civilisation. After independence these standards persist, mixed with home languages, religions and family structures into hybrid identity: one person may write essays in English, joke with a grandmother in Yoruba and attend mosque on Friday. Diaspora carries this mix to London or New York, where children grow up between two curricula and "who am I" becomes a daily choice. Note: if the class case study uses India or Kenya instead of Nigeria, the concept chain stays identical; only the facts change.
+### Hook / Phenomenon
+
+A textbook calls a living village "tribal and timeless". A student writes in the margin: "Who decides what is modern?" One margin note reverses four hundred years of gaze. How does a question reclaim definition power?
+
+### Core Concept & Definition
+
+**Reversing the gaze** is the act of **questioning who defines normal** and answering from the labelled side. It turns an **othering label** into an object of analysis by asking after its author. Its formula runs $Agency = Label + Question_{who defines}$. The margin question does not refute the fact, it exposes the perspective. Definition power returns to the described.
+
+### Causal Chain / Model
+
+The chain runs: **label, question, code-switch, doubling**. First, the othering label freezes a dynamic community into stereotype. Second, the margin question names the labeller and breaks the hierarchy. Third, code-switching between English and Igbo performs lived hybridity as daily proof. Fourth, the sentence "I am double" seals the verdict as resource. Critique plus practice produce agency. Note: if the class case study uses India or Kenya instead of Nigeria, the concept chain stays identical; only the facts change.
+
+```diagram
+  COLONIAL PAST -> POSTCOLONIAL PRESENT
+  othering ("them") vs. hybrid identity ("both/and")
+  imposed norm [language / school / border]
+    + home resources [language / family / faith]
+    -> diaspora: living between worlds
+    -> third culture: negotiated everyday mix
+  Rule: doubling, not halving.
+```
 
 ```diagram
         COLONIAL PAST -----> POSTCOLONIAL PRESENT

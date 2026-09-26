@@ -17,31 +17,73 @@ version: Lesson-v3
 
 ## Schritt 1 — entdecken
 
-OBJECTIVES (after 20 minutes you can):
+OBJECTIVES (three measurable goals of this lesson):
 
-1. Explain the opposing control logics in a comparison matrix: 1984 controls through surveillance and fear, Brave New World through entertainment and desire.
-2. Compare (compare) both novels across language, power and individual freedom with one Klausur sentence per dimension (AFB II).
-3. Assess (assess) which future is more dangerous and write a balanced concluding paragraph (AFB III).
+1. You can explain the opposing control logics in a **comparison matrix**: 1984 controls through surveillance and fear, Brave New World through entertainment and desire.
+2. You can **compare** both novels across language, power and individual freedom with one Klausur sentence per dimension.
+3. You can **assess** which future is more dangerous and write a balanced concluding paragraph.
+
+### Hook / Phenomenon
+
+After one novel readers cover their webcams; after the other they check their screen time — and feel caught by both. Which fear is nearer: being watched or being distracted?
+
+### Core Concept & Definition
+
+**Opposing dystopian logics** describe **two instruments of total control** with one result. **Surveillance** (Ueberwachung) controls from the outside through fear and self-censorship. **Control through entertainment** (Kontrolle durch Unterhaltung) controls from the inside through pleasure and indifference. Both abolish freedom, but only one lets citizens notice the loss.
+
+### Causal Chain / Model
+
+The chain runs: **instrument, language, mind, obedience**. First, the instrument differs: open watchers punish while hidden managers reward. Second, language is weaponised oppositely: narrowed vocabulary starves dissent of words, flooded amusement starves reflection of silence. Third, minds react with fearful self-censorship or satisfied indifference. Fourth, both paths end obedience without questioning. All analysis uses paraphrase and short invented lines in regime style.
 
 Klausur-Satz: `Both novels warn against total control, but they imagine opposite instruments: fear versus pleasure.`
 
 ## Schritt 2 — entdecken
 
-PRETRAINING (five core terms; read, cover, reproduce actively):
+PRETRAINING-Box (five core terms with definitions):
 
-- Dystopia (Dystopie): an imagined society that appears ordered but systematically destroys freedom.
-- Surveillance (Ueberwachung): constant observation that forces people to censor themselves.
-- Control through entertainment (Kontrolle durch Unterhaltung): power that distracts with pleasure so citizens stop asking questions.
-- Language as power (Sprache als Macht): the idea that limiting words limits what people can think.
-- Comparison matrix (Vergleichsmatrix): a table comparing two texts across fixed categories (power, language, freedom).
+### Hook / Phenomenon
+
+"Both novels are against technology" fits in one sentence and halves the score. Technology is only the tool; the logics oppose each other completely. These five terms keep the matrix columns apart.
+
+### Core Terms & Definitions
+
+- **Dystopia** (Dystopie): an **imagined society** that appears ordered but systematically destroys freedom.
+- **Surveillance** (Ueberwachung): **constant observation** that forces people to censor themselves.
+- **Control through entertainment** (Kontrolle durch Unterhaltung): power that **distracts with pleasure** so citizens stop asking questions.
+- **Language as power** (Sprache als Macht): the idea that **limiting or flooding words** limits what people can think.
+- **Comparison matrix** (Vergleichsmatrix): a **table comparing two texts** across fixed categories such as power, language and freedom.
+
+### How They Connect / Model
+
+The terms build the comparison: **dystopia** names the genre warning, **surveillance** and **entertainment** name the opposing instruments, **language as power** names the shared battlefield. The **comparison matrix** forces one sentence per cell with instrument plus effect. Merging the columns confuses fear with pleasure and loses the analysis.
 
 Klausur-Satz: `Surveillance controls from the outside, entertainment controls from the inside.`
 
 ## Schritt 3 — entdecken
 
-DISCOVERY (one concept plus diagram):
+TIEFEN-KONZEPT (one concept with visual schema):
 
-Both novels answer one question: how is freedom lost. 1984 answers "by being watched": eyes everywhere produce self-censorship, language is narrowed so dissent lacks words (use only invented slogan-style paraphrase, never long original quotes). Brave New World answers "by being pampered": leisure, products and comfort remove the wish to resist; freedom is traded for pleasure. Memory hook: one regime makes citizens afraid to think, the other removes the occasion to think. All analysis uses paraphrase and short invented lines in regime style.
+### Hook / Phenomenon
+
+Terror warns its victims; pleasure recruits them. One regime must hide cameras, the other only needs to refresh feeds. Why is the voluntary danger harder to resist than the brutal one?
+
+### Core Concept & Definition
+
+**The nearer danger as assessment rule** states that **assessment must weigh visibility against voluntariness** before judging. Its formula runs $Danger = Horror + Nearness_{present}$. Surveillance is openly brutal and therefore recognisable; entertainment feels like choice and therefore escapes resistance. A concession sentence admitting both horrors is obligatory for AFB III.
+
+### Causal Chain / Model
+
+The chain runs: **concede, contrast, link, judge**. First, the horror of surveillance is conceded without weakening the argument. Second, the hidden mechanism of pleasure is contrasted as self-distraction rewarded daily. Third, the present-day link connects cameras versus feeds to 2026 student life. Fourth, the verdict names pampering as the nearer danger since readers already trade attention for comfort. Weighing precedes judging.
+
+```diagram
+  HOW FREEDOM IS LOST — two paths, one result
+  1984 SURVEILLANCE: watch -> fear -> self-censorship
+    language narrowed (few words left)
+  BRAVE NEW WORLD ENTERTAINMENT: distract -> desire -> indifference
+    language flooded (many empty words)
+  Same result: citizens stop questioning power
+  Assessment: concede horror + argue nearness + judge
+```
 
 ```diagram
               HOW FREEDOM IS LOST

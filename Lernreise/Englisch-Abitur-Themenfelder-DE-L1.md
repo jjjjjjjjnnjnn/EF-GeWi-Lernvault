@@ -17,31 +17,74 @@ version: Lesson-v3
 
 ## Schritt 1 — entdecken
 
-OBJECTIVES (after 15 minutes you can):
+OBJECTIVES (three measurable goals of this lesson):
 
-1. Summarise the five Themenfelder (UK, USA, Nigeria, identity, media and literature) by one core question and five key terms each.
-2. Turn sociocultural knowledge (Landeskunde) into argument material for assess and discuss tasks instead of reproducing facts.
-3. Write a neutral outline (AFB I) and one evaluative comment sentence (AFB III) for any field with a link to identity.
+1. You can summarise the five **Themenfelder** — UK, USA, Nigeria, identity, media and literature — by one core question and five key terms each.
+2. You can turn **sociocultural knowledge** (Landeskunde) into argument material for assess and discuss tasks instead of reproducing facts.
+3. You can write a neutral **outline** and one evaluative **comment sentence** for any field with a link to identity.
+
+### Hook / Phenomenon
+
+Knowing the population of Nigeria earns zero marks. Using one fact to judge a text earns many. When does knowledge turn from ballast into argument?
+
+### Core Concept & Definition
+
+**Themenfeld knowledge as toolbox** means preparing each field as **one core question, five terms and one transferable judgement**. It serves **assessment, not recall**: facts become examples inside reasons. The method runs identify the field, activate its terms, turn knowledge into verdict. Listing without judging scores nothing.
+
+### Causal Chain / Model
+
+The chain runs: **field, terms, example, judgement**. First, the text is assigned to one field such as UK or Nigeria. Second, the field terms are activated as usable vocabulary. Third, one or two facts are inserted as concrete examples for an argument. Fourth, the judgement closes with concession and verdict on identity or media. Knowledge scores only as judged text position.
 
 Klausur-Satz: `Knowing facts about the UK, the USA or Nigeria earns no points unless I use them to assess a text's view, because in the Abitur knowledge must become judgement.`
 
 ## Schritt 2 — entdecken
 
-PRETRAINING (five core terms; read, cover, reproduce actively):
+PRETRAINING-Box (five core terms with definitions):
 
-- Sociocultural knowledge (hinterland knowledge): basic facts about English-speaking countries expected in the Abitur; a comment without it lacks examples.
-- Colonial heritage (koloniales Erbe): the imperial past shaping present debates in the UK and Nigeria.
-- National identity (nationale Identitaet): negotiated self-image; central to Brexit, empire memory and the American Dream.
-- Conformity vs individualism (Anpassung vs Individualitaet): universal axis for identity texts and role models.
-- Participation vs manipulation (Teilhabe vs Manipulation): universal axis for media texts; social media empowers and steers at once.
+### Hook / Phenomenon
+
+An encyclopedia memorizes, an Abitur candidate judges. The same fact about Brexit can be dead weight or winning proof. Five terms decide which one it becomes.
+
+### Core Terms & Definitions
+
+- **Sociocultural knowledge** (hinterland knowledge): **basic facts about English-speaking countries** expected in the Abitur; a comment without it lacks examples.
+- **Colonial heritage** (koloniales Erbe): the **imperial past shaping present debates** in the UK and Nigeria.
+- **National identity** (nationale Identitaet): **negotiated self-image** central to Brexit, empire memory and the American Dream.
+- **Conformity vs individualism** (Anpassung vs Individualitaet): **universal axis for identity texts** and role models.
+- **Participation vs manipulation** (Teilhabe vs Manipulation): **universal axis for media texts**; social media empowers and steers at once.
+
+### How They Connect / Model
+
+The terms connect fields into arguments: **colonial heritage** links UK and Nigeria through empire memory, **national identity** frames Brexit and the American Dream as negotiation. **Conformity versus individualism** carries identity texts, **participation versus manipulation** carries media texts. **Sociocultural knowledge** supplies the examples that make both axes concrete. Axes plus facts produce judgements.
 
 Klausur-Satz: `The debate about a country's past shows that national identity is negotiated rather than inherited, which is why it keeps returning in Abitur texts.`
 
 ## Schritt 3 — entdecken
 
-DISCOVERY (one concept plus diagram):
+TIEFEN-KONZEPT (one concept with visual schema):
 
-Abitur Part A never tests isolated facts; it places a text inside one Themenfeld and asks you to understand, analyse and judge it with field knowledge. Prepare each field as a triple: one core question (what is contested), five key terms (usable in answers), one comment sentence (transferable judgement). Two axes connect the fields: identity texts revolve around conformity vs individualism, media texts around participation vs manipulation. Method: identify the field, activate its terms, turn knowledge into judgement. Listing facts scores nothing. Field guide: UK (tradition vs change: monarchy, Brexit, multicultural London, colonial heritage); USA (ideal vs reality: American Dream, freedom, equality, race and wealth gaps); Nigeria (postcolonial third pole: multi-ethnic state, megacity Lagos, Nollywood, English as lingua franca); identity (ambition vs obstacles, diversity); media and literature (information vs entertainment, multimodal texts).
+### Hook / Phenomenon
+
+The "American Dream" sounds eternal but was coined in 1931. A whole Themenfeld hangs on a label younger than a hundred years. Why does naming an ideal already judge it?
+
+### Core Concept & Definition
+
+**Ideal versus reality as judgement engine** reads every field promise against its **unequal fulfilment**. Its formula runs $Judgement = Ideal_{claim} + Reality_{gap}$. Freedom and equality motivate as ideals; race and wealth gaps limit them as facts. A fair verdict keeps both sides: powerful as hope, fragile as distribution. Construction awareness turns reciting into assessing.
+
+### Causal Chain / Model
+
+The chain runs: **ideal, gap, example, verdict**. First, the field ideal is named with its core terms. Second, the social gap is stated with one precise fact. Third, the text position is measured against both sides with line proof. Fourth, the verdict weighs attraction against inequality with concession. Hope plus gap produce a complete comment sentence.
+
+```diagram
+  ABITUR PART A — field plus axes plus judgement
+  Text belongs to ONE field: UK | USA | Nigeria | Identity | Media
+  UK: heritage + multicultural + Brexit divide
+  USA: Dream + freedom + equality vs. gaps
+  Nigeria: postcolonial + diversity + megacity + lingua franca
+  Axes: conformity vs. individualism | participation vs. manipulation
+  Method: core question + 5 terms + 1 comment sentence
+  Rule: WISSEN -> JUDGEMENT (listing scores zero)
+```
 
 ```diagram
             [ ABITUR TEIL A: Text + Aufgaben ]

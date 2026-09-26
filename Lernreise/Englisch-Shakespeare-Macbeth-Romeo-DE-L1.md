@@ -17,31 +17,72 @@ version: Lesson-v3
 
 ## Schritt 1 — entdecken
 
-OBJECTIVES (after 20 minutes you can):
+OBJECTIVES (three measurable goals of this lesson):
 
-1. Distinguish soliloquy (Selbstgespraech), aside (Beiseitesprechen), blank verse (reimloser Blankvers) and dramatic irony (dramatische Ironie), each with one invented mini-example.
-2. Analyse the sleepwalking line "Out, damned spot!" and show how repetition, exclamation and the spot image expose guilt (analyze, AFB II).
-3. Bridge one Early Modern line into modern English via the thou-and-hath bridge and write an interpretive closing sentence (interpret, AFB III).
+1. You can distinguish **soliloquy** (Selbstgespraech), **aside** (Beiseitesprechen), **blank verse** (Blankvers) and **dramatic irony** (dramatische Ironie), each with one invented mini-example.
+2. You can analyse the sleepwalking line "Out, damned spot!" and show how repetition, exclamation and the spot image expose guilt.
+3. You can bridge one Early Modern line into modern English via the **thou-and-hath bridge** and write an interpretive closing sentence.
+
+### Hook / Phenomenon
+
+A woman alone rubs invisible blood and whispers to no one — yet a whole audience listens. Why does the loneliest moment on stage tell the loudest truth?
+
+### Core Concept & Definition
+
+**Privileged speech** is stage language that gives the **audience more knowledge than the characters** hold. It works through **soliloquy and aside** as secret channels and through **blank verse** as a heartbeat rhythm. The resulting gap is called **dramatic irony** (dramatische Ironie): we watch failure with the answer in hand. What figures hide from each other, they confess to us.
+
+### Causal Chain / Model
+
+The chain runs: **personnel, channel, language, meaning**. First, personnel is counted: alone on stage signals soliloquy, a smuggled sentence aside signals aside. Second, the channel opens privileged knowledge for the audience only. Third, short broken lines and the spot image turn guilt into a visible stain. Fourth, paraphrase through thou to you and hath to has leads to interpretation: rank cannot wash away murder. Form becomes confession.
 
 Klausur-Satz: `Shakespeare reveals inner guilt through language: what characters hide from others, they confess to the audience.`
 
 ## Schritt 2 — entdecken
 
-PRETRAINING (five core terms; read, cover, reproduce actively):
+PRETRAINING-Box (five core terms with definitions):
 
-- Soliloquy (Soliloquium): a speech delivered alone on stage revealing inner thoughts to the audience.
-- Aside (Aside): a brief remark to the audience that other characters on stage supposedly do not hear.
-- Blank verse (Blankvers): unrhymed lines of roughly ten syllables, close to natural speech but rhythmically steady.
-- Dramatic irony (dramatische Ironie): the audience knows something the characters do not, creating suspense or pity.
-- Early Modern bridge (Fruehneuenglisch-Bruecke): thou means you (subject), thee means you (object), thy and thine mean your, hath means has, doth means does.
+### Hook / Phenomenon
+
+Soliloquy or aside — many students guess, and half the marks vanish. Yet the distinction takes ten seconds: count who is on stage. These five terms make old words young again.
+
+### Core Terms & Definitions
+
+- **Soliloquy** (Soliloquium): a **speech delivered alone on stage** revealing inner thoughts to the audience.
+- **Aside** (Aside): a **brief remark to the audience** that other characters on stage supposedly do not hear.
+- **Blank verse** (Blankvers): **unrhymed lines of roughly ten syllables**, close to natural speech but rhythmically steady.
+- **Dramatic irony** (dramatische Ironie): the **audience knows something the characters do not**, creating suspense or pity.
+- **Early Modern bridge** (Fruehneuenglisch-Bruecke): **thou means you** as subject, thee as object, thy and thine mean your, hath means has, doth means does.
+
+### How They Connect / Model
+
+The terms form an eavesdropping system: **soliloquy** speaks truth behind closed doors, **aside** passes a secret note with the door open, **blank verse** gives truth a heartbeat. **Dramatic irony** names the resulting knowledge gap, the **Early Modern bridge** opens the door to it. Without the bridge, translation stalls; without the gap, interpretation never starts.
 
 Klausur-Satz: `Soliloquy and aside give the audience privileged knowledge, which is the basis of dramatic irony.`
 
 ## Schritt 3 — entdecken
 
-DISCOVERY (one concept plus diagram):
+TIEFEN-KONZEPT (one concept with visual schema):
 
-The eavesdropping structure runs: the audience always knows more than the stage. Soliloquy speaks the truth behind closed doors to the audience; aside passes a secret note with the door open; blank verse makes truth sound like a heartbeat (ten-syllable steady beat); dramatic irony watches characters fail with the answer in hand — we know the imagined blood never washes off while the sleepwalker keeps scrubbing. Work with paraphrase and invented lines only; no full-scene memorisation. Below only short public-domain quotes appear (first performed and printed over four hundred years ago, long out of copyright), each with a modern gloss.
+### Hook / Phenomenon
+
+The shorter the line, the heavier the guilt. In the sleepwalking scene verse breaks into fragments, as if language itself were scrubbing. Why does broken rhythm signal a broken mind?
+
+### Core Concept & Definition
+
+**Fragmented verse as guilt signal** means that **short broken lines mirror a disturbed conscience** rather than flowing reason. Its formula runs $Guilt = Repetition + Exclamation + Image_{spot}$. The doubled imperative "Out ... out" plus the stain image turns moral burden into physical scrubbing. Broken form is not weakness of style but evidence of panic.
+
+### Causal Chain / Model
+
+The chain runs: **imperative, image, question, verdict**. First, the repeated "Out" exposes compulsion before the audience. Second, the spot image fixes guilt as a mark no washing removes. Third, the question "Will these hands ever be clean?" expects the answer never and admits irreversibility. Fourth, paraphrase closes with interpretation: power cannot undo murder. Work uses paraphrase and short public-domain quotes only, each with a modern gloss.
+
+```diagram
+  AUDIENCE (knows most) — eavesdropping structure
+  [alone on stage] -> soliloquy (truth behind closed doors)
+  [whisper to audience] -> aside (you hear, they do not)
+  blank verse as heartbeat (steady) vs. broken lines (panic)
+  dramatic irony = audience knows MORE than the figure
+  bridge: thou->you | hath->has | doth->does
+```
 
 ```diagram
           AUDIENCE (knows most)

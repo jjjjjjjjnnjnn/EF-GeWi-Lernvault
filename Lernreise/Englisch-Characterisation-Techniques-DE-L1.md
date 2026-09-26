@@ -17,31 +17,74 @@ version: Lesson-v3
 
 ## Schritt 1 — entdecken
 
-OBJECTIVES (after 15 minutes you can):
+OBJECTIVES (three measurable goals of this lesson):
 
-1. Distinguish direct characterisation (telling: the narrator names the trait) from indirect characterisation (showing: the reader infers it from evidence).
-2. Apply the five evidence channels of indirect characterisation (speech, thoughts, effect on others, actions, looks) with one line reference each.
-3. Write one P.E.E. paragraph (AFB II) that links a trait to an authorial effect instead of retelling the plot.
+1. You can distinguish **direct characterisation** (telling: the narrator names the trait) from **indirect characterisation** (showing: the reader infers it from evidence).
+2. You can apply the five evidence channels of indirect characterisation — speech, thoughts, effect on others, actions, looks — with one line reference each.
+3. You can write one **P.E.E. paragraph** that links a trait to an authorial effect instead of retelling the plot.
+
+### Hook / Phenomenon
+
+She laughs a little too loudly, then checks her phone although no message arrived. Nobody calls her insecure — yet everybody knows. How does behaviour confess what narration hides?
+
+### Core Concept & Definition
+
+**Indirect characterisation** (indirekte Charakterisierung) lets the **reader infer a stable trait** from evidence instead of receiving it as verdict. It works through **five channels**: speech, thoughts, effect on others, actions and looks. The target is always the **trait plus its effect**: sympathy, criticism or distance. Showing convinces more deeply than telling because discovery feels like own judgement.
+
+### Causal Chain / Model
+
+The chain runs: **perspective, channel, evidence, effect**. First, narrative perspective is fixed to know which channels are accessible at all. Second, the carrying channel is named, for instance actions for excessive laughter. Third, the line is quoted briefly as proof. Fourth, the reader effect is stated: inferred insecurity feels authentic and arouses sympathy. Channel plus line plus effect turn observation into analysis.
 
 Klausur-Satz: `While direct characterisation names a trait explicitly, indirect characterisation lets the reader infer it from a character's words, actions and the reactions of others.`
 
 ## Schritt 2 — entdecken
 
-PRETRAINING (five core terms; read, cover, reproduce actively):
+PRETRAINING-Box (five core terms with definitions):
 
-- Direct characterisation (direkte Charakterisierung): the narrator states the trait openly, as in "She was a generous woman" (telling).
-- Indirect characterisation (indirekte Charakterisierung): the trait must be inferred from speech, thoughts, reactions, actions and looks (showing).
-- Character trait (Charaktereigenschaft): a stable quality such as brave, jealous or insecure; the target word of the paragraph.
-- Character development (Figurenentwicklung): change or growth across the plot, often carrying the theme.
-- Narrative perspective (Erzaehlperspektive): who tells the story (first-person, third-person limited, omniscient); it decides which evidence is available.
+### Hook / Phenomenon
+
+"The boy is shy and lonely" plus plot retelling feels like analysis and stays description. The trait is named but never proven. These five terms turn labelling into evidence work.
+
+### Core Terms & Definitions
+
+- **Direct characterisation** (direkte Charakterisierung): the **narrator states the trait openly**, as in "She was a generous woman" (telling).
+- **Indirect characterisation** (indirekte Charakterisierung): the **trait must be inferred** from speech, thoughts, reactions, actions and looks (showing).
+- **Character trait** (Charaktereigenschaft): a **stable quality** such as brave, jealous or insecure; the target word of the paragraph.
+- **Character development** (Figurenentwicklung): **change or growth across the plot**, often carrying the theme.
+- **Narrative perspective** (Erzaehlperspektive): **who tells the story** such as first-person or omniscient; it decides which evidence is available.
+
+### How They Connect / Model
+
+The terms form one evidence system: **perspective** opens or closes channels, **direct mode** hands verdicts, **indirect mode** lays traces. The **trait** is the inference goal, **development** tracks its change across the plot. Whoever ignores perspective collects forbidden evidence; whoever collects only direct labels misses the literature.
 
 Klausur-Satz: `In this extract the author relies on indirect characterisation, so I have to gather evidence from what the protagonist says and does instead of from explicit statements.`
 
 ## Schritt 3 — entdecken
 
-DISCOVERY (one concept plus diagram):
+TIEFEN-KONZEPT (one concept with visual schema):
 
-Characterisation shows a person through a system of evidence. Direct mode hands over the verdict ("Tom was arrogant"); indirect mode lays out speech, behaviour and reactions so the reader draws the verdict. Exam tasks require channel, evidence and effect: which channel carries the proof (Mittel), which line holds it (Evidence), what it does to the reader (Explain). The five channels form STEAL: Speech (what and how), Thoughts (inner view), Effect on others (reactions), Actions (choices), Looks (appearance). Perspective controls access: a first-person narrator cannot report other minds; an omniscient narrator opens all five. Misreading perspective means collecting the wrong evidence.
+### Hook / Phenomenon
+
+Describe the glint on broken glass instead of stating that the moon shines — old advice, still examined. Why does an excessive laugh reveal more than the adjective insecure?
+
+### Core Concept & Definition
+
+**STEAL as evidence system** organises indirect proof into **five channels**: Speech, Thoughts, Effect on others, Actions, Looks. Its formula runs $Trait = S + T + E + A + L$. Each channel carries quotable proof with line reference; together they force inference. Perspective controls access: a first-person narrator cannot report other minds. Showing works because self-drawn verdicts feel true.
+
+### Causal Chain / Model
+
+The chain runs: **act, quote, infer, move**. First, excessive behaviour such as loud laughter plus compulsive phone-checking is marked. Second, the passage is quoted with line as channel evidence. Third, insecurity is inferred rather than received, which feels authentic. Fourth, the contrast between outward friendliness and inner comparison creates a sympathetic yet critical tone. Evidence makes the figure real instead of labelled.
+
+```diagram
+  CHARACTER — direct vs. indirect
+  DIRECT (telling): narrator names trait ("She was kind.")
+  INDIRECT (showing): reader infers from STEAL
+    Speech | Thoughts | Effect on others | Actions | Looks
+    quotes + inner view + reactions + choices + appearance
+    -> INFERRED TRAIT (e.g. insecure)
+    -> P.E.E. paragraph (channel + line + effect)
+  Gate: perspective decides accessible channels.
+```
 
 ```diagram
                 [ CHARACTER ]

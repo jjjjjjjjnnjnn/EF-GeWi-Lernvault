@@ -17,31 +17,72 @@ version: Lesson-v3
 
 ## Schritt 1 — entdecken
 
-OBJECTIVES (after 20 minutes you can):
+OBJECTIVES (three measurable goals of this lesson):
 
-1. Name fifteen standard speech devices (Stilmittel) and mark at least five in an invented speech passage with their persuasive purpose.
-2. Write a complete speech-analysis paragraph as a P.E.E. chain (Point, Evidence, Explanation) closing the loop of claim, quote and effect.
-3. Evaluate (evaluate) the persuasiveness of a 100-word invented speech from one angle of ethos, pathos or logos with a Klausur-level closing sentence (AFB II-III).
+1. You can name fifteen standard **speech devices** (Stilmittel) and mark at least five in an invented passage with their persuasive purpose.
+2. You can write a complete paragraph as a **P.E.E. chain** (Point, Evidence, Explanation) closing the loop of claim, quote and effect.
+3. You can **evaluate** the persuasiveness of a short invented speech through one lens of ethos, pathos or logos with a Klausur-level closing sentence.
+
+### Hook / Phenomenon
+
+"We came to walk, to work, to win" — three verbs, no argument, yet the room rises. Why do three beats persuade more than three reasons?
+
+### Core Concept & Definition
+
+**Stylistic devices** (Stilmittel) are **deliberate language choices** that create a defined **audience effect**. They operate through **sound, meaning and contact**: rhythm binds ears, images bind minds, address binds people. The decisive question is never which device appears but **what listeners feel, believe or do** because of it.
+
+### Causal Chain / Model
+
+The chain runs: **device, position, purpose, judgement**. First, the device is named precisely, for instance tricolon or rhetorical question. Second, its position is fixed with a short quote of eight words maximum. Third, the effect is stated in pathos, logos or ethos terms: accelerated feeling, silent self-persuasion or leadership trust. Fourth, persuasiveness is weighed as emotional versus logical force. Labels without effects stay on AFB I.
 
 Klausur-Satz: `The speaker employs stylistic devices to shape the audience's emotions and to strengthen the persuasiveness of the central argument.`
 
 ## Schritt 2 — entdecken
 
-PRETRAINING (five core terms; read, cover, reproduce actively):
+PRETRAINING-Box (five core terms with definitions):
 
-- Stylistic device (Stilmittel): a deliberate language choice (for example repetition or metaphor) creating a defined audience effect.
-- Tricolon (Dreiklang): three parallel phrases or clauses, often building to a climax.
-- Anaphora (Anapher): repetition of the same word or phrase at the start of successive clauses.
-- Ethos, pathos, logos (Glaubwuerdigkeit, Gefuehl, Logik): credibility of the speaker, emotional appeal, logical argument.
-- P.E.E. chain (P.E.E.-Kette): paragraph structure stating a point, quoting brief evidence and explaining its effect.
+### Hook / Phenomenon
+
+Listing ten devices earns applause in class and nothing in the exam. Examiners do not count names, they check effects. These five terms turn spotting into proving.
+
+### Core Terms & Definitions
+
+- **Stylistic device** (Stilmittel): a **deliberate language choice** such as repetition or metaphor creating a defined audience effect.
+- **Tricolon** (Dreiklang): **three parallel phrases** or clauses, often building to a climax like three drum hits.
+- **Anaphora** (Anapher): **repetition of the same opening** across successive clauses, binding listeners through rhythm.
+- **Ethos, pathos, logos** (Glaubwuerdigkeit, Gefuehl, Logik): **credibility of the speaker**, emotional appeal and logical argument as three effect channels.
+- **P.E.E. chain** (P.E.E.-Kette): paragraph structure with **point, brief evidence and effect explanation**; without the third step the chain is open.
+
+### How They Connect / Model
+
+The terms form one working method: **tricolon and anaphora** supply the most audible devices, **ethos, pathos and logos** supply the effect vocabulary, the **P.E.E. chain** forces every find into proof. A **stylistic device** counts only when point plus quote plus effect close the loop. Rhythm without purpose is decoration; purpose without quote is assertion.
 
 Klausur-Satz: `Each device can be analysed with the P.E.E. chain: a clear point, brief textual evidence, and an explanation of its effect on the audience.`
 
 ## Schritt 3 — entdecken
 
-DISCOVERY (one concept plus diagram):
+TIEFEN-KONZEPT (one concept with visual schema):
 
-Speech analysis asks why a device works, not only which one appears. Formula: device plus position plus effect. Repeated openings (anaphora) drum up emotion; repeated endings gather echoes; tricolon accelerates feeling; rhetorical questions pull listeners into dialogue; antithesis builds "we vs they" tension. Every passage faces three questions: what should listeners feel (pathos), what should they believe (logos), why should they trust the speaker (ethos). Fifteen devices serve exactly these questions.
+### Hook / Phenomenon
+
+"Can we fail if we move as one?" Nobody answers, yet everybody answers no. How does a question without an answer move more minds than a statement with proof?
+
+### Core Concept & Definition
+
+The **rhetorical question as contact device** is a **question expecting no reply** whose force lies in the **silently supplied answer**. Its formula runs $Effect = Question + ExpectedAnswer_{silent}$. Listeners persuade themselves by completing the thought, which turns unity into the logical condition of success. Analysis must name the expected answer explicitly.
+
+### Causal Chain / Model
+
+The chain runs: **contact, self-answer, logic, trust**. First, the question opens direct contact and breaks passive listening. Second, the audience fills in the intended "no" without noticing the steering. Third, this self-given answer supports logos by framing unity as reason. Fourth, the confident questioner gains ethos as a leader who asks what all already know. Contact becomes consent.
+
+```diagram
+  SPEECH EFFECT = DEVICE + POSITION + PURPOSE
+  SOUND: alliteration / anaphora / tricolon / parallelism
+  MEANING: metaphor / hyperbole / antithesis / emotive language
+  CONTACT: rhetorical question / direct address / imperative
+  ARGUMENT: inclusive we + ethos / pathos / logos
+  Rule: P.E.E. = Point -> "quote" (max 8 words) -> Effect
+```
 
 ```diagram
          SPEECH EFFECT = DEVICE + POSITION + PURPOSE

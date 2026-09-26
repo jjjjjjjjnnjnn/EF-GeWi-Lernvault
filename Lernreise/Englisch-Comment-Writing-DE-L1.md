@@ -17,31 +17,74 @@ version: Lesson-v3
 
 ## Schritt 1 — entdecken
 
-OBJECTIVES (after 15 minutes you can):
+OBJECTIVES (three measurable goals of this lesson):
 
-1. Explain the four-part comment skeleton (Stellungnahme): introduction, position, arguments, conclusion — and why a comment must judge instead of summarising.
-2. Run P.E.E. (Point, Evidence, Explain) for every argument, especially the often-missing Explain step.
-3. Write in formal and semi-formal register (Register) within 150-200 words, checked with linking words.
+1. You can explain the four-part **comment skeleton** (Stellungnahme) — introduction, position, arguments, conclusion — and why a comment must judge instead of summarising.
+2. You can run **P.E.E.** (Point, Evidence, Explain) for every argument, especially the often-missing Explain step.
+3. You can write in **formal and semi-formal register** (Register) within 150-200 words, checked with linking words.
+
+### Hook / Phenomenon
+
+Six opinions in 180 words feel productive and score like a list. Three explained reasons feel slower and earn the judgement marks. Why does depth beat number under a word limit?
+
+### Core Concept & Definition
+
+A **comment** (Stellungnahme) is **evaluated writing of 150-200 words** that earns its judgement through **position, reasons and fairness**. It never reproduces the text but argues a verdict with **P.E.E. chains and one counterargument**. The skeleton is fixed: topic plus statement, clear thesis, two or three proven points, summary plus final judgement. Listing without explaining stays on AFB I.
+
+### Causal Chain / Model
+
+The chain runs: **position, proof, fairness, close**. First, the position is fixed in one sentence at the end of the introduction. Second, each argument runs full P.E.E. with concrete example and an Explain sentence linking reason to position. Third, one opposing view is treated fairly and answered to secure fairness marks. Fourth, the conclusion summarises and judges with balance. Two decisions precede drafting: my position and my reader.
 
 Klausur-Satz: `A comment does not list opinions; it earns its judgement through a clear position, explained reasons, concrete examples and one fair counterargument.`
 
 ## Schritt 2 — entdecken
 
-PRETRAINING (five core terms; read, cover, reproduce actively):
+PRETRAINING-Box (five core terms with definitions):
 
-- Comment (Stellungnahme): 150-200 words of evaluated writing; it must judge, not reproduce the text.
-- Position (thesis statement): one clear sentence at the end of the introduction stating agreement or disagreement.
-- P.E.E. (Point, Evidence, Explain): three-step chain per argument; without Explain the point stays on AFB I.
-- Counterargument (Gegenargument): at least one opposing view treated fairly; required for AFB III fairness marks.
-- Register: formal (no contractions, full sentences) or semi-formal (contractions and direct address allowed), decided by reader (Adressat) and occasion.
+### Hook / Phenomenon
+
+"Firstly, social media is harmful" — then silence. The point stands alone, the example missing, the link unspoken. Most comments do not lack views, they lack the sentence that turns a view into a reason.
+
+### Core Terms & Definitions
+
+- **Comment** (Stellungnahme): **150-200 words of evaluated writing**; it must judge, not reproduce the text.
+- **Position** (thesis statement): **one clear sentence** at the end of the introduction stating agreement or disagreement.
+- **P.E.E.** (Point, Evidence, Explain): **three-step chain per argument**; without Explain the point stays on AFB I.
+- **Counterargument** (Gegenargument): at least **one opposing view treated fairly**; required for AFB III fairness marks.
+- **Register:** **formal or semi-formal tone** decided by reader (Adressat) and occasion; formal bans contractions and slang.
+
+### How They Connect / Model
+
+The terms form one verdict machine: the **position** aims it, **P.E.E.** loads each barrel with example and link, the **counterargument** proves fairness, the **register** fits the shot to the reader. A **comment** without Explain misfires; without counterargument it shoots one-sidedly; with drifted register it shoots in the wrong uniform. Depth plus fairness plus fit score.
 
 Klausur-Satz: `Before writing, I decide on my position and the register, because a comment must be clearly evaluative and appropriate for its audience.`
 
 ## Schritt 3 — entdecken
 
-DISCOVERY (one concept plus diagram):
+TIEFEN-KONZEPT (one concept with visual schema):
 
-A comment answers as the writer: what do I think. Its skeleton is fixed. Introduction: topic plus restated statement. Position: one sentence of verdict. Arguments: two or three points, each as P.E.E. Conclusion: summary plus final judgement. The typical loss sits in Arguments: students write the Point ("Firstly, social media is harmful") and jump on, skipping Evidence (concrete example) and Explain (why the example supports the position). Examiners mark bare listing as AFB I. The second loss is a missing counterargument: one-sided writing scores zero fairness. The third is register drift: "gonna" or "u" in a formal letter breaks appropriateness. Decide two things before drafting: my position and my reader.
+### Hook / Phenomenon
+
+English has no academy fixing correctness, yet every teacher marks "gonna" in a formal letter. If no institution decides, who does? Reader and occasion — exactly what writers must check first.
+
+### Core Concept & Definition
+
+**Register fit as appropriateness gate** means that **reader and occasion decide formal versus semi-formal** before the first sentence. Its formula runs $Fit = Reader + Occasion$. A formal letter to adults bans contractions and slang; a youth-forum post allows direct address and contractions. Content can be perfect and still fail when the uniform is wrong.
+
+### Causal Chain / Model
+
+The chain runs: **reader, choice, consistency, judgement**. First, the addressee is fixed as official adult or peer group. Second, the register is chosen and contractions are allowed or banned. Third, the choice is kept consistent from salutation to closing without drift into slang. Fourth, linking words secure the flow while P.E.E. secures the proof. Fit frames proof; drift breaks it.
+
+```diagram
+  COMMENT (150-200 words) — four parts plus gate
+  1. Introduction: topic + restated statement
+  2. Position: "In my opinion, ..." (clear thesis)
+  3. Arguments: 2-3 points, each as P.E.E.
+     Point -> Evidence (example) -> Explain (WHY proof)
+     + counterargument: "However, critics argue ..."
+  4. Conclusion: summary + "On balance, I conclude ..."
+  REGISTER gate: formal (no contractions) vs. semi-formal
+```
 
 ```diagram
    COMMENT (Stellungnahme, 150-200 words)

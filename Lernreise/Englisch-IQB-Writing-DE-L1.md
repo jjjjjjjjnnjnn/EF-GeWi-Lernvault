@@ -17,31 +17,74 @@ version: Lesson-v3
 
 ## Schritt 1 — entdecken
 
-OBJECTIVES (after 15 minutes you can):
+OBJECTIVES (three measurable goals of this lesson):
 
-1. Explain the fixed IQB chain with AFB levels — Task 1 outline (AFB I), Task 2 analyse (AFB II), Task 3 comment (AFB III) — in unchangeable order without early judgement.
-2. Open each part correctly: summary first sentence with four elements, analysis thesis sentence, comment position sentence; length ratio about 20 / 40 / 40.
-3. Check a three-task answer against content, language and accuracy, and name the most frequent structural losses.
+1. You can explain the fixed **IQB chain** with AFB levels — Task 1 outline, Task 2 analyse, Task 3 comment — in unchangeable order without early judgement.
+2. You can open each part correctly: **summary first sentence** with four elements, analysis thesis sentence, comment position sentence; length ratio about 20 / 40 / 40.
+3. You can check a three-task answer against **content, language and accuracy**, and name the most frequent structural losses.
+
+### Hook / Phenomenon
+
+Three tasks, one text — and most students write the same paragraph three times. Summary becomes opinion, analysis becomes retelling, comment becomes repetition. Why do good writers fail a format they fully understand?
+
+### Core Concept & Definition
+
+The **IQB chain** is a **fixed three-task sequence on one source** with strictly different functions. **Outline** compresses what the author says, **analyse** explains how she says it and to what effect, **comment** judges whether her view holds. The order never changes and early judgement breaks the task. Each level owns its AFB: reproduction, analysis, evaluation.
+
+### Causal Chain / Model
+
+The chain runs: **compress, prove, judge, link**. First, Task 1 reproduces required aspects in own words and present tense without verdict. Second, Task 2 proves devices through line of argument plus one P.E.E. chain per focus. Third, Task 3 judges with position, exemplified arguments, counterargument and final verdict. Fourth, Task 3 bridges back to a Task 2 finding so the answer reads as one argument. Blurring the levels zeroes the task.
 
 Klausur-Satz: `Outline reproduces what the author says, analyse explains how she says it and to what effect, and comment judges whether her view holds — the three tasks must not blur into one another.`
 
 ## Schritt 2 — entdecken
 
-PRETRAINING (five core terms; read, cover, reproduce actively):
+PRETRAINING-Box (five core terms with definitions):
 
-- Outline and sum up (Zusammenfassung): Task 1; compressed paraphrase without comment, covering only the required aspects.
-- Analyse (Analyse): Task 2; devices and effects only — how it is done, not what is said.
-- Comment (Stellungnahme): Task 3; position, reasons, examples, counterargument and final judgement.
-- Line of argument (Argumentationslinie): the order in which the author proceeds (contrast, climax, concession and turn); first step of Task 2.
-- Target format (Zieltextformat): if Task 3 requires a blog or article, title, direct address and closing interaction score separately.
+### Hook / Phenomenon
+
+Copying a brilliant sentence feels safe and costs the content marks. Retelling the plot feels thorough and fails Task 2. Two instincts, two traps — five terms disarm both.
+
+### Core Terms & Definitions
+
+- **Outline and sum up** (Zusammenfassung): Task 1 as **compressed paraphrase without comment**, covering only the required aspects.
+- **Analyse** (Analyse): Task 2 as **devices and effects only** — how it is done, not what is said.
+- **Comment** (Stellungnahme): Task 3 as **position, reasons, examples, counterargument and final judgement**.
+- **Line of argument** (Argumentationslinie): the **order in which the author proceeds** such as contrast, climax or concession and turn; first step of Task 2.
+- **Target format** (Zieltextformat): if Task 3 requires a **blog or article**, title, direct address and closing interaction score separately.
+
+### How They Connect / Model
+
+The terms form one ladder: **outline** stays neutral on AFB I, **analyse** climbs to effects on AFB II through **line of argument** plus P.E.E., **comment** judges on AFB III with counterargument. The **target format** adds a parallel genre mark where required. Mixing the rungs — verdict in Task 1, retelling in Task 2, repetition in Task 3 — breaks the ladder at every step.
 
 Klausur-Satz: `The three tasks form one chain, so I keep summary, analysis and comment strictly apart and let each task build on the previous one.`
 
 ## Schritt 3 — entdecken
 
-DISCOVERY (one concept plus diagram):
+TIEFEN-KONZEPT (one concept with visual schema):
 
-The non-fictional IQB writing set is a fixed three-task chain on one source with strictly different functions. Task 1 (outline, AFB I) compresses what the author says: first sentence with four elements (text type, title, author, topic), own words throughout, present tense, neutral tone — any personal verdict breaks the task. Task 2 (analyse, AFB II) explains how the author works and with what effect: first the line of argument, then one P.E.E. chain per required focus (Point as device, Evidence with line, Explain as effect); retelling the plot is the classic directional error. Task 3 (comment, AFB III) offers a choice: assess (judge a given statement) or discuss (debate an open question); both need position, two or three exemplified arguments, a counterargument and a final judgement; a required blog or article format adds title, address and closing question. Length runs about 20 / 40 / 40 percent, and Task 3 should bridge back to a Task 2 finding so the chain reads as one argument.
+### Hook / Phenomenon
+
+"Each mirror shows only half of my face" — one image says more than a page of biography. Why does a concrete mirror convince where abstract belonging bores?
+
+### Core Concept & Definition
+
+**Imagery as proof of split identity** turns an **abstract feeling into a visible image** that readers experience bodily. Its formula runs $Effect = Image + Contrast + l.$. The mirror metaphor plus the parallel breakfast-dinner contrast make incompleteness tangible and arouse sympathy. Without the line reference the image is decoration; with it the image is evidence.
+
+### Causal Chain / Model
+
+The chain runs: **line, device, effect, overall**. First, the line of argument is fixed as contrast between two worlds. Second, one P.E.E. block proves imagery with quote and line. Third, a second block proves contrast through symmetrical sentence structure. Fourth, one overall sentence summarises the combined effect without new information. Image plus structure prove the in-between position instead of describing it.
+
+```diagram
+  ONE SOURCE -> THREE TASKS (fixed order)
+  TASK 1 outline AFB I ~20%: four elements + core points
+    own words, present tense, neutral, NO verdict
+  TASK 2 analyse AFB II ~40%: line of argument + P.E.E.
+    Point -> Evidence (l. ...) -> Explain (effect)
+  TASK 3 comment AFB III ~40%: assess or discuss
+    position + arguments + example + counter + verdict
+  Rule: Task 3 bridges back to a Task 2 finding.
+```
 
 ```diagram
    EINE QUELLE  ->  DREI AUFGABEN (feste Reihenfolge)
