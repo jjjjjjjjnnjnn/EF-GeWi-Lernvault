@@ -81,7 +81,7 @@ Klausur-Satz: `Der Anstieg der Kurve folgt der RGT-Regel, der steile Abfall nach
 
 BEISPIEL（正确例题示范，含教具操作与解答）：
 
-[Werkzeug: balance]
+[Werkzeug: formula]
 
 AUFGABE (auswerten und erklären, AFB II)：In einem Versuch wird die Aktivität eines menschlichen Verdauungsenzyms bei Temperaturen von 10 °C bis 70 °C gemessen. Die Reaktionsgeschwindigkeit steigt bis 40 °C stark an, erreicht dort ihr Maximum und fällt danach steil ab; bei 70 °C ist keine Aktivität mehr messbar. Werten Sie den Kurvenverlauf aus und erklären Sie Anstieg und Abfall.
 

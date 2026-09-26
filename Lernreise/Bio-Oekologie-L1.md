@@ -80,7 +80,7 @@ Klausur-Satz: `Da auf jeder Trophieebene nur etwa zehn Prozent der Energie weite
 
 BEISPIEL（正确例题示范，含教具操作与解答）：
 
-[Werkzeug: balance]
+[Werkzeug: formula]
 
 AUFGABE (beschreiben und erklären, AFB II)：In einem Wald leben zwei Meisenarten. Art A sucht am frühen Morgen kleine Insekten in den äußeren Zweigen der Baumkrone, Art B sucht am Nachmittag größere Insekten in den Rindenritzen des Stammes. Beschreiben Sie die Unterschiede in der Nutzung der Ressourcen und erklären Sie, warum beide Arten im selben Wald dauerhaft nebeneinander existieren können.
 

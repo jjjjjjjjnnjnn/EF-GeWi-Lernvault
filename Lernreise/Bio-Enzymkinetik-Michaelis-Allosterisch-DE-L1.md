@@ -101,7 +101,7 @@ Klausur-Satz: `Die Lage von K_m auf der [S]-Achse verraet die Affinitaet, die Ho
 
 BEISPIEL (geleitete Aufgabe mit Werkzeug):
 
-[Werkzeug: balance]
+[Werkzeug: formula]
 
 AUFGABE (deuten, AFB II): Fuer ein Enzym gilt $v_{max} = 80 \, \mathrm{\mu mol/min}$ und $K_m = 2{,}0 \, \mathrm{mmol/L}$. Bestimmen Sie $v$ bei $[S] = 2{,}0 \, \mathrm{mmol/L}$ und bei $[S] = 20 \, \mathrm{mmol/L}$ und deuten Sie beide Werte.
 

@@ -80,7 +80,7 @@ Klausur-Satz: `Wer den Erwartungshorizont in Abschnitte zerlegt, kann seine Antw
 
 BEISPIEL（正确例题示范，含教具操作与解答）：
 
-[Werkzeug: balance]
+[Werkzeug: formula]
 
 AUFGABE (auswerten, erklären, beurteilen, AFB I-III, 8 BE, ca. 8 min)：Ein Versuch vergleicht die Aktivität eines Enzyms bei verschiedenen Temperaturen. Die Messwerte zeigen: Bei 20 °C ist die Umsatzrate niedrig, sie steigt bis 40 °C stark an, erreicht bei 40 °C ihr Maximum und fällt danach steil ab; bei 70 °C ist keine Umsetzung mehr messbar. a) Werten Sie den Kurvenverlauf aus (3 BE). b) Erklären Sie Anstieg und Abfall (3 BE). c) Beurteilen Sie die Aussage: "Bei 70 °C lässt sich das Enzym durch Abkühlen reaktivieren." (2 BE).
 

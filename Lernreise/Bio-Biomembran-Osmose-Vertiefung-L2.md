@@ -67,7 +67,7 @@ Klausur-Satz: `Turgor ist der Druckanteil, der Einstrom bis zum Psi-Ausgleich br
 
 BEISPIEL (vollstaendige Musterloesung):
 
-[Werkzeug: balance]
+[Werkzeug: osmose]
 
 AUFGABE (berechnen, AFB II): Eine Zelle besitzt $\Psi_s = -0{,}9 \, MPa$ und $\Psi_p = 0{,}4 \, MPa$. Die Aussenloesung besitzt $\Psi_{aussen} = -0{,}2 \, MPa$. Berechnen Sie $\Psi_{innen}$, bestimmen Sie die Richtung und deuten Sie den Turgor.
 
