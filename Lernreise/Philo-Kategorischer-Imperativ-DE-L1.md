@@ -19,9 +19,21 @@ version: Lesson-v3
 
 ZIELE (drei messbare Ziele dieser Lektion):
 
-1. Du kannst den Leitbegriff der Lektion in einem Satz definieren und ein Beispiel zuordnen.
-2. Du kannst das Kernverfahren mit den Groessen $x_1$ und $x_2$ anwenden und die Differenz $d = x_2 - x_1$ deuten.
-3. Du kannst ein kriteriengeleitetes Urteil formulieren und mit einem Klausur-Satz abschliessen (AFB II/III).
+1. Du kannst **Maxime** und **kategorischen Imperativ** in je einem Satz definieren und die Universalisierungsformel korrekt wiedergeben.
+2. Du kannst die Maxime $M$ eines Falles formulieren und mit dem Test $M \to G$ auf Denk- und Wollenswiderspruch pruefen.
+3. Du kannst mit dem Kriterium **Widerspruchsfreiheit** ein Urteil zu Pflicht und Verbot formulieren und mit einem Klausur-Satz schliessen (AFB II/III).
+
+### Hook / Phaenomen
+
+Darf man luegen, um einem Freund zu helfen, darf man schummeln, wenn alle es tun? Neigungen wechseln taeglich, doch Kant sucht eine Regel, die immer gilt. Was waere, wenn jeder so handeln duerfte wie du gerade jetzt? Genau diese Probe entscheidet ueber richtig und falsch.
+
+### Fachbegriff & Definition
+
+Der **kategorische Imperativ** ist Kants oberstes Moralprinzip: Handle nur nach derjenigen **Maxime**, durch die du zugleich wollen kannst, dass sie ein **allgemeines Gesetz** werde. Eine **Maxime** ist der subjektive Grundsatz deines Handelns, das **allgemeine Gesetz** $G$ seine widerspruchsfreie Verallgemeinerung. Moralisch gut ist also nicht die nette Folge, sondern der verallgemeinerbare Wille.
+
+### Wirkungsgefuege / Modell
+
+Der Mechanismus laeuft in drei Stufen: **Formulierung, Universalisierung, Urteil**. Erstens wird die Maxime $M$ praezise formuliert, etwa $M = Versprechen + Bruch + Vorteil$. Zweitens wird universalisiert zu $G = Alle(M)$ und geprueft, ob $M \to G$ denkbar und wollbar bleibt. Drittens folgt das Urteil: Scheitert die Denkbarkeit, liegt **Denkwiderspruch** vor, scheitert die Wollbarkeit, liegt **Wollenswiderspruch** vor. Faellt die Probe durch, ist die Handlung pflichtwidrig.
 
 Klausur-Satz: `Der kategorische Imperativ verlangt, nur nach derjenigen Maxime zu handeln, durch die du zugleich wollen kannst, dass sie ein allgemeines Gesetz werde.`
 
@@ -29,11 +41,21 @@ Klausur-Satz: `Der kategorische Imperativ verlangt, nur nach derjenigen Maxime z
 
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
-- Leitbegriff: zentrale Definition der Lektion in einem Satz mit Klausurformulierung.
-- Kriterium: Massstab, an dem Faelle der Form $x_1$ und $x_2$ gemessen werden.
-- Verfahren: geregelte Abfolge von Rekonstruktion, Anwendung und Urteil.
-- Beleg: Text- oder Datenausschnitt, der jede Deutung $D$ mit einem Beleg $B$ stuetzt.
-- Urteil: begruendete Entscheidung aus Kriterium und Differenz $d = x_2 - x_1$.
+### Hook / Phaenomen
+
+„Alle machen es doch" ist kein Argument, sondern das Problem. Kant verlangt praezise Werkzeuge statt Bauchgefuehl. Diese fuenf Begriffe geben dir das Pruefgeraet fuer jede Maxime.
+
+### Fachbegriffe & Definitionen
+
+- **Maxime:** Der subjektive Handlungsgrundsatz in der Form $M = Lage + Handlung + Zweck$. Beispiel: Ich luege, um aus Verlegenheit zu entkommen.
+- **Kategorischer Imperativ:** Das unbedingte Gebot der Universalisierung mit der Formel $Handle(M) \iff Wollbar(G)$. Er gilt ohne Ausnahme und ohne Lohn.
+- **Denkwiderspruch:** Das Scheitern der Denkbarkeit von $G$. Beispiel: Universalisiertes falsches Versprechen zerstoert den Begriff $Versprechen = Vertrauen$, also gilt $M \not\to G$.
+- **Wollenswiderspruch:** Die Denkbarkeit bleibt, doch kein vernuenftiges Wesen kann $G$ wollen. Beispiel: Niemand kann eine Welt ohne Hilfe wollen, also ist Hilfe unvollkommene Pflicht.
+- **Selbstzweckformel:** Das Verbot, Menschheit bloss als Mittel zu gebrauchen, mit $Wuerde = Zweck + Unverfuegbarkeit$. Sie schuetzt jede Person vor Instrumentalisierung.
+
+### Wirkungsgefuege / Modell
+
+Die Begriffe greifen ineinander: Die **Maxime** liefert das Material, der **kategorische Imperativ** liefert die Pruefform $M \to G$. **Denkwiderspruch** begruendet vollkommene Pflichten wie Nichtluegen, **Wollenswiderspruch** begruendet unvollkommene Pflichten wie Hilfe. Die **Selbstzweckformel** sichert das Ergebnis gegen kalte Folgenrechnung ab. Wer in der Klausur prueft, muss deshalb immer fragen: Scheitert Denken oder Wollen, und bleibt die Wuerde gewahrt?
 
 Klausur-Satz: `Eine Handlung gewinnt ihren moralischen Wert nicht aus den Folgen, sondern aus der Maxime, aus der sie hervorgeht.`
 
@@ -41,12 +63,23 @@ Klausur-Satz: `Eine Handlung gewinnt ihren moralischen Wert nicht aus den Folgen
 
 TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
-Das Kernmodell dieser Lektion verbindet Begriff, Verfahren und Urteil. Zuerst wird der Fall rekonstruiert, dann werden die Werte $x_1$ und $x_2$ bestimmt und schliesslich wird die Differenz $d = x_2 - x_1$ am Kriterium gemessen. Universalisierungstest: Maxime $M$ ist genau dann erlaubt, wenn $M$ widerspruchsfrei als allgemeines Gesetz $G$ gewollt werden kann: $M \to G$.
+### Hook / Phaenomen
+
+Falsches Versprechen fuer schnelles Geld klingt harmlos, solange nur einer es tut. Doch was passiert, wenn alle es duerfen? Dann glaubt niemand mehr ein Versprechen, und der Trick wird unmoeglich. Der Einzelfall zerstoert seine eigene Bedingung, sobald er Gesetz wird.
+
+### Fachbegriff & Definition
+
+Der **Universalisierungstest** prueft eine Maxime $M$ in vier Schritten auf Verallgemeinerbarkeit als Gesetz $G$. Er unterscheidet **Denkwiderspruch** und **Wollenswiderspruch** und ordnet sie vollkommenen und unvollkommenen **Pflichten** zu. Die Pruefregel lautet $Erlaubt(M) \iff Denkbar(G) + Wollbar(G)$. Nur was beide Proben besteht, ist moralisch erlaubt.
+
+### Wirkungsgefuege / Modell
+
+Denke in Kausalkette: **Rekonstruktion, Probe, Einordnung**. Erstens wird $M = falsches Versprechen + Vorteil$ rekonstruiert. Zweitens wird $G = Alle brechen Versprechen$ gedacht: Dann gilt $Vertrauen = 0$ und $Versprechen = unmoeglich$, also $M \not\to G$ mit Denkwiderspruch. Drittens wird eingeordnet: Verbot als **vollkommene Pflicht**, ergaenzt durch die Selbstzweckformel $Mensch = Zweck + NiemalsBlossMittel$. Genau diese Strenge verlangt in der Klausur ein **kriteriengeleitetes Urteil**, keine Folgenbilanz.
 
 ```diagram
-  Fall -> Rekonstruktion [x1, x2]
-  Rekonstruktion -> Kriterium -> Differenz d = x2 - x1
-  Differenz -> Urteil (AFB III)
+  Maxime M [Lage + Handlung + Zweck]
+  Maxime M -> Gesetz G = Alle(M)
+  Test G -> Denkbar + Wollbar
+  Test -> Urteil (Pflicht oder Verbot)
 ```
 
 Klausur-Satz: `Lässt sich die Maxime nicht widerspruchsfrei als allgemeines Gesetz denken oder wollen, so ist die Handlung pflichtwidrig.`

@@ -19,9 +19,21 @@ version: Lesson-v3
 
 ZIELE (drei messbare Ziele dieser Lektion):
 
-1. Du kannst den Leitbegriff der Lektion in einem Satz definieren und ein Beispiel zuordnen.
-2. Du kannst das Kernverfahren mit den Groessen $x_1$ und $x_2$ anwenden und die Differenz $d = x_2 - x_1$ deuten.
-3. Du kannst ein kriteriengeleitetes Urteil formulieren und mit einem Klausur-Satz abschliessen (AFB II/III).
+1. Du kannst **Nutzenprinzip** und **Pflichtethik** in je einem Satz definieren und Utilitarismus und Kant korrekt zuordnen.
+2. Du kannst einen Fall doppelt pruefen: mit $U = \sum (Lust - Leid)$ und mit $M \to G$ samt Selbstzweckformel.
+3. Du kannst mit dem Kriterium **Menschenwuerde** ein vergleichendes Urteil formulieren und mit einem Klausur-Satz schliessen (AFB II/III).
+
+### Hook / Phaenomen
+
+Ein Wagen rast auf fuenf Menschen zu, du kannst die Weiche stellen und nur einen treffen. Rechnen sagt stellen, Kant fragt: Darf man einen zum blossen Mittel machen? Derselbe Fall, zwei voellig verschiedene Pruefungen. Welche Stimme wiegt schwerer: Zahl oder Wuerde?
+
+### Fachbegriff & Definition
+
+Der **Utilitarismus** beurteilt nach Folgen mit der Regel $Richtig = Max(U)$ fuer das Gesamtglueck. Kants **Pflichtethik** beurteilt nach der Maxime mit der Regel $Erlaubt \iff Wollbar(G)$ als allgemeines Gesetz. Der Gegensatz lautet **Nutzen gegen Pflicht**, also Mehrheitsertrag gegen Wuerdeschutz. Kurz: Darf man einen opfern, um fuenf zu retten?
+
+### Wirkungsgefuege / Modell
+
+Der Mechanismus laeuft in drei Stufen: **Folgenbilanz, Maximenprobe, Abwaegung**. Erstens bilanziert der Utilitarismus $U_{stellen} = 5 - 1 = +4$ gegen $U_{nichts} = -5$. Zweitens prueft Kant mit $M = Toeten + Retten$ ob $M \to G$ denkbar bleibt und ob $Mensch = Zweck$ verletzt wird. Drittens kollidieren **Gesamtglueck** und **Menschenwuerde**: Was nuetzt, kann trotzdem verboten sein. Faellt eine Brille aus, wird Ethik entweder kalt rechnend oder weltfremd starr.
 
 Klausur-Satz: `Utilitarismus und Kant stellen dieselbe Frage anders: Nutzen für die meisten oder Pflicht aus der Maxime?`
 
@@ -29,11 +41,21 @@ Klausur-Satz: `Utilitarismus und Kant stellen dieselbe Frage anders: Nutzen für
 
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
-- Leitbegriff: zentrale Definition der Lektion in einem Satz mit Klausurformulierung.
-- Kriterium: Massstab, an dem Faelle der Form $x_1$ und $x_2$ gemessen werden.
-- Verfahren: geregelte Abfolge von Rekonstruktion, Anwendung und Urteil.
-- Beleg: Text- oder Datenausschnitt, der jede Deutung $D$ mit einem Beleg $B$ stuetzt.
-- Urteil: begruendete Entscheidung aus Kriterium und Differenz $d = x_2 - x_1$.
+### Hook / Phaenomen
+
+Zwei Prueffragen, zwei Welten: Mehrt es das Glueck oder achtet es die Person? Ohne scharfe Begriffe vermischst du beide Ebenen. Diese fuenf Bausteine trennen sauber, was du vergleichen musst.
+
+### Fachbegriffe & Definitionen
+
+- **Nutzenprinzip:** Der utilitaristische Massstab $Richtig = Max(U)$ mit $U = \sum (Lust - Leid)$. Er rechtfertigt Opfer, wenn die Bilanz positiv bleibt.
+- **Maximenpruefung:** Kants Test $M \to G$ auf Denk- und Wollenswiderspruch. Beispiel: Notluege scheitert, weil $G = Alle luegen$ Vertrauen mit $Vertrauen = 0$ zerstoert.
+- **Selbstzweckformel:** Kants Verbot der Instrumentalisierung mit $Mensch = Zweck + NiemalsBlossMittel$. Sie verbietet, Unschuldige fuer fremde Zwecke zu benutzen.
+- **Trolley-Fall:** Das Gedankenexperiment $1$ gegen $5$ mit Weichenoption. Es trennt Folgenbewertung von Pflichtbewertung am selben Fall.
+- **Menschenwuerde:** Das kantische Kriterium $Wuerde = Unverfuegbarkeit + Achtung$. Es begrenzt jede Nutzenrechnung von aussen.
+
+### Wirkungsgefuege / Modell
+
+Die Begriffe greifen ineinander: Das **Nutzenprinzip** maximiert $U$ ueber alle Betroffenen, die **Maximenpruefung** filtert mit $M \to G$ das Verallgemeinerbare heraus. Die **Selbstzweckformel** stoppt den **Trolley-Fall** dort, wo $1 = Mittel$ wuerde. Die **Menschenwuerde** entscheidet den Konflikt als hoeheres Kriterium. Wer in der Klausur vergleicht, muss deshalb immer fragen: Was wiegt schwerer, Bilanz oder Wuerde?
 
 Klausur-Satz: `Der Utilitarismus bewertet eine Handlung nach ihren Folgen für das Gesamtglück.`
 
@@ -41,12 +63,23 @@ Klausur-Satz: `Der Utilitarismus bewertet eine Handlung nach ihren Folgen für d
 
 TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
-Das Kernmodell dieser Lektion verbindet Begriff, Verfahren und Urteil. Zuerst wird der Fall rekonstruiert, dann werden die Werte $x_1$ und $x_2$ bestimmt und schliesslich wird die Differenz $d = x_2 - x_1$ am Kriterium gemessen. Universalisierungstest: Maxime $M$ ist genau dann erlaubt, wenn $M$ widerspruchsfrei als allgemeines Gesetz $G$ gewollt werden kann: $M \to G$.
+### Hook / Phaenomen
+
+Darf man einen Unschuldigen bestrafen, um eine Stadt zu beruhigen? Der Nutzen winkt, Kant verbietet. Der Fall zeigt die haerteste Probe beider Ethiken: Rettet die Zahl das Gewissen oder schuetzt die Pflicht den Einzelnen? Genau hier brauchst du ein doppeltes Pruefraster.
+
+### Fachbegriff & Definition
+
+Das **Doppelraster Folgen gegen Pflicht** legt beide Verfahren uebereinander und misst sie an **Menschenwuerde**. Die utilitaristische Spur rechnet $U = Nutzen - Schaden$ fuer Mehrheit und Minderheit. Die kantische Spur prueft $M \to G$ plus $Zweckformel = Achtung$. Das Urteil folgt der Regel $Wuerde > Nutzen$ bei Instrumentalisierung.
+
+### Wirkungsgefuege / Modell
+
+Denke in Kausalkette: **Anwendung, Kollision, Entscheidung**. Erstens ergibt die Anwendung $U_{Strafe} = Beruhigung - Unrecht = +3$ scheinbar pro Strafe. Zweitens ergibt $M = Unschuldigen strafen + Ordnung$ ein klares $M \not\to G$, weil $Mensch = Mittel$ die Wuerde verletzt. Drittens entscheidet das Kriterium **Menschenwuerde**: Was als Mittel missbraucht, kann kein Gesetz werden. Genau dieser Vorrang verlangt in der Klausur ein **kriteriengeleitetes Urteil**, keine blosse Mehrheit.
 
 ```diagram
-  Fall -> Rekonstruktion [x1, x2]
-  Rekonstruktion -> Kriterium -> Differenz d = x2 - x1
-  Differenz -> Urteil (AFB III)
+  Fall [Unschuldiger vs Mehrheit]
+  Fall -> Nutzen U = Summe Lust minus Leid
+  Fall -> Pflicht M zu G + Zweckformel
+  Doppel -> Urteil (Wuerde vor Nutzen)
 ```
 
 Klausur-Satz: `Kant prüft nicht den Nutzen, sondern ob die Maxime allgemeines Gesetz werden kann.`

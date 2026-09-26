@@ -19,9 +19,21 @@ version: Lesson-v3
 
 ZIELE (drei messbare Ziele dieser Lektion):
 
-1. Du kannst den Leitbegriff der Lektion in einem Satz definieren und ein Beispiel zuordnen.
-2. Du kannst das Kernverfahren mit den Groessen $x_1$ und $x_2$ anwenden und die Differenz $d = x_2 - x_1$ deuten.
-3. Du kannst ein kriteriengeleitetes Urteil formulieren und mit einem Klausur-Satz abschliessen (AFB II/III).
+1. Du kannst **Nutzenprinzip** und **hedonistisches Kalkuel** in je einem Satz definieren und Bentham und Mill korrekt zuordnen.
+2. Du kannst zwei Handlungsoptionen mit $U = \sum d_i$ bilanzieren und Mills Korrektur $Q > q$ anwenden.
+3. Du kannst mit dem Kriterium **Gesamtglueck** ein Urteil zum groessten Glueck der groessten Zahl formulieren und mit einem Klausur-Satz schliessen (AFB II/III).
+
+### Hook / Phaenomen
+
+Freizeitpark fuer alle das ganze Jahr oder ein einziges Star-Konzert fuer eine Nacht? Die Mehrheit jubelt fuers Konzert, eine Minderheit warnt vor Verschwendung. Soll die Mehrheit immer gewinnen, und zaehlt Bildung mehr als Spass? Genau hier beginnt das Rechnen mit Glueck.
+
+### Fachbegriff & Definition
+
+Der **Utilitarismus** beurteilt Handlungen ausschliesslich nach ihren **Folgen** fuer das **Gesamtglueck**. Richtig ist, was mit $U = \sum (Lust - Leid)$ das groesste Glueck der groessten Zahl maximiert. Bentham zaehlt dabei nur Mengen, Mill unterscheidet zusaetzlich **hoehere und niedere Freuden**. Kurz: Der Zweck heiligt die Pruefung, nicht die Gesinnung.
+
+### Wirkungsgefuege / Modell
+
+Der Mechanismus laeuft in drei Stufen: **Bilanz, Vergleich, Korrektur**. Erstens werden fuer jede Option Lust und Leid ueber alle Betroffenen mit $U = \sum_{i=1}^{7} d_i$ summiert. Zweitens gewinnt das groessere $U$, etwa $U_A = 42$ gegen $U_B = 31$. Drittens korrigiert Mill mit $Q > q$: Eine kleinere Menge hoeherer Freude kann das groessere $q$ niederer Freude ueberwiegen. Faellt die Korrektur aus, wird Bildung gegen Unterhaltung systematisch unterbewertet.
 
 Klausur-Satz: `Der Utilitarismus beurteilt eine Handlung ausschließlich nach ihren Folgen, genauer nach dem Gesamtnutzen, den sie für alle Betroffenen stiftet.`
 
@@ -29,11 +41,21 @@ Klausur-Satz: `Der Utilitarismus beurteilt eine Handlung ausschließlich nach ih
 
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
-- Leitbegriff: zentrale Definition der Lektion in einem Satz mit Klausurformulierung.
-- Kriterium: Massstab, an dem Faelle der Form $x_1$ und $x_2$ gemessen werden.
-- Verfahren: geregelte Abfolge von Rekonstruktion, Anwendung und Urteil.
-- Beleg: Text- oder Datenausschnitt, der jede Deutung $D$ mit einem Beleg $B$ stuetzt.
-- Urteil: begruendete Entscheidung aus Kriterium und Differenz $d = x_2 - x_1$.
+### Hook / Phaenomen
+
+„Mehr Glueck fuer alle" klingt einfach, doch wie misst man Glueck? Braucht es Dauer, Naehe oder Umfang, und zaehlt Oper mehr als Fussball? Diese fuenf Bausteine machen aus Bauchgefuehl ein pruefbares Verfahren.
+
+### Fachbegriffe & Definitionen
+
+- **Nutzenprinzip:** Der Grundsatz $Richtig = Max(U)$ mit $U$ als Gesamtglueck aller Betroffenen. Er verlangt Folgenbilanz statt Gesinnungspruefung.
+- **Hedonistisches Kalkuel:** Benthams sieben Dimensionen $d_1$ bis $d_7$ mit $U = \sum d_i$. Dazu gehoeren Intensitaet, Dauer, Gewissheit, Naehe, Fruchtbarkeit, Reinheit und Umfang.
+- **Quantitaet:** Die reine Menge an Lust mit $q = Menge + Dauer$. Bentham vergleicht nur $q_A > q_B$ ohne Ruecksicht auf Art.
+- **Qualitaet:** Mills Unterscheidung hoeherer und niederer Freuden mit $Q > q$. Geistige Freuden wiegen schwerer, weil Kenner beider Arten sie vorziehen.
+- **Gesamtglueck:** Die Summe ueber alle mit $G = \sum U_j$ fuer Personen $j$. Auch Minderheiten zaehlen, doch die Mehrheit kann sie ueberstimmen.
+
+### Wirkungsgefuege / Modell
+
+Die Begriffe greifen ineinander: Das **Nutzenprinzip** setzt das Ziel $Max(G)$, das **hedonistische Kalkuel** liefert das Messgeraet $U = \sum d_i$. **Quantitaet** entscheidet bei Bentham allein, **Qualitaet** korrigiert bei Mill mit $Q > q$. Das **Gesamtglueck** $G$ fasst alles zusammen und legitimiert Opfer von Minderheiten. Wer in der Klausur rechnet, muss deshalb immer fragen: Zaehlt nur Menge oder auch Wuerde der Freude?
 
 Klausur-Satz: `Bentham bewertet Lust und Unlust nach sieben quantitativen Kriterien, während Mill zusätzlich qualitative Unterschiede zwischen den Freuden annimmt.`
 
@@ -41,12 +63,23 @@ Klausur-Satz: `Bentham bewertet Lust und Unlust nach sieben quantitativen Kriter
 
 TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
-Das Kernmodell dieser Lektion verbindet Begriff, Verfahren und Urteil. Zuerst wird der Fall rekonstruiert, dann werden die Werte $x_1$ und $x_2$ bestimmt und schliesslich wird die Differenz $d = x_2 - x_1$ am Kriterium gemessen. Benthams Kalkuel summiert $U = \sum_{i=1}^{7} d_i$ ueber die sieben Dimensionen $d_i$; Mills Regel lautet: Qualitaet $Q$ vor Quantitaet $q$.
+### Hook / Phaenomen
+
+Spott nannte Benthams Lehre Philosophie der Schweine, weil sie Oper und Grunzen gleich zaehlt. Mill antwortete beruehmt: Lieber unzufriedener Mensch als zufriedenes Schwein. Doch wie beweist man, dass Denken mehr wert ist als Naschen? Genau hier trennen sich Rechnen und Urteilen.
+
+### Fachbegriff & Definition
+
+Das **Kalkuel plus Qualitaetskorrektur** verbindet Benthams Summenregel mit Mills Kenner-Test. Bentham fordert $Waehle(Max(U))$ mit $U = \sum_{i=1}^{7} d_i$ ueber Intensitaet bis Umfang. Mill ergaenzt $Bevorzuge(Q_{hoch})$ wenn Kenner beider Freuden mit $Praeferenz = hoch$ urteilen. Der Test lautet also: Erst rechnen, dann werten.
+
+### Wirkungsgefuege / Modell
+
+Denke in Kausalkette: **Messen, Korrigieren, Urteilen**. Erstens werden Optionen vermessen, etwa $U_{Park} = 38$ durch $Dauer + Umfang$ gegen $U_{Konzert} = 45$ durch $Intensitaet + Naehe$. Zweitens wird korrigiert: Der Park staerkt mit $Fruchtbarkeit + Reinheit$ Bildung und Gesundheit, also $Q_{Park} > Q_{Konzert}$. Drittens wird geurteilt nach **Gesamtglueck plus Wuerde**: Kurzfristig gewinnt das Konzert, langfristig der Park. Genau diese Abwaegung verlangt in der Klausur ein **kriteriengeleitetes Urteil**, keine blosse Summe.
 
 ```diagram
-  Fall -> Rekonstruktion [x1, x2]
-  Rekonstruktion -> Kriterium -> Differenz d = x2 - x1
-  Differenz -> Urteil (AFB III)
+  Optionen [Park vs Konzert]
+  Optionen -> Kalkuel U = Summe d1 bis d7
+  Kalkuel -> Korrektur Q vor q (Mill)
+  Korrektur -> Urteil (Gesamtglueck)
 ```
 
 Klausur-Satz: `Während Bentham alle Freuden nur quantitativ vergleicht, unterscheidet Mill zusätzlich zwischen höheren und niederen Freuden.`

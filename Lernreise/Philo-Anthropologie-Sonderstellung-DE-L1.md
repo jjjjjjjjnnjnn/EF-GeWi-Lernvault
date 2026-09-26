@@ -19,9 +19,21 @@ version: Lesson-v3
 
 ZIELE (drei messbare Ziele dieser Lektion):
 
-1. Du kannst den Leitbegriff der Lektion in einem Satz definieren und ein Beispiel zuordnen.
-2. Du kannst das Kernverfahren mit den Groessen $x_1$ und $x_2$ anwenden und die Differenz $d = x_2 - x_1$ deuten.
-3. Du kannst ein kriteriengeleitetes Urteil formulieren und mit einem Klausur-Satz abschliessen (AFB II/III).
+1. Du kannst **Maengelwesen** und **Weltoffenheit** in je einem Satz definieren und Gehlen und Scheler korrekt zuordnen.
+2. Du kannst aus Tierbeobachtung und Saeuglingsentwicklung die Formel $M = Mangel + Kultur$ rekonstruieren und mit $Person = Geist + Weltoffenheit$ vergleichen.
+3. Du kannst mit dem Kriterium **Erklaerungskraft** ein Urteil zur Sonderstellung formulieren und mit einem Klausur-Satz schliessen (AFB II/III).
+
+### Hook / Phaenomen
+
+Ein Fohlen steht wenige Stunden nach der Geburt auf und folgt der Herde, ein Menschenbaby kann erst nach etwa einem Jahr laufen und bleibt jahrelang hilflos. Der Mensch startet biologisch unfertig, ohne Fell, ohne scharfe Zaehne, ohne fertige Instinkte. Ist diese Unfertigkeit ein Nachteil oder genau der Grund fuer Kultur, Sprache und Freiheit?
+
+### Fachbegriff & Definition
+
+Die **philosophische Anthropologie** fragt nach dem Wesen und der **Sonderstellung des Menschen** im Vergleich zum Tier. Gehlen bestimmt den Menschen als **Maengelwesen**: instinktarm, unspezialisiert und weltoffen aus Mangel. Scheler bestimmt ihn als **geistige Person**: faehig zu **Weltoffenheit**, Distanz und Selbstbesinnung. Beide bejahen einen kategorialen Unterschied, begruenden ihn aber voellig verschieden.
+
+### Wirkungsgefuege / Modell
+
+Der Mechanismus laeuft in drei Stufen: **Mangel, Druck, Kompensation**. Erstens erzeugt biologische Unfertigkeit $Mangel > 0$ dauerhaften Handlungsdruck. Zweitens erzwingt dieser Druck **Handeln und Kultur**: Werkzeug, Sprache und **Institutionen** entlasten vom Reizdruck. Drittens oeffnet bei Scheler der **Geist** einen zweiten Weg: $Person = Geist + Weltoffenheit$ mit $Rang(Person) > Instinkt$. Faellt Kultur aus, wird der Mensch lebensunfaehig, faellt Geist aus, bleibt er umweltgebunden.
 
 Klausur-Satz: `Die philosophische Anthropologie fragt, ob sich der Mensch vom Tier nur graduell oder kategorial unterscheidet und worin seine besondere Stellung begründet liegt.`
 
@@ -29,11 +41,21 @@ Klausur-Satz: `Die philosophische Anthropologie fragt, ob sich der Mensch vom Ti
 
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
-- Leitbegriff: zentrale Definition der Lektion in einem Satz mit Klausurformulierung.
-- Kriterium: Massstab, an dem Faelle der Form $x_1$ und $x_2$ gemessen werden.
-- Verfahren: geregelte Abfolge von Rekonstruktion, Anwendung und Urteil.
-- Beleg: Text- oder Datenausschnitt, der jede Deutung $D$ mit einem Beleg $B$ stuetzt.
-- Urteil: begruendete Entscheidung aus Kriterium und Differenz $d = x_2 - x_1$.
+### Hook / Phaenomen
+
+Ohne scharfe Begriffe wird jede Anthropologie-Klausur zum Ratespiel. Wer **Maengelwesen** sagt, muss auch sagen, was kompensiert, wer **Geist** sagt, muss auch sagen, was er leistet. Diese fuenf Bausteine geben dir das Werkzeug fuer Rekonstruktion und Vergleich.
+
+### Fachbegriffe & Definitionen
+
+- **Maengelwesen:** Gehlens Bestimmung des Menschen als biologisch unspezialisiertes und instinktarmes Wesen. Die Formel lautet $M = Mangel + Kultur$, weil Ueberleben nur durch Handeln gelingt.
+- **Institution:** Dauerhafte und entlastende Einrichtung wie Familie, Recht oder Schule. Sie stabilisiert Verhalten und befreit von staendiger Improvisation.
+- **Weltoffenheit:** Schelers Faehigkeit, sich von Umweltbindung zu loesen und Welt zu objektivieren. Sie gruendet in $Distanz > Reizbindung$ und ermoeglicht Sachlichkeit.
+- **Geist und Person:** Schelers Zentrum der Freiheit jenseits von Trieb und Instinkt. Die Person vollzieht Akte wie Lieben, Schauen und Werten mit $Person = Geist + Wuerde$.
+- **Sonderstellung:** Die These eines kategorialen Unterschieds zwischen Mensch und Tier. Sie wird naturalistisch durch Kompensation oder metaphysisch durch Geist begruendet.
+
+### Wirkungsgefuege / Modell
+
+Die Begriffe greifen ineinander: **Maengelwesen** verlangt **Institutionen** als zweite Natur, weil $Handeln = Kompensation(Mangel)$ gilt. **Weltoffenheit** verlangt **Geist**, weil nur die Person mit $Geist > Trieb$ sich distanzieren kann. Die **Sonderstellung** entsteht also auf zwei Wegen: einmal als Notloesung der Biologie, einmal als Freiheit des Geistes. Wer in der Klausur vergleicht, muss deshalb immer fragen: Erklaert der Autor aus Mangel oder aus Geist?
 
 Klausur-Satz: `Nach Gehlen ist der Mensch ein biologisch unfertiges Mängelwesen, das seine Instinktarmut durch Kultur und Institutionen kompensiert.`
 
@@ -41,12 +63,23 @@ Klausur-Satz: `Nach Gehlen ist der Mensch ein biologisch unfertiges Mängelwesen
 
 TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
-Das Kernmodell dieser Lektion verbindet Begriff, Verfahren und Urteil. Zuerst wird der Fall rekonstruiert, dann werden die Werte $x_1$ und $x_2$ bestimmt und schliesslich wird die Differenz $d = x_2 - x_1$ am Kriterium gemessen. Gehlen: $M = Mangelwesen + Institutionen$ als Kompensation. Scheler: $Person = Geist + Weltoffenheit$ mit $Rang > Instinkt$.
+### Hook / Phaenomen
+
+Zwei Denker, ein Befund, entgegengesetzte Erklaerung: Gehlen sieht ein armes Tier, das Kultur erfinden muss, Scheler sieht ein geistiges Wesen, das Welt erschliessen kann. Beide stimmen zu, dass der Mensch besonders ist, aber sie meinen voellig Verschiedenes. Der Vergleich entscheidet, welche Begruendung tragfaehiger ist.
+
+### Fachbegriff & Definition
+
+Das **Vergleichsmodell Gehlen gegen Scheler** prueft zwei Begruendungen der Sonderstellung an drei Dimensionen: Ausgang, Mechanismus und Menschenbild. Gehlen startet bei $Biologie = Mangel$ und endet bei **Entlastung durch Institutionen**. Scheler startet bei $Akt = Geist$ und endet bei **Weltoffenheit und Transzendenz**. Der Unterschied liegt in der Richtung: Kompensation von unten oder Freiheit von oben.
+
+### Wirkungsgefuege / Modell
+
+Denke in Kausalkette: **Befund, Deutung, Folge**. Erstens lautet der Befund $Unfertigkeit > Tierstandard$ mit langem $Aufwachsen = Abhaengigkeit$. Zweitens deutet Gehlen als $Kultur = Notwenigkeit(Mangel)$ und Scheler als $Welt = Leistung(Geist)$. Drittens folgt das Urteil nach **Erklaerungskraft**: Gehlen erklaert Institutionen plausibel, Scheler erklaert Freiheit und Wuerde staerker. Genau diese Spannung verlangt in der Klausur ein **kriteriengeleitetes Urteil**, keine blosse Zusammenfassung.
 
 ```diagram
-  Fall -> Rekonstruktion [x1, x2]
-  Rekonstruktion -> Kriterium -> Differenz d = x2 - x1
-  Differenz -> Urteil (AFB III)
+  Befund [Unfertigkeit + Weltoffenheit]
+  Befund -> Gehlen M = Mangel + Institution
+  Befund -> Scheler Person = Geist + Weltoffenheit
+  Vergleich -> Urteil (Erklaerungskraft)
 ```
 
 Klausur-Satz: `Während Gehlen die Sonderstellung naturalistisch aus dem Mangel und der kulturellen Kompensation erklärt, begründet Scheler sie metaphysisch aus Geist und Weltoffenheit.`
