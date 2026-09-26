@@ -36,6 +36,8 @@ import FormulaScaffold from "../components/pedagogy/FormulaScaffold";
 import OralExamTimer from "../components/pedagogy/OralExamTimer";
 import { MarktMechanismusSim } from "../components/pedagogy/MarktMechanismusSim";
 import { KinematikSim } from "../components/pedagogy/KinematikSim";
+import { OsmoseSimulator } from "../components/pedagogy/OsmoseSimulator";
+import { GleichgewichtSimulator } from "../components/pedagogy/GleichgewichtSimulator";
 import ImageAnswerUpload from "../components/ImageAnswerUpload";
 
 function CheckMarkSvg() {
@@ -88,29 +90,97 @@ function getAutoToolForContext(fach: string, thema: string): string | null {
 
 function renderEmbeddedTool(toolName: string, lang: Lang, fach: string) {
   const t = toolName.toLowerCase().trim();
-  if (t === "tangent" || t === "tangente" || t === "ableitung") {
+  const f = (fach || "").toLowerCase();
+
+  // 1. BIOLOGIE GUARDS & TOOLS
+  if (f.includes("bio")) {
+    if (t === "formula" || t === "formel" || t === "mint") {
+      return (
+        <div className="my-3 p-3.5 border border-[var(--line)] bg-[var(--surface)] rounded-[var(--radius)]">
+          <div className="flex items-center justify-between text-xs font-mono text-[var(--accent)] mb-2 font-medium">
+            <span>{lang === "de" ? "Interaktives Werkzeug: MINT-Scaffold" : "交互教具：理科四步规范解题脚手架"}</span>
+            <span className="text-[var(--text-meta)] text-[var(--gray)]">Bio</span>
+          </div>
+          <FormulaScaffold lang={lang} />
+        </div>
+      );
+    }
+    if (t === "lego" || t === "satzbau") {
+      return (
+        <div className="my-3 p-3.5 border border-[var(--line)] bg-[var(--surface)] rounded-[var(--radius)]">
+          <div className="flex items-center justify-between text-xs font-mono text-[var(--accent)] mb-2 font-medium">
+            <span>{lang === "de" ? "Interaktives Werkzeug: Satzbau-Lego" : "交互教具：考场学术句式积木"}</span>
+            <span className="text-[var(--text-meta)] text-[var(--gray)]">Bio</span>
+          </div>
+          <SatzbauLego lang={lang} fach={fach} />
+        </div>
+      );
+    }
+    // Default & specific for Bio: OsmoseSimulator (protect against misrouted "balance")
     return (
       <div className="my-3 p-3.5 border border-[var(--line)] bg-[var(--surface)] rounded-[var(--radius)]">
-        <div className="flex items-center justify-between text-xs font-mono text-[var(--accent)] mb-2 font-medium">
-          <span>{lang === "de" ? "Interaktives Werkzeug: Tangenten-Simulator" : "交互教具：割线逼近切线导数沙盘"}</span>
-          <span className="text-[var(--text-meta)] text-[var(--gray)]">Mathe (Analysis)</span>
-        </div>
-        <TangentSlider lang={lang} />
+        <OsmoseSimulator lang={lang} />
       </div>
     );
   }
-  if (t === "markt" || t === "marktwirtschaft" || t === "angebot" || t === "nachfrage" || t === "preisbildung") {
+
+  // 2. CHEMIE GUARDS & TOOLS
+  if (f.includes("chemie")) {
+    if (t === "formula" || t === "formel" || t === "mint") {
+      return (
+        <div className="my-3 p-3.5 border border-[var(--line)] bg-[var(--surface)] rounded-[var(--radius)]">
+          <div className="flex items-center justify-between text-xs font-mono text-[var(--accent)] mb-2 font-medium">
+            <span>{lang === "de" ? "Interaktives Werkzeug: MINT-Scaffold" : "交互教具：理科四步规范解题脚手架"}</span>
+            <span className="text-[var(--text-meta)] text-[var(--gray)]">Chemie</span>
+          </div>
+          <FormulaScaffold lang={lang} />
+        </div>
+      );
+    }
+    if (t === "lego" || t === "satzbau") {
+      return (
+        <div className="my-3 p-3.5 border border-[var(--line)] bg-[var(--surface)] rounded-[var(--radius)]">
+          <div className="flex items-center justify-between text-xs font-mono text-[var(--accent)] mb-2 font-medium">
+            <span>{lang === "de" ? "Interaktives Werkzeug: Satzbau-Lego" : "交互教具：考场学术句式积木"}</span>
+            <span className="text-[var(--text-meta)] text-[var(--gray)]">Chemie</span>
+          </div>
+          <SatzbauLego lang={lang} fach={fach} />
+        </div>
+      );
+    }
+    // Default & specific for Chemie: GleichgewichtSimulator
     return (
       <div className="my-3 p-3.5 border border-[var(--line)] bg-[var(--surface)] rounded-[var(--radius)]">
-        <div className="flex items-center justify-between text-xs font-mono text-[var(--accent)] mb-2 font-medium">
-          <span>{lang === "de" ? "Interaktives Werkzeug: Markt-Simulator" : "交互教具：供求均衡与价格形成沙盘"}</span>
-          <span className="text-[var(--text-meta)] text-[var(--gray)]">SoWi (Wirtschaft)</span>
-        </div>
-        <MarktMechanismusSim lang={lang} />
+        <GleichgewichtSimulator lang={lang} />
       </div>
     );
   }
-  if (t === "kinematik" || t === "physik" || t === "bewegung" || t === "beschleunigung") {
+
+  // 3. PHYSIK GUARDS & TOOLS
+  if (f.includes("physik")) {
+    if (t === "formula" || t === "formel" || t === "mint") {
+      return (
+        <div className="my-3 p-3.5 border border-[var(--line)] bg-[var(--surface)] rounded-[var(--radius)]">
+          <div className="flex items-center justify-between text-xs font-mono text-[var(--accent)] mb-2 font-medium">
+            <span>{lang === "de" ? "Interaktives Werkzeug: MINT-Scaffold" : "交互教具：理科四步规范解题脚手架"}</span>
+            <span className="text-[var(--text-meta)] text-[var(--gray)]">Physik</span>
+          </div>
+          <FormulaScaffold lang={lang} />
+        </div>
+      );
+    }
+    if (t === "tangent" || t === "tangente") {
+      return (
+        <div className="my-3 p-3.5 border border-[var(--line)] bg-[var(--surface)] rounded-[var(--radius)]">
+          <div className="flex items-center justify-between text-xs font-mono text-[var(--accent)] mb-2 font-medium">
+            <span>{lang === "de" ? "Interaktives Werkzeug: Tangenten-Simulator" : "交互教具：割线逼近切线导数沙盘"}</span>
+            <span className="text-[var(--text-meta)] text-[var(--gray)]">Physik</span>
+          </div>
+          <TangentSlider lang={lang} />
+        </div>
+      );
+    }
+    // KinematikLab as default for Physik (guards against balance)
     return (
       <div className="my-3 p-3.5 border border-[var(--line)] bg-[var(--surface)] rounded-[var(--radius)]">
         <div className="flex items-center justify-between text-xs font-mono text-[var(--accent)] mb-2 font-medium">
@@ -121,7 +191,55 @@ function renderEmbeddedTool(toolName: string, lang: Lang, fach: string) {
       </div>
     );
   }
-  if (t === "balance" || t === "waage" || t === "urteil") {
+
+  // 4. MATHEMATIK TOOLS
+  if (f.includes("mathe")) {
+    if (t === "formula" || t === "formel") {
+      return (
+        <div className="my-3 p-3.5 border border-[var(--line)] bg-[var(--surface)] rounded-[var(--radius)]">
+          <div className="flex items-center justify-between text-xs font-mono text-[var(--accent)] mb-2 font-medium">
+            <span>{lang === "de" ? "Interaktives Werkzeug: MINT-Scaffold" : "交互教具：理科四步规范解题脚手架"}</span>
+            <span className="text-[var(--text-meta)] text-[var(--gray)]">Mathe</span>
+          </div>
+          <FormulaScaffold lang={lang} />
+        </div>
+      );
+    }
+    return (
+      <div className="my-3 p-3.5 border border-[var(--line)] bg-[var(--surface)] rounded-[var(--radius)]">
+        <div className="flex items-center justify-between text-xs font-mono text-[var(--accent)] mb-2 font-medium">
+          <span>{lang === "de" ? "Interaktives Werkzeug: Tangenten-Simulator" : "交互教具：割线逼近切线导数沙盘"}</span>
+          <span className="text-[var(--text-meta)] text-[var(--gray)]">Mathe (Analysis)</span>
+        </div>
+        <TangentSlider lang={lang} />
+      </div>
+    );
+  }
+
+  // 5. SOWI & PHILO TOOLS (BalanceBoard is STRICTLY restricted here)
+  if (f.includes("sowi") || f.includes("philo") || f.includes("philosophie")) {
+    if (t === "markt" || t === "marktwirtschaft" || t === "preisbildung" || t === "angebot" || t === "nachfrage") {
+      return (
+        <div className="my-3 p-3.5 border border-[var(--line)] bg-[var(--surface)] rounded-[var(--radius)]">
+          <div className="flex items-center justify-between text-xs font-mono text-[var(--accent)] mb-2 font-medium">
+            <span>{lang === "de" ? "Interaktives Werkzeug: Markt-Simulator" : "交互教具：供求均衡与价格形成沙盘"}</span>
+            <span className="text-[var(--text-meta)] text-[var(--gray)]">SoWi (Wirtschaft)</span>
+          </div>
+          <MarktMechanismusSim lang={lang} />
+        </div>
+      );
+    }
+    if (t === "lego" || t === "satzbau") {
+      return (
+        <div className="my-3 p-3.5 border border-[var(--line)] bg-[var(--surface)] rounded-[var(--radius)]">
+          <div className="flex items-center justify-between text-xs font-mono text-[var(--accent)] mb-2 font-medium">
+            <span>{lang === "de" ? "Interaktives Werkzeug: Satzbau-Lego" : "交互教具：考场学术句式积木"}</span>
+            <span className="text-[var(--text-meta)] text-[var(--gray)]">{fach}</span>
+          </div>
+          <SatzbauLego lang={lang} fach={fach} />
+        </div>
+      );
+    }
     return (
       <div className="my-3 p-3.5 border border-[var(--line)] bg-[var(--surface)] rounded-[var(--radius)]">
         <div className="flex items-center justify-between text-xs font-mono text-[var(--accent)] mb-2 font-medium">
@@ -132,18 +250,20 @@ function renderEmbeddedTool(toolName: string, lang: Lang, fach: string) {
       </div>
     );
   }
-  if (t === "lego" || t === "satzbau") {
-    return (
-      <div className="my-3 p-3.5 border border-[var(--line)] bg-[var(--surface)] rounded-[var(--radius)]">
-        <div className="flex items-center justify-between text-xs font-mono text-[var(--accent)] mb-2 font-medium">
-          <span>{lang === "de" ? "Interaktives Werkzeug: Satzbau-Lego" : "交互教具：考场学术句式积木"}</span>
-          <span className="text-[var(--text-meta)] text-[var(--gray)]">{fach}</span>
+
+  // 6. DEUTSCH & ENGLISCH TOOLS
+  if (f.includes("deutsch") || f.includes("englisch") || f.includes("english")) {
+    if (t === "lego" || t === "satzbau") {
+      return (
+        <div className="my-3 p-3.5 border border-[var(--line)] bg-[var(--surface)] rounded-[var(--radius)]">
+          <div className="flex items-center justify-between text-xs font-mono text-[var(--accent)] mb-2 font-medium">
+            <span>{lang === "de" ? "Interaktives Werkzeug: Satzbau-Lego" : "交互教具：考场学术句式积木"}</span>
+            <span className="text-[var(--text-meta)] text-[var(--gray)]">{fach}</span>
+          </div>
+          <SatzbauLego lang={lang} fach={fach} />
         </div>
-        <SatzbauLego lang={lang} fach={fach} />
-      </div>
-    );
-  }
-  if (t === "highlighter" || t === "text" || t === "dekonstruieren") {
+      );
+    }
     return (
       <div className="my-3 p-3.5 border border-[var(--line)] bg-[var(--surface)] rounded-[var(--radius)]">
         <div className="flex items-center justify-between text-xs font-mono text-[var(--accent)] mb-2 font-medium">
@@ -154,18 +274,20 @@ function renderEmbeddedTool(toolName: string, lang: Lang, fach: string) {
       </div>
     );
   }
-  if (t === "formula" || t === "formel" || t === "mint") {
-    return (
-      <div className="my-3 p-3.5 border border-[var(--line)] bg-[var(--surface)] rounded-[var(--radius)]">
-        <div className="flex items-center justify-between text-xs font-mono text-[var(--accent)] mb-2 font-medium">
-          <span>{lang === "de" ? "Interaktives Werkzeug: MINT-Scaffold" : "交互教具：理科四步规范解题脚手架"}</span>
-          <span className="text-[var(--text-meta)] text-[var(--gray)]">MINT</span>
+
+  // 7. MUSIK & SPORT TOOLS
+  if (f.includes("musik") || f.includes("sport") || f.includes("muendl")) {
+    if (t === "kinematik" || t === "bewegung") {
+      return (
+        <div className="my-3 p-3.5 border border-[var(--line)] bg-[var(--surface)] rounded-[var(--radius)]">
+          <div className="flex items-center justify-between text-xs font-mono text-[var(--accent)] mb-2 font-medium">
+            <span>{lang === "de" ? "Interaktives Werkzeug: Kinematik-Labor" : "交互教具：直线运动与速度加速度实验室"}</span>
+            <span className="text-[var(--text-meta)] text-[var(--gray)]">Sport</span>
+          </div>
+          <KinematikSim lang={lang} />
         </div>
-        <FormulaScaffold lang={lang} />
-      </div>
-    );
-  }
-  if (t === "oral-timer" || t === "oraltimer" || t === "timer") {
+      );
+    }
     return (
       <div className="my-3 p-3.5 border border-[var(--line)] bg-[var(--surface)] rounded-[var(--radius)]">
         <div className="flex items-center justify-between text-xs font-mono text-[var(--accent)] mb-2 font-medium">
@@ -176,6 +298,7 @@ function renderEmbeddedTool(toolName: string, lang: Lang, fach: string) {
       </div>
     );
   }
+
   return null;
 }
 
@@ -232,7 +355,66 @@ export default function ReiseModule({
 
   const [activeCourse, setActiveCourse] = useState<Reise | null>(initialCourse);
   const [stepIdx, setStepIdx] = useState(0);
+  const [activeDocStepIdx, setActiveDocStepIdx] = useState(0);
   const [viewMode, setViewMode] = useState<"document" | "steps">(initialViewMode);
+  const rootContainerRef = useRef<HTMLDivElement>(null);
+
+  const getScrollContainer = (): HTMLElement | Window => {
+    const el = rootContainerRef.current;
+    if (!el) return window;
+    const parent = el.closest(".overflow-y-auto") as HTMLElement | null;
+    return parent || window;
+  };
+
+  const scrollToContainerTop = (behavior: ScrollBehavior = "smooth") => {
+    const container = getScrollContainer();
+    if ("scrollTo" in container) {
+      container.scrollTo({ top: 0, behavior });
+    }
+  };
+
+  // When opening or switching course: always reset scroll position to top
+  useEffect(() => {
+    if (activeCourse) {
+      scrollToContainerTop("instant");
+      setActiveDocStepIdx(0);
+      setStepIdx(0);
+    }
+  }, [activeCourse?.id]);
+
+  // Synchronize TOC active item while scrolling in document view mode
+  useEffect(() => {
+    if (viewMode !== "document" || !activeCourse) return;
+
+    const container = getScrollContainer();
+    const handleScroll = () => {
+      const schritte = activeCourse.schritte;
+      let currentIdx = 0;
+      const isWin = container === window;
+      const containerTop = isWin ? 0 : (container as HTMLElement).getBoundingClientRect().top;
+
+      for (let i = 0; i < schritte.length; i++) {
+        const el = document.getElementById(`schritt-${schritte[i].stepNumber}`);
+        if (el) {
+          const rect = el.getBoundingClientRect();
+          if (rect.top - containerTop <= 180) {
+            currentIdx = i;
+          }
+        }
+      }
+
+      setActiveDocStepIdx(currentIdx);
+    };
+
+    if (container === window) {
+      window.addEventListener("scroll", handleScroll, { passive: true });
+      return () => window.removeEventListener("scroll", handleScroll);
+    } else {
+      const el = container as HTMLElement;
+      el.addEventListener("scroll", handleScroll, { passive: true });
+      return () => el.removeEventListener("scroll", handleScroll);
+    }
+  }, [viewMode, activeCourse]);
 
   useEffect(() => {
     if (initialCourseId) {
@@ -584,14 +766,15 @@ export default function ReiseModule({
   // Report live position to the global feedback float
   useEffect(() => {
     if (activeCourse) {
-      const s = activeCourse.schritte[stepIdx];
+      const curIdx = viewMode === "document" ? activeDocStepIdx : stepIdx;
+      const s = activeCourse.schritte[curIdx];
       setFeedbackContext(
-        `${activeCourse.id}#Schritt${s?.stepNumber ?? stepIdx + 1}`
+        `${activeCourse.id}#Schritt${s?.stepNumber ?? curIdx + 1}`
       );
     } else {
       setFeedbackContext("reise:katalog");
     }
-  }, [activeCourse, stepIdx]);
+  }, [activeCourse, stepIdx, activeDocStepIdx, viewMode]);
 
   // Helper formatting for seconds to mm:ss
   const formatTime = (total: number) => {
@@ -1440,7 +1623,7 @@ export default function ReiseModule({
   };
 
   return (
-    <div className="mx-auto w-full min-w-0 max-w-5xl space-y-6">
+    <div ref={rootContainerRef} className="mx-auto w-full min-w-0 max-w-5xl space-y-6">
       {/* Top Header: Navigation between wizard & course, plus XP and streak */}
       <div className="flex flex-wrap items-center justify-between border-b border-[var(--line)] pb-3 text-xs font-mono text-[var(--gray)]">
         <div className="flex flex-wrap items-center gap-3">
@@ -1757,23 +1940,27 @@ export default function ReiseModule({
                 <span className="text-xs font-mono text-[var(--gray)] uppercase shrink-0 font-bold">
                   {lang === "de" ? "Gliederung:" : "目录:"}
                 </span>
-                {activeCourse.schritte.map((s, idx) => (
-                  <button
-                    key={idx}
-                    type="button"
-                    onClick={() => {
-                      setStepIdx(idx);
-                      document.getElementById(`schritt-${s.stepNumber}`)?.scrollIntoView({ behavior: "smooth", block: "start" });
-                    }}
-                    className={`shrink-0 px-2.5 py-1 text-xs font-mono rounded border transition-colors ${
-                      stepIdx === idx
-                        ? "border-[var(--accent)] text-[var(--accent)] font-semibold bg-[var(--paper-subtle)]"
-                        : "border-[var(--line)] text-[var(--ink)]"
-                    }`}
-                  >
-                    0{s.stepNumber} {s.typ}
-                  </button>
-                ))}
+                {activeCourse.schritte.map((s, idx) => {
+                  const isCurrent = (viewMode === "document" ? activeDocStepIdx : stepIdx) === idx;
+                  return (
+                    <button
+                      key={idx}
+                      type="button"
+                      onClick={() => {
+                        setStepIdx(idx);
+                        setActiveDocStepIdx(idx);
+                        document.getElementById(`schritt-${s.stepNumber}`)?.scrollIntoView({ behavior: "smooth", block: "start" });
+                      }}
+                      className={`shrink-0 px-2.5 py-1 text-xs font-mono rounded border transition-colors ${
+                        isCurrent
+                          ? "border-[var(--accent)] text-[var(--accent)] font-semibold bg-[var(--paper-subtle)]"
+                          : "border-[var(--line)] text-[var(--ink)]"
+                      }`}
+                    >
+                      0{s.stepNumber} {s.typ}
+                    </button>
+                  );
+                })}
               </div>
 
               {/* Grid: Main Document Stream (Col 9) + Sticky TOC (Col 3) */}
@@ -1856,7 +2043,7 @@ export default function ReiseModule({
 
                     <nav className="space-y-1 max-h-[calc(100vh-14rem)] overflow-y-auto pr-1">
                       {activeCourse.schritte.map((s, idx) => {
-                        const isCurrent = stepIdx === idx;
+                        const isCurrent = (viewMode === "document" ? activeDocStepIdx : stepIdx) === idx;
                         const isDone = unlocked.includes(idx + 1) || (idx === activeCourse.schritte.length - 1 && unlocked.includes(idx));
                         return (
                           <button
@@ -1864,6 +2051,7 @@ export default function ReiseModule({
                             type="button"
                             onClick={() => {
                               setStepIdx(idx);
+                              setActiveDocStepIdx(idx);
                               const el = document.getElementById(`schritt-${s.stepNumber}`);
                               if (el) {
                                 el.scrollIntoView({ behavior: "smooth", block: "start" });
@@ -1899,7 +2087,7 @@ export default function ReiseModule({
                     <div className="pt-2 border-t border-[var(--line)] flex flex-col gap-2">
                       <button
                         type="button"
-                        onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+                        onClick={() => scrollToContainerTop("smooth")}
                         className="w-full text-center py-1.5 text-xs font-mono text-[var(--gray)] hover:text-[var(--ink)] border border-[var(--line)] rounded-[var(--radius)] transition-colors hover:border-[var(--ink)]"
                       >
                         ↑ {lang === "de" ? "Nach oben" : "回到顶部"}

@@ -123,4 +123,62 @@ describe("ReiseModule Document Mode & Sticky TOC", () => {
     await user.click(docToggle);
     expect(screen.getByText("Gliederung")).toBeInTheDocument();
   });
+
+  it("guards against cross-subject tool leakage: Bio course receives OsmoseSimulator even if balance was requested", () => {
+    const bioCourseWithMisroutedTool: Reise = {
+      id: "bio-osmose-test",
+      path: "Lernreise/Bio-Test-L1.md",
+      fach: "Bio",
+      thema: "Osmose Test",
+      level: 1,
+      ziel: "Klausur",
+      xp: 50,
+      schritte: [
+        {
+          typ: "ausprobieren",
+          stepNumber: 1,
+          title: "Wasserpotenzial Test",
+          aufgabe: "[Werkzeug: balance] Berechne Psi",
+          toolId: "balance",
+        },
+      ],
+    };
+
+    render(
+      <ReiseModule
+        lang="de"
+        vaultReisen={[bioCourseWithMisroutedTool]}
+        initialCourseId="bio-osmose-test"
+        initialViewMode="document"
+      />
+    );
+
+    // 1. Must NOT render SoWi/Philo dialectic balance board
+    expect(screen.queryByText(/Urteils-Waage/i)).not.toBeInTheDocument();
+    expect(screen.queryByText(/These/i)).not.toBeInTheDocument();
+
+    // 2. Must render the Bio Osmose simulator
+    expect(screen.getByText(/Biomembran & Osmose/i)).toBeInTheDocument();
+    expect(screen.getByText(/Wasserpotenzial-Simulator/i)).toBeInTheDocument();
+  });
+
+  it("provides working back-to-top button in document view", async () => {
+    const user = userEvent.setup();
+    const scrollToMock = vi.fn();
+    window.scrollTo = scrollToMock;
+
+    render(
+      <ReiseModule
+        lang="de"
+        vaultReisen={[mockCourse]}
+        initialCourseId="test-course-de"
+        initialViewMode="document"
+      />
+    );
+
+    const topBtn = screen.getByRole("button", { name: /Nach oben/i });
+    expect(topBtn).toBeInTheDocument();
+    await user.click(topBtn);
+    expect(scrollToMock).toHaveBeenCalledWith(expect.objectContaining({ top: 0, behavior: "smooth" }));
+  });
 });

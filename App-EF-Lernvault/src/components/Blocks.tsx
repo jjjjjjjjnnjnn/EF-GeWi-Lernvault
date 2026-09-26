@@ -51,7 +51,27 @@ function renderPrefixBadge(prefix: string, key: string): ReactNode {
     return (
       <span
         key={key}
-        className="inline-block text-xs font-mono font-medium text-[var(--ink)] bg-[var(--paper-subtle)] border border-[var(--line)] px-1.5 py-0.5 rounded-[var(--radius)] mr-1.5 align-baseline"
+        className="inline-block text-xs font-mono font-semibold text-[var(--accent)] bg-[var(--accent)]/10 border border-[var(--accent)]/30 px-2 py-0.5 rounded-[var(--radius)] mr-2 align-baseline"
+      >
+        {p}
+      </span>
+    );
+  }
+  if (p === "ZIELE" || p === "VORAUSSETZUNG" || p === "VORGAENGER-VERWEIS" || p === "REFLEXION") {
+    return (
+      <span
+        key={key}
+        className="inline-block text-xs font-mono font-medium text-[var(--gray)] bg-[var(--paper-subtle)] border border-[var(--line)] px-2 py-0.5 rounded-[var(--radius)] mr-2 align-baseline"
+      >
+        {p}
+      </span>
+    );
+  }
+  if (p === "PRETRAINING" || p === "BEISPIEL" || p === "VERGLEICH" || p === "CHECK" || p === "TAKEAWAY") {
+    return (
+      <span
+        key={key}
+        className="inline-block text-xs font-mono font-semibold text-[var(--ink)] bg-[var(--paper-subtle)] border border-[var(--line)] px-2 py-0.5 rounded-[var(--radius)] mr-2 align-baseline"
       >
         {p}
       </span>
@@ -132,7 +152,7 @@ function renderPrefixBadge(prefix: string, key: string): ReactNode {
  */
 function renderRichTextTokens(text: string, keyPrefix: string): ReactNode {
   // Check if string begins with a known structural prefix
-  const prefixMatch = /^(?:(中文理解|中文|Klausur-Satz|Korrektur-Satz|Takeaway-Satz|ENTDECKEN|AUFGABE(?:\s*\([^)]*\))?|HILFE|MUSTERLÖSUNG|MUSTERLOESUNG|ANTWORT|口诀|判据\s*\/\s*决策点|来源|技法内容)[:：]\s*)/.exec(text);
+  const prefixMatch = /^(?:(中文理解|中文|Klausur-Satz|Korrektur-Satz|Takeaway-Satz|ENTDECKEN|AUFGABE(?:\s*\([^)]*\))?|HILFE|MUSTERLÖSUNG|MUSTERLOESUNG|ANTWORT|口诀|判据\s*\/\s*决策点|来源|技法内容|ZIELE|VORAUSSETZUNG|VORGAENGER-VERWEIS|PRETRAINING|BEISPIEL|VERGLEICH|CHECK|TAKEAWAY|REFLEXION)[:：]\s*)/.exec(text);
 
   let prefixNode: ReactNode = null;
   let remainingText = text;
@@ -369,10 +389,33 @@ export default function Blocks({
           );
         }
         if (b.kind === "h3") {
+          const lower = b.text.toLowerCase();
+          let chipLabel = "";
+          let chipClass = "";
+          if (lower.includes("hook") || lower.includes("phaenomen") || lower.includes("phänomen") || lower.includes("alltagsbezug")) {
+            chipLabel = pureGerman ? "ENTDECKUNG · PHÄNOMEN" : "ENTDECKUNG · 探究引入";
+            chipClass = "border-[var(--accent)]/40 bg-[var(--accent)]/10 text-[var(--accent)]";
+          } else if (lower.includes("fachbegriff") || lower.includes("definition")) {
+            chipLabel = pureGerman ? "KERNKONZEPT · DEFINITION" : "KERNKONZEPT · 核心概念";
+            chipClass = "border-[var(--line)] bg-[var(--paper-subtle)] text-[var(--ink)]";
+          } else if (lower.includes("wirkungsgefuege") || lower.includes("wirkungsgefüge") || lower.includes("modell") || lower.includes("kausalkette")) {
+            chipLabel = pureGerman ? "MODELL · WIRKUNGSGEFÜGE" : "MODELL · 逻辑传导";
+            chipClass = "border-[var(--accent)]/30 bg-[var(--paper-subtle)] text-[var(--accent)]";
+          }
+
           return (
-            <h4 key={i} className="mb-1 mt-3 font-serif text-base text-[var(--ink)]">
-              {renderFormattedText(b.text)}
-            </h4>
+            <div key={i} className="mb-2 mt-5">
+              {chipLabel && (
+                <div className="mb-1">
+                  <span className={`inline-block font-mono text-xs uppercase tracking-wider px-1.5 py-0.5 rounded-[var(--radius)] border ${chipClass} font-semibold`}>
+                    {chipLabel}
+                  </span>
+                </div>
+              )}
+              <h4 className="font-serif text-base font-semibold text-[var(--ink)]">
+                {renderFormattedText(b.text)}
+              </h4>
+            </div>
           );
         }
         if (b.kind === "li") {
