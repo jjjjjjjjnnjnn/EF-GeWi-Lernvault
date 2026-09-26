@@ -19,11 +19,27 @@ version: Lesson-v3
 
 ZIELE (drei messbare Ziele dieser Lektion):
 
-1. Du kannst in beliebigen Dreiecken mit $c^2 = a^2 + b^2 - 2ab\cos(\gamma)$ fehlende Seiten und Winkel berechnen.
-2. Du kannst den Kosinussatz als Verallgemeinerung von $a^2 + b^2 = c^2$ erklaeren und den Fall $\gamma = 90^\circ$ einordnen.
-3. Du kannst mit $\cos(\gamma) = \frac{a^2 + b^2 - c^2}{2ab}$ nachweisen, ob ein Dreieck rechtwinklig ist (AFB II).
+1. Du kannst mit $c^2 = a^2 + b^2 - 2ab\cos(\gamma)$ aus $a = 5$, $b = 7$, $\gamma = 60^\circ$ die Seite $c$ schrittweise zu $c \approx 6{,}08$ berechnen.
+2. Du kannst den Kosinussatz als Pythagoras mit Korrektur erklaeren und $\gamma = 90^\circ$ mit $\cos(90^\circ) = 0$ einordnen.
+3. Du kannst mit $\cos(\gamma) = \frac{a^2+b^2-c^2}{2ab}$ an $3$-$4$-$5$ nachweisen, dass $\gamma = 90^\circ$ vorliegt (AFB II).
 
 EINSTIEG: Beim Tunnelbau von zwei Seiten bohrten sich im Jahr 1871 die Arbeiter am Mont-Cenis fast vorbei, weil eine Winkelmessung kippte. Dreiecksrechnung aus zwei Seiten und eingeschlossenem Winkel entscheidet ueber Treffer oder Fehlbohrung. Der Kosinussatz sichert genau diese Lage.
+
+### Hook / Phaenomen
+
+Im Jahr 1871 gruben sich zwei Tunnelmannschaften am Mont-Cenis fast vorbei — wenige Grad Winkelfehler, kilometerweise Umweg. Auch moderne Tunnelbohrmaschinen irren ohne Dreiecksrechnung: Aus zwei gemessenen Seiten und dem Winkel dazwischen muss die dritte Seite auf den Zentimeter stimmen. Warum versagt Pythagoras hier — und welcher Korrekturterm rettet die Bohrung?
+
+### Fachbegriff & Definition
+
+Nach dem NRW-Kernlehrplan Geometrie gilt der **Kosinussatz $c^2 = a^2 + b^2 - 2ab\cos(\gamma)$, wobei $\gamma$ der Seite $c$ gegenueberliegt und zwischen $a$ und $b$ eingeschlossen ist**. Der **eingeschlossene Winkel $\gamma$ bestimmt den Korrekturterm $-2ab\cos(\gamma)$**. Der **Satz des Pythagoras $c^2 = a^2 + b^2$ ist der Spezialfall fuer $\gamma = 90^\circ$**, weil $\cos(90^\circ) = 0$ den Korrekturterm loescht.
+
+### Wirkungsgefuege / Modell
+
+Der Mechanismus korrigiert Pythagoras um die Schiefe: Fuer $a = 5$, $b = 7$, $\gamma = 60^\circ$ mit $\cos(60^\circ) = 0{,}5$ gilt $c^2 = 25 + 49 - 2 \cdot 5 \cdot 7 \cdot 0{,}5 = 74 - 35 = 39$, also $c = \sqrt{39} \approx 6{,}24$. Ist $\gamma$ spitz, so verkuerzt $-2ab\cos(\gamma)$ die Seite; ist $\gamma$ stumpf mit $\cos(\gamma) < 0$, so verlaengert sie sich.
+
+Schritt A: Seiten $a$, $b$ und $\gamma$ identifizieren und $\cos(\gamma)$ bestimmen.
+Schritt B: $c^2 = a^2+b^2-2ab\cos(\gamma)$ einsetzen und ausrechnen.
+Schritt C: Wurzel ziehen und mit Pythagoras-Probe bei $90^\circ$ sichern.
 
 Klausur-Satz: `Der Kosinussatz berechnet die dritte Seite aus zwei Seiten und dem eingeschlossenen Winkel.`
 
@@ -31,11 +47,21 @@ Klausur-Satz: `Der Kosinussatz berechnet die dritte Seite aus zwei Seiten und de
 
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
-- Kosinussatz: $c^2 = a^2 + b^2 - 2ab\cos(\gamma)$, wobei $\gamma$ der Seite $c$ gegenueberliegt.
-- Eingeschlossener Winkel: Winkel $\gamma$ zwischen den Seiten $a$ und $b$; er bestimmt den Korrekturterm $-2ab\cos(\gamma)$.
-- Satz des Pythagoras: Spezialfall $c^2 = a^2 + b^2$ fuer $\gamma = 90^\circ$, da $\cos(90^\circ) = 0$ gilt.
-- Orthogonalitaet im Dreieck: Rechter Winkel genau dann, wenn $a^2 + b^2 = c^2$ erfuellt ist.
-- Kongruenzsatz SWS: Zwei Seiten plus eingeschlossener Winkel legen ein Dreieck eindeutig fest.
+### Hook / Phaenomen
+
+Ein Dreieck mit $a = 3$, $b = 4$, $c = 6$ sieht fast rechtwinklig aus — ist es aber nicht. Der Augenmass irrt um wenige Grad, die Rechnung nicht. Welche fuenf Begriffe entscheiden ohne Winkelmesser, ob der rechte Winkel wirklich vorliegt?
+
+### Fachbegriffe & Definitionen
+
+- **Kosinussatz:** $c^2 = a^2 + b^2 - 2ab\cos(\gamma)$ mit $\gamma$ gegenueber $c$.
+- **Eingeschlossener Winkel:** Winkel $\gamma$ zwischen $a$ und $b$; er steuert $-2ab\cos(\gamma)$.
+- **Satz des Pythagoras:** $c^2 = a^2 + b^2$ fuer $\gamma = 90^\circ$, da $\cos(90^\circ) = 0$.
+- **Orthogonalitaet im Dreieck:** Rechter Winkel genau dann, wenn $a^2 + b^2 = c^2$ erfuellt ist.
+- **Kongruenzsatz SWS:** Zwei Seiten plus eingeschlossener Winkel legen das Dreieck eindeutig fest.
+
+### Wirkungsgefuege / Modell
+
+Die Kette prueft ohne Messen: Umkehrform $\cos(\gamma) = \frac{a^2+b^2-c^2}{2ab}$ verwandelt Seiten in Winkelzeichen. Fuer $3$-$4$-$5$ gilt $\cos(\gamma) = \frac{9+16-25}{2 \cdot 3 \cdot 4} = 0$, also $\gamma = 90^\circ$. Fuer $3$-$4$-$6$ gilt $\cos(\gamma) = \frac{9+16-36}{24} < 0$, also stumpf und $c$ verlaengert. SWS garantiert, dass diese drei Stuecke genau ein Dreieck liefern — keine zweite Loesung, keine Willkuer.
 
 Klausur-Satz: `Ohne rechten Winkel tritt der Korrekturterm mit Kosinus hinzu.`
 
@@ -43,7 +69,21 @@ Klausur-Satz: `Ohne rechten Winkel tritt der Korrekturterm mit Kosinus hinzu.`
 
 TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
-Der Kosinussatz korrigiert Pythagoras um die Schiefe des Dreiecks. Ist $\gamma$ spitz, so verkuerzt der Term $-2ab\cos(\gamma)$ die Seite $c$; ist $\gamma$ stumpf, so verlaengert sie sich, weil $\cos(\gamma) < 0$ gilt. Umgekehrt prueft die umgeformte Version $\cos(\gamma) = \frac{a^2 + b^2 - c^2}{2ab}$ die Rechtwinkligkeit ohne Winkelmesser.
+### Hook / Phaenomen
+
+Ein Vermesser misst $a = 8$, $b = 6$, $c = 10$ und behauptet ohne Winkelmesser: Hier steht ein rechter Winkel. Sein Kollege misst $a = 5$, $b = 5$, $c = 9$ und warnt vor stumpfem Winkel trotz symmetrischer Figur. Beide Urteile fallen aus derselben Formel — dem umgekehrten Kosinussatz. Wie entscheidet allein das Vorzeichen von $\cos(\gamma)$ ueber verkuerzt oder verlaengert?
+
+### Fachbegriff & Definition
+
+Das **Vorzeichen von $\cos(\gamma)$ entscheidet ueber die Korrektur: Bei spitzem $\gamma$ mit $\cos(\gamma) > 0$ wird $c$ verkuerzt, bei stumpfem $\gamma$ mit $\cos(\gamma) < 0$ wird $c$ verlaengert**. Die **Umkehrform $\cos(\gamma) = \frac{a^2+b^2-c^2}{2ab}$ prueft Rechtwinkligkeit ohne Winkelmesser** — null bedeutet rechtwinklig, positiv spitz, negativ stumpf.
+
+### Wirkungsgefuege / Modell
+
+Der Tiefenweg in drei Faellen: $8$-$6$-$10$ liefert $\cos(\gamma) = \frac{64+36-100}{96} = 0$ zu $\gamma = 90^\circ$. Dagegen $5$-$5$-$7$ liefert $\cos(\gamma) = \frac{25+25-49}{50} = 0{,}02 > 0$ zu spitz und $c$ verkuerzt. Und $5$-$5$-$9$ liefert $\cos(\gamma) = \frac{25+25-81}{50} < 0$ zu stumpf und $c$ verlaengert. Der Kosinus wirkt als Schalter zwischen den drei Gestalten.
+
+Schritt A: Zaehler $a^2+b^2-c^2$ mit Vorzeichen bestimmen.
+Schritt B: Durch $2ab$ teilen und Vorzeichen lesen.
+Schritt C: spitz, recht oder stumpf zuordnen und Seite deuten.
 
 ```diagram
         C
@@ -53,9 +93,10 @@ Der Kosinussatz korrigiert Pythagoras um die Schiefe des Dreiecks. Ist $\gamma$ 
      / gamma\
     A===c====B
     c^2 = a^2 + b^2 - 2ab cos(gamma)
-    gamma = 90 Grad > c^2 = a^2 + b^2
-    gamma < 90 Grad > c kuerzer
-    gamma > 90 Grad > c laenger
+    gamma = 90 Grad > c^2 = a^2 + b^2 (cos = 0)
+    gamma < 90 Grad > cos > 0 > c kuerzer
+    gamma > 90 Grad > cos < 0 > c laenger
+    Umkehr: cos(gamma) = (a^2+b^2-c^2)/(2ab)
 ```
 
 Klausur-Satz: `Das Vorzeichen von cos(gamma) entscheidet ueber verkuerzt oder verlaengert.`

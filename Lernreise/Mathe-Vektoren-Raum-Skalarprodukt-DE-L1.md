@@ -19,11 +19,27 @@ version: Lesson-v3
 
 ZIELE (drei messbare Ziele dieser Lektion):
 
-1. Du kannst Vektoren im Raum $\vec{a} = (a_1, a_2, a_3)$ addieren, mit einem Skalar multiplizieren und ihre Laenge $|\vec{a}| = \sqrt{a_1^2 + a_2^2 + a_3^2}$ berechnen.
-2. Du kannst das Skalarprodukt $\vec{a} \cdot \vec{b} = a_1b_1 + a_2b_2 + a_3b_3$ berechnen und damit den Winkel $\cos(\phi) = \frac{\vec{a} \cdot \vec{b}}{|\vec{a}| \cdot |\vec{b}|}$ bestimmen.
-3. Du kannst mit dem Kriterium $\vec{a} \cdot \vec{b} = 0$ nachweisen, ob zwei Vektoren orthogonal sind (AFB II).
+1. Du kannst $\vec{a} = (1, 2, 3)$ und $\vec{b} = (4, 0, -1)$ addieren, mit $2$ skalieren und $|\vec{a}| = \sqrt{14}$ berechnen.
+2. Du kannst $\vec{a} \cdot \vec{b} = 1$ und $\cos(\phi) = \frac{1}{\sqrt{14}\sqrt{17}}$ zu $\phi \approx 86{,}3^\circ$ bestimmen.
+3. Du kannst mit $\vec{a} \cdot \vec{b} = 0$ Orthogonalitaet nachweisen und Gegenbeispiele mit $\ne 0$ einordnen (AFB II).
 
 EINSTIEG: Beim Bau einer Seilbruecke riss im Jahr 1940 die Tacoma-Narrows-Bruecke, weil die Ingenieure die Kraefterichtung falsch einschaetzten. Kraefte sind Vektoren: Nur wer Betrag und Richtung gemeinsam rechnet, baut sicher. Genau das leistet das Skalarprodukt.
+
+### Hook / Phaenomen
+
+Im Jahr 1940 filmte ein Ingenieur, wie sich die Tacoma-Narrows-Bruecke aufschaukelte und zerriss — der Wind griff nicht nur mit Kraft, sondern mit Richtung an. Wer nur Betraege addiert, baut falsch: Zwei Seilkraefte zu je $1000\,\mathrm{N}$ halten zusammen nicht $2000\,\mathrm{N}$, wenn sie im Winkel ziehen. Wie misst eine einzige Zahl — das Skalarprodukt — den gemeinsamen Anteil zweier Richtungen? Und warum bedeutet null exakt senkrecht?
+
+### Fachbegriff & Definition
+
+Nach dem NRW-Kernlehrplan Geometrie verbindet das **Skalarprodukt Laenge und Winkel zweier Vektoren und prueft Orthogonalitaet ueber den Wert null**. Es gilt **$\vec{a} \cdot \vec{b} = a_1b_1+a_2b_2+a_3b_3$** und die **Winkelformel $\cos(\phi) = \frac{\vec{a}\cdot\vec{b}}{|\vec{a}|\cdot|\vec{b}|}$**. Der **Betrag $|\vec{a}| = \sqrt{a_1^2+a_2^2+a_3^2}$ misst die Laenge** im Raum.
+
+### Wirkungsgefuege / Modell
+
+Der Mechanismus projiziert einen Vektor auf den anderen: $\vec{a} = (1,2,3)$, $\vec{b} = (4,0,-1)$ liefern $\vec{a}\cdot\vec{b} = 4+0-3 = 1$. Mit $|\vec{a}| = \sqrt{1+4+9} = \sqrt{14}$ und $|\vec{b}| = \sqrt{16+0+1} = \sqrt{17}$ folgt $\cos(\phi) = \frac{1}{\sqrt{238}} \approx 0{,}065$ zu $\phi \approx 86{,}3^\circ$ — fast senkrecht, aber nicht exakt. Null waere exakt senkrecht.
+
+Schritt A: Koordinaten paarweise multiplizieren und addieren.
+Schritt B: Beide Betraege per Wurzel bilden.
+Schritt C: Quotient zu $\cos(\phi)$ formen und Winkel sowie Orthogonalitaet lesen.
 
 Klausur-Satz: `Das Skalarprodukt verbindet Laenge und Winkel zweier Vektoren und prueft Orthogonalitaet ueber den Wert null.`
 
@@ -31,11 +47,21 @@ Klausur-Satz: `Das Skalarprodukt verbindet Laenge und Winkel zweier Vektoren und
 
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
-- Vektor im Raum: Geordnetes Tripel $\vec{a} = (a_1, a_2, a_3)$, das Verschiebung mit Richtung und Laenge beschreibt.
-- Betrag: Laenge eines Vektors, $|\vec{a}| = \sqrt{a_1^2 + a_2^2 + a_3^2}$, stets $|\vec{a}| \ge 0$.
-- Skalarprodukt: Zahl $\vec{a} \cdot \vec{b} = a_1b_1 + a_2b_2 + a_3b_3$, Mass fuer gleichgerichtete Anteile.
-- Winkelformel: $\cos(\phi) = \frac{\vec{a} \cdot \vec{b}}{|\vec{a}| \cdot |\vec{b}|}$ mit $0 \le \phi \le 180^\circ$.
-- Orthogonalitaet: Zwei Vektoren heissen orthogonal, wenn $\vec{a} \cdot \vec{b} = 0$ gilt.
+### Hook / Phaenomen
+
+Ein Kran zieht mit zwei Seilen: Beide zeigen fast nach oben, doch die Last schwenkt seitlich weg. Der Fehler steckt im Winkel, nicht in der Kraft. Welche fuenf Begriffe rechnen Richtung und Laenge gemeinsam — ohne einen einzigen Winkel zu messen?
+
+### Fachbegriffe & Definitionen
+
+- **Vektor im Raum:** $\vec{a} = (a_1,a_2,a_3)$ als Verschiebung mit Richtung und Laenge.
+- **Betrag:** $|\vec{a}| = \sqrt{a_1^2+a_2^2+a_3^2}$ mit $|\vec{a}| \ge 0$; Laenge des Pfeils.
+- **Skalarprodukt:** $\vec{a}\cdot\vec{b} = a_1b_1+a_2b_2+a_3b_3$; Mass der gleichgerichteten Anteile.
+- **Winkelformel:** $\cos(\phi) = \frac{\vec{a}\cdot\vec{b}}{|\vec{a}|\cdot|\vec{b}|}$ mit $0 \le \phi \le 180^\circ$.
+- **Orthogonalitaet:** $\vec{a}\cdot\vec{b} = 0$ genau bei senkrechter Lage; Skalarprodukt null ist der Test.
+
+### Wirkungsgefuege / Modell
+
+Die Kette macht Geometrie zu Algebra: Betraege aus Koordinaten, Produkt aus Koordinaten, Quotient zum Winkel. Parallel gleichgerichtet liefert $\vec{a}\cdot\vec{b} = |\vec{a}|\cdot|\vec{b}|$ zu $\phi = 0^\circ$; senkrecht liefert $0$ zu $\phi = 90^\circ$. Dazwischen liegt jeder Winkel als Zahl zwischen $-1$ und $1$ im Kosinus. Senkrechtsein heisst daher Rechnen mit null — kein Geodreieck, nur Algebra.
 
 Klausur-Satz: `Betrag und Skalarprodukt folgen direkt aus den Koordinaten der Vektoren.`
 
@@ -43,7 +69,21 @@ Klausur-Satz: `Betrag und Skalarprodukt folgen direkt aus den Koordinaten der Ve
 
 TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
-Das Skalarprodukt misst, wie stark zwei Vektoren in dieselbe Richtung zeigen. Sind sie parallel und gleichgerichtet, so gilt $\vec{a} \cdot \vec{b} = |\vec{a}| \cdot |\vec{b}|$. Stehen sie senkrecht, so loeschen sich die Anteile aus und das Produkt ist null. Dazwischen liefert die Winkelformel jeden Zwischenwert. Damit wird Geometrie zu Algebra: Senkrechtsein heisst Rechnen mit null.
+### Hook / Phaenomen
+
+Ein Statiker prueft zwei Stahlstreben: Die Zeichnung wirkt rechtwinklig, das Massband zweifelt. Ein Winkel gegen $89^\circ$ statt $90^\circ$ veraendert die Lastpfade — doch niemand legt im Stahlbau das Geodreieck an. Wie beweist eine einzige Multiplikation, ob $90^\circ$ exakt vorliegt — und warum verzeiht die Statik fast, aber nicht ganz?
+
+### Fachbegriff & Definition
+
+Der **Winkel steckt im Skalarprodukt, die Orthogonalitaet im Spezialfall null: $\phi = 90^\circ$ genau dann, wenn $\vec{a}\cdot\vec{b} = 0$**. Bei **$\phi = 0^\circ$ gilt $\vec{a}\cdot\vec{b} = |\vec{a}|\cdot|\vec{b}|$** als maximale Uebereinstimmung. Dazwischen misst $\cos(\phi)$ den gemeinsamen Anteil.
+
+### Wirkungsgefuege / Modell
+
+Der Tiefenweg an drei Lagen: $\vec{a} = (1,0,0)$, $\vec{b} = (0,1,0)$ liefern $0$ zu exakt $90^\circ$. Dagegen $(1,0,0)$ gegen $(1,1,0)$ liefern $1$ zu $\cos(\phi) = \frac{1}{\sqrt{2}}$ und $\phi = 45^\circ$. Und $(1,0,0)$ gegen $(-1,0,0)$ liefern $-1$ zu $\phi = 180^\circ$. Das Vorzeichen sortiert spitz gegen stumpf, die Null fixiert senkrecht.
+
+Schritt A: Produkt bilden und Nulltest fahren.
+Schritt B: Bei $\ne 0$ Betraege bilden und Quotienten formen.
+Schritt C: Winkel lesen und Lage als spitz, recht oder stumpf benennen.
 
 ```diagram
     b ^
@@ -54,6 +94,7 @@ Das Skalarprodukt misst, wie stark zwei Vektoren in dieselbe Richtung zeigen. Si
       O      a . b = |a| * |b| * cos(phi)
       phi = 90 Grad  <=>  a . b = 0
       phi = 0 Grad   <=>  a . b = |a| * |b|
+      Beispiel: (1,2,3).(4,0,-1) = 1 > phi ca. 86.3 Grad
 ```
 
 Klausur-Satz: `Der Winkel steckt im Skalarprodukt, die Orthogonalitaet im Spezialfall null.`

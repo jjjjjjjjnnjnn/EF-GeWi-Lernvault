@@ -19,9 +19,25 @@ version: Lesson-v3
 
 ZIELE (drei messbare Ziele dieser Lektion):
 
-1. Du kannst sechs heuristische Verfahren mit Prinzip und Bedingung nennen: Spezialwert-Methode, Ausschlussverfahren, Skizze, Satz von Vieta, AM-GM-Ungleichung und Parametertrennung.
-2. Du kannst zu jedem Verfahren eine kleine Aufgabe loesen und das Ergebnis in einem deutschen Pruefsatz mit Gueltigkeitsbereich formulieren.
-3. Du kannst beurteilen, wann ein heuristisches Verfahren versagt, und wechselst dann zum vollstaendigen Standardweg, denn grosse Aufgaben verlangen die vollstaendige Darstellung (AFB II/III).
+1. Du kannst sechs Heuristiken nennen: Spezialwert, Ausschluss, Skizze, Vieta, AM-GM und Parametertrennung je mit Bedingung.
+2. Du kannst $2^{30}$ gegen $3^{20}$ per $8^{10}$ gegen $9^{10}$ zu $a < b$ entscheiden und per Potenzgesetzen belegen.
+3. Du kannst jede Vermutung per Standardweg sichern und bei verletzter Bedingung sofort wechseln, denn Reinschrift verlangt Beweis (AFB II/III).
+
+### Hook / Phaenomen
+
+Im Jahr 1990 knobelte ein Ingenieur an $2^{30}$ gegen $3^{20}$ — kein Taschenrechner zur Hand, nur Potenzgesetze. Wer stumpf multipliziert, scheitert; wer $8^{10}$ gegen $9^{10}$ sieht, entscheidet in Sekunden. Heuristiken sind solche Abkuerzungen: schnell auf dem Schmierpapier, wertlos ohne Beweis in der Reinschrift. Wo hilft der Trick — und wo wird er zur Falle?
+
+### Fachbegriff & Definition
+
+Fuer Heuristiken gilt: **Schnellverfahren dienen als Orientierung auf dem Schmierpapier, waehrend die Reinschrift den vollstaendigen Standardweg verlangt**. Jede **Heuristik besitzt eine Bedingung; bei verletzter Bedingung wird sofort zum Standardweg gewechselt**. Der **Vergleich $2^{30} = 8^{10}$ gegen $3^{20} = 9^{10}$ mit $8 < 9$ liefert $a < b$** nur als belegte Kette, nicht als Behauptung.
+
+### Wirkungsgefuege / Modell
+
+Der Mechanismus trennt Suche und Beweis: Schmierpapier $2^{30} = (2^3)^{10} = 8^{10}$ und $3^{20} = (3^2)^{10} = 9^{10}$ zu Vermutung $a < b$ wegen $8 < 9$. Reinschrift mit Potenzgesetzen $(a^m)^n = a^{mn}$ und Monotonie $8^{10} < 9^{10}$ sichert Punkte. Ebenso Vieta nur bei $ax^2+bx+c = 0$ und AM-GM nur bei $a,b > 0$ — ausserhalb wird gewechselt statt geraten.
+
+Schritt A: Heuristik auf Schmierpapier zur Vermutung nutzen.
+Schritt B: Bedingung explizit pruefen und notieren.
+Schritt C: Standardweg in Reinschrift mit Satz sichern.
 
 Klausur-Satz: `Heuristische Schnellverfahren dienen als Orientierung auf dem Schmierpapier, waehrend die Reinschrift den vollstaendigen Standardweg verlangt.`
 
@@ -29,11 +45,21 @@ Klausur-Satz: `Heuristische Schnellverfahren dienen als Orientierung auf dem Sch
 
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
-- Spezialwert-Methode: Einsetzen gut rechenbarer Werte wie $0$, $1$ oder $-1$ zur Vermutung eines Ergebnisses mit anschliessendem Beweis.
-- Ausschlussverfahren: Aussortieren unmoeglicher Faelle ueber Definitionsbereich, Vorzeichen und Grenzverhalten.
-- Skizze und Veranschaulichung: Zeichnen eines Graphen, der ein algebraisches Problem in Schnittpunkte und Monotonie uebersetzt.
-- Parametertrennung: Isolieren des Parameters auf einer Seite der Ungleichung und Bestimmen des Extremwerts der anderen Seite.
-- Pruefsatz: Deutscher Schlusssatz, der das heuristisch gefundene Ergebnis mit seinem Gueltigkeitsbereich festhaelt.
+### Hook / Phaenomen
+
+Ein Schueler setzt $x = 0$ ein und raet die Loesung — Treffer. Beim naechsten Problem versagt derselbe Griff, weil die Aussage nicht allgemein gilt. Heuristik ohne Bedingung ist Gluecksspiel. Welche fuenf Paare aus Trick und Bedingung verwandeln Raten in Suchen?
+
+### Fachbegriffe & Definitionen
+
+- **Spezialwert-Methode:** $0$, $1$ oder $-1$ einsetzen zur Vermutung mit anschliessendem Beweis.
+- **Ausschlussverfahren:** Faelle ueber Definitionsbereich, Vorzeichen und Grenzverhalten streichen.
+- **Skizze und Veranschaulichung:** Graph zeichnen und Problem in Schnittpunkte plus Monotonie uebersetzen.
+- **Parametertrennung:** Parameter isolieren und Extremwert der Gegenseite bestimmen.
+- **Pruefsatz:** Deutscher Schlusssatz mit Ergebnis plus Gueltigkeitsbereich.
+
+### Wirkungsgefuege / Modell
+
+Die Kette lautet: Trick waehlen, Bedingung pruefen, Vermutung per Standard sichern. Skizze an $f(x) = x^3-3x$ zaehlt Nullstellen als Schnittpunkte; Vieta an $x^2-5x+6$ prueft $2$ und $3$ per Summe $5$ und Produkt $6$; AM-GM an $x+\frac{4}{x}$ mit $x > 0$ schaetzt Minimum $4$. Fehlt die Bedingung — etwa $x < 0$ bei AM-GM — so wird abgebrochen und klassisch mit $f' = 0$ gerechnet.
 
 Klausur-Satz: `Jedes Schnellverfahren ist nur eine Abkuerzung; ohne Bedingungspruefung gibt es in der Klausur keine Punkte.`
 
@@ -41,7 +67,21 @@ Klausur-Satz: `Jedes Schnellverfahren ist nur eine Abkuerzung; ohne Bedingungspr
 
 TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
-Heuristische Verfahren finden eine Vermutung, sie beweisen sie nicht. Die Arbeitsteilung lautet daher: Die Heuristik liefert auf dem Schmierpapier Richtung, Vermutung und Kontrolle; der Standardweg liefert in der Reinschrift Beweis und Punkte. Jedes Verfahren besitzt eine Bedingung; ist sie verletzt, so wird sofort zum Standardweg gewechselt. Zu jedem Verfahren gehoert eine kleine Aufgabe mit deutschem Pruefsatz.
+### Hook / Phaenomen
+
+Zwei Loesungen zu $a = 2^{30}$ gegen $b = 3^{20}$: eine schreibt $a < b$ ohne Weg, eine zeigt $8^{10} < 9^{10}$ mit Gesetzen. Beide nennen dasselbe Ergebnis — nur eine erhaelt Punkte. Warum zaehlt in der Klausur nicht die Vermutung, sondern die belegte Kette — und wie sieht sie in drei Zeilen aus?
+
+### Fachbegriff & Definition
+
+Fuer die Klausur gilt: **Eine heuristische Vermutung wird erst durch den Standardweg zur belegten Loesung; ohne Beleg bleibt sie punktlos**. Der **Potenzvergleich $8^{10} < 9^{10}$ aus $8 < 9$ sichert $a < b$ ueber $(a^m)^n = a^{mn}$**. Jede **Kurzregel wird nur mit genannter Bedingung benutzt und kurz begruendet**.
+
+### Wirkungsgefuege / Modell
+
+Der Tiefenweg belegt $a < b$ in drei Zeilen: $a = 2^{30} = (2^3)^{10} = 8^{10}$ per $(a^m)^n$; $b = 3^{20} = (3^2)^{10} = 9^{10}$ ebenso; aus $8 < 9$ folgt $8^{10} < 9^{10}$ per Monotonie der Potenz. Damit $a < b$ mit Gesetzen statt Behauptung. Ebenso Wege je Sekunde $1{,}0/3{,}0/5{,}0\,\mathrm{m}$ wie $1:3:5$ aus $s_n = a(2n-1)/2$ nur mit Start aus Ruhe — ohne diese Bedingung ist die Regel falsch.
+
+Schritt A: Umformen per Gesetzen auf gleiche Exponenten.
+Schritt B: Basisvergleich $8 < 9$ explizit nennen.
+Schritt C: Monotonieschluss zu $a < b$ als Satz schreiben.
 
 ```diagram
    Verfahren          Bedingung                        Rolle
@@ -57,17 +97,9 @@ Heuristische Verfahren finden eine Vermutung, sie beweisen sie nicht. Die Arbeit
                        Produkt fest
    6 Parametertrenn.  Parameter isolierbar             Maximum suchen
    =================  ===============================  ================
+   Beleg: 2^30=8^10 < 9^10=3^20 > a<b mit (a^m)^n
    Heuristik = Schmierpapier (Suche); Standardweg = Reinschrift (Punkte)
 ```
-
-Sechs Verfahren im Detail (Prinzip, Mini-Aufgabe, Pruefsatz):
-
-- Spezialwert-Methode: Gilt eine allgemeine Aussage, so gilt sie auch im Spezialfall. Mini-Aufgabe: Erfuellt $f(x) = (x - 3)^2 + k$ fuer alle $x$ die Bedingung $f(x) \ge 2$, so folgt mit $x = 3$ sofort $k \ge 2$; wegen $(x-3)^2 \ge 0$ ist dies auch hinreichend. Pruefsatz: `Ich teste den Spezialwert x = 3 zur Vermutung und beweise danach allgemein.`
-- Ausschlussverfahren: Unmoegliche Faelle werden zuerst gestrichen. Mini-Aufgabe: Fuer $f(x) = -3x^3 + 2x - 5$ gilt $\lim_{x \to +\infty} f(x) = -\infty$, also scheidet jede Vermutung mit Grenzwert $+\infty$ aus. Pruefsatz: `Ich schliesse unmoegliche Faelle ueber Definitionsbereich und Grenzverhalten aus.`
-- Skizze: Nullstellen einer Gleichung sind Schnittpunkte von Graphen. Mini-Aufgabe: $g(x) = x^3 - 3x + 1$ besitzt $g'(x) = 3x^2 - 3 = 0$ mit $x = 1$ und $x = -1$; wegen $g(-1) = 3 > 0$ und $g(1) = -1 < 0$ folgen drei Nullstellen. Pruefsatz: `Die Skizze zeigt Monotonie und Nullstellen, der Rechenweg belegt sie.`
-- Satz von Vieta: Summe und Produkt der Wurzeln folgen aus den Koeffizienten. Mini-Aufgabe: Die Behauptung, $x^2 - 9x + 20 = 0$ habe die Wurzeln $3$ und $6$, scheitert am Produkt $18 \ne 20$; korrekt sind $4$ und $5$. Pruefsatz: `Nach Vieta pruefe ich Summe x1 + x2 = -b/a und Produkt x1 * x2 = c/a.`
-- AM-GM-Ungleichung: Fuer positive Terme mit festem Produkt wird die Summe minimal. Mini-Aufgabe: Fuer $x > 0$ gilt $x + 9/x \ge 2 \cdot \sqrt{9} = 6$ mit Gleichheit fuer $x = 3$. Pruefsatz: `Da x > 0 gilt, folgt mit AM-GM die Abschaetzung mit Gleichheit fuer x = 3.`
-- Parametertrennung: $k \ge h(x)$ fuer alle $x$ im Intervall gilt genau fuer $k \ge \max h(x)$. Mini-Aufgabe: $k \ge 4x - x^2$ auf $[0, 4]$ verlangt das Maximum von $h(x) = -x^2 + 4x$ bei $x = 2$ mit $h(2) = 4$, also $k_{\min} = 4$. Pruefsatz: `Ich trenne den Parameter ab und bestimme das Maximum von h auf dem Intervall.`
 
 Klausur-Satz: `Ich wende ein heuristisches Verfahren zur Orientierung an und belege das Ergebnis anschliessend mit dem Standardweg.`
 

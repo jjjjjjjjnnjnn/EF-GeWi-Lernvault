@@ -19,9 +19,25 @@ version: Lesson-v3
 
 ZIELE (drei messbare Ziele dieser Lektion):
 
-1. Du kannst den geometrischen Unterschied zwischen Sekantensteigung (mittlere Aenderungsrate) und Tangentensteigung (lokale Aenderungsrate) erklaeren: zwei Punkte ueber ein Intervall gegen einen Punkt als Grenzlage.
-2. Du kannst den Differenzenquotienten $m = (f(x_0 + h) - f(x_0)) / h$ aufstellen und beschreiben, wie die Sekante fuer $h \to 0$ um den festen Punkt rotiert und in die Tangente uebergeht.
-3. Du kannst mit Differenzenquotient und Grenzwert die Ableitung einer Funktion an einer Stelle von Hand berechnen und als Klausursatz formulieren (AFB II).
+1. Du kannst Sekante als Gerade durch zwei Punkte und Tangente als Grenzlage fuer $h \to 0$ unterscheiden und je ein Bild skizzieren.
+2. Du kannst $m = \frac{f(x_0+h)-f(x_0)}{h}$ aufstellen und beschreiben, wie $Q$ gegen $P$ wandert und die Sekante in die Tangente rotiert.
+3. Du kannst $f'(3) = 6$ fuer $f(x) = x^2$ von Hand berechnen und gegen die Sekantensteigung $8$ ueber $[3, 5]$ abgrenzen (AFB II).
+
+### Hook / Phaenomen
+
+Ein Blitzer misst $80\,\mathrm{km/h}$ im Moment — doch jede Messung mittelt ueber eine Strecke. Der Tacho behauptet einen Punktwert, die Physik kennt nur Mittelwerte ueber Intervalle. Genau hier beginnt die Analysis: Wie wird aus zwei Punkten ein einziger — und warum liefert $[3, 5]$ mit Steigung $8$ einen anderen Wert als der Moment $6$ an $x_0 = 3$?
+
+### Fachbegriff & Definition
+
+Nach dem NRW-Kernlehrplan Analysis ist die **Ableitung an der Stelle $x_0$ der Grenzwert des Differenzenquotienten fuer $h$ gegen $0$ und beschreibt die Steigung der Tangente an dieser Stelle**. Die **mittlere Aenderungsrate ist die Sekantensteigung ueber ein Intervall**, die **lokale Aenderungsrate ist die Tangentensteigung an einer Stelle als Grenzlage**.
+
+### Wirkungsgefuege / Modell
+
+Der Mechanismus laesst $Q$ wandern: $P(3, 9)$ bleibt fest, $Q(3+h, (3+h)^2)$ rueckt heran. Die Sekantensteigung $m(h) = \frac{(3+h)^2-9}{h} = \frac{6h+h^2}{h} = 6+h$ sinkt mit $h$. Fuer $h \to 0$ gilt $m \to 6$, also $f'(3) = 6$. Ueber $[3, 5]$ mit $h = 2$ gilt dagegen $m = 8$ — groesser, weil die Parabel dort steiler mittelt.
+
+Schritt A: $P$ fixieren und $Q$ mit $h$ aufstellen.
+Schritt B: $m(h)$ kuerzen und $h \to 0$ betrachten.
+Schritt C: Moment $6$ gegen Mittel $8$ abgrenzen und deuten.
 
 Klausur-Satz: `Die Ableitung an einer Stelle x0 ist der Grenzwert des Differenzenquotienten fuer h gegen 0 und beschreibt die Steigung der Tangente an dieser Stelle.`
 
@@ -29,11 +45,21 @@ Klausur-Satz: `Die Ableitung an einer Stelle x0 ist der Grenzwert des Differenze
 
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
-- Mittlere Aenderungsrate (Sekantensteigung): Differenz der Funktionswerte durch Differenz der Stellen, also der Differenzenquotient ueber ein Intervall.
-- Lokale Aenderungsrate (Tangentensteigung): Grenzlage der Sekantensteigung an einer Stelle, also der Wert $f'(x_0)$.
-- Sekante: Gerade durch zwei verschiedene Punkte des Funktionsgraphen.
-- Tangente: Gerade, die den Graphen in einem Punkt beruehrt und dort die Steigung $f'(x_0)$ besitzt.
-- Differenzenquotient: $(f(x_0 + h) - f(x_0)) / h$; misst die Sekantensteigung auf $[x_0, x_0 + h]$.
+### Hook / Phaenomen
+
+Ein Radargeraet meldet mittlere Geschwindigkeit ueber $100\,\mathrm{m}$, der Tacho meldet momentane. Beide heissen Geschwindigkeit — doch sie messen Verschiedenes. Wer beide verwechselt, versteht weder Blitzer noch Ableitung. Welche fuenf Begriffe trennen Mittel und Moment sauber?
+
+### Fachbegriffe & Definitionen
+
+- **Mittlere Aenderungsrate:** Differenzenquotient ueber ein Intervall; Sekantensteigung zwischen zwei Punkten.
+- **Lokale Aenderungsrate:** Grenzwert an einer Stelle; Tangentensteigung $f'(x_0)$.
+- **Sekante:** Gerade durch zwei verschiedene Punkte des Graphen.
+- **Tangente:** Gerade durch einen Punkt als Grenzlage der Sekanten fuer $h \to 0$.
+- **Differenzenquotient:** $\frac{f(x_0+h)-f(x_0)}{h}$; misst die Sekante auf $[x_0, x_0+h]$.
+
+### Wirkungsgefuege / Modell
+
+Die Kette rotiert um $P$: Mit schrumpfendem $h$ dreht sich die Sekante um den festen Punkt in die Tangente. Algebraisch faellt $h$ aus $m(h) = 6+h$ heraus, geometrisch schliesst sich die Schere zwischen $P$ und $Q$. Der Differentialquotient $\lim_{h \to 0} m(h)$ fixiert den Moment, waehrend jede feste $h$-Wahl einen Mittelwert liefert. Daher ist $8$ ueber $[3, 5]$ kein Fehler, sondern eine andere Frage als $6$ an $3$.
 
 Klausur-Satz: `Der Differenzenquotient liefert die Sekantensteigung ueber ein Intervall, der Differentialquotient die Tangentensteigung an einer Stelle.`
 
@@ -41,7 +67,21 @@ Klausur-Satz: `Der Differenzenquotient liefert die Sekantensteigung ueber ein In
 
 TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
-Die Ableitung entsteht aus Annaeherung: Ein Punkt $P(x_0, f(x_0))$ bleibt fest, ein zweiter Punkt $Q$ wandert auf der Kurve gegen $P$. Die Sekante durch beide rotiert um $P$; fuer $h \to 0$ nimmt sie die Grenzlage der Tangente ein, deren Steigung $f'(x_0)$ ist. Die Sekante misst daher das mittlere Tempo auf einer Strecke, die Tangente das momentane Tempo in einem Punkt. Die Bruecke bildet der Differenzenquotient: erst aufstellen, dann $h \to 0$ betrachten.
+### Hook / Phaenomen
+
+Ein Ingenieur vermisst eine Brueckenkurve: Zwei Messpunkte liefern die mittlere Steigung, doch die Statik braucht die exakte Neigung im Lagerpunkt. Die Sekante durch $P$ und $Q$ rotiert mit wanderndem $Q$ — und rastet bei $h \to 0$ in die Tangente ein. Wie wird aus Rotation ein Grenzwert — und warum zeigt das Bild mehr als jede Formel?
+
+### Fachbegriff & Definition
+
+Die **Sekante durch $P$ und $Q$ geht fuer $h \to 0$ in die Tangente in $P$ ueber; ihre Steigungen konvergieren gegen $f'(x_0)$**. Die **Bruecke bildet der Differenzenquotient: erst aufstellen, dann $h \to 0$ betrachten**. Die Sekante misst das mittlere Tempo auf der Strecke, die Tangente das momentane Tempo im Punkt.
+
+### Wirkungsgefuege / Modell
+
+Der Tiefenweg in drei Bildern: $h$ gross zu flache Schere, $h$ klein zu enge Schere, $h \to 0$ zu Tangente. Fuer $f(x) = x^2$ gilt $m(h) = 2x_0+h$, also an $x_0 = 3$ genau $6+h$ gegen $6$. Die Sekante ueber $[3, 5]$ bleibt bei $8$ stehen, weil sie zwei verschiedene Steigungen mittelt. Der Grenzprozess schaltet von Mittel auf Moment um — ein Schalter, kein Gleitregler.
+
+Schritt A: $m(h) = 2x_0+h$ herleiten und einsetzen.
+Schritt B: $h \to 0$ als Rotation um $P$ lesen.
+Schritt C: Mittel $8$ und Moment $6$ je einer Frage zuordnen.
 
 ```diagram
         y ^
@@ -58,6 +98,7 @@ Die Ableitung entsteht aus Annaeherung: Ein Punkt $P(x_0, f(x_0))$ bleibt fest, 
           +----------------------------------------> x
                   x0           x0+h
      Steigung der Sekante = (f(x0+h) - f(x0)) / h
+     Limes h > 0 > f'(x0) = 6 an x0=3, Mittel 8 auf [3;5]
 ```
 
 Klausur-Satz: `Laesst man h gegen 0 streben, so geht die Sekante durch P und Q in die Tangente im Punkt P ueber.`

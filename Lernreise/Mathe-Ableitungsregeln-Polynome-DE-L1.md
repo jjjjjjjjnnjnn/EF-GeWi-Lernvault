@@ -19,9 +19,25 @@ version: Lesson-v3
 
 ZIELE (drei messbare Ziele dieser Lektion):
 
-1. Du kannst die drei Werkzeuge der Polynomableitung nennen und ihre Bedingungen angeben: Potenzregel (Exponent wird Faktor, Exponent minus eins), Faktorregel (konstanter Faktor bleibt stehen) und Summenregel (gliedweises Ableiten).
-2. Du kannst ein ganzrationales Polynom in Summanden zerlegen, jeden Summanden einzeln ableiten und die Ergebnisse vorzeichenrichtig addieren, ohne konstante Summanden zu vergessen.
-3. Du kannst die Operatoren unterscheiden: Bei $berechnen$ genuegt die Regelanwendung, bei $nachweisen$ oder $zeigen$ ist der Differenzenquotient mit Grenzuebergang darzustellen (AFB II).
+1. Du kannst Potenzregel, Faktorregel und Summenregel je an einem Beispiel vormachen und die Bedingung nennen: Potenzregel nur fuer $x^n$, Faktorregel nur fuer konstanten Faktor, Summenregel nur gliedweise.
+2. Du kannst $f(x) = 4x^3 - 5x^2 + 7x - 2$ fehlerfrei zu $f'(x) = 12x^2 - 10x + 7$ ableiten und $f'(2) = 35$ als lokale Aenderungsrate mit Einheit deuten.
+3. Du kannst am Operator entscheiden: Bei $berechnen$ schreibst du nur die Regelkette, bei $nachweisen$ oder $zeigen$ den Differenzenquotienten mit $h \to 0$ (AFB II).
+
+### Hook / Phaenomen
+
+Im Jahr 1999 vergluehte der Mars Climate Orbiter in der Marsatmosphaere — ein Einheitenfehler, keine Raketenpanne. Die Software rechnete mit falschen Faktoren, die Flugbahn driftete ab, 125 Millionen Dollar vergluehten. In der Analysis passiert der gleiche Fehlertyp im Kleinen: Wer beim Ableiten den Exponenten nicht verringert oder eine Konstante mitschleppt, erzeugt eine falsche Steigung — und jede weitere Rechnung mit Tangente oder Extrempunkt kippt. Wie schuetzt ein festes Regelschema vor genau diesem Faktorfehler? Und warum muss die Konstante $-2$ zu $0$ werden, obwohl sie im Term steht?
+
+### Fachbegriff & Definition
+
+Nach dem NRW-Kernlehrplan Analysis ist die **Ableitung $f'(x)$ die lokale Aenderungsrate, also die Steigung der Tangente im Punkt $P(x, f(x))$**. Fuer ganzrationale Funktionen gilt die **Potenzregel $(x^n)' = n \cdot x^{n-1}$**, die **Faktorregel $(c \cdot f)' = c \cdot f'$ fuer konstantes $c$** und die **Summenregel $(f+g)' = f' + g'$**. Eine **konstante Funktion $f(x) = c$ besitzt die Ableitung $f'(x) = 0**, weil ihr Graph eine waagerechte Gerade mit Steigung null ist.
+
+### Wirkungsgefuege / Modell
+
+Das Verfahren laeuft in drei Schritten: Zerlegen, Einzelableiten, Addieren. Erstens wird $f$ als Summe von Monomen $c_k x^k$ gelesen. Zweitens wird jedes Monom mit $c_k \cdot k \cdot x^{k-1}$ abgeleitet — Koeffizient mal Exponent, Exponent minus eins. Drittens addiert die Summenregel alle Teile, Konstanten fallen als $0$ weg.
+
+Schritt A: $f(x) = 4x^3 - 5x^2 + 7x - 2$ in vier Summanden teilen.
+Schritt B: $4x^3 \to 4 \cdot 3x^2 = 12x^2$, $-5x^2 \to -5 \cdot 2x = -10x$, $7x \to 7$, $-2 \to 0$.
+Schritt C: Addieren zu $f'(x) = 12x^2 - 10x + 7$, dann $f'(2) = 12 \cdot 4 - 20 + 7 = 35$.
 
 Klausur-Satz: `Ganzrationale Funktionen werden mit der Potenzregel, der Faktorregel und der Summenregel gliedweise differenziert.`
 
@@ -29,11 +45,23 @@ Klausur-Satz: `Ganzrationale Funktionen werden mit der Potenzregel, der Faktorre
 
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
-- Potenzregel: $(x^n)' = n \cdot x^{n-1}$. Der Exponent wird zum Faktor und um eins verringert.
-- Faktorregel: $(c \cdot f)' = c \cdot f'$. Ein konstanter Faktor bleibt beim Differenzieren unveraendert stehen.
-- Summenregel: $(f + g)' = f' + g'$. Die Ableitung einer Summe ist die Summe der Ableitungen.
-- Konstante Funktion: $f(x) = c$ besitzt die Ableitung $f'(x) = 0$. Der Graph ist eine waagerechte Gerade.
-- Ableitungsfunktion: Die Funktion $f'$, die jeder Stelle $x$ die Tangentensteigung des Graphen von $f$ zuordnet.
+### Hook / Phaenomen
+
+Ein Schueler schreibt $f(x) = 3x^4 - 2x^2 + 9$ ab und liefert $f'(x) = 12x^3 - 4x + 9$. Ein Term stimmt, einer nicht — doch welcher? Ohne scharfe Begriffe bleibt jede Korrektur ein Ratespiel. Diese fuenf Werkzeuge entscheiden in Sekunden, ob ein Schritt erlaubt ist oder nicht.
+
+### Fachbegriffe & Definitionen
+
+- **Potenzregel:** $(x^n)' = n \cdot x^{n-1}$ fuer $n \in \mathbb{N}$. Der Exponent wird Faktor und zugleich um eins verringert.
+- **Faktorregel:** $(c \cdot f)' = c \cdot f'$ nur fuer konstantes $c$. Ein $x$-abhaengiger Faktor verlangt die Produktregel.
+- **Summenregel:** $(f + g)' = f' + g'$ sowie $(f - g)' = f' - g'$. Sie erlaubt das gliedweise Vorgehen bei Polynomen.
+- **Konstante Funktion:** $f(x) = c$ mit $f'(x) = 0$. Der Graph ist waagerecht, die lokale Aenderung ist null.
+- **Ableitungsfunktion:** $f'$ ordnet jeder Stelle $x$ die Tangentensteigung von $f$ zu, also $x \mapsto f'(x)$ mit $f'(x_0)$ als Wert an $x_0$.
+
+### Wirkungsgefuege / Modell
+
+Die Begriffe greifen als Kette: Die Summenregel oeffnet den Term in Summanden, Potenz- und Faktorregel bearbeiten jeden Summanden, die Konstante schliesst mit $0$ ab. Wer $x^2 \cdot x^3$ mit der Faktorregel zieht, verwechselt konstant mit variabel — der Fehler faellt sofort auf, weil beide Faktoren $x$ enthalten. Der Test lautet daher stets: Ist der Faktor konstant — ja oder nein — und erst dann wird gezogen oder Produktregel gewaehlt.
+
+Kette: $f = \sum c_k x^k \to f' = \sum c_k \cdot k x^{k-1}$ mit $c_0' = 0$. Beispiel: $3x^4 \to 12x^3$, $-2x^2 \to -4x$, $9 \to 0$.
 
 Klausur-Satz: `Fuer eine Potenz gilt die Potenzregel (x^n)' = n \cdot x^{n-1}; Konstanten fallen beim Differenzieren weg.`
 
@@ -41,9 +69,21 @@ Klausur-Satz: `Fuer eine Potenz gilt die Potenzregel (x^n)' = n \cdot x^{n-1}; K
 
 TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
-Die Ableitung eines Polynoms folgt einer festen Ablauffolge. Zuerst wird der Term als Summe einzelner Monome gelesen. Dann wird jedes Monom einzeln behandelt: Der Koeffizient wird mit dem alten Exponenten multipliziert, der Exponent wird um eins verringert. Ein Summand ohne $x$ besitzt die Ableitung $0$. Die Summenregel erlaubt dieses gliedweise Vorgehen, denn die Ableitung einer Summe ist die Summe der Ableitungen. Die Faktorregel gilt nur fuer einen konstanten Faktor vor einer Funktion, nicht fuer das Produkt zweier $x$-abhaengiger Faktoren.
+### Hook / Phaenomen
 
-$$f(x) = 4x^3 - 5x^2 + 7x - 2 \implies f'(x) = 12x^2 - 10x + 7$$
+Zwei Aufgaben sehen gleich aus, verlangen aber verschiedene Beweise: $Bestimmen Sie f'$ gegen $Zeigen Sie mit dem Differenzenquotienten$. Wer beide mit derselben Regelkette beantwortet, verliert beim zweiten alle Darstellungspunkte — obwohl das Ergebnis stimmt. Woran erkennt man in drei Sekunden, welcher Weg verlangt ist? Und warum rettet die Regelkette allein den Nachweis nicht?
+
+### Fachbegriff & Definition
+
+Der **Differenzenquotient $\frac{f(x_0+h)-f(x_0)}{h}$ mit $h \ne 0$ misst die Sekantensteigung**, sein Grenzwert $f'(x_0) = \lim_{h \to 0} \frac{f(x_0+h)-f(x_0)}{h}$ die Tangentensteigung. Die **Regelkette aus Potenz-, Faktor- und Summenregel ist die Abkuerzung dieses Grenzwerts fuer Polynome** — schnell bei $berechnen$, unzulaessig allein bei $nachweisen$ oder $zeigen$.
+
+### Wirkungsgefuege / Modell
+
+Der Tiefenmechanismus verbindet Abkuerzung und Nachweis: Fuer $g(x) = x^2$ gilt $\frac{(x_0+h)^2-x_0^2}{h} = \frac{2x_0h+h^2}{h} = 2x_0+h$, also $\lim_{h \to 0}(2x_0+h) = 2x_0$. Genau dieses $2x_0$ liefert die Potenzregel direkt als $g'(x_0) = 2x_0$. Die Regel ist daher kein Zauber, sondern der gekuerzte Grenzwert.
+
+Schritt A: Differenzenquotienten aufstellen und ausmultiplizieren.
+Schritt B: $h$ ausklammern und kuerzen mit $h \ne 0$.
+Schritt C: $h \to 0$ gehen lassen und mit der Regelkette gegenpruefen.
 
 ```diagram
    f(x)  =   4x^3    -    5x^2    +    7x    -    2
@@ -54,6 +94,7 @@ $$f(x) = 4x^3 - 5x^2 + 7x - 2 \implies f'(x) = 12x^2 - 10x + 7$$
                v            v           v         v
    f'(x) =   12x^2   -    10x     +     7    +    0
                === gliedweise addieren (Summenregel) ===
+   Nachweis: (f(x0+h)-f(x0))/h kuerzen, dann h > 0
    Exponent minus eins, Koeffizient mal Exponent; Konstante wird 0
 ```
 

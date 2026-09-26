@@ -19,9 +19,25 @@ version: Lesson-v3
 
 ZIELE (drei messbare Ziele dieser Lektion):
 
-1. Du kannst die geometrische Bedeutung eines Wendepunkts erklaeren: Dort wechselt die Kruemmung, etwa bei einer Epidemiekurve den Uebergang von beschleunigtem zu gebremstem Anstieg.
-2. Du kannst die Pruefkette $f''(x) = 0$ plus Vorzeichenwechsel (oder $f'''(x) \ne 0$) ausfuehren und Wendepunktkoordinaten mit Wendetangente angeben.
-3. Du kannst das Gegenbeispiel $g(x) = x^4$ an der Stelle $x = 0$ einordnen und eine korrekte Schlussformulierung schreiben (AFB II).
+1. Du kannst Kruemmung links gegen rechts an $f'' > 0$ und $f'' < 0$ unterscheiden und am Bild benennen.
+2. Du kannst $f''(x) = 0$ loesen, den Vorzeichenwechsel pruefen und $W(x_W, f(x_W))$ mit Wendetangente $y = f'(x_W)(x-x_W)+f(x_W)$ angeben.
+3. Du kannst $g(x) = x^4$ an $x = 0$ als Gegenbeispiel einordnen: $g'' = 0$ ohne Wechsel, also kein Wendepunkt (AFB II).
+
+### Hook / Phaenomen
+
+Im Jahr 2020 stieg die Fallkurve erst immer schneller, dann immer langsamer — der Wendepunkt markierte den Moment, in dem das Wachstum kippte. Manager, die nur die Hoehe lasen, reagierten zu spaet; wer die Kruemmung las, handelte frueh. Eine Epidemiekurve und eine Kostenkurve stellen dasselbe Raetsel: Wo endet beschleunigter Anstieg und beginnt gebremster — und warum reicht $f'' = 0$ allein nie als Beweis?
+
+### Fachbegriff & Definition
+
+Nach dem NRW-Kernlehrplan Analysis liegt ein **Wendepunkt genau dort, wo die zweite Ableitung null wird und ihr Vorzeichen wechselt, also die Kruemmung ihre Richtung aendert**. Dabei bedeutet **$f''(x) > 0$ linksgekrummt und $f''(x) < 0$ rechtsgekrummt**. Die **Wendetangente $y = f'(x_W)(x-x_W)+f(x_W)$ durchquert den Graphen im Wendepunkt**.
+
+### Wirkungsgefuege / Modell
+
+Der Mechanismus folgt drei Schritten: $f''(x) = 0$ liefert Kandidaten, Vorzeichenwechsel links gegen rechts entscheidet, Einsetzen liefert $W$. Am Muster mit $f''(2) = 0$ und Wechsel von $+$ nach $-$ sowie $W(2, 3)$ und Tangente $y = -3x+9$ kreuzt die Tangente den Graphen. Das Gegenbeispiel $g(x) = x^4$ mit $g''(0) = 0$ ohne Wechsel bleibt linksgekrummt beiderseits — kein Wechsel, kein Wendepunkt.
+
+Schritt A: $f''$ bilden und $f'' = 0$ loesen.
+Schritt B: Vorzeichen links und rechts vergleichen oder $f''' \ne 0$ pruefen.
+Schritt C: $W$ einsetzen und Tangente aufstellen.
 
 Klausur-Satz: `Ein Wendepunkt liegt genau dort, wo die zweite Ableitung null wird und ihr Vorzeichen wechselt, also die Kruemmung ihre Richtung aendert.`
 
@@ -29,11 +45,21 @@ Klausur-Satz: `Ein Wendepunkt liegt genau dort, wo die zweite Ableitung null wir
 
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
-- Kruemmung: $f''(x) > 0$ bedeutet linkskrumm (schalenfoermig), $f''(x) < 0$ bedeutet rechtsgekrummt (kappenfoermig).
-- Wendepunkt: Punkt des Kruemmungswechsels; beide Koordinaten $W(x_W, f(x_W))$ werden angegeben.
-- Nullstelle von $f''$: Notwendige Bedingung $f''(x_W) = 0$; allein noch nicht hinreichend.
-- Vorzeichenwechsel (VZW): Unterschiedliche Vorzeichen von $f''$ links und rechts des Kandidaten; robustere hinreichende Bedingung als $f'''$ allein.
-- Wendetangente: Tangente im Wendepunkt, $y = f'(x_W)(x - x_W) + f(x_W)$; sie durchquert den Graphen.
+### Hook / Phaenomen
+
+Zwei Stellen zeigen $f'' = 0$ — eine mit Kruemmungswechsel, eine ohne. Der Rechner meldet beide Male null, doch nur einmal liegt ein Wendepunkt vor. Die $x^4$-Falle schnappt bei jeder Klausur zu. Welche fuenf Begriffe sichern das Urteil in einer Zeile?
+
+### Fachbegriffe & Definitionen
+
+- **Kruemmung:** $f''(x) > 0$ zu linksgekrummt, $f''(x) < 0$ zu rechtsgekrummt.
+- **Wendepunkt:** Punkt $W(x_W, f(x_W))$ mit Kruemmungswechsel; beide Koordinaten werden angegeben.
+- **Nullstelle von $f''$:** Notwendige Bedingung $f''(x_W) = 0$; allein noch nicht hinreichend.
+- **Vorzeichenwechsel (VZW):** Verschiedene Vorzeichen von $f''$ links und rechts; robuste hinreichende Bedingung.
+- **Wendetangente:** $y = f'(x_W)(x-x_W)+f(x_W)$; sie kreuzt den Graphen in $W$.
+
+### Wirkungsgefuege / Modell
+
+Die Kette lautet: $f'' = 0$ liefert Verdacht, VZW faellt Urteil, $W$ plus Tangente schliesst ab. Fuer $g(x) = x^4$ gilt $g'' = 12x^2$ mit $g''(0) = 0$, doch $g'' > 0$ beiderseits — kein Wechsel, also kein Wendepunkt, sondern Tiefpunkt. Fuer $f(x) = x^3$ gilt $f'' = 6x$ mit Wechsel an $0$ — echter Wendepunkt. Der Unterschied steht nicht in der Nullstelle, sondern im Wechsel.
 
 Klausur-Satz: `Aus f''(x_W) = 0 mit Vorzeichenwechsel folgt ein Wendepunkt, die Wendetangente beschreibt die Richtung an dieser Stelle.`
 
@@ -41,7 +67,21 @@ Klausur-Satz: `Aus f''(x_W) = 0 mit Vorzeichenwechsel folgt ein Wendepunkt, die 
 
 TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
-Die kumulierte Fallzahl waechst zuerst immer schneller (linksgekrummt, $f'' > 0$) und danach immer langsamer (rechtsgekrummt, $f'' < 0$). Der Wechsel liegt am Wendepunkt. Dort gilt $f''(x_W) = 0$ mit Vorzeichenwechsel, und die Wendetangente $y = f'(x_W)(x - x_W) + f(x_W)$ kreuzt den Graphen. Eine Nullstelle von $f''$ ohne Zeichenwechsel ist kein Wendepunkt; genau darin besteht die $x^4$-Falle.
+### Hook / Phaenomen
+
+Ein Logistikchef sieht kumulierte Auslieferungen: erst immer schneller, dann immer langsamer. Er fragt nach dem staerksten Moment — dem Wendepunkt mit steilster Tangente. Sein Assistent liefert $f'' = 0$ ohne Wechsel und trifft daneben. Wie findet man den echten Wechsel — und warum kreuzt dort die Tangente den Graphen?
+
+### Fachbegriff & Definition
+
+Der **Kruemmungswechsel an einer Nullstelle von $f''$ mit Vorzeichenwechsel belegt den Wendepunkt; dort aendert der Graph seine Kruemmung**. Die **steilste Stelle des Anstiegs faellt mit der Wende zusammen, weil $f'$ dort extremal wird**. Ohne Wechsel bleibt $f'' = 0$ ein blinder Kandidat wie bei $x^4$.
+
+### Wirkungsgefuege / Modell
+
+Der Tiefenweg an der Fallkurve: Links $f'' > 0$ zu beschleunigt, rechts $f'' < 0$ zu gebremst, dazwischen $W$ mit $f''(x_W) = 0$ plus Wechsel. Die Tangente $y = f'(x_W)(x-x_W)+f(x_W)$ schneidet dort, weil links die Kurve unter und rechts ueber der Tangente liegt — oder umgekehrt. Pruefung in drei Griffen: $f'' = 0$ loesen, Zeichen links und rechts einsetzen, $W$ und Tangente schreiben.
+
+Schritt A: $f'' = 0$ loesen und Kandidaten listen.
+Schritt B: Zeichenwechsel per Einsetzen links und rechts sichern.
+Schritt C: $W$ und Tangente angeben und Kreuzung deuten.
 
 ```diagram
         f ^
@@ -56,6 +96,7 @@ Die kumulierte Fallzahl waechst zuerst immer schneller (linksgekrummt, $f'' > 0$
        linksgekrummt   |   rechtsgekrummt
        f'' > 0         |   f'' < 0
        Test: f''(x)=0 + VZW + f''' oder Kruemmung
+       Falle: x^4 mit f''(0)=0 ohne VZW > kein Wendepunkt
 ```
 
 Klausur-Satz: `Wechselt f'' an einer Nullstelle das Vorzeichen, so aendert der Graph dort seine Kruemmung und besitzt einen Wendepunkt.`

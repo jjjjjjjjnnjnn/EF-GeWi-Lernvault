@@ -19,9 +19,25 @@ version: Lesson-v3
 
 ZIELE (drei messbare Ziele dieser Lektion):
 
-1. Du kannst die Zwei-Teile-Struktur der ZKE mit Zeitregeln nennen: Teil A hilfsmittelfrei in hoechstens 25 Minuten (ohne Rechner, ohne Formelsammlung), Teil B mit WTR oder CAS plus Formelsammlung in mindestens 75 Minuten, insgesamt 100 Minuten.
-2. Du kannst im Teil-A-Stil ohne Hilfsmittel Nullstellen, Ableitungen und Vektorlaengen berechnen und Potenzregel mit $pq$-Formel auswendig anwenden.
-3. Du kannst in Teil B eine vollstaendige Kette aus Ansatz, Rechnung und Antwortsatz schreiben, denn bewertet wird der nachvollziehbare Loesungsweg (AFB II/III).
+1. Du kannst die ZKE-Struktur nennen: Teil A hilfsmittelfrei max. $25$ Minuten, Teil B mit WTR oder CAS plus Formelsammlung mind. $75$ Minuten, gesamt $100$ Minuten.
+2. Du kannst im Teil-A-Stil $f'(x) = 15x^2-4x+1$ zu $f'(1) = 12$ bilden und $x^2-9x+20 = 0$ per $pq$ zu $4$ und $5$ loesen.
+3. Du kannst in Teil B Ansatz, Rechnung und Antwortsatz mit $|\vec{a}|$ und Einheiten schreiben und die Zeit $25$ gegen $75$ einteilen (AFB II/III).
+
+### Hook / Phaenomen
+
+Im Jahr 2024 gaben $30$ Prozent der ZKE-Teilnehmer an, an Teil A zu scheitern — nicht an schweren Aufgaben, sondern an der Uhr. Wer $25$ Minuten ueberzieht, stiehlt sie Teil B; wer zu frueh abgibt, verschenkt Handpunkte. Die Pruefung ist damit ein Optimierungsproblem: Wie verteilt man $100$ Minuten auf zwei Hefte — und warum entscheiden Potenzregel und $pq$-Formel auswendig ueber Bestehen oder Nichtbestehen?
+
+### Fachbegriff & Definition
+
+Fuer die **ZKE laeuft Teil A hilfsmittelfrei in hoechstens $25$ Minuten ohne Rechner und ohne Formelsammlung, waehrend Teil B mit WTR oder CAS und Formelsammlung mindestens $75$ Minuten umfasst**. In **Teil A muessen Potenzregel, $pq$-Formel und Vektorlaenge ohne Hilfsmittel sicher beherrscht werden**. In **Teil B zaehlt der vollstaendige Rechenweg aus Ansatz, Rechnung und Antwortsatz**.
+
+### Wirkungsgefuege / Modell
+
+Der Mechanismus teilt Zeit und Werkzeug: Teil A verlangt $h'(x) = 15x^2-4x+1$ zu $h'(1) = 15-4+1 = 12$ aus dem Kopf sowie $x_{1,2} = \frac{9}{2} \pm \sqrt{\frac{81}{4}-20} = 4{,}5 \pm 0{,}5$ zu $4$ und $5$. Teil B verlangt dieselbe Rechnung plus Deutung: $|\vec{a}| = \sqrt{a_1^2+a_2^2+a_3^2}$ mit Ansatz und Satz. Strategie: A schnell und exakt in $25$, B vollstaendig und klar in $75$.
+
+Schritt A: Hefttyp lesen und Werkzeugfrage klaeren.
+Schritt B: In A Handformeln ohne Hilfe aktivieren.
+Schritt C: In B jeden Schritt mit Satz und Einheit schliessen.
 
 Klausur-Satz: `In der ZKE laeuft Teil A hilfsmittelfrei in hoechstens 25 Minuten, waehrend Teil B mit WTR oder CAS und Formelsammlung mindestens 75 Minuten umfasst.`
 
@@ -29,11 +45,21 @@ Klausur-Satz: `In der ZKE laeuft Teil A hilfsmittelfrei in hoechstens 25 Minuten
 
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
-- Hilfsmittelfreier Teil (Teil A): Ohne Taschenrechner und ohne Formelsammlung; nur Handrechnung mit auswendig beherrschten Formeln.
-- Teil B mit Hilfsmitteln: Mit WTR oder CAS plus offizieller Formelsammlung; der Loesungsweg wird vollstaendig aufgeschrieben.
-- Mittlere Aenderungsrate: Differenzenquotient auf einem Intervall, also Sekantensteigung.
-- Lokale Aenderungsrate: Ableitungswert an einer Stelle, also Tangentensteigung.
-- Darstellungsleistung: Die Darstellung des Loesungswegs wird bepunktet; ein Ergebnis ohne Weg verfehlt Punkte.
+### Hook / Phaenomen
+
+Zwei Schueler rechnen dieselbe Ableitung — einer in $30$ Sekunden auswendig, einer in $3$ Minuten mit Herleitung. In Teil A kostet der zweite Weg die halbe Pruefung. Welche fuenf Begriffe entscheiden, was in den Kopf und was in die Formelsammlung gehoert?
+
+### Fachbegriffe & Definitionen
+
+- **Hilfsmittelfreier Teil (Teil A):** Ohne Rechner und Formelsammlung; nur Handrechnung mit Gedaechtnisformeln.
+- **Teil B mit Hilfsmitteln:** Mit WTR oder CAS plus Formelsammlung; der Weg wird voll ausgeschrieben.
+- **Mittlere Aenderungsrate:** Differenzenquotient auf Intervall; Sekantensteigung als Teil-A-Klassiker.
+- **Lokale Aenderungsrate:** Ableitungswert $f'(x_0)$; Tangentensteigung per Potenzregel auswendig.
+- **Darstellungsleistung:** Bepunktung des Wegs; Ergebnis ohne Weg verfehlt Punkte in Teil B.
+
+### Wirkungsgefuege / Modell
+
+Die Kette sortiert Werkzeug und Zeit: Potenzregel $(x^n)' = n x^{n-1}$, $pq$-Formel $x_{1,2} = -\frac{p}{2} \pm \sqrt{(\frac{p}{2})^2-q}$ und $|\vec{a}| = \sqrt{a_1^2+a_2^2+a_3^2}$ gehoeren in Teil A ins Gedaechtnis. In Teil B gehoeren sie in Ansatz plus Rechnung plus Satz. Wer in A nach der Formelsammlung greift, hat das Heft verwechselt — der haeufigste Zeitfehler der ZKE.
 
 Klausur-Satz: `In Teil A muessen Potenzregel, pq-Formel und Vektorlaenge ohne Hilfsmittel sicher beherrscht werden.`
 
@@ -41,7 +67,21 @@ Klausur-Satz: `In Teil A muessen Potenzregel, pq-Formel und Vektorlaenge ohne Hi
 
 TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
-Die ZKE besteht aus zwei Pruefungen in ungleichem Takt. Beide Hefte liegen zu Beginn auf dem Tisch, die Hilfsmittel werden erst spaeter ausgegeben; jede Person entscheidet selbst, wann Teil A abgegeben wird, spaetestens nach 25 Minuten. Teil A verlangt Handgenauigkeit und Formelgedaechtnis: Nullstellen, Ableitungen und Vektorlaengen ohne jede Hilfe. Teil B verlangt Argumentationsketten und Sachuebersetzung: Analysis mit WTR oder CAS und Formelsammlung, bewertet als nachvollziehbarer Weg, nicht als blosse Zahl. Strategie: Teil A schnell und exakt, Teil B vollstaendig und klar.
+### Hook / Phaenomen
+
+Beide Hefte liegen zu Beginn auf dem Tisch — doch die Hilfsmittel kommen erst nach Abgabe von Teil A. Wer wann abgibt, entscheidet selbst, spaetestens nach $25$ Minuten. Viele zoegern und verlieren den Takt: zu lange an A gefeilt, zu wenig Zeit fuer B. Wie sieht der Taktfahrplan fuer $100$ Minuten aus — und warum gilt A schnell und exakt, B vollstaendig und klar?
+
+### Fachbegriff & Definition
+
+**Teil A prueft Analysis und Geometrie ohne Hilfsmittel, Teil B nur Analysis mit Hilfsmitteln und verlangt vollstaendige Rechenwege**. Die **Uebergabe erfolgt spaetestens bei Minute $25$**; jede Person waehlt den Zeitpunkt selbst. In **Teil B sichert Ansatz plus Rechnung plus Antwortsatz die Darstellungspunkte**.
+
+### Wirkungsgefuege / Modell
+
+Der Tiefenweg taktet $100$ Minuten: $0$ bis $25$ Handgenauigkeit mit $h'(1) = 12$ und Vieta-Probe $4+5 = 9$, $4 \cdot 5 = 20$; $25$ bis $100$ Argumentation mit $G(x)$, $G' = 0$ und Saetzen. Die Rechnung $x^2-9x+20 = 0$ zu $4$ und $5$ dauert auswendig Sekunden, mit Herleitung Minuten — genau diese Differenz frisst oder rettet Teil B. Daher: A nicht polieren, B nicht abkuerzen.
+
+Schritt A: Uhr auf $25$ stellen und A zuegig schliessen.
+Schritt B: Hilfsmittel nehmen und B mit Saetzen oeffnen.
+Schritt C: Letzte $10$ Minuten fuer Probe und Saetze reservieren.
 
 ```diagram
    Gesamtzeit 100 min
@@ -53,7 +93,8 @@ Die ZKE besteht aus zwei Pruefungen in ungleichem Takt. Beide Hefte liegen zu Be
    |  Nullstellen, Ableitung  |  Argumentation + Sachkontext   |
    |  Vektorlaenge            |  Ansatz + Rechnung + Satz      |
    +==========================+================================+
-    A: schnell und exakt      B: vollstaendig und klar
+    A: h'(1)=12, pq zu 4/5 auswendig und exakt
+    B: G'=0, Hochpunkt, Saetze vollstaendig und klar
     Uebergabe spaetestens bei Minute 25
 ```
 

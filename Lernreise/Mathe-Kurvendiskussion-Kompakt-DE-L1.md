@@ -19,9 +19,25 @@ version: Lesson-v3
 
 ZIELE (drei messbare Ziele dieser Lektion):
 
-1. Du kannst das Monotoniekriterium nennen: Ist $f'(x) > 0$ auf einem Intervall, so steigt $f$ dort; ist $f'(x) < 0$, so faellt $f$ dort. Dazu erstellst du eine Vorzeichentabelle.
-2. Du kannst das Zwei-Schritt-Verfahren fuer Extrempunkte ausfuehren: notwendige Bedingung $f'(x_0) = 0$ zur Kandidatensuche, hinreichende Bedingung (Vorzeichenwechsel oder $f''(x_0)$) zur Artbestimmung, danach Einsetzen fuer die Koordinaten.
-3. Du kannst lokale und globale Extrema unterscheiden und Hochpunkt gegen globales Maximum korrekt formulieren (AFB II).
+1. Du kannst das Monotoniekriterium nennen und an $f(x) = x^3 - 3x^2 + 1$ die Vorzeichentabelle von $f'(x) = 3x^2 - 6x$ aufstellen.
+2. Du kannst Kandidaten aus $f'(x_0) = 0$ zu $x = 0$ und $x = 2$ bestimmen und mit $f''(x) = 6x - 6$ zu Hoch und Tief sortieren.
+3. Du kannst Hochpunkt gegen globales Maximum abgrenzen und den Antwortsatz mit Koordinaten formulieren (AFB II).
+
+### Hook / Phaenomen
+
+Im Jahr 2008 verkaufte ein Fondsmanager auf dem Gipfel — und kaufte im Tal nach. Seine Nachbarn taten das Gegenteil: Sie kauften auf dem Gipfel, weil die Kurve stieg, und verkauften im Tal, weil sie fiel. Der Fehler heisst: lokale Richtung mit globaler Lage verwechselt. Eine Funktion mit $HP(1, 5)$ und $TP(3, 1)$ stellt dasselbe Raetsel: Wo steigt sie, wo faellt sie — und warum ist $f' = 0$ allein nie die Antwort?
+
+### Fachbegriff & Definition
+
+Nach dem NRW-Kernlehrplan Analysis gilt das **Monotoniekriterium: Ist $f'(x) > 0$ auf einem Intervall, so steigt $f$ dort streng monoton; ist $f'(x) < 0$, so faellt $f$ dort streng monoton**. Ein **lokaler Extrempunkt liegt vor, wenn $f'(x_0) = 0$ gilt und $f'$ dort das Vorzeichen wechselt oder $f''(x_0) \ne 0$ ist**. Die **Vorzeichentabelle ordnet die Nullstellen von $f'$ und belegt die Monotonie je Teilintervall**.
+
+### Wirkungsgefuege / Modell
+
+Der Mechanismus verbindet Richtung und Gipfel: $f'(x) = 3x^2-6x = 3x(x-2)$ besitzt Nullstellen $0$ und $2$. Links von $0$ gilt $f' > 0$ zu steigend, zwischen $0$ und $2$ gilt $f' < 0$ zu fallend, rechts von $2$ gilt $f' > 0$ zu steigend. Also $HP$ bei $0$ und $TP$ bei $2$. Mit $f''(x) = 6x-6$ gilt $f''(0) = -6 < 0$ zu Maximum und $f''(2) = 6 > 0$ zu Minimum — Vorzeichenwechsel und zweite Ableitung bestaetigen einander.
+
+Schritt A: $f'$ bilden und $f' = 0$ loesen.
+Schritt B: Vorzeichentabelle je Intervall fuellen.
+Schritt C: Mit $f''$ qualifizieren und Punkte durch Einsetzen bestimmen.
 
 Klausur-Satz: `Ein lokaler Extrempunkt liegt vor, wenn f'(x0) = 0 gilt und f' an dieser Stelle das Vorzeichen wechselt oder f''(x0) ungleich 0 ist.`
 
@@ -29,11 +45,21 @@ Klausur-Satz: `Ein lokaler Extrempunkt liegt vor, wenn f'(x0) = 0 gilt und f' an
 
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
-- Monoton steigend: Auf dem Intervall gilt $f'(x) > 0$; der Graph steigt von links nach rechts.
-- Monoton fallend: Auf dem Intervall gilt $f'(x) < 0$; der Graph faellt von links nach rechts.
-- Notwendige Bedingung: $f'(x_0) = 0$; sie liefert nur Kandidaten und ist allein nicht hinreichend.
-- Hinreichende Bedingung: $f''(x_0) < 0$ bedeutet Maximum, $f''(x_0) > 0$ bedeutet Minimum (oder Vorzeichenwechsel von $f'$).
-- Vorzeichentabelle: Die Nullstellen von $f'$ werden geordnet, jedes Teilintervall erhaelt ein Vorzeichen; daraus folgt die Monotonie.
+### Hook / Phaenomen
+
+Ein Sattelpunkt besitzt waagerechte Tangente — und ist doch kein Extrempunkt. Wer nur $f' = 0$ prueft, erklaert den Sattel zum Gipfel und verliert die Aufgabe. Welche fuenf Begriffe trennen Kandidat und Beweis in zwei Sekunden?
+
+### Fachbegriffe & Definitionen
+
+- **Monoton steigend:** $f'(x) > 0$ auf dem Intervall; der Graph steigt von links nach rechts.
+- **Monoton fallend:** $f'(x) < 0$ auf dem Intervall; der Graph faellt von links nach rechts.
+- **Notwendige Bedingung:** $f'(x_0) = 0$ liefert nur Kandidaten und ist allein nicht hinreichend.
+- **Hinreichende Bedingung:** $f''(x_0) < 0$ zu Maximum, $f''(x_0) > 0$ zu Minimum — oder Vorzeichenwechsel von $f'$.
+- **Vorzeichentabelle:** Geordnete Nullstellen von $f'$ mit Vorzeichen je Teilintervall; daraus folgt die Monotonie.
+
+### Wirkungsgefuege / Modell
+
+Die Kette lautet: $f'$ zeigt die Richtung, $f' = 0$ markiert Verdachtsstellen, $f''$ oder Vorzeichenwechsel faellt das Urteil. Am Muster $f(x) = x^3-3x$ mit $f' = 3x^2-3$ zu $x = \pm 1$ gilt $f''(-1) = -6 < 0$ zu Hoch und $f''(1) = 6 > 0$ zu Tief. Ohne diesen zweiten Schritt bleibt $x^3$ an $0$ mit $f' = 0$ ein falscher Gipfel — der Sattel entlarvt jede Abkuerzung.
 
 Klausur-Satz: `Die Monotonie ergibt sich aus dem Vorzeichen der ersten Ableitung, die Art des Extremums aus dem Vorzeichen der zweiten Ableitung.`
 
@@ -41,7 +67,21 @@ Klausur-Satz: `Die Monotonie ergibt sich aus dem Vorzeichen der ersten Ableitung
 
 TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
-Monotonie und Extrema sind zwei Seiten derselben Sache. Das Vorzeichen von $f'$ zeigt die Richtung: positiv bedeutet steigen, negativ bedeutet fallen. Ein Extrempunkt muss eine Wende der Richtung sein, also gilt dort notwendig $f'(x_0) = 0$. Doch diese Bedingung ist nur ein Kandidat: Auch ein Sattelpunkt besitzt waagerechte Tangente. Erst die hinreichende Bedingung entscheidet: Wechselt $f'$ das Zeichen oder zeigt $f''(x_0)$ ein klares Vorzeichen, so liegt ein Extremum vor. Weg: $f'$ bilden, $f' = 0$ loesen, mit $f''$ qualifizieren und einsetzen.
+### Hook / Phaenomen
+
+Zwei Funktionen besitzen beide $f'(2) = 0$ — eine mit Maximum, eine mit Sattel. Der Taschenrechner zeigt beide Male eine waagerechte Tangente, doch nur einmal wechselt die Richtung. Wie entlarvt der Vorzeichenwechsel den falschen Gipfel — und warum ist $f''(x_0) = 0$ ohne Wechsel kein Urteil?
+
+### Fachbegriff & Definition
+
+Der **Vorzeichenwechsel von $f'$ entscheidet: Wechselt $f'$ von plus nach minus, so liegt ein lokales Maximum vor; von minus nach plus ein lokales Minimum; ohne Wechsel ein Sattelpunkt**. Die **zweite Ableitung bestaetigt: $f''(x_0) < 0$ stuetzt Maximum, $f''(x_0) > 0$ stuetzt Minimum**. Bei $f''(x_0) = 0$ bleibt nur der Vorzeichenwechsel als Richter.
+
+### Wirkungsgefuege / Modell
+
+Der Tiefenweg am Wechsel: Links $+$ und rechts $-$ bedeutet Anstieg bis $x_0$ und Abstieg danach — also Gipfel. Links $-$ und rechts $+$ bedeutet Tal. Links und rechts gleiches Zeichen bedeutet Durchstieg als Sattel. Formal: $f'(x) = 3(x-1)(x-3)$ wechselt an $1$ von $+$ nach $-$ zu $HP(1, 5)$ und an $3$ von $-$ nach $+$ zu $TP(3, 1)$. Die Rechnung $f''(1) < 0$ und $f''(3) > 0$ spiegelt denselben Wechsel algebraisch.
+
+Schritt A: $f' = 0$ loesen und Intervalle ordnen.
+Schritt B: Vorzeichen je Intervall einsetzen und Wechsel lesen.
+Schritt C: Mit $f''$ gegenpruefen und Punkte einsetzen.
 
 ```diagram
    f'(x) :  +  +  + | -  -  - | +  +  +
@@ -50,6 +90,7 @@ Monotonie und Extrema sind zwei Seiten derselben Sache. Das Vorzeichen von $f'$ 
             Hochpunkt /   \ Tiefpunkt /
    f'(x1)=0, VZW + zu -  => lokales Maximum  (f''(x1)<0)
    f'(x2)=0, VZW - zu +  => lokales Minimum  (f''(x2)>0)
+   kein VZW => Sattelpunkt, trotz f'(x0)=0
    Merke: f'(x0)=0 ist nur notwendig, erst der VZW entscheidet.
 ```
 

@@ -19,9 +19,25 @@ version: Lesson-v3
 
 ZIELE (drei messbare Ziele dieser Lektion):
 
-1. Du kannst aus der Anzahl geometrischer Bedingungen den korrekten allgemeinen Ansatz waehlen: dritter Grad mit vier Koeffizienten, achsensymmetrischer vierter Grad nur mit geraden Exponenten.
-2. Du kannst geometrische Sprache in algebraische Gleichungen uebersetzen: Punkt in $f(x_0) = y_0$, Steigung in $f'(x_0) = m$, Extremum in $f'(x_0) = 0$, Wendepunkt in $f''(x_0) = 0$.
-3. Du kannst das lineare Gleichungssystem loesen, alle Koeffizienten bestimmen und die Probe gegen die Ausgangsbedingungen durchfuehren (AFB II).
+1. Du kannst aus vier Bedingungen den Ansatz $f(x) = ax^3+bx^2+cx+d$ und aus Symmetrie den Ansatz ohne ungerade Exponenten waehlen.
+2. Du kannst $P(0, 4)$ zu $f(0) = 4$, Steigung $-6$ zu $f'(0) = -6$, Wende bei $1$ zu $f''(1) = 0$ und Nullstelle bei $1$ zu $f(1) = 0$ uebersetzen.
+3. Du kannst das LGS zu $a = -1$, $b = 3$, $c = -6$, $d = 4$ loesen und die Probe gegen alle Bedingungen schreiben (AFB II).
+
+### Hook / Phaenomen
+
+Im Jahr 1999 suchten Forensiker aus Bremsspuren die Geschwindigkeit — aus Spuren wurde eine Funktion rekonstruiert. Auch Brueckenbauer lesen aus Pfeilerlage und Durchbiegung die Kurve zurueck. Steckbriefaufgaben kehren die Kurvendiskussion um: Nicht Eigenschaften aus dem Term folgern, sondern den Term aus Eigenschaften bauen. Wie werden aus vier geometrischen Hinweisen vier Gleichungen — und warum entscheidet die Bedingungszahl ueber alles?
+
+### Fachbegriff & Definition
+
+Nach dem NRW-Kernlehrplan Analysis gilt: **Bei Steckbriefaufgaben wird aus jeder geometrischen Eigenschaft eine Bedingungsgleichung, aus der sich die Koeffizienten des Funktionsterms bestimmen lassen**. Der **allgemeine Ansatz enthaelt alle noch unbekannten Koeffizienten, etwa $f(x) = ax^3+bx^2+cx+d$**. Die **Ableitungskette $f'$ und $f''$ liefert Steigungs- und Kruemmungsbedingungen**.
+
+### Wirkungsgefuege / Modell
+
+Der Mechanismus uebersetzt Geometrie in Algebra: $f(x) = ax^3+bx^2+cx+d$ mit $f'(x) = 3ax^2+2bx+c$ und $f''(x) = 6ax+2b$. Dann $f(0) = 4$ zu $d = 4$, $f'(0) = -6$ zu $c = -6$, $f''(1) = 0$ zu $6a+2b = 0$, $f(1) = 0$ zu $a+b+c+d = 0$. Einsetzen von $c$ und $d$ liefert $a+b = 2$ mit $3a+b = 0$, also $a = -1$ und $b = 3$. Die Probe $f(1) = -1+3-6+4 = 0$ schliesst ab.
+
+Schritt A: Ansatz nach Koeffizientenzahl waehlen und $f'$, $f''$ bereitstellen.
+Schritt B: Jede Bedingung in eine Gleichung verwandeln.
+Schritt C: LGS loesen und Probe gegen alle Bedingungen fahren.
 
 Klausur-Satz: `Bei Steckbriefaufgaben wird aus jeder geometrischen Eigenschaft eine Bedingungsgleichung, aus der sich die Koeffizienten des Funktionsterms bestimmen lassen.`
 
@@ -29,11 +45,21 @@ Klausur-Satz: `Bei Steckbriefaufgaben wird aus jeder geometrischen Eigenschaft e
 
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
-- Allgemeiner Ansatz: Polynom mit allen noch unbekannten Koeffizienten, etwa $f(x) = ax^3 + bx^2 + cx + d$.
-- Koeffizienten: Die noch unbestimmten Konstanten $a$, $b$, $c$, $d$; sie werden aus den Bedingungen geloest.
-- Uebersetzung der Bedingungen: Jedes geometrische Merkmal (Punkt, Steigung, Extremum) wird eine Gleichung.
-- Lineares Gleichungssystem (LGS): Die Kopplung aller Bedingungsgleichungen zur Bestimmung der Koeffizienten.
-- Probe: Einsetzen der geloesten Koeffizienten in alle Ausgangsbedingungen zur Kontrolle.
+### Hook / Phaenomen
+
+Ein Schueler zaehlt drei Bedingungen und waehlt vier Koeffizienten — das LGS bleibt unterbestimmt, die Aufgabe unloesbar. Seine Nachbarin nutzt Symmetrie und halbiert die Unbekannten. Der Unterschied liegt nicht im Rechnen, sondern im Zaehlen davor. Welche fuenf Begriffe sichern den Ansatz vor dem ersten Strich?
+
+### Fachbegriffe & Definitionen
+
+- **Allgemeiner Ansatz:** Polynom mit Unbekannten, etwa $f(x) = ax^3+bx^2+cx+d$ fuer dritten Grad.
+- **Koeffizienten:** Unbestimmte Konstanten $a$, $b$, $c$, $d$; sie werden aus den Bedingungen geloest.
+- **Uebersetzung der Bedingungen:** Punkt zu $f(x_0) = y_0$, Steigung zu $f'(x_0) = m$, Extremum zu $f'(x_0) = 0$, Wendepunkt zu $f''(x_0) = 0$.
+- **Lineares Gleichungssystem (LGS):** Kopplung aller Bedingungsgleichungen zur Bestimmung der Koeffizienten.
+- **Probe:** Einsetzen der Loesung in alle Ausgangsbedingungen zur Kontrolle.
+
+### Wirkungsgefuege / Modell
+
+Die Kette zaehlt vor dem Rechnen: Zahl der Unbekannten gegen Zahl unabhaengiger Bedingungen. Stimmen beide ueberein, so ist das LGS in der Regel eindeutig loesbar; bei Achsensymmetrie entfallen ungerade Exponenten und halbieren die Arbeit. Die Probe $a = -1$, $b = 3$, $c = -6$, $d = 4$ in allen vier Gleichungen sichert gegen Uebersetzungsfehler — der haeufigste Punktverlust liegt nicht im Loesen, sondern im Uebersetzen.
 
 Klausur-Satz: `Die Anzahl der unbekannten Koeffizienten muss der Anzahl der unabhaengigen Bedingungen entsprechen.`
 
@@ -41,7 +67,21 @@ Klausur-Satz: `Die Anzahl der unbekannten Koeffizienten muss der Anzahl der unab
 
 TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
-Eine Steckbriefaufgabe ist umgekehrte Kurvendiskussion: Statt Eigenschaften aus dem Term zu folgern, wird der Term aus Eigenschaften rekonstruiert. Das Verfahren lautet Uebersetzen: Zuerst den Ansatz nach der Koeffizientenzahl waehlen (dritter Grad braucht vier unabhaengige Bedingungen; bei Achsensymmetrie entfallen die ungeraden Exponenten), dann die Ableitungskette $f'$ und $f''$ bereitstellen, schliesslich jede Bedingung in eine Gleichung verwandeln: Punkt wird $f(x_0) = y_0$, Tangentensteigung wird $f'(x_0) = m$, waagerechte Tangente wird $f'(x_0) = 0$, Wendepunkt wird $f''(x_0) = 0$. Stimmen Bedingungszahl und Koeffizientenzahl ueberein, so ist das LGS in der Regel eindeutig loesbar. Die Probe schliesst jede Rechnung ab.
+### Hook / Phaenomen
+
+Ein Brueckenbogen soll durch $P(0, 4)$ mit Steigung $-6$, Wendepunkt bei $x = 1$ und Nullstelle bei $x = 1$ — vier Hinweise, ein Term. Viele schreiben sofort ein LGS und verrechnen sich, weil $f$, $f'$ und $f''$ vermischt werden. Wie sortiert man Punkt, Steigung und Kruemmung in drei Zeilen — und warum liefert $f''(1) = 0$ genau $6a+2b = 0$?
+
+### Fachbegriff & Definition
+
+**Jede geometrische Eigenschaft des Graphen entspricht genau einer Bedingung an $f$, $f'$ oder $f''$: Punkt an $f$, Steigung an $f'$, Kruemmung an $f''$**. Ein **Extremum verlangt $f'(x_0) = 0$ plus Artpruefung**, ein **Wendepunkt verlangt $f''(x_0) = 0$ plus Wechsel**. Die Bedingungszahl steuert die Ansatzwahl.
+
+### Wirkungsgefuege / Modell
+
+Der Tiefenweg trennt die Ebenen: $f(0) = 4$ greift auf $d$, $f'(0) = -6$ auf $c$, $f''(1) = 0$ auf $6a+2b$, $f(1) = 0$ auf die Summe. Aufgeloest: $d = 4$, $c = -6$, $6a+2b = 0$ zu $b = -3a$, $a+b+2 = 0$ zu $a = -1$ und $b = 3$. Ergebnis $f(x) = -x^3+3x^2-6x+4$ mit Probe in allen vier Zeilen. Wer $f'$ und $f''$ vor dem Uebersetzen bereitstellt, halbiert die Fehlerquote.
+
+Schritt A: $f'$ und $f''$ allgemein aufschreiben.
+Schritt B: Zeile fuer Zeile uebersetzen und nummerieren.
+Schritt C: LGS loesen und Probe fahren.
 
 ```diagram
    Geometrische Bedingung           Algebraische Gleichung
@@ -52,6 +92,7 @@ Eine Steckbriefaufgabe ist umgekehrte Kurvendiskussion: Statt Eigenschaften aus 
    Nullstelle bei x = 1             f(1) = 0        >  a + b + c + d = 0
    ================================ ======================
    4 Bedingungen  >  4 Gleichungen  >  LGS loesen  >  f(x)
+   Loesung: a=-1, b=3, c=-6, d=4 > Probe in allen Zeilen
 ```
 
 Klausur-Satz: `Jede geometrische Eigenschaft des Graphen entspricht genau einer Bedingung an f, f' oder f''.`

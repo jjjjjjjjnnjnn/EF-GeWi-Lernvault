@@ -19,9 +19,25 @@ version: Lesson-v3
 
 ZIELE (drei messbare Ziele dieser Lektion):
 
-1. Du kannst fuenf Kernformeln der EF nennen und zu jeder die Bedingung angeben: Potenzregel, Satz von Vieta, AM-GM-Ungleichung, Betragsformel und Laplace-Wahrscheinlichkeit.
-2. Du kannst jede Formelmerkregel in einen deutschen Klausursatz mit Bedingungssatz und Anwendungssatz uebersetzen.
-3. Du kannst mit diesen Formeln ohne Hilfsmittel Ableitungen bilden, Nullstellen pruefen, Vektorlaengen und einfache Wahrscheinlichkeiten berechnen (AFB I/II).
+1. Du kannst Potenzregel $(x^n)' = n x^{n-1}$, Vieta $x_1+x_2 = -b/a$, AM-GM fuer $a,b > 0$, $|\vec{a}|$ und Laplace $P =$ guenstig durch moeglich je mit Bedingung nennen.
+2. Du kannst jede Merkregel in Bedingungssatz plus Anwendungssatz uebersetzen und $h'(1) = 12$ sowie Vieta $4$ und $5$ vorrechnen.
+3. Du kannst ohne Hilfsmittel Ableitung, Nullstellenprobe, Betrag und $P(E)$ bestimmen und jede Formel nur unter ihrer Bedingung einsetzen (AFB I/II).
+
+### Hook / Phaenomen
+
+Im Jahr 1986 explodierte Challenger — ein O-Ring versagte ausserhalb seines Temperaturbereichs. Die Formel stimmte, die Bedingung nicht. In der Klausur passiert derselbe Fehler taeglich: AM-GM auf negative Zahlen, Vieta auf $x^3$, Potenzregel auf Produkte. Die Zahl stimmt scheinbar — doch die Bedingung fehlt. Wie schuetzt ein Bedingungssatz vor dem Challenger-Fehler der Mathematik?
+
+### Fachbegriff & Definition
+
+Fuer die EF gilt: **Jede Formel gilt nur unter ihrer Bedingung; die Potenzregel etwa nur fuer Potenzen, AM-GM nur fuer positive Zahlen**. Die **Merkregel waehlt die Formel, der Bedingungssatz sichert die Anwendbarkeit, der Anwendungssatz traegt die Punkte**. Der **Satz von Vieta prueft Nullstellen nur fuer $ax^2+bx+c = 0$ mit $a \ne 0$** ueber Summe und Produkt.
+
+### Wirkungsgefuege / Modell
+
+Der Mechanismus koppelt Wahl und Sicherung: $h(x) = 5x^3-2x^2+x$ liefert $h'(x) = 15x^2-4x+1$ nur weil jeder Summand eine Potenz ist — $h'(1) = 15-4+1 = 12$. Und $x^2-9x+20 = 0$ liefert per Vieta Summe $9$ und Produkt $20$ zu $4$ und $5$, weil quadratisch mit $a = 1$. Ausserhalb der Bedingung bricht die Kette: AM-GM mit $a < 0$ ist unzulaessig, Laplace ohne Gleichwahrscheinlichkeit falsch.
+
+Schritt A: Merkregel nennen und Kandidatenformel waehlen.
+Schritt B: Bedingung explizit pruefen und hinschreiben.
+Schritt C: Anwenden und Ergebnis mit Satz sichern.
 
 Klausur-Satz: `Ich kann die Kernformeln der EF darstellen und ihre Bedingungen nennen.`
 
@@ -29,11 +45,21 @@ Klausur-Satz: `Ich kann die Kernformeln der EF darstellen und ihre Bedingungen n
 
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
-- Potenzregel: $(x^n)' = n \cdot x^{n-1}$. Der Exponent wird zum Faktor und um eins verringert.
-- Satz von Vieta: Fuer $ax^2 + bx + c = 0$ gilt $x_1 + x_2 = -b/a$ und $x_1 \cdot x_2 = c/a$.
-- AM-GM-Ungleichung: Fuer $a, b > 0$ gilt $(a + b)/2 \ge \sqrt{a \cdot b}$; Gleichheit gilt genau fuer $a = b$.
-- Betrag eines Vektors: $|\vec{a}| = \sqrt{a_1^2 + a_2^2 + a_3^2}$.
-- Laplace-Experiment: $P(E) = \frac{\text{Anzahl guenstiger Ergebnisse}}{\text{Anzahl aller gleich wahrscheinlichen Ergebnisse}}$.
+### Hook / Phaenomen
+
+Fuenf Formeln, fuenf Fallen: Der Exponent wird gesenkt, doch worauf? Die Summe stimmt, doch wofuer? Ohne Bedingung ist jede Formel ein Blindflug. Welche fuenf Paare aus Formel und Bedingung tragen durch Teil A ohne Formelsammlung?
+
+### Fachbegriffe & Definitionen
+
+- **Potenzregel:** $(x^n)' = n \cdot x^{n-1}$ nur fuer Potenzen; Exponent wird Faktor und minus eins.
+- **Satz von Vieta:** $x_1+x_2 = -b/a$, $x_1 \cdot x_2 = c/a$ nur fuer $ax^2+bx+c = 0$ mit $a \ne 0$.
+- **AM-GM-Ungleichung:** $(a+b)/2 \ge \sqrt{ab}$ nur fuer $a,b > 0$; Gleichheit genau bei $a = b$.
+- **Betrag eines Vektors:** $|\vec{a}| = \sqrt{a_1^2+a_2^2+a_3^2}$ aus Koordinaten im Raum.
+- **Laplace-Experiment:** $P(E) =$ guenstig durch moeglich nur bei gleich wahrscheinlichen Ergebnissen.
+
+### Wirkungsgefuege / Modell
+
+Die Kette lautet: Formel nennen, Bedingung pruefen, dann erst rechnen. Vieta an $x^2-9x+20$ ist erlaubt und liefert $4$ und $5$ in Sekunden; Vieta an $x^3$ ist verboten und kostet Punkte. AM-GM an $x + \frac{4}{x}$ mit $x > 0$ liefert Minimum $4$ bei $x = 2$; an $x < 0$ versagt sie. Die Bedingung ist kein Anhaengsel, sondern die Haelfte der Leistung.
 
 Klausur-Satz: `Jede Formel gilt nur unter ihrer Bedingung; die Potenzregel etwa nur fuer Potenzen, AM-GM nur fuer positive Zahlen.`
 
@@ -41,13 +67,27 @@ Klausur-Satz: `Jede Formel gilt nur unter ihrer Bedingung; die Potenzregel etwa 
 
 TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
-Jede Formel braucht drei Bausteine: eine Merkregel zur Auswahl der Formel, einen Bedingungssatz zur Sicherung der Anwendbarkeit und einen Anwendungssatz zur klausurtauglichen Darstellung. Die Merkregel steuert Tempo und Richtung, der Bedingungssatz sichert die Punkte. Beispiel Potenzregel: $Ich bilde die Ableitung mit der Potenzregel \, (x^n)' = n \cdot x^{n-1}.$ Beispiel Vieta: $Nach dem Satz von Vieta pruefe ich die Nullstellen mit Summe und Produkt.$
+### Hook / Phaenomen
+
+Zwei Schueler schreiben $(x^n)' = n x^{n-1}$ — einer erhaelt den Punkt, einer nicht. Der Unterschied steht im Nebensatz: nur fuer Potenzen. In der Korrektur zaehlt nicht die Formel, sondern der Bedingungssatz davor und der Anwendungssatz danach. Wie wird aus einer Merkregel ein klausurfester Dreischritt — und warum rettet er auch Vieta und AM-GM?
+
+### Fachbegriff & Definition
+
+**Jede Formel braucht Merkregel plus Bedingungssatz plus Anwendungssatz: Die Merkregel steuert Tempo und Richtung, der Bedingungssatz sichert die Punkte**. Beispiel Potenzregel: **$Ich bilde die Ableitung mit der Potenzregel $(x^n)' = n \cdot x^{n-1}$, weil jeder Summand eine Potenz ist$**. Beispiel Vieta: **$Nach dem Satz von Vieta pruefe ich die Nullstellen mit Summe und Produkt, weil quadratisch mit $a \ne 0$ vorliegt$**.
+
+### Wirkungsgefuege / Modell
+
+Der Tiefenweg uebersetzt Tempo in Punkte: Schmierpapier mit Merkregel $Exponent senken$ zu $h'(x) = 15x^2-4x+1$; Reinschrift mit $weil jeder Summand eine Potenz ist$ plus $h'(1) = 12$. Ebenso Vieta $Summe und Produkt$ zu $9$ und $20$ plus $weil $a = 1 \ne 0$$ zu $4$ und $5$. Ohne den weil-Satz bleibt die Rechnung eine Vermutung — mit ihm wird sie ein Beweis im AFB-I-Takt.
+
+Schritt A: Merkregel aufs Schmierpapier und Kandidat rechnen.
+Schritt B: Bedingung als weil-Satz in die Reinschrift.
+Schritt C: Anwendungssatz mit Ergebnis und Einheit schliessen.
 
 ```diagram
    Merkregel          Bedingung (DE)              Anwendungssatz (DE)
    =================  ==========================  ==========================
    Exponent senken    nur fuer Potenzen           Potenzregel (x^n)'=n*x^(n-1)
-   Summe und Produkt  nur ax^2+bx+c=0, a!=0       Satz von Vieta
+   Summe und Produkt  nur ax^2+bx+c=0, a!=0       Satz von Vieta > 4 und 5
    Summe fest         nur a,b > 0                 AM-GM mit Gleichheit a=b
    Endpunkt minus     nur zwei Punkte             Vektor PQ = Q - P, Betrag per Wurzel
      Startpunkt
@@ -55,6 +95,7 @@ Jede Formel braucht drei Bausteine: eine Merkregel zur Auswahl der Formel, einen
      moeglich
    =================  ==========================  ==========================
    Merkregel waehlt   Bedingung sichert           Anwendungssatz punktet
+   Beispiel: h'(1)=12 mit weil-Satz, Vieta 9/20 zu 4/5
 ```
 
 Klausur-Satz: `Ich verbinde eine Merkregel mit dem deutschen Bedingungssatz, um die Formel klausurtauglich anzuwenden.`

@@ -19,9 +19,25 @@ version: Lesson-v3
 
 ZIELE (drei messbare Ziele dieser Lektion):
 
-1. Du kannst in 60 Minuten vier Aufgaben bearbeiten: Ableitung mit Tangente, Vektor mit Gerade, Baumdiagramm zur Wahrscheinlichkeit und Extremwert mit AM-GM.
-2. Du kannst deine Loesung anhand des Erwartungshorizonts (EHZ) bepunkten und Rechenfehler von Konzeptfehlern trennen.
-3. Du kannst jede Loesung im Dreischritt Ansatz, Rechnung und Antwortsatz aufschreiben und so die Darstellungspunkte sichern (AFB II/III).
+1. Du kannst in $60$ Minuten vier Aufgaben takten: Tangente mit $t(x) = f(x_0)+f'(x_0)(x-x_0)$, Gerade mit $\vec{x} = \vec{a}+s\vec{u}$, Baum mit Pfadprodukt, Extremum mit AM-GM.
+2. Du kannst per EHZ bepunktet selbst korrigieren: $t(x) = x+1$ an $x_0 = 2$ aus $f(2) = 3$, $f'(2) = 1$ pruefen und Rechen- gegen Konzeptfehler trennen.
+3. Du kannst jeden Weg in Ansatz, Rechnung und Antwortsatz schreiben und so Darstellungspunkte sichern (AFB II/III).
+
+### Hook / Phaenomen
+
+Im Jahr 2019 scheiterte ein Marathonlaeufer an der Zeiteinteilung — zu schnell gestartet, bei Kilometer $30$ eingebrochen. Klausuren laufen gleich: Wer Aufgabe $1$ poliert und Aufgabe $4$ verschenkt, verliert trotz Koennen. Vier Aufgaben in $60$ Minuten verlangen Takt statt Talent. Wie taktet man $15$ Minuten je Aufgabe — und warum rettet Ansatz plus Antwortsatz auch bei Rechenfehlern Punkte?
+
+### Fachbegriff & Definition
+
+Fuer das Training gilt: **Jeder Loesungsweg braucht Ansatz, Rechnung und Antwortsatz; ohne Antwortsatz verliert man Darstellungspunkte**. Die **Tangente bei $x_0$ ergibt sich aus Punkt $(x_0, f(x_0))$ und Steigung $f'(x_0)$ zu $t(x) = f(x_0)+f'(x_0)(x-x_0)$**. Der **Erwartungshorizont (EHZ) verteilt Punkte auf Teilleistungen** und trennt Rechen- von Konzeptfehlern.
+
+### Wirkungsgefuege / Modell
+
+Der Mechanismus taktet $60$ Minuten in vier Bloecke zu je $15$: Aufgabe $1$ Tangente $t(x) = 3+1 \cdot (x-2) = x+1$ aus $f(2) = 3$ und $f'(2) = 1$. Aufgabe $2$ Gerade $\vec{x} = \vec{a}+s\vec{u}$ mit Punktprobe ueber ein einziges $s$. Aufgabe $3$ Baum mit Pfad mal und Pfade plus. Aufgabe $4$ Extremum mit AM-GM $x+\frac{4}{x} \ge 4$ bei $x = 2$. Jede Aufgabe schliesst mit Antwortsatz — ohne ihn fehlt der EHZ-Punkt.
+
+Schritt A: Uhr auf $4 \times 15$ stellen und Ansatz schreiben.
+Schritt B: Rechnung mit $f'$, $\vec{u}$ oder Pfad ausfuehren.
+Schritt C: Antwortsatz mit Einheit und EHZ-Selbstcheck schliessen.
 
 Klausur-Satz: `Jeder Loesungsweg braucht Ansatz, Rechnung und Antwortsatz; ohne Antwortsatz verliert man Darstellungspunkte.`
 
@@ -29,11 +45,21 @@ Klausur-Satz: `Jeder Loesungsweg braucht Ansatz, Rechnung und Antwortsatz; ohne 
 
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
-- Tangente: $t(x) = f(x_0) + f'(x_0) \cdot (x - x_0)$. Die Gerade durch den Punkt $(x_0, f(x_0))$ mit der Steigung $f'(x_0)$.
-- Richtungsvektor: Der Vektor $\vec{u}$ in der Geradengleichung $\vec{x} = \vec{a} + s \cdot \vec{u}$; er legt die Richtung der Geraden fest.
-- Punktprobe: Einsetzen eines Punktes in die Geradengleichung; der Punkt liegt genau dann auf der Geraden, wenn ein einziges $s$ alle drei Koordinatengleichungen erfuellt.
-- Baumdiagramm: Darstellung eines mehrstufigen Zufallsexperiments; entlang eines Pfades wird multipliziert, ueber Pfade wird addiert.
-- Erwartungshorizont (EHZ): Offizieller Bewertungsmassstab; jede Teilleistung erhaelt fest zugeordnete Punkte.
+### Hook / Phaenomen
+
+Vier Aufgaben, vier Sprachen: Ableitung, Vektor, Baum, Extremum. Wer sie mit einer Methode angeht, scheitert dreimal. Welche fuenf Werkzeuge schalten in Sekunden auf die richtige Sprache um?
+
+### Fachbegriffe & Definitionen
+
+- **Tangente:** $t(x) = f(x_0)+f'(x_0)(x-x_0)$; Gerade durch $(x_0, f(x_0))$ mit $f'(x_0)$.
+- **Richtungsvektor:** $\vec{u}$ in $\vec{x} = \vec{a}+s\vec{u}$; er legt die Richtung der Geraden fest.
+- **Punktprobe:** Einsetzen in die Gerade; genau ein $s$ fuer alle drei Zeilen bedeutet Treffer.
+- **Baumdiagramm:** Mehrstufiges Experiment; entlang Pfad multiplizieren, ueber Pfade addieren.
+- **Erwartungshorizont (EHZ):** Offizieller Massstab; jede Teilleistung traegt feste Punkte.
+
+### Wirkungsgefuege / Modell
+
+Die Kette ordnet Aufgabe und Werkzeug: $f$ und $f'$ zu Tangente $t(x) = x+1$; $\vec{a}$ und $\vec{u}$ zu Gerade plus Probe; Stufen zu Baum mit $P =$ Pfadprodukt; Positivitaet zu AM-GM $\frac{a+b}{2} \ge \sqrt{ab}$. Der EHZ bepunktet jeden Schritt einzeln — ein falsches Endergebnis mit richtigem Ansatz rettet Teilpunkte, ein richtiges Ergebnis ohne Ansatz verliert sie.
 
 Klausur-Satz: `Die Tangente bei x0 ergibt sich aus dem Punkt (x0 | f(x0)) und der Steigung f'(x0).`
 
@@ -41,16 +67,31 @@ Klausur-Satz: `Die Tangente bei x0 ergibt sich aus dem Punkt (x0 | f(x0)) und de
 
 TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
-Diese Lektion ist ein Zeit- und Transfertraining. Vier Aufgaben decken die Kernkompetenzen der EF ab: Differenzieren mit Tangente, Vektorrechnung mit Gerade, Wahrscheinlichkeit mit Baumdiagramm und Extremwert mit AM-GM. Die Regel lautet: 60 Minuten Bearbeitung, danach Selbstbewertung nach EHZ-Punkten. Fehler werden sortiert: Ein Rechenfehler laesst sich durch Kontrolle beheben, ein Konzeptfehler verlangt ein erneutes Methodenstudium. Jede Aufgabe folgt dem Dreischritt Ansatz, Rechnung und Antwortsatz.
+### Hook / Phaenomen
+
+Ein Schueler loest alle vier Aufgaben richtig — und erhaelt dennoch nur zwei Drittel der Punkte. Die Rechnung stimmt, die Saetze fehlen. Der EHZ kennt kein Mitleid: ohne Ansatz und Antwortsatz bleibt jede Zahl eine Vermutung. Wie verwandelt der Dreischritt Ansatz, Rechnung und Antwortsatz vier richtige Zahlen in volle Punktzahl?
+
+### Fachbegriff & Definition
+
+Die **vier Aufgaben pruefen Differenzieren, Vektorrechnung, Wahrscheinlichkeit und Extremwertbestimmung als Kernkompetenzen der EF**. Jede folgt dem **Dreischritt Ansatz plus Rechnung plus Antwortsatz**. **Rechenfehler lassen sich durch Kontrolle beheben, Konzeptfehler verlangen Methodenstudium** — die EHZ-Trennung steuert das Lernen danach.
+
+### Wirkungsgefuege / Modell
+
+Der Tiefenweg sortiert Fehler: $t(x) = x+1$ mit Zahlendreher als Rechenfehler zu Kontrolle; $\vec{u}$ mit $Q-P$ vertauscht als Konzeptfehler zu Methode. Zeitregel $60$ Minuten plus Selbstbewertung nach EHZ: erst alle vier Ansaetze, dann alle Rechnungen, dann alle Saetze. Wer Baeume mit $P = \frac{guenstig}{moeglich}$ und Extrema mit $x+\frac{4}{x} \ge 4$ sichert, sammelt auch bei Zeitnot Teilpunkte je Ansatz.
+
+Schritt A: $60$ Minuten in $4 \times 15$ teilen und Ansaetze sichern.
+Schritt B: Rechnungen mit $f'$, $s$ oder Pfad ausfuehren.
+Schritt C: Saetze schreiben und EHZ-Punkte selbst vergeben.
 
 ```diagram
-   Aufgabe 1  Funktion: f' > f(x0), f'(x0) > Tangente t(x)
+   Aufgabe 1  Funktion: f' > f(x0), f'(x0) > Tangente t(x)=x+1
    Aufgabe 2  Vektor: PQ = Q - P > Betrag > Punktprobe (ein s)
    Aufgabe 3  Stochastik: Baum > Pfadprodukt > Summe > Antwortsatz
-   Aufgabe 4  Extremum: Positivitaet > AM-GM > Gleichheit > Ableitung
+   Aufgabe 4  Extremum: Positivitaet > AM-GM > Gleichheit bei x=2
    ===============================================================
    Zeit: 60 min | Struktur je Aufgabe: Ansatz + Rechnung + Antwortsatz
    EHZ-Selbstbewertung: Rechenfehler gegen Konzeptfehler trennen
+   Beispiel: f(2)=3, f'(2)=1 > t(x)=3+1*(x-2)=x+1
 ```
 
 Klausur-Satz: `Die vier Aufgaben pruefen die Kernkompetenzen der EF: Differenzieren, Vektorrechnung, Wahrscheinlichkeit und Extremwertbestimmung.`

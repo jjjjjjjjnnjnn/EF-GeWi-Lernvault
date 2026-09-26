@@ -19,9 +19,25 @@ version: Lesson-v3
 
 ZIELE (drei messbare Ziele dieser Lektion):
 
-1. Du kannst das Drei-Schritt-Verfahren eines Extremwertproblems nennen: Zielfunktion aufstellen, mit der Nebenbedingung auf eine Variable reduzieren und Kandidaten mit Randpruefung beurteilen.
-2. Du kannst zu einer offenen Kiste aus einer Pappe die Volumenfunktion $V(x)$ mit Definitionsmenge aufstellen und mit $f' = 0$ sowie zweiter Ableitung oder Monotonietabelle die Art der Kandidaten bestimmen.
-3. Du kannst begruenden, warum $f' = 0$ nur notwendig ist, und mit Randwerten und globalem Vergleich das Maximum sichern (AFB II/III).
+1. Du kannst das Drei-Schritt-Verfahren aufsagen und anwenden: Zielfunktion $V(x)$ aufstellen, mit der Nebenbedingung auf eine Variable reduzieren, Definitionsmenge $D = [0, 6]$ notieren.
+2. Du kannst $V(x) = x(20-2x)(12-2x) = 4x^3 - 64x^2 + 240x$ ableiten, $V'(x) = 0$ loesen und mit $V''(x)$ sowie Randpruefung $V(0)$, $V(6)$ das globale Maximum sichern.
+3. Du kannst begruenden, warum $f' = 0$ nur notwendig ist, und den Antwortsatz mit $x \approx 2{,}43\,\mathrm{cm}$ und $V_{\max} \approx 262{,}7\,\mathrm{cm}^3$ formulieren (AFB II/III).
+
+### Hook / Phaenomen
+
+Im Jahr 2010 musste ein Automobilzulieferer tausende Dosenhalter zurueckrufen — die Halterung war auf maximale Groesse statt auf maximale Stabilitaet optimiert. Der Prototyp hielt im Labor, im Auto brach er. In der Mathematik heisst dieser Fehler: lokales Maximum mit globalem Maximum verwechselt. Eine offene Kiste aus $20\,\mathrm{cm}$ mal $12\,\mathrm{cm}$ Pappe zeigt das Raetsel im Kleinen: Weder die flachste noch die tiefste Kiste fasst am meisten. Wo liegt der Gipfel — und warum reicht $f' = 0$ allein nie als Beweis?
+
+### Fachbegriff & Definition
+
+Nach dem NRW-Kernlehrplan Analysis ist ein **Extremwertproblem die Bestimmung des globalen Maximums oder Minimums einer Zielfunktion $V(x)$ auf einer sachnahen Definitionsmenge $D$ unter einer Nebenbedingung**. Die **Zielfunktion beschreibt die zu optimierende Groesse**, die **Nebenbedingung eliminiert ueberschuessige Variablen**, die **Randpruefung vergleicht innere Kandidaten mit den Randwerten von $D$**. Erst dieser Vergleich sichert das globale Extremum.
+
+### Wirkungsgefuege / Modell
+
+Der Mechanismus laeuft in drei Stufen: Aufstellen, Reduzieren, Pruefen. Erstens wird $V(x) = x(20-2x)(12-2x)$ aus Laenge mal Breite mal Hoehe gebildet. Zweitens wird $V'(x) = 12x^2 - 128x + 240 = 0$ geloest zu $x_1 \approx 2{,}43$ und $x_2 \approx 8{,}24$, wobei $x_2$ ausserhalb von $D = [0, 6]$ faellt. Drittens entscheidet $V''(2{,}43) \approx -69{,}7 < 0$ auf lokales Maximum und $V(2{,}43) \approx 262{,}7 > V(0) = V(6) = 0$ auf globales Maximum.
+
+Schritt A: $V(x) = 4x^3 - 64x^2 + 240x$ auf $D = [0, 6]$ festlegen.
+Schritt B: $V'(x) = 12x^2 - 128x + 240 = 0$ zu $3x^2 - 32x + 60 = 0$ kuerzen und loesen.
+Schritt C: $V''$ und Raender vergleichen, dann Antwortsatz mit Einheiten schreiben.
 
 Klausur-Satz: `Bei einem Extremwertproblem wird zuerst die Zielfunktion mit Hilfe der Nebenbedingung auf eine Variable reduziert, dann werden Kandidaten mit f'(x) = 0 bestimmt und mit Randpruefung beurteilt.`
 
@@ -29,11 +45,21 @@ Klausur-Satz: `Bei einem Extremwertproblem wird zuerst die Zielfunktion mit Hilf
 
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
-- Zielfunktion: Die zu maximierende oder minimierende Groesse, etwa Volumen $V(x)$, Flaeche $A(x)$ oder Gewinn $G(x)$.
-- Nebenbedingung: Feste Beziehung zwischen den Variablen, etwa eine begrenzte Pappe oder ein fester Umfang; sie eliminiert ueberschuessige Variablen.
-- Definitionsmenge: Sachnahes Intervall fuer $x$, etwa Schnittlaenge $x$ in $[0, 6]$; die Raender werden einzeln geprueft.
-- Randpruefung: Vergleich der Funktionswerte innerer Kandidaten mit den Werten an den Intervallraendern; nur der groesste Wert ist das globale Maximum.
-- Extremstellen-Kandidat: Stelle mit $f'(x) = 0$; erst Vorzeichenwechsel oder $f''(x)$ mit Randvergleich entscheiden ueber die Art.
+### Hook / Phaenomen
+
+Zwei Schueler loesen dieselbe Kistenaufgabe: Beide finden $x_1 \approx 2{,}43$, nur einer erhaelt volle Punktzahl. Der Unterschied steht nicht in der Rechnung, sondern in drei Zeilen davor und danach — Definitionsmenge und Randpruefung. Ohne diese Zeilen bleibt jede Loesung ein Kandidat ohne Urteil. Welche fuenf Begriffe machen aus dem Kandidaten ein gesichertes Maximum?
+
+### Fachbegriffe & Definitionen
+
+- **Zielfunktion:** Zu optimierende Groesse wie $V(x) = x(20-2x)(12-2x)$ in $\mathrm{cm}^3$; sie traegt die Fragestellung.
+- **Nebenbedingung:** Feste Beziehung wie Pappenmasse $20 \times 12$ in $\mathrm{cm}$; sie streicht die zweite Variable.
+- **Definitionsmenge:** Sachnahes Intervall $D = [0, 6]$ in $\mathrm{cm}$; ausserhalb ist die Kiste physikalisch unmoeglich.
+- **Extremstellen-Kandidat:** Stelle mit $f'(x) = 0$; erst $f''(x)$ oder Vorzeichenwechsel plus Randvergleich entscheiden.
+- **Randpruefung:** Vergleich $V(x_1)$ gegen $V(0)$ und $V(6)$; nur der groesste Wert ist das globale Maximum auf $D$.
+
+### Wirkungsgefuege / Modell
+
+Die Begriffe bilden eine Pruefkette: Nebenbedingung reduziert die Zielfunktion auf $V(x)$, Definitionsmenge begrenzt $x$ auf $[0, 6]$, Kandidaten aus $V'(x) = 12x^2 - 128x + 240 = 0$ liefern $x_1 \approx 2{,}43$, Randpruefung $262{,}7$ gegen $0$ und $0$ kroent $x_1$ zum globalen Maximum. Wer die Kette nach $f' = 0$ abbricht, verwechselt notwendig mit hinreichend — der haeufigste Punktverlust der Klausur.
 
 Klausur-Satz: `Die Nebenbedingung reduziert die Zielfunktion auf eine Variable, die Definitionsmenge legt das Intervall fuer die Randpruefung fest.`
 
@@ -41,7 +67,21 @@ Klausur-Satz: `Die Nebenbedingung reduziert die Zielfunktion auf eine Variable, 
 
 TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
-Aus einer Pappe von $20\,\mathrm{cm}$ mal $12\,\mathrm{cm}$ werden an den vier Ecken Quadrate der Seite $x$ ausgeschnitten und zu einer offenen Kiste gefaltet. Das Volumen haengt von $x$ ab: $V(x) = x(20-2x)(12-2x)$ auf $D = [0, 6]$. Der Graph von $V$ steigt zuerst und faellt danach; der Gipfel liegt bei $f'(x) = 0$ und wird erst durch den Vergleich mit den Randwerten $V(0)$ und $V(6)$ als globales Maximum bestaetigt.
+### Hook / Phaenomen
+
+Eine Firma will aus Draht der Laenge $36\,\mathrm{cm}$ eine Kiste mit maximalem Volumen formen — klingt nach derselben Aufgabe, verlangt aber einen anderen Start: keine Pappe, sondern ein Drahtgeruest mit quadratischer Grundflaeche. Viele setzen sofort $V'(x) = 0$ an und scheitern, weil Zielfunktion und Definitionsmenge fehlen. Warum entscheidet der Aufstellschritt ueber alles — und wie sieht der saubere Weg von $4a + 4h = 36$ bis $V_{\max} = 108\,\mathrm{cm}^3$ aus?
+
+### Fachbegriff & Definition
+
+Das **globale Maximum auf $D$ ist der groesste Funktionswert auf dem gesamten Intervall — entweder an einer inneren Stelle mit $f'(x) = 0$ oder am Rand von $D$**. Die **hinreichende Bedingung $f''(x_1) < 0$ sichert nur ein lokales Maximum**; erst der Vergleich mit $V$ an den Raendern hebt es zum globalen Maximum. Ohne $D$ bleibt jede Extremwertantwort unvollstaendig.
+
+### Wirkungsgefuege / Modell
+
+Der Tiefenweg am Drahtbeispiel: Sei Grundkante $a$ und Hoehe $h$ mit $4a + 4h = 36$, also $h = 9 - a$ und $V(a) = a^2(9-a) = 9a^2 - a^3$ auf $D = [0, 9]$. Dann $V'(a) = 18a - 3a^2 = 3a(6-a) = 0$ zu $a = 0$ oder $a = 6$. Mit $V''(a) = 18 - 6a$ gilt $V''(6) = -18 < 0$, also lokales Maximum; $V(0) = V(9) = 0$ gegen $V(6) = 108$ sichert global $a = 6\,\mathrm{cm}$, $h = 3\,\mathrm{cm}$, $V_{\max} = 108\,\mathrm{cm}^3$.
+
+Schritt A: Nebenbedingung nach $h$ aufloesen und in $V$ einsetzen.
+Schritt B: $V'(a) = 0$ loesen und mit $V''$ qualifizieren.
+Schritt C: Raender vergleichen und Antwortsatz mit $\mathrm{cm}$ und $\mathrm{cm}^3$ schreiben.
 
 ```diagram
         V ^
@@ -54,6 +94,8 @@ Aus einer Pappe von $20\,\mathrm{cm}$ mal $12\,\mathrm{cm}$ werden an den vier E
           +----------------------------------> x
           0                   6
    V(x) = x(20-2x)(12-2x) = 4x^3 - 64x^2 + 240x
+   V'(x) = 12x^2 - 128x + 240 = 0 > x1 ca. 2.43
+   V''(x1) < 0 > lokal max | V(x1) > V(0),V(6) > global max
    Zielfunktion + Nebenbedingung > eine Variable
    Kandidat: f'(x)=0 | Entscheid: Randpruefung
 ```
