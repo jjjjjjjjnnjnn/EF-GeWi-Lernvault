@@ -461,6 +461,20 @@ export default function Blocks({
         if (b.kind === "math") {
           return <MathHtml key={i} code={b.text} display cacheKey={`D:${b.text}`} />;
         }
+        const isExamMasterSentence = /^(?:Klausur-Satz|Korrektur-Satz|Takeaway-Satz)[:：]/.test(b.text);
+        if (isExamMasterSentence) {
+          return (
+            <div
+              key={i}
+              className="my-3.5 p-3.5 rounded-r-[var(--radius)] border-l-4 border-[var(--accent)] bg-[var(--paper-subtle)] border-y border-r border-[var(--line)]"
+            >
+              <div className="font-serif text-[15px] font-medium leading-relaxed text-[var(--ink)]">
+                {renderFormattedText(b.text)}
+              </div>
+            </div>
+          );
+        }
+
         return (
           <div
             key={i}
