@@ -17,31 +17,73 @@ version: Lesson-v3
 
 ## Schritt 1 — entdecken
 
-ZIELE (diese Lektion in 15 Minuten: danach kannst du):
+ZIELE (drei messbare Ziele dieser Lektion):
 
-1. Eine Dramenszene in vier Schritten analysieren: Lokalisieren (Akt, Szene, Situation), Dialog zerlegen, Konstellation bestimmen, Funktion benennen.
-2. Subtext und Regieanweisung nutzen, um die wahre Absicht der Figuren zu erklaeren.
-3. Einen Funktions-Satz mit Beleg formulieren, der die Leistung der Szene fuer Stueck und Konflikt benennt.
+1. Du kannst eine Dramenszene in vier Schritten analysieren: **Lokalisieren, Dialog zerlegen, Konstellation bestimmen, Funktion benennen**.
+2. Du kannst **Subtext und Regieanweisung** nutzen, um die wahre Absicht der Figuren zu erklaeren.
+3. Du kannst einen **Funktions-Satz** mit Beleg formulieren, der die Leistung der Szene fuer Stueck und Konflikt benennt.
+
+### Hook / Phaenomen
+
+Ein Vater fragt leise: „Du wolltest. Aber wolltest du es mir sagen?" Es geht um Geld, doch niemand spricht ueber Geld. Warum trifft der leiseste Satz am haertesten, obwohl er das Vergehen kaum nennt?
+
+### Fachbegriff & Definition
+
+Die **Szenenanalyse** ist die Zerlegung einer Dramenszene in **Situation, Dialog, Konstellation und Funktion**. Sie trennt **Sachebene** — worueber gesprochen wird — von **Beziehungsebene** — was damit erreicht werden soll. Die Differenz beider Ebenen heisst **Subtext**. Jede Aussage braucht einen Beleg mit $Z.$.
+
+### Wirkungsgefuege / Modell
+
+Die Kausalkette lautet: **Ort, Rede, Beziehung, Leistung**. Erstens lokalisiert die Analyse Akt, Szene und Situation als Exposition eines Vertrauenskonflikts. Zweitens zerlegt sie den Dialog in Kassen-Geld als Sache und Vertrauen als Beziehung. Drittens bestimmt sie die Konstellation aus Ziel, Mittel und Preis beider Figuren. Viertens benennt sie die Funktion als Einfuehrung und Verschaerfung. So wird Nacherzaehlung zu Analyse.
 
 Klausur-Satz: `Der Dialog verrät auf der Beziehungsebene mehr als auf der Sachebene; das wirkt entlarvend, weil Figuren ihre wahren Absichten verschleiern.`
 
 ## Schritt 2 — entdecken
 
-PRETRAINING (Kernbegriffe, erst lesen, dann abdecken und aktiv wiedergeben):
+PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
-- Figurenkonstellation: Beziehungsnetz der Figuren (Buendnis, Gegensatz, Dreieck); Ziel, Mittel und Preis je Figur notieren.
-- Dialoganalyse: Sachebene (worueber gesprochen wird) und Beziehungsebene (was damit erreicht werden soll) trennen.
-- Subtext: unausgesprochene Absicht, oft gegen den Wortlaut gerichtet.
-- Regieanweisung: Aktion und Ton in Klammern; Schluessel zum Subtext.
-- Szenenfunktion: Leistung der Szene fuer Handlung und Konflikt (einfuehren, verschaerfen, wenden, aufloesen).
+### Hook / Phaenomen
+
+„Setz dich, Lena" sagt der Vater, doch Lena bleibt stehen. Kein Argument, nur Koerper. Wer den Text allein liest, hoert die Haelfte nicht. Diese fuenf Begriffe oeffnen Augen und Ohren fuer das Ungesagte.
+
+### Fachbegriffe & Definitionen
+
+- **Figurenkonstellation:** **Beziehungsnetz** aus Buendnis, Gegensatz und Dreieck; je Figur werden **Ziel, Mittel und Preis** notiert.
+- **Dialoganalyse:** Trennung von **Sachebene** — worueber gesprochen wird — und **Beziehungsebene** — was erreicht werden soll.
+- **Subtext:** **unausgesprochene Absicht**, oft gegen den Wortlaut gerichtet und nur aus Luecken erschliessbar.
+- **Regieanweisung:** **Aktion und Ton in Klammern** als Schluessel zum Subtext, etwa ruhig, laut oder leise.
+- **Szenenfunktion:** **Leistung der Szene** fuer Handlung und Konflikt: einfuehren, verschaerfen, wenden oder aufloesen.
+
+### Wirkungsgefuege / Modell
+
+Die Begriffe bilden ein Werkzeugset: Die **Konstellation** zeigt, wer gegen wen steht, die **Dialoganalyse** zerlegt das Gesprochene in zwei Ebenen. Der **Subtext** benennt die Differenz, die **Regieanweisung** mit $Z.$ belegt sie. Die **Szenenfunktion** fasst zusammen, was die Szene fuer das Stueck leistet. Ohne Regieanweisung bleibt Subtext Vermutung; mit ihr wird er Nachweis.
 
 Klausur-Satz: `Die Regieanweisungen geben Hinweise auf den Subtext und machen die wahren Absichten der Figuren lesbar.`
 
 ## Schritt 3 — entdecken
 
-ENTDECKEN (ein Konzept plus Textdiagramm):
+TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
-Eine Szene wird nicht nacherzaehlt, sondern in vier Dimensionen zerlegt. Erstens Lokalisieren: Akt, Szene, Situation (Exposition, Steigerung, Wendepunkt). Zweitens Dialog: Sachebene und Beziehungsebene fallen oft auseinander; die Differenz ist der Subtext. Drittens Konstellation: Wer verbuendet sich mit wem, wer steht gegen wen; je Figur Ziel, Mittel und Preis. Viertens Funktion: Fuehrt die Szene den Konflikt ein, verschaerft sie ihn, wendet sie ihn oder loest sie ihn auf. Jede Aussage braucht einen Beleg mit Zeile. Das Verfahren gilt fuer jede Ganzschrift.
+### Hook / Phaenomen
+
+Lena setzt sich erst im achten Satz. Sieben Saetze lang bleibt sie stehen, wird laut, dann leise. Der Stuhl ist kein Moebel, sondern eine Kapitulation. Warum erzaehlt die Koerperhaltung mehr als das Wort „geliehen"?
+
+### Fachbegriff & Definition
+
+Die **Regieanweisung als Subtextschluessel** entschluesselt **Gestik und Ton** als Beleg fuer das Ungesagte. Ihre Formel lautet $Subtext = Wortlaut + Regie + $Z.$$. Stehen gegen Sitzen, laut gegen leise markieren Macht und Rueckzug. Wer sie ueberspringt, liest nur die Haelfte der Szene.
+
+### Wirkungsgefuege / Modell
+
+Die Kausalkette lautet: **Wort, Ton, Bruch, Funktion**. Erstens nennt der Wortlaut das Kassen-Geld als Sache. Zweitens widerspricht der Ton — ruhig gegen laut — der Sachharmlosigkeit. Drittens zeigt der Bruch in $Z. 9$ die wahre Anklage: nicht Rueckzahlung, sondern Verschweigen. Viertens erfuellt die Szene damit Einfuehrung und Verschaerfung des Vertrauenskonflikts. Ton plus $Z.$ machen Subtext beweisbar.
+
+```diagram
+  SZENENANALYSE — vier Schritte mit Subtext
+  [1] LOKALISIEREN: Akt / Szene / Situation (Exposition?)
+    -> [2] DIALOG: Sachebene vs. Beziehungsebene
+         Wortlaut + Regie (Z.) = Subtext
+    -> [3] KONSTELLATION: A gegen B (Ziel / Mittel / Preis)
+    -> [4] FUNKTION: einfuehren / verschaerfen / wenden / aufloesen
+  Formel: Subtext = Wortlaut + Regie + Z.
+```
 
 ```diagram
    SZENENANALYSE — vier Schritte

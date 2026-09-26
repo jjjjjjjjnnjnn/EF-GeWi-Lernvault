@@ -17,31 +17,74 @@ version: Lesson-v3
 
 ## Schritt 1 — entdecken
 
-ZIELE (diese Lektion in 15 Minuten: danach kannst du):
+ZIELE (drei messbare Ziele dieser Lektion):
 
-1. Die Drei-Schritt-Kette Form, Beleg und Funktion anwenden: Mittel benennen, kurz zitieren, Wirkung im Kontext deuten.
-2. Zwoelf haeufige rhetorische Mittel unterscheiden und je eine typische Funktionsrichtung nennen (veranschaulichen, verstaerken, kontrastieren, rhythmisieren).
-3. Einen Klausur-Analysesatz schreiben, der Form, Beleg und Funktion verbindet (AFB II), und die Ueberzeugungskraft einschaetzen (AFB III).
+1. Du kannst die Kette aus **Form, Beleg und Funktion** anwenden: Mittel benennen, kurz zitieren, Wirkung im Kontext deuten.
+2. Du kannst zwoelf haeufige **rhetorische Mittel** unterscheiden und je eine typische Funktionsrichtung nennen.
+3. Du kannst einen **Analysesatz** aus Form plus Beleg plus Funktion schreiben und die Ueberzeugungskraft einschaetzen.
+
+### Hook / Phaenomen
+
+„Der Stundenplan frisst unsere Nachmittage" — jeder versteht den Satz sofort, obwohl kein Plan je gefressen hat. Ein falsches Bild sagt mehr Wahres als eine korrekte Zahl. Warum trifft die Luege mitten ins Gefuehl?
+
+### Fachbegriff & Definition
+
+Die **Funktionsanalyse** ist die Deutung eines **sprachlichen Mittels an seiner Textstelle**. Sie verbindet **Benennung der Form**, kurzen **Beleg mit $Z.$** und Erklaerung der **kontextgebundenen Wirkung**. Entscheidend ist der Kontext: Dieselbe Metapher kann veranschaulichen oder anklagen. Ohne Kontext gibt es nur Etiketten, keine Analyse.
+
+### Wirkungsgefuege / Modell
+
+Die Kausalkette lautet: **Form, Beleg, Funktion, These**. Erstens wird die Form exakt benannt, etwa **Anapher** in $Z. 2$. Zweitens folgt der kurze Beleg mit $Z.$ als Nachweis. Drittens wird die Wirkung gedeutet: Die Wiederholung rhythmisiert die Klage und macht Zeitdruck total. Viertens wird an die Absatzthese rueckgebunden: Der Rhythmus stuetz die Forderung nach Atempausen. Erst die vierte Stufe schliesst die Analyse.
 
 Klausur-Satz: `Die Funktionsanalyse verbindet die Benennung des Mittels mit einem Beleg und der Deutung seiner Wirkung im Kontext.`
 
 ## Schritt 2 — entdecken
 
-PRETRAINING (Kernbegriffe, erst lesen, dann abdecken und aktiv wiedergeben):
+PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
-- Rhetorisches Mittel: bewusste Abweichung vom Alltagsausdruck zur Verstaerkung von Wirkung und Anschaulichkeit.
-- Beleg: kurzes woertliches Zitat aus dem Text als Nachweis, maximal ein Satz.
-- Funktion: kontextgebundene Wirkung an dieser Stelle (veranschaulichen, steigern, distanzieren, ordnen).
-- Wirkungsabsicht: Was soll der Leser glauben, fuehlen oder tun.
-- Kontext: Absatzthema, Adressat und Argumentationsphase; jede Funktion haengt an ihm.
+### Hook / Phaenomen
+
+Zehn erkannte Mittel, null Punkte — so enden viele Klausuren. Der Fehler liegt nicht im Auge, sondern im Satzbau: Wer nur benennt, analysiert nicht. Diese fuenf Begriffe schliessen die Luecke zwischen Fund und Deutung.
+
+### Fachbegriffe & Definitionen
+
+- **Rhetorisches Mittel:** bewusste **Abweichung vom Alltagsausdruck** zur Verstaerkung von Wirkung und Anschaulichkeit.
+- **Beleg:** kurzes **woertliches Zitat** mit $Z.$ als Nachweis, maximal ein Satz lang.
+- **Funktion:** **kontextgebundene Wirkung** an dieser Stelle: veranschaulichen, steigern, distanzieren oder ordnen.
+- **Wirkungsabsicht:** vom Autor kalkuliertes Ziel — was der Leser **glauben, fuehlen oder tun** soll.
+- **Kontext:** **Absatzthema, Adressat und Argumentationsphase**; jede Funktion haengt an ihm.
+
+### Wirkungsgefuege / Modell
+
+Die Begriffe bilden ein Pruefnetz: Das **Mittel** liefert die Form, der **Beleg** mit $Z.$ den Nachweis, die **Funktion** die Deutung. Die **Wirkungsabsicht** gibt die Richtung vor, der **Kontext** den Massstab. Wer die Funktion ohne Kontext behauptet, raet; wer sie aus dem Kontext erschliesst, analysiert. Genau das unterscheidet AFB I von AFB II.
 
 Klausur-Satz: `Ohne Beleg bleibt die Funktionsangabe eine Behauptung, erst der Kontext macht sie zur Analyse.`
 
 ## Schritt 3 — entdecken
 
-ENTDECKEN (ein Konzept plus Textdiagramm):
+TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
-Die Kette lautet Form, Beleg, Funktion. Erstens Form: Mittel exakt benennen. Zweitens Beleg: kurze Stelle zitieren. Drittens Funktion: erklaeren, warum die Form hier wirkt. "Das ist eine Metapher" ohne Wirkung bleibt Benennung ohne Analyse. Die zwoelf Mittel tragen Funktionskerne: Metapher, Vergleich und Personifikation veranschaulichen; Hyperbel und Ironie verstaerken oder distanzieren; rhetorische Frage, Anapher und Parallelismus rhythmisieren und aktivieren; Klimax und Antithese steigern und kontrastieren; Euphemismus und Alliteration daempfen oder erhoehen Merkbarkeit. Dieselbe Form wirkt je nach Kontext anders; Funktionen werden erschlossen, nicht auswendig gelernt.
+### Hook / Phaenomen
+
+„Er frisst die Pausen, er frisst die Ruhe" — zweimal dasselbe Verb, und ploetzlich klingt Erschöpfung wie ein Raubtier. Kein neues Argument, nur Wiederholung. Warum erzeugt blosse Wiederholung solchen Nachdruck?
+
+### Fachbegriff & Definition
+
+Die **Anapher als Rhythmusmittel** ist die **Wiederholung gleichen Wortlauts am Satzanfang**, die Klage in Takt verwandelt. Ihre Formel lautet $Anapher = Wiederholung + Steigerung + $Z.$$. Sie rhythmisiert und totalisiert: Vom Nachmittag ueber die Pause bis zur inneren Ruhe frisst der Druck alles. Ohne Beleg bleibt sie Behauptung; mit Beleg wird sie nachweisbare Klangarbeit.
+
+### Wirkungsgefuege / Modell
+
+Die Kausalkette lautet: **Signal, Form, Rhythmus, These**. Erstens markiert das Signal — gleicher Satzanfang — die Stelle. Zweitens wird die Form als Anapher benannt und mit $Z.$ belegt. Drittens wird der Rhythmus gedeutet: Die Takte machen Zeitdruck koerperlich spuerbar. Viertens stuetz der Befund die Absatzthese vom Lernstress und die Forderung nach Atempausen. Klang wird so zum Argument.
+
+```diagram
+  FUNKTIONSKETTE — Form, Beleg, Funktion
+  [1] FORM: Wie heisst das Mittel? (Metapher / Anapher / Frage)
+    -> [2] BELEG: Wo steht es? ("..." + Z.)
+    -> [3] FUNKTION: Was bewirkt es hier?
+         veranschaulichen / verstaerken /
+         kontrastieren / rhythmisieren
+    -> Kontext-Check: Passt die Funktion zur Absatzthese?
+  Regel: Dieselbe Form wirkt je nach Kontext anders.
+```
 
 ```diagram
   Textstelle

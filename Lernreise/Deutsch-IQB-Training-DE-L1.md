@@ -17,31 +17,73 @@ version: Lesson-v3
 
 ## Schritt 1 — entdecken
 
-ZIELE (diese Lektion in 15 Minuten: danach kannst du):
+ZIELE (drei messbare Ziele dieser Lektion):
 
-1. In 25 Minuten einen kurzen pragmatischen Text analysieren: These, Gedankengang und zwei Sprachmittel mit Beleg, Zeile und Wirkung.
-2. Zum selben Thema Pro und Contra abwaegen, ein eigenes Urteil formulieren und den Text nur ein- bis zweimal als Beleg nutzen.
-3. Mit dem Erwartungshorizont (EHZ) pruefen: Einleitung in drei Saetzen, drei Gang-Stationen mit Zeile, zwei Sprachmittel mit Wirkung, Urteil mit weil.
+1. Du kannst in 25 Minuten einen kurzen pragmatischen Text analysieren: **These, Gedankengang** und zwei Sprachmittel mit **Beleg, $Z.$ und Wirkung**.
+2. Du kannst zum selben Thema **Pro und Contra** abwaegen, ein eigenes Urteil formulieren und den Text nur ein- bis zweimal als Beleg nutzen.
+3. Du kannst mit dem **Erwartungshorizont** pruefen: Einleitung in drei Saetzen, drei Gang-Stationen mit $Z.$, zwei Sprachmittel mit Wirkung, Urteil mit weil.
+
+### Hook / Phaenomen
+
+Fuenfzig Minuten, zwei Aufgaben, ein Text — und die Uhr laeuft. Viele schreiben viel und treffen wenig. Wie trainiert man Tempo, ohne Genauigkeit zu opfern?
+
+### Fachbegriff & Definition
+
+Das **IQB-Training** ist das **zeitbegrenzte Ueben der beiden Zentren** Analyse und Eroerterung mit Selbstkontrolle. Es verbindet **Zeitdruck** mit dem **Erwartungshorizont** als Checkliste. Entscheidend ist die **Trennung der Zentren**: Analyse hat den Text im Zentrum, Eroerterung das Problem. Wer die Zentren mischt, verfehlt beide Aufgaben.
+
+### Wirkungsgefuege / Modell
+
+Die Kausalkette lautet: **Lesen, Zerlegen, Abwaegen, Pruefen**. Erstens erfasst der Blick Operator und Zentrum: analysieren oder eroertern. Zweitens zerlegt die Analyse Gang und Sprache mit Beleg und $Z.$. Drittens waegt die Eroerterung Pro und Contra mit Urteil ab. Viertens prueft der Erwartungshorizont These, Stationen, Mittel und Urteil Punkt fuer Punkt. Zeit plus Checkliste ergeben Klausursicherheit.
 
 Klausur-Satz: `Eine gute Analyse weist den Gedankengang mit Zeilen nach, eine gute Erörterung wägt Pro und Contra ab und endet mit einem begründeten Urteil.`
 
 ## Schritt 2 — entdecken
 
-PRETRAINING (Kernbegriffe, erst lesen, dann abdecken und aktiv wiedergeben):
+PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
-- Mini-Text: ca. 150 Woerter langer Uebungstext; trainiert das Verfahren, keine Abiturvorlage.
-- Erwartungshorizont (EHZ): Liste der Bewertungspunkte fuer die Selbstkontrolle.
-- Loesungsskizze: Geruest des richtigen Gedankengangs, kein auswendig gelernter Mustertext.
-- Abwaegung: Vergleich von Fuer und Wider mit begruendetem Urteil.
-- Konzession: zwar ... aber ...; erst einraeumen, dann widersprechen.
+### Hook / Phaenomen
+
+Immer wieder lesen und doch nichts behalten — so fuehlt sich viele Vorbereitung an. Die Lernforschung widerspricht: Wer sich selbst testet, behaelt deutlich mehr. Diese fuenf Begriffe machen aus Nachlesen ein Selbsttraining.
+
+### Fachbegriffe & Definitionen
+
+- **Mini-Text:** ca. 150 Woerter langer **Uebungstext**; trainiert das Verfahren, keine Abiturvorlage.
+- **Erwartungshorizont (EHZ):** **Liste der Bewertungspunkte** fuer die Selbstkontrolle nach der Arbeit.
+- **Loesungsskizze:** **Geruest des richtigen Gedankengangs**, kein auswendig gelernter Mustertext.
+- **Abwaegung:** **Vergleich von Fuer und Wider** mit begruendetem Urteil und Entkraeftung.
+- **Konzession:** **„zwar ..., aber ..."-Figur**; erst einraeumen, dann widersprechen und These sichern.
+
+### Wirkungsgefuege / Modell
+
+Die Begriffe bilden den Trainingskreis: Der **Mini-Text** liefert das Material, die **Loesungsskizze** das richtige Geruest. Die **Abwaegung** und die **Konzession** tragen die Eroerterung als Verfahren. Der **Erwartungshorizont** schliesst den Kreis mit Selbstcheck statt Nachlesen. Wer nach dem Schreiben abhakt, nutzt den Testeffekt statt Illusion.
 
 Klausur-Satz: `Der Erwartungshorizont dient der Selbstkontrolle: These, Gedankengang, Sprachmittel und Urteil werden Punkt für Punkt abgehakt.`
 
 ## Schritt 3 — entdecken
 
-ENTDECKEN (ein Konzept plus Textdiagramm):
+TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
-Das Training verbindet Zeitdruck mit Selbstkontrolle. Aufgabe 1 ist Typ IIa in Kurzform: ein Mini-Text, 25 Minuten, Schwerpunkt AFB II (Gang treffsicher, Sprachstellen mit Zeile, Wirkung erklaert, drei Zeilen Stellungnahme). Aufgabe 2 wechselt das Zentrum: nicht mehr Zeile fuer Zeile, sondern Pro und Contra mit eigenem Urteil; der Text liefert nur ein bis zwei Belege; ohne Gegenposition und Entkraeftung bleibt AFB III leer. Danach folgt der EHZ-Abgleich: These klar, drei Stationen mit Zeile, zwei Mittel mit Wirkung, Urteil mit weil. Fehlende Punkte werden gezielt ergaenzt. Kurzformel: Analyse hat den Text im Zentrum, Eroerterung das Problem.
+### Hook / Phaenomen
+
+Dieselbe Streitfrage, zwei entgegengesetzte Aufträge — und viele bearbeiten beide gleich. Einmal soll der Text zerlegt, einmal das Problem entschieden werden. Warum kippt die Gewichtung um siebzig zu dreissig?
+
+### Fachbegriff & Definition
+
+Die **Zwei-Zentren-Regel** besagt: **Analyse hat den Text, Eroerterung das Problem im Zentrum**. Ihre Formel lautet $Analyse = Text + Beleg + Z.$ gegen $Eroerterung = Problem + Pro/Contra + Urteil$. In Aufgabe 1 zaehlt jede Beobachtung nur mit $Z.$, in Aufgabe 2 zaehlt jede Position nur mit Gegenposition. Wer das Zentrum verwechselt, verteilt seine Zeit falsch.
+
+### Wirkungsgefuege / Modell
+
+Die Kausalkette lautet: **Operator, Zentrum, Gewichtung, Check**. Erstens entscheidet der Operator — analysieren oder eroertern — ueber Blick und Zentrum. Zweitens erhaelt das Zentrum ca. 70 Prozent der Zeit: Gang und Sprache oder Pro, Contra und Urteil. Drittens liefert der Text in der Eroerterung nur ein bis zwei Belege. Viertens gleicht der Erwartungshorizont beide Zentren getrennt ab. Zentrum vor Zeit — das ist die Regel.
+
+```diagram
+  ZWEI ZENTREN — zwei Gewichtungen
+  Aufgabe 1 ANALYSE (Zentrum TEXT, 25 Min)
+    Einleitung 3 Saetze + Gang 3 Stationen mit Z.
+    + Sprache 2 Mittel mit Wirkung + Stellungnahme 3 Zeilen
+  Aufgabe 2 EROERTERUNG (Zentrum PROBLEM, 25 Min, 180-220 W.)
+    Frage 1 Satz + Pro 2 + Contra 2 + Entkraeftung + Urteil mit weil
+  EHZ-Check: These? Gang mit Z.? Mittel mit Wirkung? Urteil?
+```
 
 ```diagram
    ZWEI AUFGABEN — ZWEI ZENTREN

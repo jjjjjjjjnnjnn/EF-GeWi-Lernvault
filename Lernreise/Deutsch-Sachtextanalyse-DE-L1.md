@@ -17,31 +17,73 @@ version: Lesson-v3
 
 ## Schritt 1 — entdecken
 
-ZIELE (diese Lektion in 15 Minuten: danach kannst du):
+ZIELE (drei messbare Ziele dieser Lektion):
 
-1. Drei Klassen der Leserlenkung unterscheiden (Anrede und Appell, Kontrast und Metapher, Konzession) und ihre Leserwirkung benennen.
-2. Jedes rhetorische Mittel in drei Schritten analysieren (Benennung, Beleg, Wirkung), statt nur ein Etikett zu vergeben.
-3. Einen normgerechten Analysesatz schreiben (Benennung plus Beleg plus Wirkung) und die Intention des Autors bestimmen.
+1. Du kannst drei Klassen der **Leserlenkung** — Anrede und Appell, Kontrast und Metapher, Konzession — unterscheiden und je eine typische Leserwirkung benennen.
+2. Du kannst jedes rhetorische Mittel im **Dreischritt** aus Benennung, Beleg mit $Z.$ und Wirkung analysieren, statt nur ein Etikett zu vergeben.
+3. Du kannst einen normgerechten **Analysesatz** aus Benennung plus Beleg plus Wirkung schreiben und die **Intention** des Autors bestimmen.
+
+### Hook / Phaenomen
+
+Ein Kommentar behauptet, wer nicht staendig online sei, sei abgehaengt. Niemand wird gezwungen, doch fast jeder nickt innerlich. Wie schafft ein blosser Satz solchen Druck, ohne ein einziges Argument zu nennen?
+
+### Fachbegriff & Definition
+
+Die **Leserlenkung** ist die Gesamtheit der Verfahren, mit denen **Rhetorik, Syntax und Anrede** den Leser zur **These** fuehren. Sie wirkt nicht durch Behauptung, sondern durch **Steuerung von Aufmerksamkeit und Zustimmung**. Entscheidend ist die **Funktionsbindung**: Jedes Mittel muss zeigen, welche Leserreaktion es erzeugt und welche These es stuetz. Ohne diese Bindung bleibt Rhetorik blosser Schmuck.
+
+### Wirkungsgefuege / Modell
+
+Die Kausalkette laeuft in vier Stufen: **Mittel, Beleg, Wirkung, These**. Erstens setzt der Autor ein Mittel wie die **rhetorische Frage** in $Z. 1$. Zweitens belegt die Analyse die Stelle mit kurzem Zitat und $Z.$. Drittens wird die Wirkung benannt: Die Frage simuliert Dialog und erzeugt **sozialen Druck**. Viertens wird an die These rueckgebunden: Der Druck stuetz die Behauptung aus $Z. 3$, entscheidend sei der Umgang mit Aufmerksamkeit. Erst diese Rueckbindung schliesst die Kette.
 
 Klausur-Satz: `Jedes sprachliche Mittel muss über seine Funktion mit der These verknüpft werden; eine bloße Benennung bleibt auf AFB I.`
 
 ## Schritt 2 — entdecken
 
-PRETRAINING (Kernbegriffe, erst lesen, dann abdecken und aktiv wiedergeben):
+PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
-- Leserlenkung: Verfahren, mit denen Rhetorik, Syntax und Anrede den Leser zur These fuehren.
-- Dreischritt der Rhetorik: Benennung, Beleg, Funktion und Wirkung.
-- Rhetorische Frage: Frage ohne Antwortabsicht, die innere Zustimmung erzwingt.
-- Antithese: Paarung von Gegensaetzen zur Spannung (Ablenker gegen Werkzeug).
-- Intention: informieren, appellieren, ueberzeugen, warnen als vier Zielrichtungen.
+### Hook / Phaenomen
+
+„Lebendiger Text" steht unter fast jeder Klausur, und fast nie bringt das Punkte. Was fehlt, ist nicht das Gespuer, sondern das Handwerkszeug. Diese fuenf Begriffe sind der Koffer, ohne den jede Wirkungsanalyse Raetselraten bleibt.
+
+### Fachbegriffe & Definitionen
+
+- **Leserlenkung:** Verfahren, mit denen **Rhetorik, Syntax und Anrede** den Leser gezielt zur **These** fuehren.
+- **Dreischritt der Rhetorik:** Pflichtfolge aus **Benennung** des Mittels, **Beleg** mit $Z.$ und Deutung von **Funktion und Wirkung**.
+- **Rhetorische Frage:** Frage ohne Antwortabsicht, die **innere Zustimmung** erzwingt und sozialen Druck erzeugt.
+- **Antithese:** Paarung von Gegensaetzen wie Ablenker gegen Werkzeug, die **Spannung und Wertung** sichtbar macht.
+- **Intention:** Zielrichtung des Textes — **informieren, appellieren, ueberzeugen, warnen** — als Fluchtpunkt jeder Wirkungsdeutung.
+
+### Wirkungsgefuege / Modell
+
+Die Begriffe greifen ineinander: Die **Leserlenkung** ist das Dach, der **Dreischritt** das Verfahren. **Rhetorische Frage** und **Antithese** liefern die haeufigsten Mittel, die stets mit $Z.$ belegt werden muessen. Die **Intention** entscheidet, wohin die Wirkung zeigt: Ein Appell an Selbstverantwortung braucht andere Mittel als eine Warnung. Wer in der Klausur ein Mittel ohne Intention deutet, beschreibt Wirkung ohne Ziel.
 
 Klausur-Satz: `Die rhetorische Frage simuliert einen Dialog mit dem Leser und erzwingt eine innere Zustimmung.`
 
 ## Schritt 3 — entdecken
 
-ENTDECKEN (ein Konzept plus Textdiagramm):
+TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
-Leserlenkung fragt nicht, was der Autor sagt, sondern wie er Zustimmung erzeugt. Derselbe Sachverhalt wirkt als Feststellung anders denn als rhetorische Frage: Die Frage bezieht Position und uebt sozialen Druck aus. Analyse verlangt drei Schritte: Mittel exakt benennen, kurze Stelle mit Zeile zitieren, Wirkung auf den Leser erklaeren (erzeugt sie Bedraengnis, verschaerft sie Gegensatz, staerkt sie Ueberzeugung). "Macht den Text lebendiger" bleibt ohne Ziel und These wertlos. Die drei Pruefungsfaelle lauten: Anrede und Appell, Kontrast und Metapher, Konzession.
+### Hook / Phaenomen
+
+Warum ueberzeugt der Satz „Plant taeglich eine Stunde ohne Bildschirm" mehr als zehn Statistiken? Weil ein Imperativ kein Wissen vermittelt, sondern Verhalten befiehlt. Der Appell verwandelt Leser in Handelnde — genau darin liegt seine Klausurleistung.
+
+### Fachbegriff & Definition
+
+Der **Appell als Lenkungsform** ist eine direkte **Handlungsaufforderung im Imperativ**, die Analyse in **Selbstverantwortung** umwandelt. Er steht meist am **Textschluss** und fasst die These als Auftrag zusammen. Seine Formel lautet $Appell = Imperativ + Adressat + These$. Ohne Rueckbindung an die These bleibt er blosse Moral; mit Bindung wird er zur logischen Folge der Argumentation.
+
+### Wirkungsgefuege / Modell
+
+Die Kausalkette lautet: **Analyse, Zuspitzung, Aufforderung, Bindung**. Erstens analysiert der Text das Problem mit Frage und Antithese. Zweitens spitzt er es auf die These zu: Nicht die Menge, sondern der Umgang entscheide. Drittens folgt der Appell in $Z. 6$ mit den Verben im Imperativ. Viertens bindet die Schlussmetapher vom Gestalter der eigenen Zeit den Befehl an die These zurueck. So wird Gehorsam als Einsicht erlebt.
+
+```diagram
+  LESERLENKUNG — vom Mittel zur These
+  Mittel (Frage / Antithese / Appell)
+    -> Beleg mit Z. (Wo steht es woertlich?)
+    -> Wirkung (Druck / Kontrast / Auftrag)
+    -> These (stuetz sie oder nicht?)
+  Pruefregel: Ohne Rueckbindung keine Analyse.
+  Faelle: (1) Anrede/Appell (2) Kontrast/Metapher (3) Konzession
+```
 
 ```diagram
    DREISCHRITT DER RHETORIK

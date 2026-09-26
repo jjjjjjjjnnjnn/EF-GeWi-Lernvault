@@ -17,31 +17,73 @@ version: Lesson-v3
 
 ## Schritt 1 — entdecken
 
-ZIELE (diese Lektion in 15 Minuten: danach kannst du):
+ZIELE (drei messbare Ziele dieser Lektion):
 
-1. Die These eines pragmatischen Textes bestimmen und ihre Stuetzung durch Argumente beschreiben.
-2. Den Argumentationsgang in Stationen mit Zeile zerlegen, statt Satz fuer Satz zu uebersetzen.
-3. Eine normgerechte Einleitung (Autor, Jahr, Titel, Textsorte, These) schreiben und ein begruendetes Urteil formulieren.
+1. Du kannst die **These** eines pragmatischen Textes bestimmen und ihre Stuetzung durch **Argumente** beschreiben.
+2. Du kannst den **Argumentationsgang** in Stationen mit $Z.$ zerlegen, statt Satz fuer Satz zu uebersetzen.
+3. Du kannst eine normgerechte **Einleitung** aus Autor, Jahr, Titel, Textsorte und These schreiben und ein begruendetes **Urteil** formulieren.
+
+### Hook / Phaenomen
+
+Zwei Leser streiten ueber einen Kommentar: Einer sagt, er sei ueberzeugend, der andere, er sei blosse Meinung. Beide haben denselben Text gelesen. Woran entscheidet sich, ob ein Text argumentiert oder nur behauptet?
+
+### Fachbegriff & Definition
+
+Der **Argumentationsgang** ist die geordnete **Reihenfolge der Denkschritte**, mit denen ein Autor seine **These** stuetz. Er verbindet **Behauptung, Begruendung und Schlussfolgerung** zu einer pruefbaren Kette. Jede Station braucht einen **Beleg mit $Z.$**, sonst bleibt sie Behauptung. Analyse heisst daher: Funktionen benennen, nicht Inhalt nacherzaehlen.
+
+### Wirkungsgefuege / Modell
+
+Die Kausalkette lautet: **These, Station, Beleg, Urteil**. Erstens wird die These als „nicht ..., sondern ..."-Satz in $Z. 3$ fixiert. Zweitens werden Stationen wie **Konzession, Gegenbeweis und Loesung** mit Funktionswoertern markiert. Drittens belegt jede Station eine $Z.$, etwa die Konzession in $Z. 2$. Viertens muendet die Kette in ein Urteil, das die Staerke des Gangs bewertet. Ohne Stationen mit $Z.$ gibt es keine AFB-II-Leistung.
 
 Klausur-Satz: `Der Argumentationsgang eines Sachtextes verbindet These, Argumente und Schlussfolgerung zu einer nachvollziehbaren Gedankenkette.`
 
 ## Schritt 2 — entdecken
 
-PRETRAINING (Kernbegriffe, erst lesen, dann abdecken und aktiv wiedergeben):
+PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
-- These: zentrale Behauptung des Autors; oft nach Konzession oder als "nicht ..., sondern ..."-Satz.
-- Argument: stuetzender Grund; sechs Typen (Fakten, Norm, Autoritaet, Analogie, indirekt, Plausibilitaet).
-- Beleg: kurzes Zitat plus Zeile (vgl. Z. 6); ohne Beleg bleibt AFB II leer.
-- Argumentationsgang: Reihenfolge der Denkschritte, typisch Konzession, Gegenbeweis, Loesung, Appell.
-- Konzession: zwar ... aber ...; erst einraeumen, dann die eigene These sichern.
+### Hook / Phaenomen
+
+„Der Autor hat recht" ist kein Analysesatz, sondern ein Bauchgefuehl. Erst wer These, Argument und Beleg trennen kann, sieht, wo ein Text stark ist und wo er lueckt. Diese fuenf Begriffe machen aus dem Gefühl ein pruefbares Urteil.
+
+### Fachbegriffe & Definitionen
+
+- **These:** zentrale **Behauptung** des Autors, oft nach Konzession oder als „nicht ..., sondern ..."-Satz formuliert.
+- **Argument:** stuetzender **Grund** mit sechs Typen: Fakten, Norm, Autoritaet, Analogie, indirekter Beweis und Plausibilitaet.
+- **Beleg:** kurzes **Zitat plus $Z.$**, etwa vgl. $Z. 6$; ohne Beleg bleibt AFB II leer.
+- **Argumentationsgang:** **Reihenfolge der Denkschritte**, typisch Konzession, Gegenbeweis, Loesung und Appell.
+- **Konzession:** „zwar ..., aber ..."-Figur, die erst **einraeumt** und dann die eigene These sichert.
+
+### Wirkungsgefuege / Modell
+
+Die Begriffe bilden eine Kette: Die **These** gibt das Ziel vor, das **Argument** liefert den Grund, der **Beleg** mit $Z.$ den Nachweis. Der **Argumentationsgang** ordnet die Gruende in wirksame Reihenfolge, die **Konzession** eroefnet ihn mit Vertrauensaufbau. Wer in der Klausur nur die These nennt, bleibt auf AFB I; erst Gang plus Beleg erreichen AFB II.
 
 Klausur-Satz: `Eine These wird erst durch Argumente und Belege tragfähig; ohne Textbeleg bleibt jede Analyse eine bloße Behauptung.`
 
 ## Schritt 3 — entdecken
 
-ENTDECKEN (ein Konzept plus Textdiagramm):
+TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
-Ein Sachtext ist eine gerichtete Gedankenkette. Die These steht am Anfang oder Ende; Argumente stuetz sie; ihre Reihenfolge folgt einer Taktik: erst Konzession fuer Vertrauen, dann Gegenbeweis, dann Mittelweg oder Appell. Beim Lesen zaehlt nicht die Uebersetzung, sondern die Funktion jedes Satzes: Setzt er die These, belegt er sie oder schliesst er. Die Kette aus benannten Stationen mit Zeile bildet den AFB-II-Kern der Klausur.
+### Hook / Phaenomen
+
+Warum wirkt ein Kommentar ueberzeugend, obwohl er nur Bekanntes sagt? Weil er Bekanntes in eine Richtung stellt. Die Reihenfolge entscheidet: Wer zuerst einraeumt und dann widerspricht, gewinnt Vertrauen, das der blosse Rechthaber nie bekommt.
+
+### Fachbegriff & Definition
+
+Die **Konzession als Eroeffnungstaktik** ist ein **gelenktes Einraeumen**, das Vertrauen aufbaut, um den folgenden **Gegenbeweis** zu staerken. Ihre Formel lautet $Konzession = zwar + Verstaendnis + aber + These$. Sie steht meist in $Z. 2$ und signalisiert Fairness. Ohne anschliessenden Gegenbeweis bleibt sie Selbstwiderspruch; mit ihm wird sie zum stilkraftvollen Auftakt.
+
+### Wirkungsgefuege / Modell
+
+Die Kausalkette lautet: **Einraeumen, Entkraeften, Loesen, Appellieren**. Erstens raeumt die Konzession die Sorge der Gegenseite ein und gewinnt Vertrauen. Zweitens entkraeftet der Gegenbeweis mit Kontrast in $Z. 4$ bis $Z. 5$ das Pauschalurteil. Drittens bietet die Loesung in $Z. 7$ den Mittelweg als Schlussfolgerung. Viertens muendet der Appell in $Z. 9$ in Selbststeuerung statt Verbot. Genau diese Stufung macht den Gang pruefbar.
+
+```diagram
+  ARGUMENTATIONSGANG — vier Stationen
+  [These in Z. 3: nicht Geraet, sondern Umgang]
+    -> [Konzession Z. 2: zwar ... doch ...]
+    -> [Gegenbeweis Z. 4-5: Kontrast passiv vs. aktiv]
+    -> [Loesung Z. 7-8: Mittelweg + Werkzeug-Bild]
+    -> [Appell Z. 9: Training statt Moralpredigt]
+  Regel: Jede Station = Funktion + kurzes Zitat + Z.
+```
 
 ```diagram
   [These]            z.B. "Nicht das Geraet, sondern der Umgang entscheidet."

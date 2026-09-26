@@ -17,31 +17,74 @@ version: Lesson-v3
 
 ## Schritt 1 — entdecken
 
-ZIELE (diese Lektion in 15 Minuten: danach kannst du):
+ZIELE (drei messbare Ziele dieser Lektion):
 
-1. Das Programm des Sturm und Drang (Gefuehl vor Vernunft) benennen und vom Aufklaerungsideal (Vernunft, Mass, Ordnung) abgrenzen.
-2. Eine Deutungshypothese in zwei bis drei Saetzen formulieren: erster Eindruck, Beziehungslinie, Formbeobachtung, Urteil.
-3. Eine Bildlichkeit mit Formbeobachtung und Zeile belegen und damit die Gefuehlskurve des Gedichts nachweisen.
+1. Du kannst das Programm des **Sturm und Drang** — Gefuehl vor Vernunft — benennen und vom **Aufklaerungsideal** aus Vernunft, Mass und Ordnung abgrenzen.
+2. Du kannst eine **Deutungshypothese** in zwei bis drei Saetzen aus Eindruck, Beziehungslinie und Formbeobachtung formulieren.
+3. Du kannst eine **Bildlichkeit** mit Formbeobachtung und $Z.$ belegen und damit die **Gefuehlskurve** des Gedichts nachweisen.
+
+### Hook / Phaenomen
+
+Durch Nacht und Regen jagt ein Reiter, das Herz klopft, dann glueht ploetzlich ein Fenster — und alles ist anders. Kein neues Pferd, kein neuer Weg, nur ein Licht. Wie kann ein einziges Bild Angst in Glueck verwandeln?
+
+### Fachbegriff & Definition
+
+Der **Sturm und Drang** ist die literarische Stroemung um 1765 bis 1785, die **Gefuehl, Leidenschaft und Individualitaet** ueber Vernunft stellt. Ihr Programm lautet **Geniekult und Naturgefuehl** gegen Mass und Regel. Entscheidend ist die **Gefuehlskurve**: Das Gedicht fuehrt von einem Zustand in einen anderen. Form ist hier kein Schmuck, sondern Traeger der Bewegung.
+
+### Wirkungsgefuege / Modell
+
+Die Kausalkette lautet: **Bild, Gegensatz, Tempo, Deutung**. Erstens setzt das Bild — Nacht gegen Licht — die Pole. Zweitens schaerft die **Antithese** aus Angst und Freude die Spannung. Drittens beschleunigt das **Enjambement** den Ritt ueber das Versende hinaus. Viertens fasst die **Deutungshypothese** die Kurve als Augenblicksglueck zusammen. Jede Stufe braucht Beleg und $Z.$, sonst bleibt Deutung Behauptung.
 
 Klausur-Satz: `Im Sturm und Drang steht das Gefühl über der Vernunft; Form und Sprache werden eingesetzt, um diese Gefühlsbewegung erfahrbar zu machen.`
 
 ## Schritt 2 — entdecken
 
-PRETRAINING (Kernbegriffe, erst lesen, dann abdecken und aktiv wiedergeben):
+PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
-- Lyrisches Ich: Sprecher des Gedichts als Kunstfigur; in der Klausur nie mit dem Autor gleichsetzen.
-- Bildlichkeit und Metapher: konkrete Bilder tragen abstrakte Gefuehle (Nacht als Gefahr, Licht als Glueck).
-- Deutungshypothese: fruehe Annahme in zwei bis drei Saetzen, im Verlauf geprueft und korrigiert.
-- Antithese: Paarung von Gegensaetzen (Nacht und Morgen, Angst und Freude) zur Spannung.
-- Sturm und Drang: Stroemung ca. 1765 bis 1785; Gefuehl, Leidenschaft und Individualitaet stehen ueber der Vernunft.
+### Hook / Phaenomen
+
+„Goethe fuehlt" steht in mancher Klausur — und kostet Punkte. Nicht weil das Gefuehl falsch waere, sondern weil der Falsche fuehlt. Wer spricht im Gedicht ueberhaupt? Ohne diese Trennung bleibt jede Deutung schief.
+
+### Fachbegriffe & Definitionen
+
+- **Lyrisches Ich:** **Sprecher des Gedichts als Kunstfigur**; in der Klausur nie mit dem Autor gleichsetzen.
+- **Bildlichkeit und Metapher:** **konkrete Bilder** tragen abstrakte Gefuehle, etwa Nacht als Gefahr und Licht als Glueck.
+- **Deutungshypothese:** fruehe **Annahme in zwei bis drei Saetzen**, im Verlauf geprueft und korrigiert.
+- **Antithese:** Paarung von **Gegensaetzen** aus Nacht und Morgen, Angst und Freude zur Spannung.
+- **Sturm und Drang:** Stroemung ca. 1765 bis 1785; **Gefuehl und Individualitaet** stehen ueber der Vernunft.
+
+### Wirkungsgefuege / Modell
+
+Die Begriffe arbeiten zusammen: Das **lyrische Ich** ist die Stimme, die **Bildlichkeit** ihr Material, die **Antithese** ihre Spannung. Die **Deutungshypothese** haelt die erste Leseerfahrung fest und bleibt revidierbar. Der **Sturm und Drang** liefert das Programm, das diese Mittel sinnvoll macht. Wer das Ich mit dem Autor verwechselt, verfehlt Stimme und Programm zugleich.
 
 Klausur-Satz: `Das lyrische Ich verarbeitet eine Begegnung, in der Gefühl über Vernunft steht; die Deutungshypothese wird dabei zuerst aufgestellt und später überprüft.`
 
 ## Schritt 3 — entdecken
 
-ENTDECKEN (ein Konzept plus Textdiagramm):
+TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
-Sturm-und-Drang-Lyrik stellt das Gefuehl programmatisch nach vorn. Gegen die Aufklaerung mit Vernunft, Mass und Ordnung setzt sie Gefuehl, Leidenschaft und Individualitaet sowie den Geniekult. Entscheidend ist die Gefuehlskurve: Das Gedicht fuehrt von einem Zustand in einen anderen (naechtliche Angst, glueckhafte Begegnung, schmerzlicher Abschied). Getragen wird die Kurve von Bild, Antithese, Enjambement und Exclamatio. Aufgabe ist, die Kurve mit Form und Sprache zu beweisen, nicht die Handlung nachzuerzaehlen. Die Hypothese steht frueh und bleibt revidierbar.
+### Hook / Phaenomen
+
+Warum endet ein Gluecksgedicht im kalten Wind? Weil Erfuellung im Sturm und Drang nie Zustand sein darf. Das Glueck leuchtet nur, um zu vergehen — und gerade das Vergehen beweist seine Staerke.
+
+### Fachbegriff & Definition
+
+Die **Stimmungskurve als Deutungsmodell** beschreibt den **Gefuehlsverlauf ueber die Strophen** von Angst ueber Glueck zu Verlust. Ihre Formel lautet $Kurve = Zustand_{1} + Umschlag + Zustand_{2}$. Traeger sind **Bild, Antithese, Enjambement und Exclamatio**. Die Kurve wird mit $Z.$ belegt und muendet in die Hypothese: Glueck existiert nur als Augenblick.
+
+### Wirkungsgefuege / Modell
+
+Die Kausalkette lautet: **Nacht, Begegnung, Abschied, Deutung**. Erstens baut die erste Strophe naechtliche Angst mit Tempo auf. Zweitens kippt das Lichtbild in der zweiten Strophe die Stimmung zu Waerme. Drittens loest der graue Morgen in der dritten Strophe das Glueck wieder auf. Viertens deutet die Hypothese den Verlust als Preis des Augenblicks. Bild plus Form beweisen, was Nacherzaehlung nur behauptet.
+
+```diagram
+  STIMMUNGSKURVE — Sturm-und-Drang-Modell
+  Gefuehl hoch: Begegnung (Freude / Licht, 2. Str.)
+  Gefuehl tief: Ritt in Nacht und Angst (1. Str.)
+  Gefuehl fallend: Abschied im kalten Wind (3. Str.)
+  Traeger: Bild (Nacht vs. Licht) + Antithese (Angst vs. Freude)
+    + Enjambement (Tempo) + Exclamatio (Affekt)
+  Formel: Kurve = Zustand1 + Umschlag + Zustand2
+  Hypothese: Glueck nur als Augenblick
+```
 
 ```diagram
    STIMMUNGSKURVE eines Sturm-und-Drang-Gedichts

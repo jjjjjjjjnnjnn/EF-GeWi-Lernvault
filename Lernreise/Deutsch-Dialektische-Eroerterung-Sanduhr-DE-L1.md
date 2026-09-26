@@ -17,31 +17,75 @@ version: Lesson-v3
 
 ## Schritt 1 — entdecken
 
-ZIELE (diese Lektion in 15 Minuten: danach kannst du):
+ZIELE (drei messbare Ziele dieser Lektion):
 
-1. Das Sanduhr-Prinzip skizzieren: breite Einleitung mit Engfuehrung, zwei gesteigerte Argumentbloecke, erweiterte Abwaegung mit Fazit.
-2. Zur Streitfrage "Soll ein ganztaegiges Handyverbot gelten?" je drei Pro- und Contra-Argumente ordnen und mit Konnektoren verknuepfen.
-3. Einen Schluss mit Abwaegung und Bedingung formulieren (AFB III).
+1. Du kannst das **Sanduhr-Prinzip** skizzieren: breite Einleitung mit Engfuehrung, zwei gesteigerte Bloecke, erweiterte Abwaegung mit Fazit.
+2. Du kannst zur Streitfrage eines Handyverbots je drei **Pro- und Contra-Argumente** ordnen und mit **Konnektoren** verknuepfen.
+3. Du kannst einen **Schluss mit Abwaegung und Bedingung** formulieren und die eigene Position begruenden.
+
+### Hook / Phaenomen
+
+In jeder Pause starren Dutzende auf Displays statt miteinander zu reden. Soll die Schule verbieten, was alle tun? Die Antwort entscheidet nicht ueber Handys, sondern ueber Erziehung: Kontrolle oder Vertrauen?
+
+### Fachbegriff & Definition
+
+Die **dialektische Eroerterung** ist die **Abwaegung von Pro und Contra** in aufsteigender Staerke mit begruendetem Urteil. Sie folgt der **Sanduhrform**: breit einfuehren, eng argumentieren, breit schliessen. Entscheidend ist die **Steigerung**: Das schwaechste Argument steht zuerst, das staerkste zuletzt. Ohne Steigerung bleibt Aneinanderreihung ohne Spannung.
+
+### Wirkungsgefuege / Modell
+
+Die Kausalkette lautet: **Frage, Block, Umschwung, Urteil**. Erstens verengt die Einleitung vom Pausenhof zur Streitfrage. Zweitens stellt der erste Block drei Argumente von schwach nach stark. Drittens markiert der Umschwung mit „zwar ..., jedoch ..." den Seitenwechsel. Viertens oeffnet die Abwaegung zum bedingten Fazit mit Ausnahmeregel. Konnektoren fuehren den Leser durch jede Stufe.
 
 Klausur-Satz: `Die dialektische Eroerterung nach dem Sanduhr-Prinzip ordnet Pro- und Contra-Argumente in aufsteigender Staerke und muendet in eine abgewogene Stellungnahme.`
 
 ## Schritt 2 — entdecken
 
-PRETRAINING (Kernbegriffe, erst lesen, dann abdecken und aktiv wiedergeben):
+PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
-- Sanduhr-Prinzip: breite Einleitung, verengte Argumentation, erweiterte Abwaegung als Gesamtform.
-- Pro-Argument: stützender Grund, nach Staerke aufsteigend geordnet.
-- Contra-Argument: Einwand, ebenfalls aufsteigend geordnet; der spaetere Block steht meist der eigenen Position naeher.
-- Konnektor: Signalwort fuer Einraeumung, Gegensatz und Folge (zwar, jedoch, demgegenueber, somit).
-- Abwaegung: Vergleich der Seiten nach Gewicht mit bedingtem Urteil am Ende.
+### Hook / Phaenomen
+
+„Ein Verbot ist gut, weil Verbote helfen" — so klingen viele Eroerterungen vor der Abwaegung. Drei Gruende, keine Ordnung, kein Gegner. Was fehlt, ist nicht die Meinung, sondern das Gelaender, das den Leser sicher zur Entscheidung fuehrt.
+
+### Fachbegriffe & Definitionen
+
+- **Sanduhr-Prinzip:** **Gesamtform** aus breiter Einleitung, verengter Argumentation und erweiterter Abwaegung.
+- **Pro-Argument:** **stuetzender Grund**, nach Staerke aufsteigend geordnet, das Staerkste zuletzt.
+- **Contra-Argument:** **Einwand** ebenfalls in Steigerung; der spaetere Block steht meist der eigenen Position naeher.
+- **Konnektor:** **Signalwort** fuer Einraeumung, Gegensatz und Folge: zwar, jedoch, demgegenueber, somit.
+- **Abwaegung:** **Vergleich der Seiten** nach Gewicht mit bedingtem Urteil am Ende.
+
+### Wirkungsgefuege / Modell
+
+Die Begriffe bilden das Bauwerk: Das **Sanduhr-Prinzip** gibt die Form, **Pro- und Contra-Argumente** das Material in Steigerung. **Konnektoren** markieren Steigerung, Umschwung und Fazit und machen den Gang pruefbar. Die **Abwaegung** vergleicht Gewichte statt zu zaehlen und sichert das Urteil mit Bedingung. Ohne Konnektoren stuerzt der Leser durch die Sanduhr.
 
 Klausur-Satz: `Die Staerke der Argumente waechst zum Umschwung hin, die Abwaegung entscheidet zwischen ihnen.`
 
 ## Schritt 3 — entdecken
 
-ENTDECKEN (ein Konzept plus Textdiagramm):
+TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
-Die Sanduhr verengt und erweitert: Die Einleitung fuehrt vom Alltag zur Streitfrage, der Mittelteil stellt zwei Argumentbloecke in Steigerung gegenueber, die Taille markiert den Umschwung, der Schluss oeffnet zur Abwaegung. Wer ein Verbot befuerwortet, legt den Pro-Block nach dem Umschwung; wer es ablehnt, umgekehrt. Innerhalb jedes Blocks steht das schwaechste Argument zuerst, das staerkste zuletzt. Konnektoren fuehren den Leser: zwar signalisiert Einraeumung, jedoch den Wechsel, demgegenueber den Vergleich, somit das Fazit.
+### Hook / Phaenomen
+
+Wer zuerst seine eigene Meinung sagt, hat schon verloren. Denn wer frueh urteilt, entwertet den Gegner und verschenkt die Abwaegung. Warum gewinnt gerade die spaete Entscheidung die meisten Punkte?
+
+### Fachbegriff & Definition
+
+Der **Umschwung als Taille der Sanduhr** ist der **markierte Seitenwechsel** zwischen den Argumentbloecken. Seine Formel lautet $Umschwung = zwar + Staerkstes der Gegenseite + jedoch + Ueberleitung$. Er steht zwischen den beiden staerksten Argumenten und erzeugt maximale Spannung. Ohne sprachliche Markierung wirkt der Wechsel wie ein Bruch; mit ihr wie eine Wende.
+
+### Wirkungsgefuege / Modell
+
+Die Kausalkette lautet: **Steigern, Wenden, Vergleichen, Bedingen**. Erstens steigt jeder Block von schwach nach stark, sodass die Staerksten an der Taille stehen. Zweitens wendet der Umschwung mit Konnektor die Richtung. Drittens vergleicht die Abwaegung Schutz der Konzentration gegen Training von Eigenverantwortung. Viertens sichert die Bedingung — Verbot mit Ausnahmen fuer Notfaelle und Lernphasen — das Urteil ab. Spannung plus Bedingung ergeben volle Punktzahl.
+
+```diagram
+  SANDUHR — Taille als Umschwung
+  [breit] Einleitung: Hook + Streitfrage (Handyverbot?)
+    verengen zur Frage
+    || Block 1 (schwach -> stark, z.B. Contra)
+    || -- Taille: zwar ... jedoch ... (Umschwung) --
+    || Block 2 (schwach -> stark, z.B. Pro)
+    erweitern zur Abwaegung
+  [breit] Schluss: Fazit + Bedingung (mit Ausnahmen)
+  Gelaender: zwar / jedoch / demgegenueber / somit
+```
 
 ```diagram
   [breit] Einleitung: Hook + Thema + Streitfrage

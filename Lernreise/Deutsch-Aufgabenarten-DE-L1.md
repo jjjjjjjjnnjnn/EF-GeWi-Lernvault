@@ -17,31 +17,74 @@ version: Lesson-v3
 
 ## Schritt 1 — entdecken
 
-ZIELE (diese Lektion in 15 Minuten: danach kannst du):
+ZIELE (drei messbare Ziele dieser Lektion):
 
-1. Die vier Abitur-Aufgabenarten (I literarische Interpretation, II Analyse pragmatischer Texte, III Eroerterung, IV materialgestuetztes Verfassen) unterscheiden und anhand von Operator und Material zuordnen.
-2. Die AFB-Gewichtung anwenden: AFB II traegt ca. 70 Prozent, AFB I dient nur der Einleitung, AFB III dem Urteil.
-3. Die EF-Anforderung ZKE 2027 D1 (IIa) als Grundlage des Abiturtrainings nutzen.
+1. Du kannst die vier **Aufgabenarten** — I Interpretation, II Sachtextanalyse, III Eroerterung, IV materialgestuetztes Verfassen — an **Operator und Material** zuordnen.
+2. Du kannst die **AFB-Gewichtung** anwenden: AFB II traegt ca. 70 Prozent, AFB I dient der Einleitung, AFB III dem Urteil.
+3. Du kannst die EF-Anforderung **ZKE 2027 D1 (IIa)** als Grundlage des Abiturtrainings nutzen.
+
+### Hook / Phaenomen
+
+Vier Aufgaben, ein Text — und die falsche Wahl kostet die halbe Klausur. Wer ein Gedicht wie einen Kommentar analysiert, schreibt fleissig am Thema vorbei. Woran erkennt man in dreissig Sekunden, welcher Typ vorliegt?
+
+### Fachbegriff & Definition
+
+Die **Aufgabenart** ist der durch **Operator und Material** festgelegte Pruefungstyp des Deutschabiturs. Sie entscheidet ueber **Verfahren, Gewichtung und Zieltext**. Entscheidend sind zwei Signale: das **Verb im Auftrag** und die **Art des Materials**. Wer zuerst Operator und Material klaert, liest danach gezielt statt ratlos.
+
+### Wirkungsgefuege / Modell
+
+Die Kausalkette lautet: **Signal, Typ, Gewichtung, Plan**. Erstens werden Operator — analysieren, interpretieren, verfassen — und Material — Gedicht, Kommentar, Dossier — markiert. Zweitens folgt der Typ: literarischer Text fuehrt zu I, pragmatischer zu II oder III, Dossier mit Adressat zu IV. Drittens gilt die Gewichtung mit AFB II als Fundament aus Beleg, $Z.$ und Wirkung. Viertens steuert der Typ Zeit und Laenge. So wird Lesen zu Verfahren.
 
 Klausur-Satz: `Die Aufgabenart wird zuerst am Operator und am Material bestimmt, bevor der Text gelesen wird.`
 
 ## Schritt 2 — entdecken
 
-PRETRAINING (Kernbegriffe, erst lesen, dann abdecken und aktiv wiedergeben):
+PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
-- Aufgabenart: I literarische Interpretation / II Analyse pragmatischer Texte / III Eroerterung / IV materialgestuetztes Verfassen; der Aufgabenkopf nennt den KLP-Bezug.
-- Anforderungsbereich (AFB): I Reproduktion / II Reorganisation und Analyse / III Beurteilung; Schwerpunkt im Fach Deutsch ist AFB II.
-- Weiterfuehrender Schreibauftrag: kurze Stellungnahme, Vergleich oder Umgestaltung nach der Analyse.
-- Materialgestuetztes Verfassen: Schreiben mit Dossier und Unterrichtswissen fuer einen echten Adressaten, ca. 1000 Woerter.
-- Adressatenbezug: Der Zieltext richtet sich durchgehend an einen genannten Leser (Schuelerschaft, Lehrkraft, Eltern).
+### Hook / Phaenomen
+
+„Viel Einleitung, viel Biografie" — so sichern sich viele null Punkte fuer Fleiss. Denn die Klausur belohnt nicht Wissen, sondern Verfahren. Diese fuenf Begriffe zeigen, wo die Punkte wirklich liegen.
+
+### Fachbegriffe & Definitionen
+
+- **Aufgabenart:** Typ **I, II, III oder IV**; der Aufgabenkopf nennt Operator, Material und KLP-Bezug.
+- **Anforderungsbereich (AFB):** Stufe **I Reproduktion, II Reorganisation und Analyse, III Beurteilung**; Schwerpunkt in Deutsch ist AFB II.
+- **Weiterfuehrender Schreibauftrag:** kurze **Stellungnahme, Vergleich oder Umgestaltung** nach der eigentlichen Analyse.
+- **Materialgestuetztes Verfassen:** Schreiben mit **Dossier und Unterrichtswissen** fuer einen echten Adressaten, ca. 1000 Woerter.
+- **Adressatenbezug:** Der Zieltext richtet sich **durchgehend an einen genannten Leser** wie Schuelerschaft oder Eltern.
+
+### Wirkungsgefuege / Modell
+
+Die Begriffe steuern die Arbeit: Die **Aufgabenart** waehlt das Verfahren, der **AFB** die Gewichtung mit AFB II als Traeger. Der **weiterfuehrende Auftrag** folgt erst nach der Analyse und verlangt eigene Position. **Materialgestuetztes Verfassen** und **Adressatenbezug** kehren die Blickrichtung um: vom Text zum Leser. Wer den Adressaten ignoriert, verfehlt Typ IV vollstaendig.
 
 Klausur-Satz: `Der weiterführende Schreibauftrag folgt erst nach der Analyse und verlangt eine eigene Stellungnahme oder einen Vergleich.`
 
 ## Schritt 3 — entdecken
 
-ENTDECKEN (ein Konzept plus Textdiagramm):
+TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
-Die Aufgabenart entscheidet sich an zwei Signalen: Operator und Material. Typ I deutet literarische Texte (Gedicht, Roman, Drama), einzeln oder vergleichend, nach Inhalt, Form und Sprache. Typ II analysiert pragmatische Texte (Kommentar, Rede, Sachtext) nach Textsorte, Gedankengang, Leserlenkung, Sprache und Intention. Typ III eroertert ein Problem auf Materialbasis mit eigenem Urteil im Zentrum. Typ IV verfasst einen Zieltext fuer einen Adressaten aus Dossier, Unterrichtswissen und Erfahrung. Die Gewichtung bleibt konstant: AFB II mit Beleg, Zeile und Wirkung bildet das Fundament, AFB I liefert drei Saetze Einleitung, AFB III ein begruendetes Urteil.
+### Hook / Phaenomen
+
+Warum zaehlt eine schoene Biografie fast nichts, ein einziger Beleg mit Zeile aber alles? Weil die Klausur kein Wissen abfragt, sondern Denken prueft. AFB II ist die Waehrung, in der alles bezahlt wird.
+
+### Fachbegriff & Definition
+
+Die **AFB-Gewichtung als Steuerungsmodell** verteilt die Punkte auf **Einleitung, Analyse und Urteil**. Ihre Formel lautet $Erfolg = AFB_{II}(Beleg + Z. + Wirkung)$. AFB I liefert drei Saetze Einleitung, AFB II ca. 70 Prozent Analyse, AFB III das begruendete Urteil. Wer AFB I aufblaeht, verdraengt die Analyse und verliert die Mehrheit der Punkte.
+
+### Wirkungsgefuege / Modell
+
+Die Kausalkette lautet: **Kuerzen, Belegen, Urteilen, Adressieren**. Erstens bleibt AFB I mit drei Saetzen knapp. Zweitens traegt AFB II mit Beleg, $Z.$ und Wirkung jede Aufgabenart. Drittens schliesst AFB III mit Abwaegung oder Position. Viertens sichert bei Typ IV der Adressatenbezug die Textsorte. Typ IIa als ZKE-Format trainiert genau dieses Fundament fuer alle vier Typen.
+
+```diagram
+  ENTSCHEIDUNGSBAUM + AFB-GEWICHT
+  Operator + Material pruefen
+    -> literarisch (Gedicht/Drama) = Typ I
+    -> pragmatisch + nur Analyse = Typ II
+    -> pragmatisch + Urteil im Zentrum = Typ III
+    -> Dossier + Adressat + ca. 1000 W. = Typ IV
+  Gewicht: AFB I ~10% (3 Saetze) / AFB II ~70% (Beleg+Z.+Wirkung)
+    / AFB III ~20% (Urteil)
+```
 
 ```diagram
    ENTSCHEIDUNGSBAUM: welche Aufgabenart?
