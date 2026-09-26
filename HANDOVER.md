@@ -17,12 +17,13 @@
 - **vault**（Obsidian 知识库，**内容真相源**）+ `App-EF-Lernvault/`（Tauri 桌面学习软件，**只读 vault、不写回**）。
 - 目标：德国 NRW Gymnasium EF 十科笔试/口试提分，中德双语，**完全离线**。
 - **内容铁律**：所有题目材料只能来自用户自己的笔记原文 —— **超纲率 = 0**。
-- **当前规模**：笔记 **386** · Anki 卡片 **1595** · 互动课程 **70 篇**（`Lernreise/`，十科全覆盖）· 术语表 **797 行** · 十科 Abi-Baum 应试树 · 考纲体系（NRW 十科 + 中国理科四科 + 中德映射）。
+- **当前规模**：笔记 **386** · Anki 卡片 **1595** · 互动课程 **88 篇**（`Lernreise/`，十科全覆盖，Lesson-v3 全量入库）· 术语表 **797 行** · 十科 Abi-Baum 应试树 · 考纲体系（NRW 十科 + 中国理科四科 + 中德映射）。
 
 ---
 
 ## 当前状态（2026-09-26）
 
+- ✅ **Lernreise 互动课程全量扩充收官 (70 → 88 篇)**：十科 18 门紧缺核心新课全量入库验收（Mathe 3 篇 / 理化 3 篇 / 生社 3 篇 / 德音体 5 篇 / 英语 4 篇）。100% 对齐 Lesson-v3 9 步制架构（Schritt 1–8 + Fehlvorstellung + Anekdote），全量内嵌学科交互教具沙盒（`[Werkzeug: <id>]`）、双向辨析（`VERGLEICH:` 选程序/选概念）与直观 ASCII 结构图。`python scripts/vault-check.py` 报告 `reisen=88`、`vergleich=0`、`PASS`。
 - ✅ **知识网络 (Mindmap) 发散性星系图谱重构**：废除旧版竖向堆叠线性图，实现多中心发散算法（Multicentric Radial Divergent Algorithm）。支持全学科星系模式（Nebula：以中心辐射 10 学科并在外周扇形发散）与单学科环轨模式（Orbit：3 层同心轨道环绕）。支持节点悬停聚光灯高亮（Spotlight Hover）、视口多级平移缩放，严格遵循 SVG line 测试契约。
 - ✅ **笔记库 (Library) 分页检索与多维筛选升级**：消除 385 篇无节制长列表堆叠，开发支持 8/12/20 条切换的底部分页组件（`Pagination.tsx`）；引入 AFB I/II/III 认知层级与 `* Klausur` 复合分面筛选；实现列表分栏 (Split List) 与响应式 3 列卡片网格 (Card Grid) 双视图；支持 `[` / `]` 翻页与 `j` / `k` 上下篇键盘快捷精读。
 - ✅ **企业实训级沉浸式教学标准落地与外部 AI 指令发布**：发布 [`00_META/External-AI-Enterprise-Curriculum-Prompt.md`](00_META/External-AI-Enterprise-Curriculum-Prompt.md)，确立麦肯锡学院/PhET 级别的 6 步企业级实训课件标准（情境钩子 $\to$ 认知解构 $\to$ 图示原理 $\to$ 上手实验沙盒 `[Werkzeug: <id>]` $\to$ 形成性纠偏 $\to$ Klausur 真题实战）；梳理十科 40 门核心课表缺口矩阵，配套即拷即用的外部 AI 发卷 Prompt。
