@@ -22,7 +22,7 @@ version: Lesson-v3
 
 > EPISODE 19 — Akt IV-V — Tarifarena und Demokratiewerkstatt — Auftrag von Wahlleiterin Sabine Auer: Wahlplakat-Vandalismus in der Bahnhofstrasse.
 
-HOOK (Stadtrats-Krise, lies zuerst): EPISODE 19 — Akt IV-V — Tarifarena und Demokratiewerkstatt — Stadt Tycoon City ruft dich in den Krisenstab. Wahlleiterin Sabine Auer stuermt mit einer Eilmeldung ins Buero: Wahlplakat-Vandalismus in der Bahnhofstrasse — und morgen entscheidet der Stadtrat. Der Markt schreit, die Warteschlange waechst, die Kasse zittert: Ohne deine Analyse kippt die Stadt vom Apfelparadies in den Schwarzmarkt. Dein Auftrag in dieser Episode: Uebersetze die Strassenszene in das heutige Thema Partizipation. Sammle Belege, stelle den Sandkasten [balance-board] scharf und liefere dem Rat eine Klausur-Antwort, die einer Pruefungskommission standhaelt. Erste Spur: TARGET: Bringt auf dem Verhandlungsbrett beide Waagschalen in die Balance — Bedingung: Zustimmung beider Baenke, Loesung mit Kompromisslinie, Ergebnisprotokoll mit zwei Begruendungen je Seite. Wer den Mechanismus versteht, rettet den Haushalt — und vielleicht die Wahl. Der Countdown laeuft, das Radio berichtet live, die Opposition wartet nur auf deinen Fehler: Oeffne die Ziele, schnapp dir die Begriffe und beweise, dass Tycoon City regierbar bleibt.
+HOOK (Stadtrats-Krise, lies zuerst): EPISODE 19 — Akt IV-V — Tarifarena und Demokratiewerkstatt — Stadt Tycoon City ruft dich in den Krisenstab. Wahlleiterin Sabine Auer stuermt mit einer Eilmeldung ins Buero: Wahlplakat-Vandalismus in der Bahnhofstrasse — und morgen entscheidet der Stadtrat. Realer Fall: Das Jugendparlament einer Stadt lockt unter acht Prozent Beteiligung, die Klimademo desselben Monats zwanzigtausend Menschen. Eine Karikatur zeigt die Wahlurne als Muelltonne: Waehlen out, Demo in. Die Stimme schlaeft an der Urne und schreit auf der Strasse - Krise der Demokratie oder Kostuemwechsel der Beteiligung? Erste Spur: TARGET: Bringt auf dem Verhandlungsbrett beide Waagschalen in die Balance — Bedingung: Zustimmung beider Baenke, Loesung mit Kompromisslinie, Ergebnisprotokoll mit zwei Begruendungen je Seite. Oeffne die Ziele, schnapp dir die Begriffe und beweise, dass Tycoon City regierbar bleibt.
 
 ZIELE (drei messbare Ziele dieser Lektion):
 
@@ -34,6 +34,7 @@ ZIELE (drei messbare Ziele dieser Lektion):
 
 Fridays for Future fuellt die Strassen, die Parteien bleiben leer, online klicken Tausende in Sekunden. Die Jugend meidet die Partei, sucht aber Wirkung. Zaehlt der Klick so viel wie die Stimme, und schuetzt die Mehrheit auch die Minderheit? In dieser Lektion lernst du zwei Wege der Antwort: Weg A setzt auf konventionelle Beteiligung durch Wahl und Parteiarbeit, Weg B auf unkonventionelle Beteiligung durch Demo, Ungehorsam und digitalen Protest.
 
+Klausur-Satz: `Beteiligung wandert von der Urne auf Strasse und Netz - wer nur Quoten zaehlt, verwechselt Umzug mit Auszug.`
 ## Schritt 2 — entdecken: Werkzeugkoffer von Wahlleiterin Sabine Auer: 5 Begriffe scharf stellen
 
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
@@ -44,11 +45,19 @@ Legal oder illegal, wirksam oder symbolisch: Wer mischt, verliert Punkte. Diese 
 
 ### Fachbegriffe & Definitionen
 
-- **Konventionelle Partizipation:** Die verfasste Teilhabe durch Wahl, Partei und Amt. Sie wirkt dauerhaft und bindet ueber Gesetz und Organisation.
-- **Unkonventionelle Partizipation:** Die freie Teilhabe durch Demo, Petition und Boykott. Sie wirkt ueber Oeffentlichkeit und Druck und bleibt an Gewaltfreiheit gebunden.
-- **Volksinitiative:** Die erste Stufe zum Volksentscheid. Sie startet mit Anregung und Sammlung bei niedriger Huerde und oeffnet den Weg zum Begehren.
-- **Volksbegehren:** Die zweite Stufe mit Unterschriften in Frist. Sie prueft die Tragfaehigkeit eines Anliegens an der Zahl der Unterstuetzung.
-- **Volksentscheid:** Die dritte Stufe mit Abstimmung an der Urne. Sie entscheidet mit Mehrheit und bindet die Politik an das Ergebnis.
+- **Partizipation**: Partizipation meint alle freiwilligen Handlungen zur Beeinflussung von Politik. Sie reicht von Waehlen ueber Petitionen bis zu Demos und Besetzungen. Legalitaet und Legitimitaet fallen dabei nicht immer zusammen. Mechanismus: Ressourcen, Motive und Gelegenheiten filtern, wer sich wie einbringt. Klausur-Tipp: Sortiere jede Form auf legal, legitim und wirksam.
+- **Konventionell / unkonventionell**: Waehlen und Parteiarbeit laufen in Institutionen. Demos, Boykotte und Petitionen laufen ausserhalb. Beide Formen ergaenzen und ersetzen einander. Mechanismus: Sinkt Vertrauen in Institutionen, wandert Beteiligung auf die Strasse und ins Netz. Klausur-Tipp: Deute Wandel nie nur als Verfall, sondern als Verlagerung.
+- **Wahlbeteiligung**: Die Beteiligung misst Legitimation und Gleichheit der Stimme. Sinkende Quoten treffen Arme und Junge zuerst. Hohe Quoten verbergen nicht ungleiche Einflusschanchen. Mechanismus: Bildung, Einkommen und Alter sortieren die Urne sozial. Klausur-Tipp: Verbinde jede Quote mit der sozialen Schieflage.
+- **E-Partizipation**: Likes, Shitstorms und Online-Petitionen senken Einstiegskosten. Sie verstaerken Laute und verkuerzen Aufmerksamkeit. Wirkung entsteht erst mit Strassen- und Parlamentsanschluss. Mechanismus: Klick plus Organisation plus Medienresonanz - erst das Trio bewegt etwas. Klausur-Tipp: Trenne expressive (Dampf ablassen) von instrumenteller (etwas aendern) Wirkung.
+- **Politikverdrossenheit**: Verdrossenheit meint Enttaeuschung ueber Akteure, nicht Ablehnung der Demokratie. Sie trifft Parteien zuerst, Institutionen spaeter. Sie kann Mobilisierung oder Rueckzug bedeuten. Mechanismus: Skandale plus Ohnmachtserfahrung erzeugen Distanz; Angebote zur Mitsprache koennen sie umkehren. Klausur-Tipp: Unterscheide Akteurs- von Systemverdrossenheit.
+
+
+
+
+
+
+
+
 
 ### Wirkungsgefuege / Modell
 
@@ -116,6 +125,8 @@ VERGLEICH (Wahl des Weges, Weg A gegen Weg B):
 
 VERGLEICH: Waehle zuerst bewusst Weg A (konventionell) oder Weg B (unkonventionell) und begruende dann dein Urteil am passenden Kriterium.
 
+DUELL Weg A (freier Markt) gegen Weg B (Staat greift ein): Weg A feiert den freien Beteiligungsmarkt: Jeder waehlt seine Form, Wettbewerb der Stimmen diszipliniert die Macht. Weg B baut geschuetzte Beteiligung: Jugendparlamente, Quoten und Buergerratsverfahren sichern Gehoerte, die der Markt ueberhoert. Entscheide am Kriterium: Freiheit und Vielfalt sprechen fuer A, Gleichheit der Stimme und Teilhabe fuer B.
+
 Weg A: Konventionelle Beteiligung setzt auf Wahl und Parteiarbeit. Sie bindet ueber Mandat und Organisation, wirkt dauerhaft und sichert Minderheitenschutz ueber Grundrechte und Gerichte. Staerke dieses Weges ist Verbindlichkeit und Bestand; Grenze ist die Ferne zum Alltag und die hohe Eintrittsschwelle fuer Junge.
 
 Weg B: Unkonventionelle Beteiligung setzt auf Demo, zivilen Ungehorsam und digitalen Protest. Sie mobilisiert schnell, erzeugt oeffentlichen Druck und senkt die Kosten des Mitmachens. Staerke dieses Weges ist Tempo und Breite; Grenze ist die fehlende Verbindlichkeit und die Spannung zu Recht und Minderheitenschutz.
@@ -134,9 +145,9 @@ Klausur-Satz: `Der Bürgerrat ergänzt die repräsentative Demokratie, kann sie 
 
 CHECK (drei Fragen mit Antworten):
 
-FRAGE: Welche zwei Achsen strukturieren die Formen politischer Partizipation? | ANTWORT: Konventionell gegen unkonventionell sowie legal gegen illegal; illegale Gewalt ist in jedem Fall ausgeschlossen.
-FRAGE: Welche drei Stufen fuehren in Deutschland zum Volksentscheid? | ANTWORT: Volksinitiative, Volksbegehren mit Unterschriften und Volksentscheid mit Zustimmung an der Urne.
-FRAGE: Was ist das Hauptargument gegen direkte Demokratie? | ANTWORT: Der fehlende Minderheitenschutz: Eine Mehrheit könnte Grundrechte einer Minderheit ueberstimmen.
+- FRAGE: Welche zwei Achsen strukturieren die Formen politischer Partizipation? | ANTWORT: Konventionell gegen unkonventionell sowie legal gegen illegal; illegale Gewalt ist in jedem Fall ausgeschlossen.
+- FRAGE: Welche drei Stufen fuehren in Deutschland zum Volksentscheid? | ANTWORT: Volksinitiative, Volksbegehren mit Unterschriften und Volksentscheid mit Zustimmung an der Urne.
+- FRAGE: Was ist das Hauptargument gegen direkte Demokratie? | ANTWORT: Der fehlende Minderheitenschutz: Eine Mehrheit könnte Grundrechte einer Minderheit ueberstimmen.
 
 Klausur-Satz: `Direkte Demokratie kann die repräsentative Demokratie ergänzen, doch ihr fehlt der eingebaute Minderheitenschutz.`
 
@@ -157,6 +168,7 @@ SITUATION: Die Stadt will einen Buergerrat zum Thema Verkehr einrichten. Ein Tei
 AUFGABE (AFB III): Verfasse eine zusammenhaengende Darstellung von etwa 150 Woertern mit Kriterium, Anwendung und Urteil.
 RUBRIC (30 XP): These mit Kriterium Teilhabe und Minderheitenschutz (5 XP) | Darstellung von konventioneller und unkonventioneller Form (10 XP) | Anwendung auf Buergerat mit Verbindlichkeit und Repraesentation (10 XP) | Fazit mit Fachbegriffen und Klausur-Satz (5 XP).
 
+Klausur-Satz: `Die Partizipationsklausur trennt erst Form, Legalitaet und soziale Traegerschaft, bevor sie Krise oder Wandel diagnostiziert.`
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Was der Krisenstab lernt
 
 TAKEAWAY (Kernbotschaft in einem Kasten):
@@ -166,3 +178,5 @@ Takeaway-Satz: `Stimme bindet, Protest bewegt: Erst beide zusammen tragen Demokr
 REFLEXION (zwei Fragen):
 1. Wann ueberzeugt Weg A mit Wahl und Verbindlichkeit staerker, und wann verlangt der Fall Weg B mit Demo und digitalem Druck? Nenne ein Abgrenzungsmerkmal.
 2. Pruefe deine Antwort an der Klausurnorm: Hast du Formen sauber nach verfasst und frei sortiert, beide Wege erwoegen und das Urteil an einem expliziten Kriterium begruendet?
+
+Klausur-Satz: `Demokratie stirbt nicht an leeren Urnen, sondern an fehlenden Bruecken zwischen Strasse, Netz und Parlament.`

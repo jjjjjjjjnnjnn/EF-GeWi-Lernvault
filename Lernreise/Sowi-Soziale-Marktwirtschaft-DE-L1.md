@@ -22,7 +22,7 @@ version: Lesson-v3
 
 > EPISODE 23 — Akt I-II — Apfelmarkt und Mietendeckel — Auftrag von Ewigkeitsklausel-Archivar Otto Weiss: Angriff auf den Tresor der Ewigkeitsklausel.
 
-HOOK (Stadtrats-Krise, lies zuerst): EPISODE 23 — Akt I-II — Apfelmarkt und Mietendeckel — Stadt Tycoon City ruft dich in den Krisenstab. Ewigkeitsklausel-Archivar Otto Weiss stuermt mit einer Eilmeldung ins Buero: Angriff auf den Tresor der Ewigkeitsklausel — und morgen entscheidet der Stadtrat. Der Markt schreit, die Warteschlange waechst, die Kasse zittert: Ohne deine Analyse kippt die Stadt vom Apfelparadies in den Schwarzmarkt. Dein Auftrag in dieser Episode: Uebersetze die Strassenszene in das heutige Thema Soziale Marktwirtschaft. Sammle Belege, stelle den Sandkasten [markt-sim] scharf und liefere dem Rat eine Klausur-Antwort, die einer Pruefungskommission standhaelt. Erste Spur: TARGET: Stellt im Sandkasten Angebot und Nachfrage so ein, dass der Gleichgewichtspreis zwischen 8 und 12 Euro liegt, die gehandelte Menge mindestens 100 Einheiten erreicht und ein Probe-Hoechstpreis von 6 Euro als bindend mit Warteschlange entlarvt wird. Wer den Mechanismus versteht, rettet den Haushalt — und vielleicht die Wahl. Der Countdown laeuft, das Radio berichtet live, die Opposition wartet nur auf deinen Fehler: Oeffne die Ziele, schnapp dir die Begriffe und beweise, dass Tycoon City regierbar bleibt.
+HOOK (Stadtrats-Krise, lies zuerst): EPISODE 23 — Akt I-II — Apfelmarkt und Mietendeckel — Stadt Tycoon City ruft dich in den Krisenstab. Ewigkeitsklausel-Archivar Otto Weiss stuermt mit einer Eilmeldung ins Buero: Angriff auf den Tresor der Ewigkeitsklausel — und morgen entscheidet der Stadtrat. Realer Fall: In der Waehrungsreformnacht 1948 hob Erhard die meisten Preisvorschriften auf - ueber Nacht füllten sich die Schaufenster, fuellten hier heisst: wurden wieder voll. Der Markt rannte, der Staat gab den Rahmen. Das Gegenstueck erlebte der Mietendeckel 2021 vor dem Verfassungsgericht: Netze knuepfen ja, Preise diktieren nein. Soziale Marktwirtschaft heisst Markt fuer Effizienz, Soziales als Netz, Staat als Schiedsrichter. Erste Spur: TARGET: Stellt im Sandkasten Angebot und Nachfrage so ein, dass der Gleichgewichtspreis zwischen 8 und 12 Euro liegt, die gehandelte Menge mindestens 100 Einheiten erreicht und ein Probe-Hoechstpreis von 6 Euro als bindend mit Warteschlange entlarvt wird. Oeffne die Ziele, schnapp dir die Begriffe und beweise, dass Tycoon City regierbar bleibt.
 
 ZIELE (drei messbare Ziele dieser Lektion):
 
@@ -48,11 +48,19 @@ PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
 ### Fachbegriffe & Definitionen
 
-- **Wettbewerb:** Rivalitaet vieler Anbieter um Kunden. Er zwingt zu **niedrigen Preisen, hoher Qualitaet und Innovation**. Voraussetzung sind offener Marktzutritt und Kartellverbot.
-- **Ordnungsrahmen (Ordnungspolitik):** Die staatlich gesetzten Spielregeln — **Eigentumsordnung, Wettbewerbsrecht, Vertragsfreiheit, stabile Waehrung**. Der Staat bestimmt das Spielfeld, nicht das Spielergebnis.
-- **Preismechanismus:** Die Lenkungsfunktion des Preises. Ein Angebotsueberschuss drueckt den Preis nach unten, ein Nachfragemangel bei knappem Angebot treibt den Preis nach oben, bis sich Angebot und Nachfrage ausgleichen.
-- **Tarifautonomie:** Das Grundrecht, dass **Gewerkschaften und Arbeitgeber** Loehne und Arbeitsbedingungen ohne Staat aushandeln. Geschuetzt durch Art. 9 Abs. 3 GG.
-- **Sozialstaatlicher Ausgleich:** Staatliche Umverteilung durch **Steuern, Transfers, Sozialversicherung und Mindeststandards**. Er sichert Teilhabe, wo Markteinkommen nicht reichen.
+- **Wettbewerb**: Wettbewerb zwingt Anbieter zu Qualitaet und guenstigen Preisen. Er belohnt Innovation und bestraft Truägheit - Traegheit heisst hier Langsamkeit. Ohne Wettbewerb entstehen Monopole mit Machtpreisen. Mechanismus: Vergleichsdruck laesst Uebergewinne schmelzen; Kartelle schalten genau diesen Druck ab. Klausur-Tipp: Verbinde Wettbewerb immer mit Machtbegrenzung.
+- **Preismechanismus**: Preise signalisieren Knappheit und lenken Gueter zum hoechsten Nutzen. Steigende Preise rufen Angebot, fallende Preise rufen Nachfrage. Der Staat laesst dieses Signal grundsaetzlich laufen. Mechanismus: Stoerungen korrigieren sich ueber Mengenreaktionen, solange kein Fixpreis blockiert. Klausur-Tipp: Nenne Signal-, Allokations- und Raeumungsfunktion.
+- **Sozialprinzip**: Der Staat sichert Existenzen ueber Versicherung, Umverteilung und Mindeststandards. Schutz endet an der Verhaeltnismaessigkeit. So bleibt Freiheit die Regel, Hilfe die Ausnahme mit Begruendung. Mechanismus: Beitraege und Steuern finanzieren Netze; jede Leistung braucht Traeger und Massstab. Klausur-Tipp: Jede Schutzmassnahme mit Finanzierer plus Kriterium nennen.
+- **Ordnungsrahmen**: Der Staat setzt Regeln statt Preise: Kartellverbot, Eigentum, Vertragsfreiheit. Innerhalb des Rahmens entscheidet der Markt frei. Der Rahmen ist dauerhaft, Eingriffe sind befristet. Mechanismus: Regeln veraendern Anreize fuer alle gleichzeitig und planbar. Klausur-Tipp: Ordne jede Massnahme erst Rahmen oder Eingriff zu.
+- **Tarifautonomie**: Loehne handeln Gewerkschaften und Verbaende ohne Staat aus. Der Mindestlohn bleibt die begruendungspflichtige Ausnahme. Tarifvertraege verhindern Lohnunterbietung. Mechanismus: Flaechentarife standardisieren Branchenloehne und entlasten den Staat. Klausur-Tipp: Deute Mindestlohn als Eingriff in genau diese Autonomie.
+
+
+
+
+
+
+
+
 
 ### Wirkungsgefüge / Modell
 
@@ -120,6 +128,8 @@ VERGLEICH (Wahl des Analysewegs, Weg A gegen Weg B):
 
 VERGLEICH: Triff zuerst die Wahl des Analysewegs — (A) Vertrauen in die Selbststeuerung des Marktes oder (B) ordnungspolitische Steuerung mit sozialem Ausgleich — und loese dann die Aufgabe.
 
+DUELL Weg A (freier Markt) gegen Weg B (Staat greift ein): Weg A vertraut dem freien Markt: Wettbewerb und Preise maximieren Wohlstand, der Staat bleibt Schiedsrichter. Weg B baut den Sozialstaat aus: Mindestlohn, Umverteilung und Schutzgesetze sichern Wuerde, daempfen aber Anreize. Entscheide am Kriterium: Wohlstand und Effizienz sprechen fuer A, Gerechtigkeit und Existenzschutz fuer B.
+
 Weg A — Reine Marktsteuerung: Der Preis lenkt Angebot und Nachfrage ohne Staat. Staerken sind Effizienz, Innovation und schnelle Anpassung. Grenzen sind soziale Haerten, Marktmacht und fehlender Schutz bei Krankheit oder Arbeitslosigkeit.
 
 Weg B — Ordnungspolitische Steuerung: Der Staat setzt den Rahmen aus Eigentum, Wettbewerb und Tarifautonomie und greift sozial korrigierend ein, etwa durch Mindestlohn, Mietrecht oder Transfers. Staerken sind Schutz und Teilhabe. Risiken sind verzerte Preissignale, Rueckzug der Anbieter und Konflikte mit der Tarifautonomie.
@@ -137,9 +147,9 @@ Klausur-Satz: `Der Mindestlohn schützt vor Armut trotz Arbeit, greift aber in P
 
 CHECK (drei Fragen mit Antworten):
 
-FRAGE: Nenne die zwei Säulen der Sozialen Marktwirtschaft und die Staatsrolle in einem Satz. | ANTWORT: Wettbewerb (Effizienz) + sozialer Ausgleich (Gerechtigkeit); Staat als Schiedsrichter und Netz, nicht Spieler.
-FRAGE: Was bedeutet Tarifautonomie in einem Satz? | ANTWORT: Löhne werden von Gewerkschaften und Arbeitgebern ohne Staat ausgehandelt.
-FRAGE: Welcher Operator passt: "… die Vor- und Nachteile des Mindestlohns …"? | ANTWORT: erörtern (Abwägung mit kriteriengestütztem Urteil).
+- FRAGE: Nenne die zwei Säulen der Sozialen Marktwirtschaft und die Staatsrolle in einem Satz. | ANTWORT: Wettbewerb (Effizienz) + sozialer Ausgleich (Gerechtigkeit); Staat als Schiedsrichter und Netz, nicht Spieler.
+- FRAGE: Was bedeutet Tarifautonomie in einem Satz? | ANTWORT: Löhne werden von Gewerkschaften und Arbeitgebern ohne Staat ausgehandelt.
+- FRAGE: Welcher Operator passt: "… die Vor- und Nachteile des Mindestlohns …"? | ANTWORT: erörtern (Abwägung mit kriteriengestütztem Urteil).
 
 Klausur-Satz: `Der Preismechanismus gleicht Angebot und Nachfrage über den Preis aus.`
 
@@ -160,6 +170,7 @@ SITUATION: Debatte: Soll der Mindestlohn auf 15 Euro steigen Halte ein 2-Minuten
 AUFGABE (AFB III): Verfasse eine zusammenhaengende Darstellung von etwa 150 Woertern mit Kriterium, Anwendung und Urteil.
 RUBRIC (30 XP): These in Satz 1 (darstellen) | zwei Fachbegriffe (z. B. Tarifautonomie, Kaufkraft, Wettbewerbsfähigkeit) | ein Beleg/Beispiel | Urteil mit Kriterium (beurteilen).
 
+Klausur-Satz: `Die Mindestlohnstellungnahme misst den Eingriff an Preislogik und Schutzziel und benennt mit der Tarifautonomie den institutionellen Preis des Schutzes.`
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Was der Krisenstab lernt
 
 TAKEAWAY (Kernbotschaft in einem Kasten):
@@ -169,3 +180,5 @@ Takeaway-Satz: `Die Soziale Marktwirtschaft verbindet freien Wettbewerb mit sozi
 REFLEXION (zwei Fragen):
 1. Kannst du an Mietendeckel und Mindestlohn erklaeren, wann der Staat als Schiedsrichter handelt und wann er unzulaessig zum Spieler wird?
 2. Pruefe deine Klausur-Reife: Nutzt du Wettbewerb, Ordnungsrahmen, Preismechanismus, Tarifautonomie und sozialen Ausgleich praezise und schliesst du mit einem kriteriengestuetzten Urteil?
+
+Klausur-Satz: `Wettbewerb schafft Wohlstand, das Netz faengt auf: Der Staat ist Schiedsrichter, nicht Spieler - das ist der ganze Unterschied.`

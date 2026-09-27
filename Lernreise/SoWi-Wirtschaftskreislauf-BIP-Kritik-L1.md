@@ -22,7 +22,7 @@ version: Lesson-v3
 
 > EPISODE 42｜Akt I-II — Apfelmarkt und Mietendeckel｜召集人 Radiomoderatorin Kim Neuhaus：Radio-Duell der Spitzenkandidaten。
 
-HOOK 市长危机（先读剧情，再进 ZIELE）：【本集战役 EP42｜Akt I-II — Apfelmarkt und Mietendeckel｜虚拟城邦 Tycoon City 告急】市长办公室深夜灯火通明，Radiomoderatorin Kim Neuhaus 冲进来报告：Radio-Duell der Spitzenkandidaten，而明天市议会就要投票。集市在喊、长队在排、国库在抖：苹果集市价格战一路烧到租金黑市，再烧到基尼天平与劳资谈判桌，本集正是“Wirtschaftskreislauf und BIP-Kritik”的现实引爆点。你的身份是市长直属经济改革规划委员：把街头危机翻译成考点，用沙盘 [markt-sim] 拿出可验证的数值方案，再交出一份 Klausur 满分答卷稳住议会。通关线索：TARGET: Stellt im Sandkasten Angebot und Nachfrage so ein, dass der Gleichgewichtspreis zwischen 8 und 12 Euro liegt, die gehandelte Menge mindestens 100 Einheiten erreicht und ein Probe-Hoechstpreis von 6 Euro als bindend mit Warteschlange entlarvt wird. 上一集的结尾就是这一集的悬念——黑市账本、税改天平、劳资天平、选票天平，四座天平有一座倒了，城邦就停摆。电台正在直播，反对派等着挑错：先读 ZIELE，再啃术语，把传导机制画成你的作战地图。DE-Briefing: Episode 42 — Radiomoderatorin Kim Neuhaus meldet Radio-Duell der Spitzenkandidaten; der Stadtrat entscheidet morgen. Rette Tycoon City mit Analyse, Sandkasten und Klausur-Antwort zum Thema Wirtschaftskreislauf und BIP-Kritik.
+HOOK 市长危机（先读剧情，再进 ZIELE）：【本集战役 EP42｜Akt I-II — Apfelmarkt und Mietendeckel｜虚拟城邦 Tycoon City 告急】市长办公室深夜灯火通明，Radiomoderatorin Kim Neuhaus 冲进来报告：Radio-Duell der Spitzenkandidaten，而明天市议会就要投票。你的身份不变：市长直属经济改革规划委员。真实盲区切入：疫情年GDP掉了、护工累倒、家长辅导作业到半夜——账面只记了掉的部分，没记扛的部分。家务照护志愿全是“隐形GDP”，污染和拥堵也没扣账。BIP是温度计不是体检表：发烧看得出，亚健康看不出。通关线索：TARGET: Stellt im Sandkasten Angebot und Nachfrage so ein, dass der Gleichgewichtspreis zwischen 8 und 12 Euro liegt, die gehandelte Menge mindestens 100 Einheiten erreicht und ein Probe-Hoechstpreis von 6 Euro als bindend mit Warteschlange entlarvt wird. 先读 ZIELE，再啃术语，把传导机制画成你的作战地图。DE-Briefing: Episode 42 — Radiomoderatorin Kim Neuhaus meldet Radio-Duell der Spitzenkandidaten; der Stadtrat entscheidet morgen. Rette Tycoon City mit Analyse, Sandkasten und Klausur-Antwort zum Thema Wirtschaftskreislauf und BIP-Kritik.
 
 ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
@@ -38,11 +38,19 @@ PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→�
 
 中文在上，德语在下：
 
-- 经济循环 — Wirtschaftskreislauf：家庭与企业之间货币流与实物流循环流动的模型，erweitert mit Staat, Banken und Ausland。
-- 货币流 vs. 实物流 — Geldstrom vs. Gueterstrom：货币为购买支付，方向与商品劳务流相反，是画图得分关键。
-- 国内生产总值 — BIP (Bruttoinlandsprodukt)：一国一年内生产的最终产品与服务的市场价值总和。
-- 外部性 — Externalitaet：市场价格未包含的副作用，如环境污染， gruene Bilanz will sie einpreisen。
-- 福利与发展指数 — NWI und HDI：NWI (Nationaler Wohlfahrtsindex) 修正环境与分配，HDI misst Bildung, Gesundheit und Einkommen statt nur Wachstum。
+- **Wirtschaftskreislauf**（经济循环）：家庭出人收钱、企业出货收钱，钱货对流；你的支出就是别人的收入。 Haushalte liefern Arbeit und erhalten Lohn, Unternehmen liefern Gueter und erhalten Geld. Geld und Gueter kreisen gegenlaeufig. Staat und Ausland erweitern den Kreis. Mechanismus: Jede Ausgabe ist jemandes Einnahme - der Kreislauf schliesst sich buchhalterisch immer. Klausur-Tipp: Zeichne Gegenstroeme von Geld und Guetern.
+- **BIP**（国内生产总值）：BIP量一年境内市场产出：消费投资政府加净出口；多不等于好。 Das BIP misst die Marktproduktion eines Jahres im Inland. Es zaehlt Verwendung als Konsum, Investition, Staat plus Aussenbeitrag. Wachstum heisst mehr, nicht besser. Mechanismus: Verwendungsrechnung summiert Endnachfrage; Vorleistungen werden herausgerechnet. Klausur-Tipp: Definiere ueber Inland plus Markt plus Jahr.
+- **BIP-Kritik**（GDP批判）：免费照护、环境、分配三不进账；救灾修房还涨GDP，幸福健康零记录。 Unbezahltes, Umwelt und Verteilung bleiben aussen vor. Katastrophen heben das BIP durch Reparaturen. Glueck und Gesundheit misst es gar nicht. Mechanismus: Marktpreise filtern alles ohne Preis heraus plus zaehlen Schaeden als Leistung. Klausur-Tipp: Nenne je ein Beispiel unbezahlte Arbeit, Umwelt und Verteilung.
+- **Staat im Kreislauf**（循环中的国家）：国家收税发钱买东西：危机赤字托需求，今天的债是明天的税。 Der Staat nimmt Steuern, zahlt Transfers und kauft Gueter. In der Krise stabilisiert er Nachfrage ueber Defizite. Schulden heute sind Steuern oder Kuerzungen morgen. Mechanismus: Antizyklik glaettet Schwankungen, prozyklische Kuerzung verstaerkt sie. Klausur-Tipp: Deute Defizite als Stabilisierung mit Zukunftspreis.
+- **Aussenbeitrag**（外贸净额）：出口减进口：顺差是攒外国欠条，也攒依赖。 Exporte minus Importe zeigen Verflechtung mit der Welt. Ueberschuesse bedeuten Forderungen ans Ausland. Abhaengigkeit von Maerkten und Rohstoffen waechst mit. Mechanismus: Wechselkurse und Weltkonjunktur schlagen direkt auf Jobs und Preise durch. Klausur-Tipp: Verbinde Ueberschuss mit Abhaengigkeit.
+
+
+
+
+
+
+
+
 
 Klausur-Satz: `Geldstroeme und Gueterstroeme laufen im Kreislauf in entgegengesetzter Richtung zwischen Haushalten und Unternehmen.`
 
@@ -70,6 +78,12 @@ ENTDECKEN（1概念 + 1文字图解）：
 
    BIP = C + I + G + (Ex - Im)  [Ausgabenansatz in einem Satz]
 ```
+Kausalkette: Geld gegen Gueter zwischen Haushalt und Firma, Staat glaettet ueber Steuern und Transfers, Aussenhandel oeffnet den Kreis, BIP summiert Endnachfrage, Kritik misst die blinden Flecken. Zwei Schritte in der Klausur: erst Kreis zeichnen und rechnen, dann Grenzen des Thermometers benennen.
+
+因果链：家庭企业钱货对流→国家征税转移平滑→外贸连通世界→BIP加总终端需求→批判三刀（免费不计、污染不扣、分配不问）。做题两步：先画圈算账，再拿批判量体温表的边界。
+
+Verwendungsformel: $Y = C + I + G + (X - M)$ mit $Y$ als BIP; Kritik: unbezahlte Pflege $H$ und Schaeden $D$ fehlen, $Y$ steigt sogar mit $D$.
+
 
 Klausur-Satz: `Im erweiterten Kreislauf ergaenzen Staat, Banken und Ausland den Tausch zwischen Haushalten und Unternehmen um Umverteilung, Finanzierung und Aussenhandel.`
 
@@ -106,6 +120,10 @@ VERGLEICH辨别实验（双向辨析：增长眼 vs. 福利眼）：
 
 VERGLEICH: Waehle erst das Verfahren — 【选程序】先判断题目要的是 (i) Kreislauf-Verfahren（画五部门 + 双向箭头 + 答 Geld/Gueterstroeme 方向）还是 (ii) BIP-Kritik-Verfahren（四点批判 + NWI/HDI 一句 + beurteilen 判断句）—— dann rechnen.
 
+DUELL Weg A (freier Markt) gegen Weg B (Staat greift ein): Weg A vertraut dem freien Kreislauf: Maerkte gleichen sich selbst aus, Sparen und Investieren finden Wege, der Staat haelt sich raus. Weg B stabilisiert per Eingriff: Defizite, Transfers und Investitionen federn Krisen ab. Entscheide am Kriterium: Effizienz und Eigenverantwortung sprechen fuer A, Stabilitaet und Schutz sprechen fuer B.
+
+对决 Weg A（自由市场）vs Weg B（国家干预）：Weg A信循环自愈：市场自己找平，国家别伸手。Weg B信逆周期托底：赤字转移投资熨危机。判据：效率责任站A，稳定保护站B。
+
 AUFGABE A：Skizzieren Sie den erweiterten Kreislauf und ordnen Sie Steuern, Ersparnis und Exporte je einem Sektor zu.
 AUFGABE B：Beurteilen Sie die Aussage: Ein steigendes BIP bedeutet automatisch mehr Wohlfahrt.
 
@@ -119,9 +137,9 @@ Klausur-Satz: `Wachstum des BIP ist ohne Verteilungs-, Umwelt- und Sozialindikat
 
 CHECK检索默写（自测 3 题，与答案配对）：
 
-FRAGE: Nennen Sie die fuenf Sektoren und die zwei Stroeme mit Richtung. | ANTWORT: Haushalte, Unternehmen, Staat, Banken, Ausland; Geldstrom im Uhrzeigersinn, Gueterstrom entgegengesetzt.
-FRAGE: Nennen Sie die drei BIP-Berechnungsarten in einem Satz. | ANTWORT: Entstehung summiert Wertschoepfung, Verwendung summiert Konsum plus Investitionen plus Staat plus Aussenbeitrag, Verteilung summiert Einkommen.
-FRAGE: Nennen Sie vier Kritikpunkte am BIP plus Alternative. | ANTWORT: unbezahlte Arbeit fehlt, Umweltschaeden ohne Abzug, Verteilung blind, schaedliche Umsaetze als Plus; Korrektur durch NWI und HDI.
+- FRAGE: Nennen Sie die fuenf Sektoren und die zwei Stroeme mit Richtung. | ANTWORT: Haushalte, Unternehmen, Staat, Banken, Ausland; Geldstrom im Uhrzeigersinn, Gueterstrom entgegengesetzt.
+- FRAGE: Nennen Sie die drei BIP-Berechnungsarten in einem Satz. | ANTWORT: Entstehung summiert Wertschoepfung, Verwendung summiert Konsum plus Investitionen plus Staat plus Aussenbeitrag, Verteilung summiert Einkommen.
+- FRAGE: Nennen Sie vier Kritikpunkte am BIP plus Alternative. | ANTWORT: unbezahlte Arbeit fehlt, Umweltschaeden ohne Abzug, Verteilung blind, schaedliche Umsaetze als Plus; Korrektur durch NWI und HDI.
 
 Klausur-Satz: `Das BIP misst Marktwerte eines Jahres, nicht Nachhaltigkeit oder Gerechtigkeit.`
 
@@ -143,6 +161,7 @@ ROLLE: Du bist EF-Schuelerin und schreibst einen Leserbrief an die Lokalzeitung.
 SITUATION: Die Stadt feiert ein gestiegenes regionales BIP nach einem Sturmjahr mit viel Wiederaufbau, waehrend Parks zerstoert und viele ehrenamtliche Helfer erschoepft sind. Beurteilen Sie in einer zusammenhaengenden Darstellung (ca. 150 Woerter) die Lage mit dem erweiterten Kreislauf, der BIP-Kritik in vier Punkten und NWI/HDI.
 RUBRIC (30 XP): Kreislauf mit Sektorbezug korrekt (5 XP) | Drei Berechnungsarten oder Formel C + I + G + (Ex - Im) genannt (5 XP) | Vier Kritikpunkte vollstaendig (10 XP) | NWI/HDI plus begruendetes Urteil Wachstum vs. Wohlfahrt (10 XP).
 
+Klausur-Satz: `Die Kreislaufklausur rechnet erst die Verwendung sauber und begrenzt dann das Ergebnis mit drei blinden Flecken.`
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Was der Krisenstab lernt
 
 TAKEAWAY 1盒（核心总结）：
@@ -153,3 +172,5 @@ Takeaway-Satz: `Fuenf Sektoren tauschen Geld gegen Gueter, das BIP misst nur Mar
 REFLEXION 2问：
 1. 过程自省：Welcher Schritt fiel schwerer — die Kreislauf-Skizze mit zwei Stromrichtungen (Schritt 4) oder die Trennung von Wachstum und Wohlfahrt (Schritt 5)?
 2. 元认知计划：Beim naechsten Mal zeichne ich zuerst die zwei Gegenpfeile und pruefe danach jeden BIP-Anstieg mit den vier Kritikpunkten.
+
+Klausur-Satz: `Das BIP zaehlt, was Preise haben: Wer das Unsichtbare mitdenkt, regiert mit Thermometer und Kompass.`

@@ -22,7 +22,7 @@ version: Lesson-v3
 
 > EPISODE 39 — Akt IV-V — Tarifarena und Demokratiewerkstatt — Auftrag von Ordnungsdezernent Paul Gerhardt: Ordnungsamt-Razzia gegen Gluehwein-Schwarzmarkt.
 
-HOOK (Stadtrats-Krise, lies zuerst): EPISODE 39 — Akt IV-V — Tarifarena und Demokratiewerkstatt — Stadt Tycoon City ruft dich in den Krisenstab. Ordnungsdezernent Paul Gerhardt stuermt mit einer Eilmeldung ins Buero: Ordnungsamt-Razzia gegen Gluehwein-Schwarzmarkt — und morgen entscheidet der Stadtrat. Der Markt schreit, die Warteschlange waechst, die Kasse zittert: Ohne deine Analyse kippt die Stadt vom Apfelparadies in den Schwarzmarkt. Dein Auftrag in dieser Episode: Uebersetze die Strassenszene in das heutige Thema Wehrhafte Demokratie und Extremismus. Sammle Belege, stelle den Sandkasten [balance-board] scharf und liefere dem Rat eine Klausur-Antwort, die einer Pruefungskommission standhaelt. Erste Spur: TARGET: Bringt auf dem Verhandlungsbrett beide Waagschalen in die Balance — Bedingung: Zustimmung beider Baenke, Loesung mit Kompromisslinie, Ergebnisprotokoll mit zwei Begruendungen je Seite. Wer den Mechanismus versteht, rettet den Haushalt — und vielleicht die Wahl. Der Countdown laeuft, das Radio berichtet live, die Opposition wartet nur auf deinen Fehler: Oeffne die Ziele, schnapp dir die Begriffe und beweise, dass Tycoon City regierbar bleibt.
+HOOK (Stadtrats-Krise, lies zuerst): EPISODE 39 — Akt IV-V — Tarifarena und Demokratiewerkstatt — Stadt Tycoon City ruft dich in den Krisenstab. Ordnungsdezernent Paul Gerhardt stuermt mit einer Eilmeldung ins Buero: Ordnungsamt-Razzia gegen Gluehwein-Schwarzmarkt — und morgen entscheidet der Stadtrat. Realer Fall: Die NPD gilt seit 2017 als verfassungsfeindlich, aber zu klein fuer ein Verbot - verbieten wollen und nicht duerfen. Parallel stuft der Verfassungsschutz einen Landesverband als Verdachtsfall ein: Die einen rufen Verfolgung, das Ministerium ruft Schutz. Darf Demokratie gegen Feinde intolerant sein? Art. 21 Abs. 2, Vereinsrecht und Beamtentreue sind drei Schutzschilde mit je eigenem Preis. Erste Spur: TARGET: Bringt auf dem Verhandlungsbrett beide Waagschalen in die Balance — Bedingung: Zustimmung beider Baenke, Loesung mit Kompromisslinie, Ergebnisprotokoll mit zwei Begruendungen je Seite. Oeffne die Ziele, schnapp dir die Begriffe und beweise, dass Tycoon City regierbar bleibt.
 
 ZIELE (drei messbare Ziele dieser Lektion):
 
@@ -34,6 +34,7 @@ ZIELE (drei messbare Ziele dieser Lektion):
 
 Eine Partei mit fuenf Prozent verbreitet voelkische Parolen und stellt Wahlen und Minderheitenrechte infrage. Die einen rufen: verbieten. Die anderen warnen: Wer verbietet, macht sie zum Opfer und trifft die Opposition. Darf die Demokratie ihre Feinde ausschliessen, um frei zu bleiben? In dieser Lektion lernst du zwei Wege der Antwort: Weg A vertraut dem Toleranzprinzip mit Offenheit und Streit, Weg B dem wehrhaften Schutz mit Entzug missbrauchter Freiheitsrechte.
 
+Klausur-Satz: `Die Demokratie darf sich gegen ihre Abschaffung wehren - Beobachtung, Verbot und Verhaeltnismaessigkeit staffeln diesen Schutz.`
 ## Schritt 2 — entdecken: Werkzeugkoffer von Ordnungsdezernent Paul Gerhardt: 5 Begriffe scharf stellen
 
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
@@ -44,11 +45,19 @@ Wer darf verbieten, wer darf beobachten? Ohne Huerden wird Schutz zur Willkuer. 
 
 ### Fachbegriffe & Definitionen
 
-- **FdGO:** Der unantastbare Kern aus Wuerde, Demokratie und Rechtsstaat. Sie markiert das Schutzgut und die Grenze zu Feinden der Ordnung.
-- **Radikalismus:** Die scharfe Grundkritik innerhalb des Systems. Sie bleibt bei legalen Mitteln und ist durch Meinungsfreiheit geschuetzt.
-- **Extremismus:** Der Angriff auf das System selbst. Er bekaempft die Grundordnung und rechtfertigt staatliche Abwehr.
-- **Parteiverbot:** Das schaerfste Schwert nach Art. 21 Abs. 2. Nur das Bundesverfassungsgericht darf verbieten, und es verlangt Verfassungswidrigkeit plus reale Durchsetzungschance.
-- **Verfassungsschutz:** Die Fruehwarnung durch Beobachten und Berichten. Sie warnt praeventiv und trifft keine Verbotsentscheidung.
+- **Wehrhafte Demokratie**: Die Ordnung darf sich gegen ihre Abschaffung wehren. Freiheit endet dort, wo sie zur Beseitigung der Freiheit missbraucht wird. Schutz und Offenheit stehen in Dauerpannung - Spannung heisst hier Konflikt. Mechanismus: Fruehwarnung, Beobachtung, Verbot - die Leiter steigt nur bei kaempferischer Feindschaft. Klausur-Tipp: Definiere ueber das Paradoxon Toleranz gegen Intoleranz.
+- **Parteiverbot Art. 21 Abs. 2**: Nur Karlsruhe darf verbieten, nur bei aktiv kaempferischer Haltung. NPD 2017 scheiterte an der Relevanzhuede. Das Schaerfste bleibt Ultima Ratio. Mechanismus: Potenzialitaet plus Aktivitaet plus Relevanz - erst das Trio rechtfertigt den Griff. Klausur-Tipp: Nenne Monopol plus Dreierhuede.
+- **Meinungsfreiheit Schranken**: Art. 5 schuetzt Meinung weit, Abs. 2 begrenzt ueber allgemeine Gesetze, Jugendschutz und Ehre. Volksverhetzung und Holocaustleugnung sind strafbar. Gerichte waegen Fall fuer Fall. Mechanismus: Schutzbereich oeffnen, Schranke pruefen, Verhaeltnismaessigkeit messen. Klausur-Tipp: Lege die Drei-Stufen-Schablone ueber jede Aeusserung.
+- **Verfassungsschutz**: Die Aemter sammeln Informationen ueber extremistische Bestrebungen. Sie duerfen beobachten, nicht verbieten. Einstufungen als Verdachtsfall ermoeglichen nachrichtendienstliche Mittel. Mechanismus: Beobachten plus Berichten plus Warnen - Transparenz ist die Hauptwaffe. Klausur-Tipp: Trenne Beobachtung von Verbot sauber.
+- **Zivilcourage / Zivilgesellschaft**: Demokratie lebt von Buergen, die widersprechen, waehlen und mitmachen. Verbote allein retten keine Werte. Bildung und Beteiligung bauen die innere Mauer. Mechanismus: Alltagswiderspruch plus Engagement entziehen Extremisten Resonanz. Klausur-Tipp: Ergaenze jeden Staatschutz um Gesellschaftsschutz.
+
+
+
+
+
+
+
+
 
 ### Wirkungsgefuege / Modell
 
@@ -116,6 +125,8 @@ VERGLEICH (Wahl des Weges, Weg A gegen Weg B):
 
 VERGLEICH: Waehle zuerst bewusst Weg A (Toleranzprinzip) oder Weg B (wehrhafter Schutz) und begruende dann dein Urteil am passenden Kriterium.
 
+DUELL Weg A (freier Markt) gegen Weg B (Staat greift ein): Weg A vertraut der freien Auseinandersetzung: Offene Debatte, Bildung und Zivilcourage besiegen Extremismus ohne Verbote. Weg B greift wehrhaft ein: Beobachtung, Verbote und Treuepflichten schuetzen die Ordnung vor ihren Feinden. Entscheide am Kriterium: Offenheit und Meinungsfreiheit sprechen fuer A, Bestandsschutz der Demokratie spricht fuer B.
+
 Weg A: Das Toleranzprinzip setzt auf Meinungsfreiheit und Offenheit. Streit wird ausgehalten, Gegenrede staerkt die Demokratie, politische Bildung immunisiert langfristig. Staerke dieses Weges ist Freiheit und Lernchance; Grenze ist die Gefahr, dass Feinde der Freiheit die Offenheit zum Umbau der Ordnung nutzen.
 
 Weg B: Der wehrhafte Schutz setzt auf Parteiverbot und Entzug missbrauchter Freiheitsrechte. Gericht und Beobachtung stoppen den Angriff, bevor die Ordnung kippt. Staerke dieses Weges ist Bestandsschutz; Grenze ist der Eingriff in Opposition und der moegliche Opfer-Effekt durch ein Verbot.
@@ -134,9 +145,9 @@ Klausur-Satz: `Nur das Bundesverfassungsgericht darf ein Parteiverbot verhängen
 
 CHECK (drei Fragen mit Antworten):
 
-FRAGE: Wie unterscheidet sich Radikalismus von Extremismus? | ANTWORT: Radikalismus fordert grundlegende Veraenderungen innerhalb der Verfassungsordnung und bleibt legal; Extremismus bekaempft die Grundordnung selbst und ist daher nicht geschuetzt.
-FRAGE: Welche drei Saeulen schuetzen die wehrhafte Demokratie? | ANTWORT: Parteiverbot nach Art. 21 Abs. 2 nur durch das Gericht, Beobachtung durch den Verfassungsschutz und politische Bildung.
-FRAGE: Warum lehnte das Bundesverfassungsgericht 2017 ein Verbot der NPD ab? | ANTWORT: Die Partei war zwar verfassungswidrig, doch es fehlte die Potenzialitaet als reale Chance, ihre Ziele durchzusetzen.
+- FRAGE: Wie unterscheidet sich Radikalismus von Extremismus? | ANTWORT: Radikalismus fordert grundlegende Veraenderungen innerhalb der Verfassungsordnung und bleibt legal; Extremismus bekaempft die Grundordnung selbst und ist daher nicht geschuetzt.
+- FRAGE: Welche drei Saeulen schuetzen die wehrhafte Demokratie? | ANTWORT: Parteiverbot nach Art. 21 Abs. 2 nur durch das Gericht, Beobachtung durch den Verfassungsschutz und politische Bildung.
+- FRAGE: Warum lehnte das Bundesverfassungsgericht 2017 ein Verbot der NPD ab? | ANTWORT: Die Partei war zwar verfassungswidrig, doch es fehlte die Potenzialitaet als reale Chance, ihre Ziele durchzusetzen.
 
 Klausur-Satz: `Verfassungswidrigkeit allein genügt nicht; erst die fehlende Potentialität macht das NPD-Verbot von 2017 verständlich.`
 
@@ -157,6 +168,7 @@ SITUATION: Die Partei erreicht in Umfragen fünf Prozent, verbreitet völkisch-n
 AUFGABE (AFB III): Verfasse eine zusammenhaengende Darstellung von etwa 150 Woertern mit Kriterium, Anwendung und Urteil.
 RUBRIC (30 XP): Benennung der Rechtslage mit Gericht und doppelter Huerde (6 XP) | Analyse der Gefahrenlage aus Programm und Agitation (8 XP) | Abwaegung mit Verhaeltnismaessigkeit und Oppositionsschutz (10 XP) | Kriteriengeleitetes Urteil mit klarer Empfehlung (6 XP).
 
+Klausur-Satz: `Die Demokratieschutzklausur staffelt Beobachtung, Verbot und Verhaeltnismaessigkeit und ergaenzt jeden Staatsgriff um die gesellschaftliche Antwort.`
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Was der Krisenstab lernt
 
 TAKEAWAY (Kernbotschaft in einem Kasten):
@@ -166,3 +178,5 @@ Takeaway-Satz: `Toleranz schützt Streit, Wehrhaftigkeit schützt Bestand: Freih
 REFLEXION (zwei Fragen):
 1. Wann ueberzeugt Weg A mit Toleranz und Offenheit staerker, und wann verlangt der Fall Weg B mit Verbot und Entzug missbrauchter Rechte? Nenne ein Abgrenzungsmerkmal.
 2. Pruefe deine Antwort an der Klausurnorm: Hast du Radikalismus und Extremismus sauber getrennt, beide Wege erwoegen und das Urteil an Verhaeltnismaessigkeit begruendet?
+
+Klausur-Satz: `Wehrhaft heisst nicht angsthaft: Die Demokratie schuetzt sich mit Verfahren, nicht mit Verboten als erstem Reflex.`

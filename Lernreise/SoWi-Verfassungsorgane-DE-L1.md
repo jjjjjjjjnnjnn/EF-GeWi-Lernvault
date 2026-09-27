@@ -22,7 +22,7 @@ version: Lesson-v3
 
 > EPISODE 37 — Akt IV-V — Tarifarena und Demokratiewerkstatt — Auftrag von Schulpflegschaftsvater Bekir Uslu: Elternabend-Eklat um Taschengeld-Inflation.
 
-HOOK (Stadtrats-Krise, lies zuerst): EPISODE 37 — Akt IV-V — Tarifarena und Demokratiewerkstatt — Stadt Tycoon City ruft dich in den Krisenstab. Schulpflegschaftsvater Bekir Uslu stuermt mit einer Eilmeldung ins Buero: Elternabend-Eklat um Taschengeld-Inflation — und morgen entscheidet der Stadtrat. Der Markt schreit, die Warteschlange waechst, die Kasse zittert: Ohne deine Analyse kippt die Stadt vom Apfelparadies in den Schwarzmarkt. Dein Auftrag in dieser Episode: Uebersetze die Strassenszene in das heutige Thema Verfassungsorgane. Sammle Belege, stelle den Sandkasten [balance-board] scharf und liefere dem Rat eine Klausur-Antwort, die einer Pruefungskommission standhaelt. Erste Spur: TARGET: Bringt auf dem Verhandlungsbrett beide Waagschalen in die Balance — Bedingung: Zustimmung beider Baenke, Loesung mit Kompromisslinie, Ergebnisprotokoll mit zwei Begruendungen je Seite. Wer den Mechanismus versteht, rettet den Haushalt — und vielleicht die Wahl. Der Countdown laeuft, das Radio berichtet live, die Opposition wartet nur auf deinen Fehler: Oeffne die Ziele, schnapp dir die Begriffe und beweise, dass Tycoon City regierbar bleibt.
+HOOK (Stadtrats-Krise, lies zuerst): EPISODE 37 — Akt IV-V — Tarifarena und Demokratiewerkstatt — Stadt Tycoon City ruft dich in den Krisenstab. Schulpflegschaftsvater Bekir Uslu stuermt mit einer Eilmeldung ins Buero: Elternabend-Eklat um Taschengeld-Inflation — und morgen entscheidet der Stadtrat. Realer Fall: Eine Kanzlerwahl braucht drei Gaenge, ein Gesetz scheitert an der Ausfertigungsverweigerung des Praesidenten, die Opposition schickt das frische Gesetz nach Karlsruhe. Mehrheit ist nicht Endstation. Fuenf Organe halten je einen Schluessel: Bundestag beschliesst, Bundesrat bremst, Regierung vollzieht, Praesident fertigt aus, Gericht prueft zuletzt - keiner oeffnet den Safe allein. Erste Spur: TARGET: Bringt auf dem Verhandlungsbrett beide Waagschalen in die Balance — Bedingung: Zustimmung beider Baenke, Loesung mit Kompromisslinie, Ergebnisprotokoll mit zwei Begruendungen je Seite. Oeffne die Ziele, schnapp dir die Begriffe und beweise, dass Tycoon City regierbar bleibt.
 
 ZIELE (drei messbare Ziele dieser Lektion):
 
@@ -34,6 +34,7 @@ ZIELE (drei messbare Ziele dieser Lektion):
 
 Der Bundestag waechst nach jeder Wahl, eine Reform soll die Sitze deckeln, doch Direktkandidaten bangen um ihren Sitz trotz Sieg im Wahlkreis. In Karlsruhe wird geprueft, im Bundesrat wird gebremst, die Regierung will handeln. Wer sichert hier die Demokratie: die handlungsfaehige Mehrheit im Parlament oder die bremsende Kontrolle durch Laender und Gericht? In dieser Lektion lernst du zwei Wege der Antwort: Weg A setzt auf parlamentarische Fuehrung, Weg B auf foederative Kontrolle.
 
+Klausur-Satz: `Fuenf Organe teilen sich einen Schluesselbund: Beschluss, Bremse, Vollzug, Ausfertigung und Kontrolle - keines regiert allein.`
 ## Schritt 2 — entdecken: Werkzeugkoffer von Schulpflegschaftsvater Bekir Uslu: 5 Begriffe scharf stellen
 
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
@@ -44,11 +45,19 @@ Wer waehlt wen, wer prueft was? Bundestag gegen Bundesrat, Karlsruhe als Schieds
 
 ### Fachbegriffe & Definitionen
 
-- **Bundestag:** Das direkt gewaehlte Parlament. Es beschliesst Gesetze, waehlt die Kanzlerin oder den Kanzler und kontrolliert die Regierung.
-- **Bundesrat:** Die Laenderkammer aus Mitgliedern der Landesregierungen. Sie sichert die Mitwirkung der Laender an der Bundesgesetzgebung.
-- **Bundesregierung:** Die Exekutive aus Kanzler und Ministern. Sie ergreift Initiativen und vollzieht die Gesetze im Alltag.
-- **Bundesversammlung:** Das Gremium zur Wahl des Bundespräsidenten. Es besteht zur Haelfte aus Bundestagsmitgliedern und zur Haelfte aus Laenderdelegierten.
-- **Bundesverfassungsgericht:** Der Hueter der Verfassung mit Sitz in Karlsruhe. Es prueft Gesetze, entscheidet ueber Parteiverbote und schuetzt Grundrechte.
+- **Bundestag**: Der Bundestag beschliesst Bundesgesetze und waehlt den Kanzler. Er kontrolliert die Regierung ueber Anfragen und Ausschüsse - Ausschuesse heisst Gremien. Ohne seine Mehrheit regiert niemand. Mechanismus: Lesungen plus Ausschuesse plus Fraktionsdisziplin verwandeln Programme in Gesetze. Klausur-Tipp: Nenne Wahlfunktion plus Gesetzgebung als Doppelrolle.
+- **Bundesrat**: Der Bundesrat traegt Laenderstimmen in den Bund. Zustimmungsgesetze brauchen sein Ja. Einsprueche kann der Bundestag ueberstimmen. Mechanismus: Vetomacht waechst mit Betroffenheit der Laender; Vermittlung baut Pakete. Klausur-Tipp: Pruefe zuerst die Gesetzesart.
+- **Bundesregierung / Kanzler**: Der Kanzler bestimmt Richtlinien, Minister leiten Ressorts, Kabinett entscheidet gemeinsam. Die Regierung vollzieht Gesetze und bringt Entwuerfe ein. Misstrauen braucht konstruktiven Ersatz. Mechanismus: Richtlinienkompetenz plus Ressortprinzip plus Kollegialitaet - drei Zaehne eines Getriebes. Klausur-Tipp: Nenne Richtlinie plus Misstrauenshuede als Machtbelege.
+- **Bundespräsident (schreibe Bundespraesident)**: Der Praesident repraesentiert Einheit und fertigt Gesetze aus. Er prueft nur offensichtliche Fehler, regiert aber nicht. Verweigerung bleibt die seltene Ausnahme. Mechanismus: Formale Pruefung als letzte Tuerschwelle vor Verkuendung. Klausur-Tipp: Betone repraesentativ plus pruefend, nie regierend.
+- **Bundesverfassungsgericht**: Karlsruhe huetet das Grundgesetz ueber Verfassungsbeschwerde und Normenkontrolle. Es kann Gesetze kippen und Organe rügen - ruegen heisst tadeln. Seine Sprueche binden alle. Mechanismus: Einzelfall plus Grundsatz - jede Kammerentscheidung schreibt Spielregeln fort. Klausur-Tipp: Zitiere Verfahrenstyp plus Bindungswirkung.
+
+
+
+
+
+
+
+
 
 ### Wirkungsgefuege / Modell
 
@@ -116,6 +125,8 @@ VERGLEICH (Wahl des Weges, Weg A gegen Weg B):
 
 VERGLEICH: Waehle zuerst bewusst Weg A (parlamentarische Fuehrung) oder Weg B (foederative Kontrolle) und begruende dann dein Urteil am passenden Kriterium.
 
+DUELL Weg A (freier Markt) gegen Weg B (Staat greift ein): Weg A setzt auf handlungsfaehige Mehrheit: Parlament und Regierung entscheiden zuegig, Verantwortung ist klar. Weg B setzt auf geteilte Macht: Bundesrat, Praesident und Gericht bremsen, schuetzen Minderheiten und Laender. Entscheide am Kriterium: Handlungsfaehigkeit spricht fuer A, Machtbegrenzung und Rechtsschutz sprechen fuer B.
+
 Weg A: Die parlamentarische Fuehrung setzt auf Regierungsmehrheit und Handlungsfaehigkeit. Bundestag und Regierung aus einer Mehrheit gestalten zuegig, Opposition kontrolliert oeffentlich, Wahlen sanktionieren spaeter. Staerke dieses Weges ist Gestaltungskraft und klare Verantwortung; Grenze ist die Versuchung, Kontrolle durch Laender und Gericht als Stoerung zu deuten.
 
 Weg B: Die foederative Kontrolle setzt auf Bundesrat, Bundesverfassungsgericht und Gewaltenteilung. Laender bremsen Bundesgesetze, Karlsruhe prueft sie, Ämter begrenzen einander. Staerke dieses Weges ist Machtbegrenzung und Minderheitenschutz; Grenze ist die Gefahr von Blockade und Verantwortungsdiffusion.
@@ -134,9 +145,9 @@ Klausur-Satz: `Beim Zustimmungsgesetz kann der Bundesrat ein Vorhaben blockieren
 
 CHECK (drei Fragen mit Antworten):
 
-FRAGE: Welche fuenf Verfassungsorgane nennt das Grundgesetz, und wo sitzt das Bundesverfassungsgericht? | ANTWORT: Bundestag, Bundesrat, Bundesregierung, Bundespraesident und Bundesverfassungsgericht; das Gericht sitzt in Karlsruhe.
-FRAGE: Wann greift der Vermittlungsausschuss ein? | ANTWORT: Wenn Bundestag und Bundesrat sich ueber ein Gesetz nicht einigen können; er sucht einen Kompromiss.
-FRAGE: Welcher Artikel garantiert das freie Mandat, und was folgt daraus? | ANTWORT: Art. 38 GG; Abgeordnete sind an Auftraege nicht gebunden und nur ihrem Gewissen unterworfen.
+- FRAGE: Welche fuenf Verfassungsorgane nennt das Grundgesetz, und wo sitzt das Bundesverfassungsgericht? | ANTWORT: Bundestag, Bundesrat, Bundesregierung, Bundespraesident und Bundesverfassungsgericht; das Gericht sitzt in Karlsruhe.
+- FRAGE: Wann greift der Vermittlungsausschuss ein? | ANTWORT: Wenn Bundestag und Bundesrat sich ueber ein Gesetz nicht einigen können; er sucht einen Kompromiss.
+- FRAGE: Welcher Artikel garantiert das freie Mandat, und was folgt daraus? | ANTWORT: Art. 38 GG; Abgeordnete sind an Auftraege nicht gebunden und nur ihrem Gewissen unterworfen.
 
 Klausur-Satz: `Die Bundesversammlung besteht zur Hälfte aus Bundestagsmitgliedern und zur Hälfte aus Länderdelegierten; sie wählt den Bundespräsidenten.`
 
@@ -157,6 +168,7 @@ SITUATION: Eine Reform soll den Bundestag dauerhaft verkleinern und die Zahl der
 AUFGABE (AFB III): Verfasse eine zusammenhaengende Darstellung von etwa 150 Woertern mit Kriterium, Anwendung und Urteil.
 RUBRIC (30 XP): These mit Kriterium Handlungsfaehigkeit und Repraesentation (5 XP) | Darstellung der Organe und ihres Zusammenwirkens (10 XP) | Anwendung auf Direktmandat und Deckelung mit Abwaegung (10 XP) | Fazit mit Fachbegriffen und Klausur-Satz (5 XP).
 
+Klausur-Satz: `Die Organklausur ordnet erst Zustaendigkeit und Verfahren und wuerdigt dann das Zusammenspiel an Handlungsfaehigkeit und Kontrolle.`
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Was der Krisenstab lernt
 
 TAKEAWAY (Kernbotschaft in einem Kasten):
@@ -166,3 +178,5 @@ Takeaway-Satz: `Führung gestaltet, Kontrolle begrenzt: Erst beide zusammen sich
 REFLEXION (zwei Fragen):
 1. Wann ueberzeugt Weg A mit Handlungsfaehigkeit staerker, und wann verlangt der Fall Weg B mit Bundesrat und Gericht? Nenne ein Abgrenzungsmerkmal.
 2. Pruefe deine Antwort an der Klausurnorm: Hast du Organe korrekt zugeordnet, beide Wege erwoegen und das Urteil an einem expliziten Kriterium begruendet?
+
+Klausur-Satz: `Geteilte Macht ist traegere Macht - und genau darin liegt ihr Schutz: Niemand regiert allein, also irrt niemand allein.`

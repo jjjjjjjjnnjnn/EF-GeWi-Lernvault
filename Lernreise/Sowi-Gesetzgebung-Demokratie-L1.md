@@ -22,7 +22,7 @@ version: Lesson-v3
 
 > EPISODE 06｜Akt IV-V — Tarifarena und Demokratiewerkstatt｜召集人 Vermieter Carlo Brenner：Kellerdeal-Razzia um Mitternacht。
 
-HOOK 市长危机（先读剧情，再进 ZIELE）：【本集战役 EP06｜Akt IV-V — Tarifarena und Demokratiewerkstatt｜虚拟城邦 Tycoon City 告急】市长办公室深夜灯火通明，Vermieter Carlo Brenner 冲进来报告：Kellerdeal-Razzia um Mitternacht，而明天市议会就要投票。集市在喊、长队在排、国库在抖：苹果集市价格战一路烧到租金黑市，再烧到基尼天平与劳资谈判桌，本集正是“Gesetzgebungsverfahren und Demokratie”的现实引爆点。你的身份是市长直属经济改革规划委员：把街头危机翻译成考点，用沙盘 [balance-board] 拿出可验证的数值方案，再交出一份 Klausur 满分答卷稳住议会。通关线索：TARGET: Bringt auf dem Verhandlungsbrett beide Waagschalen in die Balance — Bedingung: Zustimmung beider Baenke, Loesung mit Kompromisslinie, Ergebnisprotokoll mit zwei Begruendungen je Seite. 上一集的结尾就是这一集的悬念——黑市账本、税改天平、劳资天平、选票天平，四座天平有一座倒了，城邦就停摆。电台正在直播，反对派等着挑错：先读 ZIELE，再啃术语，把传导机制画成你的作战地图。DE-Briefing: Episode 06 — Vermieter Carlo Brenner meldet Kellerdeal-Razzia um Mitternacht; der Stadtrat entscheidet morgen. Rette Tycoon City mit Analyse, Sandkasten und Klausur-Antwort zum Thema Gesetzgebungsverfahren und Demokratie.
+HOOK 市长危机（先读剧情，再进 ZIELE）：【本集战役 EP06｜Akt IV-V — Tarifarena und Demokratiewerkstatt｜虚拟城邦 Tycoon City 告急】市长办公室深夜灯火通明，Vermieter Carlo Brenner 冲进来报告：Kellerdeal-Razzia um Mitternacht，而明天市议会就要投票。你的身份不变：市长直属经济改革规划委员。真实判例切入：一部租房改革法在联邦议院通过后，被联邦参议院（需同意的 Zustimmungsgesetz）卡进调解委员会，来回三轮才放行；另一次，某州直接起诉某联邦法律越权，宪法法院判联邦程序违宪。立法不是议院一家说了算，参议院和法院都是守门人。通关线索：TARGET: Bringt auf dem Verhandlungsbrett beide Waagschalen in die Balance — Bedingung: Zustimmung beider Baenke, Loesung mit Kompromisslinie, Ergebnisprotokoll mit zwei Begruendungen je Seite. 先读 ZIELE，再啃术语，把传导机制画成你的作战地图。DE-Briefing: Episode 06 — Vermieter Carlo Brenner meldet Kellerdeal-Razzia um Mitternacht; der Stadtrat entscheidet morgen. Rette Tycoon City mit Analyse, Sandkasten und Klausur-Antwort zum Thema Gesetzgebungsverfahren und Demokratie.
 
 ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
@@ -38,11 +38,19 @@ PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→�
 
 中文在上，德语在下：
 
-- 三读 — drei Lesungen：联邦议院对草案的三次审议，中间插入委员会阶段。
-- 需批准法 — Zustimmungsgesetz：涉及各州财政或行政的法，必须经联邦参议院同意。
-- 可反对法 — Einspruchsgesetz：联邦参议院只能提出反对，联邦议院可以推翻。
-- 调解委员会 — Vermittlungsausschuss：两院分歧时的折中平台，由两院各派等额成员组成。
-- 自由委任 — freies Mandat：Art. 38 GG，议员只服从良心，不受委托约束。
+- **Bundestag**（联邦议院）：联邦议院是直选立法机关，选总理、监督政府，法律走三读加委员会细磨。 Der Bundestag ist das direkt gewaehlte Gesetzgebungsorgan des Bundes. Er waehlt den Kanzler und kontrolliert die Regierung. Gesetze entstehen hier in drei Lesungen plus Ausschuessen. Mechanismus: Fraktionen verhandeln in Ausschuessen die Details; die dritte Lesung beschliesst die endgueltige Fassung. Klausur-Tipp: Nenne Lesungen plus Ausschuss als Beleg fuer Arbeitsteiligkeit.
+- **Bundesrat**（联邦参议院）：参议院代表州政府；需同意的法律能真否决，一般法律只能暂缓，调解委员会找妥协。 Der Bundesrat vertritt die Laenderregierungen im Bund. Bei Zustimmungsgesetzen kann er blockieren. Bei Einspruchsgesetzen kann der Bundestag seinen Einspruch ueberstimmen. Mechanismus: Je staerker ein Gesetz Laenderinteressen beruehrt, desto staerker das Vetorecht; der Vermittlungsausschuss sucht den Kompromiss. Klausur-Tipp: Pruefe immer erst Zustimmungsgesetz oder Einspruchsgesetz, das entscheidet die Machtfrage.
+- **Vermittlungsausschuss**（调解委员会）：两院扯皮就进调解委员会关门谈，打包出双方都能签的版本再投一次。 Der Ausschuss aus Bundestag und Bundesrat sucht Kompromisse bei strittigen Gesetzen. Er tagt nicht oeffentlich und schlaegt Einigungsformeln vor. Beide Haeuser stimmen danach erneut ab. Mechanismus: Hinter verschlossenen Tueren werden Vetopositionen in zustimmungsfaehige Pakete umgebaut. Klausur-Tipp: Deute ihn als Foederalismus-Scharnier zwischen Einheit und Laendervielfalt.
+- **Bundespräsident / Bundesverfassungsgericht**（总统/宪法法院）：总统只做形式审查签字，宪法法院做实质审查；多数通过不等于合宪。 Der Bundespraesident fertigt Gesetze formal aus und prueft offensichtliche Verfassungsfehler. Das Bundesverfassungsgericht kontrolliert Gesetze materiell am Grundgesetz. Beide sind keine Mitgesetzgeber, sondern Pruefinstanzen. Mechanismus: Ausfertigungsverweigerung und Normenkontrollklage sind die zwei Bremsen nach dem Parlamentsbeschluss. Klausur-Tipp: Trenne politische Mehrheit und verfassungsrechtliche Zulaessigkeit sauber.
+- **Demokratieprinzip Art. 20**（民主原则）：一切权力来自人民，多经选举间接行使；反对派、舆论、法院共同看场子。 Alle Staatsgewalt geht vom Volke aus, meist mittelbar durch Wahlen. Parteien wirken an der Willensbildung mit. Die Ewigkeitsklausel schuetzt diesen Kern vor Abschaffung. Mechanismus: Wahlen legitimieren, Opposition und Oeffentlichkeit kontrollieren, Gerichte sichern die Spielregeln. Klausur-Tipp: Verbinde jede Verfahrensfrage mit Legitimation durch das Volk.
+
+
+
+
+
+
+
+
 
 Klausur-Satz: `Art. 38 GG garantiert das freie Mandat: Abgeordnete sind an Auftraege nicht gebunden, sondern nur ihrem Gewissen unterworfen.`
 
@@ -82,6 +90,10 @@ ENTDECKEN（1概念 + 1文字图解）：
         v
    Verkuendung im Bundesgesetzblatt  ->  Gesetz in Kraft
 ```
+Kausalkette: Entwurf in den Bundestag, Feinschliff in Ausschuessen und drei Lesungen, Bundesrat prueft die Zustimmungsfrage, Vermittlungsausschuss baut Pakete, Ausfertigung und Nachkontrolle. Der Foederalismus-Konflikt zwischen Einheit und Laendervielfalt wird in Verfahren zerlegt statt in einer Abstimmung entschieden.
+
+因果链：草案进议院→委员会细磨三读→参议院看 Consent 性质（需同意则能卡）→调解委员会打包妥协→总统签字→法院还能事后审查。联邦制下统一与州权的矛盾，被程序分流消化，而不是一次投票解决。
+
 
 Klausur-Satz: `Beim Zustimmungsgesetz ist die Zustimmung des Bundesrates zwingend, waehrend der Einspruch gegen ein Einspruchsgesetz vom Bundestag ueberstimmt werden kann.`
 
@@ -118,6 +130,10 @@ VERGLEICH辨别实验（双向辨析：程序之眼 vs. 民主理论之眼）：
 
 VERGLEICH: Wähle erst das Verfahren — 【选程序】先判断题目问的是 (i) Verfahrensprogramm（法案怎么走：三读、两院、调解、签署的路线）还是 (ii) Bewertungsprogramm（该程序好不好：用 liberal / republikanisch / prozedural 三坐标评价参与与代表）—— dann loesen.
 
+DUELL Weg A (freier Markt) gegen Weg B (Staat greift ein): Weg A vertraut der Mehrheitsdemokratie: Das Parlament entscheidet schnell, die Mehrheit regiert, die Minderheit kontrolliert. Weg B baut Vetospieler ein: Bundesrat, Vermittlungsausschuss und Verfassungsgericht bremsen und schuetzen Minderheiten sowie Laender. Entscheide am Kriterium: Handlungsfaehigkeit spricht fuer A, Machtbegrenzung und Foederalismus fuer B.
+
+对决 Weg A（自由市场）vs Weg B（国家干预）：Weg A信多数决效率：议会快投快决，多数执政少数监督。Weg B信否决点制衡：参议院、调解委员会、宪法法院踩刹车，保少数和州权。判据：行动能力站A，限权与联邦制站B。
+
 AUFGABE A：M1 beschreibt den Weg eines Gesetzes von der Einbringung bis zur Verkuendung und fragt, an welcher Stelle der Bundesrat eingreifen kann. Welches Verfahren ist zu waehlen?
 
 AUFGABE B：M2 behauptet, das Gesetzgebungsverfahren sei zu langsam und entmachte die Buerger, weil nur Fraktionen und Ausschuesse entscheiden. Welches Verfahren ist zu waehlen?
@@ -132,9 +148,9 @@ Klausur-Satz: `Je nach demokratietheoretischem Ansatz wird das Gesetzgebungsverf
 
 CHECK检索默写（自测 3 题，与答案配对）：
 
-FRAGE: In welcher Reihenfolge laufen die Beratungen eines Gesetzentwurfs im Bundestag ab? | ANTWORT: Erst die 1. Lesung mit Ueberweisung an die Ausschuesse, dann die Ausschussberatung, danach die 2. Lesung und schliesslich die 3. Lesung mit der Schlussabstimmung.
-FRAGE: Worin unterscheiden sich Zustimmungs- und Einspruchsgesetz? | ANTWORT: Beim Zustimmungsgesetz ist die Zustimmung des Bundesrates zwingend, beim Einspruchsgesetz kann der Bundestag den Einspruch ueberstimmen.
-FRAGE: Welcher Artikel garantiert das freie Mandat, und was bedeutet es? | ANTWORT: Art. 38 GG; Abgeordnete sind an Auftraege nicht gebunden und nur ihrem Gewissen unterworfen.
+- FRAGE: In welcher Reihenfolge laufen die Beratungen eines Gesetzentwurfs im Bundestag ab? | ANTWORT: Erst die 1. Lesung mit Ueberweisung an die Ausschuesse, dann die Ausschussberatung, danach die 2. Lesung und schliesslich die 3. Lesung mit der Schlussabstimmung.
+- FRAGE: Worin unterscheiden sich Zustimmungs- und Einspruchsgesetz? | ANTWORT: Beim Zustimmungsgesetz ist die Zustimmung des Bundesrates zwingend, beim Einspruchsgesetz kann der Bundestag den Einspruch ueberstimmen.
+- FRAGE: Welcher Artikel garantiert das freie Mandat, und was bedeutet es? | ANTWORT: Art. 38 GG; Abgeordnete sind an Auftraege nicht gebunden und nur ihrem Gewissen unterworfen.
 
 Klausur-Satz: `Das freie Mandat nach Art. 38 GG stellt die Abgeordneten ueber Auftraege, wird aber faktisch durch die Fraktionsdisziplin begrenzt.`
 
@@ -156,6 +172,7 @@ ROLLE: Du bist Mitglied einer Enquete-Kommission bzw. Sachverstaendige/r, die/de
 SITUATION: Ein Entwurf zur Entlastung der Kommunen wird im Bundestag beschlossen, im Bundesrat aber von einer Laendermehrheit abgelehnt; es kommt zum Vermittlungsausschuss. Ein Teil der Presse nennt den Bundesrat ein „Blockadeinstrument", ein anderer verteidigt ihn als „Stimme der Laender". Beurteilen Sie in einer zusammenhängenden Stellungnahme (ca. 150 Wörter), ob die Rolle des Bundesrates demokratisch zu rechtfertigen ist, und waehlen Sie dafuer eine demokratietheoretische Koordinate.
 RUBRIC (30 XP): Darstellung des Verfahrenswegs bis zum Vermittlungsausschuss (6 XP) | Analyse der Blockade-Logik — Foederalismus, Zustimmungsbeduerftigkeit, Politikverflechtung (8 XP) | Anwendung einer demokratietheoretischen Koordinate (liberal / republikanisch / prozedural) als Kriterium (10 XP) | Kriteriengeleitetes Urteil mit Abwaegung von Funktionsfaehigkeit und Repraesentation (6 XP).
 
+Klausur-Satz: `In der Klausur entscheidet zuerst die Einordnung als Zustimmungs- oder Einspruchsgesetz, dann erst die Wuerdigung des Kompromisses.`
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Was der Krisenstab lernt
 
 TAKEAWAY 1盒（核心总结）：
@@ -166,3 +183,5 @@ Takeaway-Satz: `Das Gesetzgebungsverfahren verbindet Beteiligung und Kontrolle; 
 REFLEXION 2问：
 1. 过程自省：Welcher Schritt fiel schwerer — die Stationenfolge der drei Lesungen (Schritt 3) oder die Wahl zwischen Verfahrens- und Bewertungsprogramm (Schritt 5)?
 2. 元认知计划：Beim nächsten Mal pruefe ich zuerst, ob der Text einen Verfahrensablauf oder eine Bewertung verlangt, und waehle danach den Zugang.
+
+Klausur-Satz: `Demokratie ist nicht die Herrschaft der Schnelleren, sondern der Zwang zum verfahrensfoermigen Kompromiss zwischen Mehrheit, Laendern und Verfassung.`

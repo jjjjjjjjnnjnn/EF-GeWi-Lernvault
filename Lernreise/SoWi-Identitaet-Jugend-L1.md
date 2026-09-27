@@ -22,7 +22,7 @@ version: Lesson-v3
 
 > EPISODE 12｜Akt IV-V — Tarifarena und Demokratiewerkstatt｜召集人 Aufsichtsratschef Dr. Konrad Reuss：Aufsichtsrat-Patt bei Stimmengleichheit。
 
-HOOK 市长危机（先读剧情，再进 ZIELE）：【本集战役 EP12｜Akt IV-V — Tarifarena und Demokratiewerkstatt｜虚拟城邦 Tycoon City 告急】市长办公室深夜灯火通明，Aufsichtsratschef Dr. Konrad Reuss 冲进来报告：Aufsichtsrat-Patt bei Stimmengleichheit，而明天市议会就要投票。集市在喊、长队在排、国库在抖：苹果集市价格战一路烧到租金黑市，再烧到基尼天平与劳资谈判桌，本集正是“Identität und Jugend”的现实引爆点。你的身份是市长直属经济改革规划委员：把街头危机翻译成考点，用沙盘 [balance-board] 拿出可验证的数值方案，再交出一份 Klausur 满分答卷稳住议会。通关线索：TARGET: Bringt auf dem Verhandlungsbrett beide Waagschalen in die Balance — Bedingung: Zustimmung beider Baenke, Loesung mit Kompromisslinie, Ergebnisprotokoll mit zwei Begruendungen je Seite. 上一集的结尾就是这一集的悬念——黑市账本、税改天平、劳资天平、选票天平，四座天平有一座倒了，城邦就停摆。电台正在直播，反对派等着挑错：先读 ZIELE，再啃术语，把传导机制画成你的作战地图。DE-Briefing: Episode 12 — Aufsichtsratschef Dr. Konrad Reuss meldet Aufsichtsrat-Patt bei Stimmengleichheit; der Stadtrat entscheidet morgen. Rette Tycoon City mit Analyse, Sandkasten und Klausur-Antwort zum Thema Identität und Jugend.
+HOOK 市长危机（先读剧情，再进 ZIELE）：【本集战役 EP12｜Akt IV-V — Tarifarena und Demokratiewerkstatt｜虚拟城邦 Tycoon City 告急】市长办公室深夜灯火通明，Aufsichtsratschef Dr. Konrad Reuss 冲进来报告：Aufsichtsrat-Patt bei Stimmengleichheit，而明天市议会就要投票。你的身份不变：市长直属经济改革规划委员。真实情境切入：某16岁学生在请愿里写“点赞数决定我是谁”，同班同学却在罢课游行里举牌“气候决定我是谁”。点赞、班级、家庭、社团——青少年在多重镜子里拼自我，拼不拢就危机。Erikson叫它认同对混乱，Mead叫它主我与客我的对话。通关线索：TARGET: Bringt auf dem Verhandlungsbrett beide Waagschalen in die Balance — Bedingung: Zustimmung beider Baenke, Loesung mit Kompromisslinie, Ergebnisprotokoll mit zwei Begruendungen je Seite. 先读 ZIELE，再啃术语，把传导机制画成你的作战地图。DE-Briefing: Episode 12 — Aufsichtsratschef Dr. Konrad Reuss meldet Aufsichtsrat-Patt bei Stimmengleichheit; der Stadtrat entscheidet morgen. Rette Tycoon City mit Analyse, Sandkasten und Klausur-Antwort zum Thema Identität und Jugend.
 
 ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
@@ -38,11 +38,19 @@ PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→�
 
 中文在上，德语在下：
 
-- 身份发展 — Identitätsentwicklung：一生在与他人的交往中逐步形成，并非天生固定。
-- 自我同一性 — Ich-Identität (Erikson)：把社会期待与自我信念自觉缝合起来的能力。
-- 他导型 — außengeleitet (Riesman)：现代人跟着时代潮流与他人眼光走，容易迷失自我。
-- 角色多元 — Rollenpluralismus (Parsons)：一个人同时承担多个角色，必须自行加以整合。
-- 价值观变迁 — Wertewandel：社会整体价值观随时代移动，如家庭与安全权重上升。
+- **Identität**（认同）：认同是拼拢的自我图：先试错再承诺就稳，没试就承诺或只试不承诺就晃。 Identitaet ist das als stimmig erlebte Selbstbild ueber Zeit. Sie entsteht aus Zusagen an Werte und Zugehoerigkeiten. Jugendliche erproben sie in Moratorien wie Praktika oder Subkulturen. Mechanismus: Festlegung nach Erprobung stabilisiert, Festlegung ohne Erprobung oder Erprobung ohne Festlegung erzeugt Krise. Klausur-Tipp: Nutze Marcia-Stufen (diffus, uebernommen, suchend, erarbeitet) als Sortierraster.
+- **Mead I / Me**（主我/客我）：客我是别人眼里的我，主我是回嘴的我；认同是两者的对话，不是单方面的乖。 Das Me speichert die Erwartungen der anderen, das I antwortet spontan und kreativ. Identitaet entsteht im Dialog beider Instanzen. Soziale Kontrolle und Eigensinn halten sich die Waage. Mechanismus: Rollenuebernahme im Spiel und Wettkampf trainiert den Perspektivwechsel vom Play zum Game. Klausur-Tipp: Ordne jede Szene erst Me oder I zu, dann deuten.
+- **Erikson Krise**（埃里克森危机）：青春期任务是认同对混乱：拼拢了才能去爱，拼不拢就缩回去或人云亦云。 Jugend heisst Identitaet gegen Identitaetsdiffusion als Entwicklungsaufgabe. Gelingt die Synthese, folgt Intimitaet im Erwachsenenalter. Misslingt sie, folgen Rueckzug oder Ueberanpassung. Mechanismus: Gesellschaftliche Moratorien geben Zeit; werden sie verweigert, droht verfruehte Festlegung. Klausur-Tipp: Verknuepfe jede Jugenddebatte mit der Stufenlogik.
+- **Peer-Group**（同龄群体）：同龄人是家外的认可市场：用顺从换点赞，特立独行会被拉黑。 Gleichaltrige liefern Anerkennung ausserhalb der Familie. Sie setzen Normen zu Stil, Sprache und Mutproben. Abgrenzung von Eltern gelingt oft nur ueber Peers. Mechanismus: Anerkennung wird gegen Konformitaet getauscht; wer abweicht, riskiert Ausschluss. Klausur-Tipp: Deute Peers nie nur als Gefahr, sondern als Anerkennungsmarkt.
+- **Anerkennung**（承认）：承认分两种货币：你这个人行 vs 你这件事行；家里给的稳，网上给的飘。 Anerkennung bestaetigt Wuerde und Leistung einer Person. Sie kommt aus Familie, Schule und Netz in verschiedenen Waehrungen. Fehlende Anerkennung treibt in Ersatzbuehnen wie Likes. Mechanismus: Stabile Anerkennung aus nahen Beziehungen puffert volatile Anerkennung aus dem Netz. Klausur-Tipp: Unterscheide personale und leistungsbezogene Anerkennung.
+
+
+
+
+
+
+
+
 
 Klausur-Satz: `Während Erikson die Ich-Identität als lebenslangen Prozess deutet, betont Krappmann, dass diese Balance auch scheitern kann.`
 
@@ -69,6 +77,10 @@ ENTDECKEN（1概念 + 1文字图解）：
             pluralismus              geleitet (Gefahr)
    Goffman: Vorder-/Hinterbuehne
 ```
+Kausalkette: Erwartungsflut aus Familie, Peers und Netz, Ueberlastung des Me, Antwort des I zwischen Rebellion und Rueckzug, Erprobung im Moratorium, Festlegung oder Diffusion. Anerkennung ist der Treibstoff: Nahe Beziehungen liefern stabil, Netze liefern volatil.
+
+因果链：多重期待涌入（家庭要乖、同龄人要酷、网络要赞）→客我超载→主我反弹或躺平→试错期（延缓偿付）→承诺定型或弥散。承认是燃料：近关系给的稳，远网络给的飘，燃料结构决定认同稳不稳。
+
 
 Klausur-Satz: `Mead zufolge wird sich das Individuum seiner selbst bewusst, indem es sich mit den Augen der Anderen betrachtet; Identität entsteht also in Kommunikation.`
 
@@ -115,6 +127,10 @@ VERGLEICH辨别实验（双向辨析：交往眼 vs. 结构眼）：
 
 VERGLEICH: Wähle erst das Verfahren —【选程序】先判断材料问的是 (i) Identitäts-Verfahren（身份如何在我与他人的交往中形成：Mead、Goffman、Krappmann）还是 (ii) Struktur-Verfahren（社会结构与媒体如何塑造身份：Riesman、Parsons、Wertewandel）—— dann lösen.
 
+DUELL Weg A (freier Markt) gegen Weg B (Staat greift ein): Weg A setzt auf den freien Selbstentwurf: Jugendliche waehlen Identitaeten wie im Markt, Vielfalt und Wechsel sind Freiheit. Weg B setzt auf schuetzende Leitplanken: Familie, Schule und Jugendschutz geben Halt und Grenzen. Entscheide am Kriterium: Autonomie spricht fuer A, stabile Zugehoerigkeit und Schutz vor Ueberforderung fuer B.
+
+对决 Weg A（自由市场）vs Weg B（国家干预）：Weg A信自由自选：认同像市场，多试多换是自由。Weg B信护栏：家庭学校青少年保护给底线和边界。判据：自主站A，稳定归属和防过载站B。
+
 AUFGABE A (AFB II, 8 BE)：Material 2 (Karikatur) zeigt einen Jugendlichen, der sein Gesicht hinter vielen Smartphone-Bildschirmen spiegelt. Erläutern Sie, welche Rolle die Interaktion mit anderen für die Identitätsbildung spielt.
 
 AUFGABE B (AFB II, 8 BE)：Eine Tabelle dokumentiert, dass Familien- und Sicherheitswerte unter Jugendlichen zwischen 2002 und 2019 an Bedeutung gewonnen haben. Ordnen Sie diesen Befund mithilfe des Wertewandels ein.
@@ -129,9 +145,9 @@ Klausur-Satz: `Wertewandel bezeichnet die Verschiebung gesellschaftlicher Wertpr
 
 CHECK检索默写（自测 3 题，与答案配对）：
 
-FRAGE: Was bezeichnet Krappmann als Kern von Identität? | ANTWORT: Identität ist eine Balanceleistung zwischen der Bindung an Werte und der Bewahrung von Einzigartigkeit, die auch scheitern kann.
-FRAGE: Wodurch unterscheidet sich Riesmans außengeleiteter Mensch vom selbstbestimmten? | ANTWORT: Der Außengeleitete richtet sein Handeln am Zeitgeist und an den Erwartungen anderer aus, statt an eigenen Überzeugungen.
-FRAGE: Welcher Operator verlangt eine Bewertung mit Kriterium: „Nennen Sie …" oder „Beurteilen Sie …"? | ANTWORT: Beurteilen (AFB III verlangt ein kriteriengeleitetes Urteil; Nennen genügt der Faktenwiedergabe).
+- FRAGE: Was bezeichnet Krappmann als Kern von Identität? | ANTWORT: Identität ist eine Balanceleistung zwischen der Bindung an Werte und der Bewahrung von Einzigartigkeit, die auch scheitern kann.
+- FRAGE: Wodurch unterscheidet sich Riesmans außengeleiteter Mensch vom selbstbestimmten? | ANTWORT: Der Außengeleitete richtet sein Handeln am Zeitgeist und an den Erwartungen anderer aus, statt an eigenen Überzeugungen.
+- FRAGE: Welcher Operator verlangt eine Bewertung mit Kriterium: „Nennen Sie …" oder „Beurteilen Sie …"? | ANTWORT: Beurteilen (AFB III verlangt ein kriteriengeleitetes Urteil; Nennen genügt der Faktenwiedergabe).
 
 Klausur-Satz: `Identität ist keine Eigenschaft, sondern eine Balanceleistung — umso anspruchsvoller, je mehr Rollen, Medien und Kulturen gleichzeitig verhandelt werden müssen.`
 
@@ -155,6 +171,7 @@ SITUATION: An deiner Schule wird über die Abschlussfeier diskutiert. Ältere Le
 
 RUBRIC (30 XP): Benennung des Wertewandels anhand der Statistik (5 XP) | Fachliche Deutung mit mindestens zwei Identitätsmodellen (10 XP) | Analyse der ambivalenten Folgen für die Identitätsentwicklung (10 XP) | Kriteriengeleitetes Urteil (z. B. Kriterium Autonomie) (5 XP).
 
+Klausur-Satz: `Die Klausurleistung zeigt sich an der Stufenzuordnung: Szene nennen, Mead- oder Erikson-Kategorie anlegen, Festlegungsgrad bestimmen.`
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Was der Krisenstab lernt
 
 TAKEAWAY 1盒（核心总结）：
@@ -165,3 +182,5 @@ Takeaway-Satz: `Identität ist kein Besitz, sondern eine Balance, die in jeder n
 REFLEXION 2问：
 1. 过程自省：Welcher Schritt fiel schwerer — die Zuordnung der sechs Modelle (Schritt 3) oder das Lesen der Shell-Tabelle (Schritt 5)?
 2. 元认知计划：Beim nächsten Mal prüfe ich zuerst, ob das Material einen Kommunikationsakt oder eine gesellschaftliche Verschiebung zeigt, und wähle danach das Verfahren.
+
+Klausur-Satz: `Identitaet ist kein Fund, sondern eine Verhandlung: Wer viele Spiegel hat, braucht ein stabiles Gespraech mit sich selbst.`

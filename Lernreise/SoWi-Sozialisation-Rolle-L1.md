@@ -22,7 +22,7 @@ version: Lesson-v3
 
 > EPISODE 30｜Akt IV-V — Tarifarena und Demokratiewerkstatt｜召集人 Zechen-Urgestein Willi Poth：Zechen-Schliessung im Strukturwandel。
 
-HOOK 市长危机（先读剧情，再进 ZIELE）：【本集战役 EP30｜Akt IV-V — Tarifarena und Demokratiewerkstatt｜虚拟城邦 Tycoon City 告急】市长办公室深夜灯火通明，Zechen-Urgestein Willi Poth 冲进来报告：Zechen-Schliessung im Strukturwandel，而明天市议会就要投票。集市在喊、长队在排、国库在抖：苹果集市价格战一路烧到租金黑市，再烧到基尼天平与劳资谈判桌，本集正是“Sozialisation und Rolle”的现实引爆点。你的身份是市长直属经济改革规划委员：把街头危机翻译成考点，用沙盘 [balance-board] 拿出可验证的数值方案，再交出一份 Klausur 满分答卷稳住议会。通关线索：TARGET: Bringt auf dem Verhandlungsbrett beide Waagschalen in die Balance — Bedingung: Zustimmung beider Baenke, Loesung mit Kompromisslinie, Ergebnisprotokoll mit zwei Begruendungen je Seite. 上一集的结尾就是这一集的悬念——黑市账本、税改天平、劳资天平、选票天平，四座天平有一座倒了，城邦就停摆。电台正在直播，反对派等着挑错：先读 ZIELE，再啃术语，把传导机制画成你的作战地图。DE-Briefing: Episode 30 — Zechen-Urgestein Willi Poth meldet Zechen-Schliessung im Strukturwandel; der Stadtrat entscheidet morgen. Rette Tycoon City mit Analyse, Sandkasten und Klausur-Antwort zum Thema Sozialisation und Rolle.
+HOOK 市长危机（先读剧情，再进 ZIELE）：【本集战役 EP30｜Akt IV-V — Tarifarena und Demokratiewerkstatt｜虚拟城邦 Tycoon City 告急】市长办公室深夜灯火通明，Zechen-Urgestein Willi Poth 冲进来报告：Zechen-Schliessung im Strukturwandel，而明天市议会就要投票。你的身份不变：市长直属经济改革规划委员。真实情境切入：新生第一天在走廊狂笑，进教室秒变乖；回家对父母报喜不报忧，对群友直播吐槽。同一孩子三张脸——这不是虚伪，是角色扮演。Mead说自我在游戏中拼出来，考试考你分清角色期待、冲突与越轨。通关线索：TARGET: Bringt auf dem Verhandlungsbrett beide Waagschalen in die Balance — Bedingung: Zustimmung beider Baenke, Loesung mit Kompromisslinie, Ergebnisprotokoll mit zwei Begruendungen je Seite. 先读 ZIELE，再啃术语，把传导机制画成你的作战地图。DE-Briefing: Episode 30 — Zechen-Urgestein Willi Poth meldet Zechen-Schliessung im Strukturwandel; der Stadtrat entscheidet morgen. Rette Tycoon City mit Analyse, Sandkasten und Klausur-Antwort zum Thema Sozialisation und Rolle.
 
 ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
@@ -38,11 +38,19 @@ PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→�
 
 中文在上，德语在下：
 
-- 社会化 — Sozialisation：一生学习规范、价值与角色，成为社会成员的过程。
-- 初级 / 次级社会化 — primäre / sekundäre Sozialisation：家庭打底，学校与同伴接着塑形。
-- 社会人 — Homo sociologicus (Dahrendorf)：按角色期待行动的人，偏离会招来社会控制。
-- 制裁 — Sanktion：对守规的奖励（positiv）或对偏离的惩罚（negativ）。
-- 角色距离 — Rollendistanz：身在角色中却能保持自我距离，不当角色的木偶。
+- **Sozialisation**（社会化）：社会化把天性磨成合群的人：家里初磨，学校同龄二磨，一辈子都在磨。 Sozialisation formt aus Anlagen Persoenlichkeiten ueber Normen und Werte. Primaer laeuft sie in der Familie, sekundaer in Schule und Peers. Sie endet nie ganz. Mechanismus: Belohnung und Strafe, Vorbild und Sprache schleifen Verhalten in Erwartungen ein. Klausur-Tipp: Ordne jede Szene primaer oder sekundaer zu.
+- **Rolle**（角色）：角色是打包的期待：必须/应该/可以三档，违了从罚到夸都有价。 Rollen buendeln Erwartungen an Positionen wie Schueler oder Tochter. Sie entlasten, weil jeder weiss, was gilt. Sie engen ein, weil Abweichung sanktioniert wird. Mechanismus: Muss-, Soll- und Kann-Erwartungen staffeln den Druck von Zwang bis Lob. Klausur-Tipp: Benenne je Szene Muss, Soll und Kann.
+- **Rollenkonflikt**（角色冲突）：角色打架分两种：角色之间撞（女儿vs闺蜜），角色内部撞（学霸vs班长），先分类再排优先级。 Interrollenkonflikte prallen zwischen Positionen, Intrarollenkonflikte innerhalb einer Rolle. Beispiel Tochter gegen Freundin, Streber gegen Klassensprecher. Loesung heisst Prioritaet oder Kompromiss. Mechanismus: Zeit, Loyalitaet und Sanktionen zwingen zur Rangfolge. Klausur-Tipp: Bestimme erst inter oder intra, dann loesen.
+- **Mead Play / Game**（米德游戏两阶段）：扮演是串单个角色，竞赛是懂整套规则；懂规则才算读懂期待。 Im Play schlüpft das Kind - schlüpft heisst steigt hinein - in einzelne Rollen, im Game versteht es das Regelsystem aller. So entsteht der verallgemeinerte Andere. Perspektivwechsel wird trainierbar. Mechanismus: Vom Nachahmen zum Regelverstehen waechst die Faehigkeit, Erwartungen zu lesen. Klausur-Tipp: Nutze Play gegen Game als Entwicklungsbeleg.
+- **Abweichung / Sanktion**（越轨/制裁）：越轨破期待、制裁来回应；贴标签把一次错变成一辈子的人设，慎贴。 Abweichung bricht Erwartungen, Sanktionen antworten positiv oder negativ. Labeling macht aus Taten Eigenschaften. Milde Antwort resozialisiert, harte stigmatisiert. Mechanismus: Etiketten kleben und verfestigen Karrieren - oder Oeffnungen heilen sie. Klausur-Tipp: Deute mit Labeling statt mit Charakter.
+
+
+
+
+
+
+
+
 
 Klausur-Satz: `Dahrendorfs Homo sociologicus handelt nach Rollenerwartungen; Abweichung löst soziale Kontrolle in Form positiver oder negativer Sanktionen aus.`
 
@@ -76,6 +84,10 @@ ENTDECKEN（1概念 + 1文字图解）：
                 |
           Ausweg: ROLLENDISTANZ
 ```
+Kausalkette: Erwartungsinput aus Familie, Schule und Peers, Verinnerlichung im Me, Antwort des I zwischen Anpassung und Eigensinn, Feedback ueber Sanktionen, Verfestigung oder Neuverhandlung. Konflikte sind Treibstoff, kein Defekt: Prioritaeten, Deals und Buehnenwechsel vollenden Sozialisation.
+
+因果链：期待输入（家庭学校同龄）→内化成客我→主我回应（顺从/创新/反叛）→奖惩反馈→角色定型或重谈。冲突是燃料不是故障：排优先级、谈条件、换舞台，社会化在解决冲突中完成。
+
 
 Klausur-Satz: `Rollen machen das Verhalten berechenbar, doch erst die Rollendistanz sichert dem Einzelnen Freiheit innerhalb der Rolle.`
 
@@ -122,6 +134,10 @@ VERGLEICH辨别实验（双向辨析：社会化眼 vs. 角色眼）：
 
 VERGLEICH: Wähle erst das Verfahren —【选程序】先判断材料问的是 (i) Sozialisations-Verfahren（规范/价值/角色是如何被学到的：家庭、学校、同伴、学习机制）还是 (ii) Rollen-Verfahren（角色期待如何运作、如何冲突、如何被制裁与调节）—— dann lösen.
 
+DUELL Weg A (freier Markt) gegen Weg B (Staat greift ein): Weg A feiert den freien Selbstentwurf: Das Individuum waehlt Rollen wie im Markt und bricht enge Normen auf. Weg B haelt schuetzende Normen hoch: Familie, Schule und Recht geben Halt gegen Beliebigkeit. Entscheide am Kriterium: Autonomie und Wandel sprechen fuer A, Sicherheit und Verlaesslichkeit fuer B.
+
+对决 Weg A（自由市场）vs Weg B（国家干预）：Weg A信自由自塑：角色自选，旧规范该碎就碎。Weg B信规范护栏：家校法给底线，防随波逐流。判据：自主变化站A，安全可靠站B。
+
 AUFGABE A (AFB II, 8 BE)：Material 2 (Sachtext) berichtet, dass ein Kind durch Lob der Eltern lernt, im Bus älteren Menschen den Platz zu überlassen. Erläutern Sie, welcher Lernmechanismus hier wirkt und in welche Phase die Sozialisation gehört.
 
 AUFGABE B (AFB II, 8 BE)：Eine Karikatur zeigt eine Lehrerin, die von ihren Schülerinnen und Schülern gleichzeitig Strenge und Verständnis erwartet und daran scheitert. Ordnen Sie den Konflikt ein und nennen Sie eine Lösungsstrategie.
@@ -136,9 +152,9 @@ Klausur-Satz: `Ein Intra-Rollenkonflikt liegt vor, wenn die Erwartungen an ein u
 
 CHECK检索默写（自测 3 题，与答案配对）：
 
-FRAGE: Was unterscheidet die primäre von der sekundären Sozialisation? | ANTWORT: Die primäre findet vor allem in der Familie statt (Sprache, Grundvertrauen, erste Werte), die sekundäre in Schule und Peer-Groups (Wissen, Selektion, Statuszuweisung).
-FRAGE: Welche drei Rollenkonflikte unterscheidet die Soziologie? | ANTWORT: Intra-Rollenkonflikt, Inter-Rollenkonflikt und Person-Rolle-Konflikt.
-FRAGE: Welcher Operator verlangt, dass man eine Stelle im Text gezielt nachweist? | ANTWORT: Ermitteln (dem Material gezielt entnehmen und mit Zeilenangabe belegen).
+- FRAGE: Was unterscheidet die primäre von der sekundären Sozialisation? | ANTWORT: Die primäre findet vor allem in der Familie statt (Sprache, Grundvertrauen, erste Werte), die sekundäre in Schule und Peer-Groups (Wissen, Selektion, Statuszuweisung).
+- FRAGE: Welche drei Rollenkonflikte unterscheidet die Soziologie? | ANTWORT: Intra-Rollenkonflikt, Inter-Rollenkonflikt und Person-Rolle-Konflikt.
+- FRAGE: Welcher Operator verlangt, dass man eine Stelle im Text gezielt nachweist? | ANTWORT: Ermitteln (dem Material gezielt entnehmen und mit Zeilenangabe belegen).
 
 Klausur-Satz: `Rollendistanz bedeutet, eine Rolle bewusst zu spielen, ohne die eigene Person mit ihr gleichzusetzen.`
 
@@ -162,6 +178,7 @@ SITUATION: In deiner Klasse sollen neue Regeln für die Handynutzung beschlossen
 
 RUBRIC (30 XP): Benennung der Rolle und der zugehörigen Erwartungen (5 XP) | Erklärung der Wirkung von Normen und positiven wie negativen Sanktionen (10 XP) | Übertragung des Konfliktbegriffs (Intra-/Inter-/Person-Rolle) auf den Fall (10 XP) | Kriteriengeleitetes Urteil mit Lösungsvorschlag über Rollendistanz (5 XP).
 
+Klausur-Satz: `Die Rollenanalyse benennt erst Position, Erwartungsrang und Konflikttyp und loest dann ueber Prioritaet oder Kompromiss.`
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Was der Krisenstab lernt
 
 TAKEAWAY 1盒（核心总结）：
@@ -172,3 +189,5 @@ Takeaway-Satz: `Rollen machen die Gesellschaft berechenbar; Rollendistanz hält 
 REFLEXION 2问：
 1. 过程自省：Welcher Schritt fiel schwerer — das Benennen der Rollenkonflikte (Schritt 4) oder die Wahl des Verfahrens im Vergleich (Schritt 5)?
 2. 元认知计划：Beim nächsten Mal prüfe ich zuerst, ob sich der Konflikt innerhalb einer Rolle oder zwischen zwei Rollen abspielt, und benenne erst dann den Fachbegriff.
+
+Klausur-Satz: `Sozialisation endet nie: Wer Rollen lesen kann, spielt sie bewusst statt nur mitzuspielen.`

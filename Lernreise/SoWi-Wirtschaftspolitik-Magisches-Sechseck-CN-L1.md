@@ -22,7 +22,7 @@ version: Lesson-v3
 
 > EPISODE 43｜Akt I-II — Apfelmarkt und Mietendeckel｜召集人 Hafenkapitain a. D. Sturmius Blank：Kapitaens-Protestzug in den Stadtrat。
 
-HOOK 市长危机（先读剧情，再进 ZIELE）：【本集战役 EP43｜Akt I-II — Apfelmarkt und Mietendeckel｜虚拟城邦 Tycoon City 告急】市长办公室深夜灯火通明，Hafenkapitain a. D. Sturmius Blank 冲进来报告：Kapitaens-Protestzug in den Stadtrat，而明天市议会就要投票。集市在喊、长队在排、国库在抖：苹果集市价格战一路烧到租金黑市，再烧到基尼天平与劳资谈判桌，本集正是“Wirtschaftspolitik und magisches Sechseck”的现实引爆点。你的身份是市长直属经济改革规划委员：把街头危机翻译成考点，用沙盘 [markt-sim] 拿出可验证的数值方案，再交出一份 Klausur 满分答卷稳住议会。通关线索：TARGET: Stellt im Sandkasten Angebot und Nachfrage so ein, dass der Gleichgewichtspreis zwischen 8 und 12 Euro liegt, die gehandelte Menge mindestens 100 Einheiten erreicht und ein Probe-Hoechstpreis von 6 Euro als bindend mit Warteschlange entlarvt wird. 上一集的结尾就是这一集的悬念——黑市账本、税改天平、劳资天平、选票天平，四座天平有一座倒了，城邦就停摆。电台正在直播，反对派等着挑错：先读 ZIELE，再啃术语，把传导机制画成你的作战地图。DE-Briefing: Episode 43 — Hafenkapitain a. D. Sturmius Blank meldet Kapitaens-Protestzug in den Stadtrat; der Stadtrat entscheidet morgen. Rette Tycoon City mit Analyse, Sandkasten und Klausur-Antwort zum Thema Wirtschaftspolitik und magisches Sechseck.
+HOOK 市长危机（先读剧情，再进 ZIELE）：【本集战役 EP43｜Akt I-II — Apfelmarkt und Mietendeckel｜虚拟城邦 Tycoon City 告急】市长办公室深夜灯火通明，Hafenkapitain a. D. Sturmius Blank 冲进来报告：Kapitaens-Protestzug in den Stadtrat，而明天市议会就要投票。你的身份不变：市长直属经济改革规划委员。真实两难切入：央行加息压通胀，房贷家庭叫苦、企业投资熄火；政府大撒钱保就业，物价又抬头。六个目标（增长、就业、物价、外贸、分配、环境）像六块拼图，按下一块翘起两块——这就是“魔法”变“六角”的原因。通关线索：TARGET: Stellt im Sandkasten Angebot und Nachfrage so ein, dass der Gleichgewichtspreis zwischen 8 und 12 Euro liegt, die gehandelte Menge mindestens 100 Einheiten erreicht und ein Probe-Hoechstpreis von 6 Euro als bindend mit Warteschlange entlarvt wird. 先读 ZIELE，再啃术语，把传导机制画成你的作战地图。DE-Briefing: Episode 43 — Hafenkapitain a. D. Sturmius Blank meldet Kapitaens-Protestzug in den Stadtrat; der Stadtrat entscheidet morgen. Rette Tycoon City mit Analyse, Sandkasten und Klausur-Antwort zum Thema Wirtschaftspolitik und magisches Sechseck.
 
 ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
@@ -49,12 +49,20 @@ PRETRAINING术语盒（核心6词，六大宏观目标一一对应，先读三�
 
 中文在上，德语在下：
 
-- 经济增长 — Wirtschaftswachstum：实际 GDP 持续增加。【陷阱：Wachstum（总量变大）不是 Wohlstand（福利分配，增长可能不均）。】
-- 物价稳定 — Preisniveaustabilitaet：通胀率保持低位（ ECB 目标约 $2\%$）。【陷阱：Stabilitaet（温和上涨约 $2\%$）不是 Deflation（物价下跌，同样有害）。】
-- 充分就业 — Hoher Beschaeftigungsstand：失业率低。【陷阱：Vollbeschaeftigung（摩擦性失业仍存在，非零失业）不是 Arbeitslosigkeit Null。】
-- 对外平衡 — Aussenwirtschaftliches Gleichgewicht：进出口大致平衡。【陷阱：Gleichgewicht（收支平衡）不是 Exportueberschuss（顺差过大也招批评）。】
-- 公平分配 — Gerechte Einkommensverteilung：缩小贫富差距。【陷阱：gerecht（机会与结果兼顾）不是 gleich（绝对平均）。】
-- 环境保护 — Umweltschutz：增长不得透支生态。【陷阱：Umweltschutz（可持续约束）不是 Wachstumsverbot（禁止增长）。】
+- **Wirtschaftswachstum**（经济增长）：增长量实际产出增量：给涨薪和税收腾地方，吃资源还分不均。 Wachstum misst die Zunahme realer Produktion. Es schafft Spielraeume fuer Loehne und Staatseinnahmen. Es kostet Ressourcen und gedeiht ungleich verteilt. Mechanismus: Investitionen plus Produktivitaet heben Potenzial; Nachfrage ruft es ab. Klausur-Tipp: Trenne real von nominal plus pro Kopf.
+- **Preisstabilität (schreibe Preisstabilitaet)**（物价稳定）：物价稳保钱值钱、计划敢做：央行盯2%，加息压需求，预期是关键。 Stabile Preise halten Geldwert und Planungssicherheit. Die Notenbank zielt um zwei Prozent. Ueberzogene Inflation enteignet Sparer schleichend. Mechanismus: Zinsen steuern Kredit und Nachfrage; Erwartungen verfestigen oder brechen Trends. Klausur-Tipp: Nenne Zwei-Prozent-Ziel plus Zinsweg.
+- **Beschäftigung (schreibe Beschaeftigung)**（就业）：充分就业只留摩擦结构性失业：需求涨招人、利息涨裁员。 Vollbeschaeftigung meint Arbeitslosigkeit nur aus Wechsel und Struktur. Konjunkturelle Jobs schwanken mit Nachfrage. Der Staat glaettet ueber Ausgaben und Kurzarbeit. Mechanismus: Nachfrageplus ruft Einstellungen, Zinsplus bremst sie. Klausur-Tipp: Sortiere friktionell, strukturell und konjunkturell.
+- **Außenwirtschaft (schreibe Aussenwirtschaft)**（外贸平衡）：顺差攒钱也攒仇：汇率世界景气一抖，岗位价格跟着抖。 Exporte bringen Devisen und Jobs, Importe Rohstoffe und Konkurrenz. Dauerueberschuesse sammeln Forderungen und Konflikte. Abhaengigkeiten werden zur Waffe in Krisen. Mechanismus: Wechselkurs und Weltkonjunktur uebertragen Schocks direkt. Klausur-Tipp: Werte Ueberschuss doppelt: Staerke plus Verwundbarkeit.
+- **Verteilung / Umwelt**（分配/环境）：分配保今天不分裂，环境保明天有得用；税转碳价把账算到今天。 Gerechte Verteilung sichert Teilhabe, intakte Umwelt sichert Zukunft. Wachstum ohne beides spaltet und verbraucht. Sozial- und Klimapolitik zahlen die Rechnung heute fuer morgen. Mechanismus: Steuern, Transfers und CO2-Preis lenken Erträge - Ertraege heisst Gewinne - zu Fairness und Zukunft um. Klausur-Tipp: Mache beide Ziele zu eigenstaendigen Ecken mit Indikator.
+- **Zielkonflikt / Phillips**（目标冲突/菲利普斯）：短期就业和物价跷跷板：需求旺两头涨，预期崩了螺旋涨。 Kurzfristig kaempfen Jobs gegen Preise: mehr Nachfrage heizt beides an. Langfristig frisst Inflation Vertrauen und Jobs. Erwartungen entscheiden ueber Lohn-Preis-Spiralen. Mechanismus: Nachfrageplus senkt Arbeitslosigkeit und hebt Preise - bis Erwartungen kippen. Klausur-Tipp: Zeichne den Trade-off mit Zeithorizont.
+
+
+
+
+
+
+
+
 
 Klausur-Satz: `Nachhaltigkeit ergaenzt das klassische magische Viereck zum Sechseck um Verteilung und Umwelt.`
 
@@ -87,6 +95,12 @@ Sechseck: Wachstum Jobs Preise Aussen Umwelt Verteilung
 expansiv: Jobs+ Wachstum+ | Preise- Umwelt-
 restriktiv: Preise+ | Jobs- Wachstum-
 ```
+Kausalkette: Geld ruft Nachfrage, Nachfrage ruft Jobs und Preise, Zinsen bremsen Investitionen und Jobs, Aussenwirtschaft, Verteilung und Umwelt schreiben mit. Kein kostenloses Eck: Jede Bewegung verteilt Lasten auf die anderen Ecken - mit Zeithorizont kurz gegen lang.
+
+因果链：撒钱→需求旺→就业升+物价涨→加息→投资熄+就业回→外贸分配环境再分化。六角无免费午餐：动一角，另五角记账；答题必须点名被牺牲的角和时间跨度（短期/长期）。
+
+Zielanker: $Y = C + I + G + (X - M)$ treibt Jobs; kurzfristig $\pi \uparrow \Rightarrow u \downarrow$ (Phillips), langfristig frisst $\pi$ das Vertrauen.
+
 Klausur-Satz: `Expansive Fiskalpolitik staerkt Wachstum und Jobs, gefaehrdet aber Preise und Umwelt.`
 
 ## Anekdote & Fun-Fact
@@ -129,6 +143,10 @@ VERGLEICH辨别实验（双向辨析：扩张眼 vs. 紧缩眼）：
 
 VERGLEICH: Waehle erst das Konzept — 【选概念】先判断政策方向：(i) Expansiv-Konzept（花钱降息：增长就业好、物价环境差）还是 (ii) Restriktiv-Konzept（加息紧缩：物价好、增长就业差）—— dann Sechseck zeichnen.
 
+DUELL Weg A (freier Markt) gegen Weg B (Staat greift ein): Weg A setzt auf freie Maerkte und stabile Ordnung: Wettbewerb, Notenbank-Unabhaengigkeit und solide Haushalte heilen auf Dauer. Weg B steuert aktiv: Konjunkturprogramme, Mindestlohn und Klimainvestitionen sichern Jobs und Zukunft heute. Entscheide am Kriterium: Stabilitaet und Effizienz sprechen fuer A, Beschaeftigung und Vorsorge sprechen fuer B.
+
+对决 Weg A（自由市场）vs Weg B（国家干预）：Weg A信自由加秩序：竞争、独立央行、稳财政，慢但治本。Weg B信主动调：刺激底薪气候投资，保今天的岗和明天。判据：稳定效率站A，就业防患站B。
+
 AUFGABE A：Die Zentralbank erhoeht die Zinsen gegen $6\%$ Inflation. Welche Sechseck-Folgen?
 AUFGABE B：Der Staat senkt Steuern zur Job-Rettung in der Rezession. Welche Sechseck-Folgen?
 
@@ -141,9 +159,9 @@ Klausur-Satz: `Expansiv hilft Jobs, restriktiv hilft Preisen: Jede Richtung hat 
 ## Schritt 6 — check: Selbsttest zu Wirtschaftspolitik und magisches Sechseck
 CHECK检索默写（自测 3 题，与答案配对）：
 
-FRAGE: Welche sechs Ziele hat das magische Sechseck? | ANTWORT: Wachstum, Beschaeftigung, Preisstabilitaet, Aussengleichgewicht, Verteilung, Umwelt.
-FRAGE: Was ist ein Zielkonflikt mit Beispiel? | ANTWORT: Mehr Wachstum erhoeht oft Inflation und Umweltschaden, z. B. Bauprogramm.
-FRAGE: Wo steht das Viereck im Gesetz? | ANTWORT: Im Stabilitaetsgesetz von 1967, Sechseck als Erweiterung.
+- FRAGE: Welche sechs Ziele hat das magische Sechseck? | ANTWORT: Wachstum, Beschaeftigung, Preisstabilitaet, Aussengleichgewicht, Verteilung, Umwelt.
+- FRAGE: Was ist ein Zielkonflikt mit Beispiel? | ANTWORT: Mehr Wachstum erhoeht oft Inflation und Umweltschaden, z. B. Bauprogramm.
+- FRAGE: Wo steht das Viereck im Gesetz? | ANTWORT: Im Stabilitaetsgesetz von 1967, Sechseck als Erweiterung.
 
 Klausur-Satz: `Kein Politikvorschlag erfuellt alle sechs Ziele gleichzeitig ohne Abstriche.`
 
@@ -165,6 +183,7 @@ SITUATION: Ein Abgeordneter fordert Steuersenkungen fuer mehr Wachstum und behau
 AUFGABE: Beurteilen Sie in ca. 150 Woertern mit dem Sechseck, welche Ziele profitieren und welche leiden, plus Empfehlung.
 RUBRIC (30 XP): Zwei Profiteure korrekt mit Kette (10 XP) | Zwei Leidtragende korrekt mit Kette (10 XP) | Urteil mit Zielkonflikt-Begriff und Empfehlung (10 XP).
 
+Klausur-Satz: `Die Sechseckklausur benennt erst alle beruehrten Ecken mit Indikator und wuerdigt dann den Trade-off mit Zeithorizont.`
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Was der Krisenstab lernt
 
 TAKEAWAY 1盒（核心总结）：
@@ -175,3 +194,5 @@ Takeaway-Satz: `Sechseck denken heisst Konflikte denken: Jede Massnahme rundet e
 REFLEXION 2问：
 1. 过程自省：Welcher Schritt fiel schwerer — die Transmissionskette im Beispiel (Schritt 4) oder die Konzeptwahl expansiv gegen restriktiv (Schritt 5)?
 2. 元认知计划：Beim naechsten Mal zeichne ich zuerst das Sechseck und markiere Gewinner mit Plus und Verlierer mit Minus.
+
+Klausur-Satz: `Sechs Ecken, ein Zaubertrick: Wer Zielkonflikte mit Horizont benennt, verspricht keine Wunder, sondern priorisiert ehrlich.`

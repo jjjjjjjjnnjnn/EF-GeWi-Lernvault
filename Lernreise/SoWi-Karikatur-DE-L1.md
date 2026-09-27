@@ -22,7 +22,7 @@ version: Lesson-v3
 
 > EPISODE 13 — Akt V — Klausurwerkstatt der Stadtkanzlei — Auftrag von Betriebsraetin Yasmin Oeztuerk: Wahlbetrugsvorwurf bei der Betriebsratswahl.
 
-HOOK (Stadtrats-Krise, lies zuerst): EPISODE 13 — Akt V — Klausurwerkstatt der Stadtkanzlei — Stadt Tycoon City ruft dich in den Krisenstab. Betriebsraetin Yasmin Oeztuerk stuermt mit einer Eilmeldung ins Buero: Wahlbetrugsvorwurf bei der Betriebsratswahl — und morgen entscheidet der Stadtrat. Der Markt schreit, die Warteschlange waechst, die Kasse zittert: Ohne deine Analyse kippt die Stadt vom Apfelparadies in den Schwarzmarkt. Dein Auftrag in dieser Episode: Uebersetze die Strassenszene in das heutige Thema Karikaturanalyse in drei Schritten. Sammle Belege, stelle den Sandkasten [formula] scharf und liefere dem Rat eine Klausur-Antwort, die einer Pruefungskommission standhaelt. Erste Spur: TARGET: Hebt die Klausurformel aufs Brett — Bedingung: Dreischritt 30-40-30 eingehalten, drei Fachbegriffe korrekt gesetzt, Urteil mit Massstab und Abwaegung geschlossen. Wer den Mechanismus versteht, rettet den Haushalt — und vielleicht die Wahl. Der Countdown laeuft, das Radio berichtet live, die Opposition wartet nur auf deinen Fehler: Oeffne die Ziele, schnapp dir die Begriffe und beweise, dass Tycoon City regierbar bleibt.
+HOOK (Stadtrats-Krise, lies zuerst): EPISODE 13 — Akt V — Klausurwerkstatt der Stadtkanzlei — Stadt Tycoon City ruft dich in den Krisenstab. Betriebsraetin Yasmin Oeztuerk stuermt mit einer Eilmeldung ins Buero: Wahlbetrugsvorwurf bei der Betriebsratswahl — und morgen entscheidet der Stadtrat. Realer Fall: Eine Karikatur zeigt eine Waage mit vollem Geldsack gegen leeren Teller, Unterschrift sinngemaess Chancen fuer alle. Eine zweite zeigt einen halb zersaegten Baum neben rauchendem Schornstein, Unterschrift Wachstum oder Zukunft. Zwei Bilder, zwei Konflikte: Verteilung gegen Zielkonflikt. Wer das Verfahren verwechselt, schreibt daneben. Erste Spur: TARGET: Hebt die Klausurformel aufs Brett — Bedingung: Dreischritt 30-40-30 eingehalten, drei Fachbegriffe korrekt gesetzt, Urteil mit Massstab und Abwaegung geschlossen. Oeffne die Ziele, schnapp dir die Begriffe und beweise, dass Tycoon City regierbar bleibt.
 
 ZIELE (drei messbare Ziele dieser Lektion):
 
@@ -46,11 +46,19 @@ Ohne Handwerk wird aus Analyse Geschwafel. Was darf in Beschreibung stehen, was 
 
 ### Fachbegriffe & Definitionen
 
-- **Beschreibung:** Die wertfreie Erfassung von Figuren, Objekten und Text ohne Deutung. Sie verbietet Worte wie zeigt dass oder kritisiert.
-- **Symboldeutung:** Die Uebersetzung eines Bildelements in einen Wirklichkeitsbezug mit Beleg, etwa Urne als Wahlmuedigkeit mit Verweis auf Beteiligung.
-- **Kontexteinordnung:** Die Verknuepfung des Bildes mit EF-Thema und Vorwissen, etwa Partizipationswandel und Beteiligungsformen.
-- **Intention:** Die Absicht des Zeichners aus Kritik und Appell. Sie fragt, wen er mit Spott treffen und wen er zum Handeln bewegen will.
-- **Teilhabe:** Das Urteilskriterium aus Chance und Nutzung. Es misst, ob die Bildaussage Beteiligung staerkt oder entwertet.
+- **Karikatur**: Eine Karikatur ueberzeichnet reale Missstaende mit satirischer Absicht. Sie ist Kommentar, kein Protokoll. Ihr Wahrheitsanspruch liegt in der Zuspitzung, nicht in der Vollstaendigkeit. Mechanismus: Ueberzeichnung isoliert einen Widerspruch und macht ihn auf einen Blick diskutierbar. Klausur-Tipp: Nenne im ersten Satz Textsorte plus satirische Absicht.
+- **Überzeichnung**: Ueberzeichnung vergroessert ein Merkmal bis zur Sichtbarkeit. Sie ist Methode, kein Zeichenfehler. Was vergroessert wird, verrät die Stoßrichtung. Mechanismus: Groesse, Verzerrung und Kontrast lenken den Blick auf den kritisierten Widerspruch. Klausur-Tipp: Frage immer Was wird vergroessert und wen trifft die Vergroesserung.
+- **Symbol**: Symbole stehen fuer reale Phaenomene: Waage fuer Verteilung, Leiter gegen Aufzug fuer Startchancen, Baum gegen Saege fuer Zielkonflikte. Ohne Uebersetzung bleibt das Bild stumm. Mechanismus: Bildzeichen plus Realbezug plus EF-Kontext ergeben die Deutung. Klausur-Tipp: Lege eine Symbolbank an und zitiere sie explizit.
+- **Deutung / Intention**: Deutung uebersetzt Gesehenes in Gemeintes mit Kontext. Intention benennt, wen oder was der Zeichner kritisiert. Beides gehoert in analysieren, nie in beschreiben. Mechanismus: Element, Phaenomen, EF-Thema, Kritikadressat - diese Viererkette schliesst die Analyse. Klausur-Tipp: Formuliere Der Karikaturist kritisiert ... mit Adressat.
+- **Beurteilungsmaßstab**: Ohne Kriterium bleibt jede Stellungnahme Meinung. Gerechtigkeit, Teilhabe und Nachhaltigkeit sind die drei Standardmassstaebe. Erst am Massstab werden Pro und Contra vergleichbar. Mechanismus: Kriterium nennen, beide Seiten messen, Abwaegung, Urteil. Klausur-Tipp: Schreibe den Massstab als eigenen Satz, sonst null Punkte fuer AFB III.
+
+
+
+
+
+
+
+
 
 ### Wirkungsgefuege / Modell
 
@@ -116,6 +124,8 @@ VERGLEICH (Wahl des Weges, A gegen B):
 
 VERGLEICH: Pruefe zuerst das Aufgabenziel und waehle dann den passenden Weg — Weg A oder Weg B — und loese erst danach die Aufgabe.
 
+DUELL Weg A (freier Markt) gegen Weg B (Staat greift ein): Weg A liest die Karikatur als freien Markt der Meinungen: Der Zeichner duerfte zuspitzen, die Deutung bleibt offen, Pluralitaet siegt. Weg B liest sie als Schutzauftrag: Menschenwuerde und Jugendschutz begrenzen die Satire, Gerichte ziehen Linien. Entscheide am Kriterium: Meinungsfreiheit spricht fuer A, Wuerdeschutz fuer B - dokumentiert an Art. 5 Abs. 2.
+
 Weg A: Deskriptiver Zugang mit Bildelementen und Symbolen. Leitfrage: Was ist sichtbar und wofuer steht es? Blick auf Figuren, Objekte, Text und Realbezug. Ergebnis ist eine saubere Deutung ohne vorschnelles Urteil: Jedes Symbol erhaelt Bedeutung mit Beleg.
 
 Weg B: Kritische Deutung mit Uebertreibung, Satire und Haltungskritik. Leitfrage: Was will der Zeichner entlarven und wie haltbar ist seine Haltung? Blick auf Spott, Appell und Einseitigkeit. Urteil am Kriterium Teilhabe: Staerkt die Kritik Beteiligung oder verzerrt sie Wirklichkeit?
@@ -134,9 +144,9 @@ Klausur-Satz: `Ein Verteilungskonflikt fragt nach der gerechten Aufteilung, ein 
 
 CHECK (drei Fragen mit Antworten):
 
-FRAGE: Was darf im Schritt beschreiben nicht vorkommen? | ANTWORT: Keine Deutung — also keine Formulierungen wie zeigt, dass oder kritisiert; beschrieben werden nur Figuren, Objekte und Text.
-FRAGE: Aus welchen drei Bausteinen besteht der Schritt analysieren? | ANTWORT: Deutung der Symbole, Einordnung in den Kontext (EF-Thema) und Benennung der Intention des Karikaturisten.
-FRAGE: Was braucht eine gelungene Beurteilung einer Karikatur? | ANTWORT: Ein genanntes Kriterium, je ein Pro- und Contra-Argument und ein begruendetes eigenes Urteil.
+- FRAGE: Was darf im Schritt beschreiben nicht vorkommen? | ANTWORT: Keine Deutung — also keine Formulierungen wie zeigt, dass oder kritisiert; beschrieben werden nur Figuren, Objekte und Text.
+- FRAGE: Aus welchen drei Bausteinen besteht der Schritt analysieren? | ANTWORT: Deutung der Symbole, Einordnung in den Kontext (EF-Thema) und Benennung der Intention des Karikaturisten.
+- FRAGE: Was braucht eine gelungene Beurteilung einer Karikatur? | ANTWORT: Ein genanntes Kriterium, je ein Pro- und Contra-Argument und ein begruendetes eigenes Urteil.
 
 Klausur-Satz: `Ohne einen genannten Beurteilungsmassstab bleibt jede Stellungnahme zur Karikatur eine blosse Meinung.`
 
@@ -157,6 +167,7 @@ SITUATION: In der Klausur liegt eine selbst erstellte Karikatur vor: Eine Wahlur
 AUFGABE (AFB III): Verfasse eine zusammenhaengende Darstellung von etwa 150 Woertern mit Kriterium, Anwendung und Urteil.
 RUBRIC (30 XP): Beschreibung ohne Deutung mit Figuren, Objekten und Text (6 XP) | Symboldeutung mit Realbezug und Kontext Partizipationswandel (8 XP) | Benennung der Intention des Karikaturisten (4 XP) | Kriterium der Teilhabe mit Pro und Contra und begruendetem Urteil (8 XP) | Zeitdisziplin und klare Dreiteilung (4 XP).
 
+Klausur-Satz: `Die Transferleistung unterscheidet Verteilungs- von Zielkonflikt und belegt jede Deutung mit Symbol, Realbezug und EF-Kontext.`
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Was der Krisenstab lernt
 
 TAKEAWAY (Kernbotschaft in einem Kasten):
@@ -166,3 +177,5 @@ Takeaway-Satz: `Erst sauber sehen, dann mutig deuten, dann am Massstab urteilen.
 REFLEXION (zwei Fragen):
 1. Welcher Weg fiel dir leichter — sauberes Beschreiben und Zuordnen (Schritt 4) oder Deutung von Spott und Haltung (Schritt 5)?
 2. Woran erkennst du kuenftig, ob eine Deutung noch Beleg braucht oder schon urteilsreif ist?
+
+Klausur-Satz: `Die Karikatur ist ein legitimer Aufriss, aber ein schwacher Beleg: als These nutzen, mit Daten und Institutionen begruenden.`

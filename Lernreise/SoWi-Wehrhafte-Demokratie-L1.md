@@ -22,7 +22,7 @@ version: Lesson-v3
 
 > EPISODE 40｜Akt IV-V — Tarifarena und Demokratiewerkstatt｜召集人 Jugendparlamentarierin Lina Vogt：Jugendparlament-Revolte um Busfahrplaene。
 
-HOOK 市长危机（先读剧情，再进 ZIELE）：【本集战役 EP40｜Akt IV-V — Tarifarena und Demokratiewerkstatt｜虚拟城邦 Tycoon City 告急】市长办公室深夜灯火通明，Jugendparlamentarierin Lina Vogt 冲进来报告：Jugendparlament-Revolte um Busfahrplaene，而明天市议会就要投票。集市在喊、长队在排、国库在抖：苹果集市价格战一路烧到租金黑市，再烧到基尼天平与劳资谈判桌，本集正是“Wehrhafte Demokratie und Extremismus”的现实引爆点。你的身份是市长直属经济改革规划委员：把街头危机翻译成考点，用沙盘 [balance-board] 拿出可验证的数值方案，再交出一份 Klausur 满分答卷稳住议会。通关线索：TARGET: Bringt auf dem Verhandlungsbrett beide Waagschalen in die Balance — Bedingung: Zustimmung beider Baenke, Loesung mit Kompromisslinie, Ergebnisprotokoll mit zwei Begruendungen je Seite. 上一集的结尾就是这一集的悬念——黑市账本、税改天平、劳资天平、选票天平，四座天平有一座倒了，城邦就停摆。电台正在直播，反对派等着挑错：先读 ZIELE，再啃术语，把传导机制画成你的作战地图。DE-Briefing: Episode 40 — Jugendparlamentarierin Lina Vogt meldet Jugendparlament-Revolte um Busfahrplaene; der Stadtrat entscheidet morgen. Rette Tycoon City mit Analyse, Sandkasten und Klausur-Antwort zum Thema Wehrhafte Demokratie und Extremismus.
+HOOK 市长危机（先读剧情，再进 ZIELE）：【本集战役 EP40｜Akt IV-V — Tarifarena und Demokratiewerkstatt｜虚拟城邦 Tycoon City 告急】市长办公室深夜灯火通明，Jugendparlamentarierin Lina Vogt 冲进来报告：Jugendparlament-Revolte um Busfahrplaene，而明天市议会就要投票。你的身份不变：市长直属经济改革规划委员。真实判例切入：NPD2017年被判“反宪法但太小不必禁”——想禁还禁不掉；某政党地方支部被宪法保卫局列为观察对象，支持者喊迫害、内政部喊防卫。民主能不能对敌人不宽容？第21条第2款+社团法+公务员忠诚，三件防具各有各的价。通关线索：TARGET: Bringt auf dem Verhandlungsbrett beide Waagschalen in die Balance — Bedingung: Zustimmung beider Baenke, Loesung mit Kompromisslinie, Ergebnisprotokoll mit zwei Begruendungen je Seite. 先读 ZIELE，再啃术语，把传导机制画成你的作战地图。DE-Briefing: Episode 40 — Jugendparlamentarierin Lina Vogt meldet Jugendparlament-Revolte um Busfahrplaene; der Stadtrat entscheidet morgen. Rette Tycoon City mit Analyse, Sandkasten und Klausur-Antwort zum Thema Wehrhafte Demokratie und Extremismus.
 
 ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
@@ -38,11 +38,19 @@ PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→�
 
 中文在上，德语在下：
 
-- 自由民主基本秩序 — freiheitliche demokratische Grundordnung (fdGO)：宪法秩序的内核，含人权、人民主权、法治、多党制与少数保护。
-- 极端主义 — Extremismus：以摧毁 fdGO 本身为目标，因此不受宪法保护。
-- 激进主义 — Radikalismus：在体制内要求根本性改变，合法性上仍受保护。
-- 民粹主义 — Populismus：构造"人民 vs 精英"的对立，承诺简单解，危险在于否定选举与少数权利。
-- 实现可能性 — Potentialität：政党禁令的关键门槛，仅有违宪目标不足以禁党。
+- **Wehrhafte Demokratie**（防卫性民主）：民主有权自卫：自由被用来消灭自由时，宽容就停；三级梯：预警观察禁止。 Die Ordnung darf sich gegen ihre Abschaffung wehren. Freiheit endet dort, wo sie zur Beseitigung der Freiheit missbraucht wird. Schutz und Offenheit stehen in Dauerpannung - Spannung heisst hier Konflikt. Mechanismus: Fruehwarnung, Beobachtung, Verbot - die Leiter steigt nur bei kaempferischer Feindschaft. Klausur-Tipp: Definiere ueber das Paradoxon Toleranz gegen Intoleranz.
+- **Parteiverbot Art. 21 Abs. 2**（政党禁止）：只有宪法法院能禁，且须积极战斗+有分量；2017年NPD倒在分量关。 Nur Karlsruhe darf verbieten, nur bei aktiv kaempferischer Haltung. NPD 2017 scheiterte an der Relevanzhuede. Das Schaerfste bleibt Ultima Ratio. Mechanismus: Potenzialitaet plus Aktivitaet plus Relevanz - erst das Trio rechtfertigt den Griff. Klausur-Tipp: Nenne Monopol plus Dreierhuede.
+- **Meinungsfreiheit Schranken**（言论自由界限）：第5条保言论、第5条第2款设界：煽动仇恨、否认大屠杀入刑，个案权衡。 Art. 5 schuetzt Meinung weit, Abs. 2 begrenzt ueber allgemeine Gesetze, Jugendschutz und Ehre. Volksverhetzung und Holocaustleugnung sind strafbar. Gerichte waegen Fall fuer Fall. Mechanismus: Schutzbereich oeffnen, Schranke pruefen, Verhaeltnismaessigkeit messen. Klausur-Tipp: Lege die Drei-Stufen-Schablone ueber jede Aeusserung.
+- **Verfassungsschutz**（宪法保卫局）：保卫局只许看不许禁：盯梢+报告+预警，透明是主武器。 Die Aemter sammeln Informationen ueber extremistische Bestrebungen. Sie duerfen beobachten, nicht verbieten. Einstufungen als Verdachtsfall ermoeglichen nachrichtendienstliche Mittel. Mechanismus: Beobachten plus Berichten plus Warnen - Transparenz ist die Hauptwaffe. Klausur-Tipp: Trenne Beobachtung von Verbot sauber.
+- **Zivilcourage / Zivilgesellschaft**（公民勇气/社会）：禁令救不了价值观：敢顶嘴、去投票、肯参与，才是内墙。 Demokratie lebt von Buergen, die widersprechen, waehlen und mitmachen. Verbote allein retten keine Werte. Bildung und Beteiligung bauen die innere Mauer. Mechanismus: Alltagswiderspruch plus Engagement entziehen Extremisten Resonanz. Klausur-Tipp: Ergaenze jeden Staatschutz um Gesellschaftsschutz.
+
+
+
+
+
+
+
+
 
 Klausur-Satz: `Ein Parteiverbot nach Art. 21 II GG setzt voraus, dass eine Partei die fdGO beeinträchtigt oder beseitigt und dafür eine reale Durchsetzungschance besteht.`
 
@@ -70,6 +78,10 @@ ENTDECKEN（1概念 + 1文字图解）：
    [3] Demokratiefoerderung politische Bildung, Beutelsbacher Konsens
    NPD 2017: verfassungswidrig, aber "ohne Potentialitaet" -> Verbot abgelehnt
 ```
+Kausalkette: Extremistische Signale, Beobachtung und Warnung, gesellschaftlicher Widerspruch zuerst, rechtlicher Griff zuletzt, gerichtliche Verhaeltnismaessigkeit ueber allem. Die Reihenfolge ist heilig: Wer zuerst verbietet und dann erklaert, verliert die innere Zustimmung.
+
+因果链：极端言行出现→保卫局观察预警→社会先顶（媒体、学校、公民）→法律后出手（社团禁、政党禁）→法院卡比例。出手顺序不能反：先禁后讲道理，民主就输了里子。
+
 
 Klausur-Satz: `Wehrhafte Demokratie schützt sich durch Parteiverbot (Art. 21 II, nur BVerfG), Beobachtung durch den Verfassungsschutz und politische Bildung.`
 
@@ -106,6 +118,10 @@ VERGLEICH辨别实验（双向辨析：Beobachtungs-Verfahren vs. Verbots-Verfah
 
 VERGLEICH: Wähle erst das Verfahren — 【选程序】先判断题目问的是 (i) Beobachtungs-Verfahren（谁观察、观察什么、有何报告后果：Verfassungsschutz、Bericht、Prävention）还是 (ii) Verbots-Verfahren（谁能禁、门槛是什么、后果如何：Art. 21 II、nur BVerfG、Potentialität）—— dann lösen.
 
+DUELL Weg A (freier Markt) gegen Weg B (Staat greift ein): Weg A vertraut der freien Auseinandersetzung: Offene Debatte, Bildung und Zivilcourage besiegen Extremismus ohne Verbote. Weg B greift wehrhaft ein: Beobachtung, Verbote und Treuepflichten schuetzen die Ordnung vor ihren Feinden. Entscheide am Kriterium: Offenheit und Meinungsfreiheit sprechen fuer A, Bestandsschutz der Demokratie spricht fuer B.
+
+对决 Weg A（自由市场）vs Weg B（国家干预）：Weg A信自由交锋：公开辩论教育勇气，不禁也能赢。Weg B信防卫出手：观察禁止忠诚义务，保制度不死。判据：开放言论站A，制度存续站B。
+
 AUFGABE A：Ein Kommentar fordert, eine soeben als „Verdachtsfall" eingestufte Partei unverzüglich zu verbieten. Welches Verfahren ist zu wählen, und wie ist die Forderung rechtlich einzuordnen?
 
 AUFGABE B：Ein Bericht dokumentiert, dass eine Organisation seit Jahren demokratiefeindliche Positionen verbreitet, ohne dass je ein Verbotsantrag gestellt wurde. Welches Verfahren ist zu wählen, und wie lässt sich der Vorgang einordnen?
@@ -120,9 +136,9 @@ Klausur-Satz: `Nur das Bundesverfassungsgericht darf ein Parteiverbot verhängen
 
 CHECK检索默写（自测 3 题，与答案配对）：
 
-FRAGE: Wie unterscheidet sich Radikalismus von Extremismus? | ANTWORT: Radikalismus fordert grundlegende Veraenderungen innerhalb der Verfassungsordnung und bleibt legal; Extremismus bekaempft die fdGO selbst und ist daher nicht geschuetzt.
-FRAGE: Welche drei Saeulen schuetzen die wehrhafte Demokratie? | ANTWORT: Parteiverbot (Art. 21 II, nur BVerfG), Beobachtung durch den Verfassungsschutz und politische Bildung (Demokratiefoerderung).
-FRAGE: Warum lehnte das Bundesverfassungsgericht 2017 ein NPD-Verbot ab? | ANTWORT: Die Partei war zwar verfassungswidrig, doch es fehlte die Potentialitaet — die reale Chance, ihre Ziele durchzusetzen.
+- FRAGE: Wie unterscheidet sich Radikalismus von Extremismus? | ANTWORT: Radikalismus fordert grundlegende Veraenderungen innerhalb der Verfassungsordnung und bleibt legal; Extremismus bekaempft die fdGO selbst und ist daher nicht geschuetzt.
+- FRAGE: Welche drei Saeulen schuetzen die wehrhafte Demokratie? | ANTWORT: Parteiverbot (Art. 21 II, nur BVerfG), Beobachtung durch den Verfassungsschutz und politische Bildung (Demokratiefoerderung).
+- FRAGE: Warum lehnte das Bundesverfassungsgericht 2017 ein NPD-Verbot ab? | ANTWORT: Die Partei war zwar verfassungswidrig, doch es fehlte die Potentialitaet — die reale Chance, ihre Ziele durchzusetzen.
 
 Klausur-Satz: `Verfassungswidrigkeit allein genügt nicht; erst die fehlende Potentialität macht das NPD-Verbot von 2017 verständlich.`
 
@@ -144,6 +160,7 @@ ROLLE: Du bist Sachverständige/r in einer Anhörung des Innenausschusses zur Fr
 SITUATION: Die Partei erreicht in Umfragen fünf Prozent, verbreitet völkisch-nationalistische Positionen und stellt Wahlen sowie Minderheitenrechte infrage. Ein Teil der Öffentlichkeit fordert ein sofortiges Verbot, ein anderer warnt vor einem „Wahlkampfhelfer-Effekt" und vor einem Eingriff in die Opposition. Beurteilen Sie in einer zusammenhängenden Stellungnahme (ca. 150 Wörter), ob ein Verbotsverfahren eingeleitet werden sollte, und berücksichtigen Sie dabei die Verhältnismäßigkeit.
 RUBRIC (30 XP): Benennung der Rechtslage — nur BVerfG, Art. 21 II, doppelte Hürde (6 XP) | Analyse der Gefahrenlage — Verstoß gegen die fdGO, Infragestellen von Wahlen und Minderheitenrechten (8 XP) | Abwägung mit Kriterien — Verhältnismäßigkeit, Funktionsfähigkeit der Opposition, Missbrauchsgefahr (10 XP) | Kriteriengeleitetes Urteil mit klarer Empfehlung (6 XP).
 
+Klausur-Satz: `Die Demokratieschutzklausur staffelt Beobachtung, Verbot und Verhaeltnismaessigkeit und ergaenzt jeden Staatsgriff um die gesellschaftliche Antwort.`
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Was der Krisenstab lernt
 
 TAKEAWAY 1盒（核心总结）：
@@ -154,3 +171,5 @@ Takeaway-Satz: `Wehrhaft heißt nicht wehrlos: Die Demokratie darf sich verteidi
 REFLEXION 2问：
 1. 过程自省：Welcher Schritt fiel schwerer — die Abgrenzung Radikalismus/Extremismus (Schritt 3) oder die doppelte Hürde beim Parteiverbot (Schritt 4)?
 2. 元认知计划：Beim nächsten Mal prüfe ich zuerst, ob der Text nur Beobachtung oder ein Verbot verlangt, und wähle danach das Verfahren.
+
+Klausur-Satz: `Wehrhaft heisst nicht angsthaft: Die Demokratie schuetzt sich mit Verfahren, nicht mit Verboten als erstem Reflex.`

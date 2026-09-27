@@ -22,7 +22,7 @@ version: Lesson-v3
 
 > EPISODE 17 — Akt IV-V — Tarifarena und Demokratiewerkstatt — Auftrag von Klinikpfleger Jonas Lindqvist: Rollenkonflikt im Stadtklinikum.
 
-HOOK (Stadtrats-Krise, lies zuerst): EPISODE 17 — Akt IV-V — Tarifarena und Demokratiewerkstatt — Stadt Tycoon City ruft dich in den Krisenstab. Klinikpfleger Jonas Lindqvist stuermt mit einer Eilmeldung ins Buero: Rollenkonflikt im Stadtklinikum — und morgen entscheidet der Stadtrat. Der Markt schreit, die Warteschlange waechst, die Kasse zittert: Ohne deine Analyse kippt die Stadt vom Apfelparadies in den Schwarzmarkt. Dein Auftrag in dieser Episode: Uebersetze die Strassenszene in das heutige Thema Parteien und Willensbildung. Sammle Belege, stelle den Sandkasten [balance-board] scharf und liefere dem Rat eine Klausur-Antwort, die einer Pruefungskommission standhaelt. Erste Spur: TARGET: Bringt auf dem Verhandlungsbrett beide Waagschalen in die Balance — Bedingung: Zustimmung beider Baenke, Loesung mit Kompromisslinie, Ergebnisprotokoll mit zwei Begruendungen je Seite. Wer den Mechanismus versteht, rettet den Haushalt — und vielleicht die Wahl. Der Countdown laeuft, das Radio berichtet live, die Opposition wartet nur auf deinen Fehler: Oeffne die Ziele, schnapp dir die Begriffe und beweise, dass Tycoon City regierbar bleibt.
+HOOK (Stadtrats-Krise, lies zuerst): EPISODE 17 — Akt IV-V — Tarifarena und Demokratiewerkstatt — Stadt Tycoon City ruft dich in den Krisenstab. Klinikpfleger Jonas Lindqvist stuermt mit einer Eilmeldung ins Buero: Rollenkonflikt im Stadtklinikum — und morgen entscheidet der Stadtrat. Realer Fall: Eine Kleinpartei scheitert mit 4,9 Prozent an der Fuenfprozenthuerde und schimpft auf undemokratische Huerden. Parallel erklaert Karlsruhe die NPD 2017 fuer verfassungsfeindlich, aber zu klein fuer ein Verbot. Schuetzt die Huerde Stabilitaet oder erdrosselt sie Vielfalt? Schuetzt das Verbot Demokratie oder verletzt es sie? Erste Spur: TARGET: Bringt auf dem Verhandlungsbrett beide Waagschalen in die Balance — Bedingung: Zustimmung beider Baenke, Loesung mit Kompromisslinie, Ergebnisprotokoll mit zwei Begruendungen je Seite. Oeffne die Ziele, schnapp dir die Begriffe und beweise, dass Tycoon City regierbar bleibt.
 
 ZIELE (drei messbare Ziele dieser Lektion):
 
@@ -34,6 +34,7 @@ ZIELE (drei messbare Ziele dieser Lektion):
 
 In den Siebzigern vereinten zwei Parteien ueber neunzig Prozent der Stimmen, heute braucht es oft drei Partner fuer eine Regierung. Stammwaehler schmelzen, Wechselwaehler entscheiden. Braucht die Demokratie noch grosse Schiffe oder viele Boote? In dieser Lektion lernst du zwei Wege der Antwort: Weg A vertraut den Parteien als Vermittlern nach Art. 21 GG, Weg B vertraut Buergerinitiativen und Bewegungen mit direktem Druck.
 
+Klausur-Satz: `Parteien buendeln Interessen zu Programmen und tragen sie ueber die Zweitstimme in Macht - Huerde und Verbot entscheiden, welche Stimmen ankommen.`
 ## Schritt 2 — entdecken: Werkzeugkoffer von Klinikpfleger Jonas Lindqvist: 5 Begriffe scharf stellen
 
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
@@ -44,11 +45,19 @@ Drei Ideen praegen alle Programme, doch wer steht wofuer? Ohne Kompass wird Wahl
 
 ### Fachbegriffe & Definitionen
 
-- **Konservatismus:** Die Leitidee von Ordnung und Tradition. Sie betont massvollen Wandel und den Staat als Hueter von Stabilitaet.
-- **Sozialismus:** Die Leitidee von Gleichheit und Solidaritaet. Sie fordert staatlichen Ausgleich und soziale Gerechtigkeit durch Umverteilung.
-- **Liberalismus:** Die Leitidee von Freiheit und Eigenverantwortung. Sie verlangt einen schlanken Staat und offne Maerkte.
-- **Volkspartei:** Der Parteityp mit breiter Basis aus mehreren Schichten und Regionen. Sie verbindet Mitte mit Regierungsfaehigkeit und Kompromiss.
-- **Parteienverdrossenheit:** Die Distanz zu konkreten Parteien und Personen. Sie trifft meist nicht das System, sondern Akteure und Personal.
+- **Partei Art. 21**: Parteien wirken an der Willensbildung des Volkes mit und muessen innerlich demokratisch sein. Ihre Finanzierung ist teils staatlich und streng transparent. Verfassungsfeindliche Parteien kann das Gericht verbieten. Mechanismus: Mitglieder werben, Programme binden, Mandate tragen - vom Ortsverein bis zur Fraktion. Klausur-Tipp: Zitiere Art. 21 plus innere Ordnung als Doppelmerkmal.
+- **Fünfprozenthürde**: Nur wer fuenf Prozent der Zweitstimmen holt, zieht in Fraktionsstaerke ein. Die Huerde sichert regierungsfaehige Mehrheiten. Sie kostet kleine Parteien ihre Stimme im Parlament. Mechanismus: Sperrklausel filtert Splittergruppen heraus und buendelt Koalitionsdruck hinter grossen Lagern. Klausur-Tipp: Waegle Stabilitaet gegen Chancengleichheit mit Urteil.
+- **Wahlrecht**: Die personalisierte Verhaeltniswahl mischt Personen- und Parteilogik. Erststimme waehlt Koepfe, Zweitstimme entscheidet Macht. Ueberhang und Ausgleich sichern Proportionalitaet. Mechanismus: Zweitstimmenanteil bestimmt Sitzanteil; Direktmandate ohne Deckung werden ausgeglichen. Klausur-Tipp: Erklaere jede Verzerrung ueber Erst- gegen Zweitstimme.
+- **Parteiverbot**: Nur das Bundesverfassungsgericht darf Parteien verbieten, und nur bei kaempferischer Verfassungsfeindschaft. Die NPD-Entscheidung 2017 zeigt die hohe Huerde. Verbot schuetzt und riskiert Demokratie zugleich. Mechanismus: Potenzialitaet plus Aktivitaet - erst bewaffnete Relevanz rechtfertigt das schärfste Mittel; das Schaerfste bleibt Ultima Ratio. Klausur-Tipp: Nenne Monopol des Gerichts plus hohe Huerde.
+- **Willensbildung**: Vom Stammtisch ueber Medien und Verbaende bis zur Fraktion wandert Meinung zu Macht. Parteien buendeln, Medien filtern, Verbaende lobbyieren. Wahlen entscheiden, wer bindet. Mechanismus: Input, Konversion, Output - wer die Stufen trennt, analysiert sauber. Klausur-Tipp: Lege jede Szene auf diese Dreistufen-Schablone.
+
+
+
+
+
+
+
+
 
 ### Wirkungsgefuege / Modell
 
@@ -116,6 +125,8 @@ VERGLEICH (Wahl des Weges, Weg A gegen Weg B):
 
 VERGLEICH: Waehle zuerst bewusst Weg A (Parteien als Vermittler) oder Weg B (Buergerinitiativen und Bewegungen) und begruende dann dein Urteil am passenden Kriterium.
 
+DUELL Weg A (freier Markt) gegen Weg B (Staat greift ein): Weg A feiert den freien Wettbewerb der Parteien: Vielfalt, Wechsel und neue Kraefte halten das System offen. Weg B baut Schutzmauern: Huerden, Verbote und Beobachtung wehren Zersplitterung und Feinde ab. Entscheide am Kriterium: Offenheit und Chancengleichheit sprechen fuer A, Stabilitaet und wehrhafte Demokratie fuer B.
+
 Weg A: Parteien als Vermittler nach Art. 21 GG leisten Integration und Sozialisation. Sie buendeln Interessen, bilden Personal aus und sichern Regierungsfaehigkeit ueber die Mitte. Staerke dieses Weges ist Dauer und Verantwortung; Grenze ist die Ferne zu einzelnen Anliegen und die Disziplin der Apparate.
 
 Weg B: Buergerinitiativen und Bewegungen setzen auf Einzelthemen-Protest und direkten Druck. Sie mobilisieren schnell, skandalisieren Versaeumnisse und zwingen Parteien zur Antwort. Staerke dieses Weges ist Naehe und Tempo; Grenze ist die Enge des Themas und die fehlende Verantwortung fuer das Ganze.
@@ -134,9 +145,9 @@ Klausur-Satz: `Die Erosion der Volksparteien zeigt sich im sinkenden Stimmenante
 
 CHECK (drei Fragen mit Antworten):
 
-FRAGE: Welche Aufgabe weist Art. 21 GG den Parteien zu, und wer darf sie verbieten? | ANTWORT: Parteien wirken an der politischen Willensbildung mit; verbieten darf sie nur das Bundesverfassungsgericht.
-FRAGE: Welche drei Merkmale kennzeichnen eine Volkspartei? | ANTWORT: Sie bindet mehrere Schichten, ist in vielen Regionen verankert und besitzt Regierungsfaehigkeit.
-FRAGE: Worauf richtet sich Parteienverdrossenheit in der Regel? | ANTWORT: Auf die konkreten Parteien und Politiker, meist nicht auf die Demokratie als Staatsform.
+- FRAGE: Welche Aufgabe weist Art. 21 GG den Parteien zu, und wer darf sie verbieten? | ANTWORT: Parteien wirken an der politischen Willensbildung mit; verbieten darf sie nur das Bundesverfassungsgericht.
+- FRAGE: Welche drei Merkmale kennzeichnen eine Volkspartei? | ANTWORT: Sie bindet mehrere Schichten, ist in vielen Regionen verankert und besitzt Regierungsfaehigkeit.
+- FRAGE: Worauf richtet sich Parteienverdrossenheit in der Regel? | ANTWORT: Auf die konkreten Parteien und Politiker, meist nicht auf die Demokratie als Staatsform.
 
 Klausur-Satz: `Die 5-Prozent-Hürde stabilisiert das Parlament, schließt aber kleine Parteien aus — Funktionsfähigkeit gegen Repräsentationsgerechtigkeit.`
 
@@ -157,6 +168,7 @@ SITUATION: Deine Gruppe soll auf einem Podium ein Wahlprogramm zum Thema Bildung
 AUFGABE (AFB III): Verfasse eine zusammenhaengende Darstellung von etwa 150 Woertern mit Kriterium, Anwendung und Urteil.
 RUBRIC (30 XP): These mit Kriterium Repraesentation und Regierungsfaehigkeit (5 XP) | Darstellung von Volkspartei und kleiner Partei mit Art. 21 Bezug (10 XP) | Anwendung auf Bildung mit Abwaegung von Integration und Themennaehe (10 XP) | Fazit mit Fachbegriffen und Klausur-Satz (5 XP).
 
+Klausur-Satz: `Die Parteienstunde gelingt erst mit Zweistimmenlogik und Huerdenmechanik, dann mit abgewogener Wuerdigung von Stabilitaet und Vielfalt.`
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Was der Krisenstab lernt
 
 TAKEAWAY (Kernbotschaft in einem Kasten):
@@ -166,3 +178,5 @@ Takeaway-Satz: `Parteien bündeln Macht, Bewegungen erzeugen Druck: Willensbildu
 REFLEXION (zwei Fragen):
 1. Wann ueberzeugt Weg A mit Integration und Regierungsfaehigkeit staerker, und wann verlangt der Fall Weg B mit Protest und direktem Druck? Nenne ein Abgrenzungsmerkmal.
 2. Pruefe deine Antwort an der Klausurnorm: Hast du Art. 21 korrekt zugeordnet, beide Wege erwoegen und das Urteil an einem expliziten Kriterium begruendet?
+
+Klausur-Satz: `Parteien sind Uebersetzer, keine Eigentuemer des Volkswillens: Sie buendeln Stimmen, doch Wahlen, Gerichte und Medien pruefen die Uebersetzung.`

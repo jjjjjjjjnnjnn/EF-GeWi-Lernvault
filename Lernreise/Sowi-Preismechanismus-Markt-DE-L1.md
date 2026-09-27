@@ -22,7 +22,7 @@ version: Lesson-v3
 
 > EPISODE 21 — Akt I-II — Apfelmarkt und Mietendeckel — Auftrag von Koalitionsmanagerin Vera Lutz: Koalitions-Poker um eine Stimme.
 
-HOOK (Stadtrats-Krise, lies zuerst): EPISODE 21 — Akt I-II — Apfelmarkt und Mietendeckel — Stadt Tycoon City ruft dich in den Krisenstab. Koalitionsmanagerin Vera Lutz stuermt mit einer Eilmeldung ins Buero: Koalitions-Poker um eine Stimme — und morgen entscheidet der Stadtrat. Der Markt schreit, die Warteschlange waechst, die Kasse zittert: Ohne deine Analyse kippt die Stadt vom Apfelparadies in den Schwarzmarkt. Dein Auftrag in dieser Episode: Uebersetze die Strassenszene in das heutige Thema Preismechanismus und Marktformen. Sammle Belege, stelle den Sandkasten [markt-sim] scharf und liefere dem Rat eine Klausur-Antwort, die einer Pruefungskommission standhaelt. Erste Spur: TARGET: Stellt im Sandkasten Angebot und Nachfrage so ein, dass der Gleichgewichtspreis zwischen 8 und 12 Euro liegt, die gehandelte Menge mindestens 100 Einheiten erreicht und ein Probe-Hoechstpreis von 6 Euro als bindend mit Warteschlange entlarvt wird. Wer den Mechanismus versteht, rettet den Haushalt — und vielleicht die Wahl. Der Countdown laeuft, das Radio berichtet live, die Opposition wartet nur auf deinen Fehler: Oeffne die Ziele, schnapp dir die Begriffe und beweise, dass Tycoon City regierbar bleibt.
+HOOK (Stadtrats-Krise, lies zuerst): EPISODE 21 — Akt I-II — Apfelmarkt und Mietendeckel — Stadt Tycoon City ruft dich in den Krisenstab. Koalitionsmanagerin Vera Lutz stuermt mit einer Eilmeldung ins Buero: Koalitions-Poker um eine Stimme — und morgen entscheidet der Stadtrat. Realer Fall: Der Berliner Mietendeckel wurde 2021 vom Verfassungsgericht gekippt - elf Euro Marktmiete, acht Euro Deckel, danach verschwanden Angebote, Schlangen wuchsen, Abstandszahlungen kehrten zurueck. Parallel der Mindestlohnstreit: mehr Lohn schuetzt Existenzen, kleine Betriebe warnen vor Personalabbau. Ein Mechanismus, zwei Schnitte: Deckel unten erzeugt Mangel, Boden oben erzeugt Ueberfluss. Erste Spur: TARGET: Stellt im Sandkasten Angebot und Nachfrage so ein, dass der Gleichgewichtspreis zwischen 8 und 12 Euro liegt, die gehandelte Menge mindestens 100 Einheiten erreicht und ein Probe-Hoechstpreis von 6 Euro als bindend mit Warteschlange entlarvt wird. Oeffne die Ziele, schnapp dir die Begriffe und beweise, dass Tycoon City regierbar bleibt.
 
 ZIELE (drei messbare Ziele dieser Lektion):
 
@@ -46,11 +46,19 @@ Vier Funktionen, zwei Eingriffe, ein Schnittpunkt: Wer verwechselt, deutet falsc
 
 ### Fachbegriffe und Definitionen
 
-- **Nachfragekurve:** Die fallende Kurve der Kaufbereitschaft. Steigt der Preis, sinkt die nachgefragte Menge; faellt der Preis, steigt sie.
-- **Angebotskurve:** Die steigende Kurve der Verkaufsbereitschaft. Steigt der Preis, steigt die angebotene Menge; faellt der Preis, sinkt sie.
-- **Gleichgewicht:** Der Schnittpunkt beider Kurven. Dort stimmt die angebotene Menge mit der nachgefragten Menge ueberein und der Markt ist geraeumt.
-- **Mindestpreis:** Der bindende Eingriff oberhalb des Gleichgewichts. Er belohnt Anbieter, schreckt Nachfrager ab und erzeugt ein Ueberangebot.
-- **Hoechstpreis:** Der bindende Eingriff unterhalb des Gleichgewichts. Er erfreut Nachfrager, nimmt Anbietern den Anreiz und erzeugt eine Mangellage mit Schlange.
+- **Preismechanismus**: Der Preismechanismus stimmt Angebot und Nachfrage ohne Zentralbefehl ab. Millionen Kauf- und Verkaufsentscheidungen treffen sich im Preis. Der Preis traegt Signal-, Allokations- und Raeumungsfunktion. Mechanismus: Abweichungen erzeugen Ueberhaenge, Ueberhaenge druecken den Preis zurueck - solange kein Fixpreis blockiert. Klausur-Tipp: Nenne alle drei Funktionen mit je einem Halbsatz.
+- **Gleichgewichtspreis**: Der Gleichgewichtspreis gleicht angebotene und nachgefragte Menge exakt aus. Er liegt im Schnittpunkt fallender Nachfrage und steigenden Angebots. Dort ist der Markt geraeumt. Mechanismus: Nur am Schnittpunkt will niemand mehr nachverhandeln; jede Abweichung erzeugt Anpassungsdruck. Klausur-Tipp: Definiere immer ueber Schnittpunkt plus Raeumung.
+- **Nachfrageüberhang (schreibe Nachfrageueberhang)**: Liegt der Preis unter dem Gleichgewicht, uebersteigt die Nachfrage das Angebot. Kaeufer konkurrieren mit Wartezeit und Beziehungen. Der Mangel wandert in Schlange und Schattenmarkt. Mechanismus: Tiefer Preis heizt Nachfrage an und kuehlt Angebot ab - die Luecke waechst beidseitig. Klausur-Tipp: Hoechstpreis unten erzeugt Nachfrageueberhang - Richtung nie vertauschen.
+- **Angebotsüberhang (schreibe Angebotsueberhang)**: Liegt der Preis ueber dem Gleichgewicht, uebersteigt das Angebot die Nachfrage. Verkaeufer konkurrieren mit Rabatten und bleiben auf Ware sitzen. Beim Lohn droht Beschaeftigungsabbau. Mechanismus: Hoher Preis lockt Anbieter und verschreckt Nachfrager - die Luecke waechst beidseitig. Klausur-Tipp: Mindestpreis oben erzeugt Angebotsueberhang - Richtung nie vertauschen.
+- **Preiselastizität (schreibe Preiselastizitaet)**: Die Elastizitaet misst die Mengenreaktion auf Preisbewegungen. Unelastische Gueter wie Wohnraum reagieren traege und hart. Elastische Gueter weichen schnell auf Ersatz aus. Mechanismus: Je unelastischer die Nachfrage, desto groesser die Warteschlange beim Deckel und desto hoeher die Schwarzmarktpreise. Klausur-Tipp: Nutze Elastizitaet, um Haerte und Ausweichdruck zu begruenden.
+
+
+
+
+
+
+
+
 
 ### Wirkungsgefuege / Modell
 
@@ -118,6 +126,8 @@ Klausur-Satz: `Ein über dem Gleichgewichtspreis festgesetzter Mindestpreis füh
 
 VERGLEICH: Zwei Wege loesen dasselbe Problem unterschiedlich. Weg A vertraut auf freie Schwankung und Allokation ueber das Preissignal. Weg B greift zum Schutz der Existenz mit Hoechstpreis oder Mindestpreis ein. Pruefe zuerst die Aufgabe, waehle dann den passenden Weg.
 
+DUELL Weg A (freier Markt) gegen Weg B (Staat greift ein): Weg A vertraut dem freien Markt: Der Preis darf schwanken, signalisiert Knappheit, raeumt ueber Zahlungsbereitschaft - effizient, aber ohne Existenzschutz. Weg B greift zum Schutz ein: Hoechstpreis deckelt Miete, Mindestpreis stuetzt Lohn - sozial, aber mit Schlange, Schattenmarkt oder Jobrisiko. Entscheide am Kriterium: Allokationseffizienz spricht fuer A, Existenzsicherung fuer B.
+
 Weg A: Allokation ueber Preissignal. Der Preis darf frei schwanken, signalisiert Knappheit und Ueberfluss, lenkt Angebot und Nachfrage und raeumt den Markt im Gleichgewicht. Staerke ist Effizienz, Schwaeche ist fehlender Existenzschutz bei Miete und Lohn.
 
 Weg B: Staatliche Preisintervention zum Existenzschutz. Hoechstpreis deckelt Miete und schuetzt Mieter kurzfristig, Mindestpreis stuützt Lohn und schuetzt Beschaeftigte. Staerke ist soziale Sicherung, Schwaeche sind Mangellage mit Schlange und Schattenmarkt oder Ueberangebot mit Absatz- und Beschaeftigungsrisiko.
@@ -136,9 +146,9 @@ Klausur-Satz: `Wird ein Höchstpreis unterhalb des Gleichgewichtspreises festges
 
 CHECK (drei Fragen mit Antworten):
 
-FRAGE: Wie kommt das Marktgleichgewicht zustande. | ANTWORT: Wenn fallende Nachfrage und steigendes Angebot sich schneiden, stimmen angebotene und nachgefragte Menge ueberein und der Markt ist geraeumt.
-FRAGE: Welche vier Funktionen erfuellt der Preis im Modell des vollkommenen Marktes. | ANTWORT: Signal-, Allokations-, Ausgleichs- und Selektionsfunktion.
-FRAGE: Warum wirkt ein Mindestpreis nur oberhalb des Gleichgewichts und ein Hoechstpreis nur unterhalb. | ANTWORT: Darunter oder darueber waere die Festsetzung nicht bindend; erst abseits vom Gleichgewicht verhindert sie das freie Schwanken und erzeugt Ueberangebot oder Mangellage.
+- FRAGE: Wie kommt das Marktgleichgewicht zustande. | ANTWORT: Wenn fallende Nachfrage und steigendes Angebot sich schneiden, stimmen angebotene und nachgefragte Menge ueberein und der Markt ist geraeumt.
+- FRAGE: Welche vier Funktionen erfuellt der Preis im Modell des vollkommenen Marktes. | ANTWORT: Signal-, Allokations-, Ausgleichs- und Selektionsfunktion.
+- FRAGE: Warum wirkt ein Mindestpreis nur oberhalb des Gleichgewichts und ein Hoechstpreis nur unterhalb. | ANTWORT: Darunter oder darueber waere die Festsetzung nicht bindend; erst abseits vom Gleichgewicht verhindert sie das freie Schwanken und erzeugt Ueberangebot oder Mangellage.
 
 Klausur-Satz: `Ein staatlicher Mindestpreis entfaltet nur dann ökonomische Wirkung, wenn er über dem Gleichgewichtspreis fixiert wird.`
 
@@ -159,6 +169,7 @@ SITUATION: Die Stadt will per Satzung die Miete auf hoechstens acht Euro pro Qua
 AUFGABE (AFB III): Verfasse eine zusammenhaengende Darstellung von etwa 150 Woertern mit Kriterium, Anwendung und Urteil.
 RUBRIC (30 XP): Benennung als Hoechstpreis unterhalb des Gleichgewichts (5 XP) | Analyse der Mengenwirkung mit steigender Nachfrage und sinkendem Angebot plus Mangellage (10 XP) | Darlegung der Folgen mit Fehlallokation, Schattenmarkt und sinkenden Neubauinvestitionen (10 XP) | Kriteriengeleitetes Urteil mit Abwaegung von Effizienz und sozialer Zielsetzung (5 XP)
 
+Klausur-Satz: `Die Miet preisbremse ist als bindender Hoechstpreis unter dem Gleichgewicht zu wuerdigen: Mangellage messen, Schattenmarkt und Neubaufolgen nennen, Effizienz gegen Schutz abwaegen.`
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Was der Krisenstab lernt
 
 TAKEAWAY (Kernbotschaft in einem Kasten):
@@ -168,3 +179,5 @@ Takeaway-Satz: `Der freie Preis raeumt, der fixierte Preis schuetzt und verzerrt
 REFLEXION (zwei Fragen):
 1. Wo hast du zuletzt Weg A gegen Weg B abgewogen: Hat dich das Signal der Knappheit oder das Ziel des Schutzes staerker ueberzeugt, und an welchem Mengenzeichen hast du das festgemacht.
 2. Welchen Fehler willst du kuenftig vermeiden: Hoechstpreis mit Mindestpreis zu verwechseln oder Ueberangebot mit Mangellage zu vertauschen, und mit welchem Merksatz pruefst du kuenftig die Lage des Fixpreises zum Gleichgewicht.
+
+Klausur-Satz: `Der Preis lenkt die Allokation ueber Signale; wer ihn fixiert, hebt die Raeumung auf und verwandelt Knappheit in Warteschlangen statt sie zu beseitigen.`

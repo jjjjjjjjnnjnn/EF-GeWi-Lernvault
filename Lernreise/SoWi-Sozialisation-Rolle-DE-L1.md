@@ -22,7 +22,7 @@ version: Lesson-v3
 
 > EPISODE 29 — Akt IV-V — Tarifarena und Demokratiewerkstatt — Auftrag von Sechseck-Moderator Theo Albrecht: Sechseck-Trilemma vor laufenden Kameras.
 
-HOOK (Stadtrats-Krise, lies zuerst): EPISODE 29 — Akt IV-V — Tarifarena und Demokratiewerkstatt — Stadt Tycoon City ruft dich in den Krisenstab. Sechseck-Moderator Theo Albrecht stuermt mit einer Eilmeldung ins Buero: Sechseck-Trilemma vor laufenden Kameras — und morgen entscheidet der Stadtrat. Der Markt schreit, die Warteschlange waechst, die Kasse zittert: Ohne deine Analyse kippt die Stadt vom Apfelparadies in den Schwarzmarkt. Dein Auftrag in dieser Episode: Uebersetze die Strassenszene in das heutige Thema Sozialisation und Rolle. Sammle Belege, stelle den Sandkasten [balance-board] scharf und liefere dem Rat eine Klausur-Antwort, die einer Pruefungskommission standhaelt. Erste Spur: TARGET: Bringt auf dem Verhandlungsbrett beide Waagschalen in die Balance — Bedingung: Zustimmung beider Baenke, Loesung mit Kompromisslinie, Ergebnisprotokoll mit zwei Begruendungen je Seite. Wer den Mechanismus versteht, rettet den Haushalt — und vielleicht die Wahl. Der Countdown laeuft, das Radio berichtet live, die Opposition wartet nur auf deinen Fehler: Oeffne die Ziele, schnapp dir die Begriffe und beweise, dass Tycoon City regierbar bleibt.
+HOOK (Stadtrats-Krise, lies zuerst): EPISODE 29 — Akt IV-V — Tarifarena und Demokratiewerkstatt — Stadt Tycoon City ruft dich in den Krisenstab. Sechseck-Moderator Theo Albrecht stuermt mit einer Eilmeldung ins Buero: Sechseck-Trilemma vor laufenden Kameras — und morgen entscheidet der Stadtrat. Realer Fall: Derselbe Jugendliche johlt auf dem Flur und sitzt mucksmaeuschenstill im Unterricht - still wie eine Maus. Zu Hause heisst es alles gut, in der Gruppe laeuft der Live-Ticker der Beschwerden. Drei Gesichter, ein Mensch: keine Heuchelei, sondern Rollenspiel. Mead laesst das Selbst im Spiel entstehen; die Klausur prueft Erwartung, Konflikt und Abweichung. Erste Spur: TARGET: Bringt auf dem Verhandlungsbrett beide Waagschalen in die Balance — Bedingung: Zustimmung beider Baenke, Loesung mit Kompromisslinie, Ergebnisprotokoll mit zwei Begruendungen je Seite. Oeffne die Ziele, schnapp dir die Begriffe und beweise, dass Tycoon City regierbar bleibt.
 
 ZIELE (drei messbare Ziele dieser Lektion):
 
@@ -46,11 +46,19 @@ Familie praegt Sprache, Schule verteilt Noten, Peers setzen Stil: Wer formt dich
 
 ### Fachbegriffe & Definitionen
 
-- **Primaere Sozialisation:** Die fruehe Praegung vor allem in der Familie durch Sprache und Vertrauen. Sie legt Werte und Bindung als Fundament.
-- **Sekundaere Sozialisation:** Die spaetere Formung in Schule und Peer-Groups durch Wissen und Status. Sie verteilt Abschluesse und Rollen und wirkt selektiv.
-- **Sanktion:** Die soziale Kontrolle durch Lob und Anerkennung oder Tadel und Strafe. Sie stabilisiert Erwartungen und sichert Normen.
-- **Rollenkonflikt:** Der Widerspruch zwischen Erwartungen: innerhalb einer Rolle, zwischen zwei Rollen oder zwischen Person und Rolle.
-- **Rollendistanz:** Die Faehigkeit, eine Rolle bewusst zu spielen, ohne sich mit ihr gleichzusetzen, etwa durch Humor und Reflexion.
+- **Sozialisation**: Sozialisation formt aus Anlagen Persoenlichkeiten ueber Normen und Werte. Primaer laeuft sie in der Familie, sekundaer in Schule und Peers. Sie endet nie ganz. Mechanismus: Belohnung und Strafe, Vorbild und Sprache schleifen Verhalten in Erwartungen ein. Klausur-Tipp: Ordne jede Szene primaer oder sekundaer zu.
+- **Rolle**: Rollen buendeln Erwartungen an Positionen wie Schueler oder Tochter. Sie entlasten, weil jeder weiss, was gilt. Sie engen ein, weil Abweichung sanktioniert wird. Mechanismus: Muss-, Soll- und Kann-Erwartungen staffeln den Druck von Zwang bis Lob. Klausur-Tipp: Benenne je Szene Muss, Soll und Kann.
+- **Rollenkonflikt**: Interrollenkonflikte prallen zwischen Positionen, Intrarollenkonflikte innerhalb einer Rolle. Beispiel Tochter gegen Freundin, Streber gegen Klassensprecher. Loesung heisst Prioritaet oder Kompromiss. Mechanismus: Zeit, Loyalitaet und Sanktionen zwingen zur Rangfolge. Klausur-Tipp: Bestimme erst inter oder intra, dann loesen.
+- **Mead Play / Game**: Im Play schlüpft das Kind - schlüpft heisst steigt hinein - in einzelne Rollen, im Game versteht es das Regelsystem aller. So entsteht der verallgemeinerte Andere. Perspektivwechsel wird trainierbar. Mechanismus: Vom Nachahmen zum Regelverstehen waechst die Faehigkeit, Erwartungen zu lesen. Klausur-Tipp: Nutze Play gegen Game als Entwicklungsbeleg.
+- **Abweichung / Sanktion**: Abweichung bricht Erwartungen, Sanktionen antworten positiv oder negativ. Labeling macht aus Taten Eigenschaften. Milde Antwort resozialisiert, harte stigmatisiert. Mechanismus: Etiketten kleben und verfestigen Karrieren - oder Oeffnungen heilen sie. Klausur-Tipp: Deute mit Labeling statt mit Charakter.
+
+
+
+
+
+
+
+
 
 ### Wirkungsgefuege / Modell
 
@@ -116,6 +124,8 @@ VERGLEICH (Wahl des Weges, A gegen B):
 
 VERGLEICH: Pruefe zuerst das Aufgabenziel und waehle dann den passenden Weg — Weg A oder Weg B — und loese erst danach die Aufgabe.
 
+DUELL Weg A (freier Markt) gegen Weg B (Staat greift ein): Weg A feiert den freien Selbstentwurf: Das Individuum waehlt Rollen wie im Markt und bricht enge Normen auf. Weg B haelt schuetzende Normen hoch: Familie, Schule und Recht geben Halt gegen Beliebigkeit. Entscheide am Kriterium: Autonomie und Wandel sprechen fuer A, Sicherheit und Verlaesslichkeit fuer B.
+
 Weg A: Strukturfunktionalismus und Parsons. Leitfrage: Wie sichern Normen und Erwartungen Ordnung? Blick auf Internalisierung, Erwartungsbuendel und Sanktion. Urteil an Berechenbarkeit: Regeln entlasten, weil alle wissen, was gilt, doch sie engen Spielraum ein.
 
 Weg B: Symbolischer Interaktionismus und Mead. Leitfrage: Wie handeln Personen Rollen in Deutung und Gespraech aus? Blick auf Spiegel-Selbst, Rollenuebernahme und Rollendistanz. Urteil an Freiheit in Bindung: Aushandlung haelt Sinn offen, doch sie braucht Zeit und Sprache.
@@ -134,9 +144,9 @@ Klausur-Satz: `Ein Intra-Rollenkonflikt liegt vor, wenn die Erwartungen an ein u
 
 CHECK (drei Fragen mit Antworten):
 
-FRAGE: Was unterscheidet die primaere von der sekundaeren Sozialisation? | ANTWORT: Die primaere findet vor allem in der Familie statt (Sprache, Grundvertrauen, erste Werte), die sekundaere in Schule und Peer-Groups (Wissen, Selektion, Statuszuweisung).
-FRAGE: Welche drei Rollenkonflikte unterscheidet die Soziologie? | ANTWORT: Intra-Rollenkonflikt, Inter-Rollenkonflikt und Person-Rolle-Konflikt.
-FRAGE: Welcher Operator verlangt, dass man eine Stelle im Material gezielt nachweist? | ANTWORT: Ermitteln (dem Material gezielt entnehmen und mit Zeilenangabe belegen).
+- FRAGE: Was unterscheidet die primaere von der sekundaeren Sozialisation? | ANTWORT: Die primaere findet vor allem in der Familie statt (Sprache, Grundvertrauen, erste Werte), die sekundaere in Schule und Peer-Groups (Wissen, Selektion, Statuszuweisung).
+- FRAGE: Welche drei Rollenkonflikte unterscheidet die Soziologie? | ANTWORT: Intra-Rollenkonflikt, Inter-Rollenkonflikt und Person-Rolle-Konflikt.
+- FRAGE: Welcher Operator verlangt, dass man eine Stelle im Material gezielt nachweist? | ANTWORT: Ermitteln (dem Material gezielt entnehmen und mit Zeilenangabe belegen).
 
 Klausur-Satz: `Rollendistanz bedeutet, eine Rolle bewusst zu spielen, ohne die eigene Person mit ihr gleichzusetzen.`
 
@@ -157,6 +167,7 @@ SITUATION: In deiner Klasse sollen neue Regeln fuer die Handynutzung beschlossen
 AUFGABE (AFB III): Verfasse eine zusammenhaengende Darstellung von etwa 150 Woertern mit Kriterium, Anwendung und Urteil.
 RUBRIC (30 XP): These mit Kriterium Berechenbarkeit und Freiheit (5 XP) | Darstellung beider Wege mit Fachbegriffen (10 XP) | Anwendung auf Handy-Streit mit Rollenkonflikt und Distanz (10 XP) | Fazit mit Kompromiss und Ausblick (5 XP).
 
+Klausur-Satz: `Die Rollenanalyse benennt erst Position, Erwartungsrang und Konflikttyp und loest dann ueber Prioritaet oder Kompromiss.`
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Was der Krisenstab lernt
 
 TAKEAWAY (Kernbotschaft in einem Kasten):
@@ -166,3 +177,5 @@ Takeaway-Satz: `Wer Erwartung und Aushandlung trennt, erkennt Ordnung und Spielr
 REFLEXION (zwei Fragen):
 1. Welcher Weg fiel dir leichter — Erwartung und Sanktion nach Parsons (Schritt 4) oder Aushandlung und Distanz nach Mead (Schritt 5)?
 2. Woran erkennst du kuenftig, ob ein Fall nach Internalisierung oder nach Deutung und Gespraech verlangt?
+
+Klausur-Satz: `Sozialisation endet nie: Wer Rollen lesen kann, spielt sie bewusst statt nur mitzuspielen.`

@@ -22,7 +22,7 @@ version: Lesson-v3
 
 > EPISODE 35｜Akt IV-V — Tarifarena und Demokratiewerkstatt｜召集人 Hafenlogistikerin Ruth Adler：Hafenlogistik-Stau zur Erntezeit。
 
-HOOK 市长危机（先读剧情，再进 ZIELE）：【本集战役 EP35｜Akt IV-V — Tarifarena und Demokratiewerkstatt｜虚拟城邦 Tycoon City 告急】市长办公室深夜灯火通明，Hafenlogistikerin Ruth Adler 冲进来报告：Hafenlogistik-Stau zur Erntezeit，而明天市议会就要投票。集市在喊、长队在排、国库在抖：苹果集市价格战一路烧到租金黑市，再烧到基尼天平与劳资谈判桌，本集正是“Tarifautonomie und Gewerkschaften im Arbeitskampf”的现实引爆点。你的身份是市长直属经济改革规划委员：把街头危机翻译成考点，用沙盘 [balance-board] 拿出可验证的数值方案，再交出一份 Klausur 满分答卷稳住议会。通关线索：TARGET: Bringt auf dem Verhandlungsbrett beide Waagschalen in die Balance — Bedingung: Zustimmung beider Baenke, Loesung mit Kompromisslinie, Ergebnisprotokoll mit zwei Begruendungen je Seite. 上一集的结尾就是这一集的悬念——黑市账本、税改天平、劳资天平、选票天平，四座天平有一座倒了，城邦就停摆。电台正在直播，反对派等着挑错：先读 ZIELE，再啃术语，把传导机制画成你的作战地图。DE-Briefing: Episode 35 — Hafenlogistikerin Ruth Adler meldet Hafenlogistik-Stau zur Erntezeit; der Stadtrat entscheidet morgen. Rette Tycoon City mit Analyse, Sandkasten und Klausur-Antwort zum Thema Tarifautonomie und Gewerkschaften im Arbeitskampf.
+HOOK 市长危机（先读剧情，再进 ZIELE）：【本集战役 EP35｜Akt IV-V — Tarifarena und Demokratiewerkstatt｜虚拟城邦 Tycoon City 告急】市长办公室深夜灯火通明，Hafenlogistikerin Ruth Adler 冲进来报告：Hafenlogistik-Stau zur Erntezeit，而明天市议会就要投票。你的身份不变：市长直属经济改革规划委员。真实情境切入：某机场地勤罢工三天，旅客骂、工会说“不罢没人谈”；隔壁行业雇主协会直接退出行业协议改单谈，覆盖率一年掉一块。罢工是宪法保护的最后语言，退出是市场的无声投票——劳资自治两头受压。通关线索：TARGET: Bringt auf dem Verhandlungsbrett beide Waagschalen in die Balance — Bedingung: Zustimmung beider Baenke, Loesung mit Kompromisslinie, Ergebnisprotokoll mit zwei Begruendungen je Seite. 先读 ZIELE，再啃术语，把传导机制画成你的作战地图。DE-Briefing: Episode 35 — Hafenlogistikerin Ruth Adler meldet Hafenlogistik-Stau zur Erntezeit; der Stadtrat entscheidet morgen. Rette Tycoon City mit Analyse, Sandkasten und Klausur-Antwort zum Thema Tarifautonomie und Gewerkschaften im Arbeitskampf.
 
 ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
@@ -51,11 +51,19 @@ PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→�
 
 中文在上，德语在下：
 
-- 劳资自治 — Tarifautonomie：国家不干预工资谈判的基本权（Art. 9 Abs. 3 GG）。
-- 工会 — Gewerkschaft：雇员的结社组织，如 ver.di、 IG Metall。
-- 工资协议 — Tarifvertrag：对成员有直接约束力的集体合同。
-- 罢工 — Streik：集体停工以施压，需工会组织与 Urabstimmung。
-- 比例原则 — Verhaeltnismaessigkeit：手段须适度，调解优先、范围限 Tarif 事项。
+- **Tarifautonomie**（劳资自治）：工资劳资自己定、国家靠边站；集体力量替个人谈，行业协议防内卷。 Gewerkschaften und Verbaende regeln Loehne ohne Staat. Der Staat haelt Abstand und sichert nur Rahmen. Tarifnormen wirken unmittelbar auf Mitglieder. Mechanismus: Kollektive Macht ersetzt ohnmaechtige Einzelverhandlung; Flaechentarife verhindern Unterbietung. Klausur-Tipp: Betone Staatsferne plus Unmittelbarkeit.
+- **Gewerkschaft**（工会）：工会打包打工者：人多势众才有谈判桌，人少了桌子都晃。 Gewerkschaften buendeln Arbeitnehmerinteressen und verhandeln Tarife. Organisationsgrad bestimmt Verhandlungsmacht. Mitgliederschwund schwächt - schwaecht heisst macht schwach - die ganze Seite. Mechanismus: Drohpotenzial Streik macht den Tisch erst verhandlungsfaehig. Klausur-Tipp: Verbinde jede Machtfrage mit dem Organisationsgrad.
+- **Streik / Aussperrung**（罢工/闭厂）：罢工闭厂都是最后手段：先谈、再打、打得有比例，无辜旅客只是附带。 Streik ist kollektive Arbeitsniederlegung als letztes Mittel. Aussperrung antwortet auf Arbeitgeberseite. Beide muessen verhaeltnismaessig bleiben und duerfen Unbeteiligte nur begrenzt treffen. Mechanismus: Schaden drohen, um Einigung zu erzwingen - Ultima Ratio mit Gueteversuch davor. Klausur-Tipp: Pruefe immer erst Verhandlung, dann Kampfmittel, dann Verhaeltnismaessigkeit.
+- **Flächentarif (schreibe Flaechentarif)**（行业协议）：一行业一工资：防压价、省内耗；退群和无协议会员把网撕出口子。 Der Flaechentarif standardisiert Loehne einer Branche und Region. Er schuetzt vor Unterbietung und entlastet Betriebe vom Lohnkampf. Tarifflucht und OT-Mitgliedschaft loechern die Decke. Mechanismus: Einheitliche Boeden heben alle, Austritte senken die Bindung. Klausur-Tipp: Deute Erosion ueber Deckungsquote.
+- **Mindestlohn**（最低工资）：国家定底薪是破例：保穷忙族，但动自由定价和工会地盘，每次都要写理由。 Der Staat setzt einen Lohnboden als Ausnahme von der Autonomie. Er schuetzt vor Armut trotz Arbeit. Er greift in freie Lohnfindung und Tariflogik ein. Mechanismus: Boden oben stuetzt Einkommen, riskiert aber Jobs am unteren Rand. Klausur-Tipp: Werte ihn als Eingriff mit Begruendungslast.
+
+
+
+
+
+
+
+
 
 Klausur-Satz: `Streik und Aussperrung sind nur als verhaeltnismaessige Kampfmittel um Tarifziele zulaessig.`
 
@@ -88,6 +96,12 @@ Verhandlung -> Schlichtung -> Warnstreik -> Streik
 Filter: Tarifziel? ultima ratio? verhaeltnismaessig?
 Urteil: rechtmaessig (Regeln) + sinnvoll (Kosten/Druck)
 ```
+Kausalkette: Organisationsgrad bestimmt Macht, Flaechentarif setzt Boeden, Kampfmittel bleiben Ultima Ratio, Staat greift nur ausnahmsweise ein, Erosion zwingt zur Wahl: Reorganisation oder Staatsersatz. Autonomie heisst nicht staatenlos, sondern Staat auf Abstand.
+
+因果链：组织率定议价力→行业协议定底线→罢工/闭厂当最后语言→国家只在例外（底薪）出手→覆盖率 erosion 倒逼：要么重振组织，要么国家补位。自治不是没国家，而是有距离的国家。
+
+Lohnanker: Boden $w_{min} = 12$ Euro gegenueber Gleichgewicht $w_G$; Deckungsquote $d$ als Erosionsmass sinkt Jahr fuer Jahr.
+
 Klausur-Satz: `Erst verhandeln, dann schlichten, erst danach streiken — und nur um Tarifziele.`
 
 ## Anekdote & Fun-Fact
@@ -130,6 +144,10 @@ VERGLEICH辨别实验（双向辨析：合法审查 vs 效果评价）：
 
 VERGLEICH: Waehle erst das Verfahren — 【选程序】先看设问词：(i) 合法审查（rechtmaessig/zulaessig：查主体、目标、最后手段、比例）oder (ii) 效果评价（sinnvoll/erfolgreich：讲组织度、替代性、公众成本）—— dann loesen.
 
+DUELL Weg A (freier Markt) gegen Weg B (Staat greift ein): Weg A setzt auf freien Lohnmarkt: Einzelvertraege und Wettbewerb finden marktgerechte Loehne, sichern Jobs und Flexibilitaet. Weg B setzt auf kollektiven Schutz: Tarif, Streikrecht und Mindestlohn sichern Wuerde gegen Machtgefaelle. Entscheide am Kriterium: Beschaeftigung und Flexibilitaet sprechen fuer A, Machtbalance und Existenzschutz fuer B.
+
+对决 Weg A（自由市场）vs Weg B（国家干预）：Weg A信自由工资：单谈竞争找市场价，保岗位保灵活。Weg B信集体保护：协议罢工权底薪，对冲权力差。判据：就业灵活站A，力量平衡生存站B。
+
 AUFGABE A：Ist der Streik rechtmaessig? Pruefen Sie.
 AUFGABE B：War der Streik sinnvoll? Beurteilen Sie seine Wirksamkeit.
 
@@ -142,9 +160,9 @@ Klausur-Satz: `Rechtmaessigkeit folgt den Kampfregeln, Sinnhaftigkeit den Kosten
 ## Schritt 6 — check: Selbsttest zu Tarifautonomie und Gewerkschaften im Arbeitskampf
 CHECK检索默写（自测 3 题，与答案配对）：
 
-FRAGE: Was schuetzt Art. 9 Abs. 3 GG? | ANTWORT: Die Koalitionsfreiheit: Gewerkschaften und Arbeitgeber verhandeln Loehne frei vom Staat.
-FRAGE: Welche vier Bedingungen machen einen Streik rechtmaessig? | ANTWORT: Gewerkschaft als Traeger, Tarifziel, erschoepfte Verhandlung/Schlichtung, Verhaeltnismaessigkeit.
-FRAGE: Was ist die Aussperrung? | ANTWORT: Das spiegelbildliche Kampfmittel der Arbeitgeber: voruebergehender Ausschluss von der Arbeit.
+- FRAGE: Was schuetzt Art. 9 Abs. 3 GG? | ANTWORT: Die Koalitionsfreiheit: Gewerkschaften und Arbeitgeber verhandeln Loehne frei vom Staat.
+- FRAGE: Welche vier Bedingungen machen einen Streik rechtmaessig? | ANTWORT: Gewerkschaft als Traeger, Tarifziel, erschoepfte Verhandlung/Schlichtung, Verhaeltnismaessigkeit.
+- FRAGE: Was ist die Aussperrung? | ANTWORT: Das spiegelbildliche Kampfmittel der Arbeitgeber: voruebergehender Ausschluss von der Arbeit.
 
 Klausur-Satz: `Ohne Tarifziel und ohne ultima ratio ist kein Streik rechtmaessig.`
 
@@ -165,6 +183,7 @@ ROLLE: Du bist Schuelervertreter in einer Podiumsdiskussion zum OePNV-Streik.
 SITUATION: Pendler klagen ueber Ausfaelle, die Gewerkschaft verweist auf gescheiterte Schlichtung. Nimm in einer zusammenhaengenden Stellungnahme (ca. 150 Woerter) dazu Stellung: War der Streik rechtmaessig und war er sinnvoll?
 RUBRIC (30 XP): Rechtmaessigkeitspruefung in vier Punkten (12 XP) | Wirksamkeitsabwaegung mit Kosten (10 XP) | Eigenes kriteriengeleitetes Urteil (4 XP) | Adressatengerechte Stellungnahme (4 XP).
 
+Klausur-Satz: `Die Tarifklausur prueft erst Zustaendigkeit und Kampfmittelrangfolge und wuerdigt dann Erosion gegen Schutz am Massstab der Machtbalance.`
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Was der Krisenstab lernt
 
 TAKEAWAY 1盒（核心总结）：
@@ -175,3 +194,5 @@ Takeaway-Satz: `Tarifautonomie heisst frei verhandeln unter Kampfregeln.`
 REFLEXION 2问：
 1. 过程自省：Welcher Schritt fiel schwerer — die Rechtmaessigkeitspruefung (Schritt 4) oder die Trennung von Recht und Sinn (Schritt 5)?
 2. 元认知计划：Beim naechsten Mal pruefe ich zuerst Traeger und Ziel, dann ultima ratio.
+
+Klausur-Satz: `Tarifautonomie ist Freiheit mit Zaehnen: Wer organisiert ist, verhandelt; wer allein steht, nimmt hin.`

@@ -22,7 +22,7 @@ version: Lesson-v3
 
 > EPISODE 10｜Akt IV-V — Tarifarena und Demokratiewerkstatt｜召集人 Gewerkschaftssekretaer Tomasz Nowak：Leiharbeits-Skandal in der Apfelpackhalle。
 
-HOOK 市长危机（先读剧情，再进 ZIELE）：【本集战役 EP10｜Akt IV-V — Tarifarena und Demokratiewerkstatt｜虚拟城邦 Tycoon City 告急】市长办公室深夜灯火通明，Gewerkschaftssekretaer Tomasz Nowak 冲进来报告：Leiharbeits-Skandal in der Apfelpackhalle，而明天市议会就要投票。集市在喊、长队在排、国库在抖：苹果集市价格战一路烧到租金黑市，再烧到基尼天平与劳资谈判桌，本集正是“Grundgesetz und Verfassungsprinzipien”的现实引爆点。你的身份是市长直属经济改革规划委员：把街头危机翻译成考点，用沙盘 [balance-board] 拿出可验证的数值方案，再交出一份 Klausur 满分答卷稳住议会。通关线索：TARGET: Bringt auf dem Verhandlungsbrett beide Waagschalen in die Balance — Bedingung: Zustimmung beider Baenke, Loesung mit Kompromisslinie, Ergebnisprotokoll mit zwei Begruendungen je Seite. 上一集的结尾就是这一集的悬念——黑市账本、税改天平、劳资天平、选票天平，四座天平有一座倒了，城邦就停摆。电台正在直播，反对派等着挑错：先读 ZIELE，再啃术语，把传导机制画成你的作战地图。DE-Briefing: Episode 10 — Gewerkschaftssekretaer Tomasz Nowak meldet Leiharbeits-Skandal in der Apfelpackhalle; der Stadtrat entscheidet morgen. Rette Tycoon City mit Analyse, Sandkasten und Klausur-Antwort zum Thema Grundgesetz und Verfassungsprinzipien.
+HOOK 市长危机（先读剧情，再进 ZIELE）：【本集战役 EP10｜Akt IV-V — Tarifarena und Demokratiewerkstatt｜虚拟城邦 Tycoon City 告急】市长办公室深夜灯火通明，Gewerkschaftssekretaer Tomasz Nowak 冲进来报告：Leiharbeits-Skandal in der Apfelpackhalle，而明天市议会就要投票。你的身份不变：市长直属经济改革规划委员。真实判例切入：联邦宪法法院在数据监控案（BND判决2020）里叫停无差别境外通信监控——安全不能吃掉隐私；另一起游行管制案里，法院要求警方优先保障集会，只许管交通不管内容。租金案同理：限价保护住户，但不能掏空财产权本质。三个案子同一把尺：实践调和。通关线索：TARGET: Bringt auf dem Verhandlungsbrett beide Waagschalen in die Balance — Bedingung: Zustimmung beider Baenke, Loesung mit Kompromisslinie, Ergebnisprotokoll mit zwei Begruendungen je Seite. 先读 ZIELE，再啃术语，把传导机制画成你的作战地图。DE-Briefing: Episode 10 — Gewerkschaftssekretaer Tomasz Nowak meldet Leiharbeits-Skandal in der Apfelpackhalle; der Stadtrat entscheidet morgen. Rette Tycoon City mit Analyse, Sandkasten und Klausur-Antwort zum Thema Grundgesetz und Verfassungsprinzipien.
 
 ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
@@ -38,11 +38,19 @@ PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→�
 
 中文在上，德语在下：
 
-- 人的尊严 — Menschenwürde：基本法第 1 条宣告为不可侵犯，是国家权力的最高边界。
-- 宪法原则 — Verfassungsprinzipien：Art. 20 列出的民主、法治、社会、联邦四原则。
-- 永恒条款 — Ewigkeitsklausel (Art. 79 Abs. 3)：Art. 1 与 Art. 20 永不得被修宪触动。
-- 基本权利冲突 — Grundrechtskollision：两项基本权利相互撞车，须加以权衡。
-- 实践调和 — praktische Konkordanz：冲突时让两项权利都尽可能实现，且不掏空其本质内容。
+- **Menschenwürde Art. 1**（人的尊严）：尊严不可侵犯放第1条，是对纳粹史的制度回答；经第1条第3款直接约束一切国家权力。 Die Wuerde des Menschen ist unantastbar und steht bewusst an erster Stelle. Sie antwortet auf die NS-Verbrechen und begrenzt jede Staatsgewalt. Ueber Art. 1 Abs. 3 binden Grundrechte alle Staatsgewalt unmittelbar. Mechanismus: Jede staatliche Massnahme wird zuerst an der Wuerde gemessen; was Menschen zum blossen Objekt macht, faellt durch. Klausur-Tipp: Zitiere Art. 1 Abs. 1 plus Abs. 3 als Doppelanker.
+- **Verfassungsprinzipien Art. 20**（宪法四原则）：第20条四原则（民主法治社会联邦）管国家结构，不管个人权利；先分结构还是权利再引条文。 Art. 20 nennt Demokratie, Rechtsstaat, Sozialstaat und Bundesstaat. Sie beschreiben die Staatsbauart, nicht einzelne Rechte. Zusammen bilden sie die Identitaet der Ordnung. Mechanismus: Strukturfragen werden an Art. 20 geprueft, Individualfragen an den Freiheits- und Gleichheitsrechten. Klausur-Tipp: Struktur oder Recht - diese Sortierung entscheidet ueber die Normwahl.
+- **Ewigkeitsklausel Art. 79 Abs. 3**（永恒条款）：永恒条款只锁第1条和第20条，别的都能修；写成锁整部宪法是典型丢分。 Art. 79 Abs. 3 entzieht Art. 1 und Art. 20 jeder Aenderung. Selbst verfassungsaendernde Mehrheiten duerfen den Kern nicht antasten. Der Rest der Verfassung bleibt aenderbar. Mechanismus: Tresor-Logik - nur zwei Artikel liegen im Safe, alles andere ist verhandelbar. Klausur-Tipp: Schreibe ausdruecklich nur Art. 1 und Art. 20, sonst Punktabzug.
+- **Grundrechtskollision**（基本权利冲突）：两项权利或权利与国家任务撞车，谁都不自动让路，必须逐项涵摄。 Zwei Grundrechte oder Grundrecht und Staatsauftrag prallen aufeinander. Beispiel Schwimmunterricht gegen Religionsfreiheit, Versammlung gegen Verkehrsfluss. Kein Recht verdrängt das andere automatisch. Mechanismus: Kollisionsfeststellung, beidseitige Schonung, Kernschutz - in Gutachtenstil Obersatz bis Ergebnis. Klausur-Tipp: Benenne beide Seiten mit Artikelnummer, sonst fehlt die Subsumtion.
+- **Praktische Konkordanz**（实践调和）：冲突不玩二选一：替代方案加附加条件，两边都尽量实现，谁的本质都不掏空。 Kollidierende Rechte werden so ausgeglichen, dass beide moeglichst verwirklicht bleiben. Der Wesensgehalt beider Rechte bleibt unantastbar. Entweder-oder ist die falsche Antwort. Mechanismus: Ersatzleistungen, Auflagen und Differenzierungen statt Totalverbot oder Totalfreigabe. Klausur-Tipp: Schliesse mit dem Satz zum Wesensgehalt, das ist die Punkteklausel.
+
+
+
+
+
+
+
+
 
 Klausur-Satz: `Art. 20 GG nennt vier Verfassungsprinzipien: Demokratie, Rechtsstaat, Sozialstaat und Bundesstaat.`
 
@@ -72,6 +80,10 @@ ENTDECKEN（1概念 + 1文字图解）：
    Art. 79 Abs. 3 (Ewigkeitsklausel)
         -> schuetzt NUR Art. 1 + Art. 20
 ```
+Kausalkette: Antwort auf die NS-Zeit, Wuerde in Art. 1, Bindung ueber Art. 1 Abs. 3, drei Grundrechtsfamilien, Kollision ueber praktische Konkordanz, Struktur ueber Art. 20, Sicherung ueber Art. 79 Abs. 3. Individualstreit und Strukturstreit laufen auf zwei getrennten Gleisen.
+
+因果链：1949制宪回答纳粹史→尊严第1条+第1条第3款锁死国家权力→权利分自由平等司法三类→撞车走实践调和→国家结构看第20条四原则→第79条第3款焊死第1+20条。权利冲突与结构之争是两条流水线，绝不能串线。
+
 
 Klausur-Satz: `Bei einer Grundrechtskollision verlangt die praktische Konkordanz, beide Rechte möglichst zu verwirklichen, ohne ihren Wesensgehalt anzutasten.`
 
@@ -118,6 +130,22 @@ VERGLEICH辨别实验（双向辨析：权利眼 vs. 原则眼）：
 
 VERGLEICH: Wähle erst das Verfahren —【选程序】先判断材料问的是 (i) Grundrechts-Verfahren（某项基本权利是否被侵犯、两项权利如何冲突：Art. 1/3/4/5 + praktische Konkordanz）还是 (ii) Staatsstruktur-Verfahren（国家的组织原则是什么、宪法能不能改：Art. 20 四原则 + Art. 79 Abs. 3）—— dann lösen.
 
+DUELL Weg A (freier Markt) gegen Weg B (Staat greift ein): Weg A vertraut der Freiheit des Einzelnen: Grundrechte wehren den Staat ab, Gerichte schuetzen den Kern. Weg B vertraut dem schuetzenden Staat: Sicherheit, Bildung und Versorgung rechtfertigen Eingriffe in Freiheit. Entscheide am Massstab der praktischen Konkordanz: Maximale beidseitige Verwirklichung bei unantastbarem Wesensgehalt.
+
+对决 Weg A（自由市场）vs Weg B（国家干预）：Weg A信个人自由：基本权利防国家，法院守底线。Weg B信保护型国家：安全、教育、供给值得限制自由。判据：实践调和——两边最大化实现，本质内容谁都不许动。
+
+DUELL Weg A (freier Markt) gegen Weg B (Staat greift ein): Weg A vertraut der Freiheit des Einzelnen: Grundrechte wehren den Staat ab, Gerichte schuetzen den Kern. Weg B vertraut dem schuetzenden Staat: Sicherheit, Bildung und Versorgung rechtfertigen Eingriffe in Freiheit. Entscheide am Massstab der praktischen Konkordanz: Maximale beidseitige Verwirklichung bei unantastbarem Wesensgehalt.
+
+对决 Weg A（自由市场）vs Weg B（国家干预）：Weg A信个人自由：基本权利防国家，法院守底线。Weg B信保护型国家：安全、教育、供给值得限制自由。判据：实践调和——两边最大化实现，本质内容谁都不许动。
+
+DUELL Weg A (freier Markt) gegen Weg B (Staat greift ein): Weg A vertraut der Freiheit des Einzelnen: Grundrechte wehren den Staat ab, Gerichte schuetzen den Kern. Weg B vertraut dem schuetzenden Staat: Sicherheit, Bildung und Versorgung rechtfertigen Eingriffe in Freiheit. Entscheide am Massstab der praktischen Konkordanz: Maximale beidseitige Verwirklichung bei unantastbarem Wesensgehalt.
+
+对决 Weg A（自由市场）vs Weg B（国家干预）：Weg A信个人自由：基本权利防国家，法院守底线。Weg B信保护型国家：安全、教育、供给值得限制自由。判据：实践调和——两边最大化实现，本质内容谁都不许动。
+
+DUELL Weg A (freier Markt) gegen Weg B (Staat greift ein): Weg A vertraut der Freiheit des Einzelnen: Grundrechte wehren den Staat ab, Gerichte schuetzen den Kern. Weg B vertraut dem schuetzenden Staat: Sicherheit, Bildung und Versorgung rechtfertigen Eingriffe in Freiheit. Entscheide am Massstab der praktischen Konkordanz: Maximale beidseitige Verwirklichung bei unantastbarem Wesensgehalt.
+
+对决 Weg A（自由市场）vs Weg B（国家干预）：Weg A信个人自由：基本权利防国家，法院守底线。Weg B信保护型国家：安全、教育、供给值得限制自由。判据：实践调和——两边最大化实现，本质内容谁都不许动。
+
 AUFGABE A (AFB II, 8 BE)：Material 2 (Sachtext) berichtet, dass ein Arbeitgeber einer Bewerberin wegen ihrer Herkunft absagt. Erläutern Sie, welches Grundrecht berührt ist und warum es auch zwischen Privaten wirkt.
 
 AUFGABE B (AFB II, 8 BE)：Eine Karikatur zeigt eine Person, die versucht, einen Tresor mit der Aufschrift „Art. 1 / Art. 20" aufzubrechen, während ein Schild „Verfassungsänderung" daneben steht. Erläutern Sie die Aussage mit dem passenden Verfassungsartikel.
@@ -132,9 +160,9 @@ Klausur-Satz: `Grundrechte wirken über die Drittwirkung mittelbar auch zwischen
 
 CHECK检索默写（自测 3 题，与答案配对）：
 
-FRAGE: Welche vier Verfassungsprinzipien nennt Art. 20 GG? | ANTWORT: Demokratie, Rechtsstaat, Sozialstaat und Bundesstaat.
-FRAGE: Was schützt die Ewigkeitsklausel des Art. 79 Abs. 3 GG? | ANTWORT: Sie entzieht Art. 1 und Art. 20 GG jeder Verfassungsänderung und sichert damit den unantastbaren Kern.
-FRAGE: Was bedeutet Drittwirkung der Grundrechte? | ANTWORT: Grundrechte binden unmittelbar nur den Staat, wirken aber mittelbar auch zwischen Privaten.
+- FRAGE: Welche vier Verfassungsprinzipien nennt Art. 20 GG? | ANTWORT: Demokratie, Rechtsstaat, Sozialstaat und Bundesstaat.
+- FRAGE: Was schützt die Ewigkeitsklausel des Art. 79 Abs. 3 GG? | ANTWORT: Sie entzieht Art. 1 und Art. 20 GG jeder Verfassungsänderung und sichert damit den unantastbaren Kern.
+- FRAGE: Was bedeutet Drittwirkung der Grundrechte? | ANTWORT: Grundrechte binden unmittelbar nur den Staat, wirken aber mittelbar auch zwischen Privaten.
 
 Klausur-Satz: `Die Ewigkeitsklausel entzieht Art. 1 und Art. 20 GG jeder Verfassungsänderung und sichert so den unantastbaren Kern.`
 
@@ -158,6 +186,7 @@ SITUATION: Eine Gemeinde will einer Gruppe ein öffentliches Platzverbot erteile
 
 RUBRIC (30 XP): Benennung der kollidierenden Grundrechte bzw. Rechtsgüter (5 XP) | Erläuterung der praktischen Konkordanz als Lösungsregel (10 XP) | Analyse der Folgen einer einseitigen Lösung (z. B. Wesensgehalt, Verhältnismäßigkeit) (10 XP) | Kriteriengeleitetes Urteil mit Abwägung (5 XP).
 
+Klausur-Satz: `Die verfassungsrechtliche Stellungnahme erkennt zuerst die Kollisionslage mit Artikelnummern und loest sie dann ueber schonenden Ausgleich statt Entweder-oder.`
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Was der Krisenstab lernt
 
 TAKEAWAY 1盒（核心总结）：
@@ -168,3 +197,5 @@ Takeaway-Satz: `Das Grundgesetz vertraut der Demokratie alles an — außer der 
 REFLEXION 2问：
 1. 过程自省：Welcher Schritt fiel schwerer — das Aufbauen des Gutachtens (Schritt 4) oder die Unterscheidung von Grundrechts- und Staatsstrukturfragen (Schritt 5)?
 2. 元认知计划：Beim nächsten Mal prüfe ich zuerst, ob im Material ein individuelles Recht oder eine Staatsstruktur im Streit steht, und wähle danach das Verfahren.
+
+Klausur-Satz: `Das Grundgesetz vertraut der Demokratie alles an - ausser der Entscheidung, keine Demokratie mehr zu sein.`

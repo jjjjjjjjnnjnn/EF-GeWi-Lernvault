@@ -22,7 +22,7 @@ version: Lesson-v3
 
 > EPISODE 22｜Akt I-II — Apfelmarkt und Mietendeckel｜召集人 Verfassungsanwaeltin Dr. Nora Feld：Verfassungsbeschwerde-Nacht im Eilverfahren。
 
-HOOK 市长危机（先读剧情，再进 ZIELE）：【本集战役 EP22｜Akt I-II — Apfelmarkt und Mietendeckel｜虚拟城邦 Tycoon City 告急】市长办公室深夜灯火通明，Verfassungsanwaeltin Dr. Nora Feld 冲进来报告：Verfassungsbeschwerde-Nacht im Eilverfahren，而明天市议会就要投票。集市在喊、长队在排、国库在抖：苹果集市价格战一路烧到租金黑市，再烧到基尼天平与劳资谈判桌，本集正是“Preismechanismus und Marktformen”的现实引爆点。你的身份是市长直属经济改革规划委员：把街头危机翻译成考点，用沙盘 [markt-sim] 拿出可验证的数值方案，再交出一份 Klausur 满分答卷稳住议会。通关线索：TARGET: Stellt im Sandkasten Angebot und Nachfrage so ein, dass der Gleichgewichtspreis zwischen 8 und 12 Euro liegt, die gehandelte Menge mindestens 100 Einheiten erreicht und ein Probe-Hoechstpreis von 6 Euro als bindend mit Warteschlange entlarvt wird. 上一集的结尾就是这一集的悬念——黑市账本、税改天平、劳资天平、选票天平，四座天平有一座倒了，城邦就停摆。电台正在直播，反对派等着挑错：先读 ZIELE，再啃术语，把传导机制画成你的作战地图。DE-Briefing: Episode 22 — Verfassungsanwaeltin Dr. Nora Feld meldet Verfassungsbeschwerde-Nacht im Eilverfahren; der Stadtrat entscheidet morgen. Rette Tycoon City mit Analyse, Sandkasten und Klausur-Antwort zum Thema Preismechanismus und Marktformen.
+HOOK 市长危机（先读剧情，再进 ZIELE）：【本集战役 EP22｜Akt I-II — Apfelmarkt und Mietendeckel｜虚拟城邦 Tycoon City 告急】市长办公室深夜灯火通明，Verfassungsanwaeltin Dr. Nora Feld 冲进来报告：Verfassungsbeschwerde-Nacht im Eilverfahren，而明天市议会就要投票。你的身份不变：市长直属经济改革规划委员。真实判例切入：柏林租金上限2021年被宪法法院判违宪——11欧的市场租金被8欧上限钉死，结果房源消失、看房排长队、黑市茶水费回来；同期最低工资上调辩论：涨工资保生存，但小店警告要减员。同一个机制两面开刀：上限在下造短缺，下限在上造过剩。通关线索：TARGET: Stellt im Sandkasten Angebot und Nachfrage so ein, dass der Gleichgewichtspreis zwischen 8 und 12 Euro liegt, die gehandelte Menge mindestens 100 Einheiten erreicht und ein Probe-Hoechstpreis von 6 Euro als bindend mit Warteschlange entlarvt wird. 先读 ZIELE，再啃术语，把传导机制画成你的作战地图。DE-Briefing: Episode 22 — Verfassungsanwaeltin Dr. Nora Feld meldet Verfassungsbeschwerde-Nacht im Eilverfahren; der Stadtrat entscheidet morgen. Rette Tycoon City mit Analyse, Sandkasten und Klausur-Antwort zum Thema Preismechanismus und Marktformen.
 
 ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
@@ -38,11 +38,19 @@ PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→�
 
 中文在上，德语在下：
 
-- 价格机制 — Preismechanismus：供求通过价格信号自动达成一致，无需中央指令。
-- 均衡价格 — Gleichgewichtspreis：使 Angebotsmenge 与 Nachfragemenge 恰好相等的那个价格，即两曲线交点。
-- 需求过剩（供不应求） — Nachfrageüberhang：价格低于均衡价时，想买的多于想卖的。
-- 供给过剩（供大于求） — Angebotsüberhang：价格高于均衡价时，想卖的多于想买的。
-- 价格弹性 — Preiselastizität：需求量对价格变动的敏感程度，弹性小者被限价伤得更重。
+- **Preismechanismus**（价格机制）：价格机制是千万买卖碰出来的结果：信号+配置+出清，无中央指令。 Der Preismechanismus stimmt Angebot und Nachfrage ohne Zentralbefehl ab. Millionen Kauf- und Verkaufsentscheidungen treffen sich im Preis. Der Preis traegt Signal-, Allokations- und Raeumungsfunktion. Mechanismus: Abweichungen erzeugen Ueberhaenge, Ueberhaenge druecken den Preis zurueck - solange kein Fixpreis blockiert. Klausur-Tipp: Nenne alle drei Funktionen mit je einem Halbsatz.
+- **Gleichgewichtspreis**（均衡价格）：两线交叉点：想买的=想卖的，市场出清，谁都不想再谈。 Der Gleichgewichtspreis gleicht angebotene und nachgefragte Menge exakt aus. Er liegt im Schnittpunkt fallender Nachfrage und steigenden Angebots. Dort ist der Markt geraeumt. Mechanismus: Nur am Schnittpunkt will niemand mehr nachverhandeln; jede Abweichung erzeugt Anpassungsdruck. Klausur-Tipp: Definiere immer ueber Schnittpunkt plus Raeumung.
+- **Nachfrageüberhang (schreibe Nachfrageueberhang)**（需求过剩）：价格被钉在均衡下：想买的多想卖的少，短缺变排队变黑市。 Liegt der Preis unter dem Gleichgewicht, uebersteigt die Nachfrage das Angebot. Kaeufer konkurrieren mit Wartezeit und Beziehungen. Der Mangel wandert in Schlange und Schattenmarkt. Mechanismus: Tiefer Preis heizt Nachfrage an und kuehlt Angebot ab - die Luecke waechst beidseitig. Klausur-Tipp: Hoechstpreis unten erzeugt Nachfrageueberhang - Richtung nie vertauschen.
+- **Angebotsüberhang (schreibe Angebotsueberhang)**（供给过剩）：价格被钉在均衡上：想卖的多想买的少，积压变打折，工资版叫失业风险。 Liegt der Preis ueber dem Gleichgewicht, uebersteigt das Angebot die Nachfrage. Verkaeufer konkurrieren mit Rabatten und bleiben auf Ware sitzen. Beim Lohn droht Beschaeftigungsabbau. Mechanismus: Hoher Preis lockt Anbieter und verschreckt Nachfrager - die Luecke waechst beidseitig. Klausur-Tipp: Mindestpreis oben erzeugt Angebotsueberhang - Richtung nie vertauschen.
+- **Preiselastizität (schreibe Preiselastizitaet)**（价格弹性）：弹性量敏感度：住房越刚性，限价排队越长、黑市越贵。 Die Elastizitaet misst die Mengenreaktion auf Preisbewegungen. Unelastische Gueter wie Wohnraum reagieren traege und hart. Elastische Gueter weichen schnell auf Ersatz aus. Mechanismus: Je unelastischer die Nachfrage, desto groesser die Warteschlange beim Deckel und desto hoeher die Schwarzmarktpreise. Klausur-Tipp: Nutze Elastizitaet, um Haerte und Ausweichdruck zu begruenden.
+
+
+
+
+
+
+
+
 
 Klausur-Satz: `Im Gleichgewicht entspricht die angebotene Menge der nachgefragten Menge, sodass weder ein Nachfrage- noch ein Angebotsüberhang besteht.`
 
@@ -69,6 +77,12 @@ ENTDECKEN（1概念 + 1文字图解）：
                 q_D   q_G   q_S
      q_D < q_G < q_S  =>  Angebotsueberhang
 ```
+Kausalkette: Steigendes Angebot, fallende Nachfrage, Schnittpunkt als Gleichgewicht, Korrektur ueber Ueberhaenge, Blockade durch Fixpreis. Der Deckel bei acht Euro unter elf Euro Gleichgewicht heizt Nachfrage an und kuehlt Angebot ab - die Luecke waechst von beiden Seiten.
+
+因果链：供给右上、需求右下→交叉定均衡→偏高则积压压价回落→偏低则抢购抬价回升→国家限价钉死偏离点→回推机制断→短缺或过剩。租金案：8欧上限在11欧均衡之下，需求升供给降，缺口两边长大。
+
+Rechenbeleg: $p_N(q) = 40 - 2q$, $p_A(q) = 10 + q$; Gleichgewicht aus $40 - 2q = 10 + q$ ergibt $q_G = 10$, $p_G = 20$ Euro. Mindestpreis $p_{min} = 25 > p_G$ liefert $q_A = 15$, $q_N = 7{,}5$, also Angebotsueberhang $q_A - q_N = 7{,}5$.
+
 
 Klausur-Satz: `Da die Nachfragekurve mit steigendem Preis fällt und die Angebotskurve steigt, stellt sich am Schnittpunkt beider Kurven der markträumende Gleichgewichtspreis ein.`
 
@@ -105,6 +119,10 @@ VERGLEICH辨别实验（双向辨析：市场眼 vs. 干预眼）：
 
 VERGLEICH: Wähle erst das Verfahren — 【选程序】先判断题目问的是 (i) Markt-Verfahren（市场如何自己调节：供求变动、均衡价格、Allokation）还是 (ii) Interventions-Verfahren（国家限价造成什么后果：Höchst-/Mindestpreis、Überhang、Fehlallokation）—— dann lösen.
 
+DUELL Weg A (freier Markt) gegen Weg B (Staat greift ein): Weg A vertraut dem freien Markt: Der Preis darf schwanken, signalisiert Knappheit, raeumt ueber Zahlungsbereitschaft - effizient, aber ohne Existenzschutz. Weg B greift zum Schutz ein: Hoechstpreis deckelt Miete, Mindestpreis stuetzt Lohn - sozial, aber mit Schlange, Schattenmarkt oder Jobrisiko. Entscheide am Kriterium: Allokationseffizienz spricht fuer A, Existenzsicherung fuer B.
+
+对决 Weg A（自由市场）vs Weg B（国家干预）：Weg A信自由浮动：价格报 scarcity、按支付意愿配给，高效但不管生存。Weg B信保护干预：限租保住户、底薪保打工，但附赠排队黑市或减员。判据：配置效率站A，生存保障站B。
+
 AUFGABE A：Ein Sachtext beschreibt, dass eine Missernte die Weizenernte halbiert und der Weizenpreis daraufhin deutlich steigt. Welches Verfahren ist zu wählen, und wie lässt sich der Vorgang erklären?
 
 AUFGABE B：Ein Sachtext beschreibt, dass die Regierung eine Mietpreisbremse einführt, woraufhin Wohnungen knapp werden und Schattenmärkte entstehen. Welches Verfahren ist zu wählen, und wie lässt sich der Vorgang erklären?
@@ -119,9 +137,9 @@ Klausur-Satz: `Wird ein Höchstpreis unterhalb des Gleichgewichtspreises festges
 
 CHECK检索默写（自测 3 题，与答案配对）：
 
-FRAGE: Wie lautet die Bedingung für das Marktgleichgewicht? | ANTWORT: Im Gleichgewicht gilt p_N(q) = p_A(q), das heißt angebotene und nachgefragte Menge stimmen überein.
-FRAGE: Welche vier Funktionen erfüllt der Preis im Modell des vollkommenen Marktes? | ANTWORT: Signal-, Allokations-, Ausgleichs- (Räumungs-) und Selektionsfunktion.
-FRAGE: Warum entfaltet ein Mindestpreis nur dann Wirkung, wenn er über dem Gleichgewichtspreis liegt? | ANTWORT: Liegt er darunter, ist er nicht bindend; erst oberhalb des Gleichgewichts verhindert er das Absinken des Preises und erzeugt einen Angebotsüberhang.
+- FRAGE: Wie lautet die Bedingung für das Marktgleichgewicht? | ANTWORT: Im Gleichgewicht gilt p_N(q) = p_A(q), das heißt angebotene und nachgefragte Menge stimmen überein.
+- FRAGE: Welche vier Funktionen erfüllt der Preis im Modell des vollkommenen Marktes? | ANTWORT: Signal-, Allokations-, Ausgleichs- (Räumungs-) und Selektionsfunktion.
+- FRAGE: Warum entfaltet ein Mindestpreis nur dann Wirkung, wenn er über dem Gleichgewichtspreis liegt? | ANTWORT: Liegt er darunter, ist er nicht bindend; erst oberhalb des Gleichgewichts verhindert er das Absinken des Preises und erzeugt einen Angebotsüberhang.
 
 Klausur-Satz: `Ein staatlicher Mindestpreis entfaltet nur dann ökonomische Wirkung, wenn er über dem Gleichgewichtspreis fixiert wird.`
 
@@ -143,6 +161,7 @@ ROLLE: Du bist Referent in einer Verbraucherzentrale und sollst auf einer Podium
 SITUATION: Die Stadt will per Satzung die Miete auf höchstens 8 Euro pro Quadratmeter festsetzen; der aktuelle Marktmietpreis liegt bei 11 Euro. Ein Teil des Publikums erwartet dadurch billigeren Wohnraum, ein anderer Teil warnt vor Wohnungsmangel. Beurteile die Maßnahme in einer zusammenhängenden Stellungnahme (ca. 150 Wörter) unter Rückgriff auf Preismechanismus und Marktformen.
 RUBRIC (30 XP): Benennung der Maßnahme als Höchstpreis unterhalb des Gleichgewichts (5 XP) | Analyse der Mengenwirkung — Nachfrage steigt, Angebot sinkt, Nachfrageüberhang (10 XP) | Darlegung der Folgeeffekte — Fehlallokation, Schattenmarkt, sinkende Investitionen in Neubauten (10 XP) | Kriteriengeleitetes Urteil mit Abwägung von Effizienz und sozialer Zielsetzung (5 XP).
 
+Klausur-Satz: `Die Miet preisbremse ist als bindender Hoechstpreis unter dem Gleichgewicht zu wuerdigen: Mangellage messen, Schattenmarkt und Neubaufolgen nennen, Effizienz gegen Schutz abwaegen.`
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Was der Krisenstab lernt
 
 TAKEAWAY 1盒（核心总结）：
@@ -153,3 +172,5 @@ Takeaway-Satz: `Der Preis lenkt die Allokation über Signale; wer ihn administra
 REFLEXION 2问：
 1. 过程自省：Welcher Schritt fiel schwerer — das rechnerische Bestimmen des Gleichgewichts (Schritt 4) oder die Wahl des richtigen Verfahrens im Vergleich (Schritt 5)?
 2. 元认知计划：Beim nächsten Mal prüfe ich zuerst, ob der Text eine Preisgrenze (Höchst-/Mindestpreis) nennt oder nicht, und wähle danach das Verfahren.
+
+Klausur-Satz: `Der Preis lenkt die Allokation ueber Signale; wer ihn fixiert, hebt die Raeumung auf und verwandelt Knappheit in Warteschlangen statt sie zu beseitigen.`

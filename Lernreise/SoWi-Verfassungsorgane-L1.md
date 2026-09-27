@@ -22,7 +22,7 @@ version: Lesson-v3
 
 > EPISODE 38｜Akt IV-V — Tarifarena und Demokratiewerkstatt｜召集人 Justiziarin Dr. Ines Kraus：Justizposse um das Versammlungsverbot。
 
-HOOK 市长危机（先读剧情，再进 ZIELE）：【本集战役 EP38｜Akt IV-V — Tarifarena und Demokratiewerkstatt｜虚拟城邦 Tycoon City 告急】市长办公室深夜灯火通明，Justiziarin Dr. Ines Kraus 冲进来报告：Justizposse um das Versammlungsverbot，而明天市议会就要投票。集市在喊、长队在排、国库在抖：苹果集市价格战一路烧到租金黑市，再烧到基尼天平与劳资谈判桌，本集正是“Verfassungsorgane”的现实引爆点。你的身份是市长直属经济改革规划委员：把街头危机翻译成考点，用沙盘 [balance-board] 拿出可验证的数值方案，再交出一份 Klausur 满分答卷稳住议会。通关线索：TARGET: Bringt auf dem Verhandlungsbrett beide Waagschalen in die Balance — Bedingung: Zustimmung beider Baenke, Loesung mit Kompromisslinie, Ergebnisprotokoll mit zwei Begruendungen je Seite. 上一集的结尾就是这一集的悬念——黑市账本、税改天平、劳资天平、选票天平，四座天平有一座倒了，城邦就停摆。电台正在直播，反对派等着挑错：先读 ZIELE，再啃术语，把传导机制画成你的作战地图。DE-Briefing: Episode 38 — Justiziarin Dr. Ines Kraus meldet Justizposse um das Versammlungsverbot; der Stadtrat entscheidet morgen. Rette Tycoon City mit Analyse, Sandkasten und Klausur-Antwort zum Thema Verfassungsorgane.
+HOOK 市长危机（先读剧情，再进 ZIELE）：【本集战役 EP38｜Akt IV-V — Tarifarena und Demokratiewerkstatt｜虚拟城邦 Tycoon City 告急】市长办公室深夜灯火通明，Justiziarin Dr. Ines Kraus 冲进来报告：Justizposse um das Versammlungsverbot，而明天市议会就要投票。你的身份不变：市长直属经济改革规划委员。真实情境切入：总理选举三轮才过、某法被总统以“明显违宪”拒签、反对党把刚通过的法直接送卡尔斯鲁厄——议会多数不是终点。五个机关各有各的钥匙：议院立法、参议院刹车、政府执行、总统签字、法院终审，谁都不能单开保险箱。通关线索：TARGET: Bringt auf dem Verhandlungsbrett beide Waagschalen in die Balance — Bedingung: Zustimmung beider Baenke, Loesung mit Kompromisslinie, Ergebnisprotokoll mit zwei Begruendungen je Seite. 先读 ZIELE，再啃术语，把传导机制画成你的作战地图。DE-Briefing: Episode 38 — Justiziarin Dr. Ines Kraus meldet Justizposse um das Versammlungsverbot; der Stadtrat entscheidet morgen. Rette Tycoon City mit Analyse, Sandkasten und Klausur-Antwort zum Thema Verfassungsorgane.
 
 ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
@@ -38,11 +38,19 @@ PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→�
 
 中文在上，德语在下：
 
-- 需批准法 — Zustimmungsgesetz：必须得到联邦参议院同意才能生效，常涉及各州财政。
-- 可反对法 — Einspruchsgesetz：联邦参议院只能提出反对，联邦议院可以推翻。
-- 调解委员会 — Vermittlungsausschuss：两院分歧时的折中平台，由两院各派代表组成。
-- 自由委任 — freies Mandat (Art. 38)：议员不受指令约束，只服从自己的良心。
-- 党团纪律 — Fraktionsdisziplin：党团为保执政能力要求议员统一投票，遇良心问题才放开。
+- **Bundestag**（联邦议院）：议院两顶帽：立法+选总理管政府，没它多数谁都执不了政。 Der Bundestag beschliesst Bundesgesetze und waehlt den Kanzler. Er kontrolliert die Regierung ueber Anfragen und Ausschüsse - Ausschuesse heisst Gremien. Ohne seine Mehrheit regiert niemand. Mechanismus: Lesungen plus Ausschuesse plus Fraktionsdisziplin verwandeln Programme in Gesetze. Klausur-Tipp: Nenne Wahlfunktion plus Gesetzgebung als Doppelrolle.
+- **Bundesrat**（联邦参议院）：参议院替州看门：要同意的法能真拦，一般的法只能缓。 Der Bundesrat traegt Laenderstimmen in den Bund. Zustimmungsgesetze brauchen sein Ja. Einsprueche kann der Bundestag ueberstimmen. Mechanismus: Vetomacht waechst mit Betroffenheit der Laender; Vermittlung baut Pakete. Klausur-Tipp: Pruefe zuerst die Gesetzesart.
+- **Bundesregierung / Kanzler**（政府/总理）：总理定方向、部长管摊子、内阁共决；赶总理下台须同时选出新的。 Der Kanzler bestimmt Richtlinien, Minister leiten Ressorts, Kabinett entscheidet gemeinsam. Die Regierung vollzieht Gesetze und bringt Entwuerfe ein. Misstrauen braucht konstruktiven Ersatz. Mechanismus: Richtlinienkompetenz plus Ressortprinzip plus Kollegialitaet - drei Zaehne eines Getriebes. Klausur-Tipp: Nenne Richtlinie plus Misstrauenshuede als Machtbelege.
+- **Bundespräsident (schreibe Bundespraesident)**（联邦总统）：总统管象征和签字：只查明显毛病，不管治国，拒签是稀有事件。 Der Praesident repraesentiert Einheit und fertigt Gesetze aus. Er prueft nur offensichtliche Fehler, regiert aber nicht. Verweigerung bleibt die seltene Ausnahme. Mechanismus: Formale Pruefung als letzte Tuerschwelle vor Verkuendung. Klausur-Tipp: Betone repraesentativ plus pruefend, nie regierend.
+- **Bundesverfassungsgericht**（宪法法院）：卡尔斯鲁厄守宪法：个人申诉+规范审查，能废法能训机关，判决人人要听。 Karlsruhe huetet das Grundgesetz ueber Verfassungsbeschwerde und Normenkontrolle. Es kann Gesetze kippen und Organe rügen - ruegen heisst tadeln. Seine Sprueche binden alle. Mechanismus: Einzelfall plus Grundsatz - jede Kammerentscheidung schreibt Spielregeln fort. Klausur-Tipp: Zitiere Verfahrenstyp plus Bindungswirkung.
+
+
+
+
+
+
+
+
 
 Klausur-Satz: `Art. 38 GG garantiert das freie Mandat: Abgeordnete sind an Aufträge nicht gebunden, sondern nur ihrem Gewissen unterworfen.`
 
@@ -71,6 +79,10 @@ ENTDECKEN（1概念 + 1文字图解）：
    Bundesversammlung -> waehlt Bundespraesident
    Gemeinsamer Ausschuss (2/3 BT + 1/3 BR) = Notparlament
 ```
+Kausalkette: Regierungsentwurf, drei Lesungen, Bundesratspruefung nach Gesetzesart, Vermittlungspaket, Ausfertigung, Nachkontrolle. Macht ist in fuenf Abschnitte geschnitten: Kein Abschnitt laeuft solo, jeder braucht Gegenzeichnung, jeder Fehler kann stoppen.
+
+因果链：政府提案→议院三读→参议院看性质（同意/抗议）→调解打包→总统形式审查→法院实质审查。权力被切成五段：没一段能 solo，全程互相签字，违宪在任一段都可能被拦下。
+
 
 Klausur-Satz: `Der Bundesrat vertritt die Länder, der Bundestag das Volk; beide zusammen sichern im Föderalismus die Mitwirkung der Länder an der Gesetzgebung.`
 
@@ -116,6 +128,10 @@ VERGLEICH辨别实验（双向辨析：程序眼 vs. 委任眼）：
 
 VERGLEICH: Wähle erst das Verfahren —【选程序】先判断材料问的是 (i) Verfahrens-Verfahren（一项法律或决定走哪条程序：立法路径、Zustimmung/Einspruch、Politikzyklus）还是 (ii) Mandats-Verfahren（议员到底听谁的：freies Mandat vs. Fraktionsdisziplin、Gewissensentscheidung）—— dann lösen.
 
+DUELL Weg A (freier Markt) gegen Weg B (Staat greift ein): Weg A setzt auf handlungsfaehige Mehrheit: Parlament und Regierung entscheiden zuegig, Verantwortung ist klar. Weg B setzt auf geteilte Macht: Bundesrat, Praesident und Gericht bremsen, schuetzen Minderheiten und Laender. Entscheide am Kriterium: Handlungsfaehigkeit spricht fuer A, Machtbegrenzung und Rechtsschutz sprechen fuer B.
+
+对决 Weg A（自由市场）vs Weg B（国家干预）：Weg A信多数能干事：议会政府快决，责任清楚。Weg B信分权保平安：参议院总统法院踩刹车，保少数保州权。判据：效率站A，限权护权站B。
+
 AUFGABE A (AFB II, 8 BE)：Material 2 (Sachtext) schildert, dass ein Gesetz, das die Länderfinanzen betrifft, im Bundestag beschlossen wurde und nun im Bundesrat behandelt wird. Erläutern Sie, welcher Gesetzestyp vorliegt und was bei einer Ablehnung geschieht.
 
 AUFGABE B (AFB II, 8 BE)：Eine Karikatur zeigt Abgeordnete, die an unsichtbaren Fäden wie Marionetten in eine Richtung gezogen werden, während ein Schild „Art. 38" am Rand steht. Erläutern Sie die Aussage mit dem passenden Begriff.
@@ -130,9 +146,9 @@ Klausur-Satz: `Beim Zustimmungsgesetz kann der Bundesrat ein Vorhaben blockieren
 
 CHECK检索默写（自测 3 题，与答案配对）：
 
-FRAGE: Welche fünf Verfassungsorgane nennt das Grundgesetz, und wo sitzt das Bundesverfassungsgericht? | ANTWORT: Bundestag, Bundesrat, Bundesregierung, Bundespräsident und Bundesverfassungsgericht; das BVerfG sitzt in Karlsruhe.
-FRAGE: Wann greift der Vermittlungsausschuss ein? | ANTWORT: Wenn Bundestag und Bundesrat sich über ein Gesetz nicht einigen können; er sucht einen Kompromiss.
-FRAGE: Welcher Artikel garantiert das freie Mandat, und was folgt daraus? | ANTWORT: Art. 38 GG; Abgeordnete sind an Aufträge nicht gebunden und nur ihrem Gewissen unterworfen.
+- FRAGE: Welche fünf Verfassungsorgane nennt das Grundgesetz, und wo sitzt das Bundesverfassungsgericht? | ANTWORT: Bundestag, Bundesrat, Bundesregierung, Bundespräsident und Bundesverfassungsgericht; das BVerfG sitzt in Karlsruhe.
+- FRAGE: Wann greift der Vermittlungsausschuss ein? | ANTWORT: Wenn Bundestag und Bundesrat sich über ein Gesetz nicht einigen können; er sucht einen Kompromiss.
+- FRAGE: Welcher Artikel garantiert das freie Mandat, und was folgt daraus? | ANTWORT: Art. 38 GG; Abgeordnete sind an Aufträge nicht gebunden und nur ihrem Gewissen unterworfen.
 
 Klausur-Satz: `Die Bundesversammlung besteht zur Hälfte aus Bundestagsmitgliedern und zur Hälfte aus Länderdelegierten; sie wählt den Bundespräsidenten.`
 
@@ -156,6 +172,7 @@ SITUATION: Eine Reform soll den Bundestag dauerhaft verkleinern und die Zahl der
 
 RUBRIC (30 XP): Benennung des Problems (übermäßige Größe des Bundestags) und der Reformmaßnahme (5 XP) | Analyse des Zielkonflikts zwischen Funktionsfähigkeit und Repräsentation (10 XP) | Darlegung der Folgen für Direktmandate und kleine Parteien (10 XP) | Kriteriengeleitetes Urteil mit Abwägung (5 XP).
 
+Klausur-Satz: `Die Organklausur ordnet erst Zustaendigkeit und Verfahren und wuerdigt dann das Zusammenspiel an Handlungsfaehigkeit und Kontrolle.`
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Was der Krisenstab lernt
 
 TAKEAWAY 1盒（核心总结）：
@@ -166,3 +183,5 @@ Takeaway-Satz: `Der Bundesrat schützt die Länder vor dem Bund — um den Preis
 REFLEXION 2问：
 1. 过程自省：Welcher Schritt fiel schwerer — das Nachzeichnen des Gesetzgebungswegs (Schritt 3) oder die Einordnung des Falls im Politikzyklus (Schritt 4)?
 2. 元认知计划：Beim nächsten Mal prüfe ich zuerst, ob das Material eine Verfahrensfrage oder eine Mandatsfrage stellt, und wähle danach das Verfahren.
+
+Klausur-Satz: `Geteilte Macht ist traegere Macht - und genau darin liegt ihr Schutz: Niemand regiert allein, also irrt niemand allein.`

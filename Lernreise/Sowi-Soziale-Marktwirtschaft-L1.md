@@ -22,7 +22,7 @@ version: Lesson-v3-pilot
 
 > EPISODE 24｜Akt I-II — Apfelmarkt und Mietendeckel｜召集人 Bundesratsbote Henrik Maas：Bundesrat-Blockade am Freitag。
 
-HOOK 市长危机（先读剧情，再进 ZIELE）：【本集战役 EP24｜Akt I-II — Apfelmarkt und Mietendeckel｜虚拟城邦 Tycoon City 告急】市长办公室深夜灯火通明，Bundesratsbote Henrik Maas 冲进来报告：Bundesrat-Blockade am Freitag，而明天市议会就要投票。集市在喊、长队在排、国库在抖：苹果集市价格战一路烧到租金黑市，再烧到基尼天平与劳资谈判桌，本集正是“Soziale Marktwirtschaft”的现实引爆点。你的身份是市长直属经济改革规划委员：把街头危机翻译成考点，用沙盘 [markt-sim] 拿出可验证的数值方案，再交出一份 Klausur 满分答卷稳住议会。通关线索：TARGET: Stellt im Sandkasten Angebot und Nachfrage so ein, dass der Gleichgewichtspreis zwischen 8 und 12 Euro liegt, die gehandelte Menge mindestens 100 Einheiten erreicht und ein Probe-Hoechstpreis von 6 Euro als bindend mit Warteschlange entlarvt wird. 上一集的结尾就是这一集的悬念——黑市账本、税改天平、劳资天平、选票天平，四座天平有一座倒了，城邦就停摆。电台正在直播，反对派等着挑错：先读 ZIELE，再啃术语，把传导机制画成你的作战地图。DE-Briefing: Episode 24 — Bundesratsbote Henrik Maas meldet Bundesrat-Blockade am Freitag; der Stadtrat entscheidet morgen. Rette Tycoon City mit Analyse, Sandkasten und Klausur-Antwort zum Thema Soziale Marktwirtschaft.
+HOOK 市长危机（先读剧情，再进 ZIELE）：【本集战役 EP24｜Akt I-II — Apfelmarkt und Mietendeckel｜虚拟城邦 Tycoon City 告急】市长办公室深夜灯火通明，Bundesratsbote Henrik Maas 冲进来报告：Bundesrat-Blockade am Freitag，而明天市议会就要投票。你的身份不变：市长直属经济改革规划委员。真实历史切入：1948年货币改革夜，艾哈德取消大部分价格管制，橱窗一夜摆满商品——市场先跑起来；同一逻辑的反面是2021年租金上限被宪法法院驳回：国家织网可以，替市场定价不行。社会市场经济=市场管效率、社会管兜底，国家当裁判不当球员。通关线索：TARGET: Stellt im Sandkasten Angebot und Nachfrage so ein, dass der Gleichgewichtspreis zwischen 8 und 12 Euro liegt, die gehandelte Menge mindestens 100 Einheiten erreicht und ein Probe-Hoechstpreis von 6 Euro als bindend mit Warteschlange entlarvt wird. 先读 ZIELE，再啃术语，把传导机制画成你的作战地图。DE-Briefing: Episode 24 — Bundesratsbote Henrik Maas meldet Bundesrat-Blockade am Freitag; der Stadtrat entscheidet morgen. Rette Tycoon City mit Analyse, Sandkasten und Klausur-Antwort zum Thema Soziale Marktwirtschaft.
 
 ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
@@ -38,11 +38,19 @@ PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→�
 
 中文在上，德语在下：
 
-- 社会市场经济 — Soziale Marktwirtschaft：自由竞争 + 国家兜底的德国模式。
-- 竞争 / 价格机制 — Wettbewerb / Preismechanismus：价格自动配平供需，自利意外造公益。
-- 社会平衡 / 兜底 — sozialer Ausgleich：社保+劳资自治+再分配，接住弱者。
-- 秩序框架（国家定规则不参赛） — Ordnungsrahmen (Ordoliberalismus)：国家当裁判，不当运动员。
-- 劳资自治 — Tarifautonomie：工资由工会和雇主谈，国家不直接定。
+- **Wettbewerb**（竞争）：竞争逼商家拼质量拼价格；没竞争就垄断定价。 Wettbewerb zwingt Anbieter zu Qualitaet und guenstigen Preisen. Er belohnt Innovation und bestraft Truägheit - Traegheit heisst hier Langsamkeit. Ohne Wettbewerb entstehen Monopole mit Machtpreisen. Mechanismus: Vergleichsdruck laesst Uebergewinne schmelzen; Kartelle schalten genau diesen Druck ab. Klausur-Tipp: Verbinde Wettbewerb immer mit Machtbegrenzung.
+- **Preismechanismus**（价格机制）：价格报 scarcity 指路：贵了引供给，便宜了引需求，国家一般不掐信号。 Preise signalisieren Knappheit und lenken Gueter zum hoechsten Nutzen. Steigende Preise rufen Angebot, fallende Preise rufen Nachfrage. Der Staat laesst dieses Signal grundsaetzlich laufen. Mechanismus: Stoerungen korrigieren sich ueber Mengenreaktionen, solange kein Fixpreis blockiert. Klausur-Tipp: Nenne Signal-, Allokations- und Raeumungsfunktion.
+- **Sozialprinzip**（社会原则）：国家织网保生存：社保再分配底线，但花谁的钱、凭什么标准必须交代。 Der Staat sichert Existenzen ueber Versicherung, Umverteilung und Mindeststandards. Schutz endet an der Verhaeltnismaessigkeit. So bleibt Freiheit die Regel, Hilfe die Ausnahme mit Begruendung. Mechanismus: Beitraege und Steuern finanzieren Netze; jede Leistung braucht Traeger und Massstab. Klausur-Tipp: Jede Schutzmassnahme mit Finanzierer plus Kriterium nennen.
+- **Ordnungsrahmen**（秩序框架）：国家定规则不定价格：反垄断、产权、契约自由是长期框，补贴限价是短期手。 Der Staat setzt Regeln statt Preise: Kartellverbot, Eigentum, Vertragsfreiheit. Innerhalb des Rahmens entscheidet der Markt frei. Der Rahmen ist dauerhaft, Eingriffe sind befristet. Mechanismus: Regeln veraendern Anreize fuer alle gleichzeitig und planbar. Klausur-Tipp: Ordne jede Massnahme erst Rahmen oder Eingriff zu.
+- **Tarifautonomie**（劳资自治）：工资劳资自己谈，国家只在例外时定底线；底薪每用一次都要写理由。 Loehne handeln Gewerkschaften und Verbaende ohne Staat aus. Der Mindestlohn bleibt die begruendungspflichtige Ausnahme. Tarifvertraege verhindern Lohnunterbietung. Mechanismus: Flaechentarife standardisieren Branchenloehne und entlasten den Staat. Klausur-Tipp: Deute Mindestlohn als Eingriff in genau diese Autonomie.
+
+
+
+
+
+
+
+
 
 Klausur-Satz: `Der Staat setzt den Ordnungsrahmen, greift aber nicht direkt in Preise und Löhne ein.`
 Klausur-Satz: `Tarifautonomie heißt: Löhne handeln Gewerkschaften und Arbeitgeber ohne den Staat aus.`
@@ -67,6 +75,12 @@ ENTDECKEN（1概念 + 1文字图解，双支柱）：
       STAAT = Schiri + Netz
       (Regeln setzen, nicht mitspielen)
 ```
+Kausalkette: Wettbewerb plus Preissignal schafft Effizienz, Konzentration und Risiken entstehen mit, Sozialsaeule faengt auf, Staat setzt Rahmen statt Preise, Ausnahmen bestehen nur mit Verhaeltnismaessigkeit. Ein Bein allein kippt: reiner Markt spaltet, reine Fuersorge erstickt.
+
+因果链：竞争+价格信号跑效率→赢家通吃风险出现→社会支柱（社保、再分配、劳资自治）接住掉队→国家只定框不定价→例外干预须过比例审查。两条腿缺一不可：纯市场分化，纯兜底窒息。
+
+Lohnanker: Gleichgewichtslohn $w_G = 12$ Euro, Mindestlohn $w_{min} = 15 > w_G$ erzeugt Angebotsueberhang am Arbeitsmarkt; Schutz $s$ gegen Effizienz $e$ abwaegen.
+
 
 Klausur-Satz: `Wettbewerb schafft Wohlstand, der Sozialstaat fängt die Schwächsten auf — der Staat ist Schiedsrichter, nicht Spieler.`
 
@@ -92,11 +106,17 @@ Klausur-Satz: `Der Mindestlohn schützt vor Armut trotz Arbeit, greift aber in P
 
 
 [Werkzeug: markt-sim]
+
+TARGET: Stellt im Sandkasten einen Lohnboden oberhalb des Gleichgewichts ein und zeigt an Mengen und Preisen, dass Sozialeinkommen steigt, waehrend die Beschaeftigungsmenge sinkt.
 ## Schritt 5 — ausprobieren: Duell der Wege: Weg A gegen Weg B
 
 VERGLEICH辨别实验（先选程序再做——两题用不同眼镜，别混）：
 
 VERGLEICH: Wähle erst das Verfahren — (i) Markt-Brille (Angebot/Nachfrage, Preismechanismus) oder (ii) Sozial-Brille (Sozialprinzip: Schutz, Umverteilung, Tarifautonomie) — dann lösen.
+
+DUELL Weg A (freier Markt) gegen Weg B (Staat greift ein): Weg A vertraut dem freien Markt: Wettbewerb und Preise maximieren Wohlstand, der Staat bleibt Schiedsrichter. Weg B baut den Sozialstaat aus: Mindestlohn, Umverteilung und Schutzgesetze sichern Wuerde, daempfen aber Anreize. Entscheide am Kriterium: Wohlstand und Effizienz sprechen fuer A, Gerechtigkeit und Existenzschutz fuer B.
+
+对决 Weg A（自由市场）vs Weg B（国家干预）：Weg A信市场创富：竞争价格拉满，国家当裁判。Weg B信社会国兜底：底薪再分配保护法保尊严，但压激励。判据：财富效率站A，正义生存站B。
 
 AUFGABE A (Markt-Brille)：Eine Bäckerei erhöht nach einer Missernte den Brotpreis von 3 auf 4 Euro. Erkläre über Angebot und Nachfrage, warum der höhere Preis die Nachfrage dämpft und das Angebot sichert.
 
@@ -115,9 +135,9 @@ CHECK检索（合书默写！觉得会了不算，能写出才算。Evidenz: Abr
 
 合书默写3行（遮住上面写）：1) 双支柱公式一行；2) 国家角色一行（裁判不是运动员）；3) Tarifautonomie定义一行。
 
-FRAGE: Nenne die zwei Säulen der Sozialen Marktwirtschaft und die Staatsrolle in einem Satz. | ANTWORT: Wettbewerb (Effizienz) + sozialer Ausgleich (Gerechtigkeit); Staat als Schiedsrichter/Netz, nicht Spieler.
-FRAGE: Was bedeutet Tarifautonomie in einem Satz? | ANTWORT: Löhne werden von Gewerkschaften und Arbeitgebern ohne Staat ausgehandelt.
-FRAGE: Welcher Operator passt: "… die Vor- und Nachteile des Mindestlohns …"? | ANTWORT: erörtern (Abwägung mit kriteriengestütztem Urteil).
+- FRAGE: Nenne die zwei Säulen der Sozialen Marktwirtschaft und die Staatsrolle in einem Satz. | ANTWORT: Wettbewerb (Effizienz) + sozialer Ausgleich (Gerechtigkeit); Staat als Schiedsrichter/Netz, nicht Spieler.
+- FRAGE: Was bedeutet Tarifautonomie in einem Satz? | ANTWORT: Löhne werden von Gewerkschaften und Arbeitgebern ohne Staat ausgehandelt.
+- FRAGE: Welcher Operator passt: "… die Vor- und Nachteile des Mindestlohns …"? | ANTWORT: erörtern (Abwägung mit kriteriengestütztem Urteil).
 
 Klausur-Satz: `Ordoliberalismus will Regeln statt direkter Eingriffe: Ordnung setzen, Wettbewerb schützen.`
 
@@ -143,6 +163,7 @@ SITUATION: Debatte: Soll der Mindestlohn auf 15 Euro steigen? Halte ein 2-Minute
 
 RUBRIC: These in Satz 1 (darstellen) | zwei Fachbegriffe (z. B. Tarifautonomie, Kaufkraft, Wettbewerbsfähigkeit) | ein Beleg/Beispiel | Urteil mit Kriterium (beurteilen).
 
+Klausur-Satz: `Die Mindestlohnstellungnahme misst den Eingriff an Preislogik und Schutzziel und benennt mit der Tarifautonomie den institutionellen Preis des Schutzes.`
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Was der Krisenstab lernt
 
 TAKEAWAY 1盒（合书能背才算过）：
@@ -154,3 +175,5 @@ REFLEXION 2问（写2行，不锁分但进下轮计划）：
 
 1. 过程（哪步卡住了）：Welcher Schritt hat gestockt — Verfahrenwahl (Schritt 5), Merksätze (Schritt 6) oder Plädoyer (Schritt 7)? 中文写一句卡点。
 2. 元认知（下次先…）：Beim nächsten Mal fange ich zuerst mit … an, weil …. 中文写一句计划（如"下次先写程序句再答题"）。
+
+Klausur-Satz: `Wettbewerb schafft Wohlstand, das Netz faengt auf: Der Staat ist Schiedsrichter, nicht Spieler - das ist der ganze Unterschied.`

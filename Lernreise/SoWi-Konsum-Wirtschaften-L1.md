@@ -22,7 +22,7 @@ version: Lesson-v3
 
 > EPISODE 16｜Akt I-II — Apfelmarkt und Mietendeckel｜召集人 Campusmentorin Dr. Ada Mensah：Campus-Streit um Herkunft und Aufstieg。
 
-HOOK 市长危机（先读剧情，再进 ZIELE）：【本集战役 EP16｜Akt I-II — Apfelmarkt und Mietendeckel｜虚拟城邦 Tycoon City 告急】市长办公室深夜灯火通明，Campusmentorin Dr. Ada Mensah 冲进来报告：Campus-Streit um Herkunft und Aufstieg，而明天市议会就要投票。集市在喊、长队在排、国库在抖：苹果集市价格战一路烧到租金黑市，再烧到基尼天平与劳资谈判桌，本集正是“Konsum und Wirtschaften”的现实引爆点。你的身份是市长直属经济改革规划委员：把街头危机翻译成考点，用沙盘 [markt-sim] 拿出可验证的数值方案，再交出一份 Klausur 满分答卷稳住议会。通关线索：TARGET: Stellt im Sandkasten Angebot und Nachfrage so ein, dass der Gleichgewichtspreis zwischen 8 und 12 Euro liegt, die gehandelte Menge mindestens 100 Einheiten erreicht und ein Probe-Hoechstpreis von 6 Euro als bindend mit Warteschlange entlarvt wird. 上一集的结尾就是这一集的悬念——黑市账本、税改天平、劳资天平、选票天平，四座天平有一座倒了，城邦就停摆。电台正在直播，反对派等着挑错：先读 ZIELE，再啃术语，把传导机制画成你的作战地图。DE-Briefing: Episode 16 — Campusmentorin Dr. Ada Mensah meldet Campus-Streit um Herkunft und Aufstieg; der Stadtrat entscheidet morgen. Rette Tycoon City mit Analyse, Sandkasten und Klausur-Antwort zum Thema Konsum und Wirtschaften.
+HOOK 市长危机（先读剧情，再进 ZIELE）：【本集战役 EP16｜Akt I-II — Apfelmarkt und Mietendeckel｜虚拟城邦 Tycoon City 告急】市长办公室深夜灯火通明，Campusmentorin Dr. Ada Mensah 冲进来报告：Campus-Streit um Herkunft und Aufstieg，而明天市议会就要投票。你的身份不变：市长直属经济改革规划委员。真实情境切入：同一件T恤，普通版12欧、有机公平版29欧，年轻人嘴上要可持续、手上点最便宜的；市中心一边喊限塑、一边奶茶杯堆成山。价格只报了私人成本，没报气候账——这就是外部性，碳价要把漏掉的账贴回去。通关线索：TARGET: Stellt im Sandkasten Angebot und Nachfrage so ein, dass der Gleichgewichtspreis zwischen 8 und 12 Euro liegt, die gehandelte Menge mindestens 100 Einheiten erreicht und ein Probe-Hoechstpreis von 6 Euro als bindend mit Warteschlange entlarvt wird. 先读 ZIELE，再啃术语，把传导机制画成你的作战地图。DE-Briefing: Episode 16 — Campusmentorin Dr. Ada Mensah meldet Campus-Streit um Herkunft und Aufstieg; der Stadtrat entscheidet morgen. Rette Tycoon City mit Analyse, Sandkasten und Klausur-Antwort zum Thema Konsum und Wirtschaften.
 
 ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
@@ -38,11 +38,19 @@ PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→�
 
 中文在上，德语在下：
 
-- 稀缺 — Knappheit：资源有限而欲望无限，逼人做选择，是经济学的起点。
-- 需求（有购买力的） — Bedarf：欲望加上购买力，才从"想要"变成"需求"。
-- 经济人 — homo oeconomicus：完全知情、追求效用最大化的模型人，不是现实描述。
-- 消费者主权 — Konsumentensouveränität：我花钱我做主，需求由消费者决定。
-- 可持续性 — Nachhaltigkeit：生态、社会、经济三支柱缺一不可。
+- **Nutzen / Kosten**（收益/成本）：买不买看边际账：降价是沿线走，涨收入是整条线搬家，广告是改口味。 Konsum folgt dem Vergleich von Grenznutzen und Grenzkosten. Faellt der Preis, steigt die nachgefragte Menge. Steigt das Einkommen, verschiebt sich die Nachfrage. Mechanismus: Kaufentscheidungen laufen ueber Budgetgeraden und Praeferenzen; Werbung verschiebt Praeferenzen, Einkommen die Gerade. Klausur-Tipp: Trenne Bewegung auf der Kurve von Verschiebung der Kurve.
+- **Externalität**（外部性）：代价别人扛、好处别人蹭，价格就撒谎：污染超产，防疫欠产。 Kosten oder Nutzen fallen bei Dritten an, nicht beim Verursacher. Abgase belasten alle, Impfung schuetzt alle. Der Marktpreis luegt dann systematisch. Mechanismus: Negative Externalitaeten erzeugen Ueberproduktion, positive erzeugen Unterversorgung - jeweils gegenueber dem Optimum. Klausur-Tipp: Benenne Drittbetroffene plus Richtung, sonst keine Externalitaet.
+- **CO2-Preis / Steuer**（碳价/税）：给碳定价就是把漏掉的账贴回价格里：化石贵了，绿色才有机会。 Der Staat bepreist die Tonne CO2 und macht Klima im Portemonnaie spuerbar. Lenkungswirkung entsteht ueber hoehere Preise fossiler Gueter. Einnahmen koennen als Klimageld zurueckfliessen. Mechanismus: Internalisierung schiebt die Angebotskurve um die Steuer nach oben; Konsum wandert zu sauberen Alternativen. Klausur-Tipp: Zeichne die Verschiebung und benenne Gewinner und Verlierer.
+- **Nachhaltiger Konsum**（可持续消费）：可持续三条腿：生态、社会、钱包；标签治信息差，差价治钱包。 Nachhaltigkeit misst Konsum an Oekologie, Sozialem und Oekonomie zugleich. Siegel und Lieferketten sollen Informationsluecken schliessen. Der Preisaufschlag bleibt die Huerde. Mechanismus: Transparenz plus Kaufkraft plus Normwandel - fehlt ein Bein, kippt der gute Vorsatz. Klausur-Tipp: Werte Siegel als Versuch gegen Informationsasymmetrie.
+- **Konsumentensouveränität**（消费者主权）：钞票投票听着美，没钱没信息没选项就投不了，消保法来补。 Im Modell bestimmt der Konsument mit dem Geldschein ueber Produktion. Werbung, Sucht und Armut begrenzen diese Souveraenitaet real. Verbraucherschutz antwortet mit Information und Widerruf. Mechanismus: Stimmzettel Geldschein zaehlt nur bei Einkommen, Information und Alternativen. Klausur-Tipp: Nutze den Begriff, um Markt- gegen Schutzlogik zu sortieren.
+
+
+
+
+
+
+
+
 
 Klausur-Satz: `Der homo oeconomicus entscheidet vollständig informiert und nutzenmaximierend — ein Modell, keine Menschenbeschreibung.`
 
@@ -72,6 +80,12 @@ ENTDECKEN（1概念 + 1文字图解）：
    Instrumente der Verbraucherpolitik:
    Label (mild) ... Anreize ... Verbote (hart)
 ```
+Kausalkette: Private Preisbildung, fehlende Klimarechnung, Ueberkonsum, Internalisierung ueber Steuer, Wanderung zu Alternativen, Rueckverteilung als Klimageld. Entscheidend bleibt die Trennung von Bewegung auf der Kurve und Verschiebung der Kurve.
+
+因果链：私人价格 formation→外部成本漏报→过量消费→碳税把外部性内化（价格上移）→行为转向绿色替代→再分配（气候钱）缓冲击。关键区分：沿线移动 vs 整线平移，短期贵 vs 长期省。
+
+Preisanker: Marktpreis $p = 12$ Euro, internalisierter Preis $P = p + t_{CO2}$ mit $t_{CO2} = 5$ Euro ergibt $P = 17$ Euro; die Menge faellt von $q_0$ auf $q_1 < q_0$.
+
 
 Klausur-Satz: `Konsumentensouveränität ist kein Zustand, sondern ein Auftrag an Verbraucherbildung, ehrliche Labels und eine Politik, die nachhaltige Optionen bezahlbar macht.`
 
@@ -118,6 +132,10 @@ VERGLEICH辨别实验（双向辨析：概念眼 vs. 政策眼）：
 
 VERGLEICH: Wähle erst das Verfahren —【选程序】先判断材料问的是 (i) Konsum-Verfahren（消费行为本身：Bedürfnis/Bedarf/Nachfrage、Souveränität vs. Fremdbestimmung、Nachhaltigkeit）还是 (ii) Politik-Verfahren（国家用什么手段干预消费：Label, Anreize, Verbote；先归类再判断）—— dann lösen.
 
+DUELL Weg A (freier Markt) gegen Weg B (Staat greift ein): Weg A vertraut dem freien Konsummarkt: Preise und Siegel lenken, der Muendige entscheidet, Wettbewerb senkt Kosten. Weg B greift lenkend ein: Verbote, Steuern und Klimageld schuetzen Klima und Arme vor der Marktlogik. Entscheide am Kriterium: Effizienz und Freiheit sprechen fuer A, Nachhaltigkeit und Schutz sprechen fuer B.
+
+对决 Weg A（自由市场）vs Weg B（国家干预）：Weg A信自由消费：价格标签引导，成熟消费者自己选。Weg B信引导干预：禁令税收气候钱，保气候也保穷人。判据：效率自由站A，可持续和保护站B。
+
 AUFGABE A (AFB II, 8 BE)：Material 2 (Sachtext) beschreibt, dass ein Jugendlicher ein teures Markenprodukt kauft, obwohl er es sich kaum leisten kann, weil es in seinem Umfeld als Statussymbol gilt. Erläutern Sie den Vorgang mit den Begriffen Bedarf und Fremdbestimmung.
 
 AUFGABE B (AFB II, 8 BE)：Eine Karikatur zeigt eine Ampel, an der ein Verbotsschild für Werbung leuchtet, während daneben ein Schild „freiwillige Selbstverpflichtung" steht. Ordnen Sie die beiden Maßnahmen in das Spektrum staatlicher Verbraucherpolitik ein.
@@ -132,9 +150,9 @@ Klausur-Satz: `Ein Werbeverbot ist ein starkes staatliches Instrument, während 
 
 CHECK检索默写（自测 3 题，与答案配对）：
 
-FRAGE: Wie lautet die Konzeptkette vom Bedürfnis zur Nachfrage? | ANTWORT: Bedürfnis (unbegrenzt) → Bedarf (mit Kaufkraft) → Nachfrage (am Markt wirksam).
-FRAGE: Warum ist der homo oeconomicus keine Beschreibung realer Menschen? | ANTWORT: Weil er vollständige Information und reine Nutzenmaximierung unterstellt, während reale Menschen von Kultur, Gewohnheit und Emotionen geleitet werden.
-FRAGE: Auf welchen drei Säulen ruht Nachhaltigkeit? | ANTWORT: Auf der ökologischen, der sozialen und der ökonomischen Säule.
+- FRAGE: Wie lautet die Konzeptkette vom Bedürfnis zur Nachfrage? | ANTWORT: Bedürfnis (unbegrenzt) → Bedarf (mit Kaufkraft) → Nachfrage (am Markt wirksam).
+- FRAGE: Warum ist der homo oeconomicus keine Beschreibung realer Menschen? | ANTWORT: Weil er vollständige Information und reine Nutzenmaximierung unterstellt, während reale Menschen von Kultur, Gewohnheit und Emotionen geleitet werden.
+- FRAGE: Auf welchen drei Säulen ruht Nachhaltigkeit? | ANTWORT: Auf der ökologischen, der sozialen und der ökonomischen Säule.
 
 Klausur-Satz: `Nachhaltigkeit ruht auf drei Säulen, die nicht gegeneinander ausgespielt werden dürfen.`
 
@@ -158,6 +176,7 @@ SITUATION: Eine Diskussion dreht sich um die Frage, ob Werbung für ungesunde od
 
 RUBRIC (30 XP): Benennung und Einordnung der Instrumente (Verbot, Anreiz, Label) (5 XP) | Analyse der Wirkung auf die Kaufentscheidung und die Souveränität (10 XP) | Abwägung von Eingriffstiefe und Wirksamkeit (10 XP) | Kriteriengeleitetes Urteil (z. B. Kriterium Wirksamkeit oder Freiheit) (5 XP).
 
+Klausur-Satz: `Die Stellungnahme zum Konsum trennt private Kosten von externen Kosten und misst jede Massnahme an Lenkung plus sozialer Abfederung.`
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Was der Krisenstab lernt
 
 TAKEAWAY 1盒（核心总结）：
@@ -168,3 +187,5 @@ Takeaway-Satz: `Konsumentensouveränität ist keine Tatsache, sondern ein Auftra
 REFLEXION 2问：
 1. 过程自省：Welcher Schritt fiel schwerer — das Anwenden der Konzeptkette (Schritt 4) oder das Einordnen der Instrumente (Schritt 5)?
 2. 元认知计划：Beim nächsten Mal prüfe ich zuerst, ob das Material das Verhalten der Verbraucher oder das Handeln des Staates beschreibt, und wähle danach das Verfahren.
+
+Klausur-Satz: `Der Preis sagt die halbe Wahrheit: Wer die zweite Haelfte - die Rechnung an Dritte - mitliest, konsumiert muendig statt nur billig.`

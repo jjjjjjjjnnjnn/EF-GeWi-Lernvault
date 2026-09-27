@@ -22,7 +22,7 @@ version: Lesson-v3
 
 > EPISODE 09 — Akt IV-V — Tarifarena und Demokratiewerkstatt — Auftrag von Steuerplaner Felix Dorn: Rentenkassen-Schock im Seniorenheim.
 
-HOOK (Stadtrats-Krise, lies zuerst): EPISODE 09 — Akt IV-V — Tarifarena und Demokratiewerkstatt — Stadt Tycoon City ruft dich in den Krisenstab. Steuerplaner Felix Dorn stuermt mit einer Eilmeldung ins Buero: Rentenkassen-Schock im Seniorenheim — und morgen entscheidet der Stadtrat. Der Markt schreit, die Warteschlange waechst, die Kasse zittert: Ohne deine Analyse kippt die Stadt vom Apfelparadies in den Schwarzmarkt. Dein Auftrag in dieser Episode: Uebersetze die Strassenszene in das heutige Thema Grundgesetz und Verfassungsprinzipien. Sammle Belege, stelle den Sandkasten [balance-board] scharf und liefere dem Rat eine Klausur-Antwort, die einer Pruefungskommission standhaelt. Erste Spur: TARGET: Bringt auf dem Verhandlungsbrett beide Waagschalen in die Balance — Bedingung: Zustimmung beider Baenke, Loesung mit Kompromisslinie, Ergebnisprotokoll mit zwei Begruendungen je Seite. Wer den Mechanismus versteht, rettet den Haushalt — und vielleicht die Wahl. Der Countdown laeuft, das Radio berichtet live, die Opposition wartet nur auf deinen Fehler: Oeffne die Ziele, schnapp dir die Begriffe und beweise, dass Tycoon City regierbar bleibt.
+HOOK (Stadtrats-Krise, lies zuerst): EPISODE 09 — Akt IV-V — Tarifarena und Demokratiewerkstatt — Stadt Tycoon City ruft dich in den Krisenstab. Steuerplaner Felix Dorn stuermt mit einer Eilmeldung ins Buero: Rentenkassen-Schock im Seniorenheim — und morgen entscheidet der Stadtrat. Realer Fall: Das Bundesverfassungsgericht stoppte 2020 die anlasslose BND-Auslandsueberwachung - Sicherheit darf Privatheit nicht auffressen. Im Versammlungsrecht verlangt Karlsruhe: Die Polizei sichert den Verkehr, bewertet aber keine Inhalte. Auch Mietendeckel schuetzen Mieter, duerfen Eigentum aber nicht aushöhlen - aushöhlen heisst hier: im Kern entleeren. Alle drei Faelle messen mit einem Massstab: praktische Konkordanz. Erste Spur: TARGET: Bringt auf dem Verhandlungsbrett beide Waagschalen in die Balance — Bedingung: Zustimmung beider Baenke, Loesung mit Kompromisslinie, Ergebnisprotokoll mit zwei Begruendungen je Seite. Oeffne die Ziele, schnapp dir die Begriffe und beweise, dass Tycoon City regierbar bleibt.
 
 ZIELE (drei messbare Ziele dieser Lektion):
 
@@ -34,6 +34,7 @@ ZIELE (drei messbare Ziele dieser Lektion):
 
 Eine Gemeinde will eine politische Versammlung vom zentralen Platz verbannen, weil der Verkehr stockt und Anwohner Ruhe verlangen. Die Gruppe beruft sich auf Versammlungsfreiheit und Meinungsfreiheit, die Gemeinde auf das Allgemeininteresse an Sicherheit und Ordnung. Beide Seiten rufen das Grundgesetz an. Darf die Mehrheit der Anwohner die Minderheit der Demonstrierenden verdrängen, oder setzt das Recht der Mehrheit eine feste Grenze? In dieser Lektion lernst du zwei Wege der Antwort: Weg A vertraut der demokratischen Mehrheit, Weg B vertraut dem rechtsstaatlichen Kern.
 
+Klausur-Satz: `Das Grundgesetz stellt die Menschenwuerde an den Anfang und bindet ueber Art. 1 Abs. 3 jede Staatsgewalt - Datenkontrolle und Versammlungsstreit zeigen diese Bindung live.`
 ## Schritt 2 — entdecken: Werkzeugkoffer von Steuerplaner Felix Dorn: 5 Begriffe scharf stellen
 
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
@@ -44,11 +45,19 @@ Vier Prinzipien, ein unantastbarer Kern, viele Kollisionen: Ohne Ordnung wird Ve
 
 ### Fachbegriffe & Definitionen
 
-- **Menschenwuerde:** Der oberste Wert der Verfassung nach Art. 1 GG. Sie ist unantastbar und verpflichtet alle staatliche Gewalt zu Achtung und Schutz.
-- **Demokratieprinzip:** Das Prinzip aus Art. 20 GG, dass alle Staatsgewalt vom Volke ausgeht. Es verlangt Wahlen, Mehrheitsregel und Wechsel der Regierung bei gleichzeitigem Schutz der Minderheit.
-- **Rechtsstaat:** Die Bindung aller Staatsgewalt an Gesetz und Recht mit Grundrechten und Gerichten. Er sichert Freiheit durch Abwehrrechte und geordnete Verfahren.
-- **Ewigkeitsklausel:** Die Sperre aus Art. 79 Abs. 3 GG. Sie entzieht Art. 1 und Art. 20 jeder Aenderung und sichert damit den unantastbaren Kern der Verfassung.
-- **Praktische Konkordanz:** Der Grundsatz zum Ausgleich kollidierender Grundrechte. Beide Rechte sollen so weit wie möglich verwirklicht werden, ohne dass der Wesensgehalt eines Rechts angetastet wird.
+- **Menschenwürde Art. 1**: Die Wuerde des Menschen ist unantastbar und steht bewusst an erster Stelle. Sie antwortet auf die NS-Verbrechen und begrenzt jede Staatsgewalt. Ueber Art. 1 Abs. 3 binden Grundrechte alle Staatsgewalt unmittelbar. Mechanismus: Jede staatliche Massnahme wird zuerst an der Wuerde gemessen; was Menschen zum blossen Objekt macht, faellt durch. Klausur-Tipp: Zitiere Art. 1 Abs. 1 plus Abs. 3 als Doppelanker.
+- **Verfassungsprinzipien Art. 20**: Art. 20 nennt Demokratie, Rechtsstaat, Sozialstaat und Bundesstaat. Sie beschreiben die Staatsbauart, nicht einzelne Rechte. Zusammen bilden sie die Identitaet der Ordnung. Mechanismus: Strukturfragen werden an Art. 20 geprueft, Individualfragen an den Freiheits- und Gleichheitsrechten. Klausur-Tipp: Struktur oder Recht - diese Sortierung entscheidet ueber die Normwahl.
+- **Ewigkeitsklausel Art. 79 Abs. 3**: Art. 79 Abs. 3 entzieht Art. 1 und Art. 20 jeder Aenderung. Selbst verfassungsaendernde Mehrheiten duerfen den Kern nicht antasten. Der Rest der Verfassung bleibt aenderbar. Mechanismus: Tresor-Logik - nur zwei Artikel liegen im Safe, alles andere ist verhandelbar. Klausur-Tipp: Schreibe ausdruecklich nur Art. 1 und Art. 20, sonst Punktabzug.
+- **Grundrechtskollision**: Zwei Grundrechte oder Grundrecht und Staatsauftrag prallen aufeinander. Beispiel Schwimmunterricht gegen Religionsfreiheit, Versammlung gegen Verkehrsfluss. Kein Recht verdrängt das andere automatisch. Mechanismus: Kollisionsfeststellung, beidseitige Schonung, Kernschutz - in Gutachtenstil Obersatz bis Ergebnis. Klausur-Tipp: Benenne beide Seiten mit Artikelnummer, sonst fehlt die Subsumtion.
+- **Praktische Konkordanz**: Kollidierende Rechte werden so ausgeglichen, dass beide moeglichst verwirklicht bleiben. Der Wesensgehalt beider Rechte bleibt unantastbar. Entweder-oder ist die falsche Antwort. Mechanismus: Ersatzleistungen, Auflagen und Differenzierungen statt Totalverbot oder Totalfreigabe. Klausur-Tipp: Schliesse mit dem Satz zum Wesensgehalt, das ist die Punkteklausel.
+
+
+
+
+
+
+
+
 
 ### Wirkungsgefuege / Modell
 
@@ -116,6 +125,14 @@ VERGLEICH (Wahl des Weges, Weg A gegen Weg B):
 
 VERGLEICH: Waehle zuerst bewusst Weg A (Demokratieprinzip) oder Weg B (Rechtsstaat mit Ewigkeitsklausel) und begruende dann dein Urteil am passenden Kriterium.
 
+DUELL Weg A (freier Markt) gegen Weg B (Staat greift ein): Weg A vertraut der Freiheit des Einzelnen: Grundrechte wehren den Staat ab, Gerichte schuetzen den Kern. Weg B vertraut dem schuetzenden Staat: Sicherheit, Bildung und Versorgung rechtfertigen Eingriffe in Freiheit. Entscheide am Massstab der praktischen Konkordanz: Maximale beidseitige Verwirklichung bei unantastbarem Wesensgehalt.
+
+DUELL Weg A (freier Markt) gegen Weg B (Staat greift ein): Weg A vertraut der Freiheit des Einzelnen: Grundrechte wehren den Staat ab, Gerichte schuetzen den Kern. Weg B vertraut dem schuetzenden Staat: Sicherheit, Bildung und Versorgung rechtfertigen Eingriffe in Freiheit. Entscheide am Massstab der praktischen Konkordanz: Maximale beidseitige Verwirklichung bei unantastbarem Wesensgehalt.
+
+DUELL Weg A (freier Markt) gegen Weg B (Staat greift ein): Weg A vertraut der Freiheit des Einzelnen: Grundrechte wehren den Staat ab, Gerichte schuetzen den Kern. Weg B vertraut dem schuetzenden Staat: Sicherheit, Bildung und Versorgung rechtfertigen Eingriffe in Freiheit. Entscheide am Massstab der praktischen Konkordanz: Maximale beidseitige Verwirklichung bei unantastbarem Wesensgehalt.
+
+DUELL Weg A (freier Markt) gegen Weg B (Staat greift ein): Weg A vertraut der Freiheit des Einzelnen: Grundrechte wehren den Staat ab, Gerichte schuetzen den Kern. Weg B vertraut dem schuetzenden Staat: Sicherheit, Bildung und Versorgung rechtfertigen Eingriffe in Freiheit. Entscheide am Massstab der praktischen Konkordanz: Maximale beidseitige Verwirklichung bei unantastbarem Wesensgehalt.
+
 Weg A: Das Demokratieprinzip vertraut der Mehrheitsregel und der Repraesentation. Gewaehlte Organe entscheiden, die Mehrheit legitimiert, die Minderheit fuegt sich und kaempft bei der naechsten Wahl um die Mehrheit. Staerke dieses Weges ist Handlungsfaehigkeit und Gleichheit der Stimmen; Grenze ist die Gefahr, dass eine Mehrheit Grundrechte der Minderheit ueberstimmt.
 
 Weg B: Der Rechtsstaat mit Art. 79 Abs. 3 GG setzt der Mehrheit eine materielle Grenze. Ewigkeitsklausel, Grundrechte und Gerichte schuetzen die Minderheit auch gegen deutliche Mehrheiten und sichern materielle Gerechtigkeit statt blosser Stimmenzahl. Staerke dieses Weges ist der unantastbare Kern; Grenze ist die Spannung zur demokratischen Selbstbestimmung.
@@ -134,9 +151,9 @@ Klausur-Satz: `Die Mehrheit legitimiert die Entscheidung, doch Art. 1 und Art. 7
 
 CHECK (drei Fragen mit Antworten):
 
-FRAGE: Welche vier Verfassungsprinzipien nennt Art. 20 GG? | ANTWORT: Demokratie, Rechtsstaat, Sozialstaat und Bundesstaat.
-FRAGE: Was schuetzt die Ewigkeitsklausel des Art. 79 Abs. 3 GG? | ANTWORT: Sie entzieht Art. 1 und Art. 20 jeder Aenderung und sichert damit den unantastbaren Kern.
-FRAGE: Was bedeutet praktische Konkordanz bei einer Grundrechtskollision? | ANTWORT: Beide Rechte sind so weit wie möglich zu verwirklichen, ohne dass der Wesensgehalt eines Rechts angetastet wird.
+- FRAGE: Welche vier Verfassungsprinzipien nennt Art. 20 GG? | ANTWORT: Demokratie, Rechtsstaat, Sozialstaat und Bundesstaat.
+- FRAGE: Was schuetzt die Ewigkeitsklausel des Art. 79 Abs. 3 GG? | ANTWORT: Sie entzieht Art. 1 und Art. 20 jeder Aenderung und sichert damit den unantastbaren Kern.
+- FRAGE: Was bedeutet praktische Konkordanz bei einer Grundrechtskollision? | ANTWORT: Beide Rechte sind so weit wie möglich zu verwirklichen, ohne dass der Wesensgehalt eines Rechts angetastet wird.
 
 Klausur-Satz: `Die Ewigkeitsklausel entzieht Art. 1 und Art. 20 GG jeder Verfassungsänderung und sichert so den unantastbaren Kern.`
 
@@ -157,6 +174,7 @@ SITUATION: Eine Gemeinde will einer Gruppe ein oeffentliches Platzverbot erteile
 AUFGABE (AFB III): Verfasse eine zusammenhaengende Darstellung von etwa 150 Woertern mit Kriterium, Anwendung und Urteil.
 RUBRIC (30 XP): These mit Kriterium Minderheitenschutz und Wesensgehalt (5 XP) | Darstellung beider Grundrechtspositionen mit Artikelbezug (10 XP) | Anwendung der Verhaeltnismaessigkeit mit Zeit, Ort und Mittel (10 XP) | Fazit mit Fachbegriffen und Klausur-Satz (5 XP).
 
+Klausur-Satz: `Die verfassungsrechtliche Stellungnahme erkennt zuerst die Kollisionslage mit Artikelnummern und loest sie dann ueber schonenden Ausgleich statt Entweder-oder.`
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Was der Krisenstab lernt
 
 TAKEAWAY (Kernbotschaft in einem Kasten):
@@ -166,3 +184,5 @@ Takeaway-Satz: `Die Mehrheit entscheidet, doch die Würde begrenzt jede Mehrheit
 REFLEXION (zwei Fragen):
 1. Wann ueberzeugt Weg A mit Mehrheitsregel staerker, und wann verlangt der Fall Weg B mit Ewigkeitsklausel und Minderheitenschutz? Nenne ein Abgrenzungsmerkmal.
 2. Pruefe deine Antwort an der Klausurnorm: Hast du Fachbegriffe mit Artikelbezug genannt, beide Wege erwoegen und das Urteil an einem expliziten Kriterium begruendet?
+
+Klausur-Satz: `Das Grundgesetz vertraut der Demokratie alles an - ausser der Entscheidung, keine Demokratie mehr zu sein.`

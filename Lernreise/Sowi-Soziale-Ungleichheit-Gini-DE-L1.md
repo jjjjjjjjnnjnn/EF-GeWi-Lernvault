@@ -22,7 +22,7 @@ version: Lesson-v3
 
 > EPISODE 26 — Akt III — Gini-Waage und Steuerreform — Auftrag von EU-Foerderlotsin Elena Vidal: EU-Foerdermittel-Poker um den Hafen.
 
-HOOK (Stadtrats-Krise, lies zuerst): EPISODE 26 — Akt III — Gini-Waage und Steuerreform — Stadt Tycoon City ruft dich in den Krisenstab. EU-Foerderlotsin Elena Vidal stuermt mit einer Eilmeldung ins Buero: EU-Foerdermittel-Poker um den Hafen — und morgen entscheidet der Stadtrat. Der Markt schreit, die Warteschlange waechst, die Kasse zittert: Ohne deine Analyse kippt die Stadt vom Apfelparadies in den Schwarzmarkt. Dein Auftrag in dieser Episode: Uebersetze die Strassenszene in das heutige Thema Lorenzkurve und Gini-Koeffizient. Sammle Belege, stelle den Sandkasten [gini-allocator] scharf und liefere dem Rat eine Klausur-Antwort, die einer Pruefungskommission standhaelt. Erste Spur: TARGET: Justiert Steuer- und Transferregler so, dass der Gini-Indikator nach Umverteilung in den Korridor 0,28 bis 0,32 faellt, das unterste Quintil mindestens 8 Prozent des Kuchens haelt und die Armutsrisikoquote sichtbar sinkt. Wer den Mechanismus versteht, rettet den Haushalt — und vielleicht die Wahl. Der Countdown laeuft, das Radio berichtet live, die Opposition wartet nur auf deinen Fehler: Oeffne die Ziele, schnapp dir die Begriffe und beweise, dass Tycoon City regierbar bleibt.
+HOOK (Stadtrats-Krise, lies zuerst): EPISODE 26 — Akt III — Gini-Waage und Steuerreform — Stadt Tycoon City ruft dich in den Krisenstab. EU-Foerderlotsin Elena Vidal stuermt mit einer Eilmeldung ins Buero: EU-Foerdermittel-Poker um den Hafen — und morgen entscheidet der Stadtrat. Realer Fall: Nach Umverteilung liegt der Gini bei etwa 0,30, das unterste Fuenftel haelt rund acht Prozent des Kuchens, die Armutsrisikoquote bei etwa 15 Prozent. Der Bildungstrichter zeigt Arbeiterkinder weit unter Akademikerkindern. Dieselben Zahlen, zwei Lesarten: Der Markt lobt Anreize, der Eingriff fordert Umverteilung. Im Sandkasten drehst du selbst an Steuer und Transfer und siehst den Gini wandern. Erste Spur: TARGET: Justiert Steuer- und Transferregler so, dass der Gini-Indikator nach Umverteilung in den Korridor 0,28 bis 0,32 faellt, das unterste Quintil mindestens 8 Prozent des Kuchens haelt und die Armutsrisikoquote sichtbar sinkt. Oeffne die Ziele, schnapp dir die Begriffe und beweise, dass Tycoon City regierbar bleibt.
 
 ZIELE (drei messbare Ziele dieser Lektion):
 
@@ -46,11 +46,19 @@ Flaeche, Bogen, Quote: Alles misst anders. Wer nur Zahl nennt, verliert Deutung.
 
 ### Fachbegriffe und Definitionen
 
-- **Lorenzkurve:** Der Bogen aus kumulierter Bevoelkerung gegen kumuliertes Einkommen unter der Diagonalen. Je tiefer der Bogen durchhaengt, desto ungleicher die Verteilung.
-- **Gini-Wert:** Der Wert aus dem Abstand zwischen Diagonale und Bogen auf einer Skala von null bis eins. Null steht fuer voellige Gleichheit, eins fuer groesste Ungleichheit.
-- **Quintilsanteil:** Der Baustein aus fuenf Gruppen zu je zwanzig Prozent mit ihrem Einkommensanteil. Beispiel Region A mit breiter Spreizung gegen Region B mit engerer Staffelung.
-- **Armutsgefaehrdung:** Die Quote mit Schwelle bei sechzig Prozent des mittleren Einkommens. Sie ergaenzt den Verteilungswert durch den Blick auf Teilhabe am Minimum.
-- **Umverteilung:** Die Korrektur vom Marktergebnis zum verfuegbaren Einkommen ueber progressive Steuern und Transfers. Sie hebt die Kurve und senkt den Wert.
+- **Einkommen / Vermögen (schreibe Vermoegen)**: Einkommen fliesst jaehrlich aus Arbeit und Kapital. Vermoegen ist der gespeicherte Bestand aus Ersparnis und Erbschaft. Vermoegen streut weit staerker und vererbt Chancen. Mechanismus: Zinseszins und Erbschaften konzentrieren Bestaende, Loehne allein gleichen das nie aus. Klausur-Tipp: Trenne Fluss und Bestand, sonst verwechselst du Gini-Quellen.
+- **Gini-Koeffizient**: Der Gini misst Ungleichheit zwischen null und eins. Null meint alle gleich, eins meint einer hat alles. Deutschland liegt nach Umverteilung um 0,30. Mechanismus: Steuern und Transfers druecken den Markt-Gini zum Netto-Gini; die Differenz misst den Umverteilungsgrad. Klausur-Tipp: Nenne immer Markt- gegen Netto-Gini plus Korridor 0,28 bis 0,32.
+- **Armutsrisikoquote**: Arm ist, wer unter 60 Prozent des mittleren Einkommens liegt. Das misst relative, nicht absolute Armut. Alleinerziehende und Kinder tragen das hoechste Risiko. Mechanismus: Mediananker plus Haushaltsgewichtung - wer darunter faellt, kann am Normalleben kaum teilhaben. Klausur-Tipp: Betone relativ statt absolut, das ist die Haelfte der Punkte.
+- **Bildungstrichter**: Von hundert Akademikerkindern studieren ueber siebzig, von hundert Arbeiterkindern unter dreissig. Herkunft praegt Abschluesse staerker als Leistung. Der Trichter vererbt Ungleichheit. Mechanismus: Fruehe Foerderung, Nachhilfe und Netzwerke kumulieren Vorspruenge Jahr fuer Jahr. Klausur-Tipp: Nutze den Trichter als Beleg gegen reine Meritokratie.
+- **Umverteilung**: Steuern nehmen oben, Transfers geben unten: Kindergeld, Wohngeld, Buergergeld. Progression laesst Starke mehr tragen. Jede Umverteilung daempft Anreize und mindert Not. Mechanismus: Steuerprogression plus zielgenaue Transfers senken Gini und Quote gleichzeitig. Klausur-Tipp: Benenne Finanzierer und Empfaenger je Massnahme.
+
+
+
+
+
+
+
+
 
 ### Wirkungsgefuege / Modell
 
@@ -116,6 +124,8 @@ Klausur-Satz: `Mit einem Gini-Koeffizienten von rund 0,29 liegt die Verteilung d
 
 VERGLEICH: Zwei Wege nutzen dieselbe Verteilung unterschiedlich. Weg A beschreibt die Primaerverteilung mit Leistungsanreizen und Marktloehnen. Weg B korrigiert zur Sekundaerverteilung mit progressiven Steuern und Transfers. Pruefe zuerst die Aufgabe, waehle dann den passenden Weg.
 
+DUELL Weg A (freier Markt) gegen Weg B (Staat greift ein): Weg A vertraut dem freien Markt: Ungleichheit lohnt Leistung, niedrige Steuern locken Investition, Wachstum hebt alle Boote. Weg B baut Umverteilung: Progression, Transfers und Mindestlohn sichern Teilhabe, kosten aber Anreize und Wachstum. Entscheide am Kriterium: Effizienz und Wachstum sprechen fuer A, Gerechtigkeit und Teilhabe fuer B.
+
 Weg A: Primaerverteilung mit Anreiz. Marktloehne nach Leistung, Bildung und Verantwortung spornen an und lenken Kraefte dorthin, wo sie knapp sind. Staerke ist Motivation und Effizienz, Schwaeche sind Startnachteile und wachsende Spreizung ohne Ausgleich.
 
 Weg B: Sekundaerverteilung mit Ausgleich. Progressive Steuern plus Transfers plus oeffentiche Bildung heben den Bogen und sichern Teilhabe. Staerke sind Fairness und Frieden, Schwaeche sind hohe Lasten und moegliche Anreizverluste.
@@ -134,9 +144,9 @@ Klausur-Satz: `Fuer eine reine Rangfolge genuegt der Blick auf die Lorenzkurve, 
 
 CHECK (drei Fragen mit Antworten):
 
-FRAGE: Wie ist der Gini-Wert definiert und welche Werte kann er annehmen. | ANTWORT: Er fasst den Abstand zwischen Diagonale und Lorenzkurve zu einem Wert zwischen null voellig gleich und eins voellig ungleich.
-FRAGE: Wie liest man aus zwei Lorenzkurven ab, welche Verteilung ungleicher ist. | ANTWORT: Die Kurve, die tiefer durchhaengt und damit weiter von der Diagonalen entfernt liegt, gehoert zur ungleicheren Verteilung.
-FRAGE: Welche vier Dimensionen der Ungleichheit und je ein Beispiel gehoeren zum EF-Grundwissen. | ANTWORT: Einkommen und Vermoegen mit Verteilungswert und Armutsquote, Bildung mit Trichter, Geschlecht mit Lohnluecke und Herkunft mit Bildungsbeteiligung und Armutsrisiko.
+- FRAGE: Wie ist der Gini-Wert definiert und welche Werte kann er annehmen. | ANTWORT: Er fasst den Abstand zwischen Diagonale und Lorenzkurve zu einem Wert zwischen null voellig gleich und eins voellig ungleich.
+- FRAGE: Wie liest man aus zwei Lorenzkurven ab, welche Verteilung ungleicher ist. | ANTWORT: Die Kurve, die tiefer durchhaengt und damit weiter von der Diagonalen entfernt liegt, gehoert zur ungleicheren Verteilung.
+- FRAGE: Welche vier Dimensionen der Ungleichheit und je ein Beispiel gehoeren zum EF-Grundwissen. | ANTWORT: Einkommen und Vermoegen mit Verteilungswert und Armutsquote, Bildung mit Trichter, Geschlecht mit Lohnluecke und Herkunft mit Bildungsbeteiligung und Armutsrisiko.
 
 Klausur-Satz: `Der Gini-Koeffizient verdichtet die gesamte Lorenzkurve zu einer Zahl zwischen 0 und 1, waehrend die vier Dimensionen die unterschiedlichen Erscheinungsformen der Ungleichheit erfassen.`
 
@@ -157,6 +167,7 @@ SITUATION: Fuer Region A nennt das Material breiter gestreute Quintilsanteile, f
 AUFGABE (AFB III): Verfasse eine zusammenhaengende Darstellung von etwa 150 Woertern mit Kriterium, Anwendung und Urteil.
 RUBRIC (30 XP): Aufstellen der kumulierten Anteile und der Lorenz-Idee (6 XP) | Vergleich der Boegen und Werte von A und B am Werkzeug (8 XP) | Benennung und Anwendung des Kriteriums Chancengerechtigkeit (10 XP) | Kriteriengeleitetes Urteil zur Umverteilung (6 XP)
 
+Klausur-Satz: `Die Ungleichheitsklausur belegt jede Aussage mit Quote oder Koeffizient und trennt Markt- von Netto-Verteilung, bevor sie wertet.`
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Was der Krisenstab lernt
 
 TAKEAWAY (Kernbotschaft in einem Kasten):
@@ -166,3 +177,5 @@ Takeaway-Satz: `Eine Zahl misst Spreizung, erst das Kriterium misst Fairness: We
 REFLEXION (zwei Fragen):
 1. Wo hast du zuletzt Weg A gegen Weg B abgewogen: Hat dich Anreiz mit Leistung oder Ausgleich mit Steuern und Transfers staerker ueberzeugt, und an welcher Kurvenform hast du das festgemacht.
 2. Welchen Fehlschluss willst du kuenftig vermeiden: Wert mit Wirklichkeit zu verwechseln oder Konvention mit Naturgesetz, und mit welcher Prueffrage zu Form plus Armut sicherst du kuenftig dein Urteil.
+
+Klausur-Satz: `Ungleichheit beginnt am Markt und endet in der Entscheidung: Der Gini misst, das Kriterium richtet, das Urteil verteilt.`

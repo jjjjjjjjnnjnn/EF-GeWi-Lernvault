@@ -22,7 +22,7 @@ version: Lesson-v3
 
 > EPISODE 31｜Akt III — Gini-Waage und Steuerreform｜召集人 Kurierfahrerin Samira Haddad：Prekaritaets-Protest der Nachtkuriere。
 
-HOOK 市长危机（先读剧情，再进 ZIELE）：【本集战役 EP31｜Akt III — Gini-Waage und Steuerreform｜虚拟城邦 Tycoon City 告急】市长办公室深夜灯火通明，Kurierfahrerin Samira Haddad 冲进来报告：Prekaritaets-Protest der Nachtkuriere，而明天市议会就要投票。集市在喊、长队在排、国库在抖：苹果集市价格战一路烧到租金黑市，再烧到基尼天平与劳资谈判桌，本集正是“Sozialstaat und Rentenkrise im demografischen Wandel”的现实引爆点。你的身份是市长直属经济改革规划委员：把街头危机翻译成考点，用沙盘 [gini-allocator] 拿出可验证的数值方案，再交出一份 Klausur 满分答卷稳住议会。通关线索：TARGET: Justiert Steuer- und Transferregler so, dass der Gini-Indikator nach Umverteilung in den Korridor 0,28 bis 0,32 faellt, das unterste Quintil mindestens 8 Prozent des Kuchens haelt und die Armutsrisikoquote sichtbar sinkt. 上一集的结尾就是这一集的悬念——黑市账本、税改天平、劳资天平、选票天平，四座天平有一座倒了，城邦就停摆。电台正在直播，反对派等着挑错：先读 ZIELE，再啃术语，把传导机制画成你的作战地图。DE-Briefing: Episode 31 — Kurierfahrerin Samira Haddad meldet Prekaritaets-Protest der Nachtkuriere; der Stadtrat entscheidet morgen. Rette Tycoon City mit Analyse, Sandkasten und Klausur-Antwort zum Thema Sozialstaat und Rentenkrise im demografischen Wandel.
+HOOK 市长危机（先读剧情，再进 ZIELE）：【本集战役 EP31｜Akt III — Gini-Waage und Steuerreform｜虚拟城邦 Tycoon City 告急】市长办公室深夜灯火通明，Kurierfahrerin Samira Haddad 冲进来报告：Prekaritaets-Protest der Nachtkuriere，而明天市议会就要投票。你的身份不变：市长直属经济改革规划委员。真实数据切入：俾斯麦1889年设70岁退休时人均寿命不到50岁——养老金本是少数人的晚年例外；今天缴费率18.6%、老人越活越长、缴费人越来越少。家族群养老接龙 tension 拉满：延迟退休、多交钱、国家多补，三旋钮拧哪个都有人疼。通关线索：TARGET: Justiert Steuer- und Transferregler so, dass der Gini-Indikator nach Umverteilung in den Korridor 0,28 bis 0,32 faellt, das unterste Quintil mindestens 8 Prozent des Kuchens haelt und die Armutsrisikoquote sichtbar sinkt. 先读 ZIELE，再啃术语，把传导机制画成你的作战地图。DE-Briefing: Episode 31 — Kurierfahrerin Samira Haddad meldet Prekaritaets-Protest der Nachtkuriere; der Stadtrat entscheidet morgen. Rette Tycoon City mit Analyse, Sandkasten und Klausur-Antwort zum Thema Sozialstaat und Rentenkrise im demografischen Wandel.
 
 ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
@@ -51,11 +51,19 @@ PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→�
 
 中文在上，德语在下：
 
-- 现收现付 — Umlageverfahren：当期缴费直接支付当期养老金，无大额储备。
-- 代际契约 — Generationenvertrag：工作代养退休代的默契，非法律合同。
-- 人口老龄化 — demografischer Wandel：低生育加长寿，老年抚养比上升。
-- 缴费率 — Beitragssatz：工资中缴社保的比例，雇主雇员各半。
-- 养老金水平 — Rentenniveau：标准养老金与平均工资之比，反映保障度。
+- **Umlageverfahren**（现收现付）：当期缴费养当期老人，不存大钱；人变了账立刻变。 Laufende Beitraege zahlen laufende Renten, fast ohne Kapitalstock. Das System lebt vom Nachwuchs und funktioniert nur bei stabiler Demografie. Schrumpft die Basis, steigt der Druck sofort. Mechanismus: Einnahmen aus Beitrag mal Zahler decken Ausgaben aus Rente mal Rentner - jede Seite schlaegt direkt durch. Klausur-Tipp: Schreibe die Bilanzgleichung als ersten Satz.
+- **Generationenvertrag**（代际契约）：工作代养退休代，指望下一代养自己；不是合同是默契，信任崩了制度就晃。 Die Erwerbstaetigen finanzieren die Alten im Vertrauen auf spaetere Gegenleistung. Kein Gesetz, sondern stilles Versprechen über Generationen - ueber heisst hier across. Bricht Vertrauen, bricht Legitimation. Mechanismus: Fairness bemisst sich an Lastenteilung zwischen Zahlern, Rentnern und Steuerzahlern. Klausur-Tipp: Nutze Fairness als Massstab jeder Reform.
+- **Demografischer Wandel**（人口老龄化）：少生砍缴费端、长寿加领取端还拉长领取期，三力同向挤一张账。 Weniger Geburten senken die Zahler, hoehere Lebenserwartung erhoeht Zahl und Dauer der Renten. Der Altenquotient steigt doppelt getrieben. Jeder Jahrgang zahlt laenger ein und bezieht laenger. Mechanismus: Basis schrumpft, Spitze waechst, Bezugsdauer dehnt - dreifacher Druck auf eine Gleichung. Klausur-Tipp: Nenne alle drei Effekte, sonst halbe Analyse.
+- **Beitragssatz**（缴费率）：工资条里社保那刀：涨一点保养老，伤一点就业和到手钱。 Der Satz teilt den Lohn in netto und solidarisch. Aktuell 18,6 Prozent, je halb Arbeitgeber und Arbeitnehmer. Jeder Punkt mehr verteuert Arbeit und drueckt Netto. Mechanismus: Hohe Saetze sichern Niveau, gefaehrden aber Jobs und Kaufkraft. Klausur-Tipp: Benenne Verlierer je Schraube.
+- **Rentenniveau**（养老金水平）：标准养老金对平均工资之比：保水平就得加钱或延退，不可能三角。 Das Niveau misst Standardrente gegen Durchschnittslohn. Es zeigt, wie viel Lebensstandard die Rente haelt. Sinkt es, droht Altersarmut trotz Lebensleistung. Mechanismus: Niveau gegen Beitrag gegen Alter - das Dreieck laesst keine kostenlose Loesung zu. Klausur-Tipp: Formuliere das Dreieck als Unmoeglichkeitssatz.
+
+
+
+
+
+
+
+
 
 Klausur-Satz: `Steigt der Altenquotient, muss bei gleichem Niveau entweder der Beitrag steigen oder die Leistung sinken.`
 
@@ -88,6 +96,12 @@ Erwerbstaetige --Beitrag--> Kasse --Rente--> Rentner
 Wandel: Zahler - | Empfaenger + | Dauer +
 Regler: Beitrag + / Niveau - / Alter + / Steuer +
 ```
+Kausalkette: Umlagebilanz im Heute, Geburtenknick plus Langlebigkeit, drei Schrauben plus Steuer, Verlierer je Schraube: Beitrag trifft Jobs und Junge, Niveau trifft Alte, Alter trifft Koerperarbeiter. Systemwechsel tauscht Demografierisiko gegen Marktrisiko plus Doppelbelastung.
+
+因果链：现收现付当期平衡→少子砍基数、长寿加人数拉时长→三旋钮（缴费/水平/年龄）+税补四选→谁疼：企业与年轻人疼缴费、老人疼水平、体力劳动者疼延退。换制度（资本覆盖）只是把人口风险换成市场风险+双重负担。
+
+Bilanzanker: $b \cdot W \cdot Z = R \cdot N$ mit $b = 18{,}6\,\%$; Altenquotient $AQ = N / Z$ steigt; fairer Mix bewegt $b$, $R$ und Alter je ein Stueck.
+
 Klausur-Satz: `Jede Reform verschiebt die Last zwischen Beitragszahlern, Rentnern und Steuerzahlern.`
 
 ## Anekdote & Fun-Fact
@@ -130,6 +144,10 @@ VERGLEICH辨别实验（双向辨析：开源节流 vs 制度转轨）：
 
 VERGLEICH: Waehle erst das Verfahren — 【选程序】先看改革性质：(i) 开源节流（Beitrag/Niveau/Alter/Steuer 四旋钮内调参，不换制度）oder (ii) 制度转轨（Umlage→Kapitaldeckung：换融资逻辑，讨论转型成本）—— dann loesen.
 
+DUELL Weg A (freier Markt) gegen Weg B (Staat greift ein): Weg A setzt auf Markt und Eigenvorsorge: Kapitaldeckung, Riester und Aktienrente entkoppeln von Demografie, tragen aber Marktrisiko und Doppelbelastung. Weg B repariert die Umlage: Beitrag, Niveau und Alter werden nachjustiert plus Steuer - solidarisch, aber mit Verlierern je Schraube. Entscheide am Kriterium: Generationengerechtigkeit und Nachhaltigkeit, nicht Wunschdenken.
+
+对决 Weg A（自由市场）vs Weg B（国家干预）：Weg A信市场自备：资本覆盖、基金养老，脱钩人口但吃市场风险+一代人双缴费。Weg B信修补现收现付：三旋钮加税补，团结但每拧都有人疼。判据：代际公平和可持续，不是许愿。
+
 AUFGABE A：Beurteilen Sie Rente mit 67 als Antwort auf den Wandel.
 AUFGABE B：Beurteilen Sie den Vorschlag, die Rente voll auf Kapitaldeckung umzustellen.
 
@@ -142,9 +160,9 @@ Klausur-Satz: `Parametrisch bleibt die Last im Umlage-Dreieck, systemisch wander
 ## Schritt 6 — check: Selbsttest zu Sozialstaat und Rentenkrise im demografischen Wandel
 CHECK检索默写（自测 3 题，与答案配对）：
 
-FRAGE: Was heisst Umlageverfahren? | ANTWORT: Laufende Beitraege finanzieren laufende Renten; es wird kaum Kapitalstock gebildet.
-FRAGE: Warum setzt Demografie die Rente unter Druck? | ANTWORT: Weniger Geburten senken Zahler, hoehere Lebenserwartung erhoeht Zahl und Dauer der Renten.
-FRAGE: Welche drei Stellschrauben gibt es im System? | ANTWORT: Beitragssatz, Rentenniveau und Altersgrenze (plus Steuerzuschuss).
+- FRAGE: Was heisst Umlageverfahren? | ANTWORT: Laufende Beitraege finanzieren laufende Renten; es wird kaum Kapitalstock gebildet.
+- FRAGE: Warum setzt Demografie die Rente unter Druck? | ANTWORT: Weniger Geburten senken Zahler, hoehere Lebenserwartung erhoeht Zahl und Dauer der Renten.
+- FRAGE: Welche drei Stellschrauben gibt es im System? | ANTWORT: Beitragssatz, Rentenniveau und Altersgrenze (plus Steuerzuschuss).
 
 Klausur-Satz: `Beitrag, Niveau und Alter bilden das Reformdreieck der gesetzlichen Rente.`
 
@@ -165,6 +183,7 @@ ROLLE: Du bist Jugenddelegierter in einer Rentenkommission.
 SITUATION: Die Kommission diskutiert Beitragserhoehung gegen Rentenniveausenkung. Nimm in einer zusammenhaengenden Stellungnahme (ca. 150 Woerter) aus Sicht der jungen Generation dazu Stellung und schlage einen fairen Mix vor.
 RUBRIC (30 XP): Umlage-Mechanik und Demografiedruck (8 XP) | Abwaegung beider Optionen mit Verlierern (10 XP) | Begruendeter Mix mit Gerechtigkeitsmassstab (8 XP) | Adressatengerechte Stellungnahme (4 XP).
 
+Klausur-Satz: `Die Rentenstellungnahme rechnet erst die Umlagebilanz mit Demografiedruck und verteilt dann die Last begruendet auf Zahler, Rentner und Steuer.`
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Was der Krisenstab lernt
 
 TAKEAWAY 1盒（核心总结）：
@@ -175,3 +194,5 @@ Takeaway-Satz: `Der Wandel veraendert die Koepfe, jede Reform verteilt die Bilan
 REFLEXION 2问：
 1. 过程自省：Welcher Schritt fiel schwerer — die Umlage-Erklaerung (Schritt 4) oder die Abgrenzung der Reformtypen (Schritt 5)?
 2. 元认知计划：Beim naechsten Mal zeichne ich zuerst die Umlagegleichung hin.
+
+Klausur-Satz: `Der Wandel veraendert die Koepfe, jede Reform verteilt die Bilanz neu: Wer das Dreieck versteht, verteilt ehrlich statt zu versprechen.`

@@ -22,7 +22,7 @@ version: Lesson-v3
 
 > EPISODE 01 — Akt V — Klausurwerkstatt der Stadtkanzlei — Auftrag von Buergermeisterin Lena Hartmann: Apfelpreis-Crash auf dem Nachtmarkt.
 
-HOOK (Stadtrats-Krise, lies zuerst): EPISODE 01 — Akt V — Klausurwerkstatt der Stadtkanzlei — Stadt Tycoon City ruft dich in den Krisenstab. Buergermeisterin Lena Hartmann stuermt mit einer Eilmeldung ins Buero: Apfelpreis-Crash auf dem Nachtmarkt — und morgen entscheidet der Stadtrat. Der Markt schreit, die Warteschlange waechst, die Kasse zittert: Ohne deine Analyse kippt die Stadt vom Apfelparadies in den Schwarzmarkt. Dein Auftrag in dieser Episode: Uebersetze die Strassenszene in das heutige Thema Abitur-Fokus IF4 und IF6. Sammle Belege, stelle den Sandkasten [formula] scharf und liefere dem Rat eine Klausur-Antwort, die einer Pruefungskommission standhaelt. Erste Spur: TARGET: Hebt die Klausurformel aufs Brett — Bedingung: Dreischritt 30-40-30 eingehalten, drei Fachbegriffe korrekt gesetzt, Urteil mit Massstab und Abwaegung geschlossen. Wer den Mechanismus versteht, rettet den Haushalt — und vielleicht die Wahl. Der Countdown laeuft, das Radio berichtet live, die Opposition wartet nur auf deinen Fehler: Oeffne die Ziele, schnapp dir die Begriffe und beweise, dass Tycoon City regierbar bleibt.
+HOOK (Stadtrats-Krise, lies zuerst): EPISODE 01 — Akt V — Klausurwerkstatt der Stadtkanzlei — Stadt Tycoon City ruft dich in den Krisenstab. Buergermeisterin Lena Hartmann stuermt mit einer Eilmeldung ins Buero: Apfelpreis-Crash auf dem Nachtmarkt — und morgen entscheidet der Stadtrat. Realer Fall: Der Berliner Mietendeckel wurde 2021 vom Bundesverfassungsgericht gekippt - die Wohnungsnot war echt, doch das Land hatte das falsche Werkzeug gewaehlt. Parallel tobte der Mindestlohn-Streit: Der Markt warnte vor Jobverlust, die Gewerkschaft versprach Schutz vor Armut trotz Arbeit. Diese Lektion ist dein Gesamt-Training: Derselbe Fall verlangt AFB I Beschreibung, AFB II Analyse und AFB III Urteil - mit klar getrennten Brillen. Erste Spur: TARGET: Hebt die Klausurformel aufs Brett — Bedingung: Dreischritt 30-40-30 eingehalten, drei Fachbegriffe korrekt gesetzt, Urteil mit Massstab und Abwaegung geschlossen. Oeffne die Ziele, schnapp dir die Begriffe und beweise, dass Tycoon City regierbar bleibt.
 
 ZIELE (drei messbare Ziele dieser Lektion):
 
@@ -46,11 +46,19 @@ Ohne Landkarte verlierst du dich im Stoff. IF4 redet ueber Geld und Staat, IF6 u
 
 ### Fachbegriffe & Definitionen
 
-- **Magisches Viereck:** Die vier Ziele Preisstabilitaet, Beschaeftigung, Aussenbilanz und Wachstum. Mehr Wachstum bedeutet oft Preisdruck, daher bleibt Zielkonflikt die Regel.
-- **Staatsverschuldung:** Die Debatte um Kredit gegen Vorsorge aus Mehrausgaben gegenueber Einnahmen. Sie prueft Legitimation und Grenzen staatlichen Handelns.
-- **Freihandel:** Der offene Guetertausch aus Spezialisierung und Wettbewerb. Sein Gegenpol Protektionismus aus Zoll und Quote schuetzt, verteuert aber.
-- **Schichtenmodell:** Die vertikale Gliederung nach Einkommen und Bildung in oben, Mitte und unten. Es misst Ungleichheit eindimensional.
-- **Milieumodell:** Die Gruppierung nach Werten und Lebensstilen aus Haltung und Alltag. Es erklaert Wahl und Konsum jenseits des Geldes.
+- **Abitur-Operatoren**: Operatoren wie darstellen, analysieren und beurteilen steuern die Antwortform. Darstellen verlangt eine strukturierte Wiedergabe von Wissen. Analysieren und beurteilen verlangen zusaetzlich Materialbezug und ein Kriterium. Mechanismus: Der Operator bestimmt AFB-Stufe und Punkteverteilung; wer analysieren mit blossem Darstellen beantwortet, verliert die Deutungs- und Urteilspunkte. Klausur-Tipp: Unterstreiche den Operator und notiere daneben AFB-Stufe plus Kriterium, bevor du schreibst.
+- **Materialbezug**: Jede AFB-II- und AFB-III-Antwort braucht einen belegten Materialbezug. Ein Bezug ohne Zeilen- oder Quellenangabe zaehlt nicht als Beleg. Zwei sauber zitierte Belege schlagen fuenf Behauptungen. Mechanismus: Materialstelle nennen, Fachbegriff darueberlegen, Deutung folgern - diese Dreierkette traegt die Analyse. Klausur-Tipp: Formuliere grundsaetzlich M1 zeigt ... (Z. ...), was ... bedeutet.
+- **Preismechanismus**: Der Preismechanismus stimmt Angebot und Nachfrage ueber Preissignale ab. Steigt der Preis, sinkt die Nachfrage und das Angebot waechst. Faellt der Preis, geschieht das Gegenteil, bis der Markt raeumt. Mechanismus: Stoerungen wandern ueber Mengenreaktionen zurueck zum Gleichgewicht, solange kein bindender Fixpreis die Anpassung blockiert. Klausur-Tipp: Nenne immer erst freie Raeumung, dann erst den Eingriff und seine Richtung.
+- **Sozialprinzip**: Das Sozialprinzip verpflichtet den Staat zum Schutz der Schwaecheren. Es rechtfertigt Umverteilung, Mindestlohn und Kuendigungsschutz. Es endet dort, wo Freiheit und Eigentum unverhaeltnismaessig beschnitten wuerden. Mechanismus: Jeder Eingriff wird an Verhaeltnismaessigkeit gemessen: Ziel nennen, Mittel pruefen, mildeste wirksame Loesung waehlen. Klausur-Tipp: Schutzbehauptungen ohne Verhaeltnismaessigkeitspruefung geben halbe Punkte.
+- **Kriteriengeleitetes Urteil**: Ein Urteil braucht ein genanntes Kriterium wie Effizienz oder Gerechtigkeit. Pro- und Contra-Argumente werden an diesem Kriterium gemessen. Erst danach folgt die begruendete Entscheidung. Mechanismus: Kriterium nennen, beide Seiten je ein Argument, Abwaegung, Entscheidung - diese Reihenfolge ist die AFB-III-Schablone. Klausur-Tipp: Schreibe den Satz Mit dem Kriterium ... aus, sonst erkennt der Korrektor kein Urteil.
+
+
+
+
+
+
+
+
 
 ### Wirkungsgefuege / Modell
 
@@ -116,6 +124,8 @@ VERGLEICH (Wahl des Weges, A gegen B):
 
 VERGLEICH: Pruefe zuerst das Aufgabenziel und waehle dann den passenden Weg — Weg A oder Weg B — und loese erst danach die Aufgabe.
 
+DUELL Weg A (freier Markt) gegen Weg B (Staat greift ein): Weg A vertraut dem freien Markt: Preise signalisieren Knappheit, Wettbewerb diszipliniert Anbieter, der Staat bleibt Schiedsrichter. Weg B greift sozial ein: Hoechstpreis, Mindestlohn und Umverteilung schuetzen Existenzen, verzerren aber Signale und erzeugen Ausweichreaktionen. Entscheide am Kriterium: Effizienz spricht fuer A, Existenzschutz fuer B.
+
 Weg A: AFB II Kriterienanalyse als theoriegeleitete Kausalableitung. Leitfrage: Welcher Mechanismus erklaert den Fall Schritt fuer Schritt? Blick auf These, Kette und Beleg aus Material und Modell. Ergebnis ist eine saubere Analyse ohne vorschnelles Urteil: Ursachen werden mit Fachsprache hergeleitet.
 
 Weg B: AFB III Urteil als Abwaegung von Effizienz gegen Legitimitaet. Leitfrage: Was wiegt schwerer — schnelle Wirkung oder Zustimmung und Fairness? Blick auf Pro und Contra mit Massstab. Ergebnis ist ein begruendetes Urteil mit Ausblick: Abwaegung schliesst mit eigenem Standpunkt.
@@ -134,9 +144,9 @@ Klausur-Satz: `Die Fokussierung des Inhaltsfelds 4 fragt nach dem Staatshaushalt
 
 CHECK (drei Fragen mit Antworten):
 
-FRAGE: Welche beiden Fokussierungen sind fuer IF4 ausgewiesen? | ANTWORT: Der Streit um die Staatsverschuldung und der Gegensatz von Freihandel und Protektionismus.
-FRAGE: Welche Fokussierung ist fuer IF6 ausgewiesen, und welche drei Modelle umfasst sie? | ANTWORT: Die Modelle gesellschaftlicher Ungleichheit: Schichten (vertikal), Lagen (mehrdimensional) und Milieus (Werte und Lebensstile).
-FRAGE: Worin unterscheiden sich GK und LK in IF4 und IF6? | ANTWORT: In IF4 und IF6 unterscheiden sie sich kaum; erst in IF7 kommen im LK Liberalismus, Waehrungsunion und Global Governance hinzu.
+- FRAGE: Welche beiden Fokussierungen sind fuer IF4 ausgewiesen? | ANTWORT: Der Streit um die Staatsverschuldung und der Gegensatz von Freihandel und Protektionismus.
+- FRAGE: Welche Fokussierung ist fuer IF6 ausgewiesen, und welche drei Modelle umfasst sie? | ANTWORT: Die Modelle gesellschaftlicher Ungleichheit: Schichten (vertikal), Lagen (mehrdimensional) und Milieus (Werte und Lebensstile).
+- FRAGE: Worin unterscheiden sich GK und LK in IF4 und IF6? | ANTWORT: In IF4 und IF6 unterscheiden sie sich kaum; erst in IF7 kommen im LK Liberalismus, Waehrungsunion und Global Governance hinzu.
 
 Klausur-Satz: `Die Vorgaben geben Stabilitaet: Wer IF4 ueber Instrumente und IF6 ueber Modelle lernt und beides mit EF-Kapiteln fuellt, ist fuer alle drei Jahre geruestet.`
 
@@ -157,6 +167,7 @@ SITUATION: Eine Lerngruppe soll in 15 Minuten die drei Modelle der Ungleichheit 
 AUFGABE (AFB III): Verfasse eine zusammenhaengende Darstellung von etwa 150 Woertern mit Kriterium, Anwendung und Urteil.
 RUBRIC (30 XP): Vollstaendige Definition der drei Modelle Schichten, Lagen und Milieus (9 XP) | Je ein treffendes Beispiel pro Modell (9 XP) | Benennung je einer Grenze pro Modell (6 XP) | Kriteriengeleitetes Urteil zur Modellwahl fuer die Einkommensstatistik (6 XP).
 
+Klausur-Satz: `Im Gesamtblick traegt erst die Trennung von freier Preislogik und sozialer Schutzlogik das Urteil, das beide Kriterien ehrlich abwaegt.`
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Was der Krisenstab lernt
 
 TAKEAWAY (Kernbotschaft in einem Kasten):
@@ -166,3 +177,5 @@ Takeaway-Satz: `Erst Brille nach Ziel waehlen, dann Kette bauen, dann Wirkung ge
 REFLEXION (zwei Fragen):
 1. Welcher Weg fiel dir leichter — Herleitung mit Kette und Beleg (Schritt 4) oder Abwaegung mit Massstab (Schritt 5)?
 2. Woran erkennst du kuenftig, ob eine Aufgabe nach Erklaerung oder nach eigenem Standpunkt verlangt?
+
+Klausur-Satz: `Wer Markt und Staat als zwei Brillen beherrscht statt als zwei Glaubenssaetze, schreibt im Abitur kein Bauchgefuehl, sondern ein pruefbares Urteil.`

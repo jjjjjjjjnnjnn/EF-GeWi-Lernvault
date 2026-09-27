@@ -22,7 +22,7 @@ version: Lesson-v3
 
 > EPISODE 28｜Akt III — Gini-Waage und Steuerreform｜召集人 Schuldnerberaterin Maria Bongartz：Konsumschulden-Falle im Kaufhaus。
 
-HOOK 市长危机（先读剧情，再进 ZIELE）：【本集战役 EP28｜Akt III — Gini-Waage und Steuerreform｜虚拟城邦 Tycoon City 告急】市长办公室深夜灯火通明，Schuldnerberaterin Maria Bongartz 冲进来报告：Konsumschulden-Falle im Kaufhaus，而明天市议会就要投票。集市在喊、长队在排、国库在抖：苹果集市价格战一路烧到租金黑市，再烧到基尼天平与劳资谈判桌，本集正是“Soziale Ungleichheit im Ueberblick”的现实引爆点。你的身份是市长直属经济改革规划委员：把街头危机翻译成考点，用沙盘 [gini-allocator] 拿出可验证的数值方案，再交出一份 Klausur 满分答卷稳住议会。通关线索：TARGET: Justiert Steuer- und Transferregler so, dass der Gini-Indikator nach Umverteilung in den Korridor 0,28 bis 0,32 faellt, das unterste Quintil mindestens 8 Prozent des Kuchens haelt und die Armutsrisikoquote sichtbar sinkt. 上一集的结尾就是这一集的悬念——黑市账本、税改天平、劳资天平、选票天平，四座天平有一座倒了，城邦就停摆。电台正在直播，反对派等着挑错：先读 ZIELE，再啃术语，把传导机制画成你的作战地图。DE-Briefing: Episode 28 — Schuldnerberaterin Maria Bongartz meldet Konsumschulden-Falle im Kaufhaus; der Stadtrat entscheidet morgen. Rette Tycoon City mit Analyse, Sandkasten und Klausur-Antwort zum Thema Soziale Ungleichheit im Ueberblick.
+HOOK 市长危机（先读剧情，再进 ZIELE）：【本集战役 EP28｜Akt III — Gini-Waage und Steuerreform｜虚拟城邦 Tycoon City 告急】市长办公室深夜灯火通明，Schuldnerberaterin Maria Bongartz 冲进来报告：Konsumschulden-Falle im Kaufhaus，而明天市议会就要投票。你的身份不变：市长直属经济改革规划委员。真实情境切入：同一间教室，前排孩子暑假游学三国的，后排孩子暑假看店带弟妹；十年后前者读研后者轮岗。起点差的不是智商，是文化资本和关系网。考试不考煽情，考机制：不平等怎么被生产、被继承、被政策压回。通关线索：TARGET: Justiert Steuer- und Transferregler so, dass der Gini-Indikator nach Umverteilung in den Korridor 0,28 bis 0,32 faellt, das unterste Quintil mindestens 8 Prozent des Kuchens haelt und die Armutsrisikoquote sichtbar sinkt. 先读 ZIELE，再啃术语，把传导机制画成你的作战地图。DE-Briefing: Episode 28 — Schuldnerberaterin Maria Bongartz meldet Konsumschulden-Falle im Kaufhaus; der Stadtrat entscheidet morgen. Rette Tycoon City mit Analyse, Sandkasten und Klausur-Antwort zum Thema Soziale Ungleichheit im Ueberblick.
 
 ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
@@ -38,11 +38,19 @@ PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→�
 
 中文在上，德语在下：
 
-- 社会不平等 — soziale Ungleichheit：有价值资源（收入、教育、权力、关系）的系统性不均分配。
-- 机会平等 — Chancengleichheit：起点相同（并非结果相同），是所有 beurteilen 的标准词。
-- 教育漏斗 — Bildungstrichter：展示不同出身的孩子一路升到大学的比例差，越往上口越窄。
-- 贫困风险率 — Armutsgefährdungsquote：低于社会中位收入 60% 者所占比例，德国约 16–17%。
-- 文化资本 — kulturelles Kapital：学历、谈吐、品味、习惯，Bourdieu 认为它会代际传递。
+- **Soziale Ungleichheit**（社会不平等）：不平等是钱学权名四维不均；起点不均比结果不均更该考。 Ungleichheit meint die ungleiche Verteilung von Geld, Bildung, Macht und Prestige. Sie ist mehrdimensional, nicht nur Einkommen. Chancenungleichheit wiegt schwerer als Ergebnisungleichheit. Mechanismus: Ressourcen der Eltern werden ueber Foerderung, Wohngegend und Netzwerke in Kinderchancen umgebaut. Klausur-Tipp: Starte mit Dimensionen plus Chancen-gegen-Ergebnis-Trennung.
+- **Kulturelles Kapital**（文化资本）：谈吐品味文凭都是资本：学校奖励中产代码，工人孩子还没考先输半道。 Nach Bourdieu zaehlen Sprache, Manieren und Bildungstitel als Kapital. Es oeffnet Tueren ohne Geldschein. Schulen belohnen die Codes der Mitte. Mechanismus: Habitus passt zu Lehrerwartungen oder eben nicht - stille Bevorzugung laeuft ueber Vertrautheit. Klausur-Tipp: Erklaere Schulerfolg ueber Code-Passung statt Begabung.
+- **Bildungstrichter**（教育漏斗）：四年级和十年级两次分流，老师推荐再加偏：漏斗越往上越窄。 Herkunft filtert Abschluesse: Akademikerkinder studieren mehrheitlich, Arbeiterkinder selten. Uebergaenge nach Klasse vier und zehn wirken als Weichen. Empfehlungen verstaerken den Filter. Mechanismus: Fruehe Weichen plus elterliche Intervention kumulieren Vorsprung. Klausur-Tipp: Nenne beide Weichen plus Empfehlungsbias.
+- **Meritokratie**（ merit 贤能制（写 Leistungsgerechtigkeit））：能者上听着美：同规则不同起点，赢者心安、输者自卑。 Leistungsgerechtigkeit verspricht Aufstieg nach Koennen. Real filtern Herkunft und Netzwerke mit. Das Versprechen legitimiert Gewinner und beschuldigt Verlierer. Mechanismus: Gleiche Regeln bei ungleichen Starts erzeugen legitime Ungleichheit aus illegitimen Chancen. Klausur-Tipp: Kritisiere mit Trichterdaten, nicht mit Meinung.
+- **Sozialstaat**（社会国）：社会国两招：发钱兜底+投教育开路，花的是缴费和税。 Der Sozialstaat federt Risiken ueber Versicherung und Transfers ab. BAfoeG, Wohngeld und Foerderung oeffnen zweite Wege. Er kostet Beitraege und Steuern. Mechanismus: Umverteilung plus Bildungsinvestition heben das unterste Quintil und senken die Quote. Klausur-Tipp: Nenne je Massnahme Finanzierer plus Wirkung.
+
+
+
+
+
+
+
+
 
 Klausur-Satz: `Chancengleichheit bedeutet gleiche Startbedingungen, nicht gleiche Ergebnisse — gemessen wird sie am Bildungstrichter und an der Armutsgefaehrdungsquote.`
 
@@ -76,6 +84,12 @@ ENTDECKEN（1概念 + 1文字图解）：
    Gini-Koeffizient         0 = gleich ... 1 = ungleich
    Bildungstrichter         Arbeiterkind ~15-20% vs. Professorenkind ~70%+
 ```
+Kausalkette: Elternressourcen, Wohnviertel und Foerderung, Code-Passung in der Schule, Weichen und Empfehlungen, Abschluss und Ersteinstieg, Einkommen und Vermoegen, Start der naechsten Generation. Bruchstellen heissen Fruehfoerderung, Stipendien und zweite Wege - dort wirkt Politik am billigsten.
+
+因果链：父母资源→居住学区+课外+关系→学校代码匹配度→分流与推荐→学历与首份工作→收入与财富→下一代起点。断链点：早教投入、奖助学金、第二路径；政策在断链处发力最划算。
+
+Bilanzanker: Armutsrisiko $Q \approx 15\,\%$; unterstes Quintil $q_1 \ge 8\,\%$ als Sandkasten-Ziel; Bildungstrichter etwa $70\,\%$ gegen $30\,\%$.
+
 
 Klausur-Satz: `Der Bildungstrichter zeigt, dass der Bildungserfolg in Deutschland stark von der sozialen Herkunft abhaengt: Akademikerkinder erreichen deutlich haeufiger die Hochschule als Arbeiterkinder.`
 
@@ -112,6 +126,10 @@ VERGLEICH辨别实验（双向辨析：功能派之眼 vs. 冲突派之眼）：
 
 VERGLEICH: Wähle erst das Verfahren — 【选概念】先判断材料把不平等解释为 (i) funktional（高位高薪=激励，合理，Davis-Moore）还是 (ii) konflikttheoretisch（不平等=权力固化，需矫正，Marx/Bourdieu）—— dann analysieren.
 
+DUELL Weg A (freier Markt) gegen Weg B (Staat greift ein): Weg A setzt auf freie Leistung: Offene Maerkte, Wettbewerb und Eigenverantwortung belohnen Einsatz. Weg B setzt auf Ausgleich: Umverteilung, Foerderung und Quoten oeffnen Starts. Entscheide am Kriterium: Effizienz und Eigenverantwortung sprechen fuer A, Chancengerechtigkeit und Teilhabe fuer B.
+
+对决 Weg A（自由市场）vs Weg B（国家干预）：Weg A信自由拼：开放市场奖勤罚懒。Weg B信补偿：再分配资助配额补起点。判据：效率责任站A，机会正义站B。
+
 AUFGABE A：Ein Sachtext argumentiert, hohe Einkommen fuer anspruchsvolle Berufe seien notwendig, damit sich Leistung lohne, und Ungleichheit sei daher ein Anreiz. Welche Lesart ist zu waehlen, und wie ist der Text einzuordnen?
 
 AUFGABE B：Ein Sachtext zeigt, dass Kinder aus armen Familien haeufiger krank sind, mehr Unterricht verpassen und spaeter selbst arm bleiben. Welche Lesart ist zu waehlen, und wie ist der Text einzuordnen?
@@ -126,9 +144,9 @@ Klausur-Satz: `Funktionalistische Ansaetze deuten Ungleichheit als Leistungsanre
 
 CHECK检索默写（自测 3 题，与答案配对）：
 
-FRAGE: Welche drei Dimensionen sozialer Ungleichheit unterscheidet der EF-Unterricht? | ANTWORT: Die oekonomische (Einkommen/Vermoegen), die politische (Macht/Einfluss) und die soziale Dimension (Bildung/Netzwerke/Gesundheit).
-FRAGE: Wo liegt die Armutsgefaehrdungsschwelle und warum ist das wichtig? | ANTWORT: Sie liegt bei 60 Prozent des Median-Einkommens, nicht des Durchschnitts — Armut ist also relativ zum gesellschaftlichen Standard definiert.
-FRAGE: Was belegt der Bildungstrichter? | ANTWORT: Er belegt, dass der Bildungserfolg in Deutschland stark von der Herkunft abhaengt und Chancengleichheit nicht eingeloest ist.
+- FRAGE: Welche drei Dimensionen sozialer Ungleichheit unterscheidet der EF-Unterricht? | ANTWORT: Die oekonomische (Einkommen/Vermoegen), die politische (Macht/Einfluss) und die soziale Dimension (Bildung/Netzwerke/Gesundheit).
+- FRAGE: Wo liegt die Armutsgefaehrdungsschwelle und warum ist das wichtig? | ANTWORT: Sie liegt bei 60 Prozent des Median-Einkommens, nicht des Durchschnitts — Armut ist also relativ zum gesellschaftlichen Standard definiert.
+- FRAGE: Was belegt der Bildungstrichter? | ANTWORT: Er belegt, dass der Bildungserfolg in Deutschland stark von der Herkunft abhaengt und Chancengleichheit nicht eingeloest ist.
 
 Klausur-Satz: `Die Armutsgefaehrdungsquote misst Armut relativ zum Median-Einkommen und macht sichtbar, dass Armut kein Randproblem, sondern ein strukturelles Merkmal ist.`
 
@@ -150,6 +168,7 @@ ROLLE: Du bist Referent/in bei einer Jugendorganisation und sollst auf einer Pod
 SITUATION: In deiner Region erreichen Arbeiterkinder nur halb so oft das Abitur wie Akademikerkinder. Ein Teil des Publikums haelt das fuer ein Ergebnis individueller Entscheidungen, ein anderer verlangt staatliche Gegenmassnahmen wie kostenlose Ganztagsbetreuung und ein elternunabhaengiges BAfoeG. Beurteilen Sie in einer zusammenhängenden Stellungnahme (ca. 150 Wörter) die Forderung nach mehr Chancengleichheit.
 RUBRIC (30 XP): Darstellung der Ungleichheit mit den drei Dimensionen bzw. Kapitalarten (6 XP) | Analyse des Bildungstrichters — Herkunft wirkt staerker als Leistung (8 XP) | Abwaegung mit Kriterium Chancengerechtigkeit — Pro/Contra staatlicher Gegenmassnahmen (10 XP) | Kriteriengeleitetes Urteil mit konkreter Forderung (6 XP).
 
+Klausur-Satz: `Die Stellungnahme sortiert erst Dimensionen und Mechanik, belegt dann mit Trichter und Quote und urteilt ueber Chancen statt ueber Neid.`
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Was der Krisenstab lernt
 
 TAKEAWAY 1盒（核心总结）：
@@ -160,3 +179,5 @@ Takeaway-Satz: `Chancengleichheit bleibt eine unvollendete Aufgabe, solange der 
 REFLEXION 2问：
 1. 过程自省：Welcher Schritt fiel schwerer — die drei Kapitalarten zu trennen (Schritt 3) oder die Wahl zwischen funktionaler und konflikttheoretischer Lesart (Schritt 5)?
 2. 元认知计划：Beim nächsten Mal frage ich zuerst, ob der Text Ungleichheit als Anreiz oder als strukturelle Benachteiligung deutet, und waehle danach die Lesart.
+
+Klausur-Satz: `Ungleichheit wird vererbt, nicht verdient: Wer die Mechanik benennt, streitet ueber Wege statt ueber Wuerde.`

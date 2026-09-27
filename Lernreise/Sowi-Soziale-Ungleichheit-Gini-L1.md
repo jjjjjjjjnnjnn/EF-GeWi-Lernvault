@@ -22,7 +22,7 @@ version: Lesson-v3
 
 > EPISODE 27｜Akt III — Gini-Waage und Steuerreform｜召集人 Statistiknarr Karl Zins：BIP-Blindflug ohne Wohlstandsradar。
 
-HOOK 市长危机（先读剧情，再进 ZIELE）：【本集战役 EP27｜Akt III — Gini-Waage und Steuerreform｜虚拟城邦 Tycoon City 告急】市长办公室深夜灯火通明，Statistiknarr Karl Zins 冲进来报告：BIP-Blindflug ohne Wohlstandsradar，而明天市议会就要投票。集市在喊、长队在排、国库在抖：苹果集市价格战一路烧到租金黑市，再烧到基尼天平与劳资谈判桌，本集正是“Lorenzkurve und Gini-Koeffizient”的现实引爆点。你的身份是市长直属经济改革规划委员：把街头危机翻译成考点，用沙盘 [gini-allocator] 拿出可验证的数值方案，再交出一份 Klausur 满分答卷稳住议会。通关线索：TARGET: Justiert Steuer- und Transferregler so, dass der Gini-Indikator nach Umverteilung in den Korridor 0,28 bis 0,32 faellt, das unterste Quintil mindestens 8 Prozent des Kuchens haelt und die Armutsrisikoquote sichtbar sinkt. 上一集的结尾就是这一集的悬念——黑市账本、税改天平、劳资天平、选票天平，四座天平有一座倒了，城邦就停摆。电台正在直播，反对派等着挑错：先读 ZIELE，再啃术语，把传导机制画成你的作战地图。DE-Briefing: Episode 27 — Statistiknarr Karl Zins meldet BIP-Blindflug ohne Wohlstandsradar; der Stadtrat entscheidet morgen. Rette Tycoon City mit Analyse, Sandkasten und Klausur-Antwort zum Thema Lorenzkurve und Gini-Koeffizient.
+HOOK 市长危机（先读剧情，再进 ZIELE）：【本集战役 EP27｜Akt III — Gini-Waage und Steuerreform｜虚拟城邦 Tycoon City 告急】市长办公室深夜灯火通明，Statistiknarr Karl Zins 冲进来报告：BIP-Blindflug ohne Wohlstandsradar，而明天市议会就要投票。你的身份不变：市长直属经济改革规划委员。真实数据切入：德国再分配后基尼约0.30、最底层20%只拿约8%的蛋糕、贫困风险率约15%；教育漏斗显示工人子女上大学率远低于公务员子女。同一串数字两种读法：市场派说差距是激励，干预派说起点不公要再分配。沙盘里你亲自调税转旋钮，看基尼怎么动。通关线索：TARGET: Justiert Steuer- und Transferregler so, dass der Gini-Indikator nach Umverteilung in den Korridor 0,28 bis 0,32 faellt, das unterste Quintil mindestens 8 Prozent des Kuchens haelt und die Armutsrisikoquote sichtbar sinkt. 先读 ZIELE，再啃术语，把传导机制画成你的作战地图。DE-Briefing: Episode 27 — Statistiknarr Karl Zins meldet BIP-Blindflug ohne Wohlstandsradar; der Stadtrat entscheidet morgen. Rette Tycoon City mit Analyse, Sandkasten und Klausur-Antwort zum Thema Lorenzkurve und Gini-Koeffizient.
 
 ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
@@ -38,11 +38,19 @@ PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→�
 
 中文在上，德语在下：
 
-- 洛伦兹曲线 — Lorenzkurve：横轴为累积人口、纵轴为累积收入，真实分配总在对角线下方。
-- 基尼系数 — Gini-Koeffizient：对角线与洛伦兹曲线之间面积占对角线下总面积的比例，0 至 1。
-- 分位份额 — Quintilsanteil：把人口五等分后，每一组所占的收入百分比。
-- 累积份额 — kumulierter Anteil：把前面的份额逐段相加，画曲线就靠它。
-- 性别薪酬差距 — Gender Pay Gap：男女平均时薪的百分比差，未调整口径约 16–18%。
+- **Einkommen / Vermögen (schreibe Vermoegen)**（收入/财富）：收入是水流、财富是水库；水库差距更大还能继承，光涨工资填不满。 Einkommen fliesst jaehrlich aus Arbeit und Kapital. Vermoegen ist der gespeicherte Bestand aus Ersparnis und Erbschaft. Vermoegen streut weit staerker und vererbt Chancen. Mechanismus: Zinseszins und Erbschaften konzentrieren Bestaende, Loehne allein gleichen das nie aus. Klausur-Tipp: Trenne Fluss und Bestand, sonst verwechselst du Gini-Quellen.
+- **Gini-Koeffizient**（基尼系数）：基尼0全平、1独吞；德国市场基尼经税收转到0.30上下，差值就是再分配力度。 Der Gini misst Ungleichheit zwischen null und eins. Null meint alle gleich, eins meint einer hat alles. Deutschland liegt nach Umverteilung um 0,30. Mechanismus: Steuern und Transfers druecken den Markt-Gini zum Netto-Gini; die Differenz misst den Umverteilungsgrad. Klausur-Tipp: Nenne immer Markt- gegen Netto-Gini plus Korridor 0,28 bis 0,32.
+- **Armutsrisikoquote**（贫困风险率）：穷线=中位数收入六成：量的是相对掉队，单亲和孩子风险最高。 Arm ist, wer unter 60 Prozent des mittleren Einkommens liegt. Das misst relative, nicht absolute Armut. Alleinerziehende und Kinder tragen das hoechste Risiko. Mechanismus: Mediananker plus Haushaltsgewichtung - wer darunter faellt, kann am Normalleben kaum teilhaben. Klausur-Tipp: Betone relativ statt absolut, das ist die Haelfte der Punkte.
+- **Bildungstrichter**（教育漏斗）：出身定学历甚于成绩：教授子女七成读大学、工人子女三成都不到，漏斗世袭不平等。 Von hundert Akademikerkindern studieren ueber siebzig, von hundert Arbeiterkindern unter dreissig. Herkunft praegt Abschluesse staerker als Leistung. Der Trichter vererbt Ungleichheit. Mechanismus: Fruehe Foerderung, Nachhilfe und Netzwerke kumulieren Vorspruenge Jahr fuer Jahr. Klausur-Tipp: Nutze den Trichter als Beleg gegen reine Meritokratie.
+- **Umverteilung**（再分配）：上边收税下边发钱：累进制+精准转移，双降基尼和贫困率，代价是激励打折。 Steuern nehmen oben, Transfers geben unten: Kindergeld, Wohngeld, Buergergeld. Progression laesst Starke mehr tragen. Jede Umverteilung daempft Anreize und mindert Not. Mechanismus: Steuerprogression plus zielgenaue Transfers senken Gini und Quote gleichzeitig. Klausur-Tipp: Benenne Finanzierer und Empfaenger je Massnahme.
+
+
+
+
+
+
+
+
 
 Klausur-Satz: `Der Gini-Koeffizient ergibt sich als Verhaeltnis der Flaeche zwischen Diagonale und Lorenzkurve zur Gesamtflaeche unter der Diagonalen.`
 
@@ -76,6 +84,12 @@ ENTDECKEN（1概念 + 1文字图解）：
    [Geschlecht]          Gender Pay Gap (unbereinigt ~16-18%)
    [Herkunft]            Bildungsbeteiligung, Armutsrisiko
 ```
+Kausalkette: Markt entlohnt Grenzertraege, Zins und Erbschaft konzentrieren Bestaende, Bildungstrichter schliesst Startchancen, Progression plus Transfers druecken Gini und Quote. Zwei Differenzen tragen die Deutung: Markt- gegen Netto-Gini misst Umverteilung, Median gegen Armutslinie misst Teilhabetiefe.
+
+因果链：市场按边际报酬分蛋糕→资本复利+继承拉开存量→教育漏斗锁死起点→累进税+转移支付压回基尼→贫困风险率下行。传导看两差：市场基尼与净基尼之差=再分配力度；中位数与穷线之差=掉队深度。
+
+Zielkorridor: $0{,}28 \le G \le 0{,}32$ nach Umverteilung; unterstes Quintil $q_1 \ge 8\,\%$; Armutslinie $L = 0{,}6 \times$ Median.
+
 
 Klausur-Satz: `Je staerker die Lorenzkurve nach unten gewoelbt ist, desto groesser ist der Gini-Koeffizient und desto ungleicher die Verteilung.`
 
@@ -112,6 +126,10 @@ VERGLEICH辨别实验（双向辨析：读曲线之程序 vs. 算系数之程序
 
 VERGLEICH: Wähle erst das Verfahren — 【选程序】先判断题目要的是 (i) Kurven-Verfahren（只比较形状：哪条 Lorenz-Kurve 更弯、哪国/哪年更不平等，只需定性排序）还是 (ii) Koeffizienten-Verfahren（要给出数值：用梯形法算 B，再套 Gini = 1 - 2B）—— dann loesen.
 
+DUELL Weg A (freier Markt) gegen Weg B (Staat greift ein): Weg A vertraut dem freien Markt: Ungleichheit lohnt Leistung, niedrige Steuern locken Investition, Wachstum hebt alle Boote. Weg B baut Umverteilung: Progression, Transfers und Mindestlohn sichern Teilhabe, kosten aber Anreize und Wachstum. Entscheide am Kriterium: Effizienz und Wachstum sprechen fuer A, Gerechtigkeit und Teilhabe fuer B.
+
+对决 Weg A（自由市场）vs Weg B（国家干预）：Weg A信市场激励：差距奖勤、低税引资、涨潮抬船。Weg B信再分配：累进转移底薪保参与，但耗激励。判据：效率增长站A，正义参与站B。
+
 AUFGABE A：M1 zeigt zwei Lorenzkurven fuer dieselbe Volkswirtschaft in den Jahren 2000 und 2024; 2024 liegt sichtbar tiefer. Bestimmen Sie, in welchem Jahr die Verteilung ungleicher war.
 
 AUFGABE B：M2 nennt fuer drei Laender die Quintilsanteile und fragt nach einem Vergleich der Einkommensungleichheit mit Begruendung.
@@ -126,9 +144,9 @@ Klausur-Satz: `Fuer eine reine Rangfolge genuegt der Blick auf die Lorenzkurve, 
 
 CHECK检索默写（自测 3 题，与答案配对）：
 
-FRAGE: Wie ist der Gini-Koeffizient definiert und welche Werte kann er annehmen? | ANTWORT: Er ist das Verhaeltnis der Flaeche zwischen Diagonale und Lorenzkurve zur Gesamtflaeche; er liegt zwischen 0 (voellig gleich) und 1 (voellig ungleich).
-FRAGE: Wie liest man aus zwei Lorenzkurven ab, welche Verteilung ungleicher ist? | ANTWORT: Die Kurve, die tiefer durchhaengt und damit weiter von der Diagonalen entfernt liegt, gehoert zur ungleicheren Verteilung.
-FRAGE: Welche vier Dimensionen der Ungleichheit und je ein Indikator gehoeren zum EF-Grundwissen? | ANTWORT: Einkommen/Vermoegen (Gini, Armutsgefaehrdungsquote), Bildung (Bildungstrichter), Geschlecht (Gender Pay Gap) und Herkunft (Bildungsbeteiligung, Armutsrisiko).
+- FRAGE: Wie ist der Gini-Koeffizient definiert und welche Werte kann er annehmen? | ANTWORT: Er ist das Verhaeltnis der Flaeche zwischen Diagonale und Lorenzkurve zur Gesamtflaeche; er liegt zwischen 0 (voellig gleich) und 1 (voellig ungleich).
+- FRAGE: Wie liest man aus zwei Lorenzkurven ab, welche Verteilung ungleicher ist? | ANTWORT: Die Kurve, die tiefer durchhaengt und damit weiter von der Diagonalen entfernt liegt, gehoert zur ungleicheren Verteilung.
+- FRAGE: Welche vier Dimensionen der Ungleichheit und je ein Indikator gehoeren zum EF-Grundwissen? | ANTWORT: Einkommen/Vermoegen (Gini, Armutsgefaehrdungsquote), Bildung (Bildungstrichter), Geschlecht (Gender Pay Gap) und Herkunft (Bildungsbeteiligung, Armutsrisiko).
 
 Klausur-Satz: `Der Gini-Koeffizient verdichtet die gesamte Lorenzkurve zu einer Zahl zwischen 0 und 1, waehrend die vier Dimensionen die unterschiedlichen Erscheinungsformen der Ungleichheit erfassen.`
 
@@ -150,6 +168,7 @@ ROLLE: Du bist Mitarbeiter/in einer statistischen Abteilung und sollst fuer eine
 SITUATION: Fuer Region A nennt M1 die Quintilsanteile 8 / 13 / 17 / 23 / 39 %, fuer Region B die Anteile 11 / 15 / 19 / 24 / 31 %. Der Ausschuss moechte wissen, in welcher Region die Ungleichheit groesser ist und ob eine Umverteilungspolitik zu rechtfertigen sei. Beurteilen Sie die Situation in einer zusammenhängenden Stellungnahme (ca. 150 Wörter), stuetzen Sie sich auf die Lorenz-/Gini-Logik und nennen Sie ein Kriterium.
 RUBRIC (30 XP): Aufstellen der kumulierten Anteile und der Lorenz-Idee (6 XP) | Berechnung bzw. plausibler Vergleich der Gini-Werte von A und B (8 XP) | Benennung und Anwendung des Kriteriums Chancengerechtigkeit (10 XP) | Kriteriengeleitetes Urteil zur Umverteilung (6 XP).
 
+Klausur-Satz: `Die Ungleichheitsklausur belegt jede Aussage mit Quote oder Koeffizient und trennt Markt- von Netto-Verteilung, bevor sie wertet.`
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Was der Krisenstab lernt
 
 TAKEAWAY 1盒（核心总结）：
@@ -160,3 +179,5 @@ Takeaway-Satz: `Die Lorenzkurve zeigt die Ungleichheit als Form, der Gini-Koeffi
 REFLEXION 2问：
 1. 过程自省：Welcher Schritt fiel schwerer — das Aufstellen der kumulierten Anteile (Schritt 4) oder die Entscheidung zwischen Kurven- und Koeffizienten-Verfahren (Schritt 5)?
 2. 元认知计划：Beim nächsten Mal pruefe ich zuerst, ob ein Zahlenwert verlangt ist, und waehle danach die Trapezmethode oder nur den Kurvenvergleich.
+
+Klausur-Satz: `Ungleichheit beginnt am Markt und endet in der Entscheidung: Der Gini misst, das Kriterium richtet, das Urteil verteilt.`

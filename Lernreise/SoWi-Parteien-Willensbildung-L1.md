@@ -22,7 +22,7 @@ version: Lesson-v3
 
 > EPISODE 18｜Akt IV-V — Tarifarena und Demokratiewerkstatt｜召集人 Stadtzeichner Emil Kroll：Karikatur-Zensur-Eklat im Schaukasten。
 
-HOOK 市长危机（先读剧情，再进 ZIELE）：【本集战役 EP18｜Akt IV-V — Tarifarena und Demokratiewerkstatt｜虚拟城邦 Tycoon City 告急】市长办公室深夜灯火通明，Stadtzeichner Emil Kroll 冲进来报告：Karikatur-Zensur-Eklat im Schaukasten，而明天市议会就要投票。集市在喊、长队在排、国库在抖：苹果集市价格战一路烧到租金黑市，再烧到基尼天平与劳资谈判桌，本集正是“Parteien und Willensbildung”的现实引爆点。你的身份是市长直属经济改革规划委员：把街头危机翻译成考点，用沙盘 [balance-board] 拿出可验证的数值方案，再交出一份 Klausur 满分答卷稳住议会。通关线索：TARGET: Bringt auf dem Verhandlungsbrett beide Waagschalen in die Balance — Bedingung: Zustimmung beider Baenke, Loesung mit Kompromisslinie, Ergebnisprotokoll mit zwei Begruendungen je Seite. 上一集的结尾就是这一集的悬念——黑市账本、税改天平、劳资天平、选票天平，四座天平有一座倒了，城邦就停摆。电台正在直播，反对派等着挑错：先读 ZIELE，再啃术语，把传导机制画成你的作战地图。DE-Briefing: Episode 18 — Stadtzeichner Emil Kroll meldet Karikatur-Zensur-Eklat im Schaukasten; der Stadtrat entscheidet morgen. Rette Tycoon City mit Analyse, Sandkasten und Klausur-Antwort zum Thema Parteien und Willensbildung.
+HOOK 市长危机（先读剧情，再进 ZIELE）：【本集战役 EP18｜Akt IV-V — Tarifarena und Demokratiewerkstatt｜虚拟城邦 Tycoon City 告急】市长办公室深夜灯火通明，Stadtzeichner Emil Kroll 冲进来报告：Karikatur-Zensur-Eklat im Schaukasten，而明天市议会就要投票。你的身份不变：市长直属经济改革规划委员。真实情境切入：某小党全国得票4.9%因5%门槛零席位，支持者骂门槛反民主；另一边，某极端政党被宪法法院判“反宪法但太小不必禁”（NPD案2017）。门槛保稳定还是掐多元？禁党保民主还是伤民主？同一考点两面开刀。通关线索：TARGET: Bringt auf dem Verhandlungsbrett beide Waagschalen in die Balance — Bedingung: Zustimmung beider Baenke, Loesung mit Kompromisslinie, Ergebnisprotokoll mit zwei Begruendungen je Seite. 先读 ZIELE，再啃术语，把传导机制画成你的作战地图。DE-Briefing: Episode 18 — Stadtzeichner Emil Kroll meldet Karikatur-Zensur-Eklat im Schaukasten; der Stadtrat entscheidet morgen. Rette Tycoon City mit Analyse, Sandkasten und Klausur-Antwort zum Thema Parteien und Willensbildung.
 
 ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
@@ -38,11 +38,19 @@ PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→�
 
 中文在上，德语在下：
 
-- 意志形成 — Willensbildung：社会中的利益被聚合成政治决定的过程，政党是核心中介。
-- 人民党 — Volkspartei：跨阶层、跨地区、具备执政能力的大党，如传统上的 CDU 与 SPD。
-- 门槛条款 — Sperrklausel：得票率不足 5% 的政党进不了议会，用来防碎片化。
-- 厌党情绪 — Parteienverdrossenheit：对具体政党与政客的失望，通常不等于否定民主本身。
-- 第四权 — vierte Gewalt：媒体作为监督力量，同时是政治上传下达的传动带。
+- **Partei Art. 21**（政党）：政党参与人民意志形成，内部必须民主，经费透明，反宪法的可被禁。 Parteien wirken an der Willensbildung des Volkes mit und muessen innerlich demokratisch sein. Ihre Finanzierung ist teils staatlich und streng transparent. Verfassungsfeindliche Parteien kann das Gericht verbieten. Mechanismus: Mitglieder werben, Programme binden, Mandate tragen - vom Ortsverein bis zur Fraktion. Klausur-Tipp: Zitiere Art. 21 plus innere Ordnung als Doppelmerkmal.
+- **Fünfprozenthürde**（五 percent 门槛（写 Fuenfprozenthuerde））：5%才进议会：保稳定、能组阁，代价是小党选票作废。 Nur wer fuenf Prozent der Zweitstimmen holt, zieht in Fraktionsstaerke ein. Die Huerde sichert regierungsfaehige Mehrheiten. Sie kostet kleine Parteien ihre Stimme im Parlament. Mechanismus: Sperrklausel filtert Splittergruppen heraus und buendelt Koalitionsdruck hinter grossen Lagern. Klausur-Tipp: Waegle Stabilitaet gegen Chancengleichheit mit Urteil.
+- **Wahlrecht**（选举制）：人性化比例制：第一票选人、第二票定权，超额有平衡，比例不跑偏。 Die personalisierte Verhaeltniswahl mischt Personen- und Parteilogik. Erststimme waehlt Koepfe, Zweitstimme entscheidet Macht. Ueberhang und Ausgleich sichern Proportionalitaet. Mechanismus: Zweitstimmenanteil bestimmt Sitzanteil; Direktmandate ohne Deckung werden ausgeglichen. Klausur-Tipp: Erklaere jede Verzerrung ueber Erst- gegen Zweitstimme.
+- **Parteiverbot**（政党禁止）：只有宪法法院能禁党，且须积极反宪法；2017年NPD案立了高门槛。 Nur das Bundesverfassungsgericht darf Parteien verbieten, und nur bei kaempferischer Verfassungsfeindschaft. Die NPD-Entscheidung 2017 zeigt die hohe Huerde. Verbot schuetzt und riskiert Demokratie zugleich. Mechanismus: Potenzialitaet plus Aktivitaet - erst bewaffnete Relevanz rechtfertigt das schärfste Mittel; das Schaerfste bleibt Ultima Ratio. Klausur-Tipp: Nenne Monopol des Gerichts plus hohe Huerde.
+- **Willensbildung**（意志形成）：民意变权力三站：输入（街谈社团）→转换（政党媒体）→输出（选举决策）。 Vom Stammtisch ueber Medien und Verbaende bis zur Fraktion wandert Meinung zu Macht. Parteien buendeln, Medien filtern, Verbaende lobbyieren. Wahlen entscheiden, wer bindet. Mechanismus: Input, Konversion, Output - wer die Stufen trennt, analysiert sauber. Klausur-Tipp: Lege jede Szene auf diese Dreistufen-Schablone.
+
+
+
+
+
+
+
+
 
 Klausur-Satz: `Die drei Leitideen — konservativ, sozialistisch und liberal — prägen bis heute die Programme der Bundestagsparteien.`
 
@@ -72,6 +80,10 @@ ENTDECKEN（1概念 + 1文字图解）：
         Sperrklausel 5% -> stabile Mehrheiten
                         vs. verlorene Stimmen
 ```
+Kausalkette: Verstreute Interessen, Buendelung in Programmen, Machtentscheidung ueber die Zweitstimme, Filter durch die Huerde, Regierungsbildung, Daueraufsicht durch Opposition, Gerichte und Medien. Huerde und Verbot sind zwei Schleusen derselben Logik: Funktionsfaehigkeit gegen Stimmenverlust.
+
+因果链：社会利益分散→政党打包成纲领→选举按第二票定权→5%过滤碎片→议会组阁→反对派+法院+舆论持续监督。门槛和禁党是同一逻辑的两道闸：保系统能转，代价是部分声音出局。
+
 
 Klausur-Satz: `Die Verluste von CDU und SPD belegen die Erosion der Volksparteien: Stammwähler schmelzen, Wechselwähler entscheiden.`
 
@@ -118,6 +130,10 @@ VERGLEICH辨别实验（双向辨析：纲领眼 vs. 统计眼）：
 
 VERGLEICH: Wähle erst das Verfahren —【选程序】先判断材料问的是 (i) Programm-Verfahren（两份纲领/立场如何对比：Ziel, Maßnahme, Finanzierung, Verbindlichkeit, Leitidee）还是 (ii) Statistik-Verfahren（选举数据说明了什么：Volksparteien-Verluste, Sperrklausel, Verdrossenheit）—— dann lösen.
 
+DUELL Weg A (freier Markt) gegen Weg B (Staat greift ein): Weg A feiert den freien Wettbewerb der Parteien: Vielfalt, Wechsel und neue Kraefte halten das System offen. Weg B baut Schutzmauern: Huerden, Verbote und Beobachtung wehren Zersplitterung und Feinde ab. Entscheide am Kriterium: Offenheit und Chancengleichheit sprechen fuer A, Stabilitaet und wehrhafte Demokratie fuer B.
+
+对决 Weg A（自由市场）vs Weg B（国家干预）：Weg A信政党自由竞争：多元更替保开放。Weg B信防护墙：门槛禁令观察，防碎片防敌人。判据：开放均等站A，稳定防卫站B。
+
 AUFGABE A (AFB II, 8 BE)：Material 2 enthält zwei kurze Forderungen: Die eine will Steuern für Spitzenverdiener erhöhen, die andere will sie senken und dafür den Markt stärken. Erläutern Sie, welche Leitideen dahinterstehen.
 
 AUFGABE B (AFB II, 8 BE)：Eine Tabelle zeigt, dass der Stimmenanteil der beiden großen Parteien seit den 1970er-Jahren deutlich gesunken ist. Ordnen Sie den Befund mit dem Begriff der Volkspartei ein.
@@ -132,9 +148,9 @@ Klausur-Satz: `Die Erosion der Volksparteien zeigt sich im sinkenden Stimmenante
 
 CHECK检索默写（自测 3 题，与答案配对）：
 
-FRAGE: Welche Aufgabe weist Art. 21 GG den Parteien zu, und wer darf sie verbieten? | ANTWORT: Parteien wirken an der politischen Willensbildung mit; verbieten darf sie nur das Bundesverfassungsgericht.
-FRAGE: Welche drei Merkmale kennzeichnen eine Volkspartei? | ANTWORT: Sie bindet mehrere Schichten, ist in vielen Regionen verankert und besitzt Regierungsfähigkeit.
-FRAGE: Worauf richtet sich Parteienverdrossenheit in der Regel? | ANTWORT: Auf die konkreten Parteien und Politiker, meist nicht auf die Demokratie als Staatsform.
+- FRAGE: Welche Aufgabe weist Art. 21 GG den Parteien zu, und wer darf sie verbieten? | ANTWORT: Parteien wirken an der politischen Willensbildung mit; verbieten darf sie nur das Bundesverfassungsgericht.
+- FRAGE: Welche drei Merkmale kennzeichnen eine Volkspartei? | ANTWORT: Sie bindet mehrere Schichten, ist in vielen Regionen verankert und besitzt Regierungsfähigkeit.
+- FRAGE: Worauf richtet sich Parteienverdrossenheit in der Regel? | ANTWORT: Auf die konkreten Parteien und Politiker, meist nicht auf die Demokratie als Staatsform.
 
 Klausur-Satz: `Die 5-Prozent-Hürde stabilisiert das Parlament, schließt aber kleine Parteien aus — Funktionsfähigkeit gegen Repräsentationsgerechtigkeit.`
 
@@ -158,6 +174,7 @@ SITUATION: Deine Gruppe soll auf einem Podium ein Wahlprogramm zum Thema Bildung
 
 RUBRIC (30 XP): Benennung der Funktion von Parteien nach Art. 21 GG (5 XP) | Analyse der Vor- und Nachteile der Volkspartei (10 XP) | Erörterung der Rolle der Sperrklausel für kleine Parteien (10 XP) | Kriteriengeleitetes Urteil (z. B. Kriterium Repräsentation oder Stabilität) (5 XP).
 
+Klausur-Satz: `Die Parteienstunde gelingt erst mit Zweistimmenlogik und Huerdenmechanik, dann mit abgewogener Wuerdigung von Stabilitaet und Vielfalt.`
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Was der Krisenstab lernt
 
 TAKEAWAY 1盒（核心总结）：
@@ -168,3 +185,5 @@ Takeaway-Satz: `Parteienverdrossenheit ist meist kein Abschied von der Demokrati
 REFLEXION 2问：
 1. 过程自省：Welcher Schritt fiel schwerer — die Zuordnung der Leitideen (Schritt 4) oder das Lesen der Wahlstatistik (Schritt 5)?
 2. 元认知计划：Beim nächsten Mal prüfe ich zuerst, ob das Material programmatische Aussagen oder statistische Daten enthält, und wähle danach das Verfahren.
+
+Klausur-Satz: `Parteien sind Uebersetzer, keine Eigentuemer des Volkswillens: Sie buendeln Stimmen, doch Wahlen, Gerichte und Medien pruefen die Uebersetzung.`

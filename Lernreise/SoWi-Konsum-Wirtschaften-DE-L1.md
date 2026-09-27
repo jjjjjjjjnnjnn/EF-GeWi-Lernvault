@@ -22,7 +22,7 @@ version: Lesson-v3
 
 > EPISODE 15 — Akt I-II — Apfelmarkt und Mietendeckel — Auftrag von Azubi-Vertreter Leon Fischer: Azubi-Mangel in der Marktkueche.
 
-HOOK (Stadtrats-Krise, lies zuerst): EPISODE 15 — Akt I-II — Apfelmarkt und Mietendeckel — Stadt Tycoon City ruft dich in den Krisenstab. Azubi-Vertreter Leon Fischer stuermt mit einer Eilmeldung ins Buero: Azubi-Mangel in der Marktkueche — und morgen entscheidet der Stadtrat. Der Markt schreit, die Warteschlange waechst, die Kasse zittert: Ohne deine Analyse kippt die Stadt vom Apfelparadies in den Schwarzmarkt. Dein Auftrag in dieser Episode: Uebersetze die Strassenszene in das heutige Thema Konsum und Wirtschaften. Sammle Belege, stelle den Sandkasten [markt-sim] scharf und liefere dem Rat eine Klausur-Antwort, die einer Pruefungskommission standhaelt. Erste Spur: TARGET: Stellt im Sandkasten Angebot und Nachfrage so ein, dass der Gleichgewichtspreis zwischen 8 und 12 Euro liegt, die gehandelte Menge mindestens 100 Einheiten erreicht und ein Probe-Hoechstpreis von 6 Euro als bindend mit Warteschlange entlarvt wird. Wer den Mechanismus versteht, rettet den Haushalt — und vielleicht die Wahl. Der Countdown laeuft, das Radio berichtet live, die Opposition wartet nur auf deinen Fehler: Oeffne die Ziele, schnapp dir die Begriffe und beweise, dass Tycoon City regierbar bleibt.
+HOOK (Stadtrats-Krise, lies zuerst): EPISODE 15 — Akt I-II — Apfelmarkt und Mietendeckel — Stadt Tycoon City ruft dich in den Krisenstab. Azubi-Vertreter Leon Fischer stuermt mit einer Eilmeldung ins Buero: Azubi-Mangel in der Marktkueche — und morgen entscheidet der Stadtrat. Realer Fall: Dasselbe T-Shirt kostet zwoelf Euro konventionell und neunundzwanzig Euro fair und bio - die Jugend fordert Nachhaltigkeit und klickt das Billigste. Die Stadt predigt Plastikverzicht, die Becherberge wachsen. Der Preis nennt nur private Kosten, die Klimarechnung fehlt: Das ist Externalitaet, der CO2-Preis klebt die fehlende Rechnung dazu. Erste Spur: TARGET: Stellt im Sandkasten Angebot und Nachfrage so ein, dass der Gleichgewichtspreis zwischen 8 und 12 Euro liegt, die gehandelte Menge mindestens 100 Einheiten erreicht und ein Probe-Hoechstpreis von 6 Euro als bindend mit Warteschlange entlarvt wird. Oeffne die Ziele, schnapp dir die Begriffe und beweise, dass Tycoon City regierbar bleibt.
 
 ZIELE (drei messbare Ziele dieser Lektion):
 
@@ -46,11 +46,19 @@ Modellmensch oder echter Mensch: Rechnest du oder fuehlst du beim Kaufen. Theori
 
 ### Fachbegriffe und Definitionen
 
-- **Homo oeconomicus:** Das Modell des voll informierten und konsequent nutzenorientierten Entscheiders. Es dient als Massstab, nicht als Menschenbeschreibung.
-- **Budgetgrenze:** Die knappe Grenze des Einkommens. Sie erlaubt nur eine Auswahl: Mehr von einem Gut bedeutet Verzicht auf ein anderes Gut.
-- **Grenznutzenregel:** Die Regel der besten Aufteilung. Das Optimum liegt dort, wo der letzte Euro in jeder Verwendung gleich viel zusaetzlichen Nutzen bringt.
-- **Konsumentensouveraenitaet:** Die Freiheit zur eigenen Wahl mit Information und Alternativen. Sie verlangt Bildung, ehrliche Label und bezahlbare Angebote.
-- **Nachhaltigkeit:** Das Dreieck aus Oekologie, Sozialem und Oekonomie. Es fordert, heute nicht auf Kosten von morgen zu leben und Nebenkosten ehrlich einzubeziehen.
+- **Nutzen / Kosten**: Konsum folgt dem Vergleich von Grenznutzen und Grenzkosten. Faellt der Preis, steigt die nachgefragte Menge. Steigt das Einkommen, verschiebt sich die Nachfrage. Mechanismus: Kaufentscheidungen laufen ueber Budgetgeraden und Praeferenzen; Werbung verschiebt Praeferenzen, Einkommen die Gerade. Klausur-Tipp: Trenne Bewegung auf der Kurve von Verschiebung der Kurve.
+- **Externalität**: Kosten oder Nutzen fallen bei Dritten an, nicht beim Verursacher. Abgase belasten alle, Impfung schuetzt alle. Der Marktpreis luegt dann systematisch. Mechanismus: Negative Externalitaeten erzeugen Ueberproduktion, positive erzeugen Unterversorgung - jeweils gegenueber dem Optimum. Klausur-Tipp: Benenne Drittbetroffene plus Richtung, sonst keine Externalitaet.
+- **CO2-Preis / Steuer**: Der Staat bepreist die Tonne CO2 und macht Klima im Portemonnaie spuerbar. Lenkungswirkung entsteht ueber hoehere Preise fossiler Gueter. Einnahmen koennen als Klimageld zurueckfliessen. Mechanismus: Internalisierung schiebt die Angebotskurve um die Steuer nach oben; Konsum wandert zu sauberen Alternativen. Klausur-Tipp: Zeichne die Verschiebung und benenne Gewinner und Verlierer.
+- **Nachhaltiger Konsum**: Nachhaltigkeit misst Konsum an Oekologie, Sozialem und Oekonomie zugleich. Siegel und Lieferketten sollen Informationsluecken schliessen. Der Preisaufschlag bleibt die Huerde. Mechanismus: Transparenz plus Kaufkraft plus Normwandel - fehlt ein Bein, kippt der gute Vorsatz. Klausur-Tipp: Werte Siegel als Versuch gegen Informationsasymmetrie.
+- **Konsumentensouveränität**: Im Modell bestimmt der Konsument mit dem Geldschein ueber Produktion. Werbung, Sucht und Armut begrenzen diese Souveraenitaet real. Verbraucherschutz antwortet mit Information und Widerruf. Mechanismus: Stimmzettel Geldschein zaehlt nur bei Einkommen, Information und Alternativen. Klausur-Tipp: Nutze den Begriff, um Markt- gegen Schutzlogik zu sortieren.
+
+
+
+
+
+
+
+
 
 ### Wirkungsgefuege / Modell
 
@@ -116,6 +124,8 @@ Klausur-Satz: `Der Influencer-Einfluss belegt Fremdbestimmung: Kaufentscheidunge
 
 VERGLEICH: Zwei Wege deuten denselben Kauf unterschiedlich. Weg A sieht den souveranen Konsumenten mit Nutzenstreben und Wettbewerb. Weg B uebt oekologische Konsumkritik mit Blick auf Nebenkosten, Fussabdruck und Zukunft. Pruefe zuerst die Aufgabe, waehle dann den passenden Weg.
 
+DUELL Weg A (freier Markt) gegen Weg B (Staat greift ein): Weg A vertraut dem freien Konsummarkt: Preise und Siegel lenken, der Muendige entscheidet, Wettbewerb senkt Kosten. Weg B greift lenkend ein: Verbote, Steuern und Klimageld schuetzen Klima und Arme vor der Marktlogik. Entscheide am Kriterium: Effizienz und Freiheit sprechen fuer A, Nachhaltigkeit und Schutz sprechen fuer B.
+
 Weg A: Souveraener Konsument. Nutzenstreben plus Wettbewerb plus Information fuehren zu bester Wahl und effizienter Zuteilung. Staerke ist Freiheit und Vielfalt, Schwaeche ist Blindheit gegenueber Werbung, Impuls und ungleichen Budgets.
 
 Weg B: Oekologische Konsumkritik. Nebenkosten der Produktion, Fussabdruck des Verbrauchs und Fairness gegenueber kuenftigen Generationen stehen im Zentrum. Staerke ist Ehrlichkeit gegenueber Natur und Zukunft, Schwaeche sind hoehere Preise und geringere Bequemlichkeit heute.
@@ -134,9 +144,9 @@ Klausur-Satz: `Ein Werbeverbot ist ein starkes staatliches Instrument, während 
 
 CHECK (drei Fragen mit Antworten):
 
-FRAGE: Wie lautet die Kette vom Beduerfnis zur Nachfrage. | ANTWORT: Beduerfnis ohne Grenze wird mit Kaufkraft zu Bedarf und erst am Markt zu wirksamer Nachfrage.
-FRAGE: Warum ist der Homo oeconomicus keine Beschreibung realer Menschen. | ANTWORT: Weil er volle Information und reine Nutzenorientierung unterstellt, waehrend reale Menschen von Kultur, Gewohnheit und Gefuehlen geleitet werden.
-FRAGE: Auf welchen drei Saeulen ruht Nachhaltigkeit. | ANTWORT: Auf der oekologischen, der sozialen und der oekonomischen Saeule.
+- FRAGE: Wie lautet die Kette vom Beduerfnis zur Nachfrage. | ANTWORT: Beduerfnis ohne Grenze wird mit Kaufkraft zu Bedarf und erst am Markt zu wirksamer Nachfrage.
+- FRAGE: Warum ist der Homo oeconomicus keine Beschreibung realer Menschen. | ANTWORT: Weil er volle Information und reine Nutzenorientierung unterstellt, waehrend reale Menschen von Kultur, Gewohnheit und Gefuehlen geleitet werden.
+- FRAGE: Auf welchen drei Saeulen ruht Nachhaltigkeit. | ANTWORT: Auf der oekologischen, der sozialen und der oekonomischen Saeule.
 
 Klausur-Satz: `Nachhaltigkeit ruht auf drei Säulen, die nicht gegeneinander ausgespielt werden dürfen.`
 
@@ -157,6 +167,7 @@ SITUATION: Eine Diskussion dreht sich um die Frage, ob Werbung fuer ungesunde od
 AUFGABE (AFB III): Verfasse eine zusammenhaengende Darstellung von etwa 150 Woertern mit Kriterium, Anwendung und Urteil.
 RUBRIC (30 XP): These mit Kriterium Souveraenitaet und Nachhaltigkeit (5 XP) | Darstellung von Werbung als Signal und Label als Info (10 XP) | Abwaegung von Verbot gegen mildes Mittel mit Fussabdruck und Nebenkosten (10 XP) | Fazit mit Fachbegriffen und konkreter Empfehlung (5 XP)
 
+Klausur-Satz: `Die Stellungnahme zum Konsum trennt private Kosten von externen Kosten und misst jede Massnahme an Lenkung plus sozialer Abfederung.`
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Was der Krisenstab lernt
 
 TAKEAWAY (Kernbotschaft in einem Kasten):
@@ -166,3 +177,5 @@ Takeaway-Satz: `Wer nur auf den Preis schaut, zahlt doppelt: einmal an der Kasse
 REFLEXION (zwei Fragen):
 1. Wo hast du zuletzt Weg A gelebt und Weg B vergessen: Welcher Kauf folgte Nutzen und Wettbewerb, und wo haetten Fussabdruck und Nebenkosten dein Urteil veraendert.
 2. Welchen Fehlschluss willst du kuenftig vermeiden: Preis mit Qualitaet zu verwechseln oder Impuls mit Souveraenitaet, und mit welcher Prueffrage zu Label und Alternative sicherst du kuenftig deine Wahl.
+
+Klausur-Satz: `Der Preis sagt die halbe Wahrheit: Wer die zweite Haelfte - die Rechnung an Dritte - mitliest, konsumiert muendig statt nur billig.`

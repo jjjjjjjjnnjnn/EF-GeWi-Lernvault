@@ -22,7 +22,7 @@ version: Lesson-v3
 
 > EPISODE 11 — Akt IV-V — Tarifarena und Demokratiewerkstatt — Auftrag von Hafenarbeiterin Mia Petersen: Streiknacht am Hafen bei Flutlicht.
 
-HOOK (Stadtrats-Krise, lies zuerst): EPISODE 11 — Akt IV-V — Tarifarena und Demokratiewerkstatt — Stadt Tycoon City ruft dich in den Krisenstab. Hafenarbeiterin Mia Petersen stuermt mit einer Eilmeldung ins Buero: Streiknacht am Hafen bei Flutlicht — und morgen entscheidet der Stadtrat. Der Markt schreit, die Warteschlange waechst, die Kasse zittert: Ohne deine Analyse kippt die Stadt vom Apfelparadies in den Schwarzmarkt. Dein Auftrag in dieser Episode: Uebersetze die Strassenszene in das heutige Thema Identität und Jugend. Sammle Belege, stelle den Sandkasten [balance-board] scharf und liefere dem Rat eine Klausur-Antwort, die einer Pruefungskommission standhaelt. Erste Spur: TARGET: Bringt auf dem Verhandlungsbrett beide Waagschalen in die Balance — Bedingung: Zustimmung beider Baenke, Loesung mit Kompromisslinie, Ergebnisprotokoll mit zwei Begruendungen je Seite. Wer den Mechanismus versteht, rettet den Haushalt — und vielleicht die Wahl. Der Countdown laeuft, das Radio berichtet live, die Opposition wartet nur auf deinen Fehler: Oeffne die Ziele, schnapp dir die Begriffe und beweise, dass Tycoon City regierbar bleibt.
+HOOK (Stadtrats-Krise, lies zuerst): EPISODE 11 — Akt IV-V — Tarifarena und Demokratiewerkstatt — Stadt Tycoon City ruft dich in den Krisenstab. Hafenarbeiterin Mia Petersen stuermt mit einer Eilmeldung ins Buero: Streiknacht am Hafen bei Flutlicht — und morgen entscheidet der Stadtrat. Realer Fall: Eine Sechzehnjaehrige schreibt in einer Petition, Likes entschieden, wer sie sei. Ihre Mitschuelerin traegt auf der Klimademo das Schild, die Zukunft entscheide es. Familie, Peers, Netz und Schule spiegeln gleichzeitig - wer die Spiegel nicht zusammenfuegt, geraet in die Krise. Erikson nennt das Identitaet gegen Diffusion, Mead das Gespraech von I und Me. Erste Spur: TARGET: Bringt auf dem Verhandlungsbrett beide Waagschalen in die Balance — Bedingung: Zustimmung beider Baenke, Loesung mit Kompromisslinie, Ergebnisprotokoll mit zwei Begruendungen je Seite. Oeffne die Ziele, schnapp dir die Begriffe und beweise, dass Tycoon City regierbar bleibt.
 
 ZIELE (drei messbare Ziele dieser Lektion):
 
@@ -46,11 +46,19 @@ Krise, Spiegel, Wandel: Alles klingt nach Alltag, meint aber Theorie. Wer Begrif
 
 ### Fachbegriffe & Definitionen
 
-- **Identitaet:** Das als zusammenhaengend erlebte Selbstbild aus Bindung und Einzigartigkeit. Sie entsteht im Austausch und bleibt ein Leben lang formbar.
-- **Entwicklungsaufgabe:** Die altersgebundene Anforderung der Jugendphase, etwa Berufswahl, Beziehung und Wertebindung, deren Bewaeltigung Anerkennung sichert.
-- **Produktive Realitaetsverarbeitung:** Hurrelmanns Kern: Jugendliche verarbeiten innere Wuensche und aeussere Anforderungen aktiv und gestalten beide Seiten zurueck.
-- **Peer-Group:** Die Gruppe der Gleichaltrigen als Spiegel und Massstab, die Zugehoerigkeit gibt und zugleich Konformitaetsdruck erzeugt.
-- **Mediatisierung:** Die Durchdringung des Alltags durch soziale Medien, die Vergleiche verstaerkt und Identitaetsarbeit beschleunigt und oeffnet.
+- **Identität**: Identitaet ist das als stimmig erlebte Selbstbild ueber Zeit. Sie entsteht aus Zusagen an Werte und Zugehoerigkeiten. Jugendliche erproben sie in Moratorien wie Praktika oder Subkulturen. Mechanismus: Festlegung nach Erprobung stabilisiert, Festlegung ohne Erprobung oder Erprobung ohne Festlegung erzeugt Krise. Klausur-Tipp: Nutze Marcia-Stufen (diffus, uebernommen, suchend, erarbeitet) als Sortierraster.
+- **Mead I / Me**: Das Me speichert die Erwartungen der anderen, das I antwortet spontan und kreativ. Identitaet entsteht im Dialog beider Instanzen. Soziale Kontrolle und Eigensinn halten sich die Waage. Mechanismus: Rollenuebernahme im Spiel und Wettkampf trainiert den Perspektivwechsel vom Play zum Game. Klausur-Tipp: Ordne jede Szene erst Me oder I zu, dann deuten.
+- **Erikson Krise**: Jugend heisst Identitaet gegen Identitaetsdiffusion als Entwicklungsaufgabe. Gelingt die Synthese, folgt Intimitaet im Erwachsenenalter. Misslingt sie, folgen Rueckzug oder Ueberanpassung. Mechanismus: Gesellschaftliche Moratorien geben Zeit; werden sie verweigert, droht verfruehte Festlegung. Klausur-Tipp: Verknuepfe jede Jugenddebatte mit der Stufenlogik.
+- **Peer-Group**: Gleichaltrige liefern Anerkennung ausserhalb der Familie. Sie setzen Normen zu Stil, Sprache und Mutproben. Abgrenzung von Eltern gelingt oft nur ueber Peers. Mechanismus: Anerkennung wird gegen Konformitaet getauscht; wer abweicht, riskiert Ausschluss. Klausur-Tipp: Deute Peers nie nur als Gefahr, sondern als Anerkennungsmarkt.
+- **Anerkennung**: Anerkennung bestaetigt Wuerde und Leistung einer Person. Sie kommt aus Familie, Schule und Netz in verschiedenen Waehrungen. Fehlende Anerkennung treibt in Ersatzbuehnen wie Likes. Mechanismus: Stabile Anerkennung aus nahen Beziehungen puffert volatile Anerkennung aus dem Netz. Klausur-Tipp: Unterscheide personale und leistungsbezogene Anerkennung.
+
+
+
+
+
+
+
+
 
 ### Wirkungsgefuege / Modell
 
@@ -116,6 +124,8 @@ VERGLEICH (Wahl des Weges, A gegen B):
 
 VERGLEICH: Pruefe zuerst das Aufgabenziel und waehle dann den passenden Weg — Weg A oder Weg B — und loese erst danach die Aufgabe.
 
+DUELL Weg A (freier Markt) gegen Weg B (Staat greift ein): Weg A setzt auf den freien Selbstentwurf: Jugendliche waehlen Identitaeten wie im Markt, Vielfalt und Wechsel sind Freiheit. Weg B setzt auf schuetzende Leitplanken: Familie, Schule und Jugendschutz geben Halt und Grenzen. Entscheide am Kriterium: Autonomie spricht fuer A, stabile Zugehoerigkeit und Schutz vor Ueberforderung fuer B.
+
 Weg A: Hurrelmanns produktive Realitaetsverarbeitung. Leitfrage: Wie gleicht die Person innere Wuensche mit aeusseren Anforderungen aus? Blick auf Entwicklungsaufgaben, Ressourcen und aktive Gestaltung. Urteil an Autonomie in Bindung: Gelingt Ausgleich, staerkt er Selbst und Teilhabe.
 
 Weg B: Peer-Groups und Mediatisierung. Leitfrage: Wie formen Gleichaltrige und soziale Medien das Selbstbild? Blick auf Anerkennung, Konformitaetsdruck und Vergleich. Urteil an Autonomie in Bindung: Erweitert das Netz Ausdruck oder treibt es in Anpassung?
@@ -134,9 +144,9 @@ Klausur-Satz: `Wertewandel bezeichnet die Verschiebung gesellschaftlicher Wertpr
 
 CHECK (drei Fragen mit Antworten):
 
-FRAGE: Was bezeichnet Hurrelmann als Kern von Identitaet? | ANTWORT: Die produktive Verarbeitung von innerer und aeusserer Realitaet, also der aktive Ausgleich zwischen eigenen Wuenschen und gesellschaftlichen Anforderungen.
-FRAGE: Wodurch unterscheidet sich mediatisierte Anerkennung von direkter Anerkennung? | ANTWORT: Mediatisierte Anerkennung ist oeffentlich, vergleichbar und dauerhaft sichtbar, waehrend direkte Anerkennung situativ und persoenlich bleibt.
-FRAGE: Welcher Operator verlangt eine Bewertung mit Kriterium: Darstellen oder Beurteilen? | ANTWORT: Beurteilen (AFB III verlangt ein kriteriengeleitetes Urteil; Darstellen bleibt bei strukturierter Wiedergabe).
+- FRAGE: Was bezeichnet Hurrelmann als Kern von Identitaet? | ANTWORT: Die produktive Verarbeitung von innerer und aeusserer Realitaet, also der aktive Ausgleich zwischen eigenen Wuenschen und gesellschaftlichen Anforderungen.
+- FRAGE: Wodurch unterscheidet sich mediatisierte Anerkennung von direkter Anerkennung? | ANTWORT: Mediatisierte Anerkennung ist oeffentlich, vergleichbar und dauerhaft sichtbar, waehrend direkte Anerkennung situativ und persoenlich bleibt.
+- FRAGE: Welcher Operator verlangt eine Bewertung mit Kriterium: Darstellen oder Beurteilen? | ANTWORT: Beurteilen (AFB III verlangt ein kriteriengeleitetes Urteil; Darstellen bleibt bei strukturierter Wiedergabe).
 
 Klausur-Satz: `Identitaet ist keine Eigenschaft, sondern eine Balanceleistung — umso anspruchsvoller, je mehr Rollen, Medien und Kulturen gleichzeitig verhandelt werden muessen.`
 
@@ -157,6 +167,7 @@ SITUATION: An deiner Schule wird ueber die Abschlussfeier diskutiert. Aeltere Le
 AUFGABE (AFB III): Verfasse eine zusammenhaengende Darstellung von etwa 150 Woertern mit Kriterium, Anwendung und Urteil.
 RUBRIC (30 XP): These mit Kriterium Autonomie in Bindung (5 XP) | Darstellung beider Wege mit Fachbegriffen (10 XP) | Anwendung auf Feier-Streit mit Beleg aus der Studie (10 XP) | Fazit mit eigenem Urteil und Ausblick (5 XP).
 
+Klausur-Satz: `Die Klausurleistung zeigt sich an der Stufenzuordnung: Szene nennen, Mead- oder Erikson-Kategorie anlegen, Festlegungsgrad bestimmen.`
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Was der Krisenstab lernt
 
 TAKEAWAY (Kernbotschaft in einem Kasten):
@@ -166,3 +177,5 @@ Takeaway-Satz: `Wer Ausgleich von Anpassung unterscheidet, deutet Identitaet sic
 REFLEXION (zwei Fragen):
 1. Welcher Weg fiel dir leichter — der Ausgleich nach Hurrelmann (Schritt 4) oder der Medien-Vergleich mit Peer-Druck (Schritt 5)?
 2. Woran erkennst du kuenftig frueh, ob ein Fall nach Ausgleichslogik oder nach Vergleichslogik verlangt?
+
+Klausur-Satz: `Identitaet ist kein Fund, sondern eine Verhandlung: Wer viele Spiegel hat, braucht ein stabiles Gespraech mit sich selbst.`

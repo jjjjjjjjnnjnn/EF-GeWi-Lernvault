@@ -22,7 +22,7 @@ version: Lesson-v3
 
 > EPISODE 07 — Akt V — Klausurwerkstatt der Stadtkanzlei — Auftrag von Schwarzmakler Viktor Kral: Gini-Alarm 0,45 auf der Rathaus-Anzeigetafel.
 
-HOOK (Stadtrats-Krise, lies zuerst): EPISODE 07 — Akt V — Klausurwerkstatt der Stadtkanzlei — Stadt Tycoon City ruft dich in den Krisenstab. Schwarzmakler Viktor Kral stuermt mit einer Eilmeldung ins Buero: Gini-Alarm 0,45 auf der Rathaus-Anzeigetafel — und morgen entscheidet der Stadtrat. Der Markt schreit, die Warteschlange waechst, die Kasse zittert: Ohne deine Analyse kippt die Stadt vom Apfelparadies in den Schwarzmarkt. Dein Auftrag in dieser Episode: Uebersetze die Strassenszene in das heutige Thema Gestaltungsaufgabe: Redebeitrag und Handlungsempfehlung. Sammle Belege, stelle den Sandkasten [formula] scharf und liefere dem Rat eine Klausur-Antwort, die einer Pruefungskommission standhaelt. Erste Spur: TARGET: Hebt die Klausurformel aufs Brett — Bedingung: Dreischritt 30-40-30 eingehalten, drei Fachbegriffe korrekt gesetzt, Urteil mit Massstab und Abwaegung geschlossen. Wer den Mechanismus versteht, rettet den Haushalt — und vielleicht die Wahl. Der Countdown laeuft, das Radio berichtet live, die Opposition wartet nur auf deinen Fehler: Oeffne die Ziele, schnapp dir die Begriffe und beweise, dass Tycoon City regierbar bleibt.
+HOOK (Stadtrats-Krise, lies zuerst): EPISODE 07 — Akt V — Klausurwerkstatt der Stadtkanzlei — Stadt Tycoon City ruft dich in den Krisenstab. Schwarzmakler Viktor Kral stuermt mit einer Eilmeldung ins Buero: Gini-Alarm 0,45 auf der Rathaus-Anzeigetafel — und morgen entscheidet der Stadtrat. Realer Fall: Eine Stadt kaempft gleichzeitig mit Mietenexplosion und leeren Ladenlokalen - junge Mieter demonstrieren, Geschaeftsinhaber schliessen. Der Stadtrat hat nur drei Werkzeuge: Foerdern, Deckeln, Bauland geben. Das falsche Werkzeug endet wie der Berliner Mietendeckel vor dem Verfassungsgericht. Erste Spur: TARGET: Hebt die Klausurformel aufs Brett — Bedingung: Dreischritt 30-40-30 eingehalten, drei Fachbegriffe korrekt gesetzt, Urteil mit Massstab und Abwaegung geschlossen. Oeffne die Ziele, schnapp dir die Begriffe und beweise, dass Tycoon City regierbar bleibt.
 
 ZIELE (drei messbare Ziele dieser Lektion):
 
@@ -46,11 +46,19 @@ Gute Rede folgt antiker Ordnung, gute Empfehlung folgt Datenlogik. Wer Bausteine
 
 ### Fachbegriffe & Definitionen
 
-- **Redebeitrag:** Die muendliche Gestaltung an ein Publikum mit Anlass, Reaktion auf fremde Positionen, eigenem Vorschlag und Schlussappell.
-- **Handlungsempfehlung:** Die schriftliche Beratung eines Adressaten mit Datenbasis, Massnahmen, Folgen und Kompetenzpruefung.
-- **Datenkappe:** Die Einordnung aus Quelle, Zeitraum und Einheit. Sie klaert, was das Material sagt und was es verschweigt.
-- **Wirkungskette:** Die Folgenabschaetzung aus Massnahme, beabsichtigtem Effekt und moeglicher Nebenfolge mit Gewinnern und Verlierern.
-- **Adressatenkompetenz:** Die Pruefung von Zustaendigkeit, Faehigkeit und Finanzierung. Sie verhindert Vorschlaege an Unzustaendige.
+- **Wirtschaftspolitik**: Wirtschaftspolitik steuert Rahmen und Prozesse der Wirtschaft. Ordnungspolitik setzt dauerhafte Regeln wie Wettbewerb. Prozesspolitik greift kurzfristig ein wie Subventionen. Mechanismus: Regeln wirken ueber Anreize auf alle, Eingriffe wirken ueber Geld auf einzelne - mit Mitnahme- und Verzoegerungsrisiken. Klausur-Tipp: Ordne jede Massnahme erst Ordnung oder Prozess zu, dann erst werten.
+- **Anreizwirkung**: Jede Massnahme veraendert das Kosten-Nutzen-Kalkuel der Akteure. Subventionen senken Kosten und locken Angebot an. Deckel senken Preise und schrecken Angebot ab. Mechanismus: Akteure reagieren nicht auf Absichten, sondern auf veraenderte Auszahlungen - oft mit Ausweichreaktionen. Klausur-Tipp: Frage immer Wer reagiert wie auf den veraenderten Anreiz.
+- **Zielkonflikt**: Gute Ziele beissen sich: billige Mieten gegen Neubau-Anreize, Klimaschutz gegen Jobs. Jeder Eingriff loest einen Konflikt und schafft einen neuen. Mechanismus: Ueber Externalitaeten und Budgets wandert die Last von einer Gruppe zur anderen. Klausur-Tipp: Benenne beide Ziele und den Wanderweg der Last.
+- **Verhältnismäßigkeit**: Staatliche Eingriffe muessen geeignet, erforderlich und angemessen sein. Das mildeste wirksame Mittel gewinnt. Ueberzogene Deckel scheitern an dieser Pruefung. Mechanismus: Gerichte pruefen Ziel, Mittel und Nebenfolgen in drei Stufen. Klausur-Tipp: Lege die Drei-Stufen-Pruefung als Schablone ueber jede Massnahme.
+- **Evaluation**: Wirkung wird an Kennzahlen gemessen: Mieten, Leerstand, Neubau, Wartelisten. Ohne Vorher-Nachher-Vergleich bleibt Politik Behauptung. Mechanismus: Indikatoren machen Ausweichreaktionen sichtbar, die Reden verschweigen. Klausur-Tipp: Fordere Kennzahl plus Vergleichsgruppe, sonst kein Urteil.
+
+
+
+
+
+
+
+
 
 ### Wirkungsgefuege / Modell
 
@@ -116,6 +124,8 @@ VERGLEICH (Wahl des Weges, A gegen B):
 
 VERGLEICH: Pruefe zuerst das Aufgabenziel und waehle dann den passenden Weg — Weg A oder Weg B — und loese erst danach die Aufgabe.
 
+DUELL Weg A (freier Markt) gegen Weg B (Staat greift ein): Weg A setzt auf den freien Markt: Mehr Bauland und Wettbewerb lassen Preise und Mengen sich selbst finden. Weg B greift sozial ein: Deckel und Zuschuesse schuetzen Mieter heute, riskieren aber Neubau und locken Schattenmaerkte. Entscheide am Kriterium: Versorgungssicherheit morgen spricht fuer A, Schutz heute spricht fuer B.
+
 Weg A: Realpolitik und Reform als schrittweiser Wandel im System. Leitfrage: Was ist mit vorhandenen Zustaendigkeiten und Mitteln machbar? Blick auf kleine Schritte, Kompromiss und Nebenfolgen. Urteil an Machbarkeit und Akzeptanz: Reform entlastet schnell, loest aber Tiefenursachen nur teilweise.
 
 Weg B: Transformation als Regelneugestaltung gegen Tiefenursachen. Leitfrage: Welche Regel muss neu geschrieben werden, damit das Problem an der Wurzel schwindet? Blick auf Anreize, Strukturen und lange Ketten. Urteil an Wirktiefe und Fairness: Transformation greift tiefer, braucht aber Zeit und Mehrheiten.
@@ -134,9 +144,9 @@ Klausur-Satz: `Der Redebeitrag ueberzeugt ein Publikum mit Bezug und Appell, die
 
 CHECK (drei Fragen mit Antworten):
 
-FRAGE: Aus welchen vier Bausteinen besteht ein Redebeitrag? | ANTWORT: Anlassbezug und Adressat, Reaktion auf zwei fremde Aspekte, ein eigener Vorschlag und ein ueberzeugender Schlussappell.
-FRAGE: Welche Bausteine braucht eine Handlungsempfehlung? | ANTWORT: Datenkappe, drei Grenzen des Materials, zwei Massnahmen mit je einer Wirkungskette und die Pruefung der Adressatenkompetenz.
-FRAGE: Warum zaehlt die Gestaltungsaufgabe zu AFB III? | ANTWORT: Sie verlangt eigenstaendiges Entwickeln und Bewerten — nicht nur Wiedergabe oder Analyse, sondern eine kriteriengeleitete Handlung.
+- FRAGE: Aus welchen vier Bausteinen besteht ein Redebeitrag? | ANTWORT: Anlassbezug und Adressat, Reaktion auf zwei fremde Aspekte, ein eigener Vorschlag und ein ueberzeugender Schlussappell.
+- FRAGE: Welche Bausteine braucht eine Handlungsempfehlung? | ANTWORT: Datenkappe, drei Grenzen des Materials, zwei Massnahmen mit je einer Wirkungskette und die Pruefung der Adressatenkompetenz.
+- FRAGE: Warum zaehlt die Gestaltungsaufgabe zu AFB III? | ANTWORT: Sie verlangt eigenstaendiges Entwickeln und Bewerten — nicht nur Wiedergabe oder Analyse, sondern eine kriteriengeleitete Handlung.
 
 Klausur-Satz: `Ohne konkrete Massnahme, ohne Folge und ohne Kompetenzbezug bleibt die Gestaltung eine Meinung ohne Handlung.`
 
@@ -157,6 +167,7 @@ SITUATION: Die Klausur umfasst drei Aufgaben. Aufgabe 1 mit Darstellen und Aufga
 AUFGABE (AFB III): Verfasse eine zusammenhaengende Darstellung von etwa 150 Woertern mit Kriterium, Anwendung und Urteil.
 RUBRIC (30 XP): Erkennen und Begruenden des Formats anhand des Rollenwortes (5 XP) | Vollstaendigkeit der vier bzw. fuenf Bausteine (10 XP) | Zwei konkrete Massnahmen mit je einer Wirkungskette und Nebenfolge (10 XP) | Adressatenkompetenz und widerspruchsfreier Schluss (5 XP).
 
+Klausur-Satz: `Die reife Stellungnahme ordnet erst das Werkzeug, dann die Anreizreaktion und misst beides an Kennzahlen statt an Absichten.`
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Was der Krisenstab lernt
 
 TAKEAWAY (Kernbotschaft in einem Kasten):
@@ -166,3 +177,5 @@ Takeaway-Satz: `Erst Beleg sichern, dann Kette bauen, dann mutig empfehlen.`
 REFLEXION (zwei Fragen):
 1. Welcher Weg fiel dir leichter — kleine Reform mit schneller Wirkung (Schritt 4) oder neue Regel gegen Tiefenursachen (Schritt 5)?
 2. Woran erkennst du kuenftig, ob ein Fall nach Machbarkeit oder nach Wirktiefe verlangt?
+
+Klausur-Satz: `Gestalten heisst Anreize setzen, nicht Wuensche befehlen: Wer die Reaktion der Akteure mitdenkt, wird vom Verkuender zum Handwerker der Politik.`

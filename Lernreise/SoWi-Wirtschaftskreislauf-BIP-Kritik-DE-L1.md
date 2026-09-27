@@ -22,7 +22,7 @@ version: Lesson-v3
 
 > EPISODE 41 — Akt I-II — Apfelmarkt und Mietendeckel — Auftrag von Hausmeister Benno Strauss: Hausmeister-Streik im Winterdienst.
 
-HOOK (Stadtrats-Krise, lies zuerst): EPISODE 41 — Akt I-II — Apfelmarkt und Mietendeckel — Stadt Tycoon City ruft dich in den Krisenstab. Hausmeister Benno Strauss stuermt mit einer Eilmeldung ins Buero: Hausmeister-Streik im Winterdienst — und morgen entscheidet der Stadtrat. Der Markt schreit, die Warteschlange waechst, die Kasse zittert: Ohne deine Analyse kippt die Stadt vom Apfelparadies in den Schwarzmarkt. Dein Auftrag in dieser Episode: Uebersetze die Strassenszene in das heutige Thema Wirtschaftskreislauf und BIP-Kritik. Sammle Belege, stelle den Sandkasten [markt-sim] scharf und liefere dem Rat eine Klausur-Antwort, die einer Pruefungskommission standhaelt. Erste Spur: TARGET: Stellt im Sandkasten Angebot und Nachfrage so ein, dass der Gleichgewichtspreis zwischen 8 und 12 Euro liegt, die gehandelte Menge mindestens 100 Einheiten erreicht und ein Probe-Hoechstpreis von 6 Euro als bindend mit Warteschlange entlarvt wird. Wer den Mechanismus versteht, rettet den Haushalt — und vielleicht die Wahl. Der Countdown laeuft, das Radio berichtet live, die Opposition wartet nur auf deinen Fehler: Oeffne die Ziele, schnapp dir die Begriffe und beweise, dass Tycoon City regierbar bleibt.
+HOOK (Stadtrats-Krise, lies zuerst): EPISODE 41 — Akt I-II — Apfelmarkt und Mietendeckel — Stadt Tycoon City ruft dich in den Krisenstab. Hausmeister Benno Strauss stuermt mit einer Eilmeldung ins Buero: Hausmeister-Streik im Winterdienst — und morgen entscheidet der Stadtrat. Realer Fall: Im Pandemiejahr fiel das BIP, Pflegekraefte brachen zusammen, Eltern unterrichteten nachts am Kuechentisch. Die Statistik zaehlte den Einbruch, nicht die Traeger. Hausarbeit, Pflege und Ehrenamt sind unsichtbares BIP, Dreck und Stau bleiben unabgezogen. Das BIP ist Thermometer, kein Check-up: Fieber ja, Erschoepfung nein. Erste Spur: TARGET: Stellt im Sandkasten Angebot und Nachfrage so ein, dass der Gleichgewichtspreis zwischen 8 und 12 Euro liegt, die gehandelte Menge mindestens 100 Einheiten erreicht und ein Probe-Hoechstpreis von 6 Euro als bindend mit Warteschlange entlarvt wird. Oeffne die Ziele, schnapp dir die Begriffe und beweise, dass Tycoon City regierbar bleibt.
 
 ZIELE (drei messbare Ziele dieser Lektion):
 
@@ -46,11 +46,19 @@ Wer zahlt, wer produziert, wer finanziert. Ohne Sektoren bleibt Kreis abstrakt. 
 
 ### Fachbegriffe und Definitionen
 
-- **Haushalte:** Die Anbieter von Arbeit gegen Lohn. Sie teilen Einkommen in Konsum und Sparen.
-- **Unternehmen:** Die Produzenten von Guetern gegen Preis. Sie tragen das Ziel Gewinn.
-- **Staat:** Der Umverteiler ueber Steuern fuer Transfers und oeffentliche Gueter. Er sichert Ordnung und Recht.
-- **Banken:** Die Finanziers ueber Kredit gegen Zins. Sie ermoeglichen Investitionen in Morgen.
-- **Ausland:** Der Partner ueber Ausfuhr minus Einfuhr als Aussenbeitrag. Er oeffnet den Markt zur Welt.
+- **Wirtschaftskreislauf**: Haushalte liefern Arbeit und erhalten Lohn, Unternehmen liefern Gueter und erhalten Geld. Geld und Gueter kreisen gegenlaeufig. Staat und Ausland erweitern den Kreis. Mechanismus: Jede Ausgabe ist jemandes Einnahme - der Kreislauf schliesst sich buchhalterisch immer. Klausur-Tipp: Zeichne Gegenstroeme von Geld und Guetern.
+- **BIP**: Das BIP misst die Marktproduktion eines Jahres im Inland. Es zaehlt Verwendung als Konsum, Investition, Staat plus Aussenbeitrag. Wachstum heisst mehr, nicht besser. Mechanismus: Verwendungsrechnung summiert Endnachfrage; Vorleistungen werden herausgerechnet. Klausur-Tipp: Definiere ueber Inland plus Markt plus Jahr.
+- **BIP-Kritik**: Unbezahltes, Umwelt und Verteilung bleiben aussen vor. Katastrophen heben das BIP durch Reparaturen. Glueck und Gesundheit misst es gar nicht. Mechanismus: Marktpreise filtern alles ohne Preis heraus plus zaehlen Schaeden als Leistung. Klausur-Tipp: Nenne je ein Beispiel unbezahlte Arbeit, Umwelt und Verteilung.
+- **Staat im Kreislauf**: Der Staat nimmt Steuern, zahlt Transfers und kauft Gueter. In der Krise stabilisiert er Nachfrage ueber Defizite. Schulden heute sind Steuern oder Kuerzungen morgen. Mechanismus: Antizyklik glaettet Schwankungen, prozyklische Kuerzung verstaerkt sie. Klausur-Tipp: Deute Defizite als Stabilisierung mit Zukunftspreis.
+- **Aussenbeitrag**: Exporte minus Importe zeigen Verflechtung mit der Welt. Ueberschuesse bedeuten Forderungen ans Ausland. Abhaengigkeit von Maerkten und Rohstoffen waechst mit. Mechanismus: Wechselkurse und Weltkonjunktur schlagen direkt auf Jobs und Preise durch. Klausur-Tipp: Verbinde Ueberschuss mit Abhaengigkeit.
+
+
+
+
+
+
+
+
 
 ### Wirkungsgefuege / Modell
 
@@ -116,6 +124,8 @@ Klausur-Satz: `Entstehung, Verwendung und Verteilung beschreiben dasselbe BIP au
 
 VERGLEICH: Zwei Wege deuten dasselbe Wachstum unterschiedlich. Weg A feiert quantitatives Wachstum mit Output und Beschaeftigung. Weg B fragt nach qualitativem Wachstum mit Abzug von Umwelt- und Sozialkosten. Pruefe zuerst die Aufgabe, waehle dann den passenden Weg.
 
+DUELL Weg A (freier Markt) gegen Weg B (Staat greift ein): Weg A vertraut dem freien Kreislauf: Maerkte gleichen sich selbst aus, Sparen und Investieren finden Wege, der Staat haelt sich raus. Weg B stabilisiert per Eingriff: Defizite, Transfers und Investitionen federn Krisen ab. Entscheide am Kriterium: Effizienz und Eigenverantwortung sprechen fuer A, Stabilitaet und Schutz sprechen fuer B.
+
 Weg A: Quantitatives Wachstum mit BIP. Mehr Output, mehr Jobs, mehr Steuern: Der Kreislauf laeuft, die Verwendung steigt. Staerke ist klare Botschaft und sichtbare Jobs, Schwaeche ist Blindheit gegenueber Natur, Sorge und Verteilung.
 
 Weg B: Qualitatives Wachstum mit NWI. Abzug von Umweltschaeden und Sozialkosten plus Aufwertung unbezahlter Arbeit und Blick auf Verteilung und Gesundheit. Staerke ist Ehrlichkeit gegenueber Wohlfahrt, Schwaeche sind Streit um Bewertung und geringerer Show-Effekt.
@@ -134,9 +144,9 @@ Klausur-Satz: `Wachstum des BIP ist ohne Verteilungs-, Umwelt- und Sozialindikat
 
 CHECK (drei Fragen mit Antworten):
 
-FRAGE: Nenne die fuenf Sektoren und die zwei Stroeme mit Richtung. | ANTWORT: Haushalte, Unternehmen, Staat, Banken, Ausland; Geldstrom im Uhrzeigersinn, Gueterstrom entgegengesetzt.
-FRAGE: Nenne die drei Blickwinkel auf dieselbe Marktleistung in einem Satz. | ANTWORT: Entstehung summiert Wertschoepfung, Verwendung summiert Konsum plus Investitionen plus Staat plus Aussenbeitrag, Verteilung summiert Einkommen.
-FRAGE: Nenne vier Kritikpunkte am BIP plus Alternative. | ANTWORT: unbezahlte Arbeit fehlt, Umweltschaeden ohne Abzug, Verteilung blind, schaedliche Umsaetze als Plus; Korrektur durch NWI und HDI.
+- FRAGE: Nenne die fuenf Sektoren und die zwei Stroeme mit Richtung. | ANTWORT: Haushalte, Unternehmen, Staat, Banken, Ausland; Geldstrom im Uhrzeigersinn, Gueterstrom entgegengesetzt.
+- FRAGE: Nenne die drei Blickwinkel auf dieselbe Marktleistung in einem Satz. | ANTWORT: Entstehung summiert Wertschoepfung, Verwendung summiert Konsum plus Investitionen plus Staat plus Aussenbeitrag, Verteilung summiert Einkommen.
+- FRAGE: Nenne vier Kritikpunkte am BIP plus Alternative. | ANTWORT: unbezahlte Arbeit fehlt, Umweltschaeden ohne Abzug, Verteilung blind, schaedliche Umsaetze als Plus; Korrektur durch NWI und HDI.
 
 Klausur-Satz: `Das BIP misst Marktwerte eines Jahres, nicht Nachhaltigkeit oder Gerechtigkeit.`
 
@@ -157,6 +167,7 @@ SITUATION: Die Stadt feiert ein gestiegenes regionales BIP nach einem Sturmjahr 
 AUFGABE (AFB III): Verfasse eine zusammenhaengende Darstellung von etwa 150 Woertern mit Kriterium, Anwendung und Urteil.
 RUBRIC (30 XP): Kreislauf mit Sektorbezug korrekt (5 XP) | Drei Blickwinkel oder Verwendung aus Konsum plus Investition plus Staat plus Aussenbeitrag genannt (5 XP) | Vier Kritikpunkte vollstaendig (10 XP) | NWI und HDI plus begruendetes Urteil zu Wachstum gegen Wohlfahrt (10 XP)
 
+Klausur-Satz: `Die Kreislaufklausur rechnet erst die Verwendung sauber und begrenzt dann das Ergebnis mit drei blinden Flecken.`
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Was der Krisenstab lernt
 
 TAKEAWAY (Kernbotschaft in einem Kasten):
@@ -166,3 +177,5 @@ Takeaway-Satz: `Was viel umsetzt, ist nicht viel wert, solange Natur und Sorge g
 REFLEXION (zwei Fragen):
 1. Wo hast du zuletzt Weg A gegen Weg B abgewogen: Hat dich Output mit Jobs oder Wohlfahrt mit Umwelt- und Sozialkosten staerker ueberzeugt, und an welchem blinden Fleck hast du das festgemacht.
 2. Welchen Fehlschluss willst du kuenftig vermeiden: Umsatz mit Wohlfahrt zu verwechseln oder Geldstrom mit Gueterstrom, und mit welcher Prueffrage zu Abzug und Verteilung sicherst du kuenftig dein Urteil.
+
+Klausur-Satz: `Das BIP zaehlt, was Preise haben: Wer das Unsichtbare mitdenkt, regiert mit Thermometer und Kompass.`

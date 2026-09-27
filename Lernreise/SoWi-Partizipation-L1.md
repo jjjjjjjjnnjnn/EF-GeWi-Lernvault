@@ -22,7 +22,7 @@ version: Lesson-v3
 
 > EPISODE 20｜Akt IV-V — Tarifarena und Demokratiewerkstatt｜召集人 Birenbegehren-Aktivist Piet Janssen：Quorum-Krimi beim Buergerbegehren。
 
-HOOK 市长危机（先读剧情，再进 ZIELE）：【本集战役 EP20｜Akt IV-V — Tarifarena und Demokratiewerkstatt｜虚拟城邦 Tycoon City 告急】市长办公室深夜灯火通明，Birenbegehren-Aktivist Piet Janssen 冲进来报告：Quorum-Krimi beim Buergerbegehren，而明天市议会就要投票。集市在喊、长队在排、国库在抖：苹果集市价格战一路烧到租金黑市，再烧到基尼天平与劳资谈判桌，本集正是“Partizipation”的现实引爆点。你的身份是市长直属经济改革规划委员：把街头危机翻译成考点，用沙盘 [balance-board] 拿出可验证的数值方案，再交出一份 Klausur 满分答卷稳住议会。通关线索：TARGET: Bringt auf dem Verhandlungsbrett beide Waagschalen in die Balance — Bedingung: Zustimmung beider Baenke, Loesung mit Kompromisslinie, Ergebnisprotokoll mit zwei Begruendungen je Seite. 上一集的结尾就是这一集的悬念——黑市账本、税改天平、劳资天平、选票天平，四座天平有一座倒了，城邦就停摆。电台正在直播，反对派等着挑错：先读 ZIELE，再啃术语，把传导机制画成你的作战地图。DE-Briefing: Episode 20 — Birenbegehren-Aktivist Piet Janssen meldet Quorum-Krimi beim Buergerbegehren; der Stadtrat entscheidet morgen. Rette Tycoon City mit Analyse, Sandkasten und Klausur-Antwort zum Thema Partizipation.
+HOOK 市长危机（先读剧情，再进 ZIELE）：【本集战役 EP20｜Akt IV-V — Tarifarena und Demokratiewerkstatt｜虚拟城邦 Tycoon City 告急】市长办公室深夜灯火通明，Birenbegehren-Aktivist Piet Janssen 冲进来报告：Quorum-Krimi beim Buergerbegehren，而明天市议会就要投票。你的身份不变：市长直属经济改革规划委员。真实情境切入：某市青年议会投票率不到8%，同城气候游行却来了两万人；票箱变垃圾桶的漫画配文“投票没劲，游行真香”。票在睡觉、街在喊——参与ย้าย场了。考试要问：这是民主危机，还是参与换装？通关线索：TARGET: Bringt auf dem Verhandlungsbrett beide Waagschalen in die Balance — Bedingung: Zustimmung beider Baenke, Loesung mit Kompromisslinie, Ergebnisprotokoll mit zwei Begruendungen je Seite. 先读 ZIELE，再啃术语，把传导机制画成你的作战地图。DE-Briefing: Episode 20 — Birenbegehren-Aktivist Piet Janssen meldet Quorum-Krimi beim Buergerbegehren; der Stadtrat entscheidet morgen. Rette Tycoon City mit Analyse, Sandkasten und Klausur-Antwort zum Thema Partizipation.
 
 ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
@@ -38,11 +38,19 @@ PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→�
 
 中文在上，德语在下：
 
-- 常规 / 非常规参与 — konventionell / unkonventionell：投票、入党属常规；游行、抵制属非常规。
-- 电子参与 — E-Partizipation：在线请愿、给议员写信，把参与成本降到很低。
-- 公民动议 / 公民公决 — Volksbegehren / Volksentscheid：先集签名，再交由全体投票。
-- 同意门槛 — Zustimmungsquorum：公决不仅要多数赞成，还需达到一定参与比例才算数。
-- 公民委员会 — Bürgerrat：随机抽选的公民经专家听证后提出建议，通常无约束力。
+- **Partizipation**（政治参与）：参与是自愿影响政治的一切行为：投票请愿游行占领，合法未必正当、正当未必合法。 Partizipation meint alle freiwilligen Handlungen zur Beeinflussung von Politik. Sie reicht von Waehlen ueber Petitionen bis zu Demos und Besetzungen. Legalitaet und Legitimitaet fallen dabei nicht immer zusammen. Mechanismus: Ressourcen, Motive und Gelegenheiten filtern, wer sich wie einbringt. Klausur-Tipp: Sortiere jede Form auf legal, legitim und wirksam.
+- **Konventionell / unkonventionell**（常规/非常规参与）：体制内投票入党 vs 体制外游行抵制请愿；对体制失望，参与就搬家。 Waehlen und Parteiarbeit laufen in Institutionen. Demos, Boykotte und Petitionen laufen ausserhalb. Beide Formen ergaenzen und ersetzen einander. Mechanismus: Sinkt Vertrauen in Institutionen, wandert Beteiligung auf die Strasse und ins Netz. Klausur-Tipp: Deute Wandel nie nur als Verfall, sondern als Verlagerung.
+- **Wahlbeteiligung**（投票率）：投票率量合法性也量平等：穷人和年轻先退场，高 turnout 也藏着不平等。 Die Beteiligung misst Legitimation und Gleichheit der Stimme. Sinkende Quoten treffen Arme und Junge zuerst. Hohe Quoten verbergen nicht ungleiche Einflusschanchen. Mechanismus: Bildung, Einkommen und Alter sortieren die Urne sozial. Klausur-Tipp: Verbinde jede Quote mit der sozialen Schieflage.
+- **E-Partizipation**（网络参与）：点赞风暴请愿降门槛但也降耐心；没组织没媒体接力，点击只是蒸汽。 Likes, Shitstorms und Online-Petitionen senken Einstiegskosten. Sie verstaerken Laute und verkuerzen Aufmerksamkeit. Wirkung entsteht erst mit Strassen- und Parlamentsanschluss. Mechanismus: Klick plus Organisation plus Medienresonanz - erst das Trio bewegt etwas. Klausur-Tipp: Trenne expressive (Dampf ablassen) von instrumenteller (etwas aendern) Wirkung.
+- **Politikverdrossenheit**（厌政）：厌的是政客不是民主本身；可能是退场，也可能是换场再战。 Verdrossenheit meint Enttaeuschung ueber Akteure, nicht Ablehnung der Demokratie. Sie trifft Parteien zuerst, Institutionen spaeter. Sie kann Mobilisierung oder Rueckzug bedeuten. Mechanismus: Skandale plus Ohnmachtserfahrung erzeugen Distanz; Angebote zur Mitsprache koennen sie umkehren. Klausur-Tipp: Unterscheide Akteurs- von Systemverdrossenheit.
+
+
+
+
+
+
+
+
 
 Klausur-Satz: `Der Weg zum Volksentscheid führt über Initiative, Begehren (Unterschriftenquorum) und Entscheid (Zustimmungsquorum).`
 
@@ -75,6 +83,10 @@ ENTDECKEN（1概念 + 1文字图解）：
    BUERGERRAT: Los + Experten -> Empfehlung
         Pro: entpolarisiert | Contra: keine Legitimation
 ```
+Kausalkette: Filter aus Ressourcen, Motiven und Gelegenheiten, Spaltung in drinnen und draussen, Wanderung bei Vertrauensverlust, Wirkung erst ueber Organisation, Medien und Parlament. Leere Urnen bedeuten nicht tote Demokratie, sondern oft umgezogene Beteiligung.
+
+因果链：资源动机机会三过滤→体制内（投票入党）vs 体制外（游行网络）分流→信任跌则参与搬家→效果看组织+媒体+议会接力。票箱空了不等于民主死了，可能是参与换了衣服。
+
 
 Klausur-Satz: `Die Wahlbeteiligung nach Alter zeigt, dass junge Menschen seltener wählen — Nichtwahl ist jedoch nicht gleich Desinteresse.`
 
@@ -121,6 +133,10 @@ VERGLEICH辨别实验（双向辨析：程序眼 vs. 抽选眼）：
 
 VERGLEICH: Wähle erst das Verfahren —【选程序】先判断材料问的是 (i) Verfahrens-Partizipation（一条参与程序怎么走：Volksinitiative → Begehren → Entscheid、门槛、合法性）还是 (ii) Deliberations-Partizipation（参与的质量与合法性：Bürgerrat、Repräsentation、Minderheitenschutz）—— dann lösen.
 
+DUELL Weg A (freier Markt) gegen Weg B (Staat greift ein): Weg A feiert den freien Beteiligungsmarkt: Jeder waehlt seine Form, Wettbewerb der Stimmen diszipliniert die Macht. Weg B baut geschuetzte Beteiligung: Jugendparlamente, Quoten und Buergerratsverfahren sichern Gehoerte, die der Markt ueberhoert. Entscheide am Kriterium: Freiheit und Vielfalt sprechen fuer A, Gleichheit der Stimme und Teilhabe fuer B.
+
+对决 Weg A（自由市场）vs Weg B（国家干预）：Weg A信参与自由市场：人各选各的招，竞争管住权力。Weg B信受保护的参与：青年议会、配额、公民议事保住被淹没的声音。判据：自由多元站A，票票平等站B。
+
 AUFGABE A (AFB II, 8 BE)：Material 2 schildert, dass eine Initiative gegen ein Bauprojekt 60 000 Unterschriften sammelt, um ein Volksbegehren zu erzwingen. Erläutern Sie den weiteren Verfahrensweg und die beiden Quoren.
 
 AUFGABE B (AFB II, 8 BE)：Eine Karikatur zeigt einen ausgelosten Bürger, der ein Schild „Empfehlung ohne Wirkung" trägt, während Parlamentarier daneben weiterbeschließen. Erläutern Sie die Aussage mit dem Begriff Bürgerrat.
@@ -135,9 +151,9 @@ Klausur-Satz: `Der Bürgerrat ergänzt die repräsentative Demokratie, kann sie 
 
 CHECK检索默写（自测 3 题，与答案配对）：
 
-FRAGE: Welche zwei Achsen strukturieren die Formen politischer Partizipation? | ANTWORT: konventionell/unkonventionell sowie legal/illegal; illegale Gewalt ist in jedem Fall ausgeschlossen.
-FRAGE: Welche drei Stufen führen in Deutschland zum Volksentscheid? | ANTWORT: Volksinitiative, Volksbegehren (Unterschriftenquorum) und Volksentscheid (Zustimmungsquorum).
-FRAGE: Was ist das Hauptargument gegen direkte Demokratie? | ANTWORT: Der fehlende Minderheitenschutz — eine Mehrheit könnte Grundrechte einer Minderheit überstimmen.
+- FRAGE: Welche zwei Achsen strukturieren die Formen politischer Partizipation? | ANTWORT: konventionell/unkonventionell sowie legal/illegal; illegale Gewalt ist in jedem Fall ausgeschlossen.
+- FRAGE: Welche drei Stufen führen in Deutschland zum Volksentscheid? | ANTWORT: Volksinitiative, Volksbegehren (Unterschriftenquorum) und Volksentscheid (Zustimmungsquorum).
+- FRAGE: Was ist das Hauptargument gegen direkte Demokratie? | ANTWORT: Der fehlende Minderheitenschutz — eine Mehrheit könnte Grundrechte einer Minderheit überstimmen.
 
 Klausur-Satz: `Direkte Demokratie kann die repräsentative Demokratie ergänzen, doch ihr fehlt der eingebaute Minderheitenschutz.`
 
@@ -161,6 +177,7 @@ SITUATION: Die Stadt will einen Bürgerrat zum Thema Verkehr einrichten. Ein Tei
 
 RUBRIC (30 XP): Benennung von Begriff und Verfahren des Bürgerrats (5 XP) | Analyse der Vorteile — Entpolarisierung, Alltagsperspektive (10 XP) | Analyse der Nachteile — fehlende Legitimation, fehlende Verbindlichkeit (10 XP) | Kriteriengeleitetes Urteil (z. B. Kriterium Verbindlichkeit) (5 XP).
 
+Klausur-Satz: `Die Partizipationsklausur trennt erst Form, Legalitaet und soziale Traegerschaft, bevor sie Krise oder Wandel diagnostiziert.`
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Was der Krisenstab lernt
 
 TAKEAWAY 1盒（核心总结）：
@@ -171,3 +188,5 @@ Takeaway-Satz: `Partizipation stärkt die Demokratie dort, wo sie Minderheiten s
 REFLEXION 2问：
 1. 过程自省：Welcher Schritt fiel schwerer — das Lesen der Wahlbeteiligungsstatistik (Schritt 4) oder die Unterscheidung der beiden Quoren (Schritt 5)?
 2. 元认知计划：Beim nächsten Mal prüfe ich zuerst, ob das Material einen Verfahrensweg oder die Qualität der Beteiligung betrifft, und wähle danach das Verfahren.
+
+Klausur-Satz: `Demokratie stirbt nicht an leeren Urnen, sondern an fehlenden Bruecken zwischen Strasse, Netz und Parlament.`

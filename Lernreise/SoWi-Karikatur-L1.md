@@ -22,7 +22,7 @@ version: Lesson-v3
 
 > EPISODE 14｜Akt V — Klausurwerkstatt der Stadtkanzlei｜召集人 Tarifschlichter Eugen Brandt：Tarifflucht-Welle der Altstadt-Wirte。
 
-HOOK 市长危机（先读剧情，再进 ZIELE）：【本集战役 EP14｜Akt V — Klausurwerkstatt der Stadtkanzlei｜虚拟城邦 Tycoon City 告急】市长办公室深夜灯火通明，Tarifschlichter Eugen Brandt 冲进来报告：Tarifflucht-Welle der Altstadt-Wirte，而明天市议会就要投票。集市在喊、长队在排、国库在抖：苹果集市价格战一路烧到租金黑市，再烧到基尼天平与劳资谈判桌，本集正是“Karikaturanalyse in drei Schritten”的现实引爆点。你的身份是市长直属经济改革规划委员：把街头危机翻译成考点，用沙盘 [formula] 拿出可验证的数值方案，再交出一份 Klausur 满分答卷稳住议会。通关线索：TARGET: Hebt die Klausurformel aufs Brett — Bedingung: Dreischritt 30-40-30 eingehalten, drei Fachbegriffe korrekt gesetzt, Urteil mit Massstab und Abwaegung geschlossen. 上一集的结尾就是这一集的悬念——黑市账本、税改天平、劳资天平、选票天平，四座天平有一座倒了，城邦就停摆。电台正在直播，反对派等着挑错：先读 ZIELE，再啃术语，把传导机制画成你的作战地图。DE-Briefing: Episode 14 — Tarifschlichter Eugen Brandt meldet Tarifflucht-Welle der Altstadt-Wirte; der Stadtrat entscheidet morgen. Rette Tycoon City mit Analyse, Sandkasten und Klausur-Antwort zum Thema Karikaturanalyse in drei Schritten.
+HOOK 市长危机（先读剧情，再进 ZIELE）：【本集战役 EP14｜Akt V — Klausurwerkstatt der Stadtkanzlei｜虚拟城邦 Tycoon City 告急】市长办公室深夜灯火通明，Tarifschlichter Eugen Brandt 冲进来报告：Tarifflucht-Welle der Altstadt-Wirte，而明天市议会就要投票。你的身份不变：市长直属经济改革规划委员。真实漫画切入：一幅漫画里天平一边是鼓鼓的钱袋、一边是空盘子，配文“人人有机会？”；另一幅里大树被锯成两半配烟囱，配文“增长还是未来？”。两幅画两种冲突：分蛋糕不均 vs 两个好目标打架。方法错了，满篇跑题。通关线索：TARGET: Hebt die Klausurformel aufs Brett — Bedingung: Dreischritt 30-40-30 eingehalten, drei Fachbegriffe korrekt gesetzt, Urteil mit Massstab und Abwaegung geschlossen. 先读 ZIELE，再啃术语，把传导机制画成你的作战地图。DE-Briefing: Episode 14 — Tarifschlichter Eugen Brandt meldet Tarifflucht-Welle der Altstadt-Wirte; der Stadtrat entscheidet morgen. Rette Tycoon City mit Analyse, Sandkasten und Klausur-Antwort zum Thema Karikaturanalyse in drei Schritten.
 
 ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
@@ -38,11 +38,19 @@ PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→�
 
 中文在上，德语在下：
 
-- 讽刺漫画 — Karikatur：用夸张图像讽刺现实问题的时评材料。
-- 夸张手法 — Überzeichnung：故意放大特征以暴露矛盾，不是写实。
-- 象征符号 — Symbol：图中物件代表现实事物（天平=分配、树=环境、票箱=选举）。
-- 解读 — Deutung：把"画了什么"翻译成"意味着什么"，属分析不属描述。
-- 评价标准 — Beurteilungsmaßstab：没有标准就没有判断，如 Gerechtigkeit / Teilhabe / Nachhaltigkeit。
+- **Karikatur**（讽刺漫画）：漫画是夸张的时评不是纪实，准在刺眼不在全面。 Eine Karikatur ueberzeichnet reale Missstaende mit satirischer Absicht. Sie ist Kommentar, kein Protokoll. Ihr Wahrheitsanspruch liegt in der Zuspitzung, nicht in der Vollstaendigkeit. Mechanismus: Ueberzeichnung isoliert einen Widerspruch und macht ihn auf einen Blick diskutierbar. Klausur-Tipp: Nenne im ersten Satz Textsorte plus satirische Absicht.
+- **Überzeichnung**（夸张）：夸张是方法不是画崩：放大的部位就是靶子。 Ueberzeichnung vergroessert ein Merkmal bis zur Sichtbarkeit. Sie ist Methode, kein Zeichenfehler. Was vergroessert wird, verrät die Stoßrichtung. Mechanismus: Groesse, Verzerrung und Kontrast lenken den Blick auf den kritisierten Widerspruch. Klausur-Tipp: Frage immer Was wird vergroessert und wen trifft die Vergroesserung.
+- **Symbol**（象征）：象征要翻译：天平=分配，梯子对电梯=起点，树对锯=目标冲突；不翻等于没写。 Symbole stehen fuer reale Phaenomene: Waage fuer Verteilung, Leiter gegen Aufzug fuer Startchancen, Baum gegen Saege fuer Zielkonflikte. Ohne Uebersetzung bleibt das Bild stumm. Mechanismus: Bildzeichen plus Realbezug plus EF-Kontext ergeben die Deutung. Klausur-Tipp: Lege eine Symbolbank an und zitiere sie explizit.
+- **Deutung / Intention**（解读/意图）：解读翻意思、意图点靶子，都属分析段；写进描述段就越界。 Deutung uebersetzt Gesehenes in Gemeintes mit Kontext. Intention benennt, wen oder was der Zeichner kritisiert. Beides gehoert in analysieren, nie in beschreiben. Mechanismus: Element, Phaenomen, EF-Thema, Kritikadressat - diese Viererkette schliesst die Analyse. Klausur-Tipp: Formuliere Der Karikaturist kritisiert ... mit Adressat.
+- **Beurteilungsmaßstab**（评价标准）：没标准就是读后感：正义、参与、可持续三选一先报，再摆正反。 Ohne Kriterium bleibt jede Stellungnahme Meinung. Gerechtigkeit, Teilhabe und Nachhaltigkeit sind die drei Standardmassstaebe. Erst am Massstab werden Pro und Contra vergleichbar. Mechanismus: Kriterium nennen, beide Seiten messen, Abwaegung, Urteil. Klausur-Tipp: Schreibe den Massstab als eigenen Satz, sonst null Punkte fuer AFB III.
+
+
+
+
+
+
+
+
 
 Klausur-Satz: `Die Zuspitzung ist kein Mangel, sondern Methode: Sie macht Strukturen sichtbar, die Statistiken nur abstrakt zeigen.`
 
@@ -75,6 +83,10 @@ ENTDECKEN（1概念 + 1文字图解）：
    Waage/Leiter  -> Verteilung   |  Baum vs. Saege -> Zielkonflikt
    Wahlurne->Muell-> Parteienverdrossenheit |  Geldbeutel -> Kapital
 ```
+Kausalkette: Beschreiben in hoechstens fuenf Saetzen ohne Deutung, analysieren ueber Symbol, Kontext und Intention, beurteilen ueber Kriterium, Pro, Contra und Urteil. Zeitregel 30, 40, 30. Die Karikatur liefert die These, Daten und Institutionen liefern den Beleg.
+
+因果链：描述（5句只讲画面不解释）→分析（象征翻现实+挂EF章节+点漫画家靶子）→评价（报标准摆正反给判断）。时间30/40/30。漫画只给观点不给数据，论证必须回扣数字与制度，否则把段子当证据。
+
 
 Klausur-Satz: `Der Karikaturist kritisiert ein Phaenomen, indem er es ueberzeichnet; jedes Symbol braucht eine Deutung mit konkretem Realbezug.`
 
@@ -111,6 +123,10 @@ VERGLEICH辨别实验（双向辨析：分配冲突之眼 vs. 目标冲突之眼
 
 VERGLEICH: Wähle erst das Verfahren — 【选程序】先判断漫画画的是 (i) Verteilungskonflikt（谁多谁少、起点是否公平：Waage/Leiter/Geldsaecke）还是 (ii) Zielkonflikt（两个好目标打架：Baum vs. Saege/Schornstein）—— dann analysieren.
 
+DUELL Weg A (freier Markt) gegen Weg B (Staat greift ein): Weg A liest die Karikatur als freien Markt der Meinungen: Der Zeichner duerfte zuspitzen, die Deutung bleibt offen, Pluralitaet siegt. Weg B liest sie als Schutzauftrag: Menschenwuerde und Jugendschutz begrenzen die Satire, Gerichte ziehen Linien. Entscheide am Kriterium: Meinungsfreiheit spricht fuer A, Wuerdeschutz fuer B - dokumentiert an Art. 5 Abs. 2.
+
+对决 Weg A（自由市场）vs Weg B（国家干预）：Weg A把漫画当言论自由市场：允许夸张，解读开放。Weg B把漫画当保护任务：尊严和青少年保护给讽刺划线，法院看第5条第2款。判据：言论自由站A，尊严保护站B。
+
 AUFGABE A：Eine Karikatur zeigt eine Person mit Aktentasche und eine mit einem Klimaplakat, die an einer grossen Saege ziehen, waehrend ein Baum zur Haelfte gefaellt und daneben ein Schornstein raucht; die Unterschrift lautet sinngemaess „Wachstum oder Zukunft?". Welches Verfahren ist zu waehlen, und wie ist die Karikatur zu deuten?
 
 AUFGABE B：Eine Karikatur zeigt eine Waage, auf deren einer Seite ein voller Geldsack, auf der anderen ein leerer Teller liegt; daneben steht eine Familie in abgetragener Kleidung. Welches Verfahren ist zu waehlen, und wie ist die Karikatur zu deuten?
@@ -125,9 +141,9 @@ Klausur-Satz: `Ein Verteilungskonflikt fragt nach der gerechten Aufteilung, ein 
 
 CHECK检索默写（自测 3 题，与答案配对）：
 
-FRAGE: Was darf im Schritt beschreiben nicht vorkommen? | ANTWORT: Keine Deutung — also keine Formulierungen wie „zeigt, dass" oder „kritisiert"; beschrieben werden nur Figuren, Objekte und Text.
-FRAGE: Aus welchen drei Bausteinen besteht der Schritt analysieren? | ANTWORT: Deutung der Symbole, Einordnung in den Kontext (EF-Thema) und Benennung der Intention des Karikaturisten.
-FRAGE: Was braucht eine gelungene Beurteilung einer Karikatur? | ANTWORT: Ein genanntes Kriterium, je ein Pro- und Contra-Argument und ein begruendetes eigenes Urteil.
+- FRAGE: Was darf im Schritt beschreiben nicht vorkommen? | ANTWORT: Keine Deutung — also keine Formulierungen wie „zeigt, dass" oder „kritisiert"; beschrieben werden nur Figuren, Objekte und Text.
+- FRAGE: Aus welchen drei Bausteinen besteht der Schritt analysieren? | ANTWORT: Deutung der Symbole, Einordnung in den Kontext (EF-Thema) und Benennung der Intention des Karikaturisten.
+- FRAGE: Was braucht eine gelungene Beurteilung einer Karikatur? | ANTWORT: Ein genanntes Kriterium, je ein Pro- und Contra-Argument und ein begruendetes eigenes Urteil.
 
 Klausur-Satz: `Ohne einen genannten Beurteilungsmassstab bleibt jede Stellungnahme zur Karikatur eine blosse Meinung.`
 
@@ -149,6 +165,7 @@ ROLLE: Du bist Klausurteilnehmer/in und bearbeitest eine Karikatur-Aufgabe unter
 SITUATION: In der Klausur liegt eine selbst erstellte Karikatur vor: Eine Wahlurne ist als Muelltonne gezeichnet; ein junger Mensch sitzt mit dem Smartphone auf dem Sofa, waehrend draussen Gleichaltrige mit Plakaten demonstrieren. Die Unterschrift lautet sinngemaess „Waehlen? Kein Bock. — Demo? Bin dabei!". Bearbeiten Sie die Aufgabe in 15 Minuten: Beschreiben Sie die Karikatur in hoechstens fuenf Saetzen (AFB I, 6 BE), analysieren Sie die Symbole im Kontext des Partizipationswandels (AFB II, 10 BE) und beurteilen Sie ihre Aussage nach dem Kriterium der Teilhabe (AFB III, 8 BE).
 RUBRIC (30 XP): Beschreibung ohne Deutung mit Figuren, Objekten und Text (6 XP) | Symboldeutung mit Realbezug und Kontext (Partizipationswandel) (8 XP) | Benennung der Intention des Karikaturisten (4 XP) | Kriterium der Teilhabe, Pro/Contra und begruendetes Urteil (8 XP) | Zeitdisziplin und klare Dreiteilung (4 XP).
 
+Klausur-Satz: `Die Transferleistung unterscheidet Verteilungs- von Zielkonflikt und belegt jede Deutung mit Symbol, Realbezug und EF-Kontext.`
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Was der Krisenstab lernt
 
 TAKEAWAY 1盒（核心总结）：
@@ -159,3 +176,5 @@ Takeaway-Satz: `Die Karikatur ist ein legitimer Aufriss, aber ein schwacher Bele
 REFLEXION 2问：
 1. 过程自省：Welcher Schritt fiel schwerer — das reine Beschreiben ohne Deutung (Schritt 4) oder das Finden eines Kriteriums fuer die Beurteilung (Schritt 7)?
 2. 元认知计划：Beim nächsten Mal frage ich zuerst, ob ein Verteilungs- oder ein Zielkonflikt dargestellt ist, und waehle danach die Symboldeutung.
+
+Klausur-Satz: `Die Karikatur ist ein legitimer Aufriss, aber ein schwacher Beleg: als These nutzen, mit Daten und Institutionen begruenden.`

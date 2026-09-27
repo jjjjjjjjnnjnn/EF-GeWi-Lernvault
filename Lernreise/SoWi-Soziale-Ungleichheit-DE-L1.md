@@ -22,7 +22,7 @@ version: Lesson-v3
 
 > EPISODE 25 — Akt III — Gini-Waage und Steuerreform — Auftrag von Extremismus-Experte Cem Aksoy: Extremismus-Chat-Leak an der Berufsschule.
 
-HOOK (Stadtrats-Krise, lies zuerst): EPISODE 25 — Akt III — Gini-Waage und Steuerreform — Stadt Tycoon City ruft dich in den Krisenstab. Extremismus-Experte Cem Aksoy stuermt mit einer Eilmeldung ins Buero: Extremismus-Chat-Leak an der Berufsschule — und morgen entscheidet der Stadtrat. Der Markt schreit, die Warteschlange waechst, die Kasse zittert: Ohne deine Analyse kippt die Stadt vom Apfelparadies in den Schwarzmarkt. Dein Auftrag in dieser Episode: Uebersetze die Strassenszene in das heutige Thema Soziale Ungleichheit im Ueberblick. Sammle Belege, stelle den Sandkasten [gini-allocator] scharf und liefere dem Rat eine Klausur-Antwort, die einer Pruefungskommission standhaelt. Erste Spur: TARGET: Justiert Steuer- und Transferregler so, dass der Gini-Indikator nach Umverteilung in den Korridor 0,28 bis 0,32 faellt, das unterste Quintil mindestens 8 Prozent des Kuchens haelt und die Armutsrisikoquote sichtbar sinkt. Wer den Mechanismus versteht, rettet den Haushalt — und vielleicht die Wahl. Der Countdown laeuft, das Radio berichtet live, die Opposition wartet nur auf deinen Fehler: Oeffne die Ziele, schnapp dir die Begriffe und beweise, dass Tycoon City regierbar bleibt.
+HOOK (Stadtrats-Krise, lies zuerst): EPISODE 25 — Akt III — Gini-Waage und Steuerreform — Stadt Tycoon City ruft dich in den Krisenstab. Extremismus-Experte Cem Aksoy stuermt mit einer Eilmeldung ins Buero: Extremismus-Chat-Leak an der Berufsschule — und morgen entscheidet der Stadtrat. Realer Fall: Dasselbe Klassenzimmer - vorne Erzaehlungen von drei Austauschwochen, hinten Ferien im Familienladen mit Geschwisterbetreuung. Zehn Jahre spaeter Master hier, Schichtrotation dort. Die Startlinie trennt nicht Begabung, sondern Kapital und Netzwerke. Die Klausur fragt nicht nach Gefuehl, sondern nach Mechanik: Wie Ungleichheit erzeugt, vererbt und zurueckgedraengt wird. Erste Spur: TARGET: Justiert Steuer- und Transferregler so, dass der Gini-Indikator nach Umverteilung in den Korridor 0,28 bis 0,32 faellt, das unterste Quintil mindestens 8 Prozent des Kuchens haelt und die Armutsrisikoquote sichtbar sinkt. Oeffne die Ziele, schnapp dir die Begriffe und beweise, dass Tycoon City regierbar bleibt.
 
 ZIELE (drei messbare Ziele dieser Lektion):
 
@@ -46,11 +46,19 @@ Arm oder ungleich, fair oder verdient: Worte mischen alles. Diese fuenf Begriffe
 
 ### Fachbegriffe und Definitionen
 
-- **Einkommensdimension:** Die oekonomische Achse mit Verteilungswert plus Armutsquote. Sie misst Geldverteilung zwischen Haushalten.
-- **Bildungsdimension:** Die soziale Achse mit Trichter plus Abschluss. Sie zeigt Herkunft als Filter staerker als Note.
-- **Armutsgefaehrdung:** Die relative Schwelle bei sechzig Prozent des mittleren Einkommens. Sie definiert Armut als Abstand zum Standard als Teilhabe.
-- **Meritokratie:** Das Ideal aus Erfolg durch Leistung plus Anstrengung. Es scheitert, wenn Herkunft staerker wirkt als Leistung.
-- **Kapitalsorten:** Bourdieus Trio aus Geld plus Bildung plus Netz. Es erklaert Chancen als Summe ueber Generationen.
+- **Soziale Ungleichheit**: Ungleichheit meint die ungleiche Verteilung von Geld, Bildung, Macht und Prestige. Sie ist mehrdimensional, nicht nur Einkommen. Chancenungleichheit wiegt schwerer als Ergebnisungleichheit. Mechanismus: Ressourcen der Eltern werden ueber Foerderung, Wohngegend und Netzwerke in Kinderchancen umgebaut. Klausur-Tipp: Starte mit Dimensionen plus Chancen-gegen-Ergebnis-Trennung.
+- **Kulturelles Kapital**: Nach Bourdieu zaehlen Sprache, Manieren und Bildungstitel als Kapital. Es oeffnet Tueren ohne Geldschein. Schulen belohnen die Codes der Mitte. Mechanismus: Habitus passt zu Lehrerwartungen oder eben nicht - stille Bevorzugung laeuft ueber Vertrautheit. Klausur-Tipp: Erklaere Schulerfolg ueber Code-Passung statt Begabung.
+- **Bildungstrichter**: Herkunft filtert Abschluesse: Akademikerkinder studieren mehrheitlich, Arbeiterkinder selten. Uebergaenge nach Klasse vier und zehn wirken als Weichen. Empfehlungen verstaerken den Filter. Mechanismus: Fruehe Weichen plus elterliche Intervention kumulieren Vorsprung. Klausur-Tipp: Nenne beide Weichen plus Empfehlungsbias.
+- **Meritokratie**: Leistungsgerechtigkeit verspricht Aufstieg nach Koennen. Real filtern Herkunft und Netzwerke mit. Das Versprechen legitimiert Gewinner und beschuldigt Verlierer. Mechanismus: Gleiche Regeln bei ungleichen Starts erzeugen legitime Ungleichheit aus illegitimen Chancen. Klausur-Tipp: Kritisiere mit Trichterdaten, nicht mit Meinung.
+- **Sozialstaat**: Der Sozialstaat federt Risiken ueber Versicherung und Transfers ab. BAfoeG, Wohngeld und Foerderung oeffnen zweite Wege. Er kostet Beitraege und Steuern. Mechanismus: Umverteilung plus Bildungsinvestition heben das unterste Quintil und senken die Quote. Klausur-Tipp: Nenne je Massnahme Finanzierer plus Wirkung.
+
+
+
+
+
+
+
+
 
 ### Wirkungsgefuege / Modell
 
@@ -116,6 +124,8 @@ Klausur-Satz: `Wenn der Bildungserfolg staerker von der Herkunft als von der Lei
 
 VERGLEICH: Zwei Wege ordnen dieselbe Gesellschaft unterschiedlich. Weg A denkt in Klassen und Schichten mit senkrechter Staffelung nach Einkommen und Bildung. Weg B denkt in Sinus-Milieus mit waagerechten Werten und Lebensstilen. Pruefe zuerst die Aufgabe, waehle dann den passenden Weg.
 
+DUELL Weg A (freier Markt) gegen Weg B (Staat greift ein): Weg A setzt auf freie Leistung: Offene Maerkte, Wettbewerb und Eigenverantwortung belohnen Einsatz. Weg B setzt auf Ausgleich: Umverteilung, Foerderung und Quoten oeffnen Starts. Entscheide am Kriterium: Effizienz und Eigenverantwortung sprechen fuer A, Chancengerechtigkeit und Teilhabe fuer B.
+
 Weg A: Klassen und Schichten. Senkrechte Achse aus Einkommen plus Bildung plus Einfluss erklaert Lebenschancen und Anreize. Staerke ist klare Hierarchie mit messbarer Spreizung, Schwaeche ist Blindheit gegenueber Werten, Geschmack und Alltag.
 
 Weg B: Sinus-Milieus. Waagerechte Achse aus Werten plus Lebensstilen plus Konsum erklaert Zugehoerigkeit und Abgrenzung. Staerke ist Naehe zum Alltag mit Bildung als Stil, Schwaeche ist unscharfe Grenze ohne klare Rangfolge.
@@ -134,9 +144,9 @@ Klausur-Satz: `Funktionalistische Ansaetze deuten Ungleichheit als Leistungsanre
 
 CHECK (drei Fragen mit Antworten):
 
-FRAGE: Welche drei Dimensionen sozialer Ungleichheit unterscheidet der EF-Unterricht. | ANTWORT: Die oekonomische mit Einkommen und Vermoegen, die politische mit Macht und Einfluss und die soziale mit Bildung, Netzwerken und Gesundheit.
-FRAGE: Wo liegt die Armutsgefaehrdungsschwelle und warum ist das wichtig. | ANTWORT: Sie liegt bei sechzig Prozent des mittleren Einkommens, nicht des Durchschnitts: Armut ist also relativ zum gesellschaftlichen Standard definiert.
-FRAGE: Was belegt der Bildungstrichter. | ANTWORT: Er belegt, dass der Bildungserfolg stark von der Herkunft abhaengt und Chancengleichheit nicht eingeloest ist.
+- FRAGE: Welche drei Dimensionen sozialer Ungleichheit unterscheidet der EF-Unterricht. | ANTWORT: Die oekonomische mit Einkommen und Vermoegen, die politische mit Macht und Einfluss und die soziale mit Bildung, Netzwerken und Gesundheit.
+- FRAGE: Wo liegt die Armutsgefaehrdungsschwelle und warum ist das wichtig. | ANTWORT: Sie liegt bei sechzig Prozent des mittleren Einkommens, nicht des Durchschnitts: Armut ist also relativ zum gesellschaftlichen Standard definiert.
+- FRAGE: Was belegt der Bildungstrichter. | ANTWORT: Er belegt, dass der Bildungserfolg stark von der Herkunft abhaengt und Chancengleichheit nicht eingeloest ist.
 
 Klausur-Satz: `Die Armutsgefaehrdungsquote misst Armut relativ zum Median-Einkommen und macht sichtbar, dass Armut kein Randproblem, sondern ein strukturelles Merkmal ist.`
 
@@ -157,6 +167,7 @@ SITUATION: In deiner Region erreichen Arbeiterkinder nur halb so oft das Abitur 
 AUFGABE (AFB III): Verfasse eine zusammenhaengende Darstellung von etwa 150 Woertern mit Kriterium, Anwendung und Urteil.
 RUBRIC (30 XP): Darstellung der Ungleichheit mit den drei Dimensionen und Kapitalarten (6 XP) | Analyse des Bildungstrichters mit Herkunft staerker als Leistung (8 XP) | Abwaegung mit Kriterium Chancengerechtigkeit zu Pro und Contra staatlicher Massnahmen (10 XP) | Kriteriengeleitetes Urteil mit konkreter Forderung (6 XP)
 
+Klausur-Satz: `Die Stellungnahme sortiert erst Dimensionen und Mechanik, belegt dann mit Trichter und Quote und urteilt ueber Chancen statt ueber Neid.`
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Was der Krisenstab lernt
 
 TAKEAWAY (Kernbotschaft in einem Kasten):
@@ -166,3 +177,5 @@ Takeaway-Satz: `Schichten zeigen, wer mehr hat, Milieus zeigen, wer anders lebt:
 REFLEXION (zwei Fragen):
 1. Wo hast du zuletzt Weg A gegen Weg B abgewogen: Hat dich senkrechte Schicht mit Einkommen oder waagerechtes Milieu mit Werten staerker ueberzeugt, und an welchem Trichterzeichen hast du das festgemacht.
 2. Welchen Fehlschluss willst du kuenftig vermeiden: Note mit Chance zu verwechseln oder Stil mit Struktur, und mit welcher Prueffrage zu Geld plus Netz plus Haltung sicherst du kuenftig dein Urteil.
+
+Klausur-Satz: `Ungleichheit wird vererbt, nicht verdient: Wer die Mechanik benennt, streitet ueber Wege statt ueber Wuerde.`

@@ -22,7 +22,7 @@ version: Lesson-v3
 
 > EPISODE 34｜Akt I-II — Apfelmarkt und Mietendeckel｜召集人 Nachtmarkt-Buergermeister-Stellvertreter Deniz Yildiz：Apfelwein-Steuerdeal hinterm Rathaus。
 
-HOOK 市长危机（先读剧情，再进 ZIELE）：【本集战役 EP34｜Akt I-II — Apfelmarkt und Mietendeckel｜虚拟城邦 Tycoon City 告急】市长办公室深夜灯火通明，Nachtmarkt-Buergermeister-Stellvertreter Deniz Yildiz 冲进来报告：Apfelwein-Steuerdeal hinterm Rathaus，而明天市议会就要投票。集市在喊、长队在排、国库在抖：苹果集市价格战一路烧到租金黑市，再烧到基尼天平与劳资谈判桌，本集正是“Strukturwandel und Prekarisierung”的现实引爆点。你的身份是市长直属经济改革规划委员：把街头危机翻译成考点，用沙盘 [markt-sim] 拿出可验证的数值方案，再交出一份 Klausur 满分答卷稳住议会。通关线索：TARGET: Stellt im Sandkasten Angebot und Nachfrage so ein, dass der Gleichgewichtspreis zwischen 8 und 12 Euro liegt, die gehandelte Menge mindestens 100 Einheiten erreicht und ein Probe-Hoechstpreis von 6 Euro als bindend mit Warteschlange entlarvt wird. 上一集的结尾就是这一集的悬念——黑市账本、税改天平、劳资天平、选票天平，四座天平有一座倒了，城邦就停摆。电台正在直播，反对派等着挑错：先读 ZIELE，再啃术语，把传导机制画成你的作战地图。DE-Briefing: Episode 34 — Nachtmarkt-Buergermeister-Stellvertreter Deniz Yildiz meldet Apfelwein-Steuerdeal hinterm Rathaus; der Stadtrat entscheidet morgen. Rette Tycoon City mit Analyse, Sandkasten und Klausur-Antwort zum Thema Strukturwandel und Prekarisierung.
+HOOK 市长危机（先读剧情，再进 ZIELE）：【本集战役 EP34｜Akt I-II — Apfelmarkt und Mietendeckel｜虚拟城邦 Tycoon City 告急】市长办公室深夜灯火通明，Nachtmarkt-Buergermeister-Stellvertreter Deniz Yildiz 冲进来报告：Apfelwein-Steuerdeal hinterm Rathaus，而明天市议会就要投票。你的身份不变：市长直属经济改革规划委员。真实情境切入：夜班骑手App一响就得跑，没单就白等；同一栋楼里，正式工聊年假，劳务派遣工算时薪。失业率下来了，安全感没回来——这就是“无失业的危机”：岗位有了，保障碎了。考试考你：结构变了谁疼，政策怎么接。通关线索：TARGET: Stellt im Sandkasten Angebot und Nachfrage so ein, dass der Gleichgewichtspreis zwischen 8 und 12 Euro liegt, die gehandelte Menge mindestens 100 Einheiten erreicht und ein Probe-Hoechstpreis von 6 Euro als bindend mit Warteschlange entlarvt wird. 先读 ZIELE，再啃术语，把传导机制画成你的作战地图。DE-Briefing: Episode 34 — Nachtmarkt-Buergermeister-Stellvertreter Deniz Yildiz meldet Apfelwein-Steuerdeal hinterm Rathaus; der Stadtrat entscheidet morgen. Rette Tycoon City mit Analyse, Sandkasten und Klausur-Antwort zum Thema Strukturwandel und Prekarisierung.
 
 ZIELE (3 Ziele, nach 15 Minuten erreichbar):
 
@@ -40,11 +40,19 @@ Klausur-Satz: `Der Strukturwandel verlagert Beschaeftigung in den Dienstleistung
 
 PRETRAINING (Kernbegriffe):
 
-- Strukturwandel: Dauerhafte Verschiebung von Wertschöpfung und Beschaeftigung zwischen Sektoren.
-- Tertiaerisierung: Wachstum des Dienstleistungssektors gegenueber Industrie und Agrarbereich.
-- Prekarisierung: Ausbreitung unsicherer Arbeit unterhalb des Normalarbeitsverhaeltnisses.
-- Normalarbeitsverhaeltnis: Unbefristet, Vollzeit, sozialversichert und existenzsichernd.
-- Atypisch: Befristet, Teilzeit, Leiharbeit oder Solo-Selbstaendigkeit mit erhoehtem Risiko.
+- **Strukturwandel**（结构变迁）：经济从工厂搬向服务数字平台：旧岗缩、新岗生在别处，人和地方都被甩开。 Wirtschaft wandert von Industrie zu Diensten, Digitalem und Plattformen. Alte Jobs schrumpfen, neue entstehen anderswo. Regionen und Qualifikationen driften auseinander. Mechanismus: Technologie plus Globalisierung verschieben Nachfrage nach Taetigkeiten; Anpassung laeuft ueber Qualifikation und Mobilitaet. Klausur-Tipp: Nenne Gewinnerbranche plus Verliererregion je Fall.
+- **Prekarisierung**（不稳定化）：有岗无保：短期派遣自雇，收入忽高忽低；风险从公司搬到个人头上。 Jobs werden unsicher: Befristung, Leiharbeit, Solo-Selbststaendigkeit. Einkommen schwankt, Planung wird unmoeglich. Formal beschaeftigt, faktisch ungesichert. Mechanismus: Risiken wandern vom Betrieb zum Einzelnen; Flexibilitaet der Firma wird Unsicherheit des Lebens. Klausur-Tipp: Trenne atypisch von prekaer - nicht jeder Teilzeitjob ist prekaer.
+- **Gig-Plattform**（零工平台）：App当老板：派单打分封号三件套，抽成归平台、风险归骑手。 Apps vermitteln Auftraege ohne Anstellung. Der Algorithmus ist der Chef: Er verteilt, bewertet und sperrt. Scheinselbststaendigkeit umgeht Schutzrechte. Mechanismus: Steuerung ohne Verantwortung - Plattform kassiert Marge, Fahrer traegt Risiko. Klausur-Tipp: Pruefe Weisung plus Eingliederung als Abhaengigkeitsbeleg.
+- **Leiharbeit**（劳务派遣）：租人干活：缓冲订单波动，但同工不同命，分裂队伍。 Verleiher ueberlassen Kraefte an Entleiher gegen Gebuehr. Equal Pay sollte gleichen Lohn sichern. Missbrauch drueckt Staemme und Leihkraefte gegeneinander aus. Mechanismus: Flexibilitaetspuffer federt Auftragsschwankungen, spaltet aber Belegschaften. Klausur-Tipp: Werte Leiharbeit als Puffer mit Spaltungsrisiko.
+- **Sozialpolitik-Antwort**（社会政策回应）：底薪培训监管三件套：花钱或花灵活，买转型不流血。 Mindestlohn, Weiterbildung und Regulierung federn den Wandel ab. Qualifizierung oeffnet Aufstiege, Schutzregeln bremsen Missbrauch. Jede Antwort kostet Geld oder Flexibilitaet. Mechanismus: Foerdern plus Fordern plus Schuetzen - das Trio verteilt Anpassungslasten. Klausur-Tipp: Nenne je Massnahme Traeger, Empfaenger und Preis.
+
+
+
+
+
+
+
+
 
 Klausur-Satz: `Prekaer ist Arbeit, wenn Einkommen, Sicherheit, Schutz und Planbarkeit gleichzeitig verletzt sind.`
 
@@ -62,6 +70,12 @@ Prekaritaetstest (alle 4 pruefen):
 [Schutz vorhanden?]      [Leben planbar?]
 0-1 Defizite = stabil, 2+ Defizite = prekaere Zone
 ```
+Kausalkette: Technik plus Globalisierung veraendern Nachfrage, alte Skills entwerten, neue praemiieren, Betriebe waelzen Schwankungen auf Leiharbeit und Plattformen ab, Risiken individualisieren sich, Politik antwortet dreifach: Lohnboden, Qualifizierung, Regulierung. Zwei Schnitte tragen die Analyse: Branchen und Betroffene.
+
+因果链：技术+全球化改需求→旧技能贬值新技能溢价→企业用派遣平台转嫁波动→个人风险化→政策三接（底薪托底、培训转岗、监管防滥用）。传导看两切：行业切（谁生谁死）与人群切（谁疼谁赚）。
+
+Kennzahlanker: Befristungsquote $q \approx 12\,\%$ bei Jungen deutlich hoeher; Gini-Ziel $0{,}28 \le G \le 0{,}32$ als Schutzmass.
+
 
 Klausur-Satz: `Erst die Kumulation mehrerer Unsicherheiten macht aus atypischer Arbeit prekaere Arbeit.`
 
@@ -96,6 +110,10 @@ VERGLEICH (erst Verfahren waehlen, dann loesen):
 
 VERGLEICH: Waehle erst das Verfahren — (i) Struktur-Verfahren (Sektoren, Qualifikationswandel, Deindustrialisierung) oder (ii) Prekaritaets-Verfahren (Vier-Kriterien-Test am Einzelfall) — dann loesen.
 
+DUELL Weg A (freier Markt) gegen Weg B (Staat greift ein): Weg A vertraut dem freien Arbeitsmarkt: Flexible Vertraege und Plattformen schaffen Jobs, niedrige Loehne sichern Wettbewerb. Weg B schuetzt per Eingriff: Mindestlohn, Equal Pay und Weiterbildung sichern Wuerde und Aufstieg. Entscheide am Kriterium: Beschaeftigungsmenge spricht fuer A, Sicherheit und Teilhabe sprechen fuer B.
+
+对决 Weg A（自由市场）vs Weg B（国家干预）：Weg A信灵活市场：松合同多岗位、低工资保竞争力。Weg B信保护干预：底薪同工同酬培训保尊严和上升。判据：岗位量站A，安全参与站B。
+
 AUFGABE A: Die Stahlstadt baut Werke ab und wirbt mit Logistik und Pflege. Welches Verfahren passt?
 
 AUFGABE B: Eine Studentin jobbt freiwillig zehn Stunden pro Woche im Cafe. Ist das prekaer? Welches Verfahren passt?
@@ -110,9 +128,9 @@ Klausur-Satz: `Branchenwandel verlangt das Strukturverfahren, Einzelfaelle den V
 
 CHECK (drei Fragen mit Antworten):
 
-FRAGE: Was bedeutet Tertiaerisierung? | ANTWORT: Die dauerhafte Verlagerung von Beschaeftigung und Wertschöpfung in den Dienstleistungssektor.
-FRAGE: Welche vier Kriterien prueft der Prekaritaetstest? | ANTWORT: Ausreichendes Einkommen, sichere Beschaeftigung, sozialen Schutz und planbares Leben.
-FRAGE: Wann wird atypische Arbeit prekaer? | ANTWORT: Bei Kumulation mehrerer Defizite ohne existenzsichernden Aufstiegspfad.
+- FRAGE: Was bedeutet Tertiaerisierung? | ANTWORT: Die dauerhafte Verlagerung von Beschaeftigung und Wertschöpfung in den Dienstleistungssektor.
+- FRAGE: Welche vier Kriterien prueft der Prekaritaetstest? | ANTWORT: Ausreichendes Einkommen, sichere Beschaeftigung, sozialen Schutz und planbares Leben.
+- FRAGE: Wann wird atypische Arbeit prekaer? | ANTWORT: Bei Kumulation mehrerer Defizite ohne existenzsichernden Aufstiegspfad.
 
 Klausur-Satz: `Ein einzelnes atypisches Merkmal begruendet noch keine Prekarisierung.`
 
@@ -130,6 +148,7 @@ ROLLE: Du bist Berichterstatterin fuer den Stadtrat.
 SITUATION: Die Stadt feiert sinkende Arbeitslosigkeit, doch die Beratungsstelle meldet mehr befristete Aufstock-Jobs. Nimm in circa 150 Woertern Stellung, ob der Strukturwandel gelungen ist, indem du Branchenverschiebung und Prekaritaet getrennt pruefst.
 RUBRIC (30 XP): Darstellung des Strukturwandels (8 XP) | Vier-Kriterien-Analyse (10 XP) | Kriteriengeleitetes Urteil (8 XP) | Fachsprachliche Darstellung (4 XP).
 
+Klausur-Satz: `Die Wandelklausur schneidet erst Branche gegen Betroffene und misst dann jede Antwort an Schutz, Aufstieg und Preis.`
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Was der Krisenstab lernt
 
 TAKEAWAY:
@@ -140,3 +159,5 @@ Takeaway-Satz: `Strukturwandel beschreibt den Wandel der Arbeit, Prekarisierung 
 REFLEXION:
 1. Welcher Schritt fiel schwerer — die Fallanalyse (Schritt 4) oder die Verfahrenswahl (Schritt 5)?
 2. Beim naechsten Mal pruefe ich zuerst alle vier Kriterien getrennt, weil erst Kumulation das Urteil traegt.
+
+Klausur-Satz: `Der Wandel fragt nicht um Erlaubnis: Wer Qualifikation und Schutz zusammendenkt, macht aus Betroffenen Beteiligte.`

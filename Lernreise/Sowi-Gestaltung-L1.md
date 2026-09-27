@@ -22,7 +22,7 @@ version: Lesson-v3
 
 > EPISODE 08｜Akt V — Klausurwerkstatt der Stadtkanzlei｜召集人 Wohnungsamtsleiterin Ingrid Sommer：Steuerkassen-Loch vor der Wahl。
 
-HOOK 市长危机（先读剧情，再进 ZIELE）：【本集战役 EP08｜Akt V — Klausurwerkstatt der Stadtkanzlei｜虚拟城邦 Tycoon City 告急】市长办公室深夜灯火通明，Wohnungsamtsleiterin Ingrid Sommer 冲进来报告：Steuerkassen-Loch vor der Wahl，而明天市议会就要投票。集市在喊、长队在排、国库在抖：苹果集市价格战一路烧到租金黑市，再烧到基尼天平与劳资谈判桌，本集正是“Gestaltungsaufgabe: Redebeitrag und Handlungsempfehlung”的现实引爆点。你的身份是市长直属经济改革规划委员：把街头危机翻译成考点，用沙盘 [formula] 拿出可验证的数值方案，再交出一份 Klausur 满分答卷稳住议会。通关线索：TARGET: Hebt die Klausurformel aufs Brett — Bedingung: Dreischritt 30-40-30 eingehalten, drei Fachbegriffe korrekt gesetzt, Urteil mit Massstab und Abwaegung geschlossen. 上一集的结尾就是这一集的悬念——黑市账本、税改天平、劳资天平、选票天平，四座天平有一座倒了，城邦就停摆。电台正在直播，反对派等着挑错：先读 ZIELE，再啃术语，把传导机制画成你的作战地图。DE-Briefing: Episode 08 — Wohnungsamtsleiterin Ingrid Sommer meldet Steuerkassen-Loch vor der Wahl; der Stadtrat entscheidet morgen. Rette Tycoon City mit Analyse, Sandkasten und Klausur-Antwort zum Thema Gestaltungsaufgabe: Redebeitrag und Handlungsempfehlung.
+HOOK 市长危机（先读剧情，再进 ZIELE）：【本集战役 EP08｜Akt V — Klausurwerkstatt der Stadtkanzlei｜虚拟城邦 Tycoon City 告急】市长办公室深夜灯火通明，Wohnungsamtsleiterin Ingrid Sommer 冲进来报告：Steuerkassen-Loch vor der Wahl，而明天市议会就要投票。你的身份不变：市长直属经济改革规划委员。真实情境切入：某市要同时解决租金飙升和市中心空置商铺——一边是租不起房的年轻人游行，一边是交不起租的店主拉卷帘门。市议会手里只有三件工具：补贴、限价、供地。选错工具，租金案就是下一个被宪法法院驳回的 Mietendeckel。通关线索：TARGET: Hebt die Klausurformel aufs Brett — Bedingung: Dreischritt 30-40-30 eingehalten, drei Fachbegriffe korrekt gesetzt, Urteil mit Massstab und Abwaegung geschlossen. 先读 ZIELE，再啃术语，把传导机制画成你的作战地图。DE-Briefing: Episode 08 — Wohnungsamtsleiterin Ingrid Sommer meldet Steuerkassen-Loch vor der Wahl; der Stadtrat entscheidet morgen. Rette Tycoon City mit Analyse, Sandkasten und Klausur-Antwort zum Thema Gestaltungsaufgabe: Redebeitrag und Handlungsempfehlung.
 
 ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
@@ -38,11 +38,19 @@ PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→�
 
 中文在上，德语在下：
 
-- 设计型任务 — Gestaltungsaufgabe：穿身份写实用文本，不是纯议论文。
-- 发言稿 — Redebeitrag：嘉宾身份，接前文两点 + 自己加一条 + 说服听众。
-- 行动建议 — Handlungsempfehlung：鉴定人身份，看数据 → 两条措施 → 每条有效果链。
-- 效果链 — Wirkungskette：措施 → 谁受益 → 什么后果 → 什么代价，每条建议一条链。
-- 收件人职权 — Adressatenkompetenz：建议必须对方能办，联邦政府管不了欧洲央行的利率。
+- **Wirtschaftspolitik**（经济政策）：经济政策分两层：定长期规则（竞争秩序） vs 短期动手（补贴干预），先归类再评价。 Wirtschaftspolitik steuert Rahmen und Prozesse der Wirtschaft. Ordnungspolitik setzt dauerhafte Regeln wie Wettbewerb. Prozesspolitik greift kurzfristig ein wie Subventionen. Mechanismus: Regeln wirken ueber Anreize auf alle, Eingriffe wirken ueber Geld auf einzelne - mit Mitnahme- und Verzoegerungsrisiken. Klausur-Tipp: Ordne jede Massnahme erst Ordnung oder Prozess zu, dann erst werten.
+- **Anreizwirkung**（激励效应）：政策不看愿望看激励：补贴降成本引供给，限价压价格赶供给，行为人只对 payoff 反应。 Jede Massnahme veraendert das Kosten-Nutzen-Kalkuel der Akteure. Subventionen senken Kosten und locken Angebot an. Deckel senken Preise und schrecken Angebot ab. Mechanismus: Akteure reagieren nicht auf Absichten, sondern auf veraenderte Auszahlungen - oft mit Ausweichreaktionen. Klausur-Tipp: Frage immer Wer reagiert wie auf den veraenderten Anreiz.
+- **Zielkonflikt**（目标冲突）：好目标会打架：便宜房租 vs 新房激励，气候 vs 岗位；干预只是把负担搬家。 Gute Ziele beissen sich: billige Mieten gegen Neubau-Anreize, Klimaschutz gegen Jobs. Jeder Eingriff loest einen Konflikt und schafft einen neuen. Mechanismus: Ueber Externalitaeten und Budgets wandert die Last von einer Gruppe zur anderen. Klausur-Tipp: Benenne beide Ziele und den Wanderweg der Last.
+- **Verhältnismäßigkeit**（比例原则（如用请写 Verhaeltnismaessigkeit））：干预三问：管用吗？有更轻的吗？代价配吗？限价多半倒在第二问。 Staatliche Eingriffe muessen geeignet, erforderlich und angemessen sein. Das mildeste wirksame Mittel gewinnt. Ueberzogene Deckel scheitern an dieser Pruefung. Mechanismus: Gerichte pruefen Ziel, Mittel und Nebenfolgen in drei Stufen. Klausur-Tipp: Lege die Drei-Stufen-Pruefung als Schablone ueber jede Massnahme.
+- **Evaluation**（政策评估）：没数字的政策都是作文：租金、空置、新开工、排队长度，拿出来才算数。 Wirkung wird an Kennzahlen gemessen: Mieten, Leerstand, Neubau, Wartelisten. Ohne Vorher-Nachher-Vergleich bleibt Politik Behauptung. Mechanismus: Indikatoren machen Ausweichreaktionen sichtbar, die Reden verschweigen. Klausur-Tipp: Fordere Kennzahl plus Vergleichsgruppe, sonst kein Urteil.
+
+
+
+
+
+
+
+
 
 Klausur-Satz: `Der Redebeitrag verlangt Anlassbezug, die Auseinandersetzung mit zwei fremden Aspekten, einen eigenen Vorschlag und eine ueberzeugende Adressierung.`
 
@@ -74,6 +82,12 @@ ENTDECKEN（1概念 + 1文字图解）：
    ZEIT (EF 90 min): Material A1+A2 ca. 60 min | Gestaltung ca. 30 min
    30 min innen: 10 skizzieren / 15 schreiben / 5 pruefen
 ```
+Kausalkette: Ziel setzen, Werkzeug waehlen, Anreizreaktion abwarten, Kennzahlen lesen, nachsteuern. Subventionen kosten Geld ohne Signalverzerrung. Deckel kosten wenig und vertreiben Angebot. Bauland wirkt langsam und an der Wurzel.
+
+因果链：定目标（保住户 vs 保供给）→选工具（补贴/限价/供地）→行为人按新激励反应→看指标（租金、空置、新开工）→回炉调整。补贴贵但不扭曲信号，限价便宜但赶走供给，供地慢但治本。
+
+ Wirkungsanker: Hoechstpreis $p_{max} = 8 < p_G = 11$ Euro erzeugt $q_N - q_A > 0$ als Warteschlange; Foerderung $s$ pro Einheit verschiebt das Angebot ohne Fixpreis.
+
 
 Klausur-Satz: `Die Handlungsempfehlung wertet Daten nach Quelle, Aussagebereich und Fragestellung aus und benennt zuerst die Grenzen des Materials.`
 
@@ -110,6 +124,10 @@ VERGLEICH辨别实验（双向辨析：发言稿格式 vs. 行动建议格式）
 
 VERGLEICH: Wähle erst das Verfahren — 【选程序】先看题干给的"帽子"：是 (i) Redebeitrag（有人物身份：als Gast / als Vertreter einer Organisation，要回应前文）还是 (ii) Handlungsempfehlung（有数据或任务：als Gutachter，要给出措施）—— dann gestalten.
 
+DUELL Weg A (freier Markt) gegen Weg B (Staat greift ein): Weg A setzt auf den freien Markt: Mehr Bauland und Wettbewerb lassen Preise und Mengen sich selbst finden. Weg B greift sozial ein: Deckel und Zuschuesse schuetzen Mieter heute, riskieren aber Neubau und locken Schattenmaerkte. Entscheide am Kriterium: Versorgungssicherheit morgen spricht fuer A, Schutz heute spricht fuer B.
+
+对决 Weg A（自由市场）vs Weg B（国家干预）：Weg A信市场自调：多供地、保竞争，让价格自己找路。Weg B信今天先护住：限价补贴保住户，但吓退新房、养出黑市。判据：明天的供给站A，今天的保护站B。
+
 AUFGABE A：„Sie nehmen als Vertreter der Gewerkschaft an einer Podiumsdiskussion teil; der Vorredner hat behauptet, der Mindestlohn zerstoere Arbeitsplaetze. Nehmen Sie Stellung und machen Sie einen eigenen Vorschlag." Welches Format ist zu waehlen, und wie ist der Aufbau?
 
 AUFGABE B：„In der Rolle eines Gutachters sollen Sie dem Bundestag zwei Massnahmen zur Bekaempfung von Altersarmut empfehlen." Welches Format ist zu waehlen, und wie ist der Aufbau?
@@ -124,9 +142,9 @@ Klausur-Satz: `Der Redebeitrag ueberzeugt ein Publikum mit Bezug und Appell, die
 
 CHECK检索默写（自测 3 题，与答案配对）：
 
-FRAGE: Aus welchen vier Bausteinen besteht ein Redebeitrag? | ANTWORT: Anlassbezug und Adressat, Reaktion auf zwei fremde Aspekte, ein eigener Vorschlag und ein ueberzeugender Schlussappell.
-FRAGE: Welche Bausteine braucht eine Handlungsempfehlung? | ANTWORT: Datenkappe, drei Grenzen des Materials, zwei Massnahmen mit je einer Wirkungskette und die Pruefung der Adressatenkompetenz.
-FRAGE: Warum zaehlt die Gestaltungsaufgabe zu AFB III? | ANTWORT: Sie verlangt eigenstaendiges Entwickeln und Bewerten — nicht nur Wiedergabe oder Analyse, sondern eine kriteriengeleitete Handlung.
+- FRAGE: Aus welchen vier Bausteinen besteht ein Redebeitrag? | ANTWORT: Anlassbezug und Adressat, Reaktion auf zwei fremde Aspekte, ein eigener Vorschlag und ein ueberzeugender Schlussappell.
+- FRAGE: Welche Bausteine braucht eine Handlungsempfehlung? | ANTWORT: Datenkappe, drei Grenzen des Materials, zwei Massnahmen mit je einer Wirkungskette und die Pruefung der Adressatenkompetenz.
+- FRAGE: Warum zaehlt die Gestaltungsaufgabe zu AFB III? | ANTWORT: Sie verlangt eigenstaendiges Entwickeln und Bewerten — nicht nur Wiedergabe oder Analyse, sondern eine kriteriengeleitete Handlung.
 
 Klausur-Satz: `Ohne konkrete Massnahme, ohne Folge und ohne Kompetenzbezug bleibt die Gestaltung eine Meinung ohne Handlung.`
 
@@ -148,6 +166,7 @@ ROLLE: Du bist Teilnehmer/in eines Klausur-Simulationsdurchgangs und bearbeitest
 SITUATION: Die Klausur umfasst drei Aufgaben. Aufgabe 1 (darstellen, AFB I, 24 BE) und Aufgabe 2 (analysieren, AFB II, 46 BE) sind bearbeitet; es bleiben 30 Minuten fuer Aufgabe 3. Gegeben ist ein Materialpaket zu einem fiktiven Vorschlag, die Mehrwertsteuer auf Lebensmittel zu senken. Entscheiden Sie zunaechst, welches Format die Aufgabe verlangt, und entwickeln Sie anschliessend die Gestaltung in 30 Minuten; notieren Sie am Rand Ihre Minutenaufteilung.
 RUBRIC (30 XP): Erkennen und Begruenden des Formats anhand des Rollenwortes (5 XP) | Vollstaendigkeit der vier bzw. fuenf Bausteine (10 XP) | Zwei konkrete Massnahmen mit je einer Wirkungskette und Nebenfolge (10 XP) | Adressatenkompetenz und widerspruchsfreier Schluss (5 XP).
 
+Klausur-Satz: `Die reife Stellungnahme ordnet erst das Werkzeug, dann die Anreizreaktion und misst beides an Kennzahlen statt an Absichten.`
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Was der Krisenstab lernt
 
 TAKEAWAY 1盒（核心总结）：
@@ -158,3 +177,5 @@ Takeaway-Satz: `Die Gestaltungsaufgabe prueft Diskursfaehigkeit: Wer datentreu a
 REFLEXION 2问：
 1. 过程自省：Welcher Schritt fiel schwerer — das Erkennen des Formats (Schritt 5) oder das Formulieren zweier Wirkungsketten mit Nebenfolgen (Schritt 4)?
 2. 元认知计划：Beim nächsten Mal lese ich zuerst das Rollenwort im Aufgabentext und skizziere die Bausteine, bevor ich zu schreiben beginne.
+
+Klausur-Satz: `Gestalten heisst Anreize setzen, nicht Wuensche befehlen: Wer die Reaktion der Akteure mitdenkt, wird vom Verkuender zum Handwerker der Politik.`

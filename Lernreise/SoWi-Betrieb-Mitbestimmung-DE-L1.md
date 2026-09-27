@@ -22,7 +22,7 @@ version: Lesson-v3
 
 > EPISODE 03 — Akt IV-V — Tarifarena und Demokratiewerkstatt — Auftrag von Apfelgrosshaendler Yusuf Demir: Marktstandmieten-Wucher im Hafenviertel.
 
-HOOK (Stadtrats-Krise, lies zuerst): EPISODE 03 — Akt IV-V — Tarifarena und Demokratiewerkstatt — Stadt Tycoon City ruft dich in den Krisenstab. Apfelgrosshaendler Yusuf Demir stuermt mit einer Eilmeldung ins Buero: Marktstandmieten-Wucher im Hafenviertel — und morgen entscheidet der Stadtrat. Der Markt schreit, die Warteschlange waechst, die Kasse zittert: Ohne deine Analyse kippt die Stadt vom Apfelparadies in den Schwarzmarkt. Dein Auftrag in dieser Episode: Uebersetze die Strassenszene in das heutige Thema Betrieb und Mitbestimmung. Sammle Belege, stelle den Sandkasten [balance-board] scharf und liefere dem Rat eine Klausur-Antwort, die einer Pruefungskommission standhaelt. Erste Spur: TARGET: Bringt auf dem Verhandlungsbrett beide Waagschalen in die Balance — Bedingung: Zustimmung beider Baenke, Loesung mit Kompromisslinie, Ergebnisprotokoll mit zwei Begruendungen je Seite. Wer den Mechanismus versteht, rettet den Haushalt — und vielleicht die Wahl. Der Countdown laeuft, das Radio berichtet live, die Opposition wartet nur auf deinen Fehler: Oeffne die Ziele, schnapp dir die Begriffe und beweise, dass Tycoon City regierbar bleibt.
+HOOK (Stadtrats-Krise, lies zuerst): EPISODE 03 — Akt IV-V — Tarifarena und Demokratiewerkstatt — Stadt Tycoon City ruft dich in den Krisenstab. Apfelgrosshaendler Yusuf Demir stuermt mit einer Eilmeldung ins Buero: Marktstandmieten-Wucher im Hafenviertel — und morgen entscheidet der Stadtrat. Realer Fall: Eine Supermarktkette behinderte die Gruendung eines Betriebsrats und musste nach dem Arbeitsgerichtsurteil Lohnnachteile ausgleichen. Parallel stoppten Arbeitnehmervertreter im Aufsichtsrat eines Autokonzerns eine Werksschliessung. Beide Szenen zeigen denselben Kern: Das Unternehmen ist kein Koenigreich des Eigentuemers, die Beschaeftigten haben gesetzliche Mitbestimmungsstimmen. Erste Spur: TARGET: Bringt auf dem Verhandlungsbrett beide Waagschalen in die Balance — Bedingung: Zustimmung beider Baenke, Loesung mit Kompromisslinie, Ergebnisprotokoll mit zwei Begruendungen je Seite. Oeffne die Ziele, schnapp dir die Begriffe und beweise, dass Tycoon City regierbar bleibt.
 
 ZIELE (drei messbare Ziele dieser Lektion):
 
@@ -46,11 +46,19 @@ Wem gehoert das Unternehmen: den Aktionaeren oder allen, die davon leben. Die An
 
 ### Fachbegriffe und Definitionen
 
-- **Shareholder-Ansatz:** Die Orientierung an der Rendite der Anteilseigner. Sie stellt Gewinn und Tempo in den Vordergrund und duldet Entlassung als Mittel.
-- **Stakeholder-Ansatz:** Die Orientierung an allen Betroffenen von Beschaeftigten bis Umwelt. Sie waegt Oekonomie, Soziales und Oekologie gemeinsam ab.
-- **Betriebsrat:** Die gewaehlte Vertretung der Belegschaft mit Recht auf Information, Beratung und Mitsprache. Sie gilt in Betrieben ab fuenf Beschaeftigten und traegt Friedenspflicht.
-- **Tarifautonomie:** Das Grundrecht, Lohn und Arbeitsbedingungen ohne Staat zu verhandeln. Gewerkschaften und Arbeitgeberverbaende tragen die Einigung, Streik bleibt letztes Mittel.
-- **Paritaetische Mitbestimmung:** Die gleiche Sitzteilung von Kapital und Arbeit im Aufsichtsrat grosser Unternehmen. Sie verhindert Eskalation, kostet aber Tempo.
+- **Betriebsrat**: Der Betriebsrat vertritt die Beschaeftigten eines Betriebs gegenueber dem Arbeitgeber. Er hat Informations-, Anhoerungs- und echte Mitbestimmungsrechte etwa bei Arbeitszeit und Ueberstunden. Seine Gruendung darf nicht behindert werden. Mechanismus: Bei zustimmungspflichtigen Massnahmen muss der Arbeitgeber erst verhandeln; ohne Zustimmung des Betriebsrats bleibt die Massnahme unwirksam. Klausur-Tipp: Nenne das konkrete Recht (Mitbestimmung statt nur Anhoerung) plus Beispiel Arbeitszeit.
+- **Aufsichtsrat**: Der Aufsichtsrat ueberwacht die Geschaeftsfuehrung grosser Unternehmen. Je nach Unternehmensgroesse sitzen Arbeitnehmervertreter mit am Tisch. Bei der Montanmitbestimmung gilt sogar die Paritaet. Mechanismus: Strategische Entscheidungen wie Fusionen oder Schliessungen brauchen Mehrheiten, in denen Arbeitnehmerstimmen zaehlen. Klausur-Tipp: Unterscheide betriebliche Mitbestimmung (Betriebsrat) und Unternehmensebene (Aufsichtsrat).
+- **Shareholder / Stakeholder**: Shareholder tragen Kapital und wollen Rendite. Stakeholder sind alle vom Unternehmen Betroffenen: Beschaeftigte, Kunden, Anwohner. Deutsche Mitbestimmung staerkt die Stakeholder-Seite gesetzlich. Mechanismus: Jede Entscheidung verteilt Gewinne und Risiken zwischen Kapital und Arbeit; Mitbestimmung verschiebt Verhandlungsmacht zur Arbeit. Klausur-Tipp: Nutze das Begriffspaar, um Interessenkonflikte sauber zu sortieren.
+- **Tarifautonomie**: Gewerkschaften und Arbeitgeberverbaende regeln Loehne ohne Staat. Der Staat setzt nur Rahmen wie Mindestlohn. Tarifvertraege gelten unmittelbar fuer Mitglieder. Mechanismus: Flaechentarifvertraege standardisieren Loehne einer Branche und verhindern Lohnunterbietung zwischen Betrieben. Klausur-Tipp: Tarifautonomie schuetzt vor Staatslohn, Mindestlohn ist die Ausnahme mit Begruendung.
+- **Kurzarbeit**: Bei Auftragsmangel kuenzt der Betrieb Stunden statt zu kuendigen. Die Agentur fuer Arbeit zahlt Kurzarbeitergeld als Teillohnausgleich. Beschaeftigung bleibt erhalten, Know-how bleibt im Haus. Mechanismus: Der Staat subventioniert den Erhalt von Jobs in der Krise; dafuer sinkt kurzfristig das Einkommen und steigt die Staatsausgabe. Klausur-Tipp: Deute Kurzarbeit als Markt-plus-Staat-Kompromiss mit Verlierer Beitragszahler.
+
+
+
+
+
+
+
+
 
 ### Wirkungsgefuege / Modell
 
@@ -116,6 +124,8 @@ Klausur-Satz: `Der Bahn-Streik zeigt die Tarifautonomie in Aktion: Arbeitskampf 
 
 VERGLEICH: Zwei Wege fuehren den Betrieb durch die Krise. Weg A setzt auf Effizienz mit agiler Leitung und schnellem Tempo. Weg B setzt auf Mitbestimmung nach Betriebsverfassungsgesetz mit Information, Mitsprache und Betriebsfrieden. Pruefe zuerst die Aufgabe, waehle dann den passenden Weg.
 
+DUELL Weg A (freier Markt) gegen Weg B (Staat greift ein): Weg A vertraut dem freien Arbeitsmarkt: Loehne folgen Angebot und Nachfrage, flexible Vertraege sichern Beschaeftigung. Weg B setzt auf Mitbestimmung und Tarifschutz: Betriebsrat, Aufsichtsrat und Tarifvertrag sichern Wuerde und Einkommen, kosten aber Flexibilitaet. Entscheide am Kriterium: Beschaeftigungsmenge spricht fuer A, Verteilungsgerechtigkeit fuer B.
+
 Weg A: Effizienz mit agiler Leitung. Klare Ansage, kurze Wege, schnelle Anpassung an Auftragsloch und Kostendruck. Staerke ist Tempo und Rettung der Rendite, Schwaeche sind Vertrauensverlust, Widerstand und stille Kuendigung.
 
 Weg B: Mitbestimmung mit Betriebsfrieden. Information frueh, Beratung ernst, Mitsprache wirksam, vom Kurzarbeitsmodell bis zur sozialvertraeglichen Loesung. Staerke sind Akzeptanz, Wissen der Belegschaft und stabiler Frieden, Schwaeche sind Zeitbedarf und Kompromisskosten.
@@ -134,9 +144,9 @@ Klausur-Satz: `Der Betriebsrat besitzt Mitbestimmungsrechte, aber kein Streikrec
 
 CHECK (drei Fragen mit Antworten):
 
-FRAGE: Worin unterscheiden sich Shareholder-Ansatz und Stakeholder-Ansatz. | ANTWORT: Der Shareholder-Ansatz stellt die Rendite der Anteilseigner in den Vordergrund, der Stakeholder-Ansatz beruecksichtigt alle Betroffenen des Unternehmenshandelns.
-FRAGE: Welche Rechte hat der Betriebsrat, und was darf er nicht. | ANTWORT: Er hat Informations-, Beratungs- und Mitspracherechte, darf aber nicht streiken wegen der Friedenspflicht.
-FRAGE: Was bedeutet Tarifautonomie. | ANTWORT: Loehne und Arbeitsbedingungen werden von Gewerkschaften und Arbeitgeberverbaenden ohne direkten staatlichen Eingriff ausgehandelt.
+- FRAGE: Worin unterscheiden sich Shareholder-Ansatz und Stakeholder-Ansatz. | ANTWORT: Der Shareholder-Ansatz stellt die Rendite der Anteilseigner in den Vordergrund, der Stakeholder-Ansatz beruecksichtigt alle Betroffenen des Unternehmenshandelns.
+- FRAGE: Welche Rechte hat der Betriebsrat, und was darf er nicht. | ANTWORT: Er hat Informations-, Beratungs- und Mitspracherechte, darf aber nicht streiken wegen der Friedenspflicht.
+- FRAGE: Was bedeutet Tarifautonomie. | ANTWORT: Loehne und Arbeitsbedingungen werden von Gewerkschaften und Arbeitgeberverbaenden ohne direkten staatlichen Eingriff ausgehandelt.
 
 Klausur-Satz: `Die paritätische Mitbestimmung verhindert Konflikteskalation, verlangsamt aber Entscheidungen.`
 
@@ -157,6 +167,7 @@ SITUATION: Wegen Auftragsueckgangs will die Geschaeftsleitung Personal entlassen
 AUFGABE (AFB III): Verfasse eine zusammenhaengende Darstellung von etwa 150 Woertern mit Kriterium, Anwendung und Urteil.
 RUBRIC (30 XP): These mit Kriterium SozialerFrieden (5 XP) | Darstellung von Informations- und Mitspracherechten plus Kurzarbeit (10 XP) | Abwaegung von Weg A gegen Weg B mit Tempo und Akzeptanz (10 XP) | Fazit mit Fachbegriffen und Empfehlung (5 XP)
 
+Klausur-Satz: `In der Fallloesung zaehlt erst die Ebenenunterscheidung - Betrieb, Unternehmen, Branche - dann die Abwaegung von Beschaeftigung gegen Schutz.`
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Was der Krisenstab lernt
 
 TAKEAWAY (Kernbotschaft in einem Kasten):
@@ -166,3 +177,5 @@ Takeaway-Satz: `Tempo rettet Quartale, Teilhabe rettet Belegschaften: Gute Betri
 REFLEXION (zwei Fragen):
 1. Wo hast du zuletzt Weg A gegen Weg B abgewogen: Hat dich schnelles Tempo oder breite Mitsprache staerker ueberzeugt, und an welchem Zeichen von Akzeptanz hast du das festgemacht.
 2. Welchen Fehlschluss willst du kuenftig vermeiden: Betriebsrat mit Gewerkschaft zu verwechseln oder Mitsprache mit Mitverwaltung, und mit welcher Prueffrage zu Rechten und Friedenspflicht sicherst du kuenftig dein Urteil.
+
+Klausur-Satz: `Mitbestimmung heisst nicht Harmonie, sondern institutionalisierter Konflikt: Der Streit bleibt, doch er bekommt Regeln, Stimmen und einen Tisch.`

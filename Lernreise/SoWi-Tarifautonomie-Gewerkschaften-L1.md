@@ -22,7 +22,7 @@ version: Lesson-v3
 
 > EPISODE 36｜Akt IV-V — Tarifarena und Demokratiewerkstatt｜召集人 Brauereichef Gottfried Lamm：Brauerei-Kartellverdacht im Altstadtbrunnen。
 
-HOOK 市长危机（先读剧情，再进 ZIELE）：【本集战役 EP36｜Akt IV-V — Tarifarena und Demokratiewerkstatt｜虚拟城邦 Tycoon City 告急】市长办公室深夜灯火通明，Brauereichef Gottfried Lamm 冲进来报告：Brauerei-Kartellverdacht im Altstadtbrunnen，而明天市议会就要投票。集市在喊、长队在排、国库在抖：苹果集市价格战一路烧到租金黑市，再烧到基尼天平与劳资谈判桌，本集正是“Tarifautonomie und Gewerkschaften”的现实引爆点。你的身份是市长直属经济改革规划委员：把街头危机翻译成考点，用沙盘 [balance-board] 拿出可验证的数值方案，再交出一份 Klausur 满分答卷稳住议会。通关线索：TARGET: Bringt auf dem Verhandlungsbrett beide Waagschalen in die Balance — Bedingung: Zustimmung beider Baenke, Loesung mit Kompromisslinie, Ergebnisprotokoll mit zwei Begruendungen je Seite. 上一集的结尾就是这一集的悬念——黑市账本、税改天平、劳资天平、选票天平，四座天平有一座倒了，城邦就停摆。电台正在直播，反对派等着挑错：先读 ZIELE，再啃术语，把传导机制画成你的作战地图。DE-Briefing: Episode 36 — Brauereichef Gottfried Lamm meldet Brauerei-Kartellverdacht im Altstadtbrunnen; der Stadtrat entscheidet morgen. Rette Tycoon City mit Analyse, Sandkasten und Klausur-Antwort zum Thema Tarifautonomie und Gewerkschaften.
+HOOK 市长危机（先读剧情，再进 ZIELE）：【本集战役 EP36｜Akt IV-V — Tarifarena und Demokratiewerkstatt｜虚拟城邦 Tycoon City 告急】市长办公室深夜灯火通明，Brauereichef Gottfried Lamm 冲进来报告：Brauerei-Kartellverdacht im Altstadtbrunnen，而明天市议会就要投票。你的身份不变：市长直属经济改革规划委员。真实情境切入：某机场地勤罢工三天，旅客骂、工会说“不罢没人谈”；隔壁行业雇主协会直接退出行业协议改单谈，覆盖率一年掉一块。罢工是宪法保护的最后语言，退出是市场的无声投票——劳资自治两头受压。通关线索：TARGET: Bringt auf dem Verhandlungsbrett beide Waagschalen in die Balance — Bedingung: Zustimmung beider Baenke, Loesung mit Kompromisslinie, Ergebnisprotokoll mit zwei Begruendungen je Seite. 先读 ZIELE，再啃术语，把传导机制画成你的作战地图。DE-Briefing: Episode 36 — Brauereichef Gottfried Lamm meldet Brauerei-Kartellverdacht im Altstadtbrunnen; der Stadtrat entscheidet morgen. Rette Tycoon City mit Analyse, Sandkasten und Klausur-Antwort zum Thema Tarifautonomie und Gewerkschaften.
 
 ZIELE (3 Ziele, nach 15 Minuten erreichbar):
 
@@ -40,11 +40,19 @@ Klausur-Satz: `Die Tarifautonomie entzieht Lohnfindung dem Staat und uebertraegt
 
 PRETRAINING (Kernbegriffe):
 
-- Tarifautonomie: Recht der Koalitionen, Loehne ohne Staatseingriff zu vereinbaren.
-- Flächentarifvertrag: Gilt fuer eine Branche in einer Region mit Mindeststandards.
-- Friedenspflicht: Verbot von Kampfhandlungen waehrend laufender Vertraeger.
-- Streik und Aussperrung: Scharfe Kampfmittel beider Seiten nach Scheitern und Urabstimmung.
-- Schlichtung: Vermittlungsversuch durch neutrale Person vor Eskalation.
+- **Tarifautonomie**（劳资自治）：工资劳资自己定、国家靠边站；集体力量替个人谈，行业协议防内卷。 Gewerkschaften und Verbaende regeln Loehne ohne Staat. Der Staat haelt Abstand und sichert nur Rahmen. Tarifnormen wirken unmittelbar auf Mitglieder. Mechanismus: Kollektive Macht ersetzt ohnmaechtige Einzelverhandlung; Flaechentarife verhindern Unterbietung. Klausur-Tipp: Betone Staatsferne plus Unmittelbarkeit.
+- **Gewerkschaft**（工会）：工会打包打工者：人多势众才有谈判桌，人少了桌子都晃。 Gewerkschaften buendeln Arbeitnehmerinteressen und verhandeln Tarife. Organisationsgrad bestimmt Verhandlungsmacht. Mitgliederschwund schwächt - schwaecht heisst macht schwach - die ganze Seite. Mechanismus: Drohpotenzial Streik macht den Tisch erst verhandlungsfaehig. Klausur-Tipp: Verbinde jede Machtfrage mit dem Organisationsgrad.
+- **Streik / Aussperrung**（罢工/闭厂）：罢工闭厂都是最后手段：先谈、再打、打得有比例，无辜旅客只是附带。 Streik ist kollektive Arbeitsniederlegung als letztes Mittel. Aussperrung antwortet auf Arbeitgeberseite. Beide muessen verhaeltnismaessig bleiben und duerfen Unbeteiligte nur begrenzt treffen. Mechanismus: Schaden drohen, um Einigung zu erzwingen - Ultima Ratio mit Gueteversuch davor. Klausur-Tipp: Pruefe immer erst Verhandlung, dann Kampfmittel, dann Verhaeltnismaessigkeit.
+- **Flächentarif (schreibe Flaechentarif)**（行业协议）：一行业一工资：防压价、省内耗；退群和无协议会员把网撕出口子。 Der Flaechentarif standardisiert Loehne einer Branche und Region. Er schuetzt vor Unterbietung und entlastet Betriebe vom Lohnkampf. Tarifflucht und OT-Mitgliedschaft loechern die Decke. Mechanismus: Einheitliche Boeden heben alle, Austritte senken die Bindung. Klausur-Tipp: Deute Erosion ueber Deckungsquote.
+- **Mindestlohn**（最低工资）：国家定底薪是破例：保穷忙族，但动自由定价和工会地盘，每次都要写理由。 Der Staat setzt einen Lohnboden als Ausnahme von der Autonomie. Er schuetzt vor Armut trotz Arbeit. Er greift in freie Lohnfindung und Tariflogik ein. Mechanismus: Boden oben stuetzt Einkommen, riskiert aber Jobs am unteren Rand. Klausur-Tipp: Werte ihn als Eingriff mit Begruendungslast.
+
+
+
+
+
+
+
+
 
 Klausur-Satz: `Friedenspflicht und Schlichtung zivilisieren den Konflikt, bevor Streik oder Aussperrung greifen.`
 
@@ -61,6 +69,12 @@ Akteure: Gewerkschaft (Arbeit) vs. Arbeitgeberverband (Kapital)
 Staat: Rahmen setzen, nicht Lohn diktieren (Art. 9 Abs. 3 GG)
 Machtfrage: Organisationsgrad bestimmt Durchsetzungskraft
 ```
+Kausalkette: Organisationsgrad bestimmt Macht, Flaechentarif setzt Boeden, Kampfmittel bleiben Ultima Ratio, Staat greift nur ausnahmsweise ein, Erosion zwingt zur Wahl: Reorganisation oder Staatsersatz. Autonomie heisst nicht staatenlos, sondern Staat auf Abstand.
+
+因果链：组织率定议价力→行业协议定底线→罢工/闭厂当最后语言→国家只在例外（底薪）出手→覆盖率 erosion 倒逼：要么重振组织，要么国家补位。自治不是没国家，而是有距离的国家。
+
+Lohnanker: Boden $w_{min} = 12$ Euro gegenueber Gleichgewicht $w_G$; Deckungsquote $d$ als Erosionsmass sinkt Jahr fuer Jahr.
+
 
 Klausur-Satz: `Der Organisationsgrad entscheidet ueber die Durchsetzungsfaehigkeit beider Koalitionen.`
 
@@ -95,6 +109,10 @@ VERGLEICH (erst Verfahren waehlen, dann loesen):
 
 VERGLEICH: Waehle erst das Verfahren — (i) Tarif-Verfahren (ueberbetriebliche Lohnfindung mit Kampfstufen) oder (ii) Betriebs-Verfahren (betriebliche Mitbestimmung durch Betriebsrat) — dann loesen.
 
+DUELL Weg A (freier Markt) gegen Weg B (Staat greift ein): Weg A setzt auf freien Lohnmarkt: Einzelvertraege und Wettbewerb finden marktgerechte Loehne, sichern Jobs und Flexibilitaet. Weg B setzt auf kollektiven Schutz: Tarif, Streikrecht und Mindestlohn sichern Wuerde gegen Machtgefaelle. Entscheide am Kriterium: Beschaeftigung und Flexibilitaet sprechen fuer A, Machtbalance und Existenzschutz fuer B.
+
+对决 Weg A（自由市场）vs Weg B（国家干预）：Weg A信自由工资：单谈竞争找市场价，保岗位保灵活。Weg B信集体保护：协议罢工权底薪，对冲权力差。判据：就业灵活站A，力量平衡生存站B。
+
 AUFGABE A: Die IG Metall fordert 6 Prozent mehr Lohn in der Region. Welches Verfahren passt?
 
 AUFGABE B: Der Betriebsrat verlangt Einsicht in die Personalplanung des Werks. Welches Verfahren passt?
@@ -109,9 +127,9 @@ Klausur-Satz: `Lohn der Branche gehoert an den Tariftisch, Mitwirkung im Betrieb
 
 CHECK (drei Fragen mit Antworten):
 
-FRAGE: Wo steht die Tarifautonomie im Grundgesetz? | ANTWORT: In Artikel 9 Absatz 3 als Koalitionsfreiheit mit Vereinbarungsvorrang.
-FRAGE: Wie lautet die Eskalationskette? | ANTWORT: Verhandlung, Schlichtung, Urabstimmung, Streik oder Aussperrung, neuer Vertrag.
-FRAGE: Was bedeutet Friedenspflicht? | ANTWORT: Verbot von Kampfmitteln waehrend ein Tarifvertrag laeuft.
+- FRAGE: Wo steht die Tarifautonomie im Grundgesetz? | ANTWORT: In Artikel 9 Absatz 3 als Koalitionsfreiheit mit Vereinbarungsvorrang.
+- FRAGE: Wie lautet die Eskalationskette? | ANTWORT: Verhandlung, Schlichtung, Urabstimmung, Streik oder Aussperrung, neuer Vertrag.
+- FRAGE: Was bedeutet Friedenspflicht? | ANTWORT: Verbot von Kampfmitteln waehrend ein Tarifvertrag laeuft.
 
 Klausur-Satz: `Ohne Friedenspflicht gaebe es keinen verlaesslichen Tarif, ohne Streikrecht keinen gleichgewichtigen.`
 
@@ -129,6 +147,7 @@ ROLLE: Du bist Redakteurin der Schuelerzeitung.
 SITUATION: Die Busfahrer kuendigen Warnstreiks an; Eltern fordern ein Verbot. Beurteile in circa 150 Woertern, ob ein Verbot mit Artikel 9 Absatz 3 vereinbar waere, und ordne Warnstreiks in die Eskalationskette ein.
 RUBRIC (30 XP): Grundrechtsbezug korrekt (8 XP) | Eskalationskette eingeordnet (10 XP) | Abwaegung mit Gemeinwohl (8 XP) | Fachsprachliche Darstellung (4 XP).
 
+Klausur-Satz: `Die Tarifklausur prueft erst Zustaendigkeit und Kampfmittelrangfolge und wuerdigt dann Erosion gegen Schutz am Massstab der Machtbalance.`
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Was der Krisenstab lernt
 
 TAKEAWAY:
@@ -139,3 +158,5 @@ Takeaway-Satz: `Tarifautonomie ersetzt Staatslohn durch Verhandlungslohn — Mac
 REFLEXION:
 1. Welcher Schritt fiel schwerer — die Organisationsanalyse (Schritt 4) oder die Ebenenwahl (Schritt 5)?
 2. Beim naechsten Mal frage ich zuerst nach der Ebene, weil sie ueber Tarif oder Betrieb entscheidet.
+
+Klausur-Satz: `Tarifautonomie ist Freiheit mit Zaehnen: Wer organisiert ist, verhandelt; wer allein steht, nimmt hin.`

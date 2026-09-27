@@ -22,7 +22,7 @@ version: Lesson-v3
 
 > EPISODE 04｜Akt IV-V — Tarifarena und Demokratiewerkstatt｜召集人 Marktaufseherin Greta Wolf：Warteschlange vor Bude 7 bei Regen。
 
-HOOK 市长危机（先读剧情，再进 ZIELE）：【本集战役 EP04｜Akt IV-V — Tarifarena und Demokratiewerkstatt｜虚拟城邦 Tycoon City 告急】市长办公室深夜灯火通明，Marktaufseherin Greta Wolf 冲进来报告：Warteschlange vor Bude 7 bei Regen，而明天市议会就要投票。集市在喊、长队在排、国库在抖：苹果集市价格战一路烧到租金黑市，再烧到基尼天平与劳资谈判桌，本集正是“Betrieb und Mitbestimmung”的现实引爆点。你的身份是市长直属经济改革规划委员：把街头危机翻译成考点，用沙盘 [balance-board] 拿出可验证的数值方案，再交出一份 Klausur 满分答卷稳住议会。通关线索：TARGET: Bringt auf dem Verhandlungsbrett beide Waagschalen in die Balance — Bedingung: Zustimmung beider Baenke, Loesung mit Kompromisslinie, Ergebnisprotokoll mit zwei Begruendungen je Seite. 上一集的结尾就是这一集的悬念——黑市账本、税改天平、劳资天平、选票天平，四座天平有一座倒了，城邦就停摆。电台正在直播，反对派等着挑错：先读 ZIELE，再啃术语，把传导机制画成你的作战地图。DE-Briefing: Episode 04 — Marktaufseherin Greta Wolf meldet Warteschlange vor Bude 7 bei Regen; der Stadtrat entscheidet morgen. Rette Tycoon City mit Analyse, Sandkasten und Klausur-Antwort zum Thema Betrieb und Mitbestimmung.
+HOOK 市长危机（先读剧情，再进 ZIELE）：【本集战役 EP04｜Akt IV-V — Tarifarena und Demokratiewerkstatt｜虚拟城邦 Tycoon City 告急】市长办公室深夜灯火通明，Marktaufseherin Greta Wolf 冲进来报告：Warteschlange vor Bude 7 bei Regen，而明天市议会就要投票。你的身份不变：市长直属经济改革规划委员。真实判例切入：某连锁超市被曝长期阻挠成立职工委员会（Betriebsrat），劳工法院介入后公司补发阻挠期间的工资损失；同一时期，某车企监事会里劳方代表否决了关厂方案。两个现场同一考点：企业不是老板一个人的王国，劳方有法定共决席位。通关线索：TARGET: Bringt auf dem Verhandlungsbrett beide Waagschalen in die Balance — Bedingung: Zustimmung beider Baenke, Loesung mit Kompromisslinie, Ergebnisprotokoll mit zwei Begruendungen je Seite. 先读 ZIELE，再啃术语，把传导机制画成你的作战地图。DE-Briefing: Episode 04 — Marktaufseherin Greta Wolf meldet Warteschlange vor Bude 7 bei Regen; der Stadtrat entscheidet morgen. Rette Tycoon City mit Analyse, Sandkasten und Klausur-Antwort zum Thema Betrieb und Mitbestimmung.
 
 ZIELE (3条，本节15分钟学完即可做到——先读中文，再记德语)：
 
@@ -38,11 +38,19 @@ PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→�
 
 中文在上，德语在下：
 
-- 企业委员会 — Betriebsrat：代表职工，有知情、咨询与共决权，但无罢工权。
-- 监事会 — Aufsichtsrat：监督董事会，职工代表按企业规模分级参与。
-- 股东 / 相关人 — Shareholder / Stakeholder：前者是出资人，后者是所有受影响者。
-- 劳资自治 — Tarifautonomie：工资与劳动条件由工会和雇主协会自行谈判，国家不直接定。
-- 短工制 — Kurzarbeit：危机时缩短工时以保岗位，由国家补贴部分工资。
+- **Betriebsrat**（职工委员会）：职工委员会是企业内的法定劳方代表，对工时、加班等有真正的共决权；阻挠建会本身违法。 Der Betriebsrat vertritt die Beschaeftigten eines Betriebs gegenueber dem Arbeitgeber. Er hat Informations-, Anhoerungs- und echte Mitbestimmungsrechte etwa bei Arbeitszeit und Ueberstunden. Seine Gruendung darf nicht behindert werden. Mechanismus: Bei zustimmungspflichtigen Massnahmen muss der Arbeitgeber erst verhandeln; ohne Zustimmung des Betriebsrats bleibt die Massnahme unwirksam. Klausur-Tipp: Nenne das konkrete Recht (Mitbestimmung statt nur Anhoerung) plus Beispiel Arbeitszeit.
+- **Aufsichtsrat**（监事会）：监事会管大公司战略监督，大企业里劳方有席位，煤炭钢铁业甚至对半开。 Der Aufsichtsrat ueberwacht die Geschaeftsfuehrung grosser Unternehmen. Je nach Unternehmensgroesse sitzen Arbeitnehmervertreter mit am Tisch. Bei der Montanmitbestimmung gilt sogar die Paritaet. Mechanismus: Strategische Entscheidungen wie Fusionen oder Schliessungen brauchen Mehrheiten, in denen Arbeitnehmerstimmen zaehlen. Klausur-Tipp: Unterscheide betriebliche Mitbestimmung (Betriebsrat) und Unternehmensebene (Aufsichtsrat).
+- **Shareholder / Stakeholder**（股东/利益相关者）：股东出钱要回报，利益相关者（员工、客户、社区）被影响要发言；德国共决给劳方法定话语权。 Shareholder tragen Kapital und wollen Rendite. Stakeholder sind alle vom Unternehmen Betroffenen: Beschaeftigte, Kunden, Anwohner. Deutsche Mitbestimmung staerkt die Stakeholder-Seite gesetzlich. Mechanismus: Jede Entscheidung verteilt Gewinne und Risiken zwischen Kapital und Arbeit; Mitbestimmung verschiebt Verhandlungsmacht zur Arbeit. Klausur-Tipp: Nutze das Begriffspaar, um Interessenkonflikte sauber zu sortieren.
+- **Tarifautonomie**（劳资自治谈判）：工资由工会和雇主协会自己谈，国家只定底线；行业协议防恶性压价。 Gewerkschaften und Arbeitgeberverbaende regeln Loehne ohne Staat. Der Staat setzt nur Rahmen wie Mindestlohn. Tarifvertraege gelten unmittelbar fuer Mitglieder. Mechanismus: Flaechentarifvertraege standardisieren Loehne einer Branche und verhindern Lohnunterbietung zwischen Betrieben. Klausur-Tipp: Tarifautonomie schuetzt vor Staatslohn, Mindestlohn ist die Ausnahme mit Begruendung.
+- **Kurzarbeit**（短工制）：订单不足先减工时不裁员，国家补部分工资：保岗位花社保的钱。 Bei Auftragsmangel kuenzt der Betrieb Stunden statt zu kuendigen. Die Agentur fuer Arbeit zahlt Kurzarbeitergeld als Teillohnausgleich. Beschaeftigung bleibt erhalten, Know-how bleibt im Haus. Mechanismus: Der Staat subventioniert den Erhalt von Jobs in der Krise; dafuer sinkt kurzfristig das Einkommen und steigt die Staatsausgabe. Klausur-Tipp: Deute Kurzarbeit als Markt-plus-Staat-Kompromiss mit Verlierer Beitragszahler.
+
+
+
+
+
+
+
+
 
 Klausur-Satz: `Während der Shareholder-Ansatz die Rendite der Anteilseigner maximiert, berücksichtigt der Stakeholder-Ansatz alle Betroffenen des Unternehmenshandelns.`
 
@@ -73,6 +81,10 @@ ENTDECKEN（1概念 + 1文字图解）：
         Flaechentarif ... bei Scheitern: Streik (letztes Mittel)
         Kurzarbeit = Jobs sichern statt entlassen
 ```
+Kausalkette: Machtgefälle zwischen Kapital und Arbeit, Ausgleich durch Mitbestimmung auf drei Ebenen, Kostenteilung in der Krise. Der Betriebsrat regelt den Alltag, der Aufsichtsrat die Strategie, die Tarifautonomie die Branche. Konflikte verschwinden nie, sie werden institutionalisiert: Streik und Aussperrung bleiben Ultima Ratio.
+
+因果链：劳资力量不对等→法定共决补权力（企业内职工委员会管日常，监事会管战略，行业层面靠劳资自治）→危机时短工制分担成本。冲突从不消失，只被制度化：罢工与闭厂是最后手段，平时靠谈判桌消化。
+
 
 Klausur-Satz: `Mitbestimmung kauft sozialen Frieden mit Tempo — ob der Preis in der Transformation 4.0 noch tragbar ist, entscheidet über ihre Zukunft.`
 
@@ -119,6 +131,10 @@ VERGLEICH辨别实验（双向辨析：模式眼 vs. 程序眼）：
 
 VERGLEICH: Wähle erst das Verfahren —【选程序】先判断材料问的是 (i) Modell-Verfahren（企业为谁经营、该对谁负责：Shareholder vs. Stakeholder）还是 (ii) Mitbestimmungs-Verfahren（职工怎样参与、走什么程序：Betriebsrat, Aufsichtsrat, Tarif, Streik）—— dann lösen.
 
+DUELL Weg A (freier Markt) gegen Weg B (Staat greift ein): Weg A vertraut dem freien Arbeitsmarkt: Loehne folgen Angebot und Nachfrage, flexible Vertraege sichern Beschaeftigung. Weg B setzt auf Mitbestimmung und Tarifschutz: Betriebsrat, Aufsichtsrat und Tarifvertrag sichern Wuerde und Einkommen, kosten aber Flexibilitaet. Entscheide am Kriterium: Beschaeftigungsmenge spricht fuer A, Verteilungsgerechtigkeit fuer B.
+
+对决 Weg A（自由市场）vs Weg B（国家干预）：Weg A信自由劳动力市场：工资随供求走，灵活用工保岗位。Weg B信共决与协议保护：职工委员会、监事会席位、行业工资协议保尊严和收入，但牺牲灵活性。判据：岗位数量站A，分配正义站B。
+
 AUFGABE A (AFB II, 8 BE)：Material 2 (Sachtext) berichtet von einem Unternehmen, das trotz sinkender Rendite in Weiterbildung investiert und Lieferanten faire Preise zahlt. Erläutern Sie, welchem Leitbild dieses Handeln folgt.
 
 AUFGABE B (AFB II, 8 BE)：Eine Karikatur zeigt einen Betriebsrat, der mit einem Megafon dasteht, während daneben ein Schild „Friedenspflicht" hängt. Erläutern Sie, welche Rechte der Betriebsrat hat und was ihm fehlt.
@@ -133,9 +149,9 @@ Klausur-Satz: `Der Betriebsrat besitzt Mitbestimmungsrechte, aber kein Streikrec
 
 CHECK检索默写（自测 3 题，与答案配对）：
 
-FRAGE: Worin unterscheiden sich Shareholder-Value und Stakeholder-Ansatz? | ANTWORT: Der Shareholder-Ansatz maximiert die Rendite der Anteilseigner, der Stakeholder-Ansatz berücksichtigt alle Betroffenen des Unternehmenshandelns.
-FRAGE: Welche Rechte hat der Betriebsrat, und was darf er nicht? | ANTWORT: Er hat Informations-, Beratungs- und Mitbestimmungsrechte, darf aber nicht streiken (Friedenspflicht).
-FRAGE: Was bedeutet Tarifautonomie? | ANTWORT: Löhne und Arbeitsbedingungen werden von Gewerkschaften und Arbeitgeberverbänden ohne direkten staatlichen Eingriff ausgehandelt.
+- FRAGE: Worin unterscheiden sich Shareholder-Value und Stakeholder-Ansatz? | ANTWORT: Der Shareholder-Ansatz maximiert die Rendite der Anteilseigner, der Stakeholder-Ansatz berücksichtigt alle Betroffenen des Unternehmenshandelns.
+- FRAGE: Welche Rechte hat der Betriebsrat, und was darf er nicht? | ANTWORT: Er hat Informations-, Beratungs- und Mitbestimmungsrechte, darf aber nicht streiken (Friedenspflicht).
+- FRAGE: Was bedeutet Tarifautonomie? | ANTWORT: Löhne und Arbeitsbedingungen werden von Gewerkschaften und Arbeitgeberverbänden ohne direkten staatlichen Eingriff ausgehandelt.
 
 Klausur-Satz: `Die paritätische Mitbestimmung verhindert Konflikteskalation, verlangsamt aber Entscheidungen.`
 
@@ -159,6 +175,7 @@ SITUATION: Wegen Auftragsrückgangs will die Geschäftsleitung Personal entlasse
 
 RUBRIC (30 XP): Benennung der Instrumente (Kurzarbeit vs. Entlassung) und der Rolle des Betriebsrats (5 XP) | Analyse der Mitbestimmungsrechte und der Interessen der Belegschaft (10 XP) | Abwägung der Folgen für Beschäftigte und Unternehmen (10 XP) | Kriteriengeleitetes Urteil (z. B. Kriterium soziale Sicherheit) (5 XP).
 
+Klausur-Satz: `In der Fallloesung zaehlt erst die Ebenenunterscheidung - Betrieb, Unternehmen, Branche - dann die Abwaegung von Beschaeftigung gegen Schutz.`
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Was der Krisenstab lernt
 
 TAKEAWAY 1盒（核心总结）：
@@ -169,3 +186,5 @@ Takeaway-Satz: `Mitbestimmung ist die betriebliche Fassung der Sozialen Marktwir
 REFLEXION 2问：
 1. 过程自省：Welcher Schritt fiel schwerer — die Unterscheidung von Betriebsrat und Gewerkschaft (Schritt 3) oder die Wahl des Verfahrens im Vergleich (Schritt 5)?
 2. 元认知计划：Beim nächsten Mal prüfe ich zuerst, ob das Material eine Leitbildfrage oder eine Verfahrensfrage stellt, und wähle danach das Verfahren.
+
+Klausur-Satz: `Mitbestimmung heisst nicht Harmonie, sondern institutionalisierter Konflikt: Der Streit bleibt, doch er bekommt Regeln, Stimmen und einen Tisch.`
