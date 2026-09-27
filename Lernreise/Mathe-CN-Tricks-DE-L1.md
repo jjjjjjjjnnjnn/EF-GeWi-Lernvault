@@ -15,7 +15,7 @@ version: Lesson-v3
 
 <!-- Lesson v3: 8 Schritte plus Anekdote und Fehlvorstellung; Fehlvorstellung zwischen Schritt 6 und 7 (Parser-Skip); interaktives [Werkzeug: <id>]; Gating: check/szenario nicht bestanden = Weiter gesperrt; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
-## Schritt 1 — entdecken
+## Schritt 1 — entdecken: Ziele & Phänomen-Einstieg
 
 ZIELE (drei messbare Ziele dieser Lektion):
 
@@ -25,8 +25,11 @@ ZIELE (drei messbare Ziele dieser Lektion):
 
 ### Hook / Phaenomen
 
-Im Jahr 1990 knobelte ein Ingenieur an $2^{30}$ gegen $3^{20}$ — kein Taschenrechner zur Hand, nur Potenzgesetze. Wer stumpf multipliziert, scheitert; wer $8^{10}$ gegen $9^{10}$ sieht, entscheidet in Sekunden. Heuristiken sind solche Abkuerzungen: schnell auf dem Schmierpapier, wertlos ohne Beweis in der Reinschrift. Wo hilft der Trick — und wo wird er zur Falle?
+没有计算器怎么比较二的三十次方和三的二十次方的大小：直接乘开算到手酸，换个角度几秒钟就出答案。把二的三十次方看成八的十次方、三的二十次方看成九的十次方，指数拉平之后大小一目了然。中国学生喜欢这种快速做法，德国卷面却要求草稿纸猜测加正稿证明。本节把六种捷径全部贴上条件标签，让快方法只帮忙找方向而不取代证明。
 
+Im Jahr 1990 knobelte ein Ingenieur an 2 hoch 30 gegen 3 hoch 20 — kein Taschenrechner zur Hand, nur Potenzgesetze; wer 8 hoch 10 gegen 9 hoch 10 sieht, entscheidet in Sekunden.
+
+机制铺垫双语：机制是草稿纸用启发式猜测、正稿用标准路径证明，条件一破立即切换。Der Mechanismus trennt Suche und Beweis: Schmierpapier zur Vermutung, Reinschrift mit Potenzgesetzen und Monotonie zur Sicherung.
 ### Fachbegriff & Definition
 
 Fuer Heuristiken gilt: **Schnellverfahren dienen als Orientierung auf dem Schmierpapier, waehrend die Reinschrift den vollstaendigen Standardweg verlangt**. Jede **Heuristik besitzt eine Bedingung; bei verletzter Bedingung wird sofort zum Standardweg gewechselt**. Der **Vergleich $2^{30} = 8^{10}$ gegen $3^{20} = 9^{10}$ mit $8 < 9$ liefert $a < b$** nur als belegte Kette, nicht als Behauptung.
@@ -41,7 +44,7 @@ Schritt C: Standardweg in Reinschrift mit Satz sichern.
 
 Klausur-Satz: `Heuristische Schnellverfahren dienen als Orientierung auf dem Schmierpapier, waehrend die Reinschrift den vollstaendigen Standardweg verlangt.`
 
-## Schritt 2 — entdecken
+## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
 
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
@@ -51,11 +54,11 @@ Ein Schueler setzt $x = 0$ ein und raet die Loesung — Treffer. Beim naechsten 
 
 ### Fachbegriffe & Definitionen
 
-- **Spezialwert-Methode:** $0$, $1$ oder $-1$ einsetzen zur Vermutung mit anschliessendem Beweis.
-- **Ausschlussverfahren:** Faelle ueber Definitionsbereich, Vorzeichen und Grenzverhalten streichen.
-- **Skizze und Veranschaulichung:** Graph zeichnen und Problem in Schnittpunkte plus Monotonie uebersetzen.
-- **Parametertrennung:** Parameter isolieren und Extremwert der Gegenseite bestimmen.
-- **Pruefsatz:** Deutscher Schlusssatz mit Ergebnis plus Gueltigkeitsbereich.
+- **Spezialwert-Methode: (特殊值法)** $0$, $1$ oder $-1$ einsetzen zur Vermutung mit anschliessendem Beweis.
+- **Ausschlussverfahren: (排除法)** Faelle ueber Definitionsbereich, Vorzeichen und Grenzverhalten streichen.
+- **Skizze und Veranschaulichung: (草图法)** Graph zeichnen und Problem in Schnittpunkte plus Monotonie uebersetzen.
+- **Parametertrennung: (参数分离)** Parameter isolieren und Extremwert der Gegenseite bestimmen.
+- **Pruefsatz: (检验句)** Deutscher Schlusssatz mit Ergebnis plus Gueltigkeitsbereich.
 
 ### Wirkungsgefuege / Modell
 
@@ -63,42 +66,28 @@ Die Kette lautet: Trick waehlen, Bedingung pruefen, Vermutung per Standard siche
 
 Klausur-Satz: `Jedes Schnellverfahren ist nur eine Abkuerzung; ohne Bedingungspruefung gibt es in der Klausur keine Punkte.`
 
-## Schritt 3 — entdecken
+## Schritt 3 — entdecken: Kernkonzept & Wirkungsmodell
 
-TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
+EXPERIMENTELLE ERKUNDUNG (PhET Sandbox, erst spielen, dann deuten):
 
-### Hook / Phaenomen
+### Hook & Phaenomen
 
-Zwei Loesungen zu $a = 2^{30}$ gegen $b = 3^{20}$: eine schreibt $a < b$ ohne Weg, eine zeigt $8^{10} < 9^{10}$ mit Gesetzen. Beide nennen dasselbe Ergebnis — nur eine erhaelt Punkte. Warum zaehlt in der Klausur nicht die Vermutung, sondern die belegte Kette — und wie sieht sie in drei Zeilen aus?
+Welche Zahl ist groesser, $2^{30}$ oder $3^{20}$, ganz ohne Rechner. Intuitiv wirkt die groessere Basis $3$ staerker, doch der groessere Exponent $30$ zieht dagegen. Warum entscheidet die gemeinsame Potenz $10$ sofort ueber $a < b$?
 
-### Fachbegriff & Definition
+### Spiel-Aufgabe / Challenge
 
-Fuer die Klausur gilt: **Eine heuristische Vermutung wird erst durch den Standardweg zur belegten Loesung; ohne Beleg bleibt sie punktlos**. Der **Potenzvergleich $8^{10} < 9^{10}$ aus $8 < 9$ sichert $a < b$ ueber $(a^m)^n = a^{mn}$**. Jede **Kurzregel wird nur mit genannter Bedingung benutzt und kurz begruendet**.
+Oeffne die Sandbox und ziehe den Slider Exponent von $1$ bis $10$ fuer die Basen $8$ und $9$. Beobachte die Kurven $8^n$ und $9^n$ sowie die Anzeige $2^{30} = 8^{10}$ und $3^{20} = 9^{10}$. Lies das Wachstum ab und erkenne, ab wann $9^n$ dauerhaft vorne liegt.
 
-### Wirkungsgefuege / Modell
+### Aha-Moment & Gesetz
 
-Der Tiefenweg belegt $a < b$ in drei Zeilen: $a = 2^{30} = (2^3)^{10} = 8^{10}$ per $(a^m)^n$; $b = 3^{20} = (3^2)^{10} = 9^{10}$ ebenso; aus $8 < 9$ folgt $8^{10} < 9^{10}$ per Monotonie der Potenz. Damit $a < b$ mit Gesetzen statt Behauptung. Ebenso Wege je Sekunde $1{,}0/3{,}0/5{,}0\,\mathrm{m}$ wie $1:3:5$ aus $s_n = a(2n-1)/2$ nur mit Start aus Ruhe — ohne diese Bedingung ist die Regel falsch.
-
-Schritt A: Umformen per Gesetzen auf gleiche Exponenten.
-Schritt B: Basisvergleich $8 < 9$ explizit nennen.
-Schritt C: Monotonieschluss zu $a < b$ als Satz schreiben.
+Die Kette lautet Potenzgesetz gegen Vergleich: $(a^m)^n = a^{mn}$ plus Monotonie. Handschriftlich gilt $2^{30} = (2^3)^{10} = 8^{10}$ und $3^{20} = (3^2)^{10} = 9^{10}$. Mit $8 < 9$ folgt $8^{10} < 9^{10}$, also $a < b$. Der Trick hebt beide Zahlen auf denselben Exponenten $10$ und macht den Vergleich trivial. Danach sichert der Standardweg mit Logarithmus das Ergebnis.
 
 ```diagram
-   Verfahren          Bedingung                        Rolle
-   =================  ===============================  ================
-   1 Spezialwert      allgemeine Aussage trifft        Vermutung bilden
-                       auch Spezialfall
-   2 Ausschluss       Bereich, Zeichen oder            Faelle streichen
-                       Verhalten entscheidbar
-   3 Skizze           Monotonie und Schnitt            Nullstellen
-                       skizzierbar                      zaehlen
-   4 Vieta            nur quadratisch ax^2+bx+c=0      Wurzeln pruefen
-   5 AM-GM            beide Terme positiv,             Minimum schaetzen
-                       Produkt fest
-   6 Parametertrenn.  Parameter isolierbar             Maximum suchen
-   =================  ===============================  ================
-   Beleg: 2^30=8^10 < 9^10=3^20 > a<b mit (a^m)^n
-   Heuristik = Schmierpapier (Suche); Standardweg = Reinschrift (Punkte)
+  8n gegen 9n > n=1 bis 10
+  +--------------------------> n
+  230=810 | 320=910
+  8<9 > 810<910 > a<b
+  gleicher Exponent > direkter Vergleich
 ```
 
 Klausur-Satz: `Ich wende ein heuristisches Verfahren zur Orientierung an und belege das Ergebnis anschliessend mit dem Standardweg.`
@@ -109,24 +98,24 @@ Das Wort Heuristik stammt vom griechischen $heuriskein$, finden oder entdecken. 
 
 Bezug zum Konzept: `Schnellverfahren sind Heuristiken: Sie finden eine Vermutung, den Beweis liefert der Standardweg.`
 
-## Schritt 4 — ausprobieren
+## Schritt 4 — ausprobieren: Interaktive Praxis & Labor
 
-BEISPIEL (geleitete Aufgabe mit Werkzeug):
+BEISPIEL (Sandbox Level mit Werkzeug):
 
-[Werkzeug: lego]
+[Werkzeug: tangent-slider]
 
-AUFGABE (anwenden, AFB II): Vergleichen Sie die Zahlen $a = 2^{30}$ und $b = 3^{20}$ mit der Spezialwert-Idee (gleiche Exponenten suchen) und bestaetigen Sie das Ergebnis durch eine Abschaetzung.
+AUFGABE (Levelziel, AFB II): Knacke den Vergleich: Stelle in der Sandbox (tangent-slider) die Basen 8 und 9 ein, ziehe den Slider Exponent von 1 bis 10 und bestaetige $8^{10}$ gegen $9^{10}$, und beweise dann ohne Rechner, dass $2^{30} < 3^{20}$ gilt. Ergaenze die Probe mit Logarithmus.
 
 HILFE:
-1. Schritt 1: Beide Zahlen als Potenz mit demselben Exponenten schreiben (Potenzgesetze).
-2. Schritt 2: Die Basen vergleichen und die Monotonie der Potenzfunktion nutzen.
-3. Schritt 3: Ergebnis als Pruefsatz formulieren.
+1. Forme mit $(a^m)^n = a^{mn}$ um zu $2^{30} = 8^{10}$ und $3^{20} = 9^{10}$.
+2. Vergleiche $8 < 9$ zu $8^{10} < 9^{10}$, also $a < b$.
+3. Bestaetige mit $30 \ln 2 \approx 20{,}79$ gegen $20 \ln 3 \approx 21{,}97$.
 
-MUSTERLOESUNG: Es gilt $a = 2^{30} = (2^3)^{10} = 8^{10}$ und $b = 3^{20} = (3^2)^{10} = 9^{10}$. Da die Funktion $x^{10}$ fuer $x > 0$ monoton waechst und $8 < 9$ gilt, folgt $8^{10} < 9^{10}$, also $a < b$. Das heuristische Verfahren liefert hier direkt das Ergebnis, weil beide Zahlen auf denselben Exponenten $10$ gebracht werden koennen; die Monotonie der Potenzfunktion begruendet den Schluss sauber.
+MUSTERLOESUNG: Sandbox $8^{10} = 1073741824$ gegen $9^{10} = 3486784401$ zeigt $a < b$. Rechnung $2^{30} = (2^3)^{10} = 8^{10}$ und $3^{20} = (3^2)^{10} = 9^{10}$. Wegen $8 < 9$ und Monotonie folgt $8^{10} < 9^{10}$, also $a < b$. Probe $30 \ln 2 \approx 20{,}79 < 21{,}97 \approx 20 \ln 3$ bestaetigt mit dem Standardweg, der Trick diente nur der Orientierung.
 
 Klausur-Satz: `Da 2^30 = 8^10 und 3^20 = 9^10 gilt und 8 < 9 ist, folgt a < b.`
 
-## Schritt 5 — ausprobieren
+## Schritt 5 — ausprobieren: Verfahrensvergleich & Abgrenzung
 
 VERGLEICH (Wahl des Verfahrens, A gegen B):
 
@@ -141,7 +130,7 @@ ANTWORT: A erfordert Verfahren (i): Setzt man $x = 3$ ein, ergibt sich $3 + 9/3 
 
 Klausur-Satz: `Ein Spezialwert liefert nur eine Vermutung; erst die AM-GM-Abschaetzung mit Gleichheitsbedingung beweist das Minimum.`
 
-## Schritt 6 — check
+## Schritt 6 — check: Verständnisprüfung
 
 CHECK (drei Fragen mit Antworten):
 
@@ -160,14 +149,14 @@ Klausur-Satz: `Heuristische Verfahren liefern Vermutungen und Kontrollen, den Be
 2. Fehlkonzept: Beim Trennen eines Parameters darf eine Ungleichung bedenkenlos mit einem $x$-haltigen Term multipliziert werden.
    Korrektur-Satz: `Beim Multiplizieren einer Ungleichung mit einem Term muss dessen Vorzeichen geprueft werden, da sich sonst das Ungleichheitszeichen umdreht.`
 
-## Schritt 7 — szenario
+## Schritt 7 — szenario: Klausurtransfer & Rubric
 
 ROLLE: Du bist Tutor in einem Mathe-Kurs und sollst eine Strategiekarte erstellen.
 SITUATION: Ein Mitschueler will in der Klausur nur mit heuristischen Schnellverfahren arbeiten und keine Standardwege schreiben. Beurteile seine Strategie in einer zusammenhaengenden Darstellung (circa 150 Woerter) und erlaeutere an zwei Beispielen (Spezialwert und AM-GM), wann ein Schnellverfahren erlaubt ist und wann der Standardweg zwingend ist.
 AUFGABE (beurteilen, AFB III): Verfasse eine zusammenhaengende Darstellung von etwa 150 Woertern mit Problemanalyse, zwei Beispielen und Fazit.
 RUBRIC (30 XP): Benennung des Grundproblems (Heuristik ersetzt keinen Beweis) (5 XP) | Beispiel Spezialwert: Vermutung gegen Beweis (10 XP) | Beispiel AM-GM: Positivitaet plus Gleichheitsbedingung (10 XP) | Fazit zur Arbeitsteilung von Schmierpapier und Reinschrift (5 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY (Kernbotschaft in einem Kasten):
 

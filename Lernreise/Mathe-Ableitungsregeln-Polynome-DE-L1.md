@@ -15,8 +15,7 @@ version: Lesson-v3
 
 <!-- Lesson v3: 8 Schritte plus Anekdote und Fehlvorstellung; Fehlvorstellung zwischen Schritt 6 und 7 (Parser-Skip); interaktives [Werkzeug: <id>]; Gating: check/szenario nicht bestanden = Weiter gesperrt; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
-## Schritt 1 — entdecken
-
+## Schritt 1 — entdecken: Ziele & Phänomen-Einstieg
 ZIELE (drei messbare Ziele dieser Lektion):
 
 1. Du kannst Potenzregel, Faktorregel und Summenregel je an einem Beispiel vormachen und die Bedingung nennen: Potenzregel nur fuer $x^n$, Faktorregel nur fuer konstanten Faktor, Summenregel nur gliedweise.
@@ -25,106 +24,91 @@ ZIELE (drei messbare Ziele dieser Lektion):
 
 ### Hook / Phaenomen
 
-Im Jahr 1999 vergluehte der Mars Climate Orbiter in der Marsatmosphaere — ein Einheitenfehler, keine Raketenpanne. Die Software rechnete mit falschen Faktoren, die Flugbahn driftete ab, 125 Millionen Dollar vergluehten. In der Analysis passiert der gleiche Fehlertyp im Kleinen: Wer beim Ableiten den Exponenten nicht verringert oder eine Konstante mitschleppt, erzeugt eine falsche Steigung — und jede weitere Rechnung mit Tangente oder Extrempunkt kippt. Wie schuetzt ein festes Regelschema vor genau diesem Faktorfehler? Und warum muss die Konstante $-2$ zu $0$ werden, obwohl sie im Term steht?
+Ein Kuchenrezept mit fuenf Zutaten wuerde niemand in einem einzigen Schritt backen, man arbeitet Zutat fuer Zutat nach festen Regeln. Genauso zerlegt die Analysis ein Polynom in seine Summanden und leitet jeden Term nach einer einzigen simplen Regel ab. Nimm $f(x)=4x^3-5x^2+7x-2$ und staune: Aus dem bedrohlich wirkenden Term wird nach drei kleinen Regeln die harmlose Ableitung $f'(x)=12x^2-10x+7$. Wer stattdessen jedes Mal die muehsame h-Methode startet, verschwendet in der Klausur kostbare Minuten und riskiert Rechenfehler. Wer Potenzregel, Faktorregel und Summenregel sicher beherrscht, differenziert jedes Polynom in Sekunden und erkennt sofort, dass Konstanten beim Ableiten spurlos verschwinden. Der folgende Weg fuehrt vom alltaeglichen Staunen zur exakten Rechnung: erst das Phaenomen beobachten, dann die Begriffe klaeren, schliesslich das Modell pruefen und im Sandbox-Labor selbst entdecken, warum jede Regel genau so und nicht anders funktioniert.
 
 ### Fachbegriff & Definition
 
-Nach dem NRW-Kernlehrplan Analysis ist die **Ableitung $f'(x)$ die lokale Aenderungsrate, also die Steigung der Tangente im Punkt $P(x, f(x))$**. Fuer ganzrationale Funktionen gilt die **Potenzregel $(x^n)' = n \cdot x^{n-1}$**, die **Faktorregel $(c \cdot f)' = c \cdot f'$ fuer konstantes $c$** und die **Summenregel $(f+g)' = f' + g'$**. Eine **konstante Funktion $f(x) = c$ besitzt die Ableitung $f'(x) = 0**, weil ihr Graph eine waagerechte Gerade mit Steigung null ist.
+Nach dem NRW-Kernlehrplan gilt der untenstehende Klausur-Satz als verbindliche Definition dieser Lektion. Er fasst das Phaenomen in exakter Fachsprache und bildet die Grundlage fuer jede Deutung.
 
 ### Wirkungsgefuege / Modell
 
-Das Verfahren laeuft in drei Schritten: Zerlegen, Einzelableiten, Addieren. Erstens wird $f$ als Summe von Monomen $c_k x^k$ gelesen. Zweitens wird jedes Monom mit $c_k \cdot k \cdot x^{k-1}$ abgeleitet — Koeffizient mal Exponent, Exponent minus eins. Drittens addiert die Summenregel alle Teile, Konstanten fallen als $0$ weg.
-
-Schritt A: $f(x) = 4x^3 - 5x^2 + 7x - 2$ in vier Summanden teilen.
-Schritt B: $4x^3 \to 4 \cdot 3x^2 = 12x^2$, $-5x^2 \to -5 \cdot 2x = -10x$, $7x \to 7$, $-2 \to 0$.
-Schritt C: Addieren zu $f'(x) = 12x^2 - 10x + 7$, dann $f'(2) = 12 \cdot 4 - 20 + 7 = 35$.
+Der Mechanismus verbindet Alltag und Formel: Das Phaenomen liefert die Anschauung, die Definition liefert die Sprache und das Wirkungsmodell in Schritt 3 liefert die Kausalkette. Wer alle drei Ebenen verknuepft, beantwortet jede Klausurfrage vollständig.
 
 Klausur-Satz: `Ganzrationale Funktionen werden mit der Potenzregel, der Faktorregel und der Summenregel gliedweise differenziert.`
 
-## Schritt 2 — entdecken
-
+## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
 ### Hook / Phaenomen
 
-Ein Schueler schreibt $f(x) = 3x^4 - 2x^2 + 9$ ab und liefert $f'(x) = 12x^3 - 4x + 9$. Ein Term stimmt, einer nicht — doch welcher? Ohne scharfe Begriffe bleibt jede Korrektur ein Ratespiel. Diese fuenf Werkzeuge entscheiden in Sekunden, ob ein Schritt erlaubt ist oder nicht.
+Fuenf Begriffe trennen in dieser Lektion Alltagssprache von Klausursprache. Wer sie aktiv wiedergeben kann, liest jede Aufgabe schneller und waehlt sofort das richtige Verfahren.
 
 ### Fachbegriffe & Definitionen
 
-- **Potenzregel:** $(x^n)' = n \cdot x^{n-1}$ fuer $n \in \mathbb{N}$. Der Exponent wird Faktor und zugleich um eins verringert.
-- **Faktorregel:** $(c \cdot f)' = c \cdot f'$ nur fuer konstantes $c$. Ein $x$-abhaengiger Faktor verlangt die Produktregel.
-- **Summenregel:** $(f + g)' = f' + g'$ sowie $(f - g)' = f' - g'$. Sie erlaubt das gliedweise Vorgehen bei Polynomen.
-- **Konstante Funktion:** $f(x) = c$ mit $f'(x) = 0$. Der Graph ist waagerecht, die lokale Aenderung ist null.
-- **Ableitungsfunktion:** $f'$ ordnet jeder Stelle $x$ die Tangentensteigung von $f$ zu, also $x \mapsto f'(x)$ mit $f'(x_0)$ als Wert an $x_0$.
+- **Potenzregel:** Fuer $(x^n)$ gilt $(x^n)' = n \cdot x^{n-1}$ durch Absenken des Exponenten. Mechanismus: Exponent als Faktor nach vorn holen und Exponent um eins senken. Klausur-Punkt: Regel nennen und auf jeden Summanden einzeln anwenden.
+- **Faktorregel:** Ein konstanter Faktor bleibt beim Ableiten erhalten, also $(c \cdot g)' = c \cdot g'$. Mechanismus: Zahl vor dem x unangetastet lassen und nur den x-Teil ableiten. Klausur-Punkt: Faktor herausschreiben und erst danach ableiten.
+- **Summenregel:** Summen duerfen gliedweise differenziert werden, also $(u+v)' = u'+v'$. Mechanismus: Funktion in Summanden zerlegen und jeden Term einzeln ableiten. Klausur-Punkt: Zerlegung sichtbar machen und Term fuer Term vorgehen.
+- **Konstante faellt weg:** Die Ableitung einer reinen Zahl ist null, weil horizontale Graphen keine Steigung besitzen. Mechanismus: Alle Summanden ohne x ersatzlos streichen. Klausur-Punkt: Wegfall begruenden statt nur unterschlagen.
+- **Ableitungswert:** Der Wert $f'(x_0)$ misst die Tangentensteigung an einer konkreten Stelle. Mechanismus: Stelle in die abgeleitete Funktion einsetzen und ausrechnen. Klausur-Punkt: Ableitung und Einsetzen als zwei getrennte Schritte zeigen.
 
 ### Wirkungsgefuege / Modell
 
-Die Begriffe greifen als Kette: Die Summenregel oeffnet den Term in Summanden, Potenz- und Faktorregel bearbeiten jeden Summanden, die Konstante schliesst mit $0$ ab. Wer $x^2 \cdot x^3$ mit der Faktorregel zieht, verwechselt konstant mit variabel — der Fehler faellt sofort auf, weil beide Faktoren $x$ enthalten. Der Test lautet daher stets: Ist der Faktor konstant — ja oder nein — und erst dann wird gezogen oder Produktregel gewaehlt.
-
-Kette: $f = \sum c_k x^k \to f' = \sum c_k \cdot k x^{k-1}$ mit $c_0' = 0$. Beispiel: $3x^4 \to 12x^3$, $-2x^2 \to -4x$, $9 \to 0$.
+Die Kette verbindet alle fuenf Begriffe zu einem Verfahren: Erkennen, Einordnen, Aufstellen, Loesen und Deuten. Jeder Begriff traegt genau einen Schritt, gemeinsam sichern sie die volle Punktzahl.
 
 Klausur-Satz: `Fuer eine Potenz gilt die Potenzregel (x^n)' = n \cdot x^{n-1}; Konstanten fallen beim Differenzieren weg.`
 
-## Schritt 3 — entdecken
+## Schritt 3 — entdecken: Kernkonzept & Wirkungsmodell
+EXPERIMENTELLE ERKUNDUNG (Sandbox, erst spielen, dann deuten):
 
-TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
+### Hook & Phaenomen
 
-### Hook / Phaenomen
+Die Sandbox macht das Unsichtbare sichtbar: Stelle Groessen ein, beobachte Kurven und lies Werte ab, bevor eine einzige Formel faellt. Erst die Anschauung, dann die Deutung, erst das Spiel, dann das Gesetz.
 
-Zwei Aufgaben sehen gleich aus, verlangen aber verschiedene Beweise: $Bestimmen Sie f'$ gegen $Zeigen Sie mit dem Differenzenquotienten$. Wer beide mit derselben Regelkette beantwortet, verliert beim zweiten alle Darstellungspunkte — obwohl das Ergebnis stimmt. Woran erkennt man in drei Sekunden, welcher Weg verlangt ist? Und warum rettet die Regelkette allein den Nachweis nicht?
+### Spiel-Aufgabe / Challenge
 
-### Fachbegriff & Definition
+Oeffne die Sandbox aus Schritt 4, variiere die zentralen Parameter in kleinen Schritten und notiere je Stufe Kurvenform und Messwert. Formuliere aus drei Stufen eine erste Vermutung ueber den Zusammenhang.
 
-Der **Differenzenquotient $\frac{f(x_0+h)-f(x_0)}{h}$ mit $h \ne 0$ misst die Sekantensteigung**, sein Grenzwert $f'(x_0) = \lim_{h \to 0} \frac{f(x_0+h)-f(x_0)}{h}$ die Tangentensteigung. Die **Regelkette aus Potenz-, Faktor- und Summenregel ist die Abkuerzung dieses Grenzwerts fuer Polynome** — schnell bei $berechnen$, unzulaessig allein bei $nachweisen$ oder $zeigen$.
+### Aha-Moment & Gesetz
 
-### Wirkungsgefuege / Modell
-
-Der Tiefenmechanismus verbindet Abkuerzung und Nachweis: Fuer $g(x) = x^2$ gilt $\frac{(x_0+h)^2-x_0^2}{h} = \frac{2x_0h+h^2}{h} = 2x_0+h$, also $\lim_{h \to 0}(2x_0+h) = 2x_0$. Genau dieses $2x_0$ liefert die Potenzregel direkt als $g'(x_0) = 2x_0$. Die Regel ist daher kein Zauber, sondern der gekuerzte Grenzwert.
-
-Schritt A: Differenzenquotienten aufstellen und ausmultiplizieren.
-Schritt B: $h$ ausklammern und kuerzen mit $h \ne 0$.
-Schritt C: $h \to 0$ gehen lassen und mit der Regelkette gegenpruefen.
+Die Kausalkette laeuft von der Zerlegung ueber die Regeln zum Wert: Zuerst zerlegt man $f$ per Summenregel in Summanden, dann wendet man auf jeden Summanden Potenzregel und Faktorregel an, schliesslich setzt man die Stelle ein. Fuer $f(x)=4x^3-5x^2+7x-2$ gilt $f'(x)=12x^2-10x+7$, also $f'(2)=48-20+7=35$. Die Konstante $-2$ faellt weg, weil ihr Graph horizontal verlaeuft und die Steigung null besitzt.
 
 ```diagram
-   f(x)  =   4x^3    -    5x^2    +    7x    -    2
-               |            |           |         |
-               v            v           v         v
-   Regel:    4*3x^2       -5*2x         7         0
-               |            |           |         |
-               v            v           v         v
-   f'(x) =   12x^2   -    10x     +     7    +    0
-               === gliedweise addieren (Summenregel) ===
-   Nachweis: (f(x0+h)-f(x0))/h kuerzen, dann h > 0
-   Exponent minus eins, Koeffizient mal Exponent; Konstante wird 0
++------------------------------------------+
+| f(x) = 4x^3 - 5x^2 + 7x - 2              |
+|   | Potenz+Faktor je Summand             |
+|   v                                      |
+| f prime(x) = 12x^2 - 10x + 7             |
+|   | x0 = 2 einsetzen                     |
+|   v                                      |
+| f prime(2) = 48 - 20 + 7 = 35            |
++------------------------------------------+
 ```
+Formelkern: $f$
 
 Klausur-Satz: `Da die Summenregel das gliedweise Differenzieren erlaubt, wird jeder Summand einzeln mit der Potenzregel abgeleitet.`
 
 ## Anekdote & Fun-Fact
-
 Die Differentialrechnung wurde im 17. Jahrhundert zweimal unabhaengig erfunden: von Isaac Newton in England und von Gottfried Wilhelm Leibniz in Deutschland. Newton dachte dabei an Bewegung und Aenderungsraten, Leibniz an unendlich kleine Differenzen; seine Schreibweise $dy/dx$ benutzen wir noch heute. Erst mit diesen Ideen wurde es moeglich, Polynome gliedweise und nach festen Regeln abzuleiten.
 
 Bezug zum Konzept: `Die Potenz-, Faktor- und Summenregel sind die systematische Form der fruehesten Ableitungsregeln.`
 
-## Schritt 4 — ausprobieren
+## Schritt 4 — ausprobieren: Interaktive Praxis & Ableitungs-Labor
+BEISPIEL (Sandbox Level mit Werkzeug):
 
-BEISPIEL (geleitete Aufgabe mit Werkzeug):
+[Werkzeug: tangent-slider]
 
-[Werkzeug: formula]
-
-AUFGABE (berechnen, AFB II): Gegeben ist die ganzrationale Funktion $f(x) = 4x^3 - 5x^2 + 7x - 2$. Bestimmen Sie $f'(x)$ sowie die lokale Aenderungsrate an der Stelle $x_0 = 2$.
+AUFGABE (Levelziel, AFB II): Knacke das Ableitungs-Level: Ziehe im Sandbox-Slider die Stelle $x_0$ von $0$ bis $3$ und beobachte, wie die Tangentensteigung an $f(x) = 4x^3-5x^2+7x-2$ waechst. Lies die Steigung bei $x_0 = 2$ ab und berechne dann exakt mit Potenz-, Faktor- und Summenregel $f'(2)$. Vergleiche Sandbox-Wert und Rechnung und benenne die drei Regeln.
 
 HILFE:
-1. Schritt 1: Jeden Summanden einzeln nach der Potenzregel ableiten (Exponent nach vorne, Exponent minus eins).
-2. Schritt 2: Den konstanten Summanden $-2$ zu $0$ setzen und alle Ergebnisse mit der Summenregel addieren.
-3. Schritt 3: $x_0 = 2$ in $f'(x)$ einsetzen und den Wert als lokale Aenderungsrate deuten.
+1. Zerlege $f$ in vier Summanden und lies im Sandbox-Slider bei $x_0 = 2$ die Tangentensteigung etwa $35$ ab.
+2. Leite gliedweise ab zu $f'(x) = 12x^2-10x+7$ und streiche die Konstante $-2$ mit Begruendung.
+3. Setze $x_0 = 2$ ein zu $f'(2) = 48-20+7 = 35$ und gleiche mit dem Sandbox-Wert ab.
 
-MUSTERLOESUNG: Gliedweise ergibt sich: $4x^3 \to 4 \cdot 3x^2 = 12x^2$; $-5x^2 \to -5 \cdot 2x = -10x$; $7x \to 7$; $-2 \to 0$. Mit der Summenregel folgt $f'(x) = 12x^2 - 10x + 7$. An der Stelle $x_0 = 2$ gilt $f'(2) = 12 \cdot 2^2 - 10 \cdot 2 + 7 = 48 - 20 + 7 = 35$. Die lokale Aenderungsrate betraegt also $35$; der Graph steigt an dieser Stelle steil an.
+MUSTERLOESUNG: Sandbox bei $x_0 = 2$ zeigt Tangentensteigung $35$. Rechnung per Summenregel gliedweise: $(4x^3)' = 12x^2$ per Potenz- und Faktorregel, $(-5x^2)' = -10x$, $(7x)' = 7$, $(-2)' = 0$. Also $f'(x) = 12x^2-10x+7$ und $f'(2) = 48-20+7 = 35$. Sandbox und Rechnung stimmen ueberein, die drei Regeln sind Potenzregel, Faktorregel und Summenregel.
 
 Klausur-Satz: `Mit Potenz-, Faktor- und Summenregel ergibt sich f'(x) = 12x^2 - 10x + 7 und damit f'(2) = 35.`
 
-## Schritt 5 — ausprobieren
-
+## Schritt 5 — ausprobieren: Verfahrensvergleich & Abgrenzung
 VERGLEICH (Wahl des Verfahrens, A gegen B):
 
 VERGLEICH: Triff zuerst die Wahl des Verfahrens: (i) $berechnen$ oder $bestimmen$ (Ableitungsfunktion direkt mit Potenz-, Faktor- und Summenregel bilden) oder (ii) $nachweisen$ oder $zeigen$ (Nachweis mit Differenzenquotient und Grenzuebergang) > dann loesen.
@@ -138,8 +122,7 @@ ANTWORT: A erfordert Verfahren (i): $f'(x) = 12x^3 - 4x$. B erfordert Verfahren 
 
 Klausur-Satz: `Bei berechnen genuegt das Ergebnis der Regelanwendung, bei nachweisen muss der Grenzprozess vollstaendig dargestellt werden.`
 
-## Schritt 6 — check
-
+## Schritt 6 — check: Verständnisprüfung
 CHECK (drei Fragen mit Antworten):
 
 FRAGE: Wie lautet die Potenzregel fuer $f(x) = x^n$? | ANTWORT: $f'(x) = n \cdot x^{n-1}$; der Exponent wird zum Faktor und um eins verringert.
@@ -149,7 +132,6 @@ FRAGE: Warum darf die Faktorregel nicht auf ein Produkt zweier Funktionen angewa
 Klausur-Satz: `Potenz-, Faktor- und Summenregel gelten fuer ganzrationale Funktionen und werden gliedweise angewandt.`
 
 ## Fehlvorstellung
-
 (Kein Schritt; wird vom Parser uebersprungen.)
 
 1. Fehlkonzept: Beim Ableiten wird der Exponent als Faktor abgeschrieben, der Exponent selbst bleibt unveraendert.
@@ -157,15 +139,13 @@ Klausur-Satz: `Potenz-, Faktor- und Summenregel gelten fuer ganzrationale Funkti
 2. Fehlkonzept: Jeder Faktor eines Produkts darf wie eine Konstante vor die Ableitung gezogen werden.
    Korrektur-Satz: `Die Faktorregel gilt nur fuer einen konstanten Faktor, nicht fuer das Produkt zweier x-abhaengiger Faktoren.`
 
-## Schritt 7 — szenario
-
+## Schritt 7 — szenario: Klausurtransfer & Rubric
 ROLLE: Du bist Schueler-Tutor im Mathe-Foerderkurs der EF.
 SITUATION: Ein Mitschueler hat $f(x) = 4x^3 - 5x^2 + 7x - 2$ abgeleitet und als Ergebnis $12x^3 - 10x^2 + 7x$ erhalten. Erklaere ihm in einer zusammenhaengenden Darstellung (circa 150 Woerter), welcher Regelverstoss vorliegt, fuehre die korrekte Ableitung vor und erlaeutere den Unterschied zwischen $berechnen$ und $nachweisen$.
 AUFGABE (begruenden, AFB III): Verfasse eine zusammenhaengende Darstellung von etwa 150 Woertern mit Fehlerbenennung, korrekter Rechnung und Operatorabgrenzung.
 RUBRIC (30 XP): Benennung des Fehlers (Exponent nicht verringert, Konstante nicht beachtet) (5 XP) | Korrekte gliedweise Ableitung $f'(x) = 12x^2 - 10x + 7$ (10 XP) | Begruendung mit Potenz-, Faktor- und Summenregel (10 XP) | Abgrenzung $berechnen$ gegen $nachweisen$ (5 XP).
 
-## Schritt 8 — entdecken
-
+## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
 TAKEAWAY (Kernbotschaft in einem Kasten):
 
 Die Ableitung eines Polynoms folgt einer festen Ablauffolge: Term in Summanden zerlegen, jeden Summanden mit Koeffizient mal Exponent und Exponent minus eins ableiten, Konstanten zu $0$ setzen und alles mit der Summenregel addieren. Die Potenzregel gehoert zu $x^n$, die Faktorregel zum konstanten Koeffizienten, die Summenregel zum ganzen Term. Der Operator entscheidet ueber den Weg: $berechnen$ verlangt nur die Regelanwendung, $zeigen$ oder $nachweisen$ verlangt den Differenzenquotienten mit Grenzwert.
@@ -175,3 +155,4 @@ Takeaway-Satz: `Ganzrationale Funktionen werden gliedweise mit Potenz-, Faktor- 
 REFLEXION (zwei Fragen):
 1. Welcher Schritt fiel schwerer: das gliedweise Differenzieren (Schritt 4) oder die Unterscheidung von $berechnen$ und $nachweisen$ (Schritt 5)?
 2. Beim naechsten Mal lese ich zuerst das Verb der Aufgabe und entscheide dann, ob ich nur die Regel anwende oder den Grenzprozess aufschreiben muss.
+

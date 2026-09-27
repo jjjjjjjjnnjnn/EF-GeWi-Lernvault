@@ -15,7 +15,7 @@ version: Lesson-v3
 
 <!-- Lesson v3: 8 Schritte plus Anekdote und Fehlvorstellung; Fehlvorstellung zwischen Schritt 6 und 7 (Parser-Skip); interaktives [Werkzeug: <id>]; Gating: check/szenario nicht bestanden = Weiter gesperrt; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
-## Schritt 1 — entdecken
+## Schritt 1 — entdecken: Ziele & Phänomen-Einstieg
 
 ZIELE (drei messbare Ziele dieser Lektion):
 
@@ -25,8 +25,11 @@ ZIELE (drei messbare Ziele dieser Lektion):
 
 ### Hook / Phaenomen
 
-Im Jahr 2019 scheiterte ein Marathonlaeufer an der Zeiteinteilung — zu schnell gestartet, bei Kilometer $30$ eingebrochen. Klausuren laufen gleich: Wer Aufgabe $1$ poliert und Aufgabe $4$ verschenkt, verliert trotz Koennen. Vier Aufgaben in $60$ Minuten verlangen Takt statt Talent. Wie taktet man $15$ Minuten je Aufgabe — und warum rettet Ansatz plus Antwortsatz auch bei Rechenfehlern Punkte?
+马拉松选手最大的敌人不是体力而是配速：前半程冲得太猛，三十公里处崩盘，考试也一样。四道大题六十分钟，第一题打磨半小时、第四题白白丢分，明明会做却排名倒退。中国学生常靠题海磨时间，德国考试更看重步骤句式：没有 Antwortsatz，计算对了也扣表述分。本节用四个站点打通切线、向量、概率、极值，把节奏感练成肌肉记忆。
 
+Im Jahr 2019 scheiterte ein Marathonlaeufer an der Zeiteinteilung — zu schnell gestartet, bei Kilometer 30 eingebrochen; vier Aufgaben in 60 Minuten verlangen Takt statt Talent.
+
+机制铺垫双语：节奏机制是四乘十五分钟分块，每块都是答案句收尾加期望视界自查。Der Mechanismus taktet 4 mal 15 Minuten: Ansatz schreiben, Rechnung ausfuehren, Antwortsatz mit EHZ-Selbstcheck schliessen.
 ### Fachbegriff & Definition
 
 Fuer das Training gilt: **Jeder Loesungsweg braucht Ansatz, Rechnung und Antwortsatz; ohne Antwortsatz verliert man Darstellungspunkte**. Die **Tangente bei $x_0$ ergibt sich aus Punkt $(x_0, f(x_0))$ und Steigung $f'(x_0)$ zu $t(x) = f(x_0)+f'(x_0)(x-x_0)$**. Der **Erwartungshorizont (EHZ) verteilt Punkte auf Teilleistungen** und trennt Rechen- von Konzeptfehlern.
@@ -41,7 +44,7 @@ Schritt C: Antwortsatz mit Einheit und EHZ-Selbstcheck schliessen.
 
 Klausur-Satz: `Jeder Loesungsweg braucht Ansatz, Rechnung und Antwortsatz; ohne Antwortsatz verliert man Darstellungspunkte.`
 
-## Schritt 2 — entdecken
+## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
 
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
@@ -51,11 +54,11 @@ Vier Aufgaben, vier Sprachen: Ableitung, Vektor, Baum, Extremum. Wer sie mit ein
 
 ### Fachbegriffe & Definitionen
 
-- **Tangente:** $t(x) = f(x_0)+f'(x_0)(x-x_0)$; Gerade durch $(x_0, f(x_0))$ mit $f'(x_0)$.
-- **Richtungsvektor:** $\vec{u}$ in $\vec{x} = \vec{a}+s\vec{u}$; er legt die Richtung der Geraden fest.
-- **Punktprobe:** Einsetzen in die Gerade; genau ein $s$ fuer alle drei Zeilen bedeutet Treffer.
-- **Baumdiagramm:** Mehrstufiges Experiment; entlang Pfad multiplizieren, ueber Pfade addieren.
-- **Erwartungshorizont (EHZ):** Offizieller Massstab; jede Teilleistung traegt feste Punkte.
+- **Tangente: (切线)** $t(x) = f(x_0)+f'(x_0)(x-x_0)$; Gerade durch $(x_0, f(x_0))$ mit $f'(x_0)$.
+- **Richtungsvektor: (方向向量)** $\vec{u}$ in $\vec{x} = \vec{a}+s\vec{u}$; er legt die Richtung der Geraden fest.
+- **Punktprobe: (点检验)** Einsetzen in die Gerade; genau ein $s$ fuer alle drei Zeilen bedeutet Treffer.
+- **Baumdiagramm: (树图)** Mehrstufiges Experiment; entlang Pfad multiplizieren, ueber Pfade addieren.
+- **Erwartungshorizont (EHZ): (评分标准)** Offizieller Massstab; jede Teilleistung traegt feste Punkte.
 
 ### Wirkungsgefuege / Modell
 
@@ -63,35 +66,28 @@ Die Kette ordnet Aufgabe und Werkzeug: $f$ und $f'$ zu Tangente $t(x) = x+1$; $\
 
 Klausur-Satz: `Die Tangente bei x0 ergibt sich aus dem Punkt (x0 | f(x0)) und der Steigung f'(x0).`
 
-## Schritt 3 — entdecken
+## Schritt 3 — entdecken: Kernkonzept & Wirkungsmodell
 
-TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
+EXPERIMENTELLE ERKUNDUNG (PhET Sandbox, erst spielen, dann deuten):
 
-### Hook / Phaenomen
+### Hook & Phaenomen
 
-Ein Schueler loest alle vier Aufgaben richtig — und erhaelt dennoch nur zwei Drittel der Punkte. Die Rechnung stimmt, die Saetze fehlen. Der EHZ kennt kein Mitleid: ohne Ansatz und Antwortsatz bleibt jede Zahl eine Vermutung. Wie verwandelt der Dreischritt Ansatz, Rechnung und Antwortsatz vier richtige Zahlen in volle Punktzahl?
+Vier Aufgaben in zwanzig Minuten wirken unmoeglich, doch jede prueft nur eine Kernidee. Intuitiv bleibt man an der schwersten haengen, doch die Punkte liegen in der Reihenfolge. Warum sichern Differenzieren, Vektoren, Wahrscheinlichkeit und Extremwert zusammen die EF?
 
-### Fachbegriff & Definition
+### Spiel-Aufgabe / Challenge
 
-Die **vier Aufgaben pruefen Differenzieren, Vektorrechnung, Wahrscheinlichkeit und Extremwertbestimmung als Kernkompetenzen der EF**. Jede folgt dem **Dreischritt Ansatz plus Rechnung plus Antwortsatz**. **Rechenfehler lassen sich durch Kontrolle beheben, Konzeptfehler verlangen Methodenstudium** — die EHZ-Trennung steuert das Lernen danach.
+Oeffne die Sandbox und starte den Timer $20$ Minuten fuer vier Stationen. Ziehe den Slider Fokus von Station zu Station und beobachte die Tangente $t(x) = x+1$ bei $x_0 = 2$ mit $f(2) = 3$ und $f'(2) = 1$. Sammle pro Station die Anzeige korrekt und notiere die Zeit.
 
-### Wirkungsgefuege / Modell
+### Aha-Moment & Gesetz
 
-Der Tiefenweg sortiert Fehler: $t(x) = x+1$ mit Zahlendreher als Rechenfehler zu Kontrolle; $\vec{u}$ mit $Q-P$ vertauscht als Konzeptfehler zu Methode. Zeitregel $60$ Minuten plus Selbstbewertung nach EHZ: erst alle vier Ansaetze, dann alle Rechnungen, dann alle Saetze. Wer Baeume mit $P = \frac{guenstig}{moeglich}$ und Extrema mit $x+\frac{4}{x} \ge 4$ sichert, sammelt auch bei Zeitnot Teilpunkte je Ansatz.
-
-Schritt A: $60$ Minuten in $4 \times 15$ teilen und Ansaetze sichern.
-Schritt B: Rechnungen mit $f'$, $s$ oder Pfad ausfuehren.
-Schritt C: Saetze schreiben und EHZ-Punkte selbst vergeben.
+Die Kette lautet Ableitung gegen Geometrie gegen Zufall gegen Optimum: $t(x) = f(x_0)+f'(x_0)(x-x_0)$ plus Betrag plus Pfadregel plus $f' = 0$ mit Rand. Handschriftlich gilt $t(x) = 3+1(x-2) = x+1$ aus $f(2) = 3$ und $f'(2) = 1$. Jede Station nutzt dieselbe Ordnung Achsen plus Bedingung plus Ansatz plus Einheit plus Urteil. Wer die Ordnung haelt, haelt die Zeit.
 
 ```diagram
-   Aufgabe 1  Funktion: f' > f(x0), f'(x0) > Tangente t(x)=x+1
-   Aufgabe 2  Vektor: PQ = Q - P > Betrag > Punktprobe (ein s)
-   Aufgabe 3  Stochastik: Baum > Pfadprodukt > Summe > Antwortsatz
-   Aufgabe 4  Extremum: Positivitaet > AM-GM > Gleichheit bei x=2
-   ===============================================================
-   Zeit: 60 min | Struktur je Aufgabe: Ansatz + Rechnung + Antwortsatz
-   EHZ-Selbstbewertung: Rechenfehler gegen Konzeptfehler trennen
-   Beispiel: f(2)=3, f'(2)=1 > t(x)=3+1*(x-2)=x+1
+  Station 1 2 3 4 > 20 Minuten
+  +--------------------------> Zeit
+  t(x)=x+1 bei x0=2 f=3 f prime =1
+  Vektor Betrag | Pfad mal | Max Rand
+  Ordnung Achsen Ansatz Einheit Urteil
 ```
 
 Klausur-Satz: `Die vier Aufgaben pruefen die Kernkompetenzen der EF: Differenzieren, Vektorrechnung, Wahrscheinlichkeit und Extremwertbestimmung.`
@@ -102,45 +98,24 @@ Das Wort Klausur kommt vom lateinischen $claustrum$, abgeschlossener Raum. Frueh
 
 Bezug zum Konzept: `Eine Klausur ist eine abgeschlossene, zeitlich begrenzte Pruefung; der Zeitmodus trainiert genau diese Situation.`
 
-## Schritt 4 — ausprobieren
+## Schritt 4 — ausprobieren: Interaktive Praxis & Labor
 
-BEISPIEL (geleitete Aufgabe mit Werkzeug):
+BEISPIEL (Sandbox Level mit Werkzeug):
 
-[Werkzeug: tangent]
+[Werkzeug: tangent-slider]
 
-AUFGABE (berechnen, AFB II): Aufgabe 1 (6 BE). Gegeben ist $f(x) = x^3 - 4x^2 + 5x + 1$. a) Berechnen Sie $f'(x)$. b) Bestimmen Sie die Tangente an $f$ bei $x_0 = 2$.
+AUFGABE (Levelziel, AFB II): Schaffe alle vier Stationen: Stelle in der Sandbox (tangent-slider) $x_0 = 2$ ein, ziehe den Slider h von 1,0 bis 0,1 und bestaetige $t(x) = x+1$ bei $x_0 = 2$, und berechne dann die Tangente aus $f(2) = 3$ und $f'(2) = 1$ schriftlich. Skizziere den Zeitplan fuer die anderen drei Stationen.
 
 HILFE:
-1. Schritt 1: $f'(x)$ gliedweise mit der Potenzregel bilden.
-2. Schritt 2: $f(2)$ und $f'(2)$ auswerten (Punkt und Steigung).
-3. Schritt 3: Beides in die Punkt-Steigungs-Form $t(x) = f(x_0) + f'(x_0) \cdot (x - x_0)$ einsetzen.
+1. Lies in der Sandbox $f(2) = 3$ und $f'(2) = 1$ ab und notiere die Tangentenformel $t(x) = f(x_0)+f'(x_0)(x-x_0)$.
+2. Setze ein zu $t(x) = 3+1(x-2) = x+1$.
+3. Verteile $20$ Minuten auf vier Stationen mit je Ansatz plus Einheit plus Urteil.
 
-MUSTERLOESUNG: a) Mit der Potenzregel gilt $f'(x) = 3x^2 - 8x + 5$. b) Es ist $f(2) = 8 - 16 + 10 + 1 = 3$ und $f'(2) = 12 - 16 + 5 = 1$. Damit lautet die Tangente $t(x) = 3 + 1 \cdot (x - 2) = x + 1$. Die Tangente beruehrt den Graphen im Punkt $(2, 3)$ mit der Steigung $1$.
-
-EHZ-Punkte (6 BE): $f'(x)$ korrekt (2 BE) | $f(2)$ und $f'(2)$ korrekt (2 BE) | Tangentengleichung mit Ansatz (2 BE).
+MUSTERLOESUNG: Sandbox $t(x) = x+1$ bestaetigt. Rechnung $t(x) = f(2)+f'(2)(x-2) = 3+1(x-2) = x+1$ mit $f(2) = 3$ und $f'(2) = 1$. Zeitplan $5$ Minuten je Station Differenzieren, Vektorrechnung, Wahrscheinlichkeit und Extremwert mit derselben Ordnung Achsen plus Bedingung plus Ansatz plus Einheit plus Urteil. Alle vier Kernkompetenzen sind damit unter Zeitdruck abgedeckt.
 
 Klausur-Satz: `Die Tangente bei x0 = 2 lautet t(x) = x + 1, da f(2) = 3 und f'(2) = 1 gilt.`
 
-TRAININGSPACK (drei weitere Aufgaben im Zeitmodus, danach Selbstbewertung nach EHZ):
-
-Aufgabe 2 (Vektor und Geometrie, 6 BE): Gegeben sind $A(1, 0, 0)$ und $B(3, 3, 6)$. a) Geben Sie den Vektor $\overrightarrow{AB}$ an und berechnen Sie $|\overrightarrow{AB}|$. b) Die Gerade $g$ lautet $\vec{x} = (1, 0, 0) + s \cdot (2, 3, 6)$. Pruefen Sie durch eine Punktprobe, ob $C(5, 6, 12)$ auf $g$ liegt.
-Loesungsweg: $\overrightarrow{AB} = (3-1, 3-0, 6-0) = (2, 3, 6)$; $|\overrightarrow{AB}| = \sqrt{4 + 9 + 36} = \sqrt{49} = 7$. Probe fuer $C$: $5 = 1 + 2s$ ergibt $s = 2$; $6 = 0 + 3 \cdot 2 = 6$ stimmt; $12 = 0 + 6 \cdot 2 = 12$ stimmt. Also liegt $C$ auf $g$.
-EHZ-Punkte: Vektor korrekt (1 BE) | Laenge mit Wurzel (2 BE) | Punktprobe mit gemeinsamem $s$ und Schluss (3 BE).
-Transfer-Satz: `Der Punkt C liegt auf g, da ein gemeinsames s = 2 alle drei Koordinatengleichungen erfuellt.`
-
-Aufgabe 3 (Stochastik, 5 BE): Eine Box enthaelt 7 Kugeln: 4 rote und 3 blaue. Es wird zweimal ohne Zuruecklegen gezogen. Bestimmen Sie mit einem Baumdiagramm die Wahrscheinlichkeit, dass beide Kugeln rot sind.
-Loesungsweg: Pfad rot-rot: $(4/7) \cdot (3/6) = 12/42 = 2/7$. Den Baum mit vier Pfaden ($RR$, $RB$, $BR$, $BB$) skizzieren und die Stufenwahrscheinlichkeiten entlang des Pfades multiplizieren. Antwort: $P(\text{beide rot}) = 2/7 \approx 0{,}286 = 28{,}6\,\%$.
-EHZ-Punkte: Baum korrekt beschriftet (2 BE) | Pfadmultiplikation (2 BE) | Antwortsatz mit Deutung (1 BE).
-Transfer-Satz: `Entlang des Pfades multipliziere ich die Stufenwahrscheinlichkeiten, also gilt P(beide rot) = (4/7) * (3/6) = 2/7.`
-
-Aufgabe 4 (Extremwert mit AM-GM, 7 BE): Fuer $x > 0$ sei $A(x) = x + 25/x$. Untersuchen Sie $A$ mit AM-GM auf das Minimum und geben Sie Stelle und Wert an. Bestaetigen Sie das Ergebnis kurz mit $A'(x)$.
-Loesungsweg: Da $x > 0$ und $25/x > 0$ gilt: $A(x) \ge 2 \cdot \sqrt{x \cdot 25/x} = 2 \cdot 5 = 10$, Gleichheit fuer $x = 25/x$, also $x = 5$. Probe mit der Ableitung: $A'(x) = 1 - 25/x^2 = 0$ ergibt $x = 5$ (positiv); $A''(x) = 50/x^3 > 0$, also ein Minimum. Es gilt $A(5) = 10$.
-EHZ-Punkte: Positivitaet genannt (1 BE) | AM-GM-Abschaetzung (2 BE) | Gleichheitsstelle $x = 5$ (1 BE) | Ableitungs-Bestaetigung (2 BE) | Minimumswert $10$ mit Satz (1 BE).
-Transfer-Satz: `Da beide Summanden positiv sind, folgt mit AM-GM A(x) >= 10 mit Gleichheit bei x = 5; die Ableitung bestaetigt dort ein Minimum mit Wert 10.`
-
-Klausur-Satz: `Die vier Aufgaben folgen dem Muster Ansatz, Rechnung und Antwortsatz, wobei jede Aufgabe ihre eigene Kernmethode besitzt.`
-
-## Schritt 5 — ausprobieren
+## Schritt 5 — ausprobieren: Verfahrensvergleich & Abgrenzung
 
 VERGLEICH (Wahl des Verfahrens, A gegen B):
 
@@ -155,7 +130,7 @@ ANTWORT: A erfordert Verfahren (i): $A(x) \ge 2 \cdot \sqrt{25} = 10$, Gleichhei
 
 Klausur-Satz: `Fuer Summen positiver Terme mit festem Produkt nutzt man AM-GM, fuer Polynome das Ableitungsverfahren mit Vorzeichentabelle.`
 
-## Schritt 6 — check
+## Schritt 6 — check: Verständnisprüfung
 
 CHECK (drei Fragen mit Antworten):
 
@@ -174,14 +149,14 @@ Klausur-Satz: `Ansatz, Rechnung und Antwortsatz gehoeren zu jeder Aufgabe; AM-GM
 2. Fehlkonzept: Beim Ziehen ohne Zuruecklegen bleiben die Wahrscheinlichkeiten der zweiten Stufe unveraendert.
    Korrektur-Satz: `Beim Ziehen ohne Zuruecklegen verringern sich Zaehler und Nenner jeweils um eins.`
 
-## Schritt 7 — szenario
+## Schritt 7 — szenario: Klausurtransfer & Rubric
 
 ROLLE: Du bist Lerncoach und wertest die Ergebnisse des 60-Minuten-Trainings aus.
 SITUATION: Ein Schueler hat alle vier Aufgaben bearbeitet, aber bei Aufgabe 2 nur den Vektor angegeben, bei Aufgabe 3 die zweite Wahrscheinlichkeit als $4/7$ geschrieben und bei Aufgabe 4 das Ergebnis ohne Gleichheitsbedingung gelassen. Beurteile seine Leistung in einer zusammenhaengenden Darstellung (circa 150 Woerter), ordne die Fehler nach EHZ-Punkten ein und unterscheide Rechenfehler von Konzeptfehlern.
 AUFGABE (begruenden, AFB III): Verfasse eine zusammenhaengende Darstellung von etwa 150 Woertern mit Fehlerzuordnung, Analyse und Lernempfehlung.
 RUBRIC (30 XP): Zuordnung der Fehler zu den EHZ-Punkten (5 XP) | Analyse Aufgabe 2: fehlender Nachweis der Laenge und Punktprobe (10 XP) | Analyse Aufgabe 3 und 4: Konzeptfehler ohne Zuruecklegen beziehungsweise fehlende Gleichheitsbedingung (10 XP) | Fazit mit Lernempfehlung (5 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY (Kernbotschaft in einem Kasten):
 

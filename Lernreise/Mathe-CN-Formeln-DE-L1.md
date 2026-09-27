@@ -15,7 +15,7 @@ version: Lesson-v3
 
 <!-- Lesson v3: 8 Schritte plus Anekdote und Fehlvorstellung; Fehlvorstellung zwischen Schritt 6 und 7 (Parser-Skip); interaktives [Werkzeug: <id>]; Gating: check/szenario nicht bestanden = Weiter gesperrt; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
-## Schritt 1 — entdecken
+## Schritt 1 — entdecken: Ziele & Phänomen-Einstieg
 
 ZIELE (drei messbare Ziele dieser Lektion):
 
@@ -25,8 +25,11 @@ ZIELE (drei messbare Ziele dieser Lektion):
 
 ### Hook / Phaenomen
 
-Im Jahr 1986 explodierte Challenger — ein O-Ring versagte ausserhalb seines Temperaturbereichs. Die Formel stimmte, die Bedingung nicht. In der Klausur passiert derselbe Fehler taeglich: AM-GM auf negative Zahlen, Vieta auf $x^3$, Potenzregel auf Produkte. Die Zahl stimmt scheinbar — doch die Bedingung fehlt. Wie schuetzt ein Bedingungssatz vor dem Challenger-Fehler der Mathematik?
+中国学生背公式最熟悉口诀加变形：幂降一次系数提前、和积反推验根、和定积最大，背得快算得快，但德国 Klausur 不认口诀只认条件句和论证句。很多人把均值不等式用在负数上、把韦达定理用在三次方程上，数字看似对了却一分不得，这就是典型的挑战者错误：公式对了条件错了。本节目标就是把中文速度和德语规范叠在一起，让每条公式都带着条件进考场。
 
+Im Jahr 1986 explodierte Challenger — ein O-Ring versagte ausserhalb seines Temperaturbereichs; die Formel stimmte, die Bedingung nicht.
+
+机制铺垫双语：机制很简单，先选公式再验条件最后写应用句，三者缺一不可。Der Mechanismus lautet: erst Formel waehlen, dann Bedingung pruefen, dann Anwendungssatz schreiben.
 ### Fachbegriff & Definition
 
 Fuer die EF gilt: **Jede Formel gilt nur unter ihrer Bedingung; die Potenzregel etwa nur fuer Potenzen, AM-GM nur fuer positive Zahlen**. Die **Merkregel waehlt die Formel, der Bedingungssatz sichert die Anwendbarkeit, der Anwendungssatz traegt die Punkte**. Der **Satz von Vieta prueft Nullstellen nur fuer $ax^2+bx+c = 0$ mit $a \ne 0$** ueber Summe und Produkt.
@@ -41,7 +44,7 @@ Schritt C: Anwenden und Ergebnis mit Satz sichern.
 
 Klausur-Satz: `Ich kann die Kernformeln der EF darstellen und ihre Bedingungen nennen.`
 
-## Schritt 2 — entdecken
+## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
 
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
@@ -51,11 +54,11 @@ Fuenf Formeln, fuenf Fallen: Der Exponent wird gesenkt, doch worauf? Die Summe s
 
 ### Fachbegriffe & Definitionen
 
-- **Potenzregel:** $(x^n)' = n \cdot x^{n-1}$ nur fuer Potenzen; Exponent wird Faktor und minus eins.
-- **Satz von Vieta:** $x_1+x_2 = -b/a$, $x_1 \cdot x_2 = c/a$ nur fuer $ax^2+bx+c = 0$ mit $a \ne 0$.
-- **AM-GM-Ungleichung:** $(a+b)/2 \ge \sqrt{ab}$ nur fuer $a,b > 0$; Gleichheit genau bei $a = b$.
-- **Betrag eines Vektors:** $|\vec{a}| = \sqrt{a_1^2+a_2^2+a_3^2}$ aus Koordinaten im Raum.
-- **Laplace-Experiment:** $P(E) =$ guenstig durch moeglich nur bei gleich wahrscheinlichen Ergebnissen.
+- **Potenzregel: (幂法则)** $(x^n)' = n \cdot x^{n-1}$ nur fuer Potenzen; Exponent wird Faktor und minus eins.
+- **Satz von Vieta: (韦达定理)** $x_1+x_2 = -b/a$, $x_1 \cdot x_2 = c/a$ nur fuer $ax^2+bx+c = 0$ mit $a \ne 0$.
+- **AM-GM-Ungleichung: (均值不等式)** $(a+b)/2 \ge \sqrt{ab}$ nur fuer $a,b > 0$; Gleichheit genau bei $a = b$.
+- **Betrag eines Vektors: (向量模长)** $|\vec{a}| = \sqrt{a_1^2+a_2^2+a_3^2}$ aus Koordinaten im Raum.
+- **Laplace-Experiment: (古典概型)** $P(E) =$ guenstig durch moeglich nur bei gleich wahrscheinlichen Ergebnissen.
 
 ### Wirkungsgefuege / Modell
 
@@ -63,39 +66,29 @@ Die Kette lautet: Formel nennen, Bedingung pruefen, dann erst rechnen. Vieta an 
 
 Klausur-Satz: `Jede Formel gilt nur unter ihrer Bedingung; die Potenzregel etwa nur fuer Potenzen, AM-GM nur fuer positive Zahlen.`
 
-## Schritt 3 — entdecken
+## Schritt 3 — entdecken: Kernkonzept & Wirkungsmodell
 
-TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
+EXPERIMENTELLE ERKUNDUNG (PhET Sandbox, erst spielen, dann deuten):
 
-### Hook / Phaenomen
+### Hook & Phaenomen
 
-Zwei Schueler schreiben $(x^n)' = n x^{n-1}$ — einer erhaelt den Punkt, einer nicht. Der Unterschied steht im Nebensatz: nur fuer Potenzen. In der Korrektur zaehlt nicht die Formel, sondern der Bedingungssatz davor und der Anwendungssatz danach. Wie wird aus einer Merkregel ein klausurfester Dreischritt — und warum rettet er auch Vieta und AM-GM?
+Drei Sprachen fuer eine Formel wirken wie Ballast, doch das Diktat sichert die Klausur. Intuitiv lernt man nur die Symbole, doch ohne Bedingungssatz wendet man die falsche Regel an. Warum verbindet erst die Merkregel plus Sprache die Formel mit dem richtigen Fall?
 
-### Fachbegriff & Definition
+### Spiel-Aufgabe / Challenge
 
-**Jede Formel braucht Merkregel plus Bedingungssatz plus Anwendungssatz: Die Merkregel steuert Tempo und Richtung, der Bedingungssatz sichert die Punkte**. Beispiel Potenzregel: **$Ich bilde die Ableitung mit der Potenzregel $(x^n)' = n \cdot x^{n-1}$, weil jeder Summand eine Potenz ist$**. Beispiel Vieta: **$Nach dem Satz von Vieta pruefe ich die Nullstellen mit Summe und Produkt, weil quadratisch mit $a \ne 0$ vorliegt$**.
+Oeffne die Sandbox und waehle die Sprachen Deutsch, Chinesisch und Symbol ueber die Schalter. Ziehe den Slider Tempo von langsam bis Pruefungstempo und beobachte die Formeln $h'(x) = 15x^2-4x+1$ und $x^2-9x+20 = 0$. Sprich jede Formel in allen drei Modi und protokolliere Fehler.
 
-### Wirkungsgefuege / Modell
+### Aha-Moment & Gesetz
 
-Der Tiefenweg uebersetzt Tempo in Punkte: Schmierpapier mit Merkregel $Exponent senken$ zu $h'(x) = 15x^2-4x+1$; Reinschrift mit $weil jeder Summand eine Potenz ist$ plus $h'(1) = 12$. Ebenso Vieta $Summe und Produkt$ zu $9$ und $20$ plus $weil $a = 1 \ne 0$$ zu $4$ und $5$. Ohne den weil-Satz bleibt die Rechnung eine Vermutung — mit ihm wird sie ein Beweis im AFB-I-Takt.
-
-Schritt A: Merkregel aufs Schmierpapier und Kandidat rechnen.
-Schritt B: Bedingung als weil-Satz in die Reinschrift.
-Schritt C: Anwendungssatz mit Ergebnis und Einheit schliessen.
+Die Kette lautet Merkregel gegen Sprache gegen Anwendung: Potenzregel $(x^n)' = n x^{n-1}$ plus Vieta Summe und Produkt. Handschriftlich gilt fuer $h(x) = 5x^3-2x^2+x$ genau $h'(x) = 15x^2-4x+1$ zu $h'(1) = 12$. Fuer $x^2-9x+20 = 0$ bestaetigen Summe $9$ und Produkt $20$ die Loesungen $4$ und $5$. Die Sprache waehlt den Ansatz, die Regel liefert die Zahl.
 
 ```diagram
-   Merkregel          Bedingung (DE)              Anwendungssatz (DE)
-   =================  ==========================  ==========================
-   Exponent senken    nur fuer Potenzen           Potenzregel (x^n)'=n*x^(n-1)
-   Summe und Produkt  nur ax^2+bx+c=0, a!=0       Satz von Vieta > 4 und 5
-   Summe fest         nur a,b > 0                 AM-GM mit Gleichheit a=b
-   Endpunkt minus     nur zwei Punkte             Vektor PQ = Q - P, Betrag per Wurzel
-     Startpunkt
-   guenstig durch     nur gleich wahrscheinlich   P(E) = guenstig / moeglich
-     moeglich
-   =================  ==========================  ==========================
-   Merkregel waehlt   Bedingung sichert           Anwendungssatz punktet
-   Beispiel: h'(1)=12 mit weil-Satz, Vieta 9/20 zu 4/5
+  DE | CN | Symbol > Formel
+  +--------------------------> Tempo
+  h prime =15x2-4x+1 > h prime (1)=12
+  x2-9x+20=0 > Summe 9 Produkt 20
+  Loesungen 4 und 5 > Vieta Probe
+  Sprache waehlt > Regel rechnet
 ```
 
 Klausur-Satz: `Ich verbinde eine Merkregel mit dem deutschen Bedingungssatz, um die Formel klausurtauglich anzuwenden.`
@@ -106,24 +99,24 @@ Das Wort Algebra stammt aus dem Arabischen $al\text{-}dschabr$ und bedeutet etwa
 
 Bezug zum Konzept: `Kernformeln sind kulturuebergreifend; die systematische Arbeit mit Merkregel und Bedingungssatz setzt ihre Wanderung durch die Sprachen fort.`
 
-## Schritt 4 — ausprobieren
+## Schritt 4 — ausprobieren: Interaktive Praxis & Labor
 
-BEISPIEL (geleitete Aufgabe mit Werkzeug):
+BEISPIEL (Sandbox Level mit Werkzeug):
 
 [Werkzeug: formula]
 
-AUFGABE (berechnen, AFB II): Gegeben ist $h(x) = 5x^3 - 2x^2 + x - 8$. a) Bestimmen Sie $h'(x)$ und $h'(1)$. b) Pruefen Sie mit dem Satz von Vieta, ob $4$ und $5$ die Loesungen von $x^2 - 9x + 20 = 0$ sind.
+Stelle in der Sandbox (formula) die Formel und das Tempo ein, ziehe den Slider Tempo von langsam bis Pruefungstempo und lies die Anzeige ab; AUFGABE (Levelziel, AFB II): Bestehe das Diktat Level: Diktiere in der Sandbox $h'(x)$ und die Vieta Probe in zwei Tempi und berechne dann $h'(1)$ sowie die Loesungen von $x^2-9x+20 = 0$ schriftlich.
 
 HILFE:
-1. Schritt 1: Bei a) jeden Summanden mit der Potenzregel ableiten und zusammenfassen.
-2. Schritt 2: $x_0 = 1$ in $h'(x)$ einsetzen.
-3. Schritt 3: Bei b) Summe und Produkt der vermuteten Loesungen mit $-b/a$ und $c/a$ vergleichen.
+1. Wende die Potenzregel gliedweise auf $h(x) = 5x^3-2x^2+x$ an zu $h'(x) = 15x^2-4x+1$.
+2. Setze $x = 1$ ein zu $h'(1) = 15-4+1 = 12$.
+3. Pruefe $x^2-9x+20 = 0$ mit Summe $9$ und Produkt $20$ zu $4$ und $5$.
 
-MUSTERLOESUNG: a) Gliedweise gilt $5x^3 \to 15x^2$, $-2x^2 \to -4x$, $x \to 1$, $-8 \to 0$. Also $h'(x) = 15x^2 - 4x + 1$ und $h'(1) = 15 - 4 + 1 = 12$. b) Fuer $x^2 - 9x + 20 = 0$ gilt $a = 1$, $b = -9$, $c = 20$, also $x_1 + x_2 = -b/a = 9$ und $x_1 \cdot x_2 = c/a = 20$. Die Werte $4$ und $5$ erfuellen $4 + 5 = 9$ und $4 \cdot 5 = 20$; beide Bedingungen stimmen, also sind $4$ und $5$ die Loesungen.
+MUSTERLOESUNG: Sandbox Diktat in zwei Tempi fehlerfrei. Rechnung $h'(x) = 5 \cdot 3x^2-2 \cdot 2x+1 = 15x^2-4x+1$ und $h'(1) = 15-4+1 = 12$. Gleichung $x^2-9x+20 = 0$ mit Vieta Summe $4+5 = 9$ und Produkt $4 \cdot 5 = 20$ bestaetigt $x = 4$ und $x = 5$. Merkregel plus Bedingungssatz sichern die klausurtaugliche Anwendung.
 
 Klausur-Satz: `Mit der Potenzregel folgt h'(x) = 15x^2 - 4x + 1 und h'(1) = 12; nach dem Satz von Vieta bestaetigen Summe 9 und Produkt 20 die Loesungen 4 und 5.`
 
-## Schritt 5 — ausprobieren
+## Schritt 5 — ausprobieren: Verfahrensvergleich & Abgrenzung
 
 VERGLEICH (Wahl des Verfahrens, A gegen B):
 
@@ -138,7 +131,7 @@ ANTWORT: A erfordert Verfahren (i): Hier gilt $a = 1$, $b = -9$, $c = 14$, also 
 
 Klausur-Satz: `Vieta prueft vorhandene Loesungen ueber Summe und Produkt, AM-GM schaetzt eine Summe positiver Terme nach unten ab.`
 
-## Schritt 6 — check
+## Schritt 6 — check: Verständnisprüfung
 
 CHECK (drei Fragen mit Antworten):
 
@@ -157,14 +150,14 @@ Klausur-Satz: `Nach Vieta gilt fuer ax^2 + bx + c = 0 die Beziehung x1 + x2 = -b
 2. Fehlkonzept: Die Vieta-Beziehungen gelten in derselben Form auch fuer Gleichungen dritten Grades.
    Korrektur-Satz: `Der Satz von Vieta in der Form x1 + x2 = -b/a gilt nur fuer quadratische Gleichungen.`
 
-## Schritt 7 — szenario
+## Schritt 7 — szenario: Klausurtransfer & Rubric
 
 ROLLE: Du bist Tutor und haeltst eine kurze Formeldiktat-Runde im EF-Kurs.
 SITUATION: Ein Mitschueler kennt die Merkregeln, kann sie aber nicht in deutsche Klausursaetze uebersetzen und schreibt im Test nur Ergebnisse ohne Bedingung. Erklaere ihm in einer zusammenhaengenden Darstellung (circa 150 Woerter) an zwei Beispielen (Potenzregel und AM-GM), wie man eine Formel mit Bedingungssatz klausurtauglich aufschreibt.
 AUFGABE (erlaeutern, AFB III): Verfasse eine zusammenhaengende Darstellung von etwa 150 Woertern mit Prinzip, zwei Beispielen und Fazit.
 RUBRIC (30 XP): Erklaerung des Drei-Bausteine-Prinzips (Merkregel, Bedingung, Anwendung) (5 XP) | Korrektes Beispiel zur Potenzregel mit Anwendungssatz (10 XP) | Korrektes Beispiel zu AM-GM mit Positivitaetsbedingung und Gleichheitsfall (10 XP) | Fazit zum Verhaeltnis von Heuristik und Beweispflicht (5 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY (Kernbotschaft in einem Kasten):
 

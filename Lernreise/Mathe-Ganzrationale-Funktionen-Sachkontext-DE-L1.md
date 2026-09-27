@@ -15,8 +15,7 @@ version: Lesson-v3
 
 <!-- Lesson v3: 8 Schritte plus Anekdote und Fehlvorstellung; Fehlvorstellung zwischen Schritt 6 und 7 (Parser-Skip); interaktives [Werkzeug: <id>]; Gating: check/szenario nicht bestanden = Weiter gesperrt; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
-## Schritt 1 — entdecken
-
+## Schritt 1 — entdecken: Ziele & Phänomen-Einstieg
 ZIELE (drei messbare Ziele dieser Lektion):
 
 1. Du kannst $E(x) = 12x$, $K(x) = 0{,}5x^3 - 6x^2 + 26x + 8$ und $G(x) = E(x) - K(x) = -0{,}5x^3 + 6x^2 - 14x - 8$ auf $D = [0, 12]$ mit $x$ in ME und Werten in GE aufstellen.
@@ -25,107 +24,90 @@ ZIELE (drei messbare Ziele dieser Lektion):
 
 ### Hook / Phaenomen
 
-Ein Start-up meldet Rekordumsatz — und schreibt trotzdem rote Zahlen. Die Erloeskurve $E(x)$ steigt steil, die Kontokurve faellt. Der Widerspruch loest sich in einem Bild: $E(x)$ als Gerade gegen $K(x)$ als S-Kurve, zwei Schnittpunkte, dazwischen Gewinn, ausserhalb Verlust. Warum zeigt erst die Differenz $G(x) = E(x) - K(x)$, ob sich Produktion lohnt — und warum liegt der staerkste Anstieg genau dort, wo der Gewinn null ist?
+Ein Hofladen verkauft Erdbeerkisten und die Chefin fragt sich jeden Morgen, ab welcher Menge sie ueberhaupt Gewinn macht und bei welcher Menge der Gewinn am groessten ist. Die Kosten steigen sofort, der Erloes startet langsam und erst die Differenz beider Kurven zeigt die Wahrheit. Nimm Erloes $E(x)$ minus Kosten $K(x)$ als Gewinn $G(x)$ auf der sachnahen Menge $D=[0,12]$ in ME und entdecke zwei Break-even-Punkte mit einer Gewinnzone dazwischen. Wer Einheiten und Definitionsmenge vergisst, schreibt mathematisch richtig und oekonomisch wertlos. Wer Nullstellen, Hochpunkt und Einheiten ME und GE sauber verbindet, beantwortet jede Sachfrage und deutet jeden Wert oekonomisch. Der folgende Weg fuehrt vom alltaeglichen Staunen zur exakten Rechnung: erst das Phaenomen beobachten, dann die Begriffe klaeren, schliesslich das Modell pruefen und im Sandbox-Labor selbst entdecken, warum jede Regel genau so und nicht anders funktioniert.
 
 ### Fachbegriff & Definition
 
-Nach dem NRW-Kernlehrplan Analysis wird im **Sachkontext die Gewinnfunktion als $G(x) = E(x) - K(x)$ auf einer sachnahen Definitionsmenge $D$ analysiert und oekonomisch gedeutet**. Dabei misst **$x$ in ME die Menge und $f(x)$ in GE den Geldwert**. Die **Nullstellen von $G$ heissen Break-even-Punkte**, der **Hochpunkt von $G$ heisst Maximalgewinn**, der **Wendepunkt von $G$ markiert den staerksten Anstieg**.
+Nach dem NRW-Kernlehrplan gilt der untenstehende Klausur-Satz als verbindliche Definition dieser Lektion. Er fasst das Phaenomen in exakter Fachsprache und bildet die Grundlage fuer jede Deutung.
 
 ### Wirkungsgefuege / Modell
 
-Der Mechanismus verbindet Oekonomie und Kurve: $E(x) = 12x$ waechst linear, $K(x) = 0{,}5x^3 - 6x^2 + 26x + 8$ folgt der S-Kurve aus Fixkostenverteilung und spaeteren Ueberstunden. Die Differenz $G(x) = -0{,}5x^3 + 6x^2 - 14x - 8$ bleibt ganzrational. Ihre Ableitung $G'(x) = -1{,}5x^2 + 12x - 14 = 0$ liefert $x \approx 1{,}42$ und $x \approx 6{,}58$; $G''(x) = -3x + 12$ sortiert Tief gegen Hoch. Die Nullstellen $4$ und $8{,}49$ begrenzen $G > 0$.
-
-Schritt A: $G = E - K$ bilden und $D = [0, 12]$ ME notieren.
-Schritt B: $G = 0$ fuer Break-even, $G' = 0$ mit $G''$ fuer Maximum loesen.
-Schritt C: Jede Stelle mit ME und GE im Antwortsatz deuten.
+Der Mechanismus verbindet Alltag und Formel: Das Phaenomen liefert die Anschauung, die Definition liefert die Sprache und das Wirkungsmodell in Schritt 3 liefert die Kausalkette. Wer alle drei Ebenen verknuepft, beantwortet jede Klausurfrage vollständig.
 
 Klausur-Satz: `Im Sachkontext wird die Gewinnfunktion als G(x) = E(x) - K(x) auf einer sachnahen Definitionsmenge analysiert und oekonomisch gedeutet.`
 
-## Schritt 2 — entdecken
-
+## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
 ### Hook / Phaenomen
 
-Zwei Kennzahlen, zwei Geschichten: Der Umsatz pro Stueck ist konstant, der Gewinn pro Stueck nicht. Wer nur $E(x)$ liest, sieht Wachstum; wer $G(x)$ liest, sieht zwei Nullstellen und einen Berg dazwischen. Ohne Einheiten ME und GE bleibt jede Aussage punktlos. Welche fuenf Bausteine tragen jede Sachkontextloesung?
+Fuenf Begriffe trennen in dieser Lektion Alltagssprache von Klausursprache. Wer sie aktiv wiedergeben kann, liest jede Aufgabe schneller und waehlt sofort das richtige Verfahren.
 
 ### Fachbegriffe & Definitionen
 
-- **Mengeneinheit (ME):** Einheit von $x$; jede $x$-Angabe wie $x = 6{,}58$ ME braucht sie.
-- **Geldeinheit (GE):** Einheit von $f(x)$; jeder Geldwert wie $17{,}24$ GE braucht sie.
-- **Erloesfunktion $E(x)$:** Verkaufserloes je Menge, hier $E(x) = 12x$ in GE als Gerade durch den Ursprung.
-- **Kostenfunktion $K(x)$:** Gesamtkosten aus fix und variabel, hier $K(x) = 0{,}5x^3 - 6x^2 + 26x + 8$ in GE als S-Kurve.
-- **Gewinnfunktion $G(x)$:** $G(x) = E(x) - K(x)$; $G > 0$ ist Gewinnzone, $G = 0$ ist Break-even, Hochpunkt ist Maximalgewinn.
+- **Gewinnfunktion:** Die Differenz $G(x)=E(x)-K(x)$ misst den Gewinn je Ausbringungsmenge. Mechanismus: Erloes minus Kosten bilden und auf $D$ einschraenken. Klausur-Punkt: Ansatz nennen, $D$ angeben und Einheiten ME und GE führen.
+- **Break-even-Punkt:** Die Nullstellen von $G(x)$ markieren die Schwelle zwischen Verlust und Gewinn. Mechanismus: $G(x)=0$ loesen und Werte oekonomisch deuten. Klausur-Punkt: Beide Punkte berechnen und als Gewinnschwelle benennen.
+- **Gewinnmaximum:** Der Hochpunkt von $G(x)$ liefert die gewinnmaximale Menge per $G'=0$. Mechanismus: Ableiten, null setzen, Art per $G''$ sichern. Klausur-Punkt: Menge und maximalen Gewinn mit Einheiten angeben.
+- **Definitionsmenge:** Das Intervall $D=[0,12]$ ME begrenzt alle Aussagen auf sinnvolle Mengen. Mechanismus: Aus dem Kontext sinnvolle Grenzen uebernehmen. Klausur-Punkt: $D$ bei jeder Aussage mitfuehren und ausserhalb nichts behaupten.
+- **Oekonomische Deutung:** Jeder Rechenwert braucht eine Satzdeutung mit Einheit und Kontextbezug. Mechanismus: Zahl in einen Antwortsatz mit ME oder GE einbetten. Klausur-Punkt: Ohne Deutungssatz gibt es Punktabzug trotz richtiger Zahl.
 
 ### Wirkungsgefuege / Modell
 
-Die Kette lautet: $E$ minus $K$ ergibt $G$, $D = [0, 12]$ ME begrenzt die Gueltigkeit, $G' = -1{,}5x^2 + 12x - 14$ und $G'' = -3x + 12$ sortieren die Stellen. Ausserhalb von $D$ sind selbst korrekte Nullstellen oekonomisch sinnlos — etwa $x < 0$ als negative Produktion. Der Kapazitaetsrand $12$ ME schliesst die Deutung ab: $G(12) = -128$ GE warnt vor Ueberproduktion jenseits von $8{,}49$ ME.
+Die Kette verbindet alle fuenf Begriffe zu einem Verfahren: Erkennen, Einordnen, Aufstellen, Loesen und Deuten. Jeder Begriff traegt genau einen Schritt, gemeinsam sichern sie die volle Punktzahl.
 
 Klausur-Satz: `Die Nullstellen von G(x) = E(x) - K(x) liefern die Break-even-Punkte, der Hochpunkt liefert den maximalen Gewinn.`
 
-## Schritt 3 — entdecken
+## Schritt 3 — entdecken: Kernkonzept & Wirkungsmodell
+EXPERIMENTELLE ERKUNDUNG (Sandbox, erst spielen, dann deuten):
 
-TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
+### Hook & Phaenomen
 
-### Hook / Phaenomen
+Die Sandbox macht das Unsichtbare sichtbar: Stelle Groessen ein, beobachte Kurven und lies Werte ab, bevor eine einzige Formel faellt. Erst die Anschauung, dann die Deutung, erst das Spiel, dann das Gesetz.
 
-Die Chefin fragt: Lohnt eine Ausweitung ueber $12$ ME hinaus? Der Graph antwortet ohne Rechnung: Rechts von $8{,}49$ ME verlaeuft $K$ ueber $E$, die Gewinnzone ist geschlossen. Doch erst Ableitung und Einheiten machen daraus eine klausurfeste Eroerterung. Wie wird aus dem Bild ein Urteil mit Break-even, Maximum und Wende — und warum gehoert zu jedem Wert ein Satz mit ME und GE?
+### Spiel-Aufgabe / Challenge
 
-### Fachbegriff & Definition
+Oeffne die Sandbox aus Schritt 4, variiere die zentralen Parameter in kleinen Schritten und notiere je Stufe Kurvenform und Messwert. Formuliere aus drei Stufen eine erste Vermutung ueber den Zusammenhang.
 
-Die **Gewinnzone ist das Intervall mit $G(x) > 0$ zwischen den beiden Break-even-Punkten — hier zwischen $x = 4$ ME und $x \approx 8{,}49$ ME**. Ausserhalb gilt $G(x) < 0$ als Verlustzone auf $D$. Der **Wendepunkt bei $x_W = 4$ ME mit $W(4, 0)$ markiert den staerksten Gewinnanstieg**, weil dort $G'' = 0$ mit Vorzeichenwechsel gilt und $G'$ maximal wird.
+### Aha-Moment & Gesetz
 
-### Wirkungsgefuege / Modell
-
-Der Tiefenweg in Zahlen: $G(4) = -32 + 96 - 56 - 8 = 0$ bestaetigt BE1 exakt. Aus $G'(x) = -1{,}5x^2 + 12x - 14 = 0$ folgt $x^2 - 8x + 28/3 = 0$ zu $x \approx 1{,}42$ und $6{,}58$. Mit $G''(1{,}42) > 0$ als Tiefpunkt und $G''(6{,}58) < 0$ als Hochpunkt sowie $G(6{,}58) \approx 17{,}24$ GE gegen $G(0) = -8$ GE und $G(12) = -128$ GE steht das Maximum. Die Wende $x_W = 4$ aus $G'' = -3x + 12 = 0$ faellt hier mit BE1 zusammen — staerkster Anstieg am Eintritt in die Gewinnzone.
-
-Schritt A: $G$ bilden und $G = 0$ per GTR loesen.
-Schritt B: $G' = 0$ mit $G''$ zu Hoch und Tief sortieren.
-Schritt C: Raender $0$ und $12$ vergleichen und Gewinnzone im Satz deuten.
+Die Kausalkette laeuft von den Kurven ueber die Differenz zur Deutung: Zuerst bildet man $G(x)=E(x)-K(x)$ auf $D=[0,12]$ ME, dann loest man $G(x)=0$ fuer die Break-even-Punkte und $G'(x)=0$ fuer das Maximum, schliesslich deutet man jeden Wert oekonomisch. Zwischen den beiden Nullstellen gilt $G(x)>0$ als Gewinnzone, ausserhalb gilt $G(x)<0$ als Verlustzone. Jede Aussage ohne $D$ und ohne Einheit bleibt mathematisch richtig, aber oekonomisch wertlos.
 
 ```diagram
-       GE ^
-          |      E(x)=12x  /
-          |              /      ___ G(x) Gewinnberg
-          |            /    .--     --.
-          |          /   .               .
-          |  K(x) .   .   Gewinnzone     .
-          |   .--  .  (G>0 zwischen        .
-          | .    .    Break-even 1 und 2)    .
-          +----------------------------------------> x in ME
-          0   BE1=4  Wende=4  Hmax ca.6.58  BE2 ca.8.49   12
-       G(x) = E(x) - K(x) | D = [0; 12] ME
-       G'(x) = -1.5x^2+12x-14 = 0 > x ca.1.42 / 6.58
-       Nullstelle = Break-even | Hochpunkt = Maximalgewinn
++------------------------------------------+
+| G(x) = E(x) - K(x) auf D = [0;12] ME    |
+|   | G(x) = 0  ->  Break-even-Punkte      |
+|   v                                      |
+| Gewinnzone: G(x) > 0 zwischen Nullstellen|
+|   | G prime = 0  ->  Hochpunkt = Maximum |
+|   v  Deutung je Wert mit ME und GE       |
++------------------------------------------+
 ```
+Formelkern: $G(x)=E(x)-K(x)$
 
 Klausur-Satz: `Zwischen den beiden Break-even-Punkten gilt G(x) > 0, ausserhalb gilt G(x) < 0 auf der sachnahen Definitionsmenge.`
 
 ## Anekdote & Fun-Fact
-
 Ein Gruender prahlte mit steigendem Umsatz, doch sein Konto blieb leer. Ein Berater zeichnete $E(x)$ und $K(x)$ in ein Bild und zeigte: Die Kurven schneiden sich zweimal, und nur dazwischen liegt die Gewinnzone. Ausserhalb frisst $K$ das $E$ auf. Seitdem plant die Firma jede Menge mit $G(x) = E(x) - K(x)$.
 
 Bezug zum Konzept: `Erst die Differenz G(x) = E(x) - K(x) zeigt, in welchem Mengenintervall Produktion lohnt.`
 
-## Schritt 4 — ausprobieren
+## Schritt 4 — ausprobieren: Interaktive Praxis & Gewinnzonen-Labor
+BEISPIEL (Sandbox Level mit Werkzeug):
 
-BEISPIEL (geleitete Aufgabe mit Werkzeug):
+[Werkzeug: box-optimizer]
 
-[Werkzeug: tangent]
-
-AUFGABE (berechnen, AFB II): Gegeben sind $E(x) = 12x$ und $K(x) = 0{,}5x^3 - 6x^2 + 26x + 8$ auf $D = [0, 12]$ ($x$ in ME, Werte in GE). Bestimmen Sie die Gewinnfunktion $G(x)$, die Break-even-Punkte und die gewinnmaximale Menge.
+AUFGABE (Levelziel, AFB II): Knacke das Gewinn-Level: Ziehe im Sandbox-Slider die Menge $x$ von $0$ bis $12$ ME und beobachte, wie $G(x)$ erst negativ startet, dann die Nullachse zweimal schneidet und dazwischen einen Hochpunkt bildet. Lies Gewinnzone und Maximum ab, berechne dann exakt Break-even-Punkte und gewinnmaximale Menge und deute jeden Wert oekonomisch mit Einheit.
 
 HILFE:
-1. Schritt 1: Gewinnfunktion bilden: $G(x) = E(x) - K(x)$ ausrechnen und Definitionsmenge mit Einheiten notieren.
-2. Schritt 2: Break-even als Nullstellen von $G$ suchen: $G(x) = 0$ mit GTR oder Naeherung loesen.
-3. Schritt 3: Maximum als Hochpunkt von $G$ suchen: $G'(x) = 0$ plus $G''(x)$ und Randwerte auf $D$ pruefen.
+1. Bilde $G(x) = E(x)-K(x)$ auf $D = [0,12]$ ME und lies im Sandbox-Slider Nullstellen und Hochpunkt ab.
+2. Loese $G(x) = 0$ fuer die Break-even-Punkte und $G'(x) = 0$ mit $G''<0$ fuer das Maximum.
+3. Deute jeden Wert in einem Satz mit ME oder GE und nenne die Gewinnzone als Intervall.
 
-MUSTERLOESUNG: Es gilt $G(x) = 12x - (0{,}5x^3 - 6x^2 + 26x + 8) = -0{,}5x^3 + 6x^2 - 14x - 8$ auf $D = [0, 12]$ ME. Aus $G(x) = 0$ folgt mit GTR $x_{BE1} = 4$ ME und $x_{BE2} \approx 8{,}49$ ME; Probe: $G(4) = -32 + 96 - 56 - 8 = 0$. Weiter gilt $G'(x) = -1{,}5x^2 + 12x - 14 = 0$, also $x^2 - 8x + 28/3 = 0$, somit $x \approx 1{,}42$ oder $x \approx 6{,}58$. Mit $G''(x) = -3x + 12$ gilt $G''(1{,}42) > 0$ (Tiefpunkt) und $G''(6{,}58) < 0$ (Hochpunkt). Mit $G(6{,}58) \approx 17{,}24$ GE, $G(0) = -8$ GE und $G(12) = -128$ GE ist $x \approx 6{,}58$ ME die gewinnmaximale Menge, die Gewinnzone liegt zwischen $4$ ME und $8{,}49$ ME. Der Wendepunkt liegt bei $x_W = 4$ ME mit $W(4, 0)$.
+MUSTERLOESUNG: Sandbox zeigt die Gewinnzone zwischen $x = 4$ ME und $x = 8{,}49$ ME mit Maximum bei $x = 6{,}58$ ME. Rechnung $G(x) = 0$ liefert die Break-even-Punkte $4$ ME und $8{,}49$ ME, $G'(x) = 0$ mit $G''<0$ liefert die gewinnmaximale Menge $6{,}58$ ME. Oekonomisch bedeutet dies: Erst ab $4$ ME entsteht Gewinn, maximal bei $6{,}58$ ME, danach faellt der Gewinn bis $8{,}49$ ME wieder auf null.
 
 Klausur-Satz: `Auf D = [0; 12] ME liegt die Gewinnzone zwischen x = 4 ME und x ca. 8.49 ME, die gewinnmaximale Menge liegt bei x ca. 6.58 ME.`
 
-## Schritt 5 — ausprobieren
-
+## Schritt 5 — ausprobieren: Verfahrensvergleich & Abgrenzung
 VERGLEICH (Wahl des Verfahrens, A gegen B):
 
 VERGLEICH: Triff zuerst die Wahl des Verfahrens: (i) graphische Deutung (Schnittpunkte, Gewinnzone und Trend an den Schnittpunkten von $E$ und $K$ ablesen) oder (ii) rechnerische Bestimmung (Nullstellen, Hochpunkt und Wende von $G$ mit Ableitung berechnen) > dann loesen.
@@ -139,8 +121,7 @@ ANTWORT: A erfordert Verfahren (i): $E$ als Gerade, $K$ als S-Kurve; zwei Schnit
 
 Klausur-Satz: `Die graphische Deutung liest Gewinnzonen an Schnittpunkten ab, die rechnerische Bestimmung sichert sie mit Ableitung und Einheiten.`
 
-## Schritt 6 — check
-
+## Schritt 6 — check: Verständnisprüfung
 CHECK (drei Fragen mit Antworten):
 
 FRAGE: Wie haengen $E(x)$, $K(x)$ und $G(x)$ zusammen und welche Einheiten tragen sie? | ANTWORT: Es gilt $G(x) = E(x) - K(x)$, $x$ in ME, alle Funktionswerte in GE, auf sachnaher Definitionsmenge $D$.
@@ -150,7 +131,6 @@ FRAGE: Warum darf $D$ nicht ignoriert werden? | ANTWORT: Weil Kapazitaet und neg
 Klausur-Satz: `Jede Aussage im Sachkontext braucht Definitionsmenge D plus Einheiten ME und GE.`
 
 ## Fehlvorstellung
-
 (Kein Schritt; wird vom Parser uebersprungen.)
 
 1. Fehlkonzept: Steigt der Erloes $E$, so steigt automatisch auch der Gewinn; die Analyse von $E$ genuegt.
@@ -158,15 +138,13 @@ Klausur-Satz: `Jede Aussage im Sachkontext braucht Definitionsmenge D plus Einhe
 2. Fehlkonzept: Nullstellen und Extrema ohne Einheiten und Definitionsmenge ergeben bereits die volle Punktzahl.
    Korrektur-Satz: `Ohne Definitionsmenge, Einheiten ME und GE sowie Antwortsatz gilt eine Sachkontext-Loesung als unvollstaendig.`
 
-## Schritt 7 — szenario
-
+## Schritt 7 — szenario: Klausurtransfer & Rubric
 ROLLE: Du bist Junior-Controller in einem Startup.
 SITUATION: $E(x) = 15x$, $K(x) = 0{,}4x^3 - 5x^2 + 28x + 15$, $D = [0, 15]$ ME, Werte in GE. Die Chefin will wissen, ab wann sich Produktion lohnt, wo der Gewinn maximal ist und ob eine Ausweitung ueber $12$ ME hinaus sinnvoll bleibt. Schreibe eine Stellungnahme (circa 150 Woerter) mit Rechnung und oekonomischer Deutung.
 AUFGABE (eroertern, AFB III): Eroertere auf Basis von Break-even, Hochpunkt und Grenze von $D$, welche Mengenintervalle zu empfehlen sind.
 RUBRIC (30 XP): $G(x)$ plus $D$ mit Einheiten korrekt (5 XP) | Break-even korrekt berechnet (10 XP) | Hochpunkt plus Wende korrekt (10 XP) | Eroerterung mit Empfehlung fuer Intervalle (5 XP).
 
-## Schritt 8 — entdecken
-
+## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
 TAKEAWAY (Kernbotschaft in einem Kasten):
 
 Der Sachkontext folgt drei Schritten: Modellieren von $G = E - K$ mit $D$ in ME und GE, Berechnen von Nullstellen, Extrema und Wende, Deuten jedes Ergebnisses im Intervall. Die Nullstelle steuert Break-even, der Hochpunkt den Maximalgewinn, die Wende den staerksten Anstieg. Die Graphik zeigt die Gerade $E$ gegen die S-Kurve $K$, die Algebra sichert jede Aussage mit Ableitung, Einheit und Antwortsatz.
@@ -176,3 +154,4 @@ Takeaway-Satz: `Modelliere G(x) = E(x) - K(x) auf D, berechne Nullstellen, Extre
 REFLEXION (zwei Fragen):
 1. Welcher Teil fiel schwerer: das Aufstellen von $G(x)$ mit Einheiten (Schritt 4) oder die Wahl zwischen Deutung und Rechnung im Vergleich (Schritt 5)?
 2. Beim naechsten Mal notiere ich zuerst $D$, ME und GE und formuliere zu jedem Rechenergebnis sofort einen Antwortsatz.
+

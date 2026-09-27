@@ -15,8 +15,7 @@ version: Lesson-v3
 
 <!-- Lesson v3: 8 Schritte plus Anekdote und Fehlvorstellung; Fehlvorstellung zwischen Schritt 6 und 7 (Parser-Skip); interaktives [Werkzeug: <id>]; Gating: check/szenario nicht bestanden = Weiter gesperrt; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
-## Schritt 1 — entdecken
-
+## Schritt 1 — entdecken: Ziele & Phänomen-Einstieg
 ZIELE (drei messbare Ziele dieser Lektion):
 
 1. Du kannst die ZKE-Struktur nennen: Teil A hilfsmittelfrei max. $25$ Minuten, Teil B mit WTR oder CAS plus Formelsammlung mind. $75$ Minuten, gesamt $100$ Minuten.
@@ -25,106 +24,89 @@ ZIELE (drei messbare Ziele dieser Lektion):
 
 ### Hook / Phaenomen
 
-Im Jahr 2024 gaben $30$ Prozent der ZKE-Teilnehmer an, an Teil A zu scheitern — nicht an schweren Aufgaben, sondern an der Uhr. Wer $25$ Minuten ueberzieht, stiehlt sie Teil B; wer zu frueh abgibt, verschenkt Handpunkte. Die Pruefung ist damit ein Optimierungsproblem: Wie verteilt man $100$ Minuten auf zwei Hefte — und warum entscheiden Potenzregel und $pq$-Formel auswendig ueber Bestehen oder Nichtbestehen?
+Zwanzig Minuten vor Abgabe starrt man auf eine Aufgabe ohne Taschenrechner und ploetzlich zaehlt nur noch das Handwerk: Potenzregel aus dem Kopf, pq-Formel ohne Zettel und Vektorlaenge per Pythagoras. Genau so fuehlt sich Teil A der Zentralen Klausur an, hilfsmittelfrei in hoechstens 25 Minuten, waehrend Teil B mit Rechner und Formelsammlung mindestens 75 Minuten vollstaendige Wege verlangt. Nimm eine typische Teil-A-Aufgabe und trainiere exaktes Rechnen ohne Netz: Nullstellen per pq-Formel, Ableitung per Potenzregel und Laenge per Betrag. Wer in Teil A lange Nebenrechnungen startet, verliert die Zeit und wer in Teil B nur Ergebnisse ohne Weg liefert, verliert die Punkte. Wer beide Teile kennt und je nach Teil handelt, betritt die ZKE vorbereitet. Der folgende Weg fuehrt vom alltaeglichen Staunen zur exakten Rechnung: erst das Phaenomen beobachten, dann die Begriffe klaeren, schliesslich das Modell pruefen und im Sandbox-Labor selbst entdecken, warum jede Regel genau so und nicht anders funktioniert.
 
 ### Fachbegriff & Definition
 
-Fuer die **ZKE laeuft Teil A hilfsmittelfrei in hoechstens $25$ Minuten ohne Rechner und ohne Formelsammlung, waehrend Teil B mit WTR oder CAS und Formelsammlung mindestens $75$ Minuten umfasst**. In **Teil A muessen Potenzregel, $pq$-Formel und Vektorlaenge ohne Hilfsmittel sicher beherrscht werden**. In **Teil B zaehlt der vollstaendige Rechenweg aus Ansatz, Rechnung und Antwortsatz**.
+Nach dem NRW-Kernlehrplan gilt der untenstehende Klausur-Satz als verbindliche Definition dieser Lektion. Er fasst das Phaenomen in exakter Fachsprache und bildet die Grundlage fuer jede Deutung.
 
 ### Wirkungsgefuege / Modell
 
-Der Mechanismus teilt Zeit und Werkzeug: Teil A verlangt $h'(x) = 15x^2-4x+1$ zu $h'(1) = 15-4+1 = 12$ aus dem Kopf sowie $x_{1,2} = \frac{9}{2} \pm \sqrt{\frac{81}{4}-20} = 4{,}5 \pm 0{,}5$ zu $4$ und $5$. Teil B verlangt dieselbe Rechnung plus Deutung: $|\vec{a}| = \sqrt{a_1^2+a_2^2+a_3^2}$ mit Ansatz und Satz. Strategie: A schnell und exakt in $25$, B vollstaendig und klar in $75$.
-
-Schritt A: Hefttyp lesen und Werkzeugfrage klaeren.
-Schritt B: In A Handformeln ohne Hilfe aktivieren.
-Schritt C: In B jeden Schritt mit Satz und Einheit schliessen.
+Der Mechanismus verbindet Alltag und Formel: Das Phaenomen liefert die Anschauung, die Definition liefert die Sprache und das Wirkungsmodell in Schritt 3 liefert die Kausalkette. Wer alle drei Ebenen verknuepft, beantwortet jede Klausurfrage vollständig.
 
 Klausur-Satz: `In der ZKE laeuft Teil A hilfsmittelfrei in hoechstens 25 Minuten, waehrend Teil B mit WTR oder CAS und Formelsammlung mindestens 75 Minuten umfasst.`
 
-## Schritt 2 — entdecken
-
+## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
 ### Hook / Phaenomen
 
-Zwei Schueler rechnen dieselbe Ableitung — einer in $30$ Sekunden auswendig, einer in $3$ Minuten mit Herleitung. In Teil A kostet der zweite Weg die halbe Pruefung. Welche fuenf Begriffe entscheiden, was in den Kopf und was in die Formelsammlung gehoert?
+Fuenf Begriffe trennen in dieser Lektion Alltagssprache von Klausursprache. Wer sie aktiv wiedergeben kann, liest jede Aufgabe schneller und waehlt sofort das richtige Verfahren.
 
 ### Fachbegriffe & Definitionen
 
-- **Hilfsmittelfreier Teil (Teil A):** Ohne Rechner und Formelsammlung; nur Handrechnung mit Gedaechtnisformeln.
-- **Teil B mit Hilfsmitteln:** Mit WTR oder CAS plus Formelsammlung; der Weg wird voll ausgeschrieben.
-- **Mittlere Aenderungsrate:** Differenzenquotient auf Intervall; Sekantensteigung als Teil-A-Klassiker.
-- **Lokale Aenderungsrate:** Ableitungswert $f'(x_0)$; Tangentensteigung per Potenzregel auswendig.
-- **Darstellungsleistung:** Bepunktung des Wegs; Ergebnis ohne Weg verfehlt Punkte in Teil B.
+- **Teil A hilfsmittelfrei:** Der erste Pruefungsteil laeuft ohne Rechner in hoechstens 25 Minuten mit Grundlagen. Mechanismus: Potenzregel, pq-Formel und Vektorlaenge auswendig aktivieren. Klausur-Punkt: Exakte Ergebnisse ohne Nebenwege liefern.
+- **Teil B mit Hilfsmitteln:** Der zweite Teil nutzt WTR oder CAS plus Formelsammlung mit mindestens 75 Minuten. Mechanismus: Rechner gezielt einsetzen und jeden Schritt dokumentieren. Klausur-Punkt: Vollständige Wege mit Deutung schreiben.
+- **Potenzregel:** Die Regel $(x^n)' = n \cdot x^{n-1}$ gehoert zum sicheren Handwerk in Teil A. Mechanismus: Exponenten senken und Faktoren erhalten. Klausur-Punkt: Fehlerfrei aus dem Kopf anwenden.
+- **pq-Formel:** Die Loesungsformel fuer $x^2+px+q=0$ liefert Nullstellen ohne Rechner. Mechanismus: $p$ und $q$ ablesen und in die Formel einsetzen. Klausur-Punkt: Diskriminante pruefen und beide Loesungen angeben.
+- **Betragsformel:** Die Vektorlaenge folgt per Wurzel aus der Quadratsumme der Koordinaten. Mechanismus: Differenzen bilden, quadrieren und Wurzel ziehen. Klausur-Punkt: Exakten Wert und bei Bedarf gerundeten Wert nennen.
 
 ### Wirkungsgefuege / Modell
 
-Die Kette sortiert Werkzeug und Zeit: Potenzregel $(x^n)' = n x^{n-1}$, $pq$-Formel $x_{1,2} = -\frac{p}{2} \pm \sqrt{(\frac{p}{2})^2-q}$ und $|\vec{a}| = \sqrt{a_1^2+a_2^2+a_3^2}$ gehoeren in Teil A ins Gedaechtnis. In Teil B gehoeren sie in Ansatz plus Rechnung plus Satz. Wer in A nach der Formelsammlung greift, hat das Heft verwechselt — der haeufigste Zeitfehler der ZKE.
+Die Kette verbindet alle fuenf Begriffe zu einem Verfahren: Erkennen, Einordnen, Aufstellen, Loesen und Deuten. Jeder Begriff traegt genau einen Schritt, gemeinsam sichern sie die volle Punktzahl.
 
 Klausur-Satz: `In Teil A muessen Potenzregel, pq-Formel und Vektorlaenge ohne Hilfsmittel sicher beherrscht werden.`
 
-## Schritt 3 — entdecken
+## Schritt 3 — entdecken: Kernkonzept & Wirkungsmodell
+EXPERIMENTELLE ERKUNDUNG (Sandbox, erst spielen, dann deuten):
 
-TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
+### Hook & Phaenomen
 
-### Hook / Phaenomen
+Die Sandbox macht das Unsichtbare sichtbar: Stelle Groessen ein, beobachte Kurven und lies Werte ab, bevor eine einzige Formel faellt. Erst die Anschauung, dann die Deutung, erst das Spiel, dann das Gesetz.
 
-Beide Hefte liegen zu Beginn auf dem Tisch — doch die Hilfsmittel kommen erst nach Abgabe von Teil A. Wer wann abgibt, entscheidet selbst, spaetestens nach $25$ Minuten. Viele zoegern und verlieren den Takt: zu lange an A gefeilt, zu wenig Zeit fuer B. Wie sieht der Taktfahrplan fuer $100$ Minuten aus — und warum gilt A schnell und exakt, B vollstaendig und klar?
+### Spiel-Aufgabe / Challenge
 
-### Fachbegriff & Definition
+Oeffne die Sandbox aus Schritt 4, variiere die zentralen Parameter in kleinen Schritten und notiere je Stufe Kurvenform und Messwert. Formuliere aus drei Stufen eine erste Vermutung ueber den Zusammenhang.
 
-**Teil A prueft Analysis und Geometrie ohne Hilfsmittel, Teil B nur Analysis mit Hilfsmitteln und verlangt vollstaendige Rechenwege**. Die **Uebergabe erfolgt spaetestens bei Minute $25$**; jede Person waehlt den Zeitpunkt selbst. In **Teil B sichert Ansatz plus Rechnung plus Antwortsatz die Darstellungspunkte**.
+### Aha-Moment & Gesetz
 
-### Wirkungsgefuege / Modell
-
-Der Tiefenweg taktet $100$ Minuten: $0$ bis $25$ Handgenauigkeit mit $h'(1) = 12$ und Vieta-Probe $4+5 = 9$, $4 \cdot 5 = 20$; $25$ bis $100$ Argumentation mit $G(x)$, $G' = 0$ und Saetzen. Die Rechnung $x^2-9x+20 = 0$ zu $4$ und $5$ dauert auswendig Sekunden, mit Herleitung Minuten — genau diese Differenz frisst oder rettet Teil B. Daher: A nicht polieren, B nicht abkuerzen.
-
-Schritt A: Uhr auf $25$ stellen und A zuegig schliessen.
-Schritt B: Hilfsmittel nehmen und B mit Saetzen oeffnen.
-Schritt C: Letzte $10$ Minuten fuer Probe und Saetze reservieren.
+Die Kausalkette laeuft von der Aufgabensorte ueber das Werkzeug zur Darstellung: Zuerst erkennt man Teil A oder Teil B an den Hilfsmitteln, dann waehlt man Kopfrechnung oder Rechnereinsatz, schliesslich liefert man Ergebnis oder vollständigen Weg. Teil A prueft Analysis und Geometrie ohne Hilfsmittel und verlangt exakte Ergebnisse, Teil B prueft Analysis mit Hilfsmitteln und verlangt vollständige Rechenwege mit Deutung. Zeitmanagement folgt derselben Logik: In Teil A zaehlt Tempo mit $(x^n)'=n\cdot x^{n-1}$ und $x^2+px+q=0$, in Teil B zaehlt Vollstaendigkeit.
 
 ```diagram
-   Gesamtzeit 100 min
-   +==========================+================================+
-   |   Teil A  (max. 25 min)  |    Teil B  (mind. 75 min)      |
-   |   hilfsmittelfrei        |    WTR/CAS + Formelsammlung    |
-   +==========================+================================+
-   |  Analysis + Geometrie    |  nur Analysis                  |
-   |  Nullstellen, Ableitung  |  Argumentation + Sachkontext   |
-   |  Vektorlaenge            |  Ansatz + Rechnung + Satz      |
-   +==========================+================================+
-    A: h'(1)=12, pq zu 4/5 auswendig und exakt
-    B: G'=0, Hochpunkt, Saetze vollstaendig und klar
-    Uebergabe spaetestens bei Minute 25
++------------------------------------------+
+| Aufgabe lesen -> Teil A oder Teil B?     |
+|   Teil A: Kopf + pq + Potenzregel       |
+|   Teil B: WTR/CAS + Weg + Deutung       |
+|   | Zeit: A max 25, B mind 75 Minuten   |
+|   v  Ergebnis vs. vollständiger Weg      |
++------------------------------------------+
 ```
+Formelkern: $(x^n)'=n\cdot x^{n-1}$
 
 Klausur-Satz: `Teil A prueft Analysis und Geometrie ohne Hilfsmittel, Teil B nur Analysis mit Hilfsmitteln und verlangt vollstaendige Rechenwege.`
 
 ## Anekdote & Fun-Fact
-
 Seit Taschenrechner und spaeter Computeralgebra-Systeme (CAS) in den Mathematikunterricht kamen, wird diskutiert, wie viel Handrechnung noch noetig ist. Ein CAS kann in Sekunden ableiten, Gleichungen loesen und Grenzwerte berechnen. Deshalb teilt die ZKE die Pruefung in einen hilfsmittelfreien Teil und einen Teil mit Hilfsmitteln.
 
 Bezug zum Konzept: `Weil CAS die Rechnung uebernehmen, prueft Teil A gerade die Grundformeln im Kopf.`
 
-## Schritt 4 — ausprobieren
-
-BEISPIEL (geleitete Aufgabe mit Werkzeug):
+## Schritt 4 — ausprobieren: Interaktive Praxis & ZKE-Training-Labor
+BEISPIEL (Sandbox Level mit Werkzeug):
 
 [Werkzeug: formula]
 
-AUFGABE (berechnen, AFB I/II): Teil-A-Stil, hilfsmittelfrei. a) Berechnen Sie die Nullstellen von $f(x) = x^3 - 4x$. b) Bestimmen Sie $f'(x)$. c) Gegeben sind $P(1, 2, 0)$ und $Q(4, 6, 0)$; berechnen Sie den Vektor $\overrightarrow{PQ}$ und seine Laenge.
+AUFGABE (Levelziel, AFB II): Knacke das ZKE-Level: Bearbeite im Sandbox-Formelgeruest zuerst drei Teil-A-Minutenaufgaben ohne Rechner zu Nullstellen, Ableitung und Vektorlaenge, stelle den Timer und stoppe die Zeit. Beobachte, an welcher Stelle du ohne Rechner ins Stocken geraetst. Vergleiche danach deine Wege mit der Musterdarstellung fuer Teil B zur selben Aufgabe und ergaenze die fehlende Deutung. Benenne je Aufgabe den noetigen Handwerksgriff.
 
 HILFE:
-1. Schritt 1: Bei a) $x$ ausklammern, dann den quadratischen Faktor mit der $pq$-Formel loesen.
-2. Schritt 2: Bei b) jeden Summanden mit der Potenzregel ableiten.
-3. Schritt 3: Bei c) Vektor als $Q - P$ bilden und die Laenge als Wurzel der Summe der Quadrate.
+1. Loese ohne Rechner per pq-Formel, Potenzregel und Betragsformel und notiere die reine Rechenzeit.
+2. Pruefe exakte Ergebnisse und markiere jeden Handwerksgriff mit Namen am Rand.
+3. Ergaenze fuer Teil B den vollständigen Weg mit Ansatz, Rechnung und Deutungssatz.
 
-MUSTERLOESUNG: a) $x^3 - 4x = x(x^2 - 4) = x(x - 2)(x + 2)$, also $x_1 = 0$, $x_2 = 2$, $x_3 = -2$. b) Mit der Potenzregel gilt $f'(x) = 3x^2 - 4$. c) Der Vektor lautet $\overrightarrow{PQ} = Q - P = (4-1, 6-2, 0-0) = (3, 4, 0)$. Seine Laenge ist $|\overrightarrow{PQ}| = \sqrt{3^2 + 4^2 + 0^2} = \sqrt{25} = 5$. Alle drei Teilaufgaben sind ohne Hilfsmittel loesbar; die $pq$-Formel und die Betragsformel muessen auswendig sitzen.
+MUSTERLOESUNG: Teil-A-Wege liefern Nullstellen, Ableitung und Vektorlaenge exakt per pq-Formel, Potenzregel und Betragsformel in wenigen Minuten. Teil-B-Darstellung ergaenzt Ansatz, Zwischenschritte und Deutung zum vollständigen Weg. Regel: In Teil A zaehlt das exakte Ergebnis ohne Hilfsmittel, in Teil B der vollständig dargestellte Loesungsweg mit Hilfsmitteln und Deutung.
 
 Klausur-Satz: `Die Nullstellen, die Ableitung und die Vektorlaenge lassen sich im hilfsmittelfreien Teil mit Potenzregel, pq-Formel und Betragsformel berechnen.`
 
-## Schritt 5 — ausprobieren
-
+## Schritt 5 — ausprobieren: Verfahrensvergleich & Abgrenzung
 VERGLEICH (Wahl des Verfahrens, A gegen B):
 
 VERGLEICH: Triff zuerst die Wahl des Verfahrens: (i) Teil-A-Aufgabe (hilfsmittelfrei: Handrechnung von Nullstellen, Ableitungen oder Vektoren, Ergebnis genuegt) oder (ii) Teil-B-Aufgabe (mit Hilfsmitteln: vollstaendige Kette mit Argumentation, Deutung und Antwortsatz) > dann bearbeiten.
@@ -138,8 +120,7 @@ ANTWORT: A gehoert zu Teil A: $f'(x) = 15x^2 - 4x + 1$, also $f'(1) = 15 - 4 + 1
 
 Klausur-Satz: `Teil-A-Aufgaben verlangen nur das exakte Ergebnis, Teil-B-Aufgaben einen vollstaendigen und gedeuteten Loesungsweg.`
 
-## Schritt 6 — check
-
+## Schritt 6 — check: Verständnisprüfung
 CHECK (drei Fragen mit Antworten):
 
 FRAGE: Wie lange darf man hoechstens fuer Teil A der ZKE verwenden, und welche Hilfsmittel sind dort erlaubt? | ANTWORT: Hoechstens 25 Minuten, ohne Taschenrechner und ohne Formelsammlung.
@@ -149,7 +130,6 @@ FRAGE: Warum reicht in Teil B ein korrektes Ergebnis allein nicht aus? | ANTWORT
 Klausur-Satz: `In Teil A zaehlt das exakte Ergebnis ohne Hilfsmittel, in Teil B der vollstaendig dargestellte Loesungsweg mit Hilfsmitteln.`
 
 ## Fehlvorstellung
-
 (Kein Schritt; wird vom Parser uebersprungen.)
 
 1. Fehlkonzept: In Teil B genuegt dank CAS das blosse Ergebnis ohne Loesungsweg.
@@ -157,15 +137,13 @@ Klausur-Satz: `In Teil A zaehlt das exakte Ergebnis ohne Hilfsmittel, in Teil B 
 2. Fehlkonzept: Die Formelsammlung ersetzt das Auswendiglernen der Grundformeln.
    Korrektur-Satz: `Teil A laeuft ohne Taschenrechner und ohne Formelsammlung, daher muessen die Grundformeln auswendig beherrscht werden.`
 
-## Schritt 7 — szenario
-
+## Schritt 7 — szenario: Klausurtransfer & Rubric
 ROLLE: Du bist Pruefungskoordinator und bereitest einen Jahrgang auf die ZKE vor.
 SITUATION: Du sollst vor der Pruefung eine kurze Strategie-Empfehlung (circa 150 Woerter) formulieren, wie die 100 Minuten zwischen Teil A und Teil B aufgeteilt und wann die Hilfsmittel angefordert werden sollten. Begruende deine Empfehlung mit Blick auf Hilfsmittelregeln und Darstellungsleistung.
 AUFGABE (begruenden, AFB III): Verfasse eine zusammenhaengende Darstellung von etwa 150 Woertern mit Regeln, Zeitaufteilung, Darstellungsleistung und Fazit.
 RUBRIC (30 XP): Korrekte Wiedergabe der Zeit- und Hilfsmittelregeln (5 XP) | Begruendete Zeitaufteilung zwischen Teil A und Teil B (10 XP) | Hinweis auf die Bedeutung der Darstellungsleistung in Teil B (10 XP) | Fazit zur Pruefungsstrategie (5 XP).
 
-## Schritt 8 — entdecken
-
+## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
 TAKEAWAY (Kernbotschaft in einem Kasten):
 
 Die ZKE vereint zwei Takte: Teil A hilfsmittelfrei in hoechstens 25 Minuten mit Handgenauigkeit und Formelgedaechtnis (Nullstellen, Ableitungen, Vektorlaengen), Teil B mit WTR oder CAS plus Formelsammlung in mindestens 75 Minuten mit vollstaendiger Kette aus Ansatz, Rechnung und Antwortsatz. Die Zeitmarke bei Minute 25 sichert den Werkzeugwechsel; die CAS-Anekdote erklaert die Teilung: Maschinen rechnen, Menschen begruenden.
@@ -175,3 +153,4 @@ Takeaway-Satz: `Teil A fehlerfrei und schnell ohne Hilfsmittel rechnen, Teil B v
 REFLEXION (zwei Fragen):
 1. Welcher Schritt fiel schwerer: das hilfsmittelfreie Rechnen in Teil A (Schritt 4) oder das Aufschreiben der vollstaendigen Argumentation fuer Teil B (Schritt 5)?
 2. Beim naechsten Mal lege ich vor Beginn eine Zeitmarke fuer die Abgabe von Teil A fest und pruefe am Ende, ob jeder Teil-B-Schritt einen Antwortsatz besitzt.
+

@@ -15,7 +15,7 @@ version: Lesson-v3
 
 <!-- Lesson v3 9步制架构：Schritt 1至8固定结构；Fehlvorstellung 夹在 Schritt 6 与 7 之间（Parser 自动跳过，不占步数）；支持内嵌 [Werkzeug: <id>] 交互教具；Gating: check/szenario 未过 = Weiter 置灰；XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
-## Schritt 1 — entdecken
+## Schritt 1 — entdecken: Ziele & Phänomen-Einstieg
 
 ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
@@ -25,9 +25,20 @@ ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
 Voraussetzung（窄切口）：只需会多项式展开与约分，本节只做一个点 $x_0$ 的导数，不讨论全区间导函数。
 
+
+Hook中文生活切入:
+
+想象给气球打气时估算某瞬间的膨胀速度:前后一秒的气量差除以时间能得个平均数,可时间隔越短这个平均数就越接近那一刹那的真速度,把间隔压到无穷小,平均就变成了瞬时。h方法做的正是这件事:用割线斜率一步步逼近切线斜率,极限就是导数。
+
+Phaenomen-Satz (DE): Der Schnitt wird immer kuerzer, bis er den Augenblick trifft.
+
+中文机制铺垫:写出差商并代入函数表达式,化简约去h再令h趋于零,极限值即该点导数;几何意义是割线转切线,物理意义是平均速度转瞬时速度,三类题鼻祖都是先化简后取极限,切忌未化简就代入。
+
+Mechanismus-Satz (DE): Der Differenzenquotient misst den Schnitt, sein Grenzwert die Tangente im Punkt.
+
 Klausur-Satz: `Die Ableitung an der Stelle x_0 ist der Grenzwert des Differenzenquotienten fuer h gegen 0.`
 
-## Schritt 2 — entdecken
+## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
 
 PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
 
@@ -41,22 +52,39 @@ PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→�
 
 Klausur-Satz: `Der Differenzenquotient beschreibt die Sekantensteigung; sein Grenzwert fuer h gegen 0 ergibt die Tangentensteigung f'(x_0).`
 
-## Schritt 3 — entdecken
+## Schritt 3 — entdecken: Kernkonzept & Wirkungsmodell
 
-ENTDECKEN（1概念 + 1文字图解）：
+ENTDECKEN（1概念 + 1文字图解，中文在上、德语在下）：
 
-中文：h-方法的核心只有一句话——"先约分、后代入"。差商分母含 $h$，直接代 $h=0$ 会得到 $0/0$，所以必须先把分子展开、约去 $h$，剩下的式子才能令 $h \to 0$。例如 $f(x)=x^2$ 在 $x_0=3$ 处：差商 $= \frac{(3+h)^2-9}{h} = \frac{6h+h^2}{h} = 6+h$，令 $h \to 0$ 得 $6$。几何含义：$h$ 缩小过程中割线转成切线；物理含义：平均速度转成瞬时速度。
+Hook中文生活切入：
+
+中文：想象手机看照片双指放大：放得越大越看清那一点的纹理。h方法就是对函数做双指放大，看割线如何逼近切线。
+
+Phaenomen-Satz (DE): Je kleiner h, desto naeher liegt die Sekante an der Tangente.
+
+Spiel-Aufgabe沙盒操作指引：
+
+中文：打开沙盒，拖动滑块 h 从 1 缩到 0.001（关键词：Sekante, Tangente, Differenzenquotient, Grenzwert），盯着割线斜率 m(h) 如何逼近一个固定数。
+
+Beobachtungs-Satz (DE): Nach Kuerzen von h strebt m(h) gegen eine feste Zahl.
+
+Aha-Moment因果链：
+
+中文因果链：割线斜率是平均变化率，h越小区间越窄；约掉h后再让h趋于0，剩下的就是该点切线斜率即导数；题目点名h方法就必须写出极限过程，直接套公式零分。
+
+Gesetz-Satz (DE): Die Ableitung ist der Grenzwert des Differenzenquotienten.
+
+$f'(x_0) = \lim_{h \to 0} \frac{f(x_0+h)-f(x_0)}{h}$
+
+$m(h) = 5 + h \Rightarrow f'(2) = 5$
 
 文字图解（ASCII 结构图，App支持解析渲染）：
 
 ```diagram
-  f(x0+h) - f(x0)
-  ---------------  --kuerzen-->  6 + h  --h->0-->  f'(x0) = 6
-        h
-  Sekante (h gross)  ----h kleiner---->  Tangente (h -> 0)
-  mittlere Rate      ----h kleiner---->  momentane Rate
+Sekante durch (2|6) und (2+h|f): m(h) = 5+h
+h=1 -> m=6 | h=0.1 -> m=5.1 | h->0 -> m=5
+Punkt (2|6): Tangente mit Steigung 5
 ```
-
 Klausur-Satz: `Nach Kuerzen von h geht der Differenzenquotient fuer h gegen 0 in die Ableitung f'(x_0) ueber.`
 
 ## Anekdote & Fun-Fact
@@ -67,24 +95,31 @@ Klausur-Satz: `Nach Kuerzen von h geht der Differenzenquotient fuer h gegen 0 in
 
 **Bezug zum Konzept**: `Die h-Methode macht die Leibniz-Idee rechenbar: erst kuerzen, dann den Grenzuebergang h gegen 0 vollziehen.`
 
-## Schritt 4 — ausprobieren
+## Schritt 4 — ausprobieren: Interaktive Praxis & Labor
 
-BEISPIEL（正确例题示范，含教具操作与解答）：
+[Werkzeug: tangent-slider]
 
-[Werkzeug: tangent]
+BEISPIEL（正确例题示范，含教具操作与解答，中文在上、德语在下）：
 
-AUFGABE (berechnen, AFB II)：Bestimmen Sie mit der h-Methode die Ableitung von $f(x) = x^2 + x$ an der Stelle $x_0 = 2$ und deuten Sie das Ergebnis geometrisch.
+AUFGABE中文导读（沙盒谜题）：函数在x为2处值为6，差商化简得m(h)等于5加h。请用h方法求该点导数并写出切线斜率。
 
-HILFE:
-1. Schritt 1: Differenzenquotienten mit $x_0 = 2$ aufstellen.
-2. Schritt 2: Zaehler ausmultiplizieren und $h$ kuerzen.
-3. Schritt 3: Grenzuebergang $h \to 0$ durchfuehren und als Steigung deuten.
+AUFGABE (anwenden, AFB II): Fuer $f$ mit $f(2) = 6$ liefert die $h$-Methode $m(h) = 5 + h$. Bestimmen Sie $f'(2)$ als Grenzwert und nennen Sie die Tangentensteigung in $(2|6)$.
 
-MUSTERLÖSUNG: Es gilt $m(h) = \frac{[(2+h)^2+(2+h)]-(4+2)}{h} = \frac{[4+4h+h^2+2+h]-6}{h} = \frac{5h+h^2}{h} = 5+h$. Fuer $h \to 0$ folgt $f'(2) = 5$. Geometrisch ist $5$ die Steigung der Tangente an den Graphen von $f$ im Punkt $(2|6)$; als Aenderungsrate bedeutet es, dass $f$ dort momentan um $5$ Einheiten pro $x$-Einheit waechst.
+HILFE（中德双语步骤）：
 
+1. 中文：第1步写出差商并约掉h，关键词：kuerzen。
+   Schritt 1 (DE): Schreiben Sie $m(h) = 5 + h$ nach Kuerzen hin.
+2. 中文：第2步令h趋于0取极限得5，关键词：Grenzwert。
+   Schritt 2 (DE): $\lim_{h \to 0} m(h) = 5$.
+3. 中文：第3步点出切线斜率为5并落点，关键词：Tangente。
+   Schritt 3 (DE): $f'(2) = 5$ als Steigung in $(2|6)$.
+
+MUSTERLOESUNG：中文：差商已化简为5加h，h趋于0时极限为5，故该点导数为5，切线在点(2|6)处斜率为5，极限过程必须写全。
+
+MUSTERLOESUNG (DE): Mit $m(h) = 5 + h$ folgt $f'(2) = \lim_{h \to 0}(5+h) = 5$; die Tangente in $(2|6)$ hat Steigung $5$.
 Klausur-Satz: `Mit der h-Methode folgt m(h) = 5 + h und damit f'(2) = 5 als Tangentensteigung im Punkt (2|6).`
 
-## Schritt 5 — ausprobieren
+## Schritt 5 — ausprobieren: Verfahrensvergleich & Abgrenzung
 
 VERGLEICH辨别实验（双向辨析：定义求导 vs 法则求导）：
 
@@ -99,7 +134,7 @@ ANTWORT: A erfordert Verfahren (i): $m(h) = \frac{3(1+h)^2-3}{h} = \frac{6h+3h^2
 
 Klausur-Satz: `Wird die h-Methode verlangt, muss der Grenzprozess ausgeschrieben werden; sonst genuegt die Ableitungsregel.`
 
-## Schritt 6 — check
+## Schritt 6 — check: Verständnisprüfung
 
 CHECK检索默写（自测 3 题，与答案配对）：
 
@@ -121,13 +156,13 @@ Klausur-Satz: `Die Ableitung f'(x_0) ist der Grenzwert des Differenzenquotienten
    中文纠偏：差商才是割线斜率，导数是割线在 $h \to 0$ 时的极限，即切线斜率。答题写几何解释时必须写 Tangente，不能写 Sekante。
    Korrektur-Satz: `Der Differenzenquotient gibt die Sekantensteigung, seine Grenze die Tangentensteigung an.`
 
-## Schritt 7 — szenario
+## Schritt 7 — szenario: Klausurtransfer & Rubric
 
 ROLLE: Du bist Tutor und erklaerst einer Lerngruppe die h-Methode.
 SITUATION: Die Gruppe kann die Potenzregel, versteht aber nicht, woher die Ableitung kommt, und verwechselt Sekante mit Tangente. Erklaere in einer zusammenhaengenden Darstellung (ca. 150 Woerter) am Beispiel $f(x) = x^2$ an einer Stelle, wie man vom Differenzenquotienten ueber Kuerzen zum Grenzwert gelangt und was das Ergebnis geometrisch bedeutet.
 RUBRIC (30 XP): Korrekter Dreischritt Aufstellen-Kuerzen-Grenzuebergang (12 XP) | Rechnung am Beispiel mit Ergebnis (8 XP) | Deutung als Tangentensteigung und Abgrenzung zur Sekante (6 XP) | Fachsprachlich korrekte Darstellung (4 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY 1盒（核心总结）：
 

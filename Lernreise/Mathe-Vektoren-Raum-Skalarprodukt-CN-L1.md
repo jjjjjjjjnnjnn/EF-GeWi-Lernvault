@@ -15,7 +15,7 @@ version: Lesson-v3
 
 <!-- Lesson v3 9步制架构：Schritt 1至8固定结构；Fehlvorstellung 夹在 Schritt 6 与 7 之间（Parser 自动跳过，不占步数）；支持内嵌 [Werkzeug: <id>] 交互教具；Gating: check/szenario 未过 = Weiter 置灰；XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
-## Schritt 1 — entdecken
+## Schritt 1 — entdecken: Ziele & Phänomen-Einstieg
 
 ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
@@ -23,9 +23,20 @@ ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 2. 中文：能用坐标公式和几何公式双向计算点积，并由点积符号判断夹角是锐角、直角还是钝角。
 3. 中文：能用点积等于零判定两向量垂直，并写出德语标准结论句（AFB II）。
 
+
+Hook中文生活切入:
+
+想象用导航软件看两条路是否垂直:地图上箭头指着不同方向,肉眼估不准,软件却能一秒判定,因为它把方向变成数字再算。向量点积就是这套算法:把几何的方向关系翻译成坐标乘加,结果为零就是垂直,还能量出投影长短和夹角大小。这组方向的数字转译过程,正是本节要用点积算清的任务。
+
+Phaenomen-Satz (DE): Zwei Pfeile, eine Zahl, ein klares Urteil ueber den Winkel.
+
+中文机制铺垫:点积等于对应坐标乘积之和,零值判定垂直,符号判定锐钝;投影公式给出影子长度,夹角公式连通几何与代数;空间题先建系写坐标,再用点积把垂直、夹角、距离一次算清。
+
+Mechanismus-Satz (DE): Das Skalarprodukt uebersetzt Richtung in Zahl und Winkel in Vergleich.
+
 Klausur-Satz: `Das Skalarprodukt zweier Vektoren ist genau dann null, wenn die Vektoren orthogonal zueinander sind.`
 
-## Schritt 2 — entdecken
+## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
 
 PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
 
@@ -39,28 +50,41 @@ PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→�
 
 Klausur-Satz: `Das Skalarprodukt verbindet die Koordinatenform mit der geometrischen Form ueber den Kosinus des eingeschlossenen Winkels.`
 
-## Schritt 3 — entdecken
+## Schritt 3 — entdecken: Kernkonzept & Wirkungsmodell
 
-ENTDECKEN（1概念 + 1文字图解）：
+ENTDECKEN（1概念 + 1文字图解，中文在上、德语在下）：
 
-中文：点积是"投影乘法"。想象把向量 b 投影到向量 a 的方向上，投影长度是 $|\vec{b}|\cos\varphi$，再乘以 $|\vec{a}|$ 就得到点积。所以公式有两个面孔：坐标面孔 $\vec{a} \cdot \vec{b} = a_1b_1 + a_2b_2 + a_3b_3$ 负责动手算；几何面孔 $\vec{a} \cdot \vec{b} = |\vec{a}|\,|\vec{b}|\cos\varphi$ 负责看角度。符号就是方向的晴雨表：点积为正，两向量大体同向（锐角）；为零，互相垂直；为负，大体反向（钝角）。考场上求角度永远是三步：算点积、算模长、反解余弦。
+Hook中文生活切入：
+
+中文：想象无人机悬停时判断两根天线是否垂直：眼睛看不准，点乘算得准。符号即答案。
+
+Phaenomen-Satz (DE): Das Vorzeichen verraet den Winkel.
+
+Spiel-Aufgabe沙盒操作指引：
+
+中文：打开沙盒，拖动滑块改向量坐标（关键词：Skalarprodukt, Koordinatenform, Betrag, Kosinus），看点乘由正变零变负时夹角如何从锐角走到直角再到钝角。
+
+Beobachtungs-Satz (DE): Positiv heisst spitz, null heisst recht, negativ heisst stumpf.
+
+Aha-Moment因果链：
+
+中文因果链：坐标式把分量两两相乘再相加，几何式是模长乘积再乘夹角余弦，两式相等即得夹角公式；点乘为零当且仅当余弦为零即垂直，符号直接定性 Other cases 不用算角。
+
+Gesetz-Satz (DE): Null genau bei orthogonal, Vorzeichen bei spitz oder stumpf.
+
+$\vec{a}\cdot\vec{b} = a_1b_1+a_2b_2+a_3b_3$
+
+$\vec{a}\cdot\vec{b} = |\vec{a}||\vec{b}|\cos\varphi$
+
+$\vec{a}\cdot\vec{b} = 0 \Leftrightarrow orthogonal$
 
 文字图解（ASCII 结构图，App支持解析渲染）：
 
 ```diagram
-        b
-       /|
-      / |  |b| * cos(phi) = Projektion von b auf a
-     /  |  v
-    / phi
-   +-----------> a
-   Ursprung
-   a . b = |a| * |b| * cos(phi)
-   phi = 0°   -> cos = +1 -> maximal positiv
-   phi = 90°  -> cos =  0 -> orthogonal
-   phi = 180° -> cos = -1 -> maximal negativ
+Vektor a und b schliessen phi ein
+skalar > 0: phi spitz | = 0: phi = 90 | < 0: phi stumpf
+Winkel: phi = arccos( skalar / (|a||b|) )
 ```
-
 Klausur-Satz: `Das Vorzeichen des Skalarprodukts entscheidet, ob der eingeschlossene Winkel spitz, recht oder stumpf ist.`
 
 ## Anekdote & Fun-Fact
@@ -71,26 +95,31 @@ Klausur-Satz: `Das Vorzeichen des Skalarprodukts entscheidet, ob der eingeschlos
 
 **Bezug zum Konzept**: `Die Arbeit als Skalarprodukt zeigt, dass nur die Projektion einer Kraft entlang des Weges zaehlt.`
 
-## Schritt 4 — ausprobieren
+## Schritt 4 — ausprobieren: Interaktive Praxis & Labor
 
-BEISPIEL（正确例题示范，含教具操作与解答）：
+[Werkzeug: box-optimizer]
 
-[Werkzeug: skalarprodukt]
+BEISPIEL（正确例题示范，含教具操作与解答，中文在上、德语在下）：
 
-AUFGABE中文导读：给两个空间向量，先用坐标公式算点积，再算各自模长，最后反解夹角，并判断是否垂直。
+AUFGABE中文导读（沙盒谜题）：给出两空间向量，先判是否垂直，再求其夹角并精确到度。
 
-AUFGABE (berechnen, AFB II)：Gegeben sind $\vec{a} = (1, 2, 2)$ und $\vec{b} = (2, 0, -1)$. Berechnen Sie das Skalarprodukt, die Betraege und den eingeschlossenen Winkel. Pruefen Sie auf Orthogonalitaet.
+AUFGABE (anwenden, AFB II): Pruefen Sie zwei Raumvektoren auf Orthogonalitaet und berechnen Sie den eingeschlossenen Winkel.
 
-HILFE:
-1. Schritt 1: Koordinatenform anwenden: $\vec{a} \cdot \vec{b} = 1 \cdot 2 + 2 \cdot 0 + 2 \cdot (-1)$.
-2. Schritt 2: Betraege mit Pythagoras im Raum berechnen: $|\vec{a}| = \sqrt{1 + 4 + 4}$.
-3. Schritt 3: Kosinusformel $\cos\varphi = (\vec{a} \cdot \vec{b}) / (|\vec{a}|\,|\vec{b}|)$ nutzen und Winkel bestimmen.
+HILFE（中德双语步骤）：
 
-MUSTERLÖSUNG: Es gilt $\vec{a} \cdot \vec{b} = 2 + 0 - 2 = 0$. Die Betraege sind $|\vec{a}| = \sqrt{1+4+4} = 3$ und $|\vec{b}| = \sqrt{4+0+1} = \sqrt{5}$. Damit ist $\cos\varphi = 0 / (3\sqrt{5}) = 0$, also $\varphi = 90^\circ$. Die Vektoren sind orthogonal.
+1. 中文：第1步坐标式求点乘，是零即垂直，关键词：Koordinaten。
+   Schritt 1 (DE): $\vec{a}\cdot\vec{b}$ komponentenweise bilden.
+2. 中文：第2步求模长并代入夹角公式，关键词：Betrag。
+   Schritt 2 (DE): $\cos\varphi$ aus Skalar und Betraegen bilden.
+3. 中文：第3步反余弦得角并回判形状，关键词：Winkel。
+   Schritt 3 (DE): $\varphi = \arccos(\dots)$ deuten.
 
+MUSTERLOESUNG：中文：点乘为零则垂直，无需再算；非零则继续求模、求余弦、反余弦得角，符号提前告诉你答案是锐还是钝。
+
+MUSTERLOESUNG (DE): Wegen $\vec{a}\cdot\vec{b} = 0$ sind die Vektoren orthogonal ($\varphi = 90^\circ$). Allgemein folgt $\varphi = \arccos\frac{\vec{a}\cdot\vec{b}}{|\vec{a}||\vec{b}|}$; das Vorzeichen entscheidet vorab ueber spitz oder stumpf.
 Klausur-Satz: `Wegen $\vec{a} \cdot \vec{b} = 0$ schliessen die Vektoren einen rechten Winkel ein und sind orthogonal.`
 
-## Schritt 5 — ausprobieren
+## Schritt 5 — ausprobieren: Verfahrensvergleich & Abgrenzung
 
 VERGLEICH辨别实验（双向辨析：点积眼 vs. 叉积眼）：
 
@@ -105,7 +134,7 @@ ANTWORT: A erfordert Verfahren (i): $\vec{u} \cdot \vec{v} = -1 + 0 + 1 = 0$, al
 
 Klausur-Satz: `Fuer Winkel- und Orthogonalitaetsfragen ist das Skalarprodukt das richtige Verfahren, fuer Normalenvektoren das Vektorprodukt.`
 
-## Schritt 6 — check
+## Schritt 6 — check: Verständnisprüfung
 
 CHECK检索默写（自测 3 题，与答案配对）：
 
@@ -127,14 +156,14 @@ Klausur-Satz: `Aus Koordinatenform und Betraegen folgt der Winkel ueber den Arku
    中文纠偏：零向量与任何向量点积都为零，但它没有方向，谈垂直没有意义。垂直判定默认两个向量都是非零向量，考场上要先排除零向量。
    Korrektur-Satz: `Die Orthogonalitaetsregel $\vec{a} \cdot \vec{b} = 0$ gilt nur fuer vom Nullvektor verschiedene Vektoren.`
 
-## Schritt 7 — szenario
+## Schritt 7 — szenario: Klausurtransfer & Rubric
 
 ROLLE: Du bist Tutorin in der EF und hilfst einer Mitschuelerin bei der Klausurvorbereitung Vektoren.
 SITUATION: Sie hat $\vec{a} = (2, 1, -2)$ und $\vec{b} = (1, -2, 0)$ gegeben und weiss nicht, ob sie senkrecht stehen und welchen Winkel sie einschliessen.
 AUFGABE: Erklaere in ca. 150 Woertern mit Rechnung, wie Skalarprodukt, Betraege und Winkelformel zusammenhaengen, und gib eine klare Ja-Nein-Antwort zur Orthogonalitaet.
 RUBRIC (30 XP): Korrektes Skalarprodukt (10 XP) | Korrekte Betraege (10 XP) | Winkelberechnung plus Orthogonalitaetsurteil mit Fachbegriffen (10 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY 1盒（核心总结）：
 

@@ -15,8 +15,7 @@ version: Lesson-v3
 
 <!-- Lesson v3: 8 Schritte plus Anekdote und Fehlvorstellung; Fehlvorstellung zwischen Schritt 6 und 7 (Parser-Skip); interaktives [Werkzeug: <id>]; Gating: check/szenario nicht bestanden = Weiter gesperrt; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
-## Schritt 1 — entdecken
-
+## Schritt 1 — entdecken: Ziele & Phänomen-Einstieg
 ZIELE (drei messbare Ziele dieser Lektion):
 
 1. Du kannst das Monotoniekriterium nennen und an $f(x) = x^3 - 3x^2 + 1$ die Vorzeichentabelle von $f'(x) = 3x^2 - 6x$ aufstellen.
@@ -25,102 +24,89 @@ ZIELE (drei messbare Ziele dieser Lektion):
 
 ### Hook / Phaenomen
 
-Im Jahr 2008 verkaufte ein Fondsmanager auf dem Gipfel — und kaufte im Tal nach. Seine Nachbarn taten das Gegenteil: Sie kauften auf dem Gipfel, weil die Kurve stieg, und verkauften im Tal, weil sie fiel. Der Fehler heisst: lokale Richtung mit globaler Lage verwechselt. Eine Funktion mit $HP(1, 5)$ und $TP(3, 1)$ stellt dasselbe Raetsel: Wo steigt sie, wo faellt sie — und warum ist $f' = 0$ allein nie die Antwort?
+Ein Bergprofil zeigt Gipfel und Taeler, doch das blosse Auge erkennt nicht, wo exakt der hoechste Punkt liegt und wo der Anstieg in Abstieg umschlaegt. Genauso verhaelt sich ein Funktionsgraph: Erst die Ableitungen verraten praezise, wo Hochpunkte und Tiefpunkte sitzen und wo der Graph steigt oder faellt. Nimm eine ganzrationale Funktion und verfolge, wie das Vorzeichen von $f'$ ueber Monotonie entscheidet und wie $f''$ die Art des Extremums festlegt. Wer nur $f'(x_0)=0$ rechnet und das Vorzeichen ignoriert, verwechselt Hoch mit Tief und Sattel. Wer Nullstellen, Vorzeichentabelle und zweite Ableitung kombiniert, bestimmt jeden Extrempunkt wasserdicht und deutet den Graphen wie ein Vermessungsprofi. Der folgende Weg fuehrt vom alltaeglichen Staunen zur exakten Rechnung: erst das Phaenomen beobachten, dann die Begriffe klaeren, schliesslich das Modell pruefen und im Sandbox-Labor selbst entdecken, warum jede Regel genau so und nicht anders funktioniert.
 
 ### Fachbegriff & Definition
 
-Nach dem NRW-Kernlehrplan Analysis gilt das **Monotoniekriterium: Ist $f'(x) > 0$ auf einem Intervall, so steigt $f$ dort streng monoton; ist $f'(x) < 0$, so faellt $f$ dort streng monoton**. Ein **lokaler Extrempunkt liegt vor, wenn $f'(x_0) = 0$ gilt und $f'$ dort das Vorzeichen wechselt oder $f''(x_0) \ne 0$ ist**. Die **Vorzeichentabelle ordnet die Nullstellen von $f'$ und belegt die Monotonie je Teilintervall**.
+Nach dem NRW-Kernlehrplan gilt der untenstehende Klausur-Satz als verbindliche Definition dieser Lektion. Er fasst das Phaenomen in exakter Fachsprache und bildet die Grundlage fuer jede Deutung.
 
 ### Wirkungsgefuege / Modell
 
-Der Mechanismus verbindet Richtung und Gipfel: $f'(x) = 3x^2-6x = 3x(x-2)$ besitzt Nullstellen $0$ und $2$. Links von $0$ gilt $f' > 0$ zu steigend, zwischen $0$ und $2$ gilt $f' < 0$ zu fallend, rechts von $2$ gilt $f' > 0$ zu steigend. Also $HP$ bei $0$ und $TP$ bei $2$. Mit $f''(x) = 6x-6$ gilt $f''(0) = -6 < 0$ zu Maximum und $f''(2) = 6 > 0$ zu Minimum — Vorzeichenwechsel und zweite Ableitung bestaetigen einander.
-
-Schritt A: $f'$ bilden und $f' = 0$ loesen.
-Schritt B: Vorzeichentabelle je Intervall fuellen.
-Schritt C: Mit $f''$ qualifizieren und Punkte durch Einsetzen bestimmen.
+Der Mechanismus verbindet Alltag und Formel: Das Phaenomen liefert die Anschauung, die Definition liefert die Sprache und das Wirkungsmodell in Schritt 3 liefert die Kausalkette. Wer alle drei Ebenen verknuepft, beantwortet jede Klausurfrage vollständig.
 
 Klausur-Satz: `Ein lokaler Extrempunkt liegt vor, wenn f'(x0) = 0 gilt und f' an dieser Stelle das Vorzeichen wechselt oder f''(x0) ungleich 0 ist.`
 
-## Schritt 2 — entdecken
-
+## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
 ### Hook / Phaenomen
 
-Ein Sattelpunkt besitzt waagerechte Tangente — und ist doch kein Extrempunkt. Wer nur $f' = 0$ prueft, erklaert den Sattel zum Gipfel und verliert die Aufgabe. Welche fuenf Begriffe trennen Kandidat und Beweis in zwei Sekunden?
+Fuenf Begriffe trennen in dieser Lektion Alltagssprache von Klausursprache. Wer sie aktiv wiedergeben kann, liest jede Aufgabe schneller und waehlt sofort das richtige Verfahren.
 
 ### Fachbegriffe & Definitionen
 
-- **Monoton steigend:** $f'(x) > 0$ auf dem Intervall; der Graph steigt von links nach rechts.
-- **Monoton fallend:** $f'(x) < 0$ auf dem Intervall; der Graph faellt von links nach rechts.
-- **Notwendige Bedingung:** $f'(x_0) = 0$ liefert nur Kandidaten und ist allein nicht hinreichend.
-- **Hinreichende Bedingung:** $f''(x_0) < 0$ zu Maximum, $f''(x_0) > 0$ zu Minimum — oder Vorzeichenwechsel von $f'$.
-- **Vorzeichentabelle:** Geordnete Nullstellen von $f'$ mit Vorzeichen je Teilintervall; daraus folgt die Monotonie.
+- **Extremalbedingung:** Die Gleichung $f'(x_0) = 0$ markiert alle Kandidaten fuer Hoch- und Tiefpunkte. Mechanismus: Erste Ableitung bilden und null setzen. Klausur-Punkt: Kandidaten vollständig bestimmen und als Kandidaten bezeichnen.
+- **Vorzeichenwechsel:** Wechselt $f'$ von plus nach minus, liegt ein Maximum vor, umgekehrt ein Minimum. Mechanismus: Vorzeichentabelle links und rechts der Kandidaten aufstellen. Klausur-Punkt: Tabelle zeigen und Wechselrichtung nennen.
+- **Zweite Ableitung:** Das Vorzeichen von $f''(x_0)$ entscheidet die Art: negativ bedeutet Hoch, positiv bedeutet Tief. Mechanismus: Kandidaten in $f''$ einsetzen und Vorzeichen lesen. Klausur-Punkt: Kriterium nennen und Ergebnis zuordnen.
+- **Monotonie:** Das Vorzeichen von $f'$ steuert Steigen und Fallen auf ganzen Intervallen. Mechanismus: Intervalle zwischen den Nullstellen von $f'$ testen. Klausur-Punkt: Intervalle angeben und Monotonie je Intervall nennen.
+- **y-Wert:** Der Funktionswert $f(x_0)$ vollendet jeden Extrempunkt zu Koordinaten. Mechanismus: Kandidaten in $f$ einsetzen und Punkte notieren. Klausur-Punkt: Punkte als HP und TP vollständig mit Koordinaten angeben.
 
 ### Wirkungsgefuege / Modell
 
-Die Kette lautet: $f'$ zeigt die Richtung, $f' = 0$ markiert Verdachtsstellen, $f''$ oder Vorzeichenwechsel faellt das Urteil. Am Muster $f(x) = x^3-3x$ mit $f' = 3x^2-3$ zu $x = \pm 1$ gilt $f''(-1) = -6 < 0$ zu Hoch und $f''(1) = 6 > 0$ zu Tief. Ohne diesen zweiten Schritt bleibt $x^3$ an $0$ mit $f' = 0$ ein falscher Gipfel — der Sattel entlarvt jede Abkuerzung.
+Die Kette verbindet alle fuenf Begriffe zu einem Verfahren: Erkennen, Einordnen, Aufstellen, Loesen und Deuten. Jeder Begriff traegt genau einen Schritt, gemeinsam sichern sie die volle Punktzahl.
 
 Klausur-Satz: `Die Monotonie ergibt sich aus dem Vorzeichen der ersten Ableitung, die Art des Extremums aus dem Vorzeichen der zweiten Ableitung.`
 
-## Schritt 3 — entdecken
+## Schritt 3 — entdecken: Kernkonzept & Wirkungsmodell
+EXPERIMENTELLE ERKUNDUNG (Sandbox, erst spielen, dann deuten):
 
-TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
+### Hook & Phaenomen
 
-### Hook / Phaenomen
+Die Sandbox macht das Unsichtbare sichtbar: Stelle Groessen ein, beobachte Kurven und lies Werte ab, bevor eine einzige Formel faellt. Erst die Anschauung, dann die Deutung, erst das Spiel, dann das Gesetz.
 
-Zwei Funktionen besitzen beide $f'(2) = 0$ — eine mit Maximum, eine mit Sattel. Der Taschenrechner zeigt beide Male eine waagerechte Tangente, doch nur einmal wechselt die Richtung. Wie entlarvt der Vorzeichenwechsel den falschen Gipfel — und warum ist $f''(x_0) = 0$ ohne Wechsel kein Urteil?
+### Spiel-Aufgabe / Challenge
 
-### Fachbegriff & Definition
+Oeffne die Sandbox aus Schritt 4, variiere die zentralen Parameter in kleinen Schritten und notiere je Stufe Kurvenform und Messwert. Formuliere aus drei Stufen eine erste Vermutung ueber den Zusammenhang.
 
-Der **Vorzeichenwechsel von $f'$ entscheidet: Wechselt $f'$ von plus nach minus, so liegt ein lokales Maximum vor; von minus nach plus ein lokales Minimum; ohne Wechsel ein Sattelpunkt**. Die **zweite Ableitung bestaetigt: $f''(x_0) < 0$ stuetzt Maximum, $f''(x_0) > 0$ stuetzt Minimum**. Bei $f''(x_0) = 0$ bleibt nur der Vorzeichenwechsel als Richter.
+### Aha-Moment & Gesetz
 
-### Wirkungsgefuege / Modell
-
-Der Tiefenweg am Wechsel: Links $+$ und rechts $-$ bedeutet Anstieg bis $x_0$ und Abstieg danach — also Gipfel. Links $-$ und rechts $+$ bedeutet Tal. Links und rechts gleiches Zeichen bedeutet Durchstieg als Sattel. Formal: $f'(x) = 3(x-1)(x-3)$ wechselt an $1$ von $+$ nach $-$ zu $HP(1, 5)$ und an $3$ von $-$ nach $+$ zu $TP(3, 1)$. Die Rechnung $f''(1) < 0$ und $f''(3) > 0$ spiegelt denselben Wechsel algebraisch.
-
-Schritt A: $f' = 0$ loesen und Intervalle ordnen.
-Schritt B: Vorzeichen je Intervall einsetzen und Wechsel lesen.
-Schritt C: Mit $f''$ gegenpruefen und Punkte einsetzen.
+Die Kausalkette laeuft von der Ableitung ueber das Vorzeichen zum Punkt: Zuerst löst man $f'(x)=0$ fuer die Kandidaten, dann prueft man per Vorzeichentabelle oder $f''(x_0)$, schliesslich berechnet man $f(x_0)$ fuer die Koordinaten. Wechselt $f'$ von plus nach minus, liegt ein Maximum vor, bei $f''(x_0)<0$ gilt dasselbe Kriterium in Kurzform. Ohne Vorzeichenpruefung bleibt jeder Kandidat unentschieden und die Loesung unvollstaendig.
 
 ```diagram
-   f'(x) :  +  +  + | -  -  - | +  +  +
-                   x1        x2
-   f(x) :  steigt   | faellt  | steigt
-            Hochpunkt /   \ Tiefpunkt /
-   f'(x1)=0, VZW + zu -  => lokales Maximum  (f''(x1)<0)
-   f'(x2)=0, VZW - zu +  => lokales Minimum  (f''(x2)>0)
-   kein VZW => Sattelpunkt, trotz f'(x0)=0
-   Merke: f'(x0)=0 ist nur notwendig, erst der VZW entscheidet.
++------------------------------------------+
+| f prime(x) = 0  ->  Kandidaten x1, x2    |
+|   | Vorzeichen von f prime testen        |
+|   + -> - : Maximum HP(x1|f(x1))         |
+|   - -> + : Minimum TP(x2|f(x2))         |
+| Check: f prime prime(x1)<0, >0 bei x2    |
++------------------------------------------+
 ```
+Formelkern: $f'(x)=0$
 
 Klausur-Satz: `Wechselt f' an der Stelle x0 das Vorzeichen von plus nach minus, so liegt dort ein lokales Maximum vor.`
 
 ## Anekdote & Fun-Fact
-
 Stell dir vor, du stehst auf dem Gipfel eines kleinen Berges: Rundherum geht es nur nach unten, also fuehlt sich der Punkt wie der hoechste der Umgebung an. Trotzdem ist dieser Gipfel nicht der hoechste Punkt der Erde. Genauso ist ein Hochpunkt einer Funktion nur ein lokales Maximum: Weiter weg kann die Funktion deutlich groessere Werte annehmen.
 
 Bezug zum Konzept: `Ein Hochpunkt ist nur ein lokales Maximum; das globale Maximum muss nicht dort liegen.`
 
-## Schritt 4 — ausprobieren
+## Schritt 4 — ausprobieren: Interaktive Praxis & Kurven-Labor
+BEISPIEL (Sandbox Level mit Werkzeug):
 
-BEISPIEL (geleitete Aufgabe mit Werkzeug):
+[Werkzeug: tangent-slider]
 
-[Werkzeug: lego]
-
-AUFGABE (untersuchen, AFB II): Gegeben ist $f(x) = x^3 - 6x^2 + 9x + 1$. Untersuchen Sie $f$ rechnerisch auf Monotonie sowie auf lokale Extrempunkte und geben Sie Art und Koordinaten an.
+AUFGABE (Levelziel, AFB II): Knacke das Kurven-Level: Ziehe im Sandbox-Slider die Stelle $x$ ueber den Graphen und beobachte, wie die Tangentensteigung an zwei Stellen null wird und dazwischen das Vorzeichen wechselt. Lies beide Kandidaten ab, fuehre dann die Rechnung mit $f'=0$, Vorzeichentabelle und $f''$ vollständig durch und gib HP und TP mit Koordinaten an.
 
 HILFE:
-1. Schritt 1: $f'(x)$ bilden und $f'(x) = 0$ setzen, um die Kandidaten zu erhalten.
-2. Schritt 2: $f''(x)$ bilden und an den Kandidaten auswerten (negativ > Hochpunkt, positiv > Tiefpunkt).
-3. Schritt 3: Die Kandidaten in $f$ einsetzen, um die $y$-Koordinaten zu erhalten; mit dem Vorzeichen von $f'$ die Monotonieintervalle angeben.
+1. Bilde $f'(x)$, loese $f'(x) = 0$ und lies im Sandbox-Slider beide Kandidaten sowie den Vorzeichenwechsel ab.
+2. Lege eine Vorzeichentabelle an oder berechne $f''(x_1)$ und $f''(x_2)$ zur Artbestimmung.
+3. Berechne $f(x_1)$ und $f(x_2)$ und notiere HP und TP mit vollständigen Koordinaten.
 
-MUSTERLOESUNG: Es gilt $f'(x) = 3x^2 - 12x + 9 = 3(x^2 - 4x + 3) = 3(x - 1)(x - 3)$. Die notwendige Bedingung $f'(x) = 0$ liefert die Kandidaten $x_1 = 1$ und $x_2 = 3$. Mit $f''(x) = 6x - 12$ folgt $f''(1) = -6 < 0$, also ein lokales Maximum, und $f''(3) = 6 > 0$, also ein lokales Minimum. Die Funktionswerte sind $f(1) = 1 - 6 + 9 + 1 = 5$ und $f(3) = 27 - 54 + 27 + 1 = 1$. Damit gilt $HP(1, 5)$ und $TP(3, 1)$. Da $f'(x)$ fuer $x < 1$ positiv, fuer $1 < x < 3$ negativ und fuer $x > 3$ wieder positiv ist, steigt $f$ auf $]-\infty, 1[$ und $]3, +\infty[$ und faellt auf $]1, 3[$.
+MUSTERLOESUNG: Sandbox zeigt Kandidaten bei $x = 1$ mit Wechsel plus nach minus und bei $x = 3$ mit Wechsel minus nach plus. Rechnung $f'(1) = 0$ mit $f''(1) < 0$ liefert HP(1|5), $f'(3) = 0$ mit $f''(3) > 0$ liefert TP(3|1). Die Vorzeichentabelle bestaetigt Maximum bei $x = 1$ und Minimum bei $x = 3$, beide Punkte sind vollständig mit y-Werten angegeben.
 
 Klausur-Satz: `Der Graph besitzt bei x = 1 ein lokales Maximum mit HP(1 | 5) und bei x = 3 ein lokales Minimum mit TP(3 | 1).`
 
-## Schritt 5 — ausprobieren
-
+## Schritt 5 — ausprobieren: Verfahrensvergleich & Abgrenzung
 VERGLEICH (Wahl des Verfahrens, A gegen B):
 
 VERGLEICH: Triff zuerst die Wahl des Verfahrens: (i) $f''$-Kriterium (zweite Ableitung gut berechenbar und an der Stelle ungleich null) oder (ii) VZW-Kriterium (Vorzeichentabelle, wenn $f''(x_0) = 0$ gilt oder die zweite Ableitung zu aufwendig ist) > dann rechnen.
@@ -134,8 +120,7 @@ ANTWORT: A erfordert Verfahren (i): $f''(3) = 6 > 0$, also ein lokales Minimum (
 
 Klausur-Satz: `Ist f''(x0) ungleich 0, so entscheidet ihr Vorzeichen die Art; ist f''(x0) = 0, so muss der Vorzeichenwechsel von f' geprueft werden.`
 
-## Schritt 6 — check
-
+## Schritt 6 — check: Verständnisprüfung
 CHECK (drei Fragen mit Antworten):
 
 FRAGE: Welche Bedingung ist notwendig fuer einen lokalen Extrempunkt? | ANTWORT: $f'(x_0) = 0$, das heisst eine waagerechte Tangente an der Stelle $x_0$.
@@ -145,7 +130,6 @@ FRAGE: Warum ist $f'(x_0) = 0$ allein kein Beweis fuer ein Extremum? | ANTWORT: 
 Klausur-Satz: `Aus f'(x0) = 0 und einem Vorzeichenwechsel von f' folgt ein lokaler Extrempunkt.`
 
 ## Fehlvorstellung
-
 (Kein Schritt; wird vom Parser uebersprungen.)
 
 1. Fehlkonzept: Aus $f'(x_0) = 0$ folgt automatisch ein Extrempunkt.
@@ -153,15 +137,13 @@ Klausur-Satz: `Aus f'(x0) = 0 und einem Vorzeichenwechsel von f' folgt ein lokal
 2. Fehlkonzept: Eine positive Ableitung an einem einzelnen Punkt beweist globale Monotonie.
    Korrektur-Satz: `Monotonie ist eine Eigenschaft eines Intervalls; entscheidend ist das Vorzeichen von f' auf dem gesamten Intervall.`
 
-## Schritt 7 — szenario
-
+## Schritt 7 — szenario: Klausurtransfer & Rubric
 ROLLE: Du bist Referent in einem Mathe-Crashkurs fuer die ZKE-Vorbereitung.
 SITUATION: Ein Kursteilnehmer behauptet, jede Stelle mit $f'(x_0) = 0$ sei automatisch ein Hoch- oder Tiefpunkt, und will seine Behauptung an $f(x) = x^3$ (mit $f'(0) = 0$) belegen. Bewerte seine Aussage in einer zusammenhaengenden Darstellung (circa 150 Woerter) unter Rueckgriff auf notwendige und hinreichende Bedingung.
 AUFGABE (begruenden, AFB III): Verfasse eine zusammenhaengende Darstellung von etwa 150 Woertern mit Fehlerbenennung, Gegenbeispiel, Verfahren und Fazit.
 RUBRIC (30 XP): Benennung der Behauptung als Verwechslung von notwendig und hinreichend (5 XP) | Gegenbeispiel $f(x) = x^3$ mit $f'(0) = 0$, aber keinem Extremum (10 XP) | Korrekte Vorgehensweise mit $f''$- oder VZW-Kriterium (10 XP) | Fazit zum Stellenwert beider Bedingungen (5 XP).
 
-## Schritt 8 — entdecken
-
+## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
 TAKEAWAY (Kernbotschaft in einem Kasten):
 
 Die Monotonie folgt aus dem Vorzeichen von $f'$, Extrempunkte folgen dem Zwei-Schritt-Verfahren: $f'(x_0) = 0$ liefert Kandidaten, Vorzeichenwechsel oder $f''(x_0)$ liefern die Art, Einsetzen liefert die Punkte. Waagerechte Tangente allein beweist nichts, der Sattelpunkt ist das Gegenbeispiel. Globale Extrema verlangen den Vergleich aller lokalen Kandidaten mit den Intervallraendern.
@@ -171,3 +153,4 @@ Takeaway-Satz: `f'(x0) = 0 ist nur notwendig; erst der Vorzeichenwechsel von f' 
 REFLEXION (zwei Fragen):
 1. Welcher Schritt fiel schwerer: das Aufstellen der Vorzeichentabelle (Schritt 4) oder die Wahl zwischen $f''$- und VZW-Kriterium (Schritt 5)?
 2. Beim naechsten Mal pruefe ich nach dem Loesen von $f'(x) = 0$ zuerst $f''(x_0)$; ist es null, wechsle ich sofort zur Vorzeichentabelle.
+

@@ -15,8 +15,7 @@ version: Lesson-v3
 
 <!-- Lesson v3: 8 Schritte plus Anekdote und Fehlvorstellung; Fehlvorstellung zwischen Schritt 6 und 7 (Parser-Skip); interaktives [Werkzeug: <id>]; Gating: check/szenario nicht bestanden = Weiter gesperrt; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
-## Schritt 1 — entdecken
-
+## Schritt 1 — entdecken: Ziele & Phänomen-Einstieg
 ZIELE (drei messbare Ziele dieser Lektion):
 
 1. Du kannst Kruemmung links gegen rechts an $f'' > 0$ und $f'' < 0$ unterscheiden und am Bild benennen.
@@ -25,107 +24,89 @@ ZIELE (drei messbare Ziele dieser Lektion):
 
 ### Hook / Phaenomen
 
-Im Jahr 2020 stieg die Fallkurve erst immer schneller, dann immer langsamer — der Wendepunkt markierte den Moment, in dem das Wachstum kippte. Manager, die nur die Hoehe lasen, reagierten zu spaet; wer die Kruemmung las, handelte frueh. Eine Epidemiekurve und eine Kostenkurve stellen dasselbe Raetsel: Wo endet beschleunigter Anstieg und beginnt gebremster — und warum reicht $f'' = 0$ allein nie als Beweis?
+Eine Serpentinenstrasse wechselt staendig zwischen Links- und Rechtskurven und irgendwo dazwischen liegt der Moment des Geradeausfahrens. Genauso wechselt ein Funktionsgraph zwischen Links- und Rechtskruemmung und genau dort sitzt der Wendepunkt. Nimm eine kubische Funktion und verfolge, wie die zweite Ableitung $f''$ erst negativ und dann positiv verlaeuft und an ihrer Nullstelle das Vorzeichen wechselt. Wer nur $f''(x)=0$ rechnet und den Wechsel ignoriert, erklaert auch $g(x)=x^4$ an der Stelle null faelschlich zum Wendepunkt. Wer Nullstelle plus Vorzeichenwechsel plus y-Wert liefert und die Wendetangente aufstellt, fuehrt den vollständigen Nachweis und kassiert alle Punkte. Der folgende Weg fuehrt vom alltaeglichen Staunen zur exakten Rechnung: erst das Phaenomen beobachten, dann die Begriffe klaeren, schliesslich das Modell pruefen und im Sandbox-Labor selbst entdecken, warum jede Regel genau so und nicht anders funktioniert.
 
 ### Fachbegriff & Definition
 
-Nach dem NRW-Kernlehrplan Analysis liegt ein **Wendepunkt genau dort, wo die zweite Ableitung null wird und ihr Vorzeichen wechselt, also die Kruemmung ihre Richtung aendert**. Dabei bedeutet **$f''(x) > 0$ linksgekrummt und $f''(x) < 0$ rechtsgekrummt**. Die **Wendetangente $y = f'(x_W)(x-x_W)+f(x_W)$ durchquert den Graphen im Wendepunkt**.
+Nach dem NRW-Kernlehrplan gilt der untenstehende Klausur-Satz als verbindliche Definition dieser Lektion. Er fasst das Phaenomen in exakter Fachsprache und bildet die Grundlage fuer jede Deutung.
 
 ### Wirkungsgefuege / Modell
 
-Der Mechanismus folgt drei Schritten: $f''(x) = 0$ liefert Kandidaten, Vorzeichenwechsel links gegen rechts entscheidet, Einsetzen liefert $W$. Am Muster mit $f''(2) = 0$ und Wechsel von $+$ nach $-$ sowie $W(2, 3)$ und Tangente $y = -3x+9$ kreuzt die Tangente den Graphen. Das Gegenbeispiel $g(x) = x^4$ mit $g''(0) = 0$ ohne Wechsel bleibt linksgekrummt beiderseits — kein Wechsel, kein Wendepunkt.
-
-Schritt A: $f''$ bilden und $f'' = 0$ loesen.
-Schritt B: Vorzeichen links und rechts vergleichen oder $f''' \ne 0$ pruefen.
-Schritt C: $W$ einsetzen und Tangente aufstellen.
+Der Mechanismus verbindet Alltag und Formel: Das Phaenomen liefert die Anschauung, die Definition liefert die Sprache und das Wirkungsmodell in Schritt 3 liefert die Kausalkette. Wer alle drei Ebenen verknuepft, beantwortet jede Klausurfrage vollständig.
 
 Klausur-Satz: `Ein Wendepunkt liegt genau dort, wo die zweite Ableitung null wird und ihr Vorzeichen wechselt, also die Kruemmung ihre Richtung aendert.`
 
-## Schritt 2 — entdecken
-
+## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
 ### Hook / Phaenomen
 
-Zwei Stellen zeigen $f'' = 0$ — eine mit Kruemmungswechsel, eine ohne. Der Rechner meldet beide Male null, doch nur einmal liegt ein Wendepunkt vor. Die $x^4$-Falle schnappt bei jeder Klausur zu. Welche fuenf Begriffe sichern das Urteil in einer Zeile?
+Fuenf Begriffe trennen in dieser Lektion Alltagssprache von Klausursprache. Wer sie aktiv wiedergeben kann, liest jede Aufgabe schneller und waehlt sofort das richtige Verfahren.
 
 ### Fachbegriffe & Definitionen
 
-- **Kruemmung:** $f''(x) > 0$ zu linksgekrummt, $f''(x) < 0$ zu rechtsgekrummt.
-- **Wendepunkt:** Punkt $W(x_W, f(x_W))$ mit Kruemmungswechsel; beide Koordinaten werden angegeben.
-- **Nullstelle von $f''$:** Notwendige Bedingung $f''(x_W) = 0$; allein noch nicht hinreichend.
-- **Vorzeichenwechsel (VZW):** Verschiedene Vorzeichen von $f''$ links und rechts; robuste hinreichende Bedingung.
-- **Wendetangente:** $y = f'(x_W)(x-x_W)+f(x_W)$; sie kreuzt den Graphen in $W$.
+- **Kruemmung:** Das Vorzeichen von $f''$ beschreibt Links- oder Rechtskruemmung des Graphen. Mechanismus: $f''$ auf Intervallen testen und Kruemmung zuordnen. Klausur-Punkt: Kruemmungsintervalle getrennt angeben.
+- **Wendekandidat:** Die Gleichung $f''(x) = 0$ liefert alle Stellen moeglicher Wendepunkte. Mechanismus: Zweite Ableitung bilden und null setzen. Klausur-Punkt: Kandidaten berechnen und als Kandidaten kennzeichnen.
+- **Vorzeichenwechsel von f'':** Nur mit Wechsel der Kruemmungsrichtung liegt wirklich ein Wendepunkt vor. Mechanismus: $f''$ links und rechts des Kandidaten testen. Klausur-Punkt: Wechsel explizit nachweisen, Gegenbeispiel $x^4$ kennen.
+- **Wendetangente:** Die Tangente im Wendepunkt beschreibt die Richtung des Graphen an dieser Stelle. Mechanismus: $m = f'(x_W)$ und $y_W$ in die Punktsteigungsform einsetzen. Klausur-Punkt: Tangentengleichung vollständig aufstellen.
+- **Dritte Ableitung:** Gilt $f'''(x_W) \ne 0$, so ist der Vorzeichenwechsel automatisch gesichert. Mechanismus: Kandidaten in $f'''$ einsetzen und Ungleichheit pruefen. Klausur-Punkt: Kurztest nennen oder Tabelle als Alternative zeigen.
 
 ### Wirkungsgefuege / Modell
 
-Die Kette lautet: $f'' = 0$ liefert Verdacht, VZW faellt Urteil, $W$ plus Tangente schliesst ab. Fuer $g(x) = x^4$ gilt $g'' = 12x^2$ mit $g''(0) = 0$, doch $g'' > 0$ beiderseits — kein Wechsel, also kein Wendepunkt, sondern Tiefpunkt. Fuer $f(x) = x^3$ gilt $f'' = 6x$ mit Wechsel an $0$ — echter Wendepunkt. Der Unterschied steht nicht in der Nullstelle, sondern im Wechsel.
+Die Kette verbindet alle fuenf Begriffe zu einem Verfahren: Erkennen, Einordnen, Aufstellen, Loesen und Deuten. Jeder Begriff traegt genau einen Schritt, gemeinsam sichern sie die volle Punktzahl.
 
 Klausur-Satz: `Aus f''(x_W) = 0 mit Vorzeichenwechsel folgt ein Wendepunkt, die Wendetangente beschreibt die Richtung an dieser Stelle.`
 
-## Schritt 3 — entdecken
+## Schritt 3 — entdecken: Kernkonzept & Wirkungsmodell
+EXPERIMENTELLE ERKUNDUNG (Sandbox, erst spielen, dann deuten):
 
-TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
+### Hook & Phaenomen
 
-### Hook / Phaenomen
+Die Sandbox macht das Unsichtbare sichtbar: Stelle Groessen ein, beobachte Kurven und lies Werte ab, bevor eine einzige Formel faellt. Erst die Anschauung, dann die Deutung, erst das Spiel, dann das Gesetz.
 
-Ein Logistikchef sieht kumulierte Auslieferungen: erst immer schneller, dann immer langsamer. Er fragt nach dem staerksten Moment — dem Wendepunkt mit steilster Tangente. Sein Assistent liefert $f'' = 0$ ohne Wechsel und trifft daneben. Wie findet man den echten Wechsel — und warum kreuzt dort die Tangente den Graphen?
+### Spiel-Aufgabe / Challenge
 
-### Fachbegriff & Definition
+Oeffne die Sandbox aus Schritt 4, variiere die zentralen Parameter in kleinen Schritten und notiere je Stufe Kurvenform und Messwert. Formuliere aus drei Stufen eine erste Vermutung ueber den Zusammenhang.
 
-Der **Kruemmungswechsel an einer Nullstelle von $f''$ mit Vorzeichenwechsel belegt den Wendepunkt; dort aendert der Graph seine Kruemmung**. Die **steilste Stelle des Anstiegs faellt mit der Wende zusammen, weil $f'$ dort extremal wird**. Ohne Wechsel bleibt $f'' = 0$ ein blinder Kandidat wie bei $x^4$.
+### Aha-Moment & Gesetz
 
-### Wirkungsgefuege / Modell
-
-Der Tiefenweg an der Fallkurve: Links $f'' > 0$ zu beschleunigt, rechts $f'' < 0$ zu gebremst, dazwischen $W$ mit $f''(x_W) = 0$ plus Wechsel. Die Tangente $y = f'(x_W)(x-x_W)+f(x_W)$ schneidet dort, weil links die Kurve unter und rechts ueber der Tangente liegt — oder umgekehrt. Pruefung in drei Griffen: $f'' = 0$ loesen, Zeichen links und rechts einsetzen, $W$ und Tangente schreiben.
-
-Schritt A: $f'' = 0$ loesen und Kandidaten listen.
-Schritt B: Zeichenwechsel per Einsetzen links und rechts sichern.
-Schritt C: $W$ und Tangente angeben und Kreuzung deuten.
+Die Kausalkette laeuft von der Kruemmung ueber den Wechsel zum Punkt: Zuerst löst man $f''(x)=0$ fuer die Kandidaten, dann weist man den Vorzeichenwechsel von $f''$ nach, schliesslich berechnet man $y_W=f(x_W)$ und stellt die Wendetangente auf. Wechselt $f''$ das Vorzeichen, so aendert der Graph dort seine Kruemmung und besitzt einen Wendepunkt. Ohne Wechsel kein Wendepunkt, wie $g(x)=x^4$ an $x=0$ mit $g''=0$ ohne Wechsel beweist.
 
 ```diagram
-        f ^
-          |                         ___---
-          |                     ___        <- rechtsgekrummt f''<0
-          |        W *---------   W = Wendepunkt
-          |       .  .
-          |     .      .          <- Wendetangente kreuzt hier
-          |   .          .
-          |.               .
-          +----------------------------------> x
-       linksgekrummt   |   rechtsgekrummt
-       f'' > 0         |   f'' < 0
-       Test: f''(x)=0 + VZW + f''' oder Kruemmung
-       Falle: x^4 mit f''(0)=0 ohne VZW > kein Wendepunkt
++------------------------------------------+
+| f prime prime(x) = 0 -> Kandidat xW      |
+|   | Vorzeichen links/rechts testen      |
+|   - -> + : Rechts- zu Linkskruemmung   |
+|   + -> - : Links- zu Rechtskruemmung   |
+| W(xW|f(xW)) + Tangente y = m x + b      |
++------------------------------------------+
 ```
+Formelkern: $f''(x)=0$
 
 Klausur-Satz: `Wechselt f'' an einer Nullstelle das Vorzeichen, so aendert der Graph dort seine Kruemmung und besitzt einen Wendepunkt.`
 
 ## Anekdote & Fun-Fact
-
 In einer Epidemie starren alle auf die Tageszahlen, doch Experten schauen auf die kumulierte Kurve und suchen den Wendepunkt. Ab dort waechst die Kurve zwar weiter, aber immer langsamer. Der Moment wurde oft als Hoffnungszeichen gefeiert: Der Anstieg bricht, auch wenn die Gesamtzahl noch steigt.
 
 Bezug zum Konzept: `Der Wendepunkt der kumulierten Kurve markiert das Maximum des Tageszuwachses und den Wechsel der Kruemmung.`
 
-## Schritt 4 — ausprobieren
+## Schritt 4 — ausprobieren: Interaktive Praxis & Wende-Labor
+BEISPIEL (Sandbox Level mit Werkzeug):
 
-BEISPIEL (geleitete Aufgabe mit Werkzeug):
+[Werkzeug: tangent-slider]
 
-[Werkzeug: tangent]
-
-AUFGABE (analysieren, AFB II): Gegeben ist $f(x) = x^3 - 6x^2 + 9x + 1$. Bestimmen Sie alle Wendepunkte und die Gleichung der Wendetangente.
+AUFGABE (Levelziel, AFB II): Knacke das Wende-Level: Ziehe im Sandbox-Slider die Stelle $x$ ueber den Graphen und beobachte, wie die Kruemmung von rechts nach links kippt und die Tangentensteigung dort minimal wird. Lies den Kandidaten ab, weise dann den Vorzeichenwechsel von $f''$ nach, berechne $W$ vollständig und stelle die Wendetangente auf.
 
 HILFE:
-1. Schritt 1: Zweimal ableiten und Kandidaten suchen: $f''(x) = 0$ loesen.
-2. Schritt 2: Art mit Vorzeichenwechsel oder $f'''(x)$ sichern: Tabelle links und rechts von $x_W$ oder $f'''(x_W) \ne 0$.
-3. Schritt 3: $y$-Wert berechnen und Wendetangente mit $y = f'(x_W)(x - x_W) + f(x_W)$ aufstellen.
+1. Bilde $f''(x)$, loese $f''(x) = 0$ und lies im Sandbox-Slider Kandidat und Kruemmungskipp ab.
+2. Teste $f''$ links und rechts des Kandidaten und weise den Vorzeichenwechsel explizit nach.
+3. Berechne $y_W = f(x_W)$ und stelle mit $m = f'(x_W)$ die Tangentengleichung $y = mx+b$ auf.
 
-MUSTERLOESUNG: Es gilt $f'(x) = 3x^2 - 12x + 9$, $f''(x) = 6x - 12$, $f'''(x) = 6$. Aus $f''(x) = 0$ folgt $6x - 12 = 0$, also $x_W = 2$. Wegen $f'''(2) = 6 \ne 0$, alternativ VZW von minus nach plus, liegt ein Wendepunkt vor. Mit $f(2) = 8 - 24 + 18 + 1 = 3$ folgt $W(2, 3)$. Mit $f'(2) = 12 - 24 + 9 = -3$ lautet die Wendetangente $y = -3(x - 2) + 3 = -3x + 9$. Der Graph wechselt dort von rechtsgekrummt zu linksgekrummt.
+MUSTERLOESUNG: Sandbox zeigt den Kruemmungskipp bei $x_W = 2$ mit dort minimaler Tangentensteigung. Rechnung $f''(2) = 0$ mit Wechsel von plus nach minus sichert den Wendepunkt. Mit $y_W = 3$ folgt $W(2|3)$ und per $m = f'(2) = -3$ die Wendetangente $y = -3x+9$. Nullstelle plus Wechsel plus y-Wert ergeben den vollständigen Nachweis.
 
 Klausur-Satz: `Mit f''(2) = 0, f'''(2) ungleich 0 und W(2 | 3) besitzt f dort einen Wendepunkt mit Tangente y = -3x + 9.`
 
-## Schritt 5 — ausprobieren
-
+## Schritt 5 — ausprobieren: Verfahrensvergleich & Abgrenzung
 VERGLEICH (Wahl des Verfahrens, A gegen B):
 
 VERGLEICH: Triff zuerst die Wahl des Verfahrens: (i) Wende-Test ($f''(x) = 0$ plus VZW oder $f'''$, danach $y$-Wert mit Kruemmungsdeutung) oder (ii) Nur-Stationaer-Test (nur $f'(x) = 0$; er steuert Extrema, nicht die Kruemmung) > dann loesen.
@@ -139,8 +120,7 @@ ANTWORT: A erfordert Verfahren (i): $g'(x) = 4x^3$, $g''(x) = 12x^2$, $g''(0) = 
 
 Klausur-Satz: `Ohne Vorzeichenwechsel von f'' liegt kein Wendepunkt vor, wie g(x) = x^4 an der Stelle x = 0 zeigt.`
 
-## Schritt 6 — check
-
+## Schritt 6 — check: Verständnisprüfung
 CHECK (drei Fragen mit Antworten):
 
 FRAGE: Wie lautet die notwendige und die hinreichende Bedingung fuer einen Wendepunkt? | ANTWORT: Notwendig ist $f''(x_W) = 0$, hinreichend ist ein Vorzeichenwechsel von $f''$ oder $f'''(x_W) \ne 0$.
@@ -150,7 +130,6 @@ FRAGE: Was gehoert zur vollstaendigen Angabe von Wendepunkt und Wendetangente? |
 Klausur-Satz: `Erst f''(x_W) = 0 plus Vorzeichenwechsel plus y-Wert ergeben einen vollstaendigen Wendepunkt-Nachweis.`
 
 ## Fehlvorstellung
-
 (Kein Schritt; wird vom Parser uebersprungen.)
 
 1. Fehlkonzept: Aus $f'' = 0$ folgt wie bei $f' = 0$ automatisch ein besonderer Punkt.
@@ -158,15 +137,13 @@ Klausur-Satz: `Erst f''(x_W) = 0 plus Vorzeichenwechsel plus y-Wert ergeben eine
 2. Fehlkonzept: Ein Wendepunkt ist mit der $x$-Koordinate vollstaendig angegeben; die Tangente ist Zusatz.
    Korrektur-Satz: `Ein Wendepunkt verlangt beide Koordinaten und bei Bedarf die Gleichung der Wendetangente.`
 
-## Schritt 7 — szenario
-
+## Schritt 7 — szenario: Klausurtransfer & Rubric
 ROLLE: Du bist Daten-Assistent im Gesundheitsamt.
 SITUATION: Die kumulierten Meldungen folgen $k(t) = -0{,}05t^3 + 2{,}4t^2 + 100$ ($t$ in Tagen seit Ausbruch, $k$ in Faellen). Der Stab fragt, wann der Tageszuwachs am groessten war und ab wann die Massnahmen sichtbar wirken. Erstelle eine Analyse (circa 150 Woerter) mit Rechnung, Wendetangente und Deutung fuer die Presse.
 AUFGABE (interpretieren, AFB III): Bestimme den Wendepunkt, erklaere seine Bedeutung als Maximum des Zuwachses und beurteile Grenzen des Modells.
 RUBRIC (30 XP): Ableitungen plus $x_W$ korrekt (5 XP) | Nachweis per VZW oder $f'''$ plus $y$-Wert (10 XP) | Wendetangente korrekt (10 XP) | Deutung als Maximum plus Modellkritik (5 XP).
 
-## Schritt 8 — entdecken
-
+## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
 TAKEAWAY (Kernbotschaft in einem Kasten):
 
 Der Wendepunkt ist der Kruemmungswechsel. Der Weg besteht aus vier Schritten: $f'' = 0$ loesen, Zeichenwechsel pruefen (VZW oder $f'''$), $y$-Wert berechnen, Tangente aufstellen. Das Beispiel $x^4$ warnt: Ohne Zeichenwechsel kein Wendepunkt. In der Anwendung markiert die Wende das Zuwachsmaximum; die Anekdote der Epidemiekurve zeigt denselben Wechsel von beschleunigt zu gebremst.
@@ -176,3 +153,4 @@ Takeaway-Satz: `Wendepunkt heisst null, Wechsel, Punkt und Linie: f''(x) = 0, Vo
 REFLEXION (zwei Fragen):
 1. Welcher Teil fiel schwerer: die Rechnung der Wendetangente (Schritt 4) oder die Abwehr der $x$-hoch-vier-Falle im Vergleich (Schritt 5)?
 2. Beim naechsten Mal zeichne ich zuerst die Vorzeichentabelle von $f''$ und formuliere danach erst den Antwortsatz.
+
