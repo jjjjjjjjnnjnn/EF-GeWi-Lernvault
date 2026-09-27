@@ -15,9 +15,8 @@ version: Lesson-v3
 
 <!-- Lesson v3 9-Schritt-Architektur: Schritt 1 bis 8 feste Struktur; Fehlvorstellung zwischen Schritt 6 und 7 (Parser ueberspringt, zaehlt nicht); interaktive [Werkzeug: <id>]; Gating: check/szenario nicht bestanden = Weiter deaktiviert; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
-## Schritt 1 — entdecken
-
-ZIELE (diese Lektion in 15 Minuten: danach kannst du):
+## Schritt 1 — entdecken: Ziele & Phänomen-Einstieg
+ZIELE (drei messbare Ziele dieser Lektion):
 
 1. Den Widerspruch nennen: $|v|$ konstant, Richtung wechselnd, daher $a_Z$ zum Zentrum.
 2. $v = 2\pi r/T$, $\omega = 2\pi f$ und $F_Z = m v^2/r$ an Kurve $r = 20\,\mathrm{m}$ und Scheibe anwenden.
@@ -25,110 +24,89 @@ ZIELE (diese Lektion in 15 Minuten: danach kannst du):
 
 ### Hook / Phaenomen
 
-Im Jahr 2005 rutschte ein Lkw in der Autobahnkurve — Tacho konstant, dennoch Abflug. Die Polizei mass $v$ und $r$: Die Tachonadel log nicht, die Richtung riss. Ein Karussellkind spuert dasselbe Raetsel: gleichmaessig schnell und doch staendig beschleunigt. Warum verlangt konstantes Tempo eine Kraft zum Zentrum — und warum vervierfacht doppeltes $v$ die Kraft?
+Ein Kettenkarussell rast im Kreis und die Sitze fliegen scheinbar nach aussen, obwohl jede Physiklehrkraft auf eine Kraft nach innen pocht. Wer je eine Kurve zu schnell nahm, spuert denselben Widerspruch zwischen Gefuehl und Formel am eigenen Leib. Nimm die gleichfoermige Kreisbewegung und entdecke, wie konstantes Tempo mit staendiger Richtungsaenderung eine echte Kraft nach innen verlangt. Wer Aussen gegen Innen verwechselt, erklaert die Welt aus dem falschen Bezugssystem. Wer $v=2\pi r/T$ und $F_Z=mv^2/r$ sicher trennt, Bahnverfahren gegen Kraftverfahren abgrenzt und die Vierfachregel bei doppeltem Tempo kennt, beherrscht jeden Kreis und jede Kurve. Der folgende Weg fuehrt vom alltaeglichen Staunen zum physikalischen Gesetz: erst das Phaenomen beobachten, dann die Kraefte und Groessen benennen, schliesslich die Bilanz pruefen und im Sandbox-Labor selbst entdecken, warum die Natur genau dieser Regel folgt und keiner anderen.
 
 ### Fachbegriff & Definition
 
-Fuer die Kreisbahn gilt: **Bei gleichfoermiger Kreisbewegung bleibt der Betrag der Geschwindigkeit konstant, die Richtung aendert sich staendig, sodass eine zum Mittelpunkt gerichtete Zentripetalkraft erforderlich ist**. Es gilt **$v = 2\pi r/T$ tangential und $F_Z = m v^2/r$ radial zum Zentrum**. Die **Zentripetalkraft ist keine neue Kraft, sondern die radiale Summe realer Kraefte**.
+Nach dem NRW-Kernlehrplan gilt der untenstehende Klausur-Satz als verbindliche Definition dieser Lektion. Er fasst das Phaenomen in exakter Fachsprache und bildet die Grundlage fuer jede Deutung.
 
 ### Wirkungsgefuege / Modell
 
-Der Mechanismus trennt Betrag und Richtung: Umfang $2\pi r$ je Zeit $T$ zu $v = 2\pi r/T$; Drehtempo $\omega = 2\pi f$ zu $v = \omega r$; Bedarf $F_Z = m v^2/r = m \omega^2 r$. Wegen $v^2$ vervierfacht doppeltes $v$ die Kraft: $v \to 2v$ zu $F_Z \to 4F_Z$. Reicht die Haftung $F_{max} = \mu F_N$ nicht, so folgt der Wagen tangential der Traegheit — scheinbar nach aussen, physikalisch geradeaus.
-
-Schritt A: $v$ aus $r$ und $T$ bilden und Richtung tangential legen.
-Schritt B: $F_Z = m v^2/r$ als Bedarf aus realer Radialkraft decken.
-Schritt C: $F_Z$ gegen Haftung vergleichen und Rutschen deuten.
+Der Mechanismus verbindet Alltag und Formel: Das Phaenomen liefert die Anschauung, die Definition liefert die Sprache und das Wirkungsmodell in Schritt 3 liefert die Kausalkette. Wer alle drei Ebenen verknuepft, beantwortet jede Klausurfrage vollständig.
 
 Klausur-Satz: `Bei der gleichfoermigen Kreisbewegung bleibt der Betrag der Geschwindigkeit konstant, die Richtung aendert sich jedoch staendig, sodass eine zum Mittelpunkt gerichtete Zentripetalkraft erforderlich ist.`
 
-## Schritt 2 — entdecken
-
-PRETRAINING (Kernbegriffe, erst lesen, dann abdecken und aktiv wiedergeben):
+## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
+PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
 ### Hook / Phaenomen
 
-Ein Karussell zieht das Kind nach aussen — so fuehlt es sich an. Die Physik zeichnet den Pfeil nach innen. Beide beschreiben dasselbe, doch nur eine Sicht rechnet im Inertialsystem. Welche fuenf Groessen zaehmen das Karussell in Formeln?
+Fuenf Begriffe trennen in dieser Lektion Alltagssprache von Klausursprache. Wer sie aktiv wiedergeben kann, liest jede Aufgabe schneller und waehlt sofort das richtige Verfahren.
 
 ### Fachbegriffe & Definitionen
 
-- **Gleichfoermige Kreisbewegung:** $|v|$ konstant, Richtung kreisend und staendig wechselnd.
-- **Umlaufdauer $T$ in $\mathrm{s}$:** Zeit je Runde; Frequenz $f = 1/T$ in $\mathrm{Hz}$.
-- **Winkelgeschwindigkeit $\omega = 2\pi f$ in $1/\mathrm{s}$:** Drehwinkel je Zeit.
-- **Bahngeschwindigkeit $v = 2\pi r/T = \omega r$ in $\mathrm{m/s}$:** Tangentiale Momentangeschwindigkeit.
-- **Zentripetalkraft $F_Z = m v^2/r = m \omega^2 r$ in $\mathrm{N}$:** Radiale Resultierende zum Zentrum aus realen Kraeften.
+- **Bahngeschwindigkeit:** Der Betrag $v=2\pi r/T$ bleibt konstant und zeigt tangential zur Bahn. Mechanismus: Umfang durch Umlaufzeit teilen. Klausur-Punkt: Tangentiale Richtung nennen und Einheit $m/s$ führen.
+- **Winkelgroessen:** Die Kreisfrequenz $\omega=2\pi f$ verbindet Drehzahl mit Bahngroessen per $v=\omega r$. Mechanismus: Frequenz in Kreisfrequenz umrechnen. Klausur-Punkt: $f$, $T$ und $\omega$ ineinander umrechnen.
+- **Zentripetalkraft:** Die Kraft $F_Z=mv^2/r$ wirkt radial nach innen und wird real aufgebracht. Mechanismus: Reale Radialkomponente identifizieren und gleichsetzen. Klausur-Punkt: Krafttraeger nennen statt mystischer Fliehkraft.
+- **Bahn-Verfahren:** Kinematische Fragen nach $v$ und $\omega$ brauchen nur Geometrie plus Zeit. Mechanismus: $v=2\pi r/T$ direkt anwenden. Klausur-Punkt: Verfahren nach Fragestellung waehlen.
+- **Kraft-Verfahren:** Fragen nach Halten oder Reissen brauchen die Bilanz mit $F_Z$. Mechanismus: $F_Z$ berechnen und mit Haftgrenze vergleichen. Klausur-Punkt: Vierfachregel bei doppeltem $v$ nennen.
 
 ### Wirkungsgefuege / Modell
 
-Die Kette verbindet Drehen und Ziehen: $T$ zu $f$ zu $\omega$ zu $v$ zu $F_Z$. Seilkraft, Reibung oder Gewichtskomponente liefern die reale Radialkraft; $F_Z$ benennt nur ihren Bedarf. Die Fliehkraft erscheint nur im mitrotierenden System als Scheinkraft — im Strassenprotokoll zaehlt allein $F_Z$ gegen Haftung. Daher $v$ kappen oder $r$ weiten statt gegen die Scheinkraft kaempfen.
+Die Kette verbindet alle fuenf Begriffe zu einem Verfahren: Erkennen, Einordnen, Aufstellen, Loesen und Deuten. Jeder Begriff traegt genau einen Schritt, gemeinsam sichern sie die volle Punktzahl.
 
 Klausur-Satz: `Die Bahngeschwindigkeit zeigt tangential zur Kreisbahn, die Zentripetalkraft zeigt radial zum Mittelpunkt.`
 
-## Schritt 3 — entdecken
+## Schritt 3 — entdecken: Kernkonzept & Wirkungsmodell
+EXPERIMENTELLE ERKUNDUNG (Sandbox, erst spielen, dann deuten):
 
-ENTDECKEN (ein Konzept plus Textdiagramm):
+### Hook & Phaenomen
 
-### Hook / Phaenomen
+Die Sandbox macht das Unsichtbare sichtbar: Stelle Groessen ein, beobachte Kurven und lies Werte ab, bevor eine einzige Formel faellt. Erst die Anschauung, dann die Deutung, erst das Spiel, dann das Gesetz.
 
-Ein Pkw nimmt die Kurve $r = 50\,\mathrm{m}$ mit $v = 15\,\mathrm{m/s}$ — und haelt. Mit $v = 30\,\mathrm{m/s}$ braucht er vierfache Haftung und rutscht. Der Gutachter rechnet $F_Z = m v^2/r$ und vergleicht mit $\mu m g$. Wie wird aus $v$ und $r$ ein Urteil ueber Rutschen — und warum hilft breitere Spur weniger als halbiertes Tempo?
+### Spiel-Aufgabe / Challenge
 
-### Fachbegriff & Definition
+Oeffne die Sandbox aus Schritt 4, variiere die zentralen Parameter in kleinen Schritten und notiere je Stufe Kurvenform und Messwert. Formuliere aus drei Stufen eine erste Vermutung ueber den Zusammenhang.
 
-Die **Zentripetalkraft $F_Z = m v^2/r$ wirkt radial zum Zentrum und wird durch die reale Radialkomponente aufgebracht**. Mit **$v = 2\pi r/T$ und $\omega = 2\pi f$ folgt $F_Z = m \omega^2 r$** als Drehform. **Verdopplung von $v$ vervierfacht $F_Z$** wegen des Quadrats.
+### Aha-Moment & Gesetz
 
-### Wirkungsgefuege / Modell
-
-Der Tiefenweg rechnet Bedarf gegen Angebot: Bedarf $F_Z = 1000 \cdot 225/50 = 4500\,\mathrm{N}$ bei $15\,\mathrm{m/s}$; bei $30\,\mathrm{m/s}$ zu $18000\,\mathrm{N}$ als Vierfaches. Angebot $F_{max} = \mu m g$ mit $\mu = 0{,}8$ zu $7848\,\mathrm{N}$ — reicht bei $15$, versagt bei $30$. Also $v_{max} = \sqrt{\mu g r}$ als Kurvenlimit. Die $v^2$-Abhaengigkeit macht Tempo zum Hebel: halbiertes $v$ viertelt den Bedarf.
-
-Schritt A: $v$ und $r$ zu $F_Z$ formen.
-Schritt B: $F_Z$ gegen $\mu m g$ stellen.
-Schritt C: $v_{max} = \sqrt{\mu g r}$ als Urteil mit weil-Satz schreiben.
+Die Kausalkette laeuft vom Kreis ueber das Tempo zur Kraft: Zuerst bestimmt man $v=2\pi r/T$ aus Geometrie und Zeit, dann berechnet man $F_Z=mv^2/r$ als noetige Radialkraft, schliesslich identifiziert man ihren realen Traeger wie Seil oder Haftung. Doppelte Geschwindigkeit verlangt vierfache Kraft wegen des Quadrats in $F_Z$. Kinematische Fragen nach $v$ und $\omega$ verlangen das Bahn-Verfahren, Fragen nach Halten oder Reissen das Kraft-Verfahren mit $F_Z$.
 
 ```diagram
-              ^ v (tangential)
-              |
-         -----+------>
-        /     |      \
-       /      |       \
-      /       |r       \   <-- Kreisbahn von oben (Draufsicht)
-     |        o-------->|
-     |     Mittelpunkt  \
-      \      ^          /
-       \     | F_Z      /
-        \    | radial  /
-         \---+---/
-              v
-   Legende: r = Radius, v = tangential, F_Z = radial zum Zentrum
-   Formeln: v = 2*pi*r/T, w = 2*pi*f, F_Z = m*v^2/r
-   Bedarf: F_Z gegen Angebot mu*m*g, vmax = Wurzel(mu*g*r)
++------------------------------------------+
+| Kreis r, T -> v = 2 pi r / T tangential |
+|   | FZ = m v^2 / r radial nach innen    |
+|   v                                      |
+| Traeger: Seil / Haftung / Normalkraft   |
+| doppelt v -> vierfach FZ (Quadrat!)     |
++------------------------------------------+
 ```
+Formelkern: $v=2\pi r/T$
 
 Klausur-Satz: `Die Zentripetalkraft F_Z = m v^2/r wirkt radial zum Mittelpunkt und wird durch die reale Radialkomponente der Kraefte aufgebracht.`
 
 ## Anekdote & Fun-Fact
-
 **Anekdote / Fun-Fact (DE)**: Rennfahrer sprechen in Kurven vom Sehen des Scheitelpunkts und vom Kampf mit der Fliehkraft, doch in der Physik existiert diese Fliehkraft im Inertialsystem gar nicht. Was man im Auto nach aussen spuert, ist die eigene Traegheit: Der Koerper will geradeaus weiterfahren, waehrend das Auto durch Reibung nach innen gezwungen wird. Darum kippt ein zu schneller LKW in der Kurve nicht wegen einer geheimnisvollen Kraft nach aussen, sondern weil die noetige Zentripetalkraft fehlt.
 
 **Bezug zum Konzept**: `Was als Fliehkraft nach aussen gefuehlt wird, ist Traegheit; physikalisch real ist nur die Zentripetalkraft nach innen.`
 
-## Schritt 4 — ausprobieren
+## Schritt 4 — ausprobieren: Interaktive Praxis & Kreis-Labor
+BEISPIEL (Sandbox Level mit Werkzeug):
 
-BEISPIEL (Musteraufgabe mit Loesungsweg):
+[Werkzeug: kinematik-lab]
 
-[Werkzeug: formula]
-
-AUFGABE (berechnen, AFB II): Ein Auto $m = 1200\,\mathrm{kg}$ durchfaehrt eine flache Kurve mit $r = 50\,\mathrm{m}$ und $T = 12\,\mathrm{s}$ je Vollkreis. Berechnen Sie $v$, $\omega$ und $F_Z$ und erklaeren Sie die Folge doppelter Geschwindigkeit.
+AUFGABE (Levelziel, AFB II): Knacke das Kreis-Level: Ziehe im Sandbox-Labor Radius $r$ und Umlaufzeit $T$ durch je drei Stufen und beobachte, wie $v$ linear und $F_Z$ quadratisch folgen. Verdopple $v$ bei festem $r$ und miss die vierfache Kraft. Berechne dann exakt per $v=2\pi r/T$ und $F_Z=mv^2/r$ und vergleiche Labor mit Rechnung.
 
 HILFE:
-1. Umfang $U = 2\pi r$, dann $v = U/T$.
-2. Frequenz $f = 1/T$, dann $\omega = 2\pi f$ oder $\omega = v/r$.
-3. Ansatz $F_Z = m v^2/r$; danach $v$ verdoppeln und Vervierfachung zeigen.
+1. Stelle $r$ und $T$ ein und lies $v$ sowie $F_Z$ im Labor ab.
+2. Berechne $v = 2\pi r/T$ und $F_Z = mv^2/r$ Schritt fuer Schritt.
+3. Verdopple $v$, weise vierfaches $F_Z$ nach und gleiche mit dem Labor ab.
 
-MUSTERLOESUNG: Es gilt $U = 2\pi \cdot 50 = 314\,\mathrm{m}$, also $v = 314/12 = 26{,}2\,\mathrm{m/s}$. Mit $f = 1/12 = 0{,}0833\,\mathrm{1/s}$ folgt $\omega = 2\pi f = 0{,}524\,\mathrm{1/s}$; Kontrolle $\omega = v/r = 26{,}2/50 = 0{,}524\,\mathrm{1/s}$. Damit $F_Z = m v^2/r = 1200 \cdot (26{,}2)^2/50 = 1200 \cdot 686/50 = 16470\,\mathrm{N}$. Bei $2v$ gilt $F_{Z,neu} = m(2v)^2/r = 4 m v^2/r$, also das Vierfache. Die Haftreibung muss diese Radialkraft liefern; reicht sie nicht, so folgt das Auto tangential der Traegheit.
+MUSTERLOESUNG: Labor zeigt $v$ linear in $1/T$ und $F_Z$ quadratisch in $v$. Rechnung $v=2\pi r/T$ und $F_Z=mv^2/r$ bestaetigt die Laborwerte. Verdopplung von $v$ erfordert vierfache Zentripetalkraft wegen des Quadrats, Bahn-Fragen brauchen nur $v$, Halte-Fragen brauchen $F_Z$ mit Traeger.
 
 Klausur-Satz: `Mit v = 2πr/T und F_Z = m v^2/r folgt, dass eine Verdopplung von v die vierfache Zentripetalkraft erfordert.`
 
-## Schritt 5 — ausprobieren
-
+## Schritt 5 — ausprobieren: Verfahrensvergleich & Abgrenzung
 VERGLEICH (zwei Verfahren unterscheiden):
 
 VERGLEICH: Waehle zuerst das Verfahren — (i) Bahn-Verfahren (Tempo, $T$, $f$ gesucht: $v = 2\pi r/T$, $\omega = 2\pi f$) oder (ii) Kraft-Verfahren (Halten, Rutschen, Reissen gefragt: $F_Z = m v^2/r$ als Radialbilanz) — dann rechnen.
@@ -143,8 +121,7 @@ ANTWORT: A erfordert Verfahren (i): $v = 2\pi r f = 2\pi \cdot 0{,}30 \cdot 2{,}
 
 Klausur-Satz: `Kinematische Fragen nach v und ω verlangen das Bahn-Verfahren, Fragen nach Halten oder Reissen verlangen das Kraft-Verfahren mit F_Z.`
 
-## Schritt 6 — check
-
+## Schritt 6 — check: Verständnisprüfung
 CHECK (Selbsttest, 3 Fragen mit Antworten):
 
 FRAGE: Wie folgen $v$ und $\omega$ aus $r$, $T$ und $f$? | ANTWORT: $v = 2\pi r/T = \omega r$ und $\omega = 2\pi f = 2\pi/T$; $v$ tangential, $\omega$ als Drehtempo.
@@ -154,7 +131,6 @@ FRAGE: Warum vervierfacht doppeltes $v$ die Kraft? | ANTWORT: Weil $v$ quadratis
 Klausur-Satz: `Die Formeln v = 2πr/T, ω = 2πf und F_Z = m v^2/r bilden das geschlossene Verfahren der Kreisbewegung.`
 
 ## Fehlvorstellung
-
 (kein Schritt; wird vom Parser automatisch erkannt und nicht mitgezaehlt)
 
 1. Fehlannahme: Gleichfoermige Kreisbahn bedeute keine Beschleunigung wegen konstantem Betrag.
@@ -164,14 +140,12 @@ Klausur-Satz: `Die Formeln v = 2πr/T, ω = 2πf und F_Z = m v^2/r bilden das ge
    Korrektur: Im Inertialsystem existiert keine Kraft nach aussen; real ist nur die Resultierende nach innen. Aussen wirkt nur im mitrotierenden System als Hilfsgroesse und gehoert nicht ins Kraeftebild.
    Korrektur-Satz: `Im Inertialsystem existiert keine reale Zentrifugalkraft nach aussen; die einzige reale Radialkraft ist die Zentripetalkraft nach innen.`
 
-## Schritt 7 — szenario
-
+## Schritt 7 — szenario: Klausurtransfer & Rubric
 ROLLE: Du bist Tutor in der EF und erklaerst einer Mitschuelerin die Kurvenphysik.
 SITUATION: Nach Regen ist ein Auto in flacher Kurve ($r = 60\,\mathrm{m}$) gerutscht. Die Mitschuelerin sagt: Die Fliehkraft zog das Auto hinaus. Nimm in zusammenhaengender Darstellung (ca. 150 Woerter) Stellung, rechne mit $v = 20\,\mathrm{m/s}$, $m = 1000\,\mathrm{kg}$ die noetige $F_Z$ aus und beurteile die Aussage. Schreibe Antwort mit Formeln, Rechnung, Kraftdeutung und Urteil.
 RUBRIC (30 XP): Rechnung mit $F_Z = m v^2/r$ (10 XP) | Deutung Haftreibung als Lieferant (10 XP) | Urteil: keine reale Kraft nach aussen, sondern Traegheit bei fehlender $F_Z$ (10 XP).
 
-## Schritt 8 — entdecken
-
+## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
 TAKEAWAY (Kernzusammenfassung):
 
 Bahn tangential mit $v = 2\pi r/T$, Kraft radial mit $F_Z = m v^2/r$; doppelte Geschwindigkeit verlangt vierfache Haftung. Das Bild zeigt nur reale Kraefte nach innen, niemals Fliehkraft; Rutschen heisst fehlende Zentripetalkraft bei gerader Traegheit.
@@ -180,3 +154,4 @@ Takeaway-Satz: `Bahn tangential mit v = 2πr/T, Kraft radial mit F_Z = m v^2/r; 
 REFLEXION (2 Fragen):
 1. Selbstbeobachtung: Welcher Schritt fiel schwerer — die Rechnung mit $v$ und $F_Z$ (Schritt 4) oder die Wahl zwischen Bahn- und Kraftverfahren (Schritt 5)?
 2. Planung: Beim naechsten Mal zeichne ich zuerst die Draufsicht mit Radius, Tangente und Radialpfeil und frage dann, ob nach Tempo oder nach Halten gefragt ist.
+

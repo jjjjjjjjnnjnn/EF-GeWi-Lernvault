@@ -15,9 +15,8 @@ version: Lesson-v3
 
 <!-- Lesson v3 9-Schritt-Architektur: Schritt 1 bis 8 feste Struktur; Fehlvorstellung zwischen Schritt 6 und 7 (Parser ueberspringt, zaehlt nicht); interaktive [Werkzeug: <id>]; Gating: check/szenario nicht bestanden = Weiter deaktiviert; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
-## Schritt 1 — entdecken
-
-ZIELE (diese Lektion in 15 Minuten: danach kannst du):
+## Schritt 1 — entdecken: Ziele & Phänomen-Einstieg
+ZIELE (drei messbare Ziele dieser Lektion):
 
 1. $p = m v$ in $\mathrm{kgm/s}$ an $m = 2{,}0\,\mathrm{kg}$, $v = 3{,}0\,\mathrm{m/s}$ zu $p = 6{,}0\,\mathrm{Ns}$ berechnen.
 2. $p_{vor} = p_{nach}$ an Stoss $m_1 v_1+m_2 v_2 = m_1 u_1+m_2 u_2$ und Rueckstoss $0$ anwenden.
@@ -25,102 +24,89 @@ ZIELE (diese Lektion in 15 Minuten: danach kannst du):
 
 ### Hook / Phaenomen
 
-Im Jahr 2015 knallten zwei Eishockeyspieler zusammen — einer flog, einer stand. Die Trainer stritten: Wer schob wen? Die Eisbahn loest den Streit ohne Video: Gesamtimpuls vorher gleich nachher, egal wie hart der Aufprall. Warum bleibt die Vektorsumme erhalten, waehrend die Energie schmilzt — und welche einzige Zusatzfrage trennt elastisch und unelastisch?
+Zwei Billardkugeln klicken aneinander und die eine bleibt wie angewurzelt stehen, waehrend die andere exakt das Tempo der ersten uebernimmt. Kein Zauber, keine Fernsteuerung, nur eine unsichtbare Bilanz, die bei jedem Stoss peinlich genau stimmt. Nimm den Impuls $p=mv$ als Vektorgroesse und entdecke, wie die Summe aller Impulse im abgeschlossenen System erhalten bleibt, waehrend Energie je nach Stossart verschwindet oder bleibt. Wer Vorzeichen und Richtungen ignoriert, addiert Aepfel zu Birnen. Wer Impulsbilanz gegen Energiebilanz abgrenzt und elastisch gegen unelastisch unterscheidet, loest jeden Stoss und deutet jeden Rückstoss. Der folgende Weg fuehrt vom alltaeglichen Staunen zum physikalischen Gesetz: erst das Phaenomen beobachten, dann die Kraefte und Groessen benennen, schliesslich die Bilanz pruefen und im Sandbox-Labor selbst entdecken, warum die Natur genau dieser Regel folgt und keiner anderen.
 
 ### Fachbegriff & Definition
 
-Fuer Stoesse gilt: **In einem abgeschlossenen System bleibt die Vektorsumme aller Impulse erhalten, also $p_{vor} = p_{nach}$**. Es gilt **$p = m v$ als Vektorgroesse mit Vorzeichen je Richtung**. Der **elastische Stoss erhaelt zusaetzlich $E_{kin}$, der unelastische wandelt Teile in innere Energie** um.
+Nach dem NRW-Kernlehrplan gilt der untenstehende Klausur-Satz als verbindliche Definition dieser Lektion. Er fasst das Phaenomen in exakter Fachsprache und bildet die Grundlage fuer jede Deutung.
 
 ### Wirkungsgefuege / Modell
 
-Der Mechanismus folgt aus actio gleich reactio: Innere Kraefte heben sich paarweise auf, $p_{gesamt}$ kann sich nicht aendern. Beispiel kleben $m_1 = 2{,}0$, $v_1 = 3{,}0$, $m_2 = 1{,}0$, $v_2 = 0$ zu $u = (6{,}0+0)/3{,}0 = 2{,}0\,\mathrm{m/s}$. Zusatztest $E_{kin}$: vorher $9{,}0\,\mathrm{J}$, nachher $6{,}0\,\mathrm{J}$ — Verlust $3{,}0\,\mathrm{J}$ zu unelastisch. Beim elastischen Ideal bliebe $E$ gleich.
-
-Schritt A: Positive Richtung waehlen und $p_{vor}$ summieren.
-Schritt B: $p_{vor} = p_{nach}$ nach $u$ aufloesen.
-Schritt C: $E_{kin}$ vorher gegen nachher als Elastizitaetstest pruefen.
+Der Mechanismus verbindet Alltag und Formel: Das Phaenomen liefert die Anschauung, die Definition liefert die Sprache und das Wirkungsmodell in Schritt 3 liefert die Kausalkette. Wer alle drei Ebenen verknuepft, beantwortet jede Klausurfrage vollständig.
 
 Klausur-Satz: `In einem abgeschlossenen System bleibt die Vektorsumme aller Impulse erhalten.`
 
-## Schritt 2 — entdecken
-
-PRETRAINING (Kernbegriffe, erst lesen, dann abdecken und aktiv wiedergeben):
+## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
+PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
 ### Hook / Phaenomen
 
-Eine Explosion zerreisst eine ruhende Hantel — zwei Haelften fliegen entgegengesetzt. Vorher $p = 0$, nachher scheinbar doppelt. Der Widerspruch loest sich im Vorzeichen: plus gegen minus hebt sich auf. Welche fuenf Begriffe sichern das Vorzeichen vor der Rechnung?
+Fuenf Begriffe trennen in dieser Lektion Alltagssprache von Klausursprache. Wer sie aktiv wiedergeben kann, liest jede Aufgabe schneller und waehlt sofort das richtige Verfahren.
 
 ### Fachbegriffe & Definitionen
 
-- **Impuls:** $p = m v$ mit $1\,\mathrm{Ns} = 1\,\mathrm{kgm/s}$ als Bewegungsmenge mit Richtung.
-- **Abgeschlossenes System:** Keine aeusseren Kraefte, also $p_{gesamt}$ konstant.
-- **Elastischer Stoss:** $p$ und $E_{kin}$ bleiben erhalten; ideale Billardkugeln.
-- **Unelastischer Stoss:** Nur $p$ bleibt; Rest wird Verformung oder Waerme.
-- **Rueckstoss:** $p_{vor} = 0$ wie Explosion oder Gewehr; Teile laufen entgegengesetzt.
+- **Impuls:** Die Groesse $p=mv$ verbindet Masse mit Tempo als Vektor samt Richtung. Mechanismus: Masse mal Geschwindigkeit mit Vorzeichen bilden. Klausur-Punkt: Positive Richtung festlegen und Vorzeichen konsequent führen.
+- **Impulserhaltung:** Im abgeschlossenen System bleibt die Vektorsumme aller Impulse konstant. Mechanismus: Summe vor gleich Summe nach setzen. Klausur-Punkt: Abgeschlossenheit begruenden und Bilanz aufstellen.
+- **Elastischer Stoss:** Impuls und kinetische Energie bleiben gemeinsam erhalten ohne Verformung. Mechanismus: Beide Bilanzen kombinieren und loesen. Klausur-Punkt: Zusatzbedingung Energie nennen und Uebernahme deuten.
+- **Unelastischer Stoss:** Nur der Impuls bleibt erhalten, ein Teil der Energie wird zu innerer Energie. Mechanismus: Impulsbilanz loesen und Energiedifferenz bestimmen. Klausur-Punkt: Fehlende Energie als Verformung und Waerme deuten.
+- **Rueckstoss:** Gleiche Impulse in Gegenrichtungen erklaeren Raketen und Kanonen ohne aeussere Kraft. Mechanismus: Nullsummens vor gegen Nachher aufspalten. Klausur-Punkt: Gegenrichtungen mit Vorzeichen zeigen.
 
 ### Wirkungsgefuege / Modell
 
-Die Kette warnt vor dem Vorzeichen: Rechts plus, links minus — wer $v_2 = -2{,}0\,\mathrm{m/s}$ als $+2{,}0$ einsetzt, verdoppelt statt subtrahiert. Rueckstoss $0 = m_1 u_1+m_2 u_2$ zu $u_2 = -m_1 u_1/m_2$ zeigt entgegengesetzte Richtungen automatisch. Elastisch gegen unelastisch entscheidet allein $E_{kin}$-Bilanz — $p$-Bilanz gilt immer.
+Die Kette verbindet alle fuenf Begriffe zu einem Verfahren: Erkennen, Einordnen, Aufstellen, Loesen und Deuten. Jeder Begriff traegt genau einen Schritt, gemeinsam sichern sie die volle Punktzahl.
 
 Klausur-Satz: `Der Impuls ist eine Vektorgroesse; sein Vorzeichen haengt von der gewaehlten positiven Richtung ab.`
 
-## Schritt 3 — entdecken
+## Schritt 3 — entdecken: Kernkonzept & Wirkungsmodell
+EXPERIMENTELLE ERKUNDUNG (Sandbox, erst spielen, dann deuten):
 
-ENTDECKEN (ein Konzept plus Textdiagramm):
+### Hook & Phaenomen
 
-### Hook / Phaenomen
+Die Sandbox macht das Unsichtbare sichtbar: Stelle Groessen ein, beobachte Kurven und lies Werte ab, bevor eine einzige Formel faellt. Erst die Anschauung, dann die Deutung, erst das Spiel, dann das Gesetz.
 
-Newtons Wiege klickt: Aussen hebt sich eine Kugel, innen ruht die Kette. Der Impuls wandert unsichtbar durch Stahl — fast ohne Verlust. Waere der Stoss unelastisch, so klebten alle und wackelten gemeinsam. Wie beweist das Pendel beide Bilanzen zugleich — und warum liefert $u = (m_1 v_1+m_2 v_2)/(m_1+m_2)$ den Klebefall?
+### Spiel-Aufgabe / Challenge
 
-### Fachbegriff & Definition
+Oeffne die Sandbox aus Schritt 4, variiere die zentralen Parameter in kleinen Schritten und notiere je Stufe Kurvenform und Messwert. Formuliere aus drei Stufen eine erste Vermutung ueber den Zusammenhang.
 
-Die **Impulsbilanz gilt bei jedem Stoss, die Energiebilanz nur beim elastischen zusaetzlich**. Beim **vollstaendig unelastischen Stoss kleben beide Koerper mit gemeinsamem $u = (m_1 v_1+m_2 v_2)/(m_1+m_2)$**. Die **Differenz $E_{kin}(vor)-E_{kin}(nach)$ misst den Verlust** als innere Energie.
+### Aha-Moment & Gesetz
 
-### Wirkungsgefuege / Modell
-
-Der Tiefenweg vergleicht Wiege und Kleben: Wiege ideal $m v = m u$ plus $0{,}5 m v^2 = 0{,}5 m u^2$ zu $u = v$ als Durchlauf. Kleben $2{,}0 \cdot 3{,}0 = 3{,}0 \cdot u$ zu $u = 2{,}0\,\mathrm{m/s}$ mit $E$-Verlust $3{,}0\,\mathrm{J}$. Dazwischen liegt jeder Realstoss: $p$ exakt, $E$ teilweise. Daher erst $p$-Gleichung loesen, dann $E$-Test als Urteil.
-
-Schritt A: $m_1 v_1+m_2 v_2 = m_1 u_1+m_2 u_2$ aufstellen.
-Schritt B: Kleben per gemeinsamem $u$ oder elastisch per $E$ loesen.
-Schritt C: $E$-Differenz als Verlust oder Bestaetigung deuten.
+Die Kausalkette laeuft von der Bilanz ueber die Stossart zur Tempoantwort: Zuerst legt man die positive Richtung fest und schreibt $m_1v_1+m_2v_2=m_1u_1+m_2u_2$, dann prueft man elastisch mit Zusatzbilanz der Energie oder unelastisch mit gemeinsamer Endgeschwindigkeit, schliesslich loest man nach den Unbekannten. Die Impulsbilanz gilt bei jedem Stoss, die Energiebilanz nur beim elastischen zusaetzlich. Vorzeichenfehler kehren jede Richtung um und zerstoeren die ganze Loesung.
 
 ```diagram
-vor dem Stoss:   m1*v1  +  m2*v2
-                      ||
-                 inneres Kraeftepaar hebt sich auf
-                      ||
-nach dem Stoss:  m1*u1  +  m2*u2
-Zusatztest: E_kin(vor) = E_kin(nach)? elastisch : unelastisch
-Spezialfall kleben: u = (m1*v1 + m2*v2) / (m1 + m2)
-Zahlen: 2.0*3.0/3.0 = 2.0 m/s, E-Verlust 3.0 J
++------------------------------------------+
+| vor: m1 v1 + m2 v2 (mit Vorzeichen)     |
+|   | Impulsbilanz: Summe vor = nach      |
+|   v                                      |
+| elastisch: + Energiebilanz (2 Gleich.)  |
+| unelastisch: u1 = u2, Energie fehlt     |
++------------------------------------------+
 ```
+Formelkern: $m_1v_1+m_2v_2=m_1u_1+m_2u_2$
 
 Klausur-Satz: `Die Impulsbilanz gilt bei jedem Stoss, die Energiebilanz nur beim elastischen Stoss zusaetzlich.`
 
 ## Anekdote & Fun-Fact
-
 **Anekdote / Fun-Fact (DE)**: Beim Kugelstoss-Pendel (Newton's Cradle) hebt sich aussen eine Kugel, waehrend innen scheinbar nichts geschieht. Der Impuls wandert durch die ruhende Kette, beim ideal elastischen Stoss fast ohne Verlust.
 
 **Bezug zum Konzept**: `Das Pendel zeigt Impulserhaltung plus naeherungsweise Energieerhaltung in Reinform.`
 
-## Schritt 4 — ausprobieren
+## Schritt 4 — ausprobieren: Interaktive Praxis & Stoss-Labor
+BEISPIEL (Sandbox Level mit Werkzeug):
 
-BEISPIEL (Musteraufgabe mit Loesungsweg):
+[Werkzeug: kinematik-lab]
 
-[Werkzeug: kinematik]
-
-AUFGABE (berechnen, AFB II): Wagen $m_1 = 2{,}0\,\mathrm{kg}$ faehrt mit $v_1 = 3{,}0\,\mathrm{m/s}$ auf ruhenden Wagen $m_2 = 1{,}0\,\mathrm{kg}$ auf. Nach vollstaendig unelastischem Stoss kleben beide. Berechnen Sie $u$ und den Verlust an $E_{kin}$.
+AUFGABE (Levelziel, AFB II): Knacke das Stoss-Level: Stelle im Sandbox-Labor Massen $m_1$, $m_2$ und Tempi $v_1$, $v_2$ ein und beobachte, wie sich Endtempi bei elastisch gegen unelastisch unterscheiden und die Impulssumme stets gleich bleibt. Miss beide Faelle, rechne dann exakt per Impulsbilanz und vergleiche Labor mit Rechnung. Erklaere in einem Satz den Energieunterschied.
 
 HILFE:
-1. Bilanz $m_1 v_1 = (m_1 + m_2) u$ aufstellen.
-2. Wert $u$ berechnen.
-3. Werte $E_{kin}$ vor und nach vergleichen.
+1. Lege die positive Richtung fest und lies im Labor Endtempi beider Stossarten ab.
+2. Stelle $m_1v_1+m_2v_2 = m_1u_1+m_2u_2$ auf und loese je Stossart auf.
+3. Gleiche mit dem Labor ab und deute fehlende Energie als innere Energie.
 
-MUSTERLOESUNG: Es gilt $u = m_1 v_1/(m_1 + m_2) = 2{,}0 \cdot 3{,}0/3{,}0 = 2{,}0\,\mathrm{m/s}$. Vorher: $E_{vor} = 0{,}5 \cdot 2{,}0 \cdot 9{,}0 = 9{,}0\,\mathrm{J}$. Nachher: $E_{nach} = 0{,}5 \cdot 3{,}0 \cdot 4{,}0 = 6{,}0\,\mathrm{J}$. Der Verlust $3{,}0\,\mathrm{J}$ erscheint als Verformungs- und Waermeenergie. Der Impuls $p = 6{,}0\,\mathrm{Ns}$ bleibt erhalten.
+MUSTERLOESUNG: Labor zeigt gleiche Impulssumme vor und nach in beiden Faellen, aber verschiedene Endtempi und Energien. Rechnung per Impulsbilanz bestaetigt die Labor-Endtempi, elastisch mit Energiezusatz, unelastisch mit $u_1=u_2$. Beim unelastischen Stoss bleibt der Impuls erhalten, waehrend ein Teil der kinetischen Energie in innere Energie umgewandelt wird.
 
 Klausur-Satz: `Beim unelastischen Stoss bleibt der Impuls erhalten, waehrend ein Teil der kinetischen Energie in innere Energie umgewandelt wird.`
 
-## Schritt 5 — ausprobieren
-
+## Schritt 5 — ausprobieren: Verfahrensvergleich & Abgrenzung
 VERGLEICH (zwei Verfahren unterscheiden):
 
 VERGLEICH: Waehle zuerst das Verfahren — (i) Impuls-Verfahren (Bilanz $p_{vor} = p_{nach}$, immer noetig) oder (ii) Energie-Verfahren als Zusatztest (Vergleich von $E_{kin}$ zur Stossart) — dann loesen.
@@ -135,8 +121,7 @@ ANTWORT: A erfordert Verfahren (i) plus (ii): Impulsbilanz aufstellen und $E_{ki
 
 Klausur-Satz: `Kleben verrät den unelastischen Stoss, getrenntes Weiterrollen verlangt den Energietest.`
 
-## Schritt 6 — check
-
+## Schritt 6 — check: Verständnisprüfung
 CHECK (Selbsttest, 3 Fragen mit Antworten):
 
 FRAGE: Wie lautet die Impulsbilanz beim geraden Stoss? | ANTWORT: $m_1 v_1 + m_2 v_2 = m_1 u_1 + m_2 u_2$ mit Vorzeichen je Richtung.
@@ -146,7 +131,6 @@ FRAGE: Warum ist das Vorzeichen entscheidend? | ANTWORT: Weil $p = m \cdot v$ ve
 Klausur-Satz: `Ohne Vorzeichenregel ist keine Impulsbilanz klausurtauglich.`
 
 ## Fehlvorstellung
-
 (kein Schritt; wird vom Parser automatisch erkannt und nicht mitgezaehlt)
 
 1. Fehlannahme: Bei jedem Stoss bleibe auch die kinetische Energie erhalten.
@@ -156,14 +140,12 @@ Klausur-Satz: `Ohne Vorzeichenregel ist keine Impulsbilanz klausurtauglich.`
    Korrektur: Impuls ist linear in $v$ und vektoriell, Energie quadratisch in $v$ und skalar.
    Korrektur-Satz: `Der Impuls ist linear in v und vektoriell, die kinetische Energie ist quadratisch in v und skalar.`
 
-## Schritt 7 — szenario
-
+## Schritt 7 — szenario: Klausurtransfer & Rubric
 ROLLE: Du bist Praktikantin im Verkehrslabor.
 SITUATION: Zwei Spielzeugwagen stossen auf der Luftkissenbahn zusammen; Wagen 2 stand vorher. Bestimmen Sie aus Messwerten Stossart und Energieverlust. Formulieren Sie in circa 150 Woertern die Auswertung mit Impulsbilanz und Energietest und beurteilen Sie, ob elastischer Stoss vorliegt.
 RUBRIC (30 XP): Korrekte Impulsbilanz mit Vorzeichen (10 XP) | Energietest mit Zahlen (10 XP) | Urteil zur Stossart mit Begruendung (6 XP) | Fachsprachliche Darstellung (4 XP).
 
-## Schritt 8 — entdecken
-
+## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
 TAKEAWAY (Kernzusammenfassung):
 
 Impuls immer bilanzieren, Energie zusaetzlich testen: erhalten plus erhalten bedeutet elastisch, Impuls erhalten plus Energie verloren bedeutet unelastisch.
@@ -172,3 +154,4 @@ Takeaway-Satz: `Der Impuls entscheidet ueber die Bewegung nach dem Stoss, die En
 REFLEXION (2 Fragen):
 1. Selbstbeobachtung: Welcher Schritt fiel schwerer — die Verlustrechnung (Schritt 4) oder die Verfahrenswahl (Schritt 5)?
 2. Planung: Beim naechsten Mal lege ich zuerst die positive Richtung fest, weil jedes Vorzeichen davon abhaengt.
+

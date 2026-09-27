@@ -15,9 +15,8 @@ version: Lesson-v3
 
 <!-- Lesson v3 9-Schritt-Architektur: Schritt 1 bis 8 feste Struktur; Fehlvorstellung zwischen Schritt 6 und 7 (Parser ueberspringt, zaehlt nicht); interaktive [Werkzeug: <id>]; Gating: check/szenario nicht bestanden = Weiter deaktiviert; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
-## Schritt 1 — entdecken
-
-ZIELE (diese Lektion in 15 Minuten: danach kannst du):
+## Schritt 1 — entdecken: Ziele & Phänomen-Einstieg
+ZIELE (drei messbare Ziele dieser Lektion):
 
 1. An $s$-$t$ Gerade gegen Parabel und $v$-$t$ Gerade die Bewegungsart ablesen: gleichfoermig gegen gleichmaessig beschleunigt.
 2. $v$ als Steigung in $s$-$t$, $s$ als Flaeche in $v$-$t$ und $a$ als Steigung in $v$-$t$ mit $2s/t^2$ bestimmen.
@@ -25,111 +24,88 @@ ZIELE (diese Lektion in 15 Minuten: danach kannst du):
 
 ### Hook / Phaenomen
 
-Im Jahr 2019 krachte ein Testwagen in die Barriere — die Gutachter stritten: konstantes Tempo oder konstante Beschleunigung? Die Messpunkte lagen auf dem Tisch: $s = 0$, $2$, $8$, $18\,\mathrm{m}$ nach $0$, $1$, $2$, $3\,\mathrm{s}$. Eine Gerade oder eine Parabel entscheidet ueber Schuld und Konstruktion. Warum verraten $0$, $2$, $8$, $18$ sofort die Antwort — und welche einzige Rechnung sichert $a = 4{,}0\,\mathrm{m/s^2}$?
+Ein Fahrradcomputer zeigt 22 an, doch niemand weiss, ob das Moment oder Mittel bedeutet und ob die Messung ueberhaupt stimmt. Jede reale Messung streut, jede Uhr geht ein wenig falsch und jede Strecke ist nur auf den Zentimeter genau. Nimm ein Weg-Zeit-Diagramm und entdecke, wie aus streuenden Punkten per Ausgleichsgerade eine Geschwindigkeit wird und wie s-t-, v-t- und a-t-Diagramme zusammenhaengen. Wer Diagramme nur abliest statt sie ineinander zu uebersetzen, versteht Bewegung nicht. Wer Steigung als Geschwindigkeit, Flaeche als Weg und Streuung als Unsicherheit liest, misst wie ein Profi und deutet jede Kurve physikalisch. Der folgende Weg fuehrt vom alltaeglichen Staunen zum physikalischen Gesetz: erst das Phaenomen beobachten, dann die Kraefte und Groessen benennen, schliesslich die Bilanz pruefen und im Sandbox-Labor selbst entdecken, warum die Natur genau dieser Regel folgt und keiner anderen.
 
 ### Fachbegriff & Definition
 
-Fuer die Kinematik gilt: **Im $s$-$t$-Diagramm liefert die Tangentensteigung die Momentangeschwindigkeit, waehrend im $v$-$t$-Diagramm die Flaeche unter der Linie den zurueckgelegten Weg angibt**. Dabei misst **$s$ in $\mathrm{m}$ die Strecke, $v$ in $\mathrm{m/s}$ das Tempo, $a$ in $\mathrm{m/s^2}$ die Aenderung**. Die **gleichmaessig beschleunigte Bewegung folgt $s = 0{,}5 a t^2$ und $v = a t + v_0$**.
+Nach dem NRW-Kernlehrplan gilt der untenstehende Klausur-Satz als verbindliche Definition dieser Lektion. Er fasst das Phaenomen in exakter Fachsprache und bildet die Grundlage fuer jede Deutung.
 
 ### Wirkungsgefuege / Modell
 
-Der Mechanismus liest Formen: Gerade in $s$-$t$ zu gleichfoermig, Parabel in $s$-$t$ plus Gerade in $v$-$t$ zu beschleunigt. Aus $s = 0{,}5 a t^2$ folgt $a = 2s/t^2$; fuer $s = 8\,\mathrm{m}$, $t = 2\,\mathrm{s}$ gilt $a = 16/4 = 4{,}0\,\mathrm{m/s^2}$. Probe an $t = 3\,\mathrm{s}$: $0{,}5 \cdot 4 \cdot 9 = 18\,\mathrm{m}$ trifft. Endgeschwindigkeit $v = a t = 12\,\mathrm{m/s}$; Umrechnung $\mathrm{km/h}$ durch $3{,}6$ zu $\mathrm{m/s}$ erst in SI rechnen.
-
-Schritt A: Punkte in $s$-$t$ auf Gerade oder Parabel pruefen.
-Schritt B: $a = 2s/t^2$ an mehreren Punkten gegenpruefen.
-Schritt C: $v$ per Steigung oder $v = a t$ plus Einheit und Satz schliessen.
+Der Mechanismus verbindet Alltag und Formel: Das Phaenomen liefert die Anschauung, die Definition liefert die Sprache und das Wirkungsmodell in Schritt 3 liefert die Kausalkette. Wer alle drei Ebenen verknuepft, beantwortet jede Klausurfrage vollständig.
 
 Klausur-Satz: `Im s-t-Diagramm liefert die Tangentensteigung die Momentangeschwindigkeit, waehrend im v-t-Diagramm die Flaeche unter der Linie den zurueckgelegten Weg angibt.`
 
-## Schritt 2 — entdecken
-
-PRETRAINING (Kernbegriffe, erst lesen, dann abdecken und aktiv wiedergeben):
+## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
+PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
 ### Hook / Phaenomen
 
-Ein Fahrtenrekorder liefert $v$-$t$ als Dreieck und Rechteck — doch die Versicherung fragt nach Metern, nicht nach Kurven. Die Flaeche unter der Linie zaehlt Meter, die Steigung zaehlt Beschleunigung. Welche fuenf Zuordnungen verwandeln jede Kurve in eine Zahl mit Einheit?
+Fuenf Begriffe trennen in dieser Lektion Alltagssprache von Klausursprache. Wer sie aktiv wiedergeben kann, liest jede Aufgabe schneller und waehlt sofort das richtige Verfahren.
 
 ### Fachbegriffe & Definitionen
 
-- **Strecke $s$ in $\mathrm{m}$:** Zurueckgelegte Laenge; Achsengroesse des $s$-$t$-Diagramms.
-- **Momentangeschwindigkeit $v$ in $\mathrm{m/s}$:** Tempo zu einem Zeitpunkt; Tangentensteigung in $s$-$t$.
-- **Beschleunigung $a$ in $\mathrm{m/s^2}$:** Aenderung von $v$; konstant bei gleichmaessig beschleunigter Fahrt.
-- **Steigung:** Neigung der Linie; in $s$-$t$ gleich $v$, in $v$-$t$ gleich $a$ per $\Delta v / \Delta t$.
-- **Flaeche unter der Linie:** Gebiet unter $v$-$t$; ihr Wert ist der Weg $s$ als Dreieck oder Rechteck.
+- **Weg-Zeit-Diagramm:** Die Kurve $s(t)$ zeigt den Ort ueber der Zeit, ihre Steigung ist die Geschwindigkeit. Mechanismus: Ausgleichsgerade legen und Steigung $v=\Delta s/\Delta t$ bilden. Klausur-Punkt: Achsen mit Einheiten beschriften und Steigung berechnen.
+- **Geschwindigkeit-Zeit-Diagramm:** Die Kurve $v(t)$ zeigt das Tempo, ihre Flaeche liefert den zurueckgelegten Weg. Mechanismus: Flaeche unter der Kurve als Weg deuten. Klausur-Punkt: Flaechen- und Steigungsdeutung je Diagramm korrekt zuordnen.
+- **Beschleunigung:** Die Aenderung $a=\Delta v/\Delta t$ misst, wie schnell sich das Tempo aendert. Mechanismus: Steigung im v-t-Diagramm bilden. Klausur-Punkt: Einheit $m/s^2$ führen und Vorzeichen als Richtung deuten.
+- **Momentan vs. Mittel:** Die Sekantensteigung mittelt ueber ein Intervall, die Tangentensteigung misst den Moment. Mechanismus: Intervall oder Zeitpunkt aus der Aufgabe ablesen. Klausur-Punkt: Verfahren nach Intervall oder Zeitpunkt waehlen.
+- **Messunsicherheit:** Jeder Messwert traegt zufaellige Streuung und moegliche systematische Verschiebung. Mechanismus: Streuung um die Ausgleichsgerade beurteilen. Klausur-Punkt: Ergebnis nur im Rahmen der Unsicherheit bewerten.
 
 ### Wirkungsgefuege / Modell
 
-Die Kette ordnet Diagramm und Rechenweg: $s$-$t$ verlangt Steigung $v = \Delta s / \Delta t$; $v$-$t$ verlangt Flaeche $s$ als $0{,}5 \cdot Grund \cdot Hoehe$ oder $Grund \cdot Hoehe$; $a$-$t$ verlangt Hoehe $a$ und Flaeche als $\Delta v$. Wer $v$-$t$ nach Steigung statt Flaeche fragt, verwechselt Weg und Beschleunigung — der haeufigste Diagrammfehler. Erst Achse lesen, dann Steigung oder Flaeche waehlen, dann Einheit sichern.
+Die Kette verbindet alle fuenf Begriffe zu einem Verfahren: Erkennen, Einordnen, Aufstellen, Loesen und Deuten. Jeder Begriff traegt genau einen Schritt, gemeinsam sichern sie die volle Punktzahl.
 
 Klausur-Satz: `Die Beschleunigung ist im v-t-Diagramm die Steigung der Geraden, im a-t-Diagramm dagegen die Hoehe der waagerechten Linie.`
 
-## Schritt 3 — entdecken
+## Schritt 3 — entdecken: Kernkonzept & Wirkungsmodell
+EXPERIMENTELLE ERKUNDUNG (Sandbox, erst spielen, dann deuten):
 
-ENTDECKEN (ein Konzept plus Textdiagramm):
+### Hook & Phaenomen
 
-### Hook / Phaenomen
+Die Sandbox macht das Unsichtbare sichtbar: Stelle Groessen ein, beobachte Kurven und lies Werte ab, bevor eine einzige Formel faellt. Erst die Anschauung, dann die Deutung, erst das Spiel, dann das Gesetz.
 
-Ein Schueler misst $s = 2{,}0\,\mathrm{m}$ nach $2{,}0\,\mathrm{s}$ und meldet $a = 1{,}0\,\mathrm{m/s^2}$ — ein Wert, kein Beweis. Sein Lehrer fordert drei Quotienten $2s/t^2$ an drei Punkten plus $v = 4{,}0\,\mathrm{m/s}$ am Ende. Warum sichert erst die Konstanz von $2s/t^2$ die Aussage beschleunigt — und wie entlarvt ein einziger Ausreisser die Fehlmessung?
+### Spiel-Aufgabe / Challenge
 
-### Fachbegriff & Definition
+Oeffne die Sandbox aus Schritt 4, variiere die zentralen Parameter in kleinen Schritten und notiere je Stufe Kurvenform und Messwert. Formuliere aus drei Stufen eine erste Vermutung ueber den Zusammenhang.
 
-Eine **gleichmaessig beschleunigte Bewegung erkennt man daran, dass die Messpunkte im $s$-$t$-Diagramm auf einer Parabel und im $v$-$t$-Diagramm auf einer steigenden Geraden liegen**. Der **Quotient $2s/t^2$ ist dann konstant und gleich $a$**. Die **Endgeschwindigkeit folgt $v = a t + v_0$** mit $v_0$ als Startwert.
+### Aha-Moment & Gesetz
 
-### Wirkungsgefuege / Modell
-
-Der Tiefenweg prueft Konstanz: $2 \cdot 0{,}5/1^2 = 1{,}0$, $2 \cdot 2{,}0/2^2 = 1{,}0$, $2 \cdot 4{,}5/3^2 = 1{,}0$ zu $a = 1{,}0\,\mathrm{m/s^2}$ stabil. Dann $v = 1{,}0 \cdot 4{,}0 = 4{,}0\,\mathrm{m/s}$ nach $4{,}0\,\mathrm{s}$. Schwankt der Quotient wie $1{,}0/1{,}4/1{,}1$, so liegt keine gleichmaessige Beschleunigung vor — Messfehler oder andere Bewegungsart. SI-Regel: erst $\mathrm{km/h}$ durch $3{,}6$ zu $\mathrm{m/s}$, dann rechnen, dann bei Bedarf zurueck.
-
-Schritt A: $2s/t^2$ an drei Punkten bilden und vergleichen.
-Schritt B: Parabel in $s$-$t$ und Gerade in $v$-$t$ zuordnen.
-Schritt C: $v$ und $s$ per Steigung oder Flaeche mit Einheit schliessen.
+Die Kausalkette laeuft von der Messung ueber das Diagramm zur Groesse: Zuerst traegt man $s$ ueber $t$ auf und legt die Ausgleichsgerade, dann liest man $v=\Delta s/\Delta t$ als Steigung ab, schliesslich prueft man per $v(t)$ und $a(t)$ die Konsistenz. Es gilt $s(t)=v_0t+\frac12at^2$ bei konstanter Beschleunigung und $F=m\cdot a$ als Bruecke zur Dynamik. Flaechen im v-t-Diagramm liefern Wege, Steigungen im s-t-Diagramm liefern Tempi, beide Deutungen muessen zusammenpassen.
 
 ```diagram
-   s ^                         v ^
-     |        .                |            /
-     |      .                  |          /
-     |    .    (Parabel)       |        /  (Gerade, Steigung = a)
-     |  .                      |      /
-     |.                        |    /
-     +------------------> t    +--------------> t
-      s-t: Steigung -> v        v-t: Flaeche -> s
-
-   v-t-Flaeche (Trapez) = Weg:
-     v ^
-       |      ___________
-       |     /           \
-       |    /             \
-       +------------------------> t
-        |__A1__|___A2___|_A3_|   s = A1 + A2 + A3
-   Test: 2s/t^2 konstant > a = 1.0 m/s^2, v = 4.0 m/s
++------------------------------------------+
+| s-t: Steigung = v  |  Flaeche: -         |
+| v-t: Steigung = a  |  Flaeche = Weg s    |
+| a-t: Steigung = -  |  Flaeche = Delta v  |
+| s(t) = v0 t + 1/2 a t^2  |  F = m a     |
++------------------------------------------+
 ```
+Formelkern: $s$
 
 Klausur-Satz: `Eine gleichmaessig beschleunigte Bewegung erkennt man daran, dass die Messpunkte im s-t-Diagramm auf einer Parabel und im v-t-Diagramm auf einer steigenden Geraden liegen.`
 
 ## Anekdote & Fun-Fact
-
 **Anekdote / Fun-Fact (DE)**: Die Einheit Meter wurde Ende des 18. Jahrhunderts ueber die Vermessung der Erde festgelegt: Sie sollte ein Zehnmillionstel der Strecke vom Nordpol zum Aequator sein. Spaeter definierte man sie ueber eine Metallstange, heute ueber die Lichtgeschwindigkeit. Das zeigt: Selbst eine grundlegende Groesse wie ein Meter ist eine menschliche Vereinbarung mit wachsender Genauigkeit.
 
 **Bezug zum Konzept**: `Einheiten wie Meter und km/h sind Vereinbarungen; die Umrechnung von km/h in m/s ist daher nur eine Frage der Definition, nicht der Physik.`
 
-## Schritt 4 — ausprobieren
+## Schritt 4 — ausprobieren: Interaktive Praxis & Kinematik-Labor
+BEISPIEL (Sandbox Level mit Werkzeug):
 
-BEISPIEL (Musteraufgabe mit Loesungsweg):
+[Werkzeug: kinematik-lab]
 
-[Werkzeug: tangent]
-
-AUFGABE (berechnen, AFB II): Auf der Luftkissenbahn werden zu $t = 0, 1, 2, 3, 4\,\mathrm{s}$ die Strecken $s = 0; 0{,}50; 2{,}00; 4{,}50; 8{,}00\,\mathrm{m}$ gemessen. Pruefen Sie, ob eine gleichmaessig beschleunigte Bewegung vorliegt, und bestimmen Sie $a$ sowie $v$ bei $t = 4\,\mathrm{s}$.
+AUFGABE (Levelziel, AFB II): Knacke das Kinematik-Level: Stelle im Sandbox-Labor nacheinander Anfangstempo $v_0$ und Beschleunigung $a$ ein und beobachte, wie sich s-t-Parabel und v-t-Gerade live veraendern. Miss per Ausgleichsgerade die Geschwindigkeit, lies Weg als Flaeche ab und pruefe $s(t)=v_0t+\frac12at^2$ an einem Zahlenbeispiel. Erklaere in einem Satz den Zusammenhang beider Diagramme.
 
 HILFE:
-1. Pruefe mit $s = 0{,}5 \cdot a \cdot t^2$, ob $a = 2s/t^2$ fuer alle Punkte gleich ist.
-2. Setze $t = 4\,\mathrm{s}$ und $s = 8{,}00\,\mathrm{m}$ ein.
-3. Berechne $v = a \cdot t$ oder die Tangentensteigung im $s$-$t$-Diagramm.
+1. Stelle $v_0$ und $a$ ein, verfolge s-t- und v-t-Kurven und lies Steigung und Flaeche im Labor ab.
+2. Lege die Ausgleichsgerade durch die Messpunkte und berechne $v = \Delta s/\Delta t$ mit Einheiten.
+3. Pruefe $s(t) = v_0t+\frac12at^2$ numerisch und deute Steigung gegen Flaeche in einem Satz.
 
-MUSTERLOESUNG: Es gilt $a = 2s/t^2$: $2 \cdot 0{,}50/1^2 = 1{,}0$; $2 \cdot 2{,}00/2^2 = 1{,}0$; $2 \cdot 4{,}50/3^2 = 1{,}0$; $2 \cdot 8{,}00/4^2 = 1{,}0$ in $\mathrm{m/s^2}$. Der Quotient ist konstant, die Punkte liegen auf einer Parabel, also gleichmaessig beschleunigt mit $a = 1{,}0\,\mathrm{m/s^2}$. Bei $t = 4\,\mathrm{s}$ folgt $v = a \cdot t = 1{,}0 \cdot 4 = 4{,}0\,\mathrm{m/s}$. Gegenprobe im $v$-$t$-Diagramm: Dreiecksflaeche $0{,}5 \cdot 4 \cdot 4{,}0 = 8{,}0\,\mathrm{m}$, passend zur Messung.
+MUSTERLOESUNG: Labor mit $v_0$ und $a$ zeigt s-t-Parabel und v-t-Gerade konsistent zueinander. Ausgleichsgerade liefert $v = \Delta s/\Delta t$ als Steigung, die Flaeche unter $v(t)$ bestaetigt den Weg $s(t)=v_0t+\frac12at^2$ numerisch. Zusammenhang: Die Steigung im s-t-Diagramm ist das Tempo, die Flaeche im v-t-Diagramm ist der Weg, beide beschreiben dieselbe Bewegung.
 
 Klausur-Satz: `Da der Quotient 2s/t^2 fuer alle Messpunkte konstant ist, liegt eine gleichmaessig beschleunigte Bewegung mit a = 1,0 m/s^2 vor, und die Endgeschwindigkeit betraegt v = 4,0 m/s.`
 
-## Schritt 5 — ausprobieren
-
+## Schritt 5 — ausprobieren: Verfahrensvergleich & Abgrenzung
 VERGLEICH (zwei Verfahren unterscheiden):
 
 VERGLEICH: Waehle zuerst das Verfahren — (i) $s$-$t$-Verfahren (Achse traegt $s$, gesucht ist $v$: Steigung $v = \Delta s / \Delta t$ lesen) oder (ii) $v$-$t$-Verfahren (Achse traegt $v$, gesucht ist $s$: Flaeche $s$ berechnen) — dann loesen.
@@ -144,8 +120,7 @@ ANTWORT: A erfordert Verfahren (i): $v = \Delta s / \Delta t = (6{,}0 - 0)/(4{,}
 
 Klausur-Satz: `Bei einer s-t-Geraden wird die Geschwindigkeit als Steigung gelesen, bei einer v-t-Geraden dagegen der Weg als Flaeche unter der Linie berechnet.`
 
-## Schritt 6 — check
-
+## Schritt 6 — check: Verständnisprüfung
 CHECK (Selbsttest, 3 Fragen mit Antworten):
 
 FRAGE: Woran erkennt man im $s$-$t$-Diagramm eine gleichmaessig beschleunigte Bewegung? | ANTWORT: Die Punkte liegen auf einer Parabel, weil der Weg mit dem Quadrat der Zeit waechst.
@@ -155,7 +130,6 @@ FRAGE: Wie berechnet man die Momentangeschwindigkeit aus einer Messreihe? | ANTW
 Klausur-Satz: `Die Steigung im s-t-Diagramm und die Flaeche im v-t-Diagramm sind die beiden zentralen Auswerteschritte der Kinematik.`
 
 ## Fehlvorstellung
-
 (kein Schritt; wird vom Parser automatisch erkannt und nicht mitgezaehlt)
 
 1. Fehlannahme: Eine steilere $s$-$t$-Linie bedeute langsamere Bewegung.
@@ -165,14 +139,12 @@ Klausur-Satz: `Die Steigung im s-t-Diagramm und die Flaeche im v-t-Diagramm sind
    Korrektur: Die Hoehe ist $v$ in $\mathrm{m/s}$, erst die Flaeche liefert $s$ in $\mathrm{m}$.
    Korrektur-Satz: `Im v-t-Diagramm gibt die Hoehe der Linie die Geschwindigkeit an, waehrend erst die Flaeche unter der Linie den Weg liefert.`
 
-## Schritt 7 — szenario
-
+## Schritt 7 — szenario: Klausurtransfer & Rubric
 ROLLE: Du bist Tutorin fuer Physik in der EF und leitest eine Kleingruppe bei der Auswertung eines Fahrbahnexperiments.
 SITUATION: Eine Mitschuelerin hat eine Messreihe ($t$ in $\mathrm{s}$, $s$ in $\mathrm{m}$) aufgenommen; die Punkte streuen leicht um eine Kurve. Erklaere in einer zusammenhaengenden Antwort (ca. 150 Woerter), wie sie zwischen gleichfoermiger und gleichmaessig beschleunigter Bewegung entscheidet und daraus $a$ und $v$ bestimmt. Nutze $s$-$t$- und $v$-$t$-Diagramm.
 RUBRIC (30 XP): Pruefkriterium Gerade gegen Parabel (5 XP) | Test mit $s = 0{,}5 \cdot a \cdot t^2$ und konstantem Wert (10 XP) | Bestimmung von $v$ als Tangentensteigung oder $v = a \cdot t$ (10 XP) | Sauberes Ergebnis mit Einheit und Gegenprobe ueber die $v$-$t$-Flaeche (5 XP).
 
-## Schritt 8 — entdecken
-
+## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
 TAKEAWAY (Kernzusammenfassung):
 
 Steigung im $s$-$t$-Diagramm liefert $v$, Flaeche im $v$-$t$-Diagramm liefert $s$, Steigung im $v$-$t$ liefert $a$. Die Punktform entscheidet: Gerade bedeutet gleichfoermig, Parabel bedeutet beschleunigt. Das Viererschritt-Verfahren lautet: Daten notieren, Ansatz schreiben, mit Einheiten rechnen, mit dem zweiten Diagramm gegenpruefen.
@@ -181,3 +153,4 @@ Takeaway-Satz: `Die Steigung im s-t-Diagramm liefert v, die Flaeche im v-t-Diagr
 REFLEXION (2 Fragen):
 1. Selbstbeobachtung: Welcher Schritt fiel schwerer — das Pruefen der Messreihe mit $a = 2s/t^2$ (Schritt 4) oder die Wahl zwischen Steigung und Flaeche im Vergleich (Schritt 5)?
 2. Planung: Beim naechsten Mal lese ich zuerst die Achsenbeschriftung mit Einheit und entscheide danach, ob ich eine Steigung oder eine Flaeche auswerte.
+

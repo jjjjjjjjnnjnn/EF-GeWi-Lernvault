@@ -15,9 +15,8 @@ version: Lesson-v3
 
 <!-- Lesson v3 9-Schritt-Architektur: Schritt 1 bis 8 feste Struktur; Fehlvorstellung zwischen Schritt 6 und 7 (Parser ueberspringt, zaehlt nicht); interaktive [Werkzeug: <id>]; Gating: check/szenario nicht bestanden = Weiter deaktiviert; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
-## Schritt 1 — entdecken
-
-ZIELE (diese Lektion in 15 Minuten: danach kannst du):
+## Schritt 1 — entdecken: Ziele & Phänomen-Einstieg
+ZIELE (drei messbare Ziele dieser Lektion):
 
 1. Achsen mit Einheit beschriften, Punkte als Streuung ohne Zickzack und ohne erzwungenen Ursprung zeichnen.
 2. $v = \Delta s/\Delta t \approx 0{,}50\,\mathrm{m/s}$ per Zweipunktformel aus der Ausgleichsgeraden bestimmen.
@@ -25,110 +24,89 @@ ZIELE (diese Lektion in 15 Minuten: danach kannst du):
 
 ### Hook / Phaenomen
 
-Im Jahr 2012 meldete CERN ein Neutrino schneller als Licht — Monate spaeter entpuppte sich ein lockeres Kabel als systematischer Fehler. Alle Punkte lagen zu hoch, die Mittelung half nichts. Ein Wagenversuch mit $v \approx 0{,}50\,\mathrm{m/s}$ stellt dasselbe Raetsel im Kleinen: Streuen die Punkte um die Gerade oder liegen alle daneben — und warum rettet Mitteln nur einen der beiden Fehler?
+Ein Schueler misst die Wagenfahrt fuenfmal und erhaelt fuenf verschiedene Zeiten, obwohl die Rampe jedes Mal identisch aussieht. Kein Wert gleicht dem anderen und doch soll daraus eine einzige Geschwindigkeit mit Aussagekraft werden. Nimm die Messreihe und entdecke die Ausgleichsgerade als ehrlichen Kompromiss: Sie mittelt zufaellige Streuung weg, entlarvt systematische Fehler an der Verschiebung und liefert per Steigung die gesuchte Groesse. Wer einzelne Punkte verbindet statt auszugleichen, zementiert den Zufall. Wer zufaellig gegen systematisch trennt, Achsen mit Einheiten beschriftet und nur im Rahmen der Unsicherheit urteilt, misst wie ein Profi und verteidigt jedes Ergebnis. Der folgende Weg fuehrt vom alltaeglichen Staunen zum physikalischen Gesetz: erst das Phaenomen beobachten, dann die Kraefte und Groessen benennen, schliesslich die Bilanz pruefen und im Sandbox-Labor selbst entdecken, warum die Natur genau dieser Regel folgt und keiner anderen.
 
 ### Fachbegriff & Definition
 
-Fuer Messungen gilt: **Die Ausgleichsgerade fasst streuende Punkte sinnvoll zusammen; ihre Steigung liefert die Groesse, die Streuung gibt die Unsicherheit an**. Dabei streuen **zufaellige Fehler unsystematisch um die Gerade, systematische verschieben alle Werte gleichsinnig**. Jedes **Urteil gilt nur im Rahmen der Messunsicherheit**.
+Nach dem NRW-Kernlehrplan gilt der untenstehende Klausur-Satz als verbindliche Definition dieser Lektion. Er fasst das Phaenomen in exakter Fachsprache und bildet die Grundlage fuer jede Deutung.
 
 ### Wirkungsgefuege / Modell
 
-Der Mechanismus legt die Gerade durch die Wolke: $s$-$t$ mit $v = \Delta s/\Delta t$ aus zwei fernen Geradenpunkten zu $v \approx 0{,}50\,\mathrm{m/s}$. Zweipunktprobe mit anderem Paar als Kontrolle. Streuung $\pm 0{,}03$ beiderseits zu Zufall per Mittelung klein; Verschiebung $+0{,}10$ einseitig zu Systematik per Startfehler — Mittelung hilft nicht. Ursprung nur bei $t = 0$ zu $s = 0$ physikalisch erzwungen.
-
-Schritt A: Tabelle mit Einheiten und Dezimalstellen anlegen.
-Schritt B: Punkte ohne Linie, dann Gerade nach Augenmass legen.
-Schritt C: Steigung per Zweipunktformel und Streuung als Unsicherheit lesen.
+Der Mechanismus verbindet Alltag und Formel: Das Phaenomen liefert die Anschauung, die Definition liefert die Sprache und das Wirkungsmodell in Schritt 3 liefert die Kausalkette. Wer alle drei Ebenen verknuepft, beantwortet jede Klausurfrage vollständig.
 
 Klausur-Satz: `Die Ausgleichsgerade fasst die streuenden Messpunkte sinnvoll zusammen; ihre Steigung liefert die gesuchte Groesse, und die Streuung der Punkte gibt die Messunsicherheit an.`
 
-## Schritt 2 — entdecken
-
-PRETRAINING (Kernbegriffe, erst lesen, dann abdecken und aktiv wiedergeben):
+## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
+PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
 ### Hook / Phaenomen
 
-Zwei Messreihen — beide mit Mittel $0{,}50\,\mathrm{m/s}$. Eine streut wild, eine liegt ruhig. Der Mittelwert luegt: Nur die Streuung verrraet die Guete. Welche fuenf Begriffe trennen praezise und windige Messung in einem Blick?
+Fuenf Begriffe trennen in dieser Lektion Alltagssprache von Klausursprache. Wer sie aktiv wiedergeben kann, liest jede Aufgabe schneller und waehlt sofort das richtige Verfahren.
 
 ### Fachbegriffe & Definitionen
 
-- **Ausgleichsgerade:** Beste Gerade durch gestreute Punkte; Steigung ist die Groesse.
-- **Messunsicherheit:** Fehler jeder Ablesung; Aussagen nur innerhalb dieses Rahmens.
-- **Zufaelliger Fehler:** Streuung beiderseits; Mittelung verkleinert ihn.
-- **Systematischer Fehler:** Gleichsinnige Verschiebung wie spaeter Start; Mittelung hilft nicht.
-- **Punktdiagramm:** Nur Punkte ohne Verbindung; Trend statt Zickzack.
+- **Ausgleichsgerade:** Die sinnvolle Gerade durch streuende Punkte mittelt zufaellige Fehler heraus. Mechanismus: Gerade nach Augemass durch die Punktwolke legen. Klausur-Punkt: Steigung als Ergebnisgroesse berechnen.
+- **Zufaelliger Fehler:** Unsystematische Streuung um die Gerade schwankt mal hoch mal tief. Mechanismus: Abweichungen beidseitig der Geraden pruefen. Klausur-Punkt: Mittelung als Gegenmittel nennen.
+- **Systematischer Fehler:** Einseitige Verschiebung aller Werte verraet eine stoerende Ursache. Mechanismus: Einseitige Abweichung oder Achsenabschnitt deuten. Klausur-Punkt: Ursache suchen statt zu mitteln.
+- **Achsen und Einheiten:** Beschriftete Achsen samt Einheiten machen aus Punkten erst Physik. Mechanismus: Groesse, Symbol und Einheit je Achse notieren. Klausur-Punkt: Ohne Einheiten gilt das Diagramm als wertlos.
+- **Messunsicherheit:** Der Vertrauensbereich um das Ergebnis begrenzt jede Aussage und jeden Vergleich. Mechanismus: Streuung als Unsicherheitsbalken einschaetzen. Klausur-Punkt: Modell nur im Rahmen der Unsicherheit bestaetigen.
 
 ### Wirkungsgefuege / Modell
 
-Die Kette sortiert Fehler nach Bild: Punkte oben und unten zu Zufall per $\pm$ und Mittel; alle oben zu Systematik per Versatz und Korrektur. Zickzacklinie zwischen Punkten taeuscht Genauigkeit vor — Daten sind diskret, Trend ist Gerade. Wer Achsen ohne Einheit laesst, verliert den ersten Punkt vor jeder Rechnung.
+Die Kette verbindet alle fuenf Begriffe zu einem Verfahren: Erkennen, Einordnen, Aufstellen, Loesen und Deuten. Jeder Begriff traegt genau einen Schritt, gemeinsam sichern sie die volle Punktzahl.
 
 Klausur-Satz: `Zufaellige Fehler streuen unsystematisch um die Ausgleichsgerade, waehrend systematische Fehler alle Messwerte in dieselbe Richtung verschieben.`
 
-## Schritt 3 — entdecken
+## Schritt 3 — entdecken: Kernkonzept & Wirkungsmodell
+EXPERIMENTELLE ERKUNDUNG (Sandbox, erst spielen, dann deuten):
 
-ENTDECKEN (ein Konzept plus Textdiagramm):
+### Hook & Phaenomen
 
-### Hook / Phaenomen
+Die Sandbox macht das Unsichtbare sichtbar: Stelle Groessen ein, beobachte Kurven und lies Werte ab, bevor eine einzige Formel faellt. Erst die Anschauung, dann die Deutung, erst das Spiel, dann das Gesetz.
 
-Ein Schueler zwingt die Gerade durch den Ursprung — obwohl der Wagen bei $t = 0$ schon $0{,}20\,\mathrm{m}$ rollte. Die Steigung kippt, $v$ wird falsch. Sein Nachbar liest $v$ aus zwei nahen Punkten und erntet Rauschen. Wie legt man die Gerade richtig — und warum sichern ferne Zweipunkte plus Achsenprobe jede Steigung?
+### Spiel-Aufgabe / Challenge
 
-### Fachbegriff & Definition
+Oeffne die Sandbox aus Schritt 4, variiere die zentralen Parameter in kleinen Schritten und notiere je Stufe Kurvenform und Messwert. Formuliere aus drei Stufen eine erste Vermutung ueber den Zusammenhang.
 
-Ein **Diagramm ohne beschriftete Achsen samt Einheiten ist wertlos, und eine Messreihe darf nur im Rahmen der Unsicherheit beurteilt werden**. Die **Steigung per $v = \Delta s/\Delta t$ aus fernen Geradenpunkten minimiert Ablesefehler**. Der **Ursprung wird nur bei physikalischem $0$-zu-$0$ erzwungen**.
+### Aha-Moment & Gesetz
 
-### Wirkungsgefuege / Modell
-
-Der Tiefenweg sichert $v$ in vier Griffen: Achsen $s$ in $\mathrm{m}$ gegen $t$ in $\mathrm{s}$; Punkte als Punkte; Gerade nach Augenmass ohne Zickzack; $v = (1{,}50-0{,}50)/(3{,}0-1{,}0) = 0{,}50\,\mathrm{m/s}$ aus fernen Punkten. Gegenprobe $(1{,}20-0{,}20)/(2{,}5-0{,}5) = 0{,}50$ bestaetigt. Streuung $\pm 0{,}05$ als Unsicherheit; Urteil nur als $v = 0{,}50 \pm 0{,}05\,\mathrm{m/s}$ mit weil-Satz zur Streuung.
-
-Schritt A: Achsen plus Einheiten und Punkte pruefen.
-Schritt B: Gerade legen und ferne Punkte waehlen.
-Schritt C: Steigung plus Unsicherheit als Urteil mit weil-Satz schreiben.
+Die Kausalkette laeuft von den Punkten ueber die Gerade zum Urteil: Zuerst traegt man Messwerte mit Achsen und Einheiten auf, dann legt man die Ausgleichsgerade und berechnet ihre Steigung $v=\Delta s/\Delta t$ als Ergebnis, schliesslich beurteilt man Streuung und Verschiebung. Zufaellige Fehler streuen unsystematisch und werden durch Mittelung kleiner, systematische Fehler verschieben einseitig und brauchen Ursachenbehebung. Ein Diagramm ohne beschriftete Achsen samt Einheiten ist wertlos, jede Messreihe gilt nur im Rahmen der Unsicherheit.
 
 ```diagram
-    s ^
-      |                        .   (Messpunkt, gestreut)
-      |                     .     /
-      |                  .       /  Ausgleichsgerade
-      |               .        /    (Steigung = v = 0.50 m/s)
-      |            .         .
-      |         .       .
-      |      .     .
-      |   .   .
-      +-----------------------------> t
-       Achsen mit Einheit, Punkte als
-       Punkte, Linie als Ausgleichsgerade
-
-    zufaellig:  Punkte oben UND unten  -> mitteln hilft
-    systematisch: alle Punkte zu hoch -> mitteln hilft NICHT
-    Probe: (1.50-0.50)/(3.0-1.0) = 0.50 m/s bestaetigt
++------------------------------------------+
+| Punkte + Achsen mit Einheiten            |
+|   | Ausgleichsgerade legen              |
+|   v                                      |
+| Steigung = Ergebnis (z.B. v = 0.50 m/s) |
+| Streuung? zufaellig | Verschoben? syst. |
++------------------------------------------+
 ```
+Formelkern: $v=\Delta s/\Delta t$
 
 Klausur-Satz: `Ein Diagramm ohne beschriftete Achsen samt Einheiten ist wertlos, und eine Messreihe darf nur im Rahmen der Messunsicherheit beurteilt werden.`
 
 ## Anekdote & Fun-Fact
-
 **Anekdote / Fun-Fact (DE)**: Ein beruehmtes Beispiel fuer einen systematischen Fehler ist der Spiegel des Hubble-Weltraumteleskops: Beim Schleifen wurde ein Messgeraet falsch zusammengesetzt, sodass alle Kontrollmessungen in dieselbe Richtung abwichen und der Spiegel eine winzige, aber folgenreiche Fehlform bekam. Der Fehler fiel erst nach dem Start auf und liess sich nicht durch mehr Messen oder Mitteln beseitigen, sondern nur durch eine Korrektur an der Ursache.
 
 **Bezug zum Konzept**: `Der Hubble-Spiegel zeigt, dass ein systematischer Fehler alle Messwerte gleichsinnig verschiebt und nur an seiner Ursache behoben werden kann, nicht durch Mittelung.`
 
-## Schritt 4 — ausprobieren
+## Schritt 4 — ausprobieren: Interaktive Praxis & Messdiagramm-Labor
+BEISPIEL (Sandbox Level mit Werkzeug):
 
-BEISPIEL (Musteraufgabe mit Loesungsweg):
+[Werkzeug: kinematik-lab]
 
-[Werkzeug: formula]
-
-AUFGABE (analysieren, AFB II): Zu $t = 0, 2, 4, 6, 8\,\mathrm{s}$ werden $s = 0; 1{,}05; 1{,}96; 3{,}05; 3{,}98\,\mathrm{m}$ gemessen. Stellen Sie die Reihe als Punktdiagramm dar, bestimmen Sie die Steigung der Ausgleichsgeraden und beurteilen Sie, ob gleichfoermige Bewegung im Rahmen der Unsicherheit haltbar ist.
+AUFGABE (Levelziel, AFB II): Knacke das Mess-Level: Verstelle im Sandbox-Labor Streustärke und Nullpunktverschiebung und beobachte, wie die Punktwolke um die Gerade streut oder einseitig wandert. Lege die Ausgleichsgerade, bestimme die Geschwindigkeit aus der Steigung und entscheide per Streubild zwischen zufaellig und systematisch. Begruende in einem Satz dein Modellurteil.
 
 HILFE:
-1. Punkte in ein $s$-$t$-Diagramm mit Einheiten eintragen und Ausgleichsgerade legen.
-2. Steigung mit zwei fernen Punkten als $v = \Delta s / \Delta t$ ablesen.
-3. Abweichungen als zufaellig oder systematisch einordnen.
+1. Stelle Streuung und Verschiebung ein und verfolge Punktwolke gegen Gerade.
+2. Lege die Ausgleichsgerade und berechne $v = \Delta s/\Delta t$ mit Einheit.
+3. Deute Streuung als zufaellig oder Verschiebung als systematisch und urteile im Rahmen der Unsicherheit.
 
-MUSTERLOESUNG: Die Punkte liegen nahezu auf einer Ursprungsgeraden. Mit den Aussenpunkten gilt $v = \Delta s / \Delta t = (3{,}98 - 0)/(8 - 0) = 0{,}4975\,\mathrm{m/s}$, gerundet $0{,}50\,\mathrm{m/s}$. Zwischenwerte stuetzen dies: $1{,}05/2 = 0{,}525$; $1{,}96/4 = 0{,}490$; $3{,}05/6 = 0{,}508$ in $\mathrm{m/s}$, unsystematisch um $0{,}50$ gestreut. Gegen die Gerade $s = 0{,}50 \cdot t$ liegt $t = 2\,\mathrm{s}$ um $0{,}05\,\mathrm{m}$ darueber, $t = 4\,\mathrm{s}$ um $0{,}04\,\mathrm{m}$ darunter, $t = 6\,\mathrm{s}$ um $0{,}05\,\mathrm{m}$ darueber, $t = 8\,\mathrm{s}$ um $0{,}02\,\mathrm{m}$ darunter. Die Vorzeichen wechseln, also zufaellige Fehler. Das Modell gleichfoermiger Bewegung ist im Rahmen der Messunsicherheit haltbar; exakt darf es nicht genannt werden.
+MUSTERLOESUNG: Labor mit kleiner Streuung liefert Ausgleichsgerade mit $v = 0{,}50\,m/s$, Abweichungen streuen unsystematisch beidseitig. Verschiebung wuerde alle Punkte einseitig verlagern und systematische Ursache verraten. Da die Streuung unsystematisch bleibt, ist das Modell im Rahmen der Unsicherheit bestaetigt.
 
 Klausur-Satz: `Die Ausgleichsgerade ergibt eine Geschwindigkeit von etwa 0,50 m/s, und da die Abweichungen unsystematisch streuen, ist das Modell im Rahmen der Messunsicherheit haltbar.`
 
-## Schritt 5 — ausprobieren
-
+## Schritt 5 — ausprobieren: Verfahrensvergleich & Abgrenzung
 VERGLEICH (zwei Verfahren unterscheiden):
 
 VERGLEICH: Waehle zuerst das Verfahren — (i) Zufallsfehler-Verfahren (Punkte streuen musterlos beiderseits: Mittelung hilft) oder (ii) Systemfehler-Verfahren (alle Punkte gleichsinnig verschoben: Ursache an Geraet und Ablauf suchen) — dann loesen.
@@ -143,8 +121,7 @@ ANTWORT: A erfordert Verfahren (i): unsystematische Streuung bedeutet Zufallsfeh
 
 Klausur-Satz: `Zufaellige Fehler werden durch Mittelung verkleinert, systematische Fehler dagegen nur durch das Beheben ihrer Ursache.`
 
-## Schritt 6 — check
-
+## Schritt 6 — check: Verständnisprüfung
 CHECK (Selbsttest, 3 Fragen mit Antworten):
 
 FRAGE: Welche drei Elemente muss ein sauberes Diagramm mindestens enthalten? | ANTWORT: Beschriftete Achsen mit Groesse, zugehoerige Einheiten sowie Punkte und Ausgleichsgerade.
@@ -154,7 +131,6 @@ FRAGE: Warum darf ein Messergebnis nicht exakt genannt werden? | ANTWORT: Weil j
 Klausur-Satz: `Ein Messergebnis wird nur im Rahmen der Messunsicherheit beurteilt, wobei zufaellige und systematische Fehler getrennt benannt werden.`
 
 ## Fehlvorstellung
-
 (kein Schritt; wird vom Parser automatisch erkannt und nicht mitgezaehlt)
 
 1. Fehlannahme: Messpunkte mit Zickzacklinie verbinden sei Zeichnen.
@@ -164,14 +140,12 @@ Klausur-Satz: `Ein Messergebnis wird nur im Rahmen der Messunsicherheit beurteil
    Korrektur: Mittelung hilft nur gegen Zufall. Nullpunktfehler oder spaeter Start verschieben auch den Mittelwert und verlangen Geraetekorrektur.
    Korrektur-Satz: `Die Mittelung verkleinert nur zufaellige Fehler; systematische Fehler bleiben erhalten und muessen an ihrer Ursache beseitigt werden.`
 
-## Schritt 7 — szenario
-
+## Schritt 7 — szenario: Klausurtransfer & Rubric
 ROLLE: Du bist Mitglied der Physik-AG und sollst fuer das Schuljahrbuch einen Versuch zur gleichfoermigen Bewegung auswerten und dokumentieren.
 SITUATION: Eine Gruppe hat eine Messreihe ($t$ in $\mathrm{s}$, $s$ in $\mathrm{m}$) aufgenommen; die Punkte streuen leicht um eine Gerade, und ein Schueler nennt das Ergebnis genau $0{,}50\,\mathrm{m/s}$. Beurteile in einer zusammenhaengenden Stellungnahme (ca. 150 Woerter) Darstellung, Geschwindigkeitsbestimmung und Aussagekraft mit Ausgleichsgerade und Messunsicherheit.
 RUBRIC (30 XP): Korrekte Darstellung mit Achsen, Einheit, Punkten und Gerade (5 XP) | Steigung als Geschwindigkeit mit Rechnung (10 XP) | Einordnung als zufaellig oder systematisch (10 XP) | Eingeschraenktes Fazit statt exakt (5 XP).
 
-## Schritt 8 — entdecken
-
+## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
 TAKEAWAY (Kernzusammenfassung):
 
 Achsen mit Einheiten, Punkte plus Ausgleichsgerade, Steigung als Ergebnis und Urteil nur im Rahmen der Messunsicherheit — so wird aus einer Messreihe ein belastbares Ergebnis. Zufall streut beiderseits und wird gemittelt, System verschiebt alles und verlangt Umbau. Das Verfahren gilt fuer jede Auswertung Daten zu Gerade zu Steigung.
@@ -180,3 +154,4 @@ Takeaway-Satz: `Achsen mit Einheiten, Punkte plus Ausgleichsgerade, Steigung als
 REFLEXION (2 Fragen):
 1. Selbstbeobachtung: Welcher Schritt fiel schwerer — das Ablesen der Steigung aus der Ausgleichsgeraden (Schritt 4) oder die Unterscheidung von zufaelligem und systematischem Fehler im Vergleich (Schritt 5)?
 2. Planung: Beim naechsten Mal beschrifte ich zuerst die Achsen mit Einheiten und pruefe am Ende, ob meine Schlussfolgerung den Fehlerrahmen ausdruecklich nennt.
+

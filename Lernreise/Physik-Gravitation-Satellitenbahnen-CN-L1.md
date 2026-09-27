@@ -15,7 +15,7 @@ version: Lesson-v3
 
 <!-- Lesson v3 9步制架构：Schritt 1至8固定结构；Fehlvorstellung 夹在 Schritt 6 与 7 之间（Parser 自动跳过，不占步数）；支持内嵌 [Werkzeug: <id>] 交互教具；Gating: check/szenario 未过 = Weiter 置灰；XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
-## Schritt 1 — entdecken
+## Schritt 1 — entdecken: Ziele & Phänomen-Einstieg
 
 ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
@@ -23,9 +23,20 @@ ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 2. 中文：能由"引力提供向心力"列出等式并推出第一宇宙速度和轨道速度公式 $v = \sqrt{GM/r}$。
 3. 中文：能区分低轨、同步轨道的速度与周期特点，并写出德语标准结论句（AFB II）。
 
+
+Hook中文生活切入:
+
+想象拿绳子抡水桶:抡慢了水会洒,抡快了绳子绷直,水被死死按在桶底;月亮绕地球不掉下来,卫星不靠绳子也不掉,都是同一个道理:往前冲的惯性想飞走,引力像绳子往回拽,拽得恰到好处就转成圆圈。速度不对,不是飞走就是掉下来。这根看不见的绳子的松紧,正是本节列式求解的全部线索。
+
+Phaenomen-Satz (DE): Der Eimer bleibt voll, solange die Schnur zieht und die Hand sich dreht.
+
+中文机制铺垫:引力提供向心力是圆轨道的列式起点,由此推出速度与半径的对应关系,半径越大速度越慢周期越长;第一宇宙速度是贴地圆轨道的速度,同步卫星定周期定高度定赤道平面,变轨题看能量看点火方向。
+
+Mechanismus-Satz (DE): Gravitation zieht, Traegheit flieht, ihre Bilanz schliesst die Bahn.
+
 Klausur-Satz: `Auf einer Kreisbahn liefert die Gravitationskraft die noetige Zentripetalkraft fuer den Satelliten.`
 
-## Schritt 2 — entdecken
+## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
 
 PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
 
@@ -39,31 +50,41 @@ PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→�
 
 Klausur-Satz: `Der Bahnradius wird immer vom Erdmittelpunkt aus gemessen, nicht von der Erdoberflaeche.`
 
-## Schritt 3 — entdecken
+## Schritt 3 — entdecken: Kernkonzept & Wirkungsmodell
 
-ENTDECKEN（1概念 + 1文字图解）：
+ENTDECKEN（1概念 + 1文字图解，中文在上、德语在下）：
 
-中文：卫星不掉下来不是因为没有引力，恰恰是因为引力在拉着它转弯。圆轨道条件只有一句话：引力 = 所需向心力，即 $G\,mM/r^2 = m v^2/r$，约掉 $m$ 和一个 $r$ 得到 $v = \sqrt{GM/r}$。半径越大，速度越慢、周期越长——这就是为什么低轨卫星八九十分钟一圈，而同步卫星要 24 小时。算周期再套一圈周长：$T = 2\pi r / v$。记住半径必须从地心算，漏加地球半径是头号丢分点。
+Hook中文生活切入：
+
+中文：想象高铁过弯：弯越急、车越快，越需要轨道往里拽。卫星不掉下来，也是被引力一路拽着转弯。
+
+Phaenomen-Satz (DE): Wer kreist, wird staendig nach innen gezogen.
+
+Spiel-Aufgabe沙盒操作指引：
+
+中文：打开沙盒，拖动滑块改轨道半径 r（关键词：Gravitationskraft, Zentripetalkraft, Bahnradius, Umlaufzeit），看速度与周期如何一降一升。
+
+Beobachtungs-Satz (DE): Weiter draussen heisst langsamer und laenger unterwegs.
+
+Aha-Moment因果链：
+
+中文因果链：圆轨道上引力全充当向心力，列等式约掉卫星质量即得速度只与中心天体和半径有关；半径越大引力越弱，速度越小、跑一圈越久，半径必须从地心算起。
+
+Gesetz-Satz (DE): Auf der Kreisbahn liefert die Gravitation die noetige Zentripetalkraft.
+
+$G\frac{Mm}{r^2} = m\frac{v^2}{r}$
+
+$v = \sqrt{GM/r}$
+
+$T = 2\pi r / v$
 
 文字图解（ASCII 结构图，App支持解析渲染）：
 
 ```diagram
-              Satellit m (v tangential ->)
-                    o
-                   /|
-                  / |
-          F_grav |  | r = R_Erde + h
-          (ein-) |  |
-          waerts |  |
-                 |  |
-                 +--+
-              Erdmittelpunkt (M)
-   Gleichgewicht: G*m*M/r^2 = m*v^2/r
-   => v = sqrt(GM/r),  T = 2*pi*r/v
-   klein r -> gross v, klein T (LEO)
-   gross r -> klein v, gross T (GEO)
+Erde (M) ----r---- Satellit (m), v tangential
+Kraftpfeil: Gravitation -> innen = Zentripetalkraft
+r gross -> v klein, T gross | 400km: 7.7km/s, 92min
 ```
-
 Klausur-Satz: `Mit wachsendem Bahnradius sinkt die Bahngeschwindigkeit und waechst die Umlaufzeit.`
 
 ## Anekdote & Fun-Fact
@@ -74,26 +95,31 @@ Klausur-Satz: `Mit wachsendem Bahnradius sinkt die Bahngeschwindigkeit und waech
 
 **Bezug zum Konzept**: `Ein Satellit faellt permanent zur Erde und verfehlt sie durch seine Bahngeschwindigkeit.`
 
-## Schritt 4 — ausprobieren
+## Schritt 4 — ausprobieren: Interaktive Praxis & Labor
 
-BEISPIEL（正确例题示范，含教具操作与解答）：
+[Werkzeug: schiefe-ebene]
 
-[Werkzeug: gravitation]
+BEISPIEL（正确例题示范，含教具操作与解答，中文在上、德语在下）：
 
-AUFGABE中文导读：已知低轨高度求轨道速度和周期，练习"地心半径 + 引力等于向心力"两步列式。
+AUFGABE中文导读（沙盒谜题）：400千米高轨道上，求卫星速度量级并解释为何同步轨道更高更慢。
 
-AUFGABE (berechnen, AFB II)：Ein Satellit kreist in $h = 400\,\mathrm{km}$ Hoehe ueber der Erde ($R_{Erde} = 6370\,\mathrm{km}$, $M_{Erde} = 5{,}97 \times 10^{24}\,\mathrm{kg}$, $G = 6{,}67 \times 10^{-11}\,\mathrm{m^3/(kg\,s^2)}$). Berechnen Sie Bahngeschwindigkeit und Umlaufzeit.
+AUFGABE (anwenden, AFB II): Ein Satellit kreist in $400\,\mathrm{km}$ Hoehe. Schaetzen Sie $v$ und $T$ und erklaeren Sie die geostationaere Bahn.
 
-HILFE:
-1. Schritt 1: Bahnradius vom Erdmittelpunkt bestimmen: $r = R_{Erde} + h$.
-2. Schritt 2: Kraftansatz $G\,mM/r^2 = m v^2/r$ nach $v = \sqrt{GM/r}$ aufloesen und einsetzen.
-3. Schritt 3: Umlaufzeit $T = 2\pi r / v$ berechnen und in Minuten umrechnen.
+HILFE（中德双语步骤）：
 
-MUSTERLÖSUNG: Es gilt $r = 6{,}37 \times 10^6 + 0{,}40 \times 10^6 = 6{,}77 \times 10^6\,\mathrm{m}$. Damit $v = \sqrt{GM/r} = \sqrt{3{,}98 \times 10^{14} / 6{,}77 \times 10^6} \approx 7{,}67 \times 10^3\,\mathrm{m/s} \approx 7{,}7\,\mathrm{km/s}$. Die Umlaufzeit ist $T = 2\pi \cdot 6{,}77 \times 10^6 / 7670 \approx 5540\,\mathrm{s} \approx 92\,\mathrm{min}$.
+1. 中文：第1步列引力等于向心力并注意半径从地心算，关键词：Ansatz。
+   Schritt 1 (DE): $G\,M\,m/r^2 = m\,v^2/r$, $r$ ab Erdmittelpunkt.
+2. 中文：第2步代入得约7.7千米每秒、92分钟，关键词：Werte。
+   Schritt 2 (DE): $v \approx 7{,}7\,\mathrm{km/s}$, $T \approx 92\,\mathrm{min}$.
+3. 中文：第3步推同步轨道：周期须等于一天故半径更大更慢，关键词：Folgerung。
+   Schritt 3 (DE): $T = 24\,\mathrm{h}$ verlangt groesseres $r$, kleineres $v$.
 
+MUSTERLOESUNG：中文：400千米轨道速度约7.7千米每秒、一圈约92分钟；同步轨道要求周期一天，半径必须更大，速度反而更小，高而慢是引力定律的必然。
+
+MUSTERLOESUNG (DE): In $400\,\mathrm{km}$ Hoehe betraegt $v$ etwa $7{,}7\,\mathrm{km/s}$ bei $92$ Minuten Umlaufzeit aus $T = 2\pi r / v$. Geostationaer verlangt $T = 24\,\mathrm{h}$, also groesseres $r$ und kleineres $v$.
 Klausur-Satz: `In $400\,\mathrm{km}$ Hoehe betraegt die Bahngeschwindigkeit etwa $7{,}7\,\mathrm{km/s}$ bei $92$ Minuten Umlaufzeit.`
 
-## Schritt 5 — ausprobieren
+## Schritt 5 — ausprobieren: Verfahrensvergleich & Abgrenzung
 
 VERGLEICH辨别实验（双向辨析：低轨眼 vs. 同步轨眼）：
 
@@ -108,7 +134,7 @@ ANTWORT: A erfordert Konzept (i): $T \approx 90\,\mathrm{min}$, $v \approx 7{,}7
 
 Klausur-Satz: `Niedrige Bahnen sind schnell und kurzperiodisch, die geostationaere Bahn ist langsam und tagesperiodisch.`
 
-## Schritt 6 — check
+## Schritt 6 — check: Verständnisprüfung
 
 CHECK检索默写（自测 3 题，与答案配对）：
 
@@ -130,14 +156,14 @@ Klausur-Satz: `Die Umlaufzeit folgt aus Umfang durch Geschwindigkeit: $T = 2\pi 
    中文纠偏：公式里的 $r$ 是到地心的距离，必须加地球半径 $6370\,\mathrm{km}$。直接用高度会算出超大速度，是计算题最常见的整题丢分。
    Korrektur-Satz: `In alle Bahngleichungen ist $r = R_{Erde} + h$ einzusetzen, nie die Hoehe allein.`
 
-## Schritt 7 — szenario
+## Schritt 7 — szenario: Klausurtransfer & Rubric
 
 ROLLE: Du bist Tutor im Physikkurs und erklaerst Satellitenbahnen.
 SITUATION: Eine Mitschuelerin behauptet, ein TV-Satellit koenne in $400\,\mathrm{km}$ Hoehe fest ueber Berlin stehen.
 AUFGABE: Widerlegen Sie das in ca. 150 Woertern mit Umlaufzeit-Argument und Bahnradius-Rechnung und nennen Sie die korrekte Bahn.
 RUBRIC (30 XP): LEO-Periode ca. $90\,\mathrm{min}$ berechnet (10 XP) | Widerspruch zu feststehend erklaert (10 XP) | GEO-Bedingung $T = 24\,\mathrm{h}$ plus Aequatorlage genannt (10 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY 1盒（核心总结）：
 

@@ -15,7 +15,7 @@ version: Lesson-v3
 
 <!-- Lesson v3 9步制架构：Schritt 1至8固定结构；Fehlvorstellung 夹在 Schritt 6 与 7 之间（Parser 自动跳过，不占步数）；支持内嵌 [Werkzeug: <id>] 交互教具；Gating: check/szenario 未过 = Weiter 置灰；XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
-## Schritt 1 — entdecken
+## Schritt 1 — entdecken: Ziele & Phänomen-Einstieg
 
 ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
@@ -23,9 +23,20 @@ ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 2. 中文：能写出周期公式 $T = 2\pi\sqrt{m/D}$ 并解释质量越大越慢、弹簧越硬越快。
 3. 中文：能读懂 $x$-$t$ 正弦图像的振幅、周期、相位三要素，并写出德语标准结论句（AFB II）。
 
+
+Hook中文生活切入:
+
+想象小区门口的摇摇车和荡秋千:推一下就前后晃,幅度越来越小最后停住;把秋千换成弹簧挂重物,画面变成上下跳, timing 却意外地准,不管推多重,来回一次的时间几乎不变。这种等时性背后藏着简谐振动:回复力永远指向平衡位置,大小和偏离成正比。
+
+Phaenomen-Satz (DE): Stoss an, und die Zeit bleibt sich treu, egal wie weit der Weg war.
+
+中文机制铺垫:回复力与位移成正比反向是简谐的判据,弹簧振子周期只由质量与劲度系数决定;能量在动能与势能之间来回倒,图像上位移时间曲线是正弦,速度超前四分之一周期,实验题先看周期公式再看图像相位。
+
+Mechanismus-Satz (DE): Rueckstellung proportional zur Auslenkung, Periode nur aus Masse und Haerte.
+
 Klausur-Satz: `Eine Schwingung ist genau dann harmonisch, wenn die Rueckstellkraft proportional zur Auslenkung und entgegengesetzt gerichtet ist.`
 
-## Schritt 2 — entdecken
+## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
 
 PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
 
@@ -39,26 +50,41 @@ PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→�
 
 Klausur-Satz: `Die Periodendauer haengt nur von Masse und Federkonstante ab, nicht von der Amplitude.`
 
-## Schritt 3 — entdecken
+## Schritt 3 — entdecken: Kernkonzept & Wirkungsmodell
 
-ENTDECKEN（1概念 + 1文字图解）：
+ENTDECKEN（1概念 + 1文字图解，中文在上、德语在下）：
 
-中文：简谐振动的灵魂是"越偏拉回越狠"。弹簧拉得越长，拽回去的力越大，但方向永远指向中心，所以物块冲过中心停不下来，对称地荡到另一边。牛顿第二定律 $m\,a = -D\,x$ 的解恰好是正弦函数 $x(t) = x_{max}\sin(\omega t)$，其中 $\omega = \sqrt{D/m}$。周期公式 $T = 2\pi\sqrt{m/D}$ 告诉我们：挂得越重荡得越慢，弹簧越硬荡得越快，而荡多大幅度根本不影响快慢——这是简谐振动最反直觉也最常考的性质（等时性）。
+Hook中文生活切入：
+
+中文：想象弹簧门：推开多大，回弹多狠，松手后门口来回晃，幅度再大晃一次的时间却一样。
+
+Phaenomen-Satz (DE): Weiter ausgelenkt, staerker zurueck, doch immer gleich schnell pro Runde.
+
+Spiel-Aufgabe沙盒操作指引：
+
+中文：打开沙盒，拖动滑块改质量 m 与劲度 D（关键词：Rueckstellkraft, Auslenkung, Periodendauer, Amplitude），看周期随哪个变、随哪个不变。
+
+Beobachtungs-Satz (DE): Schwere Masse bremst, harte Feder treibt; die Amplitude zaehlt nicht.
+
+Aha-Moment因果链：
+
+中文因果链：回复力与位移成正比反向，位移越大拉回越狠，数学上恰给出正弦解；周期公式里只有质量与劲度，振幅再大也只是跑远不跑慢。
+
+Gesetz-Satz (DE): Nur eine lineare Rueckstellkraft erzeugt eine harmonische Sinusschwingung.
+
+$F = -D\,x$
+
+$T = 2\pi\sqrt{m/D}$
+
+$x(t) = \hat{x}\sin(\omega t)$
 
 文字图解（ASCII 结构图，App支持解析渲染）：
 
 ```diagram
-   x_max ----.        .----.        .----
-             |      |        |      |
-   0  -------+------+------+------+----> t
-             |      |        |      |
-  -x_max ----'        '----'        '----
-             |<-- T -->|
-   Energie: max. kinetisch bei x=0, max. potentiell bei x=+-x_max
-   F = -D*x  (Pfeil zeigt immer zu x=0)
-   T = 2*pi*sqrt(m/D),  f = 1/T
+Gleichgewicht o -- Auslenkung x --> Rueckstellkraft -Dx <--
+Zeitkurve: Sinus, Periode T unabhaengig von Amplitude
+Regel: m hoch -> T lang | D hoch -> T kurz
 ```
-
 Klausur-Satz: `Die Rueckstellkraft $-D\,x$ erzeugt eine Sinuskurve in der Zeit, deren Periode amplitudenunabhaengig ist.`
 
 ## Anekdote & Fun-Fact
@@ -69,26 +95,31 @@ Klausur-Satz: `Die Rueckstellkraft $-D\,x$ erzeugt eine Sinuskurve in der Zeit, 
 
 **Bezug zum Konzept**: `Die Isochronie der Schwingung — gleiche Dauer bei jeder Amplitude — ermoeglicht praezise Uhren.`
 
-## Schritt 4 — ausprobieren
+## Schritt 4 — ausprobieren: Interaktive Praxis & Labor
 
-BEISPIEL（正确例题示范，含教具操作与解答）：
+[Werkzeug: schiefe-ebene]
 
-[Werkzeug: federpendel]
+BEISPIEL（正确例题示范，含教具操作与解答，中文在上、德语在下）：
 
-AUFGABE中文导读：已知质量和劲度系数求周期频率，再由一幅位移图像读出振幅，验证"周期与振幅无关"。
+AUFGABE中文导读（沙盒谜题）：弹簧振子周期测得0.50秒，振幅加倍后周期是否变化？若换更重砝码会怎样？
 
-AUFGABE (berechnen, AFB II)：An einer Feder ($D = 40\,\mathrm{N/m}$) haengt eine Masse $m = 0{,}25\,\mathrm{kg}$. Berechnen Sie $T$ und $f$ der Schwingung. Das $x$-$t$-Diagramm zeigt $x_{max} = 6\,\mathrm{cm}$. Haengt $T$ von dieser Amplitude ab?
+AUFGABE (deuten, AFB II): Ein Federpendel schwingt mit $T = 0{,}50\,\mathrm{s}$. Aendert Verdopplung der Amplitude die Periode? Was bewirkt groessere Masse?
 
-HILFE:
-1. Schritt 1: Formel $T = 2\pi\sqrt{m/D}$ ansetzen und Zahlen mit Einheiten einsetzen.
-2. Schritt 2: Wurzel und $2\pi$ ausrechnen, dann $f = 1/T$.
-3. Schritt 3: Amplitudenfrage mit Theorie beantworten: $x_{max}$ kommt in der Formel nicht vor.
+HILFE（中德双语步骤）：
 
-MUSTERLÖSUNG: Es gilt $T = 2\pi\sqrt{0{,}25/40} = 2\pi\sqrt{0{,}00625} = 2\pi \cdot 0{,}0791 \approx 0{,}50\,\mathrm{s}$. Damit $f = 1/T \approx 2{,}0\,\mathrm{Hz}$. Die Amplitude $x_{max} = 6\,\mathrm{cm}$ beeinflusst $T$ nicht, weil die Formel nur $m$ und $D$ enthaelt — die Schwingung ist isochron.
+1. 中文：第1步认条件：回复力正比反向即简谐，关键词：Bedingung。
+   Schritt 1 (DE): $F = -D\,x$ pruefen.
+2. 中文：第2步读公式：周期无振幅项，关键词：Formel.
+   Schritt 2 (DE): $T = 2\pi\sqrt{m/D}$ ohne Amplitude.
+3. 中文：第3步判：振幅无关、质量增则周期增，关键词：Folgerung。
+   Schritt 3 (DE): Amplitude egal, Masse verlaengert $T$.
 
+MUSTERLOESUNG：中文：振幅加倍只跑远不跑慢，周期仍为0.50秒；换重砝码质量增大，周期按根号关系变长，弹簧调硬则反之。
+
+MUSTERLOESUNG (DE): Die Schwingung dauert $0{,}50\,\mathrm{s}$ pro Periode und bleibt bei jeder Amplitude gleich schnell, weil $T = 2\pi\sqrt{m/D}$ keine Amplitude enthaelt. Groessere Masse verlaengert $T$.
 Klausur-Satz: `Die Schwingung dauert $0{,}50\,\mathrm{s}$ pro Periode und bleibt bei jeder Amplitude gleich schnell.`
 
-## Schritt 5 — ausprobieren
+## Schritt 5 — ausprobieren: Verfahrensvergleich & Abgrenzung
 
 VERGLEICH辨别实验（双向辨析：简谐眼 vs. 非简谐眼）：
 
@@ -103,7 +134,7 @@ ANTWORT: A erfordert Konzept (ii): Keine ruecktreibende Kraft, keine Periodizita
 
 Klausur-Satz: `Nur eine lineare Rueckstellkraft der Form $-D\,x$ erzeugt eine harmonische Sinusschwingung.`
 
-## Schritt 6 — check
+## Schritt 6 — check: Verständnisprüfung
 
 CHECK检索默写（自测 3 题，与答案配对）：
 
@@ -125,14 +156,14 @@ Klausur-Satz: `Masse vergroessern verlaengert die Periode, Feder verhaerten verk
    中文纠偏：恰好相反。平衡位置 $x = 0$ 处弹簧处于原长，回复力为零，速度最大；两端位移最大处速度为零，回复力最大。力和速度永远错峰。
    Korrektur-Satz: `Am Gleichgewicht ist die Kraft null und die Geschwindigkeit maximal, an den Umkehrpunkten umgekehrt.`
 
-## Schritt 7 — szenario
+## Schritt 7 — szenario: Klausurtransfer & Rubric
 
 ROLLE: Du bist Tutorin und erklaerst das Federpendel vor der Klausur.
 SITUATION: Ein Mitschueler behauptet, eine doppelt so weit ausgelenkte Feder schwinge doppelt so langsam.
 AUFGABE: Widerlegen Sie das in ca. 150 Woertern mit Formel $T = 2\pi\sqrt{m/D}$ und Energie-Argument und erklaeren Sie, was sich bei groesserer Amplitude wirklich aendert.
 RUBRIC (30 XP): Formel korrekt ohne Amplitude (10 XP) | Isochronie erklaert (10 XP) | Energie/Geschwindigkeit als wahre Aenderung genannt (10 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY 1盒（核心总结）：
 

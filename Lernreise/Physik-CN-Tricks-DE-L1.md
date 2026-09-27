@@ -15,7 +15,7 @@ version: Lesson-v3
 
 <!-- Lesson v3 9-Schritt-Architektur: Schritt 1 bis 8 feste Struktur; Fehlvorstellung zwischen Schritt 6 und 7 (Parser ueberspringt, zaehlt nicht); interaktive [Werkzeug: <id>]; Gating: check/szenario nicht bestanden = Weiter deaktiviert; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
-## Schritt 1 — entdecken
+## Schritt 1 — entdecken: Ziele & Phänomen-Einstieg
 
 ZIELE (diese Lektion in 15 Minuten: danach kannst du):
 
@@ -25,8 +25,11 @@ ZIELE (diese Lektion in 15 Minuten: danach kannst du):
 
 ### Hook / Phaenomen
 
-Im Jahr 1986 riss ein Seil — die Berechnung nutzte die innere Kraft als aeussere. Gesamt gegen Teil verwechselt: $15\,\mathrm{N}$ an $5{,}0\,\mathrm{kg}$ zu $a = 3{,}0\,\mathrm{m/s^2}$, doch innen wirken $9{,}0\,\mathrm{N}$ anders als aussen. Sechs Tricks versprechen Tempo — doch nur das Bild plus Formel plus Einheit traegt Punkte. Welcher einzige Pruefsatz trennt schnelle Vermutung und klausurfeste Loesung?
+拔河时看整体能求加速度，看局部才能求绳上的内力：整体与部分切一刀，结果天差地别。十五牛拉五千克物体得加速度三米每二次方秒，而内部三千克部分受力却另有算法。中国学生喜欢快速做法，德国卷面要求先画受力图、再写字母公式、最后验算单位。本节把六种流程全部绑定检验句，让速度与规范双轨同行。
 
+Im Jahr 1986 riss ein Seil — die Berechnung nutzte die innere Kraft als aeussere; Gesamt gegen Teil verwechselt.
+
+机制铺垫双语：机制是先画图再列公式最后检验单位，整体求速度、截开求内力。Der Mechanismus koppelt Tempo und Norm: erst Bild mit Systemwahl, dann Formel in Buchstaben, dann Zahl plus Pruefungssatz.
 ### Fachbegriff & Definition
 
 Fuer Tricks gilt: **Die Verfahren liefern nur das Vorgehen; im Heft wird jeder Schritt zusaetzlich als Ansatz mit Formel und Einheit aufgeschrieben**. Es gilt **erst das Bild, dann die Formel, dann die Zahl — und vor dem Einsetzen wird die Einheit geprueft**. Die **Kraeftefolge Gewicht, Normale, Reibung, Zug sichert Vollstaendigkeit**.
@@ -41,7 +44,7 @@ Schritt C: Zahl plus Pruefsatz mit Bedingung schliessen.
 
 Klausur-Satz: `Die chinesischen Verfahren liefern nur das Vorgehen; im deutschen Heft wird jeder Schritt zusaetzlich als Ansatz mit Formel und Einheit aufgeschrieben.`
 
-## Schritt 2 — entdecken
+## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
 
 PRETRAINING (Kernbegriffe, erst lesen, dann abdecken und aktiv wiedergeben):
 
@@ -51,11 +54,11 @@ Zwei Wagen $2{,}0$ plus $3{,}0\,\mathrm{kg}$ mit $15\,\mathrm{N}$ — gemeinsame
 
 ### Fachbegriffe & Definitionen
 
-- **Kraeftediagramm:** Alle Kraefte als Pfeile mit Richtung; keine zu viel, keine zu wenig.
-- **System:** Als Einheit betrachtete Koerpergesamtheit fuer gemeinsames $a$.
-- **Flaeche unter der Kurve:** Gebiet unter $v$-$t$ als Weg $s$ per Dreieck oder Rechteck.
-- **Ersatzkraft:** Eine Kraft mit gleicher Wirkung wie mehrere, etwa $D_{ges} = 60\,\mathrm{N/m}$.
-- **Dimensionsprobe:** Einheitenkontrolle vor Einsetzen auf Zieleinheit $\mathrm{m/s}$ oder $\mathrm{N}$.
+- **Kraeftediagramm: (受力图)** Alle Kraefte als Pfeile mit Richtung; keine zu viel, keine zu wenig.
+- **System: (系统)** Als Einheit betrachtete Koerpergesamtheit fuer gemeinsames $a$.
+- **Flaeche unter der Kurve: (曲线下面积)** Gebiet unter $v$-$t$ als Weg $s$ per Dreieck oder Rechteck.
+- **Ersatzkraft: (等效力)** Eine Kraft mit gleicher Wirkung wie mehrere, etwa $D_{ges} = 60\,\mathrm{N/m}$.
+- **Dimensionsprobe: (量纲检验)** Einheitenkontrolle vor Einsetzen auf Zieleinheit $\mathrm{m/s}$ oder $\mathrm{N}$.
 
 ### Wirkungsgefuege / Modell
 
@@ -63,36 +66,28 @@ Die Kette schneidet zweimal: Gesamt $a = 15/5{,}0 = 3{,}0\,\mathrm{m/s^2}$, dann
 
 Klausur-Satz: `Erst das Bild, dann die Formel, dann die Zahl — und vor dem Einsetzen wird die Einheit geprueft.`
 
-## Schritt 3 — entdecken
+## Schritt 3 — entdecken: Kernkonzept & Wirkungsmodell
 
-ENTDECKEN (ein Konzept plus Textdiagramm):
+EXPERIMENTELLE ERKUNDUNG (PhET Sandbox, erst spielen, dann deuten):
 
-### Hook / Phaenomen
+### Hook & Phaenomen
 
-Ein Schueler nutzt $1:3:5$ ohne Start aus Ruhe — und halbiert seine Punkte. Sein Nachbar nennt die Bedingung und sichert alles. Sechs Verfahren, sechs Bedingungen: Kraeftefolge, Gesamt und Teil, Flaeche, Ersatz, Einheit, Kurzregel. Wie wird aus sechs Tricks ein System — und warum rettet nur der genannte Pruefsatz die schnelle Zahl?
+Sechs Tricks versprechen Tempo, doch ohne Ansatz gibt es null Punkte. Intuitiv reicht das Ergebnis $a = 2{,}0$, doch die Klausur zahlt nur fuer Formel plus Einheit. Warum folgt aus $F_{res} = 10$ $N$ exakt $a = 2{,}0$ $m/s^2$ und warum sichert erst die Dimensionsprobe den Ansatz?
 
-### Fachbegriff & Definition
+### Spiel-Aufgabe / Challenge
 
-Die **sechs Verfahren beschleunigen das Loesen, aber erst der ausgeschriebene Ansatz mit Formel und Einheit macht die Loesung klausurfaehig**. Jede **Kurzregel wird nur mit genannter Bedingung benutzt und kurz begruendet**. Der **Block mit $F_{res} = 10\,\mathrm{N}$ zu $a = 2{,}0\,\mathrm{m/s^2}$ plus Dimensionsprobe bestaetigt** den Ansatz.
+Oeffne die Sandbox und aktiviere die sechs Verfahren einzeln ueber die Schalter. Ziehe die Slider Kraft von $0$ bis $20$ $N$ und Masse von $1$ bis $10$ $kg$. Beobachte das Kraeftediagramm, die Anzeige $a = F/m$ und die Einheitenprobe. Stelle $10$ $N$ und $5$ $kg$ ein und lies $2{,}0$ ab.
 
-### Wirkungsgefuege / Modell
+### Aha-Moment & Gesetz
 
-Der Tiefenweg paart Trick und Satz: Gesamt $15\,\mathrm{N}$ an $5{,}0\,\mathrm{kg}$ zu $3{,}0\,\mathrm{m/s^2}$, Schnitt $9{,}0\,\mathrm{N}$; Flaeche $25\,\mathrm{m}$ als $0{,}5 \cdot 5 \cdot 10$; Ersatz $0{,}50\,\mathrm{m}$ aus $60$; Einheit $s/t$ gegen $m s$; Kurzregel $s_n = a(2n-1)/2$ zu $1{,}0/3{,}0/5{,}0$ nur mit Ruhe. Jeder Trick endet im Pruefsatz: Bild plus Formel plus Einheit — erst dann Punkte.
-
-Schritt A: Trick waehlen und Bedingung laut nennen.
-Schritt B: Ansatz mit Formel und Einheit schreiben.
-Schritt C: Zahl plus Pruefsatz als Urteil schliessen.
+Die Kette lautet Diagramm gegen Gesetz gegen Probe: $F_{res} = m a$ zu $a = F_{res}/m$ plus $[N/kg] = [m/s^2]$. Handschriftlich gilt $a = 10/5 = 2{,}0$ in $m/s^2$. Die Dimensionsprobe $N = kg m/s^2$ zu $N/kg = m/s^2$ bestaetigt den Ansatz. Erst Diagramm plus Formel plus Einheit machen den Trick klausurfaehig, das Ergebnis allein zaehlt nicht.
 
 ```diagram
-   Kraeftediagramm (Reihenfolge: Gewicht, Normale, Reibung, Zug)
-                 F_N ^
-                     |
-        F_R  <--  [Block]  -->  F_Zug
-                     |
-                     v  F_G = m*g
-   Gesamt: a = 15/5.0 = 3.0 m/s^2, Teil: F = 3.0*3.0 = 9.0 N
-   Flaeche: s = 0.5*5*10 = 25 m | Ersatz: s = 30/60 = 0.50 m
-   Einheit: s/t > m/s erlaubt, m*s > kg*m verworfen
+  F Diagramm > Block > a=2.0
+  +--------------------------> m 5 kg
+  F res 10 N > a=F/m
+  N/kg=m/s2 > Probe ok
+  Diagramm plus Formel plus Einheit
 ```
 
 Klausur-Satz: `Die sechs Verfahren beschleunigen das Loesen, aber erst der ausgeschriebene Ansatz mit Formel und Einheit macht die Loesung klausurfaehig.`
@@ -103,24 +98,24 @@ Klausur-Satz: `Die sechs Verfahren beschleunigen das Loesen, aber erst der ausge
 
 **Bezug zum Konzept**: `Die ungeraden Zahlen 1 : 3 : 5 folgen direkt aus s = 0.5*a*t^2 und sind das klassische Beispiel fuer eine Kurzregel mit genannter Bedingung (Start aus der Ruhe).`
 
-## Schritt 4 — ausprobieren
+## Schritt 4 — ausprobieren: Interaktive Praxis & Labor
 
-BEISPIEL (Musteraufgabe mit Loesungsweg):
+BEISPIEL (Sandbox Level mit Werkzeug):
 
-[Werkzeug: lego]
+[Werkzeug: kinematik-lab]
 
-AUFGABE (berechnen, AFB II): Block $m = 5{,}0\,\mathrm{kg}$ auf Tischplatte wird mit $F_{Zug} = 20\,\mathrm{N}$ horizontal gezogen; $\mu = 0{,}20$, $g = 10\,\mathrm{m/s^2}$. Beschreiben Sie das Diagramm, berechnen Sie $a$ und pruefen Sie mit der Dimensionsprobe.
+AUFGABE (Levelziel, AFB II): Sammle alle sechs Verfahren: Stelle in der Sandbox $F_{res} = 10$ $N$ ein, lies $a$ ab und berechne dann $a$ fuer $m = 5{,}0$ $kg$ schriftlich mit Dimensionsprobe.
 
 HILFE:
-1. Diagramm: Gewicht nach unten, Normale nach oben, Zug nach rechts, Reibung nach links.
-2. Ansatz senkrecht $F_N = m \cdot g$; waagerecht $F_{res} = F_{Zug} - \mu \cdot F_N = m \cdot a$.
-3. Zahlen einsetzen und Einheit auf $\mathrm{m/s^2}$ pruefen.
+1. Zeichne das vollstaendige Kraeftediagramm und lies $a = 2{,}0$ in der Sandbox ab.
+2. Rechne $a = F_{res}/m = 10/5 = 2{,}0$ in $m/s^2$.
+3. Pruefe $[F]/[m] = N/kg = m/s^2$ als Dimensionsprobe.
 
-MUSTERLOESUNG: Das Bild enthaelt vier Kraefte: $F_G = m \cdot g = 5{,}0 \cdot 10 = 50\,\mathrm{N}$ nach unten, $F_N = 50\,\mathrm{N}$ nach oben, $F_{Zug} = 20\,\mathrm{N}$ nach rechts, $F_R = \mu \cdot F_N = 0{,}20 \cdot 50 = 10\,\mathrm{N}$ nach links. Senkrecht Gleichgewicht, waagerecht $F_{res} = 20 - 10 = 10\,\mathrm{N}$. Damit $a = F_{res}/m = 10/5{,}0 = 2{,}0\,\mathrm{m/s^2}$. Probe: $[F_{res}/m] = (\mathrm{kg \cdot m/s^2})/\mathrm{kg} = \mathrm{m/s^2}$; Groessenordnung plausibel.
+MUSTERLOESUNG: Sandbox $a = 2{,}0$ in $m/s^2$ bei $10$ $N$ und $5{,}0$ $kg$. Rechnung $F_{res} = m a$ zu $a = F_{res}/m = 10/5 = 2{,}0$ in $m/s^2$ aus dem vollstaendigen Kraeftediagramm. Dimensionsprobe $N = kg m/s^2$, also $N/kg = m/s^2$ bestaetigt den Ansatz. Alle sechs Verfahren sind erst mit Formel plus Einheit klausurfaehig.
 
 Klausur-Satz: `Aus dem vollstaendigen Kraeftediagramm folgt fuer den Block mit F_res = 10 N eine Beschleunigung von 2,0 m/s^2, und die Dimensionsprobe bestaetigt den Ansatz.`
 
-## Schritt 5 — ausprobieren
+## Schritt 5 — ausprobieren: Verfahrensvergleich & Abgrenzung
 
 VERGLEICH (zwei Verfahren unterscheiden):
 
@@ -136,7 +131,7 @@ ANTWORT: A erfordert Verfahren (i): $m_{ges} = 2{,}0 + 4{,}0 = 6{,}0\,\mathrm{kg
 
 Klausur-Satz: `Die gemeinsame Beschleunigung folgt aus dem Gesamtsystem, die innere Seilkraft dagegen erst nach dem Freischneiden eines einzelnen Wagens.`
 
-## Schritt 6 — check
+## Schritt 6 — check: Verständnisprüfung
 
 CHECK (Selbsttest, 3 Fragen mit Antworten):
 
@@ -157,13 +152,13 @@ Klausur-Satz: `Das Ganzheitsverfahren liefert die gemeinsame Beschleunigung, das
    Korrektur: Einheit ist nur notwendig. Beispiel $a \cdot t^2$ statt $0{,}5 \cdot a \cdot t^2$ traegt ebenfalls $\mathrm{m}$ bei doppeltem Wert; Bedingung und Groessenordnung muessen folgen.
    Korrektur-Satz: `Die Dimensionsprobe ist nur eine notwendige Bedingung und ersetzt nicht die Pruefung von Bedingung und Groessenordnung.`
 
-## Schritt 7 — szenario
+## Schritt 7 — szenario: Klausurtransfer & Rubric
 
 ROLLE: Du bist Nachhilfelehrerin und bringst einer Schuelergruppe die sechs Verfahren als Lernstrategie fuer die Physik-Klausur naeher.
 SITUATION: Die Gruppe rechnet schnell, verliert aber Punkte durch fehlende Ansaetze und Luecken im Diagramm. Erklaere in zusammenhaengender Stellungnahme (ca. 150 Woerter), wie Tempo und Formkorrektheit ueber Ansatz, Einheit und Diagramm zusammenkommen.
 RUBRIC (30 XP): Drei Verfahren deutschen Schritten zugeordnet (10 XP) | Warum Ansatz Punkte sichert (10 XP) | Beispiel Gesamt gegen Schnitt (5 XP) | Adressatengerechte Fachsprache (5 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY (Kernzusammenfassung):
 

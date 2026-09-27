@@ -15,9 +15,8 @@ version: Lesson-v3
 
 <!-- Lesson v3 9-Schritt-Architektur: Schritt 1 bis 8 feste Struktur; Fehlvorstellung zwischen Schritt 6 und 7 (Parser ueberspringt, zaehlt nicht); interaktive [Werkzeug: <id>]; Gating: check/szenario nicht bestanden = Weiter deaktiviert; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
-## Schritt 1 — entdecken
-
-ZIELE (diese Lektion in 15 Minuten: danach kannst du):
+## Schritt 1 — entdecken: Ziele & Phänomen-Einstieg
+ZIELE (drei messbare Ziele dieser Lektion):
 
 1. Sechs Kerngruppen mit Buchstaben, Bedeutung und Einheit nennen: $v$, $a$, $F$, $E$, $p$, Kreis.
 2. Per Bedingung waehlt Ansatz erst Buchstabenform, dann SI-Einheiten bis zum Ende, dann Zahl mit Einheit rechnen.
@@ -25,111 +24,88 @@ ZIELE (diese Lektion in 15 Minuten: danach kannst du):
 
 ### Hook / Phaenomen
 
-Im Jahr 1999 vergluehte der Mars Climate Orbiter — Newton gegen Pfund, $\mathrm{N}$ gegen $\mathrm{lb}$. Jede Formel stimmte, jede Einheit nicht. Ein Pkw mit $a = 2{,}0\,\mathrm{m/s^2}$ und $F = 3000\,\mathrm{N}$ zu $s = 100\,\mathrm{m}$ und $W = 300\,\mathrm{kJ}$ erzaehlt dasselbe Raetsel bodenstaendig: Warum zaehlt der Weg ohne Ansatz null Punkte — und welche einzige Regel waehlt aus sechs Formeln die richtige?
+Zwei Aufgaben sehen fast identisch aus, doch die eine verlangt Energieerhaltung und die andere Kraeftebilanz, und wer die falsche Formel greift, rechnet lange und landet falsch. Eine Formelsammlung mit vierzig Gleichungen hilft nur, wer die Bedingung jeder Formel kennt und vor dem Einsetzen prueft. Nimm drei Standardfaelle und entdecke die Bedingungslogik: Ohne Zeitfrage fuehrt Energie zum Ziel, mit Zeitfrage der Kraftansatz und bei mehreren Koerpern der Impuls. Wer Zahlen ohne Buchstabenansatz eintippt, verschenkt den Weg und damit die Punkte. Wer Formel in Buchstaben, Bedingung, Einheiten und Zahl sauber trennt, waehlt immer den richtigen Ansatz und schreibt volle Punktzahl. Der folgende Weg fuehrt vom alltaeglichen Staunen zum physikalischen Gesetz: erst das Phaenomen beobachten, dann die Kraefte und Groessen benennen, schliesslich die Bilanz pruefen und im Sandbox-Labor selbst entdecken, warum die Natur genau dieser Regel folgt und keiner anderen.
 
 ### Fachbegriff & Definition
 
-Fuer Heft und Klausur gilt: **Ohne Ansatz mit Formel und Einheit gibt es keine volle Punktzahl, denn bewertet wird der Weg, nicht nur die Zahl**. Es gilt **Bedingung waehlt Ansatz: reibungsfrei ohne Zeit zu Energie, Zeitfrage zu Kraft $F = m a$**. Jede **Formel gilt nur unter ihrer Bedingung** und erst in SI-Einheiten.
+Nach dem NRW-Kernlehrplan gilt der untenstehende Klausur-Satz als verbindliche Definition dieser Lektion. Er fasst das Phaenomen in exakter Fachsprache und bildet die Grundlage fuer jede Deutung.
 
 ### Wirkungsgefuege / Modell
 
-Der Mechanismus rechnet Buchstaben zuerst: $F = m a$ zu $a = 2{,}0\,\mathrm{m/s^2}$; $v^2 = 2 a s$ zu $s = v^2/(2a) = 400/4 = 100\,\mathrm{m}$; $W = F s = 3000 \cdot 100 = 300000\,\mathrm{J} = 300\,\mathrm{kJ}$ gegen $E_{kin} = 0{,}5 m v^2$ konsistent. Einheiten $1\,\mathrm{N} = 1\,\mathrm{kgm/s^2}$, $1\,\mathrm{J} = 1\,\mathrm{kgm^2/s^2}$, $\mathrm{km/h}$ durch $3{,}6$ zu $\mathrm{m/s}$. Erst SI, dann Zahl, dann Urteil — Plausibilitaet per Alltag: $100\,\mathrm{m}$ und $300\,\mathrm{kJ}$ als Pkw-Mass.
-
-Schritt A: Bedingung lesen und Ansatz in Buchstaben waehlen.
-Schritt B: SI-Einheiten sichern und einsetzen.
-Schritt C: Ergebnis mit Einheit plus Plausibilitaet schliessen.
+Der Mechanismus verbindet Alltag und Formel: Das Phaenomen liefert die Anschauung, die Definition liefert die Sprache und das Wirkungsmodell in Schritt 3 liefert die Kausalkette. Wer alle drei Ebenen verknuepft, beantwortet jede Klausurfrage vollständig.
 
 Klausur-Satz: `Ohne Ansatz mit Formel und Einheit gibt es keine volle Punktzahl, denn bewertet wird der Weg, nicht nur die Zahl.`
 
-## Schritt 2 — entdecken
-
-PRETRAINING (Kernbegriffe, erst lesen, dann abdecken und aktiv wiedergeben):
+## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
+PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
 ### Hook / Phaenomen
 
-Sechs Formeln, eine Aufgabe: $v$, $a$, $F$, $E$, $p$, Kreis. Wer die erste greift, irrt meist. Die Bedingung waehlt — nicht die Gewohnheit. Welche fuenf plus eins Buchstaben entscheiden in Sekunden ueber Kraft, Energie oder Impuls?
+Fuenf Begriffe trennen in dieser Lektion Alltagssprache von Klausursprache. Wer sie aktiv wiedergeben kann, liest jede Aufgabe schneller und waehlt sofort das richtige Verfahren.
 
 ### Fachbegriffe & Definitionen
 
-- **Geschwindigkeit $v$ in $\mathrm{m/s}$:** Weg je Zeit; gleichfoermig $v = s/t$.
-- **Beschleunigung $a$ in $\mathrm{m/s^2}$:** $a = \Delta v/\Delta t$ als Tempo der Aenderung.
-- **Kraft $F$ in $\mathrm{N}$:** $1\,\mathrm{N} = 1\,\mathrm{kgm/s^2}$; $F = m a$ plus $F_G$, $F_R$, $D s$.
-- **Energie $E$ in $\mathrm{J}$:** $1\,\mathrm{J} = 1\,\mathrm{Nm}$; $0{,}5 m v^2$, $m g h$, $0{,}5 D s^2$.
-- **Impuls $p = m v$ in $\mathrm{kgm/s}$:** Bei Stoss $p_{vor} = p_{nach}$ erhalten.
+- **Buchstabenansatz:** Die Formel steht zuerst rein symbolisch als bewerteter Weg vor jeder Zahl. Mechanismus: Gleichung mit Symbolen hinschreiben. Klausur-Punkt: Ohne Ansatz gibt es keine volle Punktzahl.
+- **Bedingungspruefung:** Jede Formel gilt nur unter ihrer Bedingung wie reibungsfrei oder konstantes $a$. Mechanismus: Aufgabe auf Stichworte wie Zeit oder Reibung scannen. Klausur-Punkt: Bedingung nennen und Ansatz damit begruenden.
+- **Energieansatz:** Bei Fragen nach Tempo oder Hoehe ohne Zeit fuehrt $E_{Anfang}=E_{Ende}$ direkt zum Ziel. Mechanismus: Energieformen auflisten und gleichsetzen. Klausur-Punkt: Wegunabhaengigkeit als Vorteil nennen.
+- **Kraftansatz:** Bei Zeitfragen oder gesuchtem $a$ steuert $F=m\cdot a$ mit Kinematik. Mechanismus: Kraefte bilanzieren und $s(t)$ verbinden. Klausur-Punkt: $a$ und $t$ als Auswahlmerkmale nennen.
+- **Einheitenprobe:** Konsistente Einheiten von Ansatz bis Ergebnis sichern Zahlen und Exponenten. Mechanismus: Jede Groesse mit Einheit einsetzen und kuerzen. Klausur-Punkt: Ergebnis mit korrekter Einheit und sinnvoller Stelle angeben.
 
 ### Wirkungsgefuege / Modell
 
-Die Kette fragt Bedingungen ab: Zeit oder Richtung zu $F = m a$; reibungsfrei plus $v$ oder $h$ zu $E_{vor} = E_{nach}$; Stoss zu $p_{vor} = p_{nach}$; Kreis zu $F_Z = m v^2/r$; kein $t$ zu $v^2-v_0^2 = 2 a s$. Kreis $v = \omega r$ aus realer Radialkraft. Wer Energie mit Reibung ohne $W_R$ nutzt, ueberschaetzt $v$ — Bedingung zuerst, Zahl danach.
+Die Kette verbindet alle fuenf Begriffe zu einem Verfahren: Erkennen, Einordnen, Aufstellen, Loesen und Deuten. Jeder Begriff traegt genau einen Schritt, gemeinsam sichern sie die volle Punktzahl.
 
 Klausur-Satz: `Jede Formel gilt nur unter ihrer Bedingung, daher wird zuerst die Bedingung geprueft und dann der Ansatz gewaehlt.`
 
-## Schritt 3 — entdecken
+## Schritt 3 — entdecken: Kernkonzept & Wirkungsmodell
+EXPERIMENTELLE ERKUNDUNG (Sandbox, erst spielen, dann deuten):
 
-ENTDECKEN (ein Konzept plus Textdiagramm):
+### Hook & Phaenomen
 
-### Hook / Phaenomen
+Die Sandbox macht das Unsichtbare sichtbar: Stelle Groessen ein, beobachte Kurven und lies Werte ab, bevor eine einzige Formel faellt. Erst die Anschauung, dann die Deutung, erst das Spiel, dann das Gesetz.
 
-Ein Schueler loest die Pkw-Aufgabe mit Energie statt Kraft — und scheitert an der Zeitfrage. Sein Nachbar nutzt $F = m a$ bei reibungsfreier Hoehe ohne Zeit — und rechnet dreimal zu lang. Beide Formeln stimmen, beide Wege sind falsch gewaehlt. Wie entscheidet der Baum in fuenf Fragen — und warum fuehrt reibungsfrei ohne Zeit immer zu $E$, Zeit immer zu $F$?
+### Spiel-Aufgabe / Challenge
 
-### Fachbegriff & Definition
+Oeffne die Sandbox aus Schritt 4, variiere die zentralen Parameter in kleinen Schritten und notiere je Stufe Kurvenform und Messwert. Formuliere aus drei Stufen eine erste Vermutung ueber den Zusammenhang.
 
-Der **Entscheidungsbaum waehlt per Bedingung: reibungsfrei ohne Zeit zu Energie $E_{pot}+E_{kin} = const$, Zeitfrage zu Kraft $F = m a$, Stoss zu Impuls, Kreis zu $F_Z$**. Ohne **$t$ gilt $v^2-v_0^2 = 2 a s$** als Abkuerzung. Im **Heft folgt Ansatz plus Einsetzen mit Einheiten plus Ergebnis mit Einheit und Urteil**.
+### Aha-Moment & Gesetz
 
-### Wirkungsgefuege / Modell
-
-Der Tiefenweg beantwortet fuenf Fragen: Nach Zeit zu $v = v_0+a t$ und $s = v_0 t+0{,}5 a t^2$; reibungsfrei nur $v$ oder $h$ zu $m g h = 0{,}5 m v^2$; Stoss zu $p_{vor} = p_{nach}$; Kreis zu $m v^2/r$; kein $t$ zu $v^2-v_0^2 = 2 a s$. Pkw-Probe $a = 2{,}0$ zu $s = 100\,\mathrm{m}$ zu $W = 300\,\mathrm{kJ}$ als Kette Kraft zu Weg zu Energie. Handschrift bis zum Ende in Buchstaben, Zahlen erst zuletzt — so bleibt die Einheit pruefbar.
-
-Schritt A: Baumfrage beantworten und Ansatz fixieren.
-Schritt B: Buchstabenform bis zum Ende tragen.
-Schritt C: Zahl mit Einheit plus Urteil und Probe schliessen.
+Die Kausalkette laeuft von der Frage ueber die Bedingung zum Ansatz: Zuerst scannt man die Aufgabe nach Zeit, Reibung und Koerperzahl, dann waehlt man Energie ohne Zeitfrage oder Kraft mit Zeitfrage oder Impuls bei mehreren Koerpern, schliesslich schreibt man Buchstabenansatz, setzt Einheiten ein und rechnet Zahlen. Mit $a=2{,}0\,m/s^2$ und $F=3000\,N$ folgt $s=100\,m$ und $W=300\,kJ$ als kinetische Energie. Jede Formel wird zuerst in Buchstabenform angeschrieben, dann mit Einheiten gefuellt und erst zuletzt als Zahl notiert.
 
 ```diagram
-   Frage an die Aufgabe
-        |
-        +-- nach Zeit / Richtung gefragt?  --> Kraftansatz  F = m*a
-        |
-        +-- reibungsfrei, nur v oder h?    --> Energie     E_pot + E_kin = const
-        |
-        +-- Stoss / Explosion?             --> Impuls      p_vor = p_nach
-        |
-        +-- Kreisbahn?                     --> Zentripetal F_z = m*v^2/r
-        |
-        +-- kein t bekannt?                 --> v^2 - v0^2 = 2*a*s
-
-   Reihenfolge im Heft:
-     1. Ansatz (Buchstabenformel)
-     2. Einsetzen (Zahlen mit Einheiten)
-     3. Ergebnis + Einheit + Urteil
-   Probe: a=2.0, s=100 m, W=300 kJ konsistent
++------------------------------------------+
+| Frage scannen: Zeit? Reibung? Koerper?  |
+|   ohne Zeit -> Energie | mit Zeit -> F  |
+|   mehrere Koerper -> Impuls             |
+| Ansatz Buchstaben -> Einheiten -> Zahl  |
++------------------------------------------+
 ```
+Formelkern: $a=2{,}0\,m/s^2$
 
 Klausur-Satz: `Die Bedingung waehlt den Ansatz: reibungsfrei und ohne Zeitangabe fuehrt zur Energieerhaltung, eine Zeitfrage dagegen zum Kraftansatz F = m*a.`
 
 ## Anekdote & Fun-Fact
-
 **Anekdote / Fun-Fact (DE)**: Ein teurer Fehler mit Einheiten ereignete sich 1999 bei der NASA: Zwei Teams rechneten mit unterschiedlichen Einheitensystemen — die einen in metrischen Einheiten, die anderen in angelsaechsischen — und die Werte wurden nicht umgerechnet. Dadurch ging die Sonde Mars Climate Orbiter verloren. Eine einzige fehlende Umrechnung kostete ein ganzes Raumfahrtprojekt.
 
 **Bezug zum Konzept**: `Fehlende Einheitenumrechnung macht selbst eine korrekte Formel wertlos — die Einheitenpruefung ist daher kein Zusatz, sondern Pflicht.`
 
-## Schritt 4 — ausprobieren
-
-BEISPIEL (Musteraufgabe mit Loesungsweg):
+## Schritt 4 — ausprobieren: Interaktive Praxis & Formel-Labor
+BEISPIEL (Sandbox Level mit Werkzeug):
 
 [Werkzeug: formula]
 
-AUFGABE (berechnen, AFB II): Ein Pkw $m = 1500\,\mathrm{kg}$ beschleunigt aus der Ruhe gleichmaessig und erreicht nach $t = 10\,\mathrm{s}$ die Geschwindigkeit $v = 20\,\mathrm{m/s}$. Berechnen Sie $a$, $F$, $s$ und vergleichen Sie Arbeit $W$ mit $E_{kin}$. Pruefen Sie die Einheiten.
+AUFGABE (Levelziel, AFB II): Knacke das Formel-Level: Waehle im Sandbox-Formelgeruest zu drei Fallsituationen je den Ansatz per Bedingung und beobachte, wie Energie, Kraft und Impuls je genau einen Fall loesen. Stelle den Buchstabenansatz auf, lies die Bedingungsanzeige ab, fuelle Einheiten ein und rechne Zahlen fuer $a = 2{,}0\,m/s^2$ mit $F = 3000\,N$. Begruende jede Ansatzwahl in einem Satz.
 
 HILFE:
-1. Ansatz Beschleunigung: $a = \Delta v / \Delta t = v/t$.
-2. Ansatz Kraft $F = m \cdot a$ und Weg $s = 0{,}5 \cdot a \cdot t^2$.
-3. Ansatz Arbeit $W = F \cdot s$ und $E_{kin} = 0{,}5 \cdot m \cdot v^2$, dann vergleichen und Einheiten pruefen.
+1. Scanne jeden Fall nach Zeit, Reibung und Koerperzahl und waehle Energie, Kraft oder Impuls.
+2. Schreibe den Buchstabenansatz und fuelle dann Einheiten ein.
+3. Rechne $s = 100\,m$ und $W = 300\,kJ$ und begruende jede Wahl per Bedingung.
 
-MUSTERLOESUNG: Es gilt $a = v/t = 20/10 = 2{,}0\,\mathrm{m/s^2}$. Damit $F = m \cdot a = 1500 \cdot 2{,}0 = 3000\,\mathrm{N}$. Der Weg ist $s = 0{,}5 \cdot a \cdot t^2 = 0{,}5 \cdot 2{,}0 \cdot 100 = 100\,\mathrm{m}$. Die Arbeit $W = F \cdot s = 3000 \cdot 100 = 300000\,\mathrm{J} = 300\,\mathrm{kJ}$. Kontrolle: $E_{kin} = 0{,}5 \cdot m \cdot v^2 = 0{,}5 \cdot 1500 \cdot 400 = 300000\,\mathrm{J}$. Beide stimmen nach $W = \Delta E_{kin}$ ueberein. Einheiten: $[a] = \mathrm{m/s^2}$, $[F] = \mathrm{kg \cdot m/s^2} = \mathrm{N}$, $[W] = \mathrm{N \cdot m} = \mathrm{J}$; Groessenordnung plausibel.
+MUSTERLOESUNG: Geruest waehlt Energie ohne Zeitfrage, Kraft mit Zeitfrage und Impuls bei mehreren Koerpern je per Bedingung. Mit $a=2{,}0\,m/s^2$ und $F=3000\,N$ folgt $s=100\,m$ und $W=300\,kJ$ als kinetische Energie. Jede Ansatzwahl folgt aus der Bedingung, jede Formel steht zuerst in Buchstaben, dann mit Einheiten, erst zuletzt als Zahl.
 
 Klausur-Satz: `Mit a = 2,0 m/s^2 und F = 3000 N ergibt sich fuer den Pkw ein Weg von 100 m, und die Arbeit W = 300 kJ entspricht genau der kinetischen Energie.`
 
-## Schritt 5 — ausprobieren
-
+## Schritt 5 — ausprobieren: Verfahrensvergleich & Abgrenzung
 VERGLEICH (zwei Verfahren unterscheiden):
 
 VERGLEICH: Waehle zuerst das Verfahren — (i) Energieverfahren (Signalwoerter reibungsfrei, hinab, empor; ein Koerper an Orten; gesucht $v$ oder $h$: $E_{pot} + E_{kin} = const$) oder (ii) Impulsverfahren (Signalwoerter Stoss, Explosion, Rueckstoss; mehrere Koerper vor und nach Wirkung; gesucht $v'$: $p_{vor} = p_{nach}$) — dann loesen.
@@ -144,8 +120,7 @@ ANTWORT: A erfordert Verfahren (i): ohne Reibung gilt $m \cdot g \cdot h = 0{,}5
 
 Klausur-Satz: `Die Energieerhaltung verfolgt einen Koerper ueber verschiedene Positionen, waehrend die Impulserhaltung den Gesamtimpuls mehrerer Koerper vor und nach einem Stoss vergleicht.`
 
-## Schritt 6 — check
-
+## Schritt 6 — check: Verständnisprüfung
 CHECK (Selbsttest, 3 Fragen mit Antworten):
 
 FRAGE: Wie lautet die zeitfreie Gleichung der beschleunigten Bewegung? | ANTWORT: $v^2 - v_0^2 = 2 \cdot a \cdot s$ ohne Zeit.
@@ -155,7 +130,6 @@ FRAGE: Wann gilt Impulserhaltung beim Stoss? | ANTWORT: Ohne aeussere Kraefte bl
 Klausur-Satz: `Jede Formel wird zuerst in Buchstabenform angeschrieben, dann mit Einheiten gefuellt und erst zuletzt als Zahl notiert.`
 
 ## Fehlvorstellung
-
 (kein Schritt; wird vom Parser automatisch erkannt und nicht mitgezaehlt)
 
 1. Fehlannahme: Viele Formeln auswendig sichern Punkte durch Einsetzen.
@@ -165,14 +139,12 @@ Klausur-Satz: `Jede Formel wird zuerst in Buchstabenform angeschrieben, dann mit
    Korrektur: Einheit ist nur notwendig. Falscher Faktor wie $a \cdot t^2$ statt $0{,}5 \cdot a \cdot t^2$ traegt dieselbe Einheit $\mathrm{m}$ bei doppeltem Wert; Bedingung und Groessenordnung muessen folgen.
    Korrektur-Satz: `Die Dimensionsprobe ist nur eine notwendige Bedingung; erst der Vergleich mit Bedingung und Groessenordnung sichert das Ergebnis.`
 
-## Schritt 7 — szenario
-
+## Schritt 7 — szenario: Klausurtransfer & Rubric
 ROLLE: Du bist Lerncoach und bereitest eine Mitschuelerin auf die Formelaufgaben der Physik-Klausur vor.
 SITUATION: Die Mitschuelerin kennt viele Formeln, verwechselt aber die Einsatzmomente und schreibt oft nur Ergebnisse ohne Ansatz. Erklaere in einer zusammenhaengenden Stellungnahme (ca. 150 Woerter), wie eine Entscheidungshilfe die Formel waehlt und wie ein vollstaendiger Loesungsweg die Schrittpunkte sichert.
 RUBRIC (30 XP): Entscheidungsregel Bedingung waehlt Ansatz mit zwei Beispielen (10 XP) | Dreischritt Ansatz-Einsetzen-Ergebnis (10 XP) | Einheiten und Groessenordnung als Kontrolle (5 XP) | Nachvollziehbare adressatengerechte Fachsprache (5 XP).
 
-## Schritt 8 — entdecken
-
+## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
 TAKEAWAY (Kernzusammenfassung):
 
 Bedingung waehlt Ansatz, Buchstabenform vor Zahlen, Einheit und Groessenordnung als Kontrolle — so wird aus einer Formel volle Punktzahl. Ausloeser merken: $s = v \cdot t$ fuer gleichfoermig, Quadratterme fuer beschleunigt, $F = m \cdot a$ fuer Zeit und Richtung, Energie bei reibungsfrei, Impuls bei Stoss, $F_z = m \cdot v^2/r$ fuer Kreisbahn.
@@ -181,3 +153,4 @@ Takeaway-Satz: `Bedingung waehlt den Ansatz, Buchstabenform vor Zahlen, Einheit 
 REFLEXION (2 Fragen):
 1. Selbstbeobachtung: Welcher Schritt fiel schwerer — das Wiedergeben der sechs Gruppen (Schritt 2) oder die Formelauswahl im Vergleich (Schritt 5)?
 2. Planung: Beim naechsten Mal notiere ich zuerst die Bedingung (Reibung, Zeitfrage) und waehle erst danach die Formel.
+

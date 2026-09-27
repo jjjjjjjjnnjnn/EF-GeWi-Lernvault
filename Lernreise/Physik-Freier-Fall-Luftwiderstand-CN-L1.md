@@ -15,7 +15,7 @@ version: Lesson-v3
 
 <!-- Lesson v3 9步制架构：Schritt 1至8固定结构；Fehlvorstellung 夹在 Schritt 6 与 7 之间（Parser 自动跳过，不占步数）；支持内嵌 [Werkzeug: <id>] 交互教具；Gating: check/szenario 未过 = Weiter 置灰；XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
-## Schritt 1 — entdecken
+## Schritt 1 — entdecken: Ziele & Phänomen-Einstieg
 
 ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
@@ -25,9 +25,20 @@ ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
 Voraussetzung（窄切口）：只做竖直下落、初速为零；不处理斜抛与浮力，已会 $v$-$t$ 面积求路程。
 
+
+Hook中文生活切入:
+
+想象暴雨天看雨滴砸伞:几千米高空掉下来的水珠,按理说该像子弹一样砸穿雨伞,可落在身上却温柔得很;跳伞的人更懂,自由坠落一阵后速度就不再增加,像被一只看不见的手托住。这只手就是空气阻力:速度越快它越大,直到托住全部体重。这只看不见的手的力度变化,正是本节要用图像讲清的机制。
+
+Phaenomen-Satz (DE): Kilometer gefallen, sanft gelandet, die Luft bremst jeden Fall.
+
+中文机制铺垫:真空只受重力,加速度恒为g,速度直线增长;有空气时阻力随速度增大,合力等于重力减阻力,加速度越掉越小,阻力追平重力时速度封顶为极限速度,之后匀速;题干见真空就定量算三式,见阻力就定性画曲线。
+
+Mechanismus-Satz (DE): Ohne Luft Gerade mit Steigung g, mit Luft Kurve bis zur Grenzgeschwindigkeit.
+
 Klausur-Satz: `Im idealen freien Fall faellt jeder Koerper mit a = g; mit Luftwiderstand naehert sich die Geschwindigkeit einer Grenzgeschwindigkeit.`
 
-## Schritt 2 — entdecken
+## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
 
 PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
 
@@ -41,24 +52,42 @@ PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→�
 
 Klausur-Satz: `Ohne Luftwiderstand waechst v linear mit t; mit Luftwiderstand flacht die Kurve bis zur Grenzgeschwindigkeit ab.`
 
-## Schritt 3 — entdecken
+## Schritt 3 — entdecken: Kernkonzept & Wirkungsmodell
 
-ENTDECKEN（1概念 + 1文字图解）：
+ENTDECKEN（1概念 + 1文字图解，中文在上、德语在下）：
 
-中文：理想模型中下落是匀加速直线运动，三式互推。现实中阻力 $F_L$ 随 $v$ 增大，下落合力 $F = mg - F_L$ 变小，加速度变小，$v$-$t$ 曲线变平；当 $F_L = mg$ 时合力为零，物体匀速，即极限速度。羽毛与铁球在真空管同时落地、在空气中先后落地，就是同一个原理的两面。EF 考试的关键词：fällt aus der Ruhe、ohne Luftwiderstand 用理想三式；mit Luftwiderstand、Fallschirm 问定性曲线与极限速度。
+Hook中文生活切入：
+
+中文：想象雨滴从几千米掉下来，砸到伞上却温柔得很：要没空气，它该像子弹一样。
+
+Phaenomen-Satz (DE): Kilometer gefallen, sanft gelandet: die Luft bremst mit.
+
+Spiel-Aufgabe沙盒操作指引：
+
+中文：打开沙盒，拖动滑块切真空与空气、改高度 h（关键词：Erdbeschleunigung, Luftwiderstand, Grenzgeschwindigkeit, v-t-Kurve），对比速度曲线是直线还是趴窝。
+
+Beobachtungs-Satz (DE): Ohne Luft Gerade, mit Luft Abflachung bis zur Grenze.
+
+Aha-Moment因果链：
+
+中文因果链：速度越大风阻越大，合力等于重力减风阻，加速度越掉越小；风阻追平重力时加速度归零，速度封顶为极限速度；真空才配用自由落体公式，有空气必须看曲线。
+
+Gesetz-Satz (DE): Die Grenzgeschwindigkeit ist erreicht, wenn der Widerstand die Gewichtskraft ausgleicht.
+
+$h = \frac{1}{2} g t^2$
+
+$v = g\,t$
+
+$F_{res} = m\,g - F_W(v)$
 
 文字图解（ASCII 结构图，App支持解析渲染）：
 
 ```diagram
-  v ^   ideal (ohne Luft): Gerade, Steigung g
-      |   ./
-      |  /      mit Luft: Kurve, flacht ab
-      | /  _ _ _ _ _ _ Grenzgeschwindigkeit vG
-      |/...
-      +------------------> t
-  F_res = m*g - F_L(v);  vG erreicht bei F_L = m*g
+v ^  ideal: Gerade v=g*t (steil)
+  |  real: Kurve flacht ab ............ v_G
+  +----------------------------------> t
+  h=0.5*g*t^2 -> t=2.0s -> v=20m/s (Vakuum)
 ```
-
 Klausur-Satz: `Mit wachsender Geschwindigkeit waechst der Luftwiderstand, sodass die resultierende Kraft sinkt und die Fallgeschwindigkeit gegen v_G strebt.`
 
 ## Anekdote & Fun-Fact
@@ -69,24 +98,31 @@ Klausur-Satz: `Mit wachsender Geschwindigkeit waechst der Luftwiderstand, sodass
 
 **Bezug zum Konzept**: `Der Unterschied zwischen Feder und Kugel kommt aus der Luft, nicht aus der Schwerkraft.`
 
-## Schritt 4 — ausprobieren
+## Schritt 4 — ausprobieren: Interaktive Praxis & Labor
 
-BEISPIEL（正确例题示范，含教具操作与解答）：
+[Werkzeug: kinematik-lab]
 
-[Werkzeug: fall]
+BEISPIEL（正确例题示范，含教具操作与解答，中文在上、德语在下）：
 
-AUFGABE (berechnen, AFB II)：Ein Stein faellt aus der Ruhe ohne Luftwiderstand aus $h = 20\,\mathrm{m}$ ($g = 10\,\mathrm{m/s^2}$). Berechnen Sie Fallzeit und Aufprallgeschwindigkeit.
+AUFGABE中文导读（沙盒谜题）：小球从某高处真空下落2.0秒，求高度与落地速度；再判有空气时真实值偏大偏小。
 
-HILFE:
-1. Schritt 1: Ansatz $s = \frac{1}{2} g t^2$ mit $s = h$ nach $t$ aufloesen.
-2. Schritt 2: $v = g t$ oder $v^2 = 2 g s$ fuer die Geschwindigkeit nutzen.
-3. Schritt 3: Einheit und Groessenordnung pruefen.
+AUFGABE (berechnen, AFB II): Ein Koerper faellt im Vakuum $t = 2{,}0\,\mathrm{s}$ frei. Berechnen Sie $h$ und $v$; deuten Sie die Abweichung in Luft.
 
-MUSTERLÖSUNG: Aus $h = \frac{1}{2} g t^2$ folgt $t = \sqrt{2h/g} = \sqrt{40/10} = 2{,}0\,\mathrm{s}$. Die Aufprallgeschwindigkeit ist $v = g t = 10 \cdot 2{,}0 = 20\,\mathrm{m/s}$; Kontrolle mit $v^2 = 2 g h = 400$, also $v = 20\,\mathrm{m/s}$. Dimensionsprobe: $[2h/g] = \mathrm{m}/(\mathrm{m/s^2}) = \mathrm{s^2}$, die Wurzel ergibt Sekunden.
+HILFE（中德双语步骤）：
 
+1. 中文：第1步列公式高度等于二分之一g乘t方，关键词：Formel。
+   Schritt 1 (DE): $h = 0{,}5\,g\,t^2$.
+2. 中文：第2步代入得高度约20米、速度约20米每秒，关键词：Einsetzen。
+   Schritt 2 (DE): $h \approx 20\,\mathrm{m}$, $v = g\,t \approx 20\,\mathrm{m/s}$.
+3. 中文：第3步判空气中两值都偏小，关键词：Vergleich。
+   Schritt 3 (DE): In Luft liegen beide Werte darunter.
+
+MUSTERLOESUNG：中文：真空下落2秒高度约20米、落地约20米每秒；有空气时风阻吃掉部分加速度，同样时间掉得更浅更慢，速度曲线趴向极限速度。
+
+MUSTERLOESUNG (DE): Aus $h = 0{,}5\,g\,t^2$ folgt $t = 2{,}0\,\mathrm{s}$ bei ca. $20\,\mathrm{m}$ und $v = g\,t \approx 20\,\mathrm{m/s}$. Mit Luft waechst $F_W$ mit $v$, die Kurve flacht bis $v_G$ ab.
 Klausur-Satz: `Aus h = 0,5 g t^2 folgt t = 2,0 s und mit v = g t eine Aufprallgeschwindigkeit von 20 m/s.`
 
-## Schritt 5 — ausprobieren
+## Schritt 5 — ausprobieren: Verfahrensvergleich & Abgrenzung
 
 VERGLEICH辨别实验（双向辨析：真空理想 vs 空气实际）：
 
@@ -101,7 +137,7 @@ ANTWORT: A erfordert Verfahren (i): Beide fallen mit $a = g$, aus $t = \sqrt{2h/
 
 Klausur-Satz: `Im Vakuum fallen alle Koerper gleich schnell; mit Luft strebt die Bewegung gegen eine Grenzgeschwindigkeit.`
 
-## Schritt 6 — check
+## Schritt 6 — check: Verständnisprüfung
 
 CHECK检索默写（自测 3 题，与答案配对）：
 
@@ -123,13 +159,13 @@ Klausur-Satz: `Die Grenzgeschwindigkeit ist erreicht, wenn der Luftwiderstand di
    中文纠偏：阻力随速度变化，下落只会趋向极限速度 $v_G$ 后匀速，不会停在空中。开伞后减速段之后仍是匀速下降。
    Korrektur-Satz: `Mit Luftwiderstand strebt die Geschwindigkeit gegen einen konstanten Grenzwert, nicht gegen null.`
 
-## Schritt 7 — szenario
+## Schritt 7 — szenario: Klausurtransfer & Rubric
 
 ROLLE: Du erklaerst einer 8. Klasse den Unterschied zwischen Ideal und Realitaet.
 SITUATION: Die Klasse glaubt, schwere Koerper fielen immer schneller. Erklaere in einer zusammenhaengenden Darstellung (ca. 150 Woerter) mit dem Feder-Muenz-Versuch und dem Fallschirm-Beispiel, wann die Idealformeln gelten und was der Luftwiderstand qualitativ aendert.
 RUBRIC (30 XP): Idealgesetze mit Formeln und Bedingung (10 XP) | Rolle des Luftwiderstands und Grenzgeschwindigkeit (10 XP) | Zwei Beispiele (Vakuumroehre, Fallschirm) (6 XP) | Adressatengerechte Sprache (4 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY 1盒（核心总结）：
 
