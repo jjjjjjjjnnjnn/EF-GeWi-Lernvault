@@ -14,7 +14,7 @@ version: Lesson-v3
 
 
 
-# Lernreise: Lernreise: Lernreise: Lernreise: Biomechanische Prinzipien Anfangskraft (L1, Ziel Klausur)
+# Lernreise: Biomechanische Prinzipien Anfangskraft (L1, Ziel Klausur)
 
 <!-- Lesson v3 Architektur mit 9 Abschnitten: Schritt 1 bis 8 mit fester Struktur; Fehlvorstellung liegt zwischen Schritt 6 und 7 (wird vom Parser uebersprungen, zaehlt nicht als Schritt); unterstuetzt eingebettete [Werkzeug: <id>] Elemente; Gating: check/szenario nicht bestanden = Weiter deaktiviert; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
@@ -38,11 +38,21 @@ Das **Prinzip der Anfangskraft** verlangt: Hohe Kraft sofort, dann weiterdruecke
 
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
-- **Anfangskraft**: Die Anfangskraft ist die Faehigkeit, in kuerzester Zeit hohe Kraft zu entwickeln, etwa beim Bob-Anschub in 0,2 Sekunden. Sie entscheidet ueber Starttempo und Absprunghoehe. Ohne sie verpufft jede Maximalkraft im Wettkampf.  Mechanismus: Schnelle motorische Einheiten feuern synchron; steile Kraft-Zeit-Kurve durch neuronale Ansteuerung plus Sehnensteifigkeit. Klausur-Tipp: Nenne schnell plus hoch plus Start; Kurvensteilheit ist das Belegwort.
-- **Kraftstoss und Impuls**: Der Kraftstoss ist das Integral der Kraft ueber die Zeit und gleich der Impulsaenderung. Langer Druck plus hoher Druck liefern Tempo. Kurze Delle trotz Spitze reicht nicht.  Mechanismus: J = F mal Delta-t veraendert m mal v; Flaeche unter der Kurve zaehlt, nicht nur die Spitze. Klausur-Tipp: Schreibe Flaeche unter Kurve plus m-v-Aenderung; Integral ist das Fachwort.
-- **Impulserhaltung**: Die Impulserhaltung besagt: In abgeschlossenem System bleibt der Gesamtimpuls erhalten, etwa Abwurf plus Gegenbewegung. Weitspringer nutzen Gegenrotation der Arme. Wer sie versteht, deutet jede Flugphase.  Mechanismus: Aktion erzeugt Reaktion ohne aeussere Kraft; Teilmassen verlagern sich, Schwerpunkt folgt unbeirrt. Klausur-Tipp: Nenne abgeschlossen plus Gesamtimpuls konstant; Gegenrotation als Beispiel.
-- **Reaktivkraft**: Die Reaktivkraft nutzt den Dehnungs-Verkuerzungs-Zyklus fuer explosive Abdrucke, etwa Drop Jump. Kurze Bodenkontaktzeit unter 200 ms plus hohe Steifigkeit liefern Hoehe. Sie verbindet Kraft mit Schnelligkeit.  Mechanismus: Elastische Energiespeicherung plus Dehnreflex; Amortisation kurz halten, sonst verpufft der Effekt. Klausur-Tipp: Nenne DVZ plus unter 200 ms; Drop Jump als Beleg.
-- **Koordination inter/intra**: Intermuskulaere Koordination stimmt Muskelketten, intramuskulaere rekrutiert Fasern im Muskel. Beide heben die Kurvensteilheit ohne Masse. Technik schlaegt Umfang.  Mechanismus: Synchronisation und Frequenzierung Feuerraten; weniger Antagonisten-Bremse, mehr Agonisten-Schub. Klausur-Tipp: Trenne zwischen und innerhalb plus Rekrutierung; neuronal vor muskulär.
+- **Anfangskraft**: Die Anfangskraft ist die Faehigkeit, in kuerzester Zeit hohe Kraft zu entwickeln, etwa beim Bob-Anschub in 0,2 Sekunden. Sie entscheidet ueber Starttempo und Absprunghoehe. Ohne sie verpufft jede Maximalkraft im Wettkampf.
+  / Mechanismus: Schnelle motorische Einheiten feuern synchron; steile Kraft-Zeit-Kurve durch neuronale Ansteuerung plus Sehnensteifigkeit.
+  / Klausur-Tipp: Nenne schnell plus hoch plus Start; Kurvensteilheit ist das Belegwort.
+- **Kraftstoss und Impuls**: Der Kraftstoss ist das Integral der Kraft ueber die Zeit und gleich der Impulsaenderung. Langer Druck plus hoher Druck liefern Tempo. Kurze Delle trotz Spitze reicht nicht.
+  / Mechanismus: J = F mal Delta-t veraendert m mal v; Flaeche unter der Kurve zaehlt, nicht nur die Spitze.
+  / Klausur-Tipp: Schreibe Flaeche unter Kurve plus m-v-Aenderung; Integral ist das Fachwort.
+- **Impulserhaltung**: Die Impulserhaltung besagt: In abgeschlossenem System bleibt der Gesamtimpuls erhalten, etwa Abwurf plus Gegenbewegung. Weitspringer nutzen Gegenrotation der Arme. Wer sie versteht, deutet jede Flugphase.
+  / Mechanismus: Aktion erzeugt Reaktion ohne aeussere Kraft; Teilmassen verlagern sich, Schwerpunkt folgt unbeirrt.
+  / Klausur-Tipp: Nenne abgeschlossen plus Gesamtimpuls konstant; Gegenrotation als Beispiel.
+- **Reaktivkraft**: Die Reaktivkraft nutzt den Dehnungs-Verkuerzungs-Zyklus fuer explosive Abdrucke, etwa Drop Jump. Kurze Bodenkontaktzeit unter 200 ms plus hohe Steifigkeit liefern Hoehe. Sie verbindet Kraft mit Schnelligkeit.
+  / Mechanismus: Elastische Energiespeicherung plus Dehnreflex; Amortisation kurz halten, sonst verpufft der Effekt.
+  / Klausur-Tipp: Nenne DVZ plus unter 200 ms; Drop Jump als Beleg.
+- **Koordination inter/intra**: Intermuskulaere Koordination stimmt Muskelketten, intramuskulaere rekrutiert Fasern im Muskel. Beide heben die Kurvensteilheit ohne Masse. Technik schlaegt Umfang.
+  / Mechanismus: Synchronisation und Frequenzierung Feuerraten; weniger Antagonisten-Bremse, mehr Agonisten-Schub.
+  / Klausur-Tipp: Trenne zwischen und innerhalb plus Rekrutierung; neuronal vor muskulär.
 
 `Klausur-Satz: Anfangskraft heisst schnell hoch, Impuls Flaeche unter Kurve: Diese Definitionen tragen jede Deutung.`
 
@@ -60,7 +70,7 @@ Team Rot haelt 900 N ueber 0,35 Sekunden und gewinnt 2 Zehntel; Team Blau piekt 
 
 ```diagram
 Kurve Rot [steil, Flaeche gross] -> Impuls [m mal v] -> Start [2 Zehntel vorn]
-Regel: Fehler frueh = Grenze | Fehler spaet = Ausnutzung
+Regel: Flanke steil in 0,15 s setzen | Schub halten fuer 320 Ns auf 50 m
 ```
 
 `Klausur-Satz: Flanke baut, Schub fuellt, Impuls wird Tempo: Diese Kette erklaert jeden Start.`
@@ -138,7 +148,7 @@ RUBRIC (30 XP): Diagnose mit Fachbegriffen (8 XP) | Massnahme mit Target-Beleg (
 
 TAKEAWAY (Kernzusammenfassung):
 
-Druecke frueh und halte durch: Die Flanke oeffnet, die Flaeche bezahlt. Wer Kurven liest, startet vorn. Takeaway-Satz: `Wer die Grenze sichert und die Lage nutzt, holt den Pokal.`
+Druecke frueh und halte durch: Die Flanke oeffnet, die Flaeche bezahlt. Wer Kurven liest, startet vorn. Takeaway-Satz: `Wer frueh drueckt und Flaeche fuellt, startet 5,2 s auf 50 m in Berlin.`
 
 `Klausur-Satz: Metakern: Biomechanik ist Kurvenlesen; wer Flaechen versteht, versteht jeden Start.`
 

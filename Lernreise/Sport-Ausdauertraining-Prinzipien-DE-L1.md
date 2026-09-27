@@ -14,7 +14,7 @@ version: Lesson-v3
 
 
 
-# Lernreise: Lernreise: Lernreise: Lernreise: Superkompensation und die Prinzipien des Ausdauertrainings (L1, Ziel Muendlich)
+# Lernreise: Superkompensation und die Prinzipien des Ausdauertrainings (L1, Ziel Muendlich)
 
 <!-- Lesson v3 Architektur mit 9 Abschnitten: Schritt 1 bis 8 mit fester Struktur; Fehlvorstellung liegt zwischen Schritt 6 und 7 (wird vom Parser uebersprungen, zaehlt nicht als Schritt); unterstuetzt eingebettete [Werkzeug: <id>] Elemente; Gating: check/szenario nicht bestanden = Weiter deaktiviert; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
@@ -59,8 +59,8 @@ $$
 Ein 16-Jaehriger mit HFmax 204 laeuft Grundlage unter 153 und Intervalle ueber 175. Wer dauernd bei 165 rennt, trainiert weder Basis noch Spitze und stagniert beim 10-km-Test.
 
 ```diagram
-80 % ruhig [Puls < 153, Aufbau] -> 5 % Schwelle [meiden] -> 15-20 % scharf [Puls > 175, 4x4]
-Regel: Fehler frueh = Grenze | Fehler spaet = Ausnutzung
+ 80 % ruhig [Puls < 153, Aufbau] -> 5 % Schwelle [meiden] -> 15-20 % scharf [Puls > 175, 4x4]
+Regel: Mitte meiden, 80/20 halten | Puls 153/175 trennt die Zonen
 ```
 
 `Klausur-Satz: Unten aufbauen, oben reizen, Mitte meiden: Diese Kette erklaert jede Bestzeit.`
@@ -138,7 +138,7 @@ RUBRIC (30 XP): Diagnose mit Fachbegriffen (8 XP) | Massnahme mit Target-Beleg (
 
 TAKEAWAY (Kernzusammenfassung):
 
-Renne ruhig, um schnell zu werden: Umfang baut das Haus, Spitze setzt das Dach. Wer die Mitte meidet, erntet Bestzeit. Takeaway-Satz: `Wer die Grenze sichert und die Lage nutzt, holt den Pokal.`
+Renne ruhig, um schnell zu werden: Umfang baut das Haus, Spitze setzt das Dach. Wer die Mitte meidet, erntet Bestzeit. Takeaway-Satz: `Wer ruhig aufbaut und scharf reizt, laeuft Bestzeit.`
 
 `Klausur-Satz: Metakern: Ausdauer ist Kontrasttraining; wer Zonen trennt, versteht jede Langstrecke.`
 

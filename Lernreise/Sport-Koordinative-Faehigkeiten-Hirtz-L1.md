@@ -14,9 +14,12 @@ version: Lesson-v3
 
 
 
-# Lernreise: Lernreise: Lernreise: Lernreise: Koordinative Faehigkeiten nach Hirtz (L1, Ziel Muendlich)
+# Lernreise: Koordinative Faehigkeiten nach Hirtz (L1, Ziel Muendlich)
 
-<!-- Lesson v3 architecture: Schritte 1-8 fixed; Fehlvorstellung between Schritt 6 and 7 (parser skipped); embedded [Werkzeug: <id>]; gating: check/szenario failed = Weiter greyed; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
+<!-- Lesson v3 architecture: Schritte 1-8 fixed; Fehlvorstellung between Schritt 6 and 7 (parser skipped); embedded [Werkzeug: <id>]; gating: check/szenario failed = Weiter greyed; XP: entdecken 5
+  / ausprobieren 15
+  / check 20
+  / szenario 30 -->
 
 ## Schritt 1 — entdecken: Leipziger DHfK-Halle, Balken-Parcours (Gleichgewichts-Check) — 赛场警报
 
@@ -40,11 +43,21 @@ PRETRAINING术语盒(核心5词,先读三遍中德,合书自测中文→德语):
 
 中文在上,德语在下:
 
-- 平衡 — Gleichgewicht:小支撑上保持与恢复体位,防摔保落地 / Gleichgewicht ist das Halten und Wiederherstellen der Koerperlage auf kleiner Stuetzflaeche. Es schuetzt vor Sturz und sichert Landungen. Balken und Einbeinstand messen es. Mechanismus: Vestibularorgan plus Propriozeption plus Sehen melden Lage; Kleinhirn korrigiert in Millisekunden ueber Muskelketten. Klausur-Tipp: Nenne halten plus wiederherstellen; Vestibular als Wort.
-- 定向 — Orientierung:定身体在空间与器械中的位置 / Orientierung ist die Bestimmung der Koerperlage im Raum und zum Geraet. Turner wissen blind, wo oben ist. Verlorene Orientierung endet im Sturz. Mechanismus: Raumkarte aus Sehen und Innenohr; Saltos trainieren sie durch Wiederholung mit Hilfestellung. Klausur-Tipp: Nenne Raum plus Geraet; blind als Pruefwort.
-- 节奏能力 — Rhythmusfaehigkeit:抓住并复刻时间动力结构 / Rhythmusfaehigkeit ist das Erfassen und Nachahmen zeitlich-dynamischer Verlaeufe, etwa Balken-Schrittfolge. Sie verbindet Hoeren mit Bewegen. Taktfehler verraten sie sofort. Mechanismus: Auditive und motorische Areale koppeln; Metronom und Klatschen synchronisieren Schrittmuster. Klausur-Tipp: Nenne erfassen plus nachahmen; Metronom als Beleg.
-- 反应 — Reaktionsfaehigkeit:对信号快启正确动作,150至250毫秒 / Reaktion ist die schnelle Einleitung zweckmaessiger Bewegung auf Signale, etwa Pfiff oder Wackeln. Sie rettet den Balkenabgang. Starts und Spiele messen sie. Mechanismus: Signalerkennung plus Programmwahl in 150 bis 250 ms; Training verkuerzt Wahl, nicht Leitung. Klausur-Tipp: Nenne Signal plus zweckmaessig; Millisekunden als Zahl.
-- 耦合 — Kopplungsfaehigkeit:分动作合成流畅整体,定优雅与省 / Kopplung verbindet Teilbewegungen zu fluessigem Ganzem, etwa Arme plus Beine auf dem Balken. Sie entscheidet Eleganz und Oekonomie. Misset sie, wirkt alles eckig. Mechanismus: Kleinhirn synchronisiert Segmente; Gegenrotation stabilisiert, Gleichzeitigkeit spart Energie. Klausur-Tipp: Nenne Teile zum Ganzen plus fluessig; eckig als Gegenbild.
+- 平衡 — Gleichgewicht:小支撑上保持与恢复体位,防摔保落地
+  / Gleichgewicht ist das Halten und Wiederherstellen der Koerperlage auf kleiner Stuetzflaeche. Es schuetzt vor Sturz und sichert Landungen. Balken und Einbeinstand messen es.
+  / Mechanismus: Vestibularorgan plus Propriozeption plus Sehen melden Lage; Kleinhirn korrigiert in Millisekunden ueber Muskelketten. Klausur-Tipp: Nenne halten plus wiederherstellen; Vestibular als Wort.
+- 定向 — Orientierung:定身体在空间与器械中的位置
+  / Orientierung ist die Bestimmung der Koerperlage im Raum und zum Geraet. Turner wissen blind, wo oben ist. Verlorene Orientierung endet im Sturz.
+  / Mechanismus: Raumkarte aus Sehen und Innenohr; Saltos trainieren sie durch Wiederholung mit Hilfestellung. Klausur-Tipp: Nenne Raum plus Geraet; blind als Pruefwort.
+- 节奏能力 — Rhythmusfaehigkeit:抓住并复刻时间动力结构
+  / Rhythmusfaehigkeit ist das Erfassen und Nachahmen zeitlich-dynamischer Verlaeufe, etwa Balken-Schrittfolge. Sie verbindet Hoeren mit Bewegen. Taktfehler verraten sie sofort.
+  / Mechanismus: Auditive und motorische Areale koppeln; Metronom und Klatschen synchronisieren Schrittmuster. Klausur-Tipp: Nenne erfassen plus nachahmen; Metronom als Beleg.
+- 反应 — Reaktionsfaehigkeit:对信号快启正确动作,150至250毫秒
+  / Reaktion ist die schnelle Einleitung zweckmaessiger Bewegung auf Signale, etwa Pfiff oder Wackeln. Sie rettet den Balkenabgang. Starts und Spiele messen sie.
+  / Mechanismus: Signalerkennung plus Programmwahl in 150 bis 250 ms; Training verkuerzt Wahl, nicht Leitung. Klausur-Tipp: Nenne Signal plus zweckmaessig; Millisekunden als Zahl.
+- 耦合 — Kopplungsfaehigkeit:分动作合成流畅整体,定优雅与省
+  / Kopplung verbindet Teilbewegungen zu fluessigem Ganzem, etwa Arme plus Beine auf dem Balken. Sie entscheidet Eleganz und Oekonomie. Misset sie, wirkt alles eckig.
+  / Mechanismus: Kleinhirn synchronisiert Segmente; Gegenrotation stabilisiert, Gleichzeitigkeit spart Energie. Klausur-Tipp: Nenne Teile zum Ganzen plus fluessig; eckig als Gegenbild.
 
 `Klausur-Satz: Gleichgewicht haelt Lage, Orientierung kennt Raum: Diese Definitionen tragen jede Diagnose.`
 
@@ -60,18 +73,19 @@ $$
 t_{Reaktion} = t_{Wahrnehmung} + t_{Entscheidung} + t_{Bewegung} \approx 200\,\mathrm{ms}
 $$
 
-战役传导:本关承接冲量角逐、乳酸阈值与主导动机三幕,测得出才能说得清,说得清才能赢下来。
+战役传导:本关打通感知纠正环:眼报晃、耳报位、小脑发令,节奏给拍耦合分拍,压短环路站稳10米木。
 
 ```diagram
 Signal [Wackeln] -> Entscheidung [90 ms] -> Korrektur [Arm, Fuss] -> Stand [ruhig]
-Regel: Fehler frueh = Grenze | Fehler spaet = Ausnutzung
+Regel: Schleife unter 220 ms druecken | Takt halten auf 10 m ohne Absteiger
 ```
 
 `Klausur-Satz: Wahrnehmung plus Entscheidung plus Bewegung summieren 200 ms; Training verkuerzt die Mitte.`
 
 ## Anekdote & Fun-Fact
 
-**Anekdote / Fun-Fact (DE)**: Peter Hirtz filmte in den achtziger Jahren tausende Schulkinder auf dem Balken und fand: Koordinative Hochleister lernten Saltos in halb so vielen Versuchen. Seine Faehigkeitsliste ersetzte das Gerede vom Talent durch messbare Software. Die DHfK-Halle nutzt seine Parcours bis heute zur Talentsichtung.
+**Anekdote
+  / Fun-Fact (DE)**: Peter Hirtz filmte in den achtziger Jahren tausende Schulkinder auf dem Balken und fand: Koordinative Hochleister lernten Saltos in halb so vielen Versuchen. Seine Faehigkeitsliste ersetzte das Gerede vom Talent durch messbare Software. Die DHfK-Halle nutzt seine Parcours bis heute zur Talentsichtung.
 
 **中文解读**: Hirtz 八十年代拍上千孩子:协调好的学空翻快一半。天赋被他拆成可测可练的软件。
 
@@ -88,9 +102,9 @@ AUFGABE (analysieren, AFB II):90-Sekunden-Ansage gegen den Timer: Diagnostiziere
 Target数值目标:Balken 10 m ohne Absteiger, Reaktionszeit unter 220 ms, 3 Parcoursrunden。
 
 HILFE:
-1. Benenne zwei Faehigkeiten am Fehlerbild.
-2. Gib je eine Uebung mit Dosis.
-3. Benenne Erfolgskriterium am Target.
+1. 先用平衡与耦合两项能力点名晃动错误像,对照10米不掉木与220毫秒目标,判定环路慢还是分节散。
+2. 再为每项能力开一练习加剂量:单腿抛接球练平衡、节拍走木练耦合,每周两次压短环路。
+3. 最后用目标定过关线:10米无掉下加反应220毫秒内,环路从320压到210毫秒即达标。
 
 MUSTERLÖSUNG:Der Wackler zeigt Gleichgewicht plus Kopplung: Arme rudern, Huefte knickt. Das Target 10 m ohne Absteiger wird erreicht, weil Einbeinstand mit Ball und Balken-Gehen im Takt zweimal woechentlich die Schleife von 320 auf 210 ms druecken. Reaktion unter 220 ms sichert den Abgang.
 
@@ -145,7 +159,7 @@ RUBRIC (30 XP):诊断术语8分 | 措施与目标举证7分 | 程序选择对比
 TAKEAWAY 1盒(核心总结):
 
 中文:Trainiere die Schleife, nicht die Muskeln: Sehen, Entscheiden, Korrigieren in 200 Millisekunden. Wer die Software updatet, steht auf jedem Balken.
-Takeaway-Satz: `Wer die Grenze sichert und die Lage nutzt, holt den Pokal.`
+Takeaway-Satz: `Wer Schleife verkuerzt und Kopplung haelt, steht 10 m ohne Absteiger.`
 
 `Klausur-Satz: Metakern: Koordination ist schnelle Ordnung; wer Schleifen misst, versteht jede Technik.`
 

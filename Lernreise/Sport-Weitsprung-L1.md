@@ -14,7 +14,7 @@ version: Lesson-v3
 
 
 
-# Lernreise: Lernreise: Lernreise: Lernreise: Biomechanische Optimierung des Weitsprungs — Absprung und Flug (L1, Ziel Muendlich)
+# Lernreise: Biomechanische Optimierung des Weitsprungs — Absprung und Flug (L1, Ziel Muendlich)
 
 <!-- Lesson v3 9步制架构：Schritt 1至8固定结构；Fehlvorstellung 夹在 Schritt 6 与 7 之间（Parser 自动跳过，不占步数）；支持内嵌 [Werkzeug: <id>] 交互教具；Gating: check/szenario 未过 = Weiter 置灰；XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
@@ -40,11 +40,22 @@ PRETRAINING术语盒(核心5词,先读三遍中德,合书自测中文→德语):
 
 中文在上,德语在下:
 
-- 起跳 — Absprung:单脚快速蹬伸、把水平速度转为远度的主相 / Der Absprung ist der einbeinige, maximal schnelle Abdruck vom Brett und die Hauptphase der Weitsprungleistung. Nur hier wird Bodenkontakt in Flugweite verwandelt, alles Spaetere verwaltet bloss das Ergebnis. Mechanismus: In ca. 0,11 bis 0,13 s Stuetzzeit erzeugt die Beinstreckung ueber den Kraftstoss einen vertikalen Impuls, der sich mit der erhaltenen Horizontalgeschwindigkeit zur Abfluggeschwindigkeit addiert. Klausur-Tipp: Punkkwort ist einbeiniger schneller Abdruck als Hauptphase; wer Stemmen oder beidbeinig schreibt, verliert den Punkt.
-- 起跳角 — Absprungwinkel:蹬伸方向与水平面夹角,快而平最优 / Der Absprungwinkel ist der Winkel zwischen Abfluggeschwindigkeit und Horizontale. Bei Eliteathleten liegt das Optimum flach zwischen 19 und 22 Grad, weil dort der Verlust an Horizontalgeschwindigkeit minimal bleibt. Mechanismus: Ein steilerer Winkel erhoeht zwar die Flugzeit, frisst aber ueberproportional v_h; die Weite folgt der Parabel und schrumpft trotz hoeherer Bahn. Klausur-Tipp: Nenne Zahlenband 19 bis 22 Grad plus Begruendung Erhalt von v_h; steil ist kein Ehrgeiz, sondern ein Fehler.
-- 身体重心 — Koerper-Schwerpunkt (KSP):沿抛物线飞行的参考点,离板瞬间已定 / Der KSP ist der gedachte Massenmittelpunkt des Koerpers und der Referenzpunkt jeder biomechanischen Analyse. Seine Bahn ist nach dem Verlassen des Bretts eine fixierte Wurfparabel und kann in der Luft nicht mehr veraendert werden. Mechanismus: Ohne Stuetzflaeche fehlt jede Kraefteeinwirkung von aussen; Arm- und Beinbewegungen verlagern nur Teilmassen, niemals den KSP selbst. Klausur-Tipp: Schreibe festgelegt beim Brettverlassen plus keine Stuetzflaeche; das ist die Standardbegruendung gegen Luft-Nacharbeiten.
-- 水平/垂直速度 — Horizontal- und Vertikalgeschwindigkeit:起跳把部分水平速度转为垂直速度 / Die Horizontalkomponente v_h stammt aus dem Anlauf (9 bis 10 m/s), die Vertikalkomponente v_v wird im Absprung erzeugt (ca. 3 m/s). Die Resultierende aus beiden bestimmt Abflugwinkel und Weite gemeinsam. Mechanismus: Der Kraftstoss wandelt einen Teil von v_h in v_v um; je kuerzer und steifer der Stuetz, desto geringer der v_h-Verlust. Klausur-Tipp: Zerlege immer in v_h aus Anlauf plus v_v aus Abdruck; die Resultierende ist das Lieblingswort der Korrektoren.
-- 腾空与落地 — Hitch-Kick und Landung:只能优化姿态与前伸兑现远度 / Hitch-Kick (Lauf in der Luft) und Hangtechnik stabilisieren die Koerperlage waehrend des Flugs. Die Landung mit aktivem Vorturnen der Beine sichert die fixierte Weite gegen Verschenken im Sand. Mechanismus: Gegenrotation von Armen und Beinen erhaelt das Gleichgewicht um den KSP; das Vorturnen verlagert den Fussaufschlag nach vorn, ohne die KSP-Bahn zu aendern. Klausur-Tipp: Formuliere sichern statt erzeugen; Flug und Landung sichern vorhandene Weite, sie erzeugen keine.
+- 起跳 — Absprung:单脚快速蹬伸、把水平速度转为远度的主相
+ 
+  / Der Absprung ist der einbeinige, maximal schnelle Abdruck vom Brett und die Hauptphase der Weitsprungleistung. Nur hier wird Bodenkontakt in Flugweite verwandelt, alles Spaetere verwaltet bloss das Ergebnis.
+  / Mechanismus: In ca. 0,11 bis 0,13 s Stuetzzeit erzeugt die Beinstreckung ueber den Kraftstoss einen vertikalen Impuls, der sich mit der erhaltenen Horizontalgeschwindigkeit zur Abfluggeschwindigkeit addiert. Klausur-Tipp: Punkkwort ist einbeiniger schneller Abdruck als Hauptphase; wer Stemmen oder beidbeinig schreibt, verliert den Punkt.
+- 起跳角 — Absprungwinkel:蹬伸方向与水平面夹角,快而平最优
+  / Der Absprungwinkel ist der Winkel zwischen Abfluggeschwindigkeit und Horizontale. Bei Eliteathleten liegt das Optimum flach zwischen 19 und 22 Grad, weil dort der Verlust an Horizontalgeschwindigkeit minimal bleibt.
+  / Mechanismus: Ein steilerer Winkel erhoeht zwar die Flugzeit, frisst aber ueberproportional v_h; die Weite folgt der Parabel und schrumpft trotz hoeherer Bahn. Klausur-Tipp: Nenne Zahlenband 19 bis 22 Grad plus Begruendung Erhalt von v_h; steil ist kein Ehrgeiz, sondern ein Fehler.
+- 身体重心 — Koerper-Schwerpunkt (KSP):沿抛物线飞行的参考点,离板瞬间已定
+  / Der KSP ist der gedachte Massenmittelpunkt des Koerpers und der Referenzpunkt jeder biomechanischen Analyse. Seine Bahn ist nach dem Verlassen des Bretts eine fixierte Wurfparabel und kann in der Luft nicht mehr veraendert werden.
+  / Mechanismus: Ohne Stuetzflaeche fehlt jede Kraefteeinwirkung von aussen; Arm- und Beinbewegungen verlagern nur Teilmassen, niemals den KSP selbst. Klausur-Tipp: Schreibe festgelegt beim Brettverlassen plus keine Stuetzflaeche; das ist die Standardbegruendung gegen Luft-Nacharbeiten.
+- 水平/垂直速度 — Horizontal- und Vertikalgeschwindigkeit:起跳把部分水平速度转为垂直速度
+  / Die Horizontalkomponente v_h stammt aus dem Anlauf (9 bis 10 m/s), die Vertikalkomponente v_v wird im Absprung erzeugt (ca. 3 m/s). Die Resultierende aus beiden bestimmt Abflugwinkel und Weite gemeinsam.
+  / Mechanismus: Der Kraftstoss wandelt einen Teil von v_h in v_v um; je kuerzer und steifer der Stuetz, desto geringer der v_h-Verlust. Klausur-Tipp: Zerlege immer in v_h aus Anlauf plus v_v aus Abdruck; die Resultierende ist das Lieblingswort der Korrektoren.
+- 腾空与落地 — Hitch-Kick und Landung:只能优化姿态与前伸兑现远度
+  / Hitch-Kick (Lauf in der Luft) und Hangtechnik stabilisieren die Koerperlage waehrend des Flugs. Die Landung mit aktivem Vorturnen der Beine sichert die fixierte Weite gegen Verschenken im Sand.
+  / Mechanismus: Gegenrotation von Armen und Beinen erhaelt das Gleichgewicht um den KSP; das Vorturnen verlagert den Fussaufschlag nach vorn, ohne die KSP-Bahn zu aendern. Klausur-Tipp: Formuliere sichern statt erzeugen; Flug und Landung sichern vorhandene Weite, sie erzeugen keine.
 
 `Klausur-Satz: 起跳角与重心是采分点:19至22度加离板定抛物线,两句定义必须写全。`
 
@@ -60,11 +71,11 @@ $$
 W = \frac{v_0^2 \cdot \sin(2\alpha)}{g} \quad\text{mit}\quad v_0 = \sqrt{v_h^2 + v_v^2}
 $$
 
-战役传导:本关承接冲量角逐、乳酸阈值与主导动机三幕,测得出才能说得清,说得清才能赢下来。
+战役传导:本关打通抛物线兑现链:助跑保水平速度、起跳转垂直分量、腾空落地只兑现远度。
 
 ```diagram
 Anlauf [v_h 9,6 m/s sichern] -> Absprung [Stuetz 0,12 s, alpha 21 Grad] -> Flug/Landung [Parabel nutzen]
-Regel: Fehler frueh = Grenze | Fehler spaet = Ausnutzung
+Regel: Absprung setzt die Grenze bei 19 Grad und 0,12 s | Flug und Landung nutzen die Parabel fuer 7,80 m
 ```
 
 `Klausur-Satz: 助跑保水平、起跳转垂直、合成定抛物线,这是远度论证链。`
@@ -88,9 +99,9 @@ AUFGABE (analysieren, AFB II):起跳角调节器:对比平(21度)与陡(30度),v
 Target数值目标:Absprungwinkel 19 Grad, Anlauf 9,4 m/s, Stuetzzeit 0,12 s, Zielweite 7,80 m。
 
 HILFE:
-1. 定相命名:先说相位与错误画像,对照目标19度。
-2. 读数释义:读测量值,用起跳角与重心术语解释。
-3. 推纠正:从机制推出一条可操作纠正。
+1. 先定起跳相,对照19度与7,80 m目标,判定是起跳过陡吃水平速度还是腾空落地亏兑现。
+2. 再读9,4 m/s水平速度、0,12 s支撑与重心抛物线,用起跳角与重心术语解释远度差。
+3. 最后从快而平机制推出一条可操作纠正:缩短助跑保节奏、足下放板快蹬、前伸落地。
 
 MUSTERLÖSUNG:对照目标(19度,9,4 m/s,7,80 m),陡起跳虽增加垂直分量却吃掉水平速度,远度从7,80掉到7,05 m。平起跳0,12秒蹬伸保住水平速度,合成矢量拉长抛物线,达标过关。
 
@@ -102,7 +113,7 @@ VERGLEICH辨别实验(双向辨析,先选程序再解题):【选程序】
 
 VERGLEICH:先选程序—— (i) Absprung-Optimierung (Grenze setzen: Anlauf, Stuetz, Winkel) 还是 (ii) Flug- und Landungs-Optimierung (Lage nutzen: Hitch-Kick, Vorturnen) ——再解题。【选程序:问上限与结构选(i),问兑现与情境选(ii)。口述先说 Ich waehle Verfahren (i)/(ii), weil …】
 
-AUFGABE A:案例A(决赛第三跳 уголовного similarly 蹬伸过陡仅7,30 m)选哪条路?
+AUFGABE A:案例A(决赛第三跳蹬伸过陡仅7,30 m)选哪条路?
 
 AUFGABE B:案例B(已有8,00 m实力,落地坐臀亏40 cm)选哪条路?
 
@@ -145,7 +156,7 @@ RUBRIC (30 XP):诊断术语8分 | 措施与目标举证7分 | 程序选择对比
 TAKEAWAY 1盒(核心总结):
 
 中文:上限早锁定、位置晚兑现;数值目标是裁判,程序选择是辩护。
-Takeaway-Satz: `Wer die Grenze sichert und die Lage nutzt, holt den Pokal.`
+Takeaway-Satz: `Wer flach bei 19 Grad abdrueckt und vorne landet, sichert 7,80 m.`
 
 `Klausur-Satz: 元认知:跳远是应用抛物物理;懂起跳处的上限,就懂一切腾空项目。`
 

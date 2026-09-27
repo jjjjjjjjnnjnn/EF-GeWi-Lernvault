@@ -14,9 +14,12 @@ version: Lesson-v3
 
 
 
-# Lernreise: Lernreise: Lernreise: Lernreise: Belastungsreiz und Trainingsnormative (L2, Ziel Muendlich)
+# Lernreise: Belastungsreiz und Trainingsnormative (L2, Ziel Muendlich)
 
-<!-- Lesson v3 architecture: Schritte 1-8 fixed; Fehlvorstellung between Schritt 6 and 7 (parser skipped); embedded [Werkzeug: <id>]; gating: check/szenario failed = Weiter greyed; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
+<!-- Lesson v3 architecture: Schritte 1-8 fixed; Fehlvorstellung between Schritt 6 and 7 (parser skipped); embedded [Werkzeug: <id>]; gating: check/szenario failed = Weiter greyed; XP: entdecken 5
+  / ausprobieren 15
+  / check 20
+  / szenario 30 -->
 
 ## Schritt 1 — entdecken: Dortmunder Kraftraum Nord, Hantel-Plateau (Kniebeuge-Testtag) — 赛场警报
 
@@ -40,11 +43,21 @@ PRETRAINING术语盒(核心5词,先读三遍中德,合书自测中文→德语):
 
 中文在上,德语在下:
 
-- 负荷刺激 — Belastungsreiz:打破平衡引发适应的负荷,须过阈 / Der Belastungsreiz ist die Trainingsbelastung, die eine Stoerung des Gleichgewichts und damit Anpassung ausloest. Nur ueberschwellige Reize oberhalb der Gewöhnungsschwelle wirken; unterschwellige verpuffen, uebermaessige zerstoeren. Die Reizstufe waehlt das Ziel. Mechanismus: Mechanische und metabolische Stressoren aktivieren Signalwege (mTOR, AMPK); Proteinsynthese und Enzymaufbau folgen in der Erholung. Klausur-Tipp: Nenne ueberschwellig plus Anpassung; unterschwellig/uebermaessig als Abgrenzung.
-- 超量恢复 — Superkompensation:恢复后涨超原水平,下刺激须踩浪尖 / Die Superkompensation ist die Erhoehung ueber das Ausgangsniveau nach Belastung und Erholung. Der Koerper baut in der Pause mehr auf, als verbraucht wurde. Der naechste Reiz muss in diese Welle fallen. Mechanismus: Glykogen- und Proteinspeicher werden ueberkompensiert; Timing von 24 bis 72 Stunden je nach Reiz entscheidet. Klausur-Tipp: Zeichne Welle: Abfall, Erholung, Ueberhoehung; Timing ist das Punktwort.
-- 强度与量 — Intensitaet und Umfang:强度是单个多重,量是总量,配比定目标 / Die Intensitaet ist die Staerke je Wiederholung (Prozent vom Maximum), der Umfang die Menge (Saetze mal Wiederholungen). Kraft braucht hohe Intensitaet bei kleinem Umfang, Ausdauer umgekehrt. Ihre Relation steuert das Ziel. Mechanismus: Hohe Last rekrutiert schnelle Fasern, viele Wiederholungen erschoepfen Substrate; beide Wege aktivieren andere Genprogramme. Klausur-Tipp: Nenne Prozent plus Saetze/Wiederholungen; Kraft versus Ausdauer als Gegensatz.
-- 密度与持续 — Dichte und Dauer:密度是间歇比,持续是单次时长,管恢复充分度 / Die Dichte ist das Pausenverhaeltnis zwischen Serien, die Dauer die Belastungszeit. Kurze Pausen stauen Metabolite, lange erlauben Maximalkraft. Intervalldichte formt Herz und Laktattoleranz. Mechanismus: Unvollstaendige Pausen halten Puls und Laktat hoch; vollstaendige stellen ATP und Nervensystem wieder her. Klausur-Tipp: Nenne Pause als Werkzeug; vollständig versus unvollständig als Gegensatzpaar.
-- 频率 — Haeufigkeit:每周刺激次数,2至3次涨力,天天同部位必透支 / Die Haeufigkeit ist die Zahl der Einheiten pro Woche je Muskel oder System. Zwei bis drei Reize pro Woche heben Kraft, taeglich gleiche Reize uebertrainieren. Frequenz verteilt die Welle. Mechanismus: Proteinsynthese bleibt 36 bis 48 Stunden erhoeht; Reize in diesem Fenster summieren sich, spaetere verpuffen. Klausur-Tipp: Schreibe 2 bis 3 pro Woche plus Erholung; mehr ist nicht mehr.
+- 负荷刺激 — Belastungsreiz:打破平衡引发适应的负荷,须过阈
+  / Der Belastungsreiz ist die Trainingsbelastung, die eine Stoerung des Gleichgewichts und damit Anpassung ausloest. Nur ueberschwellige Reize oberhalb der Gewöhnungsschwelle wirken; unterschwellige verpuffen, uebermaessige zerstoeren. Die Reizstufe waehlt das Ziel.
+  / Mechanismus: Mechanische und metabolische Stressoren aktivieren Signalwege (mTOR, AMPK); Proteinsynthese und Enzymaufbau folgen in der Erholung. Klausur-Tipp: Nenne ueberschwellig plus Anpassung; unterschwellig/uebermaessig als Abgrenzung.
+- 超量恢复 — Superkompensation:恢复后涨超原水平,下刺激须踩浪尖
+  / Die Superkompensation ist die Erhoehung ueber das Ausgangsniveau nach Belastung und Erholung. Der Koerper baut in der Pause mehr auf, als verbraucht wurde. Der naechste Reiz muss in diese Welle fallen.
+  / Mechanismus: Glykogen- und Proteinspeicher werden ueberkompensiert; Timing von 24 bis 72 Stunden je nach Reiz entscheidet. Klausur-Tipp: Zeichne Welle: Abfall, Erholung, Ueberhoehung; Timing ist das Punktwort.
+- 强度与量 — Intensitaet und Umfang:强度是单个多重,量是总量,配比定目标
+  / Die Intensitaet ist die Staerke je Wiederholung (Prozent vom Maximum), der Umfang die Menge (Saetze mal Wiederholungen). Kraft braucht hohe Intensitaet bei kleinem Umfang, Ausdauer umgekehrt. Ihre Relation steuert das Ziel.
+  / Mechanismus: Hohe Last rekrutiert schnelle Fasern, viele Wiederholungen erschoepfen Substrate; beide Wege aktivieren andere Genprogramme. Klausur-Tipp: Nenne Prozent plus Saetze/Wiederholungen; Kraft versus Ausdauer als Gegensatz.
+- 密度与持续 — Dichte und Dauer:密度是间歇比,持续是单次时长,管恢复充分度
+  / Die Dichte ist das Pausenverhaeltnis zwischen Serien, die Dauer die Belastungszeit. Kurze Pausen stauen Metabolite, lange erlauben Maximalkraft. Intervalldichte formt Herz und Laktattoleranz.
+  / Mechanismus: Unvollstaendige Pausen halten Puls und Laktat hoch; vollstaendige stellen ATP und Nervensystem wieder her. Klausur-Tipp: Nenne Pause als Werkzeug; vollständig versus unvollständig als Gegensatzpaar.
+- 频率 — Haeufigkeit:每周刺激次数,2至3次涨力,天天同部位必透支
+  / Die Haeufigkeit ist die Zahl der Einheiten pro Woche je Muskel oder System. Zwei bis drei Reize pro Woche heben Kraft, taeglich gleiche Reize uebertrainieren. Frequenz verteilt die Welle.
+  / Mechanismus: Proteinsynthese bleibt 36 bis 48 Stunden erhoeht; Reize in diesem Fenster summieren sich, spaetere verpuffen. Klausur-Tipp: Schreibe 2 bis 3 pro Woche plus Erholung; mehr ist nicht mehr.
 
 `Klausur-Satz: Ueberschwellig plus erholbar definiert den Reiz, fuenf Normative dosieren ihn: Diese Saetze tragen jede Planung.`
 
@@ -60,18 +73,19 @@ $$
 LOAD = Intensitaet \times Umfang \times Dichte^{-1} \quad\text{und}\quad Leistung(t+1) > Leistung(t)
 $$
 
-战役传导:本关承接冲量角逐、乳酸阈值与主导动机三幕,测得出才能说得清,说得清才能赢下来。
+战役传导:本关打通刺激恢复波:过阈下药、踩浪加量,五规范把刺激钉在超量浪尖。
 
 ```diagram
 Reiz [ueberschwellig] -> Ermuedung [Abfall] -> Erholung [Welle] -> naechster Reiz [Timing]
-Regel: Fehler frueh = Grenze | Fehler spaet = Ausnutzung
+Regel: Reiz ueberschwellig setzen | Welle abwarten, dann 5x5 bei 85 Prozent erneut reizen
 ```
 
 `Klausur-Satz: Reiz senkt, Erholung hebt ueber Ausgang, Timing summiert: Diese Welle erklaert jeden Zuwachs.`
 
 ## Anekdote & Fun-Fact
 
-**Anekdote / Fun-Fact (DE)**: Der Rostocker Physiologe Fritz Zaciorskij mass in den siebziger Jahren, dass gleiche Tonnage voellig anders wirkt, je nachdem ob sie auf 3 oder 10 Wiederholungen verteilt ist. Drei schwere Saetze bauten Maximalkraft, zehn leichte bauten Umfang am selben Eisen. Seine Normative-Tabelle haengt bis heute in jedem deutschen Kraftraum.
+**Anekdote
+  / Fun-Fact (DE)**: Der Rostocker Physiologe Fritz Zaciorskij mass in den siebziger Jahren, dass gleiche Tonnage voellig anders wirkt, je nachdem ob sie auf 3 oder 10 Wiederholungen verteilt ist. Drei schwere Saetze bauten Maximalkraft, zehn leichte bauten Umfang am selben Eisen. Seine Normative-Tabelle haengt bis heute in jedem deutschen Kraftraum.
 
 **中文解读**: 同样吨位,3次大重量长力量,10次小重量长维度。器械不决定效果,剂量决定。
 
@@ -88,9 +102,9 @@ AUFGABE (analysieren, AFB II):90-Sekunden-Ansage gegen den Timer: Dose 5x5 Knieb
 Target数值目标:80 kg bei 85 Prozent, 5x5, Pause 3 min, 2 Einheiten/Woche, Ziel 80 kg。
 
 HILFE:
-1. Waehle Intensitaet in Prozent und Umfang in Saetzen/Wiederholungen.
-2. Setze Dichte (Pause) und Haeufigkeit pro Woche.
-3. Benenne die Reizstufe und das Timing der Welle.
+1. 先定85%强度与5×5的量,对照80公斤目标,说明它为何过阈又可恢复。
+2. 再定3分钟间歇与每周两次频率,说明密度与频率如何保住超量恢复浪。
+3. 最后点名刺激等级与踩浪时机,说明如何从60公斤叠到80公斤达标。
 
 MUSTERLÖSUNG:85 Prozent mal 5x5 bei 3 Minuten Pause zweimal woechentlich ist ueberschwellig und voll erholbar; die Welle summiert sich von 60 auf 80 Kilo. Das Target wird erreicht, weil Dichte und Frequenz Superkompensation zulassen. Taegliches Training wuerde die Kurve druecken.
 
@@ -145,7 +159,7 @@ RUBRIC (30 XP):诊断术语8分 | 措施与目标举证7分 | 程序选择对比
 TAKEAWAY 1盒(核心总结):
 
 中文:Dosiere Reize wie Medizin: stark genug zum Wirken, selten genug zum Wachsen. Die Welle heilt, die Dosis entscheidet.
-Takeaway-Satz: `Wer die Grenze sichert und die Lage nutzt, holt den Pokal.`
+Takeaway-Satz: `Wer Reiz setzt und Welle trifft, stemmt 80 kg im 5x5 bei 85 Prozent.`
 
 `Klausur-Satz: Metakern: Training ist Reiz plus Zeit; wer Wellen liest, versteht jede Anpassung.`
 

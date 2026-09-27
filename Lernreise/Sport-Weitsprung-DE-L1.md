@@ -14,7 +14,7 @@ version: Lesson-v3
 
 
 
-# Lernreise: Lernreise: Lernreise: Lernreise: Biomechanische Optimierung des Weitsprungs, Absprung und Flug (L1, Ziel Muendlich)
+# Lernreise: Biomechanische Optimierung des Weitsprungs, Absprung und Flug (L1, Ziel Muendlich)
 
 <!-- Lesson v3 Architektur mit 9 Abschnitten: Schritt 1 bis 8 mit fester Struktur; Fehlvorstellung liegt zwischen Schritt 6 und 7 (wird vom Parser uebersprungen, zaehlt nicht als Schritt); unterstuetzt eingebettete [Werkzeug: <id>] Elemente; Gating: check/szenario nicht bestanden = Weiter deaktiviert; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
@@ -38,11 +38,21 @@ Weil die **horizontale Geschwindigkeit** die eigentliche Weitenquelle ist und je
 
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
-- **Absprung**: Der Absprung ist der einbeinige, maximal schnelle Abdruck vom Brett und die Hauptphase der Weitsprungleistung. Nur hier wird Bodenkontakt in Flugweite verwandelt, alles Spaetere verwaltet bloss das Ergebnis.  Mechanismus: In ca. 0,11 bis 0,13 s Stuetzzeit erzeugt die Beinstreckung ueber den Kraftstoss einen vertikalen Impuls, der sich mit der erhaltenen Horizontalgeschwindigkeit zur Abfluggeschwindigkeit addiert. Klausur-Tipp: Punkkwort ist einbeiniger schneller Abdruck als Hauptphase; wer Stemmen oder beidbeinig schreibt, verliert den Punkt.
-- **Absprungwinkel**: Der Absprungwinkel ist der Winkel zwischen Abfluggeschwindigkeit und Horizontale. Bei Eliteathleten liegt das Optimum flach zwischen 19 und 22 Grad, weil dort der Verlust an Horizontalgeschwindigkeit minimal bleibt.  Mechanismus: Ein steilerer Winkel erhoeht zwar die Flugzeit, frisst aber ueberproportional v_h; die Weite folgt der Parabel und schrumpft trotz hoeherer Bahn. Klausur-Tipp: Nenne Zahlenband 19 bis 22 Grad plus Begruendung Erhalt von v_h; steil ist kein Ehrgeiz, sondern ein Fehler.
-- **Koerper-Schwerpunkt (KSP)**: Der KSP ist der gedachte Massenmittelpunkt des Koerpers und der Referenzpunkt jeder biomechanischen Analyse. Seine Bahn ist nach dem Verlassen des Bretts eine fixierte Wurfparabel und kann in der Luft nicht mehr veraendert werden.  Mechanismus: Ohne Stuetzflaeche fehlt jede Kraefteeinwirkung von aussen; Arm- und Beinbewegungen verlagern nur Teilmassen, niemals den KSP selbst. Klausur-Tipp: Schreibe festgelegt beim Brettverlassen plus keine Stuetzflaeche; das ist die Standardbegruendung gegen Luft-Nacharbeiten.
-- **Horizontal- und Vertikalgeschwindigkeit**: Die Horizontalkomponente v_h stammt aus dem Anlauf (9 bis 10 m/s), die Vertikalkomponente v_v wird im Absprung erzeugt (ca. 3 m/s). Die Resultierende aus beiden bestimmt Abflugwinkel und Weite gemeinsam.  Mechanismus: Der Kraftstoss wandelt einen Teil von v_h in v_v um; je kuerzer und steifer der Stuetz, desto geringer der v_h-Verlust. Klausur-Tipp: Zerlege immer in v_h aus Anlauf plus v_v aus Abdruck; die Resultierende ist das Lieblingswort der Korrektoren.
-- **Hitch-Kick und Landung**: Hitch-Kick (Lauf in der Luft) und Hangtechnik stabilisieren die Koerperlage waehrend des Flugs. Die Landung mit aktivem Vorturnen der Beine sichert die fixierte Weite gegen Verschenken im Sand.  Mechanismus: Gegenrotation von Armen und Beinen erhaelt das Gleichgewicht um den KSP; das Vorturnen verlagert den Fussaufschlag nach vorn, ohne die KSP-Bahn zu aendern. Klausur-Tipp: Formuliere sichern statt erzeugen; Flug und Landung sichern vorhandene Weite, sie erzeugen keine.
+- **Absprung**: Der Absprung ist der einbeinige, maximal schnelle Abdruck vom Brett und die Hauptphase der Weitsprungleistung. Nur hier wird Bodenkontakt in Flugweite verwandelt, alles Spaetere verwaltet bloss das Ergebnis.
+  / Mechanismus: In ca. 0,11 bis 0,13 s Stuetzzeit erzeugt die Beinstreckung ueber den Kraftstoss einen vertikalen Impuls, der sich mit der erhaltenen Horizontalgeschwindigkeit zur Abfluggeschwindigkeit addiert.
+  / Klausur-Tipp: Punkkwort ist einbeiniger schneller Abdruck als Hauptphase; wer Stemmen oder beidbeinig schreibt, verliert den Punkt.
+- **Absprungwinkel**: Der Absprungwinkel ist der Winkel zwischen Abfluggeschwindigkeit und Horizontale. Bei Eliteathleten liegt das Optimum flach zwischen 19 und 22 Grad, weil dort der Verlust an Horizontalgeschwindigkeit minimal bleibt.
+  / Mechanismus: Ein steilerer Winkel erhoeht zwar die Flugzeit, frisst aber ueberproportional v_h; die Weite folgt der Parabel und schrumpft trotz hoeherer Bahn.
+  / Klausur-Tipp: Nenne Zahlenband 19 bis 22 Grad plus Begruendung Erhalt von v_h; steil ist kein Ehrgeiz, sondern ein Fehler.
+- **Koerper-Schwerpunkt (KSP)**: Der KSP ist der gedachte Massenmittelpunkt des Koerpers und der Referenzpunkt jeder biomechanischen Analyse. Seine Bahn ist nach dem Verlassen des Bretts eine fixierte Wurfparabel und kann in der Luft nicht mehr veraendert werden.
+  / Mechanismus: Ohne Stuetzflaeche fehlt jede Kraefteeinwirkung von aussen; Arm- und Beinbewegungen verlagern nur Teilmassen, niemals den KSP selbst.
+  / Klausur-Tipp: Schreibe festgelegt beim Brettverlassen plus keine Stuetzflaeche; das ist die Standardbegruendung gegen Luft-Nacharbeiten.
+- **Horizontal- und Vertikalgeschwindigkeit**: Die Horizontalkomponente v_h stammt aus dem Anlauf (9 bis 10 m/s), die Vertikalkomponente v_v wird im Absprung erzeugt (ca. 3 m/s). Die Resultierende aus beiden bestimmt Abflugwinkel und Weite gemeinsam.
+  / Mechanismus: Der Kraftstoss wandelt einen Teil von v_h in v_v um; je kuerzer und steifer der Stuetz, desto geringer der v_h-Verlust.
+  / Klausur-Tipp: Zerlege immer in v_h aus Anlauf plus v_v aus Abdruck; die Resultierende ist das Lieblingswort der Korrektoren.
+- **Hitch-Kick und Landung**: Hitch-Kick (Lauf in der Luft) und Hangtechnik stabilisieren die Koerperlage waehrend des Flugs. Die Landung mit aktivem Vorturnen der Beine sichert die fixierte Weite gegen Verschenken im Sand.
+  / Mechanismus: Gegenrotation von Armen und Beinen erhaelt das Gleichgewicht um den KSP; das Vorturnen verlagert den Fussaufschlag nach vorn, ohne die KSP-Bahn zu aendern.
+  / Klausur-Tipp: Formuliere sichern statt erzeugen; Flug und Landung sichern vorhandene Weite, sie erzeugen keine.
 
 `Klausur-Satz: Absprungwinkel und KSP entscheiden die Klausur: 19 bis 22 Grad plus beim Brettverlassen fixierte Parabel sind die zwei Pflichtdefinitionen.`
 
@@ -60,7 +70,7 @@ Steigt alpha ueber 25 Grad, waechst sin(2alpha) kaum noch, aber v_h bricht ein, 
 
 ```diagram
 Anlauf [v_h 9,6 m/s sichern] -> Absprung [Stuetz 0,12 s, alpha 21 Grad] -> Flug/Landung [Parabel nutzen]
-Regel: Fehler frueh = Grenze | Fehler spaet = Ausnutzung
+Regel: Absprung setzt die Grenze bei 21 Grad und 0,12 s | Flug und Landung nutzen die Parabel fuer 8,10 m
 ```
 
 `Klausur-Satz: Anlauf sichert v_h, Absprung erzeugt v_v, die Resultierende fixiert die Parabel: Diese Kette traegt jede Weitenbegruendung.`
@@ -138,7 +148,7 @@ RUBRIC (30 XP): Diagnose mit Fachbegriffen (8 XP) | Massnahme mit Target-Beleg (
 
 TAKEAWAY (Kernzusammenfassung):
 
-Grenze frueh sichern, Lage spaet nutzen: Der Absprung legt die Parabel fest, Flug und Landung holen sie in den Sand. Wer flach und schnell abdrueckt, verwandelt Tempo in Meter. Takeaway-Satz: `Wer die Grenze sichert und die Lage nutzt, holt den Pokal.`
+Grenze frueh sichern, Lage spaet nutzen: Der Absprung legt die Parabel fest, Flug und Landung holen sie in den Sand. Wer flach und schnell abdrueckt, verwandelt Tempo in Meter. Takeaway-Satz: `Wer flach bei 21 Grad abdrueckt und vorne landet, sichert 8,10 m in Tokio.`
 
 `Klausur-Satz: Metakern: Weitsprung ist angewandte Wurfphysik; wer die Grenze am Brett versteht, versteht jede leichtathletische Flugdisziplin.`
 

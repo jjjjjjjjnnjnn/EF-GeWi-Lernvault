@@ -14,7 +14,7 @@ version: Lesson-v3
 
 
 
-# Lernreise: Lernreise: Lernreise: Lernreise: Superkompensation und die Prinzipien des Ausdauertrainings (L1, Ziel Muendlich)
+# Lernreise: Superkompensation und die Prinzipien des Ausdauertrainings (L1, Ziel Muendlich)
 
 <!-- Lesson v3 9步制架构：Schritt 1至8固定结构；Fehlvorstellung 夹在 Schritt 6 与 7 之间（Parser 自动跳过，不占步数）；支持内嵌 [Werkzeug: <id>] 交互教具；Gating: check/szenario 未过 = Weiter 置灰；XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
@@ -40,7 +40,9 @@ PRETRAINING术语盒(核心5词,先读三遍中德,合书自测中文→德语):
 
 中文在上,德语在下:
 
-- 训练量 — Trainingsumfang:周跑量与时长,建毛细血管与线粒体 / Der Umfang ist die Gesamtmenge der Ausdauerarbeit, etwa Wochenkilometer oder Stunden. Er baut Kapillaren, Mitochondrien und Fettstoffwechsel auf. Ohne Umfang bleibt jede Intensitaet ein Strohfeuer. Mechanismus: Chronische niedrige Reize erhoehen Mitochondriendichte und Kapillarisierung; das Herz schlaegt oekonomischer bei gleichem Tempo. Klausur-Tipp: Nenne Kilometer plus Kapillaren/Mitochondrien; Umfang heisst Grundlage.
+- 训练量 — Trainingsumfang:周跑量与时长,建毛细血管与线粒体
+  / Der Umfang ist die Gesamtmenge der Ausdauerarbeit, etwa Wochenkilometer oder Stunden. Er baut Kapillaren, Mitochondrien und Fettstoffwechsel auf. Ohne Umfang bleibt jede Intensitaet ein Strohfeuer.
+  / Mechanismus: Chronische niedrige Reize erhoehen Mitochondriendichte und Kapillarisierung; das Herz schlaegt oekonomischer bei gleichem Tempo. Klausur-Tipp: Nenne Kilometer plus Kapillaren/Mitochondrien; Umfang heisst Grundlage.
 - 训练强度 — Trainingsintensitaet:强度定哪套系统适应,脉搏配速 lactate 定 / Die Intensitaet ist die Qualitaet der Belastung, gesteuert ueber Puls, Tempo oder Laktat. Sie entscheidet, welches System adaptiert: ruhig baut Basis, scharf hebt VO2max. Falsche Mitte trainiert nichts richtig. Mechanismus: Hohe Reize rekrutieren schnelle Fasern und maximieren Sauerstoffaufnahme; mittlere Reize ermueden nur, ohne Spitzenreiz. Klausur-Tipp: Nenne Steuerung ueber Puls/Tempo plus Systemzuordnung; Mitte ist das Warnwort.
 - 极化训练 — Polarisiertes Training:八成慢加两成猛,几乎不要中间 / Polarisiert heisst 80 Prozent extensiv unter der aeroben Schwelle plus 20 Prozent intensiv ueber der IAS, kaum Schwellentraining. Norwegische und kenianische Modelle belegen Bestzeiten aus genau diesem Mix. Es schuetzt vor Uebertraining. Mechanismus: Trennung von Volumen- und Spitzenreizen laesst Erholung zu; mittlere Zone wuerde beide Anpassungen blockieren. Klausur-Tipp: Schreibe 80/20 plus Zonen plus Schutz; polarisiert ist das Modewort mit Inhalt.
 - 最大摄氧量 — VO2max:每分钟最大用氧量,3分钟以上项目的天花板 / Die maximale Sauerstoffaufnahme ist die groesste pro Minute verwertbare O2-Menge in ml/kg/min. Sie begrenzt jede Leistung ueber 3 Minuten. Intervalltraining hebt sie, Umfang sichert ihre Nutzung. Mechanismus: Herzminutenvolumen mal arterio-venoese Differenz; 4-mal-4-Minuten-Intervalle maximieren die Pumpleistung. Klausur-Tipp: Nenne Einheit ml/kg/min plus Begrenzung; 4x4 ist das Beispiel.
@@ -60,11 +62,11 @@ $$
 HF_{max} = 220 - Alter \quad\text{und}\quad Zone_{GA} < 75\%\,HF_{max} < Zone_{HIIT}
 $$
 
-战役传导:本关承接冲量角逐、乳酸阈值与主导动机三幕,测得出才能说得清,说得清才能赢下来。
+战役传导:本关打通极化配速链:量铺底、强度封顶,测得出分区才说得清配速。
 
 ```diagram
-80 % ruhig [Puls < 153, Aufbau] -> 5 % Schwelle [meiden] -> 15-20 % scharf [Puls > 175, 4x4]
-Regel: Fehler frueh = Grenze | Fehler spaet = Ausnutzung
+ 80 % ruhig [Puls < 155, Aufbau] -> 5 % Schwelle [meiden] -> 15-20 % scharf [Puls > 175, 4x4]
+Regel: Mitte meiden, 80/20 halten | Puls 155/178 trennt die Zonen im Schul-Cup
 ```
 
 `Klausur-Satz: 下打底上刺激掏空中段,这是最好成绩链。`
@@ -83,18 +85,18 @@ BEISPIEL(含教具操作与解答):
 
 [Werkzeug: oral-timer]
 
-AUFGABE (analysieren, AFB II):90秒口述:把5小时周计划分到区间,用153/178脉搏论证达标。达标线:Wochenumfang 32 km, 80/20-Mix, 10-km-Ziel 48:00 min, Grundpuls unter 155。
+AUFGABE (analysieren, AFB II):90秒口述:把5小时周计划分到区间,用155/178脉搏论证达标。达标线:Wochenumfang 32 km, 80/20-Mix, 10-km-Ziel 48:00 min, Grundpuls unter 155。
 
 Target数值目标:Wochenumfang 32 km, 80/20-Mix, 10-km-Ziel 48:00 min, Grundpuls unter 155。
 
 HILFE:
-1. 算最大心率与两区间线。
-2. 按80/20分时长。
-3. 每区开一课配速脉搏。
+1. 先算出最大心率,再定出155以下的慢跑线与178以上的间歇线。
+2. 再按80/20把5小时切成4小时慢跑加1小时强度,保持中间放空。
+3. 最后给每区开出一节课,写清配速与脉搏,并点名它如何兑现32公里与48分目标。
 
 MUSTERLÖSUNG:最大心率205下,4小时配155以下慢跑,1小时配178以上4×4间歇。目标48分靠底子降耗加间歇抬上限,中间放空即达标。
 
-`Klausur-Satz: 目标45公里加42分半证明:80/20配153/175碾压中速。`
+`Klausur-Satz: 目标32公里加48分整证明:80/20配155/178碾压中速。`
 
 ## Schritt 5 — ausprobieren: VERGLEICH技术对抗 Umfangsbetonung (mehr Kilometer, Oekonomie zuerst) vs Intensitaetsbetonung (mehr Intervalle, VO2max zuerst)
 
@@ -130,7 +132,7 @@ CHECK检索默写(自测3题,与答案配对):
    中文纠偏：只有两成该虐,八成该能聊天。天天虐只练出疲劳。
    Korrektur-Satz: `Grundlage heisst plaudern koennen; Haerte gehoert in 20 Prozent Spitze.`
 2. 误解“跑量越多越好。”。
-   中文纠偏：每周至多加一成,-separated 肌腱比心脏慢得多,猛加必伤。
+   中文纠偏：每周至多加一成,肌腱比心脏慢得多,猛加必伤。
    Korrektur-Satz: `Steigere Umfang wellenfoermig plus 10-Prozent-Regel; Sehnen adaptieren langsamer als Herz.`
 
 ## Schritt 7 — szenario: Klausurtransfer — Ausdauertrainer Lauf
@@ -138,14 +140,14 @@ CHECK检索默写(自测3题,与答案配对):
 ROLLE: Du bist Ausdauertrainer Lauf. SITUATION: 在明斯特用德语90秒陈述配比、区间与目标(32 km,48:00)。
 RUBRIC (30 XP):诊断术语8分 | 措施与目标举证7分 | 程序选择对比7分 | 德语表达5分。
 
-`Klausur-Satz: 满分句:停滞因5小时中速上下够不着;80/20可锁定42分半。`
+`Klausur-Satz: 满分句:停滞因5小时中速上下够不着;80/20可锁定48分整。`
 
 ## Schritt 8 — reflexion: Takeaway & Reflexion — 奖杯还是进站检修
 
 TAKEAWAY 1盒(核心总结):
 
 中文:慢练跑快:量盖房,强度上梁,掏空中段拿最好成绩。
-Takeaway-Satz: `Wer die Grenze sichert und die Lage nutzt, holt den Pokal.`
+Takeaway-Satz: `Wer 80/20 trennt und die Mitte meidet, knackt die 48 Minuten auf 32 km.`
 
 `Klausur-Satz: 元认知:耐力是反差训练,会分区就会跑长距离。`
 

@@ -14,9 +14,12 @@ version: Lesson-v3
 
 
 
-# Lernreise: Lernreise: Lernreise: Lernreise: Laktatkurve und aerobe sowie anaerobe Schwelle (L1, Ziel Muendlich)
+# Lernreise: Laktatkurve und aerobe sowie anaerobe Schwelle (L1, Ziel Muendlich)
 
-<!-- Lesson v3 architecture: Schritte 1-8 fixed; Fehlvorstellung between Schritt 6 and 7 (parser skipped); embedded [Werkzeug: <id>]; gating: check/szenario failed = Weiter greyed; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
+<!-- Lesson v3 architecture: Schritte 1-8 fixed; Fehlvorstellung between Schritt 6 and 7 (parser skipped); embedded [Werkzeug: <id>]; gating: check/szenario failed = Weiter greyed; XP: entdecken 5
+  / ausprobieren 15
+  / check 20
+  / szenario 30 -->
 
 ## Schritt 1 — entdecken: Freiburger Leistungsdiagnostik-Labor, Laufband-Stufentest (Marathonkader) — 赛场警报
 
@@ -40,11 +43,21 @@ PRETRAINING术语盒(核心5词,先读三遍中德,合书自测中文→德语):
 
 中文在上,德语在下:
 
-- 乳酸 — Laktat:无氧糖酵解产物,单位mmol/L,既是底物也是疲劳信号 / Laktat ist das Salz der Milchsaeure und Produkt der anaeroben Glykolyse, gemessen in mmol/L Blut. Es faellt an, sobald die Glykolyserate die mitochondriale Verwertung uebersteigt. Entgegen dem Ruf ist es zugleich Puffer-Substrat und Ermuedungsindikator. Mechanismus: Bei hoher Intensitaet produziert die Muskulatur mehr Pyruvat als die Mitochondrien oxidieren; Laktat und H+-Ionen akkumulieren, der pH sinkt, Enzyme hemmen. Klausur-Tipp: Nenne Produkt der anaeroben Glykolyse plus Einheit mmol/L; Schwellen 2 und 4 mmol/L gehoeren dazu.
-- 有氧阈 — Aerobe Schwelle:约2 mmol/L,纯有氧上限,底子训练线 / Die aerobe Schwelle bei ca. 2 mmol/L markiert die Obergrenze rein aerober Arbeit. Darunter wird Laktat vollständig oxidativ abgebaut, die Belastung ist stundenlang haltbar. Sie definiert das Grundlagentraining. Mechanismus: Fett- und Kohlenhydratoxidation decken den ATP-Bedarf; Herzfrequenz und Sauerstoffaufnahme bleiben im Steady State. Klausur-Tipp: Schreibe ca. 2 mmol/L plus rein aerob plus stundenlang; das Wort Grundlage sichert Punkte.
-- 无氧阈 — Anaerobe Schwelle (IAS):约4 mmol/L,最高稳态强度,比赛配速线 / Die individuelle anaerobe Schwelle bei ca. 4 mmol/L ist die hoechste noch im Gleichgewicht haltbare Intensitaet. An ihr halten sich Produktion und Elimination von Laktat gerade die Waage. Sie bestimmt das Renntempo. Mechanismus: Maximales Laktat-Steady-State (maxLASS); darueber kippt die Bilanz, die Kurve steigt exponentiell, der Abbruch folgt in Minuten. Klausur-Tipp: Nenne hoechstes Steady State plus ca. 4 mmol/L plus Renntempo; IAS ist das Kaestchenwort.
-- 稳态 — Steady State:生成与清除平衡,乳酸不堆积 / Der Steady State ist das Gleichgewicht von Laktatbildung und -abbau bei konstanter Belastung. Solange er haelt, bleibt die Blutlaktatkonzentration flach. Sein Verlust ist der Countdown zum Einbruch. Mechanismus: Herz-Kreislauf liefert genug Sauerstoff an die Mitochondrien, Leber und Herz verwerten Laktat als Brennstoff mit. Klausur-Tipp: Definiere Bildung gleich Abbau plus flache Kurve; maxLASS ist die Pruefungsvokabel.
-- 逐级测试 — Stufentest:逐级提速测乳酸绘曲线,定区间的金标准 / Der Stufentest steigert die Laufgeschwindigkeit alle 3 bis 5 Minuten um 0,5 m/s und misst Laktat, Puls und Empfinden. Aus den Punkten entsteht die Kurve mit Knick und Schwellen. Er ist das Standardwerkzeug der Trainingssteuerung. Mechanismus: Jede Stufe erzwingt ein neues Fliessgleichgewicht; der Knick markiert den Punkt, an dem die oxidative Kapazitaet nicht mehr folgt. Klausur-Tipp: Nenne Stufen plus Messgroessen Laktat/Puls plus Kurve; Steuerung ist das Zielwort.
+- 乳酸 — Laktat:无氧糖酵解产物,单位mmol/L,既是底物也是疲劳信号
+  / Laktat ist das Salz der Milchsaeure und Produkt der anaeroben Glykolyse, gemessen in mmol/L Blut. Es faellt an, sobald die Glykolyserate die mitochondriale Verwertung uebersteigt. Entgegen dem Ruf ist es zugleich Puffer-Substrat und Ermuedungsindikator.
+  / Mechanismus: Bei hoher Intensitaet produziert die Muskulatur mehr Pyruvat als die Mitochondrien oxidieren; Laktat und H+-Ionen akkumulieren, der pH sinkt, Enzyme hemmen. Klausur-Tipp: Nenne Produkt der anaeroben Glykolyse plus Einheit mmol/L; Schwellen 2 und 4 mmol/L gehoeren dazu.
+- 有氧阈 — Aerobe Schwelle:约2 mmol/L,纯有氧上限,底子训练线
+  / Die aerobe Schwelle bei ca. 2 mmol/L markiert die Obergrenze rein aerober Arbeit. Darunter wird Laktat vollständig oxidativ abgebaut, die Belastung ist stundenlang haltbar. Sie definiert das Grundlagentraining.
+  / Mechanismus: Fett- und Kohlenhydratoxidation decken den ATP-Bedarf; Herzfrequenz und Sauerstoffaufnahme bleiben im Steady State. Klausur-Tipp: Schreibe ca. 2 mmol/L plus rein aerob plus stundenlang; das Wort Grundlage sichert Punkte.
+- 无氧阈 — Anaerobe Schwelle (IAS):约4 mmol/L,最高稳态强度,比赛配速线
+  / Die individuelle anaerobe Schwelle bei ca. 4 mmol/L ist die hoechste noch im Gleichgewicht haltbare Intensitaet. An ihr halten sich Produktion und Elimination von Laktat gerade die Waage. Sie bestimmt das Renntempo.
+  / Mechanismus: Maximales Laktat-Steady-State (maxLASS); darueber kippt die Bilanz, die Kurve steigt exponentiell, der Abbruch folgt in Minuten. Klausur-Tipp: Nenne hoechstes Steady State plus ca. 4 mmol/L plus Renntempo; IAS ist das Kaestchenwort.
+- 稳态 — Steady State:生成与清除平衡,乳酸不堆积
+  / Der Steady State ist das Gleichgewicht von Laktatbildung und -abbau bei konstanter Belastung. Solange er haelt, bleibt die Blutlaktatkonzentration flach. Sein Verlust ist der Countdown zum Einbruch.
+  / Mechanismus: Herz-Kreislauf liefert genug Sauerstoff an die Mitochondrien, Leber und Herz verwerten Laktat als Brennstoff mit. Klausur-Tipp: Definiere Bildung gleich Abbau plus flache Kurve; maxLASS ist die Pruefungsvokabel.
+- 逐级测试 — Stufentest:逐级提速测乳酸绘曲线,定区间的金标准
+  / Der Stufentest steigert die Laufgeschwindigkeit alle 3 bis 5 Minuten um 0,5 m/s und misst Laktat, Puls und Empfinden. Aus den Punkten entsteht die Kurve mit Knick und Schwellen. Er ist das Standardwerkzeug der Trainingssteuerung.
+  / Mechanismus: Jede Stufe erzwingt ein neues Fliessgleichgewicht; der Knick markiert den Punkt, an dem die oxidative Kapazitaet nicht mehr folgt. Klausur-Tipp: Nenne Stufen plus Messgroessen Laktat/Puls plus Kurve; Steuerung ist das Zielwort.
 
 `Klausur-Satz: Laktat ist Glykolyseprodukt in mmol/L, IAS das hoechste Steady State bei 4,0: Diese zwei Definitionen tragen jede Deutung.`
 
@@ -60,18 +73,19 @@ $$
 \frac{d[La]}{dt} = P_{anaerob}(v) - E_{aerob}(v) \quad\text{mit IAS bei } [La] \approx 4{,}0\,\mathrm{mmol/L}
 $$
 
-战役传导:本关承接冲量角逐、乳酸阈值与主导动机三幕,测得出才能说得清,说得清才能赢下来。
+战役传导:本关打通阈值分区链:阈下打底、阈间磨节奏、阈上只点射,训练把双阈右移到4,6 m/s。
 
 ```diagram
 Stufe 1-3 [flach, aerob] -> Knick [2 zu 4 mmol/L] -> Stufe 5+ [steil, Abbruch]
-Regel: Fehler frueh = Grenze | Fehler spaet = Ausnutzung
+Regel: Knick bei 4,0 mmol/L und 168er Puls lesen | darunter Grundlage bei 4,0 m/s, darueber nur Intervalle
 ```
 
 `Klausur-Satz: Produktion minus Abbau steuert die Kurve; Training verschiebt beide Schwellen nach rechts.`
 
 ## Anekdote & Fun-Fact
 
-**Anekdote / Fun-Fact (DE)**: Der Freiburger Arzt Alois Mader begruendete in den siebziger Jahren die 4-mmol-Schwelle aus Hunderten Laufbandtests. Sein Bild vom Kipp-Punkt wurde spaeter zur individuellen Schwelle verfeinert, weil Untrainierte schon bei 3,2 und Profis erst bei 5,5 kippen. Bis heute haengt in Freiburg die Originalkurve eines Olympiasiegers an der Laborwand.
+**Anekdote
+  / Fun-Fact (DE)**: Der Freiburger Arzt Alois Mader begruendete in den siebziger Jahren die 4-mmol-Schwelle aus Hunderten Laufbandtests. Sein Bild vom Kipp-Punkt wurde spaeter zur individuellen Schwelle verfeinert, weil Untrainierte schon bei 3,2 und Profis erst bei 5,5 kippen. Bis heute haengt in Freiburg die Originalkurve eines Olympiasiegers an der Laborwand.
 
 **中文解读**: 4 mmol 线是 Mader 在弗赖堡跑台上跑出来的,后细化为个人阈:有人3,2就翻,高手5,5才翻。阈是个人账,不是魔法数。
 
@@ -88,9 +102,9 @@ AUFGABE (analysieren, AFB II):Stufentest-Regler: Stufen 3,0 bis 5,0 m/s, lies Kn
 Target数值目标:IAS bei 4,6 m/s, Laktat 4,0 mmol/L, Puls 168/min, Grundlagentempo 4,0 m/s。
 
 HILFE:
-1. Markiere den Knick der Kurve und lies die IAS bei 4,0 mmol/L ab.
-2. Ordne drei Zonen zu: darunter Grundlage, darum Tempo, darueber Intervall.
-3. Leite je Zone eine Einheit mit Tempo und Puls ab.
+1. 先标曲线拐点,在4,0处读出无氧阈,对照4,6 m/s与168脉搏目标定阈值。
+2. 再分三区:4,0 m/s以下打底子、4,4至4,6练阈值节奏、之上只配4×1000间歇,说明区间逻辑。
+3. 最后把配速从4,8降到4,6使d[La]/dt归零,说明稳态守住即达标。
 
 MUSTERLÖSUNG:Der Knick liegt bei 4,6 m/s und 168er Puls; darunter bei 4,0 m/s bleibt Laktat unter 2 mmol/L, also Grundlagenausdauer ueber 60 Minuten. Zwischen 4,4 und 4,6 m/s liegt das Tempotraining an der IAS, darueber nur 4-mal-1000-m-Intervalle. Wer das Renntempo von 4,8 auf 4,6 m/s zuruecknimmt, haelt d[La]/dt bei null und erreicht das Target.
 
@@ -145,7 +159,7 @@ RUBRIC (30 XP):诊断术语8分 | 措施与目标举证7分 | 程序选择对比
 TAKEAWAY 1盒(核心总结):
 
 中文:Wer die Kurve liest, rennt klug: Unter der Schwelle bauen, an der Schwelle feilen, darueber nur spitz dosieren. Die Schwelle ist kein Feind, sondern der Tempomat.
-Takeaway-Satz: `Wer die Grenze sichert und die Lage nutzt, holt den Pokal.`
+Takeaway-Satz: `Wer Kurve liest und Schwelle haelt, trifft 4,6 m/s bei 168er Puls.`
 
 `Klausur-Satz: Metakern: Ausdauer ist angewandte Gleichgewichtsphysiologie; wer Schwellen versteht, versteht jede Langstrecke.`
 

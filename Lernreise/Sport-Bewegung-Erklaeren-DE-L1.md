@@ -14,7 +14,7 @@ version: Lesson-v3
 
 
 
-# Lernreise: Lernreise: Lernreise: Lernreise: Bewegung erklaeren (L1, Ziel Muendlich)
+# Lernreise: Bewegung erklaeren (L1, Ziel Muendlich)
 
 <!-- Lesson v3 Architektur mit 9 Abschnitten: Schritt 1 bis 8 mit fester Struktur; Fehlvorstellung liegt zwischen Schritt 6 und 7 (wird vom Parser uebersprungen, zaehlt nicht als Schritt); unterstuetzt eingebettete [Werkzeug: <id>] Elemente; Gating: check/szenario nicht bestanden = Weiter deaktiviert; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
@@ -38,11 +38,21 @@ Gute **Bewegungserklaerung** folgt **Demonstrieren, Beschreiben, Korrigieren**: 
 
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
-- **Demonstrieren**: Das Demonstrieren ist die normgerechte Vorfuehrung der Zielbewegung in Echtzeit und Zeitlupe. Es liefert das Referenzbild fuer das motorische Lernen. Ohne Bild bleibt jede Anweisung abstrakt.  Mechanismus: Spiegelneurone und visuelles Arbeitsgedaechtnis speichern das Ideal; Schueler vergleichen Ist und Soll am Bild. Klausur-Tipp: Nenne Echtzeit plus Zeitlupe plus Referenzbild; Vormachen schlaegt Erzaehlen.
-- **Beschreiben mit Schluesselworten**: Das Beschreiben verdichtet die Bewegung auf zwei bis drei Schluesselworte wie Huefte hoch, Schultern weg. Es steuert die Aufmerksamkeit waehrend der Ausfuehrung. Lange Saetze blockieren, Worte tragen.  Mechanismus: Verbale Codes fokussieren Aufmerksamkeit auf Knotenpunkte; Ueberfrachtung sprengt das Arbeitsgedaechtnis. Klausur-Tipp: Fordere 2 bis 3 Worte plus Knotenpunkt; Schweigen nach dem Wort ist Methode.
-- **Bewegungsvorstellung**: Die Bewegungsvorstellung ist das innere Bild plus Gefuehl des Ablaufs vor der Ausfuehrung. Je schaerfer sie ist, desto genauer die erste Wiederholung. Erklaeren baut sie, Ueben schaerft sie.  Mechanismus: Mentale Simulation aktiviert dieselben Areale wie Ausfuehrung; ideomotorisches Training festigt die Spur. Klausur-Tipp: Definiere inneres Bild plus Gefuehl; Vorstellung steuert Ausfuehrung.
-- **Korrekturimpuls**: Der Korrekturimpuls ist die einzelne, sofort umsetzbare Anweisung nach Beobachtung, etwa Finger spreizen. Er trifft genau einen Fehler zur Zeit. Mehrere Baustellen gleichzeitig loeschen jede.  Mechanismus: Externer Fokus ( signup Ziel) wirkt besser als interner; ein Reiz passt ins Arbeitsgedaechtnis. Klausur-Tipp: Nenne einer zur Zeit plus sofort umsetzbar; Lob-Korrektur-Lob als Form.
-- **Methodische Reihe**: Die methodische Reihe ordnet Voruebungen vom Leichten zum Schweren, etwa Stuetz, Bank, Wand, frei. Sie sichert Angstabbau und Erfolgserlebnisse. Springen erzeugt Angst und Fehler.  Mechanismus: Chunks und Naehe zum Ziel halten die kognitive Last niedrig; jede Stufe automatisiert ein Teilproblem. Klausur-Tipp: Nenne vom Leichten zum Schweren plus Beispielkette; Sicherheit stuetzt Lernen.
+- **Demonstrieren**: Das Demonstrieren ist die normgerechte Vorfuehrung der Zielbewegung in Echtzeit und Zeitlupe. Es liefert das Referenzbild fuer das motorische Lernen. Ohne Bild bleibt jede Anweisung abstrakt.
+  / Mechanismus: Spiegelneurone und visuelles Arbeitsgedaechtnis speichern das Ideal; Schueler vergleichen Ist und Soll am Bild.
+  / Klausur-Tipp: Nenne Echtzeit plus Zeitlupe plus Referenzbild; Vormachen schlaegt Erzaehlen.
+- **Beschreiben mit Schluesselworten**: Das Beschreiben verdichtet die Bewegung auf zwei bis drei Schluesselworte wie Huefte hoch, Schultern weg. Es steuert die Aufmerksamkeit waehrend der Ausfuehrung. Lange Saetze blockieren, Worte tragen.
+  / Mechanismus: Verbale Codes fokussieren Aufmerksamkeit auf Knotenpunkte; Ueberfrachtung sprengt das Arbeitsgedaechtnis.
+  / Klausur-Tipp: Fordere 2 bis 3 Worte plus Knotenpunkt; Schweigen nach dem Wort ist Methode.
+- **Bewegungsvorstellung**: Die Bewegungsvorstellung ist das innere Bild plus Gefuehl des Ablaufs vor der Ausfuehrung. Je schaerfer sie ist, desto genauer die erste Wiederholung. Erklaeren baut sie, Ueben schaerft sie.
+  / Mechanismus: Mentale Simulation aktiviert dieselben Areale wie Ausfuehrung; ideomotorisches Training festigt die Spur.
+  / Klausur-Tipp: Definiere inneres Bild plus Gefuehl; Vorstellung steuert Ausfuehrung.
+- **Korrekturimpuls**: Der Korrekturimpuls ist die einzelne, sofort umsetzbare Anweisung nach Beobachtung, etwa Finger spreizen. Er trifft genau einen Fehler zur Zeit. Mehrere Baustellen gleichzeitig loeschen jede.
+  / Mechanismus: Externer Fokus (Ziel) wirkt besser als interner; ein Reiz passt ins Arbeitsgedaechtnis.
+  / Klausur-Tipp: Nenne einer zur Zeit plus sofort umsetzbar; Lob-Korrektur-Lob als Form.
+- **Methodische Reihe**: Die methodische Reihe ordnet Voruebungen vom Leichten zum Schweren, etwa Stuetz, Bank, Wand, frei. Sie sichert Angstabbau und Erfolgserlebnisse. Springen erzeugt Angst und Fehler.
+  / Mechanismus: Chunks und Naehe zum Ziel halten die kognitive Last niedrig; jede Stufe automatisiert ein Teilproblem.
+  / Klausur-Tipp: Nenne vom Leichten zum Schweren plus Beispielkette; Sicherheit stuetzt Lernen.
 
 `Klausur-Satz: Demonstrieren liefert das Bild, Schluesselworte den Fokus: Diese Definitionen tragen jede Lehrprobe.`
 
@@ -60,7 +70,7 @@ Vier Minuten Rede ohne Bild maximieren den Nenner und minimieren den Zaehler: Al
 
 ```diagram
 Demonstrieren [Bild] -> Beschreiben [3 Worte] -> Ueben [Versuch] -> Korrigieren [1 Impuls]
-Regel: Fehler frueh = Grenze | Fehler spaet = Ausnutzung
+Regel: Bild in 20 s zuerst sichern | ein Impuls je Versuch bei 5 Versuchen
 ```
 
 `Klausur-Satz: Bild mal Wort mal Wiederholung durch Angst plus Flut erklaert jeden Lernbruch.`
@@ -138,7 +148,7 @@ RUBRIC (30 XP): Diagnose mit Fachbegriffen (8 XP) | Massnahme mit Target-Beleg (
 
 TAKEAWAY (Kernzusammenfassung):
 
-Zeige kurz, sprich knapp, korrigiere einzeln: Das Bild traegt, das Wort lenkt, der Versuch entscheidet. Wer die Reihe haelt, stellt die Klasse auf die Haende. Takeaway-Satz: `Wer die Grenze sichert und die Lage nutzt, holt den Pokal.`
+Zeige kurz, sprich knapp, korrigiere einzeln: Das Bild traegt, das Wort lenkt, der Versuch entscheidet. Wer die Reihe haelt, stellt die Klasse auf die Haende. Takeaway-Satz: `Wer Bild zeigt und ein Wort setzt, stellt die Klasse in Muenster auf.`
 
 `Klausur-Satz: Metakern: Lehren ist Last steuern; wer Reihen baut, versteht jeden Unterricht.`
 

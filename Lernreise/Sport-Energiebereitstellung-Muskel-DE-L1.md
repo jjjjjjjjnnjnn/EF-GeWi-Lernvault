@@ -14,7 +14,7 @@ version: Lesson-v3
 
 
 
-# Lernreise: Lernreise: Lernreise: Lernreise: Energiebereitstellung im Muskel (L1, Ziel Klausur)
+# Lernreise: Energiebereitstellung im Muskel (L1, Ziel Klausur)
 
 <!-- Lesson v3 Architektur mit 9 Abschnitten: Schritt 1 bis 8 mit fester Struktur; Fehlvorstellung liegt zwischen Schritt 6 und 7 (wird vom Parser uebersprungen, zaehlt nicht als Schritt); unterstuetzt eingebettete [Werkzeug: <id>] Elemente; Gating: check/szenario nicht bestanden = Weiter deaktiviert; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
@@ -38,11 +38,21 @@ Der Muskel kennt drei Tankanlagen: **Kreatinphosphat** fuer Sekunden, **Glykolys
 
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
-- **ATP**: ATP ist die einzige direkt nutzbare Energiewaehrung der Muskelzelle; jede Myosinbewegung spaltet es zu ADP. Der Vorrat reicht nur 2 bis 3 Sekunden, danach muss Resynthese liefern. Ohne Nachschub steht der Muskel in Sekunden.  Mechanismus: ATP-Hydrolyse treibt den Querbrueckenzyklus; Kreatinkinase, Glykolyse und Atmungskette resynthetisieren ATP mit fallender Leistung und steigender Kapazitaet. Klausur-Tipp: Nenne einzige Waehrung plus 2-Sekunden-Vorrat; Nachschub heisst Resynthese.
-- **Kreatinphosphat**: Kreatinphosphat ist der schnellste ATP-Puffer und deckt maximale Belastung 6 bis 10 Sekunden. Es spendet sein Phosphat ohne Sauerstoff und ohne Laktat. Sprinter und Gewichtheber leben aus diesem Speicher.  Mechanismus: Kreatinkinase uebertraegt Phosphat auf ADP; volle Speicher nach 3 Minuten Pause, leere nach einem 100-m-Sprint. Klausur-Tipp: Schreibe 6 bis 10 Sekunden plus ohne Laktat; alaktazid ist das Signalwort.
-- **Anaerobe Glykolyse**: Die anaerobe Glykolyse gewinnt aus Glukose schnell ATP unter Bildung von Laktat und reicht 40 bis 90 Sekunden. Sie traegt das 400-m-Rennen durch die zweite Kurve. Ihr Preis ist die Azidose.  Mechanismus: Zytoplasmatische Spaltung zu Pyruvat und Laktat; H+-Anstau hemmt Phosphofruktokinase und die Kontraktion. Klausur-Tipp: Nenne 40 bis 90 Sekunden plus Laktat plus Azidose; laktazid ist Pflicht.
-- **Oxidative Phosphorylierung**: Die Oxidation verbrennt Kohlenhydrate und Fette mit Sauerstoff in den Mitochondrien und liefert fast unbegrenzt ATP. Sie braucht Minuten zum Hochfahren und traegt alles ab 3 Minuten. Marathonlaeufer rennen fast rein oxidativ.  Mechanismus: Citratzyklus plus Atmungskette mit 36 ATP je Glukose; Fett liefert noch mehr, aber langsamer. Klausur-Tipp: Betone mit Sauerstoff plus unbegrenzt plus langsam; aerob heisst ausdauernd, nicht stark.
-- **Energiemischung**: Die Energiemischung ist der zeitabhaengige Anteil aller drei Systeme an der ATP-Resynthese. Kein Rennen nutzt nur ein System; 400 m mischen etwa 20 Prozent alaktazid, 55 Prozent laktazid, 25 Prozent aerob. Trainingsreize zielen auf je einen Anteil.  Mechanismus: Flaschenhals ist die Resyntheserate je System; Intervalldauer und Pause waehlen, welcher Speicher adaptiert. Klausur-Tipp: Nenne Mischanteile plus Zeitabhaengigkeit; kein Entweder-oder, sondern Prozent.
+- **ATP**: ATP ist die einzige direkt nutzbare Energiewaehrung der Muskelzelle; jede Myosinbewegung spaltet es zu ADP. Der Vorrat reicht nur 2 bis 3 Sekunden, danach muss Resynthese liefern. Ohne Nachschub steht der Muskel in Sekunden.
+  / Mechanismus: ATP-Hydrolyse treibt den Querbrueckenzyklus; Kreatinkinase, Glykolyse und Atmungskette resynthetisieren ATP mit fallender Leistung und steigender Kapazitaet.
+  / Klausur-Tipp: Nenne einzige Waehrung plus 2-Sekunden-Vorrat; Nachschub heisst Resynthese.
+- **Kreatinphosphat**: Kreatinphosphat ist der schnellste ATP-Puffer und deckt maximale Belastung 6 bis 10 Sekunden. Es spendet sein Phosphat ohne Sauerstoff und ohne Laktat. Sprinter und Gewichtheber leben aus diesem Speicher.
+  / Mechanismus: Kreatinkinase uebertraegt Phosphat auf ADP; volle Speicher nach 3 Minuten Pause, leere nach einem 100-m-Sprint.
+  / Klausur-Tipp: Schreibe 6 bis 10 Sekunden plus ohne Laktat; alaktazid ist das Signalwort.
+- **Anaerobe Glykolyse**: Die anaerobe Glykolyse gewinnt aus Glukose schnell ATP unter Bildung von Laktat und reicht 40 bis 90 Sekunden. Sie traegt das 400-m-Rennen durch die zweite Kurve. Ihr Preis ist die Azidose.
+  / Mechanismus: Zytoplasmatische Spaltung zu Pyruvat und Laktat; H+-Anstau hemmt Phosphofruktokinase und die Kontraktion.
+  / Klausur-Tipp: Nenne 40 bis 90 Sekunden plus Laktat plus Azidose; laktazid ist Pflicht.
+- **Oxidative Phosphorylierung**: Die Oxidation verbrennt Kohlenhydrate und Fette mit Sauerstoff in den Mitochondrien und liefert fast unbegrenzt ATP. Sie braucht Minuten zum Hochfahren und traegt alles ab 3 Minuten. Marathonlaeufer rennen fast rein oxidativ.
+  / Mechanismus: Citratzyklus plus Atmungskette mit 36 ATP je Glukose; Fett liefert noch mehr, aber langsamer.
+  / Klausur-Tipp: Betone mit Sauerstoff plus unbegrenzt plus langsam; aerob heisst ausdauernd, nicht stark.
+- **Energiemischung**: Die Energiemischung ist der zeitabhaengige Anteil aller drei Systeme an der ATP-Resynthese. Kein Rennen nutzt nur ein System; 400 m mischen etwa 20 Prozent alaktazid, 55 Prozent laktazid, 25 Prozent aerob. Trainingsreize zielen auf je einen Anteil.
+  / Mechanismus: Flaschenhals ist die Resyntheserate je System; Intervalldauer und Pause waehlen, welcher Speicher adaptiert.
+  / Klausur-Tipp: Nenne Mischanteile plus Zeitabhaengigkeit; kein Entweder-oder, sondern Prozent.
 
 `Klausur-Satz: ATP ist die einzige Waehrung mit 2-Sekunden-Vorrat, PCr der 8-Sekunden-Puffer: Diese Definitionen tragen jede Bilanz.`
 
@@ -60,7 +70,7 @@ Faellt P_PCr nach 8 Sekunden auf null und P_gly deckt nur 70 Prozent, bricht das
 
 ```diagram
 0-8 s [PCr maximal] -> 8-60 s [Glykolyse traegt] -> ab 60 s [Oxidation uebernimmt]
-Regel: Fehler frueh = Grenze | Fehler spaet = Ausnutzung
+Regel: PCr 8 s maximal nutzen | Glykolyse 55 Prozent fuer 46,8 s dosieren
 ```
 
 `Klausur-Satz: PCr startet, Glykolyse traegt, Oxidation sichert: Die Summe minus Ermuedung erklaert jede 400-m-Uhr.`
@@ -138,7 +148,7 @@ RUBRIC (30 XP): Diagnose mit Fachbegriffen (8 XP) | Massnahme mit Target-Beleg (
 
 TAKEAWAY (Kernzusammenfassung):
 
-Wer Tanks versteht, rennt taktisch: Sekunden aus PCr, eine Minute aus Glykolyse, Dauer aus Oxidation. Training fuellt den Tank, Taktik leert ihn klug. Takeaway-Satz: `Wer die Grenze sichert und die Lage nutzt, holt den Pokal.`
+Wer Tanks versteht, rennt taktisch: Sekunden aus PCr, eine Minute aus Glykolyse, Dauer aus Oxidation. Training fuellt den Tank, Taktik leert ihn klug. Takeaway-Satz: `Wer PCr spart und Glykolyse dosiert, haelt 46,8 s bei 14 mmol/L in Leverkusen.`
 
 `Klausur-Satz: Metakern: Energiestoffwechsel ist Haushaltsfuehrung der Zelle; wer Bilanzen liest, versteht jede Disziplin.`
 

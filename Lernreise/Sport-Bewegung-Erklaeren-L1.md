@@ -14,9 +14,12 @@ version: Lesson-v3
 
 
 
-# Lernreise: Lernreise: Lernreise: Lernreise: Bewegung erklären (L1, Ziel Muendlich)
+# Lernreise: Bewegung erklären (L1, Ziel Muendlich)
 
-<!-- Lesson v3 9步制架构：Schritt 1至8固定结构；Fehlvorstellung 夹在 Schritt 6 与 7 之间（Parser 自动跳过，不占步数）；支持内嵌 [Werkzeug: <id>] 交互教具；Gating: check/szenario 未过 = Weiter 置灰；XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
+<!-- Lesson v3 9步制架构：Schritt 1至8固定结构；Fehlvorstellung 夹在 Schritt 6 与 7 之间（Parser 自动跳过，不占步数）；支持内嵌 [Werkzeug: <id>] 交互教具；Gating: check/szenario 未过 = Weiter 置灰；XP: entdecken 5
+  / ausprobieren 15
+  / check 20
+  / szenario 30 -->
 
 ## Schritt 1 — entdecken: Bielefelder Schul-Sporthalle, Handstand-Lehrprobe — 赛场警报
 
@@ -40,11 +43,21 @@ PRETRAINING术语盒(核心5词,先读三遍中德,合书自测中文→德语):
 
 中文在上,德语在下:
 
-- 演示 — Demonstrieren:标准示范常速加慢放,给参照图像 / Das Demonstrieren ist die normgerechte Vorfuehrung der Zielbewegung in Echtzeit und Zeitlupe. Es liefert das Referenzbild fuer das motorische Lernen. Ohne Bild bleibt jede Anweisung abstrakt. Mechanismus: Spiegelneurone und visuelles Arbeitsgedaechtnis speichern das Ideal; Schueler vergleichen Ist und Soll am Bild. Klausur-Tipp: Nenne Echtzeit plus Zeitlupe plus Referenzbild; Vormachen schlaegt Erzaehlen.
-- 关键词描述 — Beschreiben mit Schluesselworten:压到两三个词钉关键点,长句堵车短词带路 / Das Beschreiben verdichtet die Bewegung auf zwei bis drei Schluesselworte wie Huefte hoch, Schultern weg. Es steuert die Aufmerksamkeit waehrend der Ausfuehrung. Lange Saetze blockieren, Worte tragen. Mechanismus: Verbale Codes fokussieren Aufmerksamkeit auf Knotenpunkte; Ueberfrachtung sprengt das Arbeitsgedaechtnis. Klausur-Tipp: Fordere 2 bis 3 Worte plus Knotenpunkt; Schweigen nach dem Wort ist Methode.
-- 动作表象 — Bewegungsvorstellung:做之前心里有图有感,图越清第一次越准 / Die Bewegungsvorstellung ist das innere Bild plus Gefuehl des Ablaufs vor der Ausfuehrung. Je schaerfer sie ist, desto genauer die erste Wiederholung. Erklaeren baut sie, Ueben schaerft sie. Mechanismus: Mentale Simulation aktiviert dieselben Areale wie Ausfuehrung; ideomotorisches Training festigt die Spur. Klausur-Tipp: Definiere inneres Bild plus Gefuehl; Vorstellung steuert Ausfuehrung.
-- 纠正指令 — Korrekturimpuls:一次只纠一条,能立刻照做,先扬后纠 / Der Korrekturimpuls ist die einzelne, sofort umsetzbare Anweisung nach Beobachtung, etwa Finger spreizen. Er trifft genau einen Fehler zur Zeit. Mehrere Baustellen gleichzeitig loeschen jede. Mechanismus: Externer Fokus ( signup Ziel) wirkt besser als interner; ein Reiz passt ins Arbeitsgedaechtnis. Klausur-Tipp: Nenne einer zur Zeit plus sofort umsetzbar; Lob-Korrektur-Lob als Form.
-- 方法序列 — Methodische Reihe:从易到难排辅助练习,铺台阶去恐惧 / Die methodische Reihe ordnet Voruebungen vom Leichten zum Schweren, etwa Stuetz, Bank, Wand, frei. Sie sichert Angstabbau und Erfolgserlebnisse. Springen erzeugt Angst und Fehler. Mechanismus: Chunks und Naehe zum Ziel halten die kognitive Last niedrig; jede Stufe automatisiert ein Teilproblem. Klausur-Tipp: Nenne vom Leichten zum Schweren plus Beispielkette; Sicherheit stuetzt Lernen.
+- 演示 — Demonstrieren:标准示范常速加慢放,给参照图像
+  / Das Demonstrieren ist die normgerechte Vorfuehrung der Zielbewegung in Echtzeit und Zeitlupe. Es liefert das Referenzbild fuer das motorische Lernen. Ohne Bild bleibt jede Anweisung abstrakt.
+  / Mechanismus: Spiegelneurone und visuelles Arbeitsgedaechtnis speichern das Ideal; Schueler vergleichen Ist und Soll am Bild. Klausur-Tipp: Nenne Echtzeit plus Zeitlupe plus Referenzbild; Vormachen schlaegt Erzaehlen.
+- 关键词描述 — Beschreiben mit Schluesselworten:压到两三个词钉关键点,长句堵车短词带路
+  / Das Beschreiben verdichtet die Bewegung auf zwei bis drei Schluesselworte wie Huefte hoch, Schultern weg. Es steuert die Aufmerksamkeit waehrend der Ausfuehrung. Lange Saetze blockieren, Worte tragen.
+  / Mechanismus: Verbale Codes fokussieren Aufmerksamkeit auf Knotenpunkte; Ueberfrachtung sprengt das Arbeitsgedaechtnis. Klausur-Tipp: Fordere 2 bis 3 Worte plus Knotenpunkt; Schweigen nach dem Wort ist Methode.
+- 动作表象 — Bewegungsvorstellung:做之前心里有图有感,图越清第一次越准
+  / Die Bewegungsvorstellung ist das innere Bild plus Gefuehl des Ablaufs vor der Ausfuehrung. Je schaerfer sie ist, desto genauer die erste Wiederholung. Erklaeren baut sie, Ueben schaerft sie.
+  / Mechanismus: Mentale Simulation aktiviert dieselben Areale wie Ausfuehrung; ideomotorisches Training festigt die Spur. Klausur-Tipp: Definiere inneres Bild plus Gefuehl; Vorstellung steuert Ausfuehrung.
+- 纠正指令 — Korrekturimpuls:一次只纠一条,能立刻照做,先扬后纠
+  / Der Korrekturimpuls ist die einzelne, sofort umsetzbare Anweisung nach Beobachtung, etwa Finger spreizen. Er trifft genau einen Fehler zur Zeit. Mehrere Baustellen gleichzeitig loeschen jede.
+  / Mechanismus: Externer Fokus (Ziel) wirkt besser als interner; ein Reiz passt ins Arbeitsgedaechtnis. Klausur-Tipp: Nenne einer zur Zeit plus sofort umsetzbar; Lob-Korrektur-Lob als Form.
+- 方法序列 — Methodische Reihe:从易到难排辅助练习,铺台阶去恐惧
+  / Die methodische Reihe ordnet Voruebungen vom Leichten zum Schweren, etwa Stuetz, Bank, Wand, frei. Sie sichert Angstabbau und Erfolgserlebnisse. Springen erzeugt Angst und Fehler.
+  / Mechanismus: Chunks und Naehe zum Ziel halten die kognitive Last niedrig; jede Stufe automatisiert ein Teilproblem. Klausur-Tipp: Nenne vom Leichten zum Schweren plus Beispielkette; Sicherheit stuetzt Lernen.
 
 `Klausur-Satz: 演示给图关键词给焦,两定义撑起试讲。`
 
@@ -60,18 +73,19 @@ $$
 Lernfortschritt = \frac{Bild \times Wort \times Wiederholung}{Angst + \text{Infoflut}}
 $$
 
-战役传导:本关承接冲量角逐、乳酸阈值与主导动机三幕,测得出才能说得清,说得清才能赢下来。
+战役传导:本关打通表象负荷链:图像建表象、关键词钉注意点、单条纠正降负荷,90秒立住倒立。
 
 ```diagram
 Demonstrieren [Bild] -> Beschreiben [3 Worte] -> Ueben [Versuch] -> Korrigieren [1 Impuls]
-Regel: Fehler frueh = Grenze | Fehler spaet = Ausnutzung
+Regel: Bild in 20 s zuerst sichern | ein Impuls je Versuch bei 4 Versuchen
 ```
 
 `Klausur-Satz: 图乘词乘练除以恐惧加信息,解释一切学崩。`
 
 ## Anekdote & Fun-Fact
 
-**Anekdote / Fun-Fact (DE)**: Der Sportpaedagoge Ommo Grupe forderte 1969, jede Sportstunde muesse erst zeigen, dann sprechen. Seine Hospitationen zeigten: Lehrer, die laenger als 90 Sekunden redeten, verloren die Haelfte der Klasse an Unruhe. Sein 90-Sekunden-Limit steht bis heute in jedem Referendars-Skript.
+**Anekdote
+  / Fun-Fact (DE)**: Der Sportpaedagoge Ommo Grupe forderte 1969, jede Sportstunde muesse erst zeigen, dann sprechen. Seine Hospitationen zeigten: Lehrer, die laenger als 90 Sekunden redeten, verloren die Haelfte der Klasse an Unruhe. Sein 90-Sekunden-Limit steht bis heute in jedem Referendars-Skript.
 
 **中文解读**: Ommo Grupe 1969年要求先做后讲:连讲超90秒,半个班开始乱动。这条90秒线至今写在师范生手册里。
 
@@ -88,13 +102,13 @@ AUFGABE (analysieren, AFB II):90秒口述:讲倒立,演示加三词加一条纠�
 Target数值目标:Demo 20 s, 3 Schluesselworte, 4 Versuche, Zielbild Schulter weg。
 
 HILFE:
-1. 先常速后慢放,一节点一词。
-2. 给三词要第一次试。
-3. 只纠一条,先扬后纠。
+1. 先常速后慢放演示20秒,一节点配一词,对照肩推开目标图像,建倒立表象。
+2. 再给髋高手远三个关键词,要第一次尝试,钉住注意力防信息过载。
+3. 最后只纠一条可立刻照做的错误,先扬后纠,四次尝试每次一纠正即达标。
 
 MUSTERLÖSUNG:常速加慢放给图,髋高手远指撑三词钉点,四次尝试每次一纠正即达标。
 
-`Klausur-Satz: 目标演示加三词加五次证明:少说多立。`
+`Klausur-Satz: 目标演示加三词加四次证明:少说多立。`
 
 ## Schritt 5 — ausprobieren: VERGLEICH技术对抗 Ganzheitsmethode (gleich frei, Bild zuerst, Mut zuerst) vs Teillernmethode (Reihe Bank-Wand-frei, Sicherheit zuerst)
 
@@ -145,7 +159,7 @@ RUBRIC (30 XP):诊断术语8分 | 措施与目标举证7分 | 程序选择对比
 TAKEAWAY 1盒(核心总结):
 
 中文:短演示、精短词、单条纠:图扛大梁,词指方向,练定胜负。
-Takeaway-Satz: `Wer die Grenze sichert und die Lage nutzt, holt den Pokal.`
+Takeaway-Satz: `Wer Bild zeigt und ein Wort setzt, stellt die Klasse in 4 Versuchen auf.`
 
 `Klausur-Satz: 元认知:教学是管负荷,会排梯子就会上课。`
 

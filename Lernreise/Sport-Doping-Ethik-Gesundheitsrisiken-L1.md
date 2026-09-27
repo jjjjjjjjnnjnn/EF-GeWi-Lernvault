@@ -14,9 +14,12 @@ version: Lesson-v3
 
 
 
-# Lernreise: Lernreise: Lernreise: Lernreise: Doping Ethik und Gesundheitsrisiken (L1, Ziel Klausur)
+# Lernreise: Doping Ethik und Gesundheitsrisiken (L1, Ziel Klausur)
 
-<!-- Lesson v3: Schritt 1-8 feste Struktur; Fehlvorstellung zwischen Schritt 6 und 7 (Parser skip); [Werkzeug: <id>] interaktiv; Gating: check/szenario nicht bestanden = Weiter grau; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
+<!-- Lesson v3: Schritt 1-8 feste Struktur; Fehlvorstellung zwischen Schritt 6 und 7 (Parser skip); [Werkzeug: <id>] interaktiv; Gating: check/szenario nicht bestanden = Weiter grau; XP: entdecken 5
+  / ausprobieren 15
+  / check 20
+  / szenario 30 -->
 
 ## Schritt 1 — entdecken: Koelner Sporthochschule, Anti-Doping-Hoersaal (NADA-Planspiel) — 赛场警报
 
@@ -40,11 +43,21 @@ PRETRAINING术语盒(核心5词,先读三遍中德,合书自测中文→德语):
 
 中文在上,德语在下:
 
-- doping — Doping:违反WADA清单用禁药禁法,持有即罚 / Doping ist der Verstoss gegen die Anti-Doping-Regeln durch verbotene Substanzen oder Methoden laut WADA-Liste. Es umfasst Einnahme, Besitz und Verschweigen. Schon der Besitz ohne Einnahme ist strafbar. Mechanismus: Anabolika binden Androgenrezeptoren, EPO hebt Haematokrit, Stimulanzien blockieren Ermuedungssignale; alle veraendern Physiologie mit Nebenwirkungskette. Klausur-Tipp: Nenne WADA-Liste plus schon Besitz strafbar; Fairness plus Gesundheit als Doppelbegruendung.
-- 同化类固醇 — Anabolika:人工睾酮促肌蛋白,也伤肝伤心改性情,青少年停长高 / Anabol-androgene Steroide sind kuenstliche Testosteron-Abkoemmlinge zum Muskelaufbau. Sie heben Proteinsynthese, aber auch Blutdruck, Leberwerte und Aggression. Bei Jugendlichen stoppen sie das Wachstum. Mechanismus: Rezeptorbindung erhoeht Proteinsynthese und Talgdruesen; Hormonachse wird unterdrueckt, Hoden schrumpfen, Herz hypertrophiert. Klausur-Tipp: Nenne Muskel plus Leber/Herz/Psyche; irreversibel bei Jugend als Warnwort.
-- EPO与血液doping — EPO und Blutdoping:增红细胞提携氧,血变稠堵到心梗,50以上血细胞比容露馅 / EPO und Eigenbluttransfusionen erhoehen rote Blutkoerperchen und Sauerstofftransport. Sie versprechen Ausdauer, verdicken aber das Blut bis zum Infarkt. Der Haematokrit verrät sie. Mechanismus: Mehr Erythrozyten heben VO2, aber Viskositaet plus Thromboserisiko; naechtliche Herzstillstaende bei Radprofis sind dokumentiert. Klausur-Tipp: Nenne Sauerstoff plus Viskositaet plus Infarkt; Haematokrit ueber 50 als Zahl.
-- NADA法规 — NADA-Code:行踪申报飞行检查严格责任,最高禁赛四年 / Der NADA-Code regelt Meldepflichten, Kontrollen und Sperren bis vier Jahre. Athleten im Testpool muessen Aufenthalte melden. Verweigerung zaehlt wie positiv. Mechanismus: Whereabouts plus unangekuendigte Kontrollen plus Strict Liability: Der Koerper gehoert dem Athleten, Ausreden zaehlen nicht. Klausur-Tipp: Nenne Meldepflicht plus Strict Liability plus 4 Jahre; Verantwortung beim Athleten.
-- 预防 — Praevention:事前价值观加医学告知加密报通道,比事后罚管用 / Praevention verbindet Werteerziehung, Medizinaufklaerung und geschuetzte Meldestrukturen. Sie wirkt vor der Ampulle, nicht nach dem Befund. Anonyme Hotlines senken die Hemmschwelle. Mechanismus: Selbstwirksamkeit plus Wissen plus Ansprechpartner erhoehen Widerstand gegen Gruppendruck; Fruehintervention stoppt Karrieren des Schweigens. Klausur-Tipp: Betone vorher statt nachher plus Ansprechpartner; Mut zur Meldung als Ziel.
+- doping — Doping:违反WADA清单用禁药禁法,持有即罚
+  / Doping ist der Verstoss gegen die Anti-Doping-Regeln durch verbotene Substanzen oder Methoden laut WADA-Liste. Es umfasst Einnahme, Besitz und Verschweigen. Schon der Besitz ohne Einnahme ist strafbar.
+  / Mechanismus: Anabolika binden Androgenrezeptoren, EPO hebt Haematokrit, Stimulanzien blockieren Ermuedungssignale; alle veraendern Physiologie mit Nebenwirkungskette. Klausur-Tipp: Nenne WADA-Liste plus schon Besitz strafbar; Fairness plus Gesundheit als Doppelbegruendung.
+- 同化类固醇 — Anabolika:人工睾酮促肌蛋白,也伤肝伤心改性情,青少年停长高
+  / Anabol-androgene Steroide sind kuenstliche Testosteron-Abkoemmlinge zum Muskelaufbau. Sie heben Proteinsynthese, aber auch Blutdruck, Leberwerte und Aggression. Bei Jugendlichen stoppen sie das Wachstum.
+  / Mechanismus: Rezeptorbindung erhoeht Proteinsynthese und Talgdruesen; Hormonachse wird unterdrueckt, Hoden schrumpfen, Herz hypertrophiert. Klausur-Tipp: Nenne Muskel plus Leber/Herz/Psyche; irreversibel bei Jugend als Warnwort.
+- EPO与血液doping — EPO und Blutdoping:增红细胞提携氧,血变稠堵到心梗,50以上血细胞比容露馅
+  / EPO und Eigenbluttransfusionen erhoehen rote Blutkoerperchen und Sauerstofftransport. Sie versprechen Ausdauer, verdicken aber das Blut bis zum Infarkt. Der Haematokrit verrät sie.
+  / Mechanismus: Mehr Erythrozyten heben VO2, aber Viskositaet plus Thromboserisiko; naechtliche Herzstillstaende bei Radprofis sind dokumentiert. Klausur-Tipp: Nenne Sauerstoff plus Viskositaet plus Infarkt; Haematokrit ueber 50 als Zahl.
+- NADA法规 — NADA-Code:行踪申报飞行检查严格责任,最高禁赛四年
+  / Der NADA-Code regelt Meldepflichten, Kontrollen und Sperren bis vier Jahre. Athleten im Testpool muessen Aufenthalte melden. Verweigerung zaehlt wie positiv.
+  / Mechanismus: Whereabouts plus unangekuendigte Kontrollen plus Strict Liability: Der Koerper gehoert dem Athleten, Ausreden zaehlen nicht. Klausur-Tipp: Nenne Meldepflicht plus Strict Liability plus 4 Jahre; Verantwortung beim Athleten.
+- 预防 — Praevention:事前价值观加医学告知加密报通道,比事后罚管用
+  / Praevention verbindet Werteerziehung, Medizinaufklaerung und geschuetzte Meldestrukturen. Sie wirkt vor der Ampulle, nicht nach dem Befund. Anonyme Hotlines senken die Hemmschwelle.
+  / Mechanismus: Selbstwirksamkeit plus Wissen plus Ansprechpartner erhoehen Widerstand gegen Gruppendruck; Fruehintervention stoppt Karrieren des Schweigens. Klausur-Tipp: Betone vorher statt nachher plus Ansprechpartner; Mut zur Meldung als Ziel.
 
 `Klausur-Satz: Doping heisst WADA-Verstoss plus Besitz strafbar, Strict Liability traegt die Verantwortung: Diese Definitionen tragen jedes Urteil.`
 
@@ -60,18 +73,19 @@ $$
 Risiko = \frac{Druck \times Verfuegbarkeit \times Schweigen}{Wissen + Kontrolle + Meldestruktur}
 $$
 
-战役传导:本关承接冲量角逐、乳酸阈值与主导动机三幕,测得出才能说得清,说得清才能赢下来。
+战役传导:本关打通压力保护链:压力加沉默推高风险,知识加检查加密报压低风险,科隆听证席上见分晓。
 
 ```diagram
 Druck [Gold, Kader] -> Tat [Ampulle] -> Schaden [Herz, Leber] | Schutz [Hotline, Kontrolle]
-Regel: Fehler frueh = Grenze | Fehler spaet = Ausnutzung
+Regel: Besitz bereits Verstoss mit Strict Liability | 4 Jahre Sperre plus Hotline mit 12 Faellen
 ```
 
 `Klausur-Satz: Druck mal Schweigen durch Schutz plus Kontrolle erklaert jedes Risiko.`
 
 ## Anekdote & Fun-Fact
 
-**Anekdote / Fun-Fact (DE)**: 1998 schloss die Polizei bei der Festina-Affäre einen ganzen Tour-Tross mit Koffern voller EPO und Wachstumshormonen. Der Masseur Willy Voet plauderte, das Kartell flog auf, das Rennen kollabierte. Seitdem gilt Doping nicht mehr als Kavaliersdelikt, sondern als organisierte Kriminalitaet mit Kronzeugen.
+**Anekdote
+  / Fun-Fact (DE)**: 1998 schloss die Polizei bei der Festina-Affäre einen ganzen Tour-Tross mit Koffern voller EPO und Wachstumshormonen. Der Masseur Willy Voet plauderte, das Kartell flog auf, das Rennen kollabierte. Seitdem gilt Doping nicht mehr als Kavaliersdelikt, sondern als organisierte Kriminalitaet mit Kronzeugen.
 
 **中文解读**: 1998年 Festina 车队整车EPO被查,按摩师一张嘴整圈崩。从此 doping 不再是小错,而是有组织犯罪。
 
@@ -88,9 +102,9 @@ AUFGABE (analysieren, AFB II):90-Sekunden-Plaedoyer gegen den Timer: Beurteile d
 Target数值目标:0 Toleranz im Kader, 100 Prozent Schulung, Hotline-Fallzahl 12, Sperre 4 Jahre。
 
 HILFE:
-1. Benenne Verstoss (Besitz) plus doppelte Schaedigung (Fairness, Gesundheit).
-2. Wende NADA-Code an: Strict Liability plus Sperre.
-3. Fordere Schutzmassnahme: Hotline plus Schulung.
+1. 先点名持有即违规,说明严格责任下借口无效,并点出公平与健康双伤害。
+2. 再套NADA法规 Strict Liability 与四年禁赛,说明代价如何抬高到0容忍。
+3. 最后开保护处方:12起热线加密报加全员培训,说明预防如何在前断链。
 
 MUSTERLÖSUNG:Schon der Besitz verstoesst gegen den Code; Strict Liability macht Ausreden irrelevant. Das Target 0 Toleranz wird erreicht, weil 4 Jahre Sperre den Preis und Hotline mit 12 Faellen den Schutz heben. Gesundheitlich drohen Herz und Leber, ethisch faellt Gold. Praevention vorher schlaegt Kontrolle nachher, beide zusammen schliessen die Kette.
 
@@ -145,7 +159,7 @@ RUBRIC (30 XP):诊断术语8分 | 措施与目标举证7分 | 程序选择对比
 TAKEAWAY 1盒(核心总结):
 
 中文:Gold ohne Gewissen ist Diebstahl an Sauberen und an der eigenen Zukunft. Wer redet statt schweigt, schuetzt beides.
-Takeaway-Satz: `Wer die Grenze sichert und die Lage nutzt, holt den Pokal.`
+Takeaway-Satz: `Wer meldet statt schweigt, schuetzt Kader mit 0 Toleranz und 4 Jahren Sperre.`
 
 `Klausur-Satz: Metakern: Sportethik ist Zukunftsschutz; wer Haltung zeigt, versteht jeden Fairplay-Fall.`
 

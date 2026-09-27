@@ -14,9 +14,12 @@ version: Lesson-v3
 
 
 
-# Lernreise: Lernreise: Lernreise: Lernreise: Doping Ethik und Gesundheitsrisiken (L1, Ziel Klausur)
+# Lernreise: Doping Ethik und Gesundheitsrisiken (L1, Ziel Klausur)
 
-<!-- Lesson v3 9步制架构：Schritt 1至8固定结构；Fehlvorstellung 夹在 Schritt 6 与 7 之间（Parser 自动跳过，不占步数）；支持内嵌 [Werkzeug: <id>] 交互教具；Gating: check/szenario 未过 = Weiter 置灰；XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
+<!-- Lesson v3 9步制架构：Schritt 1至8固定结构；Fehlvorstellung 夹在 Schritt 6 与 7 之间（Parser 自动跳过，不占步数）；支持内嵌 [Werkzeug: <id>] 交互教具；Gating: check/szenario 未过 = Weiter 置灰；XP: entdecken 5
+  / ausprobieren 15
+  / check 20
+  / szenario 30 -->
 
 ## Schritt 1 — entdecken: Frankfurter Festhalle, Schul-Anti-Doping-Forum — 赛场警报
 
@@ -32,7 +35,7 @@ ZIELE (3条,本节15分钟学完能做到——先读中文,再记德语):
 
 Hook (DE): Planspiel, Spindkontrolle: Im Rucksack des Staffelstars liegt eine Ampulle ohne Etikett. Der Trainer schaut weg, der Arzt schweigt, die Staffel steht vor Gold. Eine Entscheidung in zehn Minuten: Wer haftet, wer schuetzt, wer redet? **Doping** bricht **Fairness** und **Gesundheit** zugleich: **Anabolika**, **EPO** und **Stimulanzien** versprechen Leistung und liefern Schaeden. Der **NADA-Code** mit **Meldepflicht** und **Sperren** zieht die Linie. Praevention schuetzt vorher, Kontrolle straft nachher. Heute verhandeln wir diesen Fall wie ein Schiedsgericht.
 
-`Klausur-Satz: 科隆揭示:一支安瓿三人沉默,金牌对健康。`
+`Klausur-Satz: 法兰克福揭示:一支安瓿三人沉默,金牌对健康。`
 
 ## Schritt 2 — entdecken: 5术语装备盒
 
@@ -40,11 +43,21 @@ PRETRAINING术语盒(核心5词,先读三遍中德,合书自测中文→德语):
 
 中文在上,德语在下:
 
-- doping — Doping:违反WADA清单用禁药禁法,持有即罚 / Doping ist der Verstoss gegen die Anti-Doping-Regeln durch verbotene Substanzen oder Methoden laut WADA-Liste. Es umfasst Einnahme, Besitz und Verschweigen. Schon der Besitz ohne Einnahme ist strafbar. Mechanismus: Anabolika binden Androgenrezeptoren, EPO hebt Haematokrit, Stimulanzien blockieren Ermuedungssignale; alle veraendern Physiologie mit Nebenwirkungskette. Klausur-Tipp: Nenne WADA-Liste plus schon Besitz strafbar; Fairness plus Gesundheit als Doppelbegruendung.
-- 同化类固醇 — Anabolika:人工睾酮促肌蛋白,也伤肝伤心改性情,青少年停长高 / Anabol-androgene Steroide sind kuenstliche Testosteron-Abkoemmlinge zum Muskelaufbau. Sie heben Proteinsynthese, aber auch Blutdruck, Leberwerte und Aggression. Bei Jugendlichen stoppen sie das Wachstum. Mechanismus: Rezeptorbindung erhoeht Proteinsynthese und Talgdruesen; Hormonachse wird unterdrueckt, Hoden schrumpfen, Herz hypertrophiert. Klausur-Tipp: Nenne Muskel plus Leber/Herz/Psyche; irreversibel bei Jugend als Warnwort.
-- EPO与血液doping — EPO und Blutdoping:增红细胞提携氧,血变稠堵到心梗,50以上血细胞比容露馅 / EPO und Eigenbluttransfusionen erhoehen rote Blutkoerperchen und Sauerstofftransport. Sie versprechen Ausdauer, verdicken aber das Blut bis zum Infarkt. Der Haematokrit verrät sie. Mechanismus: Mehr Erythrozyten heben VO2, aber Viskositaet plus Thromboserisiko; naechtliche Herzstillstaende bei Radprofis sind dokumentiert. Klausur-Tipp: Nenne Sauerstoff plus Viskositaet plus Infarkt; Haematokrit ueber 50 als Zahl.
-- NADA法规 — NADA-Code:行踪申报飞行检查严格责任,最高禁赛四年 / Der NADA-Code regelt Meldepflichten, Kontrollen und Sperren bis vier Jahre. Athleten im Testpool muessen Aufenthalte melden. Verweigerung zaehlt wie positiv. Mechanismus: Whereabouts plus unangekuendigte Kontrollen plus Strict Liability: Der Koerper gehoert dem Athleten, Ausreden zaehlen nicht. Klausur-Tipp: Nenne Meldepflicht plus Strict Liability plus 4 Jahre; Verantwortung beim Athleten.
-- 预防 — Praevention:事前价值观加医学告知加密报通道,比事后罚管用 / Praevention verbindet Werteerziehung, Medizinaufklaerung und geschuetzte Meldestrukturen. Sie wirkt vor der Ampulle, nicht nach dem Befund. Anonyme Hotlines senken die Hemmschwelle. Mechanismus: Selbstwirksamkeit plus Wissen plus Ansprechpartner erhoehen Widerstand gegen Gruppendruck; Fruehintervention stoppt Karrieren des Schweigens. Klausur-Tipp: Betone vorher statt nachher plus Ansprechpartner; Mut zur Meldung als Ziel.
+- doping — Doping:违反WADA清单用禁药禁法,持有即罚
+  / Doping ist der Verstoss gegen die Anti-Doping-Regeln durch verbotene Substanzen oder Methoden laut WADA-Liste. Es umfasst Einnahme, Besitz und Verschweigen. Schon der Besitz ohne Einnahme ist strafbar.
+  / Mechanismus: Anabolika binden Androgenrezeptoren, EPO hebt Haematokrit, Stimulanzien blockieren Ermuedungssignale; alle veraendern Physiologie mit Nebenwirkungskette. Klausur-Tipp: Nenne WADA-Liste plus schon Besitz strafbar; Fairness plus Gesundheit als Doppelbegruendung.
+- 同化类固醇 — Anabolika:人工睾酮促肌蛋白,也伤肝伤心改性情,青少年停长高
+  / Anabol-androgene Steroide sind kuenstliche Testosteron-Abkoemmlinge zum Muskelaufbau. Sie heben Proteinsynthese, aber auch Blutdruck, Leberwerte und Aggression. Bei Jugendlichen stoppen sie das Wachstum.
+  / Mechanismus: Rezeptorbindung erhoeht Proteinsynthese und Talgdruesen; Hormonachse wird unterdrueckt, Hoden schrumpfen, Herz hypertrophiert. Klausur-Tipp: Nenne Muskel plus Leber/Herz/Psyche; irreversibel bei Jugend als Warnwort.
+- EPO与血液doping — EPO und Blutdoping:增红细胞提携氧,血变稠堵到心梗,50以上血细胞比容露馅
+  / EPO und Eigenbluttransfusionen erhoehen rote Blutkoerperchen und Sauerstofftransport. Sie versprechen Ausdauer, verdicken aber das Blut bis zum Infarkt. Der Haematokrit verrät sie.
+  / Mechanismus: Mehr Erythrozyten heben VO2, aber Viskositaet plus Thromboserisiko; naechtliche Herzstillstaende bei Radprofis sind dokumentiert. Klausur-Tipp: Nenne Sauerstoff plus Viskositaet plus Infarkt; Haematokrit ueber 50 als Zahl.
+- NADA法规 — NADA-Code:行踪申报飞行检查严格责任,最高禁赛四年
+  / Der NADA-Code regelt Meldepflichten, Kontrollen und Sperren bis vier Jahre. Athleten im Testpool muessen Aufenthalte melden. Verweigerung zaehlt wie positiv.
+  / Mechanismus: Whereabouts plus unangekuendigte Kontrollen plus Strict Liability: Der Koerper gehoert dem Athleten, Ausreden zaehlen nicht. Klausur-Tipp: Nenne Meldepflicht plus Strict Liability plus 4 Jahre; Verantwortung beim Athleten.
+- 预防 — Praevention:事前价值观加医学告知加密报通道,比事后罚管用
+  / Praevention verbindet Werteerziehung, Medizinaufklaerung und geschuetzte Meldestrukturen. Sie wirkt vor der Ampulle, nicht nach dem Befund. Anonyme Hotlines senken die Hemmschwelle.
+  / Mechanismus: Selbstwirksamkeit plus Wissen plus Ansprechpartner erhoehen Widerstand gegen Gruppendruck; Fruehintervention stoppt Karrieren des Schweigens. Klausur-Tipp: Betone vorher statt nachher plus Ansprechpartner; Mut zur Meldung als Ziel.
 
 `Klausur-Satz: doping 是清单违规持有即罚,严格责任归本人,两定义撑起判决。`
 
@@ -60,18 +73,19 @@ $$
 Risiko = \frac{Druck \times Verfuegbarkeit \times Schweigen}{Wissen + Kontrolle + Meldestruktur}
 $$
 
-战役传导:本关承接冲量角逐、乳酸阈值与主导动机三幕,测得出才能说得清,说得清才能赢下来。
+战役传导:本关打通压力保护链:压力加沉默推高风险,知识加检查加密报压低风险,两处断链保公平健康。
 
 ```diagram
 Druck [Gold, Kader] -> Tat [Ampulle] -> Schaden [Herz, Leber] | Schutz [Hotline, Kontrolle]
-Regel: Fehler frueh = Grenze | Fehler spaet = Ausnutzung
+Regel: Besitz bereits Verstoss mit Strict Liability | Hotline plus Schulung schliessen die Kette
 ```
 
 `Klausur-Satz: 压力乘沉默除以保护加检查,解释一切风险。`
 
 ## Anekdote & Fun-Fact
 
-**Anekdote / Fun-Fact (DE)**: 1998 schloss die Polizei bei der Festina-Affäre einen ganzen Tour-Tross mit Koffern voller EPO und Wachstumshormonen. Der Masseur Willy Voet plauderte, das Kartell flog auf, das Rennen kollabierte. Seitdem gilt Doping nicht mehr als Kavaliersdelikt, sondern als organisierte Kriminalitaet mit Kronzeugen.
+**Anekdote
+  / Fun-Fact (DE)**: 1998 schloss die Polizei bei der Festina-Affäre einen ganzen Tour-Tross mit Koffern voller EPO und Wachstumshormonen. Der Masseur Willy Voet plauderte, das Kartell flog auf, das Rennen kollabierte. Seitdem gilt Doping nicht mehr als Kavaliersdelikt, sondern als organisierte Kriminalitaet mit Kronzeugen.
 
 **中文解读**: 1998年 Festina 车队整车EPO被查,按摩师一张嘴整圈崩。从此 doping 不再是小错,而是有组织犯罪。
 
@@ -88,9 +102,9 @@ AUFGABE (analysieren, AFB II):90秒控辩:按伦理与健康判柜门案,开一�
 Target数值目标:0 Toleranz in der Schule, 100 Prozent Schulung, 2 Vertrauenslehrer, Hilfe statt Strafe。
 
 HILFE:
-1. 点名持有即违规,双伤害公平健康。
-2. 套NADA严格责任。
-3. 开保护处方热线加培训。
+1. 先点名持有即违规,说明严格责任下借口无效,并点出公平与健康双伤害。
+2. 再套NADA法规:行踪申报、飞行检查与最高四年禁赛,说明代价如何抬高。
+3. 最后开保护处方:两名信任老师加密报热线加全员培训,说明预防如何在前断链。
 
 MUSTERLÖSUNG:持有即违规,严格责任下借口无效。目标零容忍靠四年禁赛抬代价、两名信任老师给出口。健康伤心伤肝,伦理丢金,预防加检查双断链。
 
@@ -145,7 +159,7 @@ RUBRIC (30 XP):诊断术语8分 | 措施与目标举证7分 | 程序选择对比
 TAKEAWAY 1盒(核心总结):
 
 中文:没良心的金牌是偷干净人的,也是偷自己未来的。开口举报保两边。
-Takeaway-Satz: `Wer die Grenze sichert und die Lage nutzt, holt den Pokal.`
+Takeaway-Satz: `Wer meldet statt schweigt, schuetzt Gold und Gesundheit in Frankfurt.`
 
 `Klausur-Satz: 元认知:体育伦理是保未来,有立场才会判公平。`
 

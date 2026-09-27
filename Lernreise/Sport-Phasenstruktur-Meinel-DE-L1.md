@@ -14,7 +14,7 @@ version: Lesson-v3
 
 
 
-# Lernreise: Lernreise: Lernreise: Lernreise: Die Phasenstruktur der Bewegung und der Beobachtungsbogen (L1, Ziel Muendlich)
+# Lernreise: Die Phasenstruktur der Bewegung und der Beobachtungsbogen (L1, Ziel Muendlich)
 
 <!-- Lesson v3 Architektur mit 9 Abschnitten: Schritt 1 bis 8 mit fester Struktur; Fehlvorstellung liegt zwischen Schritt 6 und 7 (wird vom Parser uebersprungen, zaehlt nicht als Schritt); unterstuetzt eingebettete [Werkzeug: <id>] Elemente; Gating: check/szenario nicht bestanden = Weiter deaktiviert; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
@@ -38,11 +38,21 @@ Jede Zielbewegung zerfaellt in **Vorbereitungsphase**, **Hauptphase** und **Endp
 
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
-- **Vorbereitungsphase**: Die Vorbereitungsphase schafft die optimalen Voraussetzungen fuer die Hauptphase, etwa durch Anlauf, Ausholbewegung und Vorspannung. Sie erzeugt keine Leistung selbst, aber sie entscheidet ueber deren Qualitaet. Ihre Dauer und Rhythmik sind die Diagnosefenster des Trainers.  Mechanismus: Dehnungs-Verkuerzungs-Zyklus und elastische Energiespeicherung in Sehnen; falscher Rhythmus loescht die Vorspannung vor dem Abwurf. Klausur-Tipp: Nenne Ausholen plus Vorspannung als Funktion; Vorbereiten heisst ermoeglichen, nicht leisten.
-- **Hauptphase**: Die Hauptphase ist die funktional entscheidende Kernbewegung, beim Speerwurf der beidbeinige Zug mit Abwurf. Sie ist zeitlich kurz, nicht wiederholbar und duldet keine Korrektur mehr. Alle Messwerte des Wettkampfs stammen aus ihr.  Mechanismus: Peitschenartige proximodistale Kraftentfaltung von Bein ueber Rumpf in den Wurfarm; Impulsuebertragung entscheidet ueber Abfluggeschwindigkeit. Klausur-Tipp: Definiere Hauptphase als Zielerfuellung plus Unkorrigierbarkeit; das Wort unwiederholbar bringt Punkte.
-- **Endphase**: Die Endphase sichert das Ergebnis ab, etwa durch Abfangen, Abdrehen und Halten der Abwurflinie. Sie veraendert die Leistung nicht mehr, verhindert aber Uebertreten und Verletzungen. Ihre Qualitaet verrät die Kontrolle der Hauptphase.  Mechanismus: Exzentrisches Abbremsen und Gleichgewichtswiederherstellung; Stemm- und Fangschritte bauen Restimpuls kontrolliert ab. Klausur-Tipp: Betone sichern statt leisten plus Regelkonformitaet; Uebertreten ist der klassische Endphasenfehler.
-- **Bewegungsrhythmus**: Der Bewegungsrhythmus ist die zeitlich-dynamische Ordnung aller Teilbewegungen, etwa die 5-Schritt-Folge des Speerwurfs. Er verbindet die Phasen zu einer fliessenden Gesamtbewegung. Stoerungen des Rhythmus sind die fruehesten Fehlerindikatoren.  Mechanismus: Zentrale Zeitprogrammierung im motorischen Gedaechtnis; Rhythmusbruch zerreisst die Impulskette zwischen Segmenten. Klausur-Tipp: Rhythmus heisst zeitlich-dynamische Ordnung; nenne Schrittfolge als Beleg.
-- **Bewegungskopplung**: Die Bewegungskopplung ist die Koordination von Teilbewegungen zum Gesamtablauf, etwa Stemmbein-Block plus Oberkoerper-Peitsche. Gute Kopplung uebertraegt Impuls verlustarm, schlechte vernichtet ihn an den Gelenken. Sie ist das Hauptkriterium der Techniknote.  Mechanismus: Proximodistale Sequenzierung mit exaktem Timing; Block des Stemmbeins wandelt Translation in Rotation um. Klausur-Tipp: Schreibe Impulsuebertragung plus Timing; Block und Peitsche sind die Signalwoerter.
+- **Vorbereitungsphase**: Die Vorbereitungsphase schafft die optimalen Voraussetzungen fuer die Hauptphase, etwa durch Anlauf, Ausholbewegung und Vorspannung. Sie erzeugt keine Leistung selbst, aber sie entscheidet ueber deren Qualitaet. Ihre Dauer und Rhythmik sind die Diagnosefenster des Trainers.
+  / Mechanismus: Dehnungs-Verkuerzungs-Zyklus und elastische Energiespeicherung in Sehnen; falscher Rhythmus loescht die Vorspannung vor dem Abwurf.
+  / Klausur-Tipp: Nenne Ausholen plus Vorspannung als Funktion; Vorbereiten heisst ermoeglichen, nicht leisten.
+- **Hauptphase**: Die Hauptphase ist die funktional entscheidende Kernbewegung, beim Speerwurf der beidbeinige Zug mit Abwurf. Sie ist zeitlich kurz, nicht wiederholbar und duldet keine Korrektur mehr. Alle Messwerte des Wettkampfs stammen aus ihr.
+  / Mechanismus: Peitschenartige proximodistale Kraftentfaltung von Bein ueber Rumpf in den Wurfarm; Impulsuebertragung entscheidet ueber Abfluggeschwindigkeit.
+  / Klausur-Tipp: Definiere Hauptphase als Zielerfuellung plus Unkorrigierbarkeit; das Wort unwiederholbar bringt Punkte.
+- **Endphase**: Die Endphase sichert das Ergebnis ab, etwa durch Abfangen, Abdrehen und Halten der Abwurflinie. Sie veraendert die Leistung nicht mehr, verhindert aber Uebertreten und Verletzungen. Ihre Qualitaet verrät die Kontrolle der Hauptphase.
+  / Mechanismus: Exzentrisches Abbremsen und Gleichgewichtswiederherstellung; Stemm- und Fangschritte bauen Restimpuls kontrolliert ab.
+  / Klausur-Tipp: Betone sichern statt leisten plus Regelkonformitaet; Uebertreten ist der klassische Endphasenfehler.
+- **Bewegungsrhythmus**: Der Bewegungsrhythmus ist die zeitlich-dynamische Ordnung aller Teilbewegungen, etwa die 5-Schritt-Folge des Speerwurfs. Er verbindet die Phasen zu einer fliessenden Gesamtbewegung. Stoerungen des Rhythmus sind die fruehesten Fehlerindikatoren.
+  / Mechanismus: Zentrale Zeitprogrammierung im motorischen Gedaechtnis; Rhythmusbruch zerreisst die Impulskette zwischen Segmenten.
+  / Klausur-Tipp: Rhythmus heisst zeitlich-dynamische Ordnung; nenne Schrittfolge als Beleg.
+- **Bewegungskopplung**: Die Bewegungskopplung ist die Koordination von Teilbewegungen zum Gesamtablauf, etwa Stemmbein-Block plus Oberkoerper-Peitsche. Gute Kopplung uebertraegt Impuls verlustarm, schlechte vernichtet ihn an den Gelenken. Sie ist das Hauptkriterium der Techniknote.
+  / Mechanismus: Proximodistale Sequenzierung mit exaktem Timing; Block des Stemmbeins wandelt Translation in Rotation um.
+  / Klausur-Tipp: Schreibe Impulsuebertragung plus Timing; Block und Peitsche sind die Signalwoerter.
 
 `Klausur-Satz: Vorbereitung ermoeglicht, Hauptphase leistet, Endphase sichert: Diese drei Definitionen tragen jede Phasenanalyse.`
 
@@ -60,7 +70,7 @@ Verlaengert der Werfer die Vorbereitung um 0,2 s durch Traben, sinkt die Abwurfg
 
 ```diagram
 Vorbereitung [Anlauf 5 Schritte, Bogen] -> Hauptphase [Abwurf 0,12 s, 24 m/s] -> Endphase [Abfangen, Linie halten]
-Regel: Fehler frueh = Grenze | Fehler spaet = Ausnutzung
+Regel: Vorbereitung sichert Bogen und Block | Hauptphase liefert 24 m/s bei 34 Grad fuer 46,50 m
 ```
 
 `Klausur-Satz: Rhythmus plus Kopplung erzeugen Abwurfgeschwindigkeit; die Kette Vorbereitung-Haupt-Endphase verstaerkt jeden fruehen Fehler.`
@@ -138,7 +148,7 @@ RUBRIC (30 XP): Diagnose mit Fachbegriffen (8 XP) | Massnahme mit Target-Beleg (
 
 TAKEAWAY (Kernzusammenfassung):
 
-Wer die Phasen trennt, findet den Fehler: Die Vorbereitung laedt, die Hauptphase zahlt aus, die Endphase kassiert sicher. Diagnose laeuft rueckwaerts, Training vorwaerts. Takeaway-Satz: `Wer die Grenze sichert und die Lage nutzt, holt den Pokal.`
+Wer die Phasen trennt, findet den Fehler: Die Vorbereitung laedt, die Hauptphase zahlt aus, die Endphase kassiert sicher. Diagnose laeuft rueckwaerts, Training vorwaerts. Takeaway-Satz: `Wer Rueckwaerts liest und Vorwaerts baut, trifft 46,50 m in Goetzis.`
 
 `Klausur-Satz: Metakern: Meinels Dreiteilung gilt fuer jeden Zielwurf; wer Phasen trennt, versteht jede sportliche Technik.`
 

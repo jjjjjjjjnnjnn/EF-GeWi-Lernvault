@@ -14,9 +14,12 @@ version: Lesson-v3
 
 
 
-# Lernreise: Lernreise: Lernreise: Lernreise: Belastungsreiz und Trainingsnormative (L2, Ziel Klausur)
+# Lernreise: Belastungsreiz und Trainingsnormative (L2, Ziel Klausur)
 
-<!-- Lesson v3 9步制架构：Schritt 1至8固定结构；Fehlvorstellung 夹在 Schritt 6 与 7 之间（Parser 自动跳过，不占步数）；支持内嵌 [Werkzeug: <id>] 交互教具；Gating: check/szenario 未过 = Weiter 置灰；XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
+<!-- Lesson v3 9步制架构：Schritt 1至8固定结构；Fehlvorstellung 夹在 Schritt 6 与 7 之间（Parser 自动跳过，不占步数）；支持内嵌 [Werkzeug: <id>] 交互教具；Gating: check/szenario 未过 = Weiter 置灰；XP: entdecken 5
+  / ausprobieren 15
+  / check 20
+  / szenario 30 -->
 
 ## Schritt 1 — entdecken: Essener Sportinternat, Kraft-Testwoche — 赛场警报
 
@@ -40,11 +43,21 @@ PRETRAINING术语盒(核心5词,先读三遍中德,合书自测中文→德语):
 
 中文在上,德语在下:
 
-- 负荷刺激 — Belastungsreiz:打破平衡引发适应的负荷,须过阈 / Der Belastungsreiz ist die Trainingsbelastung, die eine Stoerung des Gleichgewichts und damit Anpassung ausloest. Nur ueberschwellige Reize oberhalb der Gewöhnungsschwelle wirken; unterschwellige verpuffen, uebermaessige zerstoeren. Die Reizstufe waehlt das Ziel. Mechanismus: Mechanische und metabolische Stressoren aktivieren Signalwege (mTOR, AMPK); Proteinsynthese und Enzymaufbau folgen in der Erholung. Klausur-Tipp: Nenne ueberschwellig plus Anpassung; unterschwellig/uebermaessig als Abgrenzung.
-- 超量恢复 — Superkompensation:恢复后涨超原水平,下刺激须踩浪尖 / Die Superkompensation ist die Erhoehung ueber das Ausgangsniveau nach Belastung und Erholung. Der Koerper baut in der Pause mehr auf, als verbraucht wurde. Der naechste Reiz muss in diese Welle fallen. Mechanismus: Glykogen- und Proteinspeicher werden ueberkompensiert; Timing von 24 bis 72 Stunden je nach Reiz entscheidet. Klausur-Tipp: Zeichne Welle: Abfall, Erholung, Ueberhoehung; Timing ist das Punktwort.
-- 强度与量 — Intensitaet und Umfang:强度是单个多重,量是总量,配比定目标 / Die Intensitaet ist die Staerke je Wiederholung (Prozent vom Maximum), der Umfang die Menge (Saetze mal Wiederholungen). Kraft braucht hohe Intensitaet bei kleinem Umfang, Ausdauer umgekehrt. Ihre Relation steuert das Ziel. Mechanismus: Hohe Last rekrutiert schnelle Fasern, viele Wiederholungen erschoepfen Substrate; beide Wege aktivieren andere Genprogramme. Klausur-Tipp: Nenne Prozent plus Saetze/Wiederholungen; Kraft versus Ausdauer als Gegensatz.
-- 密度与持续 — Dichte und Dauer:密度是间歇比,持续是单次时长,管恢复充分度 / Die Dichte ist das Pausenverhaeltnis zwischen Serien, die Dauer die Belastungszeit. Kurze Pausen stauen Metabolite, lange erlauben Maximalkraft. Intervalldichte formt Herz und Laktattoleranz. Mechanismus: Unvollstaendige Pausen halten Puls und Laktat hoch; vollstaendige stellen ATP und Nervensystem wieder her. Klausur-Tipp: Nenne Pause als Werkzeug; vollständig versus unvollständig als Gegensatzpaar.
-- 频率 — Haeufigkeit:每周刺激次数,2至3次涨力,天天同部位必透支 / Die Haeufigkeit ist die Zahl der Einheiten pro Woche je Muskel oder System. Zwei bis drei Reize pro Woche heben Kraft, taeglich gleiche Reize uebertrainieren. Frequenz verteilt die Welle. Mechanismus: Proteinsynthese bleibt 36 bis 48 Stunden erhoeht; Reize in diesem Fenster summieren sich, spaetere verpuffen. Klausur-Tipp: Schreibe 2 bis 3 pro Woche plus Erholung; mehr ist nicht mehr.
+- 负荷刺激 — Belastungsreiz:打破平衡引发适应的负荷,须过阈
+  / Der Belastungsreiz ist die Trainingsbelastung, die eine Stoerung des Gleichgewichts und damit Anpassung ausloest. Nur ueberschwellige Reize oberhalb der Gewöhnungsschwelle wirken; unterschwellige verpuffen, uebermaessige zerstoeren. Die Reizstufe waehlt das Ziel.
+  / Mechanismus: Mechanische und metabolische Stressoren aktivieren Signalwege (mTOR, AMPK); Proteinsynthese und Enzymaufbau folgen in der Erholung. Klausur-Tipp: Nenne ueberschwellig plus Anpassung; unterschwellig/uebermaessig als Abgrenzung.
+- 超量恢复 — Superkompensation:恢复后涨超原水平,下刺激须踩浪尖
+  / Die Superkompensation ist die Erhoehung ueber das Ausgangsniveau nach Belastung und Erholung. Der Koerper baut in der Pause mehr auf, als verbraucht wurde. Der naechste Reiz muss in diese Welle fallen.
+  / Mechanismus: Glykogen- und Proteinspeicher werden ueberkompensiert; Timing von 24 bis 72 Stunden je nach Reiz entscheidet. Klausur-Tipp: Zeichne Welle: Abfall, Erholung, Ueberhoehung; Timing ist das Punktwort.
+- 强度与量 — Intensitaet und Umfang:强度是单个多重,量是总量,配比定目标
+  / Die Intensitaet ist die Staerke je Wiederholung (Prozent vom Maximum), der Umfang die Menge (Saetze mal Wiederholungen). Kraft braucht hohe Intensitaet bei kleinem Umfang, Ausdauer umgekehrt. Ihre Relation steuert das Ziel.
+  / Mechanismus: Hohe Last rekrutiert schnelle Fasern, viele Wiederholungen erschoepfen Substrate; beide Wege aktivieren andere Genprogramme. Klausur-Tipp: Nenne Prozent plus Saetze/Wiederholungen; Kraft versus Ausdauer als Gegensatz.
+- 密度与持续 — Dichte und Dauer:密度是间歇比,持续是单次时长,管恢复充分度
+  / Die Dichte ist das Pausenverhaeltnis zwischen Serien, die Dauer die Belastungszeit. Kurze Pausen stauen Metabolite, lange erlauben Maximalkraft. Intervalldichte formt Herz und Laktattoleranz.
+  / Mechanismus: Unvollstaendige Pausen halten Puls und Laktat hoch; vollstaendige stellen ATP und Nervensystem wieder her. Klausur-Tipp: Nenne Pause als Werkzeug; vollständig versus unvollständig als Gegensatzpaar.
+- 频率 — Haeufigkeit:每周刺激次数,2至3次涨力,天天同部位必透支
+  / Die Haeufigkeit ist die Zahl der Einheiten pro Woche je Muskel oder System. Zwei bis drei Reize pro Woche heben Kraft, taeglich gleiche Reize uebertrainieren. Frequenz verteilt die Welle.
+  / Mechanismus: Proteinsynthese bleibt 36 bis 48 Stunden erhoeht; Reize in diesem Fenster summieren sich, spaetere verpuffen. Klausur-Tipp: Schreibe 2 bis 3 pro Woche plus Erholung; mehr ist nicht mehr.
 
 `Klausur-Satz: 过阈加可恢复定义刺激,五规范定剂量,两句管全计划。`
 
@@ -60,18 +73,19 @@ $$
 LOAD = Intensitaet \times Umfang \times Dichte^{-1} \quad\text{und}\quad Leistung(t+1) > Leistung(t)
 $$
 
-战役传导:本关承接冲量角逐、乳酸阈值与主导动机三幕,测得出才能说得清,说得清才能赢下来。
+战役传导:本关打通刺激-恢复链:过阈下药、踩浪加量,算得出剂量才压得住透支。
 
 ```diagram
 Reiz [ueberschwellig] -> Ermuedung [Abfall] -> Erholung [Welle] -> naechster Reiz [Timing]
-Regel: Fehler frueh = Grenze | Fehler spaet = Ausnutzung
+Regel: Reiz ueberschwellig setzen | Welle abwarten, dann 4x6 bei 80 Prozent erneut reizen
 ```
 
 `Klausur-Satz: 刺激压低、恢复超量、时机叠加,浪解释一切增长。`
 
 ## Anekdote & Fun-Fact
 
-**Anekdote / Fun-Fact (DE)**: Der Rostocker Physiologe Fritz Zaciorskij mass in den siebziger Jahren, dass gleiche Tonnage voellig anders wirkt, je nachdem ob sie auf 3 oder 10 Wiederholungen verteilt ist. Drei schwere Saetze bauten Maximalkraft, zehn leichte bauten Umfang am selben Eisen. Seine Normative-Tabelle haengt bis heute in jedem deutschen Kraftraum.
+**Anekdote
+  / Fun-Fact (DE)**: Der Rostocker Physiologe Fritz Zaciorskij mass in den siebziger Jahren, dass gleiche Tonnage voellig anders wirkt, je nachdem ob sie auf 3 oder 10 Wiederholungen verteilt ist. Drei schwere Saetze bauten Maximalkraft, zehn leichte bauten Umfang am selben Eisen. Seine Normative-Tabelle haengt bis heute in jedem deutschen Kraftraum.
 
 **中文解读**: 同样吨位,3次大重量长力量,10次小重量长维度。器械不决定效果,剂量决定。
 
@@ -83,18 +97,18 @@ BEISPIEL(含教具操作与解答):
 
 [Werkzeug: oral-timer]
 
-AUFGABE (analysieren, AFB II):90秒口述:开5×5深蹲处方定百分比、间歇与频率,论证达标。达标线:60 kg bei 80 Prozent, 4x6, Pause 2,5 min, 2 Einheiten/Woche, Ziel 60 kg。
+AUFGABE (analysieren, AFB II):90秒口述:开4×6深蹲处方定百分比、间歇与频率,论证达标。达标线:60 kg bei 80 Prozent, 4x6, Pause 2,5 min, 2 Einheiten/Woche, Ziel 60 kg。
 
 Target数值目标:60 kg bei 80 Prozent, 4x6, Pause 2,5 min, 2 Einheiten/Woche, Ziel 60 kg。
 
 HILFE:
-1. 定强度百分比与组次数。
-2. 定间歇密度与周频率。
-3. 点名刺激等级与踩浪时机。
+1. 先定出80%强度与4×6的量,说明它为何过阈又可恢复。
+2. 再定出2分半间歇与每周两次频率,说明密度与频率如何保住超量恢复。
+3. 最后点名刺激等级与踩浪时机,说明如何从45公斤叠到60公斤达标。
 
 MUSTERLÖSUNG:80%配4×6、歇2分半、每周两次,过阈且可恢复,浪叠加从45到60公斤即达标。
 
-`Klausur-Satz: 目标80公斤配5×5证明:85%加3分钟歇每周两次能叠浪。`
+`Klausur-Satz: 目标60公斤配4×6证明:80%加2分半歇每周两次能叠浪。`
 
 ## Schritt 5 — ausprobieren: VERGLEICH技术对抗 Intensitaetsbetonung (schwer, wenig, lang pausiert: Maximalkraft) vs Umfangsbetonung (leicht, viel, kurz pausiert: Kraftausdauer)
 
@@ -138,14 +152,14 @@ CHECK检索默写(自测3题,与答案配对):
 ROLLE: Du bist Athletiktrainer Kraftraum. SITUATION: 在埃森用德语90秒陈述刺激、规范与目标(60 kg,4x6)。
 RUBRIC (30 XP):诊断术语8分 | 措施与目标举证7分 | 程序选择对比7分 | 德语表达5分。
 
-`Klausur-Satz: 满分句:停滞因阈下刺激无浪白费;85%五乘五可锁定80公斤。`
+`Klausur-Satz: 满分句:停滞因阈下刺激无浪白费;80%四乘六可锁定60公斤。`
 
 ## Schritt 8 — reflexion: Takeaway & Reflexion — 奖杯还是进站检修
 
 TAKEAWAY 1盒(核心总结):
 
 中文:刺激当药开:够猛才起效,够稀才生长。浪养人,剂量定命。
-Takeaway-Satz: `Wer die Grenze sichert und die Lage nutzt, holt den Pokal.`
+Takeaway-Satz: `Wer Reiz setzt und Welle trifft, stemmt 60 kg im 4x6 bei 80 Prozent.`
 
 `Klausur-Satz: 元认知:训练等于刺激加时间,会读浪就懂适应。`
 
