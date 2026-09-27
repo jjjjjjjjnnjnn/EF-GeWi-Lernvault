@@ -11,150 +11,118 @@ tags: [EF, Bio, Pflanzenphysiologie]
 version: Lesson-v3
 ---
 
-# Lernreise: Photosynthese Licht- und Dunkelreaktion (L1, Ziel Klausur)
+# Lernreise: Photosynthese Licht- und Dunkelreaktion — Episode B21: Funkstille aus dem Archiv
 
-<!-- Lesson v3 9-Schritt-Architektur: Schritt 1 bis 8 feste Struktur; Fehlvorstellung zwischen Schritt 6 und 7 (Parser ueberspringt, zaehlt nicht); interaktives [Werkzeug: <id>]; Gating: check/szenario nicht bestanden = Weiter deaktiviert; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
+<!-- Campaign: Nano-Zellfabrik-Krise | Bio | Instapower: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
-## Schritt 1 — entdecken: Ziele & Phänomen-Einstieg
-ZIELE (drei messbare Ziele dieser Lektion):
+## Schritt 1 — entdecken: Der blasse Garten unterm Glasdach
 
-1. Du kannst die Gesamtgleichung $6CO_2 + 6H_2O + Lichtenergie \to C_6H_{12}O_6 + 6O_2$ wiedergeben und ihre Umkehrung zur Zellatmung erklaeren.
-2. Du kannst Licht- und Dunkelreaktion nach Ort (Thylakoidmembran gegen Stroma), Bedingung (Lichtbedarf gegen Unabhaengigkeit) und Produkten ($ATP + NADPH + O_2$ gegen Glucose) vergleichen.
-3. Du kannst die drei limitierenden Faktoren Lichtstaerke, $CO_2$-Konzentration und Temperatur nennen und Zusatzlicht mit $CO_2$-Anreicherung im Gewaechshaus erklaeren (AFB II).
+ZIELE:
+1. Ich kann Licht- und Dunkelreaktion mit Orten und Produkten vergleichen.
+2. Ich kann die Fotosynthesegleichung aufstellen und deuten.
+3. Ich kann Licht, CO2 und Wasser als limitierende Faktoren auswerten.
 
-### Hook / Phaenomen
+Das DNA-Archiv meldet Kopierfehler; Archivarin Helikase stoppt das Band. Unter dem Glasdach der Nano-Zellfabrik steht Gaertnerin Chlorella vor blassen Blaettern und runzelt die Stirn. Die Tomaten schlafen ein, obwohl die Lampen brennen, und OSMO-9 meldet sinkenden Sauerstoff. Captain Mara Zell schleppt eine alte Waage herbei, Dr. Finn Katalys schreibt die berühmteste Gleichung der Welt an die Scheibe: aus Licht, Wasser und Luft wird Zucker und Sauerstoff. Doch warum helfen Lampen manchmal nicht, und warum braucht es nachts trotzdem einen dunklen Schritt? Heute wird das Glasdach zum Labor: Wer Licht- und Dunkelreaktion trennt und wieder verbindet, rettet die Ernte.
 
-Hollaendische Gewaechshaeuser beleuchten Tomaten im Winter mit LED-Licht und pumpen $CO_2$ aus Industrieabgasen in die Halle — der Ertrag steigt deutlich. Mehr Licht plus mehr Gas gleich mehr Tomaten: Bauern betreiben angewandte Fotosynthese-Optimierung. Doch warum hilft Zusatzlicht nichts mehr, sobald $CO_2$ knapp wird — und woher stammt der freigesetzte Sauerstoff wirklich? Im Gewaechshaus steuern Gaertner Licht und CO2 wie Regler: Mehr Photonen treiben die Lichtreaktion mit ATP-Bildung ueber $ATP \to ADP + P_i$ in Rueckwaertsrichtung, mehr CO2 treibt den Calvin-Zyklus nach $6CO_2 + 6H_2O \to C_6H_{12}O_6 + 6O_2$. Wasser folgt dabei dem Psi-Gefaelle von aussen nach innen durch die Membran, der Turgor der Schliesszellen oeffnet die Stomata. Erst wer Licht, CO2 und Wasser als drei Regler mit weil und deshalb verknuepft, deutet die Fotosyntheseleistung vollstaendig.
+`Klausur-Satz: Die Lichtreaktion spaltet Wasser im Thylakoid und liefert ATP, NADPH und O2.`
 
-### Fachbegriff & Definition
+## Schritt 2 — entdecken: Die Licht-Werkzeugkiste der Gaertner
 
-Die **Fotosynthese** nutzt **Lichtenergie, um aus Kohlenstoffdioxid und Wasser Glucose und Sauerstoff aufzubauen**: $6CO_2 + 6H_2O + Lichtenergie \to C_6H_{12}O_6 + 6O_2$ — die Umkehrung der Zellatmung. Die **Lichtreaktion** an der **Thylakoidmembran** braucht Licht, spaltet Wasser ($2H_2O \to O_2 + 4H^+ + 4e^-$) und bildet **$ATP + NADPH$**. Die **Dunkelreaktion (Calvin-Zyklus)** im **Stroma** braucht kein direktes Licht, fixiert $CO_2$ und reduziert es mit $ATP + NADPH$ zu Glucose — haengt aber vom Nachschub der Lichtreaktion ab.
+AUSRUESTUNG (5 Begriffe der Werkzeugkiste):
 
-### Wirkungsgefuege / Modell
+- Thylakoid: Membranort der Lichtreaktion mit Chlorophyll.
+- Lichtreaktion: Spaltet Wasser, liefert ATP, NADPH und O2.
+- Calvin-Zyklus: CO2-Fixierung im Stroma zu Zucker.
+- Chlorophyll: Faengt Licht im Fotosystem ein.
+- Limitierender Faktor: Knappste Groesse bremst alles.
 
-Die Kausalkette lautet: **Laden, Transportieren, Produzieren**. Chlorophyll absorbiert Photonen, Wasser wird photolysiert, Elektronen bauen einen Protonengradienten fuer $ADP + P_i \to ATP$ auf und liefern $NADPH$ — Laden an der Thylakoidmembran. $ATP + NADPH$ wandern als Energie-Shuttle ins Stroma. Dort fixiert der Calvin-Zyklus $CO_2$ und baut $C_6H_{12}O_6$ — Produzieren ohne direktes Licht, aber nie ohne Nachschub. Schwaches Licht bremst das Laden, niedriges $CO_2$ das Fixieren, tiefe Temperatur die Enzyme: Gewaechshaeuser ergaenzen Licht und $CO_2$ und halten das Temperaturoptimum — erst wenn beide Stufen satt versorgt sind, wird die Temperatur zum neuen Engpass.
+`Klausur-Satz: Der Calvin-Zyklus fixiert CO2 im Stroma zu Zucker.`
 
-Klausur-Satz: `Die Photosynthese nutzt Lichtenergie, um aus Kohlenstoffdioxid und Wasser Glucose und Sauerstoff aufzubauen.`
+## Schritt 3 — entdecken: Licht fangen, Zucker bauen: Die Doppelkette
 
-## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
-PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
+WIRKUNGSGEFUEGE (Ursache zu Wirkung):
 
-### Hook / Phaenomen
-
-Ohne praezise Begriffe wird jede Klausur zum Ratespiel: Was genau treibt Licht, was verbraucht $CO_2$, was verbindet beide Stufen? Diese fuenf Bausteine brauchst du wie Werkzeug im Koffer — Ort, Bedingung und Produkt sitzen danach in Sekunden.
-
-### Fachbegriffe & Definitionen
-
-- **Lichtreaktion:** An der Thylakoidmembran, braucht Licht; spaltet $2H_2O \to O_2 + 4H^+ + 4e^-$ und bildet $ATP + NADPH$ — die Ladestufe.
-- **Dunkelreaktion (Calvin-Zyklus):** Im Stroma, ohne direktes Licht; fixiert $CO_2$ mit $ATP + NADPH$ zu Glucose — die Produktionsstufe.
-- **Thylakoid:** Membransystem im Chloroplasten mit Chlorophyll und Elektronentransportkette; Ort der Lichtreaktion mit Photolyse und Gradient.
-- **Stroma:** Fluessiger Raum um die Thylakoide; Ort der Dunkelreaktion mit Calvin-Enzymen — temperatursensibel wie jede Enzymstufe.
-- **Limitierender Faktor:** Lichtstaerke, $CO_2$-Konzentration oder Temperatur; jeweils das knappste Angebot begrenzt — das Minimumgesetz der Fotosynthese.
-
-### Wirkungsgefuege / Modell
-
-Die Begriffe greifen ineinander: Das **Thylakoid** laedt mit Licht $ATP$ und $NADPH$, das **Stroma** baut damit aus $CO_2$ Glucose. Licht treibt die Thylakoid-Stufe, $CO_2$ die Stroma-Stufe, die Temperatur das Enzymtempo beider Stufen. Der **limitierende Faktor** wechselt mit der Versorgung: Bei schwachem Licht bremst die Lichtreaktion den Nachschub, bei niedrigem $CO_2$ die Fixierung, bei Kaelte die Enzyme. Wer einen Ertrag steigern will, muss zuerst den Engpass finden — dann Zusatzlicht, $CO_2$ oder Waerme gezielt einsetzen.
-
-Klausur-Satz: `Die Lichtreaktion an der Thylakoidmembran liefert ATP und NADPH fuer die Dunkelreaktion im Stroma.`
-
-## Schritt 3 — entdecken: Kernkonzept & Wirkungsmodell
-TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
-
-### Hook / Phaenomen
-
-Warum steigt in einem beleuchteten Wasserpest-Versuch die Sauerstoffblaechenzahl mit der Lichtstaerke, bleibt aber ab einer Grenze konstant, obwohl weiter Licht gegeben wird? Dahinter arbeiten zwei Module: Thylakoidmembran und Stroma. Welches Modul fesselt Licht und spaltet Wasser, und welches fixiert $CO_2$ mit Hilfe von $ATP$ und $NADPH$?
-
-### Spiel-Aufgabe
-
-Spiel-Aufgabe im Kopf-Labor: Stelle das Aussenmedium gedanklich auf $\Psi_{aussen} = -1{,}2\,\mathrm{MPa}$ und beobachte Spaltoeffnung und Wasserpfeile, dann reguliere Lichtstaerke und $CO_2$-Zufuhr wie an Schiebereglern. Verfolge die Pfeile von $H_2O$ und $CO_2$ in das Blatt und von $O_2$ aus dem Blatt, notiere Blasenrate und Staerke-Nachweis. Erklaere in einem Satz mit weil, wann die Lichtreaktion und wann die Dunkelreaktion limitiert.
-
-### Aha-Moment & Gesetz
-
-Aha-Moment und Gesetz: Die Kausalkette lautet Licht, Kopplung, Fixierung. Die Lichtreaktion an der Thylakoidmembran liefert $ATP$ und $NADPH$ aus Licht plus Wasserspaltung $2H_2O \to O_2 + 4H^+ + 4e^-$, die Dunkelreaktion im Stroma fixiert $6CO_2 + 6H_2O \to C_6H_{12}O_6 + 6O_2$ mit genau diesen Traegern. Fehlt Licht, fehlt $ATP$ und $NADPH$; fehlt $CO_2$, stockt die Fixierung trotz Licht. Limitierung erkennt man am Engpass, nicht am Ueberfluss.
+Die Kette: Licht spaltet im Thylakoid Wasser, Sauerstoff entweicht, ATP und NADPH wandern ins Stroma. Dort fixiert der Calvin-Zyklus CO2 zu Zucker. Fehlt Licht, fehlt Energie; fehlt CO2, steht der Zyklus; fehlt Wasser, schliessen die Spaltoeffnungen und CO2 fehlt erst recht.
 
 ```diagram
-    Lichtreaktion (Thylakoidmembran)      Dunkelreaktion (Stroma)
-    Licht + 2H2O --> O2 + ATP + NADPH  ==>  CO2-Fixierung
-    -------------------------------------------------------------
-    Licht hoch + CO2 niedrig  --> Blasen konstant (CO2 limitiert)
-    Licht niedrig + CO2 hoch  --> Blasen niedrig (Licht limitiert)
-    Gesamt: 6CO2 + 6H2O --> C6H12O6 + 6O2 (mit ATP + NADPH)
-    Wasserpfeile: Psi(aussen) -> Blatt bei Wassermangel schliessen Stomata.
+Licht + H2O -> [Thylakoid] -> O2 + ATP + NADPH
+ATP + NADPH + CO2 -> [Stroma/Calvin] -> Zucker
+Limit: Licht | CO2 | H2O — knappste bremst
 ```
 
-Klausur-Satz: `Die Lichtreaktion spaltet Wasser an der Thylakoidmembran und die Dunkelreaktion fixiert CO2 im Stroma mithilfe von ATP und NADPH.`
+`Klausur-Satz: Aus 132 g CO2 werden maximal 90 g Glukose.`
 
 ## Anekdote & Fun-Fact
 
-**Anekdote / Fun-Fact (DE)**: Moderne Gewaechshaeuser in den Niederlanden beleuchten Tomaten im Winter mit LED-Licht und pumpen zusaetzlich $CO_2$ aus Industrieabgasen in die Halle. Der Ertrag steigt deutlich. Der Trick ist einfache Biologie: Mehr Licht verlaengert die Lichtreaktion, mehr $CO_2$ beschleunigt die Dunkelreaktion. Erst wenn beide Stufen satt versorgt sind, wird die Temperatur zum neuen Engpass. Bauern betreiben damit angewandte Fotosynthese-Optimierung.
+**Anekdote / Fun-Fact (DE)**: Ein Blatt wiegt die Luft: Aus unsichtbarem CO2 baut es sichtbaren Zucker — die stillste Fabrik der Welt.
 
-**Bezug zum Konzept**: `Licht treibt die Thylakoid-Stufe, CO2 treibt die Stroma-Stufe, die Temperatur bestimmt das Enzymtempo.`
+**Bezug zum Konzept**: Licht fangen, Zucker bauen: Zwei Orte, ein Produkt.
 
-## Schritt 4 — ausprobieren: Interaktive Praxis & Osmose-Labor
+## Schritt 4 — ausprobieren: Licht-Sandkasten: Drehe an der Sonnen-Schraube
 
-BEISPIEL (geleitete Aufgabe mit Werkzeug):
+[Werkzeug: formula]
 
-[Werkzeug: osmose-lab]
-
-AUFGABE (Spiel-Auftrag, AFB II, 3 Stufen): Stufe 1 Messen: Wasserpest zeigt unter Rotlicht $40$ Blasen pro Minute, unter Gruenlicht $8$. Beschreibe den Unterschied. Stufe 2 Zuordnen: Entscheide mit Schieberegler-Logik, ob Lichtreaktion oder Dunkelreaktion limitiert, wenn $CO_2$-Plus nichts aendert. Stufe 3 Sichern: Erklaere mit $ATP$ und $NADPH$ in einer Kausalkette mit weil.
+AUFGABE (Target Challenge): Target Challenge: 6 CO2 + 6 H2O liefern 1 Glukose (180 g). Rechne aus 132 g CO2 die Zuckermasse und variiere Licht von 2 auf 10 klx. Ziel: Zeige Saettigung und benenne den limitierenden Faktor je Stufe. AUFGABE konkret: 132 g CO2: Wieviel Glukose maximal?
 
 HILFE:
-1. Schritt 1: Chlorophyll absorbiert Rot und Blau stark, Gruen schwach.
-2. Schritt 2: Aendert $CO_2$-Plus nichts, limitiert das Licht; aendert Lichtplus nichts, limitiert $CO_2$.
-3. Schritt 3: Lichtreaktion liefert $ATP$ und $NADPH$; ohne Traeger stockt $6CO_2 + 6H_2O \to C_6H_{12}O_6 + 6O_2$.
+1. Molmassen: CO2 44, Glukose 180.
+2. 6 zu 1 verhaelt.
+3. Lichtdeoeckelt nur bis Saettigung.
 
-MUSTERLOESUNG: Unter Rotlicht entstehen deutlich mehr $O_2$-Blasen als unter Gruenlicht, weil Chlorophyll Rot stark absorbiert und Gruen reflektiert. Die Lichtreaktion an der Thylakoidmembran spaltet $H_2O$ und bildet $ATP$ und $NADPH$; die Dunkelreaktion im Stroma fixiert $CO_2$ zu Glucose gemaess $6CO_2 + 6H_2O \to C_6H_{12}O_6 + 6O_2$. Bleibt die Rate trotz $CO_2$-Plus konstant, limitiert das Licht die Lichtreaktion; steigt sie mit $CO_2$, limitiert die Dunkelreaktion.
+MUSTERLÖSUNG: 132 g CO2 sind 3 mol, also 0,5 mol Glukose gleich 90 g. Mehr Licht hilft nur bis zur Saettigung, danach limitiert CO2.
 
-Klausur-Satz: `Lichtstaerke, CO2-Konzentration und Temperatur limitieren je nach Versorgungsstatus Licht- oder Dunkelreaktion.`
+`Klausur-Satz: Thylakoid heisst Licht, Stroma heisst Zucker.`
 
-## Schritt 5 — ausprobieren: Verfahrensvergleich & Abgrenzung
+## Schritt 5 — ausprobieren: Duell der Reaktionen: Licht gegen Dunkel
 
-VERGLEICH (Wahl des Verfahrens, A gegen B):
+VERGLEICH: Waehle erst den Ort — (i) Thylakoid oder (ii) Stroma — dann loesen.
 
-VERGLEICH: Waehle erst das Verfahren — (i) Lichtreaktions-Verfahren (Signalwoerter Thylakoid, Licht, Wasserspaltung, $O_2$, Bildung von $ATP + NADPH$) oder (ii) Dunkelreaktions-Verfahren (Signalwoerter Stroma, Calvin, $CO_2$-Fixierung, Glucose, Verbrauch von $ATP + NADPH$) — dann loesen.
+Weg A (Licht-Weiche): Thylakoid, Wasser, O2, ATP, NADPH.
 
-AUFGABE A: In einem Versuch wird isoliertes Thylakoidmaterial belichtet; gemessen wird Sauerstoff-Freisetzung bei Wasserzugabe.
-AUFGABE B: In einem Versuch wird isoliertes Stroma mit $CO_2$ plus $ATP$ und $NADPH$ versorgt; gemessen wird Glucose-Bildung auch im Dunkeln.
+Weg B (Zucker-Weiche): Stroma, CO2, Calvin, Zucker.
 
-HILFE: A nennt Thylakoid plus Licht plus $O_2$ aus Wasser, daher Verfahren (i). B nennt Stroma plus $CO_2$ plus Glucose im Dunkeln, daher Verfahren (ii).
+AUFGABE A: Sauerstoff steigt bei Licht. Welcher Ort?
 
-ANTWORT: A erfordert Verfahren (i): Die Lichtreaktion an der Thylakoidmembran spaltet Wasser zu $O_2$ und bildet $ATP$ sowie $NADPH$ nur unter Licht. B erfordert Verfahren (ii): Die Dunkelreaktion im Stroma fixiert $CO_2$ mithilfe von $ATP$ und $NADPH$ zu Glucose und laeuft auch ohne direktes Licht, solange Nachschub vorhanden ist.
+AUFGABE B: Zucker steigt bei CO2-Duengung. Welcher Ort?
 
-Klausur-Satz: `O2 stammt aus der Photolyse des Wassers in der Lichtreaktion, Glucose aus der CO2-Fixierung in der Dunkelreaktion.`
+HILFE: A nennt O2 — Weg A. B nennt CO2 — Weg B.
+
+ANTWORT: A folgt Weg A als Lichtreaktion im Thylakoid; B folgt Weg B als Calvin-Zyklus im Stroma.
+
+`Klausur-Satz: Der knappste Faktor bremst die ganze Kette.`
 
 ## Schritt 6 — check: Selbsttest zu Photosynthese Licht- und Dunkelreaktion
-CHECK (drei Fragen mit Antworten):
 
-FRAGE: Wie lautet die Gesamtgleichung der Fotosynthese? | ANTWORT: $6 CO_2 + 6 H_2O + Lichtenergie \to C_6H_{12}O_6 + 6 O_2$.
-FRAGE: Vergleichen Sie Ort und Lichtbedarf beider Reaktionen. | ANTWORT: Lichtreaktion an der Thylakoidmembran nur mit Licht; Dunkelreaktion im Stroma ohne direktes Licht, aber abhaengig von $ATP$ und $NADPH$.
-FRAGE: Nennen Sie die drei limitierenden Faktoren mit Wirkort. | ANTWORT: Lichtstaerke fuer die Lichtreaktion, $CO_2$-Konzentration fuer die Dunkelreaktion, Temperatur fuer die Enzymaktivitaet beider Stufen.
+FRAGE: Wo laeuft die Lichtreaktion? | ANTWORT: In der Thylakoidmembran mit Chlorophyll.
+FRAGE: Was liefert sie dem Calvin-Zyklus? | ANTWORT: ATP und NADPH als Energie und Wasserstoff.
+FRAGE: Was limitiert nachts? | ANTWORT: Licht als Energie, also steht alles.
 
-Klausur-Satz: `ATP und NADPH verbinden als Energietraeger die Thylakoid-Stufe mit dem Calvin-Zyklus im Stroma.`
+`Klausur-Satz: O2 stammt aus Wasser, Zucker aus CO2.`
 
 ## Fehlvorstellung
 
-(Kein Schritt; wird vom Parser uebersprungen.)
+1. Fehlvorstellung: Licht- und Dunkelreaktion liefen zeitlich getrennt.
+   Korrektur-Satz: `Getrennt sind Orte und Aufgaben, nicht Tag und Nacht: Calvin braucht die Lichtprodukte.`
+2. Fehlvorstellung: Sauerstoff kaeme aus CO2.
+   Korrektur-Satz: `O2 stammt aus der Fotolyse von Wasser.`
 
-1. Fehlannahme: Die Dunkelreaktion laufe nachts, die Lichtreaktion tags, beide seien zeitlich getrennt.
-   Korrektur: Die Dunkelreaktion braucht kein direktes Licht, ist aber ueber $ATP$ und $NADPH$ an die laufende Lichtreaktion gekoppelt.
-   Korrektur-Satz: `Die Dunkelreaktion braucht kein direktes Licht, ist aber ueber ATP und NADPH an die laufende Lichtreaktion gekoppelt.`
-2. Fehlannahme: Der freigesetzte Sauerstoff stamme aus $CO_2$.
-   Korrektur: Der freigesetzte Sauerstoff stammt aus der Photolyse von Wasser, nicht aus Kohlenstoffdioxid.
-   Korrektur-Satz: `Der freigesetzte Sauerstoff stammt aus der Photolyse von Wasser, nicht aus Kohlenstoffdioxid.`
+## Schritt 7 — szenario: Klausurtransfer: Gutachten aus dem Gewaechshaus
 
-## Schritt 7 — szenario: Klausurtransfer: Photosynthese Licht- und Dunkelreaktion
-ROLLE: Du bist Tutorin in der EF und beraetst einen Gewaechshaus-Betrieb.
-SITUATION: Der Betrieb will im Winter den Tomatenertrag steigern und ueberlegt zwischen Zusatzlicht, $CO_2$-Anreicherung und staerkerer Heizung.
-AUFGABE (AFB II/III): Erklaere in einer zusammenhaengenden Darstellung (ca. 150 Woerter) Licht- und Dunkelreaktion mit Orten sowie die drei limitierenden Faktoren und gib eine begruendete Empfehlung.
-RUBRIC (30 XP): Beide Reaktionen mit Ort korrekt (10 XP) | Drei Faktoren mit Wirkort erklaert (10 XP) | Empfehlung Zusatzlicht plus $CO_2$ mit Temperatur-Optimum verknuepft (10 XP).
+ROLLE: Du bist Gewaechaus-Gutachterin.
+SITUATION: Trotz Lampen bleibt die Ernte blass. Beurteile in ca. 130 Woertern mit Orten, Produkten und limitierenden Faktoren, ob Licht, CO2 oder Wasser bremst.
+RUBRIC (30 XP): Orte (8 XP) | Produkte (8 XP) | Faktorlogik (8 XP) | Massnahme (6 XP).
 
-## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
+`Klausur-Satz: Saettigung zeigt den naechsten Engpass.`
 
-TAKEAWAY (Kernbotschaft in einem Kasten):
+## Schritt 8 — reflexion: Takeaway & Reflexion
 
-Eine Gleichung, zwei Orte, drei Faktoren: $6 CO_2 + 6 H_2O$ zu Glucose und $O_2$; Thylakoid laedt mit Licht $ATP$ und $NADPH$, Stroma baut damit aus $CO_2$ Glucose; Licht, $CO_2$ und Temperatur limitieren den Ertrag. Merksatz: Sauerstoff stammt aus Wasser, Zucker aus $CO_2$, Bruecke sind $ATP + NADPH$.
-Takeaway-Satz: `Thylakoid laedt mit Licht ATP und NADPH, Stroma baut damit aus CO2 Glucose; Licht, CO2 und Temperatur limitieren den Ertrag.`
+TAKEAWAY:
 
-REFLEXION (zwei Fragen):
-1. Welcher Schritt fiel schwerer — die Zuordnung von Ort und Produkt (Schritt 4) oder die Wahl zwischen Licht- und Dunkelreaktion (Schritt 5)?
-2. Beim naechsten Mal markiere ich zuerst die Signalwoerter Thylakoid oder Stroma und entscheide danach ueber den limitierenden Faktor.
+Takeaway-Satz: `Zwei Orte, ein Ziel: Zucker aus Licht und Luft.`
+
+`Klausur-Satz: Zwei Orte, ein Ziel: Zucker aus Licht und Luft.`
+
+
+REFLEXION:
+1. Welcher Schritt fiel schwerer — die Sandkasten-Challenge (Schritt 4) oder die Verfahrenswahl (Schritt 5)?
+2. Beim naechsten Mal sichere ich zuerst die Werkzeugkiste, weil jeder Handgriff darauf aufbaut.

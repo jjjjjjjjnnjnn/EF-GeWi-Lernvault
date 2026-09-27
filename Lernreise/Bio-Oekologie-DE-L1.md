@@ -11,149 +11,118 @@ tags: [EF, Bio, Oekologie]
 version: Lesson-v3
 ---
 
-# Lernreise: Oekologie: Nische, Population, Energiefluss (L1, Ziel Klausur)
+# Lernreise: Oekologie: Nische, Population, Energiefluss — Episode B19: Blackout im ATP-Keller
 
-<!-- Lesson v3 9-Schritt-Architektur: Schritt 1 bis 8 feste Struktur; Fehlvorstellung zwischen Schritt 6 und 7 (Parser ueberspringt, zaehlt nicht); interaktives [Werkzeug: <id>]; Gating: check/szenario nicht bestanden = Weiter deaktiviert; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
+<!-- Campaign: Nano-Zellfabrik-Krise | Bio | Instapower: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
-## Schritt 1 — entdecken: Ziele & Phänomen-Einstieg
-ZIELE (drei messbare Ziele dieser Lektion):
+## Schritt 1 — entdecken: Der Hilferuf vom Fabrikteich
 
-1. Du kannst die oekologische Nische als mehrdimensionalen Funktionsraum vom Habitat als Aufenthaltsort unterscheiden und Nischendifferenzierung entlang von Morphologie, Zeit und Nahrung erklaeren.
-2. Du kannst exponentielles und logistisches Populationswachstum beschreiben und die Kapazitaetsgrenze $K$ deuten.
-3. Du kannst einseitigen Energiefluss mit etwa zehn Prozent Weitergabe je Trophieebene vom Stoffkreislauf unterscheiden und die Biomassepyramide erklaeren (AFB II).
+ZIELE:
+1. Ich kann oekologische Nische und Population beschreiben.
+2. Ich kann Energiefluss und Trophieebenen mit der 10-Prozent-Regel deuten.
+3. Ich kann Eutrophierung und Sukzession begruenden.
 
-### Hook / Phaenomen
+Mitochondrien melden Stromausfall; Notstromaggregat Glykolyse springt an. Hinter der Nano-Zellfabrik liegt ein kleiner Teich, und heute Morgen schwimmen dort die Fische mit dem Bauch nach oben. Frosch-Beobachter Quak funkt SOS an Captain Mara Zell: Das Wasser ist trüb, die Algen wuchern, und nachts fehlt der Sauerstoff. Dr. Finn Katalys misst Nitrat aus dem Fabrikabfluss und OSMO-9 zeichnet eine Bevoelkerungskurve, die erst explodiert und dann abstuerzt. Mara Zell versteht: Hier kaempfen Nische, Nahrungsnetz und Energiefluss um das Gleichgewicht, und irgendwo ist die Kette gerissen. Wer heute oekologische Nische, Population, Sukzession und Energiepyramide versteht, findet das Leck und rettet den Teich vor dem Umkippen.
 
-Auf Galapagos knacken Finken harte Samen, picken Insekten oder stechen in Kakteen — ein Schnabel je Nahrung, ein Dutzend Arten auf engstem Raum. Warum vertreibt keine die andere? Gleichzeitig frisst ein Waldkauz Maeuse, wird aber nie so schwer wie alle Maeuse zusammen. Zwei Raetsel — Nische und Energie — entscheiden ueber Koexistenz und Pyramide. Darwinfinken teilen Samen, Insekten und Kakteen per Schnabelform, Waldkaeuze bleiben leichter als alle Maeuse zusammen: Nischendifferenzierung in Zeit, Raum und Nahrung senkt Konkurrenz und ermoeglicht Koexistenz. Energie fliesst einseitig mit nur etwa 10 Prozent je Ebene nach $6CO_2 + 6H_2O \to C_6H_{12}O_6 + 6O_2$ in Rueckwaertsrichtung bei Atmung, Materie kreist ueber Destruenten. Wer Energiefluss und Stoffkreislauf mit weil und deshalb trennt, beurteilt jedes Nahrungsnetz korrekt.
+`Klausur-Satz: Die Nische beschreibt Ansprueche und Rolle einer Art im System.`
 
-### Fachbegriff & Definition
+## Schritt 2 — entdecken: Die Oekologie-Werkzeugkiste der Teichwache
 
-Die **oekologische Nische** ist der **mehrdimensionale Funktionsraum** einer Art aus Ressourcen, Zeit und Raum (Nahrung, Aktivitaetszeit, Fresshoehe, Toleranz) — das **Habitat** ist dagegen nur der **Aufenthaltsort** (wo). Ueberlappung erzeugt **Konkurrenz**, **Nischendifferenzierung** senkt sie und ermoeglicht **Koexistenz**. Die **Population** ($N$ Individuen einer Art zur gleichen Zeit) waechst bei freien Ressourcen **exponentiell** (J-Kurve) und bei Begrenzung **logistisch** (S-Kurve) bis zur **Kapazitaetsgrenze $K$**. Der **Energiefluss** fliesst **einseitig** mit Waermeverlust — pro Ebene nur ca. $10\,\%$ — waehrend die **Materie im Stoffkreislauf** zirkuliert.
+AUSRUESTUNG (5 Begriffe der Werkzeugkiste):
 
-### Wirkungsgefuege / Modell
+- Oekologische Nische: Gesamtheit der Ansprüche und Rolle einer Art.
+- Population: Alle Individuen einer Art in einem Gebiet.
+- Nahrungsnetz: Verflochtene Nahrungsbeziehungen statt linearer Kette.
+- Energiepyramide: Nur ca. 10 % fliessen je Ebene weiter.
+- Eutrophierung: Naehrstoff-Plus erzeugt Algenbluete und Sauerstoffminus.
 
-Die Kausalkette lautet: **Teilen, Begrenzen, Weitergeben**. Erstens teilen Arten die Ressourcen per Differenzierung (Schnabel, Zeit, Hoehe) — Konkurrenz sinkt, Koexistenz steigt. Zweitens begrenzt $K$ das Wachstum: Vollt die Population die Ressourcen, flacht die S-Kurve ab. Drittens fliesst Energie von **Produzenten** ($6CO_2 + 6H_2O \to C_6H_{12}O_6 + 6O_2$) ueber **Konsumenten** zu **Destruenten** (Bakterien, Pilze) und nimmt je Ebene auf etwa ein Zehntel ab, weil Atmung Waerme abgibt; Materie kehrt ueber Destruenten als Anorganisches zurueck. Merksatz: Energie fliesst, Materie kreist.
+`Klausur-Satz: Nur etwa zehn Prozent der Energie erreichen die naechste Ebene.`
 
-Klausur-Satz: `Energie fliesst in einem Oekosystem einseitig und nimmt pro Trophieebene ab, waehrend die Materie im Stoffkreislauf zirkuliert.`
+## Schritt 3 — entdecken: Von der Nische bis zur Pyramide: Die Flusskette
 
-## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
-PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
+WIRKUNGSGEFUEGE (Ursache zu Wirkung):
 
-### Hook / Phaenomen
-
-Zwei Meisenarten im selben Wald: Art A sucht morgens kleine Insekten in aeusseren Zweigen, Art B nachmittags grosse in Rindenritzen. Gleicher Wald, kein Krieg — warum? Und warum wiegt die Vogelwelt nur einen Bruchteil der Blaetterwelt? Fuenf Begriffe beantworten beides.
-
-### Fachbegriffe & Definitionen
-
-- **Oekologische Nische:** Funktionsraum einer Art aus Ressourcen, Zeit und Raum — das wie der Lebensweise, nicht das wo.
-- **Population:** Individuen einer Art in einem Gebiet zur gleichen Zeit; $N$ als Groesse, $K$ als Grenze — J-Kurve frei, S-Kurve begrenzt.
-- **Produzent:** Baut mit Lichtenergie aus Anorganischem Organisches auf, zum Beispiel $6CO_2 + 6H_2O \to C_6H_{12}O_6 + 6O_2$ — Basis jeder Pyramide.
-- **Destruent:** Baut Totes zu Anorganischem ab und fuehrt es zurueck (Bakterien, Pilze) — Scharnier des Kreislaufs.
-- **Energiefluss:** Einseitige Weitergabe mit Waermeverlust; pro Ebene nur ca. $10\,\%$ — daher schrumpft die Biomasse nach oben.
-
-### Wirkungsgefuege / Modell
-
-Die Begriffe bilden das Oekosystem: **Produzenten, Konsumenten und Destruenten** sind die drei Stufen, ueber die Energie und Materie weitergegeben werden. Habitat antwortet auf wo, Nische auf wie: Nahrung, Zeit, Hoehe und Toleranz. Die Meisen teilen Zeit, Ort und Beute — ihre Nischen ueberlappen kaum, also koexistieren sie. Die Pyramide folgt der Zehn-Prozent-Regel: $100\,\%$ zu $10\,\%$ zu $1\,\%$ — oben bleibt wenig uebrig, weil jede Ebene Atmungswärme zahlt.
-
-Klausur-Satz: `Produzenten, Konsumenten und Destruenten bilden die drei Stufen, ueber die Energie und Materie im Oekosystem weitergegeben werden.`
-
-## Schritt 3 — entdecken: Kernkonzept & Wirkungsmodell
-TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
-
-### Hook / Phaenomen
-
-Warum findet man im See nach Duengereintrag erst Algenbluete, dann Fischsterben, obwohl Duenger doch Wachstum foerdert? Das Wasser kippt ueber eine Kausalkette. Wie wandert $O_2$ aus dem System, und warum bleibt von $1000\,\mathrm{kg}$ Algen nur etwa $10\,\mathrm{kg}$ Fisch uebrig?
-
-### Spiel-Aufgabe
-
-Spiel-Aufgabe im Kopf-Labor: Denke das Gewaesser als Osmose-Landschaft mit Stroemen und Pfeilen. Stelle den Naehrstoff-Regler von niedrig auf hoch und verfolge die Pfeile: Naehrstoffe $\to$ Algen $\to$ Detritus $\to$ $O_2$-Zehrung. Notiere $O_2$-Kurve, Biomassepyramide und Wasserpfeile bei $\Psi_{aussen} = -1{,}2\,\mathrm{MPa}$ im Salzteich gegen $0\,\mathrm{MPa}$ im Suesswasser. Erklaere in einem Satz mit weil, wo der Engpass liegt.
-
-### Aha-Moment & Gesetz
-
-Aha-Moment und Gesetz: Die Kausalkette lautet Eintrag, Bluete, Zehrung. Nur etwa $10\,\%$ der Energie erreichen die naechste Trophieebene, der Rest geht als Waerme und Atmung $C_6H_{12}O_6 + 6O_2 \to 6CO_2 + 6H_2O + Energie$ verloren. Nach Absterben der Algen atmen Destruenten den $O_2$ weg, Fische ersticken trotz Naehrstoffplus. Pyramiden lesen heisst Fluesse lesen: Breite unten bedeutet Verlust nach oben.
+Die Kette: Nitrat duengt Algen, Algenbluete beschattet, Absterben fuettert Bakterien, Bakterien fressen Sauerstoff — Fischsterben. Parallel begrenzt die Kapazitaetsgrenze das Wachstum: erst exponentiell, dann logistisch. Nur ein Zehntel der Energie erreicht die naechste Ebene, daher die Pyramide.
 
 ```diagram
-    Naehrstoffe hoch --> Algenbluete --> Detritus hoch
-    Destruenten-Atmung: O2 sinkt, CO2 steigt, Fische sterben
-    Energiepyramide (kJ): Produzenten 10000 | Herbivoren 1000 | Karnivoren 100
-    Regel: nur ca. 10 % pro Ebene, Rest Atmung und Waerme
-    Wasserpfeile: Salz aussen (Psi negativ) zieht Wasser aus Algenzellen.
+Nitrat -> Algenbluete -> Schatten -> Detritus -> Bakterien -> O2 minus -> Fisch tot
+Wachstum: exponentiell -> Kapazitaet -> logistisch
+Energie je Ebene: nur ca. 10 % weiter
 ```
 
-Klausur-Satz: `Da auf jeder Trophieebene nur etwa zehn Prozent der Energie weitergegeben werden, nimmt die Biomasse nach oben hin ab.`
+`Klausur-Satz: Nitrat duengt die Bluete, der Abbau frisst den Sauerstoff.`
 
 ## Anekdote & Fun-Fact
 
-**Anekdote / Fun-Fact (DE)**: Auf den Galapagosinseln leben mehrere Finkenarten, die sich vor allem in der Form ihres Schnabels unterscheiden. Die einen knacken harte Samen, andere picken Insekten, wieder andere stechen in Kakteen. Weil jede Art andere Nahrung nutzt, ueberlappen ihre oekologischen Nischen kaum — und sie koennen dauerhaft nebeneinander existieren.
+**Anekdote / Fun-Fact (DE)**: Ein Teich kippt ueber Nacht: Tagsueber produzieren Algen Sauerstoff, nachts atmen alle — die Bilanz entscheidet ueber Leben und Tod.
 
-**Bezug zum Konzept**: `Die Darwinfinken zeigen, wie die Differenzierung der Nahrungsnische die zwischenartliche Konkurrenz senkt und die Koexistenz ermoeglicht.`
+**Bezug zum Konzept**: Die Energiepyramide zeigt, warum oben wenig ankommt.
 
-## Schritt 4 — ausprobieren: Interaktive Praxis & Osmose-Labor
+## Schritt 4 — ausprobieren: Waage-Sandkasten: Rette den Teich
 
-BEISPIEL (geleitete Aufgabe mit Werkzeug):
+[Werkzeug: balance-board]
 
-[Werkzeug: osmose-lab]
-
-AUFGABE (Spiel-Auftrag, AFB II, 3 Stufen): Stufe 1 Schaetzen: Aus $1000\,\mathrm{kg}$ Algen werden nur etwa $10\,\mathrm{kg}$ Fisch. Erklaere den Schwund. Stufe 2 Trennen: Zwei Vogelarten fressen gleiche Samen, koexistieren aber durch Tag- und Nachtaktivitaet. Benenne das Prinzip. Stufe 3 Sichern: Formuliere zwei Saetze mit weil und deshalb zur Konkurrenz. Stelle im Osmose-Labor den Naehrstoff-Regler von niedrig auf hoch und den Aussen-Psi-Regler auf $-1{,}2\,\mathrm{MPa}$ gegen $0\,\mathrm{MPa}$ und verfolge Biomassepyramide und Wasserpfeile.
+AUFGABE (Target Challenge): Target Challenge: Produzenten 10 000 kJ. Verteile nach 10-Prozent-Regel auf drei Ebenen und kippe zusaetzlich 50 kg Nitrat in die Simulation. Ziel: Zeige, warum Ebene 3 hungert und der Teich umkippt. AUFGABE konkret: 10 000 kJ Produzenten: Wieviel erreicht die dritte Ebene?
 
 HILFE:
-1. Schritt 1: Nur ca. $10\,\%$ pro Ebene weiter, Rest Atmung $C_6H_{12}O_6 + 6O_2 \to 6CO_2 + 6H_2O$.
-2. Schritt 2: Zeitliche Nischentrennung senkt Konkurrenz.
-3. Schritt 3: Nischendifferenzierung in Zeit, Raum und Nahrung nennen.
+1. Pro Ebene mal 0,1.
+2. Drei Ebenen heisst zweimal weitergeben.
+3. Eutrophierung frisst Sauerstoff.
 
-MUSTERLOESUNG: Auf jeder Trophieebene werden nur etwa $10\,\%$ der Energie weitergegeben, weil der Grossteil durch Atmung $C_6H_{12}O_6 + 6O_2 \to 6CO_2 + 6H_2O + Energie$ und Waerme verloren geht. Zwei Arten mit gleicher Nahrung koexistieren, wenn sie sich in Zeit, Raum oder Nahrung unterscheiden, weil die Nischendifferenzierung die zwischenartliche Konkurrenz senkt und deshalb beide Populationen stabil bleiben.
+MUSTERLÖSUNG: Ebene 2 erhaelt ca. 1 000 kJ, Ebene 3 ca. 100 kJ; der Rest geht als Waerme verloren. Nitrat treibt die Bluete, der Abbau frisst den Sauerstoff.
 
-Klausur-Satz: `Die Nischendifferenzierung in Zeit, Raum und Nahrung verringert die zwischenartliche Konkurrenz und ermoeglicht so die Koexistenz beider Arten.`
+`Klausur-Satz: 100 kJ auf Ebene drei erklaeren Hunger und Kippen.`
 
-## Schritt 5 — ausprobieren: Verfahrensvergleich & Abgrenzung
+## Schritt 5 — ausprobieren: Duell der Kurven: Exponentiell gegen logistisch
 
-VERGLEICH (Wahl des Verfahrens, A gegen B):
+VERGLEICH: Waehle erst die Kurve — (i) exponentiell oder (ii) logistisch — dann loesen.
 
-VERGLEICH: Waehle erst das Verfahren — (i) Energiefluss-Verfahren (einseitig, Abnahme je Ebene, Waermeverlust) oder (ii) Stoffkreislauf-Verfahren (Kreislauf, Rueckfuehrung durch Destruenten, Wiederverwertung) — dann loesen.
+Weg A (Labor-Weiche): Ohne Grenze, Kurve steigt immer steiler.
 
-AUFGABE A: Ein Text stellt fest, dass die Individuenzahl der Raubtiere stets deutlich geringer ist als die der Pflanzenfresser, und fragt nach der Ursache. Welches Verfahren ist zu waehlen, und wie laesst sich die Frage beantworten?
+Weg B (Teich-Weiche): Mit Kapazitaetsgrenze, Kurve flacht zum S ab.
 
-AUFGABE B: Ein Text erklaert, dass der Kohlenstoff aus abgestorbenen Blaettern von Pilzen und Bakterien freigesetzt und spaeter von den Pflanzen erneut aufgenommen wird. Welches Verfahren ist zu waehlen, und wie laesst sich die Frage beantworten?
+AUFGABE A: Bakterien im Ueberfluss verdoppeln sich stuendlich. Welche Kurve?
 
-HILFE: A fragt nach der Mengenabnahme ueber die Trophieebenen, also nach Energie, daher Verfahren (i). B beschreibt ein Kreislaufgeschehen mit Rueckfuehrung durch Destruenten, also Materie, daher Verfahren (ii).
+AUFGABE B: Fische im Teich mit Futtergrenze. Welche Kurve?
 
-ANTWORT: A erfordert Verfahren (i): Auf jeder Trophieebene werden nur etwa zehn Prozent der aufgenommenen Energie an die naechste Ebene weitergegeben; der Rest wird bei der Atmung als Waerme abgegeben. Da die verfuegbare Energie nach oben hin stark abnimmt, kann die oberste Ebene nur eine entsprechend geringe Biomasse und Individuenzahl tragen. B erfordert Verfahren (ii): Die Destruenten bauen organisches Material ab und setzen dabei anorganische Stoffe wie Kohlendioxid frei. Diese anorganischen Stoffe werden von den Produzenten wieder aufgenommen und in Biomasse eingebaut — die Materie durchlaeuft also einen Kreislauf, waehrend die Energie nur einseitig fliesst.
+HILFE: A ohne Grenze — Weg A. B mit Grenze — Weg B.
 
-Klausur-Satz: `Die Abnahme der Biomasse nach oben erklaert sich aus dem einseitigen Energiefluss, waehrend die Rueckfuehrung anorganischer Stoffe durch Destruenten den Stoffkreislauf bildet.`
+ANTWORT: A folgt Weg A als exponentielles Wachstum; B folgt Weg B als logistisches Wachstum mit Kapazitaetsgrenze.
+
+`Klausur-Satz: Ohne Grenze exponentiell, mit Grenze logistisch.`
 
 ## Schritt 6 — check: Selbsttest zu Oekologie: Nische, Population, Energiefluss
-CHECK (drei Fragen mit Antworten):
 
-FRAGE: Worin unterscheidet sich die oekologische Nische vom Habitat? | ANTWORT: Das Habitat ist der konkrete Aufenthaltsort einer Art, waehrend die oekologische Nische die Gesamtheit ihrer funktionellen Ansprueche an Ressourcen, Zeit und Raum beschreibt.
-FRAGE: Wie unterscheiden sich die exponentielle und die logistische Wachstumskurve einer Population? | ANTWORT: Die exponentielle Kurve waechst ohne Begrenzung immer schneller, waehrend die logistische Kurve sich der Kapazitaetsgrenze K naehert und dort ein Plateau bildet.
-FRAGE: Warum kann Energie im Oekosystem nicht im Kreis laufen, Materie aber schon? | ANTWORT: Weil bei jedem Energietransfer ein Teil als Waerme an die Umwelt abgegeben und damit fuer das System unbrauchbar wird, waehrend Atome und Molekuele ueber die Destruenten immer wieder in den Kreislauf zurueckkehren.
+FRAGE: Was ist eine oekologische Nische? | ANTWORT: Ansprueche plus Rolle einer Art im System.
+FRAGE: Wieviel Energie fliesst weiter? | ANTWORT: Etwa 10 % je Trophieebene.
+FRAGE: Was treibt die Eutrophierung? | ANTWORT: Naehrstoff-Plus, Algenbluete, Sauerstoffminus.
 
-Klausur-Satz: `Energie wird bei jedem Transfer teilweise als Waerme abgegeben und fliesst daher einseitig, wohingegen Materie durch Destruenten im Kreislauf gehalten wird.`
+`Klausur-Satz: Netze statt Ketten denken schuetzt vor Fehlschluessen.`
 
 ## Fehlvorstellung
 
-(Kein Schritt; wird vom Parser uebersprungen.)
+1. Fehlvorstellung: Nahrungsketten seien linear.
+   Korrektur-Satz: `Real herrschen Netze; Ketten sind nur Ausschnitte.`
+2. Fehlvorstellung: Energie kreise wie Stoffe.
+   Korrektur-Satz: `Energie fliesst einseitig und geht als Waerme verloren.`
 
-1. Fehlannahme: Energie zirkuliere in der Nahrungskette wie Materie.
-   Korrektur: Energie fliesst einseitig und wird pro Trophieebene geringer, waehrend die Materie im Stoffkreislauf zirkuliert.
-   Korrektur-Satz: `Energie fliesst einseitig und wird pro Trophieebene geringer, waehrend die Materie im Stoffkreislauf zirkuliert.`
-2. Fehlannahme: Die Nische sei der Wohnort der Art.
-   Korrektur: Die oekologische Nische beschreibt die funktionellen Ansprueche einer Art, waehrend das Habitat nur ihren Aufenthaltsort angibt.
-   Korrektur-Satz: `Die oekologische Nische beschreibt die funktionellen Ansprueche einer Art, waehrend das Habitat nur ihren Aufenthaltsort angibt.`
+## Schritt 7 — szenario: Klausurtransfer: Anhoerung vor dem Teichgericht
 
-## Schritt 7 — szenario: Klausurtransfer: Oekologie: Nische, Population, Energiefluss
-ROLLE: Du bist Mitglied einer Naturschutz-AG und sollst auf einer Gemeinderatssitzung eine geplante Massnahme bewerten.
-SITUATION: In einem Waldgebiet soll der Fuchs intensiv bejagt werden, weil er angeblich die Population der Hasen bedroht. Ein Teil der Anwesenden erwartet, dass die Hasen daraufhin stark zunehmen.
-AUFGABE (AFB II/III): Beurteile den Eingriff in einer zusammenhaengenden Stellungnahme (ca. 150 Woerter), indem du den Energiefluss und die Rolle der Trophieebenen heranziehst und zu einem kriteriengeleiteten Urteil kommst.
-RUBRIC (30 XP): Einordnung des Fuchses als Konsument einer hoeheren Trophieebene (5 XP) | Erklaerung der begrenzten Energieweitergabe und der Kapazitaetsgrenze der Populationen (10 XP) | Analyse moeglicher Folgen des Eingriffs — Verschiebung im Nahrungsnetz, Konkurrenz-, Raeuber-Beute-Effekte (10 XP) | Kriteriengeleitetes Urteil unter Abwaegung von Sachurteil und naturschutzfachlichen Normen (5 XP).
+ROLLE: Du bist Sachverstaendige vor dem Teichgericht.
+SITUATION: Nach Fischsterben streiten Fabrik und Angler. Beurteile in ca. 140 Woertern mit Nische, Energiefluss und Eutrophierung, wer das Leck stopfen muss.
+RUBRIC (30 XP): Nischenbezug (8 XP) | Energiefluss (8 XP) | Eutrophierungskette (8 XP) | Urteil (6 XP).
 
-## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
+`Klausur-Satz: Eutrophierung ist eine Kette, kein einzelner Wert.`
 
-TAKEAWAY (Kernbotschaft in einem Kasten):
+## Schritt 8 — reflexion: Takeaway & Reflexion
 
-Im Oekosystem fliesst die Energie einseitig und nimmt pro Trophieebene ab, waehrend die Materie durch die Destruenten im Kreislauf zirkuliert; Nischendifferenzierung senkt die Konkurrenz. Bei Energiefragen das Fluss-Verfahren, bei Elementfragen das Kreislauf-Verfahren waehlen.
-Takeaway-Satz: `Im Oekosystem fliesst die Energie einseitig und nimmt pro Trophieebene ab, waehrend die Materie durch die Destruenten im Kreislauf zirkuliert; Nischendifferenzierung senkt die Konkurrenz.`
+TAKEAWAY:
 
-REFLEXION (zwei Fragen):
-1. Welcher Schritt fiel schwerer — die Deutung des Nahrungsnetzes ueber die Trophieebenen (Schritt 4) oder die Wahl zwischen Energiefluss- und Stoffkreislauf-Verfahren (Schritt 5)?
-2. Beim naechsten Mal frage ich zuerst, ob die Aufgabe nach Energie oder nach Materie fragt, und waehle danach das Verfahren.
+Takeaway-Satz: `Energie fliesst, Stoffe kreisen: Das trennt Pyramide und Kreislauf.`
+
+`Klausur-Satz: Energie fliesst, Stoffe kreisen: Das trennt Pyramide und Kreislauf.`
+
+
+REFLEXION:
+1. Welcher Schritt fiel schwerer — die Sandkasten-Challenge (Schritt 4) oder die Verfahrenswahl (Schritt 5)?
+2. Beim naechsten Mal sichere ich zuerst die Werkzeugkiste, weil jeder Handgriff darauf aufbaut.

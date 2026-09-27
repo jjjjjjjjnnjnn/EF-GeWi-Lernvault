@@ -11,140 +11,125 @@ tags: [EF, Bio, Zellbiologie]
 version: Lesson-v3
 ---
 
-# Lernreise: Enzymaktivitaet und Einflussfaktoren (L1, Ziel Klausur)
+# Lernreise: Enzymaktivitaet und Einflussfaktoren — Episode B15: Der schlaffe Salat-Alarm
 
-<!-- Lesson v3 9步制架构：Schritt 1至8固定结构；Fehlvorstellung 夹在 Schritt 6 与 7 之间（Parser 自动跳过，不占步数）；支持内嵌 [Werkzeug: <id>] 交互教具；Gating: check/szenario 未过 = Weiter 置灰；XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
+<!-- Campaign: Nano-Zellfabrik-Krise | Bio | Instapower: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
-## Schritt 1 — entdecken
+## Schritt 1 — entdecken: Fieber im Katalys-Reaktor
 
-ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
+ZIELE（本节三目标）：
+1. 中文：能用变性解释温度/pH最适。
+2. 中文：能读懂底物/酶浓度曲线。
+3. 中文：能区分竞争与非竞争抑制。
 
-1. 中文：能说清酶的三条底层事实——本质多为蛋白质、降低活化能、不被反应消耗，并指出酶不改变平衡位置。
-2. 中文：能读温度-pH 曲线：分段描述走向、指认最适点、用 RGT-Regel 解释升段、用 Denaturierung 解释降段。
-3. 中文：能按 AFB II 用德语写出一句含 weil...deshalb 的因果链，并严格区分 Hemmung（可逆）与 Denaturierung（不可逆）。
+【危机Hook】Kantine meldet welke Blaetter; KI OSMO-9 schlaegt Plasmolyse-Alarm. 催化反应堆“发烧”到42度，传送带还在转。Finn博士盯着先升后坠的过山车曲线，旁边实习生又把柠檬汁洒进反应池，第二台机器也停了。为什么升温先加速后摧毁一切？为什么酸能让酶罢工、铅等重金属却能永久毒杀？今晚搞懂温度、pH、浓度与抑制，工厂才能继续呼吸，否则只能急停。
 
-Klausur-Satz: `Enzyme senken als Biokatalysatoren die Aktivierungsenergie, besitzen ein Temperatur- und ein pH-Optimum und werden dabei nicht verbraucht.`
+`Klausur-Satz: Jedes Enzym hat ein Optimum; jenseits davon denaturiert die Raumstruktur irreversibel.`
 
-## Schritt 2 — entdecken
+## Schritt 2 — entdecken: Die Stellschrauben-Kiste der Reaktorwarte
 
-PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
+PRETRAINING术语盒（5大装备，中文在上、德语在下）：
 
-中文在上，德语在下：
+- 中文：活性中心 — 德语：Aktives Zentrum：容纳底物的精密口袋。 / Passgenaue Tasche für das Substrat.
+- 中文：变性 — 德语：Denaturierung：高温或极端pH破坏空间结构。 / Zerstoerung der Raumstruktur durch Hitze oder Extrem-pH.
+- 中文：底物饱和 — 德语：Substratsaettigung：活性中心全占，再加底物也无效。 / Alle Zentren besetzt: mehr Substrat bringt nichts.
+- 中文：竞争性抑制 — 德语：Kompetitive Hemmung：抑制剂抢占中心，加底物可缓解。 / Hemmstoff blockiert das Zentrum, mehr Substrat hilft.
+- 中文：非竞争性抑制 — 德语：Nichtkompetitive Hemmung：抑制剂结合别处使中心变形。 / Hemmstoff bindet anderswo und verformt das Zentrum.
 
-- 酶 — Enzym：多为蛋白质的生物催化剂，只改速率、不改反应方向与平衡位置。
-- 活化能 — Aktivierungsenergie：反应启动所需的最低能量，酶的作用正是把它压低。
-- 活性中心 — aktives Zentrum：酶上与底物形状互补的特定区域，是专一性的结构基础。
-- 变性 — Denaturierung：高温或极端 pH 破坏三级结构，活性不可逆丧失。
-- 最适温度 — Temperaturoptimum：酶活性最高的温度，人体酶多在约 37 °C 附近。
+`Klausur-Satz: Substrat hilft bis zur Saettigung, Enzym hebt das Plateau.`
 
-Klausur-Satz: `Unterhalb des Optimums steigt die Reaktionsgeschwindigkeit nach der RGT-Regel, oberhalb des Optimums führt die Denaturierung zu einem steilen Abfall.`
+## Schritt 3 — entdecken: Vom Fieber zur Vollbremsung: Die Einflusskette
 
-## Schritt 3 — entdecken
+ENTDECKEN因果传导机制（中文拆解在上，德语链条在下）：
 
-ENTDECKEN（1概念 + 1文字图解）：
+中文：因果链：升温→碰撞增多→过最适后空间结构熔化变性，不可逆；pH错→中心电荷变；底物只帮到饱和，酶量抬高平台；竞争可用底物“淹没”，非竞争直接压低最大值。
 
-中文：酶的工作像一把锁配一把钥匙——底物嵌进活性中心，形成酶-底物复合物，反应能垒被压低，产物生成后酶原样退出，所以它不被消耗。温度是影响速率的第一把刀，但它两面都砍：在最适点以下，升温让分子动能变大、有效碰撞变多，速率按 RGT-Regel 大约每升 10 °C 翻一倍，曲线陡升；越过最适点后，高温扯断维持三级结构的氢键和离子键，活性中心变形，底物再也嵌不进去，速率骤降且不可逆，这就是 Denaturierung。pH 同理：每种酶有自己最适 pH（胃蛋白酶约 pH 2，胰蛋白酶约 pH 8），偏离会改变活性中心侧链的电荷状态，结合变差，极端时同样变性。读曲线永远三段走：升段说 RGT，峰顶说 Optimum，降段说 Denaturierung + irreversibel。
-
-文字图解（ASCII 结构图，App支持解析渲染）：
+德语：Die Kette: Mehr Waerme heisst mehr Kollisionen bis zum Optimum, danach schmilzt die Raumstruktur — Denaturierung, irreversibel. Falscher pH veraendert Ladungen im Zentrum. Mehr Substrat hilft nur bis zur Saettigung, mehr Enzym hebt das Plateau. Kompetitiv laesst sich mit Substrat ueberstimmen, nichtkompetitiv senkt das Maximum dauerhaft.
 
 ```diagram
-   Reaktions-
-   geschwindigkeit
-        ^
-        |            .-- Optimum
-        |          .'   '.
-        |        .'       '.
-        |      .'  RGT-     '.  Denaturierung
-        |    .'    Regel      '.  (irreversibel)
-        |  .'                    '.
-        |.'                        '.
-        +------------------------------> Temperatur
-         10   20   30   40   50   60   70  [°C]
-                         ^
-                    Temperaturoptimum (ca. 37-40 °C)
-
-   pH-Kurve: glockenförmig, Peak = pH-Optimum
-   Pepsin  ca. pH 2   |   Trypsin  ca. pH 8
+Waerme hoch -> Kollision hoch -> Optimum -> Denaturierung
+pH falsch -> Ladung falsch -> Zentrum blockiert
+Kompetitiv + Substrat = ok | Nichtkompetitiv = vmax sinkt
 ```
 
-Klausur-Satz: `Der Anstieg der Kurve folgt der RGT-Regel, der steile Abfall nach dem Optimum beruht auf der irreversiblen Denaturierung des aktiven Zentrums.`
+`Klausur-Satz: Kompetitiv blockiert das Zentrum, nichtkompetitiv verformt es.`
 
 ## Anekdote & Fun-Fact
 
-**Anekdote / Fun-Fact (DE)**: Hohes Fieber ist lebensgefährlich, sobald die Körpertemperatur über etwa 42 °C steigt. Der Grund ist nicht die Wärme selbst, sondern die Denaturierung der körpereigenen Enzyme: Ihre Tertiärstruktur wird zerstört, das aktive Zentrum verliert seine Form. Unterhalb dieser Grenze kann Fieber dagegen die Abwehrreaktionen des Körpers beschleunigen.
+**Anekdote / Fun-Fact (DE)**: Fieber ab 42 Grad wird lebensgefaehrlich, weil Koerpereiweisse wie Enzyme ihre Form verlieren — die Fabrik fiebert wie ein Mensch.
 
-**中文解读**: 高烧的危险不在“热”本身，而在于超过约 42 °C 后体内酶的三级结构被破坏、活性中心变形且不可逆。这正好把温度曲线的降段与变性，放进每个人都会经历的生理场景里。
+**中文解读**: 人体发烧超42度致命，因为蛋白质像酶一样变形——工厂发烧和人一样。
 
-**Bezug zum Konzept**: `Zu hohes Fieber führt zur Denaturierung der körpereigenen Enzyme und damit zu einem irreversiblen Verlust der Aktivität.`
+**Bezug zum Konzept**: Das Optimum ist schmal, die Denaturierung ist endgültig.
 
-## Schritt 4 — ausprobieren
-
-BEISPIEL（正确例题示范，含教具操作与解答）：
+## Schritt 4 — ausprobieren: Rechen-Sandkasten: Finde das Temperaturoptimum
 
 [Werkzeug: formula]
 
-AUFGABE (auswerten und erklären, AFB II)：In einem Versuch wird die Aktivität eines menschlichen Verdauungsenzyms bei Temperaturen von 10 °C bis 70 °C gemessen. Die Reaktionsgeschwindigkeit steigt bis 40 °C stark an, erreicht dort ihr Maximum und fällt danach steil ab; bei 70 °C ist keine Aktivität mehr messbar. Werten Sie den Kurvenverlauf aus und erklären Sie Anstieg und Abfall.
+AUFGABE目标挑战：目标挑战：最适37度、pH7.4。经验规则：过最适后每升5度活性减半。预测47度、pH4.0的剩余活性并论证变性。 德语原题：Bei 37 Grad 100 %, bei 47 Grad nur 25 %: Erklaere mit Denaturierung.
 
 HILFE:
-1. Schritt 1: Werte zuerst aus (Operator auswerten): beschreibe die drei Abschnitte und nenne die Zahlenwerte des Anstiegs und des Maximums.
-2. Schritt 2: Erkläre den Anstieg mit der RGT-Regel — mehr kinetische Energie, häufigere wirksame Zusammenstöße.
-3. Schritt 3: Erkläre den Abfall mit der Denaturierung — Zerstörung der Tertiärstruktur, Formänderung des aktiven Zentrums, Substrat kann nicht mehr binden.
+1. Optimum markieren.
+2. Jenseits schmilzt Struktur.
+3. pH-Extreme veraendern Ladungen.
 
-MUSTERLÖSUNG: Die Kurve verläuft dreiphasig: Von 10 °C bis 40 °C steigt die Aktivität nahezu exponentiell an, bei 40 °C liegt das Temperaturoptimum, danach fällt sie steil ab und erreicht bei 70 °C den Wert null. Der Anstieg folgt der RGT-Regel: Mit steigender Temperatur nimmt die kinetische Energie der Moleküle zu, sodass es häufiger zu wirksamen Zusammenstößen zwischen Enzym und Substrat kommt und die Reaktionsgeschwindigkeit steigt. Der Abfall nach dem Optimum beruht auf der Denaturierung: Die hohe Temperatur zerstört die Wasserstoffbrücken und Ionenbindungen der Tertiärstruktur, wodurch das aktive Zentrum seine Form verändert; das Substrat kann nicht mehr binden. Diese Denaturierung ist irreversibel, deshalb ist bei 70 °C keine Aktivität mehr messbar.
+MUSTERLÖSUNG：中文：超过最适，高温不可逆破坏空间结构故暴跌；极端pH再使中心变形。 / 德语：Jenseits des Optimums zerstoert Hitze die Raumstruktur irreversibel, daher der Absturz; Extrem-pH verformt zusaetzlich das Zentrum.
 
-Klausur-Satz: `Oberhalb des Temperaturoptimums verändert die Denaturierung die Form des aktiven Zentrums irreversibel, sodass die Reaktionsgeschwindigkeit trotz weiter steigender Temperatur sinkt.`
+`Klausur-Satz: 25 % bei 47 Grad heissen: Hitze hat die Struktur geschmolzen.`
 
-## Schritt 5 — ausprobieren
+## Schritt 5 — ausprobieren: Duell der Bremsen: Hitze gegen Gift
 
-VERGLEICH辨别实验（双向辨析：升段眼 vs. 降段眼）：
+VERGLEICH: Waehle erst die Bremse — (i) reversibel-kompetitiv oder (ii) nichtkompetitiv/denaturierend — dann loesen.选程序：先判抑制类型。
 
-VERGLEICH: Wähle erst das Verfahren — 【选程序】先判断题目给出的温度变化落在曲线的哪一侧：左侧走 (i) RGT-Verfahren（升温 → 分子动能升 → 有效碰撞多 → 速率升），右侧走 (ii) Denaturierungs-Verfahren（高温 → 三级结构破坏 → 活性中心变形 → 速率降，不可逆）—— dann lösen.
+Weg A：Weg A (Kompetitiv-Weiche): Zentrum blockiert, Substrat hilft noch.
 
-AUFGABE A：Ein Enzym wird von 20 °C auf 30 °C erwärmt; die Reaktionsgeschwindigkeit steigt deutlich an. Welches Verfahren ist zu wählen, und wie lässt sich der Vorgang erklären?
+Weg B：Weg B (Struktur-Weiche): Zentrum verformt oder zerstoert, Substrat hilft nicht.
 
-AUFGABE B：Dasselbe Enzym wird von 50 °C auf 60 °C erwärmt; die Reaktionsgeschwindigkeit sinkt stark ab. Welches Verfahren ist zu wählen, und wie lässt sich der Vorgang erklären?
+AUFGABE A: Mehr Substrat stellt die Rate wieder her. Welche Bremse? 【选程序：先看信号词再选路】
 
-HILFE: A liegt eindeutig unterhalb des Optimums, die Temperaturerhöhung wirkt positiv → Verfahren (i). B liegt oberhalb des Optimums, die Temperaturerhöhung wirkt zerstörend → Verfahren (ii).【选程序：先问曲线处于最适点哪一侧——左侧用 RGT，右侧用 Denaturierung；同一句"升温"在两侧含义完全相反。】
+AUFGABE B: Mehr Substrat hilft nichts, vmax bleibt unten. Welche Bremse? 【选程序：先看信号词再选路】
 
-ANTWORT: A erfordert Verfahren (i): Da die Temperatur noch unterhalb des Optimums liegt, erhöht die Erwärmung die kinetische Energie der Moleküle; die Zahl der wirksamen Zusammenstöße zwischen Enzym und Substrat steigt und damit auch die Reaktionsgeschwindigkeit. B erfordert Verfahren (ii): Oberhalb des Optimums zerstört die zusätzliche Wärmeenergie die Wasserstoffbrücken und Ionenbindungen der Tertiärstruktur; das aktive Zentrum verliert seine Form, das Substrat kann nicht mehr binden und die Aktivität sinkt — die Denaturierung ist irreversibel, sodass eine Abkühlung die Aktivität nicht wiederherstellt.
+HILFE：A reagiert auf Substrat — Weg A. B bleibt unten — Weg B.
 
-Klausur-Satz: `Dieselbe Temperaturerhöhung beschleunigt die Reaktion unterhalb des Optimums nach der RGT-Regel, zerstört das Enzym jedoch oberhalb des Optimums durch Denaturierung.`
+ANTWORT：ANTWORT: A folgt Weg A als kompetitive Hemmung; B folgt Weg B als nichtkompetitive Hemmung oder Denaturierung.
 
-## Schritt 6 — check
+`Klausur-Satz: Substrat rettet nur die kompetitive Bremse.`
 
-CHECK检索默写（自测 3 题，与答案配对）：
+## Schritt 6 — check: Selbsttest zu Enzymaktivitaet und Einflussfaktoren
 
-FRAGE: Warum verändert ein Enzym die Lage des chemischen Gleichgewichts einer Reaktion nicht? | ANTWORT: Weil es nur die Aktivierungsenergie senkt und damit die Reaktionsgeschwindigkeit erhöht, nicht aber die Energie der Edukte und Produkte; das Gleichgewicht bleibt unverschoben.
-FRAGE: Was besagt die RGT-Regel und in welchem Bereich gilt sie? | ANTWORT: Sie besagt, dass die Reaktionsgeschwindigkeit bei einer Temperaturerhöhung um 10 °C etwa auf das Doppelte steigt; sie gilt nur unterhalb des Temperaturoptimums.
-FRAGE: Worin unterscheiden sich eine kompetitive Hemmung und eine Denaturierung grundsätzlich? | ANTWORT: Die kompetitive Hemmung ist reversibel, weil der Hemmstoff das aktive Zentrum nur besetzt und durch mehr Substrat verdrängt werden kann; die Denaturierung ist irreversibel, weil die Tertiärstruktur des Enzyms zerstört wird.
+FRAGE：超过最适发生什么？（Was passiert jenseits des Optimums?） | ANTWORT：变性：空间结构破坏，不可逆。 / Denaturierung: Raumstruktur zerstoert, irreversibel.
+FRAGE：竞争抑制下底物有何用？（Wie hilft Substrat bei kompetitiv?） | ANTWORT：淹没抑制剂、夺回中心。 / Es ueberstimmt den Hemmstoff am Zentrum.
+FRAGE：加酶改变什么？（Was aendert mehr Enzym?） | ANTWORT：抬高平台，不改变单中心饱和。 / Es hebt das Plateau, nicht die Saettigung pro Zentrum.
 
-Klausur-Satz: `Während die kompetitive Hemmung reversibel ist, beruht die Denaturierung auf einer irreversiblen Zerstörung der Tertiärstruktur.`
+`Klausur-Satz: Jenseits des Optimums hilft kein Substrat mehr.`
 
 ## Fehlvorstellung
 
-(非Schritt小节，Parser 自动识别，不计入步骤步数)
+1. 误解：误解“越热越好”。
+   中文纠偏：见德语纠偏句。
+   Korrektur-Satz: `Nur bis zum Optimum; danach denaturiert das Enzym irreversibel.`
+2. 误解：误解“两种抑制一样”。
+   中文纠偏：见德语纠偏句。
+   Korrektur-Satz: `Nur kompetitiv laesst sich mit Substrat ueberstimmen.`
 
-1. 误解"酶在高温下只是暂时睡着，降温就会恢复"。
-   中文纠偏：恰恰相反。高温破坏的是酶的三级结构，这是结构性损坏，不是暂停。活性中心一旦变形就回不去了，降温也只能得到一个仍被破坏的酶。只有可逆抑制（如竞争性抑制）才可能通过移除条件恢复。
-   Korrektur-Satz: `Die Denaturierung ist irreversibel, da die Tertiärstruktur und damit das aktive Zentrum dauerhaft zerstört werden; eine Abkühlung stellt die Aktivität nicht wieder her.`
+## Schritt 7 — szenario: Klausurtransfer: Gutachten aus dem Reaktorgebaeude
 
-2. 误解"RGT-Regel 说明温度越高酶促反应越快"。
-   中文纠偏：把结论无限放大了。RGT-Regel 只在最适温度以下成立，它描述的是升温对碰撞频率的促进。越过最适点后，变性带来的破坏压过升温的促进，曲线必然掉头向下。所以"越热越快"是伪规律，正确说法是"最适点以下越快，以上越慢"。
-   Korrektur-Satz: `Die RGT-Regel gilt nur unterhalb des Temperaturoptimums; darüber überwiegt die Denaturierung, sodass die Reaktionsgeschwindigkeit wieder sinkt.`
+ROLLE：中文：你是工厂夜班技术员。 / 德语：Du bist Gutachterin im Reaktorgebaeude.
+SITUATION：高温+酸泄漏后两台反应堆停机，请论证哪台可救（约140词）。 / 德语：Nach Hitzespitze und Saeureunfall stehen zwei Reaktoren. Beurteile in ca. 140 Woertern mit Optimum, Denaturierung und Hemmtyp, welcher Reaktor rettbar ist.
+RUBRIC (30 XP)：Optimumslogik (10 XP) | Denaturierung (8 XP) | Hemmtyp (8 XP) | Urteil (4 XP).
 
-## Schritt 7 — szenario
-
-ROLLE: Du bist Referent in einem Schullabor und hältst einen Kurzvortrag für jüngere Schülerinnen und Schüler.
-SITUATION: Ein Waschmittelhersteller wirbt damit, dass sein Pulver "schon bei 30 °C" wirkt, während ein älteres Produkt erst bei 60 °C optimale Leistung zeigt. In beiden Produkten stecken Proteasen, also Eiweiß spaltende Enzyme. Erkläre in einer zusammenhängenden Stellungnahme (ca. 150 Wörter), warum ein modernes Waschmittel auf ein niedrigeres Temperaturoptimum optimiert wird und was bei 60 °C mit den Enzymen geschieht.
-RUBRIC (30 XP): Benennung des Temperaturoptimums als Anpassung an den Einsatzbereich (5 XP) | Erklärung der Wirkungssteigerung unterhalb des Optimums mit der RGT-Regel (8 XP) | Erklärung der Denaturierung oberhalb des Optimums mit Bezug auf die Tertiärstruktur und das aktive Zentrum (10 XP) | Kausale, fachsprachlich korrekte Stellungnahme mit den Fachbegriffen Denaturierung und irreversibel (7 XP).
+`Klausur-Satz: Rettbar ist, was reversibel gehemmt ist; denaturiert ist verloren.`
 
 ## Schritt 8 — reflexion: Takeaway & Reflexion
 
-TAKEAWAY 1盒（核心总结）：
+TAKEAWAY核心总结：
 
-中文：酶是压低能垒的催化剂，不被消耗也不改平衡。温度曲线永远三段：升段是 RGT-Regel（最适点以下才成立），峰顶是最适温度，降段是 Denaturierung 且不可逆。pH 曲线同构，峰即最适 pH。做题先定位曲线在哪一侧，再决定用"促进"还是"破坏"那套语言；只要写下降段，就必须出现 Denaturierung + irreversibel。
-Takeaway-Satz: `Die Enzymaktivität ist temperaturabhängig: Unterhalb des Optimums beschleunigt die RGT-Regel die Reaktion, oberhalb zerstört die irreversible Denaturierung das aktive Zentrum.`
+中文：因果链：升温→碰撞增多→过最适后空间结构熔化变性，不可逆；pH错→中心电荷变；底物只帮到饱和，酶量抬高平台；竞争可用底物“淹没”，非竞争直接压低最大值。
+Takeaway-Satz: `Optimum halten heisst Struktur halten.`
+
+`Klausur-Satz: Optimum halten heisst Struktur halten.`
+
 
 REFLEXION 2问：
-1. 过程自省：Welcher Schritt fiel schwerer — das Auswerten des Kurvenverlaufs mit Zahlenwerten (Schritt 4) oder die Unterscheidung von RGT-Regel und Denaturierung je nach Kurvenseite (Schritt 5)?
-2. 元认知计划：Beim nächsten Mal prüfe ich zuerst, auf welcher Seite des Optimums die angegebene Temperatur liegt, und wähle danach die Erklärung.
+1. 过程自省：Welcher Schritt fiel schwerer — die Sandkasten-Challenge (Schritt 4) oder die Verfahrenswahl (Schritt 5)?
+2. 元认知计划：Beim nächsten Mal sichere ich zuerst die Werkzeugkiste, weil jeder Handgriff darauf aufbaut.

@@ -11,119 +11,125 @@ tags: [EF, Bio, Genetik]
 version: Lesson-v3
 ---
 
-# Lernreise: DNA-Replikation und Meselson-Stahl (L1, Ziel Klausur)
+# Lernreise: DNA-Replikation und Meselson-Stahl — Episode B13: Alarm um Mitternacht
 
-<!-- Lesson v3: Schritt 1-8 feste Struktur; Fehlvorstellung zwischen Schritt 6 und 7 (Parser skip); [Werkzeug: <id>] interaktiv; Gating: check/szenario nicht bestanden = Weiter grau; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
+<!-- Campaign: Nano-Zellfabrik-Krise | Bio | Instapower: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
-## Schritt 1 — entdecken
+## Schritt 1 — entdecken: Funkstille aus dem Geheimarchiv
 
-ZIELE (3 Ziele, nach 15 Minuten erreichbar):
+ZIELE（本节三目标）：
+1. 中文：能描述半保留复制与相关酶。
+2. 中文：能用密度带解读Meselson-Stahl实验。
+3. 中文：能区分全保留、半保留与分散模型。
 
-1. Du kannst die Replikation als $DNA \to 2 \times DNA$ mit den Phasen Entwindung, Priming, Elongation und Korrektur beschreiben.
-2. Du kannst Leitstrang mit $5' \to 3'$ und Folgestrang mit Okazaki-Fragmenten unterscheiden.
-3. Du kannst das Meselson-Stahl-Experiment mit $^{15}N$ und $^{14}N$ als Beleg fuer semikonservative Replikation deuten (AFB II).
+【危机Hook】OSMO-9 weckt die Crew: Aussenmedium hypertonisch, alle Protoplasten an die Wand! 细胞工厂深处藏着绝密档案馆，存着所有机器的蓝图。今夜红灯闪烁：档案员解旋酶停下了复制带——复制时旧链保留还是全新制造？队长想起厨房里轻重食材分层的实验，Finn博士搬出地下室的传奇离心机：Meselson和Stahl，一根试管写就历史。搞懂“复制一轮为何恰好出现一条中间带”，你就能解锁档案馆，救下停产的夜班。
 
-EINSTIEG: Im Jahr 1953 bestaunten Watson und Crick ihr Drahtmodell und fragten, wie sich die Leiter kopieren koennte. Fuenf Jahre spaeter zentrifugierten Meselson und Stahl markierte DNA und sahen die Antwort als Bande. Wer schwere und leichte Banden liest, versteht Vererbung.
+`Klausur-Satz: Jede Tochter-DNA behaelt einen parentalen Strang: Replikation ist semikonservativ.`
 
-Klausur-Satz: `Jede Tochter-DNA behaelt einen Elternstrang und erhaelt einen neuen Strang.`
+## Schritt 2 — entdecken: Die Kopier-Werkzeugkiste der Archivare
 
-## Schritt 2 — entdecken
+PRETRAINING术语盒（5大装备，中文在上、德语在下）：
 
-GRUNDBEGRIFFE (5 Begriffe):
+- 中文：复制 — 德语：Replikation：分裂前DNA加倍。 / Verdopplung der DNA vor der Teilung.
+- 中文：半保留 — 德语：Semikonservativ：子代各保一条旧链一条新链。 / Jede Tochter haelt einen alten und einen neuen Strang.
+- 中文：解旋酶 — 德语：Helikase：在复制起点打开双螺旋。 / Oeffnet die Doppelhelix am Replikationsursprung.
+- 中文：DNA聚合酶 — 德语：DNA-Polymerase：沿5'到3'合成新链。 / Baut den neuen Strang in 5-nach-3-Richtung.
+- 中文：梅斯尔森-斯塔尔 — 德语：Meselson-Stahl：用15N与离心机做的密度实验。 / Dichte-Experiment mit 15N und Zentrifuge.
 
-- **Replikationsgabel**: Y-foermige Oeffnung mit $Helikase + Topoisomerase$, Entwindung in $5' \to 3'$-Richtung der Synthese.
-- **DNA-Polymerase**: Enzym fuer $dNTP \to DNA + PP_i$, baut nur $5' \to 3'$ und braucht ein $3'$-OH.
-- **Primer**: Kurzes RNA-Stueck $5'-ACGU-3'$, Startpunkt der Polymerase, spaeter entfernt.
-- **Okazaki-Fragment**: Kurzer Abschnitt $1000$-$2000$ Nukleotide auf dem Folgestrang, durch $Ligase$ verknuepft.
-- **Semikonservativ**: Modell $1\,alt + 1\,neu$ pro Doppelhelix, Gegenmodelle konservativ und dispersiv.
+`Klausur-Satz: Helikase oeffnet, Polymerase baut 5-nach-3, Ligase schliesst die Luecken.`
 
-Klausur-Satz: `Die Polymerase kennt nur eine Richtung, daher arbeitet ein Strang stueckweise.`
+## Schritt 3 — entdecken: Halb alt, halb neu: Die Kopierkette
 
-## Schritt 3 — entdecken
+ENTDECKEN因果传导机制（中文拆解在上，德语链条在下）：
 
-KONZEPT (ein Konzept plus ein Textdiagramm):
+中文：因果链：解旋酶开链→引物酶打引物→聚合酶5'到3'合成→连接酶封口；前导链连续，后随链分冈崎片段。检验环节看密度带：半保留复制一轮恰为一条中间带。
 
-Die Helikase oeffnet $A=T$ und $G \equiv C$, die Primase legt Primer, die Polymerase verlaengert $5' \to 3'$. Am Leitstrang laeuft sie durch, am Folgestrang baut sie rueckwaerts Fragmente, die Ligase mit $ATP \to AMP + PP_i$ verbindet. Meselson und Stahl zuechteten $^{15}N$-DNA, wechselten auf $^{14}N$ und fanden nach einer Teilung nur Hybridbanden $^{15}N$/$^{14}N$ — das schliesst konservativ aus; nach zwei Teilungen halb Hybrid, halb leicht — das schliesst dispersiv aus.
+德语：Die Kausalkette: Helikase oeffnet, Primase setzt Primer, Polymerase baut 5-nach-3, Ligase schliesst Luecken. Der Leitstrang laeuft durch, der Folgestrang entsteht in Okazaki-Stuecken. Meselson-Stahl prueft das Ergebnis: Nach einer Runde in 14N zeigt semikonservativ genau ein mittleres Band — konservativ zeigte schwer plus leicht, dispersiv zeigte nur Mittelmaessiges in jeder Runde ohne Trennung.
 
 ```diagram
-    Eltern:  15N-15N (schwer, unten)
-    nach 1x: 15N-14N + 15N-14N (hybrid, Mitte)
-    nach 2x: 2x hybrid + 2x 14N-14N (Mitte + oben)
-    Leitstrang:  ----5'->3'----  kontinuierlich
-    Folgestrang: <-3' 5'--  Fragmente + Ligase
-    A=T (2 H-Bindungen), G=C (3 H-Bindungen)
+Helikase -> Primer -> Polymerase 5-3 -> Ligase
+Leitstrang kontinuierlich | Folge strang Okazaki
+Runde 1 in 14N: semikonservativ = 1 Mittelband
 ```
 
-Klausur-Satz: `Bandemuster beweisen den Mechanismus ohne ein Enzym zu sehen.`
+`Klausur-Satz: Ein Mittelband nach Runde eins beweist die semikonservative Verdopplung.`
 
-## Schritt 4 — ausprobieren
+## Anekdote & Fun-Fact
 
-BEISPIEL (Musteraufgabe mit Werkzeug):
+**Anekdote / Fun-Fact (DE)**: Meselson und Stahl zuechteten Bakterien erst schwer, dann leicht — und sahen die Wahrheit als Bande in der Zentrifuge schwimmen.
 
-[Werkzeug: formula]
+**中文解读**: 梅斯尔森和斯塔尔先重后轻培养细菌——真理就漂在离心管的条带里。
 
-AUFGABE (erklaeren, AFB II): Erklaeren Sie, warum nach einer Replikationsrunde im $^{14}N$-Medium nur eine Hybridbande auftritt, und sagen Sie das Muster nach zwei Runden voraus.
+**Bezug zum Konzept**: Ein Mittelband nach Runde eins entlarvt die semikonservative Kopie.
+
+## Schritt 4 — ausprobieren: Baukasten-Sandkasten: Kopiere das Strang-Puzzle
+
+[Werkzeug: lego]
+
+AUFGABE目标挑战：目标挑战：用积木拼12个核苷酸双链，拆开并零错误拼出两条子链：各半新半旧、标出5'到3'方向，8分钟通关。 德语原题：Nach einer Runde Replikation in 14N: Welche Baender erwartest du bei semikonservativ?
 
 HILFE:
-1. Schritt 1: Starte mit $2 \times (^{15}N$-$^{15}N)$.
-2. Schritt 2: Trenne Straenge und ergaenze jeweils $^{14}N$ nach $1\,alt + 1\,neu$.
-3. Schritt 3: Wiederhole die Teilung und zaehle $hybrid$ gegen $leicht$.
+1. Alte Straenge sind schwer markiert.
+2. Jede Tochter behaelt einen alten Strang.
+3. Ein Mittelband heisst halb schwer halb leicht.
 
-MUSTERLOESUNG: Nach Trennung traegt jeder $^{15}N$-Elternstrang einen neuen $^{14}N$-Strang, also $2 \times (^{15}N$-$^{14}N)$ als eine mittlere Bande. Nach zweiter Runde liefern die zwei $^{15}N$-Straenge wieder Hybrid und die zwei $^{14}N$-Straenge je $^{14}N$-$^{14}N$, also $50\,\%$ hybrid und $50\,\%$ leicht. Konservativ haette $50\,\%$ schwer plus $50\,\%$ leicht nach Runde eins verlangt und ist widerlegt.
+MUSTERLÖSUNG：中文：两条子链各一条重旧链一条轻新链，故只有一条中间带；全保留应为一重一轻两条带。 / 德语：Beide Toechter tragen einen schweren alten und einen leichten neuen Strang, also genau ein mittleres Band; konservativ gaebe zwei Baender.
 
-Klausur-Satz: `Eine Bande nach eins, zwei Banden nach zwei beweist semikonservativ.`
+`Klausur-Satz: Zwoelf Bausteine in acht Minuten: halb alt halb neu, Richtung markiert.`
 
-## Schritt 5 — ausprobieren
+## Schritt 5 — ausprobieren: Duell der Modelle: Konservativ gegen semikonservativ
 
-VERGLEICH (Verfahren A gegen Verfahren B):
+VERGLEICH: Waehle erst das Modell — (i) semikonservativ oder (ii) konservativ/dispersiv — dann loesen.选程序：先选模型，再判读条带。
 
-VERGLEICH: Waehle zuerst das Verfahren — (i) Strangverfahren (Leit- gegen Folgestrang mit Richtung und Enzymen vergleichen) oder (ii) Modellverfahren (konservativ, semikonservativ, dispersiv an Banden unterscheiden) — dann loesen.
+Weg A：Weg A (Band-Lesart): Baender zaehlen, Dichte deuten, Runde zuordnen.
 
-AUFGABE A: Erklaeren Sie die Rolle von Primer und Ligase am Folgestrang.
-AUFGABE B: Welche Banden widerlegen das dispersive Modell nach zwei Runden?
+Weg B：Weg B (Enzym-Lesart): Enzyme der Reihe nach nennen, Strangrichtung pruefen.
 
-HILFE: A nennt Enzyme und Richtung, also Verfahren (i). B nennt Modelle und Banden, also Verfahren (ii).
+AUFGABE A: Nach Runde 1 genau ein Mittelband. Welches Modell? 【选程序：先看信号词再选路】
 
-ANTWORT: A erfordert Verfahren (i): Primer liefert $3'$-OH fuer $5' \to 3'$, Ligase schliesst $Okazaki$-Luecken. B erfordert Verfahren (ii): Dispersiv sagte nur Hybrid in jeder Runde voraus; beobachtet werden aber Hybrid plus leicht im Verhaeltnis $1:1$, also widerlegt.
+AUFGABE B: Leit- und Folgestrang mit Richtungen benennen. Welcher Weg? 【选程序：先看信号词再选路】
 
-Klausur-Satz: `Enzyme erklaeren den Strang, Banden entscheiden das Modell.`
+HILFE：A nennt Baender — Weg A. B nennt Enzyme — Weg B.
 
-## Schritt 6 — check
+ANTWORT：ANTWORT: A folgt Weg A und bestaetigt semikonservativ; B folgt Weg B mit Helikase, Primase, Polymerase 5-nach-3 und Ligase.
 
-CHECK (Selbsttest, 3 Fragen):
+`Klausur-Satz: Baender lesen waehlt das Modell, Enzyme nennen prueft die Richtung.`
 
-FRAGE: Was bedeutet semikonservativ als Formel? | ANTWORT: $Tochter = 1 \times alt + 1 \times neu$ pro Doppelhelix.
-FRAGE: Warum braucht die Polymerase einen Primer? | ANTWORT: Sie braucht ein freies $3'$-OH und synthetisiert nur $5' \to 3'$.
-FRAGE: Was zeigte Runde eins bei Meselson-Stahl? | ANTWORT: Nur $^{15}N$-$^{14}N$ hybrid, also kein $^{15}N$-$^{15}N$ und kein $^{14}N$-$^{14}N$.
+## Schritt 6 — check: Selbsttest zu DNA-Replikation und Meselson-Stahl
 
-Klausur-Satz: `Richtung plus Bande ergeben den vollen Beweis.`
+FRAGE：半保留是什么意思？（Was heisst semikonservativ?） | ANTWORT：子代半新半旧。 / Jede Tochter halb alt halb neu.
+FRAGE：聚合酶往哪个方向合成？（Welche Richtung baut die Polymerase?） | ANTWORT：只沿5'到3'。 / Nur 5-nach-3 am neuen Strang.
+FRAGE：复制一轮出现什么带？（Was zeigt Runde 1 bei semikonservativ?） | ANTWORT：恰好一条中间带。 / Genau ein mittleres Dichteband.
+
+`Klausur-Satz: Halb alt halb neu — das ist der Satz der Replikation.`
 
 ## Fehlvorstellung
 
-(kein Schritt, Parser skippt diesen Abschnitt)
+1. 误解：误解“两条链都全新”。
+   中文纠偏：见德语纠偏句。
+   Korrektur-Satz: `Jede Tochter behaelt einen alten parentalen Strang — halb alt, halb neu.`
+2. 误解：误解“用放射性标记”。
+   中文纠偏：见德语纠偏句。
+   Korrektur-Satz: `Markiert wurde die Dichte mit schwerem Stickstoff 15N, getrennt per Zentrifuge.`
 
-1. Fehlvorstellung: Beide Tochterstraenge seien komplett neu, die Eltern-DNA werde vernichtet.
-   Korrektur: Jeder Elternstrang bleibt als Matrize erhalten; es gilt $alt + neu$, nicht $neu + neu$.
-   Korrektur-Satz: `Die Elterninformation bleibt zur Haelfte in jeder Tochter erhalten.`
-2. Fehlvorstellung: Beide Straenge wuerden kontinuierlich in Gabelrichtung synthetisiert.
-   Korrektur: Antiparallelitaet erzwingt $5' \to 3'$; der Folgestrang entsteht aus $Okazaki$-Fragmenten rueckwaerts.
-   Korrektur-Satz: `Antiparallel plus Einbahn-Enzym erzwingt einen diskontinuierlichen Strang.`
+## Schritt 7 — szenario: Klausurtransfer: Forensik-Einsatz: Wessen DNA schwimmt wo
 
-## Schritt 7 — szenario
+ROLLE：中文：你是工厂夜班技术员。 / 德语：Du bist Forensikerin im Dichte-Labor.
+SITUATION：14N中复制一轮后恰为一条中间带，请在三模型中裁决并用条带逻辑论证（约130词）。 / 德语：Ein Extrakt zeigt nach einer Replikationsrunde in 14N genau ein Mittelband. Entscheide in ca. 130 Woertern zwischen den drei Modellen und begruende mit der Bandenlogik.
+RUBRIC (30 XP)：Modellwahl (10 XP) | Bandenlogik (10 XP) | Abgrenzung der Gegenmodelle (6 XP) | Fachsprache (4 XP).
 
-ROLLE: Du bist Tutor im Biokurs.
-SITUATION: Ein Mitschueler behauptet, Meselson-Stahl habe konservative Replikation bewiesen, weil nach Runde zwei leichte DNA auftrete.
-AUFGABE (vergleichen, AFB III): Widerlegen Sie die Deutung in einer zusammenhaengenden Darstellung (ca. 150 Woerter) mit Bandenprognose aller drei Modelle und Enzymbegruendung.
-RUBRIC (30 XP): Banden Runde eins und zwei korrekt (10 XP) | Alle drei Modelle verglichen (10 XP) | Leit- und Folgestrang mit $5' \to 3'$ genannt (5 XP) | Geschlossene Darstellung (5 XP).
+`Klausur-Satz: Ein Mittelband entscheidet: semikonservativ schlaegt konservativ und dispersiv.`
 
 ## Schritt 8 — reflexion: Takeaway & Reflexion
 
-TAKEAWAY: Merke Oeffnen, Starten, Bauen, Verbinden: $Helikase + Primase + Polymerase + Ligase$ erzeugen $2 \times (alt + neu)$. Bandenregel: $1 \times hybrid$ nach eins, $hybrid + leicht$ nach zwei.
+TAKEAWAY核心总结：
 
-REFLEXION:
-1. Was fiel schwerer — die Strangrichtungen (Schritt 4) oder der Modellvergleich (Schritt 5)?
-2. Plane: Beim naechsten Mal zeichne ich zuerst beide $5'$- und $3'$-Enden, dann erst die Enzyme.
+中文：因果链：解旋酶开链→引物酶打引物→聚合酶5'到3'合成→连接酶封口；前导链连续，后随链分冈崎片段。检验环节看密度带：半保留复制一轮恰为一条中间带。
+Takeaway-Satz: `Kopieren heisst bewahren: Ein alter Strang traegt jede Tochter.`
 
-Anekdote (DE): Als Meselson und Stahl 1958 ihre Zentrifuge stoppten, sahen sie nach einer Nacht $^{14}N$ nur eine einzige mittlere Bande aus $^{15}N$-$^{14}N$. Stahl soll gerufen haben, das Ergebnis sei so klar wie ein Sonnenaufgang — ein Gluecksfall, der das Lehrbuchkapitel $DNA \to 2 \times DNA$ fuer immer festlegte.
+`Klausur-Satz: Kopieren heisst bewahren: Ein alter Strang traegt jede Tochter.`
 
-Bezug: `Eine Ultrazentrifuge entschied den Streit der drei Modelle an einem Abend.`
+
+REFLEXION 2问：
+1. 过程自省：Welcher Schritt fiel schwerer — die Sandkasten-Challenge (Schritt 4) oder die Verfahrenswahl (Schritt 5)?
+2. 元认知计划：Beim nächsten Mal sichere ich zuerst die Werkzeugkiste, weil jeder Handgriff darauf aufbaut.

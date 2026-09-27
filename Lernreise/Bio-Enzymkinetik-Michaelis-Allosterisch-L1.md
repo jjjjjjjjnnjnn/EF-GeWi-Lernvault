@@ -11,130 +11,125 @@ tags: [EF, Bio, Stoffwechsel]
 version: Lesson-v3
 ---
 
-# Lernreise: Enzymkinetik nach Michaelis sowie allosterische Regulation (L1, Ziel Klausur)
+# Lernreise: Enzymkinetik nach Michaelis sowie allosterische Regulation — Episode B18: Der verklebte Foerderband-Code
 
-<!-- Lesson v3 architecture: Schritte 1-8 fixed; Fehlvorstellung between Schritt 6 and 7 (parser skipped); embedded [Werkzeug: <id>]; gating: check/szenario failed = Weiter greyed; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
+<!-- Campaign: Nano-Zellfabrik-Krise | Bio | Instapower: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
-## Schritt 1 — entdecken
+## Schritt 1 — entdecken: Der Km-Code des Reaktorhirns
 
-ZIELE (3 Ziele, nach 15 Minuten erreichbar):
+ZIELE（本节三目标）：
+1. 中文：能用变性解释温度/pH最适。
+2. 中文：能读懂底物/酶浓度曲线。
+3. 中文：能区分竞争与非竞争抑制。
 
-1. Die Michaelis-Menten-Kurve $v = v_{max} \cdot [S]/(K_m + [S])$ lesen und $K_m$ sowie $v_{max}$ bestimmen.
-2. Kompetitive und nicht-kompetitive Hemmung anhand der Kurvenveraenderung unterscheiden.
-3. Allosterische Regulation mit Effektor und Konformationsaenderung erklaeren (AFB II).
+【危机Hook】mRNA-Band steht still; Logistik-Chef Ribos bittet um Protein-Notprogramm. 催化反应堆“发烧”到42度，传送带还在转。Finn博士盯着先升后坠的过山车曲线，旁边实习生又把柠檬汁洒进反应池，第二台机器也停了。为什么升温先加速后摧毁一切？为什么酸能让酶罢工、铅等重金属却能永久毒杀？今晚搞懂温度、pH、浓度与抑制，工厂才能继续呼吸，否则只能急停。
 
-VORAUSSETZUNG: Aktives Zentrum, Substratbindung und Ablesen von Diagrammen.
+`Klausur-Satz: Jedes Enzym hat ein Optimum; jenseits davon denaturiert die Raumstruktur irreversibel.`
 
-VORGAENGER-VERWEIS: Diese Lektion setzt `Bio-Enzymaktivitaet-Faktoren-L1.md` voraus und wiederholt sie nicht. Dort wurden Temperatur, pH und allgemeine Hemmung als Faktoren eingefuehrt. Hier folgt der enge Ausschnitt: nur quantitative Michaelis-Kinetik ($K_m$, $v_{max}$) plus allosterische Regulation; Temperatur- und pH-Kurven gehoeren nicht hierher.
+## Schritt 2 — entdecken: Die Kinetik-Werkzeugkiste der Feinmechaniker
 
-Klausur-Satz: `Die Michaelis-Konstante K_m gibt die Substratkonzentration bei halber Maximalgeschwindigkeit an.`
+PRETRAINING术语盒（5大装备，中文在上、德语在下）：
 
-## Schritt 2 — entdecken
+- 中文：米门方程 — 德语：Michaelis-Menten：速率公式，描述饱和曲线。 / v = vmax mal [S] durch (Km + [S]).
+- 中文：Km值 — 德语：Km-Wert：半速时的底物浓度，亲和力标尺。 / Substratkonzentration bei halbem vmax; Mass der Affinitaet.
+- 中文：最大速率 — 德语：vmax：中心全饱和时的平台速率。 / Plateau bei Saettigung aller Zentren.
+- 中文：别构 — 德语：Allosterisch：中心之外结合，开关调节。 / Regulation abseits des Zentrums schaltet um.
+- 中文：反馈抑制 — 德语：Feedback-Hemmung：终产物抑制链首酶。 / Endprodukt hemmt das erste Enzym der Kette.
 
-PRETRAINING (Kernbegriffe):
+`Klausur-Satz: Substrat hilft bis zur Saettigung, Enzym hebt das Plateau.`
 
-- $v_{max}$: Maximale Reaktionsgeschwindigkeit bei Substratsaettigung.
-- $K_m$: Substratkonzentration bei $v = v_{max}/2$; Mass fuer die Affinitaet.
-- Kompetitive Hemmung: Hemmstoff konkurriert um das aktive Zentrum; $v_{max}$ bleibt, $K_m$ steigt.
-- Nicht-kompetitive Hemmung: Hemmstoff bindet ausserhalb; $v_{max}$ sinkt, $K_m$ bleibt.
-- Allosterisch: Effektor bindet am allosterischen Zentrum und veraendert die Enzymgestalt.
+## Schritt 3 — entdecken: Km, vmax und der allosterische Schalter
 
-Klausur-Satz: `Kompetitive Hemmung laesst sich durch Substratueberschuss ueberwinden, nicht-kompetitive nicht.`
+ENTDECKEN因果传导机制（中文拆解在上，德语链条在下）：
 
-## Schritt 3 — entdecken
+中文：因果链：升温→碰撞增多→过最适后空间结构熔化变性，不可逆；pH错→中心电荷变；底物只帮到饱和，酶量抬高平台；竞争可用底物“淹没”，非竞争直接压低最大值。
 
-ENTDECKEN (ein Konzept plus Diagramm):
-
-Bei wenig Substrat steigt $v$ fast linear, bei viel Substrat naehert sich $v$ asymptotisch $v_{max}$: Alle aktiven Zentren sind besetzt. $K_m$ misst die Affinitaet: kleines $K_m$ bedeutet hohe Affinitaet. Allosterische Enzyme besitzen zusaetzlich ein Regulatorzentrum; Aktivatoren stabilisieren die aktive Form, Inhibitoren die inaktive. So steuert die Zelle Stoffwechselwege ohne neue Enzyme zu bauen.
+德语：Die Kette: Mehr Waerme heisst mehr Kollisionen bis zum Optimum, danach schmilzt die Raumstruktur — Denaturierung, irreversibel. Falscher pH veraendert Ladungen im Zentrum. Mehr Substrat hilft nur bis zur Saettigung, mehr Enzym hebt das Plateau. Kompetitiv laesst sich mit Substrat ueberstimmen, nichtkompetitiv senkt das Maximum dauerhaft.
 
 ```diagram
-v ^
-  |                              ...... v_max
-  |                        ......
-  |                   .....
-  |              .....
-  |          ....
-  |       ...
-  |     ..
-  |   ..
-  +----------------------------------> [S]
-  Markierung: bei [S] = K_m gilt v = v_max/2
-  kompetitiv: Kurve nach rechts verschoben (K_m groesser)
-  nicht-kompetitiv: Plateau tiefer (v_max kleiner)
+Waerme hoch -> Kollision hoch -> Optimum -> Denaturierung
+pH falsch -> Ladung falsch -> Zentrum blockiert
+Kompetitiv + Substrat = ok | Nichtkompetitiv = vmax sinkt
 ```
 
-Klausur-Satz: `Die Lage von K_m auf der [S]-Achse verrät die Affinitaet, die Hoehe des Plateaus verrät v_max.`
+`Klausur-Satz: Kompetitiv blockiert das Zentrum, nichtkompetitiv verformt es.`
 
 ## Anekdote & Fun-Fact
 
-**Anekdote / Fun-Fact (DE)**: Leonor Michaelis und Maud Menten verbanden 1913 Enzym und Mathematik: Aus wenigen Messpunkten rekonstruierten sie zwei Konstanten, die bis heute jede Enzymcharakterisierung eroeffnen. Ihre Gleichung gilt als Geburtsstunde der quantitativen Biochemie.
+**Anekdote / Fun-Fact (DE)**: Fieber ab 42 Grad wird lebensgefaehrlich, weil Koerpereiweisse wie Enzyme ihre Form verlieren — die Fabrik fiebert wie ein Mensch.
 
-**Bezug zum Konzept**: `Zwei Konstanten ersetzen eine ganze Messreihe — genau darin liegt der Klausurwert der Kinetik.`
+**中文解读**: 人体发烧超42度致命，因为蛋白质像酶一样变形——工厂发烧和人一样。
 
-## Schritt 4 — ausprobieren
+**Bezug zum Konzept**: Das Optimum ist schmal, die Denaturierung ist endgültig.
 
-BEISPIEL (vollstaendige Musterloesung):
+## Schritt 4 — ausprobieren: Feinmechanik-Sandkasten: Knacke den Km-Wert
 
 [Werkzeug: formula]
 
-AUFGABE (deuten, AFB II): Fuer ein Enzym gilt $v_{max} = 80 \, \mathrm{\mu mol/min}$ und $K_m = 2{,}0 \, \mathrm{mmol/L}$. Bestimmen Sie $v$ bei $[S] = 2{,}0 \, \mathrm{mmol/L}$ und bei $[S] = 20 \, \mathrm{mmol/L}$ und deuten Sie beide Werte.
+AUFGABE目标挑战：目标挑战：vmax=120、Km=0.5，用米氏方程算[S]=0.5与5.0时的速率，展示饱和并从曲线读出Km（精确到0.1）。 德语原题：Bei 37 Grad 100 %, bei 47 Grad nur 25 %: Erklaere mit Denaturierung.
 
 HILFE:
-1. Schritt 1: Formel $v = v_{max} [S]/(K_m + [S])$ notieren.
-2. Schritt 2: Beide Werte einsetzen.
-3. Schritt 3: Mit Saettigung deuten.
+1. Optimum markieren.
+2. Jenseits schmilzt Struktur.
+3. pH-Extreme veraendern Ladungen.
 
-MUSTERLOESUNG: Bei $[S] = K_m = 2{,}0 \, \mathrm{mmol/L}$ gilt $v = 80 \cdot 2{,}0/4{,}0 = 40 \, \mathrm{\mu mol/min}$, also exakt $v_{max}/2$. Bei $[S] = 20 \, \mathrm{mmol/L}$ gilt $v = 80 \cdot 20/22 = 72{,}7 \, \mathrm{\mu mol/min}$, also nahe $v_{max}$. Der erste Wert belegt die Definition von $K_m$, der zweite die Saettigung: Fast alle aktiven Zentren sind besetzt, weiteres Substrat steigert $v$ kaum noch.
+MUSTERLÖSUNG：中文：超过最适，高温不可逆破坏空间结构故暴跌；极端pH再使中心变形。 / 德语：Jenseits des Optimums zerstoert Hitze die Raumstruktur irreversibel, daher der Absturz; Extrem-pH verformt zusaetzlich das Zentrum.
 
-Klausur-Satz: `Bei [S] = K_m ist v halbmaximal, bei [S] weit ueber K_m naehern sich die Werte v_max asymptotisch.`
+`Klausur-Satz: 25 % bei 47 Grad heissen: Hitze hat die Struktur geschmolzen.`
 
-## Schritt 5 — ausprobieren
+## Schritt 5 — ausprobieren: Duell der Schalter: Kompetitiv gegen allosterisch
 
-VERGLEICH (erst Verfahren waehlen, dann loesen):
+VERGLEICH: Waehle erst die Bremse — (i) reversibel-kompetitiv oder (ii) nichtkompetitiv/denaturierend — dann loesen.选程序：先判抑制类型。
 
-VERGLEICH: Waehle erst das Verfahren — (i) Hemmungs-Verfahren (Kurvenvergleich: $K_m$ oder $v_{max}$ veraendert?) oder (ii) Regulations-Verfahren (allosterischer Effektor mit Gestaltwandel) — dann loesen.
+Weg A：Weg A (Kompetitiv-Weiche): Zentrum blockiert, Substrat hilft noch.
 
-AUFGABE A: Nach Zugabe eines Stoffes steigt $K_m$, $v_{max}$ bleibt gleich. Welcher Typ liegt vor?
+Weg B：Weg B (Struktur-Weiche): Zentrum verformt oder zerstoert, Substrat hilft nicht.
 
-AUFGABE B: ATP hemmt ein Schlüsselenzym der Glykolyse durch Bindung ausserhalb des aktiven Zentrums. Welcher Typ liegt vor?
+AUFGABE A: Mehr Substrat stellt die Rate wieder her. Welche Bremse? 【选程序：先看信号词再选路】
 
-HILFE: A beschreibt Kurvenverschiebung am aktiven Zentrum, also Verfahren (i). B nennt Bindung ausserhalb mit Gestaltwandel, also Verfahren (ii).
+AUFGABE B: Mehr Substrat hilft nichts, vmax bleibt unten. Welche Bremse? 【选程序：先看信号词再选路】
 
-ANTWORT: A erfordert Verfahren (i): Kompetitive Hemmung, da nur $K_m$ steigt und Substratueberschuss den Effekt aufhebt. B erfordert Verfahren (ii): Allosterische Inhibition, da ATP als Effektor die inaktive Konformation stabilisiert und den Stoffwechselweg drosselt.
+HILFE：A reagiert auf Substrat — Weg A. B bleibt unten — Weg B.
 
-Klausur-Satz: `Veraendertes K_m verrät Konkurrenz am aktiven Zentrum, veraenderte Gestalt verrät allosterische Regulation.`
+ANTWORT：ANTWORT: A folgt Weg A als kompetitive Hemmung; B folgt Weg B als nichtkompetitive Hemmung oder Denaturierung.
 
-## Schritt 6 — check
+`Klausur-Satz: Substrat rettet nur die kompetitive Bremse.`
 
-CHECK (drei Fragen mit Antworten):
+## Schritt 6 — check: Selbsttest zu Enzymkinetik nach Michaelis sowie allosterische Regulation
 
-FRAGE: Was bedeuten $K_m$ und $v_{max}$? | ANTWORT: $K_m$ ist $[S]$ bei $v_{max}/2$ und misst die Affinitaet; $v_{max}$ ist die Saettigungsgeschwindigkeit.
-FRAGE: Wie unterscheiden sich kompetitive und nicht-kompetitive Hemmung in der Kurve? | ANTWORT: Kompetitiv erhoeht $K_m$ bei gleichem $v_{max}$; nicht-kompetitiv senkt $v_{max}$ bei gleichem $K_m$.
-FRAGE: Was geschieht bei allosterischer Regulation? | ANTWORT: Ein Effektor bindet am Regulatorzentrum und stabilisiert die aktive oder inaktive Konformation des Enzyms.
+FRAGE：超过最适发生什么？（Was passiert jenseits des Optimums?） | ANTWORT：变性：空间结构破坏，不可逆。 / Denaturierung: Raumstruktur zerstoert, irreversibel.
+FRAGE：竞争抑制下底物有何用？（Wie hilft Substrat bei kompetitiv?） | ANTWORT：淹没抑制剂、夺回中心。 / Es ueberstimmt den Hemmstoff am Zentrum.
+FRAGE：加酶改变什么？（Was aendert mehr Enzym?） | ANTWORT：抬高平台，不改变单中心饱和。 / Es hebt das Plateau, nicht die Saettigung pro Zentrum.
 
-Klausur-Satz: `K_m steht auf der [S]-Achse, v_max auf der v-Achse — beide Achsen zusammen identifizieren jeden Hemmtyp.`
+`Klausur-Satz: Jenseits des Optimums hilft kein Substrat mehr.`
 
 ## Fehlvorstellung
 
-1. Fehlvorstellung: Mehr Substrat steigere $v$ unbegrenzt linear.
-   Korrektur-Satz: `Oberhalb der Saettigung sind alle aktiven Zentren besetzt, sodass v gegen v_max strebt und nicht weiter linear steigt.`
+1. 误解：误解“越热越好”。
+   中文纠偏：见德语纠偏句。
+   Korrektur-Satz: `Nur bis zum Optimum; danach denaturiert das Enzym irreversibel.`
+2. 误解：误解“两种抑制一样”。
+   中文纠偏：见德语纠偏句。
+   Korrektur-Satz: `Nur kompetitiv laesst sich mit Substrat ueberstimmen.`
 
-2. Fehlvorstellung: Kompetitive Hemmung zerstoere das Enzym dauerhaft.
-   Korrektur-Satz: `Kompetitive Hemmung ist reversibel und laesst sich durch Substratueberschuss verdraengen, da kein Enzym zerstoert wird.`
+## Schritt 7 — szenario: Klausurtransfer: Audienz beim Reaktorhirn
 
-## Schritt 7 — szenario
+ROLLE：中文：你是工厂夜班技术员。 / 德语：Du bist Gutachterin im Reaktorgebaeude.
+SITUATION：高温+酸泄漏后两台反应堆停机，请论证哪台可救（约140词）。 / 德语：Nach Hitzespitze und Saeureunfall stehen zwei Reaktoren. Beurteile in ca. 140 Woertern mit Optimum, Denaturierung und Hemmtyp, welcher Reaktor rettbar ist.
+RUBRIC (30 XP)：Optimumslogik (10 XP) | Denaturierung (8 XP) | Hemmtyp (8 XP) | Urteil (4 XP).
 
-ROLLE: Du bist Tutorin im Bio-Grundkurs.
-SITUATION: Eine Mitschuelerin legt zwei Messreihen vor: Reihe A erreicht dasselbe Plateau langsamer, Reihe B ein niedrigeres Plateau. Erklaere in circa 150 Woertern mit $K_m$ und $v_{max}$, welcher Hemmtyp jeweils vorliegt und wie eine allosterische Regulation davon zu unterscheiden waere.
-RUBRIC (30 XP): Bestimmen von $K_m$ und $v_{max}$ (8 XP) | Zuordnung beider Hemmtypen (10 XP) | Abgrenzung zur Allosterie (6 XP) | Fachsprachliche Darstellung (6 XP).
+`Klausur-Satz: Rettbar ist, was reversibel gehemmt ist; denaturiert ist verloren.`
 
 ## Schritt 8 — reflexion: Takeaway & Reflexion
 
-TAKEAWAY:
+TAKEAWAY核心总结：
 
-Kurve lesen heisst Achsen lesen: $K_m$ auf der $[S]$-Achse, $v_{max}$ auf der $v$-Achse. Gestaltwandel ausserhalb gehoert zur Allosterie.
-Takeaway-Satz: `K_m misst Affinitaet, v_max misst Kapazitaet — Hemmung verschiebt die Kurve, Regulation verformt das Enzym.`
+中文：因果链：升温→碰撞增多→过最适后空间结构熔化变性，不可逆；pH错→中心电荷变；底物只帮到饱和，酶量抬高平台；竞争可用底物“淹没”，非竞争直接压低最大值。
+Takeaway-Satz: `Optimum halten heisst Struktur halten.`
 
-REFLEXION:
-1. Welcher Schritt fiel schwerer — die Rechnung zu $v$ (Schritt 4) oder die Typwahl (Schritt 5)?
-2. Beim naechsten Mal markiere ich zuerst $K_m$ und $v_{max}$ in der Kurve, weil beide den Hemmtyp verraten.
+`Klausur-Satz: Optimum halten heisst Struktur halten.`
+
+
+REFLEXION 2问：
+1. 过程自省：Welcher Schritt fiel schwerer — die Sandkasten-Challenge (Schritt 4) oder die Verfahrenswahl (Schritt 5)?
+2. 元认知计划：Beim nächsten Mal sichere ich zuerst die Werkzeugkiste, weil jeder Handgriff darauf aufbaut.

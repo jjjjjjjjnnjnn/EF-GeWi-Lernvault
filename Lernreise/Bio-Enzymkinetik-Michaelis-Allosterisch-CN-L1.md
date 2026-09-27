@@ -11,166 +11,125 @@ tags: [EF, Bio, CN]
 version: Lesson-v3
 ---
 
-# Lernreise: Enzymkinetik mit Michaelis und allosterischer Regulation (L1, Ziel Klausur)
+# Lernreise: Enzymkinetik mit Michaelis und allosterischer Regulation — Episode B16: Phage Vex klopft an
 
-<!-- Lesson v3 9步制架构：Schritt 1至8固定结构；Fehlvorstellung 夹在 Schritt 6 与 7 之间（Parser 自动跳过，不占步数）；支持内嵌 [Werkzeug: <id>] 交互教具；Gating: check/szenario 未过 = Weiter 置灰；XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
+<!-- Campaign: Nano-Zellfabrik-Krise | Bio | Instapower: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
-## Schritt 1 — entdecken: Ziele & Phänomen-Einstieg
+## Schritt 1 — entdecken: Der Km-Code des Reaktorhirns
 
-ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
+ZIELE（本节三目标）：
+1. 中文：能用变性解释温度/pH最适。
+2. 中文：能读懂底物/酶浓度曲线。
+3. 中文：能区分竞争与非竞争抑制。
 
-1. 中文：能画出米氏曲线并标出 $v_{max}$ 与 $K_m$（$K_m$ 是达到半速时的底物浓度）。
-2. 中文：能区分竞争性与非竞争性抑制在曲线上的表现（$K_m$ 变还是 $v_{max}$ 变）。
-3. 中文：能选择调节类型解释（选程序：米氏定量 vs 变构定性）。
+【危机Hook】Ein Bakteriophage dockt an Tor 3 an; Beppo das Hausmeister-Bakterium verriegelt die Poren. 催化反应堆“发烧”到42度，传送带还在转。Finn博士盯着先升后坠的过山车曲线，旁边实习生又把柠檬汁洒进反应池，第二台机器也停了。为什么升温先加速后摧毁一切？为什么酸能让酶罢工、铅等重金属却能永久毒杀？今晚搞懂温度、pH、浓度与抑制，工厂才能继续呼吸，否则只能急停。
 
-Voraussetzung（窄切口）：只做底物浓度影响速率，已知酶促三步 E+S→ES→E+P；不推导米氏方程、不做 pH 曲线。
+`Klausur-Satz: Jedes Enzym hat ein Optimum; jenseits davon denaturiert die Raumstruktur irreversibel.`
 
+## Schritt 2 — entdecken: Die Kinetik-Werkzeugkiste der Feinmechaniker
 
-Hook中文生活切入:
+PRETRAINING术语盒（5大装备，中文在上、德语在下）：
 
-想象食堂打饭窗口:窗口就一个,学生越聚越多,刚开始多来一个人就多打一份饭,可窗口忙到极限后,再排多少人速度也不再增加;而别处开了新窗口或者有人插队,整个队伍的速度又会变化。酶和底物的关系正是如此:酶的数量有限,底物再多也有上限,而抑制剂和激活剂还能远程调节酶的干劲。
+- 中文：米门方程 — 德语：Michaelis-Menten：速率公式，描述饱和曲线。 / v = vmax mal [S] durch (Km + [S]).
+- 中文：Km值 — 德语：Km-Wert：半速时的底物浓度，亲和力标尺。 / Substratkonzentration bei halbem vmax; Mass der Affinitaet.
+- 中文：最大速率 — 德语：vmax：中心全饱和时的平台速率。 / Plateau bei Saettigung aller Zentren.
+- 中文：别构 — 德语：Allosterisch：中心之外结合，开关调节。 / Regulation abseits des Zentrums schaltet um.
+- 中文：反馈抑制 — 德语：Feedback-Hemmung：终产物抑制链首酶。 / Endprodukt hemmt das erste Enzym der Kette.
 
-Phaenomen-Satz (DE): Ein Schalter bedient alle, doch irgendwann hilft keine laengere Schlange mehr.
+`Klausur-Satz: Substrat hilft bis zur Saettigung, Enzym hebt das Plateau.`
 
-中文机制铺垫:底物浓度低时反应速度随浓度上升,酶被底物饱和后速度封顶为最大值;米氏常数标记达到半速所需的底物量,竞争性抑制抬高表观米氏常数,别构效应则改变酶的空间形状从而调节上限。
+## Schritt 3 — entdecken: Km, vmax und der allosterische Schalter
 
-Mechanismus-Satz (DE): Saettigung begrenzt die Geschwindigkeit, Hemmung und Aktivierung verstellen die Kennwerte.
+ENTDECKEN因果传导机制（中文拆解在上，德语链条在下）：
 
-Klausur-Satz: `Die Reaktionsgeschwindigkeit folgt der Michaelis-Kurve mit v_max und K_m; Hemmtypen veraendern sie charakteristisch.`
+中文：因果链：升温→碰撞增多→过最适后空间结构熔化变性，不可逆；pH错→中心电荷变；底物只帮到饱和，酶量抬高平台；竞争可用底物“淹没”，非竞争直接压低最大值。
 
-## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
-
-PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
-
-中文在上，德语在下：
-
-- 最大速率 — Maximalgeschwindigkeit $v_{max}$：酶被底物饱和时的速率平台。
-- 米氏常数 — Michaelis-Konstante $K_m$：达到 $v_{max}/2$ 的底物浓度，越小亲和力越高。
-- 竞争性抑制 — kompetitive Hemmung：抑制剂抢活性中心，$K_m$ 增大、$v_{max}$ 不变。
-- 非竞争性抑制 — nichtkompetitive Hemmung：抑制剂结合别处，$v_{max}$ 下降、$K_m$ 不变。
-- 变构调节 — allosterische Regulation：效应物结合调节部位，改变酶构象与活性。
-
-Klausur-Satz: `Kompetitiv erhoeht K_m, nichtkompetitiv senkt v_max; allosterisch veraendert die Enzymgestalt.`
-
-## Schritt 3 — entdecken: Kernkonzept & Wirkungsmodell
-
-ENTDECKEN（1概念 + 1文字图解，中文在上、德语在下）：
-
-Hook中文生活切入：
-
-中文：想象地铁早高峰安检口：人少时来一个过一个，人多了安检员满负荷，再多人也只能排队，通行速度封顶。酶也一样会忙不过来。
-
-Phaenomen-Satz (DE): Wenig Substrat heisst freie Kapazitaet, viel Substrat heisst Warteschlange am Enzym.
-
-Spiel-Aufgabe沙盒操作指引：
-
-中文：打开沙盒，拖动滑块底物浓度 [S] 从低到高（关键词：Substrat, Sättigung v_max, K_m），再分别加入竞争性抑制剂和非竞争性抑制剂，看曲线右移还是峰顶下压。
-
-Beobachtungs-Satz (DE): Mit steigendem [S] naehert sich v dem Plateau v_max; der Hemmstoff verschiebt die Kurve oder senkt das Plateau.
-
-Aha-Moment因果链：
-
-中文因果链：底物越多酶被占用比例越高，全部在岗即饱和，速度封顶为v_max；一半酶在岗时的底物浓度就是K_m；竞争者抢活性位点需更高底物才能赶上所以K_m变大、封顶不变，非竞争者从别处锁死酶所以封顶v_max直接下降。
-
-Gesetz-Satz (DE): Saettigung erzeugt das Plateau, der Hemmtyp entscheidet ueber K_m oder v_max.
-
-$v = v_{max} \cdot [S]/(K_m + [S])$
-
-$[S] = K_m \Rightarrow v = v_{max}/2$
-
-文字图解（ASCII 结构图，App支持解析渲染）：
+德语：Die Kette: Mehr Waerme heisst mehr Kollisionen bis zum Optimum, danach schmilzt die Raumstruktur — Denaturierung, irreversibel. Falscher pH veraendert Ladungen im Zentrum. Mehr Substrat hilft nur bis zur Saettigung, mehr Enzym hebt das Plateau. Kompetitiv laesst sich mit Substrat ueberstimmen, nichtkompetitiv senkt das Maximum dauerhaft.
 
 ```diagram
-v ^
-  |  v_max .................. Plateau
-  |         ....
-  |       ..
-  |     ..  K_m markiert v_max/2
-  +----------------------------------> [S]
-  kompetitiv: Kurve rechts | nichtkompetitiv: Plateau tiefer
+Waerme hoch -> Kollision hoch -> Optimum -> Denaturierung
+pH falsch -> Ladung falsch -> Zentrum blockiert
+Kompetitiv + Substrat = ok | Nichtkompetitiv = vmax sinkt
 ```
-Klausur-Satz: `Die Saettigung erklaert das Plateau; der Hemmtyp entscheidet, ob K_m oder v_max betroffen ist.`
+
+`Klausur-Satz: Kompetitiv blockiert das Zentrum, nichtkompetitiv verformt es.`
 
 ## Anekdote & Fun-Fact
 
-**Anekdote / Fun-Fact (DE)**: Leonor Michaelis und Maud Menten veröffentlichten 1913 ihre Kinetik-Gleichung — Menten als eine der ersten kanadischen Doktorinnen der Medizin. Ihre Kurve beschreibt bis heute, wie Enzyme und viele Medikamente wirken.
+**Anekdote / Fun-Fact (DE)**: Fieber ab 42 Grad wird lebensgefaehrlich, weil Koerpereiweisse wie Enzyme ihre Form verlieren — die Fabrik fiebert wie ein Mensch.
 
-**中文解读**: 米氏方程出自 1913 年，作者之一门滕是早期杰出女科学家。记住 $K_m$ 与半速点的对应，任何酶动力学曲线题都能定位。
+**中文解读**: 人体发烧超42度致命，因为蛋白质像酶一样变形——工厂发烧和人一样。
 
-**Bezug zum Konzept**: `K_m als Halbsaettigung macht Affinitaet messbar.`
+**Bezug zum Konzept**: Das Optimum ist schmal, die Denaturierung ist endgültig.
 
-## Schritt 4 — ausprobieren: Interaktive Praxis & Labor
+## Schritt 4 — ausprobieren: Feinmechanik-Sandkasten: Knacke den Km-Wert
 
-[Werkzeug: enzyme-lock]
+[Werkzeug: formula]
 
-BEISPIEL（正确例题示范，含教具操作与解答，中文在上、德语在下）：
+AUFGABE目标挑战：目标挑战：vmax=120、Km=0.5，用米氏方程算[S]=0.5与5.0时的速率，展示饱和并从曲线读出Km（精确到0.1）。 德语原题：Bei 37 Grad 100 %, bei 47 Grad nur 25 %: Erklaere mit Denaturierung.
 
-AUFGABE中文导读（沙盒谜题）：两组酶实验，一组加抑制剂后曲线右移但封顶不变，另一组封顶下降。请判定抑制类型，并用K_m与v_max作证。
+HILFE:
+1. Optimum markieren.
+2. Jenseits schmilzt Struktur.
+3. pH-Extreme veraendern Ladungen.
 
-AUFGABE (auswerten, AFB II): Zwei Ansaetze mit Hemmstoff zeigen (a) Rechtsverschiebung bei gleichem Plateau, (b) gesenktes Plateau. Bestimmen Sie jeweils den Hemmtyp und begruenden Sie mit $K_m$ und $v_{max}$.
+MUSTERLÖSUNG：中文：超过最适，高温不可逆破坏空间结构故暴跌；极端pH再使中心变形。 / 德语：Jenseits des Optimums zerstoert Hitze die Raumstruktur irreversibel, daher der Absturz; Extrem-pH verformt zusaetzlich das Zentrum.
 
-HILFE（中德双语步骤）：
+`Klausur-Satz: 25 % bei 47 Grad heissen: Hitze hat die Struktur geschmolzen.`
 
-1. 中文：第1步读封顶：封顶不变看K_m，封顶下降看v_max，关键词：Plateau。
-   Schritt 1 (DE): Pruefen Sie zuerst das Plateau v_max.
-2. 中文：第2步右移等顶判竞争性、压顶判非竞争，关键词：Rechtsverschiebung。
-   Schritt 2 (DE): Rechtsverschiebung bei gleichem Plateau heisst kompetitiv.
-3. 中文：第3步补一句别构效应的形状变化含义，关键词：Gestalt。
-   Schritt 3 (DE): Ergaenzen Sie die Deutung der Gestaltveraenderung.
+## Schritt 5 — ausprobieren: Duell der Schalter: Kompetitiv gegen allosterisch
 
-MUSTERLOESUNG：中文：a组封顶不变只是达到同样速度需要更多底物，是竞争性抑制，K_m增大、v_max不变；b组天花板被压低，是非竞争或别构抑制，v_max下降；两类都可用洗掉抑制剂是否恢复来验证。
+VERGLEICH: Waehle erst die Bremse — (i) reversibel-kompetitiv oder (ii) nichtkompetitiv/denaturierend — dann loesen.选程序：先判抑制类型。
 
-MUSTERLOESUNG (DE): Ansatz (a) ist kompetitiv: $K_m$ steigt, $v_{max}$ bleibt, die Kurve wandert nach rechts. Ansatz (b) ist nichtkompetitiv bzw. allosterisch: $v_{max}$ sinkt, das Plateau liegt tiefer. Beide Deutungen folgen direkt aus $v = v_{max} \cdot [S]/(K_m + [S])$.
-Klausur-Satz: `Bei [S] = K_m betraegt v die Haelfte von v_max; bei Saettigung bleibt v auf v_max.`
+Weg A：Weg A (Kompetitiv-Weiche): Zentrum blockiert, Substrat hilft noch.
 
-## Schritt 5 — ausprobieren: Verfahrensvergleich & Abgrenzung
+Weg B：Weg B (Struktur-Weiche): Zentrum verformt oder zerstoert, Substrat hilft nicht.
 
-VERGLEICH辨别实验（双向辨析：米氏定量 vs 变构定性）：
+AUFGABE A: Mehr Substrat stellt die Rate wieder her. Welche Bremse? 【选程序：先看信号词再选路】
 
-VERGLEICH: Waehle erst das Verfahren — 【选程序】先看问什么：(i) 米氏定量（问 $K_m$/$v_{max}$ 读数、抑制剂使哪个参数变：看曲线平移还是压低）oder (ii) 变构定性（问反馈抑制/激活：讲调节部位与构象变化，不算数）—— dann loesen.
+AUFGABE B: Mehr Substrat hilft nichts, vmax bleibt unten. Welche Bremse? 【选程序：先看信号词再选路】
 
-AUFGABE A：Mit Hemmstoff X bleibt das Plateau gleich, die Kurve ist nach rechts verschoben. Hemmtyp?
-AUFGABE B：Endprodukt E hemmt das erste Enzym der Kette an separater Stelle. Regulationstyp?
+HILFE：A reagiert auf Substrat — Weg A. B bleibt unten — Weg B.
 
-HILFE: A 问曲线参数变化 → Verfahren (i)。B 问链首反馈、无 $K_m$ 数值 → Verfahren (ii)。【选程序：见曲线比参数；见反馈讲构象。】
+ANTWORT：ANTWORT: A folgt Weg A als kompetitive Hemmung; B folgt Weg B als nichtkompetitive Hemmung oder Denaturierung.
 
-ANTWORT: A erfordert Verfahren (i): Gleiches $v_{max}$ bei groesserem $K_m$ ist kompetitiv — mehr Substrat verdraengt den Hemmer. B erfordert Verfahren (ii): Das Endprodukt bindet allosterisch und schaltet das Eingangsenzym per Konformationsaenderung ab (negative Rueckkopplung); hier wird kein $K_m$-Wert berechnet, sondern die Regulation als Sparschaltung gedeutet.
-
-Klausur-Satz: `Rechtsverschiebung bei gleichem Plateau heisst kompetitiv; Endprodukt-Hemmung am Kettenanfang heisst allosterische Rueckkopplung.`
+`Klausur-Satz: Substrat rettet nur die kompetitive Bremse.`
 
 ## Schritt 6 — check: Selbsttest zu Enzymkinetik mit Michaelis und allosterischer Regulation
-CHECK检索默写（自测 3 题，与答案配对）：
 
-FRAGE: Was bedeuten $v_{max}$ und $K_m$? | ANTWORT: $v_{max}$ ist das Plateau bei Saettigung; $K_m$ ist $[S]$ bei $v_{max}/2$, Mass fuer Affinitaet (klein = affin).
-FRAGE: Wie unterscheiden sich die Hemmtypen in der Kurve? | ANTWORT: Kompetitiv: $K_m$ steigt, $v_{max}$ gleich; nichtkompetitiv: $v_{max}$ sinkt, $K_m$ gleich.
-FRAGE: Was geschieht allosterisch? | ANTWORT: Ein Effektor bindet ausserhalb des aktiven Zentrums und aendert die Gestalt und Aktivitaet.
+FRAGE：超过最适发生什么？（Was passiert jenseits des Optimums?） | ANTWORT：变性：空间结构破坏，不可逆。 / Denaturierung: Raumstruktur zerstoert, irreversibel.
+FRAGE：竞争抑制下底物有何用？（Wie hilft Substrat bei kompetitiv?） | ANTWORT：淹没抑制剂、夺回中心。 / Es ueberstimmt den Hemmstoff am Zentrum.
+FRAGE：加酶改变什么？（Was aendert mehr Enzym?） | ANTWORT：抬高平台，不改变单中心饱和。 / Es hebt das Plateau, nicht die Saettigung pro Zentrum.
 
-Klausur-Satz: `Kompetitiv veraendert K_m, nichtkompetitiv v_max, allosterisch die Gestalt.`
+`Klausur-Satz: Jenseits des Optimums hilft kein Substrat mehr.`
 
 ## Fehlvorstellung
 
-(非Schritt小节，Parser 自动识别，不计入步骤步数)
+1. 误解：误解“越热越好”。
+   中文纠偏：见德语纠偏句。
+   Korrektur-Satz: `Nur bis zum Optimum; danach denaturiert das Enzym irreversibel.`
+2. 误解：误解“两种抑制一样”。
+   中文纠偏：见德语纠偏句。
+   Korrektur-Satz: `Nur kompetitiv laesst sich mit Substrat ueberstimmen.`
 
-1. 误解"$K_m$ 越大亲和力越强"。
-   中文纠偏：反了。$K_m$ 是半速浓度，需要底物越少说明结合越容易，所以 $K_m$ 越小亲和力越大。
-   Korrektur-Satz: `Ein kleines K_m bedeutet hohe Affinitaet.`
+## Schritt 7 — szenario: Klausurtransfer: Audienz beim Reaktorhirn
 
-2. 误解"多加底物总能克服抑制"。
-   中文纠偏：只对竞争性成立；非竞争性减少了有效酶量，平台永久压低，加底物无用。
-   Korrektur-Satz: `Nur die kompetitive Hemmung laesst sich durch Substratueberschuss aufheben.`
+ROLLE：中文：你是工厂夜班技术员。 / 德语：Du bist Gutachterin im Reaktorgebaeude.
+SITUATION：高温+酸泄漏后两台反应堆停机，请论证哪台可救（约140词）。 / 德语：Nach Hitzespitze und Saeureunfall stehen zwei Reaktoren. Beurteile in ca. 140 Woertern mit Optimum, Denaturierung und Hemmtyp, welcher Reaktor rettbar ist.
+RUBRIC (30 XP)：Optimumslogik (10 XP) | Denaturierung (8 XP) | Hemmtyp (8 XP) | Urteil (4 XP).
 
-## Schritt 7 — szenario: Klausurtransfer: Enzymkinetik mit Michaelis und allosterischer Regulation
-ROLLE: Du bist Tutor und erklaerst eine Enzymkurve mit Hemmstoff.
-SITUATION: Eine Gruppe liest $K_m$ und $v_{max}$ falsch ab und verwechselt die Hemmtypen. Erklaere in einer zusammenhaengenden Darstellung (ca. 150 Woerter) an einer Kurvenskizze, wie man beide Kennwerte abliest und woran man kompetitiv gegen nichtkompetitiv erkennt.
-RUBRIC (30 XP): Ablesen von $v_{max}$ und $K_m$ (10 XP) | Unterscheidung der Hemmtypen an der Kurve (10 XP) | Allosterische Deutung als Regulation (6 XP) | Fachsprachliche Korrektheit (4 XP).
+`Klausur-Satz: Rettbar ist, was reversibel gehemmt ist; denaturiert ist verloren.`
 
-## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
+## Schritt 8 — reflexion: Takeaway & Reflexion
 
-TAKEAWAY 1盒（核心总结）：
+TAKEAWAY核心总结：
 
-中文：米氏曲线看两点——平台 $v_{max}$ 与半速 $K_m$。右移是竞争（加底物可救），压低是非竞争（加底物无用），首酶被尾产物关停是变构反馈。记住一句话——右移争位，压低减员，反馈关总闸。
-Takeaway-Satz: `Plateau und Halbwert lesen, Verschiebung gegen Absenkung halten, Rueckkopplung als Schaltung deuten.`
+中文：因果链：升温→碰撞增多→过最适后空间结构熔化变性，不可逆；pH错→中心电荷变；底物只帮到饱和，酶量抬高平台；竞争可用底物“淹没”，非竞争直接压低最大值。
+Takeaway-Satz: `Optimum halten heisst Struktur halten.`
+
+`Klausur-Satz: Optimum halten heisst Struktur halten.`
+
 
 REFLEXION 2问：
-1. 过程自省：Welcher Schritt fiel schwerer — das Ablesen von K_m (Schritt 4) oder die Wahl zwischen Kurve und Regulation (Schritt 5)?
-2. 元认知计划：Beim naechsten Mal markiere ich zuerst v_max und die Haelfte davon.
+1. 过程自省：Welcher Schritt fiel schwerer — die Sandkasten-Challenge (Schritt 4) oder die Verfahrenswahl (Schritt 5)?
+2. 元认知计划：Beim nächsten Mal sichere ich zuerst die Werkzeugkiste, weil jeder Handgriff darauf aufbaut.

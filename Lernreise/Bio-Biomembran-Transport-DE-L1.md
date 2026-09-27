@@ -11,154 +11,119 @@ tags: [EF, Bio, Zellbiologie]
 version: Lesson-v3
 ---
 
-# Lernreise: Biomembran und Transportmechanismen (L1, Ziel Klausur)
+# Lernreise: Biomembran und Transportmechanismen — Episode B3: Phage Vex klopft an
 
-<!-- Lesson v3 9-Schritt-Architektur: Schritt 1 bis 8 feste Struktur; Fehlvorstellung zwischen Schritt 6 und 7 (Parser ueberspringt, zaehlt nicht); interaktives [Werkzeug: <id>]; Gating: check/szenario nicht bestanden = Weiter deaktiviert; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
+<!-- Campaign: Nano-Zellfabrik-Krise | Bio | Instapower: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
-## Schritt 1 — entdecken: Ziele & Phänomen-Einstieg
-ZIELE (drei messbare Ziele dieser Lektion):
+## Schritt 1 — entdecken: Alarm am Tor 3 der Membranfestung
 
-1. Du kannst den Aufbau der Biomembran nach dem Fluessig-Mosaik-Modell mit Phospholipid-Doppelschicht, Membranproteinen und Glykokalyx beschreiben und die selektive Permeabilitaet aus der Struktur erklaeren.
-2. Du kannst passiven und aktiven Transport anhand von drei Achsen unterscheiden — Richtung zum Konzentrationsgefaelle, ATP-Bedarf und Beteiligung von Carrierproteinen.
-3. Du kannst ein Osmose-Experiment mit Plasmolyse und Deplasmolyse auf AFB-II-Niveau mit Fachbegriffen beschreiben und als Kausalkette formulieren.
+ZIELE:
+1. Ich kann den Bau der Biomembran nach dem Fluessig-Mosaik-Modell beschreiben.
+2. Ich kann passiven und aktiven Transport anhand von Gefaelle und ATP unterscheiden.
+3. Ich kann Plasmolyse und Deplasmolyse mit Wasserpotenzial und Turgor erklaeren.
 
-### Hook / Phaenomen
+Ein Bakteriophage dockt an Tor 3 an; Beppo das Hausmeister-Bakterium verriegelt die Poren. Um drei Uhr morgens heult in der Nano-Zellfabrik die Sirene: Halle 7 meldet Wasserverlust, die Vakuolen schrumpfen, und Captain Mara Zell rennt mit ihrer Taschenlampe ueber den Fabrikhof. In der Kantine liegt der Beweis auf dem Teller: Die Gurkenscheiben vom Mittag sind schlaff und schwimmen in einer Pfuetze, weil die Koechin grosszuegig Salz darueber gestreut hat. Gleichzeitig platzen im Labor rote Blutzellen in destilliertem Wasser, waehrend die pflanzlichen Zellen nebenan stolz und prall stehen bleiben. Mara Zell versteht die Welt nicht mehr: Warum laeuft Wasser mal heraus und mal hinein, und warum schuetzt eine Wand die einen, waehrend die anderen zerplatzen? Genau diese Frage entscheidet heute Nacht ueber das Schicksal der Fabrik, denn OSMO-9 hat das Aussenmedium als stark hypertonisch vermessen. Wer jetzt das Tor-Prinzip versteht, rettet die Schicht.
 
-Wer eine Gurkenscheibe salzt, sieht bald Tropfen austreten und die Scheibe schlaff werden — ohne dass jemand Wasser hingegossen haette. Das Salz draussen zieht das Wasser aus den Zellen, gegen jede Intuition von voll zu leer. Welche unsichtbare Haut laesst Wasser passieren, haelt aber Salz zurueck — und was geschieht mit einer Pflanzenzelle, die so viel Wasser verliert, dass sich ihr Inneres von der Wand loest? Die Salzgurke zeigt das Prinzip in der Kueche: Aussen liegt eine hypertonische Salzlake mit niedrigem Wasserpotenzial Psi, innen wartet Zellsaft mit hoeherem Psi. Wasser folgt dem Gefaelle von Psi hoch nach Psi niedrig durch die semipermeable Membran, der Turgor sinkt und der Protoplast loest sich von der Wand. Erst wer Gefaelle, Weg ueber Kanalproteine und Folge als Kausalkette mit weil und deshalb verbindet, versteht Plasmolyse und Deplasmolyse auf AFB-II-Niveau vollstaendig und sichert alle Fachbegriffspunkte.
+`Klausur-Satz: Wasser folgt dem Wasserpotenzial und stroemt stets zur Seite des niedrigeren Psi-Werts.`
 
-### Fachbegriff & Definition
+## Schritt 2 — entdecken: Die Werkzeugkiste der Torwaechter
 
-Die **Biomembran** ist nach dem **Fluessig-Mosaik-Modell** aufgebaut: eine **Phospholipid-Doppelschicht** als fluessige Matrix — **hydrophile Koepfe** nach aussen, **hydrophobe Schwaenze** nach innen — mit darin beweglichen **Membranproteinen** (Kanal- und Carrierproteine) sowie der **Glykokalyx** als Zuckerschicht. Aus dieser Struktur folgt die **selektive Permeabilitaet**: Kleine unpolare Molekuele wie $O_2$ und $CO_2$ diffundieren direkt durch die Lipidschicht, polare Teilchen wie Ionen und Glucose passieren die hydrophobe Zone nicht und brauchen Proteine. Struktur bestimmt Funktion — der EF-Kern dieser Lektion.
+AUSRUESTUNG (5 Begriffe der Werkzeugkiste):
 
-### Wirkungsgefuege / Modell
+- Phospholipid-Doppelschicht: Zwei Reihen Schwanz-an-Schwanz; Köpfe hydrophil, Schwaenze hydrophob.
+- Fluessig-Mosaik-Modell: Proteine schwimmen wie Inseln seitlich beweglich im Lipidmeer.
+- Selektive Permeabilitaet: Kleine unpolare Teilchen passieren frei, Ionen nur per Protein.
+- Passiver Transport: Mit dem Gefaelle, ohne ATP: Diffusion, Osmose, erleichterte Diffusion.
+- Aktiver Transport: Gegen das Gefaelle mit ATP, z. B. Na+/K+-ATPase.
 
-Die Kausalkette lautet: **Gefaeelle, Weg, Energie**. Folgt der Stoff dem **Konzentrationsgefaelle** ohne $ATP$, so ist der Transport **passiv**: direkt durch die Lipidschicht (einfache Diffusion) oder ueber Kanal- und Carrierproteine (erleichterte Diffusion). Laeuft er **gegen das Gefaelle** mit $ATP$-Verbrauch ($ATP \to ADP + P_i$), so arbeitet eine **Ionenpumpe** — etwa die Natrium-Kalium-Pumpe. **Osmose** ist der Spezialfall fuer Wasser: $H_2O$ wandert durch die semipermeable Membran zum Ort der hoeheren Teilchenkonzentration — es bewegt sich das Wasser, nicht der geloeste Stoff. Pflanzenzellen antworten mit **Plasmolyse** (Protoplast loest sich bei Wasserverlust) und **Deplasmolyse** (Wiederanlegen bei Wasseraufnahme).
+`Klausur-Satz: Selektive Permeabilitaet heisst: Kleine unpolare Teilchen passieren frei, Ionen nur über Proteine.`
 
-Klausur-Satz: `Die Biomembran ist nach dem Fluessig-Mosaik-Modell aufgebaut und aufgrund ihrer Phospholipid-Doppelschicht selektiv permeabel.`
+## Schritt 3 — entdecken: Die Weiche: Mit oder gegen das Gefaelle
 
-## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
-PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
+WIRKUNGSGEFUEGE (Ursache zu Wirkung):
 
-### Hook / Phaenomen
-
-Zwei Kartoffelstaebchen, zwei Becher — destilliertes Wasser gegen konzentrierte Kochsalzloesung. Nach einer Stunde ist eines prall, das andere schlaff. Dieselbe Kartoffel, entgegengesetzte Antwort — welches Gefaeelle treibt das Wasser, und welcher Transport frisst Energie? Fuenf Begriffe klaeren das Bild.
-
-### Fachbegriffe & Definitionen
-
-- **Fluessig-Mosaik-Modell:** Phospholipid-Doppelschicht als fluessige Matrix mit darin beweglichen Proteinen — kein starres Tor, sondern ein fluessiger Lipidfilm.
-- **Phospholipid-Doppelschicht:** Hydrophile Koepfe nach aussen, hydrophobe Schwaenze nach innen; Grundgeruest jeder Biomembran und Ursache der selektiven Permeabilitaet.
-- **Selektive Permeabilitaet:** Nur bestimmte Stoffe passieren; die Struktur bestimmt die Funktion — $O_2$ direkt, Ionen nur ueber Proteine.
-- **Osmose:** Diffusion von Wasser durch eine semipermeable Membran zum Ort der hoeheren Teilchenkonzentration; es bewegt sich $H_2O$, nicht der geloeste Stoff — messbar als Turgor-Aenderung.
-- **Aktiver Transport:** Transport gegen das Konzentrationsgefaelle unter ATP-Verbrauch mit Carrierproteinen, zum Beispiel $ATP \to ADP + P_i$ an der Natrium-Kalium-Pumpe.
-
-### Wirkungsgefuege / Modell
-
-Die Begriffe bilden drei Achsen: **Richtung** (mit oder gegen das Gefaelle), **Energie** ($ATP$ ja oder nein), **Weg** (direkt, Kanal, Carrier, Pumpe). Beide Diffusionen folgen dem Gefaelle und brauchen kein $ATP$ — sie gehoeren zum passiven Transport. Gegen das Gefaelle arbeitet nur die Pumpe mit $ATP$. Im Kartoffelversuch folgt das Wasser dem osmotischen Gefaelle: In destilliertem Wasser stroemt es ein (Turgor steigt, Masse nimmt zu), in Salzloesung stroemt es aus (Plasmolyse, Masse nimmt ab) — eine Kausalkette mit weil und deshalb.
-
-Klausur-Satz: `Waehrend passive Transportvorgaenge dem Konzentrationsgefaelle folgen, arbeitet der aktive Transport unter ATP-Verbrauch gegen das Gefaelle.`
-
-## Schritt 3 — entdecken: Kernkonzept & Wirkungsmodell
-TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
-
-### Hook / Phaenomen
-
-Warum schrumpft eine Salzgurke in Salzlake und wird schlaff, obwohl niemand Wasser herauspresst? Draussen liegt eine hypertonische Loesung, drinnen wartet Zellsaft mit hoeherem Wasserpotenzial. Welche unsichtbare Haut laesst $H_2O$ passieren und haelt $Na^+$ und $Cl^-$ zurueck, und was geschieht mit dem Protoplasten, wenn der Turgor zusammenbricht?
-
-### Spiel-Aufgabe
-
-Spiel-Aufgabe im Kopf-Labor: Stelle den Regler fuer das Aussenmedium auf $\Psi_{aussen} = -1{,}2\,\mathrm{MPa}$ und beobachte die Zelle. Verfolge die Wasserpfeile durch die semipermeable Membran von $\Psi_{hoch}$ nach $\Psi_{niedrig}$, notiere Zellform (prall oder plasmolysiert) und Turgor. Kippe danach zurueck auf $\Psi_{aussen} = 0\,\mathrm{MPa}$ (destilliertes Wasser) und erklaere die Umkehr zur Deplasmolyse in einem Satz mit weil.
-
-### Aha-Moment & Gesetz
-
-Aha-Moment und Gesetz: Entscheidend ist die Kausalkette Gefaelle, Weg, Folge. Wasser folgt dem Wasserpotenzial $\Delta\Psi = \Psi_{aussen} - \Psi_{innen}$; ist $\Delta\Psi < 0$, stroemt $H_2O$ aus, der Turgor sinkt und der Protoplast loest sich von der Wand. Kleine unpolare Teilchen wie $O_2$ und $CO_2$ diffundieren direkt durch die Lipidschicht, Ionen und Glucose brauchen Kanal- oder Carrierproteine, aktiver Transport zahlt $ATP \to ADP + P_i$. Wer zuerst das Gefaelle prueft, verwechselt nie passiv mit aktiv.
+Wasser folgt stets dem Wasserpotenzial vom hoeheren zum niedrigeren Wert. Ist das Aussenmedium hypertonisch, verlaesst Wasser die Zelle: Die Vakuole schrumpft, der Protoplast loest sich von der Wand, der Turgor faellt auf null — Plasmolyse. Ist es hypotonisch, stroemt Wasser ein: Der Protoplast drueckt gegen die Wand, der Turgor steigt, bis Einstrom und Gegendruck sich ausgleichen. Tierische Zellen ohne Wand platzen dabei (Haemolyse). Parallel gilt die Transport-Weiche: Mit Gefaelle und ohne ATP ist es passiv, gegen Gefaelle mit ATP ist es aktiv.
 
 ```diagram
-    aussen hypertonisch (Psi = -1,2 MPa)  |  innen (Psi = -0,4 MPa)
-    ---------------------------------------------------------------
-    H2O  H2O  H2O  -->>  durch Kanalprotein  -->>  aus der Zelle
-    Na+ | Cl-  bleiben draussen (Membran undurchlaessig)
-    Zelle: Protoplast schrumpft | Turgor sinkt | Plasmolyse
-    ---------------------------------------------------------------
-    aussen hypotonisch (Psi = 0 MPa)  |  innen (Psi = -0,4 MPa)
-    H2O  H2O  H2O  <<--  Einstrom  <<--  in die Zelle
-    Zelle: Vakuole waechst | Turgor steigt | Deplasmolyse
-    Regel: Wasser folgt Psi(hoch) -> Psi(niedrig), Salz bleibt.
+Aussen hypertonisch -> Wasser raus -> Turgor 0 -> Plasmolyse
+Aussen hypotonisch -> Wasser rein -> Turgor steigt -> Deplasmolyse
+Tier ohne Wand + Einstrom -> Haemolyse
+Mit Gefaelle ohne ATP = passiv | Gegen Gefaelle mit ATP = aktiv
 ```
 
-Klausur-Satz: `Kleine unpolare Molekuele diffundieren direkt durch die Lipiddoppelschicht, waehrend Ionen und polare Stoffe auf Kanal- oder Carrierproteine angewiesen sind.`
+`Klausur-Satz: Osmose lenkt Wasser, ATP-Pumpen halten die Gefaelle dagegen aufrecht.`
 
 ## Anekdote & Fun-Fact
 
-**Anekdote / Fun-Fact (DE)**: Wer eine Gurkenscheibe mit Salz bestreut, sieht bald Wassertropfen austreten und die Scheibe schlaff werden. Das Salz draussen bildet eine hypertonische Loesung, und das Wasser in den Zellen folgt dem osmotischen Gefaelle nach aussen. Genau deshalb wird Gemuese vor dem Einlegen zuerst gesalzen und so entwaessert.
+**Anekdote / Fun-Fact (DE)**: Salat wird in kaltem Wasser wieder knackig: Die Zellen saugen Wasser ein, der Turgor steigt, das Gewebe strafft sich — die Kueche nutzt Psi-Gefaelle ganz ohne Formel.
 
-**Bezug zum Konzept**: `Die Salzgurke zeigt die Osmose: Wasser wandert durch die selektiv permeable Biomembran zur hypertonischen Seite, wodurch der Turgor der Zelle sinkt.`
+**Bezug zum Konzept**: Welker Salat zeigt Deplasmolyse als Rueckstrom zum hoeheren Psi.
 
-## Schritt 4 — ausprobieren: Interaktive Praxis & Osmose-Labor
-
-BEISPIEL (geleitete Aufgabe mit Werkzeug):
+## Schritt 4 — ausprobieren: Sandkasten-Alarm: Rette die schrumpfende Zelle
 
 [Werkzeug: osmose-lab]
 
-AUFGABE (Spiel-Auftrag, AFB II, 3 Stufen): Stufe 1 Schaetzen: Zwei Kartoffelstaebchen werden gewogen und fuer eine Stunde in Becher A (destilliertes Wasser) und Becher B (konzentrierte Kochsalzloesung) gelegt. Sage die Massenaenderung voraus. Stufe 2 Begruenden: Ordne jeder Beobachtung den Wasserpfeil und die Begriffe Osmose, hypotonisch, hypertonisch und Turgor zu. Stufe 3 Sichern: Formuliere eine Kausalkette mit weil und deshalb in zwei Saetzen. Stelle im Osmose-Labor den Aussen-Psi-Regler auf $\Psi_{aussen} = -1{,}2\,\mathrm{MPa}$ und danach auf $0\,\mathrm{MPa}$ und verfolge die Wasserpfeile durch die semipermeable Membran.
+AUFGABE (Target Challenge): Target Challenge: Stelle C_aussen = 0,60 mol/L und C_innen = 0,20 mol/L ein. Ziel: Sage die Stromrichtung voraus und kippe das Medium so, dass die plasmolysierte Zelle in unter 5 Simulationsminuten deplasmolysiert, Turgor wieder > 0,2 MPa. AUFGABE konkret: Eine Pflanzenzelle mit Psi_innen = -0,4 MPa liegt in einer Loesung mit Psi_aussen = -1,1 MPa. Berechne die Richtung und begruende den Turgor-Verlauf.
 
 HILFE:
-1. Schritt 1: Vergleiche nur Konzentrationen: destilliert ist hypotonisch, Salz ist hypertonisch.
-2. Schritt 2: Wasser folgt dem Gefaelle zur hoeheren Teilchenkonzentration; es bewegt sich $H_2O$, nicht Salz.
-3. Schritt 3: Verknuepfe mit der Vakuole: Einstrom hebt den Turgor, Ausstrom senkt ihn.
+1. Psi-Differenz bilden: Delta = Psi_aussen minus Psi_innen.
+2. Vorzeichen deuten: negativ heisst Ausstrom.
+3. Turgor faellt bei Ausstrom, steigt bei Einstrom.
 
-MUSTERLOESUNG: In Becher A nimmt die Masse zu, in Becher B nimmt sie ab. Ursache ist die Osmose durch die selektiv permeable Biomembran: Gegenueber destilliertem Wasser ist das Zellinnere hypertonisch, daher stroemt $H_2O$ ein, die Vakuole waechst und der Turgor steigt. Gegenueber der Salzloesung ist das Aussenmedium hypertonisch, daher stroemt $H_2O$ aus, der Turgor bricht ein und es kommt zur Plasmolyse. Entscheidend ist, dass sich das Wasser bewegt, weil die Membran fuer Ionen nahezu undurchlaessig ist.
+MUSTERLÖSUNG: Delta = -1,1 minus (-0,4) = -0,7 MPa, also negativ: Wasser stroemt aus, Turgor sinkt gegen null, Plasmolyse. In reinem Wasser kehrt sich das Gefaelle um: Einstrom bis Turgor den Ausgleich herstellt.
 
-Klausur-Satz: `Da Wasser osmotisch dem Konzentrationsgefaelle folgt, gewinnt die Zelle im hypotonischen Medium Wasser und verliert es im hypertonischen Medium.`
+`Klausur-Satz: Mit Delta-Psi von -0,7 MPa stroemt Wasser aus, bis Turgor null die Plasmolyse markiert.`
 
-## Schritt 5 — ausprobieren: Verfahrensvergleich & Abgrenzung
+## Schritt 5 — ausprobieren: Duell der Wege: Kanal gegen Pumpe
 
-VERGLEICH (Wahl des Verfahrens, A gegen B):
+VERGLEICH: Waehle erst das Verfahren — (i) Osmose-Weiche oder (ii) Pumpen-Weiche — dann loesen.
 
-VERGLEICH: Waehle erst das Verfahren — (i) Passiv-Verfahren (entlang dem Gefaelle, ohne ATP, mit oder ohne Carrier: einfache oder erleichterte Diffusion) oder (ii) Aktiv-Verfahren (gegen das Gefaelle, mit ATP, mit Pump- oder Carrierprotein) — dann loesen.
+Weg A (Osmose-Weiche): Gefaelle des Wassers pruefen, Richtung aus Delta-Psi ableiten, Turgor deuten.
 
-AUFGABE A: In einem Text heisst es, Sauerstoff gelange aus der Lungenluft in die roten Blutkoerperchen, ohne dass die Zelle dafuer Energie aufwendet. Welches Verfahren ist zu waehlen, und wie laesst sich der Vorgang erklaeren?
+Weg B (Pumpen-Weiche): ATP-Abhaengigkeit pruefen, Transporttyp aus Richtung gegen das Gefaelle bestimmen.
 
-AUFGABE B: In einem Text heisst es, eine Zelle reichert Kaliumionen gegen das bestehende Konzentrationsgefaelle an und verbraucht dabei ATP. Welches Verfahren ist zu waehlen, und wie laesst sich der Vorgang erklaeren?
+AUFGABE A: Wurzelhaare nehmen nach Regen Wasser auf, ATP-Spiegel unveraendert. Welcher Weg?
 
-HILFE: A nennt keine Energie und ein kleines unpolares Molekuel, daher Verfahren (i). B nennt ausdruecklich gegen das Gefaelle und ATP-Verbrauch, daher Verfahren (ii).
+AUFGABE B: Nervenzelle pumpt K+ gegen das Gefaelle; Cyanid stoppt alles. Welcher Weg?
 
-ANTWORT: A erfordert Verfahren (i): Sauerstoff ist klein und unpolar und diffundiert daher direkt entlang des Konzentrationsgefaelles durch die Lipiddoppelschicht, also durch einfache Diffusion ohne Energieverbrauch. B erfordert Verfahren (ii): Da Kaliumionen entgegen ihrem Konzentrationsgefaelle transportiert werden, muss die Zelle eine Ionenpumpe (Transport-ATPase) einsetzen; die noetige Energie liefert die Hydrolyse von $ATP \to ADP + P_i$. Beide Vorgaenge unterscheiden sich also nicht in der Stoffmenge, sondern in der Richtung relativ zum Gefaelle und im Energiebedarf.
+HILFE: A nennt Einstrom ohne ATP — Weg A. B nennt Anreicherung gegen Gefaelle plus Gift — Weg B.
 
-Klausur-Satz: `Passiver Transport folgt dem Konzentrationsgefaelle ohne ATP, waehrend aktiver Transport unter ATP-Verbrauch gegen das Gefaelle verlaeuft.`
+ANTWORT: A folgt Weg A als Osmose über Aquaporine; B folgt Weg B als primaer aktiver Transport über die Na+/K+-ATPase, der bei ATP-Stopp zusammenbricht.
+
+`Klausur-Satz: Zahlen mit Psi verlangen Delta-Psi, Pumpen mit ATP verlangen den Transporttyp.`
 
 ## Schritt 6 — check: Selbsttest zu Biomembran und Transportmechanismen
-CHECK (drei Fragen mit Antworten):
 
-FRAGE: Aus welchen drei Hauptbestandteilen besteht die Biomembran nach dem Fluessig-Mosaik-Modell? | ANTWORT: Aus der Phospholipid-Doppelschicht, den darin eingelagerten Membranproteinen und der Glykokalyx aus Glykolipiden und Glykoproteinen.
-FRAGE: Warum ist die Biomembran selektiv permeabel? | ANTWORT: Weil die hydrophobe Lipiddoppelschicht nur kleine unpolare Molekuele passieren laesst, waehrend polare Teilchen auf spezifische Transportproteine angewiesen sind.
-FRAGE: Was geschieht bei der Plasmolyse und was bei der Deplasmolyse? | ANTWORT: Bei der Plasmolyse verliert die Zelle in einem hypertonischen Medium Wasser, der Turgor sinkt und der Protoplast loest sich von der Zellwand; bei der Deplasmolyse stroemt in einem hypotonischen Medium Wasser zurueck und der Protoplast legt sich wieder an die Zellwand an.
+FRAGE: Welche Teilchen passieren die Doppelschicht frei? | ANTWORT: Kleine unpolare wie O2 und CO2; Ionen brauchen Proteine.
+FRAGE: Warum platzt die Pflanzenzelle in Wasser nicht? | ANTWORT: Die Wand baut Turgor als Gegendruck auf; Tierzellen ohne Wand lysieren.
+FRAGE: Woran erkennst du aktiven Transport? | ANTWORT: Bewegung gegen das Gefaelle plus ATP-Verbrauch.
 
-Klausur-Satz: `Die Plasmolyse beruht auf einem Wasserverlust im hypertonischen Medium, die Deplasmolyse auf einem Wassereinstrom im hypotonischen Medium.`
+`Klausur-Satz: Ohne Delta-Psi bleibt Osmose geraten, mit Delta-Psi wird sie gerechnet.`
 
 ## Fehlvorstellung
 
-(Kein Schritt; wird vom Parser uebersprungen.)
+1. Fehlvorstellung: Wasser laufe dorthin, wo wenig Salz ist.
+   Korrektur-Satz: `Wasser stroemt zur Seite der hoeheren Loesungskonzentration, also zum staerker negativen Psi.`
+2. Fehlvorstellung: Osmose verbrauche ATP.
+   Korrektur-Satz: `Osmose ist passiv ohne ATP; nur Transport gegen das Gefaelle kostet ATP.`
 
-1. Fehlannahme: Bei der Osmose wandere der geloeste Stoff durch die Membran auf die andere Seite.
-   Korrektur: Es bewegt sich ausschliesslich das Wasser zur Seite der hoeheren Teilchenkonzentration; die geloesten Stoffe werden zurueckgehalten.
-   Korrektur-Satz: `Bei der Osmose bewegt sich ausschliesslich das Wasser durch die selektiv permeable Membran zur Seite der hoeheren Teilchenkonzentration, waehrend die geloesten Stoffe zurueckgehalten werden.`
-2. Fehlannahme: Jeder Transport entlang dem Gefaelle sei einfache Diffusion ohne Proteine.
-   Korrektur: Auch die erleichterte Diffusion folgt dem Gefaelle und braucht kein ATP, ist aber auf Kanal- oder Carrierproteine angewiesen.
-   Korrektur-Satz: `Auch die erleichterte Diffusion folgt dem Konzentrationsgefaelle und benoetigt kein ATP, ist aber auf Kanal- oder Carrierproteine angewiesen.`
+## Schritt 7 — szenario: Klausurtransfer: Nachtschicht-Protokoll am Osmose-Tor
 
-## Schritt 7 — szenario: Klausurtransfer: Biomembran und Transportmechanismen
-ROLLE: Du bist Tutorin in einem Bio-Grundkurs der gymnasialen Oberstufe und sollst einer Mitschaelerin ein Experiment erklaeren.
-SITUATION: Ein Mikroskopierpraeparat mit roten Zwiebelzellen wird zunaechst mit einer konzentrierten Kaliumnitratloesung und danach mit destilliertem Wasser behandelt. Deine Mitschaelerin fragt, warum sich der gefaerbte Zellsaftraum erst zusammenzieht und spaeter wieder ausdehnt.
-AUFGABE (AFB II/III): Erklaere beide Beobachtungen in einer zusammenhaengenden Stellungnahme (ca. 150 Woerter) mit den Fachbegriffen Osmose, hypertonisch, hypotonisch, Turgor, Plasmolyse und Deplasmolyse.
-RUBRIC (30 XP): Benennung der beiden Medien als hypertonisch bzw. hypotonisch (5 XP) | Richtige Bestimmung der Wasserbewegung ueber die selektiv permeable Membran (10 XP) | Erklaerung von Plasmolyse und Deplasmolyse ueber den Turgor und die Zellwand (10 XP) | Fachsprachlich korrekte, kausale Formulierung mit passenden Fachbegriffen (5 XP).
+ROLLE: Du bist Agrarbiologin im Nachtdienst.
+SITUATION: Gewaechaustomaten welken trotz nasser Erde nach Ueberduengung. Erklaere mit Tonizitaet, Wasserpotenzial, Plasmolyse und Turgor in ca. 150 Woertern, was auf Zellebene geschah, und nenne die Sofortmassnahme.
+RUBRIC (30 XP): Hyperton-Diagnose (8 XP) | Wasserentzug trotz Nässe (8 XP) | Turgorverlust mit Plasmolyse (8 XP) | Auswaschen mit Reinwasser (6 XP).
 
-## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
+`Klausur-Satz: Hyperton entzieht Wasser trotz Nässe; Reinwasser spült hypertonen Dünger zur Deplasmolyse aus.`
 
-TAKEAWAY (Kernbotschaft in einem Kasten):
+## Schritt 8 — reflexion: Takeaway & Reflexion
 
-Die Struktur der Biomembran bestimmt ihre Funktion: Die Lipiddoppelschicht erlaubt die passive Diffusion, waehrend Transportproteine und ATP den aktiven Transport gegen das Gefaelle ermoeglichen. Merksatz: Entlang dem Gefaelle und ohne ATP ist passiv; gegen das Gefaelle mit ATP ist aktiv; bei der Osmose bewegt sich stets das Wasser, nicht das Salz.
-Takeaway-Satz: `Die Struktur der Biomembran bestimmt ihre Funktion: Die Lipiddoppelschicht erlaubt die passive Diffusion, waehrend Transportproteine und ATP den aktiven Transport gegen das Gefaelle ermoeglichen.`
+TAKEAWAY:
 
-REFLEXION (zwei Fragen):
-1. Welcher Schritt fiel schwerer — die Zuordnung der Transportart ueber die drei Kriterien (Schritt 5) oder die Formulierung des osmotischen Vorgangs mit Fachbegriffen (Schritt 4)?
-2. Beim naechsten Mal pruefe ich zuerst die Richtung relativ zum Konzentrationsgefaelle und den ATP-Bedarf, bevor ich den Transportbegriff auswaehle.
+Takeaway-Satz: `Psi rechnen statt raten: Wasser stroemt zum niedrigeren Wert, Turgor bremst bis zum Ausgleich.`
+
+`Klausur-Satz: Psi rechnen statt raten: Wasser stroemt zum niedrigeren Wert, Turgor bremst bis zum Ausgleich.`
+
+
+REFLEXION:
+1. Welcher Schritt fiel schwerer — die Sandkasten-Challenge (Schritt 4) oder die Verfahrenswahl (Schritt 5)?
+2. Beim naechsten Mal sichere ich zuerst die Werkzeugkiste, weil jeder Handgriff darauf aufbaut.

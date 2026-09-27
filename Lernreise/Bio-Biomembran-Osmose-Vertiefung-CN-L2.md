@@ -11,168 +11,126 @@ tags: [EF, Bio, CN]
 version: Lesson-v3
 ---
 
-# Lernreise: Biomembran und Osmose in der Vertiefung (L2, Ziel Klausur)
+# Lernreise: Biomembran und Osmose in der Vertiefung — Episode B1: Das Leck in Halle 7
 
-<!-- Lesson v3 9步制架构：Schritt 1至8固定结构；Fehlvorstellung 夹在 Schritt 6 与 7 之间（Parser 自动跳过，不占步数）；支持内嵌 [Werkzeug: <id>] 交互教具；Gating: check/szenario 未过 = Weiter 置灰；XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
+<!-- Campaign: Nano-Zellfabrik-Krise | Bio | Instapower: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
-## Schritt 1 — entdecken: Ziele & Phänomen-Einstieg
+## Schritt 1 — entdecken: Die Nacht der schrumpfenden Vakuolen
 
-【生活日常现象与思考（Hook & Phänomen）】：
-为什么给新鲜的黄瓜片撒上一层食盐后，盘子里会迅速渗出大量水珠，而黄瓜片本身变得软塌塌？
-为什么将红细胞放入纯净的蒸馏水中时，红细胞会迅速吸水膨胀直至破裂（溶血现象 Hämolyse），而具有相同外界环境的植物表皮细胞却能保持饱满挺拔而绝不破裂？
+ZIELE（本节三目标）：
+1. 中文：能描述流动镶嵌模型的膜结构。
+2. 中文：能按浓度梯度与ATP区分被动与主动运输。
+3. 中文：能用水势与膨压解释质壁分离与复原。
 
-答案的核心在于**生物膜的微观架构（Biomembran）与渗透热力学（Osmose）**。细胞膜不是一层死气沉沉的塑料薄膜，而是一个动态流动的微观分子筛选大门。
+【危机Hook】Osmose-Fluegel meldet Wassereinbruch; Captain Mara Zell ruft die Nachtschicht zusammen. 凌晨三点，纳米细胞工厂警铃大作：7号车间报告水分流失，液泡正在萎缩，安保队长Mara Zell举着手电冲过厂区。食堂的餐盘就是证据——中午的黄瓜片撒盐后变软出水；实验室里红细胞在蒸馏水中胀破，旁边的植物细胞却依然挺拔。为什么水一会儿往外跑、一会儿往里灌？为什么一堵墙能救一些细胞，另一些却爆掉？OSMO-9测得外界强高渗，今晚谁先搞懂“膜大门”的规则，谁就能救下整个夜班。本关你要拿下膜结构与跨膜运输的全部考点。
 
-ZIELE（本节 15 分钟深度掌握以下 3 大核心考点）：
-1. **结构认知**：能准确复述并图解流动镶嵌模型（Fluessig-Mosaik-Modell）的三大要件：磷脂双分子层（Phospholipid-Doppelschicht）、镶嵌/跨膜蛋白（Proteine）、以及胆固醇（Cholesterin）对膜流动性的精密调控；
-2. **热力学与水流判定**：能依据水势与渗透浓度梯度判断水分净移动方向（Wasserstrom），定量/定性推导植物细胞的质壁分离（Plasmolyse）与质壁复原（Deplasmolyse）；
-3. **解题方法（选程序）**：能在考试中瞬间区分顺浓度的被动运输（Passiver Transport，无需 ATP）与逆浓度的初级/次级主动运输（Aktiver Transport，依赖 ATP 水解供能）。
+`Klausur-Satz: Wasser folgt dem Wasserpotenzial und stroemt stets zur Seite des niedrigeren Psi-Werts.`
 
-Voraussetzung（知识预备与切口）：
-- 已掌握扩散（Diffusion）的基本定义；
-- 了解植物细胞含有中央大液泡（Vakuole）与刚性细胞壁（Zellwand），而动物细胞仅有细胞膜无细胞壁。
+## Schritt 2 — entdecken: Die Psi-Werkzeugkiste der Rechenwache
 
-Klausur-Satz: `Wasser folgt passiv dem Konzentrationsgefaelle des Loesungsmittels (Osmose); die selektiv permeable Biomembran reguliert den selektiven Stoffdurchtritt.`
+PRETRAINING术语盒（5大装备，中文在上、德语在下）：
 
-## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
+- 中文：磷脂双分子层 — 德语：Phospholipid-Doppelschicht：头部亲水、尾部疏水，尾对尾排成两层，是膜的屏障主体。 / Zwei Reihen Schwanz-an-Schwanz; Köpfe hydrophil, Schwaenze hydrophob.
+- 中文：流动镶嵌模型 — 德语：Fluessig-Mosaik-Modell：蛋白像岛一样嵌在脂海中，可侧向流动，膜兼具流动性与不对称性。 / Proteine schwimmen wie Inseln seitlich beweglich im Lipidmeer.
+- 中文：选择透过性 — 德语：Selektive Permeabilitaet：小分子非极性可自由穿过，离子大分子必须走转运蛋白。 / Kleine unpolare Teilchen passieren frei, Ionen nur per Protein.
+- 中文：被动运输 — 德语：Passiver Transport：顺浓度梯度、无需ATP：扩散、渗透、易化扩散。 / Mit dem Gefaelle, ohne ATP: Diffusion, Osmose, erleichterte Diffusion.
+- 中文：主动运输 — 德语：Aktiver Transport：逆浓度梯度、耗ATP，如钠钾泵。 / Gegen das Gefaelle mit ATP, z. B. Na+/K+-ATPase.
 
-PRETRAINING 核心术语盒（5 大高频考点术语，中德双语精解）：
+`Klausur-Satz: Selektive Permeabilitaet heisst: Kleine unpolare Teilchen passieren frei, Ionen nur über Proteine.`
 
-1. **流动镶嵌模型 — Fluessig-Mosaik-Modell**：
-   - 中文：以流动性的磷脂双分子层为基质（“脂海”），膜蛋白以镶嵌、贯穿或表面附着的形式分布其中（“蛋白岛”），具备横向流动性与非对称性。
-   - 德语：Modell der Biomembran, bei dem Proteine in eine zaehfluessige Phospholipid-Doppelschicht eingebettet und lateral beweglich sind.
-2. **选择透过性 — Selektive Permeabilitaet**：
-   - 中文：膜只允许小分子、非极性脂溶性分子（如 $O_2, CO_2$）自由穿透；极性大分子和带电水合离子无法直接通过，必须借助特异性转运蛋白。
-   - 德语：Eigenschaft der Membran, bestimmte Stoffe ungehindert passieren zu lassen, andere jedoch zurueckzuhalten.
-3. **渗透 — Osmose**：
-   - 中文：水分子通过选择透过性膜，从低溶质浓度（高水分子浓度/高水势）区域向高溶质浓度（低水分子浓度/低水势）区域的定向净扩散。
-   - 德语：Spontane Nettodiffusion von Wasser durch eine semipermeable Membran entlang des Wasserpotenzialgefaelles.
-4. **质壁分离 — Plasmolyse**：
-   - 中文：植物细胞处于高渗溶液（hypertonische Loesung）中时，液泡失水收缩，原生质体（Protoplast）收缩并脱离刚性细胞壁的现象。
-   - 德语：Ablaesung des Protoplasten von der pflanzlichen Zellwand durch osmotischen Wasserverlust in hypertoner Umgebung.
-5. **质壁复原与膨压 — Deplasmolyse & Turgordruck**：
-   - 中文：将已质壁分离的细胞移入低渗溶液（hypotonisch）中，水分子倒流进入液泡，原生质体复位膨胀，抵住细胞壁产生对抗进一步吸水的机械反向压力（Turgor）。
-   - 德语：Wiederanlegen des Protoplasten an die Wand bei Wassereinstrom sowie Ausbildung des mechanischen Turgordrucks.
+## Schritt 3 — entdecken: Delta-Psi: Die Rechenmaschine des Wasserstroms
 
-Klausur-Satz: `Osmose ist gerichtete Diffusion von Wasser durch eine semipermeable Membran zum Ort des hoeheren osmotischen Werts.`
+ENTDECKEN因果传导机制（中文拆解在上，德语链条在下）：
 
-## Schritt 3 — entdecken: Kernkonzept & Wirkungsmodell
+中文：水永远从高水势流向低水势。外界高渗→水外流→液泡萎缩→原生质体脱壁→膨压归零，即质壁分离；外界低渗→水内流→顶住细胞壁建膨压直至平衡；动物细胞无壁则胀破溶血。另一条分支是运输岔路：顺梯度不耗能为被动，逆梯度耗ATP为主动。
 
-ENTDECKEN（因果作用模型与微观水流机制）：
-
-水分子在渗透中的运动遵循**最小阻力与热力学熵增驱动**。牢记解题核心口诀：“**水往咸处流，有壁建膨压，无壁易胀破**”。
-
-- **高渗环境（Aussen hypertonisch）**：外液溶质浓度高于细胞内液。水分分子顺自身浓度梯度向外净流失 $\to$ 液泡缩瘪 $\to$ 原生质体（Protoplast）脱离细胞壁（Plasmolyse）。红细胞失水皱缩（Krenierung）。
-- **等渗环境（Aussen isotonisch）**：膜两侧进出水分子动态平衡 $\to$ 动植物细胞维持稳定形态。
-- **低渗环境（Aussen hypotonisch）**：外液溶质浓度低于细胞内液。水分由外向内倒灌 $\to$ 植物原生质体膨胀顶住细胞壁形成高膨压（Turgordruck $\Psi_p$），当膨压反作用力与渗透吸水力抵消时达到动态吸水饱和；而动物红细胞由于缺乏刚性细胞壁保护，细胞膜无法承受内部流体静压而发生溶血胀破（Haemolyse）。
-
-跨膜转运因果分类逻辑图：
+德语：Wasser folgt stets dem Wasserpotenzial vom hoeheren zum niedrigeren Wert. Ist das Aussenmedium hypertonisch, verlaesst Wasser die Zelle: Die Vakuole schrumpft, der Protoplast loest sich von der Wand, der Turgor faellt auf null — Plasmolyse. Ist es hypotonisch, stroemt Wasser ein: Der Protoplast drueckt gegen die Wand, der Turgor steigt, bis Einstrom und Gegendruck sich ausgleichen. Tierische Zellen ohne Wand platzen dabei (Haemolyse). Parallel gilt die Transport-Weiche: Mit Gefaelle und ohne ATP ist es passiv, gegen Gefaelle mit ATP ist es aktiv.
 
 ```diagram
-                     ┌── 被动运输 (passiv, ohne ATP) ──┬── 简单自由扩散 (Diffusion, z.B. O2, CO2)
-                     │                                ├── 渗透水流 (Osmose via Aquaporine)
-                     │                                └── 易化扩散 (Kanal-/Carrier-Proteine)
-跨膜转运 (Transport) ─┤
-                     └── 主动运输 (aktiv, mit ATP) ────┬── 初级主动 (z.B. Na+/K+-ATPase Pumpe)
-                                                      ├── 次级主动 (z.B. SGLT Glukose-Symport)
-                                                      └── 囊泡运输 (Endozytose / Exozytose)
+Aussen hypertonisch -> Wasser raus -> Turgor 0 -> Plasmolyse
+Aussen hypotonisch -> Wasser rein -> Turgor steigt -> Deplasmolyse
+Tier ohne Wand + Einstrom -> Haemolyse
+Mit Gefaelle ohne ATP = passiv | Gegen Gefaelle mit ATP = aktiv
 ```
 
-Klausur-Satz: `In hypertoner Umgebung verliert die Pflanzenzelle Wasser und plasmolysiert; in hypotoner Umgebung erzeugt der osmotische Wassereinstrom den mechanisch stabilisierenden Turgordruck gegen die Zellwand.`
+`Klausur-Satz: Osmose lenkt Wasser, ATP-Pumpen halten die Gefaelle dagegen aufrecht.`
 
 ## Anekdote & Fun-Fact
 
-**Anekdote / Fun-Fact (DE)**: Gorter und Grendel wiesen 1925 aus roten Blutkoerperchen nach, dass die Membran eine Doppelschicht ist — ausgerechnet kernlose Zellen verrieten die Doppelhaut. Singer und Nicolson gaben ihr 1972 mit dem Mosaik das Fliessen zurueck.
+**Anekdote / Fun-Fact (DE)**: Salat wird in kaltem Wasser wieder knackig: Die Zellen saugen Wasser ein, der Turgor steigt, das Gewebe strafft sich — die Kueche nutzt Psi-Gefaelle ganz ohne Formel.
 
-**中文解读**: 科学史上红细胞因为没有细胞核与内部细胞器，只剩下一张外皮膜，反而为科学家测定膜面积提供了完美材料（提取出的磷脂单分子层铺展面积恰好是红细胞表面积的整整 2 倍，无可辩驳地证明了“双分子层”结构）。1972 年流动镶嵌模型更让人们认识到膜不是僵硬的栅栏，而是一片波光粼粼的微观海洋。
+**中文解读**: 蔫生菜泡冷水变脆：细胞吸水、膨压回升、组织挺括——厨房天天在用“水势梯度”，只是没写公式。
 
-**Bezug zum Konzept**: `Die Doppelschicht bildet die Permeabilitaetsschranke, waehrend Proteine den selektiven Transport und die Reizleitung gewaehrleisten.`
+**Bezug zum Konzept**: Welker Salat zeigt Deplasmolyse als Rueckstrom zum hoeheren Psi.
 
-## Schritt 4 — ausprobieren: Interaktives Osmose-Labor
+## Schritt 4 — ausprobieren: Rechen-Sandkasten: Psi gegen die Uhr
 
 [Werkzeug: osmose-lab]
 
-AUFGABE (erklaeren, AFB II)：
-Im didaktischen Osmose-Simulator oben wird eine pflanzliche Zelle (Zellsaft-Osmotisches Potenzial $\Psi_s = -0{,}7\,\mathrm{MPa}$, Turgordruck $\Psi_p = +0{,}3\,\mathrm{MPa}$) in eine Testloesung mit $\Psi_s = -1{,}5\,\mathrm{MPa}$ gelegt.
-1. Berechne das initiale Gesamtwasserpotenzial $\Psi = \Psi_s + \Psi_p$ der Zelle und vergleiche es mit der Aussenloesung.
-2. Erklaere anhand des Simulators die Richtung des Wasserstroms und beschreibe die morphologische Zustandsaenderung des Protoplasten.
-3. Begruende, warum das Phaenomen vollstaendig reversibel ist, wenn die Zelle anschliessend in destilliertes Wasser uebertragen wird.
+AUFGABE目标挑战：目标挑战：设外界浓度0,30 mol/L、细胞内0,10 mol/L，先预测水流方向，再把质壁分离的细胞在5模拟分钟内救回（膨压回到0.2 MPa以上）。 德语原题：Eine Pflanzenzelle mit Psi_innen = -0,4 MPa liegt in einer Loesung mit Psi_aussen = -1,1 MPa. Berechne die Richtung und begruende den Turgor-Verlauf.
 
 HILFE:
-1. Formel anwenden: $\Psi_{\mathrm{Zelle}} = \Psi_s + \Psi_p = -0{,}7 + 0{,}3 = -0{,}4\,\mathrm{MPa}$.
-2. Wasser stroemt stets vom hoeheren (weniger negativen) zum niedrigeren (staerker negativen) Wasserpotenzial: $-0{,}4\,\mathrm{MPa} > -1{,}5\,\mathrm{MPa}$.
-3. Wasser stroemt also aus der Zelle heraus. Der Protoplast loest sich von der festen Zellwand $\to$ Plasmolyse. Bei Zugabe von Wasser dreht sich das Potenzialgefaelle um.
+1. Psi-Differenz bilden: Delta = Psi_aussen minus Psi_innen.
+2. Vorzeichen deuten: negativ heisst Ausstrom.
+3. Turgor faellt bei Ausstrom, steigt bei Einstrom.
 
-MUSTERLÖSUNG:
-1. Das initiale Gesamtwasserpotenzial der pflanzlichen Zelle betraegt $\Psi_{\mathrm{Zelle}} = \Psi_s + \Psi_p = -0{,}7\,\mathrm{MPa} + 0{,}3\,\mathrm{MPa} = -0{,}4\,\mathrm{MPa}$. Das Potenzial der Aussenloesung liegt bei $\Psi_{\mathrm{Aussen}} = -1{,}5\,\mathrm{MPa}$.
-2. Da Wasser thermodynamisch vom Ort des hoeheren ($-0{,}4\,\mathrm{MPa}$) zum Ort des niedrigeren Wasserpotenzials ($-1{,}5\,\mathrm{MPa}$) stroemt, tritt Wasser osmotisch aus der Vakuole und dem Zytoplasma durch das selektiv permeable Plasmalemma nach aussen. Der Turgordruck faellt auf $0\,\mathrm{MPa}$ ab, das Zellvolumen des Protoplasten verringert sich drastisch, und die Zellmembran loest sich sichtbar von der unelastischeren Zellwand ab (vollstaendige Plasmolyse).
-3. Der Vorgang ist reversibel (Deplasmolyse), da die Zellwand als stabiles Exoskelett erhalten bleibt und die Membranproteine bei reiner osmotischer Entwaesserung intakt bleiben. Wird die Zelle in destilliertes Wasser ($\Psi = 0\,\mathrm{MPa}$) uebertragen, ist das Aussenpotenzial hoeher als das Innenpotenzial; Wasser diffundiert zurueck in die Zelle, bis der aufgebaute Turgordruck das osmotische Potenzial exakt kompensiert.
+MUSTERLÖSUNG：中文：Delta=-0.7 MPa为负→水外流→膨压降至零→质壁分离；换清水后水势反转，内流重建膨压直至平衡，即复原。 / 德语：Delta = -1,1 minus (-0,4) = -0,7 MPa, also negativ: Wasser stroemt aus, Turgor sinkt gegen null, Plasmolyse. In reinem Wasser kehrt sich das Gefaelle um: Einstrom bis Turgor den Ausgleich herstellt.
 
-Klausur-Satz: `Wasser stroemt stets entlang des Gefaelles zum staerker negativen Wasserpotenzial; in hypertoner Loesung erfolgt Plasmolyse, in hypotoner Deplasmolyse.`
+`Klausur-Satz: Mit Delta-Psi von -0,7 MPa stroemt Wasser aus, bis Turgor null die Plasmolyse markiert.`
 
-## Schritt 5 — ausprobieren: Verfahrensvergleich & Abgrenzung
+## Schritt 5 — ausprobieren: Duell der Verfahren: Psi-Rechnung gegen Transport-Blick
 
-VERGLEICH辨别实验（双向辨析：被动顺流 vs 主动逆流）：
+VERGLEICH: Waehle erst das Verfahren — (i) Osmose-Weiche oder (ii) Pumpen-Weiche — dann loesen.选程序：先看顺/逆梯度与ATP，再选分支。
 
-【选程序钥匙】：审题先看两项指标——(1) 移动方向是顺浓度差（mit Gefaelle）还是逆浓度差（gegen Gefaelle）？(2) 是否需要水解三磷酸腺苷（ATP）直接或间接提供代谢能量？
+Weg A：Weg A (Osmose-Weiche): Gefaelle des Wassers pruefen, Richtung aus Delta-Psi ableiten, Turgor deuten.
 
-AUFGABE A：
-Eine Nervenzelle reichert intrazellulaer $K^+$-Ionen gegen ein bestehendes starkes Konzentrationsgefaelle an, waehrend $Na^+$-Ionen aktiv nach aussen transportiert werden. Um welche Transportart handelt es sich, und was geschieht bei Zugabe des Stoffwechselgiftes Cyanid (welches die ATP-Synthese blockiert)?
+Weg B：Weg B (Pumpen-Weiche): ATP-Abhaengigkeit pruefen, Transporttyp aus Richtung gegen das Gefaelle bestimmen.
 
-AUFGABE B：
-Wasser stroemt nach einem warmen Sommerregen aus dem feuchten Boden rasch in die Wurzelhaarzellen einer Pflanze ein, ohne dass der pflanzliche ATP-Spiegel absinkt. Um welches Transportverfahren handelt es sich?
+AUFGABE A: Wurzelhaare nehmen nach Regen Wasser auf, ATP-Spiegel unveraendert. Welcher Weg? 【选程序：先看信号词再选路】
 
-HILFE:
-- A: Anreicherung gegen Gefaelle $\to$ Verfahren (ii) Primär aktiver Transport über die $Na^+/K^+$-ATPase. Cyanid hemmt ATP $\to$ aktiver Transport bricht zusammen!
-- B: Wasserbewegung ins Wurzelhaar $\to$ Verfahren (i) Passiver Transport (Osmose via Aquaporine), unbeeinflusst von akuter ATP-Hemmung.
+AUFGABE B: Nervenzelle pumpt K+ gegen das Gefaelle; Cyanid stoppt alles. Welcher Weg? 【选程序：先看信号词再选路】
 
-ANTWORT:
-- Fall A repraesentiert einen **primaer aktiven Transport** (Verfahren ii). Die $Na^+/K^+$-Ionenpumpe transportiert Ionen gegen ihr elektrochemisches Gefaelle unter direktem Verbrauch von ATP. Bei Zugabe von Cyanid bricht die Zellatmung und damit die mitochondriale ATP-Produktion zusammen; der aktive Transport stoppt sofort, und die Ionenkonzentrationen gleichen sich durch Leckstroeme passiv an.
-- Fall B repraesentiert einen **passiven Transport** in Form von **Osmose** (Verfahren i). Da die Wurzelzelle durch osmotisch aktive Substanzen (Ionen, Zucker) hypertonisch gegenueber dem Bodenwasser ist, folgt das Wasser spontan seinem Potenzialgefaelle durch die Aquaporine in der Membran. Dafuer wird kein biochemisches ATP benoetigt.
+HILFE：A nennt Einstrom ohne ATP — Weg A. B nennt Anreicherung gegen Gefaelle plus Gift — Weg B.
 
-Klausur-Satz: `Passiver Transport erfolgt energetisch spontan mit dem Konzentrationsgefaelle; aktiver Transport erzwingt die Bewegung gegen das Gefaelle unter zwingendem ATP-Aufwand.`
+ANTWORT：ANTWORT: A folgt Weg A als Osmose über Aquaporine; B folgt Weg B als primaer aktiver Transport über die Na+/K+-ATPase, der bei ATP-Stopp zusammenbricht.
+
+`Klausur-Satz: Zahlen mit Psi verlangen Delta-Psi, Pumpen mit ATP verlangen den Transporttyp.`
 
 ## Schritt 6 — check: Selbsttest zu Biomembran und Osmose in der Vertiefung
-CHECK检索默写（自测 3 题，与答案配对）：
 
-FRAGE: Welche Molekuele koennen die Phospholipid-Doppelschicht einer Biomembran durch einfache freie Diffusion ungehindert durchqueren? | ANTWORT: Kleine, ungeladene und lipophile (unpolare) Molekuele wie Sauerstoff (O2), Kohlenstoffdioxid (CO2) und in geringem Masse sehr kleine Molekuele wie Wasser.
-FRAGE: Warum platzen pflanzliche Zellen in reinem Wasser nicht, waehrend tierische Erythrozyten platzen (Haemolyse)? | ANTWORT: Die feste pflanzliche Zellwand begrenzt die Volumenzunahme mechanisch und baut einen Turgordruck auf; tierische Zellen besitzen keine Zellwand und reissen bei zu hohem osmotischen Einstrom auf.
-FRAGE: Was unterscheidet primaer aktiven Transport von sekundaer aktivem Transport? | ANTWORT: Primaer aktiver Transport nutzt direkt die Hydrolyse von ATP (z.B. Na+/K+-Pumpe); sekundaer aktiver Transport nutzt den elektrochemischen Gradienten, der zuvor durch primaeren Transport aufgebaut wurde (z.B. Glukose-Cotransport).
+FRAGE：哪些粒子可自由穿过双分子层？（Welche Teilchen passieren die Doppelschicht frei?） | ANTWORT：O2、CO2等小分子非极性；离子走蛋白。 / Kleine unpolare wie O2 und CO2; Ionen brauchen Proteine.
+FRAGE：植物细胞在清水中为何不爆？（Warum platzt die Pflanzenzelle in Wasser nicht?） | ANTWORT：细胞壁建膨压对抗；动物细胞无壁则溶血。 / Die Wand baut Turgor als Gegendruck auf; Tierzellen ohne Wand lysieren.
+FRAGE：如何一眼认出主动运输？（Woran erkennst du aktiven Transport?） | ANTWORT：逆梯度+耗ATP。 / Bewegung gegen das Gefaelle plus ATP-Verbrauch.
 
-Klausur-Satz: `Die pflanzliche Zellwand baut bei osmotischem Wassereinstrom elastischen Gegendruck (Turgor) auf und verhindert die Zellyse.`
+`Klausur-Satz: Ohne Delta-Psi bleibt Osmose geraten, mit Delta-Psi wird sie gerechnet.`
 
 ## Fehlvorstellung
 
-(非Schritt小节，Parser 自动识别，不计入步骤步数)
+1. 误解：误解“水往盐少处跑”。
+   中文纠偏：见德语纠偏句。
+   Korrektur-Satz: `Wasser stroemt zur Seite der hoeheren Loesungskonzentration, also zum staerker negativen Psi.`
+2. 误解：误解“渗透耗ATP”。
+   中文纠偏：见德语纠偏句。
+   Korrektur-Satz: `Osmose ist passiv ohne ATP; nur Transport gegen das Gefaelle kostet ATP.`
 
-1. 误解：“水往浓度低的地方跑”。
-   中文纠偏：这是最容易扣分的口误！水永远是向“溶质浓度高（osmotischer Wert hoch）”或“水自身浓度低/水势低（Wasserpotenzial stark negativ）”的区域扩散。牢记口诀：水往咸处跑！
-   Korrektur-Satz: `Wasser stroemt stets zur Seite der hoeheren Loesungskonzentration (staerker negatives Wasserpotenzial).`
+## Schritt 7 — szenario: Klausurtransfer: Tutorinnen-Einsatz im Zwiebel-Labor
 
-2. 误解：“渗透需要消耗能量 ATP”。
-   中文纠偏：渗透在本质上就是水分子的物理自由扩散，不需要消耗任何 ATP 生化能量。需要消耗 ATP 的是逆着浓度梯度的离子泵或胞吞胞吐。
-   Korrektur-Satz: `Osmose ist ein passiver Prozess ohne ATP-Verbrauch; aktiver Transport erfordert ATP.`
+ROLLE：中文：你是工厂夜班技术员。 / 德语：Du bist Agrarbiologin im Nachtdienst.
+SITUATION：大棚番茄施肥过量后，土壤湿润却萎蔫。请用紧张度、水势、质壁分离与膨压解释并给出急救措施（约150词）。 / 德语：Gewaechaustomaten welken trotz nasser Erde nach Ueberduengung. Erklaere mit Tonizitaet, Wasserpotenzial, Plasmolyse und Turgor in ca. 150 Woertern, was auf Zellebene geschah, und nenne die Sofortmassnahme.
+RUBRIC (30 XP)：Hyperton-Diagnose (8 XP) | Wasserentzug trotz Nässe (8 XP) | Turgorverlust mit Plasmolyse (8 XP) | Auswaschen mit Reinwasser (6 XP).
 
-## Schritt 7 — szenario: Klausurtransfer & Szenario
+`Klausur-Satz: Hyperton entzieht Wasser trotz Nässe; Reinwasser spült hypertonen Dünger zur Deplasmolyse aus.`
 
-ROLLE: Du bist beratender Agrarbiologe und erklaerst einer Gruppe von Junggaertnern ein biologisches Schadensbild.
-SITUATION: Eine Gaertnerei hat ihre Gewaechshaustomaten mit einer hochkonzentrierten mineralischen Duengerloesung gegoessen. Bereits nach wenigen Stunden lassen saemtliche Pflanzen die Blaetter schlaff haengen und welken dramatisch, obwohl die Erde voellig durchnaesst ist. Die Gaertner vermuten faelschlicherweise eine Pilzkrankheit oder Wassermangel. Erklaere in einer wissenschaftlich praezisen Stellungnahme (ca. 150 Woerter) unter Verwendung der Fachbegriffe Tonizitaet, Wasserpotenzial, Plasmolyse und Turgordruck, was auf Zellebene geschehen ist und welche Sofortmassnahme die Pflanzen retten kann.
-RUBRIC (30 XP):
-- Korrekte Identifikation der Duengerloesung als stark hyperton gegenueber dem Zellsaft der Wurzelhaare (8 XP)
-- Praezise Ableitung des osmotischen Wasserentzugs (Wasserstrom aus den Wurzeln in den Boden) trotz feuchter Erde (8 XP)
-- Verknuepfung des Verlusts des Turgordrucks mit Plasmolyse der Zellen und Welken der krautigen Organe (8 XP)
-- Angabe der physikalischen Sofortmassnahme (grosszuegiges Auswaschen/Flueten mit reinem Wasser) zur Deplasmolyse (6 XP)
+## Schritt 8 — reflexion: Takeaway & Reflexion
 
-## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
+TAKEAWAY核心总结：
 
-TAKEAWAY 核心总结：
-1. **膜之架构**：流动镶嵌模型——磷脂双分子层阻隔水溶物，蛋白质行使大门职能，胆固醇稳定流动性；
-2. **水之流动**：渗透即水扩散，水往负水势/高盐区走；
-3. **动植之别**：植物有壁形成澎压（Turgor），动物无壁溶血胀破；
-4. **能之消耗**：顺流无消耗（被动），逆流耗 ATP（主动）。
+中文：水永远从高水势流向低水势。外界高渗→水外流→液泡萎缩→原生质体脱壁→膨压归零，即质壁分离；外界低渗→水内流→顶住细胞壁建膨压直至平衡；动物细胞无壁则胀破溶血。另一条分支是运输岔路：顺梯度不耗能为被动，逆梯度耗ATP为主动。
+Takeaway-Satz: `Psi rechnen statt raten: Wasser stroemt zum niedrigeren Wert, Turgor bremst bis zum Ausgleich.`
 
-Takeaway-Satz: `Biomembranen gewaehrleisten durch selektive Permeabilitaet die Kompartimentierung; Wasser folgt passiv osmotischen Gradienten, waehrend lebenswichtige Konzentrationsgefaelle aktiv durch ATP-Pumpen aufrechterhalten werden.`
+`Klausur-Satz: Psi rechnen statt raten: Wasser stroemt zum niedrigeren Wert, Turgor bremst bis zum Ausgleich.`
 
-REFLEXION 2 问：
-1. **过程自省**：在面对实验题时，你能否一眼通过有无细胞壁（Pflanze vs. Tier）预判吸水结果是产生 Turgor 还是发生 Hämolyse？
-2. **元认知计划**：下次遇到带图大题，我将第一时间寻找关键动词与已知条件：是“mit Gefaelle”（被动）还是“gegen Gefaelle”（主动）？
+
+REFLEXION 2问：
+1. 过程自省：Welcher Schritt fiel schwerer — die Sandkasten-Challenge (Schritt 4) oder die Verfahrenswahl (Schritt 5)?
+2. 元认知计划：Beim nächsten Mal sichere ich zuerst die Werkzeugkiste, weil jeder Handgriff darauf aufbaut.
