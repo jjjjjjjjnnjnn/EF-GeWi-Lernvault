@@ -11,7 +11,7 @@ tags: [EF, Chemie, CN]
 version: Lesson-v3
 ---
 
-# Lernreise: CN-Formelhandbuch: sechs Formelkarten — Episode C2: Der zischende Fleck
+# Lernreise: CN-Formelhandbuch: sechs Formelkarten — Episode C2: Sieben Schlüssel im Formeltresor
 
 <!-- Campaign: Imperium-Alchemie | Chemie | entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 ## Schritt 1 — entdecken: Der Formeltresor: Sieben Schluessel
@@ -112,11 +112,11 @@ ANTWORT：中文：A走公式路取对数；B走单位路讲标尺。 / 德语�
 
 ## Schritt 6 — check: Selbsttest zu CN-Formeln
 
-- FRAGE:：pH公式是什么？（Wie lautet die pH-Formel） | ANTWORT:：负对数。 / Negativer Log der H3O-Konzentration.
+- FRAGE: pH公式是什么？（Wie lautet die pH-Formel） | ANTWORT: 负对数。 / Negativer Log der H3O-Konzentration.
 
-- FRAGE:：摩尔桥是什么？（Wie lautet die Mol-Brücke） | ANTWORT:：n等于m除以M。 / n gleich m durch M.
+- FRAGE: 摩尔桥是什么？（Wie lautet die Mol-Brücke） | ANTWORT: n等于m除以M。 / n gleich m durch M.
 
-- FRAGE:：K有单位吗？（Trägt K eine Einheit） | ANTWORT:：无量纲。 / Nein, K ist dimensionslos.
+- FRAGE: K有单位吗？（Trägt K eine Einheit） | ANTWORT: 无量纲。 / Nein, K ist dimensionslos.
 
 
 `Klausur-Satz: Ohne Einheit bleibt jede Zahl geraten, mit ihr wird sie gemessen.`
@@ -136,6 +136,7 @@ ANTWORT：中文：A走公式路取对数；B走单位路讲标尺。 / 德语�
 ROLLE：中文：你是保险柜管理员。 / 德语：Du bist Tresor-Verwalter.
 SITUATION：七问待配式：请带条件配对并算出三例（约120词）。 / 德语：Sieben Fragen liegen bereit. Ordne in ca. 120 Woertern jede Frage einer Formel mit Bedingung zu und rechne drei Beispiele.
 RUBRIC (30 XP)：Zuordnung (12 XP) | Bedingungen (12 XP) | Rechnungen (6 XP).
+ZEITREGEL: MAX 2 Minuten — 90秒认符号查条件，30秒用单位验算句，然后交卷；Timer stellen.
 
 
 `Klausur-Satz: Achtung Falle: pH-Formel gilt nur fuer verduennte Loesungen bei 25 Grad.`
@@ -152,4 +153,4 @@ Takeaway-Satz: `Formel plus Bedingung plus Einheit: Der Dreiklang oeffnet jeden 
 
 REFLEXION 2问：
 1. 过程自省：Welcher Schritt fiel schwerer — die Sandkasten-Challenge (Schritt 4) oder die Verfahrenswahl (Schritt 5)?
-2. 元认知计划：Beim naechsten Mal sichere ich zuerst die Werkzeugkiste, weil jeder Handgriff darauf aufbaut.
+2. 元认知计划：Beim naechsten Mal rechne ich zuerst pH 2 aus 0,01 mol/L HCl und 0,25 mol aus 10 g NaOH als Tresor-Belege, weil jede Formelwahl-Entscheidung darauf aufbaut.

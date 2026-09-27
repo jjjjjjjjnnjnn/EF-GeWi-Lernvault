@@ -11,7 +11,7 @@ tags: [EF, Chemie, Bindungslehre]
 version: Lesson-v3
 ---
 
-# Lernreise: Zwischenmolekulare Kraefte und Stoffeigenschaften — Episode C25: Der eilige Eilzug Q gegen K
+# Lernreise: Zwischenmolekulare Kraefte und Stoffeigenschaften — Episode C25: Geckohaft an der Decke
 
 <!-- Campaign: Imperium-Alchemie | Chemie | entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 ## Schritt 1 — entdecken: Der Gecko an der Decke: Kleben ohne Kleber
@@ -133,6 +133,7 @@ ANTWORT: A folgt Weg A mit 167-Grad-Differenz; B folgt Weg B mit Kette-gegen-OH-
 ROLLE: Du bist Materialprueferin.
 SITUATION: Der Kleber versagt an feuchtem Stahl. Erklaere in ca. 150 Woertern mit Haftleiter, Wasser und Oberflaeche die Ursache und empfehle die Vorbehandlung.
 RUBRIC (30 XP): Haftleiter (8 XP) | Wasserrolle (8 XP) | Vorbehandlung (8 XP) | Empfehlung (6 XP).
+ZEITREGEL: MAX 2 Minuten — 90 Sekunden Haftleiter plus Wasserrolle, 30 Sekunden Vorbehandlungs-Satz, dann abgeben; Timer stellen.
 
 
 `Klausur-Satz: Achtung Falle: Masse allein siedet nicht — Brücken schlagen Huellen um Laengen.`
@@ -148,4 +149,4 @@ Takeaway-Satz: `Kraft benennen, Paar vergleichen, Ausnahme ehren: Wasser bricht 
 
 REFLEXION:
 1. Welcher Schritt fiel schwerer — die Sandkasten-Challenge (Schritt 4) oder die Verfahrenswahl (Schritt 5)?
-2. Beim naechsten Mal sichere ich zuerst die Werkzeugkiste, weil jeder Handgriff darauf aufbaut.
+2. Beim naechsten Mal benenne ich zuerst die Haftart am Gecko-Beispiel (London, Dipol, Bruecke) und pruefe den Siedepunkt danach, weil jede Loeslichkeits-Entscheidung darauf aufbaut.

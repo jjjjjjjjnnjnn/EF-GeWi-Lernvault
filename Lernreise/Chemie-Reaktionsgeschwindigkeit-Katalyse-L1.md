@@ -11,7 +11,7 @@ tags: [EF, Chemie, Kinetik]
 version: Lesson-v3
 ---
 
-# Lernreise: Reaktionsgeschwindigkeit und Katalyse — Episode C14: Druckstoß in Halle Haber
+# Lernreise: Reaktionsgeschwindigkeit und Katalyse — Episode C14: Abgas-Alarm im Tunnel
 
 <!-- Campaign: Imperium-Alchemie | Chemie | entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 ## Schritt 1 — entdecken: Der Kat, der alles schluckt: Abgas gegen Stau
@@ -112,11 +112,11 @@ ANTWORT：中文：A走方程路用初速率法；B走图像路以山口仍高�
 
 ## Schritt 6 — check: Selbsttest zu Reaktionsgeschwindigkeit und Katalyse
 
-- FRAGE:：速率怎么读？（Wie liest du die Rate ab） | ANTWORT:：浓度曲线斯率。 / Als Steigung der c-t-Kurve.
+- FRAGE: 速率怎么读？（Wie liest du die Rate ab） | ANTWORT: 浓度曲线斯率。 / Als Steigung der c-t-Kurve.
 
-- FRAGE:：催化剂改什么？（Was ändert der Katalysator） | ANTWORT:：只降活化能不改位。 / Nur die Aktivierungsenergie, nie die Lage.
+- FRAGE: 催化剂改什么？（Was ändert der Katalysator） | ANTWORT: 只降活化能不改位。 / Nur die Aktivierungsenergie, nie die Lage.
 
-- FRAGE:：指数从哪来？（Woher kommen die Ordnungen） | ANTWORT:：实验测定不是方程。 / Aus Messreihen, nie aus der Gleichung.
+- FRAGE: 指数从哪来？（Woher kommen die Ordnungen） | ANTWORT: 实验测定不是方程。 / Aus Messreihen, nie aus der Gleichung.
 
 
 `Klausur-Satz: Ohne Steigung bleibt jede Tempoaussage geraten, mit ihr wird sie gemessen.`
@@ -136,6 +136,7 @@ ANTWORT：中文：A走方程路用初速率法；B走图像路以山口仍高�
 ROLLE：中文：你是车间化学师。 / 德语：Du bist Werkstatt-Chemikerin.
 SITUATION：老板要用便宜材料换催化器：请用速率、山口与位置评价是否可行（约150词）。 / 德语：Der Chef will den Kat gegen billigeres Material tauschen. Bewerte in ca. 150 Woertern mit Rate, Berg und Lage, ob der Tausch traegt.
 RUBRIC (30 XP)：Ratendeutung (8 XP) | Berglogik (8 XP) | Lageabgrenzung (8 XP) | Empfehlung (6 XP).
+ZEITREGEL: MAX 2 Minuten — 90秒读初速率与山口，30秒写换材裁决句，然后交卷；Timer stellen.
 
 
 `Klausur-Satz: Achtung Falle: Der Katalysator aendert Tempo, nie Lage und nie K.`
@@ -152,4 +153,4 @@ Takeaway-Satz: `Stoss, Berg, Abkuerzung: Wer die drei benennt, erklaert jedes Te
 
 REFLEXION 2问：
 1. 过程自省：Welcher Schritt fiel schwerer — die Sandkasten-Challenge (Schritt 4) oder die Verfahrenswahl (Schritt 5)?
-2. 元认知计划：Beim naechsten Mal sichere ich zuerst die Werkzeugkiste, weil jeder Handgriff darauf aufbaut.
+2. 元认知计划：Beim naechsten Mal bestimme ich zuerst die Anfangsrate bei 20 und 40 Grad am Entfaerbungs-Versuch, weil jede Katalysator-Entscheidung darauf aufbaut.

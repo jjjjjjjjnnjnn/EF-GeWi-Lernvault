@@ -11,7 +11,7 @@ tags: [EF, Chemie, Gleichgewicht]
 version: Lesson-v3
 ---
 
-# Lernreise: Chemisches Gleichgewicht und Le Chatelier — Episode C8: Rost an Tor 9
+# Lernreise: Chemisches Gleichgewicht und Le Chatelier — Episode C8: 300 bar am Haber-Autoklav
 
 <!-- Campaign: Imperium-Alchemie | Chemie | entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 ## Schritt 1 — entdecken: Der Haber-Turm vor der Explosion: Druck gegen Hitze
@@ -29,15 +29,28 @@ ZIELE（本节三目标）：
 
 PRETRAINING术语盒（5大装备，中文在上、德语在下）：
 
-- 中文：动态平衡 — 德语：Dynamisches Gleichgewicht：正逆速率相等、浓度不变。 / Dynamisches Gleichgewicht: Dynamisches Gleichgewicht bedeutet: Hin- und Rueckreaktion laufen gleich schnell, alle Konzentrationen bleiben konstant. Stillstand ist Schein, auf Teilchenebene herrscht Hochbetrieb. Mechanismus: Pro Sekunde zerfallen so viele Molekuele, wie neu entstehen; makroskopisch ruht das System, mikroskopisch rast es. Klausur-Tipp: Gleich schnell plus konstant als Doppelmerkmal hinschreiben.
+- 中文：动态平衡 — 德语：Dynamisches Gleichgewicht：正逆速率相等、浓度不变。 / Dynamisches Gleichgewicht: Hin- und Rueckreaktion laufen gleich schnell, alle Konzentrationen bleiben konstant.
+  Mechanismus: Pro Sekunde zerfallen so viele Molekuele, wie neu entstehen; makroskopisch ruht das System, mikroskopisch rast es.
+  Klausur-Tipp: Gleich schnell plus konstant als Doppelmerkmal hinschreiben.
 
-- 中文：质量作用定律 — 德语：Massenwirkungsgesetz：平衡浓度按系数幂次写成商。 / Massenwirkungsgesetz: Das Massenwirkungsgesetz stellt K als Quotient potenzierter Gleichgewichtskonzentrationen auf. Produkte stehen oben, Edukte unten, Koeffizienten werden Exponenten. Mechanismus: Man setzt die gemessenen Gleichgewichtswerte ein; reine Feststoffe und Fluessigkeiten fallen heraus, weil ihre Konzentration konstant bleibt. Klausur-Tipp: K-Bruch plus Feststoffe raus als Standardansatz.
+- 中文：质量作用定律 — 德语：Massenwirkungsgesetz：平衡浓度按系数幂次写成商。 / Massenwirkungsgesetz: K als Quotient potenzierter Gleichgewichtskonzentrationen; Produkte oben, Edukte unten, Koeffizienten als Exponenten.
+  Mechanismus: Gemessene Gleichgewichtswerte einsetzen; reine Feststoffe und Fluessigkeiten fallen heraus.
+  Klausur-Tipp: K-Bruch plus Feststoffe raus als Standardansatz.
 
-- 中文：平衡常数 — 德语：Gleichgewichtskonstante：只随温度变，指示位置。 / Gleichgewichtskonstante: Die Gleichgewichtskonstante K haengt nur von der Temperatur ab und zeigt die Lage. Grosses K heisst Produktseite, kleines K heisst Eduktseite. Mechanismus: Erhitzen bei exotherm senkt K, bei endotherm hebt es K; Druck und Konzentration aendern K nie. Klausur-Tipp: Nur Temperatur aendert K ist der Satz mit Garantiepunkten.
+- 中文：平衡常数 — 德语：Gleichgewichtskonstante：只随温度变，指示位置。 / Gleichgewichtskonstante K haengt nur von der Temperatur ab und zeigt die Lage.
+  Grosses K heisst Produktseite, kleines K heisst Eduktseite.
+  Mechanismus: Erhitzen bei exotherm senkt K, bei endotherm hebt es K; Druck und Konzentration aendern K nie.
+  Klausur-Tipp: Nur Temperatur aendert K.
 
-- 中文：反应商 — 德语：Reaktionsquotient：同式任意时刻代入，指方向。 / Reaktionsquotient: Der Reaktionsquotient Q nutzt dieselbe Formel wie K, aber zu beliebigem Zeitpunkt. Der Vergleich Q gegen K verrät die Laufrichtung. Mechanismus: Q kleiner K heisst Nachschub rechts, Q groesser K heisst Abbau links, gleich heisst Ruhe. Klausur-Tipp: Q-K-Vergleich als Richtungspfeil immer ausrechnen.
+- 中文：反应商 — 德语：Reaktionsquotient：同式任意时刻代入，指方向。 / Reaktionsquotient: Der Reaktionsquotient Q nutzt dieselbe Formel wie K, aber zu beliebigem Zeitpunkt.
+  Der Vergleich Q gegen K verrät die Laufrichtung.
+  Mechanismus: Q kleiner K heisst Nachschub rechts, Q groesser K heisst Abbau links, gleich heisst Ruhe.
+  Klausur-Tipp: Q-K-Vergleich als Richtungspfeil immer ausrechnen.
 
-- 中文：勒夏特列 — 德语：Le Chatelier：系统削弱扰动。 / Le Chatelier: Le Chateliers Prinzip besagt: Das System weicht einem Zwang aus und mindert seine Wirkung. Es laeuft dorthin, wo der Zwang verbraucht wird. Mechanismus: Druckerhoehung flieht zur Seite mit weniger Teilchen, Heizen bei exotherm flieht zur endothermen Seite. Klausur-Tipp: Zwang benennen plus Fluchtrichtung als Antwortpaar.
+- 中文：勒夏特列 — 德语：Le Chatelier：系统削弱扰动。 / Le Chatelier: Le Chateliers Prinzip besagt: Das System weicht einem Zwang aus und mindert seine Wirkung.
+  Es laeuft dorthin, wo der Zwang verbraucht wird.
+  Mechanismus: Druckerhoehung flieht zur Seite mit weniger Teilchen, Heizen bei exotherm flieht zur endothermen Seite.
+  Klausur-Tipp: Zwang benennen plus Fluchtrichtung als Antwortpaar.
 
 
 `Klausur-Satz: Reine Feststoffe gehoeren nicht in den K-Ausdruck.`
@@ -112,11 +125,11 @@ ANTWORT：中文：A走计算路列式加三段表；B走扰动路用勒夏特�
 
 ## Schritt 6 — check: Selbsttest zu Chemisches Gleichgewicht
 
-- FRAGE:：什么不进K式？（Was gehört nicht in K） | ANTWORT:：纯固体与纯液体。 / Reine Feststoffe und Fluessigkeiten.
+- FRAGE: 什么不进K式？（Was gehört nicht in K） | ANTWORT: 纯固体与纯液体。 / Reine Feststoffe und Fluessigkeiten.
 
-- FRAGE:：Q小于K向哪？（Was heisst Q kleiner als K） | ANTWORT:：产物不足向右。 / Zu wenig Produkt, also rechts.
+- FRAGE: Q小于K向哪？（Was heisst Q kleiner als K） | ANTWORT: 产物不足向右。 / Zu wenig Produkt, also rechts.
 
-- FRAGE:：什么改写K？（Was aendert K selbst） | ANTWORT:：只有温度。 / Nur die Temperatur.
+- FRAGE: 什么改写K？（Was aendert K selbst） | ANTWORT: 只有温度。 / Nur die Temperatur.
 
 
 `Klausur-Satz: Ohne Q bleibt Richtung geraten, mit Q wird sie gerechnet.`
@@ -136,6 +149,7 @@ ANTWORT：中文：A走计算路列式加三段表；B走扰动路用勒夏特�
 ROLLE：中文：你是哈伯塔工艺技术员。 / 德语：Du bist Verfahrenstechniker am Haber-Turm.
 SITUATION：管理层要大升温降压：请用勒夏特列评价何种条件真有效，并警告爆裂极限（约150词）。 / 德语：Die Leitung will stark heizen und Druck senken. Beurteile in ca. 150 Woertern mit Le Chatelier, welche Bedingungen wirklich helfen, und warne vor der Berstgrenze.
 RUBRIC (30 XP)：Temperaturlogik (8 XP) | Drucklogik (8 XP) | Gegenentwurf (8 XP) | Abwaegung (6 XP).
+ZEITREGEL: MAX 2 Minuten — 90秒定压力/温度逻辑，30秒写爆裂极限警告句，然后交卷；Timer stellen.
 
 
 `Klausur-Satz: Achtung Falle: Der Katalysator beschleunigt beide Wege gleich und aendert weder Lage noch K.`
@@ -152,4 +166,4 @@ Takeaway-Satz: `Lage halten heisst Q zu K zurueckfuehren: Nur Temperatur schreib
 
 REFLEXION 2问：
 1. 过程自省：Welcher Schritt fiel schwerer — die Sandkasten-Challenge (Schritt 4) oder die Verfahrenswahl (Schritt 5)?
-2. 元认知计划：Beim naechsten Mal sichere ich zuerst die Werkzeugkiste, weil jeder Handgriff darauf aufbaut.
+2. 元认知计划：Beim naechsten Mal pruefe ich zuerst den Q-K-Vergleich am Haber-Turm (Q kleiner/grösser K), weil jede Richtungsentscheidung darauf aufbaut.

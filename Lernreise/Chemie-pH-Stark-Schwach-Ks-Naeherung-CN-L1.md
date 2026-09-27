@@ -11,7 +11,7 @@ tags: [EF, Chemie, CN]
 version: Lesson-v3
 ---
 
-# Lernreise: pH starker und schwacher Saeuren mit Ks-Naeherung — Episode C27: Druckstoß in Halle Haber
+# Lernreise: pH starker und schwacher Saeuren mit Ks-Naeherung — Episode C27: Kippender Pool bei pH 3
 
 <!-- Campaign: Imperium-Alchemie | Chemie | entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 ## Schritt 1 — entdecken: Der Pool kippt: Eine Kelle zu viel Saeure
@@ -112,11 +112,11 @@ ANTWORT：中文：A走直算路取对数；B走近似路开方加验。 / 德�
 
 ## Schritt 6 — check: Selbsttest zu Starke und schwache Saeuren
 
-- FRAGE:：强酸pH怎么算？（Wie rechnest du starke Säuren） | ANTWORT:：直接负对数c0。 / Direkt minus Log c0.
+- FRAGE: 强酸pH怎么算？（Wie rechnest du starke Säuren） | ANTWORT: 直接负对数c0。 / Direkt minus Log c0.
 
-- FRAGE:：弱酸pH怎么算？（Wie rechnest du schwache Säuren） | ANTWORT:：开方加检验。 / Wurzel plus 5-Prozent-Check.
+- FRAGE: 弱酸pH怎么算？（Wie rechnest du schwache Säuren） | ANTWORT: 开方加检验。 / Wurzel plus 5-Prozent-Check.
 
-- FRAGE:：近似门槛多少？（Wann gilt die Näherung） | ANTWORT:：x低于5%初值。 / Wenn x unter 5 Prozent von c0 liegt.
+- FRAGE: 近似门槛多少？（Wann gilt die Näherung） | ANTWORT: x低于5%初值。 / Wenn x unter 5 Prozent von c0 liegt.
 
 
 `Klausur-Satz: Ohne 5-Prozent-Check bleibt jede Wurzel geraten, mit ihm wird sie gerechnet.`
@@ -136,6 +136,7 @@ ANTWORT：中文：A走直算路取对数；B走近似路开方加验。 / 德�
 ROLLE：中文：你是手持药勺的救生员。 / 德语：Du bist Bademeister mit Kelle.
 SITUATION：泳池pH3.2：请用强弱酸与Ks解释事故并算出纠正剂量（约150词）。 / 德语：Der Pool zeigt pH 3,2. Erklaere in ca. 150 Woertern mit stark, schwach und Ks, was geschah, und berechne die Korrektur.
 RUBRIC (30 XP)：Diagnose (8 XP) | Rechnung (8 XP) | Korrektur (8 XP) | Sicherheit (6 XP).
+ZEITREGEL: MAX 2 Minuten — 90秒看Ks定强弱，30秒写救生纠正句，然后交卷；Timer stellen.
 
 
 `Klausur-Satz: Achtung Falle: Verduennen hebt pH starker Saeuren um eins pro Faktor zehn, schwacher nur um halb.`
@@ -152,4 +153,4 @@ Takeaway-Satz: `Stark direkt, schwach mit Wurzel und Check: Ks zuerst, Log danac
 
 REFLEXION 2问：
 1. 过程自省：Welcher Schritt fiel schwerer — die Sandkasten-Challenge (Schritt 4) oder die Verfahrenswahl (Schritt 5)?
-2. 元认知计划：Beim naechsten Mal sichere ich zuerst die Werkzeugkiste, weil jeder Handgriff darauf aufbaut.
+2. 元认知计划：Beim naechsten Mal pruefe ich zuerst die 5-Prozent-Regel am Pool-pH-3,2-Fall vor dem Log, weil jede Dosis-Entscheidung darauf aufbaut.

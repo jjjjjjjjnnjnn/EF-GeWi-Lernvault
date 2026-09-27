@@ -11,7 +11,7 @@ tags: [EF, Chemie, CN]
 version: Lesson-v3
 ---
 
-# Lernreise: CN-Training: Zeitlimit und EHZ-Selbstbewertung — Episode C3: Milchiges Geheimnis im Becken
+# Lernreise: CN-Training: Zeitlimit und EHZ-Selbstbewertung — Episode C3: Bootcamp gegen die Uhr
 
 <!-- Campaign: Imperium-Alchemie | Chemie | entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 ## Schritt 1 — entdecken: Das Alchemie-Bootcamp: Scherit vor der Pruefung
@@ -133,6 +133,7 @@ ANTWORT: A folgt Weg A mit Kartendrill; B folgt Weg B mit Probeklausur und Horiz
 ROLLE: Du bist Bootcamp-Prueferin.
 SITUATION: Drei Aufgaben liegen bereit. Schreibe in ca. 120 Woertern Loesungen mit Ansatz und Einheit und lege den Horizont offen.
 RUBRIC (30 XP): Ansaetze (12 XP) | Rechnungen (12 XP) | Horizont (6 XP).
+ZEITREGEL: MAX 2 Minuten — 90 Sekunden Ansatz plus Typ sortieren, 30 Sekunden Horizont-Haken, dann abgeben; Timer stellen.
 
 
 `Klausur-Satz: Achtung Falle: Schoener Rechenweg ohne Einheit verschenkt den halben Punkt.`
@@ -148,4 +149,4 @@ Takeaway-Satz: `Trainiere wie geprueft: sortieren, ansetzen, Horizont anlegen.`
 
 REFLEXION:
 1. Welcher Schritt fiel schwerer — die Sandkasten-Challenge (Schritt 4) oder die Verfahrenswahl (Schritt 5)?
-2. Beim naechsten Mal sichere ich zuerst die Werkzeugkiste, weil jeder Handgriff darauf aufbaut.
+2. Beim naechsten Mal sortiere ich zuerst Wieviel gegen Wohin am Drei-Stationen-Bootcamp und schreibe Gegeben-Formel-Einheit, weil jede Zeit-Entscheidung darauf aufbaut.

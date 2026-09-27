@@ -11,7 +11,7 @@ tags: [EF, Chemie, Redox]
 version: Lesson-v3
 ---
 
-# Lernreise: Redoxreaktionen und Oxidationszahlen — Episode C15: Der zischende Fleck
+# Lernreise: Redoxreaktionen und Oxidationszahlen — Episode C15: Rostfrass an der Brücke
 
 <!-- Campaign: Imperium-Alchemie | Chemie | entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 ## Schritt 1 — entdecken: Die rostige Bruecke: Wer gab, wer nahm
@@ -112,11 +112,11 @@ ANTWORT：中文：A走数字路配电子；B走电化学路讲牺牲阳极。 /
 
 ## Schritt 6 — check: Selbsttest zu Redox und Oxidationszahlen
 
-- FRAGE:：氧化是什么？（Was ist Oxidation） | ANTWORT:：失电子数升。 / Elektronenabgabe mit steigender Zahl.
+- FRAGE: 氧化是什么？（Was ist Oxidation） | ANTWORT: 失电子数升。 / Elektronenabgabe mit steigender Zahl.
 
-- FRAGE:：谁被还原？（Wer wird reduziert） | ANTWORT:：得电子的氧化剂。 / Das Oxidationsmittel, das nimmt.
+- FRAGE: 谁被还原？（Wer wird reduziert） | ANTWORT: 得电子的氧化剂。 / Das Oxidationsmittel, das nimmt.
 
-- FRAGE:：砺状阵怎么用？（Wozu dient die Spannungsreihe） | ANTWORT:：判牺牲阳极。 / Opferanoden bestimmen.
+- FRAGE: 电势序怎么用？（Wozu dient die Spannungsreihe） | ANTWORT: 判牺牲阳极。 / Opferanoden bestimmen.
 
 
 `Klausur-Satz: Ohne e-Bilanz bleibt jede Redox-Gleichung geraten, mit ihr wird sie bewiesen.`
@@ -136,6 +136,7 @@ ANTWORT：中文：A走数字路配电子；B走电化学路讲牺牲阳极。 /
 ROLLE：中文：你是桥梁检测员。 / 德语：Du bist Brueckenprueferin.
 SITUATION：大桥生锈：请用氧化数、配平与顺序在刷漆与牺牲阳极间裁决（约150词）。 / 德语：Die Bruecke rostet. Entscheide in ca. 150 Woertern mit OZ, Bilanz und Reihe zwischen Streichen und Sanieren mit Opferanoden.
 RUBRIC (30 XP)：OZ-Logik (8 XP) | Bilanz (8 XP) | Reihenurteil (8 XP) | Empfehlung (6 XP).
+ZEITREGEL: MAX 2 Minuten — 90秒定氧化数配电子，30秒写阳极裁决句，然后交卷；Timer stellen.
 
 
 `Klausur-Satz: Achtung Falle: Oxidationsmittel wird reduziert — die Namen tauschen die Rollen.`
@@ -152,4 +153,4 @@ Takeaway-Satz: `Steigen gibt, Sinken nimmt, Bilanz gleicht: Drei Schritte, null 
 
 REFLEXION 2问：
 1. 过程自省：Welcher Schritt fiel schwerer — die Sandkasten-Challenge (Schritt 4) oder die Verfahrenswahl (Schritt 5)?
-2. 元认知计划：Beim naechsten Mal sichere ich zuerst die Werkzeugkiste, weil jeder Handgriff darauf aufbaut.
+2. 元认知计划：Beim naechsten Mal bestimme ich zuerst alle Oxidationszahlen am Fe-O2-Rostfall und gleiche die Elektronen an, weil jede Opferanoden-Entscheidung darauf aufbaut.

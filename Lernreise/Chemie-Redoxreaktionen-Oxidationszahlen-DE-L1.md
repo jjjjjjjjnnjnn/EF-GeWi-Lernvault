@@ -11,7 +11,7 @@ tags: [EF, Chemie, Redox]
 version: Lesson-v3
 ---
 
-# Lernreise: Redoxreaktionen und Oxidationszahlen — Episode C16: Milchiges Geheimnis im Becken
+# Lernreise: Redoxreaktionen und Oxidationszahlen — Episode C16: Opferanode am Brückenpfeiler
 
 <!-- Campaign: Imperium-Alchemie | Chemie | entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 ## Schritt 1 — entdecken: Die rostige Bruecke: Wer gab, wer nahm
@@ -133,6 +133,7 @@ ANTWORT: A folgt Weg A mit e-Ausgleich; B folgt Weg B mit Opferanoden-Argument.
 ROLLE: Du bist Brueckenprueferin.
 SITUATION: Die Bruecke rostet. Entscheide in ca. 150 Woertern mit OZ, Bilanz und Reihe zwischen Streichen und Sanieren mit Opferanoden.
 RUBRIC (30 XP): OZ-Logik (8 XP) | Bilanz (8 XP) | Reihenurteil (8 XP) | Empfehlung (6 XP).
+ZEITREGEL: MAX 2 Minuten — 90 Sekunden OZ plus e-Bilanz, 30 Sekunden Reihen-Urteil, dann abgeben; Timer stellen.
 
 
 `Klausur-Satz: Achtung Falle: Oxidationsmittel wird reduziert — die Namen tauschen die Rollen.`
@@ -148,4 +149,4 @@ Takeaway-Satz: `Steigen gibt, Sinken nimmt, Bilanz gleicht: Drei Schritte, null 
 
 REFLEXION:
 1. Welcher Schritt fiel schwerer — die Sandkasten-Challenge (Schritt 4) oder die Verfahrenswahl (Schritt 5)?
-2. Beim naechsten Mal sichere ich zuerst die Werkzeugkiste, weil jeder Handgriff darauf aufbaut.
+2. Beim naechsten Mal markiere ich zuerst Geber und Nehmer ueber Steigen und Sinken am Brückenrost-Fall, weil jede Bilanz-Entscheidung darauf aufbaut.

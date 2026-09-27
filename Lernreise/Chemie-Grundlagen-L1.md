@@ -11,7 +11,7 @@ tags: [EF, Chemie, Grundlagen]
 version: Lesson-v3
 ---
 
-# Lernreise: Chemische Grundlagen: Atombau, Bindung, Gleichungen, Mol — Episode C12: Der eilige Eilzug Q gegen K
+# Lernreise: Chemische Grundlagen: Atombau, Bindung, Gleichungen, Mol — Episode C12: Weisses Pulver am Werkstor
 
 <!-- Campaign: Imperium-Alchemie | Chemie | entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 ## Schritt 1 — entdecken: Steckbrief der Atome unterm Mikroskop
@@ -112,11 +112,11 @@ ANTWORT：中文：A走计算路用摩尔桥加22.4；B走性质路以晶格作�
 
 ## Schritt 6 — check: Selbsttest zu Chemische Grundlagen
 
-- FRAGE:：质子决定什么？（Was bestimmen Protonen） | ANTWORT:：元素身份。 / Die Identitaet des Elements.
+- FRAGE: 质子决定什么？（Was bestimmen Protonen） | ANTWORT: 元素身份。 / Die Identitaet des Elements.
 
-- FRAGE:：离子键与共价区别？（Ionen oder kovalent） | ANTWORT:：送与享。 / Schenken gegen Teilen.
+- FRAGE: 离子键与共价区别？（Ionen oder kovalent） | ANTWORT: 送与享。 / Schenken gegen Teilen.
 
-- FRAGE:：先配平还是先称？（Erst ausgleichen oder wiegen） | ANTWORT:：先配平后称量。 / Erst ausgleichen, dann wiegen.
+- FRAGE: 先配平还是先称？（Erst ausgleichen oder wiegen） | ANTWORT: 先配平后称量。 / Erst ausgleichen, dann wiegen.
 
 
 `Klausur-Satz: Ohne Ausgleich bleibt jede Mengenrechnung geraten, mit ihm wird sie gewogen.`
@@ -136,6 +136,7 @@ ANTWORT：中文：A走计算路用摩尔桥加22.4；B走性质路以晶格作�
 ROLLE：中文：你是厂门口的学徒。 / 德语：Du bist Azubi am Werkstor.
 SITUATION：三包粉末待验：请用性质判键型、配一方程并算一量（约150词）。 / 德语：Drei Pulver warten. Identifiziere in ca. 150 Woertern Bindungstypen aus Eigenschaften, gleiche eine Gleichung aus und rechne eine Menge.
 RUBRIC (30 XP)：Typologie (8 XP) | Ausgleich (8 XP) | Rechnung (8 XP) | Sprache (6 XP).
+ZEITREGEL: MAX 2 Minuten — 90秒判键型配方程，30秒算摩尔体积句，然后交卷；Timer stellen.
 
 
 `Klausur-Satz: Achtung Falle: Index veraendert den Stoff, Koeffizient nur die Menge — wer tauscht, faellt durch.`
@@ -152,4 +153,4 @@ Takeaway-Satz: `Zaehlen, erkennen, wiegen: Proton, Bindung, Mol in dieser Reihen
 
 REFLEXION 2问：
 1. 过程自省：Welcher Schritt fiel schwerer — die Sandkasten-Challenge (Schritt 4) oder die Verfahrenswahl (Schritt 5)?
-2. 元认知计划：Beim naechsten Mal sichere ich zuerst die Werkzeugkiste, weil jeder Handgriff darauf aufbaut.
+2. 元认知计划：Beim naechsten Mal bestimme ich zuerst den Bindungstyp am 800-Grad-Pulver und gleiche die Knallgasgleichung aus, weil jede Mol-Rechnung darauf aufbaut.

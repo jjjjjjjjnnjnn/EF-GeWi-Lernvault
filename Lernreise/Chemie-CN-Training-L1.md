@@ -11,7 +11,7 @@ tags: [EF, Chemie, CN]
 version: Lesson-v3
 ---
 
-# Lernreise: CN-Training: Zeitlimit und EHZ-Selbstbewertung — Episode C4: Kühler Kreuzschmerz des Turms
+# Lernreise: CN-Training: Zeitlimit und EHZ-Selbstbewertung — Episode C4: Drei Stationen gegen die Uhr
 
 <!-- Campaign: Imperium-Alchemie | Chemie | entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 ## Schritt 1 — entdecken: Das Alchemie-Bootcamp: Scherit vor der Pruefung
@@ -112,11 +112,11 @@ ANTWORT：中文：A走苦练路刷卡；B走模考路练续航。 / 德语：A 
 
 ## Schritt 6 — check: Selbsttest zu CN-Training
 
-- FRAGE:：三步作答是哪三步？（Wie lautet der Ansatz-Dreischritt） | ANTWORT:：已知公式单位。 / Gegeben, Formel, Einheit.
+- FRAGE: 三步作答是哪三步？（Wie lautet der Ansatz-Dreischritt） | ANTWORT: 已知公式单位。 / Gegeben, Formel, Einheit.
 
-- FRAGE:：克出现抽什么？（Was zieht das Wort Gramm） | ANTWORT:：摩尔桥。 / Die Mol-Bruecke.
+- FRAGE: 克出现抽什么？（Was zieht das Wort Gramm） | ANTWORT: 摩尔桥。 / Die Mol-Bruecke.
 
-- FRAGE:：自评用什么？（Womit bewertest du dich） | ANTWORT:：评分标准逐条。 / Stichpunkt fuer Stichpunkt am Horizont.
+- FRAGE: 自评用什么？（Womit bewertest du dich） | ANTWORT: 评分标准逐条。 / Stichpunkt fuer Stichpunkt am Horizont.
 
 
 `Klausur-Satz: Ohne Horizont bleibt Selbstcheck geraten, mit ihm wird er gezaehlt.`
@@ -136,6 +136,7 @@ ANTWORT：中文：A走苦练路刷卡；B走模考路练续航。 / 德语：A 
 ROLLE：中文：你是魔鬼营考官。 / 德语：Du bist Bootcamp-Prueferin.
 SITUATION：三题待解：请规范作答并公开评分标准（约120词）。 / 德语：Drei Aufgaben liegen bereit. Schreibe in ca. 120 Woertern Loesungen mit Ansatz und Einheit und lege den Horizont offen.
 RUBRIC (30 XP)：Ansaetze (12 XP) | Rechnungen (12 XP) | Horizont (6 XP).
+ZEITREGEL: MAX 2 Minuten — 90秒分类列式，30秒对标准数点句，然后交卷；Timer stellen.
 
 
 `Klausur-Satz: Achtung Falle: Schoener Rechenweg ohne Einheit verschenkt den halben Punkt.`
@@ -152,4 +153,4 @@ Takeaway-Satz: `Trainiere wie geprueft: sortieren, ansetzen, Horizont anlegen.`
 
 REFLEXION 2问：
 1. 过程自省：Welcher Schritt fiel schwerer — die Sandkasten-Challenge (Schritt 4) oder die Verfahrenswahl (Schritt 5)?
-2. 元认知计划：Beim naechsten Mal sichere ich zuerst die Werkzeugkiste, weil jeder Handgriff darauf aufbaut.
+2. 元认知计划：Beim naechsten Mal rechne ich zuerst 0,1 mol und 2,24 L aus 10 g CaCO3 am Bootcamp-Fall mit Horizont-Haken, weil jede Vollstaendigkeits-Entscheidung darauf aufbaut.

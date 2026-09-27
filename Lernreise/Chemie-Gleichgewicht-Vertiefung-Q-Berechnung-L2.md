@@ -85,7 +85,7 @@ HILFE:
 2. Q gegen K halten und Pfeil setzen.
 3. Tabelle mit x bis c_eq aufstellen.
 
-MUSTERLOESUNG：中文：Q=2小于K=4故右补，三段表解得x=0.17，Q=K时放行。 / 德语：Q = 2,0 kleiner K = 4,0: rechts nachfuellen; Tabelle liefert c_eq mit x = 0,17 mol/L; Freigabe bei Q gleich K.
+MUSTERLOESUNG：中文：Q=2小于K=4故右补，三段表解得x=0.11，Q=K时放行。 / 德语：Q = 2,0 kleiner K = 4,0: rechts nachfuellen; Tabelle liefert c_eq mit x = 0,11 mol/L; Freigabe bei Q gleich K.
 
 `Klausur-Satz: Mit Dreisatztabelle und Q-Rechnung faellt das Audit statt zu raten.`
 
@@ -112,11 +112,11 @@ ANTWORT：中文：A走表格路解x；B走直觉路数粒子。 / 德语：A fo
 
 ## Schritt 6 — check: Selbsttest zu Gleichgewicht mit Q-Berechnung
 
-- FRAGE:：三段表三行是什么？（Wie heissen die ICE-Zeilen） | ANTWORT:：初变平。 / Initial, Change, Equilibrium.
+- FRAGE: 三段表三行是什么？（Wie heissen die ICE-Zeilen） | ANTWORT: 初变平。 / Initial, Change, Equilibrium.
 
-- FRAGE:：Q大于K向哪？（Was heisst Q grösser als K） | ANTWORT:：产物过剩向左。 / Zu viel Produkt, also links.
+- FRAGE: Q大于K向哪？（Was heisst Q grösser als K） | ANTWORT: 产物过剩向左。 / Zu viel Produkt, also links.
 
-- FRAGE:：近似的门槛是什么？（Wann gilt die Näherung） | ANTWORT:：x低于5%初值。 / Wenn x unter 5 Prozent von c0 liegt.
+- FRAGE: 近似的门槛是什么？（Wann gilt die Näherung） | ANTWORT: x低于5%初值。 / Wenn x unter 5 Prozent von c0 liegt.
 
 
 `Klausur-Satz: Ohne Tabelle bleibt jede Q-Aussage geraten, mit ihr wird sie gerechnet.`
@@ -136,6 +136,7 @@ ANTWORT：中文：A走表格路解x；B走直觉路数粒子。 / 德语：A fo
 ROLLE：中文：你是夜班结算审计员。 / 德语：Du bist Bilanzauditor in der Nachtschicht.
 SITUATION：某批次偏离：请写约150词放行报告，含Q计算、三段表与温度核查。 / 德语：Eine Charge weicht ab. Schreibe in ca. 150 Woertern einen Freigabebericht mit Q-Rechnung, Tabelle und Temperaturpruefung.
 RUBRIC (30 XP)：Q-Rechnung (8 XP) | Tabelle (8 XP) | Temperatur (8 XP) | Urteil (6 XP).
+ZEITREGEL: MAX 2 Minuten — 90秒算Q列三段表，30秒写放行裁决句，然后交卷；Timer stellen.
 
 
 `Klausur-Satz: Achtung Falle: Naeherung ohne 5-Prozent-Check ist in NRW null Punkte wert.`
@@ -152,4 +153,4 @@ Takeaway-Satz: `Tabelle aufstellen, Q halten, K ehren: Der Felsen bewegt sich nu
 
 REFLEXION 2问：
 1. 过程自省：Welcher Schritt fiel schwerer — die Sandkasten-Challenge (Schritt 4) oder die Verfahrenswahl (Schritt 5)?
-2. 元认知计划：Beim naechsten Mal sichere ich zuerst die Werkzeugkiste, weil jeder Handgriff darauf aufbaut.
+2. 元认知计划：Beim naechsten Mal rechne ich zuerst Q = 2,0 gegen K = 4,0 am Chargen-Fall und loese x = 0,11, weil jede Freigabe-Entscheidung darauf aufbaut.

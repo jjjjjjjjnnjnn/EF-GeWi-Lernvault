@@ -11,7 +11,7 @@ tags: [EF, Chemie, Saeure-Base]
 version: Lesson-v3
 ---
 
-# Lernreise: Titrationskurven und Indikatoren — Episode C22: Der klebrige Kessel
+# Lernreise: Titrationskurven und Indikatoren — Episode C22: Pink bleibt aus am Titriertisch
 
 <!-- Campaign: Imperium-Alchemie | Chemie | entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 ## Schritt 1 — entdecken: Der störrische Indikator: Pink bleibt aus
@@ -112,11 +112,11 @@ ANTWORT：中文：A走滴定管路列式算；B走曲线路由域套跳选。 /
 
 ## Schritt 6 — check: Selbsttest zu Titration und Indikatoren
 
-- FRAGE:：等当点公式是什么？（Wie lautet die Äquivalenzgleichung） | ANTWORT:：cV等于cV。 / c-mal-V gleich c-mal-V.
+- FRAGE: 等当点公式是什么？（Wie lautet die Äquivalenzgleichung） | ANTWORT: cV等于cV。 / c-mal-V gleich c-mal-V.
 
-- FRAGE:：酚甲基橙适合哪？（Wozu passt Phenolphthalein） | ANTWORT:：强酸强碱跳突跨7。 / Stark-stark mit Sprung ueber 7.
+- FRAGE: 酚甲基橙适合哪？（Wozu passt Phenolphthalein） | ANTWORT: 强酸强碱跳突跨7。 / Stark-stark mit Sprung ueber 7.
 
-- FRAGE:：变色等于等当吗？（Ist Umschlag gleich Äquivalenz） | ANTWORT:：接近即可罕见相等。 / Nah genug zaehlt, exakt ist selten.
+- FRAGE: 变色等于等当吗？（Ist Umschlag gleich Äquivalenz） | ANTWORT: 接近即可罕见相等。 / Nah genug zaehlt, exakt ist selten.
 
 
 `Klausur-Satz: Ohne Sprunglage bleibt jede Indikatorwahl geraten, mit ihr wird sie begruendet.`
@@ -136,6 +136,7 @@ ANTWORT：中文：A走滴定管路列式算；B走曲线路由域套跳选。 /
 ROLLE：中文：你是食品实验室分析员。 / 德语：Du bist Analystin im Lebensmittellabor.
 SITUATION：食醋样品偏离：请写约150词分析报告，含滴定、计算与指示剂选择。 / 德语：Die Essigprobe weicht ab. Schreibe in ca. 150 Woertern ein Protokoll mit Titration, Rechnung und Indikatorwahl.
 RUBRIC (30 XP)：Durchfuehrung (8 XP) | Rechnung (8 XP) | Indikatorwahl (8 XP) | Urteil (6 XP).
+ZEITREGEL: MAX 2 Minuten — 90秒滴至粉红读数，30秒写甲基橙选择句，然后交卷；Timer stellen.
 
 
 `Klausur-Satz: Achtung Falle: Umschlag ungleich Aequivalenz — nah genug zaehlt, gleich ist selten.`
@@ -152,4 +153,4 @@ Takeaway-Satz: `Bereich auf Sprung legen: Der Indikator muss springen, wo die Ku
 
 REFLEXION 2问：
 1. 过程自省：Welcher Schritt fiel schwerer — die Sandkasten-Challenge (Schritt 4) oder die Verfahrenswahl (Schritt 5)?
-2. 元认知计划：Beim naechsten Mal sichere ich zuerst die Werkzeugkiste, weil jeder Handgriff darauf aufbaut.
+2. 元认知计划：Beim naechsten Mal verfolge ich zuerst Tropfen, Puffer, Sprung und Plateau am 25-mL-Essig-Fall, weil jede Umschlag-Entscheidung darauf aufbaut.

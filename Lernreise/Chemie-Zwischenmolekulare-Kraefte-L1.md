@@ -11,7 +11,7 @@ tags: [EF, Chemie, Bindungslehre]
 version: Lesson-v3
 ---
 
-# Lernreise: Zwischenmolekulare Kraefte und Stoffeigenschaften — Episode C26: Stille vor dem Äquivalenzpunkt
+# Lernreise: Zwischenmolekulare Kraefte und Stoffeigenschaften — Episode C26: Haftleiter zum Siedepunkt
 
 <!-- Campaign: Imperium-Alchemie | Chemie | entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 ## Schritt 1 — entdecken: Der Gecko an der Decke: Kleben ohne Kleber
@@ -59,6 +59,10 @@ Polar passt polar | Unpolar passt unpolar
 Die Abstandsregel der schwächsten Kraft:
 
 $$E_{\text{London}} \propto -\frac{1}{r^6}$$
+
+Der Siedesprung als zweite Gleichung des Sandkastens:
+
+$$\Delta T = 78 - (-89) = 167\,\text{K} \quad \text{(Ethanol gegen Ethan)}$$
 
 中文：色散能随距离六次方衰减，贴得越近黏得越牢。 / 德语：Kleiner Abstand, riesige Wirkung: Darum zaehlen Gecko-Haerchen Millionen Kontakte.
 
@@ -112,11 +116,11 @@ ANTWORT：中文：A走数据路算167度差；B走结构路以链羟拔河作�
 
 ## Schritt 6 — check: Selbsttest zu Zwischenmolekulare Kraefte
 
-- FRAGE:：三种力怎么排？（Ordne die drei Kräfte） | ANTWORT:：色散偶极氢键递增。 / London, Dipol, Bruecke aufsteigend.
+- FRAGE: 三种力怎么排？（Ordne die drei Kräfte） | ANTWORT: 色散偶极氢键递增。 / London, Dipol, Bruecke aufsteigend.
 
-- FRAGE:：氢键条件是什么？（Wann gibt es H-Brücken） | ANTWORT:：H连 FON加孤对。 / H an FON plus freies Paar.
+- FRAGE: 氢键条件是什么？（Wann gibt es H-Brücken） | ANTWORT: H连 FON加孤对。 / H an FON plus freies Paar.
 
-- FRAGE:：溶解规则是什么？（Wie lautet die Löseregel） | ANTWORT:：相似相溶。 / Gleiches loest Gleiches.
+- FRAGE: 溶解规则是什么？（Wie lautet die Löseregel） | ANTWORT: 相似相溶。 / Gleiches loest Gleiches.
 
 
 `Klausur-Satz: Ohne Kraftbenennung bleibt jede Siedeaussage geraten, mit ihr wird sie begruendet.`
@@ -136,6 +140,7 @@ ANTWORT：中文：A走数据路算167度差；B走结构路以链羟拔河作�
 ROLLE：中文：你是材料检测员。 / 德语：Du bist Materialprueferin.
 SITUATION：胶粘剂在潮钢上失效：请用黏附阶梯、水与表面解释原因并开预处理处方（约150词）。 / 德语：Der Kleber versagt an feuchtem Stahl. Erklaere in ca. 150 Woertern mit Haftleiter, Wasser und Oberflaeche die Ursache und empfehle die Vorbehandlung.
 RUBRIC (30 XP)：Haftleiter (8 XP) | Wasserrolle (8 XP) | Vorbehandlung (8 XP) | Empfehlung (6 XP).
+ZEITREGEL: MAX 2 Minuten — 90秒定黏附阶梯与水角色，30秒写预处理句，然后交卷；Timer stellen.
 
 
 `Klausur-Satz: Achtung Falle: Masse allein siedet nicht — Brücken schlagen Huellen um Laengen.`
@@ -152,4 +157,4 @@ Takeaway-Satz: `Kraft benennen, Paar vergleichen, Ausnahme ehren: Wasser bricht 
 
 REFLEXION 2问：
 1. 过程自省：Welcher Schritt fiel schwerer — die Sandkasten-Challenge (Schritt 4) oder die Verfahrenswahl (Schritt 5)?
-2. 元认知计划：Beim naechsten Mal sichere ich zuerst die Werkzeugkiste, weil jeder Handgriff darauf aufbaut.
+2. 元认知计划：Beim naechsten Mal rechne ich zuerst den Siedesprung 167 Grad am Gecko-Beispiel (Ethanol gegen Ethan) nach, weil jede Kraft-Zuordnung darauf aufbaut.

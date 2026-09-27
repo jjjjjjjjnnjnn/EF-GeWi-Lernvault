@@ -133,6 +133,7 @@ ANTWORT: A folgt Weg A mit Log-Rechnung; B folgt Weg B mit Skalen-Argument.
 ROLLE: Du bist Tresor-Verwalter.
 SITUATION: Sieben Fragen liegen bereit. Ordne in ca. 120 Woertern jede Frage einer Formel mit Bedingung zu und rechne drei Beispiele.
 RUBRIC (30 XP): Zuordnung (12 XP) | Bedingungen (12 XP) | Rechnungen (6 XP).
+ZEITREGEL: MAX 2 Minuten — 90 Sekunden Formel plus Bedingung zuordnen, 30 Sekunden Einheiten-Check, dann abgeben; Timer stellen.
 
 
 `Klausur-Satz: Achtung Falle: pH-Formel gilt nur fuer verduennte Loesungen bei 25 Grad.`
@@ -148,4 +149,4 @@ Takeaway-Satz: `Formel plus Bedingung plus Einheit: Der Dreiklang oeffnet jeden 
 
 REFLEXION:
 1. Welcher Schritt fiel schwerer — die Sandkasten-Challenge (Schritt 4) oder die Verfahrenswahl (Schritt 5)?
-2. Beim naechsten Mal sichere ich zuerst die Werkzeugkiste, weil jeder Handgriff darauf aufbaut.
+2. Beim naechsten Mal ordne ich zuerst jede Frage Symbol plus Bedingung am Sieben-Schluessel-Tresor zu, weil jede Einheiten-Entscheidung darauf aufbaut.

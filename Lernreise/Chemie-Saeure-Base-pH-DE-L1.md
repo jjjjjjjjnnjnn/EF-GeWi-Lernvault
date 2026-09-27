@@ -11,7 +11,7 @@ tags: [EF, Chemie, Saeure-Base]
 version: Lesson-v3
 ---
 
-# Lernreise: Saeure-Base-Gleichgewichte und pH-Wert — Episode C18: Der verschwundene Umschlag
+# Lernreise: Saeure-Base-Gleichgewichte und pH-Wert — Episode C18: Nadeln am Fichtenhang
 
 <!-- Campaign: Imperium-Alchemie | Chemie | entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 ## Schritt 1 — entdecken: Der saure Regen ueber dem Fichtenhang
@@ -133,6 +133,7 @@ ANTWORT: A folgt Weg A mit Zehnerpotenz-Rechnung; B folgt Weg B mit Farbvergleic
 ROLLE: Du bist Waldchemikerin.
 SITUATION: Der Hang nadelt. Klaere in ca. 150 Woertern mit Proton, pH und Kw die Ursache und empfehle die Kalkung mit Dosis.
 RUBRIC (30 XP): Protonenlogik (8 XP) | pH-Rechnung (8 XP) | Kalkdosis (8 XP) | Oekobilanz (6 XP).
+ZEITREGEL: MAX 2 Minuten — 90 Sekunden Protonen- plus pH-Rechnung, 30 Sekunden Kalk-Urteil, dann abgeben; Timer stellen.
 
 
 `Klausur-Satz: Achtung Falle: Neutral heisst 7 nur bei 25 Grad; heisses Wasser ist anders neutral.`
@@ -148,4 +149,4 @@ Takeaway-Satz: `Geben, nehmen, zaehlen: Donator, Akzeptor, Skala in dieser Reihe
 
 REFLEXION:
 1. Welcher Schritt fiel schwerer — die Sandkasten-Challenge (Schritt 4) oder die Verfahrenswahl (Schritt 5)?
-2. Beim naechsten Mal sichere ich zuerst die Werkzeugkiste, weil jeder Handgriff darauf aufbaut.
+2. Beim naechsten Mal rechne ich zuerst Oxonium aus pH 4,2 und 6,5 mit Faktor 200 am Regen-See-Paar, weil jede Kalk-Entscheidung darauf aufbaut.

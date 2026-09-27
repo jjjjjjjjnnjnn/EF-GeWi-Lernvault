@@ -11,7 +11,7 @@ tags: [EF, Chemie, Titration]
 version: Lesson-v3
 ---
 
-# Lernreise: Titrationskurven und Indikatoren — Episode C23: Nachtschicht am Rührkessel
+# Lernreise: Titrationskurven und Indikatoren — Episode C23: Bürette gegen Automat
 
 <!-- Campaign: Imperium-Alchemie | Chemie | entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 ## Schritt 1 — entdecken: Der störrische Indikator: Pink bleibt aus
@@ -133,6 +133,7 @@ ANTWORT: A folgt Weg A mit c-mal-V-Rechnung; B folgt Weg B mit Bereich-trifft-Sp
 ROLLE: Du bist Analystin im Lebensmittellabor.
 SITUATION: Die Essigprobe weicht ab. Schreibe in ca. 150 Woertern ein Protokoll mit Titration, Rechnung und Indikatorwahl.
 RUBRIC (30 XP): Durchfuehrung (8 XP) | Rechnung (8 XP) | Indikatorwahl (8 XP) | Urteil (6 XP).
+ZEITREGEL: MAX 2 Minuten — 90 Sekunden c-mal-V-Rechnung, 30 Sekunden Indikator-Begruendung, dann abgeben; Timer stellen.
 
 
 `Klausur-Satz: Achtung Falle: Umschlag ungleich Aequivalenz — nah genug zaehlt, gleich ist selten.`
@@ -148,4 +149,4 @@ Takeaway-Satz: `Bereich auf Sprung legen: Der Indikator muss springen, wo die Ku
 
 REFLEXION:
 1. Welcher Schritt fiel schwerer — die Sandkasten-Challenge (Schritt 4) oder die Verfahrenswahl (Schritt 5)?
-2. Beim naechsten Mal sichere ich zuerst die Werkzeugkiste, weil jeder Handgriff darauf aufbaut.
+2. Beim naechsten Mal lese ich zuerst das Umschlagsvolumen bei 12,5 mL am Essig-Versuch ab und rechne c-mal-V, weil jede Indikator-Entscheidung darauf aufbaut.

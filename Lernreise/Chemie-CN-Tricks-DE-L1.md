@@ -11,7 +11,7 @@ tags: [EF, Chemie, CN]
 version: Lesson-v3
 ---
 
-# Lernreise: CN-Tricks: sechs Loesungsverfahren — Episode C5: Der verschwundene Umschlag
+# Lernreise: CN-Tricks: sechs Loesungsverfahren — Episode C5: Sechs Karten in sechzig Sekunden
 
 <!-- Campaign: Imperium-Alchemie | Chemie | entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 ## Schritt 1 — entdecken: Die Trickkiste von Katalysator-Karl
@@ -133,6 +133,7 @@ ANTWORT: A folgt Weg A mit Mol-Bruecke und Gramm-Einheit; B folgt Weg B mit Q-ge
 ROLLE: Du bist Handbuch-Prueferin.
 SITUATION: Sechs Fragen liegen bereit. Ordne in ca. 120 Woertern jede Frage einer Karte zu und rechne zwei Beispiele mit Einheit.
 RUBRIC (30 XP): Zuordnung (12 XP) | Rechnungen (12 XP) | Sprache (6 XP).
+ZEITREGEL: MAX 2 Minuten — 90 Sekunden Karte plus Frageart paaren, 30 Sekunden Beleg-Rechnung, dann abgeben; Timer stellen.
 
 
 `Klausur-Satz: Achtung Falle: Titrations-Karte braucht den Umschlagpunkt, nicht irgendeinen Farbumschlag.`
@@ -148,4 +149,4 @@ Takeaway-Satz: `Handbuch im Kopf statt Zettel: sechzig Sekunden entscheiden.`
 
 REFLEXION:
 1. Welcher Schritt fiel schwerer — die Sandkasten-Challenge (Schritt 4) oder die Verfahrenswahl (Schritt 5)?
-2. Beim naechsten Mal sichere ich zuerst die Werkzeugkiste, weil jeder Handgriff darauf aufbaut.
+2. Beim naechsten Mal ziehe ich zuerst Mol bei Gramm und Q bei Richtung am Sechs-Faelle-Stapel, weil jede Karten-Entscheidung darauf aufbaut.

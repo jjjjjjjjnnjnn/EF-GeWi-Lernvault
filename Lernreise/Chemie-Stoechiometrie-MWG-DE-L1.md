@@ -11,7 +11,7 @@ tags: [EF, Chemie, Stoechiometrie]
 version: Lesson-v3
 ---
 
-# Lernreise: Stoechiometrie und Massenwirkungsgesetz — Episode C20: Der störrische Indikator
+# Lernreise: Stoechiometrie und Massenwirkungsgesetz — Episode C20: Airbag in 30 Millisekunden
 
 <!-- Campaign: Imperium-Alchemie | Chemie | entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 ## Schritt 1 — entdecken: Der Airbag in 30 Millisekunden
@@ -86,7 +86,7 @@ HILFE:
 
 MUSTERLOESUNG: 60 L sind 2,68 mol N2 und brauchen 1,79 mol Azid, also 117 g; Begrenzer Azid; Ausbeute 55 durch 60 gleich 92 Prozent.
 
-`Klausur-Satz: Mit 130 g Azid fuer 60 L Stickstoff fuellt der Sandkasten statt zu raten.`
+`Klausur-Satz: Mit 117 g Azid fuer 60 L Stickstoff fuellt der Sandkasten statt zu raten.`
 
 ## Schritt 5 — ausprobieren: Duell der Wege: Mol-Rechnung gegen Koeffizienten-Blick
 
@@ -133,6 +133,7 @@ ANTWORT: A folgt Weg A mit Liter-Mol-Gramm-Kette; B folgt Weg B mit min-Quotient
 ROLLE: Du bist Sprengmeisterin im Crash-Labor.
 SITUATION: Der Generator liefert 55 statt 60 L. Erklaere in ca. 150 Woertern mit Mol, Begrenzer und Ausbeute die Luecke und gib die Charge frei oder nicht.
 RUBRIC (30 XP): Mol-Kette (8 XP) | Begrenzer (8 XP) | Ausbeute (8 XP) | Urteil (6 XP).
+ZEITREGEL: MAX 2 Minuten — 90 Sekunden Mol-Kette plus Begrenzer-Quotient, 30 Sekunden Ausbeute-Urteil, dann abgeben; Timer stellen.
 
 
 `Klausur-Satz: Achtung Falle: Ueberschuss reagiert nie vollstaendig — nur der Begrenzer zaehlt.`
@@ -148,4 +149,4 @@ Takeaway-Satz: `Wiegen, teilen, vergleichen: Mol, Quotient, Begrenzer in dieser 
 
 REFLEXION:
 1. Welcher Schritt fiel schwerer — die Sandkasten-Challenge (Schritt 4) oder die Verfahrenswahl (Schritt 5)?
-2. Beim naechsten Mal sichere ich zuerst die Werkzeugkiste, weil jeder Handgriff darauf aufbaut.
+2. Beim naechsten Mal rechne ich zuerst die Mol-Kette bis zum Begrenzer-Quotienten am Airbag-Beispiel, weil jede Ausbeute-Entscheidung darauf aufbaut.

@@ -11,7 +11,7 @@ tags: [EF, Chemie, Stoechiometrie]
 version: Lesson-v3
 ---
 
-# Lernreise: Stoechiometrie und Massenwirkungsgesetz — Episode C21: Rost an Tor 9
+# Lernreise: Stoechiometrie und Massenwirkungsgesetz — Episode C21: Begrenzer am Fließband
 
 <!-- Campaign: Imperium-Alchemie | Chemie | entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 ## Schritt 1 — entdecken: Der Airbag in 30 Millisekunden
@@ -87,7 +87,7 @@ HILFE:
 
 MUSTERLOESUNG：中文：需叠氮化钠约117克，限制物为叠氮化物，产率约92%。 / 德语：60 L sind 2,68 mol N2 und brauchen 1,79 mol Azid, also 117 g; Begrenzer Azid; Ausbeute 55 durch 60 gleich 92 Prozent.
 
-`Klausur-Satz: Mit 130 g Azid fuer 60 L Stickstoff fuellt der Sandkasten statt zu raten.`
+`Klausur-Satz: Mit 117 g Azid fuer 60 L Stickstoff fuellt der Sandkasten statt zu raten.`
 
 ## Schritt 5 — ausprobieren: Duell der Wege: Mol-Rechnung gegen Koeffizienten-Blick
 
@@ -112,11 +112,11 @@ ANTWORT：中文：A走换算路升摩克三连；B走系数路比商。 / 德�
 
 ## Schritt 6 — check: Selbsttest zu Stoechiometrie und MWG
 
-- FRAGE:：系数代表什么？（Was geben Koeffizienten an） | ANTWORT:：摩尔比。 / Mol-Verhaeltnisse.
+- FRAGE: 系数代表什么？（Was geben Koeffizienten an） | ANTWORT: 摩尔比。 / Mol-Verhaeltnisse.
 
-- FRAGE:：标准气体摩尔体积？（Wie gross ist das molare Volumen） | ANTWORT:：22.4升每摩尔。 / 22,4 L pro Mol bei Normbedingungen.
+- FRAGE: 标准气体摩尔体积？（Wie gross ist das molare Volumen） | ANTWORT: 22.4升每摩尔。 / 22,4 L pro Mol bei Normbedingungen.
 
-- FRAGE:：限制物怎么找？（Wie findest du den Begrenzer） | ANTWORT:：最小商限制。 / Der kleinste Quotient begrenzt.
+- FRAGE: 限制物怎么找？（Wie findest du den Begrenzer） | ANTWORT: 最小商限制。 / Der kleinste Quotient begrenzt.
 
 
 `Klausur-Satz: Ohne Begrenzer bleibt jede Ausbeute geraten, mit ihm wird sie berechnet.`
@@ -136,6 +136,7 @@ ANTWORT：中文：A走换算路升摩克三连；B走系数路比商。 / 德�
 ROLLE：中文：你是碰撞实验室装药师。 / 德语：Du bist Sprengmeisterin im Crash-Labor.
 SITUATION：发生器只产55升：请用摩尔、限制物与产率解释缺口并决定放行与否（约150词）。 / 德语：Der Generator liefert 55 statt 60 L. Erklaere in ca. 150 Woertern mit Mol, Begrenzer und Ausbeute die Luecke und gib die Charge frei oder nicht.
 RUBRIC (30 XP)：Mol-Kette (8 XP) | Begrenzer (8 XP) | Ausbeute (8 XP) | Urteil (6 XP).
+ZEITREGEL: MAX 2 Minuten — 90秒列摩尔链与限制商，30秒写产率放行句，然后交卷；Timer stellen.
 
 
 `Klausur-Satz: Achtung Falle: Ueberschuss reagiert nie vollstaendig — nur der Begrenzer zaehlt.`
@@ -152,4 +153,4 @@ Takeaway-Satz: `Wiegen, teilen, vergleichen: Mol, Quotient, Begrenzer in dieser 
 
 REFLEXION 2问：
 1. 过程自省：Welcher Schritt fiel schwerer — die Sandkasten-Challenge (Schritt 4) oder die Verfahrenswahl (Schritt 5)?
-2. 元认知计划：Beim naechsten Mal sichere ich zuerst die Werkzeugkiste, weil jeder Handgriff darauf aufbaut.
+2. 元认知计划：Beim naechsten Mal rechne ich zuerst die Liter-Mol-Gramm-Kette mit Begrenzer-Quotient am Airbag-Beispiel (60 L, 22,4 L), weil jede Ausbeute-Entscheidung darauf aufbaut.

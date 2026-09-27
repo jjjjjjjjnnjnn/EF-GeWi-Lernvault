@@ -133,6 +133,7 @@ ANTWORT: A folgt Weg A mit Mol-Brücke und 22,4-L-Regel; B folgt Weg B mit Gitte
 ROLLE: Du bist Azubi am Werkstor.
 SITUATION: Drei Pulver warten. Identifiziere in ca. 150 Woertern Bindungstypen aus Eigenschaften, gleiche eine Gleichung aus und rechne eine Menge.
 RUBRIC (30 XP): Typologie (8 XP) | Ausgleich (8 XP) | Rechnung (8 XP) | Sprache (6 XP).
+ZEITREGEL: MAX 2 Minuten — 90 Sekunden Typ plus Ausgleich, 30 Sekunden Mol-Rechnung, dann abgeben; Timer stellen.
 
 
 `Klausur-Satz: Achtung Falle: Index veraendert den Stoff, Koeffizient nur die Menge — wer tauscht, faellt durch.`
@@ -148,4 +149,4 @@ Takeaway-Satz: `Zaehlen, erkennen, wiegen: Proton, Bindung, Mol in dieser Reihen
 
 REFLEXION:
 1. Welcher Schritt fiel schwerer — die Sandkasten-Challenge (Schritt 4) oder die Verfahrenswahl (Schritt 5)?
-2. Beim naechsten Mal sichere ich zuerst die Werkzeugkiste, weil jeder Handgriff darauf aufbaut.
+2. Beim naechsten Mal gleiche ich zuerst die Knallgasgleichung aus und rechne die Mol-Brücke bis 2,24 L am CaCO3-Beispiel, weil jede Mengen-Entscheidung darauf aufbaut.

@@ -112,11 +112,11 @@ ANTWORT：中文：A走计算路算幂差；B走试纸路比色。 / 德语：A 
 
 ## Schritt 6 — check: Selbsttest zu Saeure, Base und pH
 
-- FRAGE:：酸是什么？（Was ist eine Säure） | ANTWORT:：质子供体。 / Der Protonendonator.
+- FRAGE: 酸是什么？（Was ist eine Säure） | ANTWORT: 质子供体。 / Der Protonendonator.
 
-- FRAGE:：碱是什么？（Was ist eine Base） | ANTWORT:：质子受体。 / Der Protonenakzeptor.
+- FRAGE: 碱是什么？（Was ist eine Base） | ANTWORT: 质子受体。 / Der Protonenakzeptor.
 
-- FRAGE:：pH加pOH等于多少？（Was gibt pH plus pOH） | ANTWORT:：14（25度）。 / 14 bei 25 Grad.
+- FRAGE: pH加pOH等于多少？（Was gibt pH plus pOH） | ANTWORT: 14（25度）。 / 14 bei 25 Grad.
 
 
 `Klausur-Satz: Ohne Ionenprodukt bleibt jede pOH-Aussage geraten, mit ihm wird sie gerechnet.`
@@ -136,6 +136,7 @@ ANTWORT：中文：A走计算路算幂差；B走试纸路比色。 / 德语：A 
 ROLLE：中文：你是森林化学师。 / 德语：Du bist Waldchemikerin.
 SITUATION：山坡掉针：请用质子、pH与Kw查因并开石灰处方（约150词）。 / 德语：Der Hang nadelt. Klaere in ca. 150 Woertern mit Proton, pH und Kw die Ursache und empfehle die Kalkung mit Dosis.
 RUBRIC (30 XP)：Protonenlogik (8 XP) | pH-Rechnung (8 XP) | Kalkdosis (8 XP) | Oekobilanz (6 XP).
+ZEITREGEL: MAX 2 Minuten — 90秒算质子与pH倍数，30秒写撒灰处方句，然后交卷；Timer stellen.
 
 
 `Klausur-Satz: Achtung Falle: Neutral heisst 7 nur bei 25 Grad; heisses Wasser ist anders neutral.`
@@ -152,4 +153,4 @@ Takeaway-Satz: `Geben, nehmen, zaehlen: Donator, Akzeptor, Skala in dieser Reihe
 
 REFLEXION 2问：
 1. 过程自省：Welcher Schritt fiel schwerer — die Sandkasten-Challenge (Schritt 4) oder die Verfahrenswahl (Schritt 5)?
-2. 元认知计划：Beim naechsten Mal sichere ich zuerst die Werkzeugkiste, weil jeder Handgriff darauf aufbaut.
+2. 元认知计划：Beim naechsten Mal bestimme ich zuerst Donator und Akzeptor am Regen-pH-4,2-Fall und rechne Kw nach, weil jede Neutralisations-Entscheidung darauf aufbaut.

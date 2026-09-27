@@ -11,7 +11,7 @@ tags: [EF, Chemie, Kinetik]
 version: Lesson-v3
 ---
 
-# Lernreise: Reaktionsgeschwindigkeit und Katalyse — Episode C13: Stille vor dem Äquivalenzpunkt
+# Lernreise: Reaktionsgeschwindigkeit und Katalyse — Episode C13: Kalter Kat im Tunnel
 
 <!-- Campaign: Imperium-Alchemie | Chemie | entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 ## Schritt 1 — entdecken: Der Kat, der alles schluckt: Abgas gegen Stau
@@ -133,6 +133,7 @@ ANTWORT: A folgt Weg A mit Anfangsraten-Methode; B folgt Weg B mit Berg-noch-zu-
 ROLLE: Du bist Werkstatt-Chemikerin.
 SITUATION: Der Chef will den Kat gegen billigeres Material tauschen. Bewerte in ca. 150 Woertern mit Rate, Berg und Lage, ob der Tausch traegt.
 RUBRIC (30 XP): Ratendeutung (8 XP) | Berglogik (8 XP) | Lageabgrenzung (8 XP) | Empfehlung (6 XP).
+ZEITREGEL: MAX 2 Minuten — 90 Sekunden Rate plus Berg deuten, 30 Sekunden Lage-Urteil, dann abgeben; Timer stellen.
 
 
 `Klausur-Satz: Achtung Falle: Der Katalysator aendert Tempo, nie Lage und nie K.`
@@ -148,4 +149,4 @@ Takeaway-Satz: `Stoss, Berg, Abkuerzung: Wer die drei benennt, erklaert jedes Te
 
 REFLEXION:
 1. Welcher Schritt fiel schwerer — die Sandkasten-Challenge (Schritt 4) oder die Verfahrenswahl (Schritt 5)?
-2. Beim naechsten Mal sichere ich zuerst die Werkzeugkiste, weil jeder Handgriff darauf aufbaut.
+2. Beim naechsten Mal lese ich zuerst die Anfangssteigung der c-t-Kurve und zeichne den gesenkten Berg am Kat-Beispiel, weil jede Tempo-Entscheidung darauf aufbaut.

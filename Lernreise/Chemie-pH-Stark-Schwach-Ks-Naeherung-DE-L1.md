@@ -11,7 +11,7 @@ tags: [EF, Chemie, Saeuren]
 version: Lesson-v3
 ---
 
-# Lernreise: pH starker und schwacher Saeuren mit Ks-Naeherung — Episode C28: Der zischende Fleck
+# Lernreise: pH starker und schwacher Saeuren mit Ks-Naeherung — Episode C28: Bademeister-Kelle im Pool
 
 <!-- Campaign: Imperium-Alchemie | Chemie | entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 ## Schritt 1 — entdecken: Der Pool kippt: Eine Kelle zu viel Saeure
@@ -133,6 +133,7 @@ ANTWORT: A folgt Weg A mit minus-Log-Rechnung; B folgt Weg B mit Wurzel-plus-Che
 ROLLE: Du bist Bademeister mit Kelle.
 SITUATION: Der Pool zeigt pH 3,2. Erklaere in ca. 150 Woertern mit stark, schwach und Ks, was geschah, und berechne die Korrektur.
 RUBRIC (30 XP): Diagnose (8 XP) | Rechnung (8 XP) | Korrektur (8 XP) | Sicherheit (6 XP).
+ZEITREGEL: MAX 2 Minuten — 90 Sekunden stark-direkt plus schwach-Wurzel, 30 Sekunden Pool-Korrektur, dann abgeben; Timer stellen.
 
 
 `Klausur-Satz: Achtung Falle: Verduennen hebt pH starker Saeuren um eins pro Faktor zehn, schwacher nur um halb.`
@@ -148,4 +149,4 @@ Takeaway-Satz: `Stark direkt, schwach mit Wurzel und Check: Ks zuerst, Log danac
 
 REFLEXION:
 1. Welcher Schritt fiel schwerer — die Sandkasten-Challenge (Schritt 4) oder die Verfahrenswahl (Schritt 5)?
-2. Beim naechsten Mal sichere ich zuerst die Werkzeugkiste, weil jeder Handgriff darauf aufbaut.
+2. Beim naechsten Mal trenne ich zuerst stark und schwach am Ks-Wert und rechne pH 2 aus 0,01 mol/L HCl direkt, weil jede Naeherungs-Entscheidung darauf aufbaut.

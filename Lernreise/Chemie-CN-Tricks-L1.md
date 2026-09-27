@@ -11,7 +11,7 @@ tags: [EF, Chemie, CN]
 version: Lesson-v3
 ---
 
-# Lernreise: CN-Tricks: sechs Loesungsverfahren — Episode C6: Säureregen über dem Werkstor
+# Lernreise: CN-Tricks: sechs Loesungsverfahren — Episode C6: Trickkiste von Katalysator-Karl
 
 <!-- Campaign: Imperium-Alchemie | Chemie | entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 ## Schritt 1 — entdecken: Die Trickkiste von Katalysator-Karl
@@ -112,11 +112,11 @@ ANTWORT：中文：A走数量堆用摩尔桥；B走方向堆用Q比K。 / 德语
 
 ## Schritt 6 — check: Selbsttest zu CN-Tricks
 
-- FRAGE:：几卡几秒？（Wie viele Karten in wie vielen Sekunden） | ANTWORT:：六卡六十秒。 / Sechs Karten in sechzig Sekunden.
+- FRAGE: 几卡几秒？（Wie viele Karten in wie vielen Sekunden） | ANTWORT: 六卡六十秒。 / Sechs Karten in sechzig Sekunden.
 
-- FRAGE:：Q归哪堆？（Wohin gehört Q） | ANTWORT:：方向堆。 / Zum Lage-Stapel.
+- FRAGE: Q归哪堆？（Wohin gehört Q） | ANTWORT: 方向堆。 / Zum Lage-Stapel.
 
-- FRAGE:：摩尔归哪堆？（Wohin gehört Mol） | ANTWORT:：数量堆。 / Zum Mengen-Stapel.
+- FRAGE: 摩尔归哪堆？（Wohin gehört Mol） | ANTWORT: 数量堆。 / Zum Mengen-Stapel.
 
 
 `Klausur-Satz: Ohne Zuordnung bleibt jede Karte Deko, mit ihr wird sie Waffe.`
@@ -136,6 +136,7 @@ ANTWORT：中文：A走数量堆用摩尔桥；B走方向堆用Q比K。 / 德语
 ROLLE：中文：你是手册审查员。 / 德语：Du bist Handbuch-Prueferin.
 SITUATION：六问待配卡：请配对并规范算出两例（约120词）。 / 德语：Sechs Fragen liegen bereit. Ordne in ca. 120 Woertern jede Frage einer Karte zu und rechne zwei Beispiele mit Einheit.
 RUBRIC (30 XP)：Zuordnung (12 XP) | Rechnungen (12 XP) | Sprache (6 XP).
+ZEITREGEL: MAX 2 Minuten — 90秒读题抽卡，30秒写证据句，然后交卷；Timer stellen.
 
 
 `Klausur-Satz: Achtung Falle: Titrations-Karte braucht den Umschlagpunkt, nicht irgendeinen Farbumschlag.`
@@ -152,4 +153,4 @@ Takeaway-Satz: `Handbuch im Kopf statt Zettel: sechzig Sekunden entscheiden.`
 
 REFLEXION 2问：
 1. 过程自省：Welcher Schritt fiel schwerer — die Sandkasten-Challenge (Schritt 4) oder die Verfahrenswahl (Schritt 5)?
-2. 元认知计划：Beim naechsten Mal sichere ich zuerst die Werkzeugkiste, weil jeder Handgriff darauf aufbaut.
+2. 元认知计划：Beim naechsten Mal ziehe ich zuerst die Mol-Karte bei Gramm und die Q-Karte beim Druckstoss-Fall, weil jede Zuordnungs-Entscheidung darauf aufbaut.
