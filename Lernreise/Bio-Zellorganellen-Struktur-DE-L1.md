@@ -77,14 +77,14 @@ Erst Einheiten angleichen in Mikrometer, dann teilen: Der Massstab entlarvt jede
 
 [Werkzeug: formula]
 
-AUFGABE (Target Challenge): Gegeben: Mitochondrium im Bild 5 cm bei Vergroesserung 20.000-fach; Chloroplast 100 Mikrometer Bild bei 20.000-fach. Berechne beide Realgroessen, ordne fuenf Organellen ihren Aufgaben zu und verfolge den Insulinweg bis zum Export.
+AUFGABE (Target Challenge): Gegeben: Mitochondrium im Bild 5 cm bei Vergroesserung 20.000-fach; Chloroplast 10 cm Bild bei 20.000-fach. Berechne beide Realgroessen, ordne fuenf Organellen ihren Aufgaben zu und verfolge den Insulinweg bis zum Export.
 
 HILFE:
 1. Einheiten angleichen: cm in Mikrometer umrechnen.
 2. Realgroesse aus Bild durch Vergrösserung teilen.
 3. Sekretionsweg ER-Golgi-Vesikel aufzaehlen.
 
-MUSTERLOESUNG: Mitochondrium 50.000 Mikrometer Bild durch 20.000 ergibt 2,5 Mikrometer; Chloroplast 5 Mikrometer; Insulin laeuft ER-Golgi-Vesikel-Export.
+MUSTERLOESUNG: Mitochondrium 50 mm Bild (5 cm) durch 20.000 ergibt 2,5 Mikrometer; Chloroplast 100 mm Bild (10 cm) durch 20.000 ergibt 5 Mikrometer; Insulin laeuft ER-Golgi-Vesikel-Export.
 
 `Klausur-Satz: Mit Vergroesserung aus Bild durch Realgroesse vermisst der Sandkasten statt zu raten.`
 

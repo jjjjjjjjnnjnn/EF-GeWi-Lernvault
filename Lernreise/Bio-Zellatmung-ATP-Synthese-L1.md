@@ -94,9 +94,9 @@ MUSTERLOESUNG：中文：有氧32、无氧2，氰化物卡复合体IV，糖酵�
 VERGLEICH: Waehle erst den Energie-Weg, dann loesen: (i) ATP-Bilanzweg oder (ii) Giftdeute-Weg — dann loesen.选程序：先看信号词再选路。
 
 
-Weg A：Weg A (ATP-Bilanzweg): Stoff- und Energiebilanzen quantitativ aufstellen und ATP berechnen. Dieser Weg liefert Mol-Zahlen und ist klausurfest.
+Weg A (ATP-Bilanzweg): Stoff- und Energiebilanzen quantitativ aufstellen und ATP berechnen. Dieser Weg liefert Mol-Zahlen und ist klausurfest.
 
-Weg B：Weg B (Giftdeute-Weg): Giftwirkungen qualitativ am Schaubild verorten und Symptome erklaeren. Dieser Weg ist schnell, bleibt aber ohne Zahl weich.
+Weg B (Giftdeute-Weg): Giftwirkungen qualitativ am Schaubild verorten und Symptome erklaeren. Dieser Weg ist schnell, bleibt aber ohne Zahl weich.
 
 
 AUFGABE A: ATP aus Gramm Glukose exakt gesucht. Welcher Weg? 【选程序：先看信号词再选路】
@@ -112,7 +112,7 @@ ANTWORT：中文：A走结算路摩尔乘32；B走毒理路以链断电作答。
 
 ## Schritt 6 — check: Selbsttest zu Zellatmung und ATP
 
-- FRAGE:：糖醍解在哪？净得多少？（Wo läuft Glykolyse, wie viel netto） | ANTWORT:：细胞质净2ATP。 / Zytoplasma, netto zwei ATP.
+- FRAGE:：糖酵解在哪？净得多少？（Wo läuft Glykolyse, wie viel netto） | ANTWORT:：细胞质净2ATP。 / Zytoplasma, netto zwei ATP.
 
 - FRAGE:：氧是什么角色？（Welche Rolle spielt Sauerstoff） | ANTWORT:：链末端电子受体。 / Endakzeptor der Kette.
 

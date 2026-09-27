@@ -94,9 +94,9 @@ MUSTERLOESUNG：中文：预算守住，计算有公式有单位，自查三中�
 VERGLEICH: Waehle erst den Trainingsweg, dann loesen: (i) Drill-Weg oder (ii) Simulations-Weg — dann loesen.选程序：先看信号词再选路。
 
 
-Weg A：Weg A (Drill-Weg): Isolierte Operator-Saetze pauken und Rechenansaetze unter Stoppuhr wiederholen. Dieser Weg baut Tempo und Automatik und macht die Hand schnell.
+Weg A (Drill-Weg): Isolierte Operator-Saetze pauken und Rechenansaetze unter Stoppuhr wiederholen. Dieser Weg baut Tempo und Automatik und macht die Hand schnell.
 
-Weg B：Weg B (Simulations-Weg): Komplette Klausur unter Ernstfallbedingungen schreiben und am Horizont auswerten. Dieser Weg baut Nerven und Vollstaendigkeit, kostet aber viel Zeit.
+Weg B (Simulations-Weg): Komplette Klausur unter Ernstfallbedingungen schreiben und am Horizont auswerten. Dieser Weg baut Nerven und Vollstaendigkeit, kostet aber viel Zeit.
 
 
 AUFGABE A: AFB-III-Saetze mit weil in unter zwei Minuten bauen. Welcher Weg? 【选程序：先看信号词再选路】

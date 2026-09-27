@@ -29,7 +29,7 @@ Heute wird gelegt, was sitzt: Wer die sechs Karten in sechzig Sekunden abrufen k
 
 ## Schritt 2 — entdecken: Sechs Karten im Kasten
 
-AUSRUESTUNG (5 Begriffe der Werkzeugkiste):
+AUSRUESTUNG (6 Begriffe der Werkzeugkiste):
 
 - **Osmose-Karte**: Die Osmose-Karte gilt bei jeder Aufgabe mit Psi-Zahlen oder Konzentrationen. Sie verlangt Delta-Berechnung und Richtungsaussage. Mechanismus: Man bildet Delta-Psi, deutet das Vorzeichen und prognostiziert den Turgorverlauf. Klausur-Tipp: Psi-Zahl im Text heisst sofort diese Karte ziehen.
 
@@ -40,6 +40,8 @@ AUSRUESTUNG (5 Begriffe der Werkzeugkiste):
 - **Oekologie-Karte**: Die Oekologie-Karte gilt bei Populations- und Nahrungsnetzfragen. Sie verlangt Bilanzen aus Geburt, Tod und Wanderung. Mechanismus: Man schreibt die Bilanz N-neu gleich N-alt plus Geburten minus Tote und deutet die Kapazitaetsgrenze. Klausur-Tipp: Kapazitaet K als Deckel immer einzeichnen.
 
 - **Atmungs-Karte**: Die Atmungs-Karte gilt bei jeder Energiefrage der Zelle. Sie verlangt die Bilanz aus Glukose, Sauerstoff und ATP. Mechanismus: Man verfolgt Glukose durch Glykolyse, Citratzyklus und Atmungskette bis zu 32 ATP. Klausur-Tipp: 32 ATP plus Sauerstoff als Endakzeptor hinschreiben.
+
+- **Fotosynthese-Karte**: Die Fotosynthese-Karte gilt bei Licht-, CO2- und Chlorophyllfragen. Sie verlangt Minimumgesetz und 6-zu-1-Bilanz mit Einheit Gramm. Mechanismus: Man liest die Saettigung ab, benennt den Engpass und rechnet CO2 in Glukose um. Klausur-Tipp: Lichtsaettigung plus Engpasswechsel als Doppelbeleg.
 
 
 `Klausur-Satz: Psi-Zahl zieht Osmose, Optimum zieht Enzym, Kreuzung zieht Genetik.`

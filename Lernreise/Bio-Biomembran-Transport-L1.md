@@ -90,14 +90,14 @@ MUSTERLOESUNG：中文：差值为-0.7 MPa故外流、膨压归零发生质壁�
 
 `Klausur-Satz: Mit Delta-Psi von minus 0,7 MPa stroemt Wasser aus, bis Turgor null die Plasmolyse markiert.`
 
-## Schritt 5 — ausprobieren: Duell der Wege: Rechenweg gegen Bildweg
+## Schritt 5 — ausprobieren: Duell der Wege: Rechenweg gegen Transporttypweg
 
-VERGLEICH: Waehle erst das Verfahren, dann loesen: (i) Delta-Psi-Rechenweg oder (ii) Mikroskop-Bildweg — dann loesen.选程序：先看信号词再选路。
+VERGLEICH: Waehle erst das Verfahren, dann loesen: (i) Delta-Psi-Rechenweg oder (ii) Transporttyp-Testweg — dann loesen.选程序：先看信号词再选路。
 
 
-Weg A：Weg A (Delta-Psi-Rechenweg): Psi-Werte ablesen, Delta berechnen, Richtung und Turgorverlauf quantitativ vorhersagen. Dieser Weg liefert Zahlen mit Einheit MPa und haelt der Klausurkontrolle stand.
+Weg A (Delta-Psi-Rechenweg): Psi-Werte ablesen, Delta berechnen, Richtung und Turgorverlauf quantitativ vorhersagen. Dieser Weg liefert Zahlen mit Einheit MPa und haelt der Klausurkontrolle stand.
 
-Weg B：Weg B (Mikroskop-Bildweg): Plasmolysegrad am Mikroskopbild schaetzen: Protoplast abgeloest oder anliegend, Vakuole gross oder klein. Dieser Weg deutet qualitativ und ist schnell, bleibt aber ohne Zahlen angreifbar.
+Weg B (Transporttyp-Testweg): Transporttyp anhand Gefaelle plus ATP-Test bestimmen: Anreicherung gegen das Gefaelle mit Cyanid-Stopp beweist primaer aktiven Transport. Dieser Weg deutet qualitativ und ist schnell, bleibt aber ohne Zahlen angreifbar.
 
 
 AUFGABE A: Wurzelhaare nehmen nach Regen Wasser auf, der ATP-Spiegel bleibt unveraendert. Welcher Weg loest das sauber? 【选程序：先看信号词再选路】
@@ -105,7 +105,7 @@ AUFGABE A: Wurzelhaare nehmen nach Regen Wasser auf, der ATP-Spiegel bleibt unve
 AUFGABE B: Eine Nervenzelle pumpt K+ gegen das Gefaelle; nach Cyanid stoppt alles. Welcher Weg entlarvt den Transporttyp? 【选程序：先看信号词再选路】
 
 
-HILFE：A nennt Einstrom ohne ATP und ohne Zahlen — Weg A mit Delta-Psi. B nennt Anreicherung gegen das Gefaelle plus Gift — Weg B mit ATP-Test.
+HILFE：A nennt Einstrom ohne ATP und ohne Zahlen — Weg A mit Delta-Psi, qualitativ per Vorzeichen statt MPa-Rechnung. B nennt Anreicherung gegen das Gefaelle plus Gift — Weg B mit ATP-Test.
 
 ANTWORT：中文：A走计算路：经水通道的渗透；B走类型路：Na+/K+泵的主动运输，断ATP即停。 / 德语：A folgt Weg A als Osmose ueber Aquaporine mit negativem Delta-Psi; B folgt Weg B als primaer aktiver Transport ueber die Na+/K+-ATPase, der bei ATP-Stopp zusammenbricht.
 

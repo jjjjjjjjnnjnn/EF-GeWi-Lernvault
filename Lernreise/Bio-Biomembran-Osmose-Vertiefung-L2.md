@@ -87,16 +87,16 @@ HILFE:
 
 MUSTERLOESUNG：中文：血侧约0.77 MPa对0.39 MPa，水欲涌入血液；调成等渗后水停尿素照排。 / 德语：pi_Blut ca. 0,77 MPa, pi_Dialysat ca. 0,39 MPa: Wasser droht ins Blut zu stroemen. Angleichen auf isoosmotisch stoppt den Wasserstrom, Harnstoff diffundiert weiter mit seinem Gefaelle.
 
-`Klausur-Satz: Mit pi von 1,5 MPa gegen 0,5 MPa wandert Wasser berechenbar zur staerkeren Loesung.`
+`Klausur-Satz: Mit pi von 0,77 MPa gegen 0,39 MPa wandert Wasser berechenbar zur staerkeren Loesung.`
 
 ## Schritt 5 — ausprobieren: Duell der Wege: Van-t-Hoff-Rechnung gegen Gewebeprobe
 
 VERGLEICH: Waehle erst das Verfahren, dann loesen: (i) Van-t-Hoff-Rechenweg oder (ii) Gewebeproben-Deuteweg — dann loesen.选程序：先看信号词再选路。
 
 
-Weg A：Weg A (Van-t-Hoff-Rechenweg): Konzentrationen einsetzen, pi berechnen, Richtung und Dialysat-Rezeptur quantitativ festlegen. Dieser Weg liefert MPa-Zahlen und haelt der Protokollpruefung stand.
+Weg A (Van-t-Hoff-Rechenweg): Konzentrationen einsetzen, pi berechnen, Richtung und Dialysat-Rezeptur quantitativ festlegen. Dieser Weg liefert MPa-Zahlen und haelt der Protokollpruefung stand.
 
-Weg B：Weg B (Gewebeproben-Deuteweg): Zwiegelepidermis in Reihen einlegen und Abloesequoten am Bild auszaehlen. Dieser Weg ist anschaulich und geraetefrei, bleibt aber schaetzungsbehaftet.
+Weg B (Gewebeproben-Deuteweg): Zwiegelepidermis in Reihen einlegen und Abloesequoten am Bild auszaehlen. Dieser Weg ist anschaulich und geraetefrei, bleibt aber schaetzungsbehaftet.
 
 
 AUFGABE A: Dialysat-Rezeptur fuer null Nettowasser bei 310 K gesucht. Welcher Weg? 【选程序：先看信号词再选路】

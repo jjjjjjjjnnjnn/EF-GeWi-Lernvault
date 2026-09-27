@@ -89,14 +89,14 @@ MUSTERLOESUNG: Delta = minus 1,1 minus (minus 0,4) = minus 0,7 MPa, also negativ
 
 `Klausur-Satz: Mit Delta-Psi von minus 0,7 MPa stroemt Wasser aus, bis Turgor null die Plasmolyse markiert.`
 
-## Schritt 5 — ausprobieren: Duell der Wege: Rechenweg gegen Bildweg
+## Schritt 5 — ausprobieren: Duell der Wege: Rechenweg gegen Transporttypweg
 
-VERGLEICH: Waehle erst das Verfahren, dann loesen: (i) Delta-Psi-Rechenweg oder (ii) Mikroskop-Bildweg — dann loesen.
+VERGLEICH: Waehle erst das Verfahren, dann loesen: (i) Delta-Psi-Rechenweg oder (ii) Transporttyp-Testweg — dann loesen.
 
 
 Weg A (Delta-Psi-Rechenweg): Psi-Werte ablesen, Delta berechnen, Richtung und Turgorverlauf quantitativ vorhersagen. Dieser Weg liefert Zahlen mit Einheit MPa und haelt der Klausurkontrolle stand.
 
-Weg B (Mikroskop-Bildweg): Plasmolysegrad am Mikroskopbild schaetzen: Protoplast abgeloest oder anliegend, Vakuole gross oder klein. Dieser Weg deutet qualitativ und ist schnell, bleibt aber ohne Zahlen angreifbar.
+Weg B (Transporttyp-Testweg): Transporttyp anhand Gefaelle plus ATP-Test bestimmen: Anreicherung gegen das Gefaelle mit Cyanid-Stopp beweist primaer aktiven Transport. Dieser Weg deutet qualitativ und ist schnell, bleibt aber ohne Zahlen angreifbar.
 
 
 AUFGABE A: Wurzelhaare nehmen nach Regen Wasser auf, der ATP-Spiegel bleibt unveraendert. Welcher Weg loest das sauber?
@@ -104,7 +104,7 @@ AUFGABE A: Wurzelhaare nehmen nach Regen Wasser auf, der ATP-Spiegel bleibt unve
 AUFGABE B: Eine Nervenzelle pumpt K+ gegen das Gefaelle; nach Cyanid stoppt alles. Welcher Weg entlarvt den Transporttyp?
 
 
-HILFE: A nennt Einstrom ohne ATP und ohne Zahlen — Weg A mit Delta-Psi. B nennt Anreicherung gegen das Gefaelle plus Gift — Weg B mit ATP-Test.
+HILFE: A nennt Einstrom ohne ATP und ohne Zahlen — Weg A mit Delta-Psi, qualitativ per Vorzeichen statt MPa-Rechnung. B nennt Anreicherung gegen das Gefaelle plus Gift — Weg B mit ATP-Test.
 
 ANTWORT: A folgt Weg A als Osmose ueber Aquaporine mit negativem Delta-Psi; B folgt Weg B als primaer aktiver Transport ueber die Na+/K+-ATPase, der bei ATP-Stopp zusammenbricht.
 

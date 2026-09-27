@@ -94,9 +94,9 @@ MUSTERLOESUNG：中文：mRNA为AUG-UUU-UAA得二肽，900碱基出约299肽，�
 VERGLEICH: Waehle erst den Code-Weg, dann loesen: (i) Code-Rechenweg oder (ii) Mutations-Deuteweg — dann loesen.选程序：先看信号词再选路。
 
 
-Weg A：Weg A (Code-Rechenweg): Sequenzen quantitativ uebersetzen und Kettenlaengen berechnen. Dieser Weg liefert exakte Peptide und ist klausurfest.
+Weg A (Code-Rechenweg): Sequenzen quantitativ uebersetzen und Kettenlaengen berechnen. Dieser Weg liefert exakte Peptide und ist klausurfest.
 
-Weg B：Weg B (Mutations-Deuteweg): Mutationsfolgen qualitativ abschaetzen und Krankheitsbilder deuten. Dieser Weg liefert Verstaendnis, bleibt aber ohne Zahl weich.
+Weg B (Mutations-Deuteweg): Mutationsfolgen qualitativ abschaetzen und Krankheitsbilder deuten. Dieser Weg liefert Verstaendnis, bleibt aber ohne Zahl weich.
 
 
 AUFGABE A: Peptid aus DNA-Sequenz exakt gesucht. Welcher Weg? 【选程序：先看信号词再选路】

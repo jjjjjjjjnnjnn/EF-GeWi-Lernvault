@@ -67,7 +67,7 @@ $$v = \frac{v_{\max} \cdot [S]}{K_M + [S]}$$
 
 ## Anekdote & Fun-Fact
 
-**Anekdote / Fun-Fact (DE)**: Penicillin blockiert bacterialische Wandbauer und rettet Millionen — ein Hemmstoff als Lebensretter.
+**Anekdote / Fun-Fact (DE)**: Penicillin blockiert bakterielle Wandbauer und rettet Millionen — ein Hemmstoff als Lebensretter.
 
 
 **中文解读**: 青霉素卡住细菌建墙酶救了上亿人——抑制剂也能当救命恩人。
@@ -95,9 +95,9 @@ MUSTERLOESUNG：中文：无X：Km2、vmax100；有X：Km右移vmax不变即竞�
 VERGLEICH: Waehle erst den Beweisweg, dann loesen: (i) Km-Rechenweg oder (ii) Hemmbild-Deuteweg — dann loesen.选程序：先看信号词再选路。
 
 
-Weg A：Weg A (Km-Rechenweg): Km und vmax aus Messwerten quantitativ bestimmen und Kurven berechnen. Dieser Weg liefert Zahlen und ist gerichtsfest.
+Weg A (Km-Rechenweg): Km und vmax aus Messwerten quantitativ bestimmen und Kurven berechnen. Dieser Weg liefert Zahlen und ist gerichtsfest.
 
-Weg B：Weg B (Hemmbild-Deuteweg): Kurvenbilder qualitativ vergleichen und Hemmtypen am Verlauf erkennen. Dieser Weg ist schnell, bleibt aber ohne Zahl duenn.
+Weg B (Hemmbild-Deuteweg): Kurvenbilder qualitativ vergleichen und Hemmtypen am Verlauf erkennen. Dieser Weg ist schnell, bleibt aber ohne Zahl duenn.
 
 
 AUFGABE A: Km-Vergleich zweier Kurven mit Zahlen gesucht. Welcher Weg? 【选程序：先看信号词再选路】

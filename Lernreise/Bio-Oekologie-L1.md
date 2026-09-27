@@ -94,9 +94,9 @@ MUSTERLOESUNG：中文：增肥超翻塘阈值溶氧归零，缓冲带守K下保
 VERGLEICH: Waehle erst den Ranger-Weg, dann loesen: (i) Bilanz-Rechenweg oder (ii) Netzdeute-Weg — dann loesen.选程序：先看信号词再选路。
 
 
-Weg A：Weg A (Bilanz-Rechenweg): Eintraege und Entnaehmen quantitativ bilanzieren und K-Ueberschreitung berechnen. Dieser Weg liefert Zahlen und ist behoerdenfest.
+Weg A (Bilanz-Rechenweg): Eintraege und Entnaehmen quantitativ bilanzieren und K-Ueberschreitung berechnen. Dieser Weg liefert Zahlen und ist behoerdenfest.
 
-Weg B：Weg B (Netzdeute-Weg): Nahrungsnetz qualitativ lesen und Kippfolgen frueh warnen. Dieser Weg ist schnell und ganzheitlich, bleibt aber ohne Zahl weich.
+Weg B (Netzdeute-Weg): Nahrungsnetz qualitativ lesen und Kippfolgen frueh warnen. Dieser Weg ist schnell und ganzheitlich, bleibt aber ohne Zahl weich.
 
 
 AUFGABE A: Phosphatfracht gegen Schwelle mit Zahlen gesucht. Welcher Weg? 【选程序：先看信号词再选路】

@@ -94,9 +94,9 @@ MUSTERLOESUNG：中文：渗透、半透膜、水势进计算盒；ATP、逆梯�
 VERGLEICH: Waehle erst den Lernweg, dann loesen: (i) Rechenkarten-Weg oder (ii) Kontextkarten-Weg — dann loesen.选程序：先看信号词再选路。
 
 
-Weg A：Weg A (Rechenkarten-Weg): Begriff pauken, Definition hersagen, dann Rechenaufgabe mit Zahlen loesen. Dieser Weg haertet das Gedächtnis und liefert MPa-Belege.
+Weg A (Rechenkarten-Weg): Begriff pauken, Definition hersagen, dann Rechenaufgabe mit Zahlen loesen. Dieser Weg haertet das Gedächtnis und liefert MPa-Belege.
 
-Weg B：Weg B (Kontextkarten-Weg): Im Fliesstext Signalwoerter wägen, Kiste waehlen, Verfahren ableiten. Dieser Weg trainiert Textarbeit und ist klausurnah, bleibt aber ohne Drill lueckig.
+Weg B (Kontextkarten-Weg): Im Fliesstext Signalwoerter wägen, Kiste waehlen, Verfahren ableiten. Dieser Weg trainiert Textarbeit und ist klausurnah, bleibt aber ohne Drill lueckig.
 
 
 AUFGABE A: Fuenf Begriffe in drei Sprachen in sechzig Sekunden abrufen. Welcher Weg? 【选程序：先看信号词再选路】

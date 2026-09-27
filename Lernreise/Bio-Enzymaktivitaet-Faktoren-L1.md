@@ -94,9 +94,9 @@ MUSTERLOESUNG：中文：最适37℃与pH7，30℃速率0.5，60℃变性归零�
 VERGLEICH: Waehle erst den Beweisweg, dann loesen: (i) Kurvenmess-Rechenweg oder (ii) Strukturdeute-Weg — dann loesen.选程序：先看信号词再选路。
 
 
-Weg A：Weg A (Kurvenmess-Rechenweg): Raten messen, Optima ablesen, Steigungen quantitativ berechnen. Dieser Weg liefert Zahlen mit Einheit und ist pruefungssicher.
+Weg A (Kurvenmess-Rechenweg): Raten messen, Optima ablesen, Steigungen quantitativ berechnen. Dieser Weg liefert Zahlen mit Einheit und ist pruefungssicher.
 
-Weg B：Weg B (Strukturdeute-Weg): Taschenform und Ladungen am Modell deuten und Denaturierung qualitativ erklaeren. Dieser Weg liefert Verstaendnis, bleibt aber ohne Zahl duenn.
+Weg B (Strukturdeute-Weg): Taschenform und Ladungen am Modell deuten und Denaturierung qualitativ erklaeren. Dieser Weg liefert Verstaendnis, bleibt aber ohne Zahl duenn.
 
 
 AUFGABE A: v aus Zeitverlauf mit Einheit gesucht. Welcher Weg? 【选程序：先看信号词再选路】

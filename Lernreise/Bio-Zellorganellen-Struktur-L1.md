@@ -78,14 +78,14 @@ $$\text{Vergr.} = \frac{\text{Bildgroesse}}{\text{Realgroesse}}$$
 
 [Werkzeug: formula]
 
-AUFGABE目标挑战：已知电镜图尺寸与倍数：算线粒体与叶绿体真值，配对五细胞器并追踪胰岛素出厂路。 德语原题：Gegeben: Mitochondrium im Bild 5 cm bei Vergroesserung 20.000-fach; Chloroplast 100 Mikrometer Bild bei 20.000-fach. Berechne beide Realgroessen, ordne fuenf Organellen ihren Aufgaben zu und verfolge den Insulinweg bis zum Export.
+AUFGABE目标挑战：已知电镜图尺寸与倍数：算线粒体与叶绿体真值，配对五细胞器并追踪胰岛素出厂路。 德语原题：Gegeben: Mitochondrium im Bild 5 cm bei Vergroesserung 20.000-fach; Chloroplast 10 cm Bild bei 20.000-fach. Berechne beide Realgroessen, ordne fuenf Organellen ihren Aufgaben zu und verfolge den Insulinweg bis zum Export.
 
 HILFE:
 1. Einheiten angleichen: cm in Mikrometer umrechnen.
 2. Realgroesse aus Bild durch Vergrösserung teilen.
 3. Sekretionsweg ER-Golgi-Vesikel aufzaehlen.
 
-MUSTERLOESUNG：中文：线粒体真值2.5微米、叶绿体5微米，胰岛素走内质网—高尔基—囊泡出厂。 / 德语：Mitochondrium 50.000 Mikrometer Bild durch 20.000 ergibt 2,5 Mikrometer; Chloroplast 5 Mikrometer; Insulin laeuft ER-Golgi-Vesikel-Export.
+MUSTERLOESUNG：中文：线粒体真值2.5微米、叶绿体5微米，胰岛素走内质网—高尔基—囊泡出厂。 / 德语：Mitochondrium 50 mm Bild (5 cm) durch 20.000 ergibt 2,5 Mikrometer; Chloroplast 100 mm Bild (10 cm) durch 20.000 ergibt 5 Mikrometer; Insulin laeuft ER-Golgi-Vesikel-Export.
 
 `Klausur-Satz: Mit Vergroesserung aus Bild durch Realgroesse vermisst der Sandkasten statt zu raten.`
 
@@ -94,9 +94,9 @@ MUSTERLOESUNG：中文：线粒体真值2.5微米、叶绿体5微米，胰岛素
 VERGLEICH: Waehle erst den Mikroskop-Weg, dann loesen: (i) Groessen-Rechenweg oder (ii) Funktions-Deuteweg — dann loesen.选程序：先看信号词再选路。
 
 
-Weg A：Weg A (Groessen-Rechenweg): Groessen quantitativ aus Massstab berechnen und Strukturen identifizieren. Dieser Weg liefert Mikrometer-Zahlen und ist beweisfest.
+Weg A (Groessen-Rechenweg): Groessen quantitativ aus Massstab berechnen und Strukturen identifizieren. Dieser Weg liefert Mikrometer-Zahlen und ist beweisfest.
 
-Weg B：Weg B (Funktions-Deuteweg): Bauformen qualitativ deuten und Aufgaben zuordnen. Dieser Weg ist schnell, bleibt aber ohne Zahl weich.
+Weg B (Funktions-Deuteweg): Bauformen qualitativ deuten und Aufgaben zuordnen. Dieser Weg ist schnell, bleibt aber ohne Zahl weich.
 
 
 AUFGABE A: Realgroesse aus Bild und Vergrösserung gesucht. Welcher Weg? 【选程序：先看信号词再选路】

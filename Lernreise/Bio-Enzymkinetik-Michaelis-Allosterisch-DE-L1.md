@@ -69,7 +69,7 @@ Bei S gleich Km laeuft halbe Maximalrate; die Kurve startet linear und muendet i
 
 ## Anekdote & Fun-Fact
 
-**Anekdote / Fun-Fact (DE)**: Penicillin blockiert bacterialische Wandbauer und rettet Millionen — ein Hemmstoff als Lebensretter.
+**Anekdote / Fun-Fact (DE)**: Penicillin blockiert bakterielle Wandbauer und rettet Millionen — ein Hemmstoff als Lebensretter.
 
 
 **Bezug zum Konzept**: Blockade als Therapie: Der richtige Hemmtyp heilt, der falsche vergiftet.

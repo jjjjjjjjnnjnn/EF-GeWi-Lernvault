@@ -94,9 +94,9 @@ MUSTERLOESUNG：中文：800勒克斯饱和后转CO2限制，132克CO2产糖90�
 VERGLEICH: Waehle erst den Messweg, dann loesen: (i) Gaswechsel-Rechenweg oder (ii) Pigment-Deuteweg — dann loesen.选程序：先看信号词再选路。
 
 
-Weg A：Weg A (Gaswechsel-Rechenweg): O2- oder CO2-Umsatz quantitativ messen und Ausbeuten berechnen. Dieser Weg liefert Zahlen und ist klausurfest.
+Weg A (Gaswechsel-Rechenweg): O2- oder CO2-Umsatz quantitativ messen und Ausbeuten berechnen. Dieser Weg liefert Zahlen und ist klausurfest.
 
-Weg B：Weg B (Pigment-Deuteweg): Pigmente und Blattbau qualitativ deuten und Standorte erklaeren. Dieser Weg liefert Verstaendnis, bleibt aber ohne Zahl weich.
+Weg B (Pigment-Deuteweg): Pigmente und Blattbau qualitativ deuten und Standorte erklaeren. Dieser Weg liefert Verstaendnis, bleibt aber ohne Zahl weich.
 
 
 AUFGABE A: Glukose-Ausbeute aus CO2-Masse gesucht. Welcher Weg? 【选程序：先看信号词再选路】

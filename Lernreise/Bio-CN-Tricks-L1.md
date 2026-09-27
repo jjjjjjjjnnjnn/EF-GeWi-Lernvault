@@ -27,7 +27,7 @@ ZIELE（本节三目标）：
 
 ## Schritt 2 — entdecken: Sechs Karten im Kasten
 
-PRETRAINING术语盒（5大装备，中文在上、德语在下）：
+PRETRAINING术语盒（6大装备，中文在上、德语在下）：
 
 - 中文：渗透卡 — 德语：Osmose-Karte：见水势数值就算差。 / Osmose-Karte: Die Osmose-Karte gilt bei jeder Aufgabe mit Psi-Zahlen oder Konzentrationen. Sie verlangt Delta-Berechnung und Richtungsaussage. Mechanismus: Man bildet Delta-Psi, deutet das Vorzeichen und prognostiziert den Turgorverlauf. Klausur-Tipp: Psi-Zahl im Text heisst sofort diese Karte ziehen.
 
@@ -38,6 +38,8 @@ PRETRAINING术语盒（5大装备，中文在上、德语在下）：
 - 中文：生态卡 — 德语：Oekologie-Karte：见种群就算出生死亡。 / Oekologie-Karte: Die Oekologie-Karte gilt bei Populations- und Nahrungsnetzfragen. Sie verlangt Bilanzen aus Geburt, Tod und Wanderung. Mechanismus: Man schreibt die Bilanz N-neu gleich N-alt plus Geburten minus Tote und deutet die Kapazitaetsgrenze. Klausur-Tipp: Kapazitaet K als Deckel immer einzeichnen.
 
 - 中文：呼吸卡 — 德语：Atmungs-Karte：见能量就追踪ATP。 / Atmungs-Karte: Die Atmungs-Karte gilt bei jeder Energiefrage der Zelle. Sie verlangt die Bilanz aus Glukose, Sauerstoff und ATP. Mechanismus: Man verfolgt Glukose durch Glykolyse, Citratzyklus und Atmungskette bis zu 32 ATP. Klausur-Tipp: 32 ATP plus Sauerstoff als Endakzeptor hinschreiben.
+
+- 中文：光合卡 — 德语：Fotosynthese-Karte：见光强CO2就算产糖。 / Fotosynthese-Karte: Die Fotosynthese-Karte gilt bei Licht-, CO2- und Chlorophyllfragen. Sie verlangt Minimumgesetz und 6-zu-1-Bilanz mit Einheit Gramm. Mechanismus: Man liest die Saettigung ab, benennt den Engpass und rechnet CO2 in Glukose um. Klausur-Tipp: Lichtsaettigung plus Engpasswechsel als Doppelbeleg.
 
 
 `Klausur-Satz: Psi-Zahl zieht Osmose, Optimum zieht Enzym, Kreuzung zieht Genetik.`
@@ -95,9 +97,9 @@ MUSTERLOESUNG：中文：水势配渗透卡算差，杂交配遗传卡画3:1棋�
 VERGLEICH: Waehle erst den Stapel, dann loesen: (i) Mengen-Stapel oder (ii) Regulations-Stapel — dann loesen.选程序：先看信号词再选路。
 
 
-Weg A：Weg A (Mengen-Stapel): Zaehlen, wiegen, rechnen: Mol, Bilanzen und Raten mit Formeln loesen. Dieser Weg liefert harte Zahlen und ist pruefungssicher.
+Weg A (Mengen-Stapel): Zaehlen, wiegen, rechnen: Mol, Bilanzen und Raten mit Formeln loesen. Dieser Weg liefert harte Zahlen und ist pruefungssicher.
 
-Weg B：Weg B (Regulations-Stapel): Kurven lesen, Optima deuten, Regulation erklaeren. Dieser Weg liefert Verstaendnis und Bloom-Punkte, bleibt aber ohne Zahl duenn.
+Weg B (Regulations-Stapel): Kurven lesen, Optima deuten, Regulation erklaeren. Dieser Weg liefert Verstaendnis und Bloom-Punkte, bleibt aber ohne Zahl duenn.
 
 
 AUFGABE A: Gramm-Angabe aus Reaktionsgleichung gesucht. Welcher Stapel? 【选程序：先看信号词再选路】

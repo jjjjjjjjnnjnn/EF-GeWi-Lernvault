@@ -94,9 +94,9 @@ MUSTERLOESUNG：中文：全保留一轮应重加轻不符，分散二轮应全�
 VERGLEICH: Waehle erst den Beweisweg, dann loesen: (i) Bandenzaehl-Rechenweg oder (ii) Modellvergleichs-Deuteweg — dann loesen.选程序：先看信号词再选路。
 
 
-Weg A：Weg A (Bandenzaehl-Rechenweg): Banden pro Runde zaehlen und Dichteanteile quantitativ ausrechnen. Dieser Weg liefert harte Zahlen und haelt der Protokollpruefung stand.
+Weg A (Bandenzaehl-Rechenweg): Banden pro Runde zaehlen und Dichteanteile quantitativ ausrechnen. Dieser Weg liefert harte Zahlen und haelt der Protokollpruefung stand.
 
-Weg B：Weg B (Modellvergleichs-Deuteweg): Die drei Modelle qualitativ gegeneinander halten und am Schaubild ausscheiden. Dieser Weg ist schnell und anschaulich, bleibt aber ohne Zahlen angreifbar.
+Weg B (Modellvergleichs-Deuteweg): Die drei Modelle qualitativ gegeneinander halten und am Schaubild ausscheiden. Dieser Weg ist schnell und anschaulich, bleibt aber ohne Zahlen angreifbar.
 
 
 AUFGABE A: Dichteanteile der Mittelbande in Runde zwei gesucht. Welcher Weg? 【选程序：先看信号词再选路】
