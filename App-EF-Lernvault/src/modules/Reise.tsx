@@ -394,17 +394,60 @@ export default function ReiseModule({
   const [viewMode, setViewMode] = useState<"document" | "steps">(initialViewMode);
   const rootContainerRef = useRef<HTMLDivElement>(null);
 
-  const getScrollContainer = (): HTMLElement | Window => {
+  const findScrollContainer = (): HTMLElement | null => {
     const el = rootContainerRef.current;
-    if (!el) return window;
-    const parent = el.closest(".overflow-y-auto") as HTMLElement | null;
-    return parent || window;
+    if (el) {
+      const parent = el.closest(".overflow-y-auto") as HTMLElement | null;
+      if (parent) return parent;
+    }
+    const appContainer = document.querySelector(".tab-enter.overflow-y-auto") as HTMLElement | null;
+    if (appContainer) return appContainer;
+    return (document.querySelector(".overflow-y-auto") as HTMLElement | null) || null;
   };
 
   const scrollToContainerTop = (behavior: ScrollBehavior = "smooth") => {
-    const container = getScrollContainer();
-    if ("scrollTo" in container) {
-      container.scrollTo({ top: 0, behavior });
+    // 1. Traverse upwards from rootContainerRef and scroll all ancestors
+    let parent: HTMLElement | null = rootContainerRef.current;
+    while (parent) {
+      if (parent.scrollHeight > parent.clientHeight && parent.clientHeight > 0) {
+        try {
+          parent.scrollTo({ top: 0, behavior });
+        } catch {
+          parent.scrollTop = 0;
+        }
+      }
+      parent = parent.parentElement;
+    }
+
+    // 2. Scroll any element with overflow-y-auto in the viewport
+    const scrollContainers = document.querySelectorAll(".overflow-y-auto");
+    scrollContainers.forEach((el) => {
+      try {
+        el.scrollTo({ top: 0, behavior });
+      } catch {
+        (el as HTMLElement).scrollTop = 0;
+      }
+    });
+
+    // 3. Scroll window and document elements
+    try {
+      window.scrollTo({ top: 0, behavior });
+    } catch {
+      window.scroll(0, 0);
+    }
+    if (document.documentElement) {
+      try {
+        document.documentElement.scrollTo({ top: 0, behavior });
+      } catch {
+        document.documentElement.scrollTop = 0;
+      }
+    }
+    if (document.body) {
+      try {
+        document.body.scrollTo({ top: 0, behavior });
+      } catch {
+        document.body.scrollTop = 0;
+      }
     }
   };
 
@@ -412,8 +455,18 @@ export default function ReiseModule({
   useEffect(() => {
     if (activeCourse) {
       scrollToContainerTop("instant");
+      const raf = requestAnimationFrame(() => {
+        scrollToContainerTop("instant");
+      });
+      const timer = setTimeout(() => {
+        scrollToContainerTop("instant");
+      }, 50);
       setActiveDocStepIdx(0);
       setStepIdx(0);
+      return () => {
+        cancelAnimationFrame(raf);
+        clearTimeout(timer);
+      };
     }
   }, [activeCourse?.id]);
 
@@ -421,18 +474,29 @@ export default function ReiseModule({
   useEffect(() => {
     if (viewMode !== "document" || !activeCourse) return;
 
-    const container = getScrollContainer();
     const handleScroll = () => {
       const schritte = activeCourse.schritte;
+      if (!schritte || schritte.length === 0) return;
+
+      const container = findScrollContainer();
+
+      // Check if user is scrolled to near bottom of document
+      if (container) {
+        const isNearBottom = container.scrollHeight - container.scrollTop - container.clientHeight < 80;
+        if (isNearBottom) {
+          setActiveDocStepIdx(schritte.length - 1);
+          return;
+        }
+      }
+
+      const containerTop = container ? container.getBoundingClientRect().top : 0;
       let currentIdx = 0;
-      const isWin = container === window;
-      const containerTop = isWin ? 0 : (container as HTMLElement).getBoundingClientRect().top;
 
       for (let i = 0; i < schritte.length; i++) {
         const el = document.getElementById(`schritt-${schritte[i].stepNumber}`);
         if (el) {
           const rect = el.getBoundingClientRect();
-          if (rect.top - containerTop <= 180) {
+          if (rect.top - containerTop <= 220) {
             currentIdx = i;
           }
         }
@@ -441,14 +505,19 @@ export default function ReiseModule({
       setActiveDocStepIdx(currentIdx);
     };
 
-    if (container === window) {
-      window.addEventListener("scroll", handleScroll, { passive: true });
-      return () => window.removeEventListener("scroll", handleScroll);
-    } else {
-      const el = container as HTMLElement;
-      el.addEventListener("scroll", handleScroll, { passive: true });
-      return () => el.removeEventListener("scroll", handleScroll);
-    }
+    // Capture phase intercepts scroll events from ANY scrollable container in the document
+    document.addEventListener("scroll", handleScroll, { capture: true, passive: true });
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    window.addEventListener("resize", handleScroll, { passive: true });
+
+    // Initial evaluation
+    handleScroll();
+
+    return () => {
+      document.removeEventListener("scroll", handleScroll, { capture: true });
+      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("resize", handleScroll);
+    };
   }, [viewMode, activeCourse]);
 
   useEffect(() => {
