@@ -246,6 +246,7 @@
 - [2026-09-26-interactive-pedagogy-and-scroll-sync](Journal/2026-09-26-interactive-pedagogy-and-scroll-sync.md) — **互动探索式学习重构、滚动同步与学科教具严格隔离**：TOC视口联动+回到顶部修复+入课置顶+生物/化学专有实验沙盘上线+排版重点升格（59套件391测试全绿）
 - [2026-09-27-p1-p2-gesamtabschluss](Journal/2026-09-27-p1-p2-gesamtabschluss.md) — **P1+P2全量收官：269门十科互动课程连续剧式关卡宇宙与微沙盘深度重塑**：8大战役故事线+三道门禁全绿（audit 6项全零+vault-check PASS+tsc零错误）+单科独立落库
 - [2026-09-27-simulation-review-und-feinschliff](Journal/2026-09-27-simulation-review-und-feinschliff.md) — **学生端全链路模拟审查269/269+11路逐课精修+4遗留清零**：任务包发布+11路审查（均分86.0）+返工6课+数值硬伤纠错+单科独立落库
+- [2026-09-27-duel-tool-mismatch-and-performance-fix](Journal/2026-09-27-duel-tool-mismatch-and-performance-fix.md) — **第5步对决教具错配根治与长文档滚动/刷新性能优化**：对决步骤防御阻断+FormulaScaffold学科上下文感应+requestAnimationFrame节流防抖+2150步按需惰性解析（npm run build/vault-check PASS）
 - 约定：文件名 `YYYY-MM-DD-<thema>.md`，头部frontmatter（`fach`可空，`tags: [EF, Meta]`）。
 
 
