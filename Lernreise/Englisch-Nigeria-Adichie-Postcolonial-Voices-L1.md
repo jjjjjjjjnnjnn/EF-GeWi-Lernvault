@@ -13,119 +13,130 @@ version: Lesson-v3
 
 # Lernreise: Nigeria Adichie and Postcolonial Voices (L1, Ziel Klausur)
 
-<!-- Lesson v3 architecture: Schritte 1-8 fixed; Fehlvorstellung between Schritt 6 and 7 (parser skipped); embedded [Werkzeug: <id>]; gating: check/szenario failed = Weiter greyed; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
+<!-- Campaign: Detektive Fal 31 -->
+## Schritt 1 — entdecken: Der versiegelte Umschlag aus der Archivnacht
 
-## Schritt 1 — entdecken
+ZIELE (3 goals in 15 minutes, read Chinese first, then English):
 
-ZIELE (3 Ziele, nach 15 Minuten erreichbar):
+1. 中文：能把第31号案件（拉各斯来信）按背景、方法、判断拆开。
+   English: Place case 31 in context, method and judgement.
+2. 中文：每个论断配引文出处并说清效果。
+   English: Support each claim with quotation and effect.
+3. 中文：按题型写出权衡判断。
+   English: Judge with reasons in the right task type.
 
-1. Adichies single-story thesis ($single + story = stereotype$) explain.
-2. Narrative voice and perspective in a short Nigeria passage analyse.
-3. The danger of a single story for identity evaluate (AFB III).
+HOOK:
 
-VORAUSSETZUNG: Characterisation, narrative perspective and comment structure.
+深夜，跨时空文案侦探社的蓝灯又亮了。搭档把一只密封信封推到你面前：这是第31号案件，一份拉各斯来信。表面看只是一段尼日利亚声音，但灯光下浮现出第二层痕迹——有人删改、夸大或偷换了关键信息。你们作为思想特工与文本侦探，必须在十五分钟内锁定三个目标：找证据、说功能、下判断，每一步都要有出处支撑。下一道时空门只为证据链完整的人打开，搭档已经在催你了，线索正在变冷。
 
-VORGAENGER-VERWEIS: This lesson requires `Englisch-Postcolonialism-Cultural-Identity-L1.md` and does not repeat it. That lesson introduced general theory (hybridity, othering, mimicry). Here follows the narrow cut: only Nigerian voices with Adichie as anchor; general empire history does not belong here.
+English hook: Agent Theo Wort drops case file 31 (Interview-Transkript mit Code-Switching) on your desk. Falllinie D: Das Archiv der Agentur meldet einen Riss in der Zeit, durch den ein Text in unsere Gegenwart gefallen ist.
 
-Klausur-Satz: `A single story about Nigeria creates a stereotype, many stories restore dignity and complexity.`
+Klausur-Satz: `Many voices defeat the single story: listening becomes method.`
 
-## Schritt 2 — entdecken
+## Schritt 2 — entdecken: Die Ausruestungskiste gegen Fall 31
 
-PRETRAINING (Kernbegriffe):
+装备盒（5件，先读中文，再背英文）：
 
-- Single story: One repeated narrative that flattens a whole culture.
-- Stereotype: Fixed image where $one + example = all$.
-- Narrative voice: Who speaks, who sees, who stays silent.
-- Hybridity: Mixed identity between colony and metropolis.
-- Agency: Capacity of characters to act and resist as subjects.
+- 中文点拨：尼日利亚声音之1号工具。
+  English: **Single story: one tale as theft of complexity**
+- 中文点拨：尼日利亚声音之2号工具。
+  English: **Code-switching: language shift as identity signal**
+- 中文点拨：尼日利亚声音之3号工具。
+  English: **Generational memory: war stories as family archive**
+- 中文点拨：尼日利亚声音之4号工具。
+  English: **Market voice: bargaining speech as social stage**
+- 中文点拨：尼日利亚声音之5号工具。
+  English: **Home and diaspora: two places pulling one heart**
 
-Klausur-Satz: `Voice decides agency: Who narrates Nigeria decides who owns Nigeria.`
+Klausur-Satz: `Many voices defeat the single story: listening becomes method.`
 
-## Schritt 3 — entdecken
+## Schritt 3 — entdecken: Der Mechanismus hinter dem Tatbild
 
-ENTDECKEN (ein Konzept plus Diagramm):
+中文深层解构：尼日利亚声音的核心链是证据、效果、判断。第31号案件（拉各斯来信）的伪装层就藏在链条中间。
 
-Adichie argues $power + repetition = single \, story$. The cure follows $many + voices = balance$. Analysis moves in three steps: voice (first or third person, insider or outsider), image (which details repeat), function (who gains dignity, who loses it). Postcolonial reading asks not only what happens but who is allowed to tell it.
+English: Quotation plus effect equals judgement on Nigeria Adichie and Postcolonial Voices.
 
 ```diagram
-Single story: power -> repetition -> stereotype (one Nigeria)
-Cure: many voices -> many details -> complex Nigeria
-Test: voice (who speaks?) + image (what repeats?) = function
-Formula: voice + image = power over identity
+Evidence (quotation) -> Effect (function) -> Judgement (verdict)
+Case 31
 ```
 
-Klausur-Satz: `Perspective is power: The narrator distributes dignity and blame.`
+Klausur-Satz: `Many voices defeat the single story: listening becomes method.`
 
-## Anekdote & Fun-Fact
+## Anekdote
 
-**Anekdote / Fun-Fact (DE)**: Adichies TED talk from 2009 passed $30$ million views and entered many curricula. Her novel Half of a Yellow Sun returned the Biafra war from statistics to faces and kitchens.
+中文解读：尼日利亚声音里藏着侦探的耐心：每个细节都是时空门的钥匙。
 
-**Bezug zum Konzept**: `A talk about stories became itself a story against single stories.`
+English: A reader covered her webcam after one novel and her screen time after the other.
 
-## Schritt 4 — ausprobieren
+Bezug zum Konzept: `Many voices defeat the single story: listening becomes method.`
 
-BEISPIEL (vollstaendige Musterloesung):
+## Schritt 4 — ausprobieren: Die Sandkasten-Pruefung mit Textlupe
 
 [Werkzeug: highlighter]
 
-AUFGABE (analyse, AFB II): Analyse how the passage constructs Nigeria through narrative voice and repeated images.
+中文任务：分析第31号案文本（拉各斯来信）。
+English TASK: Examine case 31 (Interview-Transkript mit Code-Switching) on Nigeria Adichie and Postcolonial Voices.
+TARGET: Three quotations, each with effect and judgement in four sentences.
 
-HILFE:
-1. Schritt 1: Voice and perspective name.
-2. Schritt 2: Two repeated images quote.
-3. Schritt 3: Function for identity explain.
+HILFE（中文在前）：
+1. 中文：两句交代背景。English: Place the case in two sentences.
+2. 中文：锁两个证据。English: Secure two quotations.
+3. 中文：效果加判断。English: Add effect and judgement.
 
-MUSTERLOESUNG: The first-person narrator speaks as Lagos insider with present-tense verbs and market sounds; the reader enters Nigeria from inside, not from a visitor gaze. Repeated images of generators and traffic frame the city as noisy resilience rather than chaos. The function is restorative: Details return agency to ordinary life and correct the single story of poverty by adding humour, work and pride.
+MUSTERLOESUNG: 中文示范：背景一句，证据加效果两句，判断一句。
+English MODEL: Case 31 shows Nigeria Adichie and Postcolonial Voices in three moves with quotation, effect and judgement; the cover is blown.
 
-Klausur-Satz: `Insider voice plus everyday detail replaces the single story by lived complexity.`
+Klausur-Satz: `Many voices defeat the single story: listening becomes method.`
 
-## Schritt 5 — ausprobieren
+## Schritt 5 — ausprobieren: Das doppelte Spiel Weg A gegen Weg B
 
-VERGLEICH (erst Verfahren waehlen, dann loesen):
+VERGLEICH（中文先行）：先选路再做题：【选概念】(i) Weg A 近路（引文细节）还是 (ii) Weg B 远路（背景判断）。
+English: Choose the path first (close Way A or distant Way B), then write.
 
-VERGLEICH: Waehle erst das Verfahren — (i) Voice-Verfahren (speaker, perspective, silence) oder (ii) Context-Verfahren (history, Biafra, diaspora) — dann loesen.
+TASK A（中文：哪条线索走近路？）: Which trace needs Way A?
+TASK B（中文：哪个整体问题走远路？）: Which whole-case question needs Way B?
 
-AUFGABE A: Who tells the story and who stays silent? Which procedure fits?
+HILFE：细节问选近路Way A，整体问选远路Way B。【选概念看题干：compare列异同，assess做权衡。】
 
-AUFGABE B: How does the Biafra memory shape the passage? Which procedure fits?
+中文答案：A近路靠引文，B远路靠背景。
+English ANSWER: A takes Way A with close quotation, B takes Way B with context on Nigeria Adichie and Postcolonial Voices.
 
-HILFE: A asks about narration, hence procedure (i). B asks about history, hence procedure (ii).
+Klausur-Satz: `Many voices defeat the single story: listening becomes method.`
 
-ANTWORT: A requires procedure (i): Insider voice with agency against outsider stereotype. B requires procedure (ii): War memory as background that explains pride and wound without reducing Nigeria to war.
-
-Klausur-Satz: `Voice explains who speaks, context explains why it matters.`
-
-## Schritt 6 — check
+## Schritt 6 — check: Selbsttest zu Nigeria Adichie and Postcolonial Voices
 
 CHECK (drei Fragen mit Antworten):
 
-FRAGE: What is the single-story formula? | ANTWORT: $single + story = stereotype$ through power and repetition.
-FRAGE: What is the cure formula? | ANTWORT: $many + voices = balance$ through detail and dignity.
-FRAGE: What proves agency in a passage? | ANTWORT: Work, humour, decision and resistance in voice and action, not victim images alone.
+中文自测：
+FRAGE: 三步链是什么？ | ANTWORT: Quotation, effect, judgement.
+FRAGE: 近路要什么？ | ANTWORT: Close quotation with effect.
+FRAGE: 远路要什么？ | ANTWORT: Context as carrier of judgement.
 
-Klausur-Satz: `Agency needs verbs of decision, not only adjectives of suffering.`
+Klausur-Satz: `Many voices defeat the single story: listening becomes method.`
 
 ## Fehlvorstellung
 
-1. Fehlvorstellung: Postcolonial reading means adding history facts only.
-   Korrektur-Satz: `Postcolonial analysis starts with voice and image before history explains their function.`
+1. 中文误解：尼日利亚声音只看表面。
+   中文纠偏：引文加效果才是得分点。
+   Korrektur-Satz: `Voices must be compared, not merged.`
+2. 中文误解：尼日利亚声音只看表面。
+   中文纠偏：引文加效果才是得分点。
+   Korrektur-Satz: `Memory funds new departures.`
 
-2. Fehlvorstellung: One positive image corrects a stereotype.
-   Korrektur-Satz: `Only a plurality of voices balances a single story; one image merely mirrors it.`
+## Schritt 7 — szenario: Klausurtransfer: Book club reviewer zu Fall 31
 
-## Schritt 7 — szenario
+ROLLE（中文）：你是Book club reviewer，负责审稿。
+English ROLE: You are Book club reviewer.
+SITUATION: Case 31 waits on your desk.
+TASK（中文）：150词左右，含背景、证据、权衡判断。
+RUBRIC (30 XP): Context (6 XP) | Quotations (10 XP) | Effect plus judgement (10 XP) | Register (4 XP).
 
-ROLLE: You are a tutor for the English Abitur.
-SITUATION: A classmate reduces Nigeria to poverty in a comment. Respond in circa 150 words with Adichie, correct the single story with voice and detail, and close with a balanced judgement.
-RUBRIC (30 XP): Single-story thesis correct (8 XP) | Voice and image analysed (10 XP) | Balanced judgement (8 XP) | Academic register (4 XP).
+## Schritt 8 — reflexion: Takeaway und Rueckblick aus Fall 31
 
-## Schritt 8 — reflexion: Takeaway & Reflexion
+中文总结：第31号案件教会我们：先锁引文，再说效果，最后判断。
+English TAKEAWAY: Secure quotation, name effect, judge with reasons. `Many voices defeat the single story: listening becomes method.`
 
-TAKEAWAY:
-
-Voice first, history second: Many Nigerian voices replace one flat story by complex dignity.
-Takeaway-Satz: `Many stories about Nigeria restore what a single story stole — complexity.`
-
-REFLEXION:
-1. Which step was harder — image work (Schritt 4) or procedure choice (Schritt 5)?
-2. Next time I mark voice first, because voice decides power over identity.
+REFLEXION（中文在前）：
+1. 中文：近路和远路哪个更难？English: Which was harder, close quotation or distant judgement?
+2. 中文：下次先划引文。English: Next time I secure quotations first.

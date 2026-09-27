@@ -13,152 +13,111 @@ version: Lesson-v3
 
 # Lernreise: Dystopian Fiction 1984 Brave New World (L1, Ziel Klausur)
 
-<!-- Lesson v3 architecture: Schritte 1 to 8 fixed; Fehlvorstellung between Schritt 6 and 7 (parser skips, not counted); embedded [Werkzeug: <id>]; gating: check/szenario failed = Weiter disabled; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
+<!-- Campaign: Detektive Fal 44 -->
+## Schritt 1 — entdecken: Der versiegelte Umschlag aus der Registratur
 
-## Schritt 1 — entdecken: Ziele & Phänomen-Einstieg
+ZIELE (3 Ziele, nach 15 Minuten erreichbar):
 
-OBJECTIVES (three measurable goals of this lesson):
+1. Du ordnest Fall 44 (Plakat mit laechelnder Ueberwachungskamera) in Kontext, Verfahren und Deutung ein.
+2. Du belegst jede Aussage zu Dystopian Fiction 1984 Brave New World mit Zitat und Zeile und benennst die Funktion.
+3. Du faellst ein Urteil im passenden Anforderungsbereich.
 
-1. You can explain the opposing control logics in a **comparison matrix**: 1984 controls through surveillance and fear, Brave New World through entertainment and desire.
-2. You can **compare** both novels across language, power and individual freedom with one Klausur sentence per dimension.
-3. You can **assess** which future is more dangerous and write a balanced concluding paragraph.
+HOOK:
 
-### Hook / Phenomenon
+Mitten in der Nacht flackert das Blaulicht der Agentur fuer Texte und Gedanken ueber den leeren Schreibtischen, und Partner Theo Wort legt einen versiegelten Umschlag auf deinen Platz. Seit Wochen jagt ihr als Gedanken-Agent an der Seite deines Text-Detektivs durch die Jahrhunderte, und jede geloeste Spur oeffnet ein neues Portal in der Zeit. Heute geht es um Dystopian Fiction 1984 Brave New World. Falllinie C: Hinter einer Stahltuer rauscht ein Ministerium, das Woerter loescht und Gedanken neu schreibt. Im Umschlag steckt Fall 44: ein Plakat mit laechelnder Ueberwachungskamera. Kaum haeltst du das Stueck ins Licht, faellt dir eine zweite Schicht auf: Jemand hat die Botschaft frisiert, verkuerzt oder verdreht, und nur wer Beleg, Funktion und Deutung sauber trennt, kann die Manipulation entlarven. Das naechste Portal oeffnet sich nur, wenn du drei Ziele in fuenfzehn Minuten schaffst und jede Behauptung mit Zeile und Wirkung belegst. Theo Wort gru belt schon ungeduldig, denn die Spur wird kalt.
 
-After one novel readers cover their webcams; after the other they check their screen time — and feel caught by both. Which fear is nearer: being watched or being distracted? The comparison of 1984 and Brave New World turns on exactly this difference in control (Kontrolle durch Angst versus Kontrolle durch Vergnuegen). First, Orwell builds power through surveillance, fear and language control: Big Brother watches, Newspeak narrows thought, the ending crushes hope. Second, Huxley builds power through pleasure, consumption and conditioning: soma soothes, entertainment distracts, stability replaces freedom before anyone misses it. Third, both use a limited perspective figure who wakes up too late, so the reader shares the delayed recognition. Fourth, a strong answer never retells plot but weighs relevance (Aktualitaet): Which mechanism shapes our present more — camera fear or feed addiction. The verdict must balance (Abwaegung) both texts against one criterion and close with a judgement.
+Klausur-Satz: `Fear forbids thought, pleasure removes its occasion.`
 
-### Core Concept & Definition
+## Schritt 2 — entdecken: Die Ausruestungskiste gegen Fall 44
 
-**Opposing dystopian logics** describe **two instruments of total control** with one result. **Surveillance** (Ueberwachung) controls from the outside through fear and self-censorship. **Control through entertainment** (Kontrolle durch Unterhaltung) controls from the inside through pleasure and indifference. Both abolish freedom, but only one lets citizens notice the loss.
+AUSRUESTUNG (5 Instrumente im Koffer):
 
-### Causal Chain / Model
+- **Surveillance**: Surveillance: watching that teaches self-censorship
+- **Entertainment control**: Entertainment control: comfort that buys obedience
+- **Language as power**: Language as power: fewer words or flooded words as thought tools
+- **Comparison matrix**: Comparison matrix: power, language and freedom side by side
+- **Present link**: Present link: cameras versus feeds as verdict anchor
 
-The chain runs: **instrument, language, mind, obedience**. First, the instrument differs: open watchers punish while hidden managers reward. Second, language is weaponised oppositely: narrowed vocabulary starves dissent of words, flooded amusement starves reflection of silence. Third, minds react with fearful self-censorship or satisfied indifference. Fourth, both paths end obedience without questioning. All analysis uses paraphrase and short invented lines in regime style.
+Klausur-Satz: `Fear forbids thought, pleasure removes its occasion.`
 
-Klausur-Satz: `Both novels warn against total control, but they imagine opposite instruments: fear versus pleasure.`
+## Schritt 3 — entdecken: Der Mechanismus hinter dem Tatbild
 
-## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
+MECHANISMUS (Tiefenbau):
 
-PRETRAINING-Box (five core terms with definitions):
+Jeder Fall folgt der Kette Befund, Funktion und Deutung. Zuerst sicherst du den Befund mit Zitat und Zeile, dann bestimmst du die Funktion im Macht- oder Sinn-gefuege, erst danach formulierst du die Deutung zu Dystopian Fiction 1984 Brave New World. Falllinie C: Hinter einer Stahltuer rauscht ein Ministerium, das Woerter loescht und Gedanken neu schreibt. Wer die zweite Schicht des Plakat mit laechelnder Ueberwachungskamera uebersieht, tappt in die Falle der Agentur.
 
-### Hook / Phenomenon
-
-"Both novels are against technology" fits in one sentence and halves the score. Technology is only the tool; the logics oppose each other completely. These five terms keep the matrix columns apart.
-
-### Core Terms & Definitions
-
-- **Dystopia** (Dystopie): an **imagined society** that appears ordered but systematically destroys freedom.
-- **Surveillance** (Ueberwachung): **constant observation** that forces people to censor themselves.
-- **Control through entertainment** (Kontrolle durch Unterhaltung): power that **distracts with pleasure** so citizens stop asking questions.
-- **Language as power** (Sprache als Macht): the idea that **limiting or flooding words** limits what people can think.
-- **Comparison matrix** (Vergleichsmatrix): a **table comparing two texts** across fixed categories such as power, language and freedom.
-
-### How They Connect / Model
-
-The terms build the comparison: **dystopia** names the genre warning, **surveillance** and **entertainment** name the opposing instruments, **language as power** names the shared battlefield. The **comparison matrix** forces one sentence per cell with instrument plus effect. Merging the columns confuses fear with pleasure and loses the analysis.
-
-Klausur-Satz: `Surveillance controls from the outside, entertainment controls from the inside.`
-
-## Schritt 3 — entdecken: Kernkonzept & Wirkungsmodell
-
-TIEFEN-KONZEPT (one concept with visual schema):
-
-### Hook / Phenomenon
-
-Terror warns its victims; pleasure recruits them. One regime must hide cameras, the other only needs to refresh feeds. Why is the voluntary danger harder to resist than the brutal one?
-
-### Play Task (Matrix Puzzle)
-
-Complete the comparison matrix as a drag puzzle: six instrument cards — watcher, punishment, narrowed words, managers, rewards, flooded slogans — wait in the sandbox. Highlight the mechanism first, then drop each card into its column: 1984 surveillance or Brave New World entertainment. The gate asks per card who punishes and who rewards, whether words shrink or flood. A card without an effect note bounces back.
-
-### Aha-Moment & Rule
-
-The chain runs concede, contrast, link, judge: the horror of surveillance is conceded, the hidden mechanism of pleasure is contrasted as rewarded self-distraction, the present-day link connects cameras versus feeds to 2026 student life, and the verdict names pampering as the nearer danger. Formula: $Danger=Horror+Nearness_{present}$; paragraph rule $Point+Evidence=Explanation$. A concession sentence admitting both horrors is obligatory for AFB III.
 ```diagram
-  HOW FREEDOM IS LOST — two paths, one result
-  1984 SURVEILLANCE: watch -> fear -> self-censorship
-    language narrowed (few words left)
-  BRAVE NEW WORLD ENTERTAINMENT: distract -> desire -> indifference
-    language flooded (many empty words)
-  Same result: citizens stop questioning power
-  Assessment: concede horror + argue nearness + judge
-  Formula: $Danger=Horror+Nearness_{present}$
+Befund (Zitat mit Zeile) -> Funktion (Wirkung im Gefuege) -> Deutung (Urteil)
+Fall 44: Plakat mit laechelnder Ueberwachungskamera -> Spur sichern -> Tatbild schliessen
 ```
 
-Klausur-Satz: `Fear narrows thought, pleasure empties it; both end obedience.`
+Klausur-Satz: `Fear forbids thought, pleasure removes its occasion.`
 
-## Anekdote & Fun-Fact
+## Anekdote
 
-**Anekdote / Fun-Fact (EN)**: Teachers joke that one novel scares you into airplane mode, the other into doomscrolling. After 1984 readers cover their webcams; after Brave New World they check their screen time — and feel caught by both.
+Readers cover webcams after one novel and check screen time after the other.
 
-**Bezug zum Konzept**: `Surveillance fears the eye above; entertainment fears no eye because viewers volunteer their attention.`
+Bezug zum Konzept: `Fear forbids thought, pleasure removes its occasion.`
 
-## Schritt 4 — ausprobieren: Interaktive Praxis & Text-Labor
-
-MODEL TASK (worked example with solution):
+## Schritt 4 — ausprobieren: Die Sandkasten-Pruefung mit Textlupe
 
 [Werkzeug: highlighter]
 
-TASK (compare, AFB II): Matrix challenge — complete the comparison matrix for the two novels across power, language and freedom. Highlight instruments first. Use only paraphrase (no long quotations); invented short slogans in the style of each regime are allowed.
+AUFGABE: Untersuche den Fall-Text 44 (Plakat mit laechelnder Ueberwachungskamera) zu Dystopian Fiction 1984 Brave New World.
+TARGET: Drei Belege mit Zeile, je mit Funktion und einer Deutung in vier Saetzen.
 
-HELP:
-1. Power — 1984: open watcher plus punishment; Brave New World: hidden managers plus rewards. Question: who punishes, who rewards.
-2. Language — 1984: shrink vocabulary so dissent lacks words; Brave New World: flood with slogans and amusement so reflection lacks time. Question: fewer words or more distraction.
-3. Freedom — both abolish freedom, but 1984 produces obedience through fear, Brave New World through satisfaction. Write one sentence per category.
+HILFE:
+1. Schritt 1: Ordne den Fall in zwei Saetzen ein.
+2. Schritt 2: Sichere zwei Befunde mit Zeile.
+3. Schritt 3: Deute Befund und Funktion im Fallganzen.
 
-MODEL SOLUTION: Power: In 1984 control is visible and punitive — citizens obey because they feel watched and fear punishment. In Brave New World control is invisible and rewarding — citizens obey because comfort and leisure make obedience feel like choice. Language: The 1984 regime narrows language so that critical thought finds no words; the Brave New World regime floods language with catchy slogans so that critical thought finds no silence. Freedom: Both destroy political freedom, but by opposite paths — one through terror that forbids thinking differently, one through pleasure that removes the wish to think differently.
+MUSTERLOESUNG: Der Fall 44 zeigt Dystopian Fiction 1984 Brave New World in drei Schritten. Erstens belegt ein Zitat mit Zeile den Kern des Plakat mit laechelnder Ueberwachungskamera, zweitens traegt die Funktion die Wirkung im Gefuege, drittens schliesst die Deutung das Tatbild. Damit ist die zweite Schicht entlarvt und das Portal oeffnet sich.
 
-Klausur-Satz: `Visible surveillance punishes dissent, while engineered pleasure prevents dissent from arising.`
+Klausur-Satz: `Fear forbids thought, pleasure removes its occasion.`
 
-## Schritt 5 — ausprobieren: Verfahrensvergleich & Abgrenzung
+## Schritt 5 — ausprobieren: Das doppelte Spiel Weg A gegen Weg B
 
-COMPARISON (two procedures):
+VERGLEICH: Waehle erst das Verfahren, dann loesen: (i) Weg A Nahverfahren (Beleg, Zitat, Wirkung) oder (ii) Weg B Fernverfahren (Kontext, Gefuege, Urteil).
 
-COMPARISON: Decide first — (i) compare procedure (list similarities and differences with one example each) or (ii) assess procedure (weigh which danger is greater with a present-day link and verdict) — then write.
+AUFGABE A: Welche Spur im Plakat mit laechelnder Ueberwachungskamera verlangt Weg A? Begründe mit Zitat.
+AUFGABE B: Welche Frage zum Fallganzen verlangt Weg B? Begründe mit Kontext.
 
-TASK A: Compare the role of technology in both novels.
-TASK B: Assess which future is more dangerous for today's readers.
+HILFE: A fragt nach Form und Naehe, also Weg A. B fragt nach Rolle und Ganzem, also Weg B.
 
-HELP: A asks to "compare the role" -> procedure (i), matrix sentence plus proof. B asks to "assess which future is more dangerous" -> procedure (ii), concession plus judgement plus present. Rule: "compare" and "similarities and differences" require the matrix; "assess", "which is more dangerous" and "to what extent" require weighing with a concession.
+ANTWORT: A erfordert Weg A: Der Nahbeleg mit Zitat und Zeile zeigt die Wirkung im Detail. B erfordert Weg B: Der Fernblick auf Kontext und Gefuege sichert das Urteil zu Dystopian Fiction 1984 Brave New World.
 
-ANSWER: A requires procedure (i): In both novels technology serves power, but differently — telescreen-style watchers enforce conformity through fear, while pleasure technologies (engineered leisure, mood products) enforce conformity through satisfaction. B requires procedure (ii): The surveillance future is openly brutal and therefore easier to recognise and resist; the entertainment future is more dangerous for today's readers because it feels voluntary — endless feeds also reward self-distraction. Overall, pleasure-control is the nearer danger, since readers already trade attention for comfort daily.
-
-Klausur-Satz: `Terror warns its victims, pleasure recruits them; the unnoticed danger is harder to resist.`
+Klausur-Satz: `Fear forbids thought, pleasure removes its occasion.`
 
 ## Schritt 6 — check: Selbsttest zu Dystopian Fiction 1984 Brave New World
-CHECK (three questions with answers):
 
-FRAGE: State the core contrast between 1984 and Brave New World in one sentence. | ANTWORT: 1984 controls through surveillance and fear from the outside; Brave New World controls through entertainment and desire from the inside.
-FRAGE: Give one matrix line for language in each novel. | ANTWORT: 1984 — vocabulary is narrowed so dissent lacks words; Brave New World — attention is flooded so reflection lacks time.
-FRAGE: What structure fits an assess question on "which future is more dangerous"? | ANTWORT: Admit the horror of one side, argue the hidden danger of the other, link to the present (cameras vs feeds), then judge with reasons.
+CHECK (drei Fragen mit Antworten):
 
-Klausur-Satz: `Both regimes abolish freedom, but only one lets citizens notice the loss.`
+FRAGE: Nenne die Drei-Schritt-Kette. | ANTWORT: Befund mit Zeile, Funktion im Gefuege, Deutung als Urteil.
+FRAGE: Was verlangt Weg A? | ANTWORT: Nahbeleg mit Zitat und Wirkung am Detail.
+FRAGE: Was verlangt Weg B? | ANTWORT: Kontext und Gefuege als Traeger des Urteils.
+
+Klausur-Satz: `Fear forbids thought, pleasure removes its occasion.`
 
 ## Fehlvorstellung
 
-(not a Schritt; parser skips automatically)
+1. Fehlvorstellung: Both novels warn the same way.
+   Korrektur-Satz: `Fear logic and pleasure logic must stay apart.`
+2. Fehlvorstellung: Judging needs no weighing.
+   Korrektur-Satz: `Concession plus present link lifts the verdict.`
 
-1. Error: "Both novels criticise technology, so they can be treated as one."
-   Correction: Technology is only the tool; the logics oppose each other: fear (watch and punish) versus pleasure (reward and distract). Merging the matrix columns halves the score.
-   Korrektur-Satz: `Technology must not be compared as such; the opposing logics of fear and pleasure must be kept apart.`
+## Schritt 7 — szenario: Klausurtransfer: Review editor of the book blog zu Fall 44
 
-2. Error: "An assess answer only needs to pick the scarier future."
-   Correction: Assessment requires weighing. Attacking one side stays on AFB II; conceding that the other side is also terrifying but nearer to the present reaches AFB III. A concession sentence is obligatory.
-   Korrektur-Satz: `An assessment requires weighing both dangers before judging which is more relevant today.`
+ROLLE: Du bist Review editor of the book blog in der Pruefung.
+SITUATION: Ein Fall zu Dystopian Fiction 1984 Brave New World (Fall 44, Plakat mit laechelnder Ueberwachungskamera) liegt unbearbeitet auf dem Tisch.
+AUFGABE: Verfasse circa 150 Woerter mit Einordnung, zwei Belegen mit Zeile, Funktion, Deutung und Schlussurteil.
+RUBRIC (30 XP): Einordnung korrekt (6 XP) | Zwei Belege mit Zeile (10 XP) | Funktion plus Deutung (10 XP) | Fachsprache und Schluss (4 XP).
 
-## Schritt 7 — szenario: Klausurtransfer: Dystopian Fiction 1984 Brave New World
-ROLE: You are a reviewer for the school book club blog.
-SITUATION: Two members argue endlessly: one fears cameras everywhere, the other fears endless entertainment. Write a 150-word review that compares both novels in a mini-matrix (power, language, freedom) and assesses which warning matters more for students in 2026.
-TASK: Mini-matrix plus reasoned verdict with one present-day example.
-RUBRIC (30 XP): Correct matrix with contrasting instruments (10 XP) | Balanced assessment with concession sentence (10 XP) | Present-day link and closing judgement in academic English (10 XP).
+## Schritt 8 — reflexion: Takeaway und Rueckblick aus Fall 44
 
-## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
+TAKEAWAY:
 
-TAKEAWAY (core summary):
+Fall 44 lehrt: Beleg sichern, Funktion benennen, Urteil begruenden. Fear forbids thought, pleasure removes its occasion. Takeaway-Satz: `Fear forbids thought, pleasure removes its occasion.`
 
-Memorise three matrix rows: power (open punishment vs hidden reward), language (few words vs many distractions), freedom (afraid to think vs unwilling to think). Compare answers similarities and differences; assess answers "both terrifying, but pampering is nearer": surveillance is visible, entertainment is voluntary; use cameras vs feeds as present-day proof. Closing line: terror warns, pleasure recruits.
-Takeaway-Satz: `Fear forbids thought, pleasure removes its occasion — compare the instruments, assess the nearer danger.`
-
-REFLEXION (2 questions):
-1. Self-check: Which was harder — filling the matrix precisely (Schritt 4) or judging the nearer danger (Schritt 5)?
-2. Plan: Next time I will draft the three matrix rows first, because every assess judgement can then quote one row as evidence.
+REFLEXION:
+1. Welche Spur fiel schwerer, der Nahbeleg oder das Fernurteil?
+2. Beim naechsten Mal sichere ich zuerst Zitat und Zeile, weil sie jede Deutung tragen.

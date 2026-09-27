@@ -13,118 +13,130 @@ version: Lesson-v3
 
 # Lernreise: American Dream Myth and Reality (L1, Ziel Klausur)
 
-<!-- Lesson v3: Schritt 1-8 feste Struktur; Fehlvorstellung zwischen Schritt 6 und 7 (Parser skip); [Werkzeug: <id>] interaktiv; Gating: check/szenario nicht bestanden = Weiter grau; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
+<!-- Campaign: Detektive Fal 49 -->
+## Schritt 1 — entdecken: Der versiegelte Umschlag aus der Archivnacht
 
-## Schritt 1 — entdecken
+ZIELE (3 goals in 15 minutes, read Chinese first, then English):
 
-ZIELE (3 Ziele, nach 15 Minuten erreichbar):
+1. 中文：能把第49号案件（66号公路明信片）按背景、方法、判断拆开。
+   English: Place case 49 in context, method and judgement.
+2. 中文：每个论断配引文出处并说清效果。
+   English: Support each claim with quotation and effect.
+3. 中文：按题型写出权衡判断。
+   English: Judge with reasons in the right task type.
 
-1. You can define $Dream = opportunity + mobility + success$ and outline its history.
-2. You can analyse $Myth = promise - access$ in texts and statistics.
-3. You can evaluate $Reality = data + voice + bias$ in a comment (AFB II).
+HOOK:
 
-EINSTIEG: In 1931 James Truslow Adams promised a land where $life = better + richer + fuller$. In 1963 Martin Luther King demanded the promissory note of $equality$. Between promise and protest lies the American classroom question: $Dream = fact \lor fiction$.
+深夜，跨时空文案侦探社的蓝灯又亮了。搭档把一只密封信封推到你面前：这是第49号案件，一份66号公路明信片。表面看只是一段美国梦神话，但灯光下浮现出第二层痕迹——有人删改、夸大或偷换了关键信息。你们作为思想特工与文本侦探，必须在十五分钟内锁定三个目标：找证据、说功能、下判断，每一步都要有出处支撑。下一道时空门只为证据链完整的人打开，搭档已经在催你了，线索正在变冷。
 
-Klausur-Satz: `The Dream promises mobility, reality rations access.`
+English hook: Agent Theo Wort drops case file 49 (Postkarte von Route 66 mit Riss) on your desk. Falllinie D: Das Archiv der Agentur meldet einen Riss in der Zeit, durch den ein Text in unsere Gegenwart gefallen ist.
 
-## Schritt 2 — entdecken
+Klausur-Satz: `The dream inspires and excludes: myth and measure belong together.`
 
-GRUNDBEGRIFFE (5 Begriffe):
+## Schritt 2 — entdecken: Die Ausruestungskiste gegen Fall 49
 
-- **American Dream**: $Dream = work + reward$, belief in $mobility$ through $effort$.
-- **Self-made myth**: $Success = effort - background$, blind to $race + class + gender$.
-- **Mobility rate**: $Mobility = P(child > parent)$, lower in the $US$ than in $EU$ averages.
-- **Systemic barrier**: $Barrier = race + zip + wealth$, measurable in $income + school + health$.
-- **Counter-narrative**: $Voice = experience - myth$, texts from $margins$ against $mainstream$.
+装备盒（5件，先读中文，再背英文）：
 
-Klausur-Satz: `Merit explains effort, background explains odds.`
+- 中文点拨：美国梦神话之1号工具。
+  English: **Promise: rise through effort as founding story**
+- 中文点拨：美国梦神话之2号工具。
+  English: **Frontier echo: new land as second chance**
+- 中文点拨：美国梦神话之3号工具。
+  English: **Cracks: class, race and gender as reality check**
+- 中文点拨：美国梦神话之4号工具。
+  English: **Self-made image: biography as sales pitch**
+- 中文点拨：美国梦神话之5号工具。
+  English: **Revised dream: dignity and access beyond wealth**
 
-## Schritt 3 — entdecken
+Klausur-Satz: `The dream inspires and excludes: myth and measure belong together.`
 
-KONZEPT (ein Konzept plus ein Textdiagramm):
+## Schritt 3 — entdecken: Der Mechanismus hinter dem Tatbild
 
-The Dream works as $narrative = symbol + story + statistic$. Symbols like $house + car + degree$ sell $hope$; stories like $rags + riches$ sell $proof$; statistics with $Gini \uparrow + mobility \downarrow$ sell $doubt$. Analysis links $device + data$: $Metaphor + gap$ reveals $myth - reality$.
+中文深层解构：美国梦神话的核心链是证据、效果、判断。第49号案件（66号公路明信片）的伪装层就藏在链条中间。
+
+English: Quotation plus effect equals judgement on American Dream Myth and Reality.
 
 ```diagram
-    Myth side:
-    [Declaration] + [Hollywood] + [Ads] -> Dream = hope
-    Reality side:
-    [Gini] + [Segregation] + [Debt] -> Access = gap
-    Classroom bridge:
-    Text device + Data point = Analysis
-    Formula: Myth - Access = Critique
+Evidence (quotation) -> Effect (function) -> Judgement (verdict)
+Case 49
 ```
 
-Klausur-Satz: `Symbols promise, numbers qualify.`
+Klausur-Satz: `The dream inspires and excludes: myth and measure belong together.`
 
-## Schritt 4 — ausprobieren
+## Anekdote
 
-BEISPIEL (Musteraufgabe mit Werkzeug):
+中文解读：美国梦神话里藏着侦探的耐心：每个细节都是时空门的钥匙。
+
+English: A postcard from Route 66 arrived torn, and the class debated the crack.
+
+Bezug zum Konzept: `The dream inspires and excludes: myth and measure belong together.`
+
+## Schritt 4 — ausprobieren: Die Sandkasten-Pruefung mit Textlupe
 
 [Werkzeug: highlighter]
 
-AUFGABE (analyse, AFB II): Analyse how a speech excerpt uses the Dream as $promise = hope + duty$ and where reality intrudes.
+中文任务：分析第49号案文本（66号公路明信片）。
+English TASK: Examine case 49 (Postkarte von Route 66 mit Riss) on American Dream Myth and Reality.
+TARGET: Three quotations, each with effect and judgement in four sentences.
 
-HILFE:
-1. Schritt 1: Mark $metaphor + repetition + pronouns$ as $devices$.
-2. Schritt 2: Mark $gap = income + school + race$ as $reality$.
-3. Schritt 3: Link $device + gap$ to $effect = inclusion \lor exclusion$.
+HILFE（中文在前）：
+1. 中文：两句交代背景。English: Place the case in two sentences.
+2. 中文：锁两个证据。English: Secure two quotations.
+3. 中文：效果加判断。English: Add effect and judgement.
 
-MUSTERLOESUNG: The speaker repeats $we + will + free$ and frames success as $effort = reward$. Metaphors of $road + door + light$ open the $Dream = opportunity$. Yet data on $debt + zip + colour$ show $access \ne equal$. The effect is double: $hope + pressure$; hope mobilises, pressure blames $victims$ for $barriers$. Conclusion: $Myth - Access = Critique$.
+MUSTERLOESUNG: 中文示范：背景一句，证据加效果两句，判断一句。
+English MODEL: Case 49 shows American Dream Myth and Reality in three moves with quotation, effect and judgement; the cover is blown.
 
-Klausur-Satz: `Device opens the door, data checks the lock.`
+Klausur-Satz: `The dream inspires and excludes: myth and measure belong together.`
 
-## Schritt 5 — ausprobieren
+## Schritt 5 — ausprobieren: Das doppelte Spiel Weg A gegen Weg B
 
-VERGLEICH (Verfahren A gegen Verfahren B):
+VERGLEICH（中文先行）：先选路再做题：【选概念】(i) Weg A 近路（引文细节）还是 (ii) Weg B 远路（背景判断）。
+English: Choose the path first (close Way A or distant Way B), then write.
 
-VERGLEICH: Waehle zuerst das Verfahren — (i) Text-Verfahren (mit $tone + device + voice$ argumentieren) oder (ii) Data-Verfahren (mit $rate + gap + trend$ argumentieren) — dann loesen.
+TASK A（中文：哪条线索走近路？）: Which trace needs Way A?
+TASK B（中文：哪个整体问题走远路？）: Which whole-case question needs Way B?
 
-AUFGABE A: Assess a Hollywood clip from $rags$ to $riches$.
-AUFGABE B: Assess mobility data with $P(top | bottom) < 10\,\%$.
+HILFE：细节问选近路Way A，整体问选远路Way B。【选概念看题干：compare列异同，assess做权衡。】
 
-HILFE: A nennt Film und Figur, also Verfahren (i). B nennt Quote und Trend, also Verfahren (ii).
+中文答案：A近路靠引文，B远路靠背景。
+English ANSWER: A takes Way A with close quotation, B takes Way B with context on American Dream Myth and Reality.
 
-ANTWORT: A erfordert Verfahren (i): $Montage + music + close$-$up$ sell $effort = fate$. B erfordert Verfahren (ii): $Rate + Gini + debt$ prove $birth > effort$ for $odds$.
+Klausur-Satz: `The dream inspires and excludes: myth and measure belong together.`
 
-Klausur-Satz: `Stories move hearts, statistics move judgements.`
+## Schritt 6 — check: Selbsttest zu American Dream Myth and Reality
 
-## Schritt 6 — check
+CHECK (drei Fragen mit Antworten):
 
-CHECK (Selbsttest, 3 Fragen):
+中文自测：
+FRAGE: 三步链是什么？ | ANTWORT: Quotation, effect, judgement.
+FRAGE: 近路要什么？ | ANTWORT: Close quotation with effect.
+FRAGE: 远路要什么？ | ANTWORT: Context as carrier of judgement.
 
-FRAGE: What is the Dream formula? | ANTWORT: $Dream = opportunity + mobility + success$ through $effort$.
-FRAGE: What is the myth gap? | ANTWORT: $Myth - Access = race + class + gender$ as $barriers$.
-FRAGE: How to evaluate fairly? | ANTWORT: $Judgement = text + data + voice$, never $anecdote$ alone.
-
-Klausur-Satz: `Hope plus evidence equals fair critique.`
+Klausur-Satz: `The dream inspires and excludes: myth and measure belong together.`
 
 ## Fehlvorstellung
 
-(kein Schritt, Parser skippt diesen Abschnitt)
+1. 中文误解：美国梦神话只看表面。
+   中文纠偏：引文加效果才是得分点。
+   Korrektur-Satz: `Myth guides action even where it fails.`
+2. 中文误解：美国梦神话只看表面。
+   中文纠偏：引文加效果才是得分点。
+   Korrektur-Satz: `Measured hope outlasts blind praise.`
 
-1. Fehlvorstellung: One success story proves the Dream for all.
-   Korrektur: $N = 1$ proves $possibility$, not $probability$; rates need $N \gg 1$.
-   Korrektur-Satz: `Anecdote illustrates, statistics demonstrate.`
-2. Fehlvorstellung: Critique of the Dream means hate of America.
-   Korrektur: Critique tests $promise = reality$ to improve $access$; loyalty can be $honest$.
-   Korrektur-Satz: `Measuring the gap defends the promise.`
+## Schritt 7 — szenario: Klausurtransfer: Transatlantic correspondent zu Fall 49
 
-## Schritt 7 — szenario
+ROLLE（中文）：你是Transatlantic correspondent，负责审稿。
+English ROLE: You are Transatlantic correspondent.
+SITUATION: Case 49 waits on your desk.
+TASK（中文）：150词左右，含背景、证据、权衡判断。
+RUBRIC (30 XP): Context (6 XP) | Quotations (10 XP) | Effect plus judgement (10 XP) | Register (4 XP).
 
-ROLLE: You are a student columnist.
-SITUATION: Your school paper claims $Anyone = rich$ if $effort = high$.
-AUFGABE (evaluate, AFB III): Evaluate the claim in a coherent comment (ca. 150 words) with text example, data and counter-voice plus own judgement.
-RUBRIC (30 XP): Dream defined with $formula$ (10 XP) | Text plus data linked (10 XP) | Counter-voice plus judgement (5 XP) | Coherent language (5 XP).
+## Schritt 8 — reflexion: Takeaway und Rueckblick aus Fall 49
 
-## Schritt 8 — reflexion: Takeaway & Reflexion
+中文总结：第49号案件教会我们：先锁引文，再说效果，最后判断。
+English TAKEAWAY: Secure quotation, name effect, judge with reasons. `The dream inspires and excludes: myth and measure belong together.`
 
-TAKEAWAY: Remember $hope + proof = analysis$. Test $story$ with $statistic$, enrich $number$ with $voice$. Anchor: $Dream - Access = Task$.
-
-REFLEXION:
-1. What was harder — $device$-spotting (Schritt 4) or $data$-reading (Schritt 5)?
-2. Plan: Next time I collect $device + gap + voice$ first, then I judge.
-
-Anekdote (DE): When Horatio Alger wrote $Ragged Dick = street + luck + work$ in 1868, readers bought $hope = cents$. A century later scholars counted $mobility = low$ and kept the books as $myth + mirror$ — cheap novels became expensive evidence.
-
-Bezug: `Alger shows: Bestseller plus census equals classroom truth.`
+REFLEXION（中文在前）：
+1. 中文：近路和远路哪个更难？English: Which was harder, close quotation or distant judgement?
+2. 中文：下次先划引文。English: Next time I secure quotations first.

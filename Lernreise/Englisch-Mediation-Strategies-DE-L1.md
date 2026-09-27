@@ -13,153 +13,111 @@ version: Lesson-v3
 
 # Lernreise: Mediation-Strategien: Register und Kulturtransfer (L1, Ziel Klausur)
 
-<!-- Lesson v3 architecture: Schritte 1 to 8 fixed; Fehlvorstellung between Schritt 6 and 7 (parser skips, not counted); embedded [Werkzeug: <id>]; gating: check/szenario failed = Weiter disabled; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
+<!-- Campaign: Detektive Fal 34 -->
+## Schritt 1 — entdecken: Der versiegelte Umschlag aus der Archivnacht
 
-## Schritt 1 — entdecken: Ziele & Phänomen-Einstieg
+ZIELE (3 Ziele, nach 15 Minuten erreichbar):
 
-OBJECTIVES (three measurable goals of this lesson):
+1. Du ordnest Fall 34 (Speisekarten-Uebersetzung mit Fussnote) in Kontext, Verfahren und Deutung ein.
+2. Du belegst jede Aussage zu Mediation-Strategien: Register und Kulturtransfer mit Zitat und Zeile und benennst die Funktion.
+3. Du faellst ein Urteil im passenden Anforderungsbereich.
 
-1. You can judge the source **register** (Register) and lock the target register, avoiding formal-colloquial mixing within one text.
-2. You can handle **culture-bound terms** without equivalents such as Abitur or Betriebsrat by keeping the original plus one explanatory gloss.
-3. You can use **back-translation** (Rueckuebersetzung) to check completeness, accuracy and register while keeping DE-to-EN as the exam direction.
+HOOK:
 
-### Hook / Phenomenon
+Mitten in der Nacht flackert das Blaulicht der Agentur fuer Texte und Gedanken ueber den leeren Schreibtischen, und Partner Theo Wort legt einen versiegelten Umschlag auf deinen Platz. Seit Wochen jagt ihr als Gedanken-Agent an der Seite deines Text-Detektivs durch die Jahrhunderte, und jede geloeste Spur oeffnet ein neues Portal in der Zeit. Heute geht es um Mediation-Strategien: Register und Kulturtransfer. Falllinie D: Das Archiv der Agentur meldet einen Riss in der Zeit, durch den ein Text in unsere Gegenwart gefallen ist. Im Umschlag steckt Fall 34: ein Speisekarten-Uebersetzung mit Fussnote. Kaum haeltst du das Stueck ins Licht, faellt dir eine zweite Schicht auf: Jemand hat die Botschaft frisiert, verkuerzt oder verdreht, und nur wer Beleg, Funktion und Deutung sauber trennt, kann die Manipulation entlarven. Das naechste Portal oeffnet sich nur, wenn du drei Ziele in fuenfzehn Minuten schaffst und jede Behauptung mit Zeile und Wirkung belegst. Theo Wort gru belt schon ungeduldig, denn die Spur wird kalt.
 
-After the Abitur reads smoothly — for Germans. A British reader stops and wonders what examination you mean. When does faithful copying become failed communication? At exactly the moment a culture-bound term passes unexplained. Mediation strategies (Mittlungsstrategien) exist for this gap between languages. First, paraphrase replaces the term with its function: Abitur becomes final school-leaving exams qualifying for university. Second, exemplification adds a concrete anchor: similar to A levels but centrally set in most states. Third, reduction drops irrelevant detail — dates, paragraphs, administrative names — when the task asks for an overview rather than a record. Fourth, restructuring reorders the German original into the English reading logic: result first, background second, action required last. Fifth, every strategy must stay visible through polite bridges like In other words or This means that. Strategy is not decoration; it is the scored procedure.
+Klausur-Satz: `Good mediation serves the reader: short, clear and culturally awake.`
 
-### Core Concept & Definition
+## Schritt 2 — entdecken: Die Ausruestungskiste gegen Fall 34
 
-**Cultural glossing** (Kulturerklaerung) is the technique of **keeping the original term plus a short explanation** where no equivalent exists. It preserves the **German context** while securing **reader comprehension**. The standard form is an apposition such as "the Abitur, the German school-leaving exam". Forcing translation erases culture; bare copying blocks understanding.
+AUSRUESTUNG (5 Instrumente im Koffer):
 
-### Causal Chain / Model
+- **Selection**: Selection: choosing content for the target reader
+- **Compression**: Compression: shortening without losing the core
+- **Paraphrase**: Paraphrase: same sense in simpler words
+- **Register shift**: Register shift: formal source into reader-friendly tone
+- **Cultural bridge**: Cultural bridge: footnote explaining foreign context
 
-The chain runs: **detect, keep, gloss, check**. First, culture words such as Abitur or Betriebsrat are marked before drafting. Second, the original is kept to preserve institutional identity. Third, a gloss with apposition or relative clause makes the term readable for outsiders. Fourth, back-translation renders the gloss into German to verify that no attitude or number was distorted. Comprehension without erasure is the goal.
+Klausur-Satz: `Good mediation serves the reader: short, clear and culturally awake.`
 
-Klausur-Satz: `When a term has no equivalent in the target language, I keep the original word and add a short explanation, because a mediation must be understood by its reader, not translated word for word.`
+## Schritt 3 — entdecken: Der Mechanismus hinter dem Tatbild
 
-## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
+MECHANISMUS (Tiefenbau):
 
-PRETRAINING-Box (five core terms with definitions):
+Jeder Fall folgt der Kette Befund, Funktion und Deutung. Zuerst sicherst du den Befund mit Zitat und Zeile, dann bestimmst du die Funktion im Macht- oder Sinn-gefuege, erst danach formulierst du die Deutung zu Mediation-Strategien: Register und Kulturtransfer. Falllinie D: Das Archiv der Agentur meldet einen Riss in der Zeit, durch den ein Text in unsere Gegenwart gefallen ist. Wer die zweite Schicht des Speisekarten-Uebersetzung mit Fussnote uebersieht, tappt in die Falle der Agentur.
 
-### Hook / Phenomenon
-
-A formal report turns into slang halfway through, and nobody notices while writing. Register drift is invisible in the draft and glaring in the mark scheme. These five terms make tone checkable.
-
-### Core Terms & Definitions
-
-- **Register choice** (Registerwahl): explicit decision on **formal versus semi-formal tone**; English "you" stays neutral while German du or Sie must be resolved.
-- **Cultural explanation** (Kulturerklaerung): **keeping the original plus a short gloss** where the target language lacks the concept.
-- **Back-translation** (Rueckuebersetzung): rendering the **English output back into German** to expose gaps and distortions.
-- **Omission and distortion** (Auslassung and Verfaelschung): the **two hard errors** of the reverse check; attitude words and numbers fail most often.
-- **Cultural equivalence** (kulturelle Aequivalenz): **direct translation only** where both languages share the underlying institution.
-
-### How They Connect / Model
-
-The terms form a control loop: **register choice** locks the tone before drafting, **cultural explanation** secures alien terms during drafting, **back-translation** tests the result after drafting. **Omission and distortion** name what the test finds, **cultural equivalence** limits where literal transfer is allowed. Without the loop, errors stay invisible until marking.
-
-Klausur-Satz: `I translate my English mediation back into German and compare it with the source, because that is the only way I can see what I actually left out or changed.`
-
-## Schritt 3 — entdecken: Kernkonzept & Wirkungsmodell
-
-TIEFEN-KONZEPT (one concept with visual schema):
-
-### Hook / Phenomenon
-
-English has no du or Sie, yet every German text chooses one. Where does politeness go when "you" erases the difference? It must be rebuilt — or the tone collapses.
-
-### Play Task (Register-Lock Puzzle)
-
-Crack the register lock in three moves. Move one: judge the source — formal report or peer post — and lock the English tone (formal bans contractions). Move two: gloss the culture cards — Abitur, Freiwilliges Soziales Jahr, Betriebsrat — with keep-plus-gloss inside the locked tone. Move three: back-translate privately (EN-to-DE) and hunt three failures: omission, distortion, register drift. Each failure found before submission scores a control point.
-
-### Aha-Moment & Rule
-
-The chain runs judge, lock, gloss, verify: the source tone is judged, the English register is locked, culture terms receive keep-plus-gloss treatment, back-translation checks omission, distortion and drift. Formula: $Register=Source_{tone}+Reader_{expectation}$. Direction stays fixed: EN-to-DE controls privately while DE-to-EN scores publicly. Formal opening plus slang ending counts as drift.
 ```diagram
-  STRATEGIES — register plus culture plus control
-  German source -> judge tone (formal report? forum post?)
-    -> lock English register (formal: no contractions)
-    -> gloss culture (Abitur -> "the Abitur, the exam")
-    -> back-translate EN to DE (private check)
-    -> compare: omission? distortion? register drift?
-  Rule: DE-to-EN produces, EN-to-DE only controls.
-  Formula: $Register=Source_{tone}+Reader_{expectation}$
+Befund (Zitat mit Zeile) -> Funktion (Wirkung im Gefuege) -> Deutung (Urteil)
+Fall 34: Speisekarten-Uebersetzung mit Fussnote -> Spur sichern -> Tatbild schliessen
 ```
 
-Klausur-Satz: `Register anchoring and cultural explanation turn a correct mediation into an appropriate one, while back-translation reveals the omissions and distortions I cannot see while writing.`
+Klausur-Satz: `Good mediation serves the reader: short, clear and culturally awake.`
 
-## Anekdote & Fun-Fact
+## Anekdote
 
-**Anekdote / Fun-Fact (EN)**: English once had a du-or-Sie distinction like German. "Thou" addressed one familiar person, "you" the polite or plural case. During the Early Modern period "thou" vanished from the standard and "you" took both functions. Translating into English today therefore requires a choice that English itself no longer marks.
+A mediator once saved a menu with one footnote about spices.
 
-**Bezug zum Konzept**: Because English lost its own du-or-Sie distinction, the register must be chosen explicitly and kept consistent rather than inherited automatically from the German source.
+Bezug zum Konzept: `Good mediation serves the reader: short, clear and culturally awake.`
 
-## Schritt 4 — ausprobieren: Interaktive Praxis & Text-Labor
+## Schritt 4 — ausprobieren: Die Sandkasten-Pruefung mit Baukasten
 
-MODEL TASK (worked example with solution):
+[Werkzeug: lego]
 
-[Werkzeug: highlighter]
+AUFGABE: Untersuche den Fall-Text 34 (Speisekarten-Uebersetzung mit Fussnote) zu Mediation-Strategien: Register und Kulturtransfer.
+TARGET: Drei Belege mit Zeile, je mit Funktion und einer Deutung in vier Saetzen.
 
-TASK (explain, AFB II): Strategy puzzle — the German source text below is a formal newspaper article. Mediate one paragraph into English for a British reader, then highlight your two strategy decisions (register and cultural term) and explain them.
+HILFE:
+1. Schritt 1: Ordne den Fall in zwei Saetzen ein.
+2. Schritt 2: Sichere zwei Befunde mit Zeile.
+3. Schritt 3: Deute Befund und Funktion im Fallganzen.
 
-> Source text (German, original practice text): "Nach dem Abitur entscheiden sich viele junge Menschen fuer ein Freiwilliges Soziales Jahr. Sie arbeiten ein Jahr lang in Krankenhaeusern oder sozialen Einrichtungen und erhalten ein Taschengeld. Der Betriebsrat hat in diesem Zusammenhang kuerzlich bessere Bedingungen gefordert."
+MUSTERLOESUNG: Der Fall 34 zeigt Mediation-Strategien: Register und Kulturtransfer in drei Schritten. Erstens belegt ein Zitat mit Zeile den Kern des Speisekarten-Uebersetzung mit Fussnote, zweitens traegt die Funktion die Wirkung im Gefuege, drittens schliesst die Deutung das Tatbild. Damit ist die zweite Schicht entlarvt und das Portal oeffnet sich.
 
-HELP:
-1. Fix the source register first — a formal newspaper article requires formal English without contractions.
-2. Mark culture words (Abitur, Freiwilliges Soziales Jahr, Betriebsrat) and decide per word: keep plus explain.
-3. Write the transfer, then justify in two sentences why you chose the register and how you handled the culture words.
+Klausur-Satz: `Good mediation serves the reader: short, clear and culturally awake.`
 
-MODEL SOLUTION: Mediation: After the Abitur, the German school-leaving examination, many young people complete a "Freiwilliges Soziales Jahr", a voluntary social year in hospitals or social institutions for pocket money. The works council ("Betriebsrat") recently demanded better conditions. Strategy: First, I kept the formal register of the source, using complete sentences and no contractions, because the target reader expects a formal report. Second, I kept each German culture word and added a short apposition, so a British reader without the German system background can still follow.
+## Schritt 5 — ausprobieren: Das doppelte Spiel Weg A gegen Weg B
 
-Klausur-Satz: `I kept the formal register of the source and explained every culture-specific term in a short apposition, because appropriateness and comprehensibility matter more than literal accuracy.`
+VERGLEICH: Waehle erst das Verfahren, dann loesen: (i) Weg A Nahverfahren (Beleg, Zitat, Wirkung) oder (ii) Weg B Fernverfahren (Kontext, Gefuege, Urteil).
 
-## Schritt 5 — ausprobieren: Verfahrensvergleich & Abgrenzung
+AUFGABE A: Welche Spur im Speisekarten-Uebersetzung mit Fussnote verlangt Weg A? Begründe mit Zitat.
+AUFGABE B: Welche Frage zum Fallganzen verlangt Weg B? Begründe mit Kontext.
 
-COMPARISON (two procedures):
+HILFE: A fragt nach Form und Naehe, also Weg A. B fragt nach Rolle und Ganzem, also Weg B.
 
-COMPARISON: Decide first — (i) production procedure (DE-to-EN, the exam direction: write the English target text) or (ii) control procedure (EN-to-DE, back-translation exposing gaps) — then work.
+ANTWORT: A erfordert Weg A: Der Nahbeleg mit Zitat und Zeile zeigt die Wirkung im Detail. B erfordert Weg B: Der Fernblick auf Kontext und Gefuege sichert das Urteil zu Mediation-Strategien: Register und Kulturtransfer.
 
-TASK A: Write an English blog post on German school festivals for a British exchange partner.
-TASK B: Check a finished English blog post against the German source for complete transfer.
-
-HELP: A requires the production direction DE-to-EN -> procedure (i). B requires back-translation EN-to-DE for control, not as an exam direction -> procedure (ii). Rule: "produce the English draft" means DE-to-EN production; "check the English draft" means EN-to-DE control.
-
-ANSWER: A requires procedure (i): I work DE-to-EN, select the blog-relevant aspects, control register (semi-formal for a young audience) and gloss culture words such as "Schuetzenfest" with a short apposition. B requires procedure (ii): I render my English text back into German without looking at the source, then compare point by point. I watch three error types: omission (a point missing), distortion (attitude or number wrong) and register drift (unexpectedly colloquial tone). Procedure (ii) stays a private tool; the Abitur direction remains DE-to-EN and back-translation never enters the answer.
-
-Klausur-Satz: `German into English is the examination direction, while English into German is only my private control tool for spotting omissions, distortions and register drift.`
+Klausur-Satz: `Good mediation serves the reader: short, clear and culturally awake.`
 
 ## Schritt 6 — check: Selbsttest zu Mediation-Strategien: Register und Kulturtransfer
-CHECK (three questions with answers):
 
-FRAGE: Why can register not transfer automatically? | ANTWORT: Because the languages are asymmetric: English "you" is neutral while German must choose du or Sie; register must therefore be set consciously and uniformly.
-FRAGE: How is a culture word without an equivalent handled? | ANTWORT: Keep the original and add a short gloss, for example "the Abitur, the German school-leaving examination".
-FRAGE: Which three error types does back-translation expose? | ANTWORT: Omission (missing points), distortion (wrong attitude or numbers) and register drift (wrong tone).
+CHECK (drei Fragen mit Antworten):
 
-Klausur-Satz: `Back-translation checks completeness, accuracy and register, but it is a control tool and never replaces the German-into-English examination text.`
+FRAGE: Nenne die Drei-Schritt-Kette. | ANTWORT: Befund mit Zeile, Funktion im Gefuege, Deutung als Urteil.
+FRAGE: Was verlangt Weg A? | ANTWORT: Nahbeleg mit Zitat und Wirkung am Detail.
+FRAGE: Was verlangt Weg B? | ANTWORT: Kontext und Gefuege als Traeger des Urteils.
+
+Klausur-Satz: `Good mediation serves the reader: short, clear and culturally awake.`
 
 ## Fehlvorstellung
 
-(not a Schritt; parser skips automatically)
+1. Fehlvorstellung: Translation means everything.
+   Korrektur-Satz: `Selection for purpose beats full copying.`
+2. Fehlvorstellung: Formal always fits.
+   Korrektur-Satz: `Register follows the reader, not the source.`
 
-1. Error: "Culture words can simply be copied; readers will understand."
-   Correction: Target readers normally lack German background. Abitur, FSJ or Betriebsrat without a gloss transfer nothing. Keep the original plus one gloss — German context preserved, reader still guided.
-   Korrektur-Satz: `A culture-specific term must be kept and explained, because a reader without the cultural background cannot understand it otherwise.`
+## Schritt 7 — szenario: Klausurtransfer: Exchange coordinator zu Fall 34
 
-2. Error: "Since EN-to-DE was practised, it may enter the exam."
-   Correction: The written Abitur direction is German source to English target. Writing the reverse answers the wrong question; EN-to-DE serves only post-draft control.
-   Korrektur-Satz: `The written exam requires German into English; English into German is only a private check, and using it in the exam would answer the wrong question.`
+ROLLE: Du bist Exchange coordinator in der Pruefung.
+SITUATION: Ein Fall zu Mediation-Strategien: Register und Kulturtransfer (Fall 34, Speisekarten-Uebersetzung mit Fussnote) liegt unbearbeitet auf dem Tisch.
+AUFGABE: Verfasse circa 150 Woerter mit Einordnung, zwei Belegen mit Zeile, Funktion, Deutung und Schlussurteil.
+RUBRIC (30 XP): Einordnung korrekt (6 XP) | Zwei Belege mit Zeile (10 XP) | Funktion plus Deutung (10 XP) | Fachsprache und Schluss (4 XP).
 
-## Schritt 7 — szenario: Klausurtransfer: Mediation-Strategien: Register und Kulturtransfer
-ROLE: You are a student in a German-British exchange project explaining an unknown topic to the British partner school.
-SITUATION: The partner school prepares a volunteering debate. From a formal German newspaper article (invented for this task) on the Freiwilliges Soziales Jahr write an English text for the student paper (ca. 150 words). Observe both strategies: register (formal article to appropriate English) and culture words (FSJ, Taschengeld, Seminartage).
-RUBRIC (30 XP): Conscious consistent register choice with reasons (5 XP) | Correct treatment of at least two culture words with glosses (10 XP) | Complete transfer of relevant aspects without omission or distortion (10 XP) | Short follow-up control — naming at least one passage verified by back-translation (5 XP).
+## Schritt 8 — reflexion: Takeaway und Rueckblick aus Fall 34
 
-## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
+TAKEAWAY:
 
-TAKEAWAY (core summary):
+Fall 34 lehrt: Beleg sichern, Funktion benennen, Urteil begruenden. Good mediation serves the reader: short, clear and culturally awake. Takeaway-Satz: `Good mediation serves the reader: short, clear and culturally awake.`
 
-Two strategies lift mediation from pass to top: register anchoring and cultural glossing. Judge the source register before drafting, lock the target register and keep it uniform; gloss culture-bound terms with keep-plus-explain instead of forcing translation. After drafting, back-translate for completeness, accuracy and register. Direction stays fixed: the Abitur tests DE-to-EN; EN-to-DE remains a private check. A good mediation reads smoothly for readers without German cultural background.
-Takeaway-Satz: `High-scoring mediation controls register, explains culture-specific terms and uses back-translation as a private check, while the exam direction stays German into English.`
-
-REFLEXION (2 questions):
-1. Self-check: Which strategy was harder to apply — keeping the register consistent (Schritt 4) or explaining culture-specific terms without sounding clumsy (Schritt 5)?
-2. Plan: Next time I will list every culture-specific term before drafting and decide for each whether it needs an explanation, so that I do not notice the gap only after finishing.
+REFLEXION:
+1. Welche Spur fiel schwerer, der Nahbeleg oder das Fernurteil?
+2. Beim naechsten Mal sichere ich zuerst Zitat und Zeile, weil sie jede Deutung tragen.

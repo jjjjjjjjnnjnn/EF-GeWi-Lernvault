@@ -13,142 +13,130 @@ version: Lesson-v3
 
 # Lernreise: Characterisation: Direct and Indirect Techniques (L1, Ziel Klausur)
 
-<!-- Lesson v3 9步制架构：Schritt 1至8固定结构；Fehlvorstellung 夹在 Schritt 6 与 7 之间（Parser 自动跳过，不占步数）；支持内嵌 [Werkzeug: <id>] 交互教具；Gating: check/szenario 未过 = Weiter 置灰；XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
+<!-- Campaign: Detektive Fal 47 -->
+## Schritt 1 — entdecken: Der versiegelte Umschlag aus der Hofkanzlei
 
-## Schritt 1 — entdecken
+ZIELE (3 goals in 15 minutes, read Chinese first, then English):
 
-ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
+1. 中文：能把第47号案件（人物小传卡）按背景、方法、判断拆开。
+   English: Place case 47 in context, method and judgement.
+2. 中文：每个论断配引文出处并说清效果。
+   English: Support each claim with quotation and effect.
+3. 中文：按题型写出权衡判断。
+   English: Judge with reasons in the right task type.
 
-1. 中文：能一眼分清 direct characterisation（叙述者/作者直接把特征说出来，"telling"）与 indirect characterisation（读者从证据里自己推断，"showing"）。
-2. 中文：能背下 indirect characterisation 的五条证据通道（speech / thoughts / effect on others / actions / looks），并能在文本里各找一句带行号的证据。
-3. 中文：能按 P.E.E. 写一段 characterisation 分析（AFB II），把"人物特征"与"作者效果"挂钩，而不是复述情节。
+HOOK:
 
-Klausur-Satz: `While direct characterisation names a trait explicitly, indirect characterisation lets the reader infer it from a character's words, actions and the reactions of others.`
+深夜，跨时空文案侦探社的蓝灯又亮了。搭档把一只密封信封推到你面前：这是第47号案件，一份人物小传卡。表面看只是一段人物塑造，但灯光下浮现出第二层痕迹——有人删改、夸大或偷换了关键信息。你们作为思想特工与文本侦探，必须在十五分钟内锁定三个目标：找证据、说功能、下判断，每一步都要有出处支撑。下一道时空门只为证据链完整的人打开，搭档已经在催你了，线索正在变冷。
 
-## Schritt 2 — entdecken
+English hook: Agent Theo Wort drops case file 47 (Steckbrief einer Romanfigur mit Leerstellen) on your desk. Falllinie A: Der Hof von Guastalla fluestert von Gift, geheimen Briefen und einer Ehre, die man mit Worten vergiftet.
 
-PRETRAINING术语盒（核心5词，先读三遍中英，合书自测中文→英语，Evidenz：pretraining降认知负荷）：
+Klausur-Satz: `Character lives in speech: what figures do outweighs what narrators claim.`
 
-中文在上，English 在下：
+## Schritt 2 — entdecken: Die Ausruestungskiste gegen Fall 47
 
-- 直接刻画 — direct characterisation：叙述者直接点明人物特征（trait），如 "She was a generous woman."，属 telling。
-- 间接刻画 — indirect characterisation：作者不点破，读者从言行、思想、他人反应中推断，属 showing。
-- 人物特征 — character trait：可概括的稳定品性（brave, jealous, insecure），是分析段的落点词。
-- 人物发展 — character development：人物在情节推进中发生的转变或成长，常是主题的载体。
-- 叙事视角 — narrative perspective：谁在讲述（first-person / third-person limited / omniscient），决定读者能拿到哪些证据。
+装备盒（5件，先读中文，再背英文）：
 
-Klausur-Satz: `In this extract the author relies on indirect characterisation, so I have to gather evidence from what the protagonist says and does instead of from explicit statements.`
+- 中文点拨：人物塑造之1号工具。
+  English: **Direct characterisation: narrator names the trait**
+- 中文点拨：人物塑造之2号工具。
+  English: **Indirect characterisation: speech and action reveal the trait**
+- 中文点拨：人物塑造之3号工具。
+  English: **Foil: contrast figure that sharpens the hero**
+- 中文点拨：人物塑造之4号工具。
+  English: **Development: change across scenes as proof of depth**
+- 中文点拨：人物塑造之5号工具。
+  English: **Sympathy steering: perspective that guides reader loyalty**
 
-## Schritt 3 — entdecken
+Klausur-Satz: `Character lives in speech: what figures do outweighs what narrators claim.`
 
-ENTDECKEN（1概念 + 1文字图解）：
+## Schritt 3 — entdecken: Der Mechanismus hinter dem Tatbild
 
-中文：人物刻画不是给人物贴一张标签，而是作者用一整套手段让读者"自己看见"一个人。direct characterisation 是作者替你下结论——"Tom was an arrogant man"；indirect characterisation 是作者把证据摆在你面前，让你自己得出结论——Tom 打断别人、翻白眼、只谈自己。分析题几乎从不满足于"他是傲慢的人"，它要的是：作者**用了哪条证据通道**（手段），**原文哪一行**（Evidence），以及这手段**对读者起什么作用**（Explain）。所以记住五条证据通道（英文首字母 STEAL）：**S**peech（说什么、怎么说）、**T**houghts（内心独白、感受）、**E**ffect on others（别人的反应）、**A**ctions（行为选择）、**L**ooks（外貌描写）。叙事视角决定了你能拿到哪几条通道：first-person narrator 拿不到别人的内心，只能靠 speech 和 effect on others；omniscient narrator 则五条全开。判错视角，等于一开始就找错了证据来源。
+中文深层解构：人物塑造的核心链是证据、效果、判断。第47号案件（人物小传卡）的伪装层就藏在链条中间。
 
-文字图解（ASCII 结构图，App支持解析渲染）：
+English: Quotation plus effect equals judgement on Characterisation: Direct and Indirect Techniques.
 
 ```diagram
-                [ CHARACTER ]
-                      |
-        +-------------+-------------+
-        |                           |
-  DIRECT (telling)          INDIRECT (showing)
-  narrator names the         reader infers from
-  trait explicitly           evidence channels
-        |                           |
-   "She was kind."        +---------+---------+---------+---------+
-                          |         |         |         |         |
-                       Speech   Thoughts  Effect on  Actions   Looks
-                      (S)       (T)       others (E) (A)       (L)
-                          |         |         |         |         |
-                       quotes   inner      reactions  choices  appearance
-                          +---------+---------+---------+---------+
-                                    |
-                            INFERRED TRAIT (e.g. insecure)
-                                    |
-                              P.E.E. analysis paragraph
+Evidence (quotation) -> Effect (function) -> Judgement (verdict)
+Case 47
 ```
 
-Klausur-Satz: `Indirect characterisation works through the five evidence channels of speech, thoughts, effect on others, actions and looks, which together allow the reader to infer a character's traits.`
+Klausur-Satz: `Character lives in speech: what figures do outweighs what narrators claim.`
 
-## Anekdote & Fun-Fact
+## Anekdote
 
-**Anekdote / Fun-Fact (DE)**: Die Schreibregel "Show, don't tell" wird oft dem russischen Schriftsteller Anton Tschechow zugeschrieben. In einem Brief an seinen Bruder soll er geraten haben: "Erzähl mir nicht, der Mond scheint — zeig mir das Glitzern des Lichts auf zerbrochenem Glas." Ob das Zitat genau so gefallen ist, ist unsicher; die Idee trifft aber genau den Kern der indirekten Charakterisierung.
+中文解读：人物塑造里藏着侦探的耐心：每个细节都是时空门的钥匙。
 
-**中文解读**: 这句被广泛转述的忠告，正好把 direct 与 indirect 的差别讲透了——"说月亮在照"是 telling，作者替你下结论；"给我看碎玻璃上的反光"是 showing，把证据交给你，让你自己推出"月光"。这正是 STEAL 五通道要做的事：不点破 trait，只给证据。记住它，你就不会再把 characterisation 写成给人物贴标签。
+English: A class once circled one gaze in a photo and found the whole plot.
 
-**Bezug zum Konzept**: Chekhov's advice to show rather than tell is the principle behind indirect characterisation: the reader infers the trait from evidence instead of being told it.
+Bezug zum Konzept: `Character lives in speech: what figures do outweighs what narrators claim.`
 
-## Schritt 4 — ausprobieren
+## Schritt 4 — ausprobieren: Die Sandkasten-Pruefung mit Textlupe
 
-BEISPIEL（正确例题示范，含教具操作与解答）：
+[Werkzeug: highlighter]
 
-[Werkzeug: lego]
+中文任务：分析第47号案文本（人物小传卡）。
+English TASK: Examine case 47 (Steckbrief einer Romanfigur mit Leerstellen) on Characterisation: Direct and Indirect Techniques.
+TARGET: Three quotations, each with effect and judgement in four sentences.
 
-AUFGABE (analyse, AFB II)：Read the short extract below and analyse how the author characterises Mia. Focus on indirect characterisation and use P.E.E.
+HILFE（中文在前）：
+1. 中文：两句交代背景。English: Place the case in two sentences.
+2. 中文：锁两个证据。English: Secure two quotations.
+3. 中文：效果加判断。English: Add effect and judgement.
 
-> Extract (original practice text): "Mia laughed a little too loudly at the joke, then checked her phone although no message had arrived. When the teacher praised Ben's essay, she clapped first and fastest. On the bus home she rewrote her own essay headline three times, crossing out every word that sounded like boasting."
+MUSTERLOESUNG: 中文示范：背景一句，证据加效果两句，判断一句。
+English MODEL: Case 47 shows Characterisation: Direct and Indirect Techniques in three moves with quotation, effect and judgement; the cover is blown.
 
-HILFE:
-1. Schritt 1: Markiere zuerst alle Stellen, an denen Mia handelt, spricht oder denkt — das sind deine Evidence-Kandidaten (Actions, Speech).
-2. Schritt 2: Frage bei jeder Stelle: Was verrät sie über einen trait? (z. B. lautes Lachen + Handy-Check = Unsicherheit).
-3. Schritt 3: Schreibe für jeden trait einen P.E.E.-Block: Point (channel + trait) → Evidence (line) → Explain (Wirkung auf den Leser).
+Klausur-Satz: `Character lives in speech: what figures do outweighs what narrators claim.`
 
-MUSTERLÖSUNG: The author characterises Mia indirectly rather than naming her trait. **Point:** Through her actions (l. 1–2), Mia is shown to be insecure. **Evidence:** She laughs "a little too loudly" and checks a phone "although no message had arrived" — both actions are slightly excessive and reveal a need for approval (cf. l. 1–2). **Explain:** Because the narrator never calls her insecure, the reader has to infer it, which makes the impression more authentic and arouses sympathy. A second channel reinforces this: her reaction to Ben's success — she claps "first and fastest" (l. 3) — suggests she competes even while she pretends to celebrate others. **Explain:** This contrast between outward friendliness and inner comparison creates a critical yet sympathetic tone. Overall, the author uses actions and reactions as evidence so that the reader discovers Mia's insecurity independently, which makes the character feel real rather than labelled.
+## Schritt 5 — ausprobieren: Das doppelte Spiel Weg A gegen Weg B
 
-Klausur-Satz: `Because the narrator never names Mia's insecurity, the reader must infer it from her excessive laughter and her compulsive phone-checking, which makes the characterisation more convincing.`
+VERGLEICH（中文先行）：先选路再做题：【选概念】(i) Weg A 近路（引文细节）还是 (ii) Weg B 远路（背景判断）。
+English: Choose the path first (close Way A or distant Way B), then write.
 
-## Schritt 5 — ausprobieren
+TASK A（中文：哪条线索走近路？）: Which trace needs Way A?
+TASK B（中文：哪个整体问题走远路？）: Which whole-case question needs Way B?
 
-VERGLEICH辨别实验（双向辨析：direct 眼 vs. indirect 眼）：
+HILFE：细节问选近路Way A，整体问选远路Way B。【选概念看题干：compare列异同，assess做权衡。】
 
-VERGLEICH: Wähle erst das Verfahren — 【选程序】先判断题干/文本给的是 (i) Direct-Verfahren（叙述者直接给出 trait，你只需 belegen + 效果）还是 (ii) Indirect-Verfahren（只给证据，你必须先 infer 再 belegen）—— dann analysieren.
+中文答案：A近路靠引文，B远路靠背景。
+English ANSWER: A takes Way A with close quotation, B takes Way B with context on Characterisation: Direct and Indirect Techniques.
 
-AUFGABE A：Der Text sagt: "Mr Hale was a patient and fair teacher, respected by every pupil." Wie ist die Figur charakterisiert, und wie analysierst du das?
+Klausur-Satz: `Character lives in speech: what figures do outweighs what narrators claim.`
 
-AUFGABE B：Der Text sagt nur: "Mr Hale waited until the last pupil had finished, then nodded slowly and said: 'Take your time. We are not in a race.'" Wie ist die Figur charakterisiert, und wie analysierst du das?
+## Schritt 6 — check: Selbsttest zu Characterisation: Direct and Indirect Techniques
 
-HILFE: A nennt den trait direkt (patient, fair) und liefert sogar die Fremdwahrnehmung (respected) → Verfahren (i). B nennt keinen trait, gibt nur Handlung und Rede → Verfahren (ii).【选程序：文中出现概括性形容词 = direct；只有行为/话语/反应 = indirect。】
+CHECK (drei Fragen mit Antworten):
 
-ANTWORT: A erfordert Verfahren (i): Der Erzähler benennt die traits "patient" und "fair" direkt und stützt sie durch die Reaktion der Schüler ("respected by every pupil"). Meine Analyse belegt also den genannten trait mit dem Zitat und erklärt die Wirkung — der Leser übernimmt das Urteil des Erzählers, ohne selbst zu urteilen. B erfordert Verfahren (ii): Kein trait wird genannt; aus der Handlung (er wartet bis zum Schluss) und der Rede ("We are not in a race") muss der Leser selbst auf "patient" schließen. Meine Analyse macht den Inferenzschritt sichtbar: Point = indirect characterisation durch actions und speech, Evidence = die zitierte Handlung und Äußerung, Explain = der Leser erlebt Hales Geduld, statt sie behauptet zu bekommen, was die Figur glaubwürdiger und sympathischer macht.
+中文自测：
+FRAGE: 三步链是什么？ | ANTWORT: Quotation, effect, judgement.
+FRAGE: 近路要什么？ | ANTWORT: Close quotation with effect.
+FRAGE: 远路要什么？ | ANTWORT: Context as carrier of judgement.
 
-Klausur-Satz: `Direct characterisation hands the reader a ready-made judgement, whereas indirect characterisation makes the reader build that judgement from evidence and therefore feel it more strongly.`
-
-## Schritt 6 — check
-
-CHECK检索默写（自测 3 题，与答案配对）：
-
-FRAGE: Was ist der Unterschied zwischen direct und indirect characterisation? | ANTWORT: Direct characterisation nennt einen trait ausdrücklich, indirect characterisation lässt den Leser den trait aus Handlungen, Rede, Gedanken, Äußerem und Reaktionen anderer erschließen.
-FRAGE: Welche fünf Evidenzkanäle gehören zur indirect characterisation? | ANTWORT: Speech, thoughts, effect on others, actions und looks (Merkwort STEAL).
-FRAGE: Warum muss man vor der Analyse die narrative perspective bestimmen? | ANTWORT: Die Perspektive entscheidet, welche Evidenzkanäle überhaupt zugänglich sind; ein first-person narrator kennt etwa die Gedanken anderer Figuren nicht.
-
-Klausur-Satz: `Before analysing a character, I identify the narrative perspective, because it determines which evidence channels are available to me.`
+Klausur-Satz: `Character lives in speech: what figures do outweighs what narrators claim.`
 
 ## Fehlvorstellung
 
-(非Schritt小节，Parser 自动识别，不计入步骤步数)
+1. 中文误解：人物塑造只看表面。
+   中文纠偏：引文加效果才是得分点。
+   Korrektur-Satz: `Trait plus scene evidence convinces.`
+2. 中文误解：人物塑造只看表面。
+   中文纠偏：引文加效果才是得分点。
+   Korrektur-Satz: `Change marks round characters.`
 
-1. 误解"分析人物就是把文本里发生的事讲一遍"。
-   中文纠偏：情节复述属于 summary（AFB I），一分不给分析分。characterisation 分析必须回答"作者用哪条通道、写了哪一行、对读者有什么效果"——手段与效果缺一不可。
-   Korrektur-Satz: `Retelling what a character does is not analysis; analysis names the technique, cites the evidence and explains its effect on the reader.`
+## Schritt 7 — szenario: Klausurtransfer: Feuilleton critic zu Fall 47
 
-2. 误解"direct characterisation 更简单，所以考试里只找直接描写就够了"。
-   中文纠偏：恰恰相反。文学文本大多以 indirect characterisation 为主，直接描写往往只是少数几笔。只会找 direct，等于放过文本的绝大部分证据，分析必然空洞。
-   Korrektur-Satz: `Most literary texts characterise indirectly, so a reader who only looks for explicit traits will miss the evidence that carries the analysis.`
+ROLLE（中文）：你是Feuilleton critic，负责审稿。
+English ROLE: You are Feuilleton critic.
+SITUATION: Case 47 waits on your desk.
+TASK（中文）：150词左右，含背景、证据、权衡判断。
+RUBRIC (30 XP): Context (6 XP) | Quotations (10 XP) | Effect plus judgement (10 XP) | Register (4 XP).
 
-## Schritt 7 — szenario
+## Schritt 8 — reflexion: Takeaway und Rueckblick aus Fall 47
 
-ROLLE: Du bist Tutorin für Englisch in der Oberstufe und leitest eine Kleingruppe zur Vorbereitung auf die Klausur.
-SITUATION: Eine Mitschülerin hat in ihrer letzten Analyse geschrieben: "The boy is shy and lonely." Danach folgt eine Nacherzählung der Handlung. Erkläre ihr in einer zusammenhängenden Antwort (ca. 150 Wörter), warum das keine Analyse ist, und zeige an einem kurzen selbst gewählten Beispiel, wie ein korrekter P.E.E.-Absatz zur indirekten Charakterisierung aussieht.
-RUBRIC (30 XP): Benennung des Fehlers — trait ohne Beleg, Nacherzählung statt Analyse (5 XP) | Erklärung der fünf Evidenzkanäle der indirekten Charakterisierung (10 XP) | Vorführung eines vollständigen P.E.E.-Absatzes mit Point, Evidence (Zeilenangabe) und Explain (Wirkung) (10 XP) | Hinweis auf die Rolle der narrative perspective für die Evidenzauswahl (5 XP).
+中文总结：第47号案件教会我们：先锁引文，再说效果，最后判断。
+English TAKEAWAY: Secure quotation, name effect, judge with reasons. `Character lives in speech: what figures do outweighs what narrators claim.`
 
-## Schritt 8 — reflexion: Takeaway & Reflexion
-
-TAKEAWAY 1盒（核心总结）：
-
-中文：刻画人物分两条路——direct 是作者替你下结论（telling），indirect 是作者把证据摆出来让你自己推（showing），而文学文本以 indirect 为主。拿到人物题先定叙事视角，再用 STEAL 五通道找证据：说什么、想什么、别人怎么反应、做什么、长什么样。分析段落永远三步走——Point（通道 + trait）、Evidence（行号）、Explain（对读者的效果）。记住：考官要的不是"他是怎样的人"，而是"作者让你怎样看见他是怎样的人"。
-Takeaway-Satz: `Characterisation analysis answers how the author makes us see a character, not what the character is like: channel plus evidence plus effect.`
-
-REFLEXION 2问：
-1. 过程自省：Which step was harder — distinguishing the five evidence channels (Schritt 3) or writing the Explain sentence that links a device to its effect (Schritt 4)?
-2. 元认知计划：Next time I will identify the narrative perspective first, because only then can I decide which evidence channels my analysis may use.
+REFLEXION（中文在前）：
+1. 中文：近路和远路哪个更难？English: Which was harder, close quotation or distant judgement?
+2. 中文：下次先划引文。English: Next time I secure quotations first.

@@ -13,120 +13,130 @@ version: Lesson-v3
 
 # Lernreise: Genetic Engineering and Bioethics (L1, Ziel Klausur)
 
-<!-- Lesson v3 architecture: Schritte 1-8 fixed; Fehlvorstellung between Schritt 6 and 7 (parser skipped); embedded [Werkzeug: <id>]; gating: check/szenario failed = Weiter greyed; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
+<!-- Campaign: Detektive Fal 41 -->
+## Schritt 1 — entdecken: Der versiegelte Umschlag aus der Archivnacht
 
-## Schritt 1 — entdecken
+ZIELE (3 goals in 15 minutes, read Chinese first, then English):
 
-ZIELE (3 Ziele, nach 15 Minuten erreichbar):
+1. 中文：能把第41号案件（实验室报告涂黑页）按背景、方法、判断拆开。
+   English: Place case 41 in context, method and judgement.
+2. 中文：每个论断配引文出处并说清效果。
+   English: Support each claim with quotation and effect.
+3. 中文：按题型写出权衡判断。
+   English: Judge with reasons in the right task type.
 
-1. CRISPR basics ($cut + repair = edit$) explain.
-2. A bioethics comment with chances and risks structure.
-3. Genetic editing with human dignity as criterion evaluate (AFB III).
+HOOK:
 
-VORAUSSETZUNG: Comment writing (PEEL), stylistic devices and mediation basics.
+深夜，跨时空文案侦探社的蓝灯又亮了。搭档把一只密封信封推到你面前：这是第41号案件，一份实验室报告涂黑页。表面看只是一段基因工程伦理，但灯光下浮现出第二层痕迹——有人删改、夸大或偷换了关键信息。你们作为思想特工与文本侦探，必须在十五分钟内锁定三个目标：找证据、说功能、下判断，每一步都要有出处支撑。下一道时空门只为证据链完整的人打开，搭档已经在催你了，线索正在变冷。
 
-VORGAENGER-VERWEIS: This lesson requires `Englisch-Comment-Writing-L1.md` and does not repeat it. That lesson introduced general comment structure and phrases. Here follows the narrow cut: only genetic engineering with bioethics; general science topics do not belong here.
+English hook: Agent Theo Wort drops case file 41 (Laborbericht mit geschwaerztem Absatz) on your desk. Falllinie D: Das Archiv der Agentur meldet einen Riss in der Zeit, durch den ein Text in unsere Gegenwart gefallen ist.
 
-Klausur-Satz: `CRISPR promises cure, yet germline editing changes future generations without consent.`
+Klausur-Satz: `Healing unites, enhancing divides: the line needs reasons.`
 
-## Schritt 2 — entdecken
+## Schritt 2 — entdecken: Die Ausruestungskiste gegen Fall 41
 
-PRETRAINING (Kernbegriffe):
+装备盒（5件，先读中文，再背英文）：
 
-- CRISPR-Cas9: Molecular scissors with $guide + RNA \to target$ logic.
-- Somatic editing: Change in body cells, not inherited.
-- Germline editing: Change in egg, sperm or embryo, hence inherited.
-- Precautionary principle: Act cautiously under uncertainty.
-- Human dignity: Criterion that forbids treating persons as mere products.
+- 中文点拨：基因工程伦理之1号工具。
+  English: **Gene therapy: healing by editing the code of life**
+- 中文点拨：基因工程伦理之2号工具。
+  English: **Designer question: enhancement beyond healing as fault line**
+- 中文点拨：基因工程伦理之3号工具。
+  English: **Consent: voice of the unborn as ethical test**
+- 中文点拨：基因工程伦理之4号工具。
+  English: **Risk and benefit: weighing cure against unknown echo**
+- 中文点拨：基因工程伦理之5号工具。
+  English: **Regulation: law as slow answer to fast science**
 
-Klausur-Satz: `Somatic editing treats a patient, germline editing designs a lineage.`
+Klausur-Satz: `Healing unites, enhancing divides: the line needs reasons.`
 
-## Schritt 3 — entdecken
+## Schritt 3 — entdecken: Der Mechanismus hinter dem Tatbild
 
-ENTDECKEN (ein Konzept plus Diagramm):
+中文深层解构：基因工程伦理的核心链是证据、效果、判断。第41号案件（实验室报告涂黑页）的伪装层就藏在链条中间。
 
-The ethics follows $chance - risk = judgement$ with dignity as brake. Somatic cure for sickle-cell disease differs from germline enhancement for height. Slippery-slope logic warns $therapy \to enhancement \to market$, while justice warns $rich + access \ne poor + access$. A strong comment weighs both sides with one criterion and ends with a conditional judgement.
+English: Quotation plus effect equals judgement on Genetic Engineering and Bioethics.
 
 ```diagram
-Technique: cut + repair = edit (CRISPR)
-Divide: somatic (patient) | germline (lineage)
-Test: chance - risk = judgement, brake = dignity
-Slope: therapy -> enhancement -> market (stop where?)
-Justice: access gap decides fairness
+Evidence (quotation) -> Effect (function) -> Judgement (verdict)
+Case 41
 ```
 
-Klausur-Satz: `Dignity sets the limit where technique sets the possibility.`
+Klausur-Satz: `Healing unites, enhancing divides: the line needs reasons.`
 
-## Anekdote & Fun-Fact
+## Anekdote
 
-**Anekdote / Fun-Fact (DE)**: In 2018 a researcher announced gene-edited babies and lost his licence and freedom. Science celebrated the tool and condemned the germline step in the same week.
+中文解读：基因工程伦理里藏着侦探的耐心：每个细节都是时空门的钥匙。
 
-**Bezug zum Konzept**: `The case separates celebrated therapy from condemned lineage design.`
+English: A lab once blacked one paragraph and the debate grew sharper.
 
-## Schritt 4 — ausprobieren
+Bezug zum Konzept: `Healing unites, enhancing divides: the line needs reasons.`
 
-BEISPIEL (vollstaendige Musterloesung):
+## Schritt 4 — ausprobieren: Die Sandkasten-Pruefung mit Textlupe
 
 [Werkzeug: highlighter]
 
-AUFGABE (discuss, AFB II-III): Discuss whether somatic editing for severe disease should be allowed while germline editing stays banned.
+中文任务：分析第41号案文本（实验室报告涂黑页）。
+English TASK: Examine case 41 (Laborbericht mit geschwaerztem Absatz) on Genetic Engineering and Bioethics.
+TARGET: Three quotations, each with effect and judgement in four sentences.
 
-HILFE:
-1. Schritt 1: Both types define.
-2. Schritt 2: Two chances and two risks weigh.
-3. Schritt 3: Conditional judgement with dignity close.
+HILFE（中文在前）：
+1. 中文：两句交代背景。English: Place the case in two sentences.
+2. 中文：锁两个证据。English: Secure two quotations.
+3. 中文：效果加判断。English: Add effect and judgement.
 
-MUSTERLOESUNG: Somatic editing cures the treated patient without passing changes on; germline editing writes into every future cell without consent. Chances include cure and less suffering, risks include off-target cuts and unfair access. With dignity as criterion, somatic therapy under strict control is justified, while germline editing must stay banned because it turns persons into designed products and gambles with generations.
+MUSTERLOESUNG: 中文示范：背景一句，证据加效果两句，判断一句。
+English MODEL: Case 41 shows Genetic Engineering and Bioethics in three moves with quotation, effect and judgement; the cover is blown.
 
-Klausur-Satz: `Therapy with consent differs categorically from design without consent.`
+Klausur-Satz: `Healing unites, enhancing divides: the line needs reasons.`
 
-## Schritt 5 — ausprobieren
+## Schritt 5 — ausprobieren: Das doppelte Spiel Weg A gegen Weg B
 
-VERGLEICH (erst Verfahren waehlen, dann loesen):
+VERGLEICH（中文先行）：先选路再做题：【选概念】(i) Weg A 近路（引文细节）还是 (ii) Weg B 远路（背景判断）。
+English: Choose the path first (close Way A or distant Way B), then write.
 
-VERGLEICH: Waehle erst das Verfahren — (i) Technique-Verfahren (how CRISPR works) oder (ii) Ethics-Verfahren (chances, risks, dignity, justice) — dann loesen.
+TASK A（中文：哪条线索走近路？）: Which trace needs Way A?
+TASK B（中文：哪个整体问题走远路？）: Which whole-case question needs Way B?
 
-AUFGABE A: Explain off-target risk in two sentences. Which procedure fits?
+HILFE：细节问选近路Way A，整体问选远路Way B。【选概念看题干：compare列异同，assess做权衡。】
 
-AUFGABE B: Should enhancement for height be allowed? Which procedure fits?
+中文答案：A近路靠引文，B远路靠背景。
+English ANSWER: A takes Way A with close quotation, B takes Way B with context on Genetic Engineering and Bioethics.
 
-HILFE: A asks about mechanism, hence procedure (i). B asks about permission, hence procedure (ii).
+Klausur-Satz: `Healing unites, enhancing divides: the line needs reasons.`
 
-ANTWORT: A requires procedure (i): Guide RNA can bind similar sequences, so $cut + error = risk$. B requires procedure (ii): No, because enhancement without need violates dignity and widens the justice gap.
-
-Klausur-Satz: `Technique explains possibility, ethics decides permission.`
-
-## Schritt 6 — check
+## Schritt 6 — check: Selbsttest zu Genetic Engineering and Bioethics
 
 CHECK (drei Fragen mit Antworten):
 
-FRAGE: What is the CRISPR formula? | ANTWORT: $cut + repair = edit$ guided by RNA to the target.
-FRAGE: What divides somatic from germline? | ANTWORT: Inheritance: somatic stays with the patient, germline passes to generations.
-FRAGE: What closes a bioethics comment? | ANTWORT: A conditional judgement with dignity and justice as criteria.
+中文自测：
+FRAGE: 三步链是什么？ | ANTWORT: Quotation, effect, judgement.
+FRAGE: 近路要什么？ | ANTWORT: Close quotation with effect.
+FRAGE: 远路要什么？ | ANTWORT: Context as carrier of judgement.
 
-Klausur-Satz: `Without criterion a comment lists opinions, with criterion it judges.`
+Klausur-Satz: `Healing unites, enhancing divides: the line needs reasons.`
 
 ## Fehlvorstellung
 
-1. Fehlvorstellung: Banning germline editing means banning all genetics.
-   Korrektur-Satz: `Somatic therapy and germline design differ in inheritance and consent.`
+1. 中文误解：基因工程伦理只看表面。
+   中文纠偏：引文加效果才是得分点。
+   Korrektur-Satz: `Feasibility never settles permissibility.`
+2. 中文误解：基因工程伦理只看表面。
+   中文纠偏：引文加效果才是得分点。
+   Korrektur-Satz: `Weighing with reasons decides.`
 
-2. Fehlvorstellung: Natural always means good in bioethics.
-   Korrektur-Satz: `Disease is natural yet bad; the criterion is dignity and suffering, not nature.`
+## Schritt 7 — szenario: Klausurtransfer: Science page editor zu Fall 41
 
-## Schritt 7 — szenario
+ROLLE（中文）：你是Science page editor，负责审稿。
+English ROLE: You are Science page editor.
+SITUATION: Case 41 waits on your desk.
+TASK（中文）：150词左右，含背景、证据、权衡判断。
+RUBRIC (30 XP): Context (6 XP) | Quotations (10 XP) | Effect plus judgement (10 XP) | Register (4 XP).
 
-ROLLE: You are a speaker in a school debate.
-SITUATION: The motion says to allow germline editing for intelligence. Oppose in circa 150 words with technique, slippery slope and justice, closing with dignity.
-RUBRIC (30 XP): Technique correct (8 XP) | Risks weighed (10 XP) | Dignity judgement (8 XP) | Academic register (4 XP).
+## Schritt 8 — reflexion: Takeaway und Rueckblick aus Fall 41
 
-## Schritt 8 — reflexion: Takeaway & Reflexion
+中文总结：第41号案件教会我们：先锁引文，再说效果，最后判断。
+English TAKEAWAY: Secure quotation, name effect, judge with reasons. `Healing unites, enhancing divides: the line needs reasons.`
 
-TAKEAWAY:
-
-Technique first, permission second: Somatic cure maybe, germline design no — dignity brakes.
-Takeaway-Satz: `Edit patients with care, never edit lineages by design.`
-
-REFLEXION:
-1. Which step was harder — balancing chances (Schritt 4) or procedure choice (Schritt 5)?
-2. Next time I fix the criterion first, because it carries the judgement.
+REFLEXION（中文在前）：
+1. 中文：近路和远路哪个更难？English: Which was harder, close quotation or distant judgement?
+2. 中文：下次先划引文。English: Next time I secure quotations first.

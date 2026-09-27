@@ -13,152 +13,111 @@ version: Lesson-v3
 
 # Lernreise: Abitur-Themenfelder: UK, USA, Nigeria, Identitaet, Medien (L1, Ziel Klausur)
 
-<!-- Lesson v3 architecture: Schritte 1 to 8 fixed; Fehlvorstellung between Schritt 6 and 7 (parser skips, not counted); embedded [Werkzeug: <id>]; gating: check/szenario failed = Weiter disabled; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
+<!-- Campaign: Detektive Fal 52 -->
+## Schritt 1 — entdecken: Der versiegelte Umschlag aus der Archivnacht
 
-## Schritt 1 — entdecken: Ziele & Phänomen-Einstieg
+ZIELE (3 Ziele, nach 15 Minuten erreichbar):
 
-OBJECTIVES (three measurable goals of this lesson):
+1. Du ordnest Fall 52 (Zeitleiste mit verknuepften Ereignissen) in Kontext, Verfahren und Deutung ein.
+2. Du belegst jede Aussage zu Abitur-Themenfelder: UK, USA, Nigeria, Identitaet, Medien mit Zitat und Zeile und benennst die Funktion.
+3. Du faellst ein Urteil im passenden Anforderungsbereich.
 
-1. You can summarise the five **Themenfelder** — UK, USA, Nigeria, identity, media and literature — by one core question and five key terms each.
-2. You can turn **sociocultural knowledge** (Landeskunde) into argument material for assess and discuss tasks instead of reproducing facts.
-3. You can write a neutral **outline** and one evaluative **comment sentence** for any field with a link to identity.
+HOOK:
 
-### Hook / Phenomenon
+Mitten in der Nacht flackert das Blaulicht der Agentur fuer Texte und Gedanken ueber den leeren Schreibtischen, und Partner Theo Wort legt einen versiegelten Umschlag auf deinen Platz. Seit Wochen jagt ihr als Gedanken-Agent an der Seite deines Text-Detektivs durch die Jahrhunderte, und jede geloeste Spur oeffnet ein neues Portal in der Zeit. Heute geht es um Abitur-Themenfelder: UK, USA, Nigeria, Identitaet, Medien. Falllinie D: Das Archiv der Agentur meldet einen Riss in der Zeit, durch den ein Text in unsere Gegenwart gefallen ist. Im Umschlag steckt Fall 52: ein Zeitleiste mit verknuepften Ereignissen. Kaum haeltst du das Stueck ins Licht, faellt dir eine zweite Schicht auf: Jemand hat die Botschaft frisiert, verkuerzt oder verdreht, und nur wer Beleg, Funktion und Deutung sauber trennt, kann die Manipulation entlarven. Das naechste Portal oeffnet sich nur, wenn du drei Ziele in fuenfzehn Minuten schaffst und jede Behauptung mit Zeile und Wirkung belegst. Theo Wort gru belt schon ungeduldig, denn die Spur wird kalt.
 
-Knowing the population of Nigeria earns zero marks. Using one fact to judge a text earns many. When does knowledge turn from ballast into argument? The answer decides the whole Abitur strategy, because the examiners never reward facts alone but only facts tied to text, question and judgement (Urteil). First, successful candidates sort every topic field — postcolonial Nigeria, American Dream, dystopia, media, science — into one transfer sentence each: This context explains that choice in the text because. Second, they anchor each sentence with a short quotation and a line reference instead of retelling history. Third, they close every paragraph with So what for the question, turning information into evaluation (Bewertung). Fourth, they rehearse the bridge phrases that examiners scan for: against this background, this sharpens, this limits. Knowledge without a bridge stays ballast; knowledge with Point plus Evidence equals Explanation becomes argument and collects the judgement marks.
+Klausur-Satz: `Five fields, one method: compare with evidence, judge with reasons.`
 
-### Core Concept & Definition
+## Schritt 2 — entdecken: Die Ausruestungskiste gegen Fall 52
 
-**Themenfeld knowledge as toolbox** means preparing each field as **one core question, five terms and one transferable judgement**. It serves **assessment, not recall**: facts become examples inside reasons. The method runs identify the field, activate its terms, turn knowledge into verdict. Listing without judging scores nothing.
+AUSRUESTUNG (5 Instrumente im Koffer):
 
-### Causal Chain / Model
+- **UK profile**: UK profile: regions, class and media as exam anchors
+- **USA profile**: USA profile: dream, diversity and divides as essay fuel
+- **Nigeria profile**: Nigeria profile: voices and memory as postcolonial case
+- **Identity toolkit**: Identity toolkit: belonging, hybridity and language
+- **Media toolkit**: Media toolkit: feed, framing and verification
 
-The chain runs: **field, terms, example, judgement**. First, the text is assigned to one field such as UK or Nigeria. Second, the field terms are activated as usable vocabulary. Third, one or two facts are inserted as concrete examples for an argument. Fourth, the judgement closes with concession and verdict on identity or media. Knowledge scores only as judged text position.
+Klausur-Satz: `Five fields, one method: compare with evidence, judge with reasons.`
 
-Klausur-Satz: `Knowing facts about the UK, the USA or Nigeria earns no points unless I use them to assess a text's view, because in the Abitur knowledge must become judgement.`
+## Schritt 3 — entdecken: Der Mechanismus hinter dem Tatbild
 
-## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
+MECHANISMUS (Tiefenbau):
 
-PRETRAINING-Box (five core terms with definitions):
+Jeder Fall folgt der Kette Befund, Funktion und Deutung. Zuerst sicherst du den Befund mit Zitat und Zeile, dann bestimmst du die Funktion im Macht- oder Sinn-gefuege, erst danach formulierst du die Deutung zu Abitur-Themenfelder: UK, USA, Nigeria, Identitaet, Medien. Falllinie D: Das Archiv der Agentur meldet einen Riss in der Zeit, durch den ein Text in unsere Gegenwart gefallen ist. Wer die zweite Schicht des Zeitleiste mit verknuepften Ereignissen uebersieht, tappt in die Falle der Agentur.
 
-### Hook / Phenomenon
-
-An encyclopedia memorizes, an Abitur candidate judges. The same fact about Brexit can be dead weight or winning proof. Five terms decide which one it becomes.
-
-### Core Terms & Definitions
-
-- **Sociocultural knowledge** (hinterland knowledge): **basic facts about English-speaking countries** expected in the Abitur; a comment without it lacks examples.
-- **Colonial heritage** (koloniales Erbe): the **imperial past shaping present debates** in the UK and Nigeria.
-- **National identity** (nationale Identitaet): **negotiated self-image** central to Brexit, empire memory and the American Dream.
-- **Conformity vs individualism** (Anpassung vs Individualitaet): **universal axis for identity texts** and role models.
-- **Participation vs manipulation** (Teilhabe vs Manipulation): **universal axis for media texts**; social media empowers and steers at once.
-
-### How They Connect / Model
-
-The terms connect fields into arguments: **colonial heritage** links UK and Nigeria through empire memory, **national identity** frames Brexit and the American Dream as negotiation. **Conformity versus individualism** carries identity texts, **participation versus manipulation** carries media texts. **Sociocultural knowledge** supplies the examples that make both axes concrete. Axes plus facts produce judgements.
-
-Klausur-Satz: `The debate about a country's past shows that national identity is negotiated rather than inherited, which is why it keeps returning in Abitur texts.`
-
-## Schritt 3 — entdecken: Kernkonzept & Wirkungsmodell
-
-TIEFEN-KONZEPT (one concept with visual schema):
-
-### Hook / Phenomenon
-
-The "American Dream" sounds eternal but was coined in 1931. A whole Themenfeld hangs on a label younger than a hundred years. Why does naming an ideal already judge it?
-
-### Play Task (Field-Sorter Sandbox)
-
-Open the field-sorter sandbox: five mini-theses lie unsorted — heritage debate, Dream versus gaps, megacity diversity, conformity pressure, feeds versus journalism. Highlight the core terms first, then drag each thesis into exactly one bucket: UK, USA, Nigeria, Identity or Media. The gate checks the core question plus five terms; a thesis without a gap fact bounces back. Target: five correct placements in a row.
-
-### Aha-Moment & Rule
-
-The causal chain runs ideal, gap, example, verdict: the field ideal is named with its core terms, the social gap is stated with one precise fact, the text position is measured with line proof, the verdict weighs attraction against inequality with concession. Formula: $Judgement=Ideal_{claim}+Reality_{gap}$. Construction awareness turns reciting into assessing; hope plus gap produce a complete comment sentence.
 ```diagram
-  ABITUR PART A — field plus axes plus judgement
-  Text belongs to ONE field: UK | USA | Nigeria | Identity | Media
-  UK: heritage + multicultural + Brexit divide
-  USA: Dream + freedom + equality vs. gaps
-  Nigeria: postcolonial + diversity + megacity + lingua franca
-  Axes: conformity vs. individualism | participation vs. manipulation
-  Method: core question + 5 terms + 1 comment sentence
-  Rule: WISSEN -> JUDGEMENT (listing scores zero)
-  Formula: $Judgement=Ideal_{claim}+Reality_{gap}$
+Befund (Zitat mit Zeile) -> Funktion (Wirkung im Gefuege) -> Deutung (Urteil)
+Fall 52: Zeitleiste mit verknuepften Ereignissen -> Spur sichern -> Tatbild schliessen
 ```
 
-Klausur-Satz: `Each Themenfeld is best prepared as one core question, five key terms and one ready-made comment sentence that can be adapted to any text on that field.`
+Klausur-Satz: `Five fields, one method: compare with evidence, judge with reasons.`
 
-## Anekdote & Fun-Fact
+## Anekdote
 
-**Anekdote / Fun-Fact (EN)**: The term "American Dream" is surprisingly young. Historian James Truslow Adams coined it in 1931 in a book on American history. The idea behind it — advancement through hard work — is much older, but the label that now summarises a whole Themenfeld is less than a hundred years old.
+A coordinator pinned four zones on a map and every essay found its place.
 
-**Bezug zum Konzept**: Even a central Themenfeld term like the "American Dream" is a historical construction, which is why I use such knowledge to assess a text rather than to recite facts.
+Bezug zum Konzept: `Five fields, one method: compare with evidence, judge with reasons.`
 
-## Schritt 4 — ausprobieren: Interaktive Praxis & Text-Labor
+## Schritt 4 — ausprobieren: Die Sandkasten-Pruefung mit Baukasten
 
-MODEL TASK (worked example with solution):
+[Werkzeug: lego]
 
-[Werkzeug: highlighter]
+AUFGABE: Untersuche den Fall-Text 52 (Zeitleiste mit verknuepften Ereignissen) zu Abitur-Themenfelder: UK, USA, Nigeria, Identitaet, Medien.
+TARGET: Drei Belege mit Zeile, je mit Funktion und einer Deutung in vier Saetzen.
 
-TASK (outline, AFB I): Field puzzle — outline how the colonial past shapes the national self-concept of the UK today. Highlight three aspects first, then write 80-100 words in your own words and in the present tense.
+HILFE:
+1. Schritt 1: Ordne den Fall in zwei Saetzen ein.
+2. Schritt 2: Sichere zwei Befunde mit Zeile.
+3. Schritt 3: Deute Befund und Funktion im Fallganzen.
 
-HELP:
-1. Collect three aspects — multicultural society, the debate about empire, the European positioning after Brexit.
-2. Phrase each aspect in one or two sentences in your own words, without copying the task.
-3. Stay neutral — no judgement (that belongs to Task 3) and no "I think".
+MUSTERLOESUNG: Der Fall 52 zeigt Abitur-Themenfelder: UK, USA, Nigeria, Identitaet, Medien in drei Schritten. Erstens belegt ein Zitat mit Zeile den Kern des Zeitleiste mit verknuepften Ereignissen, zweitens traegt die Funktion die Wirkung im Gefuege, drittens schliesst die Deutung das Tatbild. Damit ist die zweite Schicht entlarvt und das Portal oeffnet sich.
 
-MODEL SOLUTION: The colonial past still shapes debates about national identity. Firstly, the former empire explains why modern Britain is a multicultural society in which people of many origins live together. Secondly, the heritage is publicly debated: museums, statues and school curricula raise the question of how the empire should be remembered. Thirdly, this debate influences Britain's European positioning, because after Brexit the country keeps redefining its place between its imperial past and its present as a diverse nation. Together the aspects show that national identity in the UK is negotiated, not inherited.
+Klausur-Satz: `Five fields, one method: compare with evidence, judge with reasons.`
 
-Klausur-Satz: `The colonial heritage shapes British self-understanding in three ways: it explains multiculturalism, it fuels debates about memory, and it frames the country's position after Brexit.`
+## Schritt 5 — ausprobieren: Das doppelte Spiel Weg A gegen Weg B
 
-## Schritt 5 — ausprobieren: Verfahrensvergleich & Abgrenzung
+VERGLEICH: Waehle erst das Verfahren, dann loesen: (i) Weg A Nahverfahren (Beleg, Zitat, Wirkung) oder (ii) Weg B Fernverfahren (Kontext, Gefuege, Urteil).
 
-COMPARISON (two procedures):
+AUFGABE A: Welche Spur im Zeitleiste mit verknuepften Ereignissen verlangt Weg A? Begründe mit Zitat.
+AUFGABE B: Welche Frage zum Fallganzen verlangt Weg B? Begründe mit Kontext.
 
-COMPARISON: Decide first — (i) outline procedure (AFB I: neutral reproduction of what the text says, no judgement) or (ii) discuss procedure (AFB III: two sides plus examples plus judgement) — then write.
+HILFE: A fragt nach Form und Naehe, also Weg A. B fragt nach Rolle und Ganzem, also Weg B.
 
-TASK A: Outline the author's view on the American Dream in the text above.
-TASK B: Discuss whether the American Dream is still alive today.
+ANTWORT: A erfordert Weg A: Der Nahbeleg mit Zitat und Zeile zeigt die Wirkung im Detail. B erfordert Weg B: Der Fernblick auf Kontext und Gefuege sichert das Urteil zu Abitur-Themenfelder: UK, USA, Nigeria, Identitaet, Medien.
 
-HELP: A requires neutral reproduction of the author position -> procedure (i), no judgement. B requires a reasoned evaluation with two sides and examples -> procedure (ii). Rule: outline and sum up mean reproduce; discuss, assess and evaluate mean judge.
-
-ANSWER: A requires procedure (i): I restate in my own words and in the present tense which position the author holds, nothing more and nothing less. B requires procedure (ii): I develop my own position with both sides. For the ideals (freedom, equality, pursuit of happiness) the Dream still motivates; against it stands social reality (racial and economic inequality). Each argument receives an example, a counterargument and a final judgement: the Dream remains powerful as an ideal, but its unequal reality must enter any fair verdict.
-
-Klausur-Satz: `Outline reproduces the author's view neutrally, while discuss demands my own two-sided judgement supported by knowledge of the Themenfeld.`
+Klausur-Satz: `Five fields, one method: compare with evidence, judge with reasons.`
 
 ## Schritt 6 — check: Selbsttest zu Abitur-Themenfelder: UK, USA, Nigeria, Identitaet, Medien
-CHECK (three questions with answers):
 
-FRAGE: Which five Themenfelder matter, and which two axes connect them? | ANTWORT: UK, USA, Nigeria, identity, media and literature; the axes are conformity vs individualism and participation vs manipulation.
-FRAGE: What does using field knowledge mean? | ANTWORT: Knowledge must become a judgement on the text position through assess or discuss; listing facts scores nothing.
-FRAGE: How do outline and discuss differ? | ANTWORT: Outline reproduces the text position neutrally in own words (AFB I); discuss requires a two-sided evaluation with examples and a counterargument (AFB III).
+CHECK (drei Fragen mit Antworten):
 
-Klausur-Satz: `Prepared as core question, five terms and one comment sentence, each Themenfeld becomes usable argument material rather than a list of facts.`
+FRAGE: Nenne die Drei-Schritt-Kette. | ANTWORT: Befund mit Zeile, Funktion im Gefuege, Deutung als Urteil.
+FRAGE: Was verlangt Weg A? | ANTWORT: Nahbeleg mit Zitat und Wirkung am Detail.
+FRAGE: Was verlangt Weg B? | ANTWORT: Kontext und Gefuege als Traeger des Urteils.
+
+Klausur-Satz: `Five fields, one method: compare with evidence, judge with reasons.`
 
 ## Fehlvorstellung
 
-(not a Schritt; parser skips automatically)
+1. Fehlvorstellung: Fields stay separate.
+   Korrektur-Satz: `Strong essays bridge fields with method.`
+2. Fehlvorstellung: Facts alone score.
+   Korrektur-Satz: `Evidence plus judgement scores.`
 
-1. Error: "Memorising facts about Nigeria, the UK or the USA is enough."
-   Correction: The Abitur tests judgement through field knowledge, not recall. Prepare one core question, five terms and one comment template per field and use them to assess the text.
-   Korrektur-Satz: `Facts earn marks only when they are used to assess a text's view, because the exam tests judgement, not recall.`
+## Schritt 7 — szenario: Klausurtransfer: Exam board coordinator zu Fall 52
 
-2. Error: "Outline and summary are the same."
-   Correction: A summary covers the gist of the whole text; an outline covers only the aspects named in the task. Mark the required scope first (for example "how the colonial past shapes ..."), otherwise the answer drifts.
-   Korrektur-Satz: `An outline covers only the aspects named in the task, whereas a summary reproduces the whole text's gist.`
+ROLLE: Du bist Exam board coordinator in der Pruefung.
+SITUATION: Ein Fall zu Abitur-Themenfelder: UK, USA, Nigeria, Identitaet, Medien (Fall 52, Zeitleiste mit verknuepften Ereignissen) liegt unbearbeitet auf dem Tisch.
+AUFGABE: Verfasse circa 150 Woerter mit Einordnung, zwei Belegen mit Zeile, Funktion, Deutung und Schlussurteil.
+RUBRIC (30 XP): Einordnung korrekt (6 XP) | Zwei Belege mit Zeile (10 XP) | Funktion plus Deutung (10 XP) | Fachsprache und Schluss (4 XP).
 
-## Schritt 7 — szenario: Klausurtransfer: Abitur-Themenfelder: UK, USA, Nigeria, Identitaet, Medien
-ROLE: You are a panellist in an advanced English course debate on "Identity in a globalised world".
-SITUATION: A text claims that young people in Britain, the USA and Nigeria share the same identity crisis because social media spreads the same ideals everywhere. Evaluate this thesis in a coherent statement (ca. 150 words) with reference to at least two Themenfelder, one counterargument and a final judgement.
-RUBRIC (30 XP): Correct use of two fields as argument material (5 XP) | Clear reasoned position (5 XP) | Two arguments with examples (10 XP) | One fairly treated counterargument (5 XP) | Final judgement weighing similarities and differences (5 XP).
+## Schritt 8 — reflexion: Takeaway und Rueckblick aus Fall 52
 
-## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
+TAKEAWAY:
 
-TAKEAWAY (core summary):
+Fall 52 lehrt: Beleg sichern, Funktion benennen, Urteil begruenden. Five fields, one method: compare with evidence, judge with reasons. Takeaway-Satz: `Five fields, one method: compare with evidence, judge with reasons.`
 
-The five fields are a toolbox for judging texts, not an encyclopedia. Per field prepare a core question, five terms and one comment template; locate identity texts on conformity vs individualism and media texts on participation vs manipulation. Check the task verb first: outline means reproduce neutrally, discuss and assess mean argue on two sides. Knowledge scores only as judgement.
-Takeaway-Satz: `Themenfeld knowledge is a toolbox for judging texts: identify the field, activate its key terms, and turn knowledge into a reasoned judgement.`
-
-REFLEXION (2 questions):
-1. Self-check: Which Themenfeld was hardest to turn into a comment sentence (Schritt 3), and which one gave the strongest examples?
-2. Plan: Next time I will note the task verb before reading the text, because outline and discuss require completely different answers to the same material.
+REFLEXION:
+1. Welche Spur fiel schwerer, der Nahbeleg oder das Fernurteil?
+2. Beim naechsten Mal sichere ich zuerst Zitat und Zeile, weil sie jede Deutung tragen.

@@ -13,156 +13,111 @@ version: Lesson-v3
 
 # Lernreise: Postcolonialism and Cultural Identity (L1, Ziel Klausur)
 
-<!-- Lesson v3 architecture: Schritte 1 to 8 fixed; Fehlvorstellung between Schritt 6 and 7 (parser skips, not counted); embedded [Werkzeug: <id>]; gating: check/szenario failed = Weiter disabled; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
+<!-- Campaign: Detektive Fal 30 -->
+## Schritt 1 — entdecken: Der versiegelte Umschlag aus der Archivnacht
 
-## Schritt 1 — entdecken: Ziele & Phänomen-Einstieg
+ZIELE (3 Ziele, nach 15 Minuten erreichbar):
 
-OBJECTIVES (three measurable goals of this lesson):
+1. Du ordnest Fall 30 (Passagierschein mit zwei Heimaten) in Kontext, Verfahren und Deutung ein.
+2. Du belegst jede Aussage zu Postcolonialism and Cultural Identity mit Zitat und Zeile und benennst die Funktion.
+3. Du faellst ein Urteil im passenden Anforderungsbereich.
 
-1. You can explain three core concepts in your own words — **diaspora**, **othering**, **hybrid identity** (hybride Identitaet) — each with one invented example sentence.
-2. You can show with five **Nigeria facts** how colonial history shapes contemporary cultural identity.
-3. You can write a **discuss paragraph** on hybrid identity as burden or resource with two sides plus verdict.
+HOOK:
 
-### Hook / Phenomenon
+Mitten in der Nacht flackert das Blaulicht der Agentur fuer Texte und Gedanken ueber den leeren Schreibtischen, und Partner Theo Wort legt einen versiegelten Umschlag auf deinen Platz. Seit Wochen jagt ihr als Gedanken-Agent an der Seite deines Text-Detektivs durch die Jahrhunderte, und jede geloeste Spur oeffnet ein neues Portal in der Zeit. Heute geht es um Postcolonialism and Cultural Identity. Falllinie D: Das Archiv der Agentur meldet einen Riss in der Zeit, durch den ein Text in unsere Gegenwart gefallen ist. Im Umschlag steckt Fall 30: ein Passagierschein mit zwei Heimaten. Kaum haeltst du das Stueck ins Licht, faellt dir eine zweite Schicht auf: Jemand hat die Botschaft frisiert, verkuerzt oder verdreht, und nur wer Beleg, Funktion und Deutung sauber trennt, kann die Manipulation entlarven. Das naechste Portal oeffnet sich nur, wenn du drei Ziele in fuenfzehn Minuten schaffst und jede Behauptung mit Zeile und Wirkung belegst. Theo Wort gru belt schon ungeduldig, denn die Spur wird kalt.
 
-Two calendars hang in one London flat: school term dates and a grandmother's market days in Enugu. Which calendar tells the truth about home? Perhaps both — and that doubling is the whole question. Postcolonial identity (postkoloniale Identitaet) lives in such hybrid spaces between belonging and estrangement. First, strong readings track language as a power signal: English for school and office, Igbo words for intimacy and memory, code-switching as a claim to both worlds. Second, they analyse perspective: Who narrates, who is exoticised, whose gaze defines normal. Third, they connect single images — food, names, hair, photographs — to the larger theme of cultural negotiation rather than listing them. Fourth, they balance (Abwaegung) two judgements: What the text celebrates about hybridity and what it mourns about loss. Identity becomes arguable only when evidence meets ambivalence, and the closing sentence must hold both calendars at once.
+Klausur-Satz: `Identity grows between worlds: neither copy nor opposite, but answer.`
 
-### Core Concept & Definition
+## Schritt 2 — entdecken: Die Ausruestungskiste gegen Fall 30
 
-**Postcolonial identity** emerges from the **tension between inherited traditions and imposed colonial structures**. It is negotiated daily through **language choice, family ritual and public labelling**. The decisive move is **doubling rather than halving**: one more language and one more calendar mean addition, not loss. Identity becomes a repertoire, not a root.
+AUSRUESTUNG (5 Instrumente im Koffer):
 
-### Causal Chain / Model
+- **Othering**: Othering: marking the stranger as opposite of the norm
+- **Hybridity**: Hybridity: mixed identity as third space of belonging
+- **Mimicry**: Mimicry: imitation of power as quiet resistance
+- **Centre and margin**: Centre and margin: who speaks and who is spoken about
+- **Reclaiming voice**: Reclaiming voice: writing back as answer to the canon
 
-The chain runs: **imposition, persistence, mixing, choice**. First, colonisers install English, mission schools and borders as standards through othering. Second, these standards persist after independence as colonial legacy in language and institutions. Third, home languages and faiths mix with them into hybrid everyday forms. Fourth, diaspora life turns the mix into daily decisions about belonging. History structures, individuals answer.
+Klausur-Satz: `Identity grows between worlds: neither copy nor opposite, but answer.`
 
-Klausur-Satz: `Postcolonial identity emerges from the tension between inherited traditions and imposed colonial structures.`
+## Schritt 3 — entdecken: Der Mechanismus hinter dem Tatbild
 
-## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
+MECHANISMUS (Tiefenbau):
 
-PRETRAINING-Box (five core terms with definitions):
+Jeder Fall folgt der Kette Befund, Funktion und Deutung. Zuerst sicherst du den Befund mit Zitat und Zeile, dann bestimmst du die Funktion im Macht- oder Sinn-gefuege, erst danach formulierst du die Deutung zu Postcolonialism and Cultural Identity. Falllinie D: Das Archiv der Agentur meldet einen Riss in der Zeit, durch den ein Text in unsere Gegenwart gefallen ist. Wer die zweite Schicht des Passagierschein mit zwei Heimaten uebersieht, tappt in die Falle der Agentur.
 
-### Hook / Phenomenon
-
-"Where are you really from?" sounds curious and lands like a verdict. One question turns belonging into strangeness. These five terms reveal the mechanism behind the politeness.
-
-### Core Terms & Definitions
-
-- **Diaspora:** a **community living outside its place of origin** while keeping cultural ties to it.
-- **Othering** (Othering): portraying a group as **fundamentally different and inferior** in order to justify power over it.
-- **Hybrid identity** (hybride Identitaet): an identity **blending elements of two or more cultures**, often described as living between worlds.
-- **Colonial legacy** (koloniales Erbe): lasting **political, linguistic and cultural effects** of colonial rule after independence.
-- **Third culture** (dritte Kultur): a **shared way of life** growing among people between their parents' home culture and the host society.
-
-### How They Connect / Model
-
-The terms form one history: **othering** justifies rule by writing the colonised as backward, **colonial legacy** carries schools, language and borders beyond independence, **hybrid identity** answers with creative doubling. **Diaspora** moves the answer to London or New York, **third culture** stabilises it as everyday practice. Power labels, people remix.
-
-Klausur-Satz: `Othering creates a hierarchy of "us" versus "them", while hybrid identity challenges this binary.`
-
-## Schritt 3 — entdecken: Kernkonzept & Wirkungsmodell
-
-TIEFEN-KONZEPT (one concept with visual schema):
-
-### Hook / Phenomenon
-
-A textbook calls a living village "tribal and timeless". A student writes in the margin: "Who decides what is modern?" One margin note reverses four hundred years of gaze. How does a question reclaim definition power?
-
-### Play Task (Gaze-Reversal Sandbox)
-
-Reverse the gaze in four highlighted moves. Move one: highlight the othering label that freezes a community into stereotype. Move two: highlight the margin question that names the labeller. Move three: highlight code-switching traces (English plus Igbo) as lived hybridity. Move four: highlight the doubling verdict "I am double" and attach one Nigeria fact per move. A move without a fact card stays grey.
-
-### Aha-Moment & Rule
-
-The chain runs label, question, code-switch, doubling: the label freezes, the question breaks the hierarchy, code-switching performs daily hybridity as proof, the doubling sentence seals agency as resource. Formula: $Agency=Label+Question_{who defines}$; paragraph rule $Point+Evidence=Explanation$. Critique plus practice produce agency. Note: if the class case study uses India or Kenya instead of Nigeria, the concept chain stays identical; only the facts change.
 ```diagram
-  COLONIAL PAST -> POSTCOLONIAL PRESENT
-  othering ("them") vs. hybrid identity ("both/and")
-  imposed norm [language / school / border]
-    + home resources [language / family / faith]
-    -> diaspora: living between worlds
-    -> third culture: negotiated everyday mix
-  Rule: doubling, not halving.
-  Formula: $Agency=Label+Question_{who defines}$
+Befund (Zitat mit Zeile) -> Funktion (Wirkung im Gefuege) -> Deutung (Urteil)
+Fall 30: Passagierschein mit zwei Heimaten -> Spur sichern -> Tatbild schliessen
 ```
 
-Klausur-Satz: `Hybrid identity can be read as a creative answer to the colonial practice of othering.`
+Klausur-Satz: `Identity grows between worlds: neither copy nor opposite, but answer.`
 
-## Anekdote & Fun-Fact
+## Anekdote
 
-**Anekdote / Fun-Fact (EN)**: In many Lagos markets, traders switch languages three times in one sentence — a greeting in Yoruba, a price in English, a joke in Pidgin. Linguists call this code-switching, and novelists imitate it to show identity in action.
+A librarian shelved returned books face-out, so answers meet questions.
 
-**Bezug zum Konzept**: `Code-switching makes hybrid identity audible in everyday communication.`
+Bezug zum Konzept: `Identity grows between worlds: neither copy nor opposite, but answer.`
 
-## Schritt 4 — ausprobieren: Interaktive Praxis & Text-Labor
-
-MODEL TASK (worked example with solution):
+## Schritt 4 — ausprobieren: Die Sandkasten-Pruefung mit Textlupe
 
 [Werkzeug: highlighter]
 
-TASK (examine, AFB II): Reversal puzzle — examine how the invented vignette below presents hybrid identity. Highlight markers of diaspora, othering and hybridity (five Nigeria facts are given; use at least three).
+AUFGABE: Untersuche den Fall-Text 30 (Passagierschein mit zwei Heimaten) zu Postcolonialism and Cultural Identity.
+TARGET: Drei Belege mit Zeile, je mit Funktion und einer Deutung in vier Saetzen.
 
-Vignette "Two Passports, One Kitchen" (original, 110 words): "Adaeze keeps two calendars in her London flat: the school term dates and her grandmother's market days in Enugu. At parents' evening she speaks polished English; on video calls she haggles in Igbo and laughs when her mother corrects her accent. A textbook once called her grandparents' village 'tribal and timeless' — she now writes in the margin: 'Who decides what is modern?' On Sundays jollof rice steams next to frozen pizza. 'I am not half of anything,' she says. 'I am double.'"
+HILFE:
+1. Schritt 1: Ordne den Fall in zwei Saetzen ein.
+2. Schritt 2: Sichere zwei Befunde mit Zeile.
+3. Schritt 3: Deute Befund und Funktion im Fallganzen.
 
-Nigeria in 5 facts (for Klausur use): 1. Most populous African country, over 200 million people. 2. More than 250 ethnic groups, largest: Hausa-Fulani, Yoruba, Igbo. 3. Former British colony, independent since 1960; English remains the official language. 4. Major religions: Islam in the north, Christianity in the south, plus indigenous traditions. 5. Large diaspora in Britain and the USA; Nollywood and Afrobeats spread its culture globally.
+MUSTERLOESUNG: Der Fall 30 zeigt Postcolonialism and Cultural Identity in drei Schritten. Erstens belegt ein Zitat mit Zeile den Kern des Passagierschein mit zwei Heimaten, zweitens traegt die Funktion die Wirkung im Gefuege, drittens schliesst die Deutung das Tatbild. Damit ist die zweite Schicht entlarvt und das Portal oeffnet sich.
 
-HELP:
-1. Mark diaspora traces (London flat, two calendars, video calls).
-2. Mark othering (textbook phrase "tribal and timeless" plus margin question).
-3. Mark hybridity (polished English plus Igbo, jollof plus pizza, "I am double") and link one Nigeria fact each.
+Klausur-Satz: `Identity grows between worlds: neither copy nor opposite, but answer.`
 
-MODEL SOLUTION: Diaspora appears in the split setting London and Enugu and the two calendars, matching fact 5 (large British diaspora). Othering appears in the textbook label "tribal and timeless", which freezes a dynamic Igbo community (fact 2) into a backward stereotype; the margin question reverses the gaze and reclaims definition power. Hybrid identity appears in code-switching (English and Igbo, fact 3) and in the kitchen image (jollof plus pizza): cultures are doubled, not halved. The closing line "I am double" turns hybridity from deficit into resource.
+## Schritt 5 — ausprobieren: Das doppelte Spiel Weg A gegen Weg B
 
-Klausur-Satz: `The vignette presents hybrid identity not as loss but as a conscious doubling of cultural resources.`
+VERGLEICH: Waehle erst das Verfahren, dann loesen: (i) Weg A Nahverfahren (Beleg, Zitat, Wirkung) oder (ii) Weg B Fernverfahren (Kontext, Gefuege, Urteil).
 
-## Schritt 5 — ausprobieren: Verfahrensvergleich & Abgrenzung
+AUFGABE A: Welche Spur im Passagierschein mit zwei Heimaten verlangt Weg A? Begründe mit Zitat.
+AUFGABE B: Welche Frage zum Fallganzen verlangt Weg B? Begründe mit Kontext.
 
-COMPARISON (two procedures):
+HILFE: A fragt nach Form und Naehe, also Weg A. B fragt nach Rolle und Ganzem, also Weg B.
 
-COMPARISON: Decide first — (i) examine procedure (how the text presents identity: proof plus concept) or (ii) discuss procedure (whether hybridity is burden or resource: two sides plus verdict) — then write.
+ANTWORT: A erfordert Weg A: Der Nahbeleg mit Zitat und Zeile zeigt die Wirkung im Detail. B erfordert Weg B: Der Fernblick auf Kontext und Gefuege sichert das Urteil zu Postcolonialism and Cultural Identity.
 
-TASK A: Examine how Adaeze's language use signals belonging.
-TASK B: Discuss whether hybrid identity is a burden or a resource.
-
-HELP: A asks "how ... signals" -> procedure (i), text proof plus concept. B asks "whether" and "burden or resource" -> procedure (ii), two sides plus verdict. Rule: "how is X presented" requires examine; "discuss" and "to what extent" require balanced judgement with concession.
-
-ANSWER: A requires procedure (i): Polished school English signals public belonging in Britain, Igbo haggling signals intimate belonging to the Enugu family; switching marks flexible double membership. B requires procedure (ii): On the one hand, constant switching can feel exhausting and invite othering ("Where are you really from?"); on the other hand, double literacy — two languages, two calendars — widens career and cultural options. Overall, the text weighs the resource side more heavily: hybridity costs effort but pays in perspective.
-
-Klausur-Satz: `Although hybridity demands daily negotiation, it ultimately offers a broader repertoire of belonging.`
+Klausur-Satz: `Identity grows between worlds: neither copy nor opposite, but answer.`
 
 ## Schritt 6 — check: Selbsttest zu Postcolonialism and Cultural Identity
-CHECK (three questions with answers):
 
-FRAGE: Define diaspora, othering and hybrid identity in one line each. | ANTWORT: Diaspora — a community living outside its origin with ties back home; othering — defining a group as inferior "them" to secure power; hybrid identity — a blended "both/and" self between cultures.
-FRAGE: Name three Nigeria facts useful for a Klausur example. | ANTWORT: Independent from Britain since 1960 with English as official language; over 250 ethnic groups (Hausa-Fulani, Yoruba, Igbo); large diaspora in Britain and the USA plus global Nollywood and Afrobeats culture.
-FRAGE: What sentence structure fits a discuss question? | ANTWORT: On the one hand ... / on the other hand ... / overall ... — balance two sides before giving a reasoned judgement.
+CHECK (drei Fragen mit Antworten):
 
-Klausur-Satz: `Colonial legacy survives in language and institutions, but diaspora communities actively reshape it.`
+FRAGE: Nenne die Drei-Schritt-Kette. | ANTWORT: Befund mit Zeile, Funktion im Gefuege, Deutung als Urteil.
+FRAGE: Was verlangt Weg A? | ANTWORT: Nahbeleg mit Zitat und Wirkung am Detail.
+FRAGE: Was verlangt Weg B? | ANTWORT: Kontext und Gefuege als Traeger des Urteils.
+
+Klausur-Satz: `Identity grows between worlds: neither copy nor opposite, but answer.`
 
 ## Fehlvorstellung
 
-(not a Schritt; parser skips automatically)
+1. Fehlvorstellung: Cultures are boxes.
+   Korrektur-Satz: `Belonging is layered and negotiated daily.`
+2. Fehlvorstellung: History is past.
+   Korrektur-Satz: `Narratives rule who may speak today.`
 
-1. Error: "Hybrid identity means half and half, incomplete on both sides."
-   Correction: That is a deficit view. Texts typically write doubling, not halving: one more language and one more festival is addition, not subtraction. The exam formulation is doubling, not lack.
-   Korrektur-Satz: `Hybrid identity should be described as a doubling of resources, not as a lack of belonging.`
+## Schritt 7 — szenario: Klausurtransfer: Culture editor of the student magazine zu Fall 30
 
-2. Error: "Colonial influence ends with independence."
-   Correction: Independence is a political event; legacy is a long structure: official language, schoolbooks and borders persist. Postcolonial analysis asks what remains after independence.
-   Korrektur-Satz: `Political independence does not end colonial legacy in language, education and borders.`
+ROLLE: Du bist Culture editor of the student magazine in der Pruefung.
+SITUATION: Ein Fall zu Postcolonialism and Cultural Identity (Fall 30, Passagierschein mit zwei Heimaten) liegt unbearbeitet auf dem Tisch.
+AUFGABE: Verfasse circa 150 Woerter mit Einordnung, zwei Belegen mit Zeile, Funktion, Deutung und Schlussurteil.
+RUBRIC (30 XP): Einordnung korrekt (6 XP) | Zwei Belege mit Zeile (10 XP) | Funktion plus Deutung (10 XP) | Fachsprache und Schluss (4 XP).
 
-## Schritt 7 — szenario: Klausurtransfer: Postcolonialism and Cultural Identity
-ROLE: You are a guest writer for the school magazine culture page.
-SITUATION: After a reading project on a postcolonial short story, readers ask what "third culture" means in daily life. Explain it with one invented everyday scene (ca. 100 words) and close with a 60-word discuss-style judgement: burden or resource?
-TASK: Write the scene with at least one diaspora marker and one othering moment, then give a balanced judgement.
-RUBRIC (30 XP): Correct use of diaspora, othering and hybrid vocabulary (10 XP) | At least two Nigeria facts integrated naturally (10 XP) | Balanced discuss structure with closing judgement (10 XP).
+## Schritt 8 — reflexion: Takeaway und Rueckblick aus Fall 30
 
-## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
+TAKEAWAY:
 
-TAKEAWAY (core summary):
+Fall 30 lehrt: Beleg sichern, Funktion benennen, Urteil begruenden. Identity grows between worlds: neither copy nor opposite, but answer. Takeaway-Satz: `Identity grows between worlds: neither copy nor opposite, but answer.`
 
-Mark three colours: diaspora in places (two calendars, video calls), othering in labels ("tribal" and similar terms plus who defines), hybridity in addition (two languages, two meals, "double"). Examine answers how it is written; discuss answers how it is judged: first burden, then resource, then verdict. Memorise three of the five Nigeria facts and use two: 1960 independence plus English official, 250 plus ethnic groups, diaspora plus popular culture.
-Takeaway-Satz: `Spot diaspora in places, othering in labels, hybridity in doubling — then examine the craft and discuss the value.`
-
-REFLEXION (2 questions):
-1. Self-check: Which was harder — linking Nigeria facts to the text (Schritt 4) or balancing burden vs resource (Schritt 5)?
-2. Plan: Next time I will underline every language switch first, because each switch is visible proof of hybrid identity.
+REFLEXION:
+1. Welche Spur fiel schwerer, der Nahbeleg oder das Fernurteil?
+2. Beim naechsten Mal sichere ich zuerst Zitat und Zeile, weil sie jede Deutung tragen.

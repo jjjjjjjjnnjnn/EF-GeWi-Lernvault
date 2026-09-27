@@ -13,118 +13,130 @@ version: Lesson-v3
 
 # Lernreise: Media Manipulation and Fake News (L1, Ziel Klausur)
 
-<!-- Lesson v3: Schritt 1-8 feste Struktur; Fehlvorstellung zwischen Schritt 6 und 7 (Parser skip); [Werkzeug: <id>] interaktiv; Gating: check/szenario nicht bestanden = Weiter grau; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
+<!-- Campaign: Detektive Fal 37 -->
+## Schritt 1 — entdecken: Der versiegelte Umschlag aus der Registratur
 
-## Schritt 1 — entdecken
+ZIELE (3 goals in 15 minutes, read Chinese first, then English):
 
-ZIELE (3 Ziele, nach 15 Minuten erreichbar):
+1. 中文：能把第37号案件（链式消息截图）按背景、方法、判断拆开。
+   English: Place case 37 in context, method and judgement.
+2. 中文：每个论断配引文出处并说清效果。
+   English: Support each claim with quotation and effect.
+3. 中文：按题型写出权衡判断。
+   English: Judge with reasons in the right task type.
 
-1. You can define $News = fact + source + check$ against $Fake = claim - proof$.
-2. You can analyse $Bias = selection + framing + tone$ in posts and articles.
-3. You can evaluate a viral claim with $lateral + source + motive$ (AFB II).
+HOOK:
 
-EINSTIEG: In 2016 a false story claimed $Pope = candidate_X$ and outran $truth = check$. Shares beat sources because $emotion > evidence$. Whoever reads $likes$ as $proof$ loses. Media literacy turns $viral$ into $verifiable$.
+深夜，跨时空文案侦探社的蓝灯又亮了。搭档把一只密封信封推到你面前：这是第37号案件，一份链式消息截图。表面看只是一段媒体操纵，但灯光下浮现出第二层痕迹——有人删改、夸大或偷换了关键信息。你们作为思想特工与文本侦探，必须在十五分钟内锁定三个目标：找证据、说功能、下判断，每一步都要有出处支撑。下一道时空门只为证据链完整的人打开，搭档已经在催你了，线索正在变冷。
 
-Klausur-Satz: `Shares measure speed, sources measure truth.`
+English hook: Agent Theo Wort drops case file 37 (Screenshot einer Kettennachricht mit Warnstempel) on your desk. Falllinie C: Hinter einer Stahltuer rauscht ein Ministerium, das Woerter loescht und Gedanken neu schreibt.
 
-## Schritt 2 — entdecken
+Klausur-Satz: `Feeds farm attention: whoever checks the chain keeps judgement.`
 
-GRUNDBEGRIFFE (5 Begriffe):
+## Schritt 2 — entdecken: Die Ausruestungskiste gegen Fall 37
 
-- **Fake news**: $Fake = false + intent$, made to $mislead \lor profit$.
-- **Bias**: $Bias = selection + framing$, what is $shown + how$ it is $angled$.
-- **Filter bubble**: $Feed = past + likes$, narrows $view = similar$.
-- **Lateral reading**: $Check = open + compare$, leaves the $page$ to $verify$.
-- **Source triad**: $Trust = author + date + outlet$, tested with $motive + evidence$.
+装备盒（5件，先读中文，再背英文）：
 
-Klausur-Satz: `Open tabs before opening mouths.`
+- 中文点拨：媒体操纵之1号工具。
+  English: **Algorithmic feed: selection that feels like choice**
+- 中文点拨：媒体操纵之2号工具。
+  English: **Emotional trigger: anger as fastest share button**
+- 中文点拨：媒体操纵之3号工具。
+  English: **Fake authority: borrowed coats for empty claims**
+- 中文点拨：媒体操纵之4号工具。
+  English: **Echo chamber: agreement that mutes doubt**
+- 中文点拨：媒体操纵之5号工具。
+  English: **Verification chain: source, date and second witness**
 
-## Schritt 3 — entdecken
+Klausur-Satz: `Feeds farm attention: whoever checks the chain keeps judgement.`
 
-KONZEPT (ein Konzept plus ein Textdiagramm):
+## Schritt 3 — entdecken: Der Mechanismus hinter dem Tatbild
 
-Manipulation works as $Effect = emotion \times repetition$. $Headline + image + number$ trigger $anger \lor fear$, repetition turns $claim$ into $felt fact$. Defence is $SIFT = stop + investigate + find + trace$: $Stop$ the share, $investigate$ the source, $find$ better coverage, $trace$ to $origin$.
+中文深层解构：媒体操纵的核心链是证据、效果、判断。第37号案件（链式消息截图）的伪装层就藏在链条中间。
+
+English: Quotation plus effect equals judgement on Media Manipulation and Fake News.
 
 ```diagram
-    Attack:
-    [Emotion] x [Repetition] -> felt truth
-    Tools: headline + cropped image + fake number
-    Defence:
-    S = Stop, I = Investigate source
-    F = Find coverage, T = Trace origin
-    Rule: claim - source = doubt, claim + source = test
+Evidence (quotation) -> Effect (function) -> Judgement (verdict)
+Case 37
 ```
 
-Klausur-Satz: `Emotion accelerates, method brakes.`
+Klausur-Satz: `Feeds farm attention: whoever checks the chain keeps judgement.`
 
-## Schritt 4 — ausprobieren
+## Anekdote
 
-BEISPIEL (Musteraufgabe mit Werkzeug):
+中文解读：媒体操纵里藏着侦探的耐心：每个细节都是时空门的钥匙。
 
-[Werkzeug: balance]
+English: A class once traced a rumour to a single cropped photo.
 
-AUFGABE (analyse, AFB II): Analyse a viral post claiming $Vaccine = chip$ with $photo + number + caps$.
+Bezug zum Konzept: `Feeds farm attention: whoever checks the chain keeps judgement.`
 
-HILFE:
-1. Schritt 1: Test $author + date + outlet$ for $trust$.
-2. Schritt 2: Mark $emotion + framing + crop$ for $bias$.
-3. Schritt 3: $Trace$ image and $find$ second source, then judge.
+## Schritt 4 — ausprobieren: Die Sandkasten-Pruefung mit Textlupe
 
-MUSTERLOESUNG: The author is $unknown + undated$, the outlet $blog + ads$, so $Trust = low$. Caps with $fear + disgust$ push $shares$, the photo is $cropped + old$ and the number $lacks + unit$. Lateral search finds $fact = 0$ and $origin = satire + shop$. Result: $Fake = claim - proof + motive$, verdict $false$ with $confidence = high$.
+[Werkzeug: highlighter]
 
-Klausur-Satz: `No source plus big feeling equals big doubt.`
+中文任务：分析第37号案文本（链式消息截图）。
+English TASK: Examine case 37 (Screenshot einer Kettennachricht mit Warnstempel) on Media Manipulation and Fake News.
+TARGET: Three quotations, each with effect and judgement in four sentences.
 
-## Schritt 5 — ausprobieren
+HILFE（中文在前）：
+1. 中文：两句交代背景。English: Place the case in two sentences.
+2. 中文：锁两个证据。English: Secure two quotations.
+3. 中文：效果加判断。English: Add effect and judgement.
 
-VERGLEICH (Verfahren A gegen Verfahren B):
+MUSTERLOESUNG: 中文示范：背景一句，证据加效果两句，判断一句。
+English MODEL: Case 37 shows Media Manipulation and Fake News in three moves with quotation, effect and judgement; the cover is blown.
 
-VERGLEICH: Waehle zuerst das Verfahren — (i) Text-Verfahren (mit $tone + image + framing$ argumentieren) oder (ii) Source-Verfahren (mit $author + outlet + trace$ argumentieren) — dann loesen.
+Klausur-Satz: `Feeds farm attention: whoever checks the chain keeps judgement.`
 
-AUFGABE A: Assess an angry meme without source.
-AUFGABE B: Assess two outlets reporting $same event \ne same angle$.
+## Schritt 5 — ausprobieren: Das doppelte Spiel Weg A gegen Weg B
 
-HILFE: A nennt Gefuehl ohne Herkunft, also Verfahren (i). B nennt zwei Redaktionen, also Verfahren (ii).
+VERGLEICH（中文先行）：先选路再做题：【选概念】(i) Weg A 近路（引文细节）还是 (ii) Weg B 远路（背景判断）。
+English: Choose the path first (close Way A or distant Way B), then write.
 
-ANTWORT: A erfordert Verfahren (i): $Caps + crop + blame$ signal $manipulation = high$. B erfordert Verfahren (ii): $Owner + audience + choice$ explain $bias = selection + framing$, truth needs $compare = 2 + sources$.
+TASK A（中文：哪条线索走近路？）: Which trace needs Way A?
+TASK B（中文：哪个整体问题走远路？）: Which whole-case question needs Way B?
 
-Klausur-Satz: `Memes test feeling, outlets test ownership.`
+HILFE：细节问选近路Way A，整体问选远路Way B。【选概念看题干：compare列异同，assess做权衡。】
 
-## Schritt 6 — check
+中文答案：A近路靠引文，B远路靠背景。
+English ANSWER: A takes Way A with close quotation, B takes Way B with context on Media Manipulation and Fake News.
 
-CHECK (Selbsttest, 3 Fragen):
+Klausur-Satz: `Feeds farm attention: whoever checks the chain keeps judgement.`
 
-FRAGE: What is SIFT? | ANTWORT: $SIFT = stop + investigate + find + trace$ against $viral$.
-FRAGE: How to spot bias? | ANTWORT: $Bias = selection + framing + tone$ in $headline + image + verbs$.
-FRAGE: When to share? | ANTWORT: If $Trust = author + date + outlet + evidence$, else $stop = true$.
+## Schritt 6 — check: Selbsttest zu Media Manipulation and Fake News
 
-Klausur-Satz: `Check first, share later or never.`
+CHECK (drei Fragen mit Antworten):
+
+中文自测：
+FRAGE: 三步链是什么？ | ANTWORT: Quotation, effect, judgement.
+FRAGE: 近路要什么？ | ANTWORT: Close quotation with effect.
+FRAGE: 远路要什么？ | ANTWORT: Context as carrier of judgement.
+
+Klausur-Satz: `Feeds farm attention: whoever checks the chain keeps judgement.`
 
 ## Fehlvorstellung
 
-(kein Schritt, Parser skippt diesen Abschnitt)
+1. 中文误解：媒体操纵只看表面。
+   中文纠偏：引文加效果才是得分点。
+   Korrektur-Satz: `Spread measures feeling, not fact.`
+2. 中文误解：媒体操纵只看表面。
+   中文纠偏：引文加效果才是得分点。
+   Korrektur-Satz: `Two independent witnesses make a claim stand.`
 
-1. Fehlvorstellung: Top results and many likes equal truth.
-   Korrektur: $Rank = ads + clicks$, not $proof$; truth needs $source + method$.
-   Korrektur-Satz: `Popularity ranks attention, not accuracy.`
-2. Fehlvorstellung: Neutral means middle between lie and fact.
-   Korrektur: $Balance = evidence$, not $midpoint$; false balance with $1\% \lor 99\%$ misleads.
-   Korrektur-Satz: `Fairness follows evidence, not symmetry.`
+## Schritt 7 — szenario: Klausurtransfer: Fact-check editor zu Fall 37
 
-## Schritt 7 — szenario
+ROLLE（中文）：你是Fact-check editor，负责审稿。
+English ROLE: You are Fact-check editor.
+SITUATION: Case 37 waits on your desk.
+TASK（中文）：150词左右，含背景、证据、权衡判断。
+RUBRIC (30 XP): Context (6 XP) | Quotations (10 XP) | Effect plus judgement (10 XP) | Register (4 XP).
 
-ROLLE: You are fact-checker of the school blog.
-SITUATION: A post claims $School = close_Tomorrow$ with $screenshot - link$.
-AUFGABE (evaluate, AFB III): Verify the claim in a coherent report (ca. 150 words) with SIFT log, bias note and share advice.
-RUBRIC (30 XP): SIFT steps with $trace$ (10 XP) | Source triad tested (10 XP) | Bias plus advice (5 XP) | Coherent language (5 XP).
+## Schritt 8 — reflexion: Takeaway und Rueckblick aus Fall 37
 
-## Schritt 8 — reflexion: Takeaway & Reflexion
+中文总结：第37号案件教会我们：先锁引文，再说效果，最后判断。
+English TAKEAWAY: Secure quotation, name effect, judge with reasons. `Feeds farm attention: whoever checks the chain keeps judgement.`
 
-TAKEAWAY: Remember $stop + source = safety$. Read $laterally$, compare $doubly$, share $rarely$. Anchor: $Claim - proof = pause$.
-
-REFLEXION:
-1. What was harder — $emotion$-spotting (Schritt 4) or $source$-tracing (Schritt 5)?
-2. Plan: Next time I run $SIFT = 4$ steps before any judgement.
-
-Anekdote (DE): When Orson Welles aired $War = radio + drama$ in 1938, listeners mistook $play$ for $invasion$. Newspapers counted $panic > fact$ the next day — a live lesson that $voice + music$ beats $doubt$ until $checks$ arrive.
-
-Bezug: `Welles shows: Drama plus haste equals felt emergency.`
+REFLEXION（中文在前）：
+1. 中文：近路和远路哪个更难？English: Which was harder, close quotation or distant judgement?
+2. 中文：下次先划引文。English: Next time I secure quotations first.

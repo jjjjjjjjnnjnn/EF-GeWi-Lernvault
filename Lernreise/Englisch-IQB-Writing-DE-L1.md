@@ -13,154 +13,111 @@ version: Lesson-v3
 
 # Lernreise: IQB Writing: Summary, Analysis, Comment (L1, Ziel Klausur)
 
-<!-- Lesson v3 architecture: Schritte 1 to 8 fixed; Fehlvorstellung between Schritt 6 and 7 (parser skips, not counted); embedded [Werkzeug: <id>]; gating: check/szenario failed = Weiter disabled; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
+<!-- Campaign: Detektive Fal 40 -->
+## Schritt 1 — entdecken: Der versiegelte Umschlag aus der Archivnacht
 
-## Schritt 1 — entdecken: Ziele & Phänomen-Einstieg
+ZIELE (3 Ziele, nach 15 Minuten erreichbar):
 
-OBJECTIVES (three measurable goals of this lesson):
+1. Du ordnest Fall 40 (Einleitung mit durchgestrichener These) in Kontext, Verfahren und Deutung ein.
+2. Du belegst jede Aussage zu IQB Writing: Summary, Analysis, Comment mit Zitat und Zeile und benennst die Funktion.
+3. Du faellst ein Urteil im passenden Anforderungsbereich.
 
-1. You can explain the fixed **IQB chain** with AFB levels — Task 1 outline, Task 2 analyse, Task 3 comment — in unchangeable order without early judgement.
-2. You can open each part correctly: **summary first sentence** with four elements, analysis thesis sentence, comment position sentence; length ratio about 20 / 40 / 40.
-3. You can check a three-task answer against **content, language and accuracy**, and name the most frequent structural losses.
+HOOK:
 
-### Hook / Phenomenon
+Mitten in der Nacht flackert das Blaulicht der Agentur fuer Texte und Gedanken ueber den leeren Schreibtischen, und Partner Theo Wort legt einen versiegelten Umschlag auf deinen Platz. Seit Wochen jagt ihr als Gedanken-Agent an der Seite deines Text-Detektivs durch die Jahrhunderte, und jede geloeste Spur oeffnet ein neues Portal in der Zeit. Heute geht es um IQB Writing: Summary, Analysis, Comment. Falllinie D: Das Archiv der Agentur meldet einen Riss in der Zeit, durch den ein Text in unsere Gegenwart gefallen ist. Im Umschlag steckt Fall 40: ein Einleitung mit durchgestrichener These. Kaum haeltst du das Stueck ins Licht, faellt dir eine zweite Schicht auf: Jemand hat die Botschaft frisiert, verkuerzt oder verdreht, und nur wer Beleg, Funktion und Deutung sauber trennt, kann die Manipulation entlarven. Das naechste Portal oeffnet sich nur, wenn du drei Ziele in fuenfzehn Minuten schaffst und jede Behauptung mit Zeile und Wirkung belegst. Theo Wort gru belt schon ungeduldig, denn die Spur wird kalt.
 
-Three tasks, one text — and most students write the same paragraph three times. Summary becomes opinion, analysis becomes retelling, comment becomes repetition. Why do good writers fail a format they fully understand? Because each IQB task type (Aufgabenart: summary, analysis, comment) rewards a different operation with different sentence skeletons. First, the summary reports content in own words, present tense, no quotation, no judgement, roughly one third of the length. Second, the analysis breaks effects down with the P.E.E. chain: device named, evidence quoted briefly, effect explained and tied to intention (Wirkung und Intention). Third, the comment leaves the text and judges the issue with weighed arguments and discourse markers like however, admittedly and consequently. Fourth, planning time must be split before writing: five minutes for structure, twenty for drafting, five for checking task fidelity. Format discipline beats fluency, because the examiner scans each part for its own procedure.
+Klausur-Satz: `Summary reports, analysis proves, comment judges with reasons.`
 
-### Core Concept & Definition
+## Schritt 2 — entdecken: Die Ausruestungskiste gegen Fall 40
 
-The **IQB chain** is a **fixed three-task sequence on one source** with strictly different functions. **Outline** compresses what the author says, **analyse** explains how she says it and to what effect, **comment** judges whether her view holds. The order never changes and early judgement breaks the task. Each level owns its AFB: reproduction, analysis, evaluation.
+AUSRUESTUNG (5 Instrumente im Koffer):
 
-### Causal Chain / Model
+- **Summary**: Summary: gist in own words without judgement
+- **Analysis**: Analysis: device plus quotation plus effect
+- **Comment**: Comment: balanced view with concession and verdict
+- **Linking**: Linking: paragraph bridges as reader guidance
+- **Register**: Register: academic tone as mark of reliability
 
-The chain runs: **compress, prove, judge, link**. First, Task 1 reproduces required aspects in own words and present tense without verdict. Second, Task 2 proves devices through line of argument plus one P.E.E. chain per focus. Third, Task 3 judges with position, exemplified arguments, counterargument and final verdict. Fourth, Task 3 bridges back to a Task 2 finding so the answer reads as one argument. Blurring the levels zeroes the task.
+Klausur-Satz: `Summary reports, analysis proves, comment judges with reasons.`
 
-Klausur-Satz: `Outline reproduces what the author says, analyse explains how she says it and to what effect, and comment judges whether her view holds — the three tasks must not blur into one another.`
+## Schritt 3 — entdecken: Der Mechanismus hinter dem Tatbild
 
-## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
+MECHANISMUS (Tiefenbau):
 
-PRETRAINING-Box (five core terms with definitions):
+Jeder Fall folgt der Kette Befund, Funktion und Deutung. Zuerst sicherst du den Befund mit Zitat und Zeile, dann bestimmst du die Funktion im Macht- oder Sinn-gefuege, erst danach formulierst du die Deutung zu IQB Writing: Summary, Analysis, Comment. Falllinie D: Das Archiv der Agentur meldet einen Riss in der Zeit, durch den ein Text in unsere Gegenwart gefallen ist. Wer die zweite Schicht des Einleitung mit durchgestrichener These uebersieht, tappt in die Falle der Agentur.
 
-### Hook / Phenomenon
-
-Copying a brilliant sentence feels safe and costs the content marks. Retelling the plot feels thorough and fails Task 2. Two instincts, two traps — five terms disarm both.
-
-### Core Terms & Definitions
-
-- **Outline and sum up** (Zusammenfassung): Task 1 as **compressed paraphrase without comment**, covering only the required aspects.
-- **Analyse** (Analyse): Task 2 as **devices and effects only** — how it is done, not what is said.
-- **Comment** (Stellungnahme): Task 3 as **position, reasons, examples, counterargument and final judgement**.
-- **Line of argument** (Argumentationslinie): the **order in which the author proceeds** such as contrast, climax or concession and turn; first step of Task 2.
-- **Target format** (Zieltextformat): if Task 3 requires a **blog or article**, title, direct address and closing interaction score separately.
-
-### How They Connect / Model
-
-The terms form one ladder: **outline** stays neutral on AFB I, **analyse** climbs to effects on AFB II through **line of argument** plus P.E.E., **comment** judges on AFB III with counterargument. The **target format** adds a parallel genre mark where required. Mixing the rungs — verdict in Task 1, retelling in Task 2, repetition in Task 3 — breaks the ladder at every step.
-
-Klausur-Satz: `The three tasks form one chain, so I keep summary, analysis and comment strictly apart and let each task build on the previous one.`
-
-## Schritt 3 — entdecken: Kernkonzept & Wirkungsmodell
-
-TIEFEN-KONZEPT (one concept with visual schema):
-
-### Hook / Phenomenon
-
-"Each mirror shows only half of my face" — one image says more than a page of biography. Why does a concrete mirror convince where abstract belonging bores?
-
-### Play Task (Chain-Sorter Puzzle)
-
-Sort the IQB chain as a puzzle: nine task cards — own words, present tense, line of argument, P.E.E., position, counterargument, verdict — wait unsorted. Highlight the operator verb first (outline, analyse, comment), then drop each card into its AFB slot: Task 1 outline (AFB I, neutral), Task 2 analyse (AFB II, imagery plus contrast), Task 3 comment (AFB III, judgement). A comment card in the summary slot bounces back; analysis without a line reference stays locked.
-
-### Aha-Moment & Rule
-
-The chain runs line, device, effect, overall: the line of argument is fixed as contrast, one P.E.E. block proves imagery with quote and line, a second block proves contrast through symmetrical structure, one overall sentence summarises without new information. Formula: $Effect=Image+Contrast+l.$; paragraph rule $Point+Evidence=Explanation$. Task 3 must bridge back to a Task 2 finding.
 ```diagram
-  ONE SOURCE -> THREE TASKS (fixed order)
-  TASK 1 outline AFB I ~20%: four elements + core points
-    own words, present tense, neutral, NO verdict
-  TASK 2 analyse AFB II ~40%: line of argument + P.E.E.
-    Point -> Evidence (l. ...) -> Explain (effect)
-  TASK 3 comment AFB III ~40%: assess or discuss
-    position + arguments + example + counter + verdict
-  Rule: Task 3 bridges back to a Task 2 finding.
-  Formula: $Effect=Image+Contrast+l.$
+Befund (Zitat mit Zeile) -> Funktion (Wirkung im Gefuege) -> Deutung (Urteil)
+Fall 40: Einleitung mit durchgestrichener These -> Spur sichern -> Tatbild schliessen
 ```
 
-Klausur-Satz: `Each task in the IQB chain has its own AFB level, which is why a comment must never turn into a second summary and an analysis must never retell the plot.`
+Klausur-Satz: `Summary reports, analysis proves, comment judges with reasons.`
 
-## Anekdote & Fun-Fact
+## Anekdote
 
-**Anekdote / Fun-Fact (EN)**: The AFB ladder from reproduction to evaluation behind outline, analyse and comment follows an older model: the taxonomy of learning objectives by American psychologist Benjamin Bloom from the 1950s. It orders thinking from recall through application to judgement — exactly the steps reappearing as outline, analyse and comment.
+A marker once praised a comment that conceded before it conquered.
 
-**Bezug zum Konzept**: The AFB I to III ladder behind outline, analyse and comment comes from a general taxonomy of thinking levels, which is why each task must stay on its own level.
+Bezug zum Konzept: `Summary reports, analysis proves, comment judges with reasons.`
 
-## Schritt 4 — ausprobieren: Interaktive Praxis & Text-Labor
+## Schritt 4 — ausprobieren: Die Sandkasten-Pruefung mit Baukasten
 
-MODEL TASK (worked example with solution):
+[Werkzeug: lego]
 
-[Werkzeug: highlighter]
+AUFGABE: Untersuche den Fall-Text 40 (Einleitung mit durchgestrichener These) zu IQB Writing: Summary, Analysis, Comment.
+TARGET: Drei Belege mit Zeile, je mit Funktion und einer Deutung in vier Saetzen.
 
-TASK (analyse, AFB II): Imagery puzzle — read the short extract below and analyse how the author portrays her split identity. Highlight imagery and contrast traces first, then focus on imagery and contrast, and use P.E.E.
+HILFE:
+1. Schritt 1: Ordne den Fall in zwei Saetzen ein.
+2. Schritt 2: Sichere zwei Befunde mit Zeile.
+3. Schritt 3: Deute Befund und Funktion im Fallganzen.
 
-> Extract (original practice text): "My grandmother calls me her 'London girl'; my classmates call me 'the foreign one'. I grew up with Yoruba proverbs at breakfast and English news at dinner. Both cities give me a mirror, but each mirror shows only half of my face."
+MUSTERLOESUNG: Der Fall 40 zeigt IQB Writing: Summary, Analysis, Comment in drei Schritten. Erstens belegt ein Zitat mit Zeile den Kern des Einleitung mit durchgestrichener These, zweitens traegt die Funktion die Wirkung im Gefuege, drittens schliesst die Deutung das Tatbild. Damit ist die zweite Schicht entlarvt und das Portal oeffnet sich.
 
-HELP:
-1. Fix the line of argument first — the text opposes two worlds (contrast) and shows identity through images (imagery).
-2. Write one P.E.E. block per focus; name the device, quote with line reference and explain the effect.
-3. Close with one overall sentence summarising the combined effect — no new information.
+Klausur-Satz: `Summary reports, analysis proves, comment judges with reasons.`
 
-MODEL SOLUTION: Imagery — Point: She pictures identity as a mirror that "shows only half of my face" (l. 4). Evidence: The mirror metaphor turns an abstract feeling into a concrete image. Explain: The reader visualises the half face, so incompleteness on both sides becomes tangible, which arouses sympathy. Contrast — Point: The author builds two parallel worlds, Yoruba proverbs "at breakfast" versus English news "at dinner" (l. 3). Evidence: The symmetrical structure sets both cultures side by side. Explain: Neither world alone completes her, so the reader understands her in-between position rather than judging it. Overall: mirror imagery plus breakfast-dinner contrast show identity built from two halves.
+## Schritt 5 — ausprobieren: Das doppelte Spiel Weg A gegen Weg B
 
-Klausur-Satz: `Through the mirror imagery and the parallel breakfast-dinner contrast, the author makes the reader feel the protagonist's in-between position instead of merely describing it.`
+VERGLEICH: Waehle erst das Verfahren, dann loesen: (i) Weg A Nahverfahren (Beleg, Zitat, Wirkung) oder (ii) Weg B Fernverfahren (Kontext, Gefuege, Urteil).
 
-## Schritt 5 — ausprobieren: Verfahrensvergleich & Abgrenzung
+AUFGABE A: Welche Spur im Einleitung mit durchgestrichener These verlangt Weg A? Begründe mit Zitat.
+AUFGABE B: Welche Frage zum Fallganzen verlangt Weg B? Begründe mit Kontext.
 
-COMPARISON (two procedures):
+HILFE: A fragt nach Form und Naehe, also Weg A. B fragt nach Rolle und Ganzem, also Weg B.
 
-COMPARISON: Decide first — (i) reproduction procedure (Task 1, outline and sum up: what is said, neutral compression) or (ii) device-effect procedure (Task 2, analyse: how it is written, with what effect) — then write.
+ANTWORT: A erfordert Weg A: Der Nahbeleg mit Zitat und Zeile zeigt die Wirkung im Detail. B erfordert Weg B: Der Fernblick auf Kontext und Gefuege sichert das Urteil zu IQB Writing: Summary, Analysis, Comment.
 
-TASK A: Outline the author's view on her identity between Lagos and London.
-TASK B: Analyse how the author portrays her split identity, focusing on imagery and contrast.
-
-HELP: A asks for content -> procedure (i), no P.E.E., no interpretation. B asks for devices and effects -> procedure (ii), every point as P.E.E. with line reference. Rule: "what is said" means Task 1; "how written, with what effect" means Task 2.
-
-ANSWER: A requires procedure (i): I reproduce the author position in my own words and in the present tense — she feels doubly labelled between two cultures, both places return only half a mirror image — without evaluation and without copying whole sentences. B requires procedure (ii): I analyse the devices. For imagery I write a P.E.E. block on the mirror (Point as metaphor, Evidence as "each mirror shows only half of my face", Explain as visible incompleteness arousing sympathy). For contrast I write a second block on the parallel Lagos-London sentences (Point as antithesis, Evidence with line reference, Explain as symmetry stressing the in-between position). One overall sentence closes without new information.
-
-Klausur-Satz: `Outline reproduces what the author says, whereas analyse explains how she says it and what effect the devices have on the reader.`
+Klausur-Satz: `Summary reports, analysis proves, comment judges with reasons.`
 
 ## Schritt 6 — check: Selbsttest zu IQB Writing: Summary, Analysis, Comment
-CHECK (three questions with answers):
 
-FRAGE: In which order and with which AFB do the three IQB tasks run? | ANTWORT: First outline (AFB I), then analyse (AFB II), finally comment with assess or discuss (AFB III); the order is fixed.
-FRAGE: How do I recognise a failed Task 2? | ANTWORT: When content is retold instead of analysing devices and effects — Point and Evidence without Explain, or plot reproduction.
-FRAGE: What must a Task 3 contain at minimum? | ANTWORT: A clear position, two to three reasoned arguments with examples, a counterargument, a final judgement and, if required, the target format.
+CHECK (drei Fragen mit Antworten):
 
-Klausur-Satz: `A comment that repeats the text instead of judging it fails Task 3, because AFB III requires an argued judgement, not a second summary.`
+FRAGE: Nenne die Drei-Schritt-Kette. | ANTWORT: Befund mit Zeile, Funktion im Gefuege, Deutung als Urteil.
+FRAGE: Was verlangt Weg A? | ANTWORT: Nahbeleg mit Zitat und Wirkung am Detail.
+FRAGE: Was verlangt Weg B? | ANTWORT: Kontext und Gefuege als Traeger des Urteils.
+
+Klausur-Satz: `Summary reports, analysis proves, comment judges with reasons.`
 
 ## Fehlvorstellung
 
-(not a Schritt; parser skips automatically)
+1. Fehlvorstellung: Summary may judge.
+   Korrektur-Satz: `Judgement waits for the comment section.`
+2. Fehlvorstellung: Listing proves.
+   Korrektur-Satz: `Only quotation plus effect proves.`
 
-1. Error: "Copying strong sentences into Task 1 is safest."
-   Correction: Pasted sentences break the own-words rule and zero the content marks. A summary marks references only and rephrases every point in personal English.
-   Korrektur-Satz: `Copying whole sentences into the summary breaks the own-words rule and costs the content marks, so I only mark the reference and rephrase the point.`
+## Schritt 7 — szenario: Klausurtransfer: Writing coach for the exam board zu Fall 40
 
-2. Error: "Repeating Task 1 points in Task 3 earns marks."
-   Correction: Task 3 tests judgement, not reproduction. Repeated content scores zero on AFB III. Position, reasons, examples, counterargument and final judgement are obligatory.
-   Korrektur-Satz: `Repeating the text in Task 3 earns no marks, because AFB III demands a reasoned judgement rather than a paraphrase.`
+ROLLE: Du bist Writing coach for the exam board in der Pruefung.
+SITUATION: Ein Fall zu IQB Writing: Summary, Analysis, Comment (Fall 40, Einleitung mit durchgestrichener These) liegt unbearbeitet auf dem Tisch.
+AUFGABE: Verfasse circa 150 Woerter mit Einordnung, zwei Belegen mit Zeile, Funktion, Deutung und Schlussurteil.
+RUBRIC (30 XP): Einordnung korrekt (6 XP) | Zwei Belege mit Zeile (10 XP) | Funktion plus Deutung (10 XP) | Fachsprache und Schluss (4 XP).
 
-## Schritt 7 — szenario: Klausurtransfer: IQB Writing: Summary, Analysis, Comment
-ROLE: You are a senior student correcting a peer draft for an IQB exam in a feedback round.
-SITUATION: The draft holds three paragraphs: paragraph 1 retells the plot, paragraph 2 names two devices without lines, paragraph 3 repeats the author opinion. Write feedback (ca. 150 words) that separates the three tasks, names the main error per paragraph and shows for paragraph 3 what a correct final judgement with counterargument looks like.
-RUBRIC (30 XP): Correct mapping of the three tasks to AFB I, II and III (5 XP) | Precise error naming in paragraphs 1 and 2 with the P.E.E. rule (10 XP) | Demonstration of a correct Task 3 ending with position, counterargument and verdict (10 XP) | Note on the target-format requirement if applicable (5 XP).
+## Schritt 8 — reflexion: Takeaway und Rueckblick aus Fall 40
 
-## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
+TAKEAWAY:
 
-TAKEAWAY (core summary):
+Fall 40 lehrt: Beleg sichern, Funktion benennen, Urteil begruenden. Summary reports, analysis proves, comment judges with reasons. Takeaway-Satz: `Summary reports, analysis proves, comment judges with reasons.`
 
-The IQB chain is fixed: Task 1 outline states what the author says (AFB I, neutral, own words, present tense); Task 2 analyse states how it is said and with what effect (AFB II, P.E.E., required focuses only); Task 3 comment states my verdict (AFB III, position plus arguments plus examples plus counterargument plus judgement). Length runs 20 / 40 / 40; the order never changes; Task 3 best bridges back to Task 2. Two killers: copied sentences in Task 1, plot retelling in Task 2, second summary in Task 3.
-Takeaway-Satz: `Outline reproduces what, analyse explains how and with what effect, comment judges whether — and the three tasks must remain strictly separate.`
-
-REFLEXION (2 questions):
-1. Self-check: In the three-task chain, which step was hardest for you — compressing in Task 1, finding devices and effects in Task 2, or building a fair judgement in Task 3?
-2. Plan: Next time I will check each paragraph against its AFB level before handing in, because mixing up the tasks is the most common structural mistake in this exam format.
+REFLEXION:
+1. Welche Spur fiel schwerer, der Nahbeleg oder das Fernurteil?
+2. Beim naechsten Mal sichere ich zuerst Zitat und Zeile, weil sie jede Deutung tragen.
