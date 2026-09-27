@@ -15,30 +15,17 @@ version: Lesson-v3
 
 <!-- Lesson-v3: 8 Schritte plus Anekdote und Fehlvorstellung; Fehlvorstellung zwischen Schritt 6 und 7 (Parser-Skip); interaktives [Werkzeug: <id>]; Gating: check/szenario nicht bestanden = Weiter gesperrt; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
-## Schritt 1 — entdecken: Ziele & Phänomen-Einstieg
+## Schritt 1 — entdecken: Ziele & Phaenomen-Einstieg
 
 ZIELE (drei messbare Ziele dieser Lektion):
 
-1. Du kannst **Maxime** und **kategorischen Imperativ** in je einem Satz definieren und die Universalisierungsformel korrekt wiedergeben.
-2. Du kannst die Maxime $M$ eines Falles formulieren und mit dem Test $M \to G$ auf Denk- und Wollenswiderspruch pruefen.
+1. Du kannst **hypothetischen** und **kategorischen Imperativ** in je einem Satz definieren und beide korrekt unterscheiden.
+2. Du kannst die **Maxime** eines Falles formulieren und pruefen, ob sie als allgemeines Gesetz gewollt werden kann.
 3. Du kannst mit dem Kriterium **Widerspruchsfreiheit** ein Urteil zu Pflicht und Verbot formulieren und mit einem Klausur-Satz schliessen (AFB II/III).
 
 ### Hook / Phaenomen
 
-Stell dir vor, ein Wagen rast auf fuenf Menschen zu und du stehst an der Weiche und kannst den Wagen auf ein Gleis mit nur einer Person lenken, waehrend die Gruppe hinter dir ruft, dass Rechnen doch klar sei und fuenf Leben mehr zaehlten als eines. Gleichzeitig weisst du aus deiner Sozialisation in Familie und Schule und Freundeskreis, dass jeder Mensch Wuerde traegt und niemand zum blossen Mittel fuer andere gemacht werden darf. Genau hier kollidieren zwei Pruefungen desselben Falles: Die eine Bilanz zaehlt Lust und Leid fuer alle Betroffenen zusammen, die andere Pruefung fragt, ob deine Maxime als allgemeines Gesetz gewollt werden kann. In dieser Lektion lernst du den Mechanismus aus Bilanz und Probe und Abwaegung, damit du in der Klausur beide Brillen sauber trennst und dein Urteil an einem expliziten Kriterium begruendest.
-
-
-Ausgangslage aus der Vorlage: Darf man luegen, um einem Freund zu helfen, darf man schummeln, wenn alle es tun? Neigungen wechseln taeglich, doch Kant sucht eine Regel, die immer gilt. Was waere, wenn jeder so handeln duerfte wie du gerade jetzt? Genau diese Probe entscheidet ueber richtig und falsch.
-
-### Fachbegriff & Definition
-
-Der **kategorische Imperativ** ist Kants oberstes Moralprinzip: Handle nur nach derjenigen **Maxime**, durch die du zugleich wollen kannst, dass sie ein **allgemeines Gesetz** werde. Eine **Maxime** ist der subjektive Grundsatz deines Handelns, das **allgemeine Gesetz** $G$ seine widerspruchsfreie Verallgemeinerung. Moralisch gut ist also nicht die nette Folge, sondern der verallgemeinerbare Wille.
-
-### Wirkungsgefuege / Modell
-
-Der Mechanismus laeuft in drei Stufen: **Formulierung, Universalisierung, Urteil**. Erstens wird die Maxime $M$ praezise formuliert, etwa $M = Versprechen + Bruch + Vorteil$. Zweitens wird universalisiert zu $G = Alle(M)$ und geprueft, ob $M \to G$ denkbar und wollbar bleibt. Drittens folgt das Urteil: Scheitert die Denkbarkeit, liegt **Denkwiderspruch** vor, scheitert die Wollbarkeit, liegt **Wollenswiderspruch** vor. Faellt die Probe durch, ist die Handlung pflichtwidrig.
-
-Klausur-Satz: `Der kategorische Imperativ verlangt, nur nach derjenigen Maxime zu handeln, durch die du zugleich wollen kannst, dass sie ein allgemeines Gesetz werde.`
+Stell dir vor, dein bester Freund hat die Hausaufgaben vergessen und bittet dich, ihn bei der Kontrolle abschreiben zu lassen. Du willst ihm helfen, doch zugleich weisst du: Wenn jeder schummelte, waere keine Note mehr etwas wert und Vertrauen zwischen Schuelern und Lehrern waere zerstoert. Daneben hoerst du die Stimme der Klugheit, die raet, Gefaelligkeiten zu sammeln und sich beliebt zu machen. Genau hier trennt sich blosse Schlauheit von Moral: Die eine Stimme fragt, was dir nuetzt, die andere fragt, was gelten duerfte, wenn alle so handelten wie du. In dieser Lektion lernst du beide Imperative kennen und uebst die Probe, mit der Kant jede Maxime auf Pflicht und Verbot testet.
 
 ## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
 
@@ -46,21 +33,19 @@ PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
 ### Hook / Phaenomen
 
-„Alle machen es doch" ist kein Argument, sondern das Problem. Kant verlangt praezise Werkzeuge statt Bauchgefuehl. Diese fuenf Begriffe geben dir das Pruefgeraet fuer jede Maxime.
+Alle machen es doch ist kein Argument, sondern genau das Problem. Kant verlangt praezise Werkzeuge statt Bauchgefuehl. Diese fuenf Begriffe geben dir das Pruefgeraet fuer jede Maxime.
 
 ### Fachbegriffe & Definitionen
 
-- **Maxime:** Der subjektive Handlungsgrundsatz in der Form $M = Lage + Handlung + Zweck$. Beispiel: Ich luege, um aus Verlegenheit zu entkommen.
-- **Kategorischer Imperativ:** Das unbedingte Gebot der Universalisierung mit der Formel $Handle(M) \iff Wollbar(G)$. Er gilt ohne Ausnahme und ohne Lohn.
-- **Denkwiderspruch:** Das Scheitern der Denkbarkeit von $G$. Beispiel: Universalisiertes falsches Versprechen zerstoert den Begriff $Versprechen = Vertrauen$, also gilt $M \not\to G$.
-- **Wollenswiderspruch:** Die Denkbarkeit bleibt, doch kein vernuenftiges Wesen kann $G$ wollen. Beispiel: Niemand kann eine Welt ohne Hilfe wollen, also ist Hilfe unvollkommene Pflicht.
-- **Selbstzweckformel:** Das Verbot, Menschheit bloss als Mittel zu gebrauchen, mit $Wuerde = Zweck + Unverfuegbarkeit$. Sie schuetzt jede Person vor Instrumentalisierung.
+- **Maxime:** Der subjektive Handlungsgrundsatz, der Lage, Handlung und Zweck in einem Satz verbindet. Beispiel: Ich luege, um aus Verlegenheit zu entkommen.
+- **Hypothetischer Imperativ:** Eine bedingte Klugheitsregel in der Form: Wenn du ein Ziel willst, dann waehle das geeignete Mittel. Er bindet nur, solange das Ziel gewollt wird, und lehrt Geschicklichkeit, nicht Moral.
+- **Kategorischer Imperativ:** Das unbedingte Gebot der Universalisierung: Handle nur nach derjenigen Maxime, durch die du zugleich wollen kannst, dass sie ein allgemeines Gesetz werde. Er gilt ohne Ausnahme und ohne Lohn.
+- **Universalisierung:** Die Probe, ob die eigene Maxime widerspruchsfrei als Gesetz fuer alle gedacht und gewollt werden kann. Scheitert die Denkbarkeit, liegt ein Denkwiderspruch vor, scheitert die Wollbarkeit, liegt ein Wollenswiderspruch vor.
+- **Selbstzweckformel:** Das Verbot, die Menschheit bloss als Mittel zu gebrauchen. Sie verlangt, jede Person jederzeit zugleich als Zweck zu achten, und schuetzt so vor kalter Folgenbilanz.
 
 ### Wirkungsgefuege / Modell
 
-Die Begriffe greifen ineinander: Die **Maxime** liefert das Material, der **kategorische Imperativ** liefert die Pruefform $M \to G$. **Denkwiderspruch** begruendet vollkommene Pflichten wie Nichtluegen, **Wollenswiderspruch** begruendet unvollkommene Pflichten wie Hilfe. Die **Selbstzweckformel** sichert das Ergebnis gegen kalte Folgenrechnung ab. Wer in der Klausur prueft, muss deshalb immer fragen: Scheitert Denken oder Wollen, und bleibt die Wuerde gewahrt?
-
-Punkte-Hinweis: Nenne $Utilitarismus$ mit $U = \sum(Lust - Leid)$ und $Kategorischer Imperativ$ mit $M \to G$; erst beide Pruefungen plus Kriterium wie Menschenwuerde gibt volle Punkte.
+Die Begriffe greifen ineinander: Die **Maxime** liefert das Material, der **hypothetische Imperativ** ordnet es als Mittel zum Zweck, der **kategorische Imperativ** unterwirft es der Probe der **Universalisierung**. Ein **Denkwiderspruch** begruendet vollkommene Pflichten wie das Luegenverbot, ein **Wollenswiderspruch** begruendet unvollkommene Pflichten wie die Hilfeleistung. Die **Selbstzweckformel** sichert das Ergebnis ab, indem sie jede Instrumentalisierung von Personen ausschliesst. Wer in der Klausur prueft, muss deshalb immer fragen: Folgt die Handlung blosser Klugheit oder haelt die Maxime der Verallgemeinerung stand, und bleibt die Wuerde gewahrt?
 
 Klausur-Satz: `Eine Handlung gewinnt ihren moralischen Wert nicht aus den Folgen, sondern aus der Maxime, aus der sie hervorgeht.`
 
@@ -74,28 +59,28 @@ Luegen fuer den Freund — kleine Hilfe oder grosses Unrecht? Schummeln, wenn al
 
 ### Spiel-Aufgabe mit [Werkzeug: balance-board]
 
-Oeffne [Werkzeug: balance-board]. Lege Maxime $M = Versprechen + Bruch + Vorteil$ links auf. Gewichte rechts $Denkbar(G)$ und $Wollbar(G)$ von 1 bis 5. Universalisere zu $G = Alle(M)$ und beobachte: $Vertrauen = 0$ laesst $Versprechen = unmoeglich$ werden — Waage kippt zu Verbot.
+Oeffne [Werkzeug: balance-board]. Lege die Maxime des falschen Versprechens aus Vorteil links auf. Gewichte rechts Denkbarkeit und Wollbarkeit des allgemeinen Gesetzes von 1 bis 5. Verallgemeinere die Maxime auf alle und beobachte: Wo Vertrauen zusammenbricht, wird Versprechen unmoeglich — die Waage kippt zum Verbot.
 
 ### Aha-Moment & Gesetz
 
-Aha-Moment: Rekonstruktion — Probe — Einordnung. Erstens $M$ praezise aus $Lage + Handlung + Zweck$. Zweitens $M \to G$ mit $G = Alle(M)$: Denkbarkeit oder Wollbarkeit scheitert. Drittens Pflicht aus Kriterium Widerspruchsfreiheit plus $Mensch = Zweck + NiemalsBlossMittel$. Gesetz: $Erlaubt(M) \iff Denkbar(G) + Wollbar(G)$.
+Aha-Moment: Festlegen — Verallgemeinern — Einordnen. Erstens wird die Maxime praezise aus Lage, Handlung und Zweck bestimmt. Zweitens wird sie als Gesetz fuer alle gedacht: Denkbarkeit oder Wollbarkeit scheitert. Drittens folgt die Pflicht aus dem Kriterium Widerspruchsfreiheit, bestaetigt durch die Achtung jeder Person als Zweck. Gesetz: Erlaubt ist nur die Maxime, die als allgemeines Gesetz gedacht und gewollt werden kann.
 
 ```diagram
-  Maxime M [Lage + Handlung + Zweck]
-  Maxime M -> Gesetz G [= Alle(M)]
-  Gesetz G -> Waage [Denkbar 1 bis 5 + Wollbar 1 bis 5]
-  Waage -> Urteil [Pflicht oder Verbot + Wuerde]
+  Maxime [Lage plus Handlung plus Zweck]
+  Maxime -> Gesetz [Verallgemeinerung auf alle]
+  Gesetz -> Waage [Denkbarkeit 1 bis 5 plus Wollbarkeit 1 bis 5]
+  Waage -> Urteil [Pflicht oder Verbot plus Wuerde]
 ```
 
-Kausalkette: Fall schildern — Bilanz mit $U = \sum(Lust - Leid)$ gegen Probe mit $M \to G$ — Urteil am Kriterium Menschenwuerde; Abgrenzung zu $p_N(q) = p_A(q)$ mit $q_A - q_N$ und zu $Gini$ steht vor jeder Stellungnahme.
+Kausalkette: Fall schildern — Maxime formulieren — Probe der Universalisierung durchfuehren — Urteil am Kriterium Widerspruchsfreiheit; die Abgrenzung von Klugheit und Moral steht vor jeder Stellungnahme.
 
-Klausur-Satz: `Lässt sich die Maxime nicht widerspruchsfrei als allgemeines Gesetz denken oder wollen, so ist die Handlung pflichtwidrig.`
+Klausur-Satz: `Laesst sich die Maxime nicht widerspruchsfrei als allgemeines Gesetz denken oder wollen, so ist die Handlung pflichtwidrig.`
 
 ## Anekdote & Fun-Fact
 
-Der Überlieferung nach lebte Kant in Königsberg nach einem fast unveränderlichen Tagesplan: Er ging täglich zur selben Zeit spazieren, und die Nachbarn sollen ihre Uhren danach gestellt haben. Sein Leben wirkte so regelmäßig wie ein Gesetz – und genau so dachte er auch über Moral. Nicht die wechselnde Neigung, sondern die feste Regel sollte das Handeln bestimmen
+Der Ueberlieferung nach lebte Kant in Koenigsberg nach einem fast unveraenderlichen Tagesplan: Er ging taeglich zur selben Zeit spazieren, und die Nachbarn sollen ihre Uhren danach gestellt haben. Sein Leben wirkte so regelmaessig wie ein Gesetz, und genau so dachte er auch ueber Moral. Nicht die wechselnde Neigung, sondern die feste Regel sollte das Handeln bestimmen. Wer seine Maxime der Verallgemeinerung unterwirft, handelt wie ein Gesetzgeber fuer alle vernuenftigen Wesen.
 
-Bezug zum Konzept: `Das Beispiel zeigt, wie aus Beobachtung ein pruefbares Verfahren mit $x_1$ und $x_2$ entsteht.`
+Bezug zum Konzept: `Die Anekdote veranschaulicht Kants Leitidee, dass Moral in der Bindung an selbstgegebene, allgemein wollbare Gesetze besteht und nicht in der Laune wechselner Neigungen.`
 
 ## Schritt 4 — ausprobieren: Interaktive Praxis & Urteils-Waage
 
@@ -103,68 +88,69 @@ BEISPIEL (geleitete Aufgabe mit Werkzeug):
 
 [Werkzeug: balance-board]
 
-Lege im Tool Pro- und Contra-Argumente auf die Waage und gewichte jedes Argument von 1 bis 5; veraendere die Gewichte Schritt fuer Schritt und beobachte, wann das Urteil zwischen Erlaubnis und Verbot oder zwischen Massnahme und Verzicht umschlaegt.
+Lege im Tool Pro- und Contra-Argumente auf die Waage und gewichte jedes Argument von 1 bis 5; veraendere die Gewichte Schritt fuer Schritt und beobachte, wann das Urteil zwischen Erlaubnis und Verbot umschlaegt.
 
-AUFGABE Waage-Raetsel (AFB II): Pruefe auf [Werkzeug: balance-board] die Maxime $M$: falsches Versprechen fuer Vorteil. Lege $M$ auf, gewichte $Denkbar$ und $Wollbar$, universalisere zu $G$ und begruende Verbot oder Erlaubnis.
+AUFGABE Waage-Raetsel (AFB II): Pruefe auf [Werkzeug: balance-board] die Maxime des falschen Versprechens aus Vorteil. Lege die Maxime auf, gewichte Denkbarkeit und Wollbarkeit der Verallgemeinerung und begruende Verbot oder Erlaubnis.
 
 HILFE:
-1. Schritt 1: Formuliere $M$ aus Lage, Handlung, Zweck. 2. Schritt 2: Denke $G = Alle(M)$, pruefe $M \to G$. 3. Schritt 3: Ordne Denkwiderspruch oder Wollenswiderspruch zu, deute an Widerspruchsfreiheit und formuliere den Klausur-Satz.
+1. Schritt 1: Formuliere die Maxime aus Lage, Handlung und Zweck. 2. Schritt 2: Denke die Maxime als Gesetz fuer alle und pruefe Denkbarkeit und Wollbarkeit. 3. Schritt 3: Ordne Denkwiderspruch oder Wollenswiderspruch zu, deute an Widerspruchsfreiheit und formuliere den Klausur-Satz.
 
-MUSTERLOESUNG: Als $G$ zerstoert $M$ die Institution: Versprechen zugleich noetig und unmoeglich — $M \not\to G$ mit Denkwiderspruch. Daher vollkommene Pflicht zum Nichtluegen, bestaetigt durch $Mensch = Zweck$.
+MUSTERLOESUNG: Verallgemeinert zerstoert die Maxime ihre eigene Voraussetzung: Wo jeder falsch verspricht, kann niemand mehr Vertrauen schenken, und Versprechen wird undenkbar — ein Denkwiderspruch. Daher gilt die vollkommene Pflicht, nicht zu luegen, bestaetigt durch die Selbstzweckformel, weil der Getaueschte zum blossen Mittel herabgewuerdigt wuerde.
 
-Klausur-Satz: `Die Maxime des gebrochenen Versprechens zerstört universalisiert den Begriff des Versprechens selbst und verstößt damit gegen eine vollkommene Pflicht.`
+Klausur-Satz: `Die Maxime des gebrochenen Versprechens zerstoert verallgemeinert den Begriff des Versprechens selbst und verstoesst damit gegen eine vollkommene Pflicht.`
 
-## Schritt 5 — ausprobieren: Verfahrensvergleich & Abgrenzung
+## Schritt 5 — ausprobieren: Wegvergleich Klugheit gegen Moral
 
-VERGLEICH (Wahl des Verfahrens, A gegen B):
+VERGLEICH (Wahl des Weges, A gegen B):
 
-VERGLEICH: Triff zuerst die Wahl des Verfahrens -- (i) Maximenpruefung-Verfahren ($M \to G$, Universalisierung) oder (ii) Utilitaristisches Verfahren ($U = \sum (Lust - Leid)$) -- und loese dann die Aufgabe.
+VERGLEICH: Waehle zuerst den Denkweg — Weg A der Klugheit oder Weg B der Moral — und loese dann die Aufgabe.
 
-AUFGABE A: Ein Fall verlangt nur eine qualitative Rangfolge ohne Zahlenwert.
-AUFGABE B: Ein Fall verlangt einen belegten Vergleich mit Kennzahl und Begruendung.
+Weg A (Hypothetischer Imperativ, konditionale Klugheitsregel): Der Mechanismus lautet Ziel, Mittel und bedingte Bindung. Wer ein Ziel will, soll das taugliche Mittel waehlen, faellt das Ziel weg, faellt auch die Regel. Die Staerke dieses Weges liegt in seiner Naehe zum Alltag: Lernplaene, Training und Sparsamkeit folgen genau dieser Logik. Seine Grenze liegt darin, dass er keine Pflicht begruendet: Klugheit raet, Moral aber gebietet, und wer nur auf Vorteil sinnt, opfert leicht das Verbotene dem Nutzen.
 
-HILFE: Aufgabe A nennt kein Berechnungsziel, daher Verfahren (i). Aufgabe B verlangt eine Kennzahl wie $Gini$ oder $p_N(q) = p_A(q)$, daher Verfahren (ii). Die Wahl des Verfahrens steht vor jeder Rechnung.
+Weg B (Kategorischer Imperativ, unbedingte Universalisierung): Der Mechanismus lautet Maxime, Probe und Pflicht. Die Maxime wird als allgemeines Gesetz gedacht und auf Denk- und Wollenswiderspruch geprueft, die Selbstzweckformel schuetzt jede Person vor blosser Benutzung. Die Staerke dieses Weges liegt in seiner Unbedingtheit: Wuerde kennt keine Ausnahme und laesst sich nicht gegen Nutzen aufwiegen. Seine Grenze liegt in seiner Strenge: Die reine Pflichtprobe wirkt weltfremd, wo Notlagen nach Abwaegung und Barmherzigkeit rufen.
 
-ANTWORT: Aufgabe A erfordert Verfahren (i), weil eine Rangfolge aus der Form genuegt. Aufgabe B erfordert Verfahren (ii), weil erst die Kennzahl mit $d = x_2 - x_1$ ein begruendetes Urteil erlaubt.
+AUFGABE A: Eine Schuelerin lernt Vokabeln nach einem strikten Plan, weil sie eine gute Note will. Pruefe mit Weg A, welche Regel hier gilt und warum sie nur bedingt bindet.
+AUFGABE B: Dieselbe Schuelerin fragt, ob Schummeln erlaubt waere, wenn alle in der Klasse schummelten. Pruefe mit Weg B per Universalisierung und Selbstzweckformel und formuliere ein Urteil zu Pflicht und Verbot.
 
-Klausur-Satz: `Der Denkwiderspruch begründet vollkommene Pflichten, der Wollenswiderspruch unvollkommene Pflichten wie die Hilfeleistung.`
+HILFE: Aufgabe A fragt nach Mittelwahl zu einem gewollten Ziel, daher traegt Weg A mit Ziel und Mittel. Aufgabe B fragt nach Erlaubnis fuer alle, daher traegt Weg B mit Probe und Pflicht. Ordne zuerst die Leitfrage zu, stelle dann den passenden Denkweg dar und schliesse mit dem Klausur-Satz.
 
-## Schritt 6 — check: Verständnisprüfung
+ANTWORT: Aufgabe A verlangt Weg A, weil der Lernplan nur gilt, solange die gute Note gewollt wird — eine Klugheitsregel, keine moralische Pflicht. Aufgabe B verlangt Weg B, weil verallgemeinertes Schummeln Pruefungen sinnlos macht und Mitschueler sowie Lehrkraft zu blossen Mitteln herabwuerdigt — daher pflichtwidrig.
+
+Klausur-Satz: `Der hypothetische Imperativ raet bedingt zum tauglichen Mittel, der kategorische Imperativ gebietet unbedingt die verallgemeinerbare Maxime.`
+
+## Schritt 6 — check: Selbsttest zu Kategorischer Imperativ
 
 CHECK (drei Fragen mit Antworten):
 
 FRAGE: Wie lautet die Universalisierungsformel des kategorischen Imperativs? | ANTWORT: Handle nur nach derjenigen Maxime, durch die du zugleich wollen kannst, dass sie ein allgemeines Gesetz werde.
-FRAGE: Was unterscheidet einen Denkwiderspruch von einem Wollenswiderspruch? | ANTWORT: Beim Denkwiderspruch lässt sich die universalisierte Maxime nicht widerspruchsfrei denken, beim Wollenswiderspruch ist sie denkbar, aber nicht vernünftig zu wollen.
-FRAGE: Was besagt die Selbstzweckformel? | ANTWORT: Handle so, dass du die Menschheit jederzeit zugleich als Zweck, niemals bloß als Mittel brauchst.
+FRAGE: Was unterscheidet einen Denkwiderspruch von einem Wollenswiderspruch? | ANTWORT: Beim Denkwiderspruch laesst sich die verallgemeinerte Maxime nicht widerspruchsfrei denken, beim Wollenswiderspruch ist sie denkbar, aber nicht vernuenftig zu wollen.
+FRAGE: Was besagt die Selbstzweckformel? | ANTWORT: Handle so, dass du die Menschheit jederzeit zugleich als Zweck, niemals bloss als Mittel brauchst.
 
-Klausur-Satz: `Kant prüft die Maxime auf Denk- und Wollenswiderspruch und schützt über die Selbstzweckformel die unantastbare Würde jedes Menschen.`
+Klausur-Satz: `Kant prueft die Maxime auf Denk- und Wollenswiderspruch und schuetzt ueber die Selbstzweckformel die unantastbare Wuerde jedes Menschen.`
 
 ## Fehlvorstellung
 
 (Kein Schritt; wird vom Parser uebersprungen.)
 
-1. Fehlkonzept: Die beiden Verfahren seien austauschbar und fuehrten stets zum gleichen Ergebnis.
-   Korrektur-Satz: `Verfahren (i) liefert nur eine Rangfolge, Verfahren (ii) liefert eine Kennzahl; beide duerfen nicht gleichgesetzt werden.`
+1. Fehlkonzept: Der kategorische Imperativ bedeute, man solle tun, was alle anderen auch tun.
+   Korrektur-Satz: `Kant verlangt keine Anpassung an die Mehrheit, sondern die Probe, ob die eigene Maxime als allgemeines Gesetz gewollt werden kann.`
 
-2. Fehlkonzept: Ein einzelner Wert wie $Gini$ oder $p_G$ spreche bereits fuer sich und brauche kein Kriterium.
-   Korrektur-Satz: `Erst die Deutung der Kennzahl am Kriterium mit $d = x_2 - x_1$ ergibt ein klausurtaugliches Urteil.`
+2. Fehlkonzept: Die Selbstzweckformel verbiete jeden Gebrauch anderer Menschen, also auch ehrliche Zusammenarbeit und Arbeitsteilung.
+   Korrektur-Satz: `Verboten ist nur, Menschen bloss als Mittel zu gebrauchen; sie zugleich als Zweck zu achten, bleibt in jeder Zusammenarbeit Pflicht.`
 
-## Schritt 7 — szenario: Klausurtransfer & Rubric
+## Schritt 7 — szenario: Ethikrat-Debatte um Ehrlichkeit im Schulalltag
 
-ROLLE: Du bist Mitglied im Ethikrat deiner Schule und sollst in einer Sitzung zur „Ehrlichkeit im Schulalltag" Stellung nehmen.
-SITUATION: Ein Mitschüler schlägt vor, bei einer anstehenden Klausur zu schummeln, weil der Druck sonst zu groß sei und allen damit geholfen wäre. Beurteile diesen Vorschlag in einer zusammenhängenden Stellungnahme (ca. 150 Wörter), indem du die Maxime des Schummelns nach dem Vier-Schritte-Schema prüfst und mit der Selbstzweckformel abschließend urteilest.
-RUBRIC (30 XP): Formulierung der Maxime des Schummelns (5 XP) | Durchführung der Universalisierung mit Denkwiderspruch (10 XP) | Anwendung der Selbstzweckformel auf Mitschüler und Lehrkraft (10 XP) | Kriteriengeleitetes Urteil mit Begründung (5 XP)
-SITUATION: Ein Mitschüler schlägt vor, bei einer anstehenden Klausur zu schummeln, weil der Druck sonst zu groß sei und allen damit geholfen wäre. Beurteile diesen Vorschlag in einer zusammenhängenden Stellungnahme (ca. 150 Wörter), indem du die Maxime des Schummelns nach dem Vier-Schritte-Schema prüfst und mit der Selbstzweckformel abschließend urteilest.
-RUBRIC (30 XP): Formulierung der Maxime des Schummelns (5 XP) | Durchführung der Universalisierung mit Denkwiderspruch (10 XP) | Anwendung der Selbstzweckformel auf Mitschüler und Lehrkraft (10 XP) | Kriteriengeleitetes Urteil mit Begründung (5 XP)
+ROLLE: Du bist Mitglied im Ethikrat deiner Schule und sollst in einer Sitzung zum Thema Ehrlichkeit im Schulalltag Stellung nehmen.
+SITUATION: Ein Mitschueller schlaegt vor, bei einer anstehenden Klausur zu schummeln, weil der Druck sonst zu gross sei und allen damit geholfen waere. Beurteile diesen Vorschlag in einer zusammenhaengenden Stellungnahme von etwa 150 Woertern, indem du die Maxime des Schummelns sorgfaeltig pruefst und mit der Selbstzweckformel abschliessend urteilst.
 AUFGABE (AFB III): Verfasse eine zusammenhaengende Darstellung von etwa 150 Woertern mit Kriterium, Anwendung und Urteil.
-RUBRIC (30 XP): These mit Kriterium (5 XP) | Rekonstruktion mit $x_1$, $x_2$ (10 XP) | Anwendung mit $d = x_2 - x_1$ (10 XP) | Fazit mit Fachbegriffen (5 XP).
+RUBRIC (30 XP): Formulierung der Maxime des Schummelns (5 XP) | Durchfuehrung der Universalisierung mit Denkwiderspruch (10 XP) | Anwendung der Selbstzweckformel auf Mitschueller und Lehrkraft (10 XP) | Kriteriengeleitetes Urteil mit Begruendung (5 XP).
 
-## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
+## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY (Kernbotschaft in einem Kasten):
 
-Takeaway-Satz: `Begriff schaerfen, Wahl des Verfahrens treffen, Kennzahl mit $d = x_2 - x_1$ deuten und kriteriengeleitet urteilen.`
+Takeaway-Satz: `Handle so, dass die Maxime deines Willens jederzeit zugleich als Prinzip einer allgemeinen Gesetzgebung gelten koennte.`
 
 REFLEXION (zwei Fragen):
-1. Welcher Schritt fiel schwerer -- die Anwendung mit $x_1$ und $x_2$ (Schritt 4) oder die Wahl des Verfahrens (Schritt 5)?
-2. Beim naechsten Mal pruefe ich zuerst das Aufgabenziel und waehle danach Verfahren (i) oder (ii).
+1. Wo faellt dir die Abwaegung schwerer — bei der Trennung von Klugheit und Moral oder bei der Unterscheidung von Denk- und Wollenswiderspruch — und an welchem Kriterium machst du dein Urteil fest?
+2. Pruefe deine letzte Antwort an der Klausurnorm: Hast du die Maxime vollstaendig formuliert, die Universalisierung schrittweise durchgefuehrt und erst danach geurteilt, oder hast du Schritte uebersprungen?
