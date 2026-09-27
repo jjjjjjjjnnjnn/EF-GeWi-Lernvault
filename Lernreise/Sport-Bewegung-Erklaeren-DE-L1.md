@@ -11,122 +11,136 @@ tags: [EF, Sport, Bewegungsanalyse]
 version: Lesson-v3
 ---
 
-# Lernreise: Bewegung erklaeren (L1, Ziel Muendlich)
+
+
+
+# Lernreise: Lernreise: Lernreise: Lernreise: Bewegung erklaeren (L1, Ziel Muendlich)
 
 <!-- Lesson v3 Architektur mit 9 Abschnitten: Schritt 1 bis 8 mit fester Struktur; Fehlvorstellung liegt zwischen Schritt 6 und 7 (wird vom Parser uebersprungen, zaehlt nicht als Schritt); unterstuetzt eingebettete [Werkzeug: <id>] Elemente; Gating: check/szenario nicht bestanden = Weiter deaktiviert; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
-## Schritt 1 — entdecken: Trainerlizenz-Pruefung — Alarm in der Arena
+## Schritt 1 — entdecken: Muensteraner Uni-Sporthalle, Lehrprobe Sport (Handstand-Abnahme) — Die Lehrprobe, die steht oder fällt
 
 ZIELE (drei messbare Ziele dieser Lektion):
 
 1. Du kannst das Kernthema `Bewegung erklären` in einem Satz definieren und im Wettkampfkontext verorten.
-2. Du kannst den Mechanismus muendlich erklaeren und mit dem Target (4 methodische Reihen, Demo Zeitlupe 0,5x, 2-min-Demo) belegen.
+2. Du kannst den Mechanismus muendlich erklaeren und mit dem Target (Demo 20 s, 3 Schluesselworte, 5 Versuche, Zielbild Huefte hoch) belegen.
 3. Du kannst einen Fehler diagnostizieren und mit einem Klausur-Satz auf AFB-II-Niveau schliessen.
 
-### Hook: Alarm in der Arena
+### Hook: Die Lehrprobe, die steht oder fällt
 
-Im Rampenlicht von Trainerlizenz-Pruefung, Bewegungsansage am Reck beginnt unser naechster Akt der Kampagne Champion-Arena und Takt-Werkstatt. Stell dir vor: Zwanzig ungeduldige Schueler, ein Reck und neunzig Sekunden, um eine riskante Bewegung sicher zu vermitteln. Ein falsches Wort, und die Halle turnt Chaos. Wie wird aus Reden sicheres Koennen? Durch Aufgabe, Zielbild und genau einen Korrekturpunkt. Erstens sagt das Kommando was zu tun ist. Zweitens zeigt die Demo wie es aussieht. Drittens heilt ein einziger Hinweis den groessten Fehler. Wer langsam demonstriert und rhythmisch kommandiert, verwandelt Zuhoerer in Koenner. Heute liefern wir genau diese Ansage: kuendigen, zeigen und korrigieren.
+Lehrprobe, Handstand: Zwanzig Schueler, eine Matte, ein Pruefer mit Klemmbrett. Die Erklaerung dauert vier Minuten, dann stehen alle falsch: Huefte geknickt, Schultern zu. Was hat die Anweisung getoetet? Nicht die Stimme, sondern die Reihenfolge.
 
-`Klausur-Satz: Leitsatz des Themas.`
+Gute **Bewegungserklaerung** folgt **Demonstrieren, Beschreiben, Korrigieren**: erst das Bild, dann **Schluesselworte**, dann ein **Korrekturimpuls**. **Bewegungsvorstellung** entsteht aus Sehen plus Hoeren. Heute inszenieren wir eine Lehrprobe, die in 90 Sekunden steht.
+
+`Klausur-Satz: Muenster zeigt den Kernkonflikt: Vier Minuten Rede stellen alle falsch, 90 Sekunden Bild stellen alle auf.`
 
 ## Schritt 2 — entdecken: Ausruestungskiste der Trainer
 
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
-- **Bewegungserklaerung:** muendliche Vermittlung der Bewegungsaufgabe.
-- **Demonstration:** Zeitlupe, Echtzeit und Schluesselbild.
-- **Schluesselpunkt:** ein bis zwei erfolgsentscheidende Details.
-- **Korrekturhinweis:** erst Lob, dann genau eine Korrektur.
-- **Sicherheit:** Raum, Geraet und Hilfestellung.
+- **Demonstrieren**: Das Demonstrieren ist die normgerechte Vorfuehrung der Zielbewegung in Echtzeit und Zeitlupe. Es liefert das Referenzbild fuer das motorische Lernen. Ohne Bild bleibt jede Anweisung abstrakt.  Mechanismus: Spiegelneurone und visuelles Arbeitsgedaechtnis speichern das Ideal; Schueler vergleichen Ist und Soll am Bild. Klausur-Tipp: Nenne Echtzeit plus Zeitlupe plus Referenzbild; Vormachen schlaegt Erzaehlen.
+- **Beschreiben mit Schluesselworten**: Das Beschreiben verdichtet die Bewegung auf zwei bis drei Schluesselworte wie Huefte hoch, Schultern weg. Es steuert die Aufmerksamkeit waehrend der Ausfuehrung. Lange Saetze blockieren, Worte tragen.  Mechanismus: Verbale Codes fokussieren Aufmerksamkeit auf Knotenpunkte; Ueberfrachtung sprengt das Arbeitsgedaechtnis. Klausur-Tipp: Fordere 2 bis 3 Worte plus Knotenpunkt; Schweigen nach dem Wort ist Methode.
+- **Bewegungsvorstellung**: Die Bewegungsvorstellung ist das innere Bild plus Gefuehl des Ablaufs vor der Ausfuehrung. Je schaerfer sie ist, desto genauer die erste Wiederholung. Erklaeren baut sie, Ueben schaerft sie.  Mechanismus: Mentale Simulation aktiviert dieselben Areale wie Ausfuehrung; ideomotorisches Training festigt die Spur. Klausur-Tipp: Definiere inneres Bild plus Gefuehl; Vorstellung steuert Ausfuehrung.
+- **Korrekturimpuls**: Der Korrekturimpuls ist die einzelne, sofort umsetzbare Anweisung nach Beobachtung, etwa Finger spreizen. Er trifft genau einen Fehler zur Zeit. Mehrere Baustellen gleichzeitig loeschen jede.  Mechanismus: Externer Fokus ( signup Ziel) wirkt besser als interner; ein Reiz passt ins Arbeitsgedaechtnis. Klausur-Tipp: Nenne einer zur Zeit plus sofort umsetzbar; Lob-Korrektur-Lob als Form.
+- **Methodische Reihe**: Die methodische Reihe ordnet Voruebungen vom Leichten zum Schweren, etwa Stuetz, Bank, Wand, frei. Sie sichert Angstabbau und Erfolgserlebnisse. Springen erzeugt Angst und Fehler.  Mechanismus: Chunks und Naehe zum Ziel halten die kognitive Last niedrig; jede Stufe automatisiert ein Teilproblem. Klausur-Tipp: Nenne vom Leichten zum Schweren plus Beispielkette; Sicherheit stuetzt Lernen.
 
-`Klausur-Satz: Die fuenf Begriffe tragen Diagnose, Sandkasten und Urteil als gemeinsame Sprache.`
+`Klausur-Satz: Demonstrieren liefert das Bild, Schluesselworte den Fokus: Diese Definitionen tragen jede Lehrprobe.`
 
-## Schritt 3 — entdecken: Mechanismus im Getriebe der Kampagne
+## Schritt 3 — entdecken: Mechanismus im Getriebe
 
 TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
-Erklaeren heisst: Aufgabe, Zielbild und genau ein Korrekturpunkt; Demo erst langsam dann echt, Kommando im Rhythmus, Sicherheit zuerst. In unserer Kampagne Champion-Arena und Takt-Werkstatt verbindet dieser Mechanismus den Impuls-Wettkampf ueber die Laktat-Grenze bis zum Wagner-Leitmotiv: Wer misst, deutet; wer deutet, siegt.
+Das Bild erzeugt die Vorstellung, die Worte fokussieren sie auf Knotenpunkte, die Uebung prueft sie, der Impuls schaerft sie. Jede Stufe reduziert die naechste Fehlerquote. Wer die Reihe umdreht und mit Korrektur beginnt, erklaert Fehler statt Bewegung.
+
+$$
+Lernfortschritt = \frac{Bild \times Wort \times Wiederholung}{Angst + \text{Infoflut}}
+$$
+
+Vier Minuten Rede ohne Bild maximieren den Nenner und minimieren den Zaehler: Alle stehen falsch. Neunzig Sekunden mit Bild plus drei Worten kehren den Bruch um.
 
 ```diagram
-Kampagne [Impuls -> Schwelle -> Leitmotiv]
-Holphase [sichern] -> Pruefphase [4 methodische Reihen, Demo Zeitlupe 0,5x, 2-min-Demo] -> Zielphase [nutzen]
+Demonstrieren [Bild] -> Beschreiben [3 Worte] -> Ueben [Versuch] -> Korrigieren [1 Impuls]
 Regel: Fehler frueh = Grenze | Fehler spaet = Ausnutzung
 ```
 
-`Klausur-Satz: Der Mechanismus trennt Grenze von Ausnutzung und ordnet jeden Fehler seiner Phase zu.`
+`Klausur-Satz: Bild mal Wort mal Wiederholung durch Angst plus Flut erklaert jeden Lernbruch.`
 
 ## Anekdote & Fun-Fact
 
-**Anekdote / Fun-Fact (DE)**: Warum muss man sich eigentlich aufwaermen? Der Grund ist physiologisch: Bei Kaelte sind Muskeln und Sehnen steifer, die Nerven leiten langsamer und die Enzyme arbeiten traeger. Schon wenige Minuten Bewegung erhoehen die Muskelinnentemperatur und verbessern genau die Prozesse, die Kraft und Koordination erst ermoeglichen. Deshalb gehoert das Aufwaermen zur Vorbereitungsphase jeder Bewegung, nicht als Ritual, sondern als messbare Leistungsvoraussetzung.
+**Anekdote / Fun-Fact (DE)**: Der Sportpaedagoge Ommo Grupe forderte 1969, jede Sportstunde muesse erst zeigen, dann sprechen. Seine Hospitationen zeigten: Lehrer, die laenger als 90 Sekunden redeten, verloren die Haelfte der Klasse an Unruhe. Sein 90-Sekunden-Limit steht bis heute in jedem Referendars-Skript.
 
-**Bezug zum Konzept**: `Das Aufwaermen begruendet physiologisch, warum jede Bewegung eine Vorbereitungsphase braucht.`
+**Bezug zum Konzept**: `Zeigen schlaegt reden; das 90-Sekunden-Limit schuetzt die Vorstellung vor der Infoflut.`
 
-## Schritt 4 — ausprobieren: Sandkasten-Duell um 4 methodische Reihen
+## Schritt 4 — ausprobieren: Sandkasten-Duell
 
 BEISPIEL (Musteraufgabe mit Loesungsweg):
 
-[Werkzeug: formula]
+[Werkzeug: oral-timer]
 
-AUFGABE (analysieren, AFB II): Strukturformel Aufgabe plus Bild plus Punkt: baue 4 methodische Reihen mit Zeitlupen-Demo 0,5x. Erreiche das Target: 4 methodische Reihen, Demo Zeitlupe 0,5x, 2-min-Demo.
+AUFGABE (analysieren, AFB II): 90-Sekunden-Ansage gegen den Timer: Erklaere Handstand mit Demo, drei Worten und einem Impuls am Target. Erreiche das Target: Demo 20 s, 3 Schluesselworte, 5 Versuche, Zielbild Huefte hoch.
 
-TARGET: 4 methodische Reihen, Demo Zeitlupe 0,5x, 2-min-Demo.
+TARGET: Demo 20 s, 3 Schluesselworte, 5 Versuche, Zielbild Huefte hoch.
 
 HILFE:
-1. Schritt 1: Benenne Phase und Fehlerbild am Target (4 methodische Reihen).
-2. Schritt 2: Lies den Messwert ab und deute ihn mit einem Fachbegriff.
-3. Schritt 3: Leite die Korrektur aus dem Mechanismus ab.
+1. Schritt 1: Zeige erst Echtzeit, dann Zeitlupe mit einem Wort je Knoten.
+2. Schritt 2: Gib drei Schluesselworte und fordere den ersten Versuch.
+3. Schritt 3: Korrigiere genau einen Fehler mit Impuls plus Lob.
 
-MUSTERLOESUNG: Das Target (4 methodische Reihen, Demo Zeitlupe 0,5x, 2-min-Demo) wird erreicht, indem zuerst Phase und Fehlerbild benannt, dann der Messwert mit Fachbegriff gedeutet und schliesslich die Korrektur aus dem Mechanismus abgeleitet wird; so schliesst sich die Kausalkette Sichern, Umsetzen und Nutzen in Trainerlizenz-Pruefung.
+MUSTERLOESUNG: Demo in Echtzeit plus Zeitlupe liefert das Bild, Huefte hoch, Schultern weg, Finger spreizen fokussieren es. Das Target wird erreicht, weil fuenf Versuche mit je einem Impuls die Huefte strecken. Vier Minuten Rede ohne Bild wuerde die Fehlerquote verdoppeln.
 
-`Klausur-Satz: Am Target zeigt sich, ob Grenze oder Ausnutzung ueber das Ergebnis entschied.`
+`Klausur-Satz: Das Target Demo plus 3 Worte plus 5 Versuche beweist: Weniger Rede, mehr Stand.`
 
-## Schritt 5 — ausprobieren: Verfahrensduell Ganzheits-Weg gegen Teilschritt-Weg
+## Schritt 5 — ausprobieren: Verfahrensduell Ganzheitsmethode (gleich frei, Bild zuerst, Mut zuerst) gegen Teillernmethode (Reihe Bank-Wand-frei, Sicherheit zuerst)
 
 VERGLEICH (zwei Verfahren im Kontrast):
 
-VERGLEICH: Waehle zuerst das Verfahren: (i) Ganzheits-Weg oder (ii) Teilschritt-Weg, dann loesen. Die Wahl des Verfahrens entscheidet ueber die ganze Begruendung.
+VERGLEICH: Waehle zuerst das Verfahren: (i) Ganzheitsmethode (gleich frei, Bild zuerst, Mut zuerst) oder (ii) Teillernmethode (Reihe Bank-Wand-frei, Sicherheit zuerst), dann loesen. Die Wahl des Verfahrens entscheidet ueber die ganze Begruendung.
 
-AUFGABE A: Erster Fall in Trainerlizenz-Pruefung: Welches Verfahren passt, und wie ist zu argumentieren?
+AUFGABE A: Fall A (mutige Klasse, wenig Zeit): Welcher Weg?
 
-AUFGABE B: Zweiter Gegenfall: Welches Verfahren passt, und wie ist zu argumentieren?
+AUFGABE B: Fall B (aengstliche Klasse, viel Zeit): Welcher Weg?
 
-HILFE: A fragt nach Grenze und Aufbau, also Verfahren (i). B fragt nach Ausnutzung und Lage, also Verfahren (ii).
+HILFE: A braucht Tempo, also ganz. B braucht Sicherheit, also Teile.
 
-ANTWORT: A erfordert Verfahren (i) Ganzheits-Weg mit Begruendung aus Messwert und Mechanismus. B erfordert Verfahren (ii) Teilschritt-Weg mit Begruendung aus Lage und Kontext. Muendlich formuliere ich den Unterschied in einem Satz mit weil.
+ANTWORT: A erfordert Weg A mit Demo plus Versuch. B erfordert Weg B mit Bank und Wand. Ich waehle A/B, weil Klasse und Zeit es verlangen.
 
-`Klausur-Satz: Verfahren (i) setzt die Grenze, Verfahren (ii) nutzt die Lage; die Wahl traegt das Urteil.`
+`Klausur-Satz: Ganz oder teilig: Klasse und Zeit waehlen den Weg.`
 
-## Schritt 6 — check: Selbsttest zu Bewegung erklären
+## Schritt 6 — check: Selbsttest
 
 CHECK (3 Fragen zur Selbstkontrolle mit Antworten):
 
-FRAGE: Woran erkennst du das Kernthema im Wettkampf? | ANTWORT: Am Target (4 methodische Reihen) und am Mechanismus aus Schritt 3.
-FRAGE: Wie erreichst du das Target? | ANTWORT: Durch Messen, Deuten mit Fachbegriff und Ableiten der Korrektur.
-FRAGE: Wann waehlst du Verfahren (i) statt (ii)? | ANTWORT: Bei Grenzfragen (i), bei Lagenfragen (ii).
+- FRAGE: Warum Bild zuerst? | ANTWORT: Weil Vorstellung aus Sehen entsteht; Worte ohne Bild bleiben leer.
+- FRAGE: Wie viele Worte? | ANTWORT: Zwei bis drei je Knoten; mehr sprengt das Gedaechtnis.
+- FRAGE: Wann Weg A statt B? | ANTWORT: Mut plus Zeitdruck ganz (A), Angst plus Zeit teilig (B).
 
-`Klausur-Satz: Selbsttest bestanden heisst Target lesen, Verfahren waehlen und Urteil begruenden.`
+`Klausur-Satz: Stolperstein ist Erklaeren statt Ueben und Alles auf einmal.`
 
 ## Fehlvorstellung
 
 (Nicht-Schritt-Abschnitt, wird vom Parser automatisch erkannt und nicht als Schritt gezaehlt)
 
-1. Missverstaendnis: Eine Bewegung erklaeren heisst, alle Einzelheiten aufzuzahlen.
-   Korrektur: Die Erklaerung hat einen Schwerpunkt. Zuerst in drei Phasen teilen, dann die Hauptphase mit Begruendung hervorheben. Eine blosse Aufzaehlung ohne Markierung der entscheidenden Phase beantwortet die Warum-Frage nicht.
-   Korrektur-Satz: `Eine Bewegungserklaerung benennt nicht alle Einzelheiten, sondern hebt die entscheidende Hauptphase mit einer Begruendung hervor.`
-2. Missverstaendnis: Der Satz Diese Phase ist wichtig gilt als Begruendung.
-   Korrektur: Als Begruendung zaehlt nur ein konkreter Mechanismus, biomechanisch oder physiologisch. Die blosse Behauptung von Wichtigkeit bleibt leer und erhaelt keine Punkte.
-   Korrektur-Satz: `Als Begruendung gilt nur ein konkreter Mechanismus, biomechanisch oder physiologisch, nicht die blosse Behauptung, eine Phase sei wichtig.`
+1. Missverstaendnis: Gut erklaert ist gut geloest.
+   Korrektur: Erklaeren baut Vorstellung, Koennen braucht Versuche. Ohne Wiederholung bleibt Wissen Zuschauer. Reden ersetzt kein Turnen.
+   Korrektur-Satz: `Vorstellung plus Wiederholung ergibt Koennen; Erklaerung allein bleibt Tribüne.`
+2. Missverstaendnis: Alle Fehler auf einmal korrigieren.
+   Korrektur: Mehrere Baustellen loeschen jede; einer zur Zeit wirkt. Prioritaet heisst groesster Knoten zuerst.
+   Korrektur-Satz: `Ein Impuls je Durchgang; Prioritaet schlaegt Vollstaendigkeit.`
 
-## Schritt 7 — szenario: Klausurtransfer: Bewegung erklären — Pruefer in der Lizenzpruefung
-ROLLE: Du bist Pruefer in der Lizenzpruefung und verteidigst deine Entscheidung vor der Pruefungskommission.
-SITUATION: In Trainerlizenz-Pruefung, Bewegungsansage am Reck musst du in zusammenhaengenden deutschen Saetzen (ca. 90 Sekunden) Diagnose, Massnahme und Target (4 methodische Reihen, Demo Zeitlupe 0,5x, 2-min-Demo) vorstellen und mit Fachsprache begruenden.
+## Schritt 7 — szenario: Klausurtransfer — Sportlehrer Lehrprobe
+ROLLE: Du bist Sportlehrer Lehrprobe und verteidigst deine Entscheidung vor der Pruefungskommission.
+SITUATION: In Muenster musst du 90 Sekunden lang Demo, Worte und Target (Huefte hoch) vor dem Pruefer verteidigen.
 RUBRIC (30 XP): Diagnose mit Fachbegriffen (8 XP) | Massnahme mit Target-Beleg (10 XP) | Verfahrenswahl im Vergleich (7 XP) | Fachsprachlicher Vortrag (5 XP).
 
-## Schritt 8 — reflexion: Takeaway & Reflexion — Pokal oder Pitstop in Trainerlizenz-Pruefung
+`Klausur-Satz: AFB-III-Mustersatz: Die Fehlerquote entstand, weil vier Minuten ohne Bild die Vorstellung leerten; Demo plus Huefte hoch wuerde den Stand sichern.`
+
+## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY (Kernzusammenfassung):
 
-Grenze frueh sichern, Lage spaet nutzen: Das Target (4 methodische Reihen, Demo Zeitlupe 0,5x, 2-min-Demo) misst den Unterschied, das Verfahren traegt das Urteil. Takeaway-Satz: `Wer die Grenze sichert und die Lage nutzt, holt in Trainerlizenz-Pruefung den Pokal.`
+Zeige kurz, sprich knapp, korrigiere einzeln: Das Bild traegt, das Wort lenkt, der Versuch entscheidet. Wer die Reihe haelt, stellt die Klasse auf die Haende. Takeaway-Satz: `Wer die Grenze sichert und die Lage nutzt, holt den Pokal.`
+
+`Klausur-Satz: Metakern: Lehren ist Last steuern; wer Reihen baut, versteht jeden Unterricht.`
 
 REFLEXION (2 Fragen):
 1. Selbstkontrolle: Welcher Schritt fiel schwerer, die Sandkasten-Praezision (Schritt 4) oder die Verfahrenswahl im Duell (Schritt 5)?

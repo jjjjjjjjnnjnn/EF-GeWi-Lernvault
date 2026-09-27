@@ -11,25 +11,28 @@ tags: [EF, Musik, CN]
 version: Lesson-v3
 ---
 
-# Lernreise: Rhythmus mit Synkopen und Jazz-Groove (L1, Ziel Klausur)
+
+
+
+# Lernreise: Lernreise: Lernreise: Lernreise: Rhythmus mit Synkopen und Jazz-Groove (L1, Ziel Klausur)
 
 <!-- Lesson v3 9步制架构：Schritt 1至8固定结构；Fehlvorstellung 夹在 Schritt 6 与 7 之间（Parser 自动跳过，不占步数）；支持内嵌 [Werkzeug: <id>] 交互教具；Gating: check/szenario 未过 = Weiter 置灰；XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
-## Schritt 1 — entdecken: New Yorker Jazzclub — 赛场警报
+## Schritt 1 — entdecken: Berliner A-Trane Club, All Blues (138 BPM, 6/8-Feeling) — 赛场警报
 
 ZIELE (3条,本节15分钟学完能做到——先读中文,再记德语):
 
-1. 中文:能一句话定义`Rhythmus mit Synkopen und Jazz-Groove`,并定位到本关赛事New Yorker Jazzclub, Gershwin Rhapsody in Blue (Klarinetten-Glissando)。
-2. 中文:能口述核心机制,并用数值目标(Off-Beat 120 BPM, 90-Sekunden-Groove-Analyse)举证。
+1. 中文:能一句话定义`Rhythmus mit Synkopen und Jazz-Groove`,并定位到本关赛事Berliner A-Trane Club, All Blues (138 BPM, 6/8-Feeling)。
+2. 中文:能口述核心机制,并用数值目标(138 BPM, Delta 0,22 s, 6/8-Feeling, 8 Takte klatschsicher)举证。
 3. 中文:能诊断一处典型错误,并用德语Klausur-Satz收束(AF B II)。
 
 ### Hook 赛场/舞台实况
 
-聚光灯打向New Yorker Jazzclub, Gershwin Rhapsody in Blue (Klarinetten-Glissando),这是《冠军竞技场与节拍工坊》战役的下一关:上一集埋下的悬念在此引爆,教练/首席必须在限时内拿出方案。切分就是预期落空:重音迟到或早到,身体先被晃再被带走;数拍子、拍clave、跟groove三步定位。本关必须过沙盘数值目标,下一集的瓦格纳动机/体能极限/冲量角逐在此埋下伏笔。
+Take Five 一响观众拍一全错位。爵士活在拍子边上不在拍上:切分把重音扔到弱拍与起拍,groove 用律动兜住张力。本关用身体加数字拆5/4。
 
-Hook (DE): Im Rampenlicht von New Yorker Jazzclub, Gershwin Rhapsody in Blue (Klarinetten-Glissando) beginnt unser naechster Akt der Kampagne Champion-Arena und Takt-Werkstatt. Stell dir vor: Der Drummer verlegt einen einzigen Schlag, und ploetzlich wippt der ganze Saal: Nichts stimmt mehr mit der Erwartung, und alles groovt staerker. Was bewegt die Fuesse gegen den Kopf? Die Synkope als versetzte Betonung. Erstens zaehlt das Metrum die Ordnung. Zweitens bricht der Off-Beat die Regel. Drittens traegt der Groove die Lust. Wer Clave und Puls haelt, analysiert statt zu wippen. Heute stellen wir genau diese Falle: zaehlen, klatschen und Wirkung belegen.
+Hook (DE): Take Five laeuft, das Publikum klatscht auf eins mit und liegt komplett daneben. Der Schlagzeuger grinst: Wer eins sucht, verliert den Groove. Denn der Jazz lebt neben dem Schlag, nicht darauf. Was tanzt hier eigentlich? Die **Synkope** verschiebt Betonung auf **Offbeat** und **Auftakt**, der **Groove** haelt die Spannung ueber **Metrum** und **Backbeat**. Wer Synkopen zaehlt statt fuehlt, versteht Dave Brubeck nie. Heute knacken wir 5/4-Takt mit Koerper und Zahl.
 
-`Klausur-Satz: Leitsatz des Themas.`
+`Klausur-Satz: 科隆揭示:拍一的人丢 groove,爵士活在边上。`
 
 ## Schritt 2 — entdecken: 5术语装备盒
 
@@ -37,108 +40,114 @@ PRETRAINING术语盒(核心5词,先读三遍中德,合书自测中文→德语):
 
 中文在上,德语在下:
 
-- 切分 — Synkope:重音移位 / Verschiebung der Betonung。
-- 摇摆 — Groove:循环律动 / kreislaufender Puls。
-- 摇摆三连音 — Shuffle:三连音律动 / Triolen-Groove。
-- clave — Clave:拉丁节奏钥匙 / lateinischer Schluesselrhythmus。
-- 节拍 — Metrum:拍号骨架 / Taktgeruest。
+- 节拍 — Metrum:规律重音网格,Take Five 5/4拆3+2,没网格无切分 / Das Metrum ist das regelmaessige Betonungsraster, etwa 5/4 mit 3+2-Gliederung bei Take Five. Es ordnet Zeit und erwartet Schwerpunkte. Ohne Metrum keine Synkope. Mechanismus: Neuronale Oszillation synchronisiert auf Pulse; Erwartung macht Abweichung hoerbar. Klausur-Tipp: Nenne Takt plus Gliederung 3+2; Raster ist das Wort.
+- 切分 — Synkope:重音扔弱拍或跨强拍,与网格摩擦产驱动 / Die Synkope ist die Betonung leichter Zeit oder die Ueberbindung ueber schwere Zeit. Sie erzeugt Reibung gegen das Metrum und damit Drive. Jazz und Funk leben aus ihr. Mechanismus: Akzent gegen Erwartung erhoeht Erregung; Aufloesung auf eins entlaedt sie. Klausur-Tipp: Nenne leicht statt schwer plus Beispiel Takt; Reibung als Wirkung.
+- 弱拍与反拍 — Offbeat und Backbeat:und 拍与二四拍,拍手验 groove / Offbeat sind die unbetonten Zaehzeiten (und), Backbeat die Zwei und Vier im 4/4. Klatschen auf Backbeat definiert Groove. Wer eins klatscht, outet sich. Mechanismus: Antizipation auf schwache Pulse plus Bass-Drum-Kontrast; Koerper synchronisiert auf Gegenpuls. Klausur-Tipp: Nenne und plus Zwei/Vier; Klatschprobe als Beleg.
+- Groove律动 — Groove:贝斯鼓点重音的微时滞织体,拽着身体动 / Groove ist das wiederkehrende mikrozeitliche Gefuege aus Bass, Drums und Akzenten, das zum Mitbewegen zwingt. Er entsteht aus Praezision plus Winzigkeit der Abweichung. Guter Groove laesst sich nicht notieren, nur spueren. Mechanismus: Mikro-Timing (10 bis 30 ms frueh/spaet) plus Klangfarben-Layering; Konsistenz erzeugt Sog. Klausur-Tipp: Nenne Mitbewegung plus Mikro-Timing; Sog als Wirkung.
+- 起拍 — Auftakt:强拍前不完全小节,借势起,断风格 / Der Auftakt ist der unvollstaendige Takt vor der ersten Schwere. Er holt Schwung und verraet Stil. All Blues beginnt mit Dreiton-Auftakt ins 6/8-Feeling. Mechanismus: Anlauf-Spannung loest sich auf eins; Phrasierung haengt am Auftakt. Klausur-Tipp: Nenne unvollstaendig plus Schwung; Auftakt als Stilindiz.
 
-`Klausur-Satz: Die fuenf Begriffe tragen Diagnose, Sandkasten und Urteil als gemeinsame Sprache.`
+`Klausur-Satz: 节拍是网格切分是摩擦,两定义撑起分析。`
 
 ## Schritt 3 — entdecken: 生理/音乐机制传导
 
 ENTDECKEN(1概念 + 1文字图解,中文在上、德语在下):
 
-中文:切分=预期落空:重音迟到或早到,身体先被晃再被带;数拍子、拍 clave、跟 groove 三步定位。
+中文:节拍建预期,切分精准打破,groove 兜住破绽。弱拍偏离可计量:半拍长。数出偏离再拍手,5/4即拿下。
 
-Mechanismus (DE): Synkope bricht die Erwartung: Betonung kommt zu frueh oder zu spaet; Zaehlen, Clave und Groove sichern die Analyse.
+Mechanismus (DE): Das Metrum baut Erwartung, die Synkope bricht sie gezielt, der Groove haelt den Bruch ueber Takte durch. Der Versatz gegen den Puls laesst sich messen: Offbeat liegt exakt eine halbe Schlaglaenge daneben. Wer den Versatz zaehlt und klatscht, versteht Brubecks 3+2.
+
+$$
+\Delta = \frac{T}{2} = \frac{30}{BPM} \quad\text{z.B. } \Delta = \frac{30}{176} \approx 0{,}17\,\mathrm{s}
+$$
 
 战役传导:本关承接冲量角逐、乳酸阈值与主导动机三幕,测得出才能说得清,说得清才能赢下来。
 
 ```diagram
-Kampagne [Impuls -> Schwelle -> Leitmotiv]
-Holphase [sichern] -> Pruefphase [Off-Beat 120 BPM, 90-Sekunden-Groove-Analyse] -> Zielphase [nutzen]
+Metrum [3+2 Raster] -> Synkope [Delta 0,17 s] -> Groove [Sog ueber 32 Takte]
 Regel: Fehler frueh = Grenze | Fehler spaet = Ausnutzung
 ```
 
-`Klausur-Satz: Der Mechanismus trennt Grenze von Ausnutzung und ordnet jeden Fehler seiner Phase zu.`
+`Klausur-Satz: 预期减偏离加稳定等于上头,Delta 计量它。`
 
 ## Anekdote & Fun-Fact
 
-**Anekdote / Fun-Fact (DE)**: In New Orleans marschierten Beerdigungen mit zwei Tempi: hin langsam-traurig, zurueck schnell-tanzend. Aus Trauermarsch plus Tanzschritt wuchs der Jazz — Synkopen als Auferstehung des Koerpers.
+**Anekdote / Fun-Fact (DE)**: Dave Brubeck schrieb Take Five 1959 aus einer Tuerkei-Tournee, wo Strassenmusiker 9/8-Grooves klatschten. Sein Drummer Joe Morello probte den 5/4-Pattern wochenlang gegen Metronom, bis Kellner im Studio mitwippten. Der unverkauflichste Takt wurde zum meistverkauften Jazz-Single.
 
-**中文解读**: 新奥尔良送葬去时缓、回时舞，爵士生于悲喜同拍。记住"葬礼回程变舞"，切分的身体性就有了源头。
+**中文解读**: Take Five 灵感来自土耳其街头9/8,鼓手对节拍器磨几周,服务员都跟晃。最难卖的拍子成最畅销单曲。
 
-**Bezug zum Konzept**: `Jazz verwandelt Trauer-Schritte in Tanz-Synkopen.`
+**Bezug zum Konzept**: `Groove entsteht aus Vermessung plus Koerper; Morellos Metronom beweist beides.`
 
-## Schritt 4 — ausprobieren: 沙盘决战 Off-Beat 120 BPM
+## Schritt 4 — ausprobieren: 沙盘决战
 
 BEISPIEL(含教具操作与解答):
 
-[Werkzeug: oral-timer]
+[Werkzeug: formula]
 
-AUFGABE (analysieren, AFB II):90-Sekunden-Groove gegen den Timer: klatsche Off-Beat bei 120 BPM und benenne die Synkope;达标线:Off-Beat 120 BPM, 90-Sekunden-Groove-Analyse。
+AUFGABE (analysieren, AFB II):律动调节器:量138 BPM下Delta,拍反拍,指认All Blues三连感,达标。达标线:138 BPM, Delta 0,22 s, 6/8-Feeling, 8 Takte klatschsicher。
 
-Target数值目标:Off-Beat 120 BPM, 90-Sekunden-Groove-Analyse。
+Target数值目标:138 BPM, Delta 0,22 s, 6/8-Feeling, 8 Takte klatschsicher。
 
 HILFE:
-1. 定相命名:先说相位与错误画像,对照目标Off-Beat 120 BPM。
-2. 读数释义:读出测量值,用一个术语解释效应。
-3. 推纠正:从机制推出一条可操作纠正。
+1. 用30/BPM算Delta。
+2. 在3+2网格上标切分。
+3. 拍反拍说 groove 效果。
 
-MUSTERLÖSUNG:对照目标(Off-Beat 120 BPM, 90-Sekunden-Groove-Analyse),先定相命名错误画像,再读数并以术语释效应,最后从机制推纠正;在New Yorker Jazzclub, Gershwin Rhapsody in Blue (Klarinetten-Glissando)中形成 保障—转化—兑现 的完整因果链,达标即过关。
+MUSTERLÖSUNG:138 BPM下Delta 0,22秒,钢琴riff全坐弱拍,8小节反拍加计算即达标。
 
-`Klausur-Satz: Am Target zeigt sich, ob Grenze oder Ausnutzung ueber das Ergebnis entschied.`
+`Klausur-Satz: 目标138 BPM配0,22秒证明:微小拽全场。`
 
-## Schritt 5 — ausprobieren: VERGLEICH技术对抗 Zaehlen-Weg vs Groove-Weg
+## Schritt 5 — ausprobieren: VERGLEICH技术对抗 Zaehlen und Messen (Delta rechnen, Raster zeichnen) vs Fuehlen und Bewegen (klatschen, steppen: Groove spueren)
 
 VERGLEICH辨别实验(双向辨析,先选程序再解题):【选程序】
 
-VERGLEICH:先选程序—— (i) Zaehlen-Weg 还是 (ii) Groove-Weg ——再解题。WegA讲上限/结构,WegB讲兑现/情境。【选程序:问上限与结构选(i),问兑现与情境选(ii)。口述先说 Ich waehle Verfahren (i)/(ii), weil …】
+VERGLEICH:先选程序—— (i) Zaehlen und Messen (Delta rechnen, Raster zeichnen) 还是 (ii) Fuehlen und Bewegen (klatschen, steppen: Groove spueren) ——再解题。【选程序:问上限与结构选(i),问兑现与情境选(ii)。口述先说 Ich waehle Verfahren (i)/(ii), weil …】
 
-AUFGABE A (Zaehlen-Weg):在New Yorker Jazzclub, Gershwin Rhapsody in Blue (Klarinetten-Glissando)的首个案例中选哪条路,如何论证?
+AUFGABE A:案例A(笔试看谱)选哪条?
 
-AUFGABE B (Groove-Weg):在对立案例中选哪条路,如何论证?
+AUFGABE B:案例B(排练不 groove)选哪条?
 
-HILFE:A问上限属于程序(i);B问兑现属于程序(ii)。先说选哪条路,再给测量/情境证据。
+HILFE:A braucht Beleg, also Zahl. B braucht Sog, also Koerper.
 
-ANTWORT:A走程序(i)Zaehlen-Weg,以测量值与机制论证上限;B走程序(ii)Groove-Weg,以情境与位置论证兑现。德语口述句收束。
+ANTWORT:A走数理程序;B走身体程序。
 
-`Klausur-Satz: Verfahren (i) setzt die Grenze, Verfahren (ii) nutzt die Lage; die Wahl traegt das Urteil.`
+`Klausur-Satz: 数还是动,考场舞台说了算。`
 
-## Schritt 6 — check: Selbsttest zu Rhythmus mit Synkopen und Jazz-Groove
+## Schritt 6 — check: Selbsttest
 
 CHECK检索默写(自测3题,与答案配对):
 
-FRAGE:如何在赛事中认出本课核心? | ANTWORT:看数值目标(Off-Beat 120 BPM)与S3机制。
-FRAGE:如何达标? | ANTWORT:测量、术语释义、从机制推纠正三步。
-FRAGE:何时选程序(i)而非(ii)? | ANTWORT:问上限选(i),问兑现选(ii)。
+- FRAGE:弱拍在哪? | ANTWORT:半拍长偏离,算出来再拍出来。
+- FRAGE:何谓groove? | ANTWORT:微时滞织体拽身体,稳则上头。
+- FRAGE:何时数而非动? | ANTWORT:笔试数,舞台动。
 
-`Klausur-Satz: Selbsttest bestanden heisst Target lesen, Verfahren waehlen und Urteil begruenden.`
+`Klausur-Satz: 易错是当错音与迷信记谱。`
 
 ## Fehlvorstellung
 
-(非Schritt小节，Parser 自动识别，不计入步骤步数)
+(非Schritt小节，Parser 自动识别，不计入入步数)
 
-1. 误解"切分就是乱拍"。
-   中文纠偏：切分以稳拍为参照才成立；拍子乱了叫 Taktfehler，不是 Synkope。
-   Korrektur-Satz: `Synkopen brauchen ein spuerbares Metrum als Folie.`
+1. 误解“切分就是弹错。”。
+   中文纠偏：切分是网格内的故意摩擦,错音连网格都没有。
+   Korrektur-Satz: `Synkope braucht Raster; Fehler brauchen keins.`
+2. 误解“groove 能精确记谱。”。
+   中文纠偏：20毫秒的错位谱上没有,谱给骨架身体给魂。
+   Korrektur-Satz: `Notation zeigt Was, Groove zeigt Wie; Klatschen prueft.`
 
-2. 误解"律动只听鼓"。
-   中文纠偏：Groove 是三层咬合；只写鼓丢掉贝斯参照与钢琴错位两分。
-   Korrektur-Satz: `Groove entsteht aus dem Zusammenspiel aller Schichten.`
+## Schritt 7 — szenario: Klausurtransfer — Bandleader Jazz-Night
+中文:你是Bandleader Jazz-Night,在Berliner A-Trane Club, All Blues (138 BPM, 6/8-Feeling)中必须用德语连贯口述(约90秒)诊断、措施与数值目标(138 BPM, Delta 0,22 s, 6/8-Feeling, 8 Takte klatschsicher),并以术语举证。
+ROLLE: Du bist Bandleader Jazz-Night. SITUATION: 在A-Trane用德语90秒陈述网格、Delta与目标(138 BPM,0,22秒)。
+RUBRIC (30 XP):诊断术语8分 | 措施与目标举证7分 | 程序选择对比7分 | 德语表达5分。
 
-## Schritt 7 — szenario: Klausurtransfer: Rhythmus mit Synkopen und Jazz-Groove — Bandleader im Jazzclub
-中文:你是Bandleader im Jazzclub,在New Yorker Jazzclub, Gershwin Rhapsody in Blue (Klarinetten-Glissando)中必须用德语连贯口述(约90秒)诊断、措施与数值目标(Off-Beat 120 BPM, 90-Sekunden-Groove-Analyse),并以术语举证。
-ROLLE: Du bist Bandleader im Jazzclub. SITUATION: In New Yorker Jazzclub, Gershwin Rhapsody in Blue (Klarinetten-Glissando) stellst du Diagnose, Massnahme und Target (Off-Beat 120 BPM, 90-Sekunden-Groove-Analyse) in ca. 90 Sekunden vor.
-RUBRIC (30 XP):诊断术语8分 | 措施与目标举证10分 | 程序选择对比7分 | 德语表达5分。
+`Klausur-Satz: 满分句:groove 因弱拍riff以0,22秒摩擦3+2、反拍兜底;网格加拍手锁定满分。`
 
 ## Schritt 8 — reflexion: Takeaway & Reflexion — 奖杯还是进站检修
 
 TAKEAWAY 1盒(核心总结):
 
-中文:上限早锁定、位置晚兑现;数值目标(Off-Beat 120 BPM, 90-Sekunden-Groove-Analyse)是裁判,程序选择是辩护;本关连着冲量角逐、体能极限与主导动机三幕,测得出、说得清、赢下来。
+中文:数出偏离,晃出感觉:节拍许诺、切分打破、groove 兜底。
 Takeaway-Satz: `Wer die Grenze sichert und die Lage nutzt, holt den Pokal.`
+
+`Klausur-Satz: 元认知:节奏是预期管理,会量偏离就懂律动。`
 
 REFLEXION 2问:
 1. 过程自省:沙盘精度(Schritt 4)与程序选择(Schritt 5)哪一步更难?

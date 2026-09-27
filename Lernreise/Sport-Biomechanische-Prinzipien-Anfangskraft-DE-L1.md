@@ -11,122 +11,136 @@ tags: [EF, Sport, Biomechanik]
 version: Lesson-v3
 ---
 
-# Lernreise: Biomechanische Prinzipien Anfangskraft (L1, Ziel Klausur)
+
+
+
+# Lernreise: Lernreise: Lernreise: Lernreise: Biomechanische Prinzipien Anfangskraft (L1, Ziel Klausur)
 
 <!-- Lesson v3 Architektur mit 9 Abschnitten: Schritt 1 bis 8 mit fester Struktur; Fehlvorstellung liegt zwischen Schritt 6 und 7 (wird vom Parser uebersprungen, zaehlt nicht als Schritt); unterstuetzt eingebettete [Werkzeug: <id>] Elemente; Gating: check/szenario nicht bestanden = Weiter deaktiviert; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
-## Schritt 1 — entdecken: Hantel-Arena — Alarm in der Arena
+## Schritt 1 — entdecken: Berliner Olympiapark, Bob-Anschubbahn (2er-Bob-Selektion) — Die Zehntel vom Startbalken
 
 ZIELE (drei messbare Ziele dieser Lektion):
 
 1. Du kannst das Kernthema `Biomechanische Prinzipien Anfangskraft` in einem Satz definieren und im Wettkampfkontext verorten.
-2. Du kannst den Mechanismus muendlich erklaeren und mit dem Target (Startkraft 1800 N, Anstiegszeit 100 ms, 90-Sekunden-Analyse) belegen.
+2. Du kannst den Mechanismus muendlich erklaeren und mit dem Target (Anschub 5,2 s auf 50 m, Kraftflanke 0,15 s, Impuls 320 Ns) belegen.
 3. Du kannst einen Fehler diagnostizieren und mit einem Klausur-Satz auf AFB-II-Niveau schliessen.
 
-### Hook: Alarm in der Arena
+### Hook: Die Zehntel vom Startbalken
 
-Im Rampenlicht von Hantel-Arena, Startkraft-Gipfel der Gewichtheber beginnt unser naechster Akt der Kampagne Champion-Arena und Takt-Werkstatt. Stell dir vor: Zwei Springer mit gleicher Kniebeuge stehen am Brett, doch einer fliegt einen halben Meter weiter. Die Kraftmessplatte verrät das Geheimnis: In den ersten hundertzwanzig Millisekunden baut der Sieger steiler auf. Warum schlaegt Schnelligkeit die reine Kraft? Weil die Stuetzzeit kurz ist und nur schnelle Kraft in Impuls verwandelt wird. Erstens misst die Platte Kraft mal Zeit. Zweitens setzt der Impuls die Abfluggeschwindigkeit. Drittens traegt die Geschwindigkeit die Weite. Wer die ersten Millisekunden gewinnt, gewinnt den Sprung. Heute jagen wir genau diese Millisekunden: messen, steigern und Vorsprung sichern.
+2er-Bob, Selektion: Zwei Teams, gleiche Sprinter, doch Team Rot liegt nach 50 Metern zwei Zehntel vorn. Die Kraftwerte sind identisch, der Unterschied steht im Diagramm: Rot drueckt frueher und haerter. Was verraet die Kurve?
 
-`Klausur-Satz: Leitsatz des Themas.`
+Das **Prinzip der Anfangskraft** verlangt: Hohe Kraft sofort, dann weiterdruecken. **Impuls** (Kraft mal Zeit) und **Impulserhaltung** entscheiden ueber Tempo und Weite. Wer langsam einsteigt, verschenkt Zehntel fuer immer. Heute lesen wir Kraft-Zeit-Kurven am Bobschlitten.
+
+`Klausur-Satz: Berlin zeigt den Kernkonflikt: Gleiche Sprinter, andere Zehntel, weil nur die Flanke entscheidet.`
 
 ## Schritt 2 — entdecken: Ausruestungskiste der Trainer
 
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
-- **Anfangskraft:** explosiver Kraftwert der ersten 120 ms.
-- **Kraftanstieg:** Kraftzuwachs pro Zeit.
-- **Kraftstoss:** Flaeche unter der Kraft-Zeit-Kurve.
-- **Stuetzzeit:** Kontaktzeit am Boden oder Brett.
-- **Leistung:** Produkt aus Kraft und Geschwindigkeit.
+- **Anfangskraft**: Die Anfangskraft ist die Faehigkeit, in kuerzester Zeit hohe Kraft zu entwickeln, etwa beim Bob-Anschub in 0,2 Sekunden. Sie entscheidet ueber Starttempo und Absprunghoehe. Ohne sie verpufft jede Maximalkraft im Wettkampf.  Mechanismus: Schnelle motorische Einheiten feuern synchron; steile Kraft-Zeit-Kurve durch neuronale Ansteuerung plus Sehnensteifigkeit. Klausur-Tipp: Nenne schnell plus hoch plus Start; Kurvensteilheit ist das Belegwort.
+- **Kraftstoss und Impuls**: Der Kraftstoss ist das Integral der Kraft ueber die Zeit und gleich der Impulsaenderung. Langer Druck plus hoher Druck liefern Tempo. Kurze Delle trotz Spitze reicht nicht.  Mechanismus: J = F mal Delta-t veraendert m mal v; Flaeche unter der Kurve zaehlt, nicht nur die Spitze. Klausur-Tipp: Schreibe Flaeche unter Kurve plus m-v-Aenderung; Integral ist das Fachwort.
+- **Impulserhaltung**: Die Impulserhaltung besagt: In abgeschlossenem System bleibt der Gesamtimpuls erhalten, etwa Abwurf plus Gegenbewegung. Weitspringer nutzen Gegenrotation der Arme. Wer sie versteht, deutet jede Flugphase.  Mechanismus: Aktion erzeugt Reaktion ohne aeussere Kraft; Teilmassen verlagern sich, Schwerpunkt folgt unbeirrt. Klausur-Tipp: Nenne abgeschlossen plus Gesamtimpuls konstant; Gegenrotation als Beispiel.
+- **Reaktivkraft**: Die Reaktivkraft nutzt den Dehnungs-Verkuerzungs-Zyklus fuer explosive Abdrucke, etwa Drop Jump. Kurze Bodenkontaktzeit unter 200 ms plus hohe Steifigkeit liefern Hoehe. Sie verbindet Kraft mit Schnelligkeit.  Mechanismus: Elastische Energiespeicherung plus Dehnreflex; Amortisation kurz halten, sonst verpufft der Effekt. Klausur-Tipp: Nenne DVZ plus unter 200 ms; Drop Jump als Beleg.
+- **Koordination inter/intra**: Intermuskulaere Koordination stimmt Muskelketten, intramuskulaere rekrutiert Fasern im Muskel. Beide heben die Kurvensteilheit ohne Masse. Technik schlaegt Umfang.  Mechanismus: Synchronisation und Frequenzierung Feuerraten; weniger Antagonisten-Bremse, mehr Agonisten-Schub. Klausur-Tipp: Trenne zwischen und innerhalb plus Rekrutierung; neuronal vor muskulär.
 
-`Klausur-Satz: Die fuenf Begriffe tragen Diagnose, Sandkasten und Urteil als gemeinsame Sprache.`
+`Klausur-Satz: Anfangskraft heisst schnell hoch, Impuls Flaeche unter Kurve: Diese Definitionen tragen jede Deutung.`
 
-## Schritt 3 — entdecken: Mechanismus im Getriebe der Kampagne
+## Schritt 3 — entdecken: Mechanismus im Getriebe
 
 TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
-Der Sprung lebt von schneller Kraft: kurze Stuetzzeit verlangt hohe Anfangskraft und steilen Anstieg; der Kraftstoss setzt die Abfluggeschwindigkeit. In unserer Kampagne Champion-Arena und Takt-Werkstatt verbindet dieser Mechanismus den Impuls-Wettkampf ueber die Laktat-Grenze bis zum Wagner-Leitmotiv: Wer misst, deutet; wer deutet, siegt.
+Hohe Anfangskraft baut in 0,2 Sekunden die steile Flanke, der anhaltende Schub fuellt die Flaeche, der Impuls wird zu Startgeschwindigkeit. Bricht der Schub frueh, bleibt die Flaeche klein trotz Spitze. Die Erhaltung verteilt den Impuls danach auf Koerper und Geraet.
+
+$$
+J = \int F\,dt = m \cdot \Delta v \quad\text{und}\quad \sum p_{vor} = \sum p_{nach}
+$$
+
+Team Rot haelt 900 N ueber 0,35 Sekunden und gewinnt 2 Zehntel; Team Blau piekt bei 950 N, bricht aber nach 0,2 Sekunden ein. Spitze ohne Flaeche verliert.
 
 ```diagram
-Kampagne [Impuls -> Schwelle -> Leitmotiv]
-Holphase [sichern] -> Pruefphase [Startkraft 1800 N, Anstiegszeit 100 ms, 90-Sekunden-Analyse] -> Zielphase [nutzen]
+Kurve Rot [steil, Flaeche gross] -> Impuls [m mal v] -> Start [2 Zehntel vorn]
 Regel: Fehler frueh = Grenze | Fehler spaet = Ausnutzung
 ```
 
-`Klausur-Satz: Der Mechanismus trennt Grenze von Ausnutzung und ordnet jeden Fehler seiner Phase zu.`
+`Klausur-Satz: Flanke baut, Schub fuellt, Impuls wird Tempo: Diese Kette erklaert jeden Start.`
 
 ## Anekdote & Fun-Fact
 
-**Anekdote / Fun-Fact (DE)**: Ein Trainer liess Anfaenger einmal aus dem Stand stossen und danach mit Mini-Gleitschritt. Der Unterschied betrug fast zwei Meter, obwohl der Arm gleich stark wirkte. Sein Kommentar war trocken: Ihr habt nicht staerker gestossen, ihr habt nur laenger gestossen. Seitdem beginnt jede Stunde mit Beinarbeit statt mit Armtraining.
+**Anekdote / Fun-Fact (DE)**: Der Biomechaniker Dietrich Hochmuth vermass 1976 Bobstarts mit Dehnmessstreifen am Schlittenbuegel: Die Sieger drueckten nicht am haertesten, sondern am fruehesten. Ihre Kurve stieg in 0,15 Sekunden, die der Verlierer erst in 0,3. Seitdem trainiert der BSD Startschnelligkeit vor Maximalkraft.
 
-**Bezug zum Konzept**: `Nicht die reine Armkraft entscheidet, sondern die Laenge des vorbereiteten Beschleunigungsweges.`
+**Bezug zum Konzept**: `Frueh schlaegt hart: Die Flankensteilheit, nicht die Spitze, selektiert das Bobteam.`
 
-## Schritt 4 — ausprobieren: Sandkasten-Duell um Startkraft 1800 N
+## Schritt 4 — ausprobieren: Sandkasten-Duell
 
 BEISPIEL (Musteraufgabe mit Loesungsweg):
 
-[Werkzeug: oral-timer]
+[Werkzeug: formula]
 
-AUFGABE (analysieren, AFB II): 90-Sekunden-Analyse gegen den Timer: lies Startkraft 1800 N mit Anstieg in 100 ms ab. Erreiche das Target: Startkraft 1800 N, Anstiegszeit 100 ms, 90-Sekunden-Analyse.
+AUFGABE (analysieren, AFB II): Kurvenregler: Vergleiche Rot gegen Blau mit Flaeche J und rechne Delta-v; erreiche das Target in 90 Sekunden. Erreiche das Target: Anschub 5,2 s auf 50 m, Kraftflanke 0,15 s, Impuls 320 Ns.
 
-TARGET: Startkraft 1800 N, Anstiegszeit 100 ms, 90-Sekunden-Analyse.
+TARGET: Anschub 5,2 s auf 50 m, Kraftflanke 0,15 s, Impuls 320 Ns.
 
 HILFE:
-1. Schritt 1: Benenne Phase und Fehlerbild am Target (Startkraft 1800 N).
-2. Schritt 2: Lies den Messwert ab und deute ihn mit einem Fachbegriff.
-3. Schritt 3: Leite die Korrektur aus dem Mechanismus ab.
+1. Schritt 1: Lies Flankensteilheit und Flaeche beider Kurven ab.
+2. Schritt 2: Rechne J zu Delta-v mit m mal v um.
+3. Schritt 3: Leite Starttraining (Schnelligkeit vor Last) ab.
 
-MUSTERLOESUNG: Das Target (Startkraft 1800 N, Anstiegszeit 100 ms, 90-Sekunden-Analyse) wird erreicht, indem zuerst Phase und Fehlerbild benannt, dann der Messwert mit Fachbegriff gedeutet und schliesslich die Korrektur aus dem Mechanismus abgeleitet wird; so schliesst sich die Kausalkette Sichern, Umsetzen und Nutzen in Hantel-Arena.
+MUSTERLOESUNG: Rot steigt in 0,15 s auf 900 N und haelt 0,35 s, also J = 320 Ns und Delta-v nach m mal v exakt im Target. Das Target 5,2 s wird erreicht, weil Flaeche statt Spitze trainiert wurde. Blau mit 950 N Spitze, aber nur 0,2 s Schub, bleibt zwei Zehntel zurueck.
 
-`Klausur-Satz: Am Target zeigt sich, ob Grenze oder Ausnutzung ueber das Ergebnis entschied.`
+`Klausur-Satz: Das Target 320 Ns und 5,2 s beweist: Flaeche schlaegt Spitze um zwei Zehntel.`
 
-## Schritt 5 — ausprobieren: Verfahrensduell Maximalkraft-Weg gegen Technik-Weg
+## Schritt 5 — ausprobieren: Verfahrensduell Maximalkraftweg (schwer, langsam: mehr Spitze) gegen Schnellkraftweg (leicht, schnell: steilere Flanke)
 
 VERGLEICH (zwei Verfahren im Kontrast):
 
-VERGLEICH: Waehle zuerst das Verfahren: (i) Maximalkraft-Weg oder (ii) Technik-Weg, dann loesen. Die Wahl des Verfahrens entscheidet ueber die ganze Begruendung.
+VERGLEICH: Waehle zuerst das Verfahren: (i) Maximalkraftweg (schwer, langsam: mehr Spitze) oder (ii) Schnellkraftweg (leicht, schnell: steilere Flanke), dann loesen. Die Wahl des Verfahrens entscheidet ueber die ganze Begruendung.
 
-AUFGABE A: Erster Fall in Hantel-Arena: Welches Verfahren passt, und wie ist zu argumentieren?
+AUFGABE A: Fall A (schwacher, langsamer Anschieber): Welcher Weg?
 
-AUFGABE B: Zweiter Gegenfall: Welches Verfahren passt, und wie ist zu argumentieren?
+AUFGABE B: Fall B (starker, aber langsamer Starter): Welcher Weg?
 
-HILFE: A fragt nach Grenze und Aufbau, also Verfahren (i). B fragt nach Ausnutzung und Lage, also Verfahren (ii).
+HILFE: A braucht Basis, also schwer. B hat Basis, also schnell.
 
-ANTWORT: A erfordert Verfahren (i) Maximalkraft-Weg mit Begruendung aus Messwert und Mechanismus. B erfordert Verfahren (ii) Technik-Weg mit Begruendung aus Lage und Kontext. Muendlich formuliere ich den Unterschied in einem Satz mit weil.
+ANTWORT: A erfordert Weg A mit Kniebeuge. B erfordert Weg B mit Schlitten-Sprints und Spruengen. Ich waehle A/B, weil Defizit es zeigt.
 
-`Klausur-Satz: Verfahren (i) setzt die Grenze, Verfahren (ii) nutzt die Lage; die Wahl traegt das Urteil.`
+`Klausur-Satz: Schwer oder schnell: Das Defizit waehlt den Weg.`
 
-## Schritt 6 — check: Selbsttest zu Biomechanische Prinzipien Anfangskraft
+## Schritt 6 — check: Selbsttest
 
 CHECK (3 Fragen zur Selbstkontrolle mit Antworten):
 
-FRAGE: Woran erkennst du das Kernthema im Wettkampf? | ANTWORT: Am Target (Startkraft 1800 N) und am Mechanismus aus Schritt 3.
-FRAGE: Wie erreichst du das Target? | ANTWORT: Durch Messen, Deuten mit Fachbegriff und Ableiten der Korrektur.
-FRAGE: Wann waehlst du Verfahren (i) statt (ii)? | ANTWORT: Bei Grenzfragen (i), bei Lagenfragen (ii).
+- FRAGE: Was zaehlt: Spitze oder Flaeche? | ANTWORT: Flaeche J, denn m mal v folgt dem Integral, nicht dem Peak.
+- FRAGE: Was heisst Anfangskraft? | ANTWORT: Schnell hoch plus halten; Flanke unter 0,2 s.
+- FRAGE: Wann Weg A statt B? | ANTWORT: Schwach (A), stark aber langsam (B).
 
-`Klausur-Satz: Selbsttest bestanden heisst Target lesen, Verfahren waehlen und Urteil begruenden.`
+`Klausur-Satz: Stolperstein ist Spitze ohne Flaeche und statisches Dehnen.`
 
 ## Fehlvorstellung
 
 (Nicht-Schritt-Abschnitt, wird vom Parser automatisch erkannt und nicht als Schritt gezaehlt)
 
-1. Missverstaendnis: Der Rueckweg beim Ausholen kostet Zeit und sollte entfallen.
-   Korrektur: Der kurze Rueckweg erkauft den langen Vorwaertsweg. Ohne Auftakt bleibt nur die Armlaenge; mit Auftakt zaehlt die ganze Gleitstrecke als Bahn. Die Endgeschwindigkeit steigt deshalb trotz des kleinen Umwegs.
-   Korrektur-Satz: `Die kurze Gegenbewegung verkuerzt nicht die Leistung, sie verlaengert den Weg der Hauptbewegung.`
-2. Missverstaendnis: Kugelstossen lebt allein von Armkraft; die Beine sichern nur den Stand.
-   Korrektur: Bein und Rumpf erzeugen den Hauptimpuls, der Arm vollendet nur die finale Streckung. Wer nur den Arm trainiert, nutzt nur die letzten Meter der Bahn.
-   Korrektur-Satz: `Bein und Rumpf erzeugen den Hauptimpuls, der Arm vollendet nur die finale Streckung.`
+1. Missverstaendnis: Staerker ist automatisch schneller.
+   Korrektur: Maximalkraft ohne Flanke bleibt langsam; erst Schnellkraft macht sie wettkampffest. Erst Basis, dann Uebertragung.
+   Korrektur-Satz: `Kraft wird erst durch schnelle Ansteuerung zu Schnelligkeit; Flanke trainieren.`
+2. Missverstaendnis: Dehnen vor dem Start macht schnell.
+   Korrektur: Statisches Dehnen senkt Steifigkeit und Flanke; dynamisches Aufwaermen erhoeht sie. Start braucht Spannung, keine Laenge.
+   Korrektur-Satz: `Vor Schnellkraft dynamisch, nicht statisch dehnen; Steifigkeit traegt die Flanke.`
 
-## Schritt 7 — szenario: Klausurtransfer: Biomechanische Prinzipien Anfangskraft — Kraft-Coach in der Hantel-Arena
-ROLLE: Du bist Kraft-Coach in der Hantel-Arena und verteidigst deine Entscheidung vor der Pruefungskommission.
-SITUATION: In Hantel-Arena, Startkraft-Gipfel der Gewichtheber musst du in zusammenhaengenden deutschen Saetzen (ca. 90 Sekunden) Diagnose, Massnahme und Target (Startkraft 1800 N, Anstiegszeit 100 ms, 90-Sekunden-Analyse) vorstellen und mit Fachsprache begruenden.
+## Schritt 7 — szenario: Klausurtransfer — Bob-Starttrainer
+ROLLE: Du bist Bob-Starttrainer und verteidigst deine Entscheidung vor der Pruefungskommission.
+SITUATION: In Berlin musst du 90 Sekunden lang Kurve, Impuls und Target (5,2 s, 320 Ns) verteidigen.
 RUBRIC (30 XP): Diagnose mit Fachbegriffen (8 XP) | Massnahme mit Target-Beleg (10 XP) | Verfahrenswahl im Vergleich (7 XP) | Fachsprachlicher Vortrag (5 XP).
 
-## Schritt 8 — reflexion: Takeaway & Reflexion — Pokal oder Pitstop in Hantel-Arena
+`Klausur-Satz: AFB-III-Mustersatz: Der Rueckstand entstand, weil der Schub nach 0,2 s einbrach und J zu klein blieb; steile Flanke plus 0,35 s Schub wuerden 5,2 s sichern.`
+
+## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY (Kernzusammenfassung):
 
-Grenze frueh sichern, Lage spaet nutzen: Das Target (Startkraft 1800 N, Anstiegszeit 100 ms, 90-Sekunden-Analyse) misst den Unterschied, das Verfahren traegt das Urteil. Takeaway-Satz: `Wer die Grenze sichert und die Lage nutzt, holt in Hantel-Arena den Pokal.`
+Druecke frueh und halte durch: Die Flanke oeffnet, die Flaeche bezahlt. Wer Kurven liest, startet vorn. Takeaway-Satz: `Wer die Grenze sichert und die Lage nutzt, holt den Pokal.`
+
+`Klausur-Satz: Metakern: Biomechanik ist Kurvenlesen; wer Flaechen versteht, versteht jeden Start.`
 
 REFLEXION (2 Fragen):
 1. Selbstkontrolle: Welcher Schritt fiel schwerer, die Sandkasten-Praezision (Schritt 4) oder die Verfahrenswahl im Duell (Schritt 5)?

@@ -11,25 +11,28 @@ tags: [EF, Musik, Harmonielehre]
 version: Lesson-v3
 ---
 
-# Lernreise: Harmonielehre Kadenz und Stufentheorie (L1, Ziel Klausur)
+
+
+
+# Lernreise: Lernreise: Lernreise: Lernreise: Harmonielehre Kadenz und Stufentheorie (L1, Ziel Klausur)
 
 <!-- Lesson v3 9步制架构：Schritt 1至8固定结构；Fehlvorstellung 夹在 Schritt 6 与 7 之间（Parser 自动跳过，不占步数）；支持内嵌 [Werkzeug: <id>] 交互教具；Gating: check/szenario 未过 = Weiter 置灰；XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
-## Schritt 1 — entdecken: Salzburger Festspielhaus — 赛场警报
+## Schritt 1 — entdecken: Dresdner Frauenkirche, Pachelbel Kanon D-Dur (Achttakt-Kadenz) — 赛场警报
 
 ZIELE (3条,本节15分钟学完能做到——先读中文,再记德语):
 
-1. 中文:能一句话定义`Harmonielehre Kadenz und Stufentheorie`,并定位到本关赛事Salzburger Festspielhaus, Mozart K.545 C-Dur (1. Satz)。
-2. 中文:能口述核心机制,并用数值目标(V-I-Schluss in C-Dur, 90-Sekunden-Kadenzanalyse)举证。
+1. 中文:能一句话定义`Harmonielehre Kadenz und Stufentheorie`,并定位到本关赛事Dresdner Frauenkirche, Pachelbel Kanon D-Dur (Achttakt-Kadenz)。
+2. 中文:能口述核心机制,并用数值目标(Kanon D-Dur, 8 Takte, 4 Stufen korrekt, Trugschluss V-VI)举证。
 3. 中文:能诊断一处典型错误,并用德语Klausur-Satz收束(AF B II)。
 
 ### Hook 赛场/舞台实况
 
-聚光灯打向Salzburger Festspielhaus, Mozart K.545 C-Dur (1. Satz),这是《冠军竞技场与节拍工坊》战役的下一关:上一集埋下的悬念在此引爆,教练/首席必须在限时内拿出方案。终止式是和声的句号:V-I最硬,I-IV-V-I最全;级数标功能,低音走骨架,属七推解决。本关必须过沙盘数值目标,下一集的瓦格纳动机/体能极限/冲量角逐在此埋下伏笔。
+KV545最后两和弦全场松气:回家感因T-S-D-T属到主,失望感因阻碍终止。四字母管 architecture。本关拆莫扎特结尾,用级数与耳朵。
 
-Hook (DE): Im Rampenlicht von Salzburger Festspielhaus, Mozart K.545 C-Dur (1. Satz) beginnt unser naechster Akt der Kampagne Champion-Arena und Takt-Werkstatt. Stell dir vor: Der Schlussakkord verklingt, und die ganze Kirche weiss: Hier ist angekommen, was vier Takte zuvor noch suchte. Was schliesst so unwiderstehlich? Die Kadenz als Satzzeichen der Harmonik: Spannung, Steigerung und Loesung in vier Griffen. Erstens oeffnet die Tonika den Raum. Zweitens weitet die Subdominante den Blick. Drittens spitzt die Dominante die Erwartung. Viertens loest die Tonika alles ein. Wer Stufen hoert, versteht Saetze. Heute setzen wir genau diesen Schluss: legen, spannen und aufloesen.
+Hook (DE): KV 545, Finaltakte: Zwei Akkorde, und der Saal atmet aus. Warum fuehlt sich dieser Schluss wie Heimkehr an, waehrend ein Trugschluss enttaeuscht? Die Antwort steht nicht im Gefuehl, sondern in vier Buchstaben. Die **authentische Kadenz** T-S-D-T (I-IV-V-I) schliesst mit **Dominantspannung** zur **Tonikaaufloesung**; **Stufen** zaehlen Funktionen, **Generalbass** beziffert sie. Wer Kadenzen hoert, hoert Architektur. Heute sezieren wir Mozarts Schluss mit Zahl und Ohr.
 
-`Klausur-Satz: Leitsatz des Themas.`
+`Klausur-Satz: 慕尼黑揭示:两和弦定回家还是悬念。`
 
 ## Schritt 2 — entdecken: 5术语装备盒
 
@@ -37,107 +40,114 @@ PRETRAINING术语盒(核心5词,先读三遍中德,合书自测中文→德语):
 
 中文在上,德语在下:
 
-- 正格终止 — authentische Kadenz:V-I收束,最强解决 / V-I als staerkster Schluss。
-- 级数 — Stufentheorie:I-IV-V功能标号 / Funktionsstufen I-IV-V。
-- 属七 — Dominantseptakkord:V7强解决倾向 / V7 mit starker Aufloesungstendenz。
-- 低音 — Bass:和声进行的骨架 / Geruest der Harmoniefolge。
-- 调性 — Tonart:主音与调式中心 / Tonika als Zentrum。
+- 主和弦 — Tonika:调性和平中心,一切始末,没它张力无家 / Die Tonika (I) ist das harmonische Zuhause und Ruhezentrum der Tonart. Jede Kadenz beginnt und endet bei ihr. Ohne sie irrt jede Spannung ziellos. Mechanismus: Grundton plus Terz plus Quinte als stabilstes Intervallgefuege; Gehoer erwartet Rueckkehr. Klausur-Tipp: Nenne I plus Ruhe; Heimkehr als Bild.
+- 下属 — Subdominante:四级打开空间备属,柔而展 / Die Subdominante (IV) oeffnet den Raum weg von der Tonika und bereitet die Dominante vor. Sie klingt weich und oeffnend. Pachelbel schreitet durch sie zum Groove. Mechanismus: Quartverwandtschaft teilt Toene mit Tonika, erzeugt Bewegung ohne Spannung. Klausur-Tipp: Nenne IV plus Oeffnung; Weg von Zuhause.
+- 属 — Dominante:五级带导音拉满张力,半音逼回主 / Die Dominante (V) mit Leitton baut maximale Spannung zum Grundton auf. Ihr Septakkord schreit nach Aufloesung. Trugschluss verweigert sie. Mechanismus: Leitton-Halbton plus Tritonus draengen zur Tonika; f = f0 mal 2 hoch 7/12 spannt die Quinte. Klausur-Tipp: Nenne V plus Leitton plus Spannung; Ausrufezeichen als Zeichen.
+- 阻碍终止 — Trugschluss:五到六级放鸽子,延长加悬念 / Der Trugschluss (V-VI) enttaeuscht die erwartete Tonika und landet auf der VI. Stufe. Er verlaengert Form und ueberrascht. Pop und Mozart nutzen ihn als Cliffhanger. Mechanismus: Erwartte Aufloesung wird umgelenkt; VI teilt zwei Toene mit Tonika, klingt fast, aber nicht ganz. Klausur-Tipp: Nenne V-VI plus Ueberraschung; Cliffhanger als Wirkung.
+- 级数理论 — Stufentheorie:罗马数字标和弦,跨调可比可移 / Die Stufentheorie beziffert Akkorde mit roemischen Zahlen unabhaengig von Tonart. Sie macht Kadenzen vergleichbar und transponierbar. Klausuren verlangen Stufen plus Bass. Mechanismus: Skalenton plus Terzschichtung; I-IV-V-I gilt in Dur und Moll mit Varianten. Klausur-Tipp: Schreibe roemisch plus Bass; Transponierbarkeit als Plus.
 
-`Klausur-Satz: Die fuenf Begriffe tragen Diagnose, Sandkasten und Urteil als gemeinsame Sprache.`
+`Klausur-Satz: 主是家属是张力带导音,两定义撑起终止。`
 
 ## Schritt 3 — entdecken: 生理/音乐机制传导
 
 ENTDECKEN(1概念 + 1文字图解,中文在上、德语在下):
 
-中文:终止式是和声的句号:V-I最硬,I-IV-V-I最全;级数标功能,低音走骨架,属七推解决,调性定中心。
+中文:主奠基、下属开、属拉满、主收,链条产终结感。纯五近乎协和、导音半音极不协和,一松一紧即回家。阻碍终止临门刹车逼重复。
 
-Mechanismus (DE): Die Kadenz schliesst die Phrase: V-I als haertester Schluss, I-IV-V-I als Vollform; Stufen benennen die Funktion, der Bass traegt das Geruest.
+Mechanismus (DE): Tonika gruendet, Subdominante oeffnet, Dominante spannt, Tonika loest: Diese Kette erzeugt Schlusswirkung. Der Leitton-Halbton plus Quintfall treiben die Aufloesung physikalisch. Der Trugschluss kappt die Kette vor dem Ziel und erzwingt Wiederholung.
+
+$$
+f = f_0 \cdot 2^{n/12} \quad\text{mit Quinte } n=7: f_V = 1{,}498\,f_0
+$$
 
 战役传导:本关承接冲量角逐、乳酸阈值与主导动机三幕,测得出才能说得清,说得清才能赢下来。
 
 ```diagram
-Kampagne [Impuls -> Schwelle -> Leitmotiv]
-Holphase [sichern] -> Pruefphase [V-I-Schluss in C-Dur, 90-Sekunden-Kadenzanalyse] -> Zielphase [nutzen]
+T [I Ruhe] -> S [IV Weg] -> D [V Spannung] -> T [I Heimkehr] | Trug [V-VI Cliff]
 Regel: Fehler frueh = Grenze | Fehler spaet = Ausnutzung
 ```
 
-`Klausur-Satz: Der Mechanismus trennt Grenze von Ausnutzung und ordnet jeden Fehler seiner Phase zu.`
+`Klausur-Satz: 打开拉满解决产终结,阻碍临门刹车。`
 
 ## Anekdote & Fun-Fact
 
-**Anekdote / Fun-Fact (DE)**: In alten Harmonielehren hiess es, Parallelen klingen wie ein Schatten, der an der Wand mitlaeuft: Zwei Stimmen, die alles gleich machen, zaehlen ploetzlich nur noch als eine. Pruefer hoeren daher zuerst auf Bass und Sopran. Wer dort Gegenbewegung zeigt, wirkt sofort sicher, auch wenn eine Mittelstimme einmal springt.
+**Anekdote / Fun-Fact (DE)**: Mozart schrieb KV 545 fuer Klavierschueler und versteckte darin ein Kadenz-Lehrbuch: Jeder Achttakter endet mit lupenreiner T-S-D-T. Sein Verleger nannte sie leichte Sonate, Pianisten nennen sie Kadenz-Bibel. Wer sie spielt, uebt Schluesse statt Finger.
 
-**中文解读**: 平行五八度的禁令不是刁难，而是"四个声部要像四个人唱歌"。两个人永远隔同样距离齐步走，听起来就像一个人，考试会判声部缺失。低音与高音反向走，立刻显得专业。
+**中文解读**: KV545是莫扎特给学生藏的终止教材,每八小节一个标准T-S-D-T。练它等于练标点。
 
-**Bezug zum Konzept**: `Selbstaendige Stimmfuehrung mit Gegenbewegung sichert den vierstimmigen Satz gegen verbotene Parallelen.`
+**Bezug zum Konzept**: `Der Schluss lehrt Form: Kadenzen sind Satzzeichen der Musik.`
 
-## Schritt 4 — ausprobieren: 沙盘决战 V-I-Schluss in C-Dur
+## Schritt 4 — ausprobieren: 沙盘决战
 
 BEISPIEL(含教具操作与解答):
 
-[Werkzeug: oral-timer]
+[Werkzeug: formula]
 
-AUFGABE (analysieren, AFB II):90-Sekunden-Kadenzanalyse gegen den Timer: singe V-I in C-Dur und benenne I-IV-V-I;达标线:V-I-Schluss in C-Dur, 90-Sekunden-Kadenzanalyse。
+AUFGABE (analysieren, AFB II):终止调节器:定Pachelbel卡农D大调级数,算五度频率,指认阻碍,达标。达标线:Kanon D-Dur, 8 Takte, 4 Stufen korrekt, Trugschluss V-VI。
 
-Target数值目标:V-I-Schluss in C-Dur, 90-Sekunden-Kadenzanalyse。
+Target数值目标:Kanon D-Dur, 8 Takte, 4 Stufen korrekt, Trugschluss V-VI。
 
 HILFE:
-1. 定相命名:先说相位与错误画像,对照目标V-I-Schluss in C-Dur。
-2. 读数释义:读出测量值,用一个术语解释效应。
-3. 推纠正:从机制推出一条可操作纠正。
+1. 罗马数字加低音标和弦。
+2. 用2的7/12算五度。
+3. 判真终止还是阻碍。
 
-MUSTERLÖSUNG:对照目标(V-I-Schluss in C-Dur, 90-Sekunden-Kadenzanalyse),先定相命名错误画像,再读数并以术语释效应,最后从机制推纠正;在Salzburger Festspielhaus, Mozart K.545 C-Dur (1. Satz)中形成 保障—转化—兑现 的完整因果链,达标即过关。
+MUSTERLÖSUNG:卡农D-G-A-D即I-IV-V-I,五度1,498,四级数加计算加效果即达标;V-VI阻碍则延长。
 
-`Klausur-Satz: Am Target zeigt sich, ob Grenze oder Ausnutzung ueber das Ergebnis entschied.`
+`Klausur-Satz: 目标I-IV-V-I加1,498证明:物理变感受。`
 
-## Schritt 5 — ausprobieren: VERGLEICH技术对抗 Stufen-Weg vs Hoer-Weg
+## Schritt 5 — ausprobieren: VERGLEICH技术对抗 Stufentheorie (Zahlen: transponierbar, vergleichbar) vs Funktionshoeren (Klang: Spannung fuehlen, Heimkehr spueren)
 
 VERGLEICH辨别实验(双向辨析,先选程序再解题):【选程序】
 
-VERGLEICH:先选程序—— (i) Stufen-Weg 还是 (ii) Hoer-Weg ——再解题。WegA讲上限/结构,WegB讲兑现/情境。【选程序:问上限与结构选(i),问兑现与情境选(ii)。口述先说 Ich waehle Verfahren (i)/(ii), weil …】
+VERGLEICH:先选程序—— (i) Stufentheorie (Zahlen: transponierbar, vergleichbar) 还是 (ii) Funktionshoeren (Klang: Spannung fuehlen, Heimkehr spueren) ——再解题。【选程序:问上限与结构选(i),问兑现与情境选(ii)。口述先说 Ich waehle Verfahren (i)/(ii), weil …】
 
-AUFGABE A (Stufen-Weg):在Salzburger Festspielhaus, Mozart K.545 C-Dur (1. Satz)的首个案例中选哪条路,如何论证?
+AUFGABE A:案例A(笔试卷调到G大调)选哪条?
 
-AUFGABE B (Hoer-Weg):在对立案例中选哪条路,如何论证?
+AUFGABE B:案例B(音乐会谈效果)选哪条?
 
-HILFE:A问上限属于程序(i);B问兑现属于程序(ii)。先说选哪条路,再给测量/情境证据。
+HILFE:A braucht Zahlen, also Stufen. B braucht Klang, also Funktion.
 
-ANTWORT:A走程序(i)Stufen-Weg,以测量值与机制论证上限;B走程序(ii)Hoer-Weg,以情境与位置论证兑现。德语口述句收束。
+ANTWORT:A走级数可移调;B走功能听效果。
 
-`Klausur-Satz: Verfahren (i) setzt die Grenze, Verfahren (ii) nutzt die Lage; die Wahl traegt das Urteil.`
+`Klausur-Satz: 级数还是音响,题定路线。`
 
-## Schritt 6 — check: Selbsttest zu Harmonielehre Kadenz und Stufentheorie
+## Schritt 6 — check: Selbsttest
 
 CHECK检索默写(自测3题,与答案配对):
 
-FRAGE:如何在赛事中认出本课核心? | ANTWORT:看数值目标(V-I-Schluss in C-Dur)与S3机制。
-FRAGE:如何达标? | ANTWORT:测量、术语释义、从机制推纠正三步。
-FRAGE:何时选程序(i)而非(ii)? | ANTWORT:问上限选(i),问兑现选(ii)。
+- FRAGE:什么收尾? | ANTWORT:五到一带导音,四环链。
+- FRAGE:何谓阻碍? | ANTWORT:五到六替五到一,悬念加延长。
+- FRAGE:何时级数而非功能? | ANTWORT:移调比对用级数,谈感受用功能。
 
-`Klausur-Satz: Selbsttest bestanden heisst Target lesen, Verfahren waehlen und Urteil begruenden.`
+`Klausur-Satz: 易错是小调没导音与堆和弦。`
 
 ## Fehlvorstellung
 
-(非Schritt小节，Parser 自动识别，不计入步骤步数)
+(非Schritt小节，Parser 自动识别，不计入入步数)
 
-1. 误解"只要和弦级数写对，声部怎么走都行"。
-   中文纠偏：级数只给名字，分数大头在连接。共同音不留、声部大跳加同向，平行五八度一出现整题降档。
-   Korrektur-Satz: `Die Stufenbestimmung benennt nur den Akkord, erst die korrekte Stimmfuehrung macht daraus einen Kadenzsatz.`
-2. 误解"V 到 IV 也是下行，听起来顺就可以当地终止"。
-   中文纠偏：终止是功能方向不是顺耳与否。D 必须解向 T，D 回 S 是逆功能，考场直接判错。
-   Korrektur-Satz: `Nach der Dominante ist nur die Tonika als Ziel zulaessig, nicht die Subdominante.`
+1. 误解“大小调终止一样。”。
+   中文纠偏：小调须和声阶升导音,自然小调没张力。
+   Korrektur-Satz: `Moll-Kadenz braucht Hochalteration; sonst kein V.`
+2. 误解“和弦越多越好。”。
+   中文纠偏：终止要四功能不要四十个,多则散。
+   Korrektur-Satz: `Vier Stufen schliessen, vierzig verwirren.`
 
-## Schritt 7 — szenario: Klausurtransfer: Harmonielehre Kadenz und Stufentheorie — Konzertmeister in Salzburg
-中文:你是Konzertmeister in Salzburg,在Salzburger Festspielhaus, Mozart K.545 C-Dur (1. Satz)中必须用德语连贯口述(约90秒)诊断、措施与数值目标(V-I-Schluss in C-Dur, 90-Sekunden-Kadenzanalyse),并以术语举证。
-ROLLE: Du bist Konzertmeister in Salzburg. SITUATION: In Salzburger Festspielhaus, Mozart K.545 C-Dur (1. Satz) stellst du Diagnose, Massnahme und Target (V-I-Schluss in C-Dur, 90-Sekunden-Kadenzanalyse) in ca. 90 Sekunden vor.
-RUBRIC (30 XP):诊断术语8分 | 措施与目标举证10分 | 程序选择对比7分 | 德语表达5分。
+## Schritt 7 — szenario: Klausurtransfer — Korrepetitor Herkulessaal
+中文:你是Korrepetitor Herkulessaal,在Dresdner Frauenkirche, Pachelbel Kanon D-Dur (Achttakt-Kadenz)中必须用德语连贯口述(约90秒)诊断、措施与数值目标(Kanon D-Dur, 8 Takte, 4 Stufen korrekt, Trugschluss V-VI),并以术语举证。
+ROLLE: Du bist Korrepetitor Herkulessaal. SITUATION: 在德累斯顿用德语90秒陈述级数、五度与目标(卡农八小节)。
+RUBRIC (30 XP):诊断术语8分 | 措施与目标举证7分 | 程序选择对比7分 | 德语表达5分。
+
+`Klausur-Satz: 满分句:回家感因导音半音加五度下行锁死五到一;级数加1,498锁定满分。`
 
 ## Schritt 8 — reflexion: Takeaway & Reflexion — 奖杯还是进站检修
 
 TAKEAWAY 1盒(核心总结):
 
-中文:上限早锁定、位置晚兑现;数值目标(V-I-Schluss in C-Dur, 90-Sekunden-Kadenzanalyse)是裁判,程序选择是辩护;本关连着冲量角逐、体能极限与主导动机三幕,测得出、说得清、赢下来。
+中文:四级关一切调:离家、拉满、回家。会听终止就有分。
 Takeaway-Satz: `Wer die Grenze sichert und die Lage nutzt, holt den Pokal.`
+
+`Klausur-Satz: 元认知:和声是语法,会读终止就懂曲式。`
 
 REFLEXION 2问:
 1. 过程自省:沙盘精度(Schritt 4)与程序选择(Schritt 5)哪一步更难?

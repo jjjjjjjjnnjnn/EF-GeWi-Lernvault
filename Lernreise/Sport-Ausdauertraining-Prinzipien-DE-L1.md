@@ -11,122 +11,136 @@ tags: [EF, Sport, Trainingslehre]
 version: Lesson-v3
 ---
 
-# Lernreise: Superkompensation und die Prinzipien des Ausdauertrainings (L1, Ziel Muendlich)
+
+
+
+# Lernreise: Lernreise: Lernreise: Lernreise: Superkompensation und die Prinzipien des Ausdauertrainings (L1, Ziel Muendlich)
 
 <!-- Lesson v3 Architektur mit 9 Abschnitten: Schritt 1 bis 8 mit fester Struktur; Fehlvorstellung liegt zwischen Schritt 6 und 7 (wird vom Parser uebersprungen, zaehlt nicht als Schritt); unterstuetzt eingebettete [Werkzeug: <id>] Elemente; Gating: check/szenario nicht bestanden = Weiter deaktiviert; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
-## Schritt 1 — entdecken: Bodensee-Marathon — Alarm in der Arena
+## Schritt 1 — entdecken: Schwarzwaldstadion Freiburg, Herbst-Waldlaufserie (10-km-Test) — Der Herbst, der Bestzeiten frisst
 
 ZIELE (drei messbare Ziele dieser Lektion):
 
 1. Du kannst das Kernthema `Superkompensation und die Prinzipien des Ausdauertrainings` in einem Satz definieren und im Wettkampfkontext verorten.
-2. Du kannst den Mechanismus muendlich erklaeren und mit dem Target (Erholung 36 h, Umfang plus 10 % pro Woche, Puls 135/min) belegen.
+2. Du kannst den Mechanismus muendlich erklaeren und mit dem Target (Wochenumfang 45 km, 80/20-Mix, 10-km-Ziel 42:30 min, Grundpuls unter 153) belegen.
 3. Du kannst einen Fehler diagnostizieren und mit einem Klausur-Satz auf AFB-II-Niveau schliessen.
 
-### Hook: Alarm in der Arena
+### Hook: Der Herbst, der Bestzeiten frisst
 
-Im Rampenlicht von Bodensee-Marathon, Superkompensations-Nacht (36 h) beginnt unser naechster Akt der Kampagne Champion-Arena und Takt-Werkstatt. Stell dir vor: Kilometer dreissig, die Beine schwer, und der Marathon entscheidet sich zwischen denen, die ihre Basis gebaut, und denen, die nur Tempo gejagt haben. Was traegt durch die Mauer? Eine breite aerobe Basis plus eine hochgeschobene Schwelle. Erstens legen Dauerlaeufe Kapillaren und Kraftwerke. Zweitens heben Intervalle die Schwelle. Drittens schuetzt die Zehn-Prozent-Regel vor Uebermass. Wer Basis und Spitze balanciert, laechelt im Ziel. Heute schmieden wir genau diesen Plan: bauen, reizen und Zielzeit sichern.
+Oktober, Waldlaufserie: Zwei Trainingsgruppen, gleiche Kilometer, voellig andere Zeiten. Gruppe A bolzt jeden Lauf im Wohlfühltempo, Gruppe B mischt 80 Prozent ruhig mit 20 Prozent scharf. Im 10-km-Test laeuft B zwei Minuten davon. Was hat A falsch gemacht?
 
-`Klausur-Satz: Leitsatz des Themas.`
+Die Antwort heisst **Polarisierung**: viel **Grundlagenumfang** unten, wenig **Intensitaet** oben, fast nichts dazwischen. **VO2max** und **Laufökonomie** wachsen nur aus diesem Kontrast. Wer immer mittel trainiert, bleibt mittel. Heute steuern wir genau diesen Mix mit Puls und Minuten.
+
+`Klausur-Satz: Freiburg zeigt den Kernkonflikt: Gleiche Kilometer, andere Zeiten, weil nur Kontrast anpasst.`
 
 ## Schritt 2 — entdecken: Ausruestungskiste der Trainer
 
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
-- **maximale Sauerstoffaufnahme:** aerobe Obergrenze in ml/kg/min.
-- **Dauermethode:** lange niedrige Dauerbelastung.
-- **Intervallmethode:** Wechsel aus Belastung und Pause.
-- **Schwellentraining:** Schwimmen an der anaeroben Schwelle.
-- **Regenerationslauf:** lockere Foerderung der Erholung.
+- **Trainingsumfang**: Der Umfang ist die Gesamtmenge der Ausdauerarbeit, etwa Wochenkilometer oder Stunden. Er baut Kapillaren, Mitochondrien und Fettstoffwechsel auf. Ohne Umfang bleibt jede Intensitaet ein Strohfeuer.  Mechanismus: Chronische niedrige Reize erhoehen Mitochondriendichte und Kapillarisierung; das Herz schlaegt oekonomischer bei gleichem Tempo. Klausur-Tipp: Nenne Kilometer plus Kapillaren/Mitochondrien; Umfang heisst Grundlage.
+- **Trainingsintensitaet**: Die Intensitaet ist die Qualitaet der Belastung, gesteuert ueber Puls, Tempo oder Laktat. Sie entscheidet, welches System adaptiert: ruhig baut Basis, scharf hebt VO2max. Falsche Mitte trainiert nichts richtig.  Mechanismus: Hohe Reize rekrutieren schnelle Fasern und maximieren Sauerstoffaufnahme; mittlere Reize ermueden nur, ohne Spitzenreiz. Klausur-Tipp: Nenne Steuerung ueber Puls/Tempo plus Systemzuordnung; Mitte ist das Warnwort.
+- **Polarisiertes Training**: Polarisiert heisst 80 Prozent extensiv unter der aeroben Schwelle plus 20 Prozent intensiv ueber der IAS, kaum Schwellentraining. Norwegische und kenianische Modelle belegen Bestzeiten aus genau diesem Mix. Es schuetzt vor Uebertraining.  Mechanismus: Trennung von Volumen- und Spitzenreizen laesst Erholung zu; mittlere Zone wuerde beide Anpassungen blockieren. Klausur-Tipp: Schreibe 80/20 plus Zonen plus Schutz; polarisiert ist das Modewort mit Inhalt.
+- **VO2max**: Die maximale Sauerstoffaufnahme ist die groesste pro Minute verwertbare O2-Menge in ml/kg/min. Sie begrenzt jede Leistung ueber 3 Minuten. Intervalltraining hebt sie, Umfang sichert ihre Nutzung.  Mechanismus: Herzminutenvolumen mal arterio-venoese Differenz; 4-mal-4-Minuten-Intervalle maximieren die Pumpleistung. Klausur-Tipp: Nenne Einheit ml/kg/min plus Begrenzung; 4x4 ist das Beispiel.
+- **Laufökonomie**: Die Oekonomie ist der Sauerstoffverbrauch bei gegebenem Tempo; oekonomisch laeuft, wer bei 12 km/h weniger O2 braucht. Technik, Kraft und Sehnensteifigkeit verbessern sie ohne VO2max-Plus. Sie entscheidet enge Rennen.  Mechanismus: Steife Achillessehne speichert elastische Energie; kurze Bodenkontaktzeit senkt den Preis pro Schritt. Klausur-Tipp: Betone Verbrauch bei Tempo plus Technik/Kraft; Oekonomie schlaegt Laborwert.
 
-`Klausur-Satz: Die fuenf Begriffe tragen Diagnose, Sandkasten und Urteil als gemeinsame Sprache.`
+`Klausur-Satz: Umfang baut Mitochondrien, Intensitaet waehlt das System: Diese Definitionen steuern jede Woche.`
 
-## Schritt 3 — entdecken: Mechanismus im Getriebe der Kampagne
+## Schritt 3 — entdecken: Mechanismus im Getriebe
 
 TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
-Ausdauer baut Basis und Schwelle: Dauer legt Kapillaren und Mitochondrien, Intervalle heben die Schwelle, der Umfang waechst unter zehn Prozent. In unserer Kampagne Champion-Arena und Takt-Werkstatt verbindet dieser Mechanismus den Impuls-Wettkampf ueber die Laktat-Grenze bis zum Wagner-Leitmotiv: Wer misst, deutet; wer deutet, siegt.
+Umfang unten erhoeht Mitochondrien und Kapillaren und senkt den Puls bei gleichem Tempo. Spitze oben hebt VO2max und Toleranz. Die Mitte ermuedet bloss: Sie ist zu hart fuer Erholung und zu weich fuer Spitzenreize. Deshalb summiert polarisiertes Training beide Anpassungen, waehrend Mittelmaessigkeit beide frisst.
+
+$$
+HF_{max} = 220 - Alter \quad\text{und}\quad Zone_{GA} < 75\%\,HF_{max} < Zone_{HIIT}
+$$
+
+Ein 16-Jaehriger mit HFmax 204 laeuft Grundlage unter 153 und Intervalle ueber 175. Wer dauernd bei 165 rennt, trainiert weder Basis noch Spitze und stagniert beim 10-km-Test.
 
 ```diagram
-Kampagne [Impuls -> Schwelle -> Leitmotiv]
-Holphase [sichern] -> Pruefphase [Erholung 36 h, Umfang plus 10 % pro Woche, Puls 135/min] -> Zielphase [nutzen]
+80 % ruhig [Puls < 153, Aufbau] -> 5 % Schwelle [meiden] -> 15-20 % scharf [Puls > 175, 4x4]
 Regel: Fehler frueh = Grenze | Fehler spaet = Ausnutzung
 ```
 
-`Klausur-Satz: Der Mechanismus trennt Grenze von Ausnutzung und ordnet jeden Fehler seiner Phase zu.`
+`Klausur-Satz: Unten aufbauen, oben reizen, Mitte meiden: Diese Kette erklaert jede Bestzeit.`
 
 ## Anekdote & Fun-Fact
 
-**Anekdote / Fun-Fact (DE)**: Emil Zatopek, der tschechische Langstreckenlaeufer, gewann 1952 in Helsinki Gold ueber 5000 m, 10000 m und im Marathon. Beruehmt wurde er aber fuer seine Trainingsmethode: Er lief harte 400-Meter-Wiederholungen mit kurzen Erholungspausen. Fuer viele galt Pause damals als Schwaeche. Genau diese Pausen machten das Training aber so wirksam.
+**Anekdote / Fun-Fact (DE)**: Der norwegische Nationaltrainer Marius Bakken liess seine 5000-m-Asse 140 Wochenkilometer traben und nur zweimal woechentlich auf die Bahn. Kritiker lachten ueber das Schneckentempo, bis die Rekorde purzelten. Sein Logbuch-Satz wurde beruehmt: Trainiere langsam, um schnell zu rennen.
 
-**Bezug zum Konzept**: `Zatopeks Intervalltraining zeigt praktisch, dass der naechste Reiz in die Phase der Superkompensation fallen muss.`
+**Bezug zum Konzept**: `Bestzeit entsteht aus Kontrast, nicht aus Mut zur Mitte; Bakkens Logbuch beweist die Polarisation.`
 
-## Schritt 4 — ausprobieren: Sandkasten-Duell um Erholung 36 h
+## Schritt 4 — ausprobieren: Sandkasten-Duell
 
 BEISPIEL (Musteraufgabe mit Loesungsweg):
 
-[Werkzeug: formula]
+[Werkzeug: oral-timer]
 
-AUFGABE (analysieren, AFB II): Aufbauformel Umfang plus 10 %: plane Erholung 36 h bei Puls 135/min. Erreiche das Target: Erholung 36 h, Umfang plus 10 % pro Woche, Puls 135/min.
+AUFGABE (analysieren, AFB II): 90-Sekunden-Ansage gegen den Timer: Verteile 5 Wochenstunden auf Zonen mit Puls 153/175 und begruende am Target. Erreiche das Target: Wochenumfang 45 km, 80/20-Mix, 10-km-Ziel 42:30 min, Grundpuls unter 153.
 
-TARGET: Erholung 36 h, Umfang plus 10 % pro Woche, Puls 135/min.
+TARGET: Wochenumfang 45 km, 80/20-Mix, 10-km-Ziel 42:30 min, Grundpuls unter 153.
 
 HILFE:
-1. Schritt 1: Benenne Phase und Fehlerbild am Target (Erholung 36 h).
-2. Schritt 2: Lies den Messwert ab und deute ihn mit einem Fachbegriff.
-3. Schritt 3: Leite die Korrektur aus dem Mechanismus ab.
+1. Schritt 1: Berechne HFmax und die zwei Zonengrenzen.
+2. Schritt 2: Verteile Stunden auf ruhig versus scharf im 80/20-Schluessel.
+3. Schritt 3: Benenne je eine Einheit mit Tempo und Puls.
 
-MUSTERLOESUNG: Das Target (Erholung 36 h, Umfang plus 10 % pro Woche, Puls 135/min) wird erreicht, indem zuerst Phase und Fehlerbild benannt, dann der Messwert mit Fachbegriff gedeutet und schliesslich die Korrektur aus dem Mechanismus abgeleitet wird; so schliesst sich die Kausalkette Sichern, Umsetzen und Nutzen in Bodensee-Marathon.
+MUSTERLOESUNG: Bei HFmax 204 liegen 4 Stunden unter 153er Puls (lockere Dauerlaeufe 6:00/km) und 1 Stunde ueber 175 (4x4 Minuten). Das Target 42:30 min wird erreicht, weil Umfang die Oekonomie und Intervalle die VO2max heben, waehrend die mittlere Zone leer bleibt. Gruppe A scheiterte exakt an 5 Stunden Mitteltempo.
 
-`Klausur-Satz: Am Target zeigt sich, ob Grenze oder Ausnutzung ueber das Ergebnis entschied.`
+`Klausur-Satz: Das Target 45 km plus 42:30 min beweist: 80/20 mit Puls 153/175 schlaegt Mitteltempo.`
 
-## Schritt 5 — ausprobieren: Verfahrensduell Dauer-Weg gegen Intervall-Weg
+## Schritt 5 — ausprobieren: Verfahrensduell Umfangsbetonung (mehr Kilometer, Oekonomie zuerst) gegen Intensitaetsbetonung (mehr Intervalle, VO2max zuerst)
 
 VERGLEICH (zwei Verfahren im Kontrast):
 
-VERGLEICH: Waehle zuerst das Verfahren: (i) Dauer-Weg oder (ii) Intervall-Weg, dann loesen. Die Wahl des Verfahrens entscheidet ueber die ganze Begruendung.
+VERGLEICH: Waehle zuerst das Verfahren: (i) Umfangsbetonung (mehr Kilometer, Oekonomie zuerst) oder (ii) Intensitaetsbetonung (mehr Intervalle, VO2max zuerst), dann loesen. Die Wahl des Verfahrens entscheidet ueber die ganze Begruendung.
 
-AUFGABE A: Erster Fall in Bodensee-Marathon: Welches Verfahren passt, und wie ist zu argumentieren?
+AUFGABE A: Fall A (Anfaenger, 10 km in 55 min): Welcher Weg?
 
-AUFGABE B: Zweiter Gegenfall: Welches Verfahren passt, und wie ist zu argumentieren?
+AUFGABE B: Fall B (erfahren, 44 min, stagniert): Welcher Weg?
 
-HILFE: A fragt nach Grenze und Aufbau, also Verfahren (i). B fragt nach Ausnutzung und Lage, also Verfahren (ii).
+HILFE: A braucht Basis, also Umfang. B hat Basis, also Spitzenreiz.
 
-ANTWORT: A erfordert Verfahren (i) Dauer-Weg mit Begruendung aus Messwert und Mechanismus. B erfordert Verfahren (ii) Intervall-Weg mit Begruendung aus Lage und Kontext. Muendlich formuliere ich den Unterschied in einem Satz mit weil.
+ANTWORT: A erfordert Weg A mit ruhigen Kilometern und Technik. B erfordert Weg B mit 4x4 und Tempolaeufen. Ich waehle A/B, weil Trainingsalter es vorgibt.
 
-`Klausur-Satz: Verfahren (i) setzt die Grenze, Verfahren (ii) nutzt die Lage; die Wahl traegt das Urteil.`
+`Klausur-Satz: Umfang zuerst oder Spitze zuerst: Das Trainingsalter waehlt den Weg.`
 
-## Schritt 6 — check: Selbsttest zu Superkompensation und die Prinzipien des Ausdauertrainings
+## Schritt 6 — check: Selbsttest
 
 CHECK (3 Fragen zur Selbstkontrolle mit Antworten):
 
-FRAGE: Woran erkennst du das Kernthema im Wettkampf? | ANTWORT: Am Target (Erholung 36 h) und am Mechanismus aus Schritt 3.
-FRAGE: Wie erreichst du das Target? | ANTWORT: Durch Messen, Deuten mit Fachbegriff und Ableiten der Korrektur.
-FRAGE: Wann waehlst du Verfahren (i) statt (ii)? | ANTWORT: Bei Grenzfragen (i), bei Lagenfragen (ii).
+- FRAGE: Was ist 80/20? | ANTWORT: 80 Prozent ruhig, 20 Prozent scharf, fast keine Mitte; schuetzt und leistet.
+- FRAGE: Steuert Puls allein? | ANTWORT: Nein, Puls plus Tempo plus Empfinden; Hitze und Stress verzerren Puls.
+- FRAGE: Wann Weg A statt B? | ANTWORT: Anfaenger Umfang (A), Stagnation Spitze (B).
 
-`Klausur-Satz: Selbsttest bestanden heisst Target lesen, Verfahren waehlen und Urteil begruenden.`
+`Klausur-Satz: Stolperstein ist Dauerhaerte: Sie ermuedet bloss und adaptiert nichts.`
 
 ## Fehlvorstellung
 
 (Nicht-Schritt-Abschnitt, wird vom Parser automatisch erkannt und nicht als Schritt gezaehlt)
 
-1. Missverstaendnis: Je dichter trainiert wird, desto besser; Erholung ist Faulheit.
-   Korrektur: Ohne Erholung entsteht keine Superkompensation und damit keine Steigerung. Zu dichte Reize treffen die Ermuedungsphase und fuehren zum Uebertraining. Der Ruhetag ist die Voraussetzung, nicht der Gegner der Leistung.
-   Korrektur-Satz: `Ohne ausreichende Erholung kann keine Superkompensation entstehen; zu dichte Reize fuehren zum Uebertraining statt zur Leistungssteigerung.`
-2. Missverstaendnis: Muskelkater bedeutet Superkompensation; staerkerer Schmerz bedeutet besseres Training.
-   Korrektur: Muskelkater ist eine Ermuedungserscheinung, Superkompensation eine spaetere Leistungsspitze. Beide liegen an verschiedenen Punkten der Kurve. Schmerz als Erfolgsmassstab fuehrt zu falschen Abstaenden.
-   Korrektur-Satz: `Muskelkater und Superkompensation sind nicht dasselbe: Der Muskelkater ist eine Ermuedungserscheinung, die Superkompensation eine spaetere Leistungsspitze.`
+1. Missverstaendnis: Jeder Lauf muss weh tun, sonst bringt er nichts.
+   Korrektur: Nur Spitzenreize muessen weh tun; Grundlage darf plaudern. Dauerhärte frisst Erholung und Oekonomie. Plaudertempo ist Training, kein Faulenzen.
+   Korrektur-Satz: `Grundlage heisst plaudern koennen; Haerte gehoert in 20 Prozent Spitze.`
+2. Missverstaendnis: Mehr Kilometer immer besser.
+   Korrektur: Nur steigerbar um 10 Prozent pro Woche mit Entlastung; Spruenge verletzen Sehnen. Umfang braucht Treppen, keine Rakete.
+   Korrektur-Satz: `Steigere Umfang wellenfoermig plus 10-Prozent-Regel; Sehnen adaptieren langsamer als Herz.`
 
-## Schritt 7 — szenario: Klausurtransfer: Superkompensation und die Prinzipien des Ausdauertrainings — Marathon-Coach am Bodensee
-ROLLE: Du bist Marathon-Coach am Bodensee und verteidigst deine Entscheidung vor der Pruefungskommission.
-SITUATION: In Bodensee-Marathon, Superkompensations-Nacht (36 h) musst du in zusammenhaengenden deutschen Saetzen (ca. 90 Sekunden) Diagnose, Massnahme und Target (Erholung 36 h, Umfang plus 10 % pro Woche, Puls 135/min) vorstellen und mit Fachsprache begruenden.
+## Schritt 7 — szenario: Klausurtransfer — Ausdauertrainer Lauf
+ROLLE: Du bist Ausdauertrainer Lauf und verteidigst deine Entscheidung vor der Pruefungskommission.
+SITUATION: In Freiburg musst du 90 Sekunden lang Mix, Zonen und Target (45 km, 42:30 min) verteidigen.
 RUBRIC (30 XP): Diagnose mit Fachbegriffen (8 XP) | Massnahme mit Target-Beleg (10 XP) | Verfahrenswahl im Vergleich (7 XP) | Fachsprachlicher Vortrag (5 XP).
 
-## Schritt 8 — reflexion: Takeaway & Reflexion — Pokal oder Pitstop in Bodensee-Marathon
+`Klausur-Satz: AFB-III-Mustersatz: Die Stagnation entstand, weil 5 Stunden Mitteltempo weder Basis noch VO2max reizten; 80/20 wuerde 42:30 min sichern.`
+
+## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY (Kernzusammenfassung):
 
-Grenze frueh sichern, Lage spaet nutzen: Das Target (Erholung 36 h, Umfang plus 10 % pro Woche, Puls 135/min) misst den Unterschied, das Verfahren traegt das Urteil. Takeaway-Satz: `Wer die Grenze sichert und die Lage nutzt, holt in Bodensee-Marathon den Pokal.`
+Renne ruhig, um schnell zu werden: Umfang baut das Haus, Spitze setzt das Dach. Wer die Mitte meidet, erntet Bestzeit. Takeaway-Satz: `Wer die Grenze sichert und die Lage nutzt, holt den Pokal.`
+
+`Klausur-Satz: Metakern: Ausdauer ist Kontrasttraining; wer Zonen trennt, versteht jede Langstrecke.`
 
 REFLEXION (2 Fragen):
 1. Selbstkontrolle: Welcher Schritt fiel schwerer, die Sandkasten-Praezision (Schritt 4) oder die Verfahrenswahl im Duell (Schritt 5)?

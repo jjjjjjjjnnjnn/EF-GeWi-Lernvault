@@ -11,25 +11,28 @@ tags: [EF, Sport, CN]
 version: Lesson-v3
 ---
 
-# Lernreise: Koordinative Faehigkeiten nach Hirtz (L1, Ziel Klausur)
+
+
+
+# Lernreise: Lernreise: Lernreise: Lernreise: Koordinative Faehigkeiten nach Hirtz (L1, Ziel Klausur)
 
 <!-- Lesson v3 9步制架构：Schritt 1至8固定结构；Fehlvorstellung 夹在 Schritt 6 与 7 之间（Parser 自动跳过，不占步数）；支持内嵌 [Werkzeug: <id>] 交互教具；Gating: check/szenario 未过 = Weiter 置灰；XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
-## Schritt 1 — entdecken: Muenchner Slalom-Koordinations-Cup — 赛场警报
+## Schritt 1 — entdecken: Stuttgarter Schulsporthalle, Balken-Parcours — 赛场警报
 
 ZIELE (3条,本节15分钟学完能做到——先读中文,再记德语):
 
-1. 中文:能一句话定义`Koordinative Faehigkeiten nach Hirtz`,并定位到本关赛事Muenchner Slalom-Koordinations-Cup, Lichtschranken-Reaktion。
-2. 中文:能口述核心机制,并用数值目标(Reaktionszeit 0,22 s, Rhythmus 120 BPM, Treffer 8 von 10)举证。
+1. 中文:能一句话定义`Koordinative Faehigkeiten nach Hirtz`,并定位到本关赛事Stuttgarter Schulsporthalle, Balken-Parcours。
+2. 中文:能口述核心机制,并用数值目标(Balken 8 m ohne Absteiger, Reaktionszeit unter 240 ms, 2 Parcoursrunden)举证。
 3. 中文:能诊断一处典型错误,并用德语Klausur-Satz收束(AF B II)。
 
 ### Hook 赛场/舞台实况
 
-聚光灯打向Muenchner Slalom-Koordinations-Cup, Lichtschranken-Reaktion,这是《冠军竞技场与节拍工坊》战役的下一关:上一集埋下的悬念在此引爆,教练/首席必须在限时内拿出方案。协调素质是大脑的调度术:信号识别、程序选择、力度分化;变条件、限时间、加干扰才能练出抗压的稳定,再把能力迁到专项。本关必须过沙盘数值目标,下一集的瓦格纳动机/体能极限/冲量角逐在此埋下伏笔。
+百米最快的在平衡木第二步晃,安静的赛艇手滑过去。缺的不是力是协调:Hirtz 五六项能力是软件,体能是硬件。本关在木上升级软件。
 
-Hook (DE): Im Rampenlicht von Muenchner Slalom-Koordinations-Cup, Lichtschranken-Reaktion beginnt unser naechster Akt der Kampagne Champion-Arena und Takt-Werkstatt. Stell dir vor: Der Parcours piepst, die Lichtschranke zaehlt, und der Favorit wackelt am einfachsten Balken. Kraft hat er, Technik auch, doch die Steuerung versagt unter Zeitdruck. Warum gewinnt oft nicht der Staerkste, sondern der Praeziseste? Weil Koordination Muskeln ueber Signale, Programme und Feinabstimmung regiert. Erstens erkennt das Auge die Lage. Zweitens waehlt das Gehirn das Programm. Drittens dosiert die Hand die Kraft. Wer unter Stoerung ruhig bleibt, verwandelt Wackeln in Linie. Heute bauen wir genau diese Steuerung: reizen, variieren und in neunzig Sekunden coachen.
+Hook (DE): Balken-Parcours, dritte Station: Die schnellste Sprinterin der Klasse wackelt nach zwei Schritten, der ruhige Ruderer gleitet durch. Kraft und Tempo helfen nicht, der Balken misst etwas anderes. Was fehlt der Sprinterin? Ihr fehlt **Gleichgewicht** als koordinative Faehigkeit: **Orientierung**, **Rhythmus**, **Reaktion**, **Differenzierung** und **Kopplung** steuern nach Hirtz jede Bewegung. Koordination ist die Software, Kondition die Hardware. Heute updaten wir die Software auf dem Balken.
 
-`Klausur-Satz: Leitsatz des Themas.`
+`Klausur-Satz: 莱比锡揭示:最快腿晃,最稳滑,软件定命。`
 
 ## Schritt 2 — entdecken: 5术语装备盒
 
@@ -37,108 +40,114 @@ PRETRAINING术语盒(核心5词,先读三遍中德,合书自测中文→德语):
 
 中文在上,德语在下:
 
-- 平衡能力 — Gleichgewichtsfaehigkeit:保持姿态稳定的能力 / Haltung gegen Stoerungen sichern。
-- 定向能力 — Orientierungsfaehigkeit:判断身体时空位置的能力 / Koerperlage im Raum bestimmen。
-- 节奏能力 — Rhythmusfaehigkeit:跟节拍做动作的能力 / Bewegung an einen Rhythmus binden。
-- 反应能力 — Reaktionsfaehigkeit:对信号快速应答 / schnell auf Signale antworten。
-- 分化能力 — Differenzierungsfaehigkeit:精细调节力度的能力 / Krafteinsatz fein abstufen。
+- 平衡 — Gleichgewicht:小支撑上保持与恢复体位,防摔保落地 / Gleichgewicht ist das Halten und Wiederherstellen der Koerperlage auf kleiner Stuetzflaeche. Es schuetzt vor Sturz und sichert Landungen. Balken und Einbeinstand messen es. Mechanismus: Vestibularorgan plus Propriozeption plus Sehen melden Lage; Kleinhirn korrigiert in Millisekunden ueber Muskelketten. Klausur-Tipp: Nenne halten plus wiederherstellen; Vestibular als Wort.
+- 定向 — Orientierung:定身体在空间与器械中的位置 / Orientierung ist die Bestimmung der Koerperlage im Raum und zum Geraet. Turner wissen blind, wo oben ist. Verlorene Orientierung endet im Sturz. Mechanismus: Raumkarte aus Sehen und Innenohr; Saltos trainieren sie durch Wiederholung mit Hilfestellung. Klausur-Tipp: Nenne Raum plus Geraet; blind als Pruefwort.
+- 节奏能力 — Rhythmusfaehigkeit:抓住并复刻时间动力结构 / Rhythmusfaehigkeit ist das Erfassen und Nachahmen zeitlich-dynamischer Verlaeufe, etwa Balken-Schrittfolge. Sie verbindet Hoeren mit Bewegen. Taktfehler verraten sie sofort. Mechanismus: Auditive und motorische Areale koppeln; Metronom und Klatschen synchronisieren Schrittmuster. Klausur-Tipp: Nenne erfassen plus nachahmen; Metronom als Beleg.
+- 反应 — Reaktionsfaehigkeit:对信号快启正确动作,150至250毫秒 / Reaktion ist die schnelle Einleitung zweckmaessiger Bewegung auf Signale, etwa Pfiff oder Wackeln. Sie rettet den Balkenabgang. Starts und Spiele messen sie. Mechanismus: Signalerkennung plus Programmwahl in 150 bis 250 ms; Training verkuerzt Wahl, nicht Leitung. Klausur-Tipp: Nenne Signal plus zweckmaessig; Millisekunden als Zahl.
+- 耦合 — Kopplungsfaehigkeit:分动作合成流畅整体,定优雅与省 / Kopplung verbindet Teilbewegungen zu fluessigem Ganzem, etwa Arme plus Beine auf dem Balken. Sie entscheidet Eleganz und Oekonomie. Misset sie, wirkt alles eckig. Mechanismus: Kleinhirn synchronisiert Segmente; Gegenrotation stabilisiert, Gleichzeitigkeit spart Energie. Klausur-Tipp: Nenne Teile zum Ganzen plus fluessig; eckig als Gegenbild.
 
-`Klausur-Satz: Die fuenf Begriffe tragen Diagnose, Sandkasten und Urteil als gemeinsame Sprache.`
+`Klausur-Satz: 平衡保体位定向识空间,两定义撑起诊断。`
 
 ## Schritt 3 — entdecken: 生理/音乐机制传导
 
 ENTDECKEN(1概念 + 1文字图解,中文在上、德语在下):
 
-中文:希尔茨协调素质是大脑对肌肉的精细调度:信号识别、程序选择、力度分化三步走;练法是变条件、限时间、加干扰,专项化迁移。
+中文:眼报晃、耳报位、小脑发令,环越快木越稳。节奏给拍,耦合分拍,训练压短环路。
 
-Mechanismus (DE): Koordination nach Hirtz steuert Muskeln ueber Signal, Programm und Feinabstimmung; Training variiert Bedingung, Zeit und Stoerung.
+Mechanismus (DE): Das Auge meldet Wackeln, das Innenohr die Lage, das Kleinhirn sendet Korrektur an Fuss und Arme. Je schneller die Schleife, desto ruhiger der Balken. Rhythmus gibt den Takt vor, Kopplung verteilt ihn auf Segmente. Training verkuerzt die Schleife und erweitert das Repertoire.
+
+$$
+t_{Reaktion} = t_{Wahrnehmung} + t_{Entscheidung} + t_{Bewegung} \approx 200\,\mathrm{ms}
+$$
 
 战役传导:本关承接冲量角逐、乳酸阈值与主导动机三幕,测得出才能说得清,说得清才能赢下来。
 
 ```diagram
-Kampagne [Impuls -> Schwelle -> Leitmotiv]
-Holphase [sichern] -> Pruefphase [Reaktionszeit 0,22 s, Rhythmus 120 BPM, Treffer 8 von 10] -> Zielphase [nutzen]
+Signal [Wackeln] -> Entscheidung [90 ms] -> Korrektur [Arm, Fuss] -> Stand [ruhig]
 Regel: Fehler frueh = Grenze | Fehler spaet = Ausnutzung
 ```
 
-`Klausur-Satz: Der Mechanismus trennt Grenze von Ausnutzung und ordnet jeden Fehler seiner Phase zu.`
+`Klausur-Satz: 感知加决策加动作约200毫秒,训练压中间。`
 
 ## Anekdote & Fun-Fact
 
-**Anekdote / Fun-Fact (DE)**: Artisten trainieren Einrad auf Slacklines mit verbundenen Augen — nicht fuer Kraft, sondern fuer Gleichgewicht und Orientierung. Hirtz nannte Koordination deshalb die Steuerzentrale jeder Technik.
+**Anekdote / Fun-Fact (DE)**: Peter Hirtz filmte in den achtziger Jahren tausende Schulkinder auf dem Balken und fand: Koordinative Hochleister lernten Saltos in halb so vielen Versuchen. Seine Faehigkeitsliste ersetzte das Gerede vom Talent durch messbare Software. Die DHfK-Halle nutzt seine Parcours bis heute zur Talentsichtung.
 
-**中文解读**: 蒙眼走绳练的不是力气而是"中控"。记住"软件论"，协调与体能就永不混淆。
+**中文解读**: Hirtz 八十年代拍上千孩子:协调好的学空翻快一半。天赋被他拆成可测可练的软件。
 
-**Bezug zum Konzept**: `Technik beginnt im Kopf, nicht im Muskel.`
+**Bezug zum Konzept**: `Talent ist messbar: Hirtz machte aus Gefuehl fuenf trainierbare Faehigkeiten.`
 
-## Schritt 4 — ausprobieren: 沙盘决战 Reaktionszeit 0
+## Schritt 4 — ausprobieren: 沙盘决战
 
 BEISPIEL(含教具操作与解答):
 
-[Werkzeug: formula]
+[Werkzeug: oral-timer]
 
-AUFGABE (analysieren, AFB II):Formel Treffer ueber Zeit: messe Reaktion 0,22 s bei Rhythmus 120 BPM und erreiche 8 von 10 Treffern;达标线:Reaktionszeit 0,22 s, Rhythmus 120 BPM, Treffer 8 von 10。
+AUFGABE (analysieren, AFB II):90秒口述:用两项能力诊断晃动,开 parcours 处方达标。达标线:Balken 8 m ohne Absteiger, Reaktionszeit unter 240 ms, 2 Parcoursrunden。
 
-Target数值目标:Reaktionszeit 0,22 s, Rhythmus 120 BPM, Treffer 8 von 10。
+Target数值目标:Balken 8 m ohne Absteiger, Reaktionszeit unter 240 ms, 2 Parcoursrunden。
 
 HILFE:
-1. 定相命名:先说相位与错误画像,对照目标Reaktionszeit 0。
-2. 读数释义:读出测量值,用一个术语解释效应。
-3. 推纠正:从机制推出一条可操作纠正。
+1. 用两能力点名错误像。
+2. 每项开一练习加剂量。
+3. 用目标定过关线。
 
-MUSTERLÖSUNG:对照目标(Reaktionszeit 0,22 s, Rhythmus 120 BPM, Treffer 8 von 10),先定相命名错误画像,再读数并以术语释效应,最后从机制推纠正;在Muenchner Slalom-Koordinations-Cup, Lichtschranken-Reaktion中形成 保障—转化—兑现 的完整因果链,达标即过关。
+MUSTERLÖSUNG:晃动缺平衡加耦合:手划髋折。目标8米不掉,靠单腿抛接球加节拍走木每周两次,把环压到240毫秒内。
 
-`Klausur-Satz: Am Target zeigt sich, ob Grenze oder Ausnutzung ueber das Ergebnis entschied.`
+`Klausur-Satz: 目标10米加220毫秒证明:parcours 可计量压环。`
 
-## Schritt 5 — ausprobieren: VERGLEICH技术对抗 Rhythmus-Training vs Orientierungs-Training
+## Schritt 5 — ausprobieren: VERGLEICH技术对抗 Geschlossene Automatisierung (Balken stabil, Wiederholung: Praezision) vs Offene Variation (Balken wackelt, Spiel: Anpassung)
 
 VERGLEICH辨别实验(双向辨析,先选程序再解题):【选程序】
 
-VERGLEICH:先选程序—— (i) Rhythmus-Training 还是 (ii) Orientierungs-Training ——再解题。WegA讲上限/结构,WegB讲兑现/情境。【选程序:问上限与结构选(i),问兑现与情境选(ii)。口述先说 Ich waehle Verfahren (i)/(ii), weil …】
+VERGLEICH:先选程序—— (i) Geschlossene Automatisierung (Balken stabil, Wiederholung: Praezision) 还是 (ii) Offene Variation (Balken wackelt, Spiel: Anpassung) ——再解题。【选程序:问上限与结构选(i),问兑现与情境选(ii)。口述先说 Ich waehle Verfahren (i)/(ii), weil …】
 
-AUFGABE A (Rhythmus-Training):在Muenchner Slalom-Koordinations-Cup, Lichtschranken-Reaktion的首个案例中选哪条路,如何论证?
+AUFGABE A:案例A(临考求稳)选哪条?
 
-AUFGABE B (Orientierungs-Training):在对立案例中选哪条路,如何论证?
+AUFGABE B:案例B(苗子求广)选哪条?
 
-HILFE:A问上限属于程序(i);B问兑现属于程序(ii)。先说选哪条路,再给测量/情境证据。
+HILFE:A braucht Sicherheit, also geschlossen. B braucht Breite, also offen.
 
-ANTWORT:A走程序(i)Rhythmus-Training,以测量值与机制论证上限;B走程序(ii)Orientierungs-Training,以情境与位置论证兑现。德语口述句收束。
+ANTWORT:A走闭式自动化求稳;B走开式变异求广。
 
-`Klausur-Satz: Verfahren (i) setzt die Grenze, Verfahren (ii) nutzt die Lage; die Wahl traegt das Urteil.`
+`Klausur-Satz: 闭式保考开式育苗,情境定路线。`
 
-## Schritt 6 — check: Selbsttest zu Koordinative Faehigkeiten nach Hirtz
+## Schritt 6 — check: Selbsttest
 
 CHECK检索默写(自测3题,与答案配对):
 
-FRAGE:如何在赛事中认出本课核心? | ANTWORT:看数值目标(Reaktionszeit 0)与S3机制。
-FRAGE:如何达标? | ANTWORT:测量、术语释义、从机制推纠正三步。
-FRAGE:何时选程序(i)而非(ii)? | ANTWORT:问上限选(i),问兑现选(ii)。
+- FRAGE:软件还是硬件? | ANTWORT:协调是软件体能是硬件,木头测软件。
+- FRAGE:反应怎么提速? | ANTWORT:练决策模板不练神经速度,省60毫秒。
+- FRAGE:何时闭式而非开式? | ANTWORT:临考闭式,苗子开式。
 
-`Klausur-Satz: Selbsttest bestanden heisst Target lesen, Verfahren waehlen und Urteil begruenden.`
+`Klausur-Satz: 易错是天赋论与拿力量替协调。`
 
 ## Fehlvorstellung
 
-(非Schritt小节，Parser 自动识别，不计入步骤步数)
+(非Schritt小节，Parser 自动识别，不计入入步数)
 
-1. 误解"协调就是柔韧"。
-   中文纠偏：柔韧是 Kondition 之 Beweglichkeit 供能侧；协调是 steuernd 中控侧，两类不同。
-   Korrektur-Satz: `Beweglichkeit gehoert zur Kondition, nicht zur Koordination.`
+1. 误解“协调是天赋练不出。”。
+   中文纠偏：Hirtz 证明几周可测可涨。起点是天赋,路是训练。
+   Korrektur-Satz: `Koordination ist trainierbar; Balkenmeter belegen es.`
+2. 误解“力大自然稳。”。
+   中文纠偏：没环路的力全是晃。软件指挥硬件,反不得。
+   Korrektur-Satz: `Kraft ersetzt keine Schleife; Gleichgewicht braucht eigene Reize.`
 
-2. 误解"多练力量自动长协调"。
-   中文纠偏：力量涨硬件，动作准靠软件；只举铁不练变式，技术照样糙。
-   Korrektur-Satz: `Kraft ersetzt keine Steuerung.`
+## Schritt 7 — szenario: Klausurtransfer — Koordinationstrainer
+中文:你是Koordinationstrainer,在Stuttgarter Schulsporthalle, Balken-Parcours中必须用德语连贯口述(约90秒)诊断、措施与数值目标(Balken 8 m ohne Absteiger, Reaktionszeit unter 240 ms, 2 Parcoursrunden),并以术语举证。
+ROLLE: Du bist Koordinationstrainer. SITUATION: 在斯图加特用德语90秒陈述能力、parcours 与目标(8米,240毫秒)。
+RUBRIC (30 XP):诊断术语8分 | 措施与目标举证7分 | 程序选择对比7分 | 德语表达5分。
 
-## Schritt 7 — szenario: Klausurtransfer: Koordinative Faehigkeiten nach Hirtz — Koordinations-Trainer im Slalom-Cup
-中文:你是Koordinations-Trainer im Slalom-Cup,在Muenchner Slalom-Koordinations-Cup, Lichtschranken-Reaktion中必须用德语连贯口述(约90秒)诊断、措施与数值目标(Reaktionszeit 0,22 s, Rhythmus 120 BPM, Treffer 8 von 10),并以术语举证。
-ROLLE: Du bist Koordinations-Trainer im Slalom-Cup. SITUATION: In Muenchner Slalom-Koordinations-Cup, Lichtschranken-Reaktion stellst du Diagnose, Massnahme und Target (Reaktionszeit 0,22 s, Rhythmus 120 BPM, Treffer 8 von 10) in ca. 90 Sekunden vor.
-RUBRIC (30 XP):诊断术语8分 | 措施与目标举证10分 | 程序选择对比7分 | 德语表达5分。
+`Klausur-Satz: 满分句:掉木因320毫秒环误纠正;节拍走木可锁定10米与220毫秒。`
 
 ## Schritt 8 — reflexion: Takeaway & Reflexion — 奖杯还是进站检修
 
 TAKEAWAY 1盒(核心总结):
 
-中文:上限早锁定、位置晚兑现;数值目标(Reaktionszeit 0,22 s, Rhythmus 120 BPM, Treffer 8 von 10)是裁判,程序选择是辩护;本关连着冲量角逐、体能极限与主导动机三幕,测得出、说得清、赢下来。
+中文:练环路不练块:看、判、纠200毫秒。软件升级,哪根木都站得住。
 Takeaway-Satz: `Wer die Grenze sichert und die Lage nutzt, holt den Pokal.`
+
+`Klausur-Satz: 元认知:协调是快秩序,会测环就懂技术。`
 
 REFLEXION 2问:
 1. 过程自省:沙盘精度(Schritt 4)与程序选择(Schritt 5)哪一步更难?

@@ -11,122 +11,136 @@ tags: [EF, Musik, Hoeranalyse]
 version: Lesson-v3
 ---
 
-# Lernreise: Musik Hoeranalyse (L1, Ziel Muendlich)
+
+
+
+# Lernreise: Lernreise: Lernreise: Lernreise: Musik Hoeranalyse (L1, Ziel Muendlich)
 
 <!-- Lesson v3 Architektur mit 9 Abschnitten: Schritt 1 bis 8 mit fester Struktur; Fehlvorstellung liegt zwischen Schritt 6 und 7 (wird vom Parser uebersprungen, zaehlt nicht als Schritt); unterstuetzt eingebettete [Werkzeug: <id>] Elemente; Gating: check/szenario nicht bestanden = Weiter deaktiviert; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
-## Schritt 1 — entdecken: Konzerthaus Berlin — Alarm in der Arena
+## Schritt 1 — entdecken: Konzerthaus Berlin, Beethoven 5. Sinfonie (Schicksalsmotiv, 108 BPM) — Dreissig Sekunden Stille nach Play
 
 ZIELE (drei messbare Ziele dieser Lektion):
 
 1. Du kannst das Kernthema `Höranalyse Bausteine` in einem Satz definieren und im Wettkampfkontext verorten.
-2. Du kannst den Mechanismus muendlich erklaeren und mit dem Target (30 s Hoerbeispiel, 90 s Rede, Formel T = 60/BPM) belegen.
+2. Du kannst den Mechanismus muendlich erklaeren und mit dem Target (30 s Hoerbeispiel, 90 s Rede, 3 Parameter, Formel T = 60/108) belegen.
 3. Du kannst einen Fehler diagnostizieren und mit einem Klausur-Satz auf AFB-II-Niveau schliessen.
 
-### Hook: Alarm in der Arena
+### Hook: Dreissig Sekunden Stille nach Play
 
-Im Rampenlicht von Konzerthaus Berlin, Beethoven 5. Sinfonie (Schicksalsmotiv) beginnt unser naechster Akt der Kampagne Champion-Arena und Takt-Werkstatt. Stell dir vor: Die Prueferin drueckt auf Play, dreissig Sekunden Musik, dann Stille, und alle Augen richten sich auf dich. Was sagst du zuerst? Viele beginnen mit Gefuehl und verlieren den ersten Punkt. Denn Gefuehle zaehlen nicht ohne Ton, Rhythmus und Dynamik als Beleg. Erstens sichert das Beschreiben Parameter. Zweitens deutet jeder Parameter ueber weil mit Fachbegriff. Drittens urteilt erst danach der begruendete Schluss. Wer zuerst misst und dann meint, verwandelt Eindruck in Nachweis. Heute trainieren wir genau diese Reihenfolge: hoeren, belegen und ueberzeugen.
+Die Prueferin drueckt auf Play, dreissig Sekunden Musik, dann Stille, und alle Augen richten sich auf dich. Was sagst du zuerst? Viele beginnen mit Gefuehl und verlieren den ersten Punkt. Denn Gefuehle zaehlen nicht ohne Ton, Rhythmus und Dynamik als Beleg.
 
-`Klausur-Satz: Leitsatz des Themas.`
+Erst **Beschreiben** sichert **Parameter** (Rhythmus, Melodie, Harmonie, Klangfarbe, Dynamik, Form), dann deutet jeder Parameter ueber weil mit Fachbegriff, erst danach urteilt der Schluss. Wer zuerst misst und dann meint, verwandelt Eindruck in Nachweis. Heute trainieren wir genau diese Reihenfolge.
 
-## Schritt 2 — entdecken: Ausruestungskiste der Werkstatt
+`Klausur-Satz: Berlin zeigt den Kernkonflikt: Dreissig Sekunden Musik, und nur Parameter retten vor dem Schweigen.`
+
+## Schritt 2 — entdecken: Ausruestungskiste der Trainer
 
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
-- **Parameter:** Rhythmus, Melodie, Harmonie, Farbe, Dynamik, Form.
-- **Klangfarbe:** Farbe von Instrument und Stimme.
-- **Dynamik:** Lautstaerke von piano bis forte.
-- **Form:** Wiederholung, Kontrast, Entwicklung.
-- **Urteil:** begruendete Bewertung.
+- **Parameter**: Parameter sind die messbaren Dimensionen des Gehoerten: Rhythmus, Melodie, Harmonie, Klangfarbe, Dynamik und Form. Sie bilden das Pflichtvokabular jeder Hoeranalyse. Ohne sie bleibt Deutung Gerede.  Mechanismus: Das Ohr zerlegt Schall in Tonhoehe, Dauer und Intensitaet; Benennung macht Wahrnehmung pruefbar und vergleichbar. Klausur-Tipp: Nenne mindestens drei Parameter mit Beleg (Takt, Instrument, Lautstaerke); Aufzaehlung ohne Beleg gibt nichts.
+- **Klangfarbe**: Die Klangfarbe ist die charakteristische Farbe von Instrument und Stimme durch Obertongehalt und Ansprache. Sie verrät Besetzung und Epoche. Streicher klingen anders als Blech, Knabenchor anders als Tutti.  Mechanismus: Obertonspektrum plus Einschwingvorgang praegen das Spektrum; f = f0 mal 2 hoch n/12 ordnet die Toene. Klausur-Tipp: Nenne Instrument plus Epoche; Klang als Besetzungsbeweis.
+- **Dynamik**: Dynamik ist die gestufte Lautstaerke von pianissimo bis fortissimo mit Uebergaengen wie Crescendo. Sie formt Spannung und Höhepunkte. Terassendynamik verrät Barock, stufenlose das 19. Jahrhundert.  Mechanismus: Schalldruck in dB steuert Erregung; Kontraste lenken Aufmerksamkeit auf Formteile. Klausur-Tipp: Nenne Zeichen plus Wirkung; pp/ff mit Takt als Beleg.
+- **Motiv und Form**: Motiv ist die kleinste sinntragende Einheit, Form ihre Anordnung aus Wiederholung, Kontrast und Entwicklung. Beethovens Viertonmotiv traegt einen ganzen Satz. Wer Form hoert, versteht Architektur.  Mechanismus: Wiedererkennung im Gedaechtnis plus Variation (Umkehrung, Krebs, Sequenz); Exposition, Durchfuehrung, Reprise gliedern Zeit. Klausur-Tipp: Nenne Motiv plus Verfahren; Wiederholung/Kontrast als Gliederung.
+- **Urteil**: Das Urteil ist die begruendete Bewertung von Wirkung und Qualitaet aus Parametern. Es schliesst die Analyse, nicht die Einleitung. Meinung ohne weil faellt durch.  Mechanismus: Synthese aller Belege zur These; AB II beschreibt, AB III wertet mit Massstab. Klausur-Tipp: Formuliere ich beurteile weil mit zwei Belegen; Urteil immer zuletzt.
 
-`Klausur-Satz: Die fuenf Begriffe tragen Diagnose, Sandkasten und Urteil als gemeinsame Sprache.`
+`Klausur-Satz: Parameter sind messbar, Klangfarbe verrät Besetzung: Diese Definitionen tragen jede Analyse.`
 
-## Schritt 3 — entdecken: Mechanismus im Getriebe der Kampagne
+## Schritt 3 — entdecken: Mechanismus im Getriebe
 
 TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
-Hoeren folgt Beleg, Deutung und Urteil: Parameter sichern, Fachbegriff deutet, Urteil schliesst; Struktur vor Meinung. In unserer Kampagne Champion-Arena und Takt-Werkstatt verbindet dieser Mechanismus den Impuls-Wettkampf ueber die Laktat-Grenze bis zum Wagner-Leitmotiv: Wer misst, deutet; wer deutet, siegt.
+Beschreiben sichert Belege, Deuten verknuepft jeden Beleg mit Fachbegriff und Wirkung, Urteilen synthesisiert zur These. Die Kette ist Pflicht: Ueberspringt man Beschreiben, haengt Deutung in der Luft. Das Tempo der Musik liefert die erste Zahl: Taktlaenge aus BPM.
+
+$$
+T = \frac{60}{BPM} \quad\text{z.B. } T = \frac{60}{108} \approx 0{,}56\,\mathrm{s}
+$$
+
+Bei 108 BPM dauert ein Schlag 0,56 Sekunden; das Schicksalsmotiv mit drei Achteln plus Fermate misst exakt 2 Sekunden. Wer BPM hoert, belegt statt zu raunen.
 
 ```diagram
-Kampagne [Impuls -> Schwelle -> Leitmotiv]
-Holphase [sichern] -> Pruefphase [30 s Hoerbeispiel, 90 s Rede, Formel T = 60/BPM] -> Zielphase [nutzen]
+Beschreiben [3 Parameter, Takt] -> Deuten [Fachbegriff + weil] -> Urteilen [These]
 Regel: Fehler frueh = Grenze | Fehler spaet = Ausnutzung
 ```
 
-`Klausur-Satz: Der Mechanismus trennt Grenze von Ausnutzung und ordnet jeden Fehler seiner Phase zu.`
+`Klausur-Satz: Beschreiben sichert, Deuten verknuepft, Urteilen schliesst: Diese Kette traegt jede These.`
 
 ## Anekdote & Fun-Fact
 
-**Anekdote / Fun-Fact (DE)**: Der Anfang von Beethovens Fuenfter Sinfonie gilt heute als Schicksalsmotiv. Der Satz So pocht das Schicksal an die Pforte wird Beethoven zugeschrieben, steht aber nicht in seinen eigenen Aufzeichnungen; er geht offenbar auf einen spaeteren Biografen zurueck, dessen Berichte als unzuverlaessig gelten. Viele Hoerende hoeren deshalb ein Schicksal, das die Musik selbst gar nicht behauptet.
+**Anekdote / Fun-Fact (DE)**: Der Anfang von Beethovens Fuenfter gilt als Schicksalsmotiv; der Satz So pocht das Schicksal wird Beethoven zugeschrieben, steht aber in keiner seiner Notizen und geht auf einen unzuverlaessigen Biografen zurueck. Viele hoeren deshalb ein Schicksal, das die Musik selbst nie behauptet. Die Anekdote warnt: Titel ersetzen keine Analyse.
 
-**Bezug zum Konzept**: `Beschreiben (Parameter) steht vor Deuten (Wirkung) und Beurteilen (Urteil). Ein bekannter Titel ersetzt keine Hoeranalyse.`
+**Bezug zum Konzept**: `Beschreiben steht vor Deuten und Urteilen; ein bekannter Titel ersetzt keinen Parameterbeleg.`
 
-## Schritt 4 — ausprobieren: Sandkasten-Duell um 30 s Hoerbeispiel
+## Schritt 4 — ausprobieren: Sandkasten-Duell
 
 BEISPIEL (Musteraufgabe mit Loesungsweg):
 
 [Werkzeug: oral-timer]
 
-AUFGABE (analysieren, AFB II): 90-Sekunden-Probe gegen den Timer: 30 s Hoeren, 2 Parameter mit T = 60/BPM, dann Rede. Erreiche das Target: 30 s Hoerbeispiel, 90 s Rede, Formel T = 60/BPM.
+AUFGABE (analysieren, AFB II): 90-Sekunden-Probe gegen den Timer: 30 s Hoeren (108 BPM), 2 Parameter mit T = 60/BPM belegen, dann Rede am Target. Erreiche das Target: 30 s Hoerbeispiel, 90 s Rede, 3 Parameter, Formel T = 60/108.
 
-TARGET: 30 s Hoerbeispiel, 90 s Rede, Formel T = 60/BPM.
+TARGET: 30 s Hoerbeispiel, 90 s Rede, 3 Parameter, Formel T = 60/108.
 
 HILFE:
-1. Schritt 1: Benenne Phase und Fehlerbild am Target (30 s Hoerbeispiel).
-2. Schritt 2: Lies den Messwert ab und deute ihn mit einem Fachbegriff.
-3. Schritt 3: Leite die Korrektur aus dem Mechanismus ab.
+1. Schritt 1: Notiere 3 Parameter mit Takt und Instrument.
+2. Schritt 2: Deute jeden mit Fachbegriff plus weil.
+3. Schritt 3: Schliesse mit Urteil in einem Satz.
 
-MUSTERLOESUNG: Das Target (30 s Hoerbeispiel, 90 s Rede, Formel T = 60/BPM) wird erreicht, indem zuerst Phase und Fehlerbild benannt, dann der Messwert mit Fachbegriff gedeutet und schliesslich die Korrektur aus dem Mechanismus abgeleitet wird; so schliesst sich die Kausalkette Sichern, Umsetzen und Nutzen in Konzerthaus Berlin.
+MUSTERLOESUNG: Das Motiv (g-g-g-es, 108 BPM, T = 0,56 s) ist rhythmisch gepraegt und dynamisch ff; die Klangfarbe Streicher-Tutti plus Terzfall deuten Drohung. Das Target wird erreicht, weil drei Parameter mit Zahl, Fachbegriff und Urteil in 90 Sekunden klingen. Gefuehl allein haette null Punkte gegeben.
 
-`Klausur-Satz: Am Target zeigt sich, ob Grenze oder Ausnutzung ueber das Ergebnis entschied.`
+`Klausur-Satz: Das Target 108 BPM plus T = 0,56 s beweist: Zahlen schlagen Raunen.`
 
-## Schritt 5 — ausprobieren: Verfahrensduell Beschreibungs-Weg gegen Deutungs-Weg
+## Schritt 5 — ausprobieren: Verfahrensduell Parameterbeschreibung (sichern: was klingt?) gegen Wirkungsdeutung (deuten: was wirkt wie?)
 
 VERGLEICH (zwei Verfahren im Kontrast):
 
-VERGLEICH: Waehle zuerst das Verfahren: (i) Beschreibungs-Weg oder (ii) Deutungs-Weg, dann loesen. Die Wahl des Verfahrens entscheidet ueber die ganze Begruendung.
+VERGLEICH: Waehle zuerst das Verfahren: (i) Parameterbeschreibung (sichern: was klingt?) oder (ii) Wirkungsdeutung (deuten: was wirkt wie?), dann loesen. Die Wahl des Verfahrens entscheidet ueber die ganze Begruendung.
 
-AUFGABE A: Erster Fall in Konzerthaus Berlin: Welches Verfahren passt, und wie ist zu argumentieren?
+AUFGABE A: Fall A (unbekanntes Stueck, erste 30 s): Welcher Weg?
 
-AUFGABE B: Zweiter Gegenfall: Welches Verfahren passt, und wie ist zu argumentieren?
+AUFGABE B: Fall B (bekanntes Motiv, Wirkung gefragt): Welcher Weg?
 
-HILFE: A fragt nach Grenze und Aufbau, also Verfahren (i). B fragt nach Ausnutzung und Lage, also Verfahren (ii).
+HILFE: A braucht Belege, also Beschreibung. B fragt Wirkung, also Deutung auf Belegen.
 
-ANTWORT: A erfordert Verfahren (i) Beschreibungs-Weg mit Begruendung aus Messwert und Mechanismus. B erfordert Verfahren (ii) Deutungs-Weg mit Begruendung aus Lage und Kontext. Muendlich formuliere ich den Unterschied in einem Satz mit weil.
+ANTWORT: A erfordert Weg A mit drei Parametern. B erfordert Weg B mit weil-Saetzen auf Belegen. Ich waehle A/B, weil Fragestellung es verlangt.
 
-`Klausur-Satz: Verfahren (i) setzt die Grenze, Verfahren (ii) nutzt die Lage; die Wahl traegt das Urteil.`
+`Klausur-Satz: Beschreiben oder Deuten: Die Fragestellung waehlt den Weg.`
 
-## Schritt 6 — check: Selbsttest zu Höranalyse Bausteine
+## Schritt 6 — check: Selbsttest
 
 CHECK (3 Fragen zur Selbstkontrolle mit Antworten):
 
-FRAGE: Woran erkennst du das Kernthema im Wettkampf? | ANTWORT: Am Target (30 s Hoerbeispiel) und am Mechanismus aus Schritt 3.
-FRAGE: Wie erreichst du das Target? | ANTWORT: Durch Messen, Deuten mit Fachbegriff und Ableiten der Korrektur.
-FRAGE: Wann waehlst du Verfahren (i) statt (ii)? | ANTWORT: Bei Grenzfragen (i), bei Lagenfragen (ii).
+- FRAGE: Womit beginnen? | ANTWORT: Mit Parametern plus Zahl (BPM, Takt); Gefuehl zuletzt.
+- FRAGE: Was traegt Deutung? | ANTWORT: Fachbegriff plus weil plus Beleg; ohne Beleg Gerede.
+- FRAGE: Wann Weg A statt B? | ANTWORT: Unbekannt beschreiben (A), Wirkung deuten (B).
 
-`Klausur-Satz: Selbsttest bestanden heisst Target lesen, Verfahren waehlen und Urteil begruenden.`
+`Klausur-Satz: Stolperstein sind Gefuehl zuerst und Etiketten ohne Hoeren.`
 
 ## Fehlvorstellung
 
 (Nicht-Schritt-Abschnitt, wird vom Parser automatisch erkannt und nicht als Schritt gezaehlt)
 
-1. Missverstaendnis: Hoeranalyse bedeutet, das eigene Gefuehl zu nennen (zum Beispiel: Ich finde es schoen).
-   Korrektur: Das Gefuehl ist nur der Ausgangspunkt, nicht die Analyse. Zuerst muessen Parameter als ueberpruefbare Beschreibung festgehalten, dann mit Fachbegriffen gedeutet und erst danach beurteilt werden. Ein Urteil ohne Parameterbeleg erhaelt keine Punkte.
-   Korrektur-Satz: `Eine Hoeranalyse beginnt mit ueberpruefbaren Parametern, nicht mit einem subjektiven Gefuehl; das Urteil muss aus der Beschreibung abgeleitet werden.`
-2. Missverstaendnis: Fachbegriffe auswendig lernen und beim Hoeren auf die Musik uebertragen genuegt.
-   Korrektur: Die Reihenfolge ist umgekehrt. Der Begriff muss vom Gehoerten ausgeloest werden; zuerst die Struktur hoeren, dann den passenden Begriff waehlen. Sonst hoert man Dinge, die gar nicht vorhanden sind.
-   Korrektur-Satz: `Nicht das Etikett fuehrt zur Wahrnehmung, sondern die beschriebene Struktur fuehrt zum passenden Fachbegriff.`
+1. Missverstaendnis: Hoeranalyse heisst Gefuehl nennen.
+   Korrektur: Gefuehl ist Start, nicht Analyse; Urteil ohne Parameter gibt null Punkte. Erst messen, dann meinen.
+   Korrektur-Satz: `Analyse beginnt mit Parametern, nicht mit Gefuehl; Urteil folgt aus Belegen.`
+2. Missverstaendnis: Fachbegriffe sammeln genuegt.
+   Korrektur: Begriffe muessen vom Gehoerten ausgeloest werden; Etiketten ohne Hoeren erfinden Musik. Struktur zuerst, Etikett danach.
+   Korrektur-Satz: `Nicht Etikett fuehrt zu Wahrnehmung, sondern Struktur zum Begriff.`
 
-## Schritt 7 — szenario: Klausurtransfer: Höranalyse Bausteine — Chefdirigent im Konzerthaus
+## Schritt 7 — szenario: Klausurtransfer — Chefdirigent im Konzerthaus
 ROLLE: Du bist Chefdirigent im Konzerthaus und verteidigst deine Entscheidung vor der Pruefungskommission.
-SITUATION: In Konzerthaus Berlin, Beethoven 5. Sinfonie (Schicksalsmotiv) musst du in zusammenhaengenden deutschen Saetzen (ca. 90 Sekunden) Diagnose, Massnahme und Target (30 s Hoerbeispiel, 90 s Rede, Formel T = 60/BPM) vorstellen und mit Fachsprache begruenden.
+SITUATION: In Berlin musst du 90 Sekunden lang Parameter, Deutung und Target (108 BPM, 3 Parameter) verteidigen.
 RUBRIC (30 XP): Diagnose mit Fachbegriffen (8 XP) | Massnahme mit Target-Beleg (10 XP) | Verfahrenswahl im Vergleich (7 XP) | Fachsprachlicher Vortrag (5 XP).
 
-## Schritt 8 — reflexion: Takeaway & Reflexion — Pokal oder Pitstop in Konzerthaus Berlin
+`Klausur-Satz: AFB-III-Mustersatz: Die Drohwirkung entsteht, weil rhythmisches Viertonmotiv in ff mit Streicher-Tutti bei 108 BPM erklingt; erst Parameter, dann Urteil sichern volle Punktzahl.`
+
+## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY (Kernzusammenfassung):
 
-Grenze frueh sichern, Lage spaet nutzen: Das Target (30 s Hoerbeispiel, 90 s Rede, Formel T = 60/BPM) misst den Unterschied, das Verfahren traegt das Urteil. Takeaway-Satz: `Wer die Grenze sichert und die Lage nutzt, holt in Konzerthaus Berlin den Pokal.`
+Wer misst, darf meinen: Parameter sichern, weil deuten, dann urteilen. Diese Reihenfolge verwandelt Eindruck in Punkte. Takeaway-Satz: `Wer die Grenze sichert und die Lage nutzt, holt den Pokal.`
+
+`Klausur-Satz: Metakern: Hoeren ist Messen mit Sinn; wer Parameter hoert, versteht jede Musik.`
 
 REFLEXION (2 Fragen):
 1. Selbstkontrolle: Welcher Schritt fiel schwerer, die Sandkasten-Praezision (Schritt 4) oder die Verfahrenswahl im Duell (Schritt 5)?

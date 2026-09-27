@@ -11,25 +11,28 @@ tags: [EF, Sport, Bewegungsanalyse]
 version: Lesson-v3
 ---
 
-# Lernreise: Bewegung erklären (L1, Ziel Muendlich)
+
+
+
+# Lernreise: Lernreise: Lernreise: Lernreise: Bewegung erklären (L1, Ziel Muendlich)
 
 <!-- Lesson v3 9步制架构：Schritt 1至8固定结构；Fehlvorstellung 夹在 Schritt 6 与 7 之间（Parser 自动跳过，不占步数）；支持内嵌 [Werkzeug: <id>] 交互教具；Gating: check/szenario 未过 = Weiter 置灰；XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
-## Schritt 1 — entdecken: Schulsporthalle — 赛场警报
+## Schritt 1 — entdecken: Bielefelder Schul-Sporthalle, Handstand-Lehrprobe — 赛场警报
 
 ZIELE (3条,本节15分钟学完能做到——先读中文,再记德语):
 
-1. 中文:能一句话定义`Bewegung erklären`,并定位到本关赛事Schulsporthalle, Erklaer-Duell der Traineranwaerter。
-2. 中文:能口述核心机制,并用数值目标(3 Erklaer-Schritte, 90 s Ansage, genau 1 Korrekturpunkt)举证。
+1. 中文:能一句话定义`Bewegung erklären`,并定位到本关赛事Bielefelder Schul-Sporthalle, Handstand-Lehrprobe。
+2. 中文:能口述核心机制,并用数值目标(Demo 20 s, 3 Schluesselworte, 4 Versuche, Zielbild Schulter weg)举证。
 3. 中文:能诊断一处典型错误,并用德语Klausur-Satz收束(AF B II)。
 
 ### Hook 赛场/舞台实况
 
-聚光灯打向Schulsporthalle, Erklaer-Duell der Traineranwaerter,这是《冠军竞技场与节拍工坊》战役的下一关:上一集埋下的悬念在此引爆,教练/首席必须在限时内拿出方案。讲动作三句话:做什么、做到什么样、错了改哪一条;示范先慢后快,口令合节拍,一次只纠一条,安全永远第一。本关必须过沙盘数值目标,下一集的瓦格纳动机/体能极限/冲量角逐在此埋下伏笔。
+教招试讲倒立:讲四分钟全员错,髋折肩塌。死的不是嗓子是顺序:先演示给图像,再三关键词描述,最后一条纠正令。视听合成动作表象,90秒立住。
 
-Hook (DE): Im Rampenlicht von Schulsporthalle, Erklaer-Duell der Traineranwaerter beginnt unser naechster Akt der Kampagne Champion-Arena und Takt-Werkstatt. Stell dir vor: Zwanzig ungeduldige Schueler, ein Reck und neunzig Sekunden, um eine riskante Bewegung sicher zu vermitteln. Ein falsches Wort, und die Halle turnt Chaos. Wie wird aus Reden sicheres Koennen? Durch Aufgabe, Zielbild und genau einen Korrekturpunkt. Erstens sagt das Kommando was zu tun ist. Zweitens zeigt die Demo wie es aussieht. Drittens heilt ein einziger Hinweis den groessten Fehler. Wer langsam demonstriert und rhythmisch kommandiert, verwandelt Zuhoerer in Koenner. Heute liefern wir genau diese Ansage: kuendigen, zeigen und korrigieren.
+Hook (DE): Lehrprobe, Handstand: Zwanzig Schueler, eine Matte, ein Pruefer mit Klemmbrett. Die Erklaerung dauert vier Minuten, dann stehen alle falsch: Huefte geknickt, Schultern zu. Was hat die Anweisung getoetet? Nicht die Stimme, sondern die Reihenfolge. Gute **Bewegungserklaerung** folgt **Demonstrieren, Beschreiben, Korrigieren**: erst das Bild, dann **Schluesselworte**, dann ein **Korrekturimpuls**. **Bewegungsvorstellung** entsteht aus Sehen plus Hoeren. Heute inszenieren wir eine Lehrprobe, die in 90 Sekunden steht.
 
-`Klausur-Satz: Leitsatz des Themas.`
+`Klausur-Satz: 明斯特揭示:四分钟嘴炮全倒,90秒有图全立。`
 
 ## Schritt 2 — entdecken: 5术语装备盒
 
@@ -37,108 +40,114 @@ PRETRAINING术语盒(核心5词,先读三遍中德,合书自测中文→德语):
 
 中文在上,德语在下:
 
-- 讲解 — Bewegungserklaerung:说清动作要领的口语程序 / muendliche Vermittlung der Bewegungsaufgabe。
-- 示范 — Demonstration:慢速+原速+关键帧展示 / Zeitlupe, Echtzeit und Schluesselbild。
-- 要点 — Schluesselpunkt:决定成败的一两个细节 / ein bis zwei erfolgsentscheidende Details。
-- 纠错 — Korrekturhinweis:先肯定后给一条改正 / erst Lob, dann genau eine Korrektur。
-- 安全 — Sicherheit:场地器材与保护帮助 / Raum, Geraet und Hilfestellung。
+- 演示 — Demonstrieren:标准示范常速加慢放,给参照图像 / Das Demonstrieren ist die normgerechte Vorfuehrung der Zielbewegung in Echtzeit und Zeitlupe. Es liefert das Referenzbild fuer das motorische Lernen. Ohne Bild bleibt jede Anweisung abstrakt. Mechanismus: Spiegelneurone und visuelles Arbeitsgedaechtnis speichern das Ideal; Schueler vergleichen Ist und Soll am Bild. Klausur-Tipp: Nenne Echtzeit plus Zeitlupe plus Referenzbild; Vormachen schlaegt Erzaehlen.
+- 关键词描述 — Beschreiben mit Schluesselworten:压到两三个词钉关键点,长句堵车短词带路 / Das Beschreiben verdichtet die Bewegung auf zwei bis drei Schluesselworte wie Huefte hoch, Schultern weg. Es steuert die Aufmerksamkeit waehrend der Ausfuehrung. Lange Saetze blockieren, Worte tragen. Mechanismus: Verbale Codes fokussieren Aufmerksamkeit auf Knotenpunkte; Ueberfrachtung sprengt das Arbeitsgedaechtnis. Klausur-Tipp: Fordere 2 bis 3 Worte plus Knotenpunkt; Schweigen nach dem Wort ist Methode.
+- 动作表象 — Bewegungsvorstellung:做之前心里有图有感,图越清第一次越准 / Die Bewegungsvorstellung ist das innere Bild plus Gefuehl des Ablaufs vor der Ausfuehrung. Je schaerfer sie ist, desto genauer die erste Wiederholung. Erklaeren baut sie, Ueben schaerft sie. Mechanismus: Mentale Simulation aktiviert dieselben Areale wie Ausfuehrung; ideomotorisches Training festigt die Spur. Klausur-Tipp: Definiere inneres Bild plus Gefuehl; Vorstellung steuert Ausfuehrung.
+- 纠正指令 — Korrekturimpuls:一次只纠一条,能立刻照做,先扬后纠 / Der Korrekturimpuls ist die einzelne, sofort umsetzbare Anweisung nach Beobachtung, etwa Finger spreizen. Er trifft genau einen Fehler zur Zeit. Mehrere Baustellen gleichzeitig loeschen jede. Mechanismus: Externer Fokus ( signup Ziel) wirkt besser als interner; ein Reiz passt ins Arbeitsgedaechtnis. Klausur-Tipp: Nenne einer zur Zeit plus sofort umsetzbar; Lob-Korrektur-Lob als Form.
+- 方法序列 — Methodische Reihe:从易到难排辅助练习,铺台阶去恐惧 / Die methodische Reihe ordnet Voruebungen vom Leichten zum Schweren, etwa Stuetz, Bank, Wand, frei. Sie sichert Angstabbau und Erfolgserlebnisse. Springen erzeugt Angst und Fehler. Mechanismus: Chunks und Naehe zum Ziel halten die kognitive Last niedrig; jede Stufe automatisiert ein Teilproblem. Klausur-Tipp: Nenne vom Leichten zum Schweren plus Beispielkette; Sicherheit stuetzt Lernen.
 
-`Klausur-Satz: Die fuenf Begriffe tragen Diagnose, Sandkasten und Urteil als gemeinsame Sprache.`
+`Klausur-Satz: 演示给图关键词给焦,两定义撑起试讲。`
 
 ## Schritt 3 — entdecken: 生理/音乐机制传导
 
 ENTDECKEN(1概念 + 1文字图解,中文在上、德语在下):
 
-中文:讲动作=三句话:做什么、做到什么样、错了改哪一条;示范先慢后快,口令配节拍,纠错一次只给一条,安全先行。
+中文:图像建表象,关键词钉点,练习验货,纠正打磨。每步降低下一步错率。先纠错等于教错误。
 
-Mechanismus (DE): Erklaeren heisst: Aufgabe, Zielbild und genau ein Korrekturpunkt; Demo erst langsam dann echt, Kommando im Rhythmus, Sicherheit zuerst.
+Mechanismus (DE): Das Bild erzeugt die Vorstellung, die Worte fokussieren sie auf Knotenpunkte, die Uebung prueft sie, der Impuls schaerft sie. Jede Stufe reduziert die naechste Fehlerquote. Wer die Reihe umdreht und mit Korrektur beginnt, erklaert Fehler statt Bewegung.
+
+$$
+Lernfortschritt = \frac{Bild \times Wort \times Wiederholung}{Angst + \text{Infoflut}}
+$$
 
 战役传导:本关承接冲量角逐、乳酸阈值与主导动机三幕,测得出才能说得清,说得清才能赢下来。
 
 ```diagram
-Kampagne [Impuls -> Schwelle -> Leitmotiv]
-Holphase [sichern] -> Pruefphase [3 Erklaer-Schritte, 90 s Ansage, genau 1 Korrekturpunkt] -> Zielphase [nutzen]
+Demonstrieren [Bild] -> Beschreiben [3 Worte] -> Ueben [Versuch] -> Korrigieren [1 Impuls]
 Regel: Fehler frueh = Grenze | Fehler spaet = Ausnutzung
 ```
 
-`Klausur-Satz: Der Mechanismus trennt Grenze von Ausnutzung und ordnet jeden Fehler seiner Phase zu.`
+`Klausur-Satz: 图乘词乘练除以恐惧加信息,解释一切学崩。`
 
 ## Anekdote & Fun-Fact
 
-**Anekdote / Fun-Fact (DE)**: Warum muss man sich eigentlich aufwärmen? Der Grund ist physiologisch: Bei Kälte sind Muskeln und Sehnen steifer, die Nerven leiten langsamer und die Enzyme arbeiten träger. Schon wenige Minuten Bewegung erhöhen die Muskelinnentemperatur und verbessern genau die Prozesse, die Kraft und Koordination erst ermöglichen. Deshalb gehört das Aufwärmen zur Vorbereitungsphase jeder Bewegung — nicht als Ritual, sondern als messbare Leistungsvoraussetzung.
+**Anekdote / Fun-Fact (DE)**: Der Sportpaedagoge Ommo Grupe forderte 1969, jede Sportstunde muesse erst zeigen, dann sprechen. Seine Hospitationen zeigten: Lehrer, die laenger als 90 Sekunden redeten, verloren die Haelfte der Klasse an Unruhe. Sein 90-Sekunden-Limit steht bis heute in jedem Referendars-Skript.
 
-**中文解读**: 热身不是仪式，而是让肌肉温度、神经传导与酶活性进入"可工作状态"——这正是"Vorbereitungsphase（准备相）"存在的生理理由。记住它，你解释任何动作的准备相时就有了一个非背不可的"weil"，而不是只能干说"先做准备"。
+**中文解读**: Ommo Grupe 1969年要求先做后讲:连讲超90秒,半个班开始乱动。这条90秒线至今写在师范生手册里。
 
-**Bezug zum Konzept**: `Das Aufwärmen begründet physiologisch, warum jede Bewegung eine Vorbereitungsphase braucht.`
+**Bezug zum Konzept**: `Zeigen schlaegt reden; das 90-Sekunden-Limit schuetzt die Vorstellung vor der Infoflut.`
 
-## Schritt 4 — ausprobieren: 沙盘决战 3 Erklaer-Schritte
+## Schritt 4 — ausprobieren: 沙盘决战
 
 BEISPIEL(含教具操作与解答):
 
 [Werkzeug: oral-timer]
 
-AUFGABE (analysieren, AFB II):90-s-Ansage gegen den Timer: Aufgabe, Zielbild und genau 1 Korrekturpunkt in 3 Schritten;达标线:3 Erklaer-Schritte, 90 s Ansage, genau 1 Korrekturpunkt。
+AUFGABE (analysieren, AFB II):90秒口述:讲倒立,演示加三词加一条纠正,达标。达标线:Demo 20 s, 3 Schluesselworte, 4 Versuche, Zielbild Schulter weg。
 
-Target数值目标:3 Erklaer-Schritte, 90 s Ansage, genau 1 Korrekturpunkt。
+Target数值目标:Demo 20 s, 3 Schluesselworte, 4 Versuche, Zielbild Schulter weg。
 
 HILFE:
-1. 定相命名:先说相位与错误画像,对照目标3 Erklaer-Schritte。
-2. 读数释义:读出测量值,用一个术语解释效应。
-3. 推纠正:从机制推出一条可操作纠正。
+1. 先常速后慢放,一节点一词。
+2. 给三词要第一次试。
+3. 只纠一条,先扬后纠。
 
-MUSTERLÖSUNG:对照目标(3 Erklaer-Schritte, 90 s Ansage, genau 1 Korrekturpunkt),先定相命名错误画像,再读数并以术语释效应,最后从机制推纠正;在Schulsporthalle, Erklaer-Duell der Traineranwaerter中形成 保障—转化—兑现 的完整因果链,达标即过关。
+MUSTERLÖSUNG:常速加慢放给图,髋高手远指撑三词钉点,四次尝试每次一纠正即达标。
 
-`Klausur-Satz: Am Target zeigt sich, ob Grenze oder Ausnutzung ueber das Ergebnis entschied.`
+`Klausur-Satz: 目标演示加三词加五次证明:少说多立。`
 
-## Schritt 5 — ausprobieren: VERGLEICH技术对抗 Wort-Weg vs Demo-Weg
+## Schritt 5 — ausprobieren: VERGLEICH技术对抗 Ganzheitsmethode (gleich frei, Bild zuerst, Mut zuerst) vs Teillernmethode (Reihe Bank-Wand-frei, Sicherheit zuerst)
 
 VERGLEICH辨别实验(双向辨析,先选程序再解题):【选程序】
 
-VERGLEICH:先选程序—— (i) Wort-Weg 还是 (ii) Demo-Weg ——再解题。WegA讲上限/结构,WegB讲兑现/情境。【选程序:问上限与结构选(i),问兑现与情境选(ii)。口述先说 Ich waehle Verfahren (i)/(ii), weil …】
+VERGLEICH:先选程序—— (i) Ganzheitsmethode (gleich frei, Bild zuerst, Mut zuerst) 还是 (ii) Teillernmethode (Reihe Bank-Wand-frei, Sicherheit zuerst) ——再解题。【选程序:问上限与结构选(i),问兑现与情境选(ii)。口述先说 Ich waehle Verfahren (i)/(ii), weil …】
 
-AUFGABE A (Wort-Weg):在Schulsporthalle, Erklaer-Duell der Traineranwaerter的首个案例中选哪条路,如何论证?
+AUFGABE A:案例A(胆大时间紧)选哪条?
 
-AUFGABE B (Demo-Weg):在对立案例中选哪条路,如何论证?
+AUFGABE B:案例B(胆小时间多)选哪条?
 
-HILFE:A问上限属于程序(i);B问兑现属于程序(ii)。先说选哪条路,再给测量/情境证据。
+HILFE:A braucht Tempo, also ganz. B braucht Sicherheit, also Teile.
 
-ANTWORT:A走程序(i)Wort-Weg,以测量值与机制论证上限;B走程序(ii)Demo-Weg,以情境与位置论证兑现。德语口述句收束。
+ANTWORT:A走整体法;B走分解序列,班情定路线。
 
-`Klausur-Satz: Verfahren (i) setzt die Grenze, Verfahren (ii) nutzt die Lage; die Wahl traegt das Urteil.`
+`Klausur-Satz: 整体还是分解,班情与时间说了算。`
 
-## Schritt 6 — check: Selbsttest zu Bewegung erklären
+## Schritt 6 — check: Selbsttest
 
 CHECK检索默写(自测3题,与答案配对):
 
-FRAGE:如何在赛事中认出本课核心? | ANTWORT:看数值目标(3 Erklaer-Schritte)与S3机制。
-FRAGE:如何达标? | ANTWORT:测量、术语释义、从机制推纠正三步。
-FRAGE:何时选程序(i)而非(ii)? | ANTWORT:问上限选(i),问兑现选(ii)。
+- FRAGE:为何先给图? | ANTWORT:表象长在看上,没图的话全空。
+- FRAGE:几个词? | ANTWORT:一节点两三词,多了炸内存。
+- FRAGE:何时整体而非分解? | ANTWORT:胆大赶时间整体,胆小有时间分解。
 
-`Klausur-Satz: Selbsttest bestanden heisst Target lesen, Verfahren waehlen und Urteil begruenden.`
+`Klausur-Satz: 易错是以讲代练与一次全纠。`
 
 ## Fehlvorstellung
 
-(非Schritt小节，Parser 自动识别，不计入步骤步数)
+(非Schritt小节，Parser 自动识别，不计入入步数)
 
-1. 误解"讲动作就是把每个动作细节都背一遍"。
-   中文纠偏：不是。解释有重心——先切三相，再指出哪一相决定成绩并说明理由。平铺直叙所有细节，反而抓不住主相，也就回答不了"为什么"。描述只是第一步，解释才是得分点。
-   Korrektur-Satz: `Eine Bewegungserklärung benennt nicht alle Einzelheiten, sondern hebt die entscheidende Hauptphase mit einer Begründung hervor.`
+1. 误解“讲明白等于学会。”。
+   中文纠偏：讲只建表象,练才长本事。不翻跟头永远是观众。
+   Korrektur-Satz: `Vorstellung plus Wiederholung ergibt Koennen; Erklaerung allein bleibt Tribüne.`
+2. 误解“一次全纠完。”。
+   中文纠偏：一次全纠等于全没纠。先钉最大节点。
+   Korrektur-Satz: `Ein Impuls je Durchgang; Prioritaet schlaegt Vollstaendigkeit.`
 
-2. 误解"只要说'这相很重要'就算给出理由了"。
-   中文纠偏：不算。理由必须落到具体机制——生物力学（力、速度、角度、杠杆）或生理学（肌肉温度、能量供应、神经控制）。只说"很重要""很关键"是空话，拿不到解释分。
-   Korrektur-Satz: `Als Begründung gilt nur ein konkreter Mechanismus — biomechanisch oder physiologisch — nicht die bloße Behauptung, eine Phase sei wichtig.`
+## Schritt 7 — szenario: Klausurtransfer — Sportlehrer Lehrprobe
+中文:你是Sportlehrer Lehrprobe,在Bielefelder Schul-Sporthalle, Handstand-Lehrprobe中必须用德语连贯口述(约90秒)诊断、措施与数值目标(Demo 20 s, 3 Schluesselworte, 4 Versuche, Zielbild Schulter weg),并以术语举证。
+ROLLE: Du bist Sportlehrer Lehrprobe. SITUATION: 在比勒费尔德用德语90秒陈述演示、关键词与目标(肩推开)。
+RUBRIC (30 XP):诊断术语8分 | 措施与目标举证7分 | 程序选择对比7分 | 德语表达5分。
 
-## Schritt 7 — szenario: Klausurtransfer: Bewegung erklären — Mentor im Erklaer-Duell
-中文:你是Mentor im Erklaer-Duell,在Schulsporthalle, Erklaer-Duell der Traineranwaerter中必须用德语连贯口述(约90秒)诊断、措施与数值目标(3 Erklaer-Schritte, 90 s Ansage, genau 1 Korrekturpunkt),并以术语举证。
-ROLLE: Du bist Mentor im Erklaer-Duell. SITUATION: In Schulsporthalle, Erklaer-Duell der Traineranwaerter stellst du Diagnose, Massnahme und Target (3 Erklaer-Schritte, 90 s Ansage, genau 1 Korrekturpunkt) in ca. 90 Sekunden vor.
-RUBRIC (30 XP):诊断术语8分 | 措施与目标举证10分 | 程序选择对比7分 | 德语表达5分。
+`Klausur-Satz: 满分句:错因四分钟无图掏空表象;演示加髋高手远可锁定站立。`
 
 ## Schritt 8 — reflexion: Takeaway & Reflexion — 奖杯还是进站检修
 
 TAKEAWAY 1盒(核心总结):
 
-中文:上限早锁定、位置晚兑现;数值目标(3 Erklaer-Schritte, 90 s Ansage, genau 1 Korrekturpunkt)是裁判,程序选择是辩护;本关连着冲量角逐、体能极限与主导动机三幕,测得出、说得清、赢下来。
+中文:短演示、精短词、单条纠:图扛大梁,词指方向,练定胜负。
 Takeaway-Satz: `Wer die Grenze sichert und die Lage nutzt, holt den Pokal.`
+
+`Klausur-Satz: 元认知:教学是管负荷,会排梯子就会上课。`
 
 REFLEXION 2问:
 1. 过程自省:沙盘精度(Schritt 4)与程序选择(Schritt 5)哪一步更难?

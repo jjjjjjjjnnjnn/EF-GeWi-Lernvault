@@ -11,25 +11,28 @@ tags: [EF, Musik, Barock]
 version: Lesson-v3
 ---
 
-# Lernreise: Polyphonie und Homophonie bei Bach (L1, Ziel Klausur)
+
+
+
+# Lernreise: Lernreise: Lernreise: Lernreise: Polyphonie und Homophonie bei Bach (L1, Ziel Klausur)
 
 <!-- Lesson v3 9步制架构：Schritt 1至8固定结构；Fehlvorstellung 夹在 Schritt 6 与 7 之间（Parser 自动跳过，不占步数）；支持内嵌 [Werkzeug: <id>] 交互教具；Gating: check/szenario 未过 = Weiter 置灰；XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
-## Schritt 1 — entdecken: Koethener Bach-Saal — 赛场警报
+## Schritt 1 — entdecken: Hamburger Hauptkirche St. Michaelis, Air-Suite (3 Stimmen, 60 BPM) — 赛场警报
 
 ZIELE (3条,本节15分钟学完能做到——先读中文,再记德语):
 
-1. 中文:能一句话定义`Polyphonie und Homophonie bei Bach`,并定位到本关赛事Koethener Bach-Saal, Fuge c-Moll (WK I)。
-2. 中文:能口述核心机制,并用数值目标(3 Stimmen, Engfuehrung Abstand 2 Takte, Thema 8 Toene)举证。
+1. 中文:能一句话定义`Polyphonie und Homophonie bei Bach`,并定位到本关赛事Hamburger Hauptkirche St. Michaelis, Air-Suite (3 Stimmen, 60 BPM)。
+2. 中文:能口述核心机制,并用数值目标(3 Stimmen, Quinte 1,498, Orgelpunkt 4 Takte, 90 s Rede)举证。
 3. 中文:能诊断一处典型错误,并用德语Klausur-Satz收束(AF B II)。
 
 ### Hook 赛场/舞台实况
 
-聚光灯打向Koethener Bach-Saal, Fuge c-Moll (WK I),这是《冠军竞技场与节拍工坊》战役的下一关:上一集埋下的悬念在此引爆,教练/首席必须在限时内拿出方案。复调听独立,主调听主次:赋格追主题谁先进谁答,密接听重叠,主调听和声节奏托旋律。本关必须过沙盘数值目标,下一集的瓦格纳动机/体能极限/冲量角逐在此埋下伏笔。
+赋格一起:一声独唱,二声杀入,四线缠斗。谁主谁从?只听响度必丢分。复调是平权声部用呈示对题织网,主调是旋律加伴奏。本关拆巴赫四声部。
 
-Hook (DE): Im Rampenlicht von Koethener Bach-Saal, Fuge c-Moll (WK I) beginnt unser naechster Akt der Kampagne Champion-Arena und Takt-Werkstatt. Stell dir vor: Drei Stimmen setzen nacheinander ein, jagen dasselbe Thema durch alle Lagen, und ploetzlich steht der ganze Saal unter Strom. Was erzeugt diesen Sog? Selbststaendige Stimmen im Wettbewerb statt Melodie mit Begleitung. Erstens fuehrt das Thema an. Zweitens antwortet die naechste Stimme. Drittens draengt die Engfuehrung alles zusammen. Wer Stimmen getrennt verfolgt, hoert Architektur statt Tapete. Heute entwirren wir genau dieses Netz: verfolgen, zaehlen und Textur benennen.
+Hook (DE): Thomaskirche, Fugenbeginn: Eine Stimme singt allein, dann faellt die zweite ein, dann Chaos aus vier Linien. Der Pruefer fragt: Wer fuehrt, wer folgt? Viele hoeren nur Lautstaerke und verpassen das Geflecht. **Polyphonie** webt gleichberechtigte **Stimmen** aus **Subjekt** und **Kontrapunkt**, **Homophonie** stellt Melodie ueber Begleitung. **Engfuehrung** und **Orgelpunkt** verraten die Werkstatt. Heute entwirren wir Bachs Vierstimmigkeit mit Bleistift und Zahl.
 
-`Klausur-Satz: Leitsatz des Themas.`
+`Klausur-Satz: 莱比锡揭示:四线吵架,数才知谁带头。`
 
 ## Schritt 2 — entdecken: 5术语装备盒
 
@@ -37,108 +40,114 @@ PRETRAINING术语盒(核心5词,先读三遍中德,合书自测中文→德语):
 
 中文在上,德语在下:
 
-- 复调 — Polyphonie:多声部独立进行 / selbstaendige Stimmen im Satz。
-- 主调 — Homophonie:一 melody+伴奏 / eine Melodie mit Begleitung。
-- 赋格 — Fuge:主题答题交替进入 / Thema und Antwort im Wechsel。
-- 密接 — Engfuehrung:声部紧接进入 / ueberlappende Stimmeinsaetze。
-- 织体 — Textur:声部关系总称 / Gesamtgewebe der Stimmen。
+- 复调 — Polyphonie:平权独立声部交织,赋格卡农为范 / Polyphonie ist das Geflecht gleichberechtigter, selbststaendiger Stimmen. Jede Linie singt eigene Rhythmik und Richtung. Fugen und Kanons sind ihre Muster. Mechanismus: Imitation (Subjekt, Antwort, Kontrapunkt) plus Engfuehrung verdichtet; Intervallkontrolle meidet Quintparallelen. Klausur-Tipp: Nenne gleichberechtigt plus selbststaendig; Stimmen zaehlen als Beleg.
+- 主调 — Homophonie:一旋律加和弦伴奏,上下分层 / Homophonie ordnet eine fuehrende Melodie ueber akkordischer Begleitung. Alle Begleitstimmen folgen Rhythmus und Harmonie. Lieder und Maersche leben aus ihr. Mechanismus: Melodie plus Alberti-Figuration; vertikale Akkorde statt horizontaler Linien. Klausur-Tipp: Nenne Melodie plus Begleitung; oben/unten als Bild.
+- 呈示与对题 — Subjekt und Kontrapunkt:赋格主题与其对声,五度答,数进入次数 / Das Subjekt ist das Fugen-Thema, der Kontrapunkt seine Gegenstimme. Antwort auf der Quinte, Engfuehrung als Ueberlappung. Wer Subjekt hoert, zaehlt Einsaetze. Mechanismus: Quinttransposition f mal 1,498; Dux/Comes-Paar stabilisiert Tonart. Klausur-Tipp: Nenne Thema plus Quinte; Einsatz zaehlen als Beleg.
+- 紧接段 — Engführung:呈示叠压密铺,推高潮收尾 / Die Engfuehrung schichtet Subjekteinsätze uebereinander vor dem Schluss. Sie steigert Dichte und Spannung. Bach schliesst fast jede Fuge so. Mechanismus: Verkuerzter Einsatzabstand ueberlagert Wellen; kognitive Last steigt messbar. Klausur-Tipp: Nenne Ueberlappung plus Steigerung; Schluss als Ort.
+- 持续音 — Orgelpunkt:低音长 hold 托住变和声,憋住再放 / Der Orgelpunkt haelt einen Basston unter wechselnden Harmonien. Er bremst und spannt zugleich. Wachet auf steht auf ihm. Mechanismus: Statik gegen Bewegung erzeugt Erwartung; Aufloesung entlaedt sie. Klausur-Tipp: Nenne liegender Bass plus Spannung; Pedal als Wort.
 
-`Klausur-Satz: Die fuenf Begriffe tragen Diagnose, Sandkasten und Urteil als gemeinsame Sprache.`
+`Klausur-Satz: 复调织平等、主调分上下,两定义撑起判断。`
 
 ## Schritt 3 — entdecken: 生理/音乐机制传导
 
 ENTDECKEN(1概念 + 1文字图解,中文在上、德语在下):
 
-中文:复调听独立,主调听主次:赋格追主题谁先进谁答,密接听重叠,主调听和声节奏托 melody。
+中文:呈示亮相、五度作答、对题穿插、紧接加密、持续音刹车收尾。声部1-2-3-4数出曲式,主调反其道一主众从。
 
-Mechanismus (DE): Polyphonie hoert Selbststaendigkeit, Homophonie hoert Rangordnung; die Fuge verfolgt Thema und Antwort bis zur Engfuehrung.
+Mechanismus (DE): Subjekt stellt vor, Antwort antwortet auf der Quinte, Kontrapunkt webt dazwischen, Engfuehrung verdichtet, Orgelpunkt bremst zum Schluss. Die Stimmenzahl waechst 1-2-3-4 und verrät Form. Homophonie kehrt das um: Eine fuehrt, Rest folgt.
+
+$$
+f_{Antwort} = f_{Subjekt} \cdot 2^{7/12} \approx 1{,}498\,f_{Subjekt} \quad (\text{Quinte})
+$$
 
 战役传导:本关承接冲量角逐、乳酸阈值与主导动机三幕,测得出才能说得清,说得清才能赢下来。
 
 ```diagram
-Kampagne [Impuls -> Schwelle -> Leitmotiv]
-Holphase [sichern] -> Pruefphase [3 Stimmen, Engfuehrung Abstand 2 Takte, Thema 8 Toene] -> Zielphase [nutzen]
+Subjekt [1 Stimme] -> Antwort [Quinte 1,498] -> Engfuehrung [4 Stimmen] -> Orgelpunkt [Schluss]
 Regel: Fehler frueh = Grenze | Fehler spaet = Ausnutzung
 ```
 
-`Klausur-Satz: Der Mechanismus trennt Grenze von Ausnutzung und ordnet jeden Fehler seiner Phase zu.`
+`Klausur-Satz: 亮相作答加密刹车,链条搭赋格。`
 
 ## Anekdote & Fun-Fact
 
-**Anekdote / Fun-Fact (DE)**: Bach schrieb das Wohltemperierte Klavier als „Lehrbuch" mit je einem Praeludium und einer Fuge durch alle 24 Tonarten — 48 Stuecke Uebungsmaterial. Die Anekdote sagt: Er habe in der Gefaengniszelle von Weimar aus Langeweile komponiert. Ob wahr oder nicht: Fugen kann man auch ohne Klavier im Kopf bauen.
+**Anekdote / Fun-Fact (DE)**: Bach bewarb sich 1723 mit der Kantate Du wahrer Gott an Leipzig und legte Fugen als Arbeitsprobe bei. Der Rat protokollierte: Er verstehe Kontrapunkt wie keiner. Seine Söhne verkauften die Manuskripte spaeter als Altpapier; Mendelssohn musste sie 1829 zurueckkaufen.
 
-**中文解读**: 巴赫《平均律》是"复调练习册"：24 个调各一首前奏曲加赋格，共 48 首。传说部分写于魏玛蹲监狱时—— confined 的人写最自由的对位。中国学生记住"48 = 24×2"，听辨题先数声部进入次数。
+**中文解读**: 巴赫1723年拿赋格当求职作品,评语是对位无人能及。儿子当废纸卖,门德尔松1829年赎回。数进入次数就是懂巴赫。
 
-**Bezug zum Konzept**: `48 Stuecke, eine Idee: Aus einem Thema ein ganzes Gespraech bauen.`
+**Bezug zum Konzept**: `Kontrapunkt war Bewerbung, nicht Dekoration; Einsaetze zaehlen heisst Bach verstehen.`
 
-## Schritt 4 — ausprobieren: 沙盘决战 3 Stimmen
+## Schritt 4 — ausprobieren: 沙盘决战
 
 BEISPIEL(含教具操作与解答):
 
-[Werkzeug: formula]
+[Werkzeug: oral-timer]
 
-AUFGABE (analysieren, AFB II):Satzformel Stimmen plus Einsatz: zaehle 3 Stimmen mit Engfuehrung Abstand 2 Takte;达标线:3 Stimmen, Engfuehrung Abstand 2 Takte, Thema 8 Toene。
+AUFGABE (analysieren, AFB II):90秒口述:数三声部进入,验五度,指持续音,达标。达标线:3 Stimmen, Quinte 1,498, Orgelpunkt 4 Takte, 90 s Rede。
 
-Target数值目标:3 Stimmen, Engfuehrung Abstand 2 Takte, Thema 8 Toene。
+Target数值目标:3 Stimmen, Quinte 1,498, Orgelpunkt 4 Takte, 90 s Rede。
 
 HILFE:
-1. 定相命名:先说相位与错误画像,对照目标3 Stimmen。
-2. 读数释义:读出测量值,用一个术语解释效应。
-3. 推纠正:从机制推出一条可操作纠正。
+1. 数进入带小节。
+2. 算五度1,498。
+3. 点名紧接或持续音。
 
-MUSTERLÖSUNG:对照目标(3 Stimmen, Engfuehrung Abstand 2 Takte, Thema 8 Toene),先定相命名错误画像,再读数并以术语释效应,最后从机制推纠正;在Koethener Bach-Saal, Fuge c-Moll (WK I)中形成 保障—转化—兑现 的完整因果链,达标即过关。
+MUSTERLÖSUNG:三进入搭三声部,五度1,498验赋格,四小节持续音收尾即达标。
 
-`Klausur-Satz: Am Target zeigt sich, ob Grenze oder Ausnutzung ueber das Ergebnis entschied.`
+`Klausur-Satz: 目标三声部加1,498证明:数赢响。`
 
-## Schritt 5 — ausprobieren: VERGLEICH技术对抗 Stimmen-Weg vs Textur-Weg
+## Schritt 5 — ausprobieren: VERGLEICH技术对抗 Stimmenzaehlen (horizontal: wer setzt wann ein?) vs Klanghoeren (vertikal: voll oder Melodie plus Rest?)
 
 VERGLEICH辨别实验(双向辨析,先选程序再解题):【选程序】
 
-VERGLEICH:先选程序—— (i) Stimmen-Weg 还是 (ii) Textur-Weg ——再解题。WegA讲上限/结构,WegB讲兑现/情境。【选程序:问上限与结构选(i),问兑现与情境选(ii)。口述先说 Ich waehle Verfahren (i)/(ii), weil …】
+VERGLEICH:先选程序—— (i) Stimmenzaehlen (horizontal: wer setzt wann ein?) 还是 (ii) Klanghoeren (vertikal: voll oder Melodie plus Rest?) ——再解题。【选程序:问上限与结构选(i),问兑现与情境选(ii)。口述先说 Ich waehle Verfahren (i)/(ii), weil …】
 
-AUFGABE A (Stimmen-Weg):在Koethener Bach-Saal, Fuge c-Moll (WK I)的首个案例中选哪条路,如何论证?
+AUFGABE A:案例A(赋格呈示)选哪条?
 
-AUFGABE B (Textur-Weg):在对立案例中选哪条路,如何论证?
+AUFGABE B:案例B(歌曲织体)选哪条?
 
-HILFE:A问上限属于程序(i);B问兑现属于程序(ii)。先说选哪条路,再给测量/情境证据。
+HILFE:A braucht Einsaetze, also horizontal. B braucht Schichtung, also vertikal.
 
-ANTWORT:A走程序(i)Stimmen-Weg,以测量值与机制论证上限;B走程序(ii)Textur-Weg,以情境与位置论证兑现。德语口述句收束。
+ANTWORT:A走横向数进入;B走纵向听分层。
 
-`Klausur-Satz: Verfahren (i) setzt die Grenze, Verfahren (ii) nutzt die Lage; die Wahl traegt das Urteil.`
+`Klausur-Satz: 横数还是纵听,织体定路线。`
 
-## Schritt 6 — check: Selbsttest zu Polyphonie und Homophonie bei Bach
+## Schritt 6 — check: Selbsttest
 
 CHECK检索默写(自测3题,与答案配对):
 
-FRAGE:如何在赛事中认出本课核心? | ANTWORT:看数值目标(3 Stimmen)与S3机制。
-FRAGE:如何达标? | ANTWORT:测量、术语释义、从机制推纠正三步。
-FRAGE:何时选程序(i)而非(ii)? | ANTWORT:问上限选(i),问兑现选(ii)。
+- FRAGE:何以断赋格? | ANTWORT:呈示加五度答加进入数,1,498为证。
+- FRAGE:何以断主调? | ANTWORT:一旋律加齐步和弦,无呈示。
+- FRAGE:何时数而非听? | ANTWORT:开头数进入,判织体听分层。
 
-`Klausur-Satz: Selbsttest bestanden heisst Target lesen, Verfahren waehlen und Urteil begruenden.`
+`Klausur-Satz: 易错是以响代主、以人代线。`
 
 ## Fehlvorstellung
 
-(非Schritt小节，Parser 自动识别，不计入步骤步数)
+(非Schritt小节，Parser 自动识别，不计入入步数)
 
-1. 误解"声部多、声音厚就是复调"。
-   中文纠偏：主调合唱也可以八个声部，照样是主调。判据是独立性不是数量：伴奏声部随时可换，复调声部缺一不可。
-   Korrektur-Satz: `Viele Stimmen bedeuten noch keine Polyphonie, nur selbstaendige Linien tun es.`
+1. 误解“响的就是主。”。
+   中文纠偏：赋格里带主题的常是安静中声部。数进入不比响。
+   Korrektur-Satz: `Subjekt statt Pegel; Zaehlen schlaegt Laerm.`
+2. 误解“四声部就是四个人。”。
+   中文纠偏：声部是线不是人,钢琴独奏四线。
+   Korrektur-Satz: `Stimme ist Linie; Klavier belegt es.`
 
-2. 误解"赋格和卡农是一回事，都是轮流唱"。
-   中文纠偏：卡农全程亦步亦趋，赋格只有呈示部轮答，之后有插部、对题、密接等自由发展。把赋格写成卡农会被判体裁错误。
-   Korrektur-Satz: `Kanon wiederholt durchgehend, Fuge antwortet nur zu Beginn und entwickelt dann.`
+## Schritt 7 — szenario: Klausurtransfer — Kantor Thomaskirche
+中文:你是Kantor Thomaskirche,在Hamburger Hauptkirche St. Michaelis, Air-Suite (3 Stimmen, 60 BPM)中必须用德语连贯口述(约90秒)诊断、措施与数值目标(3 Stimmen, Quinte 1,498, Orgelpunkt 4 Takte, 90 s Rede),并以术语举证。
+ROLLE: Du bist Kantor Thomaskirche. SITUATION: 在米歇尔教堂用德语90秒陈述进入、五度与目标(三声部)。
+RUBRIC (30 XP):诊断术语8分 | 措施与目标举证7分 | 程序选择对比7分 | 德语表达5分。
 
-## Schritt 7 — szenario: Klausurtransfer: Polyphonie und Homophonie bei Bach — Kantor in Koethen
-中文:你是Kantor in Koethen,在Koethener Bach-Saal, Fuge c-Moll (WK I)中必须用德语连贯口述(约90秒)诊断、措施与数值目标(3 Stimmen, Engfuehrung Abstand 2 Takte, Thema 8 Toene),并以术语举证。
-ROLLE: Du bist Kantor in Koethen. SITUATION: In Koethener Bach-Saal, Fuge c-Moll (WK I) stellst du Diagnose, Massnahme und Target (3 Stimmen, Engfuehrung Abstand 2 Takte, Thema 8 Toene) in ca. 90 Sekunden vor.
-RUBRIC (30 XP):诊断术语8分 | 措施与目标举证10分 | 程序选择对比7分 | 德语表达5分。
+`Klausur-Satz: 满分句:赋格感因四进入加五度答1,498加密;小节清单锁定满分。`
 
 ## Schritt 8 — reflexion: Takeaway & Reflexion — 奖杯还是进站检修
 
 TAKEAWAY 1盒(核心总结):
 
-中文:上限早锁定、位置晚兑现;数值目标(3 Stimmen, Engfuehrung Abstand 2 Takte, Thema 8 Toene)是裁判,程序选择是辩护;本关连着冲量角逐、体能极限与主导动机三幕,测得出、说得清、赢下来。
+中文:数线不数响:呈示亮相、五度作答、紧接收尾。
 Takeaway-Satz: `Wer die Grenze sichert und die Lage nutzt, holt den Pokal.`
+
+`Klausur-Satz: 元认知:对位是谈话秩序,会数线就懂交织。`
 
 REFLEXION 2问:
 1. 过程自省:沙盘精度(Schritt 4)与程序选择(Schritt 5)哪一步更难?

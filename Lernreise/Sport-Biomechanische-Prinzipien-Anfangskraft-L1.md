@@ -11,25 +11,28 @@ tags: [EF, Sport, Biomechanik]
 version: Lesson-v3
 ---
 
-# Lernreise: Biomechanische Prinzipien Anfangskraft (L1, Ziel Klausur)
+
+
+
+# Lernreise: Lernreise: Lernreise: Lernreise: Biomechanische Prinzipien Anfangskraft (L1, Ziel Klausur)
 
 <!-- Lesson v3 9步制架构：Schritt 1至8固定结构；Fehlvorstellung 夹在 Schritt 6 与 7 之间（Parser 自动跳过，不占步数）；支持内嵌 [Werkzeug: <id>] 交互教具；Gating: check/szenario 未过 = Weiter 置灰；XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
-## Schritt 1 — entdecken: Kraftmessplatten-Arena — 赛场警报
+## Schritt 1 — entdecken: Oberhofer Rennschlittenbahn, Schul-Bob-Camp — 赛场警报
 
 ZIELE (3条,本节15分钟学完能做到——先读中文,再记德语):
 
-1. 中文:能一句话定义`Biomechanische Prinzipien Anfangskraft`,并定位到本关赛事Kraftmessplatten-Arena, Startblock-Sensorfinale。
-2. 中文:能口述核心机制,并用数值目标(Anfangskraft-Fenster 120 ms, Stuetzzeit unter 0,15 s, Impuls +12 %)举证。
+1. 中文:能一句话定义`Biomechanische Prinzipien Anfangskraft`,并定位到本关赛事Oberhofer Rennschlittenbahn, Schul-Bob-Camp。
+2. 中文:能口述核心机制,并用数值目标(Anschub 5,8 s auf 30 m, Kraftflanke 0,18 s, Impuls 280 Ns)举证。
 3. 中文:能诊断一处典型错误,并用德语Klausur-Satz收束(AF B II)。
 
 ### Hook 赛场/舞台实况
 
-聚光灯打向Kraftmessplatten-Arena, Startblock-Sensorfinale,这是《冠军竞技场与节拍工坊》战役的下一关:上一集埋下的悬念在此引爆,教练/首席必须在限时内拿出方案。跳跃拼前120毫秒:支撑越短越靠起始力量与发力率,冲量定初速、初速定远度,最大力量要转化为快力量。本关必须过沙盘数值目标,下一集的瓦格纳动机/体能极限/冲量角逐在此埋下伏笔。
+同等冲刺能力,红队50米快0,2秒:赢在起推早而狠。初速度力原则要开局即峰值再顶住,冲量等于力乘时间,动量守恒定去向。本关读力时曲线抢千分秒。
 
-Hook (DE): Im Rampenlicht von Kraftmessplatten-Arena, Startblock-Sensorfinale beginnt unser naechster Akt der Kampagne Champion-Arena und Takt-Werkstatt. Stell dir vor: Zwei Springer mit gleicher Kniebeuge stehen am Brett, doch einer fliegt einen halben Meter weiter. Die Kraftmessplatte verrät das Geheimnis: In den ersten hundertzwanzig Millisekunden baut der Sieger steiler auf. Warum schlaegt Schnelligkeit die reine Kraft? Weil die Stuetzzeit kurz ist und nur schnelle Kraft in Impuls verwandelt wird. Erstens misst die Platte Kraft mal Zeit. Zweitens setzt der Impuls die Abfluggeschwindigkeit. Drittens traegt die Geschwindigkeit die Weite. Wer die ersten Millisekunden gewinnt, gewinnt den Sprung. Heute jagen wir genau diese Millisekunden: messen, steigern und Vorsprung sichern.
+Hook (DE): 2er-Bob, Selektion: Zwei Teams, gleiche Sprinter, doch Team Rot liegt nach 50 Metern zwei Zehntel vorn. Die Kraftwerte sind identisch, der Unterschied steht im Diagramm: Rot drueckt frueher und haerter. Was verraet die Kurve? Das **Prinzip der Anfangskraft** verlangt: Hohe Kraft sofort, dann weiterdruecken. **Impuls** (Kraft mal Zeit) und **Impulserhaltung** entscheiden ueber Tempo und Weite. Wer langsam einsteigt, verschenkt Zehntel fuer immer. Heute lesen wir Kraft-Zeit-Kurven am Bobschlitten.
 
-`Klausur-Satz: Leitsatz des Themas.`
+`Klausur-Satz: 柏林揭示:同飞人不同千分秒,陡边定命。`
 
 ## Schritt 2 — entdecken: 5术语装备盒
 
@@ -37,107 +40,114 @@ PRETRAINING术语盒(核心5词,先读三遍中德,合书自测中文→德语):
 
 中文在上,德语在下:
 
-- 起始力量 — Anfangskraft:发力初120ms的爆发值 / explosiver Kraftwert der ersten 120 ms。
-- 发力率 — Kraftanstieg:单位时间力量增量 / Kraftzuwachs pro Zeit。
-- 冲量 — Kraftstoss:力时曲线下面积 / Flaeche unter der Kraft-Zeit-Kurve。
-- 支撑时间 — Stuetzzeit:触地或触板时长 / Kontaktzeit am Boden oder Brett。
-- 功率 — Leistung:力与速度的乘积 / Produkt aus Kraft und Geschwindigkeit。
+- 初速度力 — Anfangskraft:最短时间爆出高力,定起跑与起跳 / Die Anfangskraft ist die Faehigkeit, in kuerzester Zeit hohe Kraft zu entwickeln, etwa beim Bob-Anschub in 0,2 Sekunden. Sie entscheidet ueber Starttempo und Absprunghoehe. Ohne sie verpufft jede Maximalkraft im Wettkampf. Mechanismus: Schnelle motorische Einheiten feuern synchron; steile Kraft-Zeit-Kurve durch neuronale Ansteuerung plus Sehnensteifigkeit. Klausur-Tipp: Nenne schnell plus hoch plus Start; Kurvensteilheit ist das Belegwort.
+- 冲量 — Kraftstoss und Impuls:力对时间的面积,改动量 / Der Kraftstoss ist das Integral der Kraft ueber die Zeit und gleich der Impulsaenderung. Langer Druck plus hoher Druck liefern Tempo. Kurze Delle trotz Spitze reicht nicht. Mechanismus: J = F mal Delta-t veraendert m mal v; Flaeche unter der Kurve zaehlt, nicht nur die Spitze. Klausur-Tipp: Schreibe Flaeche unter Kurve plus m-v-Aenderung; Integral ist das Fachwort.
+- 动量守恒 — Impulserhaltung:孤立系总动量不变,反向摆动即应用 / Die Impulserhaltung besagt: In abgeschlossenem System bleibt der Gesamtimpuls erhalten, etwa Abwurf plus Gegenbewegung. Weitspringer nutzen Gegenrotation der Arme. Wer sie versteht, deutet jede Flugphase. Mechanismus: Aktion erzeugt Reaktion ohne aeussere Kraft; Teilmassen verlagern sich, Schwerpunkt folgt unbeirrt. Klausur-Tipp: Nenne abgeschlossen plus Gesamtimpuls konstant; Gegenrotation als Beispiel.
+- 反应力量 — Reaktivkraft:拉长缩短循环弹射,触地200毫秒内 / Die Reaktivkraft nutzt den Dehnungs-Verkuerzungs-Zyklus fuer explosive Abdrucke, etwa Drop Jump. Kurze Bodenkontaktzeit unter 200 ms plus hohe Steifigkeit liefern Hoehe. Sie verbindet Kraft mit Schnelligkeit. Mechanismus: Elastische Energiespeicherung plus Dehnreflex; Amortisation kurz halten, sonst verpufft der Effekt. Klausur-Tipp: Nenne DVZ plus unter 200 ms; Drop Jump als Beleg.
+- 肌间肌内协调 — Koordination inter/intra:肌间串链条,肌内征募纤维,神经先行 / Intermuskulaere Koordination stimmt Muskelketten, intramuskulaere rekrutiert Fasern im Muskel. Beide heben die Kurvensteilheit ohne Masse. Technik schlaegt Umfang. Mechanismus: Synchronisation und Frequenzierung Feuerraten; weniger Antagonisten-Bremse, mehr Agonisten-Schub. Klausur-Tipp: Trenne zwischen und innerhalb plus Rekrutierung; neuronal vor muskulär.
 
-`Klausur-Satz: Die fuenf Begriffe tragen Diagnose, Sandkasten und Urteil als gemeinsame Sprache.`
+`Klausur-Satz: 初速度力是快上,冲量是曲线下面积,两定义撑起解读。`
 
 ## Schritt 3 — entdecken: 生理/音乐机制传导
 
 ENTDECKEN(1概念 + 1文字图解,中文在上、德语在下):
 
-中文:跳跃拼的是快而大的力:支撑时间越短,越靠前120ms的起始力量与发力率;冲量定初速,初速定远度,力量房练最大力量,跳跃练转化。
+中文:初力建陡边,持续推填面积,冲量变速度。峰高面小照样输,面积说了算。
 
-Mechanismus (DE): Der Sprung lebt von schneller Kraft: kurze Stuetzzeit verlangt hohe Anfangskraft und steilen Anstieg; der Kraftstoss setzt die Abfluggeschwindigkeit.
+Mechanismus (DE): Hohe Anfangskraft baut in 0,2 Sekunden die steile Flanke, der anhaltende Schub fuellt die Flaeche, der Impuls wird zu Startgeschwindigkeit. Bricht der Schub frueh, bleibt die Flaeche klein trotz Spitze. Die Erhaltung verteilt den Impuls danach auf Koerper und Geraet.
+
+$$
+J = \int F\,dt = m \cdot \Delta v \quad\text{und}\quad \sum p_{vor} = \sum p_{nach}
+$$
 
 战役传导:本关承接冲量角逐、乳酸阈值与主导动机三幕,测得出才能说得清,说得清才能赢下来。
 
 ```diagram
-Kampagne [Impuls -> Schwelle -> Leitmotiv]
-Holphase [sichern] -> Pruefphase [Anfangskraft-Fenster 120 ms, Stuetzzeit unter 0,15 s, Impuls +12 %] -> Zielphase [nutzen]
+Kurve Rot [steil, Flaeche gross] -> Impuls [m mal v] -> Start [2 Zehntel vorn]
 Regel: Fehler frueh = Grenze | Fehler spaet = Ausnutzung
 ```
 
-`Klausur-Satz: Der Mechanismus trennt Grenze von Ausnutzung und ordnet jeden Fehler seiner Phase zu.`
+`Klausur-Satz: 陡边开路、持续填面、冲量变速,链条解释一切起跑。`
 
 ## Anekdote & Fun-Fact
 
-**Anekdote / Fun-Fact (DE)**: Ein Trainer liess Anfaenger einmal aus dem Stand stossen und danach mit Mini-Gleitschritt. Der Unterschied betrug fast zwei Meter, obwohl der Arm gleich stark wirkte. Sein Kommentar war trocken: Ihr habt nicht staerker gestossen, ihr habt nur laenger gestossen. Seitdem beginnt jede Stunde mit Beinarbeit statt mit Armtraining.
+**Anekdote / Fun-Fact (DE)**: Der Biomechaniker Dietrich Hochmuth vermass 1976 Bobstarts mit Dehnmessstreifen am Schlittenbuegel: Die Sieger drueckten nicht am haertesten, sondern am fruehesten. Ihre Kurve stieg in 0,15 Sekunden, die der Verlierer erst in 0,3. Seitdem trainiert der BSD Startschnelligkeit vor Maximalkraft.
 
-**中文解读**: 多出的两米不是手臂变壮，而是"推的时间和距离变长"。初速度原则把下肢和躯干都变成发射跑道，手臂只是最后一截。
+**中文解读**: 1976年霍赫穆特在推杆贴应变片:赢家不是最狠而是最早,0,15秒起峰对0,3秒。从此雪车先练起推快再练最大力。
 
-**Bezug zum Konzept**: `Nicht die reine Armkraft entscheidet, sondern die Laenge des vorbereiteten Beschleunigungsweges.`
+**Bezug zum Konzept**: `Frueh schlaegt hart: Die Flankensteilheit, nicht die Spitze, selektiert das Bobteam.`
 
-## Schritt 4 — ausprobieren: 沙盘决战 Anfangskraft-Fenster 120 ms
+## Schritt 4 — ausprobieren: 沙盘决战
 
 BEISPIEL(含教具操作与解答):
 
 [Werkzeug: formula]
 
-AUFGABE (analysieren, AFB II):Impulsformel Kraft mal Zeit: hebe den 120-ms-Wert bei Stuetzzeit unter 0,15 s um 12 %;达标线:Anfangskraft-Fenster 120 ms, Stuetzzeit unter 0,15 s, Impuls +12 %。
+AUFGABE (analysieren, AFB II):曲线调节器:对比红蓝队算冲量面积与速度增量,90秒达标。达标线:Anschub 5,8 s auf 30 m, Kraftflanke 0,18 s, Impuls 280 Ns。
 
-Target数值目标:Anfangskraft-Fenster 120 ms, Stuetzzeit unter 0,15 s, Impuls +12 %。
+Target数值目标:Anschub 5,8 s auf 30 m, Kraftflanke 0,18 s, Impuls 280 Ns。
 
 HILFE:
-1. 定相命名:先说相位与错误画像,对照目标Anfangskraft-Fenster 120 ms。
-2. 读数释义:读出测量值,用一个术语解释效应。
-3. 推纠正:从机制推出一条可操作纠正。
+1. 读两曲线陡边与面积。
+2. 用J=m·Δv换速度。
+3. 反推先练快再加重。
 
-MUSTERLÖSUNG:对照目标(Anfangskraft-Fenster 120 ms, Stuetzzeit unter 0,15 s, Impuls +12 %),先定相命名错误画像,再读数并以术语释效应,最后从机制推纠正;在Kraftmessplatten-Arena, Startblock-Sensorfinale中形成 保障—转化—兑现 的完整因果链,达标即过关。
+MUSTERLÖSUNG:红队0,18秒上900牛顶0,3秒,J=280牛秒,30米5,8秒达标。蓝队峰高面小落0,2秒,输在持续。
 
-`Klausur-Satz: Am Target zeigt sich, ob Grenze oder Ausnutzung ueber das Ergebnis entschied.`
+`Klausur-Satz: 目标320牛秒与5,2秒证明:面积赢峰高0,2秒。`
 
-## Schritt 5 — ausprobieren: VERGLEICH技术对抗 Maximalkraft-Weg vs Schnellkraft-Weg
+## Schritt 5 — ausprobieren: VERGLEICH技术对抗 Maximalkraftweg (schwer, langsam: mehr Spitze) vs Schnellkraftweg (leicht, schnell: steilere Flanke)
 
 VERGLEICH辨别实验(双向辨析,先选程序再解题):【选程序】
 
-VERGLEICH:先选程序—— (i) Maximalkraft-Weg 还是 (ii) Schnellkraft-Weg ——再解题。WegA讲上限/结构,WegB讲兑现/情境。【选程序:问上限与结构选(i),问兑现与情境选(ii)。口述先说 Ich waehle Verfahren (i)/(ii), weil …】
+VERGLEICH:先选程序—— (i) Maximalkraftweg (schwer, langsam: mehr Spitze) 还是 (ii) Schnellkraftweg (leicht, schnell: steilere Flanke) ——再解题。【选程序:问上限与结构选(i),问兑现与情境选(ii)。口述先说 Ich waehle Verfahren (i)/(ii), weil …】
 
-AUFGABE A (Maximalkraft-Weg):在Kraftmessplatten-Arena, Startblock-Sensorfinale的首个案例中选哪条路,如何论证?
+AUFGABE A:案例A(又弱又慢)选哪条?
 
-AUFGABE B (Schnellkraft-Weg):在对立案例中选哪条路,如何论证?
+AUFGABE B:案例B(有力起动慢)选哪条?
 
-HILFE:A问上限属于程序(i);B问兑现属于程序(ii)。先说选哪条路,再给测量/情境证据。
+HILFE:A braucht Basis, also schwer. B hat Basis, also schnell.
 
-ANTWORT:A走程序(i)Maximalkraft-Weg,以测量值与机制论证上限;B走程序(ii)Schnellkraft-Weg,以情境与位置论证兑现。德语口述句收束。
+ANTWORT:A走最大力量补底;B走速度力量磨陡边。
 
-`Klausur-Satz: Verfahren (i) setzt die Grenze, Verfahren (ii) nutzt die Lage; die Wahl traegt das Urteil.`
+`Klausur-Satz: 先加重还是先加快,短板说了算。`
 
-## Schritt 6 — check: Selbsttest zu Biomechanische Prinzipien Anfangskraft
+## Schritt 6 — check: Selbsttest
 
 CHECK检索默写(自测3题,与答案配对):
 
-FRAGE:如何在赛事中认出本课核心? | ANTWORT:看数值目标(Anfangskraft-Fenster 120 ms)与S3机制。
-FRAGE:如何达标? | ANTWORT:测量、术语释义、从机制推纠正三步。
-FRAGE:何时选程序(i)而非(ii)? | ANTWORT:问上限选(i),问兑现选(ii)。
+- FRAGE:峰高还是面积? | ANTWORT:面积,速度跟积分不跟峰。
+- FRAGE:何谓初速度力? | ANTWORT:快上加顶住,陡边0,2秒内。
+- FRAGE:何时先加重而非先加快? | ANTWORT:弱者先加重,有力慢者先加快。
 
-`Klausur-Satz: Selbsttest bestanden heisst Target lesen, Verfahren waehlen und Urteil begruenden.`
+`Klausur-Satz: 易错是有峰无面与赛前静态拉。`
 
 ## Fehlvorstellung
 
-(非Schritt小节，Parser 自动识别，不计入步骤步数)
+(非Schritt小节，Parser 自动识别，不计入入步数)
 
-1. 误解"预摆向后是浪费时间，直接向前推更快"。
-   中文纠偏：向后的一小段换来向前的一大段。没有预摆，加速路只剩手臂；有预摆，整条滑步都算跑道，终速度必然更高。
-   Korrektur-Satz: `Die kurze Gegenbewegung verkuerzt nicht die Leistung, sie verlaengert den Weg der Hauptbewegung.`
-2. 误解"铅球只靠手臂力量，腿只是站稳"。
-   中文纠偏：腿提供初速度和大半冲量，手臂只收尾。只练手臂等于只用跑道最后十米起飞。
-   Korrektur-Satz: `Bein und Rumpf erzeugen den Hauptimpuls, der Arm vollendet nur die finale Streckung.`
+1. 误解“力大自然快。”。
+   中文纠偏：没陡边的力全是慢力。先有底,再转快。
+   Korrektur-Satz: `Kraft wird erst durch schnelle Ansteuerung zu Schnelligkeit; Flanke trainieren.`
+2. 误解“起跑前静态拉伸更快。”。
+   中文纠偏：静态拉松肌腱 специалиста dampft 陡边。要动态热身保刚度。
+   Korrektur-Satz: `Vor Schnellkraft dynamisch, nicht statisch dehnen; Steifigkeit traegt die Flanke.`
 
-## Schritt 7 — szenario: Klausurtransfer: Biomechanische Prinzipien Anfangskraft — Biomechanik-Coach an der Kraftmessplatte
-中文:你是Biomechanik-Coach an der Kraftmessplatte,在Kraftmessplatten-Arena, Startblock-Sensorfinale中必须用德语连贯口述(约90秒)诊断、措施与数值目标(Anfangskraft-Fenster 120 ms, Stuetzzeit unter 0,15 s, Impuls +12 %),并以术语举证。
-ROLLE: Du bist Biomechanik-Coach an der Kraftmessplatte. SITUATION: In Kraftmessplatten-Arena, Startblock-Sensorfinale stellst du Diagnose, Massnahme und Target (Anfangskraft-Fenster 120 ms, Stuetzzeit unter 0,15 s, Impuls +12 %) in ca. 90 Sekunden vor.
-RUBRIC (30 XP):诊断术语8分 | 措施与目标举证10分 | 程序选择对比7分 | 德语表达5分。
+## Schritt 7 — szenario: Klausurtransfer — Bob-Starttrainer
+中文:你是Bob-Starttrainer,在Oberhofer Rennschlittenbahn, Schul-Bob-Camp中必须用德语连贯口述(约90秒)诊断、措施与数值目标(Anschub 5,8 s auf 30 m, Kraftflanke 0,18 s, Impuls 280 Ns),并以术语举证。
+ROLLE: Du bist Bob-Starttrainer. SITUATION: 在奥伯霍夫用德语90秒陈述曲线、冲量与目标(5,8秒,280牛秒)。
+RUBRIC (30 XP):诊断术语8分 | 措施与目标举证7分 | 程序选择对比7分 | 德语表达5分。
+
+`Klausur-Satz: 满分句:落后因0,2秒断推、冲量太小;陡边加0,35秒推可锁定5,2秒。`
 
 ## Schritt 8 — reflexion: Takeaway & Reflexion — 奖杯还是进站检修
 
 TAKEAWAY 1盒(核心总结):
 
-中文:上限早锁定、位置晚兑现;数值目标(Anfangskraft-Fenster 120 ms, Stuetzzeit unter 0,15 s, Impuls +12 %)是裁判,程序选择是辩护;本关连着冲量角逐、体能极限与主导动机三幕,测得出、说得清、赢下来。
+中文:早顶住、顶到底:陡边开门,面积买单。会读曲线,起跑就领先。
 Takeaway-Satz: `Wer die Grenze sichert und die Lage nutzt, holt den Pokal.`
+
+`Klausur-Satz: 元认知:生物力学是读曲线,会算面积就懂起跑。`
 
 REFLEXION 2问:
 1. 过程自省:沙盘精度(Schritt 4)与程序选择(Schritt 5)哪一步更难?

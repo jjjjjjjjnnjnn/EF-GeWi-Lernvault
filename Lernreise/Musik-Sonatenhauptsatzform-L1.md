@@ -11,25 +11,28 @@ tags: [EF, Musik, Formanalyse]
 version: Lesson-v3
 ---
 
-# Lernreise: Sonatenhauptsatzform hoeren (L1, Ziel Muendlich)
+
+
+
+# Lernreise: Lernreise: Lernreise: Lernreise: Sonatenhauptsatzform hoeren (L1, Ziel Muendlich)
 
 <!-- Lesson v3 9步制架构：Schritt 1至8固定结构；Fehlvorstellung 夹在 Schritt 6 与 7 之间（Parser 自动跳过，不占步数）；支持内嵌 [Werkzeug: <id>] 交互教具；Gating: check/szenario 未过 = Weiter 置灰；XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
-## Schritt 1 — entdecken: Prager Ständetheater — 赛场警报
+## Schritt 1 — entdecken: Weimarer Stadtschloss, Mondschein 1. Satz (cis-Moll, 54 BPM) — 赛场警报
 
 ZIELE (3条,本节15分钟学完能做到——先读中文,再记德语):
 
-1. 中文:能一句话定义`Sonatenhauptsatzform hoeren: Exposition, Durchfuehrung, Reprise`,并定位到本关赛事Prager Ständetheater, Mozart g-Moll Sinfonie Nr.40 (Kopfsatz)。
-2. 中文:能口述核心机制,并用数值目标(Hauptsatz g-Moll, Seitensatz B-Dur, 2 Themen im Kontrast)举证。
+1. 中文:能一句话定义`Sonatenhauptsatzform hoeren: Exposition, Durchfuehrung, Reprise`,并定位到本关赛事Weimarer Stadtschloss, Mondschein 1. Satz (cis-Moll, 54 BPM)。
+2. 中文:能口述核心机制,并用数值目标(Mondschein cis-Moll, Expo i, Durchf 2 Quinten, Coda 8 Takte)举证。
 3. 中文:能诊断一处典型错误,并用德语Klausur-Satz收束(AF B II)。
 
 ### Hook 赛场/舞台实况
 
-聚光灯打向Prager Ständetheater, Mozart g-Moll Sinfonie Nr.40 (Kopfsatz),这是《冠军竞技场与节拍工坊》战役的下一关:上一集埋下的悬念在此引爆,教练/首席必须在限时内拿出方案。奏鸣曲式等于出走与回家:呈示部摆两主题两调性,展开部拆碎远游,再现部回家收束。本关必须过沙盘数值目标,下一集的瓦格纳动机/体能极限/冲量角逐在此埋下伏笔。
+悲怆第一乐章:c小调对降E大调,命运撞安慰,展开撕碎,再现小调和解。耳朵怎知和解是义务?调性钟说了算:呈示摆主副、展开穿远调、再现回家。本关读贝多芬的钟。
 
-Hook (DE): Im Rampenlicht von Prager Ständetheater, Mozart g-Moll Sinfonie Nr.40 (Kopfsatz) beginnt unser naechster Akt der Kampagne Champion-Arena und Takt-Werkstatt. Stell dir vor: Zwei Themen, zwei Tonarten, ein Konflikt, und nach zehn Minuten kehren beide heim in dieselbe Tonart versoehnt zurueck. Was erzaehlt Form als Drama? Der Sonatenhauptsatz als Auszug und Heimkehr. Erstens stellt die Exposition beide vor. Zweitens entfernt die Durchfuehrung alles. Drittens versoehnt die Reprise in der Tonika. Wer Tonarten verfolgt, hoert Handlung statt Muster. Heute wandern wir genau diesen Weg: aufstellen, entfernen und heimholen.
+Hook (DE): Pathétique, Esplosion: Zwei Themen prallen aufeinander, c-Moll gegen Es-Dur, Schicksal gegen Trost. Die Durchfuehrung zerreisst beide, die Reprise versoehnt sie in Moll. Woher weiss das Ohr, dass Versoehnung Pflicht ist? Aus der Tonarten-Uhr. **Exposition** stellt **Haupt- und Seitensatz** in Tonika und Dominante vor, **Durchfuehrung** moduliert durch die Ferne, **Reprise** loest in der Tonika. **Doppelstrich** und **Coda** markieren die Pflicht. Heute lesen wir diese Uhr an Beethoven.
 
-`Klausur-Satz: Leitsatz des Themas.`
+`Klausur-Satz: 波恩揭示:两调开战须一调和解。`
 
 ## Schritt 2 — entdecken: 5术语装备盒
 
@@ -37,108 +40,114 @@ PRETRAINING术语盒(核心5词,先读三遍中德,合书自测中文→德语):
 
 中文在上,德语在下:
 
-- 呈示部 — Exposition:主副题两调陈列 / Haupt- und Seitensatz in zwei Tonarten。
-- 展开部 — Durchfuehrung:动机调性远游 / motivische Reise durch ferne Tonarten。
-- 再现部 — Reprise:回归主调收束 / Rueckkehr in die Haupttonart。
-- 主部主题 — Hauptsatz:主调第一主题 / erstes Thema in der Tonika。
-- 副部主题 — Seitensatz:属/关系调第二主题 / zweites Thema in Dominante oder Mediannte。
+- 呈示部 — Exposition:摆主副两主题两调,反复记号令对比 / Die Exposition stellt Haupt- und Seitensatz in Tonika und Kontrasttonart vor (Moll: Tonika-Mediante). Doppelstrich mit Wiederholung befiehlt Vergleich. Ohne sie keine Reprise. Mechanismus: Kadenz plus Tonartenplan praegen Gedächtnis; Kontrast erzeugt Erwartung. Klausur-Tipp: Nenne zwei Themen plus zwei Tonarten; Doppelstrich als Zeichen.
+- 主副部 — Haupt- und Seitensatz:主部主调硬朗、副部对比调抒情,对立即戏剧 / Hauptsatz in Tonika (maennlich, markant), Seitensatz in Kontrasttonart (weiblich, lyrisch). Dualismus treibt Drama. Pathétique lebt aus ihm. Mechanismus: Charakter plus Tonart codieren Konflikt; Bruecke moduliert. Klausur-Tipp: Nenne Charakter plus Tonart je Satz; Dualismus als Wort.
+- 展开部 — Durchführung:拆呈示穿远调,越远越想家 / Die Durchfuehrung zerlegt und moduliert Expositions-Material durch ferne Tonarten. Sie maximiert Ferne und Rueckkehrzwang. Laenge verrät Gewicht. Mechanismus: Sequenz plus Modulation erzeugen Distanz; Dominantorgelpunkt ruft zurueck. Klausur-Tipp: Nenne ferne Tonarten plus Verfahren; Ferne als Mass.
+- 再现部 — Reprise:两主题回主调和解,义务非选项 / Die Reprise bringt beide Saetze in der Tonika und loest den Konflikt. Versoehnung ist Pflicht, nicht Wahl. Coda bestaetigt sie. Mechanismus: Transposition des Seitensatzes in Tonika; Kadenz schliesst. Klausur-Tipp: Nenne beide in Tonika plus Pflicht; Versoehnung als Bild.
+- 尾声 — Coda:再现后加盖,终止连击钉死 / Die Coda bestaetigt den Schluss nach der Reprise mit Kadenzfeuer. Sie stemmt das Dach aufs Haus. Pathétique donnert so. Mechanismus: Pendelkadenz plus Steigerung; Schlussbekraeftigung. Klausur-Tipp: Nenne nach Reprise plus Bestaetigung; Dach als Bild.
 
-`Klausur-Satz: Die fuenf Begriffe tragen Diagnose, Sandkasten und Urteil als gemeinsame Sprache.`
+`Klausur-Satz: 呈示摆出再现收回,两定义撑起曲式。`
 
 ## Schritt 3 — entdecken: 生理/音乐机制传导
 
 ENTDECKEN(1概念 + 1文字图解,中文在上、德语在下):
 
-中文:奏鸣曲式=出走与回家:呈示部摆两主题两调性,展开部拆碎远游,再现部回家收束;听辨抓调性表与主题性格对比。
+中文:呈示张调、展开跑远、再现回家、尾声钉死。副部须移调回家,数出五度距离即证和解义务。
 
-Mechanismus (DE): Der Kopfsatz stellt zwei Themen in zwei Tonarten, entfernt sie in der Durchfuehrung und holt sie in der Reprise heim.
+Mechanismus (DE): Exposition spannt Tonarten auf, Durchfuehrung entfernt maximal, Reprise loest in Tonika, Coda nagelt zu. Der Seitensatz muss heimkehren: Transposition um Terz oder Quinte. Wer Tonartenkette nennt, erklaert Versoehnung.
+
+$$
+\text{Spannung} = |n_{Durchf} - n_{Tonika}| \quad\text{in Quintschritten, z.B. } 3 \text{ Quinten}
+$$
 
 战役传导:本关承接冲量角逐、乳酸阈值与主导动机三幕,测得出才能说得清,说得清才能赢下来。
 
 ```diagram
-Kampagne [Impuls -> Schwelle -> Leitmotiv]
-Holphase [sichern] -> Pruefphase [Hauptsatz g-Moll, Seitensatz B-Dur, 2 Themen im Kontrast] -> Zielphase [nutzen]
+Expo [i-III] -> Durchf [fern, 3 Quinten] -> Reprise [i-i Pflicht] -> Coda [Dach]
 Regel: Fehler frueh = Grenze | Fehler spaet = Ausnutzung
 ```
 
-`Klausur-Satz: Der Mechanismus trennt Grenze von Ausnutzung und ordnet jeden Fehler seiner Phase zu.`
+`Klausur-Satz: 张调远走收回讲清乐章。`
 
 ## Anekdote & Fun-Fact
 
-**Anekdote / Fun-Fact (DE)**: Die Bezeichnung "Sonatenform" stammt nicht von den Komponisten der Klassik. Haydn und Mozart haben ihre Sätze nicht nach einem solchen Schema gebaut und auch nicht so genannt; der Begriff wurde erst später von Musiktheoretikern geprägt, um deren Praxis zu beschreiben. Die "Form" ist also aus der Musik herausgelesen worden — nicht umgekehrt.
+**Anekdote / Fun-Fact (DE)**: Beethoven schrieb Pathétique 1798 als Suizid der Konvention: Er liess Grave-Einleitung vor Allegro donnern, was Verleger als Fehler strichen. Sein Schueler Czerny behielt die Striche und spielte trotzdem alles. Die Erstausgabe traegt Widmung an Lichnowsky, der dafuer ein Schloss oeffnete.
 
-**中文解读**: 这说明奏鸣曲式是一套"事后总结出来的听辨路线图"，而不是作曲家照着填的公式。所以判段时不要去找"标准模板"，而要去听那三件事：几个主题、第二主题在什么调、最后有没有回家——这些才是从音乐实践中真正立得住的标准。
+**中文解读**: 悲怆1798年拿慢引子炸快板,出版商当错删,车尔尼照弹。反叛也守调性钟。
 
-**Bezug zum Konzept**: `Die Sonatenhauptsatzform ist ein nachträglich formulierter Begriff für die Praxis der Klassik; deshalb entscheidet der gehörte Tonartplan, nicht ein starres Schema.`
+**Bezug zum Konzept**: `Regelbruch mit Uhr: Auch Revolte folgt Tonarten-Pflicht.`
 
-## Schritt 4 — ausprobieren: 沙盘决战 Hauptsatz g-Moll
+## Schritt 4 — ausprobieren: 沙盘决战
 
 BEISPIEL(含教具操作与解答):
 
-[Werkzeug: formula]
+[Werkzeug: oral-timer]
 
-AUFGABE (analysieren, AFB II):Formel Exposition aus 2 Themen: stelle g-Moll gegen B-Dur mit 2 Kontrasten;达标线:Hauptsatz g-Moll, Seitensatz B-Dur, 2 Themen im Kontrast。
+AUFGABE (analysieren, AFB II):90秒口述:指认呈示、远调与再现义务,达标。达标线:Mondschein cis-Moll, Expo i, Durchf 2 Quinten, Coda 8 Takte。
 
-Target数值目标:Hauptsatz g-Moll, Seitensatz B-Dur, 2 Themen im Kontrast。
+Target数值目标:Mondschein cis-Moll, Expo i, Durchf 2 Quinten, Coda 8 Takte。
 
 HILFE:
-1. 定相命名:先说相位与错误画像,对照目标Hauptsatz g-Moll。
-2. 读数释义:读出测量值,用一个术语解释效应。
-3. 推纠正:从机制推出一条可操作纠正。
+1. 点名主题加调。
+2. 量远调五度数。
+3. 验再现义务加尾声。
 
-MUSTERLÖSUNG:对照目标(Hauptsatz g-Moll, Seitensatz B-Dur, 2 Themen im Kontrast),先定相命名错误画像,再读数并以术语释效应,最后从机制推纠正;在Prager Ständetheater, Mozart g-Moll Sinfonie Nr.40 (Kopfsatz)中形成 保障—转化—兑现 的完整因果链,达标即过关。
+MUSTERLÖSUNG:呈示升c小调,展开跑两五度,再现回家加八小节尾声即达标。
 
-`Klausur-Satz: Am Target zeigt sich, ob Grenze oder Ausnutzung ueber das Ergebnis entschied.`
+`Klausur-Satz: 目标两五度证明:数逼回家。`
 
-## Schritt 5 — ausprobieren: VERGLEICH技术对抗 Tonart-Weg vs Themen-Weg
+## Schritt 5 — ausprobieren: VERGLEICH技术对抗 Tonartenlesen (Uhr: wohin moduliert?) vs Themenhoeren (Charakter: wer streitet?)
 
 VERGLEICH辨别实验(双向辨析,先选程序再解题):【选程序】
 
-VERGLEICH:先选程序—— (i) Tonart-Weg 还是 (ii) Themen-Weg ——再解题。WegA讲上限/结构,WegB讲兑现/情境。【选程序:问上限与结构选(i),问兑现与情境选(ii)。口述先说 Ich waehle Verfahren (i)/(ii), weil …】
+VERGLEICH:先选程序—— (i) Tonartenlesen (Uhr: wohin moduliert?) 还是 (ii) Themenhoeren (Charakter: wer streitet?) ——再解题。【选程序:问上限与结构选(i),问兑现与情境选(ii)。口述先说 Ich waehle Verfahren (i)/(ii), weil …】
 
-AUFGABE A (Tonart-Weg):在Prager Ständetheater, Mozart g-Moll Sinfonie Nr.40 (Kopfsatz)的首个案例中选哪条路,如何论证?
+AUFGABE A:案例A(看谱找调)选哪条?
 
-AUFGABE B (Themen-Weg):在对立案例中选哪条路,如何论证?
+AUFGABE B:案例B(听戏剧)选哪条?
 
-HILFE:A问上限属于程序(i);B问兑现属于程序(ii)。先说选哪条路,再给测量/情境证据。
+HILFE:A braucht Zahlen, also Uhr. B braucht Figuren, also Charakter.
 
-ANTWORT:A走程序(i)Tonart-Weg,以测量值与机制论证上限;B走程序(ii)Themen-Weg,以情境与位置论证兑现。德语口述句收束。
+ANTWORT:A走调性钟;B走人物戏。
 
-`Klausur-Satz: Verfahren (i) setzt die Grenze, Verfahren (ii) nutzt die Lage; die Wahl traegt das Urteil.`
+`Klausur-Satz: 钟还是戏,材料定路线。`
 
-## Schritt 6 — check: Selbsttest zu Sonatenhauptsatzform hoeren: Exposition, Durchfuehrung, Reprise
+## Schritt 6 — check: Selbsttest
 
 CHECK检索默写(自测3题,与答案配对):
 
-FRAGE:如何在赛事中认出本课核心? | ANTWORT:看数值目标(Hauptsatz g-Moll)与S3机制。
-FRAGE:如何达标? | ANTWORT:测量、术语释义、从机制推纠正三步。
-FRAGE:何时选程序(i)而非(ii)? | ANTWORT:问上限选(i),问兑现选(ii)。
+- FRAGE:谁须回家? | ANTWORT:副部回主调,义务。
+- FRAGE:远怎么量? | ANTWORT:五度数,三即必回。
+- FRAGE:何时钟而非戏? | ANTWORT:看谱用钟,听戏用人物。
 
-`Klausur-Satz: Selbsttest bestanden heisst Target lesen, Verfahren waehlen und Urteil begruenden.`
+`Klausur-Satz: 易错是当复制与以慢判轻。`
 
 ## Fehlvorstellung
 
-(非Schritt小节，Parser 自动识别，不计入步骤步数)
+(非Schritt小节，Parser 自动识别，不计入入步数)
 
-1. 误解"只要是三段结构就是奏鸣曲式"。
-   中文纠偏：不是。三段式（ABA 歌曲形式）只有"重复"，没有"主题对立 + 调性路线"。奏鸣曲式的判据是：两个性格对比的主题，加上 Hd→Dd→Hd 的调布局。缺了主题二元性与调性回家，就只是普通三段式。
-   Korrektur-Satz: `Ohne Themen-Dualismus und den Tonartplan Hd — Dd — Hd ist eine dreiteilige Form nur eine Liedform, keine Sonatenhauptsatzform.`
+1. 误解“再现重复呈示。”。
+   中文纠偏：再现是副部移调回家,原样贴是错的。
+   Korrektur-Satz: `Transposition, nicht Kopie; Tonika-Pflicht.`
+2. 误解“慢即不重要。”。
+   中文纠偏：慢引子定悲怆底色,速度不等于分量。
+   Korrektur-Satz: `Einleitung als Motto; Tempo nicht Wert.`
 
-2. 误解"展开部和再现部开头听起来都很紧，所以分不清"。
-   中文纠偏：两段都紧张，但方向相反。展开部是"越走越远、不断转调、不收束"；再现部虽然开头也紧凑，但主题已经"回到主调"，后面会一路稳定收拢。所以判断时不要只听话头密度，要听"调有没有回家"。
-   Korrektur-Satz: `Die Durchführung entfernt sich durch Modulationen von der Haupttonart, während die Reprise trotz dichter Faktur bereits in der Haupttonart angekommen ist.`
+## Schritt 7 — szenario: Klausurtransfer — Kurator Beethovenhaus
+中文:你是Kurator Beethovenhaus,在Weimarer Stadtschloss, Mondschein 1. Satz (cis-Moll, 54 BPM)中必须用德语连贯口述(约90秒)诊断、措施与数值目标(Mondschein cis-Moll, Expo i, Durchf 2 Quinten, Coda 8 Takte),并以术语举证。
+ROLLE: Du bist Kurator Beethovenhaus. SITUATION: 在魏玛用德语90秒陈述呈示、远调与目标(升c,两五度)。
+RUBRIC (30 XP):诊断术语8分 | 措施与目标举证7分 | 程序选择对比7分 | 德语表达5分。
 
-## Schritt 7 — szenario: Klausurtransfer: Sonatenhauptsatzform hoeren: Exposition, Durchfuehrung, Reprise — Mozart-Dirigent in Prag
-中文:你是Mozart-Dirigent in Prag,在Prager Ständetheater, Mozart g-Moll Sinfonie Nr.40 (Kopfsatz)中必须用德语连贯口述(约90秒)诊断、措施与数值目标(Hauptsatz g-Moll, Seitensatz B-Dur, 2 Themen im Kontrast),并以术语举证。
-ROLLE: Du bist Mozart-Dirigent in Prag. SITUATION: In Prager Ständetheater, Mozart g-Moll Sinfonie Nr.40 (Kopfsatz) stellst du Diagnose, Massnahme und Target (Hauptsatz g-Moll, Seitensatz B-Dur, 2 Themen im Kontrast) in ca. 90 Sekunden vor.
-RUBRIC (30 XP):诊断术语8分 | 措施与目标举证10分 | 程序选择对比7分 | 德语表达5分。
+`Klausur-Satz: 满分句:和解因副部移调回家、两五度远方回归;链条锁定满分。`
 
 ## Schritt 8 — reflexion: Takeaway & Reflexion — 奖杯还是进站检修
 
 TAKEAWAY 1盒(核心总结):
 
-中文:上限早锁定、位置晚兑现;数值目标(Hauptsatz g-Moll, Seitensatz B-Dur, 2 Themen im Kontrast)是裁判,程序选择是辩护;本关连着冲量角逐、体能极限与主导动机三幕,测得出、说得清、赢下来。
+中文:两主题、三远方、一回家:呈示许诺、展开远走、再现解套。
 Takeaway-Satz: `Wer die Grenze sichert und die Lage nutzt, holt den Pokal.`
+
+`Klausur-Satz: 元认知:奏鸣是调性戏,会读钟就懂再现。`
 
 REFLEXION 2问:
 1. 过程自省:沙盘精度(Schritt 4)与程序选择(Schritt 5)哪一步更难?

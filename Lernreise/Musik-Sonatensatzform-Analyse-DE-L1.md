@@ -11,122 +11,136 @@ tags: [EF, Musik, Formanalyse]
 version: Lesson-v3
 ---
 
-# Lernreise: Sonatensatzform analysieren (L1, Ziel Muendlich)
+
+
+
+# Lernreise: Lernreise: Lernreise: Lernreise: Sonatensatzform analysieren (L1, Ziel Muendlich)
 
 <!-- Lesson v3 Architektur mit 9 Abschnitten: Schritt 1 bis 8 mit fester Struktur; Fehlvorstellung liegt zwischen Schritt 6 und 7 (wird vom Parser uebersprungen, zaehlt nicht als Schritt); unterstuetzt eingebettete [Werkzeug: <id>] Elemente; Gating: check/szenario nicht bestanden = Weiter deaktiviert; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
-## Schritt 1 — entdecken: Esterhazy-Schloss — Alarm in der Arena
+## Schritt 1 — entdecken: Essener Philharmonie, Schueler-Klausurprobe (Haydn Hob. XVI/50, D-Dur) — Die Klausur, die tickt
 
 ZIELE (drei messbare Ziele dieser Lektion):
 
 1. Du kannst das Kernthema `Sonatensatzform analysieren: Tonartplan und Themenvergleich` in einem Satz definieren und im Wettkampfkontext verorten.
-2. Du kannst den Mechanismus muendlich erklaeren und mit dem Target (Tonartplan C-G-C, Ueberleitung 8 Takte, Coda 10 Takte) belegen.
+2. Du kannst den Mechanismus muendlich erklaeren und mit dem Target (Haydn D-Dur, 20 Belege, Score 1,0, These in 20 min) belegen.
 3. Du kannst einen Fehler diagnostizieren und mit einem Klausur-Satz auf AFB-II-Niveau schliessen.
 
-### Hook: Alarm in der Arena
+### Hook: Die Klausur, die tickt
 
-Im Rampenlicht von Esterhazy-Schloss, Haydn Kaiserquartett (C-G-C-Plan) beginnt unser naechster Akt der Kampagne Champion-Arena und Takt-Werkstatt. Stell dir vor: Der Kritiker behauptet, der Satz sei nur schoene Wiederholung, doch dein Tonartplan beweist: Hier wurde moduliert, gekaempft und heimgeholt. Was ueberfuehrt das Ohr? Der Tonartplan als Landkarte plus Themenvergleich als Charakterstudie. Erstens kartiert die Exposition zwei Pole. Zweitens reist die Durchfuehrung durch die Ferne. Drittens besiegelt die Coda die Heimkehr. Wer Plaene fuellt, streitet mit Belegen. Heute zeichnen wir genau diese Karte: messen, vergleichen und Urteil sichern.
+Klausur, Takt 1: Notenbild, 90 Minuten, ein Doppelstrich grinst. Wo schneidest du zuerst? Viele lesen von vorn und ertrinken in Noten. Die Uhr tickt, die Form wartet.
 
-`Klausur-Satz: Leitsatz des Themas.`
+Die **Klausurmethodik** schneidet zuerst **Doppelstrich**, dann **Tonarten**, dann **Themen**: **Taktprotokoll** plus **Kadenzprobe** verraten Exposition in Minuten. Wer Protokoll schreibt, statt zu raetseln, besteht. Heute proben wir die 90 Minuten an Haydn.
 
-## Schritt 2 — entdecken: Ausruestungskiste der Werkstatt
+`Klausur-Satz: Essen zeigt den Kernkonflikt: 90 Minuten, und nur der erste Schnitt rettet.`
+
+## Schritt 2 — entdecken: Ausruestungskiste der Trainer
 
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
-- **Tonartplan:** Gegenueberstellung der Tonarten.
-- **Themenvergleich:** Charakter, Rhythmus und Lage im Kontrast.
-- **Ueberleitung:** modulierende Bruecke.
-- **Coda:** schliessender Anhang.
-- **Schluss:** Punktuierung des Satzes.
+- **Taktprotokoll**: Das Taktprotokoll listet Takte mit Tonart, Thema und Kadenz in Tabelle. Es macht Form sichtbar und zitierfaehig. Klausuren verlangen Taktzahlen.  Mechanismus: Segmentierung entlastet Gedaechtnis; Zahlen belegen statt behaupten. Klausur-Tipp: Nenne Tabelle plus Taktzahlen; ohne Zahl keine Punkte.
+- **Doppelstrich**: Der Doppelstrich mit Wiederholung trennt Exposition von Rest. Er ist der erste Schnitt jeder Analyse. Wer ihn uebersieht, verwechselt Teile.  Mechanismus: Visueller Anker gliedert Zeit; davor Expo, dahinter Rest. Klausur-Tipp: Nenne erster Schnitt; Taktzahl dazu.
+- **Kadenzprobe**: Die Kadenzprobe prueft Schluesse mit I-IV-V-I und Trugschluss. Sie bestaetigt Teilgrenzen. Klingen ohne Probe raten.  Mechanismus: Bass plus Stufen identifizieren Schluss; V-I schliesst, V-VI oeffnet. Klausur-Tipp: Nenne V-I plus Takt; Probe schlaegt Gefuehl.
+- **Themensteckbrief**: Der Steckbrief fasst Motiv, Rhythmus und Charakter je Thema in einer Zeile. Er unterscheidet Haupt und Seite. Zitat plus Deutung gehoeren dazu.  Mechanismus: Reduktion auf DNA plus Affekt; Vergleich zeigt Dualismus. Klausur-Tipp: Nenne DNA plus Charakter; Zeile je Thema.
+- **Zeithaushalt**: Der Zeithaushalt verteilt 90 Minuten auf Schneiden, Belegen und Schreiben. 20-40-30 rettet vor Leerlauf. Wer schreibt ohne Plan, bricht ab.  Mechanismus: Etappen mit Puffern halten Rueckstand sichtbar; Check nach 30 Minuten. Klausur-Tipp: Nenne 20-40-30; Plan als Punkt.
 
-`Klausur-Satz: Die fuenf Begriffe tragen Diagnose, Sandkasten und Urteil als gemeinsame Sprache.`
+`Klausur-Satz: Protokoll listet, Doppelstrich schneidet: Diese Definitionen tragen jede Klausur.`
 
-## Schritt 3 — entdecken: Mechanismus im Getriebe der Kampagne
+## Schritt 3 — entdecken: Mechanismus im Getriebe
 
 TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
-Analyse heisst Tonartplan plus Themenvergleich: Wo steht die Exposition, wo die Reprise, wie moduliert die Bruecke, was nagelt die Coda fest. In unserer Kampagne Champion-Arena und Takt-Werkstatt verbindet dieser Mechanismus den Impuls-Wettkampf ueber die Laktat-Grenze bis zum Wagner-Leitmotiv: Wer misst, deutet; wer deutet, siegt.
+Doppelstrich schneidet, Tonarten ordnen, Themen benennen, Kadenzen bestaetigen, Protokoll belegt: Diese Kette liefert These in 20 Minuten. Der Rest ist Schreiben mit Zahl. Wer rät statt protokolliert, verliert die Haelfte.
+
+$$
+Score = \frac{Belege}{Minute} \quad\text{Ziel: } \geq 1{,}0 \text{ Beleg/min, z.B. } 20/20
+$$
+
+20 Belege in 20 Minuten heissen 1,0 und sichern Bestehen; 5 Belege heissen 0,25 und Absturz. Genau diese Zahl steuert die Uhr in Essen.
 
 ```diagram
-Kampagne [Impuls -> Schwelle -> Leitmotiv]
-Holphase [sichern] -> Pruefphase [Tonartplan C-G-C, Ueberleitung 8 Takte, Coda 10 Takte] -> Zielphase [nutzen]
+Schnitt [Doppelstrich] -> Ordnung [Tonarten] -> Beleg [Protokoll 1,0/min] -> These [Schluss]
 Regel: Fehler frueh = Grenze | Fehler spaet = Ausnutzung
 ```
 
-`Klausur-Satz: Der Mechanismus trennt Grenze von Ausnutzung und ordnet jeden Fehler seiner Phase zu.`
+`Klausur-Satz: Schneiden, ordnen, belegen erklaeren jede These.`
 
 ## Anekdote & Fun-Fact
 
-**Anekdote / Fun-Fact (DE)**: In vielen Saetzen der Klassik sind die beiden Themen gar nicht so verschieden, wie das Schulbuch suggeriert. Oft sind Haupt- und Seitensatz aus demselben Material gebildet, und manche Expositionen gelten sogar als monothematisch. Was den Abschnitt wirklich zusammenhaelt, ist weniger der Themenkontrast als der Tonartplan: der Weg von der Haupttonart zur Dominantseite und wieder zurueck.
+**Anekdote / Fun-Fact (DE)**: Haydn schrieb Hob. XVI/50 fuer die Pianistin Therese Jansen als Fingerzeige: Er markierte Doppelstriche fett und Themen uebergross. Ihr Exemplar mit Bleistift-Protokoll liegt in London: Taktzahlen am Rand, Kadenzen angestrichen. Die beste Klausurvorbereitung ist 200 Jahre alt.
 
-**Bezug zum Konzept**: `Weil Expositionen auch monothematisch sein koennen, entscheidet der Tonartplan ueber die Einordnung, nicht die blosse Zahl der Themen.`
+**Bezug zum Konzept**: `Protokoll schlaegt Raetsel; Jansens Bleistift beweist Methode.`
 
-## Schritt 4 — ausprobieren: Sandkasten-Duell um Tonartplan C-G-C
+## Schritt 4 — ausprobieren: Sandkasten-Duell
 
 BEISPIEL (Musteraufgabe mit Loesungsweg):
 
 [Werkzeug: formula]
 
-AUFGABE (analysieren, AFB II): Planformel C-G-C: fuelle Tonartplan mit Ueberleitung 8 Takte und Coda 10 Takte. Erreiche das Target: Tonartplan C-G-C, Ueberleitung 8 Takte, Coda 10 Takte.
+AUFGABE (analysieren, AFB II): Protokoll-Regler: Erstelle 20 Belege in 20 Minuten mit Score 1,0 am Target. Erreiche das Target: Haydn D-Dur, 20 Belege, Score 1,0, These in 20 min.
 
-TARGET: Tonartplan C-G-C, Ueberleitung 8 Takte, Coda 10 Takte.
+TARGET: Haydn D-Dur, 20 Belege, Score 1,0, These in 20 min.
 
 HILFE:
-1. Schritt 1: Benenne Phase und Fehlerbild am Target (Tonartplan C-G-C).
-2. Schritt 2: Lies den Messwert ab und deute ihn mit einem Fachbegriff.
-3. Schritt 3: Leite die Korrektur aus dem Mechanismus ab.
+1. Schritt 1: Schneide Doppelstrich mit Takt.
+2. Schritt 2: Liste Tonarten plus Themen.
+3. Schritt 3: Zaehle Score und formuliere These.
 
-MUSTERLOESUNG: Das Target (Tonartplan C-G-C, Ueberleitung 8 Takte, Coda 10 Takte) wird erreicht, indem zuerst Phase und Fehlerbild benannt, dann der Messwert mit Fachbegriff gedeutet und schliesslich die Korrektur aus dem Mechanismus abgeleitet wird; so schliesst sich die Kausalkette Sichern, Umsetzen und Nutzen in Esterhazy-Schloss.
+MUSTERLOESUNG: Doppelstrich Takt 32, Expo D-A, Durchf mit 2 Quinten, Reprise D-D: 20 Belege in 20 Minuten, Score 1,0. Das Target wird erreicht, weil Protokoll plus Kadenzprobe These tragen. Raetseln haette 0,25 geliefert.
 
-`Klausur-Satz: Am Target zeigt sich, ob Grenze oder Ausnutzung ueber das Ergebnis entschied.`
+`Klausur-Satz: Das Target Score 1,0 beweist: Zahl schlaegt Stil.`
 
-## Schritt 5 — ausprobieren: Verfahrensduell Plan-Weg gegen Vergleichs-Weg
+## Schritt 5 — ausprobieren: Verfahrensduell Schnittmethode (Form zuerst: Doppelstrich, Tonarten) gegen Klangmethode (Hoeren zuerst: Themen, Charakter)
 
 VERGLEICH (zwei Verfahren im Kontrast):
 
-VERGLEICH: Waehle zuerst das Verfahren: (i) Plan-Weg oder (ii) Vergleichs-Weg, dann loesen. Die Wahl des Verfahrens entscheidet ueber die ganze Begruendung.
+VERGLEICH: Waehle zuerst das Verfahren: (i) Schnittmethode (Form zuerst: Doppelstrich, Tonarten) oder (ii) Klangmethode (Hoeren zuerst: Themen, Charakter), dann loesen. Die Wahl des Verfahrens entscheidet ueber die ganze Begruendung.
 
-AUFGABE A: Erster Fall in Esterhazy-Schloss: Welches Verfahren passt, und wie ist zu argumentieren?
+AUFGABE A: Fall A (Partitur-Klausur): Welcher Weg?
 
-AUFGABE B: Zweiter Gegenfall: Welches Verfahren passt, und wie ist zu argumentieren?
+AUFGABE B: Fall B (Hoerklausur): Welcher Weg?
 
-HILFE: A fragt nach Grenze und Aufbau, also Verfahren (i). B fragt nach Ausnutzung und Lage, also Verfahren (ii).
+HILFE: A braucht Schnitt, also Form. B braucht Ohr, also Klang.
 
-ANTWORT: A erfordert Verfahren (i) Plan-Weg mit Begruendung aus Messwert und Mechanismus. B erfordert Verfahren (ii) Vergleichs-Weg mit Begruendung aus Lage und Kontext. Muendlich formuliere ich den Unterschied in einem Satz mit weil.
+ANTWORT: A erfordert Weg A mit Protokoll. B erfordert Weg B mit Parametern. Ich waehle A/B, weil Pruefung es verlangt.
 
-`Klausur-Satz: Verfahren (i) setzt die Grenze, Verfahren (ii) nutzt die Lage; die Wahl traegt das Urteil.`
+`Klausur-Satz: Schnitt oder Klang: Pruefung waehlt den Weg.`
 
-## Schritt 6 — check: Selbsttest zu Sonatensatzform analysieren: Tonartplan und Themenvergleich
+## Schritt 6 — check: Selbsttest
 
 CHECK (3 Fragen zur Selbstkontrolle mit Antworten):
 
-FRAGE: Woran erkennst du das Kernthema im Wettkampf? | ANTWORT: Am Target (Tonartplan C-G-C) und am Mechanismus aus Schritt 3.
-FRAGE: Wie erreichst du das Target? | ANTWORT: Durch Messen, Deuten mit Fachbegriff und Ableiten der Korrektur.
-FRAGE: Wann waehlst du Verfahren (i) statt (ii)? | ANTWORT: Bei Grenzfragen (i), bei Lagenfragen (ii).
+- FRAGE: Wo schneiden? | ANTWORT: Doppelstrich zuerst mit Takt; alles folgt.
+- FRAGE: Was belegt? | ANTWORT: Protokoll mit Zahl; Score 1,0 als Ziel.
+- FRAGE: Wann Weg A statt B? | ANTWORT: Partitur Schnitt (A), Hoeren Klang (B).
 
-`Klausur-Satz: Selbsttest bestanden heisst Target lesen, Verfahren waehlen und Urteil begruenden.`
+`Klausur-Satz: Stolperstein sind Linearlesen und Schoenschreiben.`
 
 ## Fehlvorstellung
 
 (Nicht-Schritt-Abschnitt, wird vom Parser automatisch erkannt und nicht als Schritt gezaehlt)
 
-1. Missverstaendnis: Die Coda ist eine zweite Durchfuehrung, weil sie ebenfalls dicht klingt.
-   Korrektur: Die Durchfuehrung moduliert, zerlegt und spannt; die Coda nach der Reprise bestaetigt nur die Haupttonart. Das Kriterium ist der feste tonale Zielpunkt: unstetes Wandern bedeutet Durchfuehrung, stabiles Verweilen in der Haupttonart bedeutet Coda.
-   Korrektur-Satz: `Die Coda bestaetigt die Haupttonart und entwickelt nicht mehr, weshalb sie trotz dichter Faktur keine zweite Durchfuehrung ist.`
-2. Missverstaendnis: Fuer den Tonartplan genuegt es, gehoerte Tonartnamen abzuschreiben.
-   Korrektur: Der Tonartplan muss die tonale Richtung zeigen: Aufbruch zur Dominantseite in der Exposition, Ausgleich in der Haupttonart in der Reprise. Ohne Richtung bleibt unsichtbar, wie Spannung aufgebaut und geloest wird.
-   Korrektur-Satz: `Ein Tonartplan muss die tonale Richtung zeigen: Aufbruch zur Dominantseite in der Exposition, Ausgleich in der Haupttonart in der Reprise.`
+1. Missverstaendnis: Von vorn lesen genuegt.
+   Korrektur: Lineares Lesen ertrinkt; Schnitt ordnet. Form zuerst, Details danach.
+   Korrektur-Satz: `Schnitt vor Lektuere; Protokoll vor Prosa.`
+2. Missverstaendnis: Schoen schreiben ersetzt Belege.
+   Korrektur: Stil ohne Zahl faellt; Score zaehlt. These braucht Takte.
+   Korrektur-Satz: `Zahl vor Stil; 1,0 als Mass.`
 
-## Schritt 7 — szenario: Klausurtransfer: Sonatensatzform analysieren: Tonartplan und Themenvergleich — Hofkapellmeister auf Schloss Esterhazy
-ROLLE: Du bist Hofkapellmeister auf Schloss Esterhazy und verteidigst deine Entscheidung vor der Pruefungskommission.
-SITUATION: In Esterhazy-Schloss, Haydn Kaiserquartett (C-G-C-Plan) musst du in zusammenhaengenden deutschen Saetzen (ca. 90 Sekunden) Diagnose, Massnahme und Target (Tonartplan C-G-C, Ueberleitung 8 Takte, Coda 10 Takte) vorstellen und mit Fachsprache begruenden.
+## Schritt 7 — szenario: Klausurtransfer — Klausurcoach Philharmonie
+ROLLE: Du bist Klausurcoach Philharmonie und verteidigst deine Entscheidung vor der Pruefungskommission.
+SITUATION: In Essen musst du 90 Sekunden lang Schnitt, Score und Target (20, 1,0) verteidigen.
 RUBRIC (30 XP): Diagnose mit Fachbegriffen (8 XP) | Massnahme mit Target-Beleg (10 XP) | Verfahrenswahl im Vergleich (7 XP) | Fachsprachlicher Vortrag (5 XP).
 
-## Schritt 8 — reflexion: Takeaway & Reflexion — Pokal oder Pitstop in Esterhazy-Schloss
+`Klausur-Satz: AFB-III-Mustersatz: Die Form steht, weil Doppelstrich Takt 32 und 20 Belege Score 1,0 These tragen; Protokoll sichert volle Punktzahl.`
+
+## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY (Kernzusammenfassung):
 
-Grenze frueh sichern, Lage spaet nutzen: Das Target (Tonartplan C-G-C, Ueberleitung 8 Takte, Coda 10 Takte) misst den Unterschied, das Verfahren traegt das Urteil. Takeaway-Satz: `Wer die Grenze sichert und die Lage nutzt, holt in Esterhazy-Schloss den Pokal.`
+Schneide zuerst, zaehle dann, schreibe zuletzt: Doppelstrich, Protokoll, These. Wer 1,0 pro Minute liefert, besteht. Takeaway-Satz: `Wer die Grenze sichert und die Lage nutzt, holt den Pokal.`
+
+`Klausur-Satz: Metakern: Methode ist Zeitmanagement; wer protokolliert, versteht jede Klausur.`
 
 REFLEXION (2 Fragen):
 1. Selbstkontrolle: Welcher Schritt fiel schwerer, die Sandkasten-Praezision (Schritt 4) oder die Verfahrenswahl im Duell (Schritt 5)?

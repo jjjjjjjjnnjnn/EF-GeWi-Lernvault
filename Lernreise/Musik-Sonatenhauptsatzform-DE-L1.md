@@ -11,122 +11,136 @@ tags: [EF, Musik, Formanalyse]
 version: Lesson-v3
 ---
 
-# Lernreise: Sonatenhauptsatzform hoeren (L1, Ziel Muendlich)
+
+
+
+# Lernreise: Lernreise: Lernreise: Lernreise: Sonatenhauptsatzform hoeren (L1, Ziel Muendlich)
 
 <!-- Lesson v3 Architektur mit 9 Abschnitten: Schritt 1 bis 8 mit fester Struktur; Fehlvorstellung liegt zwischen Schritt 6 und 7 (wird vom Parser uebersprungen, zaehlt nicht als Schritt); unterstuetzt eingebettete [Werkzeug: <id>] Elemente; Gating: check/szenario nicht bestanden = Weiter deaktiviert; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
-## Schritt 1 — entdecken: Wiener Musikverein — Alarm in der Arena
+## Schritt 1 — entdecken: Bonner Beethovenhaus, Pathétique 1. Satz (c-Moll, 132 BPM) — Der Satz, der streitet und versöhnt
 
 ZIELE (drei messbare Ziele dieser Lektion):
 
 1. Du kannst das Kernthema `Sonatenhauptsatzform hoeren: Exposition, Durchfuehrung, Reprise` in einem Satz definieren und im Wettkampfkontext verorten.
-2. Du kannst den Mechanismus muendlich erklaeren und mit dem Target (Exposition T.1-132, Seitensatz Es-Dur, 90-Sekunden-Formhoeren) belegen.
+2. Du kannst den Mechanismus muendlich erklaeren und mit dem Target (Pathétique c-Moll, Expo i-III, Ferne 3 Quinten, Reprise i-i) belegen.
 3. Du kannst einen Fehler diagnostizieren und mit einem Klausur-Satz auf AFB-II-Niveau schliessen.
 
-### Hook: Alarm in der Arena
+### Hook: Der Satz, der streitet und versöhnt
 
-Im Rampenlicht von Wiener Musikverein, Beethoven Pathetique (1. Satz, T.1-132) beginnt unser naechster Akt der Kampagne Champion-Arena und Takt-Werkstatt. Stell dir vor: Zwei Themen, zwei Tonarten, ein Konflikt, und nach zehn Minuten kehren beide heim in dieselbe Tonart versoehnt zurueck. Was erzaehlt Form als Drama? Der Sonatenhauptsatz als Auszug und Heimkehr. Erstens stellt die Exposition beide vor. Zweitens entfernt die Durchfuehrung alles. Drittens versoehnt die Reprise in der Tonika. Wer Tonarten verfolgt, hoert Handlung statt Muster. Heute wandern wir genau diesen Weg: aufstellen, entfernen und heimholen.
+Pathétique, Esplosion: Zwei Themen prallen aufeinander, c-Moll gegen Es-Dur, Schicksal gegen Trost. Die Durchfuehrung zerreisst beide, die Reprise versoehnt sie in Moll. Woher weiss das Ohr, dass Versoehnung Pflicht ist? Aus der Tonarten-Uhr.
 
-`Klausur-Satz: Leitsatz des Themas.`
+**Exposition** stellt **Haupt- und Seitensatz** in Tonika und Dominante vor, **Durchfuehrung** moduliert durch die Ferne, **Reprise** loest in der Tonika. **Doppelstrich** und **Coda** markieren die Pflicht. Heute lesen wir diese Uhr an Beethoven.
 
-## Schritt 2 — entdecken: Ausruestungskiste der Werkstatt
+`Klausur-Satz: Bonn zeigt den Kernkonflikt: Streit in zwei Tonarten verlangt Versoehnung in einer.`
+
+## Schritt 2 — entdecken: Ausruestungskiste der Trainer
 
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
-- **Exposition:** Haupt- und Seitensatz in zwei Tonarten.
-- **Durchfuehrung:** motivische Reise durch ferne Tonarten.
-- **Reprise:** Rueckkehr in die Haupttonart.
-- **Hauptsatz:** erstes Thema in der Tonika.
-- **Seitensatz:** zweites Thema in Dominante oder Mediannte.
+- **Exposition**: Die Exposition stellt Haupt- und Seitensatz in Tonika und Kontrasttonart vor (Moll: Tonika-Mediante). Doppelstrich mit Wiederholung befiehlt Vergleich. Ohne sie keine Reprise.  Mechanismus: Kadenz plus Tonartenplan praegen Gedächtnis; Kontrast erzeugt Erwartung. Klausur-Tipp: Nenne zwei Themen plus zwei Tonarten; Doppelstrich als Zeichen.
+- **Haupt- und Seitensatz**: Hauptsatz in Tonika (maennlich, markant), Seitensatz in Kontrasttonart (weiblich, lyrisch). Dualismus treibt Drama. Pathétique lebt aus ihm.  Mechanismus: Charakter plus Tonart codieren Konflikt; Bruecke moduliert. Klausur-Tipp: Nenne Charakter plus Tonart je Satz; Dualismus als Wort.
+- **Durchführung**: Die Durchfuehrung zerlegt und moduliert Expositions-Material durch ferne Tonarten. Sie maximiert Ferne und Rueckkehrzwang. Laenge verrät Gewicht.  Mechanismus: Sequenz plus Modulation erzeugen Distanz; Dominantorgelpunkt ruft zurueck. Klausur-Tipp: Nenne ferne Tonarten plus Verfahren; Ferne als Mass.
+- **Reprise**: Die Reprise bringt beide Saetze in der Tonika und loest den Konflikt. Versoehnung ist Pflicht, nicht Wahl. Coda bestaetigt sie.  Mechanismus: Transposition des Seitensatzes in Tonika; Kadenz schliesst. Klausur-Tipp: Nenne beide in Tonika plus Pflicht; Versoehnung als Bild.
+- **Coda**: Die Coda bestaetigt den Schluss nach der Reprise mit Kadenzfeuer. Sie stemmt das Dach aufs Haus. Pathétique donnert so.  Mechanismus: Pendelkadenz plus Steigerung; Schlussbekraeftigung. Klausur-Tipp: Nenne nach Reprise plus Bestaetigung; Dach als Bild.
 
-`Klausur-Satz: Die fuenf Begriffe tragen Diagnose, Sandkasten und Urteil als gemeinsame Sprache.`
+`Klausur-Satz: Exposition stellt vor, Reprise loest heim: Diese Definitionen tragen jede Form.`
 
-## Schritt 3 — entdecken: Mechanismus im Getriebe der Kampagne
+## Schritt 3 — entdecken: Mechanismus im Getriebe
 
 TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
-Der Kopfsatz stellt zwei Themen in zwei Tonarten, entfernt sie in der Durchfuehrung und holt sie in der Reprise heim. In unserer Kampagne Champion-Arena und Takt-Werkstatt verbindet dieser Mechanismus den Impuls-Wettkampf ueber die Laktat-Grenze bis zum Wagner-Leitmotiv: Wer misst, deutet; wer deutet, siegt.
+Exposition spannt Tonarten auf, Durchfuehrung entfernt maximal, Reprise loest in Tonika, Coda nagelt zu. Der Seitensatz muss heimkehren: Transposition um Terz oder Quinte. Wer Tonartenkette nennt, erklaert Versoehnung.
+
+$$
+\text{Spannung} = |n_{Durchf} - n_{Tonika}| \quad\text{in Quintschritten, z.B. } 3 \text{ Quinten}
+$$
+
+Liegt Durchfuehrung drei Quinten entfernt (Es zu H), betraegt Spannung 3 und verlangt Rueckkehr. Genau diese Zahl hoert der Pruefer als Formbeweis.
 
 ```diagram
-Kampagne [Impuls -> Schwelle -> Leitmotiv]
-Holphase [sichern] -> Pruefphase [Exposition T.1-132, Seitensatz Es-Dur, 90-Sekunden-Formhoeren] -> Zielphase [nutzen]
+Expo [i-III] -> Durchf [fern, 3 Quinten] -> Reprise [i-i Pflicht] -> Coda [Dach]
 Regel: Fehler frueh = Grenze | Fehler spaet = Ausnutzung
 ```
 
-`Klausur-Satz: Der Mechanismus trennt Grenze von Ausnutzung und ordnet jeden Fehler seiner Phase zu.`
+`Klausur-Satz: Aufspannen, entfernen, heimholen erklaeren jeden Satz.`
 
 ## Anekdote & Fun-Fact
 
-**Anekdote / Fun-Fact (DE)**: Die Bezeichnung Sonatenform stammt nicht von den Komponisten der Klassik. Haydn und Mozart haben ihre Saetze nicht nach einem solchen Schema gebaut und auch nicht so genannt; der Begriff wurde erst spaeter von Musiktheoretikern gepraegt, um deren Praxis zu beschreiben. Die Form ist also aus der Musik herausgelesen worden, nicht umgekehrt.
+**Anekdote / Fun-Fact (DE)**: Beethoven schrieb Pathétique 1798 als Suizid der Konvention: Er liess Grave-Einleitung vor Allegro donnern, was Verleger als Fehler strichen. Sein Schueler Czerny behielt die Striche und spielte trotzdem alles. Die Erstausgabe traegt Widmung an Lichnowsky, der dafuer ein Schloss oeffnete.
 
-**Bezug zum Konzept**: `Die Sonatenhauptsatzform ist ein nachtraeglich formulierter Begriff fuer die Praxis der Klassik; deshalb entscheidet der gehoerte Tonartplan, nicht ein starres Schema.`
+**Bezug zum Konzept**: `Regelbruch mit Uhr: Auch Revolte folgt Tonarten-Pflicht.`
 
-## Schritt 4 — ausprobieren: Sandkasten-Duell um Exposition T.1-132
+## Schritt 4 — ausprobieren: Sandkasten-Duell
 
 BEISPIEL (Musteraufgabe mit Loesungsweg):
 
 [Werkzeug: oral-timer]
 
-AUFGABE (analysieren, AFB II): 90-Sekunden-Formhoeren gegen den Timer: trenne Hauptsatz c-Moll von Seitensatz Es-Dur (T.1-132). Erreiche das Target: Exposition T.1-132, Seitensatz Es-Dur, 90-Sekunden-Formhoeren.
+AUFGABE (analysieren, AFB II): 90-Sekunden-Probe gegen den Timer: Weise Expo, Ferne (3 Quinten) und Reprise-Pflicht am Target nach. Erreiche das Target: Pathétique c-Moll, Expo i-III, Ferne 3 Quinten, Reprise i-i.
 
-TARGET: Exposition T.1-132, Seitensatz Es-Dur, 90-Sekunden-Formhoeren.
+TARGET: Pathétique c-Moll, Expo i-III, Ferne 3 Quinten, Reprise i-i.
 
 HILFE:
-1. Schritt 1: Benenne Phase und Fehlerbild am Target (Exposition T.1-132).
-2. Schritt 2: Lies den Messwert ab und deute ihn mit einem Fachbegriff.
-3. Schritt 3: Leite die Korrektur aus dem Mechanismus ab.
+1. Schritt 1: Benenne Themen plus Tonarten.
+2. Schritt 2: Miss Ferne in Quinten.
+3. Schritt 3: Pruefe Reprise-Pflicht plus Coda.
 
-MUSTERLOESUNG: Das Target (Exposition T.1-132, Seitensatz Es-Dur, 90-Sekunden-Formhoeren) wird erreicht, indem zuerst Phase und Fehlerbild benannt, dann der Messwert mit Fachbegriff gedeutet und schliesslich die Korrektur aus dem Mechanismus abgeleitet wird; so schliesst sich die Kausalkette Sichern, Umsetzen und Nutzen in Wiener Musikverein.
+MUSTERLOESUNG: Expo c-Es, Durchf bis H (3 Quinten), Reprise c-c mit Coda. Das Target wird erreicht, weil Kette plus Zahl Versoehnung beweisen. Ohne Heimkehr waere es Rondo, nicht Sonate.
 
-`Klausur-Satz: Am Target zeigt sich, ob Grenze oder Ausnutzung ueber das Ergebnis entschied.`
+`Klausur-Satz: Das Target 3 Quinten beweist: Zahl zwingt Heimkehr.`
 
-## Schritt 5 — ausprobieren: Verfahrensduell Tonart-Weg gegen Themen-Weg
+## Schritt 5 — ausprobieren: Verfahrensduell Tonartenlesen (Uhr: wohin moduliert?) gegen Themenhoeren (Charakter: wer streitet?)
 
 VERGLEICH (zwei Verfahren im Kontrast):
 
-VERGLEICH: Waehle zuerst das Verfahren: (i) Tonart-Weg oder (ii) Themen-Weg, dann loesen. Die Wahl des Verfahrens entscheidet ueber die ganze Begruendung.
+VERGLEICH: Waehle zuerst das Verfahren: (i) Tonartenlesen (Uhr: wohin moduliert?) oder (ii) Themenhoeren (Charakter: wer streitet?), dann loesen. Die Wahl des Verfahrens entscheidet ueber die ganze Begruendung.
 
-AUFGABE A: Erster Fall in Wiener Musikverein: Welches Verfahren passt, und wie ist zu argumentieren?
+AUFGABE A: Fall A (Partitur, Modulation): Welcher Weg?
 
-AUFGABE B: Zweiter Gegenfall: Welches Verfahren passt, und wie ist zu argumentieren?
+AUFGABE B: Fall B (Konzert, Drama): Welcher Weg?
 
-HILFE: A fragt nach Grenze und Aufbau, also Verfahren (i). B fragt nach Ausnutzung und Lage, also Verfahren (ii).
+HILFE: A braucht Zahlen, also Uhr. B braucht Figuren, also Charakter.
 
-ANTWORT: A erfordert Verfahren (i) Tonart-Weg mit Begruendung aus Messwert und Mechanismus. B erfordert Verfahren (ii) Themen-Weg mit Begruendung aus Lage und Kontext. Muendlich formuliere ich den Unterschied in einem Satz mit weil.
+ANTWORT: A erfordert Weg A mit Quinten. B erfordert Weg B mit Dualismus. Ich waehle A/B, weil Quelle es verlangt.
 
-`Klausur-Satz: Verfahren (i) setzt die Grenze, Verfahren (ii) nutzt die Lage; die Wahl traegt das Urteil.`
+`Klausur-Satz: Uhr oder Charakter: Quelle waehlt den Weg.`
 
-## Schritt 6 — check: Selbsttest zu Sonatenhauptsatzform hoeren: Exposition, Durchfuehrung, Reprise
+## Schritt 6 — check: Selbsttest
 
 CHECK (3 Fragen zur Selbstkontrolle mit Antworten):
 
-FRAGE: Woran erkennst du das Kernthema im Wettkampf? | ANTWORT: Am Target (Exposition T.1-132) und am Mechanismus aus Schritt 3.
-FRAGE: Wie erreichst du das Target? | ANTWORT: Durch Messen, Deuten mit Fachbegriff und Ableiten der Korrektur.
-FRAGE: Wann waehlst du Verfahren (i) statt (ii)? | ANTWORT: Bei Grenzfragen (i), bei Lagenfragen (ii).
+- FRAGE: Was muss heim? | ANTWORT: Seitensatz in Tonika; Pflicht, nicht Wahl.
+- FRAGE: Was misst Ferne? | ANTWORT: Quintenabstand; 3 heisst Rueckkehrzwang.
+- FRAGE: Wann Weg A statt B? | ANTWORT: Partitur Uhr (A), Konzert Charakter (B).
 
-`Klausur-Satz: Selbsttest bestanden heisst Target lesen, Verfahren waehlen und Urteil begruenden.`
+`Klausur-Satz: Stolperstein sind Kopie-Glaube und Tempo-Urteil.`
 
 ## Fehlvorstellung
 
 (Nicht-Schritt-Abschnitt, wird vom Parser automatisch erkannt und nicht als Schritt gezaehlt)
 
-1. Missverstaendnis: Jede dreiteilige Anlage ist eine Sonatenhauptsatzform.
-   Korrektur: Die Liedform ($ABA$) kennt nur Wiederholung. Die Sonatenhauptsatzform verlangt Themen-Dualismus plus Tonartplan $Hd$-$Dd$-$Hd$. Ohne Gegensatz der Themen und tonale Heimkehr bleibt es eine einfache Dreiteiligkeit.
-   Korrektur-Satz: `Ohne Themen-Dualismus und den Tonartplan $Hd$-$Dd$-$Hd$ ist eine dreiteilige Form nur eine Liedform, keine Sonatenhauptsatzform.`
-2. Missverstaendnis: Durchfuehrung und Reprise klingen zu Beginn gleich dicht und sind daher ununterscheidbar.
-   Korrektur: Beide koennen dicht wirken, aber die Richtung ist entgegengesetzt. Die Durchfuehrung entfernt sich modulierend ohne Abschluss; die Reprise steht bereits in der Haupttonart und stabilisiert sich. Entscheidend ist die Frage, ob die Tonart heimgekehrt ist.
-   Korrektur-Satz: `Die Durchfuehrung entfernt sich durch Modulationen von der Haupttonart, waehrend die Reprise trotz dichter Faktur bereits in der Haupttonart angekommen ist.`
+1. Missverstaendnis: Reprise wiederholt Exposition.
+   Korrektur: Reprise transponiert Seitensatz heim; wörtlich waere falsch. Heimkehr statt Kopie.
+   Korrektur-Satz: `Transposition, nicht Kopie; Tonika-Pflicht.`
+2. Missverstaendnis: Langsam heisst unwichtig.
+   Korrektur: Grave-Einleitung praegt Pathos; Tempo taeuscht. Funktion zaehlt.
+   Korrektur-Satz: `Einleitung als Motto; Tempo nicht Wert.`
 
-## Schritt 7 — szenario: Klausurtransfer: Sonatenhauptsatzform hoeren: Exposition, Durchfuehrung, Reprise — Orchesterchef im Musikverein
-ROLLE: Du bist Orchesterchef im Musikverein und verteidigst deine Entscheidung vor der Pruefungskommission.
-SITUATION: In Wiener Musikverein, Beethoven Pathetique (1. Satz, T.1-132) musst du in zusammenhaengenden deutschen Saetzen (ca. 90 Sekunden) Diagnose, Massnahme und Target (Exposition T.1-132, Seitensatz Es-Dur, 90-Sekunden-Formhoeren) vorstellen und mit Fachsprache begruenden.
+## Schritt 7 — szenario: Klausurtransfer — Kurator Beethovenhaus
+ROLLE: Du bist Kurator Beethovenhaus und verteidigst deine Entscheidung vor der Pruefungskommission.
+SITUATION: In Bonn musst du 90 Sekunden lang Expo, Ferne und Target (i-III, 3 Quinten) verteidigen.
 RUBRIC (30 XP): Diagnose mit Fachbegriffen (8 XP) | Massnahme mit Target-Beleg (10 XP) | Verfahrenswahl im Vergleich (7 XP) | Fachsprachlicher Vortrag (5 XP).
 
-## Schritt 8 — reflexion: Takeaway & Reflexion — Pokal oder Pitstop in Wiener Musikverein
+`Klausur-Satz: AFB-III-Mustersatz: Die Versoehnung wirkt, weil Seitensatz von III nach i transponiert und 3-Quinten-Ferne zurueckkehrt; Kette sichert volle Punktzahl.`
+
+## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY (Kernzusammenfassung):
 
-Grenze frueh sichern, Lage spaet nutzen: Das Target (Exposition T.1-132, Seitensatz Es-Dur, 90-Sekunden-Formhoeren) misst den Unterschied, das Verfahren traegt das Urteil. Takeaway-Satz: `Wer die Grenze sichert und die Lage nutzt, holt in Wiener Musikverein den Pokal.`
+Zwei Themen, drei Fernen, eine Heimkehr: Exposition verspricht, Durchfuehrung entfernt, Reprise erloest. Wer Uhr liest, versteht Sonate. Takeaway-Satz: `Wer die Grenze sichert und die Lage nutzt, holt den Pokal.`
+
+`Klausur-Satz: Metakern: Sonate ist Tonarten-Drama; wer Uhr liest, versteht jede Reprise.`
 
 REFLEXION (2 Fragen):
 1. Selbstkontrolle: Welcher Schritt fiel schwerer, die Sandkasten-Praezision (Schritt 4) oder die Verfahrenswahl im Duell (Schritt 5)?
