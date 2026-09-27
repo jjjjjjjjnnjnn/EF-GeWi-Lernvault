@@ -15,7 +15,7 @@ version: Lesson-v3
 
 <!-- Lesson-v3: 8 Schritte plus Anekdote und Fehlvorstellung; Fehlvorstellung zwischen Schritt 6 und 7 (Parser-Skip); interaktives [Werkzeug: <id>]; Gating: check/szenario nicht bestanden = Weiter gesperrt; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
-## Schritt 1 — entdecken
+## Schritt 1 — entdecken: Ziele & Phänomen-Einstieg
 
 ZIELE (drei messbare Ziele dieser Lektion):
 
@@ -25,7 +25,10 @@ ZIELE (drei messbare Ziele dieser Lektion):
 
 ### Hook / Phaenomen
 
-Stell dir vor: Es ist Samstagmorgen, das Regal im Supermarkt ist voll, niemand steht an, niemand hamstert. Vor achtzig Jahren war das Gegenteil normal: Schlangen, Bezugsscheine, leere Schaufenster. Im Juni 1948 fuellten sich die Laeden in Westdeutschland fast ueber Nacht — nicht weil ueber Nacht mehr produziert wurde, sondern weil sich die Spielregeln aenderten. Wie kann eine blosse Regel das Verhalten von Millionen Menschen so radikal veraendern? Und warum braucht eine freie Wirtschaft trotzdem einen Sozialstaat?
+Stell dir vor, du suchst in der Stadt eine Wohnung und siehst ein Schild mit Miete 11 Euro pro Quadratmeter, doch der Stadtrat beschliesst einen Deckel bei 8 Euro und verspricht billiges Wohnen fuer alle. Alle freuen sich zuerst ueber die niedrige Miete, aber nach wenigen Monaten verschwinden viele Angebote, die Schlangen bei jeder Besichtigung werden laenger und ein Schattenmarkt mit Abstandszahlungen und Gefaelligkeiten entsteht. Gleichzeitig fordert die Gewerkschaft 15 Euro Mindestlohn, weil der Lohn zum Leben reichen muss, waehrend kleine Betriebe warnen, dass sie bei diesem Lohn weniger Personal einstellen und ihre Preise erhoehen muessen. Beide Faelle zeigen denselben Mechanismus aus Signal und Anpassung: Ein staatlich fixierter Preis ersetzt das freie Signal aus Angebot und Nachfrage, die Mengen reagieren mit Ausweichen oder Verknappung, und am Ende muss jedes Urteil zwischen Effizienz und sozialem Ziel sorgfaeltig abgewogen werden.
+
+
+Ausgangslage aus der Vorlage: Stell dir vor: Es ist Samstagmorgen, das Regal im Supermarkt ist voll, niemand steht an, niemand hamstert. Vor achtzig Jahren war das Gegenteil normal: Schlangen, Bezugsscheine, leere Schaufenster. Im Juni 1948 fuellten sich die Laeden in Westdeutschland fast ueber Nacht — nicht weil ueber Nacht mehr produziert wurde, sondern weil sich die Spielregeln aenderten. Wie kann eine blosse Regel das Verhalten von Millionen Menschen so radikal veraendern? Und warum braucht eine freie Wirtschaft trotzdem einen Sozialstaat?
 
 ### Fachbegriff & Definition
 
@@ -37,7 +40,7 @@ Der Kernmechanismus laeuft in drei Stufen: **Anreiz, Koordination, Korrektur**. 
 
 Klausur-Satz: `Die Soziale Marktwirtschaft legitimiert sich durch zwei Versprechen: Effizienz durch Wettbewerb und Gerechtigkeit durch sozialen Ausgleich.`
 
-## Schritt 2 — entdecken
+## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
 
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
@@ -57,30 +60,34 @@ PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
 Die Begriffe greifen ineinander: Der **Ordnungsrahmen** ermoeglicht **Wettbewerb**, Wettbewerb erzeugt ueber den **Preismechanismus** ein Gleichgewicht $p_G$ und $q_G$. Die **Tarifautonomie** loest die Lohnfindung aus dem Staat heraus und verlagert sie zu den Sozialpartnern. Der **sozialstaatliche Ausgleich** faengt Haerten auf, ohne den Preismechanismus grundsaetzlich ausser Kraft zu setzen. Wer in der Klausur einen Eingriff prueft, muss deshalb immer fragen: Stoert er den Mechanismus nur punktuell oder zerstoert er ihn?
 
+Punkte-Hinweis: Nenne $Gleichgewichtspreis$ mit $p_N(q) = p_A(q)$ und beziffere $Ueberhang$ mit $q_A - q_N$; erst die Zahl plus Deutung am Kriterium gibt volle Punkte.
+
 Klausur-Satz: `Der Staat setzt den Ordnungsrahmen, greift aber nicht direkt in Preise und Löhne ein.`
 
-## Schritt 3 — entdecken
+## Schritt 3 — entdecken: Kernkonzept & Wirkungsmodell
 
 TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
 ### Hook / Phaenomen
 
-Fuenfzehn Euro Mindestlohn — Rettung vor Armut oder Jobkiller? Gewerkschaften jubeln, Verbaende warnen vor Entlassungen, Oekonomen streiten mit Modellen. Beide Seiten berufen sich auf dieselbe Ordnung. Der Streit laesst sich nur entscheiden, wenn man den Eingriff sauber durch den Preismechanismus hindurchdenkt.
+15 Euro Mindestlohn — Rettung vor Armut oder Jobkiller? Wettbewerb schafft Wohlstand — doch wer faengt die Schwaechsten auf? Markt oder Staat — wer spielt, wer pfeift?
 
-### Fachbegriff & Definition
+### Spiel-Aufgabe mit [Werkzeug: markt-sim]
 
-Der **Gleichgewichtspreis** $p_G$ ist der Preis, bei dem **Nachfragemenge gleich Angebotsmenge** ist: $p_N(q) = p_A(q)$ mit Menge $q_G$. Ein **Mindestpreis** $p_{min} > p_G$ setzt dieses Raeumen ausser Kraft. Es entsteht ein **Angebotsueberhang** von $q_A - q_N > 0$. Auf dem Arbeitsmarkt heisst das: Zum Lohn $p_{min}$ bieten mehr Menschen Arbeit an, als Unternehmen nachfragen — moegliche **Beschaeftigungsverluste** gegen **Lohnschutz**.
+Oeffne [Werkzeug: markt-sim]. Ziehe den Lohn-Regler von $p_G = 20$ auf $p_{min} = 25$. Beobachte $q_A = 15$ gegen $q_N = 7{,}5$ und $q_A - q_N = 7{,}5$ als Beschaeftigungsrisiko. Schalte danach die Ausgleichs-Ebene zu: Steuersatz und Transfer heben das verfuegbare Einkommen, ohne $p_N(q) = p_A(q)$ zu zerstoeren. Vergleiche Effizienz gegen Gerechtigkeit.
 
-### Wirkungsgefuege / Modell
+### Aha-Moment & Gesetz
 
-Denke in Kausalkette: **Eingriff, Mengenreaktion, Bewertung**. Erstens fixiert der Staat $p_{min} = 25$ oberhalb von $p_G = 20$ aus $40 - 2q = 10 + q$, also $q_G = 10$. Zweitens reagieren die Mengen: $q_A = 15$, $q_N = 7{,}5$, Ueberhang $7{,}5$ Einheiten. Drittens wird bewertet: Nach dem Kriterium **Allokationseffizienz** liegt ein Wohlfahrtsverlust vor, nach dem Kriterium **Verteilungsgerechtigkeit** ein Schutz vor Armut trotz Arbeit. Genau diese Spannung macht die Soziale Marktwirtschaft aus — und genau sie verlangt in der Klausur ein **kriteriengeleitetes Urteil**, keine Bauchmeinung.
+Aha-Moment: Wettbewerb — Eingriff — Ausgleich. Erstens raeumt $p_N(q) = p_A(q)$ den Markt mit $p_G = 20$ und $q_G = 10$. Zweitens schuetzt $p_{min} = 25$ vor Armut trotz Arbeit, erzeugt aber $q_A - q_N > 0$. Drittens faengt der Sozialstaat mit Umverteilung auf — Schiedsrichter, nicht Spieler. Gesetz: $Sozial \iff Wettbewerb + Ausgleich$ nach Kriterium Verbindung von Effizienz und Gerechtigkeit.
 
 ```diagram
-  Ordnung [Wettbewerb + Ausgleich]
-  Ordnung -> Preis p -> Gleichgewicht pG, qG
-  Mindestpreis pmin > pG -> Ueberhang qA - qN
-  Ueberhang -> Urteil (Effizienz vs. Gerechtigkeit)
+  Ordnung [Wettbewerb + Tarifautonomie]
+  Ordnung -> Markt [$p_N(q) = p_A(q)$ zu $p_G = 20$, $q_G = 10$]
+  Markt -> Eingriff [$p_{min} = 25$ + $q_A - q_N = 7{,}5$]
+  Eingriff -> Urteil [Effizienz vs Verteilung + Ausgleich]
 ```
+
+Kausalkette: Fixpreis ungleich $p_N(q) = p_A(q)$ — Mengen reagieren mit $q_A - q_N$ — Deutung am Kriterium Effizienz gegen Sozialziel; Abgrenzung zu $Gini$ und $U = \sum(Lust - Leid)$ steht vor jeder Rechnung.
 
 Klausur-Satz: `Tarifautonomie heißt: Löhne handeln Gewerkschaften und Arbeitgeber ohne den Staat aus.`
 
@@ -90,24 +97,24 @@ Der Begriff „Soziale Marktwirtschaft" geht auf Alfred Müller-Armack zurück, 
 
 Bezug zum Konzept: `Das Beispiel zeigt, wie aus Beobachtung ein pruefbares Verfahren mit $x_1$ und $x_2$ entsteht.`
 
-## Schritt 4 — ausprobieren
+## Schritt 4 — ausprobieren: Interaktive Praxis & Markt-Labor
 
 BEISPIEL (geleitete Aufgabe mit Werkzeug):
 
-[Werkzeug: markt]
+[Werkzeug: markt-sim]
 
-AUFGABE (AFB II): Es gelten $p_N(q) = 40 - 2q$ und $p_A(q) = 10 + q$ ($p$ in Euro, $q$ in Mengeneinheiten). Bestimmen Sie $p_G$ und $q_G$ aus $p_N(q) = p_A(q)$. Pruefen Sie danach Angebot und Nachfrage beim Mindestpreis $p = 25$.
+Ziehe im Tool den Mindestpreis-Regler von $p_G$ nach oben und beobachte live, wie $q_A - q_N$ als Ueberhang waechst; ziehe danach den Hoechstpreis-Regler von $p_G$ nach unten und notiere Mangel, Schlange und Schattenmarkt.
+
+AUFGABE Spiel-Raetsel (AFB II): Stelle im Tool $p_N(q) = 40 - 2q$ und $p_A(q) = 10 + q$ ein. Finde $p_G$ und $q_G$, ziehe dann auf Mindestlohn $p = 25$. Miss $q_A - q_N$ und entscheide per Regler, wie viel Transfer noetig ist, damit Schutz ohne maximale Beschaeftigungsluecke gelingt.
 
 HILFE:
-1. Schritt 1: Rekonstruiere den Fall und notiere die gegebenen Groessen $x_1$ und $x_2$.
-2. Schritt 2: Wende die Leitformel an und berechne $d = x_2 - x_1$.
-3. Schritt 3: Deute das Ergebnis am Kriterium und formuliere den Klausur-Satz.
+1. Schritt 1: Loese $p_N(q) = p_A(q)$ zu $p_G = 20$, $q_G = 10$. 2. Schritt 2: Stelle $p = 25$ ein, lies $q_A$ und $q_N$. 3. Schritt 3: Berechne $q_A - q_N$, wende Kriterium Effizienz gegen Gerechtigkeit an und formuliere den Klausur-Satz.
 
-MUSTERLOESUNG: Aus $40 - 2q = 10 + q$ folgt $30 = 3q$, also $q_G = 10$ und $p_G = 20$. Bei $p = 25$ gilt $q_A = 15$ und $q_N = 7{,}5$; es entsteht ein Angebotsueberhang von $7{,}5$ Einheiten. Der Mindestpreis setzt die Raeumungsfunktion des Preises ausser Kraft.
+MUSTERLOESUNG: Es gilt $q_G = 10$ und $p_G = 20$ aus $40 - 2q = 10 + q$. Bei $p = 25$ folgt $q_A = 15$, $q_N = 7{,}5$, Ueberhang $7{,}5$. Der Mindestlohn schuetzt vor Armut, greift aber in Preisbildung und Tarifautonomie ein — Wettbewerb plus sozialer Ausgleich als Urteil.
 
 Klausur-Satz: `Wettbewerb schafft Wohlstand, der Sozialstaat fängt die Schwächsten auf — der Staat ist Schiedsrichter, nicht Spieler.`
 
-## Schritt 5 — ausprobieren
+## Schritt 5 — ausprobieren: Verfahrensvergleich & Abgrenzung
 
 VERGLEICH (Wahl des Verfahrens, A gegen B):
 
@@ -122,7 +129,7 @@ ANTWORT: Aufgabe A erfordert Verfahren (i), weil eine Rangfolge aus der Form gen
 
 Klausur-Satz: `Der Mindestlohn schützt vor Armut trotz Arbeit, greift aber in Preisbildung und Tarifautonomie ein.`
 
-## Schritt 6 — check
+## Schritt 6 — check: Verständnisprüfung
 
 CHECK (drei Fragen mit Antworten):
 
@@ -142,14 +149,14 @@ Klausur-Satz: `Der Preismechanismus gleicht Angebot und Nachfrage über den Prei
 2. Fehlkonzept: Ein einzelner Wert wie $Gini$ oder $p_G$ spreche bereits fuer sich und brauche kein Kriterium.
    Korrektur-Satz: `Erst die Deutung der Kennzahl am Kriterium mit $d = x_2 - x_1$ ergibt ein klausurtaugliches Urteil.`
 
-## Schritt 7 — szenario
+## Schritt 7 — szenario: Klausurtransfer & Rubric
 
 ROLLE: Du bist Abgeordnete/r im Bundestag, Ausschuss für Arbeit und Soziales
 SITUATION: Debatte: Soll der Mindestlohn auf 15 Euro steigen Halte ein 2-Minuten-Plädoyer (dafür oder dagegen). Nutze die Sozial-Brille aus Schritt 5 und die Beispiel-Sätze aus Schritt 4
 AUFGABE (AFB III): Verfasse eine zusammenhaengende Darstellung von etwa 150 Woertern mit Kriterium, Anwendung und Urteil.
 RUBRIC (30 XP): These in Satz 1 (darstellen) | zwei Fachbegriffe (z. B. Tarifautonomie, Kaufkraft, Wettbewerbsfähigkeit) | ein Beleg/Beispiel | Urteil mit Kriterium (beurteilen).
 
-## Schritt 8 — entdecken
+## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY (Kernbotschaft in einem Kasten):
 

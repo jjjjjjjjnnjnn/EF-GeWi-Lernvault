@@ -15,7 +15,7 @@ version: Lesson-v3
 
 <!-- Lesson-v3: 8 Schritte plus Anekdote und Fehlvorstellung; Fehlvorstellung zwischen Schritt 6 und 7 (Parser-Skip); interaktives [Werkzeug: <id>]; Gating: check/szenario nicht bestanden = Weiter gesperrt; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
-## Schritt 1 — entdecken
+## Schritt 1 — entdecken: Ziele & Phänomen-Einstieg
 
 ZIELE (drei messbare Ziele dieser Lektion):
 
@@ -25,7 +25,10 @@ ZIELE (drei messbare Ziele dieser Lektion):
 
 ### Hook / Phaenomen
 
-Fuenf Prozent, voelkische Parolen, Zweifel an Wahl und Minderheit: verbieten oder streiten? Weimar schuetzt Feinde, Bonn lernt daraus. Darf Demokratie Feinde ausschliessen, um frei zu bleiben?
+Stell dir vor, ein Wagen rast auf fuenf Menschen zu und du stehst an der Weiche und kannst den Wagen auf ein Gleis mit nur einer Person lenken, waehrend die Gruppe hinter dir ruft, dass Rechnen doch klar sei und fuenf Leben mehr zaehlten als eines. Gleichzeitig weisst du aus deiner Sozialisation in Familie und Schule und Freundeskreis, dass jeder Mensch Wuerde traegt und niemand zum blossen Mittel fuer andere gemacht werden darf. Genau hier kollidieren zwei Pruefungen desselben Falles: Die eine Bilanz zaehlt Lust und Leid fuer alle Betroffenen zusammen, die andere Pruefung fragt, ob deine Maxime als allgemeines Gesetz gewollt werden kann. In dieser Lektion lernst du den Mechanismus aus Bilanz und Probe und Abwaegung, damit du in der Klausur beide Brillen sauber trennst und dein Urteil an einem expliziten Kriterium begruendest.
+
+
+Ausgangslage aus der Vorlage: Fuenf Prozent, voelkische Parolen, Zweifel an Wahl und Minderheit: verbieten oder streiten? Weimar schuetzt Feinde, Bonn lernt daraus. Darf Demokratie Feinde ausschliessen, um frei zu bleiben?
 
 ### Fachbegriff & Definition
 
@@ -37,7 +40,7 @@ Der Mechanismus laeuft in drei Stufen: **Erkennen, Pruefen, Schuetzen**. Erstens
 
 Klausur-Satz: `Extremismus richtet sich gegen die freiheitliche demokratische Grundordnung selbst, während Radikalismus systemimmanente Grundkritik übt.`
 
-## Schritt 2 — entdecken
+## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
 
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
@@ -57,30 +60,34 @@ Wer darf verbieten, wer darf beobachten? Ohne Huerden wird Schutz zur Willkuer. 
 
 Die Begriffe greifen ineinander: **FdGO** definiert mit $Kern = unantastbar$ das Schutzgut. **Radikalismus** bleibt drinnen, **Extremismus** geht dagegen an. **Verfassungsschutz** beobachtet, **Parteiverbot** beendet mit $Letzt = Karlsruhe$. Wer in der Klausur prueft, muss deshalb immer fragen: Liegt Angriff auf Kern plus reale Chance vor?
 
+Punkte-Hinweis: Nenne $Utilitarismus$ mit $U = \sum(Lust - Leid)$ und $Kategorischer Imperativ$ mit $M \to G$; erst beide Pruefungen plus Kriterium wie Menschenwuerde gibt volle Punkte.
+
 Klausur-Satz: `Ein Parteiverbot nach Art. 21 II GG setzt voraus, dass eine Partei die fdGO beeinträchtigt oder beseitigt und dafür eine reale Durchsetzungschance besteht.`
 
-## Schritt 3 — entdecken
+## Schritt 3 — entdecken: Kernkonzept & Wirkungsmodell
 
 TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
 ### Hook / Phaenomen
 
-NPD verfassungswidrig, doch Verbot scheitert an Chance: Wie kann falsch legal bleiben? Publikum ruft weg damit, Gericht ruft Potentialitaet. Genau hier hilft Doppelpruefung.
+Partei will Demokratie abschaffen — verbieten oder aushalten? Trolley der Toleranz — wer schuetzt Freiheit vor ihren Feinden?
 
-### Fachbegriff & Definition
+### Spiel-Aufgabe mit [Werkzeug: balance-board]
 
-Das **Doppelhuerden-Modell** verlangt Widrigkeit plus Durchsetzungschance als kumulative Bedingung. **Verfassungswidrigkeit** meint $Programm = gegenFdGO$ als Inhalt. **Potentialitaet** meint $Chance = real$ als Kraft. Die Formel lautet $Verbot \iff widrig + maechtig$.
+Oeffne [Werkzeug: balance-board]. Lege Meinungsfreiheit gegen Schutzauftrag. Gewichte Verbot nach $Art21 + II$, Beobachtung, Bildung von 1 bis 5. Teste: Nur $BVerfG = Verbot$, Verfassungsschutz nur praeventiv. Kippe die Waage erst bei $FreiheitlichDemokratisch = angegriffen$.
 
-### Wirkungsgefuege / Modell
+### Aha-Moment & Gesetz
 
-Denke in Kausalkette: **Inhalt, Kraft, Folge**. Erstens belegt Inhalt mit $Parolen = voelkisch + WahlZweifel$ den Verstoss. Zweitens fehlt Kraft mit $Stimmen = klein + Struktur = schwach$ die Chance. Drittens folgt $Urteil = beobachten + bilden$ statt Verbot nach **Verhaeltnismaessigkeit**. Genau diese Staffel verlangt in der Klausur ein **kriteriengeleitetes Urteil**, keinen Reflex.
+Aha-Moment: Freiheit — Gefahr — Schutz. Erstens garantiert Demokratie Streit. Zweitens markiert Extremismus die Grenze mit $Verbot = UltimaRatio$. Drittens staffelt Kriterium Wehrhaftigkeit: Bildung vor Beobachtung vor Verbot. Gesetz: $Schutz = Bildung + Beobachtung + Verbot$.
 
 ```diagram
-  Fall [Programm + Stimmen + Struktur]
-  Fall -> Inhalt [Widrigkeit gegen fdGO]
-  Inhalt -> Kraft [Potentialitaet real]
-  Kraft -> Urteil (Verbot oder Staffel)
+  Streit [Meinung + Partei + Demo]
+  Streit -> Waage [Freiheit vs Schutz 1 bis 5]
+  Waage -> Staffel [Bildung + Beobachtung + $Art21 + II$]
+  Staffel -> Urteil [nur $BVerfG$ verbietet]
 ```
+
+Kausalkette: Fall schildern — Bilanz mit $U = \sum(Lust - Leid)$ gegen Probe mit $M \to G$ — Urteil am Kriterium Menschenwuerde; Abgrenzung zu $p_N(q) = p_A(q)$ mit $q_A - q_N$ und zu $Gini$ steht vor jeder Stellungnahme.
 
 Klausur-Satz: `Wehrhafte Demokratie schützt sich durch Parteiverbot (Art. 21 II, nur BVerfG), Beobachtung durch den Verfassungsschutz und politische Bildung.`
 
@@ -90,24 +97,24 @@ Der Begriff „wehrhafte Demokratie" steht gar nicht im Grundgesetz — er besch
 
 Bezug zum Konzept: `Das Beispiel zeigt, wie aus Beobachtung ein pruefbares Verfahren mit $x_1$ und $x_2$ entsteht.`
 
-## Schritt 4 — ausprobieren
+## Schritt 4 — ausprobieren: Interaktive Praxis & Urteils-Waage
 
 BEISPIEL (geleitete Aufgabe mit Werkzeug):
 
-[Werkzeug: lego]
+[Werkzeug: balance-board]
 
-AUFGABE (AFB II): Rekonstruieren Sie den zentralen Begriff des Themas in eigenen Worten und wenden Sie ihn auf ein aktuelles Fallbeispiel an. Belegen Sie jede These mit einem Kriterium und schliessen Sie mit einem begruendeten Urteil (AFB III).
+Lege im Tool Pro- und Contra-Argumente auf die Waage und gewichte jedes Argument von 1 bis 5; veraendere die Gewichte Schritt fuer Schritt und beobachte, wann das Urteil zwischen Erlaubnis und Verbot oder zwischen Massnahme und Verzicht umschlaegt.
+
+AUFGABE Waage-Raetsel (AFB II): Lege Extremismus-Verdacht auf [Werkzeug: balance-board]. Gewichte Bildung, Beobachtung, Verbot und entscheide, wann praiseitiv genuegt und wann $BVerfG$-Verbot nach $Art21 + II$ noetig ist.
 
 HILFE:
-1. Schritt 1: Rekonstruiere den Fall und notiere die gegebenen Groessen $x_1$ und $x_2$.
-2. Schritt 2: Wende die Leitformel an und berechne $d = x_2 - x_1$.
-3. Schritt 3: Deute das Ergebnis am Kriterium und formuliere den Klausur-Satz.
+1. Schritt 1: Sammle Belege fuer Gefahr. 2. Schritt 2: Gewichte drei Stufen 1 bis 5. 3. Schritt 3: Deute an Wehrhaftigkeit und formuliere den Klausur-Satz.
 
-MUSTERLOESUNG: Die Musterloesung benennt zunaechst das Kriterium, ordnet den Fall unter $x_1$ und $x_2$ ein und berechnet die Differenz $d = x_2 - x_1$ als Beleg. Das Urteil folgt logisch aus dem Kriterium und nennt eine begruendete Gewichtung.
+MUSTERLOESUNG: Beobachtung ist praeventiv ohne Verbotsfolge; Verbot nur durch $BVerfG$ nach $Art21 + II$. Waage kippt zu Verbot erst bei aktivem Kampf gegen Ordnung — sonst Bildung plus Beobachtung.
 
 Klausur-Satz: `Die Beobachtung durch den Verfassungsschutz ist präventiv und trifft keine Verbotsentscheidung; ein Verbot verhängt allein das Bundesverfassungsgericht nach Art. 21 II GG.`
 
-## Schritt 5 — ausprobieren
+## Schritt 5 — ausprobieren: Verfahrensvergleich & Abgrenzung
 
 VERGLEICH (Wahl des Verfahrens, A gegen B):
 
@@ -122,7 +129,7 @@ ANTWORT: Aufgabe A erfordert Verfahren (i), weil eine Rangfolge aus der Form gen
 
 Klausur-Satz: `Nur das Bundesverfassungsgericht darf ein Parteiverbot verhängen, und es verlangt zusätzlich zur Verfassungswidrigkeit eine reale Durchsetzungschance.`
 
-## Schritt 6 — check
+## Schritt 6 — check: Verständnisprüfung
 
 CHECK (drei Fragen mit Antworten):
 
@@ -142,7 +149,7 @@ Klausur-Satz: `Verfassungswidrigkeit allein genügt nicht; erst die fehlende Pot
 2. Fehlkonzept: Ein einzelner Wert wie $Gini$ oder $p_G$ spreche bereits fuer sich und brauche kein Kriterium.
    Korrektur-Satz: `Erst die Deutung der Kennzahl am Kriterium mit $d = x_2 - x_1$ ergibt ein klausurtaugliches Urteil.`
 
-## Schritt 7 — szenario
+## Schritt 7 — szenario: Klausurtransfer & Rubric
 
 ROLLE: Du bist Sachverständige/r in einer Anhörung des Innenausschusses zur Frage, ob gegen eine demokratiefeindliche Partei ein Verbotsverfahren eingeleitet werden soll.
 SITUATION: Die Partei erreicht in Umfragen fünf Prozent, verbreitet völkisch-nationalistische Positionen und stellt Wahlen sowie Minderheitenrechte infrage. Ein Teil der Öffentlichkeit fordert ein sofortiges Verbot, ein anderer warnt vor einem „Wahlkampfhelfer-Effekt" und vor einem Eingriff in die Opposition. Beurteilen Sie in einer zusammenhängenden Stellungnahme (ca. 150 Wörter), ob ein Verbotsverfahren eingeleitet werden sollte, und berücksichtigen Sie dabei die Verhältnismäßigkeit.
@@ -152,7 +159,7 @@ RUBRIC (30 XP): Benennung der Rechtslage — nur BVerfG, Art. 21 II, doppelte H�
 AUFGABE (AFB III): Verfasse eine zusammenhaengende Darstellung von etwa 150 Woertern mit Kriterium, Anwendung und Urteil.
 RUBRIC (30 XP): These mit Kriterium (5 XP) | Rekonstruktion mit $x_1$, $x_2$ (10 XP) | Anwendung mit $d = x_2 - x_1$ (10 XP) | Fazit mit Fachbegriffen (5 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY (Kernbotschaft in einem Kasten):
 

@@ -15,7 +15,7 @@ version: Lesson-v3
 
 <!-- Lesson-v3: 8 Schritte plus Anekdote und Fehlvorstellung; Fehlvorstellung zwischen Schritt 6 und 7 (Parser-Skip); interaktives [Werkzeug: <id>]; Gating: check/szenario nicht bestanden = Weiter gesperrt; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
-## Schritt 1 — entdecken
+## Schritt 1 — entdecken: Ziele & Phänomen-Einstieg
 
 ZIELE (drei messbare Ziele dieser Lektion):
 
@@ -25,7 +25,10 @@ ZIELE (drei messbare Ziele dieser Lektion):
 
 ### Hook / Phaenomen
 
-Wahlurne als Muelltonne, Sofa gegen Demo, Handy gegen Plakat: Ein Bild sagt Faulheit, meint aber Wandel. Lacht der Zeichner nur oder kritisiert er Macht? Genau hier beginnt methodisches Sehen.
+Stell dir vor, du sitzt in der Klausur und hast die Argumente im Kopf, doch auf dem Papier entsteht nur ein langer Absatz ohne These und ohne Beleg und ohne Urteil, und die Punkte fuer Darstellung und Begruendung gehen verloren. Viele Schueler kennen den Stoff aus Familie und Unterricht und Alltag, aber sie bauen ihre Saetze ohne Plan und mischen Beschreibung mit Deutung und Meinung mit Pruefung. In dieser Lektion lernst du den Mechanismus aus Baustein und Reihenfolge und Pruefung: Zuerst setzt du eine klare These mit Fachbegriff, dann legst du einen Beleg aus Material oder Beispiel dazu, und erst danach formulierst du ein Urteil an einem Kriterium. Wer dieses Handwerk beherrscht, schreibt in jeder Aufgabe schneller und holt die Punkte fuer Operator und Struktur und Sprache.
+
+
+Ausgangslage aus der Vorlage: Wahlurne als Muelltonne, Sofa gegen Demo, Handy gegen Plakat: Ein Bild sagt Faulheit, meint aber Wandel. Lacht der Zeichner nur oder kritisiert er Macht? Genau hier beginnt methodisches Sehen.
 
 ### Fachbegriff & Definition
 
@@ -37,7 +40,7 @@ Der Mechanismus laeuft in drei Stufen: **Zeigen, Meinen, Pruefen**. Erstens zeig
 
 Klausur-Satz: `Die Karikaturanalyse erfolgt in drei Schritten: beschreiben, analysieren und beurteilen, wobei die Zeit im Verhaeltnis 30 zu 40 zu 30 verteilt wird.`
 
-## Schritt 2 — entdecken
+## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
 
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
@@ -57,30 +60,34 @@ Ohne Handwerk wird aus Analyse Geschwafel. Was darf in Beschreibung stehen, was 
 
 Die Begriffe greifen ineinander: **Beschreibung** sichert mit $Sehen = sachlich$ das Fundament. **Symboldeutung** und **Kontexteinordnung** bauen mit $D = B + Wissen$ die Bruecke zur Wirklichkeit. **Intention** und **Teilhabe** schliessen mit $Sinn + Massstab$ das Urteil. Wer in der Klausur arbeitet, muss deshalb immer fragen: Ist jede Deutung durch einen Beleg gedeckt?
 
+Punkte-Hinweis: Nenne $These$ plus $Beleg$ plus $Urteil$ als Bausteine und markiere Operator und Fachbegriff; erst vollstaendige Struktur plus Kriterium gibt volle Punkte.
+
 Klausur-Satz: `Die Zuspitzung ist kein Mangel, sondern Methode: Sie macht Strukturen sichtbar, die Statistiken nur abstrakt zeigen.`
 
-## Schritt 3 — entdecken
+## Schritt 3 — entdecken: Kernkonzept & Wirkungsmodell
 
 TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
 ### Hook / Phaenomen
 
-Waehlen kein Bock, Demo bin dabei: Faulheit oder neuer Stil? Die Karikatur spitzt zu, doch die Wirklichkeit ist gemischt. Trifft die Pointe oder verzerrt sie? Genau hier hilft das Dreischritt-Modell.
+Waage schief, Leiter kurz — Witz oder Anklage? Ein Bild, tausend Worte — doch welches Symbol meint Wirklichkeit?
 
-### Fachbegriff & Definition
+### Spiel-Aufgabe mit [Werkzeug: balance-board]
 
-Das **Dreischritt-Modell** trennt Sehen, Deuten und Werten mit klarer Zeit und klarer Sprache. Es fordert $t1 = Beschreibung$, $t2 = Analyse$ und $t3 = Urteil$ mit $T = t1 + t2 + t3$. Jede Deutung braucht $D = B$ aus dem Bild plus Realbezug. Die Formel lautet $Gut \iff Beleg + Kontext + Kriterium$.
+Oeffne [Werkzeug: balance-board]. Lege Symbol Waage gegen Symbol Leiter-gegen-Aufzug. Gewichte Ueberzeichnung, Realbezug, Kritik je 1 bis 5. Zerlege in drei Schritten: Beschreiben — Deuten — Urteilen. Jedes Symbol braucht $Deutung + Beleg$ aus Wirklichkeit.
 
-### Wirkungsgefuege / Modell
+### Aha-Moment & Gesetz
 
-Denke in Kausalkette: **Sichern, Oeffnen, Entscheiden**. Erstens sichert $t1$ mit $fuenfSaetze = Figur + Objekt + Text$ das Sichtbare ohne Wertung. Zweitens oeffnet $t2$ mit $Urne = Muell + Nichtwahl$ und $SofaDemo = Wandel$ den Sinn im Kontext Partizipationswandel. Drittens entscheidet $t3$ mit $Teilhabe = Pro + Contra$ ob Warnung berechtigt bleibt. Genau diese Disziplin verlangt in der Klausur ein **kriteriengeleitetes Urteil**, keine Meinung.
+Aha-Moment: Bild — Bruch — Urteil. Erstens ueberzeichnet $Symbol = Wirklichkeit + Spitze$. Zweitens bricht $Leiter \neq Aufzug$ das Versprechen gleicher Chancen. Drittens urteilt Kriterium Darstellungsabsicht: Kritisieren durch Zuspitzung. Gesetz: $Kritik = Symbol + Deutung + Beleg$.
 
 ```diagram
-  Bild [Figur + Objekt + Text]
-  Bild -> Analyse [Symbol + Kontext + Intention]
-  Analyse -> Urteil [Kriterium + Pro + Contra]
-  Urteil -> Zeit T = t1 + t2 + t3
+  Bild [Waage + Leiter + Aufzug]
+  Bild -> Waage [Symbol A vs B 1 bis 5]
+  Waage -> Deutung [$Deutung + Realbezug$]
+  Deutung -> Urteil [Absicht + Kritik]
 ```
+
+Kausalkette: Material sichten — Bausteine ordnen zu These plus Beleg plus Urteil — Pruefung an Operator und Kriterium; Abgrenzung zu $p_N(q) = p_A(q)$ mit $q_A - q_N$, zu $Gini$ und zu $U = \sum(Lust - Leid)$ steht vor jedem Transfer.
 
 Klausur-Satz: `Der Karikaturist kritisiert ein Phaenomen, indem er es ueberzeichnet; jedes Symbol braucht eine Deutung mit konkretem Realbezug.`
 
@@ -90,24 +97,24 @@ Das Wort „Karikatur" kommt aus dem Italienischen: „caricare" bedeutet „bel
 
 Bezug zum Konzept: `Das Beispiel zeigt, wie aus Beobachtung ein pruefbares Verfahren mit $x_1$ und $x_2$ entsteht.`
 
-## Schritt 4 — ausprobieren
+## Schritt 4 — ausprobieren: Interaktive Praxis & Satz-Labor
 
 BEISPIEL (geleitete Aufgabe mit Werkzeug):
 
-[Werkzeug: balance]
+[Werkzeug: lego]
 
-AUFGABE (AFB II): Analysieren Sie eine Karikatur zur sozialen Ungleichheit in drei Schritten: beschreiben ($t_1$), analysieren ($t_2$), beurteilen ($t_3$). Ordnen Sie jedes Symbol $D$ einem Beleg $B$ zu und formulieren Sie die Intention des Karikaturisten.
+Ziehe im Tool Satzbausteine aus These und Beleg und Urteil in die richtige Reihenfolge und pruefe per Klick, ob Operator und Fachbegriff und Kriterium vollstaendig sind; verbessere die Reihenfolge, bis jeder Baustein am richtigen Platz liegt.
+
+AUFGABE Waage-Raetsel (AFB II): Analysiere auf [Werkzeug: lego] eine Verteilungs-Karikatur in drei Schritten. Gewichte Symbole, ordne Realbezug zu und benenne die Kritik des Zeichners.
 
 HILFE:
-1. Schritt 1: Rekonstruiere den Fall und notiere die gegebenen Groessen $x_1$ und $x_2$.
-2. Schritt 2: Wende die Leitformel an und berechne $d = x_2 - x_1$.
-3. Schritt 3: Deute das Ergebnis am Kriterium und formuliere den Klausur-Satz.
+1. Schritt 1: Beschreibe neutral ohne Deutung. 2. Schritt 2: Deute je Symbol mit Beleg. 3. Schritt 3: Urteile zur Absicht und formuliere den Klausur-Satz.
 
-MUSTERLOESUNG: Der Schritt beschreiben nennt nur Wahrnehmbares ohne Deutung. Der Schritt analysieren uebersetzt Waage als Verteilungsfrage und Leiter gegen Aufzug als ungleiche Startchancen. Das Urteil mit Zeitbudget $T = t_1 + t_2 + t_3$ bewertet die Meritokratiekritik kriteriengeleitet.
+MUSTERLOESUNG: Waage steht fuer Verteilung, Leiter gegen Aufzug fuer ungleiche Starts. Waage kippt zu Kritik mit $Kritik = Symbol + Deutung + Beleg$: Gleiches Versprechen bei ungleichen Chancen — Ueberzeichnung mit Realbeleg als Anklage.
 
 Klausur-Satz: `Die Waage steht fuer die Verteilungsfrage, Leiter gegen Aufzug fuer ungleiche Startchancen trotz gleichen Versprechens.`
 
-## Schritt 5 — ausprobieren
+## Schritt 5 — ausprobieren: Verfahrensvergleich & Abgrenzung
 
 VERGLEICH (Wahl des Verfahrens, A gegen B):
 
@@ -122,7 +129,7 @@ ANTWORT: Aufgabe A erfordert Verfahren (i), weil eine Rangfolge aus der Form gen
 
 Klausur-Satz: `Ein Verteilungskonflikt fragt nach der gerechten Aufteilung, ein Zielkonflikt nach der Prioritaet zwischen zwei erstrebenswerten Guetern.`
 
-## Schritt 6 — check
+## Schritt 6 — check: Verständnisprüfung
 
 CHECK (drei Fragen mit Antworten):
 
@@ -142,7 +149,7 @@ Klausur-Satz: `Ohne einen genannten Beurteilungsmassstab bleibt jede Stellungnah
 2. Fehlkonzept: Ein einzelner Wert wie $Gini$ oder $p_G$ spreche bereits fuer sich und brauche kein Kriterium.
    Korrektur-Satz: `Erst die Deutung der Kennzahl am Kriterium mit $d = x_2 - x_1$ ergibt ein klausurtaugliches Urteil.`
 
-## Schritt 7 — szenario
+## Schritt 7 — szenario: Klausurtransfer & Rubric
 
 ROLLE: Du bist Klausurteilnehmer/in und bearbeitest eine Karikatur-Aufgabe unter Zeitdruck.
 SITUATION: In der Klausur liegt eine selbst erstellte Karikatur vor: Eine Wahlurne ist als Muelltonne gezeichnet; ein junger Mensch sitzt mit dem Smartphone auf dem Sofa, waehrend draussen Gleichaltrige mit Plakaten demonstrieren. Die Unterschrift lautet sinngemaess „Waehlen Kein Bock. — Demo Bin dabei!". Bearbeiten Sie die Aufgabe in 15 Minuten: Beschreiben Sie die Karikatur in hoechstens fuenf Saetzen (AFB I, 6 BE), analysieren Sie die Symbole im Kontext des Partizipationswandels (AFB II, 10 BE) und beurteilen Sie ihre Aussage nach dem Kriterium der Teilhabe (AFB III, 8 BE).
@@ -152,7 +159,7 @@ RUBRIC (30 XP): Beschreibung ohne Deutung mit Figuren, Objekten und Text (6 XP) 
 AUFGABE (AFB III): Verfasse eine zusammenhaengende Darstellung von etwa 150 Woertern mit Kriterium, Anwendung und Urteil.
 RUBRIC (30 XP): These mit Kriterium (5 XP) | Rekonstruktion mit $x_1$, $x_2$ (10 XP) | Anwendung mit $d = x_2 - x_1$ (10 XP) | Fazit mit Fachbegriffen (5 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY (Kernbotschaft in einem Kasten):
 

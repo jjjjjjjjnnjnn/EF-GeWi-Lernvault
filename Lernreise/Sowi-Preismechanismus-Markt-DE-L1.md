@@ -15,7 +15,7 @@ version: Lesson-v3
 
 <!-- Lesson-v3: 8 Schritte plus Anekdote und Fehlvorstellung; Fehlvorstellung zwischen Schritt 6 und 7 (Parser-Skip); interaktives [Werkzeug: <id>]; Gating: check/szenario nicht bestanden = Weiter gesperrt; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
-## Schritt 1 — entdecken
+## Schritt 1 — entdecken: Ziele & Phänomen-Einstieg
 
 ZIELE (drei messbare Ziele dieser Lektion):
 
@@ -25,7 +25,10 @@ ZIELE (drei messbare Ziele dieser Lektion):
 
 ### Hook / Phaenomen
 
-Miete 11 Euro, Deckel 8 Euro: billiger wohnen oder gar nichts finden? Rom befahl Hoechstpreise, Haendler verschwanden, Schwarzmarkt bluehte. Kann ein Gesetz Knappheit verbieten? Genau hier prueft der Preis.
+Stell dir vor, du suchst in der Stadt eine Wohnung und siehst ein Schild mit Miete 11 Euro pro Quadratmeter, doch der Stadtrat beschliesst einen Deckel bei 8 Euro und verspricht billiges Wohnen fuer alle. Alle freuen sich zuerst ueber die niedrige Miete, aber nach wenigen Monaten verschwinden viele Angebote, die Schlangen bei jeder Besichtigung werden laenger und ein Schattenmarkt mit Abstandszahlungen und Gefaelligkeiten entsteht. Gleichzeitig fordert die Gewerkschaft 15 Euro Mindestlohn, weil der Lohn zum Leben reichen muss, waehrend kleine Betriebe warnen, dass sie bei diesem Lohn weniger Personal einstellen und ihre Preise erhoehen muessen. Beide Faelle zeigen denselben Mechanismus aus Signal und Anpassung: Ein staatlich fixierter Preis ersetzt das freie Signal aus Angebot und Nachfrage, die Mengen reagieren mit Ausweichen oder Verknappung, und am Ende muss jedes Urteil zwischen Effizienz und sozialem Ziel sorgfaeltig abgewogen werden.
+
+
+Ausgangslage aus der Vorlage: Miete 11 Euro, Deckel 8 Euro: billiger wohnen oder gar nichts finden? Rom befahl Hoechstpreise, Haendler verschwanden, Schwarzmarkt bluehte. Kann ein Gesetz Knappheit verbieten? Genau hier prueft der Preis.
 
 ### Fachbegriff & Definition
 
@@ -37,7 +40,7 @@ Der Mechanismus laeuft in drei Stufen: **Signal, Anpassung, Gleichgewicht**. Ers
 
 Klausur-Satz: `Der Preismechanismus koordiniert Angebot und Nachfrage über den Gleichgewichtspreis und sorgt im Modell des vollkommenen Marktes für eine effiziente Allokation der Güter.`
 
-## Schritt 2 — entdecken
+## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
 
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
@@ -57,30 +60,34 @@ Vier Funktionen, zwei Eingriffe, ein Schnittpunkt: Wer verwechselt, rechnet fals
 
 Die Begriffe greifen ineinander: **Nachfrage** und **Angebot** schneiden sich im **Gleichgewicht** mit $pG$ und $qG$. **Mindestpreis** belohnt Anbieter mit $pmin = hoch$ und schreckt Kaeufer mit $Menge = wenig$. **Hoechstpreis** schenkt Kaeufern mit $pmax = niedrig$ Hoffnung und nimmt Anbietern mit $Menge = knapp$ Anreiz. Wer in der Klausur rechnet, muss deshalb immer fragen: Liegt der Fixpreis ueber oder unter $pG$?
 
+Punkte-Hinweis: Nenne $Gleichgewichtspreis$ mit $p_N(q) = p_A(q)$ und beziffere $Ueberhang$ mit $q_A - q_N$; erst die Zahl plus Deutung am Kriterium gibt volle Punkte.
+
 Klausur-Satz: `Im Gleichgewicht entspricht die angebotene Menge der nachgefragten Menge, sodass weder ein Nachfrage- noch ein Angebotsüberhang besteht.`
 
-## Schritt 3 — entdecken
+## Schritt 3 — entdecken: Kernkonzept & Wirkungsmodell
 
 TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
 ### Hook / Phaenomen
 
-Mietendeckel 8 Euro bei Markt 11 Euro: Segen oder Schaden? Mieter jubeln, Bauherren stoppen, Suchende warten. Beide Seiten rufen Gerechtigkeit, doch Mengen sprechen anders. Genau hier hilft saubere Mengenrechnung.
+Miete 11 Euro, Deckel 8 Euro — billiger wohnen oder gar nichts finden? 15 Euro Mindestlohn — Jobkiller oder Fairnessgebot? Wer jubelt, wer wartet, wer verschwindet vom Markt?
 
-### Fachbegriff & Definition
+### Spiel-Aufgabe mit [Werkzeug: markt-sim]
 
-Das **Eingriffsmodell** prueft Mindestpreis und Hoechstpreis an Mengen und Folgen. Es startet mit $pG = 11$ als Anker und setzt $pmax = 8$ als Test. Es misst $Nachfrage = steigt$ und $Angebot = sinkt$ zu $Luecke = qN - qA$. Die Formel lautet $Wirksam \iff Fixpreis != pG$ mit Folge $Fehlallokation$.
+Oeffne [Werkzeug: markt-sim]. Ziehe den Mindestpreis-Regler von $p_G = 20$ auf $p = 25$. Beobachte $q_A = 15$ gegen $q_N = 7{,}5$ und den Ueberhang $q_A - q_N = 7{,}5$. Ziehe danach den Hoechstpreis-Regler von $p_G = 11$ auf $p = 8$ und notiere Mangel, Schlange und Schattenmarkt. Pruefe dabei stets $p_N(q) = p_A(q)$ als Anker.
 
-### Wirkungsgefuege / Modell
+### Aha-Moment & Gesetz
 
-Denke in Kausalkette: **Fixierung, Reaktion, Bewertung**. Erstens fixiert der Staat $pmax = 8$ unter $pG = 11$ aus Angebot und Nachfrage. Zweitens reagieren Mengen mit $qN = hoch$ und $qA = niedrig$, also $Mangel > 0$ plus $Schattenmarkt + Baustopp$. Drittens wertet **Effizienz gegen Sozialziel**: Kurzfristig gilt $Miete = billig$, langfristig $Wohnung = knapp$. Genau diese Spannung verlangt in der Klausur ein **kriteriengeleitetes Urteil**, keine Parole.
+Aha-Moment: Fixierung — Reaktion — Bewertung. Erstens fixiert der Staat $p_{min} > p_G$ oder $p_{max} < p_G$. Zweitens reagieren Mengen mit $Angebot = steigt$ und $Nachfrage = sinkt$ oder umgekehrt, also $q_A - q_N \neq 0$. Drittens wertet das Kriterium Allokationseffizienz: Kurzfristig gilt $Miete = billig$, langfristig $Wohnung = knapp$. Gesetz: $Wirksam \iff Fixpreis \neq p_G$ mit Folge Fehlallokation.
 
 ```diagram
-  Markt [pN fallend + pA steigend]
-  Markt -> Gleichgewicht pG + qG
-  Gleichgewicht -> Fixpreis [pmin oben + pmax unten]
-  Fixpreis -> Urteil (Effizienz vs Sozialziel)
+  Markt [pN fallend $p_N(q)$ + pA steigend $p_A(q)$]
+  Markt -> Gleichgewicht [$p_G = 20$, $q_G = 10$ aus $p_N(q) = p_A(q)$]
+  Gleichgewicht -> Eingriff [$p_{min} = 25$ oben + $p_{max} = 8$ unten]
+  Eingriff -> Urteil [$q_A - q_N$ messen + Effizienz vs Sozialziel]
 ```
+
+Kausalkette: Fixpreis ungleich $p_N(q) = p_A(q)$ — Mengen reagieren mit $q_A - q_N$ — Deutung am Kriterium Effizienz gegen Sozialziel; Abgrenzung zu $Gini$ und $U = \sum(Lust - Leid)$ steht vor jeder Rechnung.
 
 Klausur-Satz: `Da die Nachfragekurve mit steigendem Preis fällt und die Angebotskurve steigt, stellt sich am Schnittpunkt beider Kurven der markträumende Gleichgewichtspreis ein.`
 
@@ -90,24 +97,24 @@ Dass staatliche Höchstpreise nicht funktionieren, ist kein modernes Problem. Sc
 
 Bezug zum Konzept: `Das Beispiel zeigt, wie aus Beobachtung ein pruefbares Verfahren mit $x_1$ und $x_2$ entsteht.`
 
-## Schritt 4 — ausprobieren
+## Schritt 4 — ausprobieren: Interaktive Praxis & Markt-Labor
 
 BEISPIEL (geleitete Aufgabe mit Werkzeug):
 
-[Werkzeug: balance]
+[Werkzeug: markt-sim]
 
-AUFGABE (AFB II): Es gelten $p_N(q) = 40 - 2q$ und $p_A(q) = 10 + q$ ($p$ in Euro, $q$ in Mengeneinheiten). Bestimmen Sie $p_G$ und $q_G$ aus $p_N(q) = p_A(q)$. Pruefen Sie danach Angebot und Nachfrage beim Mindestpreis $p = 25$.
+Ziehe im Tool den Mindestpreis-Regler von $p_G$ nach oben und beobachte live, wie $q_A - q_N$ als Ueberhang waechst; ziehe danach den Hoechstpreis-Regler von $p_G$ nach unten und notiere Mangel, Schlange und Schattenmarkt.
+
+AUFGABE Spiel-Raetsel (AFB II): Gegeben $p_N(q) = 40 - 2q$ und $p_A(q) = 10 + q$. Finde im Tool durch Ziehen des Preis-Reglers den Punkt mit $q_A - q_N = 0$ und bestimme $p_G$ und $q_G$. Stelle danach $p = 25$ ein, lies $q_A$ und $q_N$ ab und berechne den Ueberhang.
 
 HILFE:
-1. Schritt 1: Rekonstruiere den Fall und notiere die gegebenen Groessen $x_1$ und $x_2$.
-2. Schritt 2: Wende die Leitformel an und berechne $d = x_2 - x_1$.
-3. Schritt 3: Deute das Ergebnis am Kriterium und formuliere den Klausur-Satz.
+1. Schritt 1: Stelle $p = 20$ ein und pruefe $p_N(q) = p_A(q)$. 2. Schritt 2: Erhoehe auf $p = 25$, lies $q_A = 15$ und $q_N = 7{,}5$. 3. Schritt 3: Berechne $q_A - q_N$, deute am Kriterium Allokationseffizienz und formuliere den Klausur-Satz.
 
-MUSTERLOESUNG: Aus $40 - 2q = 10 + q$ folgt $30 = 3q$, also $q_G = 10$ und $p_G = 20$. Bei $p = 25$ gilt $q_A = 15$ und $q_N = 7{,}5$; es entsteht ein Angebotsueberhang von $7{,}5$ Einheiten. Der Mindestpreis setzt die Raeumungsfunktion des Preises ausser Kraft.
+MUSTERLOESUNG: Aus $40 - 2q = 10 + q$ folgt $30 = 3q$, also $q_G = 10$ und $p_G = 20$. Bei $p = 25$ gilt $q_A = 15$ und $q_N = 7{,}5$, also Ueberhang $q_A - q_N = 7{,}5$. Der Mindestpreis belohnt Anbieter, schreckt Nachfrager ab und setzt die Raeumung ausser Kraft — Effizienz gegen Sozialziel.
 
 Klausur-Satz: `Ein über dem Gleichgewichtspreis festgesetzter Mindestpreis führt zu einem Angebotsüberhang, weil er die Anbieter belohnt, aber die Nachfrager abschreckt.`
 
-## Schritt 5 — ausprobieren
+## Schritt 5 — ausprobieren: Verfahrensvergleich & Abgrenzung
 
 VERGLEICH (Wahl des Verfahrens, A gegen B):
 
@@ -122,7 +129,7 @@ ANTWORT: Aufgabe A erfordert Verfahren (i), weil eine Rangfolge aus der Form gen
 
 Klausur-Satz: `Wird ein Höchstpreis unterhalb des Gleichgewichtspreises festgesetzt, entsteht ein Nachfrageüberhang, weil die Nachfrage steigt, das Angebot jedoch sinkt.`
 
-## Schritt 6 — check
+## Schritt 6 — check: Verständnisprüfung
 
 CHECK (drei Fragen mit Antworten):
 
@@ -142,7 +149,7 @@ Klausur-Satz: `Ein staatlicher Mindestpreis entfaltet nur dann ökonomische Wirk
 2. Fehlkonzept: Ein einzelner Wert wie $Gini$ oder $p_G$ spreche bereits fuer sich und brauche kein Kriterium.
    Korrektur-Satz: `Erst die Deutung der Kennzahl am Kriterium mit $d = x_2 - x_1$ ergibt ein klausurtaugliches Urteil.`
 
-## Schritt 7 — szenario
+## Schritt 7 — szenario: Klausurtransfer & Rubric
 
 ROLLE: Du bist Referent in einer Verbraucherzentrale und sollst auf einer Podiumsdiskussion die geplante Mietpreisbremse der Stadt fachlich bewerten.
 SITUATION: Die Stadt will per Satzung die Miete auf höchstens 8 Euro pro Quadratmeter festsetzen; der aktuelle Marktmietpreis liegt bei 11 Euro. Ein Teil des Publikums erwartet dadurch billigeren Wohnraum, ein anderer Teil warnt vor Wohnungsmangel. Beurteile die Maßnahme in einer zusammenhängenden Stellungnahme (ca. 150 Wörter) unter Rückgriff auf Preismechanismus und Marktformen.
@@ -152,7 +159,7 @@ RUBRIC (30 XP): Benennung der Maßnahme als Höchstpreis unterhalb des Gleichgew
 AUFGABE (AFB III): Verfasse eine zusammenhaengende Darstellung von etwa 150 Woertern mit Kriterium, Anwendung und Urteil.
 RUBRIC (30 XP): These mit Kriterium (5 XP) | Rekonstruktion mit $x_1$, $x_2$ (10 XP) | Anwendung mit $d = x_2 - x_1$ (10 XP) | Fazit mit Fachbegriffen (5 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY (Kernbotschaft in einem Kasten):
 

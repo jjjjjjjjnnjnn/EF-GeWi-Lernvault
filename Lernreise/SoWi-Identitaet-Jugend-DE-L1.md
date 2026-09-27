@@ -15,7 +15,7 @@ version: Lesson-v3
 
 <!-- Lesson-v3: 8 Schritte plus Anekdote und Fehlvorstellung; Fehlvorstellung zwischen Schritt 6 und 7 (Parser-Skip); interaktives [Werkzeug: <id>]; Gating: check/szenario nicht bestanden = Weiter gesperrt; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
-## Schritt 1 — entdecken
+## Schritt 1 — entdecken: Ziele & Phänomen-Einstieg
 
 ZIELE (drei messbare Ziele dieser Lektion):
 
@@ -25,7 +25,10 @@ ZIELE (drei messbare Ziele dieser Lektion):
 
 ### Hook / Phaenomen
 
-Traditionelle Feier oder nachhaltiges Fest mit Familie und Sicherheit? Aeltere pochen auf Form, Juengere auf Sinn, Statistik zeigt neue Familienwerte. Bist du noch du, wenn alle dich spiegeln? Genau hier beginnt Identitaetsarbeit.
+Stell dir vor, ein Wagen rast auf fuenf Menschen zu und du stehst an der Weiche und kannst den Wagen auf ein Gleis mit nur einer Person lenken, waehrend die Gruppe hinter dir ruft, dass Rechnen doch klar sei und fuenf Leben mehr zaehlten als eines. Gleichzeitig weisst du aus deiner Sozialisation in Familie und Schule und Freundeskreis, dass jeder Mensch Wuerde traegt und niemand zum blossen Mittel fuer andere gemacht werden darf. Genau hier kollidieren zwei Pruefungen desselben Falles: Die eine Bilanz zaehlt Lust und Leid fuer alle Betroffenen zusammen, die andere Pruefung fragt, ob deine Maxime als allgemeines Gesetz gewollt werden kann. In dieser Lektion lernst du den Mechanismus aus Bilanz und Probe und Abwaegung, damit du in der Klausur beide Brillen sauber trennst und dein Urteil an einem expliziten Kriterium begruendest.
+
+
+Ausgangslage aus der Vorlage: Traditionelle Feier oder nachhaltiges Fest mit Familie und Sicherheit? Aeltere pochen auf Form, Juengere auf Sinn, Statistik zeigt neue Familienwerte. Bist du noch du, wenn alle dich spiegeln? Genau hier beginnt Identitaetsarbeit.
 
 ### Fachbegriff & Definition
 
@@ -37,7 +40,7 @@ Der Mechanismus laeuft in drei Stufen: **Spiegel, Abgleich, Haltung**. Erstens s
 
 Klausur-Satz: `Identität entsteht nicht als feste Eigenschaft, sondern als lebenslange Balanceleistung zwischen gesellschaftlichen Erwartungen und eigenen Überzeugungen.`
 
-## Schritt 2 — entdecken
+## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
 
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
@@ -57,30 +60,34 @@ Krise, Spiegel, Wandel: Alles klingt nach Alltag, meint aber Theorie. Wer Begrif
 
 Die Begriffe greifen ineinander: **Ich-Identitaet** liefert den Prozess mit $Leben = Stufen$, **Balanceleistung** liefert das Risiko mit $Gelingen = Darstellung$. Der **generalisierte Andere** liefert den Mechanismus $Ich = Spiegel + Antwort$. **Aussengeleitetheit** und **Wertewandel** liefern den Zeitgeist mit $Anpassung + Sinnsuche$. Wer in der Klausur deutet, muss deshalb immer fragen: Gelingt Balance oder kippt sie?
 
+Punkte-Hinweis: Nenne $Utilitarismus$ mit $U = \sum(Lust - Leid)$ und $Kategorischer Imperativ$ mit $M \to G$; erst beide Pruefungen plus Kriterium wie Menschenwuerde gibt volle Punkte.
+
 Klausur-Satz: `Während Erikson die Ich-Identität als lebenslangen Prozess deutet, betont Krappmann, dass diese Balance auch scheitern kann.`
 
-## Schritt 3 — entdecken
+## Schritt 3 — entdecken: Kernkonzept & Wirkungsmodell
 
 TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
 ### Hook / Phaenomen
 
-Likes zaehlen, Filter formen, Vergleiche druecken: Netzwerke erweitern Buehne und peitschen zugleich. Befreit das Ich oder verkauft es sich? Genau hier braucht es Mead plus Krappmann als Doppelbrille.
+Spiegel, Like, Story — wer bist du, wenn alle zusehen? Ausdruck frei, Vergleichsdruck hoch — befreit das Netz oder formt es dich?
 
-### Fachbegriff & Definition
+### Spiel-Aufgabe mit [Werkzeug: gini-allocator]
 
-Das **Spiegel-Balance-Modell** verbindet Meads Entstehung mit Krappmanns Gelingen. Mead erklaert $Selbst = Play + Game + Anderer$ als Weg zum Bewusstsein. Krappmann prueft $Balance = Erwartung + Eigenheit$ auf Darstellung und Scheitern. Die Formel lautet $Stabil \iff Anerkennung + Distanz > Vergleichsdruck$.
+Oeffne [Werkzeug: gini-allocator]. Ziehe den Anerkennungs-Regler: Verteile Likes von $8 + 13 + 17 + 23 + 39$ zu $15 + 18 + 20 + 22 + 25$. Beobachte, wie $Gini = 1 - 2B$ faellt und die Kurve flacher wird — von Star-Kultur zu Teilhabe. Deute Mead: Ich durch Augen der Anderen.
 
-### Wirkungsgefuege / Modell
+### Aha-Moment & Gesetz
 
-Denke in Kausalkette: **Spiegelung, Leistung, Wertung**. Erstens spiegelt das Netz mit $Feed = Bilder + Normen$ staendig $Du = Vergleich$. Zweitens leistet das Ich $Post = Rolle + Filter$ zwischen $Anpassung = Likes$ und $Eigenheit = Stil$. Drittens wertet **Balance**: Gelingt $Distanz = Humor + Reflexion$, waechst Spielraum, dominiert $Aussen = Radar$, droht Diffusion. Genau diese Pruefung verlangt in der Klausur ein **kriteriengeleitetes Urteil**, keine Kulturklage.
+Aha-Moment: Blick — Form — Selbst. Erstens spiegelt $Me + I$ das Selbst in Kommunikation. Zweitens misst $Gini$ die Anerkennungs-Luecke zwischen wenigen und vielen. Drittens urteilt Kriterium Identitaets-Balance: Erweitern ohne Vergleichsfalle. Gesetz: $Ich = Me + I$ im Gleichgewicht aus Naehe und Distanz.
 
 ```diagram
-  Spiegel [Familie + Peers + Netz]
-  Spiegel -> Ich [Play + Game + Anderer]
-  Ich -> Balance [Anpassung + Eigenheit]
-  Balance -> Urteil (Gelingen oder Krise)
+  Blicke [Likes $8 + 13 + 17 + 23 + 39$]
+  Blicke -> Kurve [Bogen + $Gini = 1 - 2B$]
+  Kurve -> Selbst [$Me + I$ + Vergleich]
+  Selbst -> Urteil [Balance + Kommunikation]
 ```
+
+Kausalkette: Fall schildern — Bilanz mit $U = \sum(Lust - Leid)$ gegen Probe mit $M \to G$ — Urteil am Kriterium Menschenwuerde; Abgrenzung zu $p_N(q) = p_A(q)$ mit $q_A - q_N$ und zu $Gini$ steht vor jeder Stellungnahme.
 
 Klausur-Satz: `Mead zufolge wird sich das Individuum seiner selbst bewusst, indem es sich mit den Augen der Anderen betrachtet; Identität entsteht also in Kommunikation.`
 
@@ -90,24 +97,24 @@ Der Begriff „Identitätskrise" stammt ursprünglich aus der Fachsprache: Der P
 
 Bezug zum Konzept: `Das Beispiel zeigt, wie aus Beobachtung ein pruefbares Verfahren mit $x_1$ und $x_2$ entsteht.`
 
-## Schritt 4 — ausprobieren
+## Schritt 4 — ausprobieren: Interaktive Praxis & Urteils-Waage
 
 BEISPIEL (geleitete Aufgabe mit Werkzeug):
 
-[Werkzeug: balance]
+[Werkzeug: balance-board]
 
-AUFGABE (AFB II): Rekonstruieren Sie den zentralen Begriff des Themas in eigenen Worten und wenden Sie ihn auf ein aktuelles Fallbeispiel an. Belegen Sie jede These mit einem Kriterium und schliessen Sie mit einem begruendeten Urteil (AFB III).
+Lege im Tool Pro- und Contra-Argumente auf die Waage und gewichte jedes Argument von 1 bis 5; veraendere die Gewichte Schritt fuer Schritt und beobachte, wann das Urteil zwischen Erlaubnis und Verbot oder zwischen Massnahme und Verzicht umschlaegt.
+
+AUFGABE Spiel-Raetsel (AFB II): Stelle im Tool Star-Verteilung $39$ oben gegen $8$ unten ein. Schiebe per Regler zu flacher Verteilung, bis $Gini$ unter $0{,}30$ faellt. Belege mit Kurve und $Gini$, ob Teilhabe ohne Druck gelingt.
 
 HILFE:
-1. Schritt 1: Rekonstruiere den Fall und notiere die gegebenen Groessen $x_1$ und $x_2$.
-2. Schritt 2: Wende die Leitformel an und berechne $d = x_2 - x_1$.
-3. Schritt 3: Deute das Ergebnis am Kriterium und formuliere den Klausur-Satz.
+1. Schritt 1: Notiere Startwerte und $Gini$. 2. Schritt 2: Verschiebe Anteile, lies $B$ und $Gini = 1 - 2B$. 3. Schritt 3: Deute ambivalent an Balance und formuliere den Klausur-Satz.
 
-MUSTERLOESUNG: Die Musterloesung benennt zunaechst das Kriterium, ordnet den Fall unter $x_1$ und $x_2$ ein und berechnet die Differenz $d = x_2 - x_1$ als Beleg. Das Urteil folgt logisch aus dem Kriterium und nennt eine begruendete Gewichtung.
+MUSTERLOESUNG: Start mit $Gini \approx 0{,}34$ zeigt Star-Luecke; nach Ausgleich $Gini \approx 0{,}27$ hebt sich die Kurve. Netz erweitert Ausdruck, doch erst bewusste Distanz senkt Vergleichsdruck — Kommunikation als Identitaets-Ort.
 
 Klausur-Satz: `Soziale Netzwerke sind für die Identitätsentwicklung ambivalent: Sie erweitern Ausdrucksmöglichkeiten, verstärken aber zugleich den Vergleichsdruck.`
 
-## Schritt 5 — ausprobieren
+## Schritt 5 — ausprobieren: Verfahrensvergleich & Abgrenzung
 
 VERGLEICH (Wahl des Verfahrens, A gegen B):
 
@@ -122,7 +129,7 @@ ANTWORT: Aufgabe A erfordert Verfahren (i), weil eine Rangfolge aus der Form gen
 
 Klausur-Satz: `Wertewandel bezeichnet die Verschiebung gesellschaftlicher Wertprioritäten, die den Rahmen der individuellen Identitätsarbeit verändert.`
 
-## Schritt 6 — check
+## Schritt 6 — check: Verständnisprüfung
 
 CHECK (drei Fragen mit Antworten):
 
@@ -142,14 +149,14 @@ Klausur-Satz: `Identität ist keine Eigenschaft, sondern eine Balanceleistung �
 2. Fehlkonzept: Ein einzelner Wert wie $Gini$ oder $p_G$ spreche bereits fuer sich und brauche kein Kriterium.
    Korrektur-Satz: `Erst die Deutung der Kennzahl am Kriterium mit $d = x_2 - x_1$ ergibt ein klausurtaugliches Urteil.`
 
-## Schritt 7 — szenario
+## Schritt 7 — szenario: Klausurtransfer & Rubric
 
 ROLLE: Du bist Mitglied einer Schülervertretung und hältst auf einem Schulforum eine kurze Stellungnahme zur Wertewandel-Debatte
 SITUATION: An deiner Schule wird über die Abschlussfeier diskutiert. Ältere Lehrkräfte fordern traditionelle Formen, während Mitschülerinnen und Mitschüler die Feier stärker an Familie, Sicherheit und Nachhaltigkeit ausrichten wollen. Eine Shell-Statistik (2002–2019) zeigt, dass Familien- und Sicherheitswerte unter Jugendlichen gestiegen sind. Beurteile in einer zusammenhängenden Stellungnahme (ca. 150 Wörter), ob dieser Wertewandel als Verlust oder als Gewinn für die Jugend zu bewerten ist
 AUFGABE (AFB III): Verfasse eine zusammenhaengende Darstellung von etwa 150 Woertern mit Kriterium, Anwendung und Urteil.
 RUBRIC (30 XP): These mit Kriterium (5 XP) | Rekonstruktion mit $x_1$, $x_2$ (10 XP) | Anwendung mit $d = x_2 - x_1$ (10 XP) | Fazit mit Fachbegriffen (5 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY (Kernbotschaft in einem Kasten):
 

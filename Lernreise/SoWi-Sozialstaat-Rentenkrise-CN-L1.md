@@ -15,7 +15,7 @@ version: Lesson-v3
 
 <!-- Lesson v3 9步制架构：Schritt 1至8固定结构；Fehlvorstellung 夹在 Schritt 6 与 7 之间（Parser 自动跳过，不占步数）；支持内嵌 [Werkzeug: <id>] 交互教具；Gating: check/szenario 未过 = Weiter 置灰；XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
-## Schritt 1 — entdecken
+## Schritt 1 — entdecken: Ziele & Phänomen-Einstieg
 
 ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
@@ -25,9 +25,20 @@ ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
 Voraussetzung（窄切口）：只做法定养老金，不展开私人 Riester 细节；已会 Generationenvertrag 概念。
 
+
+Hook中文生活切入:
+
+想象家族群里的养老接龙:爷爷奶奶那辈人多交钱的人多, tension 小;到爸爸这辈交钱的人少了、领钱的人多了,群里开始争吵:有人Legit 延迟退休,有人喊多交钱,有人提议国家多补贴。德国现收现付的养老金正卡在这场接龙里:几代人之间此消彼长,账越算越紧。
+
+Phaenomen-Satz (DE): Wenige zahlen ein, viele heben ab, die Kasse kennt kein Wunder.
+
+中文机制铺垫:人口老龄化抬高抚养比,缴费率、退休年龄、养老金水平三者构成不可能三角,动一个就得调另两个;三支柱方案各有代价,答题必须点名代际公平与可持续性,结论用目标冲突收束。
+
+Mechanismus-Satz (DE): Umlage lebt vom Nachwuchs, Alterung zwingt zu Beitrag, Alter oder Niveau.
+
 Klausur-Satz: `Im Umlageverfahren zahlen die Erwerbstaetigen die Renten der Alten; der Demografiewandel belastet diese Bilanz.`
 
-## Schritt 2 — entdecken
+## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
 
 PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
 
@@ -41,20 +52,35 @@ PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→�
 
 Klausur-Satz: `Steigt der Altenquotient, muss bei gleichem Niveau entweder der Beitrag steigen oder die Leistung sinken.`
 
-## Schritt 3 — entdecken
+## Schritt 3 — entdecken: Kernkonzept & Wirkungsmodell
 
-ENTDECKEN（1概念 + 1文字图解）：
+ENTDECKEN（1概念 + 1文字图解，中文在上、德语在下）：
 
-中文：现收现付像"接力送水"：前面跑的人把水递给已到终点的人。年轻人多时人手足；少子加长寿后，接水的人多、递水的人少，每人要递更多（Beitrag hoch）或每人分到更少（Niveau runter），或晚点交棒（Rente mit 67）。三选一是数学，不是立场。答题公式：先给机制（Umlage），再给压力三数（weniger Zahler、 mehr Empfaenger、 laengerer Bezug），最后评价选项的代价与公平。
+Hook中文生活切入：
+
+中文：想象全家凑钱养爷爷：五个孙辈凑时人人轻松，一个孙辈养四个老人时直接破产。德国养老金就是这个家庭账的放大版。
+
+Phaenomen-Satz (DE): Wenige Geber, viele Nehmer: die Rechnung kippt.
+
+Spiel-Aufgabe沙盒操作指引：
+
+中文：打开沙盒，拖动滑块改缴费率、养老金水平与退休年龄（关键词：Umlageverfahren, Altenquotient, Beitragssatz, Rentenniveau），看少子长寿如何两头挤账。
+
+Beobachtungs-Satz (DE): Steigt der Quotient, steigt der Beitrag oder sinkt das Niveau.
+
+Aha-Moment因果链：
+
+中文因果链：现收现付是当期缴费养当期老人；少子砍缴费端、长寿加领取端且拉长领取期，三力同向挤压；制度内只能调缴费、水平与年龄三旋钮，换制度则把人口风险换成市场风险加双重负担。
+
+Gesetz-Satz (DE): Jede Reform verschiebt die Last zwischen Zahlern, Rentnern und Steuerzahlern.
 
 文字图解（ASCII 结构图，App支持解析渲染）：
 
 ```diagram
-  Erwerbstaetige ──Beitrag──> Rentenkasse ──Rente──> Rentner
-  Wandel: Zahler - | Empfaenger + | Bezugsdauer +
-  Stellschrauben: Beitrag + / Niveau - / Alter + / Steuer +
+Erwerbstaetige --Beitrag--> Kasse --Rente--> Rentner
+Wandel: Zahler - | Empfaenger + | Dauer +
+Regler: Beitrag + / Niveau - / Alter + / Steuer +
 ```
-
 Klausur-Satz: `Jede Reform verschiebt die Last zwischen Beitragszahlern, Rentnern und Steuerzahlern.`
 
 ## Anekdote & Fun-Fact
@@ -65,24 +91,31 @@ Klausur-Satz: `Jede Reform verschiebt die Last zwischen Beitragszahlern, Rentner
 
 **Bezug zum Konzept**: `Die Rente altert mit der Gesellschaft, fuer die sie gebaut wurde.`
 
-## Schritt 4 — ausprobieren
+## Schritt 4 — ausprobieren: Interaktive Praxis & Labor
 
-BEISPIEL（正确例题示范，含教具操作与解答）：
+[Werkzeug: gini-allocator]
 
-[Werkzeug: bilanz]
+BEISPIEL（正确例题示范，含教具操作与解答，中文在上、德语在下）：
 
-AUFGABE (analysieren, AFB II)：Erklaeren Sie mit dem Umlageprinzip, warum eine sinkende Geburtenrate bei steigender Lebenserwartung den Beitragssatz unter Druck setzt.
+AUFGABE中文导读（沙盒谜题）：生育率下行叠加预期寿命上行，请用现收现付原理解释缴费率承压，并给出三旋钮的公平组合。
 
-HILFE:
-1. Schritt 1: Umlagegleichung (Einnahmen = Ausgaben) nennen.
-2. Schritt 2: Beide Demografieeffekte auf je eine Seite buchen.
-3. Schritt 3: Folgerung fuer Beitrag oder Niveau ziehen.
+AUFGABE (analysieren, AFB II): Erklaeren Sie mit dem Umlageprinzip, warum Geburtenrueckgang plus Langlebigkeit den Beitragssatz treibt, und skizzieren Sie einen fairen Mix.
 
-MUSTERLÖSUNG: Im Umlageverfahren gilt Beitragssatz mal Lohnsumme gleich Durchschnittsrente mal Rentnerzahl. Sinkt die Geburtenrate, schrumpft kuenftig die Lohnsumme als Basis; steigt die Lebenserwartung, waechst die Rentnerzahl und die Bezugsdauer. Bei unveraendertem Rentenniveau muss daher der Beitragssatz steigen, oder bei festem Beitragssatz muss das Niveau sinken. Genau dieses Dreieck aus Beitrag, Niveau und Altersgrenze verhandelt jede Rentenreform.
+HILFE（中德双语步骤）：
 
+1. 中文：第1步摆收支方程：缴费乘工资基等于养老金乘人数，关键词：Gleichung。
+   Schritt 1 (DE): Einnahmen gleich Ausgaben schreiben.
+2. 中文：第2步两头记账：少子砍基数、长寿加人数与时长，关键词：Buchen。
+   Schritt 2 (DE): Beide Effekte je einer Seite zuordnen.
+3. 中文：第3步给组合：三旋钮各让一步并说清输家，关键词：Mix。
+   Schritt 3 (DE): Mix mit Verlierern und Massstab.
+
+MUSTERLOESUNG：中文：少子缩工资基、长寿增人数与时长，水平不变则缴费必涨；公平组合是三旋钮各动一点加税补，让企业、老人与年轻人共担，不把账全甩给一代人。
+
+MUSTERLOESUNG (DE): Weniger Zahler bei mehr und laengeren Renten erzwingen hoehere Beitraege oder niedrigere Niveaus. Fair ist ein Mix aus Beitrag, Niveau und Alter plus Steuer: jede Schraube belastet eine andere Gruppe.
 Klausur-Satz: `Weniger Zahler bei mehr und laengeren Renten erzwingen hoehere Beitraege oder niedrigere Niveaus.`
 
-## Schritt 5 — ausprobieren
+## Schritt 5 — ausprobieren: Verfahrensvergleich & Abgrenzung
 
 VERGLEICH辨别实验（双向辨析：开源节流 vs 制度转轨）：
 
@@ -97,7 +130,7 @@ ANTWORT: A erfordert Verfahren (i): Spaeterer Renteneintritt senkt Empfaengerzah
 
 Klausur-Satz: `Parametrisch bleibt die Last im Umlage-Dreieck, systemisch wandert sie an den Kapitalmarkt.`
 
-## Schritt 6 — check
+## Schritt 6 — check: Verständnisprüfung
 
 CHECK检索默写（自测 3 题，与答案配对）：
 
@@ -119,13 +152,13 @@ Klausur-Satz: `Beitrag, Niveau und Alter bilden das Reformdreieck der gesetzlich
    中文纠偏：缴费推高用工成本、压低净工资，代价转给企业与年轻雇员；任何旋钮都有输家，必须做代际公平评价。
    Korrektur-Satz: `Jede Stellschraube belastet eine andere Gruppe.`
 
-## Schritt 7 — szenario
+## Schritt 7 — szenario: Klausurtransfer & Rubric
 
 ROLLE: Du bist Jugenddelegierter in einer Rentenkommission.
 SITUATION: Die Kommission diskutiert Beitragserhoehung gegen Rentenniveausenkung. Nimm in einer zusammenhaengenden Stellungnahme (ca. 150 Woerter) aus Sicht der jungen Generation dazu Stellung und schlage einen fairen Mix vor.
 RUBRIC (30 XP): Umlage-Mechanik und Demografiedruck (8 XP) | Abwaegung beider Optionen mit Verlierern (10 XP) | Begruendeter Mix mit Gerechtigkeitsmassstab (8 XP) | Adressatengerechte Stellungnahme (4 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY 1盒（核心总结）：
 

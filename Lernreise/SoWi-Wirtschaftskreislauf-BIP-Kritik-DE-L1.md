@@ -15,7 +15,7 @@ version: Lesson-v3
 
 <!-- Lesson-v3: 8 Schritte plus Anekdote und Fehlvorstellung; Fehlvorstellung zwischen Schritt 6 und 7 (Parser-Skip); interaktives [Werkzeug: <id>]; Gating: check/szenario nicht bestanden = Weiter gesperrt; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
-## Schritt 1 — entdecken
+## Schritt 1 — entdecken: Ziele & Phänomen-Einstieg
 
 ZIELE (drei messbare Ziele dieser Lektion):
 
@@ -25,7 +25,10 @@ ZIELE (drei messbare Ziele dieser Lektion):
 
 ### Hook / Phaenomen
 
-Sturm zerstoert Wald, BIP steigt durch Repairatur: Zählt Zerstoerung als Fortschritt? Geld fliesst, Gueter fliessen, Natur schweigt. Misst Wachstum Wohlstand oder nur Umsatz?
+Stell dir vor, du suchst in der Stadt eine Wohnung und siehst ein Schild mit Miete 11 Euro pro Quadratmeter, doch der Stadtrat beschliesst einen Deckel bei 8 Euro und verspricht billiges Wohnen fuer alle. Alle freuen sich zuerst ueber die niedrige Miete, aber nach wenigen Monaten verschwinden viele Angebote, die Schlangen bei jeder Besichtigung werden laenger und ein Schattenmarkt mit Abstandszahlungen und Gefaelligkeiten entsteht. Gleichzeitig fordert die Gewerkschaft 15 Euro Mindestlohn, weil der Lohn zum Leben reichen muss, waehrend kleine Betriebe warnen, dass sie bei diesem Lohn weniger Personal einstellen und ihre Preise erhoehen muessen. Beide Faelle zeigen denselben Mechanismus aus Signal und Anpassung: Ein staatlich fixierter Preis ersetzt das freie Signal aus Angebot und Nachfrage, die Mengen reagieren mit Ausweichen oder Verknappung, und am Ende muss jedes Urteil zwischen Effizienz und sozialem Ziel sorgfaeltig abgewogen werden.
+
+
+Ausgangslage aus der Vorlage: Sturm zerstoert Wald, BIP steigt durch Repairatur: Zählt Zerstoerung als Fortschritt? Geld fliesst, Gueter fliessen, Natur schweigt. Misst Wachstum Wohlstand oder nur Umsatz?
 
 ### Fachbegriff & Definition
 
@@ -37,7 +40,7 @@ Der Mechanismus laeuft in drei Stufen: **Tausch, Erweiterung, Blindheit**. Erste
 
 Klausur-Satz: `Der erweiterte Wirtschaftskreislauf zeigt die Geld- und Gueterstroeme zwischen fuenf Sektoren, das BIP misst nur deren monetarisierten Ausschnitt.`
 
-## Schritt 2 — entdecken
+## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
 
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
@@ -57,30 +60,34 @@ Wer zahlt, wer produziert, wer finanziert? Ohne Sektoren bleibt Kreis abstrakt. 
 
 Die Begriffe greifen ineinander: **Haushalte** und **Unternehmen** bilden mit $Tausch = Lohn + Gut$ den Kern. **Staat** und **Banken** stabilisieren mit $Transfer + Kredit$ den Fluss. **Ausland** erweitert mit $Ex - Im$ den Raum. Wer in der Klausur zeichnet, muss deshalb immer fragen: Wo fliesst Geld, wo fliesst Gut, wer fehlt?
 
+Punkte-Hinweis: Nenne $Gleichgewichtspreis$ mit $p_N(q) = p_A(q)$ und beziffere $Ueberhang$ mit $q_A - q_N$; erst die Zahl plus Deutung am Kriterium gibt volle Punkte.
+
 Klausur-Satz: `Geldstroeme und Gueterstroeme laufen im Kreislauf in entgegengesetzter Richtung zwischen Haushalten und Unternehmen.`
 
-## Schritt 3 — entdecken
+## Schritt 3 — entdecken: Kernkonzept & Wirkungsmodell
 
 TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
 ### Hook / Phaenomen
 
-Reparatur zaehlt plus, Waldverlust zaehlt null: Ist Sturm Konjunktur? Gruene Rechnung will Kosten sichtbar machen. Genau hier scheidet Umsatz von Wohlfahrt.
+Sturm zerstoert, BIP steigt — gute Konjunktur oder blinde Zahl? Miete gegen Lohn, Wachstum gegen Wohlfahrt — was zaehlt der Kreislauf, was verschweigt er?
 
-### Fachbegriff & Definition
+### Spiel-Aufgabe mit [Werkzeug: markt-sim]
 
-Das **BIP-Kritik-Modell** rechnet Verwendung und benennt Grenzen. Es startet mit $Y = C + I + G + Ex - Im$ als Verwendungsrechnung. Es misst $g = JetztMinusVorherDurchVorher$ als Wachstum. Es kritisiert $Blind = Umwelt + Sorge + Verteilung$ als Luecke. Die Formel lautet $Wohl = BIP - Schaden + Unbezahlt$.
+Oeffne [Werkzeug: markt-sim]. Erhoehe im Kreislauf-Modul die Staatsausgaben $G$ um 10 Einheiten und beobachte $Y = C + I + G + Ex - Im$. Ziehe danach den Preis-Regler fuer Umweltkosten von $0$ auf $5$ und sieh, wie $p_N(q) = p_A(q)$ ehrlicher wird, aber $q_A - q_N$ schwankt. Vergleiche Marktleistung gegen Wohlfahrt.
 
-### Wirkungsgefuege / Modell
+### Aha-Moment & Gesetz
 
-Denke in Kausalkette: **Rechnen, Blenden, Korrigieren**. Erstens summiert $Y = Konsum + Invest + Staat + Aussen$ den Umsatz. Zweitens blendet $Sturm = plusBau$ bei $Wald = null$ wahre Kosten aus. Drittens korrigiert Gruen mit $Preis = Kosten + Umwelt$ zu ehrlicher Bilanz. Genau diese Korrektur verlangt in der Klausur ein **kriteriengeleitetes Urteil**, keine Zahlenglaeubigkeit.
+Aha-Moment: Tausch — Messung — Korrektur. Erstens tauschen Haushalte und Unternehmen Gueter gegen Geld, Staat und Banken ergaenzen um $G$ und $I$. Zweitens misst $Y = C + I + G + Ex - Im$ nur Umsatz. Drittens korrigiert $Wohl = BIP - Schaden + Unbezahlt$ nach Kriterium Wohlfahrt statt Umsatz. Gesetz: $Wachstum \neq Wohlfahrt$, sobald $Blind = Umwelt + Sorge + Verteilung$ gilt.
 
 ```diagram
   Kreislauf [Haushalt + Firma + Staat + Bank + Ausland]
-  Kreislauf -> BIP [Y = C + I + G + Ex - Im]
-  BIP -> Kritik [Blind + Verteilung + Umwelt]
-  Kritik -> Urteil (Wohlfahrt mit Mass)
+  Kreislauf -> Messung [$Y = C + I + G + Ex - Im$ + $p_N(q) = p_A(q)$]
+  Messung -> Luecke [$q_A - q_N$ + $Gini$ blind + Umwelt $= 0$]
+  Luecke -> Urteil [Wohlfahrt mit Mass]
 ```
+
+Kausalkette: Fixpreis ungleich $p_N(q) = p_A(q)$ — Mengen reagieren mit $q_A - q_N$ — Deutung am Kriterium Effizienz gegen Sozialziel; Abgrenzung zu $Gini$ und $U = \sum(Lust - Leid)$ steht vor jeder Rechnung.
 
 Klausur-Satz: `Im erweiterten Kreislauf ergaenzen Staat, Banken und Ausland den Tausch zwischen Haushalten und Unternehmen um Umverteilung, Finanzierung und Aussenhandel.`
 
@@ -90,24 +97,24 @@ Nach einem schweren Sturm steigt das BIP oft an, weil Reparaturen, Ersatzkaeufe 
 
 Bezug zum Konzept: `Das Beispiel zeigt, wie aus Beobachtung ein pruefbares Verfahren mit $x_1$ und $x_2$ entsteht.`
 
-## Schritt 4 — ausprobieren
+## Schritt 4 — ausprobieren: Interaktive Praxis & Markt-Labor
 
 BEISPIEL (geleitete Aufgabe mit Werkzeug):
 
-[Werkzeug: markt]
+[Werkzeug: markt-sim]
 
-AUFGABE (AFB II): Skizzieren Sie den erweiterten Kreislauf mit den fuenf Sektoren Haushalte, Unternehmen, Staat, Banken und Ausland. Markieren Sie Geldstrom und Gueterstrom. Erklaeren Sie danach, warum ein steigendes $BIP$ nicht automatisch steigende Wohlfahrt bedeutet.
+Ziehe im Tool den Mindestpreis-Regler von $p_G$ nach oben und beobachte live, wie $q_A - q_N$ als Ueberhang waechst; ziehe danach den Hoechstpreis-Regler von $p_G$ nach unten und notiere Mangel, Schlange und Schattenmarkt.
+
+AUFGABE Spiel-Raetsel (AFB II): Baue im Tool den erweiterten Kreislauf mit fuenf Sektoren. Erhoehe $G$ schrittweise, notiere $Y$, und aktiviere dann den Umweltkosten-Regler. Erklaere, warum $Y$ steigt, waehrend die Wohlfahrt sinken kann.
 
 HILFE:
-1. Schritt 1: Rekonstruiere den Fall und notiere die gegebenen Groessen $x_1$ und $x_2$.
-2. Schritt 2: Wende die Leitformel an und berechne $d = x_2 - x_1$.
-3. Schritt 3: Deute das Ergebnis am Kriterium und formuliere den Klausur-Satz.
+1. Schritt 1: Markiere Geldstrom und Gueterstrom mit Staat, Banken, Ausland. 2. Schritt 2: Veraendere $G$ und lies $Y = C + I + G + Ex - Im$. 3. Schritt 3: Beziehe $Gini$ und Umwelt ein, deute am Kriterium Wohlfahrt und formuliere den Klausur-Satz.
 
-MUSTERLOESUNG: Der Geldstrom verlaeuft im Uhrzeigersinn, der Gueterstrom entgegengesetzt; der Staat ist ueber Steuern und Transfers, die Banken ueber Sparen und Investieren, das Ausland ueber $Ex$ und $Im$ angebunden. Das $BIP$ misst mit $Y = C + I + G + (Ex - Im)$ nur die Marktleistung; unbezahlte Arbeit, Umweltkosten und Verteilung ($Gini$) bleiben unberuecksichtigt.
+MUSTERLOESUNG: Geld fliesst im Uhrzeigersinn, Gueter entgegengesetzt; Staat ueber Steuern und Transfers, Banken ueber Sparen und Investieren, Ausland ueber $Ex$ und $Im$. $Y$ misst nur Marktleistung; unbezahlte Arbeit, Umweltkosten und Verteilung mit $Gini$ bleiben aussen vor — daher kein automatischer Wohlfahrts-Schluss.
 
 Klausur-Satz: `Entstehung, Verwendung und Verteilung berechnen dasselbe BIP aus Produktions-, Ausgaben- und Einkommenssicht.`
 
-## Schritt 5 — ausprobieren
+## Schritt 5 — ausprobieren: Verfahrensvergleich & Abgrenzung
 
 VERGLEICH (Wahl des Verfahrens, A gegen B):
 
@@ -122,7 +129,7 @@ ANTWORT: Aufgabe A erfordert Verfahren (i), weil eine Rangfolge aus der Form gen
 
 Klausur-Satz: `Wachstum des BIP ist ohne Verteilungs-, Umwelt- und Sozialindikatoren kein Beweis fuer mehr Wohlfahrt.`
 
-## Schritt 6 — check
+## Schritt 6 — check: Verständnisprüfung
 
 CHECK (drei Fragen mit Antworten):
 
@@ -142,7 +149,7 @@ Klausur-Satz: `Das BIP misst Marktwerte eines Jahres, nicht Nachhaltigkeit oder 
 2. Fehlkonzept: Ein einzelner Wert wie $Gini$ oder $p_G$ spreche bereits fuer sich und brauche kein Kriterium.
    Korrektur-Satz: `Erst die Deutung der Kennzahl am Kriterium mit $d = x_2 - x_1$ ergibt ein klausurtaugliches Urteil.`
 
-## Schritt 7 — szenario
+## Schritt 7 — szenario: Klausurtransfer & Rubric
 
 ROLLE: Du bist EF-Schuelerin und schreibst einen Leserbrief an die Lokalzeitung.
 SITUATION: Die Stadt feiert ein gestiegenes regionales BIP nach einem Sturmjahr mit viel Wiederaufbau, waehrend Parks zerstoert und viele ehrenamtliche Helfer erschoepft sind. Beurteilen Sie in einer zusammenhaengenden Darstellung (ca. 150 Woerter) die Lage mit dem erweiterten Kreislauf, der BIP-Kritik in vier Punkten und NWI/HDI.
@@ -152,7 +159,7 @@ RUBRIC (30 XP): Kreislauf mit Sektorbezug korrekt (5 XP) | Drei Berechnungsarten
 AUFGABE (AFB III): Verfasse eine zusammenhaengende Darstellung von etwa 150 Woertern mit Kriterium, Anwendung und Urteil.
 RUBRIC (30 XP): These mit Kriterium (5 XP) | Rekonstruktion mit $x_1$, $x_2$ (10 XP) | Anwendung mit $d = x_2 - x_1$ (10 XP) | Fazit mit Fachbegriffen (5 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY (Kernbotschaft in einem Kasten):
 

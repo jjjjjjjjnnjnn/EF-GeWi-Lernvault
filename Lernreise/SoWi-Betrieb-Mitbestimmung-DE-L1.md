@@ -15,7 +15,7 @@ version: Lesson-v3
 
 <!-- Lesson-v3: 8 Schritte plus Anekdote und Fehlvorstellung; Fehlvorstellung zwischen Schritt 6 und 7 (Parser-Skip); interaktives [Werkzeug: <id>]; Gating: check/szenario nicht bestanden = Weiter gesperrt; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
-## Schritt 1 — entdecken
+## Schritt 1 — entdecken: Ziele & Phänomen-Einstieg
 
 ZIELE (drei messbare Ziele dieser Lektion):
 
@@ -25,7 +25,10 @@ ZIELE (drei messbare Ziele dieser Lektion):
 
 ### Hook / Phaenomen
 
-Auftraege brechen ein, die Geschaeftsleitung will entlassen, der Betriebsrat schlaegt Kurzarbeit vor. Die einen nennen Mitbestimmung Bremsklotz, die anderen Rettungsanker. Bremst Teilhabe den Wandel oder sichert sie ihn erst?
+Stell dir vor, ein Wagen rast auf fuenf Menschen zu und du stehst an der Weiche und kannst den Wagen auf ein Gleis mit nur einer Person lenken, waehrend die Gruppe hinter dir ruft, dass Rechnen doch klar sei und fuenf Leben mehr zaehlten als eines. Gleichzeitig weisst du aus deiner Sozialisation in Familie und Schule und Freundeskreis, dass jeder Mensch Wuerde traegt und niemand zum blossen Mittel fuer andere gemacht werden darf. Genau hier kollidieren zwei Pruefungen desselben Falles: Die eine Bilanz zaehlt Lust und Leid fuer alle Betroffenen zusammen, die andere Pruefung fragt, ob deine Maxime als allgemeines Gesetz gewollt werden kann. In dieser Lektion lernst du den Mechanismus aus Bilanz und Probe und Abwaegung, damit du in der Klausur beide Brillen sauber trennst und dein Urteil an einem expliziten Kriterium begruendest.
+
+
+Ausgangslage aus der Vorlage: Auftraege brechen ein, die Geschaeftsleitung will entlassen, der Betriebsrat schlaegt Kurzarbeit vor. Die einen nennen Mitbestimmung Bremsklotz, die anderen Rettungsanker. Bremst Teilhabe den Wandel oder sichert sie ihn erst?
 
 ### Fachbegriff & Definition
 
@@ -37,7 +40,7 @@ Der Mechanismus laeuft in drei Stufen: **Interesse, Verfahren, Wirkung**. Ersten
 
 Klausur-Satz: `Der Betriebsrat vertritt die Belegschaft nach dem Betriebsverfassungsgesetz (Information, Beratung, Mitbestimmung), darf aber nicht streiken.`
 
-## Schritt 2 — entdecken
+## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
 
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
@@ -57,30 +60,34 @@ Wem gehoert das Unternehmen: den Aktionaeren oder allen, die davon leben? Die An
 
 Die Begriffe greifen ineinander: **Shareholder** gegen **Stakeholder** definiert das Ziel mit $Rendite$ gegen $Teilhabe$. **Betriebsrat** und **paritaetische Mitbestimmung** liefern das Verfahren $Info \to Beratung \to Veto$. **Tarifautonomie** verlagert Lohnfindung zu den Sozialpartnern mit $Staat = aussen$. Wer in der Klausur urteilt, muss deshalb immer fragen: Dient die Massnahme nur der Rendite oder allen Traegern?
 
+Punkte-Hinweis: Nenne $Utilitarismus$ mit $U = \sum(Lust - Leid)$ und $Kategorischer Imperativ$ mit $M \to G$; erst beide Pruefungen plus Kriterium wie Menschenwuerde gibt volle Punkte.
+
 Klausur-Satz: `Während der Shareholder-Ansatz die Rendite der Anteilseigner maximiert, berücksichtigt der Stakeholder-Ansatz alle Betroffenen des Unternehmenshandelns.`
 
-## Schritt 3 — entdecken
+## Schritt 3 — entdecken: Kernkonzept & Wirkungsmodell
 
 TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
 ### Hook / Phaenomen
 
-Kurzarbeit statt Kuendigung klingt sozial, kostet aber Geld und Mut. Die Geschaeftsleitung zaehlt Kosten, der Betriebsrat zaehlt Schicksale. Oder geht beides: sichern und sparen? Genau hier zeigt sich, ob Mitbestimmung Zukunft hat.
+Streik legt Bahn lahm — Erpressung oder Grundrecht? Mitbestimmung bremst Tempo — kauft sie Frieden zu teuer?
 
-### Fachbegriff & Definition
+### Spiel-Aufgabe mit [Werkzeug: balance-board]
 
-Das **Kurzarbeit-Modell** verbindet Mitbestimmung mit Stakeholder-Logik in drei Stufen. Es nutzt $Kurzarbeit = wenigerStunden + Lohnausgleich$ statt $Entlassung = Schnitt + Abfindung$. Der Betriebsrat prueft mit $Recht = Anhoerung + Zustimmung$ die Sozialauswahl. Die Formel lautet $Sinnvoll \iff Jobsicher + Qualifikationshalt > Kosten$.
+Oeffne [Werkzeug: balance-board]. Lege Arbeitgeber-Tempo gegen Arbeitnehmer-Schutz auf die Waage. Gewichte Lohn, Zeit, Mitsprache von 1 bis 5. Simuliere Tarifrunde: Ohne Einigung droht $q_A - q_N$ als Streik-Luecke — Angebot an Arbeit gegen Nachfrage nach Leistung.
 
-### Wirkungsgefuege / Modell
+### Aha-Moment & Gesetz
 
-Denke in Kausalkette: **Lage, Instrument, Bilanz**. Erstens lautet die Lage $Auftrag = minus30Prozent$ mit $Liquiditaet = knapp$. Zweitens wirkt das Instrument $Kurzarbeit = Einkommen70Prozent + Staatshilfe$, waehrend Knowhow mit $Wissen = bleibt$ erhalten wird. Drittens bilanziert das Kriterium **sozialer Frieden**: Kurzfristig gilt $Kosten > 0$, langfristig $Bindung + Motivation > Entlassungskosten$. Genau diese Rechnung verlangt in der Klausur ein **kriteriengeleitetes Urteil**, keine Parole.
+Aha-Moment: Verhandlung — Kampf — Frieden. Erstens handeln Gewerkschaften ohne Staat nach Tarifautonomie. Zweitens setzt Streik als letztes Mittel Kosten. Drittens sichert Mitbestimmung nach Kriterium Sozialpartnerschaft Frieden gegen Tempo. Gesetz: $Frieden \iff Mitsprache + Tarifbindung$.
 
 ```diagram
-  Lage [Auftrag minus + Liquiditaet knapp]
-  Lage -> Betriebsrat [Info + Beratung + Veto]
-  Betriebsrat -> Kurzarbeit [Stunden minus + Hilfe]
-  Kurzarbeit -> Urteil (Frieden vs Tempo)
+  Betrieb [Arbeitgeber + Belegschaft]
+  Betrieb -> Waage [Tempo vs Schutz + Gewichte 1 bis 5]
+  Waage -> Kampf [Tarif + Streik + $q_A - q_N$]
+  Kampf -> Urteil [Sozialpartnerschaft]
 ```
+
+Kausalkette: Fall schildern — Bilanz mit $U = \sum(Lust - Leid)$ gegen Probe mit $M \to G$ — Urteil am Kriterium Menschenwuerde; Abgrenzung zu $p_N(q) = p_A(q)$ mit $q_A - q_N$ und zu $Gini$ steht vor jeder Stellungnahme.
 
 Klausur-Satz: `Mitbestimmung kauft sozialen Frieden mit Tempo — ob der Preis in der Transformation 4.0 noch tragbar ist, entscheidet über ihre Zukunft.`
 
@@ -90,24 +97,24 @@ Die paritätische Mitbestimmung im Aufsichtsrat hat ihren Ursprung im Montanbere
 
 Bezug zum Konzept: `Das Beispiel zeigt, wie aus Beobachtung ein pruefbares Verfahren mit $x_1$ und $x_2$ entsteht.`
 
-## Schritt 4 — ausprobieren
+## Schritt 4 — ausprobieren: Interaktive Praxis & Urteils-Waage
 
 BEISPIEL (geleitete Aufgabe mit Werkzeug):
 
-[Werkzeug: balance]
+[Werkzeug: balance-board]
 
-AUFGABE (AFB II): Rekonstruieren Sie den zentralen Begriff des Themas in eigenen Worten und wenden Sie ihn auf ein aktuelles Fallbeispiel an. Belegen Sie jede These mit einem Kriterium und schliessen Sie mit einem begruendeten Urteil (AFB III).
+Lege im Tool Pro- und Contra-Argumente auf die Waage und gewichte jedes Argument von 1 bis 5; veraendere die Gewichte Schritt fuer Schritt und beobachte, wann das Urteil zwischen Erlaubnis und Verbot oder zwischen Massnahme und Verzicht umschlaegt.
+
+AUFGABE Waage-Raetsel (AFB II): Spiele auf [Werkzeug: balance-board] eine Tarifrunde: Fordere plus 7 Prozent Lohn. Gewichte Pro-Betrieb gegen Pro-Team, ziehe Streik-Karte nur als letztes Mittel und begruende das Ergebnis.
 
 HILFE:
-1. Schritt 1: Rekonstruiere den Fall und notiere die gegebenen Groessen $x_1$ und $x_2$.
-2. Schritt 2: Wende die Leitformel an und berechne $d = x_2 - x_1$.
-3. Schritt 3: Deute das Ergebnis am Kriterium und formuliere den Klausur-Satz.
+1. Schritt 1: Lege Forderungen und Angebote auf. 2. Schritt 2: Gewichte 1 bis 5, simuliere Runden. 3. Schritt 3: Deute an Sozialpartnerschaft und formuliere den Klausur-Satz.
 
-MUSTERLOESUNG: Die Musterloesung benennt zunaechst das Kriterium, ordnet den Fall unter $x_1$ und $x_2$ ein und berechnet die Differenz $d = x_2 - x_1$ als Beleg. Das Urteil folgt logisch aus dem Kriterium und nennt eine begruendete Gewichtung.
+MUSTERLOESUNG: Nach zwei Runden ohne $p_N(q) = p_A(q)$ droht Streik mit $q_A - q_N > 0$ als Druck. Einigung bei plus 4 Prozent plus Mitsprache wahrt Tarifautonomie — Arbeitskampf nur nach Scheitern als legitim.
 
 Klausur-Satz: `Der Bahn-Streik zeigt die Tarifautonomie in Aktion: Arbeitskampf als letztes Mittel nach gescheiterten Verhandlungen.`
 
-## Schritt 5 — ausprobieren
+## Schritt 5 — ausprobieren: Verfahrensvergleich & Abgrenzung
 
 VERGLEICH (Wahl des Verfahrens, A gegen B):
 
@@ -122,7 +129,7 @@ ANTWORT: Aufgabe A erfordert Verfahren (i), weil eine Rangfolge aus der Form gen
 
 Klausur-Satz: `Der Betriebsrat besitzt Mitbestimmungsrechte, aber kein Streikrecht, weil er der Friedenspflicht unterliegt.`
 
-## Schritt 6 — check
+## Schritt 6 — check: Verständnisprüfung
 
 CHECK (drei Fragen mit Antworten):
 
@@ -142,14 +149,14 @@ Klausur-Satz: `Die paritätische Mitbestimmung verhindert Konflikteskalation, ve
 2. Fehlkonzept: Ein einzelner Wert wie $Gini$ oder $p_G$ spreche bereits fuer sich und brauche kein Kriterium.
    Korrektur-Satz: `Erst die Deutung der Kennzahl am Kriterium mit $d = x_2 - x_1$ ergibt ein klausurtaugliches Urteil.`
 
-## Schritt 7 — szenario
+## Schritt 7 — szenario: Klausurtransfer & Rubric
 
 ROLLE: Du bist Mitglied des Betriebsrats und verhandelst mit der Geschäftsleitung über die Einführung von Kurzarbeit
 SITUATION: Wegen Auftragsrückgangs will die Geschäftsleitung Personal entlassen. Der Betriebsrat schlägt stattdessen Kurzarbeit vor, um die Stellen zu sichern. Ein Teil der Belegschaft hält Kurzarbeit für ein schwaches Mittel, ein anderer Teil fürchtet die Entlassungen. Beurteile in einer zusammenhängenden Stellungnahme (ca. 150 Wörter), ob Kurzarbeit hier das geeignete Instrument ist, und begründe dein Urteil mit den Mitbestimmungsrechten und dem Stakeholder-Ansatz
 AUFGABE (AFB III): Verfasse eine zusammenhaengende Darstellung von etwa 150 Woertern mit Kriterium, Anwendung und Urteil.
 RUBRIC (30 XP): These mit Kriterium (5 XP) | Rekonstruktion mit $x_1$, $x_2$ (10 XP) | Anwendung mit $d = x_2 - x_1$ (10 XP) | Fazit mit Fachbegriffen (5 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY (Kernbotschaft in einem Kasten):
 

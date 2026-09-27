@@ -15,7 +15,7 @@ version: Lesson-v3
 
 <!-- Lesson v3 9步制架构：Schritt 1至8固定结构；Fehlvorstellung 夹在 Schritt 6 与 7 之间（Parser 自动跳过，不占步数）；支持内嵌 [Werkzeug: <id>] 交互教具；Gating: check/szenario 未过 = Weiter 置灰；XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
-## Schritt 1 — entdecken
+## Schritt 1 — entdecken: Ziele & Phänomen-Einstieg
 
 ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
@@ -25,9 +25,20 @@ ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
 Voraussetzung（窄切口）：只做就业形态变化，不展开全球化贸易理论；已学 Soziale Marktwirtschaft 基础。
 
+
+Hook中文生活切入:
+
+想象步行街的老店:磁带店变奶茶店,奶茶店变快递站,店员从正式工变兼职再变零工,工资按单结算,社保自己操心。鲁尔区的煤矿和钢厂走过同样的路:产业升级了,稳定岗位却碎了,不稳定就业把风险从企业转到个人,繁华背后是安全感的流失。
+
+Phaenomen-Satz (DE): Die Laeden bleiben, die Jobs zerfallen in Schichten und Klicks.
+
+中文机制铺垫:去工业化加数字化重组了就业结构,标准雇佣向非典型雇佣滑动,低技能群体首当其冲;分析链是技术变迁到岗位极化再到社会分化,政策答题要兼顾竞争力与社会保障,Flexicurity 是标准 reference 框架。
+
+Mechanismus-Satz (DE): Wandel schafft Gewinnerbranchen und Verliererbiografien zugleich.
+
 Klausur-Satz: `Der Strukturwandel verlagert Beschaeftigung in Dienstleistungen; dort waechst prekaere Beschaeftigung.`
 
-## Schritt 2 — entdecken
+## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
 
 PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
 
@@ -41,21 +52,35 @@ PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→�
 
 Klausur-Satz: `Prekaer ist Beschaeftigung, wenn Einkommen, Schutz, Dauer und Planbarkeit gleichzeitig defizitär sind.`
 
-## Schritt 3 — entdecken
+## Schritt 3 — entdecken: Kernkonzept & Wirkungsmodell
 
-ENTDECKEN（1概念 + 1文字图解）：
+ENTDECKEN（1概念 + 1文字图解，中文在上、德语在下）：
 
-中文：鲁尔区煤矿关停、快递骑手与平台零工增加，是同一进程的两面：稳定全职工业岗位减少，服务业碎片岗位增加。不稳定不是"懒"，而是结构位置：同样的努力，在有 tariff 覆盖的大企业与在无覆盖的小平台，保障完全不同。分析句式：先说转型事实（Tertiarisierung + Digitalisierung），再说传导（Automatisierung ersetzt Routine， Plattform spaltet Jobs），最后落到群体（Geringqualifizierte、 Berufseinsteiger、 Frauen in Teilzeit tragen das Risiko）。
+Hook中文生活切入：
+
+中文：想象步行街：修车铺变奶茶店、书店变外卖站，工作还在，但铁饭碗变成了零工单。不稳定不是错觉，是结构。
+
+Phaenomen-Satz (DE): Die Jobs bleiben, der Schutz geht.
+
+Spiel-Aufgabe沙盒操作指引：
+
+中文：打开沙盒，用四标准逐项检验一份迷你工作（关键词：Einkommen, Schutz, Dauer, Planbarkeit），看它在哪几项上亮红灯。
+
+Beobachtungs-Satz (DE): Vier Defizite, ein Urteil: prekaer.
+
+Aha-Moment因果链：
+
+中文因果链：结构变迁把就业推向服务业，服务业易拆成小份零工；只看失业率会误判，必须用收入、保障、持续与可规划四把尺子量；个人故事解释个案，结构解释浪潮。
+
+Gesetz-Satz (DE): Der Wandel ersetzt geschuetzte durch ungeschuetzte Beschaeftigung.
 
 文字图解（ASCII 结构图，App支持解析渲染）：
 
 ```diagram
-  Strukturwandel: Industrie ──> Dienst + Plattform + Digital
-  stabil: Tarif, Vollzeit, Sozialschutz
-  prekaer: Minijob | Befristung | Leiharbeit | Solo-Selbst
-  Pruefvierer: Lohn? Schutz? Dauer? Planbarkeit?
+Wandel: Industrie -> Dienstleistung (kleinteilig)
+Vier Massstaebe: Lohn | Schutz | Dauer | Planbarkeit
+Minijob: x x x x = prekaer
 ```
-
 Klausur-Satz: `Der Wandel vernichtet nicht nur Jobs, sondern ersetzt geschuetzte durch ungeschuetzte Beschaeftigung.`
 
 ## Anekdote & Fun-Fact
@@ -66,24 +91,31 @@ Klausur-Satz: `Der Wandel vernichtet nicht nur Jobs, sondern ersetzt geschuetzte
 
 **Bezug zum Konzept**: `Strukturwandel ist kein Diagramm, sondern eine umgebaute Landschaft.`
 
-## Schritt 4 — ausprobieren
+## Schritt 4 — ausprobieren: Interaktive Praxis & Labor
 
-BEISPIEL（正确例题示范，含教具操作与解答）：
+[Werkzeug: gini-allocator]
 
-[Werkzeug: karikatur]
+BEISPIEL（正确例题示范，含教具操作与解答，中文在上、德语在下）：
 
-AUFGABE (analysieren, AFB II)：Analysieren Sie anhand der vier Prekaritaetskriterien, ob ein befristeter Minijob als Paketzusteller mit $520\,\mathrm{Euro}$/Monat, ohne Weiterbildung und mit wechselnden Schichten, prekaer ist.
+AUFGABE中文导读（检验谜题）：一份迷你工作收入低、无社保、随时可停、无法规划。请用四标准判定其是否不稳定就业。
 
-HILFE:
-1. Schritt 1: Jedes Kriterium nennen und am Fall pruefen.
-2. Schritt 2: Strukturwandel-Bezug (Plattform/Dienstleistung) herstellen.
-3. Schritt 3: Urteil mit Adressatenbezug formulieren.
+AUFGABE (pruefen, AFB II): Pruefen Sie einen Minijob an den vier Kriterien und ordnen Sie ihn dem Strukturwandel zu.
 
-MUSTERLÖSUNG: Der Job erfuellt alle vier Kriterien: Das Einkommen liegt unter dem Existenzminimum und erzwingt Aufstockung; der Sozialschutz ist durch Minijob-Regel und Befristung lueckenhaft; die Dauer ist unsicher, sodass keine Lebensplanung moeglich ist; die Mitsprache ueber Schichten fehlt. Strukturell steht der Fall fuer Tertiarisierung plus Plattformoekonomie: Routelogistik waechst, wird aber in kleinteilige, tarifarme Jobs zerlegt. Das Urteil lautet daher prekaer — nicht wegen individueller Leistung, sondern wegen der strukturellen Position des Jobs.
+HILFE（中德双语步骤）：
 
+1. 中文：第1步逐项打分：四项逐一过，关键词：Kriterien。
+   Schritt 1 (DE): Einkommen, Schutz, Dauer, Planbarkeit pruefen.
+2. 中文：第2步下判定：四项皆缺即不稳定，关键词：Urteil。
+   Schritt 2 (DE): Vier Defizite heisst prekaer.
+3. 中文：第3步归因结构而非个人，关键词：Struktur。
+   Schritt 3 (DE): Dienstleistungswandel, nicht Einzelschicksal.
+
+MUSTERLOESUNG：中文：四项全缺即判定为不稳定就业；它是服务业零工化的典型，不是个人不努力，结构解释位置、个人只解释落点。
+
+MUSTERLOESUNG (DE): Nach allen vier Kriterien ist der Minijob prekaer und typisch fuer den dienstleistungsgetriebenen Strukturwandel: Struktur erklaert die Lage der Jobs.
 Klausur-Satz: `Nach allen vier Kriterien ist der Minijob prekaer und typisch fuer den dienstleistungsgetriebenen Strukturwandel.`
 
-## Schritt 5 — ausprobieren
+## Schritt 5 — ausprobieren: Verfahrensvergleich & Abgrenzung
 
 VERGLEICH辨别实验（双向辨析：结构转型 vs 个体归因）：
 
@@ -98,7 +130,7 @@ ANTWORT: A erfordert Verfahren (i): Die Arbeitslosenzahl sinkt, weil Normalarbei
 
 Klausur-Satz: `Struktur erklaert die Lage der Jobs, Individuum nur die Lage einzelner in ihnen.`
 
-## Schritt 6 — check
+## Schritt 6 — check: Verständnisprüfung
 
 CHECK检索默写（自测 3 题，与答案配对）：
 
@@ -120,13 +152,13 @@ Klausur-Satz: `Prekaritaet misst man an vier Defiziten, nicht an einem Klischee.
    中文纠偏：平台规则、派遣制度与部门结构决定了选项菜单，个人只在菜单内选。只谈选择不谈菜单是归因错误。
    Korrektur-Satz: `Prekaritaet ist zuerst Struktur, dann Entscheidung.`
 
-## Schritt 7 — szenario
+## Schritt 7 — szenario: Klausurtransfer & Rubric
 
 ROLLE: Du bist Praktikant in der Kommunalverwaltung einer Ruhrgebietsstadt.
 SITUATION: Der Stadtrat debattiert, ob neue Logistikhufe als Erfolg gelten. Nimm in einer zusammenhaengenden Stellungnahme (ca. 150 Woerter) mit Strukturwandel und Prekaritaetskriterien dazu Stellung und empfehle zwei kommunale Massnahmen.
 RUBRIC (30 XP): Strukturwandel-Deutung der Logistikjobs (8 XP) | Vier-Kriterien-Pruefung (10 XP) | Zwei begruendete Massnahmen, z. B. Vergabe mit Tarifbindung, Weiterbildung (8 XP) | Adressatengerechte Stellungnahme (4 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY 1盒（核心总结）：
 

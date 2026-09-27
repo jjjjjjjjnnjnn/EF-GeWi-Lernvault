@@ -15,7 +15,7 @@ version: Lesson-v3
 
 <!-- Lesson-v3: 8 Schritte plus Anekdote und Fehlvorstellung; Fehlvorstellung zwischen Schritt 6 und 7 (Parser-Skip); interaktives [Werkzeug: <id>]; Gating: check/szenario nicht bestanden = Weiter gesperrt; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
-## Schritt 1 — entdecken
+## Schritt 1 — entdecken: Ziele & Phänomen-Einstieg
 
 ZIELE (drei messbare Ziele dieser Lektion):
 
@@ -25,7 +25,10 @@ ZIELE (drei messbare Ziele dieser Lektion):
 
 ### Hook / Phaenomen
 
-Influencer preist Sneaker, Label verspricht bio, Konto sagt Nein: Folgst du Nutzen oder Signalen? Wuensche sind unendlich, Geld ist knapp, Werbung ist laut. Wer entscheidet deinen Kauf: du oder der Feed?
+Stell dir vor, du suchst in der Stadt eine Wohnung und siehst ein Schild mit Miete 11 Euro pro Quadratmeter, doch der Stadtrat beschliesst einen Deckel bei 8 Euro und verspricht billiges Wohnen fuer alle. Alle freuen sich zuerst ueber die niedrige Miete, aber nach wenigen Monaten verschwinden viele Angebote, die Schlangen bei jeder Besichtigung werden laenger und ein Schattenmarkt mit Abstandszahlungen und Gefaelligkeiten entsteht. Gleichzeitig fordert die Gewerkschaft 15 Euro Mindestlohn, weil der Lohn zum Leben reichen muss, waehrend kleine Betriebe warnen, dass sie bei diesem Lohn weniger Personal einstellen und ihre Preise erhoehen muessen. Beide Faelle zeigen denselben Mechanismus aus Signal und Anpassung: Ein staatlich fixierter Preis ersetzt das freie Signal aus Angebot und Nachfrage, die Mengen reagieren mit Ausweichen oder Verknappung, und am Ende muss jedes Urteil zwischen Effizienz und sozialem Ziel sorgfaeltig abgewogen werden.
+
+
+Ausgangslage aus der Vorlage: Influencer preist Sneaker, Label verspricht bio, Konto sagt Nein: Folgst du Nutzen oder Signalen? Wuensche sind unendlich, Geld ist knapp, Werbung ist laut. Wer entscheidet deinen Kauf: du oder der Feed?
 
 ### Fachbegriff & Definition
 
@@ -37,7 +40,7 @@ Der Mechanismus laeuft in drei Stufen: **Knappheit, Wahl, Steuerung**. Erstens z
 
 Klausur-Satz: `Bedürfnisse sind unbegrenzt, Güter knapp — aus dieser Spannung entsteht alles Wirtschaften; erst mit Kaufkraft wird aus Bedürfnis Bedarf, erst am Markt wird daraus Nachfrage.`
 
-## Schritt 2 — entdecken
+## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
 
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
@@ -57,30 +60,34 @@ Modellmensch oder echter Mensch: Rechnest du oder fuehlst du beim Kaufen? Theori
 
 Die Begriffe greifen ineinander: **Homo oeconomicus** liefert den Massstab $MaxNutzen$, **Budgetgerade** liefert die Grenze $m = knapp$. **Grenznutzenregel** findet das Optimum $MU1/p1 = MU2/p2$. **Souveraenitaet** und **Nachhaltigkeit** liefern die Kritik $Mensch > Modell$. Wer in der Klausur deutet, muss deshalb immer fragen: Folgt der Kauf dem Nutzen oder dem Signal?
 
+Punkte-Hinweis: Nenne $Gleichgewichtspreis$ mit $p_N(q) = p_A(q)$ und beziffere $Ueberhang$ mit $q_A - q_N$; erst die Zahl plus Deutung am Kriterium gibt volle Punkte.
+
 Klausur-Satz: `Der homo oeconomicus entscheidet vollständig informiert und nutzenmaximierend — ein Modell, keine Menschenbeschreibung.`
 
-## Schritt 3 — entdecken
+## Schritt 3 — entdecken: Kernkonzept & Wirkungsmodell
 
 TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
 ### Hook / Phaenomen
 
-Verbot oder Label gegen Zuckerwerbung? Verbot schuetzt schnell, Label bildet sanft, Industrie warnt vor Bevormundung. Welches Instrument achtet Freiheit und schuetzt Gesundheit? Genau hier zaehlt Wirkungsdenken.
+Influencer sagt kaufen — du kaufst? Preis 5 Euro, Siegel fehlt — billig oder blind? Souveraen oder fremdbestimmt — wer lenkt deinen Warenkorb?
 
-### Fachbegriff & Definition
+### Spiel-Aufgabe mit [Werkzeug: markt-sim]
 
-Das **Budget-Optimum-Modell** verbindet Knappheit mit Wahl und Kritik. Es startet mit $Budget = p1x1 + p2x2 = m$ als harter Grenze. Es optimiert mit $MU1/p1 = MU2/p2$ den besten Mix. Es korrigiert mit $Real = Gewohnheit + Signal$ die Modellnaivitaet. Die Formel lautet $Gut \iff bezahlbar + informiert + tragfaehig$.
+Oeffne [Werkzeug: markt-sim]. Ziehe den Preis-Regler fuer das nachhaltige Produkt von $p = 8$ auf $p = 5$ und beobachte, wie $q_N$ steigt und $q_A - q_N$ schrumpft. Schalte das Label-Modul zu: Ehrliche Information verschiebt $p_N(q)$ nach rechts, soziale Signale verzerren sie. Pruefe $p_N(q) = p_A(q)$ vor und nach Label.
 
-### Wirkungsgefuege / Modell
+### Aha-Moment & Gesetz
 
-Denke in Kausalkette: **Grenze, Wahl, Wertung**. Erstens begrenzt $m = 200$ mit $10x1 + 20x2 = 200$ den Raum auf $x1 = 0Bis20$. Zweitens waehlt das Optimum $MU1/10 = MU2/20$ den Punkt hoechsten Nutzens. Drittens wertet **Souveraenitaet**: Verbot wirkt mit $Effekt = schnell + stark$, Label mit $Effekt = sanft + frei$. Genau diese Abwaegung verlangt in der Klausur ein **kriteriengeleitetes Urteil**, keine Werbeparole.
+Aha-Moment: Beduerfnis — Signal — Entscheidung. Erstens lenkt $p$ ueber $p_N(q) = p_A(q)$ die Menge $q_G$. Zweitens verzerren Werbung und Peers die Kurve zu $q_A - q_N \neq 0$ aus Impuls. Drittens stellt Verbraucherbildung mit Kriterium Konsumentensouveraenitaet klar: Erst Information, dann Wahl. Gesetz: $Souveraen \iff Info + Budget + Alternative$.
 
 ```diagram
-  Knappheit [Wuensche > Gueter]
-  Knappheit -> Budget p1x1 + p2x2 = m
-  Budget -> Optimum MU1/p1 = MU2/p2
-  Optimum -> Urteil (Souveraen + Nachhaltig)
+  Bedarf [Beduerfnis + Budget + Info]
+  Bedarf -> Markt [$p_N(q) = p_A(q)$ zu $p_G$, $q_G$]
+  Markt -> Stoerung [Werbung + Label-Luecke + $q_A - q_N$]
+  Stoerung -> Urteil [Souveraenitaet mit Bildung]
 ```
+
+Kausalkette: Fixpreis ungleich $p_N(q) = p_A(q)$ — Mengen reagieren mit $q_A - q_N$ — Deutung am Kriterium Effizienz gegen Sozialziel; Abgrenzung zu $Gini$ und $U = \sum(Lust - Leid)$ steht vor jeder Rechnung.
 
 Klausur-Satz: `Konsumentensouveränität ist kein Zustand, sondern ein Auftrag an Verbraucherbildung, ehrliche Labels und eine Politik, die nachhaltige Optionen bezahlbar macht.`
 
@@ -90,24 +97,24 @@ Das Wort „Ökonomie" stammt aus dem Griechischen: „oikos" heißt Haus, „no
 
 Bezug zum Konzept: `Das Beispiel zeigt, wie aus Beobachtung ein pruefbares Verfahren mit $x_1$ und $x_2$ entsteht.`
 
-## Schritt 4 — ausprobieren
+## Schritt 4 — ausprobieren: Interaktive Praxis & Markt-Labor
 
 BEISPIEL (geleitete Aufgabe mit Werkzeug):
 
-[Werkzeug: formula]
+[Werkzeug: markt-sim]
 
-AUFGABE (AFB II): Ein Haushalt verfuegt ueber $m = 200$ Euro. Gut 1 kostet $p_1 = 10$, Gut 2 kostet $p_2 = 20$. Stellen Sie die Budgetgerade $10 x_1 + 20 x_2 = 200$ auf und bestimmen Sie die optimale Gueterkombination nach $MU_1 / p_1 = MU_2 / p_2$.
+Ziehe im Tool den Mindestpreis-Regler von $p_G$ nach oben und beobachte live, wie $q_A - q_N$ als Ueberhang waechst; ziehe danach den Hoechstpreis-Regler von $p_G$ nach unten und notiere Mangel, Schlange und Schattenmarkt.
+
+AUFGABE Spiel-Raetsel (AFB II): Vergleiche im Tool zwei Koerbe: konventionell $p = 3$ ohne Label gegen nachhaltig $p = 5$ mit Label. Ziehe den Preis-Regler, bis $q_A - q_N = 0$ gilt, und pruefe, welche Information $p_N(q)$ verschiebt.
 
 HILFE:
-1. Schritt 1: Rekonstruiere den Fall und notiere die gegebenen Groessen $x_1$ und $x_2$.
-2. Schritt 2: Wende die Leitformel an und berechne $d = x_2 - x_1$.
-3. Schritt 3: Deute das Ergebnis am Kriterium und formuliere den Klausur-Satz.
+1. Schritt 1: Notiere Preis, Label und soziales Signal je Korb. 2. Schritt 2: Veraendere $p$, lies $q_N$ und $q_A - q_N$. 3. Schritt 3: Deute am Kriterium Souveraenitaet und formuliere den Klausur-Satz.
 
-MUSTERLOESUNG: Die Budgetgerade lautet $10 x_1 + 20 x_2 = 200$. Das Optimum liegt dort, wo $MU_1 / 10 = MU_2 / 20$ gilt. Eine Preiserhoehung von $p_1$ dreht die Gerade nach innen; die Sparquote $s = S / Y$ steigt, wenn der Konsum zurueckgeht.
+MUSTERLOESUNG: Der Influencer-Korb folgt Signalen statt Kalkuel: $q_N$ hoch ohne Pruefung. Mit Label und Bildung verschiebt sich $p_N(q)$ zurueck zu $p_N(q) = p_A(q)$; erst bezahlbare Alternativen plus ehrliche Info machen $q_A - q_N = 0$ bei guter Wahl moeglich.
 
 Klausur-Satz: `Der Influencer-Einfluss belegt Fremdbestimmung: Kaufentscheidungen folgen sozialen Signalen statt eigenem Nutzenkalkül.`
 
-## Schritt 5 — ausprobieren
+## Schritt 5 — ausprobieren: Verfahrensvergleich & Abgrenzung
 
 VERGLEICH (Wahl des Verfahrens, A gegen B):
 
@@ -122,7 +129,7 @@ ANTWORT: Aufgabe A erfordert Verfahren (i), weil eine Rangfolge aus der Form gen
 
 Klausur-Satz: `Ein Werbeverbot ist ein starkes staatliches Instrument, während ein Label das mildere Mittel darstellt.`
 
-## Schritt 6 — check
+## Schritt 6 — check: Verständnisprüfung
 
 CHECK (drei Fragen mit Antworten):
 
@@ -142,14 +149,14 @@ Klausur-Satz: `Nachhaltigkeit ruht auf drei Säulen, die nicht gegeneinander aus
 2. Fehlkonzept: Ein einzelner Wert wie $Gini$ oder $p_G$ spreche bereits fuer sich und brauche kein Kriterium.
    Korrektur-Satz: `Erst die Deutung der Kennzahl am Kriterium mit $d = x_2 - x_1$ ergibt ein klausurtaugliches Urteil.`
 
-## Schritt 7 — szenario
+## Schritt 7 — szenario: Klausurtransfer & Rubric
 
 ROLLE: Du bist Mitglied einer Verbraucherinitiative und sprichst auf einer öffentlichen Veranstaltung
 SITUATION: Eine Diskussion dreht sich um die Frage, ob Werbung für ungesunde oder nicht nachhaltige Produkte stärker reguliert werden soll. Ein Teil des Publikums fordert ein Werbeverbot, ein anderer Teil setzt auf Information und freiwillige Selbstverpflichtung der Unternehmen. Beurteile in einer zusammenhängenden Stellungnahme (ca. 150 Wörter), welches Instrument du befürwortest, und begründe dein Urteil mit Blick auf Konsumentensouveränität und Nachhaltigkeit
 AUFGABE (AFB III): Verfasse eine zusammenhaengende Darstellung von etwa 150 Woertern mit Kriterium, Anwendung und Urteil.
 RUBRIC (30 XP): These mit Kriterium (5 XP) | Rekonstruktion mit $x_1$, $x_2$ (10 XP) | Anwendung mit $d = x_2 - x_1$ (10 XP) | Fazit mit Fachbegriffen (5 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY (Kernbotschaft in einem Kasten):
 

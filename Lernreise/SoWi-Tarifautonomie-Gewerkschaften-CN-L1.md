@@ -15,7 +15,7 @@ version: Lesson-v3
 
 <!-- Lesson v3 9步制架构：Schritt 1至8固定结构；Fehlvorstellung 夹在 Schritt 6 与 7 之间（Parser 自动跳过，不占步数）；支持内嵌 [Werkzeug: <id>] 交互教具；Gating: check/szenario 未过 = Weiter 置灰；XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
-## Schritt 1 — entdecken
+## Schritt 1 — entdecken: Ziele & Phänomen-Einstieg
 
 ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
@@ -25,9 +25,20 @@ ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
 Voraussetzung（窄切口）：只做集体劳动法，不展开个体 Kündigungsschutz；已会 Sozialpartnerschaft 概念。
 
+
+Hook中文生活切入:
+
+想象全班和食堂谈判餐价:一个人去谈没人理,全班推代表去谈,食堂就得坐下来;谈崩了就集体罢餐,食堂损失更大,只好让步。劳资谈判同理:单个工人议价能力为零,工会把分散的议价权聚成拳头,罢工作为最后筹码,谈出的合同管全行业。这场谈判桌两边的筹码对比,正是本节要建模的议价机制。
+
+Phaenomen-Satz (DE): Einer bettelt, alle verhandeln, das macht den Unterschied am Tisch.
+
+中文机制铺垫:结社自由与劳资自治是宪法地基,工会与雇主协会对等谈判签集体合同,和平义务期内不得罢工,调解失败才可升级;答题链是议价失衡到集体行动再到合同覆盖,罢工合法性看四要件。
+
+Mechanismus-Satz (DE): Autonomie verhandelt, Streik erzwingt, der Tarif bindet die Branche.
+
 Klausur-Satz: `Tarifautonomie heisst: Loehne werden frei verhandelt, Arbeitskampf ist dabei das ultima-ratio-Mittel.`
 
-## Schritt 2 — entdecken
+## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
 
 PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
 
@@ -41,20 +52,35 @@ PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→�
 
 Klausur-Satz: `Streik und Aussperrung sind nur als verhaeltnismaessige Kampfmittel um Tarifziele zulaessig.`
 
-## Schritt 3 — entdecken
+## Schritt 3 — entdecken: Kernkonzept & Wirkungsmodell
 
-ENTDECKEN（1概念 + 1文字图解）：
+ENTDECKEN（1概念 + 1文字图解，中文在上、德语在下）：
 
-中文：劳资自治是"国家后退一步"：工资不由法律定，而由对等博弈定。博弈有规则：先谈判、再调解、最后才可罢工；罢工只为 Tarif 目标（Lohn、 Arbeitszeit），不为政治目标；罢工期间 Friedenspflicht 结束，但 Verhaeltnismaessigkeit 全程有效。雇主对称武器是 Aussperrung。记住谈判链，合法性审查就不会漏项。
+Hook中文生活切入：
+
+中文：想象班级春游AA：没人想多掏，推个人跟商家谈折扣，谈崩了就集体说不去。这就是工资谈判的班级版。
+
+Phaenomen-Satz (DE): Frei verhandeln, zur Not gemeinsam stehenbleiben.
+
+Spiel-Aufgabe沙盒操作指引：
+
+中文：打开沙盒，拖动滑块调涨薪诉求与企业报价（关键词：Tarifautonomie, Schlichtung, Warnstreik, ultima ratio），看谈判、调解、罢工三步如何依次解锁。
+
+Beobachtungs-Satz (DE): Erst verhandeln, dann schlichten, erst danach streiken.
+
+Aha-Moment因果链：
+
+中文因果链：工资由劳资自治谈判而非国家定价，罢工与闭厂是最后手段且须合比例、只为关税目标；先走完谈判与调解，罢工才合法，合法性看规则、明智看代价。
+
+Gesetz-Satz (DE): Ohne Tarifziel und ohne ultima ratio ist kein Streik rechtmaessig.
 
 文字图解（ASCII 结构图，App支持解析渲染）：
 
 ```diagram
-  Verhandlung ──scheitert──> Schlichtung ──scheitert──> Urabstimmung
-  ──> Streik (ultima ratio) <──> Aussperrung
-  zulaessig nur: tariffaehig + verhaeltnismaessig + Gewerkschaft
+Verhandlung -> Schlichtung -> Warnstreik -> Streik
+Filter: Tarifziel? ultima ratio? verhaeltnismaessig?
+Urteil: rechtmaessig (Regeln) + sinnvoll (Kosten/Druck)
 ```
-
 Klausur-Satz: `Erst verhandeln, dann schlichten, erst danach streiken — und nur um Tarifziele.`
 
 ## Anekdote & Fun-Fact
@@ -65,24 +91,31 @@ Klausur-Satz: `Erst verhandeln, dann schlichten, erst danach streiken — und nu
 
 **Bezug zum Konzept**: `Was heute normal wirkt, war gestern ein Tarifkampf.`
 
-## Schritt 4 — ausprobieren
+## Schritt 4 — ausprobieren: Interaktive Praxis & Labor
 
-BEISPIEL（正确例题示范，含教具操作与解答）：
+[Werkzeug: markt-sim]
 
-[Werkzeug: fall]
+BEISPIEL（正确例题示范，含教具操作与解答，中文在上、德语在下）：
 
-AUFGABE (analysieren, AFB II)：Eine Gewerkschaft ruft nach gescheiterter Verhandlung und Schlichtung per Urabstimmung zum Warnstreik im Nahverkehr auf, um 8 % mehr Lohn durchzusetzen. Pruefen Sie die Rechtmaessigkeit in drei Schritten.
+AUFGABE中文导读（判定谜题）：调解耗尽后工会为加薪发起警告性罢工。请判定其合法性并评价是否明智。
 
-HILFE:
-1. Schritt 1: Traeger und Ziel pruefen (Gewerkschaft? Tarifziel?).
-2. Schritt 2: Ultima ratio pruefen (Verhandlung + Schlichtung erschoepft?).
-3. Schritt 3: Verhaeltnismaessigkeit wuerdigen (Warnstreik als mildes Mittel).
+AUFGABE (pruefen, AFB II/III): Nach erschoepfter Schlichtung streikt die Gewerkschaft fuer Lohn. Pruefen Sie Rechtmaessigkeit und Sinn.
 
-MUSTERLÖSUNG: Traeger ist die zustaendige Gewerkschaft, Ziel ist Lohn als klassisches Tarifziel — tariffaehig. Verhandlungen und Schlichtung sind dokumentiert gescheitert, die Urabstimmung liegt vor — ultima ratio erfuellt. Der befristete Warnstreik ist das mildeste wirksame Mittel und bleibt verhaeltnismaessig; ein politischer Generalstreik waere dagegen unzulaessig. Ergebnis: Der Warnstreik ist rechtmaessig; staatliche Lohnfestsetzung waere ein Eingriff in Art. 9 Abs. 3 GG.
+HILFE（中德双语步骤）：
 
+1. 中文：第1步验目标：为工资即关税目标通过，关键词：Ziel。
+   Schritt 1 (DE): Tarifziel bejahen.
+2. 中文：第2步验步骤：调解耗尽即最后手段通过，关键词：Stufen。
+   Schritt 2 (DE): ultima ratio nach Schlichtung bejahen.
+3. 中文：第3步评明智：算代价与压力效果，关键词：Kosten。
+   Schritt 3 (DE): Kosten gegen Druck abwaegen.
+
+MUSTERLOESUNG：中文：目标是工资、步骤走完调解，合法性两关全过；明智与否看罢工基金能撑多久、舆论与订单压力能否换来加价，合法不等于划算。
+
+MUSTERLOESUNG (DE): Als gewerkschaftlicher Warnstreik um Lohn nach erschoepfter Schlichtung ist die Aktion rechtmaessig und verhaeltnismaessig. Sinnvoll ist sie, wenn Druck und Kosten stimmen.
 Klausur-Satz: `Als gewerkschaftlicher Warnstreik um Lohn nach erschoepfter Schlichtung ist die Aktion rechtmaessig und verhaeltnismaessig.`
 
-## Schritt 5 — ausprobieren
+## Schritt 5 — ausprobieren: Verfahrensvergleich & Abgrenzung
 
 VERGLEICH辨别实验（双向辨析：合法审查 vs 效果评价）：
 
@@ -97,7 +130,7 @@ ANTWORT: A erfordert Verfahren (i): Nur die Viererpruefung (Traeger, Tarifziel, 
 
 Klausur-Satz: `Rechtmaessigkeit folgt den Kampfregeln, Sinnhaftigkeit den Kosten und dem Druck.`
 
-## Schritt 6 — check
+## Schritt 6 — check: Verständnisprüfung
 
 CHECK检索默写（自测 3 题，与答案配对）：
 
@@ -119,13 +152,13 @@ Klausur-Satz: `Ohne Tarifziel und ohne ultima ratio ist kein Streik rechtmaessig
    中文纠偏：这违反 Tarifautonomie；国家只设定底线（Mindestlohn、 Arbeitszeitgesetz），具体工资留给劳资博弈。
    Korrektur-Satz: `Der Staat setzt Rahmen, die Tarifparteien setzen Loehne.`
 
-## Schritt 7 — szenario
+## Schritt 7 — szenario: Klausurtransfer & Rubric
 
 ROLLE: Du bist Schuelervertreter in einer Podiumsdiskussion zum OePNV-Streik.
 SITUATION: Pendler klagen ueber Ausfaelle, die Gewerkschaft verweist auf gescheiterte Schlichtung. Nimm in einer zusammenhaengenden Stellungnahme (ca. 150 Woerter) dazu Stellung: War der Streik rechtmaessig und war er sinnvoll?
 RUBRIC (30 XP): Rechtmaessigkeitspruefung in vier Punkten (12 XP) | Wirksamkeitsabwaegung mit Kosten (10 XP) | Eigenes kriteriengeleitetes Urteil (4 XP) | Adressatengerechte Stellungnahme (4 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY 1盒（核心总结）：
 

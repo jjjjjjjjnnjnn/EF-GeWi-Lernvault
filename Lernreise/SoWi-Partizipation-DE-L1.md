@@ -15,7 +15,7 @@ version: Lesson-v3
 
 <!-- Lesson-v3: 8 Schritte plus Anekdote und Fehlvorstellung; Fehlvorstellung zwischen Schritt 6 und 7 (Parser-Skip); interaktives [Werkzeug: <id>]; Gating: check/szenario nicht bestanden = Weiter gesperrt; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
-## Schritt 1 — entdecken
+## Schritt 1 — entdecken: Ziele & Phänomen-Einstieg
 
 ZIELE (drei messbare Ziele dieser Lektion):
 
@@ -25,7 +25,10 @@ ZIELE (drei messbare Ziele dieser Lektion):
 
 ### Hook / Phaenomen
 
-Fridays for Future fuellt Strassen, Parteien bleiben leer, online klicken Tausende in Sekunden. Jugend meidet Partei, sucht aber Wirkung. Zaehlt Klick so viel wie Stimme, und schuetzt Mehrheit auch Minderheit?
+Stell dir vor, ein Wagen rast auf fuenf Menschen zu und du stehst an der Weiche und kannst den Wagen auf ein Gleis mit nur einer Person lenken, waehrend die Gruppe hinter dir ruft, dass Rechnen doch klar sei und fuenf Leben mehr zaehlten als eines. Gleichzeitig weisst du aus deiner Sozialisation in Familie und Schule und Freundeskreis, dass jeder Mensch Wuerde traegt und niemand zum blossen Mittel fuer andere gemacht werden darf. Genau hier kollidieren zwei Pruefungen desselben Falles: Die eine Bilanz zaehlt Lust und Leid fuer alle Betroffenen zusammen, die andere Pruefung fragt, ob deine Maxime als allgemeines Gesetz gewollt werden kann. In dieser Lektion lernst du den Mechanismus aus Bilanz und Probe und Abwaegung, damit du in der Klausur beide Brillen sauber trennst und dein Urteil an einem expliziten Kriterium begruendest.
+
+
+Ausgangslage aus der Vorlage: Fridays for Future fuellt Strassen, Parteien bleiben leer, online klicken Tausende in Sekunden. Jugend meidet Partei, sucht aber Wirkung. Zaehlt Klick so viel wie Stimme, und schuetzt Mehrheit auch Minderheit?
 
 ### Fachbegriff & Definition
 
@@ -37,7 +40,7 @@ Der Mechanismus laeuft in drei Stufen: **Anlass, Form, Sicherung**. Erstens mobi
 
 Klausur-Satz: `Jugendliche engagieren sich stark sozial und politisch (NGOs, Fridays for Future), meiden aber Parteien — Partizipation ja, Parteibindung nein.`
 
-## Schritt 2 — entdecken
+## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
 
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
@@ -57,30 +60,34 @@ Legal oder illegal, wirksam oder symbolisch: Wer mischt, verliert Punkte. Diese 
 
 Die Begriffe greifen ineinander: **Konventionell** sichert mit $Stimme = Mandat$ Dauer, **unkonventionell** erzeugt mit $Menge = Bild$ Druck. **Initiative** startet, **Begehren** filtert mit $Zahl = Ernst$, **Entscheid** bindet mit $Votum = Gesetz$. Wer in der Klausur ordnet, muss deshalb immer fragen: Ist die Form verfasst oder frei, legal oder bereits illegitim?
 
+Punkte-Hinweis: Nenne $Utilitarismus$ mit $U = \sum(Lust - Leid)$ und $Kategorischer Imperativ$ mit $M \to G$; erst beide Pruefungen plus Kriterium wie Menschenwuerde gibt volle Punkte.
+
 Klausur-Satz: `Der Weg zum Volksentscheid führt über Initiative, Begehren (Unterschriftenquorum) und Entscheid (Zustimmungsquorum).`
 
-## Schritt 3 — entdecken
+## Schritt 3 — entdecken: Kernkonzept & Wirkungsmodell
 
 TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
 ### Hook / Phaenomen
 
-Buergerrat zum Verkehr: echte Teilhabe oder Alibi mit Kaffee und Mikros? Empfehlungen klingen gut, binden aber niemanden. Staerkt Losverfahren Demokratie oder ersetzt es Wahl? Genau hier braucht es Massstab.
+Jugend waehlt selten — desinteressiert oder ausgeschlossen? Klick statt Partei — veraendert E-Partizipation alles oder nichts?
 
-### Fachbegriff & Definition
+### Spiel-Aufgabe mit [Werkzeug: balance-board]
 
-Das **Ergaenzungsmodell** ordnet Buergerrat zwischen Protest und Parlament ein. Der **Buergerrat** lost Buerger mit $Los = Vielfalt$ und beraet mit $Empfehlung = Konsens$. **E-Partizipation** senkt mit $Kosten = Klick$ Huerden, ersetzt aber mit $Bindung = schwach$ keine Organisation. Die Formel lautet $Sinnvoll \iff Impuls + Oeffentlichkeit > Alibi$.
+Oeffne [Werkzeug: balance-board]. Lege Wahl gegen E-Partizipation gegen Ehrenamt. Gewichte Kosten, Wirkung, Dauer je 1 bis 5. Senke per Regler Beteiligungskosten und beobachte: Klick steigt schnell, Organisation bleibt flach. Nichtwahl ungleich Desinteresse wird sichtbar.
 
-### Wirkungsgefuege / Modell
+### Aha-Moment & Gesetz
 
-Denke in Kausalkette: **Luecke, Bruecke, Grenze**. Erstens zeigt die Luecke $Wahljung = niedrig$ bei $Engagement = hoch$ den Wandel. Zweitens baut der Rat mit $Los + Info + Deliberation$ die Bruecke zu $Empfehlung = Verkehrswende$. Drittens markiert **Minderheitenschutz** die Grenze: Ohne $Verbindlichkeit = Parlament$ bleibt Rat Impuls, mit Parlament wird er Ergaenzung. Genau diese Einordnung verlangt in der Klausur ein **kriteriengeleitetes Urteil**, keine Begeisterung.
+Aha-Moment: Kosten — Form — Bindung. Erstens senkt Digital $Kosten = niedrig$. Zweitens ersetzt Klick keine $Organisation = dauerhaft$. Drittens urteilt Kriterium Demokratische Teilhabe: Breite plus Tiefe. Gesetz: $Teilhabe = Anlass + Organisation$.
 
 ```diagram
-  Luecke [Wahl niedrig + Protest hoch]
-  Luecke -> Rat [Los + Info + Beratung]
-  Rat -> Empfehlung [Konsens + Oeffentlichkeit]
-  Empfehlung -> Urteil (Ergaenzung mit Grenze)
+  Anlass [Wahl + Klick + Amt]
+  Anlass -> Waage [Kosten + Wirkung + Dauer 1 bis 5]
+  Waage -> Form [E-Partizipation vs Organisation]
+  Form -> Urteil [Breite + Tiefe]
 ```
+
+Kausalkette: Fall schildern — Bilanz mit $U = \sum(Lust - Leid)$ gegen Probe mit $M \to G$ — Urteil am Kriterium Menschenwuerde; Abgrenzung zu $p_N(q) = p_A(q)$ mit $q_A - q_N$ und zu $Gini$ steht vor jeder Stellungnahme.
 
 Klausur-Satz: `Die Wahlbeteiligung nach Alter zeigt, dass junge Menschen seltener wählen — Nichtwahl ist jedoch nicht gleich Desinteresse.`
 
@@ -90,24 +97,24 @@ In Deutschland darf man bei der Bundestagswahl ab 18 Jahren wählen. Bei der Eur
 
 Bezug zum Konzept: `Das Beispiel zeigt, wie aus Beobachtung ein pruefbares Verfahren mit $x_1$ und $x_2$ entsteht.`
 
-## Schritt 4 — ausprobieren
+## Schritt 4 — ausprobieren: Interaktive Praxis & Urteils-Waage
 
 BEISPIEL (geleitete Aufgabe mit Werkzeug):
 
-[Werkzeug: balance]
+[Werkzeug: balance-board]
 
-AUFGABE (AFB II): Rekonstruieren Sie den zentralen Begriff des Themas in eigenen Worten und wenden Sie ihn auf ein aktuelles Fallbeispiel an. Belegen Sie jede These mit einem Kriterium und schliessen Sie mit einem begruendeten Urteil (AFB III).
+Lege im Tool Pro- und Contra-Argumente auf die Waage und gewichte jedes Argument von 1 bis 5; veraendere die Gewichte Schritt fuer Schritt und beobachte, wann das Urteil zwischen Erlaubnis und Verbot oder zwischen Massnahme und Verzicht umschlaegt.
+
+AUFGABE Waage-Raetsel (AFB II): Lege auf [Werkzeug: balance-board] Wahlbeteiligung nach Alter gegen E-Kampagne. Gewichte Kosten, Wirkung, Dauer und pruefe, ob Senkung der Kosten allein Bindung schafft.
 
 HILFE:
-1. Schritt 1: Rekonstruiere den Fall und notiere die gegebenen Groessen $x_1$ und $x_2$.
-2. Schritt 2: Wende die Leitformel an und berechne $d = x_2 - x_1$.
-3. Schritt 3: Deute das Ergebnis am Kriterium und formuliere den Klausur-Satz.
+1. Schritt 1: Notiere Beteiligungsquoten nach Alter. 2. Schritt 2: Gewichte drei Formen 1 bis 5. 3. Schritt 3: Deute an Teilhabe und formuliere den Klausur-Satz.
 
-MUSTERLOESUNG: Die Musterloesung benennt zunaechst das Kriterium, ordnet den Fall unter $x_1$ und $x_2$ ein und berechnet die Differenz $d = x_2 - x_1$ als Beleg. Das Urteil folgt logisch aus dem Kriterium und nennt eine begruendete Gewichtung.
+MUSTERLOESUNG: Waage zeigt mit $Teilhabe = Anlass + Organisation$: E-Senkung hebt Klick, nicht Bindung. Jugend partizipiert anders — Nichtwahl heisst nicht Desinteresse, doch ohne Organisation verpufft Wirkung.
 
 Klausur-Satz: `E-Partizipation senkt die Kosten der Beteiligung, ersetzt aber keine dauerhafte politische Organisation.`
 
-## Schritt 5 — ausprobieren
+## Schritt 5 — ausprobieren: Verfahrensvergleich & Abgrenzung
 
 VERGLEICH (Wahl des Verfahrens, A gegen B):
 
@@ -122,7 +129,7 @@ ANTWORT: Aufgabe A erfordert Verfahren (i), weil eine Rangfolge aus der Form gen
 
 Klausur-Satz: `Der Bürgerrat ergänzt die repräsentative Demokratie, kann sie aber ohne Verbindlichkeit nicht ersetzen.`
 
-## Schritt 6 — check
+## Schritt 6 — check: Verständnisprüfung
 
 CHECK (drei Fragen mit Antworten):
 
@@ -142,14 +149,14 @@ Klausur-Satz: `Direkte Demokratie kann die repräsentative Demokratie ergänzen,
 2. Fehlkonzept: Ein einzelner Wert wie $Gini$ oder $p_G$ spreche bereits fuer sich und brauche kein Kriterium.
    Korrektur-Satz: `Erst die Deutung der Kennzahl am Kriterium mit $d = x_2 - x_1$ ergibt ein klausurtaugliches Urteil.`
 
-## Schritt 7 — szenario
+## Schritt 7 — szenario: Klausurtransfer & Rubric
 
 ROLLE: Du bist Teilnehmerin bzw. Teilnehmer an einer simulierten Bürgerversammlung zum Klimaschutz
 SITUATION: Die Stadt will einen Bürgerrat zum Thema Verkehr einrichten. Ein Teil der Anwesenden hält das für echte Teilhabe, ein anderer Teil nennt es eine Alibi-Veranstaltung, weil die Empfehlungen nicht bindend sind. Beurteile in einer zusammenhängenden Stellungnahme (ca. 150 Wörter), ob ein Bürgerrat die politische Beteiligung stärkt, und begründe dein Urteil mit mindestens zwei Argumenten
 AUFGABE (AFB III): Verfasse eine zusammenhaengende Darstellung von etwa 150 Woertern mit Kriterium, Anwendung und Urteil.
 RUBRIC (30 XP): These mit Kriterium (5 XP) | Rekonstruktion mit $x_1$, $x_2$ (10 XP) | Anwendung mit $d = x_2 - x_1$ (10 XP) | Fazit mit Fachbegriffen (5 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY (Kernbotschaft in einem Kasten):
 

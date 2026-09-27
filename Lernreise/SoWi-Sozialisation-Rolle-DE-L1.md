@@ -15,7 +15,7 @@ version: Lesson-v3
 
 <!-- Lesson-v3: 8 Schritte plus Anekdote und Fehlvorstellung; Fehlvorstellung zwischen Schritt 6 und 7 (Parser-Skip); interaktives [Werkzeug: <id>]; Gating: check/szenario nicht bestanden = Weiter gesperrt; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
-## Schritt 1 — entdecken
+## Schritt 1 — entdecken: Ziele & Phänomen-Einstieg
 
 ZIELE (drei messbare Ziele dieser Lektion):
 
@@ -25,7 +25,10 @@ ZIELE (drei messbare Ziele dieser Lektion):
 
 ### Hook / Phaenomen
 
-Verbot oder Freiheit fuers Handy, Streit um Fairness im Klassenrat: Zwei Schuelerinnen, eine Regel, zwei Gefuehle. Warum beruhigen Regeln, obwohl sie einengen? Genau hier wirken Rolle und Sanktion.
+Stell dir vor, ein Wagen rast auf fuenf Menschen zu und du stehst an der Weiche und kannst den Wagen auf ein Gleis mit nur einer Person lenken, waehrend die Gruppe hinter dir ruft, dass Rechnen doch klar sei und fuenf Leben mehr zaehlten als eines. Gleichzeitig weisst du aus deiner Sozialisation in Familie und Schule und Freundeskreis, dass jeder Mensch Wuerde traegt und niemand zum blossen Mittel fuer andere gemacht werden darf. Genau hier kollidieren zwei Pruefungen desselben Falles: Die eine Bilanz zaehlt Lust und Leid fuer alle Betroffenen zusammen, die andere Pruefung fragt, ob deine Maxime als allgemeines Gesetz gewollt werden kann. In dieser Lektion lernst du den Mechanismus aus Bilanz und Probe und Abwaegung, damit du in der Klausur beide Brillen sauber trennst und dein Urteil an einem expliziten Kriterium begruendest.
+
+
+Ausgangslage aus der Vorlage: Verbot oder Freiheit fuers Handy, Streit um Fairness im Klassenrat: Zwei Schuelerinnen, eine Regel, zwei Gefuehle. Warum beruhigen Regeln, obwohl sie einengen? Genau hier wirken Rolle und Sanktion.
 
 ### Fachbegriff & Definition
 
@@ -37,7 +40,7 @@ Der Mechanismus laeuft in drei Stufen: **Erwartung, Kontrolle, Spielraum**. Erst
 
 Klausur-Satz: `Sozialisation bezeichnet den lebenslangen Prozess, in dem das Individuum Normen, Werte und Rollen seiner Gesellschaft erwirbt.`
 
-## Schritt 2 — entdecken
+## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
 
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
@@ -57,30 +60,34 @@ Familie praegt Sprache, Schule verteilt Noten, Peers setzen Stil: Wer formt dich
 
 Die Begriffe greifen ineinander: **Primaer** und **sekundaer** liefern die Phasen $frueh + spaet$. **Sanktion** sichert mit $Lohn + Strafe$ die Norm. **Konflikt** und **Distanz** liefern Problem und Loesung $Spannung + Spielraum$. Wer in der Klausur deutet, muss deshalb immer fragen: Welche Phase praegt, welcher Konflikt bremst, welche Distanz hilft?
 
+Punkte-Hinweis: Nenne $Utilitarismus$ mit $U = \sum(Lust - Leid)$ und $Kategorischer Imperativ$ mit $M \to G$; erst beide Pruefungen plus Kriterium wie Menschenwuerde gibt volle Punkte.
+
 Klausur-Satz: `Dahrendorfs Homo sociologicus handelt nach Rollenerwartungen; Abweichung löst soziale Kontrolle in Form positiver oder negativer Sanktionen aus.`
 
-## Schritt 3 — entdecken
+## Schritt 3 — entdecken: Kernkonzept & Wirkungsmodell
 
 TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
 ### Hook / Phaenomen
 
-Halten oder brechen, gehorchen oder spotten: Eine Schuelerin folgt Regel, andere ruft ungerecht. Moderation braucht mehr als Machtwort. Hilft Distanz, den Streit zu loesen? Genau hier zeigt sich Rollenreife.
+Schueler, Tochter, Freund — drei Rollen, ein Tag, null Zeit? Erwartung gegen Erwartung — wann bricht die Rolle, wann schuetzt Distanz?
 
-### Fachbegriff & Definition
+### Spiel-Aufgabe mit [Werkzeug: gini-allocator]
 
-Das **Rollen-Sanktions-Modell** verbindet Erwartung mit Folge und Freiheit. Es startet mit $Rolle = Muss + Soll + Kann$ als Skala der Verbindlichkeit. Es droht mit $Abweichung = Sanktion$ als Preis des Bruchs. Es rettet mit $Distanz = Reflexion$ die Person. Die Formel lautet $Ordnung \iff Erwartung + Kontrolle + Abstand$.
+Oeffne [Werkzeug: gini-allocator]. Verteile 100 Erwartungspunkte per Regler auf Positionen: Familie, Schule, Peers. Beobachte, wie ungleiche Verteilung die Kurve wölbt — $Gini$ steigt, sobald eine Rolle dominiert. Mache Rollenkonflikt als $q_A - q_N$ der Zeit sichtbar: Angebot an Zeit gegen Nachfrage durch Rollen.
 
-### Wirkungsgefuege / Modell
+### Aha-Moment & Gesetz
 
-Denke in Kausalkette: **Regel, Bruch, Bruecke**. Erstens gilt $Handy = verbotenImUnterricht$ mit $Sanktion = Eintrag$. Zweitens bricht $PersonRolle = GewissenGegenRegel$ auf als Streit. Drittens baut **Distanz** mit $Gespraech = RolleErklaeren + KritikHoeren$ die Bruecke zu $Kompromiss = Zone + Zeit$. Genau diese Moderation verlangt in der Klausur ein **kriteriengeleitetes Urteil**, kein Machtwort.
+Aha-Moment: Erwartung — Konflikt — Distanz. Erstens machen Rollen mit $Lage + Handlung + Zweck$ Verhalten berechenbar. Zweitens erzeugt $Inter = ZeitA + ZeitB > Zeit$ den Konflikt mit $Gini$ als Mass der Einseitigkeit. Drittens sichert Rollendistanz Freiheit nach Kriterium Autonomie in Sozialitaet. Gesetz: $Frei \iff Rolle + Distanz$.
 
 ```diagram
-  Erwartung [Muss + Soll + Kann]
-  Erwartung -> Kontrolle [Lob + Tadel]
-  Kontrolle -> Konflikt [intra + inter + Person]
-  Konflikt -> Distanz -> Urteil (Ordnung mit Freiheit)
+  Positionen [Familie + Schule + Peers = 100]
+  Positionen -> Verteilung [Kurve + $Gini$ + Bogen]
+  Verteilung -> Konflikt [$Inter$ + $q_A - q_N$ der Zeit]
+  Konflikt -> Urteil [Distanz + Autonomie]
 ```
+
+Kausalkette: Fall schildern — Bilanz mit $U = \sum(Lust - Leid)$ gegen Probe mit $M \to G$ — Urteil am Kriterium Menschenwuerde; Abgrenzung zu $p_N(q) = p_A(q)$ mit $q_A - q_N$ und zu $Gini$ steht vor jeder Stellungnahme.
 
 Klausur-Satz: `Rollen machen das Verhalten berechenbar, doch erst die Rollendistanz sichert dem Einzelnen Freiheit innerhalb der Rolle.`
 
@@ -90,24 +97,24 @@ Der Begriff „Rolle" stammt aus dem Theater: Früher war die Rolle ein zusammen
 
 Bezug zum Konzept: `Das Beispiel zeigt, wie aus Beobachtung ein pruefbares Verfahren mit $x_1$ und $x_2$ entsteht.`
 
-## Schritt 4 — ausprobieren
+## Schritt 4 — ausprobieren: Interaktive Praxis & Urteils-Waage
 
 BEISPIEL (geleitete Aufgabe mit Werkzeug):
 
-[Werkzeug: lego]
+[Werkzeug: balance-board]
 
-AUFGABE (AFB II): Rekonstruieren Sie den zentralen Begriff des Themas in eigenen Worten und wenden Sie ihn auf ein aktuelles Fallbeispiel an. Belegen Sie jede These mit einem Kriterium und schliessen Sie mit einem begruendeten Urteil (AFB III).
+Lege im Tool Pro- und Contra-Argumente auf die Waage und gewichte jedes Argument von 1 bis 5; veraendere die Gewichte Schritt fuer Schritt und beobachte, wann das Urteil zwischen Erlaubnis und Verbot oder zwischen Massnahme und Verzicht umschlaegt.
+
+AUFGABE Spiel-Raetsel (AFB II): Verteile im Tool 100 Punkte auf drei Rollen, bis $Gini > 0{,}35$ zeigt. Identifiziere den Inter-Rollenkonflikt, loese ihn per Distanz-Regler und belege die Balance mit neuem $Gini$.
 
 HILFE:
-1. Schritt 1: Rekonstruiere den Fall und notiere die gegebenen Groessen $x_1$ und $x_2$.
-2. Schritt 2: Wende die Leitformel an und berechne $d = x_2 - x_1$.
-3. Schritt 3: Deute das Ergebnis am Kriterium und formuliere den Klausur-Satz.
+1. Schritt 1: Verteile Punkte, lies Kurve und $Gini$. 2. Schritt 2: Benenne Konflikt $Inter$ mit Zeit-Beleg. 3. Schritt 3: Stelle Distanz her, deute an Autonomie und formuliere den Klausur-Satz.
 
-MUSTERLOESUNG: Die Musterloesung benennt zunaechst das Kriterium, ordnet den Fall unter $x_1$ und $x_2$ ein und berechnet die Differenz $d = x_2 - x_1$ als Beleg. Das Urteil folgt logisch aus dem Kriterium und nennt eine begruendete Gewichtung.
+MUSTERLOESUNG: Bei $70 + 20 + 10$ steigt $Gini$ ueber $0{,}35$, die Kurve haengt tief — Zeitmangel belegt $Inter$. Mit Distanz sinkt $Gini$ auf $0{,}25$; Rollen bleiben berechenbar, Freiheit bleibt gewahrt.
 
 Klausur-Satz: `Ein Inter-Rollenkonflikt entsteht, wenn die Erwartungen zweier Positionen zeitgleich erfüllt werden sollen.`
 
-## Schritt 5 — ausprobieren
+## Schritt 5 — ausprobieren: Verfahrensvergleich & Abgrenzung
 
 VERGLEICH (Wahl des Verfahrens, A gegen B):
 
@@ -122,7 +129,7 @@ ANTWORT: Aufgabe A erfordert Verfahren (i), weil eine Rangfolge aus der Form gen
 
 Klausur-Satz: `Ein Intra-Rollenkonflikt liegt vor, wenn die Erwartungen an ein und dieselbe Position einander widersprechen.`
 
-## Schritt 6 — check
+## Schritt 6 — check: Verständnisprüfung
 
 CHECK (drei Fragen mit Antworten):
 
@@ -142,14 +149,14 @@ Klausur-Satz: `Rollendistanz bedeutet, eine Rolle bewusst zu spielen, ohne die e
 2. Fehlkonzept: Ein einzelner Wert wie $Gini$ oder $p_G$ spreche bereits fuer sich und brauche kein Kriterium.
    Korrektur-Satz: `Erst die Deutung der Kennzahl am Kriterium mit $d = x_2 - x_1$ ergibt ein klausurtaugliches Urteil.`
 
-## Schritt 7 — szenario
+## Schritt 7 — szenario: Klausurtransfer & Rubric
 
 ROLLE: Du bist Klassensprecherin bzw. Klassensprecher und moderierst eine Sitzung des Klassenrats
 SITUATION: In deiner Klasse sollen neue Regeln für die Handynutzung beschlossen werden. Ein Teil der Klasse fordert ein striktes Verbot, ein anderer Teil will völlige Freiheit. Zwei Mitschülerinnen geraten in Streit, weil eine sich an die neue Regel halten will, die andere aber findet, die Regel widerspreche ihrem Gerechtigkeitsgefühl. Erkläre in einer zusammenhängenden Stellungnahme (ca. 150 Wörter), wie Regeln über Rollen und Sanktionen wirken und wie Rollendistanz helfen kann, den Streit zu entschärfen
 AUFGABE (AFB III): Verfasse eine zusammenhaengende Darstellung von etwa 150 Woertern mit Kriterium, Anwendung und Urteil.
 RUBRIC (30 XP): These mit Kriterium (5 XP) | Rekonstruktion mit $x_1$, $x_2$ (10 XP) | Anwendung mit $d = x_2 - x_1$ (10 XP) | Fazit mit Fachbegriffen (5 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY (Kernbotschaft in einem Kasten):
 
