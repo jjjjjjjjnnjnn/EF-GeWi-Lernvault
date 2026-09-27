@@ -116,7 +116,7 @@ def check_reise():
         typs = {s[1].lower() for s in steps}
         if not steps:
             ERR.append(f"Lernreise/{p.name}: no Schritte")
-        elif typs - {"entdecken", "ausprobieren", "check", "szenario", "muendlich"}:
+        elif typs - {"entdecken", "ausprobieren", "check", "szenario", "muendlich", "reflexion"}:
             ERR.append(f"Lernreise/{p.name}: bad Schritt typ {typs}")
         for k in ("level", "ziel", "xp"):
             if k not in (meta or {}):
