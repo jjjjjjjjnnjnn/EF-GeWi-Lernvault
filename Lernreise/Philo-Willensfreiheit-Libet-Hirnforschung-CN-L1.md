@@ -15,30 +15,27 @@ version: Lesson-v3
 
 <!-- Lesson v3 9步制架构：Schritt 1至8固定结构；Fehlvorstellung 夹在 Schritt 6 与 7 之间（Parser 自动跳过，不占步数）；支持内嵌 [Werkzeug: <id>] 交互教具；Gating: check/szenario 未过 = Weiter 置灰；XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
-## Schritt 1 — entdecken: Ziele & Phänomen-Einstieg
+## Schritt 1 — entdecken: 终审之夜：大脑先投票意识后宣布吗
 
 ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
-1. 中文：能重构利贝特实验——准备电位先于意识决定约 0.3 秒，及其"否决权"解释。
+1. 中文：能重构利贝特实验——准备电位先于意识决定约零点三秒，及其"否决权"解释。
 2. 中文：能区分三种立场——决定论、不相容论的自由意志、相容论。
-3. 中文：能选择论证策略（选程序：实验批判 vs 概念辨析）。
+3. 中文：能选择论证策略（选程序：实验批判 vs 概念辨析），为人类终审辩护。
 
-Voraussetzung（窄切口）：只做 Libet 1983 经典范式，不展开 Soon 等 fMRI 后续；已会 Determinismus 定义。
+Hook中文生活切入（Tribunal Fall 16：人类终审自由案）：
 
-
-Hook中文生活切入:
-
-想象你举手回答问题:你觉得是想好了才举手,可脑扫描显示大脑在你意识到想举手之前就已经开始准备,仿佛身体先投票、意识后宣布。利贝特实验扔下的正是这颗炸弹:如果决定先于意识,自由意志是真的还是大脑编的故事,道德责任往哪里放。
+想象人类伦理最高审判庭的终审之夜，你举手想为人类做最后辩护，可脑扫描显示大脑在你意识到想举手之前就已经开始准备，AI检察官抓住这一幕宣布，身体先投票、意识后宣布，自由意志不过是大脑编的故事，人类不配谈责任，更不配谈尊严，要求法庭解散辩护席。首席辩护律师缓缓举起另一只手，说哪怕大脑快三秒，只要我还能说不，责任就没有死。这颗从时间差里扔出的炸弹，正是利贝特实验，今晚你要亲手拆除它，为整部战役宇宙落下法槌。
 
 Phaenomen-Satz (DE): Das Gehirn hebt die Hand, bevor das Ich es merkt.
 
-中文机制铺垫:利贝特的准备电位挑战了传统自由观,相容论把自由重定义为按自身动机行动而非摆脱因果,非相容论坚持决定论与自由互斥;答题先摆实验事实,再分两种自由定义,最后谈责任:可预测不等于可免责。
+中文机制铺垫:利贝特的准备电位挑战传统自由观，相容论把自由重定义为按自身动机行动而非摆脱因果，非相容论坚持决定论与自由互斥；答题先摆实验事实，再分两种自由定义，最后谈责任：可预测不等于可免责。
 
 Mechanismus-Satz (DE): Bereitschaftspotenzial vor Bewusstsein, doch Gruende bleiben zurechenbar.
 
 Klausur-Satz: `Libets Bereitschaftspotenzial stellt die bewusste Urheberschaft infrage, ohne sie allein zu widerlegen.`
 
-## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
+## Schritt 2 — entdecken: 五件终审证物：电位 决定 互斥 相容 否决
 
 PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
 
@@ -52,19 +49,19 @@ PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→�
 
 Klausur-Satz: `Kompatibilisten verstehen Freiheit als Handeln aus eigenen Gruenden, nicht als Ursachenlosigkeit.`
 
-## Schritt 3 — entdecken: Kernkonzept & Wirkungsmodell
+## Schritt 3 — entdecken: 三秒之差不是判决书：微决策推不到道德抉择
 
 ENTDECKEN（1概念 + 1文字图解，中文在上、德语在下）：
 
 Hook中文生活切入：
 
-中文：想象你说再来一局时，脑扫描显示大脑比你早零点几秒动手：到底是你按的手，还是手按的你？Libet 把这口锅端上了桌。
+中文：想象你说再来一局时，脑扫描显示大脑比你早零点几秒动手：到底是你按的手，还是手按的你？Libet 把这口锅端上了终审桌。
 
 Phaenomen-Satz (DE): Das Gehirn startet, das Ich folgt.
 
 Spiel-Aufgabe沙盒操作指引：
 
-中文：打开沙盒，把滑块推向时间差、实验设计与自由定义（关键词：Bereitschaftspotenzial, Ursachenlosigkeit, Gruende, Verantwortung），看自由在哪一格幸存。
+中文：打开天平沙盒，把论据推向时间差、实验设计与自由定义（关键词：Bereitschaftspotenzial, Ursachenlosigkeit, Gruende, Verantwortung），看自由在哪一格幸存。
 
 Beobachtungs-Satz (DE): Libet trifft Ursachenlosigkeit, nicht Handeln aus Gruenden.
 
@@ -77,8 +74,8 @@ Gesetz-Satz (DE): Der Zeitvorsprung ist ein Befund, seine Deutung als Widerlegun
 文字图解（ASCII 结构图，App支持解析渲染）：
 
 ```diagram
-Libet: Bereitschaftspotenzial -> (300ms) -> bewusste Entscheidung
-Inkompatibilismus: Vorsprung = unfrei | Kompatibilismus: Gruende = frei
+Libet: Bereitschaftspotenzial -> kurze Pause -> bewusste Entscheidung
+Inkompatibilismus: Vorsprung gleich unfrei | Kompatibilismus: Gruende gleich frei
 Kritik: Mikro-Modell, Deutungssprung
 ```
 Klausur-Satz: `Aus dem Zeitvorsprung des Gehirns folgt logisch noch keine Widerlegung moralischer Verantwortung.`
@@ -91,15 +88,17 @@ Klausur-Satz: `Aus dem Zeitvorsprung des Gehirns folgt logisch noch keine Widerl
 
 **Bezug zum Konzept**: `Freiheit als Veto rettet Verantwortung ohne Ursachenlosigkeit zu behaupten.`
 
-## Schritt 4 — ausprobieren: Interaktive Praxis & Labor
+## Schritt 4 — ausprobieren: 天平称自由：模型批评 against 概念反驳
 
 [Werkzeug: balance-board]
 
 BEISPIEL（正确例题示范，含教具操作与解答，中文在上、德语在下）：
 
-AUFGABE中文导读（反驳谜题）：有人拿 Libet 说道德责任已死。请区分模型批评与概念反驳两路，给出保卫责任的论证。
+AUFGABE中文导读（反驳谜题）：有人拿 Libet 说道德责任已死。请区分模型批评与概念反驳两路，在天平上保卫责任。
 
-AUFGABE (eroertern, AFB III): Widerlegen Sie die These, Libet habe Verantwortung erledigt: Experimentkritik plus Begriffsarbeit.
+AUFGABE (eroertern, AFB III): Widerlegen Sie die These, Libet habe Verantwortung erledigt: Experimentkritik plus Begriffsarbeit auf der Waage.
+
+Target：左侧放 Befund plus Modell plus Stichprobe，右侧放 Begriff plus Gruende plus Veto，每项权重 1 bis 5；两侧各达 7 分且能说出 Zeitvorsprung ist Befund，Deutung ist These 时通关。
 
 HILFE（中德双语步骤）：
 
@@ -115,11 +114,14 @@ MUSTERLOESUNG：中文：脑先行是事实，但实验只是掰手腕级微决�
 MUSTERLOESUNG (DE): Libet widerlegt hoechstens Ursachenlosigkeit, nicht verantwortliches Handeln aus Gruenden. Experimentkritik trifft das Modell, Begriffsarbeit die These.
 Klausur-Satz: `Libet widerlegt hoechstens Ursachenlosigkeit, nicht verantwortliches Handeln aus Gruenden.`
 
-## Schritt 5 — ausprobieren: Verfahrensvergleich & Abgrenzung
+## Schritt 5 — ausprobieren: 终审程序选择：见数据批实验见定义辨概念
 
 VERGLEICH辨别实验（双向辨析：实验批判 vs 概念辨析）：
 
 VERGLEICH: Waehle erst das Verfahren — 【选程序】先看材料给什么：(i) 实验批判（材料讲 EEG/fMRI/样本/生态效度：攻击实验设计）oder (ii) 概念辨析（材料讲 Freiheit/Verantwortung/Schuld：澄清自由定义）—— dann loesen.
+
+Weg A (Experiment, Modell)：机制为测量、样本、外推。长在精准打靶，短在不碰自由定义。
+Weg B (Begriff, These)：机制为定义、理由、归责。长在守住责任，短在远离数据。
 
 AUFGABE A：Ein Text kritisiert Libets Zeitmessung und Laborbedingungen. Argumenttyp?
 AUFGABE B：Ein Text fragt, ob Schuld ohne Anders-koennen moeglich ist. Argumenttyp?
@@ -151,12 +153,14 @@ Klausur-Satz: `Der Zeitvorsprung des Gehirns ist ein Befund, seine Deutung als F
    中文纠偏：这是 libertarische 狭义定义；相容论把自由定为按理由行动，决定论下仍可成立，责任也随之保留。
    Korrektur-Satz: `Freiheit kann Gruenden-Folgen heissen statt Ursachenlosigkeit.`
 
-## Schritt 7 — szenario: Klausurtransfer: Willensfreiheit mit Libet und Hirnforschung
-ROLLE: Du schreibst einen Leserbrief zur Schlagzeile Hirnforschung beweist Unfreiheit.
+## Schritt 7 — szenario: Klausurtransfer: Schlussplaedoyer der Menschheit
+
+ROLLE: Du bist Schlussverteidiger der Menschheit im Finale des Tribunals und schreibst einen Leserbrief zur Schlagzeile Hirnforschung beweist Unfreiheit.
 SITUATION: Die Redaktion vermischt Befund und Deutung. Richtigstellung in einer zusammenhaengenden Stellungnahme (ca. 150 Woerter): Was zeigt Libet wirklich, und was folgt daraus fuer Schuld und Verantwortung?
+AUFGABE: Zusammenhaengende Stellungnahme ca. 150 Woerter mit Befund, Einwaenden und Urteil.
 RUBRIC (30 XP): Rekonstruktion von Befund und Deutung (10 XP) | Zwei Einwaende (Experiment + Begriff) (10 XP) | Urteil zu Verantwortung (6 XP) | Adressatengerechte Sprache (4 XP).
 
-## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
+## Schritt 8 — reflexion: Schlussurteil des Tribunals: Befund referieren Deutung pruefen
 
 TAKEAWAY 1盒（核心总结）：
 

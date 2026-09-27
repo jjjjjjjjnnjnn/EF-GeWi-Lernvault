@@ -15,43 +15,41 @@ version: Lesson-v3
 
 <!-- Lesson v3 architecture: Schritte 1-8 fixed; Fehlvorstellung between Schritt 6 and 7 (parser skipped); embedded [Werkzeug: <id>]; gating: check/szenario failed = Weiter greyed; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
-## Schritt 1 — entdecken
+## Schritt 1 — entdecken: Blackout-Prozess: Wer darf im Notstand befehlen
 
 ZIELE (3 Ziele, nach 15 Minuten erreichbar):
 
-1. Naturzustand und Vertragsmotiv bei Hobbes, Locke und Rousseau darstellen.
-2. Die drei Modelle anhand von Freiheit, Eigentum und Souveraenitaet vergleichen.
-3. Eine aktuelle Machtfrage mit einem Modell kriteriengeleitet beurteilen (AFB III).
+1. Naturzustand und Vertragsmotiv bei Hobbes, Locke und Rousseau als Plaedoyer darstellen.
+2. Die drei Modelle anhand von Freiheit, Eigentum und Souveraenitaet auf der Waage vergleichen.
+3. Eine aktuelle Machtfrage mit einem Modell kriteriengeleitet vor dem Tribunal beurteilen (AFB III).
 
-VORAUSSETZUNG: Anthropologie, Pflichtethik und Umgang mit Primaertextauszuegen.
-
-VORGAENGER-VERWEIS: Diese Lektion setzt `Philo-Anthropologie-Sonderstellung-L1.md` und `Philo-Kategorischer-Imperativ-L1.md` voraus und wiederholt sie nicht. Dort standen Menschenbild und Pflichtpruefung im Zentrum. Hier folgt der enge Ausschnitt: nur neuzeitliche Vertragstheorie mit drei Autoren; Utilitarismus und Kant-Vertiefung gehoeren nicht hierher.
+Hook / Tribunal Fall 05 — Blackout-Prozess: Stell dir vor, das Licht des Gerichtssaals flackert, denn draussen liegt die Stadt nach einem dreitaegigen Blackout im Chaos, und der KI-Anklaeger verlangt sofort einen allmaechtigen Krisen-Leviathan mit Ausgangssperre, Drohnenueberwachung und beschlagnahmten Vorraeten, waehrend du als Chefverteidiger der Buerger ploetzlich zwischen drei Vertragsentwuerfen waehlen musst, die auf deinem Tisch liegen und alle dieselbe Frage stellen, wer im Namen aller befehlen darf, ob Sicherheit alles schlucken darf, ob Eigentum eine Grenze zieht oder ob nur der Gemeinwille selbst Gesetze geben darf, und genau dieser Streit zwischen Hobbes, Locke und Rousseau entscheidet heute ueber Freispruch oder Unterwerfung der ganzen Stadt.
 
 Klausur-Satz: `Der Gesellschaftsvertrag legitimiert Herrschaft durch Zustimmung statt durch Natur oder Gott.`
 
-## Schritt 2 — entdecken
+## Schritt 2 — entdecken: Drei Vertragsentwuerfe: Leviathan Treuhand Gemeinwille
 
-PRETRAINING (Kernbegriffe):
+PRETRAINING (Kernbegriffe, fuenf Bausteine der Verteidigung):
 
-- Naturzustand: Gedankenexperiment ohne Staat zur Begruendung von Herrschaft.
+- Naturzustand: Gedankenexperiment ohne Staat zur Begruendung von Herrschaft vor dem Tribunal.
 - Hobbes: Krieg aller gegen alle; Vertrag zugunsten absoluter Sicherheit beim Leviathan.
 - Locke: Freie Gleiche mit Eigentum; Vertrag mit Gewaltenteilung und Widerstandsrecht.
 - Rousseau: Gemeinwille (volonte generale) als Selbstgesetzgebung freier Buerger.
-- Legitimation: Rechtfertigung von Zwang durch freie Zustimmung.
+- Legitimation: Rechtfertigung von Zwang durch freie Zustimmung der Verteidigten.
 
 Klausur-Satz: `Hobbes opfert Freiheit fuer Sicherheit, Locke sichert Eigentum durch Teilung, Rousseau versoehnt Freiheit mit Gehorsam.`
 
-## Schritt 3 — entdecken
+## Schritt 3 — entdecken: Ein Saal drei Menschenbilder: Furcht Eigentum Gemeinwohl
 
 ENTDECKEN (ein Konzept plus Diagramm):
 
-Alle drei starten ohne Staat, landen aber verschieden. Hobbes sieht Misstrauen und braucht einen Schiedsrichter mit Schwert. Locke sieht bereits Rechte und braucht einen Treuhaender mit Gewaltenteilung. Rousseau sieht Verderb durch Ungleichheit und braucht Selbstgesetzgebung durch den Gemeinwillen. Der Vergleich laeuft ueber drei Dimensionen: Menschenbild, Vertragsleistung, Ruecknahmerecht.
+Alle drei starten ohne Staat, landen aber verschieden. Hobbes sieht Misstrauen und braucht einen Schiedsrichter mit Schwert fuer den Blackout. Locke sieht bereits Rechte und braucht einen Treuhaender mit Gewaltenteilung gegen Pluenderung. Rousseau sieht Verderb durch Ungleichheit und braucht Selbstgesetzgebung durch den Gemeinwillen. Der Vergleich laeuft ueber drei Dimensionen: Menschenbild, Vertragsleistung, Ruecknahmerecht.
 
 ```diagram
-Hobbes: Natur = Krieg -> Leistung = Sicherheit -> Preis = absolute Unterwerfung
-Locke:  Natur = Rechte -> Leistung = Schutz des Eigentums -> Preis = bedingter Gehorsam
-Rousseau: Natur = gut, Gesellschaft = Verderb -> Leistung = Gemeinwille -> Preis = Selbstbindung
-Dimensionen: Menschenbild | Souveraen | Widerstand?
+Hobbes: Natur gleich Krieg -> Leistung gleich Sicherheit -> Preis gleich Unterwerfung
+Locke: Natur gleich Rechte -> Leistung gleich Eigentumsschutz -> Preis gleich Gehorsam auf Zeit
+Rousseau: Natur gut, Gesellschaft verderbt -> Leistung gleich Gemeinwille -> Preis gleich Selbstbindung
+Waage: Menschenbild | Souveraen | Widerstand
 ```
 
 Klausur-Satz: `Derselbe Vertragsgedanke legitimiert absolute, liberale und demokratische Herrschaft je nach Menschenbild.`
@@ -62,40 +60,45 @@ Klausur-Satz: `Derselbe Vertragsgedanke legitimiert absolute, liberale und demok
 
 **Bezug zum Konzept**: `Bürgerkrieg, Revolution und Verfolgung praegen drei Antworten auf dieselbe Ordnungsfrage.`
 
-## Schritt 4 — ausprobieren
+## Schritt 4 — ausprobieren: Waage der Macht: Absoluter Krisenstab gegen begrenzte Treuhand
 
-BEISPIEL (vollstaendige Musterloesung):
+BEISPIEL (vollstaendige Musterloesung mit Waage):
 
-[Werkzeug: lego]
+[Werkzeug: balance-board]
 
-AUFGABE (vergleichen, AFB II): Vergleichen Sie Hobbes und Locke anhand der Dimension Herrschaftsbegrenzung.
+AUFGABE (vergleichen, AFB II): Vergleichen Sie Hobbes und Locke anhand der Dimension Herrschaftsbegrenzung im Blackout-Prozess. Legen Sie beide auf die Waage.
+
+Target: Links Leviathan mit Sicherheit plus Gehorsam plus Sperre, rechts Treuhand mit Eigentum plus Teilung plus Widerstand, je 1 bis 5 gewichten; beide Seiten mindestens 8 Punkte belegen und an Legitimation deuten, dann Urteil faellen.
 
 HILFE:
 1. Schritt 1: Beide Naturzustaende nennen.
 2. Schritt 2: Vertragsleistung je Autor nennen.
-3. Schritt 3: Begrenzung und Widerstand vergleichen.
+3. Schritt 3: Begrenzung und Widerstand vergleichen und Waage deuten.
 
-MUSTERLOESUNG: Hobbes begründet absolute Souveraenitaet: Der Leviathan beendet den Krieg aller gegen alle, dafuer schulden ihm alle Gehorsam ohne Widerstandsrecht ausser bei unmittelbarer Lebensgefahr. Locke begrenzt Herrschaft: Die Regierung verwaltet treuhaenderisch Leben, Freiheit und Eigentum, Gewaltenteilung sichert Rechte, bei Vertrauensbruch greift das Widerstandsrecht. Der Unterschied liegt in der Vertragslogik: Unterwerfung zur Sicherheit versus Beauftragung zum Rechtsschutz.
+MUSTERLOESUNG: Hobbes begruendet absolute Souveraenitaet: Der Leviathan beendet den Krieg aller gegen alle, dafuer schulden ihm alle Gehorsam ohne Widerstandsrecht ausser bei unmittelbarer Lebensgefahr. Locke begrenzt Herrschaft: Die Regierung verwaltet treuhaenderisch Leben, Freiheit und Eigentum, Gewaltenteilung sichert Rechte, bei Vertrauensbruch greift das Widerstandsrecht. Der Unterschied liegt in der Vertragslogik: Unterwerfung zur Sicherheit versus Beauftragung zum Rechtsschutz.
 
 Klausur-Satz: `Hobbes legitimiert absolute, Locke begrenzte Herrschaft trotz gemeinsamen Vertragsmodells.`
 
-## Schritt 5 — ausprobieren
+## Schritt 5 — ausprobieren: Kreuzverhoer der Souveraene: Tabelle gegen Fallpruefung
 
 VERGLEICH (erst Verfahren waehlen, dann loesen):
 
-VERGLEICH: Waehle erst das Verfahren — (i) Autoren-Vergleich (drei Dimensionen tabellarisch) oder (ii) Anwendungs-Verfahren (ein Modell auf einen Fall beziehen) — dann loesen.
+VERGLEICH: Waehle erst das Verfahren — (i) Autoren-Vergleich mit drei Dimensionen tabellarisch oder (ii) Anwendungs-Verfahren mit einem Modell auf den Blackout-Fall bezogen — dann loesen.
 
-AUFGABE A: Ordne Hobbes, Locke und Rousseau nach Souveraen und Widerstand. Welches Verfahren passt?
+Weg A (Autoren-Tabelle): Mechanismus lautet Menschenbild, Leistung, Grenze. Staerke liegt in Vollstaendigkeit, Grenze in fehlendem Urteil.
+Weg B (Fallpruefung Rousseau): Mechanismus lautet Gemeinwohl, Selbstbindung, Korrektur. Staerke liegt in demokratischer Legitimation, Grenze in Verwechslung von Mehrheit und Gemeinwille.
 
-AUFGABE B: Eine Schuelervertretung will Mehrheitsentscheide als Gemeinwillen ausgeben. Pruefe mit Rousseau. Welches Verfahren passt?
+AUFGABE A: Ordne Hobbes, Locke und Rousseau nach Souveraen und Widerstand im Tribunal. Welches Verfahren passt?
+
+AUFGABE B: Eine Schuelervertretung will Mehrheitsentscheide im Blackout als Gemeinwillen ausgeben. Pruefe mit Rousseau. Welches Verfahren passt?
 
 HILFE: A verlangt Tabelle, also Verfahren (i). B verlangt Fallpruefung, also Verfahren (ii).
 
-ANTWORT: A erfordert Verfahren (i): Hobbes (Leviathan, kein Widerstand), Locke (Parlament plus Teilung, Widerstand bei Vertrauensbruch), Rousseau (Versammlung des Gemeinwillens, kein Sonderwille). B erfordert Verfahren (ii): Nur ein auf das Gemeinwohl gerichteter Wille zaehlt als Gemeinwille; blosse Mehrheit plus Sonderinteressen genuegt Rousseaus Kriterium nicht.
+ANTWORT: A erfordert Verfahren (i): Hobbes mit Leviathan ohne Widerstand, Locke mit Parlament plus Teilung und Widerstand bei Vertrauensbruch, Rousseau mit Versammlung des Gemeinwillens ohne Sonderwille. B erfordert Verfahren (ii): Nur ein auf das Gemeinwohl gerichteter Wille zaehlt als Gemeinwille; blosse Mehrheit plus Sonderinteressen genuegt Rousseaus Kriterium nicht.
 
 Klausur-Satz: `Tabelle ordnet Modelle, Fallpruefung prueft Herrschaft an einem Modell.`
 
-## Schritt 6 — check
+## Schritt 6 — check: Selbsttest zu Gesellschaftsvertrag
 
 CHECK (drei Fragen mit Antworten):
 
@@ -113,13 +116,14 @@ Klausur-Satz: `Naturzustand plus Vertragsleistung bestimmen Souveraen und Widers
 2. Fehlvorstellung: Rousseau meine mit Gemeinwille die blosse Mehrheit.
    Korrektur-Satz: `Der Gemeinwille zielt auf das Gemeinwohl; eine Mehrheit aus Sonderinteressen bleibt blosser Gesamtwille.`
 
-## Schritt 7 — szenario
+## Schritt 7 — szenario: Klausurtransfer: Verteidiger der Schulverfassung im Blackout
 
-ROLLE: Du bist Tutorin im Philosophiekurs.
-SITUATION: Eine Mitschuelerin behauptet, Lockes Widerstandsrecht rechtfertige jede Regelverletzung. Widerlege dies in circa 150 Woertern mit Lockes Treuhandmodell und kontrastiere es mit Hobbes und Rousseau.
-RUBRIC (30 XP): Locke korrekt (10 XP) | Kontrast zu Hobbes und Rousseau (10 XP) | Widerlegung mit Kriterium (6 XP) | Fachsprachliche Darstellung (4 XP).
+ROLLE: Du bist Chefverteidiger der Schuelerschaft vor dem Tribunal und sollst die Legitimitaet einer Not-Handyregel verteidigen.
+SITUATION: Die Schulleitung will Anordnung wie ein Leviathan, die Schueler wollen Mitbestimmung wie ein Gemeinwille. Nimm in circa 150 Woertern mit Hobbes, Locke und Rousseau Stellung, welche Regelsetzung legitim waere.
+AUFGABE (AFB III): Zusammenhaengende Darstellung circa 150 Woerter mit Kriterium, Anwendung und Urteil.
+RUBRIC (30 XP): Locke korrekt mit Treuhandmodell (10 XP) | Kontrast zu Hobbes und Rousseau (10 XP) | Widerlegung mit Kriterium (6 XP) | Fachsprachliche Darstellung (4 XP).
 
-## Schritt 8 — reflexion: Takeaway & Reflexion
+## Schritt 8 — reflexion: Urteil im Blackout: Sicherheit Eigentum Selbstgesetzgebung
 
 TAKEAWAY:
 

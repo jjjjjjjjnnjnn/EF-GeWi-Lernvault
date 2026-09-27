@@ -15,28 +15,27 @@ version: Lesson-v3
 
 <!-- Lesson v3 9步制架构：Schritt 1至8固定结构；Fehlvorstellung 夹在 Schritt 6 与 7 之间（Parser 自动跳过，不占步数）；支持内嵌 [Werkzeug: <id>] 交互教具；Gating: check/szenario 未过 = Weiter 置灰；XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
-## Schritt 1 — entdecken: Ziele & Phänomen-Einstieg
+## Schritt 1 — entdecken: Sucht auf der Anklagebank: Dopaminfalle gegen Urteilskraft
 
 ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
 1. 中文：能说清伊壁鸠鲁和斯多亚的共同目标（心灵宁静）与相反路径（快乐计算 vs. 接受命运）。
 2. 中文：能用"快乐三分类"和"控制二分法"分别重构两派的核心论证。
-3. 中文：能对一个生活困境给出两派会分别开出的处方，并写出德语标准结论句（AFB II-III）。
+3. 中文：能对社交媒体成瘾困境给出两派分别的处方，并写出德语标准结论句（AFB II-III）。
 
+Hook中文生活切入（Tribunal Fall 04：短视频成瘾少年）：
 
-Hook中文生活切入:
-
-想象期末周两种室友:一个把奶茶游戏全列成快乐清单,说痛苦能躲就躲;另一个五点起床淋冷水背书,说焦虑都是自找的,管住念头就赢了。前者像伊壁鸠鲁,后者像斯多葛,两家开的都是同一味药:心灵安宁,但药方一个向外算账,一个向内用功。这两种室友的作息之争,正是本节要比较的两味药方。
+人类伦理最高审判庭第四夜，被告换成了一名每天刷短视频七小时、中考前夜还在比拼球鞋的少年，AI检察官指控他的多巴胺大脑已经自愿为奴，要求法庭宣布快乐即罪名。辩护律师却把两把古钥匙拍在桌上：一把刻着花园，伊壁鸠鲁说不是快乐有罪，而是你追错了快乐，把虚荣当成了必需；一把刻着柱廊，斯多亚说不是世界太吵，而是你的判断太软，把不可控的点赞当成了可控的价值。今晚你要同时挥动这两把钥匙，在天平上称出哪一味药更能救这个少年。
 
 Phaenomen-Satz (DE): Der eine zaehlt Freuden, der andere zaehlt Urteile, beide suchen Ruhe.
 
-中文机制铺垫:伊壁鸠鲁以快乐为善,区分自然必要与虚荣欲望,节制即幸福;斯多葛以德性为唯一善,区分可控与不可控,接纳即自由;比较题先立幸福标准,再对欲望论与控制论,最后判谁更能应对当代焦虑。
+中文机制铺垫:伊壁鸠鲁以快乐为善，区分自然必要与虚荣欲望，节制即幸福；斯多葛以德性为唯一善，区分可控与不可控，接纳即自由；比较题先立幸福标准，再对欲望论与控制论，最后判谁更能应对当代焦虑。
 
 Mechanismus-Satz (DE): Epikur ordnet die Begierden, die Stoa ordnet die Urteile, beide ordnen die Seele.
 
 Klausur-Satz: `Epikureismus und Stoa suchen beide die Seelenruhe, waehlen aber entgegengesetzte Wege zu ihr.`
 
-## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
+## Schritt 2 — entdecken: Fünf Instrumente der Seelenverteidigung: Lust gegen Schicksal
 
 PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
 
@@ -50,7 +49,7 @@ PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→�
 
 Klausur-Satz: `Epikur ordnet die Begierden, die Stoa ordnet den Umgang mit dem Unverfuegbaren.`
 
-## Schritt 3 — entdecken: Kernkonzept & Wirkungsmodell
+## Schritt 3 — entdecken: Zwei Siebe ein Ziel: Verlangen filtern Welt sortieren
 
 ENTDECKEN（1概念 + 1文字图解，中文在上、德语在下）：
 
@@ -62,7 +61,7 @@ Phaenomen-Satz (DE): Zwei Wege, ein Ziel: die Seelenruhe.
 
 Spiel-Aufgabe沙盒操作指引：
 
-中文：打开沙盒，把滑块分别推向欲望清单与控制圈（关键词：Begierde, Urteil, Kontrollzone, Ataraxie），看焦虑值在哪一侧下降更快。
+中文：打开天平沙盒，把论据分别推向欲望清单与控制圈（关键词：Begierde, Urteil, Kontrollzone, Ataraxie），看焦虑值在哪一侧下降更快。
 
 Beobachtungs-Satz (DE): Kleinere Wuensche beruhigen, staerkere Urteile festigen.
 
@@ -89,15 +88,17 @@ Klausur-Satz: `Beide Schulen therapieren Angst, Epikur durch Begierdenkritik, di
 
 **Bezug zum Konzept**: `Der Ort der Schule verraet das Programm: Garten der Freundschaft gegen Halle des Schicksals.`
 
-## Schritt 4 — ausprobieren: Interaktive Praxis & Labor
+## Schritt 4 — ausprobieren: Waage der Dopaminfalle: Sneaker gegen Pruefungsangst
 
 [Werkzeug: balance-board]
 
 BEISPIEL（正确例题示范，含教具操作与解答，中文在上、德语在下）：
 
-AUFGABE中文导读（案例谜题）：同学为新款球鞋失眠又为考试排名焦虑。请一半用 Epikur、一半用 Stoa 开处方。
+AUFGABE中文导读（案例谜题）：同学为新款球鞋失眠又为考试排名焦虑。请一半用 Epikur、一半用 Stoa 开处方，在天平上称量。
 
-AUFGABE (anwenden, AFB II): Ein Mitschueler leidet unter Konsumwunsch und Pruefungsangst. Therapieren Sie halb epikureisch, halb stoisch.
+AUFGABE (anwenden, AFB II): Ein Mitschueler leidet unter Konsumwunsch und Pruefungsangst. Therapieren Sie halb epikureisch, halb stoisch auf der Waage.
+
+Target：左侧放 Konsum plus Eitelkeit plus Verzicht，右侧放 Note plus Kontrollzone plus Gelassenheit，每项权重 1 bis 5；两侧各达 7 分且能复述各自处方时通关。
 
 HILFE（中德双语步骤）：
 
@@ -113,11 +114,14 @@ MUSTERLOESUNG：中文：球鞋属虚荣欲望，Epikur 处方是划掉它；排
 MUSTERLOESUNG (DE): Epikur heilt durch kleinere Wuensche (Konsum streichen), die Stoa durch staerkere Urteile (nur Vorbereitung kontrollieren). Beide therapieren Angst, vereint zur Seelenruhe.
 Klausur-Satz: `Epikur heilt durch kleinere Wuensche, die Stoa durch staerkere Urteile ueber das Unkontrollierbare.`
 
-## Schritt 5 — ausprobieren: Verfahrensvergleich & Abgrenzung
+## Schritt 5 — ausprobieren: Gutachterduell im Jugendtribunal: Begierde gegen Urteil
 
 VERGLEICH辨别实验（双向辨析：欲望眼 vs. 判断眼）：
 
 VERGLEICH: Waehle erst das Konzept — 【选概念】先看痛苦来源：(i) Begierden-Konzept（痛苦来自错的欲望 → 伊壁鸠鲁筛欲望）还是 (ii) Urteils-Konzept（痛苦来自错的判断 → 斯多亚改判断）—— dann raten.
+
+Weg A (Epikur, Begierde)：机制为分类、划掉、守护。虚荣拉黑，天然必要留下。长在治攀比，短在遇命运打击乏力。
+Weg B (Stoa, Urteil)：机制为事件、判断、收回同意。只管可控，不管不可控。长在治焦虑愤怒，短在易被误读为躺平。
 
 AUFGABE A：Jemand kauft immer teurere Handys und bleibt unzufrieden. Welcher Rat?
 AUFGABE B：Jemand zerbricht an einer schlechten Note, die er nicht mehr aendern kann. Welcher Rat?
@@ -131,8 +135,8 @@ Klausur-Satz: `Falsche Wuensche verlangen Epikur, falsche Urteile verlangen die 
 ## Schritt 6 — check: Selbsttest zu Epikureismus Stoa und Seelenruhe
 CHECK检索默写（自测 3 题，与答案配对）：
 
-FRAGE: Was ist das gemeinsame Ziel beider Schulen? | ANTWORT: Seelenruhe (Ataraxie/Apatheia), Freiheit von stoerender Unruhe.
-FRAGE: Wie teilt Epikur die Begierden ein? | ANTWORT: Natuerlich-notwendig, natuerlich-unnötig, eitel; nur erste sichern Glueck.
+FRAGE: Was ist das gemeinsame Ziel beider Schulen? | ANTWORT: Seelenruhe, Freiheit von stoerender Unruhe.
+FRAGE: Wie teilt Epikur die Begierden ein? | ANTWORT: Natuerlich-notwendig, natuerlich-unnoetig, eitel; nur erste sichern Glueck.
 FRAGE: Wie teilt die Stoa die Welt ein? | ANTWORT: Kontrollierbar (Urteil, Handeln) gegen unkontrollierbar (Ruf, Schicksal).
 
 Klausur-Satz: `Ohne Unterscheidung von Wunscharten und Kontrollzonen bleibt jeder Rat beliebig.`
@@ -149,13 +153,14 @@ Klausur-Satz: `Ohne Unterscheidung von Wunscharten und Kontrollzonen bleibt jede
    中文纠偏：斯多亚要求在可控区全力尽责（学习、助人、尽义务），只在不可控区放下执念。创始人芝诺和罗马皇帝奥勒留都是行动派，不是躺平派。
    Korrektur-Satz: `Stoische Gelassenheit gilt dem Unverfuegbaren, nicht dem eigenen Handeln.`
 
-## Schritt 7 — szenario: Klausurtransfer: Epikureismus Stoa und Seelenruhe
-ROLLE: Du bist Redakteurin der Schulzeitung und schreibst einen Ratgeber.
-SITUATION: Viele Leser klagen ueber Pruefungsangst und Konsumdruck zugleich.
-AUFGABE: Geben Sie in ca. 150 Woertern je einen epikureischen und stoischen Rat und urteilen Sie, welcher Ansatz wo staerker ist.
+## Schritt 7 — szenario: Klausurtransfer: Anwalt des suchtkranken Schülers
+
+ROLLE: Du bist Verteidiger des suchtkranken Schuelers vor dem Tribunal und schreibst ein Plaedoyer als Ratgeber der Schulzeitung.
+SITUATION: Viele Leser klagen ueber Pruefungsangst und Konsumdruck zugleich. Gib in ca. 150 Woertern je einen epikureischen und stoischen Rat und urteile, welcher Ansatz wo staerker ist.
+AUFGABE: Zusammenhaengende Stellungnahme ca. 150 Woerter mit beiden Schulen und Urteil.
 RUBRIC (30 XP): Epikur-Rat mit Begierdenklassifikation (10 XP) | Stoa-Rat mit Kontroll-Dichotomie (10 XP) | Vergleich plus eigenes Urteil mit Begruendung (10 XP).
 
-## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
+## Schritt 8 — reflexion: Zwei Siebe ein Freispruch: Wuensche schrumpfen Gelassenheit waechst
 
 TAKEAWAY 1盒（核心总结）：
 

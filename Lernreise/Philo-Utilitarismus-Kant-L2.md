@@ -15,24 +15,30 @@ version: Lesson-v3-pilot
 
 <!-- Lesson v3 9步制试点：Schritt-typ nur aus Whitelist (entdecken/ausprobieren/check/szenario)；VERGLEICH im ausprobieren-Schritt；## Fehlvorstellung ist kein Schritt (Parser skip)；Gating: check/szenario unbestanden = Weiter grau；XP: 5/15/20/30 -->
 
-## Schritt 1 — entdecken
+## Schritt 1 — entdecken: Weiche des Schicksals: Fünf gegen einen in der U-Bahn
 
 ZIELE (3条，本节20分钟学完能做到——先读中文，再记德语)：
 
-1. 中文：能用一句话说清两派检验题——功利问“多数人总幸福变多吗”，康德问“我的准则能变成人人遵守的法则吗”。
+1. 中文：能用一句话说清两派检验题——功利问"多数人总幸福变多吗"，康德问"我的准则能变成人人遵守的法则吗"。
 2. 中文：能区分两副眼镜——后果题用功利程序（后果+权衡），动机/尊严题用康德程序（准则+普遍法则检验），先选程序再做题。
-3. 中文：能按Anforderungsbereich II-III写一段beurteilen小题答案（含 Fachbegriff + Vergleich + 以Menschenwürde为标准的Urteil）。
+3. 中文：能按AFB II-III写一段beurteilen答案（含 Fachbegriff + Vergleich + 以Menschenwürde为标准的Urteil）。
+
+Hook中文法庭悬念（Tribunal Fall 13：无人驾驶电车案）：
+
+人类伦理最高审判庭第十三夜全场窒息，大屏幕回放一辆失控的无人驾驶电车冲向五名轨道工人，而你站在道岔前，手边就是那只决定命运的扳手，AI检察官在你耳边低语，掰一下只死一个，不掰死五个，这道算术题连孩子都会。辩护律师却按住你的手，说慢着，若你为了多数人把那个无辜者只当刹车片，你的准则还能变成人人都可遵守的法则吗？五条命与一条命被放在天平两端，而尊严坐在法官席上不发一言，今晚你必须先选眼镜再作答。
+
+Phaenomen-Satz (DE): Nutzen fuer die meisten oder Pflicht aus der Maxime, Waage oder Spiegel.
 
 Klausur-Satz: `Utilitarismus und Kant stellen dieselbe Frage anders: Nutzen für die meisten oder Pflicht aus der Maxime?`
 
-## Schritt 2 — entdecken
+## Schritt 2 — entdecken: 两副眼镜五枚镜片：后果秤 against 准则镜
 
 PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
 
 中文在上，德语在下：
 
 - 功利原则 / 最大幸福 — Nutzenprinzip / größtes Glück der größten Zahl：后果加总，幸福多于痛苦就算对。
-- 准则 — Maxime：我行动的主观原则（“为了…我要…”），康德检验的对象。
+- 准则 — Maxime：我行动的主观原则（"为了…我要…"），康德检验的对象。
 - 普遍法则检验 — Universalisierungstest / allgemeines Gesetz：设想人人都按我的准则行动，还能成立吗。
 - 义务 / 动机 — Pflicht / Gesinnung：康德看动机是否出于义务，不只看结果好坏。
 - 人的尊严 / 人是目的 — Menschenwürde / Selbstzweck：人不能只被当工具和数字 Verrechnung 的对象。
@@ -40,11 +46,11 @@ PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→�
 Klausur-Satz: `Der Utilitarismus bewertet eine Handlung nach ihren Folgen für das Gesamtglück.`
 Klausur-Satz: `Kant prüft nicht den Nutzen, sondern ob die Maxime allgemeines Gesetz werden kann.`
 
-## Schritt 3 — entdecken
+## Schritt 3 — entdecken: 秤与镜子的对决：多数压倒少数 against 尊严拦住天平
 
 ENTDECKEN（1概念 + 1文字图解，两把尺子）：
 
-中文：功利是一把后果秤——把所有人的苦乐放上去称总和；康德是一面准则镜子——把你的私人理由放到“人人如此”里照一照，自相矛盾或把人当工具就不行。秤怕少数人被牺牲，镜子怕死板不管后果。Klausur 高分句式就是先各讲一遍，再用尊严标准下判断。
+中文：功利是一把后果秤——把所有人的苦乐放上去称总和；康德是一面准则镜子——把你的私人理由放到"人人如此"里照一照，自相矛盾或把人当工具就不行。秤怕少数人被牺牲，镜子怕死板不管后果。Klausur 高分句式就是先各讲一遍，再用尊严标准下判断。
 
 文字图解（Waage + Spiegel，自己照着画一遍）：
 
@@ -71,36 +77,44 @@ Klausur-Satz: `Während der Utilitarismus die Folgen für die Mehrheit abwägt, 
 
 **Bezug zum Konzept**: Das Trolley-Problem zeigt denselben Fall einmal durch die Folgen-Brille (Nutzenabwägung) und einmal durch die Pflicht-Brille (Maxime und Selbstzweck).
 
-## Schritt 4 — ausprobieren
+## Schritt 4 — ausprobieren: 天平推电车：救五舍一称得出尊严吗
+
+[Werkzeug: balance-board]
 
 BEISPIEL（正确例题示范，AFB II darstellen，先遮住Musterlösung自己写3句，再对照）：
 
-AUFGABE (darstellen, 原文自写)：Stellen Sie dar, wie ein Utilitarist und ein Kantianer je über dieselbe Notlüge entscheiden (z. B. einen Freund vor Ärger schützen).
+AUFGABE (darstellen)：Stellen Sie dar, wie ein Utilitarist und ein Kantianer je über dieselbe Notlüge und über die U-Bahn-Weiche entscheiden. Legen Sie beide Brillen auf die Waage.
 
-HILFE: 三句模板——Utilitarismus-Satz (Folge + Nutzen) + Kant-Satz (Maxime + Test) + Unterschied-Satz. 每句一个Fachbegriff。
+Target：左侧放 Folgen plus Gesamtglueck plus Mehrheit，右侧放 Maxime plus Gesetz plus Wuerde，每项权重 1 bis 5；当能说出 Nutzen spricht fuer Umstellen，Wuerde verbietet Instrumentalisierung 时通关。
 
-MUSTERLÖSUNG (selbst geschrieben, 只转述不复制)：Aus utilitaristischer Sicht ist die Notlüge erlaubt, wenn sie mehr Glück sichert als sie Vertrauen kostet. Aus kantischer Sicht scheitert die Maxime „Lüge aus Vorteil", weil universalisiert niemand mehr vertrauen könnte. Der Unterschied liegt also im Prüfpunkt: Gesamtfolge gegen Verallgemeinerbarkeit.
+HILFE: 三句模板——Utilitarismus-Satz (Folge + Nutzen) + Kant-Satz (Maxime + Test) + Unterschied-Satz. 每句一个Fachbegriff。先在天平上称后果，再照镜子查准则。
+
+MUSTERLÖSUNG：中文：功利看后果总账，救五舍一划算；康德看准则能否普遍化，把无辜者只当工具则 violates 尊严。区别在检验点：总后果 against 可普遍化。
+
+MUSTERLOESUNG (DE): Aus utilitaristischer Sicht ist das Umstellen erlaubt, wenn es mehr Glueck sichert als es Vertrauen kostet. Aus kantischer Sicht scheitert die Maxime Opfere einen zum Nutzen aller, weil sie den Einen zum blossen Mittel macht. Der Unterschied liegt im Pruefpunkt: Gesamtfolge gegen Verallgemeinerbarkeit.
 
 Klausur-Satz: `Aus utilitaristischer Sicht lässt sich die Notlüge rechtfertigen, weil sie mehr Nutzen stiftet als sie schadet.`
 
-## Schritt 5 — ausprobieren
+## Schritt 5 — ausprobieren: 双案对质：手机禁令 against 无辜顶罪
 
 VERGLEICH辨别实验（先选程序再做——两题用不同眼镜，别混）：
 
 VERGLEICH: Wähle erst das Verfahren — (i) Folgen-Brille (Nutzen, Glück, Abwägung, Minderheitenschutz als Problem) oder (ii) Pflicht-Brille (Maxime, allgemeines Gesetz, Würde, Selbstzweck) — dann lösen.
 
-AUFGABE A (Folgen-Brille)：Die Schule will Handys verbieten. Ein Utilitarist rechnet: weniger Ablenkung für 900 Schüler gegen Ärger bei 100 Schülern. Entscheide mit dem Nutzenprinzip und nenne den Preis für die Minderheit.
+Weg A (Folgen, Utilitarismus)：机制为后果、加总、多数胜。长在治愈结果冷漠，短在牺牲少数。
+Weg B (Pflicht, Kant)：机制为准则、普遍化、禁工具化。长在守住尊严，短在显得死板。
 
+AUFGABE A (Folgen-Brille)：Die Schule will Handys verbieten. Ein Utilitarist rechnet: weniger Ablenkung für 900 Schüler gegen Ärger bei 100 Schülern. Entscheide mit dem Nutzenprinzip und nenne den Preis für die Minderheit.
 AUFGABE B (Pflicht-Brille)：Darf man einen Unschuldigen bestrafen, um eine Panik der Mehrheit zu beruhigen? Prüfe mit dem Universalisierungstest und dem Selbstzweck-Verbot, warum Kant Nein sagt, auch wenn der Nutzen groß wäre.
 
-HILFE: A只准用Folge/Nutzen/Abwägung词；B只准用Maxime/Gesetz/Würde词。写前先写“Ich wähle Verfahren (i)/(ii), weil …”。
+HILFE: A只准用Folge/Nutzen/Abwägung词；B只准用Maxime/Gesetz/Würde词。写前先写"Ich wähle Verfahren (i)/(ii), weil …"。天平左侧称900对100，右侧照是否把无辜者当工具。
 
-ANTWORT: A = Verfahren (i); Punkte: Gesamtnutzen steigt (Konzentration), Minderheitsärger wird verrechnet — Schwäche nennen: Minderheit wird geopfert. B = Verfahren (ii); Punkte: Maxime „Bestrafe Unschuldige zum Nutzen aller" zerstört universalisiert Vertrauen/Gerechtigkeit; Mensch als bloßes Mittel verletzt Würde — Folgenblick tritt zurück.
+ANTWORT: A = Verfahren (i); Punkte: Gesamtnutzen steigt (Konzentration), Minderheitsärger wird verrechnet — Schwäche nennen: Minderheit wird geopfert. B = Verfahren (ii); Punkte: Maxime Bestrafe Unschuldige zum Nutzen aller zerstört universalisiert Vertrauen und Gerechtigkeit; Mensch als bloßes Mittel verletzt Würde — Folgenblick tritt zurück.
 
 Klausur-Satz: `Aus kantischer Sicht ist die Bestrafung eines Unschuldigen problematisch, weil die Maxime nicht allgemeines Gesetz werden kann.`
 Klausur-Satz: `Der Utilitarismus rechnet Menschen gegeneinander auf, Kant verbietet, Menschen als bloßes Mittel zu benutzen.`
 
-## Schritt 6 — check
+## Schritt 6 — check: Selbsttest zu Utilitarismus vs Kant
 
 CHECK检索（合书默写！觉得会了不算，能写出才算。Evidenz: Abrufen schlägt Wiederlesen — Karpicke & Blunt 2011）：
 
@@ -116,25 +130,22 @@ Klausur-Satz: `Abschließend beurteile ich den Fall nach dem Kriterium der Mensc
 
 (非Schritt小节，check后纠偏；Parser skippt diesen Abschnitt.)
 
-1. 误解“功利主义 = 自私/只顾自己爽”。
+1. 误解"功利主义 = 自私/只顾自己爽"。
    中文纠偏：功利算的是所有人的总账，不是个人小算盘；自私只算自己，功利要算多数人，错在把Nutzen（总体）当成Eigennutz（利己）。
    Korrektur-Satz: `Der Utilitarismus meint nicht Egoismus, sondern das Gesamtglück der meisten, nicht den eigenen Vorteil.`
 
-2. 误解“康德 = 不看后果、死守规矩，谁死也不管”。
-   中文纠偏：康德是换检验点——先看准则能不能普遍化、有没有把人当工具，而不是看不到后果；Klausur 要写“Folgenblindheit是代价，但不是无视现实”，再补一句以尊严为标准的权衡才给分。
+2. 误解"康德 = 不看后果、死守规矩，谁死也不管"。
+   中文纠偏：康德是换检验点——先看准则能不能普遍化、有没有把人当工具，而不是看不到后果；Klausur 要写"Folgenblindheit是代价，但不是无视现实"，再补一句以尊严为标准的权衡才给分。
    Korrektur-Satz: `Kant blendet Folgen nicht aus Unwissenheit aus, sondern ordnet sie der Würde unter: Keine Zahl rechtfertigt, einen Menschen als bloßes Mittel zu opfern.`
 
-## Schritt 7 — szenario
+## Schritt 7 — szenario: Klausurtransfer: Verteidiger im U-Bahn-Weichenprozess
 
-(原szenario结构保留：ROLLE/SITUATION/RUBRIC；Gating：check未过此步置灰；完成后+30 XP)
+ROLLE: Du bist Verteidiger des Weichenstellers vor dem Tribunal, Mitglied im Ethikrat der Schule, AG Ehrlichkeit und Technik.
+SITUATION: Debatte: Soll die U-Bahn-Weiche umgestellt werden, wenn dadurch fuenf gerettet und einer geopfert wird? Halte ein 2-Minuten-Plädoyer mit Folgen-Brille für Pro und Pflicht-Brille für Contra, dann eigenes Urteil mit Menschenwürde.
+AUFGABE (AFB III): Zusammenhängende Darstellung ca. 150 Wörter mit beiden Brillen, Beleg und Urteil.
+RUBRIC: These in Satz 1 mit Darstellung beider Brillen (10 XP) | zwei Fachbegriffe wie Maxime, Nutzenprinzip, Menschenwürde (10 XP) | ein Beleg aus Schritt 4 oder 5 (5 XP) | Urteil mit Kriterium Menschenwürde (5 XP).
 
-ROLLE: Du bist Mitglied im Ethikrat der Schule, AG „Ehrlichkeit im Unterricht".
-
-SITUATION: Debatte: Soll Schummeln bei einer unwichtigen Klausur erlaubt sein, wenn es allen Stress nimmt? Halte ein 2-Minuten-Plädoyer (dafür oder dagegen). Nutze die Folgen-Brille aus Schritt 5 für Pro und die Pflicht-Brille für Contra, dann eigenes Urteil.
-
-RUBRIC: These in Satz 1 (darstellen) | zwei Fachbegriffe (z. B. Maxime, Nutzenprinzip, Menschenwürde) | ein Beleg/Beispiel | Urteil mit Kriterium (beurteilen).
-
-## Schritt 8 — reflexion: Takeaway & Reflexion
+## Schritt 8 — reflexion: Urteil an der Weiche: Erst Brille waehlen dann vergleichen
 
 TAKEAWAY 1盒（合书能背才算过）：
 
@@ -144,4 +155,4 @@ Takeaway-Satz: `Folgen abwägen, Maxime universalisieren, mit Würde urteilen �
 REFLEXION 2问（写2行，不锁分但进下轮计划）：
 
 1. 过程（哪步卡住了）：Welcher Schritt hat gestockt — Verfahrenwahl (Schritt 5), Merksätze (Schritt 6) oder Plädoyer (Schritt 7)? 中文写一句卡点。
-2. 元认知（下次先…）：Beim nächsten Mal fange ich zuerst mit … an, weil …. 中文写一句计划（如“下次先写程序句再答题”）。
+2. 元认知（下次先…）：Beim nächsten Mal fange ich zuerst mit der Verfahrenswahl an, weil sie jeden Vergleich trägt. 中文写一句计划。

@@ -15,7 +15,7 @@ version: Lesson-v3
 
 <!-- Lesson-v3: 8 Schritte plus Anekdote und Fehlvorstellung; Fehlvorstellung zwischen Schritt 6 und 7 (Parser-Skip); interaktives [Werkzeug: <id>]; Gating: check/szenario nicht bestanden = Weiter gesperrt; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
-## Schritt 1 — entdecken: Ziele & Phaenomen-Einstieg
+## Schritt 1 — entdecken: Suendenbock-Prozess: Darf einer fuer alle bluten
 
 ZIELE (drei messbare Ziele dieser Lektion):
 
@@ -25,9 +25,9 @@ ZIELE (drei messbare Ziele dieser Lektion):
 
 ### Hook / Phaenomen
 
-Stell dir vor, ein Wagen rast auf fuenf Menschen zu und du stehst an der Weiche: Stellst du sie um, trifft der Wagen nur eine einzige Person auf dem Nebengleis. Hinter dir ruft die Gruppe, die Sache sei doch klar und fuenf Leben zaehlten mehr als eines. Zugleich weisst du aus Familie, Schule und Freundeskreis, dass jeder Mensch Wuerde traegt und niemand zum blossen Mittel fuer andere gemacht werden darf. Genau hier kollidieren zwei Pruefungen desselben Falles: Die eine Bilanz zaehlt Freude und Leid aller Betroffenen zusammen, die andere Pruefung fragt, ob deine Maxime als allgemeines Gesetz gewollt werden kann. In dieser Lektion lernst du beide Brillen kennen, damit du sie in der Klausur sauber trennst und dein Urteil an einem klaren Kriterium festmachst.
+Stell dir den vierzehnten Prozesstag im Tribunal der Menschheit vor, und diesmal zittert ein unschuldiger Schueler auf der Anklagebank, weil der KI-Anklaeger mit eiskalter Logik fordert, ihn stellvertretend zu bestrafen, damit eine panische Meute endlich Ruhe gebe und das grosse Ganze gerettet werde, waehrend du als Chefverteidiger ploetzlich zwischen zwei Abgruenden stehst, von denen der eine ruft, fuenf gerettete Leben zaehlten mehr als eines, und der andere fluestert, kein Mensch duerfe zum blossen Werkzeug fremder Ruhe gemacht werden, weshalb du heute beide Brillen so sauber trennen musst, dass das hohe Gericht Bilanz von Achtung unterscheidet und den Suendenbock freispricht.
 
-## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
+## Schritt 2 — entdecken: Zwei Pruefbrillen fuenf Glaeser: Bilanz gegen Achtung
 
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
@@ -49,7 +49,7 @@ Die Begriffe greifen ineinander: Das **Nutzenprinzip** maximiert das Wohl ueber 
 
 Klausur-Satz: `Der Utilitarismus bewertet eine Handlung nach ihren Folgen fuer das Gesamtglueck.`
 
-## Schritt 3 — entdecken: Kernkonzept & Wirkungsmodell
+## Schritt 3 — entdecken: Fuenf retten einen opfern: Was zaehlt Folge oder Pflicht
 
 TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
@@ -66,7 +66,7 @@ Oeffne [Werkzeug: balance-board]. Lege links die Folgenbilanz fuer alle Betroffe
 Aha-Moment: Bilanz — Probe — Vorrang. Erstens bilanziert der Utilitarismus Freude und Leid aller Betroffenen. Zweitens prueft Kant, ob die Maxime als allgemeines Gesetz gedacht und gewollt werden kann. Drittens urteilt das Kriterium Menschenwuerde: Keine Aufwiegen von Personen gegeneinander. Gesetz: Nutzen wird nicht zu Erlaubnis, sobald die Maxime die Wuerde verletzt.
 
 ```diagram
-  Fall [Trolley plus Luege plus Hilfe]
+  Fall [Suendenbock plus Trolley plus Luege]
   Fall -> Waage [Folgenbilanz gegen Maximenprobe]
   Waage -> Probe [Denkbarkeit plus Wollbarkeit plus Wuerde]
   Probe -> Urteil [Pflicht oder Verbot]
@@ -82,7 +82,7 @@ In der modernen Ethik ist das Trolley-Problem beruehmt: Ein ausser Kontrolle ger
 
 Bezug zum Konzept: `Die Anekdote zeigt am selben Fall den Grundgegensatz dieser Lektion: Folgenbilanz gegen Pflichtprobe, Gesamtwohl gegen unantastbare Wuerde.`
 
-## Schritt 4 — ausprobieren: Interaktive Praxis & Urteils-Waage
+## Schritt 4 — ausprobieren: Waage des Suendenbocks: Ruhe der Klasse gegen Wuerde des Einen
 
 BEISPIEL (geleitete Aufgabe mit Werkzeug):
 
@@ -90,16 +90,16 @@ BEISPIEL (geleitete Aufgabe mit Werkzeug):
 
 Lege im Tool Pro- und Contra-Argumente auf die Waage und gewichte jedes Argument von 1 bis 5; veraendere die Gewichte Schritt fuer Schritt und beobachte, wann das Urteil zwischen Erlaubnis und Verbot umschlaegt.
 
-AUFGABE Waage-Raetsel (AFB II): Lege den Trolley-Fall auf [Werkzeug: balance-board]. Bilanziere beide Optionen in ihren Folgen, pruefe danach Maxime und Selbstzweckformel. Entscheide per Gewichtung, ob Nutzen die Pflicht bricht.
+AUFGABE Waage-Raetsel (AFB II): Lege den Suendenbock-Fall auf [Werkzeug: balance-board]. Bilanziere beide Optionen in ihren Folgen, pruefe danach Maxime und Selbstzweckformel. Target: Folgenbilanz und Maximenprobe je 1 bis 5 wichten und per Wuerde entscheiden, ob Nutzen die Pflicht bricht.
 
 HILFE:
 1. Schritt 1: Bilanziere die Folgen beider Optionen fuer alle Betroffenen. 2. Schritt 2: Formuliere die Maxime und denke sie als allgemeines Gesetz. 3. Schritt 3: Deute an Wuerde und formuliere den Klausur-Satz.
 
-MUSTERLOESUNG: Der Nutzen spricht fuer das Umstellen, weil fuenf Gerettete gegen einen Getroffenen stehen. Kant prueft dagegen Maxime und Selbstzweckformel: Wer den einen opfert, benutzt ihn bloss als Mittel und verletzt seine Wuerde. Daher bleibt die Tat trotz groesseren Nutzens pflichtwidrig.
+MUSTERLOESUNG: Der Nutzen spricht fuer das Opfern des Einen, weil Klassenruhe gegen einen Bestraften steht. Kant prueft dagegen Maxime und Selbstzweckformel: Wer den einen opfert, benutzt ihn bloss als Mittel und verletzt seine Wuerde. Daher bleibt die Tat trotz groesseren Nutzens pflichtwidrig.
 
 Klausur-Satz: `Waehrend der Utilitarismus die Folgen fuer die Mehrheit abwaegt, prueft Kant, ob die Maxime alle als Zweck an sich achtet.`
 
-## Schritt 5 — ausprobieren: Wegvergleich Pflicht gegen Folgen
+## Schritt 5 — ausprobieren: Duell der Hoefe: Pflicht schuetzt Einzelne Folgen mehren Wohl
 
 VERGLEICH (Wahl des Weges, A gegen B):
 
@@ -138,14 +138,14 @@ Klausur-Satz: `Aus kantischer Sicht ist die Bestrafung eines Unschuldigen proble
 2. Fehlkonzept: Der Utilitarismus erlaube jedes Mittel, solange die Bilanz stimme, und kenne keine Schranken gegenueber Minderheiten.
    Korrektur-Satz: `Auch der Utilitarismus braucht Schranken: In der Klausur ist jede Bilanz am Kriterium Menschenwuerde zu messen, und Mills Regelblick warnt davor, Personen kurzfristig gegeneinander aufzuwiegen.`
 
-## Schritt 7 — szenario: Ethikrat-Debatte um Ehrlichkeit im Unterricht
+## Schritt 7 — szenario: Klausurtransfer: Verteidiger des Suendenbocks im Ethikrat
 
-ROLLE: Du bist Mitglied im Ethikrat der Schule in der Arbeitsgruppe Ehrlichkeit im Unterricht.
-SITUATION: Debatte: Soll Schummeln bei einer unwichtigen Klausur erlaubt sein, wenn es allen Stress nimmt? Halte ein zweiminuetiges Plaedoyer dafuer oder dagegen. Nutze die Folgenbrille aus Weg B fuer Pro und die Pflichtbrille aus Weg A fuer Contra, dann faelle dein eigenes Urteil.
+ROLLE: Du bist Verteidiger des unschuldigen Schuelers und Mitglied im Ethikrat der Schule in der Arbeitsgruppe Ehrlichkeit im Unterricht.
+SITUATION: Debatte: Soll ein Unschuldiger bestraft werden, wenn es allen Stress nimmt und die Klasse rettet? Halte ein zweiminuetiges Plaedoyer dagegen. Nutze die Folgenbrille aus Weg B fuer Pro und die Pflichtbrille aus Weg A fuer Contra, dann faelle dein eigenes Urteil.
 AUFGABE (AFB III): Verfasse eine zusammenhaengende Darstellung von etwa 150 Woertern mit Kriterium, Anwendung und Urteil.
 RUBRIC (30 XP): These in Satz 1 mit Darstellung beider Brillen | zwei Fachbegriffe wie Maxime, Nutzenprinzip oder Menschenwuerde | ein Beleg aus Schritt 4 oder 5 | Urteil mit Kriterium Menschenwuerde.
 
-## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
+## Schritt 8 — reflexion: Freispruch des Einzelnen: Zweck heiligt nicht jedes Mittel
 
 TAKEAWAY (Kernbotschaft in einem Kasten):
 

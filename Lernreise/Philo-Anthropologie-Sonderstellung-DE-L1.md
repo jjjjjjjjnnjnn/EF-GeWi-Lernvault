@@ -15,7 +15,7 @@ version: Lesson-v3
 
 <!-- Lesson-v3: 8 Schritte plus Anekdote und Fehlvorstellung; Fehlvorstellung zwischen Schritt 6 und 7 (Parser-Skip); interaktives [Werkzeug: <id>]; Gating: check/szenario nicht bestanden = Weiter gesperrt; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
-## Schritt 1 — entdecken: Ziele & Phaenomen-Einstieg
+## Schritt 1 — entdecken: Klage der Zirkusaffen: Wer darf sich Mensch nennen
 
 ZIELE (drei messbare Ziele dieser Lektion):
 
@@ -25,9 +25,9 @@ ZIELE (drei messbare Ziele dieser Lektion):
 
 ### Hook / Phaenomen
 
-Stell dir vor, du beginnst als Austauschschueler an einer fremden Schule: Niemand sagt dir, wo du sitzen sollst, kein angeborener Trieb zeigt dir die richtigen Worte, und jede Pause verlangt eine neue Entscheidung. Zugleich bemerkst du, wie du dich selbst beobachtest — du fragst dich, wie du auf andere wirkst, was du eigentlich willst und ob du anders handeln solltest als die Mehrheit. Genau diese doppelte Erfahrung steht im Zentrum dieser Lektion: Der Mensch wirkt biologisch unfertig und muss sich seine Welt erst schaffen, und er kann zu sich selbst auf Distanz gehen und sein Handeln frei bedenken. In dieser Lektion lernst du zwei Denkwege kennen, die diese Sonderstellung jeweils anders begruenden, damit du sie in der Klausur sauber vergleichst und dein Urteil an einem klaren Kriterium festmachst.
+Stell dir den zweiten Prozesstag im Tribunal der Menschheit vor, und diesmal sitzen nicht abstrakte Theorien auf der Anklagebank, sondern drei ehemalige Zirkusaffen, vertreten durch den kalten KI-Anklaeger, der mit schneidender Stimme ruft, auch Affen lernten Zeichen, trauerten um Tote und pflegten Werkzeuge, also sei jede Sonderstellung des Menschen blosse Arroganz und Speciesismus, waehrend du als junger Chefverteidiger der Homo-sapiens-Zivilisationploetzlich merkst, dass dein Herz klopft, weil du selbst am Morgen ohne Stundenplan verloren warst und abends ueber deine eigene Wirkung auf andere nachgedacht hast, und genau diese doppelte Erfahrung von biologischer Unfertigkeit und seltsamer Selbstdistanz wird jetzt zur einzigen Waffe, mit der du Gehlens Mangelweg und Plessners Distanzweg so praezise trennen musst, dass das hohe Gericht dir glaubt und keinen Freispruch fuer die Anklage erteilt.
 
-## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
+## Schritt 2 — entdecken: Fuenf Paragrafen der Verteidigung: Mangel und Distanz
 
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
@@ -49,7 +49,7 @@ Die Begriffe greifen ineinander: Das **Maengelwesen** verlangt **Institutionen**
 
 Klausur-Satz: `Nach Gehlen ist der Mensch ein biologisch unfertiges Maengelwesen, das seine Instinktarmut durch Kultur und Institutionen ausgleicht.`
 
-## Schritt 3 — entdecken: Kernkonzept & Wirkungsmodell
+## Schritt 3 — entdecken: Zwei Plaedoyers ein Gerichtssaal: Ausgleich gegen Selbstdistanz
 
 TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
@@ -82,7 +82,7 @@ Vergleicht man neugeborene Tiere mit Menschenkindern, faellt ein krasser Untersc
 
 Bezug zum Konzept: `Die Anekdote veranschaulicht Gehlens Maengelwesen in lebendiger Anschauung und oeffnet zugleich Plessners Frage, wie aus biologischer Offenheit freie Selbstbestimmung erwachsen kann.`
 
-## Schritt 4 — ausprobieren: Interaktive Praxis & Urteils-Waage
+## Schritt 4 — ausprobieren: Waage des Tribunals: Wessen Argument traegt die Unfertigkeit
 
 BEISPIEL (geleitete Aufgabe mit Werkzeug):
 
@@ -90,7 +90,7 @@ BEISPIEL (geleitete Aufgabe mit Werkzeug):
 
 Lege im Tool Pro- und Contra-Argumente auf die Waage und gewichte jedes Argument von 1 bis 5; veraendere die Gewichte Schritt fuer Schritt und beobachte, wann das Urteil zwischen beiden Denkwegen umschlaegt.
 
-AUFGABE Waage-Raetsel (AFB II): Lege Gehlen gegen Plessner auf [Werkzeug: balance-board]. Gewichte Mangel, Handeln und Institutionen gegen Selbstdistanz, Reflexion und Freiheit und entscheide mit Begruendung, welche Deutung den Fall der menschlichen Unfertigkeit staerker traegt.
+AUFGABE Waage-Raetsel (AFB II): Lege Gehlen gegen Plessner auf [Werkzeug: balance-board]. Gewichte Mangel, Handeln und Institutionen gegen Selbstdistanz, Reflexion und Freiheit und entscheide mit Begruendung, welche Deutung den Fall der menschlichen Unfertigkeit im Zirkusaffen-Prozess staerker traegt. Target: Beide Seiten mindestens mit Gewicht 8 belegen und an Erklaerungskraft deuten, dann Klausur-Satz formulieren.
 
 HILFE:
 1. Schritt 1: Stelle beide Positionen mit je zwei Belegen dar. 2. Schritt 2: Gewichte beide Seiten von 1 bis 5 auf der Waage. 3. Schritt 3: Deute das Ergebnis an Erklaerungskraft und formuliere den Klausur-Satz.
@@ -99,7 +99,7 @@ MUSTERLOESUNG: Gehlen ueberzeugt bei der Entlastung durch Institutionen, weil oh
 
 Klausur-Satz: `Der Mensch schafft durch Handeln und Institutionen eine zweite, kulturelle Natur und gewinnt durch Selbstdistanz die Freiheit, sein Handeln zu bedenken.`
 
-## Schritt 5 — ausprobieren: Wegvergleich Gehlen gegen Plessner
+## Schritt 5 — ausprobieren: Kreuzverhoer der Denker: Gehlen gegen Plessner
 
 VERGLEICH (Wahl des Weges, A gegen B):
 
@@ -138,14 +138,14 @@ Klausur-Satz: `Beide Denkwege bejahen eine Sonderstellung des Menschen, begruend
 2. Fehlkonzept: Exzentrische Positionalitaet bedeute, der Mensch stehe ausserhalb der Natur und habe mit seinem Koerper nichts mehr zu tun.
    Korrektur-Satz: `Exzentrische Positionalitaet meint, dass der Mensch sein Koerper bleibt und zugleich zu sich auf Distanz gehen kann, sodass Naturbindung und Freiheit zusammengehoeren.`
 
-## Schritt 7 — szenario: Podiumsdiskussion zur Sonderstellung von Mensch und Tier
+## Schritt 7 — szenario: Klausurtransfer: Plaedoyer im Zirkusaffen-Prozess
 
-ROLLE: Du bist Referent in einem Schulprojekt zu Mensch und Tier und sollst auf einer Podiumsdiskussion die Frage beantworten, ob der Mensch eine moralische Sonderstellung gegenueber Tieren hat.
-SITUATION: Ein Teil des Publikums beruft sich auf Vernunft und Verantwortung des Menschen, ein anderer Teil verweist auf die Leidensfaehigkeit von Tieren und bestreitet jede Sonderstellung. Beurteile in einer zusammenhaengenden Stellungnahme von etwa 150 Woertern, ob eine Sonderstellung haltbar ist, und beziehe Gehlen, Plessner und die tierethische Kritik ein.
+ROLLE: Du bist Chefverteidiger der Menschheit im Zirkusaffen-Prozess und sollst auf einer Tribunal-Anhoerung die Frage beantworten, ob der Mensch eine moralische Sonderstellung gegenueber Tieren hat.
+SITUATION: Der KI-Anklaeger beruft sich auf Lernfaehigkeit und Leidensfaehigkeit der Affen und bestreitet jede Sonderstellung. Beurteile in einer zusammenhaengenden Stellungnahme von etwa 150 Woertern, ob eine Sonderstellung haltbar ist, und beziehe Gehlen, Plessner und die tierethische Kritik ein.
 AUFGABE (AFB III): Verfasse eine zusammenhaengende Darstellung von etwa 150 Woertern mit Kriterium, Anwendung und Urteil.
 RUBRIC (30 XP): These mit Kriterium Erklaerungskraft (5 XP) | Darstellung beider Denkwege mit je einem Beleg (10 XP) | Anwendung auf das Tierbeispiel mit Abgrenzung (10 XP) | Fazit mit Fachbegriffen (5 XP).
 
-## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
+## Schritt 8 — reflexion: Urteil mit doppelter Begruendung: Enlastung plus Freiheit
 
 TAKEAWAY (Kernbotschaft in einem Kasten):
 

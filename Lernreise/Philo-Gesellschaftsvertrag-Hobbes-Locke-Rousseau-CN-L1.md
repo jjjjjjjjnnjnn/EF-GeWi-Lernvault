@@ -15,7 +15,7 @@ version: Lesson-v3
 
 <!-- Lesson v3 9步制架构：Schritt 1至8固定结构；Fehlvorstellung 夹在 Schritt 6 与 7 之间（Parser 自动跳过，不占步数）；支持内嵌 [Werkzeug: <id>] 交互教具；Gating: check/szenario 未过 = Weiter 置灰；XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
-## Schritt 1 — entdecken: Ziele & Phänomen-Einstieg
+## Schritt 1 — entdecken: 宿舍断电审判夜：舍长利维坦还是公意投票
 
 ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
@@ -23,22 +23,19 @@ ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 2. 中文：能对比契约目的——安全、财产、公意自由。
 3. 中文：能选择比较维度作答（选程序：同异分述 vs 问题导向）。
 
-Voraussetzung（窄切口）：只做 Leviathan/Two Treatises/Contrat social 主线，不展开联邦制；已会 Naturzustand 定义。
+Hook中文生活切入（Tribunal Fall 06：宿舍舍长合法性案）：
 
-
-Hook中文生活切入:
-
-想象宿舍断电断网三天:第一天靠自觉排队打水,第二天开始有人插队藏水,第三天就得选个舍长立规矩,不服就扣分,大伙让渡一点自由换 collective 安宁。社会契约论追问的正是这件事:自然状态有多糟,人民交出多少权利,统治者凭什么合法,霍布斯、洛克、卢梭给出三份不同合同。
+想象宿舍断电断网三天，审判庭的灯也只剩一盏：第一天大家还自觉排队打水，第二天就有人插队藏水，第三天AI检察官直接宣布由他任命舍长利维坦，不服就扣分。作为全体舍员的辩护律师，你拍出三份合同：霍布斯说把一切权力交给舍长换安宁，洛克说只交出执行权还要保留反抗权，卢梭说舍长必须是我们自己的公意投票。法官问你，到底哪份合同能让断电的宿舍既不断粮又不失自由，这正是社会契约论的终极庭审。
 
 Phaenomen-Satz (DE): Ohne Regeln kaempfen alle, mit Vertrag gehorchen alle, doch wem?
 
-中文机制铺垫:霍布斯从一切人对一切人的战争推出利维坦式全权让渡,洛克从自然权利推出有限信托政府加反抗权,卢梭从公意推出主权在民;比较轴是自然状态、人性、让渡范围与反抗条件,答题必须三人同题对照。
+中文机制铺垫:霍布斯从一切人对一切人的战争推出利维坦式全权让渡，洛克从自然权利推出有限信托政府加反抗权，卢梭从公意推出主权在民；比较轴是自然状态、人性、让渡范围与反抗条件，答题必须三人同题对照。
 
 Mechanismus-Satz (DE): Hobbes gibt alles fuer Sicherheit, Locke wenig fuer Freiheit, Rousseau alles an alle.
 
 Klausur-Satz: `Hobbes opfert Freiheit fuer Sicherheit, Locke sichert Eigentum durch Gewaltenteilung, Rousseau sucht Freiheit im Gemeinwillen.`
 
-## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
+## Schritt 2 — entdecken: 三份辩护合同：利维坦 信托 公意
 
 PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
 
@@ -52,7 +49,7 @@ PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→�
 
 Klausur-Satz: `Der Vertrag legitimiert Herrschaft durch Zustimmung, begrenzt sie aber je nach Autor anders.`
 
-## Schritt 3 — entdecken: Kernkonzept & Wirkungsmodell
+## Schritt 3 — entdecken: 同模不同馅：恐惧 财产 自治
 
 ENTDECKEN（1概念 + 1文字图解，中文在上、德语在下）：
 
@@ -64,7 +61,7 @@ Phaenomen-Satz (DE): Gleicher Vertrag, anderes Menschenbild, andere Grenze.
 
 Spiel-Aufgabe沙盒操作指引：
 
-中文：打开沙盒，把滑块推向自然状态、安全、财产与公意（关键词：Naturzustand, Vertragszweck, Grenze, Gemeinwille），看三家的权力天花板如何升降。
+中文：打开天平沙盒，把论据推向自然状态、安全、财产与公意（关键词：Naturzustand, Vertragszweck, Grenze, Gemeinwille），看三家的权力天花板如何升降。
 
 Beobachtungs-Satz (DE): Hobbes deckelt oben absolut, Locke begrenzt, Rousseau bindet an alle.
 
@@ -91,15 +88,17 @@ Klausur-Satz: `Gleiches Vertragsmodell, anderes Menschenbild, andere Herrschafts
 
 **Bezug zum Konzept**: `Der Buergerkrieg schreibt bei Hobbes mit, die Republik bei Rousseau.`
 
-## Schritt 4 — ausprobieren: Interaktive Praxis & Labor
+## Schritt 4 — ausprobieren: 天平称权力：绝对安全 against 有限信托
 
 [Werkzeug: balance-board]
 
 BEISPIEL（正确例题示范，含教具操作与解答，中文在上、德语在下）：
 
-AUFGABE中文导读（比较谜题）：Hobbes 挺绝对权力、Locke 要有限权力。请从人性假设推出两者分野并判谁更能自我设限。
+AUFGABE中文导读（比较谜题）：Hobbes 挺绝对权力、Locke 要有限权力。请从人性假设推出两者分野并判谁更能自我设限，在天平上称量。
 
-AUFGABE (vergleichen, AFB II/III): Hobbes legitimiert absolute, Locke begrenzte Herrschaft. Leiten Sie den Unterschied aus dem Menschenbild ab.
+AUFGABE (vergleichen, AFB II/III): Hobbes legitimiert absolute, Locke begrenzte Herrschaft. Leiten Sie den Unterschied aus dem Menschenbild ab und legen Sie beide auf die Waage.
+
+Target：左侧放 Furcht plus Leviathan plus Gehorsam，右侧放 Eigentum plus Teilung plus Widerstand，每项权重 1 bis 5；两侧各达 7 分且能说出 Massstab 时通关。
 
 HILFE（中德双语步骤）：
 
@@ -115,11 +114,14 @@ MUSTERLOESUNG：中文：Hobbes 的互害人性只能拿绝对安全来换，Loc
 MUSTERLOESUNG (DE): Hobbes legitimiert absolute, Locke begrenzte Herrschaft; der Unterschied folgt aus dem Menschenbild: Furcht verlangt Leviathan, Eigentum verlangt Teilung. Vergleich rekonstruiert, Beurteilung braucht einen Massstab.
 Klausur-Satz: `Hobbes legitimiert absolute, Locke begrenzte Herrschaft; der Unterschied folgt aus dem Menschenbild.`
 
-## Schritt 5 — ausprobieren: Verfahrensvergleich & Abgrenzung
+## Schritt 5 — ausprobieren: 程序选择庭：全面对照 against 当下裁决
 
 VERGLEICH辨别实验（双向辨析：同异分述 vs 问题导向）：
 
 VERGLEICH: Waehle erst das Verfahren — 【选程序】先看设问：(i) 同异分述（vergleichen/stellen dar：按维度列同异、重建准确）oder (ii) 问题导向（beurteilen/prüfen：以当代问题为尺、评价谁更具说服力）—— dann loesen.
+
+Weg A (Tabelle, Rekonstruktion)：机制为状态、契约、主权、边界。长在全面准确，短在无裁决。
+Weg B (Fallpruefung, Klima-Gehorsam)：机制为标准、涵摄、裁决。以合法强制护公共品为尺，Rousseau 以公意胜，Locke 以限权补，Hobbes 因无限权败。
 
 AUFGABE A：Vergleichen Sie Hobbes, Locke und Rousseau im Ueberblick.
 AUFGABE B：Welche Theorie begruendet heute legitimen Klimaschutzgehorsam am besten?
@@ -151,12 +153,13 @@ Klausur-Satz: `Naturzustand, Vertragszweck und Grenze trennen die drei Theorien.
    中文纠偏：公意是公共利益方向，可错投；多数决只是发现程序，会错，需公共审议纠正。
    Korrektur-Satz: `Die volonte generale zielt aufs Gemeinwohl, nicht auf die Mehrheit als Zahl.`
 
-## Schritt 7 — szenario: Klausurtransfer: Gesellschaftsvertrag bei Hobbes Locke und Rousseau
-ROLLE: Du berätst eine Schulverfassung zur Handyregel.
-SITUATION: Die Schulleitung will Anordnung, die Schueler wollen Mitbestimmung. Begruende in einer zusammenhaengenden Stellungnahme (ca. 150 Woerter) mit Hobbes, Locke und Rousseau, welche Regelsetzung legitim waere.
+## Schritt 7 — szenario: Klausurtransfer: Anwalt der Schulverfassung gegen Leviathan
+
+ROLLE: Du bist Verteidiger der Schuelerschaft vor dem Tribunal und beraetst eine Schulverfassung zur Handyregel.
+SITUATION: Die Schulleitung will Anordnung wie ein Leviathan, die Schueler wollen Mitbestimmung wie ein Gemeinwille. Begruende in einer zusammenhaengenden Stellungnahme (ca. 150 Woerter) mit Hobbes, Locke und Rousseau, welche Regelsetzung legitim waere.
 RUBRIC (30 XP): Drei Positionen korrekt zugeordnet (12 XP) | Abwaegung mit Gemeinwohl-Kriterium (10 XP) | Eigener Verfahrensvorschlag (4 XP) | Adressatengerechte Sprache (4 XP).
 
-## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
+## Schritt 8 — reflexion: Urteil im Wohnheim: Menschenbild bestimmt Vertrag Massstab bestimmt Urteil
 
 TAKEAWAY 1盒（核心总结）：
 

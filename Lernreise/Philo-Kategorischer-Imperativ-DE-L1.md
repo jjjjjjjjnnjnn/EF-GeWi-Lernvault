@@ -15,7 +15,7 @@ version: Lesson-v3
 
 <!-- Lesson-v3: 8 Schritte plus Anekdote und Fehlvorstellung; Fehlvorstellung zwischen Schritt 6 und 7 (Parser-Skip); interaktives [Werkzeug: <id>]; Gating: check/szenario nicht bestanden = Weiter gesperrt; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
-## Schritt 1 — entdecken: Ziele & Phaenomen-Einstieg
+## Schritt 1 — entdecken: Spickzettel-Kartell: Darf jeder schummeln wie ich
 
 ZIELE (drei messbare Ziele dieser Lektion):
 
@@ -25,9 +25,9 @@ ZIELE (drei messbare Ziele dieser Lektion):
 
 ### Hook / Phaenomen
 
-Stell dir vor, dein bester Freund hat die Hausaufgaben vergessen und bittet dich, ihn bei der Kontrolle abschreiben zu lassen. Du willst ihm helfen, doch zugleich weisst du: Wenn jeder schummelte, waere keine Note mehr etwas wert und Vertrauen zwischen Schuelern und Lehrern waere zerstoert. Daneben hoerst du die Stimme der Klugheit, die raet, Gefaelligkeiten zu sammeln und sich beliebt zu machen. Genau hier trennt sich blosse Schlauheit von Moral: Die eine Stimme fragt, was dir nuetzt, die andere fragt, was gelten duerfte, wenn alle so handelten wie du. In dieser Lektion lernst du beide Imperative kennen und uebst die Probe, mit der Kant jede Maxime auf Pflicht und Verbot testet.
+Stell dir den achten Prozesstag im Tribunal der Menschheit vor, und diesmal steht kein Kreditbetruger, sondern dein bester Freund vor dem hohen Gericht, weil er dich bat, ihn bei der Kontrolle abschreiben zu lassen, waehrend der kalte KI-Anklaeger mit donnernder Stimme ruft, Gefaelligkeit sei doch Menschlichkeit und nuetzliche Klugheit duerfe alles, und du als Chefverteidiger ploetzlich zwischen zwei Stimmen zerrissen bist, von denen die eine fragt, was dir nuetzt und beliebt macht, und die andere fragt, was gelten duerfte, wenn alle so handelten wie du und keine Note mehr etwas wert waere und jedes Vertrauen zwischen Schuelern und Lehrern zerstoert wuerde, weshalb du heute die Probe der Maxime so scharf fuehren musst, dass das Gericht Klugheit von Moral trennt und das Spickzettel-Kartell verurteilt.
 
-## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
+## Schritt 2 — entdecken: Pruefgeraet der Maxime: Klugheit gegen Pflicht
 
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
@@ -49,7 +49,7 @@ Die Begriffe greifen ineinander: Die **Maxime** liefert das Material, der **hypo
 
 Klausur-Satz: `Eine Handlung gewinnt ihren moralischen Wert nicht aus den Folgen, sondern aus der Maxime, aus der sie hervorgeht.`
 
-## Schritt 3 — entdecken: Kernkonzept & Wirkungsmodell
+## Schritt 3 — entdecken: Kleine Hilfe grosses Unrecht: Was waere wenn jeder duerfte wie du
 
 TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
@@ -82,7 +82,7 @@ Der Ueberlieferung nach lebte Kant in Koenigsberg nach einem fast unveraenderlic
 
 Bezug zum Konzept: `Die Anekdote veranschaulicht Kants Leitidee, dass Moral in der Bindung an selbstgegebene, allgemein wollbare Gesetze besteht und nicht in der Laune wechselner Neigungen.`
 
-## Schritt 4 — ausprobieren: Interaktive Praxis & Urteils-Waage
+## Schritt 4 — ausprobieren: Waage des Spickzettels: Vertrauen gegen Vorteil
 
 BEISPIEL (geleitete Aufgabe mit Werkzeug):
 
@@ -90,16 +90,16 @@ BEISPIEL (geleitete Aufgabe mit Werkzeug):
 
 Lege im Tool Pro- und Contra-Argumente auf die Waage und gewichte jedes Argument von 1 bis 5; veraendere die Gewichte Schritt fuer Schritt und beobachte, wann das Urteil zwischen Erlaubnis und Verbot umschlaegt.
 
-AUFGABE Waage-Raetsel (AFB II): Pruefe auf [Werkzeug: balance-board] die Maxime des falschen Versprechens aus Vorteil. Lege die Maxime auf, gewichte Denkbarkeit und Wollbarkeit der Verallgemeinerung und begruende Verbot oder Erlaubnis.
+AUFGABE Waage-Raetsel (AFB II): Pruefe auf [Werkzeug: balance-board] die Maxime des Schummelns aus Freundschaft im Spickzettel-Kartell. Lege die Maxime auf, gewichte Denkbarkeit und Wollbarkeit der Verallgemeinerung und begruende Verbot oder Erlaubnis. Target: Denkbarkeit und Wollbarkeit je 1 bis 5 wichten, Denkwiderspruch nachweisen und Klausur-Satz formulieren.
 
 HILFE:
 1. Schritt 1: Formuliere die Maxime aus Lage, Handlung und Zweck. 2. Schritt 2: Denke die Maxime als Gesetz fuer alle und pruefe Denkbarkeit und Wollbarkeit. 3. Schritt 3: Ordne Denkwiderspruch oder Wollenswiderspruch zu, deute an Widerspruchsfreiheit und formuliere den Klausur-Satz.
 
-MUSTERLOESUNG: Verallgemeinert zerstoert die Maxime ihre eigene Voraussetzung: Wo jeder falsch verspricht, kann niemand mehr Vertrauen schenken, und Versprechen wird undenkbar — ein Denkwiderspruch. Daher gilt die vollkommene Pflicht, nicht zu luegen, bestaetigt durch die Selbstzweckformel, weil der Getaueschte zum blossen Mittel herabgewuerdigt wuerde.
+MUSTERLOESUNG: Verallgemeinert zerstoert die Maxime ihre eigene Voraussetzung: Wo jeder schummelt, kann keine Pruefung mehr Vertrauen schenken, und Leistung wird undenkbar — ein Denkwiderspruch. Daher gilt die vollkommene Pflicht, nicht zu taeuschen, bestaetigt durch die Selbstzweckformel, weil Mitschueler und Lehrkraft zu blossen Mitteln herabgewuerdigt wuerden.
 
 Klausur-Satz: `Die Maxime des gebrochenen Versprechens zerstoert verallgemeinert den Begriff des Versprechens selbst und verstoesst damit gegen eine vollkommene Pflicht.`
 
-## Schritt 5 — ausprobieren: Wegvergleich Klugheit gegen Moral
+## Schritt 5 — ausprobieren: Duell im Gerichtssaal: Klugheitsregel gegen Moralgebot
 
 VERGLEICH (Wahl des Weges, A gegen B):
 
@@ -110,7 +110,7 @@ Weg A (Hypothetischer Imperativ, konditionale Klugheitsregel): Der Mechanismus l
 Weg B (Kategorischer Imperativ, unbedingte Universalisierung): Der Mechanismus lautet Maxime, Probe und Pflicht. Die Maxime wird als allgemeines Gesetz gedacht und auf Denk- und Wollenswiderspruch geprueft, die Selbstzweckformel schuetzt jede Person vor blosser Benutzung. Die Staerke dieses Weges liegt in seiner Unbedingtheit: Wuerde kennt keine Ausnahme und laesst sich nicht gegen Nutzen aufwiegen. Seine Grenze liegt in seiner Strenge: Die reine Pflichtprobe wirkt weltfremd, wo Notlagen nach Abwaegung und Barmherzigkeit rufen.
 
 AUFGABE A: Eine Schuelerin lernt Vokabeln nach einem strikten Plan, weil sie eine gute Note will. Pruefe mit Weg A, welche Regel hier gilt und warum sie nur bedingt bindet.
-AUFGABE B: Dieselbe Schuelerin fragt, ob Schummeln erlaubt waere, wenn alle in der Klasse schummelten. Pruefe mit Weg B per Universalisierung und Selbstzweckformel und formuliere ein Urteil zu Pflicht und Verbot.
+AUFGABE B: Dieselbe Schuelerin fragt, ob Schummeln im Kartell erlaubt waere, wenn alle in der Klasse schummelten. Pruefe mit Weg B per Universalisierung und Selbstzweckformel und formuliere ein Urteil zu Pflicht und Verbot.
 
 HILFE: Aufgabe A fragt nach Mittelwahl zu einem gewollten Ziel, daher traegt Weg A mit Ziel und Mittel. Aufgabe B fragt nach Erlaubnis fuer alle, daher traegt Weg B mit Probe und Pflicht. Ordne zuerst die Leitfrage zu, stelle dann den passenden Denkweg dar und schliesse mit dem Klausur-Satz.
 
@@ -138,14 +138,14 @@ Klausur-Satz: `Kant prueft die Maxime auf Denk- und Wollenswiderspruch und schue
 2. Fehlkonzept: Die Selbstzweckformel verbiete jeden Gebrauch anderer Menschen, also auch ehrliche Zusammenarbeit und Arbeitsteilung.
    Korrektur-Satz: `Verboten ist nur, Menschen bloss als Mittel zu gebrauchen; sie zugleich als Zweck zu achten, bleibt in jeder Zusammenarbeit Pflicht.`
 
-## Schritt 7 — szenario: Ethikrat-Debatte um Ehrlichkeit im Schulalltag
+## Schritt 7 — szenario: Klausurtransfer: Ethikrat-Debatte um Ehrlichkeit im Schulalltag
 
-ROLLE: Du bist Mitglied im Ethikrat deiner Schule und sollst in einer Sitzung zum Thema Ehrlichkeit im Schulalltag Stellung nehmen.
+ROLLE: Du bist Verteidiger im Spickzettel-Kartell und Mitglied im Ethikrat deiner Schule und sollst in einer Sitzung zum Thema Ehrlichkeit im Schulalltag Stellung nehmen.
 SITUATION: Ein Mitschueller schlaegt vor, bei einer anstehenden Klausur zu schummeln, weil der Druck sonst zu gross sei und allen damit geholfen waere. Beurteile diesen Vorschlag in einer zusammenhaengenden Stellungnahme von etwa 150 Woertern, indem du die Maxime des Schummelns sorgfaeltig pruefst und mit der Selbstzweckformel abschliessend urteilst.
 AUFGABE (AFB III): Verfasse eine zusammenhaengende Darstellung von etwa 150 Woertern mit Kriterium, Anwendung und Urteil.
 RUBRIC (30 XP): Formulierung der Maxime des Schummelns (5 XP) | Durchfuehrung der Universalisierung mit Denkwiderspruch (10 XP) | Anwendung der Selbstzweckformel auf Mitschueller und Lehrkraft (10 XP) | Kriteriengeleitetes Urteil mit Begruendung (5 XP).
 
-## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
+## Schritt 8 — reflexion: Freispruch der Wuerde: Klugheit raet Moral gebietet
 
 TAKEAWAY (Kernbotschaft in einem Kasten):
 
