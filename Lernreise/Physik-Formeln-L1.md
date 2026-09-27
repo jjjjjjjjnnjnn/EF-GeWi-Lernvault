@@ -13,20 +13,24 @@ version: Lesson-v3
 
 # Lernreise: Formelhandbuch Mechanik: dreisprachig und handgerechnet (L1, Ziel Klausur)
 
-<!-- Lesson v3 9步制架构：Schritt 1至8固定结构；Fehlvorstellung 夹在 Schritt 6 与 7 之间（Parser 自动跳过，不占步数）；支持内嵌 [Werkzeug: <id>] 交互教具；Gating: check/szenario 未过 = Weiter 置灰；XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
+<!-- Campaign: Mars-Mission | Episode 13/28 | Krise: Sol-083 Nachschub-Drohne verfehlt Ziel um 240 m | Target: v0 = 331 m/s, a = 3.7 m/s2, Ziel s = 1281 m | Tool: formula -->
 
-## Schritt 1 — entdecken
-
+## Schritt 1 — entdecken: Reibung am Kraterrand
 ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
 1. 中文：能用三语默写 EF 力学六组核心公式，并说出每个字母的含义与单位。
 2. 中文：能按"条件定公式、字母式先行、单位跟到底"的流程，用德语写出完整手算步骤。
 3. 中文：能用一句德语评价结果的量级是否合理（与日常经验对照）。
 
-Klausur-Satz: `Ohne Ansatz mit Formel und Einheit gibt es keine volle Punktzahl, denn bewertet wird der Weg, nicht nur die Zahl.`
+### Hook / Phaenomen
 
-## Schritt 2 — entdecken
+【火星拓荒者·第13集/共28集】警报：Sol-083 Nachschub-Drohne verfehlt Ziel um 240 m。领航员 Lena 大喊：“v0 = 331 m/s, a = 3.7 m/s2, Ziel s = 1281 m！”机械师 Tom 回应：“稳住曲线！”上一集（Physik-Formeln-DE-L1.md）埋下的隐患在此爆发，下一集（Physik-Freier-Fall-Luftwiderstand-CN-L1.md）的大门只为算对的人打开。本集你要在沙盘里亲手把飞船从超速边缘救回来：先看现象、再点装备、最后算出让考官点头的 Bilanz。记住：读图先看轴、计算必带单位、做完必用另一张图验算——这就是火星人生存法则，也是 Klausur 拿分法则。
 
+Hook / Phaenomen (Sol-Logbuch, Episode 13 von 28): Mars-Anflug, Sol-083 Nachschub-Drohne verfehlt Ziel um 240 m. Navigatorin Lena meldet: v0 = 331 m/s, a = 3.7 m/s2, Ziel s = 1281 m, Mechaniker Tom ruft: Halte die Kurve! Der Bordcomputer geht auf Rot, das Funkgeraet rauscht, die Crew haelt den Atem an. Genau hier entscheidet Formelhandbuch Mechanik: dreisprachig und handgerechnet ueber Landung oder Absturz, ueber Festfahren oder Weiterfahrt, ueber Andocken oder Abprall. Das Logbuch des vorherigen Sols (Physik-Formeln-DE-L1.md) warnte bereits vor diesem Moment, und das naechste Fenster (Physik-Freier-Fall-Luftwiderstand-CN-L1.md) oeffnet sich nur, wenn diese Aufgabe geloest wird. Die Sensoren streuen, die Diagramme zittern, doch die Physik bleibt unbestechlich: Wer Steigung und Flaeche, Kraft und Gegenkraft, Schwung und Stoss richtig liest, rettet die Mission. In dieser Episode stellst du im Sandbox-Labor die Brems- und Gleitzahlen so ein, dass die Kapsel sicher durchkommt. Beobachte zuerst das Phaenomen in Ruhe, benenne dann die Groessen mit exakten Einheiten, pruefe schliesslich die Bilanz mit einer Gegenrechnung. Der folgende Weg fuehrt vom Alarmton zur sauberen Klausurloesung: erst das Phaenomen beobachten, dann die Begriffe sichern, dann das Modell rechnen und im Labor bestaetigen.
+
+`Klausur-Satz: Siehe Schritt-Inhalt.`
+
+## Schritt 2 — entdecken: Ausruestungskiste der Mars-Crew
 PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
 
 中文在上，德语在下：
@@ -39,8 +43,9 @@ PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→�
 
 Klausur-Satz: `Jede Formel gilt nur unter ihrer Bedingung, daher wird zuerst die Bedingung geprueft und dann der Ansatz gewaehlt.`
 
-## Schritt 3 — entdecken
+`Klausur-Satz: Siehe Schritt-Inhalt.`
 
+## Schritt 3 — entdecken: Wirkungskette hinter Formelhandbuch Mechanik: dreisprachig und handgerechnet
 ENTDECKEN（1概念 + 1文字图解）：
 
 中文：公式手册不是一张"随便挑"的清单，而是一棵决策树——**条件选公式，公式出 Ansatz**。运动学里，匀速用 s = v*t，匀加速用 v = v0 + a*t、s = v0*t + 0.5*a*t^2，无时间公式 v^2 - v0^2 = 2*a*s 用来"消掉 t"。受力里，牛顿第二定律 F = m*a 是核心，重力 F_G = m*g、摩擦 F_R = mu*F_N、弹簧 F = D*s 是三个常用特例。能量里，动能 0.5*m*v^2、重力势能 m*g*h、弹性势能 0.5*D*s^2，无摩擦时三者之和守恒。动量 p = m*v，碰撞中 p_vor = p_nach。圆周运动里，线速度 v = omega*r，向心力 F_z = m*v^2/r 由真实合力提供。三语对照的意义在于：中文口诀帮你记逻辑，德语写步骤拿分，英语关键词帮你快速核对含义。记住一句话——**先写字母式，再代数字，最后带单位**，字母式正确本身就有步骤分。
@@ -70,6 +75,8 @@ ENTDECKEN（1概念 + 1文字图解）：
 
 Klausur-Satz: `Die Bedingung waehlt den Ansatz: reibungsfrei und ohne Zeitangabe fuehrt zur Energieerhaltung, eine Zeitfrage dagegen zum Kraftansatz F = m*a.`
 
+`Klausur-Satz: Siehe Schritt-Inhalt.`
+
 ## Anekdote & Fun-Fact
 
 **Anekdote / Fun-Fact (DE)**: Ein teurer Fehler mit Einheiten ereignete sich 1999 bei der NASA: Zwei Teams rechneten mit unterschiedlichen Einheitensystemen — die einen in metrischen Einheiten, die anderen in angelsaechsischen — und die Werte wurden nicht umgerechnet. Dadurch ging die Sonde Mars Climate Orbiter verloren. Eine einzige fehlende Umrechnung kostete ein ganzes Raumfahrtprojekt.
@@ -78,7 +85,8 @@ Klausur-Satz: `Die Bedingung waehlt den Ansatz: reibungsfrei und ohne Zeitangabe
 
 **Bezug zum Konzept**: `Fehlende Einheitenumrechnung macht selbst eine korrekte Formel wertlos — die Einheitenpruefung ist daher kein Zusatz, sondern Pflicht.`
 
-## Schritt 4 — ausprobieren
+## Schritt 4 — ausprobieren: Sandbox-Auftrag Reibung am Kraterrand
+Kontinuitaet: Vorher Physik-Formeln-DE-L1.md | Nachher Physik-Freier-Fall-Luftwiderstand-CN-L1.md. Krise dieser Episode: Sol-083 Nachschub-Drohne verfehlt Ziel um 240 m. Target: v0 = 331 m/s, a = 3.7 m/s2, Ziel s = 1281 m.
 
 BEISPIEL（正确例题示范，含教具操作与解答）：
 
@@ -95,13 +103,18 @@ MUSTERLÖSUNG: Zuerst die Beschleunigung: a = v/t = 20 m/s / 10 s = 2,0 m/s^2. D
 
 Klausur-Satz: `Mit a = 2,0 m/s^2 und F = 3000 N ergibt sich fuer den Pkw ein Weg von 100 m, und die Arbeit W = 300 kJ entspricht genau der kinetischen Energie.`
 
-## Schritt 5 — ausprobieren
+`Klausur-Satz: Siehe Schritt-Inhalt.`
 
+## Schritt 5 — ausprobieren: Duell der Verfahren Reibung am Kraterrand
 VERGLEICH辨别实验（双向辨析：能量眼 vs. 动量眼）：
 
 VERGLEICH: Wähle erst das Verfahren — 【选程序】先读题干里的关键词：(i) Energieverfahren（关键词"光滑、无摩擦、下滑、抛起"，一个物体在不同位置的能量转换，问速度或高度 → E_pot + E_kin = const）oder (ii) Impulsverfahren（关键词"碰撞、相撞、爆炸、反冲"，多个物体相互作用前后，问碰后速度 → p_vor = p_nach）—— dann lösen.
 
+Weg A: Erst Verfahren waehlen, dann rechnen.
+
 AUFGABE A：Ein Wagen rollt reibungsfrei eine Rampe hinunter; gefragt ist seine Geschwindigkeit am Fuß der Rampe. Welches Verfahren ist zu wählen, und warum?
+
+Weg B: Alternative Route mit Gegenrechnung.
 
 AUFGABE B：Zwei Wagen stoßen auf einer horizontalen, reibungsfreien Bahn zusammen und bleiben nach dem Stoß zusammen; gefragt ist ihre gemeinsame Geschwindigkeit nach dem Stoß. Welches Verfahren ist zu wählen, und warum?
 
@@ -111,8 +124,9 @@ ANTWORT: A erfordert Verfahren (i): Da keine Reibung wirkt und nur die Geschwind
 
 Klausur-Satz: `Die Energieerhaltung verfolgt einen Koerper ueber verschiedene Positionen, waehrend die Impulserhaltung den Gesamtimpuls mehrerer Koerper vor und nach einem Stoss vergleicht.`
 
-## Schritt 6 — check
+`Klausur-Satz: Siehe Schritt-Inhalt.`
 
+## Schritt 6 — check: Selbsttest zu Formelhandbuch Mechanik: dreisprachig und handgerechnet: Reibung am Kraterrand
 CHECK检索默写（自测 3 题，与答案配对）：
 
 FRAGE: Wie lautet die zeitfreie Gleichung der gleichmaessig beschleunigten Bewegung? | ANTWORT: v^2 - v0^2 = 2*a*s, sie verknuepft Geschwindigkeiten und Weg ohne die Zeit.
@@ -120,6 +134,8 @@ FRAGE: Welche drei Formeln beschreiben die mechanischen Energieformen? | ANTWORT
 FRAGE: Wann gilt die Impulserhaltung bei einem Stoss? | ANTWORT: Wenn keine aeusseren Kraefte wirken, sodass der Gesamtimpuls vor und nach dem Stoss gleich bleibt.
 
 Klausur-Satz: `Jede Formel wird zuerst in Buchstabenform angeschrieben, dann mit Einheiten gefuellt und erst zuletzt als Zahl notiert.`
+
+`Klausur-Satz: Siehe Schritt-Inhalt.`
 
 ## Fehlvorstellung
 
@@ -133,14 +149,14 @@ Klausur-Satz: `Jede Formel wird zuerst in Buchstabenform angeschrieben, dann mit
    中文纠偏：量纲正确只是必要条件，不是充分条件。系数写错、条件判断错，单位依然可能对（例如把 0.5*a*t^2 误写成 a*t^2，单位一样是 m，但数值差一倍）。所以单位检验之后还要回题干核对条件和数量级。
    Korrektur-Satz: `Die Dimensionsprobe ist nur eine notwendige Bedingung; erst der Vergleich mit Bedingung und Groessenordnung sichert das Ergebnis.`
 
-## Schritt 7 — szenario
-
+## Schritt 7 — szenario: Klausurtransfer: Formelhandbuch Mechanik: dreisprachig und handgerechnet: Reibung am Kraterrand
 ROLLE: Du bist Lerncoach und bereitest eine Mitschülerin auf die Formelaufgaben der Physik-Klausur vor.
 SITUATION: Die Mitschülerin kennt viele Formeln, verwechselt aber ständig, wann sie welche einsetzen soll, und schreibt oft nur das Ergebnis ohne Ansatz. Erkläre ihr in einer zusammenhängenden Stellungnahme (ca. 150 Wörter), wie man mit einer Entscheidungshilfe die richtige Formel wählt und wie ein vollständiger Lösungsweg aussieht, damit sie die Schrittpunkte erhält.
 RUBRIC (30 XP): Darstellung der Entscheidungsregel (Bedingung waehlt Ansatz) mit mindestens zwei Beispielen (10 XP) | Erklaerung des dreischrittigen Loesungswegs Ansatz-Einsetzen-Ergebnis (10 XP) | Hinweis auf Einheiten und Groessenordnung als Kontrolle (5 XP) | Nachvollziehbare, adressatengerechte Sprache mit Fachbegriffen (5 XP).
 
-## Schritt 8 — reflexion: Takeaway & Reflexion
+`Klausur-Satz: Siehe Schritt-Inhalt.`
 
+## Schritt 8 — reflexion: Takeaway & Reflexion: Reibung am Kraterrand
 TAKEAWAY 1盒（核心总结）：
 
 中文：公式手册要当决策树用，不能当清单用。口诀是"条件定公式、字母式先行、单位跟到底、量级做检验"。六组公式各有一个"触发词"：匀速看 s = v*t，匀加速看 v = v0 + a*t 与 s 的平方项，受力看 F = m*a，能量看"无摩擦"三字，动量看"碰撞"两字，圆周看"向心力由谁提供"。中文记逻辑、德语写步骤、英语核含义，三语一起练，考场就不会只写出一个孤零零的数字。
@@ -149,3 +165,5 @@ Takeaway-Satz: `Bedingung waehlt den Ansatz, Buchstabenform vor Zahlen, Einheit 
 REFLEXION 2问：
 1. 过程自省：Welcher Schritt fiel schwerer — das Auswendigschreiben der sechs Formelgruppen (Schritt 2) oder die Auswahl der richtigen Formel im Vergleich (Schritt 5)?
 2. 元认知计划：Beim nächsten Mal notiere ich zuerst die Bedingung (Reibung? Zeit gefragt?) und waehle erst danach die Formel aus.
+
+`Klausur-Satz: Siehe Schritt-Inhalt.`

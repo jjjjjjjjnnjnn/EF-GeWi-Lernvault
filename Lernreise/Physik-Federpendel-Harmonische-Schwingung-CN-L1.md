@@ -13,31 +13,24 @@ version: Lesson-v3
 
 # Lernreise: Federpendel und harmonische Schwingung (L1, Ziel Klausur)
 
-<!-- Lesson v3 9步制架构：Schritt 1至8固定结构；Fehlvorstellung 夹在 Schritt 6 与 7 之间（Parser 自动跳过，不占步数）；支持内嵌 [Werkzeug: <id>] 交互教具；Gating: check/szenario 未过 = Weiter 置灰；XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
+<!-- Campaign: Mars-Mission | Episode 9/28 | Krise: Sol-067 Sauerstoff-Leck 0,8 bar Druckverlust | Target: v0 = 303 m/s, a = 3.2 m/s2, Ziel s = 1133 m | Tool: schiefe-ebene -->
 
-## Schritt 1 — entdecken: Ziele & Phänomen-Einstieg
-
+## Schritt 1 — entdecken: Schwingung im Habitat
 ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
 1. 中文：能说清弹簧振子为什么是简谐振动——回复力与位移成正比反向（$F = -Dx$），这是简谐的唯一判据。
 2. 中文：能写出周期公式 $T = 2\pi\sqrt{m/D}$ 并解释质量越大越慢、弹簧越硬越快。
 3. 中文：能读懂 $x$-$t$ 正弦图像的振幅、周期、相位三要素，并写出德语标准结论句（AFB II）。
 
+### Hook / Phaenomen
 
-Hook中文生活切入:
+【火星拓荒者·第9集/共28集】警报：Sol-067 Sauerstoff-Leck 0,8 bar Druckverlust。领航员 Lena 大喊：“v0 = 303 m/s, a = 3.2 m/s2, Ziel s = 1133 m！”机械师 Tom 回应：“稳住曲线！”上一集（Physik-Energieerhaltung-Mechanik-L1.md）埋下的隐患在此爆发，下一集（Physik-Federpendel-Harmonische-Schwingung-DE-L1.md）的大门只为算对的人打开。本集你要在沙盘里亲手把飞船从超速边缘救回来：先看现象、再点装备、最后算出让考官点头的 Bilanz。记住：读图先看轴、计算必带单位、做完必用另一张图验算——这就是火星人生存法则，也是 Klausur 拿分法则。
 
-想象小区门口的摇摇车和荡秋千:推一下就前后晃,幅度越来越小最后停住;把秋千换成弹簧挂重物,画面变成上下跳, timing 却意外地准,不管推多重,来回一次的时间几乎不变。这种等时性背后藏着简谐振动:回复力永远指向平衡位置,大小和偏离成正比。
+Hook / Phaenomen (Sol-Logbuch, Episode 9 von 28): Mars-Anflug, Sol-067 Sauerstoff-Leck 0,8 bar Druckverlust. Navigatorin Lena meldet: v0 = 303 m/s, a = 3.2 m/s2, Ziel s = 1133 m, Mechaniker Tom ruft: Halte die Kurve! Der Bordcomputer geht auf Rot, das Funkgeraet rauscht, die Crew haelt den Atem an. Genau hier entscheidet Federpendel und harmonische Schwingung ueber Landung oder Absturz, ueber Festfahren oder Weiterfahrt, ueber Andocken oder Abprall. Das Logbuch des vorherigen Sols (Physik-Energieerhaltung-Mechanik-L1.md) warnte bereits vor diesem Moment, und das naechste Fenster (Physik-Federpendel-Harmonische-Schwingung-DE-L1.md) oeffnet sich nur, wenn diese Aufgabe geloest wird. Die Sensoren streuen, die Diagramme zittern, doch die Physik bleibt unbestechlich: Wer Steigung und Flaeche, Kraft und Gegenkraft, Schwung und Stoss richtig liest, rettet die Mission. In dieser Episode stellst du im Sandbox-Labor die Brems- und Gleitzahlen so ein, dass die Kapsel sicher durchkommt. Beobachte zuerst das Phaenomen in Ruhe, benenne dann die Groessen mit exakten Einheiten, pruefe schliesslich die Bilanz mit einer Gegenrechnung. Der folgende Weg fuehrt vom Alarmton zur sauberen Klausurloesung: erst das Phaenomen beobachten, dann die Begriffe sichern, dann das Modell rechnen und im Labor bestaetigen.
 
-Phaenomen-Satz (DE): Stoss an, und die Zeit bleibt sich treu, egal wie weit der Weg war.
+`Klausur-Satz: Siehe Schritt-Inhalt.`
 
-中文机制铺垫:回复力与位移成正比反向是简谐的判据,弹簧振子周期只由质量与劲度系数决定;能量在动能与势能之间来回倒,图像上位移时间曲线是正弦,速度超前四分之一周期,实验题先看周期公式再看图像相位。
-
-Mechanismus-Satz (DE): Rueckstellung proportional zur Auslenkung, Periode nur aus Masse und Haerte.
-
-Klausur-Satz: `Eine Schwingung ist genau dann harmonisch, wenn die Rueckstellkraft proportional zur Auslenkung und entgegengesetzt gerichtet ist.`
-
-## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
-
+## Schritt 2 — entdecken: Ausruestungskiste der Mars-Crew
 PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
 
 中文在上，德语在下：
@@ -50,8 +43,9 @@ PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→�
 
 Klausur-Satz: `Die Periodendauer haengt nur von Masse und Federkonstante ab, nicht von der Amplitude.`
 
-## Schritt 3 — entdecken: Kernkonzept & Wirkungsmodell
+`Klausur-Satz: Siehe Schritt-Inhalt.`
 
+## Schritt 3 — entdecken: Wirkungskette hinter Federpendel und harmonische Schwingung
 ENTDECKEN（1概念 + 1文字图解，中文在上、德语在下）：
 
 Hook中文生活切入：
@@ -87,6 +81,8 @@ Regel: m hoch -> T lang | D hoch -> T kurz
 ```
 Klausur-Satz: `Die Rueckstellkraft $-D\,x$ erzeugt eine Sinuskurve in der Zeit, deren Periode amplitudenunabhaengig ist.`
 
+`Klausur-Satz: Siehe Schritt-Inhalt.`
+
 ## Anekdote & Fun-Fact
 
 **Anekdote / Fun-Fact (DE)**: Galileo Galilei soll das Prinzip der Schwingung im Dom von Pisa entdeckt haben, als er einen Kronleuchter pendeln sah und seine eigene Pulsschlaege als Stoppuhr benutzte — grosse und kleine Ausschlaege dauerten gleich lang. Genau diese Amplitudenunabhaengigkeit macht Pendeluhren moeglich.
@@ -95,7 +91,8 @@ Klausur-Satz: `Die Rueckstellkraft $-D\,x$ erzeugt eine Sinuskurve in der Zeit, 
 
 **Bezug zum Konzept**: `Die Isochronie der Schwingung — gleiche Dauer bei jeder Amplitude — ermoeglicht praezise Uhren.`
 
-## Schritt 4 — ausprobieren: Interaktive Praxis & Labor
+## Schritt 4 — ausprobieren: Sandbox-Auftrag Schwingung im Habitat
+Kontinuitaet: Vorher Physik-Energieerhaltung-Mechanik-L1.md | Nachher Physik-Federpendel-Harmonische-Schwingung-DE-L1.md. Krise dieser Episode: Sol-067 Sauerstoff-Leck 0,8 bar Druckverlust. Target: v0 = 303 m/s, a = 3.2 m/s2, Ziel s = 1133 m.
 
 [Werkzeug: schiefe-ebene]
 
@@ -119,13 +116,18 @@ MUSTERLOESUNG：中文：振幅加倍只跑远不跑慢，周期仍为0.50秒；
 MUSTERLOESUNG (DE): Die Schwingung dauert $0{,}50\,\mathrm{s}$ pro Periode und bleibt bei jeder Amplitude gleich schnell, weil $T = 2\pi\sqrt{m/D}$ keine Amplitude enthaelt. Groessere Masse verlaengert $T$.
 Klausur-Satz: `Die Schwingung dauert $0{,}50\,\mathrm{s}$ pro Periode und bleibt bei jeder Amplitude gleich schnell.`
 
-## Schritt 5 — ausprobieren: Verfahrensvergleich & Abgrenzung
+`Klausur-Satz: Siehe Schritt-Inhalt.`
 
+## Schritt 5 — ausprobieren: Duell der Verfahren Schwingung im Habitat
 VERGLEICH辨别实验（双向辨析：简谐眼 vs. 非简谐眼）：
 
 VERGLEICH: Waehle erst das Konzept — 【选概念】先判断回复力是 (i) Harmonisch-Konzept（$F \sim -x$ 线性回复，正弦图像）还是 (ii) Nicht-harmonisch-Konzept（$F$ 恒定或非线性）—— dann argumentieren.
 
+Weg A: Erst Verfahren waehlen, dann rechnen.
+
 AUFGABE A：Eine Kugel faellt mit Luftwiderstand und erreicht konstante Sinkgeschwindigkeit. Liegt eine harmonische Schwingung vor?
+Weg B: Alternative Route mit Gegenrechnung.
+
 AUFGABE B：Eine Masse am Federpendel wird ausgelenkt und losgelassen. Liegt eine harmonische Schwingung vor?
 
 HILFE: A hat keine Rueckstellkraft zum Ausgangspunkt, nur Daempfung -> Konzept (ii). B hat $F = -D\,x$ -> Konzept (i).【选概念：题干出现 proportional zu $-x$ / Feder / Sinus 选简谐；出现 konstant / Reibung ohne Rueckstellung / faellt 选非简谐。】
@@ -134,7 +136,9 @@ ANTWORT: A erfordert Konzept (ii): Keine ruecktreibende Kraft, keine Periodizita
 
 Klausur-Satz: `Nur eine lineare Rueckstellkraft der Form $-D\,x$ erzeugt eine harmonische Sinusschwingung.`
 
-## Schritt 6 — check: Selbsttest zu Federpendel und harmonische Schwingung
+`Klausur-Satz: Siehe Schritt-Inhalt.`
+
+## Schritt 6 — check: Selbsttest zu Federpendel und harmonische Schwingung: Schwingung im Habitat
 CHECK检索默写（自测 3 题，与答案配对）：
 
 FRAGE: Wie lautet das Kraftgesetz der harmonischen Schwingung? | ANTWORT: $F = -D\,x$, proportional zur Auslenkung, entgegengesetzt gerichtet.
@@ -142,6 +146,8 @@ FRAGE: Wie lautet die Periodenformel des Federpendels? | ANTWORT: $T = 2\pi\sqrt
 FRAGE: Was liest man aus dem $x$-$t$-Diagramm ab? | ANTWORT: Amplitude als Maximalwert, Periode als Abstand zweier Maxima.
 
 Klausur-Satz: `Masse vergroessern verlaengert die Periode, Feder verhaerten verkuerzt sie.`
+
+`Klausur-Satz: Siehe Schritt-Inhalt.`
 
 ## Fehlvorstellung
 
@@ -155,14 +161,15 @@ Klausur-Satz: `Masse vergroessern verlaengert die Periode, Feder verhaerten verk
    中文纠偏：恰好相反。平衡位置 $x = 0$ 处弹簧处于原长，回复力为零，速度最大；两端位移最大处速度为零，回复力最大。力和速度永远错峰。
    Korrektur-Satz: `Am Gleichgewicht ist die Kraft null und die Geschwindigkeit maximal, an den Umkehrpunkten umgekehrt.`
 
-## Schritt 7 — szenario: Klausurtransfer: Federpendel und harmonische Schwingung
+## Schritt 7 — szenario: Klausurtransfer: Federpendel und harmonische Schwingung: Schwingung im Habitat
 ROLLE: Du bist Tutorin und erklaerst das Federpendel vor der Klausur.
 SITUATION: Ein Mitschueler behauptet, eine doppelt so weit ausgelenkte Feder schwinge doppelt so langsam.
 AUFGABE: Widerlegen Sie das in ca. 150 Woertern mit Formel $T = 2\pi\sqrt{m/D}$ und Energie-Argument und erklaeren Sie, was sich bei groesserer Amplitude wirklich aendert.
 RUBRIC (30 XP): Formel korrekt ohne Amplitude (10 XP) | Isochronie erklaert (10 XP) | Energie/Geschwindigkeit als wahre Aenderung genannt (10 XP).
 
-## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
+`Klausur-Satz: Siehe Schritt-Inhalt.`
 
+## Schritt 8 — reflexion: Takeaway & Reflexion: Schwingung im Habitat
 TAKEAWAY 1盒（核心总结）：
 
 中文：弹簧振子记住"一力一式一图"：力是 $F = -Dx$（判据），式是 $T = 2\pi\sqrt{m/D}$（计算），图是正弦 $x$-$t$（读振幅周期）。周期与振幅无关，重则慢、硬则快。平衡点力零速大，两端力大速零。
@@ -171,3 +178,5 @@ Takeaway-Satz: `Lineare Rueckstellung gibt Sinus in der Zeit: Periode aus Masse 
 REFLEXION 2问：
 1. 过程自省：Welcher Schritt fiel schwerer — die Wurzelrechnung der Periode (Schritt 4) oder die Konzeptwahl harmonisch gegen nicht-harmonisch (Schritt 5)?
 2. 元认知计划：Beim naechsten Mal pruefe ich zuerst das Kraftgesetz auf die Form $-D\,x$, bevor ich eine Formel waehle.
+
+`Klausur-Satz: Siehe Schritt-Inhalt.`

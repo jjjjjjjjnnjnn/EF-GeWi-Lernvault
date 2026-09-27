@@ -13,30 +13,24 @@ version: Lesson-v3
 
 # Lernreise: Gravitation und Satellitenbahnen (L1, Ziel Klausur)
 
-<!-- Lesson v3 9-Schritt-Architektur: Schritt 1 bis 8 feste Struktur; Fehlvorstellung zwischen Schritt 6 und 7 (Parser ueberspringt, zaehlt nicht); interaktive [Werkzeug: <id>]; Gating: check/szenario nicht bestanden = Weiter deaktiviert; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
+<!-- Campaign: Mars-Mission | Episode 20/28 | Krise: Sol-109 Orbit-Trümmerfeld Dichte 12 Objekte pro km3 | Target: v0 = 380 m/s, a = 4.6 m/s2, Ziel s = 1540 m | Tool: formula -->
 
-## Schritt 1 — entdecken: Ziele & Phänomen-Einstieg
+## Schritt 1 — entdecken: Stoss im Dock
 ZIELE (drei messbare Ziele dieser Lektion):
 
 1. $F = G m M/r^2$ mit $G = 6{,}67 \cdot 10^{-11}$ und $r$ ab Erdmittelpunkt nennen.
 2. $v = \sqrt{G M/r}$ per $m v^2/r = G m M/r^2$ herleiten und GEO gegen LEO abgrenzen.
 3. $T^2 = 4\pi^2 r^3/(G M)$ deuten und $r \approx 42164\,\mathrm{km}$ zu $T = 24\,\mathrm{h}$ zuordnen.
 
+###
+
 ### Hook / Phaenomen
 
-Die Internationale Raumstation rast mit 28000 Kilometern pro Stunde um die Erde und faellt doch nicht herunter, obwohl die Schwerkraft dort oben noch fast so stark zieht wie am Boden. Jeder geworfene Stein landet nach Metern, die Station nach Jahren noch nicht. Nimm das Kraeftegleichgewicht zwischen Gravitation und Kreisbedarf und entdecke, wie ewiges Fallen um die Erde herum eine stabile Bahn erzeugt. Wer Schwerelosigkeit mit Schwerekraftlosigkeit verwechselt, versteht weder Orbit noch Mond. Wer $GMm/r^2=mv^2/r$ aufstellt, Bahngeschwindigkeit und Kepler-Gesetz herleitet und Hoehe gegen Tempo abgrenzt, berechnet jeden Satelliten und deutet jede Umlaufzeit. Der folgende Weg fuehrt vom alltaeglichen Staunen zum physikalischen Gesetz: erst das Phaenomen beobachten, dann die Kraefte und Groessen benennen, schliesslich die Bilanz pruefen und im Sandbox-Labor selbst entdecken, warum die Natur genau dieser Regel folgt und keiner anderen.
+Hook / Phaenomen (Sol-Logbuch, Episode 20 von 28): Mars-Anflug, Sol-109 Orbit-Trümmerfeld Dichte 12 Objekte pro km3. Navigatorin Lena meldet: v0 = 380 m/s, a = 4.6 m/s2, Ziel s = 1540 m, Mechaniker Tom ruft: Halte die Kurve! Der Bordcomputer geht auf Rot, das Funkgeraet rauscht, die Crew haelt den Atem an. Genau hier entscheidet Gravitation und Satellitenbahnen ueber Landung oder Absturz, ueber Festfahren oder Weiterfahrt, ueber Andocken oder Abprall. Das Logbuch des vorherigen Sols (Physik-Gravitation-Satellitenbahnen-CN-L1.md) warnte bereits vor diesem Moment, und das naechste Fenster (Physik-Gravitation-Satellitenbahnen-L1.md) oeffnet sich nur, wenn diese Aufgabe geloest wird. Die Sensoren streuen, die Diagramme zittern, doch die Physik bleibt unbestechlich: Wer Steigung und Flaeche, Kraft und Gegenkraft, Schwung und Stoss richtig liest, rettet die Mission. In dieser Episode stellst du im Sandbox-Labor die Brems- und Gleitzahlen so ein, dass die Kapsel sicher durchkommt. Beobachte zuerst das Phaenomen in Ruhe, benenne dann die Groessen mit exakten Einheiten, pruefe schliesslich die Bilanz mit einer Gegenrechnung. Der folgende Weg fuehrt vom Alarmton zur sauberen Klausurloesung: erst das Phaenomen beobachten, dann die Begriffe sichern, dann das Modell rechnen und im Labor bestaetigen.
 
-### Fachbegriff & Definition
+`Klausur-Satz: Siehe Schritt-Inhalt.`
 
-Nach dem NRW-Kernlehrplan gilt der untenstehende Klausur-Satz als verbindliche Definition dieser Lektion. Er fasst das Phaenomen in exakter Fachsprache und bildet die Grundlage fuer jede Deutung.
-
-### Wirkungsgefuege / Modell
-
-Der Mechanismus verbindet Alltag und Formel: Das Phaenomen liefert die Anschauung, die Definition liefert die Sprache und das Wirkungsmodell in Schritt 3 liefert die Kausalkette. Wer alle drei Ebenen verknuepft, beantwortet jede Klausurfrage vollständig.
-
-Klausur-Satz: `Die Gravitation liefert die Zentripetalkraft der Kreisbahn.`
-
-## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
+## Schritt 2 — entdecken: Ausruestungskiste der Mars-Crew
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
 ### Hook / Phaenomen
@@ -57,7 +51,9 @@ Die Kette verbindet alle fuenf Begriffe zu einem Verfahren: Erkennen, Einordnen,
 
 Klausur-Satz: `Groessere Bahnhoehe bedeutet kleinere Geschwindigkeit und groessere Umlaufzeit.`
 
-## Schritt 3 — entdecken: Kernkonzept & Wirkungsmodell
+`Klausur-Satz: Siehe Schritt-Inhalt.`
+
+## Schritt 3 — entdecken: Wirkungskette hinter Gravitation und Satellitenbahnen
 EXPERIMENTELLE ERKUNDUNG (Sandbox, erst spielen, dann deuten):
 
 ### Hook & Phaenomen
@@ -85,15 +81,19 @@ Formelkern: $F_G=GMm/r^2$
 
 Klausur-Satz: `Aus dem Kraeftegleichgewicht folgen Bahngeschwindigkeit und Kepler-Gesetz.`
 
+`Klausur-Satz: Siehe Schritt-Inhalt.`
+
 ## Anekdote & Fun-Fact
 **Anekdote / Fun-Fact (DE)**: Als Newton 1687 seine Principia veroeffentlichte, rechnete er die Mondbahn mit $F \sim \frac{1}{r^2}$ nach und traf die Umlaufzeit bis auf wenige Prozent. Sein Zeitgenosse Halley nutzte dieselbe Formel und sagte die Wiederkehr seines Kometen fuer 1758 voraus — ein Triumph der Himmelsmechanik. Im Jahr 1957 piepste Sputnik ueber den Nachthimmel als erstes Zeichen des staendigen Falls um die Erde.
 
 **Bezug zum Konzept**: `Newtons 1-durch-r-Quadrat erklaert Mond, Sputnik und TV-Satellit zugleich.`
 
-## Schritt 4 — ausprobieren: Interaktive Praxis & Orbit-Labor
+## Schritt 4 — ausprobieren: Sandbox-Auftrag Stoss im Dock
+Kontinuitaet: Vorher Physik-Gravitation-Satellitenbahnen-CN-L1.md | Nachher Physik-Gravitation-Satellitenbahnen-L1.md. Krise dieser Episode: Sol-109 Orbit-Trümmerfeld Dichte 12 Objekte pro km3. Target: v0 = 380 m/s, a = 4.6 m/s2, Ziel s = 1540 m.
+
 BEISPIEL (Sandbox Level mit Werkzeug):
 
-[Werkzeug: kinematik-lab]
+[Werkzeug: formula]
 
 AUFGABE (Levelziel, AFB II): Knacke das Orbit-Level: Ziehe im Sandbox-Labor den Bahnradius $r$ von erdnah bis GEO und beobachte, wie $v$ faellt und $T$ waechst und die Bahn bei jedem $r$ stabil bleibt. Miss $v$ und $T$ an zwei Radien, berechne dann exakt per Gleichgewicht und Kepler-Gesetz und vergleiche Labor mit Rechnung.
 
@@ -106,12 +106,18 @@ MUSTERLOESUNG: Labor zeigt kleineres $r$ mit groesserem $v$ und kleinerem $T$ be
 
 Klausur-Satz: `Kleineres r liefert groesseres v und kleineres T.`
 
-## Schritt 5 — ausprobieren: Verfahrensvergleich & Abgrenzung
+`Klausur-Satz: Siehe Schritt-Inhalt.`
+
+## Schritt 5 — ausprobieren: Duell der Verfahren Stoss im Dock
 VERGLEICH (zwei Verfahren unterscheiden):
 
 VERGLEICH: Waehle zuerst das Verfahren — (i) Bahnverfahren (mit $v = \sqrt{GM/r}$ und $T^2 \sim r^3$ argumentieren) oder (ii) Fallverfahren (mit $F = mg$ nahe der Erdoberflaeche argumentieren) — dann loesen.
 
+Weg A: Erst Verfahren waehlen, dann rechnen.
+
 AUFGABE A: Vergleichen Sie Umlaufzeiten auf $r_1 = 7000\,\mathrm{km}$ und $r_2 = 42000\,\mathrm{km}$.
+
+Weg B: Alternative Route mit Gegenrechnung.
 
 AUFGABE B: Schaetzen Sie die Gewichtskraft eines $80\,\mathrm{kg}$-Astronauten an der Erdoberflaeche.
 
@@ -121,7 +127,9 @@ ANTWORT: A erfordert Verfahren (i): Nach $T^2 \sim r^3$ gilt $\frac{T_2}{T_1} = 
 
 Klausur-Satz: `Bahnen vergleichen heisst Kepler, Oberflaeche schaetzen heisst mg.`
 
-## Schritt 6 — check: Selbsttest zu Gravitation und Satellitenbahnen
+`Klausur-Satz: Siehe Schritt-Inhalt.`
+
+## Schritt 6 — check: Selbsttest zu Gravitation und Satellitenbahnen: Stoss im Dock
 CHECK (Selbsttest, 3 Fragen mit Antworten):
 
 FRAGE: Wie lautet das Gravitationsgesetz? | ANTWORT: $F = G\frac{mM}{r^2}$ mit Abstand $r$ vom Massenzentrum.
@@ -129,6 +137,8 @@ FRAGE: Wie lautet die Kreisbahngeschwindigkeit? | ANTWORT: $v = \sqrt{\frac{GM}{
 FRAGE: Was kennzeichnet die geostationaere Bahn? | ANTWORT: $T = 24\,\mathrm{h}$, Aequatorebene, $r \approx 42164\,\mathrm{km}$, fest ueber dem Boden.
 
 Klausur-Satz: `Gleichgewicht der Kraefte erklaert jede Kreisbahn.`
+
+`Klausur-Satz: Siehe Schritt-Inhalt.`
 
 ## Fehlvorstellung
 (kein Schritt; wird vom Parser automatisch erkannt und nicht mitgezaehlt)
@@ -140,12 +150,14 @@ Klausur-Satz: `Gleichgewicht der Kraefte erklaert jede Kreisbahn.`
    Korrektur: Es gilt $v = \sqrt{GM/r}$; weiter aussen ist die Gravitation schwaecher und verlangt weniger Zentripetalkraft.
    Korrektur-Satz: `Die Bahngeschwindigkeit faellt mit wachsendem Radius wie 1 durch Wurzel r.`
 
-## Schritt 7 — szenario: Klausurtransfer: Gravitation und Satellitenbahnen
+## Schritt 7 — szenario: Klausurtransfer: Gravitation und Satellitenbahnen: Stoss im Dock
 ROLLE: Du bist Praktikant bei einer Raumfahrtagentur.
 SITUATION: Ein Kunde will einen TV-Satelliten, der stets ueber derselben Stadt steht, plant ihn aber in $h = 800\,\mathrm{km}$. Lege in zusammenhaengender Darstellung (ca. 150 Woerter) dar, warum der Plan scheitert, schaetze die Umlaufzeit ab und nenne die korrekte Hoehe mit Begruendung.
 RUBRIC (30 XP): Kraeftegleichgewicht genannt (10 XP) | $T$-Abschaetzung mit $T^2 \sim r^3$ (10 XP) | Geostationaere Bedingung $T = 24\,\mathrm{h}$ (5 XP) | Geschlossene Darstellung (5 XP).
 
-## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
+`Klausur-Satz: Siehe Schritt-Inhalt.`
+
+## Schritt 8 — reflexion: Takeaway & Reflexion: Stoss im Dock
 TAKEAWAY (Kernzusammenfassung):
 
 Merke die Kette Gleichgewicht, Kuerzen, Wurzel: $\frac{mv^2}{r} = G\frac{mM}{r^2}$ fuehrt zu $v = \sqrt{GM/r}$ und $T^2 = \frac{4\pi^2}{GM}r^3$. Niedrig heisst schnell, hoch heisst langsam.
@@ -155,3 +167,4 @@ REFLEXION (2 Fragen):
 1. Selbstbeobachtung: Welcher Schritt fiel schwerer — die Herleitung mit Kuerzen (Schritt 4) oder die Verfahrenswahl (Schritt 5)?
 2. Planung: Beim naechsten Mal schreibe ich zuerst beide Kraefte mit Richtungspfeil, dann erst die Gleichung.
 
+`Klausur-Satz: Siehe Schritt-Inhalt.`

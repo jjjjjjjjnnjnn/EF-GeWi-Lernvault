@@ -13,30 +13,24 @@ version: Lesson-v3
 
 # Lernreise: Mechanische Energieerhaltung (L1, Ziel Klausur)
 
-<!-- Lesson v3 9-Schritt-Architektur: Schritt 1 bis 8 feste Struktur; Fehlvorstellung zwischen Schritt 6 und 7 (Parser ueberspringt, zaehlt nicht); interaktive [Werkzeug: <id>]; Gating: check/szenario nicht bestanden = Weiter deaktiviert; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
+<!-- Campaign: Mars-Mission | Episode 7/28 | Krise: Sol-061 Batterie-Notstand: nur 17 Prozent Ladung | Target: v0 = 289 m/s, a = 2.9 m/s2, Ziel s = 1059 m | Tool: schiefe-ebene -->
 
-## Schritt 1 — entdecken: Ziele & Phänomen-Einstieg
+## Schritt 1 — entdecken: Energiebilanz des Abstiegs
 ZIELE (drei messbare Ziele dieser Lektion):
 
 1. $E_{kin} = 0{,}5 m v^2$, $E_{pot} = m g h$ und $E_{spann} = 0{,}5 D s^2$ je mit Einheit $\mathrm{J}$ nennen.
 2. Reibungsfrei per $E_{vor} = E_{nach}$ zu $v = \sqrt{2 g h}$ und $s = \sqrt{2 m g h/D}$ loesen.
 3. Dissipation per $E_{vor} = E_{nach}+W_R$ pruefen und ein bedingtes Urteil mit weil-Satz formulieren.
 
+###
+
 ### Hook / Phaenomen
 
-Eine Achterbahn erklimmt keuchend den ersten Huegel und rast danach ohne jeden Motor durch Loopings und Taeler. Niemand schiebt, kein Akku hilft und doch reicht die Hoehe des Starts fuer die ganze wilde Fahrt. Nimm die Energiebilanz und entdecke, wie Lageenergie $mgh$ lautlos in Tempo $\frac12mv^2$ und Federenergie $\frac12Ds^2$ umfliesst und die Summe ohne Reibung konstant bleibt. Wer nur mit Kraeften und Zeiten rechnet, versinkt in Winkeln und Integralen. Wer Anfang gegen Ende bilanziert und die Masse herauskuerzt, bestimmt Tempi und Hoehen in drei Zeilen und erkennt Reibung als fehlende Energie. Der folgende Weg fuehrt vom alltaeglichen Staunen zum physikalischen Gesetz: erst das Phaenomen beobachten, dann die Kraefte und Groessen benennen, schliesslich die Bilanz pruefen und im Sandbox-Labor selbst entdecken, warum die Natur genau dieser Regel folgt und keiner anderen.
+Hook / Phaenomen (Sol-Logbuch, Episode 7 von 28): Mars-Anflug, Sol-061 Batterie-Notstand: nur 17 Prozent Ladung. Navigatorin Lena meldet: v0 = 289 m/s, a = 2.9 m/s2, Ziel s = 1059 m, Mechaniker Tom ruft: Halte die Kurve! Der Bordcomputer geht auf Rot, das Funkgeraet rauscht, die Crew haelt den Atem an. Genau hier entscheidet Mechanische Energieerhaltung ueber Landung oder Absturz, ueber Festfahren oder Weiterfahrt, ueber Andocken oder Abprall. Das Logbuch des vorherigen Sols (Physik-Diagramme-L1.md) warnte bereits vor diesem Moment, und das naechste Fenster (Physik-Energieerhaltung-Mechanik-L1.md) oeffnet sich nur, wenn diese Aufgabe geloest wird. Die Sensoren streuen, die Diagramme zittern, doch die Physik bleibt unbestechlich: Wer Steigung und Flaeche, Kraft und Gegenkraft, Schwung und Stoss richtig liest, rettet die Mission. In dieser Episode stellst du im Sandbox-Labor die Brems- und Gleitzahlen so ein, dass die Kapsel sicher durchkommt. Beobachte zuerst das Phaenomen in Ruhe, benenne dann die Groessen mit exakten Einheiten, pruefe schliesslich die Bilanz mit einer Gegenrechnung. Der folgende Weg fuehrt vom Alarmton zur sauberen Klausurloesung: erst das Phaenomen beobachten, dann die Begriffe sichern, dann das Modell rechnen und im Labor bestaetigen.
 
-### Fachbegriff & Definition
+`Klausur-Satz: Siehe Schritt-Inhalt.`
 
-Nach dem NRW-Kernlehrplan gilt der untenstehende Klausur-Satz als verbindliche Definition dieser Lektion. Er fasst das Phaenomen in exakter Fachsprache und bildet die Grundlage fuer jede Deutung.
-
-### Wirkungsgefuege / Modell
-
-Der Mechanismus verbindet Alltag und Formel: Das Phaenomen liefert die Anschauung, die Definition liefert die Sprache und das Wirkungsmodell in Schritt 3 liefert die Kausalkette. Wer alle drei Ebenen verknuepft, beantwortet jede Klausurfrage vollständig.
-
-Klausur-Satz: `In einem reibungsfreien System, in dem nur konservative Kraefte wirken, bleibt die Summe aus kinetischer, potenzieller und Spannenergie zu jedem Zeitpunkt konstant.`
-
-## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
+## Schritt 2 — entdecken: Ausruestungskiste der Mars-Crew
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
 ### Hook / Phaenomen
@@ -57,7 +51,9 @@ Die Kette verbindet alle fuenf Begriffe zu einem Verfahren: Erkennen, Einordnen,
 
 Klausur-Satz: `Bei der Energiebilanz werden alle Energieformen vor und nach dem Vorgang aufgefuehrt; bei Reibung wird die dissipierte Energie abgezogen.`
 
-## Schritt 3 — entdecken: Kernkonzept & Wirkungsmodell
+`Klausur-Satz: Siehe Schritt-Inhalt.`
+
+## Schritt 3 — entdecken: Wirkungskette hinter Mechanische Energieerhaltung
 EXPERIMENTELLE ERKUNDUNG (Sandbox, erst spielen, dann deuten):
 
 ### Hook & Phaenomen
@@ -85,15 +81,19 @@ Formelkern: $E_{pot}=mgh$
 
 Klausur-Satz: `Da beim reibungsfreien Herabgleiten die gesamte Lageenergie in Bewegungsenergie umgewandelt wird, gilt m*g*h = 0.5*m*v^2 und damit v = sqrt(2*g*h).`
 
+`Klausur-Satz: Siehe Schritt-Inhalt.`
+
 ## Anekdote & Fun-Fact
 **Anekdote / Fun-Fact (DE)**: Dass Energie weder erzeugt noch vernichtet, sondern nur umgewandelt wird, wurde nicht von einem einzigen Genie entdeckt: In den 1840er Jahren formulierten mehrere Forscher in verschiedenen Laendern diesen Satz fast gleichzeitig und unabhaengig voneinander — ein Arzt, ein Brauereibesitzer und ein Physiologe kamen auf dieselbe Idee. So entstand ein Naturgesetz, das heute zu den tragenden Saeulen der gesamten Physik gehoert.
 
 **Bezug zum Konzept**: `Die Energieerhaltung wurde unabhaengig von mehreren Forschern gefunden, weil sie in sehr vielen Systemen gilt — genau darum ist E_vor = E_nach so universell.`
 
-## Schritt 4 — ausprobieren: Interaktive Praxis & Energie-Labor
+## Schritt 4 — ausprobieren: Sandbox-Auftrag Energiebilanz des Abstiegs
+Kontinuitaet: Vorher Physik-Diagramme-L1.md | Nachher Physik-Energieerhaltung-Mechanik-L1.md. Krise dieser Episode: Sol-061 Batterie-Notstand: nur 17 Prozent Ladung. Target: v0 = 289 m/s, a = 2.9 m/s2, Ziel s = 1059 m.
+
 BEISPIEL (Sandbox Level mit Werkzeug):
 
-[Werkzeug: kinematik-lab]
+[Werkzeug: schiefe-ebene]
 
 AUFGABE (Levelziel, AFB II): Knacke das Energie-Level: Ziehe im Sandbox-Labor Starthoehe $h$ und Federspannung $s$ durch je drei Stufen und beobachte, wie Lageenergie in Tempo und Federspannung umfliesst und die Summe konstant bleibt. Lies Tempo am Fuss und Spannung am Ende ab und berechne dann exakt per Bilanz. Vergleiche Labor mit Rechnung und benenne die Reibungsrolle.
 
@@ -106,12 +106,18 @@ MUSTERLOESUNG: Labor zeigt Tempo am Fuss $v = 4{,}0\,m/s$ und maximale Federspan
 
 Klausur-Satz: `Aus der Energieerhaltung folgt fuer den Wagen am Fuss der Rampe v = 4,0 m/s und fuer die maximale Federspannung s = 0,40 m.`
 
-## Schritt 5 — ausprobieren: Verfahrensvergleich & Abgrenzung
+`Klausur-Satz: Siehe Schritt-Inhalt.`
+
+## Schritt 5 — ausprobieren: Duell der Verfahren Energiebilanz des Abstiegs
 VERGLEICH (zwei Verfahren unterscheiden):
 
 VERGLEICH: Waehle zuerst das Verfahren — (i) Energieansatz (nur $v$, $h$ oder $s$ gesucht, Kraft veraenderlich oder mehrstufig: $E_{vor} = E_{nach}$) oder (ii) Kraftansatz ($a$, $t$, Richtung oder innere Kraft gesucht: $F_{res} = m \cdot a$ schrittweise) — dann loesen.
 
+Weg A: Erst Verfahren waehlen, dann rechnen.
+
 AUFGABE A: Ein Ball wird an einem Faden der Laenge $L = 1{,}25\,\mathrm{m}$ hochgezogen und losgelassen; gesucht ist nur $v$ am Tiefpunkt. Welches Verfahren, warum?
+
+Weg B: Alternative Route mit Gegenrechnung.
 
 AUFGABE B: Fuer denselben Ball ist die Zeit bis zum Tiefpunkt gesucht. Welches Verfahren, warum?
 
@@ -121,7 +127,9 @@ ANTWORT: A erfordert Verfahren (i): ohne Reibung genuegt $m \cdot g \cdot L = 0{
 
 Klausur-Satz: `Fragt die Aufgabe nur nach einer Geschwindigkeit oder Hoehe, fuehrt der Energieansatz ohne Zeit und ohne Winkel zum Ziel; ist dagegen eine Zeit gesucht, muss der Kraftansatz verwendet werden.`
 
-## Schritt 6 — check: Selbsttest zu Mechanische Energieerhaltung
+`Klausur-Satz: Siehe Schritt-Inhalt.`
+
+## Schritt 6 — check: Selbsttest zu Mechanische Energieerhaltung: Energiebilanz des Abstiegs
 CHECK (Selbsttest, 3 Fragen mit Antworten):
 
 FRAGE: Unter welcher Bedingung gilt die mechanische Energieerhaltung? | ANTWORT: Wenn nur konservative Kraefte wie Gewicht oder Feder wirken, also keine Reibung Energie entzieht.
@@ -129,6 +137,8 @@ FRAGE: Wie lauten die drei Formeln der mechanischen Energie? | ANTWORT: $E_{kin}
 FRAGE: Warum faellt in $v = \sqrt{2 \cdot g \cdot h}$ die Masse heraus? | ANTWORT: Weil $m$ in $m \cdot g \cdot h$ und in $0{,}5 \cdot m \cdot v^2$ als Faktor steht und beidseitig kuertzt.
 
 Klausur-Satz: `Bei reibungsfreien Vorgaengen sind Anfangs- und Endenergie gleich, sodass die Masse oft herausfaellt und die Endgeschwindigkeit nur von der Hoehe abhaengt.`
+
+`Klausur-Satz: Siehe Schritt-Inhalt.`
 
 ## Fehlvorstellung
 (kein Schritt; wird vom Parser automatisch erkannt und nicht mitgezaehlt)
@@ -140,12 +150,14 @@ Klausur-Satz: `Bei reibungsfreien Vorgaengen sind Anfangs- und Endenergie gleich
    Korrektur: Die Gleichung enthaelt keine Zeit; Momentanwerte verlangen $F_{res} = m \cdot a$ plus Kinematik.
    Korrektur-Satz: `Die Energieerhaltung enthaelt keine Zeit und liefert daher keine Zeit- oder Beschleunigungswerte; diese erfordern den Kraftansatz.`
 
-## Schritt 7 — szenario: Klausurtransfer: Mechanische Energieerhaltung
+## Schritt 7 — szenario: Klausurtransfer: Mechanische Energieerhaltung: Energiebilanz des Abstiegs
 ROLLE: Du bist Praktikumsbetreuerin im Physikpraktikum der EF und sollst eine Halfpipe-Analyse anleiten.
 SITUATION: Ein Skateboarder ($m = 60\,\mathrm{kg}$) startet aus der Ruhe am Rand einer reibungsfreien Halfpipe ($h = 1{,}8\,\mathrm{m}$ ueber Tiefpunkt) ohne weiteren Antrieb. Beurteile in einer zusammenhaengenden Stellungnahme (ca. 150 Woerter), welche Geschwindigkeit er unten erreicht und warum Energie hier sinnvoller ist als Kraft. Nutze $g = 10\,\mathrm{m/s^2}$.
 RUBRIC (30 XP): Bilanz $m \cdot g \cdot h = 0{,}5 \cdot m \cdot v^2$ mit Nullhoehe (5 XP) | Rechnung $v = \sqrt{2 \cdot g \cdot h} = 6{,}0\,\mathrm{m/s}$ mit Einheit (10 XP) | Begruendung der Massenunabhaengigkeit (10 XP) | Urteil zum Vorzug von Energie bei veraenderlicher Richtung ohne Zeitfrage (5 XP).
 
-## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
+`Klausur-Satz: Siehe Schritt-Inhalt.`
+
+## Schritt 8 — reflexion: Takeaway & Reflexion: Energiebilanz des Abstiegs
 TAKEAWAY (Kernzusammenfassung):
 
 Der Energieansatz vergleicht nur Anfang und Ende ohne Zeit und ohne Winkel, solange keine Reibung entzieht. Bilanz in vier Schritten: Nullniveau, Anfang, Ende, Gleichsetzen (mit Reibung abzueglich Verlust). Nur Tempo oder Hoehe bei veraenderlicher Kraft verlangt Energie; Zeit, Beschleunigung oder Richtung verlangen Kraft.
@@ -155,3 +167,4 @@ REFLEXION (2 Fragen):
 1. Selbstbeobachtung: Welcher Schritt fiel schwerer — die Bilanz mit Feder (Schritt 4) oder die Entscheidung zwischen Energie und Kraft im Vergleich (Schritt 5)?
 2. Planung: Beim naechsten Mal pruefe ich zuerst, ob nach einer Zeit gefragt wird und ob Reibung auftritt, bevor ich den Ansatz waehle.
 
+`Klausur-Satz: Siehe Schritt-Inhalt.`

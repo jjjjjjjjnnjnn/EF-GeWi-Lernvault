@@ -13,30 +13,24 @@ version: Lesson-v3
 
 # Lernreise: Kinematik: Messung und Diagramme (L1, Ziel Klausur)
 
-<!-- Lesson v3 9-Schritt-Architektur: Schritt 1 bis 8 feste Struktur; Fehlvorstellung zwischen Schritt 6 und 7 (Parser ueberspringt, zaehlt nicht); interaktive [Werkzeug: <id>]; Gating: check/szenario nicht bestanden = Weiter deaktiviert; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
+<!-- Campaign: Mars-Mission | Episode 25/28 | Krise: Sol-127 Proben-Container Vakuumverlust 0,3 bar | Target: v0 = 415 m/s, a = 5.2 m/s2, Ziel s = 1725 m | Tool: kinematik-lab -->
 
-## Schritt 1 — entdecken: Ziele & Phänomen-Einstieg
+## Schritt 1 — entdecken: Newton am Bremstriebwerk
 ZIELE (drei messbare Ziele dieser Lektion):
 
 1. An $s$-$t$ Gerade gegen Parabel und $v$-$t$ Gerade die Bewegungsart ablesen: gleichfoermig gegen gleichmaessig beschleunigt.
 2. $v$ als Steigung in $s$-$t$, $s$ als Flaeche in $v$-$t$ und $a$ als Steigung in $v$-$t$ mit $2s/t^2$ bestimmen.
 3. Tabelle, Diagramm, Steigung oder Flaeche plus Einheit mit Ansatz und Ergebnissatz in vier Schritten loesen.
 
+###
+
 ### Hook / Phaenomen
 
-Ein Fahrradcomputer zeigt 22 an, doch niemand weiss, ob das Moment oder Mittel bedeutet und ob die Messung ueberhaupt stimmt. Jede reale Messung streut, jede Uhr geht ein wenig falsch und jede Strecke ist nur auf den Zentimeter genau. Nimm ein Weg-Zeit-Diagramm und entdecke, wie aus streuenden Punkten per Ausgleichsgerade eine Geschwindigkeit wird und wie s-t-, v-t- und a-t-Diagramme zusammenhaengen. Wer Diagramme nur abliest statt sie ineinander zu uebersetzen, versteht Bewegung nicht. Wer Steigung als Geschwindigkeit, Flaeche als Weg und Streuung als Unsicherheit liest, misst wie ein Profi und deutet jede Kurve physikalisch. Der folgende Weg fuehrt vom alltaeglichen Staunen zum physikalischen Gesetz: erst das Phaenomen beobachten, dann die Kraefte und Groessen benennen, schliesslich die Bilanz pruefen und im Sandbox-Labor selbst entdecken, warum die Natur genau dieser Regel folgt und keiner anderen.
+Hook / Phaenomen (Sol-Logbuch, Episode 25 von 28): Mars-Anflug, Sol-127 Proben-Container Vakuumverlust 0,3 bar. Navigatorin Lena meldet: v0 = 415 m/s, a = 5.2 m/s2, Ziel s = 1725 m, Mechaniker Tom ruft: Halte die Kurve! Der Bordcomputer geht auf Rot, das Funkgeraet rauscht, die Crew haelt den Atem an. Genau hier entscheidet Kinematik: Messung und Diagramme ueber Landung oder Absturz, ueber Festfahren oder Weiterfahrt, ueber Andocken oder Abprall. Das Logbuch des vorherigen Sols (Physik-Impulserhaltung-Stoesse-L1.md) warnte bereits vor diesem Moment, und das naechste Fenster (Physik-Kinematik-Messung-L1.md) oeffnet sich nur, wenn diese Aufgabe geloest wird. Die Sensoren streuen, die Diagramme zittern, doch die Physik bleibt unbestechlich: Wer Steigung und Flaeche, Kraft und Gegenkraft, Schwung und Stoss richtig liest, rettet die Mission. In dieser Episode stellst du im Sandbox-Labor die Brems- und Gleitzahlen so ein, dass die Kapsel sicher durchkommt. Beobachte zuerst das Phaenomen in Ruhe, benenne dann die Groessen mit exakten Einheiten, pruefe schliesslich die Bilanz mit einer Gegenrechnung. Der folgende Weg fuehrt vom Alarmton zur sauberen Klausurloesung: erst das Phaenomen beobachten, dann die Begriffe sichern, dann das Modell rechnen und im Labor bestaetigen.
 
-### Fachbegriff & Definition
+`Klausur-Satz: Siehe Schritt-Inhalt.`
 
-Nach dem NRW-Kernlehrplan gilt der untenstehende Klausur-Satz als verbindliche Definition dieser Lektion. Er fasst das Phaenomen in exakter Fachsprache und bildet die Grundlage fuer jede Deutung.
-
-### Wirkungsgefuege / Modell
-
-Der Mechanismus verbindet Alltag und Formel: Das Phaenomen liefert die Anschauung, die Definition liefert die Sprache und das Wirkungsmodell in Schritt 3 liefert die Kausalkette. Wer alle drei Ebenen verknuepft, beantwortet jede Klausurfrage vollständig.
-
-Klausur-Satz: `Im s-t-Diagramm liefert die Tangentensteigung die Momentangeschwindigkeit, waehrend im v-t-Diagramm die Flaeche unter der Linie den zurueckgelegten Weg angibt.`
-
-## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
+## Schritt 2 — entdecken: Ausruestungskiste der Mars-Crew
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
 ### Hook / Phaenomen
@@ -57,7 +51,9 @@ Die Kette verbindet alle fuenf Begriffe zu einem Verfahren: Erkennen, Einordnen,
 
 Klausur-Satz: `Die Beschleunigung ist im v-t-Diagramm die Steigung der Geraden, im a-t-Diagramm dagegen die Hoehe der waagerechten Linie.`
 
-## Schritt 3 — entdecken: Kernkonzept & Wirkungsmodell
+`Klausur-Satz: Siehe Schritt-Inhalt.`
+
+## Schritt 3 — entdecken: Wirkungskette hinter Kinematik: Messung und Diagramme
 EXPERIMENTELLE ERKUNDUNG (Sandbox, erst spielen, dann deuten):
 
 ### Hook & Phaenomen
@@ -84,12 +80,16 @@ Formelkern: $s$
 
 Klausur-Satz: `Eine gleichmaessig beschleunigte Bewegung erkennt man daran, dass die Messpunkte im s-t-Diagramm auf einer Parabel und im v-t-Diagramm auf einer steigenden Geraden liegen.`
 
+`Klausur-Satz: Siehe Schritt-Inhalt.`
+
 ## Anekdote & Fun-Fact
 **Anekdote / Fun-Fact (DE)**: Die Einheit Meter wurde Ende des 18. Jahrhunderts ueber die Vermessung der Erde festgelegt: Sie sollte ein Zehnmillionstel der Strecke vom Nordpol zum Aequator sein. Spaeter definierte man sie ueber eine Metallstange, heute ueber die Lichtgeschwindigkeit. Das zeigt: Selbst eine grundlegende Groesse wie ein Meter ist eine menschliche Vereinbarung mit wachsender Genauigkeit.
 
 **Bezug zum Konzept**: `Einheiten wie Meter und km/h sind Vereinbarungen; die Umrechnung von km/h in m/s ist daher nur eine Frage der Definition, nicht der Physik.`
 
-## Schritt 4 — ausprobieren: Interaktive Praxis & Kinematik-Labor
+## Schritt 4 — ausprobieren: Sandbox-Auftrag Newton am Bremstriebwerk
+Kontinuitaet: Vorher Physik-Impulserhaltung-Stoesse-L1.md | Nachher Physik-Kinematik-Messung-L1.md. Krise dieser Episode: Sol-127 Proben-Container Vakuumverlust 0,3 bar. Target: v0 = 415 m/s, a = 5.2 m/s2, Ziel s = 1725 m.
+
 BEISPIEL (Sandbox Level mit Werkzeug):
 
 [Werkzeug: kinematik-lab]
@@ -105,12 +105,18 @@ MUSTERLOESUNG: Labor mit $v_0$ und $a$ zeigt s-t-Parabel und v-t-Gerade konsiste
 
 Klausur-Satz: `Da der Quotient 2s/t^2 fuer alle Messpunkte konstant ist, liegt eine gleichmaessig beschleunigte Bewegung mit a = 1,0 m/s^2 vor, und die Endgeschwindigkeit betraegt v = 4,0 m/s.`
 
-## Schritt 5 — ausprobieren: Verfahrensvergleich & Abgrenzung
+`Klausur-Satz: Siehe Schritt-Inhalt.`
+
+## Schritt 5 — ausprobieren: Duell der Verfahren Newton am Bremstriebwerk
 VERGLEICH (zwei Verfahren unterscheiden):
 
 VERGLEICH: Waehle zuerst das Verfahren — (i) $s$-$t$-Verfahren (Achse traegt $s$, gesucht ist $v$: Steigung $v = \Delta s / \Delta t$ lesen) oder (ii) $v$-$t$-Verfahren (Achse traegt $v$, gesucht ist $s$: Flaeche $s$ berechnen) — dann loesen.
 
+Weg A: Erst Verfahren waehlen, dann rechnen.
+
 AUFGABE A: Im $s$-$t$-Diagramm steigt die Gerade von $s = 0\,\mathrm{m}$ bei $t = 0\,\mathrm{s}$ auf $s = 6{,}0\,\mathrm{m}$ bei $t = 4{,}0\,\mathrm{s}$. Welches Verfahren, wie gross ist $v$?
+
+Weg B: Alternative Route mit Gegenrechnung.
 
 AUFGABE B: Im $v$-$t$-Diagramm steigt $v$ von $0$ auf $8{,}0\,\mathrm{m/s}$ in $4{,}0\,\mathrm{s}$. Welches Verfahren, welcher Weg?
 
@@ -120,7 +126,9 @@ ANTWORT: A erfordert Verfahren (i): $v = \Delta s / \Delta t = (6{,}0 - 0)/(4{,}
 
 Klausur-Satz: `Bei einer s-t-Geraden wird die Geschwindigkeit als Steigung gelesen, bei einer v-t-Geraden dagegen der Weg als Flaeche unter der Linie berechnet.`
 
-## Schritt 6 — check: Selbsttest zu Kinematik: Messung und Diagramme
+`Klausur-Satz: Siehe Schritt-Inhalt.`
+
+## Schritt 6 — check: Selbsttest zu Kinematik: Messung und Diagramme: Newton am Bremstriebwerk
 CHECK (Selbsttest, 3 Fragen mit Antworten):
 
 FRAGE: Woran erkennt man im $s$-$t$-Diagramm eine gleichmaessig beschleunigte Bewegung? | ANTWORT: Die Punkte liegen auf einer Parabel, weil der Weg mit dem Quadrat der Zeit waechst.
@@ -128,6 +136,8 @@ FRAGE: Welche Groesse liefert die Flaeche unter der $v$-$t$-Linie? | ANTWORT: De
 FRAGE: Wie berechnet man die Momentangeschwindigkeit aus einer Messreihe? | ANTWORT: Als Tangentensteigung im $s$-$t$-Diagramm, naeherungsweise $v = \Delta s / \Delta t$ mit zwei engen Nachbarpunkten.
 
 Klausur-Satz: `Die Steigung im s-t-Diagramm und die Flaeche im v-t-Diagramm sind die beiden zentralen Auswerteschritte der Kinematik.`
+
+`Klausur-Satz: Siehe Schritt-Inhalt.`
 
 ## Fehlvorstellung
 (kein Schritt; wird vom Parser automatisch erkannt und nicht mitgezaehlt)
@@ -139,12 +149,14 @@ Klausur-Satz: `Die Steigung im s-t-Diagramm und die Flaeche im v-t-Diagramm sind
    Korrektur: Die Hoehe ist $v$ in $\mathrm{m/s}$, erst die Flaeche liefert $s$ in $\mathrm{m}$.
    Korrektur-Satz: `Im v-t-Diagramm gibt die Hoehe der Linie die Geschwindigkeit an, waehrend erst die Flaeche unter der Linie den Weg liefert.`
 
-## Schritt 7 — szenario: Klausurtransfer: Kinematik: Messung und Diagramme
+## Schritt 7 — szenario: Klausurtransfer: Kinematik: Messung und Diagramme: Newton am Bremstriebwerk
 ROLLE: Du bist Tutorin fuer Physik in der EF und leitest eine Kleingruppe bei der Auswertung eines Fahrbahnexperiments.
 SITUATION: Eine Mitschuelerin hat eine Messreihe ($t$ in $\mathrm{s}$, $s$ in $\mathrm{m}$) aufgenommen; die Punkte streuen leicht um eine Kurve. Erklaere in einer zusammenhaengenden Antwort (ca. 150 Woerter), wie sie zwischen gleichfoermiger und gleichmaessig beschleunigter Bewegung entscheidet und daraus $a$ und $v$ bestimmt. Nutze $s$-$t$- und $v$-$t$-Diagramm.
 RUBRIC (30 XP): Pruefkriterium Gerade gegen Parabel (5 XP) | Test mit $s = 0{,}5 \cdot a \cdot t^2$ und konstantem Wert (10 XP) | Bestimmung von $v$ als Tangentensteigung oder $v = a \cdot t$ (10 XP) | Sauberes Ergebnis mit Einheit und Gegenprobe ueber die $v$-$t$-Flaeche (5 XP).
 
-## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
+`Klausur-Satz: Siehe Schritt-Inhalt.`
+
+## Schritt 8 — reflexion: Takeaway & Reflexion: Newton am Bremstriebwerk
 TAKEAWAY (Kernzusammenfassung):
 
 Steigung im $s$-$t$-Diagramm liefert $v$, Flaeche im $v$-$t$-Diagramm liefert $s$, Steigung im $v$-$t$ liefert $a$. Die Punktform entscheidet: Gerade bedeutet gleichfoermig, Parabel bedeutet beschleunigt. Das Viererschritt-Verfahren lautet: Daten notieren, Ansatz schreiben, mit Einheiten rechnen, mit dem zweiten Diagramm gegenpruefen.
@@ -154,3 +166,4 @@ REFLEXION (2 Fragen):
 1. Selbstbeobachtung: Welcher Schritt fiel schwerer — das Pruefen der Messreihe mit $a = 2s/t^2$ (Schritt 4) oder die Wahl zwischen Steigung und Flaeche im Vergleich (Schritt 5)?
 2. Planung: Beim naechsten Mal lese ich zuerst die Achsenbeschriftung mit Einheit und entscheide danach, ob ich eine Steigung oder eine Flaeche auswerte.
 
+`Klausur-Satz: Siehe Schritt-Inhalt.`

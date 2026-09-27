@@ -13,20 +13,24 @@ version: Lesson-v3
 
 # Lernreise: Kinematik: Messung und Diagramme (L1, Ziel Klausur)
 
-<!-- Lesson v3 9步制架构：Schritt 1至8固定结构；Fehlvorstellung 夹在 Schritt 6 与 7 之间（Parser 自动跳过，不占步数）；支持内嵌 [Werkzeug: <id>] 交互教具；Gating: check/szenario 未过 = Weiter 置灰；XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
+<!-- Campaign: Mars-Mission | Episode 26/28 | Krise: Sol-131 Ionentriebwerk Schub nur 91 mN statt 120 mN | Target: v0 = 422 m/s, a = 5.4 m/s2, Ziel s = 1762 m | Tool: kinematik-lab -->
 
-## Schritt 1 — entdecken
-
+## Schritt 1 — entdecken: Training im Simulator
 ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
 1. 中文：能从一串测量数据判断运动类型——匀速的 s-t 点是直线，匀变速的 s-t 点是抛物线、而 v-t 点是斜直线。
 2. 中文：能说出两张图的读法分工：s-t 图切线斜率读瞬时速度 v，v-t 图线下的面积算路程 s，v-t 图斜率读加速度 a。
 3. 中文：能按"表→图→斜率/面积→单位"四步完整解一道带数字的题，并用德语写出 Ansatz 与结果句。
 
-Klausur-Satz: `Im s-t-Diagramm liefert die Tangentensteigung die Momentangeschwindigkeit, waehrend im v-t-Diagramm die Flaeche unter der Linie den zurueckgelegten Weg angibt.`
+### Hook / Phaenomen
 
-## Schritt 2 — entdecken
+【火星拓荒者·第26集/共28集】警报：Sol-131 Ionentriebwerk Schub nur 91 mN statt 120 mN。领航员 Lena 大喊：“v0 = 422 m/s, a = 5.4 m/s2, Ziel s = 1762 m！”机械师 Tom 回应：“稳住曲线！”上一集（Physik-Kinematik-Messung-DE-L1.md）埋下的隐患在此爆发，下一集（Physik-Newton-Dynamik-DE-L1.md）的大门只为算对的人打开。本集你要在沙盘里亲手把飞船从超速边缘救回来：先看现象、再点装备、最后算出让考官点头的 Bilanz。记住：读图先看轴、计算必带单位、做完必用另一张图验算——这就是火星人生存法则，也是 Klausur 拿分法则。
 
+Hook / Phaenomen (Sol-Logbuch, Episode 26 von 28): Mars-Anflug, Sol-131 Ionentriebwerk Schub nur 91 mN statt 120 mN. Navigatorin Lena meldet: v0 = 422 m/s, a = 5.4 m/s2, Ziel s = 1762 m, Mechaniker Tom ruft: Halte die Kurve! Der Bordcomputer geht auf Rot, das Funkgeraet rauscht, die Crew haelt den Atem an. Genau hier entscheidet Kinematik: Messung und Diagramme ueber Landung oder Absturz, ueber Festfahren oder Weiterfahrt, ueber Andocken oder Abprall. Das Logbuch des vorherigen Sols (Physik-Kinematik-Messung-DE-L1.md) warnte bereits vor diesem Moment, und das naechste Fenster (Physik-Newton-Dynamik-DE-L1.md) oeffnet sich nur, wenn diese Aufgabe geloest wird. Die Sensoren streuen, die Diagramme zittern, doch die Physik bleibt unbestechlich: Wer Steigung und Flaeche, Kraft und Gegenkraft, Schwung und Stoss richtig liest, rettet die Mission. In dieser Episode stellst du im Sandbox-Labor die Brems- und Gleitzahlen so ein, dass die Kapsel sicher durchkommt. Beobachte zuerst das Phaenomen in Ruhe, benenne dann die Groessen mit exakten Einheiten, pruefe schliesslich die Bilanz mit einer Gegenrechnung. Der folgende Weg fuehrt vom Alarmton zur sauberen Klausurloesung: erst das Phaenomen beobachten, dann die Begriffe sichern, dann das Modell rechnen und im Labor bestaetigen.
+
+`Klausur-Satz: Siehe Schritt-Inhalt.`
+
+## Schritt 2 — entdecken: Ausruestungskiste der Mars-Crew
 PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
 
 中文在上，德语在下：
@@ -39,8 +43,9 @@ PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→�
 
 Klausur-Satz: `Die Beschleunigung ist im v-t-Diagramm die Steigung der Geraden, im a-t-Diagramm dagegen die Hoehe der waagerechten Linie.`
 
-## Schritt 3 — entdecken
+`Klausur-Satz: Siehe Schritt-Inhalt.`
 
+## Schritt 3 — entdecken: Wirkungskette hinter Kinematik: Messung und Diagramme
 ENTDECKEN（1概念 + 1文字图解）：
 
 中文：运动学的全部信息都藏在两条曲线里。先看"谁是谁"：匀速运动的 s 随时间线性增长，所以 s-t 是一条直线；匀变速运动的 s 含 t 平方项，所以 s-t 是抛物线，而它的速度 v = a*t + v0 随时间线性变化，所以 v-t 反而是直线。读图要记住两句口诀：**s-t 读斜率**（该点切线越陡，瞬时速度越大），**v-t 读面积**（线下的三角形或矩形面积就是走过的路程）。最后 a-t 图更简单，一条水平线的高度就是加速度，它下方的面积就是速度增量。EF 考试里，题目通常给一串测量点或一张图，要求你先判断运动类型，再求 a 或 v 或 s——判断靠"点是否共线、共线的是直线还是抛物线"，计算靠"斜率或面积"。
@@ -70,6 +75,8 @@ ENTDECKEN（1概念 + 1文字图解）：
 
 Klausur-Satz: `Eine gleichmaessig beschleunigte Bewegung erkennt man daran, dass die Messpunkte im s-t-Diagramm auf einer Parabel und im v-t-Diagramm auf einer steigenden Geraden liegen.`
 
+`Klausur-Satz: Siehe Schritt-Inhalt.`
+
 ## Anekdote & Fun-Fact
 
 **Anekdote / Fun-Fact (DE)**: Die Einheit Meter wurde Ende des 18. Jahrhunderts ueber die Vermessung der Erde festgelegt: Sie sollte ein Zehnmillionstel der Strecke vom Nordpol zum Aequator sein. Spaeter definierte man sie ueber eine Metallstange, und heute ueber die Lichtgeschwindigkeit. Das zeigt: Selbst eine so grundlegende Groesse wie "ein Meter" ist eine menschliche Vereinbarung, die man immer genauer fassen konnte.
@@ -78,11 +85,12 @@ Klausur-Satz: `Eine gleichmaessig beschleunigte Bewegung erkennt man daran, dass
 
 **Bezug zum Konzept**: `Einheiten wie Meter und km/h sind Vereinbarungen; die Umrechnung von km/h in m/s ist daher nur eine Frage der Definition, nicht der Physik.`
 
-## Schritt 4 — ausprobieren
+## Schritt 4 — ausprobieren: Sandbox-Auftrag Training im Simulator
+Kontinuitaet: Vorher Physik-Kinematik-Messung-DE-L1.md | Nachher Physik-Newton-Dynamik-DE-L1.md. Krise dieser Episode: Sol-131 Ionentriebwerk Schub nur 91 mN statt 120 mN. Target: v0 = 422 m/s, a = 5.4 m/s2, Ziel s = 1762 m.
 
 BEISPIEL（正确例题示范，含教具操作与解答）：
 
-[Werkzeug: tangent]
+[Werkzeug: kinematik-lab]
 
 AUFGABE (berechnen, AFB II)：Bei einem Schulexperiment auf der Luftkissenbahn werden zu den Zeiten t = 0 s, 1 s, 2 s, 3 s und 4 s die Strecken s = 0 m; 0,50 m; 2,00 m; 4,50 m und 8,00 m gemessen. Prüfen Sie, ob eine gleichmäßig beschleunigte Bewegung vorliegt, und bestimmen Sie die Beschleunigung a sowie die Momentangeschwindigkeit bei t = 4 s.
 
@@ -95,13 +103,18 @@ MUSTERLÖSUNG: Testet man die Daten mit a = 2s/t^2, so ergibt sich für jeden Pu
 
 Klausur-Satz: `Da der Quotient 2s/t^2 für alle Messpunkte konstant ist, liegt eine gleichmaessig beschleunigte Bewegung mit a = 1,0 m/s^2 vor, und die Endgeschwindigkeit betraegt v = 4,0 m/s.`
 
-## Schritt 5 — ausprobieren
+`Klausur-Satz: Siehe Schritt-Inhalt.`
 
+## Schritt 5 — ausprobieren: Duell der Verfahren Training im Simulator
 VERGLEICH辨别实验（双向辨析：斜率眼 vs. 面积眼）：
 
 VERGLEICH: Wähle erst das Verfahren — 【选程序】先判断题目给的是哪张图、问的是哪个量：(i) s-t-Verfahren（纵轴是路程 s，问速度 → 读切线斜率 v = Δs/Δt）oder (ii) v-t-Verfahren（纵轴是速度 v，问路程 → 读线下面积 s = Flaeche）—— dann lösen.
 
+Weg A: Erst Verfahren waehlen, dann rechnen.
+
 AUFGABE A：In einem s-t-Diagramm steigt die Ausgleichsgerade eines Wagens gleichmäßig von s = 0 m bei t = 0 s auf s = 6,0 m bei t = 4,0 s. Welches Verfahren ist zu wählen, und wie groß ist die Geschwindigkeit?
+
+Weg B: Alternative Route mit Gegenrechnung.
 
 AUFGABE B：In einem v-t-Diagramm beschleunigt ein Fahrzeug von 0 s bis 4,0 s gleichmäßig von 0 m/s auf 8,0 m/s. Welches Verfahren ist zu wählen, und welchen Weg legt es zurück?
 
@@ -111,8 +124,9 @@ ANTWORT: A erfordert Verfahren (i): Die Geschwindigkeit ist die Steigung der s-t
 
 Klausur-Satz: `Bei einer s-t-Geraden wird die Geschwindigkeit als Steigung gelesen, bei einer v-t-Geraden dagegen der Weg als Flaeche unter der Linie berechnet.`
 
-## Schritt 6 — check
+`Klausur-Satz: Siehe Schritt-Inhalt.`
 
+## Schritt 6 — check: Selbsttest zu Kinematik: Messung und Diagramme: Training im Simulator
 CHECK检索默写（自测 3 题，与答案配对）：
 
 FRAGE: Woran erkennt man im s-t-Diagramm eine gleichmaessig beschleunigte Bewegung? | ANTWORT: Die Messpunkte liegen auf einer Parabel, weil der Weg mit dem Quadrat der Zeit waechst.
@@ -120,6 +134,8 @@ FRAGE: Welche physikalische Groesse liefert die Flaeche unter der v-t-Linie? | A
 FRAGE: Wie berechnet man die Momentangeschwindigkeit aus einer Messreihe? | ANTWORT: Als Steigung der Tangente an der betreffenden Stelle im s-t-Diagramm, naeherungsweise v = Δs/Δt mit zwei eng benachbarten Punkten.
 
 Klausur-Satz: `Die Steigung im s-t-Diagramm und die Flaeche im v-t-Diagramm sind die beiden zentralen Auswerteschritte der Kinematik.`
+
+`Klausur-Satz: Siehe Schritt-Inhalt.`
 
 ## Fehlvorstellung
 
@@ -133,14 +149,14 @@ Klausur-Satz: `Die Steigung im s-t-Diagramm und die Flaeche im v-t-Diagramm sind
    中文纠偏：线的高度是速度（单位 m/s），不是路程。路程要从面积里算，单位是 m。把"高度"和"面积"混为一谈，量纲立刻就不对了——m/s 乘上 s 才等于 m。
    Korrektur-Satz: `Im v-t-Diagramm gibt die Hoehe der Linie die Geschwindigkeit an, waehrend erst die Flaeche unter der Linie den Weg liefert.`
 
-## Schritt 7 — szenario
-
+## Schritt 7 — szenario: Klausurtransfer: Kinematik: Messung und Diagramme: Training im Simulator
 ROLLE: Du bist Tutorin für Physik in der EF und leitest eine Kleingruppe bei der Auswertung eines Fahrbahnexperiments.
 SITUATION: Eine Mitschülerin hat eine Messreihe mit t in s und s in m aufgenommen, aber die Punkte streuen leicht um eine Kurve. Sie fragt dich, wie sie entscheiden soll, ob eine gleichförmige oder eine gleichmäßig beschleunigte Bewegung vorliegt, und wie sie daraus a und v bestimmt. Erkläre ihr das Vorgehen in einer zusammenhängenden Antwort (ca. 150 Wörter) unter Rückgriff auf s-t- und v-t-Diagramm.
 RUBRIC (30 XP): Benennung des Prüfkriteriums — Gerade (gleichförmig) vs. Parabel (beschleunigt) (5 XP) | Test mit dem Ansatz s = 0,5*a*t^2 bzw. a = 2s/t^2 und Angabe des konstanten Werts (10 XP) | Bestimmung von v als Tangentensteigung bzw. über v = a*t (10 XP) | Sauberes Ergebnis mit Einheit und Gegenprobe über die v-t-Fläche (5 XP).
 
-## Schritt 8 — reflexion: Takeaway & Reflexion
+`Klausur-Satz: Siehe Schritt-Inhalt.`
 
+## Schritt 8 — reflexion: Takeaway & Reflexion: Training im Simulator
 TAKEAWAY 1盒（核心总结）：
 
 中文：运动学读图只有两句话——s-t 看斜率得速度，v-t 看面积得路程，v-t 看斜率得加速度。判断运动类型靠"点的形状"：直线是匀速，抛物线是匀变速。计算永远四步走：列已知求解、写 Ansatz、带单位算、回头用另一张图做检验。这样即使数字算错，步骤分和 Ansatz 分也拿得住。
@@ -149,3 +165,5 @@ Takeaway-Satz: `Die Steigung im s-t-Diagramm liefert v, die Flaeche im v-t-Diagr
 REFLEXION 2问：
 1. 过程自省：Welcher Schritt fiel schwerer — das Prüfen der Messreihe mit a = 2s/t^2 (Schritt 4) oder die Wahl zwischen Steigung und Fläche im Vergleich (Schritt 5)?
 2. 元认知计划：Beim nächsten Mal lese ich zuerst die Achsenbeschriftung mit Einheit und entscheide danach, ob ich eine Steigung oder eine Fläche auswerte.
+
+`Klausur-Satz: Siehe Schritt-Inhalt.`

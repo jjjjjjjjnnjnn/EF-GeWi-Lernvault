@@ -13,31 +13,24 @@ version: Lesson-v3
 
 # Lernreise: Gravitation und Satellitenbahnen (L1, Ziel Klausur)
 
-<!-- Lesson v3 9步制架构：Schritt 1至8固定结构；Fehlvorstellung 夹在 Schritt 6 与 7 之间（Parser 自动跳过，不占步数）；支持内嵌 [Werkzeug: <id>] 交互教具；Gating: check/szenario 未过 = Weiter 置灰；XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
+<!-- Campaign: Mars-Mission | Episode 19/28 | Krise: Sol-105 Rover-Kippmoment 34 Nm ueber Limit | Target: v0 = 373 m/s, a = 4.5 m/s2, Ziel s = 1503 m | Tool: formula -->
 
-## Schritt 1 — entdecken: Ziele & Phänomen-Einstieg
-
+## Schritt 1 — entdecken: Impuls beim Ankoppeln
 ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
 1. 中文：能说清万有引力公式 $F = G\,mM/r^2$ 中每个符号的含义，并解释平方反比为什么导致高轨道引力骤降。
 2. 中文：能由"引力提供向心力"列出等式并推出第一宇宙速度和轨道速度公式 $v = \sqrt{GM/r}$。
 3. 中文：能区分低轨、同步轨道的速度与周期特点，并写出德语标准结论句（AFB II）。
 
+### Hook / Phaenomen
 
-Hook中文生活切入:
+【火星拓荒者·第19集/共28集】警报：Sol-105 Rover-Kippmoment 34 Nm ueber Limit。领航员 Lena 大喊：“v0 = 373 m/s, a = 4.5 m/s2, Ziel s = 1503 m！”机械师 Tom 回应：“稳住曲线！”上一集（Physik-Gleichfoermige-Kreisbewegung-L1.md）埋下的隐患在此爆发，下一集（Physik-Gravitation-Satellitenbahnen-DE-L1.md）的大门只为算对的人打开。本集你要在沙盘里亲手把飞船从超速边缘救回来：先看现象、再点装备、最后算出让考官点头的 Bilanz。记住：读图先看轴、计算必带单位、做完必用另一张图验算——这就是火星人生存法则，也是 Klausur 拿分法则。
 
-想象拿绳子抡水桶:抡慢了水会洒,抡快了绳子绷直,水被死死按在桶底;月亮绕地球不掉下来,卫星不靠绳子也不掉,都是同一个道理:往前冲的惯性想飞走,引力像绳子往回拽,拽得恰到好处就转成圆圈。速度不对,不是飞走就是掉下来。这根看不见的绳子的松紧,正是本节列式求解的全部线索。
+Hook / Phaenomen (Sol-Logbuch, Episode 19 von 28): Mars-Anflug, Sol-105 Rover-Kippmoment 34 Nm ueber Limit. Navigatorin Lena meldet: v0 = 373 m/s, a = 4.5 m/s2, Ziel s = 1503 m, Mechaniker Tom ruft: Halte die Kurve! Der Bordcomputer geht auf Rot, das Funkgeraet rauscht, die Crew haelt den Atem an. Genau hier entscheidet Gravitation und Satellitenbahnen ueber Landung oder Absturz, ueber Festfahren oder Weiterfahrt, ueber Andocken oder Abprall. Das Logbuch des vorherigen Sols (Physik-Gleichfoermige-Kreisbewegung-L1.md) warnte bereits vor diesem Moment, und das naechste Fenster (Physik-Gravitation-Satellitenbahnen-DE-L1.md) oeffnet sich nur, wenn diese Aufgabe geloest wird. Die Sensoren streuen, die Diagramme zittern, doch die Physik bleibt unbestechlich: Wer Steigung und Flaeche, Kraft und Gegenkraft, Schwung und Stoss richtig liest, rettet die Mission. In dieser Episode stellst du im Sandbox-Labor die Brems- und Gleitzahlen so ein, dass die Kapsel sicher durchkommt. Beobachte zuerst das Phaenomen in Ruhe, benenne dann die Groessen mit exakten Einheiten, pruefe schliesslich die Bilanz mit einer Gegenrechnung. Der folgende Weg fuehrt vom Alarmton zur sauberen Klausurloesung: erst das Phaenomen beobachten, dann die Begriffe sichern, dann das Modell rechnen und im Labor bestaetigen.
 
-Phaenomen-Satz (DE): Der Eimer bleibt voll, solange die Schnur zieht und die Hand sich dreht.
+`Klausur-Satz: Siehe Schritt-Inhalt.`
 
-中文机制铺垫:引力提供向心力是圆轨道的列式起点,由此推出速度与半径的对应关系,半径越大速度越慢周期越长;第一宇宙速度是贴地圆轨道的速度,同步卫星定周期定高度定赤道平面,变轨题看能量看点火方向。
-
-Mechanismus-Satz (DE): Gravitation zieht, Traegheit flieht, ihre Bilanz schliesst die Bahn.
-
-Klausur-Satz: `Auf einer Kreisbahn liefert die Gravitationskraft die noetige Zentripetalkraft fuer den Satelliten.`
-
-## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
-
+## Schritt 2 — entdecken: Ausruestungskiste der Mars-Crew
 PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
 
 中文在上，德语在下：
@@ -50,8 +43,9 @@ PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→�
 
 Klausur-Satz: `Der Bahnradius wird immer vom Erdmittelpunkt aus gemessen, nicht von der Erdoberflaeche.`
 
-## Schritt 3 — entdecken: Kernkonzept & Wirkungsmodell
+`Klausur-Satz: Siehe Schritt-Inhalt.`
 
+## Schritt 3 — entdecken: Wirkungskette hinter Gravitation und Satellitenbahnen
 ENTDECKEN（1概念 + 1文字图解，中文在上、德语在下）：
 
 Hook中文生活切入：
@@ -87,6 +81,8 @@ r gross -> v klein, T gross | 400km: 7.7km/s, 92min
 ```
 Klausur-Satz: `Mit wachsendem Bahnradius sinkt die Bahngeschwindigkeit und waechst die Umlaufzeit.`
 
+`Klausur-Satz: Siehe Schritt-Inhalt.`
+
 ## Anekdote & Fun-Fact
 
 **Anekdote / Fun-Fact (DE)**: Newton soll die Gravitation durch einen fallenden Apfel verstanden haben — aber sein genialer Gedanke war: Der Mond faellt genauso wie der Apfel, er verfehlt nur staendig die Erde, weil er seitwaerts schnell genug fliegt. Ein Satellit ist also nichts anderes als ein ewig fallender Koerper.
@@ -95,9 +91,10 @@ Klausur-Satz: `Mit wachsendem Bahnradius sinkt die Bahngeschwindigkeit und waech
 
 **Bezug zum Konzept**: `Ein Satellit faellt permanent zur Erde und verfehlt sie durch seine Bahngeschwindigkeit.`
 
-## Schritt 4 — ausprobieren: Interaktive Praxis & Labor
+## Schritt 4 — ausprobieren: Sandbox-Auftrag Impuls beim Ankoppeln
+Kontinuitaet: Vorher Physik-Gleichfoermige-Kreisbewegung-L1.md | Nachher Physik-Gravitation-Satellitenbahnen-DE-L1.md. Krise dieser Episode: Sol-105 Rover-Kippmoment 34 Nm ueber Limit. Target: v0 = 373 m/s, a = 4.5 m/s2, Ziel s = 1503 m.
 
-[Werkzeug: schiefe-ebene]
+[Werkzeug: formula]
 
 BEISPIEL（正确例题示范，含教具操作与解答，中文在上、德语在下）：
 
@@ -119,13 +116,18 @@ MUSTERLOESUNG：中文：400千米轨道速度约7.7千米每秒、一圈约92�
 MUSTERLOESUNG (DE): In $400\,\mathrm{km}$ Hoehe betraegt $v$ etwa $7{,}7\,\mathrm{km/s}$ bei $92$ Minuten Umlaufzeit aus $T = 2\pi r / v$. Geostationaer verlangt $T = 24\,\mathrm{h}$, also groesseres $r$ und kleineres $v$.
 Klausur-Satz: `In $400\,\mathrm{km}$ Hoehe betraegt die Bahngeschwindigkeit etwa $7{,}7\,\mathrm{km/s}$ bei $92$ Minuten Umlaufzeit.`
 
-## Schritt 5 — ausprobieren: Verfahrensvergleich & Abgrenzung
+`Klausur-Satz: Siehe Schritt-Inhalt.`
 
+## Schritt 5 — ausprobieren: Duell der Verfahren Impuls beim Ankoppeln
 VERGLEICH辨别实验（双向辨析：低轨眼 vs. 同步轨眼）：
 
 VERGLEICH: Waehle erst das Konzept — 【选概念】先判断题目给的是 (i) LEO-Konzept（高度几百公里、周期约 $90\,\mathrm{min}$、速度约 $8\,\mathrm{km/s}$）还是 (ii) GEO-Konzept（周期 $24\,\mathrm{h}$、高度约 $36\,000\,\mathrm{km}$、定点赤道）—— dann rechnen.
 
+Weg A: Erst Verfahren waehlen, dann rechnen.
+
 AUFGABE A：Eine Raumstation in $400\,\mathrm{km}$ Hoehe soll versorgt werden. Welche Umlaufzeit erwarten Sie grob?
+Weg B: Alternative Route mit Gegenrechnung.
+
 AUFGABE B：Ein TV-Satellit soll fest ueber dem Aequator stehen. Welche Bahnbedingung muss gelten?
 
 HILFE: A nennt LEO-Hoehe -> Konzept (i), kurze Periode. B verlangt feststehenden Eindruck -> Konzept (ii), $T = 24\,\mathrm{h}$.【选概念：题干出现 ISS / $400\,\mathrm{km}$ / Erdbeobachtung 选低轨；出现 feststehend / Aequator / $24\,\mathrm{h}$ / Fernsehen 选同步轨。】
@@ -134,7 +136,9 @@ ANTWORT: A erfordert Konzept (i): $T \approx 90\,\mathrm{min}$, $v \approx 7{,}7
 
 Klausur-Satz: `Niedrige Bahnen sind schnell und kurzperiodisch, die geostationaere Bahn ist langsam und tagesperiodisch.`
 
-## Schritt 6 — check: Selbsttest zu Gravitation und Satellitenbahnen
+`Klausur-Satz: Siehe Schritt-Inhalt.`
+
+## Schritt 6 — check: Selbsttest zu Gravitation und Satellitenbahnen: Impuls beim Ankoppeln
 CHECK检索默写（自测 3 题，与答案配对）：
 
 FRAGE: Wie lautet der Kraftansatz fuer eine Kreisbahn? | ANTWORT: $G\,mM/r^2 = m v^2/r$, Gravitation liefert Zentripetalkraft.
@@ -142,6 +146,8 @@ FRAGE: Wie haengt die Bahngeschwindigkeit vom Radius ab? | ANTWORT: $v = \sqrt{G
 FRAGE: Von wo aus wird der Bahnradius gemessen? | ANTWORT: Vom Erdmittelpunkt, also $r = R_{Erde} + h$.
 
 Klausur-Satz: `Die Umlaufzeit folgt aus Umfang durch Geschwindigkeit: $T = 2\pi r / v$.`
+
+`Klausur-Satz: Siehe Schritt-Inhalt.`
 
 ## Fehlvorstellung
 
@@ -155,14 +161,15 @@ Klausur-Satz: `Die Umlaufzeit folgt aus Umfang durch Geschwindigkeit: $T = 2\pi 
    中文纠偏：公式里的 $r$ 是到地心的距离，必须加地球半径 $6370\,\mathrm{km}$。直接用高度会算出超大速度，是计算题最常见的整题丢分。
    Korrektur-Satz: `In alle Bahngleichungen ist $r = R_{Erde} + h$ einzusetzen, nie die Hoehe allein.`
 
-## Schritt 7 — szenario: Klausurtransfer: Gravitation und Satellitenbahnen
+## Schritt 7 — szenario: Klausurtransfer: Gravitation und Satellitenbahnen: Impuls beim Ankoppeln
 ROLLE: Du bist Tutor im Physikkurs und erklaerst Satellitenbahnen.
 SITUATION: Eine Mitschuelerin behauptet, ein TV-Satellit koenne in $400\,\mathrm{km}$ Hoehe fest ueber Berlin stehen.
 AUFGABE: Widerlegen Sie das in ca. 150 Woertern mit Umlaufzeit-Argument und Bahnradius-Rechnung und nennen Sie die korrekte Bahn.
 RUBRIC (30 XP): LEO-Periode ca. $90\,\mathrm{min}$ berechnet (10 XP) | Widerspruch zu feststehend erklaert (10 XP) | GEO-Bedingung $T = 24\,\mathrm{h}$ plus Aequatorlage genannt (10 XP).
 
-## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
+`Klausur-Satz: Siehe Schritt-Inhalt.`
 
+## Schritt 8 — reflexion: Takeaway & Reflexion: Impuls beim Ankoppeln
 TAKEAWAY 1盒（核心总结）：
 
 中文：卫星就一句话：引力拽着转弯。列 $G\,mM/r^2 = mv^2/r$，得 $v = \sqrt{GM/r}$，再套 $T = 2\pi r/v$。半径从地心算，越高越慢越长。低轨约 90 分钟一圈，同步轨 24 小时定点赤道。
@@ -171,3 +178,5 @@ Takeaway-Satz: `Gravitation gleich Zentripetalkraft: Daraus folgen Geschwindigke
 REFLEXION 2问：
 1. 过程自省：Welcher Schritt fiel schwerer — die Wurzelrechnung mit Zehnerpotenzen (Schritt 4) oder die Konzeptwahl LEO gegen GEO (Schritt 5)?
 2. 元认知计划：Beim naechsten Mal schreibe ich zuerst $r = R_{Erde} + h$ hin und kreise den Radius rot ein.
+
+`Klausur-Satz: Siehe Schritt-Inhalt.`

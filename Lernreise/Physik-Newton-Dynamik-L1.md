@@ -13,20 +13,24 @@ version: Lesson-v3
 
 # Lernreise: Newtonsche Gesetze: Kraftzerlegung und Reibung (L1, Ziel Klausur)
 
-<!-- Lesson v3 9步制架构：Schritt 1至8固定结构；Fehlvorstellung 夹在 Schritt 6 与 7 之间（Parser 自动跳过，不占步数）；支持内嵌 [Werkzeug: <id>] 交互教具；Gating: check/szenario 未过 = Weiter 置灰；XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
+<!-- Campaign: Mars-Mission | Episode 28/28 | Krise: Sol-137 Finale Kopplung: Andockring-Toleranz 4 cm | Target: v0 = 436 m/s, a = 5.6 m/s2, Ziel s = 1836 m | Tool: schiefe-ebene -->
 
-## Schritt 1 — entdecken
-
+## Schritt 1 — entdecken: Generalprobe vor dem Fenster
 ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
 1. 中文：能说清牛顿第二定律的核心——合力 F_res = m*a，力是产生加速度的原因，不是维持速度的原因。
 2. 中文：能在斜面上把重力正确分解成下滑力 F_H = m*g*sin(alpha) 与正压力 F_N = m*g*cos(alpha)，并写出含摩擦的合力式。
 3. 中文：能判断物体是"平衡（a = 0，合力为零）"还是"加速（合力不为零）"，并据此选对程序列式。
 
-Klausur-Satz: `Nach dem zweiten Newtonschen Gesetz ist die Beschleunigung eines Koerpers direkt proportional zur resultierenden Kraft und umgekehrt proportional zu seiner Masse.`
+### Hook / Phaenomen
 
-## Schritt 2 — entdecken
+【火星拓荒者·第28集/共28集】警报：Sol-137 Finale Kopplung: Andockring-Toleranz 4 cm。领航员 Lena 大喊：“v0 = 436 m/s, a = 5.6 m/s2, Ziel s = 1836 m！”机械师 Tom 回应：“稳住曲线！”上一集（Physik-Newton-Dynamik-DE-L1.md）埋下的隐患在此爆发，下一集（Physik-CN-Training-DE-L1.md）的大门只为算对的人打开。本集你要在沙盘里亲手把飞船从超速边缘救回来：先看现象、再点装备、最后算出让考官点头的 Bilanz。记住：读图先看轴、计算必带单位、做完必用另一张图验算——这就是火星人生存法则，也是 Klausur 拿分法则。
 
+Hook / Phaenomen (Sol-Logbuch, Episode 28 von 28): Mars-Anflug, Sol-137 Finale Kopplung: Andockring-Toleranz 4 cm. Navigatorin Lena meldet: v0 = 436 m/s, a = 5.6 m/s2, Ziel s = 1836 m, Mechaniker Tom ruft: Halte die Kurve! Der Bordcomputer geht auf Rot, das Funkgeraet rauscht, die Crew haelt den Atem an. Genau hier entscheidet Newtonsche Gesetze: Kraftzerlegung und Reibung ueber Landung oder Absturz, ueber Festfahren oder Weiterfahrt, ueber Andocken oder Abprall. Das Logbuch des vorherigen Sols (Physik-Newton-Dynamik-DE-L1.md) warnte bereits vor diesem Moment, und das naechste Fenster (Physik-CN-Training-DE-L1.md) oeffnet sich nur, wenn diese Aufgabe geloest wird. Die Sensoren streuen, die Diagramme zittern, doch die Physik bleibt unbestechlich: Wer Steigung und Flaeche, Kraft und Gegenkraft, Schwung und Stoss richtig liest, rettet die Mission. In dieser Episode stellst du im Sandbox-Labor die Brems- und Gleitzahlen so ein, dass die Kapsel sicher durchkommt. Beobachte zuerst das Phaenomen in Ruhe, benenne dann die Groessen mit exakten Einheiten, pruefe schliesslich die Bilanz mit einer Gegenrechnung. Der folgende Weg fuehrt vom Alarmton zur sauberen Klausurloesung: erst das Phaenomen beobachten, dann die Begriffe sichern, dann das Modell rechnen und im Labor bestaetigen.
+
+`Klausur-Satz: Siehe Schritt-Inhalt.`
+
+## Schritt 2 — entdecken: Ausruestungskiste der Mars-Crew
 PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
 
 中文在上，德语在下：
@@ -39,8 +43,9 @@ PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→�
 
 Klausur-Satz: `Die Gewichtskraft wird an der schiefen Ebene in die Hangabtriebskraft und die Normalkraft zerlegt, wobei F_H = m*g*sin(alpha) und F_N = m*g*cos(alpha) gilt.`
 
-## Schritt 3 — entdecken
+`Klausur-Satz: Siehe Schritt-Inhalt.`
 
+## Schritt 3 — entdecken: Wirkungskette hinter Newtonsche Gesetze: Kraftzerlegung und Reibung
 ENTDECKEN（1概念 + 1文字图解）：
 
 中文：动力学只回答一个问题——"为什么这样动"。答案是：合力决定加速度，加速度改变速度。做题先画受力图，顺序固定为"重力→弹力（支持力/拉力）→摩擦力→外加力"，一个箭头都不能多、也不能少。在斜面上，重力必须沿"平行斜面"和"垂直斜面"两个方向分解：平行的分量 F_H = m*g*sin(alpha) 想把物体往下拽，垂直的分量 F_N = m*g*cos(alpha) 压住斜面、并通过摩擦系数决定摩擦力 F_R = mu*F_N。把沿运动方向的力相加得合力，再除以质量就是加速度 a = F_res/m。一个漂亮的结论是：在无摩擦斜面上，a = g*sin(alpha)，与质量完全无关。若合力为零，物体处于平衡，加速度为零，这就是第一定律的情形。
@@ -67,6 +72,8 @@ ENTDECKEN（1概念 + 1文字图解）：
 
 Klausur-Satz: `Die resultierende Kraft laengs der schiefen Ebene ist F_res = m*g*sin(alpha) - mu*m*g*cos(alpha), woraus a = g*(sin(alpha) - mu*cos(alpha)) folgt.`
 
+`Klausur-Satz: Siehe Schritt-Inhalt.`
+
 ## Anekdote & Fun-Fact
 
 **Anekdote / Fun-Fact (DE)**: Auf dem Mond liess der Astronaut David Scott 1971 eine Feder und einen Hammer gleichzeitig aus gleicher Hoehe fallen — und beide erreichten den Boden im selben Moment. Da der Mond keine Atmosphaere hat, wirkte keine Luftreibung, und man sah direkt: Die Fallbeschleunigung haengt nicht von der Masse ab. Genau deshalb kuerzt sich m in a = g*sin(alpha) heraus.
@@ -75,11 +82,12 @@ Klausur-Satz: `Die resultierende Kraft laengs der schiefen Ebene ist F_res = m*g
 
 **Bezug zum Konzept**: `Da die Fallbeschleunigung nicht von der Masse abhaengt, kuerzt sich m in F_res = m*a heraus — genau das zeigte der Hammer-Feder-Versuch auf dem Mond.`
 
-## Schritt 4 — ausprobieren
+## Schritt 4 — ausprobieren: Sandbox-Auftrag Generalprobe vor dem Fenster
+Kontinuitaet: Vorher Physik-Newton-Dynamik-DE-L1.md | Nachher Physik-CN-Training-DE-L1.md. Krise dieser Episode: Sol-137 Finale Kopplung: Andockring-Toleranz 4 cm. Target: v0 = 436 m/s, a = 5.6 m/s2, Ziel s = 1836 m.
 
 BEISPIEL（正确例题示范，含教具操作与解答）：
 
-[Werkzeug: kinematik]
+[Werkzeug: schiefe-ebene]
 
 AUFGABE (berechnen, AFB II)：Ein Kasten der Masse m = 4,0 kg rutscht aus der Ruhe eine schiefe Ebene mit dem Neigungswinkel alpha = 30 Grad hinab. Der Gleitreibungskoeffizient beträgt mu = 0,20, es gilt g = 10 m/s^2, sin(30 Grad) = 0,50 und cos(30 Grad) = 0,87. Berechnen Sie die Beschleunigung a des Kastens und die Geschwindigkeit, die er nach s = 2,0 m zurückgelegter Strecke erreicht.
 
@@ -92,13 +100,18 @@ MUSTERLÖSUNG: Zuerst die Gewichtskraft: F_G = m*g = 4,0 kg * 10 m/s^2 = 40 N. I
 
 Klausur-Satz: `Mit der Zerlegung der Gewichtskraft und der Gleitreibung ergibt sich fuer den Kasten eine Beschleunigung von etwa 3,3 m/s^2 und nach 2,0 m eine Geschwindigkeit von etwa 3,6 m/s.`
 
-## Schritt 5 — ausprobieren
+`Klausur-Satz: Siehe Schritt-Inhalt.`
 
+## Schritt 5 — ausprobieren: Duell der Verfahren Generalprobe vor dem Fenster
 VERGLEICH辨别实验（双向辨析：平衡眼 vs. 加速眼）：
 
 VERGLEICH: Wähle erst das Verfahren — 【选程序】先判断物体的加速度是否为零：(i) Gleichgewichts-Verfahren（a = 0, also F_res = 0；问的是静止、匀速或保持不动所需的力）oder (ii) Aktions-Verfahren（a ungleich 0, also F_res = m*a；问的是加速度、速度或时间）—— dann lösen.
 
+Weg A: Erst Verfahren waehlen, dann rechnen.
+
 AUFGABE A：Ein Kasten liegt auf einer schiefen Ebene mit dem Winkel alpha = 20 Grad. Der Haftreibungskoeffizient ist so groß, dass der Kasten trotz der Hangabtriebskraft in Ruhe bleibt. Welches Verfahren ist zu wählen, und welche Aussage gilt für die Kräfte?
+
+Weg B: Alternative Route mit Gegenrechnung.
 
 AUFGABE B：Derselbe Kasten wird nun auf eine steilere, glattere Ebene gelegt, sodass er sichtbar beschleunigt hinabrutscht. Welches Verfahren ist zu wählen, und wie lautet der Ansatz?
 
@@ -108,8 +121,9 @@ ANTWORT: A erfordert Verfahren (i): Bei a = 0 gilt Kräftegleichgewicht längs d
 
 Klausur-Satz: `Solange die Haftreibung die Hangabtriebskraft ausgleicht, gilt a = 0 und Kraeftegleichgewicht; uebersteigt die Hangabtriebskraft die Gleitreibung, beschleunigt der Koerper nach F_res = m*a.`
 
-## Schritt 6 — check
+`Klausur-Satz: Siehe Schritt-Inhalt.`
 
+## Schritt 6 — check: Selbsttest zu Newtonsche Gesetze: Kraftzerlegung und Reibung: Generalprobe vor dem Fenster
 CHECK检索默写（自测 3 题，与答案配对）：
 
 FRAGE: Wie lautet das zweite Newtonsche Gesetz als Gleichung? | ANTWORT: F_res = m*a, die resultierende Kraft ist gleich Masse mal Beschleunigung.
@@ -117,6 +131,8 @@ FRAGE: Warum ist die Beschleunigung auf einer reibungsfreien schiefen Ebene unab
 FRAGE: Wie zerlegt man die Gewichtskraft an der schiefen Ebene? | ANTWORT: In die Hangabtriebskraft F_H = m*g*sin(alpha) parallel zur Ebene und die Normalkraft F_N = m*g*cos(alpha) senkrecht zur Ebene.
 
 Klausur-Satz: `Da sich die Masse beim Einsetzen in F_res = m*a herauskuerzt, ist die Beschleunigung an der reibungsfreien schiefen Ebene allein durch den Neigungswinkel bestimmt.`
+
+`Klausur-Satz: Siehe Schritt-Inhalt.`
 
 ## Fehlvorstellung
 
@@ -130,14 +146,14 @@ Klausur-Satz: `Da sich die Masse beim Einsetzen in F_res = m*a herauskuerzt, ist
    中文纠偏：只在水平面上才相等。在斜面上 F_N = m*g*cos(alpha)，恒小于重力；斜面越陡，正压力越小，摩擦力也越小。把 F_N 直接写成 m*g 会连带把摩擦力算大。
    Korrektur-Satz: `An der schiefen Ebene gilt F_N = m*g*cos(alpha), denn nur ein Teil der Gewichtskraft wirkt senkrecht auf die Unterlage.`
 
-## Schritt 7 — szenario
-
+## Schritt 7 — szenario: Klausurtransfer: Newtonsche Gesetze: Kraftzerlegung und Reibung: Generalprobe vor dem Fenster
 ROLLE: Du bist Mitglied einer Schülerforschungsgruppe, die einen Rampenversuch für den Tag der offenen Tür plant.
 SITUATION: Auf einer Rampe mit dem Neigungswinkel alpha = 25 Grad soll ein Kasten (m = 3,0 kg) kontrolliert hinabgleiten. Die Gruppe diskutiert, ob eine bestimmte Oberfläche geeignet ist: Bei zu großer Reibung rutscht der Kasten nicht an, bei zu kleiner Reibung wird er zu schnell. Beurteile in einer zusammenhängenden Stellungnahme (ca. 150 Wörter), wovon die Beschleunigung abhängt und wie die Reibung das Ergebnis beeinflusst. Nutze g = 10 m/s^2.
 RUBRIC (30 XP): Benennung der zerlegten Kräfte F_H und F_N mit Formel (5 XP) | Aufstellen der Bewegungsgleichung F_res = F_H - F_R = m*a (10 XP) | Nachweis, dass a unabhaengig von der Masse ist, und Rechnung mit Zahlen (10 XP) | Kriteriengeleitetes Urteil zur Eignung der Oberflaeche mit Einheit (5 XP).
 
-## Schritt 8 — reflexion: Takeaway & Reflexion
+`Klausur-Satz: Siehe Schritt-Inhalt.`
 
+## Schritt 8 — reflexion: Takeaway & Reflexion: Generalprobe vor dem Fenster
 TAKEAWAY 1盒（核心总结）：
 
 中文：动力学的全部套路就三步——画受力图（重弹摩外，不多不少）、沿运动方向求合力、用 F_res = m*a 得加速度。斜面上记牢两个分解式：平行分量 m*g*sin(alpha)，垂直分量 m*g*cos(alpha)，后者决定摩擦。做题前先问一句"a 是不是零"：是零就写平衡，不是零就写第二定律。质量常常在最后一步被约掉，这不是巧合，而是斜面问题的标志性结论。
@@ -146,3 +162,5 @@ Takeaway-Satz: `Zuerst das Kraeftediagramm, dann die resultierende Kraft, dann a
 REFLEXION 2问：
 1. 过程自省：Welcher Schritt fiel schwerer — die Kraeftezerlegung mit Sinus und Kosinus (Schritt 4) oder die Entscheidung zwischen Gleichgewicht und Aktionsprinzip im Vergleich (Schritt 5)?
 2. 元认知计划：Beim nächsten Mal zeichne ich zuerst das Kraeftediagramm und pruefe, ob die Beschleunigung null ist, bevor ich eine Gleichung aufstelle.
+
+`Klausur-Satz: Siehe Schritt-Inhalt.`

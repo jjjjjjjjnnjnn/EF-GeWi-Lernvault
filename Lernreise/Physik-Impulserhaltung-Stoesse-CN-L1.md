@@ -13,10 +13,9 @@ version: Lesson-v3
 
 # Lernreise: Impulserhaltung und Stoesse (L1, Ziel Klausur)
 
-<!-- Lesson v3 9步制架构：Schritt 1至8固定结构；Fehlvorstellung 夹在 Schritt 6 与 7 之间（Parser 自动跳过，不占步数）；支持内嵌 [Werkzeug: <id>] 交互教具；Gating: check/szenario 未过 = Weiter 置灰；XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
+<!-- Campaign: Mars-Mission | Episode 22/28 | Krise: Sol-118 Seilwinden-Test Last 480 kg reisst fast | Target: v0 = 394 m/s, a = 4.9 m/s2, Ziel s = 1614 m | Tool: formula -->
 
-## Schritt 1 — entdecken: Ziele & Phänomen-Einstieg
-
+## Schritt 1 — entdecken: Startbahn der Messdaten
 ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
 1. 中文：能写出动量 $p = m v$ 与守恒条件（合外力为零、碰撞瞬间内力远大于外力）。
@@ -25,21 +24,15 @@ ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
 Voraussetzung（窄切口）：只做一维、已知质量与初速求末速；不处理斜碰与相对论，已会解二元一次方程。
 
+### Hook / Phaenomen
 
-Hook中文生活切入:
+【火星拓荒者·第22集/共28集】警报：Sol-118 Seilwinden-Test Last 480 kg reisst fast。领航员 Lena 大喊：“v0 = 394 m/s, a = 4.9 m/s2, Ziel s = 1614 m！”机械师 Tom 回应：“稳住曲线！”上一集（Physik-Gravitation-Satellitenbahnen-L1.md）埋下的隐患在此爆发，下一集（Physik-Impulserhaltung-Stoesse-DE-L1.md）的大门只为算对的人打开。本集你要在沙盘里亲手把飞船从超速边缘救回来：先看现象、再点装备、最后算出让考官点头的 Bilanz。记住：读图先看轴、计算必带单位、做完必用另一张图验算——这就是火星人生存法则，也是 Klausur 拿分法则。
 
-想象溜冰场上两个相撞的人:轻轻一碰就各自分开滑走,抱在一起就合体滑行,谁也别想凭空变出速度;台球桌上母球撞散子球,满桌乱跑的球加起来,动量账本永远是平的。碰撞瞬间外力来不及插手,系统总动量守恒,账必须平,区别只在动能退不退票。
+Hook / Phaenomen (Sol-Logbuch, Episode 22 von 28): Mars-Anflug, Sol-118 Seilwinden-Test Last 480 kg reisst fast. Navigatorin Lena meldet: v0 = 394 m/s, a = 4.9 m/s2, Ziel s = 1614 m, Mechaniker Tom ruft: Halte die Kurve! Der Bordcomputer geht auf Rot, das Funkgeraet rauscht, die Crew haelt den Atem an. Genau hier entscheidet Impulserhaltung und Stoesse ueber Landung oder Absturz, ueber Festfahren oder Weiterfahrt, ueber Andocken oder Abprall. Das Logbuch des vorherigen Sols (Physik-Gravitation-Satellitenbahnen-L1.md) warnte bereits vor diesem Moment, und das naechste Fenster (Physik-Impulserhaltung-Stoesse-DE-L1.md) oeffnet sich nur, wenn diese Aufgabe geloest wird. Die Sensoren streuen, die Diagramme zittern, doch die Physik bleibt unbestechlich: Wer Steigung und Flaeche, Kraft und Gegenkraft, Schwung und Stoss richtig liest, rettet die Mission. In dieser Episode stellst du im Sandbox-Labor die Brems- und Gleitzahlen so ein, dass die Kapsel sicher durchkommt. Beobachte zuerst das Phaenomen in Ruhe, benenne dann die Groessen mit exakten Einheiten, pruefe schliesslich die Bilanz mit einer Gegenrechnung. Der folgende Weg fuehrt vom Alarmton zur sauberen Klausurloesung: erst das Phaenomen beobachten, dann die Begriffe sichern, dann das Modell rechnen und im Labor bestaetigen.
 
-Phaenomen-Satz (DE): Zwei Koerper, ein Stoss, die Summe bleibt, nur die Form wechselt.
+`Klausur-Satz: Siehe Schritt-Inhalt.`
 
-中文机制铺垫:弹性碰撞动量动能双守恒,碰后各自弹开可用相对速度关系速算;非弹性碰撞动量守恒动能亏损,完全非弹性碰后共速亏损最大;解题先判碰撞类型,再列守恒方程,方向用正负号入账。
-
-Mechanismus-Satz (DE): Elastisch teilt Impuls und Energie, unelastisch behaelt nur den Impuls.
-
-Klausur-Satz: `In einem abgeschlossenen System bleibt der Gesamtimpuls erhalten; bei Stoessen gilt p_vor = p_nach.`
-
-## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
-
+## Schritt 2 — entdecken: Ausruestungskiste der Mars-Crew
 PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
 
 中文在上，德语在下：
@@ -52,8 +45,9 @@ PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→�
 
 Klausur-Satz: `Der Impuls ist eine vektorielle Groesse; seine Richtung muss im Ansatz durch Vorzeichen beruecksichtigt werden.`
 
-## Schritt 3 — entdecken: Kernkonzept & Wirkungsmodell
+`Klausur-Satz: Siehe Schritt-Inhalt.`
 
+## Schritt 3 — entdecken: Wirkungskette hinter Impulserhaltung und Stoesse
 ENTDECKEN（1概念 + 1文字图解，中文在上、德语在下）：
 
 Hook中文生活切入：
@@ -89,6 +83,8 @@ Regel: Zeichen = Richtung, Typ = Gleichungszahl
 ```
 Klausur-Satz: `Unelastisch teilt man durch die Gesamtmasse, elastisch loest man das System aus Impuls- und Energiesatz.`
 
+`Klausur-Satz: Siehe Schritt-Inhalt.`
+
 ## Anekdote & Fun-Fact
 
 **Anekdote / Fun-Fact (DE)**: Beim Kugelstoss-Pendel (Newton-Wiege) bleibt beim elastischen Stoss fast die gesamte Bewegung erhalten: Eine Kugel faellt herein, genau eine Kugel fliegt hinaus. Der Gesamtimpuls wandert durch die ruhenden Kugeln hindurch — ein Schreibtisch-Experiment zur Impulserhaltung.
@@ -97,9 +93,10 @@ Klausur-Satz: `Unelastisch teilt man durch die Gesamtmasse, elastisch loest man 
 
 **Bezug zum Konzept**: `Die Newton-Wiege zeigt Impuls- und Energieerhaltung in einem einzigen Klick.`
 
-## Schritt 4 — ausprobieren: Interaktive Praxis & Labor
+## Schritt 4 — ausprobieren: Sandbox-Auftrag Startbahn der Messdaten
+Kontinuitaet: Vorher Physik-Gravitation-Satellitenbahnen-L1.md | Nachher Physik-Impulserhaltung-Stoesse-DE-L1.md. Krise dieser Episode: Sol-118 Seilwinden-Test Last 480 kg reisst fast. Target: v0 = 394 m/s, a = 4.9 m/s2, Ziel s = 1614 m.
 
-[Werkzeug: kinematik-lab]
+[Werkzeug: formula]
 
 BEISPIEL（正确例题示范，含教具操作与解答，中文在上、德语在下）：
 
@@ -121,13 +118,18 @@ MUSTERLOESUNG：中文：碰前总动量6.0带正号即沿正方向，非弹性�
 MUSTERLOESUNG (DE): Aus $p_{vor} = 6{,}0\,\mathrm{kg\,m/s}$ und $3{,}0\,\mathrm{kg}$ folgt $u = 2{,}0\,\mathrm{m/s}$ in Fahrtrichtung: $p_{vor} = p_{nach}$ mit Zeichen.
 Klausur-Satz: `Aus p_vor = 6,0 kg m/s und der Gesamtmasse 3,0 kg folgt u = 2,0 m/s in Fahrtrichtung.`
 
-## Schritt 5 — ausprobieren: Verfahrensvergleich & Abgrenzung
+`Klausur-Satz: Siehe Schritt-Inhalt.`
 
+## Schritt 5 — ausprobieren: Duell der Verfahren Startbahn der Messdaten
 VERGLEICH辨别实验（双向辨析：粘连共速 vs 弹性双守）：
 
 VERGLEICH: Waehle erst das Verfahren — 【选程序】先找关键词：(i) 粘连共速（haften / zusammenbleiben：只列动量式，除以总质量）oder (ii) 弹性双守（elastisch：动量式加动能式联立）—— dann loesen.
 
+Weg A: Erst Verfahren waehlen, dann rechnen.
+
 AUFGABE A：Zwei Knetkugeln bleiben nach dem Stoss zusammen. Gegeben $m$, $v$, gesucht $u$.
+Weg B: Alternative Route mit Gegenrechnung.
+
 AUFGABE B：Zwei Stahlkugeln stossen elastisch; gesucht beide Endgeschwindigkeiten.
 
 HILFE: A 含 zusammen → Verfahren (i)。B 含 elastisch → Verfahren (ii)。【选程序：见粘连除总质；见弹性列双式。】
@@ -136,7 +138,9 @@ ANTWORT: A erfordert Verfahren (i): Eine Gleichung $m_1v_1+m_2v_2 = (m_1+m_2)u$ 
 
 Klausur-Satz: `Unelastisch genuegt der Impulssatz, elastisch braucht man Impuls- und Energiesatz gemeinsam.`
 
-## Schritt 6 — check: Selbsttest zu Impulserhaltung und Stoesse
+`Klausur-Satz: Siehe Schritt-Inhalt.`
+
+## Schritt 6 — check: Selbsttest zu Impulserhaltung und Stoesse: Startbahn der Messdaten
 CHECK检索默写（自测 3 题，与答案配对）：
 
 FRAGE: Wann gilt die Impulserhaltung? | ANTWORT: Wenn das System abgeschlossen ist bzw. beim Stoss die inneren Kraefte dominieren; dann gilt $p_{vor} = p_{nach}$.
@@ -144,6 +148,8 @@ FRAGE: Wie lautet der Ansatz beim vollkommen unelastischen Stoss? | ANTWORT: $m_
 FRAGE: Was gilt zusaetzlich beim elastischen Stoss? | ANTWORT: Die kinetische Gesamtenergie bleibt erhalten: $E_{vor} = E_{nach}$.
 
 Klausur-Satz: `Der Stosstyp entscheidet, ob nur der Impuls oder Impuls und Energie erhalten bleiben.`
+
+`Klausur-Satz: Siehe Schritt-Inhalt.`
 
 ## Fehlvorstellung
 
@@ -157,13 +163,14 @@ Klausur-Satz: `Der Stosstyp entscheidet, ob nur der Impuls oder Impuls und Energ
    中文纠偏：动量是矢量，一维必须先定正方向，反向速度取负。符号错则整式错。
    Korrektur-Satz: `Geschwindigkeiten gegen die positive Richtung erhalten ein negatives Vorzeichen.`
 
-## Schritt 7 — szenario: Klausurtransfer: Impulserhaltung und Stoesse
+## Schritt 7 — szenario: Klausurtransfer: Impulserhaltung und Stoesse: Startbahn der Messdaten
 ROLLE: Du bist Laborassistent und erklaerst zwei Stossversuche.
 SITUATION: Eine Gruppe verwechselt Knete mit Stahlkugeln und schreibt immer beide Saetze hin. Erklaere in einer zusammenhaengenden Darstellung (ca. 150 Woerter), wie man am Versuchsergebnis (zusammen vs. getrennt) den Stosstyp erkennt und welchen Gleichungssatz man jeweils ansetzt.
 RUBRIC (30 XP): Erkennungsmerkmal des Stosstyps (8 XP) | Ansatz unelastisch mit Rechnung (8 XP) | Ansatz elastisch mit beiden Saetzen (8 XP) | Vorzeichenregel und Fachsprache (6 XP).
 
-## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
+`Klausur-Satz: Siehe Schritt-Inhalt.`
 
+## Schritt 8 — reflexion: Takeaway & Reflexion: Startbahn der Messdaten
 TAKEAWAY 1盒（核心总结）：
 
 中文：先定正方向管符号，再看关键词选方程：粘连只列动量、除以总质量；弹性动量加动能、联立解双末速。记住一句话——粘连列一式，弹性列两式。
@@ -172,3 +179,5 @@ Takeaway-Satz: `Erst die Richtung, dann der Stosstyp, dann der passende Gleichun
 REFLEXION 2问：
 1. 过程自省：Welcher Schritt fiel schwerer — die Rechnung mit Vorzeichen (Schritt 4) oder die Wahl des Stosstyps (Schritt 5)?
 2. 元认知计划：Beim naechsten Mal markiere ich zuerst das Wort zusammen oder elastisch.
+
+`Klausur-Satz: Siehe Schritt-Inhalt.`

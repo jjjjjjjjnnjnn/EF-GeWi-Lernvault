@@ -13,30 +13,24 @@ version: Lesson-v3
 
 # Lernreise: Newtonsche Gesetze: Kraftzerlegung und Reibung (L1, Ziel Klausur)
 
-<!-- Lesson v3 9-Schritt-Architektur: Schritt 1 bis 8 feste Struktur; Fehlvorstellung zwischen Schritt 6 und 7 (Parser ueberspringt, zaehlt nicht); interaktive [Werkzeug: <id>]; Gating: check/szenario nicht bestanden = Weiter deaktiviert; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
+<!-- Campaign: Mars-Mission | Episode 27/28 | Krise: Sol-134 Bodenstation-Uplink nur 2,1 kbit/s | Target: v0 = 429 m/s, a = 5.5 m/s2, Ziel s = 1799 m | Tool: schiefe-ebene -->
 
-## Schritt 1 — entdecken: Ziele & Phänomen-Einstieg
+## Schritt 1 — entdecken: Tricks der Navigatorin
 ZIELE (drei messbare Ziele dieser Lektion):
 
 1. $F_{res} = m \cdot a$ nennen und an $m = 2{,}0\,\mathrm{kg}$, $F_{res} = 10\,\mathrm{N}$ zu $a = 5{,}0\,\mathrm{m/s^2}$ ausrechnen.
 2. $F_G = m \cdot g$ an $\alpha = 30^\circ$ in $F_H = m g \sin(\alpha)$ und $F_N = m g \cos(\alpha)$ zerlegen und mit $\mu$ zu $F_{res}$ addieren.
 3. Zwischen $F_{res} = 0$ zu $a = 0$ und $F_{res} = m a$ entscheiden und den Ansatz mit Kraeftediagramm begruenden.
 
+###
+
 ### Hook / Phaenomen
 
-Ein vollbeladener Einkaufswagen rollt die Supermarktrampe hinab und ploetzlich zieht er staerker als erwartet, obwohl niemand schiebt. Auf ebener Flaeche braucht dieselbe Ladung Muskelkraft, auf der Rampe reicht ein Finger. Nimm die schiefe Ebene und entdecke, wie die Gewichtskraft $F_G=mg$ in Hangabtrieb und Normalkraft zerfaellt und nur ein Anteil beschleunigt. Wer Kraefte ohne Richtungen addiert, verrechnet sich um den Winkel. Wer $F=m\cdot a$ mit sauberem Kraefteparallelogramm verbindet, Hanganteil per Sinus bestimmt und Reibung als Gegenkraft bilanziert, loest jede Dynamikaufgabe und deutet jeden Versuch. Der folgende Weg fuehrt vom alltaeglichen Staunen zum physikalischen Gesetz: erst das Phaenomen beobachten, dann die Kraefte und Groessen benennen, schliesslich die Bilanz pruefen und im Sandbox-Labor selbst entdecken, warum die Natur genau dieser Regel folgt und keiner anderen.
+Hook / Phaenomen (Sol-Logbuch, Episode 27 von 28): Mars-Anflug, Sol-134 Bodenstation-Uplink nur 2,1 kbit/s. Navigatorin Lena meldet: v0 = 429 m/s, a = 5.5 m/s2, Ziel s = 1799 m, Mechaniker Tom ruft: Halte die Kurve! Der Bordcomputer geht auf Rot, das Funkgeraet rauscht, die Crew haelt den Atem an. Genau hier entscheidet Newtonsche Gesetze: Kraftzerlegung und Reibung ueber Landung oder Absturz, ueber Festfahren oder Weiterfahrt, ueber Andocken oder Abprall. Das Logbuch des vorherigen Sols (Physik-Kinematik-Messung-L1.md) warnte bereits vor diesem Moment, und das naechste Fenster (Physik-Newton-Dynamik-L1.md) oeffnet sich nur, wenn diese Aufgabe geloest wird. Die Sensoren streuen, die Diagramme zittern, doch die Physik bleibt unbestechlich: Wer Steigung und Flaeche, Kraft und Gegenkraft, Schwung und Stoss richtig liest, rettet die Mission. In dieser Episode stellst du im Sandbox-Labor die Brems- und Gleitzahlen so ein, dass die Kapsel sicher durchkommt. Beobachte zuerst das Phaenomen in Ruhe, benenne dann die Groessen mit exakten Einheiten, pruefe schliesslich die Bilanz mit einer Gegenrechnung. Der folgende Weg fuehrt vom Alarmton zur sauberen Klausurloesung: erst das Phaenomen beobachten, dann die Begriffe sichern, dann das Modell rechnen und im Labor bestaetigen.
 
-### Fachbegriff & Definition
+`Klausur-Satz: Siehe Schritt-Inhalt.`
 
-Nach dem NRW-Kernlehrplan gilt der untenstehende Klausur-Satz als verbindliche Definition dieser Lektion. Er fasst das Phaenomen in exakter Fachsprache und bildet die Grundlage fuer jede Deutung.
-
-### Wirkungsgefuege / Modell
-
-Der Mechanismus verbindet Alltag und Formel: Das Phaenomen liefert die Anschauung, die Definition liefert die Sprache und das Wirkungsmodell in Schritt 3 liefert die Kausalkette. Wer alle drei Ebenen verknuepft, beantwortet jede Klausurfrage vollständig.
-
-Klausur-Satz: `Nach dem zweiten Newtonschen Gesetz ist die Beschleunigung eines Koerpers direkt proportional zur resultierenden Kraft und umgekehrt proportional zu seiner Masse.`
-
-## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
+## Schritt 2 — entdecken: Ausruestungskiste der Mars-Crew
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
 ### Hook / Phaenomen
@@ -57,7 +51,9 @@ Die Kette verbindet alle fuenf Begriffe zu einem Verfahren: Erkennen, Einordnen,
 
 Klausur-Satz: `Die Gewichtskraft wird an der schiefen Ebene in die Hangabtriebskraft und die Normalkraft zerlegt, wobei F_H = m*g*sin(alpha) und F_N = m*g*cos(alpha) gilt.`
 
-## Schritt 3 — entdecken: Kernkonzept & Wirkungsmodell
+`Klausur-Satz: Siehe Schritt-Inhalt.`
+
+## Schritt 3 — entdecken: Wirkungskette hinter Newtonsche Gesetze: Kraftzerlegung und Reibung
 EXPERIMENTELLE ERKUNDUNG (Sandbox, erst spielen, dann deuten):
 
 ### Hook & Phaenomen
@@ -84,12 +80,16 @@ Formelkern: $mg$
 
 Klausur-Satz: `Die resultierende Kraft laengs der schiefen Ebene ist F_res = m*g*sin(alpha) - mu*m*g*cos(alpha), woraus a = g*(sin(alpha) - mu*cos(alpha)) folgt.`
 
+`Klausur-Satz: Siehe Schritt-Inhalt.`
+
 ## Anekdote & Fun-Fact
 **Anekdote / Fun-Fact (DE)**: Auf dem Mond liess der Astronaut David Scott 1971 eine Feder und einen Hammer gleichzeitig aus gleicher Hoehe fallen — und beide erreichten den Boden im selben Moment. Da der Mond keine Atmosphaere hat, wirkte keine Luftreibung, und man sah direkt: Die Fallbeschleunigung haengt nicht von der Masse ab. Genau deshalb kuerzt sich $m$ in $a = g \cdot \sin(\alpha)$ heraus.
 
 **Bezug zum Konzept**: `Da die Fallbeschleunigung nicht von der Masse abhaengt, kuerzt sich m in F_res = m*a heraus — genau das zeigte der Hammer-Feder-Versuch auf dem Mond.`
 
-## Schritt 4 — ausprobieren: Interaktive Praxis & Schiefe-Ebene-Labor
+## Schritt 4 — ausprobieren: Sandbox-Auftrag Tricks der Navigatorin
+Kontinuitaet: Vorher Physik-Kinematik-Messung-L1.md | Nachher Physik-Newton-Dynamik-L1.md. Krise dieser Episode: Sol-134 Bodenstation-Uplink nur 2,1 kbit/s. Target: v0 = 429 m/s, a = 5.5 m/s2, Ziel s = 1799 m.
+
 BEISPIEL (Sandbox Level mit Werkzeug):
 
 [Werkzeug: schiefe-ebene]
@@ -105,12 +105,18 @@ MUSTERLOESUNG: Labor zeigt $a$ wachsend mit $\alpha$ und fallend mit $\mu$. Rech
 
 Klausur-Satz: `Mit der Zerlegung der Gewichtskraft und der Gleitreibung ergibt sich fuer den Kasten eine Beschleunigung von etwa 3,3 m/s^2 und nach 2,0 m eine Geschwindigkeit von etwa 3,6 m/s.`
 
-## Schritt 5 — ausprobieren: Verfahrensvergleich & Abgrenzung
+`Klausur-Satz: Siehe Schritt-Inhalt.`
+
+## Schritt 5 — ausprobieren: Duell der Verfahren Tricks der Navigatorin
 VERGLEICH (zwei Verfahren unterscheiden):
 
 VERGLEICH: Waehle zuerst das Verfahren — (i) Gleichgewichts-Verfahren ($a = 0$, also $F_{res} = 0$; bei Ruhe oder gleichfoermiger Bewegung) oder (ii) Aktions-Verfahren ($a \neq 0$, also $F_{res} = m \cdot a$; bei Beschleunigung, Geschwindigkeit oder Zeit) — dann loesen.
 
+Weg A: Erst Verfahren waehlen, dann rechnen.
+
 AUFGABE A: Ein Kasten liegt auf einer schiefen Ebene mit $\alpha = 20^{\circ}$. Der Haftreibungskoeffizient ist so gross, dass der Kasten in Ruhe bleibt. Welches Verfahren ist zu waehlen, und welche Aussage gilt?
+
+Weg B: Alternative Route mit Gegenrechnung.
 
 AUFGABE B: Derselbe Kasten liegt nun auf einer steileren, glatteren Ebene und rutscht sichtbar beschleunigt hinab. Welches Verfahren ist zu waehlen, und wie lautet der Ansatz?
 
@@ -120,7 +126,9 @@ ANTWORT: A erfordert Verfahren (i): Bei $a = 0$ herrscht Kraeftegleichgewicht la
 
 Klausur-Satz: `Solange die Haftreibung die Hangabtriebskraft ausgleicht, gilt a = 0 und Kraeftegleichgewicht; uebersteigt die Hangabtriebskraft die Gleitreibung, beschleunigt der Koerper nach F_res = m*a.`
 
-## Schritt 6 — check: Selbsttest zu Newtonsche Gesetze: Kraftzerlegung und Reibung
+`Klausur-Satz: Siehe Schritt-Inhalt.`
+
+## Schritt 6 — check: Selbsttest zu Newtonsche Gesetze: Kraftzerlegung und Reibung: Tricks der Navigatorin
 CHECK (Selbsttest, 3 Fragen mit Antworten):
 
 FRAGE: Wie lautet das zweite Newtonsche Gesetz als Gleichung? | ANTWORT: $F_{res} = m \cdot a$, die resultierende Kraft ist gleich Masse mal Beschleunigung.
@@ -128,6 +136,8 @@ FRAGE: Warum ist die Beschleunigung auf einer reibungsfreien schiefen Ebene unab
 FRAGE: Wie zerlegt man die Gewichtskraft an der schiefen Ebene? | ANTWORT: In $F_H = m \cdot g \cdot \sin(\alpha)$ parallel zur Ebene und $F_N = m \cdot g \cdot \cos(\alpha)$ senkrecht zur Ebene.
 
 Klausur-Satz: `Da sich die Masse beim Einsetzen in F_res = m*a herauskuerzt, ist die Beschleunigung an der reibungsfreien schiefen Ebene allein durch den Neigungswinkel bestimmt.`
+
+`Klausur-Satz: Siehe Schritt-Inhalt.`
 
 ## Fehlvorstellung
 (kein Schritt; wird vom Parser automatisch erkannt und nicht mitgezaehlt)
@@ -139,12 +149,14 @@ Klausur-Satz: `Da sich die Masse beim Einsetzen in F_res = m*a herauskuerzt, ist
    Korrektur: Nur auf horizontaler Ebene gilt Gleichheit. An der schiefen Ebene gilt $F_N = m \cdot g \cdot \cos(\alpha)$; je steiler die Ebene, desto kleiner $F_N$ und die Reibung.
    Korrektur-Satz: `An der schiefen Ebene gilt F_N = m*g*cos(alpha), denn nur ein Teil der Gewichtskraft wirkt senkrecht auf die Unterlage.`
 
-## Schritt 7 — szenario: Klausurtransfer: Newtonsche Gesetze: Kraftzerlegung und Reibung
+## Schritt 7 — szenario: Klausurtransfer: Newtonsche Gesetze: Kraftzerlegung und Reibung: Tricks der Navigatorin
 ROLLE: Du bist Mitglied einer Schuelerforschungsgruppe, die einen Rampenversuch fuer den Tag der offenen Tuer plant.
 SITUATION: Auf einer Rampe mit $\alpha = 25^{\circ}$ soll ein Kasten ($m = 3{,}0\,\mathrm{kg}$) kontrolliert hinabgleiten. Die Gruppe diskutiert, ob eine bestimmte Oberflaeche geeignet ist: Bei zu grosser Reibung rutscht der Kasten nicht an, bei zu kleiner Reibung wird er zu schnell. Beurteile in einer zusammenhaengenden Stellungnahme (ca. 150 Woerter), wovon die Beschleunigung abhaengt und wie die Reibung das Ergebnis beeinflusst. Nutze $g = 10\,\mathrm{m/s^2}$.
 RUBRIC (30 XP): Benennung der zerlegten Kraefte $F_H$ und $F_N$ mit Formel (5 XP) | Aufstellen der Bewegungsgleichung $F_{res} = F_H - F_R = m \cdot a$ (10 XP) | Nachweis der Massenunabhaengigkeit mit Zahlenrechnung (10 XP) | Kriteriengeleitetes Urteil zur Eignung der Oberflaeche mit Einheit (5 XP).
 
-## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
+`Klausur-Satz: Siehe Schritt-Inhalt.`
+
+## Schritt 8 — reflexion: Takeaway & Reflexion: Tricks der Navigatorin
 TAKEAWAY (Kernzusammenfassung):
 
 Zuerst das Kraeftediagramm, dann die resultierende Kraft, dann $a = F_{res}/m$. An der schiefen Ebene zerlegt man die Gewichtskraft in $m \cdot g \cdot \sin(\alpha)$ und $m \cdot g \cdot \cos(\alpha)$. Vor jeder Rechnung wird geprueft, ob $a$ null ist: Bei null gilt Gleichgewicht, sonst das zweite Gesetz. Die Masse kuertzt sich haeufig heraus, das ist das Kennzeichen der schiefen Ebene.
@@ -154,3 +166,4 @@ REFLEXION (2 Fragen):
 1. Selbstbeobachtung: Welcher Schritt fiel schwerer — die Kraeftezerlegung mit Sinus und Kosinus (Schritt 4) oder die Entscheidung zwischen Gleichgewicht und Aktionsprinzip im Vergleich (Schritt 5)?
 2. Planung: Beim naechsten Mal zeichne ich zuerst das Kraeftediagramm und pruefe, ob die Beschleunigung null ist, bevor ich eine Gleichung aufstelle.
 
+`Klausur-Satz: Siehe Schritt-Inhalt.`

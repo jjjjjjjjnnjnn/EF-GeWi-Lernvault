@@ -13,20 +13,24 @@ version: Lesson-v3
 
 # Lernreise: CN-Training: vier Klausuraufgaben unter Zeitdruck (L1, Ziel Klausur)
 
-<!-- Lesson v3 9步制架构：Schritt 1至8固定结构；Fehlvorstellung 夹在 Schritt 6 与 7 之间（Parser 自动跳过，不占步数）；支持内嵌 [Werkzeug: <id>] 交互教具；Gating: check/szenario 未过 = Weiter 置灰；XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
+<!-- Campaign: Mars-Mission | Episode 2/28 | Krise: Sol-043 Fallschirm-Riss: Sinkrate 62 m/s statt 38 m/s | Target: v0 = 254 m/s, a = 2.3 m/s2, Ziel s = 874 m | Tool: formula -->
 
-## Schritt 1 — entdecken
-
+## Schritt 1 — entdecken: Der Fallschirm zögert
 ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
 1. 中文：能在限时条件下把图表题按"轴→斜率或面积→单位"三步解出，不超时。
 2. 中文：能对力能综合题先受力判断守恒条件，再完整列式并给出带单位的答案。
 3. 中文：能对照 EHZ（踩分点）给自己评分，并写出测量误差的评价句迁移到新情境。
 
-Klausur-Satz: `Jeder Teilschritt traegt Punkte, daher wird jeder Ansatz mit Formel, Einheit und Urteil ausgeschrieben.`
+### Hook / Phaenomen
 
-## Schritt 2 — entdecken
+【火星拓荒者·第2集/共28集】警报：Sol-043 Fallschirm-Riss: Sinkrate 62 m/s statt 38 m/s。领航员 Lena 大喊：“v0 = 254 m/s, a = 2.3 m/s2, Ziel s = 874 m！”机械师 Tom 回应：“稳住曲线！”上一集（Physik-CN-Training-DE-L1.md）埋下的隐患在此爆发，下一集（Physik-CN-Tricks-DE-L1.md）的大门只为算对的人打开。本集你要在沙盘里亲手把飞船从超速边缘救回来：先看现象、再点装备、最后算出让考官点头的 Bilanz。记住：读图先看轴、计算必带单位、做完必用另一张图验算——这就是火星人生存法则，也是 Klausur 拿分法则。
 
+Hook / Phaenomen (Sol-Logbuch, Episode 2 von 28): Mars-Anflug, Sol-043 Fallschirm-Riss: Sinkrate 62 m/s statt 38 m/s. Navigatorin Lena meldet: v0 = 254 m/s, a = 2.3 m/s2, Ziel s = 874 m, Mechaniker Tom ruft: Halte die Kurve! Der Bordcomputer geht auf Rot, das Funkgeraet rauscht, die Crew haelt den Atem an. Genau hier entscheidet CN-Training: vier Klausuraufgaben unter Zeitdruck ueber Landung oder Absturz, ueber Festfahren oder Weiterfahrt, ueber Andocken oder Abprall. Das Logbuch des vorherigen Sols (Physik-CN-Training-DE-L1.md) warnte bereits vor diesem Moment, und das naechste Fenster (Physik-CN-Tricks-DE-L1.md) oeffnet sich nur, wenn diese Aufgabe geloest wird. Die Sensoren streuen, die Diagramme zittern, doch die Physik bleibt unbestechlich: Wer Steigung und Flaeche, Kraft und Gegenkraft, Schwung und Stoss richtig liest, rettet die Mission. In dieser Episode stellst du im Sandbox-Labor die Brems- und Gleitzahlen so ein, dass die Kapsel sicher durchkommt. Beobachte zuerst das Phaenomen in Ruhe, benenne dann die Groessen mit exakten Einheiten, pruefe schliesslich die Bilanz mit einer Gegenrechnung. Der folgende Weg fuehrt vom Alarmton zur sauberen Klausurloesung: erst das Phaenomen beobachten, dann die Begriffe sichern, dann das Modell rechnen und im Labor bestaetigen.
+
+`Klausur-Satz: Siehe Schritt-Inhalt.`
+
+## Schritt 2 — entdecken: Ausruestungskiste der Mars-Crew
 PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
 
 中文在上，德语在下：
@@ -39,8 +43,9 @@ PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→�
 
 Klausur-Satz: `Der Erwartungshorizont verteilt die Punkte auf die Teilschritte, daher wird jeder Schritt hingeschrieben.`
 
-## Schritt 3 — entdecken
+`Klausur-Satz: Siehe Schritt-Inhalt.`
 
+## Schritt 3 — entdecken: Wirkungskette hinter CN-Training: vier Klausuraufgaben unter Zeitdruck
 ENTDECKEN（1概念 + 1文字图解）：
 
 中文：这份训练不是"多做几道题"，而是"练时间分配"。四道题覆盖 EF 力学的四个主力题型：图表、力能综合、圆周与振动、测量误差。每道题都有建议限时和 EHZ 踩分点，做完后请对照 EHZ 给自己打分——答案对但缺 Ansatz，只能拿部分分；Ansatz 对但算错数，仍能保住步骤分。中国训练强调"限时+核对"，德国考试强调"步骤+评价"，把两者合起来，就是这份训练的全部用意。做题时的通用节奏是：先圈轴与单位，再定 Ansatz，最后写结果加一句评价。
@@ -85,6 +90,8 @@ EHZ: Mittelwert T_10 = 20,1 s und Periodendauer T ≈ 2,0 s (2 P) | Zufallsfehle
 
 Klausur-Satz: `Die vier Aufgabentypen werden mit derselben Reihenfolge bearbeitet: Achsen und Bedingung pruefen, Ansatz aufschreiben, Ergebnis mit Einheit und Urteil notieren.`
 
+`Klausur-Satz: Siehe Schritt-Inhalt.`
+
 ## Anekdote & Fun-Fact
 
 **Anekdote / Fun-Fact (DE)**: Bereits babylonische Astronomen sollen vor ueber zweitausend Jahren den Weg eines Planeten bestimmt haben, indem sie in einer Tabelle die Geschwindigkeit ueber der Zeit auftrugen und die Flaeche darunter berechneten. Sie kannten noch keine Formel fuer die Strecke, nutzten aber genau die Idee, die heute hinter der v-t-Flaeche steht. Was im Unterricht wie ein Trick wirkt, ist also eine der aeltesten Rechenmethoden der Menschheit.
@@ -93,11 +100,12 @@ Klausur-Satz: `Die vier Aufgabentypen werden mit derselben Reihenfolge bearbeite
 
 **Bezug zum Konzept**: `Die Flaeche unter der v-t-Kurve liefert den Weg — dieselbe Idee nutzten schon antike Astronomen, und sie ist der Kern von Aufgabe 1.`
 
-## Schritt 4 — ausprobieren
+## Schritt 4 — ausprobieren: Sandbox-Auftrag Der Fallschirm zögert
+Kontinuitaet: Vorher Physik-CN-Training-DE-L1.md | Nachher Physik-CN-Tricks-DE-L1.md. Krise dieser Episode: Sol-043 Fallschirm-Riss: Sinkrate 62 m/s statt 38 m/s. Target: v0 = 254 m/s, a = 2.3 m/s2, Ziel s = 874 m.
 
 BEISPIEL（正确例题示范，含教具操作与解答）：
 
-[Werkzeug: tangent]
+[Werkzeug: formula]
 
 AUFGABE (berechnen, AFB II)：Bearbeiten Sie Aufgabe 1 vollständig: Analysieren Sie das v-t-Diagramm der Zugfahrt und berechnen Sie den Gesamtweg sowie die Durchschnittsgeschwindigkeit.
 
@@ -110,13 +118,18 @@ MUSTERLÖSUNG: Das v-t-Diagramm hat drei Abschnitte mit beschrifteten Achsen (v 
 
 Klausur-Satz: `Die Flaeche unter der v-t-Linie ergibt einen Gesamtweg von 336 m, woraus eine Durchschnittsgeschwindigkeit von etwa 9,3 m/s folgt.`
 
-## Schritt 5 — ausprobieren
+`Klausur-Satz: Siehe Schritt-Inhalt.`
 
+## Schritt 5 — ausprobieren: Duell der Verfahren Der Fallschirm zögert
 VERGLEICH辨别实验（双向辨析：面积眼 vs. 斜率眼）：
 
 VERGLEICH: Wähle erst das Verfahren — 【选程序】先看纵轴是哪个量：(i) v-t-Verfahren（纵轴是速度 v，问路程 → 读线下面积 s = Flaeche）oder (ii) s-t-Verfahren（纵轴是路程 s，问速度 → 读切线斜率 v = Δs/Δt）—— dann lösen.
 
+Weg A: Erst Verfahren waehlen, dann rechnen.
+
 AUFGABE A：Ein Diagramm zeigt auf der senkrechten Achse die Geschwindigkeit v in m/s; gefragt ist der in 30 s zurückgelegte Weg. Welches Verfahren ist zu wählen?
+
+Weg B: Alternative Route mit Gegenrechnung.
 
 AUFGABE B：Ein Diagramm zeigt auf der senkrechten Achse den Weg s in m; gefragt ist die Geschwindigkeit bei t = 10 s. Welches Verfahren ist zu wählen?
 
@@ -126,8 +139,9 @@ ANTWORT: A erfordert Verfahren (i): Da die senkrechte Achse die Geschwindigkeit 
 
 Klausur-Satz: `Traegt die senkrechte Achse v, wird der Weg als Flaeche gelesen; traegt sie s, wird die Geschwindigkeit als Steigung gelesen.`
 
-## Schritt 6 — check
+`Klausur-Satz: Siehe Schritt-Inhalt.`
 
+## Schritt 6 — check: Selbsttest zu CN-Training: vier Klausuraufgaben unter Zeitdruck: Der Fallschirm zögert
 CHECK检索默写（自测 3 题，与答案配对）：
 
 FRAGE: Wie berechnet man den Weg aus einem v-t-Diagramm mit drei Abschnitten? | ANTWORT: Man addiert die Teilflaechen der Abschnitte, also Dreiecke und Rechtecke, zum Gesamtweg.
@@ -135,6 +149,8 @@ FRAGE: Warum muss bei Aufgabe 2 zuerst die Reibung abgezogen werden? | ANTWORT: 
 FRAGE: Wie beurteilt man eine Messreihe mit drei Zeitwerten korrekt? | ANTWORT: Man bildet den Mittelwert, schaetzt aus der Streuung den zufaelligen Fehler und benennt systematische Quellen, bevor man ein eingeschraenktes Urteil formuliert.
 
 Klausur-Satz: `Erst Mittelwert, dann Zufallsfehler aus der Streuung, dann systematische Quellen — erst danach wird ein eingeschraenktes Urteil formuliert.`
+
+`Klausur-Satz: Siehe Schritt-Inhalt.`
 
 ## Fehlvorstellung
 
@@ -148,14 +164,14 @@ Klausur-Satz: `Erst Mittelwert, dann Zufallsfehler aus der Streuung, dann system
    中文纠偏：限时训练比的是"节奏稳"。图表题先圈轴、力能题先判断条件、测量题先取平均，每一步都不跳过，才能在规定时间内把步骤分全拿到。盲目求快反而会漏掉 Ansatz 和评价句。
    Korrektur-Satz: `Zeitdruck verlangt eine feste Reihenfolge, nicht das Ueberspringen von Ansaetzen und Urteilen.`
 
-## Schritt 7 — szenario
-
+## Schritt 7 — szenario: Klausurtransfer: CN-Training: vier Klausuraufgaben unter Zeitdruck: Der Fallschirm zögert
 ROLLE: Du bist Tutor und leitest eine 45-minütige Klausursimulation für eine EF-Lerngruppe.
 SITUATION: Die Gruppe soll die vier Aufgaben aus Schritt 3 unter realen Bedingungen bearbeiten (insgesamt ca. 47 Minuten) und anschließend mit dem EHZ selbst korrigieren. Beurteile in einer zusammenhängenden Stellungnahme (ca. 150 Wörter), wie man die Bearbeitungszeit sinnvoll auf die vier Aufgabentypen verteilt und worauf man beim Selbstkorrigieren besonders achten sollte.
 RUBRIC (30 XP): Sinnvolle Zeitverteilung auf die vier Aufgabentypen mit Begruendung (10 XP) | Hinweis auf die typischen Punktverluste (fehlender Ansatz, fehlende Einheit, fehlende Bewertung) (10 XP) | Vorgehen beim Selbstkorrigieren mit dem EHZ (5 XP) | Fachsprachlich korrekte und nachvollziehbare Darstellung (5 XP).
 
-## Schritt 8 — reflexion: Takeaway & Reflexion
+`Klausur-Satz: Siehe Schritt-Inhalt.`
 
+## Schritt 8 — reflexion: Takeaway & Reflexion: Der Fallschirm zögert
 TAKEAWAY 1盒（核心总结）：
 
 中文：这四道题就是 EF 力学笔试的缩影——图表看轴与面积，力能先减摩擦再守恒，圆周必答"谁提供向心力"，测量必须"平均+误差+受限结论"。限时训练的价值不在快，而在把固定节奏练成肌肉记忆：圈轴、写 Ansatz、带单位算、补一句评价。做完一定要用 EHZ 给自己打分，错在哪一类（漏 Ansatz / 漏单位 / 漏评价）就记下来，下一轮优先补这一类。
@@ -164,3 +180,5 @@ Takeaway-Satz: `Flaeche, Ansatz, Mittelpunkt, Mittelwert und ein weil-Satz — w
 REFLEXION 2问：
 1. 过程自省：Welcher Schritt fiel schwerer — die Flaechenzerlegung im v-t-Diagramm (Schritt 4) oder die Wahl zwischen Flaechen- und Steigungsverfahren im Vergleich (Schritt 5)?
 2. 元认知计划：Beim nächsten Mal verteile ich zuerst die Zeit auf die vier Aufgabentypen und pruefe am Ende mit dem EHZ, ob Ansatz, Einheit und Urteil vollstaendig sind.
+
+`Klausur-Satz: Siehe Schritt-Inhalt.`
