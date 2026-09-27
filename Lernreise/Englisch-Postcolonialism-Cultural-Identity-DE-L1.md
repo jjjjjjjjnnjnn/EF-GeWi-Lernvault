@@ -10,113 +10,140 @@ datum: 2026-09-26
 tags: [EF, Englisch, Postcolonialism]
 version: Lesson-v3
 ---
-
 # Lernreise: Postcolonialism and Cultural Identity (L1, Ziel Klausur)
 
 <!-- Campaign: Detektive Fal 30 -->
-## Schritt 1 — entdecken: Der versiegelte Umschlag aus der Archivnacht
+## Schritt 1 — entdecken: Der versiegelte Umschlag zur Sache
 
 ZIELE (3 Ziele, nach 15 Minuten erreichbar):
 
-1. Du ordnest Fall 30 (Passagierschein mit zwei Heimaten) in Kontext, Verfahren und Deutung ein.
-2. Du belegst jede Aussage zu Postcolonialism and Cultural Identity mit Zitat und Zeile und benennst die Funktion.
+1. Du ordnest Fall 30 in Kontext, Verfahren und Deutung ein.
+2. Du belegst jede Aussage mit Zitat und Zeile und benennst die Funktion.
 3. Du faellst ein Urteil im passenden Anforderungsbereich.
 
 HOOK:
 
-Mitten in der Nacht flackert das Blaulicht der Agentur fuer Texte und Gedanken ueber den leeren Schreibtischen, und Partner Theo Wort legt einen versiegelten Umschlag auf deinen Platz. Seit Wochen jagt ihr als Gedanken-Agent an der Seite deines Text-Detektivs durch die Jahrhunderte, und jede geloeste Spur oeffnet ein neues Portal in der Zeit. Heute geht es um Postcolonialism and Cultural Identity. Falllinie D: Das Archiv der Agentur meldet einen Riss in der Zeit, durch den ein Text in unsere Gegenwart gefallen ist. Im Umschlag steckt Fall 30: ein Passagierschein mit zwei Heimaten. Kaum haeltst du das Stueck ins Licht, faellt dir eine zweite Schicht auf: Jemand hat die Botschaft frisiert, verkuerzt oder verdreht, und nur wer Beleg, Funktion und Deutung sauber trennt, kann die Manipulation entlarven. Das naechste Portal oeffnet sich nur, wenn du drei Ziele in fuenfzehn Minuten schaffst und jede Behauptung mit Zeile und Wirkung belegst. Theo Wort gru belt schon ungeduldig, denn die Spur wird kalt.
+Der Hafen von Bristol riecht nach Tee und alten Rechnungen. Ein Denkmal steht, ein Name fehlt. Zwei Schueler lesen dieselbe Tafel und streiten.
 
-Klausur-Satz: `Identity grows between worlds: neither copy nor opposite, but answer.`
+Du erhaeltst das Hafenprotokoll mit zwei Lesarten. **Denkmal** gegen **Gegentafel** misst Erinnerung. Pruefe Sprache mit Zeile.
 
-## Schritt 2 — entdecken: Die Ausruestungskiste gegen Fall 30
+Klausur-Satz: `Der Hafen zeigt Stein gegen Pappe: Bronze behauptet, Marker antwortet.`
+
+## Schritt 2 — entdecken: Die Ausruestungskiste zum Fall
 
 AUSRUESTUNG (5 Instrumente im Koffer):
 
-- **Othering**: Othering: marking the stranger as opposite of the norm
-- **Hybridity**: Hybridity: mixed identity as third space of belonging
-- **Mimicry**: Mimicry: imitation of power as quiet resistance
-- **Centre and margin**: Centre and margin: who speaks and who is spoken about
-- **Reclaiming voice**: Reclaiming voice: writing back as answer to the canon
+- **Othering**: Othering divides us from them through fixed labels. It makes rule look natural. Difference becomes destiny.  Mechanism: Stereotype plus repetition plus institution hardens border; the labelled must answer. Counter-voice softens it.  Klausur-Tipp: Quote the label and its institution.
+- **Mimicry**: Mimicry copies the master with a difference. Almost the same, but not quite. The copy mocks the original.  Mechanism: Imitation plus slip exposes gap; laughter shifts power. The margin writes back.  Klausur-Tipp: Show copy and revealing slip.
+- **Hybridity**: Hybridity mixes repertoires into something new. It refuses either-or. The third space speaks.  Mechanism: Two codes plus creative switch builds new meaning; purity loses grip. Identity becomes verb.  Klausur-Tipp: Name both codes and the new form.
+- **Memory politics**: Memory politics decides which past gets stone. Statues argue silently. Plaques vote daily.  Mechanism: Monument plus inscription plus ritual fixes story; counter-plaque reopens it. Space teaches history.  Klausur-Tipp: Compare old and new inscription.
+- **Voice and agency**: Voice and agency mean who speaks and who decides. Permission shapes narrative. Reclaimed names empower.  Mechanism: Mic plus archive plus audience redistributes authority; listening becomes act. Silence is also message.  Klausur-Tipp: Count speakers and silences.
 
-Klausur-Satz: `Identity grows between worlds: neither copy nor opposite, but answer.`
+Klausur-Satz: `Othering, Hybridity und Memory definieren jede Postkolonialismus-Deutung.`
 
 ## Schritt 3 — entdecken: Der Mechanismus hinter dem Tatbild
 
 MECHANISMUS (Tiefenbau):
 
-Jeder Fall folgt der Kette Befund, Funktion und Deutung. Zuerst sicherst du den Befund mit Zitat und Zeile, dann bestimmst du die Funktion im Macht- oder Sinn-gefuege, erst danach formulierst du die Deutung zu Postcolonialism and Cultural Identity. Falllinie D: Das Archiv der Agentur meldet einen Riss in der Zeit, durch den ein Text in unsere Gegenwart gefallen ist. Wer die zweite Schicht des Passagierschein mit zwei Heimaten uebersieht, tappt in die Falle der Agentur.
+Erinnerung entsteht aus **Stein plus Satz**. Wer die Tafel schreibt, schreibt die Stadt.
+
+Der Weg: Sichere Denkmal- und Gegentafel mit Zeile. Bestimme Othering oder Hybridity als Verfahren. Miss, wessen Stimme zaehlt. So wird Hafen zur These.
 
 ```diagram
-Befund (Zitat mit Zeile) -> Funktion (Wirkung im Gefuege) -> Deutung (Urteil)
-Fall 30: Passagierschein mit zwei Heimaten -> Spur sichern -> Tatbild schliessen
+Monument -> Inscription -> Counter-plaque -> Memory verdict
 ```
 
-Klausur-Satz: `Identity grows between worlds: neither copy nor opposite, but answer.`
+Klausur-Satz: `Stein plus Gegentafel ergibt Streit als Fortschritt: Zwei Texte lehren mehr.`
 
 ## Anekdote
 
-A librarian shelved returned books face-out, so answers meet questions.
+A harbour city once added QR codes to statues. Visitors now hear two histories per stone.
 
-Bezug zum Konzept: `Identity grows between worlds: neither copy nor opposite, but answer.`
+Bezug zum Konzept: `Stein plus Gegentafel ergibt Streit als Fortschritt: Zwei Texte lehren mehr.`
 
 ## Schritt 4 — ausprobieren: Die Sandkasten-Pruefung mit Textlupe
 
 [Werkzeug: highlighter]
 
-AUFGABE: Untersuche den Fall-Text 30 (Passagierschein mit zwei Heimaten) zu Postcolonialism and Cultural Identity.
-TARGET: Drei Belege mit Zeile, je mit Funktion und einer Deutung in vier Saetzen.
+PRIMAERTEXT (Study text: Harbour Plaque Dispute (15 lines), study version, 100-200 words):
+
+> The statue praised a merchant of distant seas. (Z. 1)
+> BENEFACTOR, read the bronze in large letters. (Z. 2)
+> A school group stopped with worksheets. (Z. 3)
+> Whose benefit, asked Amara, whose cost? (Z. 4)
+> The guide quoted sugar, ships and charity. (Z. 5)
+> He skipped the chained middle passage. (Z. 6)
+> Two pupils fixed a cardboard counter-plaque. (Z. 7)
+> TRADER IN PEOPLE, it answered in marker. (Z. 8)
+> The teacher read both texts aloud. (Z. 9)
+> The harbour bell rang for neither side. (Z. 10)
+> Amara switched to Yoruba for one sentence. (Z. 11)
+> The group leaned closer to listen. (Z. 12)
+> The guide coughed and checked his watch. (Z. 13)
+> History, said Amara, is a harbour with tides. (Z. 14)
+> We left both plaques facing the water. (Z. 15)
+
+AUFGABE: Untersuche den Primaertext Zeile fuer Zeile und belege jede Aussage mit Zitat und Zeile.
+TARGET: Three quotations, each with effect and judgement in four sentences.
 
 HILFE:
 1. Schritt 1: Ordne den Fall in zwei Saetzen ein.
 2. Schritt 2: Sichere zwei Befunde mit Zeile.
 3. Schritt 3: Deute Befund und Funktion im Fallganzen.
 
-MUSTERLOESUNG: Der Fall 30 zeigt Postcolonialism and Cultural Identity in drei Schritten. Erstens belegt ein Zitat mit Zeile den Kern des Passagierschein mit zwei Heimaten, zweitens traegt die Funktion die Wirkung im Gefuege, drittens schliesst die Deutung das Tatbild. Damit ist die zweite Schicht entlarvt und das Portal oeffnet sich.
+MARKIERAUFTRAG: Markiere mit GELB alle **Denkmalwoerter** (BENEFACTOR, sugar, charity). Markiere mit BLAU die **Gegenstimmen** (cost, chained, TRADER, tides).
 
-Klausur-Satz: `Identity grows between worlds: neither copy nor opposite, but answer.`
+MUSTERLOESUNG: Der Fall 30 zeigt das Verfahren in drei Schritten. Erstens sichert ein Zitat mit Zeile den Befund. Zweitens benennt die Funktion die Wirkung. Drittens schliesst die Deutung das Urteil.
+
+Klausur-Satz: `Die Regel der Erinnerung: Je groesser die Buchstaben, desto genauer die Gegenfrage.`
 
 ## Schritt 5 — ausprobieren: Das doppelte Spiel Weg A gegen Weg B
 
-VERGLEICH: Waehle erst das Verfahren, dann loesen: (i) Weg A Nahverfahren (Beleg, Zitat, Wirkung) oder (ii) Weg B Fernverfahren (Kontext, Gefuege, Urteil).
+VERGLEICH: Weg A liest mikroskopisch (Text, Stil, Detail), Weg B deutet makroskopisch (Kontext, Geschichte, Ordnung).
 
-AUFGABE A: Welche Spur im Passagierschein mit zwei Heimaten verlangt Weg A? Begründe mit Zitat.
-AUFGABE B: Welche Frage zum Fallganzen verlangt Weg B? Begründe mit Kontext.
+AUFGABE A: Welche Spur verlangt Weg A? Begruende mit Zitat und Zeile.
+AUFGABE B: Welche Frage verlangt Weg B? Begruende mit Kontext.
 
 HILFE: A fragt nach Form und Naehe, also Weg A. B fragt nach Rolle und Ganzem, also Weg B.
 
-ANTWORT: A erfordert Weg A: Der Nahbeleg mit Zitat und Zeile zeigt die Wirkung im Detail. B erfordert Weg B: Der Fernblick auf Kontext und Gefuege sichert das Urteil zu Postcolonialism and Cultural Identity.
+ANTWORT A: Weg A vergleicht mikroskopisch Inschriften Wort fuer Wort: BENEFACTOR gegen TRADER, sugar gegen chained.
+ANTWORT B: Weg B deutet makroskopisch: Hafenstadt, Sklavenhandel und Erinnerungspolitik seit 2020 als Rahmen.
 
-Klausur-Satz: `Identity grows between worlds: neither copy nor opposite, but answer.`
+Klausur-Satz: `Feinlese misst das Wie der Inschrift, Stadtwissen das Warum des Hafens; beide urteilen voll.`
 
-## Schritt 6 — check: Selbsttest zu Postcolonialism and Cultural Identity
+## Schritt 6 — check: Selbsttest mit Antwortkarten
 
 CHECK (drei Fragen mit Antworten):
 
-FRAGE: Nenne die Drei-Schritt-Kette. | ANTWORT: Befund mit Zeile, Funktion im Gefuege, Deutung als Urteil.
-FRAGE: Was verlangt Weg A? | ANTWORT: Nahbeleg mit Zitat und Wirkung am Detail.
-FRAGE: Was verlangt Weg B? | ANTWORT: Kontext und Gefuege als Traeger des Urteils.
+- FRAGE: Welche zwei Tafeln musst du vergleichen? | ANTWORT: Bronze-Inschrift mit Zeile gegen Gegentafel mit Zeile.
+- FRAGE: Woran erkennst du Othering? | ANTWORT: An festen Labels plus Institution plus ausgelassener Passage.
+- FRAGE: Was leistet der Yoruba-Satz? | ANTWORT: Hybriditaet als Hoerereignis: Naehe gegen Guide-Distanz.
 
-Klausur-Satz: `Identity grows between worlds: neither copy nor opposite, but answer.`
+Klausur-Satz: `Haeufig verwechselt: Denkmal ist kein Fakt; erst Inschrift plus Ritual zaehlt.`
 
 ## Fehlvorstellung
 
-1. Fehlvorstellung: Cultures are boxes.
-   Korrektur-Satz: `Belonging is layered and negotiated daily.`
-2. Fehlvorstellung: History is past.
-   Korrektur-Satz: `Narratives rule who may speak today.`
+1. Fehlvorstellung: Statues tell truth.
+   Korrektur-Satz: `Statues argue; plaques vote.`
+2. Fehlvorstellung: Hybrid is confusion.
+   Korrektur-Satz: `Hybrid is new competence.`
 
-## Schritt 7 — szenario: Klausurtransfer: Culture editor of the student magazine zu Fall 30
+## Schritt 7 — szenario: Klausurtransfer als Culture columnist of the school paper zu Fall 30
 
-ROLLE: Du bist Culture editor of the student magazine in der Pruefung.
-SITUATION: Ein Fall zu Postcolonialism and Cultural Identity (Fall 30, Passagierschein mit zwei Heimaten) liegt unbearbeitet auf dem Tisch.
+ROLLE: Du bist Culture columnist of the school paper in der Pruefung.
+SITUATION: Ein Fall liegt unbearbeitet auf dem Tisch und verlangt Einordnung, Belege und Urteil.
 AUFGABE: Verfasse circa 150 Woerter mit Einordnung, zwei Belegen mit Zeile, Funktion, Deutung und Schlussurteil.
 RUBRIC (30 XP): Einordnung korrekt (6 XP) | Zwei Belege mit Zeile (10 XP) | Funktion plus Deutung (10 XP) | Fachsprache und Schluss (4 XP).
+
+Klausur-Satz: `AFB-III-Mustersatz: BENEFACTOR (Z. 2) gegen TRADER (Z. 8) mit Switch (Z. 11) belegt umkaempfte Erinnerung, weil Gegentafel plus Mehrsprachigkeit Deutungsmonopol bricht.`
 
 ## Schritt 8 — reflexion: Takeaway und Rueckblick aus Fall 30
 
 TAKEAWAY:
 
-Fall 30 lehrt: Beleg sichern, Funktion benennen, Urteil begruenden. Identity grows between worlds: neither copy nor opposite, but answer. Takeaway-Satz: `Identity grows between worlds: neither copy nor opposite, but answer.`
+Klausur-Satz: `Fall 30 (Postcolonialism Cultural Identity DE) schliesst: Wer Beleg, Funktion und Urteil sichert, besteht jede Klausur.`
+
+Fall 30 lehrt den Dreischritt aus Beleg, Funktion und Urteil. Takeaway-Satz: `Postkolonial lesen heisst: Tafeln vergleichen und fragen, wessen Ebbe gerade herrscht.`
 
 REFLEXION:
 1. Welche Spur fiel schwerer, der Nahbeleg oder das Fernurteil?

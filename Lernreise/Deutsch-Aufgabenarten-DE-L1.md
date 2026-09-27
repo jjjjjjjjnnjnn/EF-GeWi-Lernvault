@@ -10,114 +10,121 @@ datum: 2026-09-25
 tags: [EF, Deutsch, Methodik]
 version: Lesson-v3
 ---
-
 # Lernreise: Aufgabenarten I-IV und AFB-Gewichtung (L1, Ziel Klausur)
 
 <!-- Campaign: Detektive Fal 12 -->
-## Schritt 1 — entdecken: Der versiegelte Umschlag aus der Archivnacht
+## Schritt 1 — entdecken: Der versiegelte Umschlag zur Sache
 
 ZIELE (3 Ziele, nach 15 Minuten erreichbar):
 
-1. Du ordnest Fall 12 (Karteikasten mit vier Faechern und losen Zetteln) in Kontext, Verfahren und Deutung ein.
-2. Du belegst jede Aussage zu Aufgabenarten I-IV und AFB-Gewichtung mit Zitat und Zeile und benennst die Funktion.
+1. Du ordnest Fall 12 in Kontext, Verfahren und Deutung ein.
+2. Du belegst jede Aussage mit Beleg und benennst die Funktion.
 3. Du faellst ein Urteil im passenden Anforderungsbereich.
 
 HOOK:
 
-Mitten in der Nacht flackert das Blaulicht der Agentur fuer Texte und Gedanken ueber den leeren Schreibtischen, und Partner Theo Wort legt einen versiegelten Umschlag auf deinen Platz. Seit Wochen jagt ihr als Gedanken-Agent an der Seite deines Text-Detektivs durch die Jahrhunderte, und jede geloeste Spur oeffnet ein neues Portal in der Zeit. Heute geht es um Aufgabenarten I-IV und AFB-Gewichtung. Falllinie D: Das Archiv der Agentur meldet einen Riss in der Zeit, durch den ein Text in unsere Gegenwart gefallen ist. Im Umschlag steckt Fall 12: ein Karteikasten mit vier Faechern und losen Zetteln. Kaum haeltst du das Stueck ins Licht, faellt dir eine zweite Schicht auf: Jemand hat die Botschaft frisiert, verkuerzt oder verdreht, und nur wer Beleg, Funktion und Deutung sauber trennt, kann die Manipulation entlarven. Das naechste Portal oeffnet sich nur, wenn du drei Ziele in fuenfzehn Minuten schaffst und jede Behauptung mit Zeile und Wirkung belegst. Theo Wort gru belt schon ungeduldig, denn die Spur wird kalt.
+Die Pruefungsordnung liegt auf dem Tisch: Vier Aufgabenarten, drei Anforderungsbereiche, ein Zeitplan. Wer Typ und AFB verwechselt, verschenkt Punkte vor dem ersten Satz. Du erhaeltst den Aufgabenarten-Kompass mit Musterverben. Jedes **Operator**-Verb verlangt eine eigene Textsorte.
 
-Klausur-Satz: `Der Operator befiehlt das Verfahren: Wer ihn liest, waehlt die richtige Werkzeugspur.`
+Variante B prueft denselben Kompass an einem zweiten Aufgabensatz mit vertauschten Operatoren.
 
-## Schritt 2 — entdecken: Die Ausruestungskiste gegen Fall 12
+Klausur-Satz: `Der Aufgabenartentyp entscheidet ueber Textsorte: Wer den Typ trifft, schreibt die halbe Note.`
+
+## Schritt 2 — entdecken: Die Ausruestungskiste zum Fall
 
 AUSRUESTUNG (5 Instrumente im Koffer):
 
-- **Aufgabenart eins**: Aufgabenart eins: Wiedergabe und Einordnung des Materials
-- **Aufgabenart zwei**: Aufgabenart zwei: Analyse mit Beleg und Funktion
-- **Aufgabenart drei**: Aufgabenart drei: Deutung und erlaeuternde Einbettung
-- **Aufgabenart vier**: Aufgabenart vier: Eroerterung und beurteilendes Abwaegen
-- **Operatorentreue**: Operatorentreue: Verben des Auftrags steuern Verfahren und Tiefe
+- **Aufgabenart I**: Die Aufgabenart I verlangt Reproduktion und Analyse: Zusammenfassen, einordnen, Verfahren sichern. Sie prueft Verstehen ohne Wertung.  Mechanismus: Mechanismus: Operatoren wie darstellen und zusammenfassen rufen AFB I-II; Belege tragen die Leistung.  Klausur-Tipp: Klausur-Tipp: Antworte mit Belegkette, nicht mit Meinung.
+- **Aufgabenart II**: Die Aufgabenart II verlangt Analyse und Vergleich zweier Texte oder Positionen. Sie misst Struktur- und Adressatenblick.  Mechanismus: Mechanismus: Vergleichskriterien plus Belegpaare erzeugen Profilm; jede These braucht Spiegelstelle.  Klausur-Tipp: Klausur-Tipp: Arbeite mit Kriterienraster und Paar-Belegen.
+- **Aufgabenart III**: Die Aufgabenart III verlangt Eroerterung mit eigenem Urteil. Sie prueft Abwaegung und Position.  Mechanismus: Mechanismus: Pro- und Contra-Kette plus Gewichtung ergibt Urteil; Staerkstes kommt zuletzt.  Klausur-Tipp: Klausur-Tipp: Schliesse mit gewichteter Position, nicht mit Sowohl-als-auch.
+- **Aufgabenart IV**: Die Aufgabenart IV verlangt gestaltendes Schreiben mit Kommentar. Sie misst Registerwechsel und Reflexion.  Mechanismus: Mechanismus: Adressat plus Anlass bestimmt Form; Kommentar begruendet jede Entscheidung.  Klausur-Tipp: Klausur-Tipp: Halte Form ein und kommentiere drei Eingriffe.
+- **AFB-Gewichtung**: AFB I sichert Wissen, AFB II wendet Verfahren an, AFB III urteilt und gestaltet. Die Gewichtung steht im Operator.  Mechanismus: Mechanismus: deuten und beurteilen rufen AFB III; jede Wertung braucht Beleg und Massstab.  Klausur-Tipp: Klausur-Tipp: Markiere Operatoren und plane Zeit nach AFB.
 
-Klausur-Satz: `Der Operator befiehlt das Verfahren: Wer ihn liest, waehlt die richtige Werkzeugspur.`
+Klausur-Satz: `Reproduktion, Analyse und Urteil bilden die AFB-Treppe jeder Deutschklausur.`
 
 ## Schritt 3 — entdecken: Der Mechanismus hinter dem Tatbild
 
 MECHANISMUS (Tiefenbau):
 
-Jeder Fall folgt der Kette Befund, Funktion und Deutung. Zuerst sicherst du den Befund mit Zitat und Zeile, dann bestimmst du die Funktion im Macht- oder Sinn-gefuege, erst danach formulierst du die Deutung zu Aufgabenarten I-IV und AFB-Gewichtung. Falllinie D: Das Archiv der Agentur meldet einen Riss in der Zeit, durch den ein Text in unsere Gegenwart gefallen ist. Wer die zweite Schicht des Karteikasten mit vier Faechern und losen Zetteln uebersieht, tappt in die Falle der Agentur.
+Aufgabentyp plus Operator ergibt Textsorte. Der **Operator** steuert Tiefe, der **Typ** steuert Form. Wer beides liest, plant richtig.
+
+Der Weg: Unterstreiche alle Operatoren. Ordne jedem AFB zu. Waehle Textsorte und Belegdichte danach. So wird Aufgabenstellung zum Bauplan.
 
 ```diagram
-Befund (Zitat mit Zeile) -> Funktion (Wirkung im Gefuege) -> Deutung (Urteil)
-Fall 12: Karteikasten mit vier Faechern und losen Zetteln -> Spur sichern -> Tatbild schliessen
+Aufgabentext -> Operator -> AFB (I/II/III) -> Textsorte + Belegdichte
 ```
 
-Klausur-Satz: `Der Operator befiehlt das Verfahren: Wer ihn liest, waehlt die richtige Werkzeugspur.`
+Klausur-Satz: `Operator plus AFB ergibt Verfahren: darstellen sichert, vergleichen spiegelt, beurteilen wägt.`
 
 ## Anekdote
 
-Ein Pruefer sortierte einst Aufgaben nach Verben und fand jeden Fehlgriff in Sekunden.
+Ein Pruefer zaehlte einst elf Operatoren in einer Aufgabe. Die beste Arbeit beantwortete alle der Reihe nach.
 
-Bezug zum Konzept: `Der Operator befiehlt das Verfahren: Wer ihn liest, waehlt die richtige Werkzeugspur.`
+Bezug zum Konzept: `Operator plus AFB ergibt Verfahren: darstellen sichert, vergleichen spiegelt, beurteilen wägt.`
 
 ## Schritt 4 — ausprobieren: Die Sandkasten-Pruefung mit Baukasten
 
 [Werkzeug: lego]
 
-AUFGABE: Untersuche den Fall-Text 12 (Karteikasten mit vier Faechern und losen Zetteln) zu Aufgabenarten I-IV und AFB-Gewichtung.
-TARGET: Drei Belege mit Zeile, je mit Funktion und einer Deutung in vier Saetzen.
+AUFGABE: Baue aus zwei Operatoren je einen Einleitungssatz und eine Gliederung mit drei Punkten.
+TARGET: Drei Bausteine mit Beleg, je mit Funktion und einer Deutung in vier Saetzen.
 
 HILFE:
 1. Schritt 1: Ordne den Fall in zwei Saetzen ein.
-2. Schritt 2: Sichere zwei Befunde mit Zeile.
-3. Schritt 3: Deute Befund und Funktion im Fallganzen.
+2. Schritt 2: Sichere zwei Bausteine mit Beleg.
+3. Schritt 3: Deute Baustein und Funktion im Fallganzen.
 
-MUSTERLOESUNG: Der Fall 12 zeigt Aufgabenarten I-IV und AFB-Gewichtung in drei Schritten. Erstens belegt ein Zitat mit Zeile den Kern des Karteikasten mit vier Faechern und losen Zetteln, zweitens traegt die Funktion die Wirkung im Gefuege, drittens schliesst die Deutung das Tatbild. Damit ist die zweite Schicht entlarvt und das Portal oeffnet sich.
+MUSTERLOESUNG: Der Fall 12 zeigt das Verfahren in drei Schritten. Erstens sichert ein Beleg den Kern. Zweitens traegt die Funktion die Wirkung. Drittens schliesst die Deutung das Urteil.
 
-Klausur-Satz: `Der Operator befiehlt das Verfahren: Wer ihn liest, waehlt die richtige Werkzeugspur.`
+Klausur-Satz: `Die Baukasten-Regel: Je hoeher der AFB, desto dichter Beleg plus Massstab.`
 
 ## Schritt 5 — ausprobieren: Das doppelte Spiel Weg A gegen Weg B
 
-VERGLEICH: Waehle erst das Verfahren, dann loesen: (i) Weg A Nahverfahren (Beleg, Zitat, Wirkung) oder (ii) Weg B Fernverfahren (Kontext, Gefuege, Urteil).
+VERGLEICH: Weg A arbeitet mikroskopisch (Detail, Beleg, Form), Weg B plant makroskopisch (Strategie, Kontext, Gewicht).
 
-AUFGABE A: Welche Spur im Karteikasten mit vier Faechern und losen Zetteln verlangt Weg A? Begründe mit Zitat.
-AUFGABE B: Welche Frage zum Fallganzen verlangt Weg B? Begründe mit Kontext.
+AUFGABE A: Welche Spur verlangt Weg A? Begruende mit Beleg.
+AUFGABE B: Welche Frage verlangt Weg B? Begruende mit Kontext.
 
 HILFE: A fragt nach Form und Naehe, also Weg A. B fragt nach Rolle und Ganzem, also Weg B.
 
-ANTWORT: A erfordert Weg A: Der Nahbeleg mit Zitat und Zeile zeigt die Wirkung im Detail. B erfordert Weg B: Der Fernblick auf Kontext und Gefuege sichert das Urteil zu Aufgabenarten I-IV und AFB-Gewichtung.
+ANTWORT A: Weg A sichert AFB I-II mikroskopisch: Operator zerlegen, Belegkette planen, Textsorte einhalten.
+ANTWORT B: Weg B entscheidet makroskopisch: Pruefungszeit, Punkteverteilung und Adressatenlage bestimmen Schwerpunkt und Urteilstiefe.
 
-Klausur-Satz: `Der Operator befiehlt das Verfahren: Wer ihn liest, waehlt die richtige Werkzeugspur.`
+Klausur-Satz: `Naharbeit sichert das Wie der Form, Fernplanung das Warum der Gewichtung; beide bestehen die Klausur.`
 
-## Schritt 6 — check: Selbsttest zu Aufgabenarten I-IV und AFB-Gewichtung
+## Schritt 6 — check: Selbsttest mit Antwortkarten
 
 CHECK (drei Fragen mit Antworten):
 
-FRAGE: Nenne die Drei-Schritt-Kette. | ANTWORT: Befund mit Zeile, Funktion im Gefuege, Deutung als Urteil.
-FRAGE: Was verlangt Weg A? | ANTWORT: Nahbeleg mit Zitat und Wirkung am Detail.
-FRAGE: Was verlangt Weg B? | ANTWORT: Kontext und Gefuege als Traeger des Urteils.
+- FRAGE: Welche vier Typen musst du unterscheiden? | ANTWORT: I Reproduktion, II Analyse/Vergleich, III Eroerterung, IV Gestaltung.
+- FRAGE: Was steuert der Operator? | ANTWORT: Tiefe (AFB) und Textsorte der Antwort.
+- FRAGE: Woran erkennst du AFB III? | ANTWORT: An deuten, beurteilen, gestalten: Urteil mit Massstab.
 
-Klausur-Satz: `Der Operator befiehlt das Verfahren: Wer ihn liest, waehlt die richtige Werkzeugspur.`
+Klausur-Satz: `Haeufig verwechselt: zusammenfassen ist nicht deuten; jede Wertung ohne Massstab faellt.`
 
 ## Fehlvorstellung
 
-1. Fehlvorstellung: Alle Aufgaben wollten dasselbe.
-   Korrektur-Satz: `Jede Art verlangt eigenes Verfahren und eigene Textnaehe.`
-2. Fehlvorstellung: Operatoren seien Deko.
-   Korrektur-Satz: `Der Operator legt fest, ob Beleg, Deutung oder Urteil zaehlt.`
+1. Fehlvorstellung: Jede Aufgabe wolle Meinung.
+   Korrektur-Satz: `Typ I-II will Beleg, erst III-IV will Urteil.`
+2. Fehlvorstellung: AFB sei Dekor.
+   Korrektur-Satz: `AFB steuert Tiefe, Zeit und Belegdichte.`
 
-## Schritt 7 — szenario: Klausurtransfer: Klausurplaner der Fachschaft zu Fall 12
+## Schritt 7 — szenario: Klausurtransfer als Klausurplaner der Stufe zu Fall 12
 
-ROLLE: Du bist Klausurplaner der Fachschaft in der Pruefung.
-SITUATION: Ein Fall zu Aufgabenarten I-IV und AFB-Gewichtung (Fall 12, Karteikasten mit vier Faechern und losen Zetteln) liegt unbearbeitet auf dem Tisch.
-AUFGABE: Verfasse circa 150 Woerter mit Einordnung, zwei Belegen mit Zeile, Funktion, Deutung und Schlussurteil.
-RUBRIC (30 XP): Einordnung korrekt (6 XP) | Zwei Belege mit Zeile (10 XP) | Funktion plus Deutung (10 XP) | Fachsprache und Schluss (4 XP).
+ROLLE: Du bist Klausurplaner der Stufe in der Pruefung.
+SITUATION: Ein Fall liegt unbearbeitet auf dem Tisch und verlangt Einordnung, Belege und Urteil.
+AUFGABE: Verfasse circa 150 Woerter mit Einordnung, zwei Belegen, Funktion, Deutung und Schlussurteil.
+RUBRIC (30 XP): Einordnung korrekt (6 XP) | Zwei Belege (10 XP) | Funktion plus Deutung (10 XP) | Fachsprache und Schluss (4 XP).
+
+Klausur-Satz: `AFB-III-Mustersatz: Die Aufgabe verlangt beurteilen (AFB III); daher folgt nach Analyse ein gewichtetes Urteil mit Beleg und Massstab.`
 
 ## Schritt 8 — reflexion: Takeaway und Rueckblick aus Fall 12
 
 TAKEAWAY:
 
-Fall 12 lehrt: Beleg sichern, Funktion benennen, Urteil begruenden. Der Operator befiehlt das Verfahren: Wer ihn liest, waehlt die richtige Werkzeugspur. Takeaway-Satz: `Der Operator befiehlt das Verfahren: Wer ihn liest, waehlt die richtige Werkzeugspur.`
+Klausur-Satz: `Fall 12 (Aufgabenarten DE) schliesst: Wer Beleg, Funktion und Urteil sichert, besteht jede Klausur.`
+
+Fall 12 lehrt den Dreischritt aus Beleg, Funktion und Urteil. Takeaway-Satz: `Aufgaben lesen heisst: Operatoren wiegen, AFB planen und Textsorte halten.`
 
 REFLEXION:
 1. Welche Spur fiel schwerer, der Nahbeleg oder das Fernurteil?
-2. Beim naechsten Mal sichere ich zuerst Zitat und Zeile, weil sie jede Deutung tragen.
+2. Beim naechsten Mal sichere ich zuerst Beleg und Gliederung, weil sie jede Deutung tragen.

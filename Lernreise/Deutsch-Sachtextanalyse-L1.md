@@ -10,60 +10,80 @@ datum: 2026-09-25
 tags: [EF, Deutsch, Rhetorik]
 version: Lesson-v3
 ---
-
 # Lernreise: Leserlenkung und Rhetorik im Sachtext (L1, Ziel Klausur)
 
 <!-- Campaign: Detektive Fal 23 -->
-## Schritt 1 — entdecken: Der versiegelte Umschlag aus der Registratur
+## Schritt 1 — entdecken: Der versiegelte Umschlag zur Sache
 
 ZIELE (3 Ziele, nach 15 Minuten erreichbar):
 
-1. Du ordnest Fall 23 (Schulhof-Plakat in zwei Sprachversionen) in Kontext, Verfahren und Deutung ein.
-2. Du belegst jede Aussage zu Leserlenkung und Rhetorik im Sachtext mit Zitat und Zeile und benennst die Funktion.
+1. Du ordnest Fall 23 in Kontext, Verfahren und Deutung ein.
+2. Du belegst jede Aussage mit Zitat und Zeile und benennst die Funktion.
 3. Du faellst ein Urteil im passenden Anforderungsbereich.
 
 HOOK:
 
-Mitten in der Nacht flackert das Blaulicht der Agentur fuer Texte und Gedanken ueber den leeren Schreibtischen, und Partner Theo Wort legt einen versiegelten Umschlag auf deinen Platz. Seit Wochen jagt ihr als Gedanken-Agent an der Seite deines Text-Detektivs durch die Jahrhunderte, und jede geloeste Spur oeffnet ein neues Portal in der Zeit. Heute geht es um Leserlenkung und Rhetorik im Sachtext. Falllinie C: Hinter einer Stahltuer rauscht ein Ministerium, das Woerter loescht und Gedanken neu schreibt. Im Umschlag steckt Fall 23: ein Schulhof-Plakat in zwei Sprachversionen. Kaum haeltst du das Stueck ins Licht, faellt dir eine zweite Schicht auf: Jemand hat die Botschaft frisiert, verkuerzt oder verdreht, und nur wer Beleg, Funktion und Deutung sauber trennt, kann die Manipulation entlarven. Das naechste Portal oeffnet sich nur, wenn du drei Ziele in fuenfzehn Minuten schaffst und jede Behauptung mit Zeile und Wirkung belegst. Theo Wort gru belt schon ungeduldig, denn die Spur wird kalt.
+Die Stadt streitet ueber autofreie Samstage. Ein Sachtext verspricht reine Luft und volle Kassen zugleich. Haendler warnen, Eltern hoffen, Pendler schweigen.
 
-Klausur-Satz: `Der Sachtext informiert scheinbar neutral und lenkt dabei jeden Blick.`
+Du erhaeltst die Streitakte mit Grafiken. Jede **Kurve** steigt, jede **Ueberschrift** urteilt schon. Trenne Datum von Deutung mit Zeile.
 
-## Schritt 2 — entdecken: Die Ausruestungskiste gegen Fall 23
+Klausur-Satz: `Der City-Text verspricht allen alles: Die Grafik strahlt, wo die Methode schweigt.`
+
+## Schritt 2 — entdecken: Die Ausruestungskiste zum Fall
 
 AUSRUESTUNG (5 Instrumente im Koffer):
 
-- **These des Autors**: These des Autors: zugespitzte Kernbehauptung des Sachtexts
-- **Leserlenkung**: Leserlenkung: Wortwahl und Beispiele als stille Steuerung
-- **Belegfuehrung**: Belegfuehrung: Statistik, Beispiel und Autoritaet als Stuetzpfeiler
-- **Sachlichkeitssignal**: Sachlichkeitssignal: Nominalstil und Passiv als Objektivitaetskostuem
-- **Adressatenkalkuel**: Adressatenkalkuel: zugeschnittene Ansprache an ein Publikum
+- **These des Autors**: Die These bündelt die Hauptbehauptung des Sachtexts in pointierter Form. Sie steuert Auswahl und Aufbau. Jeder Absatz dient ihr.  Mechanismus: These plus Dramaturgie erzeugt Leseweg; Einwaende erscheinen spaet und kurz. Wer den Aufbau misst, sieht die Absicht. Klausur-Tipp: Zitiere oder paraphrasiere die These exakt.
+- **Leserlenkung**: Die Leserlenkung lenkt Blick und Gefuehl durch Titel, Bilder und Beispiele. Sie ersetzt Argument durch Stimmung. Der Leser merkt es kaum.  Mechanismus: Bild plus Ueberschrift rahmt die Zahl; Reihenfolge erzeugt Dringlichkeit. So wird Zustimmung voreingestellt. Klausur-Tipp: Nenne Rahmen und Reihenfolge.
+- **Belegfuehrung**: Die Belegfuehrung kombiniert Daten, Studien und Stimmen. Sie wirkt nur mit transparenter Methode. Jede Zahl braucht Nenner und Jahr.  Mechanismus: Grafik plus Achsenwahl veraendert Botschaft; Ausschnitt vergroessert Effekt. Ohne Methode bleibt Zahl Behauptung. Klausur-Tipp: Pruefe Achsen, Zeitraum und Stichprobe.
+- **Sachlichkeitssignal**: Das Sachlichkeitssignal nutzt Fachwort, Passiv und Zahl als Autoritaetskleid. Es suggeriert Messbarkeit. Dahinter steht Auswahl.  Mechanismus: Fachwort plus Passiv entpersonalisiert; Prozent plus Komma beruhigt. So wird Deutung zu Datum. Klausur-Tipp: Frage nach Akteur hinter dem Passiv.
+- **Adressatenkalkuel**: Das Adressatenkalkuel bedient Sorgen und Stolz der Zielgruppe. Pendler hoeren Zeit, Haendler hoeren Umsatz. Jeder findet sein Wort.  Mechanismus: Nutzenversprechen plus Angstminderung oeffnet Geloebeutel und Herzen. So wird Gruppe zur Gefolgschaft. Klausur-Tipp: Ordne jedes Versprechen einer Gruppe zu.
 
-Klausur-Satz: `Der Sachtext informiert scheinbar neutral und lenkt dabei jeden Blick.`
+Klausur-Satz: `These, Rahmen und Belegluecke bilden das Pruefdreieck des Sachtexts.`
 
 ## Schritt 3 — entdecken: Der Mechanismus hinter dem Tatbild
 
 MECHANISMUS (Tiefenbau):
 
-Jeder Fall folgt der Kette Befund, Funktion und Deutung. Zuerst sicherst du den Befund mit Zitat und Zeile, dann bestimmst du die Funktion im Macht- oder Sinn-gefuege, erst danach formulierst du die Deutung zu Leserlenkung und Rhetorik im Sachtext. Falllinie C: Hinter einer Stahltuer rauscht ein Ministerium, das Woerter loescht und Gedanken neu schreibt. Wer die zweite Schicht des Schulhof-Plakat in zwei Sprachversionen uebersieht, tappt in die Falle der Agentur.
+Auch hier gilt **Rahmen schlaegt Zahl**. Ueberschrift, Bild und Reihenfolge deuten, bevor gerechnet wird.
+
+Der Weg: Sichere These und Aufbau. Pruefe Achsen, Nenner und Zeitraum jeder Grafik. Benenne Gewinner und Verlierer des Vorschlags. So wird Bilanz ehrlich.
 
 ```diagram
-Befund (Zitat mit Zeile) -> Funktion (Wirkung im Gefuege) -> Deutung (Urteil)
-Fall 23: Schulhof-Plakat in zwei Sprachversionen -> Spur sichern -> Tatbild schliessen
+Rahmen (Titel/Bild) -> Zahl (Achse/Zeitraum) -> Deutung -> Bilanz (Gewinner/Verlierer)
 ```
 
-Klausur-Satz: `Der Sachtext informiert scheinbar neutral und lenkt dabei jeden Blick.`
+Klausur-Satz: `Steile Kurve plus enge Stichprobe ergibt Stimmung statt Bilanz.`
 
 ## Anekdote
 
-Ein Lektor fand einst drei Lenkungstricks auf einer einzigen Seite.
+Eine Grafikerin streckte einst eine Achse und verdoppelte die Empörung. Seitdem misst sie jede Kurve mit dem Lineal nach.
 
-Bezug zum Konzept: `Der Sachtext informiert scheinbar neutral und lenkt dabei jeden Blick.`
+Bezug zum Konzept: `Steile Kurve plus enge Stichprobe ergibt Stimmung statt Bilanz.`
 
 ## Schritt 4 — ausprobieren: Die Sandkasten-Pruefung mit Textlupe
 
 [Werkzeug: highlighter]
 
-AUFGABE: Untersuche den Fall-Text 23 (Schulhof-Plakat in zwei Sprachversionen) zu Leserlenkung und Rhetorik im Sachtext.
+PRIMAERTEXT (Studienfassung: Sachtext Autofreie Samstage (Ausschnitt, 15 Zeilen), Studienfassung, 100-200 Woerter):
+
+> Die autofreie City bringt allen mehr: Luft, Umsatz, Leben. (Z. 1)
+> Feinstaub sank an drei Samstagen um 22 Prozent. (Z. 2)
+> Haendler Jonas meldet volle Tische und lachende Gaeste. (Z. 3)
+> Die Grafik zeigt steil nach oben - ein klares Bild. (Z. 4)
+> Gemessen wurde an der Fussgaengerzone, mittags bei Sonne. (Z. 5)
+> Regentage und Randlagen fehlen in der Statistik. (Z. 6)
+> Dennoch gilt: Die Richtung stimmt, der Rest ist Fleiss. (Z. 7)
+> Pendler sparen Nerven, weil Busse jetzt Vorfahrt haben. (Z. 8)
+> Verspaetungen ausserhalb der Zone bleiben unerwaehnt. (Z. 9)
+> Objektiv betrachtet gewinnt die Mehrheit deutlich. (Z. 10)
+> Es wurde erhoben: Zufriedenheit steigt auf 8,4 Punkte. (Z. 11)
+> Befragt wurden Passanten am Sonnabend, mittags. (Z. 12)
+> Kritik aeussern vor allem Lieferanten mit Zeitdruck. (Z. 13)
+> Ihre Sorgen werden als Uergangsmuedigkeit verbucht. (Z. 14)
+> Wer die City liebt, stimmt fuer freie Samstage. (Z. 15)
+
+AUFGABE: Untersuche den Primaertext Zeile fuer Zeile und belege jede Aussage mit Zitat und Zeile.
 TARGET: Drei Belege mit Zeile, je mit Funktion und einer Deutung in vier Saetzen.
 
 HILFE:
@@ -71,52 +91,59 @@ HILFE:
 2. Schritt 2: Sichere zwei Befunde mit Zeile.
 3. Schritt 3: Deute Befund und Funktion im Fallganzen.
 
-MUSTERLOESUNG: Der Fall 23 zeigt Leserlenkung und Rhetorik im Sachtext in drei Schritten. Erstens belegt ein Zitat mit Zeile den Kern des Schulhof-Plakat in zwei Sprachversionen, zweitens traegt die Funktion die Wirkung im Gefuege, drittens schliesst die Deutung das Tatbild. Damit ist die zweite Schicht entlarvt und das Portal oeffnet sich.
+MARKIERAUFTRAG: Markiere mit GELB alle **Rahmungswoerter** (allen, klar, objektiv, liebt). Markiere mit BLAU die **Methoden-Luecken** (Z. 5-6, Z. 9, Z. 12).
 
-Klausur-Satz: `Der Sachtext informiert scheinbar neutral und lenkt dabei jeden Blick.`
+MUSTERLOESUNG: Der Fall 23 zeigt das Kernverfahren in drei Schritten. Erstens sichert ein Zitat mit Zeile den Befund. Zweitens benennt die Funktion die Wirkung im Gefuege. Drittens schliesst die Deutung das Urteil. Damit ist die zweite Schicht entlarvt.
+
+Klausur-Satz: `Die Regel der Grafik: Je steiler der Anstieg, desto genauer der Blick auf Achse und Zeitraum.`
 
 ## Schritt 5 — ausprobieren: Das doppelte Spiel Weg A gegen Weg B
 
-VERGLEICH: Waehle erst das Verfahren, dann loesen: (i) Weg A Nahverfahren (Beleg, Zitat, Wirkung) oder (ii) Weg B Fernverfahren (Kontext, Gefuege, Urteil).
+VERGLEICH: Weg A liest mikroskopisch (Text, Rhetorik, Detail), Weg B deutet makroskopisch (Epoche, Kontext, Ordnung).
 
-AUFGABE A: Welche Spur im Schulhof-Plakat in zwei Sprachversionen verlangt Weg A? Begründe mit Zitat.
-AUFGABE B: Welche Frage zum Fallganzen verlangt Weg B? Begründe mit Kontext.
+AUFGABE A: Welche Spur verlangt Weg A? Begruende mit Zitat und Zeile.
+AUFGABE B: Welche Frage verlangt Weg B? Begruende mit Kontext.
 
 HILFE: A fragt nach Form und Naehe, also Weg A. B fragt nach Rolle und Ganzem, also Weg B.
 
-ANTWORT: A erfordert Weg A: Der Nahbeleg mit Zitat und Zeile zeigt die Wirkung im Detail. B erfordert Weg B: Der Fernblick auf Kontext und Gefuege sichert das Urteil zu Leserlenkung und Rhetorik im Sachtext.
+ANTWORT A: Weg A seziert mikroskopisch Methode und Wortfeld: Messort Z. 5, Luecke Z. 6, Passiv Z. 11 mit Stichprobe Z. 12.
+ANTWORT B: Weg B bilanziert makroskopisch Interessen: Handel, Pendler und Lieferanten tragen ungleiche Kosten des Versprechens.
 
-Klausur-Satz: `Der Sachtext informiert scheinbar neutral und lenkt dabei jeden Blick.`
+Klausur-Satz: `Feinlese misst das Wie der Rahmung, Interessenwissen das Warum der Auswahl; beide erstellen Bilanz.`
 
-## Schritt 6 — check: Selbsttest zu Leserlenkung und Rhetorik im Sachtext
+## Schritt 6 — check: Selbsttest mit Antwortkarten
 
 CHECK (drei Fragen mit Antworten):
 
-FRAGE: Nenne die Drei-Schritt-Kette. | ANTWORT: Befund mit Zeile, Funktion im Gefuege, Deutung als Urteil.
-FRAGE: Was verlangt Weg A? | ANTWORT: Nahbeleg mit Zitat und Wirkung am Detail.
-FRAGE: Was verlangt Weg B? | ANTWORT: Kontext und Gefuege als Traeger des Urteils.
+- FRAGE: Was braucht jede Prozentzahl? | ANTWORT: Nenner, Zeitraum, Messort und Vergleichsgruppe.
+- FRAGE: Woran erkennst du Rahmung? | ANTWORT: An Ueberschrift, Bildauswahl und Reihenfolge vor der Zahl.
+- FRAGE: Was leistet die Verliererfrage? | ANTWORT: Sie vervollstaendigt die Bilanz und enttarnt Einseitigkeit.
 
-Klausur-Satz: `Der Sachtext informiert scheinbar neutral und lenkt dabei jeden Blick.`
+Klausur-Satz: `Haeufig verwechselt: Mehrheit in der Fussgaengerzone ist keine Stadtmehrheit.`
 
 ## Fehlvorstellung
 
-1. Fehlvorstellung: Sachlich heisse meinungslos.
-   Korrektur-Satz: `Auch Sachtexte werten durch Auswahl und Wortwahl.`
-2. Fehlvorstellung: Ein Beispiel beweise alles.
-   Korrektur-Satz: `Beispiele illustrieren, Beweisketten tragen.`
+1. Fehlvorstellung: Grafik beweise Trend.
+   Korrektur-Satz: `Ausschnitt und Achse bestimmen die Botschaft.`
+2. Fehlvorstellung: Betroffene seien objektiv.
+   Korrektur-Satz: `Jede Gruppe liest dieselbe Zahl anders.`
 
-## Schritt 7 — szenario: Klausurtransfer: Faktencheck-Redakteur zu Fall 23
+## Schritt 7 — szenario: Klausurtransfer als Faktencheck-Redakteur zu Fall 23
 
 ROLLE: Du bist Faktencheck-Redakteur in der Pruefung.
-SITUATION: Ein Fall zu Leserlenkung und Rhetorik im Sachtext (Fall 23, Schulhof-Plakat in zwei Sprachversionen) liegt unbearbeitet auf dem Tisch.
+SITUATION: Ein Fall liegt unbearbeitet auf dem Tisch und verlangt Einordnung, Belege und Urteil.
 AUFGABE: Verfasse circa 150 Woerter mit Einordnung, zwei Belegen mit Zeile, Funktion, Deutung und Schlussurteil.
 RUBRIC (30 XP): Einordnung korrekt (6 XP) | Zwei Belege mit Zeile (10 XP) | Funktion plus Deutung (10 XP) | Fachsprache und Schluss (4 XP).
+
+Klausur-Satz: `AFB-III-Mustersatz: 22 Prozent (Z. 2) bei Sonnenmessung (Z. 5) ohne Randlagen (Z. 6) belegen Lenkung, weil Ausschnitt plus Rahmen Bilanz ersetzt.`
 
 ## Schritt 8 — reflexion: Takeaway und Rueckblick aus Fall 23
 
 TAKEAWAY:
 
-Fall 23 lehrt: Beleg sichern, Funktion benennen, Urteil begruenden. Der Sachtext informiert scheinbar neutral und lenkt dabei jeden Blick. Takeaway-Satz: `Der Sachtext informiert scheinbar neutral und lenkt dabei jeden Blick.`
+Klausur-Satz: `Fall 23 (Sachtextanalyse) schliesst: Wer Beleg, Funktion und Urteil sichert, besteht jede Klausur.`
+
+Fall 23 lehrt den Dreischritt aus Beleg, Funktion und Urteil. Takeaway-Satz: `Sachtext pruefen heisst: Nenner suchen, Rahmen benennen und Verlierer mitdenken.`
 
 REFLEXION:
 1. Welche Spur fiel schwerer, der Nahbeleg oder das Fernurteil?

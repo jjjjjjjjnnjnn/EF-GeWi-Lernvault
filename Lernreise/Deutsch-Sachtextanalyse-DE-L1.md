@@ -10,60 +10,80 @@ datum: 2026-09-25
 tags: [EF, Deutsch, Rhetorik]
 version: Lesson-v3
 ---
-
 # Lernreise: Leserlenkung und Rhetorik im Sachtext (L1, Ziel Klausur)
 
 <!-- Campaign: Detektive Fal 19 -->
-## Schritt 1 — entdecken: Der versiegelte Umschlag aus der Registratur
+## Schritt 1 — entdecken: Der versiegelte Umschlag zur Sache
 
 ZIELE (3 Ziele, nach 15 Minuten erreichbar):
 
-1. Du ordnest Fall 19 (Kommentarspalte mit geliktem Provokationssatz) in Kontext, Verfahren und Deutung ein.
-2. Du belegst jede Aussage zu Leserlenkung und Rhetorik im Sachtext mit Zitat und Zeile und benennst die Funktion.
+1. Du ordnest Fall 19 in Kontext, Verfahren und Deutung ein.
+2. Du belegst jede Aussage mit Zitat und Zeile und benennst die Funktion.
 3. Du faellst ein Urteil im passenden Anforderungsbereich.
 
 HOOK:
 
-Mitten in der Nacht flackert das Blaulicht der Agentur fuer Texte und Gedanken ueber den leeren Schreibtischen, und Partner Theo Wort legt einen versiegelten Umschlag auf deinen Platz. Seit Wochen jagt ihr als Gedanken-Agent an der Seite deines Text-Detektivs durch die Jahrhunderte, und jede geloeste Spur oeffnet ein neues Portal in der Zeit. Heute geht es um Leserlenkung und Rhetorik im Sachtext. Falllinie C: Hinter einer Stahltuer rauscht ein Ministerium, das Woerter loescht und Gedanken neu schreibt. Im Umschlag steckt Fall 19: ein Kommentarspalte mit geliktem Provokationssatz. Kaum haeltst du das Stueck ins Licht, faellt dir eine zweite Schicht auf: Jemand hat die Botschaft frisiert, verkuerzt oder verdreht, und nur wer Beleg, Funktion und Deutung sauber trennt, kann die Manipulation entlarven. Das naechste Portal oeffnet sich nur, wenn du drei Ziele in fuenfzehn Minuten schaffst und jede Behauptung mit Zeile und Wirkung belegst. Theo Wort gru belt schon ungeduldig, denn die Spur wird kalt.
+Der Schulkiosk verkauft neuerdings Lern-Apps statt Broetchen. Ein Kommentar behauptet: Wer digital lernt, lernt automatisch besser. Die Schulleitung nickt, die Fachschaft zweifelt.
 
-Klausur-Satz: `Der Sachtext informiert scheinbar neutral und lenkt dabei jeden Blick.`
+Du erhaeltst den Kommentar mit allen Tricks. Jede **Statistik** blinkt, jedes **Beispiel** laechelt. Pruefe These, Beleg und Lenkung mit Zeile.
 
-## Schritt 2 — entdecken: Die Ausruestungskiste gegen Fall 19
+Klausur-Satz: `Der Kommentar verkauft Markt als Fortschritt: Zahlen blenden, wo Kontrolle fehlt.`
+
+## Schritt 2 — entdecken: Die Ausruestungskiste zum Fall
 
 AUSRUESTUNG (5 Instrumente im Koffer):
 
-- **These des Autors**: These des Autors: zugespitzte Kernbehauptung des Sachtexts
-- **Leserlenkung**: Leserlenkung: Wortwahl und Beispiele als stille Steuerung
-- **Belegfuehrung**: Belegfuehrung: Statistik, Beispiel und Autoritaet als Stuetzpfeiler
-- **Sachlichkeitssignal**: Sachlichkeitssignal: Nominalstil und Passiv als Objektivitaetskostuem
-- **Adressatenkalkuel**: Adressatenkalkuel: zugeschnittene Ansprache an ein Publikum
+- **These des Autors**: Die These ist die zugespitzte Kernbehauptung des Sachtexts. Sie steht meist in Einleitung oder Schluss. Alles andere dient ihr.  Mechanismus: These plus Auswahl erzeugt Richtung; Gegenstimmen werden gedaempft oder fehlen. Wer die These findet, sieht das Ziel. Klausur-Tipp: Formuliere die These in einem Satz mit Haltung.
+- **Leserlenkung**: Die Leserlenkung steuert durch Wortwahl, Bilder und Beispiele. Sie wirkt ohne offenes Argument. Der Leser folgt freiwillig.  Mechanismus: Positives Wortfeld plus Einzelschicksal erzeugt Zustimmung; Zahlen wirken als Neutralitaetskostuem. So wird Meinung zu Stimmung. Klausur-Tipp: Nenne Wortfeld und Beispiel und deren Richtung.
+- **Belegfuehrung**: Die Belegfuehrung stuetzt die These durch Statistik, Beispiel und Autoritaet. Sie entscheidet ueber Glaubwuerdigkeit. Starke Belege tragen, schwache blenden.  Mechanismus: Zahl plus Quelle plus Einordnung ergibt Beweiskraft; fehlende Quelle entwertet. Beispiele illustrieren, beweisen aber nicht. Klausur-Tipp: Pruefe Quelle, Bezugsgrösse und Aktualitaet.
+- **Sachlichkeitssignal**: Das Sachlichkeitssignal tarnt Wertung als Neutralitaet: Nominalstil, Passiv und Zahlen. Es kleidet Meinung in Objektivitaet. Der Ton bleibt trocken.  Mechanismus: Passiv plus Fachwort tilgt den Akteur; Zahl plus Grafik ersetzt Begruendung. So wirkt Lenkung unsichtbar. Klausur-Tipp: Markiere Passiv und Nominalstil als Kostuem.
+- **Adressatenkalkuel**: Das Adressatenkalkuel schneidert den Text auf ein Publikum zu. Es waehlt Sorgen, Stolz und Sprache der Zielgruppe. Jeder Satz kennt seinen Hoerer.  Mechanismus: Anrede plus Alltagsbild erzeugt Naehe; Fachpublikum erhaelt Daten, Eltern erhalten Sorgen. So wird Zustimmung wahrscheinlicher. Klausur-Tipp: Benenne Zielgruppe und Lockmittel.
 
-Klausur-Satz: `Der Sachtext informiert scheinbar neutral und lenkt dabei jeden Blick.`
+Klausur-Satz: `These, Belegfuehrung und Lenkung definieren jede Sachtextanalyse.`
 
 ## Schritt 3 — entdecken: Der Mechanismus hinter dem Tatbild
 
 MECHANISMUS (Tiefenbau):
 
-Jeder Fall folgt der Kette Befund, Funktion und Deutung. Zuerst sicherst du den Befund mit Zitat und Zeile, dann bestimmst du die Funktion im Macht- oder Sinn-gefuege, erst danach formulierst du die Deutung zu Leserlenkung und Rhetorik im Sachtext. Falllinie C: Hinter einer Stahltuer rauscht ein Ministerium, das Woerter loescht und Gedanken neu schreibt. Wer die zweite Schicht des Kommentarspalte mit geliktem Provokationssatz uebersieht, tappt in die Falle der Agentur.
+Sachtexte lenken durch **Auswahl mit Anstrich von Neutralitaet**. These, Beleg und Wortfeld bilden ein Dreieck.
+
+Der Weg: Sichere die These in einem Satz. Pruefe jeden Beleg auf Quelle und Bezugsgrösse. Benenne Wortfeld und Adressat. So wird Informieren von Lenken trennbar.
 
 ```diagram
-Befund (Zitat mit Zeile) -> Funktion (Wirkung im Gefuege) -> Deutung (Urteil)
-Fall 19: Kommentarspalte mit geliktem Provokationssatz -> Spur sichern -> Tatbild schliessen
+These -> Auswahl (Beleg/Wortfeld) -> Lenkung -> Urteil (informiert vs. gelenkt)
 ```
 
-Klausur-Satz: `Der Sachtext informiert scheinbar neutral und lenkt dabei jeden Blick.`
+Klausur-Satz: `Zahl ohne Kontrolle plus Wortfeld ohne Gegenstimme ergibt Lenkung statt Information.`
 
 ## Anekdote
 
-Ein Lektor fand einst drei Lenkungstricks auf einer einzigen Seite.
+Ein Lektor fand einst drei Lenkungstricks auf einer einzigen Seite. Er rahmte sie ein und haengte sie ueber seinen Schreibtisch.
 
-Bezug zum Konzept: `Der Sachtext informiert scheinbar neutral und lenkt dabei jeden Blick.`
+Bezug zum Konzept: `Zahl ohne Kontrolle plus Wortfeld ohne Gegenstimme ergibt Lenkung statt Information.`
 
 ## Schritt 4 — ausprobieren: Die Sandkasten-Pruefung mit Textlupe
 
 [Werkzeug: highlighter]
 
-AUFGABE: Untersuche den Fall-Text 19 (Kommentarspalte mit geliktem Provokationssatz) zu Leserlenkung und Rhetorik im Sachtext.
+PRIMAERTEXT (Studienfassung: Kommentar Digitales Lernen (Ausschnitt, 15 Zeilen), Studienfassung, 100-200 Woerter):
+
+> Digitales Lernen verdoppelt den Erfolg - das belegen neue Zahlen. (Z. 1)
+> 87 Prozent der Befragten loben das Tempo der Apps. (Z. 2)
+> Lea, 15, lernt Vokabeln im Bus und strahlt. (Z. 3)
+> Experten bestaetigen: Der Bildschirm foerdert Konzentration. (Z. 4)
+> Klassenzimmer wirken dagegen grau und gestrig. (Z. 5)
+> Die Befragung erfasste 120 Nutzer einer Lern-App. (Z. 6)
+> Vergleichsgruppen wurden nicht untersucht. (Z. 7)
+> Dennoch gilt: Fortschritt duldet kein Zoegern. (Z. 8)
+> Eltern muessen jetzt handeln, sonst verlieren Kinder den Anschluss. (Z. 9)
+> Die Kommune spart zudem Druckkosten in Millionenhoehe. (Z. 10)
+> Kritik kommt meist von ueberforderten Skeptikern. (Z. 11)
+> Objektiv betrachtet ueberwiegen die Vorteile deutlich. (Z. 12)
+> Es wurde festgestellt: Aufmerksamkeit steigt messbar. (Z. 13)
+> Messbar heisst: Klicks, Minuten, Sterne im System. (Z. 14)
+> Wer zweifelt, bremst die Zukunft unserer Kinder. (Z. 15)
+
+AUFGABE: Untersuche den Primaertext Zeile fuer Zeile und belege jede Aussage mit Zitat und Zeile.
 TARGET: Drei Belege mit Zeile, je mit Funktion und einer Deutung in vier Saetzen.
 
 HILFE:
@@ -71,32 +91,35 @@ HILFE:
 2. Schritt 2: Sichere zwei Befunde mit Zeile.
 3. Schritt 3: Deute Befund und Funktion im Fallganzen.
 
-MUSTERLOESUNG: Der Fall 19 zeigt Leserlenkung und Rhetorik im Sachtext in drei Schritten. Erstens belegt ein Zitat mit Zeile den Kern des Kommentarspalte mit geliktem Provokationssatz, zweitens traegt die Funktion die Wirkung im Gefuege, drittens schliesst die Deutung das Tatbild. Damit ist die zweite Schicht entlarvt und das Portal oeffnet sich.
+MARKIERAUFTRAG: Markiere mit GELB alle **Wertungswoerter** (verdoppelt, grau, gestrig, ueberfordert). Markiere mit BLAU die **Belegsignale** (87 Prozent, Experten, Passiv in Z. 13).
 
-Klausur-Satz: `Der Sachtext informiert scheinbar neutral und lenkt dabei jeden Blick.`
+MUSTERLOESUNG: Der Fall 19 zeigt das Kernverfahren in drei Schritten. Erstens sichert ein Zitat mit Zeile den Befund. Zweitens benennt die Funktion die Wirkung im Gefuege. Drittens schliesst die Deutung das Urteil. Damit ist die zweite Schicht entlarvt.
+
+Klausur-Satz: `Die Regel des Kommentars: Je hoeher die Prozentzahl, desto genauer die Quellenfrage.`
 
 ## Schritt 5 — ausprobieren: Das doppelte Spiel Weg A gegen Weg B
 
-VERGLEICH: Waehle erst das Verfahren, dann loesen: (i) Weg A Nahverfahren (Beleg, Zitat, Wirkung) oder (ii) Weg B Fernverfahren (Kontext, Gefuege, Urteil).
+VERGLEICH: Weg A liest mikroskopisch (Text, Rhetorik, Detail), Weg B deutet makroskopisch (Epoche, Kontext, Ordnung).
 
-AUFGABE A: Welche Spur im Kommentarspalte mit geliktem Provokationssatz verlangt Weg A? Begründe mit Zitat.
-AUFGABE B: Welche Frage zum Fallganzen verlangt Weg B? Begründe mit Kontext.
+AUFGABE A: Welche Spur verlangt Weg A? Begruende mit Zitat und Zeile.
+AUFGABE B: Welche Frage verlangt Weg B? Begruende mit Kontext.
 
 HILFE: A fragt nach Form und Naehe, also Weg A. B fragt nach Rolle und Ganzem, also Weg B.
 
-ANTWORT: A erfordert Weg A: Der Nahbeleg mit Zitat und Zeile zeigt die Wirkung im Detail. B erfordert Weg B: Der Fernblick auf Kontext und Gefuege sichert das Urteil zu Leserlenkung und Rhetorik im Sachtext.
+ANTWORT A: Weg A prueft mikroskopisch Beleg und Sprache: Stichprobe Z. 6 ohne Kontrolle Z. 7, Passiv Z. 13 ohne Akteur.
+ANTWORT B: Weg B fragt makroskopisch nach Kontext: Bildungsmarkt, Kommunalfinanzen und Elternsorgen erklaeren Adressat und Richtung.
 
-Klausur-Satz: `Der Sachtext informiert scheinbar neutral und lenkt dabei jeden Blick.`
+Klausur-Satz: `Feinlese enttarnt das Wie der Lenkung, Kontextwissen das Warum des Marktes; beide sichern das Urteil.`
 
-## Schritt 6 — check: Selbsttest zu Leserlenkung und Rhetorik im Sachtext
+## Schritt 6 — check: Selbsttest mit Antwortkarten
 
 CHECK (drei Fragen mit Antworten):
 
-FRAGE: Nenne die Drei-Schritt-Kette. | ANTWORT: Befund mit Zeile, Funktion im Gefuege, Deutung als Urteil.
-FRAGE: Was verlangt Weg A? | ANTWORT: Nahbeleg mit Zitat und Wirkung am Detail.
-FRAGE: Was verlangt Weg B? | ANTWORT: Kontext und Gefuege als Traeger des Urteils.
+- FRAGE: Welche drei Prueffragen stellt jeder Beleg? | ANTWORT: Quelle, Bezugsgrösse und Vergleichsgruppe.
+- FRAGE: Woran erkennst du Leserlenkung? | ANTWORT: An einseitigem Wortfeld, Einzelschicksal und fehlender Gegenstimme.
+- FRAGE: Was verrät Passiv und Nominalstil? | ANTWORT: Sie tilgen den Akteur und kostuemieren Wertung als Neutralitaet.
 
-Klausur-Satz: `Der Sachtext informiert scheinbar neutral und lenkt dabei jeden Blick.`
+Klausur-Satz: `Haeufig verwechselt: Beispiel ist kein Beweis; erst Kette aus Quelle, Grösse und Vergleich traegt.`
 
 ## Fehlvorstellung
 
@@ -105,18 +128,22 @@ Klausur-Satz: `Der Sachtext informiert scheinbar neutral und lenkt dabei jeden B
 2. Fehlvorstellung: Ein Beispiel beweise alles.
    Korrektur-Satz: `Beispiele illustrieren, Beweisketten tragen.`
 
-## Schritt 7 — szenario: Klausurtransfer: Faktencheck-Redakteur zu Fall 19
+## Schritt 7 — szenario: Klausurtransfer als Faktencheck-Redakteur zu Fall 19
 
 ROLLE: Du bist Faktencheck-Redakteur in der Pruefung.
-SITUATION: Ein Fall zu Leserlenkung und Rhetorik im Sachtext (Fall 19, Kommentarspalte mit geliktem Provokationssatz) liegt unbearbeitet auf dem Tisch.
+SITUATION: Ein Fall liegt unbearbeitet auf dem Tisch und verlangt Einordnung, Belege und Urteil.
 AUFGABE: Verfasse circa 150 Woerter mit Einordnung, zwei Belegen mit Zeile, Funktion, Deutung und Schlussurteil.
 RUBRIC (30 XP): Einordnung korrekt (6 XP) | Zwei Belege mit Zeile (10 XP) | Funktion plus Deutung (10 XP) | Fachsprache und Schluss (4 XP).
+
+Klausur-Satz: `AFB-III-Mustersatz: Die 87 Prozent (Z. 2) ohne Vergleichsgruppe (Z. 7) mit Abwertung (Z. 5, Z. 11) belegen Lenkung, weil Belegluecke plus Wortfeld Zustimmung erzwingt.`
 
 ## Schritt 8 — reflexion: Takeaway und Rueckblick aus Fall 19
 
 TAKEAWAY:
 
-Fall 19 lehrt: Beleg sichern, Funktion benennen, Urteil begruenden. Der Sachtext informiert scheinbar neutral und lenkt dabei jeden Blick. Takeaway-Satz: `Der Sachtext informiert scheinbar neutral und lenkt dabei jeden Blick.`
+Klausur-Satz: `Fall 19 (Sachtextanalyse DE) schliesst: Wer Beleg, Funktion und Urteil sichert, besteht jede Klausur.`
+
+Fall 19 lehrt den Dreischritt aus Beleg, Funktion und Urteil. Takeaway-Satz: `Sachtext lesen heisst: These fassen, Belege pruefen und Lenkung beim Namen nennen.`
 
 REFLEXION:
 1. Welche Spur fiel schwerer, der Nahbeleg oder das Fernurteil?

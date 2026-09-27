@@ -10,15 +10,14 @@ datum: 2026-09-26
 tags: [EF, Englisch, Postcolonialism]
 version: Lesson-v3
 ---
-
 # Lernreise: Nigeria Adichie and Postcolonial Voices (L1, Ziel Klausur)
 
 <!-- Campaign: Detektive Fal 31 -->
-## Schritt 1 — entdecken: Der versiegelte Umschlag aus der Archivnacht
+## Schritt 1 — entdecken: Der versiegelte Umschlag zur Sache
 
 ZIELE (3 goals in 15 minutes, read Chinese first, then English):
 
-1. 中文：能把第31号案件（拉各斯来信）按背景、方法、判断拆开。
+1. 中文：能把第31号案件按背景、方法、判断拆开。
    English: Place case 31 in context, method and judgement.
 2. 中文：每个论断配引文出处并说清效果。
    English: Support each claim with quotation and effect.
@@ -27,56 +26,66 @@ ZIELE (3 goals in 15 minutes, read Chinese first, then English):
 
 HOOK:
 
-深夜，跨时空文案侦探社的蓝灯又亮了。搭档把一只密封信封推到你面前：这是第31号案件，一份拉各斯来信。表面看只是一段尼日利亚声音，但灯光下浮现出第二层痕迹——有人删改、夸大或偷换了关键信息。你们作为思想特工与文本侦探，必须在十五分钟内锁定三个目标：找证据、说功能、下判断，每一步都要有出处支撑。下一道时空门只为证据链完整的人打开，搭档已经在催你了，线索正在变冷。
+CN: 教室里，第二种声音举手：地图还是殖民者画的，名字却是我们起的。本课读黑板上的收复。
 
-English hook: Agent Theo Wort drops case file 31 (Interview-Transkript mit Code-Switching) on your desk. Falllinie D: Das Archiv der Agentur meldet einen Riss in der Zeit, durch den ein Text in unsere Gegenwart gefallen ist.
+EN: A classroom map still shows pink empires. The chalk writes new names beneath. Read **renaming** as return.
 
-Klausur-Satz: `Many voices defeat the single story: listening becomes method.`
+Klausur-Satz: `CN: 粉色褪去从粉笔开始。EN: Pink fades where chalk rewrites.`
 
-## Schritt 2 — entdecken: Die Ausruestungskiste gegen Fall 31
+## Schritt 2 — entdecken: Die Ausruestungskiste zum Fall
 
 装备盒（5件，先读中文，再背英文）：
 
-- 中文点拨：尼日利亚声音之1号工具。
-  English: **Single story: one tale as theft of complexity**
-- 中文点拨：尼日利亚声音之2号工具。
-  English: **Code-switching: language shift as identity signal**
-- 中文点拨：尼日利亚声音之3号工具。
-  English: **Generational memory: war stories as family archive**
-- 中文点拨：尼日利亚声音之4号工具。
-  English: **Market voice: bargaining speech as social stage**
-- 中文点拨：尼日利亚声音之5号工具。
-  English: **Home and diaspora: two places pulling one heart**
+- English: **Single story | 单一** CN: 粉色帝国盖住人物。EN: Pink empires cover people.  Mechanism: Map plus textbook repeats.  Klausur-Tipp: Name flattened.
+- English: **Code-switching | 切换** CN: 粉笔换腔。EN: Chalk switches tongue.  Mechanism: Audience decides register.  Klausur-Tipp: Quote switch.
+- English: **Hybrid identity | 混杂** CN: 校服配 wrapper。EN: Uniform plus wrapper.  Mechanism: Both repertoires dress self.  Klausur-Tipp: Show both.
+- English: **Gendered voice | 性别** CN: 谁擦黑板谁发言。EN: Who cleans, who speaks.  Mechanism: Task rations mic.  Klausur-Tipp: Count turns.
+- English: **Reclaiming | 收复** CN: 旧词新说。EN: Old word, new speaker.  Mechanism: Flip reclaims pride.  Klausur-Tipp: Quote flip.
 
-Klausur-Satz: `Many voices defeat the single story: listening becomes method.`
+Klausur-Satz: `CN: 地图、粉笔与名字构成三角。EN: Map, chalk and name triangulate return.`
 
 ## Schritt 3 — entdecken: Der Mechanismus hinter dem Tatbild
 
-中文深层解构：尼日利亚声音的核心链是证据、效果、判断。第31号案件（拉各斯来信）的伪装层就藏在链条中间。
+中文深层解构：先读中文抓链条，再用英文写判断。
 
-English: Quotation plus effect equals judgement on Nigeria Adichie and Postcolonial Voices.
+English: CN: 粉笔加新名等于归还。EN: Chalk plus new name equals return.
 
 ```diagram
-Evidence (quotation) -> Effect (function) -> Judgement (verdict)
-Case 31
+Map -> Chalk switch -> New name -> Belonging verdict
 ```
 
-Klausur-Satz: `Many voices defeat the single story: listening becomes method.`
+Klausur-Satz: `CN: 旧词加新说等于尊严。EN: Old word plus new speaker equals dignity.`
 
 ## Anekdote
 
-中文解读：尼日利亚声音里藏着侦探的耐心：每个细节都是时空门的钥匙。
+CN: 一位老师让全班大声读自己的名字，迟到都没人笑。EN: A teacher made names roll call; nobody laughed.
 
-English: A reader covered her webcam after one novel and her screen time after the other.
-
-Bezug zum Konzept: `Many voices defeat the single story: listening becomes method.`
+Bezug zum Konzept: `CN: 旧词加新说等于尊严。EN: Old word plus new speaker equals dignity.`
 
 ## Schritt 4 — ausprobieren: Die Sandkasten-Pruefung mit Textlupe
 
 [Werkzeug: highlighter]
 
-中文任务：分析第31号案文本（拉各斯来信）。
-English TASK: Examine case 31 (Interview-Transkript mit Code-Switching) on Nigeria Adichie and Postcolonial Voices.
+PRIMAERTEXT（Study text: Chalk Names Under the Map (15 lines)，study version，100-200词）：
+
+> The wall map still blushed in imperial pink. (Z. 1)
+> Our teacher tapped Lagos with a short ruler. (Z. 2)
+> Here lived traders, she said, not tribes. (Z. 3)
+> She wrote their market names in white chalk. (Z. 4)
+> Adaeze read hers aloud, twice, proudly. (Z. 5)
+> The boys drummed the desks for rhythm. (Z. 6)
+> History, she said, is a debt with interest. (Z. 7)
+> A girl asked why the book used savage. (Z. 8)
+> We crossed it out and wrote navigator. (Z. 9)
+> The chalk dust fell like small snow. (Z. 10)
+> At break we sang in two languages. (Z. 11)
+> English for the game, Igbo for the joke. (Z. 12)
+> The principal praised correct pronunciation. (Z. 13)
+> We pronounced our names correctly instead. (Z. 14)
+> Pink faded a little by afternoon. (Z. 15)
+
+中文任务：逐行分析选段，每条论断配引文行号。
+English TASK: Examine the primary text line by line with quotation and line number.
 TARGET: Three quotations, each with effect and judgement in four sentences.
 
 HILFE（中文在前）：
@@ -84,58 +93,63 @@ HILFE（中文在前）：
 2. 中文：锁两个证据。English: Secure two quotations.
 3. 中文：效果加判断。English: Add effect and judgement.
 
-MUSTERLOESUNG: 中文示范：背景一句，证据加效果两句，判断一句。
-English MODEL: Case 31 shows Nigeria Adichie and Postcolonial Voices in three moves with quotation, effect and judgement; the cover is blown.
+MARKIERAUFTRAG（双色标注）：CN: 黄色[GELB]标旧词（pink, tribes, savage），蓝色[BLAU]标收复动作（wrote, crossed, sang, pronounced）。EN: GELB for old words, BLAU for reclaiming acts.
 
-Klausur-Satz: `Many voices defeat the single story: listening becomes method.`
+MUSTERLOESUNG: 中文示范：背景一句，证据加效果两句，判断一句。
+English MODEL: Case 31 shows the method in three moves with quotation, effect and judgement; the cover is blown.
+
+Klausur-Satz: `CN: 规律是每划一词，长一分自我。EN: Each crossed slur grows a self.`
 
 ## Schritt 5 — ausprobieren: Das doppelte Spiel Weg A gegen Weg B
 
-VERGLEICH（中文先行）：先选路再做题：【选概念】(i) Weg A 近路（引文细节）还是 (ii) Weg B 远路（背景判断）。
+VERGLEICH（中文先行）：Weg A 微观细读（文本风格细节），Weg B 宏观语境（历史秩序背景）。
 English: Choose the path first (close Way A or distant Way B), then write.
 
 TASK A（中文：哪条线索走近路？）: Which trace needs Way A?
 TASK B（中文：哪个整体问题走远路？）: Which whole-case question needs Way B?
 
-HILFE：细节问选近路Way A，整体问选远路Way B。【选概念看题干：compare列异同，assess做权衡。】
+HILFE：细节问选近路Way A，整体问选远路Way B。
 
 中文答案：A近路靠引文，B远路靠背景。
-English ANSWER: A takes Way A with close quotation, B takes Way B with context on Nigeria Adichie and Postcolonial Voices.
+English ANSWER A: CN: 微观读粉笔三动作：写、划、唱。EN: Way A tracks write, cross, sing.
+English ANSWER B: CN: 宏观读教科书政治与命名权。EN: Way B frames textbook politics and naming rights.
 
-Klausur-Satz: `Many voices defeat the single story: listening becomes method.`
+Klausur-Satz: `CN: 微观看动作，宏观看权力。EN: Acts show how, power shows why.`
 
-## Schritt 6 — check: Selbsttest zu Nigeria Adichie and Postcolonial Voices
+## Schritt 6 — check: Selbsttest mit Antwortkarten
 
 CHECK (drei Fragen mit Antworten):
 
 中文自测：
-FRAGE: 三步链是什么？ | ANTWORT: Quotation, effect, judgement.
-FRAGE: 近路要什么？ | ANTWORT: Close quotation with effect.
-FRAGE: 远路要什么？ | ANTWORT: Context as carrier of judgement.
+- FRAGE: CN: 三个粉笔动作？EN: Three chalk acts? | ANTWORT: Write names, cross slur, sing bilingual.
+- FRAGE: CN: savage 换成什么？EN: Replacement? | ANTWORT: Navigator.
+- FRAGE: CN: 校长的标准 vs 学生？EN: Principal vs pupils? | ANTWORT: Pronunciation versus names.
 
-Klausur-Satz: `Many voices defeat the single story: listening becomes method.`
+Klausur-Satz: `CN: 易错是把发音当归属。EN: Pronunciation is tool, names are home.`
 
 ## Fehlvorstellung
 
-1. 中文误解：尼日利亚声音只看表面。
-   中文纠偏：引文加效果才是得分点。
-   Korrektur-Satz: `Voices must be compared, not merged.`
-2. 中文误解：尼日利亚声音只看表面。
-   中文纠偏：引文加效果才是得分点。
-   Korrektur-Satz: `Memory funds new departures.`
+1. 中文误解：CN: 地图即中立。
+   中文纠偏：EN: Maps argue in colour.
+2. 中文误解：CN: 改词即改史。
+   中文纠偏：EN: Words open archives; work continues.
 
-## Schritt 7 — szenario: Klausurtransfer: Book club reviewer zu Fall 31
+## Schritt 7 — szenario: Klausurtransfer als Culture columnist of the school paper zu Fall 31
 
-ROLLE（中文）：你是Book club reviewer，负责审稿。
-English ROLE: You are Book club reviewer.
+ROLLE（中文）：你是Culture columnist of the school paper，负责审稿。
+English ROLE: You are Culture columnist of the school paper.
 SITUATION: Case 31 waits on your desk.
 TASK（中文）：150词左右，含背景、证据、权衡判断。
 RUBRIC (30 XP): Context (6 XP) | Quotations (10 XP) | Effect plus judgement (10 XP) | Register (4 XP).
 
+Klausur-Satz: `CN: 满分句须含旧词引文、收复动作与归属收束。EN: AFB-III sentence needs old-word quotation, reclaiming act and belonging close.`
+
 ## Schritt 8 — reflexion: Takeaway und Rueckblick aus Fall 31
 
-中文总结：第31号案件教会我们：先锁引文，再说效果，最后判断。
-English TAKEAWAY: Secure quotation, name effect, judge with reasons. `Many voices defeat the single story: listening becomes method.`
+中文总结：先锁引文，再说效果，最后判断。
+English TAKEAWAY: Secure quotation, name effect, judge with reasons. `CN: 改名即回家。EN: Renaming is returning.`
+
+Klausur-Satz: `CN元认知收束——第31号案件（Nigeria Adichie Postcolonial Voices）证明：证据加功能等于判断。DE/EN: Fall 31 (Nigeria Adichie Postcolonial Voices) proves: evidence plus function equals judgement.`
 
 REFLEXION（中文在前）：
 1. 中文：近路和远路哪个更难？English: Which was harder, close quotation or distant judgement?

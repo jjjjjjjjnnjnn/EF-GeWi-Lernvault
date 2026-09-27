@@ -10,114 +10,121 @@ datum: 2026-09-25
 tags: [EF, Englisch, Sprachmittlung]
 version: Lesson-v3
 ---
-
 # Lernreise: Mediation-Strategien: Register und Kulturtransfer (L1, Ziel Klausur)
 
 <!-- Campaign: Detektive Fal 34 -->
-## Schritt 1 — entdecken: Der versiegelte Umschlag aus der Archivnacht
+## Schritt 1 — entdecken: Der versiegelte Umschlag zur Sache
 
 ZIELE (3 Ziele, nach 15 Minuten erreichbar):
 
-1. Du ordnest Fall 34 (Speisekarten-Uebersetzung mit Fussnote) in Kontext, Verfahren und Deutung ein.
-2. Du belegst jede Aussage zu Mediation-Strategien: Register und Kulturtransfer mit Zitat und Zeile und benennst die Funktion.
+1. Du ordnest Fall 34 in Kontext, Verfahren und Deutung ein.
+2. Du belegst jede Aussage mit Beleg und benennst die Funktion.
 3. Du faellst ein Urteil im passenden Anforderungsbereich.
 
 HOOK:
 
-Mitten in der Nacht flackert das Blaulicht der Agentur fuer Texte und Gedanken ueber den leeren Schreibtischen, und Partner Theo Wort legt einen versiegelten Umschlag auf deinen Platz. Seit Wochen jagt ihr als Gedanken-Agent an der Seite deines Text-Detektivs durch die Jahrhunderte, und jede geloeste Spur oeffnet ein neues Portal in der Zeit. Heute geht es um Mediation-Strategien: Register und Kulturtransfer. Falllinie D: Das Archiv der Agentur meldet einen Riss in der Zeit, durch den ein Text in unsere Gegenwart gefallen ist. Im Umschlag steckt Fall 34: ein Speisekarten-Uebersetzung mit Fussnote. Kaum haeltst du das Stueck ins Licht, faellt dir eine zweite Schicht auf: Jemand hat die Botschaft frisiert, verkuerzt oder verdreht, und nur wer Beleg, Funktion und Deutung sauber trennt, kann die Manipulation entlarven. Das naechste Portal oeffnet sich nur, wenn du drei Ziele in fuenfzehn Minuten schaffst und jede Behauptung mit Zeile und Wirkung belegst. Theo Wort gru belt schon ungeduldig, denn die Spur wird kalt.
+Same bridge, higher stakes: a rental contract meets a nervous newcomer. Formal German must become calm English. Du erhaeltst die Registerleiter mit Kulturbruecke. Jede **Klausel** braucht **Klarheit**.
 
-Klausur-Satz: `Good mediation serves the reader: short, clear and culturally awake.`
+Variante B legt dieselbe Leiter an einen zweiten Vertrag mit vertauschten Klauseln.
 
-## Schritt 2 — entdecken: Die Ausruestungskiste gegen Fall 34
+Klausur-Satz: `Strategies keep law readable: plain twins, clear heads, honest flags.`
+
+## Schritt 2 — entdecken: Die Ausruestungskiste zum Fall
 
 AUSRUESTUNG (5 Instrumente im Koffer):
 
-- **Selection**: Selection: choosing content for the target reader
-- **Compression**: Compression: shortening without losing the core
-- **Paraphrase**: Paraphrase: same sense in simpler words
-- **Register shift**: Register shift: formal source into reader-friendly tone
-- **Cultural bridge**: Cultural bridge: footnote explaining foreign context
+- **Register shift**: EN: Register shifts formal to plain for the reader. Calm replaces clause.  Mechanism: Term plus plain twin keeps law, drops fear.  Klausur-Tipp: Twin every term once.
+- **Cultural transfer**: EN: Transfer explains deposits, duties and dates. Systems differ.  Mechanism: Rule plus system note prevents breach.  Klausur-Tipp: Note system gaps.
+- **Structuring**: EN: Structuring orders facts with headings. Scanning beats searching.  Mechanism: Head plus bullet speeds use.  Klausur-Tipp: Head every block.
+- **Tone mediation**: EN: Tone keeps firm facts friendly. Politeness carries obligation.  Mechanism: Must plus please balances duty.  Klausur-Tipp: Soften modal, keep must.
+- **Accuracy check**: EN: The check compares target against source. Nothing invented.  Mechanism: Back-check plus flag secures trust.  Klausur-Tipp: Verify numbers twice.
 
-Klausur-Satz: `Good mediation serves the reader: short, clear and culturally awake.`
+Klausur-Satz: `Twins, notes and heads define every mediation strategy.`
 
 ## Schritt 3 — entdecken: Der Mechanismus hinter dem Tatbild
 
 MECHANISMUS (Tiefenbau):
 
-Jeder Fall folgt der Kette Befund, Funktion und Deutung. Zuerst sicherst du den Befund mit Zitat und Zeile, dann bestimmst du die Funktion im Macht- oder Sinn-gefuege, erst danach formulierst du die Deutung zu Mediation-Strategien: Register und Kulturtransfer. Falllinie D: Das Archiv der Agentur meldet einen Riss in der Zeit, durch den ein Text in unsere Gegenwart gefallen ist. Wer die zweite Schicht des Speisekarten-Uebersetzung mit Fussnote uebersieht, tappt in die Falle der Agentur.
+Strategies climb **clarity without loss**. Plain keeps law, bridge keeps peace.
+
+Der Weg: Twin terms, note systems, head blocks, soften tone, verify numbers. So wird Vertrag zur Hilfe.
 
 ```diagram
-Befund (Zitat mit Zeile) -> Funktion (Wirkung im Gefuege) -> Deutung (Urteil)
-Fall 34: Speisekarten-Uebersetzung mit Fussnote -> Spur sichern -> Tatbild schliessen
+Clause -> Twin term -> System note -> Headed block -> Verified target
 ```
 
-Klausur-Satz: `Good mediation serves the reader: short, clear and culturally awake.`
+Klausur-Satz: `Plain plus system plus check equals usable contract.`
 
 ## Anekdote
 
-A mediator once saved a menu with one footnote about spices.
+A newcomer signed calmly because must stayed must, kindly. Clarity signs.
 
-Bezug zum Konzept: `Good mediation serves the reader: short, clear and culturally awake.`
+Bezug zum Konzept: `Plain plus system plus check equals usable contract.`
 
 ## Schritt 4 — ausprobieren: Die Sandkasten-Pruefung mit Baukasten
 
 [Werkzeug: lego]
 
-AUFGABE: Untersuche den Fall-Text 34 (Speisekarten-Uebersetzung mit Fussnote) zu Mediation-Strategien: Register und Kulturtransfer.
-TARGET: Drei Belege mit Zeile, je mit Funktion und einer Deutung in vier Saetzen.
+AUFGABE: Baue zu drei Klauseln Plain-Twins, Systemnotiz und Ueberschrift mit Toncheck.
+TARGET: Drei Bausteine mit Beleg, je mit Funktion und einer Deutung in vier Saetzen.
 
 HILFE:
 1. Schritt 1: Ordne den Fall in zwei Saetzen ein.
-2. Schritt 2: Sichere zwei Befunde mit Zeile.
-3. Schritt 3: Deute Befund und Funktion im Fallganzen.
+2. Schritt 2: Sichere zwei Bausteine mit Beleg.
+3. Schritt 3: Deute Baustein und Funktion im Fallganzen.
 
-MUSTERLOESUNG: Der Fall 34 zeigt Mediation-Strategien: Register und Kulturtransfer in drei Schritten. Erstens belegt ein Zitat mit Zeile den Kern des Speisekarten-Uebersetzung mit Fussnote, zweitens traegt die Funktion die Wirkung im Gefuege, drittens schliesst die Deutung das Tatbild. Damit ist die zweite Schicht entlarvt und das Portal oeffnet sich.
+MUSTERLOESUNG: Der Fall 34 zeigt das Verfahren in drei Schritten. Erstens sichert ein Beleg den Kern. Zweitens traegt die Funktion die Wirkung. Drittens schliesst die Deutung das Urteil.
 
-Klausur-Satz: `Good mediation serves the reader: short, clear and culturally awake.`
+Klausur-Satz: `The strategy rule: the harder the clause, the plainer the twin.`
 
 ## Schritt 5 — ausprobieren: Das doppelte Spiel Weg A gegen Weg B
 
-VERGLEICH: Waehle erst das Verfahren, dann loesen: (i) Weg A Nahverfahren (Beleg, Zitat, Wirkung) oder (ii) Weg B Fernverfahren (Kontext, Gefuege, Urteil).
+VERGLEICH: Weg A arbeitet mikroskopisch (Detail, Beleg, Form), Weg B plant makroskopisch (Strategie, Kontext, Gewicht).
 
-AUFGABE A: Welche Spur im Speisekarten-Uebersetzung mit Fussnote verlangt Weg A? Begründe mit Zitat.
-AUFGABE B: Welche Frage zum Fallganzen verlangt Weg B? Begründe mit Kontext.
+AUFGABE A: Welche Spur verlangt Weg A? Begruende mit Beleg.
+AUFGABE B: Welche Frage verlangt Weg B? Begruende mit Kontext.
 
 HILFE: A fragt nach Form und Naehe, also Weg A. B fragt nach Rolle und Ganzem, also Weg B.
 
-ANTWORT: A erfordert Weg A: Der Nahbeleg mit Zitat und Zeile zeigt die Wirkung im Detail. B erfordert Weg B: Der Fernblick auf Kontext und Gefuege sichert das Urteil zu Mediation-Strategien: Register und Kulturtransfer.
+ANTWORT A: Way A twins closely: terms, modals and numbers clause by clause.
+ANTWORT B: Way B transfers widely: systems, readers and risks decide notes and structure.
 
-Klausur-Satz: `Good mediation serves the reader: short, clear and culturally awake.`
+Klausur-Satz: `Close twinning secures how, wide transfer why; both help.`
 
-## Schritt 6 — check: Selbsttest zu Mediation-Strategien: Register und Kulturtransfer
+## Schritt 6 — check: Selbsttest mit Antwortkarten
 
 CHECK (drei Fragen mit Antworten):
 
-FRAGE: Nenne die Drei-Schritt-Kette. | ANTWORT: Befund mit Zeile, Funktion im Gefuege, Deutung als Urteil.
-FRAGE: Was verlangt Weg A? | ANTWORT: Nahbeleg mit Zitat und Wirkung am Detail.
-FRAGE: Was verlangt Weg B? | ANTWORT: Kontext und Gefuege als Traeger des Urteils.
+- FRAGE: How do you twin a term? | ANTWORT: Formal term plus plain twin on first use.
+- FRAGE: What needs a system note? | ANTWORT: Deposits, duties, dates differing by country.
+- FRAGE: How do you verify? | ANTWORT: Back-check numbers and flag unclear source.
 
-Klausur-Satz: `Good mediation serves the reader: short, clear and culturally awake.`
+Klausur-Satz: `Often confused: friendly is not vague; must stays must.`
 
 ## Fehlvorstellung
 
-1. Fehlvorstellung: Translation means everything.
-   Korrektur-Satz: `Selection for purpose beats full copying.`
-2. Fehlvorstellung: Formal always fits.
-   Korrektur-Satz: `Register follows the reader, not the source.`
+1. Fehlvorstellung: Plain breaks law.
+   Korrektur-Satz: `Twins keep law, drop fear.`
+2. Fehlvorstellung: Notes clutter.
+   Korrektur-Satz: `One system note prevents one breach.`
 
-## Schritt 7 — szenario: Klausurtransfer: Exchange coordinator zu Fall 34
+## Schritt 7 — szenario: Klausurtransfer als Relocation guide editor zu Fall 34
 
-ROLLE: Du bist Exchange coordinator in der Pruefung.
-SITUATION: Ein Fall zu Mediation-Strategien: Register und Kulturtransfer (Fall 34, Speisekarten-Uebersetzung mit Fussnote) liegt unbearbeitet auf dem Tisch.
-AUFGABE: Verfasse circa 150 Woerter mit Einordnung, zwei Belegen mit Zeile, Funktion, Deutung und Schlussurteil.
-RUBRIC (30 XP): Einordnung korrekt (6 XP) | Zwei Belege mit Zeile (10 XP) | Funktion plus Deutung (10 XP) | Fachsprache und Schluss (4 XP).
+ROLLE: Du bist Relocation guide editor in der Pruefung.
+SITUATION: Ein Fall liegt unbearbeitet auf dem Tisch und verlangt Einordnung, Belege und Urteil.
+AUFGABE: Verfasse circa 150 Woerter mit Einordnung, zwei Belegen, Funktion, Deutung und Schlussurteil.
+RUBRIC (30 XP): Einordnung korrekt (6 XP) | Zwei Belege (10 XP) | Funktion plus Deutung (10 XP) | Fachsprache und Schluss (4 XP).
+
+Klausur-Satz: `AFB-III model: Clauses C1-C3 twinned plainly with system notes S and verified figures yield newcomer-ready text.`
 
 ## Schritt 8 — reflexion: Takeaway und Rueckblick aus Fall 34
 
 TAKEAWAY:
 
-Fall 34 lehrt: Beleg sichern, Funktion benennen, Urteil begruenden. Good mediation serves the reader: short, clear and culturally awake. Takeaway-Satz: `Good mediation serves the reader: short, clear and culturally awake.`
+Klausur-Satz: `Fall 34 (Mediation Strategies DE) schliesst: Wer Beleg, Funktion und Urteil sichert, besteht jede Klausur.`
+
+Fall 34 lehrt den Dreischritt aus Beleg, Funktion und Urteil. Takeaway-Satz: `Strategising means: twin, note, head, soften, verify.`
 
 REFLEXION:
 1. Welche Spur fiel schwerer, der Nahbeleg oder das Fernurteil?
-2. Beim naechsten Mal sichere ich zuerst Zitat und Zeile, weil sie jede Deutung tragen.
+2. Beim naechsten Mal sichere ich zuerst Beleg und Gliederung, weil sie jede Deutung tragen.

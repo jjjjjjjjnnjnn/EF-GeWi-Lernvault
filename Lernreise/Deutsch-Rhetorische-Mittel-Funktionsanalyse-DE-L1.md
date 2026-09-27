@@ -10,60 +10,80 @@ datum: 2026-09-26
 tags: [EF, Deutsch, Rhetorik]
 version: Lesson-v3
 ---
-
 # Lernreise: Rhetorische Mittel und Funktionsanalyse (L1, Ziel Klausur)
 
 <!-- Campaign: Detektive Fal 14 -->
-## Schritt 1 — entdecken: Der versiegelte Umschlag aus der Hofkanzlei
+## Schritt 1 — entdecken: Der versiegelte Umschlag zur Sache
 
 ZIELE (3 Ziele, nach 15 Minuten erreichbar):
 
-1. Du ordnest Fall 14 (Rede-Manuskript mit Ausrufezeichen am Rand) in Kontext, Verfahren und Deutung ein.
-2. Du belegst jede Aussage zu Rhetorische Mittel und Funktionsanalyse mit Zitat und Zeile und benennst die Funktion.
+1. Du ordnest Fall 14 in Kontext, Verfahren und Deutung ein.
+2. Du belegst jede Aussage mit Zitat und Zeile und benennst die Funktion.
 3. Du faellst ein Urteil im passenden Anforderungsbereich.
 
 HOOK:
 
-Mitten in der Nacht flackert das Blaulicht der Agentur fuer Texte und Gedanken ueber den leeren Schreibtischen, und Partner Theo Wort legt einen versiegelten Umschlag auf deinen Platz. Seit Wochen jagt ihr als Gedanken-Agent an der Seite deines Text-Detektivs durch die Jahrhunderte, und jede geloeste Spur oeffnet ein neues Portal in der Zeit. Heute geht es um Rhetorische Mittel und Funktionsanalyse. Falllinie A: Der Hof von Guastalla fluestert von Gift, geheimen Briefen und einer Ehre, die man mit Worten vergiftet. Im Umschlag steckt Fall 14: ein Rede-Manuskript mit Ausrufezeichen am Rand. Kaum haeltst du das Stueck ins Licht, faellt dir eine zweite Schicht auf: Jemand hat die Botschaft frisiert, verkuerzt oder verdreht, und nur wer Beleg, Funktion und Deutung sauber trennt, kann die Manipulation entlarven. Das naechste Portal oeffnet sich nur, wenn du drei Ziele in fuenfzehn Minuten schaffst und jede Behauptung mit Zeile und Wirkung belegst. Theo Wort gru belt schon ungeduldig, denn die Spur wird kalt.
+Die Schulaula ist voll, das Mikro pfeift: Eine Rede soll die ganze Stufe zum Aufräumen des Parks bewegen. Die ersten Saetze verpuffen. Dann wechselt der Ton.
 
-Klausur-Satz: `Kein Mittel ohne Dienst: Jede Figur muss dem Gedanken dienen, sonst ist sie Schmuck.`
+Du erhaeltst das Redemanuskript mit Randnotizen. Jede **Anapher** ist ein Trommelschlag. Pruefe Mittel, Stelle und Wirkung mit Zeile.
 
-## Schritt 2 — entdecken: Die Ausruestungskiste gegen Fall 14
+Klausur-Satz: `Die Stufenrede zeigt Appell gegen Traegheit: Rhythmus reisst mit, was Argumente allein nicht heben.`
+
+## Schritt 2 — entdecken: Die Ausruestungskiste zum Fall
 
 AUSRUESTUNG (5 Instrumente im Koffer):
 
-- **Metapher**: Metapher: Bildfeld als Deutungshebel mit Funktionskern
-- **Anapher**: Anapher: Wiederholung am Satzanfang als Verstaerker
-- **Parallelismus**: Parallelismus: Gleichbau als Ordnungs- und Nachdrucksignal
-- **Rhetorische Frage**: Rhetorische Frage: Scheinfrage als Lenkung des Lesers
-- **Klimax**: Klimax: Steigerung als Spannungs- und Schlussmarker
+- **Anapher**: Die Anapher wiederholt den Satzanfang in aufeinanderfolgenden Saetzen. Sie erzeugt Rhythmus und Nachdruck. Die Wiederholung hämmert die Botschaft ein.  Mechanismus: Gleicher Anfang plus steigender Inhalt ergibt Eskalation; das Ohr folgt dem Takt. So wird Appell koerperlich spürbar. Klausur-Tipp: Zitiere die Kette und benenne die Steigerung.
+- **Metapher**: Die Metapher ersetzt den eigentlichen Ausdruck durch ein Bild. Sie verdichtet Argumente zu Anschauung. Ein Bild ersetzt drei Saetze.  Mechanismus: Bildspender plus Zielbereich erzeugt Übertragung; Emotion plus Erkenntnis wirken zugleich. Ohne Aufloesung bleibt sie Dekor. Klausur-Tipp: Loese Bild in Sache auf und benenne den Gewinn.
+- **Rhetorische Frage**: Die rhetorische Frage erwartet keine Antwort, sondern Zustimmung. Sie verwickelt das Publikum ins Denken. Wer fragt, fuehrt.  Mechanismus: Frageform plus offensichtliche Antwort erzeugt Scheinbeteiligung; Schweigen gilt als Ja. Sie markiert Wendepunkte. Klausur-Tipp: Formuliere die unterstellte Antwort mit.
+- **Antithese**: Die Antithese stellt Gegensaetze in einem Satz gegenueber. Sie schaerft Position durch Kontrast. Entweder-oder ersetzt Sowohl-als-auch.  Mechanismus: Gegensatzpaar plus Parallelbau erzeugt Entscheidungsdruck; die Mitte verschwindet. So wird Haltung unvermeidlich. Klausur-Tipp: Unterstreiche das Gegensatzpaar.
+- **Dreischritt**: Der Dreischritt staffelt drei Glieder zur Klimax. Er ordnet Gedanken und steigert Wirkung. Zwei sind Zufall, drei sind Wille.  Mechanismus: Zwei plus eins ergibt Vollstaendigkeit; das dritte Glied traegt die Pointe. Rhythmus plus Inhalt erzeugt Beifallsbereitschaft. Klausur-Tipp: Nummeriere die Glieder und deute die Klimax.
 
-Klausur-Satz: `Kein Mittel ohne Dienst: Jede Figur muss dem Gedanken dienen, sonst ist sie Schmuck.`
+Klausur-Satz: `Anapher, Metapher und Antithese definieren das rhetorische Grundbesteck.`
 
 ## Schritt 3 — entdecken: Der Mechanismus hinter dem Tatbild
 
 MECHANISMUS (Tiefenbau):
 
-Jeder Fall folgt der Kette Befund, Funktion und Deutung. Zuerst sicherst du den Befund mit Zitat und Zeile, dann bestimmst du die Funktion im Macht- oder Sinn-gefuege, erst danach formulierst du die Deutung zu Rhetorische Mittel und Funktionsanalyse. Falllinie A: Der Hof von Guastalla fluestert von Gift, geheimen Briefen und einer Ehre, die man mit Worten vergiftet. Wer die zweite Schicht des Rede-Manuskript mit Ausrufezeichen am Rand uebersieht, tappt in die Falle der Agentur.
+Rede wirkt durch **Wiederholung mit Steigerung**. Jedes Mittel traegt eine Funktion: binden, bewegen oder entscheiden.
+
+Der Weg: Sichere das Mittel mit Zitat und Zeile. Benenne die Funktion im Appell. Miss die Steigerung zur Pointe. So wird Stilmittel zur Wirkungsanalyse.
 
 ```diagram
-Befund (Zitat mit Zeile) -> Funktion (Wirkung im Gefuege) -> Deutung (Urteil)
-Fall 14: Rede-Manuskript mit Ausrufezeichen am Rand -> Spur sichern -> Tatbild schliessen
+Mittel (Zitat) -> Funktion (binden/bewegen/entscheiden) -> Steigerung (Klimax) -> Appell
 ```
 
-Klausur-Satz: `Kein Mittel ohne Dienst: Jede Figur muss dem Gedanken dienen, sonst ist sie Schmuck.`
+Klausur-Satz: `Mittel plus Steigerung ergibt Bewegung: Wiederholung bindet, Frage beteiligt, Klimax entscheidet.`
 
 ## Anekdote
 
-Ein Redner testete einst fuenf Figuren an einem Satz und behielt nur die mit Wirkung.
+Demosthenes soll mit Kieselsteinen im Mund gegen das Meeresrauschen geredet haben. Sein Training machte aus Stimme ein Instrument.
 
-Bezug zum Konzept: `Kein Mittel ohne Dienst: Jede Figur muss dem Gedanken dienen, sonst ist sie Schmuck.`
+Bezug zum Konzept: `Mittel plus Steigerung ergibt Bewegung: Wiederholung bindet, Frage beteiligt, Klimax entscheidet.`
 
 ## Schritt 4 — ausprobieren: Die Sandkasten-Pruefung mit Textlupe
 
 [Werkzeug: highlighter]
 
-AUFGABE: Untersuche den Fall-Text 14 (Rede-Manuskript mit Ausrufezeichen am Rand) zu Rhetorische Mittel und Funktionsanalyse.
+PRIMAERTEXT (Studienfassung: Rede an die Stufe (Ausschnitt, 15 Zeilen), Studienfassung, 100-200 Woerter):
+
+> Wir haben den Park geliebt, wir haben ihn verloren, wir holen ihn zurueck! (Z. 1)
+> Seht ihr den Muell? Seht ihr die Scherben? Seht ihr unser Schweigen? (Z. 2)
+> Der Park ist unser Wohnzimmer ohne Dach. (Z. 3)
+> Wer rauemt, der achtet; wer zusieht, der duldet. (Z. 4)
+> Ich frage euch: Wollen wir Gaeste oder Gastgeber sein? (Z. 5)
+> Gastgeber putzen, Gaeste meckern, Freunde handeln. (Z. 6)
+> Handeln heisst: Handschuhe, Saecke, Samstag. (Z. 7)
+> Samstag um zehn, Samstag mit Musik, Samstag fuer alle! (Z. 8)
+> Was uns trennt, ist klein; was uns verbindet, ist der Park. (Z. 9)
+> Klein ist die Ausrede, gross ist die Wirkung, gewaltig das Wir. (Z. 10)
+> Fragt die Enten? Fragt die Kinder? Fragt euer Gewissen? (Z. 11)
+> Unser Gewissen antwortet: Tut es, tut es jetzt, tut es zusammen! (Z. 12)
+> Zusammen tragen, zusammen lachen, zusammen bleiben. (Z. 13)
+> Bleiben wird, wer heute anpackt und morgen wiederkommt. (Z. 14)
+> Kommt! Der Park wartet, die Stadt sieht zu, die Zukunft dankt. (Z. 15)
+
+AUFGABE: Untersuche den Primaertext Zeile fuer Zeile und belege jede Aussage mit Zitat und Zeile.
 TARGET: Drei Belege mit Zeile, je mit Funktion und einer Deutung in vier Saetzen.
 
 HILFE:
@@ -71,52 +91,59 @@ HILFE:
 2. Schritt 2: Sichere zwei Befunde mit Zeile.
 3. Schritt 3: Deute Befund und Funktion im Fallganzen.
 
-MUSTERLOESUNG: Der Fall 14 zeigt Rhetorische Mittel und Funktionsanalyse in drei Schritten. Erstens belegt ein Zitat mit Zeile den Kern des Rede-Manuskript mit Ausrufezeichen am Rand, zweitens traegt die Funktion die Wirkung im Gefuege, drittens schliesst die Deutung das Tatbild. Damit ist die zweite Schicht entlarvt und das Portal oeffnet sich.
+MARKIERAUFTRAG: Markiere mit GELB alle **Gemeinschaftsmetaphern** (Wohnzimmer, Gastgeber, Wir). Markiere mit BLAU die **Appellfiguren** (Anaphern, Fragen, Dreischritte).
 
-Klausur-Satz: `Kein Mittel ohne Dienst: Jede Figur muss dem Gedanken dienen, sonst ist sie Schmuck.`
+MUSTERLOESUNG: Der Fall 14 zeigt das Kernverfahren in drei Schritten. Erstens sichert ein Zitat mit Zeile den Befund. Zweitens benennt die Funktion die Wirkung im Gefuege. Drittens schliesst die Deutung das Urteil. Damit ist die zweite Schicht entlarvt.
+
+Klausur-Satz: `Die Regel der Rede: Je naeher der Appell, desto dichter die Figuren.`
 
 ## Schritt 5 — ausprobieren: Das doppelte Spiel Weg A gegen Weg B
 
-VERGLEICH: Waehle erst das Verfahren, dann loesen: (i) Weg A Nahverfahren (Beleg, Zitat, Wirkung) oder (ii) Weg B Fernverfahren (Kontext, Gefuege, Urteil).
+VERGLEICH: Weg A liest mikroskopisch (Text, Rhetorik, Detail), Weg B deutet makroskopisch (Epoche, Kontext, Ordnung).
 
-AUFGABE A: Welche Spur im Rede-Manuskript mit Ausrufezeichen am Rand verlangt Weg A? Begründe mit Zitat.
-AUFGABE B: Welche Frage zum Fallganzen verlangt Weg B? Begründe mit Kontext.
+AUFGABE A: Welche Spur verlangt Weg A? Begruende mit Zitat und Zeile.
+AUFGABE B: Welche Frage verlangt Weg B? Begruende mit Kontext.
 
 HILFE: A fragt nach Form und Naehe, also Weg A. B fragt nach Rolle und Ganzem, also Weg B.
 
-ANTWORT: A erfordert Weg A: Der Nahbeleg mit Zitat und Zeile zeigt die Wirkung im Detail. B erfordert Weg B: Der Fernblick auf Kontext und Gefuege sichert das Urteil zu Rhetorische Mittel und Funktionsanalyse.
+ANTWORT A: Weg A seziert mikroskopisch Figuren und Rhythmus: Anaphern Z. 2 und Z. 8, Antithesen Z. 4 und Z. 9, Klimax Z. 10.
+ANTWORT B: Weg B fragt makroskopisch nach Situation: Schulaula, Altersgruppe und Handlungsziel erklaeren Ton und Appelldichte.
 
-Klausur-Satz: `Kein Mittel ohne Dienst: Jede Figur muss dem Gedanken dienen, sonst ist sie Schmuck.`
+Klausur-Satz: `Feinlese sichert das Wie der Wirkung, Situationswissen das Warum des Tons; beide tragen das Urteil.`
 
-## Schritt 6 — check: Selbsttest zu Rhetorische Mittel und Funktionsanalyse
+## Schritt 6 — check: Selbsttest mit Antwortkarten
 
 CHECK (drei Fragen mit Antworten):
 
-FRAGE: Nenne die Drei-Schritt-Kette. | ANTWORT: Befund mit Zeile, Funktion im Gefuege, Deutung als Urteil.
-FRAGE: Was verlangt Weg A? | ANTWORT: Nahbeleg mit Zitat und Wirkung am Detail.
-FRAGE: Was verlangt Weg B? | ANTWORT: Kontext und Gefuege als Traeger des Urteils.
+- FRAGE: Welche drei Funktionen musst du unterscheiden? | ANTWORT: Binden (Rhythmus), bewegen (Bild), entscheiden (Kontrast).
+- FRAGE: Woran erkennst du eine Klimax? | ANTWORT: An drei gesteigerten Gliedern mit Pointe im dritten.
+- FRAGE: Was gehoert zu jedem Mittelbeleg? | ANTWORT: Zitat mit Zeile plus Funktion im Appell.
 
-Klausur-Satz: `Kein Mittel ohne Dienst: Jede Figur muss dem Gedanken dienen, sonst ist sie Schmuck.`
+Klausur-Satz: `Haeufig verwechselt: Benennen ist nicht Deuten; erst Funktion plus Steigerung zaehlt.`
 
 ## Fehlvorstellung
 
-1. Fehlvorstellung: Benennen genuege.
-   Korrektur-Satz: `Name ohne Zitat und Funktion gibt keine Punkte.`
-2. Fehlvorstellung: Mehr Figuren seien besser.
-   Korrektur-Satz: `Zwei belegte Figuren mit Funktion schlagen zehn Namen.`
+1. Fehlvorstellung: Viele Mittel seien gute Rede.
+   Korrektur-Satz: `Nur Mittel mit Funktion und Steigerung tragen Wirkung.`
+2. Fehlvorstellung: Frage erwarte Antwort.
+   Korrektur-Satz: `Rhetorische Fragen unterstellen Zustimmung.`
 
-## Schritt 7 — szenario: Klausurtransfer: Reden-Coach der Debattier-AG zu Fall 14
+## Schritt 7 — szenario: Klausurtransfer als Redenschreiber der Schuelervertretung zu Fall 14
 
-ROLLE: Du bist Reden-Coach der Debattier-AG in der Pruefung.
-SITUATION: Ein Fall zu Rhetorische Mittel und Funktionsanalyse (Fall 14, Rede-Manuskript mit Ausrufezeichen am Rand) liegt unbearbeitet auf dem Tisch.
+ROLLE: Du bist Redenschreiber der Schuelervertretung in der Pruefung.
+SITUATION: Ein Fall liegt unbearbeitet auf dem Tisch und verlangt Einordnung, Belege und Urteil.
 AUFGABE: Verfasse circa 150 Woerter mit Einordnung, zwei Belegen mit Zeile, Funktion, Deutung und Schlussurteil.
 RUBRIC (30 XP): Einordnung korrekt (6 XP) | Zwei Belege mit Zeile (10 XP) | Funktion plus Deutung (10 XP) | Fachsprache und Schluss (4 XP).
+
+Klausur-Satz: `AFB-III-Mustersatz: Anapherketten (Z. 2, Z. 8) mit Klimax (Z. 10) belegen die Mobilisierung, weil Rhythmus plus Steigerung Beifall in Handlung uebersetzt.`
 
 ## Schritt 8 — reflexion: Takeaway und Rueckblick aus Fall 14
 
 TAKEAWAY:
 
-Fall 14 lehrt: Beleg sichern, Funktion benennen, Urteil begruenden. Kein Mittel ohne Dienst: Jede Figur muss dem Gedanken dienen, sonst ist sie Schmuck. Takeaway-Satz: `Kein Mittel ohne Dienst: Jede Figur muss dem Gedanken dienen, sonst ist sie Schmuck.`
+Klausur-Satz: `Fall 14 (Rhetorische Mittel Funktionsanalyse DE) schliesst: Wer Beleg, Funktion und Urteil sichert, besteht jede Klausur.`
+
+Fall 14 lehrt den Dreischritt aus Beleg, Funktion und Urteil. Takeaway-Satz: `Rede lesen heisst: Figuren zaehlen, Funktionen benennen und den Appell an der Klimax messen.`
 
 REFLEXION:
 1. Welche Spur fiel schwerer, der Nahbeleg oder das Fernurteil?

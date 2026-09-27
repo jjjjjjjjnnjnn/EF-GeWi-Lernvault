@@ -10,60 +10,80 @@ datum: 2026-09-25
 tags: [EF, Deutsch, Lyrik]
 version: Lesson-v3
 ---
-
 # Lernreise: Sturm und Drang: Bildlichkeit und Deutungshypothese (L1, Ziel Klausur)
 
 <!-- Campaign: Detektive Fal 16 -->
-## Schritt 1 — entdecken: Der versiegelte Umschlag aus der Funknacht
+## Schritt 1 — entdecken: Der versiegelte Umschlag zur Sache
 
 ZIELE (3 Ziele, nach 15 Minuten erreichbar):
 
-1. Du ordnest Fall 16 (Tagebuchseite mit Ausruf an die Natur) in Kontext, Verfahren und Deutung ein.
-2. Du belegst jede Aussage zu Sturm und Drang: Bildlichkeit und Deutungshypothese mit Zitat und Zeile und benennst die Funktion.
+1. Du ordnest Fall 16 in Kontext, Verfahren und Deutung ein.
+2. Du belegst jede Aussage mit Zitat und Zeile und benennst die Funktion.
 3. Du faellst ein Urteil im passenden Anforderungsbereich.
 
 HOOK:
 
-Mitten in der Nacht flackert das Blaulicht der Agentur fuer Texte und Gedanken ueber den leeren Schreibtischen, und Partner Theo Wort legt einen versiegelten Umschlag auf deinen Platz. Seit Wochen jagt ihr als Gedanken-Agent an der Seite deines Text-Detektivs durch die Jahrhunderte, und jede geloeste Spur oeffnet ein neues Portal in der Zeit. Heute geht es um Sturm und Drang: Bildlichkeit und Deutungshypothese. Falllinie B: Aus dem Funkgeraet der Zwanzigerjahre knistert eine fremde Grossstadt, deren Lichter die Menschen einsam machen. Im Umschlag steckt Fall 16: ein Tagebuchseite mit Ausruf an die Natur. Kaum haeltst du das Stueck ins Licht, faellt dir eine zweite Schicht auf: Jemand hat die Botschaft frisiert, verkuerzt oder verdreht, und nur wer Beleg, Funktion und Deutung sauber trennt, kann die Manipulation entlarven. Das naechste Portal oeffnet sich nur, wenn du drei Ziele in fuenfzehn Minuten schaffst und jede Behauptung mit Zeile und Wirkung belegst. Theo Wort gru belt schon ungeduldig, denn die Spur wird kalt.
+Ein anderer Nachlass, ein anderes Feuer: Eine Nachtigall schreit gegen Mauern aus Paragraphen. Der Dichter schreibt mit Gänsekiel, als waere es ein Schwert.
 
-Klausur-Satz: `Das Genie spricht die Natur an, damit die Seele gehoert wird.`
+Du vergleichst die zweite Hymne mit der ersten. Das **Sehnsuchtsbild** von Ferne und Stern traegt leiser, aber tiefer. Finde den zweiten Ton des Aufbruchs.
 
-## Schritt 2 — entdecken: Die Ausruestungskiste gegen Fall 16
+Klausur-Satz: `Die zweite Hymne stellt Enge gegen Ferne: Sehnsucht oeffnet, was Pflicht verschliesst.`
+
+## Schritt 2 — entdecken: Die Ausruestungskiste zum Fall
 
 AUSRUESTUNG (5 Instrumente im Koffer):
 
-- **Naturbild**: Naturbild: Sturm und Herz als Spiegel der Genie-Seele
-- **Ausruf und Apostrophe**: Ausruf und Apostrophe: Anrede als Unmittelbarkeitssignal
-- **Deutungshypothese**: Deutungshypothese: fruehe These ueber Ich, Natur und Freiheit
-- **Versrhythmus**: Versrhythmus: freier Rhythmus als Aufbruch gegen Regel
-- **Subjektpathos**: Subjektpathos: Gefuehlsbekenntnis als Wahrheitsanspruch
+- **Geniebegriff**: Der Geniebegriff adelt das regelbrechende Originalgenie. Es empfaengt Gesetze von der Natur. Nachahmung gilt als Verrat am Herzen.  Mechanismus: Selbstberufung plus Bildbeweis ersetzt Autoritaet; das Werk beglaubigt sich durch Kraft. So wird Bruch zur Norm. Klausur-Tipp: Belege Originalitaet mit Bild und Ausruf.
+- **Naturbild**: Das Naturbild malt Ferne, Stern und Strom als Gegenwelt zum Salon. Es verbindet Weite mit Innigkeit. Jedes Bild ist Bekenntnis.  Mechanismus: Fernbild plus Ich-Sehnsucht erzeugt Spannung; Aufloesung kommt durch Vereinigung. Landschaft heilt die Fessel. Klausur-Tipp: Deute Ferne als Freiheitsmass.
+- **Gefuehlskult**: Der Gefuehlskult erhoeht Herzschlag zum Erkenntnisorgan. Traene beweist mehr als Syllogismus. Das Ich fuehlt sich frei.  Mechanismus: Bekenntnis plus Wiederholung vertieft Wirkung; Steigerung fuehrt zur Katharsis. Der Leser wird Zeuge, nicht Richter. Klausur-Tipp: Zitiere Bekenntnisformeln.
+- **Freiheitsforderung**: Die Freiheitsforderung ruft nach Bahn fuer Herz und Kunst. Sie verneint Kerker aus Sitte und Amt. Ihr Horizont ist Unendlichkeit.  Mechanismus: Verneinung des Alten plus Beschwoerung des Neuen erzeugt Aufbruchspannung. Jede Strophe erweitert den Raum. Klausur-Tipp: Nenne Fessel und Gegenraum.
+- **Deutungshypothese**: Die Deutungshypothese fasst Sehnsucht als Weg zur Selbstwerdung. Sie behauptet: Ferne heilt Enge. Alle Bilder dienen ihr.  Mechanismus: These plus Bildreihe ergibt Pruefgang; Schlussstrophe bestaetigt oder bricht sie. So bleibt Deutung falsifizierbar. Klausur-Tipp: Endpruefung in der Schlussstrophe ist Pflicht.
 
-Klausur-Satz: `Das Genie spricht die Natur an, damit die Seele gehoert wird.`
+Klausur-Satz: `Genie, Fernbild und Bekenntnis definieren auch den leisen Sturm und Drang.`
 
 ## Schritt 3 — entdecken: Der Mechanismus hinter dem Tatbild
 
 MECHANISMUS (Tiefenbau):
 
-Jeder Fall folgt der Kette Befund, Funktion und Deutung. Zuerst sicherst du den Befund mit Zitat und Zeile, dann bestimmst du die Funktion im Macht- oder Sinn-gefuege, erst danach formulierst du die Deutung zu Sturm und Drang: Bildlichkeit und Deutungshypothese. Falllinie B: Aus dem Funkgeraet der Zwanzigerjahre knistert eine fremde Grossstadt, deren Lichter die Menschen einsam machen. Wer die zweite Schicht des Tagebuchseite mit Ausruf an die Natur uebersieht, tappt in die Falle der Agentur.
+Auch die leise Hymne folgt **Steigerung zur Befreiung**. Sehnsucht waechst von Zeile zu Zeile. Der Schluss oeffnet den Raum.
+
+Der Weg: Sammle Fernbilder mit Zeile. Miss Anreden und Wiederholungen. Lege jede Strophe an die These. So wird Gefühl zur Argumentation.
 
 ```diagram
-Befund (Zitat mit Zeile) -> Funktion (Wirkung im Gefuege) -> Deutung (Urteil)
-Fall 16: Tagebuchseite mit Ausruf an die Natur -> Spur sichern -> Tatbild schliessen
+Sehnsucht (Ferne) -> Steigerung (Wiederholung) -> Oeffnung (Schluss) -> These (Selbstwerdung)
 ```
 
-Klausur-Satz: `Das Genie spricht die Natur an, damit die Seele gehoert wird.`
+Klausur-Satz: `Ferne plus Wiederholung ergibt Oeffnung: Anrede sehnt, Imperativ sendet, Schluss entlaesst.`
 
 ## Anekdote
 
-Ein Setzer legte einst ein Ausrufezeichen so gross, dass der Dichter lachen musste.
+Herder soll Baeume umarmt haben, um ihren Wuchs zu verstehen. Seine Schueller nannten das Feldforschung des Herzens.
 
-Bezug zum Konzept: `Das Genie spricht die Natur an, damit die Seele gehoert wird.`
+Bezug zum Konzept: `Ferne plus Wiederholung ergibt Oeffnung: Anrede sehnt, Imperativ sendet, Schluss entlaesst.`
 
 ## Schritt 4 — ausprobieren: Die Sandkasten-Pruefung mit Textlupe
 
 [Werkzeug: highlighter]
 
-AUFGABE: Untersuche den Fall-Text 16 (Tagebuchseite mit Ausruf an die Natur) zu Sturm und Drang: Bildlichkeit und Deutungshypothese.
+PRIMAERTEXT (Studienfassung: Sternensehnsucht (Ausschnitt, 15 Zeilen), Studienfassung, 100-200 Woerter):
+
+> Nachtigall, warum rufst du hinter Mauern? (Z. 1)
+> Mein Herz sitzt eng bei Lampen und Akten. (Z. 2)
+> Dort ueberm Strom liegt Ferne voller Sterne. (Z. 3)
+> O Ferne, reine Mutter aller Traeume! (Z. 4)
+> Sende einen Kahn, sende Wind und Weite! (Z. 5)
+> Ich zaehle Gitter, du zaehlst Welten. (Z. 6)
+> Vater nennt es Pflicht, ich nenne es Kerker. (Z. 7)
+> Sitte bindet Haende, Sehnsucht loest sie. (Z. 8)
+> Horch, der Strom ruft meinen zweiten Namen! (Z. 9)
+> So werfe ich die Feder in die Flut. (Z. 10)
+> Trag sie, Strom, zu freieren Gestaden! (Z. 11)
+> Kein Siegel, kein Altar haelt diese Schrift. (Z. 12)
+> Sterne, oeffnet eure stillen Tore! (Z. 13)
+> Ich komme barfuss, doch mit hellem Herzen. (Z. 14)
+> Und was mich hielt, das segne ich im Gehen. (Z. 15)
+
+AUFGABE: Untersuche den Primaertext Zeile fuer Zeile und belege jede Aussage mit Zitat und Zeile.
 TARGET: Drei Belege mit Zeile, je mit Funktion und einer Deutung in vier Saetzen.
 
 HILFE:
@@ -71,52 +91,59 @@ HILFE:
 2. Schritt 2: Sichere zwei Befunde mit Zeile.
 3. Schritt 3: Deute Befund und Funktion im Fallganzen.
 
-MUSTERLOESUNG: Der Fall 16 zeigt Sturm und Drang: Bildlichkeit und Deutungshypothese in drei Schritten. Erstens belegt ein Zitat mit Zeile den Kern des Tagebuchseite mit Ausruf an die Natur, zweitens traegt die Funktion die Wirkung im Gefuege, drittens schliesst die Deutung das Tatbild. Damit ist die zweite Schicht entlarvt und das Portal oeffnet sich.
+MARKIERAUFTRAG: Markiere mit GELB alle **Fern- und Sternbilder** (Ferne, Sterne, Strom, Gestaden). Markiere mit BLAU die **Sehnsuchtsappelle** (Sende, Trag, Oeffnet, Anreden).
 
-Klausur-Satz: `Das Genie spricht die Natur an, damit die Seele gehoert wird.`
+MUSTERLOESUNG: Der Fall 16 zeigt das Kernverfahren in drei Schritten. Erstens sichert ein Zitat mit Zeile den Befund. Zweitens benennt die Funktion die Wirkung im Gefuege. Drittens schliesst die Deutung das Urteil. Damit ist die zweite Schicht entlarvt.
+
+Klausur-Satz: `Die Regel der Sehnsucht: Je weiter das Bild, desto enger erscheint die Fessel.`
 
 ## Schritt 5 — ausprobieren: Das doppelte Spiel Weg A gegen Weg B
 
-VERGLEICH: Waehle erst das Verfahren, dann loesen: (i) Weg A Nahverfahren (Beleg, Zitat, Wirkung) oder (ii) Weg B Fernverfahren (Kontext, Gefuege, Urteil).
+VERGLEICH: Weg A liest mikroskopisch (Text, Rhetorik, Detail), Weg B deutet makroskopisch (Epoche, Kontext, Ordnung).
 
-AUFGABE A: Welche Spur im Tagebuchseite mit Ausruf an die Natur verlangt Weg A? Begründe mit Zitat.
-AUFGABE B: Welche Frage zum Fallganzen verlangt Weg B? Begründe mit Kontext.
+AUFGABE A: Welche Spur verlangt Weg A? Begruende mit Zitat und Zeile.
+AUFGABE B: Welche Frage verlangt Weg B? Begruende mit Kontext.
 
 HILFE: A fragt nach Form und Naehe, also Weg A. B fragt nach Rolle und Ganzem, also Weg B.
 
-ANTWORT: A erfordert Weg A: Der Nahbeleg mit Zitat und Zeile zeigt die Wirkung im Detail. B erfordert Weg B: Der Fernblick auf Kontext und Gefuege sichert das Urteil zu Sturm und Drang: Bildlichkeit und Deutungshypothese.
+ANTWORT A: Weg A folgt mikroskopisch der Bildreihe Gitter-gegen-Sterne und den Imperativen Z. 5, Z. 11 und Z. 13.
+ANTWORT B: Weg B liest makroskopisch: Pietismus-Erbe, Wanderlust und Herzensreligion um 1770 tragen die leise Befreiung.
 
-Klausur-Satz: `Das Genie spricht die Natur an, damit die Seele gehoert wird.`
+Klausur-Satz: `Feinlese hoert das Wie der Steigerung, Kontextwissen das Warum der Wanderlust; beide schliessen das Urteil.`
 
-## Schritt 6 — check: Selbsttest zu Sturm und Drang: Bildlichkeit und Deutungshypothese
+## Schritt 6 — check: Selbsttest mit Antwortkarten
 
 CHECK (drei Fragen mit Antworten):
 
-FRAGE: Nenne die Drei-Schritt-Kette. | ANTWORT: Befund mit Zeile, Funktion im Gefuege, Deutung als Urteil.
-FRAGE: Was verlangt Weg A? | ANTWORT: Nahbeleg mit Zitat und Wirkung am Detail.
-FRAGE: Was verlangt Weg B? | ANTWORT: Kontext und Gefuege als Traeger des Urteils.
+- FRAGE: Welche Bildachse traegt die Hymne? | ANTWORT: Enge (Gitter, Akten) gegen Ferne (Strom, Sterne).
+- FRAGE: Welche Verfahren belegen Steigerung? | ANTWORT: Anreden, Imperative und Wiederholungen mit Zeile.
+- FRAGE: Wo wird die These geprueft? | ANTWORT: In der Schlussstrophe: Oeffnung bestaetigt oder bricht sie.
 
-Klausur-Satz: `Das Genie spricht die Natur an, damit die Seele gehoert wird.`
+Klausur-Satz: `Haeufig verwechselt: Sanft heisst nicht schwach; Wiederholung ist hier Eskalation.`
 
 ## Fehlvorstellung
 
-1. Fehlvorstellung: Laut sei schon tief.
-   Korrektur-Satz: `Pathos braucht Bildbeleg und Funktionsdeutung.`
-2. Fehlvorstellung: Natur sei nur Kulisse.
-   Korrektur-Satz: `Natur ist hier Gegenueber und Richter des Ich.`
+1. Fehlvorstellung: Leise sei zahm.
+   Korrektur-Satz: `Leise Steigerung ist die zweite Eskalationsform des Aufbruchs.`
+2. Fehlvorstellung: Ferne sei Flucht.
+   Korrektur-Satz: `Ferne ist Massstab und Heilmittel der Enge.`
 
-## Schritt 7 — szenario: Klausurtransfer: Lyrik-Lektor im Verlag zu Fall 16
+## Schritt 7 — szenario: Klausurtransfer als Literaturkritiker der Stadtpost zu Fall 16
 
-ROLLE: Du bist Lyrik-Lektor im Verlag in der Pruefung.
-SITUATION: Ein Fall zu Sturm und Drang: Bildlichkeit und Deutungshypothese (Fall 16, Tagebuchseite mit Ausruf an die Natur) liegt unbearbeitet auf dem Tisch.
+ROLLE: Du bist Literaturkritiker der Stadtpost in der Pruefung.
+SITUATION: Ein Fall liegt unbearbeitet auf dem Tisch und verlangt Einordnung, Belege und Urteil.
 AUFGABE: Verfasse circa 150 Woerter mit Einordnung, zwei Belegen mit Zeile, Funktion, Deutung und Schlussurteil.
 RUBRIC (30 XP): Einordnung korrekt (6 XP) | Zwei Belege mit Zeile (10 XP) | Funktion plus Deutung (10 XP) | Fachsprache und Schluss (4 XP).
+
+Klausur-Satz: `AFB-III-Mustersatz: Fernbilder (Z. 3-4) mit Sendungsappellen (Z. 5, Z. 11) belegen Selbstwerdung durch Ferne, weil Enge erst am Gegenbild sichtbar wird.`
 
 ## Schritt 8 — reflexion: Takeaway und Rueckblick aus Fall 16
 
 TAKEAWAY:
 
-Fall 16 lehrt: Beleg sichern, Funktion benennen, Urteil begruenden. Das Genie spricht die Natur an, damit die Seele gehoert wird. Takeaway-Satz: `Das Genie spricht die Natur an, damit die Seele gehoert wird.`
+Klausur-Satz: `Fall 16 (Lyrik Sturm und Drang) schliesst: Wer Beleg, Funktion und Urteil sichert, besteht jede Klausur.`
+
+Fall 16 lehrt den Dreischritt aus Beleg, Funktion und Urteil. Takeaway-Satz: `Sehnsucht lesen heisst: Ferne messen und jede Strophe an der Oeffnung des Schlusses pruefen.`
 
 REFLEXION:
 1. Welche Spur fiel schwerer, der Nahbeleg oder das Fernurteil?

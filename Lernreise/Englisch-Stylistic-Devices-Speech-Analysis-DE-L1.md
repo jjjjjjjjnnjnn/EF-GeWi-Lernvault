@@ -10,113 +10,140 @@ datum: 2026-09-26
 tags: [EF, Englisch, Speech-Analysis]
 version: Lesson-v3
 ---
-
 # Lernreise: Stylistic Devices and Speech Analysis (L1, Ziel Klausur)
 
 <!-- Campaign: Detektive Fal 26 -->
-## Schritt 1 — entdecken: Der versiegelte Umschlag aus der Registratur
+## Schritt 1 — entdecken: Der versiegelte Umschlag zur Sache
 
 ZIELE (3 Ziele, nach 15 Minuten erreichbar):
 
-1. Du ordnest Fall 26 (Regieheft mit doppelter Anstreichung) in Kontext, Verfahren und Deutung ein.
-2. Du belegst jede Aussage zu Stylistic Devices and Speech Analysis mit Zitat und Zeile und benennst die Funktion.
+1. Du ordnest Fall 26 in Kontext, Verfahren und Deutung ein.
+2. Du belegst jede Aussage mit Zitat und Zeile und benennst die Funktion.
 3. Du faellst ein Urteil im passenden Anforderungsbereich.
 
 HOOK:
 
-Mitten in der Nacht flackert das Blaulicht der Agentur fuer Texte und Gedanken ueber den leeren Schreibtischen, und Partner Theo Wort legt einen versiegelten Umschlag auf deinen Platz. Seit Wochen jagt ihr als Gedanken-Agent an der Seite deines Text-Detektivs durch die Jahrhunderte, und jede geloeste Spur oeffnet ein neues Portal in der Zeit. Heute geht es um Stylistic Devices and Speech Analysis. Falllinie C: Hinter einer Stahltuer rauscht ein Ministerium, das Woerter loescht und Gedanken neu schreibt. Im Umschlag steckt Fall 26: ein Regieheft mit doppelter Anstreichung. Kaum haeltst du das Stueck ins Licht, faellt dir eine zweite Schicht auf: Jemand hat die Botschaft frisiert, verkuerzt oder verdreht, und nur wer Beleg, Funktion und Deutung sauber trennt, kann die Manipulation entlarven. Das naechste Portal oeffnet sich nur, wenn du drei Ziele in fuenfzehn Minuten schaffst und jede Behauptung mit Zeile und Wirkung belegst. Theo Wort gru belt schon ungeduldig, denn die Spur wird kalt.
+Die Vollversammlung tobt: Eine Rede soll Handys aus der Pause verbannen. Der erste Redner droht, die zweite ueberzeugt. Ihr Trick heisst Stil.
 
-Klausur-Satz: `A speech persuades when devices serve the message, not the speaker.`
+Du erhaeltst das Manuskript der zweiten Rede. **Anapher** trommelt, **Antithese** schneidet. Zerlege Mittel mit Zeile.
 
-## Schritt 2 — entdecken: Die Ausruestungskiste gegen Fall 26
+Klausur-Satz: `Die Rede zeigt Takt gegen Trott: Rhythmus hebt, was Verbot allein nicht hebt.`
+
+## Schritt 2 — entdecken: Die Ausruestungskiste zum Fall
 
 AUSRUESTUNG (5 Instrumente im Koffer):
 
-- **Anaphora**: Anaphora: repetition at line start as emphasis engine
-- **Tricolon**: Tricolon: triple structure as rhythm of conviction
-- **Rhetorical question**: Rhetorical question: feigned question as audience steering
-- **Inclusive we**: Inclusive we: pronoun bridge between speaker and crowd
-- **Call to action**: Call to action: closing appeal as test of effect
+- **Anaphora**: Anaphora repeats openings for rhythm and push. It hammers message home. Repetition becomes drum.  Mechanism: Same start plus rising content builds climax; ear follows beat. Applause readiness grows.  Klausur-Tipp: Quote chain and name rise.
+- **Antithesis**: Antithesis pairs opposites in parallel frame. It forces choice. Either-or replaces both-and.  Mechanism: Contrast plus balance creates decision pressure; middle vanishes. Stance becomes unavoidable.  Klausur-Tipp: Underline the pair.
+- **Tricolon**: Tricolon triples limbs toward climax. Two is chance, three is will. The third carries point.  Mechanism: Two plus one signals completeness; rhythm plus content invites clap. It organises thought.  Klausur-Tipp: Number limbs, crown third.
+- **Rhetorical question**: Rhetorical question expects assent, not answer. It enrols minds. Who asks, leads.  Mechanism: Question plus obvious answer feigns participation; silence counts as yes. It marks turns.  Klausur-Tipp: State implied answer.
+- **Metaphor**: Metaphor swaps term for image. It compresses argument to vision. One image beats three sentences.  Mechanism: Source plus target transfers feeling and insight; unresolved stays decor. Profit must be named.  Klausur-Tipp: Resolve image into issue.
 
-Klausur-Satz: `A speech persuades when devices serve the message, not the speaker.`
+Klausur-Satz: `Anaphora, Antithesis und Tricolon definieren das Stil-Besteck.`
 
 ## Schritt 3 — entdecken: Der Mechanismus hinter dem Tatbild
 
 MECHANISMUS (Tiefenbau):
 
-Jeder Fall folgt der Kette Befund, Funktion und Deutung. Zuerst sicherst du den Befund mit Zitat und Zeile, dann bestimmst du die Funktion im Macht- oder Sinn-gefuege, erst danach formulierst du die Deutung zu Stylistic Devices and Speech Analysis. Falllinie C: Hinter einer Stahltuer rauscht ein Ministerium, das Woerter loescht und Gedanken neu schreibt. Wer die zweite Schicht des Regieheft mit doppelter Anstreichung uebersieht, tappt in die Falle der Agentur.
+Rede wirkt durch **Takt mit Schnitt**. Wiederholung bindet, Gegensatz entscheidet.
+
+Der Weg: Sichere Mittel mit Zitat und Zeile. Benenne Funktion im Appell. Miss Steigerung zur Pointe. So wird Stil zur Wirkungsanalyse.
 
 ```diagram
-Befund (Zitat mit Zeile) -> Funktion (Wirkung im Gefuege) -> Deutung (Urteil)
-Fall 26: Regieheft mit doppelter Anstreichung -> Spur sichern -> Tatbild schliessen
+Device (quotation) -> Function (bind/move/decide) -> Rise -> Appeal
 ```
 
-Klausur-Satz: `A speech persuades when devices serve the message, not the speaker.`
+Klausur-Satz: `Mittel plus Steigerung ergibt Bewegung: Takt bindet, Frage beteiligt, Klimax entscheidet.`
 
 ## Anekdote
 
-A coach once cut a speech in half and the applause doubled.
+A speechwriter once cut every third line and doubled the applause. Brevity drums louder.
 
-Bezug zum Konzept: `A speech persuades when devices serve the message, not the speaker.`
+Bezug zum Konzept: `Mittel plus Steigerung ergibt Bewegung: Takt bindet, Frage beteiligt, Klimax entscheidet.`
 
 ## Schritt 4 — ausprobieren: Die Sandkasten-Pruefung mit Textlupe
 
 [Werkzeug: highlighter]
 
-AUFGABE: Untersuche den Fall-Text 26 (Regieheft mit doppelter Anstreichung) zu Stylistic Devices and Speech Analysis.
-TARGET: Drei Belege mit Zeile, je mit Funktion und einer Deutung in vier Saetzen.
+PRIMAERTEXT (Study text: Assembly Speech on Pausenhalle (15 lines), study version, 100-200 words):
+
+> We came to talk, we came to listen, we came to decide. (Z. 1)
+> Do we own our breaks, or do breaks own us? (Z. 2)
+> The phone is a leash of glass and light. (Z. 3)
+> Leashes comfort, leashes choke, leashes collect. (Z. 4)
+> Breaks are lungs; screens are straws. (Z. 5)
+> Who breathes through a straw by choice? (Z. 6)
+> Talk builds teams, scrolls build queues, games build debts. (Z. 7)
+> Small is the swipe, large is the loss, huge is the silence after. (Z. 8)
+> Ask the ball? Ask the bench? Ask your own eyes? (Z. 9)
+> Our eyes answer: play, play now, play together! (Z. 10)
+> Together we run, together we laugh, together we stay. (Z. 11)
+> Staying means pockets shut and faces open. (Z. 12)
+> Open faces beat open tabs, every single break. (Z. 13)
+> Tabs can wait; friendship refreshes no page. (Z. 14)
+> Choose! The yard watches, the bell will judge. (Z. 15)
+
+AUFGABE: Untersuche den Primaertext Zeile fuer Zeile und belege jede Aussage mit Zitat und Zeile.
+TARGET: Three quotations, each with effect and judgement in four sentences.
 
 HILFE:
 1. Schritt 1: Ordne den Fall in zwei Saetzen ein.
 2. Schritt 2: Sichere zwei Befunde mit Zeile.
 3. Schritt 3: Deute Befund und Funktion im Fallganzen.
 
-MUSTERLOESUNG: Der Fall 26 zeigt Stylistic Devices and Speech Analysis in drei Schritten. Erstens belegt ein Zitat mit Zeile den Kern des Regieheft mit doppelter Anstreichung, zweitens traegt die Funktion die Wirkung im Gefuege, drittens schliesst die Deutung das Tatbild. Damit ist die zweite Schicht entlarvt und das Portal oeffnet sich.
+MARKIERAUFTRAG: Markiere mit GELB alle **Gemeinschaftsbilder** (lungs, teams, faces, yard). Markiere mit BLAU die **Taktfiguren** (Anaphern, Fragen, Dreischritte).
 
-Klausur-Satz: `A speech persuades when devices serve the message, not the speaker.`
+MUSTERLOESUNG: Der Fall 26 zeigt das Verfahren in drei Schritten. Erstens sichert ein Zitat mit Zeile den Befund. Zweitens benennt die Funktion die Wirkung. Drittens schliesst die Deutung das Urteil.
+
+Klausur-Satz: `Die Regel der Rede: Je naeher der Appell, desto dichter die Figuren.`
 
 ## Schritt 5 — ausprobieren: Das doppelte Spiel Weg A gegen Weg B
 
-VERGLEICH: Waehle erst das Verfahren, dann loesen: (i) Weg A Nahverfahren (Beleg, Zitat, Wirkung) oder (ii) Weg B Fernverfahren (Kontext, Gefuege, Urteil).
+VERGLEICH: Weg A liest mikroskopisch (Text, Stil, Detail), Weg B deutet makroskopisch (Kontext, Geschichte, Ordnung).
 
-AUFGABE A: Welche Spur im Regieheft mit doppelter Anstreichung verlangt Weg A? Begründe mit Zitat.
-AUFGABE B: Welche Frage zum Fallganzen verlangt Weg B? Begründe mit Kontext.
+AUFGABE A: Welche Spur verlangt Weg A? Begruende mit Zitat und Zeile.
+AUFGABE B: Welche Frage verlangt Weg B? Begruende mit Kontext.
 
 HILFE: A fragt nach Form und Naehe, also Weg A. B fragt nach Rolle und Ganzem, also Weg B.
 
-ANTWORT: A erfordert Weg A: Der Nahbeleg mit Zitat und Zeile zeigt die Wirkung im Detail. B erfordert Weg B: Der Fernblick auf Kontext und Gefuege sichert das Urteil zu Stylistic Devices and Speech Analysis.
+ANTWORT A: Weg A seziert mikroskopisch Takt und Schnitt: Ketten (l. 1, l. 11), Fragen (l. 2, l. 6) und Klimax (Z. 8).
+ANTWORT B: Weg B fragt makroskopisch nach Lage: Vollversammlung, Altersstufe und Handy-Ziel erklaeren Dichte und Ton.
 
-Klausur-Satz: `A speech persuades when devices serve the message, not the speaker.`
+Klausur-Satz: `Feinlese sichert das Wie der Wirkung, Lagewissen das Warum des Tons; beide tragen das Urteil.`
 
-## Schritt 6 — check: Selbsttest zu Stylistic Devices and Speech Analysis
+## Schritt 6 — check: Selbsttest mit Antwortkarten
 
 CHECK (drei Fragen mit Antworten):
 
-FRAGE: Nenne die Drei-Schritt-Kette. | ANTWORT: Befund mit Zeile, Funktion im Gefuege, Deutung als Urteil.
-FRAGE: Was verlangt Weg A? | ANTWORT: Nahbeleg mit Zitat und Wirkung am Detail.
-FRAGE: Was verlangt Weg B? | ANTWORT: Kontext und Gefuege als Traeger des Urteils.
+- FRAGE: Welche drei Funktionen musst du trennen? | ANTWORT: Binden, bewegen, entscheiden mit Zeile.
+- FRAGE: Woran erkennst du Tricolon-Klimax? | ANTWORT: An drei gesteigerten Gliedern mit Pointe im dritten.
+- FRAGE: Was gehoert zu jedem Beleg? | ANTWORT: Zitat mit Zeile plus Funktion im Appell.
 
-Klausur-Satz: `A speech persuades when devices serve the message, not the speaker.`
+Klausur-Satz: `Haeufig verwechselt: Benennen ist nicht Deuten; erst Funktion plus Steigerung zaehlt.`
 
 ## Fehlvorstellung
 
-1. Fehlvorstellung: Naming devices is enough.
-   Korrektur-Satz: `Name plus quotation plus effect earns the marks.`
-2. Fehlvorstellung: More devices mean better.
-   Korrektur-Satz: `Two proven devices beat ten listed names.`
+1. Fehlvorstellung: Many devices equal good speech.
+   Korrektur-Satz: `Only devices with function and rise persuade.`
+2. Fehlvorstellung: Questions await answers.
+   Korrektur-Satz: `Rhetorical questions stage consent.`
 
-## Schritt 7 — szenario: Klausurtransfer: Speech editor for the school assembly zu Fall 26
+## Schritt 7 — szenario: Klausurtransfer als Speech coach of the student council zu Fall 26
 
-ROLLE: Du bist Speech editor for the school assembly in der Pruefung.
-SITUATION: Ein Fall zu Stylistic Devices and Speech Analysis (Fall 26, Regieheft mit doppelter Anstreichung) liegt unbearbeitet auf dem Tisch.
+ROLLE: Du bist Speech coach of the student council in der Pruefung.
+SITUATION: Ein Fall liegt unbearbeitet auf dem Tisch und verlangt Einordnung, Belege und Urteil.
 AUFGABE: Verfasse circa 150 Woerter mit Einordnung, zwei Belegen mit Zeile, Funktion, Deutung und Schlussurteil.
 RUBRIC (30 XP): Einordnung korrekt (6 XP) | Zwei Belege mit Zeile (10 XP) | Funktion plus Deutung (10 XP) | Fachsprache und Schluss (4 XP).
+
+Klausur-Satz: `AFB-III-Mustersatz: Anaphern (l. 1, l. 11) mit Klimax (Z. 8) belegen Mobilisierung, weil Takt plus Steigerung Beifall in Handlung uebersetzt.`
 
 ## Schritt 8 — reflexion: Takeaway und Rueckblick aus Fall 26
 
 TAKEAWAY:
 
-Fall 26 lehrt: Beleg sichern, Funktion benennen, Urteil begruenden. A speech persuades when devices serve the message, not the speaker. Takeaway-Satz: `A speech persuades when devices serve the message, not the speaker.`
+Klausur-Satz: `Fall 26 (Stylistic Devices Speech Analysis DE) schliesst: Wer Beleg, Funktion und Urteil sichert, besteht jede Klausur.`
+
+Fall 26 lehrt den Dreischritt aus Beleg, Funktion und Urteil. Takeaway-Satz: `Rede lesen heisst: Figuren zaehlen, Funktionen benennen und Appell an der Klimax messen.`
 
 REFLEXION:
 1. Welche Spur fiel schwerer, der Nahbeleg oder das Fernurteil?

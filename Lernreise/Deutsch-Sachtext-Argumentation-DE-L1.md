@@ -10,114 +10,121 @@ datum: 2026-09-25
 tags: [EF, Deutsch, Sachtext]
 version: Lesson-v3
 ---
-
 # Lernreise: Argumentationsstruktur im Sachtext (L1, Ziel Klausur)
 
 <!-- Campaign: Detektive Fal 20 -->
-## Schritt 1 — entdecken: Der versiegelte Umschlag aus der Archivnacht
+## Schritt 1 — entdecken: Der versiegelte Umschlag zur Sache
 
 ZIELE (3 Ziele, nach 15 Minuten erreichbar):
 
-1. Du ordnest Fall 20 (Streitschrift mit markierten Uebertreibungen) in Kontext, Verfahren und Deutung ein.
-2. Du belegst jede Aussage zu Argumentationsstruktur im Sachtext mit Zitat und Zeile und benennst die Funktion.
+1. Du ordnest Fall 20 in Kontext, Verfahren und Deutung ein.
+2. Du belegst jede Aussage mit Beleg und benennst die Funktion.
 3. Du faellst ein Urteil im passenden Anforderungsbereich.
 
 HOOK:
 
-Mitten in der Nacht flackert das Blaulicht der Agentur fuer Texte und Gedanken ueber den leeren Schreibtischen, und Partner Theo Wort legt einen versiegelten Umschlag auf deinen Platz. Seit Wochen jagt ihr als Gedanken-Agent an der Seite deines Text-Detektivs durch die Jahrhunderte, und jede geloeste Spur oeffnet ein neues Portal in der Zeit. Heute geht es um Argumentationsstruktur im Sachtext. Falllinie D: Das Archiv der Agentur meldet einen Riss in der Zeit, durch den ein Text in unsere Gegenwart gefallen ist. Im Umschlag steckt Fall 20: ein Streitschrift mit markierten Uebertreibungen. Kaum haeltst du das Stueck ins Licht, faellt dir eine zweite Schicht auf: Jemand hat die Botschaft frisiert, verkuerzt oder verdreht, und nur wer Beleg, Funktion und Deutung sauber trennt, kann die Manipulation entlarven. Das naechste Portal oeffnet sich nur, wenn du drei Ziele in fuenfzehn Minuten schaffst und jede Behauptung mit Zeile und Wirkung belegst. Theo Wort gru belt schon ungeduldig, denn die Spur wird kalt.
+Der Stadtrat streitet ueber den Nachtbus: Freiheit gegen Kosten, Lärm gegen Teilhabe. Ein Leserbrief stapelt Argumente ohne Ordnung. Du erhaeltst die Argumentationskarte mit Bausteinen. Jede **Begruendung** braucht einen **Beleg**.
 
-Klausur-Satz: `Ein Argument steht erst, wenn Kette, Stuetze und Lueckenpruefung stimmen.`
+Variante B prueft dieselbe Karte an einem zweiten Leserbrief mit vertauschten Lagern.
 
-## Schritt 2 — entdecken: Die Ausruestungskiste gegen Fall 20
+Klausur-Satz: `Der Leserbrief braucht Gewicht: Ein starker Beleg schlaegt drei Phrasen.`
+
+## Schritt 2 — entdecken: Die Ausruestungskiste zum Fall
 
 AUSRUESTUNG (5 Instrumente im Koffer):
 
-- **Argumentationslinie**: Argumentationslinie: Kette von These, Begruendung und Beleg
-- **Beweismittel**: Beweismittel: Fakt, Beispiel und Berufung als Stuetzarten
-- **Gegenargument**: Gegenargument: vorweggenommener Einwand als Staerkebeweis
-- **Schlussfolgerung**: Schlussfolgerung: Folgerungssatz mit Reichweitenangabe
-- **Lueckenanalyse**: Lueckenanalyse: fehlende Praemisse als Angriffspunkt
+- **Argument**: Das Argument verbindet Behauptung mit Begruendung. Es antwortet auf Warum. Ohne Weil bleibt Phrase.  Mechanismus: Mechanismus: These plus Grund plus Beleg ergibt Baustein; Staerke misst sich an Beleg.  Klausur-Tipp: Klausur-Tipp: Ein Absatz, ein Argument, ein Beleg.
+- **Belegtyp**: Belegtypen sind Statistik, Beispiel, Autoritaet und Erfahrung. Sie tragen unterschiedlich weit.  Mechanismus: Mechanismus: Zahl plus Quelle traegt am weitesten; Beispiel illustriert nur.  Klausur-Tipp: Klausur-Tipp: Nenne Typ und Grenze jedes Belegs.
+- **Gegenargument**: Das Gegenargument nennt den staerksten Einwand fair. Es prueft die Kette.  Mechanismus: Mechanismus: Einwand plus Entkraeftung oder Zugestaendnis staerkt Urteil.  Klausur-Tipp: Klausur-Tipp: Entkraefte oder gestehe zu, nie verschweigen.
+- **Argumentationsgang**: Der Argumentationsgang ordnet Bausteine nach Gewicht: steigend oder fallend. Ordnung erzeugt Ueberzeugung.  Mechanismus: Mechanismus: Schwach zuerst, stark zuletzt (Klimax) oder umgekehrt zur Sicherung.  Klausur-Tipp: Klausur-Tipp: Begruende deine Anordnung.
+- **Fazit**: Das Fazit bündelt Rangfolge und Position. Es antwortet auf die Frage.  Mechanismus: Mechanismus: Gewicht plus Folge ergibt Schluss; Ausblick oeffnet.  Klausur-Tipp: Klausur-Tipp: Ein Satz Antwort, ein Satz Folge.
 
-Klausur-Satz: `Ein Argument steht erst, wenn Kette, Stuetze und Lueckenpruefung stimmen.`
+Klausur-Satz: `Baustein, Belegtyp und Gang definieren jede Argumentation.`
 
 ## Schritt 3 — entdecken: Der Mechanismus hinter dem Tatbild
 
 MECHANISMUS (Tiefenbau):
 
-Jeder Fall folgt der Kette Befund, Funktion und Deutung. Zuerst sicherst du den Befund mit Zitat und Zeile, dann bestimmst du die Funktion im Macht- oder Sinn-gefuege, erst danach formulierst du die Deutung zu Argumentationsstruktur im Sachtext. Falllinie D: Das Archiv der Agentur meldet einen Riss in der Zeit, durch den ein Text in unsere Gegenwart gefallen ist. Wer die zweite Schicht des Streitschrift mit markierten Uebertreibungen uebersieht, tappt in die Falle der Agentur.
+Argumentation arbeitet mit **Baustein plus Gewicht**. Zahl der Gruende zaehlt nicht, Gewicht entscheidet.
+
+Der Weg: Sammle Bausteine mit Belegtyp. Ordne nach Gewicht. Schliesse mit Fazit und Folge. So wird Brief zur Linie.
 
 ```diagram
-Befund (Zitat mit Zeile) -> Funktion (Wirkung im Gefuege) -> Deutung (Urteil)
-Fall 20: Streitschrift mit markierten Uebertreibungen -> Spur sichern -> Tatbild schliessen
+These -> Bausteine (Grund+Beleg) -> Gegenpruefung -> Fazit
 ```
 
-Klausur-Satz: `Ein Argument steht erst, wenn Kette, Stuetze und Lueckenpruefung stimmen.`
+Klausur-Satz: `Grund plus Beleg plus Gewicht ergibt Fazit: Ordnung ueberzeugt.`
 
 ## Anekdote
 
-Ein Chefredakteur ku erzte einst einen Kommentar um die Haelfte und er wurde doppelt so stark.
+Ein Leserbriefschreiber nummerierte seine Gruende und gewann den Wettbewerb. Ordnung ueberzeugt.
 
-Bezug zum Konzept: `Ein Argument steht erst, wenn Kette, Stuetze und Lueckenpruefung stimmen.`
+Bezug zum Konzept: `Grund plus Beleg plus Gewicht ergibt Fazit: Ordnung ueberzeugt.`
 
 ## Schritt 4 — ausprobieren: Die Sandkasten-Pruefung mit Baukasten
 
 [Werkzeug: lego]
 
-AUFGABE: Untersuche den Fall-Text 20 (Streitschrift mit markierten Uebertreibungen) zu Argumentationsstruktur im Sachtext.
-TARGET: Drei Belege mit Zeile, je mit Funktion und einer Deutung in vier Saetzen.
+AUFGABE: Baue zu einer Streitfrage drei Bausteine mit Belegtyp und ordne sie als Klimax.
+TARGET: Drei Bausteine mit Beleg, je mit Funktion und einer Deutung in vier Saetzen.
 
 HILFE:
 1. Schritt 1: Ordne den Fall in zwei Saetzen ein.
-2. Schritt 2: Sichere zwei Befunde mit Zeile.
-3. Schritt 3: Deute Befund und Funktion im Fallganzen.
+2. Schritt 2: Sichere zwei Bausteine mit Beleg.
+3. Schritt 3: Deute Baustein und Funktion im Fallganzen.
 
-MUSTERLOESUNG: Der Fall 20 zeigt Argumentationsstruktur im Sachtext in drei Schritten. Erstens belegt ein Zitat mit Zeile den Kern des Streitschrift mit markierten Uebertreibungen, zweitens traegt die Funktion die Wirkung im Gefuege, drittens schliesst die Deutung das Tatbild. Damit ist die zweite Schicht entlarvt und das Portal oeffnet sich.
+MUSTERLOESUNG: Der Fall 20 zeigt das Verfahren in drei Schritten. Erstens sichert ein Beleg den Kern. Zweitens traegt die Funktion die Wirkung. Drittens schliesst die Deutung das Urteil.
 
-Klausur-Satz: `Ein Argument steht erst, wenn Kette, Stuetze und Lueckenpruefung stimmen.`
+Klausur-Satz: `Die Baustein-Regel: Je naeher das Fazit, desto staerker der Baustein.`
 
 ## Schritt 5 — ausprobieren: Das doppelte Spiel Weg A gegen Weg B
 
-VERGLEICH: Waehle erst das Verfahren, dann loesen: (i) Weg A Nahverfahren (Beleg, Zitat, Wirkung) oder (ii) Weg B Fernverfahren (Kontext, Gefuege, Urteil).
+VERGLEICH: Weg A arbeitet mikroskopisch (Detail, Beleg, Form), Weg B plant makroskopisch (Strategie, Kontext, Gewicht).
 
-AUFGABE A: Welche Spur im Streitschrift mit markierten Uebertreibungen verlangt Weg A? Begründe mit Zitat.
-AUFGABE B: Welche Frage zum Fallganzen verlangt Weg B? Begründe mit Kontext.
+AUFGABE A: Welche Spur verlangt Weg A? Begruende mit Beleg.
+AUFGABE B: Welche Frage verlangt Weg B? Begruende mit Kontext.
 
 HILFE: A fragt nach Form und Naehe, also Weg A. B fragt nach Rolle und Ganzem, also Weg B.
 
-ANTWORT: A erfordert Weg A: Der Nahbeleg mit Zitat und Zeile zeigt die Wirkung im Detail. B erfordert Weg B: Der Fernblick auf Kontext und Gefuege sichert das Urteil zu Argumentationsstruktur im Sachtext.
+ANTWORT A: Weg A baut mikroskopisch Bausteine: Weil-Saetze pruefen, Belegtypen benennen, Luecken markieren.
+ANTWORT B: Weg B plant makroskopisch Linie: Klimax oder Antiklimax je nach Adressat und staerkstem Beleg.
 
-Klausur-Satz: `Ein Argument steht erst, wenn Kette, Stuetze und Lueckenpruefung stimmen.`
+Klausur-Satz: `Naharbeit prueft das Wie der Belege, Fernplanung das Warum der Ordnung; beide tragen das Fazit.`
 
-## Schritt 6 — check: Selbsttest zu Argumentationsstruktur im Sachtext
+## Schritt 6 — check: Selbsttest mit Antwortkarten
 
 CHECK (drei Fragen mit Antworten):
 
-FRAGE: Nenne die Drei-Schritt-Kette. | ANTWORT: Befund mit Zeile, Funktion im Gefuege, Deutung als Urteil.
-FRAGE: Was verlangt Weg A? | ANTWORT: Nahbeleg mit Zitat und Wirkung am Detail.
-FRAGE: Was verlangt Weg B? | ANTWORT: Kontext und Gefuege als Traeger des Urteils.
+- FRAGE: Welche drei Teile braucht jeder Baustein? | ANTWORT: These, Grund und Beleg mit Typ.
+- FRAGE: Was unterscheidet Belegtypen? | ANTWORT: Reichweite: Zahl traegt, Beispiel illustriert.
+- FRAGE: Wie ordnet der Gang? | ANTWORT: Nach Gewicht: Klimax oder Antiklimax begruenden.
 
-Klausur-Satz: `Ein Argument steht erst, wenn Kette, Stuetze und Lueckenpruefung stimmen.`
+Klausur-Satz: `Haeufig verwechselt: Beispiel ist kein Beweis; Typ und Grenze nennen.`
 
 ## Fehlvorstellung
 
-1. Fehlvorstellung: Viel spreche fuer viel.
-   Korrektur-Satz: `Eine geschlossene Kette schlaegt viele lose Saetze.`
-2. Fehlvorstellung: Gegner staerken sei riskant.
-   Korrektur-Satz: `Faire Gegenrede adelt das eigene Urteil.`
+1. Fehlvorstellung: Viele Gruende siegen.
+   Korrektur-Satz: `Gewicht schlaegt Zahl.`
+2. Fehlvorstellung: Gegner schwaechen.
+   Korrektur-Satz: `Faire Gegner staerken das Fazit.`
 
-## Schritt 7 — szenario: Klausurtransfer: Leitartikel-Redakteur zu Fall 20
+## Schritt 7 — szenario: Klausurtransfer als Kommentarredakteur der Schulzeitung zu Fall 20
 
-ROLLE: Du bist Leitartikel-Redakteur in der Pruefung.
-SITUATION: Ein Fall zu Argumentationsstruktur im Sachtext (Fall 20, Streitschrift mit markierten Uebertreibungen) liegt unbearbeitet auf dem Tisch.
-AUFGABE: Verfasse circa 150 Woerter mit Einordnung, zwei Belegen mit Zeile, Funktion, Deutung und Schlussurteil.
-RUBRIC (30 XP): Einordnung korrekt (6 XP) | Zwei Belege mit Zeile (10 XP) | Funktion plus Deutung (10 XP) | Fachsprache und Schluss (4 XP).
+ROLLE: Du bist Kommentarredakteur der Schulzeitung in der Pruefung.
+SITUATION: Ein Fall liegt unbearbeitet auf dem Tisch und verlangt Einordnung, Belege und Urteil.
+AUFGABE: Verfasse circa 150 Woerter mit Einordnung, zwei Belegen, Funktion, Deutung und Schlussurteil.
+RUBRIC (30 XP): Einordnung korrekt (6 XP) | Zwei Belege (10 XP) | Funktion plus Deutung (10 XP) | Fachsprache und Schluss (4 XP).
+
+Klausur-Satz: `AFB-III-Mustersatz: Obwohl der Kosten-Einwand belegt ist, wiegt Teilhabe schwerer, weil der Massstab Zugang gilt.`
 
 ## Schritt 8 — reflexion: Takeaway und Rueckblick aus Fall 20
 
 TAKEAWAY:
 
-Fall 20 lehrt: Beleg sichern, Funktion benennen, Urteil begruenden. Ein Argument steht erst, wenn Kette, Stuetze und Lueckenpruefung stimmen. Takeaway-Satz: `Ein Argument steht erst, wenn Kette, Stuetze und Lueckenpruefung stimmen.`
+Klausur-Satz: `Fall 20 (Sachtext Argumentation DE) schliesst: Wer Beleg, Funktion und Urteil sichert, besteht jede Klausur.`
+
+Fall 20 lehrt den Dreischritt aus Beleg, Funktion und Urteil. Takeaway-Satz: `Argumentieren heisst: Bausteine wiegen, Gegner nennen und Fazit unterschreiben.`
 
 REFLEXION:
 1. Welche Spur fiel schwerer, der Nahbeleg oder das Fernurteil?
-2. Beim naechsten Mal sichere ich zuerst Zitat und Zeile, weil sie jede Deutung tragen.
+2. Beim naechsten Mal sichere ich zuerst Beleg und Gliederung, weil sie jede Deutung tragen.

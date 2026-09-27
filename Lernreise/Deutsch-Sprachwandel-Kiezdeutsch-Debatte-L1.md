@@ -10,114 +10,121 @@ datum: 2026-09-26
 tags: [EF, Deutsch, Sprachwandel]
 version: Lesson-v3
 ---
-
 # Lernreise: Sprachwandel und Kiezdeutsch-Debatte (L1, Ziel Klausur)
 
 <!-- Campaign: Detektive Fal 24 -->
-## Schritt 1 — entdecken: Der versiegelte Umschlag aus der Archivnacht
+## Schritt 1 — entdecken: Der versiegelte Umschlag zur Sache
 
 ZIELE (3 Ziele, nach 15 Minuten erreichbar):
 
-1. Du ordnest Fall 24 (Zeitungsartikel mit eingeklebter Gegendarstellung) in Kontext, Verfahren und Deutung ein.
-2. Du belegst jede Aussage zu Sprachwandel und Kiezdeutsch-Debatte mit Zitat und Zeile und benennst die Funktion.
+1. Du ordnest Fall 24 in Kontext, Verfahren und Deutung ein.
+2. Du belegst jede Aussage mit Beleg und benennst die Funktion.
 3. Du faellst ein Urteil im passenden Anforderungsbereich.
 
 HOOK:
 
-Mitten in der Nacht flackert das Blaulicht der Agentur fuer Texte und Gedanken ueber den leeren Schreibtischen, und Partner Theo Wort legt einen versiegelten Umschlag auf deinen Platz. Seit Wochen jagt ihr als Gedanken-Agent an der Seite deines Text-Detektivs durch die Jahrhunderte, und jede geloeste Spur oeffnet ein neues Portal in der Zeit. Heute geht es um Sprachwandel und Kiezdeutsch-Debatte. Falllinie D: Das Archiv der Agentur meldet einen Riss in der Zeit, durch den ein Text in unsere Gegenwart gefallen ist. Im Umschlag steckt Fall 24: ein Zeitungsartikel mit eingeklebter Gegendarstellung. Kaum haeltst du das Stueck ins Licht, faellt dir eine zweite Schicht auf: Jemand hat die Botschaft frisiert, verkuerzt oder verdreht, und nur wer Beleg, Funktion und Deutung sauber trennt, kann die Manipulation entlarven. Das naechste Portal oeffnet sich nur, wenn du drei Ziele in fuenfzehn Minuten schaffst und jede Behauptung mit Zeile und Wirkung belegst. Theo Wort gru belt schon ungeduldig, denn die Spur wird kalt.
+Auf dem Schulhof urteilen zwei Lager ueber einen Satz. Die Linguistik misst statt zu moralisieren. **System** gegen **Gefuehl** eroentrant die Debatte. Ein Aufnahmegerät entscheidet, was Regel und was Vorurteil ist.
 
-Klausur-Satz: `Sprache wandelt sich im Gebrauch: Wer heute spricht, schreibt morgen die Regel.`
+Variante B verlegt die Debatte in die Klassengruppe mit Sprachnachrichten und vergleicht Ton gegen Transkript.
 
-## Schritt 2 — entdecken: Die Ausruestungskiste gegen Fall 24
+Klausur-Satz: `Regel schlaegt Fehler; Zugehoerigkeit ist Funktion.`
+
+## Schritt 2 — entdecken: Die Ausruestungskiste zum Fall
 
 AUSRUESTUNG (5 Instrumente im Koffer):
 
-- **Sprachwandel**: Sprachwandel: regelmaessiger Laut- und Formwechsel ueber Zeit
-- **Kiezdeutsch**: Kiezdeutsch: kontaktbedingte Varietaet mit eigenen Mustern
-- **Register**: Register: situationsgerechte Sprachwahl zwischen Naehe und Distanz
-- **Norm und Gebrauch**: Norm und Gebrauch: Regelbuch gegen lebendige Praxis
-- **Mehrsprachigkeit**: Mehrsprachigkeit: Ressource statt Stoerquelle im Alltag
+- **Sprachwandel**: Sprache wandelt sich durch Gebrauch; Wandel ist normal, nicht Verfall.  Mechanismus: Mechanismus: Kontakt plus Jugend plus Medien beschleunigt; Standard folgt spaet.  Klausur-Tipp: Klausur-Tipp: Nenne Ausloeser, nicht nur Urteil.
+- **Kiezdeutsch**: Kiezdeutsch ist regelhaftes Multiethnolekt mit eigener Grammatik. Es ist System, nicht Fehler.  Mechanismus: Mechanismus: Wegfall plus neue Partikeln plus Prosodie ergibt Stil; Funktion ist Zugehoerigkeit.  Klausur-Tipp: Klausur-Tipp: Belege Regel statt Fehler.
+- **Verfalls-These**: Die Verfalls-These deutet Wandel als Zerfall und moralisiert. Sie misst Ideal gegen Alltag.  Mechanismus: Mechanismus: Norm plus Nostalgie erzeugt Empörung; Belege bleiben anekdotisch.  Klausur-Tipp: Klausur-Tipp: Entlarve Norm und Stichprobe.
+- **Bereicherungs-These**: Die Bereicherungs-These liest Kontakt als Ressource und Systemleistung. Vielfalt traegt Ausdruck.  Mechanismus: Mechanismus: Funktion plus Kreativitaet belegt Gewinn; Sprecher wechseln kompetent.  Klausur-Tipp: Klausur-Tipp: Belege Codeswitching als Kompetenz.
+- **Debattenurteil**: Das Debattenurteil wägt mit Massstab: Verstaendlichkeit, Teilhabe, Ausdruck.  Mechanismus: Mechanismus: Kriterium plus Beleg ergibt Position; Ausblick nennt Foerderung.  Klausur-Tipp: Klausur-Tipp: Schliesse mit Massstab und Massnahme.
 
-Klausur-Satz: `Sprache wandelt sich im Gebrauch: Wer heute spricht, schreibt morgen die Regel.`
+Klausur-Satz: `Wandel, System und Massstab definieren die Debatte.`
 
 ## Schritt 3 — entdecken: Der Mechanismus hinter dem Tatbild
 
 MECHANISMUS (Tiefenbau):
 
-Jeder Fall folgt der Kette Befund, Funktion und Deutung. Zuerst sicherst du den Befund mit Zitat und Zeile, dann bestimmst du die Funktion im Macht- oder Sinn-gefuege, erst danach formulierst du die Deutung zu Sprachwandel und Kiezdeutsch-Debatte. Falllinie D: Das Archiv der Agentur meldet einen Riss in der Zeit, durch den ein Text in unsere Gegenwart gefallen ist. Wer die zweite Schicht des Zeitungsartikel mit eingeklebter Gegendarstellung uebersieht, tappt in die Falle der Agentur.
+System gegen Mythos: **Regelbeleg** schlaegt **Empörung**.
+
+Der Weg: Sichere Sprachbelege mit Kontext. Pruefe These auf Norm und Stichprobe. Urteile mit Massstab. So wird Debatte zur Analyse.
 
 ```diagram
-Befund (Zitat mit Zeile) -> Funktion (Wirkung im Gefuege) -> Deutung (Urteil)
-Fall 24: Zeitungsartikel mit eingeklebter Gegendarstellung -> Spur sichern -> Tatbild schliessen
+Beleg -> Systempruefung -> Thesen-Test -> Massstabsurteil
 ```
 
-Klausur-Satz: `Sprache wandelt sich im Gebrauch: Wer heute spricht, schreibt morgen die Regel.`
+Klausur-Satz: `Beleg plus Massstab ergibt Urteil.`
 
 ## Anekdote
 
-Ein Schaffner sammelte einst neue Groesse, weil Fahrgaeste sie taeglich erfanden.
+Ein Linguist nahm zwei Stunden Hofdeutsch auf; die Regeln waren strenger als erwartet.
 
-Bezug zum Konzept: `Sprache wandelt sich im Gebrauch: Wer heute spricht, schreibt morgen die Regel.`
+Bezug zum Konzept: `Beleg plus Massstab ergibt Urteil.`
 
-## Schritt 4 — ausprobieren: Die Sandkasten-Pruefung mit Sprechuhr
+## Schritt 4 — ausprobieren: Die Sandkasten-Pruefung mit Baukasten
 
 [Werkzeug: oral-timer]
 
-AUFGABE: Untersuche den Fall-Text 24 (Zeitungsartikel mit eingeklebter Gegendarstellung) zu Sprachwandel und Kiezdeutsch-Debatte.
-TARGET: Drei Belege mit Zeile, je mit Funktion und einer Deutung in vier Saetzen.
+AUFGABE: Sammle drei Hof-Belege, pruefe sie auf Regel und bilde je einen Pro- und Contra-Satz.
+TARGET: Drei Bausteine mit Beleg, je mit Funktion und einer Deutung in vier Saetzen.
 
 HILFE:
 1. Schritt 1: Ordne den Fall in zwei Saetzen ein.
-2. Schritt 2: Sichere zwei Befunde mit Zeile.
-3. Schritt 3: Deute Befund und Funktion im Fallganzen.
+2. Schritt 2: Sichere zwei Bausteine mit Beleg.
+3. Schritt 3: Deute Baustein und Funktion im Fallganzen.
 
-MUSTERLOESUNG: Der Fall 24 zeigt Sprachwandel und Kiezdeutsch-Debatte in drei Schritten. Erstens belegt ein Zitat mit Zeile den Kern des Zeitungsartikel mit eingeklebter Gegendarstellung, zweitens traegt die Funktion die Wirkung im Gefuege, drittens schliesst die Deutung das Tatbild. Damit ist die zweite Schicht entlarvt und das Portal oeffnet sich.
+MUSTERLOESUNG: Der Fall 24 zeigt das Verfahren in drei Schritten. Erstens sichert ein Beleg den Kern. Zweitens traegt die Funktion die Wirkung. Drittens schliesst die Deutung das Urteil.
 
-Klausur-Satz: `Sprache wandelt sich im Gebrauch: Wer heute spricht, schreibt morgen die Regel.`
+Klausur-Satz: `Je moralischer der Ton, desto genauer die Stichprobe.`
 
 ## Schritt 5 — ausprobieren: Das doppelte Spiel Weg A gegen Weg B
 
-VERGLEICH: Waehle erst das Verfahren, dann loesen: (i) Weg A Nahverfahren (Beleg, Zitat, Wirkung) oder (ii) Weg B Fernverfahren (Kontext, Gefuege, Urteil).
+VERGLEICH: Weg A arbeitet mikroskopisch (Detail, Beleg, Form), Weg B plant makroskopisch (Strategie, Kontext, Gewicht).
 
-AUFGABE A: Welche Spur im Zeitungsartikel mit eingeklebter Gegendarstellung verlangt Weg A? Begründe mit Zitat.
-AUFGABE B: Welche Frage zum Fallganzen verlangt Weg B? Begründe mit Kontext.
+AUFGABE A: Welche Spur verlangt Weg A? Begruende mit Beleg.
+AUFGABE B: Welche Frage verlangt Weg B? Begruende mit Kontext.
 
 HILFE: A fragt nach Form und Naehe, also Weg A. B fragt nach Rolle und Ganzem, also Weg B.
 
-ANTWORT: A erfordert Weg A: Der Nahbeleg mit Zitat und Zeile zeigt die Wirkung im Detail. B erfordert Weg B: Der Fernblick auf Kontext und Gefuege sichert das Urteil zu Sprachwandel und Kiezdeutsch-Debatte.
+ANTWORT A: Weg A analysiert mikroskopisch Formen: Artikel-Wegfall, Partikeln und Prosodie mit Beleg.
+ANTWORT B: Weg B deutet makroskopisch Debatte: Medienlogik, Normgeschichte und Teilhabefolgen als Rahmen.
 
-Klausur-Satz: `Sprache wandelt sich im Gebrauch: Wer heute spricht, schreibt morgen die Regel.`
+Klausur-Satz: `Feinlese prueft Regeln, Kontext fragt Teilhabe.`
 
-## Schritt 6 — check: Selbsttest zu Sprachwandel und Kiezdeutsch-Debatte
+## Schritt 6 — check: Selbsttest mit Antwortkarten
 
 CHECK (drei Fragen mit Antworten):
 
-FRAGE: Nenne die Drei-Schritt-Kette. | ANTWORT: Befund mit Zeile, Funktion im Gefuege, Deutung als Urteil.
-FRAGE: Was verlangt Weg A? | ANTWORT: Nahbeleg mit Zitat und Wirkung am Detail.
-FRAGE: Was verlangt Weg B? | ANTWORT: Kontext und Gefuege als Traeger des Urteils.
+- FRAGE: Welche Belege? | ANTWORT: Form mit Kontext: Wegfall, Partikel, Prosodie.
+- FRAGE: Schwachstelle Verfall? | ANTWORT: Norm plus Anekdote statt Systembeleg.
+- FRAGE: Welche Massstaebe? | ANTWORT: Verstaendlichkeit, Teilhabe, Ausdruck.
 
-Klausur-Satz: `Sprache wandelt sich im Gebrauch: Wer heute spricht, schreibt morgen die Regel.`
+Klausur-Satz: `Register misst Zugehoerigkeit, nicht Klugheit.`
 
 ## Fehlvorstellung
 
-1. Fehlvorstellung: Neu heisse falsch.
-   Korrektur-Satz: `Neu heisst zuerst ungewoehnlich, dann ueblich.`
-2. Fehlvorstellung: Eine Varietaet sei kein System.
-   Korrektur-Satz: `Auch Kontaktdeutsch folgt Mustern und Regeln.`
+1. Fehlvorstellung: Auslassung beweise Unwissenheit.
+   Korrektur-Satz: `DE: Auslassung folgt Regel und Stil.`
+2. Fehlvorstellung: Der Standard sei ewig und unantastbar.
+   Korrektur-Satz: `DE: Standard ist geronnener Wandel von gestern.`
 
-## Schritt 7 — szenario: Klausurtransfer: Sprachkolumnist der Stadtzeitung zu Fall 24
+## Schritt 7 — szenario: Klausurtransfer als Debattenleiter der Podiumsdiskussion zu Fall 24
 
-ROLLE: Du bist Sprachkolumnist der Stadtzeitung in der Pruefung.
-SITUATION: Ein Fall zu Sprachwandel und Kiezdeutsch-Debatte (Fall 24, Zeitungsartikel mit eingeklebter Gegendarstellung) liegt unbearbeitet auf dem Tisch.
-AUFGABE: Verfasse circa 150 Woerter mit Einordnung, zwei Belegen mit Zeile, Funktion, Deutung und Schlussurteil.
-RUBRIC (30 XP): Einordnung korrekt (6 XP) | Zwei Belege mit Zeile (10 XP) | Funktion plus Deutung (10 XP) | Fachsprache und Schluss (4 XP).
+ROLLE: Du bist Debattenleiter der Podiumsdiskussion in der Pruefung.
+SITUATION: Ein Fall liegt unbearbeitet auf dem Tisch und verlangt Einordnung, Belege und Urteil.
+AUFGABE: Verfasse circa 150 Woerter mit Einordnung, zwei Belegen, Funktion, Deutung und Schlussurteil.
+RUBRIC (30 XP): Einordnung korrekt (6 XP) | Zwei Belege (10 XP) | Funktion plus Deutung (10 XP) | Fachsprache und Schluss (4 XP).
+
+Klausur-Satz: `AFB-III-Satz braucht Regelbeleg, staerksten Einwand und Massstabsurteil.`
 
 ## Schritt 8 — reflexion: Takeaway und Rueckblick aus Fall 24
 
 TAKEAWAY:
 
-Fall 24 lehrt: Beleg sichern, Funktion benennen, Urteil begruenden. Sprache wandelt sich im Gebrauch: Wer heute spricht, schreibt morgen die Regel. Takeaway-Satz: `Sprache wandelt sich im Gebrauch: Wer heute spricht, schreibt morgen die Regel.`
+Klausur-Satz: `Fall 24 (Sprachwandel Kiezdeutsch Debatte) schliesst: Wer Beleg, Funktion und Urteil sichert, besteht jede Klausur.`
+
+Fall 24 lehrt den Dreischritt aus Beleg, Funktion und Urteil. Takeaway-Satz: `Ueber Sprache urteilen heisst: Teilhabe verhandeln.`
 
 REFLEXION:
 1. Welche Spur fiel schwerer, der Nahbeleg oder das Fernurteil?
-2. Beim naechsten Mal sichere ich zuerst Zitat und Zeile, weil sie jede Deutung tragen.
+2. Beim naechsten Mal sichere ich zuerst Beleg und Gliederung, weil sie jede Deutung tragen.

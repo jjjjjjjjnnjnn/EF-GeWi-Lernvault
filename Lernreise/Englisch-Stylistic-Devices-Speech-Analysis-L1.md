@@ -10,15 +10,14 @@ datum: 2026-09-26
 tags: [EF, Englisch, Speech-Analysis]
 version: Lesson-v3
 ---
-
 # Lernreise: Stylistic Devices and Speech Analysis (L1, Ziel Klausur)
 
 <!-- Campaign: Detektive Fal 25 -->
-## Schritt 1 — entdecken: Der versiegelte Umschlag aus der Registratur
+## Schritt 1 — entdecken: Der versiegelte Umschlag zur Sache
 
 ZIELE (3 goals in 15 minutes, read Chinese first, then English):
 
-1. 中文：能把第25号案件（演讲录音转写）按背景、方法、判断拆开。
+1. 中文：能把第25号案件按背景、方法、判断拆开。
    English: Place case 25 in context, method and judgement.
 2. 中文：每个论断配引文出处并说清效果。
    English: Support each claim with quotation and effect.
@@ -27,56 +26,66 @@ ZIELE (3 goals in 15 minutes, read Chinese first, then English):
 
 HOOK:
 
-深夜，跨时空文案侦探社的蓝灯又亮了。搭档把一只密封信封推到你面前：这是第25号案件，一份演讲录音转写。表面看只是一段演讲修辞分析，但灯光下浮现出第二层痕迹——有人删改、夸大或偷换了关键信息。你们作为思想特工与文本侦探，必须在十五分钟内锁定三个目标：找证据、说功能、下判断，每一步都要有出处支撑。下一道时空门只为证据链完整的人打开，搭档已经在催你了，线索正在变冷。
+CN: 体育馆里，第二篇演讲更安静：为逝者默哀一分钟，为生者争取操场灯。本课量庄重的分贝。
 
-English hook: Agent Theo Wort drops case file 25 (Buehnenfoto mit zwei Gesichtern im Profil) on your desk. Falllinie C: Hinter einer Stahltuer rauscht ein Ministerium, das Woerter loescht und Gedanken neu schreibt.
+EN: A memorial minute needs quiet drums. Measure **restraint** as strength.
 
-Klausur-Satz: `A speech persuades when devices serve the message, not the speaker.`
+Klausur-Satz: `CN: 秩序托住哀伤。EN: Order holds grief.`
 
-## Schritt 2 — entdecken: Die Ausruestungskiste gegen Fall 25
+## Schritt 2 — entdecken: Die Ausruestungskiste zum Fall
 
 装备盒（5件，先读中文，再背英文）：
 
-- 中文点拨：演讲修辞分析之1号工具。
-  English: **Anaphora: repetition at line start as emphasis engine**
-- 中文点拨：演讲修辞分析之2号工具。
-  English: **Tricolon: triple structure as rhythm of conviction**
-- 中文点拨：演讲修辞分析之3号工具。
-  English: **Rhetorical question: feigned question as audience steering**
-- 中文点拨：演讲修辞分析之4号工具。
-  English: **Inclusive we: pronoun bridge between speaker and crowd**
-- 中文点拨：演讲修辞分析之5号工具。
-  English: **Call to action: closing appeal as test of effect**
+- English: **Parallelism | 排比** CN: 同构安抚耳朵。EN: Same frame calms ears.  Mechanism: Frame plus varied content steadies.  Klausur-Tipp: Mark frame.
+- English: **Litotes | 曲言** CN: 双重否定表肯定。EN: Double no means strong yes.  Mechanism: Reserve completes itself.  Klausur-Tipp: Resolve it.
+- English: **Euphemism | 委婉** CN: 软化硬词保尊严。EN: Soft words guard dignity.  Mechanism: Veil keeps grief sayable.  Klausur-Tipp: Name veiled word.
+- English: **Chiasmus | 交错** CN: 镜像成铭文。EN: Mirror makes motto.  Mechanism: Cross tests relation.  Klausur-Tipp: Mark cross.
+- English: **Climax | 层递** CN: 三级登顶。EN: Three steps crown.  Mechanism: Last weighs most.  Klausur-Tipp: Crown third.
 
-Klausur-Satz: `A speech persuades when devices serve the message, not the speaker.`
+Klausur-Satz: `CN: 排比、曲言与层递构成三角。EN: Parallelism, litotes, climax triangulate restraint.`
 
 ## Schritt 3 — entdecken: Der Mechanismus hinter dem Tatbild
 
-中文深层解构：演讲修辞分析的核心链是证据、效果、判断。第25号案件（演讲录音转写）的伪装层就藏在链条中间。
+中文深层解构：先读中文抓链条，再用英文写判断。
 
-English: Quotation plus effect equals judgement on Stylistic Devices and Speech Analysis.
+English: CN: 克制加秩序等于尊严。EN: Restraint plus order equals dignity.
 
 ```diagram
-Evidence (quotation) -> Effect (function) -> Judgement (verdict)
-Case 25
+Figure -> Measure -> Dignity -> Memorial appeal
 ```
 
-Klausur-Satz: `A speech persuades when devices serve the message, not the speaker.`
+Klausur-Satz: `CN: 克制加秩序等于尊严。EN: Restraint plus order equals dignity.`
 
 ## Anekdote
 
-中文解读：演讲修辞分析里藏着侦探的耐心：每个细节都是时空门的钥匙。
+CN: 执笔人删掉三分之一，掌声多了一倍。EN: Cutting a third doubled applause.
 
-English: A coach once cut a speech in half and the applause doubled.
-
-Bezug zum Konzept: `A speech persuades when devices serve the message, not the speaker.`
+Bezug zum Konzept: `CN: 克制加秩序等于尊严。EN: Restraint plus order equals dignity.`
 
 ## Schritt 4 — ausprobieren: Die Sandkasten-Pruefung mit Textlupe
 
 [Werkzeug: highlighter]
 
-中文任务：分析第25号案文本（演讲录音转写）。
-English TASK: Examine case 25 (Buehnenfoto mit zwei Gesichtern im Profil) on Stylistic Devices and Speech Analysis.
+PRIMAERTEXT（Study text: Memorial Speech for the Floodlights (15 lines)，study version，100-200词）：
+
+> We gather, we pause, we remember. (Z. 1)
+> This pitch was his second home, this town his garden. (Z. 2)
+> Not small was his courage, not quiet his kindness. (Z. 3)
+> He left the field; we say, he went ahead. (Z. 4)
+> Going ahead means testing the path again. (Z. 5)
+> Ask the posts? Ask the rain? Ask the silence? (Z. 6)
+> Silence answers: he stays, he carries, he warns. (Z. 7)
+> He warns with patience, precision, generosity. (Z. 8)
+> Patience in dispute, precision in judgement, generosity daily. (Z. 9)
+> What we lost is great; what we keep is greater. (Z. 10)
+> Greater than grief is thanks, greater than thanks is task. (Z. 11)
+> The task reads: fund, fix, light. (Z. 12)
+> Lighting means: study, play, return. (Z. 13)
+> Return we will, not later, not someday, tonight. (Z. 14)
+> Tonight we bow our heads; tomorrow we raise the lights. (Z. 15)
+
+中文任务：逐行分析选段，每条论断配引文行号。
+English TASK: Examine the primary text line by line with quotation and line number.
 TARGET: Three quotations, each with effect and judgement in four sentences.
 
 HILFE（中文在前）：
@@ -84,58 +93,63 @@ HILFE（中文在前）：
 2. 中文：锁两个证据。English: Secure two quotations.
 3. 中文：效果加判断。English: Add effect and judgement.
 
-MUSTERLOESUNG: 中文示范：背景一句，证据加效果两句，判断一句。
-English MODEL: Case 25 shows Stylistic Devices and Speech Analysis in three moves with quotation, effect and judgement; the cover is blown.
+MARKIERAUFTRAG（双色标注）：CN: 黄色[GELB]标尊严隐喻（home, garden, path, lights），蓝色[BLAU]标克制装置（litotes, parallelism, climax）。EN: GELB for dignity images, BLAU for restraint devices.
 
-Klausur-Satz: `A speech persuades when devices serve the message, not the speaker.`
+MUSTERLOESUNG: 中文示范：背景一句，证据加效果两句，判断一句。
+English MODEL: Case 25 shows the method in three moves with quotation, effect and judgement; the cover is blown.
+
+Klausur-Satz: `CN: 规律是场合越重，格律越严。EN: The graver the occasion, the stricter the measure.`
 
 ## Schritt 5 — ausprobieren: Das doppelte Spiel Weg A gegen Weg B
 
-VERGLEICH（中文先行）：先选路再做题：【选概念】(i) Weg A 近路（引文细节）还是 (ii) Weg B 远路（背景判断）。
+VERGLEICH（中文先行）：Weg A 微观细读（文本风格细节），Weg B 宏观语境（历史秩序背景）。
 English: Choose the path first (close Way A or distant Way B), then write.
 
 TASK A（中文：哪条线索走近路？）: Which trace needs Way A?
 TASK B（中文：哪个整体问题走远路？）: Which whole-case question needs Way B?
 
-HILFE：细节问选近路Way A，整体问选远路Way B。【选概念看题干：compare列异同，assess做权衡。】
+HILFE：细节问选近路Way A，整体问选远路Way B。
 
 中文答案：A近路靠引文，B远路靠背景。
-English ANSWER: A takes Way A with close quotation, B takes Way B with context on Stylistic Devices and Speech Analysis.
+English ANSWER A: CN: 微观量结构与克制。EN: Way A measures frames and litotes.
+English ANSWER B: CN: 宏观看纪念场合与募灯目标。EN: Way B frames memorial occasion and floodlight goal.
 
-Klausur-Satz: `A speech persuades when devices serve the message, not the speaker.`
+Klausur-Satz: `CN: 微观听格律，宏观看场合。EN: Measure shows how, occasion shows why.`
 
-## Schritt 6 — check: Selbsttest zu Stylistic Devices and Speech Analysis
+## Schritt 6 — check: Selbsttest mit Antwortkarten
 
 CHECK (drei Fragen mit Antworten):
 
 中文自测：
-FRAGE: 三步链是什么？ | ANTWORT: Quotation, effect, judgement.
-FRAGE: 近路要什么？ | ANTWORT: Close quotation with effect.
-FRAGE: 远路要什么？ | ANTWORT: Context as carrier of judgement.
+- FRAGE: CN: 曲言例？EN: Litotes example? | ANTWORT: Not small courage as strong praise.
+- FRAGE: CN: 如何识别排比？EN: Spot parallelism? | ANTWORT: Same frame, varied content.
+- FRAGE: CN: 层递如何收？EN: Climax close? | ANTWORT: Third step crowns task: fund, fix, light.
 
-Klausur-Satz: `A speech persuades when devices serve the message, not the speaker.`
+Klausur-Satz: `CN: 易错是把柔和当回避。EN: Softness is not evasion.`
 
 ## Fehlvorstellung
 
-1. 中文误解：演讲修辞分析只看表面。
-   中文纠偏：引文加效果才是得分点。
-   Korrektur-Satz: `Name plus quotation plus effect earns the marks.`
-2. 中文误解：演讲修辞分析只看表面。
-   中文纠偏：引文加效果才是得分点。
-   Korrektur-Satz: `Two proven devices beat ten listed names.`
+1. 中文误解：CN: 安静即无力。
+   中文纠偏：EN: Ordered quiet carries further.
+2. 中文误解：CN: 委婉即谎言。
+   中文纠偏：EN: Veils guard dignity, not hide debt.
 
-## Schritt 7 — szenario: Klausurtransfer: Speech editor for the school assembly zu Fall 25
+## Schritt 7 — szenario: Klausurtransfer als Speech coach of the student council zu Fall 25
 
-ROLLE（中文）：你是Speech editor for the school assembly，负责审稿。
-English ROLE: You are Speech editor for the school assembly.
+ROLLE（中文）：你是Speech coach of the student council，负责审稿。
+English ROLE: You are Speech coach of the student council.
 SITUATION: Case 25 waits on your desk.
 TASK（中文）：150词左右，含背景、证据、权衡判断。
 RUBRIC (30 XP): Context (6 XP) | Quotations (10 XP) | Effect plus judgement (10 XP) | Register (4 XP).
 
+Klausur-Satz: `CN: 满分句须含曲言、层递与任务收束。EN: AFB-III sentence needs litotes, climax and task close.`
+
 ## Schritt 8 — reflexion: Takeaway und Rueckblick aus Fall 25
 
-中文总结：第25号案件教会我们：先锁引文，再说效果，最后判断。
-English TAKEAWAY: Secure quotation, name effect, judge with reasons. `A speech persuades when devices serve the message, not the speaker.`
+中文总结：先锁引文，再说效果，最后判断。
+English TAKEAWAY: Secure quotation, name effect, judge with reasons. `CN: 纪念即把灯点亮。EN: Remembering raises lights.`
+
+Klausur-Satz: `CN元认知收束——第25号案件（Stylistic Devices Speech Analysis）证明：证据加功能等于判断。DE/EN: Fall 25 (Stylistic Devices Speech Analysis) proves: evidence plus function equals judgement.`
 
 REFLEXION（中文在前）：
 1. 中文：近路和远路哪个更难？English: Which was harder, close quotation or distant judgement?

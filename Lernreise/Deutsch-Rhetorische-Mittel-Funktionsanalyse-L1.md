@@ -10,60 +10,80 @@ datum: 2026-09-26
 tags: [EF, Deutsch, Rhetorik]
 version: Lesson-v3
 ---
-
 # Lernreise: Rhetorische Mittel und Funktionsanalyse (L1, Ziel Klausur)
 
 <!-- Campaign: Detektive Fal 13 -->
-## Schritt 1 — entdecken: Der versiegelte Umschlag aus der Hofkanzlei
+## Schritt 1 — entdecken: Der versiegelte Umschlag zur Sache
 
 ZIELE (3 Ziele, nach 15 Minuten erreichbar):
 
-1. Du ordnest Fall 13 (Plakat mit dick unterstrichener Schlagzeile) in Kontext, Verfahren und Deutung ein.
-2. Du belegst jede Aussage zu Rhetorische Mittel und Funktionsanalyse mit Zitat und Zeile und benennst die Funktion.
+1. Du ordnest Fall 13 in Kontext, Verfahren und Deutung ein.
+2. Du belegst jede Aussage mit Zitat und Zeile und benennst die Funktion.
 3. Du faellst ein Urteil im passenden Anforderungsbereich.
 
 HOOK:
 
-Mitten in der Nacht flackert das Blaulicht der Agentur fuer Texte und Gedanken ueber den leeren Schreibtischen, und Partner Theo Wort legt einen versiegelten Umschlag auf deinen Platz. Seit Wochen jagt ihr als Gedanken-Agent an der Seite deines Text-Detektivs durch die Jahrhunderte, und jede geloeste Spur oeffnet ein neues Portal in der Zeit. Heute geht es um Rhetorische Mittel und Funktionsanalyse. Falllinie A: Der Hof von Guastalla fluestert von Gift, geheimen Briefen und einer Ehre, die man mit Worten vergiftet. Im Umschlag steckt Fall 13: ein Plakat mit dick unterstrichener Schlagzeile. Kaum haeltst du das Stueck ins Licht, faellt dir eine zweite Schicht auf: Jemand hat die Botschaft frisiert, verkuerzt oder verdreht, und nur wer Beleg, Funktion und Deutung sauber trennt, kann die Manipulation entlarven. Das naechste Portal oeffnet sich nur, wenn du drei Ziele in fuenfzehn Minuten schaffst und jede Behauptung mit Zeile und Wirkung belegst. Theo Wort gru belt schon ungeduldig, denn die Spur wird kalt.
+Ein anderer Anlass, ein ernsterer Ton: Die Gedenkfeier verlangt Wuerde statt Tempo. Die Rednerin spricht leise, doch jede Pause sitzt. Der Saal haelt den Atem an.
 
-Klausur-Satz: `Kein Mittel ohne Dienst: Jede Figur muss dem Gedanken dienen, sonst ist sie Schmuck.`
+Du vergleichst das zweite Manuskript mit dem ersten. **Litotes** und **Euphemismus** daempfen, **Parallelismus** traegt. Miss Zurueckhaltung als Staerke.
 
-## Schritt 2 — entdecken: Die Ausruestungskiste gegen Fall 13
+Klausur-Satz: `Die Gedenkrede zeigt Wuerde gegen Zerfall: Ordnung haelt, was Trauer aufreisst.`
+
+## Schritt 2 — entdecken: Die Ausruestungskiste zum Fall
 
 AUSRUESTUNG (5 Instrumente im Koffer):
 
-- **Metapher**: Metapher: Bildfeld als Deutungshebel mit Funktionskern
-- **Anapher**: Anapher: Wiederholung am Satzanfang als Verstaerker
-- **Parallelismus**: Parallelismus: Gleichbau als Ordnungs- und Nachdrucksignal
-- **Rhetorische Frage**: Rhetorische Frage: Scheinfrage als Lenkung des Lesers
-- **Klimax**: Klimax: Steigerung als Spannungs- und Schlussmarker
+- **Parallelismus**: Der Parallelismus baut Saetze mit gleichem Geruest. Er ordnet Gedanken und beruhigt das Ohr. Gleiche Form verspricht gleiche Wahrheit.  Mechanismus: Gleiche Syntax plus variierter Inhalt erzeugt Verlaesslichkeit; Rhythmus ersetzt Beweis. So wird Wuerde hoerbar. Klausur-Tipp: Unterstreiche das Geruest und deute die Beruhigung.
+- **Litotes**: Die Litotes behauptet durch doppelte Verneinung: nicht klein meint gross. Sie daempft und steigert zugleich. Bescheidenheit wird Nachdruck.  Mechanismus: Verneinung plus Verneinung ergibt Bejahung mit Vorbehalt; der Hoerer vollendet selbst. So wirkt Lob ohne Pathos. Klausur-Tipp: Loese die Verneinung auf und benenne den Vorbehalt.
+- **Euphemismus**: Der Euphemismus mildert Hartes durch sanfte Worte. Er schuetzt Wuerde in heiklen Passagen. Milde ersetzt nicht Wahrheit.  Mechanismus: Hartes Wort plus Huelle erzeugt Distanz; Trauer bleibt sagbar. Zu viel Huelle wird Verschleierung. Klausur-Tipp: Nenne das gemilderte Wort und die Grenze.
+- **Chiasmus**: Der Chiasmus kreuzt Satzglieder spiegelbildlich. Er praegt Merksätze von hoher Dichte. Umkehrung erzeugt Aha-Effekt.  Mechanismus: A-B plus B-A ergibt Denkfigur; Umkehr prueft Verhaeltnis. So wird Satz zum Denkmal. Klausur-Tipp: Markiere die Kreuzstellung.
+- **Klimax**: Die Klimax staffelt drei oder mehr Glieder aufwaerts. Sie fuehrt zum Hoehepunkt des Appells. Das Letzte wiegt am schwersten.  Mechanismus: Stufe plus Stufe ergibt Erwartung; Bruch oder Erfuellung entscheidet Wirkung. Sie misst den Atem der Rede. Klausur-Tipp: Nummeriere Stufen und benenne die Pointe.
 
-Klausur-Satz: `Kein Mittel ohne Dienst: Jede Figur muss dem Gedanken dienen, sonst ist sie Schmuck.`
+Klausur-Satz: `Parallelismus, Litotes und Klimax definieren die leise Rhetorik.`
 
 ## Schritt 3 — entdecken: Der Mechanismus hinter dem Tatbild
 
 MECHANISMUS (Tiefenbau):
 
-Jeder Fall folgt der Kette Befund, Funktion und Deutung. Zuerst sicherst du den Befund mit Zitat und Zeile, dann bestimmst du die Funktion im Macht- oder Sinn-gefuege, erst danach formulierst du die Deutung zu Rhetorische Mittel und Funktionsanalyse. Falllinie A: Der Hof von Guastalla fluestert von Gift, geheimen Briefen und einer Ehre, die man mit Worten vergiftet. Wer die zweite Schicht des Plakat mit dick unterstrichener Schlagzeile uebersieht, tappt in die Falle der Agentur.
+Auch die leise Rede folgt **Form mit Mass**. Daempfung plus Ordnung erzeugt Wuerde. Jede Figur dient der Trauerfaehigkeit.
+
+Der Weg: Sichere Figur mit Zitat und Zeile. Pruefe Daempfung gegen Verschleierung. Miss die Klimax zum Schluss. So wird Mass zur Deutung.
 
 ```diagram
-Befund (Zitat mit Zeile) -> Funktion (Wirkung im Gefuege) -> Deutung (Urteil)
-Fall 13: Plakat mit dick unterstrichener Schlagzeile -> Spur sichern -> Tatbild schliessen
+Figur (Zitat) -> Mass (Daempfung/Ordnung) -> Wuerde -> Gedenkappell
 ```
 
-Klausur-Satz: `Kein Mittel ohne Dienst: Jede Figur muss dem Gedanken dienen, sonst ist sie Schmuck.`
+Klausur-Satz: `Daempfung plus Ordnung ergibt Trost: Verneinung mildert, Geruest traegt, Stufe hebt.`
 
 ## Anekdote
 
-Ein Redner testete einst fuenf Figuren an einem Satz und behielt nur die mit Wirkung.
+Eine Redenschreiberin kuetzte einst jede dritte Zeile und verdoppelte die Wirkung. Ihr Motto lautete: Wuerde braucht Luft.
 
-Bezug zum Konzept: `Kein Mittel ohne Dienst: Jede Figur muss dem Gedanken dienen, sonst ist sie Schmuck.`
+Bezug zum Konzept: `Daempfung plus Ordnung ergibt Trost: Verneinung mildert, Geruest traegt, Stufe hebt.`
 
 ## Schritt 4 — ausprobieren: Die Sandkasten-Pruefung mit Textlupe
 
 [Werkzeug: highlighter]
 
-AUFGABE: Untersuche den Fall-Text 13 (Plakat mit dick unterstrichener Schlagzeile) zu Rhetorische Mittel und Funktionsanalyse.
+PRIMAERTEXT (Studienfassung: Gedenkrede im Buergerhaus (Ausschnitt, 15 Zeilen), Studienfassung, 100-200 Woerter):
+
+> Wir sind versammelt, wir schweigen, wir erinnern. (Z. 1)
+> Dieser Saal war sein Wohnzimmer, diese Stadt sein Garten. (Z. 2)
+> Nicht klein war sein Mut, nicht leise seine Guete. (Z. 3)
+> Er ging von uns - wir sagen: er ging voraus. (Z. 4)
+> Vorausgehen heisst: den Weg noch einmal pruefen. (Z. 5)
+> Fragt die Buecher? Fragt die Nachbarn? Fragt die Stille? (Z. 6)
+> Die Stille antwortet: Er bleibt, er traegt, er mahnt. (Z. 7)
+> Er mahnt zur Geduld, zur Genauigkeit, zur Guete. (Z. 8)
+> Geduld im Streit, Genauigkeit im Urteil, Guete im Alltag. (Z. 9)
+> Was wir verloren, ist gross; was wir behalten, ist groesser. (Z. 10)
+> Groesser als Trauer ist Dank, groesser als Dank ist Auftrag. (Z. 11)
+> Der Auftrag lautet: Helfen, Halten, Weitergeben. (Z. 12)
+> Weitergeben heisst: Erzaehlen, Zeigen, Vorleben. (Z. 13)
+> Vorleben werden wir - nicht morgen, nicht spaeter, heute. (Z. 14)
+> Heute neigen wir das Haupt; morgen heben wir das Werk. (Z. 15)
+
+AUFGABE: Untersuche den Primaertext Zeile fuer Zeile und belege jede Aussage mit Zitat und Zeile.
 TARGET: Drei Belege mit Zeile, je mit Funktion und einer Deutung in vier Saetzen.
 
 HILFE:
@@ -71,52 +91,59 @@ HILFE:
 2. Schritt 2: Sichere zwei Befunde mit Zeile.
 3. Schritt 3: Deute Befund und Funktion im Fallganzen.
 
-MUSTERLOESUNG: Der Fall 13 zeigt Rhetorische Mittel und Funktionsanalyse in drei Schritten. Erstens belegt ein Zitat mit Zeile den Kern des Plakat mit dick unterstrichener Schlagzeile, zweitens traegt die Funktion die Wirkung im Gefuege, drittens schliesst die Deutung das Tatbild. Damit ist die zweite Schicht entlarvt und das Portal oeffnet sich.
+MARKIERAUFTRAG: Markiere mit GELB alle **Wuerdemetaphern** (Wohnzimmer, Garten, Weg, Werk). Markiere mit BLAU die **Daempfungs- und Ordnungsfiguren** (Litotes, Parallelismus, Klimax).
 
-Klausur-Satz: `Kein Mittel ohne Dienst: Jede Figur muss dem Gedanken dienen, sonst ist sie Schmuck.`
+MUSTERLOESUNG: Der Fall 13 zeigt das Kernverfahren in drei Schritten. Erstens sichert ein Zitat mit Zeile den Befund. Zweitens benennt die Funktion die Wirkung im Gefuege. Drittens schliesst die Deutung das Urteil. Damit ist die zweite Schicht entlarvt.
+
+Klausur-Satz: `Die Regel des Gedenkens: Je heikler der Anlass, desto strenger das Mass.`
 
 ## Schritt 5 — ausprobieren: Das doppelte Spiel Weg A gegen Weg B
 
-VERGLEICH: Waehle erst das Verfahren, dann loesen: (i) Weg A Nahverfahren (Beleg, Zitat, Wirkung) oder (ii) Weg B Fernverfahren (Kontext, Gefuege, Urteil).
+VERGLEICH: Weg A liest mikroskopisch (Text, Rhetorik, Detail), Weg B deutet makroskopisch (Epoche, Kontext, Ordnung).
 
-AUFGABE A: Welche Spur im Plakat mit dick unterstrichener Schlagzeile verlangt Weg A? Begründe mit Zitat.
-AUFGABE B: Welche Frage zum Fallganzen verlangt Weg B? Begründe mit Kontext.
+AUFGABE A: Welche Spur verlangt Weg A? Begruende mit Zitat und Zeile.
+AUFGABE B: Welche Frage verlangt Weg B? Begruende mit Kontext.
 
 HILFE: A fragt nach Form und Naehe, also Weg A. B fragt nach Rolle und Ganzem, also Weg B.
 
-ANTWORT: A erfordert Weg A: Der Nahbeleg mit Zitat und Zeile zeigt die Wirkung im Detail. B erfordert Weg B: Der Fernblick auf Kontext und Gefuege sichert das Urteil zu Rhetorische Mittel und Funktionsanalyse.
+ANTWORT A: Weg A misst mikroskopisch Geruest und Daempfung: Parallelismen Z. 8-9, Litotes Z. 3, Klimax Z. 10-11.
+ANTWORT B: Weg B bedenkt makroskopisch Anlass und Publikum: Gedenkfeier verlangt Trostfaehigkeit statt Mobilisierung.
 
-Klausur-Satz: `Kein Mittel ohne Dienst: Jede Figur muss dem Gedanken dienen, sonst ist sie Schmuck.`
+Klausur-Satz: `Feinlese hoert das Wie der Wuerde, Anlasswissen das Warum der Zurueckhaltung; beide deuten voll.`
 
-## Schritt 6 — check: Selbsttest zu Rhetorische Mittel und Funktionsanalyse
+## Schritt 6 — check: Selbsttest mit Antwortkarten
 
 CHECK (drei Fragen mit Antworten):
 
-FRAGE: Nenne die Drei-Schritt-Kette. | ANTWORT: Befund mit Zeile, Funktion im Gefuege, Deutung als Urteil.
-FRAGE: Was verlangt Weg A? | ANTWORT: Nahbeleg mit Zitat und Wirkung am Detail.
-FRAGE: Was verlangt Weg B? | ANTWORT: Kontext und Gefuege als Traeger des Urteils.
+- FRAGE: Welche Figur daempft durch Verneinung? | ANTWORT: Die Litotes: doppelte Verneinung als gedaempfte Bejahung.
+- FRAGE: Woran erkennst du Parallelismus? | ANTWORT: An gleichem Satzgeruest bei variiertem Inhalt.
+- FRAGE: Was prueft die Klimax-Deutung? | ANTWORT: Ob die letzte Stufe Pointe oder Bruch traegt.
 
-Klausur-Satz: `Kein Mittel ohne Dienst: Jede Figur muss dem Gedanken dienen, sonst ist sie Schmuck.`
+Klausur-Satz: `Haeufig verwechselt: Milde ist kein Ausweichen; erst Grenze gegen Verschleierung zaehlt.`
 
 ## Fehlvorstellung
 
-1. Fehlvorstellung: Benennen genuege.
-   Korrektur-Satz: `Name ohne Zitat und Funktion gibt keine Punkte.`
-2. Fehlvorstellung: Mehr Figuren seien besser.
-   Korrektur-Satz: `Zwei belegte Figuren mit Funktion schlagen zehn Namen.`
+1. Fehlvorstellung: Sanft sei wirkungslos.
+   Korrektur-Satz: `Geordnete Daempfung traegt weiter als lauter Appell.`
+2. Fehlvorstellung: Euphemismus sei Luege.
+   Korrektur-Satz: `Er schuetzt Wuerde, solange das Harte benennbar bleibt.`
 
-## Schritt 7 — szenario: Klausurtransfer: Reden-Coach der Debattier-AG zu Fall 13
+## Schritt 7 — szenario: Klausurtransfer als Redenschreiber der Stadtverwaltung zu Fall 13
 
-ROLLE: Du bist Reden-Coach der Debattier-AG in der Pruefung.
-SITUATION: Ein Fall zu Rhetorische Mittel und Funktionsanalyse (Fall 13, Plakat mit dick unterstrichener Schlagzeile) liegt unbearbeitet auf dem Tisch.
+ROLLE: Du bist Redenschreiber der Stadtverwaltung in der Pruefung.
+SITUATION: Ein Fall liegt unbearbeitet auf dem Tisch und verlangt Einordnung, Belege und Urteil.
 AUFGABE: Verfasse circa 150 Woerter mit Einordnung, zwei Belegen mit Zeile, Funktion, Deutung und Schlussurteil.
 RUBRIC (30 XP): Einordnung korrekt (6 XP) | Zwei Belege mit Zeile (10 XP) | Funktion plus Deutung (10 XP) | Fachsprache und Schluss (4 XP).
+
+Klausur-Satz: `AFB-III-Mustersatz: Litotes (Z. 3) mit Klimax (Z. 10-11) belegt wuerdevollen Trost, weil Daempfung Trauer sagbar und Steigerung Auftrag faehig macht.`
 
 ## Schritt 8 — reflexion: Takeaway und Rueckblick aus Fall 13
 
 TAKEAWAY:
 
-Fall 13 lehrt: Beleg sichern, Funktion benennen, Urteil begruenden. Kein Mittel ohne Dienst: Jede Figur muss dem Gedanken dienen, sonst ist sie Schmuck. Takeaway-Satz: `Kein Mittel ohne Dienst: Jede Figur muss dem Gedanken dienen, sonst ist sie Schmuck.`
+Klausur-Satz: `Fall 13 (Rhetorische Mittel Funktionsanalyse) schliesst: Wer Beleg, Funktion und Urteil sichert, besteht jede Klausur.`
+
+Fall 13 lehrt den Dreischritt aus Beleg, Funktion und Urteil. Takeaway-Satz: `Gedenken lesen heisst: Mass sichern und jede Figur an Trost und Auftrag pruefen.`
 
 REFLEXION:
 1. Welche Spur fiel schwerer, der Nahbeleg oder das Fernurteil?

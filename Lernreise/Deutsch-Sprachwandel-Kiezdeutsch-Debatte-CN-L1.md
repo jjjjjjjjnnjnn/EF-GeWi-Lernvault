@@ -10,133 +10,136 @@ datum: 2026-09-26
 tags: [EF, Deutsch, Sprachreflexion]
 version: Lesson-v3
 ---
-
 # Lernreise: Sprachwandel und Kiezdeutsch-Debatte (L1, Ziel Klausur)
 
 <!-- Campaign: Detektive Fal 22 -->
-## Schritt 1 — entdecken: Der versiegelte Umschlag aus der Archivnacht
+## Schritt 1 — entdecken: Der versiegelte Umschlag zur Sache
 
 ZIELE（3条，15分钟可达成，先读中文，再记德语）：
 
-1. 中文：能把第22号案件（校园语言问卷）按背景、方法、判断三步拆开。
+1. 中文：能把第22号案件按背景、方法、判断三步拆开。
    德语：Ordne Fall 22 in Kontext, Verfahren und Deutung.
-2. 中文：每个论断配引文加行号，并说清功能。
-   德语：Belege jede Aussage mit Zitat, Zeile und Funktion.
+2. 中文：每个论断配证据并说清功能。
+   德语：Belege jede Aussage mit Beleg und Funktion.
 3. 中文：按能力层级写出判断句。
    德语：Faelle ein Urteil im passenden Anforderungsbereich.
 
 HOOK：
 
-深夜，跨时空文案侦探社的蓝灯又亮了。搭档把一只密封信封推到你面前：这是第22号案件，一份校园语言问卷。表面看只是一段语言变迁辩论，但灯光下浮现出第二层痕迹——有人删改、夸大或偷换了关键信息。你们作为思想特工与文本侦探，必须在十五分钟内锁定三个目标：找证据、说功能、下判断，每一步都要有出处支撑。下一道时空门只为证据链完整的人打开，搭档已经在催你了，线索正在变冷。
+CN: 操场上，“Alter, isch geh Kino”引来两种判决：堕落还是创造。语言学家带着录音笔来了。DE: Auf dem Schulhof urteilen zwei Lager ueber einen Satz. Die Linguistik misst statt zu moralisieren. **System** gegen **Gefuehl** eroentrant die Debatte.
 
-德语版钩子：Agent Theo Wort legt Fall 22 (Schulhof-Umfrage mit widerspruechlichen Antworten) auf deinen Tisch. Falllinie D: Das Archiv der Agentur meldet einen Riss in der Zeit, durch den ein Text in unsere Gegenwart gefallen ist.
+CN: 变体 B 把同一辩论搬进班级语音群。DE: Variante B verlegt die Debatte in die Klassengruppe mit Sprachnachrichten.
 
-Klausur-Satz: `Sprache wandelt sich im Gebrauch: Wer heute spricht, schreibt morgen die Regel.`
+Klausur-Satz: `矛盾句——CN: 有规则即非错， belonging 即功能。DE: Regel schlaegt Fehler; Zugehoerigkeit ist Funktion.`
 
-## Schritt 2 — entdecken: Die Ausruestungskiste gegen Fall 22
+## Schritt 2 — entdecken: Die Ausruestungskiste zum Fall
 
-装备盒（5件，先读中文，再背德语）：
+装备盒（5件，先读中文，再记英文/德语）：
 
-- 中文点拨：语言变迁辩论之1号工具。
-  德语：**Sprachwandel: regelmaessiger Laut- und Formwechsel ueber Zeit**
-- 中文点拨：语言变迁辩论之2号工具。
-  德语：**Kiezdeutsch: kontaktbedingte Varietaet mit eigenen Mustern**
-- 中文点拨：语言变迁辩论之3号工具。
-  德语：**Register: situationsgerechte Sprachwahl zwischen Naehe und Distanz**
-- 中文点拨：语言变迁辩论之4号工具。
-  德语：**Norm und Gebrauch: Regelbuch gegen lebendige Praxis**
-- 中文点拨：语言变迁辩论之5号工具。
-  德语：**Mehrsprachigkeit: Ressource statt Stoerquelle im Alltag**
+- 中文点拨：语言变迁
+  德语：**Sprachwandel: CN: 语言随使用而变，非堕落。DE: Sprache wandelt sich durch Gebrauch; Wandel ist normal, nicht Verfall. ** Mechanismus: Kontakt plus Jugend plus Medien beschleunigt; Standard folgt spaet.  Klausur-Tipp: Nenne Ausloeser, nicht nur Urteil.
+- 中文点拨：街区德语
+  德语：**Kiezdeutsch: CN: 多语街区的系统性变体。DE: Kiezdeutsch ist regelhaftes Multiethnolekt mit eigener Grammatik. Es ist System, nicht Fehler. ** Mechanismus: Wegfall plus neue Partikeln plus Prosodie ergibt Stil; Funktion ist Zugehoerigkeit.  Klausur-Tipp: Belege Regel statt Fehler.
+- 中文点拨：衰退论
+  德语：**Verfalls-These: CN: 纯洁神话的道德判决。DE: Die Verfalls-These deutet Wandel als Zerfall und moralisiert. Sie misst Ideal gegen Alltag. ** Mechanismus: Norm plus Nostalgie erzeugt Empörung; Belege bleiben anekdotisch.  Klausur-Tipp: Entlarve Norm und Stichprobe.
+- 中文点拨：丰富论
+  德语：**Bereicherungs-These: CN: 接触即资源。DE: Die Bereicherungs-These liest Kontakt als Ressource und Systemleistung. Vielfalt traegt Ausdruck. ** Mechanismus: Funktion plus Kreativitaet belegt Gewinn; Sprecher wechseln kompetent.  Klausur-Tipp: Belege Codeswitching als Kompetenz.
+- 中文点拨：辩论裁决
+  德语：**Debattenurteil: CN: 有标准的权衡。DE: Das Debattenurteil wägt mit Massstab: Verstaendlichkeit, Teilhabe, Ausdruck. ** Mechanismus: Kriterium plus Beleg ergibt Position; Ausblick nennt Foerderung.  Klausur-Tipp: Schliesse mit Massstab und Massnahme.
 
-Klausur-Satz: `Sprache wandelt sich im Gebrauch: Wer heute spricht, schreibt morgen die Regel.`
+Klausur-Satz: `定义句——CN: 变迁、系统与标准构成三角。DE: Wandel, System und Massstab definieren die Debatte.`
 
 ## Schritt 3 — entdecken: Der Mechanismus hinter dem Tatbild
 
-中文深层解构：语言变迁辩论的关键链条是证据、功能、判断三步走。先锁引文行号，再说它在整体中的作用，最后下判断。第22号案件（校园语言问卷）的第二层痕迹就藏在这里。
+中文深层解构：先读中文抓链条，再用德语写判断。
 
-德语：Befund mit Zeile, Funktion im Gefuege, Deutung als Urteil zu Sprachwandel und Kiezdeutsch-Debatte.
+德语：CN: 机制是系统对神话：规则证据对道德感叹。DE: System gegen Mythos: **Regelbeleg** schlaegt **Empörung**.
+
+Der Weg: Sichere Sprachbelege mit Kontext. Pruefe These auf Norm und Stichprobe. Urteile mit Massstab. So wird Debatte zur Analyse.
 
 ```diagram
-Befund (Zitat mit Zeile) -> Funktion (Wirkung) -> Deutung (Urteil)
-Fall 22
+Beleg -> Systempruefung -> Thesen-Test -> Massstabsurteil
 ```
 
-Klausur-Satz: `Sprache wandelt sich im Gebrauch: Wer heute spricht, schreibt morgen die Regel.`
+Klausur-Satz: `传导句——CN: 证据加标准等于裁决。DE: Beleg plus Massstab ergibt Urteil.`
 
 ## Anekdote
 
-中文解读：语言变迁辩论里藏着侦探的耐心：每个细节都是 portal 的钥匙。
+CN: 一位语言学家在操场录了两小时，规则比词典还整齐。DE: Ein Linguist nahm zwei Stunden Hofdeutsch auf; die Regeln waren strenger als erwartet.
 
-德语：Ein Schaffner sammelte einst neue Groesse, weil Fahrgaeste sie taeglich erfanden.
+Bezug zum Konzept: `传导句——CN: 证据加标准等于裁决。DE: Beleg plus Massstab ergibt Urteil.`
 
-Bezug zum Konzept: `Sprache wandelt sich im Gebrauch: Wer heute spricht, schreibt morgen die Regel.`
-
-## Schritt 4 — ausprobieren: Die Sandkasten-Pruefung mit Sprechuhr
+## Schritt 4 — ausprobieren: Die Sandkasten-Pruefung mit Baukasten
 
 [Werkzeug: oral-timer]
 
-中文任务：分析第22号案文本（校园语言问卷）。
-德语 AUFGABE: Untersuche Fall 22 (Schulhof-Umfrage mit widerspruechlichen Antworten) zu Sprachwandel und Kiezdeutsch-Debatte.
-TARGET（目标）：三个带行号证据，各配功能与判断，共四句。
+中文任务：Sammle drei Hof-Belege, pruefe sie auf Regel und bilde je einen Pro- und Contra-Satz.
+德语 AUFGABE: Sammle drei Hof-Belege, pruefe sie auf Regel und bilde je einen Pro- und Contra-Satz.
+TARGET（目标）：三个证据，各配功能与判断，共四句。
 
 HILFE（中文在前）：
 1. 中文：两句交代背景。德语：Ordne den Fall in zwei Saetzen ein.
-2. 中文：锁两个证据加行号。德语：Sichere zwei Befunde mit Zeile.
+2. 中文：锁两个证据。德语：Sichere zwei Belege.
 3. 中文：功能加判断收尾。德语：Deute Funktion im Fallganzen.
 
 MUSTERLOESUNG: 中文示范思路：先背景一句，再证据加功能两句，最后判断一句收束。
-德语 MUSTERLOESUNG: Fall 22 zeigt Sprachwandel und Kiezdeutsch-Debatte in drei Schritten mit Beleg, Funktion und Deutung; die zweite Schicht ist entlarvt.
+德语 MUSTERLOESUNG: Fall 22 zeigt das Verfahren in drei Schritten mit Beleg, Funktion und Deutung.
 
-Klausur-Satz: `Sprache wandelt sich im Gebrauch: Wer heute spricht, schreibt morgen die Regel.`
+Klausur-Satz: `规律句——CN: 规律是越道德化，越要查样本。DE: Je moralischer der Ton, desto genauer die Stichprobe.`
 
 ## Schritt 5 — ausprobieren: Das doppelte Spiel Weg A gegen Weg B
 
-VERGLEICH（中文先行）：先选路再做题：【选程序】(i) Weg A 近路（引文、细节、效果）还是 (ii) Weg B 远路（背景、结构、判断）。
-德语：Waehle erst das Verfahren (Weg A oder Weg B), dann loesen.
+VERGLEICH（中文先行）：Weg A 微观做细节，Weg B 宏观定策略。
+德语：Weg A arbeitet mikroskopisch, Weg B plant makroskopisch.
 
-AUFGABE A（中文：哪条线索走近路？配引文）：Welche Spur verlangt Weg A?
-AUFGABE B（中文：哪个整体问题走远路？配背景）：Welche Frage verlangt Weg B?
+AUFGABE A（中文：哪条线索走近路？）：Welche Spur verlangt Weg A?
+AUFGABE B（中文：哪个整体问题走远路？）：Welche Frage verlangt Weg B?
 
-HILFE：A问形式细节选近路Weg A；B问整体结构选远路Weg B。【选程序看题干：问细节选A，问整体选B。】
+HILFE：A问形式细节选近路Weg A；B问整体结构选远路Weg B。
 
-中文答案：A走近路靠引文细节，B走远路靠背景结构。
-德语 ANTWORT: A erfordert Weg A mit Nahbeleg, B erfordert Weg B mit Kontext zu Sprachwandel und Kiezdeutsch-Debatte.
+中文答案：A走近路靠证据细节，B走远路靠背景策略。
+德语 ANTWORT A: Weg A analysiert mikroskopisch Formen: Artikel-Wegfall, Partikeln und Prosodie mit Beleg.
+德语 ANTWORT B: Weg B deutet makroskopisch Debatte: Medienlogik, Normgeschichte und Teilhabefolgen als Rahmen.
 
-Klausur-Satz: `Sprache wandelt sich im Gebrauch: Wer heute spricht, schreibt morgen die Regel.`
+Klausur-Satz: `对决句——CN: 微观验规则，宏观问参与。DE: Feinlese prueft Regeln, Kontext fragt Teilhabe.`
 
-## Schritt 6 — check: Selbsttest zu Sprachwandel und Kiezdeutsch-Debatte
+## Schritt 6 — check: Selbsttest mit Antwortkarten
 
 CHECK (drei Fragen mit Antworten):
 
 中文自测（先中文自问，再用德语回答）：
-FRAGE: 三步链是什么？ | ANTWORT: Befund mit Zeile, Funktion im Gefuege, Deutung als Urteil.
-FRAGE: 近路要什么？ | ANTWORT: Nahbeleg mit Zitat und Wirkung.
-FRAGE: 远路要什么？ | ANTWORT: Kontext und Gefuege als Urteilstraeger.
+- FRAGE: CN: 三证据？DE: Welche Belege? | ANTWORT: Form mit Kontext: Wegfall, Partikel, Prosodie.
+- FRAGE: CN: 衰退论的破绽？DE: Schwachstelle Verfall? | ANTWORT: Norm plus Anekdote statt Systembeleg.
+- FRAGE: CN: 裁决标准？DE: Welche Massstaebe? | ANTWORT: Verstaendlichkeit, Teilhabe, Ausdruck.
 
-Klausur-Satz: `Sprache wandelt sich im Gebrauch: Wer heute spricht, schreibt morgen die Regel.`
+Klausur-Satz: `易错句——CN: 易错是把口音当智商。DE: Register misst Zugehoerigkeit, nicht Klugheit.`
 
 ## Fehlvorstellung
 
-1. 中文误解：语言变迁辩论只看表面。
-   中文纠偏：证据加功能才是得分点。
-   Korrektur-Satz: `Neu heisst zuerst ungewoehnlich, dann ueblich.`
-2. 中文误解：语言变迁辩论只看表面。
-   中文纠偏：证据加功能才是得分点。
-   Korrektur-Satz: `Auch Kontaktdeutsch folgt Mustern und Regeln.`
+1. 中文误解：CN: 省略即无知。
+   中文纠偏：DE: Auslassung folgt Regel und Stil.
+2. 中文误解：CN: 标准永恒。
+   中文纠偏：DE: Standard ist geronnener Wandel von gestern.
 
-## Schritt 7 — szenario: Klausurtransfer: Sprachkolumnist der Stadtzeitung zu Fall 22
+## Schritt 7 — szenario: Klausurtransfer als Debattenleiter der Podiumsdiskussion zu Fall 22
 
-ROLLE（中文）：你是Sprachkolumnist der Stadtzeitung，负责审稿。
-德语 ROLLE: Du bist Sprachkolumnist der Stadtzeitung.
+ROLLE（中文）：你是Debattenleiter der Podiumsdiskussion，负责审稿。
+德语 ROLLE: Du bist Debattenleiter der Podiumsdiskussion.
 SITUATION: Fall 22 liegt unbearbeitet vor dir.
 AUFGABE（中文）：150词左右，含背景、两个证据、功能判断。
-RUBRIC (30 XP): Einordnung (6 XP) | Belege mit Zeile (10 XP) | Funktion plus Deutung (10 XP) | Fachsprache (4 XP).
+RUBRIC (30 XP): Einordnung (6 XP) | Belege (10 XP) | Funktion plus Deutung (10 XP) | Fachsprache (4 XP).
+
+Klausur-Satz: `满分句——CN: 满分句须含规则证据、反方最强论与标准裁决。DE: AFB-III-Satz braucht Regelbeleg, staerksten Einwand und Massstabsurteil.`
 
 ## Schritt 8 — reflexion: Takeaway und Rueckblick aus Fall 22
 
-中文总结：第22号案件教会我们：先锁证据，再说功能，最后判断。
-德语 TAKEAWAY: Beleg sichern, Funktion benennen, Urteil begruenden. `Sprache wandelt sich im Gebrauch: Wer heute spricht, schreibt morgen die Regel.`
+TAKEAWAY:
+
+Klausur-Satz: `CN元认知收束——第22号案件（Sprachwandel Kiezdeutsch Debatte）证明：证据加功能等于判断。DE/EN: Fall 22 (Sprachwandel Kiezdeutsch Debatte) proves: evidence plus function equals judgement.`
+
+中文总结：先锁证据，再说功能，最后判断。
+德语 TAKEAWAY: Beleg sichern, Funktion benennen, Urteil begruenden. `元认知句——CN: 辩语言即辩谁可参与。DE: Ueber Sprache urteilen heisst: Teilhabe verhandeln.`
 
 REFLEXION（中文在前）：
 1. 中文：近路证据和远路判断哪个更难？德语：Was fiel schwerer, Nahbeleg oder Fernurteil?
-2. 中文：下次先划引文行号。德语：Naechstes Mal sichere ich zuerst Zitat und Zeile.
+2. 中文：下次先列提纲。德语：Naechstes Mal sichere ich zuerst Gliederung und Beleg.

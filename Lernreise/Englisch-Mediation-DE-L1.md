@@ -10,114 +10,121 @@ datum: 2026-09-25
 tags: [EF, Englisch, Sprachmittlung]
 version: Lesson-v3
 ---
-
 # Lernreise: Mediation DE-EN: Ablauf und Textformate (L1, Ziel Klausur)
 
 <!-- Campaign: Detektive Fal 36 -->
-## Schritt 1 — entdecken: Der versiegelte Umschlag aus der Archivnacht
+## Schritt 1 — entdecken: Der versiegelte Umschlag zur Sache
 
 ZIELE (3 Ziele, nach 15 Minuten erreichbar):
 
-1. Du ordnest Fall 36 (Formular mit angehaengter Erklaerung) in Kontext, Verfahren und Deutung ein.
-2. Du belegst jede Aussage zu Mediation DE-EN: Ablauf und Textformate mit Zitat und Zeile und benennst die Funktion.
+1. Du ordnest Fall 36 in Kontext, Verfahren und Deutung ein.
+2. Du belegst jede Aussage mit Beleg und benennst die Funktion.
 3. Du faellst ein Urteil im passenden Anforderungsbereich.
 
 HOOK:
 
-Mitten in der Nacht flackert das Blaulicht der Agentur fuer Texte und Gedanken ueber den leeren Schreibtischen, und Partner Theo Wort legt einen versiegelten Umschlag auf deinen Platz. Seit Wochen jagt ihr als Gedanken-Agent an der Seite deines Text-Detektivs durch die Jahrhunderte, und jede geloeste Spur oeffnet ein neues Portal in der Zeit. Heute geht es um Mediation DE-EN: Ablauf und Textformate. Falllinie D: Das Archiv der Agentur meldet einen Riss in der Zeit, durch den ein Text in unsere Gegenwart gefallen ist. Im Umschlag steckt Fall 36: ein Formular mit angehaengter Erklaerung. Kaum haeltst du das Stueck ins Licht, faellt dir eine zweite Schicht auf: Jemand hat die Botschaft frisiert, verkuerzt oder verdreht, und nur wer Beleg, Funktion und Deutung sauber trennt, kann die Manipulation entlarven. Das naechste Portal oeffnet sich nur, wenn du drei Ziele in fuenfzehn Minuten schaffst und jede Behauptung mit Zeile und Wirkung belegst. Theo Wort gru belt schon ungeduldig, denn die Spur wird kalt.
+A German exchange letter lands on your desk: hostel rules, half slang, full confusion. Your English summary must carry facts, tone and gaps. Du erhaeltst den Mittler-Koffer mit Textsortenkarte. Jede **Luecke** braucht ein **Signal**.
 
-Klausur-Satz: `Mediation bridges languages: the reader understands without the source.`
+Variante B mittelt denselben Koffer an einem zweiten Brief mit vertauschten Empfaengern.
 
-## Schritt 2 — entdecken: Die Ausruestungskiste gegen Fall 36
+Klausur-Satz: `Mediation carries sense, not sentences: reader decides selection.`
+
+## Schritt 2 — entdecken: Die Ausruestungskiste zum Fall
 
 AUSRUESTUNG (5 Instrumente im Koffer):
 
-- **Gist first**: Gist first: core message before detail
-- **Text type**: Text type: notice, mail or report as format compass
-- **Addressee design**: Addressee design: writing for a named reader
-- **Factual tone**: Factual tone: neutral style without added opinion
-- **Completeness check**: Completeness check: names, dates and numbers verified
+- **Selection**: EN: Selection picks relevant facts for the reader. Not all crosses over.  Mechanism: Brief plus audience filters content.  Klausur-Tipp: Name reader first.
+- **Compression**: EN: Compression condenses without loss of logic. Short keeps sense.  Mechanism: Main plus link minus example compacts.  Klausur-Tipp: Keep logic words.
+- **Paraphrase**: EN: Paraphrase renders sense in own words. Copy fails.  Mechanism: Sense plus register fits new reader.  Klausur-Tipp: Never lift sentences.
+- **Cultural bridge**: EN: The bridge explains habits behind rules. Context prevents insult.  Mechanism: Fact plus habit note builds understanding.  Klausur-Tipp: Add one footnote of habit.
+- **Gap signal**: EN: Gap signals mark missing or unclear source info. Honesty scores.  Mechanism: Flag plus scope protects trust.  Klausur-Tipp: Flag every hole.
 
-Klausur-Satz: `Mediation bridges languages: the reader understands without the source.`
+Klausur-Satz: `Selection, paraphrase and bridge define every mediation.`
 
 ## Schritt 3 — entdecken: Der Mechanismus hinter dem Tatbild
 
 MECHANISMUS (Tiefenbau):
 
-Jeder Fall folgt der Kette Befund, Funktion und Deutung. Zuerst sicherst du den Befund mit Zitat und Zeile, dann bestimmst du die Funktion im Macht- oder Sinn-gefuege, erst danach formulierst du die Deutung zu Mediation DE-EN: Ablauf und Textformate. Falllinie D: Das Archiv der Agentur meldet einen Riss in der Zeit, durch den ein Text in unsere Gegenwart gefallen ist. Wer die zweite Schicht des Formular mit angehaengter Erklaerung uebersieht, tappt in die Falle der Agentur.
+Mediation moves **sense across shores**. Facts travel, tone translates, gaps get flagged.
+
+Der Weg: Select for reader. Compress with logic. Paraphrase in register, bridge culture, flag gaps. So wird Brief zur Bruecke.
 
 ```diagram
-Befund (Zitat mit Zeile) -> Funktion (Wirkung im Gefuege) -> Deutung (Urteil)
-Fall 36: Formular mit angehaengter Erklaerung -> Spur sichern -> Tatbild schliessen
+Source -> Select -> Compress -> Paraphrase + Bridge + Flags -> Target text
 ```
 
-Klausur-Satz: `Mediation bridges languages: the reader understands without the source.`
+Klausur-Satz: `Sense plus register plus flag equals trust across languages.`
 
 ## Anekdote
 
-A clerk once fixed three dates and saved a whole festival.
+A mediator flagged three gaps and earned full marks. Honesty translates.
 
-Bezug zum Konzept: `Mediation bridges languages: the reader understands without the source.`
+Bezug zum Konzept: `Sense plus register plus flag equals trust across languages.`
 
-## Schritt 4 — ausprobieren: Die Sandkasten-Pruefung mit Sprechuhr
+## Schritt 4 — ausprobieren: Die Sandkasten-Pruefung mit Baukasten
 
 [Werkzeug: oral-timer]
 
-AUFGABE: Untersuche den Fall-Text 36 (Formular mit angehaengter Erklaerung) zu Mediation DE-EN: Ablauf und Textformate.
-TARGET: Drei Belege mit Zeile, je mit Funktion und einer Deutung in vier Saetzen.
+AUFGABE: Mittels zwei Briefabsaetze: Auswahl, Komprimat, Paraphrase plus Bruecken-Fussnote und Lueckensignal.
+TARGET: Drei Bausteine mit Beleg, je mit Funktion und einer Deutung in vier Saetzen.
 
 HILFE:
 1. Schritt 1: Ordne den Fall in zwei Saetzen ein.
-2. Schritt 2: Sichere zwei Befunde mit Zeile.
-3. Schritt 3: Deute Befund und Funktion im Fallganzen.
+2. Schritt 2: Sichere zwei Bausteine mit Beleg.
+3. Schritt 3: Deute Baustein und Funktion im Fallganzen.
 
-MUSTERLOESUNG: Der Fall 36 zeigt Mediation DE-EN: Ablauf und Textformate in drei Schritten. Erstens belegt ein Zitat mit Zeile den Kern des Formular mit angehaengter Erklaerung, zweitens traegt die Funktion die Wirkung im Gefuege, drittens schliesst die Deutung das Tatbild. Damit ist die zweite Schicht entlarvt und das Portal oeffnet sich.
+MUSTERLOESUNG: Der Fall 36 zeigt das Verfahren in drei Schritten. Erstens sichert ein Beleg den Kern. Zweitens traegt die Funktion die Wirkung. Drittens schliesst die Deutung das Urteil.
 
-Klausur-Satz: `Mediation bridges languages: the reader understands without the source.`
+Klausur-Satz: `The bridge rule: the odder the rule, the longer the footnote.`
 
 ## Schritt 5 — ausprobieren: Das doppelte Spiel Weg A gegen Weg B
 
-VERGLEICH: Waehle erst das Verfahren, dann loesen: (i) Weg A Nahverfahren (Beleg, Zitat, Wirkung) oder (ii) Weg B Fernverfahren (Kontext, Gefuege, Urteil).
+VERGLEICH: Weg A arbeitet mikroskopisch (Detail, Beleg, Form), Weg B plant makroskopisch (Strategie, Kontext, Gewicht).
 
-AUFGABE A: Welche Spur im Formular mit angehaengter Erklaerung verlangt Weg A? Begründe mit Zitat.
-AUFGABE B: Welche Frage zum Fallganzen verlangt Weg B? Begründe mit Kontext.
+AUFGABE A: Welche Spur verlangt Weg A? Begruende mit Beleg.
+AUFGABE B: Welche Frage verlangt Weg B? Begruende mit Kontext.
 
 HILFE: A fragt nach Form und Naehe, also Weg A. B fragt nach Rolle und Ganzem, also Weg B.
 
-ANTWORT: A erfordert Weg A: Der Nahbeleg mit Zitat und Zeile zeigt die Wirkung im Detail. B erfordert Weg B: Der Fernblick auf Kontext und Gefuege sichert das Urteil zu Mediation DE-EN: Ablauf und Textformate.
+ANTWORT A: Way A renders closely: sense, logic words and register sentence by sentence.
+ANTWORT B: Way B serves widely: reader, purpose and text type decide selection and footnotes.
 
-Klausur-Satz: `Mediation bridges languages: the reader understands without the source.`
+Klausur-Satz: `Close rendering secures how, wide service why; both mediate.`
 
-## Schritt 6 — check: Selbsttest zu Mediation DE-EN: Ablauf und Textformate
+## Schritt 6 — check: Selbsttest mit Antwortkarten
 
 CHECK (drei Fragen mit Antworten):
 
-FRAGE: Nenne die Drei-Schritt-Kette. | ANTWORT: Befund mit Zeile, Funktion im Gefuege, Deutung als Urteil.
-FRAGE: Was verlangt Weg A? | ANTWORT: Nahbeleg mit Zitat und Wirkung am Detail.
-FRAGE: Was verlangt Weg B? | ANTWORT: Kontext und Gefuege als Traeger des Urteils.
+- FRAGE: Which five moves build mediation? | ANTWORT: Select, compress, paraphrase, bridge, flag.
+- FRAGE: What needs a footnote? | ANTWORT: Habits behind odd rules.
+- FRAGE: How do you flag gaps? | ANTWORT: Mark scope honestly with signal phrase.
 
-Klausur-Satz: `Mediation bridges languages: the reader understands without the source.`
+Klausur-Satz: `Often confused: translation copies; mediation selects and explains.`
 
 ## Fehlvorstellung
 
-1. Fehlvorstellung: Word by word is safest.
-   Korrektur-Satz: `Sense for sense with checkable facts wins.`
-2. Fehlvorstellung: Opinion spices it up.
-   Korrektur-Satz: `Neutrality is the professional mark.`
+1. Fehlvorstellung: Copy scores.
+   Korrektur-Satz: `Lifting sentences fails; paraphrase rules.`
+2. Fehlvorstellung: All must cross.
+   Korrektur-Satz: `Reader relevance filters content.`
 
-## Schritt 7 — szenario: Klausurtransfer: City press officer zu Fall 36
+## Schritt 7 — szenario: Klausurtransfer als Mediation coach for the exchange zu Fall 36
 
-ROLLE: Du bist City press officer in der Pruefung.
-SITUATION: Ein Fall zu Mediation DE-EN: Ablauf und Textformate (Fall 36, Formular mit angehaengter Erklaerung) liegt unbearbeitet auf dem Tisch.
-AUFGABE: Verfasse circa 150 Woerter mit Einordnung, zwei Belegen mit Zeile, Funktion, Deutung und Schlussurteil.
-RUBRIC (30 XP): Einordnung korrekt (6 XP) | Zwei Belege mit Zeile (10 XP) | Funktion plus Deutung (10 XP) | Fachsprache und Schluss (4 XP).
+ROLLE: Du bist Mediation coach for the exchange in der Pruefung.
+SITUATION: Ein Fall liegt unbearbeitet auf dem Tisch und verlangt Einordnung, Belege und Urteil.
+AUFGABE: Verfasse circa 150 Woerter mit Einordnung, zwei Belegen, Funktion, Deutung und Schlussurteil.
+RUBRIC (30 XP): Einordnung korrekt (6 XP) | Zwei Belege (10 XP) | Funktion plus Deutung (10 XP) | Fachsprache und Schluss (4 XP).
+
+Klausur-Satz: `AFB-III model: For reader R, facts F1-F2 (paraphrased) with habit note H and flagged gap G yield usable target text.`
 
 ## Schritt 8 — reflexion: Takeaway und Rueckblick aus Fall 36
 
 TAKEAWAY:
 
-Fall 36 lehrt: Beleg sichern, Funktion benennen, Urteil begruenden. Mediation bridges languages: the reader understands without the source. Takeaway-Satz: `Mediation bridges languages: the reader understands without the source.`
+Klausur-Satz: `Fall 36 (Mediation DE) schliesst: Wer Beleg, Funktion und Urteil sichert, besteht jede Klausur.`
+
+Fall 36 lehrt den Dreischritt aus Beleg, Funktion und Urteil. Takeaway-Satz: `Mediating means: select, compress, bridge and flag honestly.`
 
 REFLEXION:
 1. Welche Spur fiel schwerer, der Nahbeleg oder das Fernurteil?
-2. Beim naechsten Mal sichere ich zuerst Zitat und Zeile, weil sie jede Deutung tragen.
+2. Beim naechsten Mal sichere ich zuerst Beleg und Gliederung, weil sie jede Deutung tragen.

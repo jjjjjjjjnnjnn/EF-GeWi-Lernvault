@@ -10,133 +10,136 @@ datum: 2026-09-26
 tags: [EF, Deutsch, Kommunikation]
 version: Lesson-v3
 ---
-
 # Lernreise: Kommunikationsmodelle Schulz von Thun (L1, Ziel Klausur)
 
 <!-- Campaign: Detektive Fal 18 -->
-## Schritt 1 — entdecken: Der versiegelte Umschlag aus der Archivnacht
+## Schritt 1 — entdecken: Der versiegelte Umschlag zur Sache
 
 ZIELE（3条，15分钟可达成，先读中文，再记德语）：
 
-1. 中文：能把第18号案件（误会语音转文字）按背景、方法、判断三步拆开。
+1. 中文：能把第18号案件按背景、方法、判断三步拆开。
    德语：Ordne Fall 18 in Kontext, Verfahren und Deutung.
-2. 中文：每个论断配引文加行号，并说清功能。
-   德语：Belege jede Aussage mit Zitat, Zeile und Funktion.
+2. 中文：每个论断配证据并说清功能。
+   德语：Belege jede Aussage mit Beleg und Funktion.
 3. 中文：按能力层级写出判断句。
    德语：Faelle ein Urteil im passenden Anforderungsbereich.
 
 HOOK：
 
-深夜，跨时空文案侦探社的蓝灯又亮了。搭档把一只密封信封推到你面前：这是第18号案件，一份误会语音转文字。表面看只是一段沟通四耳模型，但灯光下浮现出第二层痕迹——有人删改、夸大或偷换了关键信息。你们作为思想特工与文本侦探，必须在十五分钟内锁定三个目标：找证据、说功能、下判断，每一步都要有出处支撑。下一道时空门只为证据链完整的人打开，搭档已经在催你了，线索正在变冷。
+CN: 同一句话，四只耳朵听出四个意思：事实、关系、自我暴露与呼吁。食堂排队的一句“快点”就能吵起来。DE: Ein Satz, vier Ohren: **Sachinhalt**, **Beziehung**, **Selbstkundgabe** und **Appell** entscheiden ueber Streit oder Verstaendnis.
 
-德语版钩子：Agent Theo Wort legt Fall 18 (Chatverlauf mit missverstandener Sprachnachricht) auf deinen Tisch. Falllinie D: Das Archiv der Agentur meldet einen Riss in der Zeit, durch den ein Text in unsere Gegenwart gefallen ist.
+CN: 变体 B 把同一模型搬到班级群语音里。DE: Variante B verlegt das Modell in die Klassengruppe mit Sprachnachricht.
 
-Klausur-Satz: `Jede Nachricht hat vier Seiten, jedes Hoeren waehlt ein Ohr.`
+Klausur-Satz: `矛盾句——CN: 一句话四层，一只耳接，错位即吵。DE: Ein Satz, vier Seiten, ein Ohr: Differenz erzeugt Streit.`
 
-## Schritt 2 — entdecken: Die Ausruestungskiste gegen Fall 18
+## Schritt 2 — entdecken: Die Ausruestungskiste zum Fall
 
-装备盒（5件，先读中文，再背德语）：
+装备盒（5件，先读中文，再记英文/德语）：
 
-- 中文点拨：沟通四耳模型之1号工具。
-  德语：**Sachseite: pruefbarer Faktenkern jeder Nachricht**
-- 中文点拨：沟通四耳模型之2号工具。
-  德语：**Selbstkunde: Gefuehl und Motiv des Sprechers als Signal**
-- 中文点拨：沟通四耳模型之3号工具。
-  德语：**Beziehungsseite: Naehe und Rang als heikelstes Ohr**
-- 中文点拨：沟通四耳模型之4号工具。
-  德语：**Appell: Wunsch und Auftrag als Handlungsimpuls**
-- 中文点拨：沟通四耳模型之5号工具。
-  德语：**Stoerungsdiagnose: gesendete Seite gegen gehoertes Ohr**
+- 中文点拨：四耳模型
+  德语：**Vier-Ohren-Modell: CN: 每句话含四层信息。DE: Jede Nachricht enthaelt Sach-, Beziehungs-, Selbst- und Appellseite. Empfaenger hoeren selektiv. ** Mechanismus: Betonung plus Lage waehlt das dominante Ohr; Missverstaendnis folgt der Verwechslung.  Klausur-Tipp: Ordne jede Deutung einem Ohr zu.
+- 中文点拨：事实层
+  德语：**Sachinhalt: CN: 可核查的数据与事实。DE: Der Sachinhalt nennt pruefbare Daten und Fakten. Er entscheidet Richtig oder Falsch. ** Mechanismus: Zahl plus Quelle plus Klarheit sichert Verstaendnis.  Klausur-Tipp: Formuliere ihn in einem Satz.
+- 中文点拨：关系层
+  德语：**Beziehung: CN: 你我如何相待。DE: Die Beziehung zeigt, wie Sender den Empfaenger sieht. Ton und Du-Botschaft verraten sie. ** Mechanismus: Tonfall plus Ich- oder Du-Formel erzeugt Naehe oder Distanz.  Klausur-Tipp: Zitiere Ton-Signal als Beleg.
+- 中文点拨：自我暴露层
+  德语：**Selbstkundgabe: CN: 说话者泄露的自我。DE: Die Selbstkundgabe offenbart Gefuehl und Motiv des Senders. Jede Nachricht enthaelt Ich. ** Mechanismus: Ich-Anteil plus Geste verrät Lage; Verstellung braucht Aufwand.  Klausur-Tipp: Benenne Gefuehl mit Signal.
+- 中文点拨：呼吁层
+  德语：**Appell: CN: 要对方做什么。DE: Der Appell fordert offen oder versteckt zum Handeln auf. Bitten tarnen sich oft. ** Mechanismus: Imperativ oder Wunsch plus Lage erzeugt Druck; Nein braucht Mut.  Klausur-Tipp: Formuliere den Appell ausdruecklich.
 
-Klausur-Satz: `Jede Nachricht hat vier Seiten, jedes Hoeren waehlt ein Ohr.`
+Klausur-Satz: `定义句——CN: 四耳、错位与我信息是三角。DE: Vier Ohren, Differenz und Ich-Botschaft definieren das Modell.`
 
 ## Schritt 3 — entdecken: Der Mechanismus hinter dem Tatbild
 
-中文深层解构：沟通四耳模型的关键链条是证据、功能、判断三步走。先锁引文行号，再说它在整体中的作用，最后下判断。第18号案件（误会语音转文字）的第二层痕迹就藏在这里。
+中文深层解构：先读中文抓链条，再用德语写判断。
 
-德语：Befund mit Zeile, Funktion im Gefuege, Deutung als Urteil zu Kommunikationsmodelle Schulz von Thun.
+德语：CN: 机制是发送四层、接收一耳，错位即冲突。DE: Senden auf vier Seiten, Hoeren auf einem Ohr: Die **Differenz** erzeugt Konflikt.
+
+Der Weg: Zerlege jede Aeusserung in vier Seiten. Bestimme das dominante Hoer-Ohr. Schlage Ich-Botschaft als Bruecke vor.
 
 ```diagram
-Befund (Zitat mit Zeile) -> Funktion (Wirkung) -> Deutung (Urteil)
-Fall 18
+Nachricht (4 Seiten) -> Hoer-Ohr -> Differenz -> Ich-Botschaft als Bruecke
 ```
 
-Klausur-Satz: `Jede Nachricht hat vier Seiten, jedes Hoeren waehlt ein Ohr.`
+Klausur-Satz: `传导句——CN: 发送层加接收耳等于冲突度。DE: Sendeseiten plus Hoer-Ohr ergibt Konflikthoehe.`
 
 ## Anekdote
 
-中文解读：沟通四耳模型里藏着侦探的耐心：每个细节都是 portal 的钥匙。
+CN: 一位调解员让双方复述对方的关系层，吵架变道歉。DE: Ein Mediator liess beide die Beziehungsseite spiegeln; Streit wurde Entschuldigung.
 
-德语：Ein Ausbilder zeichnete das Quadrat so oft, dass die Kreide danach viereckig wirkte.
+Bezug zum Konzept: `传导句——CN: 发送层加接收耳等于冲突度。DE: Sendeseiten plus Hoer-Ohr ergibt Konflikthoehe.`
 
-Bezug zum Konzept: `Jede Nachricht hat vier Seiten, jedes Hoeren waehlt ein Ohr.`
-
-## Schritt 4 — ausprobieren: Die Sandkasten-Pruefung mit Sprechuhr
+## Schritt 4 — ausprobieren: Die Sandkasten-Pruefung mit Baukasten
 
 [Werkzeug: oral-timer]
 
-中文任务：分析第18号案文本（误会语音转文字）。
-德语 AUFGABE: Untersuche Fall 18 (Chatverlauf mit missverstandener Sprachnachricht) zu Kommunikationsmodelle Schulz von Thun.
-TARGET（目标）：三个带行号证据，各配功能与判断，共四句。
+中文任务：Zerlege zwei Alltagsaesserungen in vier Seiten und entwirf je eine Ich-Botschaft als Antwort.
+德语 AUFGABE: Zerlege zwei Alltagsaesserungen in vier Seiten und entwirf je eine Ich-Botschaft als Antwort.
+TARGET（目标）：三个证据，各配功能与判断，共四句。
 
 HILFE（中文在前）：
 1. 中文：两句交代背景。德语：Ordne den Fall in zwei Saetzen ein.
-2. 中文：锁两个证据加行号。德语：Sichere zwei Befunde mit Zeile.
+2. 中文：锁两个证据。德语：Sichere zwei Belege.
 3. 中文：功能加判断收尾。德语：Deute Funktion im Fallganzen.
 
 MUSTERLOESUNG: 中文示范思路：先背景一句，再证据加功能两句，最后判断一句收束。
-德语 MUSTERLOESUNG: Fall 18 zeigt Kommunikationsmodelle Schulz von Thun in drei Schritten mit Beleg, Funktion und Deutung; die zweite Schicht ist entlarvt.
+德语 MUSTERLOESUNG: Fall 18 zeigt das Verfahren in drei Schritten mit Beleg, Funktion und Deutung.
 
-Klausur-Satz: `Jede Nachricht hat vier Seiten, jedes Hoeren waehlt ein Ohr.`
+Klausur-Satz: `规律句——CN: 规律是关系耳越响，事实越哑。DE: Je lauter das Beziehungsohr, desto leiser der Sachinhalt.`
 
 ## Schritt 5 — ausprobieren: Das doppelte Spiel Weg A gegen Weg B
 
-VERGLEICH（中文先行）：先选路再做题：【选程序】(i) Weg A 近路（引文、细节、效果）还是 (ii) Weg B 远路（背景、结构、判断）。
-德语：Waehle erst das Verfahren (Weg A oder Weg B), dann loesen.
+VERGLEICH（中文先行）：Weg A 微观做细节，Weg B 宏观定策略。
+德语：Weg A arbeitet mikroskopisch, Weg B plant makroskopisch.
 
-AUFGABE A（中文：哪条线索走近路？配引文）：Welche Spur verlangt Weg A?
-AUFGABE B（中文：哪个整体问题走远路？配背景）：Welche Frage verlangt Weg B?
+AUFGABE A（中文：哪条线索走近路？）：Welche Spur verlangt Weg A?
+AUFGABE B（中文：哪个整体问题走远路？）：Welche Frage verlangt Weg B?
 
-HILFE：A问形式细节选近路Weg A；B问整体结构选远路Weg B。【选程序看题干：问细节选A，问整体选B。】
+HILFE：A问形式细节选近路Weg A；B问整体结构选远路Weg B。
 
-中文答案：A走近路靠引文细节，B走远路靠背景结构。
-德语 ANTWORT: A erfordert Weg A mit Nahbeleg, B erfordert Weg B mit Kontext zu Kommunikationsmodelle Schulz von Thun.
+中文答案：A走近路靠证据细节，B走远路靠背景策略。
+德语 ANTWORT A: Weg A analysiert mikroskopisch Satz, Ton und Geste: Welches Ohr dominiert diese Zeile.
+德语 ANTWORT B: Weg B loest makroskopisch den Konflikt: Gespraechsregeln, Feedback und Metakommunikation als Ausweg.
 
-Klausur-Satz: `Jede Nachricht hat vier Seiten, jedes Hoeren waehlt ein Ohr.`
+Klausur-Satz: `对决句——CN: 微观拆四层，宏观建规则。DE: Feinlese zerlegt Seiten, Kontext baut Gespraechsregeln.`
 
-## Schritt 6 — check: Selbsttest zu Kommunikationsmodelle Schulz von Thun
+## Schritt 6 — check: Selbsttest mit Antwortkarten
 
 CHECK (drei Fragen mit Antworten):
 
 中文自测（先中文自问，再用德语回答）：
-FRAGE: 三步链是什么？ | ANTWORT: Befund mit Zeile, Funktion im Gefuege, Deutung als Urteil.
-FRAGE: 近路要什么？ | ANTWORT: Nahbeleg mit Zitat und Wirkung.
-FRAGE: 远路要什么？ | ANTWORT: Kontext und Gefuege als Urteilstraeger.
+- FRAGE: CN: 四层是？DE: Welche vier Seiten? | ANTWORT: Sachinhalt, Beziehung, Selbstkundgabe, Appell.
+- FRAGE: CN: 冲突公式？DE: Woher kommt Konflikt? | ANTWORT: Aus Differenz zwischen Sendeseiten und Hoer-Ohr.
+- FRAGE: CN: 出路句式？DE: Welche Bruecke? | ANTWORT: Ich-Botschaft mit Gefuehl, Wunsch und Bitte.
 
-Klausur-Satz: `Jede Nachricht hat vier Seiten, jedes Hoeren waehlt ein Ohr.`
+Klausur-Satz: `易错句——CN: 易错是把呼吁当事实。DE: Appell als Sachinhalt missversteht beides.`
 
 ## Fehlvorstellung
 
-1. 中文误解：沟通四耳模型只看表面。
-   中文纠偏：证据加功能才是得分点。
-   Korrektur-Satz: `Sinn haengt an Seite, Ohr und Zusammenhang.`
-2. 中文误解：沟通四耳模型只看表面。
-   中文纠偏：证据加功能才是得分点。
-   Korrektur-Satz: `Es ordnet Deutungen, es ersetzt keinen Beleg.`
+1. 中文误解：CN: 话即事实。
+   中文纠偏：DE: Jede Nachricht traegt vier Seiten.
+2. 中文误解：CN: 误解即恶意。
+   中文纠偏：DE: Oft hoert nur das falsche Ohr.
 
-## Schritt 7 — szenario: Klausurtransfer: Mediator im Klassenrat zu Fall 18
+## Schritt 7 — szenario: Klausurtransfer als Mediationscoach der Klasse zu Fall 18
 
-ROLLE（中文）：你是Mediator im Klassenrat，负责审稿。
-德语 ROLLE: Du bist Mediator im Klassenrat.
+ROLLE（中文）：你是Mediationscoach der Klasse，负责审稿。
+德语 ROLLE: Du bist Mediationscoach der Klasse.
 SITUATION: Fall 18 liegt unbearbeitet vor dir.
 AUFGABE（中文）：150词左右，含背景、两个证据、功能判断。
-RUBRIC (30 XP): Einordnung (6 XP) | Belege mit Zeile (10 XP) | Funktion plus Deutung (10 XP) | Fachsprache (4 XP).
+RUBRIC (30 XP): Einordnung (6 XP) | Belege (10 XP) | Funktion plus Deutung (10 XP) | Fachsprache (4 XP).
+
+Klausur-Satz: `满分句——CN: 满分句须含四层归属、主导耳与我信息。DE: AFB-III-Satz braucht Vier-Seiten-Zuordnung, Horohr und Ich-Botschaft.`
 
 ## Schritt 8 — reflexion: Takeaway und Rueckblick aus Fall 18
 
-中文总结：第18号案件教会我们：先锁证据，再说功能，最后判断。
-德语 TAKEAWAY: Beleg sichern, Funktion benennen, Urteil begruenden. `Jede Nachricht hat vier Seiten, jedes Hoeren waehlt ein Ohr.`
+TAKEAWAY:
+
+Klausur-Satz: `CN元认知收束——第18号案件（Kommunikationsmodelle Schulz von Thun）证明：证据加功能等于判断。DE/EN: Fall 18 (Kommunikationsmodelle Schulz von Thun) proves: evidence plus function equals judgement.`
+
+中文总结：先锁证据，再说功能，最后判断。
+德语 TAKEAWAY: Beleg sichern, Funktion benennen, Urteil begruenden. `元认知句——CN: 沟通即换耳倾听。DE: Kommunizieren heisst: Ohr wechseln und Bruecke bauen.`
 
 REFLEXION（中文在前）：
 1. 中文：近路证据和远路判断哪个更难？德语：Was fiel schwerer, Nahbeleg oder Fernurteil?
-2. 中文：下次先划引文行号。德语：Naechstes Mal sichere ich zuerst Zitat und Zeile.
+2. 中文：下次先列提纲。德语：Naechstes Mal sichere ich zuerst Gliederung und Beleg.

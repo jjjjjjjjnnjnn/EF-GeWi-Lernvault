@@ -10,113 +10,140 @@ datum: 2026-09-25
 tags: [EF, Englisch, Textanalyse]
 version: Lesson-v3
 ---
-
 # Lernreise: Characterisation: Direct and Indirect Techniques (L1, Ziel Klausur)
 
 <!-- Campaign: Detektive Fal 48 -->
-## Schritt 1 — entdecken: Der versiegelte Umschlag aus der Hofkanzlei
+## Schritt 1 — entdecken: Der versiegelte Umschlag zur Sache
 
 ZIELE (3 Ziele, nach 15 Minuten erreichbar):
 
-1. Du ordnest Fall 48 (Klassenfoto mit eingekreistem Blick) in Kontext, Verfahren und Deutung ein.
-2. Du belegst jede Aussage zu Characterisation: Direct and Indirect Techniques mit Zitat und Zeile und benennst die Funktion.
+1. Du ordnest Fall 48 in Kontext, Verfahren und Deutung ein.
+2. Du belegst jede Aussage mit Zitat und Zeile und benennst die Funktion.
 3. Du faellst ein Urteil im passenden Anforderungsbereich.
 
 HOOK:
 
-Mitten in der Nacht flackert das Blaulicht der Agentur fuer Texte und Gedanken ueber den leeren Schreibtischen, und Partner Theo Wort legt einen versiegelten Umschlag auf deinen Platz. Seit Wochen jagt ihr als Gedanken-Agent an der Seite deines Text-Detektivs durch die Jahrhunderte, und jede geloeste Spur oeffnet ein neues Portal in der Zeit. Heute geht es um Characterisation: Direct and Indirect Techniques. Falllinie A: Der Hof von Guastalla fluestert von Gift, geheimen Briefen und einer Ehre, die man mit Worten vergiftet. Im Umschlag steckt Fall 48: ein Klassenfoto mit eingekreistem Blick. Kaum haeltst du das Stueck ins Licht, faellt dir eine zweite Schicht auf: Jemand hat die Botschaft frisiert, verkuerzt oder verdreht, und nur wer Beleg, Funktion und Deutung sauber trennt, kann die Manipulation entlarven. Das naechste Portal oeffnet sich nur, wenn du drei Ziele in fuenfzehn Minuten schaffst und jede Behauptung mit Zeile und Wirkung belegst. Theo Wort gru belt schon ungeduldig, denn die Spur wird kalt.
+Die Kueche einer Gastfamilie in Leeds: Die Gastmutter redet ohne Punkt und Komma. Ihr Schweigen dauert genau einen Satz. Dann verrät sie alles.
 
-Klausur-Satz: `Character lives in speech: what figures do outweighs what narrators claim.`
+Du erhaeltst das Romanprotokoll der Teestunde. **Direktes** Urteil steht neben **indirektem** Zeichen. Trenne Behauptung von Beleg.
 
-## Schritt 2 — entdecken: Die Ausruestungskiste gegen Fall 48
+Klausur-Satz: `Die Teestunde zeigt Etikett gegen Verhalten: Freundlich im Wort, streng in der Kasse.`
+
+## Schritt 2 — entdecken: Die Ausruestungskiste zum Fall
 
 AUSRUESTUNG (5 Instrumente im Koffer):
 
-- **Direct characterisation**: Direct characterisation: narrator names the trait
-- **Indirect characterisation**: Indirect characterisation: speech and action reveal the trait
-- **Foil**: Foil: contrast figure that sharpens the hero
-- **Development**: Development: change across scenes as proof of depth
-- **Sympathy steering**: Sympathy steering: perspective that guides reader loyalty
+- **Direct characterisation**: Direct characterisation names traits openly through narrator or figure. It tells the reader what to think. It is fast and risky.  Mechanism: Adjective plus authority fixes image; later scenes must confirm or break it. Unconfirmed labels become irony.  Klausur-Tipp: Quote the label and test it against behaviour.
+- **Indirect characterisation**: Indirect characterisation shows trait through speech, act and habit. It lets the reader infer. It is slow and strong.  Mechanism: Dialogue plus gesture plus setting builds pattern; repetition turns act into trait. One break can redefine all.  Klausur-Tipp: Collect three indirect signs per trait.
+- **Speech as sign**: Speech reveals class, mood and tactic through choice and rhythm. Dialect, gaps and politeness speak volumes. Every hello positions.  Mechanism: Register plus interruption maps power; silence measures control. Quotation plus effect decodes rank.  Klausur-Tipp: Link one speech habit to one trait.
+- **Foil**: A foil mirrors the hero by contrast. The neighbour sharpens the portrait. Difference teaches faster than praise.  Mechanism: Parallel scene plus opposite choice doubles meaning; the reader compares automatically. Contrast needs shared situation.  Klausur-Tipp: Name shared scene and opposite decision.
+- **Development**: Development tracks change or exposure across scenes. Some figures grow, others are unmasked. The arc is the argument.  Mechanism: Early sign plus late echo measures change; static figures confirm theme. End behaviour judges beginning label.  Klausur-Tipp: Compare first and last scene in one sentence.
 
-Klausur-Satz: `Character lives in speech: what figures do outweighs what narrators claim.`
+Klausur-Satz: `Direkt, indirekt und Foil definieren jede Figurendeutung.`
 
 ## Schritt 3 — entdecken: Der Mechanismus hinter dem Tatbild
 
 MECHANISMUS (Tiefenbau):
 
-Jeder Fall folgt der Kette Befund, Funktion und Deutung. Zuerst sicherst du den Befund mit Zitat und Zeile, dann bestimmst du die Funktion im Macht- oder Sinn-gefuege, erst danach formulierst du die Deutung zu Characterisation: Direct and Indirect Techniques. Falllinie A: Der Hof von Guastalla fluestert von Gift, geheimen Briefen und einer Ehre, die man mit Worten vergiftet. Wer die zweite Schicht des Klassenfoto mit eingekreistem Blick uebersieht, tappt in die Falle der Agentur.
+Figur entsteht aus **Behauptung plus Muster**. Ein Etikett ohne Szene bleibt Gerücht. Drei Zeichen mit Zeile werden Charakter.
+
+Der Weg: Sichere ein direktes Urteil. Sammle drei indirekte Zeichen. Pruefe Bruch oder Bestaetigung. So wird Person zur These.
 
 ```diagram
-Befund (Zitat mit Zeile) -> Funktion (Wirkung im Gefuege) -> Deutung (Urteil)
-Fall 48: Klassenfoto mit eingekreistem Blick -> Spur sichern -> Tatbild schliessen
+Label (direct) -> Signs x3 (speech/act/habit) -> Pattern -> Verdict (confirmed/broken)
 ```
 
-Klausur-Satz: `Character lives in speech: what figures do outweighs what narrators claim.`
+Klausur-Satz: `Etikett plus drei Zeichen ergibt Urteil: bestaetigt, gebrochen oder entlarvt.`
 
 ## Anekdote
 
-A class once circled one gaze in a photo and found the whole plot.
+An editor once cut three adjectives and the heroine grew livelier. Labels shrink; scenes enlarge.
 
-Bezug zum Konzept: `Character lives in speech: what figures do outweighs what narrators claim.`
+Bezug zum Konzept: `Etikett plus drei Zeichen ergibt Urteil: bestaetigt, gebrochen oder entlarvt.`
 
 ## Schritt 4 — ausprobieren: Die Sandkasten-Pruefung mit Textlupe
 
 [Werkzeug: highlighter]
 
-AUFGABE: Untersuche den Fall-Text 48 (Klassenfoto mit eingekreistem Blick) zu Characterisation: Direct and Indirect Techniques.
-TARGET: Drei Belege mit Zeile, je mit Funktion und einer Deutung in vier Saetzen.
+PRIMAERTEXT (Study text: Tea in Leeds, part one (15 lines), study version, 100-200 words):
+
+> Mrs Hale calls herself a plain, practical woman. (Z. 1)
+> She pours tea before anyone asks for it. (Z. 2)
+> Her questions arrive in threes, quick and kind. (Z. 3)
+> You look tired, love, she says to the guest. (Z. 4)
+> She remembers every birthday on the street. (Z. 5)
+> Her son calls her the parish clock. (Z. 6)
+> She laughs, yet her eyes count the biscuits. (Z. 7)
+> When the bill is mentioned, she turns brisk. (Z. 8)
+> Pay on Friday, she says, and no excuses. (Z. 9)
+> The lodger, Mr Pike, watches without a word. (Z. 10)
+> He folds his napkin into sharp corners. (Z. 11)
+> Mrs Hale softens; Pike sharpens the air. (Z. 12)
+> She offers cake; he checks his watch. (Z. 13)
+> Practical, she repeats, as if to convince herself. (Z. 14)
+> The clock ticks; the biscuits run out first. (Z. 15)
+
+AUFGABE: Untersuche den Primaertext Zeile fuer Zeile und belege jede Aussage mit Zitat und Zeile.
+TARGET: Three quotations, each with effect and judgement in four sentences.
 
 HILFE:
 1. Schritt 1: Ordne den Fall in zwei Saetzen ein.
 2. Schritt 2: Sichere zwei Befunde mit Zeile.
 3. Schritt 3: Deute Befund und Funktion im Fallganzen.
 
-MUSTERLOESUNG: Der Fall 48 zeigt Characterisation: Direct and Indirect Techniques in drei Schritten. Erstens belegt ein Zitat mit Zeile den Kern des Klassenfoto mit eingekreistem Blick, zweitens traegt die Funktion die Wirkung im Gefuege, drittens schliesst die Deutung das Tatbild. Damit ist die zweite Schicht entlarvt und das Portal oeffnet sich.
+MARKIERAUFTRAG: Markiere mit GELB alle **direkten Etiketten** (plain, practical, parish clock). Markiere mit BLAU die **indirekten Zeichen** (pours, counts, brisk, folds).
 
-Klausur-Satz: `Character lives in speech: what figures do outweighs what narrators claim.`
+MUSTERLOESUNG: Der Fall 48 zeigt das Verfahren in drei Schritten. Erstens sichert ein Zitat mit Zeile den Befund. Zweitens benennt die Funktion die Wirkung. Drittens schliesst die Deutung das Urteil.
+
+Klausur-Satz: `Die Regel der Figur: Je öfter das Etikett, desto genauer die Gegenprobe.`
 
 ## Schritt 5 — ausprobieren: Das doppelte Spiel Weg A gegen Weg B
 
-VERGLEICH: Waehle erst das Verfahren, dann loesen: (i) Weg A Nahverfahren (Beleg, Zitat, Wirkung) oder (ii) Weg B Fernverfahren (Kontext, Gefuege, Urteil).
+VERGLEICH: Weg A liest mikroskopisch (Text, Stil, Detail), Weg B deutet makroskopisch (Kontext, Geschichte, Ordnung).
 
-AUFGABE A: Welche Spur im Klassenfoto mit eingekreistem Blick verlangt Weg A? Begründe mit Zitat.
-AUFGABE B: Welche Frage zum Fallganzen verlangt Weg B? Begründe mit Kontext.
+AUFGABE A: Welche Spur verlangt Weg A? Begruende mit Zitat und Zeile.
+AUFGABE B: Welche Frage verlangt Weg B? Begruende mit Kontext.
 
 HILFE: A fragt nach Form und Naehe, also Weg A. B fragt nach Rolle und Ganzem, also Weg B.
 
-ANTWORT: A erfordert Weg A: Der Nahbeleg mit Zitat und Zeile zeigt die Wirkung im Detail. B erfordert Weg B: Der Fernblick auf Kontext und Gefuege sichert das Urteil zu Characterisation: Direct and Indirect Techniques.
+ANTWORT A: Weg A liest mikroskopisch Rede und Geste: Dreierfragen, Blick auf Kekse und Uhr als Zeichenkette.
+ANTWORT B: Weg B deutet makroskopisch: Gastfamilie, Klassenkode und Foil-Funktion (Pike) als Kontrastfolie.
 
-Klausur-Satz: `Character lives in speech: what figures do outweighs what narrators claim.`
+Klausur-Satz: `Feinlese sichert das Wie der Zeichen, Kontextwissen das Warum der Rolle; beide schliessen das Urteil.`
 
-## Schritt 6 — check: Selbsttest zu Characterisation: Direct and Indirect Techniques
+## Schritt 6 — check: Selbsttest mit Antwortkarten
 
 CHECK (drei Fragen mit Antworten):
 
-FRAGE: Nenne die Drei-Schritt-Kette. | ANTWORT: Befund mit Zeile, Funktion im Gefuege, Deutung als Urteil.
-FRAGE: Was verlangt Weg A? | ANTWORT: Nahbeleg mit Zitat und Wirkung am Detail.
-FRAGE: Was verlangt Weg B? | ANTWORT: Kontext und Gefuege als Traeger des Urteils.
+- FRAGE: Welche zwei Ebenen musst du trennen? | ANTWORT: Direktes Etikett mit Zeile gegen drei indirekte Zeichen.
+- FRAGE: Was leistet der Foil Pike? | ANTWORT: Er schaerft durch Kontrast in geteilter Szene.
+- FRAGE: Woran erkennst du Wandel oder Entlarvung? | ANTWORT: An Bruch oder Bestaetigung zwischen erster und letzter Szene.
 
-Klausur-Satz: `Character lives in speech: what figures do outweighs what narrators claim.`
+Klausur-Satz: `Haeufig verwechselt: Erzaehlurteil ist kein Beweis; erst Szene mit Zeile zaehlt.`
 
 ## Fehlvorstellung
 
-1. Fehlvorstellung: Stating traits suffices.
-   Korrektur-Satz: `Trait plus scene evidence convinces.`
-2. Fehlvorstellung: Heroes never change.
-   Korrektur-Satz: `Change marks round characters.`
+1. Fehlvorstellung: Label equals proof.
+   Korrektur-Satz: `Only repeated signs confirm a label.`
+2. Fehlvorstellung: Foil is decoration.
+   Korrektur-Satz: `A foil without shared scene proves nothing.`
 
-## Schritt 7 — szenario: Klausurtransfer: Feuilleton critic zu Fall 48
+## Schritt 7 — szenario: Klausurtransfer als Book reviewer for the school magazine zu Fall 48
 
-ROLLE: Du bist Feuilleton critic in der Pruefung.
-SITUATION: Ein Fall zu Characterisation: Direct and Indirect Techniques (Fall 48, Klassenfoto mit eingekreistem Blick) liegt unbearbeitet auf dem Tisch.
+ROLLE: Du bist Book reviewer for the school magazine in der Pruefung.
+SITUATION: Ein Fall liegt unbearbeitet auf dem Tisch und verlangt Einordnung, Belege und Urteil.
 AUFGABE: Verfasse circa 150 Woerter mit Einordnung, zwei Belegen mit Zeile, Funktion, Deutung und Schlussurteil.
 RUBRIC (30 XP): Einordnung korrekt (6 XP) | Zwei Belege mit Zeile (10 XP) | Funktion plus Deutung (10 XP) | Fachsprache und Schluss (4 XP).
+
+Klausur-Satz: `AFB-III-Mustersatz: Das Etikett practical (l. 1, l. 14) bestaetigt sich in Fuersorge (l. 2, l. 5), bricht aber in Haerte (l. 8-9); Foil Pike (l. 10-12) schaerft die Ambivalenz.`
 
 ## Schritt 8 — reflexion: Takeaway und Rueckblick aus Fall 48
 
 TAKEAWAY:
 
-Fall 48 lehrt: Beleg sichern, Funktion benennen, Urteil begruenden. Character lives in speech: what figures do outweighs what narrators claim. Takeaway-Satz: `Character lives in speech: what figures do outweighs what narrators claim.`
+Klausur-Satz: `Fall 48 (Characterisation Techniques DE) schliesst: Wer Beleg, Funktion und Urteil sichert, besteht jede Klausur.`
+
+Fall 48 lehrt den Dreischritt aus Beleg, Funktion und Urteil. Takeaway-Satz: `Figur lesen heisst: Label zitieren, Muster sammeln und Bruch oder Treue benennen.`
 
 REFLEXION:
 1. Welche Spur fiel schwerer, der Nahbeleg oder das Fernurteil?

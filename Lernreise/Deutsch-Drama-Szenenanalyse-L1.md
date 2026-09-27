@@ -10,60 +10,81 @@ datum: 2026-09-25
 tags: [EF, Deutsch, Drama]
 version: Lesson-v3
 ---
-
 # Lernreise: Szenenanalyse im Drama (L1, Ziel Klausur)
 
 <!-- Campaign: Detektive Fal 02 -->
-## Schritt 1 — entdecken: Der versiegelte Umschlag aus der Hofkanzlei
+## Schritt 1 — entdecken: Der versiegelte Umschlag zur Sache
 
 ZIELE (3 Ziele, nach 15 Minuten erreichbar):
 
-1. Du ordnest Fall 02 (zerrissene Buehnenanweisung aus Akt eins) in Kontext, Verfahren und Deutung ein.
-2. Du belegst jede Aussage zu Szenenanalyse im Drama mit Zitat und Zeile und benennst die Funktion.
+1. Du ordnest Fall 02 in Kontext, Verfahren und Deutung ein.
+2. Du belegst jede Aussage mit Zitat und Zeile und benennst die Funktion.
 3. Du faellst ein Urteil im passenden Anforderungsbereich.
 
 HOOK:
 
-Mitten in der Nacht flackert das Blaulicht der Agentur fuer Texte und Gedanken ueber den leeren Schreibtischen, und Partner Theo Wort legt einen versiegelten Umschlag auf deinen Platz. Seit Wochen jagt ihr als Gedanken-Agent an der Seite deines Text-Detektivs durch die Jahrhunderte, und jede geloeste Spur oeffnet ein neues Portal in der Zeit. Heute geht es um Szenenanalyse im Drama. Falllinie A: Der Hof von Guastalla fluestert von Gift, geheimen Briefen und einer Ehre, die man mit Worten vergiftet. Im Umschlag steckt Fall 02: ein zerrissene Buehnenanweisung aus Akt eins. Kaum haeltst du das Stueck ins Licht, faellt dir eine zweite Schicht auf: Jemand hat die Botschaft frisiert, verkuerzt oder verdreht, und nur wer Beleg, Funktion und Deutung sauber trennt, kann die Manipulation entlarven. Das naechste Portal oeffnet sich nur, wenn du drei Ziele in fuenfzehn Minuten schaffst und jede Behauptung mit Zeile und Wirkung belegst. Theo Wort gru belt schon ungeduldig, denn die Spur wird kalt.
+Das Archiv meldet ein verschollenes Verhoerprotokoll vom Stadttor. Zwei Stimmen streiten um einen einzigen Passierschein. Die Wache sagt, sie folge nur Befehlen.
 
-Klausur-Satz: `Die Szene zeigt Macht als Sprache: Andeutung oben, Vollzug in der Mitte.`
+Du hoerst das Tonband der Nacht ab. Jede **Pause** ist laenger als der Satz davor. Miss, wer das Schweigen setzt.
 
-## Schritt 2 — entdecken: Die Ausruestungskiste gegen Fall 02
+Klausur-Satz: `Am Tor prallt Ruf gegen Schrift: Die Nacht bevorzugt den lauteren, der Schein den leiseren.`
+
+## Schritt 2 — entdecken: Die Ausruestungskiste zum Fall
 
 AUSRUESTUNG (5 Instrumente im Koffer):
 
-- **Exposition**: Exposition: Eroeffnung von Figuren, Konflikt und Handlungsdruck
-- **Replik**: Replik: gesprochene Rede als Traeger von Absicht und Macht
-- **Regieanweisung**: Regieanweisung: inszenierte Koerpersprache jenseits des Wortes
-- **Stichomythie**: Stichomythie: schneller Redewechsel als Zeichen von Spannung
-- **Konstellation**: Konstellation: Beziehungsgeflecht der Figuren im Machtgefaelle
+- **Exposition**: Die Exposition stellt Ort, Zeit und Figuren der Szene vor. Sie formuliert die offene Handlungsfrage der Szene. Mechanismus: Spaete Informationen wirken als Hebel; wer sie besitzt, dreht die Szene. Die Deutung vergleicht Anfangsfrage mit Schlusssatz. Klausur-Tipp: Formuliere die Handlungsfrage in einem Satz.
+- **Replik**: Die Replik ist jede gesprochene Aeusserung einer Figur. Sie zeigt Absicht durch Modus und Wortfeld. Mechanismus: Fragesatz gegen Befehlssatz verteilt Initiative; Wiederholungen sichern Herrschaft. Kurze Repliken beschleunigen, lange begruenden. Klausur-Tipp: Bestimme den Satzmodus und die Sprechhandlung.
+- **Regieanweisung**: Die Regieanweisung steuert Blick, Gang und Abstand der Figuren. Sie gilt als stummer Kommentar zum Dialog. Mechanismus: Raumanweisungen veraendern die Deutung des Wortes; Rueckzug schwaecht Drohung, Naehe schaerft Bitte. Sie liefert den zweiten Beleg neben dem Zitat. Klausur-Tipp: Zitiere mindestens eine Anweisung woertlich.
+- **Stichomythie**: Die Stichomythie meint den raschen Wechsel kurzer Repliken. Sie signalisiert Erregung oder Pruefung. Mechanismus: Sinkende Silbenzahl pro Replik misst Eskalation; Schweigen dazwischen misst Kontrolle. Der Umschlagpunkt liegt meist in der kuorzesten Replik. Klausur-Tipp: Zaele Zeilen und deute das Tempo.
+- **Konstellation**: Die Konstellation fasst alle Beziehungen der Szene als Gefuege. Sie unterscheidet oben, Mitte und Rand. Mechanismus: Buendnisse kippen durch einen einzigen Satz; der Rand kann zur Mitte werden. Das Urteil benennt Gewinner und Preis der Verschiebung. Klausur-Tipp: Zeichne die Achse und belege den Kipppunkt.
 
-Klausur-Satz: `Die Szene zeigt Macht als Sprache: Andeutung oben, Vollzug in der Mitte.`
+Klausur-Satz: `Replik, Anweisung und Tempo bilden den Dreifachbeleg jeder Szenendeutung.`
 
 ## Schritt 3 — entdecken: Der Mechanismus hinter dem Tatbild
 
 MECHANISMUS (Tiefenbau):
 
-Jeder Fall folgt der Kette Befund, Funktion und Deutung. Zuerst sicherst du den Befund mit Zitat und Zeile, dann bestimmst du die Funktion im Macht- oder Sinn-gefuege, erst danach formulierst du die Deutung zu Szenenanalyse im Drama. Falllinie A: Der Hof von Guastalla fluestert von Gift, geheimen Briefen und einer Ehre, die man mit Worten vergiftet. Wer die zweite Schicht des zerrissene Buehnenanweisung aus Akt eins uebersieht, tappt in die Falle der Agentur.
+Jede Szene laeuft auf einen **Umschlagpunkt** zu. Vor ihm gilt die alte Ordnung der Repliken. Nach ihm gilt eine neue Verteilung von Rede und Raum.
+
+Der Weg: Sammle zwei Zitate mit Zeile. Pruefe Redeanteil, Modus und Anweisung. Benenne die Verschiebung in einem Satz. So wird Deutung nachpruefbar.
 
 ```diagram
-Befund (Zitat mit Zeile) -> Funktion (Wirkung im Gefuege) -> Deutung (Urteil)
-Fall 02: zerrissene Buehnenanweisung aus Akt eins -> Spur sichern -> Tatbild schliessen
+Anfang (Ordnung) -> Umschlag (kuerzeste Replik, Z. 9) -> Ende (neue Ordnung)
+Beleg: Zitat + Anweisung -> Funktion: Tempo, Raum, Modus -> Urteil
 ```
 
-Klausur-Satz: `Die Szene zeigt Macht als Sprache: Andeutung oben, Vollzug in der Mitte.`
+Klausur-Satz: `Schrift schlaegt Ruf, sobald die Frage den Befehl ersetzt: Moduswechsel plus Raumsignal ergibt Machtwechsel.`
 
 ## Anekdote
 
-Ein Souffleur rettete einst eine Premiere, weil er jede Replik mit Zeile notiert hatte.
+Eine Inspizientin stoppte einst die Zeit jeder Pause mit der Stoppuhr. Ihre Liste bewies spaeter den genauen Umschlagpunkt der Szene.
 
-Bezug zum Konzept: `Die Szene zeigt Macht als Sprache: Andeutung oben, Vollzug in der Mitte.`
+Bezug zum Konzept: `Schrift schlaegt Ruf, sobald die Frage den Befehl ersetzt: Moduswechsel plus Raumsignal ergibt Machtwechsel.`
 
 ## Schritt 4 — ausprobieren: Die Sandkasten-Pruefung mit Textlupe
 
 [Werkzeug: highlighter]
 
-AUFGABE: Untersuche den Fall-Text 02 (zerrissene Buehnenanweisung aus Akt eins) zu Szenenanalyse im Drama.
+PRIMAERTEXT (Studienfassung: Verhoer am Stadttor (Ausschnitt, 15 Zeilen), Studienfassung, 100-200 Woerter):
+
+> WACHE (ruft): Halt! Kein Schritt ohne Schein bei Nacht und Nebel. (Z. 1)
+> BOTIN: So lies den Schein; er traegt drei Siegel und meinen Namen. (Z. 2)
+> WACHE (zaudert): Drei Siegel? Das zweite kenne ich nicht. (Z. 3)
+> BOTIN (ruhig): Das zweite ist das neue; die Ordnung hat sich gedreht. (Z. 4)
+> WACHE: Neu? Wer dreht die Ordnung ohne Trommel und Bekanntmachung? (Z. 5)
+> BOTIN: Trommeln wecken; Briefe wirken leise und frueh. (Z. 6)
+> WACHE (tritt vor): Leise gilt hier nichts; hier gilt Ruf und Laterne. (Z. 7)
+> BOTIN (bleibt): So rufe; doch mein Schein bleibt laenger als dein Ruf. (Z. 8)
+> WACHE (leiser): Woher kommt Ihr, dass Ihr das so sicher sagt? (Z. 9)
+> BOTIN: Von dort, wo man Befehle schreibt, nicht ruft. (Z. 10)
+> WACHE (senkt die Lanze): Dann tragt Verzeihung; die Nacht macht taub und streng. (Z. 11)
+> BOTIN (reicht den Schein): Behalte die Strenge; lege nur die Lanze tiefer. (Z. 12)
+> WACHE: Der Schein gilt; doch sagt, was soll ich melden? (Z. 13)
+> BOTIN: Melde nichts; gemeldete Naechte werden endlose Akten. (Z. 14)
+> WACHE (tritt beiseite): So geht; das Tor gehorcht dem leiseren Wort. (Z. 15)
+
+AUFGABE: Untersuche den Primaertext Zeile fuer Zeile und belege jede Aussage mit Zitat und Zeile.
 TARGET: Drei Belege mit Zeile, je mit Funktion und einer Deutung in vier Saetzen.
 
 HILFE:
@@ -71,52 +92,59 @@ HILFE:
 2. Schritt 2: Sichere zwei Befunde mit Zeile.
 3. Schritt 3: Deute Befund und Funktion im Fallganzen.
 
-MUSTERLOESUNG: Der Fall 02 zeigt Szenenanalyse im Drama in drei Schritten. Erstens belegt ein Zitat mit Zeile den Kern des zerrissene Buehnenanweisung aus Akt eins, zweitens traegt die Funktion die Wirkung im Gefuege, drittens schliesst die Deutung das Tatbild. Damit ist die zweite Schicht entlarvt und das Portal oeffnet sich.
+MARKIERAUFTRAG: Markiere mit GELB alle **Ordnungsmetaphern** (Schein, Siegel, Ruf, Laterne). Markiere mit BLAU die **Machtwechsel-Signale** (leiser werden, Lanze senken, beiseitetreten).
 
-Klausur-Satz: `Die Szene zeigt Macht als Sprache: Andeutung oben, Vollzug in der Mitte.`
+MUSTERLOESUNG: Der Fall 02 zeigt das Kernverfahren in drei Schritten. Erstens sichert ein Zitat mit Zeile den Befund. Zweitens benennt die Funktion die Wirkung im Gefuege. Drittens schliesst die Deutung das Urteil. Damit ist die zweite Schicht entlarvt.
+
+Klausur-Satz: `Die Regel der Szene: Wer zuerst fragt, hat die Lanze schon gesenkt.`
 
 ## Schritt 5 — ausprobieren: Das doppelte Spiel Weg A gegen Weg B
 
-VERGLEICH: Waehle erst das Verfahren, dann loesen: (i) Weg A Nahverfahren (Beleg, Zitat, Wirkung) oder (ii) Weg B Fernverfahren (Kontext, Gefuege, Urteil).
+VERGLEICH: Weg A liest mikroskopisch (Text, Rhetorik, Detail), Weg B deutet makroskopisch (Epoche, Kontext, Ordnung).
 
-AUFGABE A: Welche Spur im zerrissene Buehnenanweisung aus Akt eins verlangt Weg A? Begründe mit Zitat.
-AUFGABE B: Welche Frage zum Fallganzen verlangt Weg B? Begründe mit Kontext.
+AUFGABE A: Welche Spur verlangt Weg A? Begruende mit Zitat und Zeile.
+AUFGABE B: Welche Frage verlangt Weg B? Begruende mit Kontext.
 
 HILFE: A fragt nach Form und Naehe, also Weg A. B fragt nach Rolle und Ganzem, also Weg B.
 
-ANTWORT: A erfordert Weg A: Der Nahbeleg mit Zitat und Zeile zeigt die Wirkung im Detail. B erfordert Weg B: Der Fernblick auf Kontext und Gefuege sichert das Urteil zu Szenenanalyse im Drama.
+ANTWORT A: Weg A vermisst mikroskopisch Satzmodus und Zeilenlaenge: Die Wache wechselt ab Z. 9 von Befehl zu Frage.
+ANTWORT B: Weg B ordnet makroskopisch ein: Torrecht, naechtliche Sperre und Schriftvorrang erklaeren den Sieg des Scheins.
 
-Klausur-Satz: `Die Szene zeigt Macht als Sprache: Andeutung oben, Vollzug in der Mitte.`
+Klausur-Satz: `Feinlese misst das Wie des Umschlags, Kontextwissen das Warum des Torrechts; beide zusammen sichern das Urteil.`
 
-## Schritt 6 — check: Selbsttest zu Szenenanalyse im Drama
+## Schritt 6 — check: Selbsttest mit Antwortkarten
 
 CHECK (drei Fragen mit Antworten):
 
-FRAGE: Nenne die Drei-Schritt-Kette. | ANTWORT: Befund mit Zeile, Funktion im Gefuege, Deutung als Urteil.
-FRAGE: Was verlangt Weg A? | ANTWORT: Nahbeleg mit Zitat und Wirkung am Detail.
-FRAGE: Was verlangt Weg B? | ANTWORT: Kontext und Gefuege als Traeger des Urteils.
+- FRAGE: Wo liegt meist der Umschlagpunkt? | ANTWORT: In der kuerzesten Replik oder der ersten Frage nach einer Befehlsserie.
+- FRAGE: Welche zwei Belege braucht jede Deutung? | ANTWORT: Ein woertliches Zitat mit Zeile plus eine Regieanweisung zu Raum oder Koerper.
+- FRAGE: Was unterscheidet Bitte von Befehl? | ANTWORT: Der Modus und die Anweisung: Bitte naehert sich, Befehl haelt Distanz.
 
-Klausur-Satz: `Die Szene zeigt Macht als Sprache: Andeutung oben, Vollzug in der Mitte.`
+Klausur-Satz: `Haeufig verwechselt: Lautstaerke ist keine Macht; erst Zeile, Modus und Raumsignal zaehlen.`
 
 ## Fehlvorstellung
 
-1. Fehlvorstellung: Nachzaehlung ersetze Analyse.
-   Korrektur-Satz: `Nachzaehlung ohne Befund und Funktion bleibt unterhalb der Analyseleistung.`
-2. Fehlvorstellung: Der Maechige handle selbst.
-   Korrektur-Satz: `Oft delegiert die Macht den Vollzug an die Intrige.`
+1. Fehlvorstellung: Laut heisse maechtig.
+   Korrektur-Satz: `Oft siegt der leiseste Satz, weil er den Modus wechselt.`
+2. Fehlvorstellung: Jede Replik zaehle gleich.
+   Korrektur-Satz: `Redeanteil, Position und Anweisung gewichten jede Replik.`
 
-## Schritt 7 — szenario: Klausurtransfer: Dramaturg am Stadttheater zu Fall 02
+## Schritt 7 — szenario: Klausurtransfer als Theaterkritiker der Stadtpost zu Fall 02
 
-ROLLE: Du bist Dramaturg am Stadttheater in der Pruefung.
-SITUATION: Ein Fall zu Szenenanalyse im Drama (Fall 02, zerrissene Buehnenanweisung aus Akt eins) liegt unbearbeitet auf dem Tisch.
+ROLLE: Du bist Theaterkritiker der Stadtpost in der Pruefung.
+SITUATION: Ein Fall liegt unbearbeitet auf dem Tisch und verlangt Einordnung, Belege und Urteil.
 AUFGABE: Verfasse circa 150 Woerter mit Einordnung, zwei Belegen mit Zeile, Funktion, Deutung und Schlussurteil.
 RUBRIC (30 XP): Einordnung korrekt (6 XP) | Zwei Belege mit Zeile (10 XP) | Funktion plus Deutung (10 XP) | Fachsprache und Schluss (4 XP).
+
+Klausur-Satz: `AFB-III-Mustersatz: Die Wache verliert ab Z. 9 die Initiative (Frage statt Befehl, Lanze sinkt), sodass der Schein als Schriftrecht den Ruf besiegt.`
 
 ## Schritt 8 — reflexion: Takeaway und Rueckblick aus Fall 02
 
 TAKEAWAY:
 
-Fall 02 lehrt: Beleg sichern, Funktion benennen, Urteil begruenden. Die Szene zeigt Macht als Sprache: Andeutung oben, Vollzug in der Mitte. Takeaway-Satz: `Die Szene zeigt Macht als Sprache: Andeutung oben, Vollzug in der Mitte.`
+Klausur-Satz: `Fall 02 (Drama Szenenanalyse) schliesst: Wer Beleg, Funktion und Urteil sichert, besteht jede Klausur.`
+
+Fall 02 lehrt den Dreischritt aus Beleg, Funktion und Urteil. Takeaway-Satz: `Szene lesen heisst: Ordnung hoeren, Bruch messen und den leisesten Satz als staerksten deuten.`
 
 REFLEXION:
 1. Welche Spur fiel schwerer, der Nahbeleg oder das Fernurteil?

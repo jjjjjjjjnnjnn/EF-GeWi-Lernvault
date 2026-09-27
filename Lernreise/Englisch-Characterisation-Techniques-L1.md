@@ -10,15 +10,14 @@ datum: 2026-09-25
 tags: [EF, Englisch, Textanalyse]
 version: Lesson-v3
 ---
-
 # Lernreise: Characterisation: Direct and Indirect Techniques (L1, Ziel Klausur)
 
 <!-- Campaign: Detektive Fal 47 -->
-## Schritt 1 — entdecken: Der versiegelte Umschlag aus der Hofkanzlei
+## Schritt 1 — entdecken: Der versiegelte Umschlag zur Sache
 
 ZIELE (3 goals in 15 minutes, read Chinese first, then English):
 
-1. 中文：能把第47号案件（人物小传卡）按背景、方法、判断拆开。
+1. 中文：能把第47号案件按背景、方法、判断拆开。
    English: Place case 47 in context, method and judgement.
 2. 中文：每个论断配引文出处并说清效果。
    English: Support each claim with quotation and effect.
@@ -27,56 +26,66 @@ ZIELE (3 goals in 15 minutes, read Chinese first, then English):
 
 HOOK:
 
-深夜，跨时空文案侦探社的蓝灯又亮了。搭档把一只密封信封推到你面前：这是第47号案件，一份人物小传卡。表面看只是一段人物塑造，但灯光下浮现出第二层痕迹——有人删改、夸大或偷换了关键信息。你们作为思想特工与文本侦探，必须在十五分钟内锁定三个目标：找证据、说功能、下判断，每一步都要有出处支撑。下一道时空门只为证据链完整的人打开，搭档已经在催你了，线索正在变冷。
+CN: 同一个车站，搬运工三句话暴露一切：称呼、道歉与玩笑。本课换第二文本练同一方法。
 
-English hook: Agent Theo Wort drops case file 47 (Steckbrief einer Romanfigur mit Leerstellen) on your desk. Falllinie A: Der Hof von Guastalla fluestert von Gift, geheimen Briefen und einer Ehre, die man mit Worten vergiftet.
+EN: A porter on platform two apologises twice and jokes once. His cap, whistle and boots tell the rest. Read **signs**, not labels.
 
-Klausur-Satz: `Character lives in speech: what figures do outweighs what narrators claim.`
+Klausur-Satz: `CN: 标签说可靠，行为分两层。EN: Label says reliable; acts split into care and cost.`
 
-## Schritt 2 — entdecken: Die Ausruestungskiste gegen Fall 47
+## Schritt 2 — entdecken: Die Ausruestungskiste zum Fall
 
 装备盒（5件，先读中文，再背英文）：
 
-- 中文点拨：人物塑造之1号工具。
-  English: **Direct characterisation: narrator names the trait**
-- 中文点拨：人物塑造之2号工具。
-  English: **Indirect characterisation: speech and action reveal the trait**
-- 中文点拨：人物塑造之3号工具。
-  English: **Foil: contrast figure that sharpens the hero**
-- 中文点拨：人物塑造之4号工具。
-  English: **Development: change across scenes as proof of depth**
-- 中文点拨：人物塑造之5号工具。
-  English: **Sympathy steering: perspective that guides reader loyalty**
+- English: **Direct characterisation | 直接塑造** CN: 叙述者直接贴标签。EN: Direct characterisation labels traits openly. It is fast and risky.  Mechanism: Label plus authority fixes image; scenes test it.  Klausur-Tipp: Quote label, test with behaviour.
+- English: **Indirect characterisation | 间接塑造** CN: 言行习惯暗示性格。EN: Indirect characterisation shows through speech and act. It is slow and strong.  Mechanism: Repetition turns act into trait.  Klausur-Tipp: Collect three signs.
+- English: **Speech as sign | 言语信号** CN: 口音、停顿与礼貌即阶层。EN: Speech reveals class and tactic. Every hello positions.  Mechanism: Register plus silence maps power.  Klausur-Tipp: Link habit to trait.
+- English: **Foil | 陪衬** CN: 对照 sharpen 主角。EN: A foil mirrors by contrast. Difference teaches.  Mechanism: Shared scene plus opposite choice doubles meaning.  Klausur-Tipp: Name shared scene.
+- English: **Development | 发展** CN: 成长或现形。EN: Development tracks change or exposure. The arc argues.  Mechanism: First plus last scene measures change.  Klausur-Tipp: Compare ends.
 
-Klausur-Satz: `Character lives in speech: what figures do outweighs what narrators claim.`
+Klausur-Satz: `CN: 直接、间接与陪衬构成三角。EN: Direct, indirect and foil triangulate character.`
 
 ## Schritt 3 — entdecken: Der Mechanismus hinter dem Tatbild
 
-中文深层解构：人物塑造的核心链是证据、效果、判断。第47号案件（人物小传卡）的伪装层就藏在链条中间。
+中文深层解构：先读中文抓链条，再用英文写判断。
 
-English: Quotation plus effect equals judgement on Characterisation: Direct and Indirect Techniques.
+English: CN: 标签加三证据等于人物判断。EN: Label plus three signs equals verdict: confirmed, broken or exposed.
 
 ```diagram
-Evidence (quotation) -> Effect (function) -> Judgement (verdict)
-Case 47
+Label -> Sign 1, 2, 3 -> Pattern -> Arc verdict
 ```
 
-Klausur-Satz: `Character lives in speech: what figures do outweighs what narrators claim.`
+Klausur-Satz: `CN: 标签加三证据等于判断。EN: Label plus three signs equals verdict.`
 
 ## Anekdote
 
-中文解读：人物塑造里藏着侦探的耐心：每个细节都是时空门的钥匙。
+CN: 狄更斯曾在车站记下搬运工的手，人物就有了。EN: Dickens once sketched a porter's hands; the character stood up.
 
-English: A class once circled one gaze in a photo and found the whole plot.
-
-Bezug zum Konzept: `Character lives in speech: what figures do outweighs what narrators claim.`
+Bezug zum Konzept: `CN: 标签加三证据等于判断。EN: Label plus three signs equals verdict.`
 
 ## Schritt 4 — ausprobieren: Die Sandkasten-Pruefung mit Textlupe
 
 [Werkzeug: highlighter]
 
-中文任务：分析第47号案文本（人物小传卡）。
-English TASK: Examine case 47 (Steckbrief einer Romanfigur mit Leerstellen) on Characterisation: Direct and Indirect Techniques.
+PRIMAERTEXT（Study text: Platform Two (15 lines)，study version，100-200词）：
+
+> The announcer calls him old Tom, the reliable. (Z. 1)
+> Tom touches his cap before every answer. (Z. 2)
+> Sorry, madam, he says, even when right. (Z. 3)
+> His whistle blows short for friends, long for strangers. (Z. 4)
+> He lifts suitcases others abandon. (Z. 5)
+> Young Max, the kiosk boy, counts coins loudly. (Z. 6)
+> Tom counts people, not coins. (Z. 7)
+> When the train screams, Tom stands still. (Z. 8)
+> Delays, he says, are timetables with weather. (Z. 9)
+> Max curses the rain; Tom offers his towel. (Z. 10)
+> Reliable, repeats the announcer, thinner each time. (Z. 11)
+> Tom misses his own break to find a lost scarf. (Z. 12)
+> Max films the crowd instead of helping. (Z. 13)
+> The scarf returns; its owner cries a little. (Z. 14)
+> Tom waves the train off like a relative. (Z. 15)
+
+中文任务：逐行分析选段，每条论断配引文行号。
+English TASK: Examine the primary text line by line with quotation and line number.
 TARGET: Three quotations, each with effect and judgement in four sentences.
 
 HILFE（中文在前）：
@@ -84,58 +93,63 @@ HILFE（中文在前）：
 2. 中文：锁两个证据。English: Secure two quotations.
 3. 中文：效果加判断。English: Add effect and judgement.
 
-MUSTERLOESUNG: 中文示范：背景一句，证据加效果两句，判断一句。
-English MODEL: Case 47 shows Characterisation: Direct and Indirect Techniques in three moves with quotation, effect and judgement; the cover is blown.
+MARKIERAUFTRAG（双色标注）：CN: 黄色[GELB]标直接标签（reliable, old Tom），蓝色[BLAU]标间接证据（touches, sorry, lifts, offers）。EN: GELB for labels, BLAU for indirect signs.
 
-Klausur-Satz: `Character lives in speech: what figures do outweighs what narrators claim.`
+MUSTERLOESUNG: 中文示范：背景一句，证据加效果两句，判断一句。
+English MODEL: Case 47 shows the method in three moves with quotation, effect and judgement; the cover is blown.
+
+Klausur-Satz: `CN: 规律是标签越响，越要看代价。EN: The louder the label, the closer the cost check.`
 
 ## Schritt 5 — ausprobieren: Das doppelte Spiel Weg A gegen Weg B
 
-VERGLEICH（中文先行）：先选路再做题：【选概念】(i) Weg A 近路（引文细节）还是 (ii) Weg B 远路（背景判断）。
+VERGLEICH（中文先行）：Weg A 微观细读（文本风格细节），Weg B 宏观语境（历史秩序背景）。
 English: Choose the path first (close Way A or distant Way B), then write.
 
 TASK A（中文：哪条线索走近路？）: Which trace needs Way A?
 TASK B（中文：哪个整体问题走远路？）: Which whole-case question needs Way B?
 
-HILFE：细节问选近路Way A，整体问选远路Way B。【选概念看题干：compare列异同，assess做权衡。】
+HILFE：细节问选近路Way A，整体问选远路Way B。
 
 中文答案：A近路靠引文，B远路靠背景。
-English ANSWER: A takes Way A with close quotation, B takes Way B with context on Characterisation: Direct and Indirect Techniques.
+English ANSWER A: CN: 微观读称呼、道歉与哨声的模式。EN: Way A tracks cap, sorry-pattern and whistle code.
+English ANSWER B: CN: 宏观读车站阶层与陪衬 Max。EN: Way B frames station hierarchy and foil Max.
 
-Klausur-Satz: `Character lives in speech: what figures do outweighs what narrators claim.`
+Klausur-Satz: `CN: 微观攒证据，宏观看阶层。EN: Signs accumulate, context ranks them.`
 
-## Schritt 6 — check: Selbsttest zu Characterisation: Direct and Indirect Techniques
+## Schritt 6 — check: Selbsttest mit Antwortkarten
 
 CHECK (drei Fragen mit Antworten):
 
 中文自测：
-FRAGE: 三步链是什么？ | ANTWORT: Quotation, effect, judgement.
-FRAGE: 近路要什么？ | ANTWORT: Close quotation with effect.
-FRAGE: 远路要什么？ | ANTWORT: Context as carrier of judgement.
+- FRAGE: CN: 人物判断公式？EN: Formula? | ANTWORT: Label plus three signs equals confirmed, broken or exposed.
+- FRAGE: CN: 哪三类间接证据？EN: Which signs? | ANTWORT: Speech, act and habit with line numbers.
+- FRAGE: CN: Max 的作用？EN: Role of Max? | ANTWORT: Foil by contrast in shared platform scenes.
 
-Klausur-Satz: `Character lives in speech: what figures do outweighs what narrators claim.`
+Klausur-Satz: `CN: 易错是把称呼当证明。EN: A nickname proves nothing alone.`
 
 ## Fehlvorstellung
 
-1. 中文误解：人物塑造只看表面。
-   中文纠偏：引文加效果才是得分点。
-   Korrektur-Satz: `Trait plus scene evidence convinces.`
-2. 中文误解：人物塑造只看表面。
-   中文纠偏：引文加效果才是得分点。
-   Korrektur-Satz: `Change marks round characters.`
+1. 中文误解：CN: 外号即证据。
+   中文纠偏：EN: Nicknames need scenes.
+2. 中文误解：CN: 陪衬是装饰。
+   中文纠偏：EN: Foils need shared scenes.
 
-## Schritt 7 — szenario: Klausurtransfer: Feuilleton critic zu Fall 47
+## Schritt 7 — szenario: Klausurtransfer als Book reviewer for the school magazine zu Fall 47
 
-ROLLE（中文）：你是Feuilleton critic，负责审稿。
-English ROLE: You are Feuilleton critic.
+ROLLE（中文）：你是Book reviewer for the school magazine，负责审稿。
+English ROLE: You are Book reviewer for the school magazine.
 SITUATION: Case 47 waits on your desk.
 TASK（中文）：150词左右，含背景、证据、权衡判断。
 RUBRIC (30 XP): Context (6 XP) | Quotations (10 XP) | Effect plus judgement (10 XP) | Register (4 XP).
 
+Klausur-Satz: `CN: 满分句须含标签、三证据与陪衬。EN: AFB-III sentence needs label, three signs and foil.`
+
 ## Schritt 8 — reflexion: Takeaway und Rueckblick aus Fall 47
 
-中文总结：第47号案件教会我们：先锁引文，再说效果，最后判断。
-English TAKEAWAY: Secure quotation, name effect, judge with reasons. `Character lives in speech: what figures do outweighs what narrators claim.`
+中文总结：先锁引文，再说效果，最后判断。
+English TAKEAWAY: Secure quotation, name effect, judge with reasons. `CN: 读人即对账标签与账单。EN: Reading character means auditing labels.`
+
+Klausur-Satz: `CN元认知收束——第47号案件（Characterisation Techniques）证明：证据加功能等于判断。DE/EN: Fall 47 (Characterisation Techniques) proves: evidence plus function equals judgement.`
 
 REFLEXION（中文在前）：
 1. 中文：近路和远路哪个更难？English: Which was harder, close quotation or distant judgement?

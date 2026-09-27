@@ -10,15 +10,14 @@ datum: 2026-09-26
 tags: [EF, Englisch, CN]
 version: Lesson-v3
 ---
-
 # Lernreise: Genetic engineering and bioethics debate (L1, Ziel Klausur)
 
 <!-- Campaign: Detektive Fal 42 -->
-## Schritt 1 — entdecken: Der versiegelte Umschlag aus der Archivnacht
+## Schritt 1 — entdecken: Der versiegelte Umschlag zur Sache
 
 ZIELE (3 goals in 15 minutes, read Chinese first, then English):
 
-1. 中文：能把第42号案件（实验室报告涂黑页）按背景、方法、判断拆开。
+1. 中文：能把第42号案件按背景、方法、判断拆开。
    English: Place case 42 in context, method and judgement.
 2. 中文：每个论断配引文出处并说清效果。
    English: Support each claim with quotation and effect.
@@ -27,56 +26,66 @@ ZIELE (3 goals in 15 minutes, read Chinese first, then English):
 
 HOOK:
 
-深夜，跨时空文案侦探社的蓝灯又亮了。搭档把一只密封信封推到你面前：这是第42号案件，一份实验室报告涂黑页。表面看只是一段基因工程伦理，但灯光下浮现出第二层痕迹——有人删改、夸大或偷换了关键信息。你们作为思想特工与文本侦探，必须在十五分钟内锁定三个目标：找证据、说功能、下判断，每一步都要有出处支撑。下一道时空门只为证据链完整的人打开，搭档已经在催你了，线索正在变冷。
+CN: 诊所走廊里，一对父母在选胚胎的眼睛颜色。医生谈概率，牧师谈界限。本课在希望与僭越之间划线。
 
-English hook: Agent Theo Wort drops case file 42 (Ethikvotum mit Minderheitenvotum) on your desk. Falllinie D: Das Archiv der Agentur meldet einen Riss in der Zeit, durch den ein Text in unsere Gegenwart gefallen ist.
+EN: A hearing room smells of disinfectant. Science promises cure; ethics asks price. Weigh **cure** against **line** with evidence.
 
-Klausur-Satz: `Healing unites, enhancing divides: the line needs reasons.`
+Klausur-Satz: `CN: 剪刀无罪，目的有界。EN: Scissors are neutral; purposes draw lines.`
 
-## Schritt 2 — entdecken: Die Ausruestungskiste gegen Fall 42
+## Schritt 2 — entdecken: Die Ausruestungskiste zum Fall
 
 装备盒（5件，先读中文，再背英文）：
 
-- 中文点拨：基因工程伦理之1号工具。
-  English: **Gene therapy: healing by editing the code of life**
-- 中文点拨：基因工程伦理之2号工具。
-  English: **Designer question: enhancement beyond healing as fault line**
-- 中文点拨：基因工程伦理之3号工具。
-  English: **Consent: voice of the unborn as ethical test**
-- 中文点拨：基因工程伦理之4号工具。
-  English: **Risk and benefit: weighing cure against unknown echo**
-- 中文点拨：基因工程伦理之5号工具。
-  English: **Regulation: law as slow answer to fast science**
+- English: **Therapy vs enhancement | 治疗与增强** CN: 治病与定制人的界限。EN: Therapy heals; enhancement designs. The line moves.  Mechanism: Same tool, different aim; purpose judges technique.  Klausur-Tipp: Name purpose before verdict.
+- English: **Consent | 知情同意** CN: 未出生者无法点头。EN: The unborn cannot consent. Parents sign for futures.  Mechanism: Proxy consent plus lifelong effect creates asymmetry.  Klausur-Tipp: Ask who signs for whom.
+- English: **Justice and access | 公正与准入** CN: 基因彩票叠加金钱彩票。EN: Money buys code; code buys chance. Gaps widen.  Mechanism: Price plus patent concentrates benefit.  Klausur-Tipp: Follow the money, then the code.
+- English: **Risk and unknown | 风险与未知** CN: 脱靶与代际传递。EN: Off-target edits echo generations. Knowledge lags power.  Mechanism: Short trial plus long germline equals uncertainty.  Klausur-Tipp: Quote risk with time horizon.
+- English: **Slippery slope | 滑坡** CN: 今天治病，明天定制。EN: Cure today, design tomorrow. Steps seduce.  Mechanism: Accepted case plus analogy widens permission.  Klausur-Tipp: Test each step separately.
 
-Klausur-Satz: `Healing unites, enhancing divides: the line needs reasons.`
+Klausur-Satz: `CN: 治疗、同意与公正是三角。EN: Cure, consent and justice triangulate bioethics.`
 
 ## Schritt 3 — entdecken: Der Mechanismus hinter dem Tatbild
 
-中文深层解构：基因工程伦理的核心链是证据、效果、判断。第42号案件（实验室报告涂黑页）的伪装层就藏在链条中间。
+中文深层解构：先读中文抓链条，再用英文写判断。
 
-English: Quotation plus effect equals judgement on Genetic engineering and bioethics debate.
+English: CN: 同一剪刀，不同目的，判决不同。EN: Same scissors, different purposes: purpose plus reversibility judges the cut.
 
 ```diagram
-Evidence (quotation) -> Effect (function) -> Judgement (verdict)
-Case 42
+Case (cure/design) -> Consent + Justice + Risk -> Weighed line
 ```
 
-Klausur-Satz: `Healing unites, enhancing divides: the line needs reasons.`
+Klausur-Satz: `CN: 目的加可逆性等于判决。EN: Purpose plus reversibility equals verdict.`
 
 ## Anekdote
 
-中文解读：基因工程伦理里藏着侦探的耐心：每个细节都是时空门的钥匙。
+CN: 一位护士把同意书读了三遍，签字才不抖。EN: A nurse read consent forms thrice; then hands steadied.
 
-English: A lab once blacked one paragraph and the debate grew sharper.
-
-Bezug zum Konzept: `Healing unites, enhancing divides: the line needs reasons.`
+Bezug zum Konzept: `CN: 目的加可逆性等于判决。EN: Purpose plus reversibility equals verdict.`
 
 ## Schritt 4 — ausprobieren: Die Sandkasten-Pruefung mit Textlupe
 
 [Werkzeug: highlighter]
 
-中文任务：分析第42号案文本（实验室报告涂黑页）。
-English TASK: Examine case 42 (Ethikvotum mit Minderheitenvotum) on Genetic engineering and bioethics debate.
+PRIMAERTEXT（Study text: Hearing on the Clinic (15 lines)，study version，100-200词）：
+
+> The doctor promised to delete the faulty gene. (Z. 1)
+> A cure, she said, not a catalogue. (Z. 2)
+> The parents asked about eye colour as well. (Z. 3)
+> Well, she hesitated, the tool is the same. (Z. 4)
+> A priest warned of playing creator. (Z. 5)
+> A patient recalled years of transfusions. (Z. 6)
+> Her brother died waiting for a donor. (Z. 7)
+> The insurer quoted a price per embryo. (Z. 8)
+> Patents, added the lawyer, protect the scissors. (Z. 9)
+> A biologist cited off-target rates of three percent. (Z. 10)
+> Three percent, echoed the mother, for generations? (Z. 11)
+> The committee drew a line at heredity. (Z. 12)
+> Somatic cure yes; germline design no. (Z. 13)
+> The father signed, his hand shaking. (Z. 14)
+> Hope, said the nurse, needs signatures too. (Z. 15)
+
+中文任务：逐行分析选段，每条论断配引文行号。
+English TASK: Examine the primary text line by line with quotation and line number.
 TARGET: Three quotations, each with effect and judgement in four sentences.
 
 HILFE（中文在前）：
@@ -84,58 +93,63 @@ HILFE（中文在前）：
 2. 中文：锁两个证据。English: Secure two quotations.
 3. 中文：效果加判断。English: Add effect and judgement.
 
-MUSTERLOESUNG: 中文示范：背景一句，证据加效果两句，判断一句。
-English MODEL: Case 42 shows Genetic engineering and bioethics debate in three moves with quotation, effect and judgement; the cover is blown.
+MARKIERAUFTRAG（双色标注）：CN: 黄色[GELB]标治愈承诺（cure, delete, donor），蓝色[BLAU]标界限与代价（price, patent, off-target, generations）。EN: GELB for cure promise, BLAU for limits and costs.
 
-Klausur-Satz: `Healing unites, enhancing divides: the line needs reasons.`
+MUSTERLOESUNG: 中文示范：背景一句，证据加效果两句，判断一句。
+English MODEL: Case 42 shows the method in three moves with quotation, effect and judgement; the cover is blown.
+
+Klausur-Satz: `CN: 规律是工具越同，越要分目的。EN: The samer the tool, the sharper the purpose split.`
 
 ## Schritt 5 — ausprobieren: Das doppelte Spiel Weg A gegen Weg B
 
-VERGLEICH（中文先行）：先选路再做题：【选概念】(i) Weg A 近路（引文细节）还是 (ii) Weg B 远路（背景判断）。
+VERGLEICH（中文先行）：Weg A 微观细读（文本风格细节），Weg B 宏观语境（历史秩序背景）。
 English: Choose the path first (close Way A or distant Way B), then write.
 
 TASK A（中文：哪条线索走近路？）: Which trace needs Way A?
 TASK B（中文：哪个整体问题走远路？）: Which whole-case question needs Way B?
 
-HILFE：细节问选近路Way A，整体问选远路Way B。【选概念看题干：compare列异同，assess做权衡。】
+HILFE：细节问选近路Way A，整体问选远路Way B。
 
 中文答案：A近路靠引文，B远路靠背景。
-English ANSWER: A takes Way A with close quotation, B takes Way B with context on Genetic engineering and bioethics debate.
+English ANSWER A: CN: 微观读同一工具的两种目的。EN: Way A dissects same-tool-different-aim diction.
+English ANSWER B: CN: 宏观读公正、同意与风险三轴。EN: Way B weighs justice, consent and risk axes.
 
-Klausur-Satz: `Healing unites, enhancing divides: the line needs reasons.`
+Klausur-Satz: `CN: 微观辨措辞，宏观称代价。EN: Diction dissects, context prices.`
 
-## Schritt 6 — check: Selbsttest zu Genetic engineering and bioethics debate
+## Schritt 6 — check: Selbsttest mit Antwortkarten
 
 CHECK (drei Fragen mit Antworten):
 
 中文自测：
-FRAGE: 三步链是什么？ | ANTWORT: Quotation, effect, judgement.
-FRAGE: 近路要什么？ | ANTWORT: Close quotation with effect.
-FRAGE: 远路要什么？ | ANTWORT: Context as carrier of judgement.
+- FRAGE: CN: 治疗与增强如何区分？EN: Therapy vs enhancement? | ANTWORT: By purpose and reversibility, not by tool.
+- FRAGE: CN: 谁无法同意？EN: Who cannot consent? | ANTWORT: The unborn; proxy signs with lifelong effect.
+- FRAGE: CN: 三 percent 意味着什么？EN: Meaning of three percent? | ANTWORT: Off-target risk across generations; time horizon matters.
 
-Klausur-Satz: `Healing unites, enhancing divides: the line needs reasons.`
+Klausur-Satz: `CN: 易错是把治愈滑向定制。EN: Cure does not license catalogue.`
 
 ## Fehlvorstellung
 
-1. 中文误解：基因工程伦理只看表面。
-   中文纠偏：引文加效果才是得分点。
-   Korrektur-Satz: `Feasibility never settles permissibility.`
-2. 中文误解：基因工程伦理只看表面。
-   中文纠偏：引文加效果才是得分点。
-   Korrektur-Satz: `Weighing with reasons decides.`
+1. 中文误解：CN: 能做即该做。
+   中文纠偏：EN: Can never implies ought.
+2. 中文误解：CN: 价格只是细节。
+   中文纠偏：EN: Price decides who is cured.
 
-## Schritt 7 — szenario: Klausurtransfer: Science page editor zu Fall 42
+## Schritt 7 — szenario: Klausurtransfer als Debate coach for the ethics panel zu Fall 42
 
-ROLLE（中文）：你是Science page editor，负责审稿。
-English ROLE: You are Science page editor.
+ROLLE（中文）：你是Debate coach for the ethics panel，负责审稿。
+English ROLE: You are Debate coach for the ethics panel.
 SITUATION: Case 42 waits on your desk.
 TASK（中文）：150词左右，含背景、证据、权衡判断。
 RUBRIC (30 XP): Context (6 XP) | Quotations (10 XP) | Effect plus judgement (10 XP) | Register (4 XP).
 
+Klausur-Satz: `CN: 满分句须含治疗引文、风险数字与界限句。EN: AFB-III sentence needs cure quotation, risk figure and line sentence.`
+
 ## Schritt 8 — reflexion: Takeaway und Rueckblick aus Fall 42
 
-中文总结：第42号案件教会我们：先锁引文，再说效果，最后判断。
-English TAKEAWAY: Secure quotation, name effect, judge with reasons. `Healing unites, enhancing divides: the line needs reasons.`
+中文总结：先锁引文，再说效果，最后判断。
+English TAKEAWAY: Secure quotation, name effect, judge with reasons. `CN: 划线即为未来签名负责。EN: Drawing lines means signing for futures.`
+
+Klausur-Satz: `CN元认知收束——第42号案件（Genetic Engineering Bioethik）证明：证据加功能等于判断。DE/EN: Fall 42 (Genetic Engineering Bioethik) proves: evidence plus function equals judgement.`
 
 REFLEXION（中文在前）：
 1. 中文：近路和远路哪个更难？English: Which was harder, close quotation or distant judgement?

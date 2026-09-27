@@ -10,15 +10,14 @@ datum: 2026-09-26
 tags: [EF, Englisch, Media]
 version: Lesson-v3
 ---
-
 # Lernreise: Media Manipulation and Fake News (L1, Ziel Klausur)
 
 <!-- Campaign: Detektive Fal 37 -->
-## Schritt 1 — entdecken: Der versiegelte Umschlag aus der Registratur
+## Schritt 1 — entdecken: Der versiegelte Umschlag zur Sache
 
 ZIELE (3 goals in 15 minutes, read Chinese first, then English):
 
-1. 中文：能把第37号案件（链式消息截图）按背景、方法、判断拆开。
+1. 中文：能把第37号案件按背景、方法、判断拆开。
    English: Place case 37 in context, method and judgement.
 2. 中文：每个论断配引文出处并说清效果。
    English: Support each claim with quotation and effect.
@@ -27,56 +26,66 @@ ZIELE (3 goals in 15 minutes, read Chinese first, then English):
 
 HOOK:
 
-深夜，跨时空文案侦探社的蓝灯又亮了。搭档把一只密封信封推到你面前：这是第37号案件，一份链式消息截图。表面看只是一段媒体操纵，但灯光下浮现出第二层痕迹——有人删改、夸大或偷换了关键信息。你们作为思想特工与文本侦探，必须在十五分钟内锁定三个目标：找证据、说功能、下判断，每一步都要有出处支撑。下一道时空门只为证据链完整的人打开，搭档已经在催你了，线索正在变冷。
+CN: 大选周，第二段录音更毒：候选人亲口认错，声纹却对不上。本课学听伪造。
 
-English hook: Agent Theo Wort drops case file 37 (Screenshot einer Kettennachricht mit Warnstempel) on your desk. Falllinie C: Hinter einer Stahltuer rauscht ein Ministerium, das Woerter loescht und Gedanken neu schreibt.
+EN: An election audio confesses everything. The waveform disagrees. Learn to **hear** the seam.
 
-Klausur-Satz: `Feeds farm attention: whoever checks the chain keeps judgement.`
+Klausur-Satz: `CN: 午夜爆料先听混响。EN: Hear room tone before outrage.`
 
-## Schritt 2 — entdecken: Die Ausruestungskiste gegen Fall 37
+## Schritt 2 — entdecken: Die Ausruestungskiste zum Fall
 
 装备盒（5件，先读中文，再背英文）：
 
-- 中文点拨：媒体操纵之1号工具。
-  English: **Algorithmic feed: selection that feels like choice**
-- 中文点拨：媒体操纵之2号工具。
-  English: **Emotional trigger: anger as fastest share button**
-- 中文点拨：媒体操纵之3号工具。
-  English: **Fake authority: borrowed coats for empty claims**
-- 中文点拨：媒体操纵之4号工具。
-  English: **Echo chamber: agreement that mutes doubt**
-- 中文点拨：媒体操纵之5号工具。
-  English: **Verification chain: source, date and second witness**
+- English: **Source check | 信源** CN: 账号、日期与动机。EN: Account, date, motive.  Mechanism: Metadata filters virality.  Klausur-Tipp: Name three.
+- English: **Emotional trap | 情绪** CN: 愤怒加速。EN: Anger accelerates.  Mechanism: Caps plus leak framing.  Klausur-Tipp: Mark framing.
+- English: **Echo chamber | 回音** CN: 同类喂养。EN: Tribe feeds tribe.  Mechanism: Ranking trains belief.  Klausur-Tipp: Seek rival outlet.
+- English: **Deepfake signal | 伪造信号** CN: 波形与 blink。EN: Waveform and blink betray.  Mechanism: Artefact plus mismatch.  Klausur-Tipp: List two.
+- English: **Correction habit | 纠正** CN: 带链纠正。EN: Correct with links.  Mechanism: Flag plus source restores trust.  Klausur-Tipp: Model sentence.
 
-Klausur-Satz: `Feeds farm attention: whoever checks the chain keeps judgement.`
+Klausur-Satz: `CN: 波形、时间表与 rival 构成三角。EN: Waveform, timetable and rival triangulate.`
 
 ## Schritt 3 — entdecken: Der Mechanismus hinter dem Tatbild
 
-中文深层解构：媒体操纵的核心链是证据、效果、判断。第37号案件（链式消息截图）的伪装层就藏在链条中间。
+中文深层解构：先读中文抓链条，再用英文写判断。
 
-English: Quotation plus effect equals judgement on Media Manipulation and Fake News.
+English: CN: 泄密框架加深夜发布时间等于可疑。EN: Leak framing plus midnight timing equals suspicion.
 
 ```diagram
-Evidence (quotation) -> Effect (function) -> Judgement (verdict)
-Case 37
+Audio -> Waveform? Source? Rival outlet? -> Publish or Hold
 ```
 
-Klausur-Satz: `Feeds farm attention: whoever checks the chain keeps judgement.`
+Klausur-Satz: `CN: 框架加时间等于可疑度。EN: Framing plus timing equals suspicion.`
 
 ## Anekdote
 
-中文解读：媒体操纵里藏着侦探的耐心：每个细节都是时空门的钥匙。
+CN: 两家 rival 报纸同时压稿，等来了反转。EN: Two rivals held the story; the report proved them right.
 
-English: A class once traced a rumour to a single cropped photo.
-
-Bezug zum Konzept: `Feeds farm attention: whoever checks the chain keeps judgement.`
+Bezug zum Konzept: `CN: 框架加时间等于可疑度。EN: Framing plus timing equals suspicion.`
 
 ## Schritt 4 — ausprobieren: Die Sandkasten-Pruefung mit Textlupe
 
 [Werkzeug: highlighter]
 
-中文任务：分析第37号案文本（链式消息截图）。
-English TASK: Examine case 37 (Screenshot einer Kettennachricht mit Warnstempel) on Media Manipulation and Fake News.
+PRIMAERTEXT（Study text: Midnight Confession Audio (15 lines)，study version，100-200词）：
+
+> The audio confessed ballot deals at midnight. (Z. 1)
+> LEAKED, shouted the headline in red. (Z. 2)
+> The voice trembled exactly on cue. (Z. 3)
+> Waveform analysts found three clean cuts. (Z. 4)
+> Room tone vanished between sentences. (Z. 5)
+> The candidate was filmed on stage that hour. (Z. 6)
+> Her team posted the timetable with stamps. (Z. 7)
+> The uploader hid behind numbers, not names. (Z. 8)
+> Its history praised whoever paid most. (Z. 9)
+> Two rival papers held the story back. (Z. 10)
+> They waited for the forensic report. (Z. 11)
+> The report called the clip assembled. (Z. 12)
+> Outrage still outran the report fifty to one. (Z. 13)
+> A student radio read the report aloud. (Z. 14)
+> Listening, for once, beat sharing. (Z. 15)
+
+中文任务：逐行分析选段，每条论断配引文行号。
+English TASK: Examine the primary text line by line with quotation and line number.
 TARGET: Three quotations, each with effect and judgement in four sentences.
 
 HILFE（中文在前）：
@@ -84,58 +93,63 @@ HILFE（中文在前）：
 2. 中文：锁两个证据。English: Secure two quotations.
 3. 中文：效果加判断。English: Add effect and judgement.
 
-MUSTERLOESUNG: 中文示范：背景一句，证据加效果两句，判断一句。
-English MODEL: Case 37 shows Media Manipulation and Fake News in three moves with quotation, effect and judgement; the cover is blown.
+MARKIERAUFTRAG（双色标注）：CN: 黄色[GELB]标泄密框架（LEAKED, midnight, trembled），蓝色[BLAU]标取证点（cuts, tone, timetable, report）。EN: GELB for leak framing, BLAU for forensic points.
 
-Klausur-Satz: `Feeds farm attention: whoever checks the chain keeps judgement.`
+MUSTERLOESUNG: 中文示范：背景一句，证据加效果两句，判断一句。
+English MODEL: Case 37 shows the method in three moves with quotation, effect and judgement; the cover is blown.
+
+Klausur-Satz: `CN: 规律是越红越要等报告。EN: The redder the headline, the longer the wait.`
 
 ## Schritt 5 — ausprobieren: Das doppelte Spiel Weg A gegen Weg B
 
-VERGLEICH（中文先行）：先选路再做题：【选概念】(i) Weg A 近路（引文细节）还是 (ii) Weg B 远路（背景判断）。
+VERGLEICH（中文先行）：Weg A 微观细读（文本风格细节），Weg B 宏观语境（历史秩序背景）。
 English: Choose the path first (close Way A or distant Way B), then write.
 
 TASK A（中文：哪条线索走近路？）: Which trace needs Way A?
 TASK B（中文：哪个整体问题走远路？）: Which whole-case question needs Way B?
 
-HILFE：细节问选近路Way A，整体问选远路Way B。【选概念看题干：compare列异同，assess做权衡。】
+HILFE：细节问选近路Way A，整体问选远路Way B。
 
 中文答案：A近路靠引文，B远路靠背景。
-English ANSWER: A takes Way A with close quotation, B takes Way B with context on Media Manipulation and Fake News.
+English ANSWER A: CN: 微观听波形与混响断裂。EN: Way A hears cuts and missing room tone.
+English ANSWER B: CN: 宏观看选举时间与 rival 媒体把关。EN: Way B frames election timing and gatekeeping.
 
-Klausur-Satz: `Feeds farm attention: whoever checks the chain keeps judgement.`
+Klausur-Satz: `CN: 微观听接缝，宏观看动机。EN: Seams show how, motives show why.`
 
-## Schritt 6 — check: Selbsttest zu Media Manipulation and Fake News
+## Schritt 6 — check: Selbsttest mit Antwortkarten
 
 CHECK (drei Fragen mit Antworten):
 
 中文自测：
-FRAGE: 三步链是什么？ | ANTWORT: Quotation, effect, judgement.
-FRAGE: 近路要什么？ | ANTWORT: Close quotation with effect.
-FRAGE: 远路要什么？ | ANTWORT: Context as carrier of judgement.
+- FRAGE: CN: 伪造信号？EN: Fake signals? | ANTWORT: Clean cuts plus vanishing room tone.
+- FRAGE: CN: 不在场证明？EN: Alibi? | ANTWORT: Stamped stage timetable for that hour.
+- FRAGE: CN: 谁纠正有效？EN: Who corrected? | ANTWORT: Student radio reading the forensic report.
 
-Klausur-Satz: `Feeds farm attention: whoever checks the chain keeps judgement.`
+Klausur-Satz: `CN: 易错是把颤抖当真诚。EN: Tremble can be edited.`
 
 ## Fehlvorstellung
 
-1. 中文误解：媒体操纵只看表面。
-   中文纠偏：引文加效果才是得分点。
-   Korrektur-Satz: `Spread measures feeling, not fact.`
-2. 中文误解：媒体操纵只看表面。
-   中文纠偏：引文加效果才是得分点。
-   Korrektur-Satz: `Two independent witnesses make a claim stand.`
+1. 中文误解：CN: 亲耳即亲见。
+   中文纠偏：EN: Ears can be edited too.
+2. 中文误解：CN: 压稿即包庇。
+   中文纠偏：EN: Holding can be ethics.
 
-## Schritt 7 — szenario: Klausurtransfer: Fact-check editor zu Fall 37
+## Schritt 7 — szenario: Klausurtransfer als Fact-check editor of the school paper zu Fall 37
 
-ROLLE（中文）：你是Fact-check editor，负责审稿。
-English ROLE: You are Fact-check editor.
+ROLLE（中文）：你是Fact-check editor of the school paper，负责审稿。
+English ROLE: You are Fact-check editor of the school paper.
 SITUATION: Case 37 waits on your desk.
 TASK（中文）：150词左右，含背景、证据、权衡判断。
 RUBRIC (30 XP): Context (6 XP) | Quotations (10 XP) | Effect plus judgement (10 XP) | Register (4 XP).
 
+Klausur-Satz: `CN: 满分句须含三处剪辑、舞台时间表与取证结论。EN: AFB-III sentence needs cuts, alibi timetable and forensic verdict.`
+
 ## Schritt 8 — reflexion: Takeaway und Rueckblick aus Fall 37
 
-中文总结：第37号案件教会我们：先锁引文，再说效果，最后判断。
-English TAKEAWAY: Secure quotation, name effect, judge with reasons. `Feeds farm attention: whoever checks the chain keeps judgement.`
+中文总结：先锁引文，再说效果，最后判断。
+English TAKEAWAY: Secure quotation, name effect, judge with reasons. `CN: 等待即新闻伦理。EN: Waiting is journalism.`
+
+Klausur-Satz: `CN元认知收束——第37号案件（Media Manipulation Fake News）证明：证据加功能等于判断。DE/EN: Fall 37 (Media Manipulation Fake News) proves: evidence plus function equals judgement.`
 
 REFLEXION（中文在前）：
 1. 中文：近路和远路哪个更难？English: Which was harder, close quotation or distant judgement?
