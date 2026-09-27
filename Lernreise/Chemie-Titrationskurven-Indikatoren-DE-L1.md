@@ -15,7 +15,7 @@ version: Lesson-v3
 
 <!-- Lesson v3: Schritt 1-8 feste Struktur; Fehlvorstellung zwischen Schritt 6 und 7 (Parser skip); [Werkzeug: <id>] interaktiv; Gating: check/szenario nicht bestanden = Weiter grau; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
-## Schritt 1 — entdecken
+## Schritt 1 — entdecken: Ziele & Phänomen-Einstieg
 ZIELE (drei messbare Ziele dieser Lektion):
 
 1. Du kannst die Titrationskurve $pH = f(V)$ einer starken Saeure mit starker Base in drei Abschnitten (Start, Sprung, Ueberschuss) beschreiben.
@@ -24,7 +24,7 @@ ZIELE (drei messbare Ziele dieser Lektion):
 
 ### Hook / Phaenomen
 
-Im Jahr 1867 vergiftete eine falsch etikettierte Lauge in einer Fabrik beinahe eine ganze Schicht, weil niemand die Konzentration pruefte. Titration rettet hier Leben: Tropfen fuer Tropfen verraet der $pH$-Sprung den wahren Gehalt der Flasche. Doch warum aendert ein einziger Tropfen den $pH$ um mehrere Einheiten — und woher weiss der Farbstoff, wann er umschlagen muss?
+Im Jahr 1867 vergiftete eine falsch etikettierte Lauge in einer Fabrik beinahe eine ganze Schicht, weil niemand die Konzentration pruefte. Titration rettet hier Leben: Tropfen fuer Tropfen verraet der $pH$-Sprung den wahren Gehalt der Flasche. Doch warum aendert ein einziger Tropfen den $pH$ um mehrere Einheiten — und woher weiss der Farbstoff, wann er umschlagen muss? Die Titrationskurve zeigt den Sprung am Aequivalenzpunkt: Tropfen fuer Tropfen faellt Natronlauge in die Saeure, der pH nach $pH = -\lg[H_3O^+]$ steigt erst flach, dann steil um mehrere Einheiten pro Tropfen, weil n H3O plus gleich n OH minus gilt. Der Indikator mit passendem Umschlagsbereich markiert den Punkt per Farbumschlag. Stark gegen stark trifft pH 7, schwach gegen stark liegt basisch. Wer Staerke prueft, Formel waehlt und x durch c0 kontrolliert, rechnet fehlerfrei.
 
 ### Fachbegriff & Definition
 
@@ -36,7 +36,7 @@ Die Kausalkette lautet: **Zutropfen, Umschlagen, Ablesen**. Erstens Massloesung 
 
 Klausur-Satz: `Der pH-Sprung markiert den Aequivalenzpunkt, der Indikator macht ihn sichtbar.`
 
-## Schritt 2 — entdecken
+## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
 ### Hook / Phaenomen
@@ -57,56 +57,52 @@ Die Begriffe greifen ineinander: Die **Titration** erzeugt die Kurve $pH = f(V)$
 
 Klausur-Satz: `Der Indikator muss im Steilbereich der Kurve umschlagen.`
 
-## Schritt 3 — entdecken
+## Schritt 3 — entdecken: Kernkonzept & Wirkungsmodell
 TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
 ### Hook / Phaenomen
 
-$20{,}0\,\mathrm{mL}$ Salzsaeure ($0{,}1\,\mathrm{mol/L}$) gegen Natronlauge ($0{,}1\,\mathrm{mol/L}$): Bei $20{,}0\,\mathrm{mL}$ schlaegt die Farbe um — gleiche Konzentration, gleiches Volumen. Zufall oder Gesetz? Und warum duerfte man hier Bromthymolblau nehmen, bei Essigsaeure aber nicht Methylorange?
+Warum aendert ein einziger Tropfen am Aequivalenzpunkt den $pH$ um mehrere Einheiten, waehrend zu Beginn zehn Milliliter kaum etwas bewegen? Die Kurve enthaelt einen steilen Sprung wie eine Klippe. Welcher Indikator schlaegt genau auf der Klippe um, und warum liegt der Sprung bei stark gegen stark bei $pH = 7$?
 
-### Fachbegriff & Definition
+### Spiel-Aufgabe
 
-Die **stark-stark-Kurve** startet tief (Saeurevorlage), steigt flach, springt am Aequivalenzpunkt von etwa $pH = 4$ auf $pH = 10$ und flacht wieder ab. Der Sprung kommt daher, dass nahe $n(H^+) = n(OH^-)$ ein Tropfen das Verhaeltnis $[H^+]/[OH^-]$ um Groessenordnungen dreht. Bei **schwach gegen stark** liegt der Aequivalenzpunkt mit $pH > 7$, weil $CH_3COO^- + H_2O \rightleftharpoons CH_3COOH + OH^-$ basisch hydrolysiert — der Indikator muss dann oberhalb $7$ umschlagen.
+Spiel-Aufgabe im Kopf-Labor: Zaehle Tropfen und verfolge den $pH$-Pfeil auf der Kurve. Stoppe bei $n(H_3O^+) = n(OH^-)$ und beobachte den Farbumschlag des Indikators. Vergleiche stark gegen stark (Sprung $4$ bis $10$) mit schwach gegen stark (Sprung basisch) und erklaere in einem Satz mit weil, warum die Wahl des Indikators vom Sprungbereich abhaengt.
 
-### Wirkungsgefuege / Modell
+### Aha-Moment & Gesetz
 
-Denke in Kausalkette: **Typ bestimmen, Punkt berechnen, Indikator waehlen**. Erstens Salztyp klaeren — stark/stark ($pH = 7$) oder schwach/stark ($pH \ne 7$). Zweitens $V_b = c_aV_a/c_b$ aus $n(H^+) = n(OH^-)$ berechnen — hier $V_b = 20{,}0\,\mathrm{mL}$. Drittens $pK_{In}$ in den Sprung legen: Bromthymolblau ($pK_{In} \approx 7{,}1$) passt in $4$ bis $10$, Methylorange ($pK_{In} \approx 3{,}7$) laege am Rand und waere unsicher.
+Aha-Moment und Gesetz: Die Kausalkette lautet Stoffmenge, Sprung, Umschlag. Am Aequivalenzpunkt gilt $n(H_3O^+) = n(OH^-)$ bzw. $c_1 \cdot V_1 = c_2 \cdot V_2$. Es gilt $pH = -\lg[H_3O^+]$ und $pH + pOH = 14$; Pufferzonen d Choices flach, der Sprung steil. Stark gegen stark trifft $pH = 7$, schwach gegen stark liegt basisch wegen der korrespondierenden Base. Der Indikator muss im Sprung umschlagen, sonst verfehlt man den Punkt.
 
 ```diagram
-    pH
-    12|                 ....------
-    10|               ..  Sprung ca. 4 -> 10 (stark/stark)
-     8|              .
-     6|              .
-     4|  Start .....
-     2|..
-      +-------------------------------- V(Base)
-       Start  Puffer  Aequivalenz  Ueberschuss
-       stark/stark: Aequivalenz bei pH = 7, Vb = 20,0 mL
-       schwach/stark: Aequivalenz bei pH > 7 (Hydrolyse)
-       Indikator: pK_In im Sprung (BTB 7,1 ok; MO 3,7 unsicher)
+    pH ^
+      12|              ............
+       9|            .. Sprung (steile Klippe)
+       7|----------.. Aequivalenz (stark/stark, 25 mL)
+       3|..........
+       +--------------------------------> V(NaOH) in mL
+    Indikator: Phenolphthalein 8,2-10 (Pfeil im Sprung = gut)
+    schwach/stark: Sprung 7-11, Aequivalenz basisch (Base-Puffer).
 ```
 
 Klausur-Satz: `Steil heisst empfindlich: Ein Tropfen aendert den pH um mehrere Einheiten.`
 
-## Schritt 4 — ausprobieren
+## Schritt 4 — ausprobieren: Interaktive Praxis & Titrations-Labor
 
-BEISPIEL (Musteraufgabe mit Werkzeug):
+BEISPIEL (geleitete Aufgabe mit Werkzeug):
 
-[Werkzeug: formula]
+[Werkzeug: titration-lab]
 
-AUFGABE (erklaeren, AFB II): $20{,}0\,\mathrm{mL}$ Salzsäure mit $c = 0{,}1\,\frac{\mathrm{mol}}{\mathrm{L}}$ werden mit Natronlauge $c = 0{,}1\,\frac{\mathrm{mol}}{\mathrm{L}}$ titriert. Berechnen Sie das Volumen am Aequivalenzpunkt und nennen Sie einen passenden Indikator.
+AUFGABE (Spiel-Auftrag, AFB II, 3 Stufen): Stufe 1 Titrieren: $100\,\mathrm{mL}$ $HCl$ ($0{,}005\,\mathrm{mol/L}$) werden mit $NaOH$ ($0{,}02\,\mathrm{mol/L}$) neutralisiert. Berechne $V_{NaOH}$. Stufe 2 Umschlagen: Waehle den Indikator im Sprung $4$ bis $10$. Stufe 3 Sichern: Begruende $pH = 7$ mit $n(H_3O^+) = n(OH^-)$.
 
 HILFE:
-1. Schritt 1: Nutze $n(H^+) = n(OH^-)$, also $c_aV_a = c_bV_b$.
-2. Schritt 2: Loese nach $V_b = \frac{c_aV_a}{c_b}$ auf.
-3. Schritt 3: Waehle einen Indikator mit $pK_{In}$ nahe 7, etwa Bromthymolblau oder Phenolphthalein im Sprungbereich.
+1. Schritt 1: $c_1 \cdot V_1 = c_2 \cdot V_2$ nutzen.
+2. Schritt 2: Sprungbereich gegen Umschlagbereich legen.
+3. Schritt 3: Stark gegen stark bedeutet keine Pufferbase.
 
-MUSTERLOESUNG: Es gilt $V_b = \frac{0{,}1 \cdot 20{,}0}{0{,}1} = 20{,}0\,\mathrm{mL}$. Der Aequivalenzpunkt liegt bei $pH = 7$, der Sprung reicht etwa von $pH = 4$ bis $pH = 10$. Bromthymolblau mit $pK_{In} \approx 7{,}1$ schlaegt im Sprung um und ist geeignet; Methylorange mit $pK_{In} \approx 3{,}7$ laege am Rand und waere unsicherer.
+MUSTERLOESUNG: Aus $c_1 \cdot V_1 = c_2 \cdot V_2$ folgt $V_{NaOH} = \frac{0{,}005 \cdot 100}{0{,}02} = 25\,\mathrm{mL}$, weil am Aequivalenzpunkt $n(H_3O^+) = n(OH^-)$ gilt. Der $pH$-Sprung von ca. $4$ auf $10$ erlaubt Bromthymolblau oder Phenolphthalein, weil deren Umschlag im Sprung liegt. Bei stark gegen stark gilt $pH = 7$, weil weder ueberschuessige Saeure noch korrespondierende Base den Wert verschieben.
 
 Klausur-Satz: `Gleiche Konzentration heisst gleiches Volumen bis zum Aequivalenzpunkt.`
 
-## Schritt 5 — ausprobieren
+## Schritt 5 — ausprobieren: Verfahrensvergleich & Abgrenzung
 
 VERGLEICH (Verfahren A gegen Verfahren B):
 
@@ -121,7 +117,7 @@ ANTWORT: A erfordert Verfahren (i): Phenolphthalein schlaegt im oberen Sprungtei
 
 Klausur-Satz: `Salztyp bestimmt die Lage des Aequivalenzpunkts und damit die Indikatorwahl.`
 
-## Schritt 6 — check
+## Schritt 6 — check: Verständnisprüfung
 
 CHECK (Selbsttest, 3 Fragen):
 
@@ -142,14 +138,14 @@ Klausur-Satz: `Ohne Sprungtreffer kein verlaesslicher Farbumschlag.`
    Korrektur: Nur ein Umschlag im Steilbereich ist scharf; daneben schleppt die Farbe und der Fehler waechst auf Milliliter.
    Korrektur-Satz: `Der Indikator muss zum Sprungbereich gehoeren, nicht zur Lieblingsfarbe.`
 
-## Schritt 7 — szenario
+## Schritt 7 — szenario: Klausurtransfer & Rubric
 
 ROLLE: Du bist Laborant in der Qualitaetskontrolle.
 SITUATION: Eine Essigprobe soll auf $c(CH_3COOH)$ geprueft werden; ein Kollege will Methylorange verwenden.
 AUFGABE (beurteilen, AFB III): Beurteilen Sie die Wahl in einer zusammenhaengenden Darstellung (ca. 150 Woerter), berechnen Sie die Auswertung mit $c_aV_a = c_bV_b$ im Prinzip und schlagen Sie einen korrekten Indikator mit Begruendung vor.
 RUBRIC (30 XP): Einordnung schwach/stark mit $pH > 7$ (10 XP) | Ablehnung von Methylorange mit $pK_{In}$-Argument (10 XP) | Alternative Phenolphthalein plus Auswerteformel (5 XP) | Geschlossene Darstellung (5 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY: Merke Sprung, Salz, Umschlag: $n(H^+) = n(OH^-)$ markiert den Punkt, Hydrolyse legt den $pH$ fest, $pK_{In}$ im Sprung sichert die Farbe. Faustregel stark/stark grosszuegig, schwach/stark waehlerisch.
 

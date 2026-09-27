@@ -15,7 +15,7 @@ version: Lesson-v3
 
 <!-- Lesson v3 9步制架构：Schritt 1至8固定结构；Fehlvorstellung 夹在 Schritt 6 与 7 之间（Parser 自动跳过，不占步数）；支持内嵌 [Werkzeug: <id>] 交互教具；Gating: check/szenario 未过 = Weiter 置灰；XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
-## Schritt 1 — entdecken
+## Schritt 1 — entdecken: Ziele & Phänomen-Einstieg
 
 ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
@@ -25,9 +25,20 @@ ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
 Voraussetzung（窄切口）：只做一元酸、$25^\circ\mathrm{C}$、$c_0$ 已知；不处理缓冲与多元酸，已会 $\lg$ 运算。
 
+
+Hook中文生活切入:
+
+想象两个水龙头放水:一个全开的水龙头水量和阀门开度成正比,拧大就大;另一个是漏水的水龙头,水压越大漏得越快,但漏量和水压不成正比,越漏越慢。强酸像全开的水龙头完全电离,弱酸像漏水龙头部分电离,其电离度随浓度变稀反而增大,酸性要用平衡常数来算。
+
+Phaenomen-Satz (DE): Ein Hahn fliesst voll, der andere tropft nur, doch beide fuellen das Becken.
+
+中文机制铺垫:强酸氢离子浓度约等于酸浓度,直接取负对数;弱酸建立电离平衡,酸越弱或越稀电离度越大,用近似式估算氢离子浓度再求pH,稀释十倍弱酸pH上升不足一个单位,这是与强酸的本质区别。
+
+Mechanismus-Satz (DE): Starke Saeuren dissoziieren vollstaendig, schwache nur teilweise nach dem Massenwirkungsgesetz.
+
 Klausur-Satz: `Starke Saeuren dissoziieren vollstaendig, schwache nur teilweise; danach richtet sich der pH-Ansatz.`
 
-## Schritt 2 — entdecken
+## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
 
 PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
 
@@ -41,20 +52,41 @@ PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→�
 
 Klausur-Satz: `Der pH folgt aus der Oxoniumkonzentration; starke Saeuren liefern sie direkt, schwache ueber K_s.`
 
-## Schritt 3 — entdecken
+## Schritt 3 — entdecken: Kernkonzept & Wirkungsmodell
 
-ENTDECKEN（1概念 + 1文字图解）：
+ENTDECKEN（1概念 + 1文字图解，中文在上、德语在下）：
 
-中文：强酸 pH 一步到位：$0{,}01\,\mathrm{mol/L}$ 的 $HCl$ 就是 $[H_3O^+] = 0{,}01$，$pH = 2$。弱酸多一步平衡：设电离出 $x$，则 $K_s \approx x^2/c_0$，得 $x = \sqrt{K_s c_0}$。例如 $c_0 = 0{,}1$、$K_s = 1{,}8 \times 10^{-5}$ 的醋酸，$x = \sqrt{1{,}8 \times 10^{-6}} \approx 1{,}34 \times 10^{-3}$，$pH \approx 2{,}87$。判断钥匙：题给 $K_s$ 或 $pK_s$ 就是弱酸信号；写 stark / vollstaendig 就是强酸信号。
+Hook中文生活切入：
+
+中文：想象冲柠檬水：浓缩原液倒多少是多少，可淡柠檬水越兑水离解越磨蹭。强酸弱酸算pH也是两套算法。
+
+Phaenomen-Satz (DE): Stark heisst alles sofort, schwach heisst wenig und Zug um Zug.
+
+Spiel-Aufgabe沙盒操作指引：
+
+中文：打开沙盒，拖动滑块改浓度 c_0 与 K_s（关键词：Dissoziation, Ks-Naeherung, Oxonium），对比强酸直接取浓度、弱酸走根号公式两条路线的结果。
+
+Beobachtungs-Satz (DE): Starke Saeuren liefern $[H_3O^+]$ direkt, schwache nur ueber $K_s$.
+
+Aha-Moment因果链：
+
+中文因果链：强酸百分百离解，氢氧根浓度就等于酸浓度；弱酸只离解一小撮，离解平衡常数K_s卡住比例，解二次方程在弱酸条件下简化为根号公式，再取负对数即pH，同浓度下弱酸pH明显更高。
+
+Gesetz-Satz (DE): Stark rechnet direkt, schwach rechnet ueber die Wurzel aus $K_s$ mal $c_0$.
+
+$pH = -\lg[H_3O^+]$
+
+$[H_3O^+] \approx \sqrt{K_s \cdot c_0}$
+
+$K_s = \frac{[H_3O^+][A^-]}{[HA]}$
 
 文字图解（ASCII 结构图，App支持解析渲染）：
 
 ```diagram
-  stark:  c0 ──voll──> [H3O+] = c0 ── -lg ──> pH
-  schwach: c0 ──Ks──> x = Wurzel(Ks*c0) ── -lg ──> pH
-  stark: pH faellt 1 pro Zehnerpotenz; schwach: nur ~0,5
+stark: HA --100%--> H3O+ + A-   [H3O+] = c0
+schwach: HA <--K_s--> H3O+ + A-   [H3O+] = Wurzel(K_s*c0)
+pH-Skala: 0 --sauer-- 7 --basisch-- 14
 ```
-
 Klausur-Satz: `Fuer schwache Saeuren gilt genaehert [H_3O^+] = Wurzel(K_s mal c_0), woraus der pH ueber den negativen dekadischen Logarithmus folgt.`
 
 ## Anekdote & Fun-Fact
@@ -65,24 +97,31 @@ Klausur-Satz: `Fuer schwache Saeuren gilt genaehert [H_3O^+] = Wurzel(K_s mal c_
 
 **Bezug zum Konzept**: `Eine pH-Einheit bedeutet zehnfache Konzentration — daher die logarithmische Rechnung.`
 
-## Schritt 4 — ausprobieren
+## Schritt 4 — ausprobieren: Interaktive Praxis & Labor
 
-BEISPIEL（正确例题示范，含教具操作与解答）：
+[Werkzeug: titration-lab]
 
-[Werkzeug: ph]
+BEISPIEL（正确例题示范，含教具操作与解答，中文在上、德语在下）：
 
-AUFGABE (berechnen, AFB II)：Berechnen Sie den pH einer Essigsaeureloesung mit $c_0 = 0{,}10\,\mathrm{mol/L}$ ($K_s = 1{,}8 \times 10^{-5}$).
+AUFGABE中文导读（沙盒谜题）：0.10摩尔每升醋酸，K_s为1.8乘10的负五次方。用近似公式求氢离子浓度与pH，并与同浓度盐酸对比。
 
-HILFE:
-1. Schritt 1: Pruefen, ob $K_s$ gegeben ist → schwache Saeure, Naeherung waehlen.
-2. Schritt 2: $[H_3O^+] = \sqrt{K_s c_0}$ berechnen.
-3. Schritt 3: $pH = -\lg [H_3O^+]$ bilden.
+AUFGABE (berechnen, AFB II): Berechnen Sie fuer Essigsaeure ($c_0 = 0{,}10\,\mathrm{mol/L}$, $K_s = 1{,}8 \cdot 10^{-5}$) $[H_3O^+]$ und $pH$ mit der Naeherung und vergleichen Sie mit $HCl$ gleicher Konzentration.
 
-MUSTERLÖSUNG: Da $K_s$ gegeben ist, liegt eine schwache Saeure vor und $c_0/K_s \approx 5500 > 100$, die Naeherung ist zulaessig. Es gilt $[H_3O^+] = \sqrt{1{,}8 \times 10^{-5} \cdot 0{,}10} = \sqrt{1{,}8 \times 10^{-6}} \approx 1{,}34 \times 10^{-3}\,\mathrm{mol/L}$. Damit folgt $pH = -\lg(1{,}34 \times 10^{-3}) \approx 2{,}87$. Zum Vergleich haette eine starke Saeure gleicher Konzentration $pH = 1{,}00$.
+HILFE（中德双语步骤）：
 
+1. 中文：第1步代入根号公式求氢离子浓度，关键词：Wurzel。
+   Schritt 1 (DE): $[H_3O^+] = \sqrt{K_s \cdot c_0} \approx 1{,}34 \cdot 10^{-3}\,\mathrm{mol/L}$.
+2. 中文：第2步取负对数得pH约2.87，关键词：Logarithmus。
+   Schritt 2 (DE): $pH = -\lg[H_3O^+] \approx 2{,}87$.
+3. 中文：第3步对比盐酸pH为1，说明弱酸高得多，关键词：Vergleich。
+   Schritt 3 (DE): $HCl$ haette $pH = 1$; schwach liegt deutlich hoeher.
+
+MUSTERLOESUNG：中文：代入得氢离子浓度约1.34乘10负三次方摩尔每升，pH约2.87；同浓度盐酸完全离解pH为1，两者差近2个单位，直观展示弱酸只离解一小部分。
+
+MUSTERLOESUNG (DE): $[H_3O^+] = \sqrt{1{,}8 \cdot 10^{-5} \cdot 0{,}10} \approx 1{,}34 \cdot 10^{-3}\,\mathrm{mol/L}$, also $pH \approx 2{,}87$. $HCl$ gleicher Konzentration haette $pH = 1$.
 Klausur-Satz: `Mit der Naeherung folgt [H_3O^+] = 1,34 mal 10 hoch -3 mol/L und damit pH = 2,87.`
 
-## Schritt 5 — ausprobieren
+## Schritt 5 — ausprobieren: Verfahrensvergleich & Abgrenzung
 
 VERGLEICH辨别实验（双向辨析：完全电离 vs 部分电离）：
 
@@ -97,7 +136,7 @@ ANTWORT: A erfordert Verfahren (i): $[H_3O^+] = 0{,}01$, $pH = 2{,}00$. B erford
 
 Klausur-Satz: `Bei gleicher Konzentration liegt der pH der schwachen Saeure deutlich hoeher als der der starken.`
 
-## Schritt 6 — check
+## Schritt 6 — check: Verständnisprüfung
 
 CHECK检索默写（自测 3 题，与答案配对）：
 
@@ -119,13 +158,13 @@ Klausur-Satz: `Stark heisst direkt, schwach heisst ueber die Wurzel aus K_s mal 
    中文纠偏：pH 是对数标，差 1 表示十倍。$pH$ 从 2 到 3 是稀释十倍，不是两倍。
    Korrektur-Satz: `Eine pH-Einheit entspricht einer Zehnerpotenz der Konzentration.`
 
-## Schritt 7 — szenario
+## Schritt 7 — szenario: Klausurtransfer & Rubric
 
 ROLLE: Du bist Laborhelfer und erklaerst zwei Flaschen mit je $0{,}1\,\mathrm{mol/L}$.
 SITUATION: Ein Praktikant erwartet gleichen pH, misst aber $1{,}0$ und $2{,}9$. Erklaere in einer zusammenhaengenden Darstellung (ca. 150 Woerter), warum $HCl$ und Essigsaeure trotz gleicher Konzentration verschiedene pH-Werte haben und wie man jeweils rechnet.
 RUBRIC (30 XP): Erklaerung stark gegen schwach (10 XP) | Rechnung stark mit Ergebnis (6 XP) | Rechnung schwach mit Naeherung (10 XP) | Fachsprachliche Korrektheit (4 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY 1盒（核心总结）：
 

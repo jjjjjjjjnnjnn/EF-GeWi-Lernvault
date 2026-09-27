@@ -15,7 +15,7 @@ version: Lesson-v3
 
 <!-- Lesson v3: Schritt 1-8 feste Struktur; Fehlvorstellung zwischen Schritt 6 und 7 (Parser skip); [Werkzeug: <id>] interaktiv; Gating: check/szenario nicht bestanden = Weiter grau; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
-## Schritt 1 — entdecken
+## Schritt 1 — entdecken: Ziele & Phänomen-Einstieg
 ZIELE (drei messbare Ziele dieser Lektion):
 
 1. Du kannst Oxidationszahlen mit den Regeln $O = -II$ und $H = +I$ bestimmen und die Summe mit der Ionenladung abgleichen.
@@ -24,7 +24,7 @@ ZIELE (drei messbare Ziele dieser Lektion):
 
 ### Hook / Phaenomen
 
-Im Jahr 1839 rostete die erste Eisenbahnbruecke ueber den Rhein so schnell, dass man sie nach wenigen Jahren sperren musste — $4Fe + 3O_2 \to 2Fe_2O_3$ mitten im Alltag. Gleichzeitig liefert eine simple Zitrone mit zwei Blechen Strom fuer eine Uhr. Rost zerstoert, Batterie versorgt — doch beide Male wandern Elektronen. Wer diesen Uebergang sieht, versteht Korrosion und Batterie zugleich.
+Im Jahr 1839 rostete die erste Eisenbahnbruecke ueber den Rhein so schnell, dass man sie nach wenigen Jahren sperren musste — $4Fe + 3O_2 \to 2Fe_2O_3$ mitten im Alltag. Gleichzeitig liefert eine simple Zitrone mit zwei Blechen Strom fuer eine Uhr. Rost zerstoert, Batterie versorgt — doch beide Male wandern Elektronen. Wer diesen Uebergang sieht, versteht Korrosion und Batterie zugleich. Rost an Bruecken und Strom aus Batterien folgen derselben Wippe der Elektronen: Oxidation gibt Elektronen ab, Reduktion nimmt sie auf, die Oxidationszahlen steigen und fallen spiegelbildlich. Erhoeht man Eduktdruck oder Konzentration, antwortet das Redoxgleichgewicht wie eine Le-Chatelier-Wippe mit Q gegen Kc bis zum Ausgleich. Allein die Temperatur veraendert Kc selbst. Wer Geber, Nehmer und Ladungsbilanz mit weil und deshalb verbindet, loest jede Redoxgleichung vollstaendig.
 
 ### Fachbegriff & Definition
 
@@ -36,7 +36,7 @@ Die Arbeitskette lautet: **Bestimmen, Vergleichen, Bilanzieren**. Erstens Oxidat
 
 Klausur-Satz: `Redox heisst Elektronenuebergang: Oxidation gibt ab, Reduktion nimmt auf.`
 
-## Schritt 2 — entdecken
+## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
 ### Hook / Phaenomen
@@ -57,52 +57,49 @@ Die Begriffe bilden eine geschlossene Bilanz: Was das **Reduktionsmittel** abgib
 
 Klausur-Satz: `Steigt die Zahl, war es Oxidation; faellt sie, war es Reduktion.`
 
-## Schritt 3 — entdecken
+## Schritt 3 — entdecken: Kernkonzept & Wirkungsmodell
 TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
 ### Hook / Phaenomen
 
-Zinkblech in blauer Kupferloesung: Nach Minuten ueberzieht sich das Blech rotbraun, die blaue Farbe verblasst. Kein Strom fliesst von aussen — und doch wandern Elektronen, direkt von Atom zu Atom. Wie bilanziert man einen Uebergang, den man nicht zaehlen kann?
+Warum rostet Eisen an feuchter Luft, waehrend trockenes Eisen blank bleibt, und warum faerbt sich Kupferblech in Silbernitrat silbrig? Elektronen wandern unsichtbar vom einen Metall zum anderen. Wer gibt ab, wer nimmt auf, und wie beweist die Oxidationszahl $OIZ$ den Fluss?
 
-### Fachbegriff & Definition
+### Spiel-Aufgabe
 
-Die **Elektronenbilanz** ersetzt das Zaehlen unsichtbarer Teilchen durch den Vergleich der **Oxidationszahlen**: $Zn$ geht von $0$ nach $+II$ und gibt $2e^-$ ab; $Cu^{2+}$ geht von $+II$ nach $0$ und nimmt $2e^-$ auf. Die Bilanz $Zn + Cu^{2+} \to Zn^{2+} + Cu$ stimmt, weil Abgabe gleich Aufnahme ist. Dasselbe Schema traegt $2Mg + O_2 \to 2MgO$ mit $Mg: 0 \to +II$ und $O: 0 \to -II$ — ein Muster, zwei Faelle.
+Spiel-Aufgabe im Kopf-Labor: Erhoehe im Simulator die Konzentration von $Ag^+$ und beobachte die Elektronenpfeile von $Cu$ zu $Ag^+$. Ziehe den Temperatur-Regler und notiere, wie schnell der Silberniederschlag waechst. Ordne jeder Aenderung die $OIZ$-Aenderung zu und erklaere in einem Satz mit weil, warum Abgabe und Aufnahme sich ausgleichen muessen.
 
-### Wirkungsgefuege / Modell
+### Aha-Moment & Gesetz
 
-Denke in Kausalkette: **Zahlen, Teilgleichungen, Summe**. Erstens Zahlen bestimmen und Aenderungen markieren. Zweitens Teilgleichungen formulieren ($Mg \to Mg^{2+} + 2e^-$; $\frac{1}{2}O_2 + 2e^- \to O^{2-}$). Drittens auf gleiche $e^-$-Zahl erweitern und addieren — die Elektronen kuerzen sich, die Atombilanz bleibt. Die Kontrolle lautet: Summe der Oxidationszahlen links gleich Summe rechts.
+Aha-Moment und Gesetz: Die Kausalkette lautet Zahlen, Ausgleich, Gleichung. Oxidation bedeutet $OIZ$ steigt (Elektronenabgabe), Reduktion bedeutet $OIZ$ sinkt (Elektronenaufnahme). Es gilt Ladungserhalt und Massenerhalt; aufgenommene und abgegebene Elektronen muessen sich exakt ausgleichen. Daher erst $OIZ$ bestimmen, dann Elektronen bilanzieren, dann Atome und Ladungen ausgleichen. Die Wippe heisst hier Redoxpaar.
 
 ```diagram
-    Zn(0) ---- 2 e- ----> Zn(+II)   Oxidation (Abgabe)
-              |
-              v  Elektronenfluss
-              |
-    Cu(+II) -- 2 e- ----> Cu(0)     Reduktion (Aufnahme)
-    Bilanz: Zn + Cu2+ -> Zn2+ + Cu
-    Regel: Summe der OZ links = Summe rechts
-    Kontrolle: 0 + (+II) = (+II) + 0
+    Cu (OIZ 0) --2e- Pfeil--> Cu2+ (OIZ +II) Oxidation (Abgabe)
+    2Ag+ (OIZ +I) --2e- Pfeil--> 2Ag (OIZ 0) Reduktion (Aufnahme)
+    Gesamt: Cu + 2Ag+ --> Cu2+ + 2Ag (Elektronen links = rechts)
+    Rost: Fe (0) --> Fe2O3 (+III), O2 (0) --> O2- (-II)
+    Regel: Summe Abgabe = Summe Aufnahme, sonst Ladungsfehler.
 ```
 
 Klausur-Satz: `Abgabe und Aufnahme muessen sich exakt ausgleichen.`
 
-## Schritt 4 — ausprobieren
+## Schritt 4 — ausprobieren: Interaktive Praxis & Gleichgewichts-Labor
 
-BEISPIEL (Musteraufgabe mit Werkzeug):
+BEISPIEL (geleitete Aufgabe mit Werkzeug):
 
-[Werkzeug: formula]
+[Werkzeug: le-chatelier-sim]
 
-AUFGABE (erklaeren, AFB II): Bestimmen Sie die Oxidationszahlen in $2Mg + O_2 \to 2MgO$ und formulieren Sie Oxidations- und Reduktionsteilgleichung.
+AUFGABE (Spiel-Auftrag, AFB II, 3 Stufen): Stufe 1 Bestimmen: Vergib $OIZ$ fuer $Cu$, $Ag^+$, $Cu^{2+}$ und $Ag$. Stufe 2 Bilancieren: Gleiche Elektronenabgabe und -aufnahme aus. Stufe 3 Sichern: Schreibe die Gesamtgleichung und pruefe Ladung. Erhoehe im Gleichgewichts-Labor den Druck-Regler von $1\,\mathrm{bar}$ auf $5\,\mathrm{bar}$ und die Temperatur schrittweise und verfolge Elektronenpfeile und Oxidationszahlen.
 
 HILFE:
-1. Schritt 1: Setze Element $Mg = 0$ und $O_2 = 0$, Produkt $Mg = +II$ und $O = -II$.
-2. Schritt 2: Schreibe $Mg \to Mg^{2+} + 2e^-$ und $O + 2e^- \to O^{2-}$.
-3. Schritt 3: Multipliziere so, dass $e^-$-Zahl links und rechts gleich ist, dann addiere.
+1. Schritt 1: Element $0$, Ion gleich Ladung.
+2. Schritt 2: $Cu \to Cu^{2+} + 2e^-$, $Ag^+ + e^- \to Ag$ mal zwei.
+3. Schritt 3: Summe Abgabe gleich Summe Aufnahme.
 
-MUSTERLOESUNG: Es gilt $Mg: 0 \to +II$ (Oxidation, $Mg \to Mg^{2+} + 2e^-$) und $O: 0 \to -II$ (Reduktion, $\frac{1}{2}O_2 + 2e^- \to O^{2-}$). Erweitert auf $O_2$ folgt $2Mg + O_2 \to 2MgO$. Magnesium ist Reduktionsmittel, Sauerstoff ist Oxidationsmittel.
+MUSTERLOESUNG: $Cu$ ($0$) gibt zwei Elektronen ab zu $Cu^{2+}$ ($+II$), jedes $Ag^+$ ($+I$) nimmt eines auf zu $Ag$ ($0$). Bilanziert gilt $Cu + 2Ag^+ \to Cu^{2+} + 2Ag$, weil Abgabe und Aufnahme sich exakt ausgleichen muessen. Erst Zahlen bestimmen, dann Elektronen bilanzieren, danach Atome und Ladungen pruefen.
 
 Klausur-Satz: `Erst Zahlen bestimmen, dann Elektronen bilanzieren.`
 
-## Schritt 5 — ausprobieren
+## Schritt 5 — ausprobieren: Verfahrensvergleich & Abgrenzung
 
 VERGLEICH (Verfahren A gegen Verfahren B):
 
@@ -117,7 +114,7 @@ ANTWORT: A erfordert Verfahren (i): $Zn: 0 \to +II$ und $Cu: +II \to 0$, also Re
 
 Klausur-Satz: `Ohne OZ-Aenderung keine Redoxreaktion.`
 
-## Schritt 6 — check
+## Schritt 6 — check: Verständnisprüfung
 
 CHECK (Selbsttest, 3 Fragen):
 
@@ -138,14 +135,14 @@ Klausur-Satz: `Das Mittel bewirkt das Gegenteil seiner selbst.`
    Korrektur: Sie sind Bilanzhilfen; in $H_2$ gilt $0$, in $H_2O$ gilt $+I$, obwohl kein Ion vorliegt.
    Korrektur-Satz: `Oxidationszahlen bilanzieren Elektronen, sie messen keine echten Ionen.`
 
-## Schritt 7 — szenario
+## Schritt 7 — szenario: Klausurtransfer & Rubric
 
 ROLLE: Du bist Tutor im Chemiekurs.
 SITUATION: Ein Mitschueler schreibt $Fe + O_2 \to Fe_2O_3$ ohne Koeffizienten und nennt Eisen das Oxidationsmittel.
 AUFGABE (begruenden, AFB III): Korrigieren Sie Gleichung und Begriffe in einer zusammenhaengenden Darstellung (ca. 150 Woerter) mit OZ-Bestimmung und Teilgleichungen.
 RUBRIC (30 XP): OZ $Fe: 0 \to +III$ und $O: 0 \to -II$ (10 XP) | Bilanz $4Fe + 3O_2 \to 2Fe_2O_3$ (10 XP) | Korrekte Mittelzuordnung (5 XP) | Geschlossene Darstellung (5 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY: Merke Zahl, Richtung, Bilanz: OZ bestimmen, $e^-$-Richtung deuten, Teilgleichungen angleichen. Anker: $Red \to Ox + e^-$ und $Ox + e^- \to Red$.
 

@@ -15,7 +15,7 @@ version: Lesson-v3
 
 <!-- Lesson v3 9-Schritt-Architektur: Schritt 1 bis 8 feste Struktur; Fehlvorstellung zwischen Schritt 6 und 7 (Parser ueberspringt, zaehlt nicht); interaktive [Werkzeug: <id>]; Gating: check/szenario nicht bestanden = Weiter deaktiviert; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
-## Schritt 1 — entdecken
+## Schritt 1 — entdecken: Ziele & Phänomen-Einstieg
 ZIELE (drei messbare Ziele dieser Lektion):
 
 1. Du kannst mit sechs Formelkarten (Mol, Konzentration, Gas, $pH$, Redox, Gleichgewicht) zwischen Masse, Volumen und Teilchenzahl umrechnen und jede Stufe mit Einheit schreiben.
@@ -24,8 +24,11 @@ ZIELE (drei messbare Ziele dieser Lektion):
 
 ### Hook / Phaenomen
 
-Avogadro erkannte: Gleiche Gasvolumina enthalten bei gleichem Druck und gleicher Temperatur gleich viele Teilchen — die Zahl $6{,}022 \cdot 10^{23}$ kannte er selbst nie, sie wurde erst nach seinem Tod bestimmt und nach ihm benannt. Bis heute ist das Mol vor allem eines: eine Zaehleinheit, die Masse und Teilchenzahl verbindet. Doch wie findet man in der Klausur in Sekunden die richtige von sechs Formeln?
+阿伏伽德罗没见过六点零二二乘十的二十三次方这个数字，却提出了摩尔的灵魂：同温同压同体积气体含同数粒子，摩尔只是计数单位而已。中国学生做化学计算常直接乘克与浓度，德国考试要求所有数据先回到物质的量、再跳到目标物质，每步都带单位。本节用六张公式卡打通质量、体积、粒子数，把单位连续训练到自动报警。
 
+Avogadro erkannte: Gleiche Gasvolumina enthalten bei gleichem Druck und gleicher Temperatur gleich viele Teilchen; das Mol verbindet Masse und Teilchenzahl.
+
+机制铺垫双语：机制是两步法，原始量到第一物质的量、系数比到第二物质的量、再到目标量，最后检查数量级。Der Mechanismus lautet: Ausgangsgroesse zu n1, ueber Koeffizienten zu n2, dann Zielgroesse mit Einheit und Groessenordnungspruefung.
 ### Fachbegriff & Definition
 
 Die **Stoffmenge** $n$ ist der **zentrale Knoten** aller Rechnungen: Masse erreicht $n$ ueber $n = m/M$, Teilchenzahl ueber $N = n \cdot N_A$, Gasvolumen ueber $V = n \cdot V_m$ im Normzustand oder $pV = nRT$ sonst, Loesungen ueber $c = n/V$. Von $n$ strahlen drei Spezialkarten ab: $pH = -\lg[H_3O^+]$ mit $pH + pOH = 14$ (nur $25^\circ\mathrm{C}$), die **Elektronenerhaltung** der Redoxchemie ($\sum$ abgegeben gleich $\sum$ aufgenommen) und das **$K_c$ des Gleichgewichts** als Produkt durch Edukt hoch Koeffizient. Jede Aufgabe folgt zwei Schritten: erst alle Angaben auf $n$ zurueckfuehren, dann ueber das Koeffizientenverhaeltnis auf das $n$ des Zielstoffs springen.
@@ -36,7 +39,7 @@ Die Kausalkette lautet: **Ausgangsgroesse, Knoten, Zielgroesse, Pruefung**. Ausg
 
 Klausur-Satz: `Jede Rechnung beginnt mit der Formel, führt die Einheiten durch alle Schritte und endet mit einer Größenordnungsprüfung.`
 
-## Schritt 2 — entdecken
+## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
 ### Hook / Phaenomen
@@ -45,11 +48,11 @@ Sechs Karten, ein Knoten — doch in der Klausur zaehlt nicht die Karte, sondern
 
 ### Fachbegriffe & Definitionen
 
-- **Stoffmenge $n$ (amount of substance):** Zaehleinheit; $1\,\mathrm{mol} = 6{,}022 \cdot 10^{23}$ Teilchen — alle Wege fuehren ueber $n$.
-- **Konzentration $c$ (concentration):** Mol pro Volumen Loesung, $c = n/V$ in $\mathrm{mol/L}$ — etwa $0{,}5\,\mathrm{mol/L}$ wie eine normale Zuckerloesung.
-- **Gasgesetz (gas law):** $pV = nRT$ verbindet Druck, Volumen, Temperatur und Molzahl ($R = 8{,}314\,\mathrm{J/(mol \cdot K)}$, $T$ in Kelvin); im Normzustand $V_m = 22{,}4\,\mathrm{L/mol}$.
-- **$pH$-Wert (pH value):** $pH = -\lg[H_3O^+]$, $pOH = -\lg[OH^-]$, $pH + pOH = 14$ bei $25^\circ\mathrm{C}$; zehnfache Verduennung hebt den $pH$ um $1$.
-- **Massenwirkungsgesetz MWG (law of mass action):** Der $K_c$-Ausdruck beschreibt die Lage des Gleichgewichts — etwa $K_c = [CO_2]$ fuer $CaCO_3(s) \rightleftharpoons CaO(s) + CO_2(g)$.
+- **Stoffmenge $n$ (amount of substance): (物质的量)** Zaehleinheit; $1\,\mathrm{mol} = 6{,}022 \cdot 10^{23}$ Teilchen — alle Wege fuehren ueber $n$.
+- **Konzentration $c$ (concentration): (浓度)** Mol pro Volumen Loesung, $c = n/V$ in $\mathrm{mol/L}$ — etwa $0{,}5\,\mathrm{mol/L}$ wie eine normale Zuckerloesung.
+- **Gasgesetz (gas law): (气体定律)** $pV = nRT$ verbindet Druck, Volumen, Temperatur und Molzahl ($R = 8{,}314\,\mathrm{J/(mol \cdot K)}$, $T$ in Kelvin); im Normzustand $V_m = 22{,}4\,\mathrm{L/mol}$.
+- **$pH$-Wert (pH value): (pH值)** $pH = -\lg[H_3O^+]$, $pOH = -\lg[OH^-]$, $pH + pOH = 14$ bei $25^\circ\mathrm{C}$; zehnfache Verduennung hebt den $pH$ um $1$.
+- **Massenwirkungsgesetz MWG (law of mass action): (质量作用定律)** Der $K_c$-Ausdruck beschreibt die Lage des Gleichgewichts — etwa $K_c = [CO_2]$ fuer $CaCO_3(s) \rightleftharpoons CaO(s) + CO_2(g)$.
 
 ### Wirkungsgefuege / Modell
 
@@ -57,7 +60,7 @@ Die Begriffe bilden den Stern mit $n$ in der Mitte: Masse, Teilchen, Gas und Loe
 
 Klausur-Satz: `Mit dem Ansatz c = n/V folgt die Konzentration einschließlich Einheit; die Größenordnung wird durch Vergleich mit Alltagswerten geprüft.`
 
-## Schritt 3 — entdecken
+## Schritt 3 — entdecken: Kernkonzept & Wirkungsmodell
 TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
 ### Hook / Phaenomen
@@ -99,14 +102,14 @@ Klausur-Satz: `Alle quantitativen Aufgaben führen über die Stoffmenge n als ze
 
 **Bezug zum Konzept**: Das Mol ist die zentrale Zähleinheit, über die Masse, Teilchenzahl und Volumen erst vergleichbar werden.
 
-## Schritt 4 — ausprobieren
+## Schritt 4 — ausprobieren: Interaktive Praxis & Labor
 
 BEISPIEL (Musteraufgabe mit Loesungsweg):
 
 [Werkzeug: formula]
 
 AUFGABE (berechnen & auswerten, AFB II): Bearbeiten Sie drei Teilaufgaben.
-(a) 0,40 mol eines Stoffes werden in 0,80 L Wasser gelöst. Berechnen Sie die Konzentration c.
+Stelle in der Sandbox (formula) Masse und Volumen ein, ziehe den Slider Konzentration und lies n und c ab; (a) 0,40 mol eines Stoffes werden in 0,80 L Wasser gelöst. Berechnen Sie die Konzentration c.
 (b) Eine Lösung hat c(H3O+) = 1,0 * 10^-4 mol/L. Berechnen Sie den pH-Wert und die Hydroxidionenkonzentration (Kw = 1,0 * 10^-14 (mol/L)^2).
 (c) Geben Sie für N2(g) + 3 H2(g) <-> 2 NH3(g) den Ausdruck für die Gleichgewichtskonstante K_c an.
 
@@ -119,7 +122,7 @@ MUSTERLOESUNG: (a) Es gilt c = n/V = 0,40 mol / 0,80 L = 0,50 mol/L. Dies ist di
 
 Klausur-Satz: `Der pH-Wert folgt aus dem Exponenten der Oxoniumionenkonzentration, und die Hydroxidionenkonzentration ergibt sich aus dem Ionenprodukt des Wassers.`
 
-## Schritt 5 — ausprobieren
+## Schritt 5 — ausprobieren: Verfahrensvergleich & Abgrenzung
 
 VERGLEICH (zwei Verfahren unterscheiden):
 
@@ -135,7 +138,7 @@ ANTWORT: A erfordert Verfahren (i): c = n/V = 0,20 mol / 0,50 L = 0,40 mol/L; di
 
 Klausur-Satz: `Die Konzentration wird über das Volumen berechnet, während der Massenanteil das Verhältnis zweier Massen angibt.`
 
-## Schritt 6 — check
+## Schritt 6 — check: Verständnisprüfung
 
 CHECK (Selbsttest, 3 Fragen mit Antworten):
 
@@ -157,13 +160,13 @@ Klausur-Satz: `Die sechs Formelkarten greifen über die Stoffmenge ineinander; E
    Korrektur: Der Wert gilt nur im Normzustand ($0^\circ\mathrm{C}$, $101{,}3\,\mathrm{kPa}$). Bei anderer Temperatur oder anderem Druck gilt $pV = nRT$. Raumtemperaturwerte direkt mit $22{,}4$ zu verrechnen ist ein klassischer Fehler.
    Korrektur-Satz: `Das molare Volumen V_m = 22,4 L/mol gilt nur im Standardzustand; bei anderen Bedingungen wird das Gasgesetz pV = nRT verwendet.`
 
-## Schritt 7 — szenario
+## Schritt 7 — szenario: Klausurtransfer & Rubric
 
 ROLLE: Du hilfst als Tutor beim "Formeldiktat" für eine EF-Klausurvorbereitung.
 SITUATION: Eine Mitschülerin soll drei Aufgaben unter Zeitdruck lösen: (1) Sie soll die deutsche Bezeichnung einer Konzentrationsgroesse nennen, (2) aus 0,30 mol in 0,60 L die Konzentration berechnen und (3) aus [H3O+] = 10^-5 mol/L den pH-Wert ableiten. Erkläre ihr in einer zusammenhängenden Antwort (ca. 150 Wörter) die drei Formelkarten, führe die Rechnungen vollständig mit Einheiten durch und schließe mit einer Größenordnungsprüfung.
 RUBRIC (30 XP): Korrekte Benennung der Konzentration $c$ (6 XP) | Rechnung c = 0,30/0,60 = 0,50 mol/L mit Einheit (8 XP) | pH = -lg(10^-5) = 5,00 (8 XP) | Größenordnungsprüfung und deutsche Fachsprache (8 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY (Kernzusammenfassung):
 

@@ -15,7 +15,7 @@ version: Lesson-v3
 
 <!-- Lesson v3 9-Schritt-Architektur: Schritt 1 bis 8 feste Struktur; Fehlvorstellung zwischen Schritt 6 und 7 (Parser ueberspringt, zaehlt nicht); interaktive [Werkzeug: <id>]; Gating: check/szenario nicht bestanden = Weiter deaktiviert; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
-## Schritt 1 — entdecken
+## Schritt 1 — entdecken: Ziele & Phänomen-Einstieg
 ZIELE (drei messbare Ziele dieser Lektion):
 
 1. Du kannst unter Zeitlimit vier Grundaufgaben in der festen Kette loesen: Ausgleichen, Koeffizientenverhaeltnis, Rechnung mit Einheit, Groessenordnungspruefung.
@@ -24,8 +24,11 @@ ZIELE (drei messbare Ziele dieser Lektion):
 
 ### Hook / Phaenomen
 
-Im Jahr 1999 ging der Mars Climate Orbiter verloren — kein technischer Defekt, sondern ein Einheitenfehler: Ein Team rechnete metrisch, das andere amerikanisch. Ein einziger fehlender Schritt kostete die Mission. In der Klausur kostet er Punkte — und der Erwartungshorizont verrät vorher, wo sie liegen. Wie trainiert man unter Zeitdruck Vollstaendigkeit statt nur Richtigkeit?
+火星气候轨道器不是被技术击垮而是被单位击垮的：一组用米制、一组用英制，一个单位漏写整个任务报废。考场同理：答案对了、方程式没配平、单位没跟全、检验句没写，精度再高也扣成半分卷。中国学生训练常追求答案正确率，德国期望视界追求步骤完整率。本节用二十分钟四题创造考场压力，把完整性练成条件反射。
 
+Im Jahr 1999 ging der Mars Climate Orbiter verloren — kein technischer Defekt, sondern ein Einheitenfehler: ein Team metrisch, das andere amerikanisch.
+
+机制铺垫双语：机制是固定链，配平、摩尔比、带单位计算、检验、德语迁移句，每环对应期望视界分数。Die Kausalkette lautet: Kette einhalten, Punkte sichern, Luecke loggen; jeder Schritt traegt eigene Punkte.
 ### Fachbegriff & Definition
 
 Der **Erwartungshorizont (EHZ)** ist die **Punkteliste pro Loesungsschritt**: Gleichungsgeruest, Koeffizienten, Einheiten und Groessenordnungspruefung tragen je eigene Punkte. Die **feste Kette** lautet: Gleichung ausgleichen, Koeffizientenverhaeltnis als Molverhaeltnis ablesen, mit $n = m/M$ und Einheit rechnen, Groessenordnung pruefen und einen deutschen **Transfer-Satz** schreiben. Zeitlimit-Training prueft nicht das richtige Ergebnis, sondern die vollstaendige Darstellung unter Druck — $20$ Minuten, vier Aufgaben, danach Selbstkontrolle Schritt fuer Schritt.
@@ -36,7 +39,7 @@ Die Kausalkette lautet: **Kette einhalten, Punkte sichern, Luecke loggen**. Wer 
 
 Klausur-Satz: `Gleichung, Verhältnis, Einheit und Prüfung – jeder Schritt trägt Punkte.`
 
-## Schritt 2 — entdecken
+## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
 ### Hook / Phaenomen
@@ -45,11 +48,11 @@ Vier Aufgaben, $20$ Minuten, $18$ Punkte — doch die Punkte liegen nicht im Erg
 
 ### Fachbegriffe & Definitionen
 
-- **Ausgleichen:** Nur Koeffizienten aendern, keine Indizes; danach die Atome beidseitig nachzaehlen — etwa $2Al + 6HCl \to 2AlCl_3 + 3H_2$ mit Kontrolle $Al$ $2$:$2$, $H$ $6$:$6$, $Cl$ $6$:$6$.
-- **Erwartungshorizont (EHZ):** Die Punkteliste pro Loesungsschritt; jeder Schritt traegt eigene Punkte — Geruest, Koeffizienten, Einheiten, Pruefung, Satz.
-- **Stoffmenge $n$:** Der Knoten zwischen Masse, Teilchenzahl und Konzentration — etwa $n = 4{,}4/44 = 0{,}10\,\mathrm{mol}$ und $V = 2{,}24\,\mathrm{L}$ mit Flaschenmass.
-- **Trennung von Beobachtung und Deutung:** Erst das Phaenomen beschreiben, dann mit der Regel erklaeren — kein weil-Satz in der Beschreibung.
-- **Transfer-Satz:** Der Schlusssatz auf Deutsch, der das Ergebnis klausurtauglich formuliert — etwa da Salzsäure vollständig dissoziiert, gilt $[H_3O^+] = c_0$.
+- **Ausgleichen: (配平)** Nur Koeffizienten aendern, keine Indizes; danach die Atome beidseitig nachzaehlen — etwa $2Al + 6HCl \to 2AlCl_3 + 3H_2$ mit Kontrolle $Al$ $2$:$2$, $H$ $6$:$6$, $Cl$ $6$:$6$.
+- **Erwartungshorizont (EHZ): (评分标准)** Die Punkteliste pro Loesungsschritt; jeder Schritt traegt eigene Punkte — Geruest, Koeffizienten, Einheiten, Pruefung, Satz.
+- **Stoffmenge $n$: (物质的量)** Der Knoten zwischen Masse, Teilchenzahl und Konzentration — etwa $n = 4{,}4/44 = 0{,}10\,\mathrm{mol}$ und $V = 2{,}24\,\mathrm{L}$ mit Flaschenmass.
+- **Trennung von Beobachtung und Deutung: (观察与解释分离)** Erst das Phaenomen beschreiben, dann mit der Regel erklaeren — kein weil-Satz in der Beschreibung.
+- **Transfer-Satz: (迁移句)** Der Schlusssatz auf Deutsch, der das Ergebnis klausurtauglich formuliert — etwa da Salzsäure vollständig dissoziiert, gilt $[H_3O^+] = c_0$.
 
 ### Wirkungsgefuege / Modell
 
@@ -57,7 +60,7 @@ Die Begriffe bilden den Trainingskreislauf: **Aufgabe loesen, EHZ anlegen, Lueck
 
 Klausur-Satz: `Beobachtung und Deutung werden getrennt: Zuerst wird das Phänomen beschrieben, dann mit der Regel erklärt.`
 
-## Schritt 3 — entdecken
+## Schritt 3 — entdecken: Kernkonzept & Wirkungsmodell
 TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
 ### Hook / Phaenomen
@@ -93,13 +96,13 @@ Klausur-Satz: `Der Erwartungshorizont zeigt die Punkte pro Schritt, sodass jede 
 
 **Bezug zum Konzept**: Ein einziger fehlender Einheitenschritt kann das gesamte Ergebnis unbrauchbar machen; deshalb trägt in der Klausur jeder Schritt Punkte.
 
-## Schritt 4 — ausprobieren
+## Schritt 4 — ausprobieren: Interaktive Praxis & Labor
 
 BEISPIEL (Musteraufgabe mit Loesungsweg):
 
 [Werkzeug: formula]
 
-AUFGABE (berechnen & auswerten, AFB II): 6,0 g Kohlenstoff (C, M = 12 g/mol) werden vollständig verbrannt: C + O2 -> CO2. Berechnen Sie die Stoffmenge und das Volumen des entstehenden Kohlenstoffdioxids im Standardzustand (V_m = 22,4 L/mol) und bewerten Sie die Größenordnung. Schreiben Sie am Ende einen deutschen Transfer-Satz.
+Stelle in der Sandbox (formula) Masse und Koeffizienten ein, ziehe den Slider Stoffmenge und lies n und V ab; AUFGABE (berechnen & auswerten, AFB II): 6,0 g Kohlenstoff (C, M = 12 g/mol) werden vollständig verbrannt: C + O2 -> CO2. Berechnen Sie die Stoffmenge und das Volumen des entstehenden Kohlenstoffdioxids im Standardzustand (V_m = 22,4 L/mol) und bewerten Sie die Größenordnung. Schreiben Sie am Ende einen deutschen Transfer-Satz.
 
 HILFE:
 1. Schritt 1: Prüfe, ob die Gleichung ausgeglichen ist (C + O2 -> CO2: C 1:1, O 2:2).
@@ -111,7 +114,7 @@ MUSTERLOESUNG: Die Gleichung C + O2 -> CO2 ist bereits ausgeglichen (C 1:1, O 2:
 
 Klausur-Satz: `Mit n = m/M und dem Koeffizientenverhältnis folgt die Stoffmenge des Produkts, und über das molare Volumen ergibt sich das Gasvolumen im Standardzustand.`
 
-## Schritt 5 — ausprobieren
+## Schritt 5 — ausprobieren: Verfahrensvergleich & Abgrenzung
 
 VERGLEICH (zwei Verfahren unterscheiden):
 
@@ -127,7 +130,7 @@ ANTWORT: A erfordert Verfahren (i): n(CO2) = m/M = 2,2 g / 44 g/mol = 0,050 mol.
 
 Klausur-Satz: `Das Mol-Verfahren führt über die Stoffmenge zur Gasmenge, während das pH-Verfahren direkt über den Logarithmus der Oxoniumionenkonzentration arbeitet.`
 
-## Schritt 6 — check
+## Schritt 6 — check: Verständnisprüfung
 
 CHECK (Selbsttest, 3 Fragen mit Antworten):
 
@@ -149,13 +152,13 @@ Klausur-Satz: `Gleichung, Verhältnis, Einheit und Prüfung – jeder Schritt tr
    Korrektur: Die Klausur verlangt die Trennung: erst Beobachtung (was ist zu sehen), dann Deutung (Erklaerung mit der Regel). Vermischung kostet Strukturpunkte, besonders bei Versuchs- und Redoxaufgaben.
    Korrektur-Satz: `Beobachtung und Deutung müssen getrennt dargestellt werden: zuerst das Phänomen, dann die Erklärung mit der Regel.`
 
-## Schritt 7 — szenario
+## Schritt 7 — szenario: Klausurtransfer & Rubric
 
 ROLLE: Du simulierst unter Zeitdruck eine EF-Klausur und bewertest dich anschließend selbst mit dem EHZ.
 SITUATION: In 20 Minuten sind vier Aufgaben zu lösen: (1) Al + HCl -> AlCl3 + H2 ausgleichen; (2) aus 4,4 g CO2 (M = 44 g/mol) n und V im Standardzustand berechnen; (3) in 2 Na + Cl2 -> 2 NaCl Oxidations- und Reduktionsmittel bestimmen; (4) den pH-Wert einer Salzsäure mit c0 = 0,002 mol/L berechnen. Schreibe eine zusammenhängende Auswertung (ca. 150 Wörter), die deine Ergebnisse, die EHZ-Punkte pro Aufgabe und einen deutschen Transfer-Satz enthält.
 RUBRIC (30 XP): Aufgabe 1 korrekt ausgeglichen 2 Al + 6 HCl -> 2 AlCl3 + 3 H2 (6 XP) | Aufgabe 2 n = 0,10 mol und V = 2,24 L mit Einheit (8 XP) | Aufgabe 3 Na als Reduktionsmittel, Cl als Oxidationsmittel mit Oxidationszahlen (8 XP) | Aufgabe 4 pH = 2,70 mit Begründung der vollständigen Dissoziation (8 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY (Kernzusammenfassung):
 

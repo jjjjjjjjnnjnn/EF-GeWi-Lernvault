@@ -15,7 +15,7 @@ version: Lesson-v3
 
 <!-- Lesson v3 9-Schritt-Architektur: Schritt 1 bis 8 feste Struktur; Fehlvorstellung zwischen Schritt 6 und 7 (Parser ueberspringt, zaehlt nicht); interaktive [Werkzeug: <id>]; Gating: check/szenario nicht bestanden = Weiter deaktiviert; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
-## Schritt 1 — entdecken
+## Schritt 1 — entdecken: Ziele & Phänomen-Einstieg
 ZIELE (drei messbare Ziele dieser Lektion):
 
 1. Du kannst mit der Broensted-Theorie Protolysegleichungen aufstellen und korrespondierende Saeure-Base-Paare benennen.
@@ -24,7 +24,7 @@ ZIELE (drei messbare Ziele dieser Lektion):
 
 ### Hook / Phaenomen
 
-Soerensen wollte beim Bierbrauen die Aciditaet kontrollieren — doch die Oxoniumkonzentrationen schwanken ueber viele Zehnerpotenzen, von $1$ bis $10^{-14}\,\mathrm{mol/L}$. Rohe Zahlen versagen, also waehlte er eine logarithmische Skala von $0$ bis $14$. Warum bedeutet ein Unterschied von zwei $pH$-Einheiten den Faktor $100$ — und warum schmeckt $0{,}10\,\mathrm{mol/L}$ Essigsaeure milder als $0{,}005\,\mathrm{mol/L}$ Salzsaeure?
+Soerensen wollte beim Bierbrauen die Aciditaet kontrollieren — doch die Oxoniumkonzentrationen schwanken ueber viele Zehnerpotenzen, von $1$ bis $10^{-14}\,\mathrm{mol/L}$. Rohe Zahlen versagen, also waehlte er eine logarithmische Skala von $0$ bis $14$. Warum bedeutet ein Unterschied von zwei $pH$-Einheiten den Faktor $100$ — und warum schmeckt $0{,}10\,\mathrm{mol/L}$ Essigsaeure milder als $0{,}005\,\mathrm{mol/L}$ Salzsaeure? Essigsaeure schmeckt milder als Salzsaeure bei kleinerer Konzentration, weil nur starke Saeuren vollstaendig dissoziieren mit $[H_3O^+] = c_0$ und $pH = -\lg[H_3O^+]$. Schwache Saeuren folgen Ks ueber die Dreisatztabelle mit Pflichtpruefung x durch c0 kleiner 5 Prozent. Tropfenweise Titration zeigt den Sprung am Aequivalenzpunkt mit Indikatorumschlag. Wer Staerke, Weg und Pruefung mit weil und deshalb verbindet, beherrscht jede pH-Rechnung.
 
 ### Fachbegriff & Definition
 
@@ -36,7 +36,7 @@ Die Kausalkette lautet: **Staerke pruefen, Formel waehlen, Naeherung kontrollier
 
 Klausur-Satz: `Der pH-Wert ist der negative dekadische Logarithmus der Oxoniumionenkonzentration; er ändert sich um eine Einheit, wenn sich die Konzentration um den Faktor 10 ändert.`
 
-## Schritt 2 — entdecken
+## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
 ### Hook / Phaenomen
@@ -57,34 +57,27 @@ Die Begriffe greifen ineinander: **Broensted** liefert die Gleichung, $K_w$ die 
 
 Klausur-Satz: `Eine Säure ist nach Brønsted ein Protonendonator, eine Base ein Protonenakzeptor; jede Protolyse verläuft als Gleichgewicht.`
 
-## Schritt 3 — entdecken
+## Schritt 3 — entdecken: Kernkonzept & Wirkungsmodell
 TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
 ### Hook / Phaenomen
 
-Salzsaeure $0{,}005\,\mathrm{mol/L}$ zu $pH$ $2{,}30$, Essigsaeure $0{,}10\,\mathrm{mol/L}$ zu $pH$ $2{,}87$ — zwanzigfache Konzentration, fast gleicher $pH$. Der Unterschied liegt nicht in der Menge, sondern im Dissoziationsgrad: $100\,\%$ gegen $1{,}3\,\%$. Ein Diagramm mit vier Formelkarten macht den Mechanismus rechenbar.
+Warum schmeckt $0{,}10\,\mathrm{mol/L}$ Essigsaeure milder als $0{,}005\,\mathrm{mol/L}$ Salzsaeure, obwohl zwanzigmal mehr Saeure enthalten ist? Die Menge taeuscht, die Staerke entscheidet. Was bedeutet $pH = -\lg[H_3O^+]$ fuer den Faktor $100$ bei zwei Einheiten, und warum braucht die schwache Saeure $K_S$?
 
-### Fachbegriff & Definition
+### Spiel-Aufgabe
 
-Der **Protonenumzug** besagt: Die Saeure gibt das Proton, die Base nimmt es; nach der Abgabe wird die Saeure zu ihrer korrespondierenden Base. Die **Trennlinie stark oder schwach** entscheidet die Rechnung: Starke Saeuren protolysieren fast vollstaendig ($[H_3O^+] = c_0$), schwache nur teilweise (Dreisatztabelle mit $K_S$). Vier Formelkarten tragen die Klausur: starke Saeure $pH = -\lg c_0$; starke Base $pOH = -\lg c_0$, $pH = 14 - pOH$; Ionenprodukt $pH + pOH = 14$; schwache Saeure $K_S = x^2/(c_0 - x)$, dann $pH = -\lg x$.
+Spiel-Aufgabe im Kopf-Labor: Gib Tropfen fuer Tropfen $NaOH$ zu und beobachte $pH$-Pfeil und Indikatorfarbe. Verduenne zehnfach und verfolge den $pH$-Sprung um eine Einheit. Notiere $pH$-Kurve gegen Volumen und erklaere in einem Satz mit weil, warum stark und schwach verschiedene Wege verlangen.
 
-### Wirkungsgefuege / Modell
+### Aha-Moment & Gesetz
 
-Denke in Kausalkette: **Gleichung, Staerke, Tabelle, Pruefung**. Erstens Protolysegleichung mit Paaren aufstellen. Zweitens Staerke feststellen — $K_S$ gegeben heisst Tabelle. Drittens Dreisatztabelle (Start $c_0/0/0$, Aenderung $-x/+x/+x$) und $K_S$ einsetzen. Viertens $pH$ bilden und $x/c_0 < 5\,\%$ pruefen. Schwache Saeuren punkten nur in dieser Reihenfolge — Richtung ohne Begruendung verliert Punkte.
+Aha-Moment und Gesetz: Die Kausalkette lautet Staerke, Weg, Pruefung. Starke Saeuren dissoziieren vollstaendig, daher gilt $pH = -\lg c_0$; schwache folgen $K_S = \frac{[A^-] \cdot [H_3O^+]}{[HA]}$ ueber die Dreisatztabelle. Es gilt $pH + pOH = 14$ bei $25^\circ\mathrm{C}$ und $K_w = [H_3O^+] \cdot [OH^-] = 1{,}0 \cdot 10^{-14}$. Zehnfache Verduennung hebt den $pH$ um $1$, weil der Logarithmus Potenzen zaehlt.
 
 ```diagram
-  pH-Skala (25 C)         c(H3O+) in mol/L
-    0  |#####| sauer        1,0 * 10^0
-    1  |#### |              1,0 * 10^-1     <-- jede Einheit = Faktor 10
-    2  |###  |              1,0 * 10^-2
-    2,30|## |   HCl 0,005    5,0 * 10^-3   <-- pH = -lg(5*10^-3)
-    2,87|## |   HAc 0,10     1,34 * 10^-3  <-- schwach, aus K_S
-    7  |----| neutral        1,0 * 10^-7
-   14  |     | basisch        1,0 * 10^-14
-
-    Merke:  pH + pOH = 14  (nur bei 25 C)
-    stark:  pH = -lg(c0)          schwach: K_S = x^2/(c0 - x)
-    Abkuerzung: -lg(a*10^-n) = n - lg(a), lg2 = 0,30, lg5 = 0,70
+    pH-Skala: 0 sauer |....| 7 neutral |....| 14 basisch
+    stark: HCl 0,005 --> [H3O+] = c0 --> pH = 2,30 (Pfeil direkt)
+    schwach: HAc 0,10 --> K_S-Tabelle --> [H3O+] = 1,34*10^-3 --> pH = 2,87
+    Verduennung x10: pH-Pfeil +1 Einheit (Faktor 10)
+    Regel: erst Staerke pruefen, dann Formel waehlen, dann x/c0 pruefen.
 ```
 
 Klausur-Satz: `Während eine starke Säure in wässriger Lösung nahezu vollständig dissoziiert und pH = -lg(c0) gilt, stellt sich bei einer schwachen Säure ein Protolysegleichgewicht ein, das über K_S berechnet wird.`
@@ -95,25 +88,24 @@ Klausur-Satz: `Während eine starke Säure in wässriger Lösung nahezu vollstä
 
 **Bezug zum Konzept**: Die logarithmische pH-Skala wurde gewählt, weil die Oxoniumionenkonzentration über viele Zehnerpotenzen variiert.
 
-## Schritt 4 — ausprobieren
+## Schritt 4 — ausprobieren: Interaktive Praxis & Titrations-Labor
 
-BEISPIEL (Musteraufgabe mit Loesungsweg):
+BEISPIEL (geleitete Aufgabe mit Werkzeug):
 
-[Werkzeug: formula]
+[Werkzeug: titration-lab]
 
-AUFGABE (berechnen, AFB II): Berechnen Sie den pH-Wert einer Salzsäurelösung mit c0 = 0,005 mol/L sowie einer Essigsäurelösung mit c0 = 0,10 mol/L (K_S = 1,8 * 10^-5 mol/L). Begründen Sie, warum für beide Säuren unterschiedliche Ansätze nötig sind, und prüfen Sie bei der Essigsäure die Näherung x/c0 < 5 %.
+AUFGABE (Spiel-Auftrag, AFB II, 3 Stufen): Stufe 1 Tropfen: Berechne $pH$ fuer $0{,}005\,\mathrm{mol/L}$ $HCl$ und $0{,}10\,\mathrm{mol/L}$ $HAc$ ($K_S = 1{,}8 \cdot 10^{-5}$). Stufe 2 Wippen: Erklaere den kleinen Unterschied trotz zwanzigfacher Menge. Stufe 3 Pruefen: Kontrolliere $x/c_0 < 5\,\%$ mit $pH$-Pfeil.
 
 HILFE:
-1. Schritt 1: Entscheide zuerst, ob die Säure stark oder schwach ist (pK_S-Wert bzw. K_S).
-2. Schritt 2: Bei der starken Säure gilt [H3O+] = c0; setze direkt in pH = -lg[H3O+] ein.
-3. Schritt 3: Bei der schwachen Säure stelle die Dreisatztabelle auf: Start c0 / 0 / 0; Änderung -x / +x / +x; Gleichgewicht c0 - x / x / x.
-4. Schritt 4: Setze in K_S = x^2 / (c0 - x) ein, nutze die Näherung c0 - x ungefähr c0, und prüfe x/c0 < 5 %.
+1. Schritt 1: Stark direkt $pH = -\lg c_0$, schwach ueber Tabelle.
+2. Schritt 2: $K_S = \frac{x^2}{c_0 - x}$ mit $x = 1{,}34 \cdot 10^{-3}$.
+3. Schritt 3: $x/c_0 = 1{,}3\,\%$ bedeutet Naeherung zulaessig.
 
-MUSTERLOESUNG: Salzsäure ist eine sehr starke Säure (pK_S etwa -6) und dissoziiert vollständig, daher gilt [H3O+] = c0 = 0,005 mol/L = 5,0 * 10^-3 mol/L. Es folgt pH = -lg(5,0 * 10^-3) = -(0,70 - 3) = 2,30. Essigsäure ist dagegen eine schwache Säure; mit der Dreisatztabelle gilt K_S = x^2 / (0,10 - x). Mit der Näherung 0,10 - x ungefähr 0,10 folgt x^2 = 1,8 * 10^-5 * 0,10 = 1,8 * 10^-6, also x = 1,34 * 10^-3 mol/L. Damit ist pH = -lg(1,34 * 10^-3) = 3 - 0,13 = 2,87. Die Kontrolle ergibt x/c0 = 1,34 * 10^-3 / 0,10 = 0,013, also 1,3 % < 5 %, die Näherung ist zulässig. Obwohl Essigsäure die zehnfache Ausgangskonzentration hat, ist ihr pH nur wenig niedriger als der der Salzsäure, weil sie nur zu etwa 1,3 % dissoziiert.
+MUSTERLOESUNG: $HCl$ dissoziiert vollstaendig, daher $[H_3O^+] = 0{,}005\,\mathrm{mol/L}$ und $pH = -\lg(5{,}0 \cdot 10^{-3}) = 2{,}30$. $HAc$ folgt $K_S = \frac{x^2}{0{,}10 - x}$ mit $x = 1{,}34 \cdot 10^{-3}\,\mathrm{mol/L}$ und $pH = 2{,}87$; die Kontrolle $1{,}3\,\% < 5\,\%$ erlaubt die Naeherung. Obwohl $HAc$ zwanzigfach konzentrierter ist, liegt der $pH$ hoeher, weil nur ca. $1{,}3\,\%$ dissoziiert sind.
 
 Klausur-Satz: `Bei gleicher Ausgangskonzentration liefert eine starke Säure einen deutlich niedrigeren pH-Wert als eine schwache Säure, da nur die starke Säure vollständig protoniert vorliegt.`
 
-## Schritt 5 — ausprobieren
+## Schritt 5 — ausprobieren: Verfahrensvergleich & Abgrenzung
 
 VERGLEICH (zwei Verfahren unterscheiden):
 
@@ -129,7 +121,7 @@ ANTWORT: A erfordert Verfahren (i): HNO3 dissoziiert vollständig, also gilt [H3
 
 Klausur-Satz: `Nur bei vollständiger Dissoziation gilt pH = -lg(c0); bei einer schwachen Säure muss die Oxoniumionenkonzentration zuerst über das Protolysegleichgewicht bestimmt werden.`
 
-## Schritt 6 — check
+## Schritt 6 — check: Verständnisprüfung
 
 CHECK (Selbsttest, 3 Fragen mit Antworten):
 
@@ -151,13 +143,13 @@ Klausur-Satz: `Der pH-Wert folgt aus der Oxoniumionenkonzentration über den neg
    Korrektur: Niemals. Schwache Saeuren protolysieren nur teilweise; $[H_3O^+]$ liegt weit unter $c_0$ und folgt erst aus $K_S$ ueber die Dreisatztabelle. Direktes Einsetzen unterschaetzt den $pH$ um mehrere Einheiten — der klassische Fehler bei schwachen Saeuren.
    Korrektur-Satz: `Bei einer schwachen Säure ist [H3O+] deutlich kleiner als c0; die Konzentration muss deshalb über K_S aus dem Protolysegleichgewicht bestimmt werden.`
 
-## Schritt 7 — szenario
+## Schritt 7 — szenario: Klausurtransfer & Rubric
 
 ROLLE: Du bist Praktikant im Schullabor und sollst eine Säure-Base-Titration vorbereiten und auswerten.
 SITUATION: Es liegen 100 mL Salzsäure mit c0 = 0,005 mol/L vor. Diese sollen mit Natronlauge (c = 0,02 mol/L) vollständig neutralisiert werden. Berechne das benötigte Volumen der Natronlauge, erläutere die Bedingung am Äquivalenzpunkt und begründe, warum der pH-Wert am Äquivalenzpunkt bei 7 liegt. Verfasse eine zusammenhängende Auswertung (ca. 150 Wörter).
 RUBRIC (30 XP): Aufstellen der Neutralisationsgleichung HCl + NaOH -> NaCl + H2O (5 XP) | Stoffmengenansatz c1 * V1 = c2 * V2 und Berechnung V2 = 25 mL (10 XP) | Bedingung am Äquivalenzpunkt n(H3O+) = n(OH-) (8 XP) | Begründung pH = 7 wegen vollständiger Neutralisation durch starke Säure und starke Base (7 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY (Kernzusammenfassung):
 

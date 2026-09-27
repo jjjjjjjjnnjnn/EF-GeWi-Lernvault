@@ -15,7 +15,7 @@ version: Lesson-v3
 
 <!-- Lesson v3 9-Schritt-Architektur: Schritt 1 bis 8 feste Struktur; Fehlvorstellung zwischen Schritt 6 und 7 (Parser ueberspringt, zaehlt nicht); interaktive [Werkzeug: <id>]; Gating: check/szenario nicht bestanden = Weiter deaktiviert; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
-## Schritt 1 — entdecken
+## Schritt 1 — entdecken: Ziele & Phänomen-Einstieg
 ZIELE (drei messbare Ziele dieser Lektion):
 
 1. Du kannst mit $v = \Delta c / \Delta t$ die Reaktionsgeschwindigkeit als Konzentrationsaenderung pro Zeit erklaeren und aus $c$-$t$-Daten die mittlere Geschwindigkeit berechnen.
@@ -24,7 +24,7 @@ ZIELE (drei messbare Ziele dieser Lektion):
 
 ### Hook / Phaenomen
 
-Eine Brausetablette im Ganzen braucht Minuten, zerkleinert nur Sekunden — und in warmem Wasser sprudelt sie heftiger als in kaltem. Dieselbe Tablette, dieselbe Wassermenge, voellig anderes Tempo. Zaehlt auf Teilchenebene die Zahl der Zusammenstoesse oder ihre Wucht? Und warum reinigt der Abgaskatalysator jahrelang tausende Kubikmeter Abgas, ohne je verbraucht zu werden?
+Eine Brausetablette im Ganzen braucht Minuten, zerkleinert nur Sekunden — und in warmem Wasser sprudelt sie heftiger als in kaltem. Dieselbe Tablette, dieselbe Wassermenge, voellig anderes Tempo. Zaehlt auf Teilchenebene die Zahl der Zusammenstoesse oder ihre Wucht? Und warum reinigt der Abgaskatalysator jahrelang tausende Kubikmeter Abgas, ohne je verbraucht zu werden? Brausetabletten zeigen die Wippe der Geschwindigkeit: Zerkleinern vergroessert die Oberflaeche, Erwaermen erhoeht die wirksamen Stoesse nach der RGT-Regel, ein Katalysator senkt die Aktivierungsenergie Ea ohne Kc zu veraendern. Das Gleichgewicht selbst folgt Q gegen Kc mit Drehpunkt Kc wie eine Le-Chatelier-Wippe. Wer Oberflaeche, Temperatur, Konzentration und Katalysator mit weil und deshalb trennt, deutet Geschwindigkeit und Lage fehlerfrei.
 
 ### Fachbegriff & Definition
 
@@ -36,7 +36,7 @@ Die Kausalkette lautet: **Bedingung, Stosshaeufigkeit, Tempo**. Konzentration er
 
 Klausur-Satz: `Die Reaktionsgeschwindigkeit v = Δc/Δt beschreibt die Konzentrationsaenderung pro Zeit und wird durch die Haeufigkeit wirksamer Zusammenstoesse bestimmt.`
 
-## Schritt 2 — entdecken
+## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
 ### Hook / Phaenomen
@@ -57,34 +57,30 @@ Die Begriffe greifen ineinander: $v$ zaehlt die **wirksamen Stoesse**, $E_a$ bes
 
 Klausur-Satz: `Ein Katalysator eroeffnet einen Reaktionsweg mit niedrigerer Aktivierungsenergie und bleibt dabei selbst unveraendert.`
 
-## Schritt 3 — entdecken
+## Schritt 3 — entdecken: Kernkonzept & Wirkungsmodell
 TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
 ### Hook / Phaenomen
 
-Der Abgasversuch liefert harte Zahlen: $0{,}80$ auf $0{,}40\,\mathrm{mol/L}$ in $20\,\mathrm{s}$, also $v = 0{,}020\,\mathrm{mol/(L \cdot s)}$. Doch was bedeutet diese Zahl auf Teilchenebene — und warum duerfte man sie mit Katalysator frueher messen, aber nie anders im Gleichgewicht?
+Warum laeuft Wasserstoffperoxid mit Braunstein sprudelnd ab, ohne Braunstein aber kaum, obwohl Anfang und Ende identisch sind? Der Katalysator baut einen Tunnel durch den Berg. Wie veraendert ein neuer Weg mit Doppelgipfel die Aktivierungsenergie $E_a$, ohne Edukt- und Produktniveau zu verschieben?
 
-### Fachbegriff & Definition
+### Spiel-Aufgabe
 
-Der **Doppelpeak des Katalysatorwegs** besagt: Der Katalysator ersetzt den einen hohen Energieberg durch **zwei flache Huegel** — Adsorption und Reaktion auf der Oberflaeche, dann Desorption der Produkte. Die **Aktivierungsenergie** $E_a$ sinkt, weil jeder Teilschritt eine kleinere Huerde besitzt; **Edukt- und Produktenergie bleiben unveraendert**, sodass Hin- und Rueckreaktion gleichermassen beschleunigt werden. Genau deshalb gilt: schneller zum Gleichgewicht, aber keine andere Lage — $K_c$ bleibt, nur die Zeit bis $Q = K_c$ wird kuerzer.
+Spiel-Aufgabe im Kopf-Labor: Erhoehe im Simulator die Temperatur von $20^\circ\mathrm{C}$ auf $40^\circ\mathrm{C}$ und schalte dann den Katalysator zu. Beobachte die Energiekurve mit Pfeilen fuer $E_a$ ohne und mit Katalysator sowie die Teilchenstoss-Pfeile. Notiere $v = \frac{\Delta c}{\Delta t}$ und Halbwertszeit. Erklaere in einem Satz mit weil, warum der Tunnel nur die Zeit verkuerzt.
 
-### Wirkungsgefuege / Modell
+### Aha-Moment & Gesetz
 
-Denke in Kausalkette: **Haften, Treffen, Verlassen**. Erstens haften $CO$ und $NO$ an Platin und Rhodium — guenstige Lage ohne Extrakosten. Zweitens treffen sie sich in richtiger Orientierung bei niedrigerer $E_a$ — viele bisher zu schwache Stoesse werden wirksam. Drittens verlassen $CO_2$ und $N_2$ das Blech, die Haftplaetze werden frei — der Katalysator geht unverbraucht hervor. Blei blockiert die Plaetze dauerhaft — Katalysatorgift ohne Beteiligung an der Bilanz.
+Aha-Moment und Gesetz: Die Kausalkette lautet Stoss, Berg, Tunnel. Hoehere Temperatur und Konzentration erhoehen die Zahl wirksamer Stoesse, der Katalysator senkt $E_a$ ueber einen neuen Weg. Es gilt $v = \frac{\Delta c}{\Delta t}$ und $v_{max}$ bei Saettigung des Katalysators; Anfang und Ende bleiben gleich, nur der Gipfel sinkt. Wer $E_a$ senkt, beschleunigt hin und rueck gleich, daher keine Lageaenderung von $K_c$.
 
 ```diagram
-   Energie ^
-           |      ____  ohne Kat (hoch)
-           |     /    \
-           |    /      \            __ mit Kat (Peak 1)
-           |   /        \          /  \    __ (Peak 2)
-           |  /          \        /    \  /  \
-           +-/------------\------/------\/----\----> Reaktionsweg
-            Edukte          \    Kat-Weg  \   Produkte
-                             Ea(ohne) > Ea(mit)
-   Legende: Ea = Huerde, Kat = neuer Weg mit Doppelpeak
-   Formel: v = Dc/Dt, Beispiel: 2CO + 2NO --Kat--> 2CO2 + N2
-   Messwert: Dc = 0,40 mol/L, Dt = 20 s, v = 0,020 mol/(L s)
+    Energie E ueber Reaktionsweg
+    E ^
+      |  /\            ohne Kat (Ea hoch)
+      | /  \    /\     mit Kat (Doppelgipfel, Ea niedrig)
+      |/    \__/  \___ Edukt gleich, Produkt gleich
+      +----------------> Weg
+    T hoch --> mehr Stosse --> v hoch; Kat --> Ea niedrig --> v hoch
+    Regel: Kat aendert weder dH noch Kc, nur die Zeit bis Q = Kc.
 ```
 
 Klausur-Satz: `Der Katalysator senkt die Aktivierungsenergie ueber einen neuen Weg mit Doppelpeak, ohne Anfangs- und Endenergie zu veraendern.`
@@ -95,24 +91,24 @@ Klausur-Satz: `Der Katalysator senkt die Aktivierungsenergie ueber einen neuen W
 
 **Bezug zum Konzept**: `Der Katalysator stellt Haftplaetze bereit, senkt die Huerde und verlaesst die Reaktion unveraendert.`
 
-## Schritt 4 — ausprobieren
+## Schritt 4 — ausprobieren: Interaktive Praxis & Gleichgewichts-Labor
 
-BEISPIEL (Musteraufgabe mit Loesungsweg):
+BEISPIEL (geleitete Aufgabe mit Werkzeug):
 
-[Werkzeug: formula]
+[Werkzeug: le-chatelier-sim]
 
-AUFGABE (analysieren, AFB II): In einem Abgasversuch sinkt die CO-Konzentration in 20 s von 0.80 mol/L auf 0.40 mol/L; die Reaktion lautet 2CO + 2NO --Kat--> 2CO2 + N2. Berechnen Sie die mittlere Reaktionsgeschwindigkeit v und beschreiben Sie, wie der Katalysator wirkt, ohne die Lage des Gleichgewichts zu veraendern.
+AUFGABE (Spiel-Auftrag, AFB II, 3 Stufen): Stufe 1 Stoppen: $c$ faellt in $50\,\mathrm{s}$ von $1{,}20$ auf $0{,}20\,\mathrm{mol/L}$. Berechne $v$. Stufe 2 Tunneln: Zeichne den Doppelgipfel mit niedrigerem $E_a$ ein. Stufe 3 Sichern: Begruende in einem Satz mit weil, warum $K_c$ bleibt.
 
 HILFE:
-1. Schritt 1: Δc aus Anfangs- und Endkonzentration bilden, Δt ablesen, dann v = Δc/Δt einsetzen.
-2. Schritt 2: Drei Bedingungen wirksamer Zusammenstoesse nennen und am Beispiel CO plus NO erklaeren.
-3. Schritt 3: Katalysator als neuen Weg mit niedrigerer Aktivierungsenergie deuten und betonen, dass Edukt- und Produktenergie gleich bleiben.
+1. Schritt 1: $v = \frac{\Delta c}{\Delta t} = \frac{1{,}00}{50}$ rechnen.
+2. Schritt 2: Gipfel senken, Start und Ziel gleich lassen.
+3. Schritt 3: Hin und rueck schneller bedeutet Lage gleich.
 
-MUSTERLOESUNG: Es gilt Δc = 0.80 mol/L minus 0.40 mol/L = 0.40 mol/L und Δt = 20 s, also v = 0.40/20 = 0.020 mol/(L s). Dieser Wert beschreibt die mittlere Abnahme von CO. Auf Teilchenebene muessen CO und NO mit genug Energie in richtiger Orientierung auf der Kat-Oberflaeche zusammentreffen; nur solche Stoesse sind wirksam. Der Katalysator bietet Haftplaetze und einen neuen Weg mit niedrigerer Aktivierungsenergie im Doppelpeak-Bild, sodass bei gleicher Temperatur mehr Stoesse die Huerde nehmen. Da Anfangs- und Endenergie unveraendert bleiben, aendert sich die Lage des Gleichgewichts nicht, nur die Zeit bis zum Erreichen wird kuerzer.
+MUSTERLOESUNG: Mit $v = \frac{\Delta c}{\Delta t}$ folgt $v = \frac{1{,}20 - 0{,}20}{50} = 0{,}020\,\mathrm{mol/(L \cdot s)}$, weil die Konzentrationsaenderung pro Zeit zaehlt. Der Katalysator oeffnet einen neuen Weg mit Doppelgipfel und niedrigerer $E_a$, beschleunigt Hin- und Rueckreaktion gleich und veraendert weder Edukt- noch Produktenergie. Daher bleibt $K_c$ unveraendert, weil nur die Zeit bis $Q = K_c$ verkuerzt wird.
 
 Klausur-Satz: `Mit v = Δc/Δt folgt v = 0.020 mol/(L s); der Katalysator beschleunigt ueber niedrigere Ea, ohne Edukt- und Produktenergie zu verschieben.`
 
-## Schritt 5 — ausprobieren
+## Schritt 5 — ausprobieren: Verfahrensvergleich & Abgrenzung
 
 VERGLEICH (zwei Verfahren unterscheiden):
 
@@ -127,7 +123,7 @@ ANTWORT: A erfordert Verfahren (i): Versuch 2 startet schneller, weil mehr Teilc
 
 Klausur-Satz: `Mehr Konzentration erhoeht die Stosszahl, der Katalysator senkt die Huerde; nur der erste Fall aendert v ueber die Teilchenzahl, der zweite ueber Ea.`
 
-## Schritt 6 — check
+## Schritt 6 — check: Verständnisprüfung
 
 CHECK (Selbsttest, 3 Fragen mit Antworten):
 
@@ -149,14 +145,14 @@ Klausur-Satz: `Wirksame Stoesse brauchen Energie, Orientierung und Kontakt; der 
    Korrektur: Er senkt die gemeinsame Schwelle von Hin- und Rueckweg, beide Richtungen werden gleich beschleunigt; Lage und Ausbeute bleiben. Er aendert die Zeit bis zum Ziel, nicht das Ziel. Wer nach Verschiebung gefragt wird, waehlt niemals den Katalysator.
    Korrektur-Satz: `Der Katalysator beschleunigt Hin- und Rueckreaktion gleich und veraendert die Lage des Gleichgewichts nicht.`
 
-## Schritt 7 — szenario
+## Schritt 7 — szenario: Klausurtransfer & Rubric
 
 ROLLE: Du bist Praktikantin im Umweltlabor und erklaerst einer Besuchergruppe den Auto-Katalysator.
 SITUATION: Die Gruppe fragt, warum ein kleines Kat-Blech die giftigen Gase CO und NO dauerhaft in CO2 und N2 verwandeln kann, ohne selbst zu verschwinden. Antworte in einer zusammenhaengenden Darstellung (ca. 150 Woerter) mit der Gleichung 2CO + 2NO --Kat--> 2CO2 + N2, der Formel v = Δc/Δt und dem Ea-Doppelpeak.
 AUFGABE: Schreibe eine Klausur-Antwort mit Berechnungsskizze, Teilchendeutung und Urteil ueber Verbrauch und Gleichgewicht.
 RUBRIC (30 XP): Korrekte Deutung von v = Δc/Δt und der drei Stossbedingungen (10 XP) | Beschreibung des Kat-Weges mit niedrigerer Ea als Doppelpeak (10 XP) | Urteil: Kat bleibt unveraendert, Gleichgewichtslage bleibt gleich (10 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY (Kernzusammenfassung):
 

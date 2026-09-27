@@ -15,7 +15,7 @@ version: Lesson-v3
 
 <!-- Lesson v3 9-Schritt-Architektur: Schritt 1 bis 8 feste Struktur; Fehlvorstellung zwischen Schritt 6 und 7 (Parser ueberspringt, zaehlt nicht); interaktive [Werkzeug: <id>]; Gating: check/szenario nicht bestanden = Weiter deaktiviert; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
-## Schritt 1 — entdecken
+## Schritt 1 — entdecken: Ziele & Phänomen-Einstieg
 ZIELE (drei messbare Ziele dieser Lektion):
 
 1. Du kannst den MWG-Ausdruck einer reversiblen Reaktion aufstellen — mit zwei Regeln: Exponent gleich Koeffizient, reine Feststoffe und Fluessigkeiten entfallen.
@@ -24,7 +24,7 @@ ZIELE (drei messbare Ziele dieser Lektion):
 
 ### Hook / Phaenomen
 
-Im Schullabor stehen zwei Kolben mit demselben Gasgemisch: Erwaermt man den einen, wird er dunkelbraun, kuehlt man den anderen, wird er fast farblos — obwohl nichts hineingegeben und nichts entnommen wurde. Dahinter steckt $2NO_2 \rightleftharpoons N_2O_4$: Braunes $NO_2$ und farbloses $N_2O_4$ wandeln sich staendig ineinander um. Wie kann ein System reagieren, ohne dass sich am Ende die Konzentrationen aendern? Und warum veraendert Erwaermen die Lage dauerhaft, Druckerhoehung aber nur voruebergehend?
+Im Schullabor stehen zwei Kolben mit demselben Gasgemisch: Erwaermt man den einen, wird er dunkelbraun, kuehlt man den anderen, wird er fast farblos — obwohl nichts hineingegeben und nichts entnommen wurde. Dahinter steckt $2NO_2 \rightleftharpoons N_2O_4$: Braunes $NO_2$ und farbloses $N_2O_4$ wandeln sich staendig ineinander um. Wie kann ein System reagieren, ohne dass sich am Ende die Konzentrationen aendern? Und warum veraendert Erwaermen die Lage dauerhaft, Druckerhoehung aber nur voruebergehend? Das System reagiert wie eine Wippe mit Drehpunkt Kc: Stoert man Konzentration oder Druck, aendert sich zunaechst nur der Reaktionsquotient Q, das System laeuft nach rechts fuer Q kleiner Kc und nach links fuer Q groesser Kc, bis wieder Q gleich Kc gilt. Allein die Temperatur verschiebt die Zielmarke Kc selbst, Erwaermen bevorzugt die endotherme Richtung. Wer Stoerung, Richtung und Begruendung ueber Q gegen Kc nennt, sichert alle Deutungspunkte auf AFB-II-Niveau.
 
 ### Fachbegriff & Definition
 
@@ -36,7 +36,7 @@ Die Kausalkette lautet: **Stoerung, Vergleich, Ablauf**. Jede Aenderung von Konz
 
 Klausur-Satz: `Nach dem Massenwirkungsgesetz ist die Gleichgewichtskonstante K_c der Quotient der mit ihren Koeffizienten potenzierten Gleichgewichtskonzentrationen von Produkten und Edukten; reine Feststoffe und Flüssigkeiten werden nicht aufgenommen.`
 
-## Schritt 2 — entdecken
+## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
 ### Hook / Phaenomen
@@ -57,37 +57,28 @@ Die Begriffe greifen ineinander: Das **MWG** liefert den Ausdruck, $K_c$ die tem
 
 Klausur-Satz: `Ein dynamisches Gleichgewicht liegt vor, wenn die Geschwindigkeiten der Hin- und Rückreaktion gleich groß sind und die Konzentrationen konstant bleiben.`
 
-## Schritt 3 — entdecken
+## Schritt 3 — entdecken: Kernkonzept & Wirkungsmodell
 TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
 ### Hook / Phaenomen
 
-Die Haber-Bosch-Anlage arbeitet bei ueber 400 Grad Celsius, obwohl hohe Temperatur die Ammoniak-Ausbeute senkt — ein scheinbarer Widerspruch, der ueber Millionen Tonnen Duenger entscheidet. Er loest sich nur, wenn man Ausbeute und Geschwindigkeit getrennt denkt und jede Stoerung sauber durch den $Q$-$K_c$-Vergleich hindurchdenkt.
+Warum wird braunes $NO_2$ beim Abkuehlen fast farblos, obwohl nichts entnommen wird, und warum arbeitet die Ammoniak-Anlage bei hohem Druck, obwohl hohe Temperatur die Ausbeute senkt? Das System reagiert wie eine Wippe: Druck auf einer Seite, Temperatur auf der anderen. Wo liegt der Drehpunkt $K_c$?
 
-### Fachbegriff & Definition
+### Spiel-Aufgabe
 
-Der **Zielkonflikt der Ammoniaksynthese** lautet: Die Hinreaktion $N_2 + 3H_2 \rightleftharpoons 2NH_3$ ist **exotherm** ($\Delta H < 0$), daher verschiebt Erwaermen das Gleichgewicht nach links und **senkt $K_c$** — die Ausbeute sinkt. Gleichzeitig verlangt die **Reaktionsgeschwindigkeit** hohe Temperatur, weil sonst kaum wirksame Zusammenstoesse stattfinden. Die Industrie waehlt deshalb einen Kompromiss: mittlerer Temperaturbereich plus **hoher Druck** (4 gegen 2 Gasteilchen, Verschiebung nach rechts) plus **Katalysator**, der nur die Zeit bis $Q = K_c$ verkuerzt, ohne die Lage zu veraendern.
+Spiel-Aufgabe im Kopf-Labor: Erhoehe im Gedanken-Simulator den Druck von $1\,\mathrm{bar}$ auf $200\,\mathrm{bar}$ und danach die Temperatur von $400^\circ\mathrm{C}$ auf $550^\circ\mathrm{C}$. Beobachte die Verschiebungspfeile nach rechts oder links sowie $Q$ gegen $K_c$. Notiere Gasteilchenzahl $4$ gegen $2$ und Ausbeute. Erklaere in einem Satz mit weil, warum nur die Temperatur $K_c$ veraendert.
 
-### Wirkungsgefuege / Modell
+### Aha-Moment & Gesetz
 
-Denke in Kausalkette: **Stoerung, Mengenreaktion, Kennzahl**. Edukt zugeben oder Produkt entziehen senkt $Q$ unter $K_c$ — Ablauf nach rechts bei unveraendertem $K_c$. Druck erhoehen bevorzugt die Seite mit weniger Gasteilchen — $Q$ passt sich an, $K_c$ bleibt. Temperatur erhoehen veraendert $K_c$ selbst — bei exothermer Hinreaktion sinkt $K_c$, das System laeuft nach links. Der **Katalysator** aendert weder $Q$ noch $K_c$, sondern nur die Geschwindigkeit, mit der $Q$ wieder gleich $K_c$ wird.
+Aha-Moment und Gesetz: Die Kausalkette lautet Stoerung, Vergleich, Ablauf. Jede Stoerung aendert zuerst $Q$, das System laeuft, bis $Q = K_c$ gilt. Es gilt $K_c = \frac{[C]^c \cdot [D]^d}{[A]^a \cdot [B]^b}$; ist $Q < K_c$, laeuft es nach rechts, ist $Q > K_c$, nach links. Druck bevorzugt die Seite mit weniger Gasteilchen, Waerme die endotherme Richtung. Le Chatelier ist die Wippe, $Q$ gegen $K_c$ die Waage dahinter.
 
 ```diagram
-  N2 + 3 H2  <==>  2 NH3      (Hinreaktion exotherm, dH < 0)
-   Edukte: 4 Gasteilchen       Produkt: 2 Gasteilchen
-
-   Stoerung (Stress)           Antwort des Systems      K_c?
-   -------------------------------------------------  ------
-   c(N2) oder c(H2) erhoehen   -> nach rechts            unveraendert
-   c(NH3) entziehen            -> nach rechts            unveraendert
-   Druck erhoehen              -> nach rechts (weniger   unveraendert
-                                  Gasteilchen)
-   Temperatur erhoehen         -> nach links (endotherme sinkt
-                                  Richtung bevorzugt)
-   Katalysator zugeben         -> nur schneller, Lage    unveraendert
-                                  unveraendert
-
-   Regel: Q < K_c nach rechts, Q > K_c nach links, Q = K_c Gleichgewicht
+    N2 + 3H2 <==> 2NH3 (exotherm, 4 gegen 2 Teilchen)
+    Druck hoch (200 bar)  --Pfeil nach rechts--> Ausbeute hoch, Kc gleich
+    Temperatur hoch       --Pfeil nach links---> Ausbeute niedrig, Kc sinkt
+    Edukt plus            --Pfeil nach rechts--> Q < Kc, dann Ausgleich
+    Katalysator           --kein Pfeil---------> nur schneller, Lage gleich
+    Regel: Q < Kc rechts, Q > Kc links, Q = Kc Gleichgewicht.
 ```
 
 Klausur-Satz: `Eine Änderung der Konzentration oder des Drucks verändert K_c nicht, sondern nur den Reaktionsquotienten Q; allein eine Temperaturänderung verändert K_c selbst.`
@@ -98,25 +89,24 @@ Klausur-Satz: `Eine Änderung der Konzentration oder des Drucks verändert K_c n
 
 **Bezug zum Konzept**: Das Haber-Bosch-Verfahren zeigt, dass Ausbeute und Reaktionsgeschwindigkeit nach dem Prinzip von Le Chatelier gegeneinander abgewogen werden müssen.
 
-## Schritt 4 — ausprobieren
+## Schritt 4 — ausprobieren: Interaktive Praxis & Gleichgewichts-Labor
 
-BEISPIEL (Musteraufgabe mit Loesungsweg):
+BEISPIEL (geleitete Aufgabe mit Werkzeug):
 
-[Werkzeug: gleichgewicht]
+[Werkzeug: le-chatelier-sim]
 
-AUFGABE (berechnen, AFB II): Für die Reaktion H2(g) + I2(g) <-> 2 HI(g) gilt bei einer bestimmten Temperatur K_c = 64. Es werden H2 und I2 mit c0 = 0,50 mol/L eingesetzt, HI ist zu Beginn nicht vorhanden. Bestimmen Sie mithilfe einer Gleichgewichtstabelle die Gleichgewichtskonzentration von HI und den Umsetzungsgrad von H2.
+AUFGABE (Spiel-Auftrag, AFB II, 3 Stufen): Stufe 1 Wippen: Fuer $H_2 + I_2 \rightleftharpoons 2HI$ mit $K_c = 64$ starten $0{,}50\,\mathrm{mol/L}$ je Edukt. Schaetze die Lage. Stufe 2 Rechnen: Stelle die Dreisatztabelle mit $-x$/$-x$/$+2x$ auf und loese ueber Wurzelziehen. Stufe 3 Pruefen: Kontrolliere mit $Q = K_c$ und nenne den Umsatz.
 
 HILFE:
-1. Schritt 1: Schreibe die Reaktionsgleichung und den Ausdruck für K_c = [HI]^2 / ([H2] * [I2]).
-2. Schritt 2: Erstelle die Dreisatztabelle (Start / Änderung / Gleichgewicht); die Änderungszeile folgt den Koeffizienten: -x / -x / +2x.
-3. Schritt 3: Setze die Gleichgewichtskonzentrationen in K_c ein und löse durch Wurzelziehen.
-4. Schritt 4: Berechne den Umsetzungsgrad als x / c0.
+1. Schritt 1: $K_c = \frac{[HI]^2}{[H_2] \cdot [I_2]}$ aufstellen.
+2. Schritt 2: Gleichgewicht $0{,}50 - x$/$0{,}50 - x$/$2x$ einsetzen.
+3. Schritt 3: Wurzel ziehen $\frac{2x}{0{,}50 - x} = 8$, dann $x = 0{,}40$.
 
-MUSTERLOESUNG: Die Dreisatztabelle lautet: Start 0,50 / 0,50 / 0; Änderung -x / -x / +2x; Gleichgewicht 0,50 - x / 0,50 - x / 2x. Einsetzen ergibt (2x)^2 / (0,50 - x)^2 = 64. Da beide Seiten quadratisch sind, darf man die Wurzel ziehen: 2x / (0,50 - x) = 8, also 2x = 4 - 8x, woraus 10x = 4 und damit x = 0,40 mol/L folgt. Die Gleichgewichtskonzentration beträgt c(HI) = 2x = 0,80 mol/L, und für H2 bzw. I2 gilt c = 0,50 - 0,40 = 0,10 mol/L. Kontrolle: 0,80^2 / (0,10 * 0,10) = 0,64 / 0,01 = 64, also gleich K_c. Der Umsetzungsgrad von H2 ist x / c0 = 0,40 / 0,50 = 0,80, das heißt 80 %.
+MUSTERLOESUNG: Mit Start $0{,}50$/$0{,}50$/$0$ und Aenderung $-x$/$-x$/$+2x$ gilt im Gleichgewicht $\frac{(2x)^2}{(0{,}50 - x)^2} = 64$. Wurzelziehen liefert $\frac{2x}{0{,}50 - x} = 8$, also $x = 0{,}40\,\mathrm{mol/L}$. Damit ist $c(HI) = 0{,}80\,\mathrm{mol/L}$ und $c(H_2) = c(I_2) = 0{,}10\,\mathrm{mol/L}$; die Kontrolle $\frac{0{,}80^2}{0{,}10 \cdot 0{,}10} = 64$ bestaetigt $Q = K_c$. Der Umsatz betraegt $80\,\%$, weil $K_c \gg 1$ die Produkte bevorzugt.
 
 Klausur-Satz: `Zur Berechnung von Gleichgewichtskonzentrationen wird eine Dreisatztabelle verwendet, deren Änderungszeile nach den stöchiometrischen Koeffizienten angesetzt und anschließend in das Massenwirkungsgesetz eingesetzt wird.`
 
-## Schritt 5 — ausprobieren
+## Schritt 5 — ausprobieren: Verfahrensvergleich & Abgrenzung
 
 VERGLEICH (zwei Verfahren unterscheiden):
 
@@ -132,7 +122,7 @@ ANTWORT: A erfordert Verfahren (i): Es gilt K_c = [HI]^2 / ([H2] * [I2]) = (1,60
 
 Klausur-Satz: `Wird ein exothermes Gleichgewicht erwärmt, verschiebt es sich in Richtung der Edukte, da das System der Erwärmung durch die endotherme Rückreaktion entgegenwirkt.`
 
-## Schritt 6 — check
+## Schritt 6 — check: Verständnisprüfung
 
 CHECK (Selbsttest, 3 Fragen mit Antworten):
 
@@ -154,13 +144,13 @@ Klausur-Satz: `Eine Änderung der Konzentration oder des Drucks verändert nur Q
    Korrektur: Beides ist zu trennen. Konzentration oder Druck veraendern nur $Q$; die Verschiebung stellt $Q = K_c$ wieder her, $K_c$ selbst bleibt. Allein die Temperatur veraendert $K_c$. Wer beides vermischt, verliert Begruendungspunkte.
    Korrektur-Satz: `Das Gleichgewicht verschiebt sich so lange, bis Q wieder gleich K_c ist; nur eine Temperaturänderung verändert K_c selbst.`
 
-## Schritt 7 — szenario
+## Schritt 7 — szenario: Klausurtransfer & Rubric
 
 ROLLE: Du bist Verfahrenstechniker in einem Werk, das nach dem Haber-Bosch-Verfahren Ammoniak herstellt.
 SITUATION: Für die exotherme Reaktion N2(g) + 3 H2(g) <-> 2 NH3(g) soll die Ammoniak-Ausbeute erhöht werden. Die Betriebsleitung schlägt vor, die Temperatur deutlich zu erhöhen und den Druck abzusenken. Beurteile diesen Vorschlag in einer zusammenhängenden Stellungnahme (ca. 150 Wörter) mit dem Prinzip von Le Chatelier und begründe, welche Bedingungen tatsächlich günstig sind.
 RUBRIC (30 XP): Analyse der Temperaturwirkung — exotherm, Erwärmen verschiebt nach links (8 XP) | Analyse der Druckwirkung — 4 Gasteilchen links gegen 2 rechts, Druckabsenkung verschiebt nach links (8 XP) | Gegenentwurf mit korrekten Bedingungen — hoher Druck, mäßige Temperatur, Katalysator (8 XP) | Kriteriengeleitetes Urteil mit Abwägung von Ausbeute und Reaktionsgeschwindigkeit (6 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY (Kernzusammenfassung):
 

@@ -15,7 +15,7 @@ version: Lesson-v3
 
 <!-- Lesson v3 9步制架构：Schritt 1至8固定结构；Fehlvorstellung 夹在 Schritt 6 与 7 之间（Parser 自动跳过，不占步数）；支持内嵌 [Werkzeug: <id>] 交互教具；Gating: check/szenario 未过 = Weiter 置灰；XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
-## Schritt 1 — entdecken
+## Schritt 1 — entdecken: Ziele & Phänomen-Einstieg
 
 ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
@@ -23,9 +23,20 @@ ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 2. 中文：能读出强酸强碱、强酸弱碱、弱酸强碱三类曲线的等当点酸碱性差异。
 3. 中文：能根据等当点 pH 落在指示剂变色域内来选择指示剂，并写出德语标准结论句（AFB II）。
 
+
+Hook中文生活切入:
+
+想象给一锅太咸的汤调味:一勺一勺加水并不断尝咸淡,刚开始几勺几乎尝不出变化,可接近合适咸淡时多一勺就过头变淡,咸淡突变只发生在一个很窄的区间。酸碱滴定正是这锅汤:滴定剂一滴一滴加,突跃区间很窄,指示剂就是在突变点准时变色的舌头。
+
+Phaenomen-Satz (DE): Loeffel fuer Loeffel schmeckt man nichts, dann kippt alles mit einem Tropfen.
+
+中文机制铺垫:强酸强碱滴定的突跃大,弱酸弱碱体系因缓冲而突跃小甚至分步出现;指示剂的变色范围必须落在突跃区间内,酚酞管碱性端、甲基橙管酸性端,选错指示剂终点就会系统性偏离。
+
+Mechanismus-Satz (DE): Der Sprung bestimmt die Kurve, der Indikator muss in seinen Bereich fallen.
+
 Klausur-Satz: `Der Indikator muss so gewaehlt werden, dass sein Umschlagsbereich den Aequivalenzpunkt der Titration enthaelt.`
 
-## Schritt 2 — entdecken
+## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
 
 PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
 
@@ -39,29 +50,43 @@ PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→�
 
 Klausur-Satz: `Der pH-Sprung am Aequivalenzpunkt ermoeglicht die sichtbare Endpunktbestimmung mit einem Indikator.`
 
-## Schritt 3 — entdecken
+## Schritt 3 — entdecken: Kernkonzept & Wirkungsmodell
 
-ENTDECKEN（1概念 + 1文字图解）：
+ENTDECKEN（1概念 + 1文字图解，中文在上、德语在下）：
 
-中文：滴定曲线是"一滴定乾坤"。大部分体积加进去 pH 纹丝不动（缓冲或过量压制），但在等当点附近，一滴标准液就把过量方从酸翻成碱，pH 垂直起飞，这段陡坡叫突跃。等当点的 pH 由生成的盐决定：强酸强碱生成中性盐 pH 7；滴弱碱则生成酸性铵盐 pH 小于 7；滴弱酸则生成碱性盐 pH 大于 7。选指示剂只有一条铁律：变色域必须套住等当点——酸性等当点配甲基橙，碱性等当点配酚酞，中性两者皆可。
+Hook中文生活切入：
+
+中文：想象给奶茶调甜度：每加一勺尝一口，前几勺变化不大，临界那一勺突然过甜。滴定曲线的突跃也是这个脾气。
+
+Phaenomen-Satz (DE): Tropfen fuer Tropfen fast nichts, ein Tropfen alles: der Sprung verrät den Punkt.
+
+Spiel-Aufgabe沙盒操作指引：
+
+中文：打开沙盒，拖动滑块逐滴加入标准液（关键词：Titrant, Äquivalenzpunkt, pH-Sprung, Umschlagsbereich），观察曲线何时陡峭，并切换不同指示剂看变色区间是否套住突跃。
+
+Beobachtungs-Satz (DE): Am Aequivalenzpunkt springt der pH, nur ein passender Indikator schlaegt dort um.
+
+Aha-Moment因果链：
+
+中文因果链：滴定终点附近被测物几乎耗尽，多一滴标准液就无缓冲可吃，pH直线拉升形成突跃；强弱酸碱生成的盐会水解，所以化学计量点的pH不一定等于7，指示剂变色区间必须包住突跃才看得见终点。
+
+Gesetz-Satz (DE): Das Salz der Neutralisation bestimmt den pH am Aequivalenzpunkt, nicht der Titrant allein.
+
+$pH = -\lg[H_3O^+]$
+
+$K_w = [H_3O^+]\cdot[OH^-] = 10^{-14}$
 
 文字图解（ASCII 结构图，App支持解析渲染）：
 
 ```diagram
-   pH ^
-   12 |                         ,-- Phenolphthalein (8-10)
-   10 |                       .´
-    8 |                     .´  <- Aequivalenzpunkt (je nach Salz)
-    6 |                   .´
-    4 |   . . . . . . . .´      <- Methylorange (3-4)
-    2 |.´ Start-pH
-    0 +----------------------------------> V(Titrant)
-        Puffer --- Sprung --- Ueberschuss
-        stark sauer + stark basisch -> pH 7
-        stark sauer + schwach basisch -> pH < 7
-        schwach sauer + stark basisch -> pH > 7
+pH ^
+  12|      ............
+    |     /  Sprung
+   7|..../.............
+    |  /
+  2 +--------------------> V(Titrant)
+  Indikator-Balken muss Sprung ueberdecken
 ```
-
 Klausur-Satz: `Der pH am Aequivalenzpunkt wird vom Salz der Neutralisation bestimmt, nicht vom Titrant allein.`
 
 ## Anekdote & Fun-Fact
@@ -72,26 +97,31 @@ Klausur-Satz: `Der pH am Aequivalenzpunkt wird vom Salz der Neutralisation besti
 
 **Bezug zum Konzept**: `Indikatoren machen den unsichtbaren Aequivalenzpunkt mit einem Farbwechsel sichtbar.`
 
-## Schritt 4 — ausprobieren
+## Schritt 4 — ausprobieren: Interaktive Praxis & Labor
 
-BEISPIEL（正确例题示范，含教具操作与解答）：
+[Werkzeug: titration-lab]
 
-[Werkzeug: titration]
+BEISPIEL（正确例题示范，含教具操作与解答，中文在上、德语在下）：
 
-AUFGABE中文导读：用盐酸滴定氨水，已知体积浓度求等当点 pH 范围并选择指示剂，练习"盐决定等当点"思路。
+AUFGABE中文导读（沙盒谜题）：用强酸滴定弱碱，曲线突跃落在酸性区。请判断计量点酸碱性并挑选指示剂，说明为什么酚酞不行。
 
-AUFGABE (begruenden, AFB II)：$20\,\mathrm{mL}$ Ammoniakloesung ($c = 0{,}1\,\mathrm{mol/L}$) wird mit Salzsaeure ($0{,}1\,\mathrm{mol/L}$) titriert. Schaetzen Sie den pH am Aequivalenzpunkt ab und waehlen Sie einen geeigneten Indikator. Begruenden Sie.
+AUFGABE (auswaehlen, AFB II): Bei der Titration einer schwachen Base mit starker Saeure liegt der Sprung im Sauren. Waehlen Sie einen Indikator und begruenden Sie die Wahl ueber den $pH$-Sprung.
 
-HILFE:
-1. Schritt 1: Neutralisationsgleichung aufstellen: $NH_3 + HCl \to NH_4Cl$; am Aequivalenzpunkt liegt nur $NH_4Cl$ vor.
-2. Schritt 2: Salzcharakter bestimmen: $NH_4^+$ ist konjugierte Saeure einer schwachen Base -> sauer, pH ca. $5$.
-3. Schritt 3: Indikator waehlen, dessen Umschlagsbereich pH $5$ enthaelt.
+HILFE（中德双语步骤）：
 
-MUSTERLÖSUNG: Am Aequivalenzpunkt ist die Stoffmenge $n = 0{,}1 \cdot 0{,}02 = 0{,}002\,\mathrm{mol}$ $NH_4Cl$ in $40\,\mathrm{mL}$ enthalten ($c \approx 0{,}05\,\mathrm{mol/L}$). $NH_4^+$ hydrolysiert sauer, der pH liegt bei ca. $5{,}3$. Methylorange (Umschlag $3{,}1$–$4{,}4$) ist zu sauer, besser Methylrot ($4{,}4$–$6{,}2$); Phenolphthalein ($8$–$10$) ist falsch, weil sein Bereich den sauren Aequivalenzpunkt nicht enthaelt.
+1. 中文：第1步定计量点：弱碱的共轭酸水解显酸性，关键词：Salzhydrolyse。
+   Schritt 1 (DE): Das Ammoniumsalz hydrolysiert sauer, $pH < 7$.
+2. 中文：第2步定区间：选变色区间落在突跃内的酸性指示剂，关键词：Umschlag。
+   Schritt 2 (DE): Waehlen Sie Methylorange statt Phenolphthalein.
+3. 中文：第3步排除酚酞：在碱区变色会错过突跃，关键词：Ausschluss。
+   Schritt 3 (DE): Phenolphthalein schlaegt erst basisch um und verfehlt den Sprung.
 
+MUSTERLOESUNG：中文：弱碱被强酸滴定生成铵盐水解显酸，计量点pH小于7，突跃也在酸区；甲基橙变色区间约3到4正好套住突跃，酚酞8到10在碱区，变色时早已过终点，故不用。
+
+MUSTERLOESUNG (DE): Der Aequivalenzpunkt liegt sauer ($pH < 7$), weil das $NH_4^+$-Salz hydrolysiert. Methylorange mit Umschlag ca. $3$ bis $4$ trifft den Sprung; Phenolphthalein ($8$ bis $10$) schlaegt zu spaet um und ist ungeeignet.
 Klausur-Satz: `Bei der Titration einer schwachen Base mit starker Saeure liegt der Aequivalenzpunkt im Sauren und verlangt einen sauren Indikator.`
 
-## Schritt 5 — ausprobieren
+## Schritt 5 — ausprobieren: Verfahrensvergleich & Abgrenzung
 
 VERGLEICH辨别实验（双向辨析：酸性等当点眼 vs. 碱性等当点眼）：
 
@@ -106,7 +136,7 @@ ANTWORT: A erfordert Konzept (ii): Aequivalenzpunkt ca. pH $8$–$9$, Phenolphth
 
 Klausur-Satz: `Schwache Saeure verlangt basischen Indikator, schwache Base verlangt sauren Indikator.`
 
-## Schritt 6 — check
+## Schritt 6 — check: Verständnisprüfung
 
 CHECK检索默写（自测 3 题，与答案配对）：
 
@@ -128,14 +158,14 @@ Klausur-Satz: `Ohne pH-Sprung gaebe es keinen sichtbaren Endpunkt und keine Titr
    中文纠偏：酚酞只在 pH 8–10 变色，酸性等当点（如滴氨水）到不了那么高，用它永远不变色，会把标准液加过量。选错指示剂等于判错终点。
    Korrektur-Satz: `Ein Indikator ausserhalb des Aequivalenzpunkts zeigt den Endpunkt zu spaet oder nie an.`
 
-## Schritt 7 — szenario
+## Schritt 7 — szenario: Klausurtransfer & Rubric
 
 ROLLE: Du bist Laborpartnerin und erklaerst die Indikatorwahl.
 SITUATION: Ein Mitschueler will Essigsaeure mit NaOH gegen Phenolphthalein titrieren, ein anderer schlaegt Methylorange vor.
 AUFGABE: Entscheiden Sie in ca. 150 Woertern mit Salz-Argument, wer recht hat, und erklaeren Sie Kurvenlage und Umschlagsbereiche.
 RUBRIC (30 XP): Salz Acetat als basisch erkannt (10 XP) | Aequivalenzpunkt pH groesser $7$ (10 XP) | Indikatorentscheidung mit Bereichsbegruendung (10 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY 1盒（核心总结）：
 

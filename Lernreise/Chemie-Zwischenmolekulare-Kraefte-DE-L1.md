@@ -13,9 +13,9 @@ version: Lesson-v3
 
 # Lernreise: Zwischenmolekulare Kraefte und Stoffeigenschaften (L1, Ziel Klausur)
 
-<!-- Lesson v3 9-Schritt-Architektur: Schritt 1 bis 8 feste Struktur; Fehlvorstellung zwischen Schritt 6 und 7 (Parser ueberspringt, zaehlt nicht); interaktive [Werkzeug: <id>]; Gating: check/szenario nicht bestanden = Weiter deaktiviert; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
+<!-- Lesson v3 9-Schritt-Architektur: Schritt 1 bis 8 feste Struktur; Fehlvorstellung zwischen Schritt 6 und 7 (Parser ueberspringt, zaehlt nicht); interaktive [Werkzeug: formula]; Gating: check/szenario nicht bestanden = Weiter deaktiviert; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
-## Schritt 1 — entdecken
+## Schritt 1 — entdecken: Ziele & Phänomen-Einstieg
 ZIELE (drei messbare Ziele dieser Lektion):
 
 1. Du kannst kovalente Bindungen im Molekuel von Kraeften zwischen Molekuelen trennen und begruenden, dass Sieden und Schmelzen nur Letztere ueberwinden.
@@ -24,7 +24,7 @@ ZIELE (drei messbare Ziele dieser Lektion):
 
 ### Hook / Phaenomen
 
-Spiritus auf der Haut verdunstet in Sekunden und kuehlt, Speiseoel bleibt klebrig zurueck — beides Fluessigkeiten, voellig anderes Verhalten. Und warum schwimmt Eis auf Wasser, statt zu sinken wie fast jeder andere Feststoff in seiner Schmelze? Der unsichtbare Klebstoff zwischen den Molekuelen entscheidet ueber Sieden, Loesen und Gefrieren.
+Spiritus auf der Haut verdunstet in Sekunden und kuehlt, Speiseoel bleibt klebrig zurueck — beides Fluessigkeiten, voellig anderes Verhalten. Und warum schwimmt Eis auf Wasser, statt zu sinken wie fast jeder andere Feststoff in seiner Schmelze? Der unsichtbare Klebstoff zwischen den Molekuelen entscheidet ueber Sieden, Loesen und Gefrieren. Spiritus kuehlt die Haut, Oel bleibt klebrig: Ethanol traegt O-H-Gruppen mit Wasserstoffbruecken, Alkane nur Van-der-Waals-Kraefte ueber die Kontaktflaeche. Im Formel-Labor den Temperatur-Regler erhoehen und die Trennpfeile zwischen den Molekuelen verfolgen, Mischpfeile mit Wasser und Hexan nach Gleiches loest Gleiches deuten. Wer Krafttyp, Staerke und Folge mit weil und deshalb verbindet, erklaert Sieden und Loesen vollstaendig.
 
 ### Fachbegriff & Definition
 
@@ -36,7 +36,7 @@ Die Pruefkette lautet: **O-H suchen, Dipol pruefen, Kette vergleichen**. Erstens
 
 Klausur-Satz: `Beim Sieden werden nur die zwischenmolekularen Kräfte überwunden, während die kovalenten Atombindungen innerhalb der Moleküle unverändert erhalten bleiben.`
 
-## Schritt 2 — entdecken
+## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
 ### Hook / Phaenomen
@@ -57,33 +57,27 @@ Die Begriffe bilden die Kette **Krafttyp, Staerke, Siedepunkt**: Krafttyp bestim
 
 Klausur-Satz: `Mit zunehmender Kettenlänge und Moleküloberfläche wachsen die Van-der-Waals-Kräfte, während polare O-H-Gruppen zusätzlich Wasserstoffbrücken ausbilden.`
 
-## Schritt 3 — entdecken
+## Schritt 3 — entdecken: Kernkonzept & Wirkungsmodell
 TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
 ### Hook / Phaenomen
 
-Warum schwimmt Eis auf Wasser? Beim Gefrieren ordnen Wasserstoffbruecken die Molekuele in einem offenen Gitter mit viel leerem Raum — Eis ist leichter als fluessiges Wasser. Ohne diese Anomalie saenke Eis auf den Grund von Seen, und viele Lebewesen ueberlebten den Winter nicht. Eine einzige Kraft erklaert Dichte, Siedepunkt und Loeslichkeit zugleich.
+Warum siedet Wasser bei $100^\circ\mathrm{C}$, aber Schwefelwasserstoff schon bei $-60^\circ\mathrm{C}$, obwohl beide $H$-$X$-$H$-Bau besitzen? Unsichtbare Haende halten die Teilchen fest. Welche Hand (Van-der-Waals, Dipol oder Wasserstoffbruecke) greift am staerksten, und was verraten Siede- und Loeslichkeitspfeile?
 
-### Fachbegriff & Definition
+### Spiel-Aufgabe
 
-Die **Struktur-Eigenschafts-Kette** besagt: Molekuelbau bestimmt Krafttyp, Krafttyp bestimmt makroskopische Eigenschaft. $Butan$ ($CH_3$-$CH_2$-$CH_2$-$CH_3$) kennt nur Van-der-Waals — Sdp. $-0{,}5\,^\circ\mathrm{C}$. $Propanal$ ($CH_3$-$CH_2$-$CHO$) fuegt Dipol-Dipol hinzu — Sdp. $+49\,^\circ\mathrm{C}$. $Propan$-$1$-$ol$ ($CH_3$-$CH_2$-$CH_2$-$OH$) bildet Wasserstoffbruecken — Sdp. $+97\,^\circ\mathrm{C}$. Gleiche Molmasse, dreifache Antwort — obwohl sich die Massen gleichen, unterscheiden sich die Siedepunkte, weil der Krafttyp staerker wird.
+Spiel-Aufgabe im Kopf-Labor: Erhoehe im Simulator die Temperatur und beobachte die Trennpfeile zwischen den Molekuelen. Vergleiche $H_2O$ mit Wasserstoffbruecken gegen $H_2S$ ohne, notiere Siedepunkte und Mischpfeile mit $NaCl$. Erklaere in einem Satz mit weil, warum $O$-$H$-Gruppen so viel Waerme verlangen.
 
-### Wirkungsgefuege / Modell
+### Aha-Moment & Gesetz
 
-Denke in Kausalkette: **Bau, Kraft, Folge**. Erstens Bau lesen: $O$-$H$ vorhanden? Dipol vorhanden? Kette lang? Zweitens Kraft zuordnen und Staerke nennen ($0{,}1$–$10$ gegen $5$–$25$ gegen $10$–$40\,\mathrm{kJ/mol}$). Drittens Folge ableiten: hoeherer Siedepunkt, bessere Wasserloeslichkeit, offenes Eisgitter. Loeslichkeit folgt derselben Logik: Polaritaet bestimmen, dann Gleiches-loest-sich anwenden.
+Aha-Moment und Gesetz: Die Kausalkette lautet Ladung, Netz, Energie. Wasserstoffbruecken $O$-$H \cdots O$ sind deutlich staerker als Dipol- und Van-der-Waals-Kraefte, daher braucht Sieden mehr thermische Energie. Es gilt groessere molare Masse erhoeht Van-der-Waals-Kraefte, aber eine $O$-$H$-Gruppe schlaegt Masse. Die Wippe heisst hier Konkurrenz von Kraeften: staerkste Hand bestimmt den Siedepunkt, aehnliche Polaritaet bestimmt die Loeslichkeit.
 
 ```diagram
-  Energie pro Teilchen (kJ/mol)      beim Sieden?
-    kovalente Bindung  [#########] 200-500    NEIN (bleibt erhalten)
-    Wasserstoffbruecke [##]         10-40     JA   (wird ueberwunden)
-    Dipol-Dipol        [#]           5-25     JA
-    Van-der-Waals      [.]         0,1-10     JA
-    ---------------------------------------------
-    Siedetemperatur bei M ~ 58-60 g/mol:
-     -0,5 C  Butan        CH3-CH2-CH2-CH3   nur VdW       |#
-     +49  C  Propanal     CH3-CH2-CHO       VdW + Dipol   |###
-     +97  C  Propan-1-ol  CH3-CH2-CH2-OH    VdW + H-Br.   |#######
-    Schnelltest: O-H/N-H? -> H-Br. | Dipol? -> Dipol | sonst VdW + Kette
+    Staerke: VdW < Dipol-Dipol < H-Bruecke (Pfeillaenge = Staerke)
+    H2O: O-H...O Netz --> Sieden 100 C (Pfeile schwer zu trennen)
+    H2S: nur VdW + schwach Dipol --> Sieden -60 C (Pfeile leicht)
+    Loeslichkeit: NaCl --Pfeil--> H2O mischbar (Ion-Dipol), Oel nicht
+    Regel: H-Bruecke schlaegt Masse, Gleiches loest Gleiches.
 ```
 
 Klausur-Satz: `Da Wasserstoffbrücken deutlich stärker sind als Van-der-Waals-Kräfte, benötigen Moleküle mit O-H-Gruppen eine wesentlich höhere thermische Energie zum Sieden.`
@@ -94,24 +88,24 @@ Klausur-Satz: `Da Wasserstoffbrücken deutlich stärker sind als Van-der-Waals-K
 
 **Bezug zum Konzept**: Die Dichteanomalie des Eises entsteht durch das offene Wasserstoffbrücken-Gitter und zeigt, wie stark diese zwischenmolekulare Kraft ist.
 
-## Schritt 4 — ausprobieren
+## Schritt 4 — ausprobieren: Interaktive Praxis & Formel-Labor
 
-BEISPIEL (Musteraufgabe mit Loesungsweg):
+BEISPIEL (geleitete Aufgabe mit Werkzeug):
 
 [Werkzeug: formula]
 
-AUFGABE (vergleichen & erklaeren, AFB II): Die drei Stoffe Butan (C4H10, M = 58 g/mol, Sdp. -0,5 °C), Propanal (C3H6O, M = 58 g/mol, Sdp. +49 °C) und Propan-1-ol (C3H8O, M = 60 g/mol, Sdp. +97 °C) besitzen nahezu gleiche molare Massen. Vergleichen Sie die Siedetemperaturen und erklären Sie den Unterschied mit den wirkenden zwischenmolekularen Kräften.
+AUFGABE (Spiel-Auftrag, AFB II, 3 Stufen): Stufe 1 Ordnen: Sortiere Butan, Aceton und Ethanol nach Siedepunkt. Stufe 2 Trennen: Sage Loeslichkeit von $NaCl$ in Wasser gegen Oel voraus. Stufe 3 Sichern: Begruende mit Kraefte-Pfeilen in zwei Saetzen mit weil. Erhoehe im Formel-Labor den Temperatur-Regler schrittweise und verfolge die Trennpfeile zwischen den Molekuelen sowie Mischpfeile mit Wasser und Hexan.
 
 HILFE:
-1. Schritt 1: Bestimme für jedes Molekül die Polarität und suche nach O-H- oder N-H-Gruppen.
-2. Schritt 2: Ordne jedem Stoff die stärkste wirkende zwischenmolekulare Kraft zu.
-3. Schritt 3: Verbinde die Kraftstärke mit dem Energieaufwand beim Sieden und nenne die Siedetemperatur.
+1. Schritt 1: $O$-$H$ bedeutet $H$-Bruecke, staerkste Hand.
+2. Schritt 2: Molmasse nur bei gleicher Kraefteklasse vergleichen.
+3. Schritt 3: Gleiches loest Gleiches (polar zu polar).
 
-MUSTERLOESUNG: Butan ist ein unpolares Kohlenwasserstoffmolekül; zwischen seinen Molekülen wirken ausschließlich schwache Van-der-Waals-Kräfte, daher siedet es bereits bei -0,5 °C. Propanal (CH3-CH2-CHO) besitzt wegen der polaren Carbonylgruppe ein permanentes Dipolmoment, sodass neben den Van-der-Waals-Kräften zusätzliche Dipol-Dipol-Wechselwirkungen auftreten; das erklärt den höheren Siedepunkt von +49 °C. Propan-1-ol (CH3-CH2-CH2-OH) enthält eine polare O-H-Gruppe und kann zwischen den Molekülen Wasserstoffbrücken ausbilden. Da deren Überwindung deutlich mehr Energie erfordert, steigt der Siedepunkt auf +97 °C. Obwohl alle drei Stoffe eine nahezu gleiche molare Masse haben, wächst die Siedetemperatur in der Reihenfolge Van-der-Waals < Dipol-Dipol < Wasserstoffbrücke.
+MUSTERLOESUNG: Ethanol siedet am hoechsten, weil $O$-$H \cdots O$-Bruecken deutlich staerker sind als Dipol- und Van-der-Waals-Kraefte; Aceton liegt in der Mitte durch Dipol-Kraefte, Butan unten nur mit Van-der-Waals-Kraeften. $NaCl$ loest sich in Wasser, weil Ion-Dipol-Kraefte das Gitter aufbrechen, in Oel dagegen nicht, weil unpolare Umgebung keine Ersatzpartner bietet. Daher steigt bei aehnlicher Masse der Siedepunkt von Van-der-Waals ueber Dipol zur $H$-Bruecke.
 
 Klausur-Satz: `Bei vergleichbarer molarer Masse steigt die Siedetemperatur in der Reihenfolge Van-der-Waals-Kräfte, Dipol-Dipol-Wechselwirkungen, Wasserstoffbrückenbindungen.`
 
-## Schritt 5 — ausprobieren
+## Schritt 5 — ausprobieren: Verfahrensvergleich & Abgrenzung
 
 VERGLEICH (zwei Verfahren unterscheiden):
 
@@ -127,7 +121,7 @@ ANTWORT: A erfordert Verfahren (i): Beide Moleküle sind unpolar, sodass nur Van
 
 Klausur-Satz: `Bei gleicher molarer Masse entscheidet das Vorhandensein einer O-H-Gruppe über die Siedetemperatur, weil Wasserstoffbrücken stärker als Dipol-Dipol-Wechselwirkungen sind.`
 
-## Schritt 6 — check
+## Schritt 6 — check: Verständnisprüfung
 
 CHECK (Selbsttest, 3 Fragen mit Antworten):
 
@@ -149,13 +143,13 @@ Klausur-Satz: `Je stärker die zwischenmolekularen Kräfte, desto mehr Energie i
    Korrektur: Die Regel gilt nur innerhalb einer Stoffklasse; Wasserstoffbruecken sprengen sie. Methanol ($CH_3$-$OH$, $M = 32\,\mathrm{g/mol}$) siedet bei $+65^\circ\mathrm{C}$ und damit hoeher als Propan ($C_3H_8$, $M = 44\,\mathrm{g/mol}$) bei $-42^\circ\mathrm{C}$ — die Bruecken heben Methanol darueber. Erst Krafttyp, dann Masse vergleichen.
    Korrektur-Satz: `Die molare Masse bestimmt den Siedepunkt nur innerhalb einer Stoffklasse; Wasserstoffbrücken können diesen Zusammenhang überlagern.`
 
-## Schritt 7 — szenario
+## Schritt 7 — szenario: Klausurtransfer & Rubric
 
 ROLLE: Du bist Tutor in der EF-Chemie und erklärst einer Mitschülerin den Stoff "zwischenmolekulare Kräfte".
 SITUATION: Auf dem Tisch stehen drei Gefäße mit Ethan (C2H6), Methanol (CH3-OH) und Wasser (H2O). Die Mitschülerin wundert sich, dass Ethan schon bei -89 °C gasförmig ist, Methanol erst bei +65 °C siedet und Wasser sogar erst bei +100 °C. Verfasse eine zusammenhängende Erklärung (ca. 150 Wörter), die die drei Siedetemperaturen mit den jeweils wirkenden zwischenmolekularen Kräften begründet.
 RUBRIC (30 XP): Nennung der drei Krafttypen (Van-der-Waals, Dipol-Dipol, Wasserstoffbrücken) (6 XP) | Zuordnung jeder Kraft zum jeweiligen Stoff mit Begründung aus der Struktur (10 XP) | Verknüpfung von Kraftstärke und Energieaufwand beim Sieden (8 XP) | Korrekte Fachsprache und klarer Vergleichssatz (6 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY (Kernzusammenfassung):
 

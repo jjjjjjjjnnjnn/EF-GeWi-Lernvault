@@ -13,9 +13,9 @@ version: Lesson-v3
 
 # Lernreise: Chemische Grundlagen (Atombau, Bindung, Gleichungen, Mol) (L1, Ziel Klausur)
 
-<!-- Lesson v3 9-Schritt-Architektur: Schritt 1 bis 8 feste Struktur; Fehlvorstellung zwischen Schritt 6 und 7 (Parser ueberspringt, zaehlt nicht); interaktive [Werkzeug: <id>]; Gating: check/szenario nicht bestanden = Weiter deaktiviert; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
+<!-- Lesson v3 9-Schritt-Architektur: Schritt 1 bis 8 feste Struktur; Fehlvorstellung zwischen Schritt 6 und 7 (Parser ueberspringt, zaehlt nicht); interaktive [Werkzeug: formula]; Gating: check/szenario nicht bestanden = Weiter deaktiviert; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
-## Schritt 1 — entdecken
+## Schritt 1 — entdecken: Ziele & Phänomen-Einstieg
 ZIELE (drei messbare Ziele dieser Lektion):
 
 1. Du kannst aus Protonenzahl und Elektronenverteilung Periode und Hauptgruppe bestimmen und die Aehnlichkeit innerhalb einer Gruppe erklaeren.
@@ -24,7 +24,7 @@ ZIELE (drei messbare Ziele dieser Lektion):
 
 ### Hook / Phaenomen
 
-Mendelejew liess in seinem System Luecken und sagte Eigenschaften noch unentdeckter Elemente voraus — Jahre spaeter stimmten die Messwerte verblueffend genau. Wie kann ein Blatt Papier wissen, was noch niemand gesehen hat? Und warum verhaelt sich Natrium wie Kalium, aber nicht wie sein Nachbar Magnesium? Die Antwort steht im Atombau.
+Mendelejew liess in seinem System Luecken und sagte Eigenschaften noch unentdeckter Elemente voraus — Jahre spaeter stimmten die Messwerte verblueffend genau. Wie kann ein Blatt Papier wissen, was noch niemand gesehen hat? Und warum verhaelt sich Natrium wie Kalium, aber nicht wie sein Nachbar Magnesium? Die Antwort steht im Atombau. Vom Atombau zur Rechnung fuehrt eine feste Kette: Protonenzahl bestimmt Element, Valenzelektronen bestimmen Gruppe, Partner bestimmen Bindungstyp, Koeffizienten bestimmen das Molverhaeltnis mit n gleich m durch M. Im Formel-Labor den Mol-Regler schrittweise erhoehen, Teilchenpfeile links gegen rechts zaehlen und Einheiten mitschreiben. Wer Bau, Stellung, Verhalten und Rechnung mit weil und deshalb verbindet, loest jede Grundlagenaufgabe vollstaendig.
 
 ### Fachbegriff & Definition
 
@@ -36,7 +36,7 @@ Die Kausalkette lautet: **Bau, Stellung, Verhalten, Rechnung**. Erstens Protonen
 
 Klausur-Satz: `Die Stellung im Periodensystem folgt aus der Elektronenkonfiguration: Die Periode gibt die Schalenanzahl, die Hauptgruppe die Anzahl der Valenzelektronen an.`
 
-## Schritt 2 — entdecken
+## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
 ### Hook / Phaenomen
@@ -57,39 +57,27 @@ Die Begriffe bilden die Rechenkette **Formel, Einheit, Kontrolle**: Formel hinsc
 
 Klausur-Satz: `Die Bindungsart folgt aus den Bindungspartnern: Metall und Nichtmetall bilden Ionen, zwei Nichtmetalle teilen Elektronenpaare.`
 
-## Schritt 3 — entdecken
+## Schritt 3 — entdecken: Kernkonzept & Wirkungsmodell
 TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
 ### Hook / Phaenomen
 
-Drei Atome, drei Schicksale: Natrium gibt sein Elektron ab, Chlor nimmt eines auf, Eisen teilt seinen Pool mit Nachbarn. Woher weiss jedes Atom, was zu tun ist? Der Blick auf Schalen und Partner verraet es — und eine einzige Zahl verbindet danach Masse mit Teilchen.
+Warum erlischt die Kerze im geschlossenen Glas, obwohl noch Wachs vorhanden ist, und warum beschlaegt das Glas von innen? Verbrennung folgt einem strengen Rezept. Wie viele $O_2$-Teilchen braucht ein $CH_4$, und warum muss die Gleichung $CH_4 + 2O_2 \to CO_2 + 2H_2O$ exakt aufgehen?
 
-### Fachbegriff & Definition
+### Spiel-Aufgabe
 
-Der **Periodentrend** lautet: In der Gruppe wachsen von oben nach unten **Atomradius und Metallcharakter**; in der Periode sinken sie von links nach rechts, der **Nichtmetallcharakter** steigt. Die Merkregel: Bei gleicher Schale zieht die groessere Kernladung die Elektronen staerker an, der Radius schrumpft. Die **Molschluessel** $n = m/M$, $N = n \cdot N_A$ und $c = n/V$ uebersetzen danach jede Messgroesse in Teilchen — vier Rechenschritte (Formel, Einsetzen mit Einheit, Ergebnis mit Einheit, Groessenordnung) tragen jeden Punkt.
+Spiel-Aufgabe im Kopf-Labor: Erhoehe im Simulator die $O_2$-Zufuhr und beobachte die Teilchenpfeile von $CH_4$ und $O_2$ zu $CO_2$ und $H_2O$. Verschiebe das Gleichgewicht gedanklich wie eine Wippe durch $O_2$-Plus (Pfeil rechts) und $CO_2$-Entzug (Pfeil rechts). Notiere Atombilanz links gegen rechts und erklaere in einem Satz mit weil, warum Koeffizienten Teilchen verknuepfen.
 
-### Wirkungsgefuege / Modell
+### Aha-Moment & Gesetz
 
-Denke in Kausalkette: **Stellung, Bindung, Bilanz**. Erstens Stellung bestimmen — Schalen und Valenzelektronen aus $Z$ ablesen. Zweitens Bindung aus den Partnern folgern — Ionen, Paare oder Elektronengas. Drittens Gleichung ausgleichen und ueber $n$ verrechnen. Wer zuerst die Stellung klaert, sagt Eigenschaften voraus wie Mendelejew — und wer zuerst ausgleicht, rechnet nie mit falschem Molverhaeltnis.
+Aha-Moment und Gesetz: Die Kausalkette lautet zaehlen, ausgleichen, deuten. Atome bleiben erhalten, daher muessen Koeffizienten so gewaehlt werden, dass links und rechts gleiche Anzahlen stehen. Es gilt $n = \frac{m}{M}$ und danach das Koeffizientenverhaeltnis als Stoffmengenverhaeltnis. Die Wippe zeigt die Richtung: Eduktplus drueckt nach rechts, bis $Q = K_c$ gilt. Wer Atome zaehlt, irrt nie bei der Ausbeute.
 
 ```diagram
-  Na-23  (Z = 11, A = 23)
-     Protonen   = 11          (bestimmt das Element)
-     Elektronen = 11          (neutrales Atom)
-     Neutronen  = 23 - 11 = 12 (nur Isotop)
-
-     Schalen:  K:2  L:8  M:1  ->  3. Periode, 1. Hauptgruppe
-     Valenzelektronen = 1  ->  Alkalimetall, bildet Na+
-
-  Bindung aus den Partnern:
-     Metall + Nichtmetall       -> Ionenbindung (z.B. MgO: Mg2+/O2-)
-     Nichtmetall + Nichtmetall  -> Elektronenpaarbindung (z.B. Cl2)
-     Metall + Metall            -> Metallbindung (Elektronengas)
-
-  Ausgleichen (nur Koeffizienten!):
-     C3H8 + 5 O2 -> 3 CO2 + 4 H2O
-     C 3:3   H 8:8   O 10:10  ->  Massenerhaltung erfuellt
-  Mol: n = m/M | N = n * N_A | c = n/V
+    CH4 + 2O2 --> CO2 + 2H2O (Ausgleich: C 1=1, H 4=4, O 4=4)
+    Teilchenpfeile: 1 CH4 + 2 O2 --Pfeile--> 1 CO2 + 2 H2O
+    O2 plus: Q < Kc --Pfeil rechts--> mehr Verbrennung
+    Waerme: Kerze erlischt bei O2-Mangel (Edukt fehlt)
+    Regel: Koeffizient = Teilchenzahl = Stoffmengenverhaeltnis.
 ```
 
 Klausur-Satz: `Eine Reaktionsgleichung ist richtig ausgeglichen, wenn die Anzahl der Atome jedes Elements auf beiden Seiten gleich ist.`
@@ -100,25 +88,24 @@ Klausur-Satz: `Eine Reaktionsgleichung ist richtig ausgeglichen, wenn die Anzahl
 
 **Bezug zum Konzept**: Die Stellung im Periodensystem bestimmt die Eigenschaften eines Elements, sodass unbekannte Elemente vorhergesagt werden können.
 
-## Schritt 4 — ausprobieren
+## Schritt 4 — ausprobieren: Interaktive Praxis & Formel-Labor
 
-BEISPIEL (Musteraufgabe mit Loesungsweg):
+BEISPIEL (geleitete Aufgabe mit Werkzeug):
 
-[Werkzeug: lego]
+[Werkzeug: formula]
 
-AUFGABE (darstellen & berechnen, AFB II): 8,0 g Methan (CH4, M = 16 g/mol) werden vollständig verbrannt. Stellen Sie die Reaktionsgleichung auf, gleichen Sie sie aus und berechnen Sie die Stoffmenge des entstehenden Kohlendioxids sowie das Volumen dieses Gases im Standardzustand (V_m = 22,4 L/mol).
+AUFGABE (Spiel-Auftrag, AFB II, 3 Stufen): Stufe 1 Zaehlen: Gleiche $CH_4 + 2O_2 \to CO_2 + 2H_2O$ links gegen rechts ab. Stufe 2 Umrechnen: Aus $n(CH_4) = 0{,}25\,\mathrm{mol}$ folgt $n(CO_2)$. Stufe 3 Sichern: Begruende mit Koeffizienten in einem Satz mit weil. Stelle im Formel-Labor den Mol-Regler von $0{,}10\,\mathrm{mol}$ auf $0{,}25\,\mathrm{mol}$ und gleiche die Koeffizienten schrittweise ab und kontrolliere Atombilanz und Einheit.
 
 HILFE:
-1. Schritt 1: Schreibe die Wortgleichung in Formeln: CH4 + O2 -> CO2 + H2O.
-2. Schritt 2: Gleiche nur mit Koeffizienten aus (C, dann H, dann O).
-3. Schritt 3: Berechne n(CH4) = m/M.
-4. Schritt 4: Nutze das Koeffizientenverhältnis (1:1 für CO2) und dann V = n * V_m.
+1. Schritt 1: $C$, $H$, $O$ einzeln zaehlen.
+2. Schritt 2: Verhaeltnis $1$:$1$ fuer $CH_4$ zu $CO_2$ nutzen.
+3. Schritt 3: $n = \frac{m}{M}$ bei Bedarf vorschalten.
 
-MUSTERLOESUNG: Die ungeglichene Gleichung lautet CH4 + O2 -> CO2 + H2O. Ausgleichen ergibt CH4 + 2 O2 -> CO2 + 2 H2O; Kontrolle: C 1:1, H 4:4, O 4:4, die Massenerhaltung ist erfüllt. Für die Stoffmenge gilt n(CH4) = m/M = 8,0 g / 16 g/mol = 0,50 mol. Da die Koeffizienten von CH4 und CO2 beide 1 sind, folgt n(CO2) = 0,50 mol. Das Volumen im Standardzustand ist V(CO2) = n * V_m = 0,50 mol * 22,4 L/mol = 11,2 L. Die Größenordnung ist plausibel: Aus einer kleinen Portion Methan entsteht ein Gasvolumen von etwa 11 L, was dem Volumen eines größeren Ballons entspricht.
+MUSTERLOESUNG: Links stehen $1$ $C$, $4$ $H$ und $4$ $O$, rechts ebenfalls $1$ $C$, $4$ $H$ und $4$ $O$, weil die Koeffizienten $1$, $2$, $1$, $2$ die Atome ausgleichen. Nach dem Ausgleichen gibt das Verhaeltnis $1$:$1$ an, dass aus $n(CH_4) = 0{,}25\,\mathrm{mol}$ direkt $n(CO_2) = 0{,}25\,\mathrm{mol}$ folgt. Daher verknuepfen Koeffizienten Teilchen und Stoffmengen zugleich.
 
 Klausur-Satz: `Nach dem Ausgleichen gibt das Koeffizientenverhältnis das Stoffmengenverhältnis an, sodass aus n(CH4) direkt n(CO2) folgt.`
 
-## Schritt 5 — ausprobieren
+## Schritt 5 — ausprobieren: Verfahrensvergleich & Abgrenzung
 
 VERGLEICH (zwei Verfahren unterscheiden):
 
@@ -134,7 +121,7 @@ ANTWORT: A erfordert Verfahren (i): Natrium hat 11 Protonen und im neutralen Ato
 
 Klausur-Satz: `Die Kernbausteine und die Stellung im Periodensystem werden aus der Nuklidangabe abgeleitet, während Stoffmengen aus der Masse über n = m/M berechnet werden.`
 
-## Schritt 6 — check
+## Schritt 6 — check: Verständnisprüfung
 
 CHECK (Selbsttest, 3 Fragen mit Antworten):
 
@@ -156,13 +143,13 @@ Klausur-Satz: `Die Massenerhaltung fordert gleiche Atomanzahlen auf beiden Seite
    Korrektur: Niemals. Indizes gehoeren zum Stoff; wer sie aendert, erfindet einen neuen Stoff (aus $H_2O$ wuerde $H_2O_2$, Wasserstoffperoxid). Ausgleichen aendert nur Koeffizienten; die Kontrolle bleibt die beidseitig gleiche Atomzahl je Element.
    Korrektur-Satz: `Beim Ausgleichen werden ausschließlich die Koeffizienten verändert, niemals die Indizes, da sonst eine andere Verbindung entsteht.`
 
-## Schritt 7 — szenario
+## Schritt 7 — szenario: Klausurtransfer & Rubric
 
 ROLLE: Du bist EF-Tutor und erklärst einer Mitschülerin den Zusammenhang zwischen Atombau, Bindung und Rechnung.
 SITUATION: Die Mitschülerin hat drei Aufgaben verwechselt: (1) Sie soll Natrium im Periodensystem einordnen, (2) sie soll begründen, warum MgO eine Ionenbindung ist, und (3) sie soll aus 4,0 g NaOH (M = 40 g/mol) die Stoffmenge berechnen. Erkläre ihr in einer zusammenhängenden Antwort (ca. 150 Wörter), welches Verfahren zu welcher Aufgabe gehört und führe die Rechnung zu (3) vollständig durch.
 RUBRIC (30 XP): Zuordnung der drei Aufgaben zu Struktur- bzw. Stoffmengen-Verfahren (8 XP) | Korrekte Einordnung von Na (3. Periode, 1. Hauptgruppe) (6 XP) | Begründung der Ionenbindung in MgO aus den Bindungspartnern (8 XP) | Vollständige Rechnung n = 4,0/40 = 0,10 mol mit Einheit (8 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY (Kernzusammenfassung):
 

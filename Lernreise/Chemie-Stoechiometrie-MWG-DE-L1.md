@@ -15,7 +15,7 @@ version: Lesson-v3
 
 <!-- Lesson v3 9-Schritt-Architektur: Schritt 1 bis 8 feste Struktur; Fehlvorstellung zwischen Schritt 6 und 7 (Parser ueberspringt, zaehlt nicht); interaktive [Werkzeug: <id>]; Gating: check/szenario nicht bestanden = Weiter deaktiviert; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
-## Schritt 1 — entdecken
+## Schritt 1 — entdecken: Ziele & Phänomen-Einstieg
 ZIELE (drei messbare Ziele dieser Lektion):
 
 1. Du kannst jede Mengenaufgabe nach der Regel loesen: erst ausgleichen, dann alles auf $n$ zurueckfuehren ($n = m/M = cV$), dann im Koeffizientenverhaeltnis umsetzen.
@@ -24,7 +24,7 @@ ZIELE (drei messbare Ziele dieser Lektion):
 
 ### Hook / Phaenomen
 
-In der Batteriefabrik zaehlt jedes Prozent Nickel, Kobalt und Mangan: Kippt das Verhaeltnis der NCM-Kathode, bleibt teures Material ungenutzt und die Kapazitaet sinkt — Tonnen Ausschuss aus einem kleinen Dosierfehler. Dahinter steckt dieselbe Regel wie beim Backen: Wer das Rezept halbiert, aber das Mehl vergisst, dessen Kuchen misslingt. Wie rechnet man Gramm, Liter und Teilchen so um, dass kein Partner frueh ausgeht?
+In der Batteriefabrik zaehlt jedes Prozent Nickel, Kobalt und Mangan: Kippt das Verhaeltnis der NCM-Kathode, bleibt teures Material ungenutzt und die Kapazitaet sinkt — Tonnen Ausschuss aus einem kleinen Dosierfehler. Dahinter steckt dieselbe Regel wie beim Backen: Wer das Rezept halbiert, aber das Mehl vergisst, dessen Kuchen misslingt. Wie rechnet man Gramm, Liter und Teilchen so um, dass kein Partner frueh ausgeht? In der Batteriefabrik zaehlt jedes Prozent: Erst die Gleichung ausgleichen nur ueber Koeffizienten, dann das Verhaeltnis als Stoffmengenverhaeltnis mit n gleich m durch M lesen und mit Einheit kontrollieren. Das MWG mit Q gegen Kc bildet die Wippe dahinter wie bei Le Chatelier mit Drehpunkt Kc. Wer Zaehlen, Umrechnen und Pruefen mit weil und deshalb verbindet, sichert alle Verfahrenspunkte.
 
 ### Fachbegriff & Definition
 
@@ -36,7 +36,7 @@ Die Kausalkette lautet: **Ausgleichen, Umrechnen, Umsetzen, Pruefen**. Alle Anga
 
 Klausur-Satz: `Erst ausgleichen, dann alles in die Stoffmenge n = m/M = cV umrechnen und schliesslich im Verhaeltnis der Koeffizienten umsetzen.`
 
-## Schritt 2 — entdecken
+## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
 ### Hook / Phaenomen
@@ -57,34 +57,28 @@ Die Begriffe bilden eine Rechenstrasse: **Ausgleichen** legt die Spurverhaeltnis
 
 Klausur-Satz: `Die Koeffizienten der ausgeglichenen Gleichung geben das Stoffmengenverhaeltnis vor, K_c prueft die Lage des Gleichgewichts.`
 
-## Schritt 3 — entdecken
+## Schritt 3 — entdecken: Kernkonzept & Wirkungsmodell
 TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
 ### Hook / Phaenomen
 
-Aus $10{,}0\,\mathrm{g}$ Kalkstein werden im Ofen $5{,}60\,\mathrm{g}$ Brandkalk — theoretisch. Real sind es $4{,}50\,\mathrm{g}$. Wo bleiben $1{,}10\,\mathrm{g}$, und warum treibt Abpumpen von $CO_2$ die Reaktion weiter nach rechts? Ein Rechenweg beantwortet beides.
+Warum liefern $10{,}0\,\mathrm{g}$ Calciumcarbonat nicht beliebig viel $CO_2$, sondern hoechstens $4{,}40\,\mathrm{g}$? Die Koeffizienten sind das Rezept. Wie fuehrt der Dreisatz von $m$ ueber $n$ zum Ziel, und wann greift $Q$ gegen $K_c$ in die Ausbeute ein?
 
-### Fachbegriff & Definition
+### Spiel-Aufgabe
 
-Die **Zwei-Schritt-Regel** lautet: **Ausgangsgroesse zu $n$, dann $n$ zur Zielgroesse**. Fuer $CaCO_3 \to CaO + CO_2$ (1:1:1) gilt $n(CaCO_3) = 10{,}0/100{,}1 = 0{,}0999\,\mathrm{mol}$, also $n(CaO) = 0{,}0999\,\mathrm{mol}$ und $m = 0{,}0999 \cdot 56{,}1 = 5{,}60\,\mathrm{g}$. Die **Ausbeute** $4{,}50/5{,}60 \cdot 100\,\% = 80{,}4\,\%$ misst Verlust und Nebenreaktion. Fuer das Gleichgewicht gilt $K_c \propto [CO_2]$, weil Feststoffe entfallen; $CO_2$ abpumpen senkt $Q$ unter $K_c$ — das System laeuft nach rechts, bis $Q$ wieder gleich $K_c$ ist.
+Spiel-Aufgabe im Kopf-Labor: Erhoehe im Simulator den Druck und die $CO_2$-Abfuhr und beobachte die Verschiebungspfeile nach rechts. Rechne live mit $n = \frac{m}{M}$ und $c = \frac{n}{V}$, notiere $Q$ gegen $K_c$ und Ausbeute in Prozent. Erklaere in einem Satz mit weil, warum Entzug des Produkts die Ausbeute hebt.
 
-### Wirkungsgefuege / Modell
+### Aha-Moment & Gesetz
 
-Denke in Kausalkette: **Menge, Verhaeltnis, Lage**. Erstens Mengen ueber $n = m/M$ vergleichbar machen. Zweitens im Koeffizientenverhaeltnis umsetzen ($n_{Ziel} = n_{Start} \cdot Koeff_{Ziel}/Koeff_{Start}$). Drittens die Lage ueber $Q$ gegen $K_c$ pruefen. Die NCM-Kathode ist die industrielle Fassung: Kippt das Nickel-Kobalt-Mangan-Verhaeltnis, bleibt teures Material ungenutzt — das knappste Reagenz begrenzt den Ertrag wie die kuerzeste Daube das Fass.
+Aha-Moment und Gesetz: Die Kausalkette lautet wiegen, umrechnen, vergleichen. Alle Mengen werden erst in $n$ umgerechnet ($n = \frac{m}{M}$, $n = c \cdot V$), dann im Verhaeltnis der Koeffizienten umgesetzt, dann ueber $K_c = \frac{[C]^c \cdot [D]^d}{[A]^a \cdot [B]^b}$ geprueft. Ist $Q < K_c$, laeuft das System nach rechts und erhoeht die Ausbeute. Wer direkt mit Gramm rechnet, verwechselt Masse mit Teilchenzahl.
 
 ```diagram
-   m --(M)--> n <--(cV)-- V,c
-               |
-        [Ausgleichen: Koeffizienten]
-               |
-     n(Ziel) = n(Start) * (Coeff_Ziel / Coeff_Start)
-               |
-        m = n*M  |  c = n/V  |  Ausbeute = real/theoretisch
-   Beispiel: CaCO3 -> CaO + CO2  (1:1:1)
-     n = 10,0/100,1 = 0,0999 mol -> m(CaO) = 5,60 g
-     Ausbeute = 4,50/5,60 = 80,4 %
-   MWG: aA + bB <=> cC + dD
-   Kc = ([C]^c * [D]^d) / ([A]^a * [B]^b), Q vs K entscheidet
+    Beispiel: CaCO3 --> CaO + CO2 (1:1:1)
+    m = 10,0 g, M = 100,1 g/mol --> n = 0,100 mol
+    Koeffizient 1:1 --> n(CO2) = 0,100 mol --> m = 4,40 g
+    CO2-Entzug: Q < Kc --Pfeil rechts--> mehr Umsatz
+    Druck hoch bei Gas: Pfeil zur Seite mit weniger Teilchen
+    Regel: erst n, dann Verhaeltnis, dann Q gegen Kc.
 ```
 
 Klausur-Satz: `Alle Mengenangaben werden erst in n umgerechnet, dann im Verhaeltnis der Koeffizienten umgesetzt und zuletzt ueber K_c ueberprueft.`
@@ -95,24 +89,24 @@ Klausur-Satz: `Alle Mengenangaben werden erst in n umgerechnet, dann im Verhaelt
 
 **Bezug zum Konzept**: `Das knappste Reagenz begrenzt den Ertrag wie die kuerzeste Daube das Fass.`
 
-## Schritt 4 — ausprobieren
+## Schritt 4 — ausprobieren: Interaktive Praxis & Gleichgewichts-Labor
 
-BEISPIEL (Musteraufgabe mit Loesungsweg):
+BEISPIEL (geleitete Aufgabe mit Werkzeug):
 
-[Werkzeug: formula]
+[Werkzeug: le-chatelier-sim]
 
-AUFGABE (berechnen, AFB II): Aus 10.0 g CaCO3 wird durch Brennen CaO gewonnen: CaCO3 -> CaO + CO2. M(CaCO3) = 100.1 g/mol, M(CaO) = 56.1 g/mol. Berechnen Sie die theoretische Masse an CaO und die Ausbeute, wenn real 4.50 g erhalten werden. Ueberpruefen Sie zudem mit K_c-Skizze, was ein Abpumpen von CO2 bewirkt.
+AUFGABE (Spiel-Auftrag, AFB II, 3 Stufen): Stufe 1 Wiegen: $5{,}60\,\mathrm{g}$ $CaO$ entstehen aus $CaCO_3$. Berechne $n$ und $m(CaCO_3)$. Stufe 2 Verschieben: $CO_2$ wird abgepumpt. Sage die Pfeilrichtung mit $Q$ gegen $K_c$ voraus. Stufe 3 Sichern: Nenne die Ausbeute bei $7{,}00\,\mathrm{g}$ Einsatz. Stelle im Gleichgewichts-Labor den Mol-Regler schrittweise hoch und gleichen Druck-Regler an und verfolge Umsatz und Q gegen Kc bis zum Ausgleich.
 
 HILFE:
-1. Schritt 1: Gleichung pruefen (hier bereits 1:1:1), dann n = m/M fuer CaCO3 berechnen.
-2. Schritt 2: Im Verhaeltnis der Koeffizienten umsetzen: n(CaO) = n(CaCO3) mal (1/1), dann m = n mal M.
-3. Schritt 3: Ausbeute = real/theoretisch mal 100 Prozent; danach Q vs K deuten: CO2 senken heisst Q kleiner als K, also nach rechts.
+1. Schritt 1: $n = \frac{m}{M}$ fuer $CaO$ mit $M = 56{,}1$.
+2. Schritt 2: Verhaeltnis $1$:$1$ uebertragen.
+3. Schritt 3: $Q < K_c$ bedeutet Pfeil rechts.
 
-MUSTERLOESUNG: Es gilt n(CaCO3) = 10.0 g / 100.1 g/mol = 0.0999 mol. Wegen des Verhaeltnisses 1:1 folgt n(CaO) = 0.0999 mol, also m(theoretisch) = 0.0999 mol mal 56.1 g/mol = 5.60 g. Die Ausbeute betraegt 4.50 g / 5.60 g mal 100 Prozent = 80.4 Prozent. Fuer das Gleichgewicht gilt K_c proportional zu [CO2], weil Feststoffe nicht erscheinen; pumpt man CO2 ab, so sinkt Q unter K, und das System laeuft nach rechts bis Q wieder gleich K ist.
+MUSTERLOESUNG: Aus $n = \frac{m}{M}$ folgt $n(CaO) = \frac{5{,}60}{56{,}1} = 0{,}100\,\mathrm{mol}$; im Verhaeltnis $1$:$1$ gilt $n(CaCO_3) = 0{,}100\,\mathrm{mol}$ und $m = 10{,}0\,\mathrm{g}$. Wird $CO_2$ entzogen, sinkt $Q$ unter $K_c$ und das System laeuft nach rechts, weil es den Mangel ausgleicht. Bei $7{,}00\,\mathrm{g}$ Einsatz und $80{,}4\,\%$ Ausbeute bleiben $5{,}60\,\mathrm{g}$ Produkt.
 
 Klausur-Satz: `Aus n = m/M und dem Koeffizientenverhaeltnis 1:1 folgt m = 5.60 g und eine Ausbeute von 80.4 Prozent; CO2-Entzug verschiebt nach rechts.`
 
-## Schritt 5 — ausprobieren
+## Schritt 5 — ausprobieren: Verfahrensvergleich & Abgrenzung
 
 VERGLEICH (zwei Verfahren unterscheiden):
 
@@ -127,7 +121,7 @@ ANTWORT: A erfordert Verfahren (i): n(Mg) = 5.00/24.3 = 0.206 mol, n(O2) = 5.00/
 
 Klausur-Satz: `Mengenfragen verlangen n und Koeffizientenvergleich, Gleichgewichtsfragen verlangen Q gegen K.`
 
-## Schritt 6 — check
+## Schritt 6 — check: Verständnisprüfung
 
 CHECK (Selbsttest, 3 Fragen mit Antworten):
 
@@ -149,14 +143,14 @@ Klausur-Satz: `Mit n als Drehscheibe, Koeffizienten als Verhaeltnis und Q gegen 
    Korrektur: Reine Feststoffe und Fluessigkeiten zaehlen als konstant und sind bereits in $K$ eingerechnet; sie entfallen. $K$ haengt nur von der Temperatur ab, nie von Konzentrationen. Geaenderte Konzentrationen aendern nur $Q$, das System stellt $Q = K$ durch Verschiebung wieder her.
    Korrektur-Satz: `Reine Feststoffe erscheinen nicht in K_c, und K_c haengt nur von der Temperatur ab, nicht von den Konzentrationen.`
 
-## Schritt 7 — szenario
+## Schritt 7 — szenario: Klausurtransfer & Rubric
 
 ROLLE: Du bist Praktikant in der Batteriefertigung und pruefst eine NCM-Charge.
 SITUATION: Geliefert wurden 10.0 mol Ni-, 10.0 mol Co- und 12.0 mol Mn-Salz fuer eine Faellgleichung mit Koeffizienten 1:1:1 zum NCM-Precursor. Die Schichtleitung fragt, welche Komponente limitiert, wie viel Precursor maximal entsteht und wie das CO2-Abziehen beim Brennen per MWG wirkt. Antworte in einer zusammenhaengenden Darstellung (ca. 150 Woerter).
 AUFGABE: Schreibe eine Klausur-Antwort mit n/Coeff-Vergleich, Ertragsrechnung und Q-gegen-K-Urteil.
 RUBRIC (30 XP): Korrekter Limit-Nachweis per n durch Koeffizient (10 XP) | Ertrag aus dem knappsten Partner plus Ausbeute-Deutung (10 XP) | MWG-Urteil: Q kleiner als K laeuft zum Produkt (10 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY (Kernzusammenfassung):
 

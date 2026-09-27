@@ -15,7 +15,7 @@ version: Lesson-v3
 
 <!-- Lesson v3 architecture: Schritte 1-8 fixed; Fehlvorstellung between Schritt 6 and 7 (parser skipped); embedded [Werkzeug: <id>]; gating: check/szenario failed = Weiter greyed; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
-## Schritt 1 — entdecken
+## Schritt 1 — entdecken: Ziele & Phänomen-Einstieg
 ZIELE (drei messbare Ziele dieser Lektion):
 
 1. Du kannst den pH starker Saeuren direkt aus $pH = -\lg c_0$ berechnen, weil $[H_3O^+] = c_0$ gilt.
@@ -24,7 +24,7 @@ ZIELE (drei messbare Ziele dieser Lektion):
 
 ### Hook / Phaenomen
 
-Reiner Zitronensaft und Magensalzsaeure schmecken beide sauer — doch ihre $pH$-Werte entstehen voellig anders: Die eine Saeure gibt fast jedes Proton ab, die andere nur einen Bruchteil. Der Geschmack taeuscht ueber die Chemie hinweg. Warum liefert $0{,}10\,\mathrm{mol/L}$ Essigsaeure nur $pH = 2{,}87$, waehrend $0{,}10\,\mathrm{mol/L}$ Salzsaeure $pH = 1{,}00$ zeigt — bei gleicher Konzentration fast zwei Einheiten Unterschied?
+Reiner Zitronensaft und Magensalzsaeure schmecken beide sauer — doch ihre $pH$-Werte entstehen voellig anders: Die eine Saeure gibt fast jedes Proton ab, die andere nur einen Bruchteil. Der Geschmack taeuscht ueber die Chemie hinweg. Warum liefert $0{,}10\,\mathrm{mol/L}$ Essigsaeure nur $pH = 2{,}87$, waehrend $0{,}10\,\mathrm{mol/L}$ Salzsaeure $pH = 1{,}00$ zeigt — bei gleicher Konzentration fast zwei Einheiten Unterschied? Essigsaeure schmeckt milder als Salzsaeure bei kleinerer Konzentration, weil nur starke Saeuren vollstaendig dissoziieren mit $[H_3O^+] = c_0$ und $pH = -\lg[H_3O^+]$. Schwache Saeuren folgen Ks ueber die Dreisatztabelle mit Pflichtpruefung x durch c0 kleiner 5 Prozent. Tropfenweise Titration zeigt den Sprung am Aequivalenzpunkt mit Indikatorumschlag. Wer Staerke, Weg und Pruefung mit weil und deshalb verbindet, beherrscht jede pH-Rechnung.
 
 ### Fachbegriff & Definition
 
@@ -36,7 +36,7 @@ Die Kausalkette lautet: **Staerke pruefen, Ansatz waehlen, Naeherung kontrollier
 
 Klausur-Satz: `Starke Saeuren protolysieren vollstaendig, schwache nur teilweise gemaess ihrer Saeurekonstante K_s.`
 
-## Schritt 2 — entdecken
+## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
 ### Hook / Phaenomen
@@ -57,29 +57,27 @@ Die Begriffe bilden die Entscheidungsstrasse: **$K_s$ lesen, Verfahren waehlen, 
 
 Klausur-Satz: `Die Naeherung gilt nur fuer schwache Saeuren mit kleinem K_s relativ zur Ausgangskonzentration.`
 
-## Schritt 3 — entdecken
+## Schritt 3 — entdecken: Kernkonzept & Wirkungsmodell
 TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
 ### Hook / Phaenomen
 
-Essigsaeure $c_0 = 0{,}10\,\mathrm{mol/L}$: Die Wurzel liefert $x = 1{,}34 \cdot 10^{-3}\,\mathrm{mol/L}$ und $pH = 2{,}87$ — bei zehnfacher Ausgangskonzentration gegenueber $0{,}005\,\mathrm{mol/L}$ Salzsaeure ($pH = 2{,}30$) nur wenig saurer. Woher kommt diese Daempfung, und wann bricht die Wurzelformel zusammen?
+Warum liefert die Wurzelformel $x = \sqrt{K_S \cdot c_0}$ fast denselben $pH$ wie die volle quadratische Loesung, obwohl ein Term gestrichen wurde? Die Naeherung versteckt sich in $c_0 - x$. Wann darf man kuerzen, und wann bricht die Wippe zwischen Bequemlichkeit und Genauigkeit?
 
-### Fachbegriff & Definition
+### Spiel-Aufgabe
 
-Die **Wurzelnaeherung** folgt aus dem **MWG unter der Annahme geringer Protolyse**: Aus $K_s = x^2/(c_0 - x)$ wird mit $c_0 - x \approx c_0$ sofort $x = \sqrt{K_s \cdot c_0}$. Sie gilt nur fuer **schwache Saeuren mit kleinem $K_s$ relativ zu $c_0$** — bei $x/c_0 = 1{,}3\,\%$ ist sie zulaessig, oberhalb $5\,\%$ muss quadratisch geloest werden. Die Daempfung erklaert sich selbst: Je mehr protolysiert, desto staerker bremst das wachsende $x$ im Nenner — das Gleichgewicht schuetzt sich vor vollstaendiger Protolyse.
+Spiel-Aufgabe im Kopf-Labor: Tropfe $NaOH$ in die schwache Saeure und beobachte $pH$-Pfeil und Sprung am Aequivalenzpunkt. Verschiebe den $c_0$-Regler von $0{,}01$ bis $0{,}50\,\mathrm{mol/L}$ und notiere $x/c_0$ in Prozent. Erklaere in einem Satz mit weil, warum $x/c_0 < 5\,\%$ die Naeherung erlaubt.
 
-### Wirkungsgefuege / Modell
+### Aha-Moment & Gesetz
 
-Denke in Kausalkette: **Gleichgewicht, Kuerzung, Kontrolle**. Erstens Dreisatztabelle: Start $c_0/0/0$, Aenderung $-x/+x/+x$, Gleichgewicht $c_0 - x/x/x$. Zweitens in $K_s$ einsetzen und bei kleinem $K_s$ kuerzen. Drittens $pH = -\lg x$ bilden und $x/c_0$ pruefen. Starke Saeuren ueberspringen alles — $[H_3O^+] = c_0$ in einem Schritt.
+Aha-Moment und Gesetz: Die Kausalkette lautet Ansatz, Kuerzung, Kontrolle. Aus $K_S = \frac{x^2}{c_0 - x}$ wird mit $c_0 - x \approx c_0$ die Wurzel $x = \sqrt{K_S \cdot c_0}$ und $pH = -\lg x$. Es gilt $pH + pOH = 14$ und $K_w = [H_3O^+] \cdot [OH^-]$. Die Kontrolle $\frac{x}{c_0} < 5\,\%$ entscheidet ueber Zulassung; starke Saeuren brauchen keine Tabelle, weil $[H_3O^+] = c_0$ gilt.
 
 ```diagram
-  stark:   HA -> H3O+ + A-       [H3O+] = c0        pH = -lg c0
-  schwach: HA <-> H3O+ + A-      K_s = x^2/(c0-x)  x = sqrt(K_s*c0)
-  Test:    x/c0 < 0,05? Naeherung ok : quadratisch loesen
-  pH-Skala: sauer <- 7 -> basisch, je Einheit Faktor 10
-  Beispiel: HAc 0,10 mol/L, K_s = 1,8*10^-5
-    x = 1,34*10^-3 mol/L, pH = 2,87, x/c0 = 1,3 % ok
-  Ostwald: pH = 0,5 * (pK_s - lg c0)
+    K_S = x^2/(c0 - x) --Naeherung x<<c0--> x = Wurzel(K_S*c0)
+    Beispiel: c0 = 0,10, K_S = 1,8*10^-5 --> x = 1,34*10^-3 --> pH = 2,87
+    Kontrolle: x/c0 = 1,3 % < 5 % --> Pfeil gruen (zulaessig)
+    stark gleicher Konz.: pH = 1,00 (Pfeil weit links, viel saurer)
+    Titration: Sprung am Aequivalenzpunkt, Indikator schlaegt um.
 ```
 
 Klausur-Satz: `Die Wurzelformel folgt aus dem MWG unter der Annahme geringer Protolyse.`
@@ -90,24 +88,24 @@ Klausur-Satz: `Die Wurzelformel folgt aus dem MWG unter der Annahme geringer Pro
 
 **Bezug zum Konzept**: `Gleicher pH kann aus hoher Konzentration einer schwachen oder niedriger Konzentration einer starken Saeure stammen.`
 
-## Schritt 4 — ausprobieren
+## Schritt 4 — ausprobieren: Interaktive Praxis & Titrations-Labor
 
-BEISPIEL (vollstaendige Musterloesung):
+BEISPIEL (geleitete Aufgabe mit Werkzeug):
 
-[Werkzeug: formula]
+[Werkzeug: titration-lab]
 
-AUFGABE (berechnen, AFB II): Berechnen Sie den pH von Essigsaeure mit $c_0 = 0{,}10 \, \mathrm{mol/L}$ und $K_s = 1{,}8 \cdot 10^{-5}$. Pruefen Sie die Naeherung.
+AUFGABE (Spiel-Auftrag, AFB II, 3 Stufen): Stufe 1 Wurzelziehen: Berechne $pH$ fuer $0{,}10\,\mathrm{mol/L}$ $HAc$ mit $x = \sqrt{K_S \cdot c_0}$. Stufe 2 Vergleichen: Stelle $pH = 2{,}87$ gegen $pH = 1{,}00$ bei starker Saeure gleicher Konzentration. Stufe 3 Pruefen: Entscheide per $x/c_0$-Ampel ueber die Naeherung. Gib im Titrations-Labor Tropfen fuer Tropfen NaOH zu und verstelle den pH-Regler schrittweise und verfolge pH-Sprung und Indikatorfarbe bis zum Aequivalenzpunkt.
 
 HILFE:
-1. Schritt 1: $x = \sqrt{K_s \cdot c_0}$ berechnen.
-2. Schritt 2: $pH = -\log x$ bilden.
-3. Schritt 3: $x/c_0$ pruefen.
+1. Schritt 1: $K_S = 1{,}8 \cdot 10^{-5}$ einsetzen.
+2. Schritt 2: $x = 1{,}34 \cdot 10^{-3}$, $pH = -\lg x$.
+3. Schritt 3: $1{,}3\,\% < 5\,\%$ bedeutet gruen.
 
-MUSTERLOESUNG: Es gilt $x = \sqrt{1{,}8 \cdot 10^{-5} \cdot 0{,}10} = \sqrt{1{,}8 \cdot 10^{-6}} = 1{,}34 \cdot 10^{-3} \, \mathrm{mol/L}$. Damit folgt $pH = -\log(1{,}34 \cdot 10^{-3}) = 2{,}87$. Die Pruefung ergibt $x/c_0 = 0{,}0134$, also $1{,}3$ Prozent; die Naeherung ist zulaessig. Zum Vergleich: Eine starke Saeure derselben Konzentration haette $pH = 1{,}00$.
+MUSTERLOESUNG: Mit $x = \sqrt{1{,}8 \cdot 10^{-5} \cdot 0{,}10} = 1{,}34 \cdot 10^{-3}\,\mathrm{mol/L}$ folgt $pH = -\lg(1{,}34 \cdot 10^{-3}) = 2{,}87$. Eine starke Saeure gleicher Konzentration gaebe $pH = 1{,}00$, weil dort $[H_3O^+] = c_0$ gilt. Die Kontrolle $x/c_0 = 1{,}3\,\% < 5\,\%$ bestaetigt die Wurzelformel, weil der Protolysegrad klein ist.
 
 Klausur-Satz: `Mit zulaessiger Naeherung folgt pH = 2,87 statt pH = 1,00 bei starker Saeure gleicher Konzentration.`
 
-## Schritt 5 — ausprobieren
+## Schritt 5 — ausprobieren: Verfahrensvergleich & Abgrenzung
 
 VERGLEICH (erst Verfahren waehlen, dann loesen):
 
@@ -123,7 +121,7 @@ ANTWORT: A erfordert Verfahren (i): $pH = -\log 0{,}010 = 2{,}00$. B erfordert V
 
 Klausur-Satz: `Ohne K_s traegt das Stark-Verfahren, mit kleinem K_s das Schwach-Verfahren inklusive Gueltigkeitstest.`
 
-## Schritt 6 — check
+## Schritt 6 — check: Verständnisprüfung
 
 CHECK (drei Fragen mit Antworten):
 
@@ -141,13 +139,13 @@ Klausur-Satz: `Jede Wurzelrechnung ohne Gueltigkeitstest ist klausurtechnisch un
 2. Fehlvorstellung: Die Wurzelformel gelte fuer jede Saeure mit bekanntem $K_s$.
    Korrektur-Satz: `Die Wurzelformel gilt nur bei geringer Protolyse; sonst ist die quadratische Gleichung zu loesen.`
 
-## Schritt 7 — szenario
+## Schritt 7 — szenario: Klausurtransfer & Rubric
 
 ROLLE: Du bist Laborassistentin und pruefst zwei Flaschen.
 SITUATION: Flasche A enthaelt $0{,}10 \, \mathrm{mol/L}$ Salzsaeure, Flasche B $0{,}10 \, \mathrm{mol/L}$ Essigsaeure. Erklaere in circa 150 Woertern mit beiden Verfahren, welche pH-Werte zu erwarten sind und warum ein pH-Streifen allein die Saeuren nicht sicher unterscheidet.
 RUBRIC (30 XP): Stark-Verfahren korrekt (8 XP) | Schwach-Verfahren mit Test (10 XP) | Vergleich und Deutung (8 XP) | Fachsprachliche Darstellung (4 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY:
 

@@ -15,7 +15,7 @@ version: Lesson-v3
 
 <!-- Lesson v3 9-Schritt-Architektur: Schritt 1 bis 8 feste Struktur; Fehlvorstellung zwischen Schritt 6 und 7 (Parser ueberspringt, zaehlt nicht); interaktive [Werkzeug: <id>]; Gating: check/szenario nicht bestanden = Weiter deaktiviert; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
-## Schritt 1 — entdecken
+## Schritt 1 — entdecken: Ziele & Phänomen-Einstieg
 ZIELE (drei messbare Ziele dieser Lektion):
 
 1. Du kannst sechs Verfahren (Erhaltung, Differenz, Extremwert, funktionelle Gruppen, Elektrochemie, Oxidationszahl) nennen und jedes in einem Satz erklaeren.
@@ -24,8 +24,11 @@ ZIELE (drei messbare Ziele dieser Lektion):
 
 ### Hook / Phaenomen
 
-$5{,}6\,\mathrm{g}$ Eisen plus Schwefel — wie viel Eisensulfid entsteht, ohne dass man ein einziges Atom zaehlt? Sechs Suchgeraete loesen sechs Aufgabentypen: vom Dosieren ueber Gemische bis zur Batterie mit $U^\circ = 2{,}70\,\mathrm{V}$. Die Regel ist ein Suchgeraet, kein Beweis — doch wer das passende Verfahren in Sekunden waehlt, hat die halbe Klausur gewonnen.
+五点六克铁加硫黄不数原子怎么知道生成多少硫化亚铁：看恒定就行了，原子、电荷、电子总量守恒是所有技巧的根。配平是质量守恒的书写形式，差量法是质量守恒的计算形式，电池电压是电子守恒的形式。中国学生喜欢搜集速解模板，德国卷面要求每个模板配一句德语检验句。本节把六种模板按信号词入库，几秒钟定位解法。
 
+5,6 g Eisen plus Schwefel — wie viel Eisensulfid entsteht, ohne ein einziges Atom zu zaehlen; sechs Suchgeraete loesen sechs Aufgabentypen.
+
+机制铺垫双语：机制是信号词定位、模板计算、德语句式收尾，规则只是搜索引擎而不是证明。Die Kausalkette lautet: Signalwort, Verfahren, Pruefungssatz; die Regel waehlt den Weg, der Fachsatz beweist.
 ### Fachbegriff & Definition
 
 Alle sechs Tricks ruhen auf der **Erhaltung**: Atome, Ladungen und Elektronen bleiben insgesamt erhalten. **Ausgleichen** ist die schriftliche Form der Massenerhaltung; **Differenz** ist Massenerhaltung in Rechenform ($dm$ zu $n$); **Elektrochemie** ist Elektronenerhaltung ($U^\circ = E_{Kat} - E_{An}$); **Extremwert** ist die Grenze der Erhaltung (ganz A oder ganz B); **funktionelle Gruppen** sind qualitative Erhaltung (etwa $-COOH$ verrät Saeure plus Veresterung); **Oxidationszahlen** sind die Buchhaltung der Elektronen (Anstieg oxidiert, Abfall reduziert). Jedes Verfahren traegt eine Mini-Aufgabe und einen deutschen Pruefsatz.
@@ -36,7 +39,7 @@ Die Kausalkette lautet: **Signalwort, Verfahren, Pruefsatz**. Erstens Signalwort
 
 Klausur-Satz: `Jedes CN-Verfahren endet in einer deutschen Klausurhandlung: aufstellen, ausgleichen, berechnen, zuordnen, begründen, auswerten.`
 
-## Schritt 2 — entdecken
+## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
 ### Hook / Phaenomen
@@ -45,11 +48,11 @@ Sechs Verfahren, sechs Mini-Aufgaben, sechs Pruefsaetze — doch alle stammen au
 
 ### Fachbegriffe & Definitionen
 
-- **Erhaltung:** Atome, Ladungen und Elektronen bleiben in der Reaktion insgesamt erhalten — Ausgleichen ist ihre schriftliche Form ($Fe + S \to FeS$, $n = 0{,}10\,\mathrm{mol}$).
-- **Differenzmethode:** Aus der Massendifferenz von Feststoff oder Loesung auf die Stoffmenge schliessen — etwa $dm = 2{,}4\,\mathrm{g}$ Sauerstoff zu $n(CuO) = 0{,}15\,\mathrm{mol}$.
-- **Extremwertannahme:** Mit den Faellen ganz A oder ganz B den wahren Wert eingrenzen — etwa $n(H_2)$ zwischen $0{,}15$ und $0{,}25\,\mathrm{mol}$ fuer $Mg$/$Ca$-Gemisch.
-- **Funktionelle Gruppe:** Die Atomgruppe, die Stoffklasse und Reaktionstyp bestimmt — etwa $-COOH$ aus Rotfaerbung plus Veresterung mit Ethanol.
-- **Oxidationszahl:** Das Buchungszeichen fuer Elektronenuebergaenge; Anstieg heisst oxidiert (Reduktionsmittel), Abfall heisst reduziert (Oxidationsmittel) — etwa $Mg: 0 \to +II$.
+- **Erhaltung: (配平)** Atome, Ladungen und Elektronen bleiben in der Reaktion insgesamt erhalten — Ausgleichen ist ihre schriftliche Form ($Fe + S \to FeS$, $n = 0{,}10\,\mathrm{mol}$).
+- **Differenzmethode: (差量法)** Aus der Massendifferenz von Feststoff oder Loesung auf die Stoffmenge schliessen — etwa $dm = 2{,}4\,\mathrm{g}$ Sauerstoff zu $n(CuO) = 0{,}15\,\mathrm{mol}$.
+- **Extremwertannahme: (极值假设)** Mit den Faellen ganz A oder ganz B den wahren Wert eingrenzen — etwa $n(H_2)$ zwischen $0{,}15$ und $0{,}25\,\mathrm{mol}$ fuer $Mg$/$Ca$-Gemisch.
+- **Funktionelle Gruppe: (官能团)** Die Atomgruppe, die Stoffklasse und Reaktionstyp bestimmt — etwa $-COOH$ aus Rotfaerbung plus Veresterung mit Ethanol.
+- **Oxidationszahl: (氧化数)** Das Buchungszeichen fuer Elektronenuebergaenge; Anstieg heisst oxidiert (Reduktionsmittel), Abfall heisst reduziert (Oxidationsmittel) — etwa $Mg: 0 \to +II$.
 
 ### Wirkungsgefuege / Modell
 
@@ -57,7 +60,7 @@ Die Begriffe haengen an der Wurzel **Erhaltung**: Differenz ist Massenerhaltung 
 
 Klausur-Satz: `Die Oxidationszahl steigt beim Reduktionsmittel und fällt beim Oxidationsmittel, weil die abgegebene Elektronenzahl gleich der aufgenommenen ist.`
 
-## Schritt 3 — entdecken
+## Schritt 3 — entdecken: Kernkonzept & Wirkungsmodell
 TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
 ### Hook / Phaenomen
@@ -94,13 +97,13 @@ Klausur-Satz: `Die CN-Tricks sind zulässige Heuristiken, weil sie auf Erhaltung
 
 **Bezug zum Konzept**: Alle CN-Verfahren sind letztlich Erhaltungssätze: Was an einer Stelle verschwindet, muss an anderer Stelle wieder auftauchen.
 
-## Schritt 4 — ausprobieren
+## Schritt 4 — ausprobieren: Interaktive Praxis & Labor
 
 BEISPIEL (Musteraufgabe mit Loesungsweg):
 
-[Werkzeug: lego]
+[Werkzeug: formula]
 
-AUFGABE (berechnen & begruenden, AFB II): 12,0 g Kupfer(II)-oxid werden mit Wasserstoff reduziert: CuO + H2 -> Cu + H2O. Nach der Reaktion bleiben 9,6 g Kupfer zurück. Berechnen Sie über die Massendifferenz die Stoffmenge des umgesetzten CuO und die Masse des entstandenen Wassers (M(CuO) = 79,5 g/mol, M(H2O) = 18 g/mol, M(O) = 16 g/mol).
+Stelle in der Sandbox (formula) die Massendifferenz ein, ziehe den Slider Stoffmenge und lies n ab; AUFGABE (berechnen & begruenden, AFB II): 12,0 g Kupfer(II)-oxid werden mit Wasserstoff reduziert: CuO + H2 -> Cu + H2O. Nach der Reaktion bleiben 9,6 g Kupfer zurück. Berechnen Sie über die Massendifferenz die Stoffmenge des umgesetzten CuO und die Masse des entstandenen Wassers (M(CuO) = 79,5 g/mol, M(H2O) = 18 g/mol, M(O) = 16 g/mol).
 
 HILFE:
 1. Schritt 1: Stelle die ausgeglichene Gleichung auf (CuO + H2 -> Cu + H2O ist bereits ausgeglichen).
@@ -112,7 +115,7 @@ MUSTERLOESUNG: Die Gleichung CuO + H2 -> Cu + H2O ist ausgeglichen (Cu 1:1, O 1:
 
 Klausur-Satz: `Aus der Massendifferenz folgt über die molare Masse des Sauerstoffs direkt die Stoffmenge des umgesetzten Kupferoxids.`
 
-## Schritt 5 — ausprobieren
+## Schritt 5 — ausprobieren: Verfahrensvergleich & Abgrenzung
 
 VERGLEICH (zwei Verfahren unterscheiden):
 
@@ -128,7 +131,7 @@ ANTWORT: A erfordert Verfahren (i): n(Ca) = m/M = 8,0 g / 40 g/mol = 0,20 mol. D
 
 Klausur-Satz: `Das Erhaltungsverfahren liefert Stoffmengen aus Massen, während das Oxidationszahlverfahren die Elektronenübergänge und die Rolle der Stoffe beschreibt.`
 
-## Schritt 6 — check
+## Schritt 6 — check: Verständnisprüfung
 
 CHECK (Selbsttest, 3 Fragen mit Antworten):
 
@@ -150,13 +153,13 @@ Klausur-Satz: `Jeder Trick endet in einer Gleichung, einer Einheit und einer Beg
    Korrektur: Reaktionen merken, keine Pole. In der galvanischen Zelle laeuft an der Anode die Oxidation unter Elektronenabgabe; sie ist der Minuspol. Nur in der Elektrolysezelle haengt die Anode am Pluspol. Erst den Elektronenfluss bestimmen (Austritt gleich Anode gleich Minus), dann irrt man nicht.
    Korrektur-Satz: `In einer galvanischen Zelle ist die Anode der negative Pol, da dort die Oxidation mit Elektronenabgabe stattfindet.`
 
-## Schritt 7 — szenario
+## Schritt 7 — szenario: Klausurtransfer & Rubric
 
 ROLLE: Du bist Tutor und erklärst einer Mitschülerin die sechs CN-Verfahren für die EF-Klausur.
 SITUATION: Die Mitschülerin hat zwei Aufgaben vor sich: (1) Aus 8,0 g Calcium (M = 40 g/mol) nach Ca + 2 HCl -> CaCl2 + H2 die Wasserstoffmenge berechnen; (2) in 2 Mg + O2 -> 2 MgO Oxidations- und Reduktionsmittel benennen. Erkläre ihr in einer zusammenhängenden Antwort (ca. 150 Wörter), welches Verfahren zu welcher Aufgabe gehört, führe beide vollständig durch und schließe jede Teilaufgabe mit einem deutschen Klausur-Satz ab.
 RUBRIC (30 XP): Zuordnung der Aufgabe (1) zum Erhaltungsverfahren und (2) zum Oxidationszahlverfahren (8 XP) | Rechnung n(Ca) = 0,20 mol und n(H2) = 0,20 mol mit Einheit (8 XP) | Oxidationszahlen Mg 0 -> +2 und O 0 -> -2 mit Benennung (8 XP) | Deutsche Fachsprache und klare Begründung (6 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY (Kernzusammenfassung):
 
