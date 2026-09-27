@@ -15,7 +15,7 @@ version: Lesson-v3
 
 <!-- Lesson v3 9-Schritt-Architektur: Schritt 1 bis 8 feste Struktur; Fehlvorstellung zwischen Schritt 6 und 7 (Parser ueberspringt, zaehlt nicht); interaktive [Werkzeug: <id>]; Gating: check/szenario nicht bestanden = Weiter deaktiviert; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
-## Schritt 1 — entdecken
+## Schritt 1 — entdecken: Ziele & Phänomen-Einstieg
 
 ZIELE (drei messbare Ziele dieser Lektion):
 
@@ -25,7 +25,7 @@ ZIELE (drei messbare Ziele dieser Lektion):
 
 ### Hook / Phaenomen
 
-Vier Aufgaben, ein Text — und die falsche Wahl kostet die halbe Klausur. Wer ein Gedicht wie einen Kommentar analysiert, schreibt fleissig am Thema vorbei. Woran erkennt man in dreissig Sekunden, welcher Typ vorliegt?
+Vier Aufgaben, ein Text — und die falsche Wahl kostet die halbe Klausur. Wer ein Gedicht wie einen Kommentar analysiert, schreibt fleissig am Thema vorbei. Woran erkennt man in dreissig Sekunden, welcher Typ vorliegt? Die Antwort beginnt beim Operator: analysieren verlangt Zerlegung mit Beleg und Wirkung, interpretieren verlangt Deutung mit Hypothese, eroertern verlangt Abwaegung mit eigenem Urteil. Viele lesen nur das Material und uebersehen die Arbeitsanweisung, und genau dort setzt die rhetorische Manipulation der Pruefung an: Sie lenkt Fleissige in die falsche Textsorte. Erstens prueft der Profi das Material — literarisch oder pragmatisch. Zweitens markiert er Operator und Zusatzauftrag wie Vergleich oder Stellungnahme. Drittens ordnet er den AFB-Schwerpunkt zu und waehlt danach Aufbau und Satzbausteine. Wer diese dreissig Sekunden investiert, spart dreissig Minuten Umweg und schreibt von der ersten Zeile an im richtigen Verfahren.
 
 ### Fachbegriff & Definition
 
@@ -37,7 +37,7 @@ Die Kausalkette lautet: **Signal, Typ, Gewichtung, Plan**. Erstens werden Operat
 
 Klausur-Satz: `Die Aufgabenart wird zuerst am Operator und am Material bestimmt, bevor der Text gelesen wird.`
 
-## Schritt 2 — entdecken
+## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
 
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
@@ -59,53 +59,30 @@ Die Begriffe steuern die Arbeit: Die **Aufgabenart** waehlt das Verfahren, der *
 
 Klausur-Satz: `Der weiterführende Schreibauftrag folgt erst nach der Analyse und verlangt eine eigene Stellungnahme oder einen Vergleich.`
 
-## Schritt 3 — entdecken
+## Schritt 3 — entdecken: Kernkonzept & Wirkungsmodell
 
 TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
 ### Hook / Phaenomen
 
-Warum zaehlt eine schoene Biografie fast nichts, ein einziger Beleg mit Zeile aber alles? Weil die Klausur kein Wissen abfragt, sondern Denken prueft. AFB II ist die Waehrung, in der alles bezahlt wird.
+Warum zaehlt eine schoene Biografie fast nichts, ein einziger Beleg mit Zeile aber alles? Weil die Klausur kein Wissen abfragt, sondern Denken prueft — und Denken braucht Material plus Zeile. AFB II ist die Waehrung, in der alles bezahlt wird.
 
-### Fachbegriff & Definition
+### Spiel-Aufgabe (Entscheidungs-Sandbox)
 
-Die **AFB-Gewichtung als Steuerungsmodell** verteilt die Punkte auf **Einleitung, Analyse und Urteil**. Ihre Formel lautet $Erfolg = AFB_{II}(Beleg + Z. + Wirkung)$. AFB I liefert drei Saetze Einleitung, AFB II ca. 70 Prozent Analyse, AFB III das begruendete Urteil. Wer AFB I aufblaeht, verdraengt die Analyse und verliert die Mehrheit der Punkte.
+Oeffne die Entscheidungs-Sandbox: Vor dir liegen drei Faelle — Kommentar plus analysieren, Gedicht plus interpretieren, Dossier plus Adressat. Kreise mit dem Highlighter zuerst Operator und Material ein und ziehe jeden Fall in den richtigen Typ-Topf I bis IV. Erst wenn Operator und Material beide stimmen, rastet der Topf ein; falsche Ablage gibt Rotstift-Feedback mit Operator-Hinweis. Ziel: drei Treffer ohne Fehlversuch.
 
-### Wirkungsgefuege / Modell
+### Aha-Moment & Gesetz
 
-Die Kausalkette lautet: **Kuerzen, Belegen, Urteilen, Adressieren**. Erstens bleibt AFB I mit drei Saetzen knapp. Zweitens traegt AFB II mit Beleg, $Z.$ und Wirkung jede Aufgabenart. Drittens schliesst AFB III mit Abwaegung oder Position. Viertens sichert bei Typ IV der Adressatenbezug die Textsorte. Typ IIa als ZKE-Format trainiert genau dieses Fundament fuer alle vier Typen.
-
+Wer zuerst Operator plus Material klaert, verteilt danach automatisch richtig: AFB I bleibt mit drei Saetzen Einleitung knapp, AFB II traegt mit Beleg, $Z.$ und Wirkung ca. 70 Prozent, AFB III schliesst mit begruendetem Urteil. Merke als Formel $Erfolg=AFB_{II}(Beleg+Z.+Wirkung)$ und als Leseregel $These+Beleg=Deutung$. Typ IIa als ZKE-Format trainiert genau dieses Fundament fuer alle vier Typen.
 ```diagram
-  ENTSCHEIDUNGSBAUM + AFB-GEWICHT
+  ENTSCHEIDUNGSBAUM — Sandbox-Regel
   Operator + Material pruefen
     -> literarisch (Gedicht/Drama) = Typ I
     -> pragmatisch + nur Analyse = Typ II
     -> pragmatisch + Urteil im Zentrum = Typ III
     -> Dossier + Adressat + ca. 1000 W. = Typ IV
-  Gewicht: AFB I ~10% (3 Saetze) / AFB II ~70% (Beleg+Z.+Wirkung)
-    / AFB III ~20% (Urteil)
-```
-
-```diagram
-   ENTSCHEIDUNGSBAUM: welche Aufgabenart?
-   Start: Aufgabenstellung lesen
-      |
-      +-- Operator + Material pruefen
-      |
-      +-- Material = literarischer Text (Gedicht/Roman/Drama)?
-      |        -> Typ I  (interpretieren)
-      |
-      +-- Material = pragmatischer Text (Kommentar/Rede/Sachtext)?
-      |        +-- nur analysieren (+kurze Stellungnahme)? -> Typ II
-      |        +-- eigenes Urteil im Zentrum?               -> Typ III
-      |
-      +-- Material = Dossier + Adressat + Wortziel ca. 1000?
-               -> Typ IV (materialgestuetztes Verfassen)
-
-   AFB-GEWICHT (typisch)
-   AFB I   ###...........  ~10%  (Einleitung, 3 Saetze)
-   AFB II  ############..  ~70%  (Analyse: Beleg+Zeile+Wirkung)
-   AFB III ###...........  ~20%  (Urteil / Abwaegung)
+  Gewicht: AFB I ~10% (3 Saetze) | AFB II ~70% (Beleg+Z.+Wirkung) | AFB III ~20% (Urteil)
+  Formel: $Erfolg=AFB_{II}(Beleg+Z.+Wirkung)$
 ```
 
 Klausur-Satz: `Während Typ II den Text zum Gegenstand hat, richtet sich Typ IV an einen Adressaten und verlangt eine materialgestützte Stellungnahme.`
@@ -116,15 +93,15 @@ Klausur-Satz: `Während Typ II den Text zum Gegenstand hat, richtet sich Typ IV 
 
 **Bezug zum Konzept**: Die Gewichtung der Aufgabenarten folgt der Stufung der Anforderungsbereiche: AFB II als Mitte traegt den groessten Anteil.
 
-## Schritt 4 — ausprobieren
+## Schritt 4 — ausprobieren: Interaktive Praxis & Text-Labor
 
 BEISPIEL (Musteraufgabe mit Loesungsweg):
 
-[Werkzeug: formula]
+[Werkzeug: highlighter]
 
-AUFGABE (analysieren, AFB II): Ordne die drei Aufgabenstellungen je einer Aufgabenart zu und begruende mit Operator und Material.
+AUFGABE (analysieren, AFB II): Typ-Detektiv mit drei Faellen — kreise mit dem Highlighter Operator und Material ein, lege jeden Fall in den richtigen Typ-Topf und notiere den AFB-Schwerpunkt.
 
-Uebungsaufgaben (selbst verfasst, ORIGINAL):
+Detektiv-Faelle (selbst verfasst, ORIGINAL):
 A) "Analysieren Sie den Kommentar zur Schulpolitik und nehmen Sie abschliessend kurz Stellung."
 B) "Interpretieren Sie das Gedicht und vergleichen Sie es anschliessend mit einem zweiten Gedicht zum Motiv des Unterwegsseins."
 C) "Verfassen Sie fuer die Schuelerzeitung einen argumentierenden Beitrag zur Frage, ob Hausaufgaben abgeschafft werden sollen. Nutzen Sie die Materialien und Ihre Erfahrung."
@@ -138,7 +115,7 @@ MUSTERLOESUNG: A gehoert zu Typ II (Analyse eines pragmatischen Textes): Der Ope
 
 Klausur-Satz: `Operator und Material entscheiden über die Aufgabenart: analysieren plus Kommentar ergibt Typ II, verfassen plus Dossier ergibt Typ IV.`
 
-## Schritt 5 — ausprobieren
+## Schritt 5 — ausprobieren: Verfahrensvergleich & Abgrenzung
 
 VERGLEICH (zwei Verfahren unterscheiden):
 
@@ -153,7 +130,7 @@ ANTWORT: A erfordert Verfahren (i): vergleichende Interpretation (Typ I). Erster
 
 Klausur-Satz: `Typ I endet bei der Deutung des Textes, Typ IV bei der überzeugenden Position gegenüber dem Adressaten.`
 
-## Schritt 6 — check
+## Schritt 6 — check: Verständnisprüfung
 
 CHECK (Selbsttest, 3 Fragen mit Antworten):
 
@@ -175,13 +152,13 @@ Klausur-Satz: `Der Schwerpunkt liegt auf AFB II: Beleg, Zeile und Wirkung tragen
    Korrektur: Typ IV verlangt Auswahl und Verweis (auswaehlen + verweisen). Zwei starke Belege mit Autorennennung schlagen sechs funktionslose Zitate; jeder Verweis muss die eigene These stuetzend.
    Korrektur-Satz: `Beim materialgestützten Verfassen zählt die funktionale Auswahl weniger starker Belege, nicht die Menge der Materialien.`
 
-## Schritt 7 — szenario
+## Schritt 7 — szenario: Klausurtransfer & Rubric
 
 ROLLE: Du bist Tutor in einer Deutsch-Lerngruppe und bereitest Mitschueler auf die Klausur vor.
 SITUATION: Eine Mitschuelerin hat vier Aufgabenstellungen vor sich und weiss nicht, welche Aufgabenart welche ist und wie sie die Zeit einteilen soll. Erklaere in einer zusammenhaengenden Antwort (ca. 150 Woerter), wie man die Aufgabenarten unterscheidet und wie man die AFB-Gewichtung plant.
 RUBRIC (30 XP): Unterscheidung der vier Aufgabenarten nach Operator und Material (5 XP) | Zuordnung mindestens zweier Beispiele zur richtigen Aufgabenart (10 XP) | Erklaerung der AFB-Gewichtung (10 XP) | Hinweis auf die Bedeutung von ZKE D1 (IIa) fuer EF (5 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY (Kernzusammenfassung):
 

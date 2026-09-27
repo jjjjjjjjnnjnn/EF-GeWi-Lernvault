@@ -15,7 +15,7 @@ version: Lesson-v3
 
 <!-- Lesson v3 9步制架构：Schritt 1至8固定结构；Fehlvorstellung 夹在 Schritt 6 与 7 之间（Parser 自动跳过，不占步数）；支持内嵌 [Werkzeug: <id>] 交互教具；Gating: check/szenario 未过 = Weiter 置灰；XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
-## Schritt 1 — entdecken
+## Schritt 1 — entdecken: Ziele & Phänomen-Einstieg
 
 ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
@@ -25,9 +25,20 @@ ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
 Voraussetzung（窄切口）：只做单场景（以《艾米莉亚·迦洛蒂》冲突场景为原型），不做全剧结构；已会 Szenenangabe 格式。所有引用均为原创概括，不抄原文大段。
 
+
+Hook中文生活切入:
+
+想象班级群里一段语音引发误会:一个人说了句玩笑话,有人当真、有人和稀泥、有人截图外传,三分钟后没人记得原话,却人人都在为自己的理解吵架。戏剧场景分析处理的就是这种多声部误会:每个人物带着自己的目标和面具说话,台词的字面意思从来不等于真实意图。
+
+Phaenomen-Satz (DE): Alle hoeren denselben Satz, doch jeder versteht einen anderen.
+
+中文机制铺垫:先划分场景的 exposition、精读台词的言外之意与潜台词,再分析人物星座与权力关系,最后落到戏剧功能:这个场景推动了什么冲突、为高潮埋了什么伏笔,结论必须回扣整部剧的悲剧逻辑。
+
+Mechanismus-Satz (DE): Jede Szene treibt den Konflikt weiter und bereitet die Katastrophe vor.
+
 Klausur-Satz: `Eine Szene wird als funktionaler Baustein des Konflikts analysiert, nicht nacherzaehlt.`
 
-## Schritt 2 — entdecken
+## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
 
 PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
 
@@ -41,21 +52,35 @@ PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→�
 
 Klausur-Satz: `Wer fragt und wer unterbricht, zeigt die Machtverteilung der Szene.`
 
-## Schritt 3 — entdecken
+## Schritt 3 — entdecken: Kernkonzept & Wirkungsmodell
 
-ENTDECKEN（1概念 + 1文字图解）：
+ENTDECKEN（1概念 + 1文字图解，中文在上、德语在下）：
 
-中文：场景分析的锚是冲突：先一句话定位（这是亲王权力逼近、父女被迫抉择的场景），再分两到三个对话回合概括（Ansprache—Gegenrede—Zuspitzung），每回合配一个手法（Fragekette、 Unterbrechung、 Ausruf）并讲功能（ Herrschaft zeigen / Widerstand markieren / Entscheidung erzwingen）。结尾回扣主题：buergerliche Tugend（贞洁、父权保护）撞上 fuerstliche Willkuer。手法无功能不写，内容无冲突不记。
+Hook中文生活切入：
+
+中文：想象家庭会议上谁打断谁、谁转移话题：三句话就能听出谁说了算。戏剧场景分析就是把这种权力耳听为实。
+
+Phaenomen-Satz (DE): Wer fragt und wer unterbricht, zeigt die Macht der Szene.
+
+Spiel-Aufgabe沙盒操作指引：
+
+中文：打开文本沙盒，用 highlighter 标出 Sprecherwechsel、Frage 与 Unterbrechung（关键词：Regieanweisung, Stichomythie, Sprechanteil），看对话主导权在哪一分钟易手。
+
+Beobachtungs-Satz (DE): Der Wechsel der Gespraechsfuehrung markiert die Uebergabe der Entscheidung.
+
+Aha-Moment因果链：
+
+中文因果链：戏剧靠对话推进冲突，提问权、打断权和话语占比就是权力的刻度；当主导说话人易手，人物关系与冲突焦点同步转折，配上舞台指示与修辞手段，场景功能即人物在冲突齿轮上的位置。
+
+Gesetz-Satz (DE): Jede Beobachtung braucht Beleg, Mittel und Funktion im Konflikt.
 
 文字图解（ASCII 结构图，App支持解析渲染）：
 
 ```diagram
-  Einordnung (Akt/Szene, Konfliktstand)
-  Verlauf: Runde 1 Ansprache ──> Runde 2 Gegenrede ──> Runde 3 Zuspitzung
-  je Runde: Beleg (paraphrasiert) + Mittel + Funktion
-  Schluss: Beitrag zum Gesamtkonflikt + Gattung
+Szene als Baustein: Exposition -> Zuspitzung -> Umschlag
+je Replik: Sprecher + Mittel + Funktion
+Fokus: Wer fragt? Wer bricht ab? Wer entscheidet?
 ```
-
 Klausur-Satz: `Jede Beobachtung braucht Beleg, Mittel und Funktion im Konflikt.`
 
 ## Anekdote & Fun-Fact
@@ -66,24 +91,31 @@ Klausur-Satz: `Jede Beobachtung braucht Beleg, Mittel und Funktion im Konflikt.`
 
 **Bezug zum Konzept**: `Der private Konflikt traegt eine oeffentliche Anklage.`
 
-## Schritt 4 — ausprobieren
+## Schritt 4 — ausprobieren: Interaktive Praxis & Labor
 
-BEISPIEL（正确例题示范，含教具操作与解答）：
+[Werkzeug: highlighter]
 
-[Werkzeug: szene]
+BEISPIEL（正确例题示范，含教具操作与解答，中文在上、德语在下）：
 
-AUFGABE (analysieren, AFB II)：Analysieren Sie eine späte Szene zwischen Vater und Tochter vor der Katastrophe: Der Vater will die Familienehre durch Rueckzug retten, die Tochter schwankt zwischen Angst und Tugendanspruch. Untersuchen Sie Gespraechsfuehrung und Konfliktfunktion.
+AUFGABE中文导读（找茬谜题）：某场景前半段公爵夫人主导提问，后半段爱米莉亚以短句打断并夺得决定权。请定位转折点并论证其冲突功能。
 
-HILFE:
-1. Schritt 1: Szene in einem Satz einordnen (vor Katastrophe, Entscheidungsszene).
-2. Schritt 2: Zwei Gespraechsrunden mit paraphrasiertem Beleg und Mittel nennen.
-3. Schritt 3: Funktion fuer Figuren und Gesamtkonflikt deuten.
+AUFGABE (analysieren, AFB II): In der Szene fuehrt zuerst die eine Figur das Gespraech, nach einem Sprecherwechsel entscheidet die andere. Lokalisieren Sie den Umschlag und deuten Sie seine Funktion im Tugendkonflikt.
 
-MUSTERLÖSUNG: Die Szene steht unmittelbar vor der Katastrophe und erzwingt die Entscheidung zwischen Unterwerfung und Tugendbehauptung. In Runde eins dominiert der Vater durch kurze Imperative und Unterbrechungen, was seine Schutzrolle und patriarchale Autoritaet markiert; die Tochter antwortet in abgebrochenen Fragen, was Angst und sittlichen Anspruch zugleich zeigt. In Runde zwei kippt die Fuehrung: Die Tochter formuliert in einem monologartigen Ausbruch ihren Tugendanspruch, der Vater verlaengert seine Saetze und zoegert — sprachlich wird die Entscheidung an die Tochter zurueckgegeben. Funktional treibt die Szene den Konflikt auf die Spitze: Weder Flucht noch Anpassung bleiben moeglich, das buergerliche Trauerspiel steuert in die Katastrophe als Tugendbeweis.
+HILFE（中德双语步骤）：
 
+1. 中文：第1步标出提问与打断的分布，定出转折句，关键词：Beleg。
+   Schritt 1 (DE): Sichern Sie Fragen, Abbrueche und Sprechanteile mit Zeilenbeleg.
+2. 中文：第2步给每个手段配功能，不说空话，关键词：Mittel。
+   Schritt 2 (DE): Ordnen Sie jedem Mittel (Frage, Abbruch, Befehl) eine Funktion zu.
+3. 中文：第3步收束到冲突：谁接管决定、悲剧齿轮转了哪一格，关键词：Konflikt。
+   Schritt 3 (DE): Binden Sie den Befund an den Tugendkonflikt zurueck.
+
+MUSTERLOESUNG：中文：转折在爱米莉亚第一次用短句打断并反问处；此前夫人以连问控场，此后爱米莉亚以决断句接管，场景从劝说转为抉择，悲剧冲突拧紧一格。
+
+MUSTERLOESUNG (DE): Der Umschlag liegt beim ersten Abbruch mit Gegenfrage: Die Gespraechsfuehrung wechselt, die Entscheidung wandert mit. Aus Ueberredung wird Entschluss; der Tugendkonflikt spitzt sich zu, weil Sprache hier nicht informiert, sondern verfuegt.
 Klausur-Satz: `Der Wechsel der Gespraechsfuehrung markiert die Uebergabe der Entscheidung und spitzt den Tugendkonflikt zu.`
 
-## Schritt 5 — ausprobieren
+## Schritt 5 — ausprobieren: Verfahrensvergleich & Abgrenzung
 
 VERGLEICH辨别实验（双向辨析：人物塑造 vs 冲突推进）：
 
@@ -98,7 +130,7 @@ ANTWORT: A erfordert Verfahren (i): Kurze Befehle plus Unterbrechungen belegen S
 
 Klausur-Satz: `Figur deutet Sprache auf den Menschen, Funktion deutet Sprache auf den Konflikt.`
 
-## Schritt 6 — check
+## Schritt 6 — check: Verständnisprüfung
 
 CHECK检索默写（自测 3 题，与答案配对）：
 
@@ -120,13 +152,13 @@ Klausur-Satz: `Ohne Funktion bleibt jede Mittelnennung leer.`
    中文纠偏：长引挤掉分析；用概括（paraphrasieren）加短 Beleg，省下篇幅写功能。
    Korrektur-Satz: `Kurzer Beleg plus Deutung schlaegt langes Zitat ohne Deutung.`
 
-## Schritt 7 — szenario
+## Schritt 7 — szenario: Klausurtransfer & Rubric
 
 ROLLE: Du schreibst die Klausur: Dramenszene im buergerlichen Trauerspiel.
 SITUATION: Der Text ist unbekannt, die Zeit knapp. Verfasse in zusammenhaengender Analyse (ca. 150 Woerter) Einordnung, zwei Runden mit Mittel und Funktion sowie Schluss zum Gesamtkonflikt.
 RUBRIC (30 XP): Einordnung mit Konfliktstand (6 XP) | Zwei Runden mit Beleg und Mittel (10 XP) | Funktionsdeutung fuer Figuren und Konflikt (10 XP) | Fachsprachliche Korrektheit (4 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY 1盒（核心总结）：
 

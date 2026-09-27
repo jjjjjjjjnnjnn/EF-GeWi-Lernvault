@@ -15,7 +15,7 @@ version: Lesson-v3
 
 <!-- Lesson v3 9-Schritt-Architektur: Schritt 1 bis 8 feste Struktur; Fehlvorstellung zwischen Schritt 6 und 7 (Parser ueberspringt, zaehlt nicht); interaktive [Werkzeug: <id>]; Gating: check/szenario nicht bestanden = Weiter deaktiviert; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
-## Schritt 1 — entdecken
+## Schritt 1 — entdecken: Ziele & Phänomen-Einstieg
 
 ZIELE (drei messbare Ziele dieser Lektion):
 
@@ -25,7 +25,7 @@ ZIELE (drei messbare Ziele dieser Lektion):
 
 ### Hook / Phaenomen
 
-In jeder Pause starren Dutzende auf Displays statt miteinander zu reden. Soll die Schule verbieten, was alle tun? Die Antwort entscheidet nicht ueber Handys, sondern ueber Erziehung: Kontrolle oder Vertrauen?
+In jeder Pause starren Dutzende auf Displays statt miteinander zu reden. Soll die Schule verbieten, was alle tun? Die Antwort entscheidet nicht ueber Handys, sondern ueber Erziehung: Kontrolle oder Vertrauen? Genau hier beginnt die dialektische Eroerterung, denn beide Seiten haben starke Argumente mit Beleg. Die Befuerworter nennen Konzentration und Schutz vor Ablenkung, die Gegner nennen Selbststaendigkeit und Umgang mit Medien als Lernziel. Die rhetorische Manipulation lauert auf beiden Seiten: dramatische Einzelfaelle ersetzen Statistik, Appelle ersetzen Begruendung, Scheinloesungen ersetzen Abwaegung. Erst die Sanduhr schuetzt davor: Einleitung mit Hook und Fragestellung, Pro-Bloecke in Steigerung, Contra-Bloecke in Steigerung, Umschwung mit staerkstem Gegenargument, dann Abwaegung nach Kriterien wie Wirksamkeit und Verhaeltnismaessigkeit, schliesslich Fazit mit eigenem Urteil. Wer so baut, lenkt den Leser nicht durch Tricks, sondern durch Pruefung.
 
 ### Fachbegriff & Definition
 
@@ -37,7 +37,7 @@ Die Kausalkette lautet: **Frage, Block, Umschwung, Urteil**. Erstens verengt die
 
 Klausur-Satz: `Die dialektische Eroerterung nach dem Sanduhr-Prinzip ordnet Pro- und Contra-Argumente in aufsteigender Staerke und muendet in eine abgewogene Stellungnahme.`
 
-## Schritt 2 — entdecken
+## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
 
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
@@ -59,22 +59,21 @@ Die Begriffe bilden das Bauwerk: Das **Sanduhr-Prinzip** gibt die Form, **Pro- u
 
 Klausur-Satz: `Die Staerke der Argumente waechst zum Umschwung hin, die Abwaegung entscheidet zwischen ihnen.`
 
-## Schritt 3 — entdecken
+## Schritt 3 — entdecken: Kernkonzept & Wirkungsmodell
 
 TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
 ### Hook / Phaenomen
 
-Wer zuerst seine eigene Meinung sagt, hat schon verloren. Denn wer frueh urteilt, entwertet den Gegner und verschenkt die Abwaegung. Warum gewinnt gerade die spaete Entscheidung die meisten Punkte?
+Wer zuerst seine eigene Meinung sagt, hat schon verloren. Denn wer frueh urteilt, entwertet die Gegenseite und verschenkt die Abwaegung. Warum gewinnt gerade die spaete Entscheidung die meisten Punkte?
 
-### Fachbegriff & Definition
+### Spiel-Aufgabe (Argument-Sandbox)
 
-Der **Umschwung als Taille der Sanduhr** ist der **markierte Seitenwechsel** zwischen den Argumentbloecken. Seine Formel lautet $Umschwung = zwar + Staerkstes der Gegenseite + jedoch + Ueberleitung$. Er steht zwischen den beiden staerksten Argumenten und erzeugt maximale Spannung. Ohne sprachliche Markierung wirkt der Wechsel wie ein Bruch; mit ihr wie eine Wende.
+Baue die Sanduhr per Drag-and-drop: Ziehe je drei Pro- und Contra-Bausteine in Steigerung an die Taille — schwaechste zuerst, staerkste zuletzt — und lasse den Umschwung mit zwar plus jedoch einrasten. Der Highlighter markiert Konnektoren als Gelaender: zuerst, darueber hinaus, am wichtigsten, demgegenueber, somit. Ohne markierten Umschwung bleibt die Taille ein Bruch und die Sandbox verweigert den Schluss.
 
-### Wirkungsgefuege / Modell
+### Aha-Moment & Gesetz
 
-Die Kausalkette lautet: **Steigern, Wenden, Vergleichen, Bedingen**. Erstens steigt jeder Block von schwach nach stark, sodass die Staerksten an der Taille stehen. Zweitens wendet der Umschwung mit Konnektor die Richtung. Drittens vergleicht die Abwaegung Schutz der Konzentration gegen Training von Eigenverantwortung. Viertens sichert die Bedingung — Verbot mit Ausnahmen fuer Notfaelle und Lernphasen — das Urteil ab. Spannung plus Bedingung ergeben volle Punktzahl.
-
+Die Kausalkette lautet Steigern, Wenden, Vergleichen, Bedingen: Die Staerksten stehen an der Taille, der Konnektor wendet, die Abwaegung vergleicht Schutz der Konzentration gegen Training von Eigenverantwortung, die Bedingung sichert das Urteil. Formel: $Umschwung=zwar+Gegenseite+jedoch$; erweitert gilt $Urteil=Abwaegung+Bedingung$. Spannung plus Bedingung ergeben volle Punktzahl.
 ```diagram
   SANDUHR — Taille als Umschwung
   [breit] Einleitung: Hook + Streitfrage (Handyverbot?)
@@ -85,21 +84,7 @@ Die Kausalkette lautet: **Steigern, Wenden, Vergleichen, Bedingen**. Erstens ste
     erweitern zur Abwaegung
   [breit] Schluss: Fazit + Bedingung (mit Ausnahmen)
   Gelaender: zwar / jedoch / demgegenueber / somit
-```
-
-```diagram
-  [breit] Einleitung: Hook + Thema + Streitfrage
-     \                     (Handyverbot an Schulen?)
-      \  verengen: vom Alltag zur These
-       \/
-       ||  PRO oder CONTRA Block 1 (schwach -> stark)
-       ||  --- Taille: Umschwung mit Konnektor ---
-       ||  PRO oder CONTRA Block 2 (schwach -> stark)
-       /\
-      /  erweitern: Abwaegung + eigene Position
-     / [breit] Schluss: Fazit + Ausblick / Bedingung
-  Konnektoren als Gelaender: zwar / jedoch /
-  demgegenueber / zusammenfassend / somit
+  Formel: $Umschwung=zwar+Gegenseite+jedoch$
 ```
 
 Klausur-Satz: `Die Einleitung verengt die Fragestellung, die Argumentbloecke steigern sich und der Schluss erweitert den Blick zur Abwaegung.`
@@ -110,24 +95,24 @@ Klausur-Satz: `Die Einleitung verengt die Fragestellung, die Argumentbloecke ste
 
 **Bezug zum Konzept**: `Erst wer beide Seiten stark macht, kann am Ende glaubwuerdig abwaegen.`
 
-## Schritt 4 — ausprobieren
+## Schritt 4 — ausprobieren: Interaktive Praxis & Text-Labor
 
 BEISPIEL (Musteraufgabe mit Loesungsweg):
 
-[Werkzeug: lego]
+[Werkzeug: highlighter]
 
-AUFGABE (eroertern, AFB II-III): Soll an unserer Schule ein ganztaegiges Handyverbot eingefuehrt werden? Baue mit den Lego-Bloecken eine Sanduhr: Einleitung mit Hook, je drei Pro- und Contra-Argumente in Steigerung, Umschwung und Abwaegung mit Fazit.
+AUFGABE (eroertern, AFB II-III): Sanduhr-Bau-Raetsel — soll an unserer Schule ein ganztaegiges Handyverbot eingefuehrt werden? Baue die Sanduhr: Einleitung mit Hook, je drei Pro- und Contra-Bausteine in Steigerung, Umschwung und Abwaegung mit Fazit. Kontrolliere mit dem Highlighter, ob jeder Block Konnektoren traegt.
 
 HILFE:
 1. Waehle einen Hook aus dem Schulalltag (Blick in die Pause), nenne Streitfrage und Weg.
 2. Setze schwaechere Argumente zuerst, staerkste zuletzt; verkette jeden Block mit Konnektoren (zuerst, darueber hinaus, am wichtigsten).
 3. Wechsle am Umschwung mit "Zwar ... jedoch ..." die Seite und formuliere in der Abwaegung eine Bedingung (Verbot mit Ausnahmen).
 
-MUSTERLOESUNG: Einleitung (Hook): In jeder Pause starren Dutzende auf Displays statt miteinander zu reden — daher stellt sich die Frage, ob ein ganztaegiges Handyverbot die Lage bessert. Contra-Block (steigend): Erstens Erreichbarkeit der Eltern in Notfaellen; darueber hinaus Nutzung als Lernwerkzeug fuer Recherche und Vokabeln; am wichtigsten jedoch das Training von Eigenverantwortung statt pauschaler Kontrolle. Umschwung: Zwar sprechen diese Punkte fuer Selbststeuerung, jedoch zeigen Pausenhof und Unterricht ein anderes Bild. Pro-Block (steigend): Erstens weniger Ablenkung und staerkere Konzentration; darueber hinaus Schutz vor heimlichen Fotos und sozialem Druck in Chats; am wichtigsten die Wiederbelebung echter Pausengespraeche und Bewegung. Abwaegung mit Fazit: Abgewogen ueberwiegt der Schutz der Lern- und Pausenzeit, sofern Ausnahmen fuer Notfaelle und klar definierte Lernphasen gelten. Somit verdient ein Handyverbot mit Ausnahmeregel Zustimmung.
+MUSTERLOESUNG: Einleitung (Hook): In jeder Pause starren Dutzende auf Displays statt miteinander zu reden — daher stellt sich die Frage, ob ein ganztaegiges Handyverbot die Lage bessert. Contra-Block (steigend): Erstens Erreichbarkeit der Eltern in Notfaellen; darueber hinaus Nutzung als Lernwerkzeug; am wichtigsten das Training von Eigenverantwortung. Umschwung: Zwar sprechen diese Punkte fuer Selbststeuerung, jedoch zeigen Pausenhof und Unterricht ein anderes Bild. Pro-Block (steigend): Erstens weniger Ablenkung; darueber hinaus Schutz vor heimlichen Fotos und Chat-Druck; am wichtigsten echte Pausengespraeche und Bewegung. Abwaegung mit Fazit: Abgewogen ueberwiegt der Schutz der Lern- und Pausenzeit, sofern Ausnahmen fuer Notfaelle und Lernphasen gelten.
 
 Klausur-Satz: `Zwar foerdert das Handy Eigenstaendigkeit, jedoch ueberwiegt im Schulalltag der Schutz der Konzentration, sodass ein Verbot mit Ausnahmen angemessen ist.`
 
-## Schritt 5 — ausprobieren
+## Schritt 5 — ausprobieren: Verfahrensvergleich & Abgrenzung
 
 VERGLEICH (zwei Verfahren unterscheiden):
 
@@ -141,7 +126,7 @@ ANTWORT: A verlangt Verfahren (i): Einleitung mit Streitfrage, Contra-Block, Ums
 
 Klausur-Satz: `Die Operatoren entscheiden ueber das Verfahren: Eroertern verlangt Abwaegung, Begruenden verlangt Steigerung.`
 
-## Schritt 6 — check
+## Schritt 6 — check: Verständnisprüfung
 
 CHECK (Selbsttest, 3 Fragen mit Antworten):
 
@@ -162,14 +147,14 @@ Klausur-Satz: `Konnektoren markieren Steigerung, Umschwung und Abwaegung und mac
    Korrektur: Die Sanduhr nennt eingangs nur die Frage. Wer frueh urteilt, entwertet den Gegenblock und verschenkt die Abwaegungspunkte.
    Korrektur-Satz: `Wer die Position vorwegnimmt, entwertet den Gegenblock und verschenkt die Abwaegungspunkte.`
 
-## Schritt 7 — szenario
+## Schritt 7 — szenario: Klausurtransfer & Rubric
 
 ROLLE: Du bist Debattenchefin der Klasse 10 und bereitest das Team auf einen Schulwettbewerb vor.
 SITUATION: Das Los-Thema lautet Handyverbot, eure Seite wird erst vor Ort gezogen. Mehrere Teammitglieder kennen nur ihre Lieblingsseite.
 AUFGABE: Entwirf in zusammenhaengender Form (ca. 150 Woerter) einen Sanduhr-Bauplan mit Hook, je zwei Stichwort-Argumenten pro Seite, einem Umschwung-Satz und einer Abwaegungs-Formel mit Bedingung, sodass das Team beide Seiten vertreten kann.
 RUBRIC (30 XP): Hook plus Streitfrage klar (5 XP) | Beide Bloecke gesteigert mit Konnektoren (10 XP) | Umschwung sauber formuliert (5 XP) | Abwaegung mit Bedingung und Fazit (10 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY (Kernzusammenfassung):
 

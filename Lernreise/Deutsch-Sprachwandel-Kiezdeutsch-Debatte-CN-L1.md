@@ -15,7 +15,7 @@ version: Lesson-v3
 
 <!-- Lesson v3 9步制架构：Schritt 1至8固定结构；Fehlvorstellung 夹在 Schritt 6 与 7 之间（Parser 自动跳过，不占步数）；支持内嵌 [Werkzeug: <id>] 交互教具；Gating: check/szenario 未过 = Weiter 置灰；XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
-## Schritt 1 — entdecken
+## Schritt 1 — entdecken: Ziele & Phänomen-Einstieg
 
 ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
@@ -23,9 +23,20 @@ ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 2. 中文：能列举街区德语的典型特征（冠词省略、语序创新、多语混合）并判断其系统性。
 3. 中文：能就"街区德语是 enrich 还是 Verfall"写出辩证议论并表态（AFB II-III）。
 
+
+Hook中文生活切入:
+
+想象爷爷奶奶听孙子打电话:满嘴 совершенно andere Woerter、语序乱飞、还夹着外语词,老人摇头说世风日下,年轻人却觉得这才是自己人的暗号。语言流变争论的核心正是这代际错位:一方看到衰败,另一方看到身份与创造,考场要的是双方论据的公平呈现而非站队。老少两代的互相摇头里,藏着本节要评判的全部论据。
+
+Phaenomen-Satz (DE): Die Grosseltern hoeren Verfall, die Enkel hoeren Heimat.
+
+中文机制铺垫:先列流变证据:借词、省略、语序变化与新构词;再列双方论证:衰败论讲规范与传承,丰富论讲身份、经济性与语言接触的常态;最后用辩证结构收束:变化不可阻挡,规范可以引导,结论落到引导而非禁止。
+
+Mechanismus-Satz (DE): Sprachwandel ist normal, die Bewertung entscheidet ueber Verfall oder Gewinn.
+
 Klausur-Satz: `Sprachwandel ist normal und regelhaft, Kiezdeutsch ist ein systematisches Register, kein defektes Deutsch.`
 
-## Schritt 2 — entdecken
+## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
 
 PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
 
@@ -39,26 +50,35 @@ PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→�
 
 Klausur-Satz: `Jede Generation wirft der naechsten Sprachverfall vor und nutzt selbst gewandeltes Deutsch.`
 
-## Schritt 3 — entdecken
+## Schritt 3 — entdecken: Kernkonzept & Wirkungsmodell
 
-ENTDECKEN（1概念 + 1文字图解）：
+ENTDECKEN（1概念 + 1文字图解，中文在上、德语在下）：
 
-中文：语言像河流，不流就臭。街区德语三大特征全是省力加身份："lassma Moruk"省掉动词屈折，"isch geh Kino"省掉冠词介词，"wallah krass"混入土阿语标记圈子——但省略自有规则（信息可恢复处才省），语序创新（如时间状语前置）全城青年通用，调查显示使用者在正式场合能切回标准语，证明这是"多一套衣服"不是"没衣服穿"。考场议论记住沙漏结构：先承认担忧（标准语要保护），再转折（变体有系统），最后综合（多语能力是资源，学校教切换不教消灭）。
+Hook中文生活切入：
+
+中文：想象家长群里长辈吐槽绝绝子，转头自己发了个yyds：每代人都骂下一代糟蹋中文，自己也在变。
+
+Phaenomen-Satz (DE): Jede Generation beklagt den Verfall und spricht selbst gewandelt.
+
+Spiel-Aufgabe沙盒操作指引：
+
+中文：打开语料沙盒，用 highlighter 标出 Kiezdeutsch 的规则特征（关键词：Register, Codeswitching, Systematik, Varietaet），对比标准语看省略与语序是否有规律。
+
+Beobachtungs-Satz (DE): Weglassungen folgen Regeln, Wechsel folgt Situationen.
+
+Aha-Moment因果链：
+
+中文因果链：语言变化有规律、可验证；Kiezdeutsch 的冠词省略与语序自成系统，且使用者能按场合切换，证明这是多掌握一种变体而非少会一种语言；禁令针对出身，教学针对能力，只有后者有效。
+
+Gesetz-Satz (DE): Wer situationsgerecht wechselt, beherrscht mehr Sprache, nicht weniger.
 
 文字图解（ASCII 结构图，App支持解析渲染）：
 
 ```diagram
-   Sprachwandel: Vereinfachung + Kontakt + Identitaet
-   Kiezdeutsch-Merkmale:
-   [Artikel weg] "geh Kino" statt "ins Kino"
-   [Verb neu]    "lassma" statt "lass uns mal"
-   [Mix]         "wallah, yalla" als Marker
-   Sprecher-Kompetenz:
-   Familie/Freunde -> Kiezdeutsch (Naehe)
-   Schule/Amt      -> Standard (Distanz)
-   = Registerwechsel, kein Defizit
+Korpus -> Merkmale (Artikel-Drop, Wortstellung, Lexik)
+Test: regelhaft? wechselbar? -> Varietaet ja / Defizit nein
+Fazit: Didaktik statt Verbot
 ```
-
 Klausur-Satz: `Wer situationsgerecht wechselt, beherrscht mehr Sprache, nicht weniger.`
 
 ## Anekdote & Fun-Fact
@@ -69,26 +89,31 @@ Klausur-Satz: `Wer situationsgerecht wechselt, beherrscht mehr Sprache, nicht we
 
 **Bezug zum Konzept**: `Die Geschichte der Sprachklagen ist die beste Verteidigung gegen neue Sprachklagen.`
 
-## Schritt 4 — ausprobieren
+## Schritt 4 — ausprobieren: Interaktive Praxis & Labor
 
-BEISPIEL（正确例题示范，含教具操作与解答）：
+[Werkzeug: highlighter]
 
-[Werkzeug: sprachwandel]
+BEISPIEL（正确例题示范，含教具操作与解答，中文在上、德语在下）：
 
-AUFGABE中文导读：分析"isch muss Schuhe binden"一句话的街区德语特征，判断是错误还是变体，并设计课堂讨论问题。
+AUFGABE中文导读（辩论谜题）：有人主张禁掉 Kiezdeutsch，有人主张教切换。请用语料证据裁决这场争论。
 
-AUFGABE (analysieren, AFB II)：Analysieren Sie „Isch muss Schuhe binden" auf Kiezdeutsch-Merkmale und entscheiden Sie begründet, ob ein Fehler oder eine Varietaet vorliegt.
+AUFGABE (eroertern, AFB III): Beurteilen Sie Verbot versus Didaktik im Umgang mit Kiezdeutsch anhand von Systematik und Wechselfaehigkeit.
 
-HILFE:
-1. Schritt 1: Merkmale benennen: koronale $isch$-Aussprache, Artikel-Tilgung vor $Schuhe$.
-2. Schritt 2: Systematik pruefen: Tilgung nur wo rekonstruierbar, in Korpora regelhaft belegt.
-3. Schritt 3: Register-Test: Sprecher kann in Prüfung Standard („Ich muss mir die Schuhe binden") — also Varietaet.
+HILFE（中德双语步骤）：
 
-MUSTERLÖSUNG: Der Satz zeigt $isch$-Koronalisierung (regionale Lautung) und Artikellosigkeit („Schuhe" ohne „die"). Beides ist in Kiezdeutsch-Korpora systematisch und nie bedeutungsstoerend, weil der Artikel hier redundant ist. Da jugendliche Sprecher im formellen Kontext standardsprachlich wechseln koennen, liegt Code- bzw. Registerwechsel vor, kein Kompetenzdefizit. Didaktisch folgt: Schule soll Wechselfaehigkeit trainieren, nicht die Herkunftsvarietaet stigmatisieren.
+1. 中文：第1步摆规律证据：省略与语序可重复出现，关键词：Korpus。
+   Schritt 1 (DE): Belegen Sie Regelhaftigkeit am Korpus.
+2. 中文：第2步摆切换证据：同一个人正式场合切回标准语，关键词：Wechsel。
+   Schritt 2 (DE): Belegen Sie situatives Umschalten.
+3. 中文：第3步裁决：禁令无效、教学有效，关键词：Urteil。
+   Schritt 3 (DE): Urteilen Sie: Verbot trifft Herkunft, Didaktik trifft Kompetenz.
 
+MUSTERLOESUNG：中文：语料显示省略与语序成系统、使用者能切换，缺陷论不成立；禁令只打击身份不增加能力，切换教学既保表达又保规范，故判教学胜。
+
+MUSTERLOESUNG (DE): Systematik plus Wechselfaehigkeit beweisen Varietaet und widerlegen die Defizit-These. Das Verbot wirkt auf Herkunft, die Didaktik auf Kompetenz; nur die Didaktik erhoeht Registerbreite.
 Klausur-Satz: `Systematik plus Wechselfaehigkeit beweisen Varietaet und widerlegen die Defizit-These.`
 
-## Schritt 5 — ausprobieren
+## Schritt 5 — ausprobieren: Verfahrensvergleich & Abgrenzung
 
 VERGLEICH辨别实验（双向辨析：衰败眼 vs. 资源眼）：
 
@@ -103,7 +128,7 @@ ANTWORT: A erfordert Konzept (i): Verfalls-These, Massnahme Verbot — kritikwue
 
 Klausur-Satz: `Verbote treffen Herkunft, Didaktik trifft Kompetenz: Nur eines davon wirkt.`
 
-## Schritt 6 — check
+## Schritt 6 — check: Verständnisprüfung
 
 CHECK检索默写（自测 3 题，与答案配对）：
 
@@ -125,14 +150,14 @@ Klausur-Satz: `Ohne Korpus bleibt Sprachkritik Meinung, mit Korpus wird sie Wiss
    中文纠偏：辩证议论必须先公允重构对方最强论据（标准语确实需要保护），再用证据超越它。只骂不证会被判 einseitig。
    Korrektur-Satz: `Dialektik verlangt das staerkste Gegenargument, nicht das schwaechste.`
 
-## Schritt 7 — szenario
+## Schritt 7 — szenario: Klausurtransfer & Rubric
 
 ROLLE: Du schreibst einen Kommentar fuer die Schuelerzeitung zur Kiezdeutsch-Debatte.
 SITUATION: Ein Leserbrief fordert Handyverbot fuer „Sprachverderber", die Schulleitung plant einen Projekttag.
 AUFGABE: Nehmen Sie in ca. 150 Woertern dialektisch Stellung (Sorge—Befund—Synthese) und schlagen Sie ein Projekttag-Modul vor.
 RUBRIC (30 XP): Sorge fair rekonstruiert (8 XP) | Zwei Merkmale mit Systematik-Beleg (12 XP) | Synthese plus Modulvorschlag Wechseltraining (10 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY 1盒（核心总结）：
 

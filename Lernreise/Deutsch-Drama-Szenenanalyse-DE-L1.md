@@ -15,7 +15,7 @@ version: Lesson-v3
 
 <!-- Lesson v3 9-Schritt-Architektur: Schritt 1 bis 8 feste Struktur; Fehlvorstellung zwischen Schritt 6 und 7 (Parser ueberspringt, zaehlt nicht); interaktive [Werkzeug: <id>]; Gating: check/szenario nicht bestanden = Weiter deaktiviert; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
-## Schritt 1 — entdecken
+## Schritt 1 — entdecken: Ziele & Phänomen-Einstieg
 
 ZIELE (drei messbare Ziele dieser Lektion):
 
@@ -25,7 +25,7 @@ ZIELE (drei messbare Ziele dieser Lektion):
 
 ### Hook / Phaenomen
 
-Ein Vater fragt leise: „Du wolltest. Aber wolltest du es mir sagen?" Es geht um Geld, doch niemand spricht ueber Geld. Warum trifft der leiseste Satz am haertesten, obwohl er das Vergehen kaum nennt?
+Ein Vater fragt leise: Du wolltest. Aber wolltest du es mir sagen? Es geht um Geld, doch niemand spricht ueber Geld. Warum trifft der leiseste Satz am haertesten, obwohl er das Vergehen kaum nennt? Weil Drama fast nie sagt, was es meint: Der Wortlaut verhandelt Taschengeld, der Subtext verhandelt Vertrauen, Schuld und Macht. Genau darin liegt die dramatische Manipulation: Pausen, Wiederholungen, Abbrueche und Regieanweisungen lenken Blick und Urteil, ohne ein einziges offenes Wort. Erstens trennt die Analyse Regie von Wortlaut und markiert jede Pause als Zeichen. Zweitens bestimmt sie die Dialogstrategie — Frage, Ausweichen, Angriff — und belegt sie mit Zeile. Drittens ordnet sie die Figurenkonstellation und fragt, wer wen braucht. Viertens deutet sie die Szenenfunktion im Akt: Exposition, Zuspitzung oder Peripetie. Wer diese vier Schritte mit Beleg geht, hoert im leisesten Satz den lautesten Konflikt.
 
 ### Fachbegriff & Definition
 
@@ -37,7 +37,7 @@ Die Kausalkette lautet: **Ort, Rede, Beziehung, Leistung**. Erstens lokalisiert 
 
 Klausur-Satz: `Der Dialog verrät auf der Beziehungsebene mehr als auf der Sachebene; das wirkt entlarvend, weil Figuren ihre wahren Absichten verschleiern.`
 
-## Schritt 2 — entdecken
+## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
 
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
@@ -59,22 +59,21 @@ Die Begriffe bilden ein Werkzeugset: Die **Konstellation** zeigt, wer gegen wen 
 
 Klausur-Satz: `Die Regieanweisungen geben Hinweise auf den Subtext und machen die wahren Absichten der Figuren lesbar.`
 
-## Schritt 3 — entdecken
+## Schritt 3 — entdecken: Kernkonzept & Wirkungsmodell
 
 TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
 ### Hook / Phaenomen
 
-Lena setzt sich erst im achten Satz. Sieben Saetze lang bleibt sie stehen, wird laut, dann leise. Der Stuhl ist kein Moebel, sondern eine Kapitulation. Warum erzaehlt die Koerperhaltung mehr als das Wort „geliehen"?
+Lena setzt sich erst im achten Satz. Sieben Saetze lang bleibt sie stehen, wird laut, dann leise. Der Stuhl ist kein Moebel, sondern eine Kapitulation. Warum erzaehlt die Koerperhaltung mehr als das Wort "geliehen"?
 
-### Fachbegriff & Definition
+### Spiel-Aufgabe (Regie-Detektiv-Sandbox)
 
-Die **Regieanweisung als Subtextschluessel** entschluesselt **Gestik und Ton** als Beleg fuer das Ungesagte. Ihre Formel lautet $Subtext = Wortlaut + Regie + $Z.$$. Stehen gegen Sitzen, laut gegen leise markieren Macht und Rueckzug. Wer sie ueberspringt, liest nur die Haelfte der Szene.
+Spiele den Regie-Detektiv: Highlighte in der Sandbox-Szene alle Regieanweisungen (bleibt stehen, laut, leiser, setzt sich) und ziehe jede in eine von zwei Spalten — Sachebene (Kassen-Geld) oder Beziehungsebene (Vertrauen, Kontrolle). Das Schluss-Raetsel lautet $Z. 9$: Welche Frage entlarvt das eigentliche Thema? Wer den Subtext ohne Regie-Beleg loest, bekommt Rotstift-Feedback.
 
-### Wirkungsgefuege / Modell
+### Aha-Moment & Gesetz
 
-Die Kausalkette lautet: **Wort, Ton, Bruch, Funktion**. Erstens nennt der Wortlaut das Kassen-Geld als Sache. Zweitens widerspricht der Ton — ruhig gegen laut — der Sachharmlosigkeit. Drittens zeigt der Bruch in $Z. 9$ die wahre Anklage: nicht Rueckzahlung, sondern Verschweigen. Viertens erfuellt die Szene damit Einfuehrung und Verschaerfung des Vertrauenskonflikts. Ton plus $Z.$ machen Subtext beweisbar.
-
+Die Kausalkette lautet Wort, Ton, Bruch, Funktion: Der Wortlaut nennt die Sache, der Ton widerspricht ihr, der Bruch in $Z. 9$ zeigt die wahre Anklage — nicht Rueckzahlung, sondern Verschweigen — und die Szene erfuellt Einfuehrung plus Verschaerfung des Vertrauenskonflikts. Formel: $Subtext=Wortlaut+Regie+Z.$, Leseregel $These+Beleg=Deutung$. Ton plus $Z.$ machen Subtext beweisbar.
 ```diagram
   SZENENANALYSE — vier Schritte mit Subtext
   [1] LOKALISIEREN: Akt / Szene / Situation (Exposition?)
@@ -82,28 +81,7 @@ Die Kausalkette lautet: **Wort, Ton, Bruch, Funktion**. Erstens nennt der Wortla
          Wortlaut + Regie (Z.) = Subtext
     -> [3] KONSTELLATION: A gegen B (Ziel / Mittel / Preis)
     -> [4] FUNKTION: einfuehren / verschaerfen / wenden / aufloesen
-  Formel: Subtext = Wortlaut + Regie + Z.
-```
-
-```diagram
-   SZENENANALYSE — vier Schritte
-   +-----------------------------------------------------------+
-   | 1. LOKALISIEREN   Akt / Szene / Situation                 |
-   |    -> Exposition? steigende Handlung? Wendepunkt?         |
-   +-----------------------------------------------------------+
-   | 2. DIALOG         Sachebene  <->  Beziehungsebene         |
-   |    was gesagt wird    vs.   was erreicht werden soll      |
-   |             \_________ Subtext _________/                 |
-   |    Regieanweisung (Aktion/Ton) = Schluessel               |
-   +-----------------------------------------------------------+
-   | 3. FIGUREN        Figurenkonstellation                     |
-   |    A ---(Gegner)---> B                                    |
-   |    A ---(Verbuendeter)---> C                              |
-   |    Ziel / Mittel / Preis je Figur                         |
-   +-----------------------------------------------------------+
-   | 4. FUNKTION       Was leistet die Szene fuer das Stueck?  |
-   |    einfuehren / verschaerfen / wenden / aufloesen         |
-   +-----------------------------------------------------------+
+  Formel: $Subtext=Wortlaut+Regie+Z.$
 ```
 
 Klausur-Satz: `Die Figurenkonstellation zeigt, wer wessen Verbündeter oder Gegner ist; das wirkt erhellend, weil Allianzen den Konfliktverlauf erklären.`
@@ -114,13 +92,13 @@ Klausur-Satz: `Die Figurenkonstellation zeigt, wer wessen Verbündeter oder Gegn
 
 **Bezug zum Konzept**: Die Szene ist urspruenglich der Spielort; deshalb beginnt die Szenenanalyse mit dem Lokalisieren von Akt, Szene und Situation.
 
-## Schritt 4 — ausprobieren
+## Schritt 4 — ausprobieren: Interaktive Praxis & Text-Labor
 
 BEISPIEL (Musteraufgabe mit Loesungsweg):
 
-[Werkzeug: lego]
+[Werkzeug: highlighter]
 
-AUFGABE (analysieren, AFB II): Analysiere die folgende Uebungsszene (ORIGINAL) in vier Schritten. Bestimme Dialogstrategie, Figurenkonstellation und Szenenfunktion und belege mit Zeile.
+AUFGABE (analysieren, AFB II): Subtext-Raetsel in vier Schritten — analysiere die folgende Uebungsszene (ORIGINAL). Highlighte Regie gegen Wortlaut, bestimme Dialogstrategie, Figurenkonstellation und Szenenfunktion und belege mit Zeile.
 
 Uebungsszene (selbst verfasst, ORIGINAL, aus einem fiktiven Stueck):
 (Z. 1) HERR BERG (ruhig): "Setz dich, Lena. Wir muessen reden."
@@ -139,11 +117,11 @@ HILFE:
 3. Zeichne die Konstellation und notiere Ziel, Mittel und Preis beider Figuren.
 4. Bestimme die Szenenfunktion (einfuehren, verschaerfen, wenden, aufloesen).
 
-MUSTERLOESUNG: Die Szene exponiert einen Vertrauenskonflikt. Auf der Sachebene geht es um geliehenes Kassen-Geld (Z. 3), auf der Beziehungsebene um Vertrauen und Kontrolle: Herr Berg fragt nicht nach dem Geld, sondern nach dem Verschweigen (Z. 9). Der Subtext liegt in Z. 9: Die leise Frage entlarvt, dass nicht die Rueckzahlung, sondern die verlorene Offenheit das Thema ist. Die Konstellation ist gegnerisch, aber asymmetrisch: Berg fragt, Lena weicht aus (stehen, laut, leise). Beider Ziel ist Anerkennung; Bergs Mittel ist Kontrolle, Lenas Mittel Rechtfertigung. Die Funktion ist einfuehrend und verschaerfend: Sie legt den Konflikt an und spitzt ihn in der Schlussfrage zu.
+MUSTERLOESUNG: Die Szene exponiert einen Vertrauenskonflikt. Auf der Sachebene geht es um geliehenes Kassen-Geld (Z. 3), auf der Beziehungsebene um Vertrauen und Kontrolle: Herr Berg fragt nicht nach dem Geld, sondern nach dem Verschweigen (Z. 9). Der Subtext liegt in Z. 9: Die leise Frage entlarvt, dass nicht die Rueckzahlung, sondern die verlorene Offenheit das Thema ist. Die Konstellation ist gegnerisch, aber asymmetrisch: Berg fragt, Lena weicht aus (stehen, laut, leise). Die Funktion ist einfuehrend und verschaerfend: Sie legt den Konflikt an und spitzt ihn in der Schlussfrage zu.
 
 Klausur-Satz: `Auf der Beziehungsebene entlarvt die Frage in Z. 9 das eigentliche Thema der Szene: nicht das Geld, sondern verlorenes Vertrauen.`
 
-## Schritt 5 — ausprobieren
+## Schritt 5 — ausprobieren: Verfahrensvergleich & Abgrenzung
 
 VERGLEICH (zwei Verfahren unterscheiden):
 
@@ -158,7 +136,7 @@ ANTWORT: A erfordert Verfahren (i): Lena hat Geld aus der Kasse genommen; ihr Va
 
 Klausur-Satz: `Erst die Analyse der Beziehungsebene und des Subtexts erklärt, worum es in der Szene wirklich geht.`
 
-## Schritt 6 — check
+## Schritt 6 — check: Verständnisprüfung
 
 CHECK (Selbsttest, 3 Fragen mit Antworten):
 
@@ -180,13 +158,13 @@ Klausur-Satz: `Sachebene und Beziehungsebene fallen oft auseinander; gerade dies
    Korrektur: Gestik und Ton in Klammern sind der Schluessel zum Subtext. Lenas Wechsel von Stehen zu Sitzen, von laut zu leise, zeigt die Machtlage deutlicher als die Woerter.
    Korrektur-Satz: `Die Regieanweisungen sind keine Nebensache, sondern ein zentraler Beleg für den Subtext einer Szene.`
 
-## Schritt 7 — szenario
+## Schritt 7 — szenario: Klausurtransfer & Rubric
 
 ROLLE: Du bist Regieassistentin und erklaerst dem Ensemble eine Szene aus einem fiktiven Stueck fuer die Probenarbeit.
 SITUATION: Das Ensemble versteht nicht, warum die Szene zwischen Herrn Berg und Lena trotz der Geld-Frage von Vertrauen handelt. Erklaere in einer zusammenhaengenden Antwort (ca. 150 Woerter) Beziehungsebene, Figurenkonstellation und Szenenfunktion und belege deine Deutung am Text.
 RUBRIC (30 XP): Trennung von Sachebene und Beziehungsebene (5 XP) | Analyse des Subtexts mit Beleg und Zeile (10 XP) | Darstellung der Konstellation mit Ziel und Mittel (10 XP) | Bestimmung der Szenenfunktion (5 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY (Kernzusammenfassung):
 

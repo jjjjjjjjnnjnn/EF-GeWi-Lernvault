@@ -15,7 +15,7 @@ version: Lesson-v3
 
 <!-- Lesson v3 9-Schritt-Architektur: Schritt 1 bis 8 feste Struktur; Fehlvorstellung zwischen Schritt 6 und 7 (Parser ueberspringt, zaehlt nicht); interaktive [Werkzeug: <id>]; Gating: check/szenario nicht bestanden = Weiter deaktiviert; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
-## Schritt 1 — entdecken
+## Schritt 1 — entdecken: Ziele & Phänomen-Einstieg
 
 ZIELE (drei messbare Ziele dieser Lektion):
 
@@ -25,7 +25,7 @@ ZIELE (drei messbare Ziele dieser Lektion):
 
 ### Hook / Phaenomen
 
-Ein Kommentar behauptet, wer nicht staendig online sei, sei abgehaengt. Niemand wird gezwungen, doch fast jeder nickt innerlich. Wie schafft ein blosser Satz solchen Druck, ohne ein einziges Argument zu nennen?
+Ein Kommentar behauptet, wer nicht staendig online sei, sei abgehaengt. Niemand wird gezwungen, doch fast jeder nickt innerlich. Wie schafft ein blosser Satz solchen Druck, ohne ein einziges Argument zu nennen? Durch Leserlenkung als rhetorische Manipulation: Die rhetorische Frage simuliert Gespraech und erzeugt sozialen Druck, die Antithese nicht die Menge, sondern der Umgang verschiebt das Problem vom Geraet zum Verhalten, der Imperativ plant taeglich eine Stunde befiehlt scheinbar freiwillig. Erstens verlangt die Analyse Benennung jedes Mittels mit Fachbegriff. Zweitens verlangt sie Beleg mit Zeile und kurzem Zitat. Drittens verlangt sie Wirkung mit Leserimpuls — Scham, Erleichterung, Trotz, Zustimmung. Viertens verlangt sie Rueckbindung an These und Intention: informieren, appellieren, warnen oder ueberzeugen. Erst die Formel These plus Beleg gleich Deutung schliesst die Kette. Wer diese vier Schritte diszipliniert geht, entlarvt Druck als Verfahren und verwandelt Mitnicken in Pruefung.
 
 ### Fachbegriff & Definition
 
@@ -37,7 +37,7 @@ Die Kausalkette laeuft in vier Stufen: **Mittel, Beleg, Wirkung, These**. Ersten
 
 Klausur-Satz: `Jedes sprachliche Mittel muss über seine Funktion mit der These verknüpft werden; eine bloße Benennung bleibt auf AFB I.`
 
-## Schritt 2 — entdecken
+## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
 
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
@@ -59,49 +59,34 @@ Die Begriffe greifen ineinander: Die **Leserlenkung** ist das Dach, der **Dreisc
 
 Klausur-Satz: `Die rhetorische Frage simuliert einen Dialog mit dem Leser und erzwingt eine innere Zustimmung.`
 
-## Schritt 3 — entdecken
+## Schritt 3 — entdecken: Kernkonzept & Wirkungsmodell
 
 TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
 ### Hook / Phaenomen
 
-Warum ueberzeugt der Satz „Plant taeglich eine Stunde ohne Bildschirm" mehr als zehn Statistiken? Weil ein Imperativ kein Wissen vermittelt, sondern Verhalten befiehlt. Der Appell verwandelt Leser in Handelnde — genau darin liegt seine Klausurleistung.
+Ein Kommentar behauptet, wer nicht staendig online sei, sei abgehaengt. Niemand wird gezwungen, doch fast jeder nickt innerlich. Wie manipuliert ein blosser Satz den Leser — ganz ohne ein einziges Argument zu nennen?
 
-### Fachbegriff & Definition
+### Spiel-Aufgabe (Lenkungs-Sandbox)
 
-Der **Appell als Lenkungsform** ist eine direkte **Handlungsaufforderung im Imperativ**, die Analyse in **Selbstverantwortung** umwandelt. Er steht meist am **Textschluss** und fasst die These als Auftrag zusammen. Seine Formel lautet $Appell = Imperativ + Adressat + These$. Ohne Rueckbindung an die These bleibt er blosse Moral; mit Bindung wird er zur logischen Folge der Argumentation.
+Oeffne die Lenkungs-Sandbox: Highlighte im Uebungstext drei Lenkungsmittel — rhetorische Frage, Antithese, Imperativ-Appell — und ziehe jedes in die Dreischritt-Maschine: Benennung, Beleg mit $Z.$, Wirkung. Das Schluss-Raetsel ordnet jede Wirkung der These zu: Stuetz sie oder schmeuckt sie nur? Ohne Rueckbindung an die These verweigert die Maschine die Analyse — Pruefregel: Ohne Rueckbindung keine Analyse.
 
-### Wirkungsgefuege / Modell
+### Aha-Moment & Gesetz
 
-Die Kausalkette lautet: **Analyse, Zuspitzung, Aufforderung, Bindung**. Erstens analysiert der Text das Problem mit Frage und Antithese. Zweitens spitzt er es auf die These zu: Nicht die Menge, sondern der Umgang entscheide. Drittens folgt der Appell in $Z. 6$ mit den Verben im Imperativ. Viertens bindet die Schlussmetapher vom Gestalter der eigenen Zeit den Befehl an die These zurueck. So wird Gehorsam als Einsicht erlebt.
-
+Die Kausalkette lautet Analyse, Zuspitzung, Aufforderung, Bindung: Der Text analysiert mit Frage und Antithese, spitzt auf die These zu (nicht die Menge, sondern der Umgang), befiehlt im Imperativ und bindet die Schlussmetapher an die These zurueck — so wird Gehorsam als Einsicht erlebt. Formeln: $Appell=Imperativ+Adressat+These$; $These+Beleg=Deutung$. Faelle: Anrede/Appell, Kontrast/Metapher, Konzession.
 ```diagram
-  LESERLENKUNG — vom Mittel zur These
-  Mittel (Frage / Antithese / Appell)
-    -> Beleg mit Z. (Wo steht es woertlich?)
-    -> Wirkung (Druck / Kontrast / Auftrag)
-    -> These (stuetz sie oder nicht?)
-  Pruefregel: Ohne Rueckbindung keine Analyse.
+  DREISCHRITT DER RHETORIK — Sandbox-Maschine
+  +------------+     +-------------+     +----------------------+
+  | Benennung  | --> |   Beleg     | --> |  Funktion & Wirkung  |
+  | Antithese  |     | Z. 8        |     | Leser wird ...       |
+  +------------+     +-------------+     +----------------------+
+       |                   |                      |
+    TERMINE            ZITIERE               ERKLAERE
+  "Was ist es?"     "Wo steht es?"      "Was macht es mit dem Leser?"
+                                             |
+                                             v
+                             zurueck zur THESE: stuetzt sie oder nicht?
   Faelle: (1) Anrede/Appell (2) Kontrast/Metapher (3) Konzession
-```
-
-```diagram
-   DREISCHRITT DER RHETORIK
-   +------------+     +-------------+     +----------------------+
-   | Benennung  | --> |   Beleg     | --> |  Funktion & Wirkung  |
-   | Antithese  |     | Z. 8        |     | Leser wird ...       |
-   +------------+     +-------------+     +----------------------+
-        |                   |                      |
-     TERMINE            ZITIERE               ERKLAERE
-   "Was ist es?"     "Wo steht es?"      "Was macht es mit dem Leser?"
-                                              |
-                                              v
-                              zurueck zur THESE: stuetzt sie oder nicht?
-
-   Leserlenkungs-Mittel:
-   (1) Anrede/Appell ....... plant, prueft        -> Selbstverantwortung
-   (2) Kontrast/Metapher ... Stoerer vs. Werkzeug -> Wertung wird sichtbar
-   (3) Konzession .......... zwar verstaendlich,  -> Vertrauen, dann Wende
 ```
 
 Klausur-Satz: `Die antithetische Zuspitzung polarisiert den Diskurs und verstärkt die affektive Distanzierung des Publikums von der Gegenposition.`
@@ -112,13 +97,13 @@ Klausur-Satz: `Die antithetische Zuspitzung polarisiert den Diskurs und verstär
 
 **Bezug zum Konzept**: Rhetorik ist die Kunst, den Leser zu lenken; ihre Analyse fragt nicht nach dem Schmuck, sondern nach der Wirkung auf den Adressaten.
 
-## Schritt 4 — ausprobieren
+## Schritt 4 — ausprobieren: Interaktive Praxis & Text-Labor
 
 BEISPIEL (Musteraufgabe mit Loesungsweg):
 
-[Werkzeug: formula]
+[Werkzeug: highlighter]
 
-AUFGABE (analysieren, AFB II): Analysiere an zwei Beispielen, wie der folgende Uebungstext seine Leser lenkt. Benenne jeweils das Mittel, belege mit Zeile und erklaere die Wirkung.
+AUFGABE (analysieren, AFB II): Lenkungs-Raetsel — analysiere an zwei Beispielen, wie der folgende Uebungstext seine Leser lenkt. Highlighte je Mittel, belege mit Zeile und erklaere die Wirkung.
 
 Mini-Sachtext (selbst verfasster Uebungstext, ORIGINAL, ca. 105 Woerter):
 (Z. 1) Wer heute nicht staendig online ist, gilt als abgehaengt. (Z. 2) Diese Angst ist verstaendlich, doch sie wird von denselben Konzernen geschuert, die davon profitieren. (Z. 3) Entscheidend ist nicht die Menge der Nachrichten, sondern der Umgang mit Aufmerksamkeit. (Z. 4) Wer jede Minute zum Bildschirm greift, verliert den Faden. (Z. 5) Wer dagegen bewusst Pausen plant, denkt klarer als jede Generation zuvor. (Z. 6) Also: Plant taeglich eine Stunde ohne Bildschirm, prueft jede Quelle und schlaft ausreichend. (Z. 7) So wird aus dem Getriebenen ein Gestalter der eigenen Zeit.
@@ -132,7 +117,7 @@ MUSTERLOESUNG: Erstens lenkt der Text durch eine rhetorische Frage in Z. 1 die A
 
 Klausur-Satz: `Die rhetorische Frage in Z. 1 weckt sozialen Druck, die Antithese in Z. 3 verschiebt das Problem auf den Umgang mit Aufmerksamkeit.`
 
-## Schritt 5 — ausprobieren
+## Schritt 5 — ausprobieren: Verfahrensvergleich & Abgrenzung
 
 VERGLEICH (zwei Verfahren unterscheiden):
 
@@ -147,7 +132,7 @@ ANTWORT: A erfordert Verfahren (i): Es handelt sich um eine rhetorische Frage, a
 
 Klausur-Satz: `Die Benennung allein genügt nicht; erst die Wirkungsanalyse zeigt, wohin der Autor den Leser lenkt.`
 
-## Schritt 6 — check
+## Schritt 6 — check: Verständnisprüfung
 
 CHECK (Selbsttest, 3 Fragen mit Antworten):
 
@@ -169,13 +154,13 @@ Klausur-Satz: `Eine überzeugende Wirkungsanalyse nennt immer das Ziel: Wohin wi
    Korrektur: Qualitaet schlaegt Menge. Zwei Mittel mit Wirkung und Rueckbindung zaehlen mehr als zehn Benennungen ohne Tiefe.
    Korrektur-Satz: `Zwei gründlich analysierte Mittel mit Wirkung sind wertvoller als eine lange Liste bloßer Benennungen.`
 
-## Schritt 7 — szenario
+## Schritt 7 — szenario: Klausurtransfer & Rubric
 
 ROLLE: Du bist Redakteurin der Schuelerzeitung und bewertest in einem Werkstattgespraech einen Leserkommentar.
 SITUATION: Ein Gastkommentar argumentiert fuer ein naechtliches Handyverbot in Familien. Der Autor nutzt rhetorische Fragen, eine Antithese und einen Schlussappell. Beurteile in einer zusammenhaengenden Stellungnahme (ca. 150 Woerter), wie der Autor seine Leser lenkt und wie ueberzeugend dies gelingt.
 RUBRIC (30 XP): Benennung zweier Lenkungsmittel mit Zeile (5 XP) | Analyse von Funktion und Leserwirkung je Mittel (10 XP) | Rueckbindung an These und Intention (10 XP) | Kriteriengeleitetes Urteil zur Ueberzeugungskraft (5 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY (Kernzusammenfassung):
 

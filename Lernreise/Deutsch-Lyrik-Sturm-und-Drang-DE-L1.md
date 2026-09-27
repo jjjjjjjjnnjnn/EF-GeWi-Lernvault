@@ -15,7 +15,7 @@ version: Lesson-v3
 
 <!-- Lesson v3 9-Schritt-Architektur: Schritt 1 bis 8 feste Struktur; Fehlvorstellung zwischen Schritt 6 und 7 (Parser ueberspringt, zaehlt nicht); interaktive [Werkzeug: <id>]; Gating: check/szenario nicht bestanden = Weiter deaktiviert; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
-## Schritt 1 — entdecken
+## Schritt 1 — entdecken: Ziele & Phänomen-Einstieg
 
 ZIELE (drei messbare Ziele dieser Lektion):
 
@@ -25,7 +25,7 @@ ZIELE (drei messbare Ziele dieser Lektion):
 
 ### Hook / Phaenomen
 
-Durch Nacht und Regen jagt ein Reiter, das Herz klopft, dann glueht ploetzlich ein Fenster — und alles ist anders. Kein neues Pferd, kein neuer Weg, nur ein Licht. Wie kann ein einziges Bild Angst in Glueck verwandeln?
+Durch Nacht und Regen jagt ein Reiter, das Herz klopft, dann glueht ploetzlich ein Fenster — und alles ist anders. Kein neues Pferd, kein neuer Weg, nur ein Licht. Wie kann ein einziges Bild Angst in Glueck verwandeln? Weil das Bild im Sturm und Drang kein Schmuck ist, sondern ein Gefuehlsmotor: Es verdichtet Sehnsucht, Aufbruch und Naturgewalt in einer einzigen Szene und lenkt den Leser durch Rhythmus und Klang. Erstens fragt die Analyse nach dem Sprecher und seiner Lage — wer reitet, wohin, warum nachts. Zweitens sichert sie Bildfelder wie Nacht, Feuer, Flug und deutet ihre Wirkung mit Beleg und Vers. Drittens prueft sie die Form: freie Rhythmen, Ausrufe, Wiederholungen als Herzschlag der Empfindung. Viertens bindet sie alles an die Deutungshypothese: Befreiung aus Enge durch Natur und Gefuehl. Wer Bild, Klang und Hypothese so verbindet, versteht, warum ein Fenster mehr veraendert als ein Argument.
 
 ### Fachbegriff & Definition
 
@@ -37,7 +37,7 @@ Die Kausalkette lautet: **Bild, Gegensatz, Tempo, Deutung**. Erstens setzt das B
 
 Klausur-Satz: `Im Sturm und Drang steht das Gefühl über der Vernunft; Form und Sprache werden eingesetzt, um diese Gefühlsbewegung erfahrbar zu machen.`
 
-## Schritt 2 — entdecken
+## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
 
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
@@ -59,7 +59,7 @@ Die Begriffe arbeiten zusammen: Das **lyrische Ich** ist die Stimme, die **Bildl
 
 Klausur-Satz: `Das lyrische Ich verarbeitet eine Begegnung, in der Gefühl über Vernunft steht; die Deutungshypothese wird dabei zuerst aufgestellt und später überprüft.`
 
-## Schritt 3 — entdecken
+## Schritt 3 — entdecken: Kernkonzept & Wirkungsmodell
 
 TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
@@ -67,14 +67,13 @@ TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
 Warum endet ein Gluecksgedicht im kalten Wind? Weil Erfuellung im Sturm und Drang nie Zustand sein darf. Das Glueck leuchtet nur, um zu vergehen — und gerade das Vergehen beweist seine Staerke.
 
-### Fachbegriff & Definition
+### Spiel-Aufgabe (Stimmungs-Puzzle)
 
-Die **Stimmungskurve als Deutungsmodell** beschreibt den **Gefuehlsverlauf ueber die Strophen** von Angst ueber Glueck zu Verlust. Ihre Formel lautet $Kurve = Zustand_{1} + Umschlag + Zustand_{2}$. Traeger sind **Bild, Antithese, Enjambement und Exclamatio**. Die Kurve wird mit $Z.$ belegt und muendet in die Hypothese: Glueck existiert nur als Augenblick.
+Lege das Stimmungs-Puzzle: Ziehe Strophen-Bildkaertchen (Nacht und Regen, Licht am Hang, grauer Morgen) auf die Gefuehlskurve — tief, hoch, fallend — und highlighte die Traeger (Bild, Antithese, Enjambement, Exclamatio) mit $Z.$. Erst wenn jede Kurvenposition einen belegten Traeger hat, oeffnet sich die Hypothesen-Box: Worin besteht das Glueck hier — Zustand oder Augenblick?
 
-### Wirkungsgefuege / Modell
+### Aha-Moment & Gesetz
 
-Die Kausalkette lautet: **Nacht, Begegnung, Abschied, Deutung**. Erstens baut die erste Strophe naechtliche Angst mit Tempo auf. Zweitens kippt das Lichtbild in der zweiten Strophe die Stimmung zu Waerme. Drittens loest der graue Morgen in der dritten Strophe das Glueck wieder auf. Viertens deutet die Hypothese den Verlust als Preis des Augenblicks. Bild plus Form beweisen, was Nacherzaehlung nur behauptet.
-
+Die Kausalkette lautet Nacht, Begegnung, Abschied, Deutung: Die erste Strophe baut Angst mit Tempo auf, das Lichtbild kippt die Stimmung zu Waerme, der graue Morgen loest das Glueck wieder auf, die Hypothese deutet den Verlust als Preis des Augenblicks. Formel: $Kurve=Zustand_{1}+Umschlag+Zustand_{2}$; Leseregel $These+Beleg=Deutung$. Bild plus Form beweisen, was Nacherzaehlung nur behauptet.
 ```diagram
   STIMMUNGSKURVE — Sturm-und-Drang-Modell
   Gefuehl hoch: Begegnung (Freude / Licht, 2. Str.)
@@ -82,30 +81,8 @@ Die Kausalkette lautet: **Nacht, Begegnung, Abschied, Deutung**. Erstens baut di
   Gefuehl fallend: Abschied im kalten Wind (3. Str.)
   Traeger: Bild (Nacht vs. Licht) + Antithese (Angst vs. Freude)
     + Enjambement (Tempo) + Exclamatio (Affekt)
-  Formel: Kurve = Zustand1 + Umschlag + Zustand2
+  Formel: $Kurve=Zustand_{1}+Umschlag+Zustand_{2}$
   Hypothese: Glueck nur als Augenblick
-```
-
-```diagram
-   STIMMUNGSKURVE eines Sturm-und-Drang-Gedichts
-   Gefuehl
-     ^
-  hoch|            * (Begegnung: Freude/Licht)
-     |           / \
-     |          /   \
-     |   *     /     \       *
-     |  (Ritt)(/       \   (Abschied)
-     |  Nacht/  \        \  Schmerz
-  nied|  Angst   \        \
-     +------------------------------------------> Strophen
-        1. Str.   2. Str.  3. Str.  4. Str.
-
-   Traeger dieser Kurve:
-   - Bildlichkeit:  Nacht/Dunkel vs. Licht/Morgen
-   - Antithese:     Angst  vs. Freude
-   - Enjambement:   Tempo des Ritts (Satz laeuft ueber das Versende)
-   - Exclamatio:    Ausruf verstaerkt den Affekt
-   => Deutungshypothese: Glueck nur als Augenblick
 ```
 
 Klausur-Satz: `Der Stimmungswechsel von der bedrohlichen Nacht zur hellen Begegnung trägt die Deutung, dass das Glück nur als Augenblick existiert.`
@@ -116,13 +93,13 @@ Klausur-Satz: `Der Stimmungswechsel von der bedrohlichen Nacht zur hellen Begegn
 
 **Bezug zum Konzept**: Der Name Sturm und Drang ist ein nachtraegliches Etikett fuer ein Programm, das Gefuehl bewusst ueber Vernunft stellt.
 
-## Schritt 4 — ausprobieren
+## Schritt 4 — ausprobieren: Interaktive Praxis & Text-Labor
 
 BEISPIEL (Musteraufgabe mit Loesungsweg):
 
-[Werkzeug: balance]
+[Werkzeug: highlighter]
 
-AUFGABE (deuten, AFB II): Formuliere eine Deutungshypothese zum Uebungsgedicht und belege sie an einer Bildlichkeit und einer Formbeobachtung mit Zeile.
+AUFGABE (deuten, AFB II): Hypothesen-Raetsel — formuliere eine Deutungshypothese zum Uebungsgedicht und belege sie an einer Bildlichkeit und einer Formbeobachtung mit Zeile. Highlighte zuerst Wirkung, Beziehung und Traeger.
 
 Uebungsgedicht (selbst verfasst, ORIGINAL, 3 Strophen zu je 4 Versen):
 "Ritt im Dunkeln" (Uebungstext, 2026)
@@ -136,11 +113,11 @@ HILFE:
 3. Benenne eine Bildlichkeit (Licht, Fenster) und eine Formbeobachtung (Antithese, Enjambement) mit Zeile.
 4. Fasse die Deutung in einem Satz zusammen.
 
-MUSTERLOESUNG: Die Deutungshypothese lautet: Das Gedicht feiert nicht die Liebe als Zustand, sondern den fluechtigen Augenblick, in dem die Angst der Nacht in Glueck umschlaegt und der Abschied dieses Glueck wieder aufloest. Getragen wird die Deutung erstens durch die Bildlichkeit: Das Licht am fernen Hang (2. Strophe) verwandelt die dunkle Nacht in Waerme und Naehe. Zweitens durch die Antithese zwischen Nacht und Morgen, Angst und Freude (1. gegen 3. Strophe), die die Stimmungskurve sichtbar macht. Die Enjambements der ersten Strophe beschleunigen den Ritt und machen die Eile koerperlich spuerbar. Damit bestaetigt sich die Hypothese: Erfuellung und Verlust gehoeren zusammen.
+MUSTERLOESUNG: Die Deutungshypothese lautet: Das Gedicht feiert nicht die Liebe als Zustand, sondern den fluechtigen Augenblick, in dem die Angst der Nacht in Glueck umschlaegt und der Abschied dieses Glueck wieder aufloest. Traeger erstens die Bildlichkeit: Das Licht am fernen Hang (2. Strophe) verwandelt Nacht in Waerme. Zweitens die Antithese zwischen Nacht und Morgen, Angst und Freude (1. gegen 3. Strophe); die Enjambements der ersten Strophe beschleunigen den Ritt koerperlich spuerbar. Damit bestaetigt sich: Erfuellung und Verlust gehoeren zusammen.
 
 Klausur-Satz: `Der Abschied bei grauem Morgen lässt sich als Preis des Augenblicks deuten: Erfüllung und Verlust sind untrennbar verbunden.`
 
-## Schritt 5 — ausprobieren
+## Schritt 5 — ausprobieren: Verfahrensvergleich & Abgrenzung
 
 VERGLEICH (zwei Verfahren unterscheiden):
 
@@ -155,7 +132,7 @@ ANTWORT: A erfordert Verfahren (i): Zuerst gehetzt und angstvoll, in der zweiten
 
 Klausur-Satz: `Die Form ist kein Schmuck, sondern das Werkzeug, das die Gefühlskurve des Gedichts hervorbringt.`
 
-## Schritt 6 — check
+## Schritt 6 — check: Verständnisprüfung
 
 CHECK (Selbsttest, 3 Fragen mit Antworten):
 
@@ -177,13 +154,13 @@ Klausur-Satz: `Die Deutungshypothese wird zuerst aufgestellt und im Laufe der An
    Korrektur: Es ist ein Programm gegen die Vernunftdominanz. Metrum, Enjambement und Bildlichkeit erzeugen gezielt Gefuehlswirkung; Analyse zeigt, welche Form welches Gefuehl traegt.
    Korrektur-Satz: `Der Sturm und Drang ist kein formloses Schreiben, sondern ein Programm, das Gefühl bewusst über Vernunft stellt.`
 
-## Schritt 7 — szenario
+## Schritt 7 — szenario: Klausurtransfer & Rubric
 
 ROLLE: Du bist Tutor in der Oberstufe und erklaerst einer Mitschuelerin ein Sturm-und-Drang-Gedicht.
 SITUATION: Eine Mitschuelerin versteht nicht, warum die Lehrerin von einer "Stimmungskurve" spricht. Erklaere ihr in einer zusammenhaengenden Antwort (ca. 150 Woerter) zum Uebungsgedicht "Ritt im Dunkeln", wie Form und Bildlichkeit die Kurve erzeugen, und formuliere am Ende eine Deutungshypothese.
 RUBRIC (30 XP): Erklaerung des Gegensatzes Sturm und Drang gegen Aufklaerung (5 XP) | Benennung der Stimmungskurve mit Strophenangabe (10 XP) | Beleg einer Bildlichkeit und eines Formelements (10 XP) | Schluessige Deutungshypothese in einem Satz (5 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY (Kernzusammenfassung):
 

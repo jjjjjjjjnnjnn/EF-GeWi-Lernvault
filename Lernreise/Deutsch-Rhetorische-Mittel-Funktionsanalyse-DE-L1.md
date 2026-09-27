@@ -15,7 +15,7 @@ version: Lesson-v3
 
 <!-- Lesson v3 9-Schritt-Architektur: Schritt 1 bis 8 feste Struktur; Fehlvorstellung zwischen Schritt 6 und 7 (Parser ueberspringt, zaehlt nicht); interaktive [Werkzeug: <id>]; Gating: check/szenario nicht bestanden = Weiter deaktiviert; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
-## Schritt 1 — entdecken
+## Schritt 1 — entdecken: Ziele & Phänomen-Einstieg
 
 ZIELE (drei messbare Ziele dieser Lektion):
 
@@ -25,7 +25,7 @@ ZIELE (drei messbare Ziele dieser Lektion):
 
 ### Hook / Phaenomen
 
-„Der Stundenplan frisst unsere Nachmittage" — jeder versteht den Satz sofort, obwohl kein Plan je gefressen hat. Ein falsches Bild sagt mehr Wahres als eine korrekte Zahl. Warum trifft die Luege mitten ins Gefuehl?
+Der Stundenplan frisst unsere Nachmittage — jeder versteht den Satz sofort, obwohl kein Plan je gefressen hat. Ein falsches Bild sagt mehr Wahres als eine korrekte Zahl. Warum trifft die Luege mitten ins Gefuehl? Weil rhetorische Manipulation genau so arbeitet: Sie umgeht die Pruefung des Verstandes und steuert Zustimmung ueber Bild, Klang und Druck. Die Metapher frisst macht aus Verwaltung ein Raubtier, die Anapher er frisst die Pausen, er frisst die Ruhe trommelt den Vorwurf in den Leser, die rhetorische Frage Ist das noch Lernen oder schon ein Wettrennen simuliert Dialog und erzwingt inneres Nicken. Erstens verlangt die Klausur Benennung mit Fachbegriff. Zweitens verlangt sie Beleg mit Zeile und kurzem Zitat. Drittens verlangt sie Wirkung: Welcher Leserimpuls entsteht — Angst, Wut, Mitleid, Zustimmung. Viertens verlangt sie Rueckbindung an These und Intention des Autors. Erst diese Kette aus These plus Beleg gleich Deutung verwandelt Etiketten in Analyse und schuetzt vor der Manipulation, die man gerade untersucht.
 
 ### Fachbegriff & Definition
 
@@ -37,7 +37,7 @@ Die Kausalkette lautet: **Form, Beleg, Funktion, These**. Erstens wird die Form 
 
 Klausur-Satz: `Die Funktionsanalyse verbindet die Benennung des Mittels mit einem Beleg und der Deutung seiner Wirkung im Kontext.`
 
-## Schritt 2 — entdecken
+## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
 
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
@@ -59,22 +59,21 @@ Die Begriffe bilden ein Pruefnetz: Das **Mittel** liefert die Form, der **Beleg*
 
 Klausur-Satz: `Ohne Beleg bleibt die Funktionsangabe eine Behauptung, erst der Kontext macht sie zur Analyse.`
 
-## Schritt 3 — entdecken
+## Schritt 3 — entdecken: Kernkonzept & Wirkungsmodell
 
 TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
 ### Hook / Phaenomen
 
-„Er frisst die Pausen, er frisst die Ruhe" — zweimal dasselbe Verb, und ploetzlich klingt Erschöpfung wie ein Raubtier. Kein neues Argument, nur Wiederholung. Warum erzeugt blosse Wiederholung solchen Nachdruck?
+"Er frisst die Pausen, er frisst die Ruhe" — zweimal dasselbe Verb, und ploetzlich klingt Erschoepfung wie ein Raubtier. Kein neues Argument, nur Wiederholung. Wie manipuliert blosse Wiederholung den Leser, ohne einen einzigen Gedanken hinzuzufuegen?
 
-### Fachbegriff & Definition
+### Spiel-Aufgabe (Klang-Detektiv-Sandbox)
 
-Die **Anapher als Rhythmusmittel** ist die **Wiederholung gleichen Wortlauts am Satzanfang**, die Klage in Takt verwandelt. Ihre Formel lautet $Anapher = Wiederholung + Steigerung + $Z.$$. Sie rhythmisiert und totalisiert: Vom Nachmittag ueber die Pause bis zur inneren Ruhe frisst der Druck alles. Ohne Beleg bleibt sie Behauptung; mit Beleg wird sie nachweisbare Klangarbeit.
+Spiele den Klang-Detektiv: Highlighte im Sandbox-Absatz drei Mittel — Wiederholung am Satzanfang, Vergleich mit "wie", Frage ohne erwartete Antwort — und ziehe jeden Fund in die Funktions-Spalten Form, Beleg, Funktion. Das Raetsel: Dieselbe Form wirkt je nach Kontext anders — passt deine Funktion zur Absatzthese Lernstress? Falsche Zuordnung loest den Kontext-Check nicht aus.
 
-### Wirkungsgefuege / Modell
+### Aha-Moment & Gesetz
 
-Die Kausalkette lautet: **Signal, Form, Rhythmus, These**. Erstens markiert das Signal — gleicher Satzanfang — die Stelle. Zweitens wird die Form als Anapher benannt und mit $Z.$ belegt. Drittens wird der Rhythmus gedeutet: Die Takte machen Zeitdruck koerperlich spuerbar. Viertens stuetz der Befund die Absatzthese vom Lernstress und die Forderung nach Atempausen. Klang wird so zum Argument.
-
+Die Kausalkette lautet Signal, Form, Rhythmus, These: Das Signal markiert die Stelle, die Form wird benannt und mit $Z.$ belegt, der Rhythmus wird gedeutet — Takte machen Zeitdruck koerperlich spuerbar — und der Befund stuetz die Absatzthese. Formel: $Anapher=Wiederholung+Steigerung+Z.$; Leseregel $These+Beleg=Deutung$. Klang wird so zum Argument.
 ```diagram
   FUNKTIONSKETTE — Form, Beleg, Funktion
   [1] FORM: Wie heisst das Mittel? (Metapher / Anapher / Frage)
@@ -84,24 +83,7 @@ Die Kausalkette lautet: **Signal, Form, Rhythmus, These**. Erstens markiert das 
          kontrastieren / rhythmisieren
     -> Kontext-Check: Passt die Funktion zur Absatzthese?
   Regel: Dieselbe Form wirkt je nach Kontext anders.
-```
-
-```diagram
-  Textstelle
-      |
-      v
-  [1] FORM: Wie heisst das Mittel?
-      |  z.B. Metapher / Anapher / Ironie
-      v
-  [2] BELEG: Wo steht es woertlich?
-      |  "..." (kurzes Zitat, max. 1 Satz)
-      v
-  [3] FUNKTION: Was bewirkt es hier?
-      |  veranschaulichen / verstaerken /
-      |  kontrastieren / rhythmisieren
-      v
-  Kontext-Check: Passt die Funktion
-  zur These des Absatzes? (ja/nein)
+  Formel: $Anapher=Wiederholung+Steigerung+Z.$
 ```
 
 Klausur-Satz: `Jedes Mittel wird in drei Schritten analysiert: Benennung der Form, Anfuehrung eines Belegs und Deutung der kontextbezogenen Funktion.`
@@ -112,24 +94,24 @@ Klausur-Satz: `Jedes Mittel wird in drei Schritten analysiert: Benennung der For
 
 **Bezug zum Konzept**: `Nicht der Name des Mittels ueberzeugt, sondern die erklaerte Wirkung seiner Form im Kontext.`
 
-## Schritt 4 — ausprobieren
+## Schritt 4 — ausprobieren: Interaktive Praxis & Text-Labor
 
 BEISPIEL (Musteraufgabe mit Loesungsweg):
 
 [Werkzeug: highlighter]
 
-AUFGABE (analysieren, AFB II): Lies den folgenden Mini-Absatz zum Thema Lernstress (vom Autor dieser Lektion frei erfunden). Markiere mit dem Highlighter drei Mittel und analysiere jedes in der Kette Form, Beleg, Funktion: "Der Stundenplan frisst unsere Nachmittage. Er frisst die Pausen, er frisst die Ruhe. Ist das noch Lernen oder schon ein Wettrennen gegen die Uhr? Kleine Atempausen wuerden Wunder wirken, doch die To-do-Liste waechst wie ein Berg vor uns."
+AUFGABE (analysieren, AFB II): Klang-Raetsel — lies den folgenden Mini-Absatz zum Thema Lernstress (vom Autor dieser Lektion frei erfunden). Markiere mit dem Highlighter drei Mittel und analysiere jedes in der Kette Form, Beleg, Funktion: "Der Stundenplan frisst unsere Nachmittage. Er frisst die Pausen, er frisst die Ruhe. Ist das noch Lernen oder schon ein Wettrennen gegen die Uhr? Kleine Atempausen wuerden Wunder wirken, doch die To-do-Liste waechst wie ein Berg vor uns."
 
 HILFE:
 1. Suche Wiederholung am Satzanfang, Vergleiche mit "wie" und Fragen ohne erwartete Antwort.
 2. Notiere je Fund Form plus kurzes Zitat: Anapher ("Er frisst ... er frisst ..."), rhetorische Frage ("Ist das noch ...?"), Vergleich ("wie ein Berg").
 3. Frage je Beleg: Macht es anschaulich, erzeugt es Rhythmus oder stellt es eine These infrage. Verbinde die Antwort mit dem Absatzthema Lernstress.
 
-MUSTERLOESUNG: Uebersicht der zwoelf Mittel mit Funktionskern: 1. Metapher (Bildersetzung, veranschaulicht) — 2. Vergleich (offenes "wie", zeigt Relation) — 3. Personifikation (Ding handelt menschlich, emotionalisiert) — 4. Hyperbel (Uebertreibung, verstaerkt Dringlichkeit) — 5. Ironie (Gegenteil des Gemeinten, schafft Distanz) — 6. Rhetorische Frage (Scheinfrage, aktiviert Leser) — 7. Anapher (gleicher Satzanfang, rhythmisiert) — 8. Parallelismus (gleicher Satzbau, ordnet) — 9. Klimax (dreistufige Steigerung, baut Spannung) — 10. Antithese (Gegensatzpaar, schaerft Kontrast) — 11. Euphemismus (mildernde Umschreibung, daempft) — 12. Alliteration (gleicher Anlaut, erhoeht Merkbarkeit). Vertiefung: (a) Anapher, Beleg "Er frisst die Pausen, er frisst die Ruhe", Funktion: Die Wiederholung rhythmisiert die Klage vom Nachmittag ueber die Pause bis zur inneren Ruhe, sodass der Zeitdruck total wirkt. (b) Rhetorische Frage, Beleg "Ist das noch Lernen oder schon ein Wettrennen gegen die Uhr?", Funktion: Die Frage stellt die Antithese Lernen gegen Wettrennen auf und legt die kritische Wertung nahe. (c) Vergleich, Beleg "waechst wie ein Berg vor uns", Funktion: Der Vergleich macht die Aufgabenmenge raeumlich anschaulich und stuetz die Forderung nach Atempausen.
+MUSTERLOESUNG: (a) Anapher, Beleg "Er frisst die Pausen, er frisst die Ruhe", Funktion: Die Wiederholung rhythmisiert die Klage vom Nachmittag ueber die Pause bis zur inneren Ruhe, sodass der Zeitdruck total wirkt. (b) Rhetorische Frage, Beleg "Ist das noch Lernen oder schon ein Wettrennen gegen die Uhr?", Funktion: Die Frage stellt die Antithese Lernen gegen Wettrennen auf und legt die kritische Wertung nahe. (c) Vergleich, Beleg "waechst wie ein Berg vor uns", Funktion: Der Vergleich macht die Aufgabenmenge raeumlich anschaulich und stuetz die Forderung nach Atempausen.
 
 Klausur-Satz: `Die Anapher rhythmisiert die Klage, die rhetorische Frage lenkt die Wertung und der Vergleich veranschaulicht die Belastung.`
 
-## Schritt 5 — ausprobieren
+## Schritt 5 — ausprobieren: Verfahrensvergleich & Abgrenzung
 
 VERGLEICH (zwei Konzepte unterscheiden):
 
@@ -143,7 +125,7 @@ ANTWORT: A ist eine Metapher: Die Form ersetzt den Vorgang durch ein Bild; Funkt
 
 Klausur-Satz: `Metapher und Vergleich teilen die Bildfunktion, doch nur der Vergleich markiert sie offen mit einem Vergleichswort.`
 
-## Schritt 6 — check
+## Schritt 6 — check: Verständnisprüfung
 
 CHECK (Selbsttest, 3 Fragen mit Antworten):
 
@@ -164,14 +146,14 @@ Klausur-Satz: `Die Funktionsdeutung muss stets an These und Kontext des Absatzes
    Korrektur: Das "wie" markiert Distanz und mildere Behauptung; direkte Gleichsetzung verstaerkt. Verwechslung kostet Praezisionspunkte.
    Korrektur-Satz: `Wer Vergleich und Metapher verwechselt, verschenkt die Praezisionspunkte der Analyse.`
 
-## Schritt 7 — szenario
+## Schritt 7 — szenario: Klausurtransfer & Rubric
 
 ROLLE: Du bist Tutorin in der EF und hilfst einer Mitschuelerin vor der Deutsch-Klausur.
 SITUATION: Sie hat in einem Kommentar ueber Hausaufgaben drei Mittel markiert, aber nur die Namen aufgelistet. Sie versteht nicht, warum die Lehrkraft dafuer kaum Punkte gegeben hat.
 AUFGABE: Schreibe eine zusammenhaengende Erklaerung (ca. 150 Woerter), in der du an einem Beleg die Kette Form, Beleg und Funktion vormachst und begruendest, warum die Funktionsdeutung den Unterschied zwischen Benennung und Analyse ausmacht.
 RUBRIC (30 XP): Korrekte Kette an einem Beispiel gezeigt (10 XP) | Zwei weitere Mittel mit Funktion skizziert (10 XP) | Fazit zur Bewertungsrelevanz mit Fachbegriffen (10 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY (Kernzusammenfassung):
 

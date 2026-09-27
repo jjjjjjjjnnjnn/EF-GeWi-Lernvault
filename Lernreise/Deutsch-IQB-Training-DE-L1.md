@@ -15,7 +15,7 @@ version: Lesson-v3
 
 <!-- Lesson v3 9-Schritt-Architektur: Schritt 1 bis 8 feste Struktur; Fehlvorstellung zwischen Schritt 6 und 7 (Parser ueberspringt, zaehlt nicht); interaktive [Werkzeug: <id>]; Gating: check/szenario nicht bestanden = Weiter deaktiviert; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
-## Schritt 1 — entdecken
+## Schritt 1 — entdecken: Ziele & Phänomen-Einstieg
 
 ZIELE (drei messbare Ziele dieser Lektion):
 
@@ -25,7 +25,7 @@ ZIELE (drei messbare Ziele dieser Lektion):
 
 ### Hook / Phaenomen
 
-Fuenfzig Minuten, zwei Aufgaben, ein Text — und die Uhr laeuft. Viele schreiben viel und treffen wenig. Wie trainiert man Tempo, ohne Genauigkeit zu opfern?
+Fuenfzig Minuten, zwei Aufgaben, ein Text — und die Uhr laeuft. Viele schreiben viel und treffen wenig. Wie trainiert man Tempo, ohne Genauigkeit zu opfern? Die Antwort heisst Verfahren vor Einfall: Erstens zehn Minuten Analyse mit These, Gang und zwei Sprachmitteln, jeweils mit Zeile. Zweitens dreissig Minuten Schreiben im Dreischritt Benennung plus Beleg plus Wirkung, jeder Absatz mit Rueckbindung an die These. Drittens zehn Minuten Pruefung gegen die Rubric: Trifft jeder Absatz die These, traegt jede Wirkung einen Beleg, steht am Ende ein Urteil mit Begruendung. Die rhetorische Manipulation des Zeitdrucks verleitet zu zwei Fehlern: Entweder sammelt man Etiketten ohne Wirkung oder man deutet Gefuehle ohne Beleg. Beide kosten AFB-II-Punkte. Das IQB-Training ersetzt diese Reflexe durch Routinen: Operator unterstreichen, Gang-Skizze, Highlighter-Kontrolle, Schluss-Satz mit Intention. Tempo entsteht nicht durch schnelleres Schreiben, sondern durch frueheres Entscheiden.
 
 ### Fachbegriff & Definition
 
@@ -37,7 +37,7 @@ Die Kausalkette lautet: **Lesen, Zerlegen, Abwaegen, Pruefen**. Erstens erfasst 
 
 Klausur-Satz: `Eine gute Analyse weist den Gedankengang mit Zeilen nach, eine gute Erörterung wägt Pro und Contra ab und endet mit einem begründeten Urteil.`
 
-## Schritt 2 — entdecken
+## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
 
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
@@ -59,22 +59,21 @@ Die Begriffe bilden den Trainingskreis: Der **Mini-Text** liefert das Material, 
 
 Klausur-Satz: `Der Erwartungshorizont dient der Selbstkontrolle: These, Gedankengang, Sprachmittel und Urteil werden Punkt für Punkt abgehakt.`
 
-## Schritt 3 — entdecken
+## Schritt 3 — entdecken: Kernkonzept & Wirkungsmodell
 
 TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
 ### Hook / Phaenomen
 
-Dieselbe Streitfrage, zwei entgegengesetzte Aufträge — und viele bearbeiten beide gleich. Einmal soll der Text zerlegt, einmal das Problem entschieden werden. Warum kippt die Gewichtung um siebzig zu dreissig?
+Dieselbe Streitfrage, zwei entgegengesetzte Auftraege — und viele bearbeiten beide gleich. Einmal soll der Text zerlegt, einmal das Problem entschieden werden. Warum kippt die Gewichtung um siebzig zu dreissig?
 
-### Fachbegriff & Definition
+### Spiel-Aufgabe (Zwei-Zentren-Sortier)
 
-Die **Zwei-Zentren-Regel** besagt: **Analyse hat den Text, Eroerterung das Problem im Zentrum**. Ihre Formel lautet $Analyse = Text + Beleg + Z.$ gegen $Eroerterung = Problem + Pro/Contra + Urteil$. In Aufgabe 1 zaehlt jede Beobachtung nur mit $Z.$, in Aufgabe 2 zaehlt jede Position nur mit Gegenposition. Wer das Zentrum verwechselt, verteilt seine Zeit falsch.
+Sortiere im Sandbox-Spiel acht Auftragskaertchen in zwei Zentren: TEXT (Gang mit $Z.$, Sprache mit Wirkung, $Analyse=Text+Beleg+Z.$) oder PROBLEM (Pro, Contra, Urteil mit weil, $Eroerterung=Problem+Pro/Contra+Urteil$). Verteile danach das Zeit-Budget: Das Zentrum erhaelt ca. 70 Prozent. Wer Analyse ohne $Z.$ oder Eroerterung ohne Gegenposition ablegt, verliert die Karte an den Erwartungshorizont.
 
-### Wirkungsgefuege / Modell
+### Aha-Moment & Gesetz
 
-Die Kausalkette lautet: **Operator, Zentrum, Gewichtung, Check**. Erstens entscheidet der Operator — analysieren oder eroertern — ueber Blick und Zentrum. Zweitens erhaelt das Zentrum ca. 70 Prozent der Zeit: Gang und Sprache oder Pro, Contra und Urteil. Drittens liefert der Text in der Eroerterung nur ein bis zwei Belege. Viertens gleicht der Erwartungshorizont beide Zentren getrennt ab. Zentrum vor Zeit — das ist die Regel.
-
+Die Kausalkette lautet Operator, Zentrum, Gewichtung, Check: Der Operator entscheidet ueber Blick und Zentrum, das Zentrum erhaelt ca. 70 Prozent der Zeit, der Text liefert in der Eroerterung nur ein bis zwei Belege, der Erwartungshorizont gleicht beide Zentren getrennt ab. Leseregel $These+Beleg=Deutung$ gilt im Zentrum TEXT; Zentrum vor Zeit — das ist die Regel.
 ```diagram
   ZWEI ZENTREN — zwei Gewichtungen
   Aufgabe 1 ANALYSE (Zentrum TEXT, 25 Min)
@@ -83,25 +82,7 @@ Die Kausalkette lautet: **Operator, Zentrum, Gewichtung, Check**. Erstens entsch
   Aufgabe 2 EROERTERUNG (Zentrum PROBLEM, 25 Min, 180-220 W.)
     Frage 1 Satz + Pro 2 + Contra 2 + Entkraeftung + Urteil mit weil
   EHZ-Check: These? Gang mit Z.? Mittel mit Wirkung? Urteil?
-```
-
-```diagram
-   ZWEI AUFGABEN — ZWEI ZENTREN
-   +---------------------------+   +---------------------------+
-   | Aufgabe 1: ANALYSE (IIa)  |   | Aufgabe 2: EROERTERUNG    |
-   |                           |   |            (IIIa/IVb)     |
-   | Zentrum: TEXT             |   | Zentrum: PROBLEM          |
-   |                           |   |                           |
-   | 25 Min                    |   | 25 Min, 180-220 Woerter   |
-   | Einleitung 3 Saetze       |   | Frage 1 Satz              |
-   | Gang: 3 Stationen + Zeile |   | Pro 2 Argumente           |
-   | Sprache: 2 Mittel + Wirkung|  | Contra 2 Einwaende        |
-   | Stellungnahme 3 Zeilen    |   | Entkraeftung + Abwaegung  |
-   |                           |   | Urteil mit weil           |
-   +---------------------------+   +---------------------------+
-              \                            /
-               \---- EHZ-Selbstcheck -----/
-                These? Gang+Zeile? Mittel? Urteil?
+  Formel: $Analyse=Text+Beleg+Z.$ vs $Eroerterung=Problem+Pro/Contra+Urteil$
 ```
 
 Klausur-Satz: `Die Analyse ist am Text orientiert, die Erörterung am Problem; nur die Analyse verlangt eine Zeile für jede Beobachtung.`
@@ -112,13 +93,13 @@ Klausur-Satz: `Die Analyse ist am Text orientiert, die Erörterung am Problem; n
 
 **Bezug zum Konzept**: Der EHZ-Selbstcheck nutzt den Testeffekt: Sich selbst abzufragen festigt das Wissen staerker als blosses Wiederlesen.
 
-## Schritt 4 — ausprobieren
+## Schritt 4 — ausprobieren: Interaktive Praxis & Text-Labor
 
 BEISPIEL (Musteraufgabe mit Loesungsweg):
 
-[Werkzeug: balance]
+[Werkzeug: highlighter]
 
-AUFGABE (analysieren, AFB II): Analysiere Gedankengang und sprachliche Leserlenkung des folgenden Mini-Textes. Belege mit Zeile und nimm abschliessend kurz Stellung.
+AUFGABE (analysieren, AFB II): Analyse-Raetsel — analysiere Gedankengang und sprachliche Leserlenkung des folgenden Mini-Textes. Highlighte Gang-Stationen und Sprachmittel, belege mit Zeile und nimm abschliessend kurz Stellung.
 
 Uebungstext (selbst verfasst, ORIGINAL, ca. 130 Woerter):
 (Z. 1) Viele Familien streiten ueber die Zeit am Bildschirm. (Z. 2) Die Sorge der Eltern ist verstaendlich, doch ein Verbot loest das Problem nicht. (Z. 3) Entscheidend ist die Regel, nicht das Geraet. (Z. 4) Wer planlos scrollt, verliert Zeit und Ruhe. (Z. 5) Wer dagegen Zeiten setzt und Pausen plant, arbeitet konzentrierter als zuvor. (Z. 6) Familien mit klaren Absprachen melden weniger Streit, Familien mit Totalverbot nicht mehr Ruhe. (Z. 7) Sinnvoll ist daher ein Mittelweg: abends bleibt das Geraet in der Kueche, nachmittags eine Stunde fuer Recherche. (Z. 8) So wird der Bildschirm vom Stoerer zum Werkzeug. (Z. 9) Familien brauchen keine Predigt, sondern Absprachen.
@@ -129,11 +110,11 @@ HILFE:
 3. Benenne zwei Sprachmittel und beschreibe ihre Wirkung.
 4. Ein Satz eigenes Urteil mit weil.
 
-MUSTERLOESUNG: Der selbst verfasste Uebungstext "Bildschirmzeit" (2026) ist ein Kommentar zum Familienalltag. Er vertritt die These, nicht das Geraet, sondern die Regel entscheide (Z. 3). Der Gedankengang fuehrt von einer Konzession in Z. 2 ueber einen Kontrast in Z. 4-5 zu einer Mittelloesung in Z. 7. Sprachlich sticht der Kontrast "Stoerer vs. Werkzeug" (Z. 8) hervor, der die Wende verdeutlicht und zur Mitte lenkt. Die Antithese in Z. 3 verschiebt das Problem vom Gegenstand zum Verhalten. Abschliessend halte ich den Mittelweg fuer ueberzeugender als ein Verbot, weil er Selbststeuerung trainiert, statt sie zu verhindern.
+MUSTERLOESUNG: Der Uebungstext "Bildschirmzeit" (2026) ist ein Kommentar zum Familienalltag mit der These, nicht das Geraet, sondern die Regel entscheide (Z. 3). Der Gedankengang fuehrt von einer Konzession in Z. 2 ueber einen Kontrast in Z. 4-5 zu einer Mittelloesung in Z. 7. Sprachlich sticht der Kontrast "Stoerer vs. Werkzeug" (Z. 8) hervor, der die Wende verdeutlicht; die Antithese in Z. 3 verschiebt das Problem vom Gegenstand zum Verhalten. Abschliessend halte ich den Mittelweg fuer ueberzeugender als ein Verbot, weil er Selbststeuerung trainiert, statt sie zu verhindern.
 
 Klausur-Satz: `Der Gang führt von der Konzession in Z. 2 über den Kontrast in Z. 4-5 zur Lösung in Z. 7, sprachlich getragen von der Antithese in Z. 3.`
 
-## Schritt 5 — ausprobieren
+## Schritt 5 — ausprobieren: Verfahrensvergleich & Abgrenzung
 
 VERGLEICH (zwei Verfahren unterscheiden):
 
@@ -148,7 +129,7 @@ ANTWORT: A erfordert Verfahren (i): 70 Prozent der Zeit gelten Gang und Sprache 
 
 Klausur-Satz: `Der Operator entscheidet über die Gewichtung: analysieren richtet den Blick auf den Text, erörtern auf das Problem.`
 
-## Schritt 6 — check
+## Schritt 6 — check: Verständnisprüfung
 
 CHECK (Selbsttest, 3 Fragen mit Antworten):
 
@@ -170,13 +151,13 @@ Klausur-Satz: `Ohne Abwägung von Pro und Contra bleibt die Erörterung auf halb
    Korrektur: Eine Meinung ohne Gegenposition bleibt Stellungnahme ohne Abwaegung. Erst Gegenposition, Entkraeftung und Abwaegung ergeben ein begruendetes Urteil.
    Korrektur-Satz: `Erst die Gegenposition und ihre Entkräftung machen aus einer Meinung eine begründete Erörterung.`
 
-## Schritt 7 — szenario
+## Schritt 7 — szenario: Klausurtransfer & Rubric
 
 ROLLE: Du bist Klausur-Trainerin in der Oberstufe und leitest eine 50-Minuten-Uebungseinheit.
 SITUATION: Zwei Mitschueler haben dieselbe Streitfrage bearbeitet — einer als Analyse, einer als Eroerterung — und streiten, wer "richtig" gearbeitet hat. Beurteile in einer zusammenhaengenden Antwort (ca. 150 Woerter), welches Vorgehen zu welchem Auftrag passt, und erklaere die EHZ-Selbstkorrektur.
 RUBRIC (30 XP): Unterscheidung von Analyse- und Eroerterungszentrum (5 XP) | Zuordnung des passenden Verfahrens zum jeweiligen Auftrag (10 XP) | Erklaerung der EHZ-Selbstkontrolle (10 XP) | Kriteriengeleitetes Urteil zur Gewichtung (5 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY (Kernzusammenfassung):
 

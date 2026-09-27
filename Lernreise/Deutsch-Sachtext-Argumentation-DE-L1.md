@@ -15,7 +15,7 @@ version: Lesson-v3
 
 <!-- Lesson v3 9-Schritt-Architektur: Schritt 1 bis 8 feste Struktur; Fehlvorstellung zwischen Schritt 6 und 7 (Parser ueberspringt, zaehlt nicht); interaktive [Werkzeug: <id>]; Gating: check/szenario nicht bestanden = Weiter deaktiviert; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
-## Schritt 1 — entdecken
+## Schritt 1 — entdecken: Ziele & Phänomen-Einstieg
 
 ZIELE (drei messbare Ziele dieser Lektion):
 
@@ -25,7 +25,7 @@ ZIELE (drei messbare Ziele dieser Lektion):
 
 ### Hook / Phaenomen
 
-Zwei Leser streiten ueber einen Kommentar: Einer sagt, er sei ueberzeugend, der andere, er sei blosse Meinung. Beide haben denselben Text gelesen. Woran entscheidet sich, ob ein Text argumentiert oder nur behauptet?
+Zwei Leser streiten ueber einen Kommentar: Einer sagt, er sei ueberzeugend, der andere, er sei blosse Meinung. Beide haben denselben Text gelesen. Woran entscheidet sich, ob ein Text argumentiert oder nur behauptet? An drei Pruefsteinen: These, Begruendung und Beleg. Eine These ohne Begruendung bleibt Behauptung, eine Begruendung ohne Beleg bleibt Vermutung, erst These plus Argument plus Beispiel oder Zahl ergibt einen Gang. Die rhetorische Manipulation tarnt sich gern als Argumentation: Sie ersetzt Belege durch Aaalle kennen das, ersetzt Abwaegung durch Entweder-Oder und ersetzt Konzesssion durch Strohmaenner. Erstens rekonstruiert die Analyse den Gang Station fuer Station mit Zeile. Zweitens prueft sie jede Station auf Funktion — Einraeumung, Einwand, Staerkung, Zuspitzung. Drittens bewertet sie die Staerke nach Kriterien wie Relevanz und Tragfaehigkeit. Wer so liest, laesst sich nicht mehr vom Tonfall lenken, sondern folgt der Baustatik des Gedankens.
 
 ### Fachbegriff & Definition
 
@@ -37,7 +37,7 @@ Die Kausalkette lautet: **These, Station, Beleg, Urteil**. Erstens wird die Thes
 
 Klausur-Satz: `Der Argumentationsgang eines Sachtextes verbindet These, Argumente und Schlussfolgerung zu einer nachvollziehbaren Gedankenkette.`
 
-## Schritt 2 — entdecken
+## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
 
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
@@ -59,7 +59,7 @@ Die Begriffe bilden eine Kette: Die **These** gibt das Ziel vor, das **Argument*
 
 Klausur-Satz: `Eine These wird erst durch Argumente und Belege tragfähig; ohne Textbeleg bleibt jede Analyse eine bloße Behauptung.`
 
-## Schritt 3 — entdecken
+## Schritt 3 — entdecken: Kernkonzept & Wirkungsmodell
 
 TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
@@ -67,14 +67,13 @@ TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
 Warum wirkt ein Kommentar ueberzeugend, obwohl er nur Bekanntes sagt? Weil er Bekanntes in eine Richtung stellt. Die Reihenfolge entscheidet: Wer zuerst einraeumt und dann widerspricht, gewinnt Vertrauen, das der blosse Rechthaber nie bekommt.
 
-### Fachbegriff & Definition
+### Spiel-Aufgabe (Gang-Puzzle)
 
-Die **Konzession als Eroeffnungstaktik** ist ein **gelenktes Einraeumen**, das Vertrauen aufbaut, um den folgenden **Gegenbeweis** zu staerken. Ihre Formel lautet $Konzession = zwar + Verstaendnis + aber + These$. Sie steht meist in $Z. 2$ und signalisiert Fairness. Ohne anschliessenden Gegenbeweis bleibt sie Selbstwiderspruch; mit ihm wird sie zum stilkraftvollen Auftakt.
+Lege das Gang-Puzzle: Ziehe vier Stations-Kaertchen — Konzession, Gegenbeweis, Loesung, Appell — in die richtige Reihenfolge und highlighte die Funktionswoerter (zwar, aber, denn, dagegen, daher) mit $Z.$. Das Bonus-Raetsel: Wo steht die These — meist nach aber oder doch als "nicht ..., sondern ..."-Satz. Jede Station braucht Funktion plus kurzes Zitat plus $Z.$, sonst rastet sie nicht ein.
 
-### Wirkungsgefuege / Modell
+### Aha-Moment & Gesetz
 
-Die Kausalkette lautet: **Einraeumen, Entkraeften, Loesen, Appellieren**. Erstens raeumt die Konzession die Sorge der Gegenseite ein und gewinnt Vertrauen. Zweitens entkraeftet der Gegenbeweis mit Kontrast in $Z. 4$ bis $Z. 5$ das Pauschalurteil. Drittens bietet die Loesung in $Z. 7$ den Mittelweg als Schlussfolgerung. Viertens muendet der Appell in $Z. 9$ in Selbststeuerung statt Verbot. Genau diese Stufung macht den Gang pruefbar.
-
+Die Kausalkette lautet Einraeumen, Entkraeften, Loesen, Appellieren: Die Konzession gewinnt Vertrauen, der Gegenbeweis mit Kontrast entkraeftet das Pauschalurteil, die Loesung bietet den Mittelweg, der Appell muendet in Selbststeuerung. Formel: $Konzession=zwar+Verstaendnis+aber+These$; Leseregel $These+Beleg=Deutung$. Genau diese Stufung macht den Gang pruefbar.
 ```diagram
   ARGUMENTATIONSGANG — vier Stationen
   [These in Z. 3: nicht Geraet, sondern Umgang]
@@ -83,24 +82,7 @@ Die Kausalkette lautet: **Einraeumen, Entkraeften, Loesen, Appellieren**. Ersten
     -> [Loesung Z. 7-8: Mittelweg + Werkzeug-Bild]
     -> [Appell Z. 9: Training statt Moralpredigt]
   Regel: Jede Station = Funktion + kurzes Zitat + Z.
-```
-
-```diagram
-  [These]            z.B. "Nicht das Geraet, sondern der Umgang entscheidet."
-     |
-     +--> [Argument 1]  Faktenargument ....... Beleg: Z. 4-5
-     |
-     +--> [Konzession]  zwar ... aber ........ Beleg: Z. 2
-     |        |
-     |        +--> [Gegenargument entkraeftet] Beleg: Z. 6
-     |
-     +--> [Argument 2]  normativ/Appell ...... Beleg: Z. 9-10
-     |
-     v
-  [Schlussfolgerung / Mittelweg]  .......... Beleg: Z. 7-8
-     |
-     v
-  [Intention]  informieren / appellieren / ueberzeugen / warnen
+  Formel: $Konzession=zwar+Verstaendnis+aber+These$
 ```
 
 Klausur-Satz: `Der Gedankengang führt von einer Konzession über den Gegenbeweis zu einer Schlussfolgerung, die die These stützt.`
@@ -111,13 +93,13 @@ Klausur-Satz: `Der Gedankengang führt von einer Konzession über den Gegenbewei
 
 **Bezug zum Konzept**: Der Argumentationsgang entspricht dem antiken dispositio: Argumente werden zuerst gefunden und dann in eine wirksame Reihenfolge gebracht.
 
-## Schritt 4 — ausprobieren
+## Schritt 4 — ausprobieren: Interaktive Praxis & Text-Labor
 
 BEISPIEL (Musteraufgabe mit Loesungsweg):
 
-[Werkzeug: lego]
+[Werkzeug: highlighter]
 
-AUFGABE (analysieren, AFB II): Analysiere den Argumentationsgang des folgenden Uebungstextes und benenne die These. Belege jede Station mit Zeile.
+AUFGABE (analysieren, AFB II): Gang-Raetsel — analysiere den Argumentationsgang des folgenden Uebungstextes und benenne die These. Highlighte Funktionswoerter und belege jede Station mit Zeile.
 
 Mini-Sachtext (selbst verfasster Uebungstext, ORIGINAL, ca. 110 Woerter):
 (Z. 1) Immer mehr Schulen streiten ueber Handys im Unterricht. (Z. 2) Die Sorge der Lehrkraefte ist verstaendlich, doch ein pauschales Verbot greift zu kurz. (Z. 3) Entscheidend ist nicht das Geraet, sondern der Umgang damit. (Z. 4) Wer staendig kurze Videos ansieht, verliert tatsächlich Konzentration. (Z. 5) Wer dagegen gezielt sucht, vergleicht und prueft, lernt schneller als fruehere Jahrgaenge. (Z. 6) Erfahrungen zeigen: Klassen mit klaren Regeln arbeiten ruhiger, Klassen mit Totalverbot nicht besser. (Z. 7) Sinnvoll ist daher ein Mittelweg — eine Stunde konzentriert ohne Bildschirm, danach gezielte Recherche. (Z. 8) So wird das Handy vom Stoerer zum Werkzeug. (Z. 9) Die Jugend braucht keine Moralpredigt, sondern Training in Selbststeuerung.
@@ -131,7 +113,7 @@ MUSTERLOESUNG: Die These lautet: Nicht das Geraet, sondern der Umgang entscheide
 
 Klausur-Satz: `Die Argumentation verläuft dreistufig: von der Konzession in Z. 2 über den Gegenbeweis in Z. 4-5 zur Mittellösung in Z. 7.`
 
-## Schritt 5 — ausprobieren
+## Schritt 5 — ausprobieren: Verfahrensvergleich & Abgrenzung
 
 VERGLEICH (zwei Verfahren unterscheiden):
 
@@ -146,7 +128,7 @@ ANTWORT: A erfordert Verfahren (i): These lautet, entscheidend sei der Mensch, n
 
 Klausur-Satz: `These und Argumentationsgang sind zwei getrennte Analyseebenen: Die These nennt das Ziel, der Gang zeigt den Weg dorthin.`
 
-## Schritt 6 — check
+## Schritt 6 — check: Verständnisprüfung
 
 CHECK (Selbsttest, 3 Fragen mit Antworten):
 
@@ -168,13 +150,13 @@ Klausur-Satz: `Jede Analyse-Station verlangt einen Beleg: erst benennen, dann zi
    Korrektur: Ein Beleg verbindet kurzes Zitat, Zeile und Funktion. Muster: Die Konzession in Z. 2 leitet den Gegenbeweis ein. Lange Passagen ohne Funktion zaehlen nicht.
    Korrektur-Satz: `Ein Beleg besteht aus kurzem Zitat, Zeilenangabe und Funktionsbeschreibung, nicht aus einer abgeschriebenen Textpassage.`
 
-## Schritt 7 — szenario
+## Schritt 7 — szenario: Klausurtransfer & Rubric
 
 ROLLE: Du bist Mitglied der Schuelervertretung und bewertest auf einer Schulkonferenz einen Kommentar zur geplanten Handyregelung.
 SITUATION: Die Schulleitung will Handys im Unterricht komplett verbieten; ein Kommentar in der Schuelerzeitung argumentiert fuer klare Nutzungsregeln. Beurteile in einer zusammenhaengenden Stellungnahme (ca. 150 Woerter), wie ueberzeugend der Kommentar argumentiert, gestuetzt auf Gang und Argumenttypen.
 RUBRIC (30 XP): Benennung von These und Textsorte (5 XP) | Nachzeichnung des Gangs mit drei Stationen und Zeilen (10 XP) | Bestimmung der Argumenttypen und Wirkung (10 XP) | Kriteriengeleitetes Urteil mit Abwaegung (5 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY (Kernzusammenfassung):
 
