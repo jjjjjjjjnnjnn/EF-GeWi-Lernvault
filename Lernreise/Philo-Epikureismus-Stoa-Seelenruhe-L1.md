@@ -173,6 +173,4 @@ REFLEXION:
 
 Klausur-Satz: `Reife Seelenruhe verbindet drei Pruefungen: Wuensche sichten, Urteile staerken und Menschen nie als Mittel verbrauchen.`
 
-Anekdote (DE): Als man Epikur teuren Fisch anbot, blieb er bei Brot und Freunden. Zenon nannte Schiffbruch eine Lehre in Gelassenheit. Zwei Orte, ein Ideal der Ruhe.
-
 Bezug: `Garten und Halle zeigen: Weniger Begierde plus bessere Urteile ergeben Ruhe.`

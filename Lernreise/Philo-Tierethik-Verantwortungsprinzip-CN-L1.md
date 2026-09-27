@@ -42,7 +42,7 @@ PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→�
 中文在上，德语在下：
 
 - 痛苦感受 — **Leidensfaehigkeit**：会痛即有道德份量。DE: Die Faehigkeit zu Schmerz und Freude als Eintritt in die Moral. Sie begruendet gleiche Ruecksicht bei gleichem Leid. Mechanismus: Vergleich des Leidens ueber Artgrenzen hinweg erzeugt Antispeziesismus. Klausur-Tipp: Formel gleiches Leid gleiches Gewicht nennen.
-- 物种歧视 — **Speziesismus**：因物种划线即歧视。DE: Singers Vorwurf der willkuerlichen Artbevorzugung analog zu Rassismus. Er entlarvt inkonsistente Grenzen. Mechanismus: Auf German? Aufdeckung von Willkuer plus Forderung nach Konsistenz. Klausur-Tipp: Analogie zu Rassismus als Beleg nennen.
+- 物种歧视 — **Speziesismus**：因物种划线即歧视。DE: Singers Vorwurf der willkuerlichen Artbevorzugung analog zu Rassismus. Er entlarvt inkonsistente Grenzen. Mechanismus: Aufdeckung von Willkuer plus Forderung nach Konsistenz. Klausur-Tipp: Analogie zu Rassismus als Beleg nennen.
 - 生命主体 — **Subjekt eines Lebens**：有传记的存在者有内在价值。DE: Regans Status von Wesen mit Ueberzeugungen, Wuenschen und Zukunftssinn. Er begruendet Tierrechte statt blosser Bilanz. Mechanismus: Inhaerenter Wert blockiert Verrechnung als Ressource. Klausur-Tipp: Subjekt plus inhaerenter Wert als Paar nennen.
 - 责任原则 — **Verantwortungsprinzip**：力量越大，对未来责任越大。DE: Jonas Gebot der Vorsorge aus technologischer Macht. Echtes kuenftiges Leben muss moeglich bleiben. Mechanismus: Fernwirkung plus Verletzlichkeit erzeugt Vorsorgepflicht. Klausur-Tipp: Zukunftsformel woertlich zitieren.
 - 3R规则 — **3R-Regel**：替代、减少、优化。DE: Replace, Reduce und Refine als Stufenpruefung jedes Versuchs und jeder Haltung. Mechanismus: Vermeidung vor Minderung vor Rechtfertigung ordnet die Pruefung. Klausur-Tipp: Alle drei R mit Beispiel nennen.

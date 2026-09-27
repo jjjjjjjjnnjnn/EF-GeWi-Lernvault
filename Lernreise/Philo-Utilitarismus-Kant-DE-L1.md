@@ -80,7 +80,7 @@ Klausur-Satz: `Kant prueft nicht den Nutzen, sondern ob die Maxime allgemeines G
 
 ## Anekdote & Fun-Fact
 
-In der modernen Ethik ist das Trolley-Problem beruehmt: Ein ausser Kontrolle geratener Wagen rast auf fuenf Menschen zu, man koennte eine Weiche umstellen, sodass er nur einen Menschen trifft. Ein Utilitarist wertet die Folgen und wuerde umstellen. Ein Kantianer fragt dagegen, ob dabei ein Mensch zum blossen Mittel gemacht wird. Derselbe Fall, zwei voellig verschiedene Pruefungen, und genau darum geht es in dieser Lektion.
+Philippa Foot erfand 1967 den Trolley-Fall als Gedankenexperiment, Judith Jarvis Thomson verschaerfte ihn spaeter zum Bruecken-Fall mit aktivem Stossen. Derselbe Fall, zwei voellig verschiedene Pruefungen, und genau darum geht es in dieser Lektion.
 
 Bezug zum Konzept: `Die Anekdote zeigt am selben Fall den Grundgegensatz dieser Lektion: Folgenbilanz gegen Pflichtprobe, Gesamtwohl gegen unantastbare Wuerde.`
 

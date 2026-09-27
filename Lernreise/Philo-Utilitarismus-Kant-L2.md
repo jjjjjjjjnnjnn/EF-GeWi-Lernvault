@@ -80,7 +80,7 @@ Klausur-Satz: `Die Aktbilanz raet zum Stellen, doch Regel und Wuerde fragen, ob 
 
 ## Anekdote & Fun-Fact
 
-Philippa Foot erfand den Trolley-Fall alsphilosophisches Gedankenexperiment, Judith Jarvis Thomson verschaerfte ihn zum Bruecken-Fall mit aktivem Stossen. Millianer stellten um, Kantianer verweigerten die Hand. Dieselbe Weiche, zwei Haende, und die Philosophie streitet bis heute, ob Unterlassen weniger schuldig macht. Genau dieser Streit hebt diese L2-Lektion ueber L1.
+Philippa Foot erfand den Trolley-Fall als philosophisches Gedankenexperiment, Judith Jarvis Thomson verschaerfte ihn zum Bruecken-Fall mit aktivem Stossen. Millianer stellten um, Kantianer verweigerten die Hand. Dieselbe Weiche, zwei Haende, und die Philosophie streitet bis heute, ob Unterlassen weniger schuldig macht. Genau dieser Streit hebt diese L2-Lektion ueber L1.
 
 Bezug zum Konzept: `Die Anekdote zeigt die L2-Schaerfung: Vom blossen Rechnen zur Frage von Regel, Hand und Verantwortung.`
 

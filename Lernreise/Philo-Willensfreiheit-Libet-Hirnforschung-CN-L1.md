@@ -111,7 +111,7 @@ Primaertext（Libet/Frankfurt 简化德语版，约145词）：
 > (Z.9) Der zweite Wunsch fragt: willst du so einer sein.
 > (Z.10) Wer seine Sucht bejaht, faehrt willig in die Nacht.
 > (Z.11) Wer sie hasst, kaempft als Person um sich.
-> (Z.12) Frei ist, wer seinen wirksamen Willen hasst oder traegt und pruelt.
+> (Z.12) Frei ist, wer seinen wirksamen Willen hasst oder traegt und prueft.
 > (Z.13) Kurve erklaert den Impuls, Reue belegt die Stufe.
 > (Z.14) Darum entlastet kein Scan den Spieler vor Gericht.
 > (Z.15) Zurechenbar ist, wer stoppen konnte und sich dazu verhaelt.
@@ -142,8 +142,8 @@ VERGLEICH辨别实验（双向辨析：追责眼 vs 防复发眼）：
 
 VERGLEICH: Waehle erst den Pruefweg — Weg A Kantische Schuld（认同 + 尊严）oder Weg B Utilitaristische Praevention（复玩率 + 总福利）— dann loesen.
 
-Weg A (Kant, Autonomie und Schuld)：机制为准测、认同、目的公式。恨玩却 terus 玩，恰证明能负责。长在守护人格，短在对成瘾机制太硬。
-Weg B (Utilitarismus, Folgen und Gesamtwohl)：机制为复发、学业、家庭总账。限时加辅导比没收手机更能防复发。长在治病救人，短在把少年当病例。
+Weg A (Kant, Autonomie und Schuld)：机制为准测、认同、目的公式。恨玩却仍继续玩，恰证明能负责。长在守护人格。短在对成瘾机制太硬。
+Weg B (Utilitarismus, Folgen und Gesamtwohl)：机制为复发、学业、家庭总账。限时加辅导比没收手机更能防复发。长在治病救人。短在把少年当病例。
 
 AUFGABE A：Der Spieler bejaht sein Dauerspielen und will so bleiben. Pruefen Sie mit Weg A Maxime, Identifikation und Wuerde und formulieren Sie ein Urteil.
 AUFGABE B：Die Klasse will zwischen Handyverbot und Coaching waehlen. Pruefen Sie mit Weg B Rueckfall und Gesamtwohl und formulieren Sie ein Urteil.
