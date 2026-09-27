@@ -15,48 +15,53 @@ version: Lesson-v3
 
 <!-- Lesson v3 9步制架构：Schritt 1至8固定结构；Fehlvorstellung 夹在 Schritt 6 与 7 之间（Parser 自动跳过，不占步数）；支持内嵌 [Werkzeug: <id>] 交互教具；Gating: check/szenario 未过 = Weiter 置灰；XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
-## Schritt 1 — entdecken
+## Schritt 1 — entdecken: Reha-Zentrum — 赛场警报
 
-ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
+ZIELE (3条,本节15分钟学完能做到——先读中文,再记德语):
 
-1. 中文：能说出五大负荷规范——强度、量、密度、时长、频率，并各给一调节例。
-2. 中文：能用超量恢复解释"练—休—涨"三段，并定出恢复时长原则。
-3. 中文：能选择刺激强度（选程序：弱效维持 vs 强效发展）。
+1. 中文:能一句话定义`Belastungsreiz und Trainingsnormative`,并定位到本关赛事Reha-Zentrum, Reizstufen-Treppe nach Verletzung。
+2. 中文:能口述核心机制,并用数值目标(Reizdauer 25 min, Pause 1:2, 90-Sekunden-Dosierung)举证。
+3. 中文:能诊断一处典型错误,并用德语Klausur-Satz收束(AF B II)。
 
-Voraussetzung（窄切口）：只做一般训练学，已会 Superkompensation 草图；不做具体 Trainingsplaene der Leichtathletik。
+### Hook 赛场/舞台实况
 
-Klausur-Satz: `Der Reiz muss die Schwelle treffen; die Normative dosieren ihn, die Pause sichert den Gewinn.`
+聚光灯打向Reha-Zentrum, Reizstufen-Treppe nach Verletzung,这是《冠军竞技场与节拍工坊》战役的下一关:上一集埋下的悬念在此引爆,教练/首席必须在限时内拿出方案。刺激-恢复-超量:强度量密度频率时长五规范定刺激,36-72小时恢复长出超量,过大透支、过小无痕。本关必须过沙盘数值目标,下一集的瓦格纳动机/体能极限/冲量角逐在此埋下伏笔。
 
-## Schritt 2 — entdecken
+Hook (DE): Im Rampenlicht von Reha-Zentrum, Reizstufen-Treppe nach Verletzung beginnt unser naechster Akt der Kampagne Champion-Arena und Takt-Werkstatt. Stell dir vor: Die Trainingswoche steht, doch der Star ist platt statt frisch: zu viel Reiz ohne Erholung frisst Form statt sie zu bauen. Wo liegt die Grenze zwischen Aufbau und Uebermass? Die Normative dosieren den Reiz aus Intensitaet, Umfang, Dichte, Dauer und Haeufigkeit. Erstens setzt der Reiz das Signal. Zweitens formt die Erholung den Anstieg. Drittens wiederholt die Woche die Spirale. Wer Reiz und Pause balanciert, erntet Superkompensation. Heute dosieren wir genau diese Woche: stellen, messen und Aufbau befehlen.
 
-PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
+`Klausur-Satz: Leitsatz des Themas.`
 
-中文在上，德语在下：
+## Schritt 2 — entdecken: 5术语装备盒
 
-- 负荷刺激 — Belastungsreiz：超阈才发展，阈下只维持，过强则损伤。
-- 超量恢复 — Superkompensation：恢复期能力涨超起点，此时加练最有效。
-- 负荷五规范 — Belastungsnormative：Intensitaet、 Umfang、 Dichte、 Dauer、 Haeufigkeit。
-- 强度 — Intensitaet：单位时间负荷高度，如速度、重量百分比。
-- 密度 — Dichte：练休比，间歇长短决定代谢路径。
+PRETRAINING术语盒(核心5词,先读三遍中德,合书自测中文→德语):
 
-Klausur-Satz: `Ohne Pause kein Zuwachs; ohne Reizhoehe kein Anlass.`
+中文在上,德语在下:
 
-## Schritt 3 — entdecken
+- 负荷刺激 — Belastungsreiz:超量恢复的训练输入 / Trainingsreiz fuer Superkompensation。
+- 强度 — Intensitaet:速度、负重与心率 / Tempo, Last und Puls。
+- 量 — Umfang:组数、距离与时长 / Saetze, Strecke und Dauer。
+- 密度 — Dichte:练休比 / Verhaeltnis von Belastung und Pause。
+- 超量恢复 — Superkompensation:恢复后能力高于原水平 / Leistung nach Erholung ueber Ausgangsniveau。
 
-ENTDECKEN（1概念 + 1文字图解）：
+`Klausur-Satz: Die fuenf Begriffe tragen Diagnose, Sandkasten und Urteil als gemeinsame Sprache.`
 
-中文：刺激分三档：太弱（unter Schwell）只热身，适中（ueberschwellig）才长功，太强（ueberfordernd）变透支。五规范是药方写法：Intensitaet 定浓度，Umfang 定剂量，Dichte 定服药间隔，Dauer 定疗程，Haeufigkeit 定每周几次。超量恢复是时间窗：练后先掉（Ermuedung）、再回（Restitution）、后超（KompensationPlus），在顶点加下一练则步步高，练早了透支、练晚了归零。
+## Schritt 3 — entdecken: 生理/音乐机制传导
 
-文字图解（ASCII 结构图，App支持解析渲染）：
+ENTDECKEN(1概念 + 1文字图解,中文在上、德语在下):
+
+中文:刺激-恢复-超量:五规范定刺激(强度量密度频率时长),恢复36-72小时,能力螺旋上升;过大则透支,过小则无痕。
+
+Mechanismus (DE): Reiz, Erholung und Superkompensation: Die Normative dosieren den Reiz, 36 bis 72 Stunden formen den Anstieg, Uebermass bricht ihn.
+
+战役传导:本关承接冲量角逐、乳酸阈值与主导动机三幕,测得出才能说得清,说得清才能赢下来。
 
 ```diagram
-  Reiz: zu schwach (bleibt) | optimal (steigt) | zu stark (faellt)
-  Normative: Intensitaet (%) | Umfang (km/kg/Wdh) | Dichte (Pause)
-             Dauer (min) | Haeufigkeit (/Woche)
-  Superkompensation: Absturz ──> Basis ──> Plusgipfel (hier neu reizen)
+Kampagne [Impuls -> Schwelle -> Leitmotiv]
+Holphase [sichern] -> Pruefphase [Reizdauer 25 min, Pause 1:2, 90-Sekunden-Dosierung] -> Zielphase [nutzen]
+Regel: Fehler frueh = Grenze | Fehler spaet = Ausnutzung
 ```
 
-Klausur-Satz: `Im Gipfel der Superkompensation erneut reizen — so summiert sich Training.`
+`Klausur-Satz: Der Mechanismus trennt Grenze von Ausnutzung und ordnet jeden Fehler seiner Phase zu.`
 
 ## Anekdote & Fun-Fact
 
@@ -66,47 +71,50 @@ Klausur-Satz: `Im Gipfel der Superkompensation erneut reizen — so summiert sic
 
 **Bezug zum Konzept**: `Entleeren, um voller zu werden.`
 
-## Schritt 4 — ausprobieren
+## Schritt 4 — ausprobieren: 沙盘决战 Reizdauer 25 min
 
-BEISPIEL（正确例题示范，含教具操作与解答）：
+BEISPIEL(含教具操作与解答):
 
-[Werkzeug: plan]
+[Werkzeug: oral-timer]
 
-AUFGABE (begruenden, AFB II)：Begruenden Sie mit Normativen und Superkompensation, warum dreimal GA1-Laufen pro Woche mit einem Intervalltag mehr bringt als taegliches Vollgas.
+AUFGABE (analysieren, AFB II):90-Sekunden-Dosierung gegen den Timer: verordne 25 min Reiz bei Dichte 1:2;达标线:Reizdauer 25 min, Pause 1:2, 90-Sekunden-Dosierung。
+
+Target数值目标:Reizdauer 25 min, Pause 1:2, 90-Sekunden-Dosierung。
 
 HILFE:
-1. Schritt 1: Reizhoehen beider Varianten einschaetzen.
-2. Schritt 2: Zwei Normative (Dichte, Haeufigkeit) vergleichen.
-3. Schritt 3: Superkompensationsfenster als Timing nennen.
+1. 定相命名:先说相位与错误画像,对照目标Reizdauer 25 min。
+2. 读数释义:读出测量值,用一个术语解释效应。
+3. 推纠正:从机制推出一条可操作纠正。
 
-MUSTERLÖSUNG: Taegliches Vollgas setzt ueberfordernde Reize ohne ausreichende Dichte (Pause zu kurz), sodass Restitution unvollstaendig bleibt und Ueberlastung droht. Dreimal GA1 plus ein Intervall dosiert: Umfang und Haeufigkeit sichern Basis, ein ueberschwelliger Reiz setzt den Entwicklungsanlass, zwei Ruhetage lassen die Superkompensation ihren Gipfel erreichen. Erneut gereizt wird im Plus, nicht im Minus — daher summiert sich Leistung statt zu stagnieren. Normativ lautet die Formel: Intensitaet pointiert, Dichte geduldig, Haeufigkeit dreimal statt siebenmal.
+MUSTERLÖSUNG:对照目标(Reizdauer 25 min, Pause 1:2, 90-Sekunden-Dosierung),先定相命名错误画像,再读数并以术语释效应,最后从机制推纠正;在Reha-Zentrum, Reizstufen-Treppe nach Verletzung中形成 保障—转化—兑现 的完整因果链,达标即过关。
 
-Klausur-Satz: `Pointierter Reiz plus geduldige Pause schlaegt taegliche Ueberforderung.`
+`Klausur-Satz: Am Target zeigt sich, ob Grenze oder Ausnutzung ueber das Ergebnis entschied.`
 
-## Schritt 5 — ausprobieren
+## Schritt 5 — ausprobieren: VERGLEICH技术对抗 Schonungs-Weg vs Aufbau-Weg
 
-VERGLEICH辨别实验（双向辨析：弱效维持 vs 强效发展）：
+VERGLEICH辨别实验(双向辨析,先选程序再解题):【选程序】
 
-VERGLEICH: Waehle erst das Verfahren — 【选程序】先看目标动词：(i) 弱效维持（erhalten/stabilisieren/Regeneration：阈下小量、低强度、高频率亦可）oder (ii) 强效发展（steigern/entwickeln/Bestzeit：超阈大量、点强度、守恢复）—— dann loesen.
+VERGLEICH:先选程序—— (i) Schonungs-Weg 还是 (ii) Aufbau-Weg ——再解题。WegA讲上限/结构,WegB讲兑现/情境。【选程序:问上限与结构选(i),问兑现与情境选(ii)。口述先说 Ich waehle Verfahren (i)/(ii), weil …】
 
-AUFGABE A：Verletzter soll Form halten ohne Risiko. Reiz?
-AUFGABE B：Gesunder will 5-km-Bestzeit druecken. Reiz?
+AUFGABE A (Schonungs-Weg):在Reha-Zentrum, Reizstufen-Treppe nach Verletzung的首个案例中选哪条路,如何论证?
 
-HILFE: A 含 halten/ohne Risiko → Verfahren (i)。B 含 Bestzeit → Verfahren (ii)。【选程序：求稳用小刺激；求涨用超阈值。】
+AUFGABE B (Aufbau-Weg):在对立案例中选哪条路,如何论证?
 
-ANTWORT: A erfordert Verfahren (i): Unterschwellige GA1-Reize mit kleinem Umfang und voller Dichte erhalten Oekonomie ohne Restitutionsrisiko — Erhalt ohne Gipfelzwang. B erfordert Verfahren (ii): Ueberschwellige Intervalle an der Schwelle mit langem Umfang, aber nur zweimal pro Woche plus Ruhetage im Superkompensationsgipfel — Entwicklung mit Timingzwang. Vertauscht bremst A den Heilungsprozess, laesst B die Form verpuffen.
+HILFE:A问上限属于程序(i);B问兑现属于程序(ii)。先说选哪条路,再给测量/情境证据。
 
-Klausur-Satz: `Erhalten braucht Reizarmut mit Regelmaessigkeit, Entwickeln Reizspitze mit Geduld.`
+ANTWORT:A走程序(i)Schonungs-Weg,以测量值与机制论证上限;B走程序(ii)Aufbau-Weg,以情境与位置论证兑现。德语口述句收束。
 
-## Schritt 6 — check
+`Klausur-Satz: Verfahren (i) setzt die Grenze, Verfahren (ii) nutzt die Lage; die Wahl traegt das Urteil.`
 
-CHECK检索默写（自测 3 题，与答案配对）：
+## Schritt 6 — check: Selbsttest zu Belastungsreiz und Trainingsnormative
 
-FRAGE: Wie lauten die fuenf Normative? | ANTWORT: Intensitaet, Umfang, Dichte, Dauer und Haeufigkeit.
-FRAGE: Wann erneut reizen? | ANTWORT: Im Gipfel der Superkompensation — nach vollstaendiger Restitution plus Kompensation.
-FRAGE: Was unterscheidet Reizstufen? | ANTWORT: Unterschwellig erhaelt, ueberschwellig entwickelt, ueberfordernd schaedigt.
+CHECK检索默写(自测3题,与答案配对):
 
-Klausur-Satz: `Dosieren die Normative, timt die Pause den Erfolg.`
+FRAGE:如何在赛事中认出本课核心? | ANTWORT:看数值目标(Reizdauer 25 min)与S3机制。
+FRAGE:如何达标? | ANTWORT:测量、术语释义、从机制推纠正三步。
+FRAGE:何时选程序(i)而非(ii)? | ANTWORT:问上限选(i),问兑现选(ii)。
+
+`Klausur-Satz: Selbsttest bestanden heisst Target lesen, Verfahren waehlen und Urteil begruenden.`
 
 ## Fehlvorstellung
 
@@ -120,19 +128,18 @@ Klausur-Satz: `Dosieren die Normative, timt die Pause den Erfolg.`
    中文纠偏：五规范联动；只加强度不拉长间歇，代谢就翻车。
    Korrektur-Satz: `Alle fuenf Normative dosieren gemeinsam.`
 
-## Schritt 7 — szenario
+## Schritt 7 — szenario: Klausurtransfer: Belastungsreiz und Trainingsnormative — Reha-Coach an der Reiztreppe
+中文:你是Reha-Coach an der Reiztreppe,在Reha-Zentrum, Reizstufen-Treppe nach Verletzung中必须用德语连贯口述(约90秒)诊断、措施与数值目标(Reizdauer 25 min, Pause 1:2, 90-Sekunden-Dosierung),并以术语举证。
+ROLLE: Du bist Reha-Coach an der Reiztreppe. SITUATION: In Reha-Zentrum, Reizstufen-Treppe nach Verletzung stellst du Diagnose, Massnahme und Target (Reizdauer 25 min, Pause 1:2, 90-Sekunden-Dosierung) in ca. 90 Sekunden vor.
+RUBRIC (30 XP):诊断术语8分 | 措施与目标举证10分 | 程序选择对比7分 | 德语表达5分。
 
-ROLLE: Du schreibst einen Trainingsplan-Kommentar fuer eine Schul-AG.
-SITUATION: Die AG trainiert taeglich hart und stagniert. Begruende in zusammenhaengender Darstellung (ca. 150 Woerter) mit Reizstufen und Superkompensation einen 3-plus-1-Wochenplan mit zwei Beispiel-Normativen.
-RUBRIC (30 XP): Reizstufendiagnose des Fehlers (8 XP) | Normativbegruendung mit zwei Werten (10 XP) | Superkompensations-Timing (8 XP) | Verstaendliche Sprache (4 XP).
+## Schritt 8 — reflexion: Takeaway & Reflexion — 奖杯还是进站检修
 
-## Schritt 8 — reflexion: Takeaway & Reflexion
+TAKEAWAY 1盒(核心总结):
 
-TAKEAWAY 1盒（核心总结）：
+中文:上限早锁定、位置晚兑现;数值目标(Reizdauer 25 min, Pause 1:2, 90-Sekunden-Dosierung)是裁判,程序选择是辩护;本关连着冲量角逐、体能极限与主导动机三幕,测得出、说得清、赢下来。
+Takeaway-Satz: `Wer die Grenze sichert und die Lage nutzt, holt den Pokal.`
 
-中文：刺激分三档、规范有五维、加练看峰顶。维持求稳、发展求超阈加耐心。记住一句话——练是刺激，涨在休息。
-Takeaway-Satz: `Reiz setzen, Pause achten, Gipfel nutzen.`
-
-REFLEXION 2问：
-1. 过程自省：Welcher Schritt fiel schwerer — die Planbegruendung (Schritt 4) oder die Reizwahl (Schritt 5)?
-2. 元认知计划：Beim naechsten Mal notiere ich zuerst alle fuenf Normative als Checkliste.
+REFLEXION 2问:
+1. 过程自省:沙盘精度(Schritt 4)与程序选择(Schritt 5)哪一步更难?
+2. 元认知计划:下次先记测量值加相位,因为一切论证都从它长出来。

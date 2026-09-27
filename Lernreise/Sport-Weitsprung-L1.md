@@ -15,61 +15,53 @@ version: Lesson-v3
 
 <!-- Lesson v3 9步制架构：Schritt 1至8固定结构；Fehlvorstellung 夹在 Schritt 6 与 7 之间（Parser 自动跳过，不占步数）；支持内嵌 [Werkzeug: <id>] 交互教具；Gating: check/szenario 未过 = Weiter 置灰；XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
-## Schritt 1 — entdecken
+## Schritt 1 — entdecken: Berliner Olympiastadion — 赛场警报
 
-ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
+ZIELE (3条,本节15分钟学完能做到——先读中文,再记德语):
 
-1. 中文：能分相描述跳远（Anlauf / Absprung / Flug / Landung），并指出主相是 Absprung，且能把四相映射回通用三相。
-2. 中文：能用力学原理解释起跳——水平速度与垂直速度的合成决定重心抛物线与远度，起跳要"快而平"而非一味求陡。
-3. 中文：能分析腾空相的优化边界——重心轨迹在起跳瞬间已定，空中只能优化姿态与落地前伸，并给出典型错误与纠正。
+1. 中文:能一句话定义`Biomechanische Optimierung des Weitsprungs: Absprung und Flug`,并定位到本关赛事Berliner Olympiastadion, Weitsprung-Finale der Schulmeisterschaft。
+2. 中文:能口述核心机制,并用数值目标(Absprungwinkel 19 Grad, Anlauf 9,2 m/s, Zielweite 7,80 m)举证。
+3. 中文:能诊断一处典型错误,并用德语Klausur-Satz收束(AF B II)。
 
-Klausur-Satz: `Beim Weitsprung entscheidet der Absprung als Hauptphase über die Weite, weil dort die Anlaufgeschwindigkeit in eine optimale Flugkurve des Körperschwerpunkts umgesetzt wird.`
+### Hook 赛场/舞台实况
 
-## Schritt 2 — entdecken
+聚光灯打向Berliner Olympiastadion, Weitsprung-Finale der Schulmeisterschaft,这是《冠军竞技场与节拍工坊》战役的下一关:上一集埋下的悬念在此引爆,教练/首席必须在限时内拿出方案。跳远的远度在起跳瞬间就已写好:助跑攒下水平速度,起跳快而平地转出垂直分量,合成矢量定下重心抛物线;离板之后再使劲也补不回来,腾空只能摆姿态、落地只能前伸。为什么一味求高反而更近?因为陡起跳吃掉了水平速度。本关必须过沙盘数值目标,下一集的瓦格纳动机/体能极限/冲量角逐在此埋下伏笔。
 
-PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
+Hook (DE): Im Rampenlicht von Berliner Olympiastadion, Weitsprung-Finale der Schulmeisterschaft beginnt unser naechster Akt der Kampagne Champion-Arena und Takt-Werkstatt. Stell dir vor: Flutlicht, volle Tribuene und ein einziger Versuch entscheidet ueber Gold. Der Anlauf rollt, das Brett naht, und in kaum zwei Zehntelsekunden formt der Abdruck die ganze Weite. Warum traegt ein flacher schneller Absprung weiter als jeder hohe Sprung? Weil die horizontale Geschwindigkeit die eigentliche Weitenquelle ist und jede ueberfluessige Hoehe sie auffrisst. Der Koerper verlaesst das Brett, der Schwerpunkt folgt stur seiner Parabel, und danach hilft kein Nacharbeiten mehr. Erstens sichert der Rhythmus das Tempo ohne Stemmen. Zweitens setzt der Abdruck Tempo in Weite um. Drittens nutzen Flug und Landung nur noch die fixierte Bahn. Wer den Winkel flach haelt, verwandelt Tempo in Meter. Heute kochen wir genau diesen Augenblick herunter: messen, deuten und muendlich verteidigen.
 
-中文在上，德语在下：
+`Klausur-Satz: Leitsatz des Themas.`
 
-- 起跳 — Absprung：单脚快速蹬伸、把水平速度转化为远度的关键相，即主相。
-- 腾空相 — Flugphase：起跳后重心沿抛物线飞行，空中只能优化姿态而无法再加速。
-- 身体重心 — Körper-Schwerpunkt (KSP)：跳远中沿抛物线运动的参考点，其轨迹在起跳瞬间即被确定。
-- 起跳角 — Absprungwinkel：起跳时的蹬伸方向角，需"快而平"以保住水平速度，而非一味求陡。
-- 水平/垂直速度 — Horizontal- / Vertikalgeschwindigkeit：起跳瞬间由水平速度转出垂直速度，二者合成决定远度。
+## Schritt 2 — entdecken: 5术语装备盒
 
-Klausur-Satz: `Der Körperschwerpunkt bewegt sich nach dem Absprung auf einer festgelegten Parabel, sodass die Weite im Absprung weitgehend bestimmt wird.`
+PRETRAINING术语盒(核心5词,先读三遍中德,合书自测中文→德语):
 
-## Schritt 3 — entdecken
+中文在上,德语在下:
 
-ENTDECKEN（1概念 + 1文字图解）：
+- 起跳 — Absprung:单脚快速蹬伸、把水平速度转为远度的主相 / einbeiniger schneller Abdruck, Hauptphase der Weitenumsetzung。
+- 起跳角 — Absprungwinkel:蹬伸方向与水平面夹角,快而平最优 / Abdruckrichtung, flach und schnell traegt am weitesten。
+- 身体重心 — Koerper-Schwerpunkt (KSP):沿抛物线飞行的参考点,离板瞬间已定 / Referenzpunkt der Parabel, beim Verlassen des Bretts fixiert。
+- 水平/垂直速度 — Horizontal-/Vertikalgeschwindigkeit:起跳把部分水平速度转为垂直速度 / aus v_h erzeugte Komponente v_v, Summe bestimmt die Weite。
+- 腾空与落地 — Flug und Landung:只能优化姿态与前伸兑现远度 / nur Haltung und Vorturnen sichern die vorhandene Weite。
 
-中文：跳远的成绩几乎在起跳那一瞬间就定了。助跑带来的是水平速度，起跳要做的不是"往上蹦"，而是"快而平"地把水平速度部分转成垂直速度——两者合成一个速度矢量，决定身体重心（KSP）飞出的抛物线。起跳角一味求陡，反而会吃掉水平速度，让远度下降；因此关键在于"快速触板、充分蹬伸、摆动腿前摆"。起跳之后，KSP 的抛物线已经固定，空中无法再"加速"，腾空步只能做两件事：保持平衡（步式或挺髋技术）和为落地做准备。所以优化顺序永远是：先把 Anlauf 的速度和 Absprung 的转换做好，再用 Flug 与 Landung 把已有的远度"兑现"出来。
+`Klausur-Satz: Die fuenf Begriffe tragen Diagnose, Sandkasten und Urteil als gemeinsame Sprache.`
 
-文字图解（ASCII 结构图，App支持解析渲染）：
+## Schritt 3 — entdecken: 生理/音乐机制传导
+
+ENTDECKEN(1概念 + 1文字图解,中文在上、德语在下):
+
+中文:助跑攒水平速度,起跳快而平地部分转为垂直速度,合成矢量定下重心抛物线;离板后抛物线已定,腾空只能摆姿态、落地只能前伸兑现。起跳角求陡会吃掉水平速度,远度反降。
+
+Mechanismus (DE): Der Anlauf sichert v_h, der flache schnelle Absprung setzt einen Teil in v_v um; die Resultierende fixiert die KSP-Parabel. Nach dem Brett ist die Bahn fest, Flug und Landung nutzen sie nur noch.
+
+战役传导:本关承接冲量角逐、乳酸阈值与主导动机三幕,测得出才能说得清,说得清才能赢下来。
 
 ```diagram
-   Weitsprung: Absprung = Hauptphase (v -> Weite)
-   Anlauf (horizontal)        Absprung (Vektorzerlegung)
-   ------>  v_h                  \
-                                  \  v (Resultierende)
-                             v_v   \
-                                   \ |
-                                    \|____  v_h bleibt moeglichst gross
-   -> flacher, schneller Absprung schlaegt steiles Springen
-
-   KSP-Bahn NACH dem Absprung = Parabel (fix!)
-   Flug:   nur Haltung optimierbar (Schritt-Technik / Hueftstreckung)
-   Landung: Beine nach vorn, Knie beugen, kein Rueckfallen
-
-   Kette:  Anlauf-Geschwindigkeit  ->  Absprung-Umsetzung  ->  Flug-Haltung  ->  Landung
-           (Vorbereitung)              (Hauptphase)          (Endphase vorn)   (Endphase hinten)
+Kampagne [Impuls -> Schwelle -> Leitmotiv]
+Holphase [sichern] -> Pruefphase [Absprungwinkel 19 Grad, Anlauf 9,2 m/s, Zielweite 7,80 m] -> Zielphase [nutzen]
+Regel: Fehler frueh = Grenze | Fehler spaet = Ausnutzung
 ```
 
-> **判据 / 决策点**：错误在离板之前（助跑、起跳角）→ 影响远度上限，走起跳优化；错误在离板之后（姿态、落地）→ 只影响兑现，走腾空优化。
->
-> **Redemittel（口述句）**：`Ich gliedere den Sprung in vier Phasen und bestimme den Absprung als Hauptphase.`
-
-Klausur-Satz: `Ein zu steiler Absprungwinkel verringert die horizontale Geschwindigkeit, während ein flacher, schneller Absprung die Flugkurve des Körperschwerpunkts am besten trägt.`
+`Klausur-Satz: Der Mechanismus trennt Grenze von Ausnutzung und ordnet jeden Fehler seiner Phase zu.`
 
 ## Anekdote & Fun-Fact
 
@@ -79,53 +71,50 @@ Klausur-Satz: `Ein zu steiler Absprungwinkel verringert die horizontale Geschwin
 
 **Bezug zum Konzept**: `Beamons Weite entstand aus Anlaufgeschwindigkeit und Absprung; die Flugphase konnte sie nur nutzen, nicht erzeugen.`
 
-## Schritt 4 — ausprobieren
+## Schritt 4 — ausprobieren: 沙盘决战 Absprungwinkel 19 Grad
 
-BEISPIEL（正确例题示范，含教具操作与解答）：
+BEISPIEL(含教具操作与解答):
 
-[Werkzeug: tangent]
+[Werkzeug: formula]
 
-AUFGABE (analysieren, AFB II)：Ein Sportler bremst kurz vor dem Absprungbrett ab und springt danach sehr steil nach oben. Analysieren Sie diesen Fehler biomechanisch und begründen Sie, warum die Weite gering bleibt.
+AUFGABE (analysieren, AFB II):Absprungwinkel-Regler: flach (19 Grad) gegen steil (30 Grad) bei v_h = 9,2 m/s; lies Weite und KSP-Parabel ab;达标线:Absprungwinkel 19 Grad, Anlauf 9,2 m/s, Zielweite 7,80 m。
+
+Target数值目标:Absprungwinkel 19 Grad, Anlauf 9,2 m/s, Zielweite 7,80 m。
 
 HILFE:
-1. Schritt 1: Bestimme die Phase und benenne das Fehlerbild (Geschwindigkeitsverlust durch Stemmen).
-2. Schritt 2: Erkläre die Folge für die horizontale Geschwindigkeit v_h.
-3. Schritt 3: Erkläre, wie ein zu steiler Absprungwinkel die Umsetzung in Weite verschlechtert.
-4. Schritt 4: Leite aus der fixierten KSP-Parabel ab, warum die Weite nicht mehr korrigierbar ist, und gib eine Korrektur an.
+1. 定相命名:先说相位与错误画像,对照目标Absprungwinkel 19 Grad。
+2. 读数释义:读出测量值,用一个术语解释效应。
+3. 推纠正:从机制推出一条可操作纠正。
 
-MUSTERLÖSUNG: Das Abbremsen vor dem Brett gehört zum Absprung als Hauptphase und stellt das Fehlerbild des Geschwindigkeitsverlusts durch Stemmen dar. Durch das Abbremsen sinkt die horizontale Geschwindigkeit v_h, die die eigentliche Weitenquelle ist. Der anschließende steile Absprung wandelt zusätzlich einen zu großen Anteil der verbliebenen Geschwindigkeit in vertikale Richtung um, sodass v_h weiter abnimmt und der Körperschwerpunkt zwar hoch, aber nicht weit fliegt. Da die Parabel des Körperschwerpunkts im Moment des Absprungs festgelegt wird, kann die verlorene Weite in der Luft nicht mehr ausgeglichen werden. Die Korrektur besteht in einem rhythmischen Anlauf mit Markierungen und einem kurzen Anlauf zum Üben, damit der Sportler schnell und flach über das Brett kommt.
+MUSTERLÖSUNG:对照目标(Absprungwinkel 19 Grad, Anlauf 9,2 m/s, Zielweite 7,80 m),先定相命名错误画像,再读数并以术语释效应,最后从机制推纠正;在Berliner Olympiastadion, Weitsprung-Finale der Schulmeisterschaft中形成 保障—转化—兑现 的完整因果链,达标即过关。
 
-Klausur-Satz: `Geschwindigkeitsverlust durch Stemmen senkt die horizontale Ausgangsgeschwindigkeit und verkürzt damit die im Absprung fixierte Flugparabel.`
+`Klausur-Satz: Am Target zeigt sich, ob Grenze oder Ausnutzung ueber das Ergebnis entschied.`
 
-## Schritt 5 — ausprobieren
+## Schritt 5 — ausprobieren: VERGLEICH技术对抗 Absprung-Optimierung vs Flug-/Landungs-Optimierung
 
-VERGLEICH辨别实验（双向辨析：起跳优化眼 vs. 腾空优化眼），并做口述解释：
+VERGLEICH辨别实验(双向辨析,先选程序再解题):【选程序】
 
-VERGLEICH: Wähle erst das Verfahren — 【选程序】先判断题目问的是 (i) Absprung-Optimierung（起跳：保住水平速度、控制起跳角、快速蹬伸，决定远度上限）还是 (ii) Flug-/Landungs-Optimierung（腾空与落地：保持平衡、前伸落地，只能"兑现"已定的远度）—— dann lösen.
+VERGLEICH:先选程序—— (i) Absprung-Optimierung 还是 (ii) Flug-/Landungs-Optimierung ——再解题。WegA讲上限/结构,WegB讲兑现/情境。【选程序:问上限与结构选(i),问兑现与情境选(ii)。口述先说 Ich waehle Verfahren (i)/(ii), weil …】
 
-AUFGABE A：Ein Sportler verliert im Anlauf Tempo und springt zu steil. Welches Verfahren ist zu wählen, und wie ist zu argumentieren?
+AUFGABE A (Absprung-Optimierung):在Berliner Olympiastadion, Weitsprung-Finale der Schulmeisterschaft的首个案例中选哪条路,如何论证?
 
-AUFGABE B：Ein Sportler springt gut ab, zieht aber in der Luft die Beine zu früh an und landet mit dem Gesäß zuerst. Welches Verfahren ist zu wählen, und wie ist zu argumentieren?
+AUFGABE B (Flug-/Landungs-Optimierung):在对立案例中选哪条路,如何论证?
 
-HILFE: A 涉及水平速度丢失与起跳角，属于远度上限的问题 → 程序 (i)。B 中起跳已好，问题出在空中的姿态与落地前伸，属于"兑现"环节 → 程序 (ii)。【选程序：问题在助跑/起跳（速度与角度）= 起跳程序；问题在腾空姿态/落地 = 腾空程序。口述时先说 `Ich wähle Verfahren (i)/(ii), weil …`】
+HILFE:A问上限属于程序(i);B问兑现属于程序(ii)。先说选哪条路,再给测量/情境证据。
 
-ANTWORT: A erfordert Verfahren (i): Der Fehler liegt im Absprung — durch Abbremsen und zu steilen Winkel sinkt v_h, die Flugparabel wird kürzer; die Korrektur setzt am Anlaufrhythmus und an einem flachen, schnellen Absprung an. B erfordert Verfahren (ii): Da der Absprung gelungen ist, ist die KSP-Parabel bereits fixiert; das frühe Anziehen der Beine und die falsche Landung verschlechtern nur die Ausnutzung. Mündlich formuliere ich: `Die Flugbahn des KSP steht nach dem Absprung fest; deshalb optimiere ich im Flug nur die Haltung und strecke die Beine bei der Landung aktiv nach vorn, damit die vorhandene Weite voll genutzt wird.`
+ANTWORT:A走程序(i)Absprung-Optimierung,以测量值与机制论证上限;B走程序(ii)Flug-/Landungs-Optimierung,以情境与位置论证兑现。德语口述句收束。
 
-> **口述提示**：先定位错误发生的相位，再判断它影响的是"远度上限"还是"远度兑现"，最后给出针对性纠正。
->
-> **Redemittel（口述句）**：`Die Flugbahn des KSP steht nach dem Absprung fest; deshalb optimiere ich nur die Haltung und die Landung.`
+`Klausur-Satz: Verfahren (i) setzt die Grenze, Verfahren (ii) nutzt die Lage; die Wahl traegt das Urteil.`
 
-Klausur-Satz: `Der Absprung bestimmt die Flugparabel, während Flug und Landung nur darüber entscheiden, wie gut die bereits bestimmte Weite genutzt wird.`
+## Schritt 6 — check: Selbsttest zu Biomechanische Optimierung des Weitsprungs: Absprung und Flug
 
-## Schritt 6 — check
+CHECK检索默写(自测3题,与答案配对):
 
-CHECK检索默写（自测 3 题，与答案配对）：
+FRAGE:如何在赛事中认出本课核心? | ANTWORT:看数值目标(Absprungwinkel 19 Grad)与S3机制。
+FRAGE:如何达标? | ANTWORT:测量、术语释义、从机制推纠正三步。
+FRAGE:何时选程序(i)而非(ii)? | ANTWORT:问上限选(i),问兑现选(ii)。
 
-FRAGE: Warum ist der Absprung die Hauptphase des Weitsprungs? | ANTWORT: Weil dort die Anlaufgeschwindigkeit in die Flugkurve des Körperschwerpunkts umgesetzt wird und damit die Weite weitgehend festgelegt ist.
-FRAGE: Warum ist ein zu steiler Absprungwinkel nachteilig? | ANTWORT: Er wandelt zu viel horizontale in vertikale Geschwindigkeit um, wodurch die entscheidende horizontale Geschwindigkeit und damit die Weite sinken.
-FRAGE: Was kann der Sportler während der Flugphase noch optimieren? | ANTWORT: Nur die Körperhaltung und die Vorbereitung der Landung, da die Parabel des Körperschwerpunkts bereits fixiert ist.
-
-Klausur-Satz: `Die Weite wird im Absprung bestimmt; in der Luft lässt sich nur die Haltung und die Landung optimieren, nicht die Flugkurve selbst.`
+`Klausur-Satz: Selbsttest bestanden heisst Target lesen, Verfahren waehlen und Urteil begruenden.`
 
 ## Fehlvorstellung
 
@@ -139,22 +128,18 @@ Klausur-Satz: `Die Weite wird im Absprung bestimmt; in der Luft lässt sich nur 
    中文纠偏：不可能。身体重心的抛物线在离板瞬间就已确定，空中没有任何着力点可以再加速。腾空步只能保持平衡、优化姿态，落地时把双腿主动前伸，才能把已定的远度兑现出来。把希望寄托在"空中补一下"，是典型的力学误判。
    Korrektur-Satz: `Nach dem Absprung ist die Bahn des Körperschwerpunkts festgelegt; in der Luft kann nur noch die Haltung und die Landung optimiert werden.`
 
-## Schritt 7 — szenario
+## Schritt 7 — szenario: Klausurtransfer: Biomechanische Optimierung des Weitsprungs: Absprung und Flug — Olympia-Coach im Weitsprung-Finale
+中文:你是Olympia-Coach im Weitsprung-Finale,在Berliner Olympiastadion, Weitsprung-Finale der Schulmeisterschaft中必须用德语连贯口述(约90秒)诊断、措施与数值目标(Absprungwinkel 19 Grad, Anlauf 9,2 m/s, Zielweite 7,80 m),并以术语举证。
+ROLLE: Du bist Olympia-Coach im Weitsprung-Finale. SITUATION: In Berliner Olympiastadion, Weitsprung-Finale der Schulmeisterschaft stellst du Diagnose, Massnahme und Target (Absprungwinkel 19 Grad, Anlauf 9,2 m/s, Zielweite 7,80 m) in ca. 90 Sekunden vor.
+RUBRIC (30 XP):诊断术语8分 | 措施与目标举证10分 | 程序选择对比7分 | 德语表达5分。
 
-ROLLE: Du bist Prüfling in einer mündlichen Sportprüfung und sollst eine Weitsprung-Analyse vorstellen.
-SITUATION: Der Prüfer zeigt dir die Videoaufnahme eines Mitschülers: Der Sportler bremst vor dem Brett ab, springt sehr steil ab und landet mit dem Gesäß zuerst. Erkläre mündlich in zusammenhängenden deutschen Sätzen (ca. 2 Minuten) die biomechanischen Ursachen des geringen Ergebnisses, ordne die Fehler den Phasen zu und schlage je eine konkrete Korrektur vor.
-RUBRIC (30 XP): Gliederung des Weitsprungs in Phasen mit Benennung der Hauptphase (5 XP) | Biomechanische Analyse des Absprungs (v_h, Absprungwinkel, fixierte KSP-Parabel) (10 XP) | Analyse der Flug- und Landungsfehler mit Hinweis auf die festgelegte Flugbahn (10 XP) | Kriteriengeleitete Korrekturvorschläge mit methodischem Bezug (5 XP).
+## Schritt 8 — reflexion: Takeaway & Reflexion — 奖杯还是进站检修
 
-## Schritt 8 — reflexion: Takeaway & Reflexion
+TAKEAWAY 1盒(核心总结):
 
-TAKEAWAY 1盒（核心总结）：
+中文:上限早锁定、位置晚兑现;数值目标(Absprungwinkel 19 Grad, Anlauf 9,2 m/s, Zielweite 7,80 m)是裁判,程序选择是辩护;本关连着冲量角逐、体能极限与主导动机三幕,测得出、说得清、赢下来。
+Takeaway-Satz: `Wer die Grenze sichert und die Lage nutzt, holt den Pokal.`
 
-中文：跳远的钱在起跳那一秒就付清了。做题第一步先"选程序"：问题出在助跑与起跳（水平速度、起跳角、触板）→ 走起跳程序，因为那决定远度上限；问题出在空中的姿态与落地 → 走腾空程序，因为那只能"兑现"已定的远度。记住两句话：一是起跳要"快而平"，别用求高换掉水平速度；二是重心抛物线离板即定，空中再使劲也补不回来。
-Takeaway-Satz: `Der Absprung legt als Hauptphase die Flugparabel des Körperschwerpunkts fest; ein flacher, schneller Absprung trägt weit, während Flug und Landung nur die bereits bestimmte Weite nutzen.`
-
-> **Merke（一句话锚点）**：助跑拿速度，起跳定远度，腾空保姿态，落地往前伸。
-> 重心抛物线离板即定，空中再使劲也补不回来。
-
-REFLEXION 2问：
-1. 过程自省：Welcher Schritt fiel schwerer — die biomechanische Analyse des Absprungs (Schritt 4) oder die Unterscheidung von Absprung- und Flugoptimierung (Schritt 5)?
-2. 元认知计划：Beim nächsten Mal prüfe ich zuerst, ob der Fehler vor oder nach dem Absprung liegt, und wähle danach das Verfahren, bevor ich Korrekturen vorschlage.
+REFLEXION 2问:
+1. 过程自省:沙盘精度(Schritt 4)与程序选择(Schritt 5)哪一步更难?
+2. 元认知计划:下次先记测量值加相位,因为一切论证都从它长出来。

@@ -15,52 +15,53 @@ version: Lesson-v3
 
 <!-- Lesson v3 9步制架构：Schritt 1至8固定结构；Fehlvorstellung 夹在 Schritt 6 与 7 之间（Parser 自动跳过，不占步数）；支持内嵌 [Werkzeug: <id>] 交互教具；Gating: check/szenario 未过 = Weiter 置灰；XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
-## Schritt 1 — entdecken
+## Schritt 1 — entdecken: Kraftmessplatten-Arena — 赛场警报
 
-ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
+ZIELE (3条,本节15分钟学完能做到——先读中文,再记德语):
 
-1. 中文：能说清初速度原则——身体或器械在主动发力前应先获得反向预加速，拉长加速路能提高终速度。
-2. 中文：能用冲量公式 J = F mal t 解释为何更大的力与更长的加速路都会提高出手速度。
-3. 中文：能以铅球滑步为例，指出预摆、下蹲滑步与最后用力三段如何落实初速度与加速路（AFB II-III）。
+1. 中文:能一句话定义`Biomechanische Prinzipien Anfangskraft`,并定位到本关赛事Kraftmessplatten-Arena, Startblock-Sensorfinale。
+2. 中文:能口述核心机制,并用数值目标(Anfangskraft-Fenster 120 ms, Stuetzzeit unter 0,15 s, Impuls +12 %)举证。
+3. 中文:能诊断一处典型错误,并用德语Klausur-Satz收束(AF B II)。
 
-Klausur-Satz: `Das Prinzip der Anfangskraft besagt, dass eine entgegengesetzte Vorbewegung den Beschleunigungsweg verlaengert und so die Endgeschwindigkeit erhoeht.`
+### Hook 赛场/舞台实况
 
-## Schritt 2 — entdecken
+聚光灯打向Kraftmessplatten-Arena, Startblock-Sensorfinale,这是《冠军竞技场与节拍工坊》战役的下一关:上一集埋下的悬念在此引爆,教练/首席必须在限时内拿出方案。跳跃拼前120毫秒:支撑越短越靠起始力量与发力率,冲量定初速、初速定远度,最大力量要转化为快力量。本关必须过沙盘数值目标,下一集的瓦格纳动机/体能极限/冲量角逐在此埋下伏笔。
 
-PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
+Hook (DE): Im Rampenlicht von Kraftmessplatten-Arena, Startblock-Sensorfinale beginnt unser naechster Akt der Kampagne Champion-Arena und Takt-Werkstatt. Stell dir vor: Zwei Springer mit gleicher Kniebeuge stehen am Brett, doch einer fliegt einen halben Meter weiter. Die Kraftmessplatte verrät das Geheimnis: In den ersten hundertzwanzig Millisekunden baut der Sieger steiler auf. Warum schlaegt Schnelligkeit die reine Kraft? Weil die Stuetzzeit kurz ist und nur schnelle Kraft in Impuls verwandelt wird. Erstens misst die Platte Kraft mal Zeit. Zweitens setzt der Impuls die Abfluggeschwindigkeit. Drittens traegt die Geschwindigkeit die Weite. Wer die ersten Millisekunden gewinnt, gewinnt den Sprung. Heute jagen wir genau diese Millisekunden: messen, steigern und Vorsprung sichern.
 
-中文在上，德语在下：
+`Klausur-Satz: Leitsatz des Themas.`
 
-- 初速度 — Anfangskraft：主动发力前通过反向动作已获得的速度，为主发力创造更长的加速条件。
-- 冲量 — Impuls：Kraft mal Zeit (J = F mal t)，决定速度改变量的核心量。
-- 加速路 — Beschleunigungsweg：发力过程中作用点移动的距离，路越长、终速度越高。
-- 滑步 — Angleitphase：铅球中侧向滑步接最后用力的过渡技术，用来攒速度。
-- 最后用力 — Finale Stossphase：铅球出手前躯干加手臂的集中发力段。
+## Schritt 2 — entdecken: 5术语装备盒
 
-Klausur-Satz: `Der Impuls aus Kraft und Zeit bestimmt zusammen mit dem Beschleunigungsweg die Abstossgeschwindigkeit.`
+PRETRAINING术语盒(核心5词,先读三遍中德,合书自测中文→德语):
 
-## Schritt 3 — entdecken
+中文在上,德语在下:
 
-ENTDECKEN（1概念 + 1文字图解）：
+- 起始力量 — Anfangskraft:发力初120ms的爆发值 / explosiver Kraftwert der ersten 120 ms。
+- 发力率 — Kraftanstieg:单位时间力量增量 / Kraftzuwachs pro Zeit。
+- 冲量 — Kraftstoss:力时曲线下面积 / Flaeche unter der Kraft-Zeit-Kurve。
+- 支撑时间 — Stuetzzeit:触地或触板时长 / Kontaktzeit am Boden oder Brett。
+- 功率 — Leistung:力与速度的乘积 / Produkt aus Kraft und Geschwindigkeit。
 
-中文：初速度原则本质是"先退一步再进"。直接从静止推铅球，加速路只有手臂长度；先下蹲后滑步，身体重心已带着速度滑向投掷方向，相当于出手前已在跑。物理上有两条账：冲量 J = F 乘 t，力大或时间长都加分；动能定理 W = F 乘 s，路长也加分。滑步把 s 拉长，把预加速把 t 的有效段拉长，最后用力再把 F 拉满，三者相乘即成绩。反向预摆（球先往后）不是多余动作，而是给加速留出整段跑道。
+`Klausur-Satz: Die fuenf Begriffe tragen Diagnose, Sandkasten und Urteil als gemeinsame Sprache.`
 
-文字图解（ASCII 结构图，App支持解析渲染）：
+## Schritt 3 — entdecken: 生理/音乐机制传导
+
+ENTDECKEN(1概念 + 1文字图解,中文在上、德语在下):
+
+中文:跳跃拼的是快而大的力:支撑时间越短,越靠前120ms的起始力量与发力率;冲量定初速,初速定远度,力量房练最大力量,跳跃练转化。
+
+Mechanismus (DE): Der Sprung lebt von schneller Kraft: kurze Stuetzzeit verlangt hohe Anfangskraft und steilen Anstieg; der Kraftstoss setzt die Abfluggeschwindigkeit.
+
+战役传导:本关承接冲量角逐、乳酸阈值与主导动机三幕,测得出才能说得清,说得清才能赢下来。
 
 ```diagram
-  ohne Anfangskraft (kurz):
-  Start(0) ----[Arm stoesst]----> Abwurf v klein
-           s = kurz
-
-  mit Anfangskraft (lang):
-  Auftakt rueck -> Absenken -> Angleiten ->
-     v0 > 0 schon da -> Stoss -> Abwurf V gross
-           s = lang (Bein + Rumpf + Arm)
-  Formel: J = F mal t  und  W = F mal s
-  Ziel: F gross + t lang + s lang = v max
+Kampagne [Impuls -> Schwelle -> Leitmotiv]
+Holphase [sichern] -> Pruefphase [Anfangskraft-Fenster 120 ms, Stuetzzeit unter 0,15 s, Impuls +12 %] -> Zielphase [nutzen]
+Regel: Fehler frueh = Grenze | Fehler spaet = Ausnutzung
 ```
 
-Klausur-Satz: `Eine vorbereitende Gegenbewegung schafft Anfangsgeschwindigkeit und verlaengert den Weg der Hauptkraft.`
+`Klausur-Satz: Der Mechanismus trennt Grenze von Ausnutzung und ordnet jeden Fehler seiner Phase zu.`
 
 ## Anekdote & Fun-Fact
 
@@ -70,46 +71,50 @@ Klausur-Satz: `Eine vorbereitende Gegenbewegung schafft Anfangsgeschwindigkeit u
 
 **Bezug zum Konzept**: `Nicht die reine Armkraft entscheidet, sondern die Laenge des vorbereiteten Beschleunigungsweges.`
 
-## Schritt 4 — ausprobieren
+## Schritt 4 — ausprobieren: 沙盘决战 Anfangskraft-Fenster 120 ms
 
-BEISPIEL（正确例题示范，含教具操作与解答）：
+BEISPIEL(含教具操作与解答):
 
-[Werkzeug: kinematik]
+[Werkzeug: formula]
 
-AUFGABE (anwenden, AFB II)：Erklaere am Beispiel des Kugelstoss-Gleitschritts, wie Anfangskraft, Impuls und Beschleunigungsweg die Stossweite bestimmen. Gliedere in Auftakt, Angleiten und finalen Stoss.
+AUFGABE (analysieren, AFB II):Impulsformel Kraft mal Zeit: hebe den 120-ms-Wert bei Stuetzzeit unter 0,15 s um 12 %;达标线:Anfangskraft-Fenster 120 ms, Stuetzzeit unter 0,15 s, Impuls +12 %。
+
+Target数值目标:Anfangskraft-Fenster 120 ms, Stuetzzeit unter 0,15 s, Impuls +12 %。
 
 HILFE:
-1. Schritt 1: Auftakt beschreiben: Kugelabsenkung und Gegenbewegung erzeugen v0 entgegen der Stossrichtung als Ausholweg.
-2. Schritt 2: Angleiten mit Formel deuten: J = F mal t erklaert Beinschub ueber Zeit, s waechst durch Gleitstrecke.
-3. Schritt 3: Finalen Stoss als Addition zeigen: Beinstreckung plus Rumpfdrehung plus Armstreckung nacheinander auf denselben Weg.
+1. 定相命名:先说相位与错误画像,对照目标Anfangskraft-Fenster 120 ms。
+2. 读数释义:读出测量值,用一个术语解释效应。
+3. 推纠正:从机制推出一条可操作纠正。
 
-MUSTERLOESUNG: Auftakt: Die Kugel sinkt mit dem Oberkoerper leicht ab und verlagert das Gewicht nach hinten; so entsteht eine Gegenbewegung mit kleiner Anfangsgeschwindigkeit v0 und ein langer Ausholweg. Angleiten: Der kraeftige Beinabdruck schiebt den Koerper ueber etwa einen Meter nach vorn; nach J = F mal t erzeugt schon mittlere Beinkraft ueber diese Zeit einen grossen Impuls, gleichzeitig waechst der Beschleunigungsweg s fuer die Endphase. Finaler Stoss: Beinstreckung, Hueftdrehung und Armstreckung greifen nacheinander in dieselbe Richtung; nach W = F mal s addiert jeder Abschnitt Arbeit auf demselben langen Weg, sodass die Abfluggeschwindigkeit v deutlich ueber dem reinen Armstoss liegt. Fazit: Wer den Gleitschritt kurz oder zu langsam ausfuehrt, verkuerzt s und t und verschenkt Weite bei gleicher Kraft.
+MUSTERLÖSUNG:对照目标(Anfangskraft-Fenster 120 ms, Stuetzzeit unter 0,15 s, Impuls +12 %),先定相命名错误画像,再读数并以术语释效应,最后从机制推纠正;在Kraftmessplatten-Arena, Startblock-Sensorfinale中形成 保障—转化—兑现 的完整因果链,达标即过关。
 
-Klausur-Satz: `Auftakt und Angleiten liefern v0, Zeit und Weg, der finale Stoss verwandelt sie in maximale Abfluggeschwindigkeit.`
+`Klausur-Satz: Am Target zeigt sich, ob Grenze oder Ausnutzung ueber das Ergebnis entschied.`
 
-## Schritt 5 — ausprobieren
+## Schritt 5 — ausprobieren: VERGLEICH技术对抗 Maximalkraft-Weg vs Schnellkraft-Weg
 
-VERGLEICH辨别实验（双向辨析：发力程序选择）：
+VERGLEICH辨别实验(双向辨析,先选程序再解题):【选程序】
 
-VERGLEICH: Waehle erst das Verfahren — 【选程序】先判断题目考的是 (i) Anfangskraft-Weg（问预摆、滑步、下蹲有何用）还是 (ii) Maximalkraft-Weg（问绝对力量、肌肉截面有何用）—— dann antworten.
+VERGLEICH:先选程序—— (i) Maximalkraft-Weg 还是 (ii) Schnellkraft-Weg ——再解题。WegA讲上限/结构,WegB讲兑现/情境。【选程序:问上限与结构选(i),问兑现与情境选(ii)。口述先说 Ich waehle Verfahren (i)/(ii), weil …】
 
-AUFGABE A：Warum stoesst ein leichter Athlet mit sauberem Gleitschritt weiter als ein staerkerer Athlet aus dem Stand? AUFGABE B：Warum bleibt Krafttraining trotzdem Pflicht im Kugelstossen?
+AUFGABE A (Maximalkraft-Weg):在Kraftmessplatten-Arena, Startblock-Sensorfinale的首个案例中选哪条路,如何论证?
 
-HILFE: A fragt nach Technikvorteil bei kleinerer Kraft -> Verfahren (i), Impuls ueber Zeit und Weg. B fragt nach Kraftbasis -> Verfahren (ii), F in der Formel.【选程序：题干出现 Ausholen / Gleiten / Anlauf / Vorbewegung 选初速度；出现 Muskelquerschnitt / Maximalkraft / Training 选最大力量。】
+AUFGABE B (Schnellkraft-Weg):在对立案例中选哪条路,如何论证?
 
-ANTWORT: A erfordert Verfahren (i): Der leichtere Athlet nutzt v0 plus langes s und langes t, sein Impuls J = F mal t und seine Arbeit W = F mal s uebertreffen den kurzen Armstoss des Staerkeren. B erfordert Verfahren (ii): Ohne hohes F bleibt das Produkt trotz langem Weg klein; Krafttraining hebt das Niveau, Technik holt es ab. Bestleistung braucht beides in der Reihenfolge Technikweg plus Kraftniveau.
+HILFE:A问上限属于程序(i);B问兑现属于程序(ii)。先说选哪条路,再给测量/情境证据。
 
-Klausur-Satz: `Technik verlaengert Zeit und Weg des Impulses, Kraft erhoeht seinen Ausgangswert.`
+ANTWORT:A走程序(i)Maximalkraft-Weg,以测量值与机制论证上限;B走程序(ii)Schnellkraft-Weg,以情境与位置论证兑现。德语口述句收束。
 
-## Schritt 6 — check
+`Klausur-Satz: Verfahren (i) setzt die Grenze, Verfahren (ii) nutzt die Lage; die Wahl traegt das Urteil.`
 
-CHECK检索默写（自测 3 题，与答案配对）：
+## Schritt 6 — check: Selbsttest zu Biomechanische Prinzipien Anfangskraft
 
-FRAGE: Was besagt das Prinzip der Anfangskraft in einem Satz? | ANTWORT: Eine Gegenbewegung vor der Hauptbewegung erzeugt Anfangsgeschwindigkeit und verlaengert den Beschleunigungsweg.
-FRAGE: Wie haengen Impuls, Kraft, Zeit und Weg mit der Weite zusammen? | ANTWORT: J = F mal t bestimmt die Geschwindigkeitsaenderung, W = F mal s die zugefuehrte Energie; beide wachsen mit der Stossweite.
-FRAGE: Welche drei Phasen des Gleitschritts gehoeren in die Klausurantwort? | ANTWORT: Auftakt mit Absenken, Angleiten mit Beinschub, finaler Stoss mit Bein, Rumpf und Arm.
+CHECK检索默写(自测3题,与答案配对):
 
-Klausur-Satz: `Die Stossweite waechst mit Kraft, Beschleunigungszeit und Beschleunigungsweg.`
+FRAGE:如何在赛事中认出本课核心? | ANTWORT:看数值目标(Anfangskraft-Fenster 120 ms)与S3机制。
+FRAGE:如何达标? | ANTWORT:测量、术语释义、从机制推纠正三步。
+FRAGE:何时选程序(i)而非(ii)? | ANTWORT:问上限选(i),问兑现选(ii)。
+
+`Klausur-Satz: Selbsttest bestanden heisst Target lesen, Verfahren waehlen und Urteil begruenden.`
 
 ## Fehlvorstellung
 
@@ -122,20 +127,18 @@ Klausur-Satz: `Die Stossweite waechst mit Kraft, Beschleunigungszeit und Beschle
    中文纠偏：腿提供初速度和大半冲量，手臂只收尾。只练手臂等于只用跑道最后十米起飞。
    Korrektur-Satz: `Bein und Rumpf erzeugen den Hauptimpuls, der Arm vollendet nur die finale Streckung.`
 
-## Schritt 7 — szenario
+## Schritt 7 — szenario: Klausurtransfer: Biomechanische Prinzipien Anfangskraft — Biomechanik-Coach an der Kraftmessplatte
+中文:你是Biomechanik-Coach an der Kraftmessplatte,在Kraftmessplatten-Arena, Startblock-Sensorfinale中必须用德语连贯口述(约90秒)诊断、措施与数值目标(Anfangskraft-Fenster 120 ms, Stuetzzeit unter 0,15 s, Impuls +12 %),并以术语举证。
+ROLLE: Du bist Biomechanik-Coach an der Kraftmessplatte. SITUATION: In Kraftmessplatten-Arena, Startblock-Sensorfinale stellst du Diagnose, Massnahme und Target (Anfangskraft-Fenster 120 ms, Stuetzzeit unter 0,15 s, Impuls +12 %) in ca. 90 Sekunden vor.
+RUBRIC (30 XP):诊断术语8分 | 措施与目标举证10分 | 程序选择对比7分 | 德语表达5分。
 
-ROLLE: Du bist Sporthelferin in der EF und analysierst ein Handyvideo vom Kugelstossen.
-SITUATION: Ein Mitschueler stoesst aus dem Stand recht weit, doch mit Gleitschritt landet die Kugel kaum weiter vorn. Er will das Gleiten schon aufgeben.
-AUFGABE: Schreibe eine zusammenhaengende Beratung (ca. 150 Woerter), in der du sein Video anhand von Anfangskraft, Impuls und Beschleunigungsweg deutest und zwei konkrete Korrekturen fuer Auftakt und Angleit-Tempo gibst.
-RUBRIC (30 XP): Deutung mit J = F mal t und Weg (10 XP) | Zwei Fehler in Auftakt und Tempo benannt (10 XP) | Zwei umsetzbare Korrekturen mit Zielwert (10 XP).
+## Schritt 8 — reflexion: Takeaway & Reflexion — 奖杯还是进站检修
 
-## Schritt 8 — reflexion: Takeaway & Reflexion
+TAKEAWAY 1盒(核心总结):
 
-TAKEAWAY 1盒（核心总结）：
+中文:上限早锁定、位置晚兑现;数值目标(Anfangskraft-Fenster 120 ms, Stuetzzeit unter 0,15 s, Impuls +12 %)是裁判,程序选择是辩护;本关连着冲量角逐、体能极限与主导动机三幕,测得出、说得清、赢下来。
+Takeaway-Satz: `Wer die Grenze sichert und die Lage nutzt, holt den Pokal.`
 
-中文：初速度就是"先往后、再往前"。公式只记两个：J = F 乘 t，W = F 乘 s。铅球三段背熟：预摆攒跑道、滑步攒时间、最后用力堆力量。答题先写定义，再套三段，最后用公式点评快慢长短。
-Takeaway-Satz: `Gegenbewegung schafft v0, Gleiten schafft Zeit und Weg, der Stoss nutzt beides in maximale Weite um.`
-
-REFLEXION 2问：
-1. 过程自省：Welcher Schritt fiel schwerer — die Formelanwendung mit J = F mal t (Schritt 4) oder die Abgrenzung zu Maximalkraft (Schritt 5)?
-2. 元认知计划：Beim naechsten Mal skizziere ich zuerst den Weg der Kugel und trage dann Kraft, Zeit und Weg an jeder Phase ein.
+REFLEXION 2问:
+1. 过程自省:沙盘精度(Schritt 4)与程序选择(Schritt 5)哪一步更难?
+2. 元认知计划:下次先记测量值加相位,因为一切论证都从它长出来。

@@ -15,63 +15,53 @@ version: Lesson-v3
 
 <!-- Lesson v3 9步制架构：Schritt 1至8固定结构；Fehlvorstellung 夹在 Schritt 6 与 7 之间（Parser 自动跳过，不占步数）；支持内嵌 [Werkzeug: <id>] 交互教具；Gating: check/szenario 未过 = Weiter 置灰；XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
-## Schritt 1 — entdecken
+## Schritt 1 — entdecken: Alpen-Berglauf — 赛场警报
 
-ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
+ZIELE (3条,本节15分钟学完能做到——先读中文,再记德语):
 
-1. 中文：能画出并读出超量恢复曲线（Belastung → Ermüdung → Erholung → Superkompensation → Rückkehr），并判断下一次负荷应落在哪一段。
-2. 中文：能说清三种再刺激时机的后果——过早（恢复不足）→ Übertraining，恰好（超量恢复期）→ 成绩提高，过晚（已回落）→ 停滞。
-3. 中文：能用训练原则（负荷—恢复最优关系、渐进超负荷、变化、持续、个体化等）评判一份耐力训练计划，并给出可操作的改进。
+1. 中文:能一句话定义`Superkompensation und die Prinzipien des Ausdauertrainings`,并定位到本关赛事Alpen-Berglauf, Intervall-Gipfel 4x1000 m。
+2. 中文:能口述核心机制,并用数值目标(4x1000 m in 3:20 min, Pause 3 min, 90-Sekunden-Wochenplan)举证。
+3. 中文:能诊断一处典型错误,并用德语Klausur-Satz收束(AF B II)。
 
-Klausur-Satz: `Nach einer Belastung sinkt die Leistungsfähigkeit zunächst, steigt in der Erholung über das Ausgangsniveau (Superkompensation) und fällt danach wieder auf dieses zurück.`
+### Hook 赛场/舞台实况
 
-## Schritt 2 — entdecken
+聚光灯打向Alpen-Berglauf, Intervall-Gipfel 4x1000 m,这是《冠军竞技场与节拍工坊》战役的下一关:上一集埋下的悬念在此引爆,教练/首席必须在限时内拿出方案。耐力等于底子加阈值:持续法铺毛细血管,间歇法抬无氧阈,阈值跑练巡航,周增量不超10%。本关必须过沙盘数值目标,下一集的瓦格纳动机/体能极限/冲量角逐在此埋下伏笔。
 
-PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
+Hook (DE): Im Rampenlicht von Alpen-Berglauf, Intervall-Gipfel 4x1000 m beginnt unser naechster Akt der Kampagne Champion-Arena und Takt-Werkstatt. Stell dir vor: Kilometer dreissig, die Beine schwer, und der Marathon entscheidet sich zwischen denen, die ihre Basis gebaut, und denen, die nur Tempo gejagt haben. Was traegt durch die Mauer? Eine breite aerobe Basis plus eine hochgeschobene Schwelle. Erstens legen Dauerlaeufe Kapillaren und Kraftwerke. Zweitens heben Intervalle die Schwelle. Drittens schuetzt die Zehn-Prozent-Regel vor Uebermass. Wer Basis und Spitze balanciert, laechelt im Ziel. Heute schmieden wir genau diesen Plan: bauen, reizen und Zielzeit sichern.
 
-中文在上，德语在下：
+`Klausur-Satz: Leitsatz des Themas.`
 
-- 超量恢复 — Superkompensation：负荷后恢复期超过原有水平的现象，是训练有效的生理机制。
-- 负荷 — Belastung：施加的训练刺激，是曲线的起点，强度越高恢复所需时间越长。
-- 疲劳 — Ermüdung：负荷后成绩暂时下降，是曲线的谷底。
-- 过度训练 — Übertraining：恢复不足却反复负荷，导致成绩持续下降。
-- 负荷—恢复最优关系 — optimale Relation von Belastung und Erholung：要求下一次刺激恰好落在超量恢复期的训练原则。
+## Schritt 2 — entdecken: 5术语装备盒
 
-Klausur-Satz: `Der nächste Trainingsreiz muss in die Phase der Superkompensation fallen; sonst stagniert die Leistung oder es kommt zum Übertraining.`
+PRETRAINING术语盒(核心5词,先读三遍中德,合书自测中文→德语):
 
-## Schritt 3 — entdecken
+中文在上,德语在下:
 
-ENTDECKEN（1概念 + 1文字图解）：
+- 最大摄氧量 — maximale Sauerstoffaufnahme:有氧上限,ml/kg/min / aerobe Obergrenze in ml/kg/min。
+- 持续法 — Dauermethode:长时间低强度打底 / lange niedrige Dauerbelastung。
+- 间歇法 — Intervallmethode:练休交替提阈值 / Wechsel aus Belastung und Pause。
+- 阈值跑 — Schwellentraining:无氧阈附近巡航 / Schwimmen an der anaeroben Schwelle。
+- 恢复跑 — Regenerationslauf:低强度促恢复 / lockere Foerderung der Erholung。
 
-中文：训练为什么有效？因为身体会"超额补偿"。施加一次负荷，成绩先下降（疲劳），再回升到原水平（恢复），然后冲过原水平形成一个高峰（超量恢复），最后又回落到原水平。关键就在时机：下一次负荷必须落在超量恢复这一段，成绩才能一站一站地往上走。练得太早，身体还没恢复，疲劳累积，就会过度训练（Übertraining）；练得太晚，超量恢复已经回落，只能原地踏步（Stagnation）。负荷强度还决定恢复时长——强度越高，恢复越慢：低强度有氧几乎每天可练，而最大力量训练往往需要 48–72 小时。这套机制同时是"负荷—恢复最优关系"与"持续性"两条训练原则的生理依据。
+`Klausur-Satz: Die fuenf Begriffe tragen Diagnose, Sandkasten und Urteil als gemeinsame Sprache.`
 
-文字图解（ASCII 结构图，App支持解析渲染）：
+## Schritt 3 — entdecken: 生理/音乐机制传导
+
+ENTDECKEN(1概念 + 1文字图解,中文在上、德语在下):
+
+中文:耐力=底子+阈值:持续法铺毛细血管与线粒体,间歇法抬无氧阈,阈值跑练巡航,恢复跑排废;周增量不超10%。
+
+Mechanismus (DE): Ausdauer baut Basis und Schwelle: Dauer legt Kapillaren und Mitochondrien, Intervalle heben die Schwelle, der Umfang waechst unter zehn Prozent.
+
+战役传导:本关承接冲量角逐、乳酸阈值与主导动机三幕,测得出才能说得清,说得清才能赢下来。
 
 ```diagram
-   Leistungsfaehigkeit
-      |                          ___  <- Superkompensation
-      |                         /   \
-      |  ----------------------/-----\---- Ausgangsniveau
-      |            /\         /       \
-      |   /\      /  \       /         \
-      |  /  \    /    \     /           \
-      | /    \  /      \   /             \
-      |/      \/        \_/               v
-      +---------------------------------------> Zeit
-      Belastung  Ermuedung  Erholung   Rueckkehr
-        (Reiz)    (Tal)     (Anstieg)   (Abfall)
-
-   Naechster Reiz MUSS in die Superkompensationsphase fallen!
-   zu frueh  -> Uebertraining
-   genau     -> Leistungssteigerung
-   zu spaet  -> Stagnation
+Kampagne [Impuls -> Schwelle -> Leitmotiv]
+Holphase [sichern] -> Pruefphase [4x1000 m in 3:20 min, Pause 3 min, 90-Sekunden-Wochenplan] -> Zielphase [nutzen]
+Regel: Fehler frueh = Grenze | Fehler spaet = Ausnutzung
 ```
 
-> **判据 / 决策点**：判断再刺激时机时，先问"第二次负荷落在曲线的哪一段"——Ermüdung 是过度训练，Superkompensation 是提升，Rückkehr 是停滞。
->
-> **Redemittel（口述句）**：`Ich zeichne die Kurve und prüfe, in welche Phase der nächste Reiz fällt.`
-
-Klausur-Satz: `Das Superkompensationsmodell begründet das Prinzip der optimalen Relation von Belastung und Erholung.`
+`Klausur-Satz: Der Mechanismus trennt Grenze von Ausnutzung und ordnet jeden Fehler seiner Phase zu.`
 
 ## Anekdote & Fun-Fact
 
@@ -81,53 +71,50 @@ Klausur-Satz: `Das Superkompensationsmodell begründet das Prinzip der optimalen
 
 **Bezug zum Konzept**: `Zátopeks Intervalltraining zeigt praktisch, dass der nächste Reiz in die Phase der Superkompensation fallen muss.`
 
-## Schritt 4 — ausprobieren
+## Schritt 4 — ausprobieren: 沙盘决战 4x1000 m in 3:20 min
 
-BEISPIEL（正确例题示范，含教具操作与解答）：
+BEISPIEL(含教具操作与解答):
 
-[Werkzeug: formula]
+[Werkzeug: oral-timer]
 
-AUFGABE (erklären, AFB II)：Ein Sportler absolviert an sieben Tagen pro Woche dasselbe intensive Krafttraining. Nach zwei Wochen ist seine Leistung gesunken. Erklären Sie dieses Ergebnis mit dem Superkompensationsmodell und geben Sie eine Verbesserung an.
+AUFGABE (analysieren, AFB II):90-Sekunden-Wochenplan gegen den Timer: lege 4x1000 m in 3:20 min mit Pause 3 min fest;达标线:4x1000 m in 3:20 min, Pause 3 min, 90-Sekunden-Wochenplan。
+
+Target数值目标:4x1000 m in 3:20 min, Pause 3 min, 90-Sekunden-Wochenplan。
 
 HILFE:
-1. Schritt 1: Bestimme, wo der jeweils nächste Trainingsreiz auf der Kurve liegt (Belastung, Ermüdung, Erholung oder Superkompensation).
-2. Schritt 2: Erkläre mit der Kurve, warum kein neuer Höchststand entstehen kann.
-3. Schritt 3: Benenne die Folge (Übertraining).
-4. Schritt 4: Gib eine konkrete Verbesserung mit Angabe von Frequenz und Erholung.
+1. 定相命名:先说相位与错误画像,对照目标4x1000 m in 3:20 min。
+2. 读数释义:读出测量值,用一个术语解释效应。
+3. 推纠正:从机制推出一条可操作纠正。
 
-MUSTERLÖSUNG: Bei täglichem intensiven Krafttraining fällt der nächste Reiz immer wieder in die Phase der Ermüdung, weil zwischen den Einheiten keine ausreichende Erholung liegt. Da die Leistungsfähigkeit nie über das Ausgangsniveau steigen kann, kommt es zu einer Kumulation der Ermüdung. Das Ergebnis ist ein Übertraining, bei dem die Leistung nicht steigt, sondern sinkt. Eine Verbesserung bestünde darin, Ruhetage einzufügen und die Reizhäufigkeit zu senken, sodass der nächste Reiz genau in die Phase der Superkompensation fällt. Damit entspricht der Plan wieder dem Prinzip der optimalen Relation von Belastung und Erholung sowie dem Prinzip der progressiven Belastungssteigerung.
+MUSTERLÖSUNG:对照目标(4x1000 m in 3:20 min, Pause 3 min, 90-Sekunden-Wochenplan),先定相命名错误画像,再读数并以术语释效应,最后从机制推纠正;在Alpen-Berglauf, Intervall-Gipfel 4x1000 m中形成 保障—转化—兑现 的完整因果链,达标即过关。
 
-Klausur-Satz: `Fällt der nächste Reiz stets in die Ermüdungsphase, so entsteht kein Superkompensationseffekt, sondern ein Übertraining mit sinkender Leistung.`
+`Klausur-Satz: Am Target zeigt sich, ob Grenze oder Ausnutzung ueber das Ergebnis entschied.`
 
-## Schritt 5 — ausprobieren
+## Schritt 5 — ausprobieren: VERGLEICH技术对抗 Dauer-Weg vs Tempo-Weg
 
-VERGLEICH辨别实验（双向辨析：生理机制眼 vs. 原则检查眼），并做口述解释：
+VERGLEICH辨别实验(双向辨析,先选程序再解题):【选程序】
 
-VERGLEICH: Wähle erst das Verfahren — 【选程序】先判断题目问的是 (i) Superkompensations-Verfahren（把训练间隔画到曲线上，判断第二次负荷落在 Ermüdung / Superkompensation / Rückkehr 哪一段，再下结论）还是 (ii) Prinzipien-Verfahren（用训练原则清单逐条检查计划，找出被违反的原则并给改进）—— dann lösen.
+VERGLEICH:先选程序—— (i) Dauer-Weg 还是 (ii) Tempo-Weg ——再解题。WegA讲上限/结构,WegB讲兑现/情境。【选程序:问上限与结构选(i),问兑现与情境选(ii)。口述先说 Ich waehle Verfahren (i)/(ii), weil …】
 
-AUFGABE A：Ein Plan sieht vor, dass ein Sportler alle drei Tage eine mittelschwere Ausdauereinheit absolviert. Welches Verfahren ist zu wählen, und wie fällt die Bewertung aus?
+AUFGABE A (Dauer-Weg):在Alpen-Berglauf, Intervall-Gipfel 4x1000 m的首个案例中选哪条路,如何论证?
 
-AUFGABE B：Ein Plan verlangt seit acht Wochen jeden Tag dieselben Übungen mit maximaler Intensität ohne Pausentage. Welches Verfahren ist zu wählen, und wie fällt die Bewertung aus?
+AUFGABE B (Tempo-Weg):在对立案例中选哪条路,如何论证?
 
-HILFE: A 问的是"间隔三天，第二次负荷落在曲线的哪一段"，属于机制判断 → 程序 (i)。B 问的是"这份计划违反了哪些训练原则"，属于原则检查 → 程序 (ii)。【选程序：只判断训练间隔落点 = 超量恢复程序；要逐条找违反的原则 = 原则检查程序。口述时先说 `Ich wähle Verfahren (i)/(ii), weil …`】
+HILFE:A问上限属于程序(i);B问兑现属于程序(ii)。先说选哪条路,再给测量/情境证据。
 
-ANTWORT: A erfordert Verfahren (i): Bei mittlerer Intensität und drei Tagen Abstand fällt der nächste Reiz wahrscheinlich in die Phase der Superkompensation, sodass die Leistung schrittweise steigt — die Planung ist sinnvoll. B erfordert Verfahren (ii): Der Plan verletzt gleich mehrere Prinzipien — die optimale Relation von Belastung und Erholung (keine Pausentage), die Variation (immer dieselben Übungen) und die Individualität (Anfänger mit maximaler Intensität). Mündlich formuliere ich: `Dieser Plan verstößt gegen das Prinzip der Belastung-Erholung, weil ohne Pausentage kein Superkompensationseffekt entstehen kann; ich würde Ruhetage einplanen und die Übungen variieren.`
+ANTWORT:A走程序(i)Dauer-Weg,以测量值与机制论证上限;B走程序(ii)Tempo-Weg,以情境与位置论证兑现。德语口述句收束。
 
-> **口述提示**：先判断题目要"时机"还是"原则"，再分别作答；给改进时务必点名原则名并用 weil 从句。
->
-> **Redemittel（口述句）**：`Dieser Plan verstößt gegen das Prinzip der Belastung-Erholung, weil ohne Pausentage keine Superkompensation entstehen kann.`
+`Klausur-Satz: Verfahren (i) setzt die Grenze, Verfahren (ii) nutzt die Lage; die Wahl traegt das Urteil.`
 
-Klausur-Satz: `Während das Superkompensationsmodell den richtigen Zeitpunkt des Reizes bestimmt, liefert die Prinzipienprüfung die Kriterien für die Beurteilung des gesamten Plans.`
+## Schritt 6 — check: Selbsttest zu Superkompensation und die Prinzipien des Ausdauertrainings
 
-## Schritt 6 — check
+CHECK检索默写(自测3题,与答案配对):
 
-CHECK检索默写（自测 3 题，与答案配对）：
+FRAGE:如何在赛事中认出本课核心? | ANTWORT:看数值目标(4x1000 m in 3:20 min)与S3机制。
+FRAGE:如何达标? | ANTWORT:测量、术语释义、从机制推纠正三步。
+FRAGE:何时选程序(i)而非(ii)? | ANTWORT:问上限选(i),问兑现选(ii)。
 
-FRAGE: Beschreiben Sie den Verlauf der Superkompensation in vier Phasen. | ANTWORT: Belastung, Ermüdung (Absinken), Erholung (Anstieg über das Ausgangsniveau = Superkompensation) und Rückkehr auf das Ausgangsniveau.
-FRAGE: Was geschieht, wenn der nächste Trainingsreiz zu früh gesetzt wird? | ANTWORT: Die Ermüdung kumuliert, es kommt zum Übertraining und die Leistung sinkt.
-FRAGE: Warum braucht hochintensives Training längere Erholungszeiten als lockeres Ausdauertraining? | ANTWORT: Mit steigender Intensität verlängert sich die notwendige Wiederherstellungszeit; deshalb sind bei maximaler Belastung 48 bis 72 Stunden Pause sinnvoll.
-
-Klausur-Satz: `Je höher die Belastungsintensität, desto länger die notwendige Erholungszeit, bis der nächste Reiz in die Superkompensationsphase fallen kann.`
+`Klausur-Satz: Selbsttest bestanden heisst Target lesen, Verfahren waehlen und Urteil begruenden.`
 
 ## Fehlvorstellung
 
@@ -141,19 +128,18 @@ Klausur-Satz: `Je höher die Belastungsintensität, desto länger die notwendige
    中文纠偏：酸痛（Muskelkater）与超量恢复是两个不同概念。酸痛是负荷后的暂时反应，超量恢复是恢复期成绩超过原水平的能力高峰，两者不在同一点上。把酸痛当成绩提升的标志，会误导训练间隔的安排。
    Korrektur-Satz: `Muskelkater und Superkompensation sind nicht dasselbe: Der Muskelkater ist eine Ermüdungserscheinung, die Superkompensation eine spätere Leistungsspitze.`
 
-## Schritt 7 — szenario
+## Schritt 7 — szenario: Klausurtransfer: Superkompensation und die Prinzipien des Ausdauertrainings — Berglauf-Coach am Gipfel
+中文:你是Berglauf-Coach am Gipfel,在Alpen-Berglauf, Intervall-Gipfel 4x1000 m中必须用德语连贯口述(约90秒)诊断、措施与数值目标(4x1000 m in 3:20 min, Pause 3 min, 90-Sekunden-Wochenplan),并以术语举证。
+ROLLE: Du bist Berglauf-Coach am Gipfel. SITUATION: In Alpen-Berglauf, Intervall-Gipfel 4x1000 m stellst du Diagnose, Massnahme und Target (4x1000 m in 3:20 min, Pause 3 min, 90-Sekunden-Wochenplan) in ca. 90 Sekunden vor.
+RUBRIC (30 XP):诊断术语8分 | 措施与目标举证10分 | 程序选择对比7分 | 德语表达5分。
 
-ROLLE: Du bist Prüfling in einer mündlichen Sportprüfung und sollst einen Trainingsplan für einen Mitschüler begründet vorstellen.
-SITUATION: Ein Mitschüler möchte seine aerobe Ausdauer verbessern und plant, „3 × 800 m in maximalem Tempo mit 5 Minuten Pause, einmal pro Woche" zu laufen. Erkläre ihm mündlich in zusammenhängenden deutschen Sätzen (ca. 2 Minuten), ob dieser Plan sinnvoll ist, indem du ihn sowohl mit dem Superkompensationsmodell als auch mit den Trainingsprinzipien beurteilst, und schlage eine bessere Alternative vor.
-RUBRIC (30 XP): Benennung des Modells und der relevanten Trainingsprinzipien (5 XP) | Analyse des Superkompensationsverlaufs und der Reizhäufigkeit (10 XP) | Feststellung der Ziel-Verfahren-Fehlpassung (Ziel aerob, Plan aber hochintensiv mit langen Pausen) (10 XP) | Kriteriengeleiteter Verbesserungsvorschlag mit konkreten Belastungsgrößen (5 XP).
+## Schritt 8 — reflexion: Takeaway & Reflexion — 奖杯还是进站检修
 
-## Schritt 8 — reflexion: Takeaway & Reflexion
+TAKEAWAY 1盒(核心总结):
 
-TAKEAWAY 1盒（核心总结）：
+中文:上限早锁定、位置晚兑现;数值目标(4x1000 m in 3:20 min, Pause 3 min, 90-Sekunden-Wochenplan)是裁判,程序选择是辩护;本关连着冲量角逐、体能极限与主导动机三幕,测得出、说得清、赢下来。
+Takeaway-Satz: `Wer die Grenze sichert und die Lage nutzt, holt den Pokal.`
 
-中文：训练效果不是"练出来"的，而是"恢复出来"的。做题第一步先"选程序"：题目问"间隔多久、下一次负荷落在哪"，走超量恢复程序（把间隔画到曲线上判断落点）；题目问"这份计划违反了哪些原则"，走原则检查程序（逐条对照并给改进）。记住一句话：过早练是过度训练，过晚练是原地踏步，只有落在超量恢复期的那一刀，才真正把成绩往上抬。
-Takeaway-Satz: `Plane den nächsten Reiz in die Superkompensationsphase und prüfe den Plan mit den Trainingsprinzipien — Erholung ist die Voraussetzung, nicht der Gegner der Leistung.`
-
-REFLEXION 2问：
-1. 过程自省：Welcher Schritt fiel schwerer — das Zeichnen und Lesen der Superkompensationskurve (Schritt 3) oder die Prinzipienprüfung im Vergleich (Schritt 5)?
-2. 元认知计划：Beim nächsten Mal frage ich zuerst, ob die Aufgabe nach dem Zeitpunkt des Reizes oder nach verletzten Prinzipien fragt, und wähle danach das Verfahren.
+REFLEXION 2问:
+1. 过程自省:沙盘精度(Schritt 4)与程序选择(Schritt 5)哪一步更难?
+2. 元认知计划:下次先记测量值加相位,因为一切论证都从它长出来。

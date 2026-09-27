@@ -15,71 +15,53 @@ version: Lesson-v3
 
 <!-- Lesson v3 9步制架构：Schritt 1至8固定结构；Fehlvorstellung 夹在 Schritt 6 与 7 之间（Parser 自动跳过，不占步数）；支持内嵌 [Werkzeug: <id>] 交互教具；Gating: check/szenario 未过 = Weiter 置灰；XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
-## Schritt 1 — entdecken: Ziele & Phänomen-Einstieg
+## Schritt 1 — entdecken: Lausanner WADA-Anhoerungssaal — 赛场警报
 
-ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
+ZIELE (3条,本节15分钟学完能做到——先读中文,再记德语):
 
-1. 中文：能说清兴奋剂的三大类——合成代谢、耐力血液、刺激掩蔽，及各自代表药物。
-2. 中文：能列举每类对应的健康风险（心血管、肝肾、激素紊乱）。
-3. 中文：能从公平、榜样、健康三角度论证反兴奋剂并表态（AFB II-III）。
+1. 中文:能一句话定义`Doping Ethik und Gesundheitsrisiken`,并定位到本关赛事Lausanner WADA-Anhoerungssaal, Fall Nr. 7。
+2. 中文:能口述核心机制,并用数值目标(T/E-Quotient 4:1, Sperre 4 Jahre, 3 Beweisketten)举证。
+3. 中文:能诊断一处典型错误,并用德语Klausur-Satz收束(AF B II)。
 
+### Hook 赛场/舞台实况
 
-Hook中文生活切入:
+聚光灯打向Lausanner WADA-Anhoerungssaal, Fall Nr. 7,这是《冠军竞技场与节拍工坊》战役的下一关:上一集埋下的悬念在此引爆,教练/首席必须在限时内拿出方案。多巴是短利长害:增能机制清楚,心脏肝脏内分泌与公平代价更大;检测看阈值与生物护照,伦理判罚兼顾威慑与教育。本关必须过沙盘数值目标,下一集的瓦格纳动机/体能极限/冲量角逐在此埋下伏笔。
 
-想象班级跑步比赛:有人偷偷穿了带弹簧的跑鞋,成绩一下冲到第一,大伙抗议,裁判却一时查不出;更糟的是弹簧鞋穿久了伤膝盖,第一名拿着奖牌去看病。兴奋剂就是这双弹簧鞋:赢了成绩,输了公平,还抵押了健康,查出来身败名裂,查不出 loop 心虚。这双弹簧鞋的交易代价,正是本节健康加伦理双线要算的账。
+Hook (DE): Im Rampenlicht von Lausanner WADA-Anhoerungssaal, Fall Nr. 7 beginnt unser naechster Akt der Kampagne Champion-Arena und Takt-Werkstatt. Stell dir vor: Die Probe ist positiv, die Schlagzeile schon geschrieben, und du sollst als Stimme der Vernunft in neunzig Sekunden ueber Karriere, Gesundheit und Fairness urteilen. Was wiegt schwerer: ein verbotener Vorteil oder ein zerstoerter Koerper? Doping verspricht kurze Hoehenfluege bei langen Abstuerzen: Herz, Leber und Hormone zahlen die Rechnung, die Fairness zahlt mit. Erstens misst die Kontrolle Grenzwerte. Zweitens sichert der Pass Profile. Drittens urteilt die Ethik ueber Sinn und Strafe. Wer sauber argumentiert, schuetzt naechste Generation. Heute verhandeln wir genau diesen Fall: pruefen, werten und Plaedoyer halten.
 
-Phaenomen-Satz (DE): Der Sieg winkt, die Spritze schweigt, der Koerper zahlt die Rechnung.
+`Klausur-Satz: Leitsatz des Themas.`
 
-中文机制铺垫:合成代谢类增肌伤肝伤心,促红细胞生成素增稠血液赌血栓,利尿剂掩蔽加脱水;伦理上违背公平竞争与榜样责任,法律上禁赛加禁药名单动态更新;论述先列健康风险再上公平与责任,预防落到教育与检测。
+## Schritt 2 — entdecken: 5术语装备盒
 
-Mechanismus-Satz (DE): Doping tauscht Gesundheit gegen Sekunden und Fairness gegen Titel.
+PRETRAINING术语盒(核心5词,先读三遍中德,合书自测中文→德语):
 
-Klausur-Satz: `Doping verstoesst gegen Fairness, Vorbildfunktion und Gesundheitsschutz zugleich.`
+中文在上,德语在下:
 
-## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
+- 兴奋剂 — Doping:违禁增能物质与方法 / verbotene leistungssteigernde Mittel und Methoden。
+- 健康风险 — Gesundheitsrisiko:心血管、肝肾与内分泌损伤 / Herz-, Leber- und Hormonschaeden。
+- 公平 — Fairness:规则面前机会平等 / Chancengleichheit unter Regeln。
+- 检测 — Dopingkontrolle:尿血样与生物护照 / Urin-, Blut- und Passkontrollen。
+- 禁赛 — Sperre:违规后的资格处罚 / Ausschluss nach Regelverstoss。
 
-PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
+`Klausur-Satz: Die fuenf Begriffe tragen Diagnose, Sandkasten und Urteil als gemeinsame Sprache.`
 
-中文在上，德语在下：
+## Schritt 3 — entdecken: 生理/音乐机制传导
 
-- 合成代谢类固醇 — Anabolika：促肌肉合成的睾酮衍生物。【陷阱：Anabolika（增肌，长期伤心肝）不是 Proteinshake（蛋白粉，合法营养）。】
-- 促红素 — EPO：促红细胞生成、提高携氧的耐力兴奋剂。【陷阱：EPO（血液变稠，血栓风险）不是 Eisenpraeparat（补铁，合法）。】
-- 刺激剂掩蔽剂 — Stimulanzien und Diuretika：提神或稀释尿检的作弊药。【陷阱：Diuretikum（掩蔽排水，电解质紊乱）不是 Mineralwasser（补水）。】
-- 世界反兴奋剂机构 — WADA / NADA：制定禁单与检测的机构。【陷阱：WADA（世界机构定规则）不是 IOC allein（奥委会只管赛会执行）。】
-- 治疗用药豁免 — TUE (Therapeutic Use Exemption)：病患运动员合法用药许可。【陷阱：TUE（持证用药，剂量受控）不是 Freibrief（免检金牌）。】
+ENTDECKEN(1概念 + 1文字图解,中文在上、德语在下):
 
-Klausur-Satz: `Die WADA-Verbotsliste unterscheidet verbotene Substanzen, Methoden und deren Verschleierung.`
+中文:多巴是短利长害:增能机制明确,健康代价与公平代价更大;检测看阈值与护照异常,伦理判罚兼顾威慑与教育。
 
-## Schritt 3 — entdecken: Kernkonzept & Wirkungsmodell
+Mechanismus (DE): Doping verspricht kurze Gewinne bei langen Schaeden; Kontrolle misst Grenzwerte und Passprofile, Ethik schuetzt Fairness und Gesundheit.
 
-ENTDECKEN（1概念 + 1文字图解，中文在上、德语在下）：
-
-Hook中文生活切入：
-
-中文：想象游戏开挂爽三天、封号爽不再：合成代谢类药物就是向身体借高利贷，账单全是器官替你还。
-
-Phaenomen-Satz (DE): Kurzer Peak, langer Preis.
-
-Spiel-Aufgabe沙盒操作指引：
-
-中文：打开沙盒，拖动滑块调物质种类与剂量（关键词：WADA-Liste, Anabolika, Fairness, Organschaeden），看成绩曲线与健康曲线的剪刀差如何张开。
-
-Beobachtungs-Satz (DE): Die Leistung steigt kurz, der Schaden bleibt lang.
-
-Aha-Moment因果链：
-
-中文因果链：药检名单分物质、方法与掩饰三类；任何增绩都以器官损伤为抵押，短期峰值越高长期代价越陡；持证治疗加申报是 medicine，瞒报即 Betrug。
-
-Gesetz-Satz (DE): Jede Dopingwirkung erkauft Leistung mit Organschaeden.
-
-文字图解（ASCII 结构图，App支持解析渲染）：
+战役传导:本关承接冲量角逐、乳酸阈值与主导动机三幕,测得出才能说得清,说得清才能赢下来。
 
 ```diagram
-Kurve Leistung: steil hoch, schnell runter (Peak)
-Kurve Gesundheit: langsam runter, bleibt unten (Preis)
-Linie: Attest + Transparenz = Therapie | Rest = Betrug
+Kampagne [Impuls -> Schwelle -> Leitmotiv]
+Holphase [sichern] -> Pruefphase [T/E-Quotient 4:1, Sperre 4 Jahre, 3 Beweisketten] -> Zielphase [nutzen]
+Regel: Fehler frueh = Grenze | Fehler spaet = Ausnutzung
 ```
-Klausur-Satz: `Jede Dopingwirkung erkauft kurzfristige Leistung mit langfristigen Organschaeden.`
+
+`Klausur-Satz: Der Mechanismus trennt Grenze von Ausnutzung und ordnet jeden Fehler seiner Phase zu.`
 
 ## Anekdote & Fun-Fact
 
@@ -89,53 +71,50 @@ Klausur-Satz: `Jede Dopingwirkung erkauft kurzfristige Leistung mit langfristige
 
 **Bezug zum Konzept**: `Der Fall Armstrong zeigt: Doping ist selten Einzeltat, meist Systemtat.`
 
-## Schritt 4 — ausprobieren: Interaktive Praxis & Labor
+## Schritt 4 — ausprobieren: 沙盘决战 T/E-Quotient 4:1
 
-[Werkzeug: weitsprung-sim]
+BEISPIEL(含教具操作与解答):
 
-BEISPIEL（正确例题示范，含教具操作与解答，中文在上、德语在下）：
+[Werkzeug: formula]
 
-AUFGABE中文导读（判定谜题）：运动员用合成代谢物涨成绩两年、肝肾报警五年。请从三重价值与健康账论证为何得不偿失。
+AUFGABE (analysieren, AFB II):Beweisformel Probe plus Pass: bewerte T/E-Quotient 4:1 mit 3 Beweisketten und Sperre 4 Jahre;达标线:T/E-Quotient 4:1, Sperre 4 Jahre, 3 Beweisketten。
 
-AUFGABE (beurteilen, AFB II/III): Anabolika bringen zwei Jahre Plus, fuenf Jahre Organschaeden. Beurteilen Sie aus Fairness, Vorbild und Gesundheit.
+Target数值目标:T/E-Quotient 4:1, Sperre 4 Jahre, 3 Beweisketten。
 
-HILFE（中德双语步骤）：
+HILFE:
+1. 定相命名:先说相位与错误画像,对照目标T/E-Quotient 4:1。
+2. 读数释义:读出测量值,用一个术语解释效应。
+3. 推纠正:从机制推出一条可操作纠正。
 
-1. 中文：第1步定性：无申报即违规，关键词：Liste。
-   Schritt 1 (DE): WADA-Liste pruefen, Transparenz fehlt.
-2. 中文：第2步算账：两年峰值换五年损伤，关键词：Preis。
-   Schritt 2 (DE): Peak gegen Organschaeden rechnen.
-3. 中文：第3步三重价值收束，关键词：Werte。
-   Schritt 3 (DE): Fairness, Vorbild, Gesundheit verurteilen.
+MUSTERLÖSUNG:对照目标(T/E-Quotient 4:1, Sperre 4 Jahre, 3 Beweisketten),先定相命名错误画像,再读数并以术语释效应,最后从机制推纠正;在Lausanner WADA-Anhoerungssaal, Fall Nr. 7中形成 保障—转化—兑现 的完整因果链,达标即过关。
 
-MUSTERLOESUNG：中文：无申报使用即违规；两年成绩借的是五年的肝肾，利息是身体付；公平、榜样、健康三票全反对，得不偿失。
+`Klausur-Satz: Am Target zeigt sich, ob Grenze oder Ausnutzung ueber das Ergebnis entschied.`
 
-MUSTERLOESUNG (DE): Anabolika ersetzen keine Trainingsjahre, sie beleihen sie zu Wucherzinsen beim Koerper: Fairness, Vorbild und Gesundheit sprechen gemeinsam dagegen.
-Klausur-Satz: `Anabolika ersetzen keine Trainingsjahre, sie beleihen sie zu Wucherzinsen beim Koerper.`
+## Schritt 5 — ausprobieren: VERGLEICH技术对抗 Abschreckungs-Strategie vs Erziehungs-Strategie
 
-## Schritt 5 — ausprobieren: Verfahrensvergleich & Abgrenzung
+VERGLEICH辨别实验(双向辨析,先选程序再解题):【选程序】
 
-VERGLEICH辨别实验（双向辨析：治疗豁免眼 vs. 作弊眼）：
+VERGLEICH:先选程序—— (i) Abschreckungs-Strategie 还是 (ii) Erziehungs-Strategie ——再解题。WegA讲上限/结构,WegB讲兑现/情境。【选程序:问上限与结构选(i),问兑现与情境选(ii)。口述先说 Ich waehle Verfahren (i)/(ii), weil …】
 
-VERGLEICH: Waehle erst das Konzept — 【选概念】先查用药性质：(i) TUE-Konzept（确诊疾病、医生处方、申报剂量受控 → 合法参赛）还是 (ii) Doping-Konzept（无病用药、超量、隐瞒掩蔽 → 禁赛）—— dann urteilen.
+AUFGABE A (Abschreckungs-Strategie):在Lausanner WADA-Anhoerungssaal, Fall Nr. 7的首个案例中选哪条路,如何论证?
 
-AUFGABE A：Asthmatikerin mit Attest nutzt erlaubtes Spray in gemeldeter Dosis. Welches Konzept?
-AUFGABE B：Gesunder Sportler nutzt EPO plus Diuretikum und verschweigt es. Welches Konzept?
+AUFGABE B (Erziehungs-Strategie):在对立案例中选哪条路,如何论证?
 
-HILFE: A mit Diagnose plus Meldung -> Konzept (i). B gesund plus heimlich plus Maskierung -> Konzept (ii).【选概念：题干出现 Attest / gemeldet / therapeutisch 选豁免；出现 heimlich / Maskierung / ohne Diagnose 选作弊。】
+HILFE:A问上限属于程序(i);B问兑现属于程序(ii)。先说选哪条路,再给测量/情境证据。
 
-ANTWORT: A erfordert Konzept (i): TUE, Therapie statt Leistungssteigerung, legal mit Kontrolle. B erfordert Konzept (ii): klassisches Doping mit Verschleierung, Sperre plus Gesundheitsschaeden.
+ANTWORT:A走程序(i)Abschreckungs-Strategie,以测量值与机制论证上限;B走程序(ii)Erziehungs-Strategie,以情境与位置论证兑现。德语口述句收束。
 
-Klausur-Satz: `Attest und Transparenz trennen Therapie von Betrug.`
+`Klausur-Satz: Verfahren (i) setzt die Grenze, Verfahren (ii) nutzt die Lage; die Wahl traegt das Urteil.`
 
 ## Schritt 6 — check: Selbsttest zu Doping Ethik und Gesundheitsrisiken
-CHECK检索默写（自测 3 题，与答案配对）：
 
-FRAGE: Welche drei Dopinggruppen plus Beispiel? | ANTWORT: Anabolika (Muskel), EPO (Ausdauer-Blut), Stimulanzien/Diuretika (Push/Maskierung).
-FRAGE: Welche Organe schaedigt Anabolika? | ANTWORT: Herz (Hypertrophie), Leber (Tumoren), Hormonachsen plus Psyche.
-FRAGE: Warum ist EPO nachts gefaehrlich? | ANTWORT: Dickes Blut plus langsamer Puls ergibt Thrombose- und Infarktrisiko im Schlaf.
+CHECK检索默写(自测3题,与答案配对):
 
-Klausur-Satz: `Kurzfristiger Peak, langfristiger Preis: Das Grundmuster aller Dopingfolgen.`
+FRAGE:如何在赛事中认出本课核心? | ANTWORT:看数值目标(T/E-Quotient 4:1)与S3机制。
+FRAGE:如何达标? | ANTWORT:测量、术语释义、从机制推纠正三步。
+FRAGE:何时选程序(i)而非(ii)? | ANTWORT:问上限选(i),问兑现选(ii)。
+
+`Klausur-Satz: Selbsttest bestanden heisst Target lesen, Verfahren waehlen und Urteil begruenden.`
 
 ## Fehlvorstellung
 
@@ -149,19 +128,18 @@ Klausur-Satz: `Kurzfristiger Peak, langfristiger Preis: Das Grundmuster aller Do
    中文纠偏：WADA 三大支柱明写健康保护，青少年题必须答健康角度。只谈公平丢三分之一分数。
    Korrektur-Satz: `Gesundheitsschutz ist gleichrangiges Saeulenziel neben Fairness und Vorbild.`
 
-## Schritt 7 — szenario: Klausurtransfer: Doping Ethik und Gesundheitsrisiken
-ROLLE: Du bist Schuelersprecher und schreibst ans Team nach einem Dopingfund.
-SITUATION: Ein Star der Schulmannschaft wurde mit Stimulanzien erwischt; die Haelfte fordert Rausschmiss, die Haelfte Mitleid.
-AUFGABE: Nehmen Sie in ca. 150 Woertern Stellung: Ursachen (Druck/System), Folgen (Gesundheit/Fairness) und ein Praeventionsvorschlag.
-RUBRIC (30 XP): Ursachen Druck plus System (8 XP) | Gesundheits- plus Fairness-Folgen (12 XP) | Praevention (Beratung/Kontrollen) plus faires Urteil (10 XP).
+## Schritt 7 — szenario: Klausurtransfer: Doping Ethik und Gesundheitsrisiken — WADA-Anklaeger in Lausanne
+中文:你是WADA-Anklaeger in Lausanne,在Lausanner WADA-Anhoerungssaal, Fall Nr. 7中必须用德语连贯口述(约90秒)诊断、措施与数值目标(T/E-Quotient 4:1, Sperre 4 Jahre, 3 Beweisketten),并以术语举证。
+ROLLE: Du bist WADA-Anklaeger in Lausanne. SITUATION: In Lausanner WADA-Anhoerungssaal, Fall Nr. 7 stellst du Diagnose, Massnahme und Target (T/E-Quotient 4:1, Sperre 4 Jahre, 3 Beweisketten) in ca. 90 Sekunden vor.
+RUBRIC (30 XP):诊断术语8分 | 措施与目标举证10分 | 程序选择对比7分 | 德语表达5分。
 
-## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
+## Schritt 8 — reflexion: Takeaway & Reflexion — 奖杯还是进站检修
 
-TAKEAWAY 1盒（核心总结）：
+TAKEAWAY 1盒(核心总结):
 
-中文：三类三伤：类固醇伤心肝激素，EPO 稠血栓，利尿剂垮循环。伦理三刀：作弊、坏榜样、赌命。豁免看病历加申报，作弊看隐瞒加掩蔽。劝阻公式：风险讲到器官，替代给到计划。
-Takeaway-Satz: `Doping leiht Leistung von der Zukunft des eigenen Koerpers — mit Wucherzinsen.`
+中文:上限早锁定、位置晚兑现;数值目标(T/E-Quotient 4:1, Sperre 4 Jahre, 3 Beweisketten)是裁判,程序选择是辩护;本关连着冲量角逐、体能极限与主导动机三幕,测得出、说得清、赢下来。
+Takeaway-Satz: `Wer die Grenze sichert und die Lage nutzt, holt den Pokal.`
 
-REFLEXION 2问：
-1. 过程自省：Welcher Schritt fiel schwerer — die Beratung mit Risiken (Schritt 4) oder die Konzeptwahl TUE gegen Doping (Schritt 5)?
-2. 元认知计划：Beim naechsten Mal ordne ich jede Substanz zuerst dem Dreieck Wirkung-Risiko-Ethik zu.
+REFLEXION 2问:
+1. 过程自省:沙盘精度(Schritt 4)与程序选择(Schritt 5)哪一步更难?
+2. 元认知计划:下次先记测量值加相位,因为一切论证都从它长出来。

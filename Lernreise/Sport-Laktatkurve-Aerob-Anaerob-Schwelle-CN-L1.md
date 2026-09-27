@@ -15,75 +15,53 @@ version: Lesson-v3
 
 <!-- Lesson v3 9步制架构：Schritt 1至8固定结构；Fehlvorstellung 夹在 Schritt 6 与 7 之间（Parser 自动跳过，不占步数）；支持内嵌 [Werkzeug: <id>] 交互教具；Gating: check/szenario 未过 = Weiter 置灰；XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
-## Schritt 1 — entdecken: Ziele & Phänomen-Einstieg
+## Schritt 1 — entdecken: Freiburger Leistungsdiagnostik-Labor — 赛场警报
 
-ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
+ZIELE (3条,本节15分钟学完能做到——先读中文,再记德语):
 
-1. 中文：能画乳酸曲线并标出有氧阈与无氧阈（$2\,\mathrm{mmol/L}$ 与 $4\,\mathrm{mmol/L}$）。
-2. 中文：能说出三区间供能特点——纯有氧、混氧、无氧主导。
-3. 中文：能选择训练强度（选程序：低强打底 vs 阈值提速）。
+1. 中文:能一句话定义`Laktatkurve mit aerober und anaerober Schwelle`,并定位到本关赛事Freiburger Leistungsdiagnostik-Labor, Laufband-Stufentest。
+2. 中文:能口述核心机制,并用数值目标(Puls 168/min an der Schwelle, Laktat 4,0 mmol/L, 90-Sekunden-Befund)举证。
+3. 中文:能诊断一处典型错误,并用德语Klausur-Satz收束(AF B II)。
 
-Voraussetzung（窄切口）：只做递增负荷曲线解读，不做 Spiroergometrie 细节；已会 Energiebereitstellung 三系统。
+### Hook 赛场/舞台实况
 
+聚光灯打向Freiburger Leistungsdiagnostik-Labor, Laufband-Stufentest,这是《冠军竞技场与节拍工坊》战役的下一关:上一集埋下的悬念在此引爆,教练/首席必须在限时内拿出方案。乳酸曲线是耐力的电量红线:慢跑省电、过阈值断电发烫;有氧阈约2、无氧阈约4,三区间对应三种练法,训练把整条曲线右移,比赛按区间配速。本关必须过沙盘数值目标,下一集的瓦格纳动机/体能极限/冲量角逐在此埋下伏笔。
 
-Hook中文生活切入:
+Hook (DE): Im Rampenlicht von Freiburger Leistungsdiagnostik-Labor, Laufband-Stufentest beginnt unser naechster Akt der Kampagne Champion-Arena und Takt-Werkstatt. Stell dir vor: Die Favoritin bricht auf der Zielgeraden ein, obwohl die Uhr noch Bestzeit versprach. Der Puls stimmt, die Beine nicht: Irgendwo auf der Strecke hat sie ihre Schwelle ueberschritten, und ab dort wurde jeder Meter teurer. Wo liegt die Grenze zwischen tragbar und teuer? Die Laktatkurve zeichnet genau diese Grenze: flach heisst abbaubar, steil heisst Stau. Unter der aeroben Schwelle laeuft der Motor sparsam, zwischen den Schwellen mischt er, darueber frisst er sich selbst. Erstens misst der Stufentest die Kurve. Zweitens trennen zwei Schwellen drei Zonen. Drittens steuert die Zone das Training. Wer die Kurve liest, verteilt Kraft ueber das ganze Rennen. Heute knacken wir genau diese Kurve: messen, deuten und Tempo befehlen.
 
-想象手机电量:刷短视频时省电模式撑很久,一切到高帧率游戏电量断崖下跌,还发烫卡顿,得插电才能续命。人体供能同理:慢跑时有氧系统细水长流,强度一过阈值无氧登场,乳酸堆积、呼吸加深,速度再也维持不住,阈值就是这条电量红线。这条电量红线的位置漂移,正是本节曲线题要找的拐点。
+`Klausur-Satz: Leitsatz des Themas.`
 
-Phaenomen-Satz (DE): Locker laeuft es ewig, schnell brennt es kurz, die Schwelle trennt beides.
+## Schritt 2 — entdecken: 5术语装备盒
 
-中文机制铺垫:有氧阈之前脂肪为主,阈间糖酵解 ramp up,无氧阈之后乳酸陡增;乳酸阈测试用逐级递增速找拐点,耐力训练把阈值右移;答题先认曲线拐点,再对供能系统,训练建议落在阈值跑。
+PRETRAINING术语盒(核心5词,先读三遍中德,合书自测中文→德语):
 
-Mechanismus-Satz (DE): Unter der Schwelle aerob stabil, darueber anaerob teuer und kurz.
+中文在上,德语在下:
 
-Klausur-Satz: `Die Laktatkurve trennt aerobe Basis, aerob-anaeroben Uebergang und anaerobe Spitze.`
+- 乳酸 — Laktat:无氧糖酵解产物,单位mmol/L / Produkt der anaeroben Glykolyse in mmol/L。
+- 有氧阈 — aerobe Schwelle:约2 mmol/L,纯有氧上限 / ca. 2 mmol/L, Grenze der rein aeroben Arbeit。
+- 无氧阈 — anaerobe Schwelle:约4 mmol/L,最高稳态强度 / ca. 4 mmol/L, hoechste steady-state Intensitaet。
+- 稳态 — Steady State:生成与清除平衡,乳酸不堆积 / Bildung und Abbau im Gleichgewicht。
+- 逐级测试 — Stufentest:逐级提速测乳酸绘曲线 / stufenfoermige Belastung mit Laktatmessung。
 
-## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
+`Klausur-Satz: Die fuenf Begriffe tragen Diagnose, Sandkasten und Urteil als gemeinsame Sprache.`
 
-PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
+## Schritt 3 — entdecken: 生理/音乐机制传导
 
-中文在上，德语在下：
+ENTDECKEN(1概念 + 1文字图解,中文在上、德语在下):
 
-- 乳酸 — Laktat：无氧糖酵解产物，浓度以 $\mathrm{mmol/L}$ 计。
-- 有氧阈 — aerobe Schwelle：约 $2\,\mathrm{mmol/L}$，纯有氧上限。
-- 无氧阈 — anaerobe Schwelle：约 $4\,\mathrm{mmol/L}$，可维持的最高稳态强度。
-- 稳态 — Steady State：生成与清除平衡，乳酸不再堆积。
-- 逐级测试 — Stufentest：速度逐级提高并测乳酸，绘成曲线。
+中文:低速乳酸边产边清曲线平坦;过无氧阈后产生压过清除,曲线陡升;有氧阈下练底子、阈间练 tempo、阈上只配间歇;训练使曲线右移。
 
-Klausur-Satz: `An der anaeroben Schwelle halten sich Bildung und Abbau von Laktat gerade die Waage.`
+Mechanismus (DE): Unter der Schwelle bleibt Laktat stabil, darueber akkumuliert es steil; flach heisst abbaubar, steil heisst Stau, Training verschiebt die Kurve nach rechts.
 
-## Schritt 3 — entdecken: Kernkonzept & Wirkungsmodell
-
-ENTDECKEN（1概念 + 1文字图解，中文在上、德语在下）：
-
-Hook中文生活切入：
-
-中文：想象跑步撞墙时刻：还能聊天时很稳，一加速就喘到说不出话。乳酸曲线就是这堵墙的地图。
-
-Phaenomen-Satz (DE): Flach heisst tragbar, steil heisst Stau.
-
-Spiel-Aufgabe沙盒操作指引：
-
-中文：打开沙盒，拖动滑块提配速（关键词：aerob, anaerob, Schwelle, Laktat），看曲线何时由平转陡，找到能聊天与必须闭嘴的分界。
-
-Beobachtungs-Satz (DE): An der Schwelle halten sich Bildung und Abbau die Waage.
-
-Aha-Moment因果链：
-
-中文因果链：低速时乳酸边产边清曲线平，高于阈值后产生压过清除曲线陡；平段练 base、阈值练 tempo、陡段只配间歇；曲线右移即训练有效。
-
-Gesetz-Satz (DE): Flach heisst abbaubar, steil heisst akkumulierend.
-
-文字图解（ASCII 结构图，App支持解析渲染）：
+战役传导:本关承接冲量角逐、乳酸阈值与主导动机三幕,测得出才能说得清,说得清才能赢下来。
 
 ```diagram
-Laktat ^
-  |         #### steil (anaerob, Intervall)
-  |       ##  Schwelle ca. 12 km/h
-  |   ....  flach (aerob, Basis 10 km/h)
-  +----------------------------> Tempo
+Kampagne [Impuls -> Schwelle -> Leitmotiv]
+Holphase [sichern] -> Pruefphase [Puls 168/min an der Schwelle, Laktat 4,0 mmol/L, 90-Sekunden-Befund] -> Zielphase [nutzen]
+Regel: Fehler frueh = Grenze | Fehler spaet = Ausnutzung
 ```
-Klausur-Satz: `Flach heisst abbaubar, steil heisst akkumulierend.`
+
+`Klausur-Satz: Der Mechanismus trennt Grenze von Ausnutzung und ordnet jeden Fehler seiner Phase zu.`
 
 ## Anekdote & Fun-Fact
 
@@ -93,53 +71,50 @@ Klausur-Satz: `Flach heisst abbaubar, steil heisst akkumulierend.`
 
 **Bezug zum Konzept**: `Training verschiebt die Kurve nach rechts.`
 
-## Schritt 4 — ausprobieren: Interaktive Praxis & Labor
+## Schritt 4 — ausprobieren: 沙盘决战 Puls 168/min an der Schwelle
 
-[Werkzeug: weitsprung-sim]
+BEISPIEL(含教具操作与解答):
 
-BEISPIEL（正确例题示范，含教具操作与解答，中文在上、德语在下）：
+[Werkzeug: oral-timer]
 
-AUFGABE中文导读（读图谜题）：某跑者10配速平稳、12临界、14爆表。请划分三区并开出三周训练单。
+AUFGABE (analysieren, AFB II):90-Sekunden-Befund gegen den Timer: melde Puls 168/min bei Laktat 4,0 mmol/L und nenne die Zone;达标线:Puls 168/min an der Schwelle, Laktat 4,0 mmol/L, 90-Sekunden-Befund。
 
-AUFGABE (auswerten, AFB II): Bei $10\,\mathrm{km/h}$ flach, bei $12$ Schwelle, bei $14$ steil. Zonen Sie und verordnen Sie Training.
+Target数值目标:Puls 168/min an der Schwelle, Laktat 4,0 mmol/L, 90-Sekunden-Befund。
 
-HILFE（中德双语步骤）：
+HILFE:
+1. 定相命名:先说相位与错误画像,对照目标Puls 168/min an der Schwelle。
+2. 读数释义:读出测量值,用一个术语解释效应。
+3. 推纠正:从机制推出一条可操作纠正。
 
-1. 中文：第1步分区：有氧底、阈值、间歇，关键词：Zonen。
-   Schritt 1 (DE): Basis, Schwelle, Spitze trennen.
-2. 中文：第2步配练：长慢跑、控速跑、短间歇，关键词：Rezept。
-   Schritt 2 (DE): Lang ruhig, kurz hart, Intervalle.
-3. 中文：第3步验效：右移即进步，关键词：Kontrolle。
-   Schritt 3 (DE): Rechtsverschiebung heisst trainiert.
+MUSTERLÖSUNG:对照目标(Puls 168/min an der Schwelle, Laktat 4,0 mmol/L, 90-Sekunden-Befund),先定相命名错误画像,再读数并以术语释效应,最后从机制推纠正;在Freiburger Leistungsdiagnostik-Labor, Laufband-Stufentest中形成 保障—转化—兑现 的完整因果链,达标即过关。
 
-MUSTERLOESUNG：中文：10是有氧底配长慢跑，12是阈值配控速跑，14是无氧顶只配短间歇；复测曲线右移即有效，变陡提前即练崩。
+`Klausur-Satz: Am Target zeigt sich, ob Grenze oder Ausnutzung ueber das Ergebnis entschied.`
 
-MUSTERLOESUNG (DE): $10\,\mathrm{km/h}$ ist Basis, $12$ ist Schwelle, $14$ ist Intervall: Basis lang und ruhig, Schwelle kurz und kontrolliert hart.
-Klausur-Satz: `10 km/h ist Basis, 12 km/h ist Schwelle, 14 km/h ist Intervall.`
+## Schritt 5 — ausprobieren: VERGLEICH技术对抗 Basis-Training vs Schwellen-Training
 
-## Schritt 5 — ausprobieren: Verfahrensvergleich & Abgrenzung
+VERGLEICH辨别实验(双向辨析,先选程序再解题):【选程序】
 
-VERGLEICH辨别实验（双向辨析：低强打底 vs 阈值提速）：
+VERGLEICH:先选程序—— (i) Basis-Training 还是 (ii) Schwellen-Training ——再解题。WegA讲上限/结构,WegB讲兑现/情境。【选程序:问上限与结构选(i),问兑现与情境选(ii)。口述先说 Ich waehle Verfahren (i)/(ii), weil …】
 
-VERGLEICH: Waehle erst das Verfahren — 【选程序】先看目标：(i) 低强打底（Grundlage/Basis/Fettstoffwechsel：$2$ 下大量、慢而长）oder (ii) 阈值提速（Schwelle/Wettkampf：$4$ 附近少而精、快而控）—— dann loesen.
+AUFGABE A (Basis-Training):在Freiburger Leistungsdiagnostik-Labor, Laufband-Stufentest的首个案例中选哪条路,如何论证?
 
-AUFGABE A：Anfänger will 10 km finishen. Schwerpunkt?
-AUFGABE B：Fortgeschrittener will Bestzeit verbessern, Schwelle bei 12 km/h. Schwerpunkt?
+AUFGABE B (Schwellen-Training):在对立案例中选哪条路,如何论证?
 
-HILFE: A 含 finishen/Anfänger → Verfahren (i)。B 含 Bestzeit/Schwelle → Verfahren (ii)。【选程序：求完赛堆低强；求提速练阈值。】
+HILFE:A问上限属于程序(i);B问兑现属于程序(ii)。先说选哪条路,再给测量/情境证据。
 
-ANTWORT: A erfordert Verfahren (i): Umfang unter der aeroben Schwelle, lange ruhige Laeufe, Laktat flach — Oekonomie und Durchhaltevermoegen vor Tempo. B erfordert Verfahren (ii): Tempodauerlaeufe und Intervalle um die anaerobe Schwelle, Laktat kontrolliert hoch — Schwelle nach rechts schieben. Vertauscht trainiert der Anfaenger sich in Ueberlastung, der Fortgeschrittene in Stagnation.
+ANTWORT:A走程序(i)Basis-Training,以测量值与机制论证上限;B走程序(ii)Schwellen-Training,以情境与位置论证兑现。德语口述句收束。
 
-Klausur-Satz: `Basis laeuft man lang und ruhig, Schwelle kurz und kontrolliert hart.`
+`Klausur-Satz: Verfahren (i) setzt die Grenze, Verfahren (ii) nutzt die Lage; die Wahl traegt das Urteil.`
 
 ## Schritt 6 — check: Selbsttest zu Laktatkurve mit aerober und anaerober Schwelle
-CHECK检索默写（自测 3 题，与答案配对）：
 
-FRAGE: Wo liegen aerobe und anaerobe Schwelle? | ANTWORT: Bei ca. $2$ bzw. $4\,\mathrm{mmol/L}$ Laktat.
-FRAGE: Was heisst Steady State? | ANTWORT: Bildung und Abbau von Laktat halten sich die Waage, die Konzentration bleibt stabil.
-FRAGE: Was bedeutet Rechtsverschiebung? | ANTWORT: Hoehere Geschwindigkeit bei gleicher Laktatstufe — Trainingsfortschritt.
+CHECK检索默写(自测3题,与答案配对):
 
-Klausur-Satz: `Rechts heisst trainiert, steil heisst ueberfordert.`
+FRAGE:如何在赛事中认出本课核心? | ANTWORT:看数值目标(Puls 168/min an der Schwelle)与S3机制。
+FRAGE:如何达标? | ANTWORT:测量、术语释义、从机制推纠正三步。
+FRAGE:何时选程序(i)而非(ii)? | ANTWORT:问上限选(i),问兑现选(ii)。
+
+`Klausur-Satz: Selbsttest bestanden heisst Target lesen, Verfahren waehlen und Urteil begruenden.`
 
 ## Fehlvorstellung
 
@@ -153,18 +128,18 @@ Klausur-Satz: `Rechts heisst trainiert, steil heisst ueberfordert.`
    中文纠偏：$2$/$4$ 是约定路标，可训练右移；同一速度阈值前后意义不同。
    Korrektur-Satz: `Schwellen sind verschiebbare Marken, keine Mauern.`
 
-## Schritt 7 — szenario: Klausurtransfer: Laktatkurve mit aerober und anaerober Schwelle
-ROLLE: Du betreust einen Hobbylaeufer mit Stufentest-Protokoll.
-SITUATION: Er will Marathon finishen und fragt nach Zonen. Deute in zusammenhaengender Darstellung (ca. 150 Woerter) seine drei Messpunkte und gib zwei Zonenempfehlungen.
-RUBRIC (30 XP): Zonenordnung aller Punkte (12 XP) | Zwei Trainingsempfehlungen mit Begruendung (10 XP) | Rechtsverschiebung als Ziel (4 XP) | Verstaendliche Sprache (4 XP).
+## Schritt 7 — szenario: Klausurtransfer: Laktatkurve mit aerober und anaerober Schwelle — Leistungsdiagnostiker im Labor
+中文:你是Leistungsdiagnostiker im Labor,在Freiburger Leistungsdiagnostik-Labor, Laufband-Stufentest中必须用德语连贯口述(约90秒)诊断、措施与数值目标(Puls 168/min an der Schwelle, Laktat 4,0 mmol/L, 90-Sekunden-Befund),并以术语举证。
+ROLLE: Du bist Leistungsdiagnostiker im Labor. SITUATION: In Freiburger Leistungsdiagnostik-Labor, Laufband-Stufentest stellst du Diagnose, Massnahme und Target (Puls 168/min an der Schwelle, Laktat 4,0 mmol/L, 90-Sekunden-Befund) in ca. 90 Sekunden vor.
+RUBRIC (30 XP):诊断术语8分 | 措施与目标举证10分 | 程序选择对比7分 | 德语表达5分。
 
-## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
+## Schritt 8 — reflexion: Takeaway & Reflexion — 奖杯还是进站检修
 
-TAKEAWAY 1盒（核心总结）：
+TAKEAWAY 1盒(核心总结):
 
-中文：曲线看斜率——平是有氧、扬是混氧、陡是无氧。完赛堆低强，提速磨阈值。记住一句话——平处堆量，陡处控量。
-Takeaway-Satz: `Flach ausbauen, Schwelle schieben, Spitze dosieren.`
+中文:上限早锁定、位置晚兑现;数值目标(Puls 168/min an der Schwelle, Laktat 4,0 mmol/L, 90-Sekunden-Befund)是裁判,程序选择是辩护;本关连着冲量角逐、体能极限与主导动机三幕,测得出、说得清、赢下来。
+Takeaway-Satz: `Wer die Grenze sichert und die Lage nutzt, holt den Pokal.`
 
-REFLEXION 2问：
-1. 过程自省：Welcher Schritt fiel schwerer — die Zonenordnung (Schritt 4) oder die Trainingswahl (Schritt 5)?
-2. 元认知计划：Beim naechsten Mal zeichne ich zuerst 2 und 4 als Linien ein.
+REFLEXION 2问:
+1. 过程自省:沙盘精度(Schritt 4)与程序选择(Schritt 5)哪一步更难?
+2. 元认知计划:下次先记测量值加相位,因为一切论证都从它长出来。

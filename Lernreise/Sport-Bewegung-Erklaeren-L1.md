@@ -15,57 +15,53 @@ version: Lesson-v3
 
 <!-- Lesson v3 9步制架构：Schritt 1至8固定结构；Fehlvorstellung 夹在 Schritt 6 与 7 之间（Parser 自动跳过，不占步数）；支持内嵌 [Werkzeug: <id>] 交互教具；Gating: check/szenario 未过 = Weiter 置灰；XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
-## Schritt 1 — entdecken
+## Schritt 1 — entdecken: Schulsporthalle — 赛场警报
 
-ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
+ZIELE (3条,本节15分钟学完能做到——先读中文,再记德语):
 
-1. 中文：能按三相（Vorbereitung / Hauptphase / Endphase）口述任意一个课程动作，并为每一相各说一句"做什么"。
-2. 中文：能指出主相并用 weil 从句给出生物力学或生理学理由（`Entscheidend ist …, weil …`）。
-3. 中文：能说出一个典型错误并给出纠正，做到"描述—解释—纠错"三段齐全。
+1. 中文:能一句话定义`Bewegung erklären`,并定位到本关赛事Schulsporthalle, Erklaer-Duell der Traineranwaerter。
+2. 中文:能口述核心机制,并用数值目标(3 Erklaer-Schritte, 90 s Ansage, genau 1 Korrekturpunkt)举证。
+3. 中文:能诊断一处典型错误,并用德语Klausur-Satz收束(AF B II)。
 
-Klausur-Satz: `Die Bewegung gliedert sich in Vorbereitung, Hauptphase und Endphase; entscheidend ist die Hauptphase, weil dort die Leistung biomechanisch bzw. physiologisch bestimmt wird.`
+### Hook 赛场/舞台实况
 
-## Schritt 2 — entdecken
+聚光灯打向Schulsporthalle, Erklaer-Duell der Traineranwaerter,这是《冠军竞技场与节拍工坊》战役的下一关:上一集埋下的悬念在此引爆,教练/首席必须在限时内拿出方案。讲动作三句话:做什么、做到什么样、错了改哪一条;示范先慢后快,口令合节拍,一次只纠一条,安全永远第一。本关必须过沙盘数值目标,下一集的瓦格纳动机/体能极限/冲量角逐在此埋下伏笔。
 
-PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
+Hook (DE): Im Rampenlicht von Schulsporthalle, Erklaer-Duell der Traineranwaerter beginnt unser naechster Akt der Kampagne Champion-Arena und Takt-Werkstatt. Stell dir vor: Zwanzig ungeduldige Schueler, ein Reck und neunzig Sekunden, um eine riskante Bewegung sicher zu vermitteln. Ein falsches Wort, und die Halle turnt Chaos. Wie wird aus Reden sicheres Koennen? Durch Aufgabe, Zielbild und genau einen Korrekturpunkt. Erstens sagt das Kommando was zu tun ist. Zweitens zeigt die Demo wie es aussieht. Drittens heilt ein einziger Hinweis den groessten Fehler. Wer langsam demonstriert und rhythmisch kommandiert, verwandelt Zuhoerer in Koenner. Heute liefern wir genau diese Ansage: kuendigen, zeigen und korrigieren.
 
-中文在上，德语在下：
+`Klausur-Satz: Leitsatz des Themas.`
 
-- 动作三相 — Drei-Phasen-Struktur：把任意连续动作切成准备相、主相、结束相的通用骨架。
-- 准备相 — Vorbereitungsphase：蓄势与对准（含 Aufwärmen），为主动作创造最优条件。
-- 主相 — Hauptphase：决定成绩的关键相，解释的落点所在。
-- 结束相 — Endphase：缓冲、稳定、收束，避免多余动作并保护身体。
-- 典型错误 — typischer Fehler / Fehlerbild：偏离理想动作的常见表现，须配一个 Korrektur。
+## Schritt 2 — entdecken: 5术语装备盒
 
-Klausur-Satz: `Entscheidend ist die Hauptphase, weil in ihr die für das Ergebnis maßgebliche Leistung erbracht wird.`
+PRETRAINING术语盒(核心5词,先读三遍中德,合书自测中文→德语):
 
-## Schritt 3 — entdecken
+中文在上,德语在下:
 
-ENTDECKEN（1概念 + 1文字图解）：
+- 讲解 — Bewegungserklaerung:说清动作要领的口语程序 / muendliche Vermittlung der Bewegungsaufgabe。
+- 示范 — Demonstration:慢速+原速+关键帧展示 / Zeitlupe, Echtzeit und Schluesselbild。
+- 要点 — Schluesselpunkt:决定成败的一两个细节 / ein bis zwei erfolgsentscheidende Details。
+- 纠错 — Korrekturhinweis:先肯定后给一条改正 / erst Lob, dann genau eine Korrektur。
+- 安全 — Sicherheit:场地器材与保护帮助 / Raum, Geraet und Hilfestellung。
 
-中文：解释一个动作，第一步永远是切三相——Vorbereitung（蓄势）、Hauptphase（出成绩）、Endphase（收束）。切完相，解释的重心立刻清楚：不是把每一相都平铺讲一遍，而是要指出哪一相"决定成绩"（主相），并说明它为什么决定成绩。理由只有两类：生物力学上（力的方向、速度合成、杠杆、角度）或生理学上（肌肉温度、能量供应、神经控制）。这两类理由，正是"能做"和"能讲清为什么"的分界。最后补一个典型错误与纠正（Fehlerbild + Korrektur），口述才算完整。务必注意：理由必须落到具体机制，只说"这相很重要"不算解释。
+`Klausur-Satz: Die fuenf Begriffe tragen Diagnose, Sandkasten und Urteil als gemeinsame Sprache.`
 
-文字图解（ASCII 结构图，App支持解析渲染）：
+## Schritt 3 — entdecken: 生理/音乐机制传导
+
+ENTDECKEN(1概念 + 1文字图解,中文在上、德语在下):
+
+中文:讲动作=三句话:做什么、做到什么样、错了改哪一条;示范先慢后快,口令配节拍,纠错一次只给一条,安全先行。
+
+Mechanismus (DE): Erklaeren heisst: Aufgabe, Zielbild und genau ein Korrekturpunkt; Demo erst langsam dann echt, Kommando im Rhythmus, Sicherheit zuerst.
+
+战役传导:本关承接冲量角逐、乳酸阈值与主导动机三幕,测得出才能说得清,说得清才能赢下来。
 
 ```diagram
-   Bewegung erklaeren = 3 Phasen + 1 Begruendung
-   |-- Vorbereitung --|-- Hauptphase --|-- Endphase --|
-        was?              was?              was?
-        anlaufen          abschwingen       abfangen
-        ausholen          beschleunigen     stabilisieren
-        ausrichten        KSP beschleunigen ausgleichen
-        ^                 ^                 ^
-        |                 |                 |
-   "warum?"          ENTSCHEIDEND!      "warum?"
-   vorbereiten       "weil ..."          absichern
-                     biomechanisch
-                     oder physiologisch
-
-   Kette:  Phasen nennen -> Hauptphase markieren
-           -> weil-Begruendung -> Fehler + Korrektur
+Kampagne [Impuls -> Schwelle -> Leitmotiv]
+Holphase [sichern] -> Pruefphase [3 Erklaer-Schritte, 90 s Ansage, genau 1 Korrekturpunkt] -> Zielphase [nutzen]
+Regel: Fehler frueh = Grenze | Fehler spaet = Ausnutzung
 ```
 
-Klausur-Satz: `Entscheidend ist die Hauptphase, weil in ihr die biomechanisch oder physiologisch begründete Leistung erbracht wird, die über das Ergebnis bestimmt.`
+`Klausur-Satz: Der Mechanismus trennt Grenze von Ausnutzung und ordnet jeden Fehler seiner Phase zu.`
 
 ## Anekdote & Fun-Fact
 
@@ -75,53 +71,50 @@ Klausur-Satz: `Entscheidend ist die Hauptphase, weil in ihr die biomechanisch od
 
 **Bezug zum Konzept**: `Das Aufwärmen begründet physiologisch, warum jede Bewegung eine Vorbereitungsphase braucht.`
 
-## Schritt 4 — ausprobieren
+## Schritt 4 — ausprobieren: 沙盘决战 3 Erklaer-Schritte
 
-BEISPIEL（正确例题示范，含教具操作与解答）：
+BEISPIEL(含教具操作与解答):
 
-[Werkzeug: lego]
+[Werkzeug: oral-timer]
 
-AUFGABE (beschreiben/erklären, AFB I/II)：Wähle eine Bewegung aus deinem Kurs (z. B. den Absprung beim Weitsprung oder den Kugelstoß) und erkläre sie in drei Phasen. Nenne für jede Phase eine Tätigkeit, markiere die Hauptphase und begründe sie mit einer biomechanischen oder physiologischen Überlegung. Ergänze anschließend einen häufigen Fehler mit Korrektur.
+AUFGABE (analysieren, AFB II):90-s-Ansage gegen den Timer: Aufgabe, Zielbild und genau 1 Korrekturpunkt in 3 Schritten;达标线:3 Erklaer-Schritte, 90 s Ansage, genau 1 Korrekturpunkt。
+
+Target数值目标:3 Erklaer-Schritte, 90 s Ansage, genau 1 Korrekturpunkt。
 
 HILFE:
-1. Schritt 1: Zerlege die Bewegung in Vorbereitung, Hauptphase und Endphase.
-2. Schritt 2: Formuliere je Phase einen Satz — was machen Arme, Beine und Rumpf?
-3. Schritt 3: Markiere die Hauptphase und begründe sie mit `Entscheidend ist …, weil …`.
-4. Schritt 4: Ergänze einen typischen Fehler und eine konkrete Korrektur.
+1. 定相命名:先说相位与错误画像,对照目标3 Erklaer-Schritte。
+2. 读数释义:读出测量值,用一个术语解释效应。
+3. 推纠正:从机制推出一条可操作纠正。
 
-MUSTERLÖSUNG: Am Beispiel Weitsprung: Die Bewegung gliedert sich in Vorbereitung (Anlauf), Hauptphase (Absprung) und Endphase (Flug und Landung). In der Vorbereitung beschleunigt der Sportler im Anlauf und richtet seinen Körper auf das Brett aus. In der Hauptphase setzt der Absprung die Anlaufgeschwindigkeit in eine flache, schnelle Flugkurve um: Der Sprungfuß stützt kurz, das Bein streckt sich explosiv, das Schwungbein und die Arme ziehen mit. In der Endphase stabilisiert der Sportler den Flug, streckt die Beine zur Landung nach vorn und fängt den Körper ab. Entscheidend ist der Absprung, weil dort die horizontale Geschwindigkeit biomechanisch in die Flugparabel des Körperschwerpunkts umgesetzt wird — ohne diese Umsetzung bleibt die Weite klein. Ein häufiger Fehler ist das Abbremsen vor dem Brett; die Korrektur ist ein rhythmischer Anlauf mit Markierungen, damit der Sportler schnell und flach über das Brett kommt.
+MUSTERLÖSUNG:对照目标(3 Erklaer-Schritte, 90 s Ansage, genau 1 Korrekturpunkt),先定相命名错误画像,再读数并以术语释效应,最后从机制推纠正;在Schulsporthalle, Erklaer-Duell der Traineranwaerter中形成 保障—转化—兑现 的完整因果链,达标即过关。
 
-Klausur-Satz: `Die Bewegung gliedert sich in Anlauf, Absprung sowie Flug und Landung; entscheidend ist der Absprung, weil dort die Anlaufgeschwindigkeit biomechanisch in Weite umgesetzt wird.`
+`Klausur-Satz: Am Target zeigt sich, ob Grenze oder Ausnutzung ueber das Ergebnis entschied.`
 
-## Schritt 5 — ausprobieren
+## Schritt 5 — ausprobieren: VERGLEICH技术对抗 Wort-Weg vs Demo-Weg
 
-VERGLEICH辨别实验（双向辨析：描述眼 vs. 解释眼），并做口述解释：
+VERGLEICH辨别实验(双向辨析,先选程序再解题):【选程序】
 
-VERGLEICH: Wähle erst das Verfahren — 【选程序】先判断题目问的是 (i) Beschreibungs-Verfahren（描述：把动作按三相切开，逐相说"做什么"，讲清 Ablauf）还是 (ii) Begründungs-Verfahren（解释：指出主相并给出 biomechanisch/physiologisch 的 weil 理由，再补 Fehler + Korrektur）—— dann lösen.
+VERGLEICH:先选程序—— (i) Wort-Weg 还是 (ii) Demo-Weg ——再解题。WegA讲上限/结构,WegB讲兑现/情境。【选程序:问上限与结构选(i),问兑现与情境选(ii)。口述先说 Ich waehle Verfahren (i)/(ii), weil …】
 
-AUFGABE A：Ein Prüfer sagt: „Beschreiben Sie eine Bewegung aus Ihrem Kurs in ihren Phasen." Welches Verfahren ist zu wählen, und wie sprechen Sie?
+AUFGABE A (Wort-Weg):在Schulsporthalle, Erklaer-Duell der Traineranwaerter的首个案例中选哪条路,如何论证?
 
-AUFGABE B：Ein Prüfer sagt: „Begründen Sie, warum genau eine Phase über das Ergebnis entscheidet." Welches Verfahren ist zu wählen, und wie sprechen Sie?
+AUFGABE B (Demo-Weg):在对立案例中选哪条路,如何论证?
 
-HILFE: A 要求"按相描述动作"，只问"做什么" → 程序 (i)。B 要求"论证哪一相决定成绩"，必须给机制理由 → 程序 (ii)。【选程序：只要"做什么、怎么走"= 描述程序；要"为什么、凭什么"= 解释程序。口述时先说 `Ich wähle Verfahren (i)/(ii), weil …`】
+HILFE:A问上限属于程序(i);B问兑现属于程序(ii)。先说选哪条路,再给测量/情境证据。
 
-ANTWORT: A erfordert Verfahren (i): Ich gliedere die Bewegung in Vorbereitung, Hauptphase und Endphase und beschreibe je Phase die Tätigkeit von Armen, Beinen und Rumpf. B erfordert Verfahren (ii): Ich benenne die Hauptphase und begründe sie mit einer mechanischen oder physiologischen Überlegung. Mündlich formuliere ich: `Die Bewegung gliedert sich in Vorbereitung, Hauptphase und Endphase; entscheidend ist die Hauptphase, weil dort die für das Ergebnis maßgebliche Leistung erbracht wird — biomechanisch etwa durch die Umsetzung der Anlaufgeschwindigkeit, physiologisch etwa durch die Bereitstellung der nötigen Energie.`
+ANTWORT:A走程序(i)Wort-Weg,以测量值与机制论证上限;B走程序(ii)Demo-Weg,以情境与位置论证兑现。德语口述句收束。
 
-> **口述提示**：先判断题目要"描述"还是"解释"，再决定是先逐相说过程，还是先点主相再给机制理由；给纠错时务必点出 Fehlerbild 与 Korrektur 两句。
->
-> **Redemittel（口述句）**：`Die Bewegung gliedert sich in drei Phasen; entscheidend ist die Hauptphase, weil dort ein konkreter Mechanismus über das Ergebnis bestimmt.`
+`Klausur-Satz: Verfahren (i) setzt die Grenze, Verfahren (ii) nutzt die Lage; die Wahl traegt das Urteil.`
 
-Klausur-Satz: `Beschreiben heißt, die Phasen zu benennen; erklären heißt, die entscheidende Phase mit einem Mechanismus zu begründen.`
+## Schritt 6 — check: Selbsttest zu Bewegung erklären
 
-## Schritt 6 — check
+CHECK检索默写(自测3题,与答案配对):
 
-CHECK检索默写（自测 3 题，与答案配对）：
+FRAGE:如何在赛事中认出本课核心? | ANTWORT:看数值目标(3 Erklaer-Schritte)与S3机制。
+FRAGE:如何达标? | ANTWORT:测量、术语释义、从机制推纠正三步。
+FRAGE:何时选程序(i)而非(ii)? | ANTWORT:问上限选(i),问兑现选(ii)。
 
-FRAGE: In welche drei Phasen gliedert sich jede Bewegung? | ANTWORT: In die Vorbereitungs-, die Haupt- und die Endphase.
-FRAGE: Wie lautet der Baustein für die Erklärung der entscheidenden Phase? | ANTWORT: `Entscheidend ist …, weil …` — mit biomechanischer oder physiologischer Begründung.
-FRAGE: Was macht eine vollständige Bewegungserklärung noch aus? | ANTWORT: Ein typischer Fehler mit einer konkreten Korrektur.
-
-Klausur-Satz: `Eine vollständige Bewegungserklärung besteht aus der Phasengliederung, der begründeten Hauptphase sowie einem Fehler mit Korrektur.`
+`Klausur-Satz: Selbsttest bestanden heisst Target lesen, Verfahren waehlen und Urteil begruenden.`
 
 ## Fehlvorstellung
 
@@ -135,19 +128,18 @@ Klausur-Satz: `Eine vollständige Bewegungserklärung besteht aus der Phasenglie
    中文纠偏：不算。理由必须落到具体机制——生物力学（力、速度、角度、杠杆）或生理学（肌肉温度、能量供应、神经控制）。只说"很重要""很关键"是空话，拿不到解释分。
    Korrektur-Satz: `Als Begründung gilt nur ein konkreter Mechanismus — biomechanisch oder physiologisch — nicht die bloße Behauptung, eine Phase sei wichtig.`
 
-## Schritt 7 — szenario
+## Schritt 7 — szenario: Klausurtransfer: Bewegung erklären — Mentor im Erklaer-Duell
+中文:你是Mentor im Erklaer-Duell,在Schulsporthalle, Erklaer-Duell der Traineranwaerter中必须用德语连贯口述(约90秒)诊断、措施与数值目标(3 Erklaer-Schritte, 90 s Ansage, genau 1 Korrekturpunkt),并以术语举证。
+ROLLE: Du bist Mentor im Erklaer-Duell. SITUATION: In Schulsporthalle, Erklaer-Duell der Traineranwaerter stellst du Diagnose, Massnahme und Target (3 Erklaer-Schritte, 90 s Ansage, genau 1 Korrekturpunkt) in ca. 90 Sekunden vor.
+RUBRIC (30 XP):诊断术语8分 | 措施与目标举证10分 | 程序选择对比7分 | 德语表达5分。
 
-ROLLE: Du bist Prüfling in einer mündlichen Sportprüfung und sollst eine Bewegung aus deinem Kurs erklären.
-SITUATION: Der Prüfer fordert dich auf, eine von dir gewählte Bewegung (z. B. den Absprung beim Weitsprung oder den Kugelstoß) in drei Phasen zu erklären. Sprich in zusammenhängenden deutschen Sätzen (ca. 2 Minuten): Nenne die drei Phasen, markiere die Hauptphase, begründe sie biomechanisch oder physiologisch mit einem weil-Satz und nenne einen häufigen Fehler mit Korrektur.
-RUBRIC (30 XP): Vollständige Nennung der drei Phasen mit je einer Tätigkeit (8 XP) | Korrekte Markierung der Hauptphase (5 XP) | Biomechanische oder physiologische Begründung mit weil-Satz und Fachbegriff (z. B. Herzfrequenz, Dehnung, Koordination) (10 XP) | Ein typischer Fehler mit konkreter Korrektur (4 XP) | Freies, zusammenhängendes Sprechen mit Fachsprache (3 XP).
+## Schritt 8 — reflexion: Takeaway & Reflexion — 奖杯还是进站检修
 
-## Schritt 8 — reflexion: Takeaway & Reflexion
+TAKEAWAY 1盒(核心总结):
 
-TAKEAWAY 1盒（核心总结）：
+中文:上限早锁定、位置晚兑现;数值目标(3 Erklaer-Schritte, 90 s Ansage, genau 1 Korrekturpunkt)是裁判,程序选择是辩护;本关连着冲量角逐、体能极限与主导动机三幕,测得出、说得清、赢下来。
+Takeaway-Satz: `Wer die Grenze sichert und die Lage nutzt, holt den Pokal.`
 
-中文：讲动作不是背动作，而是"分相—定位主相—给理由—补纠错"四步。先切三相（Vorbereitung / Hauptphase / Endphase），再把解释的重心压到主相上，用 `Entscheidend ist …, weil …` 把理由落到生物力学或生理学机制，最后补一个 Fehler + Korrektur。记住一句话：能做不等于能讲清，能讲清"为什么"，才叫 erklären。
-Takeaway-Satz: `Die Bewegung gliedert sich in drei Phasen; entscheidend ist die Hauptphase, weil dort ein biomechanischer oder physiologischer Mechanismus über das Ergebnis bestimmt.`
-
-REFLEXION 2问：
-1. 过程自省：Konnte ich alle drei Phasen nennen und die Hauptphase mit einem weil-Satz begründen — oder fehlten mir die Fachbegriffe (z. B. Herzfrequenz, Dehnung, Koordination) und die Korrektur des Fehlers?
-2. 元认知计划：Beim nächsten Mal prüfe ich zuerst, ob meine Begründung einen konkreten Mechanismus nennt und ob ein Fehler mit Korrektur dabei ist, bevor ich zu sprechen beginne.
+REFLEXION 2问:
+1. 过程自省:沙盘精度(Schritt 4)与程序选择(Schritt 5)哪一步更难?
+2. 元认知计划:下次先记测量值加相位,因为一切论证都从它长出来。

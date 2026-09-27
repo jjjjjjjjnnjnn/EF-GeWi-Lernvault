@@ -15,47 +15,53 @@ version: Lesson-v3
 
 <!-- Lesson v3 architecture: Schritte 1-8 fixed; Fehlvorstellung between Schritt 6 and 7 (parser skipped); embedded [Werkzeug: <id>]; gating: check/szenario failed = Weiter greyed; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
-## Schritt 1 — entdecken
+## Schritt 1 — entdecken: Trainingslager Kienbaum — 赛场警报
 
-ZIELE (3 Ziele, nach 20 Minuten erreichbar):
+ZIELE (3条,本节15分钟学完能做到——先读中文,再记德语):
 
-1. Die fuenf Normative (Intensitaet, Dauer, Umfang, Dichte, Haeufigkeit) beschreiben.
-2. Einen Reiz als unterschwellig, adaequat oder ueberschwellig einstufen.
-3. Einen Wochenplan mit Normativen muendlich beurteilen und korrigieren.
+1. 中文:能一句话定义`Belastungsreiz und Trainingsnormative`,并定位到本关赛事Trainingslager Kienbaum, Reizsteuerungs-Woche。
+2. 中文:能口述核心机制,并用数值目标(Puls 140 bis 160/min, 3x10 Wiederholungen, Dichte 1:2)举证。
+3. 中文:能诊断一处典型错误,并用德语Klausur-Satz收束(AF B II)。
 
-VORAUSSETZUNG: Superkompensation, Energiebereiche und Laktatschwellen.
+### Hook 赛场/舞台实况
 
-VORGAENGER-VERWEIS UND ARBEITSTEILUNG (L2-Abgrenzung): Diese Lektion setzt `Sport-Ausdauertraining-Prinzipien-L1.md` voraus und wiederholt sie nicht. Dort wurden Superkompensationskurve und Prinzipien (Belastung-Erholung, Progression, Kontinuitaet) eingefuehrt. Hier folgt der enge L2-Ausschnitt: nur quantitative Normative zur Reizsteuerung; Kurvenverlauf und Prinzipienkatalog gehoeren zur L1 und werden vorausgesetzt. Wer nur das Timing des naechsten Reizes braucht, arbeitet weiter mit der L1-Methode.
+聚光灯打向Trainingslager Kienbaum, Reizsteuerungs-Woche,这是《冠军竞技场与节拍工坊》战役的下一关:上一集埋下的悬念在此引爆,教练/首席必须在限时内拿出方案。刺激-恢复-超量:强度量密度频率时长五规范定刺激,36-72小时恢复长出超量,过大透支、过小无痕。本关必须过沙盘数值目标,下一集的瓦格纳动机/体能极限/冲量角逐在此埋下伏笔。
 
-Klausur-Satz: `Normative machen aus dem richtigen Zeitpunkt die richtige Dosis.`
+Hook (DE): Im Rampenlicht von Trainingslager Kienbaum, Reizsteuerungs-Woche beginnt unser naechster Akt der Kampagne Champion-Arena und Takt-Werkstatt. Stell dir vor: Die Trainingswoche steht, doch der Star ist platt statt frisch: zu viel Reiz ohne Erholung frisst Form statt sie zu bauen. Wo liegt die Grenze zwischen Aufbau und Uebermass? Die Normative dosieren den Reiz aus Intensitaet, Umfang, Dichte, Dauer und Haeufigkeit. Erstens setzt der Reiz das Signal. Zweitens formt die Erholung den Anstieg. Drittens wiederholt die Woche die Spirale. Wer Reiz und Pause balanciert, erntet Superkompensation. Heute dosieren wir genau diese Woche: stellen, messen und Aufbau befehlen.
 
-## Schritt 2 — entdecken
+`Klausur-Satz: Leitsatz des Themas.`
 
-PRETRAINING (Kernbegriffe):
+## Schritt 2 — entdecken: 5术语装备盒
 
-- Intensitaet: Staerke des Reizes, etwa Tempo, Last oder Herzfrequenz.
-- Dauer und Umfang: Laenge einer Einheit und Gesamtmenge pro Woche.
-- Dichte: Verhaeltnis von Belastung zu Erholung innerhalb der Einheit.
-- Haeufigkeit: Einheiten pro Woche als Reizsumme.
-- Reizstufen: Unterschwellig (kein Effekt), adaequat (Anpassung), ueberschwellig (Schaedigung).
+PRETRAINING术语盒(核心5词,先读三遍中德,合书自测中文→德语):
 
-Klausur-Satz: `Adaequat reizt ueber der Schwelle der Gewoehnung und unter der Schwelle der Schaedigung.`
+中文在上,德语在下:
 
-## Schritt 3 — entdecken
+- 负荷刺激 — Belastungsreiz:超量恢复的训练输入 / Trainingsreiz fuer Superkompensation。
+- 强度 — Intensitaet:速度、负重与心率 / Tempo, Last und Puls。
+- 量 — Umfang:组数、距离与时长 / Saetze, Strecke und Dauer。
+- 密度 — Dichte:练休比 / Verhaeltnis von Belastung und Pause。
+- 超量恢复 — Superkompensation:恢复后能力高于原水平 / Leistung nach Erholung ueber Ausgangsniveau。
 
-ENTDECKEN (ein Konzept plus Diagramm):
+`Klausur-Satz: Die fuenf Begriffe tragen Diagnose, Sandkasten und Urteil als gemeinsame Sprache.`
 
-Steuerung folgt $Reiz + passend = Anpassung$. Jede Normative besitzt eine Zone: zu wenig verpufft, passend adaptiert, zu viel verletzt. Dichte steuert Intervalle ($Belastung : Pause$), Haeufigkeit die Wochensumme. Diagnose heisst: Plan in fuenf Zahlen uebersetzen, schwache Stellschraube finden, minimal korrigieren.
+## Schritt 3 — entdecken: 生理/音乐机制传导
+
+ENTDECKEN(1概念 + 1文字图解,中文在上、德语在下):
+
+中文:刺激-恢复-超量:五规范定刺激(强度量密度频率时长),恢复36-72小时,能力螺旋上升;过大则透支,过小则无痕。
+
+Mechanismus (DE): Reiz, Erholung und Superkompensation: Die Normative dosieren den Reiz, 36 bis 72 Stunden formen den Anstieg, Uebermass bricht ihn.
+
+战役传导:本关承接冲量角逐、乳酸阈值与主导动机三幕,测得出才能说得清,说得清才能赢下来。
 
 ```diagram
-Normative: Intensitaet | Dauer | Umfang | Dichte | Haeufigkeit
-Zonen: unterschwellig (nutzlos) | adaequat (Aufbau) | ueberschwellig (Risiko)
-Dichte: Belastung : Pause (z. B. 1:1 extensiv, 1:3 intensiv)
-Regel: erst Haeufigkeit, dann Umfang, zuletzt Intensitaet steigern
-Formel: Reiz + passend = Anpassung
+Kampagne [Impuls -> Schwelle -> Leitmotiv]
+Holphase [sichern] -> Pruefphase [Puls 140 bis 160/min, 3x10 Wiederholungen, Dichte 1:2] -> Zielphase [nutzen]
+Regel: Fehler frueh = Grenze | Fehler spaet = Ausnutzung
 ```
 
-Klausur-Satz: `Progression schuetzt vor Ueberlastung, wenn sie bei Haeufigkeit beginnt.`
+`Klausur-Satz: Der Mechanismus trennt Grenze von Ausnutzung und ordnet jeden Fehler seiner Phase zu.`
 
 ## Anekdote & Fun-Fact
 
@@ -63,48 +69,50 @@ Klausur-Satz: `Progression schuetzt vor Ueberlastung, wenn sie bei Haeufigkeit b
 
 **Bezug zum Konzept**: `Erst mehrmals laufen, dann laenger laufen, erst zuletzt schneller laufen.`
 
-## Schritt 4 — ausprobieren
+## Schritt 4 — ausprobieren: 沙盘决战 Puls 140 bis 160/min
 
-BEISPIEL (vollstaendige Musterloesung):
+BEISPIEL(含教具操作与解答):
 
 [Werkzeug: formula]
 
-AUFGABE (beurteilen, AFB III): Beurteilen Sie muendlich den Plan: dreimal pro Woche $8 \, km$ im Grundlagentempo plus einmal $10 \times 400 \, m$ intensiv mit kurzer Pause fuer einen Anfaenger im ersten Monat.
+AUFGABE (analysieren, AFB II):Normativ-Formel Reiz aus Intensitaet mal Umfang: stelle Puls 140-160 bei 3x10 und Dichte 1:2 ein;达标线:Puls 140 bis 160/min, 3x10 Wiederholungen, Dichte 1:2。
+
+Target数值目标:Puls 140 bis 160/min, 3x10 Wiederholungen, Dichte 1:2。
 
 HILFE:
-1. Schritt 1: Normative in Zahlen fassen.
-2. Schritt 2: Reizstufe einschaetzen.
-3. Schritt 3: Minimale Korrektur nennen.
+1. 定相命名:先说相位与错误画像,对照目标Puls 140 bis 160/min。
+2. 读数释义:读出测量值,用一个术语解释效应。
+3. 推纠正:从机制推出一条可操作纠正。
 
-MUSTERLOESUNG: Haeufigkeit und Umfang sind fuer den Anfang hoch, die Intensitaet mit zehn Wiederholungen bei kurzer Dichte klar ueberschwellig. Der Plan riskiert Ueberlastung, weil Progression bei Intensitaet statt bei Haeufigkeit beginnt. Korrektur: Intervall auf $5 \times 400 \, m$ mit Dichte $1:3$ kuerzen, Grundlageneinheiten auf zweimal begrenzen und erst nach vier Wochen Umfang um circa zehn Prozent steigern.
+MUSTERLÖSUNG:对照目标(Puls 140 bis 160/min, 3x10 Wiederholungen, Dichte 1:2),先定相命名错误画像,再读数并以术语释效应,最后从机制推纠正;在Trainingslager Kienbaum, Reizsteuerungs-Woche中形成 保障—转化—兑现 的完整因果链,达标即过关。
 
-Klausur-Satz: `Ueberschwellige Intensitaet bei hoher Haeufigkeit verlangt Kuerzung der schaerfsten Einheit zuerst.`
+`Klausur-Satz: Am Target zeigt sich, ob Grenze oder Ausnutzung ueber das Ergebnis entschied.`
 
-## Schritt 5 — ausprobieren
+## Schritt 5 — ausprobieren: VERGLEICH技术对抗 Umfang-Weg vs Intensitaets-Weg
 
-VERGLEICH (erst Verfahren waehlen, dann loesen):
+VERGLEICH辨别实验(双向辨析,先选程序再解题):【选程序】
 
-VERGLEICH: Waehle erst das Verfahren — (i) Normativ-Verfahren (fuenf Zahlen pruefen, Dosis korrigieren) oder (ii) Kurven-Verfahren (Reizzeitpunkt auf der Superkompensationskurve pruefen) — dann loesen.
+VERGLEICH:先选程序—— (i) Umfang-Weg 还是 (ii) Intensitaets-Weg ——再解题。WegA讲上限/结构,WegB讲兑现/情境。【选程序:问上限与结构选(i),问兑现与情境选(ii)。口述先说 Ich waehle Verfahren (i)/(ii), weil …】
 
-AUFGABE A: Ist die Pause zwischen Intervallen zu kurz? Welches Verfahren passt?
+AUFGABE A (Umfang-Weg):在Trainingslager Kienbaum, Reizsteuerungs-Woche的首个案例中选哪条路,如何论证?
 
-AUFGABE B: Faellt der naechste Reiz in Ermuedung oder Superkompensation? Welches Verfahren passt?
+AUFGABE B (Intensitaets-Weg):在对立案例中选哪条路,如何论证?
 
-HILFE: A fragt nach Dosis, also Verfahren (i). B fragt nach Zeitpunkt, also Verfahren (ii).
+HILFE:A问上限属于程序(i);B问兑现属于程序(ii)。先说选哪条路,再给测量/情境证据。
 
-ANTWORT: A erfordert Verfahren (i): Dichte von $1:1$ auf $1:3$ entspannen und Intensitaet sichern. B erfordert Verfahren (ii): Kurvenlage bestimmen; bei Ermuedung pausieren, bei Superkompensation setzen.
+ANTWORT:A走程序(i)Umfang-Weg,以测量值与机制论证上限;B走程序(ii)Intensitaets-Weg,以情境与位置论证兑现。德语口述句收束。
 
-Klausur-Satz: `Dosisfehler verlangen Normative, Zeitfehler verlangen Kurve.`
+`Klausur-Satz: Verfahren (i) setzt die Grenze, Verfahren (ii) nutzt die Lage; die Wahl traegt das Urteil.`
 
-## Schritt 6 — check
+## Schritt 6 — check: Selbsttest zu Belastungsreiz und Trainingsnormative
 
-CHECK (drei Fragen mit Antworten):
+CHECK检索默写(自测3题,与答案配对):
 
-FRAGE: Welche fuenf Normative steuern den Reiz? | ANTWORT: Intensitaet, Dauer, Umfang, Dichte und Haeufigkeit.
-FRAGE: Wie lautet die Progressionsregel? | ANTWORT: Erst Haeufigkeit, dann Umfang, zuletzt Intensitaet steigern.
-FRAGE: Wie lautet die Steuerformel? | ANTWORT: $Reiz + passend = Anpassung$ zwischen den Schwellen.
+FRAGE:如何在赛事中认出本课核心? | ANTWORT:看数值目标(Puls 140 bis 160/min)与S3机制。
+FRAGE:如何达标? | ANTWORT:测量、术语释义、从机制推纠正三步。
+FRAGE:何时选程序(i)而非(ii)? | ANTWORT:问上限选(i),问兑现选(ii)。
 
-Klausur-Satz: `Ohne Zahlen bleibt Trainingsberatung Meinung, mit Normativen wird sie Pruefung.`
+`Klausur-Satz: Selbsttest bestanden heisst Target lesen, Verfahren waehlen und Urteil begruenden.`
 
 ## Fehlvorstellung
 
@@ -114,19 +122,18 @@ Klausur-Satz: `Ohne Zahlen bleibt Trainingsberatung Meinung, mit Normativen wird
 2. Fehlvorstellung: Pause sei verlorene Zeit.
    Korrektur-Satz: `Dichte und Haeufigkeit erzeugen erst durch Erholung die Anpassung.`
 
-## Schritt 7 — szenario
+## Schritt 7 — szenario: Klausurtransfer: Belastungsreiz und Trainingsnormative — Trainingsplaner in Kienbaum
+中文:你是Trainingsplaner in Kienbaum,在Trainingslager Kienbaum, Reizsteuerungs-Woche中必须用德语连贯口述(约90秒)诊断、措施与数值目标(Puls 140 bis 160/min, 3x10 Wiederholungen, Dichte 1:2),并以术语举证。
+ROLLE: Du bist Trainingsplaner in Kienbaum. SITUATION: In Trainingslager Kienbaum, Reizsteuerungs-Woche stellst du Diagnose, Massnahme und Target (Puls 140 bis 160/min, 3x10 Wiederholungen, Dichte 1:2) in ca. 90 Sekunden vor.
+RUBRIC (30 XP):诊断术语8分 | 措施与目标举证10分 | 程序选择对比7分 | 德语表达5分。
 
-ROLLE: Du bist Pruefling in der muendlichen Pruefung.
-SITUATION: Stelle in circa 2 Minuten einen korrigierten Zwei-Wochen-Plan mit allen fuenf Normativen vor und begruende jede Zahl mit Reizstufe und Progression.
-RUBRIC (30 XP): Fuenf Normative genannt (10 XP) | Reizstufe begruendet (8 XP) | Progression beachtet (6 XP) | Fachsprachlicher Vortrag (6 XP).
+## Schritt 8 — reflexion: Takeaway & Reflexion — 奖杯还是进站检修
 
-## Schritt 8 — reflexion: Takeaway & Reflexion
+TAKEAWAY 1盒(核心总结):
 
-TAKEAWAY:
+中文:上限早锁定、位置晚兑现;数值目标(Puls 140 bis 160/min, 3x10 Wiederholungen, Dichte 1:2)是裁判,程序选择是辩护;本关连着冲量角逐、体能极限与主导动机三幕,测得出、说得清、赢下来。
+Takeaway-Satz: `Wer die Grenze sichert und die Lage nutzt, holt den Pokal.`
 
-Dosis vor Zeitpunkt: Normative dosieren, Kurve terminiert. Erst oft, dann lang, zuletzt schnell.
-Takeaway-Satz: `Richtig dosiert traegt jeder Reiz, falsch dosiert bricht jeder Plan.`
-
-REFLEXION:
-1. Welcher Schritt fiel schwerer — die Dosisbeurteilung (Schritt 4) oder die Verfahrenswahl (Schritt 5)?
-2. Beim naechsten Mal zerlege ich zuerst den Plan in fuenf Zahlen, weil sie jede Korrektur tragen.
+REFLEXION 2问:
+1. 过程自省:沙盘精度(Schritt 4)与程序选择(Schritt 5)哪一步更难?
+2. 元认知计划:下次先记测量值加相位,因为一切论证都从它长出来。

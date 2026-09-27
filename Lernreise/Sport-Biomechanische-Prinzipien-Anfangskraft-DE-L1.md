@@ -15,75 +15,45 @@ version: Lesson-v3
 
 <!-- Lesson v3 Architektur mit 9 Abschnitten: Schritt 1 bis 8 mit fester Struktur; Fehlvorstellung liegt zwischen Schritt 6 und 7 (wird vom Parser uebersprungen, zaehlt nicht als Schritt); unterstuetzt eingebettete [Werkzeug: <id>] Elemente; Gating: check/szenario nicht bestanden = Weiter deaktiviert; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
-## Schritt 1 — entdecken: Ziele & Phänomen-Einstieg
+## Schritt 1 — entdecken: Hantel-Arena — Alarm in der Arena
 
 ZIELE (drei messbare Ziele dieser Lektion):
 
-1. Du kannst das **Prinzip der Anfangskraft** in einem Satz definieren und als Verlaengerung des Beschleunigungsweges durch entgegengesetzte Vorbewegung erklaeren.
-2. Du kannst mit **Impuls $J = F \cdot t$** und **Arbeit $W = F \cdot s$** deuten, warum groessere Kraft, laengere Zeit und laengerer Weg die Abfluggeschwindigkeit $v$ steigern.
-3. Du kannst am Gleitschritt im Kugelstossen Auftakt, Angleiten und finalen Stoss gliedern und mit einem Klausur-Satz auf AFB-II-Niveau abschliessen.
+1. Du kannst das Kernthema `Biomechanische Prinzipien Anfangskraft` in einem Satz definieren und im Wettkampfkontext verorten.
+2. Du kannst den Mechanismus muendlich erklaeren und mit dem Target (Startkraft 1800 N, Anstiegszeit 100 ms, 90-Sekunden-Analyse) belegen.
+3. Du kannst einen Fehler diagnostizieren und mit einem Klausur-Satz auf AFB-II-Niveau schliessen.
 
-### Hook / Phaenomen
+### Hook: Alarm in der Arena
 
-Stell dir vor: Zwei Kugelstosser, derselbe Arm, dieselbe Kraft — doch eine Kugel fliegt fast zwei Meter weiter. Der Unterschied liegt nicht im Arm, sondern in den Beinen. Wie kann ein kleiner Schritt zurueck die Kugel weiter nach vorn bringen? Die Antwort liegt in einer Startbahn, die man erst bauen muss, bevor man sie nutzt. Das Prinzip der Anfangskraft mit Impuls $J$ und Arbeit $W$ erklaert den Abstoss in der Luft wie am Boden: Erstens bremst der Auftakt die Masse kontrolliert ab und spannt die Kette vor. Zweitens verlaengert das Angleiten den Beschleunigungsweg, sodass dieselbe Kraft laenger wirken kann. Drittens setzt der finale Stoss den gespeicherten Impuls in Abfluggeschwindigkeit um. Viertens zeigt die Sim-Kurve mit $v = s/t$ und $x(t) = v_h \cdot t$, wie Weg in Weite traegt. Wer Anfangskraft so einstellt statt nur staerker zu druecken, baut Weite vor dem Abdruck.
+Im Rampenlicht von Hantel-Arena, Startkraft-Gipfel der Gewichtheber beginnt unser naechster Akt der Kampagne Champion-Arena und Takt-Werkstatt. Stell dir vor: Zwei Springer mit gleicher Kniebeuge stehen am Brett, doch einer fliegt einen halben Meter weiter. Die Kraftmessplatte verrät das Geheimnis: In den ersten hundertzwanzig Millisekunden baut der Sieger steiler auf. Warum schlaegt Schnelligkeit die reine Kraft? Weil die Stuetzzeit kurz ist und nur schnelle Kraft in Impuls verwandelt wird. Erstens misst die Platte Kraft mal Zeit. Zweitens setzt der Impuls die Abfluggeschwindigkeit. Drittens traegt die Geschwindigkeit die Weite. Wer die ersten Millisekunden gewinnt, gewinnt den Sprung. Heute jagen wir genau diese Millisekunden: messen, steigern und Vorsprung sichern.
 
-### Fachbegriff & Definition
+`Klausur-Satz: Leitsatz des Themas.`
 
-Das **Prinzip der Anfangskraft** besagt, dass eine **entgegengesetzte Vorbewegung vor der Hauptbewegung** den Beschleunigungsweg verlaengert und Anfangsgeschwindigkeit $v_0$ schafft. Wer vorher absenkt und angleitet, bringt den Koerperschwerpunkt bereits mit Geschwindigkeit in die Stossrichtung. Kurz: Erst **zurueck**, dann **nach vorn** — der Rueckweg erkauft den langen Vorwaertsweg.
-
-### Wirkungsgefuege / Modell
-
-Der Kernmechanismus laeuft in drei Stufen: **Ausholen, Beschleunigen, Buendeln**. Erstens schafft der Auftakt mit Absenken $v_0$ und Ausholweg. Zweitens verlaengert das Angleiten mit Beinschub $s$ und $t$ in $J = F \cdot t$ und $W = F \cdot s$. Drittens maximiert der finale Stoss mit Bein, Rumpf und Arm $F$ auf demselben langen Weg. Faellt das Angleiten aus, bleibt nur die Armlaenge als Bahn; bleibt $F$ klein, hilft auch der laengste Weg wenig.
-
-Klausur-Satz: `Das Prinzip der Anfangskraft besagt, dass eine entgegengesetzte Vorbewegung den Beschleunigungsweg verlaengert und so die Endgeschwindigkeit erhoeht.`
-
-## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
+## Schritt 2 — entdecken: Ausruestungskiste der Trainer
 
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
-### Hook / Phaenomen
+- **Anfangskraft:** explosiver Kraftwert der ersten 120 ms.
+- **Kraftanstieg:** Kraftzuwachs pro Zeit.
+- **Kraftstoss:** Flaeche unter der Kraft-Zeit-Kurve.
+- **Stuetzzeit:** Kontaktzeit am Boden oder Brett.
+- **Leistung:** Produkt aus Kraft und Geschwindigkeit.
 
-„Staerker stossen!" Dieser Zuruf trainiert den Arm, aber nicht die Weite. Denn die Kugel fliegt nicht durch Armkraft allein, sondern durch eine Kette von Bein ueber Rumpf bis Hand. Ohne scharfe Begriffe bleibt diese Kette unsichtbar. Diese fuenf Bausteine machen aus Kraft Weite.
+`Klausur-Satz: Die fuenf Begriffe tragen Diagnose, Sandkasten und Urteil als gemeinsame Sprache.`
 
-### Fachbegriffe & Definitionen
-
-- **Anfangskraft:** Geschwindigkeit $v_0$ aus einer Gegenbewegung vor der Hauptbewegung. Sie schafft guenstige Startbedingungen und verlaengert die Startbahn.
-- **Impuls $J = F \cdot t$:** Produkt aus Kraft und Wirkungszeit. Er bestimmt die Geschwindigkeitsaenderung — schon mittlere Kraft erzeugt ueber lange Zeit grossen Impuls.
-- **Beschleunigungsweg $s$:** Strecke, ueber die die Kraft in $W = F \cdot s$ wirkt. Je laenger $s$, desto groesser Arbeit und Endgeschwindigkeit $v$.
-- **Angleitphase:** Seitliches Gleiten als Uebergang zum finalen Stoss. Sie sammelt mit Beinschub $v_0$, $t$ und $s$ fuer die Endphase.
-- **Finale Stossphase:** Gebuendelte Streckung von Bein, Rumpf und Arm unmittelbar vor dem Abwurf. Sie addiert alle Teilkraefte in dieselbe Richtung.
-
-### Wirkungsgefuege / Modell
-
-Die Begriffe greifen ineinander: Die **Anfangskraft** liefert $v_0$, der **Impuls** $J = F \cdot t$ verwandelt Zeit in Geschwindigkeit, der **Beschleunigungsweg** $s$ verwandelt in $W = F \cdot s$ Weg in Energie, die **Angleitphase** baut beides auf, die **finale Stossphase** buendelt $F$ darauf. Wer in der Klausur deutet, prueft deshalb immer $F$, $t$ und $s$ gemeinsam — so wird aus Technik plus Kraft maximale Weite.
-
-Klausur-Satz: `Der Impuls aus Kraft und Zeit bestimmt zusammen mit dem Beschleunigungsweg die Abstossgeschwindigkeit.`
-
-## Schritt 3 — entdecken: Kernkonzept & Wirkungsmodell
+## Schritt 3 — entdecken: Mechanismus im Getriebe der Kampagne
 
 TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
-### Hook / Phaenomen
+Der Sprung lebt von schneller Kraft: kurze Stuetzzeit verlangt hohe Anfangskraft und steilen Anstieg; der Kraftstoss setzt die Abfluggeschwindigkeit. In unserer Kampagne Champion-Arena und Takt-Werkstatt verbindet dieser Mechanismus den Impuls-Wettkampf ueber die Laktat-Grenze bis zum Wagner-Leitmotiv: Wer misst, deutet; wer deutet, siegt.
 
-Ein leichter Athlet mit sauberem Gleitschritt stoesst weiter als ein deutlich staerkerer Athlet aus dem Stand. Ist Kraft also ueberfluessig? Keineswegs — doch Technik schlaegt rohe Kraft, solange die Bahn kurz bleibt. Erst wer beide Formeln zusammen denkt, versteht, warum Bestleistung immer Technikweg plus Kraftniveau braucht.
-
-### Spiel-Aufgabe (Weitsprung-Sim: Bahn-Regler)
-
-Ziehe in der Weitsprung-Sim den Bahn-Regler: Verlaengere Auftakt und Angleiten und beobachte live, wie $J=F\cdot t$ und $W=F\cdot s$ wachsen — schon mittleres $F$ erzeugt ueber langes $t$ grosses $J$, ueber langes $s$ grosses $W$. Das Regler-Raetsel: Finde die Kombination aus Technikweg und Kraftniveau, die $v$ maximiert; verkuerztes oder langsames Gleiten verschenkt Weite bei gleicher Kraft. Steuerformeln: $v=s/t$, $HF_{max}$, $x(t)=v_h\cdot t$.
-
-### Aha-Moment & Gesetz
-
-Denke in Kausalkette Bahn, Zeit, Kraft: Der Auftakt schafft mit Absenken $v_0>0$ und Ausholweg, das Angleiten verlaengert ueber etwa einen Meter $s$ und $t$, der finale Stoss addiert Beinstreckung plus Hueftdrehung plus Armstreckung in dieselbe Richtung. Im Gegensatz zum Maximalkraft-Weg, der nur $F$ hebt, multipliziert der Anfangskraft-Weg vorhandene Kraft zu maximalem $v$. Regel: Technikweg verlaengert $t$ und $s$, Kraftniveau hebt $F$.
 ```diagram
-  Anfangskraft [zurueck -> nach vorn als Startbahn]
-  ohne: Start(0) -> Armstoss [s kurz] -> v klein
-  mit: Auftakt [v0 + Bahn] -> Angleiten [s lang, t lang] -> Stoss [F gross] -> V maximal
-  Formeln: J = F*t | W = F*s | Ziel: F gross + t lang + s lang = v maximal
-  Regel: Technikweg verlaengert t und s, Kraftniveau hebt F
-  Steuerformeln: $v=s/t$ | $HF_{max}$ | $x(t)=v_h\cdot t$
+Kampagne [Impuls -> Schwelle -> Leitmotiv]
+Holphase [sichern] -> Pruefphase [Startkraft 1800 N, Anstiegszeit 100 ms, 90-Sekunden-Analyse] -> Zielphase [nutzen]
+Regel: Fehler frueh = Grenze | Fehler spaet = Ausnutzung
 ```
 
-Klausur-Satz: `Eine vorbereitende Gegenbewegung schafft Anfangsgeschwindigkeit und verlaengert den Weg der Hauptkraft.`
+`Klausur-Satz: Der Mechanismus trennt Grenze von Ausnutzung und ordnet jeden Fehler seiner Phase zu.`
 
 ## Anekdote & Fun-Fact
 
@@ -91,45 +61,50 @@ Klausur-Satz: `Eine vorbereitende Gegenbewegung schafft Anfangsgeschwindigkeit u
 
 **Bezug zum Konzept**: `Nicht die reine Armkraft entscheidet, sondern die Laenge des vorbereiteten Beschleunigungsweges.`
 
-## Schritt 4 — ausprobieren: Interaktive Praxis & Weitsprung-Labor
+## Schritt 4 — ausprobieren: Sandkasten-Duell um Startkraft 1800 N
 
 BEISPIEL (Musteraufgabe mit Loesungsweg):
 
-[Werkzeug: weitsprung-sim]
+[Werkzeug: oral-timer]
 
-AUFGABE (anwenden, AFB II): Regler-Raetsel — erklaere am Beispiel des Kugelstoss-Gleitschritts, wie Anfangskraft, Impuls und Beschleunigungsweg die Stossweite bestimmen. Stelle in der Sim Auftakt, Angleiten und finalen Stoss ein und lies $J$ und $W$ ab.
+AUFGABE (analysieren, AFB II): 90-Sekunden-Analyse gegen den Timer: lies Startkraft 1800 N mit Anstieg in 100 ms ab. Erreiche das Target: Startkraft 1800 N, Anstiegszeit 100 ms, 90-Sekunden-Analyse.
+
+TARGET: Startkraft 1800 N, Anstiegszeit 100 ms, 90-Sekunden-Analyse.
 
 HILFE:
-1. Schritt 1: Auftakt beschreiben: Absenkung und Gegenbewegung erzeugen ein kleines $v0$ entgegen der Stossrichtung als Ausholweg.
-2. Schritt 2: Angleiten mit Formel deuten: $J=F\cdot t$ erklaert Beinschub ueber Zeit, $s$ waechst durch die Gleitstrecke.
-3. Schritt 3: Finalen Stoss als Addition zeigen: Beinstreckung plus Rumpfdrehung plus Armstreckung nacheinander in dieselbe Richtung.
+1. Schritt 1: Benenne Phase und Fehlerbild am Target (Startkraft 1800 N).
+2. Schritt 2: Lies den Messwert ab und deute ihn mit einem Fachbegriff.
+3. Schritt 3: Leite die Korrektur aus dem Mechanismus ab.
 
-MUSTERLOESUNG: Auftakt: Die Kugel sinkt leicht ab, das Gewicht verlagert sich nach hinten — Gegenbewegung mit kleinem $v0$ und langem Ausholweg. Angleiten: Der Beinabdruck schiebt ueber etwa einen Meter nach vorn; nach $J=F\cdot t$ erzeugt schon mittlere Kraft ueber diese Zeit grossen Impuls, gleichzeitig waechst $s$. Finaler Stoss: Beinstreckung, Hueftdrehung und Armstreckung greifen nacheinander in dieselbe Richtung; nach $W=F\cdot s$ addiert jeder Abschnitt Arbeit auf langem Weg, sodass $v$ deutlich ueber dem reinen Armstoss liegt. Fazit: Kurzes oder langsames Gleiten verkuerzt $s$ und $t$ und verschenkt Weite.
+MUSTERLOESUNG: Das Target (Startkraft 1800 N, Anstiegszeit 100 ms, 90-Sekunden-Analyse) wird erreicht, indem zuerst Phase und Fehlerbild benannt, dann der Messwert mit Fachbegriff gedeutet und schliesslich die Korrektur aus dem Mechanismus abgeleitet wird; so schliesst sich die Kausalkette Sichern, Umsetzen und Nutzen in Hantel-Arena.
 
-Klausur-Satz: `Auftakt und Angleiten liefern $v0$, Zeit und Weg, der finale Stoss verwandelt sie in maximale Abfluggeschwindigkeit.`
+`Klausur-Satz: Am Target zeigt sich, ob Grenze oder Ausnutzung ueber das Ergebnis entschied.`
 
-## Schritt 5 — ausprobieren: Verfahrensvergleich & Abgrenzung
+## Schritt 5 — ausprobieren: Verfahrensduell Maximalkraft-Weg gegen Technik-Weg
 
 VERGLEICH (zwei Verfahren im Kontrast):
 
-VERGLEICH: Waehle zuerst das Verfahren: (i) Anfangskraft-Weg (Wozu dienen Ausholen, Gleiten und Absenken) oder (ii) Maximalkraft-Weg (Wozu dienen absolute Kraft und Muskelquerschnitt), dann antworten.
+VERGLEICH: Waehle zuerst das Verfahren: (i) Maximalkraft-Weg oder (ii) Technik-Weg, dann loesen. Die Wahl des Verfahrens entscheidet ueber die ganze Begruendung.
 
-AUFGABE A: Warum stoesst ein leichter Athlet mit sauberem Gleitschritt weiter als ein staerkerer Athlet aus dem Stand? AUFGABE B: Warum bleibt Krafttraining trotzdem Pflicht im Kugelstossen?
+AUFGABE A: Erster Fall in Hantel-Arena: Welches Verfahren passt, und wie ist zu argumentieren?
 
-HILFE: A fragt nach Technikvorteil bei kleinerer Kraft, also Verfahren (i) mit Impuls ueber Zeit und Weg. B fragt nach Kraftbasis, also Verfahren (ii) mit $F$ in der Formel.
+AUFGABE B: Zweiter Gegenfall: Welches Verfahren passt, und wie ist zu argumentieren?
 
-ANTWORT: A erfordert Verfahren (i): Der leichtere Athlet nutzt $v0$ plus langes $s$ und langes $t$; sein Impuls $J = F mal t$ und seine Arbeit $W = F mal s$ uebertreffen den kurzen Armstoss des Staerkeren. B erfordert Verfahren (ii): Ohne hohes $F$ bleibt das Produkt trotz langem Weg klein; Krafttraining hebt das Niveau, Technik holt es ab. Bestleistung braucht beides in der Reihenfolge Technikweg plus Kraftniveau.
+HILFE: A fragt nach Grenze und Aufbau, also Verfahren (i). B fragt nach Ausnutzung und Lage, also Verfahren (ii).
 
-Klausur-Satz: `Technik verlaengert Zeit und Weg des Impulses, Kraft erhoeht seinen Ausgangswert.`
+ANTWORT: A erfordert Verfahren (i) Maximalkraft-Weg mit Begruendung aus Messwert und Mechanismus. B erfordert Verfahren (ii) Technik-Weg mit Begruendung aus Lage und Kontext. Muendlich formuliere ich den Unterschied in einem Satz mit weil.
+
+`Klausur-Satz: Verfahren (i) setzt die Grenze, Verfahren (ii) nutzt die Lage; die Wahl traegt das Urteil.`
 
 ## Schritt 6 — check: Selbsttest zu Biomechanische Prinzipien Anfangskraft
+
 CHECK (3 Fragen zur Selbstkontrolle mit Antworten):
 
-FRAGE: Was besagt das Prinzip der Anfangskraft in einem Satz? | ANTWORT: Eine Gegenbewegung vor der Hauptbewegung erzeugt Anfangsgeschwindigkeit und verlaengert den Beschleunigungsweg.
-FRAGE: Wie haengen Impuls, Kraft, Zeit und Weg mit der Weite zusammen? | ANTWORT: $J = F mal t$ bestimmt die Geschwindigkeitsaenderung, $W = F mal s$ die zugefuehrte Energie; beide wachsen mit der Stossweite.
-FRAGE: Welche drei Phasen des Gleitschritts gehoeren in die Klausurantwort? | ANTWORT: Auftakt mit Absenken, Angleiten mit Beinschub, finaler Stoss mit Bein, Rumpf und Arm.
+FRAGE: Woran erkennst du das Kernthema im Wettkampf? | ANTWORT: Am Target (Startkraft 1800 N) und am Mechanismus aus Schritt 3.
+FRAGE: Wie erreichst du das Target? | ANTWORT: Durch Messen, Deuten mit Fachbegriff und Ableiten der Korrektur.
+FRAGE: Wann waehlst du Verfahren (i) statt (ii)? | ANTWORT: Bei Grenzfragen (i), bei Lagenfragen (ii).
 
-Klausur-Satz: `Die Stossweite waechst mit Kraft, Beschleunigungszeit und Beschleunigungsweg.`
+`Klausur-Satz: Selbsttest bestanden heisst Target lesen, Verfahren waehlen und Urteil begruenden.`
 
 ## Fehlvorstellung
 
@@ -142,19 +117,17 @@ Klausur-Satz: `Die Stossweite waechst mit Kraft, Beschleunigungszeit und Beschle
    Korrektur: Bein und Rumpf erzeugen den Hauptimpuls, der Arm vollendet nur die finale Streckung. Wer nur den Arm trainiert, nutzt nur die letzten Meter der Bahn.
    Korrektur-Satz: `Bein und Rumpf erzeugen den Hauptimpuls, der Arm vollendet nur die finale Streckung.`
 
-## Schritt 7 — szenario: Klausurtransfer: Biomechanische Prinzipien Anfangskraft
-ROLLE: Du bist Sporthelferin in der EF und analysierst ein Handyvideo vom Kugelstossen.
-SITUATION: Ein Mitschueler stoesst aus dem Stand recht weit, doch mit Gleitschritt landet die Kugel kaum weiter vorn. Er will das Gleiten schon aufgeben.
-AUFGABE: Schreibe eine zusammenhaengende Beratung (ca. 150 Woerter), in der du sein Video anhand von Anfangskraft, Impuls und Beschleunigungsweg deutest und zwei konkrete Korrekturen fuer Auftakt und Angleit-Tempo gibst.
-RUBRIC (30 XP): Deutung mit $J = F mal t$ und Weg (10 XP) | Zwei Fehler in Auftakt und Tempo benannt (10 XP) | Zwei umsetzbare Korrekturen mit Zielwert (10 XP).
+## Schritt 7 — szenario: Klausurtransfer: Biomechanische Prinzipien Anfangskraft — Kraft-Coach in der Hantel-Arena
+ROLLE: Du bist Kraft-Coach in der Hantel-Arena und verteidigst deine Entscheidung vor der Pruefungskommission.
+SITUATION: In Hantel-Arena, Startkraft-Gipfel der Gewichtheber musst du in zusammenhaengenden deutschen Saetzen (ca. 90 Sekunden) Diagnose, Massnahme und Target (Startkraft 1800 N, Anstiegszeit 100 ms, 90-Sekunden-Analyse) vorstellen und mit Fachsprache begruenden.
+RUBRIC (30 XP): Diagnose mit Fachbegriffen (8 XP) | Massnahme mit Target-Beleg (10 XP) | Verfahrenswahl im Vergleich (7 XP) | Fachsprachlicher Vortrag (5 XP).
 
-## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
+## Schritt 8 — reflexion: Takeaway & Reflexion — Pokal oder Pitstop in Hantel-Arena
 
 TAKEAWAY (Kernzusammenfassung):
 
-Anfangskraft heisst zuerst zurueck, dann nach vorn. Zwei Formeln genuegen: $J = F mal t$ und $W = F mal s$. Der Gleitschritt gliedert sich in Auftakt als Bahn, Angleiten als Zeit und Weg, finalen Stoss als Kraft. In der Antwort zuerst den Grundsatz nennen, dann die drei Phasen durchgehen, dann Tempo und Laenge mit den Formeln bewerten.
-Takeaway-Satz: `Gegenbewegung schafft $v0$, Gleiten schafft Zeit und Weg, der Stoss nutzt beides in maximale Weite um.`
+Grenze frueh sichern, Lage spaet nutzen: Das Target (Startkraft 1800 N, Anstiegszeit 100 ms, 90-Sekunden-Analyse) misst den Unterschied, das Verfahren traegt das Urteil. Takeaway-Satz: `Wer die Grenze sichert und die Lage nutzt, holt in Hantel-Arena den Pokal.`
 
 REFLEXION (2 Fragen):
-1. Selbstkontrolle: Welcher Schritt fiel schwerer, die Formelanwendung mit $J = F mal t$ (Schritt 4) oder die Abgrenzung zur Maximalkraft (Schritt 5)?
-2. Planung: Beim naechsten Mal skizziere ich zuerst den Weg der Kugel und trage dann Kraft, Zeit und Weg an jeder Phase ein.
+1. Selbstkontrolle: Welcher Schritt fiel schwerer, die Sandkasten-Praezision (Schritt 4) oder die Verfahrenswahl im Duell (Schritt 5)?
+2. Planung: Beim naechsten Mal notiere ich zuerst Messwert plus Phase, weil daraus jede Begruendung folgt.

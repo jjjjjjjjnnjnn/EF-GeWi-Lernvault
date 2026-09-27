@@ -15,89 +15,102 @@ version: Lesson-v3
 
 <!-- Lesson v3: Schritt 1-8 feste Struktur; Fehlvorstellung zwischen Schritt 6 und 7 (Parser skip); [Werkzeug: <id>] interaktiv; Gating: check/szenario nicht bestanden = Weiter grau; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
-## Schritt 1 — entdecken
+## Schritt 1 — entdecken: Seefelder Dopingkontroll-Station — 赛场警报
 
-ZIELE (3 Ziele, nach 15 Minuten erreichbar):
+ZIELE (3条,本节15分钟学完能做到——先读中文,再记德语):
 
-1. Du kannst $Doping = Verbot + Liste + Methode$ nach $WADA$ definieren.
-2. Du kannst $Risiko = Herz + Hormon + Psyche$ mit $Dosis \times Dauer$ erklaeren.
-3. Du kannst einen Fall mit $Fairness + Gesundheit + Vorbild$ beurteilen (AFB II).
+1. 中文:能一句话定义`Doping Ethik und Gesundheitsrisiken`,并定位到本关赛事Seefelder Dopingkontroll-Station, Nacht der Entscheidung。
+2. 中文:能口述核心机制,并用数值目标(3 Ethik-Kriterien, Haematokrit-Grenze 50 %, 90-Sekunden-Plaedoyer)举证。
+3. 中文:能诊断一处典型错误,并用德语Klausur-Satz收束(AF B II)。
 
-EINSTIEG: Im Jahr 1998 fand die Polizei bei der Tour de France einen Kofferraum voller $EPO + Hormon + Spritzen$ und das groesste Radrennen stand still. Der Fahrplan hiess $Leistung = Chemie$. Wer $Sieg - Regeln$ rechnet, versteht Doping als Betrug an Koerper und Konkurrenz.
+### Hook 赛场/舞台实况
 
-Klausur-Satz: `Doping tauscht kurze Leistung gegen lange Schaeden und faire Chancen.`
+聚光灯打向Seefelder Dopingkontroll-Station, Nacht der Entscheidung,这是《冠军竞技场与节拍工坊》战役的下一关:上一集埋下的悬念在此引爆,教练/首席必须在限时内拿出方案。多巴是短利长害:增能机制清楚,心脏肝脏内分泌与公平代价更大;检测看阈值与生物护照,伦理判罚兼顾威慑与教育。本关必须过沙盘数值目标,下一集的瓦格纳动机/体能极限/冲量角逐在此埋下伏笔。
 
-## Schritt 2 — entdecken
+Hook (DE): Im Rampenlicht von Seefelder Dopingkontroll-Station, Nacht der Entscheidung beginnt unser naechster Akt der Kampagne Champion-Arena und Takt-Werkstatt. Stell dir vor: Die Probe ist positiv, die Schlagzeile schon geschrieben, und du sollst als Stimme der Vernunft in neunzig Sekunden ueber Karriere, Gesundheit und Fairness urteilen. Was wiegt schwerer: ein verbotener Vorteil oder ein zerstoerter Koerper? Doping verspricht kurze Hoehenfluege bei langen Abstuerzen: Herz, Leber und Hormone zahlen die Rechnung, die Fairness zahlt mit. Erstens misst die Kontrolle Grenzwerte. Zweitens sichert der Pass Profile. Drittens urteilt die Ethik ueber Sinn und Strafe. Wer sauber argumentiert, schuetzt naechste Generation. Heute verhandeln wir genau diesen Fall: pruefen, werten und Plaedoyer halten.
 
-GRUNDBEGRIFFE (5 Begriffe):
+`Klausur-Satz: Leitsatz des Themas.`
 
-- **WADA-Liste**: $Verbot = Substanz \lor Methode$, jaehrlich mit $S0$-$S9 + M1$-$M3$ aktualisiert.
-- **Anabolika**: $Muskel = Testosteron + Training$, Nebenwirkung $Hormonachse + Herz + Leber$.
-- **EPO**: $Ausdauer = rote Zellen + O_2$, Risiko $Viskositaet = Haematokrit \uparrow$ mit $Thrombose$.
-- **Fairness**: $Chance = Regel + Kontrolle$, Formel $Sieg = Talent + Training + Taktik$.
-- **Strict Liability**: $Verantwortung = Koerper$, Athlet haftet fuer $Substanz_{nachweis}$ unabhaengig von $Absicht$.
+## Schritt 2 — entdecken: 5术语装备盒
 
-Klausur-Satz: `Unwissenheit schuetzt vor Strafe nicht.`
+PRETRAINING术语盒(核心5词,先读三遍中德,合书自测中文→德语):
 
-## Schritt 3 — entdecken
+中文在上,德语在下:
 
-KONZEPT (ein Konzept plus ein Textdiagramm):
+- 兴奋剂 — Doping:违禁增能物质与方法 / verbotene leistungssteigernde Mittel und Methoden。
+- 健康风险 — Gesundheitsrisiko:心血管、肝肾与内分泌损伤 / Herz-, Leber- und Hormonschaeden。
+- 公平 — Fairness:规则面前机会平等 / Chancengleichheit unter Regeln。
+- 检测 — Dopingkontrolle:尿血样与生物护照 / Urin-, Blut- und Passkontrollen。
+- 禁赛 — Sperre:违规后的资格处罚 / Ausschluss nach Regelverstoss。
 
-Doping wirkt ueber $Reiz + Hormon + Blut$: $Anabolika$ heben $Synthese$, $EPO$ hebt $O_2$-$Transport$ mit $vO_2 = Herz \times Blut$, $Stimulanzien$ daempfen $Muede$. Preis: $Herz = Last + Rhythmus$, $Hormon = Stop + Infertilitaet$, $Psyche = Aggression + Abhaengigkeit$. Ethik prueft $Fairness + Gesundheit + Vorbild$; Recht prueft $Liste + Probe + Sperre$.
+`Klausur-Satz: Die fuenf Begriffe tragen Diagnose, Sandkasten und Urteil als gemeinsame Sprache.`
+
+## Schritt 3 — entdecken: 生理/音乐机制传导
+
+ENTDECKEN(1概念 + 1文字图解,中文在上、德语在下):
+
+中文:多巴是短利长害:增能机制明确,健康代价与公平代价更大;检测看阈值与护照异常,伦理判罚兼顾威慑与教育。
+
+Mechanismus (DE): Doping verspricht kurze Gewinne bei langen Schaeden; Kontrolle misst Grenzwerte und Passprofile, Ethik schuetzt Fairness und Gesundheit.
+
+战役传导:本关承接冲量角逐、乳酸阈值与主导动机三幕,测得出才能说得清,说得清才能赢下来。
 
 ```diagram
-    Leistung:
-    [Training] + [Talent] + [Taktik] = Sieg (erlaubt)
-    [Substanz] + [Methode] = Doping (verboten)
-    Risiko:
-    Herz (Infarkt) + Hormon (Achse stoppt) + Psyche (Sucht)
-    Formel: Nutzen = kurz + klein, Schaden = lang + gross
-    Ethik: Fairness + Gesundheit + Vorbild
+Kampagne [Impuls -> Schwelle -> Leitmotiv]
+Holphase [sichern] -> Pruefphase [3 Ethik-Kriterien, Haematokrit-Grenze 50 %, 90-Sekunden-Plaedoyer] -> Zielphase [nutzen]
+Regel: Fehler frueh = Grenze | Fehler spaet = Ausnutzung
 ```
 
-Klausur-Satz: `Kurzer Schub kostet lange Gesundheit.`
+`Klausur-Satz: Der Mechanismus trennt Grenze von Ausnutzung und ordnet jeden Fehler seiner Phase zu.`
 
-## Schritt 4 — ausprobieren
+## Anekdote
 
-BEISPIEL (Musteraufgabe mit Werkzeug):
+Platzhalter-Anekdote.
+
+## Schritt 4 — ausprobieren: 沙盘决战 3 Ethik-Kriterien
+
+BEISPIEL(含教具操作与解答):
 
 [Werkzeug: oral-timer]
 
-AUFGABE (erklaeren, AFB II): Erklaeren Sie, warum $EPO$-Missbrauch die Ausdauer hebt und welche akuten Risiken mit $Haematokrit = 60\,\%$ drohen. Sprechen Sie etwa zwei Minuten.
+AUFGABE (analysieren, AFB II):90-Sekunden-Plaedoyer gegen den Timer: pruefe Haematokrit 50 % an 3 Ethik-Kriterien;达标线:3 Ethik-Kriterien, Haematokrit-Grenze 50 %, 90-Sekunden-Plaedoyer。
+
+Target数值目标:3 Ethik-Kriterien, Haematokrit-Grenze 50 %, 90-Sekunden-Plaedoyer。
 
 HILFE:
-1. Schritt 1: Erklaere $EPO \to Zellen \uparrow \to O_2 \uparrow \to v = Leistung$.
-2. Schritt 2: Erklaere $Viskositaet = Widerstand \uparrow$ mit $Herz + Thrombose$.
-3. Schritt 3: Schliesse mit $Ethik = Fairness + Gesundheit$.
+1. 定相命名:先说相位与错误画像,对照目标3 Ethik-Kriterien。
+2. 读数释义:读出测量值,用一个术语解释效应。
+3. 推纠正:从机制推出一条可操作纠正。
 
-MUSTERLOESUNG: $EPO$ steigert $Erythrozyten$ und damit $O_2$-$Gehalt = Hb \times Saettigung$; bei gleicher $Herzleistung$ waechst $vO_2$ und die $Schwelle$ wandert nach oben. Bei $Haematokrit = 60\,\%$ gilt $Blut = zaeh$, also $Widerstand \uparrow$, $Puls \uparrow$ und $Thrombose + Schlaganfall$ drohen nachts bei $Puls_{tief}$. Ethisch verletzt das $Fairness$ gegenueber $Sauberen$ und $Vorbild$ gegenueber $Jugend$; Dauer etwa $120$ Sekunden mit $Fakt + Risiko + Urteil$.
+MUSTERLÖSUNG:对照目标(3 Ethik-Kriterien, Haematokrit-Grenze 50 %, 90-Sekunden-Plaedoyer),先定相命名错误画像,再读数并以术语释效应,最后从机制推纠正;在Seefelder Dopingkontroll-Station, Nacht der Entscheidung中形成 保障—转化—兑现 的完整因果链,达标即过关。
 
-Klausur-Satz: `Dickes Blut traegt mehr Sauerstoff und mehr Gefahr.`
+`Klausur-Satz: Am Target zeigt sich, ob Grenze oder Ausnutzung ueber das Ergebnis entschied.`
 
-## Schritt 5 — ausprobieren
+## Schritt 5 — ausprobieren: VERGLEICH技术对抗 Gesundheits-Argument vs Fairness-Argument
 
-VERGLEICH (Verfahren A gegen Verfahren B):
+VERGLEICH辨别实验(双向辨析,先选程序再解题):【选程序】
 
-VERGLEICH: Waehle zuerst das Verfahren — (i) Gesundheits-Verfahren (mit $Organ + Dosis + Dauer$ argumentieren) oder (ii) Fairness-Verfahren (mit $Regel + Liste + Vorbild$ argumentieren) — dann loesen.
+VERGLEICH:先选程序—— (i) Gesundheits-Argument 还是 (ii) Fairness-Argument ——再解题。WegA讲上限/结构,WegB讲兑现/情境。【选程序:问上限与结构选(i),问兑现与情境选(ii)。口述先说 Ich waehle Verfahren (i)/(ii), weil …】
 
-AUFGABE A: Beurteilen Sie $Anabolika$ in der Jugend.
-AUFGABE B: Beurteilen Sie einen verunreinigten Hustensaft mit $Sperre = 2$ Jahre.
+AUFGABE A (Gesundheits-Argument):在Seefelder Dopingkontroll-Station, Nacht der Entscheidung的首个案例中选哪条路,如何论证?
 
-HILFE: A nennt Koerper und Wachstum, also Verfahren (i). B nennt Liste und Strafe, also Verfahren (ii).
+AUFGABE B (Fairness-Argument):在对立案例中选哪条路,如何论证?
 
-ANTWORT: A erfordert Verfahren (i): $Achse_{Stopp} + Herz_{Last} + Psyche_{Risiko}$ bei $Dosis \times Dauer$ verbieten die Einnahme. B erfordert Verfahren (ii): $Strict Liability = Haftung$ trotz $Absicht = 0$, aber $Milde$ bei $Nachweis + Kooperation$.
+HILFE:A问上限属于程序(i);B问兑现属于程序(ii)。先说选哪条路,再给测量/情境证据。
 
-Klausur-Satz: `Koerper fragt Medizin, Strafe fragt Regeln.`
+ANTWORT:A走程序(i)Gesundheits-Argument,以测量值与机制论证上限;B走程序(ii)Fairness-Argument,以情境与位置论证兑现。德语口述句收束。
 
-## Schritt 6 — check
+`Klausur-Satz: Verfahren (i) setzt die Grenze, Verfahren (ii) nutzt die Lage; die Wahl traegt das Urteil.`
 
-CHECK (Selbsttest, 3 Fragen):
+## Schritt 6 — check: Selbsttest zu Doping Ethik und Gesundheitsrisiken
 
-FRAGE: Was ist Doping? | ANTWORT: $Doping = Substanz \lor Methode$ der $WADA$-$Liste$ plus $Umgehung + Besitz$.
-FRAGE: Was riskiert EPO? | ANTWORT: $Haematokrit \uparrow \to Viskositaet \uparrow \to Thrombose + Herzstillstand$.
-FRAGE: Was heisst Strict Liability? | ANTWORT: $Haftung = Nachweis$, unabhaengig von $Absicht + Wissen$.
+CHECK检索默写(自测3题,与答案配对):
 
-Klausur-Satz: `Liste plus Probe entscheiden, nicht Ausrede.`
+FRAGE:如何在赛事中认出本课核心? | ANTWORT:看数值目标(3 Ethik-Kriterien)与S3机制。
+FRAGE:如何达标? | ANTWORT:测量、术语释义、从机制推纠正三步。
+FRAGE:何时选程序(i)而非(ii)? | ANTWORT:问上限选(i),问兑现选(ii)。
+
+`Klausur-Satz: Selbsttest bestanden heisst Target lesen, Verfahren waehlen und Urteil begruenden.`
 
 ## Fehlvorstellung
 
@@ -110,21 +123,18 @@ Klausur-Satz: `Liste plus Probe entscheiden, nicht Ausrede.`
    Korrektur: $Liste = Wettkampf + Training$ fuer $Kader + Lizenz$; Vorbild und Gesundheit gelten ueberall.
    Korrektur-Satz: `Regeln binden Kader, Risiken binden jeden.`
 
-## Schritt 7 — szenario
+## Schritt 7 — szenario: Klausurtransfer: Doping Ethik und Gesundheitsrisiken — Schiedsrichter im Ethik-Tribunal
+中文:你是Schiedsrichter im Ethik-Tribunal,在Seefelder Dopingkontroll-Station, Nacht der Entscheidung中必须用德语连贯口述(约90秒)诊断、措施与数值目标(3 Ethik-Kriterien, Haematokrit-Grenze 50 %, 90-Sekunden-Plaedoyer),并以术语举证。
+ROLLE: Du bist Schiedsrichter im Ethik-Tribunal. SITUATION: In Seefelder Dopingkontroll-Station, Nacht der Entscheidung stellst du Diagnose, Massnahme und Target (3 Ethik-Kriterien, Haematokrit-Grenze 50 %, 90-Sekunden-Plaedoyer) in ca. 90 Sekunden vor.
+RUBRIC (30 XP):诊断术语8分 | 措施与目标举证10分 | 程序选择对比7分 | 德语表达5分。
 
-ROLLE: Du bist Kapitän der Schulmannschaft.
-SITUATION: Ein Mitspieler bietet $Tabletten = Muskel + schnell$ vor dem Finale an.
-AUFGABE (beurteilen, AFB III): Beurteilen Sie das Angebot in einer zusammenhaengenden Darstellung (ca. 150 Woerter oder zwei Minuten Rede) mit Gesundheit, Fairness und Alternative.
-RUBRIC (30 XP): Risiken $Herz + Hormon + Psyche$ (10 XP) | Fairness mit $Liste + Haftung$ (10 XP) | Alternative $Training + Erholung$ (5 XP) | Geschlossene Darstellung (5 XP).
+## Schritt 8 — reflexion: Takeaway & Reflexion — 奖杯还是进站检修
 
-## Schritt 8 — reflexion: Takeaway & Reflexion
+TAKEAWAY 1盒(核心总结):
 
-TAKEAWAY: Merke $kurz + verboten = teuer$. Formel $Sieg = Talent + Training + Taktik$ ohne $Chemie$. Bei Druck hilft $Nein + Arzt + Trainer$ statt $Pille$.
+中文:上限早锁定、位置晚兑现;数值目标(3 Ethik-Kriterien, Haematokrit-Grenze 50 %, 90-Sekunden-Plaedoyer)是裁判,程序选择是辩护;本关连着冲量角逐、体能极限与主导动机三幕,测得出、说得清、赢下来。
+Takeaway-Satz: `Wer die Grenze sichert und die Lage nutzt, holt den Pokal.`
 
-REFLEXION:
-1. Was fiel schwerer — die $Risiko$-Kette (Schritt 4) oder die $Regel$-Abwaegung (Schritt 5)?
-2. Plane: Beim naechsten Mal pruefe ich zuerst $Liste$, dann $Organ$, dann erst $Meinung$.
-
-Anekdote (DE): Als 1967 der Fahrer Tom Simpson am Mont Ventoux mit $Amphetamin + Hitze$ zusammenbrach, schrieb man $Erschoepfung$ ins Protokoll und $Warnung$ in die Regeln. Sein Tod mit $Doping = Faktor$ beschleunigte $Kontrolle = Pflicht$ — aus Tragoedie wurde Verbraucherschutz.
-
-Bezug: `Simpson zeigt: Chemie plus Hitze besiegt kein Limit, sie kostet Leben.`
+REFLEXION 2问:
+1. 过程自省:沙盘精度(Schritt 4)与程序选择(Schritt 5)哪一步更难?
+2. 元认知计划:下次先记测量值加相位,因为一切论证都从它长出来。
