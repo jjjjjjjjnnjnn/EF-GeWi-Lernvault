@@ -212,7 +212,15 @@ function renderEmbeddedTool(toolName: string, lang: Lang, fach: string) {
 
   // 4. MATHEMATIK TOOLS
   if (f.includes("mathe")) {
-    if (t === "formula" || t === "formel" || t === "box-optimizer" || t === "box" || t === "optimizer") {
+    // box-optimizer FIRST (BoxOptimizerSim; must precede formula branch)
+    if (t === "box-optimizer" || t === "box" || t === "optimizer" || t === "extremwert") {
+      return (
+        <div className="my-3 p-3.5 border border-[var(--line)] bg-[var(--surface)] rounded-[var(--radius)]">
+          <BoxOptimizerSim lang={lang} />
+        </div>
+      );
+    }
+    if (t === "formula" || t === "formel" || t === "mint") {
       return (
         <div className="my-3 p-3.5 border border-[var(--line)] bg-[var(--surface)] rounded-[var(--radius)]">
           <div className="flex items-center justify-between text-xs font-mono text-[var(--accent)] mb-2 font-medium">
@@ -224,13 +232,6 @@ function renderEmbeddedTool(toolName: string, lang: Lang, fach: string) {
       );
     }
     // tangent-slider / tangent / default -> Tangenten-Simulator
-    if (t === "box" || t === "box-optimizer" || t === "extremwert") {
-      return (
-        <div className="my-3 p-3.5 border border-[var(--line)] bg-[var(--surface)] rounded-[var(--radius)]">
-          <BoxOptimizerSim lang={lang} />
-        </div>
-      );
-    }
     return (
       <div className="my-3 p-3.5 border border-[var(--line)] bg-[var(--surface)] rounded-[var(--radius)]">
         <div className="flex items-center justify-between text-xs font-mono text-[var(--accent)] mb-2 font-medium">
