@@ -66,6 +66,74 @@ function CheckMarkSvg() {
   );
 }
 
+function BalanceScaleSvg() {
+  return (
+    <svg
+      width="14"
+      height="14"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden="true"
+      className="w-3.5 h-3.5 inline-block shrink-0"
+    >
+      <path d="M12 3v18" />
+      <path d="M6 7l6-3 6 3" />
+      <path d="M6 7l-3 7h6l-3-7z" />
+      <path d="M18 7l-3 7h6l-3-7z" />
+      <path d="M8 21h8" />
+    </svg>
+  );
+}
+
+function GamepadSvg() {
+  return (
+    <svg
+      width="14"
+      height="14"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden="true"
+      className="w-3.5 h-3.5 inline-block shrink-0"
+    >
+      <rect x="2" y="6" width="20" height="12" rx="2" />
+      <path d="M6 12h4" />
+      <path d="M8 10v4" />
+      <line x1="15" y1="13" x2="15.01" y2="13" />
+      <line x1="18" y1="11" x2="18.01" y2="11" />
+    </svg>
+  );
+}
+
+function LightbulbSvg() {
+  return (
+    <svg
+      width="14"
+      height="14"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden="true"
+      className="w-3.5 h-3.5 inline-block shrink-0"
+    >
+      <path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5" />
+      <path d="M9 18h6" />
+      <path d="M10 22h4" />
+    </svg>
+  );
+}
+
+
 function getAutoToolForContext(fach: string, thema: string): string | null {
   const f = (fach || "").toLowerCase();
   const th = (thema || "").toLowerCase();
@@ -1032,11 +1100,13 @@ export default function ReiseModule({
           <div className="flex items-center gap-2 font-mono text-xs uppercase tracking-wider font-semibold">
             {s.stepNumber === 5 || cleanAufgabe.includes("VERGLEICH") ? (
               <span className="px-2.5 py-1 rounded-[var(--radius)] bg-[var(--accent)]/10 text-[var(--accent)] border border-[var(--accent)]/30 flex items-center gap-1.5">
-                <span>⚖️ METHODEN-VERGLEICH & ENTSCHEIDUNGSWEICHE (Weg A vs. Weg B)</span>
+                <BalanceScaleSvg />
+                <span>METHODEN-VERGLEICH & ENTSCHEIDUNGSWEICHE (Weg A vs. Weg B)</span>
               </span>
             ) : (
               <span className="px-2.5 py-1 rounded-[var(--radius)] bg-[var(--accent)]/10 text-[var(--accent)] border border-[var(--accent)]/30 flex items-center gap-1.5">
-                <span>🎮 INTERAKTIVE SANDKASTEN-CHALLENGE</span>
+                <GamepadSvg />
+                <span>INTERAKTIVE SANDKASTEN-CHALLENGE</span>
               </span>
             )}
           </div>
@@ -1054,7 +1124,8 @@ export default function ReiseModule({
                 onClick={() => (isDoc ? toggleTryShowHelpFor(s.stepNumber) : setTryShowHelp((h) => !h))}
                 className="text-xs font-mono font-medium text-[var(--accent)] hover:underline flex items-center gap-1.5"
               >
-                <span>💡 {curShowHelp ? (lang === "de" ? "Hilfe & Denkanstoß verbergen" : "隐藏解题提示") : (lang === "de" ? "Hilfe & Denkanstoß anzeigen" : "显示解题提示与思路支架")}</span>
+                <LightbulbSvg />
+                <span>{curShowHelp ? (lang === "de" ? "Hilfe & Denkanstoß verbergen" : "隐藏解题提示") : (lang === "de" ? "Hilfe & Denkanstoß anzeigen" : "显示解题提示与思路支架")}</span>
               </button>
               {curShowHelp && (
                 <div className="mt-2 pt-2 border-t border-[var(--line)] text-xs font-sans text-[var(--ink)] leading-relaxed">

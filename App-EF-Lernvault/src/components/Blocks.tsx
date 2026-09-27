@@ -1,4 +1,4 @@
-import type { ReactNode } from "react";
+import { useState, type ReactNode } from "react";
 import type { Block } from "../vault/parser";
 import MathHtml from "./MathHtml";
 import { filterBlocksForGermanNative } from "../config/audience";
@@ -349,6 +349,57 @@ export function renderFormattedText(text: string): ReactNode {
 // Backwards-compatible alias for existing imports
 export const renderMathText = renderFormattedText;
 
+/**
+ * Interactive active recall card for practice questions:
+ * Conceals the answer behind an elegant tap-to-reveal button.
+ */
+function InteractiveQuestionCard({ text, lang }: { text: string; lang?: string }) {
+  const [revealed, setRevealed] = useState(false);
+  const match = /^(?:FRAGE[:：]?\s*)(.*?)\s*(?:[\|｜]|\s+ANTWORT[:：]\s*)\s*(?:ANTWORT[:：]?\s*)?(.*)$/i.exec(text);
+  if (!match) return <div>{renderFormattedText(text)}</div>;
+
+  const frage = match[1].trim();
+  const antwort = match[2].trim();
+
+  return (
+    <div className="my-3 rounded-[var(--radius)] border border-[var(--line)] bg-[var(--surface)] p-4 transition-all hover:border-[var(--accent)]/40 shadow-none">
+      <div className="flex items-start gap-2.5">
+        <span className="shrink-0 font-mono text-[11px] font-bold uppercase tracking-wider text-[var(--accent)] bg-[var(--accent)]/10 px-2 py-0.5 rounded border border-[var(--accent)]/20 mt-0.5">
+          FRAGE
+        </span>
+        <div className="font-serif text-[15px] font-medium text-[var(--ink)] flex-1 leading-snug">
+          {renderFormattedText(frage)}
+        </div>
+      </div>
+
+      <div className="mt-3 pt-3 border-t border-[var(--line)]/60">
+        {!revealed ? (
+          <button
+            type="button"
+            onClick={() => setRevealed(true)}
+            className="text-xs font-mono text-[var(--gray)] hover:text-[var(--accent)] flex items-center gap-1.5 transition-colors cursor-pointer"
+          >
+            <svg className="w-3.5 h-3.5 text-current" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+              <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
+              <circle cx="12" cy="12" r="3" />
+            </svg>
+            <span>{lang === "de" ? "Antwort aufdecken" : "查看权威采分解答 · Aufdecken"}</span>
+          </button>
+        ) : (
+          <div className="flex items-start gap-2.5 animate-in fade-in duration-200">
+            <span className="shrink-0 font-mono text-[11px] font-bold uppercase tracking-wider text-[var(--success)] bg-[var(--success)]/10 px-2 py-0.5 rounded border border-[var(--success)]/20 mt-0.5">
+              ANTWORT
+            </span>
+            <div className="font-serif text-[14.5px] text-[var(--ink)] leading-relaxed flex-1">
+              {renderFormattedText(antwort)}
+            </div>
+          </div>
+        )}
+      </div>
+    </div>
+  );
+}
+
 // Tufte: ZH (humanist sans, gray) vs DE (old-style serif, ink). KaTeX math & rich typography integrated.
 export default function Blocks({
   blocks,
@@ -373,14 +424,19 @@ export default function Blocks({
               key={i}
               className={
                 isAnekdote
-                  ? "mt-6 mb-3 p-3 rounded-[var(--radius)] border border-[var(--line)] bg-[var(--paper-subtle)]"
-                  : "mb-1 mt-4"
+                  ? "mt-6 mb-3 p-4 rounded-[var(--radius)] border border-[var(--line)] bg-[var(--paper-subtle)]"
+                  : "mb-1 mt-5"
               }
             >
               <h3 className="font-serif text-lg text-[var(--ink)] flex items-center gap-2">
                 {isAnekdote && (
-                  <span className="font-mono text-xs uppercase tracking-wider px-1.5 py-0.5 rounded-[var(--radius)] border border-[var(--accent)]/40 text-[var(--accent)] font-medium">
-                    Exkurs
+                  <span className="font-mono text-xs uppercase tracking-wider px-2 py-0.5 rounded-[var(--radius)] border border-[var(--accent)]/40 text-[var(--accent)] font-semibold flex items-center gap-1.5">
+                    <svg className="w-3.5 h-3.5 text-current" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                      <circle cx="12" cy="12" r="10" />
+                      <line x1="12" y1="16" x2="12" y2="12" />
+                      <line x1="12" y1="8" x2="12.01" y2="8" />
+                    </svg>
+                    <span>Exkurs & Historischer Kontext</span>
                   </span>
                 )}
                 <span>{renderFormattedText(b.text)}</span>
@@ -419,7 +475,12 @@ export default function Blocks({
           );
         }
         if (b.kind === "li") {
-          // Check for structured definition: "**Term:** Definition..."
+          // Question card: "FRAGE: ..."
+          if (/^FRAGE[:：]/i.test(b.text.trim())) {
+            return <InteractiveQuestionCard key={i} text={b.text} lang={b.lang} />;
+          }
+
+          // Structured definition: "**Term:** Definition..."
           const defMatch = /^(\*\*[^*]+\*\*|[A-Za-z0-9äöüÄÖÜß\s\-\/\(\)]+)[:：]\s*(.*)$/.exec(b.text);
           if (defMatch && defMatch[1].length < 45 && !/^\d+[\.\)]/.test(b.text)) {
             const rawTerm = defMatch[1].replace(/\*\*/g, "").trim();
@@ -427,9 +488,9 @@ export default function Blocks({
             return (
               <div
                 key={i}
-                className="my-2 p-3 rounded-[var(--radius)] border border-[var(--line)] bg-[var(--surface)] hover:border-[var(--accent)]/40 transition-colors"
+                className="my-2 p-3.5 rounded-[var(--radius)] border border-[var(--line)] bg-[var(--surface)] hover:border-[var(--accent)]/40 transition-colors shadow-none"
               >
-                <div className="flex flex-wrap items-baseline gap-2 mb-1">
+                <div className="flex flex-wrap items-baseline gap-2 mb-1.5">
                   <span className="font-mono text-xs uppercase tracking-wider px-2 py-0.5 rounded-[var(--radius)] bg-[var(--accent)]/10 text-[var(--accent)] font-semibold border border-[var(--accent)]/30">
                     {rawTerm}
                   </span>
@@ -441,12 +502,12 @@ export default function Blocks({
             );
           }
 
-          // Numbered item: "1. ..."
+          // Numbered milestone item: "1. ..."
           const numMatch = /^(\d+[\.\)])\s*(.*)$/.exec(b.text);
           if (numMatch) {
             return (
-              <div key={i} className="my-1.5 flex items-start gap-2.5 pl-1">
-                <span className="shrink-0 font-mono text-xs font-bold text-[var(--accent)] bg-[var(--accent)]/10 px-1.5 py-0.5 rounded-[var(--radius)] mt-0.5 border border-[var(--accent)]/30">
+              <div key={i} className="my-2 flex items-start gap-2.5 pl-1">
+                <span className="shrink-0 font-mono text-xs font-bold text-[var(--accent)] bg-[var(--accent)]/10 px-2 py-0.5 rounded-[var(--radius)] mt-0.5 border border-[var(--accent)]/20">
                   {numMatch[1]}
                 </span>
                 <div className={b.lang === "zh" ? "font-sans text-sm text-[var(--gray)]" : "font-serif text-[15px] leading-relaxed text-[var(--ink)]"}>
@@ -465,7 +526,7 @@ export default function Blocks({
                   : "font-serif text-[15px] text-[var(--ink)]"
               }`}
             >
-              <span className="text-[var(--accent)] font-bold shrink-0 mt-0.5">▪</span>
+              <span className="inline-block w-1.5 h-1.5 rounded-full bg-[var(--accent)] mt-2 shrink-0" />
               <div className="flex-1">{renderFormattedText(b.text)}</div>
             </div>
           );
@@ -474,7 +535,7 @@ export default function Blocks({
           return (
             <div
               key={i}
-              className={`my-3 border-l-3 border-[var(--accent)] pl-4 py-1 italic bg-[var(--paper-subtle)] rounded-r-[var(--radius)] ${
+              className={`my-3 border-l-3 border-[var(--accent)] pl-4 py-1.5 italic bg-[var(--paper-subtle)] rounded-r-[var(--radius)] ${
                 b.lang === "zh"
                   ? "font-sans text-sm text-[var(--gray)]"
                   : "font-serif text-[15px] text-[var(--ink)]"
@@ -487,10 +548,15 @@ export default function Blocks({
         if (b.kind === "diagram") {
           if (renderDiagram) return <div key={i}>{renderDiagram(b.text, i)}</div>;
           return (
-            <div key={i} className="my-3 rounded-[var(--radius)] border border-[var(--line)] bg-[var(--paper-subtle)] overflow-hidden">
-              <div className="px-3 py-1.5 border-b border-[var(--line)] bg-[var(--surface)] flex items-center justify-between text-[11px] font-mono uppercase tracking-wider text-[var(--gray)]">
-                <span>⚙️ Wirkungsmodell & Logik-Diagramm</span>
-                <span className="text-[10px] text-[var(--accent)] font-semibold">Kausalkette</span>
+            <div key={i} className="my-3.5 rounded-[var(--radius)] border border-[var(--line)] bg-[var(--paper-subtle)] overflow-hidden shadow-none">
+              <div className="px-3.5 py-1.5 border-b border-[var(--line)] bg-[var(--surface)] flex items-center justify-between text-[11px] font-mono uppercase tracking-wider text-[var(--gray)]">
+                <div className="flex items-center gap-1.5">
+                  <svg className="w-3.5 h-3.5 text-[var(--accent)]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
+                  </svg>
+                  <span>Wirkungsmodell & Kausalkette</span>
+                </div>
+                <span className="text-[10px] text-[var(--accent)] font-mono font-medium">Flow</span>
               </div>
               <pre className="p-3.5 overflow-x-auto font-mono text-xs leading-relaxed text-[var(--ink)] whitespace-pre-wrap">
                 {b.text}
@@ -501,17 +567,26 @@ export default function Blocks({
         if (b.kind === "math") {
           return <MathHtml key={i} code={b.text} display cacheKey={`D:${b.text}`} />;
         }
+
         const isExamMasterSentence = /^(?:Klausur-Satz|Korrektur-Satz|Takeaway-Satz)[:：]/.test(b.text);
         if (isExamMasterSentence) {
           return (
             <div
               key={i}
-              className="my-4 p-4 rounded-[var(--radius)] border border-[var(--accent)]/40 bg-[var(--paper-subtle)] border-l-4 border-l-[var(--accent)] shadow-none"
+              className="my-4 rounded-[var(--radius)] border border-[var(--accent)]/30 bg-[var(--accent)]/5 p-4 border-l-4 border-l-[var(--accent)] shadow-none"
             >
-              <div className="flex items-center gap-2 mb-1.5 text-xs font-mono uppercase tracking-wider font-semibold text-[var(--accent)]">
-                <span>⭐ Goldene Klausur-Regel (NRW Punktegarant)</span>
+              <div className="flex items-center justify-between mb-1.5 pb-1 border-b border-[var(--accent)]/20">
+                <div className="flex items-center gap-1.5">
+                  <svg className="w-3.5 h-3.5 text-[var(--accent)]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                  </svg>
+                  <span className="font-mono text-[11px] uppercase tracking-wider font-semibold text-[var(--accent)]">
+                    Klausur-Punktegarant · 考点采分原句
+                  </span>
+                </div>
+                <span className="text-[10px] font-mono text-[var(--gray)]">NRW Standard</span>
               </div>
-              <div className="font-serif text-[15.5px] font-medium leading-relaxed text-[var(--ink)]">
+              <div className="font-serif text-[15px] font-medium leading-relaxed text-[var(--ink)]">
                 {renderFormattedText(b.text)}
               </div>
             </div>
@@ -520,15 +595,26 @@ export default function Blocks({
 
         // Special paragraph cards
         const trimmed = b.text.trim();
-        const isZiele = /^(?:ZIELE|🎯\s*LERNZIELE)/i.test(trimmed);
+
+        // Question paragraph: "FRAGE: ..."
+        if (/^FRAGE[:：]/i.test(trimmed)) {
+          return <InteractiveQuestionCard key={i} text={b.text} lang={b.lang} />;
+        }
+
+        const isZiele = /^(?:ZIELE|(?:\u{1F3AF}\s*)?LERNZIELE)/u.test(trimmed);
         if (isZiele) {
           return (
             <div
               key={i}
-              className="my-3 p-3.5 rounded-[var(--radius)] border border-[var(--accent)]/30 bg-[var(--accent)]/5"
+              className="my-3.5 p-4 rounded-[var(--radius)] border border-[var(--line)] bg-[var(--paper-subtle)]"
             >
-              <div className="font-mono text-xs uppercase tracking-wider text-[var(--accent)] font-bold mb-1.5 flex items-center gap-1.5">
-                <span>🎯 LERNZIELE & KLAUSUR-FOKUS</span>
+              <div className="font-mono text-xs uppercase tracking-wider text-[var(--ink)] font-bold mb-2 flex items-center gap-2 pb-1.5 border-b border-[var(--line)]">
+                <svg className="w-4 h-4 text-[var(--accent)]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <circle cx="12" cy="12" r="10" />
+                  <circle cx="12" cy="12" r="6" />
+                  <circle cx="12" cy="12" r="2" />
+                </svg>
+                <span>Lernziele & Klausur-Fokus (3 Meilensteine)</span>
               </div>
               <div className="font-serif text-[14.5px] leading-relaxed text-[var(--ink)]">
                 {renderFormattedText(b.text)}
@@ -542,10 +628,14 @@ export default function Blocks({
           return (
             <div
               key={i}
-              className="my-3.5 p-4 rounded-[var(--radius)] border border-[var(--line)] bg-[var(--surface)] border-l-3 border-l-[var(--gray)]"
+              className="my-4 p-4 rounded-[var(--radius)] border border-[var(--line)] bg-[var(--surface)] border-l-3 border-l-[var(--gray)] shadow-none"
             >
-              <div className="font-mono text-[11px] uppercase tracking-wider text-[var(--gray)] font-semibold mb-2 flex items-center gap-1.5">
-                <span>📖 PHÄNOMEN & ALLTAGS-SZENARIO (HOOK)</span>
+              <div className="font-mono text-[11px] uppercase tracking-wider text-[var(--gray)] font-semibold mb-2 flex items-center gap-1.5 pb-1.5 border-b border-[var(--line)]/60">
+                <svg className="w-3.5 h-3.5 text-current" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
+                  <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" />
+                </svg>
+                <span>Alltagsphänomen & Ausgangslage (Hook)</span>
               </div>
               <div className="font-serif text-[15px] leading-relaxed text-[var(--ink)]">
                 {renderFormattedText(b.text)}
