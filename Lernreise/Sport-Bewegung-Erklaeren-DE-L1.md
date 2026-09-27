@@ -15,7 +15,7 @@ version: Lesson-v3
 
 <!-- Lesson v3 Architektur mit 9 Abschnitten: Schritt 1 bis 8 mit fester Struktur; Fehlvorstellung liegt zwischen Schritt 6 und 7 (wird vom Parser uebersprungen, zaehlt nicht als Schritt); unterstuetzt eingebettete [Werkzeug: <id>] Elemente; Gating: check/szenario nicht bestanden = Weiter deaktiviert; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
-## Schritt 1 — entdecken
+## Schritt 1 — entdecken: Ziele & Phänomen-Einstieg
 
 ZIELE (drei messbare Ziele dieser Lektion):
 
@@ -25,7 +25,7 @@ ZIELE (drei messbare Ziele dieser Lektion):
 
 ### Hook / Phaenomen
 
-Stell dir vor: Zwei Schueler zeigen denselben Kugelstoss. Der erste zaehlt auf: „Anlaufen, stossen, stehen bleiben." Der zweite sagt: „Entscheidend ist der Stoss, weil dort die Anlaufgeschwindigkeit in Weite umgesetzt wird." Nur einer bekommt die Punkte. Woran liegt es, dass blosses Aufzaehlen nie als Erklaeren zaehlt? Die Antwort liegt in einem einzigen kleinen Wort: weil.
+Stell dir vor: Zwei Schueler zeigen denselben Kugelstoss. Der erste zaehlt auf: Anlaufen, stossen, stehen bleiben. Der zweite sagt: Entscheidend ist der Stoss, weil dort die Anlaufgeschwindigkeit in Weite umgesetzt wird. Nur einer bekommt die Punkte. Woran liegt es, dass blosses Aufzaehlen nie als Erklaeren zaehlt? Die Antwort liegt in einem einzigen kleinen Wort: weil. Erstens verlangt Erklaeren die Dreiteilung Vorbereitung, Hauptphase und Endphase mit sauberer Benennung. Zweitens verlangt es die Hauptphase mit Mechanismus: Wo entsteht $v$ aus $v = s/t$, wo fixiert der Abdruck die Bahn $x(t) = v_h \cdot t$. Drittens verlangt es den Unterschied zwischen Beschreibung und Begruendung an genau einem Satz mit weil. Viertens verlangt es Fehler plus Korrektur als Nachweis des Verstaendnisses. Wer jede Phase so mit Mechanismus und Zeile der Sim belegt, verwandelt Aufzaehlung in Urteil.
 
 ### Fachbegriff & Definition
 
@@ -37,7 +37,7 @@ Der Kernmechanismus laeuft in drei Stufen: **Gliedern, Markieren, Begruenden**. 
 
 Klausur-Satz: `Die Bewegung gliedert sich in Vorbereitung, Hauptphase und Endphase; entscheidend ist die Hauptphase, weil dort die Leistung biomechanisch beziehungsweise physiologisch bestimmt wird.`
 
-## Schritt 2 — entdecken
+## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
 
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
@@ -59,7 +59,7 @@ Die Begriffe greifen ineinander: Die **Drei-Phasen-Struktur** gibt das Geruest, 
 
 Klausur-Satz: `Entscheidend ist die Hauptphase, weil in ihr die fuer das Ergebnis massgebliche Leistung erbracht wird.`
 
-## Schritt 3 — entdecken
+## Schritt 3 — entdecken: Kernkonzept & Wirkungsmodell
 
 TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
@@ -67,14 +67,13 @@ TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
 Ein Sportler bremst vor dem Brett ab und springt danach steil nach oben — die Weite bleibt klein. Ist nun der Anlauf, der Absprung oder die Landung schuld? Wer alle Phasen gleich behandelt, korrigiert am falschen Ende. Erst wer die entscheidende Phase kennt, weiss auch, wo Korrektur ueberhaupt wirken kann.
 
-### Fachbegriff & Definition
+### Spiel-Aufgabe (Weitsprung-Sim: Phasen-Markierung)
 
-Die **Hauptphasen-Begruendung** ist der weil-Satz, der die ergebnisbestimmende Phase mit einem **biomechanischen oder physiologischen Mechanismus** belegt. Biomechanisch traegt sie Kraft, Geschwindigkeit mit $v = s/t$, Winkel und Hebel vor; physiologisch traegt sie Muskeltemperatur, Energiebereitstellung und nervale Steuerung mit $HF$ vor. Ohne konkreten Mechanismus bleibt die Aussage leer und erhaelt keine Punkte.
+Oeffne die Weitsprung-Sim: Die Bewegung laeuft als Kurve $x(t)=v_h\cdot t$ ueber die Bahn. Faerbe drei Phasen ein — Vorbereitung (Anlauf), Hauptphase (Absprung), Endphase (Flug und Landung) — und begruende jede Einfaerbung mit einem Mechanismus: $v=s/t$ und Winkel biomechanisch, $HF$ und Muskeltemperatur physiologisch. Das Sim-Raetsel: Nur die Hauptphase traegt den weil-Satz "Entscheidend ist, weil ..." — ohne konkreten Mechanismus bleibt die Markierung leer und gibt keine Punkte. Steuerformeln: $v=s/t$, $HF_{max}$, $x(t)=v_h\cdot t$.
 
-### Wirkungsgefuege / Modell
+### Aha-Moment & Gesetz
 
-Denke in Kausalkette: **Teilen, Markieren, Belegen**. Erstens wird geteilt: Vorbereitung mit Anlaufen und Ausrichten, Hauptphase mit Beschleunigen und Umsetzen, Endphase mit Abfangen. Zweitens wird markiert: Beim Weitsprung ist der Absprung entscheidend, beim Kugelstoss der finale Stoss. Drittens wird mit Mechanismus belegt: Der Absprung setzt $v_h$ in die Flugparabel um, das Aufwaermen hebt $HF$ und Muskeltemperatur als Voraussetzung. Genau diese Kette traegt in der Pruefung den Satz Entscheidend ist, weil.
-
+Denke in Kausalkette Teilen, Markieren, Belegen: Erstens wird geteilt — Vorbereitung mit Anlaufen, Hauptphase mit Beschleunigen und Umsetzen, Endphase mit Abfangen. Zweitens wird markiert: Beim Weitsprung ist der Absprung entscheidend, beim Kugelstoss der finale Stoss. Drittens wird mit Mechanismus belegt: Der Absprung setzt $v_h$ in die Flugparabel um, das Aufwaermen hebt $HF$ als Voraussetzung. Genau diese Kette traegt in der Pruefung jeden Erklaer-Satz.
 ```diagram
   Erklaeren [Teilen -> Markieren -> Begruenden]
   Vorbereitung [anlaufen | ausholen | ausrichten | HF steigt] -> Voraussetzung
@@ -82,6 +81,7 @@ Denke in Kausalkette: **Teilen, Markieren, Belegen**. Erstens wird geteilt: Vorb
   Endphase [abfangen | stabilisieren] -> Sicherung
   Schluss: Fehlerbild + Korrektur
   Kette: Phasen nennen -> Hauptphase markieren -> Mechanismus -> Korrektur
+  Steuerformeln: $v=s/t$ | $HF_{max}$ | $x(t)=v_h\cdot t$
 ```
 
 Klausur-Satz: `Entscheidend ist die Hauptphase, weil in ihr die biomechanisch oder physiologisch begruendete Leistung erbracht wird, die ueber das Ergebnis bestimmt.`
@@ -92,13 +92,13 @@ Klausur-Satz: `Entscheidend ist die Hauptphase, weil in ihr die biomechanisch od
 
 **Bezug zum Konzept**: `Das Aufwaermen begruendet physiologisch, warum jede Bewegung eine Vorbereitungsphase braucht.`
 
-## Schritt 4 — ausprobieren
+## Schritt 4 — ausprobieren: Interaktive Praxis & Weitsprung-Labor
 
 BEISPIEL (Musteraufgabe mit Loesungsweg):
 
-[Werkzeug: lego]
+[Werkzeug: weitsprung-sim]
 
-AUFGABE (beschreiben und erklaeren, AFB I und II): Waehle eine Bewegung aus deinem Kurs (zum Beispiel den Absprung beim Weitsprung oder den Kugelstoss) und erklaere sie in drei Phasen. Nenne fuer jede Phase eine Taetigkeit, markiere die Hauptphase und begruende sie mit einer biomechanischen oder physiologischen Ueberlegung. Ergaenze anschliessend einen haeufigen Fehler mit Korrektur.
+AUFGABE (beschreiben und erklaeren, AFB I und II): Sim-Raetsel — waehle eine Bewegung aus deinem Kurs (zum Beispiel den Absprung beim Weitsprung oder den Kugelstoss) und erklaere sie in drei Phasen. Faerbe in der Sim jede Phase ein, markiere die Hauptphase und begruende sie mit Mechanismus. Ergaenze einen haeufigen Fehler mit Korrektur.
 
 HILFE:
 1. Schritt 1: Zerlege die Bewegung in Vorbereitung, Hauptphase und Endphase.
@@ -106,11 +106,11 @@ HILFE:
 3. Schritt 3: Markiere die Hauptphase und begruende sie mit Entscheidend ist, weil.
 4. Schritt 4: Ergaenze einen typischen Fehler und eine konkrete Korrektur.
 
-MUSTERLOESUNG: Am Beispiel Weitsprung: Die Bewegung gliedert sich in Vorbereitung (Anlauf), Hauptphase (Absprung) und Endphase (Flug und Landung). In der Vorbereitung beschleunigt der Sportler im Anlauf und richtet seinen Koerper auf das Brett aus. In der Hauptphase setzt der Absprung die Anlaufgeschwindigkeit in eine flache, schnelle Flugkurve um: Der Sprungfuss stuetzt kurz, das Bein streckt sich explosiv, Schwungbein und Arme ziehen mit. In der Endphase stabilisiert der Sportler den Flug, streckt die Beine zur Landung nach vorn und faengt den Koerper ab. Entscheidend ist der Absprung, weil dort die horizontale Geschwindigkeit biomechanisch in die Flugparabel des Koerperschwerpunkts umgesetzt wird. Ohne diese Umsetzung bleibt die Weite klein. Ein haeufiger Fehler ist das Abbremsen vor dem Brett; die Korrektur ist ein rhythmischer Anlauf mit Markierungen, damit der Sportler schnell und flach ueber das Brett kommt.
+MUSTERLOESUNG: Am Beispiel Weitsprung: Vorbereitung ist der Anlauf — beschleunigen und auf das Brett ausrichten. Hauptphase ist der Absprung: Der Sprungfuss stuetzt kurz, das Bein streckt sich explosiv, Schwungbein und Arme ziehen mit; er setzt die Anlaufgeschwindigkeit in eine flache, schnelle Flugkurve $x(t)=v_h\cdot t$ um. Endphase sind Flug und Landung: stabilisieren, Beine nach vorn strecken, abfangen. Entscheidend ist der Absprung, weil dort $v_h$ biomechanisch in Weite umgesetzt wird. Haeufiger Fehler: Abbremsen vor dem Brett; Korrektur: rhythmischer Anlauf mit Markierungen fuer schnelles, flaches Ueberqueren.
 
 Klausur-Satz: `Die Bewegung gliedert sich in Anlauf, Absprung sowie Flug und Landung; entscheidend ist der Absprung, weil dort die Anlaufgeschwindigkeit biomechanisch in Weite umgesetzt wird.`
 
-## Schritt 5 — ausprobieren
+## Schritt 5 — ausprobieren: Verfahrensvergleich & Abgrenzung
 
 VERGLEICH (zwei Verfahren im Kontrast):
 
@@ -128,7 +128,7 @@ Redemittel: `Die Bewegung gliedert sich in drei Phasen; entscheidend ist die Hau
 
 Klausur-Satz: `Beschreiben heisst, die Phasen zu benennen; erklaeren heisst, die entscheidende Phase mit einem Mechanismus zu begruenden.`
 
-## Schritt 6 — check
+## Schritt 6 — check: Verständnisprüfung
 
 CHECK (3 Fragen zur Selbstkontrolle mit Antworten):
 
@@ -149,13 +149,13 @@ Klausur-Satz: `Eine vollstaendige Bewegungserklaerung besteht aus der Phasenglie
    Korrektur: Als Begruendung zaehlt nur ein konkreter Mechanismus, biomechanisch oder physiologisch. Die blosse Behauptung von Wichtigkeit bleibt leer und erhaelt keine Punkte.
    Korrektur-Satz: `Als Begruendung gilt nur ein konkreter Mechanismus, biomechanisch oder physiologisch, nicht die blosse Behauptung, eine Phase sei wichtig.`
 
-## Schritt 7 — szenario
+## Schritt 7 — szenario: Klausurtransfer & Rubric
 
 ROLLE: Du bist Pruefling in einer muendlichen Sportpruefung und sollst eine Bewegung aus deinem Kurs erklaeren.
 SITUATION: Der Pruefer fordert dich auf, eine von dir gewaehlte Bewegung (zum Beispiel den Absprung beim Weitsprung oder den Kugelstoss) in drei Phasen zu erklaeren. Sprich in zusammenhaengenden deutschen Saetzen (ca. 2 Minuten): Nenne die drei Phasen, markiere die Hauptphase, begruende sie biomechanisch oder physiologisch mit einem weil-Satz und nenne einen haeufigen Fehler mit Korrektur.
 RUBRIC (30 XP): Vollstaendige Nennung der drei Phasen mit je einer Taetigkeit (8 XP) | Korrekte Markierung der Hauptphase (5 XP) | Biomechanische oder physiologische Begruendung mit weil-Satz und Fachbegriff (10 XP) | Ein typischer Fehler mit konkreter Korrektur (4 XP) | Freies, zusammenhaengendes Sprechen mit Fachsprache (3 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY (Kernzusammenfassung):
 

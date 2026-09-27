@@ -15,7 +15,7 @@ version: Lesson-v3
 
 <!-- Lesson v3 9步制架构：Schritt 1至8固定结构；Fehlvorstellung 夹在 Schritt 6 与 7 之间（Parser 自动跳过，不占步数）；支持内嵌 [Werkzeug: <id>] 交互教具；Gating: check/szenario 未过 = Weiter 置灰；XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
-## Schritt 1 — entdecken
+## Schritt 1 — entdecken: Ziele & Phänomen-Einstieg
 
 ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
@@ -25,9 +25,20 @@ ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
 Voraussetzung（窄切口）：只做递增负荷曲线解读，不做 Spiroergometrie 细节；已会 Energiebereitstellung 三系统。
 
+
+Hook中文生活切入:
+
+想象手机电量:刷短视频时省电模式撑很久,一切到高帧率游戏电量断崖下跌,还发烫卡顿,得插电才能续命。人体供能同理:慢跑时有氧系统细水长流,强度一过阈值无氧登场,乳酸堆积、呼吸加深,速度再也维持不住,阈值就是这条电量红线。这条电量红线的位置漂移,正是本节曲线题要找的拐点。
+
+Phaenomen-Satz (DE): Locker laeuft es ewig, schnell brennt es kurz, die Schwelle trennt beides.
+
+中文机制铺垫:有氧阈之前脂肪为主,阈间糖酵解 ramp up,无氧阈之后乳酸陡增;乳酸阈测试用逐级递增速找拐点,耐力训练把阈值右移;答题先认曲线拐点,再对供能系统,训练建议落在阈值跑。
+
+Mechanismus-Satz (DE): Unter der Schwelle aerob stabil, darueber anaerob teuer und kurz.
+
 Klausur-Satz: `Die Laktatkurve trennt aerobe Basis, aerob-anaeroben Uebergang und anaerobe Spitze.`
 
-## Schritt 2 — entdecken
+## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
 
 PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
 
@@ -41,24 +52,37 @@ PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→�
 
 Klausur-Satz: `An der anaeroben Schwelle halten sich Bildung und Abbau von Laktat gerade die Waage.`
 
-## Schritt 3 — entdecken
+## Schritt 3 — entdecken: Kernkonzept & Wirkungsmodell
 
-ENTDECKEN（1概念 + 1文字图解）：
+ENTDECKEN（1概念 + 1文字图解，中文在上、德语在下）：
 
-中文：曲线横轴是速度、纵轴是乳酸：低速段平缓（有氧清得掉），中速段上扬（混氧开始欠账），高速段陡增（无氧主导、很快力竭）。$2$ 与 $4$ 是路标不是墙：$2$ 下随便聊天的慢跑，$2$–$4$ 之间可坚持的 tempo 跑，$4$ 上只能顶几分钟。训练对号：打底用 $2$ 下 GA1，提速用 $4$ 附近 Schwelle，冲刺用 $4$ 上 Intervall。
+Hook中文生活切入：
+
+中文：想象跑步撞墙时刻：还能聊天时很稳，一加速就喘到说不出话。乳酸曲线就是这堵墙的地图。
+
+Phaenomen-Satz (DE): Flach heisst tragbar, steil heisst Stau.
+
+Spiel-Aufgabe沙盒操作指引：
+
+中文：打开沙盒，拖动滑块提配速（关键词：aerob, anaerob, Schwelle, Laktat），看曲线何时由平转陡，找到能聊天与必须闭嘴的分界。
+
+Beobachtungs-Satz (DE): An der Schwelle halten sich Bildung und Abbau die Waage.
+
+Aha-Moment因果链：
+
+中文因果链：低速时乳酸边产边清曲线平，高于阈值后产生压过清除曲线陡；平段练 base、阈值练 tempo、陡段只配间歇；曲线右移即训练有效。
+
+Gesetz-Satz (DE): Flach heisst abbaubar, steil heisst akkumulierend.
 
 文字图解（ASCII 结构图，App支持解析渲染）：
 
 ```diagram
-  Laktat ^         *  anaerob (>4, Abbruch bald)
-         |       *
-         |  _4_ _ _ _ _ anaerobe Schwelle
-         |    *      aerob-anaerob (Tempo)
-         | _2_ _ _ _ _ aerobe Schwelle
-         | *           aerob (GA1, reden moeglich)
-         +------------------> Geschwindigkeit
+Laktat ^
+  |         #### steil (anaerob, Intervall)
+  |       ##  Schwelle ca. 12 km/h
+  |   ....  flach (aerob, Basis 10 km/h)
+  +----------------------------> Tempo
 ```
-
 Klausur-Satz: `Flach heisst abbaubar, steil heisst akkumulierend.`
 
 ## Anekdote & Fun-Fact
@@ -69,24 +93,31 @@ Klausur-Satz: `Flach heisst abbaubar, steil heisst akkumulierend.`
 
 **Bezug zum Konzept**: `Training verschiebt die Kurve nach rechts.`
 
-## Schritt 4 — ausprobieren
+## Schritt 4 — ausprobieren: Interaktive Praxis & Labor
 
-BEISPIEL（正确例题示范，含教具操作与解答）：
+[Werkzeug: weitsprung-sim]
 
-[Werkzeug: kurve]
+BEISPIEL（正确例题示范，含教具操作与解答，中文在上、德语在下）：
 
-AUFGABE (deuten, AFB II)：Deuten Sie eine Laktatkurve: Bei $10\,\mathrm{km/h}$ liegt Laktat bei $1{,}8$, bei $12\,\mathrm{km/h}$ bei $3{,}2$, bei $14\,\mathrm{km/h}$ bei $6{,}5\,\mathrm{mmol/L}$. Ordnen Sie Zonen zu und empfehlen Sie Training.
+AUFGABE中文导读（读图谜题）：某跑者10配速平稳、12临界、14爆表。请划分三区并开出三周训练单。
 
-HILFE:
-1. Schritt 1: Beide Schwellen als Linien einzeichnen.
-2. Schritt 2: Jeden Messpunkt einer Zone zuordnen.
-3. Schritt 3: Zwei Trainingsempfehlungen ableiten.
+AUFGABE (auswerten, AFB II): Bei $10\,\mathrm{km/h}$ flach, bei $12$ Schwelle, bei $14$ steil. Zonen Sie und verordnen Sie Training.
 
-MUSTERLÖSUNG: $10\,\mathrm{km/h}$ mit $1{,}8$ liegt unter der aeroben Schwelle — reiner GA1-Bereich, lange Dauerlaeufe moeglich. $12\,\mathrm{km/h}$ mit $3{,}2$ liegt zwischen den Schwellen — aerob-anaerober Uebergang, als Tempodauerlauf an der Schwelle trainierbar. $14\,\mathrm{km/h}$ mit $6{,}5$ liegt deutlich ueber der anaeroben Schwelle — kein Steady State, nur Intervall mit Pausen. Empfehlung: Basis mit $10\,\mathrm{km/h}$ ausbauen, Schwelle mit Intervallen um $12\,\mathrm{km/h}$ nach rechts verschieben.
+HILFE（中德双语步骤）：
 
+1. 中文：第1步分区：有氧底、阈值、间歇，关键词：Zonen。
+   Schritt 1 (DE): Basis, Schwelle, Spitze trennen.
+2. 中文：第2步配练：长慢跑、控速跑、短间歇，关键词：Rezept。
+   Schritt 2 (DE): Lang ruhig, kurz hart, Intervalle.
+3. 中文：第3步验效：右移即进步，关键词：Kontrolle。
+   Schritt 3 (DE): Rechtsverschiebung heisst trainiert.
+
+MUSTERLOESUNG：中文：10是有氧底配长慢跑，12是阈值配控速跑，14是无氧顶只配短间歇；复测曲线右移即有效，变陡提前即练崩。
+
+MUSTERLOESUNG (DE): $10\,\mathrm{km/h}$ ist Basis, $12$ ist Schwelle, $14$ ist Intervall: Basis lang und ruhig, Schwelle kurz und kontrolliert hart.
 Klausur-Satz: `10 km/h ist Basis, 12 km/h ist Schwelle, 14 km/h ist Intervall.`
 
-## Schritt 5 — ausprobieren
+## Schritt 5 — ausprobieren: Verfahrensvergleich & Abgrenzung
 
 VERGLEICH辨别实验（双向辨析：低强打底 vs 阈值提速）：
 
@@ -101,7 +132,7 @@ ANTWORT: A erfordert Verfahren (i): Umfang unter der aeroben Schwelle, lange ruh
 
 Klausur-Satz: `Basis laeuft man lang und ruhig, Schwelle kurz und kontrolliert hart.`
 
-## Schritt 6 — check
+## Schritt 6 — check: Verständnisprüfung
 
 CHECK检索默写（自测 3 题，与答案配对）：
 
@@ -123,13 +154,13 @@ Klausur-Satz: `Rechts heisst trainiert, steil heisst ueberfordert.`
    中文纠偏：$2$/$4$ 是约定路标，可训练右移；同一速度阈值前后意义不同。
    Korrektur-Satz: `Schwellen sind verschiebbare Marken, keine Mauern.`
 
-## Schritt 7 — szenario
+## Schritt 7 — szenario: Klausurtransfer & Rubric
 
 ROLLE: Du betreust einen Hobbylaeufer mit Stufentest-Protokoll.
 SITUATION: Er will Marathon finishen und fragt nach Zonen. Deute in zusammenhaengender Darstellung (ca. 150 Woerter) seine drei Messpunkte und gib zwei Zonenempfehlungen.
 RUBRIC (30 XP): Zonenordnung aller Punkte (12 XP) | Zwei Trainingsempfehlungen mit Begruendung (10 XP) | Rechtsverschiebung als Ziel (4 XP) | Verstaendliche Sprache (4 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY 1盒（核心总结）：
 

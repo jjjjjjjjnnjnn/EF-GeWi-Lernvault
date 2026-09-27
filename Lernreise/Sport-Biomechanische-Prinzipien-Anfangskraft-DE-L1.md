@@ -15,7 +15,7 @@ version: Lesson-v3
 
 <!-- Lesson v3 Architektur mit 9 Abschnitten: Schritt 1 bis 8 mit fester Struktur; Fehlvorstellung liegt zwischen Schritt 6 und 7 (wird vom Parser uebersprungen, zaehlt nicht als Schritt); unterstuetzt eingebettete [Werkzeug: <id>] Elemente; Gating: check/szenario nicht bestanden = Weiter deaktiviert; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
-## Schritt 1 — entdecken
+## Schritt 1 — entdecken: Ziele & Phänomen-Einstieg
 
 ZIELE (drei messbare Ziele dieser Lektion):
 
@@ -25,7 +25,7 @@ ZIELE (drei messbare Ziele dieser Lektion):
 
 ### Hook / Phaenomen
 
-Stell dir vor: Zwei Kugelstosser, derselbe Arm, dieselbe Kraft — doch eine Kugel fliegt fast zwei Meter weiter. Der Unterschied liegt nicht im Arm, sondern in den Beinen. Wie kann ein kleiner Schritt zurueck die Kugel weiter nach vorn bringen? Die Antwort liegt in einer Startbahn, die man erst bauen muss, bevor man sie nutzt.
+Stell dir vor: Zwei Kugelstosser, derselbe Arm, dieselbe Kraft — doch eine Kugel fliegt fast zwei Meter weiter. Der Unterschied liegt nicht im Arm, sondern in den Beinen. Wie kann ein kleiner Schritt zurueck die Kugel weiter nach vorn bringen? Die Antwort liegt in einer Startbahn, die man erst bauen muss, bevor man sie nutzt. Das Prinzip der Anfangskraft mit Impuls $J$ und Arbeit $W$ erklaert den Abstoss in der Luft wie am Boden: Erstens bremst der Auftakt die Masse kontrolliert ab und spannt die Kette vor. Zweitens verlaengert das Angleiten den Beschleunigungsweg, sodass dieselbe Kraft laenger wirken kann. Drittens setzt der finale Stoss den gespeicherten Impuls in Abfluggeschwindigkeit um. Viertens zeigt die Sim-Kurve mit $v = s/t$ und $x(t) = v_h \cdot t$, wie Weg in Weite traegt. Wer Anfangskraft so einstellt statt nur staerker zu druecken, baut Weite vor dem Abdruck.
 
 ### Fachbegriff & Definition
 
@@ -37,7 +37,7 @@ Der Kernmechanismus laeuft in drei Stufen: **Ausholen, Beschleunigen, Buendeln**
 
 Klausur-Satz: `Das Prinzip der Anfangskraft besagt, dass eine entgegengesetzte Vorbewegung den Beschleunigungsweg verlaengert und so die Endgeschwindigkeit erhoeht.`
 
-## Schritt 2 — entdecken
+## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
 
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
@@ -59,7 +59,7 @@ Die Begriffe greifen ineinander: Die **Anfangskraft** liefert $v_0$, der **Impul
 
 Klausur-Satz: `Der Impuls aus Kraft und Zeit bestimmt zusammen mit dem Beschleunigungsweg die Abstossgeschwindigkeit.`
 
-## Schritt 3 — entdecken
+## Schritt 3 — entdecken: Kernkonzept & Wirkungsmodell
 
 TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
@@ -67,20 +67,20 @@ TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
 Ein leichter Athlet mit sauberem Gleitschritt stoesst weiter als ein deutlich staerkerer Athlet aus dem Stand. Ist Kraft also ueberfluessig? Keineswegs — doch Technik schlaegt rohe Kraft, solange die Bahn kurz bleibt. Erst wer beide Formeln zusammen denkt, versteht, warum Bestleistung immer Technikweg plus Kraftniveau braucht.
 
-### Fachbegriff & Definition
+### Spiel-Aufgabe (Weitsprung-Sim: Bahn-Regler)
 
-Der **Anfangskraft-Weg** ist das Verfahren, Weite ueber $v_0$, $t$ und $s$ zu steigern statt nur ueber $F$. Er nutzt Auftakt als Bahn, Angleiten als Zeit und Weg, finalen Stoss als Kraftbuendelung. Im Gegensatz zum **Maximalkraft-Weg**, der nur $F$ ueber Querschnitt hebt, multipliziert er vorhandene Kraft mit $J = F \cdot t$ und $W = F \cdot s$ zu maximalem $v$.
+Ziehe in der Weitsprung-Sim den Bahn-Regler: Verlaengere Auftakt und Angleiten und beobachte live, wie $J=F\cdot t$ und $W=F\cdot s$ wachsen — schon mittleres $F$ erzeugt ueber langes $t$ grosses $J$, ueber langes $s$ grosses $W$. Das Regler-Raetsel: Finde die Kombination aus Technikweg und Kraftniveau, die $v$ maximiert; verkuerztes oder langsames Gleiten verschenkt Weite bei gleicher Kraft. Steuerformeln: $v=s/t$, $HF_{max}$, $x(t)=v_h\cdot t$.
 
-### Wirkungsgefuege / Modell
+### Aha-Moment & Gesetz
 
-Denke in Kausalkette: **Bahn, Zeit, Kraft**. Erstens schafft der Auftakt mit Absenken $v_0 > 0$ und Ausholweg. Zweitens verlaengert das Angleiten ueber etwa einen Meter $s$ und $t$, sodass schon mittleres $F$ grosses $J$ erzeugt. Drittens addiert der finale Stoss Beinstreckung plus Hueftdrehung plus Armstreckung nacheinander in dieselbe Richtung, sodass $W$ auf langem $s$ maximales $v$ erzeugt. Genau diese Kette erklaert, warum verkuerztes oder langsames Gleiten bei gleicher Kraft Weite verschenkt.
-
+Denke in Kausalkette Bahn, Zeit, Kraft: Der Auftakt schafft mit Absenken $v_0>0$ und Ausholweg, das Angleiten verlaengert ueber etwa einen Meter $s$ und $t$, der finale Stoss addiert Beinstreckung plus Hueftdrehung plus Armstreckung in dieselbe Richtung. Im Gegensatz zum Maximalkraft-Weg, der nur $F$ hebt, multipliziert der Anfangskraft-Weg vorhandene Kraft zu maximalem $v$. Regel: Technikweg verlaengert $t$ und $s$, Kraftniveau hebt $F$.
 ```diagram
   Anfangskraft [zurueck -> nach vorn als Startbahn]
   ohne: Start(0) -> Armstoss [s kurz] -> v klein
   mit: Auftakt [v0 + Bahn] -> Angleiten [s lang, t lang] -> Stoss [F gross] -> V maximal
   Formeln: J = F*t | W = F*s | Ziel: F gross + t lang + s lang = v maximal
   Regel: Technikweg verlaengert t und s, Kraftniveau hebt F
+  Steuerformeln: $v=s/t$ | $HF_{max}$ | $x(t)=v_h\cdot t$
 ```
 
 Klausur-Satz: `Eine vorbereitende Gegenbewegung schafft Anfangsgeschwindigkeit und verlaengert den Weg der Hauptkraft.`
@@ -91,24 +91,24 @@ Klausur-Satz: `Eine vorbereitende Gegenbewegung schafft Anfangsgeschwindigkeit u
 
 **Bezug zum Konzept**: `Nicht die reine Armkraft entscheidet, sondern die Laenge des vorbereiteten Beschleunigungsweges.`
 
-## Schritt 4 — ausprobieren
+## Schritt 4 — ausprobieren: Interaktive Praxis & Weitsprung-Labor
 
 BEISPIEL (Musteraufgabe mit Loesungsweg):
 
-[Werkzeug: kinematik]
+[Werkzeug: weitsprung-sim]
 
-AUFGABE (anwenden, AFB II): Erklaere am Beispiel des Kugelstoss-Gleitschritts, wie Anfangskraft, Impuls und Beschleunigungsweg die Stossweite bestimmen. Gliedere in Auftakt, Angleiten und finalen Stoss.
+AUFGABE (anwenden, AFB II): Regler-Raetsel — erklaere am Beispiel des Kugelstoss-Gleitschritts, wie Anfangskraft, Impuls und Beschleunigungsweg die Stossweite bestimmen. Stelle in der Sim Auftakt, Angleiten und finalen Stoss ein und lies $J$ und $W$ ab.
 
 HILFE:
 1. Schritt 1: Auftakt beschreiben: Absenkung und Gegenbewegung erzeugen ein kleines $v0$ entgegen der Stossrichtung als Ausholweg.
-2. Schritt 2: Angleiten mit Formel deuten: $J = F mal t$ erklaert Beinschub ueber Zeit, $s$ waechst durch die Gleitstrecke.
+2. Schritt 2: Angleiten mit Formel deuten: $J=F\cdot t$ erklaert Beinschub ueber Zeit, $s$ waechst durch die Gleitstrecke.
 3. Schritt 3: Finalen Stoss als Addition zeigen: Beinstreckung plus Rumpfdrehung plus Armstreckung nacheinander in dieselbe Richtung.
 
-MUSTERLOESUNG: Auftakt: Die Kugel sinkt mit dem Oberkoerper leicht ab und verlagert das Gewicht nach hinten; so entsteht eine Gegenbewegung mit kleiner Anfangsgeschwindigkeit $v0$ und ein langer Ausholweg. Angleiten: Der kraeftige Beinabdruck schiebt den Koerper ueber etwa einen Meter nach vorn; nach $J = F mal t$ erzeugt schon mittlere Beinkraft ueber diese Zeit einen grossen Impuls, gleichzeitig waechst der Beschleunigungsweg $s$ fuer die Endphase. Finaler Stoss: Beinstreckung, Hueftdrehung und Armstreckung greifen nacheinander in dieselbe Richtung; nach $W = F mal s$ addiert jeder Abschnitt Arbeit auf demselben langen Weg, sodass die Abfluggeschwindigkeit $v$ deutlich ueber dem reinen Armstoss liegt. Fazit: Wer den Gleitschritt kurz oder zu langsam ausfuehrt, verkuerzt $s$ und $t$ und verschenkt Weite bei gleicher Kraft.
+MUSTERLOESUNG: Auftakt: Die Kugel sinkt leicht ab, das Gewicht verlagert sich nach hinten — Gegenbewegung mit kleinem $v0$ und langem Ausholweg. Angleiten: Der Beinabdruck schiebt ueber etwa einen Meter nach vorn; nach $J=F\cdot t$ erzeugt schon mittlere Kraft ueber diese Zeit grossen Impuls, gleichzeitig waechst $s$. Finaler Stoss: Beinstreckung, Hueftdrehung und Armstreckung greifen nacheinander in dieselbe Richtung; nach $W=F\cdot s$ addiert jeder Abschnitt Arbeit auf langem Weg, sodass $v$ deutlich ueber dem reinen Armstoss liegt. Fazit: Kurzes oder langsames Gleiten verkuerzt $s$ und $t$ und verschenkt Weite.
 
 Klausur-Satz: `Auftakt und Angleiten liefern $v0$, Zeit und Weg, der finale Stoss verwandelt sie in maximale Abfluggeschwindigkeit.`
 
-## Schritt 5 — ausprobieren
+## Schritt 5 — ausprobieren: Verfahrensvergleich & Abgrenzung
 
 VERGLEICH (zwei Verfahren im Kontrast):
 
@@ -122,7 +122,7 @@ ANTWORT: A erfordert Verfahren (i): Der leichtere Athlet nutzt $v0$ plus langes 
 
 Klausur-Satz: `Technik verlaengert Zeit und Weg des Impulses, Kraft erhoeht seinen Ausgangswert.`
 
-## Schritt 6 — check
+## Schritt 6 — check: Verständnisprüfung
 
 CHECK (3 Fragen zur Selbstkontrolle mit Antworten):
 
@@ -143,14 +143,14 @@ Klausur-Satz: `Die Stossweite waechst mit Kraft, Beschleunigungszeit und Beschle
    Korrektur: Bein und Rumpf erzeugen den Hauptimpuls, der Arm vollendet nur die finale Streckung. Wer nur den Arm trainiert, nutzt nur die letzten Meter der Bahn.
    Korrektur-Satz: `Bein und Rumpf erzeugen den Hauptimpuls, der Arm vollendet nur die finale Streckung.`
 
-## Schritt 7 — szenario
+## Schritt 7 — szenario: Klausurtransfer & Rubric
 
 ROLLE: Du bist Sporthelferin in der EF und analysierst ein Handyvideo vom Kugelstossen.
 SITUATION: Ein Mitschueler stoesst aus dem Stand recht weit, doch mit Gleitschritt landet die Kugel kaum weiter vorn. Er will das Gleiten schon aufgeben.
 AUFGABE: Schreibe eine zusammenhaengende Beratung (ca. 150 Woerter), in der du sein Video anhand von Anfangskraft, Impuls und Beschleunigungsweg deutest und zwei konkrete Korrekturen fuer Auftakt und Angleit-Tempo gibst.
 RUBRIC (30 XP): Deutung mit $J = F mal t$ und Weg (10 XP) | Zwei Fehler in Auftakt und Tempo benannt (10 XP) | Zwei umsetzbare Korrekturen mit Zielwert (10 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY (Kernzusammenfassung):
 

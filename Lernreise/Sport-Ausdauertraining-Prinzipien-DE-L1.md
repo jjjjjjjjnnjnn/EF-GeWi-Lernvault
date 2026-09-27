@@ -15,7 +15,7 @@ version: Lesson-v3
 
 <!-- Lesson v3 Architektur mit 9 Abschnitten: Schritt 1 bis 8 mit fester Struktur; Fehlvorstellung liegt zwischen Schritt 6 und 7 (wird vom Parser uebersprungen, zaehlt nicht als Schritt); unterstuetzt eingebettete [Werkzeug: <id>] Elemente; Gating: check/szenario nicht bestanden = Weiter deaktiviert; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
-## Schritt 1 — entdecken
+## Schritt 1 — entdecken: Ziele & Phänomen-Einstieg
 
 ZIELE (drei messbare Ziele dieser Lektion):
 
@@ -25,7 +25,7 @@ ZIELE (drei messbare Ziele dieser Lektion):
 
 ### Hook / Phaenomen
 
-Stell dir vor: Zwei Laeufer trainieren gleich hart. Der eine wird von Woche zu Woche schneller, der andere immer mueder — obwohl beide dieselben Kilometer laufen. Der Unterschied liegt nicht im Schweiss, sondern in der Pause. Wie kann Nichtstun die Leistung steigern, und warum macht zu viel Training langsam statt schnell?
+Stell dir vor: Zwei Laeufer trainieren gleich hart. Der eine wird von Woche zu Woche schneller, der andere immer mueder — obwohl beide dieselben Kilometer laufen. Der Unterschied liegt nicht im Schweiss, sondern in der Pause. Wie kann Nichtstun die Leistung steigern, und warum macht zu viel Training langsam statt schnell? Durch das Zusammenspiel von Reiz, Ermuedung und Erholung mit der Grundformel $v = s/t$ und der Leitgroesse $HF_{max}$. Erstens braucht der Reiz die richtige Staerke: zu schwach loest keine Anpassung aus, zu stark blockiert sie. Zweitens braucht die Pause die richtige Laenge: Erst in der Erholung steigt die Kurve ueber das Ausgangsniveau. Drittens steuern die Trainingsnormative Reizhoehe, Dauer, Dichte und Umfang die Dosis. Viertens ordnet die Herzfrequenz die Bereiche vom lockeren Dauerlauf bis zum Intervall. Wer Reiz-Marker auf die Kurve setzt statt nur Kilometer zu sammeln, trainiert Anpassung statt Erschoepfung.
 
 ### Fachbegriff & Definition
 
@@ -37,7 +37,7 @@ Der Kernmechanismus laeuft in drei Stufen: **Reiz, Erholung, Anpassung**. Ersten
 
 Klausur-Satz: `Nach einer Belastung sinkt die Leistungsfaehigkeit zunaechst, steigt in der Erholung ueber das Ausgangsniveau (Superkompensation) und faellt danach wieder auf dieses zurueck.`
 
-## Schritt 2 — entdecken
+## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
 
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
@@ -59,7 +59,7 @@ Die Begriffe greifen ineinander: Die **Belastungsnormative** mit $\% HF_{max}$ s
 
 Klausur-Satz: `Der naechste Trainingsreiz muss in die Phase der Superkompensation fallen; sonst stagniert die Leistung oder es kommt zum Uebertraining.`
 
-## Schritt 3 — entdecken
+## Schritt 3 — entdecken: Kernkonzept & Wirkungsmodell
 
 TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
@@ -67,14 +67,13 @@ TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
 Siebenmal pro Woche maximales Krafttraining — nach zwei Wochen sinkt die Leistung. Ist der Sportler zu schwach oder der Plan zu stark? Viele antworten mit mehr Ehrgeiz und trainieren sich noch tiefer ins Tal. Erst die Kurve zeigt: Nicht der Wille fehlt, sondern die Pause. Wie liest man aus Abstaenden ein Urteil?
 
-### Fachbegriff & Definition
+### Spiel-Aufgabe (Kinematik-Lab: Kurven-Puzzle)
 
-Das **Prinzip der optimalen Relation von Belastung und Erholung** verlangt, den naechsten Reiz genau in den Gipfel der Superkompensation zu legen. Bei mittlerer Ausdauerbelastung mit $65-80\% HF_{max}$ genuegen oft $24$ bis $48$ Stunden, bei maximaler Kraftbelastung $48$ bis $72$ Stunden. Es begruendet zusaetzlich **Kontinuitaet, Progression, Variation und Individualitaet** — kein Gipfel ohne Rhythmus, keine Steigerung ohne Erholung.
+Oeffne das Kinematik-Lab: Die Superkompensations-Kurve liegt vor dir, sieben Reiz-Marker warten. Setze jeden naechsten Reiz auf Tal, Gipfel oder Rueckkehr und lies $HF$ sowie $\%HF_{max}$ ab — $65-80\% HF_{max}$ brauchen $24$ bis $48$ Stunden, maximale Reize $48$ bis $72$ Stunden. Das Lab-Raetsel: Nur ein Marker exakt auf dem Gipfel loest die Steigerung aus; Tal-Marker kumulieren Ermuedung, Spaet-Marker verschenken Anpassung. Steuerformeln: $v=s/t$, $\%HF_{max}$, $x(t)=v_h\cdot t$.
 
-### Wirkungsgefuege / Modell
+### Aha-Moment & Gesetz
 
-Denke in Kausalkette: **Einordnen, Deuten, Verbessern**. Erstens wird der zweite Reiz auf der Kurve eingeordnet: Tal bedeutet Ermuedung, Gipfel bedeutet Superkompensation, Rueckkehr zum Ausgangsniveau bedeutet verpasste Anpassung. Zweitens wird gedeutet: zu frueh mit $HF$ dauerhaft hoch heisst Uebertraining, passend heisst Steigerung, zu spaet heisst Stagnation. Drittens wird verbessert: Ruhetage einfuegen, Intensitaet ueber $\% HF_{max}$ steuern, Umfang progressiv steigern. Genau diese Kette verwandelt einen vollen Plan in einen wirksamen Plan.
-
+Denke in Kausalkette Einordnen, Deuten, Verbessern: Der zweite Reiz wird auf der Kurve eingeordnet — Tal heisst Ermuedung, Gipfel heisst Superkompensation — dann gedeutet (zu frueh heisst Uebertraining, passend heisst Steigerung, zu spaet heisst Stagnation) und verbessert (Ruhetage, Intensitaet ueber $\%HF_{max}$, Progression). Genau diese Kette verwandelt einen vollen Plan in einen wirksamen Plan.
 ```diagram
   Kurve [Belastung -> Ermuedung -> Erholung -> Gipfel -> Rueckkehr]
   Belastung [Reiz %HFmax] -> Tal [HF hoch, Leistung tief]
@@ -82,6 +81,7 @@ Denke in Kausalkette: **Einordnen, Deuten, Verbessern**. Erstens wird der zweite
   Gipfel -> Rueckkehr [Ausgangsniveau]
   Naechster Reiz: frueh=Uebertraining | Gipfel=Steigerung | spaet=Stagnation
   Regel: Intensitaet hoch -> Pause 48-72h | mittel -> Pause 24-48h
+  Steuerformeln: $v=s/t$ | $\%HF_{max}$ | $x(t)=v_h\cdot t$
 ```
 
 Klausur-Satz: `Das Superkompensationsmodell begruendet das Prinzip der optimalen Relation von Belastung und Erholung.`
@@ -92,13 +92,13 @@ Klausur-Satz: `Das Superkompensationsmodell begruendet das Prinzip der optimalen
 
 **Bezug zum Konzept**: `Zatopeks Intervalltraining zeigt praktisch, dass der naechste Reiz in die Phase der Superkompensation fallen muss.`
 
-## Schritt 4 — ausprobieren
+## Schritt 4 — ausprobieren: Interaktive Praxis & Lauf-Labor
 
 BEISPIEL (Musteraufgabe mit Loesungsweg):
 
-[Werkzeug: formula]
+[Werkzeug: kinematik-lab]
 
-AUFGABE (erklaeren, AFB II): Ein Sportler absolviert an sieben Tagen pro Woche dasselbe intensive Krafttraining. Nach zwei Wochen ist seine Leistung gesunken. Erklaeren Sie dieses Ergebnis mit dem Superkompensationsmodell und geben Sie eine Verbesserung an.
+AUFGABE (erklaeren, AFB II): Lab-Raetsel — ein Sportler absolviert an sieben Tagen pro Woche dasselbe intensive Krafttraining. Nach zwei Wochen ist seine Leistung gesunken. Setze im Kinematik-Lab die sieben Reiz-Marker auf die Kurve, erklaere das Ergebnis mit dem Superkompensationsmodell und gib eine Verbesserung an.
 
 HILFE:
 1. Schritt 1: Bestimme, wo der jeweils naechste Trainingsreiz auf der Kurve liegt (Belastung, Ermuedung, Erholung oder Superkompensation).
@@ -106,11 +106,11 @@ HILFE:
 3. Schritt 3: Benenne die Folge (Uebertraining).
 4. Schritt 4: Gib eine konkrete Verbesserung mit Angabe von Frequenz und Erholung.
 
-MUSTERLOESUNG: Bei taeglichem intensivem Krafttraining faellt der naechste Reiz immer wieder in die Phase der Ermuedung, weil zwischen den Einheiten keine ausreichende Erholung liegt. Da die Leistungsfaehigkeit nie ueber das Ausgangsniveau steigen kann, kommt es zu einer Kumulation der Ermuedung. Das Ergebnis ist ein Uebertraining, bei dem die Leistung nicht steigt, sondern sinkt. Eine Verbesserung bestuende darin, Ruhetage einzufuegen und die Reizhaeufigkeit zu senken, sodass der naechste Reiz genau in die Phase der Superkompensation faellt. Damit entspricht der Plan wieder dem Prinzip der optimalen Relation von Belastung und Erholung sowie dem Prinzip der progressiven Belastungssteigerung.
+MUSTERLOESUNG: Bei taeglichem intensivem Krafttraining faellt der naechste Reiz immer wieder in die Phase der Ermuedung, weil keine ausreichende Erholung liegt. Die Leistungsfaehigkeit kann nie ueber das Ausgangsniveau steigen — Ermuedung kumuliert. Das Ergebnis ist Uebertraining mit sinkender Leistung. Verbesserung: Ruhetage einfuegen und die Reizhaeufigkeit senken, sodass der naechste Reiz genau in die Superkompensation faellt — nach dem Prinzip der optimalen Relation von Belastung und Erholung sowie der Progression.
 
 Klausur-Satz: `Faellt der naechste Reiz stets in die Ermuedungsphase, so entsteht kein Superkompensationseffekt, sondern ein Uebertraining mit sinkender Leistung.`
 
-## Schritt 5 — ausprobieren
+## Schritt 5 — ausprobieren: Verfahrensvergleich & Abgrenzung
 
 VERGLEICH (zwei Verfahren im Kontrast):
 
@@ -128,7 +128,7 @@ Redemittel: `Dieser Plan verstoesst gegen das Prinzip der Belastung und Erholung
 
 Klausur-Satz: `Waehrend das Superkompensationsmodell den richtigen Zeitpunkt des Reizes bestimmt, liefert die Prinzipienpruefung die Kriterien fuer die Beurteilung des gesamten Plans.`
 
-## Schritt 6 — check
+## Schritt 6 — check: Verständnisprüfung
 
 CHECK (3 Fragen zur Selbstkontrolle mit Antworten):
 
@@ -149,13 +149,13 @@ Klausur-Satz: `Je hoeher die Belastungsintensitaet, desto laenger die notwendige
    Korrektur: Muskelkater ist eine Ermuedungserscheinung, Superkompensation eine spaetere Leistungsspitze. Beide liegen an verschiedenen Punkten der Kurve. Schmerz als Erfolgsmassstab fuehrt zu falschen Abstaenden.
    Korrektur-Satz: `Muskelkater und Superkompensation sind nicht dasselbe: Der Muskelkater ist eine Ermuedungserscheinung, die Superkompensation eine spaetere Leistungsspitze.`
 
-## Schritt 7 — szenario
+## Schritt 7 — szenario: Klausurtransfer & Rubric
 
 ROLLE: Du bist Pruefling in einer muendlichen Sportpruefung und sollst einen Trainingsplan fuer einen Mitschueler begruendet vorstellen.
 SITUATION: Ein Mitschueler moechte seine aerobe Ausdauer verbessern und plant, einmal pro Woche 3 mal 800 m in maximalem Tempo mit 5 Minuten Pause zu laufen. Erklaere ihm muendlich in zusammenhaengenden deutschen Saetzen (ca. 2 Minuten), ob dieser Plan sinnvoll ist, indem du ihn sowohl mit dem Superkompensationsmodell als auch mit den Trainingsprinzipien beurteilst, und schlage eine bessere Alternative vor.
 RUBRIC (30 XP): Benennung des Modells und der relevanten Trainingsprinzipien (5 XP) | Analyse des Superkompensationsverlaufs und der Reizhaeufigkeit (10 XP) | Feststellung der Ziel-Verfahren-Fehlpassung (Ziel aerob, Plan aber hochintensiv mit langen Pausen) (10 XP) | Kriteriengeleiteter Verbesserungsvorschlag mit konkreten Belastungsgroessen (5 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY (Kernzusammenfassung):
 

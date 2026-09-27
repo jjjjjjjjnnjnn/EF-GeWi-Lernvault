@@ -15,7 +15,7 @@ version: Lesson-v3
 
 <!-- Lesson v3 Architektur mit 9 Abschnitten: Schritt 1 bis 8 mit fester Struktur; Fehlvorstellung liegt zwischen Schritt 6 und 7 (wird vom Parser uebersprungen, zaehlt nicht als Schritt); unterstuetzt eingebettete [Werkzeug: <id>] Elemente; Gating: check/szenario nicht bestanden = Weiter deaktiviert; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
-## Schritt 1 — entdecken
+## Schritt 1 — entdecken: Ziele & Phänomen-Einstieg
 
 ZIELE (drei messbare Ziele dieser Lektion):
 
@@ -25,7 +25,7 @@ ZIELE (drei messbare Ziele dieser Lektion):
 
 ### Hook / Phaenomen
 
-Stell dir vor: Ein Sportler bremst vor dem Brett ab — ist das nun schlechte Vorbereitung oder schwache Hauptphase? Und wenn der Trainer sagt: „Das ist noch Grobkoordination", meint er dann die Bewegung oder den Sportler? Wer Phasen verwechselt, korrigiert an der falschen Stelle. Wie schafft ein einziges Modell Ordnung in Bewegung, Sportart und Lernen zugleich?
+Stell dir vor: Ein Sportler bremst vor dem Brett ab — ist das nun schlechte Vorbereitung oder schwache Hauptphase? Und wenn der Trainer sagt: Das ist noch Grobkoordination, meint er dann die Bewegung oder den Sportler? Wer Phasen verwechselt, korrigiert an der falschen Stelle. Wie schafft ein einziges Modell Ordnung in Bewegung, Sportart und Lernen zugleich? Durch zwei sauber getrennte Dreiteilungen mit der Leitformel $v = s/t$ und der Bahn $x(t) = v_h \cdot t$. Erstens gliedert die Funktionsphasen Vorbereitung, Hauptphase und Endphase jede Bewegung nach Zweck. Zweitens markiert die Hauptphase den Punkt ohne Wiederkehr — dort entscheidet der Abdruck ueber die Parabel. Drittens beschreibt die Lernstufen Grob-, Fein- und Feinstkoordination den Weg zur Stabilitaet. Viertens ordnet der Beobachtungsbogen jeder Phase Schwerpunkt und Indikator zu. Wer erst fragt, ob der Fehler vor oder nach dem Brett liegt, korrigiert Mechanik statt Moral.
 
 ### Fachbegriff & Definition
 
@@ -37,7 +37,7 @@ Der Kernmechanismus laeuft in drei Stufen: **Teilen, Beobachten, Trennen**. Erst
 
 Klausur-Satz: `Nach der allgemeinen Phasenstruktur gliedert sich jede Bewegung in eine Vorbereitungsphase, eine Hauptphase und eine Endphase.`
 
-## Schritt 2 — entdecken
+## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
 
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
@@ -59,22 +59,21 @@ Die Begriffe greifen ineinander: Die **Drei-Phasen-Struktur** gibt das Geruest, 
 
 Klausur-Satz: `Die Hauptphase ist diejenige Phase, die ueber das Ergebnis entscheidet und daher im Zentrum der Bewegungsanalyse steht.`
 
-## Schritt 3 — entdecken
+## Schritt 3 — entdecken: Kernkonzept & Wirkungsmodell
 
 TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
 ### Hook / Phaenomen
 
-Ein Pruefer sagt: „Analysieren Sie eine beliebige Bewegung." Ein anderer sagt: „Beschreiben Sie den Weitsprung." Beide verlangen Phasen — doch wer beide Male dieselbe Dreiteilung herunterbetet, verschenkt Punkte. Denn einmal ist Freiheit gefragt, einmal Sportartwissen. Woran entscheidet sich, ob allgemein oder sportartspezifisch gegliedert wird?
+Ein Pruefer sagt: "Analysieren Sie eine beliebige Bewegung." Ein anderer sagt: "Beschreiben Sie den Weitsprung." Beide verlangen Phasen — doch wer beide Male dieselbe Dreiteilung herunterbetet, verschenkt Punkte. Denn einmal ist Freiheit gefragt, einmal Sportartwissen. Woran entscheidet sich, ob allgemein oder sportartspezifisch gegliedert wird?
 
-### Fachbegriff & Definition
+### Spiel-Aufgabe (Weitsprung-Sim: Gliederungs-Puzzle)
 
-Die **sportartspezifische Gliederung** ist die Verfeinerung der allgemeinen Dreiteilung fuer eine genannte Sportart — beim Weitsprung **Anlauf, Absprung, Flug und Landung** mit Rueckbezug auf Vorbereitung, Hauptphase und Endphase. Sie gilt immer dann, wenn die Aufgabe eine Sportart nennt; sonst gilt direkt die allgemeine Struktur. Entscheidungsregel: Nennt die Aufgabe eine Sportart, gilt spezifisch mit Rueckbezug; sonst gilt allgemein mit schneller Markierung der Hauptphase.
+Lege das Gliederungs-Puzzle in der Sim: Nennt die Aufgabe keine Sportart, gilt allgemein mit Vorbereitung, Hauptphase und Endphase; nennt sie den Weitsprung, gilt spezifisch mit Anlauf, Absprung, Flug und Landung — jeweils mit Rueckbezug. Ziehe jede Phase auf ihren Beobachtungsschwerpunkt: Tempo und Lage in der Vorbereitung, Winkel und Kraftreihenfolge mit $v=s/t$ in der Hauptphase, Balance in der Endphase. Falsche Ebene (Lernphase statt Bewegungsgliederung) loest Alarm aus. Steuerformeln: $v=s/t$, $HF_{max}$, $x(t)=v_h\cdot t$.
 
-### Wirkungsgefuege / Modell
+### Aha-Moment & Gesetz
 
-Denke in Kausalkette: **Waehlen, Zuordnen, Beobachten**. Erstens wird gewaehlt: ohne Sportartvorgabe Verfahren mit Vorbereitung, Hauptphase und Endphase, mit Weitsprung Verfahren mit Anlauf, Absprung, Flug und Landung. Zweitens wird zugeordnet: Anlauf ist Vorbereitung, Absprung mit $v = s/t$ ist Hauptphase, Flug plus Landung sind Endphase. Drittens wird phasegenau beobachtet: Tempo und Lage in der Vorbereitung, Winkel und Kraftreihenfolge in der Hauptphase, Balance ohne Extrabewegung in der Endphase. Genau diese Kette schuetzt vor Verwechslung mit Lernphasen wie Grob- und Feinkoordination.
-
+Denke in Kausalkette Waehlen, Zuordnen, Beobachten: Erstens wird gewaehlt (ohne Vorgabe allgemein, mit Weitsprung spezifisch), zweitens zugeordnet (Anlauf ist Vorbereitung, Absprung ist Hauptphase, Flug plus Landung sind Endphase), drittens phasegenau beobachtet. Entscheidungsregel: Nennt die Aufgabe eine Sportart, gilt spezifisch mit Rueckbezug; sonst gilt allgemein mit schneller Markierung der Hauptphase.
 ```diagram
   Gliederung [allgemein <-> spezifisch mit Rueckbezug]
   allgemein: Vorbereitung -> Hauptphase (Kern 80%) -> Endphase
@@ -82,6 +81,7 @@ Denke in Kausalkette: **Waehlen, Zuordnen, Beobachten**. Erstens wird gewaehlt: 
   Rueckbezug: Anlauf=Vorbereitung | Absprung=Hauptphase | Flug+Landung=Endphase
   Bogen: Phase | Schwerpunkt | Indikator | Beobachtung nur beschreiben | Fehler+Korrektur werten
   Trennung: Bewegungsgliederung ist Struktur, Lernphase ist Stand
+  Steuerformeln: $v=s/t$ | $HF_{max}$ | $x(t)=v_h\cdot t$
 ```
 
 Klausur-Satz: `Die allgemeine Phasenstruktur dient als universelles Geruest, das den Blick zuerst auf die entscheidende Hauptphase lenkt.`
@@ -92,13 +92,13 @@ Klausur-Satz: `Die allgemeine Phasenstruktur dient als universelles Geruest, das
 
 **Bezug zum Konzept**: `Die Phasenstruktur ist ein Analyseinstrument der Bewegungslehre, keine natuerliche Grenze im Bewegungsablauf.`
 
-## Schritt 4 — ausprobieren
+## Schritt 4 — ausprobieren: Interaktive Praxis & Weitsprung-Labor
 
 BEISPIEL (Musteraufgabe mit Loesungsweg):
 
-[Werkzeug: lego]
+[Werkzeug: weitsprung-sim]
 
-AUFGABE (beschreiben, AFB I und II): Beschreiben Sie eine Ihnen bekannte Bewegung (zum Beispiel den Kugelstoss) mit der allgemeinen Drei-Phasen-Struktur und benennen Sie fuer jede Phase einen Beobachtungsschwerpunkt.
+AUFGABE (beschreiben, AFB I und II): Bogen-Raetsel — beschreibe eine dir bekannte Bewegung (zum Beispiel den Kugelstoss) mit der allgemeinen Drei-Phasen-Struktur und benenne fuer jede Phase einen Beobachtungsschwerpunkt. Fuellt in der Sim den Beobachtungsbogen aus: Phase, Schwerpunkt, Indikator.
 
 HILFE:
 1. Schritt 1: Zerlege die Bewegung in Vorbereitungsphase, Hauptphase und Endphase.
@@ -106,11 +106,11 @@ HILFE:
 3. Schritt 3: Ordne jeder Phase einen Beobachtungsschwerpunkt mit Indikator zu.
 4. Schritt 4: Markiere die Hauptphase und begruende kurz, warum sie entscheidend ist.
 
-MUSTERLOESUNG: Beim Kugelstossen laesst sich die Bewegung in drei Phasen gliedern. Die Vorbereitung umfasst Angehen und Angleiten; ihr Ziel ist es, Koerper und Geraet zu beschleunigen und die optimale Ausgangsposition aufzubauen; beobachtet werden Rhythmus und Koerperschwerpunkt. Die Hauptphase ist der Stoss selbst: Hier wird die aufgebaute Energie in Weite umgesetzt; Beobachtungsschwerpunkte sind der Abstosswinkel, die Reihenfolge der Kraftuebertragung von Beinen ueber Rumpf zum Arm sowie das Timing. Die Endphase ist der Ausgleich nach dem Stoss: Sie dient der Stabilisierung und dem Schutz vor Uebertreten; beobachtet werden Balance und das Abfangen der Bewegung. Entscheidend ist der Stoss, weil dort ueber die Weite entschieden wird.
+MUSTERLOESUNG: Beim Kugelstossen: Vorbereitung sind Angehen und Angleiten — Ziel: beschleunigen und Ausgangsposition aufbauen; beobachtet werden Rhythmus und Koerperschwerpunkt. Hauptphase ist der Stoss: aufgebaute Energie wird in Weite umgesetzt; Schwerpunkte sind Abstosswinkel, Kraftreihenfolge von Beinen ueber Rumpf zum Arm und Timing. Endphase ist der Ausgleich: Stabilisierung und Schutz vor Uebertreten; beobachtet werden Balance und Abfangen. Entscheidend ist der Stoss, weil dort ueber die Weite entschieden wird.
 
 Klausur-Satz: `Im Kugelstossen entspricht der Stoss der Hauptphase, weil in ihm die zuvor aufgebaute Energie in maximale Weite umgesetzt wird.`
 
-## Schritt 5 — ausprobieren
+## Schritt 5 — ausprobieren: Verfahrensvergleich & Abgrenzung
 
 VERGLEICH (zwei Verfahren im Kontrast):
 
@@ -128,7 +128,7 @@ Redemittel: `Ich waehle die sportartspezifische Gliederung, weil die Aufgabe den
 
 Klausur-Satz: `Beide Gliederungen beschreiben dieselbe Bewegung auf unterschiedlichem Detaillierungsgrad; die Projektgliederung ist die Verfeinerung der allgemeinen Drei-Phasen-Struktur.`
 
-## Schritt 6 — check
+## Schritt 6 — check: Verständnisprüfung
 
 CHECK (3 Fragen zur Selbstkontrolle mit Antworten):
 
@@ -149,13 +149,13 @@ Klausur-Satz: `Bewegungsphasen und Lernphasen liegen auf verschiedenen Ebenen un
    Korrektur: Beobachtung heisst nur beschreiben; werten gehoert in Fehlerbild und Korrektur. Wer Wertung und Beobachtung vermischt, verliert Analysepunkte.
    Korrektur-Satz: `In der Spalte Beobachtung wird nur beschrieben; die Bewertung erfolgt getrennt in den Spalten Fehlerbild und Korrektur.`
 
-## Schritt 7 — szenario
+## Schritt 7 — szenario: Klausurtransfer & Rubric
 
 ROLLE: Du bist Pruefling in einer muendlichen Sportpruefung und sollst eine Bewegungsanalyse in Phasen vorstellen.
 SITUATION: Der Pruefer bittet dich, den Absprung beim Weitsprung zu beschreiben und anhand eines selbst erstellten Beobachtungsbogens eine Ausfuehrung zu beurteilen, bei der ein Sportler kurz vor dem Brett abbremst. Erklaere deine Analyse muendlich in zusammenhaengenden deutschen Saetzen (ca. 2 Minuten) und begruende dein Urteil mit biomechanischen Argumenten.
 RUBRIC (30 XP): Gliederung der Bewegung in Phasen mit korrekter Fachsprache (5 XP) | Benennung der Hauptphase und Begruendung mit biomechanischer Wirkung (10 XP) | Vorlage eines Beobachtungsbogens mit konkreten Indikatoren (10 XP) | Kriteriengeleitetes Urteil ueber die abgebremste Ausfuehrung mit Korrekturvorschlag (5 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY (Kernzusammenfassung):
 

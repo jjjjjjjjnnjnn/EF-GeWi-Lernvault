@@ -15,7 +15,7 @@ version: Lesson-v3
 
 <!-- Lesson v3 9步制架构：Schritt 1至8固定结构；Fehlvorstellung 夹在 Schritt 6 与 7 之间（Parser 自动跳过，不占步数）；支持内嵌 [Werkzeug: <id>] 交互教具；Gating: check/szenario 未过 = Weiter 置灰；XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
-## Schritt 1 — entdecken
+## Schritt 1 — entdecken: Ziele & Phänomen-Einstieg
 
 ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
@@ -25,9 +25,20 @@ ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
 Voraussetzung（窄切口）：只做 Hirtz 五分法，不展开 Meinel 动作阶段；已会 Kondition 四要素。
 
+
+Hook中文生活切入:
+
+想象新手学骑自行车:眼睛看路、手把方向、脚踩踏板、身体找平衡,四个活同时干,顾头顾不上脚,摔了七八次突然开窍,动作合流了。协调能力就是这套多线程操作系统:赫茨的七项能力分管平衡、节奏、反应、定向、emen 分化、耦合与转换,技术动作全靠它们打包。
+
+Phaenomen-Satz (DE): Augen lenken, Fuesse treten, alles gleichzeitig, alles getrennt.
+
+中文机制铺垫:耦合连接上下肢,定向管空间位置,平衡守住重心,节奏定时间结构;训练按从分解到串联再到变式,口诀是先单个 comptent 再组合,测评看动作质量而非单纯速度,答题必须能力加动作实例。
+
+Mechanismus-Satz (DE): Koordination verbindet Teilleistungen zu einer fluessigen Bewegung.
+
 Klausur-Satz: `Koordination steuert Bewegung, Kondition versorgt sie mit Energie.`
 
-## Schritt 2 — entdecken
+## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
 
 PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
 
@@ -41,20 +52,35 @@ PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→�
 
 Klausur-Satz: `Jede koordinative Faehigkeit zeigt sich erst in einer konkreten Bewegungssituation.`
 
-## Schritt 3 — entdecken
+## Schritt 3 — entdecken: Kernkonzept & Wirkungsmodell
 
-ENTDECKEN（1概念 + 1文字图解）：
+ENTDECKEN（1概念 + 1文字图解，中文在上、德语在下）：
 
-中文：协调是"软件"，体能是"硬件"：软件好则动作准、省力、学得快。五能力各有 test 动作：定向看 Weitsprung-Anlauf（偏了即差），平衡看 Einbeinstand（晃了即差），节奏看 Hürdenrhythmus（三步一跨），反应看 Startsignal（抢慢即差），耦合看 Lay-up（手脚脱节即差）。训练钥匙：变条件（mit/ohne Sehen、 links/rechts、 schnell/langsam），不变动作本质。
+Hook中文生活切入：
+
+中文：想象学骑车：会蹬不算会，要转弯不倒、颠簸不慌。协调不是力气，是steuerung。
+
+Phaenomen-Satz (DE): Kraft tritt, Steuerung haelt.
+
+Spiel-Aufgabe沙盒操作指引：
+
+中文：打开动作沙盒，分段练跳远助跑（关键词：Orientierung, Rhythmus, Kopplung, Variation），前半看准踏板、后半加速率，看两段各练哪种能力。
+
+Beobachtungs-Satz (DE): Anlauf braucht Orientierung fuer den Balken und Rhythmus fuer die Steigerung.
+
+Aha-Moment因果链：
+
+中文因果链：协调只存在于具体情境，练法是变条件而非加重量；耦合拆开学、节奏整体找，条件一变控制即长进。
+
+Gesetz-Satz (DE): Variation der Bedingung schult die Steuerung.
 
 文字图解（ASCII 结构图，App支持解析渲染）：
 
 ```diagram
-  Koordination (steuernd): Orientierung | Gleichgewicht | Rhythmus | Reaktion | Kopplung
-  Kondition (energetisch): Kraft | Ausdauer | Schnelligkeit | Beweglichkeit
-  Training: Bedingung variieren, Aufgabe konstant lassen
+Anlauf Teil 1: Orientierung -> Balken treffen
+Anlauf Teil 2: Rhythmus -> Steigerung halten
+Methode: Kopplung in Teilen, Rhythmus im Ganzen
 ```
-
 Klausur-Satz: `Koordination trainiert man durch Variation der Bedingungen, nicht durch mehr Gewicht.`
 
 ## Anekdote & Fun-Fact
@@ -65,24 +91,31 @@ Klausur-Satz: `Koordination trainiert man durch Variation der Bedingungen, nicht
 
 **Bezug zum Konzept**: `Technik beginnt im Kopf, nicht im Muskel.`
 
-## Schritt 4 — ausprobieren
+## Schritt 4 — ausprobieren: Interaktive Praxis & Labor
 
-BEISPIEL（正确例题示范，含教具操作与解答）：
+[Werkzeug: weitsprung-sim]
 
-[Werkzeug: bewegung]
+BEISPIEL（正确例题示范，含教具操作与解答，中文在上、德语在下）：
 
-AUFGABE (erklaeren, AFB II)：Erklaeren Sie am Weitsprung-Anlauf, welche zwei koordinativen Faehigkeiten dominieren, und nennen Sie je eine Trainingsvariation.
+AUFGABE中文导读（拆分谜题）：跳远助跑总踩不准板且后程掉速。请各用一种能力诊断并开训练处方。
 
-HILFE:
-1. Schritt 1: Anlauf in Teilprobleme zerlegen (Richtung, Rhythmus).
-2. Schritt 2: Zwei Faehigkeiten zuordnen und begruenden.
-3. Schritt 3: Je eine Variation nennen.
+AUFGABE (analysieren, AFB II): Der Anlauf verfehlt den Balken und verliert Tempo. Diagnostizieren Sie mit zwei Faehigkeiten und verordnen Sie Training.
 
-MUSTERLÖSUNG: Der Anlauf verlangt Orientierungsfaehigkeit, weil der Absprungbalken aus vollem Lauf millimetergenau getroffen werden muss; Abweichungen kosten Weite oder verursachen Uebertritt. Er verlangt Rhythmisierungsfaehigkeit, weil die Schrittfrequenz bis zum Absprung konstant gesteigert und der letzte Schritt als Akzent gesetzt wird. Training: Orientierung durch Anlauf mit variablem Startpunkt (Bedingung variieren); Rhythmus durch Klatsch- oder Hütchenrhythmus mit drei Schritten pro Intervall. Beide Variationen lassen die Zielbewegung konstant und veraendern nur die Steueranforderung.
+HILFE（中德双语步骤）：
 
+1. 中文：第1步诊：踩板是定向问题，关键词：Blick。
+   Schritt 1 (DE): Balkenfehler heisst Orientierung.
+2. 中文：第2步诊：掉速是节奏问题，关键词：Takt。
+   Schritt 2 (DE): Tempofehler heisst Rhythmus.
+3. 中文：第3步开方：变条件练，不加重量，关键词：Variation。
+   Schritt 3 (DE): Variation statt Gewicht.
+
+MUSTERLOESUNG：中文：踩不准补定向练如标记跑与视线管理，掉速补节奏练如节拍器加速跑；两处方都是变条件，协调只长在变化里。
+
+MUSTERLOESUNG (DE): Anlauf braucht Orientierung fuer den Balken und Rhythmus fuer die Steigerung: Kopplung in Teilen, Rhythmus im Ganzen, stets per Variation.
 Klausur-Satz: `Anlauf braucht Orientierung fuer den Balken und Rhythmus fuer die Steigerung.`
 
-## Schritt 5 — ausprobieren
+## Schritt 5 — ausprobieren: Verfahrensvergleich & Abgrenzung
 
 VERGLEICH辨别实验（双向辨析：分解练习 vs 整体练习）：
 
@@ -97,7 +130,7 @@ ANTWORT: A erfordert Verfahren (i): Schrittfolge ohne Ball, dann Ballfuehrung im
 
 Klausur-Satz: `Kopplung lernt man in Teilen, Rhythmus im Ganzen.`
 
-## Schritt 6 — check
+## Schritt 6 — check: Verständnisprüfung
 
 CHECK检索默写（自测 3 题，与答案配对）：
 
@@ -119,13 +152,13 @@ Klausur-Satz: `Variation der Bedingung schult die Steuerung.`
    中文纠偏：力量涨硬件，动作准靠软件；只举铁不练变式，技术照样糙。
    Korrektur-Satz: `Kraft ersetzt keine Steuerung.`
 
-## Schritt 7 — szenario
+## Schritt 7 — szenario: Klausurtransfer & Rubric
 
 ROLLE: Du leitest ein Aufwaermtraining fuer eine Schulmannschaft.
 SITUATION: Die Spieler sind kraftvoll, aber unpraezise. Begruende in zusammenhaengender Darstellung (ca. 150 Woerter) zwei koordinative Uebungen mit Faehigkeitszuordnung und Variation.
 RUBRIC (30 XP): Zwei Faehigkeiten korrekt zugeordnet (10 XP) | Zwei Variationen begruendet (10 XP) | Abgrenzung zu Kondition (6 XP) | Verstaendliche Anleitung (4 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY 1盒（核心总结）：
 

@@ -15,7 +15,7 @@ version: Lesson-v3
 
 <!-- Lesson v3 Architektur mit 9 Abschnitten: Schritt 1 bis 8 mit fester Struktur; Fehlvorstellung liegt zwischen Schritt 6 und 7 (wird vom Parser uebersprungen, zaehlt nicht als Schritt); unterstuetzt eingebettete [Werkzeug: <id>] Elemente; Gating: check/szenario nicht bestanden = Weiter deaktiviert; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
-## Schritt 1 — entdecken
+## Schritt 1 — entdecken: Ziele & Phänomen-Einstieg
 
 ZIELE (drei messbare Ziele dieser Lektion):
 
@@ -25,7 +25,7 @@ ZIELE (drei messbare Ziele dieser Lektion):
 
 ### Hook / Phaenomen
 
-Stell dir vor: Ein Sprinter fuehrt zweihundert Meter scheinbar muehelos, dann wird er ploetzlich still und winkt ab. Daneben laeuft ein Marathonlaeufer Stunde um Stunde gleichmaessig weiter. Beide haben Muskeln, beide haben Willen — doch ihre Motoren laufen auf voellig verschiedenem Kraftstoff. Warum bestraft der Koerper jeden Tausch in Sekunden?
+Stell dir vor: Ein Sprinter fuehrt zweihundert Meter scheinbar muehelos, dann wird er ploetzlich still und winkt ab. Daneben laeuft ein Marathonlaeufer Stunde um Stunde gleichmaessig weiter. Beide haben Muskeln, beide haben Willen — doch ihre Motoren laufen auf voellig verschiedenem Kraftstoff. Warum bestraft der Koerper jeden Tausch in Sekunden? Weil jede Belastung ihr eigenes System mit eigener Formel verlangt: $v = s/t$ fuer Tempo, $HF_{max}$ fuer Steuerung, $x(t) = v_h \cdot t$ fuer den Blick auf Oekonomie. Erstens liefert das anaerobe System maximale Leistung fuer Sekunden ohne Sauerstoff. Zweitens ueberbrueckt das laktazide System Minuten mit wachsender Ermuedung. Drittens traegt das aerobe System Stunden mit Sauerstoff bei kleiner Leistung. Viertens ordnet der Dauer-Regler $100\,m$ und Marathon exakt zu. Wer Substrat, Sauerstoff, Leistung und Kapazitaet so trennt, waehlt Training nach Motor statt nach Mut.
 
 ### Fachbegriff & Definition
 
@@ -37,7 +37,7 @@ Der Kernmechanismus laeuft in drei Stufen: **Start, Uebergang, Dauer**. Erstens 
 
 Klausur-Satz: `Die drei Systeme ATP-PCr, anaerob-laktazid und aerob unterscheiden sich in Leistung, Kapazitaet und Dauer der Energiebereitstellung.`
 
-## Schritt 2 — entdecken
+## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
 
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
@@ -59,7 +59,7 @@ Die Begriffe greifen ineinander: **$ATP$** wird verbraucht, **PCr** fuellt in Se
 
 Klausur-Satz: `ATP ist die direkte Waehrung der Muskelarbeit, die drei Systeme fuellen es unterschiedlich schnell wieder auf.`
 
-## Schritt 3 — entdecken
+## Schritt 3 — entdecken: Kernkonzept & Wirkungsmodell
 
 TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
@@ -67,14 +67,13 @@ TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
 Ein Marathonlaeufer geht zu schnell an, fuehlt sich bei Kilometer zehn noch stark — und bricht bei Kilometer dreissig ein. Kein Einbruch der Moral, sondern der Chemie: Frueh gesammeltes Laktat, geleerte Glykogenspeicher, gedrosseltes Tempo. Dieselben Beine, derselbe Wille, voellig anderes Rennen. Wie erklaert die Zeitachse diesen Einbruch?
 
-### Fachbegriff & Definition
+### Spiel-Aufgabe (Weitsprung-Sim: Dauer-Regler)
 
-Die **Zeitachsen-Staffel** ist das Ordnungsmodell der drei Systeme nach Dauer: **$0-8\,s$ phosphatgestuetzt** mit $P_{max}$, **$30-120\,s$ laktazid** mit Laktatstau, **darueber aerob** mit $O_2$ bei $65-85\% HF_{max}$. Sie besagt: Mit wachsender Belastungsdauer verschiebt sich der Anteil von $ATP-PCr$ ueber laktazid zu aerob. Die Merkregel lautet schnell und klein und sauber, mittel und sauer, langsam und gross und ausdauernd.
+Schiebe in der Sim den Dauer-Regler von $0\,s$ bis Marathon: Beobachte, wie die Dominanz von $ATP-PCr$ ueber laktazid zu aerob wandert — $0-8\,s$ phosphatgestuetzt mit $P_{max}$, $30-120\,s$ laktazid mit Laktatstau, darueber aerob mit $O_2$ bei $65-85\% HF_{max}$. Das Regler-Raetsel: Starte zu schnell und das Lab zeigt fruehen Laktatstau mit Einbruch ab Kilometer dreissig; starte massvoll und die aerobe Kurve traegt bis ins Ziel. Steuerformeln: $v=s/t$, $HF_{max}$, $x(t)=v_h\cdot t$.
 
-### Wirkungsgefuege / Modell
+### Aha-Moment & Gesetz
 
-Denke in Kausalkette: **Dauer, Dominanz, Folge**. Erstens wird die Dauer eingetragen: $100\,m$ in $10-12\,s$ liegen links, $10\,km$ in Minuten liegen in der Mitte, Marathon ueber $2\,h$ liegt rechts. Zweitens wird die Dominanz abgelesen: links $PCr$ plus laktazider Uebergang, Mitte Mischzone, rechts fast rein aerob. Drittens wird die Folge gedeutet: Zu schnelles Angehen nutzt frueh laktazid, $Laktat$ hemmt Enzyme und leert Speicher, ab Kilometer dreissig fehlt aerober Nachschub bei hohem Tempo. Genau diese Kette traegt in der Klausur jede Sportartzuordnung.
-
+Denke in Kausalkette Dauer, Dominanz, Folge: Die Dauer wird eingetragen ($100\,m$ links, Marathon rechts), die Dominanz abgelesen (links $PCr$, Mitte Mischzone, rechts fast rein aerob), die Folge gedeutet (fruehes Laktat hemmt Enzyme und leert Speicher). Merkregel: schnell und klein und sauber, mittel und sauer, langsam und gross und ausdauernd. Genau diese Kette traegt in der Klausur jede Sportartzuordnung.
 ```diagram
   Staffel [PCr -> laktazid -> aerob nach Dauer]
   0s-8s [PCr | Pmax | kein Laktat | 100m Start]
@@ -82,6 +81,7 @@ Denke in Kausalkette: **Dauer, Dominanz, Folge**. Erstens wird die Dauer eingetr
   >10min [aerob O2 65-85%HFmax | klein | kein Stau | Marathon]
   Formel: ATP-Verbrauch = PCr + Glykolyse + Oxidation
   Regel: Dauer lang -> Anteil aerob gross
+  Steuerformeln: $v=s/t$ | $HF_{max}$ | $x(t)=v_h\cdot t$
 ```
 
 Klausur-Satz: `Mit wachsender Belastungsdauer verschiebt sich der Anteil von ATP-PCr ueber laktazid zu aerob.`
@@ -92,24 +92,24 @@ Klausur-Satz: `Mit wachsender Belastungsdauer verschiebt sich der Anteil von ATP
 
 **Bezug zum Konzept**: `Die Dominanz eines Systems ist trainierbar und erklaert die Spezialisierung von Sprint und Ausdauer.`
 
-## Schritt 4 — ausprobieren
+## Schritt 4 — ausprobieren: Interaktive Praxis & Weitsprung-Labor
 
 BEISPIEL (Musteraufgabe mit Loesungsweg):
 
-[Werkzeug: formula]
+[Werkzeug: weitsprung-sim]
 
-AUFGABE (vergleichen, AFB II): Vergleiche die drei Systeme der Energiebereitstellung nach Substrat, Sauerstoffbedarf, Leistung, Kapazitaet und Hauptprodukt und ordne 100 m und Marathon zu.
+AUFGABE (vergleichen, AFB II): Staffel-Raetsel — vergleiche die drei Systeme der Energiebereitstellung nach Substrat, Sauerstoffbedarf, Leistung, Kapazitaet und Hauptprodukt und ordne $100\,m$ und Marathon auf dem Dauer-Regler zu.
 
 HILFE:
 1. Schritt 1: Tabelle mit drei Zeilen anlegen und Substrate eintragen: PCr, Glukose ohne O2, Glukose plus Fett mit O2.
 2. Schritt 2: Leistung gegen Kapazitaet stellen: ATP-PCr hoch und klein, laktazid mittel und mittel, aerob niedrig und riesig.
 3. Schritt 3: 100 m links und Marathon rechts auf der Zeitachse markieren und je zwei Systemanteile abschaetzen.
 
-MUSTERLOESUNG: ATP-PCr-System: Substrat Kreatinphosphat, ohne Sauerstoff, hoechste Leistung, kleinste Kapazitaet (ca. 6 bis 8 Sekunden), Produkt direktes ATP ohne Laktat; Training: Sprints und Spruenge. Anaerob-laktazides System: Substrat Glukose ohne Sauerstoff, mittlere Leistung, mittlere Kapazitaet (ca. 30 bis 120 Sekunden), Produkt Laktat plus wenig ATP; Training: 400 m und kurze Intervalle. Aerobes System: Substrat Glukose plus Fette mit Sauerstoff, niedrigste Leistung, groesste Kapazitaet (Stunden), Produkte Wasser plus CO2 plus viel ATP; Training: Dauerlaeufe. Zuordnung: 100 m (ca. 10 bis 12 Sekunden) leben ueberwiegend von ATP-PCr mit laktazidem Uebergang, Sauerstoff spielt kaum eine Rolle. Marathon (ueber 2 Stunden) laeuft fast vollstaendig aerob; wer zu schnell startet, sammelt frueh Laktat und bricht spaeter ein.
+MUSTERLOESUNG: ATP-PCr: Kreatinphosphat, ohne Sauerstoff, hoechste Leistung, kleinste Kapazitaet (ca. 6 bis 8 Sekunden), Produkt direktes ATP ohne Laktat — Training: Sprints und Spruenge. Laktazid: Glukose ohne Sauerstoff, mittlere Leistung und Kapazitaet (ca. 30 bis 120 Sekunden), Produkt Laktat — Training: 400 m. Aerob: Glukose plus Fette mit Sauerstoff, niedrigste Leistung, groesste Kapazitaet (Stunden), Produkte Wasser plus $CO_2$ plus viel ATP — Training: Dauerlaeufe. Zuordnung: $100\,m$ leben ueberwiegend von ATP-PCr mit laktazidem Uebergang; Marathon laeuft fast vollstaendig aerob — wer zu schnell startet, sammelt frueh Laktat und bricht spaeter ein.
 
 Klausur-Satz: `Der Sprint nutzt phosphatgestuetzte Leistung ohne Sauerstoff, der Marathon nutzt sauerstoffgestuetzte Kapazitaet ueber Stunden.`
 
-## Schritt 5 — ausprobieren
+## Schritt 5 — ausprobieren: Verfahrensvergleich & Abgrenzung
 
 VERGLEICH (zwei Verfahren im Kontrast):
 
@@ -123,7 +123,7 @@ ANTWORT: A erfordert Konzept (i): Laktazid liefert mittlere bis hohe Leistung mi
 
 Klausur-Satz: `Wer die Systeme vergleicht, nutzt die Tabelle; wer den Einbruch erklaert, nutzt Dauer und Laktatverlauf.`
 
-## Schritt 6 — check
+## Schritt 6 — check: Verständnisprüfung
 
 CHECK (3 Fragen zur Selbstkontrolle mit Antworten):
 
@@ -144,14 +144,14 @@ Klausur-Satz: `Leistung und Kapazitaet verhalten sich gegenlaeufig: Je hoeher di
    Korrektur: Phosphatspeicher und Laktattoleranz sind trainierbar und entscheiden ueber die zweite Rennhaelfte. Ohne gezielte Geschwindigkeitstoleranz faellt das Tempo messbar ab.
    Korrektur-Satz: `Die Kapazitaet von ATP-PCr und Laktattoleranz ist trainierbar und entscheidet ueber die zweite Rennhaelfte.`
 
-## Schritt 7 — szenario
+## Schritt 7 — szenario: Klausurtransfer & Rubric
 
 ROLLE: Du bist Fitnesstutorin der EF und schreibst einen Trainingsplan fuer zwei Anfaenger.
 SITUATION: Person A will in 8 Wochen 100 m unter 13 Sekunden laufen, Person B will einen 10-km-Lauf finishen. Beide trainieren bisher nur Fussball in der Schule.
 AUFGABE: Schreibe eine zusammenhaengende Begruendung (ca. 150 Woerter), in der du jedem eine Systemdominanz zuordnest, je zwei passende Trainingsformen nennst und erklaerst, warum das jeweils andere Training dort wenig hilft.
 RUBRIC (30 XP): Korrekte Systemzuordnung fuer beide (10 XP) | Je zwei passende Einheiten mit Begruendung (10 XP) | Abgrenzung zum jeweils anderen System (10 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY (Kernzusammenfassung):
 

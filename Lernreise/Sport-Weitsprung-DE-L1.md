@@ -15,7 +15,7 @@ version: Lesson-v3
 
 <!-- Lesson v3 Architektur mit 9 Abschnitten: Schritt 1 bis 8 mit fester Struktur; Fehlvorstellung liegt zwischen Schritt 6 und 7 (wird vom Parser uebersprungen, zaehlt nicht als Schritt); unterstuetzt eingebettete [Werkzeug: <id>] Elemente; Gating: check/szenario nicht bestanden = Weiter deaktiviert; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
-## Schritt 1 — entdecken
+## Schritt 1 — entdecken: Ziele & Phänomen-Einstieg
 
 ZIELE (drei messbare Ziele dieser Lektion):
 
@@ -25,7 +25,7 @@ ZIELE (drei messbare Ziele dieser Lektion):
 
 ### Hook / Phaenomen
 
-Stell dir vor: 1968 in Mexiko-Stadt fliegt ein Springer so weit, dass die Anzeigetafel seine Weite gar nicht anzeigen kann — $8{,}90\,m$. Kein Wunder, sagen viele, duenne Luft eben. Doch die Luft trug ihn nicht, sie bremste ihn nur weniger. Die eigentliche Weite entstand vorher: in wenigen Schritten Anlauf und einem einzigen Abdruck von kaum zwei Zehntelsekunden. Warum entscheidet ein Augenblick ueber Meter?
+Stell dir vor: 1968 in Mexiko-Stadt fliegt ein Springer so weit, dass die Anzeigetafel seine Weite gar nicht anzeigen kann — $8{,}90\,m$. Kein Wunder, sagen viele, duenne Luft eben. Doch die Luft trug ihn nicht, sie bremste ihn nur weniger. Die eigentliche Weite entstand vorher: in wenigen Schritten Anlauf und einem einzigen Abdruck von kaum zwei Zehntelsekunden. Warum entscheidet ein Augenblick ueber Meter? Weil der Abdruck als explosive Kraftentfaltung die einzige Stuetzflaeche nutzt und danach keine Kraft mehr zugefuehrt werden kann: Der Koerper verlaesst das Brett, der Schwerpunkt folgt stur seiner Parabel $x(t) = v_h \cdot t$ und $y(t) = v_v \cdot t - g \cdot t^2/2$. Erstens sichert der Anlauf $v_h$ nach $v = s/t$ ohne Stemmen. Zweitens setzt der flache schnelle Absprung Tempo in Weite um. Drittens nutzt die Flugphase nur Haltung, die Landung nur Vorturnen. Lege den Winkel-Regler flach — Hoehe frisst Weite.
 
 ### Fachbegriff & Definition
 
@@ -37,7 +37,7 @@ Der Kernmechanismus laeuft in drei Stufen: **Holen, Umsetzen, Nutzen**. Erstens 
 
 Klausur-Satz: `Beim Weitsprung entscheidet der Absprung als Hauptphase ueber die Weite, weil dort die Anlaufgeschwindigkeit in eine optimale Flugkurve des Koerperschwerpunkts umgesetzt wird.`
 
-## Schritt 2 — entdecken
+## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
 
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
@@ -59,22 +59,21 @@ Die Begriffe greifen ineinander: Der **Absprung** erzeugt aus $v_h$ das $v_v$, d
 
 Klausur-Satz: `Der Koerperschwerpunkt bewegt sich nach dem Absprung auf einer festgelegten Parabel, sodass die Weite im Absprung weitgehend bestimmt wird.`
 
-## Schritt 3 — entdecken
+## Schritt 3 — entdecken: Kernkonzept & Wirkungsmodell
 
 TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
 ### Hook / Phaenomen
 
-Ein Sportler bremst vor dem Brett ab, springt steil nach oben und landet mit dem Gesaess zuerst — drei Fehler, aber nur einer begrenzt die Weite wirklich. Denn was vor dem Brett verloren geht, holt keine Flugtechnik zurueck; was danach schiefgeht, kostet nur Ausnutzung. Wie trennt man Weitengrenze von blosser Ausnutzung?
+Springe ab — und stosse dich in der Luft noch einmal kraeftig ab. Geht nicht? Genau: Nach dem Brett gibt es keine Stuetzflaeche mehr, und der Koerperschwerpunkt folgt stur seiner Parabel. Warum begrenzt ein Augenblick von $t_K<0{,}15\,s$ die ganze Weite, waehrend die lange Flugphase daran nichts mehr aendert?
 
-### Fachbegriff & Definition
+### Spiel-Aufgabe (Weitsprung-Sim: Winkel-Regler)
 
-Die **Absprung-Optimierung** ist das Verfahren, die Weitengrenze ueber $v_h$, Winkel und Streckung zu sichern: $v_h$ maximal halten, Winkel flach halten, Brettzeit $t_{K} < 0{,}15\,s$ kurz halten. Im Gegensatz zur **Flug-Optimierung**, die nur Haltung und vorgestreckte Landung bei fixierter Parabel $x(t) = v_h \cdot t$ sichert, bestimmt sie die Laenge der Parabel selbst. Entscheidungsregel: Liegt der Fehler vor dem Brettverlassen, gilt Absprung-Optimierung; liegt er danach, gilt nur Flug-Optimierung.
+Ziehe in der Weitsprung-Sim den Absprungwinkel-Regler: flach und schnell gegen steil und langsam — und beobachte live die Parabel $x(t)=v_h\cdot t$ und $y(t)=v_v\cdot t-g\cdot t^2/2$. Das Kurven-Raetsel: Finde den Winkel, bei dem $v_h$ maximal in Weite traegt; zu steil frisst Hoehe die Weite, Stemmen vor dem Brett verkuerzt $v_h$ unwiderruflich. In der Luft hilft nur noch Haltung — kein Regler der Welt erzeugt dort neue Weite. Steuerformeln: $v=s/t$, $HF_{max}$, $x(t)=v_h\cdot t$.
 
-### Wirkungsgefuege / Modell
+### Aha-Moment & Gesetz
 
-Denke in Kausalkette: **Sichern, Umsetzen, Nutzen**. Erstens sichert der rhythmische Anlauf $v_h$ ohne Stemmen. Zweitens setzt der flache, schnelle Absprung mit voller Streckung und Schwungbein $v_h$ in $v = \sqrt{v_h^2 + v_v^2}$ um und fixiert die Parabel. Drittens nutzen Schritt-Technik und Landung mit Beinen nach vorn und gebeugten Knien nur noch die vorhandene Weite. Genau diese Kette traegt in der Pruefung jede Korrektur: Anlaufrhythmus und flacher Absprung zuerst, Haltung und Landung danach.
-
+Denke in Kausalkette Sichern, Umsetzen, Nutzen: Der rhythmische Anlauf sichert $v_h$ ohne Stemmen, der flache schnelle Absprung setzt $v_h$ in $v=\sqrt{v_h^2+v_v^2}$ um und fixiert die Parabel, Schritt-Technik und Landung mit Beinen nach vorn nutzen nur noch die vorhandene Weite. Entscheidungsregel: Liegt der Fehler vor dem Brettverlassen, gilt Absprung-Optimierung; liegt er danach, gilt nur Flug-Optimierung.
 ```diagram
   Weitsprung [Holen -> Umsetzen -> Nutzen]
   Anlauf [v_h sichern, Rhythmus] -> Vorbereitung
@@ -82,6 +81,7 @@ Denke in Kausalkette: **Sichern, Umsetzen, Nutzen**. Erstens sichert der rhythmi
   KSP-Bahn [x=vh*t, y=vv*t-g*t2/2 fixiert] -> Parabel steht
   Flug [Haltung Schritt-Technik] + Landung [Beine vor, kein Rueckfallen] -> Ausnutzung
   Regel: Fehler vor Brett=Absprung | Fehler danach=Flug
+  Steuerformeln: $v=s/t$ | $HF_{max}$ | $x(t)=v_h\cdot t$
 ```
 
 Klausur-Satz: `Ein zu steiler Absprungwinkel verringert die horizontale Geschwindigkeit, waehrend ein flacher, schneller Absprung die Flugkurve des Koerperschwerpunkts am besten traegt.`
@@ -92,13 +92,13 @@ Klausur-Satz: `Ein zu steiler Absprungwinkel verringert die horizontale Geschwin
 
 **Bezug zum Konzept**: `Beamons Weite entstand aus Anlaufgeschwindigkeit und Absprung; die Flugphase konnte sie nur nutzen, nicht erzeugen.`
 
-## Schritt 4 — ausprobieren
+## Schritt 4 — ausprobieren: Interaktive Praxis & Weitsprung-Labor
 
 BEISPIEL (Musteraufgabe mit Loesungsweg):
 
-[Werkzeug: tangent]
+[Werkzeug: weitsprung-sim]
 
-AUFGABE (analysieren, AFB II): Ein Sportler bremst kurz vor dem Absprungbrett ab und springt danach sehr steil nach oben. Analysieren Sie diesen Fehler biomechanisch und begruenden Sie, warum die Weite gering bleibt.
+AUFGABE (analysieren, AFB II): Kurven-Raetsel — ein Sportler bremst kurz vor dem Absprungbrett ab und springt danach sehr steil nach oben. Stelle in der Sim beide Fehler ein, lies $v_h$ und Winkel ab und begruende biomechanisch, warum die Weite gering bleibt.
 
 HILFE:
 1. Schritt 1: Bestimme die Phase und benenne das Fehlerbild (Geschwindigkeitsverlust durch Stemmen).
@@ -106,11 +106,11 @@ HILFE:
 3. Schritt 3: Erklaere, wie ein zu steiler Absprungwinkel die Umsetzung in Weite verschlechtert.
 4. Schritt 4: Leite aus der fixierten KSP-Parabel ab, warum die Weite nicht mehr korrigierbar ist, und gib eine Korrektur an.
 
-MUSTERLOESUNG: Das Abbremsen vor dem Brett gehoert zum Absprung als Hauptphase und stellt das Fehlerbild des Geschwindigkeitsverlusts durch Stemmen dar. Durch das Abbremsen sinkt die horizontale Geschwindigkeit v_h, die die eigentliche Weitenquelle ist. Der anschliessende steile Absprung wandelt zusaetzlich einen zu grossen Anteil der verbliebenen Geschwindigkeit in vertikale Richtung um, sodass v_h weiter abnimmt und der Koerperschwerpunkt zwar hoch, aber nicht weit fliegt. Da die Parabel des Koerperschwerpunkts im Moment des Absprungs festgelegt wird, kann die verlorene Weite in der Luft nicht mehr ausgeglichen werden. Die Korrektur besteht in einem rhythmischen Anlauf mit Markierungen und einem kurzen Anlauf zum Ueben, damit der Sportler schnell und flach ueber das Brett kommt.
+MUSTERLOESUNG: Das Abbremsen gehoert zum Absprung als Hauptphase — Fehlerbild Geschwindigkeitsverlust durch Stemmen: $v_h$ als eigentliche Weitenquelle sinkt. Der steile Absprung wandelt zusaetzlich zu viel Restgeschwindigkeit in Vertikale um, sodass der Schwerpunkt hoch, aber nicht weit fliegt. Da die Parabel im Moment des Absprungs fixiert ist, kann die Luft nichts mehr ausgleichen. Korrektur: rhythmischer Anlauf mit Markierungen fuer schnelles, flaches Ueberqueren des Bretts.
 
 Klausur-Satz: `Geschwindigkeitsverlust durch Stemmen senkt die horizontale Ausgangsgeschwindigkeit und verkuerzt damit die im Absprung fixierte Flugparabel.`
 
-## Schritt 5 — ausprobieren
+## Schritt 5 — ausprobieren: Verfahrensvergleich & Abgrenzung
 
 VERGLEICH (zwei Verfahren im Kontrast):
 
@@ -128,7 +128,7 @@ Redemittel: `Die Flugbahn des KSP steht nach dem Absprung fest; deshalb optimier
 
 Klausur-Satz: `Der Absprung bestimmt die Flugparabel, waehrend Flug und Landung nur darueber entscheiden, wie gut die bereits bestimmte Weite genutzt wird.`
 
-## Schritt 6 — check
+## Schritt 6 — check: Verständnisprüfung
 
 CHECK (3 Fragen zur Selbstkontrolle mit Antworten):
 
@@ -149,13 +149,13 @@ Klausur-Satz: `Die Weite wird im Absprung bestimmt; in der Luft laesst sich nur 
    Korrektur: Die Schwerpunktparabel steht beim Verlassen des Bretts fest; in der Luft fehlt jede Stuetzflaeche fuer neuen Antrieb. Die Flugtechnik sichert nur Balance und Landung mit aktiv nach vorn gestreckten Beinen.
    Korrektur-Satz: `Nach dem Absprung ist die Bahn des Koerperschwerpunkts festgelegt; in der Luft kann nur noch die Haltung und die Landung optimiert werden.`
 
-## Schritt 7 — szenario
+## Schritt 7 — szenario: Klausurtransfer & Rubric
 
 ROLLE: Du bist Pruefling in einer muendlichen Sportpruefung und sollst eine Weitsprung-Analyse vorstellen.
 SITUATION: Der Pruefer zeigt dir die Videoaufnahme eines Mitschuelers: Der Sportler bremst vor dem Brett ab, springt sehr steil ab und landet mit dem Gesaess zuerst. Erklaere muendlich in zusammenhaengenden deutschen Saetzen (ca. 2 Minuten) die biomechanischen Ursachen des geringen Ergebnisses, ordne die Fehler den Phasen zu und schlage je eine konkrete Korrektur vor.
 RUBRIC (30 XP): Gliederung des Weitsprungs in Phasen mit Benennung der Hauptphase (5 XP) | Biomechanische Analyse des Absprungs (v_h, Absprungwinkel, fixierte KSP-Parabel) (10 XP) | Analyse der Flug- und Landungsfehler mit Hinweis auf die festgelegte Flugbahn (10 XP) | Kriteriengeleitete Korrekturvorschlaege mit methodischem Bezug (5 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY (Kernzusammenfassung):
 
