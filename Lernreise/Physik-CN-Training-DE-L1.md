@@ -13,7 +13,7 @@ version: Lesson-v3
 
 # Lernreise: CN-Training: vier Klausuraufgaben unter Zeitdruck (L1, Ziel Klausur)
 
-<!-- Campaign: Mars-Mission | Episode 1/28 | Krise: Sol-041 Staubsturm: Hitzeschild-Temperatur springt auf 1480 Grad | Target: v0 = 247 m/s, a = 2.1 m/s2, Ziel s = 837 m | Tool: formula -->
+<!-- Campaign: Mars-Mission | Episode 1/28 | Krise: Sol-041 Staubsturm: Hitzeschild-Temperatur springt auf 1480 Grad | Zielgroessen: v-t-Diagramm mit drei Abschnitten, Ziel Wegsumme 336 m | Tool: formula -->
 
 ## Schritt 1 — entdecken: Brennender Himmel ueber Elysium
 ZIELE (diese Lektion in 15 Minuten: danach kannst du):
@@ -26,11 +26,9 @@ ZIELE (diese Lektion in 15 Minuten: danach kannst du):
 
 ### Hook / Phaenomen
 
-【火星拓荒者·第1集/共28集】警报：Sol-041 Staubsturm: Hitzeschild-Temperatur springt auf 1480 Grad。领航员 Lena 大喊：“v0 = 247 m/s, a = 2.1 m/s2, Ziel s = 837 m！”机械师 Tom 回应：“稳住曲线！”上一集（Physik-Newton-Dynamik-L1.md）埋下的隐患在此爆发，下一集（Physik-CN-Training-L1.md）的大门只为算对的人打开。本集你要在沙盘里亲手把飞船从超速边缘救回来：先看现象、再点装备、最后算出让考官点头的 Bilanz。记住：读图先看轴、计算必带单位、做完必用另一张图验算——这就是火星人生存法则，也是 Klausur 拿分法则。
+Hook / Phaenomen: Vier Aufgaben, ein **Erwartungshorizont**: Diagramm, Kraft, Kreis, Messung. Wer nur Zahlen liefert, halbiert seine Punkte, denn der EHZ bepunktet Wege, nicht Ergebnisse. **Loesungsweg**, **Transfersatz** und **Teilflaeche** sichern jeden Teilpunkt vor der ersten Zahl.
 
-Hook / Phaenomen (Sol-Logbuch, Episode 1 von 28): Mars-Anflug, Sol-041 Staubsturm: Hitzeschild-Temperatur springt auf 1480 Grad. Navigatorin Lena meldet: v0 = 247 m/s, a = 2.1 m/s2, Ziel s = 837 m, Mechaniker Tom ruft: Halte die Kurve! Der Bordcomputer geht auf Rot, das Funkgeraet rauscht, die Crew haelt den Atem an. Genau hier entscheidet CN-Training: vier Klausuraufgaben unter Zeitdruck ueber Landung oder Absturz, ueber Festfahren oder Weiterfahrt, ueber Andocken oder Abprall. Das Logbuch des vorherigen Sols (Physik-Newton-Dynamik-L1.md) warnte bereits vor diesem Moment, und das naechste Fenster (Physik-CN-Training-L1.md) oeffnet sich nur, wenn diese Aufgabe geloest wird. Die Sensoren streuen, die Diagramme zittern, doch die Physik bleibt unbestechlich: Wer Steigung und Flaeche, Kraft und Gegenkraft, Schwung und Stoss richtig liest, rettet die Mission. In dieser Episode stellst du im Sandbox-Labor die Brems- und Gleitzahlen so ein, dass die Kapsel sicher durchkommt. Beobachte zuerst das Phaenomen in Ruhe, benenne dann die Groessen mit exakten Einheiten, pruefe schliesslich die Bilanz mit einer Gegenrechnung. Der folgende Weg fuehrt vom Alarmton zur sauberen Klausurloesung: erst das Phaenomen beobachten, dann die Begriffe sichern, dann das Modell rechnen und im Labor bestaetigen.
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Der Erwartungshorizont verteilt Punkte auf Wege: Jeder Schritt braucht Gesetz, Formel und Einheit.`
 
 ## Schritt 2 — entdecken: Ausruestungskiste der Mars-Crew
 PRETRAINING (Kernbegriffe, erst lesen, dann abdecken und aktiv wiedergeben):
@@ -41,19 +39,17 @@ Vier Aufgaben, ein EHZ: Diagramm, Kraft, Kreis, Messung. Wer nur Zahlen liefert,
 
 ### Fachbegriffe & Definitionen
 
-- **Erwartungshorizont (EHZ): (评分标准)** Punkte je Teilschritt; der Weg zaehlt oft mehr als die Zahl.
-- **Loesungsweg: (解题路径)** Jeder Schritt nennt Gesetz oder Ansatz mit Formel.
-- **Transfersatz: (迁移句)** Anwendung auf neue Lage in einem Satz mit weil-Begruendung.
-- **Teilflaeche: (分面积)** Stuecke in $v$-$t$ als $A_1+A_2+A_3 = s$ mit je eigener Formel.
-- **Mehrfachmessung: (多次测量)** Wiederholung mit Mittel gegen Zufallsfehler plus Streuung.
+- **Erwartungshorizont (EHZ):** Punkte je Teilschritt; der Weg zaehlt oft mehr als die Zahl. Jede Teilleistung traegt feste Punkte, der Weg zaehlt oft mehr als die Zahl. Mechanismus: Jeden Schritt mit Ansatz, Formel und Einheit hinschreiben. Klausur-Tipp: Punkte pro Schritt aus dem EHZ abschaetzen.
+- **Loesungsweg:** Jeder Schritt nennt Gesetz oder Ansatz mit Formel. Jeder Schritt nennt Gesetz oder Ansatz mit Formel. Mechanismus: Gesetz nennen, Formel aufstellen, dann erst einsetzen. Klausur-Tipp: Ohne Formel kein Punkt, selbst bei richtiger Zahl.
+- **Transfersatz:** Anwendung auf neue Lage in einem Satz mit weil-Begruendung. Er wendet das Ergebnis auf eine neue Lage in einem Satz an. Mechanismus: Anwendung auf neue Lage in einem Satz mit weil-Begruendung. Klausur-Tipp: Weil-Satz als eigenen Bewertungspunkt sichern.
+- **Teilflaeche:** Stuecke in $v$-$t$ als $A_1+A_2+A_3 = s$ mit je eigener Formel. Stuecke im v-t-Diagramm werden zu Dreiecken und Rechtecken. Mechanismus: Stuecke als A1 plus A2 plus A3 mit je eigener Formel. Klausur-Tipp: Jede Teilflaeche einzeln beschriften.
+- **Mehrfachmessung:** Wiederholung mit Mittel gegen Zufallsfehler plus Streuung. Wiederholung druerkt Zufallsfehler, Streuung misst die Guete. Mechanismus: Wiederholen, Mittel bilden und Streuung angeben. Klausur-Tipp: Mittel plus Unsicherheit als Paar angeben.
 
 ### Wirkungsgefuege / Modell
 
 Die Kette schreibt alles hin: Achsen mit Einheiten und Abschnitte zu $1$ P; Dreieck $48$ zu $1$ P; Rechteck $240$ zu $1$ P; Dreieck $48$ zu $1$ P; Summe $336$ zu $1$ P; Mittel $9{,}3$ zu $1$ P. Kiste $F_{res}$ zu $2$ P, $W$ zu $2$ P, $m g h$ zu $2$ P, $h$ zu $2$ P, weil-Satz zu $1$ P. Ohne Formel kein Punkt — selbst bei richtiger Zahl.
 
-Klausur-Satz: `Der Erwartungshorizont verteilt die Punkte auf die Teilschritte, daher wird jeder Schritt hingeschrieben.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Der Erwartungshorizont verteilt die Punkte auf die Teilschritte, daher wird jeder Schritt hingeschrieben.`
 
 ## Schritt 3 — entdecken: Wirkungskette hinter CN-Training: vier Klausuraufgaben unter Zeitdruck
 EXPERIMENTELLE ERKUNDUNG (PhET Sandbox, erst spielen, dann deuten):
@@ -80,9 +76,8 @@ Die Kette lautet Achsen gegen Ansatz gegen Flaeche: $s = \int v dt$ als Flaeche 
   s/t > mittel | Ordnung traegt
 ```
 
-Klausur-Satz: `Die vier Aufgabentypen werden mit derselben Reihenfolge bearbeitet: Achsen und Bedingung pruefen, Ansatz aufschreiben, Ergebnis mit Einheit und Urteil notieren.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+$$s = A_1+A_2+A_3,\quad \bar{x} = \frac{1}{n}\sum x_i$$
+`Klausur-Satz: Die vier Aufgabentypen werden mit derselben Reihenfolge bearbeitet: Achsen und Bedingung pruefen, Ansatz aufschreiben, Ergebnis mit Einheit und Urteil notieren.`
 
 ## Anekdote & Fun-Fact
 
@@ -91,7 +86,7 @@ Klausur-Satz: `Die vier Aufgabentypen werden mit derselben Reihenfolge bearbeite
 **Bezug zum Konzept**: `Die Flaeche unter der v-t-Kurve liefert den Weg — dieselbe Idee nutzten schon antike Astronomen, und sie ist der Kern von Aufgabe 1.`
 
 ## Schritt 4 — ausprobieren: Sandbox-Auftrag Brennender Himmel ueber Elysium
-Kontinuitaet: Vorher Physik-Newton-Dynamik-L1.md | Nachher Physik-CN-Training-L1.md. Krise dieser Episode: Sol-041 Staubsturm: Hitzeschild-Temperatur springt auf 1480 Grad. Target: v0 = 247 m/s, a = 2.1 m/s2, Ziel s = 837 m.
+Kontinuitaet: Vorher Physik-Newton-Dynamik-L1.md | Nachher Physik-CN-Training-L1.md. Krise dieser Episode: Sol-041 Staubsturm: Hitzeschild-Temperatur springt auf 1480 Grad. Zielgroessen: v-t-Diagramm mit drei Abschnitten, Ziel Wegsumme 336 m
 
 BEISPIEL (Sandbox Level mit Werkzeug):
 
@@ -106,14 +101,12 @@ HILFE:
 
 MUSTERLOESUNG: Sandbox Flaeche $336$ in $m$ bestaetigt. Rechnung Summe der Teilflaechen $s_{ges} = 336$ in $m$ aus $s = \int v dt$. Damit $v_{mittel} = s_{ges}/t_{ges} = 336/36 \approx 9{,}3$ in $m/s$. Alle vier Typen folgen derselben Ordnung Achsen und Bedingung pruefen plus Ansatz plus Ergebnis mit Einheit plus Urteil, daher unter Zeitdruck sicher.
 
-Klausur-Satz: `Die Flaeche unter der v-t-Linie ergibt einen Gesamtweg von 336 m, woraus eine Durchschnittsgeschwindigkeit von etwa 9,3 m/s folgt.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Die Flaeche unter der v-t-Linie ergibt einen Gesamtweg von 336 m, woraus eine Durchschnittsgeschwindigkeit von etwa 9,3 m/s folgt.`
 
 ## Schritt 5 — ausprobieren: Duell der Verfahren Brennender Himmel ueber Elysium
 VERGLEICH (zwei Verfahren unterscheiden):
 
-VERGLEICH: Waehle zuerst das Verfahren — (i) $v$-$t$-Verfahren (Achse traegt $v$, gesucht $s$: Flaeche $s$) oder (ii) $s$-$t$-Verfahren (Achse traegt $s$, gesucht $v$: Steigung $v = \Delta s / \Delta t$) — dann loesen.
+VERGLEICH: (Weg A quantitativ-rechnerisch gegen Weg B qualitativ-strukturell): Waehle zuerst das Verfahren — (i) $v$-$t$-Verfahren (Achse traegt $v$, gesucht $s$: Flaeche $s$) oder (ii) $s$-$t$-Verfahren (Achse traegt $s$, gesucht $v$: Steigung $v = \Delta s / \Delta t$) — dann loesen.
 
 Weg A: Erst Verfahren waehlen, dann rechnen.
 
@@ -127,20 +120,16 @@ HILFE: A traegt $v$ und fragt $s$, also Verfahren (i) mit Flaeche. B traegt $s$ 
 
 ANTWORT: A erfordert Verfahren (i): Flaeche unter der Linie als Weg; Trapez mit $v = 12\,\mathrm{m/s}$ etwa $s = 0{,}5 \cdot (8 + 36) \cdot 12 = 264\,\mathrm{m}$. B erfordert Verfahren (ii): Steigung der Tangente bei $t = 10\,\mathrm{s}$ als Momentangeschwindigkeit $v = \Delta s / \Delta t$ aus engen Nachbarpunkten.
 
-Klausur-Satz: `Traegt die senkrechte Achse v, wird der Weg als Flaeche gelesen; traegt sie s, wird die Geschwindigkeit als Steigung gelesen.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Traegt die senkrechte Achse v, wird der Weg als Flaeche gelesen; traegt sie s, wird die Geschwindigkeit als Steigung gelesen.`
 
 ## Schritt 6 — check: Selbsttest zu CN-Training: vier Klausuraufgaben unter Zeitdruck: Brennender Himmel ueber Elysium
 CHECK (Selbsttest, 3 Fragen mit Antworten):
 
-FRAGE: Wie folgt der Weg aus drei $v$-$t$-Abschnitten? | ANTWORT: Teilflaechen aus Dreiecken und Rechtecken zum Gesamtweg addieren.
-FRAGE: Warum zuerst Reibung abziehen bei Aufgabe 2? | ANTWORT: Nur die resultierende Kraft verrichtet Arbeit; Reibung mindert die zugefuehrte Energie.
-FRAGE: Wie beurteilt man drei Zeitwerte korrekt? | ANTWORT: Mittelwert, Zufallsfehler aus Streuung, systematische Quellen, dann eingeschraenktes Urteil.
+- FRAGE: Wie folgt der Weg aus drei $v$-$t$-Abschnitten? | ANTWORT: Teilflaechen aus Dreiecken und Rechtecken zum Gesamtweg addieren.
+- FRAGE: Warum zuerst Reibung abziehen bei Aufgabe 2? | ANTWORT: Nur die resultierende Kraft verrichtet Arbeit; Reibung mindert die zugefuehrte Energie.
+- FRAGE: Wie beurteilt man drei Zeitwerte korrekt? | ANTWORT: Mittelwert, Zufallsfehler aus Streuung, systematische Quellen, dann eingeschraenktes Urteil.
 
-Klausur-Satz: `Erst Mittelwert, dann Zufallsfehler aus der Streuung, dann systematische Quellen — erst danach wird ein eingeschraenktes Urteil formuliert.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Erst Mittelwert, dann Zufallsfehler aus der Streuung, dann systematische Quellen — erst danach wird ein eingeschraenktes Urteil formuliert.`
 
 ## Fehlvorstellung
 
@@ -158,7 +147,7 @@ ROLLE: Du bist Tutor und leitest eine 45-minuetige Klausursimulation fuer eine E
 SITUATION: Die Gruppe bearbeitet die vier Aufgaben aus Schritt 3 unter realen Bedingungen (ca. 47 Minuten) und korrigiert danach mit EHZ selbst. Beurteile in zusammenhaengender Stellungnahme (ca. 150 Woerter), wie die Zeit sinnvoll verteilt und worauf beim Selbstkorrigieren geachtet wird.
 RUBRIC (30 XP): Zeitverteilung mit Begruendung (10 XP) | Typische Verluste wie Ansatz, Einheit, Bewertung (10 XP) | Vorgehen mit EHZ (5 XP) | Fachsprachlich korrekte Darstellung (5 XP).
 
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Wer Loesungsweg, Teilflaechen und Transfersatz mit Einheiten zeigt, erhaelt die volle Punktzahl.`
 
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Brennender Himmel ueber Elysium
 TAKEAWAY (Kernzusammenfassung):
@@ -170,4 +159,4 @@ REFLEXION (2 Fragen):
 1. Selbstbeobachtung: Welcher Schritt fiel schwerer — die Flaechenzerlegung im $v$-$t$-Diagramm (Schritt 4) oder die Wahl zwischen Flaechen- und Steigungsverfahren im Vergleich (Schritt 5)?
 2. Planung: Beim naechsten Mal verteile ich zuerst die Zeit auf die vier Aufgabentypen und pruefe am Ende mit dem EHZ, ob Ansatz, Einheit und Urteil vollstaendig sind.
 
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Klausurphysik ist Handwerk mit Protokoll: Aufgeschriebener Weg schlaegt erratenes Ergebnis.`

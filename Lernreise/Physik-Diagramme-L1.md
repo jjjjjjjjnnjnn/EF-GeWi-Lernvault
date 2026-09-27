@@ -13,7 +13,7 @@ version: Lesson-v3
 
 # Lernreise: Diagramme lesen, zeichnen und Messfehler beurteilen (L1, Ziel Klausur)
 
-<!-- Campaign: Mars-Mission | Episode 6/28 | Krise: Sol-058 Rover-Radschlupf 41 Prozent am Hang | Target: v0 = 282 m/s, a = 2.8 m/s2, Ziel s = 1022 m | Tool: kinematik-lab -->
+<!-- Campaign: Mars-Mission | Episode 6/28 | Krise: Sol-058 Rover-Radschlupf 41 Prozent am Hang | Zielgroessen: s-t-Messreihe, Ziel Geschwindigkeit aus Steigung | Tool: kinematik-lab -->
 
 ## Schritt 1 — entdecken: Vermessung des Landeplatzes
 ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
@@ -24,26 +24,24 @@ ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
 ### Hook / Phaenomen
 
-【火星拓荒者·第6集/共28集】警报：Sol-058 Rover-Radschlupf 41 Prozent am Hang。领航员 Lena 大喊：“v0 = 282 m/s, a = 2.8 m/s2, Ziel s = 1022 m！”机械师 Tom 回应：“稳住曲线！”上一集（Physik-Diagramme-DE-L1.md）埋下的隐患在此爆发，下一集（Physik-Energieerhaltung-Mechanik-DE-L1.md）的大门只为算对的人打开。本集你要在沙盘里亲手把飞船从超速边缘救回来：先看现象、再点装备、最后算出让考官点头的 Bilanz。记住：读图先看轴、计算必带单位、做完必用另一张图验算——这就是火星人生存法则，也是 Klausur 拿分法则。
+数据点上下乱跳，规律却藏在中间那条拟合直线里：随机误差被平均掉，系统误差整体平移，坐标轴和单位就是读图的合同条款。
 
-Hook / Phaenomen (Sol-Logbuch, Episode 6 von 28): Mars-Anflug, Sol-058 Rover-Radschlupf 41 Prozent am Hang. Navigatorin Lena meldet: v0 = 282 m/s, a = 2.8 m/s2, Ziel s = 1022 m, Mechaniker Tom ruft: Halte die Kurve! Der Bordcomputer geht auf Rot, das Funkgeraet rauscht, die Crew haelt den Atem an. Genau hier entscheidet Diagramme lesen, zeichnen und Messfehler beurteilen ueber Landung oder Absturz, ueber Festfahren oder Weiterfahrt, ueber Andocken oder Abprall. Das Logbuch des vorherigen Sols (Physik-Diagramme-DE-L1.md) warnte bereits vor diesem Moment, und das naechste Fenster (Physik-Energieerhaltung-Mechanik-DE-L1.md) oeffnet sich nur, wenn diese Aufgabe geloest wird. Die Sensoren streuen, die Diagramme zittern, doch die Physik bleibt unbestechlich: Wer Steigung und Flaeche, Kraft und Gegenkraft, Schwung und Stoss richtig liest, rettet die Mission. In dieser Episode stellst du im Sandbox-Labor die Brems- und Gleitzahlen so ein, dass die Kapsel sicher durchkommt. Beobachte zuerst das Phaenomen in Ruhe, benenne dann die Groessen mit exakten Einheiten, pruefe schliesslich die Bilanz mit einer Gegenrechnung. Der folgende Weg fuehrt vom Alarmton zur sauberen Klausurloesung: erst das Phaenomen beobachten, dann die Begriffe sichern, dann das Modell rechnen und im Labor bestaetigen.
+Hook / Phaenomen: Punkte streuen, doch das Gesetz liegt gerade dazwischen: Die **Ausgleichsgerade** mittelt den **zufaelligen Fehler** weg. Der **systematische Fehler** bleibt und verschiebt alles. Wer **Achsen und Einheiten** sauber fuehrt, liest Steigung und Flaeche wie einen Vertrag.
 
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Diagramme sprechen ueber Steigung und Flaeche: Achsen mit Einheiten entscheiden, was gelesen werden darf.`
 
 ## Schritt 2 — entdecken: Ausruestungskiste der Mars-Crew
 PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
 
 中文在上，德语在下：
 
-- 拟合直线 — die Ausgleichsgerade：用最小二乘/趋势线穿过散点的最佳直线，斜率即待求量。
-- 测量不确定度 — die Messunsicherheit：每次读数都带误差，结论只能在误差范围内成立。
-- 随机误差 — der zufaellige Fehler：测量点无规律地散落在直线两侧，多次取平均可减小。
-- 系统误差 — der systematische Fehler：所有读数朝同一方向偏移，如停表启动过晚，取平均也消不掉。
-- 散点图 — das Punktdiagramm：只画数据点、不连折线的图，用于观察趋势。
+- 拟合直线 — die Ausgleichsgerade：用最小二乘/趋势线穿过散点的最佳直线，斜率即待求量。 Sie mittelt zufaellige Fehler weg und zeigt den wahren Trend. Mechanismus: Gerade so legen, dass Abweichungen sich ausgleichen. Klausur-Tipp: Nicht durch den Ursprung zwingen ohne Grund.
+- 测量不确定度 — die Messunsicherheit：每次读数都带误差，结论只能在误差范围内成立。 Erst beschriftete Achsen machen aus Punkten eine Aussage. Mechanismus: Achsen mit Groesse und Einheit skalieren. Klausur-Tipp: Einheit an jeder Achse ist Pflicht.
+- 随机误差 — der zufaellige Fehler：测量点无规律地散落在直线两侧，多次取平均可减小。 Er streut symmetrisch und schrumpft durch Mittelung. Mechanismus: Mehrfach messen und Mittel plus Streuung bilden. Klausur-Tipp: Streuung als Unsicherheit angeben.
+- 系统误差 — der systematische Fehler：所有读数朝同一方向偏移，如停表启动过晚，取平均也消不掉。 Er verschiebt alle Werte einseitig und ueberlebt jede Mittelung. Mechanismus: Nullpunkt und Kalibrierung vor der Reihe pruefen. Klausur-Tipp: Systematik als eigene Fehlerquelle benennen.
+- 散点图 — das Punktdiagramm：只画数据点、不连折线的图，用于观察趋势。 Sie begrenzt, wie viele Stellen das Ergebnis tragen darf. Mechanismus: Fehlerbalken zeichnen und Stellen runden. Klausur-Tipp: Ergebnis nie genauer als die Messung.
 
-Klausur-Satz: `Zufaellige Fehler streuen unsystematisch um die Ausgleichsgerade, waehrend systematische Fehler alle Messwerte in dieselbe Richtung verschieben.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Zufaellige Fehler streuen unsystematisch um die Ausgleichsgerade, waehrend systematische Fehler alle Messwerte in dieselbe Richtung verschieben.`
 
 ## Schritt 3 — entdecken: Wirkungskette hinter Diagramme lesen, zeichnen und Messfehler beurteilen
 ENTDECKEN（1概念 + 1文字图解）：
@@ -72,9 +70,8 @@ ENTDECKEN（1概念 + 1文字图解）：
     systematisch: alle Punkte zu hoch -> mitteln hilft NICHT
 ```
 
-Klausur-Satz: `Ein Diagramm ohne beschriftete Achsen samt Einheiten ist wertlos, und eine Messreihe darf nur im Rahmen der Messunsicherheit beurteilt werden.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+$$s = m\cdot t + b,\quad \bar{v} = \frac{\Delta s}{\Delta t}$$
+`Klausur-Satz: Ein Diagramm ohne beschriftete Achsen samt Einheiten ist wertlos, und eine Messreihe darf nur im Rahmen der Messunsicherheit beurteilt werden.`
 
 ## Anekdote & Fun-Fact
 
@@ -85,7 +82,7 @@ Klausur-Satz: `Ein Diagramm ohne beschriftete Achsen samt Einheiten ist wertlos,
 **Bezug zum Konzept**: `Der Hubble-Spiegel zeigt, dass ein systematischer Fehler alle Messwerte gleichsinnig verschiebt und nur an seiner Ursache behoben werden kann, nicht durch Mittelung.`
 
 ## Schritt 4 — ausprobieren: Sandbox-Auftrag Vermessung des Landeplatzes
-Kontinuitaet: Vorher Physik-Diagramme-DE-L1.md | Nachher Physik-Energieerhaltung-Mechanik-DE-L1.md. Krise dieser Episode: Sol-058 Rover-Radschlupf 41 Prozent am Hang. Target: v0 = 282 m/s, a = 2.8 m/s2, Ziel s = 1022 m.
+Kontinuitaet: Vorher Physik-Diagramme-DE-L1.md | Nachher Physik-Energieerhaltung-Mechanik-DE-L1.md. Krise dieser Episode: Sol-058 Rover-Radschlupf 41 Prozent am Hang. Zielgroessen: s-t-Messreihe, Ziel Geschwindigkeit aus Steigung
 
 BEISPIEL（正确例题示范，含教具操作与解答）：
 
@@ -100,14 +97,12 @@ HILFE:
 
 MUSTERLÖSUNG: Trägt man die Punkte in ein s-t-Diagramm ein, so liegen sie nahezu auf einer Geraden durch den Ursprung. Die Steigung der Ausgleichsgeraden bestimmt man mit den äußeren Punkten: v = Δs/Δt = (3,98 m - 0 m) / (8 s - 0 s) = 0,4975 m/s, gerundet 0,50 m/s. Die Zwischenwerte stützen dieses Ergebnis: 1,05 m / 2 s = 0,525 m/s, 1,96 m / 4 s = 0,490 m/s und 3,05 m / 6 s = 0,508 m/s streuen unregelmäßig um 0,50 m/s. Vergleicht man jeden Messpunkt mit der Geraden s = 0,50 m/s * t, so liegt der Punkt bei t = 2 s um 0,05 m über, der bei t = 4 s um 0,04 m unter, der bei t = 6 s um 0,05 m über und der bei t = 8 s um 0,02 m unter der Geraden — die Abweichungen wechseln also das Vorzeichen und sind damit zufällig. Daher ist das Modell der gleichförmigen Bewegung im Rahmen der Messunsicherheit haltbar; eine exakte Aussage ist wegen der Streuung nicht zulässig.
 
-Klausur-Satz: `Die Ausgleichsgerade ergibt eine Geschwindigkeit von etwa 0,50 m/s, und da die Abweichungen unsystematisch streuen, ist das Modell im Rahmen der Messunsicherheit haltbar.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Die Ausgleichsgerade ergibt eine Geschwindigkeit von etwa 0,50 m/s, und da die Abweichungen unsystematisch streuen, ist das Modell im Rahmen der Messunsicherheit haltbar.`
 
 ## Schritt 5 — ausprobieren: Duell der Verfahren Vermessung des Landeplatzes
 VERGLEICH辨别实验（双向辨析：随机误差眼 vs. 系统误差眼）：
 
-VERGLEICH: Wähle erst das Verfahren — 【选程序】先看测量点相对拟合直线的偏离方式：(i) Zufallsfehler-Verfahren（点无规律地散在直线两侧，正负偏差交替出现 → 多次测量取平均）oder (ii) Systemfehler-Verfahren（所有点朝同一方向偏离，直线整体平移或斜率被拉偏 → 找仪器与操作原因）—— dann lösen.
+VERGLEICH: (Weg A quantitativ-rechnerisch gegen Weg B qualitativ-strukturell): Wähle erst das Verfahren — 【选程序】先看测量点相对拟合直线的偏离方式：(i) Zufallsfehler-Verfahren（点无规律地散在直线两侧，正负偏差交替出现 → 多次测量取平均）oder (ii) Systemfehler-Verfahren（所有点朝同一方向偏离，直线整体平移或斜率被拉偏 → 找仪器与操作原因）—— dann lösen.
 
 Weg A: Erst Verfahren waehlen, dann rechnen.
 
@@ -121,20 +116,16 @@ HILFE: A: Die Punkte streuen ohne Muster → Verfahren (i), Zufallsfehler, Mehrf
 
 ANTWORT: A erfordert Verfahren (i): Da die Punkte unsystematisch um die Ausgleichsgerade streuen, handelt es sich um zufällige Fehler; sie lassen sich durch wiederholte Messung und Mittelwertbildung verkleinern, weil sich positive und negative Abweichungen gegenseitig aufheben. B erfordert Verfahren (ii): Der um 0,3 s zu späte Start verschiebt alle Zeitwerte gleichsinnig, also liegt ein systematischer Fehler vor; die Mittelwertbildung mittelt diese Verschiebung nur mit, der Mittelwert bleibt zu groß. Der Fehler muss an der Ursache behoben werden, indem man den Startzeitpunkt korrigiert oder eine Lichtschranke verwendet.
 
-Klausur-Satz: `Zufaellige Fehler werden durch Mittelung verkleinert, systematische Fehler dagegen nur durch das Beheben ihrer Ursache.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Zufaellige Fehler werden durch Mittelung verkleinert, systematische Fehler dagegen nur durch das Beheben ihrer Ursache.`
 
 ## Schritt 6 — check: Selbsttest zu Diagramme lesen, zeichnen und Messfehler beurteilen: Vermessung des Landeplatzes
 CHECK检索默写（自测 3 题，与答案配对）：
 
-FRAGE: Welche drei Elemente muss ein sauberes Diagramm mindestens enthalten? | ANTWORT: Beschriftete Achsen mit physikalischer Groesse, zugehoerige Einheiten und die eingezeichneten Messpunkte bzw. die Ausgleichsgerade.
-FRAGE: Woran erkennt man einen systematischen Fehler in einer Messreihe? | ANTWORT: Alle Messwerte weichen gleichsinnig von der Ausgleichsgeraden ab, sodass die Gerade verschoben oder ihre Steigung verfaelscht ist.
-FRAGE: Warum darf ein Messergebnis nicht als exakt bezeichnet werden? | ANTWORT: Weil jede Messung eine Unsicherheit traegt; das Ergebnis gilt nur im Rahmen dieser Messunsicherheit.
+- FRAGE: Welche drei Elemente muss ein sauberes Diagramm mindestens enthalten? | ANTWORT: Beschriftete Achsen mit physikalischer Groesse, zugehoerige Einheiten und die eingezeichneten Messpunkte bzw. die Ausgleichsgerade.
+- FRAGE: Woran erkennt man einen systematischen Fehler in einer Messreihe? | ANTWORT: Alle Messwerte weichen gleichsinnig von der Ausgleichsgeraden ab, sodass die Gerade verschoben oder ihre Steigung verfaelscht ist.
+- FRAGE: Warum darf ein Messergebnis nicht als exakt bezeichnet werden? | ANTWORT: Weil jede Messung eine Unsicherheit traegt; das Ergebnis gilt nur im Rahmen dieser Messunsicherheit.
 
-Klausur-Satz: `Ein Messergebnis wird nur im Rahmen der Messunsicherheit beurteilt, wobei zufaellige und systematische Fehler getrennt benannt werden.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Ein Messergebnis wird nur im Rahmen der Messunsicherheit beurteilt, wobei zufaellige und systematische Fehler getrennt benannt werden.`
 
 ## Fehlvorstellung
 
@@ -153,7 +144,7 @@ ROLLE: Du bist Mitglied der Physik-AG und sollst für das Schuljahrbuch einen Ve
 SITUATION: Eine Gruppe hat eine Messreihe (t in s, s in m) aufgenommen; die Punkte streuen leicht um eine Gerade, und ein Schüler behauptet, das Ergebnis sei "genau 0,50 m/s". Die Redaktion fragt dich, wie man die Daten korrekt darstellt, die Geschwindigkeit bestimmt und die Aussagekraft der Messung bewertet. Beurteile in einer zusammenhängenden Stellungnahme (ca. 150 Wörter) unter Rückgriff auf Ausgleichsgerade und Messunsicherheit.
 RUBRIC (30 XP): Beschreibung der korrekten Darstellung (Achsen mit Einheit, Punkte, Ausgleichsgerade) (5 XP) | Bestimmung der Steigung als Geschwindigkeit mit Rechnung (10 XP) | Beurteilung der Abweichungen als zufaellig bzw. systematisch (10 XP) | Eingeschraenktes, kriteriengeleitetes Fazit statt "exakt" (5 XP).
 
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Wer Ausgleichsgerade zeichnet, Fehlerarten trennt und Steigung mit Einheit deutet, erhaelt die volle Punktzahl.`
 
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Vermessung des Landeplatzes
 TAKEAWAY 1盒（核心总结）：
@@ -165,4 +156,4 @@ REFLEXION 2问：
 1. 过程自省：Welcher Schritt fiel schwerer — das Ablesen der Steigung aus der Ausgleichsgeraden (Schritt 4) oder die Unterscheidung von zufaelligem und systematischem Fehler im Vergleich (Schritt 5)?
 2. 元认知计划：Beim nächsten Mal beschrifte ich zuerst die Achsen mit Einheiten und pruefe am Ende, ob meine Schlussfolgerung den Fehlerrahmen ausdruecklich nennt.
 
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Messen heisst streiten mit der Natur: Jeder Punkt braucht Fehlerbalken und Deutung.`

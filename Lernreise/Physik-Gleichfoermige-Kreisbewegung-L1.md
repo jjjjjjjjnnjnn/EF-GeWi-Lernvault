@@ -13,7 +13,7 @@ version: Lesson-v3
 
 # Lernreise: Gleichfoermige Kreisbewegung (L1, Ziel Klausur)
 
-<!-- Campaign: Mars-Mission | Episode 18/28 | Krise: Sol-102 Bodennebel pH-Sensor meldet Fehlkalibrierung | Target: v0 = 366 m/s, a = 4.3 m/s2, Ziel s = 1466 m | Tool: schiefe-ebene -->
+<!-- Campaign: Mars-Mission | Episode 18/28 | Krise: Sol-102 Bodennebel pH-Sensor meldet Fehlkalibrierung | Zielgroessen: Karussell mit Radius r und Umlaufzeit T, Ziel Zentripetalkraft | Tool: schiefe-ebene -->
 
 ## Schritt 1 — entdecken: Satelliten-Fessel
 ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
@@ -24,26 +24,24 @@ ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
 ### Hook / Phaenomen
 
-【火星拓荒者·第18集/共28集】警报：Sol-102 Bodennebel pH-Sensor meldet Fehlkalibrierung。领航员 Lena 大喊：“v0 = 366 m/s, a = 4.3 m/s2, Ziel s = 1466 m！”机械师 Tom 回应：“稳住曲线！”上一集（Physik-Gleichfoermige-Kreisbewegung-DE-L1.md）埋下的隐患在此爆发，下一集（Physik-Gravitation-Satellitenbahnen-CN-L1.md）的大门只为算对的人打开。本集你要在沙盘里亲手把飞船从超速边缘救回来：先看现象、再点装备、最后算出让考官点头的 Bilanz。记住：读图先看轴、计算必带单位、做完必用另一张图验算——这就是火星人生存法则，也是 Klausur 拿分法则。
+旋转秋千甩向外，力却指向内：向心力把每个质量锁在圆周上，线速度大小不变，轨道算法和受力算法殊途同归。
 
-Hook / Phaenomen (Sol-Logbuch, Episode 18 von 28): Mars-Anflug, Sol-102 Bodennebel pH-Sensor meldet Fehlkalibrierung. Navigatorin Lena meldet: v0 = 366 m/s, a = 4.3 m/s2, Ziel s = 1466 m, Mechaniker Tom ruft: Halte die Kurve! Der Bordcomputer geht auf Rot, das Funkgeraet rauscht, die Crew haelt den Atem an. Genau hier entscheidet Gleichfoermige Kreisbewegung ueber Landung oder Absturz, ueber Festfahren oder Weiterfahrt, ueber Andocken oder Abprall. Das Logbuch des vorherigen Sols (Physik-Gleichfoermige-Kreisbewegung-DE-L1.md) warnte bereits vor diesem Moment, und das naechste Fenster (Physik-Gravitation-Satellitenbahnen-CN-L1.md) oeffnet sich nur, wenn diese Aufgabe geloest wird. Die Sensoren streuen, die Diagramme zittern, doch die Physik bleibt unbestechlich: Wer Steigung und Flaeche, Kraft und Gegenkraft, Schwung und Stoss richtig liest, rettet die Mission. In dieser Episode stellst du im Sandbox-Labor die Brems- und Gleitzahlen so ein, dass die Kapsel sicher durchkommt. Beobachte zuerst das Phaenomen in Ruhe, benenne dann die Groessen mit exakten Einheiten, pruefe schliesslich die Bilanz mit einer Gegenrechnung. Der folgende Weg fuehrt vom Alarmton zur sauberen Klausurloesung: erst das Phaenomen beobachten, dann die Begriffe sichern, dann das Modell rechnen und im Labor bestaetigen.
+Hook / Phaenomen: Kettenkarussell in Voithausen: Die Kette zeigt schraeg nach aussen, doch die Kraft zieht nach innen. Die **Zentripetalkraft** zwingt jede Masse auf die Kreisbahn, die **Bahngeschwindigkeit** bleibt dem Betrag nach konstant. Zwei Verfahren pruefen dasselbe: **Bahn** gegen **Kraft**.
 
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Kreisbewegung braucht Innenkraft: Zentripetalkraft m v Quadrat durch r haelt die Bahn, Richtung aendert sich staendig.`
 
 ## Schritt 2 — entdecken: Ausruestungskiste der Mars-Crew
 PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
 
 中文在上，德语在下：
 
-- 匀速圆周运动 — Gleichfoermige Kreisbewegung：速率大小不变、沿圆周运行的运动，方向持续改变。
-- 周期 — Umlaufdauer T：转一整圈所需的时间，单位为秒，频率 f = 1/T。
-- 角速度 — Winkelgeschwindigkeit ω：单位时间转过的角度，ω = 2πf = 2πr / (rT)。
-- 线速度 — Bahngeschwindigkeit v：沿切线方向的瞬时速度，v = 2πr/T = ωr。
-- 向心力 — Zentripetalkraft F_Z：指向圆心的合力，F_Z = m v^2/r = m ω^2 r。
+- 匀速圆周运动 — Gleichfoermige Kreisbewegung：速率大小不变、沿圆周运行的运动，方向持续改变。 Es erklaert die Bewegung ueber die wirkende Innenkraft. Mechanismus: Kraefte bilanzieren und mit Zentripetalkraft gleichsetzen. Klausur-Tipp: Kraeftebild vor die Rechnung setzen.
+- 周期 — Umlaufdauer T：转一整圈所需的时间，单位为秒，频率 f = 1/T。 Es misst die Bewegung ueber Umfang und Umlaufzeit. Mechanismus: Weg durch Zeit teilen und Frequenz bilden. Klausur-Tipp: Umlaufzeit aus mehreren Runden mitteln.
+- 角速度 — Winkelgeschwindigkeit ω：单位时间转过的角度，ω = 2πf = 2πr / (rT)。 Winkelgeschwindigkeit mal Radius ergibt die Bahngeschwindigkeit. Mechanismus: Winkel durch Zeit teilen und mit Radius multiplizieren. Klausur-Tipp: Bogenmass statt Grad verwenden.
+- 线速度 — Bahngeschwindigkeit v：沿切线方向的瞬时速度，v = 2πr/T = ωr。 Ihr Betrag bleibt konstant, ihre Richtung dreht sich staendig. Mechanismus: Umfang durch Umlaufzeit teilen. Klausur-Tipp: Betrag und Richtung getrennt aussagen.
+- 向心力 — Zentripetalkraft F_Z：指向圆心的合力，F_Z = m v^2/r = m ω^2 r。 Sie zeigt stets zum Kreismittelpunkt und aendert nur die Richtung. Mechanismus: Masse mal v Quadrat durch Radius berechnen. Klausur-Tipp: Innenrichtung ausdruecklich begruenden.
 
-Klausur-Satz: `Die Bahngeschwindigkeit zeigt tangential zur Kreisbahn, die Zentripetalkraft zeigt radial zum Mittelpunkt.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Die Bahngeschwindigkeit zeigt tangential zur Kreisbahn, die Zentripetalkraft zeigt radial zum Mittelpunkt.`
 
 ## Schritt 3 — entdecken: Wirkungskette hinter Gleichfoermige Kreisbewegung
 ENTDECKEN（1概念 + 1文字图解）：
@@ -70,9 +68,8 @@ ENTDECKEN（1概念 + 1文字图解）：
    Formeln: v = 2πr/T, ω = 2πf, F_Z = m v^2/r
 ```
 
-Klausur-Satz: `Die Zentripetalkraft F_Z = m v^2/r wirkt radial zum Mittelpunkt und wird durch die reale Radialkomponente der Kraefte aufgebracht.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+$$v = \frac{2\pi r}{T},\quad F_z = m\frac{v^2}{r}$$
+`Klausur-Satz: Die Zentripetalkraft F_Z = m v^2/r wirkt radial zum Mittelpunkt und wird durch die reale Radialkomponente der Kraefte aufgebracht.`
 
 ## Anekdote & Fun-Fact
 
@@ -83,7 +80,7 @@ Klausur-Satz: `Die Zentripetalkraft F_Z = m v^2/r wirkt radial zum Mittelpunkt u
 **Bezug zum Konzept**: `Was als Fliehkraft nach aussen gefuehlt wird, ist Traegheit; physikalisch real ist nur die Zentripetalkraft nach innen.`
 
 ## Schritt 4 — ausprobieren: Sandbox-Auftrag Satelliten-Fessel
-Kontinuitaet: Vorher Physik-Gleichfoermige-Kreisbewegung-DE-L1.md | Nachher Physik-Gravitation-Satellitenbahnen-CN-L1.md. Krise dieser Episode: Sol-102 Bodennebel pH-Sensor meldet Fehlkalibrierung. Target: v0 = 366 m/s, a = 4.3 m/s2, Ziel s = 1466 m.
+Kontinuitaet: Vorher Physik-Gleichfoermige-Kreisbewegung-DE-L1.md | Nachher Physik-Gravitation-Satellitenbahnen-CN-L1.md. Krise dieser Episode: Sol-102 Bodennebel pH-Sensor meldet Fehlkalibrierung. Zielgroessen: Karussell mit Radius r und Umlaufzeit T, Ziel Zentripetalkraft
 
 BEISPIEL（正确例题示范，含教具操作与解答）：
 
@@ -98,14 +95,12 @@ HILFE:
 
 MUSTERLOESUNG: Es gilt U = 2πr = 2π mal 50 m = 314 m, also v = 314 m / 12 s = 26.2 m/s. Die Frequenz betraegt f = 1/12 s = 0.0833 1/s, also ω = 2πf = 0.524 1/s, Kontrolle: ω = v/r = 26.2/50 = 0.524 1/s. Die Zentripetalkraft betraegt F_Z = m v^2/r = 1200 mal (26.2)^2 / 50 = 1200 mal 686 / 50 = 16470 N. Bei doppelter Geschwindigkeit gilt F_Z neu = m (2v)^2/r = 4 m v^2/r, also das Vierfache. In der Kurve muss die Haftreibung diese Radialkraft liefern; reicht sie nicht, so folgt das Auto der Traegheit tangential nach aussen und rutscht.
 
-Klausur-Satz: `Mit v = 2πr/T und F_Z = m v^2/r folgt, dass eine Verdopplung von v die vierfache Zentripetalkraft erfordert.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Mit v = 2πr/T und F_Z = m v^2/r folgt, dass eine Verdopplung von v die vierfache Zentripetalkraft erfordert.`
 
 ## Schritt 5 — ausprobieren: Duell der Verfahren Satelliten-Fessel
 VERGLEICH辨别实验（双向辨析：切向速度眼 vs. 径向受力眼）：
 
-VERGLEICH: Waehle erst das Verfahren — 【选程序】先判断题目问的是 (i) Bahn-Verfahren（求速率/周期/角速度，用 v = 2πr/T 与 ω = 2πf）还是 (ii) Kraft-Verfahren（问能否过弯/是否打滑/拉力多大，用 F_Z = m v^2/r 做径向合力分析）—— dann rechnen.
+VERGLEICH: (Weg A quantitativ-rechnerisch gegen Weg B qualitativ-strukturell): Waehle erst das Verfahren — 【选程序】先判断题目问的是 (i) Bahn-Verfahren（求速率/周期/角速度，用 v = 2πr/T 与 ω = 2πf）还是 (ii) Kraft-Verfahren（问能否过弯/是否打滑/拉力多大，用 F_Z = m v^2/r 做径向合力分析）—— dann rechnen.
 
 Weg A: Erst Verfahren waehlen, dann rechnen.
 
@@ -118,20 +113,16 @@ HILFE: A nennt nur Geometrie plus Drehzahl und fragt nach Tempo -> Verfahren (i)
 
 ANTWORT: A erfordert Verfahren (i): v = 2πr f = 2π mal 0.30 mal 2.0 = 3.77 m/s; dies ist die tangentiale Bahngeschwindigkeit. B erfordert Verfahren (ii): F_Z Bedarf = m v^2/r = 0.010 mal (3.77)^2 / 0.30 = 0.474 N; maximal moegliche Haftreibung = 0.40 mal 0.010 mal 9.81 = 0.039 N. Der Bedarf ist groesser als das Angebot, daher rutscht die Muenze nach aussen weg.
 
-Klausur-Satz: `Kinematische Fragen nach v und ω verlangen das Bahn-Verfahren, Fragen nach Halten oder Reissen verlangen das Kraft-Verfahren mit F_Z.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Kinematische Fragen nach v und ω verlangen das Bahn-Verfahren, Fragen nach Halten oder Reissen verlangen das Kraft-Verfahren mit F_Z.`
 
 ## Schritt 6 — check: Selbsttest zu Gleichfoermige Kreisbewegung: Satelliten-Fessel
 CHECK检索默写（自测 3 题，与答案配对）：
 
-FRAGE: Wie berechnen sich Bahngeschwindigkeit v und Winkelgeschwindigkeit ω aus r, T und f? | ANTWORT: v = 2πr/T = ωr und ω = 2πf = 2π/T; v zeigt tangential, ω beschreibt die Drehgeschwindigkeit.
-FRAGE: Wie lautet die Formel der Zentripetalkraft und wohin zeigt sie? | ANTWORT: F_Z = m v^2/r = m ω^2 r; sie zeigt radial zum Mittelpunkt und ist die Radialkomponente der realen Kraefte.
-FRAGE: Warum vervierfacht sich die Kraft bei doppelter Geschwindigkeit? | ANTWORT: Weil v in F_Z quadratisch eingeht: (2v)^2 = 4v^2, daher braucht die Kurve viermal so viel Haftreibung.
+- FRAGE: Wie berechnen sich Bahngeschwindigkeit v und Winkelgeschwindigkeit ω aus r, T und f? | ANTWORT: v = 2πr/T = ωr und ω = 2πf = 2π/T; v zeigt tangential, ω beschreibt die Drehgeschwindigkeit.
+- FRAGE: Wie lautet die Formel der Zentripetalkraft und wohin zeigt sie? | ANTWORT: F_Z = m v^2/r = m ω^2 r; sie zeigt radial zum Mittelpunkt und ist die Radialkomponente der realen Kraefte.
+- FRAGE: Warum vervierfacht sich die Kraft bei doppelter Geschwindigkeit? | ANTWORT: Weil v in F_Z quadratisch eingeht: (2v)^2 = 4v^2, daher braucht die Kurve viermal so viel Haftreibung.
 
-Klausur-Satz: `Die Formeln v = 2πr/T, ω = 2πf und F_Z = m v^2/r bilden das geschlossene Verfahren der Kreisbewegung.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Die Formeln v = 2πr/T, ω = 2πf und F_Z = m v^2/r bilden das geschlossene Verfahren der Kreisbewegung.`
 
 ## Fehlvorstellung
 
@@ -151,7 +142,7 @@ SITUATION: Nach einem Regen ist ein Auto in einer flachen Kurve mit Radius 60 m 
 AUFGABE: Schreibe eine Klausur-Antwort mit Formeln, Rechnung, Kraftdeutung und Urteil ueber die Fliehkraft-Aussage.
 RUBRIC (30 XP): Korrekte Rechnung mit F_Z = m v^2/r (10 XP) | Deutung als Haftreibung als Lieferant der Radialkraft (10 XP) | Urteil: keine reale Kraft nach aussen, sondern Traegheit bei fehlender Zentripetalkraft (10 XP).
 
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Wer Bahn- und Kraftverfahren verbindet, Zentripetalkraft berechnet und Winkelgroessen deutet, erhaelt die volle Punktzahl.`
 
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Satelliten-Fessel
 TAKEAWAY 1盒（核心总结）：
@@ -163,4 +154,4 @@ REFLEXION 2问：
 1. 过程自省：Welcher Schritt fiel schwerer — die Rechnung mit v und F_Z (Schritt 4) oder die Wahl zwischen Bahn-Verfahren und Kraft-Verfahren (Schritt 5)?
 2. 元认知计划：Beim naechsten Mal zeichne ich zuerst die Draufsicht mit Radius, Tangente und Radialpfeil und frage dann, ob nach Tempo oder nach Halten gefragt ist.
 
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Kreise entstehen aus Zwang: Ohne Innenkraft floege jede Masse tangential davon.`

@@ -13,7 +13,7 @@ version: Lesson-v3
 
 # Lernreise: Federpendel und harmonische Schwingung (L1, Ziel Klausur)
 
-<!-- Campaign: Mars-Mission | Episode 11/28 | Krise: Sol-074 Solararray-Staub 63 Prozent Leistungsabfall | Target: v0 = 317 m/s, a = 3.4 m/s2, Ziel s = 1207 m | Tool: schiefe-ebene -->
+<!-- Campaign: Mars-Mission | Episode 11/28 | Krise: Sol-074 Solararray-Staub 63 Prozent Leistungsabfall | Zielgroessen: m = 0,50 kg, D = 20 N/m, Ziel T etwa 0,99 s | Tool: formula -->
 
 ## Schritt 1 — entdecken: Formel-Notfallkarte
 ZIELE (3 Ziele, nach 15 Minuten erreichbar):
@@ -26,24 +26,22 @@ EINSTIEG: Im Jahr 1583 soll Galileo Galilei im Dom von Pisa eine pendelnde Lampe
 
 ### Hook / Phaenomen
 
-【火星拓荒者·第11集/共28集】警报：Sol-074 Solararray-Staub 63 Prozent Leistungsabfall。领航员 Lena 大喊：“v0 = 317 m/s, a = 3.4 m/s2, Ziel s = 1207 m！”机械师 Tom 回应：“稳住曲线！”上一集（Physik-Federpendel-Harmonische-Schwingung-DE-L1.md）埋下的隐患在此爆发，下一集（Physik-Formeln-DE-L1.md）的大门只为算对的人打开。本集你要在沙盘里亲手把飞船从超速边缘救回来：先看现象、再点装备、最后算出让考官点头的 Bilanz。记住：读图先看轴、计算必带单位、做完必用另一张图验算——这就是火星人生存法则，也是 Klausur 拿分法则。
+汽车压过减速带：没减震能晃到天荒地老，有减震一秒回稳；地震区的高楼阻尼器也是同款物理，专吃共振。
 
-Hook / Phaenomen (Sol-Logbuch, Episode 11 von 28): Mars-Anflug, Sol-074 Solararray-Staub 63 Prozent Leistungsabfall. Navigatorin Lena meldet: v0 = 317 m/s, a = 3.4 m/s2, Ziel s = 1207 m, Mechaniker Tom ruft: Halte die Kurve! Der Bordcomputer geht auf Rot, das Funkgeraet rauscht, die Crew haelt den Atem an. Genau hier entscheidet Federpendel und harmonische Schwingung ueber Landung oder Absturz, ueber Festfahren oder Weiterfahrt, ueber Andocken oder Abprall. Das Logbuch des vorherigen Sols (Physik-Federpendel-Harmonische-Schwingung-DE-L1.md) warnte bereits vor diesem Moment, und das naechste Fenster (Physik-Formeln-DE-L1.md) oeffnet sich nur, wenn diese Aufgabe geloest wird. Die Sensoren streuen, die Diagramme zittern, doch die Physik bleibt unbestechlich: Wer Steigung und Flaeche, Kraft und Gegenkraft, Schwung und Stoss richtig liest, rettet die Mission. In dieser Episode stellst du im Sandbox-Labor die Brems- und Gleitzahlen so ein, dass die Kapsel sicher durchkommt. Beobachte zuerst das Phaenomen in Ruhe, benenne dann die Groessen mit exakten Einheiten, pruefe schliesslich die Bilanz mit einer Gegenrechnung. Der folgende Weg fuehrt vom Alarmton zur sauberen Klausurloesung: erst das Phaenomen beobachten, dann die Begriffe sichern, dann das Modell rechnen und im Labor bestaetigen.
+Hook / Phaenomen: Ein Wagen rauscht ueber eine Bodenwelle: Ohne **Stossdaempfer** wuerde die Karosserie endlos nachschwingen. Mit Daempfer klingt die **Schwingung** in einer Sekunde ab. Dieselbe Physik schuetzt Hochhaeuser im Erdbebengebiet: Abgestimmte **Tilger** schlucken die Resonanz statt sie zu verstaerken.
 
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Rueckstellung erzeugt Schwingung: Federkraft minus D mal x treibt die Masse periodisch zur Ruhelage zurueck.`
 
 ## Schritt 2 — entdecken: Ausruestungskiste der Mars-Crew
 GRUNDBEGRIFFE (5 Begriffe):
 
-- **Auslenkung**: $x(t) = A\cos(\omega t + \phi_0)$, momentaner Abstand von der Ruhelage.
-- **Federkonstante**: $D$ in $\frac{\mathrm{N}}{\mathrm{m}}$, Haerte der Feder aus $F = -Dx$.
-- **Kreisfrequenz**: $\omega = \sqrt{\frac{D}{m}} = 2\pi f$, Tempo der Schwingung in $\frac{1}{\mathrm{s}}$.
-- **Periodendauer**: $T = 2\pi\sqrt{\frac{m}{D}}$, Zeit einer vollen Schwingung.
-- **Energieerhaltung**: $E = \frac{1}{2}Dx^2 + \frac{1}{2}mv^2 = \frac{1}{2}DA^2$, Pendeln zwischen Feder- und Bewegungsenergie.
+- **Auslenkung**: $x(t) = A\cos(\omega t + \phi_0)$, momentaner Abstand von der Ruhelage. Der Kosinus beschreibt die Auslenkung in der Zeit; seine Amplitude bleibt konstant. Mechanismus: Kosinusansatz einsetzen und Koeffizienten vergleichen. Klausur-Tipp: Kosinus als Loesung nennen und Amplitude ablesen.
+- **Federkonstante**: $D$ in $\frac{\mathrm{N}}{\mathrm{m}}$, Haerte der Feder aus $F = -Dx$. Aus D folgt die Kraft F gleich minus D mal x; D selbst ist reine Federeigenschaft. Mechanismus: Auslenkung messen und mit D multiplizieren. Klausur-Tipp: Minuszeichen als Richtung zur Ruhelage deuten.
+- **Kreisfrequenz**: $\omega = \sqrt{\frac{D}{m}} = 2\pi f$, Tempo der Schwingung in $\frac{1}{\mathrm{s}}$. Sie folgt aus D und m ueber f gleich eins durch T; haertere Feder heisst hoehere Frequenz. Mechanismus: Kehrwert der Dauer bilden und in Hertz angeben. Klausur-Tipp: Amplitude als unabhaengig nennen.
+- **Periodendauer**: $T = 2\pi\sqrt{\frac{m}{D}}$, Zeit einer vollen Schwingung. Sie haengt nur von m und D ab, nicht von der Amplitude. Mechanismus: Masse und Haerte einsetzen und Wurzel ziehen. Klausur-Tipp: Doppelte Masse als Faktor Wurzel zwei deuten.
+- **Energieerhaltung**: $E = \frac{1}{2}Dx^2 + \frac{1}{2}mv^2 = \frac{1}{2}DA^2$, Pendeln zwischen Feder- und Bewegungsenergie. An den Umkehrpunkten steckt alles in der Feder, in der Ruhelage alles im Tempo. Mechanismus: Umkehrpunkt gegen Ruhelage als Energiesorten lesen. Klausur-Tipp: Ruhelage als schnell, Umkehr als Stillstand benennen.
 
-Klausur-Satz: `Groessere Masse verlaengert T, haertere Feder verkuerzt T.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Groessere Masse verlaengert T, haertere Feder verkuerzt T.`
 
 ## Schritt 3 — entdecken: Wirkungskette hinter Federpendel und harmonische Schwingung
 KONZEPT (ein Konzept plus ein Textdiagramm):
@@ -62,18 +60,19 @@ Die Ruhelage zieht immer zurueck: $F = -Dx$. Mit Newton $F = m\ddot{x}$ folgt $\
       T = 2 pi Wurzel(m/D)
 ```
 
-Klausur-Satz: `Minuszeichen bedeutet Rueckstellung, Kosinus loest die Bewegungsgleichung.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+$$T = 2\pi\sqrt{m/D}$$
+`Klausur-Satz: Minuszeichen bedeutet Rueckstellung, Kosinus loest die Bewegungsgleichung.`
 
 ## Schritt 4 — ausprobieren: Sandbox-Auftrag Formel-Notfallkarte
-Kontinuitaet: Vorher Physik-Federpendel-Harmonische-Schwingung-DE-L1.md | Nachher Physik-Formeln-DE-L1.md. Krise dieser Episode: Sol-074 Solararray-Staub 63 Prozent Leistungsabfall. Target: v0 = 317 m/s, a = 3.4 m/s2, Ziel s = 1207 m.
+Kontinuitaet: Vorher Physik-Federpendel-Harmonische-Schwingung-DE-L1.md | Nachher Physik-Formeln-DE-L1.md. Krise dieser Episode: Sol-074 Solararray-Staub 63 Prozent Leistungsabfall. Zielgroessen: m = 0,50 kg, D = 20 N/m, Ziel T etwa 0,99 s
 
 BEISPIEL (Musteraufgabe mit Werkzeug):
 
-[Werkzeug: schiefe-ebene]
+[Werkzeug: formula]
 
 AUFGABE (erklaeren, AFB II): Eine Masse $m = 0{,}25\,\mathrm{kg}$ haengt an einer Feder mit $D = 25\,\frac{\mathrm{N}}{\mathrm{m}}$. Berechnen Sie $T$ und $f$ und erklaeren Sie, wie sich $T$ bei doppelter Masse aendert.
+
+$$T=2\pi\sqrt{m/D}$$
 
 HILFE:
 1. Schritt 1: Schreibe $T = 2\pi\sqrt{\frac{m}{D}}$ hin.
@@ -82,14 +81,12 @@ HILFE:
 
 MUSTERLOESUNG: Es gilt $T = 2\pi\sqrt{\frac{0{,}25}{25}} = 2\pi \cdot 0{,}1 \approx 0{,}628\,\mathrm{s}$ und $f \approx 1{,}59\,\mathrm{Hz}$. Bei doppelter Masse waechst $T$ um $\sqrt{2} \approx 1{,}41$ auf etwa $0{,}89\,\mathrm{s}$, weil nur die Wurzel der Masse eingeht.
 
-Klausur-Satz: `Wurzelgesetz schlaegt lineare Intuition: doppelte Masse heisst nicht doppelte Zeit.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Wurzelgesetz schlaegt lineare Intuition: doppelte Masse heisst nicht doppelte Zeit.`
 
 ## Schritt 5 — ausprobieren: Duell der Verfahren Formel-Notfallkarte
 VERGLEICH (Verfahren A gegen Verfahren B):
 
-VERGLEICH: Waehle zuerst das Verfahren — (i) Zeitverfahren (mit $T = 2\pi\sqrt{m/D}$ rechnen) oder (ii) Energieverfahren (mit $E = \frac{1}{2}DA^2$ argumentieren) — dann loesen.
+VERGLEICH: (Weg A quantitativ-rechnerisch gegen Weg B qualitativ-strukturell): Waehle zuerst das Verfahren — (i) Zeitverfahren (mit $T = 2\pi\sqrt{m/D}$ rechnen) oder (ii) Energieverfahren (mit $E = \frac{1}{2}DA^2$ argumentieren) — dann loesen.
 
 Weg A: Erst Verfahren waehlen, dann rechnen.
 
@@ -102,20 +99,16 @@ HILFE: A nennt Federhaerte und Zeit, also Verfahren (i). B nennt Amplitude und G
 
 ANTWORT: A erfordert Verfahren (i): $T \sim \frac{1}{\sqrt{D}}$, also halbiert sich $T$. B erfordert Verfahren (ii): Aus $\frac{1}{2}mv_{max}^2 = \frac{1}{2}DA^2$ folgt $v_{max} = A\sqrt{D/m}$, also verdoppelt sich $v_{max}$.
 
-Klausur-Satz: `Zeitfragen brauchen die Wurzelformel, Tempofragen brauchen die Energiebilanz.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Zeitfragen brauchen die Wurzelformel, Tempofragen brauchen die Energiebilanz.`
 
 ## Schritt 6 — check: Selbsttest zu Federpendel und harmonische Schwingung: Formel-Notfallkarte
 CHECK (Selbsttest, 3 Fragen):
 
-FRAGE: Wie lautet die Periodendauer des Federpendels? | ANTWORT: $T = 2\pi\sqrt{\frac{m}{D}}$.
-FRAGE: Wie lautet die Bewegungsgleichung? | ANTWORT: $\ddot{x} + \frac{D}{m}x = 0$ aus $F = -Dx$ und $F = m\ddot{x}$.
-FRAGE: Wo ist die Geschwindigkeit maximal? | ANTWORT: In der Ruhelage $x = 0$, dort gilt $E = \frac{1}{2}mv_{max}^2$.
+- FRAGE: Wie lautet die Periodendauer des Federpendels? | ANTWORT: $T = 2\pi\sqrt{\frac{m}{D}}$.
+- FRAGE: Wie lautet die Bewegungsgleichung? | ANTWORT: $\ddot{x} + \frac{D}{m}x = 0$ aus $F = -Dx$ und $F = m\ddot{x}$.
+- FRAGE: Wo ist die Geschwindigkeit maximal? | ANTWORT: In der Ruhelage $x = 0$, dort gilt $E = \frac{1}{2}mv_{max}^2$.
 
-Klausur-Satz: `Ruhelage heisst schnell, Umkehrpunkt heisst Stillstand.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Ruhelage heisst schnell, Umkehrpunkt heisst Stillstand.`
 
 ## Fehlvorstellung
 
@@ -134,7 +127,7 @@ SITUATION: Eine Gruppe meldet $T = 1{,}2\,\mathrm{s}$ fuer $m = 0{,}4\,\mathrm{k
 AUFGABE (begruenden, AFB III): Pruefen Sie die Angabe in einer zusammenhaengenden Darstellung (ca. 150 Woerter), berechnen Sie $D$ aus $T$ und beurteilen Sie Messfehlerquellen.
 RUBRIC (30 XP): Umstellung $D = \frac{4\pi^2m}{T^2}$ korrekt (10 XP) | Zahlwert $D \approx 11\,\frac{\mathrm{N}}{\mathrm{m}}$ (10 XP) | Fehlerdiskussion Reibung und Zeitmessung (5 XP) | Geschlossene Darstellung (5 XP).
 
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Wer Wurzelgesetz anwendet, Isochronie begruendet und Messfehler mit Reibung diskutiert, erhaelt die volle Punktzahl.`
 
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Formel-Notfallkarte
 TAKEAWAY: Merke Rueckstellung, Wurzel, Energie: $F = -Dx$ erzeugt $T = 2\pi\sqrt{m/D}$ und $E = \frac{1}{2}DA^2$. Zeit haengt an $m$ und $D$, Tempo an der Lage im Zyklus.
@@ -147,4 +140,4 @@ Anekdote (DE): Der Uhrmacher Christiaan Huygens baute 1656 die erste Pendeluhr u
 
 Bezug: `Huygens Uhr zeigt: Harmonische Schwingung macht Zeit messbar.`
 
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Schwingen heisst pendeln zwischen zwei Konten: Kraft bestimmt die Zeit, Energie das Tempo.`

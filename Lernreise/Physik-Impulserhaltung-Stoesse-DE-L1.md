@@ -13,7 +13,7 @@ version: Lesson-v3
 
 # Lernreise: Impulserhaltung und Stoesse (L1, Ziel Klausur)
 
-<!-- Campaign: Mars-Mission | Episode 23/28 | Krise: Sol-121 Habitat-Druckschleuse klemmt bei Zyklus 77 | Target: v0 = 401 m/s, a = 5.0 m/s2, Ziel s = 1651 m | Tool: formula -->
+<!-- Campaign: Mars-Mission | Episode 23/28 | Krise: Sol-121 Habitat-Druckschleuse klemmt bei Zyklus 77 | Zielgroessen: Wagen 2,0 kg mit 3,0 m/s trifft stehend, Ziel u nach Stoss | Tool: formula -->
 
 ## Schritt 1 — entdecken: Landekurve im Sand
 ZIELE (drei messbare Ziele dieser Lektion):
@@ -26,9 +26,9 @@ ZIELE (drei messbare Ziele dieser Lektion):
 
 ### Hook / Phaenomen
 
-Hook / Phaenomen (Sol-Logbuch, Episode 23 von 28): Mars-Anflug, Sol-121 Habitat-Druckschleuse klemmt bei Zyklus 77. Navigatorin Lena meldet: v0 = 401 m/s, a = 5.0 m/s2, Ziel s = 1651 m, Mechaniker Tom ruft: Halte die Kurve! Der Bordcomputer geht auf Rot, das Funkgeraet rauscht, die Crew haelt den Atem an. Genau hier entscheidet Impulserhaltung und Stoesse ueber Landung oder Absturz, ueber Festfahren oder Weiterfahrt, ueber Andocken oder Abprall. Das Logbuch des vorherigen Sols (Physik-Impulserhaltung-Stoesse-CN-L1.md) warnte bereits vor diesem Moment, und das naechste Fenster (Physik-Impulserhaltung-Stoesse-L1.md) oeffnet sich nur, wenn diese Aufgabe geloest wird. Die Sensoren streuen, die Diagramme zittern, doch die Physik bleibt unbestechlich: Wer Steigung und Flaeche, Kraft und Gegenkraft, Schwung und Stoss richtig liest, rettet die Mission. In dieser Episode stellst du im Sandbox-Labor die Brems- und Gleitzahlen so ein, dass die Kapsel sicher durchkommt. Beobachte zuerst das Phaenomen in Ruhe, benenne dann die Groessen mit exakten Einheiten, pruefe schliesslich die Bilanz mit einer Gegenrechnung. Der folgende Weg fuehrt vom Alarmton zur sauberen Klausurloesung: erst das Phaenomen beobachten, dann die Begriffe sichern, dann das Modell rechnen und im Labor bestaetigen.
+Hook / Phaenomen: Billardkugeln klicken, Autos knirschen: Der **Impuls** wandert von Masse zu Masse, die Summe bleibt. **Elastisch** federt mit Form, **unelastisch** klebt mit Waerme. Der **Rueckstoss** treibt Raketen nach exakt demselben Gesetz.
 
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Impuls bleibt erhalten: Masse mal Geschwindigkeit summiert sich vor und nach dem Stoss zur gleichen Summe.`
 
 ## Schritt 2 — entdecken: Ausruestungskiste der Mars-Crew
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
@@ -39,19 +39,17 @@ Fuenf Begriffe trennen in dieser Lektion Alltagssprache von Klausursprache. Wer 
 
 ### Fachbegriffe & Definitionen
 
-- **Impuls:** Die Groesse $p=mv$ verbindet Masse mit Tempo als Vektor samt Richtung. Mechanismus: Masse mal Geschwindigkeit mit Vorzeichen bilden. Klausur-Punkt: Positive Richtung festlegen und Vorzeichen konsequent führen.
-- **Impulserhaltung:** Im abgeschlossenen System bleibt die Vektorsumme aller Impulse konstant. Mechanismus: Summe vor gleich Summe nach setzen. Klausur-Punkt: Abgeschlossenheit begruenden und Bilanz aufstellen.
-- **Elastischer Stoss:** Impuls und kinetische Energie bleiben gemeinsam erhalten ohne Verformung. Mechanismus: Beide Bilanzen kombinieren und loesen. Klausur-Punkt: Zusatzbedingung Energie nennen und Uebernahme deuten.
-- **Unelastischer Stoss:** Nur der Impuls bleibt erhalten, ein Teil der Energie wird zu innerer Energie. Mechanismus: Impulsbilanz loesen und Energiedifferenz bestimmen. Klausur-Punkt: Fehlende Energie als Verformung und Waerme deuten.
-- **Rueckstoss:** Gleiche Impulse in Gegenrichtungen erklaeren Raketen und Kanonen ohne aeussere Kraft. Mechanismus: Nullsummens vor gegen Nachher aufspalten. Klausur-Punkt: Gegenrichtungen mit Vorzeichen zeigen.
+- **Impuls:** Die Groesse $p=mv$ verbindet Masse mit Tempo als Vektor samt Richtung. Er verbindet Masse und Geschwindigkeit zu einer Erhaltungsgroesse. Mechanismus: Masse mal Geschwindigkeit mit Vorzeichen bilden. Klausur-Tipp: Positive Richtung festlegen und Vorzeichen konsequent führen.
+- **Impulserhaltung:** Im abgeschlossenen System bleibt die Vektorsumme aller Impulse konstant. Im abgeschlossenen System bleibt die Vektorsumme aller Impulse konstant. Mechanismus: Summe vor gleich Summe nach setzen. Klausur-Tipp: Abgeschlossenheit begruenden und Bilanz aufstellen.
+- **Elastischer Stoss:** Impuls und kinetische Energie bleiben gemeinsam erhalten ohne Verformung. Form bleibt, zusaetzlich gilt Energieerhaltung der Bewegung. Mechanismus: Beide Bilanzen kombinieren und loesen. Klausur-Tipp: Zusatzbedingung Energie nennen und Uebernahme deuten.
+- **Unelastischer Stoss:** Nur der Impuls bleibt erhalten, ein Teil der Energie wird zu innerer Energie. Form geht verloren, nur der Impuls bleibt als Bilanz erhalten. Mechanismus: Impulsbilanz loesen und Energiedifferenz bestimmen. Klausur-Tipp: Fehlende Energie als Verformung und Waerme deuten.
+- **Rueckstoss:** Gleiche Impulse in Gegenrichtungen erklaeren Raketen und Kanonen ohne aeussere Kraft. Ausgestossene Masse treibt die Restmasse in Gegenrichtung. Mechanismus: Nullsummens vor gegen Nachher aufspalten. Klausur-Tipp: Gegenrichtungen mit Vorzeichen zeigen.
 
 ### Wirkungsgefuege / Modell
 
 Die Kette verbindet alle fuenf Begriffe zu einem Verfahren: Erkennen, Einordnen, Aufstellen, Loesen und Deuten. Jeder Begriff traegt genau einen Schritt, gemeinsam sichern sie die volle Punktzahl.
 
-Klausur-Satz: `Der Impuls ist eine Vektorgroesse; sein Vorzeichen haengt von der gewaehlten positiven Richtung ab.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Der Impuls ist eine Vektorgroesse; sein Vorzeichen haengt von der gewaehlten positiven Richtung ab.`
 
 ## Schritt 3 — entdecken: Wirkungskette hinter Impulserhaltung und Stoesse
 EXPERIMENTELLE ERKUNDUNG (Sandbox, erst spielen, dann deuten):
@@ -79,9 +77,8 @@ Die Kausalkette laeuft von der Bilanz ueber die Stossart zur Tempoantwort: Zuers
 ```
 Formelkern: $m_1v_1+m_2v_2=m_1u_1+m_2u_2$
 
-Klausur-Satz: `Die Impulsbilanz gilt bei jedem Stoss, die Energiebilanz nur beim elastischen Stoss zusaetzlich.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+$$m_1v_1+m_2v_2 = (m_1+m_2)u$$
+`Klausur-Satz: Die Impulsbilanz gilt bei jedem Stoss, die Energiebilanz nur beim elastischen Stoss zusaetzlich.`
 
 ## Anekdote & Fun-Fact
 **Anekdote / Fun-Fact (DE)**: Beim Kugelstoss-Pendel (Newton's Cradle) hebt sich aussen eine Kugel, waehrend innen scheinbar nichts geschieht. Der Impuls wandert durch die ruhende Kette, beim ideal elastischen Stoss fast ohne Verlust.
@@ -89,7 +86,7 @@ Klausur-Satz: `Die Impulsbilanz gilt bei jedem Stoss, die Energiebilanz nur beim
 **Bezug zum Konzept**: `Das Pendel zeigt Impulserhaltung plus naeherungsweise Energieerhaltung in Reinform.`
 
 ## Schritt 4 — ausprobieren: Sandbox-Auftrag Landekurve im Sand
-Kontinuitaet: Vorher Physik-Impulserhaltung-Stoesse-CN-L1.md | Nachher Physik-Impulserhaltung-Stoesse-L1.md. Krise dieser Episode: Sol-121 Habitat-Druckschleuse klemmt bei Zyklus 77. Target: v0 = 401 m/s, a = 5.0 m/s2, Ziel s = 1651 m.
+Kontinuitaet: Vorher Physik-Impulserhaltung-Stoesse-CN-L1.md | Nachher Physik-Impulserhaltung-Stoesse-L1.md. Krise dieser Episode: Sol-121 Habitat-Druckschleuse klemmt bei Zyklus 77. Zielgroessen: Wagen 2,0 kg mit 3,0 m/s trifft stehend, Ziel u nach Stoss
 
 BEISPIEL (Sandbox Level mit Werkzeug):
 
@@ -104,14 +101,12 @@ HILFE:
 
 MUSTERLOESUNG: Labor zeigt gleiche Impulssumme vor und nach in beiden Faellen, aber verschiedene Endtempi und Energien. Rechnung per Impulsbilanz bestaetigt die Labor-Endtempi, elastisch mit Energiezusatz, unelastisch mit $u_1=u_2$. Beim unelastischen Stoss bleibt der Impuls erhalten, waehrend ein Teil der kinetischen Energie in innere Energie umgewandelt wird.
 
-Klausur-Satz: `Beim unelastischen Stoss bleibt der Impuls erhalten, waehrend ein Teil der kinetischen Energie in innere Energie umgewandelt wird.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Beim unelastischen Stoss bleibt der Impuls erhalten, waehrend ein Teil der kinetischen Energie in innere Energie umgewandelt wird.`
 
 ## Schritt 5 — ausprobieren: Duell der Verfahren Landekurve im Sand
 VERGLEICH (zwei Verfahren unterscheiden):
 
-VERGLEICH: Waehle zuerst das Verfahren — (i) Impuls-Verfahren (Bilanz $p_{vor} = p_{nach}$, immer noetig) oder (ii) Energie-Verfahren als Zusatztest (Vergleich von $E_{kin}$ zur Stossart) — dann loesen.
+VERGLEICH: (Weg A quantitativ-rechnerisch gegen Weg B qualitativ-strukturell): Waehle zuerst das Verfahren — (i) Impuls-Verfahren (Bilanz $p_{vor} = p_{nach}$, immer noetig) oder (ii) Energie-Verfahren als Zusatztest (Vergleich von $E_{kin}$ zur Stossart) — dann loesen.
 
 Weg A: Erst Verfahren waehlen, dann rechnen.
 
@@ -125,20 +120,16 @@ HILFE: A verlangt beide Bilanzen, also Verfahren (i) plus (ii). B zeigt Kleben, 
 
 ANTWORT: A erfordert Verfahren (i) plus (ii): Impulsbilanz aufstellen und $E_{kin}$ pruefen; bei Gleichheit elastisch. B erfordert Verfahren (i): $u = (m_1 v_1 + m_2 v_2)/(m_1 + m_2)$; Energie geht teilweise verloren, Impuls bleibt erhalten.
 
-Klausur-Satz: `Kleben verrät den unelastischen Stoss, getrenntes Weiterrollen verlangt den Energietest.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Kleben verrät den unelastischen Stoss, getrenntes Weiterrollen verlangt den Energietest.`
 
 ## Schritt 6 — check: Selbsttest zu Impulserhaltung und Stoesse: Landekurve im Sand
 CHECK (Selbsttest, 3 Fragen mit Antworten):
 
-FRAGE: Wie lautet die Impulsbilanz beim geraden Stoss? | ANTWORT: $m_1 v_1 + m_2 v_2 = m_1 u_1 + m_2 u_2$ mit Vorzeichen je Richtung.
-FRAGE: Woran erkennt man vollstaendig unelastischen Stoss? | ANTWORT: An gemeinsamem $u$ und Verlust kinetischer Energie bei erhaltenem Impuls.
-FRAGE: Warum ist das Vorzeichen entscheidend? | ANTWORT: Weil $p = m \cdot v$ vektoriell ist und Gegenrichtungen subtrahiert werden.
+- FRAGE: Wie lautet die Impulsbilanz beim geraden Stoss? | ANTWORT: $m_1 v_1 + m_2 v_2 = m_1 u_1 + m_2 u_2$ mit Vorzeichen je Richtung.
+- FRAGE: Woran erkennt man vollstaendig unelastischen Stoss? | ANTWORT: An gemeinsamem $u$ und Verlust kinetischer Energie bei erhaltenem Impuls.
+- FRAGE: Warum ist das Vorzeichen entscheidend? | ANTWORT: Weil $p = m \cdot v$ vektoriell ist und Gegenrichtungen subtrahiert werden.
 
-Klausur-Satz: `Ohne Vorzeichenregel ist keine Impulsbilanz klausurtauglich.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Ohne Vorzeichenregel ist keine Impulsbilanz klausurtauglich.`
 
 ## Fehlvorstellung
 (kein Schritt; wird vom Parser automatisch erkannt und nicht mitgezaehlt)
@@ -155,7 +146,7 @@ ROLLE: Du bist Praktikantin im Verkehrslabor.
 SITUATION: Zwei Spielzeugwagen stossen auf der Luftkissenbahn zusammen; Wagen 2 stand vorher. Bestimmen Sie aus Messwerten Stossart und Energieverlust. Formulieren Sie in circa 150 Woertern die Auswertung mit Impulsbilanz und Energietest und beurteilen Sie, ob elastischer Stoss vorliegt.
 RUBRIC (30 XP): Korrekte Impulsbilanz mit Vorzeichen (10 XP) | Energietest mit Zahlen (10 XP) | Urteil zur Stossart mit Begruendung (6 XP) | Fachsprachliche Darstellung (4 XP).
 
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Wer Impulsbilanz aufstellt, Stossart unterscheidet und Endgeschwindigkeiten berechnet, erhaelt die volle Punktzahl.`
 
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Landekurve im Sand
 TAKEAWAY (Kernzusammenfassung):
@@ -167,4 +158,4 @@ REFLEXION (2 Fragen):
 1. Selbstbeobachtung: Welcher Schritt fiel schwerer — die Verlustrechnung (Schritt 4) oder die Verfahrenswahl (Schritt 5)?
 2. Planung: Beim naechsten Mal lege ich zuerst die positive Richtung fest, weil jedes Vorzeichen davon abhaengt.
 
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Erhaltung schlaegt Einzelkraft: Was innen geschieht, aendert die Summe nie.`

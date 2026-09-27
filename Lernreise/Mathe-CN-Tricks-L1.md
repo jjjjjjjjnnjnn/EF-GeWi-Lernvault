@@ -13,7 +13,7 @@ version: Lesson-v3
 
 # Lernreise: CN-Tricks — sechs Schnellverfahren (L1, Ziel Klausur)
 
-<!-- Campaign: Optimierung | Episode 8/33 | Krise: Lieferketten-Engpass: 640 Boxen pro Stunde | Target: x0 = 5, h = 0.1, Target m = 5.96 | Tool: formula -->
+<!-- Campaign: Optimierung | Episode 8/33 | Krise: Lieferketten-Engpass: 640 Boxen pro Stunde | Zielgroessen: f(x) = x^3-3x, Skizze mit Schnittpunkten, Vieta-Probe 2 und 3 | Tool: formula -->
 
 ## Schritt 1 — entdecken: Kiste fuer den Mars
 ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
@@ -24,26 +24,24 @@ ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
 ### Hook / Phaenomen
 
-【首席算法官·第8集/共33集】警报：Lieferketten-Engpass: 640 Boxen pro Stunde。首席算法官下令：“x0 = 5, h = 0.1, Target m = 5.96！”全场红灯闪烁。上一集（Mathe-CN-Tricks-DE-L1.md）的伏笔在此引爆，下一集（Mathe-Extremwertprobleme-Optimierung-DE-L1.md）只给交出最优解的人放行。本集你要在沙盘里亲手把工程从亏损/相撞边缘拉回来：先看现象、再点装备、最后算出让审计点头的 Bilanz。记住：先看区间还是时刻、再选割线还是切线/极值还是向量，做完必做 Gegenprobe——这就是工程帝国法则，也是 Klausur 拿分法则。
+代入0或1有时一击即中，有时全盘皆错：运气和方法的差别就叫“条件”，任何速解都有适用边界。
 
-Hook / Phaenomen (CAO-Log, Episode 8 von 33): Super-Engineering-Zentrale, Lieferketten-Engpass: 640 Boxen pro Stunde. Der Chief Algorithm Officer ruft: x0 = 5, h = 0.1, Target m = 5.96, die Assistentin meldet Rot-Alarm auf allen Screens. Genau hier entscheidet CN-Tricks: sechs Schnellverfahren ueber Freigabe oder Sperrung, ueber Kostenexplosion oder Rekordgewinn, ueber Kollision oder gruene Welle. Das Protokoll der Vorwoche (Mathe-CN-Tricks-DE-L1.md) legte die Spur, das naechste Audit (Mathe-Extremwertprobleme-Optimierung-DE-L1.md) laesst keine Ausrede mehr zu. Die Messwerte streuen, die Kurven zittern, doch die Mathematik bleibt unbestechlich: Wer Sekante und Tangente, Maximum und Wendepunkt, Vektor und Ebene richtig liest, rettet das Projekt. In dieser Episode stellst du im Sandbox-Optimierer die Parameter so ein, dass alle Kennzahlen im gruenen Bereich landen. Beobachte zuerst das Phaenomen in Ruhe, benenne dann die Objekte mit exakter Notation, pruefe schliesslich das Ergebnis mit einer Gegenrechnung. Der folgende Weg fuehrt vom Alarmton zur sauberen Klausurloesung: erst das Phaenomen beobachten, dann die Begriffe sichern, dann das Modell rechnen und im Labor bestaetigen.
+Hook / Phaenomen: Wer null oder eins einsetzt, trifft manchmal ins Schwarze und manchmal daneben. Der Unterschied zwischen Glueck und Methode heisst **Bedingung**. **Spezialwert**, **Ausschluss** und **Skizze** sind nur Abkuerzungen mit Gueltigkeitsbereich.
 
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Jeder Trick braucht seine Bedingung: Ohne Gueltigkeitspruefung bleibt Heuristik Gluecksspiel.`
 
 ## Schritt 2 — entdecken: Ausruestungskiste der Algorithmus-Unit
 PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
 
 中文在上，德语在下：
 
-- 特殊值法 — Spezialwert-Methode：代入 0、1、-1 等好算的值先猜结果，再回头证明。
-- 排除法 — Ausschlussverfahren：用定义域、符号、无穷趋势先砍掉不可能的情形。
-- 数形结合 — Skizze / Veranschaulichung：画草图把代数问题变成图像上的交点与单调问题。
-- 分离参数 — Parametertrennung：把参数单独放到不等式一边，另一边求最值。
-- 检验句 — Pruefsatz：把速解结果写成一句德语结论，明确它的适用范围。
+- 特殊值法 — Spezialwert-Methode：代入 0、1、-1 等好算的值先猜结果，再回头证明。 Der Wert liefert nur eine Vermutung, niemals einen Beweis. Mechanismus: Null, eins oder minus eins einsetzen und Muster ablesen. Klausur-Tipp: Vermutung danach stets klassisch sichern.
+- 排除法 — Ausschlussverfahren：用定义域、符号、无穷趋势先砍掉不可能的情形。 Jeder gestrichene Fall braucht ein hartes Kriterium wie Definitionsbereich oder Vorzeichen. Mechanismus: Faelle ueber Definitionsbereich, Vorzeichen und Grenzverhalten streichen. Klausur-Tipp: Streichgrund pro Fall in einem Halbsatz nennen.
+- 数形结合 — Skizze / Veranschaulichung：画草图把代数问题变成图像上的交点与单调问题。 Sie uebersetzt das Problem in Schnittpunkte plus Monotonie. Mechanismus: Graph zeichnen und Problem in Schnittpunkte plus Monotonie uebersetzen. Klausur-Tipp: Achsen beschriften, sonst zaehlt die Skizze nicht.
+- 分离参数 — Parametertrennung：把参数单独放到不等式一边，另一边求最值。 Der Parameter steht danach allein auf einer Seite der Gleichung. Mechanismus: Parameter isolieren und Extremwert der Gegenseite bestimmen. Klausur-Tipp: Isolierungsschritt ausfuehrlich zeigen.
+- 检验句 — Pruefsatz：把速解结果写成一句德语结论，明确它的适用范围。 Er nennt Ergebnis plus Gueltigkeitsbereich in einem deutschen Satz. Mechanismus: Deutschen Schlusssatz mit Ergebnis plus Gueltigkeitsbereich formulieren. Klausur-Tipp: Gueltigkeitsbereich nie unterschlagen.
 
-Klausur-Satz: `Jedes Schnellverfahren ist nur eine Abkuerzung; ohne Bedingungspruefung gibt es in der Klausur keine Punkte.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Jedes Schnellverfahren ist nur eine Abkuerzung; ohne Bedingungspruefung gibt es in der Klausur keine Punkte.`
 
 ## Schritt 3 — entdecken: Wirkungskette hinter CN-Tricks: sechs Schnellverfahren
 ENTDECKEN（1概念 + 1文字图解）：
@@ -74,9 +72,8 @@ ENTDECKEN（1概念 + 1文字图解）：
 - 均值不等式（AM-GM）：正数和定积最大。自编题：`x > 0` 时求 `x + 9/x` 的最小值。由 AM-GM 得 `>= 2 * Wurzel(9) = 6`，等号在 `x = 3` 处成立。德语检验句：`Da x > 0 gilt, folgt mit AM-GM die Abschaetzung mit Gleichheit fuer x = 3.`
 - 分离参数（Parametertrennung）：`k >= h(x)` 恒成立等价于 `k >= max h(x)`。自编题：`k >= 4x - x^2` 对 `x` 在 `[0; 4]` 恒成立，求最小 k。`h(x) = -x^2 + 4x` 顶点 `x = 2`，`h(2) = 4`，故 `k_min = 4`。德语检验句：`Ich trenne den Parameter ab und bestimme das Maximum von h auf dem Intervall.`
 
-Klausur-Satz: `Ich wende ein Schnellverfahren zur Orientierung an und belege das Ergebnis anschliessend mit dem Standardweg.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+$$(a^m)^n = a^{mn},\quad \frac{a+b}{2}\ge\sqrt{ab}\ (a,b>0)$$
+`Klausur-Satz: Ich wende ein Schnellverfahren zur Orientierung an und belege das Ergebnis anschliessend mit dem Standardweg.`
 
 ## Anekdote & Fun-Fact
 
@@ -87,7 +84,7 @@ Klausur-Satz: `Ich wende ein Schnellverfahren zur Orientierung an und belege das
 **Bezug zum Konzept**: `Schnellverfahren sind Heuristiken: Sie finden eine Vermutung, den Beweis liefert der Standardweg.`
 
 ## Schritt 4 — ausprobieren: Sandbox-Auftrag Kiste fuer den Mars
-Kontinuitaet: Vorher Mathe-CN-Tricks-DE-L1.md | Nachher Mathe-Extremwertprobleme-Optimierung-DE-L1.md. Krise dieser Episode: Lieferketten-Engpass: 640 Boxen pro Stunde. Target: x0 = 5, h = 0.1, Target m = 5.96.
+Kontinuitaet: Vorher Mathe-CN-Tricks-DE-L1.md | Nachher Mathe-Extremwertprobleme-Optimierung-DE-L1.md. Krise dieser Episode: Lieferketten-Engpass: 640 Boxen pro Stunde. Zielgroessen: f(x) = x^3-3x, Skizze mit Schnittpunkten, Vieta-Probe 2 und 3
 
 BEISPIEL（正确例题示范，含教具操作与解答）：
 
@@ -102,14 +99,12 @@ HILFE:
 
 MUSTERLÖSUNG: Es gilt a = 2^30 = (2^3)^10 = 8^10 und b = 3^20 = (3^2)^10 = 9^10. Da die Funktion `x^10` fuer `x > 0` monoton waechst und `8 < 9` gilt, folgt `8^10 < 9^10`, also `a < b`. Das Schnellverfahren liefert hier direkt das Ergebnis, weil beide Zahlen auf denselben Exponenten 10 gebracht werden koennen; die Monotonie der Potenzfunktion begruendet den Schluss sauber.
 
-Klausur-Satz: `Da 2^30 = 8^10 und 3^20 = 9^10 gilt und 8 < 9 ist, folgt a < b.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Da 2^30 = 8^10 und 3^20 = 9^10 gilt und 8 < 9 ist, folgt a < b.`
 
 ## Schritt 5 — ausprobieren: Duell der Verfahren Kiste fuer den Mars
 VERGLEICH辨别实验（双向辨析：猜值眼 vs. 证明眼）：
 
-VERGLEICH: Waehle erst das Verfahren — 【选程序】先判断题目要的是 (i) Schnellverfahren（草稿纸上猜值、缩小范围、验算）还是 (ii) Standardweg（Reinschrift 上必须写完整证明，如 begruenden/nachweisen）—— dann loesen.
+VERGLEICH: (Weg A quantitativ-rechnerisch gegen Weg B qualitativ-strukturell): Waehle erst das Verfahren — 【选程序】先判断题目要的是 (i) Schnellverfahren（草稿纸上猜值、缩小范围、验算）还是 (ii) Standardweg（Reinschrift 上必须写完整证明，如 begruenden/nachweisen）—— dann loesen.
 
 Weg A: Erst Verfahren waehlen, dann rechnen.
 
@@ -122,20 +117,16 @@ HILFE: A verlangt nur eine Vermutung -> Verfahren (i), Spezialwert x = 3 einsetz
 
 ANTWORT: A erfordert Verfahren (i): Setzt man x = 3 ein, ergibt sich 3 + 9/3 = 6; dies legt 6 als Minimum nahe, beweist es aber nicht. B erfordert Verfahren (ii): Da x > 0 und 9/x > 0, folgt mit AM-GM x + 9/x >= 2 * Wurzel(x * 9/x) = 2 * 3 = 6; Gleichheit gilt fuer x = 9/x, also x = 3. Damit ist 6 nachweislich das Minimum.
 
-Klausur-Satz: `Ein Spezialwert liefert nur eine Vermutung; erst die AM-GM-Abschaetzung mit Gleichheitsbedingung beweist das Minimum.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Ein Spezialwert liefert nur eine Vermutung; erst die AM-GM-Abschaetzung mit Gleichheitsbedingung beweist das Minimum.`
 
 ## Schritt 6 — check: Selbsttest zu CN-Tricks: sechs Schnellverfahren: Kiste fuer den Mars
 CHECK检索默写（自测 3 题，与答案配对）：
 
-FRAGE: Warum beweist das Einsetzen eines Spezialwertes keine allgemeine Aussage? | ANTWORT: Weil eine Aussage, die fuer einen einzelnen Wert gilt, nicht fuer alle Werte gelten muss.
-FRAGE: Wann darf man den Satz von Vieta in der Form x1 + x2 = -b/a verwenden? | ANTWORT: Nur bei einer quadratischen Gleichung ax^2 + bx + c = 0 mit a ungleich 0.
-FRAGE: Was liefert die Parametertrennung bei einer Ungleichung der Form k >= h(x)? | ANTWORT: Die Bedingung wird zu k >= max h(x); der Parameter steht allein auf einer Seite.
+- FRAGE: Warum beweist das Einsetzen eines Spezialwertes keine allgemeine Aussage? | ANTWORT: Weil eine Aussage, die fuer einen einzelnen Wert gilt, nicht fuer alle Werte gelten muss.
+- FRAGE: Wann darf man den Satz von Vieta in der Form x1 + x2 = -b/a verwenden? | ANTWORT: Nur bei einer quadratischen Gleichung ax^2 + bx + c = 0 mit a ungleich 0.
+- FRAGE: Was liefert die Parametertrennung bei einer Ungleichung der Form k >= h(x)? | ANTWORT: Die Bedingung wird zu k >= max h(x); der Parameter steht allein auf einer Seite.
 
-Klausur-Satz: `Schnellverfahren liefern Vermutungen und Kontrollen, den Beweis uebernimmt der Standardweg.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Schnellverfahren liefern Vermutungen und Kontrollen, den Beweis uebernimmt der Standardweg.`
 
 ## Fehlvorstellung
 
@@ -154,7 +145,7 @@ ROLLE: Du bist Tutor in einem bilingualen Mathe-Kurs und sollst eine Strategieka
 SITUATION: Ein Mitschueler will in der Klausur nur mit chinesischen Schnellverfahren arbeiten und keine Standardwege schreiben. Beurteile seine Strategie in einer zusammenhaengenden Darstellung (ca. 150 Woerter) und erlaeutere an zwei Beispielen (Spezialwert und AM-GM), wann ein Schnellverfahren erlaubt ist und wann der Standardweg zwingend ist.
 RUBRIC (30 XP): Benennung des Grundproblems — Heuristik ersetzt keinen Beweis (5 XP) | Beispiel Spezialwert: Vermutung versus Beweis (10 XP) | Beispiel AM-GM: Positivitaet plus Gleichheitsbedingung (10 XP) | Kriteriengeleitetes Fazit zur Arbeitsteilung von Schmierpapier und Reinschrift (5 XP).
 
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Wer Trick, Bedingung und klassische Sicherung in einer Darstellung verbindet, erhaelt die volle Punktzahl.`
 
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Kiste fuer den Mars
 TAKEAWAY 1盒（核心总结）：
@@ -166,4 +157,4 @@ REFLEXION 2问：
 1. 过程自省：Welcher Schritt fiel schwerer — die Anwendung der sechs Verfahren (Schritt 3) oder die Entscheidung zwischen Schnellverfahren und Standardweg (Schritt 5)?
 2. 元认知计划：Beim naechsten Mal lese ich zuerst den Operator; bei begruenden oder beweisen schreibe ich sofort den Standardweg und nutze die Tricks nur zur Kontrolle.
 
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Schnellverfahren sind Abkuerzungen, keine Beweise: Die Bedingung entscheidet, ob sie tragen.`

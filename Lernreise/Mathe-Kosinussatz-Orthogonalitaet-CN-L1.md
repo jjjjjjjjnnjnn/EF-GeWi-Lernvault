@@ -13,7 +13,7 @@ version: Lesson-v3
 
 # Lernreise: Kosinussatz und Orthogonalitaet (L1, Ziel Klausur)
 
-<!-- Campaign: Optimierung | Episode 16/33 | Krise: Autobahn-Rampe Stau 1,9 km Rueckstau | Target: x0 = 3, h = 0.1, Target m = 8.92 | Tool: formula -->
+<!-- Campaign: Optimierung | Episode 16/33 | Krise: Autobahn-Rampe Stau 1,9 km Rueckstau | Zielgroessen: Dreieck mit a, b und Winkel gamma, Ziel Seite c | Tool: formula -->
 
 ## Schritt 1 — entdecken: Orthogonaler Kurs
 ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
@@ -24,26 +24,24 @@ ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
 ### Hook / Phaenomen
 
-【首席算法官·第16集/共33集】警报：Autobahn-Rampe Stau 1,9 km Rueckstau。首席算法官下令：“x0 = 3, h = 0.1, Target m = 8.92！”全场红灯闪烁。上一集（Mathe-Grenzwert-h-Methode-Ableitung-Stelle-L1.md）的伏笔在此引爆，下一集（Mathe-Kosinussatz-Orthogonalitaet-DE-L1.md）只给交出最优解的人放行。本集你要在沙盘里亲手把工程从亏损/相撞边缘拉回来：先看现象、再点装备、最后算出让审计点头的 Bilanz。记住：先看区间还是时刻、再选割线还是切线/极值还是向量，做完必做 Gegenprobe——这就是工程帝国法则，也是 Klausur 拿分法则。
+没有直角也要算出第三边：余弦定理就是带修正项的勾股定理，夹角越小对边越短，反过来还能检验垂直。
 
-Hook / Phaenomen (CAO-Log, Episode 16 von 33): Super-Engineering-Zentrale, Autobahn-Rampe Stau 1,9 km Rueckstau. Der Chief Algorithm Officer ruft: x0 = 3, h = 0.1, Target m = 8.92, die Assistentin meldet Rot-Alarm auf allen Screens. Genau hier entscheidet Kosinussatz und Orthogonalitaet ueber Freigabe oder Sperrung, ueber Kostenexplosion oder Rekordgewinn, ueber Kollision oder gruene Welle. Das Protokoll der Vorwoche (Mathe-Grenzwert-h-Methode-Ableitung-Stelle-L1.md) legte die Spur, das naechste Audit (Mathe-Kosinussatz-Orthogonalitaet-DE-L1.md) laesst keine Ausrede mehr zu. Die Messwerte streuen, die Kurven zittern, doch die Mathematik bleibt unbestechlich: Wer Sekante und Tangente, Maximum und Wendepunkt, Vektor und Ebene richtig liest, rettet das Projekt. In dieser Episode stellst du im Sandbox-Optimierer die Parameter so ein, dass alle Kennzahlen im gruenen Bereich landen. Beobachte zuerst das Phaenomen in Ruhe, benenne dann die Objekte mit exakter Notation, pruefe schliesslich das Ergebnis mit einer Gegenrechnung. Der folgende Weg fuehrt vom Alarmton zur sauberen Klausurloesung: erst das Phaenomen beobachten, dann die Begriffe sichern, dann das Modell rechnen und im Labor bestaetigen.
+Hook / Phaenomen: Kein rechter Winkel weit und breit, trotzdem soll die dritte Seite exakt bestimmbar sein. Der **Kosinussatz** repariert Pythagoras mit einem **Korrekturterm**: Je spitzer der **eingeschlossene Winkel**, desto kuerzer die Gegenseite. Umgekehrt verraet die Seitenprobe, ob **Orthogonalitaet** vorliegt.
 
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Ohne rechten Winkel tritt der Korrekturterm hinzu: c Quadrat folgt aus a, b und eingeschlossenem Winkel.`
 
 ## Schritt 2 — entdecken: Ausruestungskiste der Algorithmus-Unit
 PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
 
 中文在上，德语在下：
 
-- 余弦定理 — Kosinussatz：$a^2 = b^2 + c^2 - 2bc\cos\alpha$，知三求一。【陷阱：Kosinussatz（处理任意三角形）不是 Sinussatz（正弦定理，处理对边对角比例）。】
-- 对边对角 — Gegenueberliegende Seite：边 $a$ 恒在角 $\alpha$ 对面，公式中成对出现。【陷阱：Seite（边）与 Winkel（角）必须配对，错位代入全题报废。】
-- 夹角 — Eingeschlossener Winkel：两已知边夹住的角，求边时必须用它。【陷阱：eingeschlossen（被夹住）不是 anliegend（邻接，泛指相邻）。】
-- 垂直 — Orthogonalitaet / Rechtwinkligkeit：余弦为零的特例，对应勾股定理。【陷阱：rechtwinklig（恰为 $90^\circ$）不是 stumpf（钝角，大于 $90^\circ$）。】
-- 反余弦 — Arkuskosinus：由 $\cos\alpha$ 反求角度，记作 $\arccos$。【陷阱：Arkuskosinus（求角度）不是 Kosinus（求比值），计算器模式 Degree/Radian 要先检查。】
+- 余弦定理 — Kosinussatz：$a^2 = b^2 + c^2 - 2bc\cos\alpha$，知三求一。【陷阱：Kosinussatz（处理任意三角形）不是 Sinussatz（正弦定理，处理对边对角比例）。】 Er gilt in jedem ebenen Dreieck und verbindet drei Seiten mit einem Winkel. Er gilt in jedem ebenen Dreieck und verbindet drei Seiten mit einem Winkel. Mechanismus: Gegebene Seiten und Winkel dem Schema a, b, gamma zuordnen. Klausur-Tipp: Skizze mit Beschriftung vor jede Rechnung setzen.
+- 对边对角 — Gegenueberliegende Seite：边 $a$ 恒在角 $\alpha$ 对面，公式中成对出现。【陷阱：Seite（边）与 Winkel（角）必须配对，错位代入全题报废。】 Seiten und Winkel muessen paarweise stimmen; Pythagoras ist der Sonderfall mit gamma gleich 90 Grad ohne Korrekturterm. Seiten und Winkel muessen paarweise stimmen; Pythagoras ist der Sonderfall mit gamma gleich 90 Grad ohne Korrekturterm. Mechanismus: Korrekturterm minus 2ab Kosinus gamma anhaengen oder streichen. Klausur-Tipp: Bei 90 Grad Pythagoras nennen statt Kosinussatz.
+- 夹角 — Eingeschlossener Winkel：两已知边夹住的角，求边时必须用它。【陷阱：eingeschlossen（被夹住）不是 anliegend（邻接，泛指相邻）。】 Nur der Winkel zwischen den beiden gegebenen Seiten darf in die Formel. Nur der Winkel zwischen den beiden gegebenen Seiten darf in die Formel. Mechanismus: Winkel zwischen den Seiten a und b identifizieren. Klausur-Tipp: Winkellage in der Skizze markieren.
+- 垂直 — Orthogonalitaet / Rechtwinkligkeit：余弦为零的特例，对应勾股定理。【陷阱：rechtwinklig（恰为 $90^\circ$）不是 stumpf（钝角，大于 $90^\circ$）。】 Rechter Winkel gilt genau dann, wenn a Quadrat plus b Quadrat gleich c Quadrat ist. Rechter Winkel gilt genau dann, wenn a Quadrat plus b Quadrat gleich c Quadrat ist. Mechanismus: Seitenquadrate vergleichen und auf Gleichheit pruefen. Klausur-Tipp: Gegenprobe als eigenen Satz formulieren.
+- 反余弦 — Arkuskosinus：由 $\cos\alpha$ 反求角度，记作 $\arccos$。【陷阱：Arkuskosinus（求角度）不是 Kosinus（求比值），计算器模式 Degree/Radian 要先检查。】 SWS legt das Dreieck eindeutig fest; der Arkuskosinus berechnet daraus den Winkel. SWS legt das Dreieck eindeutig fest; der Arkuskosinus berechnet daraus den Winkel. Mechanismus: Gegebene Stuecke dem Kongruenzsatz zuordnen. Klausur-Tipp: Eindeutigkeit als Voraussetzung der Berechnung nennen.
 
-Klausur-Satz: `Mit dem Kosinussatz laesst sich aus drei Seiten jeder Winkel ueber den Arkuskosinus bestimmen.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Mit dem Kosinussatz laesst sich aus drei Seiten jeder Winkel ueber den Arkuskosinus bestimmen.`
 
 ## Schritt 3 — entdecken: Wirkungskette hinter Kosinussatz und Orthogonalitaet
 ENTDECKEN（1概念 + 1文字图解，中文在上、德语在下）：
@@ -78,9 +76,9 @@ alpha<90: a^2 < b^2+c^2 (spitz)
 alpha=90: a^2 = b^2+c^2 (recht)
 alpha>90: a^2 > b^2+c^2 (stumpf)
 ```
-Klausur-Satz: `Der Vergleich von $a^2$ mit $b^2 + c^2$ entscheidet, ob das Dreieck spitz-, recht- oder stumpfwinklig ist.`
 
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+$$c^2 = a^2+b^2-2ab\cos(\gamma)$$
+`Klausur-Satz: Der Vergleich von $a^2$ mit $b^2 + c^2$ entscheidet, ob das Dreieck spitz-, recht- oder stumpfwinklig ist.`
 
 ## Anekdote & Fun-Fact
 
@@ -91,7 +89,7 @@ Klausur-Satz: `Der Vergleich von $a^2$ mit $b^2 + c^2$ entscheidet, ob das Dreie
 **Bezug zum Konzept**: `Ohne Kosinussatz koennte kein Navigationssystem aus zwei Messungen eine Position bestimmen.`
 
 ## Schritt 4 — ausprobieren: Sandbox-Auftrag Orthogonaler Kurs
-Kontinuitaet: Vorher Mathe-Grenzwert-h-Methode-Ableitung-Stelle-L1.md | Nachher Mathe-Kosinussatz-Orthogonalitaet-DE-L1.md. Krise dieser Episode: Autobahn-Rampe Stau 1,9 km Rueckstau. Target: x0 = 3, h = 0.1, Target m = 8.92.
+Kontinuitaet: Vorher Mathe-Grenzwert-h-Methode-Ableitung-Stelle-L1.md | Nachher Mathe-Kosinussatz-Orthogonalitaet-DE-L1.md. Krise dieser Episode: Autobahn-Rampe Stau 1,9 km Rueckstau. Zielgroessen: Dreieck mit a, b und Winkel gamma, Ziel Seite c
 
 [Werkzeug: formula]
 
@@ -113,14 +111,12 @@ HILFE（中德双语步骤）：
 MUSTERLOESUNG：中文：两边夹角代入公式直接得第三边；三边情形对最大边用反余弦求角，平方比较一眼定性，锐直钝一次分清。
 
 MUSTERLOESUNG (DE): Aus zwei Seiten und Winkel folgt $a$ eindeutig per Kosinussatz. Aus drei Seiten folgt jeder Winkel per $\arccos$; der Vergleich von $a^2$ mit $b^2 + c^2$ trennt spitz, recht und stumpf.
-Klausur-Satz: `Aus zwei Seiten und dem eingeschlossenen Winkel folgt die dritte Seite eindeutig ueber den Kosinussatz.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Aus zwei Seiten und dem eingeschlossenen Winkel folgt die dritte Seite eindeutig ueber den Kosinussatz.`
 
 ## Schritt 5 — ausprobieren: Duell der Verfahren Orthogonaler Kurs
 VERGLEICH辨别实验（双向辨析：正弦眼 vs. 余弦眼）：
 
-VERGLEICH: Waehle erst das Verfahren — 【选程序】先判断已知条件是 (i) Kosinus-Verfahren（两边夹角 SSS 或 SAS，涉及平方和修正）还是 (ii) Sinus-Verfahren（对边对角成对出现 SSA 或 ASA）—— dann rechnen.
+VERGLEICH: (Weg A quantitativ-rechnerisch gegen Weg B qualitativ-strukturell): Waehle erst das Verfahren — 【选程序】先判断已知条件是 (i) Kosinus-Verfahren（两边夹角 SSS 或 SAS，涉及平方和修正）还是 (ii) Sinus-Verfahren（对边对角成对出现 SSA 或 ASA）—— dann rechnen.
 
 Weg A: Erst Verfahren waehlen, dann rechnen.
 
@@ -133,20 +129,16 @@ HILFE: A nennt zwei Seiten plus eingeschlossenen Winkel -> Verfahren (i). B nenn
 
 ANTWORT: A erfordert Verfahren (i): $a^2 = b^2 + c^2 - 2bc\cos\alpha$. B erfordert Verfahren (ii): $b / \sin\beta = a / \sin\alpha$, also $b = a\sin\beta / \sin\alpha$.
 
-Klausur-Satz: `Der Kosinussatz nutzt Seitenquadrate, der Sinussatz nutzt Verhaeltnisse von Seite zu Gegenwinkel.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Der Kosinussatz nutzt Seitenquadrate, der Sinussatz nutzt Verhaeltnisse von Seite zu Gegenwinkel.`
 
 ## Schritt 6 — check: Selbsttest zu Kosinussatz und Orthogonalitaet: Orthogonaler Kurs
 CHECK检索默写（自测 3 题，与答案配对）：
 
-FRAGE: Wie lautet der Kosinussatz fuer die Seite $a$? | ANTWORT: $a^2 = b^2 + c^2 - 2bc\cos\alpha$.
-FRAGE: Wie erkennt man am Kosinussatz einen rechten Winkel? | ANTWORT: Bei $\alpha = 90^\circ$ ist $\cos\alpha = 0$, die Formel wird zu $a^2 = b^2 + c^2$.
-FRAGE: Wie entscheidet man nur mit Seitenlaengen ueber spitz oder stumpf? | ANTWORT: $a^2 < b^2 + c^2$ bedeutet spitz bei $\alpha$, $a^2 > b^2 + c^2$ bedeutet stumpf.
+- FRAGE: Wie lautet der Kosinussatz fuer die Seite $a$? | ANTWORT: $a^2 = b^2 + c^2 - 2bc\cos\alpha$.
+- FRAGE: Wie erkennt man am Kosinussatz einen rechten Winkel? | ANTWORT: Bei $\alpha = 90^\circ$ ist $\cos\alpha = 0$, die Formel wird zu $a^2 = b^2 + c^2$.
+- FRAGE: Wie entscheidet man nur mit Seitenlaengen ueber spitz oder stumpf? | ANTWORT: $a^2 < b^2 + c^2$ bedeutet spitz bei $\alpha$, $a^2 > b^2 + c^2$ bedeutet stumpf.
 
-Klausur-Satz: `Der Kosinussatz liefert Seiten und Winkel in beide Richtungen, vorwaerts und rueckwaerts aufgeloest.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Der Kosinussatz liefert Seiten und Winkel in beide Richtungen, vorwaerts und rueckwaerts aufgeloest.`
 
 ## Fehlvorstellung
 
@@ -166,7 +158,7 @@ SITUATION: Ein Dreieck hat die Seiten $3$, $4$, $6$. Die Gruppe streitet, ob es 
 AUFGABE: Entscheide in ca. 150 Woertern mit Kosinussatz-Rechnung, welcher Winkeltyp vorliegt, und benenne den groessten Winkel.
 RUBRIC (30 XP): Korrekter Seitenvergleich $36$ gegen $25$ (10 XP) | Winkeltyp stumpf begruendet (10 XP) | Groesster Winkel gegenueber laengster Seite plus Fachbegriffe (10 XP).
 
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Wer Kosinussatz ansetzt, Winkel zuordnet, Seite berechnet und Orthogonalitaet per Gegenprobe beurteilt, erhaelt die volle Punktzahl.`
 
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Orthogonaler Kurs
 TAKEAWAY 1盒（核心总结）：
@@ -178,4 +170,4 @@ REFLEXION 2问：
 1. 过程自省：Welcher Schritt fiel schwerer — das Umstellen nach dem Winkel (Schritt 4) oder die Verfahrenswahl Sinus gegen Kosinus (Schritt 5)?
 2. 元认知计划：Beim naechsten Mal markiere ich zuerst gegebene Seiten und Winkel im Dreieck und pruefe, ob ein Gegenpaar existiert.
 
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Pythagoras ist Spezialfall, nicht Normalfall: Der Kosinus entscheidet, wie stark korrigiert wird.`

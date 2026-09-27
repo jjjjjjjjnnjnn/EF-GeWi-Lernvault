@@ -13,7 +13,7 @@ version: Lesson-v3
 
 # Lernreise: CN-Training: vier Klausuraufgaben unter Zeitdruck (L1, Ziel Klausur)
 
-<!-- Campaign: Mars-Mission | Episode 2/28 | Krise: Sol-043 Fallschirm-Riss: Sinkrate 62 m/s statt 38 m/s | Target: v0 = 254 m/s, a = 2.3 m/s2, Ziel s = 874 m | Tool: formula -->
+<!-- Campaign: Mars-Mission | Episode 2/28 | Krise: Sol-043 Fallschirm-Riss: Sinkrate 62 m/s statt 38 m/s | Zielgroessen: v-t-Diagramm mit drei Abschnitten, Ziel Wegsumme 336 m | Tool: formula -->
 
 ## Schritt 1 — entdecken: Der Fallschirm zögert
 ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
@@ -24,26 +24,24 @@ ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
 ### Hook / Phaenomen
 
-【火星拓荒者·第2集/共28集】警报：Sol-043 Fallschirm-Riss: Sinkrate 62 m/s statt 38 m/s。领航员 Lena 大喊：“v0 = 254 m/s, a = 2.3 m/s2, Ziel s = 874 m！”机械师 Tom 回应：“稳住曲线！”上一集（Physik-CN-Training-DE-L1.md）埋下的隐患在此爆发，下一集（Physik-CN-Tricks-DE-L1.md）的大门只为算对的人打开。本集你要在沙盘里亲手把飞船从超速边缘救回来：先看现象、再点装备、最后算出让考官点头的 Bilanz。记住：读图先看轴、计算必带单位、做完必用另一张图验算——这就是火星人生存法则，也是 Klausur 拿分法则。
+四道大题一张评分表：只写数字最多拿一半分，期望地平线只认过程，解题路径、迁移句、分面积一个都不能少。
 
-Hook / Phaenomen (Sol-Logbuch, Episode 2 von 28): Mars-Anflug, Sol-043 Fallschirm-Riss: Sinkrate 62 m/s statt 38 m/s. Navigatorin Lena meldet: v0 = 254 m/s, a = 2.3 m/s2, Ziel s = 874 m, Mechaniker Tom ruft: Halte die Kurve! Der Bordcomputer geht auf Rot, das Funkgeraet rauscht, die Crew haelt den Atem an. Genau hier entscheidet CN-Training: vier Klausuraufgaben unter Zeitdruck ueber Landung oder Absturz, ueber Festfahren oder Weiterfahrt, ueber Andocken oder Abprall. Das Logbuch des vorherigen Sols (Physik-CN-Training-DE-L1.md) warnte bereits vor diesem Moment, und das naechste Fenster (Physik-CN-Tricks-DE-L1.md) oeffnet sich nur, wenn diese Aufgabe geloest wird. Die Sensoren streuen, die Diagramme zittern, doch die Physik bleibt unbestechlich: Wer Steigung und Flaeche, Kraft und Gegenkraft, Schwung und Stoss richtig liest, rettet die Mission. In dieser Episode stellst du im Sandbox-Labor die Brems- und Gleitzahlen so ein, dass die Kapsel sicher durchkommt. Beobachte zuerst das Phaenomen in Ruhe, benenne dann die Groessen mit exakten Einheiten, pruefe schliesslich die Bilanz mit einer Gegenrechnung. Der folgende Weg fuehrt vom Alarmton zur sauberen Klausurloesung: erst das Phaenomen beobachten, dann die Begriffe sichern, dann das Modell rechnen und im Labor bestaetigen.
+Hook / Phaenomen: Vier Aufgaben, ein **Erwartungshorizont**: Diagramm, Kraft, Kreis, Messung. Wer nur Zahlen liefert, halbiert seine Punkte, denn der EHZ bepunktet Wege, nicht Ergebnisse. **Loesungsweg**, **Transfersatz** und **Teilflaeche** sichern jeden Teilpunkt vor der ersten Zahl.
 
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Der Erwartungshorizont verteilt Punkte auf Wege: Jeder Schritt braucht Gesetz, Formel und Einheit.`
 
 ## Schritt 2 — entdecken: Ausruestungskiste der Mars-Crew
 PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
 
 中文在上，德语在下：
 
-- 评分踩分点 — der Erwartungshorizont (EHZ)：阅卷按点给分，步骤分往往比答案分更多。
-- 解题路径 — der Loesungsweg：写清每一步用了哪条定律或哪个 Ansatz。
-- 迁移句 — der Transfersatz：把本题结论套用到新情境的一句话。
-- 分块面积 — die Teilflaeche：v-t 图分段后各块面积之和即总路程。
-- 多次测量 — die Mehrfachmessung：重复测量取平均，用来压住随机误差。
+- 评分踩分点 — der Erwartungshorizont (EHZ)：阅卷按点给分，步骤分往往比答案分更多。 Jede Teilleistung traegt feste Punkte, der Weg zaehlt oft mehr als die Zahl. Mechanismus: Jeden Schritt mit Ansatz, Formel und Einheit hinschreiben. Klausur-Tipp: Punkte pro Schritt aus dem EHZ abschaetzen.
+- 解题路径 — der Loesungsweg：写清每一步用了哪条定律或哪个 Ansatz。 Jeder Schritt nennt Gesetz oder Ansatz mit Formel. Mechanismus: Gesetz nennen, Formel aufstellen, dann erst einsetzen. Klausur-Tipp: Ohne Formel kein Punkt, selbst bei richtiger Zahl.
+- 迁移句 — der Transfersatz：把本题结论套用到新情境的一句话。 Er wendet das Ergebnis auf eine neue Lage in einem Satz an. Mechanismus: Anwendung auf neue Lage in einem Satz mit weil-Begruendung. Klausur-Tipp: Weil-Satz als eigenen Bewertungspunkt sichern.
+- 分块面积 — die Teilflaeche：v-t 图分段后各块面积之和即总路程。 Stuecke im v-t-Diagramm werden zu Dreiecken und Rechtecken. Mechanismus: Stuecke als A1 plus A2 plus A3 mit je eigener Formel. Klausur-Tipp: Jede Teilflaeche einzeln beschriften.
+- 多次测量 — die Mehrfachmessung：重复测量取平均，用来压住随机误差。 Wiederholung druerkt Zufallsfehler, Streuung misst die Guete. Mechanismus: Wiederholen, Mittel bilden und Streuung angeben. Klausur-Tipp: Mittel plus Unsicherheit als Paar angeben.
 
-Klausur-Satz: `Der Erwartungshorizont verteilt die Punkte auf die Teilschritte, daher wird jeder Schritt hingeschrieben.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Der Erwartungshorizont verteilt die Punkte auf die Teilschritte, daher wird jeder Schritt hingeschrieben.`
 
 ## Schritt 3 — entdecken: Wirkungskette hinter CN-Training: vier Klausuraufgaben unter Zeitdruck
 ENTDECKEN（1概念 + 1文字图解）：
@@ -88,9 +86,8 @@ EHZ: Mittelwert T_10 = 20,1 s und Periodendauer T ≈ 2,0 s (2 P) | Zufallsfehle
      4 Messung    -> Mittelwert, Zufall vs. System
 ```
 
-Klausur-Satz: `Die vier Aufgabentypen werden mit derselben Reihenfolge bearbeitet: Achsen und Bedingung pruefen, Ansatz aufschreiben, Ergebnis mit Einheit und Urteil notieren.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+$$s = A_1+A_2+A_3,\quad \bar{x} = \frac{1}{n}\sum x_i$$
+`Klausur-Satz: Die vier Aufgabentypen werden mit derselben Reihenfolge bearbeitet: Achsen und Bedingung pruefen, Ansatz aufschreiben, Ergebnis mit Einheit und Urteil notieren.`
 
 ## Anekdote & Fun-Fact
 
@@ -101,7 +98,7 @@ Klausur-Satz: `Die vier Aufgabentypen werden mit derselben Reihenfolge bearbeite
 **Bezug zum Konzept**: `Die Flaeche unter der v-t-Kurve liefert den Weg — dieselbe Idee nutzten schon antike Astronomen, und sie ist der Kern von Aufgabe 1.`
 
 ## Schritt 4 — ausprobieren: Sandbox-Auftrag Der Fallschirm zögert
-Kontinuitaet: Vorher Physik-CN-Training-DE-L1.md | Nachher Physik-CN-Tricks-DE-L1.md. Krise dieser Episode: Sol-043 Fallschirm-Riss: Sinkrate 62 m/s statt 38 m/s. Target: v0 = 254 m/s, a = 2.3 m/s2, Ziel s = 874 m.
+Kontinuitaet: Vorher Physik-CN-Training-DE-L1.md | Nachher Physik-CN-Tricks-DE-L1.md. Krise dieser Episode: Sol-043 Fallschirm-Riss: Sinkrate 62 m/s statt 38 m/s. Zielgroessen: v-t-Diagramm mit drei Abschnitten, Ziel Wegsumme 336 m
 
 BEISPIEL（正确例题示范，含教具操作与解答）：
 
@@ -116,14 +113,12 @@ HILFE:
 
 MUSTERLÖSUNG: Das v-t-Diagramm hat drei Abschnitte mit beschrifteten Achsen (v in m/s, t in s). Abschnitt 1 (0 s bis 8 s) ist ein Dreieck mit der Fläche 0,5 * 8 s * 12 m/s = 48 m. Abschnitt 2 (8 s bis 28 s) ist ein Rechteck mit der Fläche 20 s * 12 m/s = 240 m. Abschnitt 3 (28 s bis 36 s) ist wieder ein Dreieck mit 0,5 * 8 s * 12 m/s = 48 m. Der Gesamtweg ist die Summe der Teilflächen: s = 48 m + 240 m + 48 m = 336 m. Die Gesamtzeit beträgt 36 s, daher ist die Durchschnittsgeschwindigkeit v_mittel = s/t = 336 m / 36 s ≈ 9,3 m/s. Sie liegt erwartungsgemäß unter der Höchstgeschwindigkeit von 12 m/s, weil die Beschleunigungs- und Bremsphasen den Mittelwert senken.
 
-Klausur-Satz: `Die Flaeche unter der v-t-Linie ergibt einen Gesamtweg von 336 m, woraus eine Durchschnittsgeschwindigkeit von etwa 9,3 m/s folgt.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Die Flaeche unter der v-t-Linie ergibt einen Gesamtweg von 336 m, woraus eine Durchschnittsgeschwindigkeit von etwa 9,3 m/s folgt.`
 
 ## Schritt 5 — ausprobieren: Duell der Verfahren Der Fallschirm zögert
 VERGLEICH辨别实验（双向辨析：面积眼 vs. 斜率眼）：
 
-VERGLEICH: Wähle erst das Verfahren — 【选程序】先看纵轴是哪个量：(i) v-t-Verfahren（纵轴是速度 v，问路程 → 读线下面积 s = Flaeche）oder (ii) s-t-Verfahren（纵轴是路程 s，问速度 → 读切线斜率 v = Δs/Δt）—— dann lösen.
+VERGLEICH: (Weg A quantitativ-rechnerisch gegen Weg B qualitativ-strukturell): Wähle erst das Verfahren — 【选程序】先看纵轴是哪个量：(i) v-t-Verfahren（纵轴是速度 v，问路程 → 读线下面积 s = Flaeche）oder (ii) s-t-Verfahren（纵轴是路程 s，问速度 → 读切线斜率 v = Δs/Δt）—— dann lösen.
 
 Weg A: Erst Verfahren waehlen, dann rechnen.
 
@@ -137,20 +132,16 @@ HILFE: A: senkrechte Achse ist v, gefragt ist s → Verfahren (i), Fläche lesen
 
 ANTWORT: A erfordert Verfahren (i): Da die senkrechte Achse die Geschwindigkeit trägt, ergibt die Fläche unter der Linie den Weg; bei einem Trapez mit v = 12 m/s und den Grundseiten 8 s und 36 s wäre s = 0,5 * (8 s + 36 s) * 12 m/s = 264 m. B erfordert Verfahren (ii): Da die senkrechte Achse den Weg trägt, liefert die Steigung der Tangente an der Stelle t = 10 s die Momentangeschwindigkeit, also v = Δs/Δt mit zwei eng benachbarten Punkten.
 
-Klausur-Satz: `Traegt die senkrechte Achse v, wird der Weg als Flaeche gelesen; traegt sie s, wird die Geschwindigkeit als Steigung gelesen.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Traegt die senkrechte Achse v, wird der Weg als Flaeche gelesen; traegt sie s, wird die Geschwindigkeit als Steigung gelesen.`
 
 ## Schritt 6 — check: Selbsttest zu CN-Training: vier Klausuraufgaben unter Zeitdruck: Der Fallschirm zögert
 CHECK检索默写（自测 3 题，与答案配对）：
 
-FRAGE: Wie berechnet man den Weg aus einem v-t-Diagramm mit drei Abschnitten? | ANTWORT: Man addiert die Teilflaechen der Abschnitte, also Dreiecke und Rechtecke, zum Gesamtweg.
-FRAGE: Warum muss bei Aufgabe 2 zuerst die Reibung abgezogen werden? | ANTWORT: Weil nur die resultierende Kraft Arbeit verrichtet; die Reibung wirkt der Bewegung entgegen und verringert die zugefuehrte Energie.
-FRAGE: Wie beurteilt man eine Messreihe mit drei Zeitwerten korrekt? | ANTWORT: Man bildet den Mittelwert, schaetzt aus der Streuung den zufaelligen Fehler und benennt systematische Quellen, bevor man ein eingeschraenktes Urteil formuliert.
+- FRAGE: Wie berechnet man den Weg aus einem v-t-Diagramm mit drei Abschnitten? | ANTWORT: Man addiert die Teilflaechen der Abschnitte, also Dreiecke und Rechtecke, zum Gesamtweg.
+- FRAGE: Warum muss bei Aufgabe 2 zuerst die Reibung abgezogen werden? | ANTWORT: Weil nur die resultierende Kraft Arbeit verrichtet; die Reibung wirkt der Bewegung entgegen und verringert die zugefuehrte Energie.
+- FRAGE: Wie beurteilt man eine Messreihe mit drei Zeitwerten korrekt? | ANTWORT: Man bildet den Mittelwert, schaetzt aus der Streuung den zufaelligen Fehler und benennt systematische Quellen, bevor man ein eingeschraenktes Urteil formuliert.
 
-Klausur-Satz: `Erst Mittelwert, dann Zufallsfehler aus der Streuung, dann systematische Quellen — erst danach wird ein eingeschraenktes Urteil formuliert.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Erst Mittelwert, dann Zufallsfehler aus der Streuung, dann systematische Quellen — erst danach wird ein eingeschraenktes Urteil formuliert.`
 
 ## Fehlvorstellung
 
@@ -169,7 +160,7 @@ ROLLE: Du bist Tutor und leitest eine 45-minütige Klausursimulation für eine E
 SITUATION: Die Gruppe soll die vier Aufgaben aus Schritt 3 unter realen Bedingungen bearbeiten (insgesamt ca. 47 Minuten) und anschließend mit dem EHZ selbst korrigieren. Beurteile in einer zusammenhängenden Stellungnahme (ca. 150 Wörter), wie man die Bearbeitungszeit sinnvoll auf die vier Aufgabentypen verteilt und worauf man beim Selbstkorrigieren besonders achten sollte.
 RUBRIC (30 XP): Sinnvolle Zeitverteilung auf die vier Aufgabentypen mit Begruendung (10 XP) | Hinweis auf die typischen Punktverluste (fehlender Ansatz, fehlende Einheit, fehlende Bewertung) (10 XP) | Vorgehen beim Selbstkorrigieren mit dem EHZ (5 XP) | Fachsprachlich korrekte und nachvollziehbare Darstellung (5 XP).
 
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Wer Loesungsweg, Teilflaechen und Transfersatz mit Einheiten zeigt, erhaelt die volle Punktzahl.`
 
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Der Fallschirm zögert
 TAKEAWAY 1盒（核心总结）：
@@ -181,4 +172,4 @@ REFLEXION 2问：
 1. 过程自省：Welcher Schritt fiel schwerer — die Flaechenzerlegung im v-t-Diagramm (Schritt 4) oder die Wahl zwischen Flaechen- und Steigungsverfahren im Vergleich (Schritt 5)?
 2. 元认知计划：Beim nächsten Mal verteile ich zuerst die Zeit auf die vier Aufgabentypen und pruefe am Ende mit dem EHZ, ob Ansatz, Einheit und Urteil vollstaendig sind.
 
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Klausurphysik ist Handwerk mit Protokoll: Aufgeschriebener Weg schlaegt erratenes Ergebnis.`

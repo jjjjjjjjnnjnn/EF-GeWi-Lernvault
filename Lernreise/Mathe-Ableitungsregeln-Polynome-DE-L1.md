@@ -13,7 +13,7 @@ version: Lesson-v3
 
 # Lernreise: Ableitungsregeln fuer Polynome (L1, Ziel Klausur)
 
-<!-- Campaign: Optimierung | Episode 1/33 | Krise: Radar-Alarm A9: Blitzer meldet 97 km/h in 70er Zone | Target: x0 = 3, h = 0.2, Target m = 3.37 | Tool: tangent-slider -->
+<!-- Campaign: Optimierung | Episode 1/33 | Krise: Radar-Alarm A9: Blitzer meldet 97 km/h in 70er Zone | Zielgroessen: f(x) = 4x^3-5x^2+7x-2, Stelle x0 = 2, Ziel f'(2) = 35 | Tool: tangent-slider -->
 
 ## Schritt 1 — entdecken: Radar in der Nacht
 ZIELE (drei messbare Ziele dieser Lektion):
@@ -26,9 +26,9 @@ ZIELE (drei messbare Ziele dieser Lektion):
 
 ### Hook / Phaenomen
 
-Hook / Phaenomen (CAO-Log, Episode 1 von 33): Super-Engineering-Zentrale, Radar-Alarm A9: Blitzer meldet 97 km/h in 70er Zone. Der Chief Algorithm Officer ruft: x0 = 3, h = 0.2, Target m = 3.37, die Assistentin meldet Rot-Alarm auf allen Screens. Genau hier entscheidet Ableitungsregeln fuer Polynome ueber Freigabe oder Sperrung, ueber Kostenexplosion oder Rekordgewinn, ueber Kollision oder gruene Welle. Das Protokoll der Vorwoche (Mathe-ZKE-2027-L1.md) legte die Spur, das naechste Audit (Mathe-Ableitungsregeln-Polynome-L1.md) laesst keine Ausrede mehr zu. Die Messwerte streuen, die Kurven zittern, doch die Mathematik bleibt unbestechlich: Wer Sekante und Tangente, Maximum und Wendepunkt, Vektor und Ebene richtig liest, rettet das Projekt. In dieser Episode stellst du im Sandbox-Optimierer die Parameter so ein, dass alle Kennzahlen im gruenen Bereich landen. Beobachte zuerst das Phaenomen in Ruhe, benenne dann die Objekte mit exakter Notation, pruefe schliesslich das Ergebnis mit einer Gegenrechnung. Der folgende Weg fuehrt vom Alarmton zur sauberen Klausurloesung: erst das Phaenomen beobachten, dann die Begriffe sichern, dann das Modell rechnen und im Labor bestaetigen.
+Hook / Phaenomen: Ein Tacho springt, ein Blitzer rechnet: Ob zu schnell gefahren wurde, entscheidet die **Ableitung** als Momentangeschwindigkeit. Aus der **Sekantensteigung** ueber kurze Intervalle wird im Grenzfall die **Tangentensteigung**. Genau dieser Uebergang steckt in jeder **Polynomableitung** der Klausur.
 
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Die Ableitung misst die lokale Aenderungsrate: Sekantensteigung wird im Grenzfall zu Tangentensteigung.`
 
 ## Schritt 2 — entdecken: Ausruestungskiste der Algorithmus-Unit
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
@@ -39,19 +39,17 @@ Fuenf Begriffe trennen in dieser Lektion Alltagssprache von Klausursprache. Wer 
 
 ### Fachbegriffe & Definitionen
 
-- **Potenzregel:** Fuer $(x^n)$ gilt $(x^n)' = n \cdot x^{n-1}$ durch Absenken des Exponenten. Mechanismus: Exponent als Faktor nach vorn holen und Exponent um eins senken. Klausur-Punkt: Regel nennen und auf jeden Summanden einzeln anwenden.
-- **Faktorregel:** Ein konstanter Faktor bleibt beim Ableiten erhalten, also $(c \cdot g)' = c \cdot g'$. Mechanismus: Zahl vor dem x unangetastet lassen und nur den x-Teil ableiten. Klausur-Punkt: Faktor herausschreiben und erst danach ableiten.
-- **Summenregel:** Summen duerfen gliedweise differenziert werden, also $(u+v)' = u'+v'$. Mechanismus: Funktion in Summanden zerlegen und jeden Term einzeln ableiten. Klausur-Punkt: Zerlegung sichtbar machen und Term fuer Term vorgehen.
-- **Konstante faellt weg:** Die Ableitung einer reinen Zahl ist null, weil horizontale Graphen keine Steigung besitzen. Mechanismus: Alle Summanden ohne x ersatzlos streichen. Klausur-Punkt: Wegfall begruenden statt nur unterschlagen.
-- **Ableitungswert:** Der Wert $f'(x_0)$ misst die Tangentensteigung an einer konkreten Stelle. Mechanismus: Stelle in die abgeleitete Funktion einsetzen und ausrechnen. Klausur-Punkt: Ableitung und Einsetzen als zwei getrennte Schritte zeigen.
+- **Potenzregel:** Fuer $(x^n)$ gilt $(x^n)' = n \cdot x^{n-1}$ durch Absenken des Exponenten. Sie gilt nur fuer reine Potenzen x hoch n mit festem Exponenten. Mechanismus: Exponent als Faktor nach vorn holen und Exponent um eins senken. Klausur-Tipp: Regel nennen und auf jeden Summanden einzeln anwenden.
+- **Faktorregel:** Ein konstanter Faktor bleibt beim Ableiten erhalten, also $(c \cdot g)' = c \cdot g'$. Der Faktor muss konstant sein und darf kein x enthalten. Mechanismus: Zahl vor dem x unangetastet lassen und nur den x-Teil ableiten. Klausur-Tipp: Faktor herausschreiben und erst danach ableiten.
+- **Summenregel:** Summen duerfen gliedweise differenziert werden, also $(u+v)' = u'+v'$. Sie erlaubt das Zerlegen jeder ganzrationalen Funktion in Summanden. Mechanismus: Funktion in Summanden zerlegen und jeden Term einzeln ableiten. Klausur-Tipp: Zerlegung sichtbar machen und Term fuer Term vorgehen.
+- **Konstante faellt weg:** Die Ableitung einer reinen Zahl ist null, weil horizontale Graphen keine Steigung besitzen. Ihr Graph ist eine waagerechte Gerade mit Steigung null. Mechanismus: Alle Summanden ohne x ersatzlos streichen. Klausur-Tipp: Wegfall begruenden statt nur unterschlagen.
+- **Ableitungswert:** Der Wert $f'(x_0)$ misst die Tangentensteigung an einer konkreten Stelle. Erst wird die Ableitungsfunktion gebildet, dann erst wird eingesetzt. Mechanismus: Stelle in die abgeleitete Funktion einsetzen und ausrechnen. Klausur-Tipp: Ableitung und Einsetzen als zwei getrennte Schritte zeigen.
 
 ### Wirkungsgefuege / Modell
 
 Die Kette verbindet alle fuenf Begriffe zu einem Verfahren: Erkennen, Einordnen, Aufstellen, Loesen und Deuten. Jeder Begriff traegt genau einen Schritt, gemeinsam sichern sie die volle Punktzahl.
 
-Klausur-Satz: `Fuer eine Potenz gilt die Potenzregel (x^n)' = n \cdot x^{n-1}; Konstanten fallen beim Differenzieren weg.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Fuer eine Potenz gilt die Potenzregel (x^n)' = n \cdot x^{n-1}; Konstanten fallen beim Differenzieren weg.`
 
 ## Schritt 3 — entdecken: Wirkungskette hinter Ableitungsregeln fuer Polynome
 EXPERIMENTELLE ERKUNDUNG (Sandbox, erst spielen, dann deuten):
@@ -81,9 +79,8 @@ Die Kausalkette laeuft von der Zerlegung ueber die Regeln zum Wert: Zuerst zerle
 ```
 Formelkern: $f$
 
-Klausur-Satz: `Da die Summenregel das gliedweise Differenzieren erlaubt, wird jeder Summand einzeln mit der Potenzregel abgeleitet.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+$$f'(x) = 12x^2-10x+7,\quad f'(2) = 35$$
+`Klausur-Satz: Da die Summenregel das gliedweise Differenzieren erlaubt, wird jeder Summand einzeln mit der Potenzregel abgeleitet.`
 
 ## Anekdote & Fun-Fact
 Die Differentialrechnung wurde im 17. Jahrhundert zweimal unabhaengig erfunden: von Isaac Newton in England und von Gottfried Wilhelm Leibniz in Deutschland. Newton dachte dabei an Bewegung und Aenderungsraten, Leibniz an unendlich kleine Differenzen; seine Schreibweise $dy/dx$ benutzen wir noch heute. Erst mit diesen Ideen wurde es moeglich, Polynome gliedweise und nach festen Regeln abzuleiten.
@@ -91,7 +88,7 @@ Die Differentialrechnung wurde im 17. Jahrhundert zweimal unabhaengig erfunden: 
 Bezug zum Konzept: `Die Potenz-, Faktor- und Summenregel sind die systematische Form der fruehesten Ableitungsregeln.`
 
 ## Schritt 4 — ausprobieren: Sandbox-Auftrag Radar in der Nacht
-Kontinuitaet: Vorher Mathe-ZKE-2027-L1.md | Nachher Mathe-Ableitungsregeln-Polynome-L1.md. Krise dieser Episode: Radar-Alarm A9: Blitzer meldet 97 km/h in 70er Zone. Target: x0 = 3, h = 0.2, Target m = 3.37.
+Kontinuitaet: Vorher Mathe-ZKE-2027-L1.md | Nachher Mathe-Ableitungsregeln-Polynome-L1.md. Krise dieser Episode: Radar-Alarm A9: Blitzer meldet 97 km/h in 70er Zone. Zielgroessen: f(x) = 4x^3-5x^2+7x-2, Stelle x0 = 2, Ziel f'(2) = 35
 
 BEISPIEL (Sandbox Level mit Werkzeug):
 
@@ -106,14 +103,12 @@ HILFE:
 
 MUSTERLOESUNG: Sandbox bei $x_0 = 2$ zeigt Tangentensteigung $35$. Rechnung per Summenregel gliedweise: $(4x^3)' = 12x^2$ per Potenz- und Faktorregel, $(-5x^2)' = -10x$, $(7x)' = 7$, $(-2)' = 0$. Also $f'(x) = 12x^2-10x+7$ und $f'(2) = 48-20+7 = 35$. Sandbox und Rechnung stimmen ueberein, die drei Regeln sind Potenzregel, Faktorregel und Summenregel.
 
-Klausur-Satz: `Mit Potenz-, Faktor- und Summenregel ergibt sich f'(x) = 12x^2 - 10x + 7 und damit f'(2) = 35.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Mit Potenz-, Faktor- und Summenregel ergibt sich f'(x) = 12x^2 - 10x + 7 und damit f'(2) = 35.`
 
 ## Schritt 5 — ausprobieren: Duell der Verfahren Radar in der Nacht
 VERGLEICH (Wahl des Verfahrens, A gegen B):
 
-VERGLEICH: Triff zuerst die Wahl des Verfahrens: (i) $berechnen$ oder $bestimmen$ (Ableitungsfunktion direkt mit Potenz-, Faktor- und Summenregel bilden) oder (ii) $nachweisen$ oder $zeigen$ (Nachweis mit Differenzenquotient und Grenzuebergang) > dann loesen.
+VERGLEICH: (Weg A quantitativ-rechnerisch gegen Weg B qualitativ-strukturell): Triff zuerst die Wahl des Verfahrens: (i) $berechnen$ oder $bestimmen$ (Ableitungsfunktion direkt mit Potenz-, Faktor- und Summenregel bilden) oder (ii) $nachweisen$ oder $zeigen$ (Nachweis mit Differenzenquotient und Grenzuebergang) > dann loesen.
 
 Weg A: Erst Verfahren waehlen, dann rechnen.
 
@@ -126,20 +121,16 @@ HILFE: Aufgabe A verlangt nur das Ergebnis, daher Verfahren (i) mit gliedweiser 
 
 ANTWORT: A erfordert Verfahren (i): $f'(x) = 12x^3 - 4x$. B erfordert Verfahren (ii): Der Differenzenquotient lautet $\frac{(x_0 + h)^2 - x_0^2}{h} = \frac{2x_0 h + h^2}{h} = 2x_0 + h$; der Grenzuebergang $h \to 0$ liefert $g'(x_0) = 2x_0$.
 
-Klausur-Satz: `Bei berechnen genuegt das Ergebnis der Regelanwendung, bei nachweisen muss der Grenzprozess vollstaendig dargestellt werden.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Bei berechnen genuegt das Ergebnis der Regelanwendung, bei nachweisen muss der Grenzprozess vollstaendig dargestellt werden.`
 
 ## Schritt 6 — check: Selbsttest zu Ableitungsregeln fuer Polynome: Radar in der Nacht
 CHECK (drei Fragen mit Antworten):
 
-FRAGE: Wie lautet die Potenzregel fuer $f(x) = x^n$? | ANTWORT: $f'(x) = n \cdot x^{n-1}$; der Exponent wird zum Faktor und um eins verringert.
-FRAGE: Was ergibt die Ableitung eines konstanten Summanden wie $-2$? | ANTWORT: $0$, da der Graph einer konstanten Funktion eine waagerechte Gerade ist.
-FRAGE: Warum darf die Faktorregel nicht auf ein Produkt zweier Funktionen angewandt werden? | ANTWORT: Die Faktorregel gilt nur fuer einen konstanten Faktor; fuer Produkte zweier Funktionen braucht man die Produktregel.
+- FRAGE: Wie lautet die Potenzregel fuer $f(x) = x^n$? | ANTWORT: $f'(x) = n \cdot x^{n-1}$; der Exponent wird zum Faktor und um eins verringert.
+- FRAGE: Was ergibt die Ableitung eines konstanten Summanden wie $-2$? | ANTWORT: $0$, da der Graph einer konstanten Funktion eine waagerechte Gerade ist.
+- FRAGE: Warum darf die Faktorregel nicht auf ein Produkt zweier Funktionen angewandt werden? | ANTWORT: Die Faktorregel gilt nur fuer einen konstanten Faktor; fuer Produkte zweier Funktionen braucht man die Produktregel.
 
-Klausur-Satz: `Potenz-, Faktor- und Summenregel gelten fuer ganzrationale Funktionen und werden gliedweise angewandt.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Potenz-, Faktor- und Summenregel gelten fuer ganzrationale Funktionen und werden gliedweise angewandt.`
 
 ## Fehlvorstellung
 (Kein Schritt; wird vom Parser uebersprungen.)
@@ -155,7 +146,7 @@ SITUATION: Ein Mitschueler hat $f(x) = 4x^3 - 5x^2 + 7x - 2$ abgeleitet und als 
 AUFGABE (begruenden, AFB III): Verfasse eine zusammenhaengende Darstellung von etwa 150 Woertern mit Fehlerbenennung, korrekter Rechnung und Operatorabgrenzung.
 RUBRIC (30 XP): Benennung des Fehlers (Exponent nicht verringert, Konstante nicht beachtet) (5 XP) | Korrekte gliedweise Ableitung $f'(x) = 12x^2 - 10x + 7$ (10 XP) | Begruendung mit Potenz-, Faktor- und Summenregel (10 XP) | Abgrenzung $berechnen$ gegen $nachweisen$ (5 XP).
 
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Wer den Regelverstoss benennt, die gliedweise Rechnung mit Potenz-, Faktor- und Summenregel zeigt und berechnen von nachweisen trennt, erhaelt die volle Punktzahl.`
 
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Radar in der Nacht
 TAKEAWAY (Kernbotschaft in einem Kasten):
@@ -168,4 +159,4 @@ REFLEXION (zwei Fragen):
 1. Welcher Schritt fiel schwerer: das gliedweise Differenzieren (Schritt 4) oder die Unterscheidung von $berechnen$ und $nachweisen$ (Schritt 5)?
 2. Beim naechsten Mal lese ich zuerst das Verb der Aufgabe und entscheide dann, ob ich nur die Regel anwende oder den Grenzprozess aufschreiben muss.
 
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Ableiten heisst Struktur erkennen: Potenz, Faktor und Summe bestimmen den Weg, der Operator die Tiefe.`

@@ -13,7 +13,7 @@ version: Lesson-v3
 
 # Lernreise: Freier Fall mit Luftwiderstand (L1, Ziel Klausur)
 
-<!-- Campaign: Mars-Mission | Episode 15/28 | Krise: Sol-089 Andock-Radar meldet Relativtempo 3,8 m/s | Target: v0 = 345 m/s, a = 4.0 m/s2, Ziel s = 1355 m | Tool: kinematik-lab -->
+<!-- Campaign: Mars-Mission | Episode 15/28 | Krise: Sol-089 Andock-Radar meldet Relativtempo 3,8 m/s | Zielgroessen: Fall aus Hoehe h mit Luftwiderstand, Ziel Endgeschwindigkeit | Tool: kinematik-lab -->
 
 ## Schritt 1 — entdecken: Zentrifuge der Umlaufbahn
 ZIELE (drei messbare Ziele dieser Lektion):
@@ -26,9 +26,9 @@ ZIELE (drei messbare Ziele dieser Lektion):
 
 ### Hook / Phaenomen
 
-Hook / Phaenomen (Sol-Logbuch, Episode 15 von 28): Mars-Anflug, Sol-089 Andock-Radar meldet Relativtempo 3,8 m/s. Navigatorin Lena meldet: v0 = 345 m/s, a = 4.0 m/s2, Ziel s = 1355 m, Mechaniker Tom ruft: Halte die Kurve! Der Bordcomputer geht auf Rot, das Funkgeraet rauscht, die Crew haelt den Atem an. Genau hier entscheidet Freier Fall mit Luftwiderstand ueber Landung oder Absturz, ueber Festfahren oder Weiterfahrt, ueber Andocken oder Abprall. Das Logbuch des vorherigen Sols (Physik-Freier-Fall-Luftwiderstand-CN-L1.md) warnte bereits vor diesem Moment, und das naechste Fenster (Physik-Freier-Fall-Luftwiderstand-L1.md) oeffnet sich nur, wenn diese Aufgabe geloest wird. Die Sensoren streuen, die Diagramme zittern, doch die Physik bleibt unbestechlich: Wer Steigung und Flaeche, Kraft und Gegenkraft, Schwung und Stoss richtig liest, rettet die Mission. In dieser Episode stellst du im Sandbox-Labor die Brems- und Gleitzahlen so ein, dass die Kapsel sicher durchkommt. Beobachte zuerst das Phaenomen in Ruhe, benenne dann die Groessen mit exakten Einheiten, pruefe schliesslich die Bilanz mit einer Gegenrechnung. Der folgende Weg fuehrt vom Alarmton zur sauberen Klausurloesung: erst das Phaenomen beobachten, dann die Begriffe sichern, dann das Modell rechnen und im Labor bestaetigen.
+Hook / Phaenomen: Hammer und Feder fallen im Vakuum gleich schnell, in Luft nicht: Der **Luftwiderstand** waechst mit dem Tempo und frisst die Beschleunigung auf. Am Ende siegt das Kraeftegleichgewicht, die **Endgeschwindigkeit** bleibt konstant. Das **v-t-Diagramm** zeigt den Uebergang von Parabel zu Gerade.
 
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Freier Fall heisst konstante Beschleunigung g; Luftwiderstand bremst bis zum Kraeftegleichgewicht mit konstanter Endgeschwindigkeit.`
 
 ## Schritt 2 — entdecken: Ausruestungskiste der Mars-Crew
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
@@ -39,19 +39,17 @@ Fuenf Begriffe trennen in dieser Lektion Alltagssprache von Klausursprache. Wer 
 
 ### Fachbegriffe & Definitionen
 
-- **Freier Fall:** Das Ideal ohne Luft mit $a=g=9{,}81\,m/s^2$ laesst alle Koerper gleich fallen. Mechanismus: $v=gt$ und $s=\frac12gt^2$ anwenden. Klausur-Punkt: Vakuum nennen und Idealformeln ohne Korrektur nutzen.
-- **Luftwiderstand:** Die Kraft $F_W=kv$ oder $cv^2$ wirkt gegen die Bewegung und waechst mit $v$. Mechanismus: Widerstand in $ma=mg-F_W(v)$ einsetzen. Klausur-Punkt: Richtung gegen $v$ nennen und Wachstum mit Tempo begruenden.
-- **Bewegungsgleichung:** Die Bilanz $ma=mg-F_W(v)$ steuert die Beschleunigung aus Gewicht minus Widerstand. Mechanismus: Kraefte mit Richtungen ansetzen und $a$ ablesen. Klausur-Punkt: Gleichung aufstellen und Start mit $a=g$ deuten.
-- **Endgeschwindigkeit:** Bei $mg=F_W(v_E)$ gilt $a=0$ und der Fall wird konstant mit $v_E$. Mechanismus: Gleichgewicht ansetzen und nach $v_E$ aufloesen. Klausur-Punkt: $v_E$ berechnen und als Grenze jeder realen Kurve deuten.
-- **v-t-Diagramm:** Die reale Kurve flacht gegen $v_E$ ab statt als Gerade zu steigen. Mechanismus: Abflachung als Widerstandssignatur lesen. Klausur-Punkt: Gerade gegen Kurve zuordnen und $v_E$ aus der Horizontalen ablesen.
+- **Freier Fall:** Das Ideal ohne Luft mit $a=g=9{,}81\,m/s^2$ laesst alle Koerper gleich fallen. Ohne Luft gilt konstante Beschleunigung g und parabelfoermiger Weg. Mechanismus: $v=gt$ und $s=\frac12gt^2$ anwenden. Klausur-Tipp: Vakuum nennen und Idealformeln ohne Korrektur nutzen.
+- **Luftwiderstand:** Die Kraft $F_W=kv$ oder $cv^2$ wirkt gegen die Bewegung und waechst mit $v$. Er waechst mit dem Tempo und wirkt stets gegen die Bewegung. Mechanismus: Widerstand in $ma=mg-F_W(v)$ einsetzen. Klausur-Tipp: Richtung gegen $v$ nennen und Wachstum mit Tempo begruenden.
+- **Bewegungsgleichung:** Die Bilanz $ma=mg-F_W(v)$ steuert die Beschleunigung aus Gewicht minus Widerstand. Sie verknuepft Gewicht, Widerstand und Beschleunigung; im freien Fall bleibt nur m mal g uebrig. Mechanismus: Kraefte mit Richtungen ansetzen und $a$ ablesen. Klausur-Tipp: Gleichung aufstellen und Start mit $a=g$ deuten.
+- **Endgeschwindigkeit:** Bei $mg=F_W(v_E)$ gilt $a=0$ und der Fall wird konstant mit $v_E$. Dort heben sich Gewicht und Widerstand exakt auf. Mechanismus: Gleichgewicht ansetzen und nach $v_E$ aufloesen. Klausur-Tipp: $v_E$ berechnen und als Grenze jeder realen Kurve deuten.
+- **v-t-Diagramm:** Die reale Kurve flacht gegen $v_E$ ab statt als Gerade zu steigen. Die Steigung zeigt Beschleunigung, die Flaeche den Weg. Mechanismus: Abflachung als Widerstandssignatur lesen. Klausur-Tipp: Gerade gegen Kurve zuordnen und $v_E$ aus der Horizontalen ablesen.
 
 ### Wirkungsgefuege / Modell
 
 Die Kette verbindet alle fuenf Begriffe zu einem Verfahren: Erkennen, Einordnen, Aufstellen, Loesen und Deuten. Jeder Begriff traegt genau einen Schritt, gemeinsam sichern sie die volle Punktzahl.
 
-Klausur-Satz: `Bei Erreichen der Endgeschwindigkeit kompensiert der Luftwiderstand die Gewichtskraft, sodass die resultierende Kraft null ist.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Bei Erreichen der Endgeschwindigkeit kompensiert der Luftwiderstand die Gewichtskraft, sodass die resultierende Kraft null ist.`
 
 ## Schritt 3 — entdecken: Wirkungskette hinter Freier Fall mit Luftwiderstand
 EXPERIMENTELLE ERKUNDUNG (Sandbox, erst spielen, dann deuten):
@@ -78,9 +76,8 @@ Die Kausalkette laeuft vom Gewicht ueber den Widerstand zum Gleichgewicht: Zuers
 ```
 Formelkern: $v=0$
 
-Klausur-Satz: `Die Abflachung der v-t-Kurve zeigt das Anwachsen des Luftwiderstands bis zum Kraeftegleichgewicht.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+$$s = \frac{1}{2}gt^2,\quad v_E = \text{const im Kraeftegleichgewicht}$$
+`Klausur-Satz: Die Abflachung der v-t-Kurve zeigt das Anwachsen des Luftwiderstands bis zum Kraeftegleichgewicht.`
 
 ## Anekdote & Fun-Fact
 **Anekdote / Fun-Fact (DE)**: Fallschirmspringer erreichen in Bauchlage etwa $200\,\mathrm{km/h}$, im senkrechten Dive sogar ueber $400\,\mathrm{km/h}$. Der geoeffnete Schirm vergroessert die Angriffsflaeche so stark, dass die neue Endgeschwindigkeit nur noch etwa $20\,\mathrm{km/h}$ betraegt.
@@ -88,7 +85,7 @@ Klausur-Satz: `Die Abflachung der v-t-Kurve zeigt das Anwachsen des Luftwidersta
 **Bezug zum Konzept**: `Die Endgeschwindigkeit haengt von Masse und Widerstandsflaeche ab und ist daher steuerbar.`
 
 ## Schritt 4 — ausprobieren: Sandbox-Auftrag Zentrifuge der Umlaufbahn
-Kontinuitaet: Vorher Physik-Freier-Fall-Luftwiderstand-CN-L1.md | Nachher Physik-Freier-Fall-Luftwiderstand-L1.md. Krise dieser Episode: Sol-089 Andock-Radar meldet Relativtempo 3,8 m/s. Target: v0 = 345 m/s, a = 4.0 m/s2, Ziel s = 1355 m.
+Kontinuitaet: Vorher Physik-Freier-Fall-Luftwiderstand-CN-L1.md | Nachher Physik-Freier-Fall-Luftwiderstand-L1.md. Krise dieser Episode: Sol-089 Andock-Radar meldet Relativtempo 3,8 m/s. Zielgroessen: Fall aus Hoehe h mit Luftwiderstand, Ziel Endgeschwindigkeit
 
 BEISPIEL (Sandbox Level mit Werkzeug):
 
@@ -103,14 +100,12 @@ HILFE:
 
 MUSTERLOESUNG: Labor $v_E = 6{,}54\,m/s$ im Luft-Modus mit Abflachung gegen die Horizontale. Rechnung $mg-kv^2 = 0$ zu $v_E=\sqrt{mg/k}=6{,}54\,m/s$. Ideal $v=gt$ waechst linear, real flacht durch $kv^2$ ab bis $v_E$. Daher begrenzt $6{,}54$ jede reale Kurve, die Abflachung beweist den Widerstand bis zum Gleichgewicht.
 
-Klausur-Satz: `Die berechnete Endgeschwindigkeit von 6,54 m/s begrenzt jede reale Fallgeschwindigkeit nach unten wie nach oben im Vergleich zum Idealwert.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Die berechnete Endgeschwindigkeit von 6,54 m/s begrenzt jede reale Fallgeschwindigkeit nach unten wie nach oben im Vergleich zum Idealwert.`
 
 ## Schritt 5 — ausprobieren: Duell der Verfahren Zentrifuge der Umlaufbahn
 VERGLEICH (zwei Verfahren unterscheiden):
 
-VERGLEICH: Waehle zuerst das Verfahren — (i) Ideal-Verfahren (ohne Widerstand: $v = g \cdot t$, $s = g t^2 / 2$) oder (ii) Widerstands-Verfahren (mit $F_W$, Saettigung und $v_E$) — dann loesen.
+VERGLEICH: (Weg A quantitativ-rechnerisch gegen Weg B qualitativ-strukturell): Waehle zuerst das Verfahren — (i) Ideal-Verfahren (ohne Widerstand: $v = g \cdot t$, $s = g t^2 / 2$) oder (ii) Widerstands-Verfahren (mit $F_W$, Saettigung und $v_E$) — dann loesen.
 
 Weg A: Erst Verfahren waehlen, dann rechnen.
 
@@ -124,20 +119,16 @@ HILFE: A nennt Vakuum, also Verfahren (i). B nennt leichte Kugel plus grosse Hoe
 
 ANTWORT: A erfordert Verfahren (i): $v = g \cdot t$ und $s = g t^2/2$ ohne Korrektur. B erfordert Verfahren (ii): Die Kurve flacht ab, $v_E$ ist schnell erreicht, die Fallzeit ist deutlich laenger als $t = \sqrt{2s/g}$.
 
-Klausur-Satz: `Im Vakuum traegt das Idealmodell, in Luft bei grosser Flaeche und kleiner Masse nur das Widerstandsmodell.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Im Vakuum traegt das Idealmodell, in Luft bei grosser Flaeche und kleiner Masse nur das Widerstandsmodell.`
 
 ## Schritt 6 — check: Selbsttest zu Freier Fall mit Luftwiderstand: Zentrifuge der Umlaufbahn
 CHECK (Selbsttest, 3 Fragen mit Antworten):
 
-FRAGE: Wie lautet die Bewegungsgleichung mit Widerstand? | ANTWORT: $m \cdot a = m \cdot g - F_W(v)$ mit $F_W$ entgegen der Geschwindigkeit.
-FRAGE: Wie folgt $v_E$ aus dem Kraeftegleichgewicht? | ANTWORT: Aus $m \cdot g = F_W(v_E)$, linear $v_E = m \cdot g / k$.
-FRAGE: Woran erkennt man Widerstand im $v$-$t$-Diagramm? | ANTWORT: An der Abflachung bis zur Horizontalen $v = v_E$ statt Gerade mit Steigung $g$.
+- FRAGE: Wie lautet die Bewegungsgleichung mit Widerstand? | ANTWORT: $m \cdot a = m \cdot g - F_W(v)$ mit $F_W$ entgegen der Geschwindigkeit.
+- FRAGE: Wie folgt $v_E$ aus dem Kraeftegleichgewicht? | ANTWORT: Aus $m \cdot g = F_W(v_E)$, linear $v_E = m \cdot g / k$.
+- FRAGE: Woran erkennt man Widerstand im $v$-$t$-Diagramm? | ANTWORT: An der Abflachung bis zur Horizontalen $v = v_E$ statt Gerade mit Steigung $g$.
 
-Klausur-Satz: `Die Sattigung der v-t-Kurve ist der graphische Beleg fuer geschwindigkeitsabhaengigen Widerstand.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Die Sattigung der v-t-Kurve ist der graphische Beleg fuer geschwindigkeitsabhaengigen Widerstand.`
 
 ## Fehlvorstellung
 (kein Schritt; wird vom Parser automatisch erkannt und nicht mitgezaehlt)
@@ -154,7 +145,7 @@ ROLLE: Du bist Messassistentin im Physikkurs.
 SITUATION: Zwei $v$-$t$-Diagramme liegen vor: Kurve A ist eine Gerade mit Steigung $g$, Kurve B flacht nach $2\,\mathrm{s}$ deutlich ab. Entscheide in circa 150 Woertern, welche Kurve zu Vakuum und welche zu Luft gehoert, und bestimme graphisch $v_E$ von Kurve B.
 RUBRIC (30 XP): Richtige Zuordnung beider Kurven (8 XP) | Begruendung mit Kraeftegleichung (10 XP) | Ablesen von $v_E$ aus der Horizontalen (6 XP) | Fachsprachliche Darstellung (6 XP).
 
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Wer Bewegungsgleichung aufstellt, Endgeschwindigkeit aus dem Gleichgewicht bestimmt und Diagramm deutet, erhaelt die volle Punktzahl.`
 
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Zentrifuge der Umlaufbahn
 TAKEAWAY (Kernzusammenfassung):
@@ -166,4 +157,4 @@ REFLEXION (2 Fragen):
 1. Selbstbeobachtung: Welcher Schritt fiel schwerer — die Rechnung zu $v_E$ (Schritt 4) oder die Verfahrenswahl (Schritt 5)?
 2. Planung: Beim naechsten Mal pruefe ich zuerst Medium und Fallhoehe, weil sie ueber Ideal- oder Widerstandsmodell entscheiden.
 
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Gleichgewicht beendet jede Beschleunigung: Konstante Kraft gegen wachsenden Widerstand endet in konstanter Geschwindigkeit.`

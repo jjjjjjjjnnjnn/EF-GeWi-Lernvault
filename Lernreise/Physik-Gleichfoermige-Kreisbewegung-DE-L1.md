@@ -13,7 +13,7 @@ version: Lesson-v3
 
 # Lernreise: Gleichfoermige Kreisbewegung (L1, Ziel Klausur)
 
-<!-- Campaign: Mars-Mission | Episode 17/28 | Krise: Sol-097 Mikrometeoriteneinschlag Panel D-4 | Target: v0 = 359 m/s, a = 4.2 m/s2, Ziel s = 1429 m | Tool: schiefe-ebene -->
+<!-- Campaign: Mars-Mission | Episode 17/28 | Krise: Sol-097 Mikrometeoriteneinschlag Panel D-4 | Zielgroessen: Karussell mit Radius r und Umlaufzeit T, Ziel Zentripetalkraft | Tool: schiefe-ebene -->
 
 ## Schritt 1 — entdecken: Schwerkraft-Anker
 ZIELE (drei messbare Ziele dieser Lektion):
@@ -26,9 +26,9 @@ ZIELE (drei messbare Ziele dieser Lektion):
 
 ### Hook / Phaenomen
 
-Hook / Phaenomen (Sol-Logbuch, Episode 17 von 28): Mars-Anflug, Sol-097 Mikrometeoriteneinschlag Panel D-4. Navigatorin Lena meldet: v0 = 359 m/s, a = 4.2 m/s2, Ziel s = 1429 m, Mechaniker Tom ruft: Halte die Kurve! Der Bordcomputer geht auf Rot, das Funkgeraet rauscht, die Crew haelt den Atem an. Genau hier entscheidet Gleichfoermige Kreisbewegung ueber Landung oder Absturz, ueber Festfahren oder Weiterfahrt, ueber Andocken oder Abprall. Das Logbuch des vorherigen Sols (Physik-Freier-Fall-Luftwiderstand-L1.md) warnte bereits vor diesem Moment, und das naechste Fenster (Physik-Gleichfoermige-Kreisbewegung-L1.md) oeffnet sich nur, wenn diese Aufgabe geloest wird. Die Sensoren streuen, die Diagramme zittern, doch die Physik bleibt unbestechlich: Wer Steigung und Flaeche, Kraft und Gegenkraft, Schwung und Stoss richtig liest, rettet die Mission. In dieser Episode stellst du im Sandbox-Labor die Brems- und Gleitzahlen so ein, dass die Kapsel sicher durchkommt. Beobachte zuerst das Phaenomen in Ruhe, benenne dann die Groessen mit exakten Einheiten, pruefe schliesslich die Bilanz mit einer Gegenrechnung. Der folgende Weg fuehrt vom Alarmton zur sauberen Klausurloesung: erst das Phaenomen beobachten, dann die Begriffe sichern, dann das Modell rechnen und im Labor bestaetigen.
+Hook / Phaenomen: Kettenkarussell in Voithausen: Die Kette zeigt schraeg nach aussen, doch die Kraft zieht nach innen. Die **Zentripetalkraft** zwingt jede Masse auf die Kreisbahn, die **Bahngeschwindigkeit** bleibt dem Betrag nach konstant. Zwei Verfahren pruefen dasselbe: **Bahn** gegen **Kraft**.
 
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Kreisbewegung braucht Innenkraft: Zentripetalkraft m v Quadrat durch r haelt die Bahn, Richtung aendert sich staendig.`
 
 ## Schritt 2 — entdecken: Ausruestungskiste der Mars-Crew
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
@@ -39,19 +39,17 @@ Fuenf Begriffe trennen in dieser Lektion Alltagssprache von Klausursprache. Wer 
 
 ### Fachbegriffe & Definitionen
 
-- **Bahngeschwindigkeit:** Der Betrag $v=2\pi r/T$ bleibt konstant und zeigt tangential zur Bahn. Mechanismus: Umfang durch Umlaufzeit teilen. Klausur-Punkt: Tangentiale Richtung nennen und Einheit $m/s$ führen.
-- **Winkelgroessen:** Die Kreisfrequenz $\omega=2\pi f$ verbindet Drehzahl mit Bahngroessen per $v=\omega r$. Mechanismus: Frequenz in Kreisfrequenz umrechnen. Klausur-Punkt: $f$, $T$ und $\omega$ ineinander umrechnen.
-- **Zentripetalkraft:** Die Kraft $F_Z=mv^2/r$ wirkt radial nach innen und wird real aufgebracht. Mechanismus: Reale Radialkomponente identifizieren und gleichsetzen. Klausur-Punkt: Krafttraeger nennen statt mystischer Fliehkraft.
-- **Bahn-Verfahren:** Kinematische Fragen nach $v$ und $\omega$ brauchen nur Geometrie plus Zeit. Mechanismus: $v=2\pi r/T$ direkt anwenden. Klausur-Punkt: Verfahren nach Fragestellung waehlen.
-- **Kraft-Verfahren:** Fragen nach Halten oder Reissen brauchen die Bilanz mit $F_Z$. Mechanismus: $F_Z$ berechnen und mit Haftgrenze vergleichen. Klausur-Punkt: Vierfachregel bei doppeltem $v$ nennen.
+- **Bahngeschwindigkeit:** Der Betrag $v=2\pi r/T$ bleibt konstant und zeigt tangential zur Bahn. Ihr Betrag bleibt konstant, ihre Richtung dreht sich staendig. Mechanismus: Umfang durch Umlaufzeit teilen. Klausur-Tipp: Tangentiale Richtung nennen und Einheit $m/s$ führen.
+- **Winkelgroessen:** Die Kreisfrequenz $\omega=2\pi f$ verbindet Drehzahl mit Bahngroessen per $v=\omega r$. Winkelgeschwindigkeit mal Radius ergibt die Bahngeschwindigkeit. Mechanismus: Frequenz in Kreisfrequenz umrechnen. Klausur-Tipp: $f$, $T$ und $\omega$ ineinander umrechnen.
+- **Zentripetalkraft:** Die Kraft $F_Z=mv^2/r$ wirkt radial nach innen und wird real aufgebracht. Sie zeigt stets zum Kreismittelpunkt und aendert nur die Richtung. Mechanismus: Reale Radialkomponente identifizieren und gleichsetzen. Klausur-Tipp: Krafttraeger nennen statt mystischer Fliehkraft.
+- **Bahn-Verfahren:** Kinematische Fragen nach $v$ und $\omega$ brauchen nur Geometrie plus Zeit. Es misst die Bewegung ueber Umfang und Umlaufzeit. Mechanismus: $v=2\pi r/T$ direkt anwenden. Klausur-Tipp: Verfahren nach Fragestellung waehlen.
+- **Kraft-Verfahren:** Fragen nach Halten oder Reissen brauchen die Bilanz mit $F_Z$. Es erklaert die Bewegung ueber die wirkende Innenkraft. Mechanismus: $F_Z$ berechnen und mit Haftgrenze vergleichen. Klausur-Tipp: Vierfachregel bei doppeltem $v$ nennen.
 
 ### Wirkungsgefuege / Modell
 
 Die Kette verbindet alle fuenf Begriffe zu einem Verfahren: Erkennen, Einordnen, Aufstellen, Loesen und Deuten. Jeder Begriff traegt genau einen Schritt, gemeinsam sichern sie die volle Punktzahl.
 
-Klausur-Satz: `Die Bahngeschwindigkeit zeigt tangential zur Kreisbahn, die Zentripetalkraft zeigt radial zum Mittelpunkt.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Die Bahngeschwindigkeit zeigt tangential zur Kreisbahn, die Zentripetalkraft zeigt radial zum Mittelpunkt.`
 
 ## Schritt 3 — entdecken: Wirkungskette hinter Gleichfoermige Kreisbewegung
 EXPERIMENTELLE ERKUNDUNG (Sandbox, erst spielen, dann deuten):
@@ -79,9 +77,8 @@ Die Kausalkette laeuft vom Kreis ueber das Tempo zur Kraft: Zuerst bestimmt man 
 ```
 Formelkern: $v=2\pi r/T$
 
-Klausur-Satz: `Die Zentripetalkraft F_Z = m v^2/r wirkt radial zum Mittelpunkt und wird durch die reale Radialkomponente der Kraefte aufgebracht.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+$$v = \frac{2\pi r}{T},\quad F_z = m\frac{v^2}{r}$$
+`Klausur-Satz: Die Zentripetalkraft F_Z = m v^2/r wirkt radial zum Mittelpunkt und wird durch die reale Radialkomponente der Kraefte aufgebracht.`
 
 ## Anekdote & Fun-Fact
 **Anekdote / Fun-Fact (DE)**: Rennfahrer sprechen in Kurven vom Sehen des Scheitelpunkts und vom Kampf mit der Fliehkraft, doch in der Physik existiert diese Fliehkraft im Inertialsystem gar nicht. Was man im Auto nach aussen spuert, ist die eigene Traegheit: Der Koerper will geradeaus weiterfahren, waehrend das Auto durch Reibung nach innen gezwungen wird. Darum kippt ein zu schneller LKW in der Kurve nicht wegen einer geheimnisvollen Kraft nach aussen, sondern weil die noetige Zentripetalkraft fehlt.
@@ -89,7 +86,7 @@ Klausur-Satz: `Die Zentripetalkraft F_Z = m v^2/r wirkt radial zum Mittelpunkt u
 **Bezug zum Konzept**: `Was als Fliehkraft nach aussen gefuehlt wird, ist Traegheit; physikalisch real ist nur die Zentripetalkraft nach innen.`
 
 ## Schritt 4 — ausprobieren: Sandbox-Auftrag Schwerkraft-Anker
-Kontinuitaet: Vorher Physik-Freier-Fall-Luftwiderstand-L1.md | Nachher Physik-Gleichfoermige-Kreisbewegung-L1.md. Krise dieser Episode: Sol-097 Mikrometeoriteneinschlag Panel D-4. Target: v0 = 359 m/s, a = 4.2 m/s2, Ziel s = 1429 m.
+Kontinuitaet: Vorher Physik-Freier-Fall-Luftwiderstand-L1.md | Nachher Physik-Gleichfoermige-Kreisbewegung-L1.md. Krise dieser Episode: Sol-097 Mikrometeoriteneinschlag Panel D-4. Zielgroessen: Karussell mit Radius r und Umlaufzeit T, Ziel Zentripetalkraft
 
 BEISPIEL (Sandbox Level mit Werkzeug):
 
@@ -104,14 +101,12 @@ HILFE:
 
 MUSTERLOESUNG: Labor zeigt $v$ linear in $1/T$ und $F_Z$ quadratisch in $v$. Rechnung $v=2\pi r/T$ und $F_Z=mv^2/r$ bestaetigt die Laborwerte. Verdopplung von $v$ erfordert vierfache Zentripetalkraft wegen des Quadrats, Bahn-Fragen brauchen nur $v$, Halte-Fragen brauchen $F_Z$ mit Traeger.
 
-Klausur-Satz: `Mit v = 2πr/T und F_Z = m v^2/r folgt, dass eine Verdopplung von v die vierfache Zentripetalkraft erfordert.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Mit v = 2πr/T und F_Z = m v^2/r folgt, dass eine Verdopplung von v die vierfache Zentripetalkraft erfordert.`
 
 ## Schritt 5 — ausprobieren: Duell der Verfahren Schwerkraft-Anker
 VERGLEICH (zwei Verfahren unterscheiden):
 
-VERGLEICH: Waehle zuerst das Verfahren — (i) Bahn-Verfahren (Tempo, $T$, $f$ gesucht: $v = 2\pi r/T$, $\omega = 2\pi f$) oder (ii) Kraft-Verfahren (Halten, Rutschen, Reissen gefragt: $F_Z = m v^2/r$ als Radialbilanz) — dann rechnen.
+VERGLEICH: (Weg A quantitativ-rechnerisch gegen Weg B qualitativ-strukturell): Waehle zuerst das Verfahren — (i) Bahn-Verfahren (Tempo, $T$, $f$ gesucht: $v = 2\pi r/T$, $\omega = 2\pi f$) oder (ii) Kraft-Verfahren (Halten, Rutschen, Reissen gefragt: $F_Z = m v^2/r$ als Radialbilanz) — dann rechnen.
 
 Weg A: Erst Verfahren waehlen, dann rechnen.
 
@@ -125,20 +120,16 @@ HILFE: A nennt Geometrie plus Drehzahl und fragt Tempo, also Verfahren (i). B ne
 
 ANTWORT: A erfordert Verfahren (i): $v = 2\pi r f = 2\pi \cdot 0{,}30 \cdot 2{,}0 = 3{,}77\,\mathrm{m/s}$ tangential. B erfordert Verfahren (ii): Bedarf $F_Z = m v^2/r = 0{,}010 \cdot (3{,}77)^2/0{,}30 = 0{,}474\,\mathrm{N}$; Angebot $0{,}40 \cdot 0{,}010 \cdot 9{,}81 = 0{,}039\,\mathrm{N}$. Der Bedarf uebersteigt das Angebot, die Muenze rutscht weg.
 
-Klausur-Satz: `Kinematische Fragen nach v und ω verlangen das Bahn-Verfahren, Fragen nach Halten oder Reissen verlangen das Kraft-Verfahren mit F_Z.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Kinematische Fragen nach v und ω verlangen das Bahn-Verfahren, Fragen nach Halten oder Reissen verlangen das Kraft-Verfahren mit F_Z.`
 
 ## Schritt 6 — check: Selbsttest zu Gleichfoermige Kreisbewegung: Schwerkraft-Anker
 CHECK (Selbsttest, 3 Fragen mit Antworten):
 
-FRAGE: Wie folgen $v$ und $\omega$ aus $r$, $T$ und $f$? | ANTWORT: $v = 2\pi r/T = \omega r$ und $\omega = 2\pi f = 2\pi/T$; $v$ tangential, $\omega$ als Drehtempo.
-FRAGE: Wie lautet $F_Z$ und wohin zeigt sie? | ANTWORT: $F_Z = m v^2/r = m \omega^2 r$ radial zum Mittelpunkt als Radialanteil realer Kraefte.
-FRAGE: Warum vervierfacht doppeltes $v$ die Kraft? | ANTWORT: Weil $v$ quadratisch eingeht: $(2v)^2 = 4v^2$.
+- FRAGE: Wie folgen $v$ und $\omega$ aus $r$, $T$ und $f$? | ANTWORT: $v = 2\pi r/T = \omega r$ und $\omega = 2\pi f = 2\pi/T$; $v$ tangential, $\omega$ als Drehtempo.
+- FRAGE: Wie lautet $F_Z$ und wohin zeigt sie? | ANTWORT: $F_Z = m v^2/r = m \omega^2 r$ radial zum Mittelpunkt als Radialanteil realer Kraefte.
+- FRAGE: Warum vervierfacht doppeltes $v$ die Kraft? | ANTWORT: Weil $v$ quadratisch eingeht: $(2v)^2 = 4v^2$.
 
-Klausur-Satz: `Die Formeln v = 2πr/T, ω = 2πf und F_Z = m v^2/r bilden das geschlossene Verfahren der Kreisbewegung.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Die Formeln v = 2πr/T, ω = 2πf und F_Z = m v^2/r bilden das geschlossene Verfahren der Kreisbewegung.`
 
 ## Fehlvorstellung
 (kein Schritt; wird vom Parser automatisch erkannt und nicht mitgezaehlt)
@@ -155,7 +146,7 @@ ROLLE: Du bist Tutor in der EF und erklaerst einer Mitschuelerin die Kurvenphysi
 SITUATION: Nach Regen ist ein Auto in flacher Kurve ($r = 60\,\mathrm{m}$) gerutscht. Die Mitschuelerin sagt: Die Fliehkraft zog das Auto hinaus. Nimm in zusammenhaengender Darstellung (ca. 150 Woerter) Stellung, rechne mit $v = 20\,\mathrm{m/s}$, $m = 1000\,\mathrm{kg}$ die noetige $F_Z$ aus und beurteile die Aussage. Schreibe Antwort mit Formeln, Rechnung, Kraftdeutung und Urteil.
 RUBRIC (30 XP): Rechnung mit $F_Z = m v^2/r$ (10 XP) | Deutung Haftreibung als Lieferant (10 XP) | Urteil: keine reale Kraft nach aussen, sondern Traegheit bei fehlender $F_Z$ (10 XP).
 
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Wer Bahn- und Kraftverfahren verbindet, Zentripetalkraft berechnet und Winkelgroessen deutet, erhaelt die volle Punktzahl.`
 
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Schwerkraft-Anker
 TAKEAWAY (Kernzusammenfassung):
@@ -167,4 +158,4 @@ REFLEXION (2 Fragen):
 1. Selbstbeobachtung: Welcher Schritt fiel schwerer — die Rechnung mit $v$ und $F_Z$ (Schritt 4) oder die Wahl zwischen Bahn- und Kraftverfahren (Schritt 5)?
 2. Planung: Beim naechsten Mal zeichne ich zuerst die Draufsicht mit Radius, Tangente und Radialpfeil und frage dann, ob nach Tempo oder nach Halten gefragt ist.
 
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Kreise entstehen aus Zwang: Ohne Innenkraft floege jede Masse tangential davon.`

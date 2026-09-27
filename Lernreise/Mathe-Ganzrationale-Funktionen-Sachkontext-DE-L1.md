@@ -13,7 +13,7 @@ version: Lesson-v3
 
 # Lernreise: Ganzrationale Funktionen im Sachkontext (L1, Ziel Klausur)
 
-<!-- Campaign: Optimierung | Episode 11/33 | Krise: U-Bahn-Takt 197 Sekunden statt 180 | Target: x0 = 3, h = 0.4, Target m = 7.07 | Tool: box-optimizer -->
+<!-- Campaign: Optimierung | Episode 11/33 | Krise: U-Bahn-Takt 197 Sekunden statt 180 | Zielgroessen: G(x) mit Break-even und Gewinnmaximum, Menge x in Stück | Tool: box-optimizer -->
 
 ## Schritt 1 — entdecken: Steilste Rampe der Welt
 ZIELE (drei messbare Ziele dieser Lektion):
@@ -26,9 +26,9 @@ ZIELE (drei messbare Ziele dieser Lektion):
 
 ### Hook / Phaenomen
 
-Hook / Phaenomen (CAO-Log, Episode 11 von 33): Super-Engineering-Zentrale, U-Bahn-Takt 197 Sekunden statt 180. Der Chief Algorithm Officer ruft: x0 = 3, h = 0.4, Target m = 7.07, die Assistentin meldet Rot-Alarm auf allen Screens. Genau hier entscheidet Ganzrationale Funktionen im Sachkontext ueber Freigabe oder Sperrung, ueber Kostenexplosion oder Rekordgewinn, ueber Kollision oder gruene Welle. Das Protokoll der Vorwoche (Mathe-Extremwertprobleme-Optimierung-L1.md) legte die Spur, das naechste Audit (Mathe-Ganzrationale-Funktionen-Sachkontext-L1.md) laesst keine Ausrede mehr zu. Die Messwerte streuen, die Kurven zittern, doch die Mathematik bleibt unbestechlich: Wer Sekante und Tangente, Maximum und Wendepunkt, Vektor und Ebene richtig liest, rettet das Projekt. In dieser Episode stellst du im Sandbox-Optimierer die Parameter so ein, dass alle Kennzahlen im gruenen Bereich landen. Beobachte zuerst das Phaenomen in Ruhe, benenne dann die Objekte mit exakter Notation, pruefe schliesslich das Ergebnis mit einer Gegenrechnung. Der folgende Weg fuehrt vom Alarmton zur sauberen Klausurloesung: erst das Phaenomen beobachten, dann die Begriffe sichern, dann das Modell rechnen und im Labor bestaetigen.
+Hook / Phaenomen: Die Kosten steigen kurvig, der Preis bleibt linear: Irgendwo dazwischen liegt die Gewinnzone. Die **Gewinnfunktion** zieht Kosten von Erloes ab, der **Break-even-Punkt** markiert die schwarze Null. Erst das **Gewinnmaximum** sagt, welche Menge wirklich optimal ist.
 
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Im Sachkontext wird jede Nullstelle oekonomisch gelesen: Break-even ist Kostendeckung, Maximum ist optimale Menge.`
 
 ## Schritt 2 — entdecken: Ausruestungskiste der Algorithmus-Unit
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
@@ -39,19 +39,17 @@ Fuenf Begriffe trennen in dieser Lektion Alltagssprache von Klausursprache. Wer 
 
 ### Fachbegriffe & Definitionen
 
-- **Gewinnfunktion:** Die Differenz $G(x)=E(x)-K(x)$ misst den Gewinn je Ausbringungsmenge. Mechanismus: Erloes minus Kosten bilden und auf $D$ einschraenken. Klausur-Punkt: Ansatz nennen, $D$ angeben und Einheiten ME und GE führen.
-- **Break-even-Punkt:** Die Nullstellen von $G(x)$ markieren die Schwelle zwischen Verlust und Gewinn. Mechanismus: $G(x)=0$ loesen und Werte oekonomisch deuten. Klausur-Punkt: Beide Punkte berechnen und als Gewinnschwelle benennen.
-- **Gewinnmaximum:** Der Hochpunkt von $G(x)$ liefert die gewinnmaximale Menge per $G'=0$. Mechanismus: Ableiten, null setzen, Art per $G''$ sichern. Klausur-Punkt: Menge und maximalen Gewinn mit Einheiten angeben.
-- **Definitionsmenge:** Das Intervall $D=[0,12]$ ME begrenzt alle Aussagen auf sinnvolle Mengen. Mechanismus: Aus dem Kontext sinnvolle Grenzen uebernehmen. Klausur-Punkt: $D$ bei jeder Aussage mitfuehren und ausserhalb nichts behaupten.
-- **Oekonomische Deutung:** Jeder Rechenwert braucht eine Satzdeutung mit Einheit und Kontextbezug. Mechanismus: Zahl in einen Antwortsatz mit ME oder GE einbetten. Klausur-Punkt: Ohne Deutungssatz gibt es Punktabzug trotz richtiger Zahl.
+- **Gewinnfunktion:** Die Differenz $G(x)=E(x)-K(x)$ misst den Gewinn je Ausbringungsmenge. Sie entsteht als Erloes minus Kosten und traegt die Einheit Euro. Mechanismus: Erloes minus Kosten bilden und auf $D$ einschraenken. Klausur-Tipp: Ansatz nennen, $D$ angeben und Einheiten ME und GE führen.
+- **Break-even-Punkt:** Die Nullstellen von $G(x)$ markieren die Schwelle zwischen Verlust und Gewinn. Dort deckt der Erloes exakt die Kosten, der Gewinn ist null. Mechanismus: $G(x)=0$ loesen und Werte oekonomisch deuten. Klausur-Tipp: Beide Punkte berechnen und als Gewinnschwelle benennen.
+- **Gewinnmaximum:** Der Hochpunkt von $G(x)$ liefert die gewinnmaximale Menge per $G'=0$. Dort bringt eine weitere Einheit weniger Gewinn als sie kostet. Mechanismus: Ableiten, null setzen, Art per $G''$ sichern. Klausur-Tipp: Menge und maximalen Gewinn mit Einheiten angeben.
+- **Definitionsmenge:** Das Intervall $D=[0,12]$ ME begrenzt alle Aussagen auf sinnvolle Mengen. Negative Stueckzahlen sind oekonomisch sinnlos und werden ausgeschlossen. Mechanismus: Aus dem Kontext sinnvolle Grenzen uebernehmen. Klausur-Tipp: $D$ bei jeder Aussage mitfuehren und ausserhalb nichts behaupten.
+- **Oekonomische Deutung:** Jeder Rechenwert braucht eine Satzdeutung mit Einheit und Kontextbezug. Jede Zahl braucht Einheit und Bezug zur Sachsituation. Mechanismus: Zahl in einen Antwortsatz mit ME oder GE einbetten. Klausur-Tipp: Ohne Deutungssatz gibt es Punktabzug trotz richtiger Zahl.
 
 ### Wirkungsgefuege / Modell
 
 Die Kette verbindet alle fuenf Begriffe zu einem Verfahren: Erkennen, Einordnen, Aufstellen, Loesen und Deuten. Jeder Begriff traegt genau einen Schritt, gemeinsam sichern sie die volle Punktzahl.
 
-Klausur-Satz: `Die Nullstellen von G(x) = E(x) - K(x) liefern die Break-even-Punkte, der Hochpunkt liefert den maximalen Gewinn.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Die Nullstellen von G(x) = E(x) - K(x) liefern die Break-even-Punkte, der Hochpunkt liefert den maximalen Gewinn.`
 
 ## Schritt 3 — entdecken: Wirkungskette hinter Ganzrationale Funktionen im Sachkontext
 EXPERIMENTELLE ERKUNDUNG (Sandbox, erst spielen, dann deuten):
@@ -80,9 +78,8 @@ Die Kausalkette laeuft von den Kurven ueber die Differenz zur Deutung: Zuerst bi
 ```
 Formelkern: $G(x)=E(x)-K(x)$
 
-Klausur-Satz: `Zwischen den beiden Break-even-Punkten gilt G(x) > 0, ausserhalb gilt G(x) < 0 auf der sachnahen Definitionsmenge.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+$$G(x) = -0{,}5x^3+6x^2-14x-8,\quad G'(x_B) = 0$$
+`Klausur-Satz: Zwischen den beiden Break-even-Punkten gilt G(x) > 0, ausserhalb gilt G(x) < 0 auf der sachnahen Definitionsmenge.`
 
 ## Anekdote & Fun-Fact
 Ein Gruender prahlte mit steigendem Umsatz, doch sein Konto blieb leer. Ein Berater zeichnete $E(x)$ und $K(x)$ in ein Bild und zeigte: Die Kurven schneiden sich zweimal, und nur dazwischen liegt die Gewinnzone. Ausserhalb frisst $K$ das $E$ auf. Seitdem plant die Firma jede Menge mit $G(x) = E(x) - K(x)$.
@@ -90,7 +87,7 @@ Ein Gruender prahlte mit steigendem Umsatz, doch sein Konto blieb leer. Ein Bera
 Bezug zum Konzept: `Erst die Differenz G(x) = E(x) - K(x) zeigt, in welchem Mengenintervall Produktion lohnt.`
 
 ## Schritt 4 — ausprobieren: Sandbox-Auftrag Steilste Rampe der Welt
-Kontinuitaet: Vorher Mathe-Extremwertprobleme-Optimierung-L1.md | Nachher Mathe-Ganzrationale-Funktionen-Sachkontext-L1.md. Krise dieser Episode: U-Bahn-Takt 197 Sekunden statt 180. Target: x0 = 3, h = 0.4, Target m = 7.07.
+Kontinuitaet: Vorher Mathe-Extremwertprobleme-Optimierung-L1.md | Nachher Mathe-Ganzrationale-Funktionen-Sachkontext-L1.md. Krise dieser Episode: U-Bahn-Takt 197 Sekunden statt 180. Zielgroessen: G(x) mit Break-even und Gewinnmaximum, Menge x in Stück
 
 BEISPIEL (Sandbox Level mit Werkzeug):
 
@@ -105,14 +102,12 @@ HILFE:
 
 MUSTERLOESUNG: Sandbox zeigt die Gewinnzone zwischen $x = 4$ ME und $x = 8{,}49$ ME mit Maximum bei $x = 6{,}58$ ME. Rechnung $G(x) = 0$ liefert die Break-even-Punkte $4$ ME und $8{,}49$ ME, $G'(x) = 0$ mit $G''<0$ liefert die gewinnmaximale Menge $6{,}58$ ME. Oekonomisch bedeutet dies: Erst ab $4$ ME entsteht Gewinn, maximal bei $6{,}58$ ME, danach faellt der Gewinn bis $8{,}49$ ME wieder auf null.
 
-Klausur-Satz: `Auf D = [0; 12] ME liegt die Gewinnzone zwischen x = 4 ME und x ca. 8.49 ME, die gewinnmaximale Menge liegt bei x ca. 6.58 ME.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Auf D = [0; 12] ME liegt die Gewinnzone zwischen x = 4 ME und x ca. 8.49 ME, die gewinnmaximale Menge liegt bei x ca. 6.58 ME.`
 
 ## Schritt 5 — ausprobieren: Duell der Verfahren Steilste Rampe der Welt
 VERGLEICH (Wahl des Verfahrens, A gegen B):
 
-VERGLEICH: Triff zuerst die Wahl des Verfahrens: (i) graphische Deutung (Schnittpunkte, Gewinnzone und Trend an den Schnittpunkten von $E$ und $K$ ablesen) oder (ii) rechnerische Bestimmung (Nullstellen, Hochpunkt und Wende von $G$ mit Ableitung berechnen) > dann loesen.
+VERGLEICH: (Weg A quantitativ-rechnerisch gegen Weg B qualitativ-strukturell): Triff zuerst die Wahl des Verfahrens: (i) graphische Deutung (Schnittpunkte, Gewinnzone und Trend an den Schnittpunkten von $E$ und $K$ ablesen) oder (ii) rechnerische Bestimmung (Nullstellen, Hochpunkt und Wende von $G$ mit Ableitung berechnen) > dann loesen.
 
 Weg A: Erst Verfahren waehlen, dann rechnen.
 
@@ -125,20 +120,16 @@ HILFE: Aufgabe A nennt $skizzieren$, $ablesen$ und $beschreiben$, daher Verfahre
 
 ANTWORT: A erfordert Verfahren (i): $E$ als Gerade, $K$ als S-Kurve; zwei Schnittpunkte begrenzen die Gewinnzone, links von BE1 und rechts von BE2 liegt Verlustzone, weil $K$ ueber $E$ verlaeuft. B erfordert Verfahren (ii): $G(x) = 0$ liefert BE-Punkte per GTR, $G'(x) = -0{,}75x^2 + 8x - 10 = 0$ liefert Kandidaten, $G''$ entscheidet Hoch gegen Tief, $G'' = 0$ plus Vorzeichenwechsel liefert die Wende als staerksten Anstieg; jede Stelle erhaelt Einheiten ME und GE plus Satz im Kontext.
 
-Klausur-Satz: `Die graphische Deutung liest Gewinnzonen an Schnittpunkten ab, die rechnerische Bestimmung sichert sie mit Ableitung und Einheiten.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Die graphische Deutung liest Gewinnzonen an Schnittpunkten ab, die rechnerische Bestimmung sichert sie mit Ableitung und Einheiten.`
 
 ## Schritt 6 — check: Selbsttest zu Ganzrationale Funktionen im Sachkontext: Steilste Rampe der Welt
 CHECK (drei Fragen mit Antworten):
 
-FRAGE: Wie haengen $E(x)$, $K(x)$ und $G(x)$ zusammen und welche Einheiten tragen sie? | ANTWORT: Es gilt $G(x) = E(x) - K(x)$, $x$ in ME, alle Funktionswerte in GE, auf sachnaher Definitionsmenge $D$.
-FRAGE: Was bedeuten Nullstelle, Hochpunkt und Wendepunkt von $G$ oekonomisch? | ANTWORT: Nullstelle ist Break-even, Hochpunkt ist Maximalgewinn, Wendepunkt ist staerkster Gewinnanstieg.
-FRAGE: Warum darf $D$ nicht ignoriert werden? | ANTWORT: Weil Kapazitaet und negative Mengen unrealistisch sind; Aussagen ausserhalb von $D$ sind oekonomisch ungueltig.
+- FRAGE: Wie haengen $E(x)$, $K(x)$ und $G(x)$ zusammen und welche Einheiten tragen sie? | ANTWORT: Es gilt $G(x) = E(x) - K(x)$, $x$ in ME, alle Funktionswerte in GE, auf sachnaher Definitionsmenge $D$.
+- FRAGE: Was bedeuten Nullstelle, Hochpunkt und Wendepunkt von $G$ oekonomisch? | ANTWORT: Nullstelle ist Break-even, Hochpunkt ist Maximalgewinn, Wendepunkt ist staerkster Gewinnanstieg.
+- FRAGE: Warum darf $D$ nicht ignoriert werden? | ANTWORT: Weil Kapazitaet und negative Mengen unrealistisch sind; Aussagen ausserhalb von $D$ sind oekonomisch ungueltig.
 
-Klausur-Satz: `Jede Aussage im Sachkontext braucht Definitionsmenge D plus Einheiten ME und GE.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Jede Aussage im Sachkontext braucht Definitionsmenge D plus Einheiten ME und GE.`
 
 ## Fehlvorstellung
 (Kein Schritt; wird vom Parser uebersprungen.)
@@ -154,7 +145,7 @@ SITUATION: $E(x) = 15x$, $K(x) = 0{,}4x^3 - 5x^2 + 28x + 15$, $D = [0, 15]$ ME, 
 AUFGABE (eroertern, AFB III): Eroertere auf Basis von Break-even, Hochpunkt und Grenze von $D$, welche Mengenintervalle zu empfehlen sind.
 RUBRIC (30 XP): $G(x)$ plus $D$ mit Einheiten korrekt (5 XP) | Break-even korrekt berechnet (10 XP) | Hochpunkt plus Wende korrekt (10 XP) | Eroerterung mit Empfehlung fuer Intervalle (5 XP).
 
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Wer Gewinnfunktion aufstellt, Break-even berechnet, Maximum bestimmt und oekonomisch deutet, erhaelt die volle Punktzahl.`
 
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Steilste Rampe der Welt
 TAKEAWAY (Kernbotschaft in einem Kasten):
@@ -167,4 +158,4 @@ REFLEXION (zwei Fragen):
 1. Welcher Teil fiel schwerer: das Aufstellen von $G(x)$ mit Einheiten (Schritt 4) oder die Wahl zwischen Deutung und Rechnung im Vergleich (Schritt 5)?
 2. Beim naechsten Mal notiere ich zuerst $D$, ME und GE und formuliere zu jedem Rechenergebnis sofort einen Antwortsatz.
 
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Mathematik liefert Zahlen, der Kontext liefert Sinn: Keine Deutung ohne Einheit und Bezug.`

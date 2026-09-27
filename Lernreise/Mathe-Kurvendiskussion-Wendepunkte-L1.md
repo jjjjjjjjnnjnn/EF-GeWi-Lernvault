@@ -13,7 +13,7 @@ version: Lesson-v3
 
 # Lernreise: Kurvendiskussion und Wendepunkte (L1, Ziel Klausur)
 
-<!-- Campaign: Optimierung | Episode 22/33 | Krise: Logistik-Drohne Akku nur 14 Minuten | Target: x0 = 4, h = 0.7, Target m = 11.14 | Tool: box-optimizer -->
+<!-- Campaign: Optimierung | Episode 22/33 | Krise: Logistik-Drohne Akku nur 14 Minuten | Zielgroessen: f mit f''(x) = 6x-12, Ziel Wendepunkt bei 2 | Tool: box-optimizer -->
 
 ## Schritt 1 — entdecken: Geheimakte Rekonstruktion
 ZIELE (3条，本节20分钟学完能做到——先读中文，再记德语)：
@@ -24,26 +24,24 @@ ZIELE (3条，本节20分钟学完能做到——先读中文，再记德语)：
 
 ### Hook / Phaenomen
 
-【首席算法官·第22集/共33集】警报：Logistik-Drohne Akku nur 14 Minuten。首席算法官下令：“x0 = 4, h = 0.7, Target m = 11.14！”全场红灯闪烁。上一集（Mathe-Kurvendiskussion-Wendepunkte-DE-L1.md）的伏笔在此引爆，下一集（Mathe-Rekonstruktion-Symmetrie-Bedingungen-CN-L2.md）只给交出最优解的人放行。本集你要在沙盘里亲手把工程从亏损/相撞边缘拉回来：先看现象、再点装备、最后算出让审计点头的 Bilanz。记住：先看区间还是时刻、再选割线还是切线/极值还是向量，做完必做 Gegenprobe——这就是工程帝国法则，也是 Klausur 拿分法则。
+先左弯后右弯，中间必有一处“翻转”：拐点处的切线会穿过图像，三阶导数负责一锤定音。
 
-Hook / Phaenomen (CAO-Log, Episode 22 von 33): Super-Engineering-Zentrale, Logistik-Drohne Akku nur 14 Minuten. Der Chief Algorithm Officer ruft: x0 = 4, h = 0.7, Target m = 11.14, die Assistentin meldet Rot-Alarm auf allen Screens. Genau hier entscheidet Kurvendiskussion und Wendepunkte ueber Freigabe oder Sperrung, ueber Kostenexplosion oder Rekordgewinn, ueber Kollision oder gruene Welle. Das Protokoll der Vorwoche (Mathe-Kurvendiskussion-Wendepunkte-DE-L1.md) legte die Spur, das naechste Audit (Mathe-Rekonstruktion-Symmetrie-Bedingungen-CN-L2.md) laesst keine Ausrede mehr zu. Die Messwerte streuen, die Kurven zittern, doch die Mathematik bleibt unbestechlich: Wer Sekante und Tangente, Maximum und Wendepunkt, Vektor und Ebene richtig liest, rettet das Projekt. In dieser Episode stellst du im Sandbox-Optimierer die Parameter so ein, dass alle Kennzahlen im gruenen Bereich landen. Beobachte zuerst das Phaenomen in Ruhe, benenne dann die Objekte mit exakter Notation, pruefe schliesslich das Ergebnis mit einer Gegenrechnung. Der folgende Weg fuehrt vom Alarmton zur sauberen Klausurloesung: erst das Phaenomen beobachten, dann die Begriffe sichern, dann das Modell rechnen und im Labor bestaetigen.
+Hook / Phaenomen: Erst links-, dann rechtsgekrümmt: Irgendwo dazwischen kippt die **Kruemmung**. Dieser Kippunkt heisst **Wendepunkt**, seine **Wendetangente** durchschneidet den Graphen. Die **dritte Ableitung** besiegelt, ob die Wende wirklich stattfindet.
 
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Wendepunkte markieren den Kruemmungswechsel: f zwei Strich null plus Vorzeichenwechsel plus f drei Strich ungleich null.`
 
 ## Schritt 2 — entdecken: Ausruestungskiste der Algorithmus-Unit
 PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语）：
 
 中文在上，德语在下：
 
-- 凹凸性 — Kruemmung：f''(x) > 0 对应 linksgekruemmt（下凸，如碗），f''(x) < 0 对应 rechtsgekruemmt（上凸，如帽）。
-- 拐点 — Wendepunkt：Kruemmung 改变方向的点，必须同时给出 x 与 y 坐标 W(x_W | f(x_W))。
-- 二阶导零点 — Nullstelle von f''：拐点的必要条件 f''(x_W) = 0，但单独还不够，还须检验。
-- 正负号变化 — Vorzeichenwechsel (VZW)：f'' 在候选点左右异号，是充分条件，比只看 f''' 更稳。
-- 拐点切线 — Wendetangente：曲线在 Wendepunkt 处的切线 y = f'(x_W)(x - x_W) + f(x_W)，穿过曲线。
+- 凹凸性 — Kruemmung：f''(x) > 0 对应 linksgekruemmt（下凸，如碗），f''(x) < 0 对应 rechtsgekruemmt（上凸，如帽）。 Positive zweite Ableitung bedeutet linksgekrümmt, negative rechtsgekrümmt. Mechanismus: Vorzeichen von f zwei Strich auf Intervallen bestimmen. Klausur-Tipp: Kruemmungsaussage stets mit Intervall verbinden.
+- 拐点 — Wendepunkt：Kruemmung 改变方向的点，必须同时给出 x 与 y 坐标 W(x_W | f(x_W))。 Jede Nullstelle von f zwei Strich ist zunaechst nur verdaechtig. Mechanismus: Zweite Ableitung null setzen und Kandidaten sammeln. Klausur-Tipp: Kandidat und Wendepunkt sprachlich trennen
+- 二阶导零点 — Nullstelle von f''：拐点的必要条件 f''(x_W) = 0，但单独还不够，还须检验。 Ist sie ungleich null, liegt sicher ein Wendepunkt vor. Mechanismus: Kandidaten in die dritte Ableitung einsetzen. Klausur-Tipp: Ungleich-null als hinreichendes Kriterium nennen.
+- 正负号变化 — Vorzeichenwechsel (VZW)：f'' 在候选点左右异号，是充分条件，比只看 f''' 更稳。 Erst der Wechsel adelt den Kandidaten zum echten Wendepunkt. Mechanismus: Vorzeichen von f zwei Strich beidseitig pruefen. Klausur-Tipp: Wechsel explizit als Satz formulieren.
+- 拐点切线 — Wendetangente：曲线在 Wendepunkt 处的切线 y = f'(x_W)(x - x_W) + f(x_W)，穿过曲线。 Sie durchschneidet den Graphen im Wendepunkt statt ihn zu beruehren. Mechanismus: Steigung f Strich an der Wendestelle plus Punkt einsetzen. Klausur-Tipp: Tangentengleichung vollstaendig angeben.
 
-Klausur-Satz: `Aus f''(x_W) = 0 mit Vorzeichenwechsel folgt ein Wendepunkt, die Wendetangente beschreibt die Richtung an dieser Stelle.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Aus f''(x_W) = 0 mit Vorzeichenwechsel folgt ein Wendepunkt, die Wendetangente beschreibt die Richtung an dieser Stelle.`
 
 ## Schritt 3 — entdecken: Wirkungskette hinter Kurvendiskussion und Wendepunkte
 ENTDECKEN（1概念 + 1文字图解）：
@@ -70,9 +68,8 @@ ENTDECKEN（1概念 + 1文字图解）：
        Test: f''(x)=0 + VZW + f''' oder Kruemmung
 ```
 
-Klausur-Satz: `Wechselt f'' an einer Nullstelle das Vorzeichen, so aendert der Graph dort seine Kruemmung und besitzt einen Wendepunkt.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+$$f''(x_W) = 0,\quad f'''(x_W)\ne 0$$
+`Klausur-Satz: Wechselt f'' an einer Nullstelle das Vorzeichen, so aendert der Graph dort seine Kruemmung und besitzt einen Wendepunkt.`
 
 ## Anekdote & Fun-Fact
 
@@ -83,7 +80,7 @@ Klausur-Satz: `Wechselt f'' an einer Nullstelle das Vorzeichen, so aendert der G
 **Bezug zum Konzept**: `Der Wendepunkt der kumulierten Kurve markiert das Maximum des Tageszuwachses und den Wechsel der Kruemmung.`
 
 ## Schritt 4 — ausprobieren: Sandbox-Auftrag Geheimakte Rekonstruktion
-Kontinuitaet: Vorher Mathe-Kurvendiskussion-Wendepunkte-DE-L1.md | Nachher Mathe-Rekonstruktion-Symmetrie-Bedingungen-CN-L2.md. Krise dieser Episode: Logistik-Drohne Akku nur 14 Minuten. Target: x0 = 4, h = 0.7, Target m = 11.14.
+Kontinuitaet: Vorher Mathe-Kurvendiskussion-Wendepunkte-DE-L1.md | Nachher Mathe-Rekonstruktion-Symmetrie-Bedingungen-CN-L2.md. Krise dieser Episode: Logistik-Drohne Akku nur 14 Minuten. Zielgroessen: f mit f''(x) = 6x-12, Ziel Wendepunkt bei 2
 
 BEISPIEL（正确例题示范，含教具操作与解答）：
 
@@ -98,14 +95,12 @@ HILFE:
 
 MUSTERLÖSUNG / MUSTERLOESUNG: Es gilt f'(x) = 3x^2 - 12x + 9, f''(x) = 6x - 12, f'''(x) = 6. Aus f''(x) = 0 folgt 6x - 12 = 0, also x_W = 2. Wegen f'''(2) = 6 ungleich 0, alternativ VZW von minus nach plus, liegt ein Wendepunkt vor. Mit f(2) = 8 - 24 + 18 + 1 = 3 folgt W(2 | 3). Mit f'(2) = 12 - 24 + 9 = -3 lautet die Wendetangente y = -3(x - 2) + 3 = -3x + 9. Der Graph wechselt dort von rechtsgekruemmt zu linksgekruemmt.
 
-Klausur-Satz: `Mit f''(2) = 0, f'''(2) ungleich 0 und W(2 | 3) besitzt f dort einen Wendepunkt mit Tangente y = -3x + 9.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Mit f''(2) = 0, f'''(2) ungleich 0 und W(2 | 3) besitzt f dort einen Wendepunkt mit Tangente y = -3x + 9.`
 
 ## Schritt 5 — ausprobieren: Duell der Verfahren Geheimakte Rekonstruktion
 VERGLEICH辨别实验（真拐点 vs. 假拐点）：
 
-VERGLEICH: Wähle erst / Waehele erst das Verfahren — 【选程序】先判断属于 (i) Wende-Test（f''(x)=0 + VZW 或 f'''，再加 y-Wert 与 Kruemmung-Deutung）还是 (ii) Nur-Stationaer-Test（只看 f'(x)=0，管极值不管凹凸）—— dann lösen.
+VERGLEICH: (Weg A quantitativ-rechnerisch gegen Weg B qualitativ-strukturell): Wähle erst / Waehele erst das Verfahren — 【选程序】先判断属于 (i) Wende-Test（f''(x)=0 + VZW 或 f'''，再加 y-Wert 与 Kruemmung-Deutung）还是 (ii) Nur-Stationaer-Test（只看 f'(x)=0，管极值不管凹凸）—— dann lösen.
 
 Weg A: Erst Verfahren waehlen, dann rechnen.
 
@@ -118,20 +113,16 @@ HILFE: A nennt Wendepunkte, aber f''(0) = 0 allein reicht nicht -> Verfahren (i)
 
 ANTWORT: A erfordert Verfahren (i): g'(x) = 4x^3, g''(x) = 12x^2, g''(0) = 0, aber g''(x) >= 0 links und rechts von 0, also kein Vorzeichenwechsel und kein Wendepunkt; der Graph bleibt ueberall linksgekruemmt. B erfordert Verfahren (i): k'(t) = -0.3t^2 + 6t, k''(t) = -0.6t + 6 = 0 liefert t_W = 10, k'''(10) = -0.6 ungleich 0, also Wende bei W(10 | 2000); dort ist der Tageszuwachs k'(10) = 30 maximal, danach faellt er.
 
-Klausur-Satz: `Ohne Vorzeichenwechsel von f'' liegt kein Wendepunkt vor, wie g(x) = x^4 an der Stelle x = 0 zeigt.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Ohne Vorzeichenwechsel von f'' liegt kein Wendepunkt vor, wie g(x) = x^4 an der Stelle x = 0 zeigt.`
 
 ## Schritt 6 — check: Selbsttest zu Kurvendiskussion und Wendepunkte: Geheimakte Rekonstruktion
 CHECK检索默写（自测 3 题，与答案配对）：
 
-FRAGE: Wie lautet die notwendige und die hinreichende Bedingung fuer einen Wendepunkt? | ANTWORT: Notwendig ist f''(x_W) = 0, hinreichend ist ein Vorzeichenwechsel von f'' oder f'''(x_W) ungleich 0.
-FRAGE: Warum ist x = 0 bei g(x) = x^4 kein Wendepunkt, obwohl g''(0) = 0 gilt? | ANTWORT: Weil g''(x) = 12x^2 links und rechts von 0 positiv bleibt, also kein Vorzeichenwechsel und kein Wechsel der Kruemmung vorliegt.
-FRAGE: Was gehoert zur vollstaendigen Angabe von Wendepunkt und Wendetangente? | ANTWORT: Beide Koordinaten W(x_W | f(x_W)), Nachweis per VZW oder f''', Tangentengleichung und Deutung der Kruemmung.
+- FRAGE: Wie lautet die notwendige und die hinreichende Bedingung fuer einen Wendepunkt? | ANTWORT: Notwendig ist f''(x_W) = 0, hinreichend ist ein Vorzeichenwechsel von f'' oder f'''(x_W) ungleich 0.
+- FRAGE: Warum ist x = 0 bei g(x) = x^4 kein Wendepunkt, obwohl g''(0) = 0 gilt? | ANTWORT: Weil g''(x) = 12x^2 links und rechts von 0 positiv bleibt, also kein Vorzeichenwechsel und kein Wechsel der Kruemmung vorliegt.
+- FRAGE: Was gehoert zur vollstaendigen Angabe von Wendepunkt und Wendetangente? | ANTWORT: Beide Koordinaten W(x_W | f(x_W)), Nachweis per VZW oder f''', Tangentengleichung und Deutung der Kruemmung.
 
-Klausur-Satz: `Erst f''(x_W) = 0 plus Vorzeichenwechsel plus y-Wert ergeben einen vollstaendigen Wendepunkt-Nachweis.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Erst f''(x_W) = 0 plus Vorzeichenwechsel plus y-Wert ergeben einen vollstaendigen Wendepunkt-Nachweis.`
 
 ## Fehlvorstellung
 
@@ -151,7 +142,7 @@ SITUATION: Die kumulierten Meldungen folgen k(t) = -0.05t^3 + 2.4t^2 + 100 (t in
 AUFGABE (interpretieren, AFB III)：Bestimme den Wendepunkt, erklaere seine Bedeutung als Peak des Zuwachses und beurteile Grenzen des Modells.
 RUBRIC (30 XP): Ableitungen plus x_W korrekt (5 XP) | Nachweis per VZW oder f''' plus y-Wert (10 XP) | Wendetangente korrekt (10 XP) | Deutung als Peak plus Modellkritik (5 XP).
 
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Wer Wendekandidat, Vorzeichenwechsel, Punkt und Wendetangente zeigt, erhaelt die volle Punktzahl.`
 
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Geheimakte Rekonstruktion
 TAKEAWAY 1盒（核心总结）：
@@ -163,4 +154,4 @@ REFLEXION 2问：
 1. 过程自省：Welcher Teil fiel schwerer — die Rechnung der Wendetangente (Schritt 4) oder die Abwehr der x-hoch-vier-Falle im Vergleich (Schritt 5)?
 2. 元认知计划：Beim naechsten Mal zeichne ich zuerst die Vorzeichentabelle von f'' und formuliere danach erst den Antwortsatz.
 
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Wende heisst Wechsel: Ohne Vorzeichenwechsel bleibt jede Nullstelle von f zwei Strich Kandidat.`

@@ -13,7 +13,7 @@ version: Lesson-v3
 
 # Lernreise: Von der Sekante zur Tangente (L1, Ziel Klausur)
 
-<!-- Campaign: Optimierung | Episode 26/33 | Krise: Gleis-Kruemmung Radius 310 m zu eng | Target: x0 = 3, h = 0.3, Target m = 12.62 | Tool: tangent-slider -->
+<!-- Campaign: Optimierung | Episode 26/33 | Krise: Gleis-Kruemmung Radius 310 m zu eng | Zielgroessen: f(x) = x^2, Stelle 3, Sekanten mit h gegen 0, Ziel 6 | Tool: tangent-slider -->
 
 ## Schritt 1 — entdecken: Skalar-Jagd
 ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
@@ -24,26 +24,24 @@ ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
 ### Hook / Phaenomen
 
-【首席算法官·第26集/共33集】警报：Gleis-Kruemmung Radius 310 m zu eng。首席算法官下令：“x0 = 3, h = 0.3, Target m = 12.62！”全场红灯闪烁。上一集（Mathe-Sekante-zu-Tangente-DE-L1.md）的伏笔在此引爆，下一集（Mathe-Steckbriefaufgaben-Verfahren-DE-L1.md）只给交出最优解的人放行。本集你要在沙盘里亲手把工程从亏损/相撞边缘拉回来：先看现象、再点装备、最后算出让审计点头的 Bilanz。记住：先看区间还是时刻、再选割线还是切线/极值还是向量，做完必做 Gegenprobe——这就是工程帝国法则，也是 Klausur 拿分法则。
+两点定割线，一点没法办：让第二点滑向第一点，平均变化率就变成了瞬时变化率，割线就变成了切线。
 
-Hook / Phaenomen (CAO-Log, Episode 26 von 33): Super-Engineering-Zentrale, Gleis-Kruemmung Radius 310 m zu eng. Der Chief Algorithm Officer ruft: x0 = 3, h = 0.3, Target m = 12.62, die Assistentin meldet Rot-Alarm auf allen Screens. Genau hier entscheidet Von der Sekante zur Tangente ueber Freigabe oder Sperrung, ueber Kostenexplosion oder Rekordgewinn, ueber Kollision oder gruene Welle. Das Protokoll der Vorwoche (Mathe-Sekante-zu-Tangente-DE-L1.md) legte die Spur, das naechste Audit (Mathe-Steckbriefaufgaben-Verfahren-DE-L1.md) laesst keine Ausrede mehr zu. Die Messwerte streuen, die Kurven zittern, doch die Mathematik bleibt unbestechlich: Wer Sekante und Tangente, Maximum und Wendepunkt, Vektor und Ebene richtig liest, rettet das Projekt. In dieser Episode stellst du im Sandbox-Optimierer die Parameter so ein, dass alle Kennzahlen im gruenen Bereich landen. Beobachte zuerst das Phaenomen in Ruhe, benenne dann die Objekte mit exakter Notation, pruefe schliesslich das Ergebnis mit einer Gegenrechnung. Der folgende Weg fuehrt vom Alarmton zur sauberen Klausurloesung: erst das Phaenomen beobachten, dann die Begriffe sichern, dann das Modell rechnen und im Labor bestaetigen.
+Hook / Phaenomen: Zwei Messpunkte geben eine **Sekante**, ein Messpunkt gibt ein Raetsel. Laesst man den zweiten Punkt auf den ersten zulaufen, wird aus mittlerer **Aenderungsrate** lokale. Der **Differenzenquotient** schrumpft dabei zur **Tangente** zusammen.
 
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Die Tangente ist der Grenzfall der Sekante: Laeuft h gegen null, wird mittlere zu lokaler Aenderung.`
 
 ## Schritt 2 — entdecken: Ausruestungskiste der Algorithmus-Unit
 PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
 
 中文在上，德语在下：
 
-- 平均变化率（割线斜率） — Mittlere Aenderungsrate (Sekantensteigung)：区间两端函数值之差比自变量之差，即差商。
-- 瞬时变化率（切线斜率） — Lokale Aenderungsrate (Tangentensteigung)：某一点处的极限斜率，即导数值 f'(x0)。
-- 割线 — Sekante：穿过函数图像上两个不同点的直线。
-- 切线 — Tangente：在一点处与图像相贴、斜率恰为该点导数的直线。
-- 差商 — Differenzenquotient：`(f(x0 + h) - f(x0)) / h`，即区间 [x0; x0 + h] 上割线的斜率。
+- 平均变化率（割线斜率） — Mittlere Aenderungsrate (Sekantensteigung)：区间两端函数值之差比自变量之差，即差商。 Sie ist die Sekantensteigung ueber ein sichtbares Intervall. Mechanismus: Differenz der Funktionswerte durch Differenz der Stellen teilen. Klausur-Tipp: Intervallgrenzen stets dazuschreiben.
+- 瞬时变化率（切线斜率） — Lokale Aenderungsrate (Tangentensteigung)：某一点处的极限斜率，即导数值 f'(x0)。 Sie ist die Tangentensteigung in genau einem Punkt. Mechanismus: Grenzuebergang des Differenzenquotienten vollziehen. Klausur-Tipp: Stelle als Index an der Rate vermerken.
+- 割线 — Sekante：穿过函数图像上两个不同点的直线。 Sie schneidet den Graphen in zwei Punkten und mittelt dazwischen. Mechanismus: Zwei Punkte waehlen und Verbindungssteigung berechnen. Klausur-Tipp: Schnittpunkte im Schaubild markieren.
+- 切线 — Tangente：在一点处与图像相贴、斜率恰为该点导数的直线。 Sie beruehrt den Graphen in genau einem Punkt. Mechanismus: Grenzlage der Sekante als Tangente deuten. Klausur-Tipp: Beruehrpunkt plus Steigung angeben.
+- 差商 — Differenzenquotient：`(f(x0 + h) - f(x0)) / h`，即区间 [x0; x0 + h] 上割线的斜率。 Er ist die Rechenform beider Raten und traegt h im Nenner. Mechanismus: Bruch aufstellen, kuerzen und Grenzwert bilden. Klausur-Tipp: h-Schreibweise bis zum Ende beibehalten.
 
-Klausur-Satz: `Der Differenzenquotient liefert die Sekantensteigung ueber ein Intervall, der Differentialquotient die Tangentensteigung an einer Stelle.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Der Differenzenquotient liefert die Sekantensteigung ueber ein Intervall, der Differentialquotient die Tangentensteigung an einer Stelle.`
 
 ## Schritt 3 — entdecken: Wirkungskette hinter Von der Sekante zur Tangente
 ENTDECKEN（1概念 + 1文字图解）：
@@ -70,9 +68,8 @@ ENTDECKEN（1概念 + 1文字图解）：
      Steigung der Sekante = (f(x0+h) - f(x0)) / h
 ```
 
-Klausur-Satz: `Laesst man h gegen 0 streben, so geht die Sekante durch P und Q in die Tangente im Punkt P ueber.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+$$m_s = \frac{f(3+h)-f(3)}{h}\to m_t = 6$$
+`Klausur-Satz: Laesst man h gegen 0 streben, so geht die Sekante durch P und Q in die Tangente im Punkt P ueber.`
 
 ## Anekdote & Fun-Fact
 
@@ -83,7 +80,7 @@ Klausur-Satz: `Laesst man h gegen 0 streben, so geht die Sekante durch P und Q i
 **Bezug zum Konzept**: `Der Grenzuebergang von der schneidenden Sekante zur beruehrenden Tangente liefert die Ableitung.`
 
 ## Schritt 4 — ausprobieren: Sandbox-Auftrag Skalar-Jagd
-Kontinuitaet: Vorher Mathe-Sekante-zu-Tangente-DE-L1.md | Nachher Mathe-Steckbriefaufgaben-Verfahren-DE-L1.md. Krise dieser Episode: Gleis-Kruemmung Radius 310 m zu eng. Target: x0 = 3, h = 0.3, Target m = 12.62.
+Kontinuitaet: Vorher Mathe-Sekante-zu-Tangente-DE-L1.md | Nachher Mathe-Steckbriefaufgaben-Verfahren-DE-L1.md. Krise dieser Episode: Gleis-Kruemmung Radius 310 m zu eng. Zielgroessen: f(x) = x^2, Stelle 3, Sekanten mit h gegen 0, Ziel 6
 
 BEISPIEL（正确例题示范，含教具操作与解答）：
 
@@ -98,14 +95,12 @@ HILFE:
 
 MUSTERLÖSUNG: Es gilt f(3 + h) = (3 + h)^2 = 9 + 6h + h^2, also f(3 + h) - f(3) = 9 + 6h + h^2 - 9 = 6h + h^2 = h(6 + h). Der Differenzenquotient lautet daher h(6 + h) / h = 6 + h (fuer h ungleich 0). Der Grenzuebergang h gegen 0 liefert f'(3) = 6. Zum Vergleich: Die Sekantensteigung ueber [3; 5] betraegt (25 - 9) / (5 - 3) = 16 / 2 = 8. Die mittlere Aenderungsrate 8 ist groesser als die lokale Aenderungsrate 6, weil die Parabel rechts von x0 = 3 im Durchschnitt steiler ansteigt.
 
-Klausur-Satz: `Der Grenzwert des Differenzenquotienten ergibt f'(3) = 6, waehrend die Sekantensteigung ueber [3; 5] den groesseren Wert 8 besitzt.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Der Grenzwert des Differenzenquotienten ergibt f'(3) = 6, waehrend die Sekantensteigung ueber [3; 5] den groesseren Wert 8 besitzt.`
 
 ## Schritt 5 — ausprobieren: Duell der Verfahren Skalar-Jagd
 VERGLEICH辨别实验（双向辨析：割线眼 vs. 切线眼）：
 
-VERGLEICH: Waehle erst das Verfahren — 【选程序】先判断题目给的是 (i) Sekanten-Verfahren（一个区间、两点、平均变化率、Differenzenquotient）还是 (ii) Tangenten-Verfahren（一个 Stelle/Zeitpunkt、Momentanwert、Ableitung）—— dann rechnen.
+VERGLEICH: (Weg A quantitativ-rechnerisch gegen Weg B qualitativ-strukturell): Waehle erst das Verfahren — 【选程序】先判断题目给的是 (i) Sekanten-Verfahren（一个区间、两点、平均变化率、Differenzenquotient）还是 (ii) Tangenten-Verfahren（一个 Stelle/Zeitpunkt、Momentanwert、Ableitung）—— dann rechnen.
 
 Weg A: Erst Verfahren waehlen, dann rechnen.
 
@@ -118,20 +113,16 @@ HILFE: A nennt ein Zeitintervall und zwei Endwerte -> Verfahren (i), Sekante. B 
 
 ANTWORT: A erfordert Verfahren (i): v_mittel = 240 km / 4 h = 60 km/h; dies ist die mittlere Aenderungsrate, also die Sekantensteigung der Weg-Zeit-Funktion. B erfordert Verfahren (ii): Der Blitzer erfasst die Momentangeschwindigkeit v(t0) = s'(t0), also die Tangentensteigung an der Stelle t0.
 
-Klausur-Satz: `Durchschnittsgeschwindigkeiten entsprechen Sekantensteigungen, Momentangeschwindigkeiten entsprechen Tangentensteigungen.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Durchschnittsgeschwindigkeiten entsprechen Sekantensteigungen, Momentangeschwindigkeiten entsprechen Tangentensteigungen.`
 
 ## Schritt 6 — check: Selbsttest zu Von der Sekante zur Tangente: Skalar-Jagd
 CHECK检索默写（自测 3 题，与答案配对）：
 
-FRAGE: Wie lautet der Differenzenquotient einer Funktion f im Intervall [x0; x0 + h]? | ANTWORT: m = (f(x0 + h) - f(x0)) / h, also die Steigung der Sekante durch die beiden Punkte.
-FRAGE: Was geschieht geometrisch mit der Sekante, wenn h gegen 0 geht? | ANTWORT: Sie dreht sich um den festen Punkt P(x0 | f(x0)) und geht im Grenzfall in die Tangente ueber.
-FRAGE: Warum darf man h nicht schon vor dem Kuerzen gleich 0 setzen? | ANTWORT: Weil sonst der unbestimmte Ausdruck 0/0 entstuende; erst nach dem Kuerzen ist der Grenzwert ablesbar.
+- FRAGE: Wie lautet der Differenzenquotient einer Funktion f im Intervall [x0; x0 + h]? | ANTWORT: m = (f(x0 + h) - f(x0)) / h, also die Steigung der Sekante durch die beiden Punkte.
+- FRAGE: Was geschieht geometrisch mit der Sekante, wenn h gegen 0 geht? | ANTWORT: Sie dreht sich um den festen Punkt P(x0 | f(x0)) und geht im Grenzfall in die Tangente ueber.
+- FRAGE: Warum darf man h nicht schon vor dem Kuerzen gleich 0 setzen? | ANTWORT: Weil sonst der unbestimmte Ausdruck 0/0 entstuende; erst nach dem Kuerzen ist der Grenzwert ablesbar.
 
-Klausur-Satz: `Der Differentialquotient f'(x0) ist der Grenzwert des Differenzenquotienten fuer h gegen 0.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Der Differentialquotient f'(x0) ist der Grenzwert des Differenzenquotienten fuer h gegen 0.`
 
 ## Fehlvorstellung
 
@@ -150,7 +141,7 @@ ROLLE: Du bist Tutorin in der EF und bereitest eine Mitschuelerin auf die ZKE vo
 SITUATION: Deine Mitschuelerin hat mit dem GTR fuer f(x) = x^3 im Intervall [-1; 1] eine Durchschnittssteigung von 1 erhalten, ist aber verwirrt, weil die Tangente an der Stelle x = 0 waagerecht verlaeuft. Erklaere ihr in einer zusammenhaengenden Darstellung (ca. 150 Woerter) den Unterschied zwischen Sekante und Tangente und ordne beide Ergebnisse ein.
 RUBRIC (30 XP): Klare These zum Unterschied Sekante/Tangente (5 XP) | Korrekte Sekantenrechnung (f(1) - f(-1)) / 2 = 1 (10 XP) | Begruendung der Tangentensteigung f'(0) = 0 (10 XP) | Abschlussfazit mit Fachbegriffen (5 XP).
 
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Wer Sekantensteigung berechnet, Grenzprozess zeigt und Tangentensteigung deutet, erhaelt die volle Punktzahl.`
 
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Skalar-Jagd
 TAKEAWAY 1盒（核心总结）：
@@ -162,4 +153,4 @@ REFLEXION 2问：
 1. 过程自省：Welcher Schritt fiel schwerer — die algebraische Umformung des Differenzenquotienten (Schritt 4) oder die Entscheidung zwischen Sekante und Tangente (Schritt 5)?
 2. 元认知计划：Beim naechsten Mal pruefe ich zuerst, ob im Aufgabentext ein Intervall oder ein einzelner Zeitpunkt genannt wird, und waehle danach das Verfahren.
 
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Vom Groben zum Feinen: Jeder Grenzwert verfeinert eine grobe Messung zur exakten.`

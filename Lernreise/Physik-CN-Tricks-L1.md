@@ -13,7 +13,7 @@ version: Lesson-v3
 
 # Lernreise: CN-Tricks: sechs Verfahren fuer die Physik-Klausur (L1, Ziel Klausur)
 
-<!-- Campaign: Mars-Mission | Episode 4/28 | Krise: Sol-052 Landebeine-Daempfer blockiert bei -63 Grad | Target: v0 = 268 m/s, a = 2.5 m/s2, Ziel s = 948 m | Tool: formula -->
+<!-- Campaign: Mars-Mission | Episode 4/28 | Krise: Sol-052 Landebeine-Daempfer blockiert bei -63 Grad | Zielgroessen: 2,0 kg plus 3,0 kg mit 15 N, Ziel Kupplungskraft 9,0 N | Tool: formula -->
 
 ## Schritt 1 — entdecken: Staub frisst die Messung
 ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
@@ -24,26 +24,24 @@ ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
 ### Hook / Phaenomen
 
-【火星拓荒者·第4集/共28集】警报：Sol-052 Landebeine-Daempfer blockiert bei -63 Grad。领航员 Lena 大喊：“v0 = 268 m/s, a = 2.5 m/s2, Ziel s = 948 m！”机械师 Tom 回应：“稳住曲线！”上一集（Physik-CN-Tricks-DE-L1.md）埋下的隐患在此爆发，下一集（Physik-Diagramme-DE-L1.md）的大门只为算对的人打开。本集你要在沙盘里亲手把飞船从超速边缘救回来：先看现象、再点装备、最后算出让考官点头的 Bilanz。记住：读图先看轴、计算必带单位、做完必用另一张图验算——这就是火星人生存法则，也是 Klausur 拿分法则。
+两节车共受15牛，车钩处却只有9牛：只看整体必漏关键截面，受力图划开系统，等效力和量纲检验兜底。
 
-Hook / Phaenomen (Sol-Logbuch, Episode 4 von 28): Mars-Anflug, Sol-052 Landebeine-Daempfer blockiert bei -63 Grad. Navigatorin Lena meldet: v0 = 268 m/s, a = 2.5 m/s2, Ziel s = 948 m, Mechaniker Tom ruft: Halte die Kurve! Der Bordcomputer geht auf Rot, das Funkgeraet rauscht, die Crew haelt den Atem an. Genau hier entscheidet CN-Tricks: sechs Verfahren fuer die Physik-Klausur ueber Landung oder Absturz, ueber Festfahren oder Weiterfahrt, ueber Andocken oder Abprall. Das Logbuch des vorherigen Sols (Physik-CN-Tricks-DE-L1.md) warnte bereits vor diesem Moment, und das naechste Fenster (Physik-Diagramme-DE-L1.md) oeffnet sich nur, wenn diese Aufgabe geloest wird. Die Sensoren streuen, die Diagramme zittern, doch die Physik bleibt unbestechlich: Wer Steigung und Flaeche, Kraft und Gegenkraft, Schwung und Stoss richtig liest, rettet die Mission. In dieser Episode stellst du im Sandbox-Labor die Brems- und Gleitzahlen so ein, dass die Kapsel sicher durchkommt. Beobachte zuerst das Phaenomen in Ruhe, benenne dann die Groessen mit exakten Einheiten, pruefe schliesslich die Bilanz mit einer Gegenrechnung. Der folgende Weg fuehrt vom Alarmton zur sauberen Klausurloesung: erst das Phaenomen beobachten, dann die Begriffe sichern, dann das Modell rechnen und im Labor bestaetigen.
+Hook / Phaenomen: Zwei Wagen mit 15 Newton, doch innen zieht die Kupplung nur mit 9 Newton. Wer nur das Ganze sieht, uebersieht die Trennstelle. **Kraeftediagramm** und **Systemschnitt** zerlegen das Problem, **Ersatzkraft** und **Dimensionsprobe** sichern Zahl und Einheit.
 
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Erst das Bild, dann die Formel, dann die Zahl: Kein Ansatz ohne Kraeftediagramm und Systemwahl.`
 
 ## Schritt 2 — entdecken: Ausruestungskiste der Mars-Crew
 PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
 
 中文在上，德语在下：
 
-- 受力图 — das Kraeftediagramm：把所有力画成带方向的箭头，一个不多、一个不少。
-- 系统 — das System：一次研究中被当成一个整体的对象。
-- 曲线下面积 — die Flaeche unter der Kurve：v-t 图线下的面积即路程。
-- 等效力 — die Ersatzkraft：用一个力替换多个力，效果完全相同。
-- 量纲检验 — die Dimensionsprobe：代入数字前先检查单位是否等于目标单位。
+- 受力图 — das Kraeftediagramm：把所有力画成带方向的箭头，一个不多、一个不少。 Alle Kraefte erscheinen als Pfeile mit Richtung; keine zu viel, keine zu wenig. Mechanismus: System freischneiden und jede Kraft als Pfeil eintragen. Klausur-Tipp: Jeden Pfeil benennen, sonst zaehlt er nicht.
+- 系统 — das System：一次研究中被当成一个整体的对象。 Als Einheit betrachtete Koerper teilen sich eine gemeinsame Beschleunigung. Mechanismus: Systemgrenze waehlen und Gesamtmasse bilden. Klausur-Tipp: Systemwahl in einem Satz begruenden.
+- 曲线下面积 — die Flaeche unter der Kurve：v-t 图线下的面积即路程。 Das Gebiet unter v-t ist der zurueckgelegte Weg. Mechanismus: Flaeche als Dreieck oder Rechteck mit Formel berechnen. Klausur-Tipp: Achsen mit Einheiten beschriften.
+- 等效力 — die Ersatzkraft：用一个力替换多个力，效果完全相同。 Eine Kraft ersetzt mehrere mit exakt gleicher Wirkung. Mechanismus: Parallele oder serielle Kraefte zu einer Kraft vereinen. Klausur-Tipp: Ersatzregel vor dem Einsetzen nennen.
+- 量纲检验 — die Dimensionsprobe：代入数字前先检查单位是否等于目标单位。 Die Einheitenkontrolle entlarvt falsche Ansaetze vor jeder Zahl. Mechanismus: Einheiten vor dem Einsetzen auf Zieleinheit pruefen. Klausur-Tipp: Probe als eigene Zeile vor das Ergebnis setzen.
 
-Klausur-Satz: `Erst das Bild, dann die Formel, dann die Zahl — und vor dem Einsetzen wird die Einheit geprueft.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Erst das Bild, dann die Formel, dann die Zahl — und vor dem Einsetzen wird die Einheit geprueft.`
 
 ## Schritt 3 — entdecken: Wirkungskette hinter CN-Tricks: sechs Verfahren fuer die Physik-Klausur
 ENTDECKEN（1概念 + 1文字图解）：
@@ -94,9 +92,8 @@ ENTDECKEN（1概念 + 1文字图解）：
         0         5 s
 ```
 
-Klausur-Satz: `Die sechs Verfahren beschleunigen das Loesen, aber erst der ausgeschriebene Ansatz mit Formel und Einheit macht die Loesung klausurfaehig.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+$$a = \frac{15}{5{,}0} = 3{,}0\,\mathrm{m/s^2},\quad F = 9{,}0\,\mathrm{N}$$
+`Klausur-Satz: Die sechs Verfahren beschleunigen das Loesen, aber erst der ausgeschriebene Ansatz mit Formel und Einheit macht die Loesung klausurfaehig.`
 
 ## Anekdote & Fun-Fact
 
@@ -107,7 +104,7 @@ Klausur-Satz: `Die sechs Verfahren beschleunigen das Loesen, aber erst der ausge
 **Bezug zum Konzept**: `Die ungeraden Zahlen 1 : 3 : 5 folgen direkt aus s = 0.5*a*t^2 und sind das klassische Beispiel fuer eine Kurzregel mit genannter Bedingung (Start aus der Ruhe).`
 
 ## Schritt 4 — ausprobieren: Sandbox-Auftrag Staub frisst die Messung
-Kontinuitaet: Vorher Physik-CN-Tricks-DE-L1.md | Nachher Physik-Diagramme-DE-L1.md. Krise dieser Episode: Sol-052 Landebeine-Daempfer blockiert bei -63 Grad. Target: v0 = 268 m/s, a = 2.5 m/s2, Ziel s = 948 m.
+Kontinuitaet: Vorher Physik-CN-Tricks-DE-L1.md | Nachher Physik-Diagramme-DE-L1.md. Krise dieser Episode: Sol-052 Landebeine-Daempfer blockiert bei -63 Grad. Zielgroessen: 2,0 kg plus 3,0 kg mit 15 N, Ziel Kupplungskraft 9,0 N
 
 BEISPIEL（正确例题示范，含教具操作与解答）：
 
@@ -122,14 +119,12 @@ HILFE:
 
 MUSTERLÖSUNG: Das Kräftediagramm enthält genau vier Kräfte: die Gewichtskraft F_G = m*g = 5,0 kg * 10 m/s^2 = 50 N nach unten, die gleich große Normalkraft F_N = 50 N nach oben, die Zugkraft F_Zug = 20 N nach rechts und die Gleitreibung F_R = mu*F_N = 0,20 * 50 N = 10 N nach links. Senkrecht gilt Kräftegleichgewicht, waagerecht ist die resultierende Kraft F_res = F_Zug - F_R = 20 N - 10 N = 10 N. Aus F_res = m*a folgt a = F_res/m = 10 N / 5,0 kg = 2,0 m/s^2. Dimensionsprobe: [F_res/m] = (kg*m/s^2)/kg = m/s^2, was der Einheit der Beschleunigung entspricht; die Größenordnung 2,0 m/s^2 ist für einen gezogenen Block plausibel.
 
-Klausur-Satz: `Aus dem vollstaendigen Kraeftediagramm folgt fuer den Block mit F_res = 10 N eine Beschleunigung von 2,0 m/s^2, und die Dimensionsprobe bestaetigt den Ansatz.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Aus dem vollstaendigen Kraeftediagramm folgt fuer den Block mit F_res = 10 N eine Beschleunigung von 2,0 m/s^2, und die Dimensionsprobe bestaetigt den Ansatz.`
 
 ## Schritt 5 — ausprobieren: Duell der Verfahren Staub frisst die Messung
 VERGLEICH辨别实验（双向辨析：整体眼 vs. 隔离眼）：
 
-VERGLEICH: Wähle erst das Verfahren — 【选程序】先看题目问的是"系统整体的运动"还是"物体之间的内力"：(i) Ganzheits-Verfahren（整体法：把多个物体看成一个系统，用 a = F_aussen / m_ges 一次求共同加速度）oder (ii) Isolations-Verfahren（隔离法：只切开其中一个物体，用 F_innen = m_teil * a 求相互作用力）—— dann lösen.
+VERGLEICH: (Weg A quantitativ-rechnerisch gegen Weg B qualitativ-strukturell): Wähle erst das Verfahren — 【选程序】先看题目问的是"系统整体的运动"还是"物体之间的内力"：(i) Ganzheits-Verfahren（整体法：把多个物体看成一个系统，用 a = F_aussen / m_ges 一次求共同加速度）oder (ii) Isolations-Verfahren（隔离法：只切开其中一个物体，用 F_innen = m_teil * a 求相互作用力）—— dann lösen.
 
 Weg A: Erst Verfahren waehlen, dann rechnen.
 
@@ -143,20 +138,16 @@ HILFE: A: Gefragt ist die gemeinsame Beschleunigung des ganzen Systems → Verfa
 
 ANTWORT: A erfordert Verfahren (i): Die beiden Wagen bilden ein System der Gesamtmasse m_ges = 2,0 kg + 4,0 kg = 6,0 kg, die äußere Kraft ist F = 12 N, also a = F/m_ges = 12 N / 6,0 kg = 2,0 m/s^2. B erfordert Verfahren (ii): Man schneidet den hinteren Wagen (m2 = 4,0 kg) frei; auf ihn wirkt nur die Seilkraft als äußere Kraft, und es gilt F_Seil = m2*a = 4,0 kg * 2,0 m/s^2 = 8,0 N. Zur Kontrolle wirkt auf den vorderen Wagen (2,0 kg) die Differenz 12 N - 8,0 N = 4,0 N, was gerade m1*a = 2,0 kg * 2,0 m/s^2 = 4,0 N entspricht.
 
-Klausur-Satz: `Die gemeinsame Beschleunigung folgt aus dem Gesamtsystem, die innere Seilkraft dagegen erst nach dem Freischneiden eines einzelnen Wagens.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Die gemeinsame Beschleunigung folgt aus dem Gesamtsystem, die innere Seilkraft dagegen erst nach dem Freischneiden eines einzelnen Wagens.`
 
 ## Schritt 6 — check: Selbsttest zu CN-Tricks: sechs Verfahren fuer die Physik-Klausur: Staub frisst die Messung
 CHECK检索默写（自测 3 题，与答案配对）：
 
-FRAGE: In welcher Reihenfolge werden die Kraefte im Kraeftediagramm eingezeichnet? | ANTWORT: Zuerst die Gewichtskraft, dann die Normalkraft, dann die Reibung und zuletzt die aeussere Zugkraft.
-FRAGE: Wann verwendet man das Ganzheitsverfahren, wann das Isolationsverfahren? | ANTWORT: Das Ganzheitsverfahren fuer die gemeinsame Beschleunigung des Systems, das Isolationsverfahren fuer die innere Kraft zwischen den Teilen.
-FRAGE: Was prueft die Dimensionsprobe, und was kann sie nicht leisten? | ANTWORT: Sie prueft, ob die Einheit des Ergebnisses stimmt; sie erkennt aber keine falschen Koeffizienten oder falschen Bedingungen.
+- FRAGE: In welcher Reihenfolge werden die Kraefte im Kraeftediagramm eingezeichnet? | ANTWORT: Zuerst die Gewichtskraft, dann die Normalkraft, dann die Reibung und zuletzt die aeussere Zugkraft.
+- FRAGE: Wann verwendet man das Ganzheitsverfahren, wann das Isolationsverfahren? | ANTWORT: Das Ganzheitsverfahren fuer die gemeinsame Beschleunigung des Systems, das Isolationsverfahren fuer die innere Kraft zwischen den Teilen.
+- FRAGE: Was prueft die Dimensionsprobe, und was kann sie nicht leisten? | ANTWORT: Sie prueft, ob die Einheit des Ergebnisses stimmt; sie erkennt aber keine falschen Koeffizienten oder falschen Bedingungen.
 
-Klausur-Satz: `Das Ganzheitsverfahren liefert die gemeinsame Beschleunigung, das Isolationsverfahren die innere Kraft, und die Dimensionsprobe kontrolliert beide Ansaetze ueber die Einheit.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Das Ganzheitsverfahren liefert die gemeinsame Beschleunigung, das Isolationsverfahren die innere Kraft, und die Dimensionsprobe kontrolliert beide Ansaetze ueber die Einheit.`
 
 ## Fehlvorstellung
 
@@ -175,7 +166,7 @@ ROLLE: Du bist Nachhilfelehrerin und bringst einer Schülergruppe die chinesisch
 SITUATION: Die Gruppe rechnet zwar schnell, verliert aber regelmäßig Punkte, weil die Ansätze fehlen und die Diagramme unvollständig sind. Erkläre in einer zusammenhängenden Stellungnahme (ca. 150 Wörter), wie man die sechs Verfahren mit den deutschen Schreibregeln verbindet, sodass Tempo und Formalkorrektheit zusammenkommen.
 RUBRIC (30 XP): Benennung und Zuordnung von mindestens drei Verfahren zu deutschen Schritten (10 XP) | Erlaeuterung, warum der ausgeschriebene Ansatz Punkte sichert (10 XP) | Beispiel zur Wahl zwischen Ganzheits- und Isolationsverfahren (5 XP) | Adressatengerechte, fachsprachlich korrekte Darstellung (5 XP).
 
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Wer System schneidet, Kraefte bilanziert, Ersatzkraft nutzt und Einheiten prueft, erhaelt die volle Punktzahl.`
 
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Staub frisst die Messung
 TAKEAWAY 1盒（核心总结）：
@@ -187,4 +178,4 @@ REFLEXION 2问：
 1. 过程自省：Welcher Schritt fiel schwerer — das vollstaendige Kraeftediagramm (Schritt 4) oder die Wahl zwischen Ganzheits- und Isolationsverfahren im Vergleich (Schritt 5)?
 2. 元认知计划：Beim nächsten Mal zeichne ich zuerst das Kraeftediagramm und pruefe die Einheit, bevor ich Zahlen einsetze.
 
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Physik löst man mit Schere und Massband: Schneiden, ersetzen, Einheiten pruefen.`

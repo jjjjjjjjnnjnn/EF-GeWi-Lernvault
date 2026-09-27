@@ -13,7 +13,7 @@ version: Lesson-v3
 
 # Lernreise: CN-Training — vier Aufgaben unter Zeitdruck (L1, Ziel Klausur)
 
-<!-- Campaign: Optimierung | Episode 6/33 | Krise: Staudamm-Pegel steigt 1,7 cm pro Minute | Target: x0 = 3, h = 0.7, Target m = 5.22 | Tool: formula -->
+<!-- Campaign: Optimierung | Episode 6/33 | Krise: Staudamm-Pegel steigt 1,7 cm pro Minute | Zielgroessen: Tangente bei x0, Gerade mit Richtungsvektor, Baum mit Pfadprodukt | Tool: formula -->
 
 ## Schritt 1 — entdecken: Audit der Kennzahlen
 ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
@@ -24,26 +24,24 @@ ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
 ### Hook / Phaenomen
 
-【首席算法官·第6集/共33集】警报：Staudamm-Pegel steigt 1,7 cm pro Minute。首席算法官下令：“x0 = 3, h = 0.7, Target m = 5.22！”全场红灯闪烁。上一集（Mathe-CN-Training-DE-L1.md）的伏笔在此引爆，下一集（Mathe-CN-Tricks-DE-L1.md）只给交出最优解的人放行。本集你要在沙盘里亲手把工程从亏损/相撞边缘拉回来：先看现象、再点装备、最后算出让审计点头的 Bilanz。记住：先看区间还是时刻、再选割线还是切线/极值还是向量，做完必做 Gegenprobe——这就是工程帝国法则，也是 Klausur 拿分法则。
+切线、向量、树图、期望：四种题型四种语言，用一把钥匙开四把锁必错三道，先认语言再动手。
 
-Hook / Phaenomen (CAO-Log, Episode 6 von 33): Super-Engineering-Zentrale, Staudamm-Pegel steigt 1,7 cm pro Minute. Der Chief Algorithm Officer ruft: x0 = 3, h = 0.7, Target m = 5.22, die Assistentin meldet Rot-Alarm auf allen Screens. Genau hier entscheidet CN-Training: vier Aufgaben unter Zeitdruck ueber Freigabe oder Sperrung, ueber Kostenexplosion oder Rekordgewinn, ueber Kollision oder gruene Welle. Das Protokoll der Vorwoche (Mathe-CN-Training-DE-L1.md) legte die Spur, das naechste Audit (Mathe-CN-Tricks-DE-L1.md) laesst keine Ausrede mehr zu. Die Messwerte streuen, die Kurven zittern, doch die Mathematik bleibt unbestechlich: Wer Sekante und Tangente, Maximum und Wendepunkt, Vektor und Ebene richtig liest, rettet das Projekt. In dieser Episode stellst du im Sandbox-Optimierer die Parameter so ein, dass alle Kennzahlen im gruenen Bereich landen. Beobachte zuerst das Phaenomen in Ruhe, benenne dann die Objekte mit exakter Notation, pruefe schliesslich das Ergebnis mit einer Gegenrechnung. Der folgende Weg fuehrt vom Alarmton zur sauberen Klausurloesung: erst das Phaenomen beobachten, dann die Begriffe sichern, dann das Modell rechnen und im Labor bestaetigen.
+Hook / Phaenomen: Vier Sprachen, ein Kurs: Die **Tangente** spricht Analysis, der **Richtungsvektor** spricht Geometrie, das **Baumdiagramm** spricht Stochastik. Wer alles mit einer Methode angeht, scheitert dreimal. Der **Erwartungshorizont** verraet, welche Sprache pro Aufgabe zaehlt.
 
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Die Aufgabe bestimmt die Sprache: Tangente, Gerade, Baum oder Extremum verlangen je eigenes Werkzeug.`
 
 ## Schritt 2 — entdecken: Ausruestungskiste der Algorithmus-Unit
 PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
 
 中文在上，德语在下：
 
-- 切线 — Tangente：`t(x) = f(x0) + f'(x0) * (x - x0)`，用点与斜率写成点斜式。
-- 方向向量 — Richtungsvektor：直线参数式 `x = a + s * u` 中的 u，决定方向。
-- 点检验 — Punktprobe：把点代入直线，看三个坐标方程是否共用同一个 s。
-- 树形图 — Baumdiagramm：分步实验沿树枝相乘、跨枝相加。
-- 期望视野 — Erwartungshorizont (EHZ)：官方评分标准，按采分点逐项给分。
+- 切线 — Tangente：`t(x) = f(x0) + f'(x0) * (x - x0)`，用点与斜率写成点斜式。 Sie beruehrt den Graphen in genau einem Punkt und traegt dort die Steigung f Strich. Mechanismus: Punkt und Steigung in die Tangentengleichung einsetzen. Klausur-Tipp: Punktprobe plus Steigung als zwei Bausteine zeigen.
+- 方向向量 — Richtungsvektor：直线参数式 `x = a + s * u` 中的 u，决定方向。 Er legt die Richtung der Geraden fest, nicht ihre Lage im Raum. Mechanismus: Stuetzvektor plus Vielfaches des Richtungsvektors aufstellen. Klausur-Tipp: Richtung und Lage als getrennte Angaben lesen.
+- 点检验 — Punktprobe：把点代入直线，看三个坐标方程是否共用同一个 s。 Genau ein Parameter s muss alle drei Zeilen gleichzeitig erfuellen. Mechanismus: Punktkoordinaten einsetzen und s aus jeder Zeile bestimmen. Klausur-Tipp: Alle drei Zeilen pruefen, nicht nur zwei.
+- 树形图 — Baumdiagramm：分步实验沿树枝相乘、跨枝相加。 Jede Stufe verzweigt vollstaendig, kein Pfad darf fehlen. Mechanismus: Entlang Pfad multiplizieren und ueber Pfade addieren. Klausur-Tipp: Pfadprodukt und Pfadsumme als getrennte Regeln nennen.
+- 期望视野 — Erwartungshorizont (EHZ)：官方评分标准，按采分点逐项给分。 Jede Teilleistung traegt feste Punkte, der Weg zaehlt oft mehr als die Zahl. Mechanismus: Jeden Schritt mit Ansatz, Formel und Einheit hinschreiben. Klausur-Tipp: Ansatz auch bei falschem Endergebnis vollständig lassen.
 
-Klausur-Satz: `Die Tangente bei x0 ergibt sich aus dem Punkt (x0 | f(x0)) und der Steigung f'(x0).`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Die Tangente bei x0 ergibt sich aus dem Punkt (x0 | f(x0)) und der Steigung f'(x0).`
 
 ## Schritt 3 — entdecken: Wirkungskette hinter CN-Training: vier Aufgaben unter Zeitdruck
 ENTDECKEN（1概念 + 1文字图解）：
@@ -62,9 +60,8 @@ ENTDECKEN（1概念 + 1文字图解）：
    EHZ-Selbstbewertung: Rechenfehler vs Konzeptfehler trennen
 ```
 
-Klausur-Satz: `Die vier Aufgaben pruefen die Kernkompetenzen der EF: Differenzieren, Vektorrechnung, Wahrscheinlichkeit und Extremwertbestimmung.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+$$t(x) = f(x_0)+f'(x_0)(x-x_0),\quad P = \text{Pfadprodukt}$$
+`Klausur-Satz: Die vier Aufgaben pruefen die Kernkompetenzen der EF: Differenzieren, Vektorrechnung, Wahrscheinlichkeit und Extremwertbestimmung.`
 
 ## Anekdote & Fun-Fact
 
@@ -75,7 +72,7 @@ Klausur-Satz: `Die vier Aufgaben pruefen die Kernkompetenzen der EF: Differenzie
 **Bezug zum Konzept**: `Eine Klausur ist eine abgeschlossene, zeitlich begrenzte Pruefung; der Zeitmodus trainiert genau diese Situation.`
 
 ## Schritt 4 — ausprobieren: Sandbox-Auftrag Audit der Kennzahlen
-Kontinuitaet: Vorher Mathe-CN-Training-DE-L1.md | Nachher Mathe-CN-Tricks-DE-L1.md. Krise dieser Episode: Staudamm-Pegel steigt 1,7 cm pro Minute. Target: x0 = 3, h = 0.7, Target m = 5.22.
+Kontinuitaet: Vorher Mathe-CN-Training-DE-L1.md | Nachher Mathe-CN-Tricks-DE-L1.md. Krise dieser Episode: Staudamm-Pegel steigt 1,7 cm pro Minute. Zielgroessen: Tangente bei x0, Gerade mit Richtungsvektor, Baum mit Pfadprodukt
 
 BEISPIEL（正确例题示范，含教具操作与解答）：
 
@@ -92,7 +89,7 @@ MUSTERLÖSUNG: a) Mit der Potenzregel gilt f'(x) = 3x^2 - 8x + 5. b) Es ist f(2)
 
 EHZ-Punkte (6 BE): f'(x) korrekt (2 BE) | f(2) und f'(2) korrekt (2 BE) | Tangentengleichung mit Ansatz (2 BE).
 
-Klausur-Satz: `Die Tangente bei x0 = 2 lautet t(x) = x + 1, da f(2) = 3 und f'(2) = 1 gilt.`
+`Klausur-Satz: Die Tangente bei x0 = 2 lautet t(x) = x + 1, da f(2) = 3 und f'(2) = 1 gilt.`
 
 TRAININGSPACK（其余三题，限时完成，做完按 EHZ 自评）：
 
@@ -114,14 +111,12 @@ Lösungsweg: Da x > 0 und 25/x > 0 gilt: A(x) >= 2 * Wurzel(x * 25/x) = 2 * 5 = 
 EHZ-Punkte: Positivitaet genannt (1 BE) | AM-GM-Abschaetzung (2 BE) | Gleichheitsstelle x = 5 (1 BE) | Ableitungs-Bestaetigung (2 BE) | Minimumswert 10 mit Satz (1 BE).
 DE-Transfer-Satz: `Da beide Summanden positiv sind, folgt mit AM-GM A(x) >= 10 mit Gleichheit bei x = 5; die Ableitung bestaetigt dort ein Minimum mit Wert 10.`
 
-Klausur-Satz: `Die vier Aufgaben folgen dem Muster Ansatz, Rechnung und Antwortsatz, wobei jede Aufgabe ihre eigene Kernmethode besitzt.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Die vier Aufgaben folgen dem Muster Ansatz, Rechnung und Antwortsatz, wobei jede Aufgabe ihre eigene Kernmethode besitzt.`
 
 ## Schritt 5 — ausprobieren: Duell der Verfahren Audit der Kennzahlen
 VERGLEICH辨别实验（双向辨析：均值眼 vs. 求导眼）：
 
-VERGLEICH: Waehle erst das Verfahren — 【选程序】先判断题目问的是 (i) AM-GM-Verfahren（和式为正且乘积固定，求最小值）还是 (ii) Ableitungs-Verfahren（多项式求单调与极值，必须列符号表）—— dann rechnen.
+VERGLEICH: (Weg A quantitativ-rechnerisch gegen Weg B qualitativ-strukturell): Waehle erst das Verfahren — 【选程序】先判断题目问的是 (i) AM-GM-Verfahren（和式为正且乘积固定，求最小值）还是 (ii) Ableitungs-Verfahren（多项式求单调与极值，必须列符号表）—— dann rechnen.
 
 Weg A: Erst Verfahren waehlen, dann rechnen.
 
@@ -134,20 +129,16 @@ HILFE: A ist eine Summe zweier positiver Terme mit festem Produkt -> Verfahren (
 
 ANTWORT: A erfordert Verfahren (i): A(x) >= 2 * Wurzel(25) = 10, Gleichheit fuer x = 5, also Minimum 10 an der Stelle x = 5. B erfordert Verfahren (ii): g'(x) = 3x^2 - 8x + 5 = 0 ergibt x = 1 und x = 5/3; mit g''(x) = 6x - 8 folgt g''(1) = -2 < 0 (Hochpunkt) und g''(5/3) = 2 > 0 (Tiefpunkt).
 
-Klausur-Satz: `Fuer Summen positiver Terme mit festem Produkt nutzt man AM-GM, fuer Polynome das Ableitungsverfahren mit Vorzeichentabelle.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Fuer Summen positiver Terme mit festem Produkt nutzt man AM-GM, fuer Polynome das Ableitungsverfahren mit Vorzeichentabelle.`
 
 ## Schritt 6 — check: Selbsttest zu CN-Training: vier Aufgaben unter Zeitdruck: Audit der Kennzahlen
 CHECK检索默写（自测 3 题，与答案配对）：
 
-FRAGE: Wie lautet die Punkt-Steigungs-Form der Tangente an der Stelle x0? | ANTWORT: t(x) = f(x0) + f'(x0) * (x - x0).
-FRAGE: Woran erkennt man bei einer Punktprobe, dass ein Punkt auf einer Geraden liegt? | ANTWORT: Daran, dass ein einziger Parameter s alle drei Koordinatengleichungen erfuellt.
-FRAGE: Welche zwei Bedingungen braucht AM-GM, um ein Minimum zu bestimmen? | ANTWORT: Positivitaet beider Terme und ein festes Produkt; der Wert liegt an der Gleichheitsstelle.
+- FRAGE: Wie lautet die Punkt-Steigungs-Form der Tangente an der Stelle x0? | ANTWORT: t(x) = f(x0) + f'(x0) * (x - x0).
+- FRAGE: Woran erkennt man bei einer Punktprobe, dass ein Punkt auf einer Geraden liegt? | ANTWORT: Daran, dass ein einziger Parameter s alle drei Koordinatengleichungen erfuellt.
+- FRAGE: Welche zwei Bedingungen braucht AM-GM, um ein Minimum zu bestimmen? | ANTWORT: Positivitaet beider Terme und ein festes Produkt; der Wert liegt an der Gleichheitsstelle.
 
-Klausur-Satz: `Ansatz, Rechnung und Antwortsatz gehoeren zu jeder Aufgabe; AM-GM verlangt Positivitaet und die Gleichheitsbedingung.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Ansatz, Rechnung und Antwortsatz gehoeren zu jeder Aufgabe; AM-GM verlangt Positivitaet und die Gleichheitsbedingung.`
 
 ## Fehlvorstellung
 
@@ -166,7 +157,7 @@ ROLLE: Du bist Lerncoach und wertest die Ergebnisse des 60-Minuten-Trainings aus
 SITUATION: Ein Schueler hat alle vier Aufgaben bearbeitet, aber bei Aufgabe 2 nur den Vektor angegeben, bei Aufgabe 3 die zweite Wahrscheinlichkeit als 4/7 geschrieben und bei Aufgabe 4 das Ergebnis ohne Gleichheitsbedingung gelassen. Beurteile seine Leistung in einer zusammenhaengenden Darstellung (ca. 150 Woerter), ordne die Fehler nach EHZ-Punkten ein und unterscheide Rechenfehler von Konzeptfehlern.
 RUBRIC (30 XP): Zuordnung der Fehler zu den EHZ-Punkten (5 XP) | Analyse Aufgabe 2: fehlender Nachweis der Laenge und Punktprobe (10 XP) | Analyse Aufgabe 3 und 4: Konzeptfehler ohne Zuruecklegen bzw. fehlende Gleichheitsbedingung (10 XP) | Kriteriengeleitetes Fazit mit Lernempfehlung (5 XP).
 
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Wer Aufgabentyp, passendes Werkzeug und Erwartungshorizont je Teilschritt nennt und vorrechnet, sichert alle Teilpunkte.`
 
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Audit der Kennzahlen
 TAKEAWAY 1盒（核心总结）：
@@ -178,4 +169,4 @@ REFLEXION 2问：
 1. 过程自省：Welcher Schritt fiel schwerer — die Tangente in Aufgabe 1 (Schritt 4) oder die Wahl zwischen AM-GM und Ableitung in Aufgabe 4 (Schritt 5)?
 2. 元认知计划：Beim naechsten Mal pruefe ich bei jeder Aufgabe zuerst die Bedingung der Methode (Positivitaet, kein Zuruecklegen, gemeinsames s) und erst danach rechne ich.
 
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Training heisst Uebersetzen: Alltagssprache wird erst durch das richtige Verfahren zu Klausursprache.`

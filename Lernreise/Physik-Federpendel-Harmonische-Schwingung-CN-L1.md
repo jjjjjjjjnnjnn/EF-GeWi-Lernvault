@@ -13,7 +13,7 @@ version: Lesson-v3
 
 # Lernreise: Federpendel und harmonische Schwingung (L1, Ziel Klausur)
 
-<!-- Campaign: Mars-Mission | Episode 9/28 | Krise: Sol-067 Sauerstoff-Leck 0,8 bar Druckverlust | Target: v0 = 303 m/s, a = 3.2 m/s2, Ziel s = 1133 m | Tool: schiefe-ebene -->
+<!-- Campaign: Mars-Mission | Episode 9/28 | Krise: Sol-067 Sauerstoff-Leck 0,8 bar Druckverlust | Zielgroessen: m = 0,50 kg, D = 20 N/m, Ziel T etwa 0,99 s | Tool: formula -->
 
 ## Schritt 1 — entdecken: Schwingung im Habitat
 ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
@@ -24,26 +24,24 @@ ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
 ### Hook / Phaenomen
 
-【火星拓荒者·第9集/共28集】警报：Sol-067 Sauerstoff-Leck 0,8 bar Druckverlust。领航员 Lena 大喊：“v0 = 303 m/s, a = 3.2 m/s2, Ziel s = 1133 m！”机械师 Tom 回应：“稳住曲线！”上一集（Physik-Energieerhaltung-Mechanik-L1.md）埋下的隐患在此爆发，下一集（Physik-Federpendel-Harmonische-Schwingung-DE-L1.md）的大门只为算对的人打开。本集你要在沙盘里亲手把飞船从超速边缘救回来：先看现象、再点装备、最后算出让考官点头的 Bilanz。记住：读图先看轴、计算必带单位、做完必用另一张图验算——这就是火星人生存法则，也是 Klausur 拿分法则。
+汽车压过减速带：没减震能晃到天荒地老，有减震一秒回稳；地震区的高楼阻尼器也是同款物理，专吃共振。
 
-Hook / Phaenomen (Sol-Logbuch, Episode 9 von 28): Mars-Anflug, Sol-067 Sauerstoff-Leck 0,8 bar Druckverlust. Navigatorin Lena meldet: v0 = 303 m/s, a = 3.2 m/s2, Ziel s = 1133 m, Mechaniker Tom ruft: Halte die Kurve! Der Bordcomputer geht auf Rot, das Funkgeraet rauscht, die Crew haelt den Atem an. Genau hier entscheidet Federpendel und harmonische Schwingung ueber Landung oder Absturz, ueber Festfahren oder Weiterfahrt, ueber Andocken oder Abprall. Das Logbuch des vorherigen Sols (Physik-Energieerhaltung-Mechanik-L1.md) warnte bereits vor diesem Moment, und das naechste Fenster (Physik-Federpendel-Harmonische-Schwingung-DE-L1.md) oeffnet sich nur, wenn diese Aufgabe geloest wird. Die Sensoren streuen, die Diagramme zittern, doch die Physik bleibt unbestechlich: Wer Steigung und Flaeche, Kraft und Gegenkraft, Schwung und Stoss richtig liest, rettet die Mission. In dieser Episode stellst du im Sandbox-Labor die Brems- und Gleitzahlen so ein, dass die Kapsel sicher durchkommt. Beobachte zuerst das Phaenomen in Ruhe, benenne dann die Groessen mit exakten Einheiten, pruefe schliesslich die Bilanz mit einer Gegenrechnung. Der folgende Weg fuehrt vom Alarmton zur sauberen Klausurloesung: erst das Phaenomen beobachten, dann die Begriffe sichern, dann das Modell rechnen und im Labor bestaetigen.
+Hook / Phaenomen: Ein Wagen rauscht ueber eine Bodenwelle: Ohne **Stossdaempfer** wuerde die Karosserie endlos nachschwingen. Mit Daempfer klingt die **Schwingung** in einer Sekunde ab. Dieselbe Physik schuetzt Hochhaeuser im Erdbebengebiet: Abgestimmte **Tilger** schlucken die Resonanz statt sie zu verstaerken.
 
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Rueckstellung erzeugt Schwingung: Federkraft minus D mal x treibt die Masse periodisch zur Ruhelage zurueck.`
 
 ## Schritt 2 — entdecken: Ausruestungskiste der Mars-Crew
 PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
 
 中文在上，德语在下：
 
-- 位移 — Auslenkung / Elongation：偏离平衡位置的距离 $x$，带正负号。【陷阱：Auslenkung（瞬时位移，可变）不是 Amplitude（振幅，最大值，恒正）。】
-- 回复力 — Rueckstellkraft：$F = -D\,x$，永远指向平衡位置。【陷阱：Rueckstellkraft（变力，随 $x$ 变）不是 Gewichtskraft（恒力 $mg$）。】
-- 劲度系数 — Federkonstante：弹簧硬度 $D$，单位 $\mathrm{N/m}$。【陷阱：Federkonstante（弹簧属性）不是 Federkraft（弹簧力 $Dx$，随拉伸变）。】
-- 振幅 — Amplitude：最大位移 $x_{max}$，决定能量。【陷阱：Amplitude（位移极值）不是 Schwingungsdauer（周期，时间量）。】
-- 周期频率 — Periodendauer und Frequenz：$T = 2\pi\sqrt{m/D}$，$f = 1/T$。【陷阱：Frequenz（每秒次数 $f$）不是 Kreisfrequenz（角频率 $\omega = 2\pi f$）。】
+- 位移 — Auslenkung / Elongation：偏离平衡位置的距离 $x$，带正负号。【陷阱：Auslenkung（瞬时位移，可变）不是 Amplitude（振幅，最大值，恒正）。】 An den Umkehrpunkten steckt alles in der Feder, in der Ruhelage alles im Tempo. Aus D folgt die Kraft F gleich minus D mal x; D selbst ist reine Federeigenschaft. Mechanismus: Umkehrpunkt gegen Ruhelage als Energiesorten lesen. Klausur-Tipp: Ruhelage als schnell, Umkehr als Stillstand benennen.
+- 回复力 — Rueckstellkraft：$F = -D\,x$，永远指向平衡位置。【陷阱：Rueckstellkraft（变力，随 $x$ 变）不是 Gewichtskraft（恒力 $mg$）。】 Aus D folgt die Kraft F gleich minus D mal x; D selbst ist reine Federeigenschaft. An den Umkehrpunkten steckt alles in der Feder, in der Ruhelage alles im Tempo. Mechanismus: Auslenkung messen und mit D multiplizieren. Klausur-Tipp: Minuszeichen als Richtung zur Ruhelage deuten.
+- 劲度系数 — Federkonstante：弹簧硬度 $D$，单位 $\mathrm{N/m}$。【陷阱：Federkonstante（弹簧属性）不是 Federkraft（弹簧力 $Dx$，随拉伸变）。】 Der Kosinus beschreibt die Auslenkung in der Zeit; seine Amplitude bleibt konstant. Der Kosinus beschreibt die Auslenkung in der Zeit; seine Amplitude bleibt konstant. Mechanismus: Kosinusansatz einsetzen und Koeffizienten vergleichen. Klausur-Tipp: Kosinus als Loesung nennen und Amplitude ablesen.
+- 振幅 — Amplitude：最大位移 $x_{max}$，决定能量。【陷阱：Amplitude（位移极值）不是 Schwingungsdauer（周期，时间量）。】 Sie haengt nur von m und D ab, nicht von der Amplitude. Sie haengt nur von m und D ab, nicht von der Amplitude. Mechanismus: Masse und Haerte einsetzen und Wurzel ziehen. Klausur-Tipp: Doppelte Masse als Faktor Wurzel zwei deuten.
+- 周期频率 — Periodendauer und Frequenz：$T = 2\pi\sqrt{m/D}$，$f = 1/T$。【陷阱：Frequenz（每秒次数 $f$）不是 Kreisfrequenz（角频率 $\omega = 2\pi f$）。】 Sie folgt aus D und m ueber f gleich eins durch T; haertere Feder heisst hoehere Frequenz. Sie folgt aus D und m ueber f gleich eins durch T; haertere Feder heisst hoehere Frequenz. Mechanismus: Kehrwert der Dauer bilden und in Hertz angeben. Klausur-Tipp: Amplitude als unabhaengig nennen.
 
-Klausur-Satz: `Die Periodendauer haengt nur von Masse und Federkonstante ab, nicht von der Amplitude.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Die Periodendauer haengt nur von Masse und Federkonstante ab, nicht von der Amplitude.`
 
 ## Schritt 3 — entdecken: Wirkungskette hinter Federpendel und harmonische Schwingung
 ENTDECKEN（1概念 + 1文字图解，中文在上、德语在下）：
@@ -79,9 +77,9 @@ Gleichgewicht o -- Auslenkung x --> Rueckstellkraft -Dx <--
 Zeitkurve: Sinus, Periode T unabhaengig von Amplitude
 Regel: m hoch -> T lang | D hoch -> T kurz
 ```
-Klausur-Satz: `Die Rueckstellkraft $-D\,x$ erzeugt eine Sinuskurve in der Zeit, deren Periode amplitudenunabhaengig ist.`
 
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+$$T = 2\pi\sqrt{m/D}$$
+`Klausur-Satz: Die Rueckstellkraft $-D\,x$ erzeugt eine Sinuskurve in der Zeit, deren Periode amplitudenunabhaengig ist.`
 
 ## Anekdote & Fun-Fact
 
@@ -92,15 +90,17 @@ Klausur-Satz: `Die Rueckstellkraft $-D\,x$ erzeugt eine Sinuskurve in der Zeit, 
 **Bezug zum Konzept**: `Die Isochronie der Schwingung — gleiche Dauer bei jeder Amplitude — ermoeglicht praezise Uhren.`
 
 ## Schritt 4 — ausprobieren: Sandbox-Auftrag Schwingung im Habitat
-Kontinuitaet: Vorher Physik-Energieerhaltung-Mechanik-L1.md | Nachher Physik-Federpendel-Harmonische-Schwingung-DE-L1.md. Krise dieser Episode: Sol-067 Sauerstoff-Leck 0,8 bar Druckverlust. Target: v0 = 303 m/s, a = 3.2 m/s2, Ziel s = 1133 m.
+Kontinuitaet: Vorher Physik-Energieerhaltung-Mechanik-L1.md | Nachher Physik-Federpendel-Harmonische-Schwingung-DE-L1.md. Krise dieser Episode: Sol-067 Sauerstoff-Leck 0,8 bar Druckverlust. Zielgroessen: m = 0,50 kg, D = 20 N/m, Ziel T etwa 0,99 s
 
-[Werkzeug: schiefe-ebene]
+[Werkzeug: formula]
 
 BEISPIEL（正确例题示范，含教具操作与解答，中文在上、德语在下）：
 
 AUFGABE中文导读（沙盒谜题）：弹簧振子周期测得0.50秒，振幅加倍后周期是否变化？若换更重砝码会怎样？
 
 AUFGABE (deuten, AFB II): Ein Federpendel schwingt mit $T = 0{,}50\,\mathrm{s}$. Aendert Verdopplung der Amplitude die Periode? Was bewirkt groessere Masse?
+
+$$T=2\pi\sqrt{m/D}$$
 
 HILFE（中德双语步骤）：
 
@@ -114,14 +114,12 @@ HILFE（中德双语步骤）：
 MUSTERLOESUNG：中文：振幅加倍只跑远不跑慢，周期仍为0.50秒；换重砝码质量增大，周期按根号关系变长，弹簧调硬则反之。
 
 MUSTERLOESUNG (DE): Die Schwingung dauert $0{,}50\,\mathrm{s}$ pro Periode und bleibt bei jeder Amplitude gleich schnell, weil $T = 2\pi\sqrt{m/D}$ keine Amplitude enthaelt. Groessere Masse verlaengert $T$.
-Klausur-Satz: `Die Schwingung dauert $0{,}50\,\mathrm{s}$ pro Periode und bleibt bei jeder Amplitude gleich schnell.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Die Schwingung dauert $0{,}50\,\mathrm{s}$ pro Periode und bleibt bei jeder Amplitude gleich schnell.`
 
 ## Schritt 5 — ausprobieren: Duell der Verfahren Schwingung im Habitat
 VERGLEICH辨别实验（双向辨析：简谐眼 vs. 非简谐眼）：
 
-VERGLEICH: Waehle erst das Konzept — 【选概念】先判断回复力是 (i) Harmonisch-Konzept（$F \sim -x$ 线性回复，正弦图像）还是 (ii) Nicht-harmonisch-Konzept（$F$ 恒定或非线性）—— dann argumentieren.
+VERGLEICH: (Weg A quantitativ-rechnerisch gegen Weg B qualitativ-strukturell): Waehle erst das Konzept — 【选概念】先判断回复力是 (i) Harmonisch-Konzept（$F \sim -x$ 线性回复，正弦图像）还是 (ii) Nicht-harmonisch-Konzept（$F$ 恒定或非线性）—— dann argumentieren.
 
 Weg A: Erst Verfahren waehlen, dann rechnen.
 
@@ -134,20 +132,16 @@ HILFE: A hat keine Rueckstellkraft zum Ausgangspunkt, nur Daempfung -> Konzept (
 
 ANTWORT: A erfordert Konzept (ii): Keine ruecktreibende Kraft, keine Periodizitaet, also nicht harmonisch. B erfordert Konzept (i): Lineare Rueckstellkraft erzeugt Sinus-Schwingung mit $T = 2\pi\sqrt{m/D}$.
 
-Klausur-Satz: `Nur eine lineare Rueckstellkraft der Form $-D\,x$ erzeugt eine harmonische Sinusschwingung.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Nur eine lineare Rueckstellkraft der Form $-D\,x$ erzeugt eine harmonische Sinusschwingung.`
 
 ## Schritt 6 — check: Selbsttest zu Federpendel und harmonische Schwingung: Schwingung im Habitat
 CHECK检索默写（自测 3 题，与答案配对）：
 
-FRAGE: Wie lautet das Kraftgesetz der harmonischen Schwingung? | ANTWORT: $F = -D\,x$, proportional zur Auslenkung, entgegengesetzt gerichtet.
-FRAGE: Wie lautet die Periodenformel des Federpendels? | ANTWORT: $T = 2\pi\sqrt{m/D}$, $f = 1/T$.
-FRAGE: Was liest man aus dem $x$-$t$-Diagramm ab? | ANTWORT: Amplitude als Maximalwert, Periode als Abstand zweier Maxima.
+- FRAGE: Wie lautet das Kraftgesetz der harmonischen Schwingung? | ANTWORT: $F = -D\,x$, proportional zur Auslenkung, entgegengesetzt gerichtet.
+- FRAGE: Wie lautet die Periodenformel des Federpendels? | ANTWORT: $T = 2\pi\sqrt{m/D}$, $f = 1/T$.
+- FRAGE: Was liest man aus dem $x$-$t$-Diagramm ab? | ANTWORT: Amplitude als Maximalwert, Periode als Abstand zweier Maxima.
 
-Klausur-Satz: `Masse vergroessern verlaengert die Periode, Feder verhaerten verkuerzt sie.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Masse vergroessern verlaengert die Periode, Feder verhaerten verkuerzt sie.`
 
 ## Fehlvorstellung
 
@@ -167,7 +161,7 @@ SITUATION: Ein Mitschueler behauptet, eine doppelt so weit ausgelenkte Feder sch
 AUFGABE: Widerlegen Sie das in ca. 150 Woertern mit Formel $T = 2\pi\sqrt{m/D}$ und Energie-Argument und erklaeren Sie, was sich bei groesserer Amplitude wirklich aendert.
 RUBRIC (30 XP): Formel korrekt ohne Amplitude (10 XP) | Isochronie erklaert (10 XP) | Energie/Geschwindigkeit als wahre Aenderung genannt (10 XP).
 
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Wer Wurzelgesetz anwendet, Isochronie begruendet und Messfehler mit Reibung diskutiert, erhaelt die volle Punktzahl.`
 
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Schwingung im Habitat
 TAKEAWAY 1盒（核心总结）：
@@ -179,4 +173,4 @@ REFLEXION 2问：
 1. 过程自省：Welcher Schritt fiel schwerer — die Wurzelrechnung der Periode (Schritt 4) oder die Konzeptwahl harmonisch gegen nicht-harmonisch (Schritt 5)?
 2. 元认知计划：Beim naechsten Mal pruefe ich zuerst das Kraftgesetz auf die Form $-D\,x$, bevor ich eine Formel waehle.
 
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Schwingen heisst pendeln zwischen zwei Konten: Kraft bestimmt die Zeit, Energie das Tempo.`

@@ -13,7 +13,7 @@ version: Lesson-v3
 
 # Lernreise: Formelhandbuch Mechanik: dreisprachig und handgerechnet (L1, Ziel Klausur)
 
-<!-- Campaign: Mars-Mission | Episode 12/28 | Krise: Sol-079 Wasser-Eisbohrung blockiert in 1,4 m Tiefe | Target: v0 = 324 m/s, a = 3.6 m/s2, Ziel s = 1244 m | Tool: formula -->
+<!-- Campaign: Mars-Mission | Episode 12/28 | Krise: Sol-079 Wasser-Eisbohrung blockiert in 1,4 m Tiefe | Zielgroessen: Buchstabenansatz mit F = ma, Ziel Zahl mit Einheit | Tool: formula -->
 
 ## Schritt 1 — entdecken: Sturz durch duenne Luft
 ZIELE (drei messbare Ziele dieser Lektion):
@@ -26,9 +26,9 @@ ZIELE (drei messbare Ziele dieser Lektion):
 
 ### Hook / Phaenomen
 
-Hook / Phaenomen (Sol-Logbuch, Episode 12 von 28): Mars-Anflug, Sol-079 Wasser-Eisbohrung blockiert in 1,4 m Tiefe. Navigatorin Lena meldet: v0 = 324 m/s, a = 3.6 m/s2, Ziel s = 1244 m, Mechaniker Tom ruft: Halte die Kurve! Der Bordcomputer geht auf Rot, das Funkgeraet rauscht, die Crew haelt den Atem an. Genau hier entscheidet Formelhandbuch Mechanik: dreisprachig und handgerechnet ueber Landung oder Absturz, ueber Festfahren oder Weiterfahrt, ueber Andocken oder Abprall. Das Logbuch des vorherigen Sols (Physik-Federpendel-Harmonische-Schwingung-L1.md) warnte bereits vor diesem Moment, und das naechste Fenster (Physik-Formeln-L1.md) oeffnet sich nur, wenn diese Aufgabe geloest wird. Die Sensoren streuen, die Diagramme zittern, doch die Physik bleibt unbestechlich: Wer Steigung und Flaeche, Kraft und Gegenkraft, Schwung und Stoss richtig liest, rettet die Mission. In dieser Episode stellst du im Sandbox-Labor die Brems- und Gleitzahlen so ein, dass die Kapsel sicher durchkommt. Beobachte zuerst das Phaenomen in Ruhe, benenne dann die Groessen mit exakten Einheiten, pruefe schliesslich die Bilanz mit einer Gegenrechnung. Der folgende Weg fuehrt vom Alarmton zur sauberen Klausurloesung: erst das Phaenomen beobachten, dann die Begriffe sichern, dann das Modell rechnen und im Labor bestaetigen.
+Hook / Phaenomen: Buchstaben statt Zahlen: Wer die **Formel** erst allgemein loest, rechnet danach jede Variante in Sekunden. Der **Buchstabenansatz** trennt Physik vom Taschenrechner, die **Bedingungspruefung** schuetzt vor falschem Einsatz. Die **Einheitenprobe** fängt den Rest ab.
 
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Erst Buchstaben, dann Zahlen: Allgemein loesen, Bedingung pruefen, Einheit kontrollieren.`
 
 ## Schritt 2 — entdecken: Ausruestungskiste der Mars-Crew
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
@@ -39,19 +39,17 @@ Fuenf Begriffe trennen in dieser Lektion Alltagssprache von Klausursprache. Wer 
 
 ### Fachbegriffe & Definitionen
 
-- **Buchstabenansatz:** Die Formel steht zuerst rein symbolisch als bewerteter Weg vor jeder Zahl. Mechanismus: Gleichung mit Symbolen hinschreiben. Klausur-Punkt: Ohne Ansatz gibt es keine volle Punktzahl.
-- **Bedingungspruefung:** Jede Formel gilt nur unter ihrer Bedingung wie reibungsfrei oder konstantes $a$. Mechanismus: Aufgabe auf Stichworte wie Zeit oder Reibung scannen. Klausur-Punkt: Bedingung nennen und Ansatz damit begruenden.
-- **Energieansatz:** Bei Fragen nach Tempo oder Hoehe ohne Zeit fuehrt $E_{Anfang}=E_{Ende}$ direkt zum Ziel. Mechanismus: Energieformen auflisten und gleichsetzen. Klausur-Punkt: Wegunabhaengigkeit als Vorteil nennen.
-- **Kraftansatz:** Bei Zeitfragen oder gesuchtem $a$ steuert $F=m\cdot a$ mit Kinematik. Mechanismus: Kraefte bilanzieren und $s(t)$ verbinden. Klausur-Punkt: $a$ und $t$ als Auswahlmerkmale nennen.
-- **Einheitenprobe:** Konsistente Einheiten von Ansatz bis Ergebnis sichern Zahlen und Exponenten. Mechanismus: Jede Groesse mit Einheit einsetzen und kuerzen. Klausur-Punkt: Ergebnis mit korrekter Einheit und sinnvoller Stelle angeben.
+- **Buchstabenansatz:** Die Formel steht zuerst rein symbolisch als bewerteter Weg vor jeder Zahl. Er loest das Problem allgemein vor jedem Einsetzen von Zahlen. Mechanismus: Gleichung mit Symbolen hinschreiben. Klausur-Tipp: Ohne Ansatz gibt es keine volle Punktzahl.
+- **Bedingungspruefung:** Jede Formel gilt nur unter ihrer Bedingung wie reibungsfrei oder konstantes $a$. Jede Formel traegt ihre Gueltigkeitsgrenzen mit sich. Mechanismus: Aufgabe auf Stichworte wie Zeit oder Reibung scannen. Klausur-Tipp: Bedingung nennen und Ansatz damit begruenden.
+- **Energieansatz:** Bei Fragen nach Tempo oder Hoehe ohne Zeit fuehrt $E_{Anfang}=E_{Ende}$ direkt zum Ziel. Er verbindet Anfang und Ende ohne den Weg dazwischen. Mechanismus: Energieformen auflisten und gleichsetzen. Klausur-Tipp: Wegunabhaengigkeit als Vorteil nennen.
+- **Kraftansatz:** Bei Zeitfragen oder gesuchtem $a$ steuert $F=m\cdot a$ mit Kinematik. Er folgt Kraeften entlang des Weges Schritt fuer Schritt. Mechanismus: Kraefte bilanzieren und $s(t)$ verbinden. Klausur-Tipp: $a$ und $t$ als Auswahlmerkmale nennen.
+- **Einheitenprobe:** Konsistente Einheiten von Ansatz bis Ergebnis sichern Zahlen und Exponenten. Sie entlarvt falsche Ansaetze vor jeder Zahl. Mechanismus: Jede Groesse mit Einheit einsetzen und kuerzen. Klausur-Tipp: Ergebnis mit korrekter Einheit und sinnvoller Stelle angeben.
 
 ### Wirkungsgefuege / Modell
 
 Die Kette verbindet alle fuenf Begriffe zu einem Verfahren: Erkennen, Einordnen, Aufstellen, Loesen und Deuten. Jeder Begriff traegt genau einen Schritt, gemeinsam sichern sie die volle Punktzahl.
 
-Klausur-Satz: `Jede Formel gilt nur unter ihrer Bedingung, daher wird zuerst die Bedingung geprueft und dann der Ansatz gewaehlt.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Jede Formel gilt nur unter ihrer Bedingung, daher wird zuerst die Bedingung geprueft und dann der Ansatz gewaehlt.`
 
 ## Schritt 3 — entdecken: Wirkungskette hinter Formelhandbuch Mechanik: dreisprachig und handgerechnet
 EXPERIMENTELLE ERKUNDUNG (Sandbox, erst spielen, dann deuten):
@@ -78,9 +76,8 @@ Die Kausalkette laeuft von der Frage ueber die Bedingung zum Ansatz: Zuerst scan
 ```
 Formelkern: $a=2{,}0\,m/s^2$
 
-Klausur-Satz: `Die Bedingung waehlt den Ansatz: reibungsfrei und ohne Zeitangabe fuehrt zur Energieerhaltung, eine Zeitfrage dagegen zum Kraftansatz F = m*a.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+$$F = ma,\quad W = F\cdot s$$
+`Klausur-Satz: Die Bedingung waehlt den Ansatz: reibungsfrei und ohne Zeitangabe fuehrt zur Energieerhaltung, eine Zeitfrage dagegen zum Kraftansatz F = m*a.`
 
 ## Anekdote & Fun-Fact
 **Anekdote / Fun-Fact (DE)**: Ein teurer Fehler mit Einheiten ereignete sich 1999 bei der NASA: Zwei Teams rechneten mit unterschiedlichen Einheitensystemen — die einen in metrischen Einheiten, die anderen in angelsaechsischen — und die Werte wurden nicht umgerechnet. Dadurch ging die Sonde Mars Climate Orbiter verloren. Eine einzige fehlende Umrechnung kostete ein ganzes Raumfahrtprojekt.
@@ -88,7 +85,7 @@ Klausur-Satz: `Die Bedingung waehlt den Ansatz: reibungsfrei und ohne Zeitangabe
 **Bezug zum Konzept**: `Fehlende Einheitenumrechnung macht selbst eine korrekte Formel wertlos — die Einheitenpruefung ist daher kein Zusatz, sondern Pflicht.`
 
 ## Schritt 4 — ausprobieren: Sandbox-Auftrag Sturz durch duenne Luft
-Kontinuitaet: Vorher Physik-Federpendel-Harmonische-Schwingung-L1.md | Nachher Physik-Formeln-L1.md. Krise dieser Episode: Sol-079 Wasser-Eisbohrung blockiert in 1,4 m Tiefe. Target: v0 = 324 m/s, a = 3.6 m/s2, Ziel s = 1244 m.
+Kontinuitaet: Vorher Physik-Federpendel-Harmonische-Schwingung-L1.md | Nachher Physik-Formeln-L1.md. Krise dieser Episode: Sol-079 Wasser-Eisbohrung blockiert in 1,4 m Tiefe. Zielgroessen: Buchstabenansatz mit F = ma, Ziel Zahl mit Einheit
 
 BEISPIEL (Sandbox Level mit Werkzeug):
 
@@ -103,14 +100,12 @@ HILFE:
 
 MUSTERLOESUNG: Geruest waehlt Energie ohne Zeitfrage, Kraft mit Zeitfrage und Impuls bei mehreren Koerpern je per Bedingung. Mit $a=2{,}0\,m/s^2$ und $F=3000\,N$ folgt $s=100\,m$ und $W=300\,kJ$ als kinetische Energie. Jede Ansatzwahl folgt aus der Bedingung, jede Formel steht zuerst in Buchstaben, dann mit Einheiten, erst zuletzt als Zahl.
 
-Klausur-Satz: `Mit a = 2,0 m/s^2 und F = 3000 N ergibt sich fuer den Pkw ein Weg von 100 m, und die Arbeit W = 300 kJ entspricht genau der kinetischen Energie.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Mit a = 2,0 m/s^2 und F = 3000 N ergibt sich fuer den Pkw ein Weg von 100 m, und die Arbeit W = 300 kJ entspricht genau der kinetischen Energie.`
 
 ## Schritt 5 — ausprobieren: Duell der Verfahren Sturz durch duenne Luft
 VERGLEICH (zwei Verfahren unterscheiden):
 
-VERGLEICH: Waehle zuerst das Verfahren — (i) Energieverfahren (Signalwoerter reibungsfrei, hinab, empor; ein Koerper an Orten; gesucht $v$ oder $h$: $E_{pot} + E_{kin} = const$) oder (ii) Impulsverfahren (Signalwoerter Stoss, Explosion, Rueckstoss; mehrere Koerper vor und nach Wirkung; gesucht $v'$: $p_{vor} = p_{nach}$) — dann loesen.
+VERGLEICH: (Weg A quantitativ-rechnerisch gegen Weg B qualitativ-strukturell): Waehle zuerst das Verfahren — (i) Energieverfahren (Signalwoerter reibungsfrei, hinab, empor; ein Koerper an Orten; gesucht $v$ oder $h$: $E_{pot} + E_{kin} = const$) oder (ii) Impulsverfahren (Signalwoerter Stoss, Explosion, Rueckstoss; mehrere Koerper vor und nach Wirkung; gesucht $v'$: $p_{vor} = p_{nach}$) — dann loesen.
 
 Weg A: Erst Verfahren waehlen, dann rechnen.
 
@@ -124,20 +119,16 @@ HILFE: A nennt reibungsfrei plus Hoehe plus Geschwindigkeit, also Verfahren (i).
 
 ANTWORT: A erfordert Verfahren (i): ohne Reibung gilt $m \cdot g \cdot h = 0{,}5 \cdot m \cdot v^2$, also $v = \sqrt{2 \cdot g \cdot h}$ fuer den einen Wagen. B erfordert Verfahren (ii): nur innere Kraefte, daher $m_1 \cdot v_1 + m_2 \cdot v_2 = (m_1 + m_2) \cdot v'$ mit Aufloesung nach $v'$.
 
-Klausur-Satz: `Die Energieerhaltung verfolgt einen Koerper ueber verschiedene Positionen, waehrend die Impulserhaltung den Gesamtimpuls mehrerer Koerper vor und nach einem Stoss vergleicht.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Die Energieerhaltung verfolgt einen Koerper ueber verschiedene Positionen, waehrend die Impulserhaltung den Gesamtimpuls mehrerer Koerper vor und nach einem Stoss vergleicht.`
 
 ## Schritt 6 — check: Selbsttest zu Formelhandbuch Mechanik: dreisprachig und handgerechnet: Sturz durch duenne Luft
 CHECK (Selbsttest, 3 Fragen mit Antworten):
 
-FRAGE: Wie lautet die zeitfreie Gleichung der beschleunigten Bewegung? | ANTWORT: $v^2 - v_0^2 = 2 \cdot a \cdot s$ ohne Zeit.
-FRAGE: Welche drei Formeln beschreiben mechanische Energie? | ANTWORT: $E_{kin} = 0{,}5 \cdot m \cdot v^2$, $E_{pot} = m \cdot g \cdot h$, $E_{spann} = 0{,}5 \cdot D \cdot s^2$.
-FRAGE: Wann gilt Impulserhaltung beim Stoss? | ANTWORT: Ohne aeussere Kraefte bleibt der Gesamtimpuls vor und nach Stoss gleich.
+- FRAGE: Wie lautet die zeitfreie Gleichung der beschleunigten Bewegung? | ANTWORT: $v^2 - v_0^2 = 2 \cdot a \cdot s$ ohne Zeit.
+- FRAGE: Welche drei Formeln beschreiben mechanische Energie? | ANTWORT: $E_{kin} = 0{,}5 \cdot m \cdot v^2$, $E_{pot} = m \cdot g \cdot h$, $E_{spann} = 0{,}5 \cdot D \cdot s^2$.
+- FRAGE: Wann gilt Impulserhaltung beim Stoss? | ANTWORT: Ohne aeussere Kraefte bleibt der Gesamtimpuls vor und nach Stoss gleich.
 
-Klausur-Satz: `Jede Formel wird zuerst in Buchstabenform angeschrieben, dann mit Einheiten gefuellt und erst zuletzt als Zahl notiert.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Jede Formel wird zuerst in Buchstabenform angeschrieben, dann mit Einheiten gefuellt und erst zuletzt als Zahl notiert.`
 
 ## Fehlvorstellung
 (kein Schritt; wird vom Parser automatisch erkannt und nicht mitgezaehlt)
@@ -154,7 +145,7 @@ ROLLE: Du bist Lerncoach und bereitest eine Mitschuelerin auf die Formelaufgaben
 SITUATION: Die Mitschuelerin kennt viele Formeln, verwechselt aber die Einsatzmomente und schreibt oft nur Ergebnisse ohne Ansatz. Erklaere in einer zusammenhaengenden Stellungnahme (ca. 150 Woerter), wie eine Entscheidungshilfe die Formel waehlt und wie ein vollstaendiger Loesungsweg die Schrittpunkte sichert.
 RUBRIC (30 XP): Entscheidungsregel Bedingung waehlt Ansatz mit zwei Beispielen (10 XP) | Dreischritt Ansatz-Einsetzen-Ergebnis (10 XP) | Einheiten und Groessenordnung als Kontrolle (5 XP) | Nachvollziehbare adressatengerechte Fachsprache (5 XP).
 
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Wer Buchstabenansatz, Umstellung, Zahlenrechnung und Einheitenprobe zeigt, erhaelt die volle Punktzahl.`
 
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Sturz durch duenne Luft
 TAKEAWAY (Kernzusammenfassung):
@@ -166,4 +157,4 @@ REFLEXION (2 Fragen):
 1. Selbstbeobachtung: Welcher Schritt fiel schwerer — das Wiedergeben der sechs Gruppen (Schritt 2) oder die Formelauswahl im Vergleich (Schritt 5)?
 2. Planung: Beim naechsten Mal notiere ich zuerst die Bedingung (Reibung, Zeitfrage) und waehle erst danach die Formel.
 
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Formeln sind fertige Gedanken: Wer sie allgemein loest, denkt einmal und rechnet nie wieder.`

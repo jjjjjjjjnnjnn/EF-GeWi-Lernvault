@@ -13,7 +13,7 @@ version: Lesson-v3
 
 # Lernreise: Ganzrationale Funktionen im Sachkontext (L1, Ziel Klausur)
 
-<!-- Campaign: Optimierung | Episode 12/33 | Krise: Kuehlhaus-Temperatur driftet auf -13,2 Grad | Target: x0 = 4, h = 0.5, Target m = 7.44 | Tool: box-optimizer -->
+<!-- Campaign: Optimierung | Episode 12/33 | Krise: Kuehlhaus-Temperatur driftet auf -13,2 Grad | Zielgroessen: G(x) mit Break-even und Gewinnmaximum, Menge x in Stück | Tool: box-optimizer -->
 
 ## Schritt 1 — entdecken: Grenzwert am Limit
 ZIELE (3条，本节20分钟学完能做到——先读中文，再记德语)：
@@ -24,26 +24,24 @@ ZIELE (3条，本节20分钟学完能做到——先读中文，再记德语)：
 
 ### Hook / Phaenomen
 
-【首席算法官·第12集/共33集】警报：Kuehlhaus-Temperatur driftet auf -13,2 Grad。首席算法官下令：“x0 = 4, h = 0.5, Target m = 7.44！”全场红灯闪烁。上一集（Mathe-Ganzrationale-Funktionen-Sachkontext-DE-L1.md）的伏笔在此引爆，下一集（Mathe-Grenzwert-h-Methode-Ableitung-Stelle-CN-L1.md）只给交出最优解的人放行。本集你要在沙盘里亲手把工程从亏损/相撞边缘拉回来：先看现象、再点装备、最后算出让审计点头的 Bilanz。记住：先看区间还是时刻、再选割线还是切线/极值还是向量，做完必做 Gegenprobe——这就是工程帝国法则，也是 Klausur 拿分法则。
+成本是曲线，售价是直线：两线之间夹着利润区，盈亏平衡点只是起点，利润最大点才是终点。
 
-Hook / Phaenomen (CAO-Log, Episode 12 von 33): Super-Engineering-Zentrale, Kuehlhaus-Temperatur driftet auf -13,2 Grad. Der Chief Algorithm Officer ruft: x0 = 4, h = 0.5, Target m = 7.44, die Assistentin meldet Rot-Alarm auf allen Screens. Genau hier entscheidet Ganzrationale Funktionen im Sachkontext ueber Freigabe oder Sperrung, ueber Kostenexplosion oder Rekordgewinn, ueber Kollision oder gruene Welle. Das Protokoll der Vorwoche (Mathe-Ganzrationale-Funktionen-Sachkontext-DE-L1.md) legte die Spur, das naechste Audit (Mathe-Grenzwert-h-Methode-Ableitung-Stelle-CN-L1.md) laesst keine Ausrede mehr zu. Die Messwerte streuen, die Kurven zittern, doch die Mathematik bleibt unbestechlich: Wer Sekante und Tangente, Maximum und Wendepunkt, Vektor und Ebene richtig liest, rettet das Projekt. In dieser Episode stellst du im Sandbox-Optimierer die Parameter so ein, dass alle Kennzahlen im gruenen Bereich landen. Beobachte zuerst das Phaenomen in Ruhe, benenne dann die Objekte mit exakter Notation, pruefe schliesslich das Ergebnis mit einer Gegenrechnung. Der folgende Weg fuehrt vom Alarmton zur sauberen Klausurloesung: erst das Phaenomen beobachten, dann die Begriffe sichern, dann das Modell rechnen und im Labor bestaetigen.
+Hook / Phaenomen: Die Kosten steigen kurvig, der Preis bleibt linear: Irgendwo dazwischen liegt die Gewinnzone. Die **Gewinnfunktion** zieht Kosten von Erloes ab, der **Break-even-Punkt** markiert die schwarze Null. Erst das **Gewinnmaximum** sagt, welche Menge wirklich optimal ist.
 
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Im Sachkontext wird jede Nullstelle oekonomisch gelesen: Break-even ist Kostendeckung, Maximum ist optimale Menge.`
 
 ## Schritt 2 — entdecken: Ausruestungskiste der Algorithmus-Unit
 PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语）：
 
 中文在上，德语在下：
 
-- 产量与货币单位 — Mengeneinheit (ME) und Geldeinheit (GE)：x in ME misst die Menge, f(x) in GE misst das Geld; jede Achse braucht Einheiten.
-- 收入函数 — Erloesfunktion E(x)：Verkaufserloes in Abhaengigkeit von der Menge, oft linear wie E(x) = p mal x.
-- 成本函数 — Kostenfunktion K(x)：Gesamtkosten aus fixen plus variablen Anteilen, oft ganzrational dritten Grades.
-- 利润函数 — Gewinnfunktion G(x)：G(x) = E(x) - K(x); G(x) > 0 bedeutet Gewinnzone, G(x) = 0 bedeutet Break-even.
-- 现实定义域 — Sachnahe Definitionsmenge：z. B. D = [0; 20] ME aus Kapazitaet; Rechnung ausserhalb von D ist oekonomisch sinnlos.
+- 产量与货币单位 — Mengeneinheit (ME) und Geldeinheit (GE)：x in ME misst die Menge, f(x) in GE misst das Geld; jede Achse braucht Einheiten. Dort deckt der Erloes exakt die Kosten, der Gewinn ist null. Mechanismus: Gewinnfunktion null setzen und Nullstellen bestimmen. Klausur-Tipp: Beide Schnittpunkte oekonomisch deuten.
+- 收入函数 — Erloesfunktion E(x)：Verkaufserloes in Abhaengigkeit von der Menge, oft linear wie E(x) = p mal x. Dort bringt eine weitere Einheit weniger Gewinn als sie kostet. Mechanismus: Erste Ableitung null setzen und Maximum per Vorzeichen sichern. Klausur-Tipp: Maximale Menge plus maximaler Gewinn angeben.
+- 成本函数 — Kostenfunktion K(x)：Gesamtkosten aus fixen plus variablen Anteilen, oft ganzrational dritten Grades. Jede Zahl braucht Einheit und Bezug zur Sachsituation. Mechanismus: Mathematisches Ergebnis in Kontextsprache uebersetzen. Klausur-Tipp: Deutungssatz mit weil-Begruendung schliessen.
+- 利润函数 — Gewinnfunktion G(x)：G(x) = E(x) - K(x); G(x) > 0 bedeutet Gewinnzone, G(x) = 0 bedeutet Break-even. Sie entsteht als Erloes minus Kosten und traegt die Einheit Euro. Mechanismus: Erloesfunktion minus Kostenfunktion gliedweise bilden. Klausur-Tipp: Funktionsterm plus Einheit in der Antwort nennen.
+- 现实定义域 — Sachnahe Definitionsmenge：z. B. D = [0; 20] ME aus Kapazitaet; Rechnung ausserhalb von D ist oekonomisch sinnlos. Negative Stueckzahlen sind oekonomisch sinnlos und werden ausgeschlossen. Mechanismus: Sinnvolle Grenzen aus dem Kontext ablesen. Klausur-Tipp: Definitionsmenge vor der Rechnung festlegen.
 
-Klausur-Satz: `Die Nullstellen von G(x) = E(x) - K(x) liefern die Break-even-Punkte, der Hochpunkt liefert den maximalen Gewinn.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Die Nullstellen von G(x) = E(x) - K(x) liefern die Break-even-Punkte, der Hochpunkt liefert den maximalen Gewinn.`
 
 ## Schritt 3 — entdecken: Wirkungskette hinter Ganzrationale Funktionen im Sachkontext
 ENTDECKEN（1概念 + 1文字图解）：
@@ -69,9 +67,8 @@ ENTDECKEN（1概念 + 1文字图解）：
        Nullstelle = Break-even | Hochpunkt = Maxgewinn
 ```
 
-Klausur-Satz: `Zwischen den beiden Break-even-Punkten gilt G(x) > 0, ausserhalb gilt G(x) < 0 auf der sachnahen Definitionsmenge.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+$$G(x) = -0{,}5x^3+6x^2-14x-8,\quad G'(x_B) = 0$$
+`Klausur-Satz: Zwischen den beiden Break-even-Punkten gilt G(x) > 0, ausserhalb gilt G(x) < 0 auf der sachnahen Definitionsmenge.`
 
 ## Anekdote & Fun-Fact
 
@@ -82,7 +79,7 @@ Klausur-Satz: `Zwischen den beiden Break-even-Punkten gilt G(x) > 0, ausserhalb 
 **Bezug zum Konzept**: `Erst die Differenz G(x) = E(x) - K(x) zeigt, in welchem Mengenintervall Produktion lohnt.`
 
 ## Schritt 4 — ausprobieren: Sandbox-Auftrag Grenzwert am Limit
-Kontinuitaet: Vorher Mathe-Ganzrationale-Funktionen-Sachkontext-DE-L1.md | Nachher Mathe-Grenzwert-h-Methode-Ableitung-Stelle-CN-L1.md. Krise dieser Episode: Kuehlhaus-Temperatur driftet auf -13,2 Grad. Target: x0 = 4, h = 0.5, Target m = 7.44.
+Kontinuitaet: Vorher Mathe-Ganzrationale-Funktionen-Sachkontext-DE-L1.md | Nachher Mathe-Grenzwert-h-Methode-Ableitung-Stelle-CN-L1.md. Krise dieser Episode: Kuehlhaus-Temperatur driftet auf -13,2 Grad. Zielgroessen: G(x) mit Break-even und Gewinnmaximum, Menge x in Stück
 
 BEISPIEL（正确例题示范，含教具操作与解答）：
 
@@ -97,14 +94,12 @@ HILFE:
 
 MUSTERLÖSUNG / MUSTERLOESUNG: Es gilt G(x) = 12x - (0.5x^3 - 6x^2 + 26x + 8) = -0.5x^3 + 6x^2 - 14x - 8 auf D = [0; 12] ME. Aus G(x) = 0 folgt mit GTR x_BE1 = 4 ME und x_BE2 ~ 8.49 ME; Probe: G(4) = -32 + 96 - 56 - 8 = 0. Weiter gilt G'(x) = -1.5x^2 + 12x - 14 = 0, also x^2 - 8x + 28/3 = 0, somit x ~ 1.42 oder x ~ 6.58. Mit G''(x) = -3x + 12 gilt G''(1.42) > 0 (Tiefpunkt) und G''(6.58) < 0 (Hochpunkt). Mit G(6.58) ~ 17.24 GE, G(0) = -8 GE und G(12) = -128 GE ist x ~ 6.58 ME die gewinnmaximale Menge, die Gewinnzone liegt zwischen 4 ME und 8.49 ME. Der Wendepunkt liegt bei x_W = 4 ME mit W(4 | 0).
 
-Klausur-Satz: `Auf D = [0; 12] ME liegt die Gewinnzone zwischen x = 4 ME und x ~ 8.49 ME, die gewinnmaximale Menge liegt bei x ~ 6.58 ME.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Auf D = [0; 12] ME liegt die Gewinnzone zwischen x = 4 ME und x ~ 8.49 ME, die gewinnmaximale Menge liegt bei x ~ 6.58 ME.`
 
 ## Schritt 5 — ausprobieren: Duell der Verfahren Grenzwert am Limit
 VERGLEICH辨别实验（图像交点读数 vs. 代数精确算）：
 
-VERGLEICH: Wähle erst / Waehele erst das Verfahren — 【选程序】先判断题目要 (i) Graphische Deutung（读交点、读 Gewinnzone、读 Trend，用 Schnittpunkte von E und K）还是 (ii) Rechnerische Bestimmung（算 Nullstellen/Hochpunkt/Wende von G mit Ableitung）—— dann lösen.
+VERGLEICH: (Weg A quantitativ-rechnerisch gegen Weg B qualitativ-strukturell): Wähle erst / Waehele erst das Verfahren — 【选程序】先判断题目要 (i) Graphische Deutung（读交点、读 Gewinnzone、读 Trend，用 Schnittpunkte von E und K）还是 (ii) Rechnerische Bestimmung（算 Nullstellen/Hochpunkt/Wende von G mit Ableitung）—— dann lösen.
 
 Weg A: Erst Verfahren waehlen, dann rechnen.
 
@@ -117,20 +112,16 @@ HILFE: A nennt skizzieren, ablesen, beschreiben -> Verfahren (i), Graph lesen oh
 
 ANTWORT: A erfordert Verfahren (i): E als Gerade, K als S-Kurve; zwei Schnittpunkte begrenzen die Gewinnzone, links von BE1 und rechts von BE2 liegt Verlustzone, weil K ueber E verlaeuft. B erfordert Verfahren (ii): G(x) = 0 liefert BE-Punkte per GTR, G'(x) = -0.75x^2 + 8x - 10 = 0 liefert Kandidaten, G'' entscheidet Hoch versus Tief, G'' = 0 plus VZW liefert Wende als staerksten Anstieg; jede Stelle erhaelt Einheiten ME und GE plus Satz im Kontext.
 
-Klausur-Satz: `Die graphische Deutung liest Gewinnzonen an Schnittpunkten ab, die rechnerische Bestimmung sichert sie mit Ableitung und Einheiten.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Die graphische Deutung liest Gewinnzonen an Schnittpunkten ab, die rechnerische Bestimmung sichert sie mit Ableitung und Einheiten.`
 
 ## Schritt 6 — check: Selbsttest zu Ganzrationale Funktionen im Sachkontext: Grenzwert am Limit
 CHECK检索默写（自测 3 题，与答案配对）：
 
-FRAGE: Wie haengen E(x), K(x) und G(x) zusammen und welche Einheiten tragen sie? | ANTWORT: Es gilt G(x) = E(x) - K(x), x in ME, alle Funktionswerte in GE, auf sachnaher Definitionsmenge D.
-FRAGE: Was bedeuten Nullstelle, Hochpunkt und Wendepunkt von G oekonomisch? | ANTWORT: Nullstelle ist Break-even, Hochpunkt ist Maximalgewinn, Wendepunkt ist staerkster Gewinnanstieg.
-FRAGE: Warum darf D nicht ignoriert werden? | ANTWORT: Weil Kapazitaet und negative Mengen unrealistisch sind; Aussagen ausserhalb von D sind oekonomisch ungueltig.
+- FRAGE: Wie haengen E(x), K(x) und G(x) zusammen und welche Einheiten tragen sie? | ANTWORT: Es gilt G(x) = E(x) - K(x), x in ME, alle Funktionswerte in GE, auf sachnaher Definitionsmenge D.
+- FRAGE: Was bedeuten Nullstelle, Hochpunkt und Wendepunkt von G oekonomisch? | ANTWORT: Nullstelle ist Break-even, Hochpunkt ist Maximalgewinn, Wendepunkt ist staerkster Gewinnanstieg.
+- FRAGE: Warum darf D nicht ignoriert werden? | ANTWORT: Weil Kapazitaet und negative Mengen unrealistisch sind; Aussagen ausserhalb von D sind oekonomisch ungueltig.
 
-Klausur-Satz: `Jede Aussage im Sachkontext braucht Definitionsmenge D plus Einheiten ME und GE.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Jede Aussage im Sachkontext braucht Definitionsmenge D plus Einheiten ME und GE.`
 
 ## Fehlvorstellung
 
@@ -141,7 +132,9 @@ Klausur-Satz: `Jede Aussage im Sachkontext braucht Definitionsmenge D plus Einhe
    Korrektur-Satz: `Nicht der Anstieg von E, sondern Verlauf und Extrema von G(x) = E(x) - K(x) entscheiden ueber Gewinn.`
 
 2. 误解“算出零点和极值就满分，单位和区间无所谓”。
-   中文纠偏：Sachkontext 的一半分数在 D + ME/GE + Antwortsatz。无单位的数字在 Klausur 算“未解读”。标准结尾三件套：D=[..] ME、x=.. ME、G=.. GE，再加一句“zwischen .. und .. lohnt Produktion”。
+中文纠偏：Sachkontext 的一半分数在 D + ME/GE + Antwortsatz。无单位的数字在 Klausur 算“未解读”。标准结尾三件套：D=[..] ME、x=.. ME、G=.. GE，再加一句“zwischen ..
+
+und .. lohnt Produktion”。
    Korrektur-Satz: `Ohne Definitionsmenge, Einheiten ME und GE sowie Antwortsatz gilt eine Sachkontext-Loesung als unvollstaendig.`
 
 ## Schritt 7 — szenario: Klausurtransfer: Ganzrationale Funktionen im Sachkontext: Grenzwert am Limit
@@ -150,7 +143,7 @@ SITUATION: E(x) = 15x, K(x) = 0.4x^3 - 5x^2 + 28x + 15, D = [0; 15] ME, Werte in
 AUFGABE (eroertern, AFB III)：Eroertere auf Basis von Break-even, Hochpunkt und Grenze von D, welche Mengenintervalle zu empfehlen sind.
 RUBRIC (30 XP): G(x) plus D mit Einheiten korrekt (5 XP) | Break-even korrekt berechnet (10 XP) | Hochpunkt plus Wende korrekt (10 XP) | Eroerterung mit Empfehlung fuer Intervalle (5 XP).
 
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Wer Gewinnfunktion aufstellt, Break-even berechnet, Maximum bestimmt und oekonomisch deutet, erhaelt die volle Punktzahl.`
 
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Grenzwert am Limit
 TAKEAWAY 1盒（核心总结）：
@@ -162,4 +155,4 @@ REFLEXION 2问：
 1. 过程自省：Welcher Teil fiel schwerer — das Aufstellen von G(x) mit Einheiten (Schritt 4) oder die Wahl zwischen Deutung und Rechnung im Vergleich (Schritt 5)?
 2. 元认知计划：Beim naechsten Mal notiere ich zuerst D, ME und GE und formuliere zu jedem Rechenergebnis sofort einen Antwortsatz.
 
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Mathematik liefert Zahlen, der Kontext liefert Sinn: Keine Deutung ohne Einheit und Bezug.`

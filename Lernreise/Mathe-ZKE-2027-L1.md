@@ -13,7 +13,7 @@ version: Lesson-v3
 
 # Lernreise: ZKE 2027 — Teil A und Teil B im Zeitmodus (L1, Ziel Klausur)
 
-<!-- Campaign: Optimierung | Episode 33/33 | Krise: Abnahme-Audit: ZKE-Kommission fordert Beweisband | Target: x0 = 5, h = 0.2, Target m = 15.21 | Tool: formula -->
+<!-- Campaign: Optimierung | Episode 33/33 | Krise: Abnahme-Audit: ZKE-Kommission fordert Beweisband | Zielgroessen: Teil A hilfsmittelfrei mit Potenzregel und pq-Formel | Tool: formula -->
 
 ## Schritt 1 — entdecken: Uebergabe an die Kommission
 ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
@@ -24,26 +24,24 @@ ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
 ### Hook / Phaenomen
 
-【首席算法官·第33集/共33集】警报：Abnahme-Audit: ZKE-Kommission fordert Beweisband。首席算法官下令：“x0 = 5, h = 0.2, Target m = 15.21！”全场红灯闪烁。上一集（Mathe-ZKE-2027-DE-L1.md）的伏笔在此引爆，下一集（Mathe-Ableitungsregeln-Polynome-DE-L1.md）只给交出最优解的人放行。本集你要在沙盘里亲手把工程从亏损/相撞边缘拉回来：先看现象、再点装备、最后算出让审计点头的 Bilanz。记住：先看区间还是时刻、再选割线还是切线/极值还是向量，做完必做 Gegenprobe——这就是工程帝国法则，也是 Klausur 拿分法则。
+ZKE分两场：A卷裸考拼速度，B卷机考拼转化，幂法则求根公式向量模长必须徒手过关，省下的时间留给压轴迁移题。
 
-Hook / Phaenomen (CAO-Log, Episode 33 von 33): Super-Engineering-Zentrale, Abnahme-Audit: ZKE-Kommission fordert Beweisband. Der Chief Algorithm Officer ruft: x0 = 5, h = 0.2, Target m = 15.21, die Assistentin meldet Rot-Alarm auf allen Screens. Genau hier entscheidet ZKE 2027: Teil A und Teil B im Zeitmodus ueber Freigabe oder Sperrung, ueber Kostenexplosion oder Rekordgewinn, ueber Kollision oder gruene Welle. Das Protokoll der Vorwoche (Mathe-ZKE-2027-DE-L1.md) legte die Spur, das naechste Audit (Mathe-Ableitungsregeln-Polynome-DE-L1.md) laesst keine Ausrede mehr zu. Die Messwerte streuen, die Kurven zittern, doch die Mathematik bleibt unbestechlich: Wer Sekante und Tangente, Maximum und Wendepunkt, Vektor und Ebene richtig liest, rettet das Projekt. In dieser Episode stellst du im Sandbox-Optimierer die Parameter so ein, dass alle Kennzahlen im gruenen Bereich landen. Beobachte zuerst das Phaenomen in Ruhe, benenne dann die Objekte mit exakter Notation, pruefe schliesslich das Ergebnis mit einer Gegenrechnung. Der folgende Weg fuehrt vom Alarmton zur sauberen Klausurloesung: erst das Phaenomen beobachten, dann die Begriffe sichern, dann das Modell rechnen und im Labor bestaetigen.
+Hook / Phaenomen: Teil A ohne Hilfsmittel, Teil B mit Rechner: Die ZKE prueft beides, Tempo und Tiefe. **Potenzregel**, **pq-Formel** und **Betragsformel** sind das hilfsmittelfreie Ueberlebenspaket. Wer sie ohne Zettel kann, kauft sich Zeit fuer die Transferaufgaben.
 
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Die ZKE trennt Tempo von Tiefe: Teil A verlangt Formelsicherheit ohne Hilfsmittel, Teil B Transfer mit Werkzeug.`
 
 ## Schritt 2 — entdecken: Ausruestungskiste der Algorithmus-Unit
 PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
 
 中文在上，德语在下：
 
-- 免工具部分 — hilfsmittelfreier Teil (Teil A)：不用计算器、不用公式表，全部靠手算与记忆。
-- 工具部分 — Teil B mit Hilfsmitteln：可用 WTR 或 CAS，并配官方公式表，但过程必须完整书写。
-- 平均变化率 — mittlere Aenderungsrate：区间上的差商，即割线斜率。
-- 瞬时变化率 — lokale Aenderungsrate：某点的导数值，即切线斜率。
-- 呈现能力 — Darstellungsleistung：解答过程本身计分，答案对但过程缺失同样扣分。
+- 免工具部分 — hilfsmittelfreier Teil (Teil A)：不用计算器、不用公式表，全部靠手算与记忆。 Dort zaehlen Kopfrechen-Tempo und Formelsicherheit ohne jeden Zettel. Mechanismus: Grundformeln auswendig abrufen und sauber anwenden. Klausur-Tipp: Jede Zeile hinschreiben, auch Kopfrechnung.
+- 工具部分 — Teil B mit Hilfsmitteln：可用 WTR 或 CAS，并配官方公式表，但过程必须完整书写。 Dort zaehlen Modellierung und Rechnerweg mit Dokumentation. Mechanismus: Ansatz per Hand, Rechnung mit Werkzeug, Deutung per Hand. Klausur-Tipp: Rechnereinsatz als Befehl protokollieren.
+- 平均变化率 — mittlere Aenderungsrate：区间上的差商，即割线斜率。 Sie ist die schnellste Ableitungsregel fuer ganzrationale Funktionen. Mechanismus: Exponenten senken und gliedweise ableiten. Klausur-Tipp: Auch im Teil B per Hand zeigen.
+- 瞬时变化率 — lokale Aenderungsrate：某点的导数值，即切线斜率。 Sie loest normierte quadratische Gleichungen in einer Zeile. Mechanismus: p und q ablesen und in die Formel einsetzen. Klausur-Tipp: Normierung auf x Quadrat zuerst sichern.
+- 呈现能力 — Darstellungsleistung：解答过程本身计分，答案对但过程缺失同样扣分。 Er misst Laengen und Abstaende auch in der Ebene. Mechanismus: Quadratsumme unter der Wurzel bilden. Klausur-Tipp: Wurzelterm bis zum Ende exakt lassen.
 
-Klausur-Satz: `In Teil A muessen Potenzregel, pq-Formel und Vektorlaenge ohne Hilfsmittel sicher beherrscht werden.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: In Teil A muessen Potenzregel, pq-Formel und Vektorlaenge ohne Hilfsmittel sicher beherrscht werden.`
 
 ## Schritt 3 — entdecken: Wirkungskette hinter ZKE 2027: Teil A und Teil B im Zeitmodus
 ENTDECKEN（1概念 + 1文字图解）：
@@ -66,9 +64,8 @@ ENTDECKEN（1概念 + 1文字图解）：
     Uebergabe spaetestens bei Minute 25
 ```
 
-Klausur-Satz: `Teil A prueft Analysis und Geometrie ohne Hilfsmittel, Teil B nur Analysis mit Hilfsmitteln und verlangt vollstaendige Rechenwege.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+$$(x^n)' = nx^{n-1},\quad x_{1,2} = -\frac{p}{2}\pm\sqrt{(p/2)^2-q}$$
+`Klausur-Satz: Teil A prueft Analysis und Geometrie ohne Hilfsmittel, Teil B nur Analysis mit Hilfsmitteln und verlangt vollstaendige Rechenwege.`
 
 ## Anekdote & Fun-Fact
 
@@ -79,7 +76,7 @@ Klausur-Satz: `Teil A prueft Analysis und Geometrie ohne Hilfsmittel, Teil B nur
 **Bezug zum Konzept**: `Weil CAS die Rechnung uebernehmen, prueft Teil A gerade die Grundformeln im Kopf.`
 
 ## Schritt 4 — ausprobieren: Sandbox-Auftrag Uebergabe an die Kommission
-Kontinuitaet: Vorher Mathe-ZKE-2027-DE-L1.md | Nachher Mathe-Ableitungsregeln-Polynome-DE-L1.md. Krise dieser Episode: Abnahme-Audit: ZKE-Kommission fordert Beweisband. Target: x0 = 5, h = 0.2, Target m = 15.21.
+Kontinuitaet: Vorher Mathe-ZKE-2027-DE-L1.md | Nachher Mathe-Ableitungsregeln-Polynome-DE-L1.md. Krise dieser Episode: Abnahme-Audit: ZKE-Kommission fordert Beweisband. Zielgroessen: Teil A hilfsmittelfrei mit Potenzregel und pq-Formel
 
 BEISPIEL（正确例题示范，含教具操作与解答）：
 
@@ -94,14 +91,12 @@ HILFE:
 
 MUSTERLÖSUNG: a) x^3 - 4x = x(x^2 - 4) = x(x - 2)(x + 2), also x1 = 0, x2 = 2, x3 = -2. b) Mit der Potenzregel gilt f'(x) = 3x^2 - 4. c) Der Vektor lautet PQ = Q - P = (4 - 1 | 6 - 2 | 0 - 0) = (3 | 4 | 0). Seine Laenge ist |PQ| = Wurzel(3^2 + 4^2 + 0^2) = Wurzel(25) = 5. Alle drei Teilaufgaben sind ohne Hilfsmittel loesbar; die pq-Formel und die Betragsformel muessen auswendig sitzen.
 
-Klausur-Satz: `Die Nullstellen, die Ableitung und die Vektorlaenge lassen sich im hilfsmittelfreien Teil mit Potenzregel, pq-Formel und Betragsformel berechnen.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Die Nullstellen, die Ableitung und die Vektorlaenge lassen sich im hilfsmittelfreien Teil mit Potenzregel, pq-Formel und Betragsformel berechnen.`
 
 ## Schritt 5 — ausprobieren: Duell der Verfahren Uebergabe an die Kommission
 VERGLEICH辨别实验（双向辨析：A卷眼 vs. B卷眼）：
 
-VERGLEICH: Waehle erst das Verfahren — 【选程序】先判断这道题属于 (i) Teil-A-Aufgabe（hilfsmittelfrei：手算零点/导数/向量，只要结果对）还是 (ii) Teil-B-Aufgabe（mit Hilfsmitteln：需要完整论证链、情境解释、Antwortsatz）—— dann bearbeiten.
+VERGLEICH: (Weg A quantitativ-rechnerisch gegen Weg B qualitativ-strukturell): Waehle erst das Verfahren — 【选程序】先判断这道题属于 (i) Teil-A-Aufgabe（hilfsmittelfrei：手算零点/导数/向量，只要结果对）还是 (ii) Teil-B-Aufgabe（mit Hilfsmitteln：需要完整论证链、情境解释、Antwortsatz）—— dann bearbeiten.
 
 Weg A: Erst Verfahren waehlen, dann rechnen.
 
@@ -114,20 +109,16 @@ HILFE: A ist eine kurze Handrechnung ohne Kontext -> Teil A. B verlangt vollstae
 
 ANTWORT: A gehoert zu Teil A: f'(x) = 15x^2 - 4x + 1, also f'(1) = 15 - 4 + 1 = 12. B gehoert zu Teil B: g'(x) = 3x^2 - 12 = 0 ergibt x = 2 und x = -2; mit g''(x) = 6x folgt g''(-2) = -12 < 0 (Hochpunkt) und g''(2) = 12 > 0 (Tiefpunkt). Wegen g(-2) = 19 und g(2) = -13 gilt HP(-2 | 19) und TP(2 | -13); im Sachzusammenhang markieren diese Stellen die Wendepunkte eines zeitlichen Verlaufs mit maximalem bzw. minimalem Bestand.
 
-Klausur-Satz: `Teil-A-Aufgaben verlangen nur das exakte Ergebnis, Teil-B-Aufgaben einen vollstaendigen und gedeuteten Loesungsweg.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Teil-A-Aufgaben verlangen nur das exakte Ergebnis, Teil-B-Aufgaben einen vollstaendigen und gedeuteten Loesungsweg.`
 
 ## Schritt 6 — check: Selbsttest zu ZKE 2027: Teil A und Teil B im Zeitmodus: Uebergabe an die Kommission
 CHECK检索默写（自测 3 题，与答案配对）：
 
-FRAGE: Wie lange darf man hoechstens fuer Teil A der ZKE verwenden, und welche Hilfsmittel sind dort erlaubt? | ANTWORT: Hoechstens 25 Minuten, ohne Taschenrechner und ohne Formelsammlung.
-FRAGE: Welche Hilfsmittel sind in Teil B zugelassen? | ANTWORT: WTR oder CAS sowie die offizielle Formelsammlung NRW.
-FRAGE: Warum reicht in Teil B ein korrektes Ergebnis allein nicht aus? | ANTWORT: Weil die Darstellungsleistung bepunktet wird; der Loesungsweg muss nachvollziehbar in Saetzen dargestellt werden.
+- FRAGE: Wie lange darf man hoechstens fuer Teil A der ZKE verwenden, und welche Hilfsmittel sind dort erlaubt? | ANTWORT: Hoechstens 25 Minuten, ohne Taschenrechner und ohne Formelsammlung.
+- FRAGE: Welche Hilfsmittel sind in Teil B zugelassen? | ANTWORT: WTR oder CAS sowie die offizielle Formelsammlung NRW.
+- FRAGE: Warum reicht in Teil B ein korrektes Ergebnis allein nicht aus? | ANTWORT: Weil die Darstellungsleistung bepunktet wird; der Loesungsweg muss nachvollziehbar in Saetzen dargestellt werden.
 
-Klausur-Satz: `In Teil A zaehlt das exakte Ergebnis ohne Hilfsmittel, in Teil B der vollstaendig dargestellte Loesungsweg mit Hilfsmitteln.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: In Teil A zaehlt das exakte Ergebnis ohne Hilfsmittel, in Teil B der vollstaendig dargestellte Loesungsweg mit Hilfsmitteln.`
 
 ## Fehlvorstellung
 
@@ -146,7 +137,7 @@ ROLLE: Du bist Pruefungskoordinator und bereitest einen Jahrgang auf die ZKE vor
 SITUATION: Du sollst vor der Pruefung eine kurze Strategie-Empfehlung (ca. 150 Woerter) formulieren, wie die 100 Minuten zwischen Teil A und Teil B aufgeteilt und wann die Hilfsmittel angefordert werden sollten. Begruende deine Empfehlung mit Blick auf Hilfsmittelregeln und Darstellungsleistung.
 RUBRIC (30 XP): Korrekte Wiedergabe der Zeit- und Hilfsmittelregeln (5 XP) | Begruendete Zeitaufteilung zwischen Teil A und Teil B (10 XP) | Hinweis auf die Bedeutung der Darstellungsleistung in Teil B (10 XP) | Kriteriengeleitetes Fazit zur Pruefungsstrategie (5 XP).
 
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Wer Teil-A-Formeln fehlerfrei zeigt und Teil-B-Transfer mit Rechnerweg dokumentiert, erhaelt die volle Punktzahl.`
 
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Uebergabe an die Kommission
 TAKEAWAY 1盒（核心总结）：
@@ -158,4 +149,4 @@ REFLEXION 2问：
 1. 过程自省：Welcher Schritt fiel schwerer — das hilfsmittelfreie Rechnen in Teil A (Schritt 4) oder das Aufschreiben der vollstaendigen Argumentation fuer Teil B (Schritt 5)?
 2. 元认知计划：Beim naechsten Mal lege ich vor Beginn eine Zeitmarke fuer die Abgabe von Teil A fest und pruefe am Ende, ob jeder Teil-B-Schritt einen Antwortsatz besitzt.
 
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Pruefung ist Zeitspiel: Automatisierte Grundlagen kaufen Minuten fuer schwierige Transferstellen.`

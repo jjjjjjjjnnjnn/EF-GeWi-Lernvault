@@ -13,7 +13,7 @@ version: Lesson-v3
 
 # Lernreise: Formelhandbuch Mechanik: dreisprachig und handgerechnet (L1, Ziel Klausur)
 
-<!-- Campaign: Mars-Mission | Episode 13/28 | Krise: Sol-083 Nachschub-Drohne verfehlt Ziel um 240 m | Target: v0 = 331 m/s, a = 3.7 m/s2, Ziel s = 1281 m | Tool: formula -->
+<!-- Campaign: Mars-Mission | Episode 13/28 | Krise: Sol-083 Nachschub-Drohne verfehlt Ziel um 240 m | Zielgroessen: Buchstabenansatz mit F = ma, Ziel Zahl mit Einheit | Tool: formula -->
 
 ## Schritt 1 — entdecken: Reibung am Kraterrand
 ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
@@ -24,26 +24,24 @@ ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
 ### Hook / Phaenomen
 
-【火星拓荒者·第13集/共28集】警报：Sol-083 Nachschub-Drohne verfehlt Ziel um 240 m。领航员 Lena 大喊：“v0 = 331 m/s, a = 3.7 m/s2, Ziel s = 1281 m！”机械师 Tom 回应：“稳住曲线！”上一集（Physik-Formeln-DE-L1.md）埋下的隐患在此爆发，下一集（Physik-Freier-Fall-Luftwiderstand-CN-L1.md）的大门只为算对的人打开。本集你要在沙盘里亲手把飞船从超速边缘救回来：先看现象、再点装备、最后算出让考官点头的 Bilanz。记住：读图先看轴、计算必带单位、做完必用另一张图验算——这就是火星人生存法则，也是 Klausur 拿分法则。
+先玩字母再碰数字：通用公式解一次，万般数值几秒钟，字母设式分离物理与计算器，条件检查加单位验算双保险。
 
-Hook / Phaenomen (Sol-Logbuch, Episode 13 von 28): Mars-Anflug, Sol-083 Nachschub-Drohne verfehlt Ziel um 240 m. Navigatorin Lena meldet: v0 = 331 m/s, a = 3.7 m/s2, Ziel s = 1281 m, Mechaniker Tom ruft: Halte die Kurve! Der Bordcomputer geht auf Rot, das Funkgeraet rauscht, die Crew haelt den Atem an. Genau hier entscheidet Formelhandbuch Mechanik: dreisprachig und handgerechnet ueber Landung oder Absturz, ueber Festfahren oder Weiterfahrt, ueber Andocken oder Abprall. Das Logbuch des vorherigen Sols (Physik-Formeln-DE-L1.md) warnte bereits vor diesem Moment, und das naechste Fenster (Physik-Freier-Fall-Luftwiderstand-CN-L1.md) oeffnet sich nur, wenn diese Aufgabe geloest wird. Die Sensoren streuen, die Diagramme zittern, doch die Physik bleibt unbestechlich: Wer Steigung und Flaeche, Kraft und Gegenkraft, Schwung und Stoss richtig liest, rettet die Mission. In dieser Episode stellst du im Sandbox-Labor die Brems- und Gleitzahlen so ein, dass die Kapsel sicher durchkommt. Beobachte zuerst das Phaenomen in Ruhe, benenne dann die Groessen mit exakten Einheiten, pruefe schliesslich die Bilanz mit einer Gegenrechnung. Der folgende Weg fuehrt vom Alarmton zur sauberen Klausurloesung: erst das Phaenomen beobachten, dann die Begriffe sichern, dann das Modell rechnen und im Labor bestaetigen.
+Hook / Phaenomen: Buchstaben statt Zahlen: Wer die **Formel** erst allgemein loest, rechnet danach jede Variante in Sekunden. Der **Buchstabenansatz** trennt Physik vom Taschenrechner, die **Bedingungspruefung** schuetzt vor falschem Einsatz. Die **Einheitenprobe** fängt den Rest ab.
 
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Erst Buchstaben, dann Zahlen: Allgemein loesen, Bedingung pruefen, Einheit kontrollieren.`
 
 ## Schritt 2 — entdecken: Ausruestungskiste der Mars-Crew
 PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
 
 中文在上，德语在下：
 
-- 速度 — die Geschwindigkeit v (m/s)：单位时间走过的路程，匀速时 v = s/t。
-- 加速度 — die Beschleunigung a (m/s^2)：速度变化快慢，匀加速时 a = Δv/Δt。
-- 力 — die Kraft F (N)：改变运动状态的原因，1 N = 1 kg*m/s^2，牛顿第二定律 F = m*a。
-- 能量 — die Energie E (J)：做功的本领，1 J = 1 N*m，动能 0.5*m*v^2、势能 m*g*h。
-- 动量 — der Impuls p (kg*m/s)：p = m*v，碰撞中无外冲量时守恒。
+- 速度 — die Geschwindigkeit v (m/s)：单位时间走过的路程，匀速时 v = s/t。 Er loest das Problem allgemein vor jedem Einsetzen von Zahlen. Mechanismus: Gesetz in Buchstaben aufstellen und nach Zielgroesse umstellen. Klausur-Tipp: Umstellung vor dem Einsetzen zeigen.
+- 加速度 — die Beschleunigung a (m/s^2)：速度变化快慢，匀加速时 a = Δv/Δt。 Jede Formel traegt ihre Gueltigkeitsgrenzen mit sich. Mechanismus: Voraussetzungen der Formel am Fall pruefen. Klausur-Tipp: Bedingung als eigenen Satz formulieren.
+- 力 — die Kraft F (N)：改变运动状态的原因，1 N = 1 kg*m/s^2，牛顿第二定律 F = m*a。 Er folgt Kraeften entlang des Weges Schritt fuer Schritt. Mechanismus: Kraefte bilanzieren und mit Newton verknuepfen. Klausur-Tipp: Kraeftediagramm vor die Gleichung setzen.
+- 能量 — die Energie E (J)：做功的本领，1 J = 1 N*m，动能 0.5*m*v^2、势能 m*g*h。 Er verbindet Anfang und Ende ohne den Weg dazwischen. Mechanismus: Energiebilanz beidseitig aufstellen und gleichsetzen. Klausur-Tipp: Nullniveau zuerst festlegen.
+- 动量 — der Impuls p (kg*m/s)：p = m*v，碰撞中无外冲量时守恒。 Sie entlarvt falsche Ansaetze vor jeder Zahl. Mechanismus: Einheiten links und rechts auf Gleichheit pruefen. Klausur-Tipp: Probe als eigene Zeile vor das Ergebnis setzen.
 
-Klausur-Satz: `Jede Formel gilt nur unter ihrer Bedingung, daher wird zuerst die Bedingung geprueft und dann der Ansatz gewaehlt.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Jede Formel gilt nur unter ihrer Bedingung, daher wird zuerst die Bedingung geprueft und dann der Ansatz gewaehlt.`
 
 ## Schritt 3 — entdecken: Wirkungskette hinter Formelhandbuch Mechanik: dreisprachig und handgerechnet
 ENTDECKEN（1概念 + 1文字图解）：
@@ -73,9 +71,8 @@ ENTDECKEN（1概念 + 1文字图解）：
      3. Ergebnis + Einheit + Urteil
 ```
 
-Klausur-Satz: `Die Bedingung waehlt den Ansatz: reibungsfrei und ohne Zeitangabe fuehrt zur Energieerhaltung, eine Zeitfrage dagegen zum Kraftansatz F = m*a.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+$$F = ma,\quad W = F\cdot s$$
+`Klausur-Satz: Die Bedingung waehlt den Ansatz: reibungsfrei und ohne Zeitangabe fuehrt zur Energieerhaltung, eine Zeitfrage dagegen zum Kraftansatz F = m*a.`
 
 ## Anekdote & Fun-Fact
 
@@ -86,7 +83,7 @@ Klausur-Satz: `Die Bedingung waehlt den Ansatz: reibungsfrei und ohne Zeitangabe
 **Bezug zum Konzept**: `Fehlende Einheitenumrechnung macht selbst eine korrekte Formel wertlos — die Einheitenpruefung ist daher kein Zusatz, sondern Pflicht.`
 
 ## Schritt 4 — ausprobieren: Sandbox-Auftrag Reibung am Kraterrand
-Kontinuitaet: Vorher Physik-Formeln-DE-L1.md | Nachher Physik-Freier-Fall-Luftwiderstand-CN-L1.md. Krise dieser Episode: Sol-083 Nachschub-Drohne verfehlt Ziel um 240 m. Target: v0 = 331 m/s, a = 3.7 m/s2, Ziel s = 1281 m.
+Kontinuitaet: Vorher Physik-Formeln-DE-L1.md | Nachher Physik-Freier-Fall-Luftwiderstand-CN-L1.md. Krise dieser Episode: Sol-083 Nachschub-Drohne verfehlt Ziel um 240 m. Zielgroessen: Buchstabenansatz mit F = ma, Ziel Zahl mit Einheit
 
 BEISPIEL（正确例题示范，含教具操作与解答）：
 
@@ -101,14 +98,12 @@ HILFE:
 
 MUSTERLÖSUNG: Zuerst die Beschleunigung: a = v/t = 20 m/s / 10 s = 2,0 m/s^2. Daraus folgt nach dem zweiten Newtonschen Gesetz die Kraft F = m*a = 1500 kg * 2,0 m/s^2 = 3000 N. Der Weg ergibt sich aus s = 0.5*a*t^2 = 0.5 * 2,0 m/s^2 * (10 s)^2 = 100 m. Die beschleunigende Arbeit ist W = F*s = 3000 N * 100 m = 300000 J = 300 kJ. Zur Kontrolle die kinetische Energie: E_kin = 0.5*m*v^2 = 0.5 * 1500 kg * (20 m/s)^2 = 300000 J = 300 kJ. Beide Werte stimmen überein, was nach dem Arbeit-Energie-Zusammenhang W = ΔE_kin zu erwarten war. Einheitenprüfung: [a] = m/s^2, [F] = kg*m/s^2 = N, [s] = m, [W] = N*m = J — alle Einheiten passen, und die Größenordnung (300 kJ für eine Pkw-Beschleunigung) ist plausibel.
 
-Klausur-Satz: `Mit a = 2,0 m/s^2 und F = 3000 N ergibt sich fuer den Pkw ein Weg von 100 m, und die Arbeit W = 300 kJ entspricht genau der kinetischen Energie.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Mit a = 2,0 m/s^2 und F = 3000 N ergibt sich fuer den Pkw ein Weg von 100 m, und die Arbeit W = 300 kJ entspricht genau der kinetischen Energie.`
 
 ## Schritt 5 — ausprobieren: Duell der Verfahren Reibung am Kraterrand
 VERGLEICH辨别实验（双向辨析：能量眼 vs. 动量眼）：
 
-VERGLEICH: Wähle erst das Verfahren — 【选程序】先读题干里的关键词：(i) Energieverfahren（关键词"光滑、无摩擦、下滑、抛起"，一个物体在不同位置的能量转换，问速度或高度 → E_pot + E_kin = const）oder (ii) Impulsverfahren（关键词"碰撞、相撞、爆炸、反冲"，多个物体相互作用前后，问碰后速度 → p_vor = p_nach）—— dann lösen.
+VERGLEICH: (Weg A quantitativ-rechnerisch gegen Weg B qualitativ-strukturell): Wähle erst das Verfahren — 【选程序】先读题干里的关键词：(i) Energieverfahren（关键词"光滑、无摩擦、下滑、抛起"，一个物体在不同位置的能量转换，问速度或高度 → E_pot + E_kin = const）oder (ii) Impulsverfahren（关键词"碰撞、相撞、爆炸、反冲"，多个物体相互作用前后，问碰后速度 → p_vor = p_nach）—— dann lösen.
 
 Weg A: Erst Verfahren waehlen, dann rechnen.
 
@@ -122,20 +117,16 @@ HILFE: A: "reibungsfrei, hinunterrollen, Geschwindigkeit gefragt" → Verfahren 
 
 ANTWORT: A erfordert Verfahren (i): Da keine Reibung wirkt und nur die Geschwindigkeit am Fuß der Rampe gesucht ist, gilt die Energieerhaltung m*g*h = 0.5*m*v^2, also v = sqrt(2*g*h); der Energieansatz verknüpft nur Anfangs- und Endzustand des einen Wagens. B erfordert Verfahren (ii): Beim Zusammenstoß wirken nur innere Kräfte, der Gesamtimpuls bleibt erhalten; mit p_vor = p_nach gilt m1*v1 + m2*v2 = (m1 + m2)*v', woraus sich die gemeinsame Geschwindigkeit v' ergibt.
 
-Klausur-Satz: `Die Energieerhaltung verfolgt einen Koerper ueber verschiedene Positionen, waehrend die Impulserhaltung den Gesamtimpuls mehrerer Koerper vor und nach einem Stoss vergleicht.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Die Energieerhaltung verfolgt einen Koerper ueber verschiedene Positionen, waehrend die Impulserhaltung den Gesamtimpuls mehrerer Koerper vor und nach einem Stoss vergleicht.`
 
 ## Schritt 6 — check: Selbsttest zu Formelhandbuch Mechanik: dreisprachig und handgerechnet: Reibung am Kraterrand
 CHECK检索默写（自测 3 题，与答案配对）：
 
-FRAGE: Wie lautet die zeitfreie Gleichung der gleichmaessig beschleunigten Bewegung? | ANTWORT: v^2 - v0^2 = 2*a*s, sie verknuepft Geschwindigkeiten und Weg ohne die Zeit.
-FRAGE: Welche drei Formeln beschreiben die mechanischen Energieformen? | ANTWORT: E_kin = 0.5*m*v^2, E_pot = m*g*h und E_spann = 0.5*D*s^2.
-FRAGE: Wann gilt die Impulserhaltung bei einem Stoss? | ANTWORT: Wenn keine aeusseren Kraefte wirken, sodass der Gesamtimpuls vor und nach dem Stoss gleich bleibt.
+- FRAGE: Wie lautet die zeitfreie Gleichung der gleichmaessig beschleunigten Bewegung? | ANTWORT: v^2 - v0^2 = 2*a*s, sie verknuepft Geschwindigkeiten und Weg ohne die Zeit.
+- FRAGE: Welche drei Formeln beschreiben die mechanischen Energieformen? | ANTWORT: E_kin = 0.5*m*v^2, E_pot = m*g*h und E_spann = 0.5*D*s^2.
+- FRAGE: Wann gilt die Impulserhaltung bei einem Stoss? | ANTWORT: Wenn keine aeusseren Kraefte wirken, sodass der Gesamtimpuls vor und nach dem Stoss gleich bleibt.
 
-Klausur-Satz: `Jede Formel wird zuerst in Buchstabenform angeschrieben, dann mit Einheiten gefuellt und erst zuletzt als Zahl notiert.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Jede Formel wird zuerst in Buchstabenform angeschrieben, dann mit Einheiten gefuellt und erst zuletzt als Zahl notiert.`
 
 ## Fehlvorstellung
 
@@ -154,7 +145,7 @@ ROLLE: Du bist Lerncoach und bereitest eine Mitschülerin auf die Formelaufgaben
 SITUATION: Die Mitschülerin kennt viele Formeln, verwechselt aber ständig, wann sie welche einsetzen soll, und schreibt oft nur das Ergebnis ohne Ansatz. Erkläre ihr in einer zusammenhängenden Stellungnahme (ca. 150 Wörter), wie man mit einer Entscheidungshilfe die richtige Formel wählt und wie ein vollständiger Lösungsweg aussieht, damit sie die Schrittpunkte erhält.
 RUBRIC (30 XP): Darstellung der Entscheidungsregel (Bedingung waehlt Ansatz) mit mindestens zwei Beispielen (10 XP) | Erklaerung des dreischrittigen Loesungswegs Ansatz-Einsetzen-Ergebnis (10 XP) | Hinweis auf Einheiten und Groessenordnung als Kontrolle (5 XP) | Nachvollziehbare, adressatengerechte Sprache mit Fachbegriffen (5 XP).
 
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Wer Buchstabenansatz, Umstellung, Zahlenrechnung und Einheitenprobe zeigt, erhaelt die volle Punktzahl.`
 
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Reibung am Kraterrand
 TAKEAWAY 1盒（核心总结）：
@@ -166,4 +157,4 @@ REFLEXION 2问：
 1. 过程自省：Welcher Schritt fiel schwerer — das Auswendigschreiben der sechs Formelgruppen (Schritt 2) oder die Auswahl der richtigen Formel im Vergleich (Schritt 5)?
 2. 元认知计划：Beim nächsten Mal notiere ich zuerst die Bedingung (Reibung? Zeit gefragt?) und waehle erst danach die Formel aus.
 
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Formeln sind fertige Gedanken: Wer sie allgemein loest, denkt einmal und rechnet nie wieder.`

@@ -13,7 +13,7 @@ version: Lesson-v3
 
 # Lernreise: CN-Tricks: sechs Verfahren fuer die Physik-Klausur (L1, Ziel Klausur)
 
-<!-- Campaign: Mars-Mission | Episode 3/28 | Krise: Sol-047 Brems-Raketen-Zuendung 3,2 s zu spaet | Target: v0 = 261 m/s, a = 2.4 m/s2, Ziel s = 911 m | Tool: formula -->
+<!-- Campaign: Mars-Mission | Episode 3/28 | Krise: Sol-047 Brems-Raketen-Zuendung 3,2 s zu spaet | Zielgroessen: 2,0 kg plus 3,0 kg mit 15 N, Ziel Kupplungskraft 9,0 N | Tool: formula -->
 
 ## Schritt 1 — entdecken: Zuendung in letzter Sekunde
 ZIELE (diese Lektion in 15 Minuten: danach kannst du):
@@ -26,11 +26,9 @@ ZIELE (diese Lektion in 15 Minuten: danach kannst du):
 
 ### Hook / Phaenomen
 
-【火星拓荒者·第3集/共28集】警报：Sol-047 Brems-Raketen-Zuendung 3,2 s zu spaet。领航员 Lena 大喊：“v0 = 261 m/s, a = 2.4 m/s2, Ziel s = 911 m！”机械师 Tom 回应：“稳住曲线！”上一集（Physik-CN-Training-L1.md）埋下的隐患在此爆发，下一集（Physik-CN-Tricks-L1.md）的大门只为算对的人打开。本集你要在沙盘里亲手把飞船从超速边缘救回来：先看现象、再点装备、最后算出让考官点头的 Bilanz。记住：读图先看轴、计算必带单位、做完必用另一张图验算——这就是火星人生存法则，也是 Klausur 拿分法则。
+Hook / Phaenomen: Zwei Wagen mit 15 Newton, doch innen zieht die Kupplung nur mit 9 Newton. Wer nur das Ganze sieht, uebersieht die Trennstelle. **Kraeftediagramm** und **Systemschnitt** zerlegen das Problem, **Ersatzkraft** und **Dimensionsprobe** sichern Zahl und Einheit.
 
-Hook / Phaenomen (Sol-Logbuch, Episode 3 von 28): Mars-Anflug, Sol-047 Brems-Raketen-Zuendung 3,2 s zu spaet. Navigatorin Lena meldet: v0 = 261 m/s, a = 2.4 m/s2, Ziel s = 911 m, Mechaniker Tom ruft: Halte die Kurve! Der Bordcomputer geht auf Rot, das Funkgeraet rauscht, die Crew haelt den Atem an. Genau hier entscheidet CN-Tricks: sechs Verfahren fuer die Physik-Klausur ueber Landung oder Absturz, ueber Festfahren oder Weiterfahrt, ueber Andocken oder Abprall. Das Logbuch des vorherigen Sols (Physik-CN-Training-L1.md) warnte bereits vor diesem Moment, und das naechste Fenster (Physik-CN-Tricks-L1.md) oeffnet sich nur, wenn diese Aufgabe geloest wird. Die Sensoren streuen, die Diagramme zittern, doch die Physik bleibt unbestechlich: Wer Steigung und Flaeche, Kraft und Gegenkraft, Schwung und Stoss richtig liest, rettet die Mission. In dieser Episode stellst du im Sandbox-Labor die Brems- und Gleitzahlen so ein, dass die Kapsel sicher durchkommt. Beobachte zuerst das Phaenomen in Ruhe, benenne dann die Groessen mit exakten Einheiten, pruefe schliesslich die Bilanz mit einer Gegenrechnung. Der folgende Weg fuehrt vom Alarmton zur sauberen Klausurloesung: erst das Phaenomen beobachten, dann die Begriffe sichern, dann das Modell rechnen und im Labor bestaetigen.
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Erst das Bild, dann die Formel, dann die Zahl: Kein Ansatz ohne Kraeftediagramm und Systemwahl.`
 
 ## Schritt 2 — entdecken: Ausruestungskiste der Mars-Crew
 PRETRAINING (Kernbegriffe, erst lesen, dann abdecken und aktiv wiedergeben):
@@ -41,19 +39,19 @@ Zwei Wagen $2{,}0$ plus $3{,}0\,\mathrm{kg}$ mit $15\,\mathrm{N}$ — gemeinsame
 
 ### Fachbegriffe & Definitionen
 
-- **Kraeftediagramm: (受力图)** Alle Kraefte als Pfeile mit Richtung; keine zu viel, keine zu wenig.
-- **System: (系统)** Als Einheit betrachtete Koerpergesamtheit fuer gemeinsames $a$.
-- **Flaeche unter der Kurve: (曲线下面积)** Gebiet unter $v$-$t$ als Weg $s$ per Dreieck oder Rechteck.
-- **Ersatzkraft: (等效力)** Eine Kraft mit gleicher Wirkung wie mehrere, etwa $D_{ges} = 60\,\mathrm{N/m}$.
-- **Dimensionsprobe: (量纲检验)** Einheitenkontrolle vor Einsetzen auf Zieleinheit $\mathrm{m/s}$ oder $\mathrm{N}$.
+- **Kraeftediagramm:** Alle Kraefte als Pfeile mit Richtung; keine zu viel, keine zu wenig. Alle Kraefte erscheinen als Pfeile mit Richtung; keine zu viel, keine zu wenig. Mechanismus: System freischneiden und jede Kraft als Pfeil eintragen. Klausur-Tipp: Jeden Pfeil benennen, sonst zaehlt er nicht.
+- **System:** Als Einheit betrachtete Koerpergesamtheit fuer gemeinsames $a$. Als Einheit betrachtete Koerper teilen sich eine gemeinsame Beschleunigung. Mechanismus: Systemgrenze waehlen und Gesamtmasse bilden. Klausur-Tipp: Systemwahl in einem Satz begruenden.
+- **Flaeche unter der Kurve:** Gebiet unter $v$-$t$ als Weg $s$ per Dreieck oder Rechteck. Das Gebiet unter v-t ist der zurueckgelegte Weg. Mechanismus: Flaeche als Dreieck oder Rechteck mit Formel berechnen. Klausur-Tipp: Achsen mit Einheiten beschriften.
+- **Ersatzkraft:** Eine Kraft mit gleicher Wirkung wie mehrere, etwa $D_{ges} = 60\,\mathrm{N/m}$. Eine Kraft ersetzt mehrere mit exakt gleicher Wirkung. Mechanismus: Parallele oder serielle Kraefte zu einer Kraft vereinen. Klausur-Tipp: Ersatzregel vor dem Einsetzen nennen.
+- **Dimensionsprobe:** Einheitenkontrolle vor Einsetzen auf Zieleinheit $\mathrm{m/s}$ oder $\mathrm{N}$. Die Einheitenkontrolle entlarvt falsche Ansaetze vor jeder Zahl. Mechanismus: Einheiten vor dem Einsetzen auf Zieleinheit pruefen. Klausur-Tipp: Probe als eigene Zeile vor das Ergebnis setzen.
 
 ### Wirkungsgefuege / Modell
 
-Die Kette schneidet zweimal: Gesamt $a = 15/5{,}0 = 3{,}0\,\mathrm{m/s^2}$, dann Teil $F = 3{,}0 \cdot 3{,}0 = 9{,}0\,\mathrm{N}$ an $3{,}0\,\mathrm{kg}$. Ersatz parallel $D_{ges} = 60$ zu $s = 30/60 = 0{,}50\,\mathrm{m}$. Flaeche $25\,\mathrm{m}$ als Dreieck. Einheit $m s$ zu $\mathrm{kgm}$ verworfen gegen $s/t$ zu $\mathrm{m/s}$. Kurzregel $1:3:5$ nur mit Start aus Ruhe — sonst zurueck zu $s = 0{,}5 a t^2$.
+Die Kette schneidet zweimal: Gesamt $a = 15/5{,}0 = 3{,}0\,\mathrm{m/s^2}$, dann Teil $F = 3{,}0 \cdot 3{,}0 = 9{,}0\,\mathrm{N}$ an $3{,}0\,\mathrm{kg}$. Ersatz parallel $D_{ges} = 60$ zu $s = 30/60 = 0{,}50\,\mathrm{m}$. Flaeche $25\,\mathrm{m}$ als Dreieck.
 
-Klausur-Satz: `Erst das Bild, dann die Formel, dann die Zahl — und vor dem Einsetzen wird die Einheit geprueft.`
+Einheit $m s$ zu $\mathrm{kgm}$ verworfen gegen $s/t$ zu $\mathrm{m/s}$. Kurzregel $1:3:5$ nur mit Start aus Ruhe — sonst zurueck zu $s = 0{,}5 a t^2$.
 
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Erst das Bild, dann die Formel, dann die Zahl — und vor dem Einsetzen wird die Einheit geprueft.`
 
 ## Schritt 3 — entdecken: Wirkungskette hinter CN-Tricks: sechs Verfahren fuer die Physik-Klausur
 EXPERIMENTELLE ERKUNDUNG (PhET Sandbox, erst spielen, dann deuten):
@@ -78,9 +76,8 @@ Die Kette lautet Diagramm gegen Gesetz gegen Probe: $F_{res} = m a$ zu $a = F_{r
   Diagramm plus Formel plus Einheit
 ```
 
-Klausur-Satz: `Die sechs Verfahren beschleunigen das Loesen, aber erst der ausgeschriebene Ansatz mit Formel und Einheit macht die Loesung klausurfaehig.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+$$a = \frac{15}{5{,}0} = 3{,}0\,\mathrm{m/s^2},\quad F = 9{,}0\,\mathrm{N}$$
+`Klausur-Satz: Die sechs Verfahren beschleunigen das Loesen, aber erst der ausgeschriebene Ansatz mit Formel und Einheit macht die Loesung klausurfaehig.`
 
 ## Anekdote & Fun-Fact
 
@@ -89,7 +86,7 @@ Klausur-Satz: `Die sechs Verfahren beschleunigen das Loesen, aber erst der ausge
 **Bezug zum Konzept**: `Die ungeraden Zahlen 1 : 3 : 5 folgen direkt aus s = 0.5*a*t^2 und sind das klassische Beispiel fuer eine Kurzregel mit genannter Bedingung (Start aus der Ruhe).`
 
 ## Schritt 4 — ausprobieren: Sandbox-Auftrag Zuendung in letzter Sekunde
-Kontinuitaet: Vorher Physik-CN-Training-L1.md | Nachher Physik-CN-Tricks-L1.md. Krise dieser Episode: Sol-047 Brems-Raketen-Zuendung 3,2 s zu spaet. Target: v0 = 261 m/s, a = 2.4 m/s2, Ziel s = 911 m.
+Kontinuitaet: Vorher Physik-CN-Training-L1.md | Nachher Physik-CN-Tricks-L1.md. Krise dieser Episode: Sol-047 Brems-Raketen-Zuendung 3,2 s zu spaet. Zielgroessen: 2,0 kg plus 3,0 kg mit 15 N, Ziel Kupplungskraft 9,0 N
 
 BEISPIEL (Sandbox Level mit Werkzeug):
 
@@ -104,14 +101,12 @@ HILFE:
 
 MUSTERLOESUNG: Sandbox $a = 2{,}0$ in $m/s^2$ bei $10$ $N$ und $5{,}0$ $kg$. Rechnung $F_{res} = m a$ zu $a = F_{res}/m = 10/5 = 2{,}0$ in $m/s^2$ aus dem vollstaendigen Kraeftediagramm. Dimensionsprobe $N = kg m/s^2$, also $N/kg = m/s^2$ bestaetigt den Ansatz. Alle sechs Verfahren sind erst mit Formel plus Einheit klausurfaehig.
 
-Klausur-Satz: `Aus dem vollstaendigen Kraeftediagramm folgt fuer den Block mit F_res = 10 N eine Beschleunigung von 2,0 m/s^2, und die Dimensionsprobe bestaetigt den Ansatz.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Aus dem vollstaendigen Kraeftediagramm folgt fuer den Block mit F_res = 10 N eine Beschleunigung von 2,0 m/s^2, und die Dimensionsprobe bestaetigt den Ansatz.`
 
 ## Schritt 5 — ausprobieren: Duell der Verfahren Zuendung in letzter Sekunde
 VERGLEICH (zwei Verfahren unterscheiden):
 
-VERGLEICH: Waehle zuerst das Verfahren — (i) Ganzheits-Verfahren (mehrere Koerper als System: $a = F_{aussen}/m_{ges}$ fuer gemeinsames Tempo) oder (ii) Isolations-Verfahren (einen Koerper freischneiden: $F_{innen} = m_{Teil} \cdot a$ fuer Wechselkraft) — dann loesen.
+VERGLEICH: (Weg A quantitativ-rechnerisch gegen Weg B qualitativ-strukturell): Waehle zuerst das Verfahren — (i) Ganzheits-Verfahren (mehrere Koerper als System: $a = F_{aussen}/m_{ges}$ fuer gemeinsames Tempo) oder (ii) Isolations-Verfahren (einen Koerper freischneiden: $F_{innen} = m_{Teil} \cdot a$ fuer Wechselkraft) — dann loesen.
 
 Weg A: Erst Verfahren waehlen, dann rechnen.
 
@@ -125,20 +120,16 @@ HILFE: A fragt Systemtempo, also Verfahren (i) mit $a = F/(m_1 + m_2)$. B fragt 
 
 ANTWORT: A erfordert Verfahren (i): $m_{ges} = 2{,}0 + 4{,}0 = 6{,}0\,\mathrm{kg}$, $a = F/m_{ges} = 12/6{,}0 = 2{,}0\,\mathrm{m/s^2}$. B erfordert Verfahren (ii): Schnitt am hinteren Wagen ($4{,}0\,\mathrm{kg}$): $F_{Seil} = m_2 \cdot a = 4{,}0 \cdot 2{,}0 = 8{,}0\,\mathrm{N}$. Kontrolle vorn: $12 - 8{,}0 = 4{,}0\,\mathrm{N} = m_1 \cdot a$.
 
-Klausur-Satz: `Die gemeinsame Beschleunigung folgt aus dem Gesamtsystem, die innere Seilkraft dagegen erst nach dem Freischneiden eines einzelnen Wagens.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Die gemeinsame Beschleunigung folgt aus dem Gesamtsystem, die innere Seilkraft dagegen erst nach dem Freischneiden eines einzelnen Wagens.`
 
 ## Schritt 6 — check: Selbsttest zu CN-Tricks: sechs Verfahren fuer die Physik-Klausur: Zuendung in letzter Sekunde
 CHECK (Selbsttest, 3 Fragen mit Antworten):
 
-FRAGE: In welcher Reihenfolge stehen Kraefte im Diagramm? | ANTWORT: Gewicht, Normale, Reibung, dann aeussere Zugkraft.
-FRAGE: Wann Gesamt-, wann Schnittverfahren? | ANTWORT: Gesamt fuer gemeinsames $a$ des Systems, Schnitt fuer innere Kraft zwischen Teilen.
-FRAGE: Was leistet die Dimensionsprobe, was nicht? | ANTWORT: Sie prueft die Ergebniseinheit; falsche Faktoren oder Bedingungen erkennt sie nicht.
+- FRAGE: In welcher Reihenfolge stehen Kraefte im Diagramm? | ANTWORT: Gewicht, Normale, Reibung, dann aeussere Zugkraft.
+- FRAGE: Wann Gesamt-, wann Schnittverfahren? | ANTWORT: Gesamt fuer gemeinsames $a$ des Systems, Schnitt fuer innere Kraft zwischen Teilen.
+- FRAGE: Was leistet die Dimensionsprobe, was nicht? | ANTWORT: Sie prueft die Ergebniseinheit; falsche Faktoren oder Bedingungen erkennt sie nicht.
 
-Klausur-Satz: `Das Ganzheitsverfahren liefert die gemeinsame Beschleunigung, das Isolationsverfahren die innere Kraft, und die Dimensionsprobe kontrolliert beide Ansaetze ueber die Einheit.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Das Ganzheitsverfahren liefert die gemeinsame Beschleunigung, das Isolationsverfahren die innere Kraft, und die Dimensionsprobe kontrolliert beide Ansaetze ueber die Einheit.`
 
 ## Fehlvorstellung
 
@@ -156,7 +147,7 @@ ROLLE: Du bist Nachhilfelehrerin und bringst einer Schuelergruppe die sechs Verf
 SITUATION: Die Gruppe rechnet schnell, verliert aber Punkte durch fehlende Ansaetze und Luecken im Diagramm. Erklaere in zusammenhaengender Stellungnahme (ca. 150 Woerter), wie Tempo und Formkorrektheit ueber Ansatz, Einheit und Diagramm zusammenkommen.
 RUBRIC (30 XP): Drei Verfahren deutschen Schritten zugeordnet (10 XP) | Warum Ansatz Punkte sichert (10 XP) | Beispiel Gesamt gegen Schnitt (5 XP) | Adressatengerechte Fachsprache (5 XP).
 
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Wer System schneidet, Kraefte bilanziert, Ersatzkraft nutzt und Einheiten prueft, erhaelt die volle Punktzahl.`
 
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Zuendung in letzter Sekunde
 TAKEAWAY (Kernzusammenfassung):
@@ -168,4 +159,4 @@ REFLEXION (2 Fragen):
 1. Selbstbeobachtung: Welcher Schritt fiel schwerer — das vollstaendige Kraeftediagramm (Schritt 4) oder die Wahl zwischen Ganzheits- und Isolationsverfahren im Vergleich (Schritt 5)?
 2. Planung: Beim naechsten Mal zeichne ich zuerst das Kraeftediagramm und pruefe die Einheit, bevor ich Zahlen einsetze.
 
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Physik löst man mit Schere und Massband: Schneiden, ersetzen, Einheiten pruefen.`

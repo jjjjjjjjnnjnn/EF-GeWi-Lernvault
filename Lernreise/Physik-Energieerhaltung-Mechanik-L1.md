@@ -13,7 +13,7 @@ version: Lesson-v3
 
 # Lernreise: Mechanische Energieerhaltung (L1, Ziel Klausur)
 
-<!-- Campaign: Mars-Mission | Episode 8/28 | Krise: Sol-064 Funkschatten 11 Minuten hinter Olympus Mons | Target: v0 = 296 m/s, a = 3.0 m/s2, Ziel s = 1096 m | Tool: schiefe-ebene -->
+<!-- Campaign: Mars-Mission | Episode 8/28 | Krise: Sol-064 Funkschatten 11 Minuten hinter Olympus Mons | Zielgroessen: Rampe mit Hoehe h, Ziel Geschwindigkeit aus Energiebilanz | Tool: schiefe-ebene -->
 
 ## Schritt 1 — entdecken: Federbeine im Test
 ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
@@ -24,26 +24,24 @@ ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
 ### Hook / Phaenomen
 
-【火星拓荒者·第8集/共28集】警报：Sol-064 Funkschatten 11 Minuten hinter Olympus Mons。领航员 Lena 大喊：“v0 = 296 m/s, a = 3.0 m/s2, Ziel s = 1096 m！”机械师 Tom 回应：“稳住曲线！”上一集（Physik-Energieerhaltung-Mechanik-DE-L1.md）埋下的隐患在此爆发，下一集（Physik-Federpendel-Harmonische-Schwingung-CN-L1.md）的大门只为算对的人打开。本集你要在沙盘里亲手把飞船从超速边缘救回来：先看现象、再点装备、最后算出让考官点头的 Bilanz。记住：读图先看轴、计算必带单位、做完必用另一张图验算——这就是火星人生存法则，也是 Klausur 拿分法则。
+山顶静止、山脚飞驰：重力势能一滴不剩变成动能，能量账本有借必有贷，守恒负责兜底，摩擦是唯一的税。
 
-Hook / Phaenomen (Sol-Logbuch, Episode 8 von 28): Mars-Anflug, Sol-064 Funkschatten 11 Minuten hinter Olympus Mons. Navigatorin Lena meldet: v0 = 296 m/s, a = 3.0 m/s2, Ziel s = 1096 m, Mechaniker Tom ruft: Halte die Kurve! Der Bordcomputer geht auf Rot, das Funkgeraet rauscht, die Crew haelt den Atem an. Genau hier entscheidet Mechanische Energieerhaltung ueber Landung oder Absturz, ueber Festfahren oder Weiterfahrt, ueber Andocken oder Abprall. Das Logbuch des vorherigen Sols (Physik-Energieerhaltung-Mechanik-DE-L1.md) warnte bereits vor diesem Moment, und das naechste Fenster (Physik-Federpendel-Harmonische-Schwingung-CN-L1.md) oeffnet sich nur, wenn diese Aufgabe geloest wird. Die Sensoren streuen, die Diagramme zittern, doch die Physik bleibt unbestechlich: Wer Steigung und Flaeche, Kraft und Gegenkraft, Schwung und Stoss richtig liest, rettet die Mission. In dieser Episode stellst du im Sandbox-Labor die Brems- und Gleitzahlen so ein, dass die Kapsel sicher durchkommt. Beobachte zuerst das Phaenomen in Ruhe, benenne dann die Groessen mit exakten Einheiten, pruefe schliesslich die Bilanz mit einer Gegenrechnung. Der folgende Weg fuehrt vom Alarmton zur sauberen Klausurloesung: erst das Phaenomen beobachten, dann die Begriffe sichern, dann das Modell rechnen und im Labor bestaetigen.
+Hook / Phaenomen: Oben schnell nichts, unten alles Tempo: Die **Lageenergie** verwandelt sich restlos in **Bewegungsenergie**. Die **Energiebilanz** schreibt jede Umwandlung auf, die **Energieerhaltung** buergt fuer die Summe. Reibung ist der einzige Steuerdieb in dieser Bilanz.
 
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Energie geht nicht verloren, sie wechselt nur das Konto: Lage plus Bewegung plus Spannung bleiben konstant.`
 
 ## Schritt 2 — entdecken: Ausruestungskiste der Mars-Crew
 PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
 
 中文在上，德语在下：
 
-- 动能 — die kinetische Energie E_kin = 0.5*m*v^2 (J)：运动物体具有的能量，随速度平方增长。
-- 重力势能 — die Lageenergie E_pot = m*g*h (J)：相对零势能面的高度能量，与高度成正比。
-- 弹性势能 — die Spannenergie E_spann = 0.5*D*s^2 (J)：弹簧形变储存的能量，D 为劲度系数、s 为形变量。
-- 能量守恒 — die Energieerhaltung：无耗散时 E_vor = E_nach，能量只转化不消失。
-- 耗散 — die Dissipation：摩擦把机械能转化为内能，能量账里必须扣掉这部分。
+- 动能 — die kinetische Energie E_kin = 0.5*m*v^2 (J)：运动物体具有的能量，随速度平方增长。 Sie waechst quadratisch mit der Geschwindigkeit. Mechanismus: Halb m v Quadrat aus Masse und Tempo bilden. Klausur-Tipp: Quadrat nie vergessen, Einheit Joule pruefen.
+- 重力势能 — die Lageenergie E_pot = m*g*h (J)：相对零势能面的高度能量，与高度成正比。 Sie zaehlt ab einem frei gewaehlten Nullniveau nach oben. Mechanismus: Masse mal g mal Hoehe ueber Nullniveau berechnen. Klausur-Tipp: Nullniveau in der ersten Zeile festlegen.
+- 弹性势能 — die Spannenergie E_spann = 0.5*D*s^2 (J)：弹簧形变储存的能量，D 为劲度系数、s 为形变量。 Gespannte Federn und Seile speichern Arbeit als Spannung. Mechanismus: Halb D x Quadrat aus Haerte und Dehnung bilden. Klausur-Tipp: Dehnung ab Ruhelage messen.
+- 能量守恒 — die Energieerhaltung：无耗散时 E_vor = E_nach，能量只转化不消失。 Anfangssumme gleich Endsumme plus eventuelle Reibungsarbeit. Mechanismus: Alle Energiekonten beidseitig aufstellen und gleichsetzen. Klausur-Tipp: Jedes Konto als eigenen Term zeigen.
+- 耗散 — die Dissipation：摩擦把机械能转化为内能，能量账里必须扣掉这部分。 Im abgeschlossenen System bleibt die Gesamtsumme exakt konstant. Mechanismus: System abgrenzen und Erhaltungssatz als Gleichung schreiben. Klausur-Tipp: Abgeschlossenheit ausdruecklich feststellen.
 
-Klausur-Satz: `Bei der Energiebilanz werden alle Energieformen vor und nach dem Vorgang aufgefuehrt; bei Reibung wird die dissipierte Energie abgezogen.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Bei der Energiebilanz werden alle Energieformen vor und nach dem Vorgang aufgefuehrt; bei Reibung wird die dissipierte Energie abgezogen.`
 
 ## Schritt 3 — entdecken: Wirkungskette hinter Mechanische Energieerhaltung
 ENTDECKEN（1概念 + 1文字图解）：
@@ -70,9 +68,8 @@ ENTDECKEN（1概念 + 1文字图解）：
     mit Reibung:        E_vor = E_nach + W_Reibung
 ```
 
-Klausur-Satz: `Da beim reibungsfreien Herabgleiten die gesamte Lageenergie in Bewegungsenergie umgewandelt wird, gilt m*g*h = 0.5*m*v^2 und damit v = sqrt(2*g*h).`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+$$E = mgh+\frac{1}{2}mv^2 = \text{const}$$
+`Klausur-Satz: Da beim reibungsfreien Herabgleiten die gesamte Lageenergie in Bewegungsenergie umgewandelt wird, gilt m*g*h = 0.5*m*v^2 und damit v = sqrt(2*g*h).`
 
 ## Anekdote & Fun-Fact
 
@@ -83,7 +80,7 @@ Klausur-Satz: `Da beim reibungsfreien Herabgleiten die gesamte Lageenergie in Be
 **Bezug zum Konzept**: `Die Energieerhaltung wurde unabhaengig von mehreren Forschern gefunden, weil sie in sehr vielen Systemen gilt — genau darum ist E_vor = E_nach so universell.`
 
 ## Schritt 4 — ausprobieren: Sandbox-Auftrag Federbeine im Test
-Kontinuitaet: Vorher Physik-Energieerhaltung-Mechanik-DE-L1.md | Nachher Physik-Federpendel-Harmonische-Schwingung-CN-L1.md. Krise dieser Episode: Sol-064 Funkschatten 11 Minuten hinter Olympus Mons. Target: v0 = 296 m/s, a = 3.0 m/s2, Ziel s = 1096 m.
+Kontinuitaet: Vorher Physik-Energieerhaltung-Mechanik-DE-L1.md | Nachher Physik-Federpendel-Harmonische-Schwingung-CN-L1.md. Krise dieser Episode: Sol-064 Funkschatten 11 Minuten hinter Olympus Mons. Zielgroessen: Rampe mit Hoehe h, Ziel Geschwindigkeit aus Energiebilanz
 
 BEISPIEL（正确例题示范，含教具操作与解答）：
 
@@ -98,14 +95,12 @@ HILFE:
 
 MUSTERLÖSUNG: Auf der reibungsfreien Rampe wird die Lageenergie vollständig in Bewegungsenergie umgewandelt: m*g*h = 0.5*m*v^2. Die Masse kürzt sich heraus, sodass v = sqrt(2*g*h) = sqrt(2 * 10 m/s^2 * 0,80 m) = sqrt(16 m^2/s^2) = 4,0 m/s. Am Fuß der Rampe hat der Wagen also die Geschwindigkeit 4,0 m/s. Beim Stauchen der Feder geht die kinetische Energie vollständig in Spannenergie über; am Punkt maximaler Zusammendrückung gilt m*g*h = 0.5*D*s^2 (die Gesamtenergie bleibt dieselbe wie oben). Einsetzen ergibt 0.5 * 100 N/m * s^2 = 1,0 kg * 10 m/s^2 * 0,80 m = 8,0 J, also s^2 = 16,0 J / 100 N/m = 0,16 m^2 und damit s = 0,40 m. Gegenprobe über die Geschwindigkeit: 0.5 * 1,0 kg * (4,0 m/s)^2 = 8,0 J, was der Anfangsenergie entspricht.
 
-Klausur-Satz: `Aus der Energieerhaltung folgt fuer den Wagen am Fuss der Rampe v = 4,0 m/s und fuer die maximale Federspannung s = 0,40 m.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Aus der Energieerhaltung folgt fuer den Wagen am Fuss der Rampe v = 4,0 m/s und fuer die maximale Federspannung s = 0,40 m.`
 
 ## Schritt 5 — ausprobieren: Duell der Verfahren Federbeine im Test
 VERGLEICH辨别实验（双向辨析：能量眼 vs. 受力眼）：
 
-VERGLEICH: Wähle erst das Verfahren — 【选程序】先读题干问的是什么、力是否恒定、过程有几段：(i) Energieansatz（只问速度/高度/形变量，力变化或过程多段 → 用 E_vor = E_nach，跳过中间细节）oder (ii) Kraftansatz（要加速度、时间、方向或某处的内力 → 用 F_res = m*a 逐步追踪）—— dann lösen.
+VERGLEICH: (Weg A quantitativ-rechnerisch gegen Weg B qualitativ-strukturell): Wähle erst das Verfahren — 【选程序】先读题干问的是什么、力是否恒定、过程有几段：(i) Energieansatz（只问速度/高度/形变量，力变化或过程多段 → 用 E_vor = E_nach，跳过中间细节）oder (ii) Kraftansatz（要加速度、时间、方向或某处的内力 → 用 F_res = m*a 逐步追踪）—— dann lösen.
 
 Weg A: Erst Verfahren waehlen, dann rechnen.
 
@@ -119,20 +114,16 @@ HILFE: A: Gefragt ist nur eine Geschwindigkeit, keine Zeit, kein Winkel nötig �
 
 ANTWORT: A erfordert Verfahren (i): Da nur die Geschwindigkeit am tiefsten Punkt gesucht ist und keine Reibung auftritt, genügt die Energiebilanz m*g*L = 0.5*m*v^2, also v = sqrt(2*g*L) = sqrt(2 * 10 m/s^2 * 1,25 m) = 5,0 m/s; der Fadenwinkel und der genaue Bahnverlauf sind dabei irrelevant. B erfordert Verfahren (ii): Die Energiegleichung enthält die Zeit überhaupt nicht, deshalb muss man über die Beschleunigung (hier a = g*sin(beta) längs der Bahn) und die Kinematik gehen, um die gesuchte Zeit zu bestimmen.
 
-Klausur-Satz: `Fragt die Aufgabe nur nach einer Geschwindigkeit oder Hoehe, fuehrt der Energieansatz ohne Zeit und ohne Winkel zum Ziel; ist dagegen eine Zeit gesucht, muss der Kraftansatz verwendet werden.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Fragt die Aufgabe nur nach einer Geschwindigkeit oder Hoehe, fuehrt der Energieansatz ohne Zeit und ohne Winkel zum Ziel; ist dagegen eine Zeit gesucht, muss der Kraftansatz verwendet werden.`
 
 ## Schritt 6 — check: Selbsttest zu Mechanische Energieerhaltung: Federbeine im Test
 CHECK检索默写（自测 3 题，与答案配对）：
 
-FRAGE: Unter welcher Bedingung gilt die mechanische Energieerhaltung? | ANTWORT: Wenn nur konservative Kraefte wie Gewichtskraft oder Federkraft wirken, also keine Reibung Energie entzieht.
-FRAGE: Wie lauten die drei Formeln der mechanischen Energieformen? | ANTWORT: E_kin = 0.5*m*v^2, E_pot = m*g*h und E_spann = 0.5*D*s^2.
-FRAGE: Warum faellt in v = sqrt(2*g*h) die Masse heraus? | ANTWORT: Weil die Masse sowohl in m*g*h als auch in 0.5*m*v^2 als Faktor steht und daher auf beiden Seiten gekuerzt werden kann.
+- FRAGE: Unter welcher Bedingung gilt die mechanische Energieerhaltung? | ANTWORT: Wenn nur konservative Kraefte wie Gewichtskraft oder Federkraft wirken, also keine Reibung Energie entzieht.
+- FRAGE: Wie lauten die drei Formeln der mechanischen Energieformen? | ANTWORT: E_kin = 0.5*m*v^2, E_pot = m*g*h und E_spann = 0.5*D*s^2.
+- FRAGE: Warum faellt in v = sqrt(2*g*h) die Masse heraus? | ANTWORT: Weil die Masse sowohl in m*g*h als auch in 0.5*m*v^2 als Faktor steht und daher auf beiden Seiten gekuerzt werden kann.
 
-Klausur-Satz: `Bei reibungsfreien Vorgaengen sind Anfangs- und Endenergie gleich, sodass die Masse oft herausfaellt und die Endgeschwindigkeit nur von der Hoehe abhaengt.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Bei reibungsfreien Vorgaengen sind Anfangs- und Endenergie gleich, sodass die Masse oft herausfaellt und die Endgeschwindigkeit nur von der Hoehe abhaengt.`
 
 ## Fehlvorstellung
 
@@ -151,7 +142,7 @@ ROLLE: Du bist Praktikumsbetreuerin im Physikpraktikum der EF und sollst eine Ha
 SITUATION: Ein Skateboarder (m = 60 kg) startet aus der Ruhe am Rand einer reibungsfreien Halfpipe mit der Höhe h = 1,8 m über dem tiefsten Punkt. Er soll ohne weitere Kraftanstrengung durch die Bahn fahren. Beurteile in einer zusammenhängenden Stellungnahme (ca. 150 Wörter), welche Geschwindigkeit er am tiefsten Punkt erreicht und warum die Energiebetrachtung hier sinnvoller ist als eine Kraftbetrachtung. Nutze g = 10 m/s^2.
 RUBRIC (30 XP): Aufstellen der Energiebilanz m*g*h = 0.5*m*v^2 mit gewaehlter Nullhoehe (5 XP) | Korrekte Berechnung v = sqrt(2*g*h) = 6,0 m/s mit Einheit (10 XP) | Begruendung der Unabhaengigkeit von der Masse (10 XP) | Kriteriengeleitetes Urteil zum Vorzug des Energieansatzes (veränderliche Kraftrichtung, keine Zeit gesucht) (5 XP).
 
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Wer Energiebilanz aufstellt, Nullniveau waehlt, umstellt und Reibungsverluste diskutiert, erhaelt die volle Punktzahl.`
 
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Federbeine im Test
 TAKEAWAY 1盒（核心总结）：
@@ -163,4 +154,4 @@ REFLEXION 2问：
 1. 过程自省：Welcher Schritt fiel schwerer — die Energiebilanz mit der Feder (Schritt 4) oder die Entscheidung zwischen Energie- und Kraftansatz im Vergleich (Schritt 5)?
 2. 元认知计划：Beim nächsten Mal pruefe ich zuerst, ob nach einer Zeit gefragt wird und ob Reibung auftritt, bevor ich den Ansatz waehle.
 
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Erhaltung heisst Buchhaltung: Wer alle Konten fuehrt, findet jeden Fehler selbst.`

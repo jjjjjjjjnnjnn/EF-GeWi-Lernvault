@@ -13,7 +13,7 @@ version: Lesson-v3
 
 # Lernreise: Grenzwert mit h-Methode und Ableitung an einer Stelle (L1, Ziel Klausur)
 
-<!-- Campaign: Optimierung | Episode 13/33 | Krise: Satelliten-Bahn Versatz 340 m | Target: x0 = 5, h = 0.6, Target m = 7.81 | Tool: tangent-slider -->
+<!-- Campaign: Optimierung | Episode 13/33 | Krise: Satelliten-Bahn Versatz 340 m | Zielgroessen: f(x) = x^2, Stelle x0 = 3, h-Methode mit Ziel 6 | Tool: tangent-slider -->
 
 ## Schritt 1 — entdecken: h schrumpft
 ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
@@ -26,26 +26,24 @@ Voraussetzung（窄切口）：只需会多项式展开与约分，本节只做�
 
 ### Hook / Phaenomen
 
-【首席算法官·第13集/共33集】警报：Satelliten-Bahn Versatz 340 m。首席算法官下令：“x0 = 5, h = 0.6, Target m = 7.81！”全场红灯闪烁。上一集（Mathe-Ganzrationale-Funktionen-Sachkontext-L1.md）的伏笔在此引爆，下一集（Mathe-Grenzwert-h-Methode-Ableitung-Stelle-DE-L1.md）只给交出最优解的人放行。本集你要在沙盘里亲手把工程从亏损/相撞边缘拉回来：先看现象、再点装备、最后算出让审计点头的 Bilanz。记住：先看区间还是时刻、再选割线还是切线/极值还是向量，做完必做 Gegenprobe——这就是工程帝国法则，也是 Klausur 拿分法则。
+割线一点点滑向切线，h一点点压向0：平均变化率取极限，就变成了瞬时变化率，关键一步是先约分再取极限。
 
-Hook / Phaenomen (CAO-Log, Episode 13 von 33): Super-Engineering-Zentrale, Satelliten-Bahn Versatz 340 m. Der Chief Algorithm Officer ruft: x0 = 5, h = 0.6, Target m = 7.81, die Assistentin meldet Rot-Alarm auf allen Screens. Genau hier entscheidet Grenzwert mit h-Methode und Ableitung an einer Stelle ueber Freigabe oder Sperrung, ueber Kostenexplosion oder Rekordgewinn, ueber Kollision oder gruene Welle. Das Protokoll der Vorwoche (Mathe-Ganzrationale-Funktionen-Sachkontext-L1.md) legte die Spur, das naechste Audit (Mathe-Grenzwert-h-Methode-Ableitung-Stelle-DE-L1.md) laesst keine Ausrede mehr zu. Die Messwerte streuen, die Kurven zittern, doch die Mathematik bleibt unbestechlich: Wer Sekante und Tangente, Maximum und Wendepunkt, Vektor und Ebene richtig liest, rettet das Projekt. In dieser Episode stellst du im Sandbox-Optimierer die Parameter so ein, dass alle Kennzahlen im gruenen Bereich landen. Beobachte zuerst das Phaenomen in Ruhe, benenne dann die Objekte mit exakter Notation, pruefe schliesslich das Ergebnis mit einer Gegenrechnung. Der folgende Weg fuehrt vom Alarmton zur sauberen Klausurloesung: erst das Phaenomen beobachten, dann die Begriffe sichern, dann das Modell rechnen und im Labor bestaetigen.
+Hook / Phaenomen: Die Sekante rutscht an die Kurve heran, h schrumpft gegen null: Was uebrig bleibt, ist die exakte **Tangentensteigung**. Der **Differenzenquotient** misst noch den Durchschnitt, der **Differentialquotient** misst den Moment. Dazwischen liegt ein einziger Rechenschritt: **Kuerzen vor Grenzwert**.
 
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Die h-Methode verwandelt mittlere in lokale Aenderung: Differenzenquotient kuerzen, dann h gegen null schicken.`
 
 ## Schritt 2 — entdecken: Ausruestungskiste der Algorithmus-Unit
 PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
 
 中文在上，德语在下：
 
-- 差商 — Differenzenquotient：$m(h) = \frac{f(x_0+h)-f(x_0)}{h}$，割线斜率。
-- h-方法 — h-Methode：先约去分母中的 $h$，再令 $h \to 0$。
-- 导数在一点 — Ableitung an einer Stelle：记作 $f'(x_0)$，是差商的极限。
-- 切线斜率 — Tangentensteigung：$f'(x_0)$ 即图像在该点的切线斜率。
-- 瞬时变化率 — momentane Aenderungsrate：导数的应用含义，如瞬时速度。
+- 差商 — Differenzenquotient：$m(h) = \frac{f(x_0+h)-f(x_0)}{h}$，割线斜率。 Er misst die mittlere Aenderungsrate ueber ein Intervall der Breite h. Mechanismus: Funktionswerte an x0 plus h und x0 bilden und durch h teilen. Klausur-Tipp: Bruch vollständig hinschreiben, nie vorzeitig kuerzen.
+- h-方法 — h-Methode：先约去分母中的 $h$，再令 $h \to 0$。 Sie ist das Standardverfahren, wenn der Operator nachweisen oder zeigen verlangt. Mechanismus: Differenzenquotient aufstellen, kuerzen und h gegen null schicken. Klausur-Tipp: Drei Schritte als getrennte Zeilen zeigen.
+- 导数在一点 — Ableitung an einer Stelle：记作 $f'(x_0)$，是差商的极限。 Er ist der Grenzwert des Differenzenquotienten und misst die lokale Rate. Mechanismus: Grenzuebergang h gegen null nach dem Kuerzen vollziehen. Klausur-Tipp: Limeszeichen bis zum letzten Schritt mitschleppen.
+- 切线斜率 — Tangentensteigung：$f'(x_0)$ 即图像在该点的切线斜率。 Ohne Kuerzen stuende null durch null da, der Grenzwert bliebe unlesbar. Mechanismus: h ausklammern und vor dem Grenzuebergang wegkuerzen. Klausur-Tipp: Kuerzungsschritt farbig oder mit Pfeil markieren.
+- 瞬时变化率 — momentane Aenderungsrate：导数的应用含义，如瞬时速度。 Sie ist das Endergebnis der h-Methode und gleichzeitig f Strich an der Stelle. Mechanismus: Grenzwert als Steigung der Tangente deuten. Klausur-Tipp: Zahl plus Deutung als vollstaendige Antwort geben.
 
-Klausur-Satz: `Der Differenzenquotient beschreibt die Sekantensteigung; sein Grenzwert fuer h gegen 0 ergibt die Tangentensteigung f'(x_0).`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Der Differenzenquotient beschreibt die Sekantensteigung; sein Grenzwert fuer h gegen 0 ergibt die Tangentensteigung f'(x_0).`
 
 ## Schritt 3 — entdecken: Wirkungskette hinter Grenzwert mit h-Methode und Ableitung an einer Stelle
 ENTDECKEN（1概念 + 1文字图解，中文在上、德语在下）：
@@ -79,9 +77,9 @@ Sekante durch (2|6) und (2+h|f): m(h) = 5+h
 h=1 -> m=6 | h=0.1 -> m=5.1 | h->0 -> m=5
 Punkt (2|6): Tangente mit Steigung 5
 ```
-Klausur-Satz: `Nach Kuerzen von h geht der Differenzenquotient fuer h gegen 0 in die Ableitung f'(x_0) ueber.`
 
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+$$f'(x_0) = \lim_{h\to 0}\frac{f(x_0+h)-f(x_0)}{h}$$
+`Klausur-Satz: Nach Kuerzen von h geht der Differenzenquotient fuer h gegen 0 in die Ableitung f'(x_0) ueber.`
 
 ## Anekdote & Fun-Fact
 
@@ -92,7 +90,7 @@ Klausur-Satz: `Nach Kuerzen von h geht der Differenzenquotient fuer h gegen 0 in
 **Bezug zum Konzept**: `Die h-Methode macht die Leibniz-Idee rechenbar: erst kuerzen, dann den Grenzuebergang h gegen 0 vollziehen.`
 
 ## Schritt 4 — ausprobieren: Sandbox-Auftrag h schrumpft
-Kontinuitaet: Vorher Mathe-Ganzrationale-Funktionen-Sachkontext-L1.md | Nachher Mathe-Grenzwert-h-Methode-Ableitung-Stelle-DE-L1.md. Krise dieser Episode: Satelliten-Bahn Versatz 340 m. Target: x0 = 5, h = 0.6, Target m = 7.81.
+Kontinuitaet: Vorher Mathe-Ganzrationale-Funktionen-Sachkontext-L1.md | Nachher Mathe-Grenzwert-h-Methode-Ableitung-Stelle-DE-L1.md. Krise dieser Episode: Satelliten-Bahn Versatz 340 m. Zielgroessen: f(x) = x^2, Stelle x0 = 3, h-Methode mit Ziel 6
 
 [Werkzeug: tangent-slider]
 
@@ -114,14 +112,12 @@ HILFE（中德双语步骤）：
 MUSTERLOESUNG：中文：差商已化简为5加h，h趋于0时极限为5，故该点导数为5，切线在点(2|6)处斜率为5，极限过程必须写全。
 
 MUSTERLOESUNG (DE): Mit $m(h) = 5 + h$ folgt $f'(2) = \lim_{h \to 0}(5+h) = 5$; die Tangente in $(2|6)$ hat Steigung $5$.
-Klausur-Satz: `Mit der h-Methode folgt m(h) = 5 + h und damit f'(2) = 5 als Tangentensteigung im Punkt (2|6).`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Mit der h-Methode folgt m(h) = 5 + h und damit f'(2) = 5 als Tangentensteigung im Punkt (2|6).`
 
 ## Schritt 5 — ausprobieren: Duell der Verfahren h schrumpft
 VERGLEICH辨别实验（双向辨析：定义求导 vs 法则求导）：
 
-VERGLEICH: Waehle erst das Verfahren — 【选程序】先看题干动词：(i) 定义求导（题目写 mit der h-Methode / ueber den Grenzwert，必须展开约分取极限）oder (ii) 法则求导（题目只写 bestimmen Sie f'，可直接用 Potenzregel）—— dann loesen.
+VERGLEICH: (Weg A quantitativ-rechnerisch gegen Weg B qualitativ-strukturell): Waehle erst das Verfahren — 【选程序】先看题干动词：(i) 定义求导（题目写 mit der h-Methode / ueber den Grenzwert，必须展开约分取极限）oder (ii) 法则求导（题目只写 bestimmen Sie f'，可直接用 Potenzregel）—— dann loesen.
 
 Weg A: Erst Verfahren waehlen, dann rechnen.
 
@@ -134,20 +130,16 @@ HILFE: A enthaelt die Aufforderung mit der h-Methode → Verfahren (i)，必须�
 
 ANTWORT: A erfordert Verfahren (i): $m(h) = \frac{3(1+h)^2-3}{h} = \frac{6h+3h^2}{h} = 6+3h \to 6$, also $f'(1) = 6$. B erfordert Verfahren (ii): Mit der Potenzregel gilt $f'(x) = 6x$, also $f'(1) = 6$. Beide Wege liefern $6$, doch nur Verfahren (i) zeigt den Grenzprozess und erhaelt dort die volle Punktzahl.
 
-Klausur-Satz: `Wird die h-Methode verlangt, muss der Grenzprozess ausgeschrieben werden; sonst genuegt die Ableitungsregel.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Wird die h-Methode verlangt, muss der Grenzprozess ausgeschrieben werden; sonst genuegt die Ableitungsregel.`
 
 ## Schritt 6 — check: Selbsttest zu Grenzwert mit h-Methode und Ableitung an einer Stelle: h schrumpft
 CHECK检索默写（自测 3 题，与答案配对）：
 
-FRAGE: Wie lautet der Differenzenquotient an der Stelle $x_0$? | ANTWORT: $m(h) = \frac{f(x_0+h)-f(x_0)}{h}$.
-FRAGE: Warum darf man $h = 0$ nicht direkt einsetzen? | ANTWORT: Weil dann $0/0$ entsteht; zuerst muss $h$ gekuerzt werden, erst danach folgt $h \to 0$.
-FRAGE: Was bedeutet $f'(x_0) = 5$ geometrisch und als Rate? | ANTWORT: Die Tangente hat dort die Steigung $5$; die Funktion waechst momentan mit der Rate $5$.
+- FRAGE: Wie lautet der Differenzenquotient an der Stelle $x_0$? | ANTWORT: $m(h) = \frac{f(x_0+h)-f(x_0)}{h}$.
+- FRAGE: Warum darf man $h = 0$ nicht direkt einsetzen? | ANTWORT: Weil dann $0/0$ entsteht; zuerst muss $h$ gekuerzt werden, erst danach folgt $h \to 0$.
+- FRAGE: Was bedeutet $f'(x_0) = 5$ geometrisch und als Rate? | ANTWORT: Die Tangente hat dort die Steigung $5$; die Funktion waechst momentan mit der Rate $5$.
 
-Klausur-Satz: `Die Ableitung f'(x_0) ist der Grenzwert des Differenzenquotienten fuer h gegen 0.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Die Ableitung f'(x_0) ist der Grenzwert des Differenzenquotienten fuer h gegen 0.`
 
 ## Fehlvorstellung
 
@@ -166,7 +158,7 @@ ROLLE: Du bist Tutor und erklaerst einer Lerngruppe die h-Methode.
 SITUATION: Die Gruppe kann die Potenzregel, versteht aber nicht, woher die Ableitung kommt, und verwechselt Sekante mit Tangente. Erklaere in einer zusammenhaengenden Darstellung (ca. 150 Woerter) am Beispiel $f(x) = x^2$ an einer Stelle, wie man vom Differenzenquotienten ueber Kuerzen zum Grenzwert gelangt und was das Ergebnis geometrisch bedeutet.
 RUBRIC (30 XP): Korrekter Dreischritt Aufstellen-Kuerzen-Grenzuebergang (12 XP) | Rechnung am Beispiel mit Ergebnis (8 XP) | Deutung als Tangentensteigung und Abgrenzung zur Sekante (6 XP) | Fachsprachlich korrekte Darstellung (4 XP).
 
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Wer Differenzenquotient aufstellt, kuerzt, Grenzuebergang vollzieht und als Tangentensteigung deutet, erhaelt die volle Punktzahl.`
 
 ## Schritt 8 — reflexion: Takeaway & Reflexion: h schrumpft
 TAKEAWAY 1盒（核心总结）：
@@ -178,4 +170,4 @@ REFLEXION 2问：
 1. 过程自省：Welcher Schritt fiel schwerer — das Ausmultiplizieren und Kuerzen (Schritt 4) oder die Wahl zwischen Definition und Regel (Schritt 5)?
 2. 元认知计划：Beim naechsten Mal schreibe ich zuerst den Differenzenquotienten hin, bevor ich umforme.
 
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Ableiten ist Grenzwertbildung: Erst algebraisch kuerzen, dann erst null einsetzen.`

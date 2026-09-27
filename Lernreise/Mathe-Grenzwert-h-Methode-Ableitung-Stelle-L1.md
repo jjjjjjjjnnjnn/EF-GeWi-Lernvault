@@ -13,7 +13,7 @@ version: Lesson-v3
 
 # Lernreise: Grenzwert mit der h-Methode an einer Stelle (L1, Ziel Klausur)
 
-<!-- Campaign: Optimierung | Episode 15/33 | Krise: Stromnetz-Frequenz 49,82 Hz instabil | Target: x0 = 2, h = 0.8, Target m = 8.55 | Tool: tangent-slider -->
+<!-- Campaign: Optimierung | Episode 15/33 | Krise: Stromnetz-Frequenz 49,82 Hz instabil | Zielgroessen: f(x) = x^2, Stelle x0 = 3, h-Methode mit Ziel 6 | Tool: tangent-slider -->
 
 ## Schritt 1 — entdecken: Skalarprodukt im Hangar
 ZIELE (3 Ziele, nach 15 Minuten erreichbar):
@@ -28,24 +28,22 @@ VORGAENGER-VERWEIS: Diese Lektion setzt `Mathe-Sekante-zu-Tangente-L1.md` voraus
 
 ### Hook / Phaenomen
 
-【首席算法官·第15集/共33集】警报：Stromnetz-Frequenz 49,82 Hz instabil。首席算法官下令：“x0 = 2, h = 0.8, Target m = 8.55！”全场红灯闪烁。上一集（Mathe-Grenzwert-h-Methode-Ableitung-Stelle-DE-L1.md）的伏笔在此引爆，下一集（Mathe-Kosinussatz-Orthogonalitaet-CN-L1.md）只给交出最优解的人放行。本集你要在沙盘里亲手把工程从亏损/相撞边缘拉回来：先看现象、再点装备、最后算出让审计点头的 Bilanz。记住：先看区间还是时刻、再选割线还是切线/极值还是向量，做完必做 Gegenprobe——这就是工程帝国法则，也是 Klausur 拿分法则。
+割线一点点滑向切线，h一点点压向0：平均变化率取极限，就变成了瞬时变化率，关键一步是先约分再取极限。
 
-Hook / Phaenomen (CAO-Log, Episode 15 von 33): Super-Engineering-Zentrale, Stromnetz-Frequenz 49,82 Hz instabil. Der Chief Algorithm Officer ruft: x0 = 2, h = 0.8, Target m = 8.55, die Assistentin meldet Rot-Alarm auf allen Screens. Genau hier entscheidet Grenzwert mit der h-Methode an einer Stelle ueber Freigabe oder Sperrung, ueber Kostenexplosion oder Rekordgewinn, ueber Kollision oder gruene Welle. Das Protokoll der Vorwoche (Mathe-Grenzwert-h-Methode-Ableitung-Stelle-DE-L1.md) legte die Spur, das naechste Audit (Mathe-Kosinussatz-Orthogonalitaet-CN-L1.md) laesst keine Ausrede mehr zu. Die Messwerte streuen, die Kurven zittern, doch die Mathematik bleibt unbestechlich: Wer Sekante und Tangente, Maximum und Wendepunkt, Vektor und Ebene richtig liest, rettet das Projekt. In dieser Episode stellst du im Sandbox-Optimierer die Parameter so ein, dass alle Kennzahlen im gruenen Bereich landen. Beobachte zuerst das Phaenomen in Ruhe, benenne dann die Objekte mit exakter Notation, pruefe schliesslich das Ergebnis mit einer Gegenrechnung. Der folgende Weg fuehrt vom Alarmton zur sauberen Klausurloesung: erst das Phaenomen beobachten, dann die Begriffe sichern, dann das Modell rechnen und im Labor bestaetigen.
+Hook / Phaenomen: Die Sekante rutscht an die Kurve heran, h schrumpft gegen null: Was uebrig bleibt, ist die exakte **Tangentensteigung**. Der **Differenzenquotient** misst noch den Durchschnitt, der **Differentialquotient** misst den Moment. Dazwischen liegt ein einziger Rechenschritt: **Kuerzen vor Grenzwert**.
 
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Die h-Methode verwandelt mittlere in lokale Aenderung: Differenzenquotient kuerzen, dann h gegen null schicken.`
 
 ## Schritt 2 — entdecken: Ausruestungskiste der Algorithmus-Unit
 PRETRAINING (Kernbegriffe, erst lesen, dann abgedeckt wiederholen):
 
-- Differenzenquotient: $m(h) = \frac{f(x_0 + h) - f(x_0)}{h}$ fuer $h \ne 0$.
-- h-Methode: Verfahren, das den Differenzenquotienten erst kuerzt und dann $h \to 0$ betrachtet.
-- Differentialquotient: Grenzwert $\lim_{h \to 0} m(h) = f'(x_0)$.
-- Stelle $x_0$: Fester Punkt, an dem die lokale Steigung gesucht ist.
-- Tangentensteigung: Geometrische Deutung von $f'(x_0)$ im Punkt $P(x_0 \mid f(x_0))$.
+- Differenzenquotient: $m(h) = \frac{f(x_0 + h) - f(x_0)}{h}$ fuer $h \ne 0$. Er misst die mittlere Aenderungsrate ueber ein Intervall der Breite h. Mechanismus: Funktionswerte an x0 plus h und x0 bilden und durch h teilen. Klausur-Tipp: Bruch vollständig hinschreiben, nie vorzeitig kuerzen.
+- h-Methode: Verfahren, das den Differenzenquotienten erst kuerzt und dann $h \to 0$ betrachtet. Sie ist das Standardverfahren, wenn der Operator nachweisen oder zeigen verlangt. Mechanismus: Differenzenquotient aufstellen, kuerzen und h gegen null schicken. Klausur-Tipp: Drei Schritte als getrennte Zeilen zeigen.
+- Differentialquotient: Grenzwert $\lim_{h \to 0} m(h) = f'(x_0)$. Er ist der Grenzwert des Differenzenquotienten und misst die lokale Rate. Mechanismus: Grenzuebergang h gegen null nach dem Kuerzen vollziehen. Klausur-Tipp: Limeszeichen bis zum letzten Schritt mitschleppen.
+- Stelle $x_0$: Fester Punkt, an dem die lokale Steigung gesucht ist. Ohne Kuerzen stuende null durch null da, der Grenzwert bliebe unlesbar. Mechanismus: h ausklammern und vor dem Grenzuebergang wegkuerzen. Klausur-Tipp: Kuerzungsschritt farbig oder mit Pfeil markieren.
+- Tangentensteigung: Geometrische Deutung von $f'(x_0)$ im Punkt $P(x_0 \mid f(x_0))$. Sie ist das Endergebnis der h-Methode und gleichzeitig f Strich an der Stelle. Mechanismus: Grenzwert als Steigung der Tangente deuten. Klausur-Tipp: Zahl plus Deutung als vollstaendige Antwort geben.
 
-Klausur-Satz: `Der Differenzenquotient beschreibt die Sekantensteigung, sein Grenzwert die Tangentensteigung an der Stelle x_0.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Der Differenzenquotient beschreibt die Sekantensteigung, sein Grenzwert die Tangentensteigung an der Stelle x_0.`
 
 ## Schritt 3 — entdecken: Wirkungskette hinter Grenzwert mit der h-Methode an einer Stelle
 ENTDECKEN (ein Konzept plus Diagramm):
@@ -60,9 +58,8 @@ Schritt C: Grenzwert h -> 0 bilden => f'(x_0)
 Deutung:  f'(x_0) = Steigung der Tangente in P
 ```
 
-Klausur-Satz: `Vor dem Grenzuebergang muss der Differenzenquotient algebraisch gekuerzt werden, da sonst der Ausdruck 0 durch 0 entstuende.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+$$f'(x_0) = \lim_{h\to 0}\frac{f(x_0+h)-f(x_0)}{h}$$
+`Klausur-Satz: Vor dem Grenzuebergang muss der Differenzenquotient algebraisch gekuerzt werden, da sonst der Ausdruck 0 durch 0 entstuende.`
 
 ## Anekdote & Fun-Fact
 
@@ -71,7 +68,7 @@ Klausur-Satz: `Vor dem Grenzuebergang muss der Differenzenquotient algebraisch g
 **Bezug zum Konzept**: `Die h-Methode vollzieht exakt diesen historischen Grenzgedanken an einer einzelnen Stelle nach.`
 
 ## Schritt 4 — ausprobieren: Sandbox-Auftrag Skalarprodukt im Hangar
-Kontinuitaet: Vorher Mathe-Grenzwert-h-Methode-Ableitung-Stelle-DE-L1.md | Nachher Mathe-Kosinussatz-Orthogonalitaet-CN-L1.md. Krise dieser Episode: Stromnetz-Frequenz 49,82 Hz instabil. Target: x0 = 2, h = 0.8, Target m = 8.55.
+Kontinuitaet: Vorher Mathe-Grenzwert-h-Methode-Ableitung-Stelle-DE-L1.md | Nachher Mathe-Kosinussatz-Orthogonalitaet-CN-L1.md. Krise dieser Episode: Stromnetz-Frequenz 49,82 Hz instabil. Zielgroessen: f(x) = x^2, Stelle x0 = 3, h-Methode mit Ziel 6
 
 BEISPIEL (vollstaendige Musterloesung):
 
@@ -86,14 +83,12 @@ HILFE:
 
 MUSTERLOESUNG: Es gilt $f(1) = 1$ und $f(1+h) = 2(1+h)^2 - (1+h) = 2 + 4h + 2h^2 - 1 - h = 1 + 3h + 2h^2$. Damit folgt $m(h) = (3h + 2h^2)/h = 3 + 2h$ fuer $h \ne 0$. Der Grenzwert ergibt $\lim_{h \to 0} (3 + 2h) = 3$, also $f'(1) = 3$. Die Tangente im Punkt $P(1 \mid 1)$ besitzt die Steigung $3$.
 
-Klausur-Satz: `Mit der h-Methode folgt f'(1) = 3, also besitzt die Tangente im Punkt P die Steigung 3.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Mit der h-Methode folgt f'(1) = 3, also besitzt die Tangente im Punkt P die Steigung 3.`
 
 ## Schritt 5 — ausprobieren: Duell der Verfahren Skalarprodukt im Hangar
 VERGLEICH (zwei Verfahren, erst Verfahren waehlen, dann rechnen):
 
-VERGLEICH: Waehle erst das Verfahren — (i) h-Methode an einer Stelle (AFB II mit Grenzwert, Vorgehen: Ansatz, Kuerzen, Limes) oder (ii) Ableitungsregel direkt (AFB I, nur Ergebnis nennen) — dann loesen.
+VERGLEICH: (Weg A quantitativ-rechnerisch gegen Weg B qualitativ-strukturell): Waehle erst das Verfahren — (i) h-Methode an einer Stelle (AFB II mit Grenzwert, Vorgehen: Ansatz, Kuerzen, Limes) oder (ii) Ableitungsregel direkt (AFB I, nur Ergebnis nennen) — dann loesen.
 
 Weg A: Erst Verfahren waehlen, dann rechnen.
 
@@ -107,20 +102,16 @@ HILFE: A verlangt den sichtbaren Grenzweg mit $h$, also Verfahren (i). B verlang
 
 ANTWORT: A erfordert Verfahren (i): $m(h) = ((2+h)^2 + 1 - 5)/h = (4h + h^2)/h = 4 + h$, also $f'(2) = 4$. B erfordert Verfahren (ii): $g'(x) = 2x$, also $g'(2) = 4$. Beide Wege liefern denselben Wert, doch nur Verfahren (i) zeigt den Grenzprozess.
 
-Klausur-Satz: `Die h-Methode und die Ableitungsregel liefern denselben Wert, doch nur die h-Methode belegt den Grenzprozess.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Die h-Methode und die Ableitungsregel liefern denselben Wert, doch nur die h-Methode belegt den Grenzprozess.`
 
 ## Schritt 6 — check: Selbsttest zu Grenzwert mit der h-Methode an einer Stelle: Skalarprodukt im Hangar
 CHECK (drei Fragen mit Antworten):
 
-FRAGE: Wie lautet der Ansatz der h-Methode an der Stelle $x_0$? | ANTWORT: $m(h) = (f(x_0+h) - f(x_0))/h$ mit $h \ne 0$.
-FRAGE: Warum darf $h = 0$ nicht vor dem Kuerzen eingesetzt werden? | ANTWORT: Weil sonst der unbestimmte Ausdruck $0/0$ entstuende; erst nach dem Kuerzen ist der Grenzwert ablesbar.
-FRAGE: Was bedeutet das Ergebnis $f'(x_0)$ geometrisch? | ANTWORT: Die Steigung der Tangente an den Graphen im Punkt $P(x_0 \mid f(x_0))$.
+- FRAGE: Wie lautet der Ansatz der h-Methode an der Stelle $x_0$? | ANTWORT: $m(h) = (f(x_0+h) - f(x_0))/h$ mit $h \ne 0$.
+- FRAGE: Warum darf $h = 0$ nicht vor dem Kuerzen eingesetzt werden? | ANTWORT: Weil sonst der unbestimmte Ausdruck $0/0$ entstuende; erst nach dem Kuerzen ist der Grenzwert ablesbar.
+- FRAGE: Was bedeutet das Ergebnis $f'(x_0)$ geometrisch? | ANTWORT: Die Steigung der Tangente an den Graphen im Punkt $P(x_0 \mid f(x_0))$.
 
-Klausur-Satz: `Der Grenzwert des gekuerzten Differenzenquotienten ist die Ableitung an der Stelle x_0.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Der Grenzwert des gekuerzten Differenzenquotienten ist die Ableitung an der Stelle x_0.`
 
 ## Fehlvorstellung
 
@@ -135,7 +126,7 @@ ROLLE: Du bist Tutorin in der EF und erklaerst einer Mitschuelerin die h-Methode
 SITUATION: Deine Mitschuelerin hat fuer $f(x) = x^2$ an der Stelle $x_0 = 3$ den Wert $6$ geraten, kann den Weg aber nicht zeigen. Stelle in einer zusammenhaengenden Darstellung (circa 150 Woerter) die vollstaendige h-Methode dar und deute das Ergebnis als Tangentensteigung.
 RUBRIC (30 XP): Korrekter Ansatz mit $h$ (8 XP) | Vollstaendige Umformung mit Kuerzen (10 XP) | Grenzwert $f'(3) = 6$ (6 XP) | Geometrische Deutung als Tangentensteigung (6 XP).
 
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Wer Differenzenquotient aufstellt, kuerzt, Grenzuebergang vollzieht und als Tangentensteigung deutet, erhaelt die volle Punktzahl.`
 
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Skalarprodukt im Hangar
 TAKEAWAY:
@@ -147,4 +138,4 @@ REFLEXION:
 1. Welcher Schritt fiel schwerer — das Ausklammern von $h$ (Schritt 4) oder die Verfahrenswahl (Schritt 5)?
 2. Beim naechsten Mal schreibe ich zuerst den Ansatz hin, bevor ich umforme, weil der Ansatz die Operatorleistung sichert.
 
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Ableiten ist Grenzwertbildung: Erst algebraisch kuerzen, dann erst null einsetzen.`

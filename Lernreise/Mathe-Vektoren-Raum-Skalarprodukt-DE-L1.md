@@ -13,7 +13,7 @@ version: Lesson-v3
 
 # Lernreise: Vektoren im Raum und Skalarprodukt (L1, Ziel Klausur)
 
-<!-- Campaign: Optimierung | Episode 30/33 | Krise: Brueckenpfeiler-Setzung 9 mm | Target: x0 = 2, h = 0.7, Target m = 14.10 | Tool: formula -->
+<!-- Campaign: Optimierung | Episode 30/33 | Krise: Brueckenpfeiler-Setzung 9 mm | Zielgroessen: Vektoren im Raum, Ziel Winkel und Orthogonalitaetsprobe | Tool: formula -->
 
 ## Schritt 1 — entdecken: Reserve-Protokoll
 ZIELE (drei messbare Ziele dieser Lektion):
@@ -26,9 +26,9 @@ ZIELE (drei messbare Ziele dieser Lektion):
 
 ### Hook / Phaenomen
 
-Hook / Phaenomen (CAO-Log, Episode 30 von 33): Super-Engineering-Zentrale, Brueckenpfeiler-Setzung 9 mm. Der Chief Algorithm Officer ruft: x0 = 2, h = 0.7, Target m = 14.10, die Assistentin meldet Rot-Alarm auf allen Screens. Genau hier entscheidet Vektoren im Raum und Skalarprodukt ueber Freigabe oder Sperrung, ueber Kostenexplosion oder Rekordgewinn, ueber Kollision oder gruene Welle. Das Protokoll der Vorwoche (Mathe-Vektoren-Raum-Skalarprodukt-CN-L1.md) legte die Spur, das naechste Audit (Mathe-Vektoren-Raum-Skalarprodukt-L1.md) laesst keine Ausrede mehr zu. Die Messwerte streuen, die Kurven zittern, doch die Mathematik bleibt unbestechlich: Wer Sekante und Tangente, Maximum und Wendepunkt, Vektor und Ebene richtig liest, rettet das Projekt. In dieser Episode stellst du im Sandbox-Optimierer die Parameter so ein, dass alle Kennzahlen im gruenen Bereich landen. Beobachte zuerst das Phaenomen in Ruhe, benenne dann die Objekte mit exakter Notation, pruefe schliesslich das Ergebnis mit einer Gegenrechnung. Der folgende Weg fuehrt vom Alarmton zur sauberen Klausurloesung: erst das Phaenomen beobachten, dann die Begriffe sichern, dann das Modell rechnen und im Labor bestaetigen.
+Hook / Phaenomen: Zwei Pfeile im Raum: Zeigen sie gemeinsam voran oder blockieren sie sich? Das **Skalarprodukt** misst die Zusammenarbeit in einer einzigen Zahl. Null bedeutet **Orthogonalitaet**, der **Betrag** normiert, die **Winkelformel** enthuellt den Rest.
 
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Das Skalarprodukt entscheidet Zusammenarbeit: Positiv spitz, null orthogonal, negativ stumpf.`
 
 ## Schritt 2 — entdecken: Ausruestungskiste der Algorithmus-Unit
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
@@ -39,19 +39,17 @@ Fuenf Begriffe trennen in dieser Lektion Alltagssprache von Klausursprache. Wer 
 
 ### Fachbegriffe & Definitionen
 
-- **Vektor:** Ein Pfeil mit Laenge und Richtung wird durch drei Koordinaten im Raum beschrieben. Mechanismus: Koordinaten als Spalte schreiben und geometrisch als Pfeil deuten. Klausur-Punkt: Schreibweise einhalten und Komponenten exakt uebertragen.
-- **Betrag:** Die Laenge $|a|$ folgt per Pythagoras aus den Koordinaten des Vektors. Mechanismus: Quadrate summieren und Wurzel ziehen. Klausur-Punkt: Zwischenschritte zeigen und Einheit falls noetig nennen.
-- **Skalarprodukt:** Das Produkt $a \cdot b$ verbindet Laengen und Winkel beider Vektoren. Mechanismus: Koordinatenweise multiplizieren und summieren. Klausur-Punkt: Formel nennen und komponentenweise rechnen.
-- **Orthogonalitaet:** Genau bei $a \cdot b = 0$ stehen zwei Vektoren senkrecht aufeinander. Mechanismus: Produkt berechnen und null pruefen. Klausur-Punkt: Nullkriterium nennen und rechten Winkel folgern.
-- **Winkelformel:** Der Winkel folgt aus $\cos(\gamma)=(a \cdot b)/(|a||b|)$ per Arkuskosinus. Mechanismus: Produkt und Betraege einsetzen und Rueckrechnung durchfuehren. Klausur-Punkt: Formel vollständig hinschreiben und Winkel in Grad angeben.
+- **Vektor:** Ein Pfeil mit Laenge und Richtung wird durch drei Koordinaten im Raum beschrieben. Er besitzt Richtung und Laenge, aber keinen festen Ort. Mechanismus: Koordinaten als Spalte schreiben und geometrisch als Pfeil deuten. Klausur-Tipp: Schreibweise einhalten und Komponenten exakt uebertragen.
+- **Betrag:** Die Laenge $|a|$ folgt per Pythagoras aus den Koordinaten des Vektors. Er misst die Laenge des Pfeils im Raum. Mechanismus: Quadrate summieren und Wurzel ziehen. Klausur-Tipp: Zwischenschritte zeigen und Einheit falls noetig nennen.
+- **Skalarprodukt:** Das Produkt $a \cdot b$ verbindet Laengen und Winkel beider Vektoren. Es verdichtet zwei Vektoren zu einer einzigen Kooperationszahl. Mechanismus: Koordinatenweise multiplizieren und summieren. Klausur-Tipp: Formel nennen und komponentenweise rechnen.
+- **Orthogonalitaet:** Genau bei $a \cdot b = 0$ stehen zwei Vektoren senkrecht aufeinander. Orthogonal heisst Skalarprodukt null bei Vektoren ungleich null. Mechanismus: Produkt berechnen und null pruefen. Klausur-Tipp: Nullkriterium nennen und rechten Winkel folgern.
+- **Winkelformel:** Der Winkel folgt aus $\cos(\gamma)=(a \cdot b)/(|a||b|)$ per Arkuskosinus. Sie loest den eingeschlossenen Winkel aus Skalarprodukt und Betraegen. Mechanismus: Produkt und Betraege einsetzen und Rueckrechnung durchfuehren. Klausur-Tipp: Formel vollständig hinschreiben und Winkel in Grad angeben.
 
 ### Wirkungsgefuege / Modell
 
 Die Kette verbindet alle fuenf Begriffe zu einem Verfahren: Erkennen, Einordnen, Aufstellen, Loesen und Deuten. Jeder Begriff traegt genau einen Schritt, gemeinsam sichern sie die volle Punktzahl.
 
-Klausur-Satz: `Betrag und Skalarprodukt folgen direkt aus den Koordinaten der Vektoren.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Betrag und Skalarprodukt folgen direkt aus den Koordinaten der Vektoren.`
 
 ## Schritt 3 — entdecken: Wirkungskette hinter Vektoren im Raum und Skalarprodukt
 EXPERIMENTELLE ERKUNDUNG (Sandbox, erst spielen, dann deuten):
@@ -79,9 +77,8 @@ Die Kausalkette laeuft von den Koordinaten ueber das Produkt zum Winkel: Zuerst 
 ```
 Formelkern: $|a|$
 
-Klausur-Satz: `Der Winkel steckt im Skalarprodukt, die Orthogonalitaet im Spezialfall null.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+$$\vec{a}\cdot\vec{b} = |\vec{a}||\vec{b}|\cos(\varphi)$$
+`Klausur-Satz: Der Winkel steckt im Skalarprodukt, die Orthogonalitaet im Spezialfall null.`
 
 ## Anekdote & Fun-Fact
 Der Physiker Josiah Willard Gibbs stritt im 19. Jahrhundert mit den Anhaengern der Quaternionen, weil er Vektoren einfacher schreiben wollte. Sein Punkt siegte: Heute rechnet jede Brueckenstatik mit $|\vec{a}|$ und $\vec{a} \cdot \vec{b}$ statt mit vierdimensionalen Zahlentermen.
@@ -89,7 +86,7 @@ Der Physiker Josiah Willard Gibbs stritt im 19. Jahrhundert mit den Anhaengern d
 Bezug zum Konzept: `Gibbs Vektorformat macht Kraefte und Winkel in drei Zeilen berechenbar.`
 
 ## Schritt 4 — ausprobieren: Sandbox-Auftrag Reserve-Protokoll
-Kontinuitaet: Vorher Mathe-Vektoren-Raum-Skalarprodukt-CN-L1.md | Nachher Mathe-Vektoren-Raum-Skalarprodukt-L1.md. Krise dieser Episode: Brueckenpfeiler-Setzung 9 mm. Target: x0 = 2, h = 0.7, Target m = 14.10.
+Kontinuitaet: Vorher Mathe-Vektoren-Raum-Skalarprodukt-CN-L1.md | Nachher Mathe-Vektoren-Raum-Skalarprodukt-L1.md. Krise dieser Episode: Brueckenpfeiler-Setzung 9 mm. Zielgroessen: Vektoren im Raum, Ziel Winkel und Orthogonalitaetsprobe
 
 BEISPIEL (Sandbox Level mit Werkzeug):
 
@@ -104,14 +101,12 @@ HILFE:
 
 MUSTERLOESUNG: Sandbox zeigt in orthogonaler Lage $a \cdot b = 0$ bei $\gamma = 90$ Grad und in spitzer Lage ein positives Produkt mit kleinem Winkel. Rechnung $a \cdot b = 0$ bestaetigt Orthogonalitaet in einer Zeile. Fuer die spitze Lage liefern Betraege und Winkelformel denselben Winkel wie die Sandbox. Koordinaten einsetzen, Betraege bilden und Winkelformel anwenden fuehrt in drei Schritten zum Ziel.
 
-Klausur-Satz: `Koordinaten einsetzen, Betraege bilden, Winkelformel anwenden.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Koordinaten einsetzen, Betraege bilden, Winkelformel anwenden.`
 
 ## Schritt 5 — ausprobieren: Duell der Verfahren Reserve-Protokoll
 VERGLEICH (Wahl des Verfahrens, A gegen B):
 
-VERGLEICH: Triff zuerst die Wahl des Verfahrens: (i) Skalarprodukt-Verfahren (Produkt ausrechnen, Winkel oder Orthogonalitaet folgern) oder (ii) Betrags-Verfahren (nur Laengen vergleichen, keine Winkel setzen) > dann loesen.
+VERGLEICH: (Weg A quantitativ-rechnerisch gegen Weg B qualitativ-strukturell): Triff zuerst die Wahl des Verfahrens: (i) Skalarprodukt-Verfahren (Produkt ausrechnen, Winkel oder Orthogonalitaet folgern) oder (ii) Betrags-Verfahren (nur Laengen vergleichen, keine Winkel setzen) > dann loesen.
 
 Weg A: Erst Verfahren waehlen, dann rechnen.
 
@@ -124,20 +119,16 @@ HILFE: Aufgabe A fragt nach senkrecht, daher Verfahren (i) mit $\vec{u} \cdot \v
 
 ANTWORT: A erfordert Verfahren (i): $\vec{u} \cdot \vec{v} = 2 - 2 + 0 = 0$, also orthogonal. B erfordert Verfahren (ii): $|\vec{a}| = 5$, also $\vec{a}_0 = (0, 0{,}6, 0{,}8)$ mit $|\vec{a}_0| = 1$.
 
-Klausur-Satz: `Orthogonalitaet braucht das Produkt, Normierung braucht nur den Betrag.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Orthogonalitaet braucht das Produkt, Normierung braucht nur den Betrag.`
 
 ## Schritt 6 — check: Selbsttest zu Vektoren im Raum und Skalarprodukt: Reserve-Protokoll
 CHECK (drei Fragen mit Antworten):
 
-FRAGE: Wie berechnet man das Skalarprodukt zweier Raumvektoren? | ANTWORT: $\vec{a} \cdot \vec{b} = a_1b_1 + a_2b_2 + a_3b_3$, komponentenweise multiplizieren und addieren.
-FRAGE: Wie lautet die Winkelformel? | ANTWORT: $\cos(\phi) = \frac{\vec{a} \cdot \vec{b}}{|\vec{a}| \cdot |\vec{b}|}$ fuer $0 \le \phi \le 180^\circ$.
-FRAGE: Woran erkennt man orthogonale Vektoren? | ANTWORT: Am Wert $\vec{a} \cdot \vec{b} = 0$ bei $\vec{a} \ne \vec{0}$ und $\vec{b} \ne \vec{0}$.
+- FRAGE: Wie berechnet man das Skalarprodukt zweier Raumvektoren? | ANTWORT: $\vec{a} \cdot \vec{b} = a_1b_1 + a_2b_2 + a_3b_3$, komponentenweise multiplizieren und addieren.
+- FRAGE: Wie lautet die Winkelformel? | ANTWORT: $\cos(\phi) = \frac{\vec{a} \cdot \vec{b}}{|\vec{a}| \cdot |\vec{b}|}$ fuer $0 \le \phi \le 180^\circ$.
+- FRAGE: Woran erkennt man orthogonale Vektoren? | ANTWORT: Am Wert $\vec{a} \cdot \vec{b} = 0$ bei $\vec{a} \ne \vec{0}$ und $\vec{b} \ne \vec{0}$.
 
-Klausur-Satz: `Produkt null bedeutet rechter Winkel, Produkt ungleich null fuehrt zur Winkelformel.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Produkt null bedeutet rechter Winkel, Produkt ungleich null fuehrt zur Winkelformel.`
 
 ## Fehlvorstellung
 (Kein Schritt; wird vom Parser uebersprungen.)
@@ -153,7 +144,7 @@ SITUATION: Ein Mitschueler behauptet, die Vektoren $\vec{a} = (1, 1, 1)$ und $\v
 AUFGABE (begruenden, AFB III): Widerlege die Behauptung in einer zusammenhaengenden Darstellung (circa 150 Woerter), berechne Skalarprodukt und Winkel und erklaere den Unterschied zwischen Betragsgleichheit und Parallelitaet.
 RUBRIC (30 XP): Korrektes Skalarprodukt $\vec{a} \cdot \vec{b} = 0$ (10 XP) | Winkel $\phi = 90^\circ$ mit Formel (10 XP) | Begruendung Betrag gegen Richtung (5 XP) | Sprachlich geschlossene Darstellung (5 XP).
 
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Wer Skalarprodukt berechnet, Winkel bestimmt und Orthogonalitaet begruendet, erhaelt die volle Punktzahl.`
 
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Reserve-Protokoll
 TAKEAWAY (Kernbotschaft in einem Kasten):
@@ -166,4 +157,4 @@ REFLEXION (zwei Fragen):
 1. Welcher Schritt fiel schwerer: das Rechnen mit drei Koordinaten (Schritt 4) oder die Verfahrenswahl in Schritt 5?
 2. Beim naechsten Mal schreibe ich zuerst beide Betraege und das Produkt sauber hin, dann erst den Winkel.
 
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Vektoren sind Anweisungen mit Richtung: Erst Betrag, dann Winkel, dann Urteil.`

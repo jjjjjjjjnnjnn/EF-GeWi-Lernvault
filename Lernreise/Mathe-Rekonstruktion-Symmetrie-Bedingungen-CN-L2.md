@@ -13,7 +13,7 @@ version: Lesson-v3
 
 # Lernreise: Rekonstruktion mit Symmetrie und passenden Bedingungen (L2, Ziel Klausur)
 
-<!-- Campaign: Optimierung | Episode 23/33 | Krise: Hafenbecken-Tide plus 68 cm | Target: x0 = 5, h = 0.8, Target m = 11.51 | Tool: box-optimizer -->
+<!-- Campaign: Optimierung | Episode 23/33 | Krise: Hafenbecken-Tide plus 68 cm | Zielgroessen: Ansatz ax^4+bx^2+c mit Punkten und Extrema, Ziel Koeffizienten | Tool: box-optimizer -->
 
 ## Schritt 1 — entdecken: Steckbrief des Täters
 ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
@@ -26,26 +26,24 @@ Voraussetzung（窄切口）：只做三次与四次多项式，已会求导法�
 
 ### Hook / Phaenomen
 
-【首席算法官·第23集/共33集】警报：Hafenbecken-Tide plus 68 cm。首席算法官下令：“x0 = 5, h = 0.8, Target m = 11.51！”全场红灯闪烁。上一集（Mathe-Kurvendiskussion-Wendepunkte-L1.md）的伏笔在此引爆，下一集（Mathe-Rekonstruktion-Symmetrie-Bedingungen-L2.md）只给交出最优解的人放行。本集你要在沙盘里亲手把工程从亏损/相撞边缘拉回来：先看现象、再点装备、最后算出让审计点头的 Bilanz。记住：先看区间还是时刻、再选割线还是切线/极值还是向量，做完必做 Gegenprobe——这就是工程帝国法则，也是 Klausur 拿分法则。
+五个未知数看着吓人，但对称性先砍掉一半：偶对称只留偶次幂，奇对称只留奇次幂，剩下的条件一人一方程。
 
-Hook / Phaenomen (CAO-Log, Episode 23 von 33): Super-Engineering-Zentrale, Hafenbecken-Tide plus 68 cm. Der Chief Algorithm Officer ruft: x0 = 5, h = 0.8, Target m = 11.51, die Assistentin meldet Rot-Alarm auf allen Screens. Genau hier entscheidet Rekonstruktion mit Symmetrie und passenden Bedingungen ueber Freigabe oder Sperrung, ueber Kostenexplosion oder Rekordgewinn, ueber Kollision oder gruene Welle. Das Protokoll der Vorwoche (Mathe-Kurvendiskussion-Wendepunkte-L1.md) legte die Spur, das naechste Audit (Mathe-Rekonstruktion-Symmetrie-Bedingungen-L2.md) laesst keine Ausrede mehr zu. Die Messwerte streuen, die Kurven zittern, doch die Mathematik bleibt unbestechlich: Wer Sekante und Tangente, Maximum und Wendepunkt, Vektor und Ebene richtig liest, rettet das Projekt. In dieser Episode stellst du im Sandbox-Optimierer die Parameter so ein, dass alle Kennzahlen im gruenen Bereich landen. Beobachte zuerst das Phaenomen in Ruhe, benenne dann die Objekte mit exakter Notation, pruefe schliesslich das Ergebnis mit einer Gegenrechnung. Der folgende Weg fuehrt vom Alarmton zur sauberen Klausurloesung: erst das Phaenomen beobachten, dann die Begriffe sichern, dann das Modell rechnen und im Labor bestaetigen.
+Hook / Phaenomen: Fuenf Unbekannte, aber der Graph verraet Symmetrie: Bei **Achsensymmetrie** fallen alle ungeraden Potenzen weg, bei **Punktsymmetrie** alle geraden. Der **reduzierte Ansatz** halbiert die Arbeit, bevor die erste **Bedingungsgleichung** steht.
 
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Symmetrie ist Vorabinformation: Achsensymmetrie streicht ungerade, Punktsymmetrie gerade Potenzen vor jeder Rechnung.`
 
 ## Schritt 2 — entdecken: Ausruestungskiste der Algorithmus-Unit
 PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
 
 中文在上，德语在下：
 
-- 偶对称 — Achsensymmetrie zur y-Achse：$f(-x) = f(x)$，只含偶次幂，如 $f(x) = ax^4+bx^2+c$。
-- 奇对称 — Punktsymmetrie zum Ursprung：$f(-x) = -f(x)$，只含奇次幂，如 $f(x) = ax^3+bx$。
-- 过点条件 — Punktbedingung：点 $(x_0|y_0)$ 在图像上即 $f(x_0) = y_0$。
-- 极值条件 — Extrembedingung：在 $x_E$ 有极值即 $f'(x_E) = 0$ 加 $y$-值方程。
-- 拐点条件 — Wendebedingung：在 $x_W$ 有拐点即 $f''(x_W) = 0$ 加 $y$-值方程。
+- 偶对称 — Achsensymmetrie zur y-Achse：$f(-x) = f(x)$，只含偶次幂，如 $f(x) = ax^4+bx^2+c$。 Es gilt f von minus x gleich f von x; nur gerade Exponenten treten auf. Mechanismus: Alle ungeraden Potenzen aus dem Ansatz streichen. Klausur-Tipp: Symmetrieart in der ersten Zeile feststellen.
+- 奇对称 — Punktsymmetrie zum Ursprung：$f(-x) = -f(x)$，只含奇次幂，如 $f(x) = ax^3+bx$。 Es gilt f von minus x gleich minus f von x; nur ungerade Exponenten treten auf. Mechanismus: Alle geraden Potenzen inklusive Konstante streichen. Klausur-Tipp: Ursprungssymmetrie am Schaubild begruenden.
+- 过点条件 — Punktbedingung：点 $(x_0|y_0)$ 在图像上即 $f(x_0) = y_0$。 Er enthaelt nach Symmetrie nur noch halb so viele Unbekannte. Mechanismus: Reduzierten Ansatz mit nummerierten Koeffizienten aufstellen. Klausur-Tipp: Ansatz als eigene Zeile vor den Bedingungen zeigen
+- 极值条件 — Extrembedingung：在 $x_E$ 有极值即 $f'(x_E) = 0$ 加 $y$-值方程。 Jede Eigenschaft wie Punkt, Extremum oder Wendepunkt liefert genau eine Gleichung. Mechanismus: Eigenschaften Wort fuer Wort in Gleichungen uebersetzen. Klausur-Tipp: Jede Uebersetzung nummerieren und abhaken.
+- 拐点条件 — Wendebedingung：在 $x_W$ 有拐点即 $f''(x_W) = 0$ 加 $y$-值方程。 Nach der Loesung werden Symmetrie und alle Bedingungen rueckwaerts geprueft. Mechanismus: Koeffizienten in Ansatz und Bedingungen einsetzen. Klausur-Tipp: Kontrolle als eigenen letzten Schritt zeigen.
 
-Klausur-Satz: `Jede geometrische Bedingung wird in eine Gleichung uebersetzt: Punkte in f, Extrema in f', Wendepunkte in f''.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Jede geometrische Bedingung wird in eine Gleichung uebersetzt: Punkte in f, Extrema in f', Wendepunkte in f''.`
 
 ## Schritt 3 — entdecken: Wirkungskette hinter Rekonstruktion mit Symmetrie und passenden Bedingungen
 ENTDECKEN（1概念 + 1文字图解）：
@@ -63,9 +61,8 @@ ENTDECKEN（1概念 + 1文字图解）：
   Wendep.  xW  f''(xW) = 0 +  f(xW) = yW
 ```
 
-Klausur-Satz: `Die Symmetrie legt den Ansatz fest; jede Bedingung liefert genau eine Gleichung fuer das lineare Gleichungssystem.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+$$f(x) = ax^4+bx^2+c,\quad f(-x) = f(x)$$
+`Klausur-Satz: Die Symmetrie legt den Ansatz fest; jede Bedingung liefert genau eine Gleichung fuer das lineare Gleichungssystem.`
 
 ## Anekdote & Fun-Fact
 
@@ -76,7 +73,7 @@ Klausur-Satz: `Die Symmetrie legt den Ansatz fest; jede Bedingung liefert genau 
 **Bezug zum Konzept**: `Symmetrie zu erkennen halbiert den Ansatz, bevor das Gleichungssystem ueberhaupt aufgestellt wird.`
 
 ## Schritt 4 — ausprobieren: Sandbox-Auftrag Steckbrief des Täters
-Kontinuitaet: Vorher Mathe-Kurvendiskussion-Wendepunkte-L1.md | Nachher Mathe-Rekonstruktion-Symmetrie-Bedingungen-L2.md. Krise dieser Episode: Hafenbecken-Tide plus 68 cm. Target: x0 = 5, h = 0.8, Target m = 11.51.
+Kontinuitaet: Vorher Mathe-Kurvendiskussion-Wendepunkte-L1.md | Nachher Mathe-Rekonstruktion-Symmetrie-Bedingungen-L2.md. Krise dieser Episode: Hafenbecken-Tide plus 68 cm. Zielgroessen: Ansatz ax^4+bx^2+c mit Punkten und Extrema, Ziel Koeffizienten
 
 BEISPIEL（正确例题示范，含教具操作与解答）：
 
@@ -91,14 +88,12 @@ HILFE:
 
 MUSTERLÖSUNG: Aus $f(1) = a+b = 2$ und $f'(2) = 12a+b = 0$ folgt durch Subtraktion $11a = -2$, also $a = -\frac{2}{11}$ und $b = 2-a = \frac{24}{11}$. Damit gilt $f(x) = -\frac{2}{11}x^3+\frac{24}{11}x$. Probe: $f(1) = \frac{22}{11} = 2$ und $f'(2) = 3 \cdot (-\frac{2}{11}) \cdot 4 + \frac{24}{11} = 0$; wegen $f''(2) = 6a \cdot 2 = -\frac{24}{11} \ne 0$ liegt dort tatsaechlich ein Extremum vor.
 
-Klausur-Satz: `Aus dem symmetrischen Ansatz f(x) = ax^3+bx folgen mit f(1) = 2 und f'(2) = 0 die Koeffizienten a = -2/11 und b = 24/11.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Aus dem symmetrischen Ansatz f(x) = ax^3+bx folgen mit f(1) = 2 und f'(2) = 0 die Koeffizienten a = -2/11 und b = 24/11.`
 
 ## Schritt 5 — ausprobieren: Duell der Verfahren Steckbrief des Täters
 VERGLEICH辨别实验（双向辨析：对称降次 vs 全项待定）：
 
-VERGLEICH: Waehle erst das Verfahren — 【选程序】先读对称词：(i) 对称降次（题含 achsensymmetrisch / punktsymmetrisch，直接用缺项 Ansatz）oder (ii) 全项待定（题无对称词，用完整多项式 $ax^3+bx^2+cx+d$）—— dann loesen.
+VERGLEICH: (Weg A quantitativ-rechnerisch gegen Weg B qualitativ-strukturell): Waehle erst das Verfahren — 【选程序】先读对称词：(i) 对称降次（题含 achsensymmetrisch / punktsymmetrisch，直接用缺项 Ansatz）oder (ii) 全项待定（题无对称词，用完整多项式 $ax^3+bx^2+cx+d$）—— dann loesen.
 
 Weg A: Erst Verfahren waehlen, dann rechnen.
 
@@ -111,20 +106,16 @@ HILFE: A enthaelt achsensymmetrisch → Verfahren (i)，设 $ax^4+bx^2+c$。B �
 
 ANTWORT: A erfordert Verfahren (i): Ansatz $f(x) = ax^4+bx^2+c$ mit nur drei Unbekannten; die Bedingungen $f(0) = 1$, $f(1) = 0$ und $f'(1) = 0$ reichen aus. B erfordert Verfahren (ii): Ansatz $f(x) = ax^3+bx^2+cx+d$ mit vier Unbekannten; erst die vier Punktgleichungen liefern ein loesbares System. Wer in A den vollen Ansatz waehlt, erzeugt ueberfluessige Unbekannte und ein unterbestimmtes System.
 
-Klausur-Satz: `Mit Symmetrie entfaellt jede zweite Potenz, ohne Symmetrie braucht der Ansatz alle Potenzen.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Mit Symmetrie entfaellt jede zweite Potenz, ohne Symmetrie braucht der Ansatz alle Potenzen.`
 
 ## Schritt 6 — check: Selbsttest zu Rekonstruktion mit Symmetrie und passenden Bedingungen: Steckbrief des Täters
 CHECK检索默写（自测 3 题，与答案配对）：
 
-FRAGE: Wie lautet der Ansatz fuer eine punktsymmetrische Funktion 3. Grades? | ANTWORT: $f(x) = ax^3+bx$ (nur ungerade Potenzen, kein absolutes Glied).
-FRAGE: Wie werden Extrem- und Wendestellen in Gleichungen uebersetzt? | ANTWORT: Extremstelle $x_E$: $f'(x_E) = 0$; Wendestelle $x_W$: $f''(x_W) = 0$, jeweils plus $f$-Gleichung fuer den $y$-Wert.
-FRAGE: Woran erkennt man, ob genug Bedingungen vorliegen? | ANTWORT: Die Zahl der unabhaengigen Gleichungen muss der Zahl der Unbekannten im Ansatz entsprechen.
+- FRAGE: Wie lautet der Ansatz fuer eine punktsymmetrische Funktion 3. Grades? | ANTWORT: $f(x) = ax^3+bx$ (nur ungerade Potenzen, kein absolutes Glied).
+- FRAGE: Wie werden Extrem- und Wendestellen in Gleichungen uebersetzt? | ANTWORT: Extremstelle $x_E$: $f'(x_E) = 0$; Wendestelle $x_W$: $f''(x_W) = 0$, jeweils plus $f$-Gleichung fuer den $y$-Wert.
+- FRAGE: Woran erkennt man, ob genug Bedingungen vorliegen? | ANTWORT: Die Zahl der unabhaengigen Gleichungen muss der Zahl der Unbekannten im Ansatz entsprechen.
 
-Klausur-Satz: `Der symmetrische Ansatz und die Bedingungsgleichungen muessen zusammen ein eindeutig loesbares System bilden.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Der symmetrische Ansatz und die Bedingungsgleichungen muessen zusammen ein eindeutig loesbares System bilden.`
 
 ## Fehlvorstellung
 
@@ -143,7 +134,7 @@ ROLLE: Du bist Tutor und hilfst einer Klausurgruppe bei Steckbriefaufgaben.
 SITUATION: Die Gruppe stellt immer den vollen Ansatz auf und scheitert am Gleichungssystem. Erklaere in einer zusammenhaengenden Darstellung (ca. 150 Woerter) an einem symmetrischen Beispiel, wie man aus der Symmetrie den verkuerzten Ansatz waehlt und jede Bedingung in genau eine Gleichung uebersetzt.
 RUBRIC (30 XP): Wahl des symmetrischen Ansatzes mit Begruendung (10 XP) | Korrekte Uebersetzung von Punkt-, Extrem- und Wendebedingungen (10 XP) | Loesungsweg bis zum Funktionsterm mit Probe (6 XP) | Fachsprachliche Korrektheit (4 XP).
 
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Wer Ansatz reduziert, Bedingungen uebersetzt, System loest und Kontrolle zeigt, erhaelt die volle Punktzahl.`
 
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Steckbrief des Täters
 TAKEAWAY 1盒（核心总结）：
@@ -155,4 +146,4 @@ REFLEXION 2问：
 1. 过程自省：Welcher Schritt fiel schwerer — die Wahl des symmetrischen Ansatzes (Schritt 4) oder die Abgrenzung zum vollen Ansatz (Schritt 5)?
 2. 元认知计划：Beim naechsten Mal unterstreiche ich zuerst das Symmetriewort, bevor ich den Ansatz hinschreibe.
 
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Rekonstruieren heisst zuhoeren: Jede Eigenschaft des Graphen wird zu genau einer Gleichung.`

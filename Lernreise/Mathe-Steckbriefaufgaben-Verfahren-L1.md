@@ -13,7 +13,7 @@ version: Lesson-v3
 
 # Lernreise: Steckbriefaufgaben — Bedingungen in Gleichungen (L1, Ziel Klausur)
 
-<!-- Campaign: Optimierung | Episode 28/33 | Krise: Datenkabel-Latenz 47 ms Spike | Target: x0 = 5, h = 0.5, Target m = 13.36 | Tool: box-optimizer -->
+<!-- Campaign: Optimierung | Episode 28/33 | Krise: Datenkabel-Latenz 47 ms Spike | Zielgroessen: Ansatz ax^3+bx^2+cx+d mit 4 Bedingungen, Ziel Koeffizienten | Tool: box-optimizer -->
 
 ## Schritt 1 — entdecken: ZKE-Generalprobe I
 ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
@@ -24,26 +24,24 @@ ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
 ### Hook / Phaenomen
 
-【首席算法官·第28集/共33集】警报：Datenkabel-Latenz 47 ms Spike。首席算法官下令：“x0 = 5, h = 0.5, Target m = 13.36！”全场红灯闪烁。上一集（Mathe-Steckbriefaufgaben-Verfahren-DE-L1.md）的伏笔在此引爆，下一集（Mathe-Vektoren-Raum-Skalarprodukt-CN-L1.md）只给交出最优解的人放行。本集你要在沙盘里亲手把工程从亏损/相撞边缘拉回来：先看现象、再点装备、最后算出让审计点头的 Bilanz。记住：先看区间还是时刻、再选割线还是切线/极值还是向量，做完必做 Gegenprobe——这就是工程帝国法则，也是 Klausur 拿分法则。
+求函数只给线索：点、极值、拐点各藏一方程，一般设式先框定范围，条件逐条译成方程组，解出来再验算。
 
-Hook / Phaenomen (CAO-Log, Episode 28 von 33): Super-Engineering-Zentrale, Datenkabel-Latenz 47 ms Spike. Der Chief Algorithm Officer ruft: x0 = 5, h = 0.5, Target m = 13.36, die Assistentin meldet Rot-Alarm auf allen Screens. Genau hier entscheidet Steckbriefaufgaben: Bedingungen in Gleichungen ueber Freigabe oder Sperrung, ueber Kostenexplosion oder Rekordgewinn, ueber Kollision oder gruene Welle. Das Protokoll der Vorwoche (Mathe-Steckbriefaufgaben-Verfahren-DE-L1.md) legte die Spur, das naechste Audit (Mathe-Vektoren-Raum-Skalarprodukt-CN-L1.md) laesst keine Ausrede mehr zu. Die Messwerte streuen, die Kurven zittern, doch die Mathematik bleibt unbestechlich: Wer Sekante und Tangente, Maximum und Wendepunkt, Vektor und Ebene richtig liest, rettet das Projekt. In dieser Episode stellst du im Sandbox-Optimierer die Parameter so ein, dass alle Kennzahlen im gruenen Bereich landen. Beobachte zuerst das Phaenomen in Ruhe, benenne dann die Objekte mit exakter Notation, pruefe schliesslich das Ergebnis mit einer Gegenrechnung. Der folgende Weg fuehrt vom Alarmton zur sauberen Klausurloesung: erst das Phaenomen beobachten, dann die Begriffe sichern, dann das Modell rechnen und im Labor bestaetigen.
+Hook / Phaenomen: Gesucht ist eine Funktion, gegeben sind Spuren: Punkte, Extrema, Wendepunkte. Der **allgemeine Ansatz** rahmt die Suche, jede **Bedingungsuebersetzung** liefert eine Gleichung. **Extrem-** und **Wendebedingung** sind dabei nur Sonderfaelle derselben Uebersetzungskunst.
 
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Steckbriefe werden uebersetzt, nicht geraten: Jede Eigenschaft liefert genau eine Gleichung ans System.`
 
 ## Schritt 2 — entdecken: Ausruestungskiste der Algorithmus-Unit
 PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
 
 中文在上，德语在下：
 
-- 一般式 — allgemeiner Ansatz：含全部待定系数的多项式形式，如 `f(x) = ax^3 + bx^2 + cx + d`。
-- 待定系数 — Koeffizienten：尚未确定的常数 a, b, c, d，由条件解出。
-- 几何条件翻译 — Uebersetzung der Bedingungen：把点、斜率、极值等特征写成方程。
-- 线性方程组 — lineares Gleichungssystem (LGS)：把各条方程联立后求解系数。
-- 验算 — Probe：把解得的系数代回原条件，检查是否全部满足。
+- 一般式 — allgemeiner Ansatz：含全部待定系数的多项式形式，如 `f(x) = ax^3 + bx^2 + cx + d`。 Sein Grad folgt aus der hoechsten genannten Eigenschaft. Mechanismus: Allgemeines Polynom mit benannten Koeffizienten aufstellen. Klausur-Tipp: Gradwahl in einem Satz begruenden.
+- 待定系数 — Koeffizienten：尚未确定的常数 a, b, c, d，由条件解出。 Sie liefert zwei Gleichungen: Funktion und erste Ableitung. Mechanismus: f und f Strich an der Extremstelle auswerten. Klausur-Tipp: Stelle und Wert getrennt notieren.
+- 几何条件翻译 — Uebersetzung der Bedingungen：把点、斜率、极值等特征写成方程。 Punkt heisst Funktionswert, Extremum heisst Ableitung null. Mechanismus: Jede Eigenschaft Wort fuer Wort in Gleichungen uebersetzen. Klausur-Tipp: Uebersetzungen nummerieren und abhaken.
+- 线性方程组 — lineares Gleichungssystem (LGS)：把各条方程联立后求解系数。 Sie liefert zwei Gleichungen: erste und zweite Ableitung. Mechanismus: f Strich und f zwei Strich an der Wendestelle auswerten. Klausur-Tipp: Wendepunkt als vollen Punkt angeben.
+- 验算 — Probe：把解得的系数代回原条件，检查是否全部满足。 Vier Bedingungen fordern vier Gleichungen und ein Loesungsverfahren. Mechanismus: System per Einsetzen oder Matrix loesen. Klausur-Tipp: Loesungsweg auch bei Technologieeinsatz skizzieren.
 
-Klausur-Satz: `Die Anzahl der unbekannten Koeffizienten muss der Anzahl der unabhaengigen Bedingungen entsprechen.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Die Anzahl der unbekannten Koeffizienten muss der Anzahl der unabhaengigen Bedingungen entsprechen.`
 
 ## Schritt 3 — entdecken: Wirkungskette hinter Steckbriefaufgaben: Bedingungen in Gleichungen
 ENTDECKEN（1概念 + 1文字图解）：
@@ -63,9 +61,8 @@ ENTDECKEN（1概念 + 1文字图解）：
    4 Bedingungen  ->  4 Gleichungen  ->  LGS loesen  ->  f(x)
 ```
 
-Klausur-Satz: `Jede geometrische Eigenschaft des Graphen entspricht genau einer Bedingung an f, f' oder f''.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+$$f(x) = ax^3+bx^2+cx+d,\quad \text{4 Bedingungen = 4 Gleichungen}$$
+`Klausur-Satz: Jede geometrische Eigenschaft des Graphen entspricht genau einer Bedingung an f, f' oder f''.`
 
 ## Anekdote & Fun-Fact
 
@@ -76,7 +73,7 @@ Klausur-Satz: `Jede geometrische Eigenschaft des Graphen entspricht genau einer 
 **Bezug zum Konzept**: `Ein Ansatz mit unbekannten Koeffizienten ist eine alte Idee: aus Bedingungen werden Gleichungen gebaut.`
 
 ## Schritt 4 — ausprobieren: Sandbox-Auftrag ZKE-Generalprobe I
-Kontinuitaet: Vorher Mathe-Steckbriefaufgaben-Verfahren-DE-L1.md | Nachher Mathe-Vektoren-Raum-Skalarprodukt-CN-L1.md. Krise dieser Episode: Datenkabel-Latenz 47 ms Spike. Target: x0 = 5, h = 0.5, Target m = 13.36.
+Kontinuitaet: Vorher Mathe-Steckbriefaufgaben-Verfahren-DE-L1.md | Nachher Mathe-Vektoren-Raum-Skalarprodukt-CN-L1.md. Krise dieser Episode: Datenkabel-Latenz 47 ms Spike. Zielgroessen: Ansatz ax^3+bx^2+cx+d mit 4 Bedingungen, Ziel Koeffizienten
 
 BEISPIEL（正确例题示范，含教具操作与解答）：
 
@@ -91,14 +88,12 @@ HILFE:
 
 MUSTERLÖSUNG: Ansatz: f(x) = ax^3 + bx^2 + cx + d, f'(x) = 3ax^2 + 2bx + c, f''(x) = 6ax + 2b. Bedingungen: (I) y-Achsenabschnitt f(0) = 4 ergibt d = 4. (II) Tangentensteigung f'(0) = -6 ergibt c = -6. (III) Wendepunkt f''(1) = 0 ergibt 6a + 2b = 0, also b = -3a. (IV) Nullstelle f(1) = 0 ergibt a + b + c + d = 0. Mit c = -6 und d = 4 folgt aus (IV) a + b - 2 = 0, also a + b = 2. Einsetzen von b = -3a liefert a - 3a = 2, also -2a = 2 und damit a = -1 sowie b = 3. Ergebnis: f(x) = -x^3 + 3x^2 - 6x + 4. Probe: f(0) = 4, f'(x) = -3x^2 + 6x - 6 mit f'(0) = -6, f''(x) = -6x + 6 mit f''(1) = 0 und f(1) = -1 + 3 - 6 + 4 = 0. Alle Bedingungen sind erfuellt.
 
-Klausur-Satz: `Aus den vier Bedingungen folgt das LGS mit der eindeutigen Loesung a = -1, b = 3, c = -6, d = 4, also f(x) = -x^3 + 3x^2 - 6x + 4.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Aus den vier Bedingungen folgt das LGS mit der eindeutigen Loesung a = -1, b = 3, c = -6, d = 4, also f(x) = -x^3 + 3x^2 - 6x + 4.`
 
 ## Schritt 5 — ausprobieren: Duell der Verfahren ZKE-Generalprobe I
 VERGLEICH辨别实验（双向辨析：正向眼 vs. 反向眼）：
 
-VERGLEICH: Waehle erst das Verfahren — 【选程序】先判断题目给的是 (i) Kurvendiskussion（已给函数式，问性质：求导数、判极值、求拐点）还是 (ii) Rekonstruktion（给性质，求函数式：列方程解系数）—— dann loesen.
+VERGLEICH: (Weg A quantitativ-rechnerisch gegen Weg B qualitativ-strukturell): Waehle erst das Verfahren — 【选程序】先判断题目给的是 (i) Kurvendiskussion（已给函数式，问性质：求导数、判极值、求拐点）还是 (ii) Rekonstruktion（给性质，求函数式：列方程解系数）—— dann loesen.
 
 Weg A: Erst Verfahren waehlen, dann rechnen.
 
@@ -111,20 +106,16 @@ HILFE: A gibt die Funktion vor und fragt nach Eigenschaften -> Verfahren (i). B 
 
 ANTWORT: A erfordert Verfahren (i): f'(x) = 3x^2 - 12x + 9 = 0 ergibt x = 1 und x = 3; mit f''(1) = -6 < 0 folgt HP(1 | 5) und mit f''(3) = 6 > 0 folgt TP(3 | 1). B erfordert Verfahren (ii): Ansatz f(x) = ax^3 + bx^2 + cx + d; f'(0) = 0 ergibt c = 0, f(0) = 0 ergibt d = 0, f''(2) = 0 ergibt 12a + 2b = 0, also b = -6a, und f(2) = -4 ergibt 8a + 4b = -4, also 2a + b = -1. Einsetzen liefert 2a - 6a = -1, also a = 0,25 und b = -1,5; damit f(x) = 0,25x^3 - 1,5x^2.
 
-Klausur-Satz: `Ist der Funktionsterm unbekannt, wird er ueber einen allgemeinen Ansatz und ein LGS aus den gegebenen Bedingungen rekonstruiert.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Ist der Funktionsterm unbekannt, wird er ueber einen allgemeinen Ansatz und ein LGS aus den gegebenen Bedingungen rekonstruiert.`
 
 ## Schritt 6 — check: Selbsttest zu Steckbriefaufgaben: Bedingungen in Gleichungen: ZKE-Generalprobe I
 CHECK检索默写（自测 3 题，与答案配对）：
 
-FRAGE: Welchen Ansatz waehlt man fuer eine ganzrationale Funktion dritten Grades? | ANTWORT: f(x) = ax^3 + bx^2 + cx + d mit vier unbekannten Koeffizienten.
-FRAGE: In welche Gleichung uebersetzt man einen Wendepunkt an der Stelle x0? | ANTWORT: In die Bedingung f''(x0) = 0 (bei Nachweis der Art zusaetzlich f''' ungleich 0).
-FRAGE: Wie viele unabhaengige Bedingungen braucht man fuer einen Ansatz mit vier Koeffizienten? | ANTWORT: Genau vier, da jede unabhaengige Bedingung eine Gleichung fuer das LGS liefert.
+- FRAGE: Welchen Ansatz waehlt man fuer eine ganzrationale Funktion dritten Grades? | ANTWORT: f(x) = ax^3 + bx^2 + cx + d mit vier unbekannten Koeffizienten.
+- FRAGE: In welche Gleichung uebersetzt man einen Wendepunkt an der Stelle x0? | ANTWORT: In die Bedingung f''(x0) = 0 (bei Nachweis der Art zusaetzlich f''' ungleich 0).
+- FRAGE: Wie viele unabhaengige Bedingungen braucht man fuer einen Ansatz mit vier Koeffizienten? | ANTWORT: Genau vier, da jede unabhaengige Bedingung eine Gleichung fuer das LGS liefert.
 
-Klausur-Satz: `Ein Wendepunkt liefert die Bedingung f''(x0) = 0, ein Extrempunkt die Bedingungen f(x0) = y0 und f'(x0) = 0.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Ein Wendepunkt liefert die Bedingung f''(x0) = 0, ein Extrempunkt die Bedingungen f(x0) = y0 und f'(x0) = 0.`
 
 ## Fehlvorstellung
 
@@ -143,7 +134,7 @@ ROLLE: Du bist Mitarbeiter in einem Ingenieurbuero und sollst ein Brueckenprofil
 SITUATION: Das Profil eines Brueckenbogens soll naeherungsweise durch eine ganzrationale Funktion dritten Grades beschrieben werden. Bekannt sind: Der Bogen beginnt im Ursprung mit waagerechter Tangente, erreicht an der Stelle x = 4 seinen hoechsten Punkt und hat dort eine Hoehe von 16 Metern. Bestimme den Funktionsterm und erlaeutere in einer zusammenhaengenden Darstellung (ca. 150 Woerter) dein Vorgehen.
 RUBRIC (30 XP): Korrekter Ansatz f(x) = ax^3 + bx^2 + cx + d (5 XP) | Uebersetzung der Bedingungen (f(0) = 0, f'(0) = 0, f(4) = 16, f'(4) = 0) (10 XP) | Loesung des LGS mit Ergebnis (10 XP) | Probe und Antwortsatz im Sachzusammenhang (5 XP).
 
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Wer Ansatz, Uebersetzungen, Loesungsweg und Kontrolle zeigt, erhaelt die volle Punktzahl.`
 
 ## Schritt 8 — reflexion: Takeaway & Reflexion: ZKE-Generalprobe I
 TAKEAWAY 1盒（核心总结）：
@@ -155,4 +146,4 @@ REFLEXION 2问：
 1. 过程自省：Welcher Schritt fiel schwerer — das Uebersetzen der Bedingungen (Schritt 4) oder das Loesen des LGS (Schritt 5)?
 2. 元认知计划：Beim naechsten Mal zaehle ich zuerst die Bedingungen und vergleiche sie mit der Anzahl der Koeffizienten, bevor ich den Ansatz waehle.
 
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Uebersetzen ist die halbe Loesung: Wer Bedingungen sauber liest, rechnet nur noch ab.`

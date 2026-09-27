@@ -13,7 +13,7 @@ version: Lesson-v3
 
 # Lernreise: Kosinussatz und Orthogonalitaet (L1, Ziel Klausur)
 
-<!-- Campaign: Optimierung | Episode 17/33 | Krise: Flughafen-Gepaeck 480 Koffer pro Stunde | Target: x0 = 4, h = 0.2, Target m = 9.29 | Tool: formula -->
+<!-- Campaign: Optimierung | Episode 17/33 | Krise: Flughafen-Gepaeck 480 Koffer pro Stunde | Zielgroessen: Dreieck mit a, b und Winkel gamma, Ziel Seite c | Tool: formula -->
 
 ## Schritt 1 — entdecken: Kurskorrektur
 ZIELE (drei messbare Ziele dieser Lektion):
@@ -26,9 +26,9 @@ ZIELE (drei messbare Ziele dieser Lektion):
 
 ### Hook / Phaenomen
 
-Hook / Phaenomen (CAO-Log, Episode 17 von 33): Super-Engineering-Zentrale, Flughafen-Gepaeck 480 Koffer pro Stunde. Der Chief Algorithm Officer ruft: x0 = 4, h = 0.2, Target m = 9.29, die Assistentin meldet Rot-Alarm auf allen Screens. Genau hier entscheidet Kosinussatz und Orthogonalitaet ueber Freigabe oder Sperrung, ueber Kostenexplosion oder Rekordgewinn, ueber Kollision oder gruene Welle. Das Protokoll der Vorwoche (Mathe-Kosinussatz-Orthogonalitaet-CN-L1.md) legte die Spur, das naechste Audit (Mathe-Kosinussatz-Orthogonalitaet-L1.md) laesst keine Ausrede mehr zu. Die Messwerte streuen, die Kurven zittern, doch die Mathematik bleibt unbestechlich: Wer Sekante und Tangente, Maximum und Wendepunkt, Vektor und Ebene richtig liest, rettet das Projekt. In dieser Episode stellst du im Sandbox-Optimierer die Parameter so ein, dass alle Kennzahlen im gruenen Bereich landen. Beobachte zuerst das Phaenomen in Ruhe, benenne dann die Objekte mit exakter Notation, pruefe schliesslich das Ergebnis mit einer Gegenrechnung. Der folgende Weg fuehrt vom Alarmton zur sauberen Klausurloesung: erst das Phaenomen beobachten, dann die Begriffe sichern, dann das Modell rechnen und im Labor bestaetigen.
+Hook / Phaenomen: Kein rechter Winkel weit und breit, trotzdem soll die dritte Seite exakt bestimmbar sein. Der **Kosinussatz** repariert Pythagoras mit einem **Korrekturterm**: Je spitzer der **eingeschlossene Winkel**, desto kuerzer die Gegenseite. Umgekehrt verraet die Seitenprobe, ob **Orthogonalitaet** vorliegt.
 
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Ohne rechten Winkel tritt der Korrekturterm hinzu: c Quadrat folgt aus a, b und eingeschlossenem Winkel.`
 
 ## Schritt 2 — entdecken: Ausruestungskiste der Algorithmus-Unit
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
@@ -39,19 +39,17 @@ Fuenf Begriffe trennen in dieser Lektion Alltagssprache von Klausursprache. Wer 
 
 ### Fachbegriffe & Definitionen
 
-- **Kosinussatz:** Die Formel $c^2=a^2+b^2-2ab\cos(\gamma)$ liefert die dritte Seite aus SWS. Mechanismus: Seiten und Winkel einsetzen und Wurzel ziehen. Klausur-Punkt: Formel nennen, gegebenen Winkel als eingeschlossenen identifizieren.
-- **SWS-Lage:** Zwei Seiten plus eingeschlossener Winkel suchen eindeutig die Gegenseite. Mechanismus: Gegebene Stuecke markieren und dem Winkel die Seite zuordnen. Klausur-Punkt: Lage benennen und Kosinussatz als Verfahren waehlen.
-- **SSS-Lage:** Drei bekannte Seiten suchen einen Winkel per umgestelltem Kosinussatz. Mechanismus: Formel nach $\cos(\gamma)$ aufloesen und Arkuskosinus bilden. Klausur-Punkt: Umstellung zeigen und Winkel in Grad angeben.
-- **Korrekturterm:** Der Anteil $-2ab\cos(\gamma)$ verkuerzt oder verlaengert gegenueber Pythagoras. Mechanismus: Vorzeichen von $\cos(\gamma)$ deuten und Effekt benennen. Klausur-Punkt: Bei spitz verkuerzt, bei stumpf verlaengert als Deutung.
-- **Orthogonalitaet:** Rechte Winkel folgen per Pythagoras-Probe oder Skalarprodukt null. Mechanismus: Seiten quadrieren und Gleichheit pruefen. Klausur-Punkt: Probe anschliessen und rechten Winkel explizit bestaetigen.
+- **Kosinussatz:** Die Formel $c^2=a^2+b^2-2ab\cos(\gamma)$ liefert die dritte Seite aus SWS. Er gilt in jedem ebenen Dreieck und verbindet drei Seiten mit einem Winkel. Er gilt in jedem ebenen Dreieck und verbindet drei Seiten mit einem Winkel. Mechanismus: Seiten und Winkel einsetzen und Wurzel ziehen. Klausur-Tipp: Formel nennen, gegebenen Winkel als eingeschlossenen identifizieren.
+- **SWS-Lage:** Zwei Seiten plus eingeschlossener Winkel suchen eindeutig die Gegenseite. Nur der Winkel zwischen den beiden gegebenen Seiten darf in die Formel. Mechanismus: Gegebene Stuecke markieren und dem Winkel die Seite zuordnen. Klausur-Tipp: Lage benennen und Kosinussatz als Verfahren waehlen.
+- **SSS-Lage:** Drei bekannte Seiten suchen einen Winkel per umgestelltem Kosinussatz. SWS legt das Dreieck eindeutig fest; der Arkuskosinus berechnet daraus den Winkel. Mechanismus: Formel nach $\cos(\gamma)$ aufloesen und Arkuskosinus bilden. Klausur-Tipp: Umstellung zeigen und Winkel in Grad angeben.
+- **Korrekturterm:** Der Anteil $-2ab\cos(\gamma)$ verkuerzt oder verlaengert gegenueber Pythagoras. Seiten und Winkel muessen paarweise stimmen; Pythagoras ist der Sonderfall mit gamma gleich 90 Grad ohne Korrekturterm. Mechanismus: Vorzeichen von $\cos(\gamma)$ deuten und Effekt benennen. Klausur-Tipp: Bei spitz verkuerzt, bei stumpf verlaengert als Deutung.
+- **Orthogonalitaet:** Rechte Winkel folgen per Pythagoras-Probe oder Skalarprodukt null. Rechter Winkel gilt genau dann, wenn a Quadrat plus b Quadrat gleich c Quadrat ist. Mechanismus: Seiten quadrieren und Gleichheit pruefen. Klausur-Tipp: Probe anschliessen und rechten Winkel explizit bestaetigen.
 
 ### Wirkungsgefuege / Modell
 
 Die Kette verbindet alle fuenf Begriffe zu einem Verfahren: Erkennen, Einordnen, Aufstellen, Loesen und Deuten. Jeder Begriff traegt genau einen Schritt, gemeinsam sichern sie die volle Punktzahl.
 
-Klausur-Satz: `Ohne rechten Winkel tritt der Korrekturterm mit Kosinus hinzu.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Ohne rechten Winkel tritt der Korrekturterm mit Kosinus hinzu.`
 
 ## Schritt 3 — entdecken: Wirkungskette hinter Kosinussatz und Orthogonalitaet
 EXPERIMENTELLE ERKUNDUNG (Sandbox, erst spielen, dann deuten):
@@ -79,9 +77,8 @@ Die Kausalkette laeuft von der Lage ueber die Formel zur Probe: Zuerst identifiz
 ```
 Formelkern: $c^2=a^2+b^2-2ab\cos(\gamma)$
 
-Klausur-Satz: `Das Vorzeichen von cos(gamma) entscheidet ueber verkuerzt oder verlaengert.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+$$c^2 = a^2+b^2-2ab\cos(\gamma)$$
+`Klausur-Satz: Das Vorzeichen von cos(gamma) entscheidet ueber verkuerzt oder verlaengert.`
 
 ## Anekdote & Fun-Fact
 Der franzoesische Mathematiker Lazare Carnot bewies den Kosinussatz in moderner Form, waehrend er gleichzeitig als Kriegsminister Armeen organisierte. Seine Formel $c^2 = a^2 + b^2 - 2ab\cos(\gamma)$ verband Feldmessung und Geometrie so eng, dass Landvermesser sie bis heute im Gepaeck tragen.
@@ -89,7 +86,7 @@ Der franzoesische Mathematiker Lazare Carnot bewies den Kosinussatz in moderner 
 Bezug zum Konzept: `Carnots Formel macht aus jeder SWS-Lage eine berechenbare Strecke.`
 
 ## Schritt 4 — ausprobieren: Sandbox-Auftrag Kurskorrektur
-Kontinuitaet: Vorher Mathe-Kosinussatz-Orthogonalitaet-CN-L1.md | Nachher Mathe-Kosinussatz-Orthogonalitaet-L1.md. Krise dieser Episode: Flughafen-Gepaeck 480 Koffer pro Stunde. Target: x0 = 4, h = 0.2, Target m = 9.29.
+Kontinuitaet: Vorher Mathe-Kosinussatz-Orthogonalitaet-CN-L1.md | Nachher Mathe-Kosinussatz-Orthogonalitaet-L1.md. Krise dieser Episode: Flughafen-Gepaeck 480 Koffer pro Stunde. Zielgroessen: Dreieck mit a, b und Winkel gamma, Ziel Seite c
 
 BEISPIEL (Sandbox Level mit Werkzeug):
 
@@ -104,14 +101,12 @@ HILFE:
 
 MUSTERLOESUNG: Sandbox bei $\gamma = 60$ Grad zeigt $c$ kuerzer als die Pythagoras-Hypothenuse. Rechnung per Einsetzen in $c^2=a^2+b^2-2ab\cos(60)$ und Wurzelziehen bestaetigt den Sandbox-Wert. Pythagoras-Probe $a^2+b^2 \ne c^2$ schliesst rechten Winkel aus, der positive Kosinus verkuerzt die Seite. Einsetzen, Wurzel ziehen und Pythagoras-Probe anschliessen sichern jede Dreiecksloesung.
 
-Klausur-Satz: `Einsetzen, Wurzel ziehen, Pythagoras-Probe anschliessen.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Einsetzen, Wurzel ziehen, Pythagoras-Probe anschliessen.`
 
 ## Schritt 5 — ausprobieren: Duell der Verfahren Kurskorrektur
 VERGLEICH (Wahl des Verfahrens, A gegen B):
 
-VERGLEICH: Triff zuerst die Wahl des Verfahrens: (i) Kosinussatz-Verfahren (Seite aus SWS berechnen) oder (ii) Umkehr-Verfahren (Winkel aus drei Seiten mit Kosinusformel bestimmen) > dann loesen.
+VERGLEICH: (Weg A quantitativ-rechnerisch gegen Weg B qualitativ-strukturell): Triff zuerst die Wahl des Verfahrens: (i) Kosinussatz-Verfahren (Seite aus SWS berechnen) oder (ii) Umkehr-Verfahren (Winkel aus drei Seiten mit Kosinusformel bestimmen) > dann loesen.
 
 Weg A: Erst Verfahren waehlen, dann rechnen.
 
@@ -124,20 +119,16 @@ HILFE: Aufgabe A nennt zwei Seiten plus Winkel, daher Verfahren (i). Aufgabe B n
 
 ANTWORT: A erfordert Verfahren (i): $c^2 = 16 + 36 - 48\cos(120^\circ) = 52 + 24 = 76$, also $c = \sqrt{76} \approx 8{,}72$. B erfordert Verfahren (ii): $3^2 + 4^2 = 25 = 5^2$, also rechtwinklig mit $\gamma = 90^\circ$.
 
-Klausur-Satz: `SWS sucht eine Seite, SSS sucht einen Winkel.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: SWS sucht eine Seite, SSS sucht einen Winkel.`
 
 ## Schritt 6 — check: Selbsttest zu Kosinussatz und Orthogonalitaet: Kurskorrektur
 CHECK (drei Fragen mit Antworten):
 
-FRAGE: Wie lautet der Kosinussatz fuer die Seite $c$? | ANTWORT: $c^2 = a^2 + b^2 - 2ab\cos(\gamma)$ mit Gegenwinkel $\gamma$.
-FRAGE: Was passiert bei $\gamma = 90^\circ$? | ANTWORT: $\cos(90^\circ) = 0$, also bleibt $c^2 = a^2 + b^2$.
-FRAGE: Wie weist man einen rechten Winkel aus drei Seiten nach? | ANTWORT: Mit $\cos(\gamma) = \frac{a^2 + b^2 - c^2}{2ab}$; gilt $\cos(\gamma) = 0$, so ist $\gamma = 90^\circ$.
+- FRAGE: Wie lautet der Kosinussatz fuer die Seite $c$? | ANTWORT: $c^2 = a^2 + b^2 - 2ab\cos(\gamma)$ mit Gegenwinkel $\gamma$.
+- FRAGE: Was passiert bei $\gamma = 90^\circ$? | ANTWORT: $\cos(90^\circ) = 0$, also bleibt $c^2 = a^2 + b^2$.
+- FRAGE: Wie weist man einen rechten Winkel aus drei Seiten nach? | ANTWORT: Mit $\cos(\gamma) = \frac{a^2 + b^2 - c^2}{2ab}$; gilt $\cos(\gamma) = 0$, so ist $\gamma = 90^\circ$.
 
-Klausur-Satz: `Drei Seiten pruefen Pythagoras, zwei Seiten plus Winkel rufen den Kosinussatz.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Drei Seiten pruefen Pythagoras, zwei Seiten plus Winkel rufen den Kosinussatz.`
 
 ## Fehlvorstellung
 (Kein Schritt; wird vom Parser uebersprungen.)
@@ -153,7 +144,7 @@ SITUATION: Ein Grundstueck bildet ein Dreieck mit $a = 40\,\mathrm{m}$, $b = 55\
 AUFGABE (nachweisen, AFB III): Berechnen Sie $c$ in einer zusammenhaengenden Darstellung (circa 150 Woerter), pruefen Sie Orthogonalitaet und begruenden Sie jeden Rechenschritt mit Satzbenennung.
 RUBRIC (30 XP): Ansatz $c^2 = a^2 + b^2 - 2ab\cos(\gamma)$ korrekt (10 XP) | Zahlwert $c \approx 60{,}9\,\mathrm{m}$ (10 XP) | Orthogonalitaetspruefung mit Pythagoras (5 XP) | Geschlossene Begruendung (5 XP).
 
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Wer Kosinussatz ansetzt, Winkel zuordnet, Seite berechnet und Orthogonalitaet per Gegenprobe beurteilt, erhaelt die volle Punktzahl.`
 
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Kurskorrektur
 TAKEAWAY (Kernbotschaft in einem Kasten):
@@ -166,4 +157,4 @@ REFLEXION (zwei Fragen):
 1. Welcher Schritt fiel schwerer: das Winkelrechnen mit Kosinus (Schritt 4) oder die Verfahrenswahl (Schritt 5)?
 2. Beim naechsten Mal markiere ich zuerst Gegenwinkel und Gegenseite farbig, dann setze ich ein.
 
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Pythagoras ist Spezialfall, nicht Normalfall: Der Kosinus entscheidet, wie stark korrigiert wird.`

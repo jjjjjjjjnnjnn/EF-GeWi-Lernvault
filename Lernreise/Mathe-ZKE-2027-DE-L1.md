@@ -13,7 +13,7 @@ version: Lesson-v3
 
 # Lernreise: ZKE 2027: Teil A und Teil B im Zeitmodus (L1, Ziel Klausur)
 
-<!-- Campaign: Optimierung | Episode 32/33 | Krise: Reserve-Alarm: Nachtbereitschaft prueft alle Modelle | Target: x0 = 4, h = 0.1, Target m = 14.84 | Tool: formula -->
+<!-- Campaign: Optimierung | Episode 32/33 | Krise: Reserve-Alarm: Nachtbereitschaft prueft alle Modelle | Zielgroessen: Teil A hilfsmittelfrei mit Potenzregel und pq-Formel | Tool: formula -->
 
 ## Schritt 1 — entdecken: Endabnahme II
 ZIELE (drei messbare Ziele dieser Lektion):
@@ -26,9 +26,9 @@ ZIELE (drei messbare Ziele dieser Lektion):
 
 ### Hook / Phaenomen
 
-Hook / Phaenomen (CAO-Log, Episode 32 von 33): Super-Engineering-Zentrale, Reserve-Alarm: Nachtbereitschaft prueft alle Modelle. Der Chief Algorithm Officer ruft: x0 = 4, h = 0.1, Target m = 14.84, die Assistentin meldet Rot-Alarm auf allen Screens. Genau hier entscheidet ZKE 2027: Teil A und Teil B im Zeitmodus ueber Freigabe oder Sperrung, ueber Kostenexplosion oder Rekordgewinn, ueber Kollision oder gruene Welle. Das Protokoll der Vorwoche (Mathe-Vektoren-Raum-Skalarprodukt-L1.md) legte die Spur, das naechste Audit (Mathe-ZKE-2027-L1.md) laesst keine Ausrede mehr zu. Die Messwerte streuen, die Kurven zittern, doch die Mathematik bleibt unbestechlich: Wer Sekante und Tangente, Maximum und Wendepunkt, Vektor und Ebene richtig liest, rettet das Projekt. In dieser Episode stellst du im Sandbox-Optimierer die Parameter so ein, dass alle Kennzahlen im gruenen Bereich landen. Beobachte zuerst das Phaenomen in Ruhe, benenne dann die Objekte mit exakter Notation, pruefe schliesslich das Ergebnis mit einer Gegenrechnung. Der folgende Weg fuehrt vom Alarmton zur sauberen Klausurloesung: erst das Phaenomen beobachten, dann die Begriffe sichern, dann das Modell rechnen und im Labor bestaetigen.
+Hook / Phaenomen: Teil A ohne Hilfsmittel, Teil B mit Rechner: Die ZKE prueft beides, Tempo und Tiefe. **Potenzregel**, **pq-Formel** und **Betragsformel** sind das hilfsmittelfreie Ueberlebenspaket. Wer sie ohne Zettel kann, kauft sich Zeit fuer die Transferaufgaben.
 
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Die ZKE trennt Tempo von Tiefe: Teil A verlangt Formelsicherheit ohne Hilfsmittel, Teil B Transfer mit Werkzeug.`
 
 ## Schritt 2 — entdecken: Ausruestungskiste der Algorithmus-Unit
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
@@ -39,19 +39,17 @@ Fuenf Begriffe trennen in dieser Lektion Alltagssprache von Klausursprache. Wer 
 
 ### Fachbegriffe & Definitionen
 
-- **Teil A hilfsmittelfrei:** Der erste Pruefungsteil laeuft ohne Rechner in hoechstens 25 Minuten mit Grundlagen. Mechanismus: Potenzregel, pq-Formel und Vektorlaenge auswendig aktivieren. Klausur-Punkt: Exakte Ergebnisse ohne Nebenwege liefern.
-- **Teil B mit Hilfsmitteln:** Der zweite Teil nutzt WTR oder CAS plus Formelsammlung mit mindestens 75 Minuten. Mechanismus: Rechner gezielt einsetzen und jeden Schritt dokumentieren. Klausur-Punkt: Vollständige Wege mit Deutung schreiben.
-- **Potenzregel:** Die Regel $(x^n)' = n \cdot x^{n-1}$ gehoert zum sicheren Handwerk in Teil A. Mechanismus: Exponenten senken und Faktoren erhalten. Klausur-Punkt: Fehlerfrei aus dem Kopf anwenden.
-- **pq-Formel:** Die Loesungsformel fuer $x^2+px+q=0$ liefert Nullstellen ohne Rechner. Mechanismus: $p$ und $q$ ablesen und in die Formel einsetzen. Klausur-Punkt: Diskriminante pruefen und beide Loesungen angeben.
-- **Betragsformel:** Die Vektorlaenge folgt per Wurzel aus der Quadratsumme der Koordinaten. Mechanismus: Differenzen bilden, quadrieren und Wurzel ziehen. Klausur-Punkt: Exakten Wert und bei Bedarf gerundeten Wert nennen.
+- **Teil A hilfsmittelfrei:** Der erste Pruefungsteil laeuft ohne Rechner in hoechstens 25 Minuten mit Grundlagen. Dort zaehlen Kopfrechen-Tempo und Formelsicherheit ohne jeden Zettel. Mechanismus: Potenzregel, pq-Formel und Vektorlaenge auswendig aktivieren. Klausur-Tipp: Exakte Ergebnisse ohne Nebenwege liefern.
+- **Teil B mit Hilfsmitteln:** Der zweite Teil nutzt WTR oder CAS plus Formelsammlung mit mindestens 75 Minuten. Dort zaehlen Modellierung und Rechnerweg mit Dokumentation. Mechanismus: Rechner gezielt einsetzen und jeden Schritt dokumentieren. Klausur-Tipp: Vollständige Wege mit Deutung schreiben.
+- **Potenzregel:** Die Regel $(x^n)' = n \cdot x^{n-1}$ gehoert zum sicheren Handwerk in Teil A. Sie ist die schnellste Ableitungsregel fuer ganzrationale Funktionen. Mechanismus: Exponenten senken und Faktoren erhalten. Klausur-Tipp: Fehlerfrei aus dem Kopf anwenden.
+- **pq-Formel:** Die Loesungsformel fuer $x^2+px+q=0$ liefert Nullstellen ohne Rechner. Sie loest normierte quadratische Gleichungen in einer Zeile. Mechanismus: $p$ und $q$ ablesen und in die Formel einsetzen. Klausur-Tipp: Diskriminante pruefen und beide Loesungen angeben.
+- **Betragsformel:** Die Vektorlaenge folgt per Wurzel aus der Quadratsumme der Koordinaten. Er misst Laengen und Abstaende auch in der Ebene. Mechanismus: Differenzen bilden, quadrieren und Wurzel ziehen. Klausur-Tipp: Exakten Wert und bei Bedarf gerundeten Wert nennen.
 
 ### Wirkungsgefuege / Modell
 
 Die Kette verbindet alle fuenf Begriffe zu einem Verfahren: Erkennen, Einordnen, Aufstellen, Loesen und Deuten. Jeder Begriff traegt genau einen Schritt, gemeinsam sichern sie die volle Punktzahl.
 
-Klausur-Satz: `In Teil A muessen Potenzregel, pq-Formel und Vektorlaenge ohne Hilfsmittel sicher beherrscht werden.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: In Teil A muessen Potenzregel, pq-Formel und Vektorlaenge ohne Hilfsmittel sicher beherrscht werden.`
 
 ## Schritt 3 — entdecken: Wirkungskette hinter ZKE 2027: Teil A und Teil B im Zeitmodus
 EXPERIMENTELLE ERKUNDUNG (Sandbox, erst spielen, dann deuten):
@@ -79,9 +77,8 @@ Die Kausalkette laeuft von der Aufgabensorte ueber das Werkzeug zur Darstellung:
 ```
 Formelkern: $(x^n)'=n\cdot x^{n-1}$
 
-Klausur-Satz: `Teil A prueft Analysis und Geometrie ohne Hilfsmittel, Teil B nur Analysis mit Hilfsmitteln und verlangt vollstaendige Rechenwege.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+$$(x^n)' = nx^{n-1},\quad x_{1,2} = -\frac{p}{2}\pm\sqrt{(p/2)^2-q}$$
+`Klausur-Satz: Teil A prueft Analysis und Geometrie ohne Hilfsmittel, Teil B nur Analysis mit Hilfsmitteln und verlangt vollstaendige Rechenwege.`
 
 ## Anekdote & Fun-Fact
 Seit Taschenrechner und spaeter Computeralgebra-Systeme (CAS) in den Mathematikunterricht kamen, wird diskutiert, wie viel Handrechnung noch noetig ist. Ein CAS kann in Sekunden ableiten, Gleichungen loesen und Grenzwerte berechnen. Deshalb teilt die ZKE die Pruefung in einen hilfsmittelfreien Teil und einen Teil mit Hilfsmitteln.
@@ -89,7 +86,7 @@ Seit Taschenrechner und spaeter Computeralgebra-Systeme (CAS) in den Mathematiku
 Bezug zum Konzept: `Weil CAS die Rechnung uebernehmen, prueft Teil A gerade die Grundformeln im Kopf.`
 
 ## Schritt 4 — ausprobieren: Sandbox-Auftrag Endabnahme II
-Kontinuitaet: Vorher Mathe-Vektoren-Raum-Skalarprodukt-L1.md | Nachher Mathe-ZKE-2027-L1.md. Krise dieser Episode: Reserve-Alarm: Nachtbereitschaft prueft alle Modelle. Target: x0 = 4, h = 0.1, Target m = 14.84.
+Kontinuitaet: Vorher Mathe-Vektoren-Raum-Skalarprodukt-L1.md | Nachher Mathe-ZKE-2027-L1.md. Krise dieser Episode: Reserve-Alarm: Nachtbereitschaft prueft alle Modelle. Zielgroessen: Teil A hilfsmittelfrei mit Potenzregel und pq-Formel
 
 BEISPIEL (Sandbox Level mit Werkzeug):
 
@@ -104,14 +101,12 @@ HILFE:
 
 MUSTERLOESUNG: Teil-A-Wege liefern Nullstellen, Ableitung und Vektorlaenge exakt per pq-Formel, Potenzregel und Betragsformel in wenigen Minuten. Teil-B-Darstellung ergaenzt Ansatz, Zwischenschritte und Deutung zum vollständigen Weg. Regel: In Teil A zaehlt das exakte Ergebnis ohne Hilfsmittel, in Teil B der vollständig dargestellte Loesungsweg mit Hilfsmitteln und Deutung.
 
-Klausur-Satz: `Die Nullstellen, die Ableitung und die Vektorlaenge lassen sich im hilfsmittelfreien Teil mit Potenzregel, pq-Formel und Betragsformel berechnen.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Die Nullstellen, die Ableitung und die Vektorlaenge lassen sich im hilfsmittelfreien Teil mit Potenzregel, pq-Formel und Betragsformel berechnen.`
 
 ## Schritt 5 — ausprobieren: Duell der Verfahren Endabnahme II
 VERGLEICH (Wahl des Verfahrens, A gegen B):
 
-VERGLEICH: Triff zuerst die Wahl des Verfahrens: (i) Teil-A-Aufgabe (hilfsmittelfrei: Handrechnung von Nullstellen, Ableitungen oder Vektoren, Ergebnis genuegt) oder (ii) Teil-B-Aufgabe (mit Hilfsmitteln: vollstaendige Kette mit Argumentation, Deutung und Antwortsatz) > dann bearbeiten.
+VERGLEICH: (Weg A quantitativ-rechnerisch gegen Weg B qualitativ-strukturell): Triff zuerst die Wahl des Verfahrens: (i) Teil-A-Aufgabe (hilfsmittelfrei: Handrechnung von Nullstellen, Ableitungen oder Vektoren, Ergebnis genuegt) oder (ii) Teil-B-Aufgabe (mit Hilfsmitteln: vollstaendige Kette mit Argumentation, Deutung und Antwortsatz) > dann bearbeiten.
 
 Weg A: Erst Verfahren waehlen, dann rechnen.
 
@@ -124,20 +119,16 @@ HILFE: Aufgabe A ist eine kurze Handrechnung ohne Kontext, daher Teil A. Aufgabe
 
 ANTWORT: A gehoert zu Teil A: $f'(x) = 15x^2 - 4x + 1$, also $f'(1) = 15 - 4 + 1 = 12$. B gehoert zu Teil B: $g'(x) = 3x^2 - 12 = 0$ ergibt $x = 2$ und $x = -2$; mit $g''(x) = 6x$ folgt $g''(-2) = -12 < 0$ (Hochpunkt) und $g''(2) = 12 > 0$ (Tiefpunkt). Wegen $g(-2) = 19$ und $g(2) = -13$ gilt $HP(-2, 19)$ und $TP(2, -13)$; im Sachzusammenhang markieren diese Stellen Verlaufsextrema mit maximalem beziehungsweise minimalem Bestand.
 
-Klausur-Satz: `Teil-A-Aufgaben verlangen nur das exakte Ergebnis, Teil-B-Aufgaben einen vollstaendigen und gedeuteten Loesungsweg.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Teil-A-Aufgaben verlangen nur das exakte Ergebnis, Teil-B-Aufgaben einen vollstaendigen und gedeuteten Loesungsweg.`
 
 ## Schritt 6 — check: Selbsttest zu ZKE 2027: Teil A und Teil B im Zeitmodus: Endabnahme II
 CHECK (drei Fragen mit Antworten):
 
-FRAGE: Wie lange darf man hoechstens fuer Teil A der ZKE verwenden, und welche Hilfsmittel sind dort erlaubt? | ANTWORT: Hoechstens 25 Minuten, ohne Taschenrechner und ohne Formelsammlung.
-FRAGE: Welche Hilfsmittel sind in Teil B zugelassen? | ANTWORT: WTR oder CAS sowie die offizielle Formelsammlung NRW.
-FRAGE: Warum reicht in Teil B ein korrektes Ergebnis allein nicht aus? | ANTWORT: Weil die Darstellungsleistung bepunktet wird; der Loesungsweg muss nachvollziehbar in Saetzen dargestellt werden.
+- FRAGE: Wie lange darf man hoechstens fuer Teil A der ZKE verwenden, und welche Hilfsmittel sind dort erlaubt? | ANTWORT: Hoechstens 25 Minuten, ohne Taschenrechner und ohne Formelsammlung.
+- FRAGE: Welche Hilfsmittel sind in Teil B zugelassen? | ANTWORT: WTR oder CAS sowie die offizielle Formelsammlung NRW.
+- FRAGE: Warum reicht in Teil B ein korrektes Ergebnis allein nicht aus? | ANTWORT: Weil die Darstellungsleistung bepunktet wird; der Loesungsweg muss nachvollziehbar in Saetzen dargestellt werden.
 
-Klausur-Satz: `In Teil A zaehlt das exakte Ergebnis ohne Hilfsmittel, in Teil B der vollstaendig dargestellte Loesungsweg mit Hilfsmitteln.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: In Teil A zaehlt das exakte Ergebnis ohne Hilfsmittel, in Teil B der vollstaendig dargestellte Loesungsweg mit Hilfsmitteln.`
 
 ## Fehlvorstellung
 (Kein Schritt; wird vom Parser uebersprungen.)
@@ -153,7 +144,7 @@ SITUATION: Du sollst vor der Pruefung eine kurze Strategie-Empfehlung (circa 150
 AUFGABE (begruenden, AFB III): Verfasse eine zusammenhaengende Darstellung von etwa 150 Woertern mit Regeln, Zeitaufteilung, Darstellungsleistung und Fazit.
 RUBRIC (30 XP): Korrekte Wiedergabe der Zeit- und Hilfsmittelregeln (5 XP) | Begruendete Zeitaufteilung zwischen Teil A und Teil B (10 XP) | Hinweis auf die Bedeutung der Darstellungsleistung in Teil B (10 XP) | Fazit zur Pruefungsstrategie (5 XP).
 
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Wer Teil-A-Formeln fehlerfrei zeigt und Teil-B-Transfer mit Rechnerweg dokumentiert, erhaelt die volle Punktzahl.`
 
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Endabnahme II
 TAKEAWAY (Kernbotschaft in einem Kasten):
@@ -166,4 +157,4 @@ REFLEXION (zwei Fragen):
 1. Welcher Schritt fiel schwerer: das hilfsmittelfreie Rechnen in Teil A (Schritt 4) oder das Aufschreiben der vollstaendigen Argumentation fuer Teil B (Schritt 5)?
 2. Beim naechsten Mal lege ich vor Beginn eine Zeitmarke fuer die Abgabe von Teil A fest und pruefe am Ende, ob jeder Teil-B-Schritt einen Antwortsatz besitzt.
 
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Pruefung ist Zeitspiel: Automatisierte Grundlagen kaufen Minuten fuer schwierige Transferstellen.`

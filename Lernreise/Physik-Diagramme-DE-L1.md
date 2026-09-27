@@ -13,7 +13,7 @@ version: Lesson-v3
 
 # Lernreise: Diagramme lesen, zeichnen und Messfehler beurteilen (L1, Ziel Klausur)
 
-<!-- Campaign: Mars-Mission | Episode 5/28 | Krise: Sol-055 Krater-Rand-Gefaelle 24 Grad mit Eisglanz | Target: v0 = 275 m/s, a = 2.6 m/s2, Ziel s = 985 m | Tool: kinematik-lab -->
+<!-- Campaign: Mars-Mission | Episode 5/28 | Krise: Sol-055 Krater-Rand-Gefaelle 24 Grad mit Eisglanz | Zielgroessen: s-t-Messreihe, Ziel Geschwindigkeit aus Steigung | Tool: kinematik-lab -->
 
 ## Schritt 1 — entdecken: Parabel gegen Gerade
 ZIELE (drei messbare Ziele dieser Lektion):
@@ -26,9 +26,9 @@ ZIELE (drei messbare Ziele dieser Lektion):
 
 ### Hook / Phaenomen
 
-Hook / Phaenomen (Sol-Logbuch, Episode 5 von 28): Mars-Anflug, Sol-055 Krater-Rand-Gefaelle 24 Grad mit Eisglanz. Navigatorin Lena meldet: v0 = 275 m/s, a = 2.6 m/s2, Ziel s = 985 m, Mechaniker Tom ruft: Halte die Kurve! Der Bordcomputer geht auf Rot, das Funkgeraet rauscht, die Crew haelt den Atem an. Genau hier entscheidet Diagramme lesen, zeichnen und Messfehler beurteilen ueber Landung oder Absturz, ueber Festfahren oder Weiterfahrt, ueber Andocken oder Abprall. Das Logbuch des vorherigen Sols (Physik-CN-Tricks-L1.md) warnte bereits vor diesem Moment, und das naechste Fenster (Physik-Diagramme-L1.md) oeffnet sich nur, wenn diese Aufgabe geloest wird. Die Sensoren streuen, die Diagramme zittern, doch die Physik bleibt unbestechlich: Wer Steigung und Flaeche, Kraft und Gegenkraft, Schwung und Stoss richtig liest, rettet die Mission. In dieser Episode stellst du im Sandbox-Labor die Brems- und Gleitzahlen so ein, dass die Kapsel sicher durchkommt. Beobachte zuerst das Phaenomen in Ruhe, benenne dann die Groessen mit exakten Einheiten, pruefe schliesslich die Bilanz mit einer Gegenrechnung. Der folgende Weg fuehrt vom Alarmton zur sauberen Klausurloesung: erst das Phaenomen beobachten, dann die Begriffe sichern, dann das Modell rechnen und im Labor bestaetigen.
+Hook / Phaenomen: Punkte streuen, doch das Gesetz liegt gerade dazwischen: Die **Ausgleichsgerade** mittelt den **zufaelligen Fehler** weg. Der **systematische Fehler** bleibt und verschiebt alles. Wer **Achsen und Einheiten** sauber fuehrt, liest Steigung und Flaeche wie einen Vertrag.
 
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Diagramme sprechen ueber Steigung und Flaeche: Achsen mit Einheiten entscheiden, was gelesen werden darf.`
 
 ## Schritt 2 — entdecken: Ausruestungskiste der Mars-Crew
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
@@ -39,19 +39,17 @@ Fuenf Begriffe trennen in dieser Lektion Alltagssprache von Klausursprache. Wer 
 
 ### Fachbegriffe & Definitionen
 
-- **Ausgleichsgerade:** Die sinnvolle Gerade durch streuende Punkte mittelt zufaellige Fehler heraus. Mechanismus: Gerade nach Augemass durch die Punktwolke legen. Klausur-Punkt: Steigung als Ergebnisgroesse berechnen.
-- **Zufaelliger Fehler:** Unsystematische Streuung um die Gerade schwankt mal hoch mal tief. Mechanismus: Abweichungen beidseitig der Geraden pruefen. Klausur-Punkt: Mittelung als Gegenmittel nennen.
-- **Systematischer Fehler:** Einseitige Verschiebung aller Werte verraet eine stoerende Ursache. Mechanismus: Einseitige Abweichung oder Achsenabschnitt deuten. Klausur-Punkt: Ursache suchen statt zu mitteln.
-- **Achsen und Einheiten:** Beschriftete Achsen samt Einheiten machen aus Punkten erst Physik. Mechanismus: Groesse, Symbol und Einheit je Achse notieren. Klausur-Punkt: Ohne Einheiten gilt das Diagramm als wertlos.
-- **Messunsicherheit:** Der Vertrauensbereich um das Ergebnis begrenzt jede Aussage und jeden Vergleich. Mechanismus: Streuung als Unsicherheitsbalken einschaetzen. Klausur-Punkt: Modell nur im Rahmen der Unsicherheit bestaetigen.
+- **Ausgleichsgerade:** Die sinnvolle Gerade durch streuende Punkte mittelt zufaellige Fehler heraus. Sie mittelt zufaellige Fehler weg und zeigt den wahren Trend. Mechanismus: Gerade nach Augemass durch die Punktwolke legen. Klausur-Tipp: Steigung als Ergebnisgroesse berechnen.
+- **Zufaelliger Fehler:** Unsystematische Streuung um die Gerade schwankt mal hoch mal tief. Er streut symmetrisch und schrumpft durch Mittelung. Mechanismus: Abweichungen beidseitig der Geraden pruefen. Klausur-Tipp: Mittelung als Gegenmittel nennen.
+- **Systematischer Fehler:** Einseitige Verschiebung aller Werte verraet eine stoerende Ursache. Er verschiebt alle Werte einseitig und ueberlebt jede Mittelung. Mechanismus: Einseitige Abweichung oder Achsenabschnitt deuten. Klausur-Tipp: Ursache suchen statt zu mitteln.
+- **Achsen und Einheiten:** Beschriftete Achsen samt Einheiten machen aus Punkten erst Physik. Erst beschriftete Achsen machen aus Punkten eine Aussage. Mechanismus: Groesse, Symbol und Einheit je Achse notieren. Klausur-Tipp: Ohne Einheiten gilt das Diagramm als wertlos.
+- **Messunsicherheit:** Der Vertrauensbereich um das Ergebnis begrenzt jede Aussage und jeden Vergleich. Sie begrenzt, wie viele Stellen das Ergebnis tragen darf. Mechanismus: Streuung als Unsicherheitsbalken einschaetzen. Klausur-Tipp: Modell nur im Rahmen der Unsicherheit bestaetigen.
 
 ### Wirkungsgefuege / Modell
 
 Die Kette verbindet alle fuenf Begriffe zu einem Verfahren: Erkennen, Einordnen, Aufstellen, Loesen und Deuten. Jeder Begriff traegt genau einen Schritt, gemeinsam sichern sie die volle Punktzahl.
 
-Klausur-Satz: `Zufaellige Fehler streuen unsystematisch um die Ausgleichsgerade, waehrend systematische Fehler alle Messwerte in dieselbe Richtung verschieben.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Zufaellige Fehler streuen unsystematisch um die Ausgleichsgerade, waehrend systematische Fehler alle Messwerte in dieselbe Richtung verschieben.`
 
 ## Schritt 3 — entdecken: Wirkungskette hinter Diagramme lesen, zeichnen und Messfehler beurteilen
 EXPERIMENTELLE ERKUNDUNG (Sandbox, erst spielen, dann deuten):
@@ -79,9 +77,8 @@ Die Kausalkette laeuft von den Punkten ueber die Gerade zum Urteil: Zuerst traeg
 ```
 Formelkern: $v=\Delta s/\Delta t$
 
-Klausur-Satz: `Ein Diagramm ohne beschriftete Achsen samt Einheiten ist wertlos, und eine Messreihe darf nur im Rahmen der Messunsicherheit beurteilt werden.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+$$s = m\cdot t + b,\quad \bar{v} = \frac{\Delta s}{\Delta t}$$
+`Klausur-Satz: Ein Diagramm ohne beschriftete Achsen samt Einheiten ist wertlos, und eine Messreihe darf nur im Rahmen der Messunsicherheit beurteilt werden.`
 
 ## Anekdote & Fun-Fact
 **Anekdote / Fun-Fact (DE)**: Ein beruehmtes Beispiel fuer einen systematischen Fehler ist der Spiegel des Hubble-Weltraumteleskops: Beim Schleifen wurde ein Messgeraet falsch zusammengesetzt, sodass alle Kontrollmessungen in dieselbe Richtung abwichen und der Spiegel eine winzige, aber folgenreiche Fehlform bekam. Der Fehler fiel erst nach dem Start auf und liess sich nicht durch mehr Messen oder Mitteln beseitigen, sondern nur durch eine Korrektur an der Ursache.
@@ -89,7 +86,7 @@ Klausur-Satz: `Ein Diagramm ohne beschriftete Achsen samt Einheiten ist wertlos,
 **Bezug zum Konzept**: `Der Hubble-Spiegel zeigt, dass ein systematischer Fehler alle Messwerte gleichsinnig verschiebt und nur an seiner Ursache behoben werden kann, nicht durch Mittelung.`
 
 ## Schritt 4 — ausprobieren: Sandbox-Auftrag Parabel gegen Gerade
-Kontinuitaet: Vorher Physik-CN-Tricks-L1.md | Nachher Physik-Diagramme-L1.md. Krise dieser Episode: Sol-055 Krater-Rand-Gefaelle 24 Grad mit Eisglanz. Target: v0 = 275 m/s, a = 2.6 m/s2, Ziel s = 985 m.
+Kontinuitaet: Vorher Physik-CN-Tricks-L1.md | Nachher Physik-Diagramme-L1.md. Krise dieser Episode: Sol-055 Krater-Rand-Gefaelle 24 Grad mit Eisglanz. Zielgroessen: s-t-Messreihe, Ziel Geschwindigkeit aus Steigung
 
 BEISPIEL (Sandbox Level mit Werkzeug):
 
@@ -104,14 +101,12 @@ HILFE:
 
 MUSTERLOESUNG: Labor mit kleiner Streuung liefert Ausgleichsgerade mit $v = 0{,}50\,m/s$, Abweichungen streuen unsystematisch beidseitig. Verschiebung wuerde alle Punkte einseitig verlagern und systematische Ursache verraten. Da die Streuung unsystematisch bleibt, ist das Modell im Rahmen der Unsicherheit bestaetigt.
 
-Klausur-Satz: `Die Ausgleichsgerade ergibt eine Geschwindigkeit von etwa 0,50 m/s, und da die Abweichungen unsystematisch streuen, ist das Modell im Rahmen der Messunsicherheit haltbar.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Die Ausgleichsgerade ergibt eine Geschwindigkeit von etwa 0,50 m/s, und da die Abweichungen unsystematisch streuen, ist das Modell im Rahmen der Messunsicherheit haltbar.`
 
 ## Schritt 5 — ausprobieren: Duell der Verfahren Parabel gegen Gerade
 VERGLEICH (zwei Verfahren unterscheiden):
 
-VERGLEICH: Waehle zuerst das Verfahren — (i) Zufallsfehler-Verfahren (Punkte streuen musterlos beiderseits: Mittelung hilft) oder (ii) Systemfehler-Verfahren (alle Punkte gleichsinnig verschoben: Ursache an Geraet und Ablauf suchen) — dann loesen.
+VERGLEICH: (Weg A quantitativ-rechnerisch gegen Weg B qualitativ-strukturell): Waehle zuerst das Verfahren — (i) Zufallsfehler-Verfahren (Punkte streuen musterlos beiderseits: Mittelung hilft) oder (ii) Systemfehler-Verfahren (alle Punkte gleichsinnig verschoben: Ursache an Geraet und Ablauf suchen) — dann loesen.
 
 Weg A: Erst Verfahren waehlen, dann rechnen.
 
@@ -125,20 +120,16 @@ HILFE: A streut ohne Muster, also Verfahren (i) mit Mehrfachmessung. B ist gleic
 
 ANTWORT: A erfordert Verfahren (i): unsystematische Streuung bedeutet Zufallsfehler; Wiederholung und Mittelung loeschen positive gegen negative Abweichungen. B erfordert Verfahren (ii): der um $0{,}3\,\mathrm{s}$ verspaetete Start ist systematisch; der Mittelwert bleibt zu gross. Der Fehler muss an der Ursache behoben werden, etwa durch korrigierten Start oder Lichtschranke.
 
-Klausur-Satz: `Zufaellige Fehler werden durch Mittelung verkleinert, systematische Fehler dagegen nur durch das Beheben ihrer Ursache.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Zufaellige Fehler werden durch Mittelung verkleinert, systematische Fehler dagegen nur durch das Beheben ihrer Ursache.`
 
 ## Schritt 6 — check: Selbsttest zu Diagramme lesen, zeichnen und Messfehler beurteilen: Parabel gegen Gerade
 CHECK (Selbsttest, 3 Fragen mit Antworten):
 
-FRAGE: Welche drei Elemente muss ein sauberes Diagramm mindestens enthalten? | ANTWORT: Beschriftete Achsen mit Groesse, zugehoerige Einheiten sowie Punkte und Ausgleichsgerade.
-FRAGE: Woran erkennt man einen systematischen Fehler? | ANTWORT: Alle Werte weichen gleichsinnig von der Geraden ab, sodass Gerade oder Steigung verfalscht ist.
-FRAGE: Warum darf ein Messergebnis nicht exakt genannt werden? | ANTWORT: Weil jede Messung Unsicherheit traegt; das Ergebnis gilt nur in deren Rahmen.
+- FRAGE: Welche drei Elemente muss ein sauberes Diagramm mindestens enthalten? | ANTWORT: Beschriftete Achsen mit Groesse, zugehoerige Einheiten sowie Punkte und Ausgleichsgerade.
+- FRAGE: Woran erkennt man einen systematischen Fehler? | ANTWORT: Alle Werte weichen gleichsinnig von der Geraden ab, sodass Gerade oder Steigung verfalscht ist.
+- FRAGE: Warum darf ein Messergebnis nicht exakt genannt werden? | ANTWORT: Weil jede Messung Unsicherheit traegt; das Ergebnis gilt nur in deren Rahmen.
 
-Klausur-Satz: `Ein Messergebnis wird nur im Rahmen der Messunsicherheit beurteilt, wobei zufaellige und systematische Fehler getrennt benannt werden.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Ein Messergebnis wird nur im Rahmen der Messunsicherheit beurteilt, wobei zufaellige und systematische Fehler getrennt benannt werden.`
 
 ## Fehlvorstellung
 (kein Schritt; wird vom Parser automatisch erkannt und nicht mitgezaehlt)
@@ -155,7 +146,7 @@ ROLLE: Du bist Mitglied der Physik-AG und sollst fuer das Schuljahrbuch einen Ve
 SITUATION: Eine Gruppe hat eine Messreihe ($t$ in $\mathrm{s}$, $s$ in $\mathrm{m}$) aufgenommen; die Punkte streuen leicht um eine Gerade, und ein Schueler nennt das Ergebnis genau $0{,}50\,\mathrm{m/s}$. Beurteile in einer zusammenhaengenden Stellungnahme (ca. 150 Woerter) Darstellung, Geschwindigkeitsbestimmung und Aussagekraft mit Ausgleichsgerade und Messunsicherheit.
 RUBRIC (30 XP): Korrekte Darstellung mit Achsen, Einheit, Punkten und Gerade (5 XP) | Steigung als Geschwindigkeit mit Rechnung (10 XP) | Einordnung als zufaellig oder systematisch (10 XP) | Eingeschraenktes Fazit statt exakt (5 XP).
 
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Wer Ausgleichsgerade zeichnet, Fehlerarten trennt und Steigung mit Einheit deutet, erhaelt die volle Punktzahl.`
 
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Parabel gegen Gerade
 TAKEAWAY (Kernzusammenfassung):
@@ -167,4 +158,4 @@ REFLEXION (2 Fragen):
 1. Selbstbeobachtung: Welcher Schritt fiel schwerer — das Ablesen der Steigung aus der Ausgleichsgeraden (Schritt 4) oder die Unterscheidung von zufaelligem und systematischem Fehler im Vergleich (Schritt 5)?
 2. Planung: Beim naechsten Mal beschrifte ich zuerst die Achsen mit Einheiten und pruefe am Ende, ob meine Schlussfolgerung den Fehlerrahmen ausdruecklich nennt.
 
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Messen heisst streiten mit der Natur: Jeder Punkt braucht Fehlerbalken und Deutung.`

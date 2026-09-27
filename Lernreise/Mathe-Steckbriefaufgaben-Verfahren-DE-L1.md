@@ -13,7 +13,7 @@ version: Lesson-v3
 
 # Lernreise: Steckbriefaufgaben: Bedingungen in Gleichungen (L1, Ziel Klausur)
 
-<!-- Campaign: Optimierung | Episode 27/33 | Krise: Fracht-Flugzeug Schwerpunkt 31 Prozent MAC | Target: x0 = 4, h = 0.4, Target m = 12.99 | Tool: box-optimizer -->
+<!-- Campaign: Optimierung | Episode 27/33 | Krise: Fracht-Flugzeug Schwerpunkt 31 Prozent MAC | Zielgroessen: Ansatz ax^3+bx^2+cx+d mit 4 Bedingungen, Ziel Koeffizienten | Tool: box-optimizer -->
 
 ## Schritt 1 — entdecken: Ebenen ueber dem Hafen
 ZIELE (drei messbare Ziele dieser Lektion):
@@ -26,9 +26,9 @@ ZIELE (drei messbare Ziele dieser Lektion):
 
 ### Hook / Phaenomen
 
-Hook / Phaenomen (CAO-Log, Episode 27 von 33): Super-Engineering-Zentrale, Fracht-Flugzeug Schwerpunkt 31 Prozent MAC. Der Chief Algorithm Officer ruft: x0 = 4, h = 0.4, Target m = 12.99, die Assistentin meldet Rot-Alarm auf allen Screens. Genau hier entscheidet Steckbriefaufgaben: Bedingungen in Gleichungen ueber Freigabe oder Sperrung, ueber Kostenexplosion oder Rekordgewinn, ueber Kollision oder gruene Welle. Das Protokoll der Vorwoche (Mathe-Sekante-zu-Tangente-L1.md) legte die Spur, das naechste Audit (Mathe-Steckbriefaufgaben-Verfahren-L1.md) laesst keine Ausrede mehr zu. Die Messwerte streuen, die Kurven zittern, doch die Mathematik bleibt unbestechlich: Wer Sekante und Tangente, Maximum und Wendepunkt, Vektor und Ebene richtig liest, rettet das Projekt. In dieser Episode stellst du im Sandbox-Optimierer die Parameter so ein, dass alle Kennzahlen im gruenen Bereich landen. Beobachte zuerst das Phaenomen in Ruhe, benenne dann die Objekte mit exakter Notation, pruefe schliesslich das Ergebnis mit einer Gegenrechnung. Der folgende Weg fuehrt vom Alarmton zur sauberen Klausurloesung: erst das Phaenomen beobachten, dann die Begriffe sichern, dann das Modell rechnen und im Labor bestaetigen.
+Hook / Phaenomen: Gesucht ist eine Funktion, gegeben sind Spuren: Punkte, Extrema, Wendepunkte. Der **allgemeine Ansatz** rahmt die Suche, jede **Bedingungsuebersetzung** liefert eine Gleichung. **Extrem-** und **Wendebedingung** sind dabei nur Sonderfaelle derselben Uebersetzungskunst.
 
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Steckbriefe werden uebersetzt, nicht geraten: Jede Eigenschaft liefert genau eine Gleichung ans System.`
 
 ## Schritt 2 — entdecken: Ausruestungskiste der Algorithmus-Unit
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
@@ -39,19 +39,17 @@ Fuenf Begriffe trennen in dieser Lektion Alltagssprache von Klausursprache. Wer 
 
 ### Fachbegriffe & Definitionen
 
-- **Allgemeiner Ansatz:** Der Term $f(x)=ax^3+bx^2+cx+d$ enthaelt so viele Koeffizienten wie Bedingungen noetig sind. Mechanismus: Grad aus der Bedingungszahl ableiten und Ansatz aufstellen. Klausur-Punkt: Ansatz mit Gradbegruendung hinschreiben.
-- **Bedingungsuebersetzung:** Jede Eigenschaft wird zu genau einer Gleichung an $f$, $f'$ oder $f''$. Mechanismus: Punkte in $f$, Steigungen in $f'$, Kruemmung in $f''$ uebersetzen. Klausur-Punkt: Jede Uebersetzung als eigene Zeile zeigen.
-- **Extrembedingung:** Ein Extrempunkt liefert $f(x_0)=y_0$ plus $f'(x_0)=0$ als Doppelbedingung. Mechanismus: Punkt- und Steigungsgleichung getrennt aufstellen. Klausur-Punkt: Beide Gleichungen nennen und als Paar kennzeichnen.
-- **Wendebedingung:** Ein Wendepunkt liefert $f''(x_0)=0$ zusaetzlich zur Punktgleichung. Mechanismus: Zweite Ableitung bilden und null setzen. Klausur-Punkt: Kruemmungsbedingung explizit als $f''$-Gleichung zeigen.
-- **Loesungsverfahren:** Das Gleichungssystem wird per Einsetzung oder Addition schrittweise geloest. Mechanismus: System ordnen, Variable eliminieren und rueckwaerts einsetzen. Klausur-Punkt: Verfahren nennen und Probe durch Einsetzen anschliessen.
+- **Allgemeiner Ansatz:** Der Term $f(x)=ax^3+bx^2+cx+d$ enthaelt so viele Koeffizienten wie Bedingungen noetig sind. Sein Grad folgt aus der hoechsten genannten Eigenschaft. Mechanismus: Grad aus der Bedingungszahl ableiten und Ansatz aufstellen. Klausur-Tipp: Ansatz mit Gradbegruendung hinschreiben.
+- **Bedingungsuebersetzung:** Jede Eigenschaft wird zu genau einer Gleichung an $f$, $f'$ oder $f''$. Punkt heisst Funktionswert, Extremum heisst Ableitung null. Mechanismus: Punkte in $f$, Steigungen in $f'$, Kruemmung in $f''$ uebersetzen. Klausur-Tipp: Jede Uebersetzung als eigene Zeile zeigen.
+- **Extrembedingung:** Ein Extrempunkt liefert $f(x_0)=y_0$ plus $f'(x_0)=0$ als Doppelbedingung. Sie liefert zwei Gleichungen: Funktion und erste Ableitung. Mechanismus: Punkt- und Steigungsgleichung getrennt aufstellen. Klausur-Tipp: Beide Gleichungen nennen und als Paar kennzeichnen.
+- **Wendebedingung:** Ein Wendepunkt liefert $f''(x_0)=0$ zusaetzlich zur Punktgleichung. Sie liefert zwei Gleichungen: erste und zweite Ableitung. Mechanismus: Zweite Ableitung bilden und null setzen. Klausur-Tipp: Kruemmungsbedingung explizit als $f''$-Gleichung zeigen.
+- **Loesungsverfahren:** Das Gleichungssystem wird per Einsetzung oder Addition schrittweise geloest. Vier Bedingungen fordern vier Gleichungen und ein Loesungsverfahren. Mechanismus: System ordnen, Variable eliminieren und rueckwaerts einsetzen. Klausur-Tipp: Verfahren nennen und Probe durch Einsetzen anschliessen.
 
 ### Wirkungsgefuege / Modell
 
 Die Kette verbindet alle fuenf Begriffe zu einem Verfahren: Erkennen, Einordnen, Aufstellen, Loesen und Deuten. Jeder Begriff traegt genau einen Schritt, gemeinsam sichern sie die volle Punktzahl.
 
-Klausur-Satz: `Die Anzahl der unbekannten Koeffizienten muss der Anzahl der unabhaengigen Bedingungen entsprechen.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Die Anzahl der unbekannten Koeffizienten muss der Anzahl der unabhaengigen Bedingungen entsprechen.`
 
 ## Schritt 3 — entdecken: Wirkungskette hinter Steckbriefaufgaben: Bedingungen in Gleichungen
 EXPERIMENTELLE ERKUNDUNG (Sandbox, erst spielen, dann deuten):
@@ -80,9 +78,8 @@ Die Kausalkette laeuft vom Ansatz ueber die Bedingungen zur Loesung: Zuerst waeh
 ```
 Formelkern: $f$
 
-Klausur-Satz: `Jede geometrische Eigenschaft des Graphen entspricht genau einer Bedingung an f, f' oder f''.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+$$f(x) = ax^3+bx^2+cx+d,\quad \text{4 Bedingungen = 4 Gleichungen}$$
+`Klausur-Satz: Jede geometrische Eigenschaft des Graphen entspricht genau einer Bedingung an f, f' oder f''.`
 
 ## Anekdote & Fun-Fact
 Schon in der Song- und Yuan-Zeit loesten Mathematiker Aufgaben, indem sie eine unbekannte Groesse mit einem eigenen Zeichen ansetzten und daraus Gleichungen aufbauten. Diese Methode nannte man Tianyuanshu, die Kunst des himmlischen Elements. Im Kern ist sie nichts anderes als unser Ansatz mit unbekannten Koeffizienten.
@@ -90,7 +87,7 @@ Schon in der Song- und Yuan-Zeit loesten Mathematiker Aufgaben, indem sie eine u
 Bezug zum Konzept: `Ein Ansatz mit unbekannten Koeffizienten ist eine alte Idee: Aus Bedingungen werden Gleichungen gebaut.`
 
 ## Schritt 4 — ausprobieren: Sandbox-Auftrag Ebenen ueber dem Hafen
-Kontinuitaet: Vorher Mathe-Sekante-zu-Tangente-L1.md | Nachher Mathe-Steckbriefaufgaben-Verfahren-L1.md. Krise dieser Episode: Fracht-Flugzeug Schwerpunkt 31 Prozent MAC. Target: x0 = 4, h = 0.4, Target m = 12.99.
+Kontinuitaet: Vorher Mathe-Sekante-zu-Tangente-L1.md | Nachher Mathe-Steckbriefaufgaben-Verfahren-L1.md. Krise dieser Episode: Fracht-Flugzeug Schwerpunkt 31 Prozent MAC. Zielgroessen: Ansatz ax^3+bx^2+cx+d mit 4 Bedingungen, Ziel Koeffizienten
 
 BEISPIEL (Sandbox Level mit Werkzeug):
 
@@ -105,14 +102,12 @@ HILFE:
 
 MUSTERLOESUNG: Formelgeruest aus vier Bedingungen liefert das System mit der eindeutigen Loesung $a = -1$, $b = 3$, $c = -6$, $d = 4$, also $f(x) = -x^3+3x^2-6x+4$. Verfahren per Einsetzung mit Rueckwaertseinsetzen, Probe durch Einsetzen aller vier Bedingungen bestaetigt den Term. Aus den vier Bedingungen folgt das System mit eindeutiger Loesung, jede Eigenschaft entspricht genau einer Gleichung.
 
-Klausur-Satz: `Aus den vier Bedingungen folgt das LGS mit der eindeutigen Loesung a = -1, b = 3, c = -6, d = 4, also f(x) = -x^3 + 3x^2 - 6x + 4.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Aus den vier Bedingungen folgt das LGS mit der eindeutigen Loesung a = -1, b = 3, c = -6, d = 4, also f(x) = -x^3 + 3x^2 - 6x + 4.`
 
 ## Schritt 5 — ausprobieren: Duell der Verfahren Ebenen ueber dem Hafen
 VERGLEICH (Wahl des Verfahrens, A gegen B):
 
-VERGLEICH: Triff zuerst die Wahl des Verfahrens: (i) Kurvendiskussion (Term gegeben, Eigenschaften gesucht: ableiten, Extrema und Wende bestimmen) oder (ii) Rekonstruktion (Eigenschaften gegeben, Term gesucht: Ansatz mit LGS aus Bedingungen) > dann loesen.
+VERGLEICH: (Weg A quantitativ-rechnerisch gegen Weg B qualitativ-strukturell): Triff zuerst die Wahl des Verfahrens: (i) Kurvendiskussion (Term gegeben, Eigenschaften gesucht: ableiten, Extrema und Wende bestimmen) oder (ii) Rekonstruktion (Eigenschaften gegeben, Term gesucht: Ansatz mit LGS aus Bedingungen) > dann loesen.
 
 Weg A: Erst Verfahren waehlen, dann rechnen.
 
@@ -125,20 +120,16 @@ HILFE: Aufgabe A gibt die Funktion vor und fragt nach Eigenschaften, daher Verfa
 
 ANTWORT: A erfordert Verfahren (i): $f'(x) = 3x^2 - 12x + 9 = 0$ ergibt $x = 1$ und $x = 3$; mit $f''(1) = -6 < 0$ folgt $HP(1, 5)$ und mit $f''(3) = 6 > 0$ folgt $TP(3, 1)$. B erfordert Verfahren (ii): Ansatz $f(x) = ax^3 + bx^2 + cx + d$; $f'(0) = 0$ ergibt $c = 0$, $f(0) = 0$ ergibt $d = 0$, $f''(2) = 0$ ergibt $12a + 2b = 0$, also $b = -6a$, und $f(2) = -4$ ergibt $8a + 4b = -4$, also $2a + b = -1$. Einsetzen liefert $2a - 6a = -1$, also $a = 0{,}25$ und $b = -1{,}5$; damit $f(x) = 0{,}25x^3 - 1{,}5x^2$.
 
-Klausur-Satz: `Ist der Funktionsterm unbekannt, wird er ueber einen allgemeinen Ansatz und ein LGS aus den gegebenen Bedingungen rekonstruiert.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Ist der Funktionsterm unbekannt, wird er ueber einen allgemeinen Ansatz und ein LGS aus den gegebenen Bedingungen rekonstruiert.`
 
 ## Schritt 6 — check: Selbsttest zu Steckbriefaufgaben: Bedingungen in Gleichungen: Ebenen ueber dem Hafen
 CHECK (drei Fragen mit Antworten):
 
-FRAGE: Welchen Ansatz waehlt man fuer eine ganzrationale Funktion dritten Grades? | ANTWORT: $f(x) = ax^3 + bx^2 + cx + d$ mit vier unbekannten Koeffizienten.
-FRAGE: In welche Gleichung uebersetzt man einen Wendepunkt an der Stelle $x_0$? | ANTWORT: In die Bedingung $f''(x_0) = 0$ (bei Nachweis der Art zusaetzlich $f''' \ne 0$).
-FRAGE: Wie viele unabhaengige Bedingungen braucht man fuer einen Ansatz mit vier Koeffizienten? | ANTWORT: Genau vier, da jede unabhaengige Bedingung eine Gleichung fuer das LGS liefert.
+- FRAGE: Welchen Ansatz waehlt man fuer eine ganzrationale Funktion dritten Grades? | ANTWORT: $f(x) = ax^3 + bx^2 + cx + d$ mit vier unbekannten Koeffizienten.
+- FRAGE: In welche Gleichung uebersetzt man einen Wendepunkt an der Stelle $x_0$? | ANTWORT: In die Bedingung $f''(x_0) = 0$ (bei Nachweis der Art zusaetzlich $f''' \ne 0$).
+- FRAGE: Wie viele unabhaengige Bedingungen braucht man fuer einen Ansatz mit vier Koeffizienten? | ANTWORT: Genau vier, da jede unabhaengige Bedingung eine Gleichung fuer das LGS liefert.
 
-Klausur-Satz: `Ein Wendepunkt liefert die Bedingung f''(x0) = 0, ein Extrempunkt die Bedingungen f(x0) = y0 und f'(x0) = 0.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Ein Wendepunkt liefert die Bedingung f''(x0) = 0, ein Extrempunkt die Bedingungen f(x0) = y0 und f'(x0) = 0.`
 
 ## Fehlvorstellung
 (Kein Schritt; wird vom Parser uebersprungen.)
@@ -154,7 +145,7 @@ SITUATION: Das Profil eines Brueckenbogens soll naeherungsweise durch eine ganzr
 AUFGABE (aufstellen, AFB III): Verfasse eine zusammenhaengende Darstellung von etwa 150 Woertern mit Ansatz, Bedingungsuebersetzung, Loesung und Probe.
 RUBRIC (30 XP): Korrekter Ansatz $f(x) = ax^3 + bx^2 + cx + d$ (5 XP) | Uebersetzung der Bedingungen ($f(0) = 0$, $f'(0) = 0$, $f(4) = 16$, $f'(4) = 0$) (10 XP) | Loesung des LGS mit Ergebnis (10 XP) | Probe und Antwortsatz im Sachzusammenhang (5 XP).
 
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Wer Ansatz, Uebersetzungen, Loesungsweg und Kontrolle zeigt, erhaelt die volle Punktzahl.`
 
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Ebenen ueber dem Hafen
 TAKEAWAY (Kernbotschaft in einem Kasten):
@@ -167,4 +158,4 @@ REFLEXION (zwei Fragen):
 1. Welcher Schritt fiel schwerer: das Uebersetzen der Bedingungen (Schritt 4) oder das Loesen des LGS (Schritt 5)?
 2. Beim naechsten Mal zaehle ich zuerst die Bedingungen und vergleiche sie mit der Anzahl der Koeffizienten, bevor ich den Ansatz waehle.
 
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Uebersetzen ist die halbe Loesung: Wer Bedingungen sauber liest, rechnet nur noch ab.`

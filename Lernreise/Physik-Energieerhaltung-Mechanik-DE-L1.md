@@ -13,7 +13,7 @@ version: Lesson-v3
 
 # Lernreise: Mechanische Energieerhaltung (L1, Ziel Klausur)
 
-<!-- Campaign: Mars-Mission | Episode 7/28 | Krise: Sol-061 Batterie-Notstand: nur 17 Prozent Ladung | Target: v0 = 289 m/s, a = 2.9 m/s2, Ziel s = 1059 m | Tool: schiefe-ebene -->
+<!-- Campaign: Mars-Mission | Episode 7/28 | Krise: Sol-061 Batterie-Notstand: nur 17 Prozent Ladung | Zielgroessen: Rampe mit Hoehe h, Ziel Geschwindigkeit aus Energiebilanz | Tool: schiefe-ebene -->
 
 ## Schritt 1 — entdecken: Energiebilanz des Abstiegs
 ZIELE (drei messbare Ziele dieser Lektion):
@@ -26,9 +26,9 @@ ZIELE (drei messbare Ziele dieser Lektion):
 
 ### Hook / Phaenomen
 
-Hook / Phaenomen (Sol-Logbuch, Episode 7 von 28): Mars-Anflug, Sol-061 Batterie-Notstand: nur 17 Prozent Ladung. Navigatorin Lena meldet: v0 = 289 m/s, a = 2.9 m/s2, Ziel s = 1059 m, Mechaniker Tom ruft: Halte die Kurve! Der Bordcomputer geht auf Rot, das Funkgeraet rauscht, die Crew haelt den Atem an. Genau hier entscheidet Mechanische Energieerhaltung ueber Landung oder Absturz, ueber Festfahren oder Weiterfahrt, ueber Andocken oder Abprall. Das Logbuch des vorherigen Sols (Physik-Diagramme-L1.md) warnte bereits vor diesem Moment, und das naechste Fenster (Physik-Energieerhaltung-Mechanik-L1.md) oeffnet sich nur, wenn diese Aufgabe geloest wird. Die Sensoren streuen, die Diagramme zittern, doch die Physik bleibt unbestechlich: Wer Steigung und Flaeche, Kraft und Gegenkraft, Schwung und Stoss richtig liest, rettet die Mission. In dieser Episode stellst du im Sandbox-Labor die Brems- und Gleitzahlen so ein, dass die Kapsel sicher durchkommt. Beobachte zuerst das Phaenomen in Ruhe, benenne dann die Groessen mit exakten Einheiten, pruefe schliesslich die Bilanz mit einer Gegenrechnung. Der folgende Weg fuehrt vom Alarmton zur sauberen Klausurloesung: erst das Phaenomen beobachten, dann die Begriffe sichern, dann das Modell rechnen und im Labor bestaetigen.
+Hook / Phaenomen: Oben schnell nichts, unten alles Tempo: Die **Lageenergie** verwandelt sich restlos in **Bewegungsenergie**. Die **Energiebilanz** schreibt jede Umwandlung auf, die **Energieerhaltung** buergt fuer die Summe. Reibung ist der einzige Steuerdieb in dieser Bilanz.
 
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Energie geht nicht verloren, sie wechselt nur das Konto: Lage plus Bewegung plus Spannung bleiben konstant.`
 
 ## Schritt 2 — entdecken: Ausruestungskiste der Mars-Crew
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
@@ -39,19 +39,17 @@ Fuenf Begriffe trennen in dieser Lektion Alltagssprache von Klausursprache. Wer 
 
 ### Fachbegriffe & Definitionen
 
-- **Lageenergie:** Die Energie $E_{pot}=mgh$ speichert gehobene Masse als stille Reserve. Mechanismus: Masse, Hoehe und $g$ multiplizieren. Klausur-Punkt: Nullniveau nennen und $h$ exakt abmessen.
-- **Bewegungsenergie:** Die Energie $E_{kin}=\frac12mv^2$ misst Tempo als quadratsensible Groesse. Mechanismus: Tempo quadrieren und halbieren mal Masse. Klausur-Punkt: Verdopplung von $v$ als Vervierfachung deuten.
-- **Spannenergie:** Die Energie $E_{spann}=\frac12Ds^2$ speichert gedehnte Federn als Rueckstellreserve. Mechanismus: Haerte mal Wegquadrat halbieren. Klausur-Punkt: $s$ als Auslenkung aus der Ruhelage definieren.
-- **Energiebilanz:** Die Gleichung Anfang gleich Ende plus Reibungsverlust steuert jede Aufgabe. Mechanismus: Alle Formen vor und nach auflisten und gleichsetzen. Klausur-Punkt: Bilanz vollständig hinschreiben und dissipierte Energie abziehen.
-- **Energieerhaltung:** Ohne Reibung bleibt die Summe aus allen Formen konstant, die Masse kuerzt sich oft heraus. Mechanismus: $mgh=\frac12mv^2$ nach $v$ aufloesen. Klausur-Punkt: $v=\sqrt{2gh}$ herleiten und Wegunabhaengigkeit nennen.
+- **Lageenergie:** Die Energie $E_{pot}=mgh$ speichert gehobene Masse als stille Reserve. Sie zaehlt ab einem frei gewaehlten Nullniveau nach oben. Mechanismus: Masse, Hoehe und $g$ multiplizieren. Klausur-Tipp: Nullniveau nennen und $h$ exakt abmessen.
+- **Bewegungsenergie:** Die Energie $E_{kin}=\frac12mv^2$ misst Tempo als quadratsensible Groesse. Sie waechst quadratisch mit der Geschwindigkeit. Mechanismus: Tempo quadrieren und halbieren mal Masse. Klausur-Tipp: Verdopplung von $v$ als Vervierfachung deuten.
+- **Spannenergie:** Die Energie $E_{spann}=\frac12Ds^2$ speichert gedehnte Federn als Rueckstellreserve. Gespannte Federn und Seile speichern Arbeit als Spannung. Mechanismus: Haerte mal Wegquadrat halbieren. Klausur-Tipp: $s$ als Auslenkung aus der Ruhelage definieren.
+- **Energiebilanz:** Die Gleichung Anfang gleich Ende plus Reibungsverlust steuert jede Aufgabe. Anfangssumme gleich Endsumme plus eventuelle Reibungsarbeit. Mechanismus: Alle Formen vor und nach auflisten und gleichsetzen. Klausur-Tipp: Bilanz vollständig hinschreiben und dissipierte Energie abziehen.
+- **Energieerhaltung:** Ohne Reibung bleibt die Summe aus allen Formen konstant, die Masse kuerzt sich oft heraus. Im abgeschlossenen System bleibt die Gesamtsumme exakt konstant. Mechanismus: $mgh=\frac12mv^2$ nach $v$ aufloesen. Klausur-Tipp: $v=\sqrt{2gh}$ herleiten und Wegunabhaengigkeit nennen.
 
 ### Wirkungsgefuege / Modell
 
 Die Kette verbindet alle fuenf Begriffe zu einem Verfahren: Erkennen, Einordnen, Aufstellen, Loesen und Deuten. Jeder Begriff traegt genau einen Schritt, gemeinsam sichern sie die volle Punktzahl.
 
-Klausur-Satz: `Bei der Energiebilanz werden alle Energieformen vor und nach dem Vorgang aufgefuehrt; bei Reibung wird die dissipierte Energie abgezogen.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Bei der Energiebilanz werden alle Energieformen vor und nach dem Vorgang aufgefuehrt; bei Reibung wird die dissipierte Energie abgezogen.`
 
 ## Schritt 3 — entdecken: Wirkungskette hinter Mechanische Energieerhaltung
 EXPERIMENTELLE ERKUNDUNG (Sandbox, erst spielen, dann deuten):
@@ -79,9 +77,8 @@ Die Kausalkette laeuft von der Hoehe ueber die Umwandlung zum Tempo: Zuerst list
 ```
 Formelkern: $E_{pot}=mgh$
 
-Klausur-Satz: `Da beim reibungsfreien Herabgleiten die gesamte Lageenergie in Bewegungsenergie umgewandelt wird, gilt m*g*h = 0.5*m*v^2 und damit v = sqrt(2*g*h).`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+$$E = mgh+\frac{1}{2}mv^2 = \text{const}$$
+`Klausur-Satz: Da beim reibungsfreien Herabgleiten die gesamte Lageenergie in Bewegungsenergie umgewandelt wird, gilt m*g*h = 0.5*m*v^2 und damit v = sqrt(2*g*h).`
 
 ## Anekdote & Fun-Fact
 **Anekdote / Fun-Fact (DE)**: Dass Energie weder erzeugt noch vernichtet, sondern nur umgewandelt wird, wurde nicht von einem einzigen Genie entdeckt: In den 1840er Jahren formulierten mehrere Forscher in verschiedenen Laendern diesen Satz fast gleichzeitig und unabhaengig voneinander — ein Arzt, ein Brauereibesitzer und ein Physiologe kamen auf dieselbe Idee. So entstand ein Naturgesetz, das heute zu den tragenden Saeulen der gesamten Physik gehoert.
@@ -89,7 +86,7 @@ Klausur-Satz: `Da beim reibungsfreien Herabgleiten die gesamte Lageenergie in Be
 **Bezug zum Konzept**: `Die Energieerhaltung wurde unabhaengig von mehreren Forschern gefunden, weil sie in sehr vielen Systemen gilt — genau darum ist E_vor = E_nach so universell.`
 
 ## Schritt 4 — ausprobieren: Sandbox-Auftrag Energiebilanz des Abstiegs
-Kontinuitaet: Vorher Physik-Diagramme-L1.md | Nachher Physik-Energieerhaltung-Mechanik-L1.md. Krise dieser Episode: Sol-061 Batterie-Notstand: nur 17 Prozent Ladung. Target: v0 = 289 m/s, a = 2.9 m/s2, Ziel s = 1059 m.
+Kontinuitaet: Vorher Physik-Diagramme-L1.md | Nachher Physik-Energieerhaltung-Mechanik-L1.md. Krise dieser Episode: Sol-061 Batterie-Notstand: nur 17 Prozent Ladung. Zielgroessen: Rampe mit Hoehe h, Ziel Geschwindigkeit aus Energiebilanz
 
 BEISPIEL (Sandbox Level mit Werkzeug):
 
@@ -104,14 +101,12 @@ HILFE:
 
 MUSTERLOESUNG: Labor zeigt Tempo am Fuss $v = 4{,}0\,m/s$ und maximale Federspannung $s = 0{,}40\,m$ bei konstanter Summe. Rechnung $v=\sqrt{2gh}=4{,}0\,m/s$ und $s$ aus $\frac12mv^2=\frac12Ds^2$ bestaetigen das Labor. Reibung wuerde als fehlende Energie in der Bilanz erscheinen und Tempo sowie Spannung senken.
 
-Klausur-Satz: `Aus der Energieerhaltung folgt fuer den Wagen am Fuss der Rampe v = 4,0 m/s und fuer die maximale Federspannung s = 0,40 m.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Aus der Energieerhaltung folgt fuer den Wagen am Fuss der Rampe v = 4,0 m/s und fuer die maximale Federspannung s = 0,40 m.`
 
 ## Schritt 5 — ausprobieren: Duell der Verfahren Energiebilanz des Abstiegs
 VERGLEICH (zwei Verfahren unterscheiden):
 
-VERGLEICH: Waehle zuerst das Verfahren — (i) Energieansatz (nur $v$, $h$ oder $s$ gesucht, Kraft veraenderlich oder mehrstufig: $E_{vor} = E_{nach}$) oder (ii) Kraftansatz ($a$, $t$, Richtung oder innere Kraft gesucht: $F_{res} = m \cdot a$ schrittweise) — dann loesen.
+VERGLEICH: (Weg A quantitativ-rechnerisch gegen Weg B qualitativ-strukturell): Waehle zuerst das Verfahren — (i) Energieansatz (nur $v$, $h$ oder $s$ gesucht, Kraft veraenderlich oder mehrstufig: $E_{vor} = E_{nach}$) oder (ii) Kraftansatz ($a$, $t$, Richtung oder innere Kraft gesucht: $F_{res} = m \cdot a$ schrittweise) — dann loesen.
 
 Weg A: Erst Verfahren waehlen, dann rechnen.
 
@@ -125,20 +120,16 @@ HILFE: A fragt nur Geschwindigkeit ohne Zeit, also Verfahren (i) mit $m \cdot g 
 
 ANTWORT: A erfordert Verfahren (i): ohne Reibung genuegt $m \cdot g \cdot L = 0{,}5 \cdot m \cdot v^2$, also $v = \sqrt{2 \cdot g \cdot L} = \sqrt{2 \cdot 10 \cdot 1{,}25} = 5{,}0\,\mathrm{m/s}$; Winkel und Bahn sind irrelevant. B erfordert Verfahren (ii): die Energiegleichung enthaelt keine Zeit, daher muss ueber $a$ laengs der Bahn und Kinematik gerechnet werden.
 
-Klausur-Satz: `Fragt die Aufgabe nur nach einer Geschwindigkeit oder Hoehe, fuehrt der Energieansatz ohne Zeit und ohne Winkel zum Ziel; ist dagegen eine Zeit gesucht, muss der Kraftansatz verwendet werden.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Fragt die Aufgabe nur nach einer Geschwindigkeit oder Hoehe, fuehrt der Energieansatz ohne Zeit und ohne Winkel zum Ziel; ist dagegen eine Zeit gesucht, muss der Kraftansatz verwendet werden.`
 
 ## Schritt 6 — check: Selbsttest zu Mechanische Energieerhaltung: Energiebilanz des Abstiegs
 CHECK (Selbsttest, 3 Fragen mit Antworten):
 
-FRAGE: Unter welcher Bedingung gilt die mechanische Energieerhaltung? | ANTWORT: Wenn nur konservative Kraefte wie Gewicht oder Feder wirken, also keine Reibung Energie entzieht.
-FRAGE: Wie lauten die drei Formeln der mechanischen Energie? | ANTWORT: $E_{kin} = 0{,}5 \cdot m \cdot v^2$, $E_{pot} = m \cdot g \cdot h$, $E_{spann} = 0{,}5 \cdot D \cdot s^2$.
-FRAGE: Warum faellt in $v = \sqrt{2 \cdot g \cdot h}$ die Masse heraus? | ANTWORT: Weil $m$ in $m \cdot g \cdot h$ und in $0{,}5 \cdot m \cdot v^2$ als Faktor steht und beidseitig kuertzt.
+- FRAGE: Unter welcher Bedingung gilt die mechanische Energieerhaltung? | ANTWORT: Wenn nur konservative Kraefte wie Gewicht oder Feder wirken, also keine Reibung Energie entzieht.
+- FRAGE: Wie lauten die drei Formeln der mechanischen Energie? | ANTWORT: $E_{kin} = 0{,}5 \cdot m \cdot v^2$, $E_{pot} = m \cdot g \cdot h$, $E_{spann} = 0{,}5 \cdot D \cdot s^2$.
+- FRAGE: Warum faellt in $v = \sqrt{2 \cdot g \cdot h}$ die Masse heraus? | ANTWORT: Weil $m$ in $m \cdot g \cdot h$ und in $0{,}5 \cdot m \cdot v^2$ als Faktor steht und beidseitig kuertzt.
 
-Klausur-Satz: `Bei reibungsfreien Vorgaengen sind Anfangs- und Endenergie gleich, sodass die Masse oft herausfaellt und die Endgeschwindigkeit nur von der Hoehe abhaengt.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Bei reibungsfreien Vorgaengen sind Anfangs- und Endenergie gleich, sodass die Masse oft herausfaellt und die Endgeschwindigkeit nur von der Hoehe abhaengt.`
 
 ## Fehlvorstellung
 (kein Schritt; wird vom Parser automatisch erkannt und nicht mitgezaehlt)
@@ -155,7 +146,7 @@ ROLLE: Du bist Praktikumsbetreuerin im Physikpraktikum der EF und sollst eine Ha
 SITUATION: Ein Skateboarder ($m = 60\,\mathrm{kg}$) startet aus der Ruhe am Rand einer reibungsfreien Halfpipe ($h = 1{,}8\,\mathrm{m}$ ueber Tiefpunkt) ohne weiteren Antrieb. Beurteile in einer zusammenhaengenden Stellungnahme (ca. 150 Woerter), welche Geschwindigkeit er unten erreicht und warum Energie hier sinnvoller ist als Kraft. Nutze $g = 10\,\mathrm{m/s^2}$.
 RUBRIC (30 XP): Bilanz $m \cdot g \cdot h = 0{,}5 \cdot m \cdot v^2$ mit Nullhoehe (5 XP) | Rechnung $v = \sqrt{2 \cdot g \cdot h} = 6{,}0\,\mathrm{m/s}$ mit Einheit (10 XP) | Begruendung der Massenunabhaengigkeit (10 XP) | Urteil zum Vorzug von Energie bei veraenderlicher Richtung ohne Zeitfrage (5 XP).
 
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Wer Energiebilanz aufstellt, Nullniveau waehlt, umstellt und Reibungsverluste diskutiert, erhaelt die volle Punktzahl.`
 
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Energiebilanz des Abstiegs
 TAKEAWAY (Kernzusammenfassung):
@@ -167,4 +158,4 @@ REFLEXION (2 Fragen):
 1. Selbstbeobachtung: Welcher Schritt fiel schwerer — die Bilanz mit Feder (Schritt 4) oder die Entscheidung zwischen Energie und Kraft im Vergleich (Schritt 5)?
 2. Planung: Beim naechsten Mal pruefe ich zuerst, ob nach einer Zeit gefragt wird und ob Reibung auftritt, bevor ich den Ansatz waehle.
 
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Erhaltung heisst Buchhaltung: Wer alle Konten fuehrt, findet jeden Fehler selbst.`

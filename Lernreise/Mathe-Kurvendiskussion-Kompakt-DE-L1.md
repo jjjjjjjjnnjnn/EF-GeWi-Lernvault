@@ -13,7 +13,7 @@ version: Lesson-v3
 
 # Lernreise: Monotonie und Extrempunkte kompakt (L1, Ziel Klausur)
 
-<!-- Campaign: Optimierung | Episode 19/33 | Krise: Wasserrohr-Druck 5,4 bar Leck | Target: x0 = 6, h = 0.4, Target m = 10.03 | Tool: box-optimizer -->
+<!-- Campaign: Optimierung | Episode 19/33 | Krise: Wasserrohr-Druck 5,4 bar Leck | Zielgroessen: f mit f'(x) = 3x^2-12x+9, Ziele Extrema bei 1 und 3 | Tool: box-optimizer -->
 
 ## Schritt 1 — entdecken: Wendepunkt der Produktion
 ZIELE (drei messbare Ziele dieser Lektion):
@@ -26,9 +26,9 @@ ZIELE (drei messbare Ziele dieser Lektion):
 
 ### Hook / Phaenomen
 
-Hook / Phaenomen (CAO-Log, Episode 19 von 33): Super-Engineering-Zentrale, Wasserrohr-Druck 5,4 bar Leck. Der Chief Algorithm Officer ruft: x0 = 6, h = 0.4, Target m = 10.03, die Assistentin meldet Rot-Alarm auf allen Screens. Genau hier entscheidet Monotonie und Extrempunkte kompakt ueber Freigabe oder Sperrung, ueber Kostenexplosion oder Rekordgewinn, ueber Kollision oder gruene Welle. Das Protokoll der Vorwoche (Mathe-Kosinussatz-Orthogonalitaet-L1.md) legte die Spur, das naechste Audit (Mathe-Kurvendiskussion-Kompakt-L1.md) laesst keine Ausrede mehr zu. Die Messwerte streuen, die Kurven zittern, doch die Mathematik bleibt unbestechlich: Wer Sekante und Tangente, Maximum und Wendepunkt, Vektor und Ebene richtig liest, rettet das Projekt. In dieser Episode stellst du im Sandbox-Optimierer die Parameter so ein, dass alle Kennzahlen im gruenen Bereich landen. Beobachte zuerst das Phaenomen in Ruhe, benenne dann die Objekte mit exakter Notation, pruefe schliesslich das Ergebnis mit einer Gegenrechnung. Der folgende Weg fuehrt vom Alarmton zur sauberen Klausurloesung: erst das Phaenomen beobachten, dann die Begriffe sichern, dann das Modell rechnen und im Labor bestaetigen.
+Hook / Phaenomen: Steigen, fallen, drehen: Der Graph erzaehlt seine Geschichte ueber die **Ableitungen**. Wo f Strich null wird, wartet ein **Extremum**; das **Vorzeichen** davor und danach verrraet Hoch oder Tief. Die **Monotonie** dazwischen folgt ohne eine einzige Wertetabelle.
 
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Die Kurvendiskussion liest den Graphen aus seinen Ableitungen: Nullstellen von f Strich plus Vorzeichenwechsel geben Hoch und Tief.`
 
 ## Schritt 2 — entdecken: Ausruestungskiste der Algorithmus-Unit
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
@@ -39,19 +39,17 @@ Fuenf Begriffe trennen in dieser Lektion Alltagssprache von Klausursprache. Wer 
 
 ### Fachbegriffe & Definitionen
 
-- **Extremalbedingung:** Die Gleichung $f'(x_0) = 0$ markiert alle Kandidaten fuer Hoch- und Tiefpunkte. Mechanismus: Erste Ableitung bilden und null setzen. Klausur-Punkt: Kandidaten vollständig bestimmen und als Kandidaten bezeichnen.
-- **Vorzeichenwechsel:** Wechselt $f'$ von plus nach minus, liegt ein Maximum vor, umgekehrt ein Minimum. Mechanismus: Vorzeichentabelle links und rechts der Kandidaten aufstellen. Klausur-Punkt: Tabelle zeigen und Wechselrichtung nennen.
-- **Zweite Ableitung:** Das Vorzeichen von $f''(x_0)$ entscheidet die Art: negativ bedeutet Hoch, positiv bedeutet Tief. Mechanismus: Kandidaten in $f''$ einsetzen und Vorzeichen lesen. Klausur-Punkt: Kriterium nennen und Ergebnis zuordnen.
-- **Monotonie:** Das Vorzeichen von $f'$ steuert Steigen und Fallen auf ganzen Intervallen. Mechanismus: Intervalle zwischen den Nullstellen von $f'$ testen. Klausur-Punkt: Intervalle angeben und Monotonie je Intervall nennen.
-- **y-Wert:** Der Funktionswert $f(x_0)$ vollendet jeden Extrempunkt zu Koordinaten. Mechanismus: Kandidaten in $f$ einsetzen und Punkte notieren. Klausur-Punkt: Punkte als HP und TP vollständig mit Koordinaten angeben.
+- **Extremalbedingung:** Die Gleichung $f'(x_0) = 0$ markiert alle Kandidaten fuer Hoch- und Tiefpunkte. Sie liefert Kandidaten, erst der Vorzeichenwechsel adelt sie zu Extrema. Mechanismus: Erste Ableitung bilden und null setzen. Klausur-Tipp: Kandidaten vollständig bestimmen und als Kandidaten bezeichnen.
+- **Vorzeichenwechsel:** Wechselt $f'$ von plus nach minus, liegt ein Maximum vor, umgekehrt ein Minimum. Wechsel von plus nach minus bedeutet Hochpunkt, umgekehrt Tiefpunkt. Mechanismus: Vorzeichentabelle links und rechts der Kandidaten aufstellen. Klausur-Tipp: Tabelle zeigen und Wechselrichtung nennen.
+- **Zweite Ableitung:** Das Vorzeichen von $f''(x_0)$ entscheidet die Art: negativ bedeutet Hoch, positiv bedeutet Tief. Ihr Vorzeichen misst die Kruemmung und bestaetigt die Extremart. Mechanismus: Kandidaten in $f''$ einsetzen und Vorzeichen lesen. Klausur-Tipp: Kriterium nennen und Ergebnis zuordnen.
+- **Monotonie:** Das Vorzeichen von $f'$ steuert Steigen und Fallen auf ganzen Intervallen. Zwischen den Extrema steigt oder faellt der Graph streng monoton. Mechanismus: Intervalle zwischen den Nullstellen von $f'$ testen. Klausur-Tipp: Intervalle angeben und Monotonie je Intervall nennen.
+- **y-Wert:** Der Funktionswert $f(x_0)$ vollendet jeden Extrempunkt zu Koordinaten. Erst der y-Wert macht aus der Stelle einen vollstaendigen Punkt. Mechanismus: Kandidaten in $f$ einsetzen und Punkte notieren. Klausur-Tipp: Punkte als HP und TP vollständig mit Koordinaten angeben.
 
 ### Wirkungsgefuege / Modell
 
 Die Kette verbindet alle fuenf Begriffe zu einem Verfahren: Erkennen, Einordnen, Aufstellen, Loesen und Deuten. Jeder Begriff traegt genau einen Schritt, gemeinsam sichern sie die volle Punktzahl.
 
-Klausur-Satz: `Die Monotonie ergibt sich aus dem Vorzeichen der ersten Ableitung, die Art des Extremums aus dem Vorzeichen der zweiten Ableitung.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Die Monotonie ergibt sich aus dem Vorzeichen der ersten Ableitung, die Art des Extremums aus dem Vorzeichen der zweiten Ableitung.`
 
 ## Schritt 3 — entdecken: Wirkungskette hinter Monotonie und Extrempunkte kompakt
 EXPERIMENTELLE ERKUNDUNG (Sandbox, erst spielen, dann deuten):
@@ -79,9 +77,8 @@ Die Kausalkette laeuft von der Ableitung ueber das Vorzeichen zum Punkt: Zuerst 
 ```
 Formelkern: $f'(x)=0$
 
-Klausur-Satz: `Wechselt f' an der Stelle x0 das Vorzeichen von plus nach minus, so liegt dort ein lokales Maximum vor.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+$$f'(x) = 3(x-1)(x-3),\quad f''(x) = 6x-12$$
+`Klausur-Satz: Wechselt f' an der Stelle x0 das Vorzeichen von plus nach minus, so liegt dort ein lokales Maximum vor.`
 
 ## Anekdote & Fun-Fact
 Stell dir vor, du stehst auf dem Gipfel eines kleinen Berges: Rundherum geht es nur nach unten, also fuehlt sich der Punkt wie der hoechste der Umgebung an. Trotzdem ist dieser Gipfel nicht der hoechste Punkt der Erde. Genauso ist ein Hochpunkt einer Funktion nur ein lokales Maximum: Weiter weg kann die Funktion deutlich groessere Werte annehmen.
@@ -89,7 +86,7 @@ Stell dir vor, du stehst auf dem Gipfel eines kleinen Berges: Rundherum geht es 
 Bezug zum Konzept: `Ein Hochpunkt ist nur ein lokales Maximum; das globale Maximum muss nicht dort liegen.`
 
 ## Schritt 4 — ausprobieren: Sandbox-Auftrag Wendepunkt der Produktion
-Kontinuitaet: Vorher Mathe-Kosinussatz-Orthogonalitaet-L1.md | Nachher Mathe-Kurvendiskussion-Kompakt-L1.md. Krise dieser Episode: Wasserrohr-Druck 5,4 bar Leck. Target: x0 = 6, h = 0.4, Target m = 10.03.
+Kontinuitaet: Vorher Mathe-Kosinussatz-Orthogonalitaet-L1.md | Nachher Mathe-Kurvendiskussion-Kompakt-L1.md. Krise dieser Episode: Wasserrohr-Druck 5,4 bar Leck. Zielgroessen: f mit f'(x) = 3x^2-12x+9, Ziele Extrema bei 1 und 3
 
 BEISPIEL (Sandbox Level mit Werkzeug):
 
@@ -104,14 +101,12 @@ HILFE:
 
 MUSTERLOESUNG: Sandbox zeigt Kandidaten bei $x = 1$ mit Wechsel plus nach minus und bei $x = 3$ mit Wechsel minus nach plus. Rechnung $f'(1) = 0$ mit $f''(1) < 0$ liefert HP(1|5), $f'(3) = 0$ mit $f''(3) > 0$ liefert TP(3|1). Die Vorzeichentabelle bestaetigt Maximum bei $x = 1$ und Minimum bei $x = 3$, beide Punkte sind vollständig mit y-Werten angegeben.
 
-Klausur-Satz: `Der Graph besitzt bei x = 1 ein lokales Maximum mit HP(1 | 5) und bei x = 3 ein lokales Minimum mit TP(3 | 1).`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Der Graph besitzt bei x = 1 ein lokales Maximum mit HP(1 | 5) und bei x = 3 ein lokales Minimum mit TP(3 | 1).`
 
 ## Schritt 5 — ausprobieren: Duell der Verfahren Wendepunkt der Produktion
 VERGLEICH (Wahl des Verfahrens, A gegen B):
 
-VERGLEICH: Triff zuerst die Wahl des Verfahrens: (i) $f''$-Kriterium (zweite Ableitung gut berechenbar und an der Stelle ungleich null) oder (ii) VZW-Kriterium (Vorzeichentabelle, wenn $f''(x_0) = 0$ gilt oder die zweite Ableitung zu aufwendig ist) > dann rechnen.
+VERGLEICH: (Weg A quantitativ-rechnerisch gegen Weg B qualitativ-strukturell): Triff zuerst die Wahl des Verfahrens: (i) $f''$-Kriterium (zweite Ableitung gut berechenbar und an der Stelle ungleich null) oder (ii) VZW-Kriterium (Vorzeichentabelle, wenn $f''(x_0) = 0$ gilt oder die zweite Ableitung zu aufwendig ist) > dann rechnen.
 
 Weg A: Erst Verfahren waehlen, dann rechnen.
 
@@ -124,20 +119,16 @@ HILFE: Bei A ist $f''(x) = 6x - 12$ einfach und $f''(3) = 6 \ne 0$, daher Verfah
 
 ANTWORT: A erfordert Verfahren (i): $f''(3) = 6 > 0$, also ein lokales Minimum ($TP(3, 1)$). B erfordert Verfahren (ii): Da $g''(0) = 0$ nichts entscheidet, wird $f'$ betrachtet; $g'(x) = 4x^3$ wechselt bei $x = 0$ das Vorzeichen von minus nach plus, also liegt dort ein lokales Minimum mit $g(0) = 0$ vor.
 
-Klausur-Satz: `Ist f''(x0) ungleich 0, so entscheidet ihr Vorzeichen die Art; ist f''(x0) = 0, so muss der Vorzeichenwechsel von f' geprueft werden.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Ist f''(x0) ungleich 0, so entscheidet ihr Vorzeichen die Art; ist f''(x0) = 0, so muss der Vorzeichenwechsel von f' geprueft werden.`
 
 ## Schritt 6 — check: Selbsttest zu Monotonie und Extrempunkte kompakt: Wendepunkt der Produktion
 CHECK (drei Fragen mit Antworten):
 
-FRAGE: Welche Bedingung ist notwendig fuer einen lokalen Extrempunkt? | ANTWORT: $f'(x_0) = 0$, das heisst eine waagerechte Tangente an der Stelle $x_0$.
-FRAGE: Wie unterscheidet man mit der zweiten Ableitung ein Maximum von einem Minimum? | ANTWORT: $f''(x_0) < 0$ bedeutet ein lokales Maximum, $f''(x_0) > 0$ ein lokales Minimum.
-FRAGE: Warum ist $f'(x_0) = 0$ allein kein Beweis fuer ein Extremum? | ANTWORT: Weil bei einem Sattelpunkt ebenfalls $f'(x_0) = 0$ gilt; erst ein Vorzeichenwechsel von $f'$ sichert ein Extremum.
+- FRAGE: Welche Bedingung ist notwendig fuer einen lokalen Extrempunkt? | ANTWORT: $f'(x_0) = 0$, das heisst eine waagerechte Tangente an der Stelle $x_0$.
+- FRAGE: Wie unterscheidet man mit der zweiten Ableitung ein Maximum von einem Minimum? | ANTWORT: $f''(x_0) < 0$ bedeutet ein lokales Maximum, $f''(x_0) > 0$ ein lokales Minimum.
+- FRAGE: Warum ist $f'(x_0) = 0$ allein kein Beweis fuer ein Extremum? | ANTWORT: Weil bei einem Sattelpunkt ebenfalls $f'(x_0) = 0$ gilt; erst ein Vorzeichenwechsel von $f'$ sichert ein Extremum.
 
-Klausur-Satz: `Aus f'(x0) = 0 und einem Vorzeichenwechsel von f' folgt ein lokaler Extrempunkt.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Aus f'(x0) = 0 und einem Vorzeichenwechsel von f' folgt ein lokaler Extrempunkt.`
 
 ## Fehlvorstellung
 (Kein Schritt; wird vom Parser uebersprungen.)
@@ -153,7 +144,7 @@ SITUATION: Ein Kursteilnehmer behauptet, jede Stelle mit $f'(x_0) = 0$ sei autom
 AUFGABE (begruenden, AFB III): Verfasse eine zusammenhaengende Darstellung von etwa 150 Woertern mit Fehlerbenennung, Gegenbeispiel, Verfahren und Fazit.
 RUBRIC (30 XP): Benennung der Behauptung als Verwechslung von notwendig und hinreichend (5 XP) | Gegenbeispiel $f(x) = x^3$ mit $f'(0) = 0$, aber keinem Extremum (10 XP) | Korrekte Vorgehensweise mit $f''$- oder VZW-Kriterium (10 XP) | Fazit zum Stellenwert beider Bedingungen (5 XP).
 
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Wer Extrema, Wendepunkte, Monotonie und y-Werte mit Bedingungen zeigt und deutet, erhaelt die volle Punktzahl.`
 
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Wendepunkt der Produktion
 TAKEAWAY (Kernbotschaft in einem Kasten):
@@ -166,4 +157,4 @@ REFLEXION (zwei Fragen):
 1. Welcher Schritt fiel schwerer: das Aufstellen der Vorzeichentabelle (Schritt 4) oder die Wahl zwischen $f''$- und VZW-Kriterium (Schritt 5)?
 2. Beim naechsten Mal pruefe ich nach dem Loesen von $f'(x) = 0$ zuerst $f''(x_0)$; ist es null, wechsle ich sofort zur Vorzeichentabelle.
 
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Diskutieren heisst begruenden: Jede Behauptung braucht Ableitung plus Vorzeichen als Zeugen.`

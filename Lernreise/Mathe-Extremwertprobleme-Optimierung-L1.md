@@ -13,7 +13,7 @@ version: Lesson-v3
 
 # Lernreise: Extremwertprobleme und Optimierung (L1, Ziel Klausur)
 
-<!-- Campaign: Optimierung | Episode 10/33 | Krise: Windpark-Rotor Unwucht 11 Hz Resonanz | Target: x0 = 2, h = 0.3, Target m = 6.70 | Tool: box-optimizer -->
+<!-- Campaign: Optimierung | Episode 10/33 | Krise: Windpark-Rotor Unwucht 11 Hz Resonanz | Zielgroessen: V(x) = x(20-2x)(12-2x), Definitionsmenge [0; 6], Ziel Maximum | Tool: box-optimizer -->
 
 ## Schritt 1 — entdecken: Sachkontext Frachthafen
 ZIELE (3条，本节20分钟学完能做到——先读中文，再记德语)：
@@ -24,26 +24,24 @@ ZIELE (3条，本节20分钟学完能做到——先读中文，再记德语)：
 
 ### Hook / Phaenomen
 
-【首席算法官·第10集/共33集】警报：Windpark-Rotor Unwucht 11 Hz Resonanz。首席算法官下令：“x0 = 2, h = 0.3, Target m = 6.70！”全场红灯闪烁。上一集（Mathe-Extremwertprobleme-Optimierung-DE-L1.md）的伏笔在此引爆，下一集（Mathe-Ganzrationale-Funktionen-Sachkontext-DE-L1.md）只给交出最优解的人放行。本集你要在沙盘里亲手把工程从亏损/相撞边缘拉回来：先看现象、再点装备、最后算出让审计点头的 Bilanz。记住：先看区间还是时刻、再选割线还是切线/极值还是向量，做完必做 Gegenprobe——这就是工程帝国法则，也是 Klausur 拿分法则。
+一张铁皮做体积最大的盒子：剪得多装得多也废料多，目标函数和约束条件联手，才能算出最优那一剪。
 
-Hook / Phaenomen (CAO-Log, Episode 10 von 33): Super-Engineering-Zentrale, Windpark-Rotor Unwucht 11 Hz Resonanz. Der Chief Algorithm Officer ruft: x0 = 2, h = 0.3, Target m = 6.70, die Assistentin meldet Rot-Alarm auf allen Screens. Genau hier entscheidet Extremwertprobleme und Optimierung ueber Freigabe oder Sperrung, ueber Kostenexplosion oder Rekordgewinn, ueber Kollision oder gruene Welle. Das Protokoll der Vorwoche (Mathe-Extremwertprobleme-Optimierung-DE-L1.md) legte die Spur, das naechste Audit (Mathe-Ganzrationale-Funktionen-Sachkontext-DE-L1.md) laesst keine Ausrede mehr zu. Die Messwerte streuen, die Kurven zittern, doch die Mathematik bleibt unbestechlich: Wer Sekante und Tangente, Maximum und Wendepunkt, Vektor und Ebene richtig liest, rettet das Projekt. In dieser Episode stellst du im Sandbox-Optimierer die Parameter so ein, dass alle Kennzahlen im gruenen Bereich landen. Beobachte zuerst das Phaenomen in Ruhe, benenne dann die Objekte mit exakter Notation, pruefe schliesslich das Ergebnis mit einer Gegenrechnung. Der folgende Weg fuehrt vom Alarmton zur sauberen Klausurloesung: erst das Phaenomen beobachten, dann die Begriffe sichern, dann das Modell rechnen und im Labor bestaetigen.
+Hook / Phaenomen: Aus einem Blech soll die groesste Schachtel werden: Jeder Schnitt veraendert Volumen und Flaeche zugleich. Die **Zielfunktion** misst den Gewinn, die **Nebenbedingung** frisst eine Variable. Wo die **Extremalbedingung** null wird, steht das **Optimum**.
 
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Optimieren heisst einsperren: Zielfunktion plus Nebenbedingung erzeugen eine Variable mit Rand.`
 
 ## Schritt 2 — entdecken: Ausruestungskiste der Algorithmus-Unit
 PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语）：
 
 中文在上，德语在下：
 
-- 目标函数 — Zielfunktion：要最大化或最小化的量，如体积 V(x)、面积 A(x)、利润 G(x)。
-- 约束条件 — Nebenbedingung：变量之间的固定关系，如纸板总长固定、周长固定，用它消去多余变量。
-- 定义域（含实际意义） — Definitionsmenge / Definitionsbereich：x 在现实中有意义的区间，如 Schnittlaenge x in [0; 6]，端点必须单独检验。
-- 边界检验 — Randpruefung：比较 interior 极值点的函数值与区间端点的函数值，只有最大者才是全局最大。
-- 极值候选点 — Extremstellen-Kandidat：满足 f'(x) = 0 的点，只是候选，还须用 Vorzeichenwechsel 或 f''(x) 与 Randvergleich beurteilen。
+- 目标函数 — Zielfunktion：要最大化或最小化的量，如体积 V(x)、面积 A(x)、利润 G(x)。 Sie haengt nach Einsetzen der Nebenbedingung nur noch von einer Variablen ab. Mechanismus: Zu maximierende Groesse als Funktion einer Variablen aufstellen. Klausur-Tipp: Zielgroesse zuerst in Worten benennen.
+- 约束条件 — Nebenbedingung：变量之间的固定关系，如纸板总长固定、周长固定，用它消去多余变量。 Sie frisst genau eine Variable und schrumpft das Problem auf eine Dimension. Mechanismus: Geometrische Beziehung nach einer Variablen aufloesen und einsetzen. Klausur-Tipp: Aufloesungsschritt ausfuehrlich zeigen.
+- 定义域（含实际意义） — Definitionsmenge / Definitionsbereich：x 在现实中有意义的区间，如 Schnittlaenge x in [0; 6]，端点必须单独检验。 Physikalisch unmoegliche Werte werden vor jeder Rechnung ausgeschlossen. Mechanismus: Sinnvolle Grenzen aus der Geometrie ablesen und notieren. Klausur-Tipp: Intervallgrenzen mit Einheit angeben.
+- 边界检验 — Randpruefung：比较 interior 极值点的函数值与区间端点的函数值，只有最大者才是全局最大。 Das Maximum kann am Rand groesser sein als jeder innere Kandidat. Mechanismus: Funktionswerte an allen Raendern plus Kandidaten vergleichen. Klausur-Tipp: Randwerte in Tabelle gegenueberstellen.
+- 极值候选点 — Extremstellen-Kandidat：满足 f'(x) = 0 的点，只是候选，还须用 Vorzeichenwechsel 或 f''(x) 与 Randvergleich beurteilen。 Nullsetzen der Ableitung liefert nur Kandidaten, keine Sicherheit. Mechanismus: Erste Ableitung null setzen und Kandidaten bestimmen. Klausur-Tipp: Notwendig und hinreichend als zwei Schritte trennen.
 
-Klausur-Satz: `Die Nebenbedingung reduziert die Zielfunktion auf eine Variable, die Definitionsmenge legt das Intervall fuer die Randpruefung fest.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Die Nebenbedingung reduziert die Zielfunktion auf eine Variable, die Definitionsmenge legt das Intervall fuer die Randpruefung fest.`
 
 ## Schritt 3 — entdecken: Wirkungskette hinter Extremwertprobleme und Optimierung
 ENTDECKEN（1概念 + 1文字图解）：
@@ -69,9 +67,8 @@ ENTDECKEN（1概念 + 1文字图解）：
    Kandidat: f'(x)=0 | Entscheid: Randpruefung
 ```
 
-Klausur-Satz: `Das globale Maximum liegt entweder an einer inneren Stelle mit f'(x) = 0 oder am Rand des Definitionsbereichs.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+$$V(x) = x(20-2x)(12-2x),\quad V'(x_E) = 0$$
+`Klausur-Satz: Das globale Maximum liegt entweder an einer inneren Stelle mit f'(x) = 0 oder am Rand des Definitionsbereichs.`
 
 ## Anekdote & Fun-Fact
 
@@ -82,7 +79,7 @@ Klausur-Satz: `Das globale Maximum liegt entweder an einer inneren Stelle mit f'
 **Bezug zum Konzept**: `Die optimale Kiste liegt am Gipfel der Zielfunktion, und erst die Randpruefung macht aus einem Kandidaten das globale Maximum.`
 
 ## Schritt 4 — ausprobieren: Sandbox-Auftrag Sachkontext Frachthafen
-Kontinuitaet: Vorher Mathe-Extremwertprobleme-Optimierung-DE-L1.md | Nachher Mathe-Ganzrationale-Funktionen-Sachkontext-DE-L1.md. Krise dieser Episode: Windpark-Rotor Unwucht 11 Hz Resonanz. Target: x0 = 2, h = 0.3, Target m = 6.70.
+Kontinuitaet: Vorher Mathe-Extremwertprobleme-Optimierung-DE-L1.md | Nachher Mathe-Ganzrationale-Funktionen-Sachkontext-DE-L1.md. Krise dieser Episode: Windpark-Rotor Unwucht 11 Hz Resonanz. Zielgroessen: V(x) = x(20-2x)(12-2x), Definitionsmenge [0; 6], Ziel Maximum
 
 BEISPIEL（正确例题示范，含教具操作与解答）：
 
@@ -97,14 +94,12 @@ HILFE:
 
 MUSTERLÖSUNG / MUSTERLOESUNG: Es gilt V(x) = x(20-2x)(12-2x) = 4x^3 - 64x^2 + 240x auf D = [0; 6]. Dann V'(x) = 12x^2 - 128x + 240 und V''(x) = 24x - 128. Aus V'(x) = 0 folgt 3x^2 - 32x + 60 = 0, also x = (32 +- sqrt(304)) / 6, somit x1 ~ 2.43 und x2 ~ 8.24. Nur x1 liegt in D. Wegen V''(2.43) ~ -69.7 < 0 liegt ein lokales Maximum vor. Randpruefung: V(0) = 0, V(6) = 0, V(2.43) ~ 262.7. Also ist x ~ 2.43 cm optimal und Vmax ~ 262.7 cm^3.
 
-Klausur-Satz: `Mit V'(x1) = 0, V''(x1) < 0 und V(x1) > V(0), V(x1) > V(6) ist x1 die globale Maximalstelle auf D.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Mit V'(x1) = 0, V''(x1) < 0 und V(x1) > V(0), V(x1) > V(6) ist x1 die globale Maximalstelle auf D.`
 
 ## Schritt 5 — ausprobieren: Duell der Verfahren Sachkontext Frachthafen
 VERGLEICH辨别实验（配方选择 vs. 直接求导）：
 
-VERGLEICH: Wähle erst / Waehele erst das Verfahren — 【选程序】先判断题目属于 (i) Extremwert-Schema（求最大/最小、含 Zielfunktion + Nebenbedingung + Definitionsmenge + Randpruefung）还是 (ii) Nur-Ableitung-Schema（只求 f'=0 的 Stellen，无现实区间、无 Randvergleich）—— dann lösen.
+VERGLEICH: (Weg A quantitativ-rechnerisch gegen Weg B qualitativ-strukturell): Wähle erst / Waehele erst das Verfahren — 【选程序】先判断题目属于 (i) Extremwert-Schema（求最大/最小、含 Zielfunktion + Nebenbedingung + Definitionsmenge + Randpruefung）还是 (ii) Nur-Ableitung-Schema（只求 f'=0 的 Stellen，无现实区间、无 Randvergleich）—— dann lösen.
 
 Weg A: Erst Verfahren waehlen, dann rechnen.
 
@@ -117,20 +112,16 @@ HILFE: A enthaelt Woerter wie maximal, Drahtlaenge fest, offene Kiste -> Verfahr
 
 ANTWORT: A erfordert Verfahren (i): Sei Grundkante a und Hoehe h, dann 4a + 4h = 36, also h = 9 - a, V(a) = a^2(9-a) auf D = [0; 9]; V'(a) = 18a - 3a^2 = 0 liefert a = 6 (a = 0 ist Rand), V''(6) < 0, Randwerte 0, also a = 6 cm, h = 3 cm, Vmax = 108 cm^3. B erfordert Verfahren (ii): f'(x) = 3x^2 - 6x = 3x(x-2) = 0, also x = 0 und x = 2; mit f''(x) = 6x - 6 gilt f''(0) = -6 < 0 (Maximum) und f''(2) = 6 > 0 (Minimum), ohne Randvergleich.
 
-Klausur-Satz: `Ein Sachkontext mit fester Ressource verlangt das volle Extremwert-Schema inklusive Randpruefung, eine reine Formel verlangt nur die Analyse von f'(x) = 0.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Ein Sachkontext mit fester Ressource verlangt das volle Extremwert-Schema inklusive Randpruefung, eine reine Formel verlangt nur die Analyse von f'(x) = 0.`
 
 ## Schritt 6 — check: Selbsttest zu Extremwertprobleme und Optimierung: Sachkontext Frachthafen
 CHECK检索默写（自测 3 题，与答案配对）：
 
-FRAGE: Wie lautet das Drei-Schritt-Schema eines Extremwertproblems? | ANTWORT: Zielfunktion aufstellen, mit Nebenbedingung auf eine Variable reduzieren, Kandidaten mit f'(x) = 0 suchen und mit Randpruefung beurteilen.
-FRAGE: Warum reicht f'(x) = 0 allein nicht fuer ein globales Maximum? | ANTWORT: Weil f'(x) = 0 nur lokale Kandidaten liefert; erst der Vergleich mit den Randwerten zeigt, ob ein Kandidat global maximal ist.
-FRAGE: Was gehoert zur vollstaendigen Angabe der Loesung im Sachkontext? | ANTWORT: Definitionsmenge mit Einheiten, optimale Stelle mit Einheit, maximaler Wert mit Einheit und ein Antwortsatz im Kontext.
+- FRAGE: Wie lautet das Drei-Schritt-Schema eines Extremwertproblems? | ANTWORT: Zielfunktion aufstellen, mit Nebenbedingung auf eine Variable reduzieren, Kandidaten mit f'(x) = 0 suchen und mit Randpruefung beurteilen.
+- FRAGE: Warum reicht f'(x) = 0 allein nicht fuer ein globales Maximum? | ANTWORT: Weil f'(x) = 0 nur lokale Kandidaten liefert; erst der Vergleich mit den Randwerten zeigt, ob ein Kandidat global maximal ist.
+- FRAGE: Was gehoert zur vollstaendigen Angabe der Loesung im Sachkontext? | ANTWORT: Definitionsmenge mit Einheiten, optimale Stelle mit Einheit, maximaler Wert mit Einheit und ein Antwortsatz im Kontext.
 
-Klausur-Satz: `Erst Zielfunktion plus Nebenbedingung plus Definitionsmenge plus Randpruefung ergeben eine vollstaendige Extremwert-Loesung.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Erst Zielfunktion plus Nebenbedingung plus Definitionsmenge plus Randpruefung ergeben eine vollstaendige Extremwert-Loesung.`
 
 ## Fehlvorstellung
 
@@ -150,7 +141,7 @@ SITUATION: Aus einem Standard-Bogen 24 cm x 18 cm sollen offene Versandkisten mi
 AUFGABE (beurteilen, AFB III)：Entscheide, welche Schnittlaenge in die Produktion geht, und beurteile, wie sensibel das Maximum auf Abweichungen von +-0.5 cm reagiert.
 RUBRIC (30 XP): Zielfunktion plus Definitionsmenge korrekt (5 XP) | Kandidaten mit Ableitung korrekt berechnet (10 XP) | Randpruefung mit Einheiten vollstaendig (10 XP) | Produktionsempfehlung mit Beurteilung der Sensibilitaet (5 XP).
 
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Wer Zielfunktion, Nebenbedingung, Extremalbedingung und Randpruefung lueckenlos zeigt, erhaelt die volle Punktzahl.`
 
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Sachkontext Frachthafen
 TAKEAWAY 1盒（核心总结）：
@@ -162,4 +153,4 @@ REFLEXION 2问：
 1. 过程自省：Welcher Teil fiel schwerer — das Aufstellen von Zielfunktion und Nebenbedingung (Schritt 4) oder die Entscheidung fuer das volle Schema im Vergleich (Schritt 5)?
 2. 元认知计划：Beim naechsten Mal schreibe ich zuerst D mit Einheiten auf und plane die Randpruefung fest ein, bevor ich ableite.
 
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Jedes Optimum braucht drei Zeugen: Ableitung null, Vorzeichenwechsel und Randvergleich.`

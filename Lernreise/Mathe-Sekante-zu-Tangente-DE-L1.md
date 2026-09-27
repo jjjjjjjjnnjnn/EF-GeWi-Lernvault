@@ -13,7 +13,7 @@ version: Lesson-v3
 
 # Lernreise: Von der Sekante zur Tangente (L1, Ziel Klausur)
 
-<!-- Campaign: Optimierung | Episode 25/33 | Krise: Kran-Ausleger Biegemoment 96 kNm | Target: x0 = 2, h = 0.2, Target m = 12.25 | Tool: tangent-slider -->
+<!-- Campaign: Optimierung | Episode 25/33 | Krise: Kran-Ausleger Biegemoment 96 kNm | Zielgroessen: f(x) = x^2, Stelle 3, Sekanten mit h gegen 0, Ziel 6 | Tool: tangent-slider -->
 
 ## Schritt 1 — entdecken: Vektoren im Nebel
 ZIELE (drei messbare Ziele dieser Lektion):
@@ -26,9 +26,9 @@ ZIELE (drei messbare Ziele dieser Lektion):
 
 ### Hook / Phaenomen
 
-Hook / Phaenomen (CAO-Log, Episode 25 von 33): Super-Engineering-Zentrale, Kran-Ausleger Biegemoment 96 kNm. Der Chief Algorithm Officer ruft: x0 = 2, h = 0.2, Target m = 12.25, die Assistentin meldet Rot-Alarm auf allen Screens. Genau hier entscheidet Von der Sekante zur Tangente ueber Freigabe oder Sperrung, ueber Kostenexplosion oder Rekordgewinn, ueber Kollision oder gruene Welle. Das Protokoll der Vorwoche (Mathe-Rekonstruktion-Symmetrie-Bedingungen-L2.md) legte die Spur, das naechste Audit (Mathe-Sekante-zu-Tangente-L1.md) laesst keine Ausrede mehr zu. Die Messwerte streuen, die Kurven zittern, doch die Mathematik bleibt unbestechlich: Wer Sekante und Tangente, Maximum und Wendepunkt, Vektor und Ebene richtig liest, rettet das Projekt. In dieser Episode stellst du im Sandbox-Optimierer die Parameter so ein, dass alle Kennzahlen im gruenen Bereich landen. Beobachte zuerst das Phaenomen in Ruhe, benenne dann die Objekte mit exakter Notation, pruefe schliesslich das Ergebnis mit einer Gegenrechnung. Der folgende Weg fuehrt vom Alarmton zur sauberen Klausurloesung: erst das Phaenomen beobachten, dann die Begriffe sichern, dann das Modell rechnen und im Labor bestaetigen.
+Hook / Phaenomen: Zwei Messpunkte geben eine **Sekante**, ein Messpunkt gibt ein Raetsel. Laesst man den zweiten Punkt auf den ersten zulaufen, wird aus mittlerer **Aenderungsrate** lokale. Der **Differenzenquotient** schrumpft dabei zur **Tangente** zusammen.
 
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Die Tangente ist der Grenzfall der Sekante: Laeuft h gegen null, wird mittlere zu lokaler Aenderung.`
 
 ## Schritt 2 — entdecken: Ausruestungskiste der Algorithmus-Unit
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
@@ -39,19 +39,17 @@ Fuenf Begriffe trennen in dieser Lektion Alltagssprache von Klausursprache. Wer 
 
 ### Fachbegriffe & Definitionen
 
-- **Mittlere Aenderungsrate:** Der Differenzenquotient ueber ein Intervall misst die Sekantensteigung zwischen zwei Punkten. Mechanismus: Zwei Funktionswerte einsetzen, Differenz bilden und durch die Intervallbreite teilen. Klausur-Punkt: Intervall nennen, Formel aufstellen und Mittel gegen Moment abgrenzen.
-- **Lokale Aenderungsrate:** Der Grenzwert an einer einzigen Stelle misst die Tangentensteigung als Moment. Mechanismus: Intervallbreite h gegen null schrumpfen lassen und den Grenzwert ablesen. Klausur-Punkt: Stelle nennen, Grenzwert bilden und als Momentanwert deuten.
-- **Sekante:** Eine Gerade durch zwei verschiedene Punkte des Graphen verbindet zwei Momente zu einem Mittel. Mechanismus: Punkte P und Q festlegen und die Verbindungsgerade zeichnen. Klausur-Punkt: Beide Punkte angeben und die Gerade als Mittelwert-Geometrie benennen.
-- **Tangente:** Eine Gerade durch einen einzigen Punkt als Grenzlage aller Sekanten beruehrt den Graphen im Moment. Mechanismus: Punkt Q auf P zuwandern lassen, bis die Sekante in die Beruehrlage rotiert. Klausur-Punkt: Beruehrpunkt nennen und Tangente als Grenzlage beschreiben.
-- **Differenzenquotient:** Der Term $m=(f(x+h)-f(x))/h$ misst die Sekante auf dem Intervall der Breite h. Mechanismus: Funktionswerte einsetzen, Term aufstellen und h herauskuerzen. Klausur-Punkt: Term vollständig aufstellen, kuerzen und erst danach den Grenzuebergang betrachten.
+- **Mittlere Aenderungsrate:** Der Differenzenquotient ueber ein Intervall misst die Sekantensteigung zwischen zwei Punkten. Sie ist die Sekantensteigung ueber ein sichtbares Intervall. Mechanismus: Zwei Funktionswerte einsetzen, Differenz bilden und durch die Intervallbreite teilen. Klausur-Tipp: Intervall nennen, Formel aufstellen und Mittel gegen Moment abgrenzen.
+- **Lokale Aenderungsrate:** Der Grenzwert an einer einzigen Stelle misst die Tangentensteigung als Moment. Sie ist die Tangentensteigung in genau einem Punkt. Mechanismus: Intervallbreite h gegen null schrumpfen lassen und den Grenzwert ablesen. Klausur-Tipp: Stelle nennen, Grenzwert bilden und als Momentanwert deuten.
+- **Sekante:** Eine Gerade durch zwei verschiedene Punkte des Graphen verbindet zwei Momente zu einem Mittel. Sie schneidet den Graphen in zwei Punkten und mittelt dazwischen. Mechanismus: Punkte P und Q festlegen und die Verbindungsgerade zeichnen. Klausur-Tipp: Beide Punkte angeben und die Gerade als Mittelwert-Geometrie benennen.
+- **Tangente:** Eine Gerade durch einen einzigen Punkt als Grenzlage aller Sekanten beruehrt den Graphen im Moment. Sie beruehrt den Graphen in genau einem Punkt. Mechanismus: Punkt Q auf P zuwandern lassen, bis die Sekante in die Beruehrlage rotiert. Klausur-Tipp: Beruehrpunkt nennen und Tangente als Grenzlage beschreiben.
+- **Differenzenquotient:** Der Term $m=(f(x+h)-f(x))/h$ misst die Sekante auf dem Intervall der Breite h. Er ist die Rechenform beider Raten und traegt h im Nenner. Mechanismus: Funktionswerte einsetzen, Term aufstellen und h herauskuerzen. Klausur-Tipp: Term vollständig aufstellen, kuerzen und erst danach den Grenzuebergang betrachten.
 
 ### Wirkungsgefuege / Modell
 
 Die Kette verbindet alle fuenf Begriffe zu einem Verfahren: Erkennen, Einordnen, Aufstellen, Loesen und Deuten. Jeder Begriff traegt genau einen Schritt, gemeinsam sichern sie die volle Punktzahl.
 
-Klausur-Satz: `Der Differenzenquotient liefert die Sekantensteigung ueber ein Intervall, der Differentialquotient die Tangentensteigung an einer Stelle.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Der Differenzenquotient liefert die Sekantensteigung ueber ein Intervall, der Differentialquotient die Tangentensteigung an einer Stelle.`
 
 ## Schritt 3 — entdecken: Wirkungskette hinter Von der Sekante zur Tangente
 EXPERIMENTELLE ERKUNDUNG (Sandbox, erst spielen, dann deuten):
@@ -80,9 +78,8 @@ Die Kausalkette laeuft von zwei Punkten ueber die Rotation zum einzigen Moment: 
 ```
 Formelkern: $m=(f(x+h)-f(x))/h$
 
-Klausur-Satz: `Laesst man h gegen 0 streben, so geht die Sekante durch P und Q in die Tangente im Punkt P ueber.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+$$m_s = \frac{f(3+h)-f(3)}{h}\to m_t = 6$$
+`Klausur-Satz: Laesst man h gegen 0 streben, so geht die Sekante durch P und Q in die Tangente im Punkt P ueber.`
 
 ## Anekdote & Fun-Fact
 Das Wort Tangente kommt vom lateinischen $tangere$, beruehren, und Sekante von $secare$, schneiden. Eine Sekante schneidet den Graphen in zwei Punkten, eine Tangente beruehrt ihn in einem einzigen. Die Frage, wie man an eine Kurve eine Tangente legt, beschaeftigte Mathematiker lange vor der Erfindung der Ableitung: Aus genau diesem Problem entstand die Differentialrechnung.
@@ -90,7 +87,7 @@ Das Wort Tangente kommt vom lateinischen $tangere$, beruehren, und Sekante von $
 Bezug zum Konzept: `Der Grenzuebergang von der schneidenden Sekante zur beruehrenden Tangente liefert die Ableitung.`
 
 ## Schritt 4 — ausprobieren: Sandbox-Auftrag Vektoren im Nebel
-Kontinuitaet: Vorher Mathe-Rekonstruktion-Symmetrie-Bedingungen-L2.md | Nachher Mathe-Sekante-zu-Tangente-L1.md. Krise dieser Episode: Kran-Ausleger Biegemoment 96 kNm. Target: x0 = 2, h = 0.2, Target m = 12.25.
+Kontinuitaet: Vorher Mathe-Rekonstruktion-Symmetrie-Bedingungen-L2.md | Nachher Mathe-Sekante-zu-Tangente-L1.md. Krise dieser Episode: Kran-Ausleger Biegemoment 96 kNm. Zielgroessen: f(x) = x^2, Stelle 3, Sekanten mit h gegen 0, Ziel 6
 
 BEISPIEL (Sandbox Level mit Werkzeug):
 
@@ -105,14 +102,12 @@ HILFE:
 
 MUSTERLOESUNG: Sandbox $h = 2{,}0$ liefert $m = 8$, $h = 1{,}0$ liefert $m = 7$, $h = 0{,}1$ liefert $m = 6{,}1$, die Tendenz zeigt $6$. Rechnung $f(3+h) = 9+6h+h^2$, also $m(h) = 6+h$ fuer $h \ne 0$, mit $h \to 0$ folgt $f'(3) = 6$. Die Sekante ueber $[3, 5]$ ergibt $(25-9)/2 = 8$. Die $8$ mittelt ueber das Intervall, die $6$ misst den Moment, daher ist $8$ groesser, weil die Parabel rechts steiler wird.
 
-Klausur-Satz: `Der Grenzwert des Differenzenquotienten ergibt f'(3) = 6, waehrend die Sekantensteigung ueber [3; 5] den groesseren Wert 8 besitzt.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Der Grenzwert des Differenzenquotienten ergibt f'(3) = 6, waehrend die Sekantensteigung ueber [3; 5] den groesseren Wert 8 besitzt.`
 
 ## Schritt 5 — ausprobieren: Duell der Verfahren Vektoren im Nebel
 VERGLEICH (Wahl des Verfahrens, A gegen B):
 
-VERGLEICH: Triff zuerst die Wahl des Verfahrens: (i) Sekanten-Verfahren (ein Intervall, zwei Punkte, mittlere Aenderungsrate mit Differenzenquotient) oder (ii) Tangenten-Verfahren (eine Stelle oder ein Zeitpunkt, Momentanwert mit Ableitung) > dann rechnen.
+VERGLEICH: (Weg A quantitativ-rechnerisch gegen Weg B qualitativ-strukturell): Triff zuerst die Wahl des Verfahrens: (i) Sekanten-Verfahren (ein Intervall, zwei Punkte, mittlere Aenderungsrate mit Differenzenquotient) oder (ii) Tangenten-Verfahren (eine Stelle oder ein Zeitpunkt, Momentanwert mit Ableitung) > dann rechnen.
 
 Weg A: Erst Verfahren waehlen, dann rechnen.
 
@@ -125,20 +120,16 @@ HILFE: Aufgabe A nennt ein Zeitintervall mit zwei Endwerten, daher Verfahren (i)
 
 ANTWORT: A erfordert Verfahren (i): $v_{\text{mittel}} = 240\,\mathrm{km} / 4\,\mathrm{h} = 60\,\mathrm{km/h}$; dies ist die mittlere Aenderungsrate, also die Sekantensteigung der Weg-Zeit-Funktion. B erfordert Verfahren (ii): Der Blitzer erfasst die Momentangeschwindigkeit $v(t_0) = s'(t_0)$, also die Tangentensteigung an der Stelle $t_0$.
 
-Klausur-Satz: `Durchschnittsgeschwindigkeiten entsprechen Sekantensteigungen, Momentangeschwindigkeiten entsprechen Tangentensteigungen.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Durchschnittsgeschwindigkeiten entsprechen Sekantensteigungen, Momentangeschwindigkeiten entsprechen Tangentensteigungen.`
 
 ## Schritt 6 — check: Selbsttest zu Von der Sekante zur Tangente: Vektoren im Nebel
 CHECK (drei Fragen mit Antworten):
 
-FRAGE: Wie lautet der Differenzenquotient einer Funktion $f$ im Intervall $[x_0, x_0 + h]$? | ANTWORT: $m = (f(x_0 + h) - f(x_0)) / h$, also die Steigung der Sekante durch die beiden Punkte.
-FRAGE: Was geschieht geometrisch mit der Sekante, wenn $h$ gegen $0$ geht? | ANTWORT: Sie dreht sich um den festen Punkt $P(x_0, f(x_0))$ und geht im Grenzfall in die Tangente ueber.
-FRAGE: Warum darf man $h$ nicht schon vor dem Kuerzen gleich $0$ setzen? | ANTWORT: Weil sonst der unbestimmte Ausdruck $0/0$ entstuende; erst nach dem Kuerzen ist der Grenzwert ablesbar.
+- FRAGE: Wie lautet der Differenzenquotient einer Funktion $f$ im Intervall $[x_0, x_0 + h]$? | ANTWORT: $m = (f(x_0 + h) - f(x_0)) / h$, also die Steigung der Sekante durch die beiden Punkte.
+- FRAGE: Was geschieht geometrisch mit der Sekante, wenn $h$ gegen $0$ geht? | ANTWORT: Sie dreht sich um den festen Punkt $P(x_0, f(x_0))$ und geht im Grenzfall in die Tangente ueber.
+- FRAGE: Warum darf man $h$ nicht schon vor dem Kuerzen gleich $0$ setzen? | ANTWORT: Weil sonst der unbestimmte Ausdruck $0/0$ entstuende; erst nach dem Kuerzen ist der Grenzwert ablesbar.
 
-Klausur-Satz: `Der Differentialquotient f'(x0) ist der Grenzwert des Differenzenquotienten fuer h gegen 0.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Der Differentialquotient f'(x0) ist der Grenzwert des Differenzenquotienten fuer h gegen 0.`
 
 ## Fehlvorstellung
 (Kein Schritt; wird vom Parser uebersprungen.)
@@ -154,7 +145,7 @@ SITUATION: Deine Mitschuelerin hat mit dem GTR fuer $f(x) = x^3$ im Intervall $[
 AUFGABE (interpretieren, AFB III): Verfasse eine zusammenhaengende Darstellung von etwa 150 Woertern mit These, Sekantenrechnung, Tangentenbegruendung und Fazit.
 RUBRIC (30 XP): Klare These zum Unterschied Sekante und Tangente (5 XP) | Korrekte Sekantenrechnung $(f(1) - f(-1)) / 2 = 1$ (10 XP) | Begruendung der Tangentensteigung $f'(0) = 0$ (10 XP) | Abschlussfazit mit Fachbegriffen (5 XP).
 
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Wer Sekantensteigung berechnet, Grenzprozess zeigt und Tangentensteigung deutet, erhaelt die volle Punktzahl.`
 
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Vektoren im Nebel
 TAKEAWAY (Kernbotschaft in einem Kasten):
@@ -167,4 +158,4 @@ REFLEXION (zwei Fragen):
 1. Welcher Schritt fiel schwerer: die algebraische Umformung des Differenzenquotienten (Schritt 4) oder die Entscheidung zwischen Sekante und Tangente (Schritt 5)?
 2. Beim naechsten Mal pruefe ich zuerst, ob im Aufgabentext ein Intervall oder ein einzelner Zeitpunkt genannt wird, und waehle danach das Verfahren.
 
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Vom Groben zum Feinen: Jeder Grenzwert verfeinert eine grobe Messung zur exakten.`

@@ -13,7 +13,7 @@ version: Lesson-v3
 
 # Lernreise: CN-Formeln dreisprachig diktieren und rechnen (L1, Ziel Klausur)
 
-<!-- Campaign: Optimierung | Episode 4/33 | Krise: Hafen-Kran Last pendelt 3,2 Grad | Target: x0 = 6, h = 0.5, Target m = 4.48 | Tool: formula -->
+<!-- Campaign: Optimierung | Episode 4/33 | Krise: Hafen-Kran Last pendelt 3,2 Grad | Zielgroessen: h(x) = 5x^3-2x^2+x, Ziel h'(1) = 12 und Vieta-Probe 4 und 5 | Tool: formula -->
 
 ## Schritt 1 — entdecken: Bruecke der Symbole
 ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
@@ -24,26 +24,24 @@ ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
 ### Hook / Phaenomen
 
-【首席算法官·第4集/共33集】警报：Hafen-Kran Last pendelt 3,2 Grad。首席算法官下令：“x0 = 6, h = 0.5, Target m = 4.48！”全场红灯闪烁。上一集（Mathe-CN-Formeln-DE-L1.md）的伏笔在此引爆，下一集（Mathe-CN-Training-DE-L1.md）只给交出最优解的人放行。本集你要在沙盘里亲手把工程从亏损/相撞边缘拉回来：先看现象、再点装备、最后算出让审计点头的 Bilanz。记住：先看区间还是时刻、再选割线还是切线/极值还是向量，做完必做 Gegenprobe——这就是工程帝国法则，也是 Klausur 拿分法则。
+公式会背不等于会用：幂法则、韦达、均值不等式各有各的准入条件，无条件套用就是把送分题做成送命题。
 
-Hook / Phaenomen (CAO-Log, Episode 4 von 33): Super-Engineering-Zentrale, Hafen-Kran Last pendelt 3,2 Grad. Der Chief Algorithm Officer ruft: x0 = 6, h = 0.5, Target m = 4.48, die Assistentin meldet Rot-Alarm auf allen Screens. Genau hier entscheidet CN-Formeln dreisprachig diktieren und rechnen ueber Freigabe oder Sperrung, ueber Kostenexplosion oder Rekordgewinn, ueber Kollision oder gruene Welle. Das Protokoll der Vorwoche (Mathe-CN-Formeln-DE-L1.md) legte die Spur, das naechste Audit (Mathe-CN-Training-DE-L1.md) laesst keine Ausrede mehr zu. Die Messwerte streuen, die Kurven zittern, doch die Mathematik bleibt unbestechlich: Wer Sekante und Tangente, Maximum und Wendepunkt, Vektor und Ebene richtig liest, rettet das Projekt. In dieser Episode stellst du im Sandbox-Optimierer die Parameter so ein, dass alle Kennzahlen im gruenen Bereich landen. Beobachte zuerst das Phaenomen in Ruhe, benenne dann die Objekte mit exakter Notation, pruefe schliesslich das Ergebnis mit einer Gegenrechnung. Der folgende Weg fuehrt vom Alarmton zur sauberen Klausurloesung: erst das Phaenomen beobachten, dann die Begriffe sichern, dann das Modell rechnen und im Labor bestaetigen.
+Hook / Phaenomen: Fuenf Formeln, fuenf Fallen: Ohne **Bedingung** ist jede Formel ein Blindflug. Die **Potenzregel** versagt an Wurzeln, **AM-GM** versagt an negativen Zahlen, **Vieta** versagt an kubischen Gleichungen. Teil A ohne Formelsammlung belohnt nur, wer Formel plus Bedingung diktieren kann.
 
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Jede Formel gilt nur unter ihrer Bedingung; ohne Bedingungspruefung gibt es keine Punkte.`
 
 ## Schritt 2 — entdecken: Ausruestungskiste der Algorithmus-Unit
 PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
 
 中文在上，德语在下：
 
-- 幂法则 — Potenzregel：`(x^n)' = n * x^(n-1)`，指数下移作系数、指数减一。
-- 韦达定理 — Satz von Vieta：对 `ax^2 + bx + c = 0`，`x1 + x2 = -b/a`，`x1 * x2 = c/a`。
-- 均值不等式 — AM-GM-Ungleichung：`a, b > 0` 时 `(a + b) / 2 >= Wurzel(a*b)`，等号当且仅当 `a = b`。
-- 向量模长 — Betrag eines Vektors：`|a| = Wurzel(a1^2 + a2^2 + a3^2)`。
-- 古典概型 — Laplace-Experiment：`P(E) = 有利结果数 / 全部等可能结果数`。
+- 幂法则 — Potenzregel：`(x^n)' = n * x^(n-1)`，指数下移作系数、指数减一。 Sie gilt ausschliesslich fuer Potenzen x hoch n, nicht fuer Wurzeln oder Brueche mit x im Nenner. Mechanismus: Gliedweise ableiten und jeden Exponenten um eins senken. Klausur-Tipp: Potenzform explizit hinschreiben, bevor die Regel faellt.
+- 韦达定理 — Satz von Vieta：对 `ax^2 + bx + c = 0`，`x1 + x2 = -b/a`，`x1 * x2 = c/a`。 Die Beziehungen verbinden Summe und Produkt der Loesungen mit den Koeffizienten b und c. Mechanismus: Summe und Produkt der Kandidaten mit -b durch a und c durch a vergleichen. Klausur-Tipp: Quadratische Form und a ungleich null zuerst sichern.
+- 均值不等式 — AM-GM-Ungleichung：`a, b > 0` 时 `(a + b) / 2 >= Wurzel(a*b)`，等号当且仅当 `a = b`。 Gleichheit gilt genau im symmetrischen Fall a gleich b. Mechanismus: Positivitaet nachweisen, dann Summe durch Wurzelprodukt abschaetzen. Klausur-Tipp: Positivitaet als eigenen Bewertungspunkt hinschreiben.
+- 向量模长 — Betrag eines Vektors：`|a| = Wurzel(a1^2 + a2^2 + a3^2)`。 Er misst den Abstand zum Ursprung im Raum. Mechanismus: Koordinaten quadrieren, addieren und Wurzel ziehen. Klausur-Tipp: Quadratsumme unter der Wurzel vollstaendig stehen lassen
+- 古典概型 — Laplace-Experiment：`P(E) = 有利结果数 / 全部等可能结果数`。 Alle Elementarereignisse muessen gleich wahrscheinlich sein. Mechanismus: Guenstige durch moegliche Faelle teilen. Klausur-Tipp: Gleichwahrscheinlichkeit ausdruecklich feststellen.
 
-Klausur-Satz: `Jede Formel gilt nur unter ihrer Bedingung; die Potenzregel etwa nur fuer Potenzen, AM-GM nur fuer positive Zahlen.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Jede Formel gilt nur unter ihrer Bedingung; die Potenzregel etwa nur fuer Potenzen, AM-GM nur fuer positive Zahlen.`
 
 ## Schritt 3 — entdecken: Wirkungskette hinter CN-Formeln dreisprachig diktieren und rechnen
 ENTDECKEN（1概念 + 1文字图解）：
@@ -64,9 +62,8 @@ ENTDECKEN（1概念 + 1文字图解）：
    口诀定位           条件把关                   论证句得分
 ```
 
-Klausur-Satz: `Ich verbinde eine chinesische Merkregel mit dem deutschen Bedingungssatz, um die Formel klausurtauglich anzuwenden.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+$$h'(1) = 12,\quad x_1+x_2 = 9,\ x_1\cdot x_2 = 20$$
+`Klausur-Satz: Ich verbinde eine chinesische Merkregel mit dem deutschen Bedingungssatz, um die Formel klausurtauglich anzuwenden.`
 
 ## Anekdote & Fun-Fact
 
@@ -77,7 +74,7 @@ Klausur-Satz: `Ich verbinde eine chinesische Merkregel mit dem deutschen Bedingu
 **Bezug zum Konzept**: `Kernformeln sind kulturuebergreifend; die dreisprachige Arbeit setzt ihre Wanderung durch die Sprachen fort.`
 
 ## Schritt 4 — ausprobieren: Sandbox-Auftrag Bruecke der Symbole
-Kontinuitaet: Vorher Mathe-CN-Formeln-DE-L1.md | Nachher Mathe-CN-Training-DE-L1.md. Krise dieser Episode: Hafen-Kran Last pendelt 3,2 Grad. Target: x0 = 6, h = 0.5, Target m = 4.48.
+Kontinuitaet: Vorher Mathe-CN-Formeln-DE-L1.md | Nachher Mathe-CN-Training-DE-L1.md. Krise dieser Episode: Hafen-Kran Last pendelt 3,2 Grad. Zielgroessen: h(x) = 5x^3-2x^2+x, Ziel h'(1) = 12 und Vieta-Probe 4 und 5
 
 BEISPIEL（正确例题示范，含教具操作与解答）：
 
@@ -92,14 +89,12 @@ HILFE:
 
 MUSTERLÖSUNG: a) Gliedweise gilt 5x^3 -> 15x^2, -2x^2 -> -4x, x -> 1, -8 -> 0. Also h'(x) = 15x^2 - 4x + 1 und h'(1) = 15 - 4 + 1 = 12. b) Fuer x^2 - 9x + 20 = 0 gilt a = 1, b = -9, c = 20, also x1 + x2 = -b/a = 9 und x1 * x2 = c/a = 20. Die vermuteten Werte 4 und 5 erfuellen 4 + 5 = 9 und 4 * 5 = 20; beide Bedingungen stimmen, also sind 4 und 5 die Loesungen.
 
-Klausur-Satz: `Mit der Potenzregel folgt h'(x) = 15x^2 - 4x + 1 und h'(1) = 12; nach dem Satz von Vieta bestaetigen Summe 9 und Produkt 20 die Loesungen 4 und 5.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Mit der Potenzregel folgt h'(x) = 15x^2 - 4x + 1 und h'(1) = 12; nach dem Satz von Vieta bestaetigen Summe 9 und Produkt 20 die Loesungen 4 und 5.`
 
 ## Schritt 5 — ausprobieren: Duell der Verfahren Bruecke der Symbole
 VERGLEICH辨别实验（双向辨析：验根眼 vs. 最值眼）：
 
-VERGLEICH: Waehle erst das Verfahren — 【选程序】先判断题目问的是 (i) Satz von Vieta（检验给定的根是否正确，用和与积反推）还是 (ii) AM-GM（求正数和式的最小值，凑定积）—— dann loesen.
+VERGLEICH: (Weg A quantitativ-rechnerisch gegen Weg B qualitativ-strukturell): Waehle erst das Verfahren — 【选程序】先判断题目问的是 (i) Satz von Vieta（检验给定的根是否正确，用和与积反推）还是 (ii) AM-GM（求正数和式的最小值，凑定积）—— dann loesen.
 
 Weg A: Erst Verfahren waehlen, dann rechnen.
 
@@ -112,20 +107,16 @@ HILFE: A fragt, ob gegebene Zahlen die Gleichung loesen -> Verfahren (i), Vieta.
 
 ANTWORT: A erfordert Verfahren (i): Hier gilt a = 1, b = -9, c = 14, also Summe 9 und Produkt 14; wegen 2 + 7 = 9 und 2 * 7 = 14 sind 2 und 7 tatsaechlich die Loesungen. B erfordert Verfahren (ii): Da x > 0 und 25/x > 0, folgt mit AM-GM A(x) >= 2 * Wurzel(x * 25/x) = 2 * 5 = 10; Gleichheit gilt fuer x = 25/x, also x = 5, und der minimale Wert ist A(5) = 10.
 
-Klausur-Satz: `Vieta prueft vorhandene Loesungen ueber Summe und Produkt, AM-GM schaetzt eine Summe positiver Terme nach unten ab.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Vieta prueft vorhandene Loesungen ueber Summe und Produkt, AM-GM schaetzt eine Summe positiver Terme nach unten ab.`
 
 ## Schritt 6 — check: Selbsttest zu CN-Formeln dreisprachig diktieren und rechnen: Bruecke der Symbole
 CHECK检索默写（自测 3 题，与答案配对）：
 
-FRAGE: Wie lauten Summe und Produkt der Loesungen von ax^2 + bx + c = 0 nach Vieta? | ANTWORT: x1 + x2 = -b/a und x1 * x2 = c/a (mit a ungleich 0).
-FRAGE: Unter welcher Bedingung gilt die AM-GM-Ungleichung, und wann herrscht Gleichheit? | ANTWORT: Nur fuer positive Zahlen a, b > 0; Gleichheit gilt genau dann, wenn a = b ist.
-FRAGE: Wie berechnet man die Laenge des Vektors a = (a1 | a2 | a3)? | ANTWORT: |a| = Wurzel(a1^2 + a2^2 + a3^2), also die Wurzel der Summe der Quadrate.
+- FRAGE: Wie lauten Summe und Produkt der Loesungen von ax^2 + bx + c = 0 nach Vieta? | ANTWORT: x1 + x2 = -b/a und x1 * x2 = c/a (mit a ungleich 0).
+- FRAGE: Unter welcher Bedingung gilt die AM-GM-Ungleichung, und wann herrscht Gleichheit? | ANTWORT: Nur fuer positive Zahlen a, b > 0; Gleichheit gilt genau dann, wenn a = b ist.
+- FRAGE: Wie berechnet man die Laenge des Vektors a = (a1 | a2 | a3)? | ANTWORT: |a| = Wurzel(a1^2 + a2^2 + a3^2), also die Wurzel der Summe der Quadrate.
 
-Klausur-Satz: `Nach Vieta gilt fuer ax^2 + bx + c = 0 die Beziehung x1 + x2 = -b/a und x1 * x2 = c/a.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Nach Vieta gilt fuer ax^2 + bx + c = 0 die Beziehung x1 + x2 = -b/a und x1 * x2 = c/a.`
 
 ## Fehlvorstellung
 
@@ -144,7 +135,7 @@ ROLLE: Du bist Tutor fuer zweisprachige Mathe-Lernende und haeltst eine kurze Di
 SITUATION: Ein Mitschueler kennt die chinesischen Merksprueche, kann sie aber nicht in deutsche Klausursaetze uebersetzen, und schreibt im Test nur Ergebnisse ohne Bedingung. Erklaere ihm in einer zusammenhaengenden Darstellung (ca. 150 Woerter) an zwei Beispielen (Potenzregel und AM-GM), wie man eine Formel dreisprachig mit Bedingungssatz klausurtugendlich aufschreibt.
 RUBRIC (30 XP): Erklaerung des Dreisprachen-Prinzips (CN-Heuristik, DE-Bedingung, DE-Anwendung) (5 XP) | Korrektes Beispiel zur Potenzregel mit Anwendungssatz (10 XP) | Korrektes Beispiel zu AM-GM mit Positivitaetsbedingung und Gleichheitsfall (10 XP) | Kriteriengeleitetes Fazit zum Verhaeltnis von Heuristik und Beweispflicht (5 XP).
 
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Wer Merkregel, Bedingungssatz und Anwendung an Potenzregel und AM-GM zeigt, schreibt klausurtauglich und erhaelt die volle Punktzahl.`
 
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Bruecke der Symbole
 TAKEAWAY 1盒（核心总结）：
@@ -156,4 +147,4 @@ REFLEXION 2问：
 1. 过程自省：Welcher Schritt fiel schwerer — das dreisprachige Diktat der Formeln (Schritt 2) oder die Zuordnung der passenden Formel im Vergleich (Schritt 5)?
 2. 元认知计划：Beim naechsten Mal notiere ich zu jeder Formel sofort ihre Bedingung, bevor ich sie anwende.
 
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Formeln sind Werkzeuge mit Zulassung: Erst die Bedingung pruefen, dann rechnen.`

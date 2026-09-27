@@ -13,7 +13,7 @@ version: Lesson-v3
 
 # Lernreise: Extremwertprobleme und Optimierung (L1, Ziel Klausur)
 
-<!-- Campaign: Optimierung | Episode 9/33 | Krise: Stahlseil-Dehnung 2,3 mm auf 100 m | Target: x0 = 6, h = 0.2, Target m = 6.33 | Tool: box-optimizer -->
+<!-- Campaign: Optimierung | Episode 9/33 | Krise: Stahlseil-Dehnung 2,3 mm auf 100 m | Zielgroessen: V(x) = x(20-2x)(12-2x), Definitionsmenge [0; 6], Ziel Maximum | Tool: box-optimizer -->
 
 ## Schritt 1 — entdecken: Containerschloss
 ZIELE (drei messbare Ziele dieser Lektion):
@@ -26,9 +26,9 @@ ZIELE (drei messbare Ziele dieser Lektion):
 
 ### Hook / Phaenomen
 
-Hook / Phaenomen (CAO-Log, Episode 9 von 33): Super-Engineering-Zentrale, Stahlseil-Dehnung 2,3 mm auf 100 m. Der Chief Algorithm Officer ruft: x0 = 6, h = 0.2, Target m = 6.33, die Assistentin meldet Rot-Alarm auf allen Screens. Genau hier entscheidet Extremwertprobleme und Optimierung ueber Freigabe oder Sperrung, ueber Kostenexplosion oder Rekordgewinn, ueber Kollision oder gruene Welle. Das Protokoll der Vorwoche (Mathe-CN-Tricks-L1.md) legte die Spur, das naechste Audit (Mathe-Extremwertprobleme-Optimierung-L1.md) laesst keine Ausrede mehr zu. Die Messwerte streuen, die Kurven zittern, doch die Mathematik bleibt unbestechlich: Wer Sekante und Tangente, Maximum und Wendepunkt, Vektor und Ebene richtig liest, rettet das Projekt. In dieser Episode stellst du im Sandbox-Optimierer die Parameter so ein, dass alle Kennzahlen im gruenen Bereich landen. Beobachte zuerst das Phaenomen in Ruhe, benenne dann die Objekte mit exakter Notation, pruefe schliesslich das Ergebnis mit einer Gegenrechnung. Der folgende Weg fuehrt vom Alarmton zur sauberen Klausurloesung: erst das Phaenomen beobachten, dann die Begriffe sichern, dann das Modell rechnen und im Labor bestaetigen.
+Hook / Phaenomen: Aus einem Blech soll die groesste Schachtel werden: Jeder Schnitt veraendert Volumen und Flaeche zugleich. Die **Zielfunktion** misst den Gewinn, die **Nebenbedingung** frisst eine Variable. Wo die **Extremalbedingung** null wird, steht das **Optimum**.
 
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Optimieren heisst einsperren: Zielfunktion plus Nebenbedingung erzeugen eine Variable mit Rand.`
 
 ## Schritt 2 — entdecken: Ausruestungskiste der Algorithmus-Unit
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
@@ -39,19 +39,17 @@ Fuenf Begriffe trennen in dieser Lektion Alltagssprache von Klausursprache. Wer 
 
 ### Fachbegriffe & Definitionen
 
-- **Zielfunktion:** Die zu optimierende Groesse als Funktion einer Variablen, etwa $V(a)=(L-2a)(B-2a)a$. Mechanismus: Volumenformel aufstellen und alles durch eine Variable ausdruecken. Klausur-Punkt: Zielfunktion mit Definitionsmenge explizit angeben.
-- **Nebenbedingung:** Die feste Ressource koppelt die Variablen, etwa Umfang oder Materialverbrauch. Mechanismus: Bedingungsgleichung aufstellen und nach einer Variablen aufloesen. Klausur-Punkt: Nebenbedingung nennen und Einsetzen sichtbar zeigen.
-- **Extremalbedingung:** Die Gleichung $f'(x) = 0$ liefert die Kandidaten fuer innere Extrema. Mechanismus: Ableiten, null setzen und Loesungen bestimmen. Klausur-Punkt: Kandidaten vollständig berechnen und als Kandidaten benennen.
-- **Definitionsmenge:** Das sachlich sinnvolle Intervall begrenzt die Suche, etwa $0 < a < B/2$. Mechanismus: Aus der Geometrie sinnvolle Grenzen ableiten. Klausur-Punkt: Intervall angeben und Randwerte spaeter pruefen.
-- **Randpruefung:** Der Vergleich von Kandidaten mit den Randwerten sichert das globale Extremum. Mechanismus: Funktionswerte an allen Kandidaten und Raendern berechnen und vergleichen. Klausur-Punkt: Alle Werte tabellarisch vergleichen und Maximum begruenden.
+- **Zielfunktion:** Die zu optimierende Groesse als Funktion einer Variablen, etwa $V(a)=(L-2a)(B-2a)a$. Sie haengt nach Einsetzen der Nebenbedingung nur noch von einer Variablen ab. Mechanismus: Volumenformel aufstellen und alles durch eine Variable ausdruecken. Klausur-Tipp: Zielfunktion mit Definitionsmenge explizit angeben.
+- **Nebenbedingung:** Die feste Ressource koppelt die Variablen, etwa Umfang oder Materialverbrauch. Sie frisst genau eine Variable und schrumpft das Problem auf eine Dimension. Mechanismus: Bedingungsgleichung aufstellen und nach einer Variablen aufloesen. Klausur-Tipp: Nebenbedingung nennen und Einsetzen sichtbar zeigen.
+- **Extremalbedingung:** Die Gleichung $f'(x) = 0$ liefert die Kandidaten fuer innere Extrema. Nullsetzen der Ableitung liefert nur Kandidaten, keine Sicherheit. Mechanismus: Ableiten, null setzen und Loesungen bestimmen. Klausur-Tipp: Kandidaten vollständig berechnen und als Kandidaten benennen.
+- **Definitionsmenge:** Das sachlich sinnvolle Intervall begrenzt die Suche, etwa $0 < a < B/2$. Physikalisch unmoegliche Werte werden vor jeder Rechnung ausgeschlossen. Mechanismus: Aus der Geometrie sinnvolle Grenzen ableiten. Klausur-Tipp: Intervall angeben und Randwerte spaeter pruefen.
+- **Randpruefung:** Der Vergleich von Kandidaten mit den Randwerten sichert das globale Extremum. Das Maximum kann am Rand groesser sein als jeder innere Kandidat. Mechanismus: Funktionswerte an allen Kandidaten und Raendern berechnen und vergleichen. Klausur-Tipp: Alle Werte tabellarisch vergleichen und Maximum begruenden.
 
 ### Wirkungsgefuege / Modell
 
 Die Kette verbindet alle fuenf Begriffe zu einem Verfahren: Erkennen, Einordnen, Aufstellen, Loesen und Deuten. Jeder Begriff traegt genau einen Schritt, gemeinsam sichern sie die volle Punktzahl.
 
-Klausur-Satz: `Die Nebenbedingung reduziert die Zielfunktion auf eine Variable, die Definitionsmenge legt das Intervall fuer die Randpruefung fest.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Die Nebenbedingung reduziert die Zielfunktion auf eine Variable, die Definitionsmenge legt das Intervall fuer die Randpruefung fest.`
 
 ## Schritt 3 — entdecken: Wirkungskette hinter Extremwertprobleme und Optimierung
 EXPERIMENTELLE ERKUNDUNG (Sandbox, erst spielen, dann deuten):
@@ -81,9 +79,8 @@ Die Kausalkette laeuft von der Schachtel ueber die Funktion zum globalen Maximum
 ```
 Formelkern: $V(a)=(L-2a)(B-2a)a$
 
-Klausur-Satz: `Das globale Maximum liegt entweder an einer inneren Stelle mit f'(x) = 0 oder am Rand des Definitionsbereichs.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+$$V(x) = x(20-2x)(12-2x),\quad V'(x_E) = 0$$
+`Klausur-Satz: Das globale Maximum liegt entweder an einer inneren Stelle mit f'(x) = 0 oder am Rand des Definitionsbereichs.`
 
 ## Anekdote & Fun-Fact
 Ein Logistik-Unternehmen wollte Porto sparen und fragte: Welche offene Kiste aus einem Standard-Bogen hat das groesste Volumen? Die Antwort war nicht die groesste oder die kleinste Schnitttiefe, sondern ein Wert dazwischen. Genau so arbeiten Optimierer in Fabriken: Sie suchen den Gipfel einer Funktion, nicht das Extrem der Einzelteile.
@@ -91,7 +88,7 @@ Ein Logistik-Unternehmen wollte Porto sparen und fragte: Welche offene Kiste aus
 Bezug zum Konzept: `Die optimale Kiste liegt am Gipfel der Zielfunktion, und erst die Randpruefung macht aus einem Kandidaten das globale Maximum.`
 
 ## Schritt 4 — ausprobieren: Sandbox-Auftrag Containerschloss
-Kontinuitaet: Vorher Mathe-CN-Tricks-L1.md | Nachher Mathe-Extremwertprobleme-Optimierung-L1.md. Krise dieser Episode: Stahlseil-Dehnung 2,3 mm auf 100 m. Target: x0 = 6, h = 0.2, Target m = 6.33.
+Kontinuitaet: Vorher Mathe-CN-Tricks-L1.md | Nachher Mathe-Extremwertprobleme-Optimierung-L1.md. Krise dieser Episode: Stahlseil-Dehnung 2,3 mm auf 100 m. Zielgroessen: V(x) = x(20-2x)(12-2x), Definitionsmenge [0; 6], Ziel Maximum
 
 BEISPIEL (Sandbox Level mit Werkzeug):
 
@@ -106,14 +103,12 @@ HILFE:
 
 MUSTERLOESUNG: Sandbox zeigt das Maximum bei $a = a_1$ mit $V(a_1)$ als hoechstem Wert. Rechnung $V'(a_1) = 0$ mit $V''(a_1) < 0$ bestaetigt den inneren Hochpunkt. Randvergleich $V(a_1) > V(0)$ und $V(a_1) > V(B/2)$ sichert das globale Maximum auf $D$. Die Randpruefung ist noetig, weil das globale Maximum auch am Rand liegen koennte und $V'=0$ nur innere Kandidaten liefert.
 
-Klausur-Satz: `Mit V'(x1) = 0, V''(x1) < 0 und V(x1) > V(0), V(x1) > V(6) ist x1 die globale Maximalstelle auf D.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Mit V'(x1) = 0, V''(x1) < 0 und V(x1) > V(0), V(x1) > V(6) ist x1 die globale Maximalstelle auf D.`
 
 ## Schritt 5 — ausprobieren: Duell der Verfahren Containerschloss
 VERGLEICH (Wahl des Verfahrens, A gegen B):
 
-VERGLEICH: Triff zuerst die Wahl des Verfahrens: (i) Extremwert-Schema (Maximum oder Minimum mit Zielfunktion, Nebenbedingung, Definitionsmenge und Randpruefung) oder (ii) Nur-Ableitung-Schema (nur Stellen mit $f' = 0$ bestimmen, ohne Sachkontext und ohne Randvergleich) > dann loesen.
+VERGLEICH: (Weg A quantitativ-rechnerisch gegen Weg B qualitativ-strukturell): Triff zuerst die Wahl des Verfahrens: (i) Extremwert-Schema (Maximum oder Minimum mit Zielfunktion, Nebenbedingung, Definitionsmenge und Randpruefung) oder (ii) Nur-Ableitung-Schema (nur Stellen mit $f' = 0$ bestimmen, ohne Sachkontext und ohne Randvergleich) > dann loesen.
 
 Weg A: Erst Verfahren waehlen, dann rechnen.
 
@@ -126,20 +121,16 @@ HILFE: Aufgabe A enthaelt Woerter wie $maximal$, feste Drahtlaenge und offene Ki
 
 ANTWORT: A erfordert Verfahren (i): Sei Grundkante $a$ und Hoehe $h$, dann $4a + 4h = 36$, also $h = 9 - a$, $V(a) = a^2(9-a)$ auf $D = [0, 9]$; $V'(a) = 18a - 3a^2 = 0$ liefert $a = 6$ ($a = 0$ ist Rand), $V''(6) < 0$, Randwerte $0$, also $a = 6\,\mathrm{cm}$, $h = 3\,\mathrm{cm}$, $V_{\max} = 108\,\mathrm{cm}^3$. B erfordert Verfahren (ii): $f'(x) = 3x^2 - 6x = 3x(x-2) = 0$, also $x = 0$ und $x = 2$; mit $f''(x) = 6x - 6$ gilt $f''(0) = -6 < 0$ (Maximum) und $f''(2) = 6 > 0$ (Minimum), ohne Randvergleich.
 
-Klausur-Satz: `Ein Sachkontext mit fester Ressource verlangt das volle Extremwert-Schema inklusive Randpruefung, eine reine Formel verlangt nur die Analyse von f'(x) = 0.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Ein Sachkontext mit fester Ressource verlangt das volle Extremwert-Schema inklusive Randpruefung, eine reine Formel verlangt nur die Analyse von f'(x) = 0.`
 
 ## Schritt 6 — check: Selbsttest zu Extremwertprobleme und Optimierung: Containerschloss
 CHECK (drei Fragen mit Antworten):
 
-FRAGE: Wie lautet das Drei-Schritt-Schema eines Extremwertproblems? | ANTWORT: Zielfunktion aufstellen, mit Nebenbedingung auf eine Variable reduzieren, Kandidaten mit $f'(x) = 0$ suchen und mit Randpruefung beurteilen.
-FRAGE: Warum reicht $f'(x) = 0$ allein nicht fuer ein globales Maximum? | ANTWORT: Weil $f'(x) = 0$ nur lokale Kandidaten liefert; erst der Vergleich mit den Randwerten zeigt, ob ein Kandidat global maximal ist.
-FRAGE: Was gehoert zur vollstaendigen Angabe der Loesung im Sachkontext? | ANTWORT: Definitionsmenge mit Einheiten, optimale Stelle mit Einheit, maximaler Wert mit Einheit und ein Antwortsatz im Kontext.
+- FRAGE: Wie lautet das Drei-Schritt-Schema eines Extremwertproblems? | ANTWORT: Zielfunktion aufstellen, mit Nebenbedingung auf eine Variable reduzieren, Kandidaten mit $f'(x) = 0$ suchen und mit Randpruefung beurteilen.
+- FRAGE: Warum reicht $f'(x) = 0$ allein nicht fuer ein globales Maximum? | ANTWORT: Weil $f'(x) = 0$ nur lokale Kandidaten liefert; erst der Vergleich mit den Randwerten zeigt, ob ein Kandidat global maximal ist.
+- FRAGE: Was gehoert zur vollstaendigen Angabe der Loesung im Sachkontext? | ANTWORT: Definitionsmenge mit Einheiten, optimale Stelle mit Einheit, maximaler Wert mit Einheit und ein Antwortsatz im Kontext.
 
-Klausur-Satz: `Erst Zielfunktion plus Nebenbedingung plus Definitionsmenge plus Randpruefung ergeben eine vollstaendige Extremwert-Loesung.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Erst Zielfunktion plus Nebenbedingung plus Definitionsmenge plus Randpruefung ergeben eine vollstaendige Extremwert-Loesung.`
 
 ## Fehlvorstellung
 (Kein Schritt; wird vom Parser uebersprungen.)
@@ -155,7 +146,7 @@ SITUATION: Aus einem Standard-Bogen $24\,\mathrm{cm}$ mal $18\,\mathrm{cm}$ soll
 AUFGABE (beurteilen, AFB III): Entscheide, welche Schnittlaenge in die Produktion geht, und beurteile, wie sensibel das Maximum auf Abweichungen von $\pm 0{,}5\,\mathrm{cm}$ reagiert.
 RUBRIC (30 XP): Zielfunktion plus Definitionsmenge korrekt (5 XP) | Kandidaten mit Ableitung korrekt berechnet (10 XP) | Randpruefung mit Einheiten vollstaendig (10 XP) | Produktionsempfehlung mit Beurteilung der Sensibilitaet (5 XP).
 
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Wer Zielfunktion, Nebenbedingung, Extremalbedingung und Randpruefung lueckenlos zeigt, erhaelt die volle Punktzahl.`
 
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Containerschloss
 TAKEAWAY (Kernbotschaft in einem Kasten):
@@ -168,4 +159,4 @@ REFLEXION (zwei Fragen):
 1. Welcher Teil fiel schwerer: das Aufstellen von Zielfunktion und Nebenbedingung (Schritt 4) oder die Entscheidung fuer das volle Schema im Vergleich (Schritt 5)?
 2. Beim naechsten Mal schreibe ich zuerst $D$ mit Einheiten auf und plane die Randpruefung fest ein, bevor ich ableite.
 
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Jedes Optimum braucht drei Zeugen: Ableitung null, Vorzeichenwechsel und Randvergleich.`

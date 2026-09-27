@@ -13,7 +13,7 @@ version: Lesson-v3
 
 # Lernreise: Grenzwert mit der h-Methode an einer Stelle (L1, Ziel Klausur)
 
-<!-- Campaign: Optimierung | Episode 14/33 | Krise: Chemie-Reaktor Druck 6,8 bar kritisch | Target: x0 = 6, h = 0.7, Target m = 8.18 | Tool: tangent-slider -->
+<!-- Campaign: Optimierung | Episode 14/33 | Krise: Chemie-Reaktor Druck 6,8 bar kritisch | Zielgroessen: f(x) = x^2, Stelle x0 = 3, h-Methode mit Ziel 6 | Tool: tangent-slider -->
 
 ## Schritt 1 — entdecken: Ableitung um Mitternacht
 ZIELE (drei messbare Ziele dieser Lektion):
@@ -26,9 +26,9 @@ ZIELE (drei messbare Ziele dieser Lektion):
 
 ### Hook / Phaenomen
 
-Hook / Phaenomen (CAO-Log, Episode 14 von 33): Super-Engineering-Zentrale, Chemie-Reaktor Druck 6,8 bar kritisch. Der Chief Algorithm Officer ruft: x0 = 6, h = 0.7, Target m = 8.18, die Assistentin meldet Rot-Alarm auf allen Screens. Genau hier entscheidet Grenzwert mit der h-Methode an einer Stelle ueber Freigabe oder Sperrung, ueber Kostenexplosion oder Rekordgewinn, ueber Kollision oder gruene Welle. Das Protokoll der Vorwoche (Mathe-Grenzwert-h-Methode-Ableitung-Stelle-CN-L1.md) legte die Spur, das naechste Audit (Mathe-Grenzwert-h-Methode-Ableitung-Stelle-L1.md) laesst keine Ausrede mehr zu. Die Messwerte streuen, die Kurven zittern, doch die Mathematik bleibt unbestechlich: Wer Sekante und Tangente, Maximum und Wendepunkt, Vektor und Ebene richtig liest, rettet das Projekt. In dieser Episode stellst du im Sandbox-Optimierer die Parameter so ein, dass alle Kennzahlen im gruenen Bereich landen. Beobachte zuerst das Phaenomen in Ruhe, benenne dann die Objekte mit exakter Notation, pruefe schliesslich das Ergebnis mit einer Gegenrechnung. Der folgende Weg fuehrt vom Alarmton zur sauberen Klausurloesung: erst das Phaenomen beobachten, dann die Begriffe sichern, dann das Modell rechnen und im Labor bestaetigen.
+Hook / Phaenomen: Die Sekante rutscht an die Kurve heran, h schrumpft gegen null: Was uebrig bleibt, ist die exakte **Tangentensteigung**. Der **Differenzenquotient** misst noch den Durchschnitt, der **Differentialquotient** misst den Moment. Dazwischen liegt ein einziger Rechenschritt: **Kuerzen vor Grenzwert**.
 
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Die h-Methode verwandelt mittlere in lokale Aenderung: Differenzenquotient kuerzen, dann h gegen null schicken.`
 
 ## Schritt 2 — entdecken: Ausruestungskiste der Algorithmus-Unit
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
@@ -39,19 +39,17 @@ Fuenf Begriffe trennen in dieser Lektion Alltagssprache von Klausursprache. Wer 
 
 ### Fachbegriffe & Definitionen
 
-- **Differenzenquotient:** Der Term $(f(x_0+h)-f(x_0))/h$ misst die Sekantensteigung ueber die Breite h. Mechanismus: Werte einsetzen, ausmultiplizieren und h ausklammern. Klausur-Punkt: Term vollständig hinschreiben, bevor gekuerzt wird.
-- **h-Methode:** Das Verfahren berechnet $f'(x_0)$ durch Aufstellen, Kuerzen und Grenzuebergang $h \to 0$. Mechanismus: Drei Schritte strikt trennen und $h=0$ erst nach dem Kuerzen betrachten. Klausur-Punkt: Alle drei Schritte sichtbar zeigen, sonst gibt es Abzug.
-- **Differentialquotient:** Der Grenzwert $\lim_{h \to 0}(f(x_0+h)-f(x_0))/h$ fixiert die Tangentensteigung. Mechanismus: Gekuerzten Term nehmen und h gegen null laufen lassen. Klausur-Punkt: Limes-Zeichen schreiben und Ergebnis als Moment deuten.
-- **Kuerzen vor Grenzwert:** Die algebraische Vereinfachung beseitigt den Ausdruck $0/0$ vor dem Grenzuebergang. Mechanismus: h im Zaehler ausklammern und gegen den Nenner kuerzen. Klausur-Punkt: Kuerzung explizit zeigen, niemals $h=0$ vorher einsetzen.
-- **Tangentensteigung:** Der Wert $f'(x_0)$ gibt die Steigung der Tangente im Punkt P an. Mechanismus: Grenzwert berechnen und als Steigung am Punkt deuten. Klausur-Punkt: Punkt nennen, Steigung angeben und Tangentengleichung bei Bedarf aufstellen.
+- **Differenzenquotient:** Der Term $(f(x_0+h)-f(x_0))/h$ misst die Sekantensteigung ueber die Breite h. Er misst die mittlere Aenderungsrate ueber ein Intervall der Breite h. Mechanismus: Werte einsetzen, ausmultiplizieren und h ausklammern. Klausur-Tipp: Term vollständig hinschreiben, bevor gekuerzt wird.
+- **h-Methode:** Das Verfahren berechnet $f'(x_0)$ durch Aufstellen, Kuerzen und Grenzuebergang $h \to 0$. Sie ist das Standardverfahren, wenn der Operator nachweisen oder zeigen verlangt. Mechanismus: Drei Schritte strikt trennen und $h=0$ erst nach dem Kuerzen betrachten. Klausur-Tipp: Alle drei Schritte sichtbar zeigen, sonst gibt es Abzug.
+- **Differentialquotient:** Der Grenzwert $\lim_{h \to 0}(f(x_0+h)-f(x_0))/h$ fixiert die Tangentensteigung. Er ist der Grenzwert des Differenzenquotienten und misst die lokale Rate. Mechanismus: Gekuerzten Term nehmen und h gegen null laufen lassen. Klausur-Tipp: Limes-Zeichen schreiben und Ergebnis als Moment deuten.
+- **Kuerzen vor Grenzwert:** Die algebraische Vereinfachung beseitigt den Ausdruck $0/0$ vor dem Grenzuebergang. Ohne Kuerzen stuende null durch null da, der Grenzwert bliebe unlesbar. Mechanismus: h im Zaehler ausklammern und gegen den Nenner kuerzen. Klausur-Tipp: Kuerzung explizit zeigen, niemals $h=0$ vorher einsetzen.
+- **Tangentensteigung:** Der Wert $f'(x_0)$ gibt die Steigung der Tangente im Punkt P an. Sie ist das Endergebnis der h-Methode und gleichzeitig f Strich an der Stelle. Mechanismus: Grenzwert berechnen und als Steigung am Punkt deuten. Klausur-Tipp: Punkt nennen, Steigung angeben und Tangentengleichung bei Bedarf aufstellen.
 
 ### Wirkungsgefuege / Modell
 
 Die Kette verbindet alle fuenf Begriffe zu einem Verfahren: Erkennen, Einordnen, Aufstellen, Loesen und Deuten. Jeder Begriff traegt genau einen Schritt, gemeinsam sichern sie die volle Punktzahl.
 
-Klausur-Satz: `Der Differenzenquotient beschreibt die Sekantensteigung, sein Grenzwert die Tangentensteigung an der Stelle x_0.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Der Differenzenquotient beschreibt die Sekantensteigung, sein Grenzwert die Tangentensteigung an der Stelle x_0.`
 
 ## Schritt 3 — entdecken: Wirkungskette hinter Grenzwert mit der h-Methode an einer Stelle
 EXPERIMENTELLE ERKUNDUNG (Sandbox, erst spielen, dann deuten):
@@ -79,9 +77,8 @@ Die Kausalkette laeuft von der Sekante ueber das Kuerzen zum Grenzwert: Zuerst s
 ```
 Formelkern: $(f(x_0+h)-f(x_0))/h$
 
-Klausur-Satz: `Vor dem Grenzuebergang muss der Differenzenquotient algebraisch gekuerzt werden, da sonst der Ausdruck 0 durch 0 entstuende.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+$$f'(x_0) = \lim_{h\to 0}\frac{f(x_0+h)-f(x_0)}{h}$$
+`Klausur-Satz: Vor dem Grenzuebergang muss der Differenzenquotient algebraisch gekuerzt werden, da sonst der Ausdruck 0 durch 0 entstuende.`
 
 ## Anekdote & Fun-Fact
 Newtons Fluxionen und Leibniz Differenzen entstanden aus demselben Problem: Wie legt man an eine krumme Kurve eine gerade Tangente? Beide loesten es durch denselben Grenzgedanken, stritten aber jahrzehntelang um die Prioritaet.
@@ -89,7 +86,7 @@ Newtons Fluxionen und Leibniz Differenzen entstanden aus demselben Problem: Wie 
 Bezug zum Konzept: `Die h-Methode vollzieht exakt diesen historischen Grenzgedanken an einer einzelnen Stelle nach.`
 
 ## Schritt 4 — ausprobieren: Sandbox-Auftrag Ableitung um Mitternacht
-Kontinuitaet: Vorher Mathe-Grenzwert-h-Methode-Ableitung-Stelle-CN-L1.md | Nachher Mathe-Grenzwert-h-Methode-Ableitung-Stelle-L1.md. Krise dieser Episode: Chemie-Reaktor Druck 6,8 bar kritisch. Target: x0 = 6, h = 0.7, Target m = 8.18.
+Kontinuitaet: Vorher Mathe-Grenzwert-h-Methode-Ableitung-Stelle-CN-L1.md | Nachher Mathe-Grenzwert-h-Methode-Ableitung-Stelle-L1.md. Krise dieser Episode: Chemie-Reaktor Druck 6,8 bar kritisch. Zielgroessen: f(x) = x^2, Stelle x0 = 3, h-Methode mit Ziel 6
 
 BEISPIEL (Sandbox Level mit Werkzeug):
 
@@ -104,14 +101,12 @@ HILFE:
 
 MUSTERLOESUNG: Sandbox $h = 1{,}0$ liefert $m = 3$, $h = 0{,}5$ liefert $m = 2{,}5$, $h = 0{,}1$ liefert $m = 2{,}1$, die Tendenz zeigt $2$. Rechnung $f(1+h)-f(1) = 2h+h^2 = h(2+h)$, also $m(h) = 2+h$ fuer $h \ne 0$, mit $h \to 0$ folgt $f'(1) = 2$. Der verbotene Schritt waere $h = 0$ vor dem Kuerzen mit Ergebnis $0/0$. Die Tangente in P(1|1) besitzt die Steigung 2.
 
-Klausur-Satz: `Mit der h-Methode folgt f'(1) = 3, also besitzt die Tangente im Punkt P die Steigung 3.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Mit der h-Methode folgt f'(1) = 3, also besitzt die Tangente im Punkt P die Steigung 3.`
 
 ## Schritt 5 — ausprobieren: Duell der Verfahren Ableitung um Mitternacht
 VERGLEICH (Wahl des Verfahrens, A gegen B):
 
-VERGLEICH: Triff zuerst die Wahl des Verfahrens: (i) h-Methode an einer Stelle (AFB II mit Grenzwert; Vorgehen: Ansatz, Kuerzen, Limes) oder (ii) Ableitungsregel direkt (AFB I, nur Ergebnis nennen) > dann loesen.
+VERGLEICH: (Weg A quantitativ-rechnerisch gegen Weg B qualitativ-strukturell): Triff zuerst die Wahl des Verfahrens: (i) h-Methode an einer Stelle (AFB II mit Grenzwert; Vorgehen: Ansatz, Kuerzen, Limes) oder (ii) Ableitungsregel direkt (AFB I, nur Ergebnis nennen) > dann loesen.
 
 Weg A: Erst Verfahren waehlen, dann rechnen.
 
@@ -124,20 +119,16 @@ HILFE: Aufgabe A verlangt den sichtbaren Grenzweg mit $h$, daher Verfahren (i). 
 
 ANTWORT: A erfordert Verfahren (i): $m(h) = ((2+h)^2 + 1 - 5)/h = (4h + h^2)/h = 4 + h$, also $f'(2) = 4$. B erfordert Verfahren (ii): $g'(x) = 2x$, also $g'(2) = 4$. Beide Wege liefern denselben Wert, doch nur Verfahren (i) zeigt den Grenzprozess.
 
-Klausur-Satz: `Die h-Methode und die Ableitungsregel liefern denselben Wert, doch nur die h-Methode belegt den Grenzprozess.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Die h-Methode und die Ableitungsregel liefern denselben Wert, doch nur die h-Methode belegt den Grenzprozess.`
 
 ## Schritt 6 — check: Selbsttest zu Grenzwert mit der h-Methode an einer Stelle: Ableitung um Mitternacht
 CHECK (drei Fragen mit Antworten):
 
-FRAGE: Wie lautet der Ansatz der h-Methode an der Stelle $x_0$? | ANTWORT: $m(h) = (f(x_0+h) - f(x_0))/h$ mit $h \ne 0$.
-FRAGE: Warum darf $h = 0$ nicht vor dem Kuerzen eingesetzt werden? | ANTWORT: Weil sonst der unbestimmte Ausdruck $0/0$ entstuende; erst nach dem Kuerzen ist der Grenzwert ablesbar.
-FRAGE: Was bedeutet das Ergebnis $f'(x_0)$ geometrisch? | ANTWORT: Die Steigung der Tangente an den Graphen im Punkt $P(x_0, f(x_0))$.
+- FRAGE: Wie lautet der Ansatz der h-Methode an der Stelle $x_0$? | ANTWORT: $m(h) = (f(x_0+h) - f(x_0))/h$ mit $h \ne 0$.
+- FRAGE: Warum darf $h = 0$ nicht vor dem Kuerzen eingesetzt werden? | ANTWORT: Weil sonst der unbestimmte Ausdruck $0/0$ entstuende; erst nach dem Kuerzen ist der Grenzwert ablesbar.
+- FRAGE: Was bedeutet das Ergebnis $f'(x_0)$ geometrisch? | ANTWORT: Die Steigung der Tangente an den Graphen im Punkt $P(x_0, f(x_0))$.
 
-Klausur-Satz: `Der Grenzwert des gekuerzten Differenzenquotienten ist die Ableitung an der Stelle x_0.`
-
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Der Grenzwert des gekuerzten Differenzenquotienten ist die Ableitung an der Stelle x_0.`
 
 ## Fehlvorstellung
 (Kein Schritt; wird vom Parser uebersprungen.)
@@ -153,7 +144,7 @@ SITUATION: Deine Mitschuelerin hat fuer $f(x) = x^2$ an der Stelle $x_0 = 3$ den
 AUFGABE (begruenden, AFB III): Verfasse eine zusammenhaengende Darstellung von etwa 150 Woertern mit Ansatz, Umformung, Grenzwert und Deutung.
 RUBRIC (30 XP): Korrekter Ansatz mit $h$ (8 XP) | Vollstaendige Umformung mit Kuerzen (10 XP) | Grenzwert $f'(3) = 6$ (6 XP) | Geometrische Deutung als Tangentensteigung (6 XP).
 
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Wer Differenzenquotient aufstellt, kuerzt, Grenzuebergang vollzieht und als Tangentensteigung deutet, erhaelt die volle Punktzahl.`
 
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Ableitung um Mitternacht
 TAKEAWAY (Kernbotschaft in einem Kasten):
@@ -166,4 +157,4 @@ REFLEXION (zwei Fragen):
 1. Welcher Schritt fiel schwerer: das Ausklammern von $h$ (Schritt 4) oder die Verfahrenswahl (Schritt 5)?
 2. Beim naechsten Mal schreibe ich zuerst den Ansatz hin, bevor ich umforme, weil der Ansatz die Operatorleistung sichert.
 
-`Klausur-Satz: Siehe Schritt-Inhalt.`
+`Klausur-Satz: Ableiten ist Grenzwertbildung: Erst algebraisch kuerzen, dann erst null einsetzen.`
