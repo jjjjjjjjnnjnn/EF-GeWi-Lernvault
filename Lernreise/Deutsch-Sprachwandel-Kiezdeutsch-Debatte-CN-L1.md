@@ -13,155 +13,130 @@ version: Lesson-v3
 
 # Lernreise: Sprachwandel und Kiezdeutsch-Debatte (L1, Ziel Klausur)
 
-<!-- Lesson v3 9步制架构：Schritt 1至8固定结构；Fehlvorstellung 夹在 Schritt 6 与 7 之间（Parser 自动跳过，不占步数）；支持内嵌 [Werkzeug: <id>] 交互教具；Gating: check/szenario 未过 = Weiter 置灰；XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
+<!-- Campaign: Detektive Fal 22 -->
+## Schritt 1 — entdecken: Der versiegelte Umschlag aus der Archivnacht
 
-## Schritt 1 — entdecken: Ziele & Phänomen-Einstieg
+ZIELE（3条，15分钟可达成，先读中文，再记德语）：
 
-ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
+1. 中文：能把第22号案件（校园语言问卷）按背景、方法、判断三步拆开。
+   德语：Ordne Fall 22 in Kontext, Verfahren und Deutung.
+2. 中文：每个论断配引文加行号，并说清功能。
+   德语：Belege jede Aussage mit Zitat, Zeile und Funktion.
+3. 中文：按能力层级写出判断句。
+   德语：Faelle ein Urteil im passenden Anforderungsbereich.
 
-1. 中文：能说清语言变化的三大机制——简化省力、外来接触、青年身份标记。
-2. 中文：能列举街区德语的典型特征（冠词省略、语序创新、多语混合）并判断其系统性。
-3. 中文：能就"街区德语是 enrich 还是 Verfall"写出辩证议论并表态（AFB II-III）。
+HOOK：
 
+深夜，跨时空文案侦探社的蓝灯又亮了。搭档把一只密封信封推到你面前：这是第22号案件，一份校园语言问卷。表面看只是一段语言变迁辩论，但灯光下浮现出第二层痕迹——有人删改、夸大或偷换了关键信息。你们作为思想特工与文本侦探，必须在十五分钟内锁定三个目标：找证据、说功能、下判断，每一步都要有出处支撑。下一道时空门只为证据链完整的人打开，搭档已经在催你了，线索正在变冷。
 
-Hook中文生活切入:
+德语版钩子：Agent Theo Wort legt Fall 22 (Schulhof-Umfrage mit widerspruechlichen Antworten) auf deinen Tisch. Falllinie D: Das Archiv der Agentur meldet einen Riss in der Zeit, durch den ein Text in unsere Gegenwart gefallen ist.
 
-想象爷爷奶奶听孙子打电话:满嘴 совершенно andere Woerter、语序乱飞、还夹着外语词,老人摇头说世风日下,年轻人却觉得这才是自己人的暗号。语言流变争论的核心正是这代际错位:一方看到衰败,另一方看到身份与创造,考场要的是双方论据的公平呈现而非站队。老少两代的互相摇头里,藏着本节要评判的全部论据。
+Klausur-Satz: `Sprache wandelt sich im Gebrauch: Wer heute spricht, schreibt morgen die Regel.`
 
-Phaenomen-Satz (DE): Die Grosseltern hoeren Verfall, die Enkel hoeren Heimat.
+## Schritt 2 — entdecken: Die Ausruestungskiste gegen Fall 22
 
-中文机制铺垫:先列流变证据:借词、省略、语序变化与新构词;再列双方论证:衰败论讲规范与传承,丰富论讲身份、经济性与语言接触的常态;最后用辩证结构收束:变化不可阻挡,规范可以引导,结论落到引导而非禁止。
+装备盒（5件，先读中文，再背德语）：
 
-Mechanismus-Satz (DE): Sprachwandel ist normal, die Bewertung entscheidet ueber Verfall oder Gewinn.
+- 中文点拨：语言变迁辩论之1号工具。
+  德语：**Sprachwandel: regelmaessiger Laut- und Formwechsel ueber Zeit**
+- 中文点拨：语言变迁辩论之2号工具。
+  德语：**Kiezdeutsch: kontaktbedingte Varietaet mit eigenen Mustern**
+- 中文点拨：语言变迁辩论之3号工具。
+  德语：**Register: situationsgerechte Sprachwahl zwischen Naehe und Distanz**
+- 中文点拨：语言变迁辩论之4号工具。
+  德语：**Norm und Gebrauch: Regelbuch gegen lebendige Praxis**
+- 中文点拨：语言变迁辩论之5号工具。
+  德语：**Mehrsprachigkeit: Ressource statt Stoerquelle im Alltag**
 
-Klausur-Satz: `Sprachwandel ist normal und regelhaft, Kiezdeutsch ist ein systematisches Register, kein defektes Deutsch.`
+Klausur-Satz: `Sprache wandelt sich im Gebrauch: Wer heute spricht, schreibt morgen die Regel.`
 
-## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
+## Schritt 3 — entdecken: Der Mechanismus hinter dem Tatbild
 
-PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
+中文深层解构：语言变迁辩论的关键链条是证据、功能、判断三步走。先锁引文行号，再说它在整体中的作用，最后下判断。第22号案件（校园语言问卷）的第二层痕迹就藏在这里。
 
-中文在上，德语在下：
-
-- 语言变化 — Sprachwandel：语音词汇语法的历时演变。【陷阱：Wandel（中性演变）不是 Verfall（贬义衰败，价值判断）。】
-- 街区德语 — Kiezdeutsch：多语城区青年的口语变体，有自足规则。【陷阱：Kiezdeutsch（系统性变体 urban vernacular）不是 gebrochenes Deutsch（残缺德语，歧视标签）。】
-- 语域 — Register / Varietaet：按场合切换的语言样式。【陷阱：Register（场合适配）不是 Niveau（高低等级）。】
-- 简化 — Oekonomisierung / Vereinfachung：省力驱动的规则精简。【陷阱：Vereinfachung（系统性省力）不是 Faulheit（个人懒惰）。】
-- 语言批评 — Sprachkritik：对语言使用的评价，常掺杂社会偏见。【陷阱：Sprachkritik（评价使用）不是 Sprachwissenschaft（描写规律）。】
-
-Klausur-Satz: `Jede Generation wirft der naechsten Sprachverfall vor und nutzt selbst gewandeltes Deutsch.`
-
-## Schritt 3 — entdecken: Kernkonzept & Wirkungsmodell
-
-ENTDECKEN（1概念 + 1文字图解，中文在上、德语在下）：
-
-Hook中文生活切入：
-
-中文：想象家长群里长辈吐槽绝绝子，转头自己发了个yyds：每代人都骂下一代糟蹋中文，自己也在变。
-
-Phaenomen-Satz (DE): Jede Generation beklagt den Verfall und spricht selbst gewandelt.
-
-Spiel-Aufgabe沙盒操作指引：
-
-中文：打开语料沙盒，用 highlighter 标出 Kiezdeutsch 的规则特征（关键词：Register, Codeswitching, Systematik, Varietaet），对比标准语看省略与语序是否有规律。
-
-Beobachtungs-Satz (DE): Weglassungen folgen Regeln, Wechsel folgt Situationen.
-
-Aha-Moment因果链：
-
-中文因果链：语言变化有规律、可验证；Kiezdeutsch 的冠词省略与语序自成系统，且使用者能按场合切换，证明这是多掌握一种变体而非少会一种语言；禁令针对出身，教学针对能力，只有后者有效。
-
-Gesetz-Satz (DE): Wer situationsgerecht wechselt, beherrscht mehr Sprache, nicht weniger.
-
-文字图解（ASCII 结构图，App支持解析渲染）：
+德语：Befund mit Zeile, Funktion im Gefuege, Deutung als Urteil zu Sprachwandel und Kiezdeutsch-Debatte.
 
 ```diagram
-Korpus -> Merkmale (Artikel-Drop, Wortstellung, Lexik)
-Test: regelhaft? wechselbar? -> Varietaet ja / Defizit nein
-Fazit: Didaktik statt Verbot
+Befund (Zitat mit Zeile) -> Funktion (Wirkung) -> Deutung (Urteil)
+Fall 22
 ```
-Klausur-Satz: `Wer situationsgerecht wechselt, beherrscht mehr Sprache, nicht weniger.`
 
-## Anekdote & Fun-Fact
+Klausur-Satz: `Sprache wandelt sich im Gebrauch: Wer heute spricht, schreibt morgen die Regel.`
 
-**Anekdote / Fun-Fact (DE)**: Schon Martin Luther schimpfte ueber die Jugendsprache seiner Zeit, und 1780 warnte Adelung vor dem Verfall durch Modewoerter — jedes Jahrhundert hat seinen Untergang des Deutschen ausgerufen, und Deutsch wird trotzdem noch gesprochen. Die Linguistin Heike Wiese zeigte mit Kiezdeutsch-Korpora: Die Jugend spricht nicht falsch, sondern folgt eigenen Regeln.
+## Anekdote
 
-**中文解读**: 每个世纪都有人宣布"德语完了"——路德骂过，1780 年词典学家骂过，今天轮到短视频。语言学家薇泽用语料库证明街区德语自有语法。中国学生记住这个"千年打脸史"，议论文开头就有力。
+中文解读：语言变迁辩论里藏着侦探的耐心：每个细节都是 portal 的钥匙。
 
-**Bezug zum Konzept**: `Die Geschichte der Sprachklagen ist die beste Verteidigung gegen neue Sprachklagen.`
+德语：Ein Schaffner sammelte einst neue Groesse, weil Fahrgaeste sie taeglich erfanden.
 
-## Schritt 4 — ausprobieren: Interaktive Praxis & Labor
+Bezug zum Konzept: `Sprache wandelt sich im Gebrauch: Wer heute spricht, schreibt morgen die Regel.`
 
-[Werkzeug: highlighter]
+## Schritt 4 — ausprobieren: Die Sandkasten-Pruefung mit Sprechuhr
 
-BEISPIEL（正确例题示范，含教具操作与解答，中文在上、德语在下）：
+[Werkzeug: oral-timer]
 
-AUFGABE中文导读（辩论谜题）：有人主张禁掉 Kiezdeutsch，有人主张教切换。请用语料证据裁决这场争论。
+中文任务：分析第22号案文本（校园语言问卷）。
+德语 AUFGABE: Untersuche Fall 22 (Schulhof-Umfrage mit widerspruechlichen Antworten) zu Sprachwandel und Kiezdeutsch-Debatte.
+TARGET（目标）：三个带行号证据，各配功能与判断，共四句。
 
-AUFGABE (eroertern, AFB III): Beurteilen Sie Verbot versus Didaktik im Umgang mit Kiezdeutsch anhand von Systematik und Wechselfaehigkeit.
+HILFE（中文在前）：
+1. 中文：两句交代背景。德语：Ordne den Fall in zwei Saetzen ein.
+2. 中文：锁两个证据加行号。德语：Sichere zwei Befunde mit Zeile.
+3. 中文：功能加判断收尾。德语：Deute Funktion im Fallganzen.
 
-HILFE（中德双语步骤）：
+MUSTERLOESUNG: 中文示范思路：先背景一句，再证据加功能两句，最后判断一句收束。
+德语 MUSTERLOESUNG: Fall 22 zeigt Sprachwandel und Kiezdeutsch-Debatte in drei Schritten mit Beleg, Funktion und Deutung; die zweite Schicht ist entlarvt.
 
-1. 中文：第1步摆规律证据：省略与语序可重复出现，关键词：Korpus。
-   Schritt 1 (DE): Belegen Sie Regelhaftigkeit am Korpus.
-2. 中文：第2步摆切换证据：同一个人正式场合切回标准语，关键词：Wechsel。
-   Schritt 2 (DE): Belegen Sie situatives Umschalten.
-3. 中文：第3步裁决：禁令无效、教学有效，关键词：Urteil。
-   Schritt 3 (DE): Urteilen Sie: Verbot trifft Herkunft, Didaktik trifft Kompetenz.
+Klausur-Satz: `Sprache wandelt sich im Gebrauch: Wer heute spricht, schreibt morgen die Regel.`
 
-MUSTERLOESUNG：中文：语料显示省略与语序成系统、使用者能切换，缺陷论不成立；禁令只打击身份不增加能力，切换教学既保表达又保规范，故判教学胜。
+## Schritt 5 — ausprobieren: Das doppelte Spiel Weg A gegen Weg B
 
-MUSTERLOESUNG (DE): Systematik plus Wechselfaehigkeit beweisen Varietaet und widerlegen die Defizit-These. Das Verbot wirkt auf Herkunft, die Didaktik auf Kompetenz; nur die Didaktik erhoeht Registerbreite.
-Klausur-Satz: `Systematik plus Wechselfaehigkeit beweisen Varietaet und widerlegen die Defizit-These.`
+VERGLEICH（中文先行）：先选路再做题：【选程序】(i) Weg A 近路（引文、细节、效果）还是 (ii) Weg B 远路（背景、结构、判断）。
+德语：Waehle erst das Verfahren (Weg A oder Weg B), dann loesen.
 
-## Schritt 5 — ausprobieren: Verfahrensvergleich & Abgrenzung
+AUFGABE A（中文：哪条线索走近路？配引文）：Welche Spur verlangt Weg A?
+AUFGABE B（中文：哪个整体问题走远路？配背景）：Welche Frage verlangt Weg B?
 
-VERGLEICH辨别实验（双向辨析：衰败眼 vs. 资源眼）：
+HILFE：A问形式细节选近路Weg A；B问整体结构选远路Weg B。【选程序看题干：问细节选A，问整体选B。】
 
-VERGLEICH: Waehle erst das Konzept — 【选概念】先看评价立场：(i) Verfalls-Konzept（语言在堕落 → 要求禁止纠正）还是 (ii) Ressourcen-Konzept（语言在增殖 → 要求描写加切换训练）—— dann argumentieren.
+中文答案：A走近路靠引文细节，B走远路靠背景结构。
+德语 ANTWORT: A erfordert Weg A mit Nahbeleg, B erfordert Weg B mit Kontext zu Sprachwandel und Kiezdeutsch-Debatte.
 
-AUFGABE A：Ein Kommentar fordert: „Kiezdeutsch gehoert auf dem Schulhof verboten." Welche Position?
-AUFGABE B：Eine Studie zeigt: Kiez-Sprecher wechseln normgerecht im Aufsatz. Welche Position?
-
-HILFE: A normiert und verbietet -> Konzept (i). B beschreibt Kompetenz und fordert Didaktik -> Konzept (ii).【选概念：题干出现 verbieten / Verfall / falsch / disziplinieren 选衰败论；出现 Register / wechseln / Ressource / Korpus 选资源论。】
-
-ANTWORT: A erfordert Konzept (i): Verfalls-These, Massnahme Verbot — kritikwuerdig, weil stigmatisierend und wirkungslos. B erfordert Konzept (ii): Ressourcen-These, Massnahme Wechseltraining — evidenzbasiert und foerdernd.
-
-Klausur-Satz: `Verbote treffen Herkunft, Didaktik trifft Kompetenz: Nur eines davon wirkt.`
+Klausur-Satz: `Sprache wandelt sich im Gebrauch: Wer heute spricht, schreibt morgen die Regel.`
 
 ## Schritt 6 — check: Selbsttest zu Sprachwandel und Kiezdeutsch-Debatte
-CHECK检索默写（自测 3 题，与答案配对）：
 
-FRAGE: Welche drei Merkmale hat Kiezdeutsch? | ANTWORT: Artikellosigkeit, neue Verb- und Wortstellungsmuster, Mehrsprachigkeits-Marker.
-FRAGE: Woran erkennt man Varietaet statt Fehler? | ANTWORT: An Regelhaftigkeit im Korpus plus situationsgerechtem Wechsel in Standard.
-FRAGE: Wie baut man die Eroerterung auf? | ANTWORT: Sorge anerkennen, Systematik belegen, Synthese: Wechselfaehigkeit foerdern.
+CHECK (drei Fragen mit Antworten):
 
-Klausur-Satz: `Ohne Korpus bleibt Sprachkritik Meinung, mit Korpus wird sie Wissenschaft.`
+中文自测（先中文自问，再用德语回答）：
+FRAGE: 三步链是什么？ | ANTWORT: Befund mit Zeile, Funktion im Gefuege, Deutung als Urteil.
+FRAGE: 近路要什么？ | ANTWORT: Nahbeleg mit Zitat und Wirkung.
+FRAGE: 远路要什么？ | ANTWORT: Kontext und Gefuege als Urteilstraeger.
+
+Klausur-Satz: `Sprache wandelt sich im Gebrauch: Wer heute spricht, schreibt morgen die Regel.`
 
 ## Fehlvorstellung
 
-(非Schritt小节，Parser 自动识别，不计入步骤步数)
+1. 中文误解：语言变迁辩论只看表面。
+   中文纠偏：证据加功能才是得分点。
+   Korrektur-Satz: `Neu heisst zuerst ungewoehnlich, dann ueblich.`
+2. 中文误解：语言变迁辩论只看表面。
+   中文纠偏：证据加功能才是得分点。
+   Korrektur-Satz: `Auch Kontaktdeutsch folgt Mustern und Regeln.`
 
-1. 误解"街区德语就是德语没学好，纠正几次就好"。
-   中文纠偏：语料库证明它有稳定规则且使用者能切换语域，"纠错"纠的是身份不是语法，只会制造对立。学校该教的是"何时穿哪套衣服"。
-   Korrektur-Satz: `Kiezdeutsch ist ein zusaetzliches Register, kein fehlendes Standarddeutsch.`
+## Schritt 7 — szenario: Klausurtransfer: Sprachkolumnist der Stadtzeitung zu Fall 22
 
-2. 误解"议论文只要站资源派、把衰败派骂一顿就能高分"。
-   中文纠偏：辩证议论必须先公允重构对方最强论据（标准语确实需要保护），再用证据超越它。只骂不证会被判 einseitig。
-   Korrektur-Satz: `Dialektik verlangt das staerkste Gegenargument, nicht das schwaechste.`
+ROLLE（中文）：你是Sprachkolumnist der Stadtzeitung，负责审稿。
+德语 ROLLE: Du bist Sprachkolumnist der Stadtzeitung.
+SITUATION: Fall 22 liegt unbearbeitet vor dir.
+AUFGABE（中文）：150词左右，含背景、两个证据、功能判断。
+RUBRIC (30 XP): Einordnung (6 XP) | Belege mit Zeile (10 XP) | Funktion plus Deutung (10 XP) | Fachsprache (4 XP).
 
-## Schritt 7 — szenario: Klausurtransfer: Sprachwandel und Kiezdeutsch-Debatte
-ROLLE: Du schreibst einen Kommentar fuer die Schuelerzeitung zur Kiezdeutsch-Debatte.
-SITUATION: Ein Leserbrief fordert Handyverbot fuer „Sprachverderber", die Schulleitung plant einen Projekttag.
-AUFGABE: Nehmen Sie in ca. 150 Woertern dialektisch Stellung (Sorge—Befund—Synthese) und schlagen Sie ein Projekttag-Modul vor.
-RUBRIC (30 XP): Sorge fair rekonstruiert (8 XP) | Zwei Merkmale mit Systematik-Beleg (12 XP) | Synthese plus Modulvorschlag Wechseltraining (10 XP).
+## Schritt 8 — reflexion: Takeaway und Rueckblick aus Fall 22
 
-## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
+中文总结：第22号案件教会我们：先锁证据，再说功能，最后判断。
+德语 TAKEAWAY: Beleg sichern, Funktion benennen, Urteil begruenden. `Sprache wandelt sich im Gebrauch: Wer heute spricht, schreibt morgen die Regel.`
 
-TAKEAWAY 1盒（核心总结）：
-
-中文：语言变化三动力：省力、接触、身份。街区德语三特征：省冠词、新语序、混标记。判据两条：成系统 + 能切换 = 变体。议论三段：承认担忧—语料举证—切换培养。禁令打身份，教学长能力。
-Takeaway-Satz: `Wandel beschreiben, Wechsel trainieren: So wird aus Aufregung ein Aufsatz.`
-
-REFLEXION 2问：
-1. 过程自省：Welcher Schritt fiel schwerer — die Merkmalsanalyse am Satz (Schritt 4) oder die Positionswahl Verfall gegen Ressource (Schritt 5)?
-2. 元认知计划：Beim naechsten Mal suche ich zuerst das Korpus-Signal und frage dann nach dem Register.
+REFLEXION（中文在前）：
+1. 中文：近路证据和远路判断哪个更难？德语：Was fiel schwerer, Nahbeleg oder Fernurteil?
+2. 中文：下次先划引文行号。德语：Naechstes Mal sichere ich zuerst Zitat und Zeile.

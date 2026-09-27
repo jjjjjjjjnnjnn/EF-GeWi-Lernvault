@@ -13,120 +13,111 @@ version: Lesson-v3
 
 # Lernreise: Gedichtanalyse Expressionismus und Grossstadt (L1, Ziel Klausur)
 
-<!-- Lesson v3 architecture: Schritte 1-8 fixed; Fehlvorstellung between Schritt 6 and 7 (parser skipped); embedded [Werkzeug: <id>]; gating: check/szenario failed = Weiter greyed; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
-
-## Schritt 1 — entdecken
+<!-- Campaign: Detektive Fal 04 -->
+## Schritt 1 — entdecken: Der versiegelte Umschlag aus der Funknacht
 
 ZIELE (3 Ziele, nach 15 Minuten erreichbar):
 
-1. Ein Grossstadtgedicht des Expressionismus in Form, Bildlichkeit und Klang analysieren.
-2. Typische Verfahren (Reihung, Simultanismus, Daemonisierung der Stadt) als Epochenzeichen deuten.
-3. Die Stadtkritik im Epochenkontext beurteilen (AFB III).
+1. Du ordnest Fall 04 (Umschlag mit drei verschiedenen Siegeln) in Kontext, Verfahren und Deutung ein.
+2. Du belegst jede Aussage zu Gedichtanalyse Expressionismus und Grossstadt mit Zitat und Zeile und benennst die Funktion.
+3. Du faellst ein Urteil im passenden Anforderungsbereich.
 
-VORAUSSETZUNG: Metrum, Reimschema, Metapher sowie Szenenanalyse als Deutungsverfahren.
+HOOK:
 
-VORGAENGER-VERWEIS: Diese Lektion setzt `Deutsch-Lyrik-Sturm-und-Drang-L1.md` voraus und wiederholt sie nicht. Dort standen Genie, Natur und Empfindsamkeit um 1770 im Zentrum. Hier folgt der enge Ausschnitt: nur expressionistische Grossstadtlyrik um 1910 (etwa Heym oder Lichtenstein); Naturlyrik und Sturm und Drang gehoeren nicht hierher.
+Mitten in der Nacht flackert das Blaulicht der Agentur fuer Texte und Gedanken ueber den leeren Schreibtischen, und Partner Theo Wort legt einen versiegelten Umschlag auf deinen Platz. Seit Wochen jagt ihr als Gedanken-Agent an der Seite deines Text-Detektivs durch die Jahrhunderte, und jede geloeste Spur oeffnet ein neues Portal in der Zeit. Heute geht es um Gedichtanalyse Expressionismus und Grossstadt. Falllinie B: Aus dem Funkgeraet der Zwanzigerjahre knistert eine fremde Grossstadt, deren Lichter die Menschen einsam machen. Im Umschlag steckt Fall 04: ein Umschlag mit drei verschiedenen Siegeln. Kaum haeltst du das Stueck ins Licht, faellt dir eine zweite Schicht auf: Jemand hat die Botschaft frisiert, verkuerzt oder verdreht, und nur wer Beleg, Funktion und Deutung sauber trennt, kann die Manipulation entlarven. Das naechste Portal oeffnet sich nur, wenn du drei Ziele in fuenfzehn Minuten schaffst und jede Behauptung mit Zeile und Wirkung belegst. Theo Wort gru belt schon ungeduldig, denn die Spur wird kalt.
 
-Klausur-Satz: `Die expressionistische Stadt ist Moloch und Apokalypse zugleich: Ort der Reize und der Zerstoerung.`
+Klausur-Satz: `Das Gedicht macht die Stadt zum Gelaende der Seele: Bilder tragen, was Saetze verschweigen.`
 
-## Schritt 2 — entdecken
+## Schritt 2 — entdecken: Die Ausruestungskiste gegen Fall 04
 
-PRETRAINING (Kernbegriffe):
+AUSRUESTUNG (5 Instrumente im Koffer):
 
-- Reihungsstil: Parataktische Haeufung von Bildern ohne logische Verknuepfung.
-- Simultanismus: Gleichzeitigkeit disparater Eindruecke als Grossstadterfahrung.
-- Chiffre: Verdichtetes Zeichen (etwa Turm, Strasse, Nacht) mit Epochenbedeutung.
-- Daemonisierung: Stadt als lebendiges Ungeheuer mit Feuer-, Tier- und Krankheitsbildern.
-- Aufbruchspathos: Visionaerer Ruf nach dem Neuen Menschen trotz Untergangston.
+- **Bildlichkeit**: Bildlichkeit: Metapher und Vergleich als Traeger der Stadterfahrung
+- **Chiffre**: Chiffre: verschluesseltes Zeichen fuer Angst und Entfremdung
+- **Reihungsstil**: Reihungsstil: parataktische Haeufung als Atem der Grossstadt
+- **Deutungshypothese**: Deutungshypothese: fruehe Leitannahme, die die Analyse steuert
+- **Klangfigur**: Klangfigur: Alliteration und Rhythmus als Wirkungsverstaerker
 
-Klausur-Satz: `Reihung plus Chiffre erzeugen Simultanitaet: Die Stadt spricht in Bildern gleichzeitig.`
+Klausur-Satz: `Das Gedicht macht die Stadt zum Gelaende der Seele: Bilder tragen, was Saetze verschweigen.`
 
-## Schritt 3 — entdecken
+## Schritt 3 — entdecken: Der Mechanismus hinter dem Tatbild
 
-ENTDECKEN (ein Konzept plus Diagramm):
+MECHANISMUS (Tiefenbau):
 
-Die Deutung folgt $Bild + Verfahren = Epochenaussage$. Erst Bild benennen (Feuer, Masse, Laerm), dann Verfahren bestimmen (Reihung, Ellipse, Neologismus), dann Epochenfunktion ableiten: Reizueberflutung, Ich-Zerfall, Untergang plus Aufbruch. Klang (harte Konsonanten, Enjambements) verstaerkt die Hektik. Der Schluss verbindet Apokalypse mit Vision: Zerstoerung als Reinigung fuer den Neuen Menschen.
+Jeder Fall folgt der Kette Befund, Funktion und Deutung. Zuerst sicherst du den Befund mit Zitat und Zeile, dann bestimmst du die Funktion im Macht- oder Sinn-gefuege, erst danach formulierst du die Deutung zu Gedichtanalyse Expressionismus und Grossstadt. Falllinie B: Aus dem Funkgeraet der Zwanzigerjahre knistert eine fremde Grossstadt, deren Lichter die Menschen einsam machen. Wer die zweite Schicht des Umschlag mit drei verschiedenen Siegeln uebersieht, tappt in die Falle der Agentur.
 
 ```diagram
-Bild: Feuer | Masse | Nacht | Turm
-Verfahren: Reihung + Ellipse + Chiffre + Simultanismus
-Funktion: Reizflut -> Ich-Zerfall -> Untergang -> Aufbruch
-Klang: hart, hastig, bruechig (Enjambement, Alliteration)
-Formel: Bild + Verfahren = Epochenaussage
+Befund (Zitat mit Zeile) -> Funktion (Wirkung im Gefuege) -> Deutung (Urteil)
+Fall 04: Umschlag mit drei verschiedenen Siegeln -> Spur sichern -> Tatbild schliessen
 ```
 
-Klausur-Satz: `Haessliche Bilder sind Programm: Sie entlarven die schoene Fassade der Moderne.`
+Klausur-Satz: `Das Gedicht macht die Stadt zum Gelaende der Seele: Bilder tragen, was Saetze verschweigen.`
 
-## Anekdote & Fun-Fact
+## Anekdote
 
-**Anekdote / Fun-Fact (DE)**: Georg Heym ertrank 1912 mit 24 Jahren beim Schlittschuhlaufen; Jakob van Hoddis verschwand in der Psychiatrie. Ihre Gedichte ueber untergehende Staedte lasen sich nach 1914 wie Prophezeiungen des Weltkriegs.
+Ein Nachtfunker sammelte einst Stadtgedichte, weil jede Schicht denselben Lichterlaerm beschrieb.
 
-**Bezug zum Konzept**: `Frueher Tod und fruehe Apokalypse gehoeren zur Epochenaura des Expressionismus.`
+Bezug zum Konzept: `Das Gedicht macht die Stadt zum Gelaende der Seele: Bilder tragen, was Saetze verschweigen.`
 
-## Schritt 4 — ausprobieren
-
-BEISPIEL (vollstaendige Musterloesung):
+## Schritt 4 — ausprobieren: Die Sandkasten-Pruefung mit Textlupe
 
 [Werkzeug: highlighter]
 
-AUFGABE (analysieren, AFB II): Analysieren Sie, wie ein expressionistisches Stadtgedicht Reizueberflutung durch Reihungsstil erzeugt.
+AUFGABE: Untersuche den Fall-Text 04 (Umschlag mit drei verschiedenen Siegeln) zu Gedichtanalyse Expressionismus und Grossstadt.
+TARGET: Drei Belege mit Zeile, je mit Funktion und einer Deutung in vier Saetzen.
 
 HILFE:
-1. Schritt 1: Drei Bilder mit Versangabe nennen.
-2. Schritt 2: Verfahren (Reihung, Ellipse) bestimmen.
-3. Schritt 3: Funktion als Epochenaussage deuten.
+1. Schritt 1: Ordne den Fall in zwei Saetzen ein.
+2. Schritt 2: Sichere zwei Befunde mit Zeile.
+3. Schritt 3: Deute Befund und Funktion im Fallganzen.
 
-MUSTERLOESUNG: Das Gedicht haeuft in wenigen Versen Turm, Strasse und Nacht ohne verbindende Syntax; die Verse wirken wie simultane Schnappschuesse. Ellipsen tilgen das Ich als ordnende Instanz, Alliterationen verhaerten den Klang zur Hektik. Zusammen erzeugt die Reihung Simultanitaet als Grunderfahrung der Grossstadt: Das Ich ertrinkt in Reizen, die Stadt wird zum daemonischen Organismus. Damit ist die Reizflut als Epochenzeichen gedeutet, nicht als Dekoration.
+MUSTERLOESUNG: Der Fall 04 zeigt Gedichtanalyse Expressionismus und Grossstadt in drei Schritten. Erstens belegt ein Zitat mit Zeile den Kern des Umschlag mit drei verschiedenen Siegeln, zweitens traegt die Funktion die Wirkung im Gefuege, drittens schliesst die Deutung das Tatbild. Damit ist die zweite Schicht entlarvt und das Portal oeffnet sich.
 
-Klausur-Satz: `Reihung ohne Syntax plus Ellipse ohne Ich deuten die Stadt als Reizmaschine.`
+Klausur-Satz: `Das Gedicht macht die Stadt zum Gelaende der Seele: Bilder tragen, was Saetze verschweigen.`
 
-## Schritt 5 — ausprobieren
+## Schritt 5 — ausprobieren: Das doppelte Spiel Weg A gegen Weg B
 
-VERGLEICH (erst Verfahren waehlen, dann loesen):
+VERGLEICH: Waehle erst das Verfahren, dann loesen: (i) Weg A Nahverfahren (Beleg, Zitat, Wirkung) oder (ii) Weg B Fernverfahren (Kontext, Gefuege, Urteil).
 
-VERGLEICH: Waehle erst das Verfahren — (i) Bild-Verfahren (Metapher, Chiffre, Daemonisierung) oder (ii) Klang-Form-Verfahren (Metrum, Enjambement, Reihung) — dann loesen.
+AUFGABE A: Welche Spur im Umschlag mit drei verschiedenen Siegeln verlangt Weg A? Begründe mit Zitat.
+AUFGABE B: Welche Frage zum Fallganzen verlangt Weg B? Begründe mit Kontext.
 
-AUFGABE A: Warum wirkt die Stadt als Ungeheuer? Welches Verfahren passt?
+HILFE: A fragt nach Form und Naehe, also Weg A. B fragt nach Rolle und Ganzem, also Weg B.
 
-AUFGABE B: Warum wirkt das Gedicht hastig und zerhackt? Welches Verfahren passt?
+ANTWORT: A erfordert Weg A: Der Nahbeleg mit Zitat und Zeile zeigt die Wirkung im Detail. B erfordert Weg B: Der Fernblick auf Kontext und Gefuege sichert das Urteil zu Gedichtanalyse Expressionismus und Grossstadt.
 
-HILFE: A fragt nach Bildwelt, also Verfahren (i). B fragt nach Rhythmus, also Verfahren (ii).
+Klausur-Satz: `Das Gedicht macht die Stadt zum Gelaende der Seele: Bilder tragen, was Saetze verschweigen.`
 
-ANTWORT: A erfordert Verfahren (i): Tier-, Feuer- und Krankheitsmetaphern daemonisieren die Stadt zum Moloch. B erfordert Verfahren (ii): Kurze Verse, Enjambements und Reihung zerhacken Lesefluss und Tempo zur Hektik.
-
-Klausur-Satz: `Bilder daemonisieren die Stadt, Klang zerhackt das Ich.`
-
-## Schritt 6 — check
+## Schritt 6 — check: Selbsttest zu Gedichtanalyse Expressionismus und Grossstadt
 
 CHECK (drei Fragen mit Antworten):
 
-FRAGE: Wie lautet die Deutungsformel? | ANTWORT: $Bild + Verfahren = Epochenaussage$, stets mit Versangabe.
-FRAGE: Was leistet Reihungsstil? | ANTWORT: Er erzeugt Simultanitaet disparater Reize ohne ordnende Syntax.
-FRAGE: Was verbindet Untergang mit Aufbruch? | ANTWORT: Die Vision des Neuen Menschen als Reinigung durch Zerstoerung.
+FRAGE: Nenne die Drei-Schritt-Kette. | ANTWORT: Befund mit Zeile, Funktion im Gefuege, Deutung als Urteil.
+FRAGE: Was verlangt Weg A? | ANTWORT: Nahbeleg mit Zitat und Wirkung am Detail.
+FRAGE: Was verlangt Weg B? | ANTWORT: Kontext und Gefuege als Traeger des Urteils.
 
-Klausur-Satz: `Ohne Epochenbezug bleibt Bildanalyse unterhalb der Deutungsleistung.`
+Klausur-Satz: `Das Gedicht macht die Stadt zum Gelaende der Seele: Bilder tragen, was Saetze verschweigen.`
 
 ## Fehlvorstellung
 
-1. Fehlvorstellung: Haessliche Bilder seien Formfehler des Gedichts.
-   Korrektur-Satz: `Haesslichkeit ist Epochenprogramm zur Entlarvung der Moderne, kein Formfehler.`
+1. Fehlvorstellung: Gefuehl genuege als Deutung.
+   Korrektur-Satz: `Ohne Bildbeleg mit Versangabe bleibt Gefuehl blosse Behauptung.`
+2. Fehlvorstellung: Jedes Bild meine dasselbe.
+   Korrektur-Satz: `Jede Chiffre braucht eigene Funktionsbestimmung im Gedichtganzen.`
 
-2. Fehlvorstellung: Expressionismus feiere die Grossstadt.
-   Korrektur-Satz: `Der Expressionismus daemonisiert die Stadt und verbindet Untergang mit Aufbruchspathos.`
+## Schritt 7 — szenario: Klausurtransfer: Feuilleton-Redakteur zu Fall 04
 
-## Schritt 7 — szenario
+ROLLE: Du bist Feuilleton-Redakteur in der Pruefung.
+SITUATION: Ein Fall zu Gedichtanalyse Expressionismus und Grossstadt (Fall 04, Umschlag mit drei verschiedenen Siegeln) liegt unbearbeitet auf dem Tisch.
+AUFGABE: Verfasse circa 150 Woerter mit Einordnung, zwei Belegen mit Zeile, Funktion, Deutung und Schlussurteil.
+RUBRIC (30 XP): Einordnung korrekt (6 XP) | Zwei Belege mit Zeile (10 XP) | Funktion plus Deutung (10 XP) | Fachsprache und Schluss (4 XP).
 
-ROLLE: Du bist Klausurkorrektorin in der EF.
-SITUATION: Eine Klausur listet Bilder ohne Verfahren und Epoche auf. Formuliere in circa 150 Woertern ein Feedback mit Reihungsnachweis, Klangbefund und Epochenurteil.
-RUBRIC (30 XP): Bildnachweise korrekt (6 XP) | Verfahrensbestimmung (10 XP) | Epochenurteil (10 XP) | Fachsprachliche Rueckmeldung (4 XP).
-
-## Schritt 8 — reflexion: Takeaway & Reflexion
+## Schritt 8 — reflexion: Takeaway und Rueckblick aus Fall 04
 
 TAKEAWAY:
 
-Bilder sammeln, Verfahren benennen, Epoche urteilen: Reihung plus Chiffre ergibt Simultanitaet als Stadterfahrung.
-Takeaway-Satz: `Die Stadt spricht in Reihungen, das Ich antwortet in Zerfall — daraus wächst Aufbruch.`
+Fall 04 lehrt: Beleg sichern, Funktion benennen, Urteil begruenden. Das Gedicht macht die Stadt zum Gelaende der Seele: Bilder tragen, was Saetze verschweigen. Takeaway-Satz: `Das Gedicht macht die Stadt zum Gelaende der Seele: Bilder tragen, was Saetze verschweigen.`
 
 REFLEXION:
-1. Welcher Schritt fiel schwerer — die Bildarbeit (Schritt 4) oder die Verfahrenswahl (Schritt 5)?
-2. Beim naechsten Mal notiere ich zuerst Verfahren neben jedem Bild, weil erst beides Deutung ergibt.
+1. Welche Spur fiel schwerer, der Nahbeleg oder das Fernurteil?
+2. Beim naechsten Mal sichere ich zuerst Zitat und Zeile, weil sie jede Deutung tragen.

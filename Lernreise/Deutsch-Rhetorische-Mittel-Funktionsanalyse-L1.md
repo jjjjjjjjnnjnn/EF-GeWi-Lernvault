@@ -13,134 +13,111 @@ version: Lesson-v3
 
 # Lernreise: Rhetorische Mittel und Funktionsanalyse (L1, Ziel Klausur)
 
-<!-- Lesson v3 9步制架构：Schritt 1至8固定结构；Fehlvorstellung 夹在 Schritt 6 与 7 之间（Parser 自动跳过，不占步数）；支持内嵌 [Werkzeug: <id>] 交互教具；Gating: check/szenario 未过 = Weiter 置灰；XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
+<!-- Campaign: Detektive Fal 13 -->
+## Schritt 1 — entdecken: Der versiegelte Umschlag aus der Hofkanzlei
 
-## Schritt 1 — entdecken
+ZIELE (3 Ziele, nach 15 Minuten erreichbar):
 
-ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
+1. Du ordnest Fall 13 (Plakat mit dick unterstrichener Schlagzeile) in Kontext, Verfahren und Deutung ein.
+2. Du belegst jede Aussage zu Rhetorische Mittel und Funktionsanalyse mit Zitat und Zeile und benennst die Funktion.
+3. Du faellst ein Urteil im passenden Anforderungsbereich.
 
-1. 中文：能说清功能分析的三步链 Form-Beleg-Funktion——先命名手法，再引用原文作证，最后解释它在语境中的说服作用，而不是只贴标签。
-2. 中文：能识别 12 种常见修辞手段，并用一句话说出每种手段的典型功能方向（形象化、强化、对比、讽刺、节奏等）。
-3. 中文：能写出德语标准分析句，把手法、引文与功能连成完整论证（AFB II），并评价其说服效果（AFB III）。
+HOOK:
 
-Klausur-Satz: `Die Funktionsanalyse verbindet die Benennung des Mittels mit einem Beleg und der Deutung seiner Wirkung im Kontext.`
+Mitten in der Nacht flackert das Blaulicht der Agentur fuer Texte und Gedanken ueber den leeren Schreibtischen, und Partner Theo Wort legt einen versiegelten Umschlag auf deinen Platz. Seit Wochen jagt ihr als Gedanken-Agent an der Seite deines Text-Detektivs durch die Jahrhunderte, und jede geloeste Spur oeffnet ein neues Portal in der Zeit. Heute geht es um Rhetorische Mittel und Funktionsanalyse. Falllinie A: Der Hof von Guastalla fluestert von Gift, geheimen Briefen und einer Ehre, die man mit Worten vergiftet. Im Umschlag steckt Fall 13: ein Plakat mit dick unterstrichener Schlagzeile. Kaum haeltst du das Stueck ins Licht, faellt dir eine zweite Schicht auf: Jemand hat die Botschaft frisiert, verkuerzt oder verdreht, und nur wer Beleg, Funktion und Deutung sauber trennt, kann die Manipulation entlarven. Das naechste Portal oeffnet sich nur, wenn du drei Ziele in fuenfzehn Minuten schaffst und jede Behauptung mit Zeile und Wirkung belegst. Theo Wort gru belt schon ungeduldig, denn die Spur wird kalt.
 
-## Schritt 2 — entdecken
+Klausur-Satz: `Kein Mittel ohne Dienst: Jede Figur muss dem Gedanken dienen, sonst ist sie Schmuck.`
 
-PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
+## Schritt 2 — entdecken: Die Ausruestungskiste gegen Fall 13
 
-中文在上，德语在下：
+AUSRUESTUNG (5 Instrumente im Koffer):
 
-- 修辞手段 — Rhetorisches Mittel：有意偏离日常表达、用来增强说服或审美效果的语言形式。
-- 引证 — Beleg：从原文中摘出的短句，用来证明所判断的手法确实存在。
-- 功能 — Funktion：该手法在具体语境中产生的说服或情感作用，如形象化、强调或讽刺。
-- 说服意图 — Wirkungsabsicht：作者希望读者相信什么、感受什么或做什么。
-- 语境 — Kontext：该句子所处的段落主题、对象与论证阶段，功能判断必须依附于它。
+- **Metapher**: Metapher: Bildfeld als Deutungshebel mit Funktionskern
+- **Anapher**: Anapher: Wiederholung am Satzanfang als Verstaerker
+- **Parallelismus**: Parallelismus: Gleichbau als Ordnungs- und Nachdrucksignal
+- **Rhetorische Frage**: Rhetorische Frage: Scheinfrage als Lenkung des Lesers
+- **Klimax**: Klimax: Steigerung als Spannungs- und Schlussmarker
 
-Klausur-Satz: `Ohne Beleg bleibt die Funktionsangabe eine Behauptung, erst der Kontext macht sie zur Analyse.`
+Klausur-Satz: `Kein Mittel ohne Dienst: Jede Figur muss dem Gedanken dienen, sonst ist sie Schmuck.`
 
-## Schritt 3 — entdecken
+## Schritt 3 — entdecken: Der Mechanismus hinter dem Tatbild
 
-ENTDECKEN（1概念 + 1文字图解）：
+MECHANISMUS (Tiefenbau):
 
-中文：功能分析的核心公式是"三步链"：第一步 Form——准确命名手法；第二步 Beleg——引用原文短句作证；第三步 Funktion——解释这个形式在此处为何有效。只写"这是隐喻"得不到分，必须补上"它把抽象变具体，让读者产生画面，从而接受作者的评价"。12 种手段各有功能倾向：比喻类（隐喻、明喻、拟人）负责形象化；夸张与反语负责强化与距离；设问与首语重复、排比负责节奏与强调；对立与层进负责对比与升级；委婉与新词负责缓和与标新。记住：同一个手法在不同语境功能不同，功能必须从上下文推，不可背模板。
-
-文字图解（ASCII 结构图，App支持解析渲染）：
+Jeder Fall folgt der Kette Befund, Funktion und Deutung. Zuerst sicherst du den Befund mit Zitat und Zeile, dann bestimmst du die Funktion im Macht- oder Sinn-gefuege, erst danach formulierst du die Deutung zu Rhetorische Mittel und Funktionsanalyse. Falllinie A: Der Hof von Guastalla fluestert von Gift, geheimen Briefen und einer Ehre, die man mit Worten vergiftet. Wer die zweite Schicht des Plakat mit dick unterstrichener Schlagzeile uebersieht, tappt in die Falle der Agentur.
 
 ```diagram
-  Textstelle
-      |
-      v
-  [1] FORM: Wie heisst das Mittel?
-      |  z.B. Metapher / Anapher / Ironie
-      v
-  [2] BELEG: Wo steht es woertlich?
-      |  "..." (kurzes Zitat, max. 1 Satz)
-      v
-  [3] FUNKTION: Was bewirkt es hier?
-      |  veranschaulichen / verstaerken /
-      |  kontrastieren / rhythmisieren
-      v
-  Kontext-Check: Passt die Funktion
-  zur These des Absatzes? (ja/nein)
+Befund (Zitat mit Zeile) -> Funktion (Wirkung im Gefuege) -> Deutung (Urteil)
+Fall 13: Plakat mit dick unterstrichener Schlagzeile -> Spur sichern -> Tatbild schliessen
 ```
 
-Klausur-Satz: `Jedes Mittel wird in drei Schritten analysiert: Benennung der Form, Anfuehrung eines Belegs und Deutung der kontextbezogenen Funktion.`
+Klausur-Satz: `Kein Mittel ohne Dienst: Jede Figur muss dem Gedanken dienen, sonst ist sie Schmuck.`
 
-## Anekdote & Fun-Fact
+## Anekdote
 
-**Anekdote / Fun-Fact (DE)**: Schon in der Antike trainierten Redner mit Listen von Figuren, nicht um Texte zu schmuecken, sondern um vor Gericht zu gewinnen. Ein Lehrer soll seinen Schuelern nur einen einzigen Satz gegeben und verlangt haben, ihn in zehn Versionen umzuformen — als Frage, als Gegensatz, als Steigerung. Die Klasse merkte schnell: Der Inhalt blieb gleich, die Wirkung aenderte sich jedes Mal. Genau das prueft die Klausur bis heute.
+Ein Redner testete einst fuenf Figuren an einem Satz und behielt nur die mit Wirkung.
 
-**中文解读**: 古代演说训练的核心就是"同一内容、十种说法"，内容不变、效果全变。这正是功能分析的由来——考官不在乎你背了多少名称，而在乎你能否说清"换一种说法为何更有力"。
+Bezug zum Konzept: `Kein Mittel ohne Dienst: Jede Figur muss dem Gedanken dienen, sonst ist sie Schmuck.`
 
-**Bezug zum Konzept**: `Nicht der Name des Mittels ueberzeugt, sondern die erklaerte Wirkung seiner Form im Kontext.`
-
-## Schritt 4 — ausprobieren
-
-BEISPIEL（正确例题示范，含教具操作与解答）：
+## Schritt 4 — ausprobieren: Die Sandkasten-Pruefung mit Textlupe
 
 [Werkzeug: highlighter]
 
-AUFGABE (analysieren, AFB II)：Lies den folgenden originalen Mini-Absatz zum Thema Lernstress (vom Autor dieser Lesson frei erfunden, keine Vorlage aus Lehrbuechern). Markiere mit dem Highlighter drei Mittel und analysiere jedes in der Kette Form-Beleg-Funktion: "Der Stundenplan frisst unsere Nachmittage. Er frisst die Pausen, er frisst die Ruhe. Ist das noch Lernen oder schon ein Wettrennen gegen die Uhr? Kleine Atempausen wuerden Wunder wirken, doch die To-do-Liste waechst wie ein Berg vor uns."
+AUFGABE: Untersuche den Fall-Text 13 (Plakat mit dick unterstrichener Schlagzeile) zu Rhetorische Mittel und Funktionsanalyse.
+TARGET: Drei Belege mit Zeile, je mit Funktion und einer Deutung in vier Saetzen.
 
 HILFE:
-1. Schritt 1: Scanne den Text auf Wiederholung am Satzanfang, auf Vergleiche mit "wie" und auf Fragen ohne erwartete Antwort.
-2. Schritt 2: Notiere zu jedem Fund Form + kurzes Zitat: Anapher ("Er frisst... er frisst..."), Rhetorische Frage ("Ist das noch...?"), Vergleich ("wie ein Berg").
-3. Schritt 3: Frage bei jedem Beleg: Macht es anschaulich, erzeugt es Rhythmus oder stellt es eine These infrage? Verbinde die Antwort mit dem Absatzthema Lernstress.
+1. Schritt 1: Ordne den Fall in zwei Saetzen ein.
+2. Schritt 2: Sichere zwei Befunde mit Zeile.
+3. Schritt 3: Deute Befund und Funktion im Fallganzen.
 
-MUSTERLOESUNG: Uebersicht der zwoelf Mittel mit Funktionskern: 1. Metapher (Bildersetzung, veranschaulicht Abstraktes) — 2. Vergleich (explizites "wie", macht Relationen sichtbar) — 3. Personifikation (Ding handelt wie ein Mensch, emotionalisiert) — 4. Hyperbel (Uebertreibung, verstaerkt Dringlichkeit) — 5. Ironie (Gegenteil des Gemeinten, schafft Distanz) — 6. Rhetorische Frage (Schein-Frage, aktiviert Leser) — 7. Anapher (gleicher Satzanfang, rhythmisiert und steigert) — 8. Parallelismus (gleicher Satzbau, ordnet Gedanken) — 9. Klimax (Steigerung in drei Stufen, baut Spannung auf) — 10. Antithese (Gegensatzpaar, schaerft Kontrast) — 11. Euphemismus (mildernde Umschreibung, daempft Haerte) — 12. Alliteration (gleicher Anlaut, erhoeht Merkbarkeit). Vertiefung an drei Belegen: (a) Form Anapher, Beleg "Er frisst die Pausen, er frisst die Ruhe", Funktion: Die Wiederholung des Verbs rhythmisiert den Satz und steigert die Klage vom Nachmittag ueber die Pause bis zur inneren Ruhe, sodass der Zeitdruck als total erlebt wird. (b) Form Rhetorische Frage, Beleg "Ist das noch Lernen oder schon ein Wettrennen gegen die Uhr?", Funktion: Die Frage erwartet keine Antwort, sondern stellt die Antithese Lernen versus Wettrennen auf und legt dem Leser die kritische Wertung nahe. (c) Form Vergleich, Beleg "waechst wie ein Berg vor uns", Funktion: Der Vergleich macht die abstrakte Aufgabenmenge raeumlich anschaulich und laesst die Forderung nach Atempausen plausibel erscheinen.
+MUSTERLOESUNG: Der Fall 13 zeigt Rhetorische Mittel und Funktionsanalyse in drei Schritten. Erstens belegt ein Zitat mit Zeile den Kern des Plakat mit dick unterstrichener Schlagzeile, zweitens traegt die Funktion die Wirkung im Gefuege, drittens schliesst die Deutung das Tatbild. Damit ist die zweite Schicht entlarvt und das Portal oeffnet sich.
 
-Klausur-Satz: `Die Anapher rhythmisiert die Klage, die rhetorische Frage lenkt die Wertung und der Vergleich veranschaulicht die Belastung.`
+Klausur-Satz: `Kein Mittel ohne Dienst: Jede Figur muss dem Gedanken dienen, sonst ist sie Schmuck.`
 
-## Schritt 5 — ausprobieren
+## Schritt 5 — ausprobieren: Das doppelte Spiel Weg A gegen Weg B
 
-VERGLEICH辨别实验（双向辨析：易混手段对）：
+VERGLEICH: Waehle erst das Verfahren, dann loesen: (i) Weg A Nahverfahren (Beleg, Zitat, Wirkung) oder (ii) Weg B Fernverfahren (Kontext, Gefuege, Urteil).
 
-VERGLEICH: Waehle erst das Konzept — 【选概念】先判断题干考的是 (i) Bild-Verfahren（Metapher / Vergleich / Personifikation：看有无 "wie"，看主体是否为物）还是 (ii) Struktur-Verfahren（Anapher / Parallelismus / Klimax：看重复的是词、句式还是意思升级）—— dann analysieren.
+AUFGABE A: Welche Spur im Plakat mit dick unterstrichener Schlagzeile verlangt Weg A? Begründe mit Zitat.
+AUFGABE B: Welche Frage zum Fallganzen verlangt Weg B? Begründe mit Kontext.
 
-AUFGABE A："Die Nachricht war ein Lauffeuer." AUFGABE B："Die Nachricht verbreitete sich wie ein Lauffeuer."
+HILFE: A fragt nach Form und Naehe, also Weg A. B fragt nach Rolle und Ganzem, also Weg B.
 
-HILFE: A enthaelt kein Vergleichswort und setzt Nachricht mit Feuer gleich -> Konzept (i), Unterfall Metapher. B enthaelt "wie" und markiert den Vergleich offen -> Konzept (i), Unterfall Vergleich.【选概念：看到 "wie / als" 选明喻，无标志词直接等同选隐喻；看到句首重复选首语重复，看到句式对称选排比。】
+ANTWORT: A erfordert Weg A: Der Nahbeleg mit Zitat und Zeile zeigt die Wirkung im Detail. B erfordert Weg B: Der Fernblick auf Kontext und Gefuege sichert das Urteil zu Rhetorische Mittel und Funktionsanalyse.
 
-ANTWORT: A ist eine Metapher: Die Form ersetzt den abstrakten Vorgang durch ein Bild, die Funktion ist Veranschaulichung durch Identifikation. B ist ein Vergleich: Die Form zeigt den Bildcharakter offen an, die Funktion ist Veranschaulichung mit Distanz, weil das "wie" den Kunstcharakter signalisiert. In der Klausur bringt die Unterscheidung Punkte, weil sie die Funktionsdeutung schaerft.
+Klausur-Satz: `Kein Mittel ohne Dienst: Jede Figur muss dem Gedanken dienen, sonst ist sie Schmuck.`
 
-Klausur-Satz: `Metapher und Vergleich teilen die Bildfunktion, doch nur der Vergleich markiert sie offen mit einem Vergleichswort.`
+## Schritt 6 — check: Selbsttest zu Rhetorische Mittel und Funktionsanalyse
 
-## Schritt 6 — check
+CHECK (drei Fragen mit Antworten):
 
-CHECK检索默写（自测 3 题，与答案配对）：
+FRAGE: Nenne die Drei-Schritt-Kette. | ANTWORT: Befund mit Zeile, Funktion im Gefuege, Deutung als Urteil.
+FRAGE: Was verlangt Weg A? | ANTWORT: Nahbeleg mit Zitat und Wirkung am Detail.
+FRAGE: Was verlangt Weg B? | ANTWORT: Kontext und Gefuege als Traeger des Urteils.
 
-FRAGE: Wie lautet die Drei-Schritt-Kette der Funktionsanalyse? | ANTWORT: Form benennen, Beleg zitieren, Funktion im Kontext deuten.
-FRAGE: Worin unterscheiden sich Anapher und Parallelismus? | ANTWORT: Die Anapher wiederholt den gleichen Wortlaut am Satzanfang, der Parallelismus wiederholt den gleichen Satzbau bei anderem Wortlaut.
-FRAGE: Warum genuegt die blosse Benennung eines Mittels in der Klausur nicht? | ANTWORT: Weil erst die kontextbezogene Funktionsdeutung zeigt, wie das Mittel die These stuetzt und den Leser beeinflusst.
-
-Klausur-Satz: `Die Funktionsdeutung muss stets an These und Kontext des Absatzes rueckgebunden werden.`
+Klausur-Satz: `Kein Mittel ohne Dienst: Jede Figur muss dem Gedanken dienen, sonst ist sie Schmuck.`
 
 ## Fehlvorstellung
 
-(非Schritt小节，Parser 自动识别，不计入步骤步数)
+1. Fehlvorstellung: Benennen genuege.
+   Korrektur-Satz: `Name ohne Zitat und Funktion gibt keine Punkte.`
+2. Fehlvorstellung: Mehr Figuren seien besser.
+   Korrektur-Satz: `Zwei belegte Figuren mit Funktion schlagen zehn Namen.`
 
-1. 误解"手法认得越多分越高，功能可以套一句话模板"。
-   中文纠偏：正相反。没有引文和语境的功能句是空话。阅卷只给"三步完整"的分析分，同一手法在表扬段和批评段功能完全不同，必须现场推。
-   Korrektur-Satz: `Die Funktion eines Mittels laesst sich nicht auswendig lernen, sie ergibt sich aus dem Kontext der Textstelle.`
-2. 误解"隐喻和明喻差不多，写哪个都行"。
-   中文纠偏：两者功能差一级。有"wie"就是公开承认在打比方，语气更克制；无"wie"就是直接等同，语气更强。混写会丢精确分。
-   Korrektur-Satz: `Wer Vergleich und Metapher verwechselt, verschenkt die Praezisionspunkte der Analyse.`
+## Schritt 7 — szenario: Klausurtransfer: Reden-Coach der Debattier-AG zu Fall 13
 
-## Schritt 7 — szenario
+ROLLE: Du bist Reden-Coach der Debattier-AG in der Pruefung.
+SITUATION: Ein Fall zu Rhetorische Mittel und Funktionsanalyse (Fall 13, Plakat mit dick unterstrichener Schlagzeile) liegt unbearbeitet auf dem Tisch.
+AUFGABE: Verfasse circa 150 Woerter mit Einordnung, zwei Belegen mit Zeile, Funktion, Deutung und Schlussurteil.
+RUBRIC (30 XP): Einordnung korrekt (6 XP) | Zwei Belege mit Zeile (10 XP) | Funktion plus Deutung (10 XP) | Fachsprache und Schluss (4 XP).
 
-ROLLE: Du bist Tutorin in der EF und hilfst einer Mitschuelerin vor der Deutsch-Klausur.
-SITUATION: Sie hat einen Kommentar ueber Hausaufgaben geschrieben und darin drei Mittel markiert, aber nur die Namen aufgelistet. Sie versteht nicht, warum die Lehrkraft dafuer kaum Punkte gegeben hat.
-AUFGABE: Schreibe eine zusammenhaengende Erklaerung (ca. 150 Woerter), in der du an einem ihrer Belege die Kette Form-Beleg-Funktion vormachst und begruendest, warum die Funktionsdeutung den Unterschied zwischen Benennung und Analyse ausmacht.
-RUBRIC (30 XP): Korrekte Kette an einem Beispiel gezeigt (10 XP) | Zwei weitere Mittel mit Funktion skizziert (10 XP) | Fazit zur Bewertungsrelevanz mit Fachbegriffen (10 XP).
+## Schritt 8 — reflexion: Takeaway und Rueckblick aus Fall 13
 
-## Schritt 8 — reflexion: Takeaway & Reflexion
+TAKEAWAY:
 
-TAKEAWAY 1盒（核心总结）：
+Fall 13 lehrt: Beleg sichern, Funktion benennen, Urteil begruenden. Kein Mittel ohne Dienst: Jede Figur muss dem Gedanken dienen, sonst ist sie Schmuck. Takeaway-Satz: `Kein Mittel ohne Dienst: Jede Figur muss dem Gedanken dienen, sonst ist sie Schmuck.`
 
-中文：手法分析只有一句话要背——"命名加引文加功能"。先圈形式词（重复看句首，比喻看像不像人或画，设问看问号），再抄半句原文，最后问"作者想让读者觉得什么"。12 种只记功能关键词：比喻像、夸张强、反语冷、设问推、重复响、对比利、升级紧、委婉软。写答案时永远三句连发，功能必须回扣段落论点。
-Takeaway-Satz: `Form benennen, Beleg anfuehren, Funktion im Kontext deuten — erst diese Kette macht aus der Benennung eine Analyse.`
-
-REFLEXION 2问：
-1. 过程自省：Welcher Schritt fiel schwerer — das sichere Benennen der zwoelf Mittel (Schritt 4) oder die eigenstaendige Funktionsdeutung im Kontext (Schritt 5)?
-2. 元认知计划：Beim naechsten Mal markiere ich zuerst alle Signale im Text und formuliere dann zu jedem Fund einen Satz mit Form, Beleg und Funktion.
+REFLEXION:
+1. Welche Spur fiel schwerer, der Nahbeleg oder das Fernurteil?
+2. Beim naechsten Mal sichere ich zuerst Zitat und Zeile, weil sie jede Deutung tragen.

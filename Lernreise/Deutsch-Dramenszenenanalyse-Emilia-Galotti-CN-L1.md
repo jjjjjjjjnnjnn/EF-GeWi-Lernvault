@@ -13,156 +13,130 @@ version: Lesson-v3
 
 # Lernreise: Dramenszenenanalyse am Beispiel Emilia Galotti (L1, Ziel Klausur)
 
-<!-- Lesson v3 9步制架构：Schritt 1至8固定结构；Fehlvorstellung 夹在 Schritt 6 与 7 之间（Parser 自动跳过，不占步数）；支持内嵌 [Werkzeug: <id>] 交互教具；Gating: check/szenario 未过 = Weiter 置灰；XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
+<!-- Campaign: Detektive Fal 10 -->
+## Schritt 1 — entdecken: Der versiegelte Umschlag aus der Hofkanzlei
 
-## Schritt 1 — entdecken: Ziele & Phänomen-Einstieg
+ZIELE（3条，15分钟可达成，先读中文，再记德语）：
 
-ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
+1. 中文：能把第10号案件（宫廷毒计密信）按背景、方法、判断三步拆开。
+   德语：Ordne Fall 10 in Kontext, Verfahren und Deutung.
+2. 中文：每个论断配引文加行号，并说清功能。
+   德语：Belege jede Aussage mit Zitat, Zeile und Funktion.
+3. 中文：按能力层级写出判断句。
+   德语：Faelle ein Urteil im passenden Anforderungsbereich.
 
-1. 中文：能按"定位—内容—手法—功能—主题"五步分析一个戏剧场景，不复述剧情。
-2. 中文：能分析对话中的权力关系——谁提问、谁打断、谁独白。
-3. 中文：能选择分析重心（选程序：人物塑造 vs 冲突推进）。
+HOOK：
 
-Voraussetzung（窄切口）：只做单场景（以《艾米莉亚·迦洛蒂》冲突场景为原型），不做全剧结构；已会 Szenenangabe 格式。所有引用均为原创概括，不抄原文大段。
+深夜，跨时空文案侦探社的蓝灯又亮了。搭档把一只密封信封推到你面前：这是第10号案件，一份宫廷毒计密信。表面看只是一段艾米莉亚宫廷戏剧，但灯光下浮现出第二层痕迹——有人删改、夸大或偷换了关键信息。你们作为思想特工与文本侦探，必须在十五分钟内锁定三个目标：找证据、说功能、下判断，每一步都要有出处支撑。下一道时空门只为证据链完整的人打开，搭档已经在催你了，线索正在变冷。
 
+德语版钩子：Agent Theo Wort legt Fall 10 (Stenogramm einer Verhandlung bei Kerzenlicht) auf deinen Tisch. Falllinie A: Der Hof von Guastalla fluestert von Gift, geheimen Briefen und einer Ehre, die man mit Worten vergiftet.
 
-Hook中文生活切入:
+Klausur-Satz: `Der Prinz deutet an, Marinelli vollstreckt: Arbeitsteilung der Willkuer.`
 
-想象班级群里一段语音引发误会:一个人说了句玩笑话,有人当真、有人和稀泥、有人截图外传,三分钟后没人记得原话,却人人都在为自己的理解吵架。戏剧场景分析处理的就是这种多声部误会:每个人物带着自己的目标和面具说话,台词的字面意思从来不等于真实意图。
+## Schritt 2 — entdecken: Die Ausruestungskiste gegen Fall 10
 
-Phaenomen-Satz (DE): Alle hoeren denselben Satz, doch jeder versteht einen anderen.
+装备盒（5件，先读中文，再背德语）：
 
-中文机制铺垫:先划分场景的 exposition、精读台词的言外之意与潜台词,再分析人物星座与权力关系,最后落到戏剧功能:这个场景推动了什么冲突、为高潮埋了什么伏笔,结论必须回扣整部剧的悲剧逻辑。
+- 中文点拨：艾米莉亚宫廷戏剧之1号工具。
+  德语：**Staendekonflikt: Adelswillkuer gegen buergerliches Tugendhaus**
+- 中文点拨：艾米莉亚宫廷戏剧之2号工具。
+  德语：**Intrige: verdeckte Steuerung durch den Hof als Handlungsmotor**
+- 中文点拨：艾米莉亚宫廷戏剧之3号工具。
+  德语：**Expositionsszene: Eroeffnung von Begierde, Plan und Ziel**
+- 中文点拨：艾米莉亚宫廷戏剧之4号工具。
+  德语：**Sprachregie: Satzbruch und Vollendung als Machtanzeiger**
+- 中文点拨：艾米莉亚宫廷戏剧之5号工具。
+  德语：**Tugendpathos: Odoardos Strenge als Gegenpol zum Hof**
 
-Mechanismus-Satz (DE): Jede Szene treibt den Konflikt weiter und bereitet die Katastrophe vor.
+Klausur-Satz: `Der Prinz deutet an, Marinelli vollstreckt: Arbeitsteilung der Willkuer.`
 
-Klausur-Satz: `Eine Szene wird als funktionaler Baustein des Konflikts analysiert, nicht nacherzaehlt.`
+## Schritt 3 — entdecken: Der Mechanismus hinter dem Tatbild
 
-## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
+中文深层解构：艾米莉亚宫廷戏剧的关键链条是证据、功能、判断三步走。先锁引文行号，再说它在整体中的作用，最后下判断。第10号案件（宫廷毒计密信）的第二层痕迹就藏在这里。
 
-PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
-
-中文在上，德语在下：
-
-- 场景定位 — Szeneneinordnung：说明幕、场、在全剧冲突中的位置。
-- 对话主导 — Gespraechsfuehrung：谁提问、谁命令、谁沉默，显示权力。
-- 独白 — Monolog：人物独处吐露内心，与对话形成对照。
-- 戏剧冲突 — dramatischer Konflikt：两种不可调和的意志碰撞。
-- 启蒙悲剧 — buergerliches Trauerspiel：市民价值与封建权力冲突的体裁。
-
-Klausur-Satz: `Wer fragt und wer unterbricht, zeigt die Machtverteilung der Szene.`
-
-## Schritt 3 — entdecken: Kernkonzept & Wirkungsmodell
-
-ENTDECKEN（1概念 + 1文字图解，中文在上、德语在下）：
-
-Hook中文生活切入：
-
-中文：想象家庭会议上谁打断谁、谁转移话题：三句话就能听出谁说了算。戏剧场景分析就是把这种权力耳听为实。
-
-Phaenomen-Satz (DE): Wer fragt und wer unterbricht, zeigt die Macht der Szene.
-
-Spiel-Aufgabe沙盒操作指引：
-
-中文：打开文本沙盒，用 highlighter 标出 Sprecherwechsel、Frage 与 Unterbrechung（关键词：Regieanweisung, Stichomythie, Sprechanteil），看对话主导权在哪一分钟易手。
-
-Beobachtungs-Satz (DE): Der Wechsel der Gespraechsfuehrung markiert die Uebergabe der Entscheidung.
-
-Aha-Moment因果链：
-
-中文因果链：戏剧靠对话推进冲突，提问权、打断权和话语占比就是权力的刻度；当主导说话人易手，人物关系与冲突焦点同步转折，配上舞台指示与修辞手段，场景功能即人物在冲突齿轮上的位置。
-
-Gesetz-Satz (DE): Jede Beobachtung braucht Beleg, Mittel und Funktion im Konflikt.
-
-文字图解（ASCII 结构图，App支持解析渲染）：
+德语：Befund mit Zeile, Funktion im Gefuege, Deutung als Urteil zu Dramenszenenanalyse am Beispiel Emilia Galotti.
 
 ```diagram
-Szene als Baustein: Exposition -> Zuspitzung -> Umschlag
-je Replik: Sprecher + Mittel + Funktion
-Fokus: Wer fragt? Wer bricht ab? Wer entscheidet?
+Befund (Zitat mit Zeile) -> Funktion (Wirkung) -> Deutung (Urteil)
+Fall 10
 ```
-Klausur-Satz: `Jede Beobachtung braucht Beleg, Mittel und Funktion im Konflikt.`
 
-## Anekdote & Fun-Fact
+Klausur-Satz: `Der Prinz deutet an, Marinelli vollstreckt: Arbeitsteilung der Willkuer.`
 
-**Anekdote / Fun-Fact (DE)**: Lessings Emilia Galotti (1772) entstand als Antwort auf fuerstliche Willkuer: Ein Prinz will eine Buergertochter mit Macht gewinnen. Das Publikum verstand sofort die politische Spitze — private Tugend gegen oeffentliche Macht.
+## Anekdote
 
-**中文解读**: 莱辛把"亲王夺女"写成政治寓言——私德对公权。记住这个对立，任何回合分析都有了方向：谁代表权力、谁代表德性。
+中文解读：艾米莉亚宫廷戏剧里藏着侦探的耐心：每个细节都是 portal 的钥匙。
 
-**Bezug zum Konzept**: `Der private Konflikt traegt eine oeffentliche Anklage.`
+德语：Lessing hielt die Urauffuehrung bewusst schlicht, damit die Sprache als Waffe sichtbar blieb.
 
-## Schritt 4 — ausprobieren: Interaktive Praxis & Labor
+Bezug zum Konzept: `Der Prinz deutet an, Marinelli vollstreckt: Arbeitsteilung der Willkuer.`
+
+## Schritt 4 — ausprobieren: Die Sandkasten-Pruefung mit Textlupe
 
 [Werkzeug: highlighter]
 
-BEISPIEL（正确例题示范，含教具操作与解答，中文在上、德语在下）：
+中文任务：分析第10号案文本（宫廷毒计密信）。
+德语 AUFGABE: Untersuche Fall 10 (Stenogramm einer Verhandlung bei Kerzenlicht) zu Dramenszenenanalyse am Beispiel Emilia Galotti.
+TARGET（目标）：三个带行号证据，各配功能与判断，共四句。
 
-AUFGABE中文导读（找茬谜题）：某场景前半段公爵夫人主导提问，后半段爱米莉亚以短句打断并夺得决定权。请定位转折点并论证其冲突功能。
+HILFE（中文在前）：
+1. 中文：两句交代背景。德语：Ordne den Fall in zwei Saetzen ein.
+2. 中文：锁两个证据加行号。德语：Sichere zwei Befunde mit Zeile.
+3. 中文：功能加判断收尾。德语：Deute Funktion im Fallganzen.
 
-AUFGABE (analysieren, AFB II): In der Szene fuehrt zuerst die eine Figur das Gespraech, nach einem Sprecherwechsel entscheidet die andere. Lokalisieren Sie den Umschlag und deuten Sie seine Funktion im Tugendkonflikt.
+MUSTERLOESUNG: 中文示范思路：先背景一句，再证据加功能两句，最后判断一句收束。
+德语 MUSTERLOESUNG: Fall 10 zeigt Dramenszenenanalyse am Beispiel Emilia Galotti in drei Schritten mit Beleg, Funktion und Deutung; die zweite Schicht ist entlarvt.
 
-HILFE（中德双语步骤）：
+Klausur-Satz: `Der Prinz deutet an, Marinelli vollstreckt: Arbeitsteilung der Willkuer.`
 
-1. 中文：第1步标出提问与打断的分布，定出转折句，关键词：Beleg。
-   Schritt 1 (DE): Sichern Sie Fragen, Abbrueche und Sprechanteile mit Zeilenbeleg.
-2. 中文：第2步给每个手段配功能，不说空话，关键词：Mittel。
-   Schritt 2 (DE): Ordnen Sie jedem Mittel (Frage, Abbruch, Befehl) eine Funktion zu.
-3. 中文：第3步收束到冲突：谁接管决定、悲剧齿轮转了哪一格，关键词：Konflikt。
-   Schritt 3 (DE): Binden Sie den Befund an den Tugendkonflikt zurueck.
+## Schritt 5 — ausprobieren: Das doppelte Spiel Weg A gegen Weg B
 
-MUSTERLOESUNG：中文：转折在爱米莉亚第一次用短句打断并反问处；此前夫人以连问控场，此后爱米莉亚以决断句接管，场景从劝说转为抉择，悲剧冲突拧紧一格。
+VERGLEICH（中文先行）：先选路再做题：【选程序】(i) Weg A 近路（引文、细节、效果）还是 (ii) Weg B 远路（背景、结构、判断）。
+德语：Waehle erst das Verfahren (Weg A oder Weg B), dann loesen.
 
-MUSTERLOESUNG (DE): Der Umschlag liegt beim ersten Abbruch mit Gegenfrage: Die Gespraechsfuehrung wechselt, die Entscheidung wandert mit. Aus Ueberredung wird Entschluss; der Tugendkonflikt spitzt sich zu, weil Sprache hier nicht informiert, sondern verfuegt.
-Klausur-Satz: `Der Wechsel der Gespraechsfuehrung markiert die Uebergabe der Entscheidung und spitzt den Tugendkonflikt zu.`
+AUFGABE A（中文：哪条线索走近路？配引文）：Welche Spur verlangt Weg A?
+AUFGABE B（中文：哪个整体问题走远路？配背景）：Welche Frage verlangt Weg B?
 
-## Schritt 5 — ausprobieren: Verfahrensvergleich & Abgrenzung
+HILFE：A问形式细节选近路Weg A；B问整体结构选远路Weg B。【选程序看题干：问细节选A，问整体选B。】
 
-VERGLEICH辨别实验（双向辨析：人物塑造 vs 冲突推进）：
+中文答案：A走近路靠引文细节，B走远路靠背景结构。
+德语 ANTWORT: A erfordert Weg A mit Nahbeleg, B erfordert Weg B mit Kontext zu Dramenszenenanalyse am Beispiel Emilia Galotti.
 
-VERGLEICH: Waehle erst das Verfahren — 【选程序】先看设问：(i) 人物塑造（charakterisieren：聚焦语言风格、动机、变化）oder (ii) 冲突推进（Funktion：聚焦场景如何把全剧冲突推向下一步）—— dann loesen.
-
-AUFGABE A：Charakterisieren Sie den Vater anhand seines Sprechverhaltens.
-AUFGABE B：Arbeiten Sie heraus, wie die Szene den Gesamtkonflikt vorantreibt.
-
-HILFE: A 含 charakterisieren → Verfahren (i)。B 含 vorantreibt/Funktion → Verfahren (ii)。【选程序：问人物看语言；问作用看冲突。】
-
-ANTWORT: A erfordert Verfahren (i): Kurze Befehle plus Unterbrechungen belegen Schutz und Autoritaet; das Zoegern in Runde zwei belegt innere Spaltung zwischen Liebe und Ehrbegriff — Figur im Wandel. B erfordert Verfahren (ii): Die Szene schliesst Fluchtwege (kein Rueckzug mehr), uebergibt die Entscheidung und macht die Katastrophe unvermeidlich — Baustein der Zuspitzung. Beide Verfahren nutzen dieselben Belege, deuten sie aber auf verschiedene Ziele hin.
-
-Klausur-Satz: `Figur deutet Sprache auf den Menschen, Funktion deutet Sprache auf den Konflikt.`
+Klausur-Satz: `Der Prinz deutet an, Marinelli vollstreckt: Arbeitsteilung der Willkuer.`
 
 ## Schritt 6 — check: Selbsttest zu Dramenszenenanalyse am Beispiel Emilia Galotti
-CHECK检索默写（自测 3 题，与答案配对）：
 
-FRAGE: Wie lautet der Fuenfschritt der Szenenanalyse? | ANTWORT: Einordnung, Verlauf in Runden, Mittel mit Beleg, Funktion, Rueckbindung an Konflikt und Gattung.
-FRAGE: Woran liest man Macht im Dialog ab? | ANTWORT: An Fragen, Befehlen, Unterbrechungen und Schweigen — wer fuehrt, herrscht.
-FRAGE: Was ist das buergerliche Trauerspiel? | ANTWORT: Buergerliche Tugend gegen feudale Willkuer; der private Fall wird politisch lesbar.
+CHECK (drei Fragen mit Antworten):
 
-Klausur-Satz: `Ohne Funktion bleibt jede Mittelnennung leer.`
+中文自测（先中文自问，再用德语回答）：
+FRAGE: 三步链是什么？ | ANTWORT: Befund mit Zeile, Funktion im Gefuege, Deutung als Urteil.
+FRAGE: 近路要什么？ | ANTWORT: Nahbeleg mit Zitat und Wirkung.
+FRAGE: 远路要什么？ | ANTWORT: Kontext und Gefuege als Urteilstraeger.
+
+Klausur-Satz: `Der Prinz deutet an, Marinelli vollstreckt: Arbeitsteilung der Willkuer.`
 
 ## Fehlvorstellung
 
-(非Schritt小节，Parser 自动识别，不计入步骤步数)
+1. 中文误解：艾米莉亚宫廷戏剧只看表面。
+   中文纠偏：证据加功能才是得分点。
+   Korrektur-Satz: `Der Prinz delegiert Entscheidung, Marinelli besitzt die Vollzugsmacht.`
+2. 中文误解：艾米莉亚宫廷戏剧只看表面。
+   中文纠偏：证据加功能才是得分点。
+   Korrektur-Satz: `Begierde wird am Hof zum Plan, der Plan zur Intrige.`
 
-1. 误解"分析就是复述剧情"。
-   中文纠偏：复述零分；每句内容后必须跟 Mittel + Funktion，否则只是 Nacherzaehlung。
-   Korrektur-Satz: `Inhaltsangabe ohne Funktionsdeutung ist keine Analyse.`
+## Schritt 7 — szenario: Klausurtransfer: Theaterkritiker der Stadtpost zu Fall 10
 
-2. 误解"引用越长越好"。
-   中文纠偏：长引挤掉分析；用概括（paraphrasieren）加短 Beleg，省下篇幅写功能。
-   Korrektur-Satz: `Kurzer Beleg plus Deutung schlaegt langes Zitat ohne Deutung.`
+ROLLE（中文）：你是Theaterkritiker der Stadtpost，负责审稿。
+德语 ROLLE: Du bist Theaterkritiker der Stadtpost.
+SITUATION: Fall 10 liegt unbearbeitet vor dir.
+AUFGABE（中文）：150词左右，含背景、两个证据、功能判断。
+RUBRIC (30 XP): Einordnung (6 XP) | Belege mit Zeile (10 XP) | Funktion plus Deutung (10 XP) | Fachsprache (4 XP).
 
-## Schritt 7 — szenario: Klausurtransfer: Dramenszenenanalyse am Beispiel Emilia Galotti
-ROLLE: Du schreibst die Klausur: Dramenszene im buergerlichen Trauerspiel.
-SITUATION: Der Text ist unbekannt, die Zeit knapp. Verfasse in zusammenhaengender Analyse (ca. 150 Woerter) Einordnung, zwei Runden mit Mittel und Funktion sowie Schluss zum Gesamtkonflikt.
-RUBRIC (30 XP): Einordnung mit Konfliktstand (6 XP) | Zwei Runden mit Beleg und Mittel (10 XP) | Funktionsdeutung fuer Figuren und Konflikt (10 XP) | Fachsprachliche Korrektheit (4 XP).
+## Schritt 8 — reflexion: Takeaway und Rueckblick aus Fall 10
 
-## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
+中文总结：第10号案件教会我们：先锁证据，再说功能，最后判断。
+德语 TAKEAWAY: Beleg sichern, Funktion benennen, Urteil begruenden. `Der Prinz deutet an, Marinelli vollstreckt: Arbeitsteilung der Willkuer.`
 
-TAKEAWAY 1盒（核心总结）：
-
-中文：场景分析五步——定位、回合、手法、功能、回扣。权力看谁主导对话，主题看私德撞公权。记住一句话——无功能不记手法，无冲突不写内容。
-Takeaway-Satz: `Szene heisst: Runde, Mittel, Funktion — alles im Dienst des Konflikts.`
-
-REFLEXION 2问：
-1. 过程自省：Welcher Schritt fiel schwerer — die Rundenanalyse (Schritt 4) oder die Wahl des Analyseziels (Schritt 5)?
-2. 元认知计划：Beim naechsten Mal nummeriere ich zuerst die Gespraechsrunden am Rand.
+REFLEXION（中文在前）：
+1. 中文：近路证据和远路判断哪个更难？德语：Was fiel schwerer, Nahbeleg oder Fernurteil?
+2. 中文：下次先划引文行号。德语：Naechstes Mal sichere ich zuerst Zitat und Zeile.

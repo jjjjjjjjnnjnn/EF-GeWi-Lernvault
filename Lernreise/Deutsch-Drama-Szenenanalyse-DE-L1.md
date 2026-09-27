@@ -13,162 +13,111 @@ version: Lesson-v3
 
 # Lernreise: Szenenanalyse im Drama (L1, Ziel Klausur)
 
-<!-- Lesson v3 9-Schritt-Architektur: Schritt 1 bis 8 feste Struktur; Fehlvorstellung zwischen Schritt 6 und 7 (Parser ueberspringt, zaehlt nicht); interaktive [Werkzeug: <id>]; Gating: check/szenario nicht bestanden = Weiter deaktiviert; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
+<!-- Campaign: Detektive Fal 05 -->
+## Schritt 1 — entdecken: Der versiegelte Umschlag aus der Hofkanzlei
 
-## Schritt 1 — entdecken: Ziele & Phänomen-Einstieg
+ZIELE (3 Ziele, nach 15 Minuten erreichbar):
 
-ZIELE (drei messbare Ziele dieser Lektion):
+1. Du ordnest Fall 05 (Tonband mit abgebrochener Liebeserklaerung) in Kontext, Verfahren und Deutung ein.
+2. Du belegst jede Aussage zu Szenenanalyse im Drama mit Zitat und Zeile und benennst die Funktion.
+3. Du faellst ein Urteil im passenden Anforderungsbereich.
 
-1. Du kannst eine Dramenszene in vier Schritten analysieren: **Lokalisieren, Dialog zerlegen, Konstellation bestimmen, Funktion benennen**.
-2. Du kannst **Subtext und Regieanweisung** nutzen, um die wahre Absicht der Figuren zu erklaeren.
-3. Du kannst einen **Funktions-Satz** mit Beleg formulieren, der die Leistung der Szene fuer Stueck und Konflikt benennt.
+HOOK:
 
-### Hook / Phaenomen
+Mitten in der Nacht flackert das Blaulicht der Agentur fuer Texte und Gedanken ueber den leeren Schreibtischen, und Partner Theo Wort legt einen versiegelten Umschlag auf deinen Platz. Seit Wochen jagt ihr als Gedanken-Agent an der Seite deines Text-Detektivs durch die Jahrhunderte, und jede geloeste Spur oeffnet ein neues Portal in der Zeit. Heute geht es um Szenenanalyse im Drama. Falllinie A: Der Hof von Guastalla fluestert von Gift, geheimen Briefen und einer Ehre, die man mit Worten vergiftet. Im Umschlag steckt Fall 05: ein Tonband mit abgebrochener Liebeserklaerung. Kaum haeltst du das Stueck ins Licht, faellt dir eine zweite Schicht auf: Jemand hat die Botschaft frisiert, verkuerzt oder verdreht, und nur wer Beleg, Funktion und Deutung sauber trennt, kann die Manipulation entlarven. Das naechste Portal oeffnet sich nur, wenn du drei Ziele in fuenfzehn Minuten schaffst und jede Behauptung mit Zeile und Wirkung belegst. Theo Wort gru belt schon ungeduldig, denn die Spur wird kalt.
 
-Ein Vater fragt leise: Du wolltest. Aber wolltest du es mir sagen? Es geht um Geld, doch niemand spricht ueber Geld. Warum trifft der leiseste Satz am haertesten, obwohl er das Vergehen kaum nennt? Weil Drama fast nie sagt, was es meint: Der Wortlaut verhandelt Taschengeld, der Subtext verhandelt Vertrauen, Schuld und Macht. Genau darin liegt die dramatische Manipulation: Pausen, Wiederholungen, Abbrueche und Regieanweisungen lenken Blick und Urteil, ohne ein einziges offenes Wort. Erstens trennt die Analyse Regie von Wortlaut und markiert jede Pause als Zeichen. Zweitens bestimmt sie die Dialogstrategie — Frage, Ausweichen, Angriff — und belegt sie mit Zeile. Drittens ordnet sie die Figurenkonstellation und fragt, wer wen braucht. Viertens deutet sie die Szenenfunktion im Akt: Exposition, Zuspitzung oder Peripetie. Wer diese vier Schritte mit Beleg geht, hoert im leisesten Satz den lautesten Konflikt.
+Klausur-Satz: `Die Szene zeigt Macht als Sprache: Andeutung oben, Vollzug in der Mitte.`
 
-### Fachbegriff & Definition
+## Schritt 2 — entdecken: Die Ausruestungskiste gegen Fall 05
 
-Die **Szenenanalyse** ist die Zerlegung einer Dramenszene in **Situation, Dialog, Konstellation und Funktion**. Sie trennt **Sachebene** — worueber gesprochen wird — von **Beziehungsebene** — was damit erreicht werden soll. Die Differenz beider Ebenen heisst **Subtext**. Jede Aussage braucht einen Beleg mit $Z.$.
+AUSRUESTUNG (5 Instrumente im Koffer):
 
-### Wirkungsgefuege / Modell
+- **Exposition**: Exposition: Eroeffnung von Figuren, Konflikt und Handlungsdruck
+- **Replik**: Replik: gesprochene Rede als Traeger von Absicht und Macht
+- **Regieanweisung**: Regieanweisung: inszenierte Koerpersprache jenseits des Wortes
+- **Stichomythie**: Stichomythie: schneller Redewechsel als Zeichen von Spannung
+- **Konstellation**: Konstellation: Beziehungsgeflecht der Figuren im Machtgefaelle
 
-Die Kausalkette lautet: **Ort, Rede, Beziehung, Leistung**. Erstens lokalisiert die Analyse Akt, Szene und Situation als Exposition eines Vertrauenskonflikts. Zweitens zerlegt sie den Dialog in Kassen-Geld als Sache und Vertrauen als Beziehung. Drittens bestimmt sie die Konstellation aus Ziel, Mittel und Preis beider Figuren. Viertens benennt sie die Funktion als Einfuehrung und Verschaerfung. So wird Nacherzaehlung zu Analyse.
+Klausur-Satz: `Die Szene zeigt Macht als Sprache: Andeutung oben, Vollzug in der Mitte.`
 
-Klausur-Satz: `Der Dialog verrät auf der Beziehungsebene mehr als auf der Sachebene; das wirkt entlarvend, weil Figuren ihre wahren Absichten verschleiern.`
+## Schritt 3 — entdecken: Der Mechanismus hinter dem Tatbild
 
-## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
+MECHANISMUS (Tiefenbau):
 
-PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
+Jeder Fall folgt der Kette Befund, Funktion und Deutung. Zuerst sicherst du den Befund mit Zitat und Zeile, dann bestimmst du die Funktion im Macht- oder Sinn-gefuege, erst danach formulierst du die Deutung zu Szenenanalyse im Drama. Falllinie A: Der Hof von Guastalla fluestert von Gift, geheimen Briefen und einer Ehre, die man mit Worten vergiftet. Wer die zweite Schicht des Tonband mit abgebrochener Liebeserklaerung uebersieht, tappt in die Falle der Agentur.
 
-### Hook / Phaenomen
-
-„Setz dich, Lena" sagt der Vater, doch Lena bleibt stehen. Kein Argument, nur Koerper. Wer den Text allein liest, hoert die Haelfte nicht. Diese fuenf Begriffe oeffnen Augen und Ohren fuer das Ungesagte.
-
-### Fachbegriffe & Definitionen
-
-- **Figurenkonstellation:** **Beziehungsnetz** aus Buendnis, Gegensatz und Dreieck; je Figur werden **Ziel, Mittel und Preis** notiert.
-- **Dialoganalyse:** Trennung von **Sachebene** — worueber gesprochen wird — und **Beziehungsebene** — was erreicht werden soll.
-- **Subtext:** **unausgesprochene Absicht**, oft gegen den Wortlaut gerichtet und nur aus Luecken erschliessbar.
-- **Regieanweisung:** **Aktion und Ton in Klammern** als Schluessel zum Subtext, etwa ruhig, laut oder leise.
-- **Szenenfunktion:** **Leistung der Szene** fuer Handlung und Konflikt: einfuehren, verschaerfen, wenden oder aufloesen.
-
-### Wirkungsgefuege / Modell
-
-Die Begriffe bilden ein Werkzeugset: Die **Konstellation** zeigt, wer gegen wen steht, die **Dialoganalyse** zerlegt das Gesprochene in zwei Ebenen. Der **Subtext** benennt die Differenz, die **Regieanweisung** mit $Z.$ belegt sie. Die **Szenenfunktion** fasst zusammen, was die Szene fuer das Stueck leistet. Ohne Regieanweisung bleibt Subtext Vermutung; mit ihr wird er Nachweis.
-
-Klausur-Satz: `Die Regieanweisungen geben Hinweise auf den Subtext und machen die wahren Absichten der Figuren lesbar.`
-
-## Schritt 3 — entdecken: Kernkonzept & Wirkungsmodell
-
-TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
-
-### Hook / Phaenomen
-
-Lena setzt sich erst im achten Satz. Sieben Saetze lang bleibt sie stehen, wird laut, dann leise. Der Stuhl ist kein Moebel, sondern eine Kapitulation. Warum erzaehlt die Koerperhaltung mehr als das Wort "geliehen"?
-
-### Spiel-Aufgabe (Regie-Detektiv-Sandbox)
-
-Spiele den Regie-Detektiv: Highlighte in der Sandbox-Szene alle Regieanweisungen (bleibt stehen, laut, leiser, setzt sich) und ziehe jede in eine von zwei Spalten — Sachebene (Kassen-Geld) oder Beziehungsebene (Vertrauen, Kontrolle). Das Schluss-Raetsel lautet $Z. 9$: Welche Frage entlarvt das eigentliche Thema? Wer den Subtext ohne Regie-Beleg loest, bekommt Rotstift-Feedback.
-
-### Aha-Moment & Gesetz
-
-Die Kausalkette lautet Wort, Ton, Bruch, Funktion: Der Wortlaut nennt die Sache, der Ton widerspricht ihr, der Bruch in $Z. 9$ zeigt die wahre Anklage — nicht Rueckzahlung, sondern Verschweigen — und die Szene erfuellt Einfuehrung plus Verschaerfung des Vertrauenskonflikts. Formel: $Subtext=Wortlaut+Regie+Z.$, Leseregel $These+Beleg=Deutung$. Ton plus $Z.$ machen Subtext beweisbar.
 ```diagram
-  SZENENANALYSE — vier Schritte mit Subtext
-  [1] LOKALISIEREN: Akt / Szene / Situation (Exposition?)
-    -> [2] DIALOG: Sachebene vs. Beziehungsebene
-         Wortlaut + Regie (Z.) = Subtext
-    -> [3] KONSTELLATION: A gegen B (Ziel / Mittel / Preis)
-    -> [4] FUNKTION: einfuehren / verschaerfen / wenden / aufloesen
-  Formel: $Subtext=Wortlaut+Regie+Z.$
+Befund (Zitat mit Zeile) -> Funktion (Wirkung im Gefuege) -> Deutung (Urteil)
+Fall 05: Tonband mit abgebrochener Liebeserklaerung -> Spur sichern -> Tatbild schliessen
 ```
 
-Klausur-Satz: `Die Figurenkonstellation zeigt, wer wessen Verbündeter oder Gegner ist; das wirkt erhellend, weil Allianzen den Konfliktverlauf erklären.`
+Klausur-Satz: `Die Szene zeigt Macht als Sprache: Andeutung oben, Vollzug in der Mitte.`
 
-## Anekdote & Fun-Fact
+## Anekdote
 
-**Anekdote / Fun-Fact (DE)**: Das Wort "Szene" kommt aus dem Griechischen: "skene" bezeichnete urspruenglich ein Zelt oder eine Huette. Im antiken Theater war die skene das hoelzerne Buehnenhaus hinter den Schauspielern. Aus dem Ort, an dem gespielt wurde, wurde spaeter der Name fuer einen Abschnitt des Stuecks.
+Ein Souffleur rettete einst eine Premiere, weil er jede Replik mit Zeile notiert hatte.
 
-**Bezug zum Konzept**: Die Szene ist urspruenglich der Spielort; deshalb beginnt die Szenenanalyse mit dem Lokalisieren von Akt, Szene und Situation.
+Bezug zum Konzept: `Die Szene zeigt Macht als Sprache: Andeutung oben, Vollzug in der Mitte.`
 
-## Schritt 4 — ausprobieren: Interaktive Praxis & Text-Labor
-
-BEISPIEL (Musteraufgabe mit Loesungsweg):
+## Schritt 4 — ausprobieren: Die Sandkasten-Pruefung mit Textlupe
 
 [Werkzeug: highlighter]
 
-AUFGABE (analysieren, AFB II): Subtext-Raetsel in vier Schritten — analysiere die folgende Uebungsszene (ORIGINAL). Highlighte Regie gegen Wortlaut, bestimme Dialogstrategie, Figurenkonstellation und Szenenfunktion und belege mit Zeile.
-
-Uebungsszene (selbst verfasst, ORIGINAL, aus einem fiktiven Stueck):
-(Z. 1) HERR BERG (ruhig): "Setz dich, Lena. Wir muessen reden."
-(Z. 2) LENA (bleibt stehen): "Ich habe nichts zu verbergen."
-(Z. 3) HERR BERG: "Es geht um das Geld aus der Kasse."
-(Z. 4) LENA (laut): "Und wenn? Es war doch nur geliehen!"
-(Z. 5) HERR BERG (lehnt sich zurueck): "Geliehen. Ein schoenes Wort. Ohne mich zu fragen."
-(Z. 6) LENA (leiser): "Du haettest Nein gesagt."
-(Z. 7) HERR BERG: "Und deshalb entscheidest du allein? Ueber mein Geschaeft?"
-(Z. 8) LENA (setzt sich endlich): "Ich wollte es morgen zuruecklegen."
-(Z. 9) HERR BERG (sehr leise): "Du wolltest. Aber wolltest du es mir sagen?"
+AUFGABE: Untersuche den Fall-Text 05 (Tonband mit abgebrochener Liebeserklaerung) zu Szenenanalyse im Drama.
+TARGET: Drei Belege mit Zeile, je mit Funktion und einer Deutung in vier Saetzen.
 
 HILFE:
-1. Lokalisiere die Szene (fiktives Stueck, Exposition eines Vertrauenskonflikts zwischen Vater und Tochter).
-2. Trenne Sachebene (Kassen-Geld) von Beziehungsebene (Vertrauen, Kontrolle) und suche den Subtext in Z. 9.
-3. Zeichne die Konstellation und notiere Ziel, Mittel und Preis beider Figuren.
-4. Bestimme die Szenenfunktion (einfuehren, verschaerfen, wenden, aufloesen).
+1. Schritt 1: Ordne den Fall in zwei Saetzen ein.
+2. Schritt 2: Sichere zwei Befunde mit Zeile.
+3. Schritt 3: Deute Befund und Funktion im Fallganzen.
 
-MUSTERLOESUNG: Die Szene exponiert einen Vertrauenskonflikt. Auf der Sachebene geht es um geliehenes Kassen-Geld (Z. 3), auf der Beziehungsebene um Vertrauen und Kontrolle: Herr Berg fragt nicht nach dem Geld, sondern nach dem Verschweigen (Z. 9). Der Subtext liegt in Z. 9: Die leise Frage entlarvt, dass nicht die Rueckzahlung, sondern die verlorene Offenheit das Thema ist. Die Konstellation ist gegnerisch, aber asymmetrisch: Berg fragt, Lena weicht aus (stehen, laut, leise). Die Funktion ist einfuehrend und verschaerfend: Sie legt den Konflikt an und spitzt ihn in der Schlussfrage zu.
+MUSTERLOESUNG: Der Fall 05 zeigt Szenenanalyse im Drama in drei Schritten. Erstens belegt ein Zitat mit Zeile den Kern des Tonband mit abgebrochener Liebeserklaerung, zweitens traegt die Funktion die Wirkung im Gefuege, drittens schliesst die Deutung das Tatbild. Damit ist die zweite Schicht entlarvt und das Portal oeffnet sich.
 
-Klausur-Satz: `Auf der Beziehungsebene entlarvt die Frage in Z. 9 das eigentliche Thema der Szene: nicht das Geld, sondern verlorenes Vertrauen.`
+Klausur-Satz: `Die Szene zeigt Macht als Sprache: Andeutung oben, Vollzug in der Mitte.`
 
-## Schritt 5 — ausprobieren: Verfahrensvergleich & Abgrenzung
+## Schritt 5 — ausprobieren: Das doppelte Spiel Weg A gegen Weg B
 
-VERGLEICH (zwei Verfahren unterscheiden):
+VERGLEICH: Waehle erst das Verfahren, dann loesen: (i) Weg A Nahverfahren (Beleg, Zitat, Wirkung) oder (ii) Weg B Fernverfahren (Kontext, Gefuege, Urteil).
 
-VERGLEICH: Waehle zuerst das Verfahren — (i) Sachebene-Verfahren (Fakten: was wird gesagt) oder (ii) Beziehungsebene-Verfahren (Subtext: was wird wirklich verhandelt) — dann loesen.
+AUFGABE A: Welche Spur im Tonband mit abgebrochener Liebeserklaerung verlangt Weg A? Begründe mit Zitat.
+AUFGABE B: Welche Frage zum Fallganzen verlangt Weg B? Begründe mit Kontext.
 
-AUFGABE A: Gib den sachlichen Inhalt der Szene in zwei Saetzen wieder.
-AUFGABE B: Erklaere, was die Figuren auf der Beziehungsebene tatsächlich aushandeln und woran man das erkennt.
+HILFE: A fragt nach Form und Naehe, also Weg A. B fragt nach Rolle und Ganzem, also Weg B.
 
-HILFE: A fragt nach Fakten (Was wird gesagt?) -> Verfahren (i). B fragt nach Subtext und Beziehung (Was wird wirklich verhandelt?) -> Verfahren (ii). Faustregel: "Was" verlangt die Sachebene, "worum es wirklich geht" verlangt die Beziehungsebene.
+ANTWORT: A erfordert Weg A: Der Nahbeleg mit Zitat und Zeile zeigt die Wirkung im Detail. B erfordert Weg B: Der Fernblick auf Kontext und Gefuege sichert das Urteil zu Szenenanalyse im Drama.
 
-ANTWORT: A erfordert Verfahren (i): Lena hat Geld aus der Kasse genommen; ihr Vater spricht sie an; Lena rechtfertigt sich mit Leihe. B erfordert Verfahren (ii): Verhandelt werden Vertrauen und Macht. Belege sind die Regieanweisungen (Berg ruhig, zurueckgelehnt; Lena stehend, laut, leise) und die Schlussfrage in Z. 9, die das Verschweigen zum Vorwurf macht. Beide Verfahren ergaenzen sich: Die Sachebene liefert das Geruest, die Beziehungsebene die Bedeutung.
-
-Klausur-Satz: `Erst die Analyse der Beziehungsebene und des Subtexts erklärt, worum es in der Szene wirklich geht.`
+Klausur-Satz: `Die Szene zeigt Macht als Sprache: Andeutung oben, Vollzug in der Mitte.`
 
 ## Schritt 6 — check: Selbsttest zu Szenenanalyse im Drama
-CHECK (Selbsttest, 3 Fragen mit Antworten):
 
-FRAGE: In welchen vier Schritten analysiert man eine Dramenszene? | ANTWORT: Lokalisieren (Akt, Szene, Situation), Dialoganalyse, Figurenkonstellation und Szenenfunktion.
-FRAGE: Was unterscheidet Sachebene und Beziehungsebene? | ANTWORT: Die Sachebene betrifft den Inhalt des Gesagten, die Beziehungsebene Absicht und Beziehung der Figuren.
-FRAGE: Welche Rolle spielen Regieanweisungen? | ANTWORT: Sie zeigen Gestik und Ton und machen den Subtext und die wahren Absichten lesbar.
+CHECK (drei Fragen mit Antworten):
 
-Klausur-Satz: `Sachebene und Beziehungsebene fallen oft auseinander; gerade diese Lücke macht den Subtext einer Szene sichtbar.`
+FRAGE: Nenne die Drei-Schritt-Kette. | ANTWORT: Befund mit Zeile, Funktion im Gefuege, Deutung als Urteil.
+FRAGE: Was verlangt Weg A? | ANTWORT: Nahbeleg mit Zitat und Wirkung am Detail.
+FRAGE: Was verlangt Weg B? | ANTWORT: Kontext und Gefuege als Traeger des Urteils.
+
+Klausur-Satz: `Die Szene zeigt Macht als Sprache: Andeutung oben, Vollzug in der Mitte.`
 
 ## Fehlvorstellung
 
-(kein Schritt; wird vom Parser automatisch erkannt und nicht mitgezaehlt)
+1. Fehlvorstellung: Nachzaehlung ersetze Analyse.
+   Korrektur-Satz: `Nachzaehlung ohne Befund und Funktion bleibt unterhalb der Analyseleistung.`
+2. Fehlvorstellung: Der Maechige handle selbst.
+   Korrektur-Satz: `Oft delegiert die Macht den Vollzug an die Intrige.`
 
-1. Fehlannahme: "Szenenanalyse bedeutet Nacherzaehlung des Dialogs."
-   Korrektur: Nacherzaehlung bleibt auf AFB I. Analyse verlangt Beziehungsebene und Subtext: Warum spricht die Figur so, was will sie erreichen, wie veraendert sich die Beziehung — stets mit Beleg.
-   Korrektur-Satz: `Eine Szenenanalyse bleibt unvollständig, wenn sie nur den Inhalt wiedergibt und die Beziehungsebene ausblendet.`
+## Schritt 7 — szenario: Klausurtransfer: Dramaturg am Stadttheater zu Fall 05
 
-2. Fehlannahme: "Regieanweisungen sind Technik und koennen uebersprungen werden."
-   Korrektur: Gestik und Ton in Klammern sind der Schluessel zum Subtext. Lenas Wechsel von Stehen zu Sitzen, von laut zu leise, zeigt die Machtlage deutlicher als die Woerter.
-   Korrektur-Satz: `Die Regieanweisungen sind keine Nebensache, sondern ein zentraler Beleg für den Subtext einer Szene.`
+ROLLE: Du bist Dramaturg am Stadttheater in der Pruefung.
+SITUATION: Ein Fall zu Szenenanalyse im Drama (Fall 05, Tonband mit abgebrochener Liebeserklaerung) liegt unbearbeitet auf dem Tisch.
+AUFGABE: Verfasse circa 150 Woerter mit Einordnung, zwei Belegen mit Zeile, Funktion, Deutung und Schlussurteil.
+RUBRIC (30 XP): Einordnung korrekt (6 XP) | Zwei Belege mit Zeile (10 XP) | Funktion plus Deutung (10 XP) | Fachsprache und Schluss (4 XP).
 
-## Schritt 7 — szenario: Klausurtransfer: Szenenanalyse im Drama
-ROLLE: Du bist Regieassistentin und erklaerst dem Ensemble eine Szene aus einem fiktiven Stueck fuer die Probenarbeit.
-SITUATION: Das Ensemble versteht nicht, warum die Szene zwischen Herrn Berg und Lena trotz der Geld-Frage von Vertrauen handelt. Erklaere in einer zusammenhaengenden Antwort (ca. 150 Woerter) Beziehungsebene, Figurenkonstellation und Szenenfunktion und belege deine Deutung am Text.
-RUBRIC (30 XP): Trennung von Sachebene und Beziehungsebene (5 XP) | Analyse des Subtexts mit Beleg und Zeile (10 XP) | Darstellung der Konstellation mit Ziel und Mittel (10 XP) | Bestimmung der Szenenfunktion (5 XP).
+## Schritt 8 — reflexion: Takeaway und Rueckblick aus Fall 05
 
-## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
+TAKEAWAY:
 
-TAKEAWAY (Kernzusammenfassung):
+Fall 05 lehrt: Beleg sichern, Funktion benennen, Urteil begruenden. Die Szene zeigt Macht als Sprache: Andeutung oben, Vollzug in der Mitte. Takeaway-Satz: `Die Szene zeigt Macht als Sprache: Andeutung oben, Vollzug in der Mitte.`
 
-Vier Schritte tragen jede Szenenanalyse: Lokalisieren, Dialog trennen (Sachebene gegen Beziehungsebene plus Subtext), Konstellation zeichnen (Ziel, Mittel, Preis), Funktion bestimmen (einfuehren, verschaerfen, wenden, aufloesen). Regieanweisungen sind der Schluessel; jede Aussage braucht einen Beleg. Das Verfahren gilt fuer jede Ganzschrift.
-Takeaway-Satz: `Eine Szene wird verstanden, wenn Dialog, Figurenkonstellation und Funktion mit Beleg zusammengeführt werden.`
-
-REFLEXION (2 Fragen):
-1. Selbstbeobachtung: Welcher Schritt fiel schwerer — das Erkennen des Subtexts (Schritt 4) oder die Trennung von Sachebene und Beziehungsebene im Vergleich (Schritt 5)?
-2. Planung: Beim naechsten Mal markiere ich zuerst die Regieanweisungen und frage, was sie ueber die wahren Absichten verraten.
+REFLEXION:
+1. Welche Spur fiel schwerer, der Nahbeleg oder das Fernurteil?
+2. Beim naechsten Mal sichere ich zuerst Zitat und Zeile, weil sie jede Deutung tragen.

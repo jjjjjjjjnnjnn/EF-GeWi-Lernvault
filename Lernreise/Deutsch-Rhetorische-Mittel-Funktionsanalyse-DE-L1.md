@@ -13,151 +13,111 @@ version: Lesson-v3
 
 # Lernreise: Rhetorische Mittel und Funktionsanalyse (L1, Ziel Klausur)
 
-<!-- Lesson v3 9-Schritt-Architektur: Schritt 1 bis 8 feste Struktur; Fehlvorstellung zwischen Schritt 6 und 7 (Parser ueberspringt, zaehlt nicht); interaktive [Werkzeug: <id>]; Gating: check/szenario nicht bestanden = Weiter deaktiviert; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
+<!-- Campaign: Detektive Fal 14 -->
+## Schritt 1 — entdecken: Der versiegelte Umschlag aus der Hofkanzlei
 
-## Schritt 1 — entdecken: Ziele & Phänomen-Einstieg
+ZIELE (3 Ziele, nach 15 Minuten erreichbar):
 
-ZIELE (drei messbare Ziele dieser Lektion):
+1. Du ordnest Fall 14 (Rede-Manuskript mit Ausrufezeichen am Rand) in Kontext, Verfahren und Deutung ein.
+2. Du belegst jede Aussage zu Rhetorische Mittel und Funktionsanalyse mit Zitat und Zeile und benennst die Funktion.
+3. Du faellst ein Urteil im passenden Anforderungsbereich.
 
-1. Du kannst die Kette aus **Form, Beleg und Funktion** anwenden: Mittel benennen, kurz zitieren, Wirkung im Kontext deuten.
-2. Du kannst zwoelf haeufige **rhetorische Mittel** unterscheiden und je eine typische Funktionsrichtung nennen.
-3. Du kannst einen **Analysesatz** aus Form plus Beleg plus Funktion schreiben und die Ueberzeugungskraft einschaetzen.
+HOOK:
 
-### Hook / Phaenomen
+Mitten in der Nacht flackert das Blaulicht der Agentur fuer Texte und Gedanken ueber den leeren Schreibtischen, und Partner Theo Wort legt einen versiegelten Umschlag auf deinen Platz. Seit Wochen jagt ihr als Gedanken-Agent an der Seite deines Text-Detektivs durch die Jahrhunderte, und jede geloeste Spur oeffnet ein neues Portal in der Zeit. Heute geht es um Rhetorische Mittel und Funktionsanalyse. Falllinie A: Der Hof von Guastalla fluestert von Gift, geheimen Briefen und einer Ehre, die man mit Worten vergiftet. Im Umschlag steckt Fall 14: ein Rede-Manuskript mit Ausrufezeichen am Rand. Kaum haeltst du das Stueck ins Licht, faellt dir eine zweite Schicht auf: Jemand hat die Botschaft frisiert, verkuerzt oder verdreht, und nur wer Beleg, Funktion und Deutung sauber trennt, kann die Manipulation entlarven. Das naechste Portal oeffnet sich nur, wenn du drei Ziele in fuenfzehn Minuten schaffst und jede Behauptung mit Zeile und Wirkung belegst. Theo Wort gru belt schon ungeduldig, denn die Spur wird kalt.
 
-Der Stundenplan frisst unsere Nachmittage — jeder versteht den Satz sofort, obwohl kein Plan je gefressen hat. Ein falsches Bild sagt mehr Wahres als eine korrekte Zahl. Warum trifft die Luege mitten ins Gefuehl? Weil rhetorische Manipulation genau so arbeitet: Sie umgeht die Pruefung des Verstandes und steuert Zustimmung ueber Bild, Klang und Druck. Die Metapher frisst macht aus Verwaltung ein Raubtier, die Anapher er frisst die Pausen, er frisst die Ruhe trommelt den Vorwurf in den Leser, die rhetorische Frage Ist das noch Lernen oder schon ein Wettrennen simuliert Dialog und erzwingt inneres Nicken. Erstens verlangt die Klausur Benennung mit Fachbegriff. Zweitens verlangt sie Beleg mit Zeile und kurzem Zitat. Drittens verlangt sie Wirkung: Welcher Leserimpuls entsteht — Angst, Wut, Mitleid, Zustimmung. Viertens verlangt sie Rueckbindung an These und Intention des Autors. Erst diese Kette aus These plus Beleg gleich Deutung verwandelt Etiketten in Analyse und schuetzt vor der Manipulation, die man gerade untersucht.
+Klausur-Satz: `Kein Mittel ohne Dienst: Jede Figur muss dem Gedanken dienen, sonst ist sie Schmuck.`
 
-### Fachbegriff & Definition
+## Schritt 2 — entdecken: Die Ausruestungskiste gegen Fall 14
 
-Die **Funktionsanalyse** ist die Deutung eines **sprachlichen Mittels an seiner Textstelle**. Sie verbindet **Benennung der Form**, kurzen **Beleg mit $Z.$** und Erklaerung der **kontextgebundenen Wirkung**. Entscheidend ist der Kontext: Dieselbe Metapher kann veranschaulichen oder anklagen. Ohne Kontext gibt es nur Etiketten, keine Analyse.
+AUSRUESTUNG (5 Instrumente im Koffer):
 
-### Wirkungsgefuege / Modell
+- **Metapher**: Metapher: Bildfeld als Deutungshebel mit Funktionskern
+- **Anapher**: Anapher: Wiederholung am Satzanfang als Verstaerker
+- **Parallelismus**: Parallelismus: Gleichbau als Ordnungs- und Nachdrucksignal
+- **Rhetorische Frage**: Rhetorische Frage: Scheinfrage als Lenkung des Lesers
+- **Klimax**: Klimax: Steigerung als Spannungs- und Schlussmarker
 
-Die Kausalkette lautet: **Form, Beleg, Funktion, These**. Erstens wird die Form exakt benannt, etwa **Anapher** in $Z. 2$. Zweitens folgt der kurze Beleg mit $Z.$ als Nachweis. Drittens wird die Wirkung gedeutet: Die Wiederholung rhythmisiert die Klage und macht Zeitdruck total. Viertens wird an die Absatzthese rueckgebunden: Der Rhythmus stuetz die Forderung nach Atempausen. Erst die vierte Stufe schliesst die Analyse.
+Klausur-Satz: `Kein Mittel ohne Dienst: Jede Figur muss dem Gedanken dienen, sonst ist sie Schmuck.`
 
-Klausur-Satz: `Die Funktionsanalyse verbindet die Benennung des Mittels mit einem Beleg und der Deutung seiner Wirkung im Kontext.`
+## Schritt 3 — entdecken: Der Mechanismus hinter dem Tatbild
 
-## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
+MECHANISMUS (Tiefenbau):
 
-PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
+Jeder Fall folgt der Kette Befund, Funktion und Deutung. Zuerst sicherst du den Befund mit Zitat und Zeile, dann bestimmst du die Funktion im Macht- oder Sinn-gefuege, erst danach formulierst du die Deutung zu Rhetorische Mittel und Funktionsanalyse. Falllinie A: Der Hof von Guastalla fluestert von Gift, geheimen Briefen und einer Ehre, die man mit Worten vergiftet. Wer die zweite Schicht des Rede-Manuskript mit Ausrufezeichen am Rand uebersieht, tappt in die Falle der Agentur.
 
-### Hook / Phaenomen
-
-Zehn erkannte Mittel, null Punkte — so enden viele Klausuren. Der Fehler liegt nicht im Auge, sondern im Satzbau: Wer nur benennt, analysiert nicht. Diese fuenf Begriffe schliessen die Luecke zwischen Fund und Deutung.
-
-### Fachbegriffe & Definitionen
-
-- **Rhetorisches Mittel:** bewusste **Abweichung vom Alltagsausdruck** zur Verstaerkung von Wirkung und Anschaulichkeit.
-- **Beleg:** kurzes **woertliches Zitat** mit $Z.$ als Nachweis, maximal ein Satz lang.
-- **Funktion:** **kontextgebundene Wirkung** an dieser Stelle: veranschaulichen, steigern, distanzieren oder ordnen.
-- **Wirkungsabsicht:** vom Autor kalkuliertes Ziel — was der Leser **glauben, fuehlen oder tun** soll.
-- **Kontext:** **Absatzthema, Adressat und Argumentationsphase**; jede Funktion haengt an ihm.
-
-### Wirkungsgefuege / Modell
-
-Die Begriffe bilden ein Pruefnetz: Das **Mittel** liefert die Form, der **Beleg** mit $Z.$ den Nachweis, die **Funktion** die Deutung. Die **Wirkungsabsicht** gibt die Richtung vor, der **Kontext** den Massstab. Wer die Funktion ohne Kontext behauptet, raet; wer sie aus dem Kontext erschliesst, analysiert. Genau das unterscheidet AFB I von AFB II.
-
-Klausur-Satz: `Ohne Beleg bleibt die Funktionsangabe eine Behauptung, erst der Kontext macht sie zur Analyse.`
-
-## Schritt 3 — entdecken: Kernkonzept & Wirkungsmodell
-
-TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
-
-### Hook / Phaenomen
-
-"Er frisst die Pausen, er frisst die Ruhe" — zweimal dasselbe Verb, und ploetzlich klingt Erschoepfung wie ein Raubtier. Kein neues Argument, nur Wiederholung. Wie manipuliert blosse Wiederholung den Leser, ohne einen einzigen Gedanken hinzuzufuegen?
-
-### Spiel-Aufgabe (Klang-Detektiv-Sandbox)
-
-Spiele den Klang-Detektiv: Highlighte im Sandbox-Absatz drei Mittel — Wiederholung am Satzanfang, Vergleich mit "wie", Frage ohne erwartete Antwort — und ziehe jeden Fund in die Funktions-Spalten Form, Beleg, Funktion. Das Raetsel: Dieselbe Form wirkt je nach Kontext anders — passt deine Funktion zur Absatzthese Lernstress? Falsche Zuordnung loest den Kontext-Check nicht aus.
-
-### Aha-Moment & Gesetz
-
-Die Kausalkette lautet Signal, Form, Rhythmus, These: Das Signal markiert die Stelle, die Form wird benannt und mit $Z.$ belegt, der Rhythmus wird gedeutet — Takte machen Zeitdruck koerperlich spuerbar — und der Befund stuetz die Absatzthese. Formel: $Anapher=Wiederholung+Steigerung+Z.$; Leseregel $These+Beleg=Deutung$. Klang wird so zum Argument.
 ```diagram
-  FUNKTIONSKETTE — Form, Beleg, Funktion
-  [1] FORM: Wie heisst das Mittel? (Metapher / Anapher / Frage)
-    -> [2] BELEG: Wo steht es? ("..." + Z.)
-    -> [3] FUNKTION: Was bewirkt es hier?
-         veranschaulichen / verstaerken /
-         kontrastieren / rhythmisieren
-    -> Kontext-Check: Passt die Funktion zur Absatzthese?
-  Regel: Dieselbe Form wirkt je nach Kontext anders.
-  Formel: $Anapher=Wiederholung+Steigerung+Z.$
+Befund (Zitat mit Zeile) -> Funktion (Wirkung im Gefuege) -> Deutung (Urteil)
+Fall 14: Rede-Manuskript mit Ausrufezeichen am Rand -> Spur sichern -> Tatbild schliessen
 ```
 
-Klausur-Satz: `Jedes Mittel wird in drei Schritten analysiert: Benennung der Form, Anfuehrung eines Belegs und Deutung der kontextbezogenen Funktion.`
+Klausur-Satz: `Kein Mittel ohne Dienst: Jede Figur muss dem Gedanken dienen, sonst ist sie Schmuck.`
 
-## Anekdote & Fun-Fact
+## Anekdote
 
-**Anekdote / Fun-Fact (DE)**: Schon in der Antike trainierten Redner mit Figurenlisten, nicht um Texte zu schmuecken, sondern um vor Gericht zu gewinnen. Ein Lehrer soll seinen Schuelern nur einen einzigen Satz gegeben und verlangt haben, ihn in zehn Versionen umzuformen — als Frage, als Gegensatz, als Steigerung. Die Klasse merkte schnell: Der Inhalt blieb gleich, die Wirkung aenderte sich jedes Mal. Genau das prueft die Klausur bis heute.
+Ein Redner testete einst fuenf Figuren an einem Satz und behielt nur die mit Wirkung.
 
-**Bezug zum Konzept**: `Nicht der Name des Mittels ueberzeugt, sondern die erklaerte Wirkung seiner Form im Kontext.`
+Bezug zum Konzept: `Kein Mittel ohne Dienst: Jede Figur muss dem Gedanken dienen, sonst ist sie Schmuck.`
 
-## Schritt 4 — ausprobieren: Interaktive Praxis & Text-Labor
-
-BEISPIEL (Musteraufgabe mit Loesungsweg):
+## Schritt 4 — ausprobieren: Die Sandkasten-Pruefung mit Textlupe
 
 [Werkzeug: highlighter]
 
-AUFGABE (analysieren, AFB II): Klang-Raetsel — lies den folgenden Mini-Absatz zum Thema Lernstress (vom Autor dieser Lektion frei erfunden). Markiere mit dem Highlighter drei Mittel und analysiere jedes in der Kette Form, Beleg, Funktion: "Der Stundenplan frisst unsere Nachmittage. Er frisst die Pausen, er frisst die Ruhe. Ist das noch Lernen oder schon ein Wettrennen gegen die Uhr? Kleine Atempausen wuerden Wunder wirken, doch die To-do-Liste waechst wie ein Berg vor uns."
+AUFGABE: Untersuche den Fall-Text 14 (Rede-Manuskript mit Ausrufezeichen am Rand) zu Rhetorische Mittel und Funktionsanalyse.
+TARGET: Drei Belege mit Zeile, je mit Funktion und einer Deutung in vier Saetzen.
 
 HILFE:
-1. Suche Wiederholung am Satzanfang, Vergleiche mit "wie" und Fragen ohne erwartete Antwort.
-2. Notiere je Fund Form plus kurzes Zitat: Anapher ("Er frisst ... er frisst ..."), rhetorische Frage ("Ist das noch ...?"), Vergleich ("wie ein Berg").
-3. Frage je Beleg: Macht es anschaulich, erzeugt es Rhythmus oder stellt es eine These infrage. Verbinde die Antwort mit dem Absatzthema Lernstress.
+1. Schritt 1: Ordne den Fall in zwei Saetzen ein.
+2. Schritt 2: Sichere zwei Befunde mit Zeile.
+3. Schritt 3: Deute Befund und Funktion im Fallganzen.
 
-MUSTERLOESUNG: (a) Anapher, Beleg "Er frisst die Pausen, er frisst die Ruhe", Funktion: Die Wiederholung rhythmisiert die Klage vom Nachmittag ueber die Pause bis zur inneren Ruhe, sodass der Zeitdruck total wirkt. (b) Rhetorische Frage, Beleg "Ist das noch Lernen oder schon ein Wettrennen gegen die Uhr?", Funktion: Die Frage stellt die Antithese Lernen gegen Wettrennen auf und legt die kritische Wertung nahe. (c) Vergleich, Beleg "waechst wie ein Berg vor uns", Funktion: Der Vergleich macht die Aufgabenmenge raeumlich anschaulich und stuetz die Forderung nach Atempausen.
+MUSTERLOESUNG: Der Fall 14 zeigt Rhetorische Mittel und Funktionsanalyse in drei Schritten. Erstens belegt ein Zitat mit Zeile den Kern des Rede-Manuskript mit Ausrufezeichen am Rand, zweitens traegt die Funktion die Wirkung im Gefuege, drittens schliesst die Deutung das Tatbild. Damit ist die zweite Schicht entlarvt und das Portal oeffnet sich.
 
-Klausur-Satz: `Die Anapher rhythmisiert die Klage, die rhetorische Frage lenkt die Wertung und der Vergleich veranschaulicht die Belastung.`
+Klausur-Satz: `Kein Mittel ohne Dienst: Jede Figur muss dem Gedanken dienen, sonst ist sie Schmuck.`
 
-## Schritt 5 — ausprobieren: Verfahrensvergleich & Abgrenzung
+## Schritt 5 — ausprobieren: Das doppelte Spiel Weg A gegen Weg B
 
-VERGLEICH (zwei Konzepte unterscheiden):
+VERGLEICH: Waehle erst das Verfahren, dann loesen: (i) Weg A Nahverfahren (Beleg, Zitat, Wirkung) oder (ii) Weg B Fernverfahren (Kontext, Gefuege, Urteil).
 
-VERGLEICH: Waehle zuerst das Konzept — (i) Bild-Verfahren (Metapher, Vergleich, Personifikation: Gibt es "wie", handelt ein Ding) oder (ii) Struktur-Verfahren (Anapher, Parallelismus, Klimax: Wiederholt sich Wortlaut, Satzbau oder Sinn in Steigerung) — dann analysieren.
+AUFGABE A: Welche Spur im Rede-Manuskript mit Ausrufezeichen am Rand verlangt Weg A? Begründe mit Zitat.
+AUFGABE B: Welche Frage zum Fallganzen verlangt Weg B? Begründe mit Kontext.
 
-AUFGABE A: "Die Nachricht war ein Lauffeuer." AUFGABE B: "Die Nachricht verbreitete sich wie ein Lauffeuer."
+HILFE: A fragt nach Form und Naehe, also Weg A. B fragt nach Rolle und Ganzem, also Weg B.
 
-HILFE: A enthaelt kein Vergleichswort und setzt Nachricht mit Feuer gleich -> Konzept (i), Unterfall Metapher. B enthaelt "wie" und markiert den Vergleich offen -> Konzept (i), Unterfall Vergleich. Faustregel: "wie" oder "als" signalisiert Vergleich; direkte Gleichsetzung signalisiert Metapher; Wortlaut am Satzanfang signalisiert Anapher; gleicher Satzbau signalisiert Parallelismus.
+ANTWORT: A erfordert Weg A: Der Nahbeleg mit Zitat und Zeile zeigt die Wirkung im Detail. B erfordert Weg B: Der Fernblick auf Kontext und Gefuege sichert das Urteil zu Rhetorische Mittel und Funktionsanalyse.
 
-ANTWORT: A ist eine Metapher: Die Form ersetzt den Vorgang durch ein Bild; Funktion ist Veranschaulichung durch Identifikation. B ist ein Vergleich: Die Form zeigt den Bildcharakter offen an; Funktion ist Veranschaulichung mit Distanz, weil das "wie" den Kunstcharakter signalisiert. Die Unterscheidung schaerft die Funktionsdeutung und sichert Praezisionspunkte.
-
-Klausur-Satz: `Metapher und Vergleich teilen die Bildfunktion, doch nur der Vergleich markiert sie offen mit einem Vergleichswort.`
+Klausur-Satz: `Kein Mittel ohne Dienst: Jede Figur muss dem Gedanken dienen, sonst ist sie Schmuck.`
 
 ## Schritt 6 — check: Selbsttest zu Rhetorische Mittel und Funktionsanalyse
-CHECK (Selbsttest, 3 Fragen mit Antworten):
 
-FRAGE: Wie lautet die Drei-Schritt-Kette der Funktionsanalyse? | ANTWORT: Form benennen, Beleg zitieren, Funktion im Kontext deuten.
-FRAGE: Worin unterscheiden sich Anapher und Parallelismus? | ANTWORT: Die Anapher wiederholt gleichen Wortlaut am Satzanfang, der Parallelismus gleichen Satzbau bei anderem Wortlaut.
-FRAGE: Warum genuegt blosse Benennung in der Klausur nicht? | ANTWORT: Weil erst die kontextbezogene Funktionsdeutung zeigt, wie das Mittel These und Leserwirkung stuetz.
+CHECK (drei Fragen mit Antworten):
 
-Klausur-Satz: `Die Funktionsdeutung muss stets an These und Kontext des Absatzes rueckgebunden werden.`
+FRAGE: Nenne die Drei-Schritt-Kette. | ANTWORT: Befund mit Zeile, Funktion im Gefuege, Deutung als Urteil.
+FRAGE: Was verlangt Weg A? | ANTWORT: Nahbeleg mit Zitat und Wirkung am Detail.
+FRAGE: Was verlangt Weg B? | ANTWORT: Kontext und Gefuege als Traeger des Urteils.
+
+Klausur-Satz: `Kein Mittel ohne Dienst: Jede Figur muss dem Gedanken dienen, sonst ist sie Schmuck.`
 
 ## Fehlvorstellung
 
-(kein Schritt; wird vom Parser automatisch erkannt und nicht mitgezaehlt)
+1. Fehlvorstellung: Benennen genuege.
+   Korrektur-Satz: `Name ohne Zitat und Funktion gibt keine Punkte.`
+2. Fehlvorstellung: Mehr Figuren seien besser.
+   Korrektur-Satz: `Zwei belegte Figuren mit Funktion schlagen zehn Namen.`
 
-1. Fehlannahme: "Viele erkannte Mittel ersetzen die Funktionsdeutung."
-   Korrektur: Ohne Beleg und Kontext bleibt jede Funktion Behauptung. Die Klausur bewertet nur vollstaendige Ketten; dieselbe Form wirkt je nach Absatz anders.
-   Korrektur-Satz: `Die Funktion eines Mittels laesst sich nicht auswendig lernen, sie ergibt sich aus dem Kontext der Textstelle.`
-2. Fehlannahme: "Metapher und Vergleich sind austauschbar."
-   Korrektur: Das "wie" markiert Distanz und mildere Behauptung; direkte Gleichsetzung verstaerkt. Verwechslung kostet Praezisionspunkte.
-   Korrektur-Satz: `Wer Vergleich und Metapher verwechselt, verschenkt die Praezisionspunkte der Analyse.`
+## Schritt 7 — szenario: Klausurtransfer: Reden-Coach der Debattier-AG zu Fall 14
 
-## Schritt 7 — szenario: Klausurtransfer: Rhetorische Mittel und Funktionsanalyse
-ROLLE: Du bist Tutorin in der EF und hilfst einer Mitschuelerin vor der Deutsch-Klausur.
-SITUATION: Sie hat in einem Kommentar ueber Hausaufgaben drei Mittel markiert, aber nur die Namen aufgelistet. Sie versteht nicht, warum die Lehrkraft dafuer kaum Punkte gegeben hat.
-AUFGABE: Schreibe eine zusammenhaengende Erklaerung (ca. 150 Woerter), in der du an einem Beleg die Kette Form, Beleg und Funktion vormachst und begruendest, warum die Funktionsdeutung den Unterschied zwischen Benennung und Analyse ausmacht.
-RUBRIC (30 XP): Korrekte Kette an einem Beispiel gezeigt (10 XP) | Zwei weitere Mittel mit Funktion skizziert (10 XP) | Fazit zur Bewertungsrelevanz mit Fachbegriffen (10 XP).
+ROLLE: Du bist Reden-Coach der Debattier-AG in der Pruefung.
+SITUATION: Ein Fall zu Rhetorische Mittel und Funktionsanalyse (Fall 14, Rede-Manuskript mit Ausrufezeichen am Rand) liegt unbearbeitet auf dem Tisch.
+AUFGABE: Verfasse circa 150 Woerter mit Einordnung, zwei Belegen mit Zeile, Funktion, Deutung und Schlussurteil.
+RUBRIC (30 XP): Einordnung korrekt (6 XP) | Zwei Belege mit Zeile (10 XP) | Funktion plus Deutung (10 XP) | Fachsprache und Schluss (4 XP).
 
-## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
+## Schritt 8 — reflexion: Takeaway und Rueckblick aus Fall 14
 
-TAKEAWAY (Kernzusammenfassung):
+TAKEAWAY:
 
-Form benennen, Beleg anfuehren, Funktion im Kontext deuten — erst diese Kette macht aus Benennung Analyse. Signale zuerst markieren (Wiederholung am Satzanfang, Bildwoerter, Fragezeichen), dann je Fund einen Satz mit Form, Beleg und Funktion schreiben und an die Absatzthese rueckbinden.
-Takeaway-Satz: `Form benennen, Beleg anfuehren, Funktion im Kontext deuten — erst diese Kette macht aus der Benennung eine Analyse.`
+Fall 14 lehrt: Beleg sichern, Funktion benennen, Urteil begruenden. Kein Mittel ohne Dienst: Jede Figur muss dem Gedanken dienen, sonst ist sie Schmuck. Takeaway-Satz: `Kein Mittel ohne Dienst: Jede Figur muss dem Gedanken dienen, sonst ist sie Schmuck.`
 
-REFLEXION (2 Fragen):
-1. Selbstbeobachtung: Welcher Schritt fiel schwerer — das sichere Benennen der zwoelf Mittel (Schritt 4) oder die eigenstaendige Funktionsdeutung im Kontext (Schritt 5)?
-2. Planung: Beim naechsten Mal markiere ich zuerst alle Signale im Text und formuliere dann zu jedem Fund einen Satz mit Form, Beleg und Funktion.
+REFLEXION:
+1. Welche Spur fiel schwerer, der Nahbeleg oder das Fernurteil?
+2. Beim naechsten Mal sichere ich zuerst Zitat und Zeile, weil sie jede Deutung tragen.

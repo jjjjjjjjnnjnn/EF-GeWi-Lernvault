@@ -13,138 +13,111 @@ version: Lesson-v3
 
 # Lernreise: Argumentationsstruktur im Sachtext (L1, Ziel Klausur)
 
-<!-- Lesson v3 9步制架构：Schritt 1至8固定结构；Fehlvorstellung 夹在 Schritt 6 与 7 之间（Parser 自动跳过，不占步数）；支持内嵌 [Werkzeug: <id>] 交互教具；Gating: check/szenario 未过 = Weiter 置灰；XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
+<!-- Campaign: Detektive Fal 21 -->
+## Schritt 1 — entdecken: Der versiegelte Umschlag aus der Archivnacht
 
-## Schritt 1 — entdecken
+ZIELE (3 Ziele, nach 15 Minuten erreichbar):
 
-ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
+1. Du ordnest Fall 21 (Leserbrief mit unterstrichener Forderung) in Kontext, Verfahren und Deutung ein.
+2. Du belegst jede Aussage zu Argumentationsstruktur im Sachtext mit Zitat und Zeile und benennst die Funktion.
+3. Du faellst ein Urteil im passenden Anforderungsbereich.
 
-1. 中文：能一眼认出实用文的中心论点（These），并说清它与论据（Argument）之间的支撑关系。
-2. 中文：能把全文拆成一条清晰的论证链（Argumentationsgang），给每一环都标上行号，而不是逐句翻译。
-3. 中文：能用德语写出规范 Einleitung（Autor/Jahr/Titel/Textsorte/These）并做一句有理据的 Erörterung 表态。
+HOOK:
 
-Klausur-Satz: `Der Argumentationsgang eines Sachtextes verbindet These, Argumente und Schlussfolgerung zu einer nachvollziehbaren Gedankenkette.`
+Mitten in der Nacht flackert das Blaulicht der Agentur fuer Texte und Gedanken ueber den leeren Schreibtischen, und Partner Theo Wort legt einen versiegelten Umschlag auf deinen Platz. Seit Wochen jagt ihr als Gedanken-Agent an der Seite deines Text-Detektivs durch die Jahrhunderte, und jede geloeste Spur oeffnet ein neues Portal in der Zeit. Heute geht es um Argumentationsstruktur im Sachtext. Falllinie D: Das Archiv der Agentur meldet einen Riss in der Zeit, durch den ein Text in unsere Gegenwart gefallen ist. Im Umschlag steckt Fall 21: ein Leserbrief mit unterstrichener Forderung. Kaum haeltst du das Stueck ins Licht, faellt dir eine zweite Schicht auf: Jemand hat die Botschaft frisiert, verkuerzt oder verdreht, und nur wer Beleg, Funktion und Deutung sauber trennt, kann die Manipulation entlarven. Das naechste Portal oeffnet sich nur, wenn du drei Ziele in fuenfzehn Minuten schaffst und jede Behauptung mit Zeile und Wirkung belegst. Theo Wort gru belt schon ungeduldig, denn die Spur wird kalt.
 
-## Schritt 2 — entdecken
+Klausur-Satz: `Ein Argument steht erst, wenn Kette, Stuetze und Lueckenpruefung stimmen.`
 
-PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
+## Schritt 2 — entdecken: Die Ausruestungskiste gegen Fall 21
 
-中文在上，德语在下：
+AUSRUESTUNG (5 Instrumente im Koffer):
 
-- 中心论点 — These：作者要证明的核心主张，全文只围绕它转，常在开头或结尾一句。
-- 论据 — Argument：支撑论点的理由，分事实、价值、权威、类比、间接、常识六型。
-- 文本证据 — Beleg：短引文 + 行号（如 vgl. Z. 6），不给 Beleg 的判断在 AFB II 零分。
-- 论证思路 — Argumentationsgang：论点展开的顺序，典型为让步 → 反驳 → 折中/呼吁。
-- 让步 — Konzession：先承认对方有道理（zwar…），再转折（aber…）推出己方真论点。
+- **Argumentationslinie**: Argumentationslinie: Kette von These, Begruendung und Beleg
+- **Beweismittel**: Beweismittel: Fakt, Beispiel und Berufung als Stuetzarten
+- **Gegenargument**: Gegenargument: vorweggenommener Einwand als Staerkebeweis
+- **Schlussfolgerung**: Schlussfolgerung: Folgerungssatz mit Reichweitenangabe
+- **Lueckenanalyse**: Lueckenanalyse: fehlende Praemisse als Angriffspunkt
 
-Klausur-Satz: `Eine These wird erst durch Argumente und Belege tragfähig; ohne Textbeleg bleibt jede Analyse eine bloße Behauptung.`
+Klausur-Satz: `Ein Argument steht erst, wenn Kette, Stuetze und Lueckenpruefung stimmen.`
 
-## Schritt 3 — entdecken
+## Schritt 3 — entdecken: Der Mechanismus hinter dem Tatbild
 
-ENTDECKEN（1概念 + 1文字图解）：
+MECHANISMUS (Tiefenbau):
 
-中文：实用文不是一堆句子的堆叠，而是一条有方向的思维链。作者先立一个主张（These），再用若干理由（Argumente）去撑它；理由之间往往不是平铺，而是有战术的：先用 zwar 让一步，取得读者的信任，再用 aber 收网；或者先摆反例，再用 deshalb 下结论。读文章时不要顺着句子往下翻译，而要问三件事——这一句是在立论、在举证、还是在收束？把这些功能块连起来，就得到 Argumentationsgang。Klausur 的得分主体（AFB II）正是把这条链拆开、命名、再给每一环配上行号。
-
-文字图解（ASCII 结构图，App支持解析渲染）：
+Jeder Fall folgt der Kette Befund, Funktion und Deutung. Zuerst sicherst du den Befund mit Zitat und Zeile, dann bestimmst du die Funktion im Macht- oder Sinn-gefuege, erst danach formulierst du die Deutung zu Argumentationsstruktur im Sachtext. Falllinie D: Das Archiv der Agentur meldet einen Riss in der Zeit, durch den ein Text in unsere Gegenwart gefallen ist. Wer die zweite Schicht des Leserbrief mit unterstrichener Forderung uebersieht, tappt in die Falle der Agentur.
 
 ```diagram
-  [These]            z.B. "Nicht das Geraet, sondern der Umgang entscheidet."
-     |
-     +--> [Argument 1]  Faktenargument ....... Beleg: Z. 4-5
-     |
-     +--> [Konzession]  zwar ... aber ........ Beleg: Z. 2
-     |        |
-     |        +--> [Gegenargument entkraeftet] Beleg: Z. 6
-     |
-     +--> [Argument 2]  normativ/Appell ...... Beleg: Z. 9-10
-     |
-     v
-  [Schlussfolgerung / Mittelweg]  .......... Beleg: Z. 7-8
-     |
-     v
-  [Intention]  informieren / appellieren / ueberzeugen / warnen
+Befund (Zitat mit Zeile) -> Funktion (Wirkung im Gefuege) -> Deutung (Urteil)
+Fall 21: Leserbrief mit unterstrichener Forderung -> Spur sichern -> Tatbild schliessen
 ```
 
-Klausur-Satz: `Der Gedankengang führt von einer Konzession über den Gegenbeweis zu einer Schlussfolgerung, die die These stützt.`
+Klausur-Satz: `Ein Argument steht erst, wenn Kette, Stuetze und Lueckenpruefung stimmen.`
 
-## Anekdote & Fun-Fact
+## Anekdote
 
-**Anekdote / Fun-Fact (DE)**: Schon in der antiken Rhetorik gab es einen festen Arbeitsplan für jede Rede. Der Redner sollte zuerst Argumente finden (inventio) und sie dann ordnen (dispositio). Erst danach kam die sprachliche Ausarbeitung. Die Reihenfolge „erst finden, dann ordnen" ist bis heute der Kern des Argumentationsgangs.
+Ein Chefredakteur ku erzte einst einen Kommentar um die Haelfte und er wurde doppelt so stark.
 
-**中文解读**: 古罗马修辞学把演说分成固定步骤，其中"找论据（inventio）"与"排顺序（dispositio）"排在最前，最后才打磨语言。这正对应本课的两条主线：These/Argument 是"找什么"，Argumentationsgang 是"怎样排"。它提醒我们，好结构不是装饰，而是先想清楚再落笔。
+Bezug zum Konzept: `Ein Argument steht erst, wenn Kette, Stuetze und Lueckenpruefung stimmen.`
 
-**Bezug zum Konzept**: Der Argumentationsgang entspricht dem antiken dispositio: Argumente werden zuerst gefunden und dann in eine wirksame Reihenfolge gebracht.
-
-## Schritt 4 — ausprobieren
-
-BEISPIEL（正确例题示范，含教具操作与解答）：
+## Schritt 4 — ausprobieren: Die Sandkasten-Pruefung mit Baukasten
 
 [Werkzeug: lego]
 
-AUFGABE (analysieren, AFB II)：Analysieren Sie den Argumentationsgang des folgenden Übungstextes und benennen Sie die These. Belegen Sie jede Station mit Zeile.
-
-Mini-Sachtext (selbst verfasster Übungstext, ORIGINAL, ca. 110 Wörter)：
-(Z. 1) Immer mehr Schulen streiten über Handys im Unterricht. (Z. 2) Die Sorge der Lehrkräfte ist verständlich, doch ein pauschales Verbot greift zu kurz. (Z. 3) Entscheidend ist nicht das Gerät, sondern der Umgang damit. (Z. 4) Wer ständig kurze Videos ansieht, verliert tatsächlich Konzentration. (Z. 5) Wer dagegen gezielt sucht, vergleicht und prüft, lernt schneller als frühere Jahrgänge. (Z. 6) Erfahrungen zeigen: Klassen mit klaren Regeln arbeiten ruhiger, Klassen mit Totalverbot nicht besser. (Z. 7) Sinnvoll ist daher ein Mittelweg — eine Stunde konzentriert ohne Bildschirm, danach gezielte Recherche. (Z. 8) So wird das Handy vom Störer zum Werkzeug. (Z. 9) Die Jugend braucht keine Moralpredigt, sondern Training in Selbststeuerung.
+AUFGABE: Untersuche den Fall-Text 21 (Leserbrief mit unterstrichener Forderung) zu Argumentationsstruktur im Sachtext.
+TARGET: Drei Belege mit Zeile, je mit Funktion und einer Deutung in vier Saetzen.
 
 HILFE:
-1. Schritt 1: Suche die These — meist nach einem aber/doch, oft ein „nicht …, sondern …"-Satz.
-2. Schritt 2: Markiere jedes Funktionswort (zwar/aber, denn, dagegen, daher) und notiere die Zeile.
-3. Schritt 3: Ordne die Stationen in die Reihenfolge Konzession → Gegenbeweis → Lösung.
+1. Schritt 1: Ordne den Fall in zwei Saetzen ein.
+2. Schritt 2: Sichere zwei Befunde mit Zeile.
+3. Schritt 3: Deute Befund und Funktion im Fallganzen.
 
-MUSTERLÖSUNG: Die These lautet: nicht das Gerät, sondern der Umgang entscheide (Z. 3). Der Argumentationsgang ist dreistufig. Er beginnt mit einer Konzession in Z. 2, die die Sorge der Lehrkräfte als verständlich anerkennt, um sie sogleich als zu pauschal zu kennzeichnen. Darauf folgt der Gegenbeweis in Z. 4–5: Der Kontrast zwischen passivem Ansehen und aktivem Suchen entkräftet das Totalverbot. Den Abschluss bildet der Mittelweg in Z. 7–8, der als Schlussfolgerung aus dem Gedankengang hervorgeht und in Z. 9 in einen Appell an Selbststeuerung mündet. Die Kette lautet also: Konzession (Z. 2) → Gegenbeweis (Z. 4–5) → Lösung (Z. 7–8) → Appell (Z. 9).
+MUSTERLOESUNG: Der Fall 21 zeigt Argumentationsstruktur im Sachtext in drei Schritten. Erstens belegt ein Zitat mit Zeile den Kern des Leserbrief mit unterstrichener Forderung, zweitens traegt die Funktion die Wirkung im Gefuege, drittens schliesst die Deutung das Tatbild. Damit ist die zweite Schicht entlarvt und das Portal oeffnet sich.
 
-Klausur-Satz: `Die Argumentation verläuft dreistufig: von der Konzession in Z. 2 über den Gegenbeweis in Z. 4-5 zur Mittellösung in Z. 7.`
+Klausur-Satz: `Ein Argument steht erst, wenn Kette, Stuetze und Lueckenpruefung stimmen.`
 
-## Schritt 5 — ausprobieren
+## Schritt 5 — ausprobieren: Das doppelte Spiel Weg A gegen Weg B
 
-VERGLEICH辨别实验（双向辨析：论点眼 vs. 思路眼）：
+VERGLEICH: Waehle erst das Verfahren, dann loesen: (i) Weg A Nahverfahren (Beleg, Zitat, Wirkung) oder (ii) Weg B Fernverfahren (Kontext, Gefuege, Urteil).
 
-VERGLEICH: Wähle erst das Verfahren — 【选程序】先判断题目问的是 (i) These-Verfahren（作者主张什么：中心论点 + 论据类型）还是 (ii) Gang-Verfahren（作者怎样一步步推出：让步/反驳/结论的顺序 + 行号）—— dann lösen.
+AUFGABE A: Welche Spur im Leserbrief mit unterstrichener Forderung verlangt Weg A? Begründe mit Zitat.
+AUFGABE B: Welche Frage zum Fallganzen verlangt Weg B? Begründe mit Kontext.
 
-AUFGABE A：Ein Kommentar beginnt mit dem Satz „Nicht die Technik, sondern der Mensch entscheidet." Formuliere die These und nenne ihren Argumenttyp.
-AUFGABE B：Derselbe Kommentar geht von einer Konzession über einen Gegenbeweis zu einem Kompromissvorschlag. Beschreibe die Struktur des Gedankengangs mit Zeilen.
+HILFE: A fragt nach Form und Naehe, also Weg A. B fragt nach Rolle und Ganzem, also Weg B.
 
-HILFE: A fragt nach dem „Was" (Behauptung + Argumentart) → Verfahren (i). B fragt nach dem „Wie" (Reihenfolge der Denkschritte) → Verfahren (ii).【选程序：问“主张什么”走论点程序；问“怎样推出”走思路程序。】
+ANTWORT: A erfordert Weg A: Der Nahbeleg mit Zitat und Zeile zeigt die Wirkung im Detail. B erfordert Weg B: Der Fernblick auf Kontext und Gefuege sichert das Urteil zu Argumentationsstruktur im Sachtext.
 
-ANTWORT: A erfordert Verfahren (i): Die These lautet, entscheidend sei der Mensch, nicht die Technik; der „nicht …, sondern …"-Satz markiert eine Antithese, die als normative Setzung das ganze Argument tragen soll. B erfordert Verfahren (ii): Der Gedankengang folgt dem Muster Konzession (zwar/aber) → Gegenbeweis (dagegen/denn) → Kompromiss (daher/deshalb); jede Station wird mit Zeile belegt, sodass die Struktur als dreigliedrige Kette sichtbar wird.
+Klausur-Satz: `Ein Argument steht erst, wenn Kette, Stuetze und Lueckenpruefung stimmen.`
 
-Klausur-Satz: `These und Argumentationsgang sind zwei getrennte Analyseebenen: Die These nennt das Ziel, der Gang zeigt den Weg dorthin.`
+## Schritt 6 — check: Selbsttest zu Argumentationsstruktur im Sachtext
 
-## Schritt 6 — check
+CHECK (drei Fragen mit Antworten):
 
-CHECK检索默写（自测 3 题，与答案配对）：
+FRAGE: Nenne die Drei-Schritt-Kette. | ANTWORT: Befund mit Zeile, Funktion im Gefuege, Deutung als Urteil.
+FRAGE: Was verlangt Weg A? | ANTWORT: Nahbeleg mit Zitat und Wirkung am Detail.
+FRAGE: Was verlangt Weg B? | ANTWORT: Kontext und Gefuege als Traeger des Urteils.
 
-FRAGE: Woran erkennt man die These eines pragmatischen Textes? | ANTWORT: An einer prägnanten Behauptung, oft nach einer Konzession (aber/doch) oder als „nicht …, sondern …"-Satz am Anfang oder Ende.
-FRAGE: Welche sechs Argumenttypen unterscheidet man in der Sachtextanalyse? | ANTWORT: Fakten-, normatives, Autoritäts-, analogisierendes, indirektes und Plausibilitätsargument.
-FRAGE: Welche vier Stationen bilden einen typischen Argumentationsgang? | ANTWORT: Konzession, Gegenbeweis, Schlussfolgerung/Lösung und abschließender Appell.
-
-Klausur-Satz: `Jede Analyse-Station verlangt einen Beleg: erst benennen, dann zitieren, dann die Wirkung erklären.`
+Klausur-Satz: `Ein Argument steht erst, wenn Kette, Stuetze und Lueckenpruefung stimmen.`
 
 ## Fehlvorstellung
 
-(非Schritt小节，Parser 自动识别，不计入步骤步数)
+1. Fehlvorstellung: Viel spreche fuer viel.
+   Korrektur-Satz: `Eine geschlossene Kette schlaegt viele lose Saetze.`
+2. Fehlvorstellung: Gegner staerken sei riskant.
+   Korrektur-Satz: `Faire Gegenrede adelt das eigene Urteil.`
 
-1. 误解"Sachtextanalyse 就是把文章内容复述一遍"。
-   中文纠偏：纯复述（Inhaltsangabe）只停在 AFB I，几乎不得分。分析要求你拆开论证的功能：哪句是论点、哪句是论据、作者用什么战术推进。没有 Sprache/Form + Beleg + Zeile 的段落，阅卷直接判为缺分析。
-   Korrektur-Satz: `Eine bloße Inhaltsangabe bleibt auf AFB I; erst die Analyse von Argumentationsgang und Sprache mit Beleg erreicht AFB II.`
+## Schritt 7 — szenario: Klausurtransfer: Leitartikel-Redakteur zu Fall 21
 
-2. 误解"Beleg = 把长句整段抄下来，抄得越多越保险"。
-   中文纠偏：Beleg 是短引 + 行号 + 功能三件套。正确写法是 `Die Konzession in Z. 2 (verständlich, aber zu pauschal) leitet den Gegenbeweis ein.` 抄三行原文却不说明它做什么，同样不得分。
-   Korrektur-Satz: `Ein Beleg besteht aus kurzem Zitat, Zeilenangabe und Funktionsbeschreibung, nicht aus einer abgeschriebenen Textpassage.`
+ROLLE: Du bist Leitartikel-Redakteur in der Pruefung.
+SITUATION: Ein Fall zu Argumentationsstruktur im Sachtext (Fall 21, Leserbrief mit unterstrichener Forderung) liegt unbearbeitet auf dem Tisch.
+AUFGABE: Verfasse circa 150 Woerter mit Einordnung, zwei Belegen mit Zeile, Funktion, Deutung und Schlussurteil.
+RUBRIC (30 XP): Einordnung korrekt (6 XP) | Zwei Belege mit Zeile (10 XP) | Funktion plus Deutung (10 XP) | Fachsprache und Schluss (4 XP).
 
-## Schritt 7 — szenario
+## Schritt 8 — reflexion: Takeaway und Rueckblick aus Fall 21
 
-ROLLE: Du bist Mitglied der Schülervertretung und sollst auf einer Schulkonferenz einen Kommentar zur geplanten Handyregelung bewerten.
-SITUATION: Die Schulleitung will Handys im Unterricht komplett verbieten; ein Kommentar in der Schülerzeitung argumentiert stattdessen für klare Nutzungsregeln. Beurteile in einer zusammenhängenden Stellungnahme (ca. 150 Wörter), wie überzeugend der Kommentar argumentiert, und stütze dich auf Argumentationsgang und Argumenttypen.
-RUBRIC (30 XP): Benennung der These und ihrer Textsorte (5 XP) | Nachzeichnung des Argumentationsgangs mit mindestens drei Stationen und Zeilen (10 XP) | Bestimmung der Argumenttypen und ihrer Wirkung (10 XP) | Kriteriengeleitetes eigenes Urteil mit Abwägung (5 XP).
+TAKEAWAY:
 
-## Schritt 8 — reflexion: Takeaway & Reflexion
+Fall 21 lehrt: Beleg sichern, Funktion benennen, Urteil begruenden. Ein Argument steht erst, wenn Kette, Stuetze und Lueckenpruefung stimmen. Takeaway-Satz: `Ein Argument steht erst, wenn Kette, Stuetze und Lueckenpruefung stimmen.`
 
-TAKEAWAY 1盒（核心总结）：
-
-中文：实用文 = 一个论点 + 一串理由 + 一条有方向的思路。做题第一步先分清"主张什么"（These + Argumenttyp）和"怎样推出"（Gang：让步→反驳→结论→呼吁）。每个判断都要 Beleg + Zeile，否则分析落空。记住：分析不是翻译，是拆结构。
-Takeaway-Satz: `Ein Sachtext ist eine gerichtete Gedankenkette: These, Argumente und Gang lassen sich nur mit Beleg und Zeile überzeugend nachweisen.`
-
-REFLEXION 2问：
-1. 过程自省：Welcher Schritt fiel schwerer — das Finden der These (Schritt 4) oder das Ordnen der Stationen im Vergleich (Schritt 5)?
-2. 元认知计划：Beim nächsten Mal prüfe ich zuerst, ob die Aufgabe nach dem „Was" (These) oder dem „Wie" (Gang) fragt, und wähle danach das Verfahren.
+REFLEXION:
+1. Welche Spur fiel schwerer, der Nahbeleg oder das Fernurteil?
+2. Beim naechsten Mal sichere ich zuerst Zitat und Zeile, weil sie jede Deutung tragen.

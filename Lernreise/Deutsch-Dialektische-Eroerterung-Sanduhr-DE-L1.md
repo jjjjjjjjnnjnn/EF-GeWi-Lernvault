@@ -13,152 +13,111 @@ version: Lesson-v3
 
 # Lernreise: Dialektische Eroerterung Sanduhr-Prinzip (L1, Ziel Klausur)
 
-<!-- Lesson v3 9-Schritt-Architektur: Schritt 1 bis 8 feste Struktur; Fehlvorstellung zwischen Schritt 6 und 7 (Parser ueberspringt, zaehlt nicht); interaktive [Werkzeug: <id>]; Gating: check/szenario nicht bestanden = Weiter deaktiviert; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
+<!-- Campaign: Detektive Fal 09 -->
+## Schritt 1 — entdecken: Der versiegelte Umschlag aus der Archivnacht
 
-## Schritt 1 — entdecken: Ziele & Phänomen-Einstieg
+ZIELE (3 Ziele, nach 15 Minuten erreichbar):
 
-ZIELE (drei messbare Ziele dieser Lektion):
+1. Du ordnest Fall 09 (Konzeptzettel mit Sanduhr-Skizze am Rand) in Kontext, Verfahren und Deutung ein.
+2. Du belegst jede Aussage zu Dialektische Eroerterung Sanduhr-Prinzip mit Zitat und Zeile und benennst die Funktion.
+3. Du faellst ein Urteil im passenden Anforderungsbereich.
 
-1. Du kannst das **Sanduhr-Prinzip** skizzieren: breite Einleitung mit Engfuehrung, zwei gesteigerte Bloecke, erweiterte Abwaegung mit Fazit.
-2. Du kannst zur Streitfrage eines Handyverbots je drei **Pro- und Contra-Argumente** ordnen und mit **Konnektoren** verknuepfen.
-3. Du kannst einen **Schluss mit Abwaegung und Bedingung** formulieren und die eigene Position begruenden.
+HOOK:
 
-### Hook / Phaenomen
+Mitten in der Nacht flackert das Blaulicht der Agentur fuer Texte und Gedanken ueber den leeren Schreibtischen, und Partner Theo Wort legt einen versiegelten Umschlag auf deinen Platz. Seit Wochen jagt ihr als Gedanken-Agent an der Seite deines Text-Detektivs durch die Jahrhunderte, und jede geloeste Spur oeffnet ein neues Portal in der Zeit. Heute geht es um Dialektische Eroerterung Sanduhr-Prinzip. Falllinie D: Das Archiv der Agentur meldet einen Riss in der Zeit, durch den ein Text in unsere Gegenwart gefallen ist. Im Umschlag steckt Fall 09: ein Konzeptzettel mit Sanduhr-Skizze am Rand. Kaum haeltst du das Stueck ins Licht, faellt dir eine zweite Schicht auf: Jemand hat die Botschaft frisiert, verkuerzt oder verdreht, und nur wer Beleg, Funktion und Deutung sauber trennt, kann die Manipulation entlarven. Das naechste Portal oeffnet sich nur, wenn du drei Ziele in fuenfzehn Minuten schaffst und jede Behauptung mit Zeile und Wirkung belegst. Theo Wort gru belt schon ungeduldig, denn die Spur wird kalt.
 
-In jeder Pause starren Dutzende auf Displays statt miteinander zu reden. Soll die Schule verbieten, was alle tun? Die Antwort entscheidet nicht ueber Handys, sondern ueber Erziehung: Kontrolle oder Vertrauen? Genau hier beginnt die dialektische Eroerterung, denn beide Seiten haben starke Argumente mit Beleg. Die Befuerworter nennen Konzentration und Schutz vor Ablenkung, die Gegner nennen Selbststaendigkeit und Umgang mit Medien als Lernziel. Die rhetorische Manipulation lauert auf beiden Seiten: dramatische Einzelfaelle ersetzen Statistik, Appelle ersetzen Begruendung, Scheinloesungen ersetzen Abwaegung. Erst die Sanduhr schuetzt davor: Einleitung mit Hook und Fragestellung, Pro-Bloecke in Steigerung, Contra-Bloecke in Steigerung, Umschwung mit staerkstem Gegenargument, dann Abwaegung nach Kriterien wie Wirksamkeit und Verhaeltnismaessigkeit, schliesslich Fazit mit eigenem Urteil. Wer so baut, lenkt den Leser nicht durch Tricks, sondern durch Pruefung.
+Klausur-Satz: `Wer die Gegenseite stark macht, macht das eigene Urteil erst pruefungsreif.`
 
-### Fachbegriff & Definition
+## Schritt 2 — entdecken: Die Ausruestungskiste gegen Fall 09
 
-Die **dialektische Eroerterung** ist die **Abwaegung von Pro und Contra** in aufsteigender Staerke mit begruendetem Urteil. Sie folgt der **Sanduhrform**: breit einfuehren, eng argumentieren, breit schliessen. Entscheidend ist die **Steigerung**: Das schwaechste Argument steht zuerst, das staerkste zuletzt. Ohne Steigerung bleibt Aneinanderreihung ohne Spannung.
+AUSRUESTUNG (5 Instrumente im Koffer):
 
-### Wirkungsgefuege / Modell
+- **Sanduhr-Prinzip**: Sanduhr-Prinzip: vom Breiten zum Engen und zurueck zum Urteil
+- **These**: These: zugespitzte Ausgangsbehauptung mit Begruendung
+- **Antithese**: Antithese: staerkste Gegenposition in fairer Staerke
+- **Synthese**: Synthese: abwaegende Zusammenfuehrung beider Seiten
+- **Konzession**: Konzession: Eingestaendnis an die Gegenseite als Reifezeichen
 
-Die Kausalkette lautet: **Frage, Block, Umschwung, Urteil**. Erstens verengt die Einleitung vom Pausenhof zur Streitfrage. Zweitens stellt der erste Block drei Argumente von schwach nach stark. Drittens markiert der Umschwung mit „zwar ..., jedoch ..." den Seitenwechsel. Viertens oeffnet die Abwaegung zum bedingten Fazit mit Ausnahmeregel. Konnektoren fuehren den Leser durch jede Stufe.
+Klausur-Satz: `Wer die Gegenseite stark macht, macht das eigene Urteil erst pruefungsreif.`
 
-Klausur-Satz: `Die dialektische Eroerterung nach dem Sanduhr-Prinzip ordnet Pro- und Contra-Argumente in aufsteigender Staerke und muendet in eine abgewogene Stellungnahme.`
+## Schritt 3 — entdecken: Der Mechanismus hinter dem Tatbild
 
-## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
+MECHANISMUS (Tiefenbau):
 
-PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
+Jeder Fall folgt der Kette Befund, Funktion und Deutung. Zuerst sicherst du den Befund mit Zitat und Zeile, dann bestimmst du die Funktion im Macht- oder Sinn-gefuege, erst danach formulierst du die Deutung zu Dialektische Eroerterung Sanduhr-Prinzip. Falllinie D: Das Archiv der Agentur meldet einen Riss in der Zeit, durch den ein Text in unsere Gegenwart gefallen ist. Wer die zweite Schicht des Konzeptzettel mit Sanduhr-Skizze am Rand uebersieht, tappt in die Falle der Agentur.
 
-### Hook / Phaenomen
-
-„Ein Verbot ist gut, weil Verbote helfen" — so klingen viele Eroerterungen vor der Abwaegung. Drei Gruende, keine Ordnung, kein Gegner. Was fehlt, ist nicht die Meinung, sondern das Gelaender, das den Leser sicher zur Entscheidung fuehrt.
-
-### Fachbegriffe & Definitionen
-
-- **Sanduhr-Prinzip:** **Gesamtform** aus breiter Einleitung, verengter Argumentation und erweiterter Abwaegung.
-- **Pro-Argument:** **stuetzender Grund**, nach Staerke aufsteigend geordnet, das Staerkste zuletzt.
-- **Contra-Argument:** **Einwand** ebenfalls in Steigerung; der spaetere Block steht meist der eigenen Position naeher.
-- **Konnektor:** **Signalwort** fuer Einraeumung, Gegensatz und Folge: zwar, jedoch, demgegenueber, somit.
-- **Abwaegung:** **Vergleich der Seiten** nach Gewicht mit bedingtem Urteil am Ende.
-
-### Wirkungsgefuege / Modell
-
-Die Begriffe bilden das Bauwerk: Das **Sanduhr-Prinzip** gibt die Form, **Pro- und Contra-Argumente** das Material in Steigerung. **Konnektoren** markieren Steigerung, Umschwung und Fazit und machen den Gang pruefbar. Die **Abwaegung** vergleicht Gewichte statt zu zaehlen und sichert das Urteil mit Bedingung. Ohne Konnektoren stuerzt der Leser durch die Sanduhr.
-
-Klausur-Satz: `Die Staerke der Argumente waechst zum Umschwung hin, die Abwaegung entscheidet zwischen ihnen.`
-
-## Schritt 3 — entdecken: Kernkonzept & Wirkungsmodell
-
-TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
-
-### Hook / Phaenomen
-
-Wer zuerst seine eigene Meinung sagt, hat schon verloren. Denn wer frueh urteilt, entwertet die Gegenseite und verschenkt die Abwaegung. Warum gewinnt gerade die spaete Entscheidung die meisten Punkte?
-
-### Spiel-Aufgabe (Argument-Sandbox)
-
-Baue die Sanduhr per Drag-and-drop: Ziehe je drei Pro- und Contra-Bausteine in Steigerung an die Taille — schwaechste zuerst, staerkste zuletzt — und lasse den Umschwung mit zwar plus jedoch einrasten. Der Highlighter markiert Konnektoren als Gelaender: zuerst, darueber hinaus, am wichtigsten, demgegenueber, somit. Ohne markierten Umschwung bleibt die Taille ein Bruch und die Sandbox verweigert den Schluss.
-
-### Aha-Moment & Gesetz
-
-Die Kausalkette lautet Steigern, Wenden, Vergleichen, Bedingen: Die Staerksten stehen an der Taille, der Konnektor wendet, die Abwaegung vergleicht Schutz der Konzentration gegen Training von Eigenverantwortung, die Bedingung sichert das Urteil. Formel: $Umschwung=zwar+Gegenseite+jedoch$; erweitert gilt $Urteil=Abwaegung+Bedingung$. Spannung plus Bedingung ergeben volle Punktzahl.
 ```diagram
-  SANDUHR — Taille als Umschwung
-  [breit] Einleitung: Hook + Streitfrage (Handyverbot?)
-    verengen zur Frage
-    || Block 1 (schwach -> stark, z.B. Contra)
-    || -- Taille: zwar ... jedoch ... (Umschwung) --
-    || Block 2 (schwach -> stark, z.B. Pro)
-    erweitern zur Abwaegung
-  [breit] Schluss: Fazit + Bedingung (mit Ausnahmen)
-  Gelaender: zwar / jedoch / demgegenueber / somit
-  Formel: $Umschwung=zwar+Gegenseite+jedoch$
+Befund (Zitat mit Zeile) -> Funktion (Wirkung im Gefuege) -> Deutung (Urteil)
+Fall 09: Konzeptzettel mit Sanduhr-Skizze am Rand -> Spur sichern -> Tatbild schliessen
 ```
 
-Klausur-Satz: `Die Einleitung verengt die Fragestellung, die Argumentbloecke steigern sich und der Schluss erweitert den Blick zur Abwaegung.`
+Klausur-Satz: `Wer die Gegenseite stark macht, macht das eigene Urteil erst pruefungsreif.`
 
-## Anekdote & Fun-Fact
+## Anekdote
 
-**Anekdote / Fun-Fact (DE)**: Eine Lehrkraft liess zwei Gruppen ueber ein Handyverbot streiten und stoppte die Debatte nach zehn Minuten. Dann drehte sie die Rollen um: Jede Gruppe musste ploetzlich die Gegenseite vertreten. Das Murren war gross, doch danach waren alle Schlussplaedoyers deutlich besser. Der Grund ist einfach: Wer beide Seiten einmal selbst formuliert hat, schreibt eine Abwaegung statt einer Predigt.
+Ein Debattenleiter mass einst mit einer echten Sanduhr, damit keine Seite zu kurz kam.
 
-**Bezug zum Konzept**: `Erst wer beide Seiten stark macht, kann am Ende glaubwuerdig abwaegen.`
+Bezug zum Konzept: `Wer die Gegenseite stark macht, macht das eigene Urteil erst pruefungsreif.`
 
-## Schritt 4 — ausprobieren: Interaktive Praxis & Text-Labor
+## Schritt 4 — ausprobieren: Die Sandkasten-Pruefung mit Baukasten
 
-BEISPIEL (Musteraufgabe mit Loesungsweg):
+[Werkzeug: lego]
 
-[Werkzeug: highlighter]
-
-AUFGABE (eroertern, AFB II-III): Sanduhr-Bau-Raetsel — soll an unserer Schule ein ganztaegiges Handyverbot eingefuehrt werden? Baue die Sanduhr: Einleitung mit Hook, je drei Pro- und Contra-Bausteine in Steigerung, Umschwung und Abwaegung mit Fazit. Kontrolliere mit dem Highlighter, ob jeder Block Konnektoren traegt.
+AUFGABE: Untersuche den Fall-Text 09 (Konzeptzettel mit Sanduhr-Skizze am Rand) zu Dialektische Eroerterung Sanduhr-Prinzip.
+TARGET: Drei Belege mit Zeile, je mit Funktion und einer Deutung in vier Saetzen.
 
 HILFE:
-1. Waehle einen Hook aus dem Schulalltag (Blick in die Pause), nenne Streitfrage und Weg.
-2. Setze schwaechere Argumente zuerst, staerkste zuletzt; verkette jeden Block mit Konnektoren (zuerst, darueber hinaus, am wichtigsten).
-3. Wechsle am Umschwung mit "Zwar ... jedoch ..." die Seite und formuliere in der Abwaegung eine Bedingung (Verbot mit Ausnahmen).
+1. Schritt 1: Ordne den Fall in zwei Saetzen ein.
+2. Schritt 2: Sichere zwei Befunde mit Zeile.
+3. Schritt 3: Deute Befund und Funktion im Fallganzen.
 
-MUSTERLOESUNG: Einleitung (Hook): In jeder Pause starren Dutzende auf Displays statt miteinander zu reden — daher stellt sich die Frage, ob ein ganztaegiges Handyverbot die Lage bessert. Contra-Block (steigend): Erstens Erreichbarkeit der Eltern in Notfaellen; darueber hinaus Nutzung als Lernwerkzeug; am wichtigsten das Training von Eigenverantwortung. Umschwung: Zwar sprechen diese Punkte fuer Selbststeuerung, jedoch zeigen Pausenhof und Unterricht ein anderes Bild. Pro-Block (steigend): Erstens weniger Ablenkung; darueber hinaus Schutz vor heimlichen Fotos und Chat-Druck; am wichtigsten echte Pausengespraeche und Bewegung. Abwaegung mit Fazit: Abgewogen ueberwiegt der Schutz der Lern- und Pausenzeit, sofern Ausnahmen fuer Notfaelle und Lernphasen gelten.
+MUSTERLOESUNG: Der Fall 09 zeigt Dialektische Eroerterung Sanduhr-Prinzip in drei Schritten. Erstens belegt ein Zitat mit Zeile den Kern des Konzeptzettel mit Sanduhr-Skizze am Rand, zweitens traegt die Funktion die Wirkung im Gefuege, drittens schliesst die Deutung das Tatbild. Damit ist die zweite Schicht entlarvt und das Portal oeffnet sich.
 
-Klausur-Satz: `Zwar foerdert das Handy Eigenstaendigkeit, jedoch ueberwiegt im Schulalltag der Schutz der Konzentration, sodass ein Verbot mit Ausnahmen angemessen ist.`
+Klausur-Satz: `Wer die Gegenseite stark macht, macht das eigene Urteil erst pruefungsreif.`
 
-## Schritt 5 — ausprobieren: Verfahrensvergleich & Abgrenzung
+## Schritt 5 — ausprobieren: Das doppelte Spiel Weg A gegen Weg B
 
-VERGLEICH (zwei Verfahren unterscheiden):
+VERGLEICH: Waehle erst das Verfahren, dann loesen: (i) Weg A Nahverfahren (Beleg, Zitat, Wirkung) oder (ii) Weg B Fernverfahren (Kontext, Gefuege, Urteil).
 
-VERGLEICH: Waehle zuerst das Verfahren — (i) Dialektisches Verfahren (Sanduhr mit Pro und Contra plus Abwaegung) oder (ii) Lineares Verfahren (nur eine Seite, steigernd zum Fazit) — dann schreiben.
+AUFGABE A: Welche Spur im Konzeptzettel mit Sanduhr-Skizze am Rand verlangt Weg A? Begründe mit Zitat.
+AUFGABE B: Welche Frage zum Fallganzen verlangt Weg B? Begründe mit Kontext.
 
-AUFGABE A: Soll ein Handyverbot eingefuehrt werden? Eroertere dialektisch. AUFGABE B: Begruende in linearer Form, warum Medienpausen sinnvoll sind.
+HILFE: A fragt nach Form und Naehe, also Weg A. B fragt nach Rolle und Ganzem, also Weg B.
 
-HILFE: A enthaelt "Soll ...?" plus "eroertern" -> Verfahren (i), Sanduhr mit zwei Bloecken und Abwaegung. B enthaelt "begruende" plus eine Richtung -> Verfahren (ii), nur stuetzende Argumente in Steigerung. Faustregel: "eroertern", "Vor- und Nachteile" oder Soll-Fragen verlangen die Sanduhr; "begruenden", "darlegen" oder "belegen" verlangen den linearen Aufbau.
+ANTWORT: A erfordert Weg A: Der Nahbeleg mit Zitat und Zeile zeigt die Wirkung im Detail. B erfordert Weg B: Der Fernblick auf Kontext und Gefuege sichert das Urteil zu Dialektische Eroerterung Sanduhr-Prinzip.
 
-ANTWORT: A verlangt Verfahren (i): Einleitung mit Streitfrage, Contra-Block, Umschwung, Pro-Block und Abwaegung mit Bedingung. B verlangt Verfahren (ii): These voran, dann drei stuetzende Argumente von schwach nach stark, dann Fazit ohne echten Gegenblock. Wer A linear schreibt, verliert die Abwaegungspunkte; wer B dialektisch aufblaeht, verliert Zeit und Schaerfe.
-
-Klausur-Satz: `Die Operatoren entscheiden ueber das Verfahren: Eroertern verlangt Abwaegung, Begruenden verlangt Steigerung.`
+Klausur-Satz: `Wer die Gegenseite stark macht, macht das eigene Urteil erst pruefungsreif.`
 
 ## Schritt 6 — check: Selbsttest zu Dialektische Eroerterung Sanduhr-Prinzip
-CHECK (Selbsttest, 3 Fragen mit Antworten):
 
-FRAGE: Wie ist die Sanduhr aufgebaut? | ANTWORT: Breite Einleitung mit Engfuehrung, zwei gesteigerte Argumentbloecke mit Umschwung, erweiterte Abwaegung mit Fazit.
-FRAGE: Wohin gehoert die eigene Position in der dialektischen Form? | ANTWORT: Erst in Abwaegung und Schluss, nicht schon in den Argumentbloecken vorwegnehmen.
-FRAGE: Nenne je zwei Konnektoren fuer Einraeumung und Gegensatz. | ANTWORT: Einraeumung: zwar, freilich; Gegensatz: jedoch, demgegenueber.
+CHECK (drei Fragen mit Antworten):
 
-Klausur-Satz: `Konnektoren markieren Steigerung, Umschwung und Abwaegung und machen den Gedankengang pruefbar.`
+FRAGE: Nenne die Drei-Schritt-Kette. | ANTWORT: Befund mit Zeile, Funktion im Gefuege, Deutung als Urteil.
+FRAGE: Was verlangt Weg A? | ANTWORT: Nahbeleg mit Zitat und Wirkung am Detail.
+FRAGE: Was verlangt Weg B? | ANTWORT: Kontext und Gefuege als Traeger des Urteils.
+
+Klausur-Satz: `Wer die Gegenseite stark macht, macht das eigene Urteil erst pruefungsreif.`
 
 ## Fehlvorstellung
 
-(kein Schritt; wird vom Parser automatisch erkannt und nicht mitgezaehlt)
+1. Fehlvorstellung: Einseitig sei ueberzeugender.
+   Korrektur-Satz: `Ohne faire Antithese bleibt das Urteil im Anforderungsbereich zwei stehen.`
+2. Fehlvorstellung: Mitte sei Beliebigkeit.
+   Korrektur-Satz: `Synthese heisst Gewichtung mit Begruendung, nicht Ausweichen.`
 
-1. Fehlannahme: "Je drei Argumente pro Seite genuegen, die Reihenfolge ist egal."
-   Korrektur: Die Reihenfolge ist die Argumentation. Schwache Gruende stehen zuerst, starke zuletzt; die beiden staerksten stehen um den Umschwung. Beliebige Reihenfolge laesst die Position willkuerlich wirken.
-   Korrektur-Satz: `Die Anordnung von schwach nach stark erzeugt erst die Spannung, die die Abwaegung traegt.`
-2. Fehlannahme: "Die eigene Position gehoert in die Einleitung."
-   Korrektur: Die Sanduhr nennt eingangs nur die Frage. Wer frueh urteilt, entwertet den Gegenblock und verschenkt die Abwaegungspunkte.
-   Korrektur-Satz: `Wer die Position vorwegnimmt, entwertet den Gegenblock und verschenkt die Abwaegungspunkte.`
+## Schritt 7 — szenario: Klausurtransfer: Kommentarchef der Schulzeitung zu Fall 09
 
-## Schritt 7 — szenario: Klausurtransfer: Dialektische Eroerterung Sanduhr-Prinzip
-ROLLE: Du bist Debattenchefin der Klasse 10 und bereitest das Team auf einen Schulwettbewerb vor.
-SITUATION: Das Los-Thema lautet Handyverbot, eure Seite wird erst vor Ort gezogen. Mehrere Teammitglieder kennen nur ihre Lieblingsseite.
-AUFGABE: Entwirf in zusammenhaengender Form (ca. 150 Woerter) einen Sanduhr-Bauplan mit Hook, je zwei Stichwort-Argumenten pro Seite, einem Umschwung-Satz und einer Abwaegungs-Formel mit Bedingung, sodass das Team beide Seiten vertreten kann.
-RUBRIC (30 XP): Hook plus Streitfrage klar (5 XP) | Beide Bloecke gesteigert mit Konnektoren (10 XP) | Umschwung sauber formuliert (5 XP) | Abwaegung mit Bedingung und Fazit (10 XP).
+ROLLE: Du bist Kommentarchef der Schulzeitung in der Pruefung.
+SITUATION: Ein Fall zu Dialektische Eroerterung Sanduhr-Prinzip (Fall 09, Konzeptzettel mit Sanduhr-Skizze am Rand) liegt unbearbeitet auf dem Tisch.
+AUFGABE: Verfasse circa 150 Woerter mit Einordnung, zwei Belegen mit Zeile, Funktion, Deutung und Schlussurteil.
+RUBRIC (30 XP): Einordnung korrekt (6 XP) | Zwei Belege mit Zeile (10 XP) | Funktion plus Deutung (10 XP) | Fachsprache und Schluss (4 XP).
 
-## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
+## Schritt 8 — reflexion: Takeaway und Rueckblick aus Fall 09
 
-TAKEAWAY (Kernzusammenfassung):
+TAKEAWAY:
 
-Hook plus Streitfrage, zwei gesteigerte Bloecke, Umschwung mit Konnektor und Abwaegung mit Bedingung — das ist die Sanduhr. Die Einleitung bleibt neutral, die Staerke waechst zum Umschwung, der Schluss raeumt ein und urteilt bedingt. Beim Handyverbot sichert eine Ausnahmeregel (Notfaelle, Lernphasen) das Urteil ab.
-Takeaway-Satz: `Hook plus Streitfrage, zwei gesteigerte Bloecke, Umschwung mit Konnektor und Abwaegung mit Bedingung — das ist die Sanduhr.`
+Fall 09 lehrt: Beleg sichern, Funktion benennen, Urteil begruenden. Wer die Gegenseite stark macht, macht das eigene Urteil erst pruefungsreif. Takeaway-Satz: `Wer die Gegenseite stark macht, macht das eigene Urteil erst pruefungsreif.`
 
-REFLEXION (2 Fragen):
-1. Selbstbeobachtung: Welcher Schritt fiel schwerer — der Hook mit Engfuehrung (Schritt 4) oder die Abwaegung mit Bedingung (Schritt 5)?
-2. Planung: Beim naechsten Mal sortiere ich zuerst alle Argumente nach Staerke und lege dann erst den Umschwung fest.
+REFLEXION:
+1. Welche Spur fiel schwerer, der Nahbeleg oder das Fernurteil?
+2. Beim naechsten Mal sichere ich zuerst Zitat und Zeile, weil sie jede Deutung tragen.

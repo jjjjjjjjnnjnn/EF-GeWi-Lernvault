@@ -13,156 +13,130 @@ version: Lesson-v3
 
 # Lernreise: Gedichtanalyse zum expressionistischen Grossstadtgedicht (L1, Ziel Klausur)
 
-<!-- Lesson v3 9步制架构：Schritt 1至8固定结构；Fehlvorstellung 夹在 Schritt 6 与 7 之间（Parser 自动跳过，不占步数）；支持内嵌 [Werkzeug: <id>] 交互教具；Gating: check/szenario 未过 = Weiter 置灰；XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
+<!-- Campaign: Detektive Fal 06 -->
+## Schritt 1 — entdecken: Der versiegelte Umschlag aus der Funknacht
 
-## Schritt 1 — entdecken: Ziele & Phänomen-Einstieg
+ZIELE（3条，15分钟可达成，先读中文，再记德语）：
 
-ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
+1. 中文：能把第06号案件（城市诗电波抄件）按背景、方法、判断三步拆开。
+   德语：Ordne Fall 06 in Kontext, Verfahren und Deutung.
+2. 中文：每个论断配引文加行号，并说清功能。
+   德语：Belege jede Aussage mit Zitat, Zeile und Funktion.
+3. 中文：按能力层级写出判断句。
+   德语：Faelle ein Urteil im passenden Anforderungsbereich.
 
-1. 中文：能按"第一印象—结构—意象—语言—主旨"分析表现主义城市诗，不逐句翻译。
-2. 中文：能识别典型手法——排比、拟人、色彩词、感叹与断裂句式。
-3. 中文：能选择阐释重心（选程序：形式破格 vs 内容控诉）。
+HOOK：
 
-Voraussetzung（窄切口）：只做 1910–1925 城市诗一首，不做跨 epoch 比较；已会 Metrum Grundbegriffe。只做原创概括，不抄整诗。
+深夜，跨时空文案侦探社的蓝灯又亮了。搭档把一只密封信封推到你面前：这是第06号案件，一份城市诗电波抄件。表面看只是一段表现主义城市诗，但灯光下浮现出第二层痕迹——有人删改、夸大或偷换了关键信息。你们作为思想特工与文本侦探，必须在十五分钟内锁定三个目标：找证据、说功能、下判断，每一步都要有出处支撑。下一道时空门只为证据链完整的人打开，搭档已经在催你了，线索正在变冷。
 
+德语版钩子：Agent Theo Wort legt Fall 06 (Stadtplan mit eingekreister Laterne) auf deinen Tisch. Falllinie B: Aus dem Funkgeraet der Zwanzigerjahre knistert eine fremde Grossstadt, deren Lichter die Menschen einsam machen.
 
-Hook中文生活切入:
+Klausur-Satz: `Das Gedicht macht die Stadt zum Gelaende der Seele: Bilder tragen, was Saetze verschweigen.`
 
-想象晚高峰挤地铁:闸机外的人潮、报站声、广告灯箱同时涌来,时间被切碎,每个人都成了人流里的一个像素点,孤独却无处可逃。表现主义大城市诗捕捉的正是这种感受:诗人把都市写成吞噬人的巨兽,用断裂的节奏和刺眼的意象把内心的焦虑喊出来。
+## Schritt 2 — entdecken: Die Ausruestungskiste gegen Fall 06
 
-Phaenomen-Satz (DE): Die Stadt rauscht, der Einzelne verstummt in der Menge.
+装备盒（5件，先读中文，再背德语）：
 
-中文机制铺垫:先抓形式特征:省略、拟人、色彩词与感叹句如何制造撕裂感;再抓内容母题:异化、末日恐惧与对自然的乡愁;最后把形式和内容焊接:断裂的语言正是断裂的现代经验,答题必须形式功能化而非罗列修辞。
+- 中文点拨：表现主义城市诗之1号工具。
+  德语：**Bildlichkeit: Metapher und Vergleich als Traeger der Stadterfahrung**
+- 中文点拨：表现主义城市诗之2号工具。
+  德语：**Chiffre: verschluesseltes Zeichen fuer Angst und Entfremdung**
+- 中文点拨：表现主义城市诗之3号工具。
+  德语：**Reihungsstil: parataktische Haeufung als Atem der Grossstadt**
+- 中文点拨：表现主义城市诗之4号工具。
+  德语：**Deutungshypothese: fruehe Leitannahme, die die Analyse steuert**
+- 中文点拨：表现主义城市诗之5号工具。
+  德语：**Klangfigur: Alliteration und Rhythmus als Wirkungsverstaerker**
 
-Mechanismus-Satz (DE): Zerrissene Form spiegelt zerrissene Erfahrung, jedes Bild traegt die Grossstadtangst.
+Klausur-Satz: `Das Gedicht macht die Stadt zum Gelaende der Seele: Bilder tragen, was Saetze verschweigen.`
 
-Klausur-Satz: `Das Grossstadtgedicht wird als Form- und Deutungszusammenhang analysiert: Bruchform traegt Grossstadtkritik.`
+## Schritt 3 — entdecken: Der Mechanismus hinter dem Tatbild
 
-## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
+中文深层解构：表现主义城市诗的关键链条是证据、功能、判断三步走。先锁引文行号，再说它在整体中的作用，最后下判断。第06号案件（城市诗电波抄件）的第二层痕迹就藏在这里。
 
-PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
-
-中文在上，德语在下：
-
-- 意象群 — Bildfeld：围绕城市的重复意象（Stein、 Lärm、 Licht、 Masse）。
-- 排比 — Reihung/Parataxe：短句并列堆叠，制造压迫节奏。
-- 拟人与物化 — Personifikation/Verdinglichung：人变物、物变怪，写异化。
-- 断裂 — Bruch：格律与句法故意破裂，形式即内容。
-- 城市控诉 — Grossstadtkritik：匿名、喧嚣、毁灭感背后的文明批判。
-
-Klausur-Satz: `Reihung und Bruch formen das lyrische Ich als ueberwaeltigten Stadtbeobachter.`
-
-## Schritt 3 — entdecken: Kernkonzept & Wirkungsmodell
-
-ENTDECKEN（1概念 + 1文字图解，中文在上、德语在下）：
-
-Hook中文生活切入：
-
-中文：想象早晚高峰的地铁：石头般的人墙、闪烁的灯箱、被推着走的人流，最后只剩耳鸣。表现主义的城市诗就是把这种窒息定格成诗。
-
-Phaenomen-Satz (DE): Die Stadt droehnt, das Ich verstummt zum Schrei.
-
-Spiel-Aufgabe沙盒操作指引：
-
-中文：打开文本沙盒，用 highlighter 按节标出 Bildfeld 与 Mittel（关键词：Reihung, Personifikation, Farbwort, Bruch, Grossstadtkritik），每节只留一组意象加一个手法。
-
-Beobachtungs-Satz (DE): Stein türmt sich, Masse hetzt, Vision bricht: Reihung und Bruch tragen die Steigerung.
-
-Aha-Moment因果链：
-
-中文因果链：诗人先给第一印象定调，再分节推进意象群，每节用一个手法讲清功能，最后收束抒情主体的姿态；形式越碎证明城市病越重，主体只剩惊叫而无方案，这正是表现主义的诊断书。
-
-Gesetz-Satz (DE): Die zerbrochene Form ist die Diagnose der zerbrochenen Stadt.
-
-文字图解（ASCII 结构图，App支持解析渲染）：
+德语：Befund mit Zeile, Funktion im Gefuege, Deutung als Urteil zu Gedichtanalyse zum expressionistischen Grossstadtgedicht.
 
 ```diagram
-Ersteindruck (1 Satz) -> Strophe 1/2/3
-je Strophe: Bildfeld + Mittel + Funktion
-Schluss: Ich-Haltung (Schrei) + Epochenbezug
+Befund (Zitat mit Zeile) -> Funktion (Wirkung) -> Deutung (Urteil)
+Fall 06
 ```
-Klausur-Satz: `Die zerbrochene Form ist die Diagnose der zerbrochenen Stadt.`
 
-## Anekdote & Fun-Fact
+Klausur-Satz: `Das Gedicht macht die Stadt zum Gelaende der Seele: Bilder tragen, was Saetze verschweigen.`
 
-**Anekdote / Fun-Fact (DE)**: Georg Heym ertrank 1912 mit 24 Jahren beim Schlittschuhlaufen — seine Grossstadtvisionen mit Daemmerung und Krieg erschienen posthum und praegten den Expressionismus. Die Stadt war fuer ihn Moloch, nicht Heimat.
+## Anekdote
 
-**中文解读**: 海姆 24 岁夭折，城市在他笔下是吃人的摩洛。记住"城市即巨兽"，意象分析就有了统一隐喻。
+中文解读：表现主义城市诗里藏着侦探的耐心：每个细节都是 portal 的钥匙。
 
-**Bezug zum Konzept**: `Moloch Stadt frisst Mensch und Natur zugleich.`
+德语：Ein Nachtfunker sammelte einst Stadtgedichte, weil jede Schicht denselben Lichterlaerm beschrieb.
 
-## Schritt 4 — ausprobieren: Interaktive Praxis & Labor
+Bezug zum Konzept: `Das Gedicht macht die Stadt zum Gelaende der Seele: Bilder tragen, was Saetze verschweigen.`
+
+## Schritt 4 — ausprobieren: Die Sandkasten-Pruefung mit Textlupe
 
 [Werkzeug: highlighter]
 
-BEISPIEL（正确例题示范，含教具操作与解答，中文在上、德语在下）：
+中文任务：分析第06号案文本（城市诗电波抄件）。
+德语 AUFGABE: Untersuche Fall 06 (Stadtplan mit eingekreister Laterne) zu Gedichtanalyse zum expressionistischen Grossstadtgedicht.
+TARGET（目标）：三个带行号证据，各配功能与判断，共四句。
 
-AUFGABE中文导读（找茬谜题）：一首三节城市诗，第一节堆石头意象、第二节赶人流、第三节末日景象。请逐节配手法并论证抒情主体的无力。
+HILFE（中文在前）：
+1. 中文：两句交代背景。德语：Ordne den Fall in zwei Saetzen ein.
+2. 中文：锁两个证据加行号。德语：Sichere zwei Befunde mit Zeile.
+3. 中文：功能加判断收尾。德语：Deute Funktion im Fallganzen.
 
-AUFGABE (analysieren, AFB II): Untersuchen Sie ein dreistrophiges Grossstadtgedicht: Steinbilder, Menschenstrom, Untergangsvision. Ordnen Sie jeder Strophe Bildfeld und Mittel zu und deuten Sie die Ich-Haltung.
+MUSTERLOESUNG: 中文示范思路：先背景一句，再证据加功能两句，最后判断一句收束。
+德语 MUSTERLOESUNG: Fall 06 zeigt Gedichtanalyse zum expressionistischen Grossstadtgedicht in drei Schritten mit Beleg, Funktion und Deutung; die zweite Schicht ist entlarvt.
 
-HILFE（中德双语步骤）：
+Klausur-Satz: `Das Gedicht macht die Stadt zum Gelaende der Seele: Bilder tragen, was Saetze verschweigen.`
 
-1. 中文：第1步两句定第一印象与结构，关键词：Ersteindruck。
-   Schritt 1 (DE): Sichern Sie Ersteindruck und Aufbau in zwei Saetzen.
-2. 中文：第2步每节一组意象加一个手法讲功能，关键词：Funktion。
-   Schritt 2 (DE): Nennen Sie pro Strophe ein Bildfeld plus ein Mittel mit Funktion.
-3. 中文：第3步收束主体姿态与时代关联，关键词：Epochenbezug。
-   Schritt 3 (DE): Deuten Sie Ich-Haltung und Epochenbezug.
+## Schritt 5 — ausprobieren: Das doppelte Spiel Weg A gegen Weg B
 
-MUSTERLOESUNG：中文：第一节以石头隐喻与排比制造窒息，第二节以物化人流与色彩词切断方向感，第三节以句法断裂与感叹收束为末日；主体全程被看、无行动，只有惊叫，形式之乱即城市之病。
+VERGLEICH（中文先行）：先选路再做题：【选程序】(i) Weg A 近路（引文、细节、效果）还是 (ii) Weg B 远路（背景、结构、判断）。
+德语：Waehle erst das Verfahren (Weg A oder Weg B), dann loesen.
 
-MUSTERLOESUNG (DE): Strophe eins türmt Steinmetaphern in Parataxe zu Atemlosigkeit; Strophe zwei verdinglicht Masse zum Strom, Farbwoerter isolieren Reize; Strophe drei bricht Syntax und Metrum, Ausrufe markieren Ohnmacht. Das Ich schreit statt zu handeln: Grossstadt als Moloch.
-Klausur-Satz: `Reihung, Verdinglichung und Bruch steigern Stein ueber Masse zur Apokalypse und lassen dem Ich nur den Schrei.`
+AUFGABE A（中文：哪条线索走近路？配引文）：Welche Spur verlangt Weg A?
+AUFGABE B（中文：哪个整体问题走远路？配背景）：Welche Frage verlangt Weg B?
 
-## Schritt 5 — ausprobieren: Verfahrensvergleich & Abgrenzung
+HILFE：A问形式细节选近路Weg A；B问整体结构选远路Weg B。【选程序看题干：问细节选A，问整体选B。】
 
-VERGLEICH辨别实验（双向辨析：形式破格 vs 内容控诉）：
+中文答案：A走近路靠引文细节，B走远路靠背景结构。
+德语 ANTWORT: A erfordert Weg A mit Nahbeleg, B erfordert Weg B mit Kontext zu Gedichtanalyse zum expressionistischen Grossstadtgedicht.
 
-VERGLEICH: Waehle erst das Verfahren — 【选程序】先看设问：(i) 形式破格（untersuchen Sie Sprache/Form：从格律句法修辞讲起、功能收束）oder (ii) 内容控诉（deuten Sie Aussage：从意象主题我之态度讲起、手法作证）—— dann loesen.
-
-AUFGABE A：Untersuchen Sie Aufbau und Sprache des Gedichts.
-AUFGABE B：Deuten Sie die Grossstadtkritik des Gedichts.
-
-HILFE: A 含 Sprache/Aufbau → Verfahren (i)。B 含 Kritik/Aussage → Verfahren (ii)。【选程序：问形式先手法；问主旨先意象。】
-
-ANTWORT: A erfordert Verfahren (i): Metrum-Bruch, Parataxe, Farblexik je mit Funktion; erst danach ein Satz zur Aussage — Form traegt Deutung. B erfordert Verfahren (ii): Bildfelder Stein-Masse-Untergang als Kritikthese, Ich als ohnmaechtiger Zeuge; Mittel nur als Belege — Deutung fuehrt, Form stützt. Beide Verfahren brauchen dieselben Textstellen, ordnen sie aber umgekehrt an.
-
-Klausur-Satz: `Formanalyse beginnt beim Mittel, Deutung beginnt bei der These.`
+Klausur-Satz: `Das Gedicht macht die Stadt zum Gelaende der Seele: Bilder tragen, was Saetze verschweigen.`
 
 ## Schritt 6 — check: Selbsttest zu Gedichtanalyse zum expressionistischen Grossstadtgedicht
-CHECK检索默写（自测 3 题，与答案配对）：
 
-FRAGE: Wie lautet der Dreischritt pro Strophe? | ANTWORT: Bildfeld benennen, Mittel mit Beleg nennen, Funktion fuer Ich und Kritik deuten.
-FRAGE: Welche Mittel sind epochentypisch? | ANTWORT: Reihung, Verdinglichung, Farbwoerter, Ausrufe und metrisch-syntaktischer Bruch.
-FRAGE: Wie ist die Ich-Haltung? | ANTWORT: Ueberwaeltigt und ohnmaechtig: Schrei und Vision statt Handlung und Loesung.
+CHECK (drei Fragen mit Antworten):
 
-Klausur-Satz: `Bruchform plus Molochbilder ergeben Schrei statt Programm.`
+中文自测（先中文自问，再用德语回答）：
+FRAGE: 三步链是什么？ | ANTWORT: Befund mit Zeile, Funktion im Gefuege, Deutung als Urteil.
+FRAGE: 近路要什么？ | ANTWORT: Nahbeleg mit Zitat und Wirkung.
+FRAGE: 远路要什么？ | ANTWORT: Kontext und Gefuege als Urteilstraeger.
+
+Klausur-Satz: `Das Gedicht macht die Stadt zum Gelaende der Seele: Bilder tragen, was Saetze verschweigen.`
 
 ## Fehlvorstellung
 
-(非Schritt小节，Parser 自动识别，不计入步骤步数)
+1. 中文误解：表现主义城市诗只看表面。
+   中文纠偏：证据加功能才是得分点。
+   Korrektur-Satz: `Ohne Bildbeleg mit Versangabe bleibt Gefuehl blosse Behauptung.`
+2. 中文误解：表现主义城市诗只看表面。
+   中文纠偏：证据加功能才是得分点。
+   Korrektur-Satz: `Jede Chiffre braucht eigene Funktionsbestimmung im Gedichtganzen.`
 
-1. 误解"把诗翻译一遍就是分析"。
-   中文纠偏：Paraphrase 只是起点；每节必须有 Mittel + Funktion，否则零分析分。
-   Korrektur-Satz: `Paraphrase ohne Mittel und Funktion ist keine Analyse.`
+## Schritt 7 — szenario: Klausurtransfer: Feuilleton-Redakteur zu Fall 06
 
-2. 误解"手法越多越好"。
-   中文纠偏：罗列十个手法不如讲透三个；每个手法必须回扣城市控诉，无功能不写。
-   Korrektur-Satz: `Drei gedeutete Mittel schlagen zehn benannte.`
+ROLLE（中文）：你是Feuilleton-Redakteur，负责审稿。
+德语 ROLLE: Du bist Feuilleton-Redakteur.
+SITUATION: Fall 06 liegt unbearbeitet vor dir.
+AUFGABE（中文）：150词左右，含背景、两个证据、功能判断。
+RUBRIC (30 XP): Einordnung (6 XP) | Belege mit Zeile (10 XP) | Funktion plus Deutung (10 XP) | Fachsprache (4 XP).
 
-## Schritt 7 — szenario: Klausurtransfer: Gedichtanalyse zum expressionistischen Grossstadtgedicht
-ROLLE: Du schreibst die Klausur zum Grossstadtgedicht.
-SITUATION: Das Gedicht ist unbekannt, 90 Minuten Zeit. Verfasse in zusammenhaengender Analyse (ca. 150 Woerter) Ersteindruck, zwei Strophenbefunde mit Mittel und Funktion sowie Schluss zur Ich-Haltung.
-RUBRIC (30 XP): Ersteindruck und Aufbau (6 XP) | Zwei Strophen mit Bildfeld und Mittel (10 XP) | Funktionsdeutung und Epochenbezug (10 XP) | Fachsprache (4 XP).
+## Schritt 8 — reflexion: Takeaway und Rueckblick aus Fall 06
 
-## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
+中文总结：第06号案件教会我们：先锁证据，再说功能，最后判断。
+德语 TAKEAWAY: Beleg sichern, Funktion benennen, Urteil begruenden. `Das Gedicht macht die Stadt zum Gelaende der Seele: Bilder tragen, was Saetze verschweigen.`
 
-TAKEAWAY 1盒（核心总结）：
-
-中文：城市诗三节三问——写何意象、用何手法、表何态度。形式越碎、控诉越烈，我只有惊叫、没有方案。记住一句话——乱形即病症，惊叫即态度。
-Takeaway-Satz: `Bildfeld, Mittel, Funktion — pro Strophe einmal durchdekliniert.`
-
-REFLEXION 2问：
-1. 过程自省：Welcher Schritt fiel schwerer — der Strophenbefund (Schritt 4) oder die Wahl von Form oder Deutung (Schritt 5)?
-2. 元认知计划：Beim naechsten Mal markiere ich zuerst alle Stadtbilder mit einer Farbe.
+REFLEXION（中文在前）：
+1. 中文：近路证据和远路判断哪个更难？德语：Was fiel schwerer, Nahbeleg oder Fernurteil?
+2. 中文：下次先划引文行号。德语：Naechstes Mal sichere ich zuerst Zitat und Zeile.

@@ -13,118 +13,111 @@ version: Lesson-v3
 
 # Lernreise: Sprachwandel und Kiezdeutsch-Debatte (L1, Ziel Klausur)
 
-<!-- Lesson v3: Schritt 1-8 feste Struktur; Fehlvorstellung zwischen Schritt 6 und 7 (Parser skip); [Werkzeug: <id>] interaktiv; Gating: check/szenario nicht bestanden = Weiter grau; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
-
-## Schritt 1 — entdecken
+<!-- Campaign: Detektive Fal 24 -->
+## Schritt 1 — entdecken: Der versiegelte Umschlag aus der Archivnacht
 
 ZIELE (3 Ziele, nach 15 Minuten erreichbar):
 
-1. Du kannst $Sprachwandel = Laut + Wort + Bau$ mit je einem Beispiel erklaeren.
-2. Du kannst $Kiezdeutsch = Kontakt + Jugend + Stadt$ als $Varietaet$ beschreiben.
-3. Du kannst einen Debattenbeitrag zu $Verfall \lor Bereicherung$ eroertern (AFB II).
+1. Du ordnest Fall 24 (Zeitungsartikel mit eingeklebter Gegendarstellung) in Kontext, Verfahren und Deutung ein.
+2. Du belegst jede Aussage zu Sprachwandel und Kiezdeutsch-Debatte mit Zitat und Zeile und benennst die Funktion.
+3. Du faellst ein Urteil im passenden Anforderungsbereich.
 
-EINSTIEG: Im Jahr 2012 stritten Feuilletons ueber Saetze wie $Ich mach dich Messer$. Linguisten hoerten $System$, Kritiker hoerten $Verfall$. Der Streit um $Kiezdeutsch$ zeigt: Wandel klingt erst falsch, dann normal — wie einst $Handy$ oder $downloaden$.
+HOOK:
 
-Klausur-Satz: `Wandel ist Regel, nicht Unfall der Sprache.`
+Mitten in der Nacht flackert das Blaulicht der Agentur fuer Texte und Gedanken ueber den leeren Schreibtischen, und Partner Theo Wort legt einen versiegelten Umschlag auf deinen Platz. Seit Wochen jagt ihr als Gedanken-Agent an der Seite deines Text-Detektivs durch die Jahrhunderte, und jede geloeste Spur oeffnet ein neues Portal in der Zeit. Heute geht es um Sprachwandel und Kiezdeutsch-Debatte. Falllinie D: Das Archiv der Agentur meldet einen Riss in der Zeit, durch den ein Text in unsere Gegenwart gefallen ist. Im Umschlag steckt Fall 24: ein Zeitungsartikel mit eingeklebter Gegendarstellung. Kaum haeltst du das Stueck ins Licht, faellt dir eine zweite Schicht auf: Jemand hat die Botschaft frisiert, verkuerzt oder verdreht, und nur wer Beleg, Funktion und Deutung sauber trennt, kann die Manipulation entlarven. Das naechste Portal oeffnet sich nur, wenn du drei Ziele in fuenfzehn Minuten schaffst und jede Behauptung mit Zeile und Wirkung belegst. Theo Wort gru belt schon ungeduldig, denn die Spur wird kalt.
 
-## Schritt 2 — entdecken
+Klausur-Satz: `Sprache wandelt sich im Gebrauch: Wer heute spricht, schreibt morgen die Regel.`
 
-GRUNDBEGRIFFE (5 Begriffe):
+## Schritt 2 — entdecken: Die Ausruestungskiste gegen Fall 24
 
-- **Sprachwandel**: $Wandel = Lautwandel + Bedeutungswandel + Grammatikwandel$, messbar ueber $Zeit$.
-- **Varietaet**: $Varietaet = Region + Gruppe + Lage$, etwa $Dialekt + Soziolekt + Register$.
-- **Kiezdeutsch**: $urban + mehrsprachig + jugendlich$, z. B. $Lassma + Musstu + Isch schwör$.
-- **Entlehnung**: $Wort_{neu} = Sprache_A \to Sprache_B$, etwa $Computer = Englisch \to Deutsch$.
-- **Verfallsthese**: $Behauptung = neu \to schlechter$, Gegenposition $Bereicherung = neu \to mehr Ausdruck$.
+AUSRUESTUNG (5 Instrumente im Koffer):
 
-Klausur-Satz: `Jede Generation erbt Norm und erfindet Gebrauch.`
+- **Sprachwandel**: Sprachwandel: regelmaessiger Laut- und Formwechsel ueber Zeit
+- **Kiezdeutsch**: Kiezdeutsch: kontaktbedingte Varietaet mit eigenen Mustern
+- **Register**: Register: situationsgerechte Sprachwahl zwischen Naehe und Distanz
+- **Norm und Gebrauch**: Norm und Gebrauch: Regelbuch gegen lebendige Praxis
+- **Mehrsprachigkeit**: Mehrsprachigkeit: Ressource statt Stoerquelle im Alltag
 
-## Schritt 3 — entdecken
+Klausur-Satz: `Sprache wandelt sich im Gebrauch: Wer heute spricht, schreibt morgen die Regel.`
 
-KONZEPT (ein Konzept plus ein Textdiagramm):
+## Schritt 3 — entdecken: Der Mechanismus hinter dem Tatbild
 
-Kiezdeutsch folgt Regeln: $Artikel_{weg} + Praeposition_{weg} + Verb_{vorn}$ wie in $Gehst du heute Freibad$. Korpusstudien zeigen $System = Woerter + Muster + Funktion$ mit $Identitaet + Oekonomie$. Die Debatte trennt $Deskription = beschreiben$ von $Praeskription = vorschreiben$: Wissenschaft misst $Haeufigkeit$, Schule prueft $Angemessenheit$.
+MECHANISMUS (Tiefenbau):
+
+Jeder Fall folgt der Kette Befund, Funktion und Deutung. Zuerst sicherst du den Befund mit Zitat und Zeile, dann bestimmst du die Funktion im Macht- oder Sinn-gefuege, erst danach formulierst du die Deutung zu Sprachwandel und Kiezdeutsch-Debatte. Falllinie D: Das Archiv der Agentur meldet einen Riss in der Zeit, durch den ein Text in unsere Gegenwart gefallen ist. Wer die zweite Schicht des Zeitungsartikel mit eingeklebter Gegendarstellung uebersieht, tappt in die Falle der Agentur.
 
 ```diagram
-    Wandel:
-    Laut (Buch -> Buecher) + Wort (Handy) + Bau (weil + V2)
-    Kiezdeutsch:
-    [Kontakt] + [Jugend] + [Stadt] -> Muster
-    Muster: "Gehst du Freibad" = Praeposition weg
-            "Lassma gehen" = Verkuerzung + Gruppe
-    Debatte: Verfall (Norm) vs. Bereicherung (Funktion)
+Befund (Zitat mit Zeile) -> Funktion (Wirkung im Gefuege) -> Deutung (Urteil)
+Fall 24: Zeitungsartikel mit eingeklebter Gegendarstellung -> Spur sichern -> Tatbild schliessen
 ```
 
-Klausur-Satz: `Muster beweisen System, Urteil braucht Massstab.`
+Klausur-Satz: `Sprache wandelt sich im Gebrauch: Wer heute spricht, schreibt morgen die Regel.`
 
-## Schritt 4 — ausprobieren
+## Anekdote
 
-BEISPIEL (Musteraufgabe mit Werkzeug):
+Ein Schaffner sammelte einst neue Groesse, weil Fahrgaeste sie taeglich erfanden.
 
-[Werkzeug: lego]
+Bezug zum Konzept: `Sprache wandelt sich im Gebrauch: Wer heute spricht, schreibt morgen die Regel.`
 
-AUFGABE (analysieren, AFB II): Analysieren Sie die Aeusserung $Gehst du heute Freibad$ nach Ebenen und ordnen Sie sie als Varietaet ein.
+## Schritt 4 — ausprobieren: Die Sandkasten-Pruefung mit Sprechuhr
+
+[Werkzeug: oral-timer]
+
+AUFGABE: Untersuche den Fall-Text 24 (Zeitungsartikel mit eingeklebter Gegendarstellung) zu Sprachwandel und Kiezdeutsch-Debatte.
+TARGET: Drei Belege mit Zeile, je mit Funktion und einer Deutung in vier Saetzen.
 
 HILFE:
-1. Schritt 1: Baue $Laut + Wort + Bau$ als Bloecke und markiere $Praeposition_{weg}$.
-2. Schritt 2: Pruefe $Region + Gruppe + Lage$ fuer $Kiezdeutsch$.
-3. Schritt 3: Formuliere $System + Funktion$ statt $Fehler$.
+1. Schritt 1: Ordne den Fall in zwei Saetzen ein.
+2. Schritt 2: Sichere zwei Befunde mit Zeile.
+3. Schritt 3: Deute Befund und Funktion im Fallganzen.
 
-MUSTERLOESUNG: Auf der Bau-Ebene fehlt $ins$ vor $Freibad$, also $Praepositionstilgung$; Laut und Wort bleiben standardnah. Soziolinguistisch gilt $urban + jugendlich + mehrsprachig$, also $Kiezdeutsch$ als $situative Varietaet$. Funktional sichert die Kuerze $Tempo + Zugehoerigkeit$; normativ bleibt in der Klausur $Ich gehe heute ins Freibad$ gefordert. Urteil: $Systematisch + angemessenheitsabhaengig$.
+MUSTERLOESUNG: Der Fall 24 zeigt Sprachwandel und Kiezdeutsch-Debatte in drei Schritten. Erstens belegt ein Zitat mit Zeile den Kern des Zeitungsartikel mit eingeklebter Gegendarstellung, zweitens traegt die Funktion die Wirkung im Gefuege, drittens schliesst die Deutung das Tatbild. Damit ist die zweite Schicht entlarvt und das Portal oeffnet sich.
 
-Klausur-Satz: `Fehler im Diktat kann System im Kiez sein.`
+Klausur-Satz: `Sprache wandelt sich im Gebrauch: Wer heute spricht, schreibt morgen die Regel.`
 
-## Schritt 5 — ausprobieren
+## Schritt 5 — ausprobieren: Das doppelte Spiel Weg A gegen Weg B
 
-VERGLEICH (Verfahren A gegen Verfahren B):
+VERGLEICH: Waehle erst das Verfahren, dann loesen: (i) Weg A Nahverfahren (Beleg, Zitat, Wirkung) oder (ii) Weg B Fernverfahren (Kontext, Gefuege, Urteil).
 
-VERGLEICH: Waehle zuerst das Verfahren — (i) System-Verfahren (mit $Muster + Regel + Korpus$ argumentieren) oder (ii) Norm-Verfahren (mit $Standard + Angemessenheit + Schule$ argumentieren) — dann loesen.
+AUFGABE A: Welche Spur im Zeitungsartikel mit eingeklebter Gegendarstellung verlangt Weg A? Begründe mit Zitat.
+AUFGABE B: Welche Frage zum Fallganzen verlangt Weg B? Begründe mit Kontext.
 
-AUFGABE A: Beurteilen Sie $Lassma Hausaufgaben machen$ als Sprachsystem.
-AUFGABE B: Beurteilen Sie denselben Satz als Klausursprache.
+HILFE: A fragt nach Form und Naehe, also Weg A. B fragt nach Rolle und Ganzem, also Weg B.
 
-HILFE: A fragt nach System, also Verfahren (i). B fragt nach Norm, also Verfahren (ii).
+ANTWORT: A erfordert Weg A: Der Nahbeleg mit Zitat und Zeile zeigt die Wirkung im Detail. B erfordert Weg B: Der Fernblick auf Kontext und Gefuege sichert das Urteil zu Sprachwandel und Kiezdeutsch-Debatte.
 
-ANTWORT: A erfordert Verfahren (i): $Lass + mal = Lassma$ mit $Oekonomie + Gruppe$ ist regelhaft. B erfordert Verfahren (ii): In der Klausur gilt $Standard = Lass uns beginnen$, also $umformulieren$.
+Klausur-Satz: `Sprache wandelt sich im Gebrauch: Wer heute spricht, schreibt morgen die Regel.`
 
-Klausur-Satz: `System beschreibt Koennen, Norm verlangt Passen.`
+## Schritt 6 — check: Selbsttest zu Sprachwandel und Kiezdeutsch-Debatte
 
-## Schritt 6 — check
+CHECK (drei Fragen mit Antworten):
 
-CHECK (Selbsttest, 3 Fragen):
+FRAGE: Nenne die Drei-Schritt-Kette. | ANTWORT: Befund mit Zeile, Funktion im Gefuege, Deutung als Urteil.
+FRAGE: Was verlangt Weg A? | ANTWORT: Nahbeleg mit Zitat und Wirkung am Detail.
+FRAGE: Was verlangt Weg B? | ANTWORT: Kontext und Gefuege als Traeger des Urteils.
 
-FRAGE: Was ist Kiezdeutsch? | ANTWORT: $Varietaet = urban + mehrsprachig + jugendlich$ mit eigenen $Mustern$.
-FRAGE: Nennen Sie ein Baumuster. | ANTWORT: $Praeposition_{weg}$ wie $Gehst du Freibad$ oder $Verb_{vorn}$ mit $weil$.
-FRAGE: Verfall oder Bereicherung? | ANTWORT: $Deskription = System$, $Norm = Lage$; Urteil braucht $Massstab + Kontext$.
-
-Klausur-Satz: `Erst messen, dann werten.`
+Klausur-Satz: `Sprache wandelt sich im Gebrauch: Wer heute spricht, schreibt morgen die Regel.`
 
 ## Fehlvorstellung
 
-(kein Schritt, Parser skippt diesen Abschnitt)
+1. Fehlvorstellung: Neu heisse falsch.
+   Korrektur-Satz: `Neu heisst zuerst ungewoehnlich, dann ueblich.`
+2. Fehlvorstellung: Eine Varietaet sei kein System.
+   Korrektur-Satz: `Auch Kontaktdeutsch folgt Mustern und Regeln.`
 
-1. Fehlvorstellung: Kiezdeutsch sei fehlerhaftes Deutsch ohne Grammatik.
-   Korrektur: Korpora zeigen $Regel + Muster + Funktion$; Abweichung vom Standard ist nicht Regellosigkeit.
-   Korrektur-Satz: `Varietaet folgt eigener Regel, nicht keiner Regel.`
-2. Fehlvorstellung: Sprachwandel bedeute Verfall seit Luther.
-   Korrektur: Wandel schafft $Wortschatz + Optionen$; jede Epoche klagte und sprach danach weiter.
-   Korrektur-Satz: `Wandel erweitert Repertoire, Norm sichert Verstaendigung.`
+## Schritt 7 — szenario: Klausurtransfer: Sprachkolumnist der Stadtzeitung zu Fall 24
 
-## Schritt 7 — szenario
+ROLLE: Du bist Sprachkolumnist der Stadtzeitung in der Pruefung.
+SITUATION: Ein Fall zu Sprachwandel und Kiezdeutsch-Debatte (Fall 24, Zeitungsartikel mit eingeklebter Gegendarstellung) liegt unbearbeitet auf dem Tisch.
+AUFGABE: Verfasse circa 150 Woerter mit Einordnung, zwei Belegen mit Zeile, Funktion, Deutung und Schlussurteil.
+RUBRIC (30 XP): Einordnung korrekt (6 XP) | Zwei Belege mit Zeile (10 XP) | Funktion plus Deutung (10 XP) | Fachsprache und Schluss (4 XP).
 
-ROLLE: Du bist Redakteur der Schuelerzeitung.
-SITUATION: Ein Leserbrief fordert das Verbot von $Kiezdeutsch$ auf dem Schulhof.
-AUFGABE (erortern, AFB III): Eroertern Sie die Forderung in einer zusammenhaengenden Darstellung (ca. 150 Woerter) mit Pro, Kontra und eigenem Standpunkt.
-RUBRIC (30 XP): Systemdarstellung mit $Beispiel$ (10 XP) | Normargument mit $Angemessenheit$ (10 XP) | Abgewogener Standpunkt (5 XP) | Geschlossene Darstellung (5 XP).
+## Schritt 8 — reflexion: Takeaway und Rueckblick aus Fall 24
 
-## Schritt 8 — reflexion: Takeaway & Reflexion
+TAKEAWAY:
 
-TAKEAWAY: Merke $System + Lage = Urteil$. Analyseformel $Beleg + Ebene + Funktion + Normvergleich$ traegt jede Eroerterung.
+Fall 24 lehrt: Beleg sichern, Funktion benennen, Urteil begruenden. Sprache wandelt sich im Gebrauch: Wer heute spricht, schreibt morgen die Regel. Takeaway-Satz: `Sprache wandelt sich im Gebrauch: Wer heute spricht, schreibt morgen die Regel.`
 
 REFLEXION:
-1. Was fiel schwerer — das $Muster-Erkennen$ (Schritt 4) oder der $Normvergleich$ (Schritt 5)?
-2. Plane: Beim naechsten Mal sammle ich zuerst drei $Belege$, dann erst das Urteil.
-
-Anekdote (DE): Als 2012 das Wort $Lassma$ in Jugendstudien mit $Haeufigkeit \gg Einzelfall$ auftauchte, rief ein Kritiker $Verfall$, eine Forscherin $Grammatik$. Zehn Jahre spaeter stand $Kiezdeutsch = Kontakt + Stadt + Jugend$ im Lehrbuch — aus Aufregung war ein Kapitel geworden.
-
-Bezug: `Korpus statt Bauchgefuehl entscheidet ueber System oder Schnitzer.`
+1. Welche Spur fiel schwerer, der Nahbeleg oder das Fernurteil?
+2. Beim naechsten Mal sichere ich zuerst Zitat und Zeile, weil sie jede Deutung tragen.
