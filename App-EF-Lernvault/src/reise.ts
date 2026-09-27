@@ -186,9 +186,10 @@ export function parseReiseFile(path: string, raw: string): Reise | null {
       const lines = content.split("\n").map((l) => l.trim()).filter(Boolean);
       let count = 0;
       for (const line of lines) {
-        if (/^FRAGE:/i.test(line)) {
+        if (/^(?:[-*\d.)]+\s*)?FRAGE[:：]/i.test(line)) {
           count++;
-          const parts = line.replace(/^FRAGE:\s*/i, "").split(/\s*\|\s*ANTWORT:\s*/i);
+          const cleanLine = line.replace(/^(?:[-*\d.)]+\s*)?FRAGE[:：]\s*/i, "");
+          const parts = cleanLine.split(/\s*\|\s*ANTWORT[:：]\s*/i);
           items.push({
             id: `q${count}`,
             frage: parts[0]?.trim() ?? "",
