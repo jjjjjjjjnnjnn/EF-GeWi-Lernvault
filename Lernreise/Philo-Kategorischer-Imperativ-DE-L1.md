@@ -15,7 +15,7 @@ version: Lesson-v3
 
 <!-- Lesson-v3: 8 Schritte plus Anekdote und Fehlvorstellung; Fehlvorstellung zwischen Schritt 6 und 7 (Parser-Skip); interaktives [Werkzeug: <id>]; Gating: check/szenario nicht bestanden = Weiter gesperrt; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
-## Schritt 1 — entdecken
+## Schritt 1 — entdecken: Ziele & Phänomen-Einstieg
 
 ZIELE (drei messbare Ziele dieser Lektion):
 
@@ -25,7 +25,10 @@ ZIELE (drei messbare Ziele dieser Lektion):
 
 ### Hook / Phaenomen
 
-Darf man luegen, um einem Freund zu helfen, darf man schummeln, wenn alle es tun? Neigungen wechseln taeglich, doch Kant sucht eine Regel, die immer gilt. Was waere, wenn jeder so handeln duerfte wie du gerade jetzt? Genau diese Probe entscheidet ueber richtig und falsch.
+Stell dir vor, ein Wagen rast auf fuenf Menschen zu und du stehst an der Weiche und kannst den Wagen auf ein Gleis mit nur einer Person lenken, waehrend die Gruppe hinter dir ruft, dass Rechnen doch klar sei und fuenf Leben mehr zaehlten als eines. Gleichzeitig weisst du aus deiner Sozialisation in Familie und Schule und Freundeskreis, dass jeder Mensch Wuerde traegt und niemand zum blossen Mittel fuer andere gemacht werden darf. Genau hier kollidieren zwei Pruefungen desselben Falles: Die eine Bilanz zaehlt Lust und Leid fuer alle Betroffenen zusammen, die andere Pruefung fragt, ob deine Maxime als allgemeines Gesetz gewollt werden kann. In dieser Lektion lernst du den Mechanismus aus Bilanz und Probe und Abwaegung, damit du in der Klausur beide Brillen sauber trennst und dein Urteil an einem expliziten Kriterium begruendest.
+
+
+Ausgangslage aus der Vorlage: Darf man luegen, um einem Freund zu helfen, darf man schummeln, wenn alle es tun? Neigungen wechseln taeglich, doch Kant sucht eine Regel, die immer gilt. Was waere, wenn jeder so handeln duerfte wie du gerade jetzt? Genau diese Probe entscheidet ueber richtig und falsch.
 
 ### Fachbegriff & Definition
 
@@ -37,7 +40,7 @@ Der Mechanismus laeuft in drei Stufen: **Formulierung, Universalisierung, Urteil
 
 Klausur-Satz: `Der kategorische Imperativ verlangt, nur nach derjenigen Maxime zu handeln, durch die du zugleich wollen kannst, dass sie ein allgemeines Gesetz werde.`
 
-## Schritt 2 — entdecken
+## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
 
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
@@ -57,30 +60,34 @@ PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
 Die Begriffe greifen ineinander: Die **Maxime** liefert das Material, der **kategorische Imperativ** liefert die Pruefform $M \to G$. **Denkwiderspruch** begruendet vollkommene Pflichten wie Nichtluegen, **Wollenswiderspruch** begruendet unvollkommene Pflichten wie Hilfe. Die **Selbstzweckformel** sichert das Ergebnis gegen kalte Folgenrechnung ab. Wer in der Klausur prueft, muss deshalb immer fragen: Scheitert Denken oder Wollen, und bleibt die Wuerde gewahrt?
 
+Punkte-Hinweis: Nenne $Utilitarismus$ mit $U = \sum(Lust - Leid)$ und $Kategorischer Imperativ$ mit $M \to G$; erst beide Pruefungen plus Kriterium wie Menschenwuerde gibt volle Punkte.
+
 Klausur-Satz: `Eine Handlung gewinnt ihren moralischen Wert nicht aus den Folgen, sondern aus der Maxime, aus der sie hervorgeht.`
 
-## Schritt 3 — entdecken
+## Schritt 3 — entdecken: Kernkonzept & Wirkungsmodell
 
 TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
 ### Hook / Phaenomen
 
-Falsches Versprechen fuer schnelles Geld klingt harmlos, solange nur einer es tut. Doch was passiert, wenn alle es duerfen? Dann glaubt niemand mehr ein Versprechen, und der Trick wird unmoeglich. Der Einzelfall zerstoert seine eigene Bedingung, sobald er Gesetz wird.
+Luegen fuer den Freund — kleine Hilfe oder grosses Unrecht? Schummeln, wenn alle es tun — was waere, wenn jeder duerfte wie du?
 
-### Fachbegriff & Definition
+### Spiel-Aufgabe mit [Werkzeug: balance-board]
 
-Der **Universalisierungstest** prueft eine Maxime $M$ in vier Schritten auf Verallgemeinerbarkeit als Gesetz $G$. Er unterscheidet **Denkwiderspruch** und **Wollenswiderspruch** und ordnet sie vollkommenen und unvollkommenen **Pflichten** zu. Die Pruefregel lautet $Erlaubt(M) \iff Denkbar(G) + Wollbar(G)$. Nur was beide Proben besteht, ist moralisch erlaubt.
+Oeffne [Werkzeug: balance-board]. Lege Maxime $M = Versprechen + Bruch + Vorteil$ links auf. Gewichte rechts $Denkbar(G)$ und $Wollbar(G)$ von 1 bis 5. Universalisere zu $G = Alle(M)$ und beobachte: $Vertrauen = 0$ laesst $Versprechen = unmoeglich$ werden — Waage kippt zu Verbot.
 
-### Wirkungsgefuege / Modell
+### Aha-Moment & Gesetz
 
-Denke in Kausalkette: **Rekonstruktion, Probe, Einordnung**. Erstens wird $M = falsches Versprechen + Vorteil$ rekonstruiert. Zweitens wird $G = Alle brechen Versprechen$ gedacht: Dann gilt $Vertrauen = 0$ und $Versprechen = unmoeglich$, also $M \not\to G$ mit Denkwiderspruch. Drittens wird eingeordnet: Verbot als **vollkommene Pflicht**, ergaenzt durch die Selbstzweckformel $Mensch = Zweck + NiemalsBlossMittel$. Genau diese Strenge verlangt in der Klausur ein **kriteriengeleitetes Urteil**, keine Folgenbilanz.
+Aha-Moment: Rekonstruktion — Probe — Einordnung. Erstens $M$ praezise aus $Lage + Handlung + Zweck$. Zweitens $M \to G$ mit $G = Alle(M)$: Denkbarkeit oder Wollbarkeit scheitert. Drittens Pflicht aus Kriterium Widerspruchsfreiheit plus $Mensch = Zweck + NiemalsBlossMittel$. Gesetz: $Erlaubt(M) \iff Denkbar(G) + Wollbar(G)$.
 
 ```diagram
   Maxime M [Lage + Handlung + Zweck]
-  Maxime M -> Gesetz G = Alle(M)
-  Test G -> Denkbar + Wollbar
-  Test -> Urteil (Pflicht oder Verbot)
+  Maxime M -> Gesetz G [= Alle(M)]
+  Gesetz G -> Waage [Denkbar 1 bis 5 + Wollbar 1 bis 5]
+  Waage -> Urteil [Pflicht oder Verbot + Wuerde]
 ```
+
+Kausalkette: Fall schildern — Bilanz mit $U = \sum(Lust - Leid)$ gegen Probe mit $M \to G$ — Urteil am Kriterium Menschenwuerde; Abgrenzung zu $p_N(q) = p_A(q)$ mit $q_A - q_N$ und zu $Gini$ steht vor jeder Stellungnahme.
 
 Klausur-Satz: `Lässt sich die Maxime nicht widerspruchsfrei als allgemeines Gesetz denken oder wollen, so ist die Handlung pflichtwidrig.`
 
@@ -90,24 +97,24 @@ Der Überlieferung nach lebte Kant in Königsberg nach einem fast unveränderlic
 
 Bezug zum Konzept: `Das Beispiel zeigt, wie aus Beobachtung ein pruefbares Verfahren mit $x_1$ und $x_2$ entsteht.`
 
-## Schritt 4 — ausprobieren
+## Schritt 4 — ausprobieren: Interaktive Praxis & Urteils-Waage
 
 BEISPIEL (geleitete Aufgabe mit Werkzeug):
 
-[Werkzeug: balance]
+[Werkzeug: balance-board]
 
-AUFGABE (AFB II): Pruefen Sie die Maxime $M$: Ich mache ein falsches Versprechen, um einen Vorteil zu erhalten. Laesst sich $M$ als allgemeines Gesetz $G$ denken und wollen? Begruenden Sie das Ergebnis mit dem Kriterium der Widerspruchsfreiheit.
+Lege im Tool Pro- und Contra-Argumente auf die Waage und gewichte jedes Argument von 1 bis 5; veraendere die Gewichte Schritt fuer Schritt und beobachte, wann das Urteil zwischen Erlaubnis und Verbot oder zwischen Massnahme und Verzicht umschlaegt.
+
+AUFGABE Waage-Raetsel (AFB II): Pruefe auf [Werkzeug: balance-board] die Maxime $M$: falsches Versprechen fuer Vorteil. Lege $M$ auf, gewichte $Denkbar$ und $Wollbar$, universalisere zu $G$ und begruende Verbot oder Erlaubnis.
 
 HILFE:
-1. Schritt 1: Rekonstruiere den Fall und notiere die gegebenen Groessen $x_1$ und $x_2$.
-2. Schritt 2: Wende die Leitformel an und berechne $d = x_2 - x_1$.
-3. Schritt 3: Deute das Ergebnis am Kriterium und formuliere den Klausur-Satz.
+1. Schritt 1: Formuliere $M$ aus Lage, Handlung, Zweck. 2. Schritt 2: Denke $G = Alle(M)$, pruefe $M \to G$. 3. Schritt 3: Ordne Denkwiderspruch oder Wollenswiderspruch zu, deute an Widerspruchsfreiheit und formuliere den Klausur-Satz.
 
-MUSTERLOESUNG: Als allgemeines Gesetz $G$ wuerde $M$ die Institution des Versprechens zerstoeren; das Versprechen waere zugleich noetig und unmoeglich. Es gilt $M \not\to G$: Die Maxime faellt durch die Universalisierung und ist daher verboten.
+MUSTERLOESUNG: Als $G$ zerstoert $M$ die Institution: Versprechen zugleich noetig und unmoeglich — $M \not\to G$ mit Denkwiderspruch. Daher vollkommene Pflicht zum Nichtluegen, bestaetigt durch $Mensch = Zweck$.
 
 Klausur-Satz: `Die Maxime des gebrochenen Versprechens zerstört universalisiert den Begriff des Versprechens selbst und verstößt damit gegen eine vollkommene Pflicht.`
 
-## Schritt 5 — ausprobieren
+## Schritt 5 — ausprobieren: Verfahrensvergleich & Abgrenzung
 
 VERGLEICH (Wahl des Verfahrens, A gegen B):
 
@@ -122,7 +129,7 @@ ANTWORT: Aufgabe A erfordert Verfahren (i), weil eine Rangfolge aus der Form gen
 
 Klausur-Satz: `Der Denkwiderspruch begründet vollkommene Pflichten, der Wollenswiderspruch unvollkommene Pflichten wie die Hilfeleistung.`
 
-## Schritt 6 — check
+## Schritt 6 — check: Verständnisprüfung
 
 CHECK (drei Fragen mit Antworten):
 
@@ -142,7 +149,7 @@ Klausur-Satz: `Kant prüft die Maxime auf Denk- und Wollenswiderspruch und schü
 2. Fehlkonzept: Ein einzelner Wert wie $Gini$ oder $p_G$ spreche bereits fuer sich und brauche kein Kriterium.
    Korrektur-Satz: `Erst die Deutung der Kennzahl am Kriterium mit $d = x_2 - x_1$ ergibt ein klausurtaugliches Urteil.`
 
-## Schritt 7 — szenario
+## Schritt 7 — szenario: Klausurtransfer & Rubric
 
 ROLLE: Du bist Mitglied im Ethikrat deiner Schule und sollst in einer Sitzung zur „Ehrlichkeit im Schulalltag" Stellung nehmen.
 SITUATION: Ein Mitschüler schlägt vor, bei einer anstehenden Klausur zu schummeln, weil der Druck sonst zu groß sei und allen damit geholfen wäre. Beurteile diesen Vorschlag in einer zusammenhängenden Stellungnahme (ca. 150 Wörter), indem du die Maxime des Schummelns nach dem Vier-Schritte-Schema prüfst und mit der Selbstzweckformel abschließend urteilest.
@@ -152,7 +159,7 @@ RUBRIC (30 XP): Formulierung der Maxime des Schummelns (5 XP) | Durchführung de
 AUFGABE (AFB III): Verfasse eine zusammenhaengende Darstellung von etwa 150 Woertern mit Kriterium, Anwendung und Urteil.
 RUBRIC (30 XP): These mit Kriterium (5 XP) | Rekonstruktion mit $x_1$, $x_2$ (10 XP) | Anwendung mit $d = x_2 - x_1$ (10 XP) | Fazit mit Fachbegriffen (5 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY (Kernbotschaft in einem Kasten):
 

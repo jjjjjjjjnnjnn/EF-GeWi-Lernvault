@@ -15,7 +15,7 @@ version: Lesson-v3
 
 <!-- Lesson-v3: 8 Schritte plus Anekdote und Fehlvorstellung; Fehlvorstellung zwischen Schritt 6 und 7 (Parser-Skip); interaktives [Werkzeug: <id>]; Gating: check/szenario nicht bestanden = Weiter gesperrt; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
-## Schritt 1 — entdecken
+## Schritt 1 — entdecken: Ziele & Phänomen-Einstieg
 
 ZIELE (drei messbare Ziele dieser Lektion):
 
@@ -25,7 +25,10 @@ ZIELE (drei messbare Ziele dieser Lektion):
 
 ### Hook / Phaenomen
 
-Ein Fohlen steht wenige Stunden nach der Geburt auf und folgt der Herde, ein Menschenbaby kann erst nach etwa einem Jahr laufen und bleibt jahrelang hilflos. Der Mensch startet biologisch unfertig, ohne Fell, ohne scharfe Zaehne, ohne fertige Instinkte. Ist diese Unfertigkeit ein Nachteil oder genau der Grund fuer Kultur, Sprache und Freiheit?
+Stell dir vor, ein Wagen rast auf fuenf Menschen zu und du stehst an der Weiche und kannst den Wagen auf ein Gleis mit nur einer Person lenken, waehrend die Gruppe hinter dir ruft, dass Rechnen doch klar sei und fuenf Leben mehr zaehlten als eines. Gleichzeitig weisst du aus deiner Sozialisation in Familie und Schule und Freundeskreis, dass jeder Mensch Wuerde traegt und niemand zum blossen Mittel fuer andere gemacht werden darf. Genau hier kollidieren zwei Pruefungen desselben Falles: Die eine Bilanz zaehlt Lust und Leid fuer alle Betroffenen zusammen, die andere Pruefung fragt, ob deine Maxime als allgemeines Gesetz gewollt werden kann. In dieser Lektion lernst du den Mechanismus aus Bilanz und Probe und Abwaegung, damit du in der Klausur beide Brillen sauber trennst und dein Urteil an einem expliziten Kriterium begruendest.
+
+
+Ausgangslage aus der Vorlage: Ein Fohlen steht wenige Stunden nach der Geburt auf und folgt der Herde, ein Menschenbaby kann erst nach etwa einem Jahr laufen und bleibt jahrelang hilflos. Der Mensch startet biologisch unfertig, ohne Fell, ohne scharfe Zaehne, ohne fertige Instinkte. Ist diese Unfertigkeit ein Nachteil oder genau der Grund fuer Kultur, Sprache und Freiheit?
 
 ### Fachbegriff & Definition
 
@@ -37,7 +40,7 @@ Der Mechanismus laeuft in drei Stufen: **Mangel, Druck, Kompensation**. Erstens 
 
 Klausur-Satz: `Die philosophische Anthropologie fragt, ob sich der Mensch vom Tier nur graduell oder kategorial unterscheidet und worin seine besondere Stellung begründet liegt.`
 
-## Schritt 2 — entdecken
+## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
 
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
@@ -57,30 +60,34 @@ Ohne scharfe Begriffe wird jede Anthropologie-Klausur zum Ratespiel. Wer **Maeng
 
 Die Begriffe greifen ineinander: **Maengelwesen** verlangt **Institutionen** als zweite Natur, weil $Handeln = Kompensation(Mangel)$ gilt. **Weltoffenheit** verlangt **Geist**, weil nur die Person mit $Geist > Trieb$ sich distanzieren kann. Die **Sonderstellung** entsteht also auf zwei Wegen: einmal als Notloesung der Biologie, einmal als Freiheit des Geistes. Wer in der Klausur vergleicht, muss deshalb immer fragen: Erklaert der Autor aus Mangel oder aus Geist?
 
+Punkte-Hinweis: Nenne $Utilitarismus$ mit $U = \sum(Lust - Leid)$ und $Kategorischer Imperativ$ mit $M \to G$; erst beide Pruefungen plus Kriterium wie Menschenwuerde gibt volle Punkte.
+
 Klausur-Satz: `Nach Gehlen ist der Mensch ein biologisch unfertiges Mängelwesen, das seine Instinktarmut durch Kultur und Institutionen kompensiert.`
 
-## Schritt 3 — entdecken
+## Schritt 3 — entdecken: Kernkonzept & Wirkungsmodell
 
 TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
 ### Hook / Phaenomen
 
-Zwei Denker, ein Befund, entgegengesetzte Erklaerung: Gehlen sieht ein armes Tier, das Kultur erfinden muss, Scheler sieht ein geistiges Wesen, das Welt erschliessen kann. Beide stimmen zu, dass der Mensch besonders ist, aber sie meinen voellig Verschiedenes. Der Vergleich entscheidet, welche Begruendung tragfaehiger ist.
+Maengeltier oder Geistwesen — Trolley ohne Instinkt? Kein Fell, keine Krallen — doch Weltoffenheit ohne Grenze?
 
-### Fachbegriff & Definition
+### Spiel-Aufgabe mit [Werkzeug: balance-board]
 
-Das **Vergleichsmodell Gehlen gegen Scheler** prueft zwei Begruendungen der Sonderstellung an drei Dimensionen: Ausgang, Mechanismus und Menschenbild. Gehlen startet bei $Biologie = Mangel$ und endet bei **Entlastung durch Institutionen**. Scheler startet bei $Akt = Geist$ und endet bei **Weltoffenheit und Transzendenz**. Der Unterschied liegt in der Richtung: Kompensation von unten oder Freiheit von oben.
+Oeffne [Werkzeug: balance-board]. Lege links Gehlen mit $Mangel + Kompensation$, rechts Scheler mit $Geist + Weltoffenheit$. Gewichte Instinktarmut, Handeln, Institutionen gegen Geist, Person, Transzendenz von 1 bis 5. Beobachte, wann $Kultur = zweiteNatur$ die Waage senkt.
 
-### Wirkungsgefuege / Modell
+### Aha-Moment & Gesetz
 
-Denke in Kausalkette: **Befund, Deutung, Folge**. Erstens lautet der Befund $Unfertigkeit > Tierstandard$ mit langem $Aufwachsen = Abhaengigkeit$. Zweitens deutet Gehlen als $Kultur = Notwenigkeit(Mangel)$ und Scheler als $Welt = Leistung(Geist)$. Drittens folgt das Urteil nach **Erklaerungskraft**: Gehlen erklaert Institutionen plausibel, Scheler erklaert Freiheit und Wuerde staerker. Genau diese Spannung verlangt in der Klausur ein **kriteriengeleitetes Urteil**, keine blosse Zusammenfassung.
+Aha-Moment: Mangel — Ausgleich — Ueberstieg. Erstens gleicht Handeln mit $Institution = Entlastung$ den Mangel aus. Zweitens oeffnet $Geist$ Welt ueber Umwelt hinaus. Drittens urteilt Kriterium Sonderstellung: naturalistisch gegen metaphysisch. Gesetz: $Mensch = Mangel + Kultur = Geist + Welt$.
 
 ```diagram
-  Befund [Unfertigkeit + Weltoffenheit]
-  Befund -> Gehlen M = Mangel + Institution
-  Befund -> Scheler Person = Geist + Weltoffenheit
-  Vergleich -> Urteil (Erklaerungskraft)
+  Mensch [Mangel + Weltoffenheit]
+  Mensch -> Waage [Gehlen vs Scheler + Gewichte 1 bis 5]
+  Waage -> Ausgleich [$Kultur = zweiteNatur$ + $Geist$]
+  Ausgleich -> Urteil [naturalistisch vs metaphysisch]
 ```
+
+Kausalkette: Fall schildern — Bilanz mit $U = \sum(Lust - Leid)$ gegen Probe mit $M \to G$ — Urteil am Kriterium Menschenwuerde; Abgrenzung zu $p_N(q) = p_A(q)$ mit $q_A - q_N$ und zu $Gini$ steht vor jeder Stellungnahme.
 
 Klausur-Satz: `Während Gehlen die Sonderstellung naturalistisch aus dem Mangel und der kulturellen Kompensation erklärt, begründet Scheler sie metaphysisch aus Geist und Weltoffenheit.`
 
@@ -90,24 +97,24 @@ Vergleicht man neugeborene Tiere mit Menschenkindern, fällt ein krasser Untersc
 
 Bezug zum Konzept: `Das Beispiel zeigt, wie aus Beobachtung ein pruefbares Verfahren mit $x_1$ und $x_2$ entsteht.`
 
-## Schritt 4 — ausprobieren
+## Schritt 4 — ausprobieren: Interaktive Praxis & Urteils-Waage
 
 BEISPIEL (geleitete Aufgabe mit Werkzeug):
 
-[Werkzeug: lego]
+[Werkzeug: balance-board]
 
-AUFGABE (AFB II): Stellen Sie Gehlens These vom Menschen als Mangelwesen ($M = Mangelwesen + Institutionen$) und Schelers These von der geistigen Weltoffenheit ($Person = Geist + Weltoffenheit$) gegenueber. Beurteilen Sie, welche Position die Sonderstellung ueberzeugender begruendet.
+Lege im Tool Pro- und Contra-Argumente auf die Waage und gewichte jedes Argument von 1 bis 5; veraendere die Gewichte Schritt fuer Schritt und beobachte, wann das Urteil zwischen Erlaubnis und Verbot oder zwischen Massnahme und Verzicht umschlaegt.
+
+AUFGABE Waage-Raetsel (AFB II): Lege Gehlen gegen Scheler auf [Werkzeug: balance-board]. Gewichte $Mangel$, $Handeln$, $Institution$ gegen $Geist$, $Weltoffenheit$, $Person$ und entscheide per Begruendung, welche Deutung staerker traegt.
 
 HILFE:
-1. Schritt 1: Rekonstruiere den Fall und notiere die gegebenen Groessen $x_1$ und $x_2$.
-2. Schritt 2: Wende die Leitformel an und berechne $d = x_2 - x_1$.
-3. Schritt 3: Deute das Ergebnis am Kriterium und formuliere den Klausur-Satz.
+1. Schritt 1: Rekonstruiere beide Positionen mit je zwei Belegen. 2. Schritt 2: Gewichte 1 bis 5 auf der Waage. 3. Schritt 3: Deute an Sonderstellung und formuliere den Klausur-Satz.
 
-MUSTERLOESUNG: Gehlen leitet aus $M = Mangelwesen + Institutionen$ die Notwendigkeit entlastender Institutionen ab. Scheler setzt $Person = Geist + Weltoffenheit$ und begruendet den $Rang > Instinkt$ geisttheoretisch. Das Urteil wuerdigt beide Ansaetze und markiert ihre Grenzen.
+MUSTERLOESUNG: Gehlen ueberzeugt bei Entlastung durch Institutionen mit $Kultur = zweiteNatur$; Scheler bei $Geist$ als Weltueberstieg. Waage kippt je nach Kriterium: naturalistisch erklaert Kompensation, metaphysisch begruendet Wuerde.
 
 Klausur-Satz: `Der Mensch kompensiert seine organische Mittellosigkeit, indem er durch Handeln und Institutionen eine zweite, kulturelle Natur schafft.`
 
-## Schritt 5 — ausprobieren
+## Schritt 5 — ausprobieren: Verfahrensvergleich & Abgrenzung
 
 VERGLEICH (Wahl des Verfahrens, A gegen B):
 
@@ -122,7 +129,7 @@ ANTWORT: Aufgabe A erfordert Verfahren (i), weil eine Rangfolge aus der Form gen
 
 Klausur-Satz: `Gehlen begründet die Sonderstellung aus dem Mangel, Scheler aus dem Geist — beide bejahen die Sonderstellung, aber auf ganz verschiedenen Wegen.`
 
-## Schritt 6 — check
+## Schritt 6 — check: Verständnisprüfung
 
 CHECK (drei Fragen mit Antworten):
 
@@ -142,7 +149,7 @@ Klausur-Satz: `Beide Denker bejahen eine Sonderstellung des Menschen, begründen
 2. Fehlkonzept: Ein einzelner Wert wie $Gini$ oder $p_G$ spreche bereits fuer sich und brauche kein Kriterium.
    Korrektur-Satz: `Erst die Deutung der Kennzahl am Kriterium mit $d = x_2 - x_1$ ergibt ein klausurtaugliches Urteil.`
 
-## Schritt 7 — szenario
+## Schritt 7 — szenario: Klausurtransfer & Rubric
 
 ROLLE: Du bist Referent in einem Schulprojekt „Mensch und Tier" und sollst auf einer Podiumsdiskussion die Frage beantworten, ob der Mensch eine moralische Sonderstellung gegenüber Tieren hat.
 SITUATION: Ein Teil des Publikums beruft sich auf die Vernunft des Menschen, ein anderer Teil verweist auf die Leidensfähigkeit von Tieren und bestreitet jede Sonderstellung. Beurteile in einer zusammenhängenden Stellungnahme (ca. 150 Wörter), ob eine moralische Sonderstellung rational haltbar ist, und beziehe Gehlen, Scheler und die tierethische Kritik (z. B. Singer) ein.
@@ -152,7 +159,7 @@ RUBRIC (30 XP): Rekonstruktion einer Position zur Sonderstellung (5 XP) | Vergle
 AUFGABE (AFB III): Verfasse eine zusammenhaengende Darstellung von etwa 150 Woertern mit Kriterium, Anwendung und Urteil.
 RUBRIC (30 XP): These mit Kriterium (5 XP) | Rekonstruktion mit $x_1$, $x_2$ (10 XP) | Anwendung mit $d = x_2 - x_1$ (10 XP) | Fazit mit Fachbegriffen (5 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY (Kernbotschaft in einem Kasten):
 

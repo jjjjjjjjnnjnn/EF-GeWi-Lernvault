@@ -15,7 +15,7 @@ version: Lesson-v3
 
 <!-- Lesson v3 9步制架构：Schritt 1至8固定结构；Fehlvorstellung 夹在 Schritt 6 与 7 之间（Parser 自动跳过，不占步数）；支持内嵌 [Werkzeug: <id>] 交互教具；Gating: check/szenario 未过 = Weiter 置灰；XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
-## Schritt 1 — entdecken
+## Schritt 1 — entdecken: Ziele & Phänomen-Einstieg
 
 ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
@@ -25,9 +25,20 @@ ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
 Voraussetzung（窄切口）：只做 Leviathan/Two Treatises/Contrat social 主线，不展开联邦制；已会 Naturzustand 定义。
 
+
+Hook中文生活切入:
+
+想象宿舍断电断网三天:第一天靠自觉排队打水,第二天开始有人插队藏水,第三天就得选个舍长立规矩,不服就扣分,大伙让渡一点自由换 collective 安宁。社会契约论追问的正是这件事:自然状态有多糟,人民交出多少权利,统治者凭什么合法,霍布斯、洛克、卢梭给出三份不同合同。
+
+Phaenomen-Satz (DE): Ohne Regeln kaempfen alle, mit Vertrag gehorchen alle, doch wem?
+
+中文机制铺垫:霍布斯从一切人对一切人的战争推出利维坦式全权让渡,洛克从自然权利推出有限信托政府加反抗权,卢梭从公意推出主权在民;比较轴是自然状态、人性、让渡范围与反抗条件,答题必须三人同题对照。
+
+Mechanismus-Satz (DE): Hobbes gibt alles fuer Sicherheit, Locke wenig fuer Freiheit, Rousseau alles an alle.
+
 Klausur-Satz: `Hobbes opfert Freiheit fuer Sicherheit, Locke sichert Eigentum durch Gewaltenteilung, Rousseau sucht Freiheit im Gemeinwillen.`
 
-## Schritt 2 — entdecken
+## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
 
 PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
 
@@ -41,20 +52,35 @@ PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→�
 
 Klausur-Satz: `Der Vertrag legitimiert Herrschaft durch Zustimmung, begrenzt sie aber je nach Autor anders.`
 
-## Schritt 3 — entdecken
+## Schritt 3 — entdecken: Kernkonzept & Wirkungsmodell
 
-ENTDECKEN（1概念 + 1文字图解）：
+ENTDECKEN（1概念 + 1文字图解，中文在上、德语在下）：
 
-中文：三人共用"自然状态→契约→国家"模具，填料不同。Hobbes：自然状态是 bellum omnium（人对人狼），理性要求交出全部自保权换和平，主权不可分、不可收回。Locke：自然状态有自然法但缺法官，交出的是执行权而非全部自由，政府违约可反抗，加 Gewaltenteilung。Rousseau：私有制腐化自然人，契约把个人意志熔成公意，服从公意即服从自己（Freiheit durch Selbstgesetzgebung）。比较句式：同是契约，在 X 上同、在 Y 上异，原因是 Menschenbild 不同。
+Hook中文生活切入：
+
+中文：想象宿舍半夜立规矩：怕丢东西的要锁门-resp-怕被管的要钥匙人人有、理想主义的要大事投票。Hobbes、Locke、Rousseau 吵的正是这一架。
+
+Phaenomen-Satz (DE): Gleicher Vertrag, anderes Menschenbild, andere Grenze.
+
+Spiel-Aufgabe沙盒操作指引：
+
+中文：打开沙盒，把滑块推向自然状态、安全、财产与公意（关键词：Naturzustand, Vertragszweck, Grenze, Gemeinwille），看三家的权力天花板如何升降。
+
+Beobachtungs-Satz (DE): Hobbes deckelt oben absolut, Locke begrenzt, Rousseau bindet an alle.
+
+Aha-Moment因果链：
+
+中文因果链：三家共享契约模型即以同意立合法性，分歧全在人性假设：Hobbes 视人为互害故需利维坦，Locke 视人为理性业主故需分权护产，Rousseau 视人为可塑公民故需公意自治；目的不同，边界必然不同。
+
+Gesetz-Satz (DE): Naturzustand, Vertragszweck und Grenze trennen die drei Theorien.
 
 文字图解（ASCII 结构图，App支持解析渲染）：
 
 ```diagram
-  Hobbes: Krieg aller ──Sicherheit──> Leviathan (absolut, unwiderrufbar)
-  Locke:  Unbequemlichkeit ──Eigentum──> Treuhaender-Regierung (teilbar, widerrufbar)
-  Rousseau: Verderbnis ──Gemeinwohl──> volonte generale (unveraeusserlich)
+Hobbes: Angst -> Sicherheit -> absolut (Freiheit abgeben)
+Locke: Eigentum -> Schutz -> geteilt (Gewaltenteilung)
+Rousseau: Entfremdung -> Gemeinwille -> rueckgebunden
 ```
-
 Klausur-Satz: `Gleiches Vertragsmodell, anderes Menschenbild, andere Herrschaftsgrenze.`
 
 ## Anekdote & Fun-Fact
@@ -65,24 +91,31 @@ Klausur-Satz: `Gleiches Vertragsmodell, anderes Menschenbild, andere Herrschafts
 
 **Bezug zum Konzept**: `Der Buergerkrieg schreibt bei Hobbes mit, die Republik bei Rousseau.`
 
-## Schritt 4 — ausprobieren
+## Schritt 4 — ausprobieren: Interaktive Praxis & Labor
 
-BEISPIEL（正确例题示范，含教具操作与解答）：
+[Werkzeug: balance-board]
 
-[Werkzeug: vergleich]
+BEISPIEL（正确例题示范，含教具操作与解答，中文在上、德语在下）：
 
-AUFGABE (vergleichen, AFB II)：Vergleichen Sie Hobbes und Locke in Naturzustand, Vertragszweck und Widerstandsrecht.
+AUFGABE中文导读（比较谜题）：Hobbes 挺绝对权力、Locke 要有限权力。请从人性假设推出两者分野并判谁更能自我设限。
 
-HILFE:
-1. Schritt 1: Drei Vergleichsdimensionen als Tabelle anlegen.
-2. Schritt 2: Pro Dimension Gemeinsamkeit und Unterschied nennen.
-3. Schritt 3: Mit Menschenbild erklaeren und Fazit ziehen.
+AUFGABE (vergleichen, AFB II/III): Hobbes legitimiert absolute, Locke begrenzte Herrschaft. Leiten Sie den Unterschied aus dem Menschenbild ab.
 
-MUSTERLÖSUNG: Naturzustand: Beide starten ohne Staat, doch bei Hobbes herrscht Krieg aus Misstrauen und Konkurrenz, bei Locke herrscht Unbequemlichkeit trotz natuerlichen Rechts — gemeinsam ist die Unsicherheit, verschieden die Moral. Vertragszweck: Hobbes will Frieden um jeden Preis und uebertraegt alle Rechte; Locke will Eigentum (Leben, Freiheit, Besitz) sichern und uebertraegt nur die Exekutive treuhaenderisch. Widerstandsrecht: Hobbes verneint es (Rueckfall in Krieg), Locke bejaht es bei Vertrauensbruch. Fazit: Wo Hobbes den Menschen als sicherheitsbeduerftig, sieht Locke ihn als vernunftfaehig — daher absolut gegen begrenzt.
+HILFE（中德双语步骤）：
 
+1. 中文：第1步列三要素：自然状态、目的、边界，关键词：Tabelle。
+   Schritt 1 (DE): Naturzustand, Zweck, Grenze je Autor.
+2. 中文：第2步推：互害假设推绝对，业主假设推分权，关键词：Folgerung。
+   Schritt 2 (DE): Menschenbild bestimmt Herrschaftsgrenze.
+3. 中文：第3步判：能自我设限者胜，关键词：Massstab。
+   Schritt 3 (DE): Beurteilung braucht einen Massstab.
+
+MUSTERLOESUNG：中文：Hobbes 的互害人性只能拿绝对安全来换，Locke 的理性业主则可用分权护产；以前者为尺 Hobbes 胜，以限权为尺 Locke 胜，判分取决于你亮出的标尺。
+
+MUSTERLOESUNG (DE): Hobbes legitimiert absolute, Locke begrenzte Herrschaft; der Unterschied folgt aus dem Menschenbild: Furcht verlangt Leviathan, Eigentum verlangt Teilung. Vergleich rekonstruiert, Beurteilung braucht einen Massstab.
 Klausur-Satz: `Hobbes legitimiert absolute, Locke begrenzte Herrschaft; der Unterschied folgt aus dem Menschenbild.`
 
-## Schritt 5 — ausprobieren
+## Schritt 5 — ausprobieren: Verfahrensvergleich & Abgrenzung
 
 VERGLEICH辨别实验（双向辨析：同异分述 vs 问题导向）：
 
@@ -97,7 +130,7 @@ ANTWORT: A erfordert Verfahren (i): Vollstaendige Tabelle ueber Naturzustand, Ve
 
 Klausur-Satz: `Vergleich rekonstruiert, Beurteilung braucht einen Massstab.`
 
-## Schritt 6 — check
+## Schritt 6 — check: Verständnisprüfung
 
 CHECK检索默写（自测 3 题，与答案配对）：
 
@@ -119,13 +152,13 @@ Klausur-Satz: `Naturzustand, Vertragszweck und Grenze trennen die drei Theorien.
    中文纠偏：公意是公共利益方向，可错投；多数决只是发现程序，会错，需公共审议纠正。
    Korrektur-Satz: `Die volonte generale zielt aufs Gemeinwohl, nicht auf die Mehrheit als Zahl.`
 
-## Schritt 7 — szenario
+## Schritt 7 — szenario: Klausurtransfer & Rubric
 
 ROLLE: Du berätst eine Schulverfassung zur Handyregel.
 SITUATION: Die Schulleitung will Anordnung, die Schueler wollen Mitbestimmung. Begruende in einer zusammenhaengenden Stellungnahme (ca. 150 Woerter) mit Hobbes, Locke und Rousseau, welche Regelsetzung legitim waere.
 RUBRIC (30 XP): Drei Positionen korrekt zugeordnet (12 XP) | Abwaegung mit Gemeinwohl-Kriterium (10 XP) | Eigener Verfahrensvorschlag (4 XP) | Adressatengerechte Sprache (4 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY 1盒（核心总结）：
 

@@ -15,7 +15,7 @@ version: Lesson-v3
 
 <!-- Lesson v3 9步制架构：Schritt 1至8固定结构；Fehlvorstellung 夹在 Schritt 6 与 7 之间（Parser 自动跳过，不占步数）；支持内嵌 [Werkzeug: <id>] 交互教具；Gating: check/szenario 未过 = Weiter 置灰；XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
-## Schritt 1 — entdecken
+## Schritt 1 — entdecken: Ziele & Phänomen-Einstieg
 
 ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
@@ -25,9 +25,20 @@ ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
 Voraussetzung（窄切口）：只做 Libet 1983 经典范式，不展开 Soon 等 fMRI 后续；已会 Determinismus 定义。
 
+
+Hook中文生活切入:
+
+想象你举手回答问题:你觉得是想好了才举手,可脑扫描显示大脑在你意识到想举手之前就已经开始准备,仿佛身体先投票、意识后宣布。利贝特实验扔下的正是这颗炸弹:如果决定先于意识,自由意志是真的还是大脑编的故事,道德责任往哪里放。
+
+Phaenomen-Satz (DE): Das Gehirn hebt die Hand, bevor das Ich es merkt.
+
+中文机制铺垫:利贝特的准备电位挑战了传统自由观,相容论把自由重定义为按自身动机行动而非摆脱因果,非相容论坚持决定论与自由互斥;答题先摆实验事实,再分两种自由定义,最后谈责任:可预测不等于可免责。
+
+Mechanismus-Satz (DE): Bereitschaftspotenzial vor Bewusstsein, doch Gruende bleiben zurechenbar.
+
 Klausur-Satz: `Libets Bereitschaftspotenzial stellt die bewusste Urheberschaft infrage, ohne sie allein zu widerlegen.`
 
-## Schritt 2 — entdecken
+## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
 
 PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
 
@@ -41,21 +52,35 @@ PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→�
 
 Klausur-Satz: `Kompatibilisten verstehen Freiheit als Handeln aus eigenen Gruenden, nicht als Ursachenlosigkeit.`
 
-## Schritt 3 — entdecken
+## Schritt 3 — entdecken: Kernkonzept & Wirkungsmodell
 
-ENTDECKEN（1概念 + 1文字图解）：
+ENTDECKEN（1概念 + 1文字图解，中文在上、德语在下）：
 
-中文：利贝特让被试"随意"动手腕并报告"想动"时刻，脑电显示准备电位早于意识约三分之一秒。挑战句：意识只是事后盖章。两条防线：实验批判——实验室"随意动"不等于道德抉择（Trolley、 Versprechen），且时间报告法误差大；概念辨析——自由未必是"无因发起"，也可以是"按理由行动且能 veto"。EF 高频论证链：先重构实验，再给最强反驳，最后落回责任（Verantwortung braucht Gruende, nicht Ursachenlosigkeit）。
+Hook中文生活切入：
+
+中文：想象你说再来一局时，脑扫描显示大脑比你早零点几秒动手：到底是你按的手，还是手按的你？Libet 把这口锅端上了桌。
+
+Phaenomen-Satz (DE): Das Gehirn startet, das Ich folgt.
+
+Spiel-Aufgabe沙盒操作指引：
+
+中文：打开沙盒，把滑块推向时间差、实验设计与自由定义（关键词：Bereitschaftspotenzial, Ursachenlosigkeit, Gruende, Verantwortung），看自由在哪一格幸存。
+
+Beobachtungs-Satz (DE): Libet trifft Ursachenlosigkeit, nicht Handeln aus Gruenden.
+
+Aha-Moment因果链：
+
+中文因果链：Libet 只证明无意识准备电位先行，驳掉的是无因自由这种最强版本；相容论把自由重定义为按自身理由行动，实验设计又多为掰手腕式微决策，外推到道德责任即犯了范畴跳跃。
+
+Gesetz-Satz (DE): Der Zeitvorsprung ist ein Befund, seine Deutung als Widerlegung eine These.
 
 文字图解（ASCII 结构图，App支持解析渲染）：
 
 ```diagram
-  Zeit: Bereitschaftspotenzial ──0,3 s──> bewusstes Wollen ──> Handlung
-  Libet-Schluss: Gehirn entscheidet zuerst
-  Gegenweg 1 (Experiment): Labor-Wackeln != moralische Wahl
-  Gegenweg 2 (Begriff): Freiheit = Gruenden folgen + Veto
+Libet: Bereitschaftspotenzial -> (300ms) -> bewusste Entscheidung
+Inkompatibilismus: Vorsprung = unfrei | Kompatibilismus: Gruende = frei
+Kritik: Mikro-Modell, Deutungssprung
 ```
-
 Klausur-Satz: `Aus dem Zeitvorsprung des Gehirns folgt logisch noch keine Widerlegung moralischer Verantwortung.`
 
 ## Anekdote & Fun-Fact
@@ -66,24 +91,31 @@ Klausur-Satz: `Aus dem Zeitvorsprung des Gehirns folgt logisch noch keine Widerl
 
 **Bezug zum Konzept**: `Freiheit als Veto rettet Verantwortung ohne Ursachenlosigkeit zu behaupten.`
 
-## Schritt 4 — ausprobieren
+## Schritt 4 — ausprobieren: Interaktive Praxis & Labor
 
-BEISPIEL（正确例题示范，含教具操作与解答）：
+[Werkzeug: balance-board]
 
-[Werkzeug: argument]
+BEISPIEL（正确例题示范，含教具操作与解答，中文在上、德语在下）：
 
-AUFGABE (rekonstruieren, AFB II)：Rekonstruieren Sie Libets Experiment und pruefen Sie, ob es Willensfreiheit widerlegt.
+AUFGABE中文导读（反驳谜题）：有人拿 Libet 说道德责任已死。请区分模型批评与概念反驳两路，给出保卫责任的论证。
 
-HILFE:
-1. Schritt 1: Aufbau (Uhr, Handgelenk, EEG) und Befund (0,3 s) nennen.
-2. Schritt 2: Libets Deutung (Gehirn zuerst) formulieren.
-3. Schritt 3: Zwei Einwaende plus eigenes Urteil geben.
+AUFGABE (eroertern, AFB III): Widerlegen Sie die These, Libet habe Verantwortung erledigt: Experimentkritik plus Begriffsarbeit.
 
-MUSTERLÖSUNG: Versuchspersonen bewegen willkuerlich das Handgelenk und melden per Uhrzeiger, wann der Willensentschluss bewusst wurde; das Bereitschaftspotenzial setzt ca. 0,3 s frueher ein. Libet deutet dies als unbewusste Initiierung. Dagegen spricht erstens die externe Validitaet: Eine bedeutungslose Laborbewegung ohne Gruende und Folgen ist kein Modell moralischer Entscheidungen. Zweitens der Begriffseinwand: Versteht man Freiheit kompatibilistisch als Handeln aus eigenen Gruenden plus Vetofaehigkeit, bleibt Verantwortung moeglich, selbst wenn Initiierung unbewusst beginnt. Urteil: Das Experiment erschuettert ein naives Ursachenlosigkeitsbild, widerlegt aber Verantwortung im kompatibilistischen Sinn nicht.
+HILFE（中德双语步骤）：
 
+1. 中文：第1步摆事实：脑先行零点几秒，不多不少，关键词：Befund。
+   Schritt 1 (DE): Bereitschaftspotenzial als Befund sichern.
+2. 中文：第2步批模型：微决策推不到道德抉择，关键词：Modell。
+   Schritt 2 (DE): Experimentkritik trifft das Modell.
+3. 中文：第3步转概念：自由即按理由行动，关键词：Begriff。
+   Schritt 3 (DE): Begriffsarbeit rettet Verantwortung.
+
+MUSTERLOESUNG：中文：脑先行是事实，但实验只是掰手腕级微决策；自由若指按自身理由行动，则时间差毫发无伤；把脑电波直接判道德死刑，是从事实跳到价值的犯规。
+
+MUSTERLOESUNG (DE): Libet widerlegt hoechstens Ursachenlosigkeit, nicht verantwortliches Handeln aus Gruenden. Experimentkritik trifft das Modell, Begriffsarbeit die These.
 Klausur-Satz: `Libet widerlegt hoechstens Ursachenlosigkeit, nicht verantwortliches Handeln aus Gruenden.`
 
-## Schritt 5 — ausprobieren
+## Schritt 5 — ausprobieren: Verfahrensvergleich & Abgrenzung
 
 VERGLEICH辨别实验（双向辨析：实验批判 vs 概念辨析）：
 
@@ -98,7 +130,7 @@ ANTWORT: A erfordert Verfahren (i): Anzugreifen sind Reliabilitaet der Willensze
 
 Klausur-Satz: `Experimentkritik trifft das Modell, Begriffsarbeit die These.`
 
-## Schritt 6 — check
+## Schritt 6 — check: Verständnisprüfung
 
 CHECK检索默写（自测 3 题，与答案配对）：
 
@@ -120,13 +152,13 @@ Klausur-Satz: `Der Zeitvorsprung des Gehirns ist ein Befund, seine Deutung als F
    中文纠偏：这是 libertarische 狭义定义；相容论把自由定为按理由行动，决定论下仍可成立，责任也随之保留。
    Korrektur-Satz: `Freiheit kann Gruenden-Folgen heissen statt Ursachenlosigkeit.`
 
-## Schritt 7 — szenario
+## Schritt 7 — szenario: Klausurtransfer & Rubric
 
 ROLLE: Du schreibst einen Leserbrief zur Schlagzeile Hirnforschung beweist Unfreiheit.
 SITUATION: Die Redaktion vermischt Befund und Deutung. Richtigstellung in einer zusammenhaengenden Stellungnahme (ca. 150 Woerter): Was zeigt Libet wirklich, und was folgt daraus fuer Schuld und Verantwortung?
 RUBRIC (30 XP): Rekonstruktion von Befund und Deutung (10 XP) | Zwei Einwaende (Experiment + Begriff) (10 XP) | Urteil zu Verantwortung (6 XP) | Adressatengerechte Sprache (4 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY 1盒（核心总结）：
 

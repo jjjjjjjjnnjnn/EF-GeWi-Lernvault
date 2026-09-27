@@ -15,7 +15,7 @@ version: Lesson-v3
 
 <!-- Lesson v3 9步制架构：Schritt 1至8固定结构；Fehlvorstellung 夹在 Schritt 6 与 7 之间（Parser 自动跳过，不占步数）；支持内嵌 [Werkzeug: <id>] 交互教具；Gating: check/szenario 未过 = Weiter 置灰；XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
-## Schritt 1 — entdecken
+## Schritt 1 — entdecken: Ziele & Phänomen-Einstieg
 
 ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
@@ -23,9 +23,20 @@ ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 2. 中文：能用功利主义（减少痛苦）与康德-约纳斯式责任论证分别论证动物保护。
 3. 中文：能就"是否应禁止工厂化养殖"写出正反论证并表态，符合德语议论文规范（AFB II-III）。
 
+
+Hook中文生活切入:
+
+想象实验室里的小白鼠和家里的猫:同样会疼会怕,一个被写进实验申请表的风险栏,一个被抱在怀里喂罐头,区别不在它们,而在我们给的理由。动物伦理逼问的正是这套双标:能感受痛苦的生命是否配享道德地位,人的责任边界划在哪里。这份双标背后的理由之争,就是本节论证题的主战场。
+
+Phaenomen-Satz (DE): Die Maus zahlt den Preis, die Katze bekommt das Futter, beide fuehlen.
+
+中文机制铺垫:边沁以感受痛苦为入场券,辛格推出功利主义的平等考量,雷根主张动物固有价值,责任原则要求为技术后果负责;论证时先立标准再推及案例,区分情感偏好与道德论证,结论落在分级保护加替代原则。
+
+Mechanismus-Satz (DE): Empfindungsfaehigkeit begruendet Ruecksicht, Verantwortung begrenzt den Gebrauch.
+
 Klausur-Satz: `Tierethik fragt, ob und warum nichtmenschliche Lebewesen moralisch zaehlen.`
 
-## Schritt 2 — entdecken
+## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
 
 PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
 
@@ -39,25 +50,35 @@ PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→�
 
 Klausur-Satz: `Singer gruendet Tierrechte auf Leidensfaehigkeit, Jonas auf Verantwortung fuer verletzliches Leben.`
 
-## Schritt 3 — entdecken
+## Schritt 3 — entdecken: Kernkonzept & Wirkungsmodell
 
-ENTDECKEN（1概念 + 1文字图解）：
+ENTDECKEN（1概念 + 1文字图解，中文在上、德语在下）：
 
-中文：动物伦理只吵一件事——"谁算道德自己人"。人类中心派说只有理性人才算，动物是手段；痛苦中心派（辛格）说会疼就算， pH 试纸是感受力，工厂化养殖制造巨量痛苦所以必须改；责任派（约纳斯）说正因为动物和后代无法为自己发声，强者才有受托责任。考场 urged Dreischritt：先摆三派标准（理性/感受/责任），再把案例（密集笼养、活体实验）往标准上套，最后表态必须回应反方（营养、科研、成本），不能只喊口号。
+Hook中文生活切入：
+
+中文：想象小区投喂流浪猫之争：一派说它们会疼，一派说我们有责。Singer 与 Jonas 吵的正是疼与责哪个更硬。
+
+Phaenomen-Satz (DE): Schmerz zaehlt, Verantwortung verpflichtet.
+
+Spiel-Aufgabe沙盒操作指引：
+
+中文：打开沙盒，把滑块推向感受能力、责任对象与代价分配（关键词：Leidensfaehigkeit, Verantwortung, Kriterium, Umstieg），看禁令在哪一格先成立。
+
+Beobachtungs-Satz (DE): Beide Ethiken stuetzen das Verbot, nur die Lastenteilung streitet.
+
+Aha-Moment因果链：
+
+中文因果链：任何动物伦理立场都需三件套即标准、案例与回防；Singer 以感受能力纳动物入计算，Jonas 以对脆弱生命的责任立义务；两条路同到禁令，价格异议只关乎转型的公平设计。
+
+Gesetz-Satz (DE): Ohne Kriterium bleibt Tierethik Gefuehl, mit Kriterium wird sie pruefbar.
 
 文字图解（ASCII 结构图，App支持解析渲染）：
 
 ```diagram
-   Wer zaehlt moralisch?
-   [Anthropozentrik] nur Vernunftwesen -> Tier = Mittel
-   [Pathozentrik]    alle Leidensfaehigen -> Nutzenbilanz
-   [Verantwortung]   Verletzliche -> Pflicht des Starken
-   Fall Massentierhaltung:
-   Nutzen: billig Fleisch (+) vs. Leid Millionen Tiere (-)
-   Pflicht: Ja, weil stimmlos + verletzlich
-   Klausur-Dreischritt: Standard nennen -> Fall subsumieren -> Einwand entkraeften
+Singer: Leid -> einbeziehen -> Nutzen rechnen -> Verbot
+Jonas: Verletzlichkeit -> Verantwortung -> Pflicht -> Verbot
+Einwand Preise -> nur Umstiegsfairness
 ```
-
 Klausur-Satz: `Jede tierethische Position braucht ein Kriterium, einen Fall und eine Antwort auf den Einwand.`
 
 ## Anekdote & Fun-Fact
@@ -68,26 +89,31 @@ Klausur-Satz: `Jede tierethische Position braucht ein Kriterium, einen Fall und 
 
 **Bezug zum Konzept**: `Konkretes Leid und abstrakte Fernwirkung begruenden gemeinsam Tierverantwortung.`
 
-## Schritt 4 — ausprobieren
+## Schritt 4 — ausprobieren: Interaktive Praxis & Labor
 
-BEISPIEL（正确例题示范，含教具操作与解答）：
+[Werkzeug: balance-board]
 
-[Werkzeug: ethikvergleich]
+BEISPIEL（正确例题示范，含教具操作与解答，中文在上、德语在下）：
 
-AUFGABE中文导读：是否应禁止工厂化养殖，分别用辛格功利主义和约纳斯责任原则论证，并回应"肉价上涨"反方意见。
+AUFGABE中文导读（论证谜题）：工厂化养殖场应否被禁？请各用 Singer 与 Jonas 走一遍三件套，并挡住涨价_contract_异议。
 
-AUFGABE (eroertern, AFB II-III)：Soll Massentierhaltung verboten werden? Begruenden Sie je ein utilitaristisches und ein verantwortungsethisches Argument und entkraeften Sie den Einwand steigender Fleischpreise.
+AUFGABE (beurteilen, AFB III): Soll Massentierhaltung verboten werden? Pruefen Sie je mit Singer und Jonas (Kriterium, Fall, Einwand).
 
-HILFE:
-1. Schritt 1: Singer anwenden: Leid von Millionen Tieren gegen Geschmacksvorteil abwaegen, Bilanz negativ.
-2. Schritt 2: Jonas anwenden: Verletzliche ohne Stimme erzeugen Schutzpflicht, Vorsorge trotz Kosten.
-3. Schritt 3: Einwand beantworten: Preise als verteilbares Problem (Subvention, Umstieg), kein Totschlagargument.
+HILFE（中德双语步骤）：
 
-MUSTERLÖSUNG: Utilitaristisch: Das intensive Leid (Enge, Stress, Schlachtung) ueberwiegt den kurzen Geschmacksnutzen bei Alternativen; die Gesamtnutzenbilanz spricht fuers Verbot mit Uebergangsfristen. Verantwortungsethisch: Tiere sind verletzlich und stimmlos, Jonas' Prinzip verlangt Schutz gerade ohne Gegenleistung. Der Preiseinwand trifft nur die Verteilung: Hoehere Preise lassen sich durch Foerderung artgerechter Betriebe und Bildung abfedern und wiegen das systematische Leid nicht auf.
+1. 中文：第1步亮标准：感受能力与责任各一句，关键词：Kriterium。
+   Schritt 1 (DE): Kriterium je Ethik nennen.
+2. 中文：第2步套案例：养殖之疼与脆弱性，关键词：Fall。
+   Schritt 2 (DE): Fall subsumieren.
+3. 中文：第3步回防：涨价只改转型设计不动禁令，关键词：Einwand。
+   Schritt 3 (DE): Preiseinwand auf Umstieg begrenzen.
 
+MUSTERLOESUNG：中文：Singer 算总疼，Jonas 立总责，两条路都到禁令；涨价异议成立也只要求补贴与过渡，不推翻禁令本身。
+
+MUSTERLOESUNG (DE): Beide Ethiken stuetzen das Verbot: Nutzenethik rechnet, Verantwortungsethik verpflichtet. Der Preiseinwand betrifft nur die gerechte Gestaltung des Umstiegs.
 Klausur-Satz: `Beide Ethiken stuetzen das Verbot, der Preiseinwand betrifft nur die gerechte Gestaltung des Umstiegs.`
 
-## Schritt 5 — ausprobieren
+## Schritt 5 — ausprobieren: Verfahrensvergleich & Abgrenzung
 
 VERGLEICH辨别实验（双向辨析：苦乐眼 vs. 责任眼）：
 
@@ -102,7 +128,7 @@ ANTWORT: A erfordert Konzept (i): Kleiner Nutzen gegen grosses Tierleid abwaegen
 
 Klausur-Satz: `Nutzenethik rechnet, Verantwortungsethik verpflichtet: Beide koennen zum gleichen Verbot fuehren.`
 
-## Schritt 6 — check
+## Schritt 6 — check: Verständnisprüfung
 
 CHECK检索默写（自测 3 题，与答案配对）：
 
@@ -124,14 +150,14 @@ Klausur-Satz: `Ohne Kriterium bleibt Tierethik Gefuehl, mit Kriterium wird sie p
    中文纠偏：两者可以汇合于同一结论（如禁工厂养殖），只是理由不同。高分答案恰恰展示"两条路通一结论"，再比较哪条更强。
    Korrektur-Satz: `Verschiedene Begruendungen koennen dieselbe Norm stuetzen und sich ergaenzen.`
 
-## Schritt 7 — szenario
+## Schritt 7 — szenario: Klausurtransfer & Rubric
 
 ROLLE: Du schreibst einen Leserbrief an die Lokalzeitung zur neuen Huehnerfarm.
 SITUATION: Die Farm verspricht billige Eier, Tierschuetzer warnen vor Kaefighaltung.
 AUFGABE: Nehmen Sie in ca. 150 Woertern mit Singer und Jonas Stellung und antworten Sie auf das Arbeitsplatz-Argument.
 RUBRIC (30 XP): Singer-Nutzenbilanz korrekt (10 XP) | Jonas-Verantwortung korrekt (10 XP) | Arbeitsplatz-Einwand entkraeftet plus Urteil (10 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY 1盒（核心总结）：
 

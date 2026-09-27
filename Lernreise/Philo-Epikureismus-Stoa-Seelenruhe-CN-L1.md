@@ -15,7 +15,7 @@ version: Lesson-v3
 
 <!-- Lesson v3 9步制架构：Schritt 1至8固定结构；Fehlvorstellung 夹在 Schritt 6 与 7 之间（Parser 自动跳过，不占步数）；支持内嵌 [Werkzeug: <id>] 交互教具；Gating: check/szenario 未过 = Weiter 置灰；XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
-## Schritt 1 — entdecken
+## Schritt 1 — entdecken: Ziele & Phänomen-Einstieg
 
 ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
@@ -23,9 +23,20 @@ ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 2. 中文：能用"快乐三分类"和"控制二分法"分别重构两派的核心论证。
 3. 中文：能对一个生活困境给出两派会分别开出的处方，并写出德语标准结论句（AFB II-III）。
 
+
+Hook中文生活切入:
+
+想象期末周两种室友:一个把奶茶游戏全列成快乐清单,说痛苦能躲就躲;另一个五点起床淋冷水背书,说焦虑都是自找的,管住念头就赢了。前者像伊壁鸠鲁,后者像斯多葛,两家开的都是同一味药:心灵安宁,但药方一个向外算账,一个向内用功。这两种室友的作息之争,正是本节要比较的两味药方。
+
+Phaenomen-Satz (DE): Der eine zaehlt Freuden, der andere zaehlt Urteile, beide suchen Ruhe.
+
+中文机制铺垫:伊壁鸠鲁以快乐为善,区分自然必要与虚荣欲望,节制即幸福;斯多葛以德性为唯一善,区分可控与不可控,接纳即自由;比较题先立幸福标准,再对欲望论与控制论,最后判谁更能应对当代焦虑。
+
+Mechanismus-Satz (DE): Epikur ordnet die Begierden, die Stoa ordnet die Urteile, beide ordnen die Seele.
+
 Klausur-Satz: `Epikureismus und Stoa suchen beide die Seelenruhe, waehlen aber entgegengesetzte Wege zu ihr.`
 
-## Schritt 2 — entdecken
+## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
 
 PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
 
@@ -39,24 +50,35 @@ PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→�
 
 Klausur-Satz: `Epikur ordnet die Begierden, die Stoa ordnet den Umgang mit dem Unverfuegbaren.`
 
-## Schritt 3 — entdecken
+## Schritt 3 — entdecken: Kernkonzept & Wirkungsmodell
 
-ENTDECKEN（1概念 + 1文字图解）：
+ENTDECKEN（1概念 + 1文字图解，中文在上、德语在下）：
 
-中文：两派都是"焦虑治疗师"。伊壁鸠鲁开的是"欲望筛子"：只满足天然必要的（吃饱、朋友、求知），推迟天然非必要的（豪宴），拉黑空虚的（名利攀比）——多数痛苦来自追错了欲望。斯多亚开的是"控制筛子"：世界分成我能控的（我的判断和行动）和我不能控的（考试题目、别人评价、生老病死），痛苦来自想控住控不住的东西。记住分野：伊壁鸠鲁管"想要什么"，斯多亚管"怎么看得失"。考场比较题永远三段：同（都求宁静）—异（路径相反）—判（各有何代价）。
+Hook中文生活切入：
+
+中文：想象考前焦虑群：有人靠删掉无效刷题找回睡眠，有人靠接受考题不可控找回心态。Epikur 与 Stoa 开的是两剂不同的镇定剂。
+
+Phaenomen-Satz (DE): Zwei Wege, ein Ziel: die Seelenruhe.
+
+Spiel-Aufgabe沙盒操作指引：
+
+中文：打开沙盒，把滑块分别推向欲望清单与控制圈（关键词：Begierde, Urteil, Kontrollzone, Ataraxie），看焦虑值在哪一侧下降更快。
+
+Beobachtungs-Satz (DE): Kleinere Wuensche beruhigen, staerkere Urteile festigen.
+
+Aha-Moment因果链：
+
+中文因果链：Epikur 治欲望，把欲望分天然必要、天然不必要与虚荣三类，只满足第一类；Stoa 治判断，把世界分可控与不可控，只在可控处用力；前者缩小想要，后者管住评判，殊途同归于不动心。
+
+Gesetz-Satz (DE): Falsche Wuensche verlangen Epikur, falsche Urteile verlangen die Stoa.
 
 文字图解（ASCII 结构图，App支持解析渲染）：
 
 ```diagram
-   Gemeinsames Ziel: SEELENRUHE (Ataraxie / Apatheia)
-        /                              \
-   EPIKUR: Lust sieben            STOA: Kontrolle teilen
-   - natuerlich-notwendig: JA    - kontrollierbar: handeln
-   - natuerlich-unnötig: MAL     - unkontrollierbar: akzeptieren
-   - eitel: NEIN                 - amor fati (liebe dein Schicksal)
-   Formel: wahle kleine Freuden  Formel: aendere Urteil, nicht Welt
+Epikur: Wuensche sortieren -> natuerlich-notwendig erfuellen
+Stoa: Welt sortieren -> nur Kontrollzone bearbeiten
+gemeinsam: Angsttherapie -> Seelenruhe
 ```
-
 Klausur-Satz: `Beide Schulen therapieren Angst, Epikur durch Begierdenkritik, die Stoa durch Urteilskritik.`
 
 ## Anekdote & Fun-Fact
@@ -67,26 +89,31 @@ Klausur-Satz: `Beide Schulen therapieren Angst, Epikur durch Begierdenkritik, di
 
 **Bezug zum Konzept**: `Der Ort der Schule verraet das Programm: Garten der Freundschaft gegen Halle des Schicksals.`
 
-## Schritt 4 — ausprobieren
+## Schritt 4 — ausprobieren: Interaktive Praxis & Labor
 
-BEISPIEL（正确例题示范，含教具操作与解答）：
+[Werkzeug: balance-board]
 
-[Werkzeug: ethikvergleich]
+BEISPIEL（正确例题示范，含教具操作与解答，中文在上、德语在下）：
 
-AUFGABE中文导读：同学因社交媒体攀比焦虑，分别用伊壁鸠鲁欲望分类和斯多亚控制二分法开处方，对比异同。
+AUFGABE中文导读（案例谜题）：同学为新款球鞋失眠又为考试排名焦虑。请一半用 Epikur、一半用 Stoa 开处方。
 
-AUFGABE (beurteilen, AFB II-III)：Eine Schuelerin ist ungluecklich, weil sie auf Social Media staendig Luxus und Likes vergleicht. Rekonstruieren Sie je einen epikureischen und einen stoischen Rat und vergleichen Sie beide.
+AUFGABE (anwenden, AFB II): Ein Mitschueler leidet unter Konsumwunsch und Pruefungsangst. Therapieren Sie halb epikureisch, halb stoisch.
 
-HILFE:
-1. Schritt 1: Epikur anwenden: Luxus/Likes als eitle Begierde klassifizieren, natuerliche Freuden (Freundschaft, Lernen) empfehlen.
-2. Schritt 2: Stoa anwenden: Likes als unkontrollierbar einordnen, eigenes Urteil und Handeln als kontrollierbar staerken.
-3. Schritt 3: Vergleich: gemeinsam Seelenruhe, verschieden Ansatzpunkt (Begierde vs. Urteil).
+HILFE（中德双语步骤）：
 
-MUSTERLÖSUNG: Epikureisch: Der Vergleichswunsch ist eitel und unersaettlich; Seelenruhe gewinnt man durch natuerliche Freuden (echte Freunde, Verstehen) und Verzicht auf Statussymbole. Stoisch: Likes und Algorithmen sind aeussere, unkontrollierbare Dinge; frei ist nur das eigene Urteil — man kann die App begrenzen und Kritik als gleichgueltig (adiaphoron) betrachten. Gemeinsam ist das Ziel Ataraxie, verschieden der Hebel: Epikur veraendert die Wuensche, die Stoa das Urteil ueber das Unvermeidliche.
+1. 中文：第1步分诊：球鞋归欲望、排名归判断，关键词：Sortieren。
+   Schritt 1 (DE): Wuensche versus Urteile trennen.
+2. 中文：第2步 Epikur 减欲望：虚荣欲望直接划掉，关键词：Begierde。
+   Schritt 2 (DE): Epikur heilt durch kleinere Wuensche.
+3. 中文：第3步 Stoa 正判断：排名不可控、备考可控，关键词：Urteil。
+   Schritt 3 (DE): Stoa heilt durch staerkere Urteile.
 
+MUSTERLOESUNG：中文：球鞋属虚荣欲望，Epikur 处方是划掉它；排名属不可控，Stoa 处方是只管备考过程；欲望小了、评判准了，心即安静。
+
+MUSTERLOESUNG (DE): Epikur heilt durch kleinere Wuensche (Konsum streichen), die Stoa durch staerkere Urteile (nur Vorbereitung kontrollieren). Beide therapieren Angst, vereint zur Seelenruhe.
 Klausur-Satz: `Epikur heilt durch kleinere Wuensche, die Stoa durch staerkere Urteile ueber das Unkontrollierbare.`
 
-## Schritt 5 — ausprobieren
+## Schritt 5 — ausprobieren: Verfahrensvergleich & Abgrenzung
 
 VERGLEICH辨别实验（双向辨析：欲望眼 vs. 判断眼）：
 
@@ -101,7 +128,7 @@ ANTWORT: A erfordert Konzept (i): Wuensche als eitel entlarven, natuerliche Freu
 
 Klausur-Satz: `Falsche Wuensche verlangen Epikur, falsche Urteile verlangen die Stoa.`
 
-## Schritt 6 — check
+## Schritt 6 — check: Verständnisprüfung
 
 CHECK检索默写（自测 3 题，与答案配对）：
 
@@ -123,14 +150,14 @@ Klausur-Satz: `Ohne Unterscheidung von Wunscharten und Kontrollzonen bleibt jede
    中文纠偏：斯多亚要求在可控区全力尽责（学习、助人、尽义务），只在不可控区放下执念。创始人芝诺和罗马皇帝奥勒留都是行动派，不是躺平派。
    Korrektur-Satz: `Stoische Gelassenheit gilt dem Unverfuegbaren, nicht dem eigenen Handeln.`
 
-## Schritt 7 — szenario
+## Schritt 7 — szenario: Klausurtransfer & Rubric
 
 ROLLE: Du bist Redakteurin der Schulzeitung und schreibst einen Ratgeber.
 SITUATION: Viele Leser klagen ueber Pruefungsangst und Konsumdruck zugleich.
 AUFGABE: Geben Sie in ca. 150 Woertern je einen epikureischen und stoischen Rat und urteilen Sie, welcher Ansatz wo staerker ist.
 RUBRIC (30 XP): Epikur-Rat mit Begierdenklassifikation (10 XP) | Stoa-Rat mit Kontroll-Dichotomie (10 XP) | Vergleich plus eigenes Urteil mit Begruendung (10 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY 1盒（核心总结）：
 

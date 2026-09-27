@@ -15,7 +15,7 @@ version: Lesson-v3
 
 <!-- Lesson-v3: 8 Schritte plus Anekdote und Fehlvorstellung; Fehlvorstellung zwischen Schritt 6 und 7 (Parser-Skip); interaktives [Werkzeug: <id>]; Gating: check/szenario nicht bestanden = Weiter gesperrt; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
-## Schritt 1 — entdecken
+## Schritt 1 — entdecken: Ziele & Phänomen-Einstieg
 
 ZIELE (drei messbare Ziele dieser Lektion):
 
@@ -25,7 +25,10 @@ ZIELE (drei messbare Ziele dieser Lektion):
 
 ### Hook / Phaenomen
 
-Ein Wagen rast auf fuenf Menschen zu, du kannst die Weiche stellen und nur einen treffen. Rechnen sagt stellen, Kant fragt: Darf man einen zum blossen Mittel machen? Derselbe Fall, zwei voellig verschiedene Pruefungen. Welche Stimme wiegt schwerer: Zahl oder Wuerde?
+Stell dir vor, ein Wagen rast auf fuenf Menschen zu und du stehst an der Weiche und kannst den Wagen auf ein Gleis mit nur einer Person lenken, waehrend die Gruppe hinter dir ruft, dass Rechnen doch klar sei und fuenf Leben mehr zaehlten als eines. Gleichzeitig weisst du aus deiner Sozialisation in Familie und Schule und Freundeskreis, dass jeder Mensch Wuerde traegt und niemand zum blossen Mittel fuer andere gemacht werden darf. Genau hier kollidieren zwei Pruefungen desselben Falles: Die eine Bilanz zaehlt Lust und Leid fuer alle Betroffenen zusammen, die andere Pruefung fragt, ob deine Maxime als allgemeines Gesetz gewollt werden kann. In dieser Lektion lernst du den Mechanismus aus Bilanz und Probe und Abwaegung, damit du in der Klausur beide Brillen sauber trennst und dein Urteil an einem expliziten Kriterium begruendest.
+
+
+Ausgangslage aus der Vorlage: Ein Wagen rast auf fuenf Menschen zu, du kannst die Weiche stellen und nur einen treffen. Rechnen sagt stellen, Kant fragt: Darf man einen zum blossen Mittel machen? Derselbe Fall, zwei voellig verschiedene Pruefungen. Welche Stimme wiegt schwerer: Zahl oder Wuerde?
 
 ### Fachbegriff & Definition
 
@@ -37,7 +40,7 @@ Der Mechanismus laeuft in drei Stufen: **Folgenbilanz, Maximenprobe, Abwaegung**
 
 Klausur-Satz: `Utilitarismus und Kant stellen dieselbe Frage anders: Nutzen für die meisten oder Pflicht aus der Maxime?`
 
-## Schritt 2 — entdecken
+## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
 
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
@@ -57,30 +60,34 @@ Zwei Prueffragen, zwei Welten: Mehrt es das Glueck oder achtet es die Person? Oh
 
 Die Begriffe greifen ineinander: Das **Nutzenprinzip** maximiert $U$ ueber alle Betroffenen, die **Maximenpruefung** filtert mit $M \to G$ das Verallgemeinerbare heraus. Die **Selbstzweckformel** stoppt den **Trolley-Fall** dort, wo $1 = Mittel$ wuerde. Die **Menschenwuerde** entscheidet den Konflikt als hoeheres Kriterium. Wer in der Klausur vergleicht, muss deshalb immer fragen: Was wiegt schwerer, Bilanz oder Wuerde?
 
+Punkte-Hinweis: Nenne $Utilitarismus$ mit $U = \sum(Lust - Leid)$ und $Kategorischer Imperativ$ mit $M \to G$; erst beide Pruefungen plus Kriterium wie Menschenwuerde gibt volle Punkte.
+
 Klausur-Satz: `Der Utilitarismus bewertet eine Handlung nach ihren Folgen für das Gesamtglück.`
 
-## Schritt 3 — entdecken
+## Schritt 3 — entdecken: Kernkonzept & Wirkungsmodell
 
 TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
 ### Hook / Phaenomen
 
-Darf man einen Unschuldigen bestrafen, um eine Stadt zu beruhigen? Der Nutzen winkt, Kant verbietet. Der Fall zeigt die haerteste Probe beider Ethiken: Rettet die Zahl das Gewissen oder schuetzt die Pflicht den Einzelnen? Genau hier brauchst du ein doppeltes Pruefraster.
+Fuenf retten, einen opfern — Trolley fragen, Kant schweigt? Mehrheit rechnet $U$, Minderheit ruft Wuerde — Folge oder Pflicht, was zaehlt?
 
-### Fachbegriff & Definition
+### Spiel-Aufgabe mit [Werkzeug: balance-board]
 
-Das **Doppelraster Folgen gegen Pflicht** legt beide Verfahren uebereinander und misst sie an **Menschenwuerde**. Die utilitaristische Spur rechnet $U = Nutzen - Schaden$ fuer Mehrheit und Minderheit. Die kantische Spur prueft $M \to G$ plus $Zweckformel = Achtung$. Das Urteil folgt der Regel $Wuerde > Nutzen$ bei Instrumentalisierung.
+Oeffne [Werkzeug: balance-board]. Lege links Folgen-Nutzen $U = \sum (Lust - Leid)$, rechts Maximen-Probe $M \to G$. Gewichte Umfang und Dauer gegen Denk- und Wollenswiderspruch von 1 bis 5. Kippe die Waage: Wann schlaegt $Max(U)$ die $Wuerde = Zweck + Unverfuegbarkeit$?
 
-### Wirkungsgefuege / Modell
+### Aha-Moment & Gesetz
 
-Denke in Kausalkette: **Anwendung, Kollision, Entscheidung**. Erstens ergibt die Anwendung $U_{Strafe} = Beruhigung - Unrecht = +3$ scheinbar pro Strafe. Zweitens ergibt $M = Unschuldigen strafen + Ordnung$ ein klares $M \not\to G$, weil $Mensch = Mittel$ die Wuerde verletzt. Drittens entscheidet das Kriterium **Menschenwuerde**: Was als Mittel missbraucht, kann kein Gesetz werden. Genau dieser Vorrang verlangt in der Klausur ein **kriteriengeleitetes Urteil**, keine blosse Mehrheit.
+Aha-Moment: Bilanz — Probe — Vorrang. Erstens bilanziert $U = \sum (Lust - Leid)$ Folgen. Zweitens prueft $Erlaubt(M) \iff Denkbar(G) + Wollbar(G)$ die Verallgemeinerung. Drittens urteilt Kriterium Menschenwuerde: Keine Verrechnung von Personen. Gesetz: $Nutzen \neq Erlaubnis$, sobald $M \not\to G$.
 
 ```diagram
-  Fall [Unschuldiger vs Mehrheit]
-  Fall -> Nutzen U = Summe Lust minus Leid
-  Fall -> Pflicht M zu G + Zweckformel
-  Doppel -> Urteil (Wuerde vor Nutzen)
+  Fall [Trolley + Luege + Hilfe]
+  Fall -> Waage [$U = \sum (Lust - Leid)$ vs $M \to G$]
+  Waage -> Probe [Denkbar + Wollbar + $Wuerde$]
+  Probe -> Urteil [Pflicht oder Verbot]
 ```
+
+Kausalkette: Fall schildern — Bilanz mit $U = \sum(Lust - Leid)$ gegen Probe mit $M \to G$ — Urteil am Kriterium Menschenwuerde; Abgrenzung zu $p_N(q) = p_A(q)$ mit $q_A - q_N$ und zu $Gini$ steht vor jeder Stellungnahme.
 
 Klausur-Satz: `Kant prüft nicht den Nutzen, sondern ob die Maxime allgemeines Gesetz werden kann.`
 
@@ -90,24 +97,24 @@ In der modernen Ethik ist das „Trolley-Problem" berühmt: Ein außer Kontrolle
 
 Bezug zum Konzept: `Das Beispiel zeigt, wie aus Beobachtung ein pruefbares Verfahren mit $x_1$ und $x_2$ entsteht.`
 
-## Schritt 4 — ausprobieren
+## Schritt 4 — ausprobieren: Interaktive Praxis & Urteils-Waage
 
 BEISPIEL (geleitete Aufgabe mit Werkzeug):
 
-[Werkzeug: balance]
+[Werkzeug: balance-board]
 
-AUFGABE (AFB II): Pruefen Sie die Maxime $M$: Ich mache ein falsches Versprechen, um einen Vorteil zu erhalten. Laesst sich $M$ als allgemeines Gesetz $G$ denken und wollen? Begruenden Sie das Ergebnis mit dem Kriterium der Widerspruchsfreiheit.
+Lege im Tool Pro- und Contra-Argumente auf die Waage und gewichte jedes Argument von 1 bis 5; veraendere die Gewichte Schritt fuer Schritt und beobachte, wann das Urteil zwischen Erlaubnis und Verbot oder zwischen Massnahme und Verzicht umschlaegt.
+
+AUFGABE Waage-Raetsel (AFB II): Lege Trolley-Fall auf [Werkzeug: balance-board]. Berechne $U$ fuer Weichenstellen gegen Nichtstun, pruefe danach $M \to G$ plus Selbstzweckformel. Entscheide per Gewichtung, ob Nutzen die Pflicht bricht.
 
 HILFE:
-1. Schritt 1: Rekonstruiere den Fall und notiere die gegebenen Groessen $x_1$ und $x_2$.
-2. Schritt 2: Wende die Leitformel an und berechne $d = x_2 - x_1$.
-3. Schritt 3: Deute das Ergebnis am Kriterium und formuliere den Klausur-Satz.
+1. Schritt 1: Bilanziere $U$ beider Optionen. 2. Schritt 2: Formuliere $M$, universalisere zu $G$. 3. Schritt 3: Deute an Wuerde und formuliere den Klausur-Satz.
 
-MUSTERLOESUNG: Als allgemeines Gesetz $G$ wuerde $M$ die Institution des Versprechens zerstoeren; das Versprechen waere zugleich noetig und unmoeglich. Es gilt $M \not\to G$: Die Maxime faellt durch die Universalisierung und ist daher verboten.
+MUSTERLOESUNG: Nutzen spricht fuer Stellen mit $U_{Stellen} > U_{Nichts}$; Kant prueft $M \to G$: Wer opfert, nutzt Person bloss als Mittel — $M \not\to G$ plus Verstoss gegen $Wuerde$. Daher Verbot trotz groesserem $U$.
 
 Klausur-Satz: `Während der Utilitarismus die Folgen für die Mehrheit abwägt, prüft Kant, ob die Maxime alle als Zweck an sich achtet.`
 
-## Schritt 5 — ausprobieren
+## Schritt 5 — ausprobieren: Verfahrensvergleich & Abgrenzung
 
 VERGLEICH (Wahl des Verfahrens, A gegen B):
 
@@ -122,7 +129,7 @@ ANTWORT: Aufgabe A erfordert Verfahren (i), weil eine Rangfolge aus der Form gen
 
 Klausur-Satz: `Aus utilitaristischer Sicht lässt sich die Notlüge rechtfertigen, weil sie mehr Nutzen stiftet als sie schadet.`
 
-## Schritt 6 — check
+## Schritt 6 — check: Verständnisprüfung
 
 CHECK (drei Fragen mit Antworten):
 
@@ -142,14 +149,14 @@ Klausur-Satz: `Aus kantischer Sicht ist die Bestrafung eines Unschuldigen proble
 2. Fehlkonzept: Ein einzelner Wert wie $Gini$ oder $p_G$ spreche bereits fuer sich und brauche kein Kriterium.
    Korrektur-Satz: `Erst die Deutung der Kennzahl am Kriterium mit $d = x_2 - x_1$ ergibt ein klausurtaugliches Urteil.`
 
-## Schritt 7 — szenario
+## Schritt 7 — szenario: Klausurtransfer & Rubric
 
 ROLLE: Du bist Mitglied im Ethikrat der Schule, AG „Ehrlichkeit im Unterricht"
 SITUATION: Debatte: Soll Schummeln bei einer unwichtigen Klausur erlaubt sein, wenn es allen Stress nimmt Halte ein 2-Minuten-Plädoyer (dafür oder dagegen). Nutze die Folgen-Brille aus Schritt 5 für Pro und die Pflicht-Brille für Contra, dann eigenes Urteil
 AUFGABE (AFB III): Verfasse eine zusammenhaengende Darstellung von etwa 150 Woertern mit Kriterium, Anwendung und Urteil.
 RUBRIC (30 XP): These in Satz 1 (darstellen) | zwei Fachbegriffe (z. B. Maxime, Nutzenprinzip, Menschenwürde) | ein Beleg/Beispiel | Urteil mit Kriterium (beurteilen).
 
-## Schritt 8 — entdecken
+## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY (Kernbotschaft in einem Kasten):
 

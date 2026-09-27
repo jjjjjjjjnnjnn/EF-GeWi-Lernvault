@@ -15,7 +15,7 @@ version: Lesson-v3
 
 <!-- Lesson-v3: 8 Schritte plus Anekdote und Fehlvorstellung; Fehlvorstellung zwischen Schritt 6 und 7 (Parser-Skip); interaktives [Werkzeug: <id>]; Gating: check/szenario nicht bestanden = Weiter gesperrt; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
-## Schritt 1 — entdecken
+## Schritt 1 — entdecken: Ziele & Phänomen-Einstieg
 
 ZIELE (drei messbare Ziele dieser Lektion):
 
@@ -25,7 +25,10 @@ ZIELE (drei messbare Ziele dieser Lektion):
 
 ### Hook / Phaenomen
 
-Freizeitpark fuer alle das ganze Jahr oder ein einziges Star-Konzert fuer eine Nacht? Die Mehrheit jubelt fuers Konzert, eine Minderheit warnt vor Verschwendung. Soll die Mehrheit immer gewinnen, und zaehlt Bildung mehr als Spass? Genau hier beginnt das Rechnen mit Glueck.
+Stell dir vor, ein Wagen rast auf fuenf Menschen zu und du stehst an der Weiche und kannst den Wagen auf ein Gleis mit nur einer Person lenken, waehrend die Gruppe hinter dir ruft, dass Rechnen doch klar sei und fuenf Leben mehr zaehlten als eines. Gleichzeitig weisst du aus deiner Sozialisation in Familie und Schule und Freundeskreis, dass jeder Mensch Wuerde traegt und niemand zum blossen Mittel fuer andere gemacht werden darf. Genau hier kollidieren zwei Pruefungen desselben Falles: Die eine Bilanz zaehlt Lust und Leid fuer alle Betroffenen zusammen, die andere Pruefung fragt, ob deine Maxime als allgemeines Gesetz gewollt werden kann. In dieser Lektion lernst du den Mechanismus aus Bilanz und Probe und Abwaegung, damit du in der Klausur beide Brillen sauber trennst und dein Urteil an einem expliziten Kriterium begruendest.
+
+
+Ausgangslage aus der Vorlage: Freizeitpark fuer alle das ganze Jahr oder ein einziges Star-Konzert fuer eine Nacht? Die Mehrheit jubelt fuers Konzert, eine Minderheit warnt vor Verschwendung. Soll die Mehrheit immer gewinnen, und zaehlt Bildung mehr als Spass? Genau hier beginnt das Rechnen mit Glueck.
 
 ### Fachbegriff & Definition
 
@@ -37,7 +40,7 @@ Der Mechanismus laeuft in drei Stufen: **Bilanz, Vergleich, Korrektur**. Erstens
 
 Klausur-Satz: `Der Utilitarismus beurteilt eine Handlung ausschließlich nach ihren Folgen, genauer nach dem Gesamtnutzen, den sie für alle Betroffenen stiftet.`
 
-## Schritt 2 — entdecken
+## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
 
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
@@ -57,30 +60,34 @@ PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
 Die Begriffe greifen ineinander: Das **Nutzenprinzip** setzt das Ziel $Max(G)$, das **hedonistische Kalkuel** liefert das Messgeraet $U = \sum d_i$. **Quantitaet** entscheidet bei Bentham allein, **Qualitaet** korrigiert bei Mill mit $Q > q$. Das **Gesamtglueck** $G$ fasst alles zusammen und legitimiert Opfer von Minderheiten. Wer in der Klausur rechnet, muss deshalb immer fragen: Zaehlt nur Menge oder auch Wuerde der Freude?
 
+Punkte-Hinweis: Nenne $Utilitarismus$ mit $U = \sum(Lust - Leid)$ und $Kategorischer Imperativ$ mit $M \to G$; erst beide Pruefungen plus Kriterium wie Menschenwuerde gibt volle Punkte.
+
 Klausur-Satz: `Bentham bewertet Lust und Unlust nach sieben quantitativen Kriterien, während Mill zusätzlich qualitative Unterschiede zwischen den Freuden annimmt.`
 
-## Schritt 3 — entdecken
+## Schritt 3 — entdecken: Kernkonzept & Wirkungsmodell
 
 TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
 ### Hook / Phaenomen
 
-Spott nannte Benthams Lehre Philosophie der Schweine, weil sie Oper und Grunzen gleich zaehlt. Mill antwortete beruehmt: Lieber unzufriedener Mensch als zufriedenes Schwein. Doch wie beweist man, dass Denken mehr wert ist als Naschen? Genau hier trennen sich Rechnen und Urteilen.
+Freizeitpark fuer alle oder Star-Konzert fuer eine Nacht — Trolley-Dilemma des Gluecks? Mehrheit jubelt, Minderheit warnt — zaehlt Bildung mehr als Spass?
 
-### Fachbegriff & Definition
+### Spiel-Aufgabe mit [Werkzeug: balance-board]
 
-Das **Kalkuel plus Qualitaetskorrektur** verbindet Benthams Summenregel mit Mills Kenner-Test. Bentham fordert $Waehle(Max(U))$ mit $U = \sum_{i=1}^{7} d_i$ ueber Intensitaet bis Umfang. Mill ergaenzt $Bevorzuge(Q_{hoch})$ wenn Kenner beider Freuden mit $Praeferenz = hoch$ urteilen. Der Test lautet also: Erst rechnen, dann werten.
+Oeffne [Werkzeug: balance-board]. Lege Pro-Park gegen Pro-Konzert auf die Waage. Gewichte $d_1$ bis $d_7$ von 1 bis 5: Intensitaet, Dauer, Gewissheit, Naehe, Fruchtbarkeit, Reinheit, Umfang. Beobachte $U = \sum d_i$ live — etwa $U_{Park} = 38$ gegen $U_{Konzert} = 45$ — und schalte Mills Korrektur $Q > q$ zu.
 
-### Wirkungsgefuege / Modell
+### Aha-Moment & Gesetz
 
-Denke in Kausalkette: **Messen, Korrigieren, Urteilen**. Erstens werden Optionen vermessen, etwa $U_{Park} = 38$ durch $Dauer + Umfang$ gegen $U_{Konzert} = 45$ durch $Intensitaet + Naehe$. Zweitens wird korrigiert: Der Park staerkt mit $Fruchtbarkeit + Reinheit$ Bildung und Gesundheit, also $Q_{Park} > Q_{Konzert}$. Drittens wird geurteilt nach **Gesamtglueck plus Wuerde**: Kurzfristig gewinnt das Konzert, langfristig der Park. Genau diese Abwaegung verlangt in der Klausur ein **kriteriengeleitetes Urteil**, keine blosse Summe.
+Aha-Moment: Messen — Korrigieren — Urteilen. Erstens summiert $U = \sum (Lust - Leid)$ Mengen. Zweitens korrigiert $Q > q$: Kenner beider Freuden ziehen hoehere vor. Drittens urteilt Kriterium Gesamtglueck plus Wuerde: Kurzfristig Konzert, langfristig Park. Gesetz: $Waehle(Max(U))$, dann $Bevorzuge(Q_{hoch})$.
 
 ```diagram
   Optionen [Park vs Konzert]
-  Optionen -> Kalkuel U = Summe d1 bis d7
-  Kalkuel -> Korrektur Q vor q (Mill)
-  Korrektur -> Urteil (Gesamtglueck)
+  Optionen -> Waage [$U = \sum d_1$ bis $d_7$ + Gewichte 1 bis 5]
+  Waage -> Korrektur [$Q > q$ + Kenner-Test]
+  Korrektur -> Urteil [Gesamtglueck + Wuerde]
 ```
+
+Kausalkette: Fall schildern — Bilanz mit $U = \sum(Lust - Leid)$ gegen Probe mit $M \to G$ — Urteil am Kriterium Menschenwuerde; Abgrenzung zu $p_N(q) = p_A(q)$ mit $q_A - q_N$ und zu $Gini$ steht vor jeder Stellungnahme.
 
 Klausur-Satz: `Während Bentham alle Freuden nur quantitativ vergleicht, unterscheidet Mill zusätzlich zwischen höheren und niederen Freuden.`
 
@@ -90,24 +97,24 @@ Benthams Kalkül, der alle Freuden nur nach Menge zählt, wurde von Spöttern al
 
 Bezug zum Konzept: `Das Beispiel zeigt, wie aus Beobachtung ein pruefbares Verfahren mit $x_1$ und $x_2$ entsteht.`
 
-## Schritt 4 — ausprobieren
+## Schritt 4 — ausprobieren: Interaktive Praxis & Urteils-Waage
 
 BEISPIEL (geleitete Aufgabe mit Werkzeug):
 
-[Werkzeug: formula]
+[Werkzeug: balance-board]
 
-AUFGABE (AFB II): Wenden Sie die sieben Dimensionen $d_1$ bis $d_7$ (Intensitaet, Dauer, Gewissheit, Naehe, Fruchtbarkeit, Reinheit, Umfang) auf zwei Handlungsoptionen an. Berechnen Sie $U = \sum d_i$ und ergaenzen Sie Mills qualitative Korrektur mit $Q$ vor $q$.
+Lege im Tool Pro- und Contra-Argumente auf die Waage und gewichte jedes Argument von 1 bis 5; veraendere die Gewichte Schritt fuer Schritt und beobachte, wann das Urteil zwischen Erlaubnis und Verbot oder zwischen Massnahme und Verzicht umschlaegt.
+
+AUFGABE Waage-Raetsel (AFB II): Lege beide Optionen auf [Werkzeug: balance-board]. Vergebe $d_1$ bis $d_7$ je 1 bis 5 Punkte, berechne $U = \sum d_i$ und kippe die Waage danach per $Q$-Bonus fuer Bildung. Entscheide, wann Menge gegen Wuerde verliert.
 
 HILFE:
-1. Schritt 1: Rekonstruiere den Fall und notiere die gegebenen Groessen $x_1$ und $x_2$.
-2. Schritt 2: Wende die Leitformel an und berechne $d = x_2 - x_1$.
-3. Schritt 3: Deute das Ergebnis am Kriterium und formuliere den Klausur-Satz.
+1. Schritt 1: Bepunkte $d_1$ bis $d_7$ je Option. 2. Schritt 2: Summiere $U$, vergleiche $U_A$ gegen $U_B$. 3. Schritt 3: Wende $Q > q$ an, deute an Gesamtglueck und formuliere den Klausur-Satz.
 
-MUSTERLOESUNG: Option A erzielt ein hohes $U = \sum d_i$ durch Dauer und Umfang, Option B punktet bei Fruchtbarkeit und Reinheit. Nach Bentham gewinnt das groessere $U$; nach Mill kann die hoehere Qualitaet $Q$ das kleinere $q$ aufwiegen, etwa bei Bildung gegen blosse Unterhaltung.
+MUSTERLOESUNG: Park punktet bei Dauer und Umfang mit $U_{Park} = 38$, Konzert bei Intensitaet und Naehe mit $U_{Konzert} = 45$. Nach Bentham gewinnt Konzert; mit $Q$-Bonus fuer Fruchtbarkeit und Reinheit kippt die Waage zu Park — kleinere Menge hoeherer Freude wiegt schwerer.
 
 Klausur-Satz: `Nach Benthams Kalkül ist diejenige Handlung moralisch vorzuziehen, deren Summe aus Lust und Unlust über alle Betroffenen das größte Glück ergibt.`
 
-## Schritt 5 — ausprobieren
+## Schritt 5 — ausprobieren: Verfahrensvergleich & Abgrenzung
 
 VERGLEICH (Wahl des Verfahrens, A gegen B):
 
@@ -122,7 +129,7 @@ ANTWORT: Aufgabe A erfordert Verfahren (i), weil eine Rangfolge aus der Form gen
 
 Klausur-Satz: `Nach Mill ist eine geringere Menge höherer Freude einer größeren Menge niederer Freude vorzuziehen.`
 
-## Schritt 6 — check
+## Schritt 6 — check: Verständnisprüfung
 
 CHECK (drei Fragen mit Antworten):
 
@@ -142,7 +149,7 @@ Klausur-Satz: `Der hedonistische Kalkül maximiert die Gesamtmenge an Lust, doch
 2. Fehlkonzept: Ein einzelner Wert wie $Gini$ oder $p_G$ spreche bereits fuer sich und brauche kein Kriterium.
    Korrektur-Satz: `Erst die Deutung der Kennzahl am Kriterium mit $d = x_2 - x_1$ ergibt ein klausurtaugliches Urteil.`
 
-## Schritt 7 — szenario
+## Schritt 7 — szenario: Klausurtransfer & Rubric
 
 ROLLE: Du bist Berater in der Jugendvertretung deiner Gemeinde und sollst eine Empfehlung zur Verwendung eines knappen Budgets abgeben.
 SITUATION: Zur Wahl stehen ein dauerhafter, kostenloser Freizeitpark für alle Jugendlichen und ein einmaliges großes Konzert mit einem berühmten Star. Die Mehrheit der Jugendlichen wünscht sich das Konzert, eine Minderheit lehnt es als Geldverschwendung ab. Beurteile beide Optionen in einer zusammenhängenden Stellungnahme (ca. 150 Wörter) mit Benthams Kalkül und Mills qualitativem Einwand.
@@ -152,7 +159,7 @@ RUBRIC (30 XP): Anwendung der sieben Dimensionen auf beide Optionen (10 XP) | Ve
 AUFGABE (AFB III): Verfasse eine zusammenhaengende Darstellung von etwa 150 Woertern mit Kriterium, Anwendung und Urteil.
 RUBRIC (30 XP): These mit Kriterium (5 XP) | Rekonstruktion mit $x_1$, $x_2$ (10 XP) | Anwendung mit $d = x_2 - x_1$ (10 XP) | Fazit mit Fachbegriffen (5 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY (Kernbotschaft in einem Kasten):
 
