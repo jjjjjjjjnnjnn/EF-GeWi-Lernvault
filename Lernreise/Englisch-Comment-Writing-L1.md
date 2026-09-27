@@ -37,15 +37,15 @@ Klausur-Satz: `矛盾句——A comment convinces when the opponent is strong an
 装备盒（5件，先读中文，再记英文/德语）：
 
 - 中文点拨：CN: 立场句
-  English: **Thesis line: EN: The thesis line states standpoint in the opening. It promises direction. ** Mechanism: Position plus roadmap guides reader.  Klausur-Tipp: One sentence, no hedge.
+  English: **Thesis line: EN: The thesis line states standpoint in the opening. It promises direction. ** Mechanism: Position plus roadmap guides reader; second layer names strongest foe early; third layer promises weighed verdict with outlook.  Klausur-Tipp: One sentence, no hedge.
 - 中文点拨：CN: 点证释链
-  English: **P.E.E. chain: EN: Each paragraph chains point, evidence and explanation. It builds proof rhythm. ** Mechanism: Claim plus quotation plus effect convinces.  Klausur-Tipp: Two chains per comment minimum.
+  English: **P.E.E. chain: EN: Each paragraph chains point, evidence and explanation. It builds proof rhythm. ** Mechanism: Claim plus quotation plus effect convinces; second layer secures second chain with Z.; third layer links chains to verdict measure.  Klausur-Tipp: Two chains per comment minimum.
 - 中文点拨：CN: 反方强音
-  English: **Countervoice: EN: The countervoice states the strongest objection fairly. It earns trust. ** Mechanism: Fair foe plus rebuttal crowns verdict.  Klausur-Tipp: Steelman, never strawman.
+  English: **Countervoice: EN: The countervoice states the strongest objection fairly. It earns trust. ** Mechanism: Fair foe plus rebuttal crowns verdict; second layer steelmans with evidence; third layer turns foe into weighed footnote.  Klausur-Tipp: Steelman, never strawman.
 - 中文点拨：CN: 让步
-  English: **Concession: EN: Concession grants a point to show maturity. It narrows the fight. ** Mechanism: Grant plus limit turns foe into footnote.  Klausur-Tipp: Grant small, keep core.
+  English: **Concession: EN: Concession grants a point to show maturity. It narrows the fight. ** Mechanism: Grant plus limit turns foe into footnote; second layer grants small fabric point; third layer keeps core frame intact.  Klausur-Tipp: Grant small, keep core.
 - 中文点拨：CN: 裁决
-  English: **Verdict: EN: The verdict weighs and looks ahead. It answers the question. ** Mechanism: Weight plus outlook closes.  Klausur-Tipp: Weigh, then open door.
+  English: **Verdict: EN: The verdict weighs and looks ahead. It answers the question. ** Mechanism: Weight plus outlook closes; second layer weighs foe measure against core; third layer opens yearly vote as outlook.  Klausur-Tipp: Weigh, then open door.
 
 Klausur-Satz: `定义句——Thesis, PEE and countervoice define every comment.`
 
@@ -77,6 +77,24 @@ Bezug zum Konzept: `传导句——Strong foe plus fair weight equals trust: ste
 English TASK: Baue zu einem Thema Thesis, zwei PEE-Ketten und eine Countervoice mit Concession.
 TARGET: Three blocks, each with evidence and judgement in four sentences.
 
+PRIMAERTEXT（Study text: Uniform Comment, study version, 校服立场短文, 15 lines, 100-200词）：
+
+> Our school should keep uniforms, but make them cheaper and freer. (Z. 1)
+> Point one: uniforms cut morning pressure for poorer families. (Z. 2)
+> Evidence: a Leeds survey counted forty minutes saved daily. (Z. 3)
+> Explanation: saved time becomes sleep, breakfast and calm starts. (Z. 4)
+> Point two: shared colours build team spirit on trips. (Z. 5)
+> Evidence: teachers report fewer brand quarrels since 2022. (Z. 6)
+> Explanation: belonging grows when logos disappear from chests. (Z. 7)
+> Countervoice: critics say uniforms kill self-expression and comfort. (Z. 8)
+> Evidence: girls cite stiff blazers in hot June weeks. (Z. 9)
+> Concession: the critic is right about cut and fabric. (Z. 10)
+> Limit: style need not die; a free scarf allows voice. (Z. 11)
+> Verdict: keep the frame, free the details. (Z. 12)
+> Subsidies must cover two sets for low incomes. (Z. 13)
+> Schools should vote yearly on colours and suppliers. (Z. 14)
+> Fair uniforms unite; fair rules keep them honest. (Z. 15)
+
 HILFE（中文在前）：
 1. 中文：两句交代背景。English: Place the case in two sentences.
 2. 中文：锁两个证据。English: Secure two blocks of evidence.
@@ -84,6 +102,9 @@ HILFE（中文在前）：
 
 MUSTERLOESUNG: 中文示范：背景一句，证据加效果两句，判断一句。
 English MODEL: Case 45 shows the method in three moves with evidence, effect and judgement.
+
+MARKIERAUFTRAG（双色标注）：CN: 黄色[GELB]标立场与Point句（Z. 1-2, Z. 5, Z. 12），蓝色[BLAU]标证据与解释链（Z. 3-4, Z. 6-7, Z. 9）。EN: GELB for thesis and points, BLAU for evidence-explanation chains.
+PEE-示范链：Point (Z. 2) + Evidence (Z. 3) + Explanation (Z. 4) = 完整一环；照此再锁第二环 (Z. 5-7)。
 
 Klausur-Satz: `规律句——The comment rule: the nearer the verdict, the stronger the foe.`
 
@@ -128,6 +149,7 @@ English ROLE: You are Opinion page editor.
 SITUATION: Case 45 waits on your desk.
 TASK（中文）：150词左右，含背景、证据、权衡判断。
 RUBRIC (30 XP): Context (6 XP) | Evidence (10 XP) | Effect plus judgement (10 XP) | Register (4 XP).
+Zeitbox: 2-Minuten-Countdown fuer These plus Gegenstimme, dann schreiben. 中文：2分钟定立场与最强反方再写。
 
 Klausur-Satz: `满分句——AFB-III model: Although the foe proves X (evidence), Y weighs heavier by measure M; hence verdict with outlook.`
 
@@ -135,10 +157,10 @@ Klausur-Satz: `满分句——AFB-III model: Although the foe proves X (evidence
 
 TAKEAWAY:
 
-Klausur-Satz: `CN元认知收束——第45号案件（Comment Writing）证明：证据加功能等于判断。DE/EN: Fall 45 (Comment Writing) proves: evidence plus function equals judgement.`
+Klausur-Satz: `CN元认知收束——第45号案件（Comment校服）证明：先立最强反方再让小步称量。DE/EN: Fall 45 proves: steelman uniform foe with Z., concede fabric, weigh frame versus voice.`
 
-中文总结：先锁证据，再说效果，最后判断。
-English TAKEAWAY: Secure evidence, name effect, judge with reasons. `元认知句——Commenting means: foe strong, verdict fair, outlook open.`
+中文总结：先立最强反方，再锁两环 PEE，最后让小步裁决。
+English TAKEAWAY: Foe strong, chains two, verdict fair. `元认知句——Commenting uniforms means: foe strong with Z., verdict fair, scarf outlook open.`
 
 REFLEXION（中文在前）：
 1. 中文：近路和远路哪个更难？English: Which was harder, close evidence or distant judgement?

@@ -36,11 +36,11 @@ Klausur-Satz: `CN: 秩序托住哀伤。EN: Order holds grief.`
 
 装备盒（5件，先读中文，再背英文）：
 
-- English: **Parallelism | 排比** CN: 同构安抚耳朵。EN: Same frame calms ears.  Mechanism: Frame plus varied content steadies.  Klausur-Tipp: Mark frame.
-- English: **Litotes | 曲言** CN: 双重否定表肯定。EN: Double no means strong yes.  Mechanism: Reserve completes itself.  Klausur-Tipp: Resolve it.
-- English: **Euphemism | 委婉** CN: 软化硬词保尊严。EN: Soft words guard dignity.  Mechanism: Veil keeps grief sayable.  Klausur-Tipp: Name veiled word.
-- English: **Chiasmus | 交错** CN: 镜像成铭文。EN: Mirror makes motto.  Mechanism: Cross tests relation.  Klausur-Tipp: Mark cross.
-- English: **Climax | 层递** CN: 三级登顶。EN: Three steps crown.  Mechanism: Last weighs most.  Klausur-Tipp: Crown third.
+- English: **Parallelism | 排比** CN: 同构安抚耳朵。EN: Same frame calms ears.  Mechanism: Frame plus varied content steadies; second layer tracks three frames with Z.; third layer names calming effect for memorial appeal.  Klausur-Tipp: Mark frame.
+- English: **Litotes | 曲言** CN: 双重否定表肯定。EN: Double no means strong yes.  Mechanism: Reserve completes itself; second layer resolves not-small into strong with Z.; third layer weighs praise gain.  Klausur-Tipp: Resolve it.
+- English: **Euphemism | 委婉** CN: 软化硬词保尊严。EN: Soft words guard dignity.  Mechanism: Veil keeps grief sayable; second layer names veiled word with Z.; third layer checks dignity kept.  Klausur-Tipp: Name veiled word.
+- English: **Chiasmus | 交错** CN: 镜像成铭文。EN: Mirror makes motto.  Mechanism: Cross tests relation; second layer marks cross order with Z.; third layer crowns motto as task.  Klausur-Tipp: Mark cross.
+- English: **Climax | 层递** CN: 三级登顶。EN: Three steps crown.  Mechanism: Last weighs most; second layer numbers fund-fix-light with Z.; third layer closes memorial appeal.  Klausur-Tipp: Crown third.
 
 Klausur-Satz: `CN: 排比、曲言与层递构成三角。EN: Parallelism, litotes, climax triangulate restraint.`
 
@@ -141,15 +141,16 @@ English ROLE: You are Speech coach of the student council.
 SITUATION: Case 25 waits on your desk.
 TASK（中文）：150词左右，含背景、证据、权衡判断。
 RUBRIC (30 XP): Context (6 XP) | Quotations (10 XP) | Effect plus judgement (10 XP) | Register (4 XP).
+Zeitbox: 2-Minuten-Countdown fuer Geraet-Kette plus Appell (Litotes Z. 3, Klimax Z. 10-11), dann schreiben. 中文：先用2分钟定曲言与层递链再写。
 
 Klausur-Satz: `CN: 满分句须含曲言、层递与任务收束。EN: AFB-III sentence needs litotes, climax and task close.`
 
 ## Schritt 8 — reflexion: Takeaway und Rueckblick aus Fall 25
 
-中文总结：先锁引文，再说效果，最后判断。
-English TAKEAWAY: Secure quotation, name effect, judge with reasons. `CN: 纪念即把灯点亮。EN: Remembering raises lights.`
+中文总结：先标曲言，再数排比，最后让层递落到点灯。
+English TAKEAWAY: Mark litotes, count frames, crown task. `CN: 纪念即把灯点亮到今晚。EN: Remembering raises lights tonight with Z.`
 
-Klausur-Satz: `CN元认知收束——第25号案件（Stylistic Devices Speech Analysis）证明：证据加功能等于判断。DE/EN: Fall 25 (Stylistic Devices Speech Analysis) proves: evidence plus function equals judgement.`
+Klausur-Satz: `CN元认知收束——第25号案件（Memorial Speech）证明：克制三件套托住哀伤，层递第三步落到点灯任务。DE/EN: Fall 25 proves: restraint devices hold grief; climax Z. 10-11 turns thanks into task.`
 
 REFLEXION（中文在前）：
 1. 中文：近路和远路哪个更难？English: Which was harder, close quotation or distant judgement?

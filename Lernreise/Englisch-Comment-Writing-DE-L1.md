@@ -33,11 +33,11 @@ Klausur-Satz: `A comment convinces when the opponent is strong and the verdict i
 
 AUSRUESTUNG (5 Instrumente im Koffer):
 
-- **Thesis line**: EN: The thesis line states standpoint in the opening. It promises direction.  Mechanism: Position plus roadmap guides reader.  Klausur-Tipp: One sentence, no hedge.
-- **P.E.E. chain**: EN: Each paragraph chains point, evidence and explanation. It builds proof rhythm.  Mechanism: Claim plus quotation plus effect convinces.  Klausur-Tipp: Two chains per comment minimum.
-- **Countervoice**: EN: The countervoice states the strongest objection fairly. It earns trust.  Mechanism: Fair foe plus rebuttal crowns verdict.  Klausur-Tipp: Steelman, never strawman.
-- **Concession**: EN: Concession grants a point to show maturity. It narrows the fight.  Mechanism: Grant plus limit turns foe into footnote.  Klausur-Tipp: Grant small, keep core.
-- **Verdict**: EN: The verdict weighs and looks ahead. It answers the question.  Mechanism: Weight plus outlook closes.  Klausur-Tipp: Weigh, then open door.
+- **Thesis line**: EN: The thesis line states standpoint in the opening. It promises direction.  Mechanism: Position plus roadmap guides reader; second layer names strongest foe early; third layer promises weighed verdict.  Klausur-Tipp: One sentence, no hedge.
+- **P.E.E. chain**: EN: Each paragraph chains point, evidence and explanation. It builds proof rhythm.  Mechanism: Claim plus quotation plus effect convinces; second layer secures second chain with Z.; third layer links chains to measure.  Klausur-Tipp: Two chains per comment minimum.
+- **Countervoice**: EN: The countervoice states the strongest objection fairly. It earns trust.  Mechanism: Fair foe plus rebuttal crowns verdict; second layer steelmans with evidence; third layer weighs foe into footnote.  Klausur-Tipp: Steelman, never strawman.
+- **Concession**: EN: Concession grants a point to show maturity. It narrows the fight.  Mechanism: Grant plus limit turns foe into footnote; second layer grants calm mornings; third layer keeps health and savings core.  Klausur-Tipp: Grant small, keep core.
+- **Verdict**: EN: The verdict weighs and looks ahead. It answers the question.  Mechanism: Weight plus outlook closes; second layer weighs frame versus voice; third layer opens vote as outlook.  Klausur-Tipp: Weigh, then open door.
 
 Klausur-Satz: `Thesis, PEE and countervoice define every comment.`
 
@@ -68,12 +68,33 @@ Bezug zum Konzept: `Strong foe plus fair weight equals trust: steelman, then jud
 AUFGABE: Baue zu einem Thema Thesis, zwei PEE-Ketten und eine Countervoice mit Concession.
 TARGET: Drei Bausteine mit Beleg, je mit Funktion und einer Deutung in vier Saetzen.
 
+PRIMAERTEXT (Study text: Uniform Comment variant B, study version, 15 lines, 100-200 words):
+
+> Our school should loosen uniforms, not abolish their calm frame. (Z. 1)
+> Point one: strict rules punish warm bodies in summer terms. (Z. 2)
+> Evidence: nurses logged heat rashes during blazer weeks. (Z. 3)
+> Explanation: comfort decides attention more than colour does. (Z. 4)
+> Point two: high prices burden single parents each September. (Z. 5)
+> Evidence: receipts show ninety pounds per growing child. (Z. 6)
+> Explanation: cost, not colour, breaks equal starts. (Z. 7)
+> Countervoice: supporters praise calm mornings and fewer brand wars. (Z. 8)
+> Evidence: mentors count fewer quarrels since shared dress. (Z. 9)
+> Concession: calm mornings truly help tired families. (Z. 10)
+> Limit: calm must not cost health or savings. (Z. 11)
+> Verdict: loosen cut, cap prices, keep shared colours. (Z. 12)
+> A voted scarf and free trousers carry voice. (Z. 13)
+> Funds should cover spare sets for low incomes. (Z. 14)
+> Loose frames unite; tested rules keep them fair. (Z. 15)
+
 HILFE:
 1. Schritt 1: Ordne den Fall in zwei Saetzen ein.
 2. Schritt 2: Sichere zwei Bausteine mit Beleg.
 3. Schritt 3: Deute Baustein und Funktion im Fallganzen.
 
 MUSTERLOESUNG: Der Fall 46 zeigt das Verfahren in drei Schritten. Erstens sichert ein Beleg den Kern. Zweitens traegt die Funktion die Wirkung. Drittens schliesst die Deutung das Urteil.
+
+MARKIERAUFTRAG: Markiere mit GELB These und Points (Z. 1-2, Z. 5, Z. 12). Markiere mit BLAU Evidenz und Erklaerung (Z. 3-4, Z. 6-7, Z. 9).
+PEE-Kette als Muster: Point (Z. 2) plus Evidence (Z. 3) plus Explanation (Z. 4); zweite Kette (Z. 5-7).
 
 Klausur-Satz: `The comment rule: the nearer the verdict, the stronger the foe.`
 
@@ -114,6 +135,7 @@ ROLLE: Du bist Opinion page editor in der Pruefung.
 SITUATION: Ein Fall liegt unbearbeitet auf dem Tisch und verlangt Einordnung, Belege und Urteil.
 AUFGABE: Verfasse circa 150 Woerter mit Einordnung, zwei Belegen, Funktion, Deutung und Schlussurteil.
 RUBRIC (30 XP): Einordnung korrekt (6 XP) | Zwei Belege (10 XP) | Funktion plus Deutung (10 XP) | Fachsprache und Schluss (4 XP).
+Zeitbox: 2-Minuten-Countdown fuer These plus Gegenstimme, dann schreiben.
 
 Klausur-Satz: `AFB-III model: Although the foe proves X (evidence), Y weighs heavier by measure M; hence verdict with outlook.`
 
@@ -121,9 +143,9 @@ Klausur-Satz: `AFB-III model: Although the foe proves X (evidence), Y weighs hea
 
 TAKEAWAY:
 
-Klausur-Satz: `Fall 46 (Comment Writing DE) schliesst: Wer Beleg, Funktion und Urteil sichert, besteht jede Klausur.`
+Klausur-Satz: `Fall 46 (Comment Variante B DE) schliesst: Wer These mit Z. setzt, zwei Ketten baut und calm mornings zugesteht, aber Gesundheit haelt.`
 
-Fall 46 lehrt den Dreischritt aus Beleg, Funktion und Urteil. Takeaway-Satz: `Commenting means: foe strong, verdict fair, outlook open.`
+Fall 46 lehrt Variante B als lockeren Rahmen mit Preisdeckel. Takeaway-Satz: `Commenting variant B means: loosen cut with Z., cap prices, keep shared colours.`
 
 REFLEXION:
 1. Welche Spur fiel schwerer, der Nahbeleg oder das Fernurteil?

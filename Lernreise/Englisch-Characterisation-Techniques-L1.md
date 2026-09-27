@@ -36,11 +36,11 @@ Klausur-Satz: `CN: 标签说可靠，行为分两层。EN: Label says reliable; 
 
 装备盒（5件，先读中文，再背英文）：
 
-- English: **Direct characterisation | 直接塑造** CN: 叙述者直接贴标签。EN: Direct characterisation labels traits openly. It is fast and risky.  Mechanism: Label plus authority fixes image; scenes test it.  Klausur-Tipp: Quote label, test with behaviour.
-- English: **Indirect characterisation | 间接塑造** CN: 言行习惯暗示性格。EN: Indirect characterisation shows through speech and act. It is slow and strong.  Mechanism: Repetition turns act into trait.  Klausur-Tipp: Collect three signs.
-- English: **Speech as sign | 言语信号** CN: 口音、停顿与礼貌即阶层。EN: Speech reveals class and tactic. Every hello positions.  Mechanism: Register plus silence maps power.  Klausur-Tipp: Link habit to trait.
-- English: **Foil | 陪衬** CN: 对照 sharpen 主角。EN: A foil mirrors by contrast. Difference teaches.  Mechanism: Shared scene plus opposite choice doubles meaning.  Klausur-Tipp: Name shared scene.
-- English: **Development | 发展** CN: 成长或现形。EN: Development tracks change or exposure. The arc argues.  Mechanism: First plus last scene measures change.  Klausur-Tipp: Compare ends.
+- English: **Direct characterisation | 直接塑造** CN: 叙述者直接贴标签。EN: Direct characterisation labels traits openly. It is fast and risky.  Mechanism: Label plus authority fixes image; scenes test it; second layer quotes reliable with Z.; third layer tests with towel cost.  Klausur-Tipp: Quote label, test with behaviour.
+- English: **Indirect characterisation | 间接塑造** CN: 言行习惯暗示性格。EN: Indirect characterisation shows through speech and act. It is slow and strong.  Mechanism: Repetition turns act into trait; second layer collects cap-sorry-lift with Z.; third layer confirms pattern.  Klausur-Tipp: Collect three signs.
+- English: **Speech as sign | 言语信号** CN: 口音、停顿与礼貌即阶层。EN: Speech reveals class and tactic. Every hello positions.  Mechanism: Register plus silence maps power; second layer links sorry-pattern to care with Z.; third layer ranks station order.  Klausur-Tipp: Link habit to trait.
+- English: **Foil | 陪衬** CN: 对照 sharpen 主角。EN: A foil mirrors by contrast. Difference teaches.  Mechanism: Shared scene plus opposite choice doubles meaning; second layer names platform scene with Max and Z.; third layer sharpens Tom.  Klausur-Tipp: Name shared scene.
+- English: **Development | 发展** CN: 成长或现形。EN: Development tracks change or exposure. The arc argues.  Mechanism: First plus last scene measures change; second layer compares announcer thin repeat with Z.; third layer judges confirmed or exposed.  Klausur-Tipp: Compare ends.
 
 Klausur-Satz: `CN: 直接、间接与陪衬构成三角。EN: Direct, indirect and foil triangulate character.`
 
@@ -141,15 +141,16 @@ English ROLE: You are Book reviewer for the school magazine.
 SITUATION: Case 47 waits on your desk.
 TASK（中文）：150词左右，含背景、证据、权衡判断。
 RUBRIC (30 XP): Context (6 XP) | Quotations (10 XP) | Effect plus judgement (10 XP) | Register (4 XP).
+Zeitbox: 2-Minuten-Countdown fuer Etikett-Plan (reliable Z. 1, sorry Z. 3, towel Z. 10), dann schreiben. 中文：先用2分钟定标签与三证据再写。
 
 Klausur-Satz: `CN: 满分句须含标签、三证据与陪衬。EN: AFB-III sentence needs label, three signs and foil.`
 
 ## Schritt 8 — reflexion: Takeaway und Rueckblick aus Fall 47
 
-中文总结：先锁引文，再说效果，最后判断。
-English TAKEAWAY: Secure quotation, name effect, judge with reasons. `CN: 读人即对账标签与账单。EN: Reading character means auditing labels.`
+中文总结：先引标签，再攒三间接，最后审陪衬。
+English TAKEAWAY: Quote label, stack three, audit foil. `CN: 读人即对账标签到毛巾。EN: Auditing labels ends at offered towels Z. 10.`
 
-Klausur-Satz: `CN元认知收束——第47号案件（Characterisation Techniques）证明：证据加功能等于判断。DE/EN: Fall 47 (Characterisation Techniques) proves: evidence plus function equals judgement.`
+Klausur-Satz: `CN元认知收束——第47号案件（Platform Two）证明：标签越响越查代价，毛巾为证。DE/EN: Fall 47 proves: label Z. 1 tested by towel Z. 10 and scarf Z. 12-14.`
 
 REFLEXION（中文在前）：
 1. 中文：近路和远路哪个更难？English: Which was harder, close quotation or distant judgement?

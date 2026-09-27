@@ -36,11 +36,11 @@ Klausur-Satz: `CN: 柔软的笼子也是笼子。EN: Soft cages cage too.`
 
 装备盒（5件，先读中文，再背英文）：
 
-- English: **Surveillance | 监视** CN: 屏幕与名单管身体。EN: Surveillance watches bodies. Fear becomes habit.  Mechanism: Camera plus slogan internalises control.  Klausur-Tipp: Quote screen plus sanction.
-- English: **Conditioning | 规训** CN: 舒适用重复管欲望。EN: Conditioning trains desire softly. Pleasure cages.  Mechanism: Comfort plus repetition replaces thought.  Klausur-Tipp: Name comfort and price.
-- English: **Newspeak/Soma-talk | 新话** CN: 删词即删思想。EN: Fewer words mean fewer crimes.  Mechanism: Deleted shade narrows thinkable.  Klausur-Tipp: Show deleted meaning.
-- English: **Doublethink | 双重思想** CN: 同时 holding 对立真理。EN: Doublethink holds opposites. Contradiction is loyalty.  Mechanism: Ritual rewards inconsistency.  Klausur-Tipp: Quote the pair.
-- English: **Resistance | 反抗** CN: 记忆与小偷小摸。EN: Resistance hides in kept objects. Tiny acts weigh much.  Mechanism: Kept habit preserves past.  Klausur-Tipp: Weigh act vs punishment.
+- English: **Surveillance | 监视** CN: 屏幕与名单管身体。EN: Surveillance watches bodies. Fear becomes habit.  Mechanism: Camera plus slogan internalises control; second layer quotes wall smile with Z.; third layer weighs fear habit.  Klausur-Tipp: Quote screen plus sanction.
+- English: **Conditioning | 规训** CN: 舒适用重复管欲望。EN: Conditioning trains desire softly. Pleasure cages.  Mechanism: Comfort plus repetition replaces thought; second layer names soma dose with Z.; third layer prices comfort.  Klausur-Tipp: Name comfort and price.
+- English: **Newspeak/Soma-talk | 新话** CN: 删词即删思想。EN: Fewer words mean fewer crimes.  Mechanism: Deleted shade narrows thinkable; second layer shows lonely-to-connected cut with Z.; third layer judges deletion.  Klausur-Tipp: Show deleted meaning.
+- English: **Doublethink | 双重思想** CN: 同时 holding 对立真理。EN: Doublethink holds opposites. Contradiction is loyalty.  Mechanism: Ritual rewards inconsistency; second layer quotes stability-happiness pair with Z.; third layer exposes loyalty cost.  Klausur-Tipp: Quote the pair.
+- English: **Resistance | 反抗** CN: 记忆与小偷小摸。EN: Resistance hides in kept objects. Tiny acts weigh much.  Mechanism: Kept habit preserves past; second layer quotes kept Shakespeare line with Z.; third layer weighs headache versus moon.  Klausur-Tipp: Weigh act vs punishment.
 
 Klausur-Satz: `CN: 监视、规训与新话构成三角。EN: Surveillance, conditioning and word-cut define dystopia.`
 
@@ -141,15 +141,16 @@ English ROLE: You are Essay coach for the final exam.
 SITUATION: Case 43 waits on your desk.
 TASK（中文）：150词左右，含背景、证据、权衡判断。
 RUBRIC (30 XP): Context (6 XP) | Quotations (10 XP) | Effect plus judgement (10 XP) | Register (4 XP).
+Zeitbox: 2-Minuten-Countdown fuer Dosis-Plan (soma Z. 2-3, crossed Z. 4, kept Z. 9), dann schreiben. 中文：先用2分钟定剂量与删词再写。
 
 Klausur-Satz: `CN: 满分句须含安抚引文、删词证据与代价权衡。EN: AFB-III sentence needs comfort quotation, deletion proof and cost weighing.`
 
 ## Schritt 8 — reflexion: Takeaway und Rueckblick aus Fall 43
 
-中文总结：先锁引文，再说效果，最后判断。
-English TAKEAWAY: Secure quotation, name effect, judge with reasons. `CN: 读反乌托邦即为安抚标价。EN: Reading dystopia means pricing comfort.`
+中文总结：先标安抚装置，再抓删词，最后为舒适标价。
+English TAKEAWAY: Mark comfort, catch deletion, price it. `CN: 读软笼子须数剂量。EN: Pricing comfort counts doses Z. 2-3.`
 
-Klausur-Satz: `CN元认知收束——第43号案件（Dystopian Fiction 1984 Brave New World）证明：证据加功能等于判断。DE/EN: Fall 43 (Dystopian Fiction 1984 Brave New World) proves: evidence plus function equals judgement.`
+Klausur-Satz: `CN元认知收束——第43号案件（Hatchery Smiles）证明：剂量越大问题越少，纸书即反抗。DE/EN: Fall 43 proves: dose Z. 3 silences questions; kept book Z. 9 prices hope.`
 
 REFLEXION（中文在前）：
 1. 中文：近路和远路哪个更难？English: Which was harder, close quotation or distant judgement?

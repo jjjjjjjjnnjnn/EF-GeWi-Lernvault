@@ -33,11 +33,11 @@ Klausur-Satz: `The triple rewards sequence: neutral first, sharp second, fair la
 
 AUSRUESTUNG (5 Instrumente im Koffer):
 
-- **Summary**: EN: Summary condenses main lines neutrally. No judgement enters.  Mechanism: Main plus logic minus example compresses.  Klausur-Tipp: One third of time, own words.
-- **Analysis**: EN: Analysis dissects devices with effect. Quotation meets function.  Mechanism: Device plus line plus effect proves.  Klausur-Tipp: Two devices with chains.
-- **Comment**: EN: Comment judges with measure and outlook. It answers so-what.  Mechanism: Foe plus weight closes fairly.  Klausur-Tipp: Steelman, then weigh.
-- **Register ladder**: EN: Register climbs from neutral to personal. Each step changes pronouns.  Mechanism: Step plus signal marks part.  Klausur-Tipp: Mark transitions.
-- **Time blocks**: EN: Time blocks split reading, writing and proofing. Buffers rescue ends.  Mechanism: Blocks plus buffer create calm.  Klausur-Tipp: Ten minutes proofing.
+- **Summary**: EN: Summary condenses main lines neutrally. No judgement enters.  Mechanism: Main plus logic minus example compresses; second layer keeps own words with line; third layer tests neutrality before verdict.  Klausur-Tipp: One third of time, own words.
+- **Analysis**: EN: Analysis dissects devices with effect. Quotation meets function.  Mechanism: Device plus line plus effect proves; second layer chains two devices with Z.; third layer names function in triple sequence.  Klausur-Tipp: Two devices with chains.
+- **Comment**: EN: Comment judges with measure and outlook. It answers so-what.  Mechanism: Foe plus weight closes fairly; second layer steelmans foe with evidence; third layer crowns verdict with outlook.  Klausur-Tipp: Steelman, then weigh.
+- **Register ladder**: EN: Register climbs from neutral to personal. Each step changes pronouns.  Mechanism: Step plus signal marks part; second layer shifts pronouns per step; third layer bridges parts with transitions.  Klausur-Tipp: Mark transitions.
+- **Time blocks**: EN: Time blocks split reading, writing and proofing. Buffers rescue ends.  Mechanism: Blocks plus buffer create calm; second layer reserves ten minutes proofing; third layer checks rubric points with Z.  Klausur-Tipp: Ten minutes proofing.
 
 Klausur-Satz: `Summary, analysis and comment define every IQB writing set.`
 
@@ -68,12 +68,32 @@ Bezug zum Konzept: `Neutral plus sharp plus fair equals full performance.`
 AUFGABE: Erstelle zu einem Text Summary-Satz, zwei Analyse-Ketten und Thesis plus Countervoice.
 TARGET: Drei Bausteine mit Beleg, je mit Funktion und einer Deutung in vier Saetzen.
 
+PRIMAERTEXT (Study text: Morning Market Library, study version, unseen 15 lines, 100-200 words):
+
+> The morning market library opens inside old tram cars. (Z. 1)
+> Vendors lend cookbooks between fruit crates. (Z. 2)
+> We count loans, the driver says, not coins. (Z. 3)
+> Flyers call the tram a kitchen of pages. (Z. 4)
+> Funding, however, ends in March. (Z. 5)
+> The council praises readers but delays grants. (Z. 6)
+> Pupils queue with baskets, balls and sleepy eyes. (Z. 7)
+> A baker reads recipes during flour breaks. (Z. 8)
+> She says spices steady her mornings. (Z. 9)
+> Critics warn trams cannot replace town libraries. (Z. 10)
+> They cite shelves, silence and study desks. (Z. 11)
+> The team answers with routes and bright lamps. (Z. 12)
+> Small stops, they argue, beat closed doors. (Z. 13)
+> The town must decide: rails, rooms or both. (Z. 14)
+> Children vote daily by simply boarding. (Z. 15)
+
 HILFE:
 1. Schritt 1: Ordne den Fall in zwei Saetzen ein.
 2. Schritt 2: Sichere zwei Bausteine mit Beleg.
 3. Schritt 3: Deute Baustein und Funktion im Fallganzen.
 
 MUSTERLOESUNG: Der Fall 40 zeigt das Verfahren in drei Schritten. Erstens sichert ein Beleg den Kern. Zweitens traegt die Funktion die Wirkung. Drittens schliesst die Deutung das Urteil.
+
+MARKIERAUFTRAG: Markiere mit GELB Summary-Kerne (tram cars Z. 1, loans Z. 3, routes Z. 12). Markiere mit BLAU Analyse- und Comment-Signale (however Z. 5, cannot Z. 10, must decide Z. 14).
 
 Klausur-Satz: `The triple rule: the tighter the clock, the firmer the blocks.`
 
@@ -112,8 +132,9 @@ Klausur-Satz: `Often confused: analysis without effect is summary in disguise.`
 
 ROLLE: Du bist IQB writing coach in der Pruefung.
 SITUATION: Ein Fall liegt unbearbeitet auf dem Tisch und verlangt Einordnung, Belege und Urteil.
-AUFGABE: Verfasse circa 150 Woerter mit Einordnung, zwei Belegen, Funktion, Deutung und Schlussurteil.
-RUBRIC (30 XP): Einordnung korrekt (6 XP) | Zwei Belege (10 XP) | Funktion plus Deutung (10 XP) | Fachsprache und Schluss (4 XP).
+AUFGABE: Verfasse circa 150 Woerter mit Einordnung, zwei Belegen mit Z., Funktion, Deutung und Schlussurteil.
+RUBRIC (30 XP): Einordnung korrekt (6 XP) | Zwei Belege mit Z. (10 XP) | Funktion plus Deutung (10 XP) | Fachsprache und Schluss (4 XP).
+Zeitbox: 2-Minuten-Countdown fuer Dreistufen-Plan (Summary-Satz plus zwei Ketten mit Z.), dann schreiben.
 
 Klausur-Satz: `AFB-III model: Devices X (line) and Y (line) prove effect E; though foe shows F, measure M crowns verdict V.`
 
@@ -121,9 +142,9 @@ Klausur-Satz: `AFB-III model: Devices X (line) and Y (line) prove effect E; thou
 
 TAKEAWAY:
 
-Klausur-Satz: `Fall 40 (IQB Writing DE) schliesst: Wer Beleg, Funktion und Urteil sichert, besteht jede Klausur.`
+Klausur-Satz: `Fall 40 (IQB Writing Tram-Library DE) schliesst: Wer neutral rafft, mit Z. zweifach belegt und fair urteilt, traegt die Dreistufen-Uhr.`
 
-Fall 40 lehrt den Dreischritt aus Beleg, Funktion und Urteil. Takeaway-Satz: `Triple writing means: condense, dissect, judge with outlook.`
+Fall 40 lehrt Tram-Library als Dreischritt aus Raffen, Belegen, Urteilen. Takeaway-Satz: `Triple writing on rails means: condense neutrally, dissect with Z., judge with outlook.`
 
 REFLEXION:
 1. Welche Spur fiel schwerer, der Nahbeleg oder das Fernurteil?

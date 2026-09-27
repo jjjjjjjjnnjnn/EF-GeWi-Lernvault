@@ -132,8 +132,9 @@ Klausur-Satz: `Haeufig verwechselt: Denkmal ist kein Fakt; erst Inschrift plus R
 
 ROLLE: Du bist Culture columnist of the school paper in der Pruefung.
 SITUATION: Ein Fall liegt unbearbeitet auf dem Tisch und verlangt Einordnung, Belege und Urteil.
-AUFGABE: Verfasse circa 150 Woerter mit Einordnung, zwei Belegen mit Zeile, Funktion, Deutung und Schlussurteil.
-RUBRIC (30 XP): Einordnung korrekt (6 XP) | Zwei Belege mit Zeile (10 XP) | Funktion plus Deutung (10 XP) | Fachsprache und Schluss (4 XP).
+AUFGABE: Verfasse circa 150 Woerter mit Einordnung, zwei Belegen mit Z., Funktion, Deutung und Schlussurteil.
+RUBRIC (30 XP): Einordnung korrekt (6 XP) | Zwei Belege mit Z. (10 XP) | Funktion plus Deutung (10 XP) | Fachsprache und Schluss (4 XP).
+Zeitbox: 2-Minuten-Countdown fuer Tafel-Plan (BENEFACTOR Z. 2, TRADER Z. 8, Switch Z. 11), dann schreiben.
 
 Klausur-Satz: `AFB-III-Mustersatz: BENEFACTOR (Z. 2) gegen TRADER (Z. 8) mit Switch (Z. 11) belegt umkaempfte Erinnerung, weil Gegentafel plus Mehrsprachigkeit Deutungsmonopol bricht.`
 
@@ -141,9 +142,9 @@ Klausur-Satz: `AFB-III-Mustersatz: BENEFACTOR (Z. 2) gegen TRADER (Z. 8) mit Swi
 
 TAKEAWAY:
 
-Klausur-Satz: `Fall 30 (Postcolonialism Cultural Identity DE) schliesst: Wer Beleg, Funktion und Urteil sichert, besteht jede Klausur.`
+Klausur-Satz: `Fall 30 (Hafen Bristol DE) schliesst: Wer BENEFACTOR Z. 2 gegen TRADER Z. 8 haelt und Yoruba Z. 11 als Hybrid liest, bricht das Monopol.`
 
-Fall 30 lehrt den Dreischritt aus Beleg, Funktion und Urteil. Takeaway-Satz: `Postkolonial lesen heisst: Tafeln vergleichen und fragen, wessen Ebbe gerade herrscht.`
+Fall 30 lehrt Hafen als Bronze gegen Pappe mit Tide. Takeaway-Satz: `Postkolonial am Hafen heisst: Bronze Z. 2 zitieren, Pappe Z. 8 halten, Tide Z. 14 als Fortschritt lesen.`
 
 REFLEXION:
 1. Welche Spur fiel schwerer, der Nahbeleg oder das Fernurteil?

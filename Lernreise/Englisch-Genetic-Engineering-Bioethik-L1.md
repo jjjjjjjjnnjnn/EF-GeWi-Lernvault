@@ -36,11 +36,11 @@ Klausur-Satz: `CN: 面包诚实，专利要账。EN: Bread is honest; patents bi
 
 装备盒（5件，先读中文，再背英文）：
 
-- English: **Therapy vs enhancement | 治疗与增强** CN: 治病与定制。EN: Therapy heals; enhancement designs.  Mechanism: Purpose judges technique.  Klausur-Tipp: Name purpose first.
-- English: **Consent | 同意** CN: 种子与后代无法点头。EN: Seeds and children cannot sign.  Mechanism: Proxy plus permanence creates asymmetry.  Klausur-Tipp: Ask who signs.
-- English: **Justice and access | 公正** CN: 专利与价格集中受益。EN: Patents concentrate benefit.  Mechanism: Price filters cure.  Klausur-Tipp: Follow money.
-- English: **Risk and unknown | 风险** CN: 基因漂流与长期效应。EN: Gene flow outruns trials.  Mechanism: Short test plus open field equals uncertainty.  Klausur-Tipp: Quote horizon.
-- English: **Slippery slope | 滑坡** CN: 抗旱之后是审美。EN: Drought today, decoration tomorrow.  Mechanism: Accepted case widens permission.  Klausur-Tipp: Test steps.
+- English: **Therapy vs enhancement | 治疗与增强** CN: 治病与定制。EN: Therapy heals; enhancement designs.  Mechanism: Purpose judges technique; second layer names wheat purpose with Z.; third layer draws field line verdict.  Klausur-Tipp: Name purpose first.
+- English: **Consent | 同意** CN: 种子与后代无法点头。EN: Seeds and children cannot sign.  Mechanism: Proxy plus permanence creates asymmetry; second layer asks who signed with Z.; third layer weighs neighbour harvest.  Klausur-Tipp: Ask who signs.
+- English: **Justice and access | 公正** CN: 专利与价格集中受益。EN: Patents concentrate benefit.  Mechanism: Price filters cure; second layer follows patent money with Z.; third layer judges bread access.  Klausur-Tipp: Follow money.
+- English: **Risk and unknown | 风险** CN: 基因漂流与长期效应。EN: Gene flow outruns trials.  Mechanism: Short test plus open field equals uncertainty; second layer quotes pollen fence with Z.; third layer demands legal lines.  Klausur-Tipp: Quote horizon.
+- English: **Slippery slope | 滑坡** CN: 抗旱之后是审美。EN: Drought today, decoration tomorrow.  Mechanism: Accepted case widens permission; second layer tests trial-versus-release steps; third layer conditions release.  Klausur-Tipp: Test steps.
 
 Klausur-Satz: `CN: 田野把同意问题放大。EN: Fields magnify consent problems.`
 
@@ -141,15 +141,16 @@ English ROLE: You are Debate coach for the ethics panel.
 SITUATION: Case 41 waits on your desk.
 TASK（中文）：150词左右，含背景、证据、权衡判断。
 RUBRIC (30 XP): Context (6 XP) | Quotations (10 XP) | Effect plus judgement (10 XP) | Register (4 XP).
+Zeitbox: 2-Minuten-Countdown fuer Linien-Plan (yield Z. 2, pollen Z. 5, release Z. 12-13), dann schreiben. 中文：先用2分钟定产量与漂流再写。
 
 Klausur-Satz: `CN: 满分句须含产量数字、漂流证据与条件句。EN: AFB-III sentence needs yield figure, flow proof and condition.`
 
 ## Schritt 8 — reflexion: Takeaway und Rueckblick aus Fall 41
 
-中文总结：先锁引文，再说效果，最后判断。
-English TAKEAWAY: Secure quotation, name effect, judge with reasons. `CN: 种地即立法未来。EN: Sowing legislates futures.`
+中文总结：先抓trial-release偷换，再看漂流，最后附条件放行。
+English TAKEAWAY: Catch wordplay, track flow, condition release. `CN: 种地立法须带检查员。EN: Sowing legislates futures with inspectors Z. 15.`
 
-Klausur-Satz: `CN元认知收束——第41号案件（Genetic Engineering Bioethik）证明：证据加功能等于判断。DE/EN: Fall 41 (Genetic Engineering Bioethik) proves: evidence plus function equals judgement.`
+Klausur-Satz: `CN元认知收束——第41号案件（Wheat Lab）证明：花粉不认篱笆，trial不等于release。DE/EN: Fall 41 proves: pollen Z. 5 beats fence; release needs inspectors Z. 15.`
 
 REFLEXION（中文在前）：
 1. 中文：近路和远路哪个更难？English: Which was harder, close quotation or distant judgement?

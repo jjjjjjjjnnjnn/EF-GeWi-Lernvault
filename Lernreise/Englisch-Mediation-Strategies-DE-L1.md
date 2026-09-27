@@ -33,11 +33,11 @@ Klausur-Satz: `Strategies keep law readable: plain twins, clear heads, honest fl
 
 AUSRUESTUNG (5 Instrumente im Koffer):
 
-- **Register shift**: EN: Register shifts formal to plain for the reader. Calm replaces clause.  Mechanism: Term plus plain twin keeps law, drops fear.  Klausur-Tipp: Twin every term once.
-- **Cultural transfer**: EN: Transfer explains deposits, duties and dates. Systems differ.  Mechanism: Rule plus system note prevents breach.  Klausur-Tipp: Note system gaps.
-- **Structuring**: EN: Structuring orders facts with headings. Scanning beats searching.  Mechanism: Head plus bullet speeds use.  Klausur-Tipp: Head every block.
-- **Tone mediation**: EN: Tone keeps firm facts friendly. Politeness carries obligation.  Mechanism: Must plus please balances duty.  Klausur-Tipp: Soften modal, keep must.
-- **Accuracy check**: EN: The check compares target against source. Nothing invented.  Mechanism: Back-check plus flag secures trust.  Klausur-Tipp: Verify numbers twice.
+- **Register shift**: EN: Register shifts formal to plain for the reader. Calm replaces clause.  Mechanism: Term plus plain twin keeps law, drops fear; second layer tests twin sense; third layer keeps must while softening tone.  Klausur-Tipp: Twin every term once.
+- **Cultural transfer**: EN: Transfer explains deposits, duties and dates. Systems differ.  Mechanism: Rule plus system note prevents breach; second layer adds fee system note; third layer measures breach risk drop.  Klausur-Tipp: Note system gaps.
+- **Structuring**: EN: Structuring orders facts with headings. Scanning beats searching.  Mechanism: Head plus bullet speeds use; second layer groups clauses under heads; third layer tests scanning for newcomer.  Klausur-Tipp: Head every block.
+- **Tone mediation**: EN: Tone keeps firm facts friendly. Politeness carries obligation.  Mechanism: Must plus please balances duty; second layer softens modal keeping must; third layer checks friendly firmness.  Klausur-Tipp: Soften modal, keep must.
+- **Accuracy check**: EN: The check compares target against source. Nothing invented.  Mechanism: Back-check plus flag secures trust; second layer verifies figures twice; third layer flags unclear scope.  Klausur-Tipp: Verify numbers twice.
 
 Klausur-Satz: `Twins, notes and heads define every mediation strategy.`
 
@@ -68,12 +68,29 @@ Bezug zum Konzept: `Plain plus system plus check equals usable contract.`
 AUFGABE: Baue zu drei Klauseln Plain-Twins, Systemnotiz und Ueberschrift mit Toncheck.
 TARGET: Drei Bausteine mit Beleg, je mit Funktion und einer Deutung in vier Saetzen.
 
+PRIMAERTEXT (Study text: Harbour View Tenancy, study version, Mietvertrag ca. 130 Woerter, 12 lines):
+
+> Harbour View lets Studio 2 from first November. (Z. 1)
+> Rent totals six hundred pounds monthly in advance. (Z. 2)
+> Advance means paid before the month begins. (Z. 3)
+> Termination needs two months notice in writing. (Z. 4)
+> Writing means letter or mail to the office. (Z. 5)
+> Pets stay forbidden without written exception. (Z. 6)
+> Exception means signed note for one small animal. (Z. 7)
+> Cleaning of stairs rotates weekly among tenants. (Z. 8)
+> Rotation means plan on the board decides. (Z. 9)
+> Late payment above ten days costs a fee. (Z. 10)
+> Fee totals twenty pounds plus bank charges. (Z. 11)
+> We value quiet nights and quick replies. (Z. 12)
+
 HILFE:
 1. Schritt 1: Ordne den Fall in zwei Saetzen ein.
 2. Schritt 2: Sichere zwei Bausteine mit Beleg.
 3. Schritt 3: Deute Baustein und Funktion im Fallganzen.
 
 MUSTERLOESUNG: Der Fall 34 zeigt das Verfahren in drei Schritten. Erstens sichert ein Beleg den Kern. Zweitens traegt die Funktion die Wirkung. Drittens schliesst die Deutung das Urteil.
+
+MARKIERAUFTRAG: Markiere mit GELB alle Klauseln (Rent Z. 2, Termination Z. 4, Pets Z. 6). Markiere mit BLAU Twins und Pruefpunkte (Advance Z. 3, Writing Z. 5, Exception Z. 7, Fee Z. 10-11).
 
 Klausur-Satz: `The strategy rule: the harder the clause, the plainer the twin.`
 
@@ -114,6 +131,7 @@ ROLLE: Du bist Relocation guide editor in der Pruefung.
 SITUATION: Ein Fall liegt unbearbeitet auf dem Tisch und verlangt Einordnung, Belege und Urteil.
 AUFGABE: Verfasse circa 150 Woerter mit Einordnung, zwei Belegen, Funktion, Deutung und Schlussurteil.
 RUBRIC (30 XP): Einordnung korrekt (6 XP) | Zwei Belege (10 XP) | Funktion plus Deutung (10 XP) | Fachsprache und Schluss (4 XP).
+Zeitbox: 2-Minuten-Countdown fuer Klausel-Twins plus Systemnotiz (Rent, Termination, Pets), dann schreiben.
 
 Klausur-Satz: `AFB-III model: Clauses C1-C3 twinned plainly with system notes S and verified figures yield newcomer-ready text.`
 
@@ -121,9 +139,9 @@ Klausur-Satz: `AFB-III model: Clauses C1-C3 twinned plainly with system notes S 
 
 TAKEAWAY:
 
-Klausur-Satz: `Fall 34 (Mediation Strategies DE) schliesst: Wer Beleg, Funktion und Urteil sichert, besteht jede Klausur.`
+Klausur-Satz: `Fall 34 (Mediation Strategies Mietvertrag DE) schliesst: Wer Twins setzt, System notiert und Z. 10-11 doppelt prueft, hilft dem Newcomer.`
 
-Fall 34 lehrt den Dreischritt aus Beleg, Funktion und Urteil. Takeaway-Satz: `Strategising means: twin, note, head, soften, verify.`
+Fall 34 lehrt Mietvertrag als Hilfe aus Twins, Koepfen und Check. Takeaway-Satz: `Strategising a tenancy means: twin Rent, head duties, verify fee Z. 10-11.`
 
 REFLEXION:
 1. Welche Spur fiel schwerer, der Nahbeleg oder das Fernurteil?

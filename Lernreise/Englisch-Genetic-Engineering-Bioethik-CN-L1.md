@@ -36,11 +36,11 @@ Klausur-Satz: `CN: 剪刀无罪，目的有界。EN: Scissors are neutral; purpo
 
 装备盒（5件，先读中文，再背英文）：
 
-- English: **Therapy vs enhancement | 治疗与增强** CN: 治病与定制人的界限。EN: Therapy heals; enhancement designs. The line moves.  Mechanism: Same tool, different aim; purpose judges technique.  Klausur-Tipp: Name purpose before verdict.
-- English: **Consent | 知情同意** CN: 未出生者无法点头。EN: The unborn cannot consent. Parents sign for futures.  Mechanism: Proxy consent plus lifelong effect creates asymmetry.  Klausur-Tipp: Ask who signs for whom.
-- English: **Justice and access | 公正与准入** CN: 基因彩票叠加金钱彩票。EN: Money buys code; code buys chance. Gaps widen.  Mechanism: Price plus patent concentrates benefit.  Klausur-Tipp: Follow the money, then the code.
-- English: **Risk and unknown | 风险与未知** CN: 脱靶与代际传递。EN: Off-target edits echo generations. Knowledge lags power.  Mechanism: Short trial plus long germline equals uncertainty.  Klausur-Tipp: Quote risk with time horizon.
-- English: **Slippery slope | 滑坡** CN: 今天治病，明天定制。EN: Cure today, design tomorrow. Steps seduce.  Mechanism: Accepted case plus analogy widens permission.  Klausur-Tipp: Test each step separately.
+- English: **Therapy vs enhancement | 治疗与增强** CN: 治病与定制人的界限。EN: Therapy heals; enhancement designs. The line moves.  Mechanism: Same tool, different aim; purpose judges technique; second layer splits cure versus catalogue with Z.; third layer draws heredity line.  Klausur-Tipp: Name purpose before verdict.
+- English: **Consent | 知情同意** CN: 未出生者无法点头。EN: The unborn cannot consent. Parents sign for futures.  Mechanism: Proxy consent plus lifelong effect creates asymmetry; second layer quotes shaking hand with Z.; third layer weighs signatures for futures.  Klausur-Tipp: Ask who signs for whom.
+- English: **Justice and access | 公正与准入** CN: 基因彩票叠加金钱彩票。EN: Money buys code; code buys chance. Gaps widen.  Mechanism: Price plus patent concentrates benefit; second layer follows per-embryo price with Z.; third layer judges who is cured.  Klausur-Tipp: Follow the money, then the code.
+- English: **Risk and unknown | 风险与未知** CN: 脱靶与代际传递。EN: Off-target edits echo generations. Knowledge lags power.  Mechanism: Short trial plus long germline equals uncertainty; second layer quotes three percent with Z.; third layer demands time horizon.  Klausur-Tipp: Quote risk with time horizon.
+- English: **Slippery slope | 滑坡** CN: 今天治病，明天定制。EN: Cure today, design tomorrow. Steps seduce.  Mechanism: Accepted case plus analogy widens permission; second layer tests each step separately; third layer keeps somatic yes, germline no.  Klausur-Tipp: Test each step separately.
 
 Klausur-Satz: `CN: 治疗、同意与公正是三角。EN: Cure, consent and justice triangulate bioethics.`
 
@@ -141,15 +141,16 @@ English ROLE: You are Debate coach for the ethics panel.
 SITUATION: Case 42 waits on your desk.
 TASK（中文）：150词左右，含背景、证据、权衡判断。
 RUBRIC (30 XP): Context (6 XP) | Quotations (10 XP) | Effect plus judgement (10 XP) | Register (4 XP).
+Zeitbox: 2-Minuten-Countdown fuer Zweck-Plan (cure Z. 2, price Z. 8, three percent Z. 10), dann schreiben. 中文：先用2分钟定目的与风险再写。
 
 Klausur-Satz: `CN: 满分句须含治疗引文、风险数字与界限句。EN: AFB-III sentence needs cure quotation, risk figure and line sentence.`
 
 ## Schritt 8 — reflexion: Takeaway und Rueckblick aus Fall 42
 
-中文总结：先锁引文，再说效果，最后判断。
-English TAKEAWAY: Secure quotation, name effect, judge with reasons. `CN: 划线即为未来签名负责。EN: Drawing lines means signing for futures.`
+中文总结：先分治疗增强，再问谁签字，最后守可逆界限。
+English TAKEAWAY: Split purpose, ask signer, hold line. `CN: 划线即为三代签名负责。EN: Lines sign for generations Z. 11.`
 
-Klausur-Satz: `CN元认知收束——第42号案件（Genetic Engineering Bioethik）证明：证据加功能等于判断。DE/EN: Fall 42 (Genetic Engineering Bioethik) proves: evidence plus function equals judgement.`
+Klausur-Satz: `CN元认知收束——第42号案件（Clinic Hearing）证明：同剪不同目的，somatic可，germline止。DE/EN: Fall 42 proves: same scissors Z. 4, split purposes; line at heredity Z. 12-13.`
 
 REFLEXION（中文在前）：
 1. 中文：近路和远路哪个更难？English: Which was harder, close quotation or distant judgement?

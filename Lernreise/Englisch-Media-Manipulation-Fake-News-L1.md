@@ -36,11 +36,11 @@ Klausur-Satz: `CN: 午夜爆料先听混响。EN: Hear room tone before outrage.
 
 装备盒（5件，先读中文，再背英文）：
 
-- English: **Source check | 信源** CN: 账号、日期与动机。EN: Account, date, motive.  Mechanism: Metadata filters virality.  Klausur-Tipp: Name three.
-- English: **Emotional trap | 情绪** CN: 愤怒加速。EN: Anger accelerates.  Mechanism: Caps plus leak framing.  Klausur-Tipp: Mark framing.
-- English: **Echo chamber | 回音** CN: 同类喂养。EN: Tribe feeds tribe.  Mechanism: Ranking trains belief.  Klausur-Tipp: Seek rival outlet.
-- English: **Deepfake signal | 伪造信号** CN: 波形与 blink。EN: Waveform and blink betray.  Mechanism: Artefact plus mismatch.  Klausur-Tipp: List two.
-- English: **Correction habit | 纠正** CN: 带链纠正。EN: Correct with links.  Mechanism: Flag plus source restores trust.  Klausur-Tipp: Model sentence.
+- English: **Source check | 信源** CN: 账号、日期与动机。EN: Account, date, motive.  Mechanism: Metadata filters virality; second layer names account age plus timetable with Z.; third layer decides hold versus share.  Klausur-Tipp: Name three.
+- English: **Emotional trap | 情绪** CN: 愤怒加速。EN: Anger accelerates.  Mechanism: Caps plus leak framing; second layer marks LEAKED plus tremble with Z.; third layer waits for forensic report.  Klausur-Tipp: Mark framing.
+- English: **Echo chamber | 回音** CN: 同类喂养。EN: Tribe feeds tribe.  Mechanism: Ranking trains belief; second layer seeks rival outlet with Z.; third layer breaks tribe loop.  Klausur-Tipp: Seek rival outlet.
+- English: **Deepfake signal | 伪造信号** CN: 波形与 blink。EN: Waveform and blink betray.  Mechanism: Artefact plus mismatch; second layer lists cuts plus missing tone with Z.; third layer calls clip assembled.  Klausur-Tipp: List two.
+- English: **Correction habit | 纠正** CN: 带链纠正。EN: Correct with links.  Mechanism: Flag plus source restores trust; second layer reads report aloud with link; third layer measures listening over sharing.  Klausur-Tipp: Model sentence.
 
 Klausur-Satz: `CN: 波形、时间表与 rival 构成三角。EN: Waveform, timetable and rival triangulate.`
 
@@ -141,15 +141,16 @@ English ROLE: You are Fact-check editor of the school paper.
 SITUATION: Case 37 waits on your desk.
 TASK（中文）：150词左右，含背景、证据、权衡判断。
 RUBRIC (30 XP): Context (6 XP) | Quotations (10 XP) | Effect plus judgement (10 XP) | Register (4 XP).
+Zeitbox: 2-Minuten-Countdown fuer Forensik-Plan (cuts Z. 4, tone Z. 5, timetable Z. 7), dann schreiben. 中文：先用2分钟定剪辑与不在场再写。
 
 Klausur-Satz: `CN: 满分句须含三处剪辑、舞台时间表与取证结论。EN: AFB-III sentence needs cuts, alibi timetable and forensic verdict.`
 
 ## Schritt 8 — reflexion: Takeaway und Rueckblick aus Fall 37
 
-中文总结：先锁引文，再说效果，最后判断。
-English TAKEAWAY: Secure quotation, name effect, judge with reasons. `CN: 等待即新闻伦理。EN: Waiting is journalism.`
+中文总结：先听接缝，再对时间表，最后等报告。
+English TAKEAWAY: Hear seams, check alibi, wait report. `CN: 等待即把听放在转之前。EN: Listening beats sharing after forensic Z. 12.`
 
-Klausur-Satz: `CN元认知收束——第37号案件（Media Manipulation Fake News）证明：证据加功能等于判断。DE/EN: Fall 37 (Media Manipulation Fake News) proves: evidence plus function equals judgement.`
+Klausur-Satz: `CN元认知收束——第37号案件（Midnight Audio）证明：波形断裂加舞台时间表等于hold。DE/EN: Fall 37 proves: cuts Z. 4-5 plus alibi Z. 6-7 beat leak framing.`
 
 REFLEXION（中文在前）：
 1. 中文：近路和远路哪个更难？English: Which was harder, close quotation or distant judgement?

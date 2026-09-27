@@ -37,15 +37,15 @@ Klausur-Satz: `矛盾句——The triple rewards sequence: neutral first, sharp 
 装备盒（5件，先读中文，再记英文/德语）：
 
 - 中文点拨：CN: 摘要
-  English: **Summary: EN: Summary condenses main lines neutrally. No judgement enters. ** Mechanism: Main plus logic minus example compresses.  Klausur-Tipp: One third of time, own words.
+  English: **Summary: EN: Summary condenses main lines neutrally. No judgement enters. ** Mechanism: Main plus logic minus example compresses; second layer keeps own words with Z.; third layer tests neutrality before verdict.  Klausur-Tipp: One third of time, own words.
 - 中文点拨：CN: 分析
-  English: **Analysis: EN: Analysis dissects devices with effect. Quotation meets function. ** Mechanism: Device plus line plus effect proves.  Klausur-Tipp: Two devices with chains.
+  English: **Analysis: EN: Analysis dissects devices with effect. Quotation meets function. ** Mechanism: Device plus line plus effect proves; second layer chains two devices with Z.; third layer names function in triple order.  Klausur-Tipp: Two devices with chains.
 - 中文点拨：CN: 评论
-  English: **Comment: EN: Comment judges with measure and outlook. It answers so-what. ** Mechanism: Foe plus weight closes fairly.  Klausur-Tipp: Steelman, then weigh.
+  English: **Comment: EN: Comment judges with measure and outlook. It answers so-what. ** Mechanism: Foe plus weight closes fairly; second layer steelmans foe with evidence; third layer crowns verdict with outlook.  Klausur-Tipp: Steelman, then weigh.
 - 中文点拨：CN: 语域阶梯
-  English: **Register ladder: EN: Register climbs from neutral to personal. Each step changes pronouns. ** Mechanism: Step plus signal marks part.  Klausur-Tipp: Mark transitions.
+  English: **Register ladder: EN: Register climbs from neutral to personal. Each step changes pronouns. ** Mechanism: Step plus signal marks part; second layer shifts pronouns per step; third layer bridges parts with transitions.  Klausur-Tipp: Mark transitions.
 - 中文点拨：CN: 时间块
-  English: **Time blocks: EN: Time blocks split reading, writing and proofing. Buffers rescue ends. ** Mechanism: Blocks plus buffer create calm.  Klausur-Tipp: Ten minutes proofing.
+  English: **Time blocks: EN: Time blocks split reading, writing and proofing. Buffers rescue ends. ** Mechanism: Blocks plus buffer create calm; second layer reserves ten minutes proofing; third layer checks rubric with Z.  Klausur-Tipp: Ten minutes proofing.
 
 Klausur-Satz: `定义句——Summary, analysis and comment define every IQB writing set.`
 
@@ -76,6 +76,24 @@ Bezug zum Konzept: `传导句——Neutral plus sharp plus fair equals full perf
 中文任务：Erstelle zu einem Text Summary-Satz, zwei Analyse-Ketten und Thesis plus Countervoice.
 English TASK: Erstelle zu einem Text Summary-Satz, zwei Analyse-Ketten und Thesis plus Countervoice.
 TARGET: Three blocks, each with evidence and judgement in four sentences.
+
+PRIMAERTEXT（Study text: Night Bus Library, unseen study version, 15 lines, 100-200词）：
+
+> The night bus library parks outside closed stations. (Z. 1)
+> Volunteers lend books to shift workers after midnight. (Z. 2)
+> We count readers, the driver says, not profits. (Z. 3)
+> Headlines call the bus a school on wheels. (Z. 4)
+> Funding, however, runs only until December. (Z. 5)
+> The council praises the idea but postpones money. (Z. 6)
+> Riders queue with helmets, mops and tired eyes. (Z. 7)
+> A nurse reads poems between two night shifts. (Z. 8)
+> She says pages steady her hands. (Z. 9)
+> Critics warn buses cannot replace branch libraries. (Z. 10)
+> They cite heating, toilets and quiet desks. (Z. 11)
+> The team answers with timetables and borrowed lamps. (Z. 12)
+> Small light, they argue, beats no light. (Z. 13)
+> The city must decide: wheels, walls or both. (Z. 14)
+> Readers vote nightly by simply boarding. (Z. 15)
 
 HILFE（中文在前）：
 1. 中文：两句交代背景。English: Place the case in two sentences.
@@ -128,6 +146,7 @@ English ROLE: You are IQB writing coach.
 SITUATION: Case 39 waits on your desk.
 TASK（中文）：150词左右，含背景、证据、权衡判断。
 RUBRIC (30 XP): Context (6 XP) | Evidence (10 XP) | Effect plus judgement (10 XP) | Register (4 XP).
+Zeitbox: 2-Minuten-Countdown fuer Dreistufen-Plan (Summary-Satz plus zwei Ketten mit Z.), dann schreiben. 中文：先用2分钟定三段计划再写。
 
 Klausur-Satz: `满分句——AFB-III model: Devices X (line) and Y (line) prove effect E; though foe shows F, measure M crowns verdict V.`
 
@@ -135,10 +154,10 @@ Klausur-Satz: `满分句——AFB-III model: Devices X (line) and Y (line) prove
 
 TAKEAWAY:
 
-Klausur-Satz: `CN元认知收束——第39号案件（IQB Writing）证明：证据加功能等于判断。DE/EN: Fall 39 (IQB Writing) proves: evidence plus function equals judgement.`
+Klausur-Satz: `CN元认知收束——第39号案件（IQB夜班巴士图书馆）证明：中性概括打底，双链分析取证，公平评论收束。DE/EN: Fall 39 proves: condense night-bus neutrally, dissect two devices with Z., judge with outlook.`
 
-中文总结：先锁证据，再说效果，最后判断。
-English TAKEAWAY: Secure evidence, name effect, judge with reasons. `元认知句——Triple writing means: condense, dissect, judge with outlook.`
+中文总结：夜班巴士先中性概括，再双链取证，最后公平称量。
+English TAKEAWAY: Condense bus, dissect two, judge fair. `元认知句——Triple writing night-bus means: neutral first, sharp second, fair last with Z.`
 
 REFLEXION（中文在前）：
 1. 中文：近路和远路哪个更难？English: Which was harder, close evidence or distant judgement?

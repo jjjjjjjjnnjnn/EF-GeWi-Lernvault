@@ -33,11 +33,11 @@ Klausur-Satz: `Mediation carries sense, not sentences: reader decides selection.
 
 AUSRUESTUNG (5 Instrumente im Koffer):
 
-- **Selection**: EN: Selection picks relevant facts for the reader. Not all crosses over.  Mechanism: Brief plus audience filters content.  Klausur-Tipp: Name reader first.
-- **Compression**: EN: Compression condenses without loss of logic. Short keeps sense.  Mechanism: Main plus link minus example compacts.  Klausur-Tipp: Keep logic words.
-- **Paraphrase**: EN: Paraphrase renders sense in own words. Copy fails.  Mechanism: Sense plus register fits new reader.  Klausur-Tipp: Never lift sentences.
-- **Cultural bridge**: EN: The bridge explains habits behind rules. Context prevents insult.  Mechanism: Fact plus habit note builds understanding.  Klausur-Tipp: Add one footnote of habit.
-- **Gap signal**: EN: Gap signals mark missing or unclear source info. Honesty scores.  Mechanism: Flag plus scope protects trust.  Klausur-Tipp: Flag every hole.
+- **Selection**: EN: Selection picks relevant facts for the reader. Not all crosses over.  Mechanism: Brief plus audience filters content; second layer tests purpose against each fact; third layer keeps only usable facts with line.  Klausur-Tipp: Name reader first.
+- **Compression**: EN: Compression condenses without loss of logic. Short keeps sense.  Mechanism: Main plus link minus example compacts; second layer keeps logic words as frame; third layer checks length against reader time.  Klausur-Tipp: Keep logic words.
+- **Paraphrase**: EN: Paraphrase renders sense in own words. Copy fails.  Mechanism: Sense plus register fits new reader; second layer swaps lexis while keeping facts; third layer back-checks sense against source.  Klausur-Tipp: Never lift sentences.
+- **Cultural bridge**: EN: The bridge explains habits behind rules. Context prevents insult.  Mechanism: Fact plus habit note builds understanding; second layer adds hostel habit footnote; third layer measures politeness gain.  Klausur-Tipp: Add one footnote of habit.
+- **Gap signal**: EN: Gap signals mark missing or unclear source info. Honesty scores.  Mechanism: Flag plus scope protects trust; second layer cites unreadable line with Z.; third layer states consequence for action.  Klausur-Tipp: Flag every hole.
 
 Klausur-Satz: `Selection, paraphrase and bridge define every mediation.`
 
@@ -63,10 +63,25 @@ Bezug zum Konzept: `Sense plus register plus flag equals trust across languages.
 
 ## Schritt 4 — ausprobieren: Die Sandkasten-Pruefung mit Baukasten
 
-[Werkzeug: oral-timer]
+[Werkzeug: lego]
 
-AUFGABE: Mittels zwei Briefabsaetze: Auswahl, Komprimat, Paraphrase plus Bruecken-Fussnote und Lueckensignal.
+AUFGABE: Mittels zwei Briefabsaetze mit Bausteinen: Auswahl, Komprimat, Paraphrase plus Bruecken-Fussnote und Lueckensignal.
 TARGET: Drei Bausteine mit Beleg, je mit Funktion und einer Deutung in vier Saetzen.
+
+PRIMAERTEXT (Study text: Jugendherberge Hamburg Brief, study version, deutscher Hostel-Brief ca. 120 Woerter, 12 lines):
+
+> Liebe Gaeste, willkommen in der Jugendherberge Hamburg am Hafen! (Z. 1)
+> Nachtruhe gilt ab dreiundzwanzig Uhr im ganzen Haus. (Z. 2)
+> Duschen ist nur zwischen sechs und zweiundzwanzig Uhr moeglich. (Z. 3)
+> Bettwaesche leihst du gegen Pfand an der Rezeption. (Z. 4)
+> Fruehstueck endet punkt neun Uhr dreissig im Saal. (Z. 5)
+> Koffer bleiben im Gepäckraum, nicht auf dem Flur. (Z. 6)
+> Kueche nutzt du nach Plan an der Tafel. (Z. 7)
+> Pfandflaschen gehoeren in die Kiste neben der Tuer. (Z. 8)
+> Besuch meldest du bis zwanzig Uhr vorher an. (Z. 9)
+> Teamleiterin Aylin hilft nachts bei Notfaellen gern. (Z. 10)
+> Fahrradausleihe kostet pro Tag ... (unleserlich) Euro am Hafen. (Z. 11)
+> Wir wuenschen dir ruhige Naechte bei uns! (Z. 12)
 
 HILFE:
 1. Schritt 1: Ordne den Fall in zwei Saetzen ein.
@@ -74,6 +89,8 @@ HILFE:
 3. Schritt 3: Deute Baustein und Funktion im Fallganzen.
 
 MUSTERLOESUNG: Der Fall 36 zeigt das Verfahren in drei Schritten. Erstens sichert ein Beleg den Kern. Zweitens traegt die Funktion die Wirkung. Drittens schliesst die Deutung das Urteil.
+
+MARKIERAUFTRAG: Markiere mit GELB alle Fakten (Nachtruhe Z. 2, Duschen Z. 3, Fruehstueck Z. 5, Koffer Z. 6). Markiere mit BLAU Bruecke und Luecke (Pfand Z. 4, Besuch Z. 9, unleserlich Z. 11).
 
 Klausur-Satz: `The bridge rule: the odder the rule, the longer the footnote.`
 
@@ -114,6 +131,7 @@ ROLLE: Du bist Mediation coach for the exchange in der Pruefung.
 SITUATION: Ein Fall liegt unbearbeitet auf dem Tisch und verlangt Einordnung, Belege und Urteil.
 AUFGABE: Verfasse circa 150 Woerter mit Einordnung, zwei Belegen, Funktion, Deutung und Schlussurteil.
 RUBRIC (30 XP): Einordnung korrekt (6 XP) | Zwei Belege (10 XP) | Funktion plus Deutung (10 XP) | Fachsprache und Schluss (4 XP).
+Zeitbox: 2-Minuten-Countdown fuer Leserauswahl plus Lueckenliste (Z. 11 markieren), dann schreiben.
 
 Klausur-Satz: `AFB-III model: For reader R, facts F1-F2 (paraphrased) with habit note H and flagged gap G yield usable target text.`
 
@@ -121,9 +139,9 @@ Klausur-Satz: `AFB-III model: For reader R, facts F1-F2 (paraphrased) with habit
 
 TAKEAWAY:
 
-Klausur-Satz: `Fall 36 (Mediation DE) schliesst: Wer Beleg, Funktion und Urteil sichert, besteht jede Klausur.`
+Klausur-Satz: `Fall 36 (Mediation Hostelbrief DE) schliesst: Wer Leser zuerst nennt, dann Fakten waehlt und Z. 11 ehrlich flaggt, baut die Bruecke.`
 
-Fall 36 lehrt den Dreischritt aus Beleg, Funktion und Urteil. Takeaway-Satz: `Mediating means: select, compress, bridge and flag honestly.`
+Fall 36 lehrt Hostel-Brief als Bruecke aus Auswahl, Paraphrase und Flag. Takeaway-Satz: `Mediating a hostel letter means: reader first, facts twinned plainly, gap Z. 11 flagged.`
 
 REFLEXION:
 1. Welche Spur fiel schwerer, der Nahbeleg oder das Fernurteil?

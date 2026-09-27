@@ -36,11 +36,11 @@ Klausur-Satz: `CN: 明信片印希望，收费站收现实。EN: Postcards print
 
 装备盒（5件，先读中文，再背英文）：
 
-- English: **Promise | 承诺** CN: 奋斗上升的建国故事。EN: The promise claims rise through effort. It frames America as open land.  Mechanism: Biography plus numbers sells mobility; exceptions hide structure.  Klausur-Tipp: Name promise, then test it with data.
-- English: **Frontier echo | 边疆回声** CN: 新土地即第二次机会。EN: The frontier echo offers land as second chance. It moves hope westward.  Mechanism: Space metaphor converts failure into restart; history becomes geography.  Klausur-Tipp: Mark space words.
-- English: **Cracks | 裂缝** CN: 阶级、种族与性别的现实检验。EN: Cracks name class, race and gender as reality check. They split the single story.  Mechanism: Statistics plus voices break the myth into versions.  Klausur-Tipp: Quote one crack with figure.
-- English: **Self-made image | 白手起家形象** CN: 传记即广告。EN: The self-made image turns biography into sales pitch. Effort covers capital.  Mechanism: Hero story plus omission hides networks.  Klausur-Tipp: Ask who is missing.
-- English: **Revised dream | 修订之梦** CN: 尊严与准入超越财富。EN: The revised dream means dignity and access beyond wealth.  Mechanism: Concession plus outlook balances myth with measure.  Klausur-Tipp: Close with dignity.
+- English: **Promise | 承诺** CN: 奋斗上升的建国故事。EN: The promise claims rise through effort. It frames America as open land.  Mechanism: Biography plus numbers sells mobility; exceptions hide structure; second layer quotes fresh start with Z.; third layer tests with toll figure.  Klausur-Tipp: Name promise, then test it with data.
+- English: **Frontier echo | 边疆回声** CN: 新土地即第二次机会。EN: The frontier echo offers land as second chance. It moves hope westward.  Mechanism: Space metaphor converts failure into restart; history becomes geography; second layer marks widen views with Z.; third layer weighs wallet gap.  Klausur-Tipp: Mark space words.
+- English: **Cracks | 裂缝** CN: 阶级、种族与性别的现实检验。EN: Cracks name class, race and gender as reality check. They split the single story.  Mechanism: Statistics plus voices break the myth into versions; second layer quotes tolls rise with Z.; third layer splits inheritance versus sharing.  Klausur-Tipp: Quote one crack with figure.
+- English: **Self-made image | 白手起家形象** CN: 传记即广告。EN: The self-made image turns biography into sales pitch. Effort covers capital.  Mechanism: Hero story plus omission hides networks; second layer asks who inherits car with Z.; third layer names missing hands.  Klausur-Tipp: Ask who is missing.
+- English: **Revised dream | 修订之梦** CN: 尊严与准入超越财富。EN: The revised dream means dignity and access beyond wealth.  Mechanism: Concession plus outlook balances myth with measure; second layer keeps fuel-bill honesty; third layer closes with dignity.  Klausur-Tipp: Close with dignity.
 
 Klausur-Satz: `CN: 公路、 diner 与收费构成定义三角。EN: Highway, diner and toll define the myth test.`
 
@@ -141,15 +141,16 @@ English ROLE: You are Opinion page editor.
 SITUATION: Case 49 waits on your desk.
 TASK（中文）：150词左右，含背景、证据、权衡判断。
 RUBRIC (30 XP): Context (6 XP) | Quotations (10 XP) | Effect plus judgement (10 XP) | Register (4 XP).
+Zeitbox: 2-Minuten-Countdown fuer Maut-Plan (shine Z. 1, toll Z. 12-13, bill Z. 15), dann schreiben. 中文：先用2分钟定承诺与账单再写。
 
 Klausur-Satz: `CN: 满分句须含公路引文、费用数字与尊严收束。EN: AFB-III sentence needs highway quotation, cost figure and dignity close.`
 
 ## Schritt 8 — reflexion: Takeaway und Rueckblick aus Fall 49
 
-中文总结：先锁引文，再说效果，最后判断。
-English TAKEAWAY: Secure quotation, name effect, judge with reasons. `CN: 量梦即数清过路费。EN: Measuring the dream means counting the tolls.`
+中文总结：先锁公路承诺，再对费用现实，最后修尊严梦。
+English TAKEAWAY: Lock highway, face bills, revise dignified. `CN: 量梦即数清过路费到分摊。EN: Measuring dreams counts tolls to shared bills Z. 15.`
 
-Klausur-Satz: `CN元认知收束——第49号案件（American Dream Myth Reality）证明：证据加功能等于判断。DE/EN: Fall 49 (American Dream Myth Reality) proves: evidence plus function equals judgement.`
+Klausur-Satz: `CN元认知收束——第49号案件（Route 66 Postcard）证明：霓虹越亮越查工资，继承对拼单。DE/EN: Fall 49 proves: neon Z. 2 tested by tolls Z. 12-13; inherit Z. 14 versus share Z. 15.`
 
 REFLEXION（中文在前）：
 1. 中文：近路和远路哪个更难？English: Which was harder, close quotation or distant judgement?

@@ -33,11 +33,11 @@ Klausur-Satz: `Fields share one question: who belongs and at what price.`
 
 AUSRUESTUNG (5 Instrumente im Koffer):
 
-- **UK: regions and class**: EN: The UK field spans regions, class codes and devolution. Accent signals belonging.  Mechanism: Place plus register maps identity; contrast sharpens.  Klausur-Tipp: Anchor with place and voice.
-- **USA: promise and cracks**: EN: The US field tests promise against data. Dream meets measure.  Mechanism: Biography plus figures weighs myth.  Klausur-Tipp: Quote promise, test with figure.
-- **Nigeria: voices**: EN: The Nigeria field centres Adichie voices and language choice. Single stories break.  Mechanism: Switch plus situation proves agency.  Klausur-Tipp: Track switches.
-- **Identity: hybrid selves**: EN: Identity spans belonging between worlds. Hyphens speak.  Mechanism: Two codes plus choice builds self.  Klausur-Tipp: Show both codes.
-- **Media: news and trust**: EN: The media field checks source, emotion and correction. Pause beats share.  Mechanism: Source plus second outlet filters virality.  Klausur-Tipp: Name source triad.
+- **UK: regions and class**: EN: The UK field spans regions, class codes and devolution. Accent signals belonging.  Mechanism: Place plus register maps identity; second layer contrasts capital against region with Z.; third layer weighs belonging as verdict.  Klausur-Tipp: Anchor with place and voice.
+- **USA: promise and cracks**: EN: The US field tests promise against data. Dream meets measure.  Mechanism: Biography plus figures weighs myth; second layer quotes promise then tests with figure; third layer revises with dignity close.  Klausur-Tipp: Quote promise, test with figure.
+- **Nigeria: voices**: EN: The Nigeria field centres Adichie voices and language choice. Single stories break.  Mechanism: Switch plus situation proves agency; second layer tracks switch with occasion; third layer honours belonging outcome.  Klausur-Tipp: Track switches.
+- **Identity: hybrid selves**: EN: Identity spans belonging between worlds. Hyphens speak.  Mechanism: Two codes plus choice builds self; second layer shows both codes with Z.; third layer names choice as verdict.  Klausur-Tipp: Show both codes.
+- **Media: news and trust**: EN: The media field checks source, emotion and correction. Pause beats share.  Mechanism: Source plus second outlet filters virality; second layer verifies account, date, rival; third layer decides publish or hold.  Klausur-Tipp: Name source triad.
 
 Klausur-Satz: `Place, promise and voice define every Themenfeld answer.`
 
@@ -68,12 +68,32 @@ Bezug zum Konzept: `Anchor plus contrast equals verdict: one field leads, one sh
 AUFGABE: Ordne einen unseen text zwei Feldern zu und formuliere These plus zwei Anker-Belege.
 TARGET: Drei Bausteine mit Beleg, je mit Funktion und einer Deutung in vier Saetzen.
 
+PRIMAERTEXT (Study text: Five Fields Morning in Bristol, study version, 150 words unseen, 15 lines):
+
+> The harbour school in Bristol opened five doors for one long project morning. (Z. 1)
+> A Welsh guest described loud valleys against quiet London office careers. (Z. 2)
+> Regional funding, explained the tutor, decides buses, stages and training places. (Z. 3)
+> An American letter praised open colleges for brave working class newcomers. (Z. 4)
+> The appendix counted debts, shifts and waiting lists behind scholarships. (Z. 5)
+> A Nigerian author read her market dialogue in two strong voices. (Z. 6)
+> The class repeated each Igbo proverb until the rhythm held. (Z. 7)
+> A student with two homes called herself translator, never torn. (Z. 8)
+> She carried exam rules in one hand and family songs in the other. (Z. 9)
+> The media group traced the letter to a midnight upload. (Z. 10)
+> It lacked stamps, dates and a second independent outlet. (Z. 11)
+> Verify first, warned the coach, before you quote and judge. (Z. 12)
+> Identity, she noted, needs two codes plus one clear choice. (Z. 13)
+> Trust, she added, needs source, rival outlet and correction. (Z. 14)
+> We closed the morning with anchored verdicts and open outlooks. (Z. 15)
+
 HILFE:
 1. Schritt 1: Ordne den Fall in zwei Saetzen ein.
 2. Schritt 2: Sichere zwei Bausteine mit Beleg.
 3. Schritt 3: Deute Baustein und Funktion im Fallganzen.
 
 MUSTERLOESUNG: Der Fall 52 zeigt das Verfahren in drei Schritten. Erstens sichert ein Beleg den Kern. Zweitens traegt die Funktion die Wirkung. Drittens schliesst die Deutung das Urteil.
+
+MARKIERAUFTRAG: Markiere mit GELB alle Feldanker (valleys, colleges, proverb, translator, outlet). Markiere mit BLAU Kosten und Kontrast (debts, midnight, missing stamps, two codes).
 
 Klausur-Satz: `The field rule: the stranger the text, the firmer the anchor.`
 
@@ -114,6 +134,7 @@ ROLLE: Du bist Exam coach for the finals in der Pruefung.
 SITUATION: Ein Fall liegt unbearbeitet auf dem Tisch und verlangt Einordnung, Belege und Urteil.
 AUFGABE: Verfasse circa 150 Woerter mit Einordnung, zwei Belegen, Funktion, Deutung und Schlussurteil.
 RUBRIC (30 XP): Einordnung korrekt (6 XP) | Zwei Belege (10 XP) | Funktion plus Deutung (10 XP) | Fachsprache und Schluss (4 XP).
+Zeitbox: 2-Minuten-Countdown fuer Gliederung (Leitfeld plus Kontrastfeld), dann schreiben.
 
 Klausur-Satz: `AFB-III model: While the text leads with field A (anchor, line), field B corrects it; hence weighted verdict with outlook.`
 
@@ -121,9 +142,9 @@ Klausur-Satz: `AFB-III model: While the text leads with field A (anchor, line), 
 
 TAKEAWAY:
 
-Klausur-Satz: `Fall 52 (Abitur Themenfelder DE) schliesst: Wer Beleg, Funktion und Urteil sichert, besteht jede Klausur.`
+Klausur-Satz: `Fall 52 (Abitur Themenfelder Bristol DE) schliesst: Wer Leitfeld mit Z. ankert, Kontrastfeld haelt und Zugehoerigkeit gegen Preis wiegt.`
 
-Fall 52 lehrt den Dreischritt aus Beleg, Funktion und Urteil. Takeaway-Satz: `Fields read means: anchor first, contrast second, judge with measure.`
+Fall 52 lehrt Bristol-Morgen als Leitfeld plus Kontrastfeld mit Anker. Takeaway-Satz: `Fields read means: anchor Bristol morning with Z., contrast second, judge belonging against price.`
 
 REFLEXION:
 1. Welche Spur fiel schwerer, der Nahbeleg oder das Fernurteil?

@@ -36,11 +36,11 @@ Klausur-Satz: `CN: 姓是墙，心是梯。EN: Names wall, hearts ladder.`
 
 装备盒（5件，先读中文，再背英文）：
 
-- English: **Soliloquy | 独白** CN: 退场后的真心。EN: Alone-speech tells truth.  Mechanism: Question chain exposes motive.  Klausur-Tipp: Quote chain.
-- English: **Aside | 旁白** CN: 绕过台上人说给你。EN: Whisper past others to us.  Mechanism: Gap creates suspense.  Klausur-Tipp: Name excluded.
-- English: **Blank verse | 素体诗** CN: 贵族的声音。EN: Rank speaks in metre.  Mechanism: Break signals crisis.  Klausur-Tipp: Mark break.
-- English: **Fate versus choice | 命与择** CN: 星象提议，人手处置。EN: Stars propose, hands dispose.  Mechanism: Suggestion plus act equals tragedy.  Klausur-Tipp: Split stages.
-- English: **Imagery of night | 夜意象** CN: 黑暗盖罪也证情。EN: Night covers and confesses.  Mechanism: Fields track feeling.  Klausur-Tipp: Chain three.
+- English: **Soliloquy | 独白** CN: 退场后的真心。EN: Alone-speech tells truth.  Mechanism: Question chain exposes motive; second layer quotes chain with Z.; third layer weighs guilt as verdict.  Klausur-Tipp: Quote chain.
+- English: **Aside | 旁白** CN: 绕过台上人说给你。EN: Whisper past others to us.  Mechanism: Gap creates suspense; second layer names excluded figure; third layer carries pact to verdict.  Klausur-Tipp: Name excluded.
+- English: **Blank verse | 素体诗** CN: 贵族的声音。EN: Rank speaks in metre.  Mechanism: Break signals crisis; second layer marks break with Z.; third layer maps control loss.  Klausur-Tipp: Mark break.
+- English: **Fate versus choice | 命与择** CN: 星象提议，人手处置。EN: Stars propose, hands dispose.  Mechanism: Suggestion plus act equals tragedy; second layer splits fate lines versus vow lines; third layer judges choice inside fate.  Klausur-Tipp: Split stages.
+- English: **Imagery of night | 夜意象** CN: 黑暗盖罪也证情。EN: Night covers and confesses.  Mechanism: Fields track feeling; second layer chains three night images with Z.; third layer reads night as judge.  Klausur-Tipp: Chain three.
 
 Klausur-Satz: `CN: 独白、旁白与素体构成三角。EN: Soliloquy, aside and verse triangulate drama.`
 
@@ -141,15 +141,16 @@ English ROLE: You are Drama critic for the festival paper.
 SITUATION: Case 27 waits on your desk.
 TASK（中文）：150词左右，含背景、证据、权衡判断。
 RUBRIC (30 XP): Context (6 XP) | Quotations (10 XP) | Effect plus judgement (10 XP) | Register (4 XP).
+Zeitbox: 2-Minuten-Countdown fuer Spruch-plus-Griff-Plan (rename Z. 3-4, climb Z. 7, night chain), dann schreiben. 中文：先用2分钟定改名与夜意象链再写。
 
 Klausur-Satz: `CN: 满分句须含改名引文、攀墙动作与夜意象链。EN: AFB-III sentence needs rename quotation, climb act and night chain.`
 
 ## Schritt 8 — reflexion: Takeaway und Rueckblick aus Fall 27
 
-中文总结：先锁引文，再说效果，最后判断。
-English TAKEAWAY: Secure quotation, name effect, judge with reasons. `CN: 读阳台即称姓与心的重量。EN: Balconies weigh names against hearts.`
+中文总结：先分命择，再链夜意象，最后称誓言重量。
+English TAKEAWAY: Split fate-choice, chain night, weigh vow. `CN: 读阳台即称姓与心到燃烧。EN: Balconies weigh names against burning vows Z. 15.`
 
-Klausur-Satz: `CN元认知收束——第27号案件（Shakespeare Macbeth Romeo）证明：证据加功能等于判断。DE/EN: Fall 27 (Shakespeare Macbeth Romeo) proves: evidence plus function equals judgement.`
+Klausur-Satz: `CN元认知收束——第27号案件（Balcony Verona）证明：姓是命，心是择，夜为证。DE/EN: Fall 27 proves: names wall with Z. 3-4, vows ladder with Z. 7-9, night judges.`
 
 REFLEXION（中文在前）：
 1. 中文：近路和远路哪个更难？English: Which was harder, close quotation or distant judgement?

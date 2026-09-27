@@ -132,18 +132,19 @@ Klausur-Satz: `Haeufig verwechselt: Hexen zwingen nicht; sie formulieren, was Eh
 
 ROLLE: Du bist Drama critic for the festival paper in der Pruefung.
 SITUATION: Ein Fall liegt unbearbeitet auf dem Tisch und verlangt Einordnung, Belege und Urteil.
-AUFGABE: Verfasse circa 150 Woerter mit Einordnung, zwei Belegen mit Zeile, Funktion, Deutung und Schlussurteil.
-RUBRIC (30 XP): Einordnung korrekt (6 XP) | Zwei Belege mit Zeile (10 XP) | Funktion plus Deutung (10 XP) | Fachsprache und Schluss (4 XP).
+AUFGABE: Verfasse circa 150 Woerter mit Einordnung, zwei Belegen mit Z., Funktion, Deutung und Schlussurteil.
+RUBRIC (30 XP): Einordnung korrekt (6 XP) | Zwei Belege mit Z. (10 XP) | Funktion plus Deutung (10 XP) | Fachsprache und Schluss (4 XP).
+Zeitbox: 2-Minuten-Countdown fuer Spruch-Griff-Plan (Gebet Z. 6-7, Glocke Z. 8, Blut Z. 11), dann schreiben.
 
-Klausur-Satz: `AFB-III-Mustersatz: Gebet an Sterne (l. 6-7) mit Glocke (Z. 8) und Blut-Spruch (Z. 11) belegt Wahl im Schicksal, weil jede Stufe vom Spruch zur Hand fuehrt.`
+Klausur-Satz: `AFB-III-Mustersatz: Gebet an Sterne (Z. 6-7) mit Glocke (Z. 8) und Blut-Spruch (Z. 11) belegt Wahl im Schicksal, weil jede Stufe vom Spruch zur Hand fuehrt.`
 
 ## Schritt 8 — reflexion: Takeaway und Rueckblick aus Fall 28
 
 TAKEAWAY:
 
-Klausur-Satz: `Fall 28 (Shakespeare Macbeth Romeo DE) schliesst: Wer Beleg, Funktion und Urteil sichert, besteht jede Klausur.`
+Klausur-Satz: `Fall 28 (Heath Macbeth DE) schliesst: Wer Spruch Z. 1-4 zitiert, Nachtkette Z. 6-11 sammelt und Griff Z. 10 benennt, trennt Schicksal von Wahl.`
 
-Fall 28 lehrt den Dreischritt aus Beleg, Funktion und Urteil. Takeaway-Satz: `Shakespeare lesen heisst: Spruch zitieren, Griff benennen und Nacht als Gewissen hoeren.`
+Fall 28 lehrt Heath als Spruch plus Griff mit Nachtprotokoll. Takeaway-Satz: `Shakespeare heisst hier: Prophezeiung Z. 4 zitieren, Griff Z. 10 benennen, Nacht Z. 11 als Gewissen hoeren.`
 
 REFLEXION:
 1. Welche Spur fiel schwerer, der Nahbeleg oder das Fernurteil?

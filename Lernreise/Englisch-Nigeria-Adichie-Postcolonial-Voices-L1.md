@@ -36,11 +36,11 @@ Klausur-Satz: `CN: 粉色褪去从粉笔开始。EN: Pink fades where chalk rewr
 
 装备盒（5件，先读中文，再背英文）：
 
-- English: **Single story | 单一** CN: 粉色帝国盖住人物。EN: Pink empires cover people.  Mechanism: Map plus textbook repeats.  Klausur-Tipp: Name flattened.
-- English: **Code-switching | 切换** CN: 粉笔换腔。EN: Chalk switches tongue.  Mechanism: Audience decides register.  Klausur-Tipp: Quote switch.
-- English: **Hybrid identity | 混杂** CN: 校服配 wrapper。EN: Uniform plus wrapper.  Mechanism: Both repertoires dress self.  Klausur-Tipp: Show both.
-- English: **Gendered voice | 性别** CN: 谁擦黑板谁发言。EN: Who cleans, who speaks.  Mechanism: Task rations mic.  Klausur-Tipp: Count turns.
-- English: **Reclaiming | 收复** CN: 旧词新说。EN: Old word, new speaker.  Mechanism: Flip reclaims pride.  Klausur-Tipp: Quote flip.
+- English: **Single story | 单一** CN: 粉色帝国盖住人物。EN: Pink empires cover people.  Mechanism: Map plus textbook repeats; second layer names flattened group with Z.; third layer breaks story with chalk names.  Klausur-Tipp: Name flattened.
+- English: **Code-switching | 切换** CN: 粉笔换腔。EN: Chalk switches tongue.  Mechanism: Audience decides register; second layer quotes switch with situation and Z.; third layer measures access gain.  Klausur-Tipp: Quote switch.
+- English: **Hybrid identity | 混杂** CN: 校服配 wrapper。EN: Uniform plus wrapper.  Mechanism: Both repertoires dress self; second layer shows both with Z.; third layer crowns between as home.  Klausur-Tipp: Show both.
+- English: **Gendered voice | 性别** CN: 谁擦黑板谁发言。EN: Who cleans, who speaks.  Mechanism: Task rations mic; second layer counts turns with Z.; third layer weighs voice fairness.  Klausur-Tipp: Count turns.
+- English: **Reclaiming | 收复** CN: 旧词新说。EN: Old word, new speaker.  Mechanism: Flip reclaims pride; second layer quotes savage-to-navigator with Z.; third layer honours dignity verdict.  Klausur-Tipp: Quote flip.
 
 Klausur-Satz: `CN: 地图、粉笔与名字构成三角。EN: Map, chalk and name triangulate return.`
 
@@ -141,15 +141,16 @@ English ROLE: You are Culture columnist of the school paper.
 SITUATION: Case 31 waits on your desk.
 TASK（中文）：150词左右，含背景、证据、权衡判断。
 RUBRIC (30 XP): Context (6 XP) | Quotations (10 XP) | Effect plus judgement (10 XP) | Register (4 XP).
+Zeitbox: 2-Minuten-Countdown fuer Kreide-Plan (write Z. 4, cross Z. 9, sing Z. 11), dann schreiben. 中文：先用2分钟定粉笔三动作再写。
 
 Klausur-Satz: `CN: 满分句须含旧词引文、收复动作与归属收束。EN: AFB-III sentence needs old-word quotation, reclaiming act and belonging close.`
 
 ## Schritt 8 — reflexion: Takeaway und Rueckblick aus Fall 31
 
-中文总结：先锁引文，再说效果，最后判断。
-English TAKEAWAY: Secure quotation, name effect, judge with reasons. `CN: 改名即回家。EN: Renaming is returning.`
+中文总结：先跟粉笔三动作，再对旧词新说，最后读归属。
+English TAKEAWAY: Track chalk three, flip word, judge return. `CN: 改名回家从粉笔开始。EN: Renaming returns where chalk rewrites Z. 4.`
 
-Klausur-Satz: `CN元认知收束——第31号案件（Nigeria Adichie Postcolonial Voices）证明：证据加功能等于判断。DE/EN: Fall 31 (Nigeria Adichie Postcolonial Voices) proves: evidence plus function equals judgement.`
+Klausur-Satz: `CN元认知收束——第31号案件（Chalk Names）证明：粉笔写、划、唱三动作收复命名。DE/EN: Fall 31 proves: chalk writes Z. 4, crosses Z. 9, sings Z. 11-12.`
 
 REFLEXION（中文在前）：
 1. 中文：近路和远路哪个更难？English: Which was harder, close quotation or distant judgement?

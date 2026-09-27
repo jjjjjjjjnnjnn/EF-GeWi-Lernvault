@@ -37,15 +37,15 @@ Klausur-Satz: `矛盾句——Mediation carries sense, not sentences: reader dec
 装备盒（5件，先读中文，再记英文/德语）：
 
 - 中文点拨：CN: 筛选
-  English: **Selection: EN: Selection picks relevant facts for the reader. Not all crosses over. ** Mechanism: Brief plus audience filters content.  Klausur-Tipp: Name reader first.
+  English: **Selection: EN: Selection picks relevant facts for the reader. Not all crosses over. ** Mechanism: Brief plus audience filters content; second layer checks reader purpose against each fact; third layer keeps only usable facts with line.  Klausur-Tipp: Name reader first.
 - 中文点拨：CN: 压缩
-  English: **Compression: EN: Compression condenses without loss of logic. Short keeps sense. ** Mechanism: Main plus link minus example compacts.  Klausur-Tipp: Keep logic words.
+  English: **Compression: EN: Compression condenses without loss of logic. Short keeps sense. ** Mechanism: Main plus link minus example compacts; second layer keeps logic words as skeleton; third layer tests target length against reader time.  Klausur-Tipp: Keep logic words.
 - 中文点拨：CN: 改述
-  English: **Paraphrase: EN: Paraphrase renders sense in own words. Copy fails. ** Mechanism: Sense plus register fits new reader.  Klausur-Tipp: Never lift sentences.
+  English: **Paraphrase: EN: Paraphrase renders sense in own words. Copy fails. ** Mechanism: Sense plus register fits new reader; second layer swaps lexis while keeping facts; third layer back-checks sense against source lines.  Klausur-Tipp: Never lift sentences.
 - 中文点拨：CN: 文化桥
-  English: **Cultural bridge: EN: The bridge explains habits behind rules. Context prevents insult. ** Mechanism: Fact plus habit note builds understanding.  Klausur-Tipp: Add one footnote of habit.
+  English: **Cultural bridge: EN: The bridge explains habits behind rules. Context prevents insult. ** Mechanism: Fact plus habit note builds understanding; second layer adds one footnote of hostel habit; third layer measures politeness gain for reader.  Klausur-Tipp: Add one footnote of habit.
 - 中文点拨：CN: 缺口信号
-  English: **Gap signal: EN: Gap signals mark missing or unclear source info. Honesty scores. ** Mechanism: Flag plus scope protects trust.  Klausur-Tipp: Flag every hole.
+  English: **Gap signal: EN: Gap signals mark missing or unclear source info. Honesty scores. ** Mechanism: Flag plus scope protects trust; second layer names unreadable line with Z.; third layer states consequence for reader action.  Klausur-Tipp: Flag every hole.
 
 Klausur-Satz: `定义句——Selection, paraphrase and bridge define every mediation.`
 
@@ -71,11 +71,26 @@ Bezug zum Konzept: `传导句——Sense plus register plus flag equals trust ac
 
 ## Schritt 4 — ausprobieren: Die Sandkasten-Pruefung mit Baukasten
 
-[Werkzeug: oral-timer]
+[Werkzeug: lego]
 
-中文任务：Mittels zwei Briefabsaetze: Auswahl, Komprimat, Paraphrase plus Bruecken-Fussnote und Lueckensignal.
-English TASK: Mittels zwei Briefabsaetze: Auswahl, Komprimat, Paraphrase plus Bruecken-Fussnote und Lueckensignal.
+中文任务：Mittels zwei Briefabsaetze mit Bausteinen: Auswahl, Komprimat, Paraphrase plus Bruecken-Fussnote und Lueckensignal.
+English TASK: Mittels zwei Briefabsaetze mit Bausteinen: Auswahl, Komprimat, Paraphrase plus Bruecken-Fussnote und Lueckensignal.
 TARGET: Three blocks, each with evidence and judgement in four sentences.
+
+PRIMAERTEXT（Study text: Hafen-Hostel Kiel Brief, study version, 德语hostel信约120词, 12 lines)：
+
+> Liebe Gastschueler, willkommen im Hafen-Hostel Kiel an der Foerde! (Z. 1)
+> Ruhe ist Pflicht: Ab zweiundzwanzig Uhr sprichst du nur leise. (Z. 2)
+> Duschen dauert maximal fuenf Minuten wegen knappem Wasser. (Z. 3)
+> Deinen Schluessel gibst du an der Rezeption ab. (Z. 4)
+> Fruehstueck gibt es taeglich von sieben bis neun Uhr. (Z. 5)
+> Handys laden nur im Aufenthaltsraum, nie im Schlafsaal. (Z. 6)
+> Schuhe stehen ordentlich im Regal am Eingang. (Z. 7)
+> Muell trennen wir in Gelb, Blau und Rest. (Z. 8)
+> Besucher meldest du vorher an der Tuer an. (Z. 9)
+> Nachtdienst Jonas hilft bei Fragen ab Mitternacht gern. (Z. 10)
+> Waesche kostet pro Maschine ... (unleserlich) Euro im Keller. (Z. 11)
+> Wir freuen uns auf ruhige Tage mit dir! (Z. 12)
 
 HILFE（中文在前）：
 1. 中文：两句交代背景。English: Place the case in two sentences.
@@ -84,6 +99,8 @@ HILFE（中文在前）：
 
 MUSTERLOESUNG: 中文示范：背景一句，证据加效果两句，判断一句。
 English MODEL: Case 35 shows the method in three moves with evidence, effect and judgement.
+
+MARKIERAUFTRAG（双色标注）：CN: 黄色[GELB]标可转交事实（Ruhe Z. 2, Duschen Z. 3, Fruehstueck Z. 5, Handys Z. 6），蓝色[BLAU]标文化桥与缺口（Schluessel Z. 4, Besucher Z. 9, unleserlich Z. 11）。EN: GELB for transferable facts, BLAU for bridge and gap signals.
 
 Klausur-Satz: `规律句——The bridge rule: the odder the rule, the longer the footnote.`
 
@@ -128,6 +145,7 @@ English ROLE: You are Mediation coach for the exchange.
 SITUATION: Case 35 waits on your desk.
 TASK（中文）：150词左右，含背景、证据、权衡判断。
 RUBRIC (30 XP): Context (6 XP) | Evidence (10 XP) | Effect plus judgement (10 XP) | Register (4 XP).
+Zeitbox: 2-Minuten-Countdown fuer Leserauswahl plus Lueckenliste (wer braucht was, Z. 11 markieren), dann schreiben. 中文：先用2分钟定读者与缺口清单再写。
 
 Klausur-Satz: `满分句——AFB-III model: For reader R, facts F1-F2 (paraphrased) with habit note H and flagged gap G yield usable target text.`
 
@@ -135,10 +153,10 @@ Klausur-Satz: `满分句——AFB-III model: For reader R, facts F1-F2 (paraphra
 
 TAKEAWAY:
 
-Klausur-Satz: `CN元认知收束——第35号案件（Mediation）证明：证据加功能等于判断。DE/EN: Fall 35 (Mediation) proves: evidence plus function equals judgement.`
+Klausur-Satz: `CN元认知收束——第35号案件（Mediation hostel信）证明：先定读者再筛事实，缺口必须明示。DE/EN: Fall 35 (Mediation) proves: reader first, then select; flag Z. 11 honestly and bridge hostel habits.`
 
 中文总结：先锁证据，再说效果，最后判断。
-English TAKEAWAY: Secure evidence, name effect, judge with reasons. `元认知句——Mediating means: select, compress, bridge and flag honestly.`
+English TAKEAWAY: Reader first, facts plain, gap flagged. `元认知句——Mediating a hostel letter means: select for reader, bridge habits, flag Z. 11.`
 
 REFLEXION（中文在前）：
 1. 中文：近路和远路哪个更难？English: Which was harder, close evidence or distant judgement?

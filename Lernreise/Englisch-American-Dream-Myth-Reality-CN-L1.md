@@ -36,11 +36,11 @@ Klausur-Satz: `CN: 承诺动人，账单诚实，中间是结构。EN: Promise m
 
 装备盒（5件，先读中文，再背英文）：
 
-- English: **Promise | 承诺** CN: 奋斗上升的建国故事。EN: The promise claims rise through effort. It frames America as open land.  Mechanism: Biography plus numbers sells mobility; exceptions hide structure.  Klausur-Tipp: Name promise, then test it with data.
-- English: **Frontier echo | 边疆回声** CN: 新土地即第二次机会。EN: The frontier echo offers land as second chance. It moves hope westward.  Mechanism: Space metaphor converts failure into restart; history becomes geography.  Klausur-Tipp: Mark space words (west, open, new).
-- English: **Cracks | 裂缝** CN: 阶级、种族与性别的现实检验。EN: Cracks name class, race and gender as reality check. They split the single story.  Mechanism: Statistics plus voices break the myth into versions; contrast becomes argument.  Klausur-Tipp: Quote one crack with figure.
-- English: **Self-made image | 白手起家形象** CN: 传记即广告。EN: The self-made image turns biography into sales pitch. Effort covers capital.  Mechanism: Hero story plus omission hides networks; success looks lonely.  Klausur-Tipp: Ask who is missing from the story.
-- English: **Revised dream | 修订之梦** CN: 尊严与准入超越财富。EN: The revised dream means dignity and access beyond wealth. It keeps hope honest.  Mechanism: Concession plus outlook balances myth with measure; judgement weighs both.  Klausur-Tipp: Close with dignity, not dollars.
+- English: **Promise | 承诺** CN: 奋斗上升的建国故事。EN: The promise claims rise through effort. It frames America as open land.  Mechanism: Biography plus numbers sells mobility; exceptions hide structure; second layer quotes garage promise with Z.; third layer tests with rent figure.  Klausur-Tipp: Name promise, then test it with data.
+- English: **Frontier echo | 边疆回声** CN: 新土地即第二次机会。EN: The frontier echo offers land as second chance. It moves hope westward.  Mechanism: Space metaphor converts failure into restart; history becomes geography; second layer marks suburb glow with Z.; third layer weighs bus hours.  Klausur-Tipp: Mark space words (west, open, new).
+- English: **Cracks | 裂缝** CN: 阶级、种族与性别的现实检验。EN: Cracks name class, race and gender as reality check. They split the single story.  Mechanism: Statistics plus voices break the myth into versions; contrast becomes argument; second layer quotes rent-wage gap with Z.; third layer honours diploma beside bills.  Klausur-Tipp: Quote one crack with figure.
+- English: **Self-made image | 白手起家形象** CN: 传记即广告。EN: The self-made image turns biography into sales pitch. Effort covers capital.  Mechanism: Hero story plus omission hides networks; success looks lonely; second layer asks whose handshake opens doors with Z.; third layer names missing networks.  Klausur-Tipp: Ask who is missing from the story.
+- English: **Revised dream | 修订之梦** CN: 尊严与准入超越财富。EN: The revised dream means dignity and access beyond wealth. It keeps hope honest.  Mechanism: Concession plus outlook balances myth with measure; judgement weighs both; second layer keeps wrench plus key with Z.; third layer closes with dignity.  Klausur-Tipp: Close with dignity, not dollars.
 
 Klausur-Satz: `CN: 定义靠承诺、裂缝与修订。EN: Promise, cracks and revision define the dream.`
 
@@ -141,15 +141,16 @@ English ROLE: You are Opinion page editor.
 SITUATION: Case 50 waits on your desk.
 TASK（中文）：150词左右，含背景、证据、权衡判断。
 RUBRIC (30 XP): Context (6 XP) | Quotations (10 XP) | Effect plus judgement (10 XP) | Register (4 XP).
+Zeitbox: 2-Minuten-Countdown fuer Werkstatt-Plan (garage Z. 1, rates Z. 7, bills Z. 10), dann schreiben. 中文：先用2分钟定车库与账单再写。
 
 Klausur-Satz: `CN: 满分句须含承诺引文、裂缝数据与修订展望。EN: AFB-III sentence needs promise quotation, crack figure and revised outlook.`
 
 ## Schritt 8 — reflexion: Takeaway und Rueckblick aus Fall 50
 
-中文总结：先锁引文，再说效果，最后判断。
-English TAKEAWAY: Secure quotation, name effect, judge with reasons. `CN: 读梦即称重希望与门槛。EN: Reading the dream means weighing hope against access.`
+中文总结：先锁车库承诺，再查银行信，最后称希望门槛。
+English TAKEAWAY: Lock garage, check bank, weigh doors. `CN: 读梦即称希望对门槛到扳手。EN: Weighing hope keeps wrench, demands key Z. 15.`
 
-Klausur-Satz: `CN元认知收束——第50号案件（American Dream Myth Reality）证明：证据加功能等于判断。DE/EN: Fall 50 (American Dream Myth Reality) proves: evidence plus function equals judgement.`
+Klausur-Satz: `CN元认知收束——第50号案件（Garage Speech）证明：车库故事须查缺席者，文凭对握手。DE/EN: Fall 50 proves: garage Z. 1 tested by bank letter Z. 6; doors Z. 13-14 split access.`
 
 REFLEXION（中文在前）：
 1. 中文：近路和远路哪个更难？English: Which was harder, close quotation or distant judgement?

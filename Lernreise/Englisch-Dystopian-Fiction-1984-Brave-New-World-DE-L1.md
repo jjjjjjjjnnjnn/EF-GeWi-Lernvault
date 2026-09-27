@@ -132,18 +132,19 @@ Klausur-Satz: `Haeufig verwechselt: Inhalt melde Macht; erst Technik plus Preis 
 
 ROLLE: Du bist Essay coach for the final exam in der Pruefung.
 SITUATION: Ein Fall liegt unbearbeitet auf dem Tisch und verlangt Einordnung, Belege und Urteil.
-AUFGABE: Verfasse circa 150 Woerter mit Einordnung, zwei Belegen mit Zeile, Funktion, Deutung und Schlussurteil.
-RUBRIC (30 XP): Einordnung korrekt (6 XP) | Zwei Belege mit Zeile (10 XP) | Funktion plus Deutung (10 XP) | Fachsprache und Schluss (4 XP).
+AUFGABE: Verfasse circa 150 Woerter mit Einordnung, zwei Belegen mit Z., Funktion, Deutung und Schlussurteil.
+RUBRIC (30 XP): Einordnung korrekt (6 XP) | Zwei Belege mit Z. (10 XP) | Funktion plus Deutung (10 XP) | Fachsprache und Schluss (4 XP).
+Zeitbox: 2-Minuten-Countdown fuer Technik-Plan (Tilgen Z. 4-5, Paar Z. 14, Loeffel Z. 11-13), dann schreiben.
 
-Klausur-Satz: `AFB-III-Mustersatz: Worttilgung (l. 4-5) mit Sloganpaar (Z. 14) und Loeffel-Widerstand (l. 11-13) belegen Orwell-Technik, weil Sprache schrumpft und Erinnerung kostet.`
+Klausur-Satz: `AFB-III-Mustersatz: Worttilgung (Z. 4-5) mit Sloganpaar (Z. 14) und Loeffel-Widerstand (Z. 11-13) belegen Orwell-Technik, weil Sprache schrumpft und Erinnerung kostet.`
 
 ## Schritt 8 — reflexion: Takeaway und Rueckblick aus Fall 44
 
 TAKEAWAY:
 
-Klausur-Satz: `Fall 44 (Dystopian Fiction 1984 Brave New World DE) schliesst: Wer Beleg, Funktion und Urteil sichert, besteht jede Klausur.`
+Klausur-Satz: `Fall 44 (Kantine Thirteen DE) schliesst: Wer sufficient Z. 4-5 gegen tasty haelt, Paar Z. 14 zitiert und Loeffel Z. 11-13 wiegt, trennt Drohung von Betaeubung.`
 
-Fall 44 lehrt den Dreischritt aus Beleg, Funktion und Urteil. Takeaway-Satz: `Dystopie lesen heisst: Technik benennen, Preis wiegen und Orwell gegen Huxley halten.`
+Fall 44 lehrt Kantine als Kamera plus Jingle mit Loeffel-Mass. Takeaway-Satz: `Dystopie hier lesen heisst: Tilgung Z. 4, Slogan Z. 14 und Loeffel Z. 15 als Preiskette halten.`
 
 REFLEXION:
 1. Welche Spur fiel schwerer, der Nahbeleg oder das Fernurteil?

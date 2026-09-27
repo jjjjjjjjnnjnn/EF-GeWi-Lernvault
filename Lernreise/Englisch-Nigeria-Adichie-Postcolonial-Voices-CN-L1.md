@@ -36,11 +36,11 @@ Klausur-Satz: `CN: 三种英语，三种门。EN: Three Englishes, three doors.`
 
 装备盒（5件，先读中文，再背英文）：
 
-- English: **Single story | 单一故事** CN: 一个版本盖住所有。EN: One version covers all. It flattens lives.  Mechanism: Repetition plus authority makes stereotype.  Klausur-Tipp: Name the flattened group.
-- English: **Code-switching | 语码切换** CN: 口音即策略。EN: Accent is strategy. Speakers switch for doors.  Mechanism: Register plus audience opens access.  Klausur-Tipp: Quote switch with situation.
-- English: **Hybrid identity | 混杂身份** CN: 之间即家。EN: Between is home. Roots travel.  Mechanism: Two repertoires plus choice builds self.  Klausur-Tipp: Show both repertoires.
-- English: **Gendered voice | 性别之声** CN: 厨房与讲台争夺麦克风。EN: Kitchen and podium contest the mic.  Mechanism: Space plus interruption rations speech.  Klausur-Tipp: Count who interrupts.
-- English: **Reclaiming | 收复** CN: 夺回命名权。EN: Reclaiming renames insult as pride.  Mechanism: Old word plus new speaker flips power.  Klausur-Tipp: Quote flipped word.
+- English: **Single story | 单一故事** CN: 一个版本盖住所有。EN: One version covers all. It flattens lives.  Mechanism: Repetition plus authority makes stereotype; second layer names flattened market voices with Z.; third layer restores many versions.  Klausur-Tipp: Name the flattened group.
+- English: **Code-switching | 语码切换** CN: 口音即策略。EN: Accent is strategy. Speakers switch for doors.  Mechanism: Register plus audience opens access; second layer quotes Queen versus street with Z.; third layer measures discount versus stamp.  Klausur-Tipp: Quote switch with situation.
+- English: **Hybrid identity | 混杂身份** CN: 之间即家。EN: Between is home. Roots travel.  Mechanism: Two repertoires plus choice builds self; second layer shows TV plus Igbo with Z.; third layer crowns table as home.  Klausur-Tipp: Show both repertoires.
+- English: **Gendered voice | 性别之声** CN: 厨房与讲台争夺麦克风。EN: Kitchen and podium contest the mic.  Mechanism: Space plus interruption rations speech; second layer counts soup versus podium turns; third layer weighs hearing fairness.  Klausur-Tipp: Count who interrupts.
+- English: **Reclaiming | 收复** CN: 夺回命名权。EN: Reclaiming renames insult as pride.  Mechanism: Old word plus new speaker flips power; second layer quotes proverb-passport with Z.; third layer honours roots verdict.  Klausur-Tipp: Quote flipped word.
 
 Klausur-Satz: `CN: 单一、切换与收复构成三角。EN: Single story, switching and reclaiming triangulate voice.`
 
@@ -141,15 +141,16 @@ English ROLE: You are Culture columnist of the school paper.
 SITUATION: Case 32 waits on your desk.
 TASK（中文）：150词左右，含背景、证据、权衡判断。
 RUBRIC (30 XP): Context (6 XP) | Quotations (10 XP) | Effect plus judgement (10 XP) | Register (4 XP).
+Zeitbox: 2-Minuten-Countdown fuer Switch-Plan (Queen Z. 1, street Z. 4, Igbo Z. 7), dann schreiben. 中文：先用2分钟定三切换场合再写。
 
 Klausur-Satz: `CN: 满分句须含三切换引文、场合与准入结果。EN: AFB-III sentence needs three switches with situations and outcomes.`
 
 ## Schritt 8 — reflexion: Takeaway und Rueckblick aus Fall 32
 
-中文总结：先锁引文，再说效果，最后判断。
-English TAKEAWAY: Secure quotation, name effect, judge with reasons. `CN: 听见即承认多重归属。EN: Hearing voices means honouring belonging.`
+中文总结：先跟三切换场合，再看准入结果，最后听多重归属。
+English TAKEAWAY: Track three switches, check access, honour home. `CN: 一桌三语即多重归属。EN: Hearing three tongues honours belonging Z. 15.`
 
-Klausur-Satz: `CN元认知收束——第32号案件（Nigeria Adichie Postcolonial Voices）证明：证据加功能等于判断。DE/EN: Fall 32 (Nigeria Adichie Postcolonial Voices) proves: evidence plus function equals judgement.`
+Klausur-Satz: `CN元认知收束——第32号案件（Market Three Englishes）证明：女王腔盖章，街头腔砍价，妈妈腔守根。DE/EN: Fall 32 proves: Queen stamps Z. 1-3, street bargains Z. 4-6, Igbo roots Z. 7.`
 
 REFLEXION（中文在前）：
 1. 中文：近路和远路哪个更难？English: Which was harder, close quotation or distant judgement?

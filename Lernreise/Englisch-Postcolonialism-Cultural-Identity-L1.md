@@ -36,11 +36,11 @@ Klausur-Satz: `CN: 站牌双写，身份双归。EN: Double board, double belong
 
 装备盒（5件，先读中文，再背英文）：
 
-- English: **Othering | 他者化** CN: 标签加制度划界。EN: Labels plus institutions border people.  Mechanism: Repetition hardens border.  Klausur-Tipp: Quote label plus institution.
-- English: **Mimicry | 模拟** CN: 几乎相同但差一点。EN: Almost same, not quite.  Mechanism: Slip mocks original.  Klausur-Tipp: Show slip.
-- English: **Hybridity | 混杂** CN: 第三空间说话。EN: Third space speaks.  Mechanism: Two codes make new meaning.  Klausur-Tipp: Name codes.
-- English: **Memory politics | 记忆政治** CN: 石头投票。EN: Stones vote daily.  Mechanism: Plaque reopens story.  Klausur-Tipp: Compare inscriptions.
-- English: **Voice and agency | 声音** CN: 谁拿麦谁定史。EN: Mic decides narrative.  Mechanism: Listening redistributes power.  Klausur-Tipp: Count speakers.
+- English: **Othering | 他者化** CN: 标签加制度划界。EN: Labels plus institutions border people.  Mechanism: Repetition hardens border; second layer quotes label plus leaflet with Z.; third layer weighs exclusion verdict.  Klausur-Tipp: Quote label plus institution.
+- English: **Mimicry | 模拟** CN: 几乎相同但差一点。EN: Almost same, not quite.  Mechanism: Slip mocks original; second layer shows slip with Z.; third layer shifts power reading.  Klausur-Tipp: Show slip.
+- English: **Hybridity | 混杂** CN: 第三空间说话。EN: Third space speaks.  Mechanism: Two codes make new meaning; second layer names VICTORIA plus EKO with Z.; third layer crowns double belonging.  Klausur-Tipp: Name codes.
+- English: **Memory politics | 记忆政治** CN: 石头投票。EN: Stones vote daily.  Mechanism: Plaque reopens story; second layer compares board versus chalk with Z.; third layer judges rewrite as progress.  Klausur-Tipp: Compare inscriptions.
+- English: **Voice and agency | 声音** CN: 谁拿麦谁定史。EN: Mic decides narrative.  Mechanism: Listening redistributes power; second layer counts speakers with Z.; third layer honours access verdict.  Klausur-Tipp: Count speakers.
 
 Klausur-Satz: `CN: 他者、模拟与混杂构成三角。EN: Othering, mimicry, hybridity triangulate identity.`
 
@@ -141,15 +141,16 @@ English ROLE: You are Culture columnist of the school paper.
 SITUATION: Case 29 waits on your desk.
 TASK（中文）：150词左右，含背景、证据、权衡判断。
 RUBRIC (30 XP): Context (6 XP) | Quotations (10 XP) | Effect plus judgement (10 XP) | Register (4 XP).
+Zeitbox: 2-Minuten-Countdown fuer Doppelname-Plan (VICTORIA Z. 1, EKO Z. 2, stamp Z. 8), dann schreiben. 中文：先用2分钟定双站名与盖章再写。
 
 Klausur-Satz: `CN: 满分句须含双站名引文、盖章证据与重写收束。EN: AFB-III sentence needs double-name quotation, stamp proof and rewrite close.`
 
 ## Schritt 8 — reflexion: Takeaway und Rueckblick aus Fall 29
 
-中文总结：先锁引文，再说效果，最后判断。
-English TAKEAWAY: Secure quotation, name effect, judge with reasons. `CN: 站台即归属的秤。EN: Platforms weigh belonging.`
+中文总结：先锁双站名，再看盖章，最后重写归属。
+English TAKEAWAY: Board double, stamp both, rewrite. `CN: 站台重写即归属加深。EN: Platforms weigh belonging per rewrite Z. 15.`
 
-Klausur-Satz: `CN元认知收束——第29号案件（Postcolonialism Cultural Identity）证明：证据加功能等于判断。DE/EN: Fall 29 (Postcolonialism Cultural Identity) proves: evidence plus function equals judgement.`
+Klausur-Satz: `CN元认知收束——第29号案件（Platform Names）证明：双站名加粉笔等于新归属，盖章为证。DE/EN: Fall 29 proves: double board with Z. 1-2 plus stamp Z. 8 equals belonging.`
 
 REFLEXION（中文在前）：
 1. 中文：近路和远路哪个更难？English: Which was harder, close quotation or distant judgement?

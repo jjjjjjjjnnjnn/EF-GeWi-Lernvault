@@ -36,11 +36,11 @@ Klausur-Satz: `CN: 转发前先看街牌。EN: Read the street sign before the s
 
 装备盒（5件，先读中文，再背英文）：
 
-- English: **Source check | 信源核查** CN: 谁拍、何时、何地。EN: Who filmed, when, where. No source, no share.  Mechanism: Metadata plus motive filters virality.  Klausur-Tipp: Name account, date, place.
-- English: **Emotional trap | 情绪陷阱** CN: 愤怒与感动加速转发。EN: Anger and awe accelerate sharing. Feelings bypass checks.  Mechanism: Caps plus music plus victim frames urgency.  Klausur-Tipp: Mark caps, music, victim.
-- English: **Echo chamber | 回音室** CN: 算法只喂同类。EN: Feeds repeat your tribe. Difference starves.  Mechanism: Likes train ranking; ranking trains belief.  Klausur-Tipp: Seek second tribe source.
-- English: **Deepfake signal | 深度伪造信号** CN: 光影、口型与 blink。EN: Light, lips and blinks betray synthesis.  Mechanism: Artefact plus context mismatch exposes fake.  Klausur-Tipp: List two artefacts.
-- English: **Correction habit | 纠正习惯** CN: 转发纠正如转发谣言。EN: Share corrections like rumours. Speed heals.  Mechanism: Flag plus link plus apology restores trust.  Klausur-Tipp: Model correction sentence.
+- English: **Source check | 信源核查** CN: 谁拍、何时、何地。EN: Who filmed, when, where. No source, no share.  Mechanism: Metadata plus motive filters virality; second layer checks sign plus account age with Z.; third layer stops share.  Klausur-Tipp: Name account, date, place.
+- English: **Emotional trap | 情绪陷阱** CN: 愤怒与感动加速转发。EN: Anger and awe accelerate sharing. Feelings bypass checks.  Mechanism: Caps plus music plus victim frames urgency; second layer marks BREAKING plus drums with Z.; third layer pauses before share.  Klausur-Tipp: Mark caps, music, victim.
+- English: **Echo chamber | 回音室** CN: 算法只喂同类。EN: Feeds repeat your tribe. Difference starves.  Mechanism: Likes train ranking; ranking trains belief; second layer seeks second tribe source; third layer breaks feed loop.  Klausur-Tipp: Seek second tribe source.
+- English: **Deepfake signal | 深度伪造信号** CN: 光影、口型与 blink。EN: Light, lips and blinks betray synthesis.  Mechanism: Artefact plus context mismatch exposes fake; second layer lists spliced child plus old storm with Z.; third layer names original source.  Klausur-Tipp: List two artefacts.
+- English: **Correction habit | 纠正习惯** CN: 转发纠正如转发谣言。EN: Share corrections like rumours. Speed heals.  Mechanism: Flag plus link plus apology restores trust; second layer posts correction with links and Z.; third layer accepts slower travel.  Klausur-Tipp: Model correction sentence.
 
 Klausur-Satz: `CN: 信源、情绪与二源构成三角。EN: Source, emotion and second source triangulate truth.`
 
@@ -141,15 +141,16 @@ English ROLE: You are Fact-check editor of the school paper.
 SITUATION: Case 38 waits on your desk.
 TASK（中文）：150词左右，含背景、证据、权衡判断。
 RUBRIC (30 XP): Context (6 XP) | Quotations (10 XP) | Effect plus judgement (10 XP) | Register (4 XP).
+Zeitbox: 2-Minuten-Countdown fuer Stopp-Plan (sign Z. 6, account Z. 8, original Z. 10), dann schreiben. 中文：先用2分钟定街牌与账号再写。
 
 Klausur-Satz: `CN: 满分句须含街牌证据、账号年龄与原视频出处。EN: AFB-III sentence needs sign proof, account age and original source.`
 
 ## Schritt 8 — reflexion: Takeaway und Rueckblick aus Fall 38
 
-中文总结：先锁引文，再说效果，最后判断。
-English TAKEAWAY: Secure quotation, name effect, judge with reasons. `CN: 暂停即负责。EN: Pausing is responsibility.`
+中文总结：先看街牌，再查账号，最后带链纠正。
+English TAKEAWAY: Read sign, check account, link correction. `CN: 暂停读牌即负责。EN: Pausing on signs is responsibility Z. 6.`
 
-Klausur-Satz: `CN元认知收束——第38号案件（Media Manipulation Fake News）证明：证据加功能等于判断。DE/EN: Fall 38 (Media Manipulation Fake News) proves: evidence plus function equals judgement.`
+Klausur-Satz: `CN元认知收束——第38号案件（Flood Clip）证明：街牌加账号年龄戳破跨城拼接。DE/EN: Fall 38 proves: sign Z. 6 plus account Z. 8 exposes spliced storm.`
 
 REFLEXION（中文在前）：
 1. 中文：近路和远路哪个更难？English: Which was harder, close quotation or distant judgement?

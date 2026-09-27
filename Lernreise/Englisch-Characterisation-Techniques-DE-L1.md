@@ -132,18 +132,19 @@ Klausur-Satz: `Haeufig verwechselt: Erzaehlurteil ist kein Beweis; erst Szene mi
 
 ROLLE: Du bist Book reviewer for the school magazine in der Pruefung.
 SITUATION: Ein Fall liegt unbearbeitet auf dem Tisch und verlangt Einordnung, Belege und Urteil.
-AUFGABE: Verfasse circa 150 Woerter mit Einordnung, zwei Belegen mit Zeile, Funktion, Deutung und Schlussurteil.
-RUBRIC (30 XP): Einordnung korrekt (6 XP) | Zwei Belege mit Zeile (10 XP) | Funktion plus Deutung (10 XP) | Fachsprache und Schluss (4 XP).
+AUFGABE: Verfasse circa 150 Woerter mit Einordnung, zwei Belegen mit Z., Funktion, Deutung und Schlussurteil.
+RUBRIC (30 XP): Einordnung korrekt (6 XP) | Zwei Belege mit Z. (10 XP) | Funktion plus Deutung (10 XP) | Fachsprache und Schluss (4 XP).
+Zeitbox: 2-Minuten-Countdown fuer Etikett-Probe (practical Z. 1, Fuersorge Z. 2, Haerte Z. 8-9), dann schreiben.
 
-Klausur-Satz: `AFB-III-Mustersatz: Das Etikett practical (l. 1, l. 14) bestaetigt sich in Fuersorge (l. 2, l. 5), bricht aber in Haerte (l. 8-9); Foil Pike (l. 10-12) schaerft die Ambivalenz.`
+Klausur-Satz: `AFB-III-Mustersatz: Das Etikett practical (Z. 1, Z. 14) bestaetigt sich in Fuersorge (Z. 2, Z. 5), bricht aber in Haerte (Z. 8-9); Foil Pike (Z. 10-12) schaerft die Ambivalenz.`
 
 ## Schritt 8 — reflexion: Takeaway und Rueckblick aus Fall 48
 
 TAKEAWAY:
 
-Klausur-Satz: `Fall 48 (Characterisation Techniques DE) schliesst: Wer Beleg, Funktion und Urteil sichert, besteht jede Klausur.`
+Klausur-Satz: `Fall 48 (Tea Leeds DE) schliesst: Wer practical Z. 1 mit Kekse-Blick Z. 7 und Kasse Z. 8-9 prueft plus Pike Z. 10-12 als Foil haelt.`
 
-Fall 48 lehrt den Dreischritt aus Beleg, Funktion und Urteil. Takeaway-Satz: `Figur lesen heisst: Label zitieren, Muster sammeln und Bruch oder Treue benennen.`
+Fall 48 lehrt Teestunde als Etikett gegen Verhalten mit Foil. Takeaway-Satz: `Figur hier lesen heisst: Label Z. 1 zitieren, Kekse plus Kasse Z. 7-9 sammeln, Pike Z. 10-12 als Kontrast nennen.`
 
 REFLEXION:
 1. Welche Spur fiel schwerer, der Nahbeleg oder das Fernurteil?

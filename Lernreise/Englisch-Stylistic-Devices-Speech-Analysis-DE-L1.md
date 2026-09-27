@@ -133,17 +133,18 @@ Klausur-Satz: `Haeufig verwechselt: Benennen ist nicht Deuten; erst Funktion plu
 ROLLE: Du bist Speech coach of the student council in der Pruefung.
 SITUATION: Ein Fall liegt unbearbeitet auf dem Tisch und verlangt Einordnung, Belege und Urteil.
 AUFGABE: Verfasse circa 150 Woerter mit Einordnung, zwei Belegen mit Zeile, Funktion, Deutung und Schlussurteil.
-RUBRIC (30 XP): Einordnung korrekt (6 XP) | Zwei Belege mit Zeile (10 XP) | Funktion plus Deutung (10 XP) | Fachsprache und Schluss (4 XP).
+RUBRIC (30 XP): Einordnung korrekt (6 XP) | Zwei Belege mit Z. (10 XP) | Funktion plus Deutung (10 XP) | Fachsprache und Schluss (4 XP).
+Zeitbox: 2-Minuten-Countdown fuer Takt-Plan (Anapher Z. 1, Frage Z. 2, Klimax Z. 8), dann schreiben.
 
-Klausur-Satz: `AFB-III-Mustersatz: Anaphern (l. 1, l. 11) mit Klimax (Z. 8) belegen Mobilisierung, weil Takt plus Steigerung Beifall in Handlung uebersetzt.`
+Klausur-Satz: `AFB-III-Mustersatz: Anaphern (Z. 1, Z. 11) mit Klimax (Z. 8) belegen Mobilisierung, weil Takt plus Steigerung Beifall in Handlung uebersetzt.`
 
 ## Schritt 8 — reflexion: Takeaway und Rueckblick aus Fall 26
 
 TAKEAWAY:
 
-Klausur-Satz: `Fall 26 (Stylistic Devices Speech Analysis DE) schliesst: Wer Beleg, Funktion und Urteil sichert, besteht jede Klausur.`
+Klausur-Satz: `Fall 26 (Rede Pausenhalle DE) schliesst: Wer Anapher mit Z. zaehlt, Frage als Zustimmung liest und Klimax Z. 8 kroent, mobilisiert den Hof.`
 
-Fall 26 lehrt den Dreischritt aus Beleg, Funktion und Urteil. Takeaway-Satz: `Rede lesen heisst: Figuren zaehlen, Funktionen benennen und Appell an der Klimax messen.`
+Fall 26 lehrt Pausenhalle als Takt plus Schnitt mit Pointe. Takeaway-Satz: `Rede lesen heisst: Anapher Z. 1, Frage Z. 2 und Klimax Z. 8 zur Wahl Z. 15 fuehren.`
 
 REFLEXION:
 1. Welche Spur fiel schwerer, der Nahbeleg oder das Fernurteil?

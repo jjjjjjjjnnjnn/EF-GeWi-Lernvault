@@ -37,15 +37,15 @@ Klausur-Satz: `矛盾句——Fields share one question: who belongs and at what
 装备盒（5件，先读中文，再记英文/德语）：
 
 - 中文点拨：CN: 英国地区与阶级
-  English: **UK: regions and class: EN: The UK field spans regions, class codes and devolution. Accent signals belonging. ** Mechanism: Place plus register maps identity; contrast sharpens.  Klausur-Tipp: Anchor with place and voice.
+  English: **UK: regions and class: EN: The UK field spans regions, class codes and devolution. Accent signals belonging. ** Mechanism: Place plus register maps identity; second layer contrasts London against valleys with line; third layer weighs belonging claim as verdict.  Klausur-Tipp: Anchor with place and voice.
 - 中文点拨：CN: 美国承诺与裂缝
-  English: **USA: promise and cracks: EN: The US field tests promise against data. Dream meets measure. ** Mechanism: Biography plus figures weighs myth.  Klausur-Tipp: Quote promise, test with figure.
+  English: **USA: promise and cracks: EN: The US field tests promise against data. Dream meets measure. ** Mechanism: Biography plus figures weighs myth; second layer quotes promise then tests with figure; third layer revises dream with dignity close.  Klausur-Tipp: Quote promise, test with figure.
 - 中文点拨：CN: 尼日利亚声音
-  English: **Nigeria: voices: EN: The Nigeria field centres Adichie voices and language choice. Single stories break. ** Mechanism: Switch plus situation proves agency.  Klausur-Tipp: Track switches.
+  English: **Nigeria: voices: EN: The Nigeria field centres Adichie voices and language choice. Single stories break. ** Mechanism: Switch plus situation proves agency; second layer tracks switch with occasion; third layer honours belonging outcome.  Klausur-Tipp: Track switches.
 - 中文点拨：CN: 混杂身份
-  English: **Identity: hybrid selves: EN: Identity spans belonging between worlds. Hyphens speak. ** Mechanism: Two codes plus choice builds self.  Klausur-Tipp: Show both codes.
+  English: **Identity: hybrid selves: EN: Identity spans belonging between worlds. Hyphens speak. ** Mechanism: Two codes plus choice builds self; second layer shows both codes with line; third layer names choice as self verdict.  Klausur-Tipp: Show both codes.
 - 中文点拨：CN: 媒体与信任
-  English: **Media: news and trust: EN: The media field checks source, emotion and correction. Pause beats share. ** Mechanism: Source plus second outlet filters virality.  Klausur-Tipp: Name source triad.
+  English: **Media: news and trust: EN: The media field checks source, emotion and correction. Pause beats share. ** Mechanism: Source plus second outlet filters virality; second layer verifies account, date and rival; third layer decides publish or hold.  Klausur-Tipp: Name source triad.
 
 Klausur-Satz: `定义句——Place, promise and voice define every Themenfeld answer.`
 
@@ -77,6 +77,24 @@ Bezug zum Konzept: `传导句——Anchor plus contrast equals verdict: one fiel
 English TASK: Ordne einen unseen text zwei Feldern zu und formuliere These plus zwei Anker-Belege.
 TARGET: Three blocks, each with evidence and judgement in four sentences.
 
+PRIMAERTEXT（Study text: Five Fields Evening in Leeds, study version, 150词unseen, 15 lines)：
+
+> The community hall in Leeds flew four flags for one busy exam week. (Z. 1)
+> A poster praised loud northern voices against distant London office jobs. (Z. 2)
+> Devolution, explained the patient tutor, means daily decisions move much closer. (Z. 3)
+> A short US exchange clip promised fair scholarships for hard working newcomers. (Z. 4)
+> The careful small print listed heavy loans directly beside small grants. (Z. 5)
+> Adaeze then read her confident Lagos market poem in two living tongues. (Z. 6)
+> The friendly audience repeated her difficult surname until it truly sang. (Z. 7)
+> A hyphenated student calmly called himself a bridge, never a half. (Z. 8)
+> He carried two passports but only one cheap evening bus ticket. (Z. 9)
+> The school paper checked theviral clip source twice before morning break. (Z. 10)
+> It flagged midnight uploads plus missing stamps and unclear account names. (Z. 11)
+> Pause first, advised the tired editor, before you quickly share. (Z. 12)
+> Belonging, she finally wrote, is an anchor fixed with line. (Z. 13)
+> Price, she firmly added, is always the second heavy anchor. (Z. 14)
+> We filed that long evening under five separate exam fields. (Z. 15)
+
 HILFE（中文在前）：
 1. 中文：两句交代背景。English: Place the case in two sentences.
 2. 中文：锁两个证据。English: Secure two blocks of evidence.
@@ -84,6 +102,8 @@ HILFE（中文在前）：
 
 MUSTERLOESUNG: 中文示范：背景一句，证据加效果两句，判断一句。
 English MODEL: Case 51 shows the method in three moves with evidence, effect and judgement.
+
+MARKIERAUFTRAG（双色标注）：CN: 黄色[GELB]标领域锚点（flags, devolution, scholarships, surname, source），蓝色[BLAU]标代价与对照（loans, missing stamps, price, bridge）。EN: GELB for field anchors, BLAU for price and contrast.
 
 Klausur-Satz: `规律句——The field rule: the stranger the text, the firmer the anchor.`
 
@@ -128,6 +148,7 @@ English ROLE: You are Exam coach for the finals.
 SITUATION: Case 51 waits on your desk.
 TASK（中文）：150词左右，含背景、证据、权衡判断。
 RUBRIC (30 XP): Context (6 XP) | Evidence (10 XP) | Effect plus judgement (10 XP) | Register (4 XP).
+Zeitbox: 2-Minuten-Countdown fuer Gliederung (Leitfeld plus Kontrastfeld), dann schreiben. 中文：先用2分钟定提纲再写。
 
 Klausur-Satz: `满分句——AFB-III model: While the text leads with field A (anchor, line), field B corrects it; hence weighted verdict with outlook.`
 
@@ -135,10 +156,10 @@ Klausur-Satz: `满分句——AFB-III model: While the text leads with field A (
 
 TAKEAWAY:
 
-Klausur-Satz: `CN元认知收束——第51号案件（Abitur Themenfelder）证明：证据加功能等于判断。DE/EN: Fall 51 (Abitur Themenfelder) proves: evidence plus function equals judgement.`
+Klausur-Satz: `CN元认知收束——第51号案件（Abitur Themenfelder）证明：主领域定锚，对比域收束，归属与代价称量。DE/EN: Fall 51 proves: lead field anchors with Z., contrast sharpens, verdict weighs belonging against price.`
 
-中文总结：先锁证据，再说效果，最后判断。
-English TAKEAWAY: Secure evidence, name effect, judge with reasons. `元认知句——Fields read means: anchor first, contrast second, judge with measure.`
+中文总结：先定主领域锚，再借对比域，最后称量归属与代价。
+English TAKEAWAY: Anchor lead field, contrast second, weigh belonging. `元认知句——Fields read means: one lead anchor with Z., one contrast, one weighed verdict.`
 
 REFLEXION（中文在前）：
 1. 中文：近路和远路哪个更难？English: Which was harder, close evidence or distant judgement?
