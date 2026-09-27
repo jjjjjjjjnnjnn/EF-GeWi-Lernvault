@@ -13,9 +13,16 @@ version: Lesson-v3
 
 # Lernreise: Parteien und Willensbildung (L1, Ziel Klausur)
 
-<!-- Lesson-v3: 8 Schritte plus Anekdote und Fehlvorstellung; Fehlvorstellung zwischen Schritt 6 und 7 (Parser-Skip); interaktives [Werkzeug: <id>]; Gating: check/szenario nicht bestanden = Weiter gesperrt; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
+> Kampagne *Virtuelle Stadt-Tycoon — Von der Apfelmarkt-Fehde zum modernen Sozialstaat*: Akt IV-V — Tarifarena und Demokratiewerkstatt — Episode 17, Cast: Klinikpfleger Jonas Lindqvist. Werkzeug dieser Episode: [balance-board].
 
-## Schritt 1 — entdecken: Ziele & Phaenomen-Einstieg
+<!-- Lesson-v3: 8 Schritte plus Anekdote und Fehlvorstellung; Fehlvorstellung zwischen Schritt 6 und 7 (Parser-Skip); interaktives [Werkzeug: balance-board]; Gating: check/szenario nicht bestanden = Weiter gesperrt; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
+
+## Schritt 1 — entdecken: Alarm in Tycoon City: Rollenkonflikt im Stadtklinikum
+
+
+> EPISODE 17 — Akt IV-V — Tarifarena und Demokratiewerkstatt — Auftrag von Klinikpfleger Jonas Lindqvist: Rollenkonflikt im Stadtklinikum.
+
+HOOK (Stadtrats-Krise, lies zuerst): EPISODE 17 — Akt IV-V — Tarifarena und Demokratiewerkstatt — Stadt Tycoon City ruft dich in den Krisenstab. Klinikpfleger Jonas Lindqvist stuermt mit einer Eilmeldung ins Buero: Rollenkonflikt im Stadtklinikum — und morgen entscheidet der Stadtrat. Der Markt schreit, die Warteschlange waechst, die Kasse zittert: Ohne deine Analyse kippt die Stadt vom Apfelparadies in den Schwarzmarkt. Dein Auftrag in dieser Episode: Uebersetze die Strassenszene in das heutige Thema Parteien und Willensbildung. Sammle Belege, stelle den Sandkasten [balance-board] scharf und liefere dem Rat eine Klausur-Antwort, die einer Pruefungskommission standhaelt. Erste Spur: TARGET: Bringt auf dem Verhandlungsbrett beide Waagschalen in die Balance — Bedingung: Zustimmung beider Baenke, Loesung mit Kompromisslinie, Ergebnisprotokoll mit zwei Begruendungen je Seite. Wer den Mechanismus versteht, rettet den Haushalt — und vielleicht die Wahl. Der Countdown laeuft, das Radio berichtet live, die Opposition wartet nur auf deinen Fehler: Oeffne die Ziele, schnapp dir die Begriffe und beweise, dass Tycoon City regierbar bleibt.
 
 ZIELE (drei messbare Ziele dieser Lektion):
 
@@ -27,7 +34,7 @@ ZIELE (drei messbare Ziele dieser Lektion):
 
 In den Siebzigern vereinten zwei Parteien ueber neunzig Prozent der Stimmen, heute braucht es oft drei Partner fuer eine Regierung. Stammwaehler schmelzen, Wechselwaehler entscheiden. Braucht die Demokratie noch grosse Schiffe oder viele Boote? In dieser Lektion lernst du zwei Wege der Antwort: Weg A vertraut den Parteien als Vermittlern nach Art. 21 GG, Weg B vertraut Buergerinitiativen und Bewegungen mit direktem Druck.
 
-## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
+## Schritt 2 — entdecken: Werkzeugkoffer von Klinikpfleger Jonas Lindqvist: 5 Begriffe scharf stellen
 
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
@@ -49,7 +56,7 @@ Die Begriffe greifen ineinander: Konservatismus, Sozialismus und Liberalismus li
 
 Klausur-Satz: `Die drei Leitideen — konservativ, sozialistisch und liberal — prägen bis heute die Programme der Bundestagsparteien.`
 
-## Schritt 3 — entdecken: Kernkonzept & Wirkungsmodell
+## Schritt 3 — entdecken: Uhrwerk des Marktes: Kette von Ursache zu Wirkung
 
 TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
@@ -82,11 +89,13 @@ Bei Bundestagswahlen in den 1970er-Jahren kamen die Union und die SPD zusammen a
 
 Bezug zum Konzept: `Das Beispiel zeigt, wie aus stabilen Milieus volatile Wählermärkte mit Erosion und Wechsel wurden.`
 
-## Schritt 4 — ausprobieren: Interaktive Praxis & Urteils-Waage
+## Schritt 4 — ausprobieren: Sandkasten-Einsatz [balance-board]: Rette die Stadt mit Zahlen
 
 BEISPIEL (geleitete Aufgabe mit Werkzeug):
 
 [Werkzeug: balance-board]
+
+TARGET: Bringt auf dem Verhandlungsbrett beide Waagschalen in die Balance — Bedingung: Zustimmung beider Baenke, Loesung mit Kompromisslinie, Ergebnisprotokoll mit zwei Begruendungen je Seite.
 
 Lege im Tool Pro- und Contra-Argumente auf die Waage und gewichte jedes Argument von 1 bis 5; veraendere die Gewichte Schritt fuer Schritt und beobachte, wann das Urteil zwischen Integration und Protest oder zwischen Stabilitaet und Vielfalt umschlaegt.
 
@@ -101,7 +110,7 @@ MUSTERLOESUNG: Beide versprechen Schutz; der Unterschied liegt bei Massnahme und
 
 Klausur-Satz: `Der Vergleich der Wahlprogramme zeigt, dass sich die Klimapolitik der Parteien vor allem bei Maßnahme und Finanzierung unterscheidet.`
 
-## Schritt 5 — ausprobieren: Wegvergleich & Abgrenzung
+## Schritt 5 — ausprobieren: Duell der Wege: Weg A gegen Weg B
 
 VERGLEICH (Wahl des Weges, Weg A gegen Weg B):
 
@@ -141,14 +150,14 @@ Klausur-Satz: `Die 5-Prozent-Hürde stabilisiert das Parlament, schließt aber k
 2. Fehlkonzept: Die Fuenfprozenthuerde diene nur dem Ausschluss kleiner Parteien ohne demokratischen Nutzen.
    Korrektur-Satz: `Die Hürde sichert Funktionsfähigkeit gegen Zersplitterung und wägt sie gegen Repräsentationsgerechtigkeit ab.`
 
-## Schritt 7 — szenario: Podiumsdiskussion & Programmstreit
+## Schritt 7 — szenario: Klausurtransfer: Anhoerung und Parlamentsrede zu Parteien und Willensbildung
 
 ROLLE: Du bist Wahlkampfberaterin bzw. Wahlkampfberater einer Jugendorganisation.
 SITUATION: Deine Gruppe soll auf einem Podium ein Wahlprogramm zum Thema Bildung vorstellen. Ein Publikumsteil fragt, warum man ueberhaupt noch eine grosse Volkspartei waehlen soll, wenn kleine Parteien genauer zu den eigenen Interessen passen. Beurteile in einer zusammenhängenden Stellungnahme (ca. 150 Wörter), welche Vor- und Nachteile Volksparteien und kleine Parteien für die politische Willensbildung haben.
 AUFGABE (AFB III): Verfasse eine zusammenhaengende Darstellung von etwa 150 Woertern mit Kriterium, Anwendung und Urteil.
 RUBRIC (30 XP): These mit Kriterium Repraesentation und Regierungsfaehigkeit (5 XP) | Darstellung von Volkspartei und kleiner Partei mit Art. 21 Bezug (10 XP) | Anwendung auf Bildung mit Abwaegung von Integration und Themennaehe (10 XP) | Fazit mit Fachbegriffen und Klausur-Satz (5 XP).
 
-## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
+## Schritt 8 — reflexion: Takeaway & Reflexion: Was der Krisenstab lernt
 
 TAKEAWAY (Kernbotschaft in einem Kasten):
 

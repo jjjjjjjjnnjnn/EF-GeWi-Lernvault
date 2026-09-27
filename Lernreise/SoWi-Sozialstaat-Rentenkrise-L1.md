@@ -13,9 +13,16 @@ version: Lesson-v3
 
 # Lernreise: Sozialstaat und Rentenkrise (L1, Ziel Klausur)
 
-<!-- Lesson v3 architecture: Schritte 1-8 fixed; Fehlvorstellung between Schritt 6 and 7 (parser skipped); embedded [Werkzeug: <id>]; gating: check/szenario failed = Weiter greyed; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
+> Kampagne *Virtuelle Stadt-Tycoon — Von der Apfelmarkt-Fehde zum modernen Sozialstaat*: Akt III — Gini-Waage und Steuerreform — Episode 32, Cast: Abiturcoach Dr. Miriam Scholz. Werkzeug dieser Episode: [gini-allocator].
 
-## Schritt 1 — entdecken
+<!-- Lesson v3 architecture: Schritte 1-8 fixed; Fehlvorstellung between Schritt 6 and 7 (parser skipped); embedded [Werkzeug: gini-allocator]; gating: check/szenario failed = Weiter greyed; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
+
+## Schritt 1 — entdecken: Alarm in Tycoon City: Abitur-Countdown-Panik im Pruefungssaal
+
+
+> EPISODE 32｜Akt III — Gini-Waage und Steuerreform｜召集人 Abiturcoach Dr. Miriam Scholz：Abitur-Countdown-Panik im Pruefungssaal。
+
+HOOK 市长危机（先读剧情，再进 ZIELE）：【本集战役 EP32｜Akt III — Gini-Waage und Steuerreform｜虚拟城邦 Tycoon City 告急】市长办公室深夜灯火通明，Abiturcoach Dr. Miriam Scholz 冲进来报告：Abitur-Countdown-Panik im Pruefungssaal，而明天市议会就要投票。集市在喊、长队在排、国库在抖：苹果集市价格战一路烧到租金黑市，再烧到基尼天平与劳资谈判桌，本集正是“Sozialstaat und Rentenkrise”的现实引爆点。你的身份是市长直属经济改革规划委员：把街头危机翻译成考点，用沙盘 [gini-allocator] 拿出可验证的数值方案，再交出一份 Klausur 满分答卷稳住议会。通关线索：TARGET: Justiert Steuer- und Transferregler so, dass der Gini-Indikator nach Umverteilung in den Korridor 0,28 bis 0,32 faellt, das unterste Quintil mindestens 8 Prozent des Kuchens haelt und die Armutsrisikoquote sichtbar sinkt. 上一集的结尾就是这一集的悬念——黑市账本、税改天平、劳资天平、选票天平，四座天平有一座倒了，城邦就停摆。电台正在直播，反对派等着挑错：先读 ZIELE，再啃术语，把传导机制画成你的作战地图。DE-Briefing: Episode 32 — Abiturcoach Dr. Miriam Scholz meldet Abitur-Countdown-Panik im Pruefungssaal; der Stadtrat entscheidet morgen. Rette Tycoon City mit Analyse, Sandkasten und Klausur-Antwort zum Thema Sozialstaat und Rentenkrise.
 
 ZIELE (3 Ziele, nach 15 Minuten erreichbar):
 
@@ -29,7 +36,7 @@ VORGAENGER-VERWEIS: Diese Lektion setzt `Sowi-Soziale-Marktwirtschaft-L1.md` vor
 
 Klausur-Satz: `Die Rente im Umlageverfahren haengt vom Verhaeltnis von Beitragszahlern zu Rentenempfaengern ab.`
 
-## Schritt 2 — entdecken
+## Schritt 2 — entdecken: Werkzeugkoffer von Abiturcoach Dr. Miriam Scholz: 5 Begriffe scharf stellen
 
 PRETRAINING (Kernbegriffe):
 
@@ -41,7 +48,7 @@ PRETRAINING (Kernbegriffe):
 
 Klausur-Satz: `Im Umlageverfahren uebersetzt Demografie direkt in Beitrags- oder Leistungsdruck.`
 
-## Schritt 3 — entdecken
+## Schritt 3 — entdecken: Uhrwerk des Marktes: Kette von Ursache zu Wirkung
 
 ENTDECKEN (ein Konzept plus Diagramm):
 
@@ -64,11 +71,13 @@ Klausur-Satz: `Jede Rentenreform verschiebt dieselbe Last zwischen Beitragszahle
 
 **Bezug zum Konzept**: `Steigende Lebenserwartung verlaengert die Rentenphase bei gleicher Umlagelogik.`
 
-## Schritt 4 — ausprobieren
+## Schritt 4 — ausprobieren: Sandkasten-Einsatz [gini-allocator]: Rette die Stadt mit Zahlen
 
 BEISPIEL (vollstaendige Musterloesung):
 
-[Werkzeug: markt]
+[Werkzeug: gini-allocator]
+
+TARGET: Justiert Steuer- und Transferregler so, dass der Gini-Indikator nach Umverteilung in den Korridor 0,28 bis 0,32 faellt, das unterste Quintil mindestens 8 Prozent des Kuchens haelt und die Armutsrisikoquote sichtbar sinkt.
 
 AUFGABE (analysieren, AFB II): Analysieren Sie, warum ein steigender Altenquotient im Umlageverfahren zu Finanzierungsproblemen fuehrt.
 
@@ -81,7 +90,7 @@ MUSTERLOESUNG: Im Umlageverfahren finanzieren die laufenden Beitraege die laufen
 
 Klausur-Satz: `Der Altenquotient uebersetzt die Alterung in einen messbaren Finanzierungsdruck im Umlageverfahren.`
 
-## Schritt 5 — ausprobieren
+## Schritt 5 — ausprobieren: Duell der Wege: Weg A gegen Weg B
 
 VERGLEICH (erst Verfahren waehlen, dann loesen):
 
@@ -97,7 +106,7 @@ ANTWORT: A erfordert Verfahren (i): Grundsicherung ist steuerfinanzierte Fuersor
 
 Klausur-Satz: `Saeulenzuordnung klaert die normative Logik, Umlagegleichung klaert die finanzielle Tragfaehigkeit.`
 
-## Schritt 6 — check
+## Schritt 6 — check: Selbsttest zu Sozialstaat und Rentenkrise
 
 CHECK (drei Fragen mit Antworten):
 
@@ -115,13 +124,13 @@ Klausur-Satz: `Ohne eine der vier Stellschrauben bleibt die Umlagegleichung bei 
 2. Fehlvorstellung: Spaeterer Rentenbeginn loese die Demografie auf.
    Korrektur-Satz: `Spaeterer Beginn entlastet die Gleichung, beseitigt aber weder Alterung noch Verteilungsfrage.`
 
-## Schritt 7 — szenario
+## Schritt 7 — szenario: Klausurtransfer: Anhoerung und Parlamentsrede zu Sozialstaat und Rentenkrise
 
 ROLLE: Du bist Sachbearbeiterin im Sozialausschuss.
 SITUATION: Vorgeschlagen wird, Beitragssatz und Rentenniveau gesetzlich gleichzeitig einzufrieren. Beurteile in circa 150 Woertern mit der Umlagegleichung, warum dieser Vorschlag bei alternder Bevoelkerung scheitert, und empfehle eine tragfaehige Kombination.
 RUBRIC (30 XP): Umlagegleichung korrekt (8 XP) | Demografiewirkung analysiert (10 XP) | Bewertung des Vorschlags (6 XP) | Begruendete Alternative (6 XP).
 
-## Schritt 8 — reflexion: Takeaway & Reflexion
+## Schritt 8 — reflexion: Takeaway & Reflexion: Was der Krisenstab lernt
 
 TAKEAWAY:
 

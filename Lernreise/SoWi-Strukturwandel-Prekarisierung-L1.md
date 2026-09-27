@@ -13,9 +13,16 @@ version: Lesson-v3
 
 # Lernreise: Strukturwandel und Prekarisierung (L1, Ziel Klausur)
 
-<!-- Lesson v3 architecture: Schritte 1-8 fixed; Fehlvorstellung between Schritt 6 and 7 (parser skipped); embedded [Werkzeug: <id>]; gating: check/szenario failed = Weiter greyed; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
+> Kampagne *Virtuelle Stadt-Tycoon — Von der Apfelmarkt-Fehde zum modernen Sozialstaat*: Akt I-II — Apfelmarkt und Mietendeckel — Episode 34, Cast: Nachtmarkt-Buergermeister-Stellvertreter Deniz Yildiz. Werkzeug dieser Episode: [markt-sim].
 
-## Schritt 1 — entdecken
+<!-- Lesson v3 architecture: Schritte 1-8 fixed; Fehlvorstellung between Schritt 6 and 7 (parser skipped); embedded [Werkzeug: markt-sim]; gating: check/szenario failed = Weiter greyed; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
+
+## Schritt 1 — entdecken: Alarm in Tycoon City: Apfelwein-Steuerdeal hinterm Rathaus
+
+
+> EPISODE 34｜Akt I-II — Apfelmarkt und Mietendeckel｜召集人 Nachtmarkt-Buergermeister-Stellvertreter Deniz Yildiz：Apfelwein-Steuerdeal hinterm Rathaus。
+
+HOOK 市长危机（先读剧情，再进 ZIELE）：【本集战役 EP34｜Akt I-II — Apfelmarkt und Mietendeckel｜虚拟城邦 Tycoon City 告急】市长办公室深夜灯火通明，Nachtmarkt-Buergermeister-Stellvertreter Deniz Yildiz 冲进来报告：Apfelwein-Steuerdeal hinterm Rathaus，而明天市议会就要投票。集市在喊、长队在排、国库在抖：苹果集市价格战一路烧到租金黑市，再烧到基尼天平与劳资谈判桌，本集正是“Strukturwandel und Prekarisierung”的现实引爆点。你的身份是市长直属经济改革规划委员：把街头危机翻译成考点，用沙盘 [markt-sim] 拿出可验证的数值方案，再交出一份 Klausur 满分答卷稳住议会。通关线索：TARGET: Stellt im Sandkasten Angebot und Nachfrage so ein, dass der Gleichgewichtspreis zwischen 8 und 12 Euro liegt, die gehandelte Menge mindestens 100 Einheiten erreicht und ein Probe-Hoechstpreis von 6 Euro als bindend mit Warteschlange entlarvt wird. 上一集的结尾就是这一集的悬念——黑市账本、税改天平、劳资天平、选票天平，四座天平有一座倒了，城邦就停摆。电台正在直播，反对派等着挑错：先读 ZIELE，再啃术语，把传导机制画成你的作战地图。DE-Briefing: Episode 34 — Nachtmarkt-Buergermeister-Stellvertreter Deniz Yildiz meldet Apfelwein-Steuerdeal hinterm Rathaus; der Stadtrat entscheidet morgen. Rette Tycoon City mit Analyse, Sandkasten und Klausur-Antwort zum Thema Strukturwandel und Prekarisierung.
 
 ZIELE (3 Ziele, nach 15 Minuten erreichbar):
 
@@ -29,7 +36,7 @@ VORGAENGER-VERWEIS: Diese Lektion setzt `SoWi-Soziale-Ungleichheit-L1.md` und `S
 
 Klausur-Satz: `Der Strukturwandel verlagert Beschaeftigung in den Dienstleistungssektor und erzeugt dort prekaere Randzonen.`
 
-## Schritt 2 — entdecken
+## Schritt 2 — entdecken: Werkzeugkoffer von Nachtmarkt-Buergermeister-Stellvertreter Deniz Yildiz: 5 Begriffe scharf stellen
 
 PRETRAINING (Kernbegriffe):
 
@@ -41,7 +48,7 @@ PRETRAINING (Kernbegriffe):
 
 Klausur-Satz: `Prekaer ist Arbeit, wenn Einkommen, Sicherheit, Schutz und Planbarkeit gleichzeitig verletzt sind.`
 
-## Schritt 3 — entdecken
+## Schritt 3 — entdecken: Uhrwerk des Marktes: Kette von Ursache zu Wirkung
 
 ENTDECKEN (ein Konzept plus Diagramm):
 
@@ -64,11 +71,13 @@ Klausur-Satz: `Erst die Kumulation mehrerer Unsicherheiten macht aus atypischer 
 
 **Bezug zum Konzept**: `Strukturwandel zeigt sich in Landschaften, Prekarisierung in Lebenslaeufen.`
 
-## Schritt 4 — ausprobieren
+## Schritt 4 — ausprobieren: Sandkasten-Einsatz [markt-sim]: Rette die Stadt mit Zahlen
 
 BEISPIEL (vollstaendige Musterloesung):
 
-[Werkzeug: markt]
+[Werkzeug: markt-sim]
+
+TARGET: Stellt im Sandkasten Angebot und Nachfrage so ein, dass der Gleichgewichtspreis zwischen 8 und 12 Euro liegt, die gehandelte Menge mindestens 100 Einheiten erreicht und ein Probe-Hoechstpreis von 6 Euro als bindend mit Warteschlange entlarvt wird.
 
 AUFGABE (analysieren, AFB II): Analysieren Sie, ob eine befristete Teilzeitstelle im Versandhandel mit $12 \, \mathrm{Euro}$ Stundenlohn, ohne Uebernahmeperspektive und mit wechselnden Schichten, als prekaer einzustufen ist.
 
@@ -81,7 +90,7 @@ MUSTERLOESUNG: Das Einkommen liegt nahe der Untergrenze und reicht bei Teilzeit 
 
 Klausur-Satz: `Die Stelle ist prekaer, weil Einkommen, Sicherheit und Planbarkeit kumulativ verletzt sind.`
 
-## Schritt 5 — ausprobieren
+## Schritt 5 — ausprobieren: Duell der Wege: Weg A gegen Weg B
 
 VERGLEICH (erst Verfahren waehlen, dann loesen):
 
@@ -97,7 +106,7 @@ ANTWORT: A erfordert Verfahren (i): Deindustrialisierung plus Tertiaerisierung m
 
 Klausur-Satz: `Branchenwandel verlangt das Strukturverfahren, Einzelfaelle den Vier-Kriterien-Test.`
 
-## Schritt 6 — check
+## Schritt 6 — check: Selbsttest zu Strukturwandel und Prekarisierung
 
 CHECK (drei Fragen mit Antworten):
 
@@ -115,13 +124,13 @@ Klausur-Satz: `Ein einzelnes atypisches Merkmal begruendet noch keine Prekarisie
 2. Fehlvorstellung: Befristung bedeute immer Prekaritaet.
    Korrektur-Satz: `Befristung mit Uebernahmeperspektive, existenzsicherndem Einkommen und Planbarkeit bleibt unterhalb der Prekaritaetsschwelle.`
 
-## Schritt 7 — szenario
+## Schritt 7 — szenario: Klausurtransfer: Anhoerung und Parlamentsrede zu Strukturwandel und Prekarisierung
 
 ROLLE: Du bist Berichterstatterin fuer den Stadtrat.
 SITUATION: Die Stadt feiert sinkende Arbeitslosigkeit, doch die Beratungsstelle meldet mehr befristete Aufstock-Jobs. Nimm in circa 150 Woertern Stellung, ob der Strukturwandel gelungen ist, indem du Branchenverschiebung und Prekaritaet getrennt pruefst.
 RUBRIC (30 XP): Darstellung des Strukturwandels (8 XP) | Vier-Kriterien-Analyse (10 XP) | Kriteriengeleitetes Urteil (8 XP) | Fachsprachliche Darstellung (4 XP).
 
-## Schritt 8 — reflexion: Takeaway & Reflexion
+## Schritt 8 — reflexion: Takeaway & Reflexion: Was der Krisenstab lernt
 
 TAKEAWAY:
 

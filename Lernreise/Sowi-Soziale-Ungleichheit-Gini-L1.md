@@ -13,9 +13,16 @@ version: Lesson-v3
 
 # Lernreise: Lorenzkurve und Gini-Koeffizient (L1, Ziel Klausur)
 
-<!-- Lesson v3 9步制架构：Schritt 1至8固定结构；Fehlvorstellung 夹在 Schritt 6 与 7 之间（Parser 自动跳过，不占步数）；支持内嵌 [Werkzeug: <id>] 交互教具；Gating: check/szenario 未过 = Weiter 置灰；XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
+> Kampagne *Virtuelle Stadt-Tycoon — Von der Apfelmarkt-Fehde zum modernen Sozialstaat*: Akt III — Gini-Waage und Steuerreform — Episode 27, Cast: Statistiknarr Karl Zins. Werkzeug dieser Episode: [gini-allocator].
 
-## Schritt 1 — entdecken
+<!-- Lesson v3 9步制架构：Schritt 1至8固定结构；Fehlvorstellung 夹在 Schritt 6 与 7 之间（Parser 自动跳过，不占步数）；支持内嵌 [Werkzeug: gini-allocator] 交互教具；Gating: check/szenario 未过 = Weiter 置灰；XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
+
+## Schritt 1 — entdecken: Alarm in Tycoon City: BIP-Blindflug ohne Wohlstandsradar
+
+
+> EPISODE 27｜Akt III — Gini-Waage und Steuerreform｜召集人 Statistiknarr Karl Zins：BIP-Blindflug ohne Wohlstandsradar。
+
+HOOK 市长危机（先读剧情，再进 ZIELE）：【本集战役 EP27｜Akt III — Gini-Waage und Steuerreform｜虚拟城邦 Tycoon City 告急】市长办公室深夜灯火通明，Statistiknarr Karl Zins 冲进来报告：BIP-Blindflug ohne Wohlstandsradar，而明天市议会就要投票。集市在喊、长队在排、国库在抖：苹果集市价格战一路烧到租金黑市，再烧到基尼天平与劳资谈判桌，本集正是“Lorenzkurve und Gini-Koeffizient”的现实引爆点。你的身份是市长直属经济改革规划委员：把街头危机翻译成考点，用沙盘 [gini-allocator] 拿出可验证的数值方案，再交出一份 Klausur 满分答卷稳住议会。通关线索：TARGET: Justiert Steuer- und Transferregler so, dass der Gini-Indikator nach Umverteilung in den Korridor 0,28 bis 0,32 faellt, das unterste Quintil mindestens 8 Prozent des Kuchens haelt und die Armutsrisikoquote sichtbar sinkt. 上一集的结尾就是这一集的悬念——黑市账本、税改天平、劳资天平、选票天平，四座天平有一座倒了，城邦就停摆。电台正在直播，反对派等着挑错：先读 ZIELE，再啃术语，把传导机制画成你的作战地图。DE-Briefing: Episode 27 — Statistiknarr Karl Zins meldet BIP-Blindflug ohne Wohlstandsradar; der Stadtrat entscheidet morgen. Rette Tycoon City mit Analyse, Sandkasten und Klausur-Antwort zum Thema Lorenzkurve und Gini-Koeffizient.
 
 ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
@@ -25,7 +32,7 @@ ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
 Klausur-Satz: `Die Lorenzkurve veranschaulicht die Einkommensverteilung, und der Gini-Koeffizient fasst ihren Abstand zur Gleichverteilungsgeraden zu einer Zahl zwischen 0 und 1 zusammen.`
 
-## Schritt 2 — entdecken
+## Schritt 2 — entdecken: Werkzeugkoffer von Statistiknarr Karl Zins: 5 Begriffe scharf stellen
 
 PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
 
@@ -39,7 +46,7 @@ PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→�
 
 Klausur-Satz: `Der Gini-Koeffizient ergibt sich als Verhaeltnis der Flaeche zwischen Diagonale und Lorenzkurve zur Gesamtflaeche unter der Diagonalen.`
 
-## Schritt 3 — entdecken
+## Schritt 3 — entdecken: Uhrwerk des Marktes: Kette von Ursache zu Wirkung
 
 ENTDECKEN（1概念 + 1文字图解）：
 
@@ -80,11 +87,13 @@ Klausur-Satz: `Je staerker die Lorenzkurve nach unten gewoelbt ist, desto groess
 
 **Bezug zum Konzept**: `Der Gini-Koeffizient verdichtet die Lorenzkurve zu einer Zahl; die oft zitierte 0,4-Grenze ist eine Konvention und kein Naturgesetz.`
 
-## Schritt 4 — ausprobieren
+## Schritt 4 — ausprobieren: Sandkasten-Einsatz [gini-allocator]: Rette die Stadt mit Zahlen
 
 BEISPIEL（正确例题示范，含教具操作与解答）：
 
-[Werkzeug: formula]
+[Werkzeug: gini-allocator]
+
+TARGET: Justiert Steuer- und Transferregler so, dass der Gini-Indikator nach Umverteilung in den Korridor 0,28 bis 0,32 faellt, das unterste Quintil mindestens 8 Prozent des Kuchens haelt und die Armutsrisikoquote sichtbar sinkt.
 
 AUFGABE (berechnen, AFB II, 12 BE)：M1 gibt die Einkommensanteile von fuenf gleich grossen Bevoelkerungsgruppen an: Q1 = 8 %, Q2 = 13 %, Q3 = 17 %, Q4 = 23 %, Q5 = 39 %. (a) Bestimmen Sie die kumulierten Anteile und skizzieren Sie die Lorenzkurve. (b) Berechnen Sie mit der Trapezmethode die Flaeche B unter der Kurve und daraus den Gini-Koeffizienten. (c) Interpretieren Sie Ihr Ergebnis kurz.
 
@@ -97,7 +106,7 @@ MUSTERLÖSUNG: Die kumulierten Anteile lauten 8 %, 21 %, 38 %, 61 % und 100 %. D
 
 Klausur-Satz: `Mit einem Gini-Koeffizienten von rund 0,29 liegt die Verteilung der verfuegbaren Einkommen deutlich unter dem Wert der Markteinkommen, was die umverteilende Wirkung von Steuern und Transfers zeigt.`
 
-## Schritt 5 — ausprobieren
+## Schritt 5 — ausprobieren: Duell der Wege: Weg A gegen Weg B
 
 VERGLEICH辨别实验（双向辨析：读曲线之程序 vs. 算系数之程序）：
 
@@ -107,13 +116,13 @@ AUFGABE A：M1 zeigt zwei Lorenzkurven fuer dieselbe Volkswirtschaft in den Jahr
 
 AUFGABE B：M2 nennt fuer drei Laender die Quintilsanteile und fragt nach einem Vergleich der Einkommensungleichheit mit Begruendung.
 
-HILFE: A verlangt nur eine Rangfolge aus der Kurvenform → Verfahren (i). B verlangt einen belastbaren Vergleich, also Kennzahlen → Verfahren (ii).【选程序：只问"谁更弯" → 读曲线；要"比较并论证" → 算系数。】
+HILFE: A verlangt nur eine Rangfolge aus der Kurvenform → Verfahren (i). B verlangt einen belastbaren Vergleich, also Indikatoren → Verfahren (ii).【选程序：只问"谁更弯" → 读曲线；要"比较并论证" → 算系数。】
 
 ANTWORT: A erfordert Verfahren (i): Da die Kurve von 2024 sichtbar tiefer durchhaengt, liegt sie weiter von der Diagonalen entfernt; die Flaeche zwischen Diagonale und Kurve ist groesser, also war die Verteilung 2024 ungleicher. Es genuegt die qualitative Aussage, ein Zahlenwert ist nicht verlangt. B erfordert Verfahren (ii): Fuer einen belastbaren Vergleich muessen aus den Quintilsanteilen erst die kumulierten Anteile gebildet, dann mit der Trapezmethode die Flaeche B bestimmt und schliesslich der Gini-Koeffizient berechnet werden. Erst der Vergleich der Gini-Werte liefert ein begruendetes Urteil, welche Verteilung am ungleichsten ist.
 
 Klausur-Satz: `Fuer eine reine Rangfolge genuegt der Blick auf die Lorenzkurve, fuer einen begruendeten Vergleich der Verteilung ist der Gini-Koeffizient noetig.`
 
-## Schritt 6 — check
+## Schritt 6 — check: Selbsttest zu Lorenzkurve und Gini-Koeffizient
 
 CHECK检索默写（自测 3 题，与答案配对）：
 
@@ -135,13 +144,13 @@ Klausur-Satz: `Der Gini-Koeffizient verdichtet die gesamte Lorenzkurve zu einer 
    中文纠偏：那是平均值，不是 Gini。正确流程是：先累积份额 → 用梯形法求曲线下面积 B → 再套 Gini = 1 - 2B。跳过曲线只做算术，必然算错。
    Korrektur-Satz: `Der Gini-Koeffizient verlangt die Flaeche unter der Lorenzkurve (Trapezmethode) und die Formel Gini = 1 - 2B, nicht einen einfachen Mittelwert der Anteile.`
 
-## Schritt 7 — szenario
+## Schritt 7 — szenario: Klausurtransfer: Anhoerung und Parlamentsrede zu Lorenzkurve und Gini-Koeffizient
 
 ROLLE: Du bist Mitarbeiter/in einer statistischen Abteilung und sollst fuer einen Ausschuss die Einkommensverteilung zweier Regionen vergleichen.
 SITUATION: Fuer Region A nennt M1 die Quintilsanteile 8 / 13 / 17 / 23 / 39 %, fuer Region B die Anteile 11 / 15 / 19 / 24 / 31 %. Der Ausschuss moechte wissen, in welcher Region die Ungleichheit groesser ist und ob eine Umverteilungspolitik zu rechtfertigen sei. Beurteilen Sie die Situation in einer zusammenhängenden Stellungnahme (ca. 150 Wörter), stuetzen Sie sich auf die Lorenz-/Gini-Logik und nennen Sie ein Kriterium.
 RUBRIC (30 XP): Aufstellen der kumulierten Anteile und der Lorenz-Idee (6 XP) | Berechnung bzw. plausibler Vergleich der Gini-Werte von A und B (8 XP) | Benennung und Anwendung des Kriteriums Chancengerechtigkeit (10 XP) | Kriteriengeleitetes Urteil zur Umverteilung (6 XP).
 
-## Schritt 8 — reflexion: Takeaway & Reflexion
+## Schritt 8 — reflexion: Takeaway & Reflexion: Was der Krisenstab lernt
 
 TAKEAWAY 1盒（核心总结）：
 

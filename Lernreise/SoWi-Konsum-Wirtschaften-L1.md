@@ -13,9 +13,16 @@ version: Lesson-v3
 
 # Lernreise: Konsum und Wirtschaften (L1, Ziel Klausur)
 
-<!-- Lesson v3 9步制架构：Schritt 1至8固定结构；Fehlvorstellung 夹在 Schritt 6 与 7 之间（Parser 自动跳过，不占步数）；支持内嵌 [Werkzeug: <id>] 交互教具；Gating: check/szenario 未过 = Weiter 置灰；XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
+> Kampagne *Virtuelle Stadt-Tycoon — Von der Apfelmarkt-Fehde zum modernen Sozialstaat*: Akt I-II — Apfelmarkt und Mietendeckel — Episode 16, Cast: Campusmentorin Dr. Ada Mensah. Werkzeug dieser Episode: [markt-sim].
 
-## Schritt 1 — entdecken
+<!-- Lesson v3 9步制架构：Schritt 1至8固定结构；Fehlvorstellung 夹在 Schritt 6 与 7 之间（Parser 自动跳过，不占步数）；支持内嵌 [Werkzeug: markt-sim] 交互教具；Gating: check/szenario 未过 = Weiter 置灰；XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
+
+## Schritt 1 — entdecken: Alarm in Tycoon City: Campus-Streit um Herkunft und Aufstieg
+
+
+> EPISODE 16｜Akt I-II — Apfelmarkt und Mietendeckel｜召集人 Campusmentorin Dr. Ada Mensah：Campus-Streit um Herkunft und Aufstieg。
+
+HOOK 市长危机（先读剧情，再进 ZIELE）：【本集战役 EP16｜Akt I-II — Apfelmarkt und Mietendeckel｜虚拟城邦 Tycoon City 告急】市长办公室深夜灯火通明，Campusmentorin Dr. Ada Mensah 冲进来报告：Campus-Streit um Herkunft und Aufstieg，而明天市议会就要投票。集市在喊、长队在排、国库在抖：苹果集市价格战一路烧到租金黑市，再烧到基尼天平与劳资谈判桌，本集正是“Konsum und Wirtschaften”的现实引爆点。你的身份是市长直属经济改革规划委员：把街头危机翻译成考点，用沙盘 [markt-sim] 拿出可验证的数值方案，再交出一份 Klausur 满分答卷稳住议会。通关线索：TARGET: Stellt im Sandkasten Angebot und Nachfrage so ein, dass der Gleichgewichtspreis zwischen 8 und 12 Euro liegt, die gehandelte Menge mindestens 100 Einheiten erreicht und ein Probe-Hoechstpreis von 6 Euro als bindend mit Warteschlange entlarvt wird. 上一集的结尾就是这一集的悬念——黑市账本、税改天平、劳资天平、选票天平，四座天平有一座倒了，城邦就停摆。电台正在直播，反对派等着挑错：先读 ZIELE，再啃术语，把传导机制画成你的作战地图。DE-Briefing: Episode 16 — Campusmentorin Dr. Ada Mensah meldet Campus-Streit um Herkunft und Aufstieg; der Stadtrat entscheidet morgen. Rette Tycoon City mit Analyse, Sandkasten und Klausur-Antwort zum Thema Konsum und Wirtschaften.
 
 ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
@@ -25,7 +32,7 @@ ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
 Klausur-Satz: `Bedürfnisse sind unbegrenzt, Güter knapp — aus dieser Spannung entsteht alles Wirtschaften; erst mit Kaufkraft wird aus Bedürfnis Bedarf, erst am Markt wird daraus Nachfrage.`
 
-## Schritt 2 — entdecken
+## Schritt 2 — entdecken: Werkzeugkoffer von Campusmentorin Dr. Ada Mensah: 5 Begriffe scharf stellen
 
 PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
 
@@ -39,7 +46,7 @@ PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→�
 
 Klausur-Satz: `Der homo oeconomicus entscheidet vollständig informiert und nutzenmaximierend — ein Modell, keine Menschenbeschreibung.`
 
-## Schritt 3 — entdecken
+## Schritt 3 — entdecken: Uhrwerk des Marktes: Kette von Ursache zu Wirkung
 
 ENTDECKEN（1概念 + 1文字图解）：
 
@@ -85,11 +92,13 @@ Klausur-Satz: `Konsumentensouveränität ist kein Zustand, sondern ein Auftrag a
 
 **Bezug zum Konzept**: Die gemeinsame Wurzel von Ökonomie und Ökologie zeigt, warum Wirtschaften und Nachhaltigkeit zusammengedacht werden müssen.
 
-## Schritt 4 — ausprobieren
+## Schritt 4 — ausprobieren: Sandkasten-Einsatz [markt-sim]: Rette die Stadt mit Zahlen
 
 BEISPIEL（正确例题示范，含教具操作与解答）：
 
-[Werkzeug: formula]
+[Werkzeug: markt-sim]
+
+TARGET: Stellt im Sandkasten Angebot und Nachfrage so ein, dass der Gleichgewichtspreis zwischen 8 und 12 Euro liegt, die gehandelte Menge mindestens 100 Einheiten erreicht und ein Probe-Hoechstpreis von 6 Euro als bindend mit Warteschlange entlarvt wird.
 
 AUFGABE (analysieren, AFB II, 10 BE)：Material 1 besteht aus einem Sachtext über das Kaufverhalten Jugendlicher und einer Statistik, die zeigt, dass soziale Medien die Kaufentscheidungen stark beeinflussen. Analysieren Sie mit dem Modell des homo oeconomicus, warum das beobachtete Verhalten diesem Modell widerspricht.
 
@@ -103,7 +112,7 @@ MUSTERLÖSUNG: Das Modell des homo oeconomicus unterstellt, dass Verbraucher vol
 
 Klausur-Satz: `Der Influencer-Einfluss belegt Fremdbestimmung: Kaufentscheidungen folgen sozialen Signalen statt eigenem Nutzenkalkül.`
 
-## Schritt 5 — ausprobieren
+## Schritt 5 — ausprobieren: Duell der Wege: Weg A gegen Weg B
 
 VERGLEICH辨别实验（双向辨析：概念眼 vs. 政策眼）：
 
@@ -119,7 +128,7 @@ ANTWORT: A erfordert Verfahren (i): Der Kauf des Statussymbols zeigt Fremdbestim
 
 Klausur-Satz: `Ein Werbeverbot ist ein starkes staatliches Instrument, während ein Label das mildere Mittel darstellt.`
 
-## Schritt 6 — check
+## Schritt 6 — check: Selbsttest zu Konsum und Wirtschaften
 
 CHECK检索默写（自测 3 题，与答案配对）：
 
@@ -141,7 +150,7 @@ Klausur-Satz: `Nachhaltigkeit ruht auf drei Säulen, die nicht gegeneinander aus
    中文纠偏：可持续是三个支柱。只看生态，会漏掉社会维度（绿色产品太贵，穷人买不起）和经济维度（企业能否承受）。三支柱缺一，论证就是残缺的。
    Korrektur-Satz: `Nachhaltigkeit verlangt, ökologische, soziale und ökonomische Ziele gleichzeitig zu berücksichtigen.`
 
-## Schritt 7 — szenario
+## Schritt 7 — szenario: Klausurtransfer: Anhoerung und Parlamentsrede zu Konsum und Wirtschaften
 
 ROLLE: Du bist Mitglied einer Verbraucherinitiative und sprichst auf einer öffentlichen Veranstaltung.
 
@@ -149,7 +158,7 @@ SITUATION: Eine Diskussion dreht sich um die Frage, ob Werbung für ungesunde od
 
 RUBRIC (30 XP): Benennung und Einordnung der Instrumente (Verbot, Anreiz, Label) (5 XP) | Analyse der Wirkung auf die Kaufentscheidung und die Souveränität (10 XP) | Abwägung von Eingriffstiefe und Wirksamkeit (10 XP) | Kriteriengeleitetes Urteil (z. B. Kriterium Wirksamkeit oder Freiheit) (5 XP).
 
-## Schritt 8 — reflexion: Takeaway & Reflexion
+## Schritt 8 — reflexion: Takeaway & Reflexion: Was der Krisenstab lernt
 
 TAKEAWAY 1盒（核心总结）：
 

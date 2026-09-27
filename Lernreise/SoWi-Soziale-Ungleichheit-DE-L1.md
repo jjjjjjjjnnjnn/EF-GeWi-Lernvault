@@ -13,9 +13,16 @@ version: Lesson-v3
 
 # Lernreise: Soziale Ungleichheit im Ueberblick (L1, Ziel Klausur)
 
-<!-- Lesson-v3: 8 Schritte plus Anekdote und Fehlvorstellung; Fehlvorstellung zwischen Schritt 6 und 7 (Parser-Skip); interaktives [Werkzeug: <id>]; Gating: check/szenario nicht bestanden = Weiter gesperrt; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
+> Kampagne *Virtuelle Stadt-Tycoon — Von der Apfelmarkt-Fehde zum modernen Sozialstaat*: Akt III — Gini-Waage und Steuerreform — Episode 25, Cast: Extremismus-Experte Cem Aksoy. Werkzeug dieser Episode: [gini-allocator].
 
-## Schritt 1 — entdecken: Ziele und Phaenomen-Einstieg
+<!-- Lesson-v3: 8 Schritte plus Anekdote und Fehlvorstellung; Fehlvorstellung zwischen Schritt 6 und 7 (Parser-Skip); interaktives [Werkzeug: gini-allocator]; Gating: check/szenario nicht bestanden = Weiter gesperrt; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
+
+## Schritt 1 — entdecken: Alarm in Tycoon City: Extremismus-Chat-Leak an der Berufsschule
+
+
+> EPISODE 25 — Akt III — Gini-Waage und Steuerreform — Auftrag von Extremismus-Experte Cem Aksoy: Extremismus-Chat-Leak an der Berufsschule.
+
+HOOK (Stadtrats-Krise, lies zuerst): EPISODE 25 — Akt III — Gini-Waage und Steuerreform — Stadt Tycoon City ruft dich in den Krisenstab. Extremismus-Experte Cem Aksoy stuermt mit einer Eilmeldung ins Buero: Extremismus-Chat-Leak an der Berufsschule — und morgen entscheidet der Stadtrat. Der Markt schreit, die Warteschlange waechst, die Kasse zittert: Ohne deine Analyse kippt die Stadt vom Apfelparadies in den Schwarzmarkt. Dein Auftrag in dieser Episode: Uebersetze die Strassenszene in das heutige Thema Soziale Ungleichheit im Ueberblick. Sammle Belege, stelle den Sandkasten [gini-allocator] scharf und liefere dem Rat eine Klausur-Antwort, die einer Pruefungskommission standhaelt. Erste Spur: TARGET: Justiert Steuer- und Transferregler so, dass der Gini-Indikator nach Umverteilung in den Korridor 0,28 bis 0,32 faellt, das unterste Quintil mindestens 8 Prozent des Kuchens haelt und die Armutsrisikoquote sichtbar sinkt. Wer den Mechanismus versteht, rettet den Haushalt — und vielleicht die Wahl. Der Countdown laeuft, das Radio berichtet live, die Opposition wartet nur auf deinen Fehler: Oeffne die Ziele, schnapp dir die Begriffe und beweise, dass Tycoon City regierbar bleibt.
 
 ZIELE (drei messbare Ziele dieser Lektion):
 
@@ -29,7 +36,7 @@ Stell dir vor, ein Akademikerkind studiert, ein Arbeiterkind bleibt draussen, ob
 
 Klausur-Satz: `Soziale Ungleichheit bezeichnet die ungleiche Verteilung von Ressourcen wie Einkommen, Bildung und Einfluss, die Lebenschancen systematisch prägt.`
 
-## Schritt 2 — entdecken: Fachbegriffe und Pre-Training
+## Schritt 2 — entdecken: Werkzeugkoffer von Extremismus-Experte Cem Aksoy: 5 Begriffe scharf stellen
 
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
@@ -51,7 +58,7 @@ Die Begriffe greifen ineinander: **Einkommen** und **Bildung** liefern die Dimen
 
 Klausur-Satz: `Chancengleichheit bedeutet gleiche Startbedingungen, nicht gleiche Ergebnisse — gemessen wird sie am Bildungstrichter und an der Armutsgefaehrdungsquote.`
 
-## Schritt 3 — entdecken: Kernkonzept und Wirkungsmodell
+## Schritt 3 — entdecken: Uhrwerk des Marktes: Kette von Ursache zu Wirkung
 
 TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
@@ -84,11 +91,13 @@ Der franzoesische Soziologe Pierre Bourdieu war selbst ein Aufsteiger: Er wuchs 
 
 Bezug zum Konzept: Das Beispiel zeigt, warum Schichten plus Milieus gemeinsam noetig sind: Geld allein erklaert Aufstieg so wenig wie Werte allein.
 
-## Schritt 4 — ausprobieren: Interaktive Praxis und Ungleichheits-Labor
+## Schritt 4 — ausprobieren: Sandkasten-Einsatz [gini-allocator]: Rette die Stadt mit Zahlen
 
 BEISPIEL (geleitete Aufgabe mit Werkzeug):
 
 [Werkzeug: gini-allocator]
+
+TARGET: Justiert Steuer- und Transferregler so, dass der Gini-Indikator nach Umverteilung in den Korridor 0,28 bis 0,32 faellt, das unterste Quintil mindestens 8 Prozent des Kuchens haelt und die Armutsrisikoquote sichtbar sinkt.
 
 Ziehe im Tool die Einkommens-Regler der Quintile und beobachte live, wie sich die Lorenzkurve hebt oder senkt und wie der Wert zwischen null und eins reagiert; vergleiche zwei Verteilungen und deute die Form parallel zum Trichter.
 
@@ -103,7 +112,7 @@ MUSTERLOESUNG: Der Trichter belegt Herkunftseffekt; nach Verschiebung sinkt der 
 
 Klausur-Satz: `Wenn der Bildungserfolg staerker von der Herkunft als von der Leistung abhaengt, widerspricht dies dem meritokratischen Prinzip und untergraebt das Vertrauen in die Demokratie.`
 
-## Schritt 5 — ausprobieren: Weg-Vergleich und Abgrenzung
+## Schritt 5 — ausprobieren: Duell der Wege: Weg A gegen Weg B
 
 VERGLEICH: Zwei Wege ordnen dieselbe Gesellschaft unterschiedlich. Weg A denkt in Klassen und Schichten mit senkrechter Staffelung nach Einkommen und Bildung. Weg B denkt in Sinus-Milieus mit waagerechten Werten und Lebensstilen. Pruefe zuerst die Aufgabe, waehle dann den passenden Weg.
 
@@ -121,7 +130,7 @@ ANTWORT: Aufgabe A folgt erst Weg A mit Nachweis aus Schichten: Einkommen plus B
 
 Klausur-Satz: `Funktionalistische Ansaetze deuten Ungleichheit als Leistungsanreiz, konflikttheoretische Ansaetze als strukturelle Benachteiligung, die nach Ausgleich verlangt.`
 
-## Schritt 6 — check: Selbsttest zu Sozialer Ungleichheit
+## Schritt 6 — check: Selbsttest zu Soziale Ungleichheit im Ueberblick
 
 CHECK (drei Fragen mit Antworten):
 
@@ -141,14 +150,14 @@ Klausur-Satz: `Die Armutsgefaehrdungsquote misst Armut relativ zum Median-Einkom
 2. Fehlkonzept: Milieus ersetzten Schichten, weil Lebensstil alles erklaere und Einkommen keine Rolle mehr spiele.
    Korrektur-Satz: `Milieus beschreiben Stil bei aehnlichen Mitteln, Schichten beschreiben Mittel selbst; ohne Geld und Abschluss bleibt selbst der passende Stil ohne Chance.`
 
-## Schritt 7 — szenario: Jugendorganisation und Chancengleichheit-Debatte
+## Schritt 7 — szenario: Klausurtransfer: Anhoerung und Parlamentsrede zu Soziale Ungleichheit im Ueberblick
 
 ROLLE: Du bist Referentin bei einer Jugendorganisation und sollst auf einer Podiumsdiskussion die Forderung nach mehr Chancengleichheit im Bildungssystem begruenden.
 SITUATION: In deiner Region erreichen Arbeiterkinder nur halb so oft das Abitur wie Akademikerkinder. Ein Teil des Publikums haelt das fuer ein Ergebnis individueller Entscheidungen, ein anderer verlangt staatliche Gegenmassnahmen wie kostenlose Ganztagsbetreuung und ein elternunabhaengiges BAfoeG. Beurteile die Forderung nach mehr Chancengleichheit in einer zusammenhaengenden Stellungnahme mit etwa 150 Woertern.
 AUFGABE (AFB III): Verfasse eine zusammenhaengende Darstellung von etwa 150 Woertern mit Kriterium, Anwendung und Urteil.
 RUBRIC (30 XP): Darstellung der Ungleichheit mit den drei Dimensionen und Kapitalarten (6 XP) | Analyse des Bildungstrichters mit Herkunft staerker als Leistung (8 XP) | Abwaegung mit Kriterium Chancengerechtigkeit zu Pro und Contra staatlicher Massnahmen (10 XP) | Kriteriengeleitetes Urteil mit konkreter Forderung (6 XP)
 
-## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
+## Schritt 8 — reflexion: Takeaway & Reflexion: Was der Krisenstab lernt
 
 TAKEAWAY (Kernbotschaft in einem Kasten):
 

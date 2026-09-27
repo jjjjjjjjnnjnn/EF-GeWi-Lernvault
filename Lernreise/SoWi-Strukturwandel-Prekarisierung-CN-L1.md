@@ -13,9 +13,16 @@ version: Lesson-v3
 
 # Lernreise: Strukturwandel und Prekarisierung der Arbeit (L1, Ziel Klausur)
 
-<!-- Lesson v3 9步制架构：Schritt 1至8固定结构；Fehlvorstellung 夹在 Schritt 6 与 7 之间（Parser 自动跳过，不占步数）；支持内嵌 [Werkzeug: <id>] 交互教具；Gating: check/szenario 未过 = Weiter 置灰；XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
+> Kampagne *Virtuelle Stadt-Tycoon — Von der Apfelmarkt-Fehde zum modernen Sozialstaat*: Akt I-II — Apfelmarkt und Mietendeckel — Episode 33, Cast: Redecoach Anton Berger. Werkzeug dieser Episode: [markt-sim].
 
-## Schritt 1 — entdecken: Ziele & Phänomen-Einstieg
+<!-- Lesson v3 9步制架构：Schritt 1至8固定结构；Fehlvorstellung 夹在 Schritt 6 与 7 之间（Parser 自动跳过，不占步数）；支持内嵌 [Werkzeug: markt-sim] 交互教具；Gating: check/szenario 未过 = Weiter 置灰；XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
+
+## Schritt 1 — entdecken: Alarm in Tycoon City: Lampenfieber vor der Gestaltungsrede
+
+
+> EPISODE 33｜Akt I-II — Apfelmarkt und Mietendeckel｜召集人 Redecoach Anton Berger：Lampenfieber vor der Gestaltungsrede。
+
+HOOK 市长危机（先读剧情，再进 ZIELE）：【本集战役 EP33｜Akt I-II — Apfelmarkt und Mietendeckel｜虚拟城邦 Tycoon City 告急】市长办公室深夜灯火通明，Redecoach Anton Berger 冲进来报告：Lampenfieber vor der Gestaltungsrede，而明天市议会就要投票。集市在喊、长队在排、国库在抖：苹果集市价格战一路烧到租金黑市，再烧到基尼天平与劳资谈判桌，本集正是“Strukturwandel und Prekarisierung der Arbeit”的现实引爆点。你的身份是市长直属经济改革规划委员：把街头危机翻译成考点，用沙盘 [markt-sim] 拿出可验证的数值方案，再交出一份 Klausur 满分答卷稳住议会。通关线索：TARGET: Stellt im Sandkasten Angebot und Nachfrage so ein, dass der Gleichgewichtspreis zwischen 8 und 12 Euro liegt, die gehandelte Menge mindestens 100 Einheiten erreicht und ein Probe-Hoechstpreis von 6 Euro als bindend mit Warteschlange entlarvt wird. 上一集的结尾就是这一集的悬念——黑市账本、税改天平、劳资天平、选票天平，四座天平有一座倒了，城邦就停摆。电台正在直播，反对派等着挑错：先读 ZIELE，再啃术语，把传导机制画成你的作战地图。DE-Briefing: Episode 33 — Redecoach Anton Berger meldet Lampenfieber vor der Gestaltungsrede; der Stadtrat entscheidet morgen. Rette Tycoon City mit Analyse, Sandkasten und Klausur-Antwort zum Thema Strukturwandel und Prekarisierung der Arbeit.
 
 ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
@@ -38,7 +45,7 @@ Mechanismus-Satz (DE): Wandel schafft Gewinnerbranchen und Verliererbiografien z
 
 Klausur-Satz: `Der Strukturwandel verlagert Beschaeftigung in Dienstleistungen; dort waechst prekaere Beschaeftigung.`
 
-## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
+## Schritt 2 — entdecken: Werkzeugkoffer von Redecoach Anton Berger: 5 Begriffe scharf stellen
 
 PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
 
@@ -52,7 +59,7 @@ PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→�
 
 Klausur-Satz: `Prekaer ist Beschaeftigung, wenn Einkommen, Schutz, Dauer und Planbarkeit gleichzeitig defizitär sind.`
 
-## Schritt 3 — entdecken: Kernkonzept & Wirkungsmodell
+## Schritt 3 — entdecken: Uhrwerk des Marktes: Kette von Ursache zu Wirkung
 
 ENTDECKEN（1概念 + 1文字图解，中文在上、德语在下）：
 
@@ -91,9 +98,11 @@ Klausur-Satz: `Der Wandel vernichtet nicht nur Jobs, sondern ersetzt geschuetzte
 
 **Bezug zum Konzept**: `Strukturwandel ist kein Diagramm, sondern eine umgebaute Landschaft.`
 
-## Schritt 4 — ausprobieren: Interaktive Praxis & Labor
+## Schritt 4 — ausprobieren: Sandkasten-Einsatz [markt-sim]: Rette die Stadt mit Zahlen
 
-[Werkzeug: gini-allocator]
+[Werkzeug: markt-sim]
+
+TARGET: Stellt im Sandkasten Angebot und Nachfrage so ein, dass der Gleichgewichtspreis zwischen 8 und 12 Euro liegt, die gehandelte Menge mindestens 100 Einheiten erreicht und ein Probe-Hoechstpreis von 6 Euro als bindend mit Warteschlange entlarvt wird.
 
 BEISPIEL（正确例题示范，含教具操作与解答，中文在上、德语在下）：
 
@@ -115,7 +124,7 @@ MUSTERLOESUNG：中文：四项全缺即判定为不稳定就业；它是服务�
 MUSTERLOESUNG (DE): Nach allen vier Kriterien ist der Minijob prekaer und typisch fuer den dienstleistungsgetriebenen Strukturwandel: Struktur erklaert die Lage der Jobs.
 Klausur-Satz: `Nach allen vier Kriterien ist der Minijob prekaer und typisch fuer den dienstleistungsgetriebenen Strukturwandel.`
 
-## Schritt 5 — ausprobieren: Verfahrensvergleich & Abgrenzung
+## Schritt 5 — ausprobieren: Duell der Wege: Weg A gegen Weg B
 
 VERGLEICH辨别实验（双向辨析：结构转型 vs 个体归因）：
 
@@ -151,12 +160,12 @@ Klausur-Satz: `Prekaritaet misst man an vier Defiziten, nicht an einem Klischee.
    中文纠偏：平台规则、派遣制度与部门结构决定了选项菜单，个人只在菜单内选。只谈选择不谈菜单是归因错误。
    Korrektur-Satz: `Prekaritaet ist zuerst Struktur, dann Entscheidung.`
 
-## Schritt 7 — szenario: Klausurtransfer: Strukturwandel und Prekarisierung der Arbeit
+## Schritt 7 — szenario: Klausurtransfer: Anhoerung und Parlamentsrede zu Strukturwandel und Prekarisierung der Arbeit
 ROLLE: Du bist Praktikant in der Kommunalverwaltung einer Ruhrgebietsstadt.
 SITUATION: Der Stadtrat debattiert, ob neue Logistikhufe als Erfolg gelten. Nimm in einer zusammenhaengenden Stellungnahme (ca. 150 Woerter) mit Strukturwandel und Prekaritaetskriterien dazu Stellung und empfehle zwei kommunale Massnahmen.
 RUBRIC (30 XP): Strukturwandel-Deutung der Logistikjobs (8 XP) | Vier-Kriterien-Pruefung (10 XP) | Zwei begruendete Massnahmen, z. B. Vergabe mit Tarifbindung, Weiterbildung (8 XP) | Adressatengerechte Stellungnahme (4 XP).
 
-## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
+## Schritt 8 — reflexion: Takeaway & Reflexion: Was der Krisenstab lernt
 
 TAKEAWAY 1盒（核心总结）：
 

@@ -13,9 +13,16 @@ version: Lesson-v3
 
 # Lernreise: Preismechanismus und Marktformen (L1, Ziel Klausur)
 
-<!-- Lesson v3 9步制架构：Schritt 1至8固定结构；Fehlvorstellung 夹在 Schritt 6 与 7 之间（Parser 自动跳过，不占步数）；支持内嵌 [Werkzeug: <id>] 交互教具；Gating: check/szenario 未过 = Weiter 置灰；XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
+> Kampagne *Virtuelle Stadt-Tycoon — Von der Apfelmarkt-Fehde zum modernen Sozialstaat*: Akt I-II — Apfelmarkt und Mietendeckel — Episode 22, Cast: Verfassungsanwaeltin Dr. Nora Feld. Werkzeug dieser Episode: [markt-sim].
 
-## Schritt 1 — entdecken
+<!-- Lesson v3 9步制架构：Schritt 1至8固定结构；Fehlvorstellung 夹在 Schritt 6 与 7 之间（Parser 自动跳过，不占步数）；支持内嵌 [Werkzeug: markt-sim] 交互教具；Gating: check/szenario 未过 = Weiter 置灰；XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
+
+## Schritt 1 — entdecken: Alarm in Tycoon City: Verfassungsbeschwerde-Nacht im Eilverfahren
+
+
+> EPISODE 22｜Akt I-II — Apfelmarkt und Mietendeckel｜召集人 Verfassungsanwaeltin Dr. Nora Feld：Verfassungsbeschwerde-Nacht im Eilverfahren。
+
+HOOK 市长危机（先读剧情，再进 ZIELE）：【本集战役 EP22｜Akt I-II — Apfelmarkt und Mietendeckel｜虚拟城邦 Tycoon City 告急】市长办公室深夜灯火通明，Verfassungsanwaeltin Dr. Nora Feld 冲进来报告：Verfassungsbeschwerde-Nacht im Eilverfahren，而明天市议会就要投票。集市在喊、长队在排、国库在抖：苹果集市价格战一路烧到租金黑市，再烧到基尼天平与劳资谈判桌，本集正是“Preismechanismus und Marktformen”的现实引爆点。你的身份是市长直属经济改革规划委员：把街头危机翻译成考点，用沙盘 [markt-sim] 拿出可验证的数值方案，再交出一份 Klausur 满分答卷稳住议会。通关线索：TARGET: Stellt im Sandkasten Angebot und Nachfrage so ein, dass der Gleichgewichtspreis zwischen 8 und 12 Euro liegt, die gehandelte Menge mindestens 100 Einheiten erreicht und ein Probe-Hoechstpreis von 6 Euro als bindend mit Warteschlange entlarvt wird. 上一集的结尾就是这一集的悬念——黑市账本、税改天平、劳资天平、选票天平，四座天平有一座倒了，城邦就停摆。电台正在直播，反对派等着挑错：先读 ZIELE，再啃术语，把传导机制画成你的作战地图。DE-Briefing: Episode 22 — Verfassungsanwaeltin Dr. Nora Feld meldet Verfassungsbeschwerde-Nacht im Eilverfahren; der Stadtrat entscheidet morgen. Rette Tycoon City mit Analyse, Sandkasten und Klausur-Antwort zum Thema Preismechanismus und Marktformen.
 
 ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
@@ -25,7 +32,7 @@ ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
 Klausur-Satz: `Der Preismechanismus koordiniert Angebot und Nachfrage über den Gleichgewichtspreis und sorgt im Modell des vollkommenen Marktes für eine effiziente Allokation der Güter.`
 
-## Schritt 2 — entdecken
+## Schritt 2 — entdecken: Werkzeugkoffer von Verfassungsanwaeltin Dr. Nora Feld: 5 Begriffe scharf stellen
 
 PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
 
@@ -39,7 +46,7 @@ PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→�
 
 Klausur-Satz: `Im Gleichgewicht entspricht die angebotene Menge der nachgefragten Menge, sodass weder ein Nachfrage- noch ein Angebotsüberhang besteht.`
 
-## Schritt 3 — entdecken
+## Schritt 3 — entdecken: Uhrwerk des Marktes: Kette von Ursache zu Wirkung
 
 ENTDECKEN（1概念 + 1文字图解）：
 
@@ -73,11 +80,13 @@ Klausur-Satz: `Da die Nachfragekurve mit steigendem Preis fällt und die Angebot
 
 **Bezug zum Konzept**: `Das historische Beispiel zeigt, dass ein Höchstpreis unter dem Gleichgewichtspreis keine Knappheit beseitigt, sondern sie in Warteschlangen und Schwarzmärkte verlagert.`
 
-## Schritt 4 — ausprobieren
+## Schritt 4 — ausprobieren: Sandkasten-Einsatz [markt-sim]: Rette die Stadt mit Zahlen
 
 BEISPIEL（正确例题示范，含教具操作与解答）：
 
-[Werkzeug: balance]
+[Werkzeug: markt-sim]
+
+TARGET: Stellt im Sandkasten Angebot und Nachfrage so ein, dass der Gleichgewichtspreis zwischen 8 und 12 Euro liegt, die gehandelte Menge mindestens 100 Einheiten erreicht und ein Probe-Hoechstpreis von 6 Euro als bindend mit Warteschlange entlarvt wird.
 
 AUFGABE (berechnen, AFB II)：Auf einem Markt gelten die Nachfragefunktion p_N(q) = 40 - 2q und die Angebotsfunktion p_A(q) = 10 + q (p in Euro, q in Mengeneinheiten). Bestimmen Sie den Gleichgewichtspreis und die Gleichgewichtsmenge. Prüfen Sie anschließend, welche Mengen angeboten und nachgefragt werden, wenn der Staat einen Mindestpreis von 25 Euro festsetzt.
 
@@ -90,7 +99,7 @@ MUSTERLÖSUNG: Aus 40 - 2q = 10 + q folgt 30 = 3q, also q_G = 10. Eingesetzt in 
 
 Klausur-Satz: `Ein über dem Gleichgewichtspreis festgesetzter Mindestpreis führt zu einem Angebotsüberhang, weil er die Anbieter belohnt, aber die Nachfrager abschreckt.`
 
-## Schritt 5 — ausprobieren
+## Schritt 5 — ausprobieren: Duell der Wege: Weg A gegen Weg B
 
 VERGLEICH辨别实验（双向辨析：市场眼 vs. 干预眼）：
 
@@ -106,7 +115,7 @@ ANTWORT: A erfordert Verfahren (i): Die Missernte verschiebt die Angebotskurve n
 
 Klausur-Satz: `Wird ein Höchstpreis unterhalb des Gleichgewichtspreises festgesetzt, entsteht ein Nachfrageüberhang, weil die Nachfrage steigt, das Angebot jedoch sinkt.`
 
-## Schritt 6 — check
+## Schritt 6 — check: Selbsttest zu Preismechanismus und Marktformen
 
 CHECK检索默写（自测 3 题，与答案配对）：
 
@@ -128,13 +137,13 @@ Klausur-Satz: `Ein staatlicher Mindestpreis entfaltet nur dann ökonomische Wirk
    中文纠偏：完全不同。只因该商品自身价格变化而改变购买量，是"沿曲线移动"（Bewegung auf der Kurve）；因收入、偏好、替代品价格等外部因素而改变，才是"整条曲线平移"（Verschiebung der Kurve）。分析题里凡是把平移写成移动，因果链就全错了。
    Korrektur-Satz: `Eine Preisänderung des betrachteten Gutes bewirkt eine Bewegung auf der Nachfragekurve, während veränderte Präferenzen oder Einkommen die gesamte Nachfragekurve verschieben.`
 
-## Schritt 7 — szenario
+## Schritt 7 — szenario: Klausurtransfer: Anhoerung und Parlamentsrede zu Preismechanismus und Marktformen
 
 ROLLE: Du bist Referent in einer Verbraucherzentrale und sollst auf einer Podiumsdiskussion die geplante Mietpreisbremse der Stadt fachlich bewerten.
 SITUATION: Die Stadt will per Satzung die Miete auf höchstens 8 Euro pro Quadratmeter festsetzen; der aktuelle Marktmietpreis liegt bei 11 Euro. Ein Teil des Publikums erwartet dadurch billigeren Wohnraum, ein anderer Teil warnt vor Wohnungsmangel. Beurteile die Maßnahme in einer zusammenhängenden Stellungnahme (ca. 150 Wörter) unter Rückgriff auf Preismechanismus und Marktformen.
 RUBRIC (30 XP): Benennung der Maßnahme als Höchstpreis unterhalb des Gleichgewichts (5 XP) | Analyse der Mengenwirkung — Nachfrage steigt, Angebot sinkt, Nachfrageüberhang (10 XP) | Darlegung der Folgeeffekte — Fehlallokation, Schattenmarkt, sinkende Investitionen in Neubauten (10 XP) | Kriteriengeleitetes Urteil mit Abwägung von Effizienz und sozialer Zielsetzung (5 XP).
 
-## Schritt 8 — reflexion: Takeaway & Reflexion
+## Schritt 8 — reflexion: Takeaway & Reflexion: Was der Krisenstab lernt
 
 TAKEAWAY 1盒（核心总结）：
 

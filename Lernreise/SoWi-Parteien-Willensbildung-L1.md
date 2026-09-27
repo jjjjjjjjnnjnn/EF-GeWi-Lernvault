@@ -13,9 +13,16 @@ version: Lesson-v3
 
 # Lernreise: Parteien und Willensbildung (L1, Ziel Klausur)
 
-<!-- Lesson v3 9步制架构：Schritt 1至8固定结构；Fehlvorstellung 夹在 Schritt 6 与 7 之间（Parser 自动跳过，不占步数）；支持内嵌 [Werkzeug: <id>] 交互教具；Gating: check/szenario 未过 = Weiter 置灰；XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
+> Kampagne *Virtuelle Stadt-Tycoon — Von der Apfelmarkt-Fehde zum modernen Sozialstaat*: Akt IV-V — Tarifarena und Demokratiewerkstatt — Episode 18, Cast: Stadtzeichner Emil Kroll. Werkzeug dieser Episode: [balance-board].
 
-## Schritt 1 — entdecken
+<!-- Lesson v3 9步制架构：Schritt 1至8固定结构；Fehlvorstellung 夹在 Schritt 6 与 7 之间（Parser 自动跳过，不占步数）；支持内嵌 [Werkzeug: balance-board] 交互教具；Gating: check/szenario 未过 = Weiter 置灰；XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
+
+## Schritt 1 — entdecken: Alarm in Tycoon City: Karikatur-Zensur-Eklat im Schaukasten
+
+
+> EPISODE 18｜Akt IV-V — Tarifarena und Demokratiewerkstatt｜召集人 Stadtzeichner Emil Kroll：Karikatur-Zensur-Eklat im Schaukasten。
+
+HOOK 市长危机（先读剧情，再进 ZIELE）：【本集战役 EP18｜Akt IV-V — Tarifarena und Demokratiewerkstatt｜虚拟城邦 Tycoon City 告急】市长办公室深夜灯火通明，Stadtzeichner Emil Kroll 冲进来报告：Karikatur-Zensur-Eklat im Schaukasten，而明天市议会就要投票。集市在喊、长队在排、国库在抖：苹果集市价格战一路烧到租金黑市，再烧到基尼天平与劳资谈判桌，本集正是“Parteien und Willensbildung”的现实引爆点。你的身份是市长直属经济改革规划委员：把街头危机翻译成考点，用沙盘 [balance-board] 拿出可验证的数值方案，再交出一份 Klausur 满分答卷稳住议会。通关线索：TARGET: Bringt auf dem Verhandlungsbrett beide Waagschalen in die Balance — Bedingung: Zustimmung beider Baenke, Loesung mit Kompromisslinie, Ergebnisprotokoll mit zwei Begruendungen je Seite. 上一集的结尾就是这一集的悬念——黑市账本、税改天平、劳资天平、选票天平，四座天平有一座倒了，城邦就停摆。电台正在直播，反对派等着挑错：先读 ZIELE，再啃术语，把传导机制画成你的作战地图。DE-Briefing: Episode 18 — Stadtzeichner Emil Kroll meldet Karikatur-Zensur-Eklat im Schaukasten; der Stadtrat entscheidet morgen. Rette Tycoon City mit Analyse, Sandkasten und Klausur-Antwort zum Thema Parteien und Willensbildung.
 
 ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
@@ -25,7 +32,7 @@ ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
 Klausur-Satz: `Art. 21 GG gibt den Parteien den Auftrag, an der politischen Willensbildung des Volkes mitzuwirken; ihre Gründung ist frei, ihre innere Ordnung muss demokratisch sein.`
 
-## Schritt 2 — entdecken
+## Schritt 2 — entdecken: Werkzeugkoffer von Stadtzeichner Emil Kroll: 5 Begriffe scharf stellen
 
 PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
 
@@ -39,7 +46,7 @@ PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→�
 
 Klausur-Satz: `Die drei Leitideen — konservativ, sozialistisch und liberal — prägen bis heute die Programme der Bundestagsparteien.`
 
-## Schritt 3 — entdecken
+## Schritt 3 — entdecken: Uhrwerk des Marktes: Kette von Ursache zu Wirkung
 
 ENTDECKEN（1概念 + 1文字图解）：
 
@@ -85,11 +92,13 @@ Klausur-Satz: `Die Verluste von CDU und SPD belegen die Erosion der Volksparteie
 
 **Bezug zum Konzept**: Der Rückgang der großen Parteien belegt die Erosion der Volksparteien und die wachsende Bedeutung von Wechselwählern.
 
-## Schritt 4 — ausprobieren
+## Schritt 4 — ausprobieren: Sandkasten-Einsatz [balance-board]: Rette die Stadt mit Zahlen
 
 BEISPIEL（正确例题示范，含教具操作与解答）：
 
-[Werkzeug: lego]
+[Werkzeug: balance-board]
+
+TARGET: Bringt auf dem Verhandlungsbrett beide Waagschalen in die Balance — Bedingung: Zustimmung beider Baenke, Loesung mit Kompromisslinie, Ergebnisprotokoll mit zwei Begruendungen je Seite.
 
 AUFGABE (analysieren, AFB II, 10 BE)：Material 1 (Sachtext) enthält Auszüge aus zwei Wahlprogrammen zur Klimapolitik: Partei A will den Ausstieg aus fossilen Energien beschleunigen und nennt einen konkreten Finanzierungstopf; Partei B setzt auf marktbasierte Anreize und betont die technische Machbarkeit. Analysieren Sie beide Positionen mit den vier Kriterien der Programmanalyse und ordnen Sie sie je einer Leitidee zu.
 
@@ -103,7 +112,7 @@ MUSTERLÖSUNG: Nach dem Kriterium des Ziels strebt Partei A eine schnelle Abkehr
 
 Klausur-Satz: `Der Vergleich der Wahlprogramme zeigt, dass sich die Klimapolitik der Parteien vor allem bei Maßnahme und Finanzierung unterscheidet.`
 
-## Schritt 5 — ausprobieren
+## Schritt 5 — ausprobieren: Duell der Wege: Weg A gegen Weg B
 
 VERGLEICH辨别实验（双向辨析：纲领眼 vs. 统计眼）：
 
@@ -119,7 +128,7 @@ ANTWORT: A erfordert Verfahren (i): Die Forderung nach höheren Steuern für Spi
 
 Klausur-Satz: `Die Erosion der Volksparteien zeigt sich im sinkenden Stimmenanteil, weil Wechselwähler zunehmen und Stammwähler schmelzen.`
 
-## Schritt 6 — check
+## Schritt 6 — check: Selbsttest zu Parteien und Willensbildung
 
 CHECK检索默写（自测 3 题，与答案配对）：
 
@@ -141,7 +150,7 @@ Klausur-Satz: `Die 5-Prozent-Hürde stabilisiert das Parlament, schließt aber k
    中文纠偏：门槛是双刃剑。它防止议会碎片化、便于组阁，但代价是投给小党的票变成废票，扭曲意志形成，甚至逼出策略性投票。答案里必须写出这种张力，只夸一边拿不到满分。
    Korrektur-Satz: `Die Sperrklausel erhöht die Funktionsfähigkeit des Parlaments, erzeugt aber verlorene Stimmen und verzerrt die Willensbildung.`
 
-## Schritt 7 — szenario
+## Schritt 7 — szenario: Klausurtransfer: Anhoerung und Parlamentsrede zu Parteien und Willensbildung
 
 ROLLE: Du bist Wahlkampfberaterin bzw. Wahlkampfberater einer Jugendorganisation.
 
@@ -149,12 +158,12 @@ SITUATION: Deine Gruppe soll auf einem Podium ein Wahlprogramm zum Thema Bildung
 
 RUBRIC (30 XP): Benennung der Funktion von Parteien nach Art. 21 GG (5 XP) | Analyse der Vor- und Nachteile der Volkspartei (10 XP) | Erörterung der Rolle der Sperrklausel für kleine Parteien (10 XP) | Kriteriengeleitetes Urteil (z. B. Kriterium Repräsentation oder Stabilität) (5 XP).
 
-## Schritt 8 — reflexion: Takeaway & Reflexion
+## Schritt 8 — reflexion: Takeaway & Reflexion: Was der Krisenstab lernt
 
 TAKEAWAY 1盒（核心总结）：
 
 中文：政党是宪法点名的意志形成中介（Art. 21），底色看三思潮，纲领用四把尺子量，统计图看人民党的流失。做材料题先分两类：给"主张"就走纲领程序，给"数字"就走统计程序。评价时记住两个陷阱——厌党情绪不是否定民主，5% 门槛是稳定与公平的取舍。
-Takeaway-Satz: `Parteienverdrossenheit ist meist kein Abschied von der Demokratie, sondern eine Rechnung an ihre Akteure.`
+Takeaway-Satz: `Parteienverdrossenheit ist meist kein Abschied von der Demokratie, sondern eine Bilanz an ihre Akteure.`
 
 REFLEXION 2问：
 1. 过程自省：Welcher Schritt fiel schwerer — die Zuordnung der Leitideen (Schritt 4) oder das Lesen der Wahlstatistik (Schritt 5)?

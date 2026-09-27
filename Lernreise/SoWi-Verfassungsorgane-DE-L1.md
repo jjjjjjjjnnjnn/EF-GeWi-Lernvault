@@ -13,9 +13,16 @@ version: Lesson-v3
 
 # Lernreise: Verfassungsorgane (L1, Ziel Klausur)
 
-<!-- Lesson-v3: 8 Schritte plus Anekdote und Fehlvorstellung; Fehlvorstellung zwischen Schritt 6 und 7 (Parser-Skip); interaktives [Werkzeug: <id>]; Gating: check/szenario nicht bestanden = Weiter gesperrt; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
+> Kampagne *Virtuelle Stadt-Tycoon — Von der Apfelmarkt-Fehde zum modernen Sozialstaat*: Akt IV-V — Tarifarena und Demokratiewerkstatt — Episode 37, Cast: Schulpflegschaftsvater Bekir Uslu. Werkzeug dieser Episode: [balance-board].
 
-## Schritt 1 — entdecken: Ziele & Phaenomen-Einstieg
+<!-- Lesson-v3: 8 Schritte plus Anekdote und Fehlvorstellung; Fehlvorstellung zwischen Schritt 6 und 7 (Parser-Skip); interaktives [Werkzeug: balance-board]; Gating: check/szenario nicht bestanden = Weiter gesperrt; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
+
+## Schritt 1 — entdecken: Alarm in Tycoon City: Elternabend-Eklat um Taschengeld-Inflation
+
+
+> EPISODE 37 — Akt IV-V — Tarifarena und Demokratiewerkstatt — Auftrag von Schulpflegschaftsvater Bekir Uslu: Elternabend-Eklat um Taschengeld-Inflation.
+
+HOOK (Stadtrats-Krise, lies zuerst): EPISODE 37 — Akt IV-V — Tarifarena und Demokratiewerkstatt — Stadt Tycoon City ruft dich in den Krisenstab. Schulpflegschaftsvater Bekir Uslu stuermt mit einer Eilmeldung ins Buero: Elternabend-Eklat um Taschengeld-Inflation — und morgen entscheidet der Stadtrat. Der Markt schreit, die Warteschlange waechst, die Kasse zittert: Ohne deine Analyse kippt die Stadt vom Apfelparadies in den Schwarzmarkt. Dein Auftrag in dieser Episode: Uebersetze die Strassenszene in das heutige Thema Verfassungsorgane. Sammle Belege, stelle den Sandkasten [balance-board] scharf und liefere dem Rat eine Klausur-Antwort, die einer Pruefungskommission standhaelt. Erste Spur: TARGET: Bringt auf dem Verhandlungsbrett beide Waagschalen in die Balance — Bedingung: Zustimmung beider Baenke, Loesung mit Kompromisslinie, Ergebnisprotokoll mit zwei Begruendungen je Seite. Wer den Mechanismus versteht, rettet den Haushalt — und vielleicht die Wahl. Der Countdown laeuft, das Radio berichtet live, die Opposition wartet nur auf deinen Fehler: Oeffne die Ziele, schnapp dir die Begriffe und beweise, dass Tycoon City regierbar bleibt.
 
 ZIELE (drei messbare Ziele dieser Lektion):
 
@@ -27,7 +34,7 @@ ZIELE (drei messbare Ziele dieser Lektion):
 
 Der Bundestag waechst nach jeder Wahl, eine Reform soll die Sitze deckeln, doch Direktkandidaten bangen um ihren Sitz trotz Sieg im Wahlkreis. In Karlsruhe wird geprueft, im Bundesrat wird gebremst, die Regierung will handeln. Wer sichert hier die Demokratie: die handlungsfaehige Mehrheit im Parlament oder die bremsende Kontrolle durch Laender und Gericht? In dieser Lektion lernst du zwei Wege der Antwort: Weg A setzt auf parlamentarische Fuehrung, Weg B auf foederative Kontrolle.
 
-## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
+## Schritt 2 — entdecken: Werkzeugkoffer von Schulpflegschaftsvater Bekir Uslu: 5 Begriffe scharf stellen
 
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
@@ -49,7 +56,7 @@ Die Begriffe greifen ineinander: Bundestag und Bundesrat geben Gesetzen doppelte
 
 Klausur-Satz: `Art. 38 GG garantiert das freie Mandat: Abgeordnete sind an Aufträge nicht gebunden, sondern nur ihrem Gewissen unterworfen.`
 
-## Schritt 3 — entdecken: Kernkonzept & Wirkungsmodell
+## Schritt 3 — entdecken: Uhrwerk des Marktes: Kette von Ursache zu Wirkung
 
 TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
@@ -82,11 +89,13 @@ Der Bundespräsident wird nicht direkt vom Volk gewählt, sondern von der Bundes
 
 Bezug zum Konzept: `Das Beispiel zeigt, wie Gewaltenteilung persönliche Macht begrenzt und Legitimation auf mehrere Organe verteilt.`
 
-## Schritt 4 — ausprobieren: Interaktive Praxis & Urteils-Waage
+## Schritt 4 — ausprobieren: Sandkasten-Einsatz [balance-board]: Rette die Stadt mit Zahlen
 
 BEISPIEL (geleitete Aufgabe mit Werkzeug):
 
 [Werkzeug: balance-board]
+
+TARGET: Bringt auf dem Verhandlungsbrett beide Waagschalen in die Balance — Bedingung: Zustimmung beider Baenke, Loesung mit Kompromisslinie, Ergebnisprotokoll mit zwei Begruendungen je Seite.
 
 Lege im Tool Pro- und Contra-Argumente auf die Waage und gewichte jedes Argument von 1 bis 5; veraendere die Gewichte Schritt fuer Schritt und beobachte, wann das Urteil zwischen Zustimmung und Blockade oder zwischen Fuehrung und Kontrolle umschlaegt.
 
@@ -101,7 +110,7 @@ MUSTERLOESUNG: Weil die Haushalte der Laender beruehrt sind, gilt Zustimmungspfl
 
 Klausur-Satz: `Mithilfe des Politikzyklus lässt sich das Gesetz als Reaktion auf ein Problem mit schneller Implementation, aber offener Evaluation einordnen.`
 
-## Schritt 5 — ausprobieren: Wegvergleich & Abgrenzung
+## Schritt 5 — ausprobieren: Duell der Wege: Weg A gegen Weg B
 
 VERGLEICH (Wahl des Weges, Weg A gegen Weg B):
 
@@ -121,7 +130,7 @@ ANTWORT: Aufgabe A wird ueber Weg A geloest, weil eine handlungsfaehige Mehrheit
 
 Klausur-Satz: `Beim Zustimmungsgesetz kann der Bundesrat ein Vorhaben blockieren, beim Einspruchsgesetz kann der Bundestag den Einspruch überstimmen.`
 
-## Schritt 6 — check: Selbsttest zu Verfassungsorganen
+## Schritt 6 — check: Selbsttest zu Verfassungsorgane
 
 CHECK (drei Fragen mit Antworten):
 
@@ -141,14 +150,14 @@ Klausur-Satz: `Die Bundesversammlung besteht zur Hälfte aus Bundestagsmitgliede
 2. Fehlkonzept: Das Bundesverfassungsgericht sei eine weitere politische Instanz, die nach Mehrheit entscheide.
    Korrektur-Satz: `Das Bundesverfassungsgericht prüft Recht gegen die Verfassung und bindet auch Mehrheiten an Grundrechte und Prinzipien.`
 
-## Schritt 7 — szenario: Karlsruhe-Debatte & Reformstreit
+## Schritt 7 — szenario: Klausurtransfer: Anhoerung und Parlamentsrede zu Verfassungsorgane
 
 ROLLE: Du bist Sachverstaendige bzw. Sachverstaendiger in einer Bundestagsanhoerung zur Parlamentsreform.
 SITUATION: Eine Reform soll den Bundestag dauerhaft verkleinern und die Zahl der Sitze deckeln; Kritiker warnen, dass dadurch gewaehlte Direktkandidaten ihren Sitz verlieren können, obwohl sie ihren Wahlkreis gewonnen haben. Beurteile in einer zusammenhängenden Stellungnahme (ca. 150 Wörter), ob die Reform zu befürworten ist, und nutze dabei Argumente zur Funktionsfähigkeit und zur Repräsentation.
 AUFGABE (AFB III): Verfasse eine zusammenhaengende Darstellung von etwa 150 Woertern mit Kriterium, Anwendung und Urteil.
 RUBRIC (30 XP): These mit Kriterium Handlungsfaehigkeit und Repraesentation (5 XP) | Darstellung der Organe und ihres Zusammenwirkens (10 XP) | Anwendung auf Direktmandat und Deckelung mit Abwaegung (10 XP) | Fazit mit Fachbegriffen und Klausur-Satz (5 XP).
 
-## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
+## Schritt 8 — reflexion: Takeaway & Reflexion: Was der Krisenstab lernt
 
 TAKEAWAY (Kernbotschaft in einem Kasten):
 

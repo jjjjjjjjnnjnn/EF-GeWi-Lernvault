@@ -13,9 +13,16 @@ version: Lesson-v3
 
 # Lernreise: Gesetzgebungsverfahren und Demokratie (L1, Ziel Klausur)
 
-<!-- Lesson-v3: 8 Schritte plus Anekdote und Fehlvorstellung; Fehlvorstellung zwischen Schritt 6 und 7 (Parser-Skip); interaktives [Werkzeug: <id>]; Gating: check/szenario nicht bestanden = Weiter gesperrt; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
+> Kampagne *Virtuelle Stadt-Tycoon — Von der Apfelmarkt-Fehde zum modernen Sozialstaat*: Akt IV-V — Tarifarena und Demokratiewerkstatt — Episode 05, Cast: Mieterbund-Sprecherin Aylin Kaya. Werkzeug dieser Episode: [balance-board].
 
-## Schritt 1 — entdecken: Ziele & Phaenomen-Einstieg
+<!-- Lesson-v3: 8 Schritte plus Anekdote und Fehlvorstellung; Fehlvorstellung zwischen Schritt 6 und 7 (Parser-Skip); interaktives [Werkzeug: balance-board]; Gating: check/szenario nicht bestanden = Weiter gesperrt; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
+
+## Schritt 1 — entdecken: Alarm in Tycoon City: Schwarzes Brett mit Mondmieten im Keller
+
+
+> EPISODE 05 — Akt IV-V — Tarifarena und Demokratiewerkstatt — Auftrag von Mieterbund-Sprecherin Aylin Kaya: Schwarzes Brett mit Mondmieten im Keller.
+
+HOOK (Stadtrats-Krise, lies zuerst): EPISODE 05 — Akt IV-V — Tarifarena und Demokratiewerkstatt — Stadt Tycoon City ruft dich in den Krisenstab. Mieterbund-Sprecherin Aylin Kaya stuermt mit einer Eilmeldung ins Buero: Schwarzes Brett mit Mondmieten im Keller — und morgen entscheidet der Stadtrat. Der Markt schreit, die Warteschlange waechst, die Kasse zittert: Ohne deine Analyse kippt die Stadt vom Apfelparadies in den Schwarzmarkt. Dein Auftrag in dieser Episode: Uebersetze die Strassenszene in das heutige Thema Gesetzgebungsverfahren und Demokratie. Sammle Belege, stelle den Sandkasten [balance-board] scharf und liefere dem Rat eine Klausur-Antwort, die einer Pruefungskommission standhaelt. Erste Spur: TARGET: Bringt auf dem Verhandlungsbrett beide Waagschalen in die Balance — Bedingung: Zustimmung beider Baenke, Loesung mit Kompromisslinie, Ergebnisprotokoll mit zwei Begruendungen je Seite. Wer den Mechanismus versteht, rettet den Haushalt — und vielleicht die Wahl. Der Countdown laeuft, das Radio berichtet live, die Opposition wartet nur auf deinen Fehler: Oeffne die Ziele, schnapp dir die Begriffe und beweise, dass Tycoon City regierbar bleibt.
 
 ZIELE (drei messbare Ziele dieser Lektion):
 
@@ -27,7 +34,7 @@ ZIELE (drei messbare Ziele dieser Lektion):
 
 Der Bundestag beschliesst eine Entlastung fuer die Kommunen, der Bundesrat stoppt das Gesetz, nachts tagt der Vermittlungsausschuss. Die Presse ruft Blockade, die Laender rufen Mitsprache. Schuetzt der Bundesrat die Demokratie, oder laehmt er sie? In dieser Lektion lernst du zwei Wege der Antwort: Weg A lobt die effiziente Durchsetzung durch die Regierungsmehrheit, Weg B lobt den Ausgleich durch den Vermittlungsausschuss.
 
-## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
+## Schritt 2 — entdecken: Werkzeugkoffer von Mieterbund-Sprecherin Aylin Kaya: 5 Begriffe scharf stellen
 
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
@@ -49,7 +56,7 @@ Die Begriffe greifen ineinander: Der Bundestag beschliesst, der Bundesrat bremst
 
 Klausur-Satz: `Art. 38 GG garantiert das freie Mandat: Abgeordnete sind an Aufträge nicht gebunden, sondern nur ihrem Gewissen unterworfen.`
 
-## Schritt 3 — entdecken: Kernkonzept & Wirkungsmodell
+## Schritt 3 — entdecken: Uhrwerk des Marktes: Kette von Ursache zu Wirkung
 
 TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
@@ -82,11 +89,13 @@ Zwischen den beiden Kammern gibt es einen überraschenden Gegensatz. Bundestagsa
 
 Bezug zum Konzept: `Das Beispiel zeigt, wie freies und gebundenes Mandat zwei verschiedene Logiken von Repräsentation verkörpern.`
 
-## Schritt 4 — ausprobieren: Interaktive Praxis & Urteils-Waage
+## Schritt 4 — ausprobieren: Sandkasten-Einsatz [balance-board]: Rette die Stadt mit Zahlen
 
 BEISPIEL (geleitete Aufgabe mit Werkzeug):
 
 [Werkzeug: balance-board]
+
+TARGET: Bringt auf dem Verhandlungsbrett beide Waagschalen in die Balance — Bedingung: Zustimmung beider Baenke, Loesung mit Kompromisslinie, Ergebnisprotokoll mit zwei Begruendungen je Seite.
 
 Lege im Tool Pro- und Contra-Argumente auf die Waage und gewichte jedes Argument von 1 bis 5; veraendere die Gewichte Schritt fuer Schritt und beobachte, wann das Urteil zwischen Kraft und Blockade oder zwischen Gestaltung und Ausgleich umschlaegt.
 
@@ -101,7 +110,7 @@ MUSTERLOESUNG: Weil Laenderhaushalte beruehrt sind, gilt Zustimmung: Ohne Zustim
 
 Klausur-Satz: `Weil das Gesetz die Haushalte der Länder berührt, ist es ein Zustimmungsgesetz, das ohne das Ja des Bundesrates nicht in Kraft treten kann.`
 
-## Schritt 5 — ausprobieren: Wegvergleich & Abgrenzung
+## Schritt 5 — ausprobieren: Duell der Wege: Weg A gegen Weg B
 
 VERGLEICH (Wahl des Weges, Weg A gegen Weg B):
 
@@ -121,7 +130,7 @@ ANTWORT: Aufgabe A wird ueber Weg A geloest, weil die Regierungsmehrheit zuegige
 
 Klausur-Satz: `Je nach demokratietheoretischem Ansatz wird das Gesetzgebungsverfahren unterschiedlich bewertet: republikanisch als Frage der Bürgerbeteiligung, prozedural als Frage der Verfahrensqualität.`
 
-## Schritt 6 — check: Selbsttest zu Gesetzgebung und Demokratie
+## Schritt 6 — check: Selbsttest zu Gesetzgebungsverfahren und Demokratie
 
 CHECK (drei Fragen mit Antworten):
 
@@ -141,14 +150,14 @@ Klausur-Satz: `Das freie Mandat nach Art. 38 GG stellt die Abgeordneten über Au
 2. Fehlkonzept: Freies Mandat heisse, Abgeordnete stimmten stets unabhaengig von Fraktion und Partei ab.
    Korrektur-Satz: `Art. 38 GG schützt vor rechtlicher Bindung, doch Fraktionsdisziplin begrenzt die Freiheit faktisch und politisch.`
 
-## Schritt 7 — szenario: Enquete-Kommission & Blockade-Debatte
+## Schritt 7 — szenario: Klausurtransfer: Anhoerung und Parlamentsrede zu Gesetzgebungsverfahren und Demokratie
 
 ROLLE: Du bist Mitglied einer Enquete-Kommission bzw. Sachverstaendige oder Sachverstaendiger, die oder der dem Landtag die Bundesgesetzgebung am Beispiel eines Entwurfs erklaert.
 SITUATION: Ein Entwurf zur Entlastung der Kommunen wird im Bundestag beschlossen, im Bundesrat aber von einer Laendermehrheit abgelehnt; es kommt zum Vermittlungsausschuss. Ein Teil der Presse nennt den Bundesrat ein Blockadeinstrument, ein anderer verteidigt ihn als Stimme der Laender. Beurteilen Sie in einer zusammenhängenden Stellungnahme (ca. 150 Wörter), ob die Rolle des Bundesrates demokratisch zu rechtfertigen ist, und waehlen Sie dafuer eine demokratietheoretische Koordinate.
 AUFGABE (AFB III): Verfasse eine zusammenhaengende Darstellung von etwa 150 Woertern mit Kriterium, Anwendung und Urteil.
 RUBRIC (30 XP): Darstellung des Weges bis zum Vermittlungsausschuss (6 XP) | Analyse der Blockade-Logik aus Foederalismus und Zustaendigkeit (8 XP) | Anwendung einer demokratietheoretischen Koordinate als Kriterium (10 XP) | Kriteriengeleitetes Urteil mit Abwaegung von Funktionsfaehigkeit und Repraesentation (6 XP).
 
-## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
+## Schritt 8 — reflexion: Takeaway & Reflexion: Was der Krisenstab lernt
 
 TAKEAWAY (Kernbotschaft in einem Kasten):
 

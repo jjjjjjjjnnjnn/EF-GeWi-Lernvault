@@ -13,9 +13,16 @@ version: Lesson-v3
 
 # Lernreise: Sozialisation und Rolle (L1, Ziel Klausur)
 
-<!-- Lesson-v3: 8 Schritte plus Anekdote und Fehlvorstellung; Fehlvorstellung zwischen Schritt 6 und 7 (Parser-Skip); interaktives [Werkzeug: <id>]; Gating: check/szenario nicht bestanden = Weiter gesperrt; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
+> Kampagne *Virtuelle Stadt-Tycoon — Von der Apfelmarkt-Fehde zum modernen Sozialstaat*: Akt IV-V — Tarifarena und Demokratiewerkstatt — Episode 29, Cast: Sechseck-Moderator Theo Albrecht. Werkzeug dieser Episode: [balance-board].
 
-## Schritt 1 — entdecken: Ziele & Phaenomen-Einstieg
+<!-- Lesson-v3: 8 Schritte plus Anekdote und Fehlvorstellung; Fehlvorstellung zwischen Schritt 6 und 7 (Parser-Skip); interaktives [Werkzeug: balance-board]; Gating: check/szenario nicht bestanden = Weiter gesperrt; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
+
+## Schritt 1 — entdecken: Alarm in Tycoon City: Sechseck-Trilemma vor laufenden Kameras
+
+
+> EPISODE 29 — Akt IV-V — Tarifarena und Demokratiewerkstatt — Auftrag von Sechseck-Moderator Theo Albrecht: Sechseck-Trilemma vor laufenden Kameras.
+
+HOOK (Stadtrats-Krise, lies zuerst): EPISODE 29 — Akt IV-V — Tarifarena und Demokratiewerkstatt — Stadt Tycoon City ruft dich in den Krisenstab. Sechseck-Moderator Theo Albrecht stuermt mit einer Eilmeldung ins Buero: Sechseck-Trilemma vor laufenden Kameras — und morgen entscheidet der Stadtrat. Der Markt schreit, die Warteschlange waechst, die Kasse zittert: Ohne deine Analyse kippt die Stadt vom Apfelparadies in den Schwarzmarkt. Dein Auftrag in dieser Episode: Uebersetze die Strassenszene in das heutige Thema Sozialisation und Rolle. Sammle Belege, stelle den Sandkasten [balance-board] scharf und liefere dem Rat eine Klausur-Antwort, die einer Pruefungskommission standhaelt. Erste Spur: TARGET: Bringt auf dem Verhandlungsbrett beide Waagschalen in die Balance — Bedingung: Zustimmung beider Baenke, Loesung mit Kompromisslinie, Ergebnisprotokoll mit zwei Begruendungen je Seite. Wer den Mechanismus versteht, rettet den Haushalt — und vielleicht die Wahl. Der Countdown laeuft, das Radio berichtet live, die Opposition wartet nur auf deinen Fehler: Oeffne die Ziele, schnapp dir die Begriffe und beweise, dass Tycoon City regierbar bleibt.
 
 ZIELE (drei messbare Ziele dieser Lektion):
 
@@ -29,7 +36,7 @@ Stell dir vor, im Klassenrat streiten zwei Schuelerinnen ueber das Handy: Die ei
 
 Klausur-Satz: `Sozialisation bezeichnet den lebenslangen Prozess, in dem das Individuum Normen, Werte und Rollen seiner Gesellschaft erwirbt.`
 
-## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
+## Schritt 2 — entdecken: Werkzeugkoffer von Sechseck-Moderator Theo Albrecht: 5 Begriffe scharf stellen
 
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
@@ -51,7 +58,7 @@ Die Begriffe greifen ineinander: **Primaer** und **sekundaer** liefern die Phase
 
 Klausur-Satz: `Dahrendorfs Homo sociologicus handelt nach Rollenerwartungen; Abweichung loest soziale Kontrolle in Form positiver oder negativer Sanktionen aus.`
 
-## Schritt 3 — entdecken: Kernkonzept & Wirkungsmodell
+## Schritt 3 — entdecken: Uhrwerk des Marktes: Kette von Ursache zu Wirkung
 
 TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
@@ -59,9 +66,9 @@ TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
 Schueler, Tochter, Freund — drei Rollen, ein Tag, null Zeit? Erwartung gegen Erwartung — wann bricht die Rolle, wann schuetzt Distanz?
 
-### Spiel-Aufgabe mit [Werkzeug: gini-allocator]
+### Spiel-Aufgabe mit [Werkzeug: balance-board]
 
-Oeffne [Werkzeug: gini-allocator]. Verteile 100 Erwartungspunkte per Regler auf Positionen: Familie, Schule, Peers. Beobachte, wie ungleiche Verteilung die Kurve woelbt und eine Rolle dominant wird. Mache den Rollenkonflikt als Zeitkampf sichtbar: Angebot an Zeit gegen Nachfrage durch Rollen.
+Oeffne [Werkzeug: balance-board]. Verteile 100 Erwartungspunkte per Regler auf Positionen: Familie, Schule, Peers. Beobachte, wie ungleiche Verteilung die Kurve woelbt und eine Rolle dominant wird. Mache den Rollenkonflikt als Zeitkampf sichtbar: Angebot an Zeit gegen Nachfrage durch Rollen.
 
 ### Aha-Moment & Gesetz
 
@@ -84,11 +91,13 @@ Der Begriff Rolle stammt aus dem Theater: Frueher war die Rolle ein zusammengero
 
 Bezug zum Konzept: `Das Beispiel zeigt, wie aus einer Theater-Metapher ein pruefbarer Mechanismus aus Erwartung und Spielraum wurde.`
 
-## Schritt 4 — ausprobieren: Interaktive Praxis & Urteils-Waage
+## Schritt 4 — ausprobieren: Sandkasten-Einsatz [balance-board]: Rette die Stadt mit Zahlen
 
 BEISPIEL (geleitete Aufgabe mit Werkzeug):
 
 [Werkzeug: balance-board]
+
+TARGET: Bringt auf dem Verhandlungsbrett beide Waagschalen in die Balance — Bedingung: Zustimmung beider Baenke, Loesung mit Kompromisslinie, Ergebnisprotokoll mit zwei Begruendungen je Seite.
 
 Lege im Tool Pro- und Contra-Argumente auf die Waage und gewichte jedes Argument von 1 bis 5; veraendere die Gewichte Schritt fuer Schritt und beobachte, wann das Urteil zwischen strenger Regel und offener Freiheit umschlaegt.
 
@@ -101,7 +110,7 @@ MUSTERLOESUNG: Bei stark ungleicher Verteilung haengt die Kurve tief — Zeitman
 
 Klausur-Satz: `Ein Inter-Rollenkonflikt entsteht, wenn die Erwartungen zweier Positionen zeitgleich erfuellt werden sollen.`
 
-## Schritt 5 — ausprobieren: Wegvergleich & Abgrenzung
+## Schritt 5 — ausprobieren: Duell der Wege: Weg A gegen Weg B
 
 VERGLEICH (Wahl des Weges, A gegen B):
 
@@ -141,14 +150,14 @@ Klausur-Satz: `Rollendistanz bedeutet, eine Rolle bewusst zu spielen, ohne die e
 2. Fehlkonzept: Rolle bedeute, dass man jede Erwartung starr erfuellen muesse und keinen Spielraum habe.
    Korrektur-Satz: `Zur Rolle gehoert Distanz und Aushandlung, sodass Personen Erwartungen deuten und im Rahmen des Moeglichen mitgestalten koennen.`
 
-## Schritt 7 — szenario: Klassenrat & Handyregel-Debatte
+## Schritt 7 — szenario: Klausurtransfer: Anhoerung und Parlamentsrede zu Sozialisation und Rolle
 
 ROLLE: Du bist Klassensprecherin bzw. Klassensprecher und moderierst eine Sitzung des Klassenrats.
 SITUATION: In deiner Klasse sollen neue Regeln fuer die Handynutzung beschlossen werden. Ein Teil der Klasse fordert ein striktes Verbot, ein anderer Teil will voellige Freiheit. Zwei Mitschuelerinnen geraten in Streit, weil eine sich an die neue Regel halten will, die andere aber findet, die Regel widerspreche ihrem Gerechtigkeitsgefuehl. Erklaere in einer zusammenhaengenden Stellungnahme (ca. 150 Woerter), wie Regeln ueber Rollen und Sanktionen wirken und wie Rollendistanz helfen kann, den Streit zu entschaerfen.
 AUFGABE (AFB III): Verfasse eine zusammenhaengende Darstellung von etwa 150 Woertern mit Kriterium, Anwendung und Urteil.
 RUBRIC (30 XP): These mit Kriterium Berechenbarkeit und Freiheit (5 XP) | Darstellung beider Wege mit Fachbegriffen (10 XP) | Anwendung auf Handy-Streit mit Rollenkonflikt und Distanz (10 XP) | Fazit mit Kompromiss und Ausblick (5 XP).
 
-## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
+## Schritt 8 — reflexion: Takeaway & Reflexion: Was der Krisenstab lernt
 
 TAKEAWAY (Kernbotschaft in einem Kasten):
 

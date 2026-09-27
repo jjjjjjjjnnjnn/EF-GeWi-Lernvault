@@ -13,9 +13,16 @@ version: Lesson-v3
 
 # Lernreise: Wirtschaftskreislauf und BIP-Kritik (L1, Ziel Klausur)
 
-<!-- Lesson-v3: 8 Schritte plus Anekdote und Fehlvorstellung; Fehlvorstellung zwischen Schritt 6 und 7 (Parser-Skip); interaktives [Werkzeug: <id>]; Gating: check/szenario nicht bestanden = Weiter gesperrt; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
+> Kampagne *Virtuelle Stadt-Tycoon — Von der Apfelmarkt-Fehde zum modernen Sozialstaat*: Akt I-II — Apfelmarkt und Mietendeckel — Episode 41, Cast: Hausmeister Benno Strauss. Werkzeug dieser Episode: [markt-sim].
 
-## Schritt 1 — entdecken: Ziele und Phaenomen-Einstieg
+<!-- Lesson-v3: 8 Schritte plus Anekdote und Fehlvorstellung; Fehlvorstellung zwischen Schritt 6 und 7 (Parser-Skip); interaktives [Werkzeug: markt-sim]; Gating: check/szenario nicht bestanden = Weiter gesperrt; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
+
+## Schritt 1 — entdecken: Alarm in Tycoon City: Hausmeister-Streik im Winterdienst
+
+
+> EPISODE 41 — Akt I-II — Apfelmarkt und Mietendeckel — Auftrag von Hausmeister Benno Strauss: Hausmeister-Streik im Winterdienst.
+
+HOOK (Stadtrats-Krise, lies zuerst): EPISODE 41 — Akt I-II — Apfelmarkt und Mietendeckel — Stadt Tycoon City ruft dich in den Krisenstab. Hausmeister Benno Strauss stuermt mit einer Eilmeldung ins Buero: Hausmeister-Streik im Winterdienst — und morgen entscheidet der Stadtrat. Der Markt schreit, die Warteschlange waechst, die Kasse zittert: Ohne deine Analyse kippt die Stadt vom Apfelparadies in den Schwarzmarkt. Dein Auftrag in dieser Episode: Uebersetze die Strassenszene in das heutige Thema Wirtschaftskreislauf und BIP-Kritik. Sammle Belege, stelle den Sandkasten [markt-sim] scharf und liefere dem Rat eine Klausur-Antwort, die einer Pruefungskommission standhaelt. Erste Spur: TARGET: Stellt im Sandkasten Angebot und Nachfrage so ein, dass der Gleichgewichtspreis zwischen 8 und 12 Euro liegt, die gehandelte Menge mindestens 100 Einheiten erreicht und ein Probe-Hoechstpreis von 6 Euro als bindend mit Warteschlange entlarvt wird. Wer den Mechanismus versteht, rettet den Haushalt — und vielleicht die Wahl. Der Countdown laeuft, das Radio berichtet live, die Opposition wartet nur auf deinen Fehler: Oeffne die Ziele, schnapp dir die Begriffe und beweise, dass Tycoon City regierbar bleibt.
 
 ZIELE (drei messbare Ziele dieser Lektion):
 
@@ -29,7 +36,7 @@ Stell dir vor, ein Sturm zerstoert den Wald, danach steigt das regionale BIP dur
 
 Klausur-Satz: `Der erweiterte Wirtschaftskreislauf zeigt die Geld- und Gueterstroeme zwischen fuenf Sektoren, das BIP misst nur deren monetarisierten Ausschnitt.`
 
-## Schritt 2 — entdecken: Fachbegriffe und Pre-Training
+## Schritt 2 — entdecken: Werkzeugkoffer von Hausmeister Benno Strauss: 5 Begriffe scharf stellen
 
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
@@ -51,7 +58,7 @@ Die Begriffe greifen ineinander: **Haushalte** und **Unternehmen** bilden den Ke
 
 Klausur-Satz: `Geldstroeme und Gueterstroeme laufen im Kreislauf in entgegengesetzter Richtung zwischen Haushalten und Unternehmen.`
 
-## Schritt 3 — entdecken: Kernkonzept und Wirkungsmodell
+## Schritt 3 — entdecken: Uhrwerk des Marktes: Kette von Ursache zu Wirkung
 
 TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
@@ -84,11 +91,13 @@ Nach einem schweren Sturm steigt das BIP oft an, weil Reparaturen, Ersatzkaeufe 
 
 Bezug zum Konzept: Das Beispiel zeigt, wie Umsatzplus und Wohlfahrtsminus auseinanderfallen und warum Abzug von Umwelt- und Sozialkosten noetig ist.
 
-## Schritt 4 — ausprobieren: Interaktive Praxis und Kreislauf-Labor
+## Schritt 4 — ausprobieren: Sandkasten-Einsatz [markt-sim]: Rette die Stadt mit Zahlen
 
 BEISPIEL (geleitete Aufgabe mit Werkzeug):
 
 [Werkzeug: markt-sim]
+
+TARGET: Stellt im Sandkasten Angebot und Nachfrage so ein, dass der Gleichgewichtspreis zwischen 8 und 12 Euro liegt, die gehandelte Menge mindestens 100 Einheiten erreicht und ein Probe-Hoechstpreis von 6 Euro als bindend mit Warteschlange entlarvt wird.
 
 Baue im Tool den erweiterten Kreislauf mit fuenf Sektoren. Markiere Geldstrom und Gueterstrom mit Staat, Banken und Ausland. Erhoehe die Staatsausgaben schrittweise und aktiviere dann den Umweltkosten-Regler.
 
@@ -103,7 +112,7 @@ MUSTERLOESUNG: Geld fliesst im Uhrzeigersinn, Gueter entgegengesetzt; Staat uebe
 
 Klausur-Satz: `Entstehung, Verwendung und Verteilung beschreiben dasselbe BIP aus Produktions-, Ausgaben- und Einkommenssicht.`
 
-## Schritt 5 — ausprobieren: Weg-Vergleich und Abgrenzung
+## Schritt 5 — ausprobieren: Duell der Wege: Weg A gegen Weg B
 
 VERGLEICH: Zwei Wege deuten dasselbe Wachstum unterschiedlich. Weg A feiert quantitatives Wachstum mit Output und Beschaeftigung. Weg B fragt nach qualitativem Wachstum mit Abzug von Umwelt- und Sozialkosten. Pruefe zuerst die Aufgabe, waehle dann den passenden Weg.
 
@@ -141,14 +150,14 @@ Klausur-Satz: `Das BIP misst Marktwerte eines Jahres, nicht Nachhaltigkeit oder 
 2. Fehlkonzept: Geldstrom und Gueterstrom liefen in dieselbe Richtung, weil Geld und Ware gemeinsam den Besitzer wechselten.
    Korrektur-Satz: `Geld fliesst von Kaeufer zu Verkaeufer, Gut fliesst von Verkaeufer zu Kaeufer; beide Stroeme laufen im Kreis entgegengesetzt.`
 
-## Schritt 7 — szenario: Leserbrief und Sturm-BIP-Debatte
+## Schritt 7 — szenario: Klausurtransfer: Anhoerung und Parlamentsrede zu Wirtschaftskreislauf und BIP-Kritik
 
 ROLLE: Du bist Schuelerin in der EF und schreibst einen Leserbrief an die Lokalzeitung.
 SITUATION: Die Stadt feiert ein gestiegenes regionales BIP nach einem Sturmjahr mit viel Wiederaufbau, waehrend Parks zerstoert und viele ehrenamtliche Helfer erschoepft sind. Beurteile die Lage in einer zusammenhaengenden Darstellung mit etwa 150 Woertern mit dem erweiterten Kreislauf, der BIP-Kritik in vier Punkten und NWI und HDI.
 AUFGABE (AFB III): Verfasse eine zusammenhaengende Darstellung von etwa 150 Woertern mit Kriterium, Anwendung und Urteil.
 RUBRIC (30 XP): Kreislauf mit Sektorbezug korrekt (5 XP) | Drei Blickwinkel oder Verwendung aus Konsum plus Investition plus Staat plus Aussenbeitrag genannt (5 XP) | Vier Kritikpunkte vollstaendig (10 XP) | NWI und HDI plus begruendetes Urteil zu Wachstum gegen Wohlfahrt (10 XP)
 
-## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
+## Schritt 8 — reflexion: Takeaway & Reflexion: Was der Krisenstab lernt
 
 TAKEAWAY (Kernbotschaft in einem Kasten):
 

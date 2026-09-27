@@ -13,9 +13,16 @@ version: Lesson-v3
 
 # Lernreise: Abitur-Fokus IF4 und IF6 (L1, Ziel Klausur)
 
-<!-- Lesson-v3: 8 Schritte plus Anekdote und Fehlvorstellung; Fehlvorstellung zwischen Schritt 6 und 7 (Parser-Skip); interaktives [Werkzeug: <id>]; Gating: check/szenario nicht bestanden = Weiter gesperrt; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
+> Kampagne *Virtuelle Stadt-Tycoon — Von der Apfelmarkt-Fehde zum modernen Sozialstaat*: Akt V — Klausurwerkstatt der Stadtkanzlei — Episode 01, Cast: Buergermeisterin Lena Hartmann. Werkzeug dieser Episode: [formula].
 
-## Schritt 1 — entdecken: Ziele & Phaenomen-Einstieg
+<!-- Lesson-v3: 8 Schritte plus Anekdote und Fehlvorstellung; Fehlvorstellung zwischen Schritt 6 und 7 (Parser-Skip); interaktives [Werkzeug: formula]; Gating: check/szenario nicht bestanden = Weiter gesperrt; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
+
+## Schritt 1 — entdecken: Alarm in Tycoon City: Apfelpreis-Crash auf dem Nachtmarkt
+
+
+> EPISODE 01 — Akt V — Klausurwerkstatt der Stadtkanzlei — Auftrag von Buergermeisterin Lena Hartmann: Apfelpreis-Crash auf dem Nachtmarkt.
+
+HOOK (Stadtrats-Krise, lies zuerst): EPISODE 01 — Akt V — Klausurwerkstatt der Stadtkanzlei — Stadt Tycoon City ruft dich in den Krisenstab. Buergermeisterin Lena Hartmann stuermt mit einer Eilmeldung ins Buero: Apfelpreis-Crash auf dem Nachtmarkt — und morgen entscheidet der Stadtrat. Der Markt schreit, die Warteschlange waechst, die Kasse zittert: Ohne deine Analyse kippt die Stadt vom Apfelparadies in den Schwarzmarkt. Dein Auftrag in dieser Episode: Uebersetze die Strassenszene in das heutige Thema Abitur-Fokus IF4 und IF6. Sammle Belege, stelle den Sandkasten [formula] scharf und liefere dem Rat eine Klausur-Antwort, die einer Pruefungskommission standhaelt. Erste Spur: TARGET: Hebt die Klausurformel aufs Brett — Bedingung: Dreischritt 30-40-30 eingehalten, drei Fachbegriffe korrekt gesetzt, Urteil mit Massstab und Abwaegung geschlossen. Wer den Mechanismus versteht, rettet den Haushalt — und vielleicht die Wahl. Der Countdown laeuft, das Radio berichtet live, die Opposition wartet nur auf deinen Fehler: Oeffne die Ziele, schnapp dir die Begriffe und beweise, dass Tycoon City regierbar bleibt.
 
 ZIELE (drei messbare Ziele dieser Lektion):
 
@@ -29,7 +36,7 @@ Stell dir vor, vier Ziele ziehen in vier Richtungen: Vollbeschaeftigung drueckt 
 
 Klausur-Satz: `Die Vorgaben fuer das Zentralabitur verlangen in IF4 unter anderem die Legitimation staatlichen Handelns, die Zielgroessen des Stabilitaetsgesetzes und die internationalen Wirtschaftsbeziehungen.`
 
-## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
+## Schritt 2 — entdecken: Werkzeugkoffer von Buergermeisterin Lena Hartmann: 5 Begriffe scharf stellen
 
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
@@ -51,7 +58,7 @@ Die Begriffe greifen ineinander: Das **magische Viereck** definiert IF4 mit vier
 
 Klausur-Satz: `Als Fokussierungen sind in IF4 der Streit um die Staatsverschuldung und der Gegensatz von Freihandel und Protektionismus sowie in IF6 die Schichten-, Lagen- und Milieumodelle ausgewiesen.`
 
-## Schritt 3 — entdecken: Kernkonzept & Wirkungsmodell
+## Schritt 3 — entdecken: Uhrwerk des Marktes: Kette von Ursache zu Wirkung
 
 TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
@@ -59,9 +66,9 @@ TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
 Mindestlohn 15 Euro — IF4 oder IF6? Gleiche Forderung, zwei Brillen — Eingriff oder Verteilung? Welche Frage verlangt welche Antwort?
 
-### Spiel-Aufgabe mit [Werkzeug: balance-board]
+### Spiel-Aufgabe mit [Werkzeug: formula]
 
-Oeffne [Werkzeug: balance-board]. Lege IF4-Brille mit Markt und Tarif gegen IF6-Brille mit Verteilung und Teilhabe. Gewichte Tarifautonomie gegen Verteilung je 1 bis 5. Ziehe den Mindestlohn-Regler nach oben: Links zeigt sich Eingriff in freie Lohnbildung, rechts zeigt sich Entlastung am unteren Rand. Waehle die Brille nach Aufgabenziel.
+Oeffne [Werkzeug: formula]. Lege IF4-Brille mit Markt und Tarif gegen IF6-Brille mit Verteilung und Teilhabe. Gewichte Tarifautonomie gegen Verteilung je 1 bis 5. Ziehe den Mindestlohn-Regler nach oben: Links zeigt sich Eingriff in freie Lohnbildung, rechts zeigt sich Entlastung am unteren Rand. Waehle die Brille nach Aufgabenziel.
 
 ### Aha-Moment & Gesetz
 
@@ -84,15 +91,17 @@ Das magische Viereck der Wirtschaftspolitik heisst nicht magisch, weil es leicht
 
 Bezug zum Konzept: `Das Beispiel zeigt, wie aus einem Zielkonflikt eine pruefbare Brillenwahl mit Beleg und Urteil wird.`
 
-## Schritt 4 — ausprobieren: Interaktive Praxis & Satz-Labor
+## Schritt 4 — ausprobieren: Sandkasten-Einsatz [formula]: Rette die Stadt mit Zahlen
 
 BEISPIEL (geleitete Aufgabe mit Werkzeug):
 
-[Werkzeug: lego]
+[Werkzeug: formula]
+
+TARGET: Hebt die Klausurformel aufs Brett — Bedingung: Dreischritt 30-40-30 eingehalten, drei Fachbegriffe korrekt gesetzt, Urteil mit Massstab und Abwaegung geschlossen.
 
 Ziehe im Tool Satzbausteine aus These und Beleg und Urteil in die richtige Reihenfolge und pruefe per Klick, ob Operator und Fachbegriff und Kriterium vollstaendig sind; verbessere die Reihenfolge, bis jeder Baustein am richtigen Platz liegt.
 
-AUFGABE Waage-Raetsel (AFB II): Lege die Mindestlohn-Forderung auf [Werkzeug: lego]. Stelle erst den Markt-Blick mit Eingriff in Tarifautonomie ein, stelle danach den Verteilungs-Blick mit Entlastung unten ein und entscheide per Operator, welche Brille IF4 oder IF6 verlangt.
+AUFGABE Waage-Raetsel (AFB II): Lege die Mindestlohn-Forderung auf [Werkzeug: formula]. Stelle erst den Markt-Blick mit Eingriff in Tarifautonomie ein, stelle danach den Verteilungs-Blick mit Entlastung unten ein und entscheide per Operator, welche Brille IF4 oder IF6 verlangt.
 
 HILFE:
 1. Schritt 1: Lies Operator und Ziel. 2. Schritt 2: Waehle Markt-Blick oder Verteilungs-Blick. 3. Schritt 3: Deute am Aufgabenbezug und formuliere den Klausur-Satz.
@@ -101,7 +110,7 @@ MUSTERLOESUNG: In IF4 ist Lohn Eingriff in Tarifautonomie mit Beschaeftigungsris
 
 Klausur-Satz: `Dieselbe Forderung nach einem hoeheren Mindestlohn verlangt zwei Fachbrillen: In IF4 ist sie ein Eingriff in die Tarifautonomie, in IF6 eine Verteilungsfrage.`
 
-## Schritt 5 — ausprobieren: Wegvergleich & Abgrenzung
+## Schritt 5 — ausprobieren: Duell der Wege: Weg A gegen Weg B
 
 VERGLEICH (Wahl des Weges, A gegen B):
 
@@ -121,7 +130,7 @@ ANTWORT: Aufgabe A folgt Weg A, weil Kausalableitung mit Modellen und Material g
 
 Klausur-Satz: `Die Fokussierung des Inhaltsfelds 4 fragt nach dem Staatshaushalt und seinen Instrumenten, die des Inhaltsfelds 6 nach den Modellen der Ungleichheit und dem sozialstaatlichen Ausgleich.`
 
-## Schritt 6 — check: Selbsttest zu Abitur-Fokus
+## Schritt 6 — check: Selbsttest zu Abitur-Fokus IF4 und IF6
 
 CHECK (drei Fragen mit Antworten):
 
@@ -141,14 +150,14 @@ Klausur-Satz: `Die Vorgaben geben Stabilitaet: Wer IF4 ueber Instrumente und IF6
 2. Fehlkonzept: Analyse heisse schon Urteilen, wer Ursachen nenne, habe schon bewertet.
    Korrektur-Satz: `Analyse leitet Ursachen theoriegeleitet her, Urteil waegt erst danach Wirkung gegen Legitimitaet mit Massstab ab.`
 
-## Schritt 7 — szenario: Tutorium & Modellwahl-Debatte
+## Schritt 7 — szenario: Klausurtransfer: Anhoerung und Parlamentsrede zu Abitur-Fokus IF4 und IF6
 
 ROLLE: Du bist Tutorin bzw. Tutor in der Oberstufe und leitest eine Wiederholungseinheit zu den Abitur-Fokussierungen.
 SITUATION: Eine Lerngruppe soll in 15 Minuten die drei Modelle der Ungleichheit (Schichten, Lagen, Milieus) jeweils mit Definition, einem Beispiel und einer Grenze aufschreiben und anschliessend begruenden, welches Modell sich fuer die Analyse einer Einkommensstatistik am besten eignet. Fuehre die Uebung durch und beurteile am Ende, welches Modell die beste Passung hat.
 AUFGABE (AFB III): Verfasse eine zusammenhaengende Darstellung von etwa 150 Woertern mit Kriterium, Anwendung und Urteil.
 RUBRIC (30 XP): Vollstaendige Definition der drei Modelle Schichten, Lagen und Milieus (9 XP) | Je ein treffendes Beispiel pro Modell (9 XP) | Benennung je einer Grenze pro Modell (6 XP) | Kriteriengeleitetes Urteil zur Modellwahl fuer die Einkommensstatistik (6 XP).
 
-## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
+## Schritt 8 — reflexion: Takeaway & Reflexion: Was der Krisenstab lernt
 
 TAKEAWAY (Kernbotschaft in einem Kasten):
 

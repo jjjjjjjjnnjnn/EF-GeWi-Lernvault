@@ -13,9 +13,16 @@ version: Lesson-v3
 
 # Lernreise: Betrieb und Mitbestimmung (L1, Ziel Klausur)
 
-<!-- Lesson v3 9步制架构：Schritt 1至8固定结构；Fehlvorstellung 夹在 Schritt 6 与 7 之间（Parser 自动跳过，不占步数）；支持内嵌 [Werkzeug: <id>] 交互教具；Gating: check/szenario 未过 = Weiter 置灰；XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
+> Kampagne *Virtuelle Stadt-Tycoon — Von der Apfelmarkt-Fehde zum modernen Sozialstaat*: Akt IV-V — Tarifarena und Demokratiewerkstatt — Episode 04, Cast: Marktaufseherin Greta Wolf. Werkzeug dieser Episode: [balance-board].
 
-## Schritt 1 — entdecken
+<!-- Lesson v3 9步制架构：Schritt 1至8固定结构；Fehlvorstellung 夹在 Schritt 6 与 7 之间（Parser 自动跳过，不占步数）；支持内嵌 [Werkzeug: balance-board] 交互教具；Gating: check/szenario 未过 = Weiter 置灰；XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
+
+## Schritt 1 — entdecken: Alarm in Tycoon City: Warteschlange vor Bude 7 bei Regen
+
+
+> EPISODE 04｜Akt IV-V — Tarifarena und Demokratiewerkstatt｜召集人 Marktaufseherin Greta Wolf：Warteschlange vor Bude 7 bei Regen。
+
+HOOK 市长危机（先读剧情，再进 ZIELE）：【本集战役 EP04｜Akt IV-V — Tarifarena und Demokratiewerkstatt｜虚拟城邦 Tycoon City 告急】市长办公室深夜灯火通明，Marktaufseherin Greta Wolf 冲进来报告：Warteschlange vor Bude 7 bei Regen，而明天市议会就要投票。集市在喊、长队在排、国库在抖：苹果集市价格战一路烧到租金黑市，再烧到基尼天平与劳资谈判桌，本集正是“Betrieb und Mitbestimmung”的现实引爆点。你的身份是市长直属经济改革规划委员：把街头危机翻译成考点，用沙盘 [balance-board] 拿出可验证的数值方案，再交出一份 Klausur 满分答卷稳住议会。通关线索：TARGET: Bringt auf dem Verhandlungsbrett beide Waagschalen in die Balance — Bedingung: Zustimmung beider Baenke, Loesung mit Kompromisslinie, Ergebnisprotokoll mit zwei Begruendungen je Seite. 上一集的结尾就是这一集的悬念——黑市账本、税改天平、劳资天平、选票天平，四座天平有一座倒了，城邦就停摆。电台正在直播，反对派等着挑错：先读 ZIELE，再啃术语，把传导机制画成你的作战地图。DE-Briefing: Episode 04 — Marktaufseherin Greta Wolf meldet Warteschlange vor Bude 7 bei Regen; der Stadtrat entscheidet morgen. Rette Tycoon City mit Analyse, Sandkasten und Klausur-Antwort zum Thema Betrieb und Mitbestimmung.
 
 ZIELE (3条，本节15分钟学完即可做到——先读中文，再记德语)：
 
@@ -25,7 +32,7 @@ ZIELE (3条，本节15分钟学完即可做到——先读中文，再记德语)
 
 Klausur-Satz: `Der Betriebsrat vertritt die Belegschaft nach dem Betriebsverfassungsgesetz (Information, Beratung, Mitbestimmung), darf aber nicht streiken.`
 
-## Schritt 2 — entdecken
+## Schritt 2 — entdecken: Werkzeugkoffer von Marktaufseherin Greta Wolf: 5 Begriffe scharf stellen
 
 PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
 
@@ -39,7 +46,7 @@ PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→�
 
 Klausur-Satz: `Während der Shareholder-Ansatz die Rendite der Anteilseigner maximiert, berücksichtigt der Stakeholder-Ansatz alle Betroffenen des Unternehmenshandelns.`
 
-## Schritt 3 — entdecken
+## Schritt 3 — entdecken: Uhrwerk des Marktes: Kette von Ursache zu Wirkung
 
 ENTDECKEN（1概念 + 1文字图解）：
 
@@ -86,11 +93,13 @@ Shareholder 与 Stakeholder 只差一个字母，意思却对立。
 
 **Bezug zum Konzept**: Die Montan-Mitbestimmung zeigt, dass Mitbestimmung historisch dort entstand, wo wirtschaftliche Macht und organisierte Arbeit aufeinandertrafen.
 
-## Schritt 4 — ausprobieren
+## Schritt 4 — ausprobieren: Sandkasten-Einsatz [balance-board]: Rette die Stadt mit Zahlen
 
 BEISPIEL（正确例题示范，含教具操作与解答）：
 
-[Werkzeug: balance]
+[Werkzeug: balance-board]
+
+TARGET: Bringt auf dem Verhandlungsbrett beide Waagschalen in die Balance — Bedingung: Zustimmung beider Baenke, Loesung mit Kompromisslinie, Ergebnisprotokoll mit zwei Begruendungen je Seite.
 
 AUFGABE (analysieren, AFB II, 10 BE)：Material 1 (Sachtext) beschreibt, dass eine Gewerkschaft nach gescheiterten Tarifverhandlungen im Personenverkehr zu einem Warnstreik aufruft und der Verkehr stark beeinträchtigt wird. Analysieren Sie den Vorgang mit den Begriffen Tarifautonomie und Arbeitskampf und ordnen Sie die Rolle des Betriebsrats ab.
 
@@ -104,7 +113,7 @@ MUSTERLÖSUNG: Nach dem Prinzip der Tarifautonomie handeln Gewerkschaften und Ar
 
 Klausur-Satz: `Der Bahn-Streik zeigt die Tarifautonomie in Aktion: Arbeitskampf als letztes Mittel nach gescheiterten Verhandlungen.`
 
-## Schritt 5 — ausprobieren
+## Schritt 5 — ausprobieren: Duell der Wege: Weg A gegen Weg B
 
 VERGLEICH辨别实验（双向辨析：模式眼 vs. 程序眼）：
 
@@ -120,7 +129,7 @@ ANTWORT: A erfordert Verfahren (i): Das Handeln folgt dem Stakeholder-Ansatz, we
 
 Klausur-Satz: `Der Betriebsrat besitzt Mitbestimmungsrechte, aber kein Streikrecht, weil er der Friedenspflicht unterliegt.`
 
-## Schritt 6 — check
+## Schritt 6 — check: Selbsttest zu Betrieb und Mitbestimmung
 
 CHECK检索默写（自测 3 题，与答案配对）：
 
@@ -142,7 +151,7 @@ Klausur-Satz: `Die paritätische Mitbestimmung verhindert Konflikteskalation, ve
    中文纠偏：两者只差一个字母，含义却对立。Shareholder 是出资股东，追求回报最大化；Stakeholder 是所有受企业影响的群体，包括职工、客户、供应商与环境。概念用反，整段论证方向就反了。
    Korrektur-Satz: `Shareholder sind die Anteilseigner, Stakeholder dagegen alle vom Unternehmenshandeln Betroffenen.`
 
-## Schritt 7 — szenario
+## Schritt 7 — szenario: Klausurtransfer: Anhoerung und Parlamentsrede zu Betrieb und Mitbestimmung
 
 ROLLE: Du bist Mitglied des Betriebsrats und verhandelst mit der Geschäftsleitung über die Einführung von Kurzarbeit.
 
@@ -150,7 +159,7 @@ SITUATION: Wegen Auftragsrückgangs will die Geschäftsleitung Personal entlasse
 
 RUBRIC (30 XP): Benennung der Instrumente (Kurzarbeit vs. Entlassung) und der Rolle des Betriebsrats (5 XP) | Analyse der Mitbestimmungsrechte und der Interessen der Belegschaft (10 XP) | Abwägung der Folgen für Beschäftigte und Unternehmen (10 XP) | Kriteriengeleitetes Urteil (z. B. Kriterium soziale Sicherheit) (5 XP).
 
-## Schritt 8 — reflexion: Takeaway & Reflexion
+## Schritt 8 — reflexion: Takeaway & Reflexion: Was der Krisenstab lernt
 
 TAKEAWAY 1盒（核心总结）：
 

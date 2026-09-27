@@ -13,9 +13,16 @@ version: Lesson-v3
 
 # Lernreise: Wehrhafte Demokratie und Extremismus (L1, Ziel Klausur)
 
-<!-- Lesson-v3: 8 Schritte plus Anekdote und Fehlvorstellung; Fehlvorstellung zwischen Schritt 6 und 7 (Parser-Skip); interaktives [Werkzeug: <id>]; Gating: check/szenario nicht bestanden = Weiter gesperrt; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
+> Kampagne *Virtuelle Stadt-Tycoon — Von der Apfelmarkt-Fehde zum modernen Sozialstaat*: Akt IV-V — Tarifarena und Demokratiewerkstatt — Episode 39, Cast: Ordnungsdezernent Paul Gerhardt. Werkzeug dieser Episode: [balance-board].
 
-## Schritt 1 — entdecken: Ziele & Phaenomen-Einstieg
+<!-- Lesson-v3: 8 Schritte plus Anekdote und Fehlvorstellung; Fehlvorstellung zwischen Schritt 6 und 7 (Parser-Skip); interaktives [Werkzeug: balance-board]; Gating: check/szenario nicht bestanden = Weiter gesperrt; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
+
+## Schritt 1 — entdecken: Alarm in Tycoon City: Ordnungsamt-Razzia gegen Gluehwein-Schwarzmarkt
+
+
+> EPISODE 39 — Akt IV-V — Tarifarena und Demokratiewerkstatt — Auftrag von Ordnungsdezernent Paul Gerhardt: Ordnungsamt-Razzia gegen Gluehwein-Schwarzmarkt.
+
+HOOK (Stadtrats-Krise, lies zuerst): EPISODE 39 — Akt IV-V — Tarifarena und Demokratiewerkstatt — Stadt Tycoon City ruft dich in den Krisenstab. Ordnungsdezernent Paul Gerhardt stuermt mit einer Eilmeldung ins Buero: Ordnungsamt-Razzia gegen Gluehwein-Schwarzmarkt — und morgen entscheidet der Stadtrat. Der Markt schreit, die Warteschlange waechst, die Kasse zittert: Ohne deine Analyse kippt die Stadt vom Apfelparadies in den Schwarzmarkt. Dein Auftrag in dieser Episode: Uebersetze die Strassenszene in das heutige Thema Wehrhafte Demokratie und Extremismus. Sammle Belege, stelle den Sandkasten [balance-board] scharf und liefere dem Rat eine Klausur-Antwort, die einer Pruefungskommission standhaelt. Erste Spur: TARGET: Bringt auf dem Verhandlungsbrett beide Waagschalen in die Balance — Bedingung: Zustimmung beider Baenke, Loesung mit Kompromisslinie, Ergebnisprotokoll mit zwei Begruendungen je Seite. Wer den Mechanismus versteht, rettet den Haushalt — und vielleicht die Wahl. Der Countdown laeuft, das Radio berichtet live, die Opposition wartet nur auf deinen Fehler: Oeffne die Ziele, schnapp dir die Begriffe und beweise, dass Tycoon City regierbar bleibt.
 
 ZIELE (drei messbare Ziele dieser Lektion):
 
@@ -27,7 +34,7 @@ ZIELE (drei messbare Ziele dieser Lektion):
 
 Eine Partei mit fuenf Prozent verbreitet voelkische Parolen und stellt Wahlen und Minderheitenrechte infrage. Die einen rufen: verbieten. Die anderen warnen: Wer verbietet, macht sie zum Opfer und trifft die Opposition. Darf die Demokratie ihre Feinde ausschliessen, um frei zu bleiben? In dieser Lektion lernst du zwei Wege der Antwort: Weg A vertraut dem Toleranzprinzip mit Offenheit und Streit, Weg B dem wehrhaften Schutz mit Entzug missbrauchter Freiheitsrechte.
 
-## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
+## Schritt 2 — entdecken: Werkzeugkoffer von Ordnungsdezernent Paul Gerhardt: 5 Begriffe scharf stellen
 
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
@@ -49,7 +56,7 @@ Die Begriffe greifen ineinander: Die Grundordnung definiert das Schutzgut, Radik
 
 Klausur-Satz: `Ein Parteiverbot nach Art. 21 II GG setzt voraus, dass eine Partei die fdGO beeinträchtigt oder beseitigt und dafür eine reale Durchsetzungschance besteht.`
 
-## Schritt 3 — entdecken: Kernkonzept & Wirkungsmodell
+## Schritt 3 — entdecken: Uhrwerk des Marktes: Kette von Ursache zu Wirkung
 
 TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
@@ -82,11 +89,13 @@ Der Begriff „wehrhafte Demokratie" steht gar nicht im Grundgesetz — er besch
 
 Bezug zum Konzept: `Das Beispiel zeigt, wie Weimarer Wehrlosigkeit zur gestaffelten Abwehr mit Bildung, Beobachtung und Verbot führte.`
 
-## Schritt 4 — ausprobieren: Interaktive Praxis & Urteils-Waage
+## Schritt 4 — ausprobieren: Sandkasten-Einsatz [balance-board]: Rette die Stadt mit Zahlen
 
 BEISPIEL (geleitete Aufgabe mit Werkzeug):
 
 [Werkzeug: balance-board]
+
+TARGET: Bringt auf dem Verhandlungsbrett beide Waagschalen in die Balance — Bedingung: Zustimmung beider Baenke, Loesung mit Kompromisslinie, Ergebnisprotokoll mit zwei Begruendungen je Seite.
 
 Lege im Tool Pro- und Contra-Argumente auf die Waage und gewichte jedes Argument von 1 bis 5; veraendere die Gewichte Schritt fuer Schritt und beobachte, wann das Urteil zwischen Aushalten und Eingreifen oder zwischen Beobachten und Verbieten umschlaegt.
 
@@ -101,7 +110,7 @@ MUSTERLOESUNG: Beobachtung ist praeventiv ohne Verbotsfolge; ein Verbot verhaeng
 
 Klausur-Satz: `Die Beobachtung durch den Verfassungsschutz ist präventiv und trifft keine Verbotsentscheidung; ein Verbot verhängt allein das Bundesverfassungsgericht nach Art. 21 II GG.`
 
-## Schritt 5 — ausprobieren: Wegvergleich & Abgrenzung
+## Schritt 5 — ausprobieren: Duell der Wege: Weg A gegen Weg B
 
 VERGLEICH (Wahl des Weges, Weg A gegen Weg B):
 
@@ -121,7 +130,7 @@ ANTWORT: Aufgabe A wird ueber Weg A geloest, weil offener Streit und Bildung tra
 
 Klausur-Satz: `Nur das Bundesverfassungsgericht darf ein Parteiverbot verhängen, und es verlangt zusätzlich zur Verfassungswidrigkeit eine reale Durchsetzungschance.`
 
-## Schritt 6 — check: Selbsttest zu Wehrhafter Demokratie
+## Schritt 6 — check: Selbsttest zu Wehrhafte Demokratie und Extremismus
 
 CHECK (drei Fragen mit Antworten):
 
@@ -141,14 +150,14 @@ Klausur-Satz: `Verfassungswidrigkeit allein genügt nicht; erst die fehlende Pot
 2. Fehlkonzept: Der Verfassungsschutz verhaenge Verbote gegen Parteien und Verbaende.
    Korrektur-Satz: `Der Verfassungsschutz beobachtet und berichtet nur präventiv; verbieten darf allein das Bundesverfassungsgericht nach Art. 21 II GG.`
 
-## Schritt 7 — szenario: Innenausschuss & Verbots-Debatte
+## Schritt 7 — szenario: Klausurtransfer: Anhoerung und Parlamentsrede zu Wehrhafte Demokratie und Extremismus
 
 ROLLE: Du bist Sachverstaendige oder Sachverstaendiger in einer Anhoerung des Innenausschusses zur Frage, ob gegen eine demokratiefeindliche Partei ein Verbotsverfahren eingeleitet werden soll.
 SITUATION: Die Partei erreicht in Umfragen fünf Prozent, verbreitet völkisch-nationalistische Positionen und stellt Wahlen sowie Minderheitenrechte infrage. Ein Teil der Öffentlichkeit fordert ein sofortiges Verbot, ein anderer warnt vor einem Wahlkampfhelfer-Effekt und vor einem Eingriff in die Opposition. Beurteilen Sie in einer zusammenhängenden Stellungnahme (ca. 150 Wörter), ob ein Verbotsverfahren eingeleitet werden sollte, und berücksichtigen Sie dabei die Verhältnismäßigkeit.
 AUFGABE (AFB III): Verfasse eine zusammenhaengende Darstellung von etwa 150 Woertern mit Kriterium, Anwendung und Urteil.
 RUBRIC (30 XP): Benennung der Rechtslage mit Gericht und doppelter Huerde (6 XP) | Analyse der Gefahrenlage aus Programm und Agitation (8 XP) | Abwaegung mit Verhaeltnismaessigkeit und Oppositionsschutz (10 XP) | Kriteriengeleitetes Urteil mit klarer Empfehlung (6 XP).
 
-## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
+## Schritt 8 — reflexion: Takeaway & Reflexion: Was der Krisenstab lernt
 
 TAKEAWAY (Kernbotschaft in einem Kasten):
 

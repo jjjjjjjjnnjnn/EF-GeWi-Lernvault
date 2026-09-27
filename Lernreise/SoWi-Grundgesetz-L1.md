@@ -13,9 +13,16 @@ version: Lesson-v3
 
 # Lernreise: Grundgesetz und Verfassungsprinzipien (L1, Ziel Klausur)
 
-<!-- Lesson v3 9步制架构：Schritt 1至8固定结构；Fehlvorstellung 夹在 Schritt 6 与 7 之间（Parser 自动跳过，不占步数）；支持内嵌 [Werkzeug: <id>] 交互教具；Gating: check/szenario 未过 = Weiter 置灰；XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
+> Kampagne *Virtuelle Stadt-Tycoon — Von der Apfelmarkt-Fehde zum modernen Sozialstaat*: Akt IV-V — Tarifarena und Demokratiewerkstatt — Episode 10, Cast: Gewerkschaftssekretaer Tomasz Nowak. Werkzeug dieser Episode: [balance-board].
 
-## Schritt 1 — entdecken
+<!-- Lesson v3 9步制架构：Schritt 1至8固定结构；Fehlvorstellung 夹在 Schritt 6 与 7 之间（Parser 自动跳过，不占步数）；支持内嵌 [Werkzeug: balance-board] 交互教具；Gating: check/szenario 未过 = Weiter 置灰；XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
+
+## Schritt 1 — entdecken: Alarm in Tycoon City: Leiharbeits-Skandal in der Apfelpackhalle
+
+
+> EPISODE 10｜Akt IV-V — Tarifarena und Demokratiewerkstatt｜召集人 Gewerkschaftssekretaer Tomasz Nowak：Leiharbeits-Skandal in der Apfelpackhalle。
+
+HOOK 市长危机（先读剧情，再进 ZIELE）：【本集战役 EP10｜Akt IV-V — Tarifarena und Demokratiewerkstatt｜虚拟城邦 Tycoon City 告急】市长办公室深夜灯火通明，Gewerkschaftssekretaer Tomasz Nowak 冲进来报告：Leiharbeits-Skandal in der Apfelpackhalle，而明天市议会就要投票。集市在喊、长队在排、国库在抖：苹果集市价格战一路烧到租金黑市，再烧到基尼天平与劳资谈判桌，本集正是“Grundgesetz und Verfassungsprinzipien”的现实引爆点。你的身份是市长直属经济改革规划委员：把街头危机翻译成考点，用沙盘 [balance-board] 拿出可验证的数值方案，再交出一份 Klausur 满分答卷稳住议会。通关线索：TARGET: Bringt auf dem Verhandlungsbrett beide Waagschalen in die Balance — Bedingung: Zustimmung beider Baenke, Loesung mit Kompromisslinie, Ergebnisprotokoll mit zwei Begruendungen je Seite. 上一集的结尾就是这一集的悬念——黑市账本、税改天平、劳资天平、选票天平，四座天平有一座倒了，城邦就停摆。电台正在直播，反对派等着挑错：先读 ZIELE，再啃术语，把传导机制画成你的作战地图。DE-Briefing: Episode 10 — Gewerkschaftssekretaer Tomasz Nowak meldet Leiharbeits-Skandal in der Apfelpackhalle; der Stadtrat entscheidet morgen. Rette Tycoon City mit Analyse, Sandkasten und Klausur-Antwort zum Thema Grundgesetz und Verfassungsprinzipien.
 
 ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
@@ -25,7 +32,7 @@ ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
 Klausur-Satz: `Art. 1 GG erklärt die Menschenwürde für unantastbar; über Art. 1 Abs. 3 binden die Grundrechte alle Staatsgewalt unmittelbar.`
 
-## Schritt 2 — entdecken
+## Schritt 2 — entdecken: Werkzeugkoffer von Gewerkschaftssekretaer Tomasz Nowak: 5 Begriffe scharf stellen
 
 PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
 
@@ -39,7 +46,7 @@ PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→�
 
 Klausur-Satz: `Art. 20 GG nennt vier Verfassungsprinzipien: Demokratie, Rechtsstaat, Sozialstaat und Bundesstaat.`
 
-## Schritt 3 — entdecken
+## Schritt 3 — entdecken: Uhrwerk des Marktes: Kette von Ursache zu Wirkung
 
 ENTDECKEN（1概念 + 1文字图解）：
 
@@ -85,11 +92,13 @@ Klausur-Satz: `Bei einer Grundrechtskollision verlangt die praktische Konkordanz
 
 **Bezug zum Konzept**: Art. 1 GG steht nicht zufällig am Anfang: Die Menschenwürde ist die Antwort des Grundgesetzes auf die Geschichte.
 
-## Schritt 4 — ausprobieren
+## Schritt 4 — ausprobieren: Sandkasten-Einsatz [balance-board]: Rette die Stadt mit Zahlen
 
 BEISPIEL（正确例题示范，含教具操作与解答）：
 
-[Werkzeug: formula]
+[Werkzeug: balance-board]
+
+TARGET: Bringt auf dem Verhandlungsbrett beide Waagschalen in die Balance — Bedingung: Zustimmung beider Baenke, Loesung mit Kompromisslinie, Ergebnisprotokoll mit zwei Begruendungen je Seite.
 
 AUFGABE (erläutern, AFB II, 10 BE)：Material 1 (Sachtext) schildert den Fall einer Schülerin, die aus religiösen Gründen nicht am verpflichtenden Schwimmunterricht teilnehmen will, während die Schule auf der Erfüllung des Bildungsauftrags besteht. Erläutern Sie in Gutachtenstil, welche Grundrechte kollidieren und wie nach dem Grundgesetz zu verfahren ist.
 
@@ -99,11 +108,11 @@ HILFE:
 3. Schritt 3 (Subsumtion): Prüfe, ob beide möglichst verwirklicht werden können, ohne den Wesensgehalt zu verletzen.
 4. Schritt 4 (Ergebnis): Formuliere ein Ergebnis mit Abwägung.
 
-MUSTERLÖSUNG: Obersatz: Kollidieren zwei Grundrechte bzw. Grundrecht und Staatsauftrag, so sind beide nach dem Grundsatz der praktischen Konkordanz möglichst schonend zum Ausgleich zu bringen. Untersatz: Hier stehen sich die Religionsfreiheit der Schülerin (Art. 4 GG) und der staatliche Bildungs- und Erziehungsauftrag gegenüber, der einen gemeinsamen Schwimmunterricht vorsieht. Subsumtion: Ein vollständiger Ausschluss der Schülerin würde die Religionsfreiheit einseitig verdrängen, eine vollständige Unterrichtspflicht würde sie umgekehrt verletzen; eine Lösung, die den Wesensgehalt keines Rechts antastet, kann in einer gleichwertigen Ersatzleistung oder einer differenzierten Befreiung liegen. Ergebnis: Der Konflikt ist nicht durch „entweder-oder", sondern durch praktische Konkordanz zu lösen, die beiden Positionen Rechnung trägt.
+MUSTERLÖSUNG: Obersatz: Kollidieren zwei Grundrechte bzw. Grundrecht und Staatsauftrag, so sind beide nach dem Grundsatz der praktischen Konkordanz möglichst schonend zum Ausgleich zu bringen. Untersatz: Hier stehen sich die Religionsfreiheit der Schülerin (Art. 4 GG) und der staatliche Bildungs- und Erziehungsauftrag gegenüber, der einen gemeinsamen Schwimmunterricht vorsieht. Subsumtion: Ein vollständiger Ausschluss der Schülerin würde die Religionsfreiheit einseitig verdrängen, eine vollständige Unterrichtspflicht würde sie umgekehrt verletzen; eine Lösung, die den Wesensgehalt keines Rechts antastet, kann in einer gleichwertigen Ersatzleistung oder einer differenzierten Befreiung liegen. Ergebnis: Der Konflikt ist nicht durch „entweder-oder", sondern durch praktische Konkordanz zu lösen, die beiden Positionen Bilanz trägt.
 
 Klausur-Satz: `Religionsfreiheit und staatlicher Bildungsauftrag sind über die praktische Konkordanz auszugleichen, ohne dass ein Wesensgehalt angetastet wird.`
 
-## Schritt 5 — ausprobieren
+## Schritt 5 — ausprobieren: Duell der Wege: Weg A gegen Weg B
 
 VERGLEICH辨别实验（双向辨析：权利眼 vs. 原则眼）：
 
@@ -119,7 +128,7 @@ ANTWORT: A erfordert Verfahren (i): Betroffen ist der Gleichheitssatz (Art. 3 Ab
 
 Klausur-Satz: `Grundrechte wirken über die Drittwirkung mittelbar auch zwischen Bürgern, während Art. 79 Abs. 3 den Kern der Verfassung gegen jede Änderung schützt.`
 
-## Schritt 6 — check
+## Schritt 6 — check: Selbsttest zu Grundgesetz und Verfassungsprinzipien
 
 CHECK检索默写（自测 3 题，与答案配对）：
 
@@ -141,7 +150,7 @@ Klausur-Satz: `Die Ewigkeitsklausel entzieht Art. 1 und Art. 20 GG jeder Verfass
    中文纠偏：基本权利的首要功能是防御国家（垂直效力）。公民之间只有 Drittwirkung，而且是 mittelbar——法院通过解释一般法律条款间接让基本权利生效，而不是公民直接以宪法互相控告。
    Korrektur-Satz: `Grundrechte wirken zwischen Privaten nur mittelbar über die Drittwirkung, nicht unmittelbar.`
 
-## Schritt 7 — szenario
+## Schritt 7 — szenario: Klausurtransfer: Anhoerung und Parlamentsrede zu Grundgesetz und Verfassungsprinzipien
 
 ROLLE: Du bist Anwältin bzw. Anwalt und formulierst eine kurze Verfassungsbeschwerde.
 
@@ -149,7 +158,7 @@ SITUATION: Eine Gemeinde will einer Gruppe ein öffentliches Platzverbot erteile
 
 RUBRIC (30 XP): Benennung der kollidierenden Grundrechte bzw. Rechtsgüter (5 XP) | Erläuterung der praktischen Konkordanz als Lösungsregel (10 XP) | Analyse der Folgen einer einseitigen Lösung (z. B. Wesensgehalt, Verhältnismäßigkeit) (10 XP) | Kriteriengeleitetes Urteil mit Abwägung (5 XP).
 
-## Schritt 8 — reflexion: Takeaway & Reflexion
+## Schritt 8 — reflexion: Takeaway & Reflexion: Was der Krisenstab lernt
 
 TAKEAWAY 1盒（核心总结）：
 

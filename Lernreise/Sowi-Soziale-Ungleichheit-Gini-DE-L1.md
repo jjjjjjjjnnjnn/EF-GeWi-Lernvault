@@ -13,9 +13,16 @@ version: Lesson-v3
 
 # Lernreise: Lorenzkurve und Gini-Koeffizient (L1, Ziel Klausur)
 
-<!-- Lesson-v3: 8 Schritte plus Anekdote und Fehlvorstellung; Fehlvorstellung zwischen Schritt 6 und 7 (Parser-Skip); interaktives [Werkzeug: <id>]; Gating: check/szenario nicht bestanden = Weiter gesperrt; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
+> Kampagne *Virtuelle Stadt-Tycoon — Von der Apfelmarkt-Fehde zum modernen Sozialstaat*: Akt III — Gini-Waage und Steuerreform — Episode 26, Cast: EU-Foerderlotsin Elena Vidal. Werkzeug dieser Episode: [gini-allocator].
 
-## Schritt 1 — entdecken: Ziele und Phaenomen-Einstieg
+<!-- Lesson-v3: 8 Schritte plus Anekdote und Fehlvorstellung; Fehlvorstellung zwischen Schritt 6 und 7 (Parser-Skip); interaktives [Werkzeug: gini-allocator]; Gating: check/szenario nicht bestanden = Weiter gesperrt; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
+
+## Schritt 1 — entdecken: Alarm in Tycoon City: EU-Foerdermittel-Poker um den Hafen
+
+
+> EPISODE 26 — Akt III — Gini-Waage und Steuerreform — Auftrag von EU-Foerderlotsin Elena Vidal: EU-Foerdermittel-Poker um den Hafen.
+
+HOOK (Stadtrats-Krise, lies zuerst): EPISODE 26 — Akt III — Gini-Waage und Steuerreform — Stadt Tycoon City ruft dich in den Krisenstab. EU-Foerderlotsin Elena Vidal stuermt mit einer Eilmeldung ins Buero: EU-Foerdermittel-Poker um den Hafen — und morgen entscheidet der Stadtrat. Der Markt schreit, die Warteschlange waechst, die Kasse zittert: Ohne deine Analyse kippt die Stadt vom Apfelparadies in den Schwarzmarkt. Dein Auftrag in dieser Episode: Uebersetze die Strassenszene in das heutige Thema Lorenzkurve und Gini-Koeffizient. Sammle Belege, stelle den Sandkasten [gini-allocator] scharf und liefere dem Rat eine Klausur-Antwort, die einer Pruefungskommission standhaelt. Erste Spur: TARGET: Justiert Steuer- und Transferregler so, dass der Gini-Indikator nach Umverteilung in den Korridor 0,28 bis 0,32 faellt, das unterste Quintil mindestens 8 Prozent des Kuchens haelt und die Armutsrisikoquote sichtbar sinkt. Wer den Mechanismus versteht, rettet den Haushalt — und vielleicht die Wahl. Der Countdown laeuft, das Radio berichtet live, die Opposition wartet nur auf deinen Fehler: Oeffne die Ziele, schnapp dir die Begriffe und beweise, dass Tycoon City regierbar bleibt.
 
 ZIELE (drei messbare Ziele dieser Lektion):
 
@@ -29,7 +36,7 @@ Stell dir vor, zwei Regionen melden denselben Wert von null Komma drei vier, doc
 
 Klausur-Satz: `Die Lorenzkurve veranschaulicht die Einkommensverteilung, und der Gini-Koeffizient fasst ihren Abstand zur Gleichverteilungsgeraden zu einer Zahl zwischen 0 und 1 zusammen.`
 
-## Schritt 2 — entdecken: Fachbegriffe und Pre-Training
+## Schritt 2 — entdecken: Werkzeugkoffer von EU-Foerderlotsin Elena Vidal: 5 Begriffe scharf stellen
 
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
@@ -51,7 +58,7 @@ Die Begriffe greifen ineinander: **Quintile** liefern das Material, **Lorenzkurv
 
 Klausur-Satz: `Der Gini-Koeffizient ergibt sich als Verhaeltnis der Flaeche zwischen Diagonale und Lorenzkurve zur Gesamtflaeche unter der Diagonalen.`
 
-## Schritt 3 — entdecken: Kernkonzept und Wirkungsmodell
+## Schritt 3 — entdecken: Uhrwerk des Marktes: Kette von Ursache zu Wirkung
 
 TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
@@ -84,11 +91,13 @@ Der Gini-Wert ist nach dem italienischen Statistiker Corrado Gini benannt, der d
 
 Bezug zum Konzept: Das Beispiel zeigt, warum Form und Wert stets gemeinsam mit Kriterium gedeutet werden muessen und ein Wert allein kein Fairness-Urteil traegt.
 
-## Schritt 4 — ausprobieren: Interaktive Praxis und Gini-Labor
+## Schritt 4 — ausprobieren: Sandkasten-Einsatz [gini-allocator]: Rette die Stadt mit Zahlen
 
 BEISPIEL (geleitete Aufgabe mit Werkzeug):
 
 [Werkzeug: gini-allocator]
+
+TARGET: Justiert Steuer- und Transferregler so, dass der Gini-Indikator nach Umverteilung in den Korridor 0,28 bis 0,32 faellt, das unterste Quintil mindestens 8 Prozent des Kuchens haelt und die Armutsrisikoquote sichtbar sinkt.
 
 Ziehe im Tool die Einkommens-Regler der Quintile und beobachte live, wie sich die Lorenzkurve hebt oder senkt und wie der Wert zwischen null und eins reagiert; vergleiche zwei Verteilungen und deute die Form der Kurve parallel zum Wert.
 
@@ -103,7 +112,7 @@ MUSTERLOESUNG: Region A zeigt tiefen Bogen mit hoeherem Wert als mittlere Unglei
 
 Klausur-Satz: `Mit einem Gini-Koeffizienten von rund 0,29 liegt die Verteilung der verfuegbaren Einkommen deutlich unter dem Wert der Markteinkommen, was die umverteilende Wirkung von Steuern und Transfers zeigt.`
 
-## Schritt 5 — ausprobieren: Weg-Vergleich und Abgrenzung
+## Schritt 5 — ausprobieren: Duell der Wege: Weg A gegen Weg B
 
 VERGLEICH: Zwei Wege nutzen dieselbe Verteilung unterschiedlich. Weg A beschreibt die Primaerverteilung mit Leistungsanreizen und Marktloehnen. Weg B korrigiert zur Sekundaerverteilung mit progressiven Steuern und Transfers. Pruefe zuerst die Aufgabe, waehle dann den passenden Weg.
 
@@ -121,7 +130,7 @@ ANTWORT: Aufgabe A folgt Weg A mit Rangfolge aus Bogenform: tiefere Kurve gehoer
 
 Klausur-Satz: `Fuer eine reine Rangfolge genuegt der Blick auf die Lorenzkurve, fuer einen begruendeten Vergleich der Verteilung ist der Gini-Koeffizient noetig.`
 
-## Schritt 6 — check: Selbsttest zu Lorenzkurve und Gini
+## Schritt 6 — check: Selbsttest zu Lorenzkurve und Gini-Koeffizient
 
 CHECK (drei Fragen mit Antworten):
 
@@ -141,14 +150,14 @@ Klausur-Satz: `Der Gini-Koeffizient verdichtet die gesamte Lorenzkurve zu einer 
 2. Fehlkonzept: Die Warnlinie null Komma vier sei ein Naturgesetz, ab dem Gesellschaften automatisch kippten.
    Korrektur-Satz: `Die Warnlinie ist eine Konvention der Berichterstattung ohne feste Schwelle; ob Umverteilung noetig ist, entscheidet das Kriterium der Chancengerechtigkeit, nicht die Zahl allein.`
 
-## Schritt 7 — szenario: Statistikamt und Regionalvergleich-Debatte
+## Schritt 7 — szenario: Klausurtransfer: Anhoerung und Parlamentsrede zu Lorenzkurve und Gini-Koeffizient
 
 ROLLE: Du bist Mitarbeiterin einer statistischen Abteilung und sollst fuer einen Ausschuss die Einkommensverteilung zweier Regionen vergleichen.
 SITUATION: Fuer Region A nennt das Material breiter gestreute Quintilsanteile, fuer Region B enger gestaffelte Anteile. Der Ausschuss moechte wissen, in welcher Region die Ungleichheit groesser ist und ob eine Umverteilungspolitik zu rechtfertigen sei. Beurteile die Lage in einer zusammenhaengenden Stellungnahme mit etwa 150 Woertern, stuetze dich auf die Lorenz- und Gini-Logik und nenne ein Kriterium.
 AUFGABE (AFB III): Verfasse eine zusammenhaengende Darstellung von etwa 150 Woertern mit Kriterium, Anwendung und Urteil.
 RUBRIC (30 XP): Aufstellen der kumulierten Anteile und der Lorenz-Idee (6 XP) | Vergleich der Boegen und Werte von A und B am Werkzeug (8 XP) | Benennung und Anwendung des Kriteriums Chancengerechtigkeit (10 XP) | Kriteriengeleitetes Urteil zur Umverteilung (6 XP)
 
-## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
+## Schritt 8 — reflexion: Takeaway & Reflexion: Was der Krisenstab lernt
 
 TAKEAWAY (Kernbotschaft in einem Kasten):
 

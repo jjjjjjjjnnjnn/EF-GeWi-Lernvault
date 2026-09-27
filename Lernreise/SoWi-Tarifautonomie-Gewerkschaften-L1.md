@@ -13,9 +13,16 @@ version: Lesson-v3
 
 # Lernreise: Tarifautonomie und Gewerkschaften (L1, Ziel Klausur)
 
-<!-- Lesson v3 architecture: Schritte 1-8 fixed; Fehlvorstellung between Schritt 6 and 7 (parser skipped); embedded [Werkzeug: <id>]; gating: check/szenario failed = Weiter greyed; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
+> Kampagne *Virtuelle Stadt-Tycoon — Von der Apfelmarkt-Fehde zum modernen Sozialstaat*: Akt IV-V — Tarifarena und Demokratiewerkstatt — Episode 36, Cast: Brauereichef Gottfried Lamm. Werkzeug dieser Episode: [balance-board].
 
-## Schritt 1 — entdecken
+<!-- Lesson v3 architecture: Schritte 1-8 fixed; Fehlvorstellung between Schritt 6 and 7 (parser skipped); embedded [Werkzeug: balance-board]; gating: check/szenario failed = Weiter greyed; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
+
+## Schritt 1 — entdecken: Alarm in Tycoon City: Brauerei-Kartellverdacht im Altstadtbrunnen
+
+
+> EPISODE 36｜Akt IV-V — Tarifarena und Demokratiewerkstatt｜召集人 Brauereichef Gottfried Lamm：Brauerei-Kartellverdacht im Altstadtbrunnen。
+
+HOOK 市长危机（先读剧情，再进 ZIELE）：【本集战役 EP36｜Akt IV-V — Tarifarena und Demokratiewerkstatt｜虚拟城邦 Tycoon City 告急】市长办公室深夜灯火通明，Brauereichef Gottfried Lamm 冲进来报告：Brauerei-Kartellverdacht im Altstadtbrunnen，而明天市议会就要投票。集市在喊、长队在排、国库在抖：苹果集市价格战一路烧到租金黑市，再烧到基尼天平与劳资谈判桌，本集正是“Tarifautonomie und Gewerkschaften”的现实引爆点。你的身份是市长直属经济改革规划委员：把街头危机翻译成考点，用沙盘 [balance-board] 拿出可验证的数值方案，再交出一份 Klausur 满分答卷稳住议会。通关线索：TARGET: Bringt auf dem Verhandlungsbrett beide Waagschalen in die Balance — Bedingung: Zustimmung beider Baenke, Loesung mit Kompromisslinie, Ergebnisprotokoll mit zwei Begruendungen je Seite. 上一集的结尾就是这一集的悬念——黑市账本、税改天平、劳资天平、选票天平，四座天平有一座倒了，城邦就停摆。电台正在直播，反对派等着挑错：先读 ZIELE，再啃术语，把传导机制画成你的作战地图。DE-Briefing: Episode 36 — Brauereichef Gottfried Lamm meldet Brauerei-Kartellverdacht im Altstadtbrunnen; der Stadtrat entscheidet morgen. Rette Tycoon City mit Analyse, Sandkasten und Klausur-Antwort zum Thema Tarifautonomie und Gewerkschaften.
 
 ZIELE (3 Ziele, nach 15 Minuten erreichbar):
 
@@ -29,7 +36,7 @@ VORGAENGER-VERWEIS: Diese Lektion setzt `SoWi-Betrieb-Mitbestimmung-L1.md` vorau
 
 Klausur-Satz: `Die Tarifautonomie entzieht Lohnfindung dem Staat und uebertraegt sie den Koalitionen.`
 
-## Schritt 2 — entdecken
+## Schritt 2 — entdecken: Werkzeugkoffer von Brauereichef Gottfried Lamm: 5 Begriffe scharf stellen
 
 PRETRAINING (Kernbegriffe):
 
@@ -41,7 +48,7 @@ PRETRAINING (Kernbegriffe):
 
 Klausur-Satz: `Friedenspflicht und Schlichtung zivilisieren den Konflikt, bevor Streik oder Aussperrung greifen.`
 
-## Schritt 3 — entdecken
+## Schritt 3 — entdecken: Uhrwerk des Marktes: Kette von Ursache zu Wirkung
 
 ENTDECKEN (ein Konzept plus Diagramm):
 
@@ -63,11 +70,13 @@ Klausur-Satz: `Der Organisationsgrad entscheidet ueber die Durchsetzungsfaehigke
 
 **Bezug zum Konzept**: `Warnstreiks zeigen Macht, ohne den Konflikt voll zu eskalieren.`
 
-## Schritt 4 — ausprobieren
+## Schritt 4 — ausprobieren: Sandkasten-Einsatz [balance-board]: Rette die Stadt mit Zahlen
 
 BEISPIEL (vollstaendige Musterloesung):
 
-[Werkzeug: markt]
+[Werkzeug: balance-board]
+
+TARGET: Bringt auf dem Verhandlungsbrett beide Waagschalen in die Balance — Bedingung: Zustimmung beider Baenke, Loesung mit Kompromisslinie, Ergebnisprotokoll mit zwei Begruendungen je Seite.
 
 AUFGABE (analysieren, AFB II): Analysieren Sie, warum ein sinkender Organisationsgrad die Tarifbindung schwaecht.
 
@@ -80,7 +89,7 @@ MUSTERLOESUNG: Tarifverträge gelten zunaechst nur fuer Mitglieder beider Seiten
 
 Klausur-Satz: `Sinkende Mitgliedschaft entzieht der Tarifautonomie Reichweite und Drohpotenzial zugleich.`
 
-## Schritt 5 — ausprobieren
+## Schritt 5 — ausprobieren: Duell der Wege: Weg A gegen Weg B
 
 VERGLEICH (erst Verfahren waehlen, dann loesen):
 
@@ -96,7 +105,7 @@ ANTWORT: A erfordert Verfahren (i): Flächentarif mit Verhandlung, Schlichtung u
 
 Klausur-Satz: `Lohn der Branche gehoert an den Tariftisch, Mitwirkung im Betrieb an den Betriebsrat.`
 
-## Schritt 6 — check
+## Schritt 6 — check: Selbsttest zu Tarifautonomie und Gewerkschaften
 
 CHECK (drei Fragen mit Antworten):
 
@@ -114,13 +123,13 @@ Klausur-Satz: `Ohne Friedenspflicht gaebe es keinen verlaesslichen Tarif, ohne S
 2. Fehlvorstellung: Streik sei die erste Stufe jeder Verhandlung.
    Korrektur-Satz: `Streik ist das letzte Mittel nach Scheitern, Schlichtung und Urabstimmung.`
 
-## Schritt 7 — szenario
+## Schritt 7 — szenario: Klausurtransfer: Anhoerung und Parlamentsrede zu Tarifautonomie und Gewerkschaften
 
 ROLLE: Du bist Redakteurin der Schuelerzeitung.
 SITUATION: Die Busfahrer kuendigen Warnstreiks an; Eltern fordern ein Verbot. Beurteile in circa 150 Woertern, ob ein Verbot mit Artikel 9 Absatz 3 vereinbar waere, und ordne Warnstreiks in die Eskalationskette ein.
 RUBRIC (30 XP): Grundrechtsbezug korrekt (8 XP) | Eskalationskette eingeordnet (10 XP) | Abwaegung mit Gemeinwohl (8 XP) | Fachsprachliche Darstellung (4 XP).
 
-## Schritt 8 — reflexion: Takeaway & Reflexion
+## Schritt 8 — reflexion: Takeaway & Reflexion: Was der Krisenstab lernt
 
 TAKEAWAY:
 

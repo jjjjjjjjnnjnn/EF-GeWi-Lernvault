@@ -13,9 +13,16 @@ version: Lesson-v3
 
 # Lernreise: Soziale Marktwirtschaft (L1, Ziel Klausur)
 
-<!-- Lesson-v3: 8 Schritte plus Anekdote und Fehlvorstellung; Fehlvorstellung zwischen Schritt 6 und 7 (Parser-Skip); interaktives [Werkzeug: <id>]; Gating: check/szenario nicht bestanden = Weiter gesperrt; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
+> Kampagne *Virtuelle Stadt-Tycoon — Von der Apfelmarkt-Fehde zum modernen Sozialstaat*: Akt I-II — Apfelmarkt und Mietendeckel — Episode 23, Cast: Ewigkeitsklausel-Archivar Otto Weiss. Werkzeug dieser Episode: [markt-sim].
 
-## Schritt 1 — entdecken: Ziele & Phaenomen-Einstieg
+<!-- Lesson-v3: 8 Schritte plus Anekdote und Fehlvorstellung; Fehlvorstellung zwischen Schritt 6 und 7 (Parser-Skip); interaktives [Werkzeug: markt-sim]; Gating: check/szenario nicht bestanden = Weiter gesperrt; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
+
+## Schritt 1 — entdecken: Alarm in Tycoon City: Angriff auf den Tresor der Ewigkeitsklausel
+
+
+> EPISODE 23 — Akt I-II — Apfelmarkt und Mietendeckel — Auftrag von Ewigkeitsklausel-Archivar Otto Weiss: Angriff auf den Tresor der Ewigkeitsklausel.
+
+HOOK (Stadtrats-Krise, lies zuerst): EPISODE 23 — Akt I-II — Apfelmarkt und Mietendeckel — Stadt Tycoon City ruft dich in den Krisenstab. Ewigkeitsklausel-Archivar Otto Weiss stuermt mit einer Eilmeldung ins Buero: Angriff auf den Tresor der Ewigkeitsklausel — und morgen entscheidet der Stadtrat. Der Markt schreit, die Warteschlange waechst, die Kasse zittert: Ohne deine Analyse kippt die Stadt vom Apfelparadies in den Schwarzmarkt. Dein Auftrag in dieser Episode: Uebersetze die Strassenszene in das heutige Thema Soziale Marktwirtschaft. Sammle Belege, stelle den Sandkasten [markt-sim] scharf und liefere dem Rat eine Klausur-Antwort, die einer Pruefungskommission standhaelt. Erste Spur: TARGET: Stellt im Sandkasten Angebot und Nachfrage so ein, dass der Gleichgewichtspreis zwischen 8 und 12 Euro liegt, die gehandelte Menge mindestens 100 Einheiten erreicht und ein Probe-Hoechstpreis von 6 Euro als bindend mit Warteschlange entlarvt wird. Wer den Mechanismus versteht, rettet den Haushalt — und vielleicht die Wahl. Der Countdown laeuft, das Radio berichtet live, die Opposition wartet nur auf deinen Fehler: Oeffne die Ziele, schnapp dir die Begriffe und beweise, dass Tycoon City regierbar bleibt.
 
 ZIELE (drei messbare Ziele dieser Lektion):
 
@@ -31,7 +38,7 @@ Es ist Samstagmorgen, das Regal im Supermarkt ist voll, niemand steht an, nieman
 
 Klausur-Satz: `Die Soziale Marktwirtschaft legitimiert sich durch zwei Versprechen: Effizienz durch Wettbewerb und Gerechtigkeit durch sozialen Ausgleich.`
 
-## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
+## Schritt 2 — entdecken: Werkzeugkoffer von Ewigkeitsklausel-Archivar Otto Weiss: 5 Begriffe scharf stellen
 
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
@@ -55,7 +62,7 @@ Punkte-Hinweis: Benenne Gleichgewicht, Ueberangebot und Mangellage mit Fachbegri
 
 Klausur-Satz: `Der Staat setzt den Ordnungsrahmen, greift aber nicht direkt in Preise und Löhne ein.`
 
-## Schritt 3 — entdecken: Kernkonzept & Wirkungsmodell
+## Schritt 3 — entdecken: Uhrwerk des Marktes: Kette von Ursache zu Wirkung
 
 TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
@@ -88,11 +95,13 @@ Der Begriff „Soziale Marktwirtschaft" geht auf Alfred Müller-Armack zurück, 
 
 Bezug zum Konzept: `Das Beispiel zeigt den Grundgedanken der Ordnungspolitik: Der Staat gibt freie Preise und Wettbewerb frei, sichert aber zugleich den sozialen Ausgleich — genau diese Doppelrolle prueft jede Klausur.`
 
-## Schritt 4 — ausprobieren: Interaktive Praxis & Markt-Labor
+## Schritt 4 — ausprobieren: Sandkasten-Einsatz [markt-sim]: Rette die Stadt mit Zahlen
 
 BEISPIEL (geleitete Aufgabe mit Werkzeug):
 
 [Werkzeug: markt-sim]
+
+TARGET: Stellt im Sandkasten Angebot und Nachfrage so ein, dass der Gleichgewichtspreis zwischen 8 und 12 Euro liegt, die gehandelte Menge mindestens 100 Einheiten erreicht und ein Probe-Hoechstpreis von 6 Euro als bindend mit Warteschlange entlarvt wird.
 
 Ziehe im Tool den Mindestpreis-Regler vom Gleichgewicht nach oben und beobachte live, wie das Ueberangebot waechst; ziehe danach den Hoechstpreis-Regler vom Gleichgewicht nach unten und notiere Mangel, Schlange und Schattenmarkt.
 
@@ -105,7 +114,7 @@ MUSTERLOESUNG: Im Gleichgewicht gleichen sich Angebot und Nachfrage aus. Beim Mi
 
 Klausur-Satz: `Wettbewerb schafft Wohlstand, der Sozialstaat fängt die Schwächsten auf — der Staat ist Schiedsrichter, nicht Spieler.`
 
-## Schritt 5 — ausprobieren: Verfahrensvergleich & Abgrenzung
+## Schritt 5 — ausprobieren: Duell der Wege: Weg A gegen Weg B
 
 VERGLEICH (Wahl des Analysewegs, Weg A gegen Weg B):
 
@@ -124,7 +133,7 @@ ANTWORT: Aufgabe A verlangt beide Wege, weil erst der Markt die Verknappung erkl
 
 Klausur-Satz: `Der Mindestlohn schützt vor Armut trotz Arbeit, greift aber in Preisbildung und Tarifautonomie ein.`
 
-## Schritt 6 — check: Selbsttest zur Sozialen Marktwirtschaft
+## Schritt 6 — check: Selbsttest zu Soziale Marktwirtschaft
 
 CHECK (drei Fragen mit Antworten):
 
@@ -144,14 +153,14 @@ Klausur-Satz: `Der Preismechanismus gleicht Angebot und Nachfrage über den Prei
 2. Fehlkonzept: Tarifautonomie bedeute, der Staat lege Mindestloehne und Tarifloehne fest.
    Korrektur-Satz: `Tarifautonomie heißt Lohnfindung durch Gewerkschaften und Arbeitgeber nach Art. 9 Abs. 3 GG; der gesetzliche Mindestlohn ist die staatliche Untergrenze, kein Tarifvertrag.`
 
-## Schritt 7 — szenario: Bundestagsdebatte zum Mindestlohn
+## Schritt 7 — szenario: Klausurtransfer: Anhoerung und Parlamentsrede zu Soziale Marktwirtschaft
 
 ROLLE: Du bist Abgeordnete/r im Bundestag, Ausschuss für Arbeit und Soziales
 SITUATION: Debatte: Soll der Mindestlohn auf 15 Euro steigen Halte ein 2-Minuten-Plädoyer (dafür oder dagegen). Nutze die Ordnungspolitik-Brille aus Schritt 5 und die Beispiel-Sätze aus Schritt 4
 AUFGABE (AFB III): Verfasse eine zusammenhaengende Darstellung von etwa 150 Woertern mit Kriterium, Anwendung und Urteil.
 RUBRIC (30 XP): These in Satz 1 (darstellen) | zwei Fachbegriffe (z. B. Tarifautonomie, Kaufkraft, Wettbewerbsfähigkeit) | ein Beleg/Beispiel | Urteil mit Kriterium (beurteilen).
 
-## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
+## Schritt 8 — reflexion: Takeaway & Reflexion: Was der Krisenstab lernt
 
 TAKEAWAY (Kernbotschaft in einem Kasten):
 

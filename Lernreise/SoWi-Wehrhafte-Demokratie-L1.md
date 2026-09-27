@@ -13,9 +13,16 @@ version: Lesson-v3
 
 # Lernreise: Wehrhafte Demokratie und Extremismus (L1, Ziel Klausur)
 
-<!-- Lesson v3 9步制架构：Schritt 1至8固定结构；Fehlvorstellung 夹在 Schritt 6 与 7 之间（Parser 自动跳过，不占步数）；支持内嵌 [Werkzeug: <id>] 交互教具；Gating: check/szenario 未过 = Weiter 置灰；XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
+> Kampagne *Virtuelle Stadt-Tycoon — Von der Apfelmarkt-Fehde zum modernen Sozialstaat*: Akt IV-V — Tarifarena und Demokratiewerkstatt — Episode 40, Cast: Jugendparlamentarierin Lina Vogt. Werkzeug dieser Episode: [balance-board].
 
-## Schritt 1 — entdecken
+<!-- Lesson v3 9步制架构：Schritt 1至8固定结构；Fehlvorstellung 夹在 Schritt 6 与 7 之间（Parser 自动跳过，不占步数）；支持内嵌 [Werkzeug: balance-board] 交互教具；Gating: check/szenario 未过 = Weiter 置灰；XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
+
+## Schritt 1 — entdecken: Alarm in Tycoon City: Jugendparlament-Revolte um Busfahrplaene
+
+
+> EPISODE 40｜Akt IV-V — Tarifarena und Demokratiewerkstatt｜召集人 Jugendparlamentarierin Lina Vogt：Jugendparlament-Revolte um Busfahrplaene。
+
+HOOK 市长危机（先读剧情，再进 ZIELE）：【本集战役 EP40｜Akt IV-V — Tarifarena und Demokratiewerkstatt｜虚拟城邦 Tycoon City 告急】市长办公室深夜灯火通明，Jugendparlamentarierin Lina Vogt 冲进来报告：Jugendparlament-Revolte um Busfahrplaene，而明天市议会就要投票。集市在喊、长队在排、国库在抖：苹果集市价格战一路烧到租金黑市，再烧到基尼天平与劳资谈判桌，本集正是“Wehrhafte Demokratie und Extremismus”的现实引爆点。你的身份是市长直属经济改革规划委员：把街头危机翻译成考点，用沙盘 [balance-board] 拿出可验证的数值方案，再交出一份 Klausur 满分答卷稳住议会。通关线索：TARGET: Bringt auf dem Verhandlungsbrett beide Waagschalen in die Balance — Bedingung: Zustimmung beider Baenke, Loesung mit Kompromisslinie, Ergebnisprotokoll mit zwei Begruendungen je Seite. 上一集的结尾就是这一集的悬念——黑市账本、税改天平、劳资天平、选票天平，四座天平有一座倒了，城邦就停摆。电台正在直播，反对派等着挑错：先读 ZIELE，再啃术语，把传导机制画成你的作战地图。DE-Briefing: Episode 40 — Jugendparlamentarierin Lina Vogt meldet Jugendparlament-Revolte um Busfahrplaene; der Stadtrat entscheidet morgen. Rette Tycoon City mit Analyse, Sandkasten und Klausur-Antwort zum Thema Wehrhafte Demokratie und Extremismus.
 
 ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
@@ -25,7 +32,7 @@ ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
 Klausur-Satz: `Extremismus richtet sich gegen die freiheitliche demokratische Grundordnung selbst, während Radikalismus systemimmanente Grundkritik übt.`
 
-## Schritt 2 — entdecken
+## Schritt 2 — entdecken: Werkzeugkoffer von Jugendparlamentarierin Lina Vogt: 5 Begriffe scharf stellen
 
 PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
 
@@ -39,7 +46,7 @@ PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→�
 
 Klausur-Satz: `Ein Parteiverbot nach Art. 21 II GG setzt voraus, dass eine Partei die fdGO beeinträchtigt oder beseitigt und dafür eine reale Durchsetzungschance besteht.`
 
-## Schritt 3 — entdecken
+## Schritt 3 — entdecken: Uhrwerk des Marktes: Kette von Ursache zu Wirkung
 
 ENTDECKEN（1概念 + 1文字图解）：
 
@@ -74,11 +81,13 @@ Klausur-Satz: `Wehrhafte Demokratie schützt sich durch Parteiverbot (Art. 21 II
 
 **Bezug zum Konzept**: `Die wehrhafte Demokratie ist die Antwort auf Weimar: Sie erlaubt Abwehr, aber nur mit rechtsstaatlichen Mitteln wie Art. 21 II GG.`
 
-## Schritt 4 — ausprobieren
+## Schritt 4 — ausprobieren: Sandkasten-Einsatz [balance-board]: Rette die Stadt mit Zahlen
 
 BEISPIEL（正确例题示范，含教具操作与解答）：
 
-[Werkzeug: lego]
+[Werkzeug: balance-board]
+
+TARGET: Bringt auf dem Verhandlungsbrett beide Waagschalen in die Balance — Bedingung: Zustimmung beider Baenke, Loesung mit Kompromisslinie, Ergebnisprotokoll mit zwei Begruendungen je Seite.
 
 AUFGABE (analysieren, AFB II, 10 BE)：M1 ist ein Auszug aus einem Verfassungsschutzbericht. Er nennt für die Jahre 2021 bis 2023 deutlich gestiegene rechtsextremistisch motivierte Straftaten, stuft eine Partei als „gesichert extremistisch" ein und führt eine zweite nur als „Verdachtsfall". Analysieren Sie M1, indem Sie (a) Radikalismus und Extremismus gegeneinander abgrenzen, (b) begründen, warum eine Einstufung als Verdachtsfall noch kein Parteiverbot ist, und (c) die Schutzwirkung der Beobachtung einordnen.
 
@@ -91,7 +100,7 @@ MUSTERLÖSUNG: Radikalismus und Extremismus unterscheiden sich nicht im Ausmaß 
 
 Klausur-Satz: `Die Beobachtung durch den Verfassungsschutz ist präventiv und trifft keine Verbotsentscheidung; ein Verbot verhängt allein das Bundesverfassungsgericht nach Art. 21 II GG.`
 
-## Schritt 5 — ausprobieren
+## Schritt 5 — ausprobieren: Duell der Wege: Weg A gegen Weg B
 
 VERGLEICH辨别实验（双向辨析：Beobachtungs-Verfahren vs. Verbots-Verfahren）：
 
@@ -107,7 +116,7 @@ ANTWORT: A erfordert Verfahren (ii): Ein Verbot kann nur das Bundesverfassungsge
 
 Klausur-Satz: `Nur das Bundesverfassungsgericht darf ein Parteiverbot verhängen, und es verlangt zusätzlich zur Verfassungswidrigkeit eine reale Durchsetzungschance.`
 
-## Schritt 6 — check
+## Schritt 6 — check: Selbsttest zu Wehrhafte Demokratie und Extremismus
 
 CHECK检索默写（自测 3 题，与答案配对）：
 
@@ -129,13 +138,13 @@ Klausur-Satz: `Verfassungswidrigkeit allein genügt nicht; erst die fehlende Pot
    中文纠偏：完全不是。Radikalismus 只是"要根本改变"，仍在体制内合法（如某些抗议运动）；只有以摧毁 fdGO 本身为目标的 Extremismus 才失去宪法保护。这条线是 Klausur 第一道辨别题。
    Korrektur-Satz: `Radikalismus bleibt als systemimmanente Kritik legal; erst der gegen die fdGO gerichtete Extremismus verliert den Schutz der Verfassung.`
 
-## Schritt 7 — szenario
+## Schritt 7 — szenario: Klausurtransfer: Anhoerung und Parlamentsrede zu Wehrhafte Demokratie und Extremismus
 
 ROLLE: Du bist Sachverständige/r in einer Anhörung des Innenausschusses zur Frage, ob gegen eine demokratiefeindliche Partei ein Verbotsverfahren eingeleitet werden soll.
 SITUATION: Die Partei erreicht in Umfragen fünf Prozent, verbreitet völkisch-nationalistische Positionen und stellt Wahlen sowie Minderheitenrechte infrage. Ein Teil der Öffentlichkeit fordert ein sofortiges Verbot, ein anderer warnt vor einem „Wahlkampfhelfer-Effekt" und vor einem Eingriff in die Opposition. Beurteilen Sie in einer zusammenhängenden Stellungnahme (ca. 150 Wörter), ob ein Verbotsverfahren eingeleitet werden sollte, und berücksichtigen Sie dabei die Verhältnismäßigkeit.
 RUBRIC (30 XP): Benennung der Rechtslage — nur BVerfG, Art. 21 II, doppelte Hürde (6 XP) | Analyse der Gefahrenlage — Verstoß gegen die fdGO, Infragestellen von Wahlen und Minderheitenrechten (8 XP) | Abwägung mit Kriterien — Verhältnismäßigkeit, Funktionsfähigkeit der Opposition, Missbrauchsgefahr (10 XP) | Kriteriengeleitetes Urteil mit klarer Empfehlung (6 XP).
 
-## Schritt 8 — reflexion: Takeaway & Reflexion
+## Schritt 8 — reflexion: Takeaway & Reflexion: Was der Krisenstab lernt
 
 TAKEAWAY 1盒（核心总结）：
 

@@ -13,9 +13,16 @@ version: Lesson-v3
 
 # Lernreise: Tarifautonomie und Gewerkschaften im Arbeitskampf (L1, Ziel Klausur)
 
-<!-- Lesson v3 9步制架构：Schritt 1至8固定结构；Fehlvorstellung 夹在 Schritt 6 与 7 之间（Parser 自动跳过，不占步数）；支持内嵌 [Werkzeug: <id>] 交互教具；Gating: check/szenario 未过 = Weiter 置灰；XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
+> Kampagne *Virtuelle Stadt-Tycoon — Von der Apfelmarkt-Fehde zum modernen Sozialstaat*: Akt IV-V — Tarifarena und Demokratiewerkstatt — Episode 35, Cast: Hafenlogistikerin Ruth Adler. Werkzeug dieser Episode: [balance-board].
 
-## Schritt 1 — entdecken: Ziele & Phänomen-Einstieg
+<!-- Lesson v3 9步制架构：Schritt 1至8固定结构；Fehlvorstellung 夹在 Schritt 6 与 7 之间（Parser 自动跳过，不占步数）；支持内嵌 [Werkzeug: balance-board] 交互教具；Gating: check/szenario 未过 = Weiter 置灰；XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
+
+## Schritt 1 — entdecken: Alarm in Tycoon City: Hafenlogistik-Stau zur Erntezeit
+
+
+> EPISODE 35｜Akt IV-V — Tarifarena und Demokratiewerkstatt｜召集人 Hafenlogistikerin Ruth Adler：Hafenlogistik-Stau zur Erntezeit。
+
+HOOK 市长危机（先读剧情，再进 ZIELE）：【本集战役 EP35｜Akt IV-V — Tarifarena und Demokratiewerkstatt｜虚拟城邦 Tycoon City 告急】市长办公室深夜灯火通明，Hafenlogistikerin Ruth Adler 冲进来报告：Hafenlogistik-Stau zur Erntezeit，而明天市议会就要投票。集市在喊、长队在排、国库在抖：苹果集市价格战一路烧到租金黑市，再烧到基尼天平与劳资谈判桌，本集正是“Tarifautonomie und Gewerkschaften im Arbeitskampf”的现实引爆点。你的身份是市长直属经济改革规划委员：把街头危机翻译成考点，用沙盘 [balance-board] 拿出可验证的数值方案，再交出一份 Klausur 满分答卷稳住议会。通关线索：TARGET: Bringt auf dem Verhandlungsbrett beide Waagschalen in die Balance — Bedingung: Zustimmung beider Baenke, Loesung mit Kompromisslinie, Ergebnisprotokoll mit zwei Begruendungen je Seite. 上一集的结尾就是这一集的悬念——黑市账本、税改天平、劳资天平、选票天平，四座天平有一座倒了，城邦就停摆。电台正在直播，反对派等着挑错：先读 ZIELE，再啃术语，把传导机制画成你的作战地图。DE-Briefing: Episode 35 — Hafenlogistikerin Ruth Adler meldet Hafenlogistik-Stau zur Erntezeit; der Stadtrat entscheidet morgen. Rette Tycoon City mit Analyse, Sandkasten und Klausur-Antwort zum Thema Tarifautonomie und Gewerkschaften im Arbeitskampf.
 
 ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
@@ -38,7 +45,7 @@ Mechanismus-Satz (DE): Autonomie verhandelt, Streik erzwingt, der Tarif bindet d
 
 Klausur-Satz: `Tarifautonomie heisst: Loehne werden frei verhandelt, Arbeitskampf ist dabei das ultima-ratio-Mittel.`
 
-## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
+## Schritt 2 — entdecken: Werkzeugkoffer von Hafenlogistikerin Ruth Adler: 5 Begriffe scharf stellen
 
 PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
 
@@ -52,7 +59,7 @@ PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→�
 
 Klausur-Satz: `Streik und Aussperrung sind nur als verhaeltnismaessige Kampfmittel um Tarifziele zulaessig.`
 
-## Schritt 3 — entdecken: Kernkonzept & Wirkungsmodell
+## Schritt 3 — entdecken: Uhrwerk des Marktes: Kette von Ursache zu Wirkung
 
 ENTDECKEN（1概念 + 1文字图解，中文在上、德语在下）：
 
@@ -91,9 +98,11 @@ Klausur-Satz: `Erst verhandeln, dann schlichten, erst danach streiken — und nu
 
 **Bezug zum Konzept**: `Was heute normal wirkt, war gestern ein Tarifkampf.`
 
-## Schritt 4 — ausprobieren: Interaktive Praxis & Labor
+## Schritt 4 — ausprobieren: Sandkasten-Einsatz [balance-board]: Rette die Stadt mit Zahlen
 
-[Werkzeug: markt-sim]
+[Werkzeug: balance-board]
+
+TARGET: Bringt auf dem Verhandlungsbrett beide Waagschalen in die Balance — Bedingung: Zustimmung beider Baenke, Loesung mit Kompromisslinie, Ergebnisprotokoll mit zwei Begruendungen je Seite.
 
 BEISPIEL（正确例题示范，含教具操作与解答，中文在上、德语在下）：
 
@@ -115,7 +124,7 @@ MUSTERLOESUNG：中文：目标是工资、步骤走完调解，合法性两关�
 MUSTERLOESUNG (DE): Als gewerkschaftlicher Warnstreik um Lohn nach erschoepfter Schlichtung ist die Aktion rechtmaessig und verhaeltnismaessig. Sinnvoll ist sie, wenn Druck und Kosten stimmen.
 Klausur-Satz: `Als gewerkschaftlicher Warnstreik um Lohn nach erschoepfter Schlichtung ist die Aktion rechtmaessig und verhaeltnismaessig.`
 
-## Schritt 5 — ausprobieren: Verfahrensvergleich & Abgrenzung
+## Schritt 5 — ausprobieren: Duell der Wege: Weg A gegen Weg B
 
 VERGLEICH辨别实验（双向辨析：合法审查 vs 效果评价）：
 
@@ -151,12 +160,12 @@ Klausur-Satz: `Ohne Tarifziel und ohne ultima ratio ist kein Streik rechtmaessig
    中文纠偏：这违反 Tarifautonomie；国家只设定底线（Mindestlohn、 Arbeitszeitgesetz），具体工资留给劳资博弈。
    Korrektur-Satz: `Der Staat setzt Rahmen, die Tarifparteien setzen Loehne.`
 
-## Schritt 7 — szenario: Klausurtransfer: Tarifautonomie und Gewerkschaften im Arbeitskampf
+## Schritt 7 — szenario: Klausurtransfer: Anhoerung und Parlamentsrede zu Tarifautonomie und Gewerkschaften im Arbeitskampf
 ROLLE: Du bist Schuelervertreter in einer Podiumsdiskussion zum OePNV-Streik.
 SITUATION: Pendler klagen ueber Ausfaelle, die Gewerkschaft verweist auf gescheiterte Schlichtung. Nimm in einer zusammenhaengenden Stellungnahme (ca. 150 Woerter) dazu Stellung: War der Streik rechtmaessig und war er sinnvoll?
 RUBRIC (30 XP): Rechtmaessigkeitspruefung in vier Punkten (12 XP) | Wirksamkeitsabwaegung mit Kosten (10 XP) | Eigenes kriteriengeleitetes Urteil (4 XP) | Adressatengerechte Stellungnahme (4 XP).
 
-## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
+## Schritt 8 — reflexion: Takeaway & Reflexion: Was der Krisenstab lernt
 
 TAKEAWAY 1盒（核心总结）：
 

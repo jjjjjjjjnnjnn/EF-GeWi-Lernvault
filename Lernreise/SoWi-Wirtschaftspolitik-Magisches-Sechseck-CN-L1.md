@@ -13,9 +13,16 @@ version: Lesson-v3
 
 # Lernreise: Wirtschaftspolitik und magisches Sechseck (L1, Ziel Klausur)
 
-<!-- Lesson v3 9步制架构：Schritt 1至8固定结构；Fehlvorstellung 夹在 Schritt 6 与 7 之间（Parser 自动跳过，不占步数）；支持内嵌 [Werkzeug: <id>] 交互教具；Gating: check/szenario 未过 = Weiter 置灰；XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
+> Kampagne *Virtuelle Stadt-Tycoon — Von der Apfelmarkt-Fehde zum modernen Sozialstaat*: Akt I-II — Apfelmarkt und Mietendeckel — Episode 43, Cast: Hafenkapitain a. D. Sturmius Blank. Werkzeug dieser Episode: [markt-sim].
 
-## Schritt 1 — entdecken: Ziele & Phänomen-Einstieg
+<!-- Lesson v3 9步制架构：Schritt 1至8固定结构；Fehlvorstellung 夹在 Schritt 6 与 7 之间（Parser 自动跳过，不占步数）；支持内嵌 [Werkzeug: markt-sim] 交互教具；Gating: check/szenario 未过 = Weiter 置灰；XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
+
+## Schritt 1 — entdecken: Alarm in Tycoon City: Kapitaens-Protestzug in den Stadtrat
+
+
+> EPISODE 43｜Akt I-II — Apfelmarkt und Mietendeckel｜召集人 Hafenkapitain a. D. Sturmius Blank：Kapitaens-Protestzug in den Stadtrat。
+
+HOOK 市长危机（先读剧情，再进 ZIELE）：【本集战役 EP43｜Akt I-II — Apfelmarkt und Mietendeckel｜虚拟城邦 Tycoon City 告急】市长办公室深夜灯火通明，Hafenkapitain a. D. Sturmius Blank 冲进来报告：Kapitaens-Protestzug in den Stadtrat，而明天市议会就要投票。集市在喊、长队在排、国库在抖：苹果集市价格战一路烧到租金黑市，再烧到基尼天平与劳资谈判桌，本集正是“Wirtschaftspolitik und magisches Sechseck”的现实引爆点。你的身份是市长直属经济改革规划委员：把街头危机翻译成考点，用沙盘 [markt-sim] 拿出可验证的数值方案，再交出一份 Klausur 满分答卷稳住议会。通关线索：TARGET: Stellt im Sandkasten Angebot und Nachfrage so ein, dass der Gleichgewichtspreis zwischen 8 und 12 Euro liegt, die gehandelte Menge mindestens 100 Einheiten erreicht und ein Probe-Hoechstpreis von 6 Euro als bindend mit Warteschlange entlarvt wird. 上一集的结尾就是这一集的悬念——黑市账本、税改天平、劳资天平、选票天平，四座天平有一座倒了，城邦就停摆。电台正在直播，反对派等着挑错：先读 ZIELE，再啃术语，把传导机制画成你的作战地图。DE-Briefing: Episode 43 — Hafenkapitain a. D. Sturmius Blank meldet Kapitaens-Protestzug in den Stadtrat; der Stadtrat entscheidet morgen. Rette Tycoon City mit Analyse, Sandkasten und Klausur-Antwort zum Thema Wirtschaftspolitik und magisches Sechseck.
 
 ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
@@ -36,7 +43,7 @@ Mechanismus-Satz (DE): Expansiv hilft Jobs, restriktiv hilft Preisen, jede Richt
 
 Klausur-Satz: `Die sechs Ziele des magischen Sechsecks sind nicht gleichzeitig maximal erfuellbar, weil Zielkonflikte bestehen.`
 
-## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
+## Schritt 2 — entdecken: Werkzeugkoffer von Hafenkapitain a. D. Sturmius Blank: 5 Begriffe scharf stellen
 
 PRETRAINING术语盒（核心6词，六大宏观目标一一对应，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
 
@@ -51,7 +58,7 @@ PRETRAINING术语盒（核心6词，六大宏观目标一一对应，先读三�
 
 Klausur-Satz: `Nachhaltigkeit ergaenzt das klassische magische Viereck zum Sechseck um Verteilung und Umwelt.`
 
-## Schritt 3 — entdecken: Kernkonzept & Wirkungsmodell
+## Schritt 3 — entdecken: Uhrwerk des Marktes: Kette von Ursache zu Wirkung
 
 ENTDECKEN（1概念 + 1文字图解，中文在上、德语在下）：
 
@@ -90,9 +97,11 @@ Klausur-Satz: `Expansive Fiskalpolitik staerkt Wachstum und Jobs, gefaehrdet abe
 
 **Bezug zum Konzept**: `Das Sechseck macht Zielkonflikte sichtbar, statt sie zu verstecken.`
 
-## Schritt 4 — ausprobieren: Interaktive Praxis & Labor
+## Schritt 4 — ausprobieren: Sandkasten-Einsatz [markt-sim]: Rette die Stadt mit Zahlen
 
 [Werkzeug: markt-sim]
+
+TARGET: Stellt im Sandkasten Angebot und Nachfrage so ein, dass der Gleichgewichtspreis zwischen 8 und 12 Euro liegt, die gehandelte Menge mindestens 100 Einheiten erreicht und ein Probe-Hoechstpreis von 6 Euro als bindend mit Warteschlange entlarvt wird.
 
 BEISPIEL（正确例题示范，含教具操作与解答，中文在上、德语在下）：
 
@@ -114,7 +123,7 @@ MUSTERLOESUNG：中文：基建拉就业与增长是实利，推高物价与环�
 MUSTERLOESUNG (DE): Das Infrastrukturprogramm verbessert Jobs und Wachstum auf Kosten von Preisen und Umwelt. Expansiv hilft Jobs, restriktiv hilft Preisen: Jede Richtung hat ihren Preis.
 Klausur-Satz: `Das Infrastrukturprogramm verbessert Jobs und Wachstum auf Kosten von Preisen und Umwelt.`
 
-## Schritt 5 — ausprobieren: Verfahrensvergleich & Abgrenzung
+## Schritt 5 — ausprobieren: Duell der Wege: Weg A gegen Weg B
 
 VERGLEICH辨别实验（双向辨析：扩张眼 vs. 紧缩眼）：
 
@@ -150,13 +159,13 @@ Klausur-Satz: `Kein Politikvorschlag erfuellt alle sechs Ziele gleichzeitig ohne
    中文纠偏：平衡指大体相当。长期巨额顺差意味着占用他国需求、积累风险，在欧盟和国际层面同样挨批评，不等于满分。
    Korrektur-Satz: `Aussenwirtschaftliches Gleichgewicht meint Ausgeglichenheit, nicht maximalen Export.`
 
-## Schritt 7 — szenario: Klausurtransfer: Wirtschaftspolitik und magisches Sechseck
+## Schritt 7 — szenario: Klausurtransfer: Anhoerung und Parlamentsrede zu Wirtschaftspolitik und magisches Sechseck
 ROLLE: Du bist Praktikantin im Wirtschaftsministerium und schreibst eine Kurzstellungnahme.
 SITUATION: Ein Abgeordneter fordert Steuersenkungen fuer mehr Wachstum und behauptet, das schade keinem anderen Ziel.
 AUFGABE: Beurteilen Sie in ca. 150 Woertern mit dem Sechseck, welche Ziele profitieren und welche leiden, plus Empfehlung.
 RUBRIC (30 XP): Zwei Profiteure korrekt mit Kette (10 XP) | Zwei Leidtragende korrekt mit Kette (10 XP) | Urteil mit Zielkonflikt-Begriff und Empfehlung (10 XP).
 
-## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
+## Schritt 8 — reflexion: Takeaway & Reflexion: Was der Krisenstab lernt
 
 TAKEAWAY 1盒（核心总结）：
 

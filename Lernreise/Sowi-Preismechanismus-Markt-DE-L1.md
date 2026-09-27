@@ -13,9 +13,16 @@ version: Lesson-v3
 
 # Lernreise: Preismechanismus und Marktformen (L1, Ziel Klausur)
 
-<!-- Lesson-v3: 8 Schritte plus Anekdote und Fehlvorstellung; Fehlvorstellung zwischen Schritt 6 und 7 (Parser-Skip); interaktives [Werkzeug: <id>]; Gating: check/szenario nicht bestanden = Weiter gesperrt; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
+> Kampagne *Virtuelle Stadt-Tycoon — Von der Apfelmarkt-Fehde zum modernen Sozialstaat*: Akt I-II — Apfelmarkt und Mietendeckel — Episode 21, Cast: Koalitionsmanagerin Vera Lutz. Werkzeug dieser Episode: [markt-sim].
 
-## Schritt 1 — entdecken: Ziele und Phaenomen-Einstieg
+<!-- Lesson-v3: 8 Schritte plus Anekdote und Fehlvorstellung; Fehlvorstellung zwischen Schritt 6 und 7 (Parser-Skip); interaktives [Werkzeug: markt-sim]; Gating: check/szenario nicht bestanden = Weiter gesperrt; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
+
+## Schritt 1 — entdecken: Alarm in Tycoon City: Koalitions-Poker um eine Stimme
+
+
+> EPISODE 21 — Akt I-II — Apfelmarkt und Mietendeckel — Auftrag von Koalitionsmanagerin Vera Lutz: Koalitions-Poker um eine Stimme.
+
+HOOK (Stadtrats-Krise, lies zuerst): EPISODE 21 — Akt I-II — Apfelmarkt und Mietendeckel — Stadt Tycoon City ruft dich in den Krisenstab. Koalitionsmanagerin Vera Lutz stuermt mit einer Eilmeldung ins Buero: Koalitions-Poker um eine Stimme — und morgen entscheidet der Stadtrat. Der Markt schreit, die Warteschlange waechst, die Kasse zittert: Ohne deine Analyse kippt die Stadt vom Apfelparadies in den Schwarzmarkt. Dein Auftrag in dieser Episode: Uebersetze die Strassenszene in das heutige Thema Preismechanismus und Marktformen. Sammle Belege, stelle den Sandkasten [markt-sim] scharf und liefere dem Rat eine Klausur-Antwort, die einer Pruefungskommission standhaelt. Erste Spur: TARGET: Stellt im Sandkasten Angebot und Nachfrage so ein, dass der Gleichgewichtspreis zwischen 8 und 12 Euro liegt, die gehandelte Menge mindestens 100 Einheiten erreicht und ein Probe-Hoechstpreis von 6 Euro als bindend mit Warteschlange entlarvt wird. Wer den Mechanismus versteht, rettet den Haushalt — und vielleicht die Wahl. Der Countdown laeuft, das Radio berichtet live, die Opposition wartet nur auf deinen Fehler: Oeffne die Ziele, schnapp dir die Begriffe und beweise, dass Tycoon City regierbar bleibt.
 
 ZIELE (drei messbare Ziele dieser Lektion):
 
@@ -29,7 +36,7 @@ Stell dir vor, du suchst in der Stadt eine Wohnung: Die angebotene Miete liegt b
 
 Klausur-Satz: `Der Preismechanismus koordiniert Angebot und Nachfrage über den Gleichgewichtspreis und sorgt im Modell des vollkommenen Marktes für eine effiziente Allokation der Güter.`
 
-## Schritt 2 — entdecken: Fachbegriffe und Pre-Training
+## Schritt 2 — entdecken: Werkzeugkoffer von Koalitionsmanagerin Vera Lutz: 5 Begriffe scharf stellen
 
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
@@ -53,7 +60,7 @@ Punkte-Hinweis: Nenne Gleichgewichtspreis mit Schnittpunkt-Deutung und beschreib
 
 Klausur-Satz: `Im Gleichgewicht entspricht die angebotene Menge der nachgefragten Menge, sodass weder ein Nachfrage- noch ein Angebotsüberhang besteht.`
 
-## Schritt 3 — entdecken: Kernkonzept und Wirkungsmodell
+## Schritt 3 — entdecken: Uhrwerk des Marktes: Kette von Ursache zu Wirkung
 
 TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
@@ -86,11 +93,13 @@ Dass staatliche Hoechstpreise nicht funktionieren, ist kein modernes Problem. Sc
 
 Bezug zum Konzept: Das Beispiel zeigt, wie ein Fixpreis unter dem Gleichgewicht zwar Entlastung verspricht, aber Angebot zurueckhaelt und Nachfrage anheizt, bis Mangellage und Ausweichen das Urteil bestimmen.
 
-## Schritt 4 — ausprobieren: Interaktive Praxis und Markt-Labor
+## Schritt 4 — ausprobieren: Sandkasten-Einsatz [markt-sim]: Rette die Stadt mit Zahlen
 
 BEISPIEL (geleitete Aufgabe mit Werkzeug):
 
 [Werkzeug: markt-sim]
+
+TARGET: Stellt im Sandkasten Angebot und Nachfrage so ein, dass der Gleichgewichtspreis zwischen 8 und 12 Euro liegt, die gehandelte Menge mindestens 100 Einheiten erreicht und ein Probe-Hoechstpreis von 6 Euro als bindend mit Warteschlange entlarvt wird.
 
 Ziehe im Tool den Mindestpreis-Regler nach oben und beobachte live, wie das Ueberangebot waechst. Ziehe danach den Hoechstpreis-Regler nach unten und notiere Mangellage, Schlange und Schattenmarkt.
 
@@ -105,7 +114,7 @@ MUSTERLOESUNG: Im freien Spiel raeumt der Gleichgewichtspreis den Markt. Beim Mi
 
 Klausur-Satz: `Ein über dem Gleichgewichtspreis festgesetzter Mindestpreis führt zu einem Angebotsüberhang, weil er die Anbieter belohnt, aber die Nachfrager abschreckt.`
 
-## Schritt 5 — ausprobieren: Weg-Vergleich und Abgrenzung
+## Schritt 5 — ausprobieren: Duell der Wege: Weg A gegen Weg B
 
 VERGLEICH: Zwei Wege loesen dasselbe Problem unterschiedlich. Weg A vertraut auf freie Schwankung und Allokation ueber das Preissignal. Weg B greift zum Schutz der Existenz mit Hoechstpreis oder Mindestpreis ein. Pruefe zuerst die Aufgabe, waehle dann den passenden Weg.
 
@@ -123,7 +132,7 @@ ANTWORT: Aufgabe A folgt Weg B im Fall Hoechstpreis: Nachfrage steigt, Angebot s
 
 Klausur-Satz: `Wird ein Höchstpreis unterhalb des Gleichgewichtspreises festgesetzt, entsteht ein Nachfrageüberhang, weil die Nachfrage steigt, das Angebot jedoch sinkt.`
 
-## Schritt 6 — check: Selbsttest zu Preismechanismus
+## Schritt 6 — check: Selbsttest zu Preismechanismus und Marktformen
 
 CHECK (drei Fragen mit Antworten):
 
@@ -143,14 +152,14 @@ Klausur-Satz: `Ein staatlicher Mindestpreis entfaltet nur dann ökonomische Wirk
 2. Fehlkonzept: Ueberangebot und Mangellage seien dasselbe, naemlich einfach Ungleichgewicht ohne Richtung.
    Korrektur-Satz: `Ueberangebot bedeutet zu viel Angebot bei hohem Festpreis mit Absatznot, Mangellage bedeutet zu viel Nachfrage bei tiefem Festpreis mit Schlange und Schattenmarkt; die Richtung entscheidet über die Deutung.`
 
-## Schritt 7 — szenario: Verbraucherzentrale und Mietpreisbremse-Debatte
+## Schritt 7 — szenario: Klausurtransfer: Anhoerung und Parlamentsrede zu Preismechanismus und Marktformen
 
 ROLLE: Du bist Referent in einer Verbraucherzentrale und sollst auf einer Podiumsdiskussion die geplante Mietpreisbremse der Stadt fachlich bewerten.
 SITUATION: Die Stadt will per Satzung die Miete auf hoechstens acht Euro pro Quadratmeter festsetzen; der aktuelle Marktmietpreis liegt bei elf Euro. Ein Teil des Publikums erwartet dadurch billigeren Wohnraum, ein anderer Teil warnt vor Wohnungsmangel. Beurteile die Massnahme in einer zusammenhaengenden Stellungnahme mit etwa 150 Woertern unter Rueckgriff auf Preismechanismus und Marktformen.
 AUFGABE (AFB III): Verfasse eine zusammenhaengende Darstellung von etwa 150 Woertern mit Kriterium, Anwendung und Urteil.
 RUBRIC (30 XP): Benennung als Hoechstpreis unterhalb des Gleichgewichts (5 XP) | Analyse der Mengenwirkung mit steigender Nachfrage und sinkendem Angebot plus Mangellage (10 XP) | Darlegung der Folgen mit Fehlallokation, Schattenmarkt und sinkenden Neubauinvestitionen (10 XP) | Kriteriengeleitetes Urteil mit Abwaegung von Effizienz und sozialer Zielsetzung (5 XP)
 
-## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
+## Schritt 8 — reflexion: Takeaway & Reflexion: Was der Krisenstab lernt
 
 TAKEAWAY (Kernbotschaft in einem Kasten):
 

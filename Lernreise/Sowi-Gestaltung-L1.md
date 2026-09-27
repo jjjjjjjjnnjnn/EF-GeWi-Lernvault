@@ -13,9 +13,16 @@ version: Lesson-v3
 
 # Lernreise: Gestaltungsaufgabe — Redebeitrag und Handlungsempfehlung (L1, Ziel Klausur)
 
-<!-- Lesson v3 9步制架构：Schritt 1至8固定结构；Fehlvorstellung 夹在 Schritt 6 与 7 之间（Parser 自动跳过，不占步数）；支持内嵌 [Werkzeug: <id>] 交互教具；Gating: check/szenario 未过 = Weiter 置灰；XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
+> Kampagne *Virtuelle Stadt-Tycoon — Von der Apfelmarkt-Fehde zum modernen Sozialstaat*: Akt V — Klausurwerkstatt der Stadtkanzlei — Episode 08, Cast: Wohnungsamtsleiterin Ingrid Sommer. Werkzeug dieser Episode: [formula].
 
-## Schritt 1 — entdecken
+<!-- Lesson v3 9步制架构：Schritt 1至8固定结构；Fehlvorstellung 夹在 Schritt 6 与 7 之间（Parser 自动跳过，不占步数）；支持内嵌 [Werkzeug: formula] 交互教具；Gating: check/szenario 未过 = Weiter 置灰；XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
+
+## Schritt 1 — entdecken: Alarm in Tycoon City: Steuerkassen-Loch vor der Wahl
+
+
+> EPISODE 08｜Akt V — Klausurwerkstatt der Stadtkanzlei｜召集人 Wohnungsamtsleiterin Ingrid Sommer：Steuerkassen-Loch vor der Wahl。
+
+HOOK 市长危机（先读剧情，再进 ZIELE）：【本集战役 EP08｜Akt V — Klausurwerkstatt der Stadtkanzlei｜虚拟城邦 Tycoon City 告急】市长办公室深夜灯火通明，Wohnungsamtsleiterin Ingrid Sommer 冲进来报告：Steuerkassen-Loch vor der Wahl，而明天市议会就要投票。集市在喊、长队在排、国库在抖：苹果集市价格战一路烧到租金黑市，再烧到基尼天平与劳资谈判桌，本集正是“Gestaltungsaufgabe: Redebeitrag und Handlungsempfehlung”的现实引爆点。你的身份是市长直属经济改革规划委员：把街头危机翻译成考点，用沙盘 [formula] 拿出可验证的数值方案，再交出一份 Klausur 满分答卷稳住议会。通关线索：TARGET: Hebt die Klausurformel aufs Brett — Bedingung: Dreischritt 30-40-30 eingehalten, drei Fachbegriffe korrekt gesetzt, Urteil mit Massstab und Abwaegung geschlossen. 上一集的结尾就是这一集的悬念——黑市账本、税改天平、劳资天平、选票天平，四座天平有一座倒了，城邦就停摆。电台正在直播，反对派等着挑错：先读 ZIELE，再啃术语，把传导机制画成你的作战地图。DE-Briefing: Episode 08 — Wohnungsamtsleiterin Ingrid Sommer meldet Steuerkassen-Loch vor der Wahl; der Stadtrat entscheidet morgen. Rette Tycoon City mit Analyse, Sandkasten und Klausur-Antwort zum Thema Gestaltungsaufgabe: Redebeitrag und Handlungsempfehlung.
 
 ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
@@ -25,7 +32,7 @@ ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
 Klausur-Satz: `Die Aufgabenarten C und D enden jeweils mit einer Gestaltungsaufgabe (AFB III); die Operatoren lauten gestalten Sie oder entwickeln Sie.`
 
-## Schritt 2 — entdecken
+## Schritt 2 — entdecken: Werkzeugkoffer von Wohnungsamtsleiterin Ingrid Sommer: 5 Begriffe scharf stellen
 
 PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
 
@@ -39,7 +46,7 @@ PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→�
 
 Klausur-Satz: `Der Redebeitrag verlangt Anlassbezug, die Auseinandersetzung mit zwei fremden Aspekten, einen eigenen Vorschlag und eine ueberzeugende Adressierung.`
 
-## Schritt 3 — entdecken
+## Schritt 3 — entdecken: Uhrwerk des Marktes: Kette von Ursache zu Wirkung
 
 ENTDECKEN（1概念 + 1文字图解）：
 
@@ -78,11 +85,13 @@ Klausur-Satz: `Die Handlungsempfehlung wertet Daten nach Quelle, Aussagebereich 
 
 **Bezug zum Konzept**: `Der Redebeitrag folgt der klassischen Redegliederung — eine feste Struktur, die überzeugt, weil sie den Zuhörer Schritt für Schritt führt.`
 
-## Schritt 4 — ausprobieren
+## Schritt 4 — ausprobieren: Sandkasten-Einsatz [formula]: Rette die Stadt mit Zahlen
 
 BEISPIEL（正确例题示范，含教具操作与解答）：
 
-[Werkzeug: lego]
+[Werkzeug: formula]
+
+TARGET: Hebt die Klausurformel aufs Brett — Bedingung: Dreischritt 30-40-30 eingehalten, drei Fachbegriffe korrekt gesetzt, Urteil mit Massstab und Abwaegung geschlossen.
 
 AUFGABE (gestalten, AFB III, 30 BE)：M1 ist eine fiktive Tabelle: In der Stadt B stieg die Jugendarbeitslosigkeit von 2021 bis 2025 von 6,4 % auf 9,1 %; die Ausbildungsplaetze blieben zu 18 % unbesetzt. M2 enthaelt zwei Kurzstimmen: Stimme A (Arbeitgeberverband) warnt, hohe Lohnforderungen kosteten Jobs; Stimme B (Gewerkschaft) fordert, dass Vollzeitarbeit ohne Aufstockung reichen muss. Entwickeln Sie in der Gutachterrolle eine Handlungsempfehlung mit zwei Massnahmen an den Stadtrat, die die Jugendarbeitslosigkeit senken sollen; beruecksichtigen Sie je eine Nebenfolge.
 
@@ -95,7 +104,7 @@ MUSTERLÖSUNG: Zunaechst grenzt die Datenkappe das Material ein: M1 stammt aus e
 
 Klausur-Satz: `Jede empfohlene Massnahme braucht eine Wirkungskette mit intendierten Effekten und moeglichen Nebenfolgen fuer andere Akteure.`
 
-## Schritt 5 — ausprobieren
+## Schritt 5 — ausprobieren: Duell der Wege: Weg A gegen Weg B
 
 VERGLEICH辨别实验（双向辨析：发言稿格式 vs. 行动建议格式）：
 
@@ -111,7 +120,7 @@ ANTWORT: A erfordert Format (i): Der Aufbau folgt der Redebeitrag-Logik — Anla
 
 Klausur-Satz: `Der Redebeitrag ueberzeugt ein Publikum mit Bezug und Appell, die Handlungsempfehlung ueberzeugt einen Adressaten mit Daten und Wirkungsketten.`
 
-## Schritt 6 — check
+## Schritt 6 — check: Selbsttest zu Gestaltungsaufgabe: Redebeitrag und Handlungsempfehlung
 
 CHECK检索默写（自测 3 题，与答案配对）：
 
@@ -133,13 +142,13 @@ Klausur-Satz: `Ohne konkrete Massnahme, ohne Folge und ohne Kompetenzbezug bleib
    中文纠偏：题目要的是两条（zwei Massnahmen），而且是两个不同的杠杆。把一条拆成两半算一条；写三条则时间不够且偏离任务。写完后自问：这两条动的是同一个阀门吗？
    Korrektur-Satz: `Die Aufgabe verlangt genau zwei Massnahmen mit je einer Wirkungskette; eine Massnahme oder deren Verdopplung erfuellt die Vorgabe nicht.`
 
-## Schritt 7 — szenario
+## Schritt 7 — szenario: Klausurtransfer: Anhoerung und Parlamentsrede zu Gestaltungsaufgabe: Redebeitrag und Handlungsempfehlung
 
 ROLLE: Du bist Teilnehmer/in eines Klausur-Simulationsdurchgangs und bearbeitest Aufgabe 3 in Echtzeit unter Zeitdruck.
 SITUATION: Die Klausur umfasst drei Aufgaben. Aufgabe 1 (darstellen, AFB I, 24 BE) und Aufgabe 2 (analysieren, AFB II, 46 BE) sind bearbeitet; es bleiben 30 Minuten fuer Aufgabe 3. Gegeben ist ein Materialpaket zu einem fiktiven Vorschlag, die Mehrwertsteuer auf Lebensmittel zu senken. Entscheiden Sie zunaechst, welches Format die Aufgabe verlangt, und entwickeln Sie anschliessend die Gestaltung in 30 Minuten; notieren Sie am Rand Ihre Minutenaufteilung.
 RUBRIC (30 XP): Erkennen und Begruenden des Formats anhand des Rollenwortes (5 XP) | Vollstaendigkeit der vier bzw. fuenf Bausteine (10 XP) | Zwei konkrete Massnahmen mit je einer Wirkungskette und Nebenfolge (10 XP) | Adressatenkompetenz und widerspruchsfreier Schluss (5 XP).
 
-## Schritt 8 — reflexion: Takeaway & Reflexion
+## Schritt 8 — reflexion: Takeaway & Reflexion: Was der Krisenstab lernt
 
 TAKEAWAY 1盒（核心总结）：
 

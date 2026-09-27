@@ -13,9 +13,16 @@ version: Lesson-v3
 
 # Lernreise: Betrieb und Mitbestimmung (L1, Ziel Klausur)
 
-<!-- Lesson-v3: 8 Schritte plus Anekdote und Fehlvorstellung; Fehlvorstellung zwischen Schritt 6 und 7 (Parser-Skip); interaktives [Werkzeug: <id>]; Gating: check/szenario nicht bestanden = Weiter gesperrt; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
+> Kampagne *Virtuelle Stadt-Tycoon — Von der Apfelmarkt-Fehde zum modernen Sozialstaat*: Akt IV-V — Tarifarena und Demokratiewerkstatt — Episode 03, Cast: Apfelgrosshaendler Yusuf Demir. Werkzeug dieser Episode: [balance-board].
 
-## Schritt 1 — entdecken: Ziele und Phaenomen-Einstieg
+<!-- Lesson-v3: 8 Schritte plus Anekdote und Fehlvorstellung; Fehlvorstellung zwischen Schritt 6 und 7 (Parser-Skip); interaktives [Werkzeug: balance-board]; Gating: check/szenario nicht bestanden = Weiter gesperrt; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
+
+## Schritt 1 — entdecken: Alarm in Tycoon City: Marktstandmieten-Wucher im Hafenviertel
+
+
+> EPISODE 03 — Akt IV-V — Tarifarena und Demokratiewerkstatt — Auftrag von Apfelgrosshaendler Yusuf Demir: Marktstandmieten-Wucher im Hafenviertel.
+
+HOOK (Stadtrats-Krise, lies zuerst): EPISODE 03 — Akt IV-V — Tarifarena und Demokratiewerkstatt — Stadt Tycoon City ruft dich in den Krisenstab. Apfelgrosshaendler Yusuf Demir stuermt mit einer Eilmeldung ins Buero: Marktstandmieten-Wucher im Hafenviertel — und morgen entscheidet der Stadtrat. Der Markt schreit, die Warteschlange waechst, die Kasse zittert: Ohne deine Analyse kippt die Stadt vom Apfelparadies in den Schwarzmarkt. Dein Auftrag in dieser Episode: Uebersetze die Strassenszene in das heutige Thema Betrieb und Mitbestimmung. Sammle Belege, stelle den Sandkasten [balance-board] scharf und liefere dem Rat eine Klausur-Antwort, die einer Pruefungskommission standhaelt. Erste Spur: TARGET: Bringt auf dem Verhandlungsbrett beide Waagschalen in die Balance — Bedingung: Zustimmung beider Baenke, Loesung mit Kompromisslinie, Ergebnisprotokoll mit zwei Begruendungen je Seite. Wer den Mechanismus versteht, rettet den Haushalt — und vielleicht die Wahl. Der Countdown laeuft, das Radio berichtet live, die Opposition wartet nur auf deinen Fehler: Oeffne die Ziele, schnapp dir die Begriffe und beweise, dass Tycoon City regierbar bleibt.
 
 ZIELE (drei messbare Ziele dieser Lektion):
 
@@ -29,7 +36,7 @@ Stell dir vor, Auftraege brechen ein, die Geschaeftsleitung will entlassen, der 
 
 Klausur-Satz: `Der Betriebsrat vertritt die Belegschaft nach dem Betriebsverfassungsgesetz (Information, Beratung, Mitbestimmung), darf aber nicht streiken.`
 
-## Schritt 2 — entdecken: Fachbegriffe und Pre-Training
+## Schritt 2 — entdecken: Werkzeugkoffer von Apfelgrosshaendler Yusuf Demir: 5 Begriffe scharf stellen
 
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
@@ -51,7 +58,7 @@ Die Begriffe greifen ineinander: **Shareholder** gegen **Stakeholder** definiert
 
 Klausur-Satz: `Während der Shareholder-Ansatz die Rendite der Anteilseigner maximiert, berücksichtigt der Stakeholder-Ansatz alle Betroffenen des Unternehmenshandelns.`
 
-## Schritt 3 — entdecken: Kernkonzept und Wirkungsmodell
+## Schritt 3 — entdecken: Uhrwerk des Marktes: Kette von Ursache zu Wirkung
 
 TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
@@ -84,11 +91,13 @@ Die paritaetische Mitbestimmung im Aufsichtsrat hat ihren Ursprung im Montanbere
 
 Bezug zum Konzept: Das Beispiel zeigt, wie aus starker Belegschaftsstimme in Krisenbranchen ein dauerhafter Ausgleich zwischen Tempo und Teilhabe wurde.
 
-## Schritt 4 — ausprobieren: Interaktive Praxis und Urteils-Waage
+## Schritt 4 — ausprobieren: Sandkasten-Einsatz [balance-board]: Rette die Stadt mit Zahlen
 
 BEISPIEL (geleitete Aufgabe mit Werkzeug):
 
 [Werkzeug: balance-board]
+
+TARGET: Bringt auf dem Verhandlungsbrett beide Waagschalen in die Balance — Bedingung: Zustimmung beider Baenke, Loesung mit Kompromisslinie, Ergebnisprotokoll mit zwei Begruendungen je Seite.
 
 Lege im Tool Pro- und Contra-Argumente auf die Waage und gewichte jedes Argument von eins bis fuenf; veraendere die Gewichte Schritt fuer Schritt und beobachte, wann das Urteil zwischen Massnahme und Verzicht umschlaegt.
 
@@ -103,7 +112,7 @@ MUSTERLOESUNG: Nach zwei Runden ohne Einigung droht Arbeitskampf als Druck. Eine
 
 Klausur-Satz: `Der Bahn-Streik zeigt die Tarifautonomie in Aktion: Arbeitskampf als letztes Mittel nach gescheiterten Verhandlungen.`
 
-## Schritt 5 — ausprobieren: Weg-Vergleich und Abgrenzung
+## Schritt 5 — ausprobieren: Duell der Wege: Weg A gegen Weg B
 
 VERGLEICH: Zwei Wege fuehren den Betrieb durch die Krise. Weg A setzt auf Effizienz mit agiler Leitung und schnellem Tempo. Weg B setzt auf Mitbestimmung nach Betriebsverfassungsgesetz mit Information, Mitsprache und Betriebsfrieden. Pruefe zuerst die Aufgabe, waehle dann den passenden Weg.
 
@@ -141,14 +150,14 @@ Klausur-Satz: `Die paritätische Mitbestimmung verhindert Konflikteskalation, ve
 2. Fehlkonzept: Mitbestimmung bedeute Mitverwaltung in allen Fragen, die Leitung duerfe ohne Zustimmung des Betriebsrats nichts mehr entscheiden.
    Korrektur-Satz: `Mitbestimmung stuft ab von Information ueber Beratung bis zur echten Mitsprache nur in gesetzlich genannten Faellen; viele Leitungsentscheidungen bleiben allein bei der Geschaeftsleitung.`
 
-## Schritt 7 — szenario: Betriebsrat und Kurzarbeit-Debatte
+## Schritt 7 — szenario: Klausurtransfer: Anhoerung und Parlamentsrede zu Betrieb und Mitbestimmung
 
 ROLLE: Du bist Mitglied des Betriebsrats und verhandelst mit der Geschaeftsleitung ueber die Einfuehrung von Kurzarbeit.
 SITUATION: Wegen Auftragsueckgangs will die Geschaeftsleitung Personal entlassen. Der Betriebsrat schlaegt stattdessen Kurzarbeit vor, um die Stellen zu sichern. Ein Teil der Belegschaft haelt Kurzarbeit fuer ein schwaches Mittel, ein anderer Teil fuerchtet die Entlassungen. Beurteile in einer zusammenhaengenden Stellungnahme mit etwa 150 Woertern, ob Kurzarbeit hier das geeignete Mittel ist, und begruende dein Urteil mit den Mitspracherechten und dem Stakeholder-Ansatz.
 AUFGABE (AFB III): Verfasse eine zusammenhaengende Darstellung von etwa 150 Woertern mit Kriterium, Anwendung und Urteil.
 RUBRIC (30 XP): These mit Kriterium SozialerFrieden (5 XP) | Darstellung von Informations- und Mitspracherechten plus Kurzarbeit (10 XP) | Abwaegung von Weg A gegen Weg B mit Tempo und Akzeptanz (10 XP) | Fazit mit Fachbegriffen und Empfehlung (5 XP)
 
-## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
+## Schritt 8 — reflexion: Takeaway & Reflexion: Was der Krisenstab lernt
 
 TAKEAWAY (Kernbotschaft in einem Kasten):
 

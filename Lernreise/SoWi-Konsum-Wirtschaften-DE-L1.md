@@ -13,9 +13,16 @@ version: Lesson-v3
 
 # Lernreise: Konsum und Wirtschaften (L1, Ziel Klausur)
 
-<!-- Lesson-v3: 8 Schritte plus Anekdote und Fehlvorstellung; Fehlvorstellung zwischen Schritt 6 und 7 (Parser-Skip); interaktives [Werkzeug: <id>]; Gating: check/szenario nicht bestanden = Weiter gesperrt; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
+> Kampagne *Virtuelle Stadt-Tycoon — Von der Apfelmarkt-Fehde zum modernen Sozialstaat*: Akt I-II — Apfelmarkt und Mietendeckel — Episode 15, Cast: Azubi-Vertreter Leon Fischer. Werkzeug dieser Episode: [markt-sim].
 
-## Schritt 1 — entdecken: Ziele und Phaenomen-Einstieg
+<!-- Lesson-v3: 8 Schritte plus Anekdote und Fehlvorstellung; Fehlvorstellung zwischen Schritt 6 und 7 (Parser-Skip); interaktives [Werkzeug: markt-sim]; Gating: check/szenario nicht bestanden = Weiter gesperrt; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
+
+## Schritt 1 — entdecken: Alarm in Tycoon City: Azubi-Mangel in der Marktkueche
+
+
+> EPISODE 15 — Akt I-II — Apfelmarkt und Mietendeckel — Auftrag von Azubi-Vertreter Leon Fischer: Azubi-Mangel in der Marktkueche.
+
+HOOK (Stadtrats-Krise, lies zuerst): EPISODE 15 — Akt I-II — Apfelmarkt und Mietendeckel — Stadt Tycoon City ruft dich in den Krisenstab. Azubi-Vertreter Leon Fischer stuermt mit einer Eilmeldung ins Buero: Azubi-Mangel in der Marktkueche — und morgen entscheidet der Stadtrat. Der Markt schreit, die Warteschlange waechst, die Kasse zittert: Ohne deine Analyse kippt die Stadt vom Apfelparadies in den Schwarzmarkt. Dein Auftrag in dieser Episode: Uebersetze die Strassenszene in das heutige Thema Konsum und Wirtschaften. Sammle Belege, stelle den Sandkasten [markt-sim] scharf und liefere dem Rat eine Klausur-Antwort, die einer Pruefungskommission standhaelt. Erste Spur: TARGET: Stellt im Sandkasten Angebot und Nachfrage so ein, dass der Gleichgewichtspreis zwischen 8 und 12 Euro liegt, die gehandelte Menge mindestens 100 Einheiten erreicht und ein Probe-Hoechstpreis von 6 Euro als bindend mit Warteschlange entlarvt wird. Wer den Mechanismus versteht, rettet den Haushalt — und vielleicht die Wahl. Der Countdown laeuft, das Radio berichtet live, die Opposition wartet nur auf deinen Fehler: Oeffne die Ziele, schnapp dir die Begriffe und beweise, dass Tycoon City regierbar bleibt.
 
 ZIELE (drei messbare Ziele dieser Lektion):
 
@@ -29,7 +36,7 @@ Stell dir vor, ein Influencer preist neue Sneaker, ein gruunes Label verspricht 
 
 Klausur-Satz: `Bedürfnisse sind unbegrenzt, Güter knapp — aus dieser Spannung entsteht alles Wirtschaften; erst mit Kaufkraft wird aus Bedürfnis Bedarf, erst am Markt wird daraus Nachfrage.`
 
-## Schritt 2 — entdecken: Fachbegriffe und Pre-Training
+## Schritt 2 — entdecken: Werkzeugkoffer von Azubi-Vertreter Leon Fischer: 5 Begriffe scharf stellen
 
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
@@ -51,7 +58,7 @@ Die Begriffe greifen ineinander: **Homo oeconomicus** liefert den Massstab der N
 
 Klausur-Satz: `Der homo oeconomicus entscheidet vollständig informiert und nutzenmaximierend — ein Modell, keine Menschenbeschreibung.`
 
-## Schritt 3 — entdecken: Kernkonzept und Wirkungsmodell
+## Schritt 3 — entdecken: Uhrwerk des Marktes: Kette von Ursache zu Wirkung
 
 TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
@@ -84,11 +91,13 @@ Das Wort Oekonomie stammt aus dem Griechischen: oikos heisst Haus, nomos heisst 
 
 Bezug zum Konzept: Das Beispiel zeigt, wie Konsum zwischen Nutzenwahl und Umweltverantwortung steht und warum Information und bezahlbare Alternativen ueber Souveraenitaet entscheiden.
 
-## Schritt 4 — ausprobieren: Interaktive Praxis und Konsum-Labor
+## Schritt 4 — ausprobieren: Sandkasten-Einsatz [markt-sim]: Rette die Stadt mit Zahlen
 
 BEISPIEL (geleitete Aufgabe mit Werkzeug):
 
 [Werkzeug: markt-sim]
+
+TARGET: Stellt im Sandkasten Angebot und Nachfrage so ein, dass der Gleichgewichtspreis zwischen 8 und 12 Euro liegt, die gehandelte Menge mindestens 100 Einheiten erreicht und ein Probe-Hoechstpreis von 6 Euro als bindend mit Warteschlange entlarvt wird.
 
 Lege im Tool zwei Koerbe an: konventionell billig ohne Label und nachhaltig teurer mit Label. Veraendere Preis und Informationsstand Schritt fuer Schritt und beobachte, wann die Wahl dem Nutzen und wann sie dem Signal folgt.
 
@@ -103,7 +112,7 @@ MUSTERLOESUNG: Der Influencer-Korb folgt Signalen statt Abwaegung: hohe Nachfrag
 
 Klausur-Satz: `Der Influencer-Einfluss belegt Fremdbestimmung: Kaufentscheidungen folgen sozialen Signalen statt eigenem Nutzenkalkül.`
 
-## Schritt 5 — ausprobieren: Weg-Vergleich und Abgrenzung
+## Schritt 5 — ausprobieren: Duell der Wege: Weg A gegen Weg B
 
 VERGLEICH: Zwei Wege deuten denselben Kauf unterschiedlich. Weg A sieht den souveranen Konsumenten mit Nutzenstreben und Wettbewerb. Weg B uebt oekologische Konsumkritik mit Blick auf Nebenkosten, Fussabdruck und Zukunft. Pruefe zuerst die Aufgabe, waehle dann den passenden Weg.
 
@@ -121,7 +130,7 @@ ANTWORT: Aufgabe A folgt erst Weg A mit Preis- und Wettbewerbslob, dann Weg B mi
 
 Klausur-Satz: `Ein Werbeverbot ist ein starkes staatliches Instrument, während ein Label das mildere Mittel darstellt.`
 
-## Schritt 6 — check: Selbsttest zu Konsum
+## Schritt 6 — check: Selbsttest zu Konsum und Wirtschaften
 
 CHECK (drei Fragen mit Antworten):
 
@@ -141,14 +150,14 @@ Klausur-Satz: `Nachhaltigkeit ruht auf drei Säulen, die nicht gegeneinander aus
 2. Fehlkonzept: Souveraen sei, wer spontan kaufe, was der Feed lobe; Beeinflussung gebe es nur bei anderen, nicht bei mir.
    Korrektur-Satz: `Souveraen ist nur, wer Preise vergleicht, Label prueft und Alternativen kennt; wer dem Impuls folgt, waehlt fremdbestimmt trotz Gefuehl von Freiheit.`
 
-## Schritt 7 — szenario: Verbraucherinitiative und Werberegulierung-Debatte
+## Schritt 7 — szenario: Klausurtransfer: Anhoerung und Parlamentsrede zu Konsum und Wirtschaften
 
 ROLLE: Du bist Mitglied einer Verbraucherinitiative und sprichst auf einer oeffentlichen Veranstaltung.
 SITUATION: Eine Diskussion dreht sich um die Frage, ob Werbung fuer ungesunde oder nicht nachhaltige Produkte staerker begrenzt werden soll. Ein Teil des Publikums fordert ein Werbeverbot, ein anderer Teil setzt auf Information und freiwillige Selbstverpflichtung der Unternehmen. Beurteile in einer zusammenhaengenden Stellungnahme mit etwa 150 Woertern, welches Mittel du befuerwortest, und begruende dein Urteil mit Blick auf Konsumentensouveraenitaet und Nachhaltigkeit.
 AUFGABE (AFB III): Verfasse eine zusammenhaengende Darstellung von etwa 150 Woertern mit Kriterium, Anwendung und Urteil.
 RUBRIC (30 XP): These mit Kriterium Souveraenitaet und Nachhaltigkeit (5 XP) | Darstellung von Werbung als Signal und Label als Info (10 XP) | Abwaegung von Verbot gegen mildes Mittel mit Fussabdruck und Nebenkosten (10 XP) | Fazit mit Fachbegriffen und konkreter Empfehlung (5 XP)
 
-## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
+## Schritt 8 — reflexion: Takeaway & Reflexion: Was der Krisenstab lernt
 
 TAKEAWAY (Kernbotschaft in einem Kasten):
 

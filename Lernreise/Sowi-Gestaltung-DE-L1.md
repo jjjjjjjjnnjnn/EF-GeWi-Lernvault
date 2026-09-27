@@ -13,9 +13,16 @@ version: Lesson-v3
 
 # Lernreise: Gestaltungsaufgabe: Redebeitrag und Handlungsempfehlung (L1, Ziel Klausur)
 
-<!-- Lesson-v3: 8 Schritte plus Anekdote und Fehlvorstellung; Fehlvorstellung zwischen Schritt 6 und 7 (Parser-Skip); interaktives [Werkzeug: <id>]; Gating: check/szenario nicht bestanden = Weiter gesperrt; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
+> Kampagne *Virtuelle Stadt-Tycoon — Von der Apfelmarkt-Fehde zum modernen Sozialstaat*: Akt V — Klausurwerkstatt der Stadtkanzlei — Episode 07, Cast: Schwarzmakler Viktor Kral. Werkzeug dieser Episode: [formula].
 
-## Schritt 1 — entdecken: Ziele & Phaenomen-Einstieg
+<!-- Lesson-v3: 8 Schritte plus Anekdote und Fehlvorstellung; Fehlvorstellung zwischen Schritt 6 und 7 (Parser-Skip); interaktives [Werkzeug: formula]; Gating: check/szenario nicht bestanden = Weiter gesperrt; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
+
+## Schritt 1 — entdecken: Alarm in Tycoon City: Gini-Alarm 0,45 auf der Rathaus-Anzeigetafel
+
+
+> EPISODE 07 — Akt V — Klausurwerkstatt der Stadtkanzlei — Auftrag von Schwarzmakler Viktor Kral: Gini-Alarm 0,45 auf der Rathaus-Anzeigetafel.
+
+HOOK (Stadtrats-Krise, lies zuerst): EPISODE 07 — Akt V — Klausurwerkstatt der Stadtkanzlei — Stadt Tycoon City ruft dich in den Krisenstab. Schwarzmakler Viktor Kral stuermt mit einer Eilmeldung ins Buero: Gini-Alarm 0,45 auf der Rathaus-Anzeigetafel — und morgen entscheidet der Stadtrat. Der Markt schreit, die Warteschlange waechst, die Kasse zittert: Ohne deine Analyse kippt die Stadt vom Apfelparadies in den Schwarzmarkt. Dein Auftrag in dieser Episode: Uebersetze die Strassenszene in das heutige Thema Gestaltungsaufgabe: Redebeitrag und Handlungsempfehlung. Sammle Belege, stelle den Sandkasten [formula] scharf und liefere dem Rat eine Klausur-Antwort, die einer Pruefungskommission standhaelt. Erste Spur: TARGET: Hebt die Klausurformel aufs Brett — Bedingung: Dreischritt 30-40-30 eingehalten, drei Fachbegriffe korrekt gesetzt, Urteil mit Massstab und Abwaegung geschlossen. Wer den Mechanismus versteht, rettet den Haushalt — und vielleicht die Wahl. Der Countdown laeuft, das Radio berichtet live, die Opposition wartet nur auf deinen Fehler: Oeffne die Ziele, schnapp dir die Begriffe und beweise, dass Tycoon City regierbar bleibt.
 
 ZIELE (drei messbare Ziele dieser Lektion):
 
@@ -29,7 +36,7 @@ Stell dir vor, du hast dreissig Minuten, einen Stapel Material und eine leere Se
 
 Klausur-Satz: `Die Aufgabenarten C und D enden jeweils mit einer Gestaltungsaufgabe; die Operatoren lauten gestalten Sie oder entwickeln Sie.`
 
-## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
+## Schritt 2 — entdecken: Werkzeugkoffer von Schwarzmakler Viktor Kral: 5 Begriffe scharf stellen
 
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
@@ -51,7 +58,7 @@ Die Begriffe greifen ineinander: **Redebeitrag** braucht Buehne und Appell aus H
 
 Klausur-Satz: `Der Redebeitrag verlangt Anlassbezug, die Auseinandersetzung mit zwei fremden Aspekten, einen eigenen Vorschlag und eine ueberzeugende Adressierung.`
 
-## Schritt 3 — entdecken: Kernkonzept & Wirkungsmodell
+## Schritt 3 — entdecken: Uhrwerk des Marktes: Kette von Ursache zu Wirkung
 
 TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
@@ -59,9 +66,9 @@ TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
 Rede ohne Beleg — Meinung oder Wissen? Massnahme ohne Nebenfolge — Hilfe oder Risiko? Wer empfiehlt, haftet fuer Folgen?
 
-### Spiel-Aufgabe mit [Werkzeug: balance-board]
+### Spiel-Aufgabe mit [Werkzeug: formula]
 
-Oeffne [Werkzeug: balance-board]. Lege Massnahme A gegen Massnahme B. Gewichte Quelle, Aussagebereich und Betroffene je 1 bis 5. Baue je eine Wirkungskette mit beabsichtigtem Effekt und Nebenfolge und beobachte, wie die Waage bei vergessener Nebenfolge kippt. Benenne zuerst Grenzen des Materials.
+Oeffne [Werkzeug: formula]. Lege Massnahme A gegen Massnahme B. Gewichte Quelle, Aussagebereich und Betroffene je 1 bis 5. Baue je eine Wirkungskette mit beabsichtigtem Effekt und Nebenfolge und beobachte, wie die Waage bei vergessener Nebenfolge kippt. Benenne zuerst Grenzen des Materials.
 
 ### Aha-Moment & Gesetz
 
@@ -84,15 +91,17 @@ Die Bausteine einer guten Rede sind viel aelter, als sie aussehen. Schon in der 
 
 Bezug zum Konzept: `Das Beispiel zeigt, wie aus antiker Ordnung ein pruefbarer Bauplan aus Beleg und Kette und Urteil wird.`
 
-## Schritt 4 — ausprobieren: Interaktive Praxis & Satz-Labor
+## Schritt 4 — ausprobieren: Sandkasten-Einsatz [formula]: Rette die Stadt mit Zahlen
 
 BEISPIEL (geleitete Aufgabe mit Werkzeug):
 
-[Werkzeug: lego]
+[Werkzeug: formula]
+
+TARGET: Hebt die Klausurformel aufs Brett — Bedingung: Dreischritt 30-40-30 eingehalten, drei Fachbegriffe korrekt gesetzt, Urteil mit Massstab und Abwaegung geschlossen.
 
 Ziehe im Tool Satzbausteine aus These und Beleg und Urteil in die richtige Reihenfolge und pruefe per Klick, ob Operator und Fachbegriff und Kriterium vollstaendig sind; verbessere die Reihenfolge, bis jeder Baustein am richtigen Platz liegt.
 
-AUFGABE Waage-Raetsel (AFB II): Entwirf auf [Werkzeug: lego] einen Redebeitrag mit zwei Massnahmen. Gewichte Wirkung und Nebenfolge je 1 bis 5, benenne Materialgrenzen und empfehle begruendet.
+AUFGABE Waage-Raetsel (AFB II): Entwirf auf [Werkzeug: formula] einen Redebeitrag mit zwei Massnahmen. Gewichte Wirkung und Nebenfolge je 1 bis 5, benenne Materialgrenzen und empfehle begruendet.
 
 HILFE:
 1. Schritt 1: Werte Quelle, Bereich und Frage aus. 2. Schritt 2: Baue Ketten mit Nebenfolgen. 3. Schritt 3: Deute an Verantwortung und formuliere den Klausur-Satz.
@@ -101,7 +110,7 @@ MUSTERLOESUNG: Massnahme A wirkt schnell mit Nebenlast fuer Dritte; B wirkt lang
 
 Klausur-Satz: `Jede empfohlene Massnahme braucht eine Wirkungskette mit beabsichtigten Effekten und moeglichen Nebenfolgen fuer andere Akteure.`
 
-## Schritt 5 — ausprobieren: Wegvergleich & Abgrenzung
+## Schritt 5 — ausprobieren: Duell der Wege: Weg A gegen Weg B
 
 VERGLEICH (Wahl des Weges, A gegen B):
 
@@ -121,7 +130,7 @@ ANTWORT: Aufgabe A folgt Weg A, weil Trennung und Pfandstationen sofort wirken u
 
 Klausur-Satz: `Der Redebeitrag ueberzeugt ein Publikum mit Bezug und Appell, die Handlungsempfehlung ueberzeugt einen Adressaten mit Daten und Wirkungsketten.`
 
-## Schritt 6 — check: Selbsttest zu Gestaltungskompetenz
+## Schritt 6 — check: Selbsttest zu Gestaltungsaufgabe: Redebeitrag und Handlungsempfehlung
 
 CHECK (drei Fragen mit Antworten):
 
@@ -141,14 +150,14 @@ Klausur-Satz: `Ohne konkrete Massnahme, ohne Folge und ohne Kompetenzbezug bleib
 2. Fehlkonzept: Redebeitrag und Handlungsempfehlung seien gleich aufgebaut, nur die Ueberschrift sei anders.
    Korrektur-Satz: `Der Redebeitrag spricht ein Publikum mit Appell an, die Empfehlung beraet einen Adressaten mit Massnahmen und Kompetenzpruefung.`
 
-## Schritt 7 — szenario: Klausur-Simulation & Gestaltungs-Debatte
+## Schritt 7 — szenario: Klausurtransfer: Anhoerung und Parlamentsrede zu Gestaltungsaufgabe: Redebeitrag und Handlungsempfehlung
 
 ROLLE: Du bist Teilnehmerin bzw. Teilnehmer eines Klausur-Simulationsdurchgangs und bearbeitest Aufgabe 3 in Echtzeit unter Zeitdruck.
 SITUATION: Die Klausur umfasst drei Aufgaben. Aufgabe 1 mit Darstellen und Aufgabe 2 mit Analysieren sind bearbeitet; es bleiben 30 Minuten fuer Aufgabe 3. Gegeben ist ein Materialpaket zu einem Vorschlag, die Ausgaben fuer Schulessen sozial zu staffeln. Entscheide zunaechst, welches Format die Aufgabe verlangt, und entwickle anschliessend die Gestaltung in 30 Minuten; notiere am Rand deine Minutenaufteilung.
 AUFGABE (AFB III): Verfasse eine zusammenhaengende Darstellung von etwa 150 Woertern mit Kriterium, Anwendung und Urteil.
 RUBRIC (30 XP): Erkennen und Begruenden des Formats anhand des Rollenwortes (5 XP) | Vollstaendigkeit der vier bzw. fuenf Bausteine (10 XP) | Zwei konkrete Massnahmen mit je einer Wirkungskette und Nebenfolge (10 XP) | Adressatenkompetenz und widerspruchsfreier Schluss (5 XP).
 
-## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
+## Schritt 8 — reflexion: Takeaway & Reflexion: Was der Krisenstab lernt
 
 TAKEAWAY (Kernbotschaft in einem Kasten):
 

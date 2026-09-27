@@ -13,9 +13,16 @@ version: Lesson-v3
 
 # Lernreise: Partizipation (L1, Ziel Klausur)
 
-<!-- Lesson-v3: 8 Schritte plus Anekdote und Fehlvorstellung; Fehlvorstellung zwischen Schritt 6 und 7 (Parser-Skip); interaktives [Werkzeug: <id>]; Gating: check/szenario nicht bestanden = Weiter gesperrt; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
+> Kampagne *Virtuelle Stadt-Tycoon — Von der Apfelmarkt-Fehde zum modernen Sozialstaat*: Akt IV-V — Tarifarena und Demokratiewerkstatt — Episode 19, Cast: Wahlleiterin Sabine Auer. Werkzeug dieser Episode: [balance-board].
 
-## Schritt 1 — entdecken: Ziele & Phaenomen-Einstieg
+<!-- Lesson-v3: 8 Schritte plus Anekdote und Fehlvorstellung; Fehlvorstellung zwischen Schritt 6 und 7 (Parser-Skip); interaktives [Werkzeug: balance-board]; Gating: check/szenario nicht bestanden = Weiter gesperrt; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
+
+## Schritt 1 — entdecken: Alarm in Tycoon City: Wahlplakat-Vandalismus in der Bahnhofstrasse
+
+
+> EPISODE 19 — Akt IV-V — Tarifarena und Demokratiewerkstatt — Auftrag von Wahlleiterin Sabine Auer: Wahlplakat-Vandalismus in der Bahnhofstrasse.
+
+HOOK (Stadtrats-Krise, lies zuerst): EPISODE 19 — Akt IV-V — Tarifarena und Demokratiewerkstatt — Stadt Tycoon City ruft dich in den Krisenstab. Wahlleiterin Sabine Auer stuermt mit einer Eilmeldung ins Buero: Wahlplakat-Vandalismus in der Bahnhofstrasse — und morgen entscheidet der Stadtrat. Der Markt schreit, die Warteschlange waechst, die Kasse zittert: Ohne deine Analyse kippt die Stadt vom Apfelparadies in den Schwarzmarkt. Dein Auftrag in dieser Episode: Uebersetze die Strassenszene in das heutige Thema Partizipation. Sammle Belege, stelle den Sandkasten [balance-board] scharf und liefere dem Rat eine Klausur-Antwort, die einer Pruefungskommission standhaelt. Erste Spur: TARGET: Bringt auf dem Verhandlungsbrett beide Waagschalen in die Balance — Bedingung: Zustimmung beider Baenke, Loesung mit Kompromisslinie, Ergebnisprotokoll mit zwei Begruendungen je Seite. Wer den Mechanismus versteht, rettet den Haushalt — und vielleicht die Wahl. Der Countdown laeuft, das Radio berichtet live, die Opposition wartet nur auf deinen Fehler: Oeffne die Ziele, schnapp dir die Begriffe und beweise, dass Tycoon City regierbar bleibt.
 
 ZIELE (drei messbare Ziele dieser Lektion):
 
@@ -27,7 +34,7 @@ ZIELE (drei messbare Ziele dieser Lektion):
 
 Fridays for Future fuellt die Strassen, die Parteien bleiben leer, online klicken Tausende in Sekunden. Die Jugend meidet die Partei, sucht aber Wirkung. Zaehlt der Klick so viel wie die Stimme, und schuetzt die Mehrheit auch die Minderheit? In dieser Lektion lernst du zwei Wege der Antwort: Weg A setzt auf konventionelle Beteiligung durch Wahl und Parteiarbeit, Weg B auf unkonventionelle Beteiligung durch Demo, Ungehorsam und digitalen Protest.
 
-## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
+## Schritt 2 — entdecken: Werkzeugkoffer von Wahlleiterin Sabine Auer: 5 Begriffe scharf stellen
 
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
@@ -49,7 +56,7 @@ Die Begriffe greifen ineinander: Konventionelle Teilhabe sichert Dauer ueber Man
 
 Klausur-Satz: `Der Weg zum Volksentscheid führt über Initiative, Begehren (Unterschriftenquorum) und Entscheid (Zustimmungsquorum).`
 
-## Schritt 3 — entdecken: Kernkonzept & Wirkungsmodell
+## Schritt 3 — entdecken: Uhrwerk des Marktes: Kette von Ursache zu Wirkung
 
 TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
@@ -82,11 +89,13 @@ In Deutschland darf man bei der Bundestagswahl ab 18 Jahren wählen. Bei der Eur
 
 Bezug zum Konzept: `Das Beispiel zeigt, wie unterschiedlich offen die Kanäle der Beteiligung je nach Wahl und Alter sind.`
 
-## Schritt 4 — ausprobieren: Interaktive Praxis & Urteils-Waage
+## Schritt 4 — ausprobieren: Sandkasten-Einsatz [balance-board]: Rette die Stadt mit Zahlen
 
 BEISPIEL (geleitete Aufgabe mit Werkzeug):
 
 [Werkzeug: balance-board]
+
+TARGET: Bringt auf dem Verhandlungsbrett beide Waagschalen in die Balance — Bedingung: Zustimmung beider Baenke, Loesung mit Kompromisslinie, Ergebnisprotokoll mit zwei Begruendungen je Seite.
 
 Lege im Tool Pro- und Contra-Argumente auf die Waage und gewichte jedes Argument von 1 bis 5; veraendere die Gewichte Schritt fuer Schritt und beobachte, wann das Urteil zwischen verfasster und freier Form oder zwischen Breite und Tiefe umschlaegt.
 
@@ -101,7 +110,7 @@ MUSTERLOESUNG: Die Waage zeigt: Digitale Senkung hebt den Klick, nicht die Bindu
 
 Klausur-Satz: `E-Partizipation senkt die Kosten der Beteiligung, ersetzt aber keine dauerhafte politische Organisation.`
 
-## Schritt 5 — ausprobieren: Wegvergleich & Abgrenzung
+## Schritt 5 — ausprobieren: Duell der Wege: Weg A gegen Weg B
 
 VERGLEICH (Wahl des Weges, Weg A gegen Weg B):
 
@@ -141,14 +150,14 @@ Klausur-Satz: `Direkte Demokratie kann die repräsentative Demokratie ergänzen,
 2. Fehlkonzept: Direkte Demokratie mit Volksentscheid schuetze Minderheiten genauso wie repraesentative Verfahren.
    Korrektur-Satz: `Der Volksentscheid kennt keine eingebaute Minderheitssicherung; erst Grundrechte und Gerichte begrenzen die Mehrheit.`
 
-## Schritt 7 — szenario: Buergerversammlung & Rat-Debatte
+## Schritt 7 — szenario: Klausurtransfer: Anhoerung und Parlamentsrede zu Partizipation
 
 ROLLE: Du bist Teilnehmerin bzw. Teilnehmer an einer simulierten Buergerversammlung zum Klimaschutz.
 SITUATION: Die Stadt will einen Buergerrat zum Thema Verkehr einrichten. Ein Teil der Anwesenden haelt das fuer echte Teilhabe, ein anderer Teil nennt es eine Alibi-Veranstaltung, weil die Empfehlungen nicht bindend sind. Beurteile in einer zusammenhängenden Stellungnahme (ca. 150 Wörter), ob ein Bürgerrat die politische Beteiligung stärkt, und begründe dein Urteil mit mindestens zwei Argumenten.
 AUFGABE (AFB III): Verfasse eine zusammenhaengende Darstellung von etwa 150 Woertern mit Kriterium, Anwendung und Urteil.
 RUBRIC (30 XP): These mit Kriterium Teilhabe und Minderheitenschutz (5 XP) | Darstellung von konventioneller und unkonventioneller Form (10 XP) | Anwendung auf Buergerat mit Verbindlichkeit und Repraesentation (10 XP) | Fazit mit Fachbegriffen und Klausur-Satz (5 XP).
 
-## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
+## Schritt 8 — reflexion: Takeaway & Reflexion: Was der Krisenstab lernt
 
 TAKEAWAY (Kernbotschaft in einem Kasten):
 

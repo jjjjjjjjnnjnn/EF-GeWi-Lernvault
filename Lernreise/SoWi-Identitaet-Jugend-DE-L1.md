@@ -13,9 +13,16 @@ version: Lesson-v3
 
 # Lernreise: Identität und Jugend (L1, Ziel Klausur)
 
-<!-- Lesson-v3: 8 Schritte plus Anekdote und Fehlvorstellung; Fehlvorstellung zwischen Schritt 6 und 7 (Parser-Skip); interaktives [Werkzeug: <id>]; Gating: check/szenario nicht bestanden = Weiter gesperrt; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
+> Kampagne *Virtuelle Stadt-Tycoon — Von der Apfelmarkt-Fehde zum modernen Sozialstaat*: Akt IV-V — Tarifarena und Demokratiewerkstatt — Episode 11, Cast: Hafenarbeiterin Mia Petersen. Werkzeug dieser Episode: [balance-board].
 
-## Schritt 1 — entdecken: Ziele & Phaenomen-Einstieg
+<!-- Lesson-v3: 8 Schritte plus Anekdote und Fehlvorstellung; Fehlvorstellung zwischen Schritt 6 und 7 (Parser-Skip); interaktives [Werkzeug: balance-board]; Gating: check/szenario nicht bestanden = Weiter gesperrt; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
+
+## Schritt 1 — entdecken: Alarm in Tycoon City: Streiknacht am Hafen bei Flutlicht
+
+
+> EPISODE 11 — Akt IV-V — Tarifarena und Demokratiewerkstatt — Auftrag von Hafenarbeiterin Mia Petersen: Streiknacht am Hafen bei Flutlicht.
+
+HOOK (Stadtrats-Krise, lies zuerst): EPISODE 11 — Akt IV-V — Tarifarena und Demokratiewerkstatt — Stadt Tycoon City ruft dich in den Krisenstab. Hafenarbeiterin Mia Petersen stuermt mit einer Eilmeldung ins Buero: Streiknacht am Hafen bei Flutlicht — und morgen entscheidet der Stadtrat. Der Markt schreit, die Warteschlange waechst, die Kasse zittert: Ohne deine Analyse kippt die Stadt vom Apfelparadies in den Schwarzmarkt. Dein Auftrag in dieser Episode: Uebersetze die Strassenszene in das heutige Thema Identität und Jugend. Sammle Belege, stelle den Sandkasten [balance-board] scharf und liefere dem Rat eine Klausur-Antwort, die einer Pruefungskommission standhaelt. Erste Spur: TARGET: Bringt auf dem Verhandlungsbrett beide Waagschalen in die Balance — Bedingung: Zustimmung beider Baenke, Loesung mit Kompromisslinie, Ergebnisprotokoll mit zwei Begruendungen je Seite. Wer den Mechanismus versteht, rettet den Haushalt — und vielleicht die Wahl. Der Countdown laeuft, das Radio berichtet live, die Opposition wartet nur auf deinen Fehler: Oeffne die Ziele, schnapp dir die Begriffe und beweise, dass Tycoon City regierbar bleibt.
 
 ZIELE (drei messbare Ziele dieser Lektion):
 
@@ -29,7 +36,7 @@ Stell dir vor, du postest ein Foto aus dem Urlaub mit der Familie und bekommst i
 
 Klausur-Satz: `Identitaet entsteht in der Jugend als Balanceleistung zwischen eigenen Wuenschen und gesellschaftlichen Erwartungen.`
 
-## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
+## Schritt 2 — entdecken: Werkzeugkoffer von Hafenarbeiterin Mia Petersen: 5 Begriffe scharf stellen
 
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
@@ -51,7 +58,7 @@ Die Begriffe greifen ineinander: **Identitaet** liefert das Ziel, **Entwicklungs
 
 Klausur-Satz: `Nach Hurrelmann verarbeiten Jugendliche innere und aeussere Realitaet produktiv, statt sich nur anzupassen.`
 
-## Schritt 3 — entdecken: Kernkonzept & Wirkungsmodell
+## Schritt 3 — entdecken: Uhrwerk des Marktes: Kette von Ursache zu Wirkung
 
 TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
@@ -59,9 +66,9 @@ TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
 Spiegel, Like, Story — wer bist du, wenn alle zusehen? Ausdruck frei, Vergleichsdruck hoch — befreit das Netz oder formt es dich?
 
-### Spiel-Aufgabe mit [Werkzeug: gini-allocator]
+### Spiel-Aufgabe mit [Werkzeug: balance-board]
 
-Oeffne [Werkzeug: gini-allocator]. Stelle den Anerkennungs-Regler von stark ungleicher Verteilung auf ausgeglichene Verteilung um. Beobachte, wie sich die Kurve abflacht: von Star-Kultur mit wenigen Vielbeachteten zu breiter Teilhabe. Deute mit Hurrelmann und Mead: Selbst entsteht durch die Augen der Anderen, Ausgleich braucht Distanz.
+Oeffne [Werkzeug: balance-board]. Stelle den Anerkennungs-Regler von stark ungleicher Verteilung auf ausgeglichene Verteilung um. Beobachte, wie sich die Kurve abflacht: von Star-Kultur mit wenigen Vielbeachteten zu breiter Teilhabe. Deute mit Hurrelmann und Mead: Selbst entsteht durch die Augen der Anderen, Ausgleich braucht Distanz.
 
 ### Aha-Moment & Gesetz
 
@@ -84,11 +91,13 @@ Der Begriff Identitaetskrise stammt urspruenglich aus der Fachsprache: Der Psych
 
 Bezug zum Konzept: `Das Beispiel zeigt, wie aus einer Beobachtung ein pruefbarer sozialer Mechanismus aus Spiegel und Ausgleich wird.`
 
-## Schritt 4 — ausprobieren: Interaktive Praxis & Urteils-Waage
+## Schritt 4 — ausprobieren: Sandkasten-Einsatz [balance-board]: Rette die Stadt mit Zahlen
 
 BEISPIEL (geleitete Aufgabe mit Werkzeug):
 
 [Werkzeug: balance-board]
+
+TARGET: Bringt auf dem Verhandlungsbrett beide Waagschalen in die Balance — Bedingung: Zustimmung beider Baenke, Loesung mit Kompromisslinie, Ergebnisprotokoll mit zwei Begruendungen je Seite.
 
 Lege im Tool Pro- und Contra-Argumente auf die Waage und gewichte jedes Argument von 1 bis 5; veraendere die Gewichte Schritt fuer Schritt und beobachte, wann das Urteil zwischen Gewinn und Verlust oder zwischen Foerderung und Begrenzung umschlaegt.
 
@@ -101,7 +110,7 @@ MUSTERLOESUNG: Start mit steiler Kurve zeigt Star-Luecke; nach Ausgleich hebt si
 
 Klausur-Satz: `Soziale Netzwerke sind fuer die Identitaetsentwicklung ambivalent: Sie erweitern Ausdrucksmöglichkeiten, verstaerken aber zugleich den Vergleichsdruck.`
 
-## Schritt 5 — ausprobieren: Wegvergleich & Abgrenzung
+## Schritt 5 — ausprobieren: Duell der Wege: Weg A gegen Weg B
 
 VERGLEICH (Wahl des Weges, A gegen B):
 
@@ -121,7 +130,7 @@ ANTWORT: Aufgabe A folgt Weg A, weil aktiver Ausgleich von Wunsch und Anforderun
 
 Klausur-Satz: `Wertewandel bezeichnet die Verschiebung gesellschaftlicher Wertprioritaeten, die den Rahmen der individuellen Identitaetsarbeit veraendert.`
 
-## Schritt 6 — check: Selbsttest zu Jugendidentitaet
+## Schritt 6 — check: Selbsttest zu Identität und Jugend
 
 CHECK (drei Fragen mit Antworten):
 
@@ -141,14 +150,14 @@ Klausur-Satz: `Identitaet ist keine Eigenschaft, sondern eine Balanceleistung �
 2. Fehlkonzept: Soziale Medien machten automatisch alle gleich ungluecklich, Likes seien immer Konformitaetsdruck.
    Korrektur-Satz: `Soziale Medien erweitern Ausdruck und Vergleich zugleich; ob Druck oder Gewinn entsteht, entscheidet sich am Umgang mit Distanz und Anerkennung.`
 
-## Schritt 7 — szenario: Schuelervertretung & Abschlussfeier-Debatte
+## Schritt 7 — szenario: Klausurtransfer: Anhoerung und Parlamentsrede zu Identität und Jugend
 
 ROLLE: Du bist Mitglied einer Schuelervertretung und haeltst auf einem Schulforum eine kurze Stellungnahme zur Wertewandel-Debatte.
 SITUATION: An deiner Schule wird ueber die Abschlussfeier diskutiert. Aeltere Lehrkraefte fordern traditionelle Formen, waehrend Mitschuelerinnen und Mitschueler die Feier staerker an Familie, Sicherheit und Nachhaltigkeit ausrichten wollen. Eine Jugendstudie zeigt, dass Familien- und Sicherheitswerte unter Jugendlichen gestiegen sind. Beurteile in einer zusammenhaengenden Stellungnahme (ca. 150 Woerter), ob dieser Wertewandel als Verlust oder als Gewinn fuer die Jugend zu bewerten ist.
 AUFGABE (AFB III): Verfasse eine zusammenhaengende Darstellung von etwa 150 Woertern mit Kriterium, Anwendung und Urteil.
 RUBRIC (30 XP): These mit Kriterium Autonomie in Bindung (5 XP) | Darstellung beider Wege mit Fachbegriffen (10 XP) | Anwendung auf Feier-Streit mit Beleg aus der Studie (10 XP) | Fazit mit eigenem Urteil und Ausblick (5 XP).
 
-## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
+## Schritt 8 — reflexion: Takeaway & Reflexion: Was der Krisenstab lernt
 
 TAKEAWAY (Kernbotschaft in einem Kasten):
 

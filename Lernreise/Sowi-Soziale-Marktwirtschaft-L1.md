@@ -13,9 +13,16 @@ version: Lesson-v3-pilot
 
 # Lernreise: Soziale Marktwirtschaft (L1 Pilot, Lesson v3, Ziel Klausur)
 
+> Kampagne *Virtuelle Stadt-Tycoon — Von der Apfelmarkt-Fehde zum modernen Sozialstaat*: Akt I-II — Apfelmarkt und Mietendeckel — Episode 24, Cast: Bundesratsbote Henrik Maas. Werkzeug dieser Episode: [markt-sim].
+
 <!-- Lesson v3 9步制试点：Schritt-typ nur aus Whitelist (entdecken/ausprobieren/check/szenario)；VERGLEICH im ausprobieren-Schritt；## Fehlvorstellung ist kein Schritt (Parser skip)；Gating: check/szenario unbestanden = Weiter grau；XP: 5/15/20/30 -->
 
-## Schritt 1 — entdecken
+## Schritt 1 — entdecken: Alarm in Tycoon City: Bundesrat-Blockade am Freitag
+
+
+> EPISODE 24｜Akt I-II — Apfelmarkt und Mietendeckel｜召集人 Bundesratsbote Henrik Maas：Bundesrat-Blockade am Freitag。
+
+HOOK 市长危机（先读剧情，再进 ZIELE）：【本集战役 EP24｜Akt I-II — Apfelmarkt und Mietendeckel｜虚拟城邦 Tycoon City 告急】市长办公室深夜灯火通明，Bundesratsbote Henrik Maas 冲进来报告：Bundesrat-Blockade am Freitag，而明天市议会就要投票。集市在喊、长队在排、国库在抖：苹果集市价格战一路烧到租金黑市，再烧到基尼天平与劳资谈判桌，本集正是“Soziale Marktwirtschaft”的现实引爆点。你的身份是市长直属经济改革规划委员：把街头危机翻译成考点，用沙盘 [markt-sim] 拿出可验证的数值方案，再交出一份 Klausur 满分答卷稳住议会。通关线索：TARGET: Stellt im Sandkasten Angebot und Nachfrage so ein, dass der Gleichgewichtspreis zwischen 8 und 12 Euro liegt, die gehandelte Menge mindestens 100 Einheiten erreicht und ein Probe-Hoechstpreis von 6 Euro als bindend mit Warteschlange entlarvt wird. 上一集的结尾就是这一集的悬念——黑市账本、税改天平、劳资天平、选票天平，四座天平有一座倒了，城邦就停摆。电台正在直播，反对派等着挑错：先读 ZIELE，再啃术语，把传导机制画成你的作战地图。DE-Briefing: Episode 24 — Bundesratsbote Henrik Maas meldet Bundesrat-Blockade am Freitag; der Stadtrat entscheidet morgen. Rette Tycoon City mit Analyse, Sandkasten und Klausur-Antwort zum Thema Soziale Marktwirtschaft.
 
 ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
@@ -25,7 +32,7 @@ ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
 Klausur-Satz: `Die Soziale Marktwirtschaft legitimiert sich durch zwei Versprechen: Effizienz durch Wettbewerb und Gerechtigkeit durch sozialen Ausgleich.`
 
-## Schritt 2 — entdecken
+## Schritt 2 — entdecken: Werkzeugkoffer von Bundesratsbote Henrik Maas: 5 Begriffe scharf stellen
 
 PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
 
@@ -40,7 +47,7 @@ PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→�
 Klausur-Satz: `Der Staat setzt den Ordnungsrahmen, greift aber nicht direkt in Preise und Löhne ein.`
 Klausur-Satz: `Tarifautonomie heißt: Löhne handeln Gewerkschaften und Arbeitgeber ohne den Staat aus.`
 
-## Schritt 3 — entdecken
+## Schritt 3 — entdecken: Uhrwerk des Marktes: Kette von Ursache zu Wirkung
 
 ENTDECKEN（1概念 + 1文字图解，双支柱）：
 
@@ -71,7 +78,7 @@ Klausur-Satz: `Wettbewerb schafft Wohlstand, der Sozialstaat fängt die Schwäch
 
 **Bezug zum Konzept**: `Der Start der Sozialen Marktwirtschaft zeigt das Grundprinzip: Der Staat setzt den Ordnungsrahmen, überlässt Preise und Wettbewerb aber dem Markt.`
 
-## Schritt 4 — ausprobieren
+## Schritt 4 — ausprobieren: Sandkasten-Einsatz [markt-sim]: Rette die Stadt mit Zahlen
 
 BEISPIEL（正确例题示范，AB II analysieren，先遮住Musterlösung自己写3句，再对照）：
 
@@ -83,7 +90,9 @@ MUSTERLÖSUNG (selbst geschrieben, 只转述不复制)：Der höhere Mindestlohn
 
 Klausur-Satz: `Der Mindestlohn schützt vor Armut trotz Arbeit, greift aber in Preisbildung und Tarifautonomie ein.`
 
-## Schritt 5 — ausprobieren
+
+[Werkzeug: markt-sim]
+## Schritt 5 — ausprobieren: Duell der Wege: Weg A gegen Weg B
 
 VERGLEICH辨别实验（先选程序再做——两题用不同眼镜，别混）：
 
@@ -100,7 +109,7 @@ ANTWORT: A = Verfahren (i); Punkte: knappes Angebot → höherer Preis → wenig
 Klausur-Satz: `Der Preismechanismus gleicht Angebot und Nachfrage über den Preis aus.`
 Klausur-Satz: `Sozialer Ausgleich heißt: Bedarf schlägt Marktergebnis, wenn Arbeit nicht vor Armut schützt.`
 
-## Schritt 6 — check
+## Schritt 6 — check: Selbsttest zu Soziale Marktwirtschaft
 
 CHECK检索（合书默写！觉得会了不算，能写出才算。Evidenz: Abrufen schlägt Wiederlesen — Karpicke & Blunt 2011）：
 
@@ -124,7 +133,7 @@ Klausur-Satz: `Ordoliberalismus will Regeln statt direkter Eingriffe: Ordnung se
    中文纠偏：sozial指兜底（Bedarf/机会缓冲），不是结果拉平；Mindestlohn/社保是补丁，有代价（干预价格与自治）。Klausur要写出这种张力才给分。
    Korrektur-Satz: `Sozialer Ausgleich sichert Teilhabe, nicht gleiche Ergebnisse — jeder Eingriff kostet Marktfreiheit.`
 
-## Schritt 7 — szenario
+## Schritt 7 — szenario: Klausurtransfer: Anhoerung und Parlamentsrede zu Soziale Marktwirtschaft
 
 (原szenario结构保留：ROLLE/SITUATION/RUBRIC；Gating：check未过此步置灰；完成后+30 XP)
 
@@ -134,7 +143,7 @@ SITUATION: Debatte: Soll der Mindestlohn auf 15 Euro steigen? Halte ein 2-Minute
 
 RUBRIC: These in Satz 1 (darstellen) | zwei Fachbegriffe (z. B. Tarifautonomie, Kaufkraft, Wettbewerbsfähigkeit) | ein Beleg/Beispiel | Urteil mit Kriterium (beurteilen).
 
-## Schritt 8 — reflexion: Takeaway & Reflexion
+## Schritt 8 — reflexion: Takeaway & Reflexion: Was der Krisenstab lernt
 
 TAKEAWAY 1盒（合书能背才算过）：
 

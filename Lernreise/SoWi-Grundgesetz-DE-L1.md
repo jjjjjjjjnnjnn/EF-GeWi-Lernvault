@@ -13,9 +13,16 @@ version: Lesson-v3
 
 # Lernreise: Grundgesetz und Verfassungsprinzipien (L1, Ziel Klausur)
 
-<!-- Lesson-v3: 8 Schritte plus Anekdote und Fehlvorstellung; Fehlvorstellung zwischen Schritt 6 und 7 (Parser-Skip); interaktives [Werkzeug: <id>]; Gating: check/szenario nicht bestanden = Weiter gesperrt; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
+> Kampagne *Virtuelle Stadt-Tycoon — Von der Apfelmarkt-Fehde zum modernen Sozialstaat*: Akt IV-V — Tarifarena und Demokratiewerkstatt — Episode 09, Cast: Steuerplaner Felix Dorn. Werkzeug dieser Episode: [balance-board].
 
-## Schritt 1 — entdecken: Ziele & Phaenomen-Einstieg
+<!-- Lesson-v3: 8 Schritte plus Anekdote und Fehlvorstellung; Fehlvorstellung zwischen Schritt 6 und 7 (Parser-Skip); interaktives [Werkzeug: balance-board]; Gating: check/szenario nicht bestanden = Weiter gesperrt; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
+
+## Schritt 1 — entdecken: Alarm in Tycoon City: Rentenkassen-Schock im Seniorenheim
+
+
+> EPISODE 09 — Akt IV-V — Tarifarena und Demokratiewerkstatt — Auftrag von Steuerplaner Felix Dorn: Rentenkassen-Schock im Seniorenheim.
+
+HOOK (Stadtrats-Krise, lies zuerst): EPISODE 09 — Akt IV-V — Tarifarena und Demokratiewerkstatt — Stadt Tycoon City ruft dich in den Krisenstab. Steuerplaner Felix Dorn stuermt mit einer Eilmeldung ins Buero: Rentenkassen-Schock im Seniorenheim — und morgen entscheidet der Stadtrat. Der Markt schreit, die Warteschlange waechst, die Kasse zittert: Ohne deine Analyse kippt die Stadt vom Apfelparadies in den Schwarzmarkt. Dein Auftrag in dieser Episode: Uebersetze die Strassenszene in das heutige Thema Grundgesetz und Verfassungsprinzipien. Sammle Belege, stelle den Sandkasten [balance-board] scharf und liefere dem Rat eine Klausur-Antwort, die einer Pruefungskommission standhaelt. Erste Spur: TARGET: Bringt auf dem Verhandlungsbrett beide Waagschalen in die Balance — Bedingung: Zustimmung beider Baenke, Loesung mit Kompromisslinie, Ergebnisprotokoll mit zwei Begruendungen je Seite. Wer den Mechanismus versteht, rettet den Haushalt — und vielleicht die Wahl. Der Countdown laeuft, das Radio berichtet live, die Opposition wartet nur auf deinen Fehler: Oeffne die Ziele, schnapp dir die Begriffe und beweise, dass Tycoon City regierbar bleibt.
 
 ZIELE (drei messbare Ziele dieser Lektion):
 
@@ -27,7 +34,7 @@ ZIELE (drei messbare Ziele dieser Lektion):
 
 Eine Gemeinde will eine politische Versammlung vom zentralen Platz verbannen, weil der Verkehr stockt und Anwohner Ruhe verlangen. Die Gruppe beruft sich auf Versammlungsfreiheit und Meinungsfreiheit, die Gemeinde auf das Allgemeininteresse an Sicherheit und Ordnung. Beide Seiten rufen das Grundgesetz an. Darf die Mehrheit der Anwohner die Minderheit der Demonstrierenden verdrängen, oder setzt das Recht der Mehrheit eine feste Grenze? In dieser Lektion lernst du zwei Wege der Antwort: Weg A vertraut der demokratischen Mehrheit, Weg B vertraut dem rechtsstaatlichen Kern.
 
-## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
+## Schritt 2 — entdecken: Werkzeugkoffer von Steuerplaner Felix Dorn: 5 Begriffe scharf stellen
 
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
@@ -49,7 +56,7 @@ Die Begriffe greifen ineinander: Die Menschenwuerde gruendet alle Rechte und mar
 
 Klausur-Satz: `Art. 20 GG nennt vier Verfassungsprinzipien: Demokratie, Rechtsstaat, Sozialstaat und Bundesstaat.`
 
-## Schritt 3 — entdecken: Kernkonzept & Wirkungsmodell
+## Schritt 3 — entdecken: Uhrwerk des Marktes: Kette von Ursache zu Wirkung
 
 TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
@@ -82,11 +89,13 @@ Das Grundgesetz heisst bewusst nicht Verfassung: Es war 1949 als Provisorium fue
 
 Bezug zum Konzept: `Das Beispiel zeigt, wie eine historische Lehre zum festen Verfassungskern mit Wuerde und Ewigkeitsklausel wurde.`
 
-## Schritt 4 — ausprobieren: Interaktive Praxis & Urteils-Waage
+## Schritt 4 — ausprobieren: Sandkasten-Einsatz [balance-board]: Rette die Stadt mit Zahlen
 
 BEISPIEL (geleitete Aufgabe mit Werkzeug):
 
 [Werkzeug: balance-board]
+
+TARGET: Bringt auf dem Verhandlungsbrett beide Waagschalen in die Balance — Bedingung: Zustimmung beider Baenke, Loesung mit Kompromisslinie, Ergebnisprotokoll mit zwei Begruendungen je Seite.
 
 Lege im Tool Pro- und Contra-Argumente auf die Waage und gewichte jedes Argument von 1 bis 5; veraendere die Gewichte Schritt fuer Schritt und beobachte, wann das Urteil zwischen Erlaubnis und Verbot oder zwischen Massnahme und Verzicht umschlaegt.
 
@@ -101,7 +110,7 @@ MUSTERLOESUNG: Ein pauschales Verbot scheitert an der Erforderlichkeit; eine Ver
 
 Klausur-Satz: `Religionsfreiheit und staatlicher Bildungsauftrag sind über die praktische Konkordanz auszugleichen, ohne dass ein Wesensgehalt angetastet wird.`
 
-## Schritt 5 — ausprobieren: Wegvergleich & Abgrenzung
+## Schritt 5 — ausprobieren: Duell der Wege: Weg A gegen Weg B
 
 VERGLEICH (Wahl des Weges, Weg A gegen Weg B):
 
@@ -141,14 +150,14 @@ Klausur-Satz: `Die Ewigkeitsklausel entzieht Art. 1 und Art. 20 GG jeder Verfass
 2. Fehlkonzept: In der Demokratie duerfe die Mehrheit alles beschliessen, auch die Abschaffung von Grundrechten.
    Korrektur-Satz: `Die Mehrheit legitimiert Herrschaft, doch Grundrechte und Ewigkeitsklausel begrenzen jede Mehrheit zum Schutz der Minderheit.`
 
-## Schritt 7 — szenario: Anwaltskanzlei & Platzverbot-Debatte
+## Schritt 7 — szenario: Klausurtransfer: Anhoerung und Parlamentsrede zu Grundgesetz und Verfassungsprinzipien
 
 ROLLE: Du bist Anwaeltin bzw. Anwalt und formulierst eine kurze Verfassungsbeschwerde.
 SITUATION: Eine Gemeinde will einer Gruppe ein oeffentliches Platzverbot erteilen, weil deren politische Versammlung den Verkehr stoert. Die Betroffenen berufen sich auf ihre Versammlungs- und Meinungsfreiheit, die Gemeinde auf das Interesse der Allgemeinheit an ungestörtem Verkehr. Beurteile in einer zusammenhängenden Stellungnahme (ca. 150 Wörter), wie nach dem Grundgesetz zwischen den Positionen zu vermitteln ist.
 AUFGABE (AFB III): Verfasse eine zusammenhaengende Darstellung von etwa 150 Woertern mit Kriterium, Anwendung und Urteil.
 RUBRIC (30 XP): These mit Kriterium Minderheitenschutz und Wesensgehalt (5 XP) | Darstellung beider Grundrechtspositionen mit Artikelbezug (10 XP) | Anwendung der Verhaeltnismaessigkeit mit Zeit, Ort und Mittel (10 XP) | Fazit mit Fachbegriffen und Klausur-Satz (5 XP).
 
-## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
+## Schritt 8 — reflexion: Takeaway & Reflexion: Was der Krisenstab lernt
 
 TAKEAWAY (Kernbotschaft in einem Kasten):
 

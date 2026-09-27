@@ -13,9 +13,16 @@ version: Lesson-v3
 
 # Lernreise: Verfassungsorgane (L1, Ziel Klausur)
 
-<!-- Lesson v3 9步制架构：Schritt 1至8固定结构；Fehlvorstellung 夹在 Schritt 6 与 7 之间（Parser 自动跳过，不占步数）；支持内嵌 [Werkzeug: <id>] 交互教具；Gating: check/szenario 未过 = Weiter 置灰；XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
+> Kampagne *Virtuelle Stadt-Tycoon — Von der Apfelmarkt-Fehde zum modernen Sozialstaat*: Akt IV-V — Tarifarena und Demokratiewerkstatt — Episode 38, Cast: Justiziarin Dr. Ines Kraus. Werkzeug dieser Episode: [balance-board].
 
-## Schritt 1 — entdecken
+<!-- Lesson v3 9步制架构：Schritt 1至8固定结构；Fehlvorstellung 夹在 Schritt 6 与 7 之间（Parser 自动跳过，不占步数）；支持内嵌 [Werkzeug: balance-board] 交互教具；Gating: check/szenario 未过 = Weiter 置灰；XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
+
+## Schritt 1 — entdecken: Alarm in Tycoon City: Justizposse um das Versammlungsverbot
+
+
+> EPISODE 38｜Akt IV-V — Tarifarena und Demokratiewerkstatt｜召集人 Justiziarin Dr. Ines Kraus：Justizposse um das Versammlungsverbot。
+
+HOOK 市长危机（先读剧情，再进 ZIELE）：【本集战役 EP38｜Akt IV-V — Tarifarena und Demokratiewerkstatt｜虚拟城邦 Tycoon City 告急】市长办公室深夜灯火通明，Justiziarin Dr. Ines Kraus 冲进来报告：Justizposse um das Versammlungsverbot，而明天市议会就要投票。集市在喊、长队在排、国库在抖：苹果集市价格战一路烧到租金黑市，再烧到基尼天平与劳资谈判桌，本集正是“Verfassungsorgane”的现实引爆点。你的身份是市长直属经济改革规划委员：把街头危机翻译成考点，用沙盘 [balance-board] 拿出可验证的数值方案，再交出一份 Klausur 满分答卷稳住议会。通关线索：TARGET: Bringt auf dem Verhandlungsbrett beide Waagschalen in die Balance — Bedingung: Zustimmung beider Baenke, Loesung mit Kompromisslinie, Ergebnisprotokoll mit zwei Begruendungen je Seite. 上一集的结尾就是这一集的悬念——黑市账本、税改天平、劳资天平、选票天平，四座天平有一座倒了，城邦就停摆。电台正在直播，反对派等着挑错：先读 ZIELE，再啃术语，把传导机制画成你的作战地图。DE-Briefing: Episode 38 — Justiziarin Dr. Ines Kraus meldet Justizposse um das Versammlungsverbot; der Stadtrat entscheidet morgen. Rette Tycoon City mit Analyse, Sandkasten und Klausur-Antwort zum Thema Verfassungsorgane.
 
 ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
@@ -25,7 +32,7 @@ ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
 Klausur-Satz: `Der Gang der Gesetzgebung führt vom Bundestag über den Bundesrat (Zustimmung oder Einspruch) und ggf. den Vermittlungsausschuss bis zur Ausfertigung durch den Bundespräsidenten.`
 
-## Schritt 2 — entdecken
+## Schritt 2 — entdecken: Werkzeugkoffer von Justiziarin Dr. Ines Kraus: 5 Begriffe scharf stellen
 
 PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
 
@@ -39,7 +46,7 @@ PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→�
 
 Klausur-Satz: `Art. 38 GG garantiert das freie Mandat: Abgeordnete sind an Aufträge nicht gebunden, sondern nur ihrem Gewissen unterworfen.`
 
-## Schritt 3 — entdecken
+## Schritt 3 — entdecken: Uhrwerk des Marktes: Kette von Ursache zu Wirkung
 
 ENTDECKEN（1概念 + 1文字图解）：
 
@@ -84,11 +91,13 @@ BVerfG 在卡尔斯鲁厄——地理细节也是考点。
 
 **Bezug zum Konzept**: Die Wahl des Bundespräsidenten durch die Bundesversammlung zeigt, wie die Verfassungsorgane bewusst gegeneinander ausbalanciert sind.
 
-## Schritt 4 — ausprobieren
+## Schritt 4 — ausprobieren: Sandkasten-Einsatz [balance-board]: Rette die Stadt mit Zahlen
 
 BEISPIEL（正确例题示范，含教具操作与解答）：
 
-[Werkzeug: lego]
+[Werkzeug: balance-board]
+
+TARGET: Bringt auf dem Verhandlungsbrett beide Waagschalen in die Balance — Bedingung: Zustimmung beider Baenke, Loesung mit Kompromisslinie, Ergebnisprotokoll mit zwei Begruendungen je Seite.
 
 AUFGABE (analysieren, AFB II, 10 BE)：Material 1 (Sachtext) beschreibt ein Gesetz zur Entlastung bei gestiegenen Heizkosten: Der Bundestag beschließt es im März, der Bundesrat stimmt im April ohne Anrufung des Vermittlungsausschusses zu, anschließend fertigt der Bundespräsident es aus. Analysieren Sie den Vorgang mithilfe des Politikzyklus und ordnen Sie die Rolle des Bundesrats ein.
 
@@ -101,7 +110,7 @@ MUSTERLÖSUNG: Der Politikzyklus gliedert den Fall in Phasen: Auslöser (Problem
 
 Klausur-Satz: `Mithilfe des Politikzyklus lässt sich das Gesetz als Reaktion auf ein Problem mit schneller Implementation, aber offener Evaluation einordnen.`
 
-## Schritt 5 — ausprobieren
+## Schritt 5 — ausprobieren: Duell der Wege: Weg A gegen Weg B
 
 VERGLEICH辨别实验（双向辨析：程序眼 vs. 委任眼）：
 
@@ -117,7 +126,7 @@ ANTWORT: A erfordert Verfahren (i): Da das Gesetz die Länderfinanzen berührt, 
 
 Klausur-Satz: `Beim Zustimmungsgesetz kann der Bundesrat ein Vorhaben blockieren, beim Einspruchsgesetz kann der Bundestag den Einspruch überstimmen.`
 
-## Schritt 6 — check
+## Schritt 6 — check: Selbsttest zu Verfassungsorgane
 
 CHECK检索默写（自测 3 题，与答案配对）：
 
@@ -139,7 +148,7 @@ Klausur-Satz: `Die Bundesversammlung besteht zur Hälfte aus Bundestagsmitgliede
    中文纠偏：BVerfG 只能被动审查——判法律违宪、禁止违宪政党（Art. 21 Abs. 2）、裁决机关争议。它不能自己制定法律，也不能替议会或政府做政治决策，这正是它权力的边界。
    Korrektur-Satz: `Das Bundesverfassungsgericht kontrolliert, regiert aber nicht: Es darf keine Gesetze erlassen und keine politischen Entscheidungen ersetzen.`
 
-## Schritt 7 — szenario
+## Schritt 7 — szenario: Klausurtransfer: Anhoerung und Parlamentsrede zu Verfassungsorgane
 
 ROLLE: Du bist Abgeordnete bzw. Abgeordneter und hältst im Bundestag eine kurze Rede zur geplanten Wahlrechtsreform.
 
@@ -147,7 +156,7 @@ SITUATION: Eine Reform soll den Bundestag dauerhaft verkleinern und die Zahl der
 
 RUBRIC (30 XP): Benennung des Problems (übermäßige Größe des Bundestags) und der Reformmaßnahme (5 XP) | Analyse des Zielkonflikts zwischen Funktionsfähigkeit und Repräsentation (10 XP) | Darlegung der Folgen für Direktmandate und kleine Parteien (10 XP) | Kriteriengeleitetes Urteil mit Abwägung (5 XP).
 
-## Schritt 8 — reflexion: Takeaway & Reflexion
+## Schritt 8 — reflexion: Takeaway & Reflexion: Was der Krisenstab lernt
 
 TAKEAWAY 1盒（核心总结）：
 

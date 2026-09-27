@@ -13,9 +13,16 @@ version: Lesson-v3
 
 # Lernreise: Identität und Jugend (L1, Ziel Klausur)
 
-<!-- Lesson v3 9步制架构：Schritt 1至8固定结构；Fehlvorstellung 夹在 Schritt 6 与 7 之间（Parser 自动跳过，不占步数）；支持内嵌 [Werkzeug: <id>] 交互教具；Gating: check/szenario 未过 = Weiter 置灰；XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
+> Kampagne *Virtuelle Stadt-Tycoon — Von der Apfelmarkt-Fehde zum modernen Sozialstaat*: Akt IV-V — Tarifarena und Demokratiewerkstatt — Episode 12, Cast: Aufsichtsratschef Dr. Konrad Reuss. Werkzeug dieser Episode: [balance-board].
 
-## Schritt 1 — entdecken
+<!-- Lesson v3 9步制架构：Schritt 1至8固定结构；Fehlvorstellung 夹在 Schritt 6 与 7 之间（Parser 自动跳过，不占步数）；支持内嵌 [Werkzeug: balance-board] 交互教具；Gating: check/szenario 未过 = Weiter 置灰；XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
+
+## Schritt 1 — entdecken: Alarm in Tycoon City: Aufsichtsrat-Patt bei Stimmengleichheit
+
+
+> EPISODE 12｜Akt IV-V — Tarifarena und Demokratiewerkstatt｜召集人 Aufsichtsratschef Dr. Konrad Reuss：Aufsichtsrat-Patt bei Stimmengleichheit。
+
+HOOK 市长危机（先读剧情，再进 ZIELE）：【本集战役 EP12｜Akt IV-V — Tarifarena und Demokratiewerkstatt｜虚拟城邦 Tycoon City 告急】市长办公室深夜灯火通明，Aufsichtsratschef Dr. Konrad Reuss 冲进来报告：Aufsichtsrat-Patt bei Stimmengleichheit，而明天市议会就要投票。集市在喊、长队在排、国库在抖：苹果集市价格战一路烧到租金黑市，再烧到基尼天平与劳资谈判桌，本集正是“Identität und Jugend”的现实引爆点。你的身份是市长直属经济改革规划委员：把街头危机翻译成考点，用沙盘 [balance-board] 拿出可验证的数值方案，再交出一份 Klausur 满分答卷稳住议会。通关线索：TARGET: Bringt auf dem Verhandlungsbrett beide Waagschalen in die Balance — Bedingung: Zustimmung beider Baenke, Loesung mit Kompromisslinie, Ergebnisprotokoll mit zwei Begruendungen je Seite. 上一集的结尾就是这一集的悬念——黑市账本、税改天平、劳资天平、选票天平，四座天平有一座倒了，城邦就停摆。电台正在直播，反对派等着挑错：先读 ZIELE，再啃术语，把传导机制画成你的作战地图。DE-Briefing: Episode 12 — Aufsichtsratschef Dr. Konrad Reuss meldet Aufsichtsrat-Patt bei Stimmengleichheit; der Stadtrat entscheidet morgen. Rette Tycoon City mit Analyse, Sandkasten und Klausur-Antwort zum Thema Identität und Jugend.
 
 ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
@@ -25,7 +32,7 @@ ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
 Klausur-Satz: `Identität entsteht nicht als feste Eigenschaft, sondern als lebenslange Balanceleistung zwischen gesellschaftlichen Erwartungen und eigenen Überzeugungen.`
 
-## Schritt 2 — entdecken
+## Schritt 2 — entdecken: Werkzeugkoffer von Aufsichtsratschef Dr. Konrad Reuss: 5 Begriffe scharf stellen
 
 PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
 
@@ -39,7 +46,7 @@ PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→�
 
 Klausur-Satz: `Während Erikson die Ich-Identität als lebenslangen Prozess deutet, betont Krappmann, dass diese Balance auch scheitern kann.`
 
-## Schritt 3 — entdecken
+## Schritt 3 — entdecken: Uhrwerk des Marktes: Kette von Ursache zu Wirkung
 
 ENTDECKEN（1概念 + 1文字图解）：
 
@@ -83,11 +90,13 @@ Klausur-Satz: `Mead zufolge wird sich das Individuum seiner selbst bewusst, inde
 
 **Bezug zum Konzept**: Die Karriere des Wortes „Identitätskrise" zeigt, wie zentral Eriksons Modell der Ich-Identität für das Verständnis von Jugend ist.
 
-## Schritt 4 — ausprobieren
+## Schritt 4 — ausprobieren: Sandkasten-Einsatz [balance-board]: Rette die Stadt mit Zahlen
 
 BEISPIEL（正确例题示范，含教具操作与解答）：
 
-[Werkzeug: balance]
+[Werkzeug: balance-board]
+
+TARGET: Bringt auf dem Verhandlungsbrett beide Waagschalen in die Balance — Bedingung: Zustimmung beider Baenke, Loesung mit Kompromisslinie, Ergebnisprotokoll mit zwei Begruendungen je Seite.
 
 AUFGABE (analysieren, AFB II, 10 BE)：Material 1 (Sachtext) schildert eine 17-Jährige, die täglich ihren Alltag auf Instagram inszeniert und abends unter dem Vergleich mit anderen leidet. Analysieren Sie mit zwei Modellen, wie in diesem Fall Identität ausgehandelt wird.
 
@@ -100,7 +109,7 @@ MUSTERLÖSUNG: Zunächst lässt sich das Verhalten mit Goffman deuten: Auf der V
 
 Klausur-Satz: `Soziale Netzwerke sind für die Identitätsentwicklung ambivalent: Sie erweitern Ausdrucksmöglichkeiten, verstärken aber zugleich den Vergleichsdruck.`
 
-## Schritt 5 — ausprobieren
+## Schritt 5 — ausprobieren: Duell der Wege: Weg A gegen Weg B
 
 VERGLEICH辨别实验（双向辨析：交往眼 vs. 结构眼）：
 
@@ -116,7 +125,7 @@ ANTWORT: A erfordert Verfahren (i): Nach Mead wird sich das Individuum seiner se
 
 Klausur-Satz: `Wertewandel bezeichnet die Verschiebung gesellschaftlicher Wertprioritäten, die den Rahmen der individuellen Identitätsarbeit verändert.`
 
-## Schritt 6 — check
+## Schritt 6 — check: Selbsttest zu Identität und Jugend
 
 CHECK检索默写（自测 3 题，与答案配对）：
 
@@ -138,7 +147,7 @@ Klausur-Satz: `Identität ist keine Eigenschaft, sondern eine Balanceleistung �
    中文纠偏：方向完全相反。Integration 是双向的——移民参与主流社会，同时保留自身文化，主流社会也要承担接纳任务；Assimilation 是单向的——移民放弃原有文化、完全融入。写作时方向写反必扣分。
    Korrektur-Satz: `Integration ist ein zweiseitiger Prozess, Assimilation dagegen eine einseitige Anpassung an die Mehrheitsgesellschaft.`
 
-## Schritt 7 — szenario
+## Schritt 7 — szenario: Klausurtransfer: Anhoerung und Parlamentsrede zu Identität und Jugend
 
 ROLLE: Du bist Mitglied einer Schülervertretung und hältst auf einem Schulforum eine kurze Stellungnahme zur Wertewandel-Debatte.
 
@@ -146,7 +155,7 @@ SITUATION: An deiner Schule wird über die Abschlussfeier diskutiert. Ältere Le
 
 RUBRIC (30 XP): Benennung des Wertewandels anhand der Statistik (5 XP) | Fachliche Deutung mit mindestens zwei Identitätsmodellen (10 XP) | Analyse der ambivalenten Folgen für die Identitätsentwicklung (10 XP) | Kriteriengeleitetes Urteil (z. B. Kriterium Autonomie) (5 XP).
 
-## Schritt 8 — reflexion: Takeaway & Reflexion
+## Schritt 8 — reflexion: Takeaway & Reflexion: Was der Krisenstab lernt
 
 TAKEAWAY 1盒（核心总结）：
 

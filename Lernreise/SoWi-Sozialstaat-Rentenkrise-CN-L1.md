@@ -13,9 +13,16 @@ version: Lesson-v3
 
 # Lernreise: Sozialstaat und Rentenkrise im demografischen Wandel (L1, Ziel Klausur)
 
-<!-- Lesson v3 9步制架构：Schritt 1至8固定结构；Fehlvorstellung 夹在 Schritt 6 与 7 之间（Parser 自动跳过，不占步数）；支持内嵌 [Werkzeug: <id>] 交互教具；Gating: check/szenario 未过 = Weiter 置灰；XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
+> Kampagne *Virtuelle Stadt-Tycoon — Von der Apfelmarkt-Fehde zum modernen Sozialstaat*: Akt III — Gini-Waage und Steuerreform — Episode 31, Cast: Kurierfahrerin Samira Haddad. Werkzeug dieser Episode: [gini-allocator].
 
-## Schritt 1 — entdecken: Ziele & Phänomen-Einstieg
+<!-- Lesson v3 9步制架构：Schritt 1至8固定结构；Fehlvorstellung 夹在 Schritt 6 与 7 之间（Parser 自动跳过，不占步数）；支持内嵌 [Werkzeug: gini-allocator] 交互教具；Gating: check/szenario 未过 = Weiter 置灰；XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
+
+## Schritt 1 — entdecken: Alarm in Tycoon City: Prekaritaets-Protest der Nachtkuriere
+
+
+> EPISODE 31｜Akt III — Gini-Waage und Steuerreform｜召集人 Kurierfahrerin Samira Haddad：Prekaritaets-Protest der Nachtkuriere。
+
+HOOK 市长危机（先读剧情，再进 ZIELE）：【本集战役 EP31｜Akt III — Gini-Waage und Steuerreform｜虚拟城邦 Tycoon City 告急】市长办公室深夜灯火通明，Kurierfahrerin Samira Haddad 冲进来报告：Prekaritaets-Protest der Nachtkuriere，而明天市议会就要投票。集市在喊、长队在排、国库在抖：苹果集市价格战一路烧到租金黑市，再烧到基尼天平与劳资谈判桌，本集正是“Sozialstaat und Rentenkrise im demografischen Wandel”的现实引爆点。你的身份是市长直属经济改革规划委员：把街头危机翻译成考点，用沙盘 [gini-allocator] 拿出可验证的数值方案，再交出一份 Klausur 满分答卷稳住议会。通关线索：TARGET: Justiert Steuer- und Transferregler so, dass der Gini-Indikator nach Umverteilung in den Korridor 0,28 bis 0,32 faellt, das unterste Quintil mindestens 8 Prozent des Kuchens haelt und die Armutsrisikoquote sichtbar sinkt. 上一集的结尾就是这一集的悬念——黑市账本、税改天平、劳资天平、选票天平，四座天平有一座倒了，城邦就停摆。电台正在直播，反对派等着挑错：先读 ZIELE，再啃术语，把传导机制画成你的作战地图。DE-Briefing: Episode 31 — Kurierfahrerin Samira Haddad meldet Prekaritaets-Protest der Nachtkuriere; der Stadtrat entscheidet morgen. Rette Tycoon City mit Analyse, Sandkasten und Klausur-Antwort zum Thema Sozialstaat und Rentenkrise im demografischen Wandel.
 
 ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
@@ -38,7 +45,7 @@ Mechanismus-Satz (DE): Umlage lebt vom Nachwuchs, Alterung zwingt zu Beitrag, Al
 
 Klausur-Satz: `Im Umlageverfahren zahlen die Erwerbstaetigen die Renten der Alten; der Demografiewandel belastet diese Bilanz.`
 
-## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
+## Schritt 2 — entdecken: Werkzeugkoffer von Kurierfahrerin Samira Haddad: 5 Begriffe scharf stellen
 
 PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
 
@@ -52,7 +59,7 @@ PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→�
 
 Klausur-Satz: `Steigt der Altenquotient, muss bei gleichem Niveau entweder der Beitrag steigen oder die Leistung sinken.`
 
-## Schritt 3 — entdecken: Kernkonzept & Wirkungsmodell
+## Schritt 3 — entdecken: Uhrwerk des Marktes: Kette von Ursache zu Wirkung
 
 ENTDECKEN（1概念 + 1文字图解，中文在上、德语在下）：
 
@@ -60,7 +67,7 @@ Hook中文生活切入：
 
 中文：想象全家凑钱养爷爷：五个孙辈凑时人人轻松，一个孙辈养四个老人时直接破产。德国养老金就是这个家庭账的放大版。
 
-Phaenomen-Satz (DE): Wenige Geber, viele Nehmer: die Rechnung kippt.
+Phaenomen-Satz (DE): Wenige Geber, viele Nehmer: die Bilanz kippt.
 
 Spiel-Aufgabe沙盒操作指引：
 
@@ -91,9 +98,11 @@ Klausur-Satz: `Jede Reform verschiebt die Last zwischen Beitragszahlern, Rentner
 
 **Bezug zum Konzept**: `Die Rente altert mit der Gesellschaft, fuer die sie gebaut wurde.`
 
-## Schritt 4 — ausprobieren: Interaktive Praxis & Labor
+## Schritt 4 — ausprobieren: Sandkasten-Einsatz [gini-allocator]: Rette die Stadt mit Zahlen
 
 [Werkzeug: gini-allocator]
+
+TARGET: Justiert Steuer- und Transferregler so, dass der Gini-Indikator nach Umverteilung in den Korridor 0,28 bis 0,32 faellt, das unterste Quintil mindestens 8 Prozent des Kuchens haelt und die Armutsrisikoquote sichtbar sinkt.
 
 BEISPIEL（正确例题示范，含教具操作与解答，中文在上、德语在下）：
 
@@ -115,7 +124,7 @@ MUSTERLOESUNG：中文：少子缩工资基、长寿增人数与时长，水平�
 MUSTERLOESUNG (DE): Weniger Zahler bei mehr und laengeren Renten erzwingen hoehere Beitraege oder niedrigere Niveaus. Fair ist ein Mix aus Beitrag, Niveau und Alter plus Steuer: jede Schraube belastet eine andere Gruppe.
 Klausur-Satz: `Weniger Zahler bei mehr und laengeren Renten erzwingen hoehere Beitraege oder niedrigere Niveaus.`
 
-## Schritt 5 — ausprobieren: Verfahrensvergleich & Abgrenzung
+## Schritt 5 — ausprobieren: Duell der Wege: Weg A gegen Weg B
 
 VERGLEICH辨别实验（双向辨析：开源节流 vs 制度转轨）：
 
@@ -151,17 +160,17 @@ Klausur-Satz: `Beitrag, Niveau und Alter bilden das Reformdreieck der gesetzlich
    中文纠偏：缴费推高用工成本、压低净工资，代价转给企业与年轻雇员；任何旋钮都有输家，必须做代际公平评价。
    Korrektur-Satz: `Jede Stellschraube belastet eine andere Gruppe.`
 
-## Schritt 7 — szenario: Klausurtransfer: Sozialstaat und Rentenkrise im demografischen Wandel
+## Schritt 7 — szenario: Klausurtransfer: Anhoerung und Parlamentsrede zu Sozialstaat und Rentenkrise im demografischen Wandel
 ROLLE: Du bist Jugenddelegierter in einer Rentenkommission.
 SITUATION: Die Kommission diskutiert Beitragserhoehung gegen Rentenniveausenkung. Nimm in einer zusammenhaengenden Stellungnahme (ca. 150 Woerter) aus Sicht der jungen Generation dazu Stellung und schlage einen fairen Mix vor.
 RUBRIC (30 XP): Umlage-Mechanik und Demografiedruck (8 XP) | Abwaegung beider Optionen mit Verlierern (10 XP) | Begruendeter Mix mit Gerechtigkeitsmassstab (8 XP) | Adressatengerechte Stellungnahme (4 XP).
 
-## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
+## Schritt 8 — reflexion: Takeaway & Reflexion: Was der Krisenstab lernt
 
 TAKEAWAY 1盒（核心总结）：
 
 中文：现收现付靠接力，少子长寿两头挤。制度内调看三旋钮，换制度看双重负担与市场风险。记住一句话——人数变了，账就得重算。
-Takeaway-Satz: `Der Wandel veraendert die Koepfe, jede Reform verteilt die Rechnung neu.`
+Takeaway-Satz: `Der Wandel veraendert die Koepfe, jede Reform verteilt die Bilanz neu.`
 
 REFLEXION 2问：
 1. 过程自省：Welcher Schritt fiel schwerer — die Umlage-Erklaerung (Schritt 4) oder die Abgrenzung der Reformtypen (Schritt 5)?
