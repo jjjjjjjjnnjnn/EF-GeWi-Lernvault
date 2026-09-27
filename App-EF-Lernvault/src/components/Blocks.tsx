@@ -419,17 +419,54 @@ export default function Blocks({
           );
         }
         if (b.kind === "li") {
+          // Check for structured definition: "**Term:** Definition..."
+          const defMatch = /^(\*\*[^*]+\*\*|[A-Za-z0-9äöüÄÖÜß\s\-\/\(\)]+)[:：]\s*(.*)$/.exec(b.text);
+          if (defMatch && defMatch[1].length < 45 && !/^\d+[\.\)]/.test(b.text)) {
+            const rawTerm = defMatch[1].replace(/\*\*/g, "").trim();
+            const rawDef = defMatch[2].trim();
+            return (
+              <div
+                key={i}
+                className="my-2 p-3 rounded-[var(--radius)] border border-[var(--line)] bg-[var(--surface)] hover:border-[var(--accent)]/40 transition-colors"
+              >
+                <div className="flex flex-wrap items-baseline gap-2 mb-1">
+                  <span className="font-mono text-xs uppercase tracking-wider px-2 py-0.5 rounded-[var(--radius)] bg-[var(--accent)]/10 text-[var(--accent)] font-semibold border border-[var(--accent)]/30">
+                    {rawTerm}
+                  </span>
+                </div>
+                <div className={b.lang === "zh" ? "font-sans text-sm text-[var(--gray)]" : "font-serif text-[14.5px] leading-relaxed text-[var(--ink)]"}>
+                  {renderFormattedText(rawDef)}
+                </div>
+              </div>
+            );
+          }
+
+          // Numbered item: "1. ..."
+          const numMatch = /^(\d+[\.\)])\s*(.*)$/.exec(b.text);
+          if (numMatch) {
+            return (
+              <div key={i} className="my-1.5 flex items-start gap-2.5 pl-1">
+                <span className="shrink-0 font-mono text-xs font-bold text-[var(--accent)] bg-[var(--accent)]/10 px-1.5 py-0.5 rounded-[var(--radius)] mt-0.5 border border-[var(--accent)]/30">
+                  {numMatch[1]}
+                </span>
+                <div className={b.lang === "zh" ? "font-sans text-sm text-[var(--gray)]" : "font-serif text-[15px] leading-relaxed text-[var(--ink)]"}>
+                  {renderFormattedText(numMatch[2])}
+                </div>
+              </div>
+            );
+          }
+
           return (
             <div
               key={i}
-              className={`mb-1 pl-3 ${
+              className={`mb-1.5 pl-3 flex items-start gap-2 ${
                 b.lang === "zh"
                   ? "font-sans text-sm text-[var(--gray)]"
                   : "font-serif text-[15px] text-[var(--ink)]"
               }`}
             >
-              <span className="mr-2 text-[var(--gray)]">–</span>
-              {renderFormattedText(b.text)}
+              <span className="text-[var(--accent)] font-bold shrink-0 mt-0.5">▪</span>
+              <div className="flex-1">{renderFormattedText(b.text)}</div>
             </div>
           );
         }
@@ -437,7 +474,7 @@ export default function Blocks({
           return (
             <div
               key={i}
-              className={`mb-2 border-l-2 border-[var(--line)] pl-3 ${
+              className={`my-3 border-l-3 border-[var(--accent)] pl-4 py-1 italic bg-[var(--paper-subtle)] rounded-r-[var(--radius)] ${
                 b.lang === "zh"
                   ? "font-sans text-sm text-[var(--gray)]"
                   : "font-serif text-[15px] text-[var(--ink)]"
@@ -450,12 +487,15 @@ export default function Blocks({
         if (b.kind === "diagram") {
           if (renderDiagram) return <div key={i}>{renderDiagram(b.text, i)}</div>;
           return (
-            <pre
-              key={i}
-              className="my-2 overflow-x-auto rounded-[var(--radius)] border border-[var(--line)] bg-[var(--paper)] p-3 font-mono text-xs leading-relaxed text-[var(--ink)]"
-            >
-              {b.text}
-            </pre>
+            <div key={i} className="my-3 rounded-[var(--radius)] border border-[var(--line)] bg-[var(--paper-subtle)] overflow-hidden">
+              <div className="px-3 py-1.5 border-b border-[var(--line)] bg-[var(--surface)] flex items-center justify-between text-[11px] font-mono uppercase tracking-wider text-[var(--gray)]">
+                <span>⚙️ Wirkungsmodell & Logik-Diagramm</span>
+                <span className="text-[10px] text-[var(--accent)] font-semibold">Kausalkette</span>
+              </div>
+              <pre className="p-3.5 overflow-x-auto font-mono text-xs leading-relaxed text-[var(--ink)] whitespace-pre-wrap">
+                {b.text}
+              </pre>
+            </div>
           );
         }
         if (b.kind === "math") {
@@ -466,9 +506,48 @@ export default function Blocks({
           return (
             <div
               key={i}
-              className="my-3.5 p-3.5 rounded-r-[var(--radius)] border-l-4 border-[var(--accent)] bg-[var(--paper-subtle)] border-y border-r border-[var(--line)]"
+              className="my-4 p-4 rounded-[var(--radius)] border border-[var(--accent)]/40 bg-[var(--paper-subtle)] border-l-4 border-l-[var(--accent)] shadow-none"
             >
-              <div className="font-serif text-[15px] font-medium leading-relaxed text-[var(--ink)]">
+              <div className="flex items-center gap-2 mb-1.5 text-xs font-mono uppercase tracking-wider font-semibold text-[var(--accent)]">
+                <span>⭐ Goldene Klausur-Regel (NRW Punktegarant)</span>
+              </div>
+              <div className="font-serif text-[15.5px] font-medium leading-relaxed text-[var(--ink)]">
+                {renderFormattedText(b.text)}
+              </div>
+            </div>
+          );
+        }
+
+        // Special paragraph cards
+        const trimmed = b.text.trim();
+        const isZiele = /^(?:ZIELE|🎯\s*LERNZIELE)/i.test(trimmed);
+        if (isZiele) {
+          return (
+            <div
+              key={i}
+              className="my-3 p-3.5 rounded-[var(--radius)] border border-[var(--accent)]/30 bg-[var(--accent)]/5"
+            >
+              <div className="font-mono text-xs uppercase tracking-wider text-[var(--accent)] font-bold mb-1.5 flex items-center gap-1.5">
+                <span>🎯 LERNZIELE & KLAUSUR-FOKUS</span>
+              </div>
+              <div className="font-serif text-[14.5px] leading-relaxed text-[var(--ink)]">
+                {renderFormattedText(b.text)}
+              </div>
+            </div>
+          );
+        }
+
+        const isHook = /^(?:HOOK[:：]|Hook\s*[\/:]\s*Ph[aä]nomen|Stell dir vor|Um drei Uhr|Um Mitternacht|Mitten in der Nacht|Sol-\d+|In einer Welt)/i.test(trimmed);
+        if (isHook) {
+          return (
+            <div
+              key={i}
+              className="my-3.5 p-4 rounded-[var(--radius)] border border-[var(--line)] bg-[var(--surface)] border-l-3 border-l-[var(--gray)]"
+            >
+              <div className="font-mono text-[11px] uppercase tracking-wider text-[var(--gray)] font-semibold mb-2 flex items-center gap-1.5">
+                <span>📖 PHÄNOMEN & ALLTAGS-SZENARIO (HOOK)</span>
+              </div>
+              <div className="font-serif text-[15px] leading-relaxed text-[var(--ink)]">
                 {renderFormattedText(b.text)}
               </div>
             </div>
@@ -478,7 +557,7 @@ export default function Blocks({
         return (
           <div
             key={i}
-            className={`mb-2 ${
+            className={`mb-2.5 ${
               b.lang === "zh"
                 ? "font-sans text-sm text-[var(--gray)]"
                 : "font-serif text-[15px] leading-relaxed text-[var(--ink)]"

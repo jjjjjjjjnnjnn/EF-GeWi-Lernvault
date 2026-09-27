@@ -1028,29 +1028,36 @@ export default function ReiseModule({
 
       return (
         <div className="space-y-5">
-          <div className="border border-[var(--line)] bg-[var(--paper-subtle)] p-4 rounded-[var(--radius)] font-serif text-base text-[var(--ink)] leading-relaxed">
+          {/* Header Banner for Step 4 vs Step 5 */}
+          <div className="flex items-center gap-2 font-mono text-xs uppercase tracking-wider font-semibold">
+            {s.stepNumber === 5 || cleanAufgabe.includes("VERGLEICH") ? (
+              <span className="px-2.5 py-1 rounded-[var(--radius)] bg-[var(--accent)]/10 text-[var(--accent)] border border-[var(--accent)]/30 flex items-center gap-1.5">
+                <span>⚖️ METHODEN-VERGLEICH & ENTSCHEIDUNGSWEICHE (Weg A vs. Weg B)</span>
+              </span>
+            ) : (
+              <span className="px-2.5 py-1 rounded-[var(--radius)] bg-[var(--accent)]/10 text-[var(--accent)] border border-[var(--accent)]/30 flex items-center gap-1.5">
+                <span>🎮 INTERAKTIVE SANDKASTEN-CHALLENGE</span>
+              </span>
+            )}
+          </div>
+
+          <div className="border border-[var(--line)] bg-[var(--surface)] p-4 sm:p-5 rounded-[var(--radius)] font-serif text-base text-[var(--ink)] leading-relaxed shadow-none">
             {renderFormattedText(cleanAufgabe)}
           </div>
 
           {tool && renderEmbeddedTool(tool, lang, activeCourse.fach)}
 
           {stepAus.hilfe && (
-            <div>
+            <div className="rounded-[var(--radius)] border border-[var(--line)] bg-[var(--paper-subtle)] p-3.5 space-y-2">
               <button
                 type="button"
                 onClick={() => (isDoc ? toggleTryShowHelpFor(s.stepNumber) : setTryShowHelp((h) => !h))}
-                className="text-xs font-mono text-[var(--accent)] hover:underline"
+                className="text-xs font-mono font-medium text-[var(--accent)] hover:underline flex items-center gap-1.5"
               >
-                {curShowHelp
-                  ? lang === "de"
-                    ? "[- Hilfe verbergen]"
-                    : "[- Hilfe verbergen / 隐藏提示]"
-                  : lang === "de"
-                  ? "[+ Hilfe anzeigen]"
-                  : "[+ Hilfe anzeigen / 显示解题提示]"}
+                <span>💡 {curShowHelp ? (lang === "de" ? "Hilfe & Denkanstoß verbergen" : "隐藏解题提示") : (lang === "de" ? "Hilfe & Denkanstoß anzeigen" : "显示解题提示与思路支架")}</span>
               </button>
               {curShowHelp && (
-                <div className="mt-2 p-3 border border-dashed border-[var(--line)] bg-[var(--paper-subtle)] text-xs font-sans text-[var(--gray)] rounded-[var(--radius)]">
+                <div className="mt-2 pt-2 border-t border-[var(--line)] text-xs font-sans text-[var(--ink)] leading-relaxed">
                   {renderFormattedText(stepAus.hilfe)}
                 </div>
               )}
