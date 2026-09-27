@@ -132,7 +132,7 @@ ROLLE: Du bist Prüfling in einer mündlichen Musikprüfung (EF) und sollst eine
 SITUATION: Die Prüferin spielt einen Ausschnitt, in dem zwei Themen zu hören sind und der zweite Gedanke in einer neuen Tonlage endet. Sie fragt: "Ordnen Sie den Ausschnitt ein und begründen Sie Ihre Entscheidung." Formuliere eine zusammenhängende mündliche Stellungnahme (ca. 90 Sekunden) mit den drei Hörfragen (Themenzahl, Tonart, Rückkehr) und schließe mit einem begründeten Urteil zur Wirkung.
 RUBRIC (30 XP): Benennung des Formteils über Themenzahl und Tonartplan (8 XP) | Beschreibung von zwei Hörmerkmalen mit Fachbegriffen (8 XP) | Begründung über den Tonartverlauf (Hd/Dd, Fremdtonart vs. Haupttonart) (9 XP) | Begründetes Urteil zur Ausdruckswirkung (Aufbruch vs. Heimkehr) (5 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY 1盒（核心总结）：
 

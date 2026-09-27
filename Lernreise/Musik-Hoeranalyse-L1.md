@@ -137,7 +137,7 @@ ROLLE: Du bist Prüfling in einer mündlichen Musikprüfung (EF) und sollst eine
 SITUATION: Die Prüferin spielt einen etwa 30-sekündigen Ausschnitt und fragt: "Beschreiben Sie den Ausschnitt, erklären Sie seine Wirkung und beurteilen Sie ihn." Formuliere eine zusammenhängende mündliche Stellungnahme (ca. 90 Sekunden), in der du mindestens zwei Parameter nennst, die Wirkung mit Fachbegriffen erklärst und mit einem begründeten Urteil schließt. Achte darauf, erst zu beschreiben und erst danach zu urteilen.
 RUBRIC (30 XP): Nennung von mindestens zwei Parametern mit korrekten Fachbegriffen (8 XP) | Klar erkennbare Struktur Beschreiben → Deuten → Beurteilen (7 XP) | Begründung der Wirkung mit dem Baustein "Ich höre ... das wirkt ..., weil ..." (10 XP) | Begründetes, nicht bloß gefühlsmäßiges Urteil am Schluss (5 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY 1盒（核心总结）：
 

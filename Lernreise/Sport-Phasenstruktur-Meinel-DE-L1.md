@@ -128,8 +128,7 @@ Redemittel: `Ich waehle die sportartspezifische Gliederung, weil die Aufgabe den
 
 Klausur-Satz: `Beide Gliederungen beschreiben dieselbe Bewegung auf unterschiedlichem Detaillierungsgrad; die Projektgliederung ist die Verfeinerung der allgemeinen Drei-Phasen-Struktur.`
 
-## Schritt 6 — check: Verständnisprüfung
-
+## Schritt 6 — check: Selbsttest zu Die Phasenstruktur der Bewegung und der Beobachtungsbogen
 CHECK (3 Fragen zur Selbstkontrolle mit Antworten):
 
 FRAGE: In welche drei Phasen gliedert die allgemeine Phasenstruktur eine Bewegung? | ANTWORT: In die Vorbereitungsphase, die Hauptphase und die Endphase.
@@ -149,13 +148,12 @@ Klausur-Satz: `Bewegungsphasen und Lernphasen liegen auf verschiedenen Ebenen un
    Korrektur: Beobachtung heisst nur beschreiben; werten gehoert in Fehlerbild und Korrektur. Wer Wertung und Beobachtung vermischt, verliert Analysepunkte.
    Korrektur-Satz: `In der Spalte Beobachtung wird nur beschrieben; die Bewertung erfolgt getrennt in den Spalten Fehlerbild und Korrektur.`
 
-## Schritt 7 — szenario: Klausurtransfer & Rubric
-
+## Schritt 7 — szenario: Klausurtransfer: Die Phasenstruktur der Bewegung und der Beobachtungsbogen
 ROLLE: Du bist Pruefling in einer muendlichen Sportpruefung und sollst eine Bewegungsanalyse in Phasen vorstellen.
 SITUATION: Der Pruefer bittet dich, den Absprung beim Weitsprung zu beschreiben und anhand eines selbst erstellten Beobachtungsbogens eine Ausfuehrung zu beurteilen, bei der ein Sportler kurz vor dem Brett abbremst. Erklaere deine Analyse muendlich in zusammenhaengenden deutschen Saetzen (ca. 2 Minuten) und begruende dein Urteil mit biomechanischen Argumenten.
 RUBRIC (30 XP): Gliederung der Bewegung in Phasen mit korrekter Fachsprache (5 XP) | Benennung der Hauptphase und Begruendung mit biomechanischer Wirkung (10 XP) | Vorlage eines Beobachtungsbogens mit konkreten Indikatoren (10 XP) | Kriteriengeleitetes Urteil ueber die abgebremste Ausfuehrung mit Korrekturvorschlag (5 XP).
 
-## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
+## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY (Kernzusammenfassung):
 

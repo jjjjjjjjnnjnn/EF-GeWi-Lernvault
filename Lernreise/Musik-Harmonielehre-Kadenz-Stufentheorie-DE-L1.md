@@ -124,8 +124,7 @@ ANTWORT: A erfordert Konzept (i): A-C-E ist Stufe $VI$ in Moll und gehoert als V
 
 Klausur-Satz: `Die Stufe $VI$ vertritt die Tonika, doch die Folge Dominante vor Subdominante widerspricht dem Kadenzweg.`
 
-## Schritt 6 — check: Verständnisprüfung
-
+## Schritt 6 — check: Selbsttest zu Harmonielehre Kadenz und Stufentheorie
 CHECK (3 Fragen zur Selbstkontrolle mit Antworten):
 
 FRAGE: Welche Stufen gehoeren in Dur zu $T$, $S$ und $D$? | ANTWORT: $T$ = $I$, $iii$, $vi$; $S$ = $IV$, $ii$; $D$ = $V$, $vii0$; Grundweg $T-S-D-T$.
@@ -145,14 +144,13 @@ Klausur-Satz: `Der vierstimmige Satz verlangt regelmaessig verdoppelten Grundton
    Korrektur: Ein Schluss folgt der Funktionsrichtung, nicht dem blossen Klangeindruck. $D$ muss nach $T$ aufloesen; $D$ nach $S$ ist eine Rueckwendung und wird als Fehler gewertet.
    Korrektur-Satz: `Nach der Dominante ist nur die Tonika als Ziel zulaessig, nicht die Subdominante.`
 
-## Schritt 7 — szenario: Klausurtransfer & Rubric
-
+## Schritt 7 — szenario: Klausurtransfer: Harmonielehre Kadenz und Stufentheorie
 ROLLE: Du bist Klavierbetreuer der EF-Musikgruppe und erklaerst einer Mitschuelerin die Klausuraufgabe.
 SITUATION: Sie hat C-F-G-C korrekt als $I$-$IV$-$V$-$I$ bestimmt, doch ihr vierstimmiger Satz enthaelt parallele Oktaven zwischen Bass und Tenor und der Leitton bleibt liegen.
 AUFGABE: Schreibe eine zusammenhaengende Korrektur (ca. 150 Woerter), in der du Stufe und Funktion bestaetigst, die zwei Stimmfuehrungsfehler benennst und je eine konkrete Umlagerung mit Beibehaltung des gemeinsamen Tons vorschlaegst.
 RUBRIC (30 XP): Stufen plus Funktionen korrekt (10 XP) | Beide Fehler mit Stimmenangabe benannt (10 XP) | Zwei praktikable Korrekturen mit Gegenbewegung (10 XP).
 
-## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
+## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY (Kernzusammenfassung):
 

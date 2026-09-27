@@ -136,7 +136,7 @@ ROLLE: Du bist Praktikumsbetreuerin im Physikpraktikum der EF und sollst eine Ha
 SITUATION: Ein Skateboarder (m = 60 kg) startet aus der Ruhe am Rand einer reibungsfreien Halfpipe mit der Höhe h = 1,8 m über dem tiefsten Punkt. Er soll ohne weitere Kraftanstrengung durch die Bahn fahren. Beurteile in einer zusammenhängenden Stellungnahme (ca. 150 Wörter), welche Geschwindigkeit er am tiefsten Punkt erreicht und warum die Energiebetrachtung hier sinnvoller ist als eine Kraftbetrachtung. Nutze g = 10 m/s^2.
 RUBRIC (30 XP): Aufstellen der Energiebilanz m*g*h = 0.5*m*v^2 mit gewaehlter Nullhoehe (5 XP) | Korrekte Berechnung v = sqrt(2*g*h) = 6,0 m/s mit Einheit (10 XP) | Begruendung der Unabhaengigkeit von der Masse (10 XP) | Kriteriengeleitetes Urteil zum Vorzug des Energieansatzes (veränderliche Kraftrichtung, keine Zeit gesucht) (5 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY 1盒（核心总结）：
 

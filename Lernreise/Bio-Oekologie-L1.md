@@ -137,7 +137,7 @@ ROLLE: Du bist Mitglied einer Naturschutz-AG und sollst auf einer Gemeinderatssi
 SITUATION: In einem Waldgebiet soll der Fuchs intensiv bejagt werden, weil er angeblich die Population der Hasen bedroht. Ein Teil der Anwesenden erwartet, dass die Hasen daraufhin stark zunehmen. Beurteile den Eingriff in einer zusammenhängenden Stellungnahme (ca. 150 Wörter), indem du den Energiefluss und die Rolle der Trophieebenen heranziehst und zu einem kriteriengeleiteten Urteil kommst.
 RUBRIC (30 XP): Einordnung des Fuchses als Konsument einer höheren Trophieebene (5 XP) | Erklärung der begrenzten Energieweitergabe und der Kapazitätsgrenze der Populationen (10 XP) | Analyse möglicher Folgen des Eingriffs — Verschiebung im Nahrungsnetz, Konkurrenz-, Räuber-Beute-Effekte (10 XP) | Kriteriengeleitetes Urteil unter Abwägung von Sachurteil und naturschutzfachlichen Normen (5 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY 1盒（核心总结）：
 

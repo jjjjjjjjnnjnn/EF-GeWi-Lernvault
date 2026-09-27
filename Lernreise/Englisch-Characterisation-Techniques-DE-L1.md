@@ -128,8 +128,7 @@ ANSWER: A requires procedure (i): the narrator states "patient" and "fair" and s
 
 Klausur-Satz: `Direct characterisation hands the reader a ready-made judgement, whereas indirect characterisation makes the reader build that judgement from evidence and therefore feel it more strongly.`
 
-## Schritt 6 — check: Verständnisprüfung
-
+## Schritt 6 — check: Selbsttest zu Characterisation: Direct and Indirect Techniques
 CHECK (three questions with answers):
 
 FRAGE: What distinguishes direct from indirect characterisation? | ANTWORT: Direct names a trait openly; indirect lets the reader infer it from actions, speech, thoughts, looks and reactions of others.
@@ -150,13 +149,12 @@ Klausur-Satz: `Before analysing a character, I identify the narrative perspectiv
    Correction: Literary texts work mostly indirectly; explicit traits are rare. Readers who only collect direct labels miss the evidence that carries the analysis.
    Korrektur-Satz: `Most literary texts characterise indirectly, so a reader who only looks for explicit traits will miss the evidence that carries the analysis.`
 
-## Schritt 7 — szenario: Klausurtransfer & Rubric
-
+## Schritt 7 — szenario: Klausurtransfer: Characterisation: Direct and Indirect Techniques
 ROLE: You are an English tutor leading a small exam-preparation group.
 SITUATION: A student wrote: "The boy is shy and lonely." Then follows plot retelling. Explain in a coherent answer (ca. 150 words) why this is no analysis, and demonstrate with a short self-chosen example what a correct P.E.E. paragraph on indirect characterisation looks like.
 RUBRIC (30 XP): Naming the error — trait without proof, retelling instead of analysis (5 XP) | Explaining the five channels (10 XP) | Demonstrating a full P.E.E. paragraph with point, evidence and effect (10 XP) | Noting the role of narrative perspective (5 XP).
 
-## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
+## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY (core summary):
 

@@ -122,7 +122,7 @@ ANTWORT: A erfordert Verfahren (i): Sei Grundkante $a$ und Hoehe $h$, dann $4a +
 
 Klausur-Satz: `Ein Sachkontext mit fester Ressource verlangt das volle Extremwert-Schema inklusive Randpruefung, eine reine Formel verlangt nur die Analyse von f'(x) = 0.`
 
-## Schritt 6 — check: Verständnisprüfung
+## Schritt 6 — check: Selbsttest zu Extremwertprobleme und Optimierung
 CHECK (drei Fragen mit Antworten):
 
 FRAGE: Wie lautet das Drei-Schritt-Schema eines Extremwertproblems? | ANTWORT: Zielfunktion aufstellen, mit Nebenbedingung auf eine Variable reduzieren, Kandidaten mit $f'(x) = 0$ suchen und mit Randpruefung beurteilen.
@@ -139,13 +139,13 @@ Klausur-Satz: `Erst Zielfunktion plus Nebenbedingung plus Definitionsmenge plus 
 2. Fehlkonzept: Definitionsmenge, Einheiten und Randwerte sind Formsache und duerfen entfallen.
    Korrektur-Satz: `Ohne Definitionsmenge mit Einheiten und ohne explizite Randwerte gilt eine Extremwert-Loesung als unvollstaendig.`
 
-## Schritt 7 — szenario: Klausurtransfer & Rubric
+## Schritt 7 — szenario: Klausurtransfer: Extremwertprobleme und Optimierung
 ROLLE: Du bist Praktikant in der Logistik-Abteilung eines Online-Haendlers.
 SITUATION: Aus einem Standard-Bogen $24\,\mathrm{cm}$ mal $18\,\mathrm{cm}$ sollen offene Versandkisten mit maximalem Volumen gebaut werden. Deine Chefin verlangt eine nachvollziehbare Rechnung mit Zielfunktion, Definitionsmenge, Ableitung und Randpruefung sowie eine klare Empfehlung fuer die Produktion (circa 150 Woerter, mit Einheiten $\mathrm{cm}$ und $\mathrm{cm}^3$).
 AUFGABE (beurteilen, AFB III): Entscheide, welche Schnittlaenge in die Produktion geht, und beurteile, wie sensibel das Maximum auf Abweichungen von $\pm 0{,}5\,\mathrm{cm}$ reagiert.
 RUBRIC (30 XP): Zielfunktion plus Definitionsmenge korrekt (5 XP) | Kandidaten mit Ableitung korrekt berechnet (10 XP) | Randpruefung mit Einheiten vollstaendig (10 XP) | Produktionsempfehlung mit Beurteilung der Sensibilitaet (5 XP).
 
-## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
+## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
 TAKEAWAY (Kernbotschaft in einem Kasten):
 
 Ein Extremwertproblem verlangt stets vier Bausteine: Zielfunktion, Nebenbedingung, Definitionsmenge und Randvergleich. Zuerst wird die Sachsituation in $V(x)$ mit $D$ uebersetzt, dann werden Kandidaten mit $f'(x) = 0$ gesucht, schliesslich werden die Raender in den Vergleich einbezogen. Merksatz: aufstellen, reduzieren, festlegen, vergleichen. Denn $f' = 0$ ist nur die Eintrittskarte, der Randvergleich faellt das Urteil.

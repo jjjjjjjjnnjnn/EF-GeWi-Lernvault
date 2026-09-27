@@ -121,7 +121,7 @@ ANTWORT: A erfordert Verfahren (i): $E$ als Gerade, $K$ als S-Kurve; zwei Schnit
 
 Klausur-Satz: `Die graphische Deutung liest Gewinnzonen an Schnittpunkten ab, die rechnerische Bestimmung sichert sie mit Ableitung und Einheiten.`
 
-## Schritt 6 — check: Verständnisprüfung
+## Schritt 6 — check: Selbsttest zu Ganzrationale Funktionen im Sachkontext
 CHECK (drei Fragen mit Antworten):
 
 FRAGE: Wie haengen $E(x)$, $K(x)$ und $G(x)$ zusammen und welche Einheiten tragen sie? | ANTWORT: Es gilt $G(x) = E(x) - K(x)$, $x$ in ME, alle Funktionswerte in GE, auf sachnaher Definitionsmenge $D$.
@@ -138,13 +138,13 @@ Klausur-Satz: `Jede Aussage im Sachkontext braucht Definitionsmenge D plus Einhe
 2. Fehlkonzept: Nullstellen und Extrema ohne Einheiten und Definitionsmenge ergeben bereits die volle Punktzahl.
    Korrektur-Satz: `Ohne Definitionsmenge, Einheiten ME und GE sowie Antwortsatz gilt eine Sachkontext-Loesung als unvollstaendig.`
 
-## Schritt 7 — szenario: Klausurtransfer & Rubric
+## Schritt 7 — szenario: Klausurtransfer: Ganzrationale Funktionen im Sachkontext
 ROLLE: Du bist Junior-Controller in einem Startup.
 SITUATION: $E(x) = 15x$, $K(x) = 0{,}4x^3 - 5x^2 + 28x + 15$, $D = [0, 15]$ ME, Werte in GE. Die Chefin will wissen, ab wann sich Produktion lohnt, wo der Gewinn maximal ist und ob eine Ausweitung ueber $12$ ME hinaus sinnvoll bleibt. Schreibe eine Stellungnahme (circa 150 Woerter) mit Rechnung und oekonomischer Deutung.
 AUFGABE (eroertern, AFB III): Eroertere auf Basis von Break-even, Hochpunkt und Grenze von $D$, welche Mengenintervalle zu empfehlen sind.
 RUBRIC (30 XP): $G(x)$ plus $D$ mit Einheiten korrekt (5 XP) | Break-even korrekt berechnet (10 XP) | Hochpunkt plus Wende korrekt (10 XP) | Eroerterung mit Empfehlung fuer Intervalle (5 XP).
 
-## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
+## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
 TAKEAWAY (Kernbotschaft in einem Kasten):
 
 Der Sachkontext folgt drei Schritten: Modellieren von $G = E - K$ mit $D$ in ME und GE, Berechnen von Nullstellen, Extrema und Wende, Deuten jedes Ergebnisses im Intervall. Die Nullstelle steuert Break-even, der Hochpunkt den Maximalgewinn, die Wende den staerksten Anstieg. Die Graphik zeigt die Gerade $E$ gegen die S-Kurve $K$, die Algebra sichert jede Aussage mit Ableitung, Einheit und Antwortsatz.

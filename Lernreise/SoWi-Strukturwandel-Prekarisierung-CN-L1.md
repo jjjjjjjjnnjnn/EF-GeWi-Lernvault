@@ -130,8 +130,7 @@ ANTWORT: A erfordert Verfahren (i): Die Arbeitslosenzahl sinkt, weil Normalarbei
 
 Klausur-Satz: `Struktur erklaert die Lage der Jobs, Individuum nur die Lage einzelner in ihnen.`
 
-## Schritt 6 — check: Verständnisprüfung
-
+## Schritt 6 — check: Selbsttest zu Strukturwandel und Prekarisierung der Arbeit
 CHECK检索默写（自测 3 题，与答案配对）：
 
 FRAGE: Was heisst Strukturwandel in einem Satz? | ANTWORT: Dauerhafte Verlagerung von Agrar ueber Industrie zu Dienstleistung und Digitaloekonomie.
@@ -152,13 +151,12 @@ Klausur-Satz: `Prekaritaet misst man an vier Defiziten, nicht an einem Klischee.
    中文纠偏：平台规则、派遣制度与部门结构决定了选项菜单，个人只在菜单内选。只谈选择不谈菜单是归因错误。
    Korrektur-Satz: `Prekaritaet ist zuerst Struktur, dann Entscheidung.`
 
-## Schritt 7 — szenario: Klausurtransfer & Rubric
-
+## Schritt 7 — szenario: Klausurtransfer: Strukturwandel und Prekarisierung der Arbeit
 ROLLE: Du bist Praktikant in der Kommunalverwaltung einer Ruhrgebietsstadt.
 SITUATION: Der Stadtrat debattiert, ob neue Logistikhufe als Erfolg gelten. Nimm in einer zusammenhaengenden Stellungnahme (ca. 150 Woerter) mit Strukturwandel und Prekaritaetskriterien dazu Stellung und empfehle zwei kommunale Massnahmen.
 RUBRIC (30 XP): Strukturwandel-Deutung der Logistikjobs (8 XP) | Vier-Kriterien-Pruefung (10 XP) | Zwei begruendete Massnahmen, z. B. Vergabe mit Tarifbindung, Weiterbildung (8 XP) | Adressatengerechte Stellungnahme (4 XP).
 
-## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
+## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY 1盒（核心总结）：
 

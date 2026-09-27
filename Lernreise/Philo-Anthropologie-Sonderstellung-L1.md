@@ -145,7 +145,7 @@ ROLLE: Du bist Referent in einem Schulprojekt „Mensch und Tier" und sollst auf
 SITUATION: Ein Teil des Publikums beruft sich auf die Vernunft des Menschen, ein anderer Teil verweist auf die Leidensfähigkeit von Tieren und bestreitet jede Sonderstellung. Beurteile in einer zusammenhängenden Stellungnahme (ca. 150 Wörter), ob eine moralische Sonderstellung rational haltbar ist, und beziehe Gehlen, Scheler und die tierethische Kritik (z. B. Singer) ein.
 RUBRIC (30 XP): Rekonstruktion einer Position zur Sonderstellung (5 XP) | Vergleichende Gegenüberstellung Gehlen vs. Scheler mit klaren Dimensionen (10 XP) | Einbezug der tierethischen Kritik am Anthropozentrismus (10 XP) | Kriteriengeleitetes Urteil mit Abwägung von Vernunft und Leidensfähigkeit (5 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY 1盒（核心总结）：
 

@@ -128,7 +128,7 @@ ROLLE: Du bist Messassistentin im Physikkurs.
 SITUATION: Zwei $v$-$t$-Diagramme liegen vor: Kurve A ist eine Gerade mit Steigung $g$, Kurve B flacht nach $2 \, \mathrm{s}$ deutlich ab. Entscheide in circa 150 Woertern, welche Kurve zum Fall im Vakuum und welche zum Fall mit Luftwiderstand gehoert, und bestimme graphisch die Endgeschwindigkeit von Kurve B.
 RUBRIC (30 XP): Richtige Zuordnung beider Kurven (8 XP) | Begruendung mit Kraeftegleichung (10 XP) | Ablesen von $v_E$ aus der Horizontalen (6 XP) | Fachsprachliche Darstellung (6 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY:
 

@@ -130,8 +130,7 @@ ANTWORT: A erfordert Verfahren (i): Nur die Viererpruefung (Traeger, Tarifziel, 
 
 Klausur-Satz: `Rechtmaessigkeit folgt den Kampfregeln, Sinnhaftigkeit den Kosten und dem Druck.`
 
-## Schritt 6 — check: Verständnisprüfung
-
+## Schritt 6 — check: Selbsttest zu Tarifautonomie und Gewerkschaften im Arbeitskampf
 CHECK检索默写（自测 3 题，与答案配对）：
 
 FRAGE: Was schuetzt Art. 9 Abs. 3 GG? | ANTWORT: Die Koalitionsfreiheit: Gewerkschaften und Arbeitgeber verhandeln Loehne frei vom Staat.
@@ -152,13 +151,12 @@ Klausur-Satz: `Ohne Tarifziel und ohne ultima ratio ist kein Streik rechtmaessig
    中文纠偏：这违反 Tarifautonomie；国家只设定底线（Mindestlohn、 Arbeitszeitgesetz），具体工资留给劳资博弈。
    Korrektur-Satz: `Der Staat setzt Rahmen, die Tarifparteien setzen Loehne.`
 
-## Schritt 7 — szenario: Klausurtransfer & Rubric
-
+## Schritt 7 — szenario: Klausurtransfer: Tarifautonomie und Gewerkschaften im Arbeitskampf
 ROLLE: Du bist Schuelervertreter in einer Podiumsdiskussion zum OePNV-Streik.
 SITUATION: Pendler klagen ueber Ausfaelle, die Gewerkschaft verweist auf gescheiterte Schlichtung. Nimm in einer zusammenhaengenden Stellungnahme (ca. 150 Woerter) dazu Stellung: War der Streik rechtmaessig und war er sinnvoll?
 RUBRIC (30 XP): Rechtmaessigkeitspruefung in vier Punkten (12 XP) | Wirksamkeitsabwaegung mit Kosten (10 XP) | Eigenes kriteriengeleitetes Urteil (4 XP) | Adressatengerechte Stellungnahme (4 XP).
 
-## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
+## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY 1盒（核心总结）：
 

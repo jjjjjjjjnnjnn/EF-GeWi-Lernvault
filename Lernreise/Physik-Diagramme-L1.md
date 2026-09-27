@@ -138,7 +138,7 @@ ROLLE: Du bist Mitglied der Physik-AG und sollst für das Schuljahrbuch einen Ve
 SITUATION: Eine Gruppe hat eine Messreihe (t in s, s in m) aufgenommen; die Punkte streuen leicht um eine Gerade, und ein Schüler behauptet, das Ergebnis sei "genau 0,50 m/s". Die Redaktion fragt dich, wie man die Daten korrekt darstellt, die Geschwindigkeit bestimmt und die Aussagekraft der Messung bewertet. Beurteile in einer zusammenhängenden Stellungnahme (ca. 150 Wörter) unter Rückgriff auf Ausgleichsgerade und Messunsicherheit.
 RUBRIC (30 XP): Beschreibung der korrekten Darstellung (Achsen mit Einheit, Punkte, Ausgleichsgerade) (5 XP) | Bestimmung der Steigung als Geschwindigkeit mit Rechnung (10 XP) | Beurteilung der Abweichungen als zufaellig bzw. systematisch (10 XP) | Eingeschraenktes, kriteriengeleitetes Fazit statt "exakt" (5 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY 1盒（核心总结）：
 

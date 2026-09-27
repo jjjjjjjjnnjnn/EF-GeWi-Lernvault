@@ -122,8 +122,7 @@ ANTWORT: A erfordert Verfahren (i): Der leichtere Athlet nutzt $v0$ plus langes 
 
 Klausur-Satz: `Technik verlaengert Zeit und Weg des Impulses, Kraft erhoeht seinen Ausgangswert.`
 
-## Schritt 6 — check: Verständnisprüfung
-
+## Schritt 6 — check: Selbsttest zu Biomechanische Prinzipien Anfangskraft
 CHECK (3 Fragen zur Selbstkontrolle mit Antworten):
 
 FRAGE: Was besagt das Prinzip der Anfangskraft in einem Satz? | ANTWORT: Eine Gegenbewegung vor der Hauptbewegung erzeugt Anfangsgeschwindigkeit und verlaengert den Beschleunigungsweg.
@@ -143,14 +142,13 @@ Klausur-Satz: `Die Stossweite waechst mit Kraft, Beschleunigungszeit und Beschle
    Korrektur: Bein und Rumpf erzeugen den Hauptimpuls, der Arm vollendet nur die finale Streckung. Wer nur den Arm trainiert, nutzt nur die letzten Meter der Bahn.
    Korrektur-Satz: `Bein und Rumpf erzeugen den Hauptimpuls, der Arm vollendet nur die finale Streckung.`
 
-## Schritt 7 — szenario: Klausurtransfer & Rubric
-
+## Schritt 7 — szenario: Klausurtransfer: Biomechanische Prinzipien Anfangskraft
 ROLLE: Du bist Sporthelferin in der EF und analysierst ein Handyvideo vom Kugelstossen.
 SITUATION: Ein Mitschueler stoesst aus dem Stand recht weit, doch mit Gleitschritt landet die Kugel kaum weiter vorn. Er will das Gleiten schon aufgeben.
 AUFGABE: Schreibe eine zusammenhaengende Beratung (ca. 150 Woerter), in der du sein Video anhand von Anfangskraft, Impuls und Beschleunigungsweg deutest und zwei konkrete Korrekturen fuer Auftakt und Angleit-Tempo gibst.
 RUBRIC (30 XP): Deutung mit $J = F mal t$ und Weg (10 XP) | Zwei Fehler in Auftakt und Tempo benannt (10 XP) | Zwei umsetzbare Korrekturen mit Zielwert (10 XP).
 
-## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
+## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY (Kernzusammenfassung):
 

@@ -128,8 +128,7 @@ ANTWORT: A erfordert Konzept (i): TUE, Therapie statt Leistungssteigerung, legal
 
 Klausur-Satz: `Attest und Transparenz trennen Therapie von Betrug.`
 
-## Schritt 6 — check: Verständnisprüfung
-
+## Schritt 6 — check: Selbsttest zu Doping Ethik und Gesundheitsrisiken
 CHECK检索默写（自测 3 题，与答案配对）：
 
 FRAGE: Welche drei Dopinggruppen plus Beispiel? | ANTWORT: Anabolika (Muskel), EPO (Ausdauer-Blut), Stimulanzien/Diuretika (Push/Maskierung).
@@ -150,14 +149,13 @@ Klausur-Satz: `Kurzfristiger Peak, langfristiger Preis: Das Grundmuster aller Do
    中文纠偏：WADA 三大支柱明写健康保护，青少年题必须答健康角度。只谈公平丢三分之一分数。
    Korrektur-Satz: `Gesundheitsschutz ist gleichrangiges Saeulenziel neben Fairness und Vorbild.`
 
-## Schritt 7 — szenario: Klausurtransfer & Rubric
-
+## Schritt 7 — szenario: Klausurtransfer: Doping Ethik und Gesundheitsrisiken
 ROLLE: Du bist Schuelersprecher und schreibst ans Team nach einem Dopingfund.
 SITUATION: Ein Star der Schulmannschaft wurde mit Stimulanzien erwischt; die Haelfte fordert Rausschmiss, die Haelfte Mitleid.
 AUFGABE: Nehmen Sie in ca. 150 Woertern Stellung: Ursachen (Druck/System), Folgen (Gesundheit/Fairness) und ein Praeventionsvorschlag.
 RUBRIC (30 XP): Ursachen Druck plus System (8 XP) | Gesundheits- plus Fairness-Folgen (12 XP) | Praevention (Beratung/Kontrollen) plus faires Urteil (10 XP).
 
-## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
+## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY 1盒（核心总结）：
 

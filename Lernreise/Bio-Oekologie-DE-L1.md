@@ -121,8 +121,7 @@ ANTWORT: A erfordert Verfahren (i): Auf jeder Trophieebene werden nur etwa zehn 
 
 Klausur-Satz: `Die Abnahme der Biomasse nach oben erklaert sich aus dem einseitigen Energiefluss, waehrend die Rueckfuehrung anorganischer Stoffe durch Destruenten den Stoffkreislauf bildet.`
 
-## Schritt 6 — check: Verständnisprüfung
-
+## Schritt 6 — check: Selbsttest zu Oekologie: Nische, Population, Energiefluss
 CHECK (drei Fragen mit Antworten):
 
 FRAGE: Worin unterscheidet sich die oekologische Nische vom Habitat? | ANTWORT: Das Habitat ist der konkrete Aufenthaltsort einer Art, waehrend die oekologische Nische die Gesamtheit ihrer funktionellen Ansprueche an Ressourcen, Zeit und Raum beschreibt.
@@ -142,14 +141,13 @@ Klausur-Satz: `Energie wird bei jedem Transfer teilweise als Waerme abgegeben un
    Korrektur: Die oekologische Nische beschreibt die funktionellen Ansprueche einer Art, waehrend das Habitat nur ihren Aufenthaltsort angibt.
    Korrektur-Satz: `Die oekologische Nische beschreibt die funktionellen Ansprueche einer Art, waehrend das Habitat nur ihren Aufenthaltsort angibt.`
 
-## Schritt 7 — szenario: Klausurtransfer & Rubric
-
+## Schritt 7 — szenario: Klausurtransfer: Oekologie: Nische, Population, Energiefluss
 ROLLE: Du bist Mitglied einer Naturschutz-AG und sollst auf einer Gemeinderatssitzung eine geplante Massnahme bewerten.
 SITUATION: In einem Waldgebiet soll der Fuchs intensiv bejagt werden, weil er angeblich die Population der Hasen bedroht. Ein Teil der Anwesenden erwartet, dass die Hasen daraufhin stark zunehmen.
 AUFGABE (AFB II/III): Beurteile den Eingriff in einer zusammenhaengenden Stellungnahme (ca. 150 Woerter), indem du den Energiefluss und die Rolle der Trophieebenen heranziehst und zu einem kriteriengeleiteten Urteil kommst.
 RUBRIC (30 XP): Einordnung des Fuchses als Konsument einer hoeheren Trophieebene (5 XP) | Erklaerung der begrenzten Energieweitergabe und der Kapazitaetsgrenze der Populationen (10 XP) | Analyse moeglicher Folgen des Eingriffs — Verschiebung im Nahrungsnetz, Konkurrenz-, Raeuber-Beute-Effekte (10 XP) | Kriteriengeleitetes Urteil unter Abwaegung von Sachurteil und naturschutzfachlichen Normen (5 XP).
 
-## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
+## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY (Kernbotschaft in einem Kasten):
 

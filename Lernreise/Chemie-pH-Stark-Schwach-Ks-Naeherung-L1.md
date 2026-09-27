@@ -119,7 +119,7 @@ ROLLE: Du bist Laborassistentin und pruefst zwei Flaschen.
 SITUATION: Flasche A enthaelt $0{,}10 \, \mathrm{mol/L}$ Salzsaeure, Flasche B $0{,}10 \, \mathrm{mol/L}$ Essigsaeure. Erklaere in circa 150 Woertern mit beiden Verfahren, welche pH-Werte zu erwarten sind und warum ein pH-Streifen allein die Saeuren nicht sicher unterscheidet.
 RUBRIC (30 XP): Stark-Verfahren korrekt (8 XP) | Schwach-Verfahren mit Test (10 XP) | Vergleich und Deutung (8 XP) | Fachsprachliche Darstellung (4 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY:
 

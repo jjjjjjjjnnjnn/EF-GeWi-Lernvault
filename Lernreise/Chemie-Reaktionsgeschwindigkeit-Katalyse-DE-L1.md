@@ -123,8 +123,7 @@ ANTWORT: A erfordert Verfahren (i): Versuch 2 startet schneller, weil mehr Teilc
 
 Klausur-Satz: `Mehr Konzentration erhoeht die Stosszahl, der Katalysator senkt die Huerde; nur der erste Fall aendert v ueber die Teilchenzahl, der zweite ueber Ea.`
 
-## Schritt 6 — check: Verständnisprüfung
-
+## Schritt 6 — check: Selbsttest zu Reaktionsgeschwindigkeit und Katalyse
 CHECK (Selbsttest, 3 Fragen mit Antworten):
 
 FRAGE: Wie ist die Reaktionsgeschwindigkeit definiert und wie berechnet man sie aus c-t-Daten? | ANTWORT: v = Δc/Δt, also Konzentrationsaenderung pro Zeit; Beispiel: Δc = 0.40 mol/L in 20 s ergibt 0.020 mol/(L s).
@@ -145,14 +144,13 @@ Klausur-Satz: `Wirksame Stoesse brauchen Energie, Orientierung und Kontakt; der 
    Korrektur: Er senkt die gemeinsame Schwelle von Hin- und Rueckweg, beide Richtungen werden gleich beschleunigt; Lage und Ausbeute bleiben. Er aendert die Zeit bis zum Ziel, nicht das Ziel. Wer nach Verschiebung gefragt wird, waehlt niemals den Katalysator.
    Korrektur-Satz: `Der Katalysator beschleunigt Hin- und Rueckreaktion gleich und veraendert die Lage des Gleichgewichts nicht.`
 
-## Schritt 7 — szenario: Klausurtransfer & Rubric
-
+## Schritt 7 — szenario: Klausurtransfer: Reaktionsgeschwindigkeit und Katalyse
 ROLLE: Du bist Praktikantin im Umweltlabor und erklaerst einer Besuchergruppe den Auto-Katalysator.
 SITUATION: Die Gruppe fragt, warum ein kleines Kat-Blech die giftigen Gase CO und NO dauerhaft in CO2 und N2 verwandeln kann, ohne selbst zu verschwinden. Antworte in einer zusammenhaengenden Darstellung (ca. 150 Woerter) mit der Gleichung 2CO + 2NO --Kat--> 2CO2 + N2, der Formel v = Δc/Δt und dem Ea-Doppelpeak.
 AUFGABE: Schreibe eine Klausur-Antwort mit Berechnungsskizze, Teilchendeutung und Urteil ueber Verbrauch und Gleichgewicht.
 RUBRIC (30 XP): Korrekte Deutung von v = Δc/Δt und der drei Stossbedingungen (10 XP) | Beschreibung des Kat-Weges mit niedrigerer Ea als Doppelpeak (10 XP) | Urteil: Kat bleibt unveraendert, Gleichgewichtslage bleibt gleich (10 XP).
 
-## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
+## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY (Kernzusammenfassung):
 

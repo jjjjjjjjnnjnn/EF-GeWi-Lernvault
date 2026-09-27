@@ -134,7 +134,7 @@ SITUATION: Debatte: Soll der Mindestlohn auf 15 Euro steigen? Halte ein 2-Minute
 
 RUBRIC: These in Satz 1 (darstellen) | zwei Fachbegriffe (z. B. Tarifautonomie, Kaufkraft, Wettbewerbsfähigkeit) | ein Beleg/Beispiel | Urteil mit Kriterium (beurteilen).
 
-## Schritt 8 — entdecken
+## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY 1盒（合书能背才算过）：
 

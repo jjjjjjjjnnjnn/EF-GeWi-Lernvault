@@ -136,7 +136,7 @@ SITUATION: Nach einem Regen ist ein Auto in einer flachen Kurve mit Radius 60 m 
 AUFGABE: Schreibe eine Klausur-Antwort mit Formeln, Rechnung, Kraftdeutung und Urteil ueber die Fliehkraft-Aussage.
 RUBRIC (30 XP): Korrekte Rechnung mit F_Z = m v^2/r (10 XP) | Deutung als Haftreibung als Lieferant der Radialkraft (10 XP) | Urteil: keine reale Kraft nach aussen, sondern Traegheit bei fehlender Zentripetalkraft (10 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY 1盒（核心总结）：
 

@@ -126,8 +126,7 @@ ANSWER: A requires procedure (i): I reproduce the author arguments in my own wor
 
 Klausur-Satz: `The same topic can be handled in two ways: outline reproduces the author's points neutrally, whereas comment requires my own reasoned judgement with a counterargument.`
 
-## Schritt 6 — check: Verständnisprüfung
-
+## Schritt 6 — check: Selbsttest zu Comment Writing: P.E.E. und Register
 CHECK (three questions with answers):
 
 FRAGE: Which four parts form a comment? | ANTWORT: Introduction (topic plus statement), position (clear thesis), arguments (two to three P.E.E. points plus counterargument) and conclusion (summary plus final judgement).
@@ -148,13 +147,12 @@ Klausur-Satz: `A comment loses marks when arguments lack the Explain step or whe
    Correction: AFB III requires fairness. A comment without a counterargument reads as one-sided pleading and loses judgement marks. The opposing view must be treated seriously and answered.
    Korrektur-Satz: `A fair comment must seriously consider one counterargument, even if the writer finally rejects it.`
 
-## Schritt 7 — szenario: Klausurtransfer & Rubric
-
+## Schritt 7 — szenario: Klausurtransfer: Comment Writing: P.E.E. und Register
 ROLE: You are an editor of your school newspaper column "Our View".
 SITUATION: The school debates a break-time phone ban. The head expects the column and a formal tone. Write a comment (150-200 words) with a clear position, two reasoned arguments, one counterargument and a final judgement.
 RUBRIC (30 XP): Clear position in the first paragraph (5 XP) | Two arguments, each complete as P.E.E. with example (10 XP) | One fairly treated counterargument with reply (5 XP) | Final judgement with balance in the closing paragraph (5 XP) | Consistently formal register without contractions plus linking words (5 XP).
 
-## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
+## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY (core summary):
 

@@ -136,8 +136,7 @@ ANTWORT: A erfordert Konzept (ii): Aequivalenzpunkt ca. pH $8$–$9$, Phenolphth
 
 Klausur-Satz: `Schwache Saeure verlangt basischen Indikator, schwache Base verlangt sauren Indikator.`
 
-## Schritt 6 — check: Verständnisprüfung
-
+## Schritt 6 — check: Selbsttest zu Titrationskurven und Indikatoren
 CHECK检索默写（自测 3 题，与答案配对）：
 
 FRAGE: Was unterscheidet Aequivalenzpunkt und Endpunkt? | ANTWORT: Aequivalenzpunkt ist der theoretische Neutralisationspunkt, Endpunkt der beobachtete Farbumschlag.
@@ -158,14 +157,13 @@ Klausur-Satz: `Ohne pH-Sprung gaebe es keinen sichtbaren Endpunkt und keine Titr
    中文纠偏：酚酞只在 pH 8–10 变色，酸性等当点（如滴氨水）到不了那么高，用它永远不变色，会把标准液加过量。选错指示剂等于判错终点。
    Korrektur-Satz: `Ein Indikator ausserhalb des Aequivalenzpunkts zeigt den Endpunkt zu spaet oder nie an.`
 
-## Schritt 7 — szenario: Klausurtransfer & Rubric
-
+## Schritt 7 — szenario: Klausurtransfer: Titrationskurven und Indikatoren
 ROLLE: Du bist Laborpartnerin und erklaerst die Indikatorwahl.
 SITUATION: Ein Mitschueler will Essigsaeure mit NaOH gegen Phenolphthalein titrieren, ein anderer schlaegt Methylorange vor.
 AUFGABE: Entscheiden Sie in ca. 150 Woertern mit Salz-Argument, wer recht hat, und erklaeren Sie Kurvenlage und Umschlagsbereiche.
 RUBRIC (30 XP): Salz Acetat als basisch erkannt (10 XP) | Aequivalenzpunkt pH groesser $7$ (10 XP) | Indikatorentscheidung mit Bereichsbegruendung (10 XP).
 
-## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
+## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY 1盒（核心总结）：
 

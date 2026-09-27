@@ -120,7 +120,7 @@ SITUATION: Eine Mitschuelerin sagt $Dein Plakat ist sehr bunt$, der Gestalter is
 AUFGABE (interpretieren, AFB III): Interpretieren Sie die Lage in einer zusammenhaengenden Darstellung (ca. 150 Woerter) mit allen Seiten, Ohrdiagnose und Gespraechsloesung.
 RUBRIC (30 XP): Vier Seiten mit Zitaten (10 XP) | Ohrdiagnose $Beziehung$ (10 XP) | Loesung mit $Ich$-$Botschaft$ (5 XP) | Geschlossene Darstellung (5 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY: Merke $1 \to 4 \to 1$: Senden mischt, Hoeren waehlt. Klausurformel $Zitat + Seite + Signal + Wirkung$ sichert jede Analyse.
 

@@ -115,7 +115,7 @@ SITUATION: Das Publikum fuerchtet $modern = haesslich$ vor einer Schoenberg-Mini
 AUFGABE (einordnen, AFB III): Fuehren Sie in einer zusammenhaengenden Darstellung (ca. 150 Woerter) mit Reihen Demo, Hoerauftrag und Epochenurteil ein.
 RUBRIC (30 XP): Reihe mit $Form$ korrekt (10 XP) | Hoerauftrag $Kontur + Rhythmus$ (10 XP) | Epochenurteil $Bruch + Bruecke$ (5 XP) | Geschlossene Darstellung (5 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY: Merke $12 + 4 + 1$: Zwoelf Toene, vier Formen, eine Gestalt. Hoerformel $Intervall + Rhythmus = Wiedererkennen$.
 

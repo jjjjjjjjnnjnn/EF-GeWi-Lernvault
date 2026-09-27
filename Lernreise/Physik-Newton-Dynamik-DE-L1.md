@@ -120,7 +120,7 @@ ANTWORT: A erfordert Verfahren (i): Bei $a = 0$ herrscht Kraeftegleichgewicht la
 
 Klausur-Satz: `Solange die Haftreibung die Hangabtriebskraft ausgleicht, gilt a = 0 und Kraeftegleichgewicht; uebersteigt die Hangabtriebskraft die Gleitreibung, beschleunigt der Koerper nach F_res = m*a.`
 
-## Schritt 6 — check: Verständnisprüfung
+## Schritt 6 — check: Selbsttest zu Newtonsche Gesetze: Kraftzerlegung und Reibung
 CHECK (Selbsttest, 3 Fragen mit Antworten):
 
 FRAGE: Wie lautet das zweite Newtonsche Gesetz als Gleichung? | ANTWORT: $F_{res} = m \cdot a$, die resultierende Kraft ist gleich Masse mal Beschleunigung.
@@ -139,12 +139,12 @@ Klausur-Satz: `Da sich die Masse beim Einsetzen in F_res = m*a herauskuerzt, ist
    Korrektur: Nur auf horizontaler Ebene gilt Gleichheit. An der schiefen Ebene gilt $F_N = m \cdot g \cdot \cos(\alpha)$; je steiler die Ebene, desto kleiner $F_N$ und die Reibung.
    Korrektur-Satz: `An der schiefen Ebene gilt F_N = m*g*cos(alpha), denn nur ein Teil der Gewichtskraft wirkt senkrecht auf die Unterlage.`
 
-## Schritt 7 — szenario: Klausurtransfer & Rubric
+## Schritt 7 — szenario: Klausurtransfer: Newtonsche Gesetze: Kraftzerlegung und Reibung
 ROLLE: Du bist Mitglied einer Schuelerforschungsgruppe, die einen Rampenversuch fuer den Tag der offenen Tuer plant.
 SITUATION: Auf einer Rampe mit $\alpha = 25^{\circ}$ soll ein Kasten ($m = 3{,}0\,\mathrm{kg}$) kontrolliert hinabgleiten. Die Gruppe diskutiert, ob eine bestimmte Oberflaeche geeignet ist: Bei zu grosser Reibung rutscht der Kasten nicht an, bei zu kleiner Reibung wird er zu schnell. Beurteile in einer zusammenhaengenden Stellungnahme (ca. 150 Woerter), wovon die Beschleunigung abhaengt und wie die Reibung das Ergebnis beeinflusst. Nutze $g = 10\,\mathrm{m/s^2}$.
 RUBRIC (30 XP): Benennung der zerlegten Kraefte $F_H$ und $F_N$ mit Formel (5 XP) | Aufstellen der Bewegungsgleichung $F_{res} = F_H - F_R = m \cdot a$ (10 XP) | Nachweis der Massenunabhaengigkeit mit Zahlenrechnung (10 XP) | Kriteriengeleitetes Urteil zur Eignung der Oberflaeche mit Einheit (5 XP).
 
-## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
+## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
 TAKEAWAY (Kernzusammenfassung):
 
 Zuerst das Kraeftediagramm, dann die resultierende Kraft, dann $a = F_{res}/m$. An der schiefen Ebene zerlegt man die Gewichtskraft in $m \cdot g \cdot \sin(\alpha)$ und $m \cdot g \cdot \cos(\alpha)$. Vor jeder Rechnung wird geprueft, ob $a$ null ist: Bei null gilt Gleichgewicht, sonst das zweite Gesetz. Die Masse kuertzt sich haeufig heraus, das ist das Kennzeichen der schiefen Ebene.

@@ -139,7 +139,7 @@ ROLLE: Du bist Schuelerin in der Oberstufe und korrigierst im Peer-Feedback den 
 SITUATION: Der Entwurf besteht aus drei Absaetzen: Absatz 1 erzaehlt die Handlung nach, Absatz 2 nennt zwei Stilmittel ohne Zeilenangabe, Absatz 3 wiederholt die Meinung des Autors. Schreibe ein Feedback (ca. 150 Woerter), das die drei Aufgaben trennt, den wichtigsten Fehler pro Absatz benennt und fuer Absatz 3 zeigt, wie ein korrektes final judgement mit Gegenargument aussieht.
 RUBRIC (30 XP): Korrekte Zuordnung der drei Aufgaben zu AFB I, II und III (5 XP) | Praezise Benennung des Fehlers in Absatz 1 und 2 mit Bezug auf die P.E.E.-Regel (10 XP) | Vorfuehrung eines korrekten Task-3-Schlusses mit Position, Gegenargument und Urteil (10 XP) | Hinweis auf die Zieltextformat-Anforderung, falls gefordert (5 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY 1盒（核心总结）：
 

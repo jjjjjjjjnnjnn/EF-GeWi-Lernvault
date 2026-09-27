@@ -130,8 +130,7 @@ ANTWORT: A erfordert Verfahren (i): Kurze Befehle plus Unterbrechungen belegen S
 
 Klausur-Satz: `Figur deutet Sprache auf den Menschen, Funktion deutet Sprache auf den Konflikt.`
 
-## Schritt 6 — check: Verständnisprüfung
-
+## Schritt 6 — check: Selbsttest zu Dramenszenenanalyse am Beispiel Emilia Galotti
 CHECK检索默写（自测 3 题，与答案配对）：
 
 FRAGE: Wie lautet der Fuenfschritt der Szenenanalyse? | ANTWORT: Einordnung, Verlauf in Runden, Mittel mit Beleg, Funktion, Rueckbindung an Konflikt und Gattung.
@@ -152,13 +151,12 @@ Klausur-Satz: `Ohne Funktion bleibt jede Mittelnennung leer.`
    中文纠偏：长引挤掉分析；用概括（paraphrasieren）加短 Beleg，省下篇幅写功能。
    Korrektur-Satz: `Kurzer Beleg plus Deutung schlaegt langes Zitat ohne Deutung.`
 
-## Schritt 7 — szenario: Klausurtransfer & Rubric
-
+## Schritt 7 — szenario: Klausurtransfer: Dramenszenenanalyse am Beispiel Emilia Galotti
 ROLLE: Du schreibst die Klausur: Dramenszene im buergerlichen Trauerspiel.
 SITUATION: Der Text ist unbekannt, die Zeit knapp. Verfasse in zusammenhaengender Analyse (ca. 150 Woerter) Einordnung, zwei Runden mit Mittel und Funktion sowie Schluss zum Gesamtkonflikt.
 RUBRIC (30 XP): Einordnung mit Konfliktstand (6 XP) | Zwei Runden mit Beleg und Mittel (10 XP) | Funktionsdeutung fuer Figuren und Konflikt (10 XP) | Fachsprachliche Korrektheit (4 XP).
 
-## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
+## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY 1盒（核心总结）：
 

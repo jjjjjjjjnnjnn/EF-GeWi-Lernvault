@@ -138,7 +138,7 @@ ROLLE: Du bist Referent in einem Schullabor und hältst einen Kurzvortrag für j
 SITUATION: Ein Waschmittelhersteller wirbt damit, dass sein Pulver "schon bei 30 °C" wirkt, während ein älteres Produkt erst bei 60 °C optimale Leistung zeigt. In beiden Produkten stecken Proteasen, also Eiweiß spaltende Enzyme. Erkläre in einer zusammenhängenden Stellungnahme (ca. 150 Wörter), warum ein modernes Waschmittel auf ein niedrigeres Temperaturoptimum optimiert wird und was bei 60 °C mit den Enzymen geschieht.
 RUBRIC (30 XP): Benennung des Temperaturoptimums als Anpassung an den Einsatzbereich (5 XP) | Erklärung der Wirkungssteigerung unterhalb des Optimums mit der RGT-Regel (8 XP) | Erklärung der Denaturierung oberhalb des Optimums mit Bezug auf die Tertiärstruktur und das aktive Zentrum (10 XP) | Kausale, fachsprachlich korrekte Stellungnahme mit den Fachbegriffen Denaturierung und irreversibel (7 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY 1盒（核心总结）：
 

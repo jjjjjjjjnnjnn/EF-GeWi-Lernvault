@@ -134,8 +134,7 @@ ANTWORT: A erfordert Verfahren (i): $m(h) = \frac{3(1+h)^2-3}{h} = \frac{6h+3h^2
 
 Klausur-Satz: `Wird die h-Methode verlangt, muss der Grenzprozess ausgeschrieben werden; sonst genuegt die Ableitungsregel.`
 
-## Schritt 6 — check: Verständnisprüfung
-
+## Schritt 6 — check: Selbsttest zu Grenzwert mit h-Methode und Ableitung an einer Stelle
 CHECK检索默写（自测 3 题，与答案配对）：
 
 FRAGE: Wie lautet der Differenzenquotient an der Stelle $x_0$? | ANTWORT: $m(h) = \frac{f(x_0+h)-f(x_0)}{h}$.
@@ -156,13 +155,12 @@ Klausur-Satz: `Die Ableitung f'(x_0) ist der Grenzwert des Differenzenquotienten
    中文纠偏：差商才是割线斜率，导数是割线在 $h \to 0$ 时的极限，即切线斜率。答题写几何解释时必须写 Tangente，不能写 Sekante。
    Korrektur-Satz: `Der Differenzenquotient gibt die Sekantensteigung, seine Grenze die Tangentensteigung an.`
 
-## Schritt 7 — szenario: Klausurtransfer & Rubric
-
+## Schritt 7 — szenario: Klausurtransfer: Grenzwert mit h-Methode und Ableitung an einer Stelle
 ROLLE: Du bist Tutor und erklaerst einer Lerngruppe die h-Methode.
 SITUATION: Die Gruppe kann die Potenzregel, versteht aber nicht, woher die Ableitung kommt, und verwechselt Sekante mit Tangente. Erklaere in einer zusammenhaengenden Darstellung (ca. 150 Woerter) am Beispiel $f(x) = x^2$ an einer Stelle, wie man vom Differenzenquotienten ueber Kuerzen zum Grenzwert gelangt und was das Ergebnis geometrisch bedeutet.
 RUBRIC (30 XP): Korrekter Dreischritt Aufstellen-Kuerzen-Grenzuebergang (12 XP) | Rechnung am Beispiel mit Ergebnis (8 XP) | Deutung als Tangentensteigung und Abgrenzung zur Sekante (6 XP) | Fachsprachlich korrekte Darstellung (4 XP).
 
-## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
+## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY 1盒（核心总结）：
 

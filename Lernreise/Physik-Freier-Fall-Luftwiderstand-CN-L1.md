@@ -137,8 +137,7 @@ ANTWORT: A erfordert Verfahren (i): Beide fallen mit $a = g$, aus $t = \sqrt{2h/
 
 Klausur-Satz: `Im Vakuum fallen alle Koerper gleich schnell; mit Luft strebt die Bewegung gegen eine Grenzgeschwindigkeit.`
 
-## Schritt 6 — check: Verständnisprüfung
-
+## Schritt 6 — check: Selbsttest zu Freier Fall mit und ohne Luftwiderstand
 CHECK检索默写（自测 3 题，与答案配对）：
 
 FRAGE: Wie lauten die drei Formeln des freien Falls aus der Ruhe? | ANTWORT: $v = g t$, $s = 0{,}5 g t^2$ und $v^2 = 2 g s$.
@@ -159,13 +158,12 @@ Klausur-Satz: `Die Grenzgeschwindigkeit ist erreicht, wenn der Luftwiderstand di
    中文纠偏：阻力随速度变化，下落只会趋向极限速度 $v_G$ 后匀速，不会停在空中。开伞后减速段之后仍是匀速下降。
    Korrektur-Satz: `Mit Luftwiderstand strebt die Geschwindigkeit gegen einen konstanten Grenzwert, nicht gegen null.`
 
-## Schritt 7 — szenario: Klausurtransfer & Rubric
-
+## Schritt 7 — szenario: Klausurtransfer: Freier Fall mit und ohne Luftwiderstand
 ROLLE: Du erklaerst einer 8. Klasse den Unterschied zwischen Ideal und Realitaet.
 SITUATION: Die Klasse glaubt, schwere Koerper fielen immer schneller. Erklaere in einer zusammenhaengenden Darstellung (ca. 150 Woerter) mit dem Feder-Muenz-Versuch und dem Fallschirm-Beispiel, wann die Idealformeln gelten und was der Luftwiderstand qualitativ aendert.
 RUBRIC (30 XP): Idealgesetze mit Formeln und Bedingung (10 XP) | Rolle des Luftwiderstands und Grenzgeschwindigkeit (10 XP) | Zwei Beispiele (Vakuumroehre, Fallschirm) (6 XP) | Adressatengerechte Sprache (4 XP).
 
-## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
+## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY 1盒（核心总结）：
 

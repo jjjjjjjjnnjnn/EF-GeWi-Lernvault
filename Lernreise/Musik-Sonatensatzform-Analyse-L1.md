@@ -135,7 +135,7 @@ ROLLE: Du bist Prüfling in einer mündlichen Musikprüfung (EF) und sollst dein
 SITUATION: Du hast zu Hause einen Tonartplan und eine Themenvergleichstabelle erstellt. In der Prüfung liegt dein Blatt vor dir; die Prüferin fragt: "Erläutern Sie Ihren Tonartplan und begründen Sie, warum der Schlussabschnitt eine Coda ist." Formuliere eine zusammenhängende mündliche Erläuterung (ca. 90 Sekunden), in der du beide Tabellen nutzt und mit einem begründeten Urteil zur Formwirkung schließt.
 RUBRIC (30 XP): Vorstellen des Tonartplans mit Richtung Hd — Dd — Hd (8 XP) | Vergleich von Hauptsatz und Seitensatz an mindestens zwei Merkmalen (8 XP) | Begründung der Coda-Funktion über die fehlende Modulation (9 XP) | Begründetes Urteil zur Formwirkung (Aufbau und Lösung der tonalen Spannung) (5 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY 1盒（核心总结）：
 

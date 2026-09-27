@@ -139,7 +139,7 @@ SITUATION: A classmate wrote a 120-word speech opening full of devices but witho
 AUFGABE: Write the model paragraph using at least three devices (mark them), then evaluate its strength and one limitation for a school audience.
 RUBRIC (30 XP): Three correctly marked devices (10 XP) | P.E.E. logic in evaluation, short quotes (10 XP) | Balanced judgement with ethos/pathos/logos vocabulary and closing sentence (10 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY 1盒（核心总结）：
 

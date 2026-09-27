@@ -138,8 +138,7 @@ ANTWORT: A erfordert Verfahren (i): Gleiches $v_{max}$ bei groesserem $K_m$ ist 
 
 Klausur-Satz: `Rechtsverschiebung bei gleichem Plateau heisst kompetitiv; Endprodukt-Hemmung am Kettenanfang heisst allosterische Rueckkopplung.`
 
-## Schritt 6 — check: Verständnisprüfung
-
+## Schritt 6 — check: Selbsttest zu Enzymkinetik mit Michaelis und allosterischer Regulation
 CHECK检索默写（自测 3 题，与答案配对）：
 
 FRAGE: Was bedeuten $v_{max}$ und $K_m$? | ANTWORT: $v_{max}$ ist das Plateau bei Saettigung; $K_m$ ist $[S]$ bei $v_{max}/2$, Mass fuer Affinitaet (klein = affin).
@@ -160,13 +159,12 @@ Klausur-Satz: `Kompetitiv veraendert K_m, nichtkompetitiv v_max, allosterisch di
    中文纠偏：只对竞争性成立；非竞争性减少了有效酶量，平台永久压低，加底物无用。
    Korrektur-Satz: `Nur die kompetitive Hemmung laesst sich durch Substratueberschuss aufheben.`
 
-## Schritt 7 — szenario: Klausurtransfer & Rubric
-
+## Schritt 7 — szenario: Klausurtransfer: Enzymkinetik mit Michaelis und allosterischer Regulation
 ROLLE: Du bist Tutor und erklaerst eine Enzymkurve mit Hemmstoff.
 SITUATION: Eine Gruppe liest $K_m$ und $v_{max}$ falsch ab und verwechselt die Hemmtypen. Erklaere in einer zusammenhaengenden Darstellung (ca. 150 Woerter) an einer Kurvenskizze, wie man beide Kennwerte abliest und woran man kompetitiv gegen nichtkompetitiv erkennt.
 RUBRIC (30 XP): Ablesen von $v_{max}$ und $K_m$ (10 XP) | Unterscheidung der Hemmtypen an der Kurve (10 XP) | Allosterische Deutung als Regulation (6 XP) | Fachsprachliche Korrektheit (4 XP).
 
-## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
+## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY 1盒（核心总结）：
 

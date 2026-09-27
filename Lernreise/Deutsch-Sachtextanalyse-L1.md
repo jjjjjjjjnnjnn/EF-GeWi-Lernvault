@@ -139,7 +139,7 @@ ROLLE: Du bist Redakteurin der Schülerzeitung und bewertest in einem Werkstattg
 SITUATION: Ein Gastkommentar argumentiert für ein nächtliches Handyverbot in Familien. Der Autor nutzt rhetorische Fragen, eine Antithese und einen Schlussappell. Beurteile in einer zusammenhängenden Stellungnahme (ca. 150 Wörter), wie der Autor seine Leser lenkt und wie überzeugend dies gelingt.
 RUBRIC (30 XP): Benennung zweier Lenkungsmittel mit Zeile (5 XP) | Analyse der Funktion und Leserwirkung je Mittel (10 XP) | Rückbindung an These und Intention (10 XP) | Kriteriengeleitetes eigenes Urteil zur Überzeugungskraft (5 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY 1盒（核心总结）：
 

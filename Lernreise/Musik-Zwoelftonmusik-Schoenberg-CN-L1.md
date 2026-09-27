@@ -128,8 +128,7 @@ ANTWORT: A erfordert Konzept (i): tonale Hierarchie mit Schlusskadenz. B erforde
 
 Klausur-Satz: `Kadenz verrät Tonalitaet, Reihenform verrät Zwoelftontechnik.`
 
-## Schritt 6 — check: Verständnisprüfung
-
+## Schritt 6 — check: Selbsttest zu Zwoelftonmusik und Schoenberg
 CHECK检索默写（自测 3 题，与答案配对）：
 
 FRAGE: Was ist die Grundregel der Reihe? | ANTWORT: Alle zwoelf Toene erklingen gleichberechtigt, keiner wiederholt sich vor dem Durchlauf.
@@ -150,14 +149,13 @@ Klausur-Satz: `Ohne Reihe keine Einheit: Die Form ersetzt die fehlende Tonika.`
    中文纠偏：逆行翻时间（从右读），倒影翻空间（上下镜像），考试各占一分。混用等于把"倒带"和"照镜子"说成一回事。
    Korrektur-Satz: `Krebs kehrt die Zeit um, Umkehrung spiegelt die Intervalle.`
 
-## Schritt 7 — szenario: Klausurtransfer & Rubric
-
+## Schritt 7 — szenario: Klausurtransfer: Zwoelftonmusik und Schoenberg
 ROLLE: Du schreibst das Programmheft zum Schulkonzert mit Webern-Miniatur.
 SITUATION: Das Publikum fuerchtet „modernen Laerm", die Musiklehrerin will Verstaendnis wecken.
 AUFGABE: Erklaeren Sie in ca. 150 Woertern Reihe plus eine Reihenform am Beispiel und urteilen Sie: Befreiung oder Fessel?
 RUBRIC (30 XP): Reihe plus Regel korrekt (10 XP) | Eine Form demonstriert (10 XP) | Urteil Befreiung/Fessel mit Begruendung (10 XP).
 
-## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
+## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY 1盒（核心总结）：
 

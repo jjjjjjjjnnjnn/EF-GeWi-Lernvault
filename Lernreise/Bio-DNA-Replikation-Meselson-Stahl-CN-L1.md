@@ -135,8 +135,7 @@ ANTWORT: A erfordert Konzept (i): semikonservativ, jeder Tochterstrang halb alt.
 
 Klausur-Satz: `Nur das Bandenmuster mittel, dann mittel plus leicht, entspricht der Semikonservativ-Hypothese.`
 
-## Schritt 6 — check: Verständnisprüfung
-
+## Schritt 6 — check: Selbsttest zu DNA-Replikation und Meselson-Stahl
 CHECK检索默写（自测 3 题，与答案配对）：
 
 FRAGE: Warum ist der Folgestrang fragmentiert? | ANTWORT: Weil die Polymerase nur $5' \to 3'$ synthetisiert und der Folgestrang rueckwaerts aufgefuellt wird.
@@ -157,14 +156,13 @@ Klausur-Satz: `Helikase oeffnet, Polymerase baut, Ligase naeht: Die drei Enzyme 
    中文纠偏：分段不是敷衍，而是聚合酶单向性的数学必然。方向反了就只能分段回补，连接酶最后会完整缝好，两条子链质量完全等价。
    Korrektur-Satz: `Leit- und Folgestrang liefern gleichwertige Tochterstraenge trotz verschiedener Syntheseweise.`
 
-## Schritt 7 — szenario: Klausurtransfer & Rubric
-
+## Schritt 7 — szenario: Klausurtransfer: DNA-Replikation und Meselson-Stahl
 ROLLE: Du bist Tutorin und erklaerst Meselson-Stahl im Biokurs.
 SITUATION: Ein Mitschueler verwechselt konservativ und semikonservativ und kann die Gen-1-Bande nicht deuten.
 AUFGABE: Erklaeren Sie in ca. 150 Woertern mit Bandenzeichnung in Worten, warum genau eine mittlere Bande in Generation 1 nur semikonservativ (und dispersiv) erlaubt und wie Generation 2 entscheidet.
 RUBRIC (30 XP): Gen-1-Vorhersagen aller Modelle (10 XP) | Gen-2-Entscheidung mittel+leicht (10 XP) | Strangherkunft mit $^{15}N$/$^{14}N$ (10 XP).
 
-## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
+## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY 1盒（核心总结）：
 

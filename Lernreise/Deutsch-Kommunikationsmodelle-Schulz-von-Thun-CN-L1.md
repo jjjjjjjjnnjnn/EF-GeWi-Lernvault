@@ -128,8 +128,7 @@ ANTWORT: A erfordert Konzept (i): Sach-Ohr, Missverstaendnis unwahrscheinlich, A
 
 Klausur-Satz: `Sach-Ohr loest Probleme, Beziehungs-Ohr erzeugt sie oft erst.`
 
-## Schritt 6 — check: Verständnisprüfung
-
+## Schritt 6 — check: Selbsttest zu Kommunikationsmodelle Schulz von Thun
 CHECK检索默写（自测 3 题，与答案配对）：
 
 FRAGE: Wie heissen die vier Seiten der Nachricht? | ANTWORT: Sache, Selbstkundgabe, Beziehung, Appell.
@@ -150,14 +149,13 @@ Klausur-Satz: `Wer die vier Seiten trennt, hoert die Absicht statt nur den eigen
    中文纠偏：关系耳是雷达，提醒关系裂痕，关掉等于装聋。正确用法是"听到但先核对"：先用事实耳确认，再谈关系感受。
    Korrektur-Satz: `Das Beziehungs-Ohr warnt vor Stoerungen und muss geprueft, nicht abgeschaltet werden.`
 
-## Schritt 7 — szenario: Klausurtransfer & Rubric
-
+## Schritt 7 — szenario: Klausurtransfer: Kommunikationsmodelle Schulz von Thun
 ROLLE: Du bist Streitschlichterin in der Klasse und analysierst einen Dialog.
 SITUATION: Tom sagt zu Lisa: „Du kommst immer zu spaet." Lisa knallt die Tuer. Die Klassenlehrerin will eine Analyse.
 AUFGABE: Analysieren Sie in ca. 150 Woertern alle vier Seiten plus Lisas wahrscheinliches Ohr und geben Sie zwei Gespraechsregeln.
 RUBRIC (30 XP): Vier Seiten je korrekt (12 XP) | Ohr-Diagnose mit Begruendung (8 XP) | Zwei Regeln (Ich-Botschaft, Appell-Klaerung) (10 XP).
 
-## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
+## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY 1盒（核心总结）：
 

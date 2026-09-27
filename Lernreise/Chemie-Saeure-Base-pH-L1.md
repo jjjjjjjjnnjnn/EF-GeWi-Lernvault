@@ -147,7 +147,7 @@ ROLLE: Du bist Praktikant im Schullabor und sollst eine Säure-Base-Titration vo
 SITUATION: Es liegen 100 mL Salzsäure mit c0 = 0,005 mol/L vor. Diese sollen mit Natronlauge (c = 0,02 mol/L) vollständig neutralisiert werden. Berechne das benötigte Volumen der Natronlauge, erläutere die Bedingung am Äquivalenzpunkt und begründe, warum der pH-Wert am Äquivalenzpunkt bei 7 liegt. Verfasse eine zusammenhängende Auswertung (ca. 150 Wörter).
 RUBRIC (30 XP): Aufstellen der Neutralisationsgleichung HCl + NaOH -> NaCl + H2O (5 XP) | Stoffmengenansatz c1 * V1 = c2 * V2 und Berechnung V2 = 25 mL (10 XP) | Bedingung am Äquivalenzpunkt n(H3O+) = n(OH-) (8 XP) | Begründung pH = 7 wegen vollständiger Neutralisation durch starke Säure und starke Base (7 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY 1盒（核心总结）：
 

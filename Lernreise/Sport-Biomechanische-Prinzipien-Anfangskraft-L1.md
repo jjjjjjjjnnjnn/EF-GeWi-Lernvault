@@ -129,7 +129,7 @@ SITUATION: Ein Mitschueler stoesst aus dem Stand recht weit, doch mit Gleitschri
 AUFGABE: Schreibe eine zusammenhaengende Beratung (ca. 150 Woerter), in der du sein Video anhand von Anfangskraft, Impuls und Beschleunigungsweg deutest und zwei konkrete Korrekturen fuer Auftakt und Angleit-Tempo gibst.
 RUBRIC (30 XP): Deutung mit J = F mal t und Weg (10 XP) | Zwei Fehler in Auftakt und Tempo benannt (10 XP) | Zwei umsetzbare Korrekturen mit Zielwert (10 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY 1盒（核心总结）：
 

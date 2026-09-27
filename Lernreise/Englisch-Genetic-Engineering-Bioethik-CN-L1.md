@@ -130,8 +130,7 @@ ANTWORT: A erfordert Verfahren (i): Balanced paragraphs (yield/pesticide vs ecol
 
 Klausur-Satz: `Discuss balances then judges, argue judges then defends.`
 
-## Schritt 6 — check: Verständnisprüfung
-
+## Schritt 6 — check: Selbsttest zu Genetic engineering and bioethics debate
 CHECK检索默写（自测 3 题，与答案配对）：
 
 FRAGE: What divides therapy from enhancement? | ANTWORT: Therapy cures disease; enhancement selects non-medical traits — the ethical frontier.
@@ -152,13 +151,12 @@ Klausur-Satz: `No consent, no germline — that is the duty red line.`
    中文纠偏：英语考的是论证与语言，机制名词堆砌无评价等于跑题。
    Korrektur-Satz: `Argument plus language scores, biology lecture does not.`
 
-## Schritt 7 — szenario: Klausurtransfer & Rubric
-
+## Schritt 7 — szenario: Klausurtransfer: Genetic engineering and bioethics debate
 ROLLE: You debate GM crops in a school panel.
 SITUATION: Farmers praise yield, ecologists warn patents and genes. Deliver a balanced discussion (ca. 150 words) ending with your criterion-based verdict.
 RUBRIC (30 XP): Two benefits explained (8 XP) | Two risks explained (8 XP) | Criterion-based verdict (8 XP) | Linking words and register (6 XP).
 
-## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
+## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY 1盒（核心总结）：
 

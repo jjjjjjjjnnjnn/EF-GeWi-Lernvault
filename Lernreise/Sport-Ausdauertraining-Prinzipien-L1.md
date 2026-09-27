@@ -147,7 +147,7 @@ ROLLE: Du bist Prüfling in einer mündlichen Sportprüfung und sollst einen Tra
 SITUATION: Ein Mitschüler möchte seine aerobe Ausdauer verbessern und plant, „3 × 800 m in maximalem Tempo mit 5 Minuten Pause, einmal pro Woche" zu laufen. Erkläre ihm mündlich in zusammenhängenden deutschen Sätzen (ca. 2 Minuten), ob dieser Plan sinnvoll ist, indem du ihn sowohl mit dem Superkompensationsmodell als auch mit den Trainingsprinzipien beurteilst, und schlage eine bessere Alternative vor.
 RUBRIC (30 XP): Benennung des Modells und der relevanten Trainingsprinzipien (5 XP) | Analyse des Superkompensationsverlaufs und der Reizhäufigkeit (10 XP) | Feststellung der Ziel-Verfahren-Fehlpassung (Ziel aerob, Plan aber hochintensiv mit langen Pausen) (10 XP) | Kriteriengeleiteter Verbesserungsvorschlag mit konkreten Belastungsgrößen (5 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY 1盒（核心总结）：
 

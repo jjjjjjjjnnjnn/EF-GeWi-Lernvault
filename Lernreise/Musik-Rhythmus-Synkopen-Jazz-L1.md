@@ -120,7 +120,7 @@ ROLLE: Du bist Pruefling in der muendlichen Pruefung.
 SITUATION: Nach zweimaligem Hoeren sollst du einen Jazz-Ausschnitt vorstellen (circa 2 Minuten): Puls, Synkopen und Swing benennen und die Groove-Wirkung beurteilen.
 RUBRIC (30 XP): Puls und Takt korrekt (8 XP) | Synkopen benannt (10 XP) | Stilurteil mit Begruendung (8 XP) | Fachsprachlicher Vortrag (4 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY:
 

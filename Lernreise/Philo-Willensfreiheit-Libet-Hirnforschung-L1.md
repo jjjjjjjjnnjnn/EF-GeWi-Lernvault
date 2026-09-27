@@ -119,7 +119,7 @@ ROLLE: Du bist Mitglied im Ethikrat der Schule.
 SITUATION: Ein Schueler entschuldigt Schummeln mit dem Satz, sein Gehirn habe entschieden. Nimm in circa 150 Woertern Stellung, indem du Libet einordnest und Zurechnung mit Gruenden und Veto pruefst.
 RUBRIC (30 XP): Befund korrekt (8 XP) | Beide Lesarten geprueft (10 XP) | Urteil mit Zurechnungskriterium (8 XP) | Fachsprachliche Darstellung (4 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY:
 

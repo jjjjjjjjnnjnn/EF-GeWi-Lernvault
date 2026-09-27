@@ -123,8 +123,7 @@ ANTWORT: A erfordert Konzept (i): Laktazid liefert mittlere bis hohe Leistung mi
 
 Klausur-Satz: `Wer die Systeme vergleicht, nutzt die Tabelle; wer den Einbruch erklaert, nutzt Dauer und Laktatverlauf.`
 
-## Schritt 6 — check: Verständnisprüfung
-
+## Schritt 6 — check: Selbsttest zu Energiebereitstellung im Muskel
 CHECK (3 Fragen zur Selbstkontrolle mit Antworten):
 
 FRAGE: Nenne Substrat und Dauer der drei Systeme in Stichworten. | ANTWORT: ATP-PCr aus Kreatinphosphat ca. 6 bis 8 s; laktazid aus Glukose ohne O2 ca. 30 bis 120 s; aerob aus Glukose plus Fett mit O2 ueber Stunden.
@@ -144,14 +143,13 @@ Klausur-Satz: `Leistung und Kapazitaet verhalten sich gegenlaeufig: Je hoeher di
    Korrektur: Phosphatspeicher und Laktattoleranz sind trainierbar und entscheiden ueber die zweite Rennhaelfte. Ohne gezielte Geschwindigkeitstoleranz faellt das Tempo messbar ab.
    Korrektur-Satz: `Die Kapazitaet von ATP-PCr und Laktattoleranz ist trainierbar und entscheidet ueber die zweite Rennhaelfte.`
 
-## Schritt 7 — szenario: Klausurtransfer & Rubric
-
+## Schritt 7 — szenario: Klausurtransfer: Energiebereitstellung im Muskel
 ROLLE: Du bist Fitnesstutorin der EF und schreibst einen Trainingsplan fuer zwei Anfaenger.
 SITUATION: Person A will in 8 Wochen 100 m unter 13 Sekunden laufen, Person B will einen 10-km-Lauf finishen. Beide trainieren bisher nur Fussball in der Schule.
 AUFGABE: Schreibe eine zusammenhaengende Begruendung (ca. 150 Woerter), in der du jedem eine Systemdominanz zuordnest, je zwei passende Trainingsformen nennst und erklaerst, warum das jeweils andere Training dort wenig hilft.
 RUBRIC (30 XP): Korrekte Systemzuordnung fuer beide (10 XP) | Je zwei passende Einheiten mit Begruendung (10 XP) | Abgrenzung zum jeweils anderen System (10 XP).
 
-## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
+## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY (Kernzusammenfassung):
 

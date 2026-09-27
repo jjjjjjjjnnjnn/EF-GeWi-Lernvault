@@ -142,7 +142,7 @@ ROLLE: Du bist Tutorin für Englisch in der Oberstufe und leitest eine Kleingrup
 SITUATION: Eine Mitschülerin hat in ihrer letzten Analyse geschrieben: "The boy is shy and lonely." Danach folgt eine Nacherzählung der Handlung. Erkläre ihr in einer zusammenhängenden Antwort (ca. 150 Wörter), warum das keine Analyse ist, und zeige an einem kurzen selbst gewählten Beispiel, wie ein korrekter P.E.E.-Absatz zur indirekten Charakterisierung aussieht.
 RUBRIC (30 XP): Benennung des Fehlers — trait ohne Beleg, Nacherzählung statt Analyse (5 XP) | Erklärung der fünf Evidenzkanäle der indirekten Charakterisierung (10 XP) | Vorführung eines vollständigen P.E.E.-Absatzes mit Point, Evidence (Zeilenangabe) und Explain (Wirkung) (10 XP) | Hinweis auf die Rolle der narrative perspective für die Evidenzauswahl (5 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY 1盒（核心总结）：
 

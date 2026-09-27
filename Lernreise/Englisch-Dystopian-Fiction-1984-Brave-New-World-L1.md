@@ -132,7 +132,7 @@ SITUATION: Two members argue endlessly: one fears cameras everywhere, the other 
 AUFGABE: Mini-matrix plus reasoned verdict with one present-day example.
 RUBRIC (30 XP): Correct matrix with contrasting instruments (10 XP) | Balanced assessment with concession sentence (10 XP) | Present-day link and closing judgement in academic English (10 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY 1盒（核心总结）：
 

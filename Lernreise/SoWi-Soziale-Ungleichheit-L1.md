@@ -141,7 +141,7 @@ ROLLE: Du bist Referent/in bei einer Jugendorganisation und sollst auf einer Pod
 SITUATION: In deiner Region erreichen Arbeiterkinder nur halb so oft das Abitur wie Akademikerkinder. Ein Teil des Publikums haelt das fuer ein Ergebnis individueller Entscheidungen, ein anderer verlangt staatliche Gegenmassnahmen wie kostenlose Ganztagsbetreuung und ein elternunabhaengiges BAfoeG. Beurteilen Sie in einer zusammenhängenden Stellungnahme (ca. 150 Wörter) die Forderung nach mehr Chancengleichheit.
 RUBRIC (30 XP): Darstellung der Ungleichheit mit den drei Dimensionen bzw. Kapitalarten (6 XP) | Analyse des Bildungstrichters — Herkunft wirkt staerker als Leistung (8 XP) | Abwaegung mit Kriterium Chancengerechtigkeit — Pro/Contra staatlicher Gegenmassnahmen (10 XP) | Kriteriengeleitetes Urteil mit konkreter Forderung (6 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY 1盒（核心总结）：
 

@@ -130,8 +130,7 @@ ANTWORT: A erfordert Verfahren (i): Erstauftritt mit Figur synchronisieren, Kont
 
 Klausur-Satz: `Zuordnung fragt nach dem Anker, Deutung nach der Verwandlung.`
 
-## Schritt 6 — check: Verständnisprüfung
-
+## Schritt 6 — check: Selbsttest zu Leitmotivtechnik von Wagner bis Filmmusik
 CHECK检索默写（自测 3 题，与答案配对）：
 
 FRAGE: Was macht ein Motiv zum Leitmotiv? | ANTWORT: Bindung an Figur/Idee plus Wiedererkennbarkeit plus bedeutungstragende Verwandlung.
@@ -152,13 +151,12 @@ Klausur-Satz: `Ohne Verwandlung keine Deutung, ohne Anker keine Bindung.`
    中文纠偏：在 Klausur 中配器即语义：Blech/Macht、 Streicher/Inneres；必须译成剧情义。
    Korrektur-Satz: `Instrumentationswechsel ist Bedeutungswechsel.`
 
-## Schritt 7 — szenario: Klausurtransfer & Rubric
-
+## Schritt 7 — szenario: Klausurtransfer: Leitmotivtechnik von Wagner bis Filmmusik
 ROLLE: Du schreibst das Programmheft zu einem Schulkonzert mit Filmmusik.
 SITUATION: Das Publikum kennt die Melodien, nicht die Technik. Erklaere in zusammenhaengender Darstellung (ca. 150 Woerter) an einem Figurenthema, wie Anker und zwei Verwandlungen Handlung erzaehlen.
 RUBRIC (30 XP): Anker mit Bindung (8 XP) | Zwei Verwandlungen mit Parametern (10 XP) | Dramaturgische Deutung (8 XP) | Verstaendliche Sprache (4 XP).
 
-## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
+## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY 1盒（核心总结）：
 

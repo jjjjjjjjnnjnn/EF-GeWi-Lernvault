@@ -147,7 +147,7 @@ SITUATION: Eine Reform soll den Bundestag dauerhaft verkleinern und die Zahl der
 
 RUBRIC (30 XP): Benennung des Problems (übermäßige Größe des Bundestags) und der Reformmaßnahme (5 XP) | Analyse des Zielkonflikts zwischen Funktionsfähigkeit und Repräsentation (10 XP) | Darlegung der Folgen für Direktmandate und kleine Parteien (10 XP) | Kriteriengeleitetes Urteil mit Abwägung (5 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY 1盒（核心总结）：
 

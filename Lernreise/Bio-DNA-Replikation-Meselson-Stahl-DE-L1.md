@@ -121,8 +121,7 @@ ANTWORT: A erfordert Verfahren (i): Primer liefert $3'$-OH fuer $5' \to 3'$, Lig
 
 Klausur-Satz: `Enzyme erklaeren den Strang, Banden entscheiden das Modell.`
 
-## Schritt 6 — check: Verständnisprüfung
-
+## Schritt 6 — check: Selbsttest zu DNA-Replikation und Meselson-Stahl
 CHECK (drei Fragen mit Antworten):
 
 FRAGE: Was bedeutet semikonservativ als Formel? | ANTWORT: $Tochter = 1 \times alt + 1 \times neu$ pro Doppelhelix.
@@ -142,14 +141,13 @@ Klausur-Satz: `Richtung plus Bande ergeben den vollen Beweis.`
    Korrektur: Antiparallelitaet erzwingt $5' \to 3'$; der Folgestrang entsteht aus $Okazaki$-Fragmenten rueckwaerts.
    Korrektur-Satz: `Antiparallel plus Einbahn-Enzym erzwingt einen diskontinuierlichen Strang.`
 
-## Schritt 7 — szenario: Klausurtransfer & Rubric
-
+## Schritt 7 — szenario: Klausurtransfer: DNA-Replikation und Meselson-Stahl
 ROLLE: Du bist Tutor im Biokurs.
 SITUATION: Ein Mitschueler behauptet, Meselson-Stahl habe konservative Replikation bewiesen, weil nach Runde zwei leichte DNA auftrete.
 AUFGABE (vergleichen, AFB III): Widerlegen Sie die Deutung in einer zusammenhaengenden Darstellung (ca. 150 Woerter) mit Bandenprognose aller drei Modelle und Enzymbegruendung.
 RUBRIC (30 XP): Banden Runde eins und zwei korrekt (10 XP) | Alle drei Modelle verglichen (10 XP) | Leit- und Folgestrang mit $5' \to 3'$ genannt (5 XP) | Geschlossene Darstellung (5 XP).
 
-## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
+## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY (Kernbotschaft in einem Kasten):
 

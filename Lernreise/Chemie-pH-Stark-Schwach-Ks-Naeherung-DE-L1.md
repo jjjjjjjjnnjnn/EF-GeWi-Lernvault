@@ -121,8 +121,7 @@ ANTWORT: A erfordert Verfahren (i): $pH = -\log 0{,}010 = 2{,}00$. B erfordert V
 
 Klausur-Satz: `Ohne K_s traegt das Stark-Verfahren, mit kleinem K_s das Schwach-Verfahren inklusive Gueltigkeitstest.`
 
-## Schritt 6 — check: Verständnisprüfung
-
+## Schritt 6 — check: Selbsttest zu pH starker und schwacher Saeuren mit Ks-Naeherung
 CHECK (drei Fragen mit Antworten):
 
 FRAGE: Wie berechnet man den pH einer starken Saeure? | ANTWORT: Mit $[H_3O^+] = c_0$ und $pH = -\log c_0$.
@@ -139,13 +138,12 @@ Klausur-Satz: `Jede Wurzelrechnung ohne Gueltigkeitstest ist klausurtechnisch un
 2. Fehlvorstellung: Die Wurzelformel gelte fuer jede Saeure mit bekanntem $K_s$.
    Korrektur-Satz: `Die Wurzelformel gilt nur bei geringer Protolyse; sonst ist die quadratische Gleichung zu loesen.`
 
-## Schritt 7 — szenario: Klausurtransfer & Rubric
-
+## Schritt 7 — szenario: Klausurtransfer: pH starker und schwacher Saeuren mit Ks-Naeherung
 ROLLE: Du bist Laborassistentin und pruefst zwei Flaschen.
 SITUATION: Flasche A enthaelt $0{,}10 \, \mathrm{mol/L}$ Salzsaeure, Flasche B $0{,}10 \, \mathrm{mol/L}$ Essigsaeure. Erklaere in circa 150 Woertern mit beiden Verfahren, welche pH-Werte zu erwarten sind und warum ein pH-Streifen allein die Saeuren nicht sicher unterscheidet.
 RUBRIC (30 XP): Stark-Verfahren korrekt (8 XP) | Schwach-Verfahren mit Test (10 XP) | Vergleich und Deutung (8 XP) | Fachsprachliche Darstellung (4 XP).
 
-## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
+## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY:
 

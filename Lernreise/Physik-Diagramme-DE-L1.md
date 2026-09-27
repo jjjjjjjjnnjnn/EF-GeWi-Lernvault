@@ -121,7 +121,7 @@ ANTWORT: A erfordert Verfahren (i): unsystematische Streuung bedeutet Zufallsfeh
 
 Klausur-Satz: `Zufaellige Fehler werden durch Mittelung verkleinert, systematische Fehler dagegen nur durch das Beheben ihrer Ursache.`
 
-## Schritt 6 — check: Verständnisprüfung
+## Schritt 6 — check: Selbsttest zu Diagramme lesen, zeichnen und Messfehler beurteilen
 CHECK (Selbsttest, 3 Fragen mit Antworten):
 
 FRAGE: Welche drei Elemente muss ein sauberes Diagramm mindestens enthalten? | ANTWORT: Beschriftete Achsen mit Groesse, zugehoerige Einheiten sowie Punkte und Ausgleichsgerade.
@@ -140,12 +140,12 @@ Klausur-Satz: `Ein Messergebnis wird nur im Rahmen der Messunsicherheit beurteil
    Korrektur: Mittelung hilft nur gegen Zufall. Nullpunktfehler oder spaeter Start verschieben auch den Mittelwert und verlangen Geraetekorrektur.
    Korrektur-Satz: `Die Mittelung verkleinert nur zufaellige Fehler; systematische Fehler bleiben erhalten und muessen an ihrer Ursache beseitigt werden.`
 
-## Schritt 7 — szenario: Klausurtransfer & Rubric
+## Schritt 7 — szenario: Klausurtransfer: Diagramme lesen, zeichnen und Messfehler beurteilen
 ROLLE: Du bist Mitglied der Physik-AG und sollst fuer das Schuljahrbuch einen Versuch zur gleichfoermigen Bewegung auswerten und dokumentieren.
 SITUATION: Eine Gruppe hat eine Messreihe ($t$ in $\mathrm{s}$, $s$ in $\mathrm{m}$) aufgenommen; die Punkte streuen leicht um eine Gerade, und ein Schueler nennt das Ergebnis genau $0{,}50\,\mathrm{m/s}$. Beurteile in einer zusammenhaengenden Stellungnahme (ca. 150 Woerter) Darstellung, Geschwindigkeitsbestimmung und Aussagekraft mit Ausgleichsgerade und Messunsicherheit.
 RUBRIC (30 XP): Korrekte Darstellung mit Achsen, Einheit, Punkten und Gerade (5 XP) | Steigung als Geschwindigkeit mit Rechnung (10 XP) | Einordnung als zufaellig oder systematisch (10 XP) | Eingeschraenktes Fazit statt exakt (5 XP).
 
-## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
+## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
 TAKEAWAY (Kernzusammenfassung):
 
 Achsen mit Einheiten, Punkte plus Ausgleichsgerade, Steigung als Ergebnis und Urteil nur im Rahmen der Messunsicherheit — so wird aus einer Messreihe ein belastbares Ergebnis. Zufall streut beiderseits und wird gemittelt, System verschiebt alles und verlangt Umbau. Das Verfahren gilt fuer jede Auswertung Daten zu Gerade zu Steigung.

@@ -117,7 +117,7 @@ SITUATION: Ein Leserbrief fordert das Verbot von $Kiezdeutsch$ auf dem Schulhof.
 AUFGABE (erortern, AFB III): Eroertern Sie die Forderung in einer zusammenhaengenden Darstellung (ca. 150 Woerter) mit Pro, Kontra und eigenem Standpunkt.
 RUBRIC (30 XP): Systemdarstellung mit $Beispiel$ (10 XP) | Normargument mit $Angemessenheit$ (10 XP) | Abgewogener Standpunkt (5 XP) | Geschlossene Darstellung (5 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY: Merke $System + Lage = Urteil$. Analyseformel $Beleg + Ebene + Funktion + Normvergleich$ traegt jede Eroerterung.
 

@@ -121,8 +121,7 @@ ANTWORT: A erfordert Verfahren (i): Die Zelle nutzt die Zellatmung mit Gesamtgle
 
 Klausur-Satz: `Mit Sauerstoff dominiert die Zellatmung mit hohem ATP-Ertrag, ohne Sauerstoff bleibt nur die Gaerung mit geringem Ertrag.`
 
-## Schritt 6 — check: Verständnisprüfung
-
+## Schritt 6 — check: Selbsttest zu Zellatmung und ATP-Synthese
 CHECK (drei Fragen mit Antworten):
 
 FRAGE: Wie lautet die Gesamtgleichung der Zellatmung? | ANTWORT: $C_6H_{12}O_6 + 6 O_2 \to 6 CO_2 + 6 H_2O + Energie$ ($ATP$ plus Waerme).
@@ -142,14 +141,13 @@ Klausur-Satz: `Ohne terminalen Elektronenakzeptor Sauerstoff bricht die oxidativ
    Korrektur: Cyanid blockiert Komplex IV, sodass Sauerstoff trotz Anwesenheit nicht als Elektronenakzeptor genutzt werden kann.
    Korrektur-Satz: `Cyanid blockiert Komplex IV, sodass Sauerstoff trotz Anwesenheit nicht als Elektronenakzeptor genutzt werden kann.`
 
-## Schritt 7 — szenario: Klausurtransfer & Rubric
-
+## Schritt 7 — szenario: Klausurtransfer: Zellatmung und ATP-Synthese
 ROLLE: Du bist Tutorin in der EF und erklaerst einer Mitschaelerin die Zellatmung.
 SITUATION: Deine Mitschaelerin versteht nicht, warum ein Gift wie Cyanid so schnell toetet, obwohl das Opfer normal atmet.
 AUFGABE (AFB II/III): Erklaere in einer zusammenhaengenden Darstellung (ca. 150 Woerter) die Gesamtgleichung, die vier Phasen mit Orten und die Rolle von Sauerstoff sowie Komplex IV.
 RUBRIC (30 XP): Korrekte Gesamtgleichung (5 XP) | Vier Phasen mit Ort und Produkt korrekt (10 XP) | Sauerstoff als terminaler Akzeptor erklaert (10 XP) | Cyanid-Blockade von Komplex IV als Fazit (5 XP).
 
-## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
+## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY (Kernbotschaft in einem Kasten):
 

@@ -121,7 +121,7 @@ ANTWORT: A erfordert Verfahren (i): $T \sim \frac{1}{\sqrt{D}}$, also halbiert s
 
 Klausur-Satz: `Zeitfragen brauchen die Wurzelformel, Tempofragen brauchen die Energiebilanz.`
 
-## Schritt 6 — check: Verständnisprüfung
+## Schritt 6 — check: Selbsttest zu Federpendel und harmonische Schwingung
 CHECK (Selbsttest, 3 Fragen mit Antworten):
 
 FRAGE: Wie lautet die Periodendauer des Federpendels? | ANTWORT: $T = 2\pi\sqrt{\frac{m}{D}}$.
@@ -140,12 +140,12 @@ Klausur-Satz: `Ruhelage heisst schnell, Umkehrpunkt heisst Stillstand.`
    Korrektur: Dort ist $|F| = DA$ maximal, nur $v = 0$; Kraft und Geschwindigkeit sind verschiedene Groessen.
    Korrektur-Satz: `Maximale Auslenkung bedeutet maximale Rueckstellkraft bei null Geschwindigkeit.`
 
-## Schritt 7 — szenario: Klausurtransfer & Rubric
+## Schritt 7 — szenario: Klausurtransfer: Federpendel und harmonische Schwingung
 ROLLE: Du bist Laborassistent im Physikkurs.
 SITUATION: Eine Gruppe meldet $T = 1{,}2\,\mathrm{s}$ fuer $m = 0{,}4\,\mathrm{kg}$ und behauptet $D = 5\,\frac{\mathrm{N}}{\mathrm{m}}$. Pruefen Sie die Angabe in einer zusammenhaengenden Darstellung (ca. 150 Woerter), berechnen Sie $D$ aus $T$ und beurteilen Sie Messfehlerquellen.
 RUBRIC (30 XP): Umstellung $D = \frac{4\pi^2m}{T^2}$ korrekt (10 XP) | Zahlwert $D \approx 11\,\frac{\mathrm{N}}{\mathrm{m}}$ (10 XP) | Fehlerdiskussion Reibung und Zeitmessung (5 XP) | Geschlossene Darstellung (5 XP).
 
-## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
+## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
 TAKEAWAY (Kernzusammenfassung):
 
 Merke Rueckstellung, Wurzel, Energie: $F = -Dx$ erzeugt $T = 2\pi\sqrt{m/D}$ und $E = \frac{1}{2}DA^2$. Zeit haengt an $m$ und $D$, Tempo an der Lage im Zyklus.

@@ -135,7 +135,7 @@ ROLLE: Du bist Tutorin in der EF und bereitest eine Mitschuelerin auf die ZKE vo
 SITUATION: Deine Mitschuelerin hat mit dem GTR fuer f(x) = x^3 im Intervall [-1; 1] eine Durchschnittssteigung von 1 erhalten, ist aber verwirrt, weil die Tangente an der Stelle x = 0 waagerecht verlaeuft. Erklaere ihr in einer zusammenhaengenden Darstellung (ca. 150 Woerter) den Unterschied zwischen Sekante und Tangente und ordne beide Ergebnisse ein.
 RUBRIC (30 XP): Klare These zum Unterschied Sekante/Tangente (5 XP) | Korrekte Sekantenrechnung (f(1) - f(-1)) / 2 = 1 (10 XP) | Begruendung der Tangentensteigung f'(0) = 0 (10 XP) | Abschlussfazit mit Fachbegriffen (5 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY 1盒（核心总结）：
 

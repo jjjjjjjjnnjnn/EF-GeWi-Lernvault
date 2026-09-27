@@ -134,8 +134,7 @@ ANTWORT: A erfordert Verfahren (i): Ich beschreibe den Verlauf mit Werten (stark
 
 Klausur-Satz: `Kurvenmaterial wird nach dem Dreischritt ausgewertet, waehrend ein kontrollierter Ansatz erst durch den Vergleich mit der Kontrolle eine Aussage erlaubt.`
 
-## Schritt 6 — check: Verständnisprüfung
-
+## Schritt 6 — check: Selbsttest zu CN-Methodentraining mit Zeitlimit und EHZ
 CHECK (drei Fragen mit Antworten):
 
 FRAGE: Was ist der Erwartungshorizont und wozu dient er beim Lernen? | ANTWORT: Der Erwartungshorizont ist die Liste der erwarteten Teilleistungen mit Punktwerten; er dient als Checkliste, um die eigene Antwort gezielt an den Punkten auszurichten.
@@ -155,14 +154,13 @@ Klausur-Satz: `Die Selbsteinschaetzung mit dem Erwartungshorizont deckt auf, ob 
    Korrektur: Ohne Wiederholung und Kontrolle laesst sich aus einem einzelnen Ergebnis keine gesicherte Aussage ableiten.
    Korrektur-Satz: `Ohne Wiederholung und Kontrolle laesst sich aus einem einzelnen Ergebnis keine gesicherte Aussage ableiten.`
 
-## Schritt 7 — szenario: Klausurtransfer & Rubric
-
+## Schritt 7 — szenario: Klausurtransfer: CN-Methodentraining mit Zeitlimit und EHZ
 ROLLE: Du bist Tutorin in der Klausurvorbereitung und leitest eine Uebungseinheit mit Zeitlimit.
 SITUATION: Eine Mitschaelerin hat eine Materialaufgabe (8 BE) bearbeitet, aber nur 4 Punkte erhalten. Ihr Kommentar war: Ich habe doch alles Wichtige geschrieben.
 AUFGABE (AFB II/III): Erklaere ihr in einer zusammenhaengenden Stellungnahme (ca. 150 Woerter), wie sie mit dem Erwartungshorizont systematisch herausfinden kann, wo die vier fehlenden Punkte verloren gegangen sind, und welches Vorgehen sie kuenftig anwenden sollte.
 RUBRIC (30 XP): Benennung der drei Fehlertypen — Operator verfehlt, Fachbegriff falsch, Beleg fehlt (8 XP) | Beschreibung des Vorgehens beim Vergleich von Antwort und Erwartungshorizont (10 XP) | Hinweis auf die Trennung von Beschreibung, Erklaerung und Urteil (7 XP) | Kriteriengeleitetes Fazit mit konkreter Handlungsempfehlung (5 XP).
 
-## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
+## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY (Kernbotschaft in einem Kasten):
 

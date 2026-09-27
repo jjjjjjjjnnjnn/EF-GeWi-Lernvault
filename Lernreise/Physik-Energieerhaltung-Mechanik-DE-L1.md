@@ -121,7 +121,7 @@ ANTWORT: A erfordert Verfahren (i): ohne Reibung genuegt $m \cdot g \cdot L = 0{
 
 Klausur-Satz: `Fragt die Aufgabe nur nach einer Geschwindigkeit oder Hoehe, fuehrt der Energieansatz ohne Zeit und ohne Winkel zum Ziel; ist dagegen eine Zeit gesucht, muss der Kraftansatz verwendet werden.`
 
-## Schritt 6 — check: Verständnisprüfung
+## Schritt 6 — check: Selbsttest zu Mechanische Energieerhaltung
 CHECK (Selbsttest, 3 Fragen mit Antworten):
 
 FRAGE: Unter welcher Bedingung gilt die mechanische Energieerhaltung? | ANTWORT: Wenn nur konservative Kraefte wie Gewicht oder Feder wirken, also keine Reibung Energie entzieht.
@@ -140,12 +140,12 @@ Klausur-Satz: `Bei reibungsfreien Vorgaengen sind Anfangs- und Endenergie gleich
    Korrektur: Die Gleichung enthaelt keine Zeit; Momentanwerte verlangen $F_{res} = m \cdot a$ plus Kinematik.
    Korrektur-Satz: `Die Energieerhaltung enthaelt keine Zeit und liefert daher keine Zeit- oder Beschleunigungswerte; diese erfordern den Kraftansatz.`
 
-## Schritt 7 — szenario: Klausurtransfer & Rubric
+## Schritt 7 — szenario: Klausurtransfer: Mechanische Energieerhaltung
 ROLLE: Du bist Praktikumsbetreuerin im Physikpraktikum der EF und sollst eine Halfpipe-Analyse anleiten.
 SITUATION: Ein Skateboarder ($m = 60\,\mathrm{kg}$) startet aus der Ruhe am Rand einer reibungsfreien Halfpipe ($h = 1{,}8\,\mathrm{m}$ ueber Tiefpunkt) ohne weiteren Antrieb. Beurteile in einer zusammenhaengenden Stellungnahme (ca. 150 Woerter), welche Geschwindigkeit er unten erreicht und warum Energie hier sinnvoller ist als Kraft. Nutze $g = 10\,\mathrm{m/s^2}$.
 RUBRIC (30 XP): Bilanz $m \cdot g \cdot h = 0{,}5 \cdot m \cdot v^2$ mit Nullhoehe (5 XP) | Rechnung $v = \sqrt{2 \cdot g \cdot h} = 6{,}0\,\mathrm{m/s}$ mit Einheit (10 XP) | Begruendung der Massenunabhaengigkeit (10 XP) | Urteil zum Vorzug von Energie bei veraenderlicher Richtung ohne Zeitfrage (5 XP).
 
-## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
+## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
 TAKEAWAY (Kernzusammenfassung):
 
 Der Energieansatz vergleicht nur Anfang und Ende ohne Zeit und ohne Winkel, solange keine Reibung entzieht. Bilanz in vier Schritten: Nullniveau, Anfang, Ende, Gleichsetzen (mit Reibung abzueglich Verlust). Nur Tempo oder Hoehe bei veraenderlicher Kraft verlangt Energie; Zeit, Beschleunigung oder Richtung verlangen Kraft.

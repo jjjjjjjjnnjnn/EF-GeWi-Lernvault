@@ -144,7 +144,7 @@ ROLLE: Du bist Tutor in der EF-Chemie und erklärst einer Mitschülerin den Stof
 SITUATION: Auf dem Tisch stehen drei Gefäße mit Ethan (C2H6), Methanol (CH3-OH) und Wasser (H2O). Die Mitschülerin wundert sich, dass Ethan schon bei -89 °C gasförmig ist, Methanol erst bei +65 °C siedet und Wasser sogar erst bei +100 °C. Verfasse eine zusammenhängende Erklärung (ca. 150 Wörter), die die drei Siedetemperaturen mit den jeweils wirkenden zwischenmolekularen Kräften begründet.
 RUBRIC (30 XP): Nennung der drei Krafttypen (Van-der-Waals, Dipol-Dipol, Wasserstoffbrücken) (6 XP) | Zuordnung jeder Kraft zum jeweiligen Stoff mit Begründung aus der Struktur (10 XP) | Verknüpfung von Kraftstärke und Energieaufwand beim Sieden (8 XP) | Korrekte Fachsprache und klarer Vergleichssatz (6 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY 1盒（核心总结）：
 

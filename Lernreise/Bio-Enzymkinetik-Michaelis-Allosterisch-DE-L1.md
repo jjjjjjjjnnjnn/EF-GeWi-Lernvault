@@ -126,8 +126,7 @@ ANTWORT: A erfordert Verfahren (i): Kompetitive Hemmung, da nur $K_m$ steigt und
 
 Klausur-Satz: `Veraendertes K_m verraet Konkurrenz am aktiven Zentrum, veraenderte Gestalt verraet allosterische Regulation.`
 
-## Schritt 6 — check: Verständnisprüfung
-
+## Schritt 6 — check: Selbsttest zu Enzymkinetik nach Michaelis sowie allosterische Regulation
 CHECK (drei Fragen mit Antworten):
 
 FRAGE: Was bedeuten $K_m$ und $v_{max}$? | ANTWORT: $K_m$ ist $[S]$ bei $v_{max}/2$ und misst die Affinitaet; $v_{max}$ ist die Saettigungsgeschwindigkeit.
@@ -147,14 +146,13 @@ Klausur-Satz: `K_m steht auf der [S]-Achse, v_max auf der v-Achse — beide Achs
    Korrektur: Kompetitive Hemmung ist reversibel und laesst sich durch Substratueberschuss verdraengen, da kein Enzym zerstoert wird.
    Korrektur-Satz: `Kompetitive Hemmung ist reversibel und laesst sich durch Substratueberschuss verdraengen, da kein Enzym zerstoert wird.`
 
-## Schritt 7 — szenario: Klausurtransfer & Rubric
-
+## Schritt 7 — szenario: Klausurtransfer: Enzymkinetik nach Michaelis sowie allosterische Regulation
 ROLLE: Du bist Tutorin im Bio-Grundkurs.
 SITUATION: Eine Mitschuelerin legt zwei Messreihen vor: Reihe A erreicht dasselbe Plateau langsamer, Reihe B ein niedrigeres Plateau.
 AUFGABE (AFB II/III): Erklaere in einer zusammenhaengenden Stellungnahme (ca. 150 Woerter) mit $K_m$ und $v_{max}$, welcher Hemmtyp jeweils vorliegt und wie eine allosterische Regulation davon zu unterscheiden waere.
 RUBRIC (30 XP): Bestimmen von $K_m$ und $v_{max}$ (8 XP) | Zuordnung beider Hemmtypen (10 XP) | Abgrenzung zur Allosterie (6 XP) | Fachsprachliche Darstellung (6 XP).
 
-## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
+## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY (Kernbotschaft in einem Kasten):
 

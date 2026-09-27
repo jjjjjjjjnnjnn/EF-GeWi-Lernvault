@@ -128,7 +128,7 @@ ROLLE: Du bist Tutor und hilfst einer Klausurgruppe bei Steckbriefaufgaben.
 SITUATION: Die Gruppe stellt immer den vollen Ansatz auf und scheitert am Gleichungssystem. Erklaere in einer zusammenhaengenden Darstellung (ca. 150 Woerter) an einem symmetrischen Beispiel, wie man aus der Symmetrie den verkuerzten Ansatz waehlt und jede Bedingung in genau eine Gleichung uebersetzt.
 RUBRIC (30 XP): Wahl des symmetrischen Ansatzes mit Begruendung (10 XP) | Korrekte Uebersetzung von Punkt-, Extrem- und Wendebedingungen (10 XP) | Loesungsweg bis zum Funktionsterm mit Probe (6 XP) | Fachsprachliche Korrektheit (4 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY 1盒（核心总结）：
 

@@ -130,8 +130,7 @@ ANTWORT: A erfordert Verfahren (i): Vollstaendige Tabelle ueber Naturzustand, Ve
 
 Klausur-Satz: `Vergleich rekonstruiert, Beurteilung braucht einen Massstab.`
 
-## Schritt 6 — check: Verständnisprüfung
-
+## Schritt 6 — check: Selbsttest zu Gesellschaftsvertrag bei Hobbes Locke und Rousseau
 CHECK检索默写（自测 3 题，与答案配对）：
 
 FRAGE: Wie unterscheiden sich die Naturzustaende? | ANTWORT: Hobbes: Krieg; Locke: unbequem aber rechtlich; Rousseau: friedlich, erst Eigentum verderbt.
@@ -152,13 +151,12 @@ Klausur-Satz: `Naturzustand, Vertragszweck und Grenze trennen die drei Theorien.
    中文纠偏：公意是公共利益方向，可错投；多数决只是发现程序，会错，需公共审议纠正。
    Korrektur-Satz: `Die volonte generale zielt aufs Gemeinwohl, nicht auf die Mehrheit als Zahl.`
 
-## Schritt 7 — szenario: Klausurtransfer & Rubric
-
+## Schritt 7 — szenario: Klausurtransfer: Gesellschaftsvertrag bei Hobbes Locke und Rousseau
 ROLLE: Du berätst eine Schulverfassung zur Handyregel.
 SITUATION: Die Schulleitung will Anordnung, die Schueler wollen Mitbestimmung. Begruende in einer zusammenhaengenden Stellungnahme (ca. 150 Woerter) mit Hobbes, Locke und Rousseau, welche Regelsetzung legitim waere.
 RUBRIC (30 XP): Drei Positionen korrekt zugeordnet (12 XP) | Abwaegung mit Gemeinwohl-Kriterium (10 XP) | Eigener Verfahrensvorschlag (4 XP) | Adressatengerechte Sprache (4 XP).
 
-## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
+## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY 1盒（核心总结）：
 

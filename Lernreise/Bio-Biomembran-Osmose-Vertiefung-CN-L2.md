@@ -132,8 +132,7 @@ ANTWORT:
 
 Klausur-Satz: `Passiver Transport erfolgt energetisch spontan mit dem Konzentrationsgefaelle; aktiver Transport erzwingt die Bewegung gegen das Gefaelle unter zwingendem ATP-Aufwand.`
 
-## Schritt 6 — check: Verständnisprüfung
-
+## Schritt 6 — check: Selbsttest zu Biomembran und Osmose in der Vertiefung
 CHECK检索默写（自测 3 题，与答案配对）：
 
 FRAGE: Welche Molekuele koennen die Phospholipid-Doppelschicht einer Biomembran durch einfache freie Diffusion ungehindert durchqueren? | ANTWORT: Kleine, ungeladene und lipophile (unpolare) Molekuele wie Sauerstoff (O2), Kohlenstoffdioxid (CO2) und in geringem Masse sehr kleine Molekuele wie Wasser.
@@ -164,7 +163,7 @@ RUBRIC (30 XP):
 - Verknuepfung des Verlusts des Turgordrucks mit Plasmolyse der Zellen und Welken der krautigen Organe (8 XP)
 - Angabe der physikalischen Sofortmassnahme (grosszuegiges Auswaschen/Flueten mit reinem Wasser) zur Deplasmolyse (6 XP)
 
-## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
+## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY 核心总结：
 1. **膜之架构**：流动镶嵌模型——磷脂双分子层阻隔水溶物，蛋白质行使大门职能，胆固醇稳定流动性；

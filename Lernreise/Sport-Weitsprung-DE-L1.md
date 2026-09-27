@@ -128,8 +128,7 @@ Redemittel: `Die Flugbahn des KSP steht nach dem Absprung fest; deshalb optimier
 
 Klausur-Satz: `Der Absprung bestimmt die Flugparabel, waehrend Flug und Landung nur darueber entscheiden, wie gut die bereits bestimmte Weite genutzt wird.`
 
-## Schritt 6 — check: Verständnisprüfung
-
+## Schritt 6 — check: Selbsttest zu Biomechanische Optimierung des Weitsprungs: Absprung und Flug
 CHECK (3 Fragen zur Selbstkontrolle mit Antworten):
 
 FRAGE: Warum ist der Absprung die Hauptphase des Weitsprungs? | ANTWORT: Weil dort die Anlaufgeschwindigkeit in die Flugkurve des Koerperschwerpunkts umgesetzt wird und damit die Weite weitgehend festgelegt ist.
@@ -149,13 +148,12 @@ Klausur-Satz: `Die Weite wird im Absprung bestimmt; in der Luft laesst sich nur 
    Korrektur: Die Schwerpunktparabel steht beim Verlassen des Bretts fest; in der Luft fehlt jede Stuetzflaeche fuer neuen Antrieb. Die Flugtechnik sichert nur Balance und Landung mit aktiv nach vorn gestreckten Beinen.
    Korrektur-Satz: `Nach dem Absprung ist die Bahn des Koerperschwerpunkts festgelegt; in der Luft kann nur noch die Haltung und die Landung optimiert werden.`
 
-## Schritt 7 — szenario: Klausurtransfer & Rubric
-
+## Schritt 7 — szenario: Klausurtransfer: Biomechanische Optimierung des Weitsprungs: Absprung und Flug
 ROLLE: Du bist Pruefling in einer muendlichen Sportpruefung und sollst eine Weitsprung-Analyse vorstellen.
 SITUATION: Der Pruefer zeigt dir die Videoaufnahme eines Mitschuelers: Der Sportler bremst vor dem Brett ab, springt sehr steil ab und landet mit dem Gesaess zuerst. Erklaere muendlich in zusammenhaengenden deutschen Saetzen (ca. 2 Minuten) die biomechanischen Ursachen des geringen Ergebnisses, ordne die Fehler den Phasen zu und schlage je eine konkrete Korrektur vor.
 RUBRIC (30 XP): Gliederung des Weitsprungs in Phasen mit Benennung der Hauptphase (5 XP) | Biomechanische Analyse des Absprungs (v_h, Absprungwinkel, fixierte KSP-Parabel) (10 XP) | Analyse der Flug- und Landungsfehler mit Hinweis auf die festgelegte Flugbahn (10 XP) | Kriteriengeleitete Korrekturvorschlaege mit methodischem Bezug (5 XP).
 
-## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
+## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY (Kernzusammenfassung):
 

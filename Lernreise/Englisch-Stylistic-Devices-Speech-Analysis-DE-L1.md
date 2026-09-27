@@ -126,8 +126,7 @@ ANSWER: A requires procedure (i): Point — inclusive anaphora builds unity; Evi
 
 Klausur-Satz: `While the inclusive language effectively creates solidarity, its persuasive power remains mainly emotional rather than logical.`
 
-## Schritt 6 — check: Verständnisprüfung
-
+## Schritt 6 — check: Selbsttest zu Stylistic Devices and Speech Analysis
 CHECK (three questions with answers):
 
 FRAGE: What are the three steps of a P.E.E. paragraph in speech analysis? | ANTWORT: Point (device plus purpose), Evidence (short quote, eight words maximum), Explanation (audience effect in ethos, pathos or logos terms).
@@ -148,14 +147,13 @@ Klausur-Satz: `A complete analysis always connects the quoted device to its conc
    Correction: Their force lies in needing none. Listeners supply the intended answer silently and thereby persuade themselves. Name the expected answer in the analysis.
    Korrektur-Satz: `A rhetorical question is effective precisely because the audience supplies the intended answer silently.`
 
-## Schritt 7 — szenario: Klausurtransfer & Rubric
-
+## Schritt 7 — szenario: Klausurtransfer: Stylistic Devices and Speech Analysis
 ROLE: You are a student editor of the school debate magazine.
 SITUATION: A classmate wrote a 120-word speech opening full of devices but without P.E.E. discipline — labels only, no effects. Your teacher asks you to rewrite one paragraph (ca. 100 words) as a model and to add a 60-word evaluation of its persuasiveness.
 TASK: Write the model paragraph using at least three devices (mark them), then evaluate its strength and one limitation for a school audience.
 RUBRIC (30 XP): Three correctly marked devices (10 XP) | P.E.E. logic in evaluation, short quotes (10 XP) | Balanced judgement with ethos, pathos and logos vocabulary plus closing sentence (10 XP).
 
-## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
+## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY (core summary):
 

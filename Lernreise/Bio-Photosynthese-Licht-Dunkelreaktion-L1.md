@@ -134,7 +134,7 @@ ROLLE: Du bist Tutorin in der EF und beraetst einen Gewaechshaus-Betrieb.
 SITUATION: Der Betrieb will im Winter den Tomatenertrag steigern und ueberlegt zwischen Zusatzlicht, CO2-Anreicherung und staerkerer Heizung. Erklaere in einer zusammenhaengenden Darstellung (ca. 150 Woerter) Licht- und Dunkelreaktion mit Orten sowie die drei limitierenden Faktoren und gib eine begruendete Empfehlung.
 RUBRIC (30 XP): Beide Reaktionen mit Ort korrekt (10 XP) | Drei Faktoren mit Wirkort erklaert (10 XP) | Empfehlung Zusatzlicht plus CO2 mit Temperatur-Optimum verknuepft (10 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY 1盒（核心总结）：
 

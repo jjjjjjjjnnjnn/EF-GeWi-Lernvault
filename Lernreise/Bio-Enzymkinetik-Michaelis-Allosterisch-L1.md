@@ -128,7 +128,7 @@ ROLLE: Du bist Tutorin im Bio-Grundkurs.
 SITUATION: Eine Mitschuelerin legt zwei Messreihen vor: Reihe A erreicht dasselbe Plateau langsamer, Reihe B ein niedrigeres Plateau. Erklaere in circa 150 Woertern mit $K_m$ und $v_{max}$, welcher Hemmtyp jeweils vorliegt und wie eine allosterische Regulation davon zu unterscheiden waere.
 RUBRIC (30 XP): Bestimmen von $K_m$ und $v_{max}$ (8 XP) | Zuordnung beider Hemmtypen (10 XP) | Abgrenzung zur Allosterie (6 XP) | Fachsprachliche Darstellung (6 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY:
 

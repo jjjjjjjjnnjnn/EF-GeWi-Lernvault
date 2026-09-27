@@ -125,8 +125,7 @@ ANTWORT: A erfordert Verfahren (i): Das zweite Thema steht in der Dominante und 
 
 Klausur-Satz: `Solange der zweite Themenkomplex in der Fremdtonart steht, liegt eine Exposition vor; erst die Rueckkehr beider Themen in die Haupttonart kennzeichnet die Reprise.`
 
-## Schritt 6 — check: Verständnisprüfung
-
+## Schritt 6 — check: Selbsttest zu Sonatenhauptsatzform hoeren: Exposition, Durchfuehrung, Reprise
 CHECK (3 Fragen zur Selbstkontrolle mit Antworten):
 
 FRAGE: In welcher Reihenfolge verlaufen die drei Teile der Sonatenhauptsatzform? | ANTWORT: Exposition, Durchfuehrung, Reprise (gegebenenfalls mit anschliessender Coda).
@@ -146,13 +145,12 @@ Klausur-Satz: `Die Durchfuehrung fuehrt kein neues Thema ein, sondern verarbeite
    Korrektur: Beide koennen dicht wirken, aber die Richtung ist entgegengesetzt. Die Durchfuehrung entfernt sich modulierend ohne Abschluss; die Reprise steht bereits in der Haupttonart und stabilisiert sich. Entscheidend ist die Frage, ob die Tonart heimgekehrt ist.
    Korrektur-Satz: `Die Durchfuehrung entfernt sich durch Modulationen von der Haupttonart, waehrend die Reprise trotz dichter Faktur bereits in der Haupttonart angekommen ist.`
 
-## Schritt 7 — szenario: Klausurtransfer & Rubric
-
+## Schritt 7 — szenario: Klausurtransfer: Sonatenhauptsatzform hoeren: Exposition, Durchfuehrung, Reprise
 ROLLE: Du bist Pruefling in einer muendlichen Musikpruefung (EF) und sollst einen kurzen Hoerbeispiel-Ausschnitt fachsprachlich einordnen.
 SITUATION: Die Prueferin spielt einen Ausschnitt, in dem zwei Themen zu hoeren sind und der zweite Gedanke in einer neuen Tonlage endet. Sie fragt: Ordnen Sie den Ausschnitt ein und begruenden Sie Ihre Entscheidung. Formuliere eine zusammenhaengende muendliche Stellungnahme (ca. 90 Sekunden) mit den drei Hoerfragen (Themenzahl, Tonart, Rueckkehr) und schliesse mit einem begruendeten Urteil zur Wirkung.
 RUBRIC (30 XP): Benennung des Formteils ueber Themenzahl und Tonartplan (8 XP) | Beschreibung von zwei Hoermerkmalen mit Fachbegriffen (8 XP) | Begruendung ueber den Tonartverlauf ($Hd$ und $Dd$, Fremdtonart gegen Haupttonart) (9 XP) | Begruendetes Urteil zur Ausdruckswirkung (Aufbruch gegen Heimkehr) (5 XP).
 
-## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
+## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY (Kernzusammenfassung):
 

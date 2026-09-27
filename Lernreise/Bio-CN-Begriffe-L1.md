@@ -138,7 +138,7 @@ ROLLE: Du bist Tutorin in einer deutsch-chinesischen Lerngruppe und hilfst einer
 SITUATION: Deine Mitschülerin hat in ihrer Klausur geschrieben: "Die Atmung findet in den Mitochondrien statt und produziert ATP." Erkläre ihr in einer zusammenhängenden Stellungnahme (ca. 150 Wörter), welche Begriffe sie verwechselt hat, wie die korrekten deutschen Fachbegriffe lauten und wie sie daraus einen fehlerfreien Fachsatz bilden kann.
 RUBRIC (30 XP): Benennung der verwechselten Begriffe Atmung und Zellatmung (5 XP) | Korrekte Zuordnung der beiden Begriffe zu ihren Ebenen (Organismus bzw. Zelle) (10 XP) | Umformulierung in einen korrekten deutschen Fachsatz mit Artikel und Numerus (10 XP) | Hinweis auf die Brueckenfunktion von Konzept, Terminologie und Satz (5 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY 1盒（核心总结）：
 

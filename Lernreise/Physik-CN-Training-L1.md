@@ -154,7 +154,7 @@ ROLLE: Du bist Tutor und leitest eine 45-minütige Klausursimulation für eine E
 SITUATION: Die Gruppe soll die vier Aufgaben aus Schritt 3 unter realen Bedingungen bearbeiten (insgesamt ca. 47 Minuten) und anschließend mit dem EHZ selbst korrigieren. Beurteile in einer zusammenhängenden Stellungnahme (ca. 150 Wörter), wie man die Bearbeitungszeit sinnvoll auf die vier Aufgabentypen verteilt und worauf man beim Selbstkorrigieren besonders achten sollte.
 RUBRIC (30 XP): Sinnvolle Zeitverteilung auf die vier Aufgabentypen mit Begruendung (10 XP) | Hinweis auf die typischen Punktverluste (fehlender Ansatz, fehlende Einheit, fehlende Bewertung) (10 XP) | Vorgehen beim Selbstkorrigieren mit dem EHZ (5 XP) | Fachsprachlich korrekte und nachvollziehbare Darstellung (5 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY 1盒（核心总结）：
 

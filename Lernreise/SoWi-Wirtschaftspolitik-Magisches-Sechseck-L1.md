@@ -120,7 +120,7 @@ SITUATION: Bei $\pi = 4{,}5\,\%$ und $u = 6\,\%$ fordert die Opposition sofort $
 AUFGABE (beurteilen, AFB III): Beurteilen Sie die Forderung in einer zusammenhaengenden Darstellung (ca. 150 Woerter) mit allen sechs Zielen, $Phillips$-Konflikt und Alternativvorschlag.
 RUBRIC (30 XP): Alle sechs Ziele genannt (10 XP) | Doppel-Expansionsrisiko $\pi$ begruendet (10 XP) | Alternative mit Zielabwaegung (5 XP) | Geschlossene Darstellung (5 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY: Merke Sechs, Zwei, Eins: Sechs Ziele pruefen, zwei Instrumente $G$ und $i$ unterscheiden, ein Urteil mit $Y = C + I + G + (Ex - Im)$ faellen. Expansiv hilft $u$, restriktiv hilft $\pi$.
 

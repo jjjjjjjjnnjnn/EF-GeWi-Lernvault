@@ -131,8 +131,7 @@ ANTWORT: A erfordert Verfahren (i): $m_{ges} = 2{,}0 + 4{,}0 = 6{,}0\,\mathrm{kg
 
 Klausur-Satz: `Die gemeinsame Beschleunigung folgt aus dem Gesamtsystem, die innere Seilkraft dagegen erst nach dem Freischneiden eines einzelnen Wagens.`
 
-## Schritt 6 — check: Verständnisprüfung
-
+## Schritt 6 — check: Selbsttest zu CN-Tricks: sechs Verfahren fuer die Physik-Klausur
 CHECK (Selbsttest, 3 Fragen mit Antworten):
 
 FRAGE: In welcher Reihenfolge stehen Kraefte im Diagramm? | ANTWORT: Gewicht, Normale, Reibung, dann aeussere Zugkraft.
@@ -152,13 +151,12 @@ Klausur-Satz: `Das Ganzheitsverfahren liefert die gemeinsame Beschleunigung, das
    Korrektur: Einheit ist nur notwendig. Beispiel $a \cdot t^2$ statt $0{,}5 \cdot a \cdot t^2$ traegt ebenfalls $\mathrm{m}$ bei doppeltem Wert; Bedingung und Groessenordnung muessen folgen.
    Korrektur-Satz: `Die Dimensionsprobe ist nur eine notwendige Bedingung und ersetzt nicht die Pruefung von Bedingung und Groessenordnung.`
 
-## Schritt 7 — szenario: Klausurtransfer & Rubric
-
+## Schritt 7 — szenario: Klausurtransfer: CN-Tricks: sechs Verfahren fuer die Physik-Klausur
 ROLLE: Du bist Nachhilfelehrerin und bringst einer Schuelergruppe die sechs Verfahren als Lernstrategie fuer die Physik-Klausur naeher.
 SITUATION: Die Gruppe rechnet schnell, verliert aber Punkte durch fehlende Ansaetze und Luecken im Diagramm. Erklaere in zusammenhaengender Stellungnahme (ca. 150 Woerter), wie Tempo und Formkorrektheit ueber Ansatz, Einheit und Diagramm zusammenkommen.
 RUBRIC (30 XP): Drei Verfahren deutschen Schritten zugeordnet (10 XP) | Warum Ansatz Punkte sichert (10 XP) | Beispiel Gesamt gegen Schnitt (5 XP) | Adressatengerechte Fachsprache (5 XP).
 
-## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
+## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY (Kernzusammenfassung):
 

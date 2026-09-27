@@ -120,7 +120,7 @@ ANTWORT: A erfordert Verfahren (i): $g'(x) = 4x^3$, $g''(x) = 12x^2$, $g''(0) = 
 
 Klausur-Satz: `Ohne Vorzeichenwechsel von f'' liegt kein Wendepunkt vor, wie g(x) = x^4 an der Stelle x = 0 zeigt.`
 
-## Schritt 6 — check: Verständnisprüfung
+## Schritt 6 — check: Selbsttest zu Kurvendiskussion und Wendepunkte
 CHECK (drei Fragen mit Antworten):
 
 FRAGE: Wie lautet die notwendige und die hinreichende Bedingung fuer einen Wendepunkt? | ANTWORT: Notwendig ist $f''(x_W) = 0$, hinreichend ist ein Vorzeichenwechsel von $f''$ oder $f'''(x_W) \ne 0$.
@@ -137,13 +137,13 @@ Klausur-Satz: `Erst f''(x_W) = 0 plus Vorzeichenwechsel plus y-Wert ergeben eine
 2. Fehlkonzept: Ein Wendepunkt ist mit der $x$-Koordinate vollstaendig angegeben; die Tangente ist Zusatz.
    Korrektur-Satz: `Ein Wendepunkt verlangt beide Koordinaten und bei Bedarf die Gleichung der Wendetangente.`
 
-## Schritt 7 — szenario: Klausurtransfer & Rubric
+## Schritt 7 — szenario: Klausurtransfer: Kurvendiskussion und Wendepunkte
 ROLLE: Du bist Daten-Assistent im Gesundheitsamt.
 SITUATION: Die kumulierten Meldungen folgen $k(t) = -0{,}05t^3 + 2{,}4t^2 + 100$ ($t$ in Tagen seit Ausbruch, $k$ in Faellen). Der Stab fragt, wann der Tageszuwachs am groessten war und ab wann die Massnahmen sichtbar wirken. Erstelle eine Analyse (circa 150 Woerter) mit Rechnung, Wendetangente und Deutung fuer die Presse.
 AUFGABE (interpretieren, AFB III): Bestimme den Wendepunkt, erklaere seine Bedeutung als Maximum des Zuwachses und beurteile Grenzen des Modells.
 RUBRIC (30 XP): Ableitungen plus $x_W$ korrekt (5 XP) | Nachweis per VZW oder $f'''$ plus $y$-Wert (10 XP) | Wendetangente korrekt (10 XP) | Deutung als Maximum plus Modellkritik (5 XP).
 
-## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
+## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
 TAKEAWAY (Kernbotschaft in einem Kasten):
 
 Der Wendepunkt ist der Kruemmungswechsel. Der Weg besteht aus vier Schritten: $f'' = 0$ loesen, Zeichenwechsel pruefen (VZW oder $f'''$), $y$-Wert berechnen, Tangente aufstellen. Das Beispiel $x^4$ warnt: Ohne Zeichenwechsel kein Wendepunkt. In der Anwendung markiert die Wende das Zuwachsmaximum; die Anekdote der Epidemiekurve zeigt denselben Wechsel von beschleunigt zu gebremst.

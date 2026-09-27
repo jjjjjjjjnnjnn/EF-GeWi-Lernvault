@@ -131,7 +131,7 @@ SITUATION: Das Los-Thema lautet Handyverbot, eure Seite wird erst vor Ort gezoge
 AUFGABE: Entwirf in zusammenhaengender Form (ca. 150 Woerter) einen Sanduhr-Bauplan mit Hook, je zwei Stichwort-Argumenten pro Seite, einem Umschwung-Satz und einer Abwaegungs-Formel mit Bedingung, sodass das Team beide Seiten vertreten kann.
 RUBRIC (30 XP): Hook plus Streitfrage klar (5 XP) | Beide Bloecke gesteigert mit Konnektoren (10 XP) | Umschwung sauber formuliert (5 XP) | Abwaegung mit Bedingung und Fazit (10 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY 1盒（核心总结）：
 

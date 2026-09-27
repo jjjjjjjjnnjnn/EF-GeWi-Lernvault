@@ -137,7 +137,7 @@ ROLLE: Du bist Redakteurin der Schülerzeitung deiner Schule und schreibst die L
 SITUATION: Die Schule diskutiert, ob Handys während der Pausen verboten werden sollen. Die Schulleitung möchte die Kolumne lesen, um die Stimmung der Schüler zu verstehen, und erwartet einen formellen Ton. Schreibe einen Comment (150–200 Wörter) mit klarer Position, zwei begründeten Argumenten, einem Gegenargument und einem final judgement.
 RUBRIC (30 XP): Klare Position im ersten Absatz, die zur Frage Stellung nimmt (5 XP) | Zwei Argumente, jeweils vollständig als P.E.E. mit Beispiel und Wirkung (10 XP) | Ein fair behandeltes Gegenargument mit Entgegnung (5 XP) | Final judgement mit Abwägung im Schlussabsatz (5 XP) | Durchgehend formelles register ohne Kontraktionen und passende linking words (5 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY 1盒（核心总结）：
 

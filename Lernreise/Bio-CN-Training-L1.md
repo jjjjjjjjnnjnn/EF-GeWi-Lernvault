@@ -137,7 +137,7 @@ ROLLE: Du bist Tutorin in der Klausurvorbereitung und leitest eine Übungseinhei
 SITUATION: Eine Mitschülerin hat eine Materialaufgabe (8 BE) bearbeitet, aber nur 4 Punkte erhalten. Ihr Kommentar war: "Ich habe doch alles Wichtige geschrieben." Erkläre ihr in einer zusammenhängenden Stellungnahme (ca. 150 Wörter), wie sie mit dem Erwartungshorizont systematisch herausfinden kann, wo die vier fehlenden Punkte verloren gegangen sind, und welches Vorgehen sie künftig anwenden sollte.
 RUBRIC (30 XP): Benennung der drei Fehlertypen — Operator verfehlt, Fachbegriff falsch, Beleg fehlt (8 XP) | Beschreibung des Vorgehens beim Vergleich von Antwort und EHZ (10 XP) | Hinweis auf die Trennung von Beschreibung, Erklärung und Urteil (7 XP) | Kriteriengeleitetes Fazit mit konkreter Handlungsempfehlung (5 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY 1盒（核心总结）：
 

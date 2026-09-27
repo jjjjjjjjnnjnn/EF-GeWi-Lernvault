@@ -139,7 +139,7 @@ ROLLE: Du bist Mitglied einer Schülergruppe, die auf einem Schulfest ein Poster
 SITUATION: Ein Besucher bezweifelt die Endosymbiontentheorie mit dem Argument: "Ein Mitochondrium kann doch unmöglich einmal ein eigenes Lebewesen gewesen sein." Beurteile diese Aussage in einer zusammenhängenden Stellungnahme (ca. 150 Wörter), indem du die stützenden Belege für Mitochondrien und Chloroplasten anführst und die Theorie kriteriengeleitet bewertest.
 RUBRIC (30 XP): Benennung der Theorie und der beteiligten Organismen (Aerobier bzw. Cyanobakterium) (5 XP) | Anführung der Belege — Doppelmembran, eigene ringförmige DNA, eigene Ribosomen (10 XP) | Erklärung, warum diese Belege einen prokaryotischen Ursprung stützen (10 XP) | Kriteriengeleitetes Urteil mit Abwägung der Aussagekraft der Belege (5 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY 1盒（核心总结）：
 

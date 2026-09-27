@@ -131,7 +131,7 @@ ROLLE: Du bist Pruefungskoordinator und bereitest einen Jahrgang auf die ZKE vor
 SITUATION: Du sollst vor der Pruefung eine kurze Strategie-Empfehlung (ca. 150 Woerter) formulieren, wie die 100 Minuten zwischen Teil A und Teil B aufgeteilt und wann die Hilfsmittel angefordert werden sollten. Begruende deine Empfehlung mit Blick auf Hilfsmittelregeln und Darstellungsleistung.
 RUBRIC (30 XP): Korrekte Wiedergabe der Zeit- und Hilfsmittelregeln (5 XP) | Begruendete Zeitaufteilung zwischen Teil A und Teil B (10 XP) | Hinweis auf die Bedeutung der Darstellungsleistung in Teil B (10 XP) | Kriteriengeleitetes Fazit zur Pruefungsstrategie (5 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY 1盒（核心总结）：
 

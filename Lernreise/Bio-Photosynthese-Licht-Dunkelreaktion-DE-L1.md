@@ -122,8 +122,7 @@ ANTWORT: A erfordert Verfahren (i): Die Lichtreaktion an der Thylakoidmembran sp
 
 Klausur-Satz: `O2 stammt aus der Photolyse des Wassers in der Lichtreaktion, Glucose aus der CO2-Fixierung in der Dunkelreaktion.`
 
-## Schritt 6 — check: Verständnisprüfung
-
+## Schritt 6 — check: Selbsttest zu Photosynthese Licht- und Dunkelreaktion
 CHECK (drei Fragen mit Antworten):
 
 FRAGE: Wie lautet die Gesamtgleichung der Fotosynthese? | ANTWORT: $6 CO_2 + 6 H_2O + Lichtenergie \to C_6H_{12}O_6 + 6 O_2$.
@@ -143,14 +142,13 @@ Klausur-Satz: `ATP und NADPH verbinden als Energietraeger die Thylakoid-Stufe mi
    Korrektur: Der freigesetzte Sauerstoff stammt aus der Photolyse von Wasser, nicht aus Kohlenstoffdioxid.
    Korrektur-Satz: `Der freigesetzte Sauerstoff stammt aus der Photolyse von Wasser, nicht aus Kohlenstoffdioxid.`
 
-## Schritt 7 — szenario: Klausurtransfer & Rubric
-
+## Schritt 7 — szenario: Klausurtransfer: Photosynthese Licht- und Dunkelreaktion
 ROLLE: Du bist Tutorin in der EF und beraetst einen Gewaechshaus-Betrieb.
 SITUATION: Der Betrieb will im Winter den Tomatenertrag steigern und ueberlegt zwischen Zusatzlicht, $CO_2$-Anreicherung und staerkerer Heizung.
 AUFGABE (AFB II/III): Erklaere in einer zusammenhaengenden Darstellung (ca. 150 Woerter) Licht- und Dunkelreaktion mit Orten sowie die drei limitierenden Faktoren und gib eine begruendete Empfehlung.
 RUBRIC (30 XP): Beide Reaktionen mit Ort korrekt (10 XP) | Drei Faktoren mit Wirkort erklaert (10 XP) | Empfehlung Zusatzlicht plus $CO_2$ mit Temperatur-Optimum verknuepft (10 XP).
 
-## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
+## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY (Kernbotschaft in einem Kasten):
 

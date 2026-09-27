@@ -120,7 +120,7 @@ ANTWORT: A gehoert zu Teil A: $f'(x) = 15x^2 - 4x + 1$, also $f'(1) = 15 - 4 + 1
 
 Klausur-Satz: `Teil-A-Aufgaben verlangen nur das exakte Ergebnis, Teil-B-Aufgaben einen vollstaendigen und gedeuteten Loesungsweg.`
 
-## Schritt 6 — check: Verständnisprüfung
+## Schritt 6 — check: Selbsttest zu ZKE 2027: Teil A und Teil B im Zeitmodus
 CHECK (drei Fragen mit Antworten):
 
 FRAGE: Wie lange darf man hoechstens fuer Teil A der ZKE verwenden, und welche Hilfsmittel sind dort erlaubt? | ANTWORT: Hoechstens 25 Minuten, ohne Taschenrechner und ohne Formelsammlung.
@@ -137,13 +137,13 @@ Klausur-Satz: `In Teil A zaehlt das exakte Ergebnis ohne Hilfsmittel, in Teil B 
 2. Fehlkonzept: Die Formelsammlung ersetzt das Auswendiglernen der Grundformeln.
    Korrektur-Satz: `Teil A laeuft ohne Taschenrechner und ohne Formelsammlung, daher muessen die Grundformeln auswendig beherrscht werden.`
 
-## Schritt 7 — szenario: Klausurtransfer & Rubric
+## Schritt 7 — szenario: Klausurtransfer: ZKE 2027: Teil A und Teil B im Zeitmodus
 ROLLE: Du bist Pruefungskoordinator und bereitest einen Jahrgang auf die ZKE vor.
 SITUATION: Du sollst vor der Pruefung eine kurze Strategie-Empfehlung (circa 150 Woerter) formulieren, wie die 100 Minuten zwischen Teil A und Teil B aufgeteilt und wann die Hilfsmittel angefordert werden sollten. Begruende deine Empfehlung mit Blick auf Hilfsmittelregeln und Darstellungsleistung.
 AUFGABE (begruenden, AFB III): Verfasse eine zusammenhaengende Darstellung von etwa 150 Woertern mit Regeln, Zeitaufteilung, Darstellungsleistung und Fazit.
 RUBRIC (30 XP): Korrekte Wiedergabe der Zeit- und Hilfsmittelregeln (5 XP) | Begruendete Zeitaufteilung zwischen Teil A und Teil B (10 XP) | Hinweis auf die Bedeutung der Darstellungsleistung in Teil B (10 XP) | Fazit zur Pruefungsstrategie (5 XP).
 
-## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
+## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
 TAKEAWAY (Kernbotschaft in einem Kasten):
 
 Die ZKE vereint zwei Takte: Teil A hilfsmittelfrei in hoechstens 25 Minuten mit Handgenauigkeit und Formelgedaechtnis (Nullstellen, Ableitungen, Vektorlaengen), Teil B mit WTR oder CAS plus Formelsammlung in mindestens 75 Minuten mit vollstaendiger Kette aus Ansatz, Rechnung und Antwortsatz. Die Zeitmarke bei Minute 25 sichert den Werkzeugwechsel; die CAS-Anekdote erklaert die Teilung: Maschinen rechnen, Menschen begruenden.

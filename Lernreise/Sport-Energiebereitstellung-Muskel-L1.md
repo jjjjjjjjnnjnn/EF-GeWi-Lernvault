@@ -127,7 +127,7 @@ SITUATION: Person A will in 8 Wochen 100 m unter 13 Sekunden laufen, Person B wi
 AUFGABE: Schreibe eine zusammenhaengende Begruendung (ca. 150 Woerter), in der du jedem eine Systemdominanz zuordnest, je zwei passende Trainingsformen nennst und erklaerst, warum das jeweils andere Training dort wenig hilft.
 RUBRIC (30 XP): Korrekte Systemzuordnung fuer beide (10 XP) | Je zwei passende Einheiten mit Begruendung (10 XP) | Abgrenzung zum jeweils anderen System (10 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY 1盒（核心总结）：
 

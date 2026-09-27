@@ -128,8 +128,7 @@ ANTWORT: A erfordert Verfahren (i): These lautet, entscheidend sei der Mensch, n
 
 Klausur-Satz: `These und Argumentationsgang sind zwei getrennte Analyseebenen: Die These nennt das Ziel, der Gang zeigt den Weg dorthin.`
 
-## Schritt 6 — check: Verständnisprüfung
-
+## Schritt 6 — check: Selbsttest zu Argumentationsstruktur im Sachtext
 CHECK (Selbsttest, 3 Fragen mit Antworten):
 
 FRAGE: Woran erkennt man die These eines pragmatischen Textes? | ANTWORT: An einer praegnanten Behauptung, oft nach Konzession (aber, doch) oder als "nicht ..., sondern ..."-Satz am Anfang oder Ende.
@@ -150,13 +149,12 @@ Klausur-Satz: `Jede Analyse-Station verlangt einen Beleg: erst benennen, dann zi
    Korrektur: Ein Beleg verbindet kurzes Zitat, Zeile und Funktion. Muster: Die Konzession in Z. 2 leitet den Gegenbeweis ein. Lange Passagen ohne Funktion zaehlen nicht.
    Korrektur-Satz: `Ein Beleg besteht aus kurzem Zitat, Zeilenangabe und Funktionsbeschreibung, nicht aus einer abgeschriebenen Textpassage.`
 
-## Schritt 7 — szenario: Klausurtransfer & Rubric
-
+## Schritt 7 — szenario: Klausurtransfer: Argumentationsstruktur im Sachtext
 ROLLE: Du bist Mitglied der Schuelervertretung und bewertest auf einer Schulkonferenz einen Kommentar zur geplanten Handyregelung.
 SITUATION: Die Schulleitung will Handys im Unterricht komplett verbieten; ein Kommentar in der Schuelerzeitung argumentiert fuer klare Nutzungsregeln. Beurteile in einer zusammenhaengenden Stellungnahme (ca. 150 Woerter), wie ueberzeugend der Kommentar argumentiert, gestuetzt auf Gang und Argumenttypen.
 RUBRIC (30 XP): Benennung von These und Textsorte (5 XP) | Nachzeichnung des Gangs mit drei Stationen und Zeilen (10 XP) | Bestimmung der Argumenttypen und Wirkung (10 XP) | Kriteriengeleitetes Urteil mit Abwaegung (5 XP).
 
-## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
+## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY (Kernzusammenfassung):
 

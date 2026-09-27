@@ -140,7 +140,7 @@ ROLLE: Du bist Klausur-Trainerin in der Oberstufe und leitest eine 50-Minuten-Ü
 SITUATION: Zwei Mitschüler haben dieselbe Streitfrage bearbeitet — einer als Analyse, einer als Erörterung — und streiten darüber, wer „richtig" gearbeitet hat. Beurteile in einer zusammenhängenden Antwort (ca. 150 Wörter), welches Vorgehen zu welchem Auftrag passt, und erkläre, wie man mit dem EHZ selbst korrigiert.
 RUBRIC (30 XP): Unterscheidung von Analyse- und Erörterungszentrum (5 XP) | Zuordnung des passenden Verfahrens zum jeweiligen Auftrag (10 XP) | Erklärung der EHZ-Selbstkontrolle (10 XP) | Kriteriengeleitetes Urteil zur Gewichtung (5 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY 1盒（核心总结）：
 

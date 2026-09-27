@@ -129,8 +129,7 @@ ANTWORT: A erfordert Verfahren (i): 70 Prozent der Zeit gelten Gang und Sprache 
 
 Klausur-Satz: `Der Operator entscheidet über die Gewichtung: analysieren richtet den Blick auf den Text, erörtern auf das Problem.`
 
-## Schritt 6 — check: Verständnisprüfung
-
+## Schritt 6 — check: Selbsttest zu IQB-Training: Analyse und Eroerterung
 CHECK (Selbsttest, 3 Fragen mit Antworten):
 
 FRAGE: Worin unterscheiden sich die beiden IQB-Uebungsaufgaben im Zentrum? | ANTWORT: Aufgabe 1 hat den Text im Zentrum (Analyse), Aufgabe 2 das Problem (Eroerterung).
@@ -151,13 +150,12 @@ Klausur-Satz: `Ohne Abwägung von Pro und Contra bleibt die Erörterung auf halb
    Korrektur: Eine Meinung ohne Gegenposition bleibt Stellungnahme ohne Abwaegung. Erst Gegenposition, Entkraeftung und Abwaegung ergeben ein begruendetes Urteil.
    Korrektur-Satz: `Erst die Gegenposition und ihre Entkräftung machen aus einer Meinung eine begründete Erörterung.`
 
-## Schritt 7 — szenario: Klausurtransfer & Rubric
-
+## Schritt 7 — szenario: Klausurtransfer: IQB-Training: Analyse und Eroerterung
 ROLLE: Du bist Klausur-Trainerin in der Oberstufe und leitest eine 50-Minuten-Uebungseinheit.
 SITUATION: Zwei Mitschueler haben dieselbe Streitfrage bearbeitet — einer als Analyse, einer als Eroerterung — und streiten, wer "richtig" gearbeitet hat. Beurteile in einer zusammenhaengenden Antwort (ca. 150 Woerter), welches Vorgehen zu welchem Auftrag passt, und erklaere die EHZ-Selbstkorrektur.
 RUBRIC (30 XP): Unterscheidung von Analyse- und Eroerterungszentrum (5 XP) | Zuordnung des passenden Verfahrens zum jeweiligen Auftrag (10 XP) | Erklaerung der EHZ-Selbstkontrolle (10 XP) | Kriteriengeleitetes Urteil zur Gewichtung (5 XP).
 
-## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
+## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY (Kernzusammenfassung):
 

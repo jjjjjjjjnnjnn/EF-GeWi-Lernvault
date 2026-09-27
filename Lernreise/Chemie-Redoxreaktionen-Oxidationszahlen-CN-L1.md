@@ -134,8 +134,7 @@ ANTWORT: A erfordert Verfahren (i): $O_2$ sinkt von $0$ auf $-II$, also Oxidatio
 
 Klausur-Satz: `Das Mittel bewirkt beim Partner das Gegenteil dessen, was es selbst erleidet.`
 
-## Schritt 6 — check: Verständnisprüfung
-
+## Schritt 6 — check: Selbsttest zu Redoxreaktionen und Oxidationszahlen
 CHECK检索默写（自测 3 题，与答案配对）：
 
 FRAGE: Was bedeutet Oxidation in Elektronensprache? | ANTWORT: Elektronenabgabe mit Erhoehung der Oxidationszahl.
@@ -156,14 +155,13 @@ Klausur-Satz: `Ohne Aenderung einer Oxidationszahl liegt keine Redoxreaktion vor
    中文纠偏：正好说反了。氧化剂让别人氧化，自己得电子被还原；还原剂让别人还原，自己失电子被氧化。名字说的是"对别人的作用"，不是"自己的遭遇"。
    Korrektur-Satz: `Das Oxidationsmittel wird reduziert, das Reduktionsmittel wird oxidiert.`
 
-## Schritt 7 — szenario: Klausurtransfer & Rubric
-
+## Schritt 7 — szenario: Klausurtransfer: Redoxreaktionen und Oxidationszahlen
 ROLLE: Du bist Tutor und erklaerst Redox im Chemiekurs.
 SITUATION: Eine Mitschuelerin behauptet, bei $Zn + 2\,HCl \to ZnCl_2 + H_2$ aendere sich keine Oxidationszahl, weil kein Sauerstoff vorkomme.
 AUFGABE: Widerlegen Sie das in ca. 150 Woertern mit Oxidationszahlen von $Zn$ und $H$ und benennen Sie Mittel und Vorgaenge.
 RUBRIC (30 XP): Oxidationszahlen $Zn$ $0 \to +II$, $H$ $+I \to 0$ (10 XP) | Oxidation/Reduktion zugeordnet (10 XP) | Mittel korrekt plus Sauerstoff-Irrtum korrigiert (10 XP).
 
-## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
+## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY 1盒（核心总结）：
 

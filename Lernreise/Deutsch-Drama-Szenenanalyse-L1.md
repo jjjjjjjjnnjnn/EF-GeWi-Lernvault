@@ -150,7 +150,7 @@ ROLLE: Du bist Regieassistentin und sollst dem Ensemble eine Szene aus einem fik
 SITUATION: Das Ensemble versteht nicht, warum die Szene zwischen Herrn Berg und Lena trotz der Geld-Frage von Vertrauen handelt. Erkläre in einer zusammenhängenden Antwort (ca. 150 Wörter) die Beziehungsebene, die Figurenkonstellation und die Szenenfunktion und belege deine Deutung am Text.
 RUBRIC (30 XP): Trennung von Sachebene und Beziehungsebene (5 XP) | Analyse des Subtexts mit Beleg und Zeile (10 XP) | Darstellung der Figurenkonstellation mit Ziel/Mittel (10 XP) | Bestimmung der Szenenfunktion (5 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY 1盒（核心总结）：
 

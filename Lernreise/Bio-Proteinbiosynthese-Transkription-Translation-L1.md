@@ -116,7 +116,7 @@ SITUATION: Ein Mitschueler uebersetzt $3'-AUG$-$5'$ direkt als $Met$ und ignorie
 AUFGABE (vergleichen, AFB III): Korrigieren Sie die Leserichtung in einer zusammenhaengenden Darstellung (ca. 150 Woerter) mit $5' \to 3'$-Regel, $Codon$-$Anticodon$-Paarung und Auswirkung auf das Protein.
 RUBRIC (30 XP): Richtungsregel $5' \to 3'$ korrekt (10 XP) | Beispiel $AUG$ gegen $GUA$ ($Val$) (10 XP) | $Ribosom$-$tRNA$-Mechanismus genannt (5 XP) | Geschlossene Darstellung (5 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY: Merke Schreiben, Reifen, Uebersetzen: $DNA \to pre$-$mRNA \to mRNA \to Protein$. Anker $AUG$ startet, $UAA$/$UAG$/$UGA$ stoppen, $4^3 = 64$ codieren $20$.
 

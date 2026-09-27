@@ -146,7 +146,7 @@ SITUATION: An deiner Schule wird über die Abschlussfeier diskutiert. Ältere Le
 
 RUBRIC (30 XP): Benennung des Wertewandels anhand der Statistik (5 XP) | Fachliche Deutung mit mindestens zwei Identitätsmodellen (10 XP) | Analyse der ambivalenten Folgen für die Identitätsentwicklung (10 XP) | Kriteriengeleitetes Urteil (z. B. Kriterium Autonomie) (5 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY 1盒（核心总结）：
 

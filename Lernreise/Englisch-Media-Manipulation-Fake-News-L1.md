@@ -117,7 +117,7 @@ SITUATION: A post claims $School = close_Tomorrow$ with $screenshot - link$.
 AUFGABE (evaluate, AFB III): Verify the claim in a coherent report (ca. 150 words) with SIFT log, bias note and share advice.
 RUBRIC (30 XP): SIFT steps with $trace$ (10 XP) | Source triad tested (10 XP) | Bias plus advice (5 XP) | Coherent language (5 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY: Remember $stop + source = safety$. Read $laterally$, compare $doubly$, share $rarely$. Anchor: $Claim - proof = pause$.
 

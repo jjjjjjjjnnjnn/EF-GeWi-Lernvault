@@ -136,7 +136,7 @@ SITUATION: Die kumulierten Meldungen folgen k(t) = -0.05t^3 + 2.4t^2 + 100 (t in
 AUFGABE (interpretieren, AFB III)：Bestimme den Wendepunkt, erklaere seine Bedeutung als Peak des Zuwachses und beurteile Grenzen des Modells.
 RUBRIC (30 XP): Ableitungen plus x_W korrekt (5 XP) | Nachweis per VZW oder f''' plus y-Wert (10 XP) | Wendetangente korrekt (10 XP) | Deutung als Peak plus Modellkritik (5 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY 1盒（核心总结）：
 

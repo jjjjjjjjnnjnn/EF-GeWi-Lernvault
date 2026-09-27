@@ -117,7 +117,7 @@ SITUATION: Die Mensa will aus Preisgruenden nur noch Billigfleisch anbieten.
 AUFGABE (erortern, AFB III): Eroertern Sie den Plan in einer zusammenhaengenden Darstellung (ca. 150 Woerter) mit Singer und Jonas, Gegenposition und eigenem Urteil.
 RUBRIC (30 XP): Singer mit $Leid$-$Bilanz$ korrekt (10 XP) | Jonas mit $Zukunft$ korrekt (10 XP) | Gegenargument plus Urteil (5 XP) | Geschlossene Darstellung (5 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY: Merke $Leid + Macht = Pflicht$. Singer fragt $Wieviel Leid fuer wieviel Lust$, Jonas fragt $Wieviel Zukunft fuer wieviel Bequemlichkeit$.
 

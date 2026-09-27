@@ -120,7 +120,7 @@ ROLLE: Du bist Pruefling in der muendlichen Pruefung.
 SITUATION: Stelle in circa 2 Minuten einen korrigierten Zwei-Wochen-Plan mit allen fuenf Normativen vor und begruende jede Zahl mit Reizstufe und Progression.
 RUBRIC (30 XP): Fuenf Normative genannt (10 XP) | Reizstufe begruendet (8 XP) | Progression beachtet (6 XP) | Fachsprachlicher Vortrag (6 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY:
 

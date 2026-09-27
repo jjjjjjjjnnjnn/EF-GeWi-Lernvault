@@ -144,7 +144,7 @@ ROLLE: Du bist Austauschschuelerin in England und wirst von deiner deutschen Sch
 SITUATION: Die britische Partnerschule plant ein "German Culture Week" und moechte wissen, wie das deutsche Schulsystem funktioniert. Du erhaeltst einen deutschen Infotext (Erfindung fuer diese Aufgabe) und sollst daraus einen formal e-mail an den Koordinator, Mr Clarke, schreiben (ca. 150 Woerter), der drei Aspekte auswaehlt: Schulstufen, Notensystem und ein typisches Schulfach.
 RUBRIC (30 XP): Klare Situierung — Adressat, Ziel und Format korrekt benannt (5 XP) | Vollstaendige Selektion der drei geforderten Aspekte aus dem Quelltext (10 XP) | Korrekte Formatelemente — Betreff, Anrede, Schlussformel, kein Slang (10 XP) | Durchgehend formelles Register mit passenden Connectors (5 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY 1盒（核心总结）：
 

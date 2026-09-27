@@ -124,8 +124,7 @@ ANTWORT: A erfordert Verfahren (i): Die Gestalt bleibt erhalten und wird ledigli
 
 Klausur-Satz: `Wird das Motiv nur auf eine andere Tonhoehe versetzt, handelt es sich um eine Sequenz; wird seine Richtung oder Reihenfolge veraendert, um eine Umkehrung beziehungsweise einen Krebs.`
 
-## Schritt 6 — check: Verständnisprüfung
-
+## Schritt 6 — check: Selbsttest zu Motivische Verarbeitung: Sequenz, Umkehrung, Krebs, Abspaltung
 CHECK (3 Fragen zur Selbstkontrolle mit Antworten):
 
 FRAGE: Was ist ein Motiv, und warum wird es verarbeitet? | ANTWORT: Ein Motiv ist die kleinste sinntragende Gestalt aus wenigen Toenen und einem charakteristischen Rhythmus; es ist allein unvollstaendig und muss daher weitergefuehrt werden.
@@ -145,13 +144,12 @@ Klausur-Satz: `Die Abspaltung fuehrt nur ein Fragment des Motivs weiter und stei
    Korrektur: Wiedererkennbarkeit bedeutet nur, dass der Rhythmus erhalten ist. Tonhoehe (Sequenz), Dauer (Dehnung oder Stauchung) oder Material (Abspaltung) koennen dennoch veraendert sein. Daher Kontur, Zeit und Material getrennt pruefen.
    Korrektur-Satz: `Ein wiedererkennbares Motiv kann zugleich sequenziert, gedehnt oder abgespalten sein; die Wiedererkennbarkeit sagt nichts ueber die Art der Verarbeitung.`
 
-## Schritt 7 — szenario: Klausurtransfer & Rubric
-
+## Schritt 7 — szenario: Klausurtransfer: Motivische Verarbeitung: Sequenz, Umkehrung, Krebs, Abspaltung
 ROLLE: Du bist Pruefling in einer muendlichen Musikpruefung (EF) und sollst motivische Verarbeitung an einem Hoerbeispiel nachweisen.
 SITUATION: Die Prueferin spielt einen Ausschnitt, in dem ein kurzes Motiv mehrfach in veraenderter Gestalt erscheint. Sie fragt: Nennen Sie das Motiv und beschreiben Sie, wie es verarbeitet wird. Formuliere eine zusammenhaengende muendliche Stellungnahme (ca. 90 Sekunden), in der du das Motiv benennst, mindestens zwei Verarbeitungstechniken mit Fachbegriffen belegst und mit einem begruendeten Urteil zur Wirkung schliesst.
 RUBRIC (30 XP): Benennung des Motivs mit Rhythmus und Intervallverlauf (8 XP) | Nachweis von zwei Verarbeitungstechniken mit korrekten Fachbegriffen (9 XP) | Beschreibung der Hoerwirkung mit dem Baustein Ich hoere, das wirkt, weil (8 XP) | Begruendetes Urteil zur Funktion der Verarbeitung im Abschnitt (5 XP).
 
-## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
+## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY (Kernzusammenfassung):
 

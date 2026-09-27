@@ -132,7 +132,7 @@ ROLLE: Du bist Prüfling in einer mündlichen Musikprüfung (EF) und sollst moti
 SITUATION: Die Prüferin spielt einen Ausschnitt, in dem ein kurzes Motiv mehrfach in veränderter Gestalt erscheint. Sie fragt: "Nennen Sie das Motiv und beschreiben Sie, wie es verarbeitet wird." Formuliere eine zusammenhängende mündliche Stellungnahme (ca. 90 Sekunden), in der du das Motiv benennst, mindestens zwei Verarbeitungstechniken mit Fachbegriffen belegst und mit einem begründeten Urteil zur Wirkung schließt.
 RUBRIC (30 XP): Benennung des Motivs mit Rhythmus und Intervallverlauf (8 XP) | Nachweis von zwei Verarbeitungstechniken mit korrekten Fachbegriffen (9 XP) | Beschreibung der Hörwirkung mit dem Baustein "Ich höre ... das wirkt ..., weil ..." (8 XP) | Begründetes Urteil zur Funktion der Verarbeitung im Abschnitt (5 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY 1盒（核心总结）：
 

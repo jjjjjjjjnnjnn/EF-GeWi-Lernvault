@@ -128,8 +128,7 @@ ANTWORT: A requires lens (i): anecdote inspires but proves nothing about chances
 
 Klausur-Satz: `Anecdotes illustrate the Dream, only data can test it.`
 
-## Schritt 6 — check: Verständnisprüfung
-
+## Schritt 6 — check: Selbsttest zu American Dream myth and reality
 CHECK检索默写（自测 3 题，与答案配对）：
 
 FRAGE: Who coined American Dream and when? | ANTWORT: James Truslow Adams, 1931, during the Great Depression.
@@ -150,14 +149,13 @@ Klausur-Satz: `Without access, effort alone cannot cash the Dream's promise.`
    中文纠偏：个例只能证伪"绝无可能"，不能证明"人人可能"。概率问题必须用群体数据，拿例外当规律是幸存者偏差。
    Korrektur-Satz: `Exceptions disprove impossibility, only cohorts prove opportunity.`
 
-## Schritt 7 — szenario: Klausurtransfer & Rubric
-
+## Schritt 7 — szenario: Klausurtransfer: American Dream myth and reality
 ROLLE: You write a comment for the school magazine on "Is the Dream dead?"
 SITUATION: Readers quote billionaire dropouts; teachers quote mobility studies.
 AUFGABE: Take a nuanced stand in ca. 150 words with one Gatsby reference and one data argument plus a reform idea.
 RUBRIC (30 XP): Promise defined (5 XP) | Gatsby text evidence (10 XP) | Data barrier plus reform verdict (15 XP).
 
-## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
+## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY 1盒（核心总结）：
 

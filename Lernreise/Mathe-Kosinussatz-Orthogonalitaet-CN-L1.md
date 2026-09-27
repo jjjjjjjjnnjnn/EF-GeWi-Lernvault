@@ -133,8 +133,7 @@ ANTWORT: A erfordert Verfahren (i): $a^2 = b^2 + c^2 - 2bc\cos\alpha$. B erforde
 
 Klausur-Satz: `Der Kosinussatz nutzt Seitenquadrate, der Sinussatz nutzt Verhaeltnisse von Seite zu Gegenwinkel.`
 
-## Schritt 6 — check: Verständnisprüfung
-
+## Schritt 6 — check: Selbsttest zu Kosinussatz und Orthogonalitaet
 CHECK检索默写（自测 3 题，与答案配对）：
 
 FRAGE: Wie lautet der Kosinussatz fuer die Seite $a$? | ANTWORT: $a^2 = b^2 + c^2 - 2bc\cos\alpha$.
@@ -155,14 +154,13 @@ Klausur-Satz: `Der Kosinussatz liefert Seiten und Winkel in beide Richtungen, vo
    中文纠偏：余弦为负恰恰说明角是钝角，这是正常结果。$90^\circ$ 到 $180^\circ$ 之间余弦恒为负，删掉它等于删掉钝角三角形。
    Korrektur-Satz: `Ein negativer Kosinuswert zeigt einen stumpfen Winkel an und ist kein Rechenfehler.`
 
-## Schritt 7 — szenario: Klausurtransfer & Rubric
-
+## Schritt 7 — szenario: Klausurtransfer: Kosinussatz und Orthogonalitaet
 ROLLE: Du bist Tutor in der EF und erklaerst einer Lerngruppe die Dreiecksberechnung.
 SITUATION: Ein Dreieck hat die Seiten $3$, $4$, $6$. Die Gruppe streitet, ob es rechtwinklig ist.
 AUFGABE: Entscheide in ca. 150 Woertern mit Kosinussatz-Rechnung, welcher Winkeltyp vorliegt, und benenne den groessten Winkel.
 RUBRIC (30 XP): Korrekter Seitenvergleich $36$ gegen $25$ (10 XP) | Winkeltyp stumpf begruendet (10 XP) | Groesster Winkel gegenueber laengster Seite plus Fachbegriffe (10 XP).
 
-## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
+## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY 1盒（核心总结）：
 

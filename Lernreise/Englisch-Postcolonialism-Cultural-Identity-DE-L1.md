@@ -129,8 +129,7 @@ ANSWER: A requires procedure (i): Polished school English signals public belongi
 
 Klausur-Satz: `Although hybridity demands daily negotiation, it ultimately offers a broader repertoire of belonging.`
 
-## Schritt 6 — check: Verständnisprüfung
-
+## Schritt 6 — check: Selbsttest zu Postcolonialism and Cultural Identity
 CHECK (three questions with answers):
 
 FRAGE: Define diaspora, othering and hybrid identity in one line each. | ANTWORT: Diaspora — a community living outside its origin with ties back home; othering — defining a group as inferior "them" to secure power; hybrid identity — a blended "both/and" self between cultures.
@@ -151,14 +150,13 @@ Klausur-Satz: `Colonial legacy survives in language and institutions, but diaspo
    Correction: Independence is a political event; legacy is a long structure: official language, schoolbooks and borders persist. Postcolonial analysis asks what remains after independence.
    Korrektur-Satz: `Political independence does not end colonial legacy in language, education and borders.`
 
-## Schritt 7 — szenario: Klausurtransfer & Rubric
-
+## Schritt 7 — szenario: Klausurtransfer: Postcolonialism and Cultural Identity
 ROLE: You are a guest writer for the school magazine culture page.
 SITUATION: After a reading project on a postcolonial short story, readers ask what "third culture" means in daily life. Explain it with one invented everyday scene (ca. 100 words) and close with a 60-word discuss-style judgement: burden or resource?
 TASK: Write the scene with at least one diaspora marker and one othering moment, then give a balanced judgement.
 RUBRIC (30 XP): Correct use of diaspora, othering and hybrid vocabulary (10 XP) | At least two Nigeria facts integrated naturally (10 XP) | Balanced discuss structure with closing judgement (10 XP).
 
-## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
+## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY (core summary):
 

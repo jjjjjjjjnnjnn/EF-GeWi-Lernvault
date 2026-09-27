@@ -139,7 +139,7 @@ ROLLE: Du bist Teilnehmer/in eines Klausur-Simulationsdurchgangs und bearbeitest
 SITUATION: Die Klausur umfasst drei Aufgaben. Aufgabe 1 (darstellen, AFB I, 24 BE) und Aufgabe 2 (analysieren, AFB II, 46 BE) sind bearbeitet; es bleiben 30 Minuten fuer Aufgabe 3. Gegeben ist ein Materialpaket zu einem fiktiven Vorschlag, die Mehrwertsteuer auf Lebensmittel zu senken. Entscheiden Sie zunaechst, welches Format die Aufgabe verlangt, und entwickeln Sie anschliessend die Gestaltung in 30 Minuten; notieren Sie am Rand Ihre Minutenaufteilung.
 RUBRIC (30 XP): Erkennen und Begruenden des Formats anhand des Rollenwortes (5 XP) | Vollstaendigkeit der vier bzw. fuenf Bausteine (10 XP) | Zwei konkrete Massnahmen mit je einer Wirkungskette und Nebenfolge (10 XP) | Adressatenkompetenz und widerspruchsfreier Schluss (5 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY 1盒（核心总结）：
 

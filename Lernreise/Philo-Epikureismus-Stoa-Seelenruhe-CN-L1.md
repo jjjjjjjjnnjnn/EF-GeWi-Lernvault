@@ -128,8 +128,7 @@ ANTWORT: A erfordert Konzept (i): Wuensche als eitel entlarven, natuerliche Freu
 
 Klausur-Satz: `Falsche Wuensche verlangen Epikur, falsche Urteile verlangen die Stoa.`
 
-## Schritt 6 — check: Verständnisprüfung
-
+## Schritt 6 — check: Selbsttest zu Epikureismus Stoa und Seelenruhe
 CHECK检索默写（自测 3 题，与答案配对）：
 
 FRAGE: Was ist das gemeinsame Ziel beider Schulen? | ANTWORT: Seelenruhe (Ataraxie/Apatheia), Freiheit von stoerender Unruhe.
@@ -150,14 +149,13 @@ Klausur-Satz: `Ohne Unterscheidung von Wunscharten und Kontrollzonen bleibt jede
    中文纠偏：斯多亚要求在可控区全力尽责（学习、助人、尽义务），只在不可控区放下执念。创始人芝诺和罗马皇帝奥勒留都是行动派，不是躺平派。
    Korrektur-Satz: `Stoische Gelassenheit gilt dem Unverfuegbaren, nicht dem eigenen Handeln.`
 
-## Schritt 7 — szenario: Klausurtransfer & Rubric
-
+## Schritt 7 — szenario: Klausurtransfer: Epikureismus Stoa und Seelenruhe
 ROLLE: Du bist Redakteurin der Schulzeitung und schreibst einen Ratgeber.
 SITUATION: Viele Leser klagen ueber Pruefungsangst und Konsumdruck zugleich.
 AUFGABE: Geben Sie in ca. 150 Woertern je einen epikureischen und stoischen Rat und urteilen Sie, welcher Ansatz wo staerker ist.
 RUBRIC (30 XP): Epikur-Rat mit Begierdenklassifikation (10 XP) | Stoa-Rat mit Kontroll-Dichotomie (10 XP) | Vergleich plus eigenes Urteil mit Begruendung (10 XP).
 
-## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
+## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY 1盒（核心总结）：
 

@@ -130,8 +130,7 @@ ANTWORT: A erfordert Verfahren (i): Spaeterer Renteneintritt senkt Empfaengerzah
 
 Klausur-Satz: `Parametrisch bleibt die Last im Umlage-Dreieck, systemisch wandert sie an den Kapitalmarkt.`
 
-## Schritt 6 — check: Verständnisprüfung
-
+## Schritt 6 — check: Selbsttest zu Sozialstaat und Rentenkrise im demografischen Wandel
 CHECK检索默写（自测 3 题，与答案配对）：
 
 FRAGE: Was heisst Umlageverfahren? | ANTWORT: Laufende Beitraege finanzieren laufende Renten; es wird kaum Kapitalstock gebildet.
@@ -152,13 +151,12 @@ Klausur-Satz: `Beitrag, Niveau und Alter bilden das Reformdreieck der gesetzlich
    中文纠偏：缴费推高用工成本、压低净工资，代价转给企业与年轻雇员；任何旋钮都有输家，必须做代际公平评价。
    Korrektur-Satz: `Jede Stellschraube belastet eine andere Gruppe.`
 
-## Schritt 7 — szenario: Klausurtransfer & Rubric
-
+## Schritt 7 — szenario: Klausurtransfer: Sozialstaat und Rentenkrise im demografischen Wandel
 ROLLE: Du bist Jugenddelegierter in einer Rentenkommission.
 SITUATION: Die Kommission diskutiert Beitragserhoehung gegen Rentenniveausenkung. Nimm in einer zusammenhaengenden Stellungnahme (ca. 150 Woerter) aus Sicht der jungen Generation dazu Stellung und schlage einen fairen Mix vor.
 RUBRIC (30 XP): Umlage-Mechanik und Demografiedruck (8 XP) | Abwaegung beider Optionen mit Verlierern (10 XP) | Begruendeter Mix mit Gerechtigkeitsmassstab (8 XP) | Adressatengerechte Stellungnahme (4 XP).
 
-## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
+## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY 1盒（核心总结）：
 

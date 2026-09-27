@@ -126,8 +126,7 @@ ANSWER: A requires procedure (i): I restate in my own words and in the present t
 
 Klausur-Satz: `Outline reproduces the author's view neutrally, while discuss demands my own two-sided judgement supported by knowledge of the Themenfeld.`
 
-## Schritt 6 — check: Verständnisprüfung
-
+## Schritt 6 — check: Selbsttest zu Abitur-Themenfelder: UK, USA, Nigeria, Identitaet, Medien
 CHECK (three questions with answers):
 
 FRAGE: Which five Themenfelder matter, and which two axes connect them? | ANTWORT: UK, USA, Nigeria, identity, media and literature; the axes are conformity vs individualism and participation vs manipulation.
@@ -148,13 +147,12 @@ Klausur-Satz: `Prepared as core question, five terms and one comment sentence, e
    Correction: A summary covers the gist of the whole text; an outline covers only the aspects named in the task. Mark the required scope first (for example "how the colonial past shapes ..."), otherwise the answer drifts.
    Korrektur-Satz: `An outline covers only the aspects named in the task, whereas a summary reproduces the whole text's gist.`
 
-## Schritt 7 — szenario: Klausurtransfer & Rubric
-
+## Schritt 7 — szenario: Klausurtransfer: Abitur-Themenfelder: UK, USA, Nigeria, Identitaet, Medien
 ROLE: You are a panellist in an advanced English course debate on "Identity in a globalised world".
 SITUATION: A text claims that young people in Britain, the USA and Nigeria share the same identity crisis because social media spreads the same ideals everywhere. Evaluate this thesis in a coherent statement (ca. 150 words) with reference to at least two Themenfelder, one counterargument and a final judgement.
 RUBRIC (30 XP): Correct use of two fields as argument material (5 XP) | Clear reasoned position (5 XP) | Two arguments with examples (10 XP) | One fairly treated counterargument (5 XP) | Final judgement weighing similarities and differences (5 XP).
 
-## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
+## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY (core summary):
 

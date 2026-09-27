@@ -117,7 +117,7 @@ SITUATION: Ein Mitschueler schreibt $Fe + O_2 \to Fe_2O_3$ ohne Koeffizienten un
 AUFGABE (begruenden, AFB III): Korrigieren Sie Gleichung und Begriffe in einer zusammenhaengenden Darstellung (ca. 150 Woerter) mit OZ-Bestimmung und Teilgleichungen.
 RUBRIC (30 XP): OZ $Fe: 0 \to +III$ und $O: 0 \to -II$ (10 XP) | Bilanz $4Fe + 3O_2 \to 2Fe_2O_3$ (10 XP) | Korrekte Mittelzuordnung (5 XP) | Geschlossene Darstellung (5 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY: Merke Zahl, Richtung, Bilanz: OZ bestimmen, $e^-$-Richtung deuten, Teilgleichungen angleichen. Anker: $Red \to Ox + e^-$ und $Ox + e^- \to Red$.
 

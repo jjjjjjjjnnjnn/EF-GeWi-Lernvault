@@ -139,7 +139,7 @@ ROLLE: Du bist Tutor in einem bilingualen Mathe-Kurs und sollst eine Strategieka
 SITUATION: Ein Mitschueler will in der Klausur nur mit chinesischen Schnellverfahren arbeiten und keine Standardwege schreiben. Beurteile seine Strategie in einer zusammenhaengenden Darstellung (ca. 150 Woerter) und erlaeutere an zwei Beispielen (Spezialwert und AM-GM), wann ein Schnellverfahren erlaubt ist und wann der Standardweg zwingend ist.
 RUBRIC (30 XP): Benennung des Grundproblems — Heuristik ersetzt keinen Beweis (5 XP) | Beispiel Spezialwert: Vermutung versus Beweis (10 XP) | Beispiel AM-GM: Positivitaet plus Gleichheitsbedingung (10 XP) | Kriteriengeleitetes Fazit zur Arbeitsteilung von Schmierpapier und Reinschrift (5 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY 1盒（核心总结）：
 

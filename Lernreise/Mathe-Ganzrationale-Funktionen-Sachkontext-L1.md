@@ -135,7 +135,7 @@ SITUATION: E(x) = 15x, K(x) = 0.4x^3 - 5x^2 + 28x + 15, D = [0; 15] ME, Werte in
 AUFGABE (eroertern, AFB III)：Eroertere auf Basis von Break-even, Hochpunkt und Grenze von D, welche Mengenintervalle zu empfehlen sind.
 RUBRIC (30 XP): G(x) plus D mit Einheiten korrekt (5 XP) | Break-even korrekt berechnet (10 XP) | Hochpunkt plus Wende korrekt (10 XP) | Eroerterung mit Empfehlung fuer Intervalle (5 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY 1盒（核心总结）：
 

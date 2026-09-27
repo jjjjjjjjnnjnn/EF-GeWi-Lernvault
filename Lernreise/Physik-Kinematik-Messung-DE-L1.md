@@ -120,7 +120,7 @@ ANTWORT: A erfordert Verfahren (i): $v = \Delta s / \Delta t = (6{,}0 - 0)/(4{,}
 
 Klausur-Satz: `Bei einer s-t-Geraden wird die Geschwindigkeit als Steigung gelesen, bei einer v-t-Geraden dagegen der Weg als Flaeche unter der Linie berechnet.`
 
-## Schritt 6 — check: Verständnisprüfung
+## Schritt 6 — check: Selbsttest zu Kinematik: Messung und Diagramme
 CHECK (Selbsttest, 3 Fragen mit Antworten):
 
 FRAGE: Woran erkennt man im $s$-$t$-Diagramm eine gleichmaessig beschleunigte Bewegung? | ANTWORT: Die Punkte liegen auf einer Parabel, weil der Weg mit dem Quadrat der Zeit waechst.
@@ -139,12 +139,12 @@ Klausur-Satz: `Die Steigung im s-t-Diagramm und die Flaeche im v-t-Diagramm sind
    Korrektur: Die Hoehe ist $v$ in $\mathrm{m/s}$, erst die Flaeche liefert $s$ in $\mathrm{m}$.
    Korrektur-Satz: `Im v-t-Diagramm gibt die Hoehe der Linie die Geschwindigkeit an, waehrend erst die Flaeche unter der Linie den Weg liefert.`
 
-## Schritt 7 — szenario: Klausurtransfer & Rubric
+## Schritt 7 — szenario: Klausurtransfer: Kinematik: Messung und Diagramme
 ROLLE: Du bist Tutorin fuer Physik in der EF und leitest eine Kleingruppe bei der Auswertung eines Fahrbahnexperiments.
 SITUATION: Eine Mitschuelerin hat eine Messreihe ($t$ in $\mathrm{s}$, $s$ in $\mathrm{m}$) aufgenommen; die Punkte streuen leicht um eine Kurve. Erklaere in einer zusammenhaengenden Antwort (ca. 150 Woerter), wie sie zwischen gleichfoermiger und gleichmaessig beschleunigter Bewegung entscheidet und daraus $a$ und $v$ bestimmt. Nutze $s$-$t$- und $v$-$t$-Diagramm.
 RUBRIC (30 XP): Pruefkriterium Gerade gegen Parabel (5 XP) | Test mit $s = 0{,}5 \cdot a \cdot t^2$ und konstantem Wert (10 XP) | Bestimmung von $v$ als Tangentensteigung oder $v = a \cdot t$ (10 XP) | Sauberes Ergebnis mit Einheit und Gegenprobe ueber die $v$-$t$-Flaeche (5 XP).
 
-## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
+## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
 TAKEAWAY (Kernzusammenfassung):
 
 Steigung im $s$-$t$-Diagramm liefert $v$, Flaeche im $v$-$t$-Diagramm liefert $s$, Steigung im $v$-$t$ liefert $a$. Die Punktform entscheidet: Gerade bedeutet gleichfoermig, Parabel bedeutet beschleunigt. Das Viererschritt-Verfahren lautet: Daten notieren, Ansatz schreiben, mit Einheiten rechnen, mit dem zweiten Diagramm gegenpruefen.

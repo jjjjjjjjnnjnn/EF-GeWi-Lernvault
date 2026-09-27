@@ -125,8 +125,7 @@ ANSWER: A requires procedure (i): In both novels technology serves power, but di
 
 Klausur-Satz: `Terror warns its victims, pleasure recruits them; the unnoticed danger is harder to resist.`
 
-## Schritt 6 — check: Verständnisprüfung
-
+## Schritt 6 — check: Selbsttest zu Dystopian Fiction 1984 Brave New World
 CHECK (three questions with answers):
 
 FRAGE: State the core contrast between 1984 and Brave New World in one sentence. | ANTWORT: 1984 controls through surveillance and fear from the outside; Brave New World controls through entertainment and desire from the inside.
@@ -147,14 +146,13 @@ Klausur-Satz: `Both regimes abolish freedom, but only one lets citizens notice t
    Correction: Assessment requires weighing. Attacking one side stays on AFB II; conceding that the other side is also terrifying but nearer to the present reaches AFB III. A concession sentence is obligatory.
    Korrektur-Satz: `An assessment requires weighing both dangers before judging which is more relevant today.`
 
-## Schritt 7 — szenario: Klausurtransfer & Rubric
-
+## Schritt 7 — szenario: Klausurtransfer: Dystopian Fiction 1984 Brave New World
 ROLE: You are a reviewer for the school book club blog.
 SITUATION: Two members argue endlessly: one fears cameras everywhere, the other fears endless entertainment. Write a 150-word review that compares both novels in a mini-matrix (power, language, freedom) and assesses which warning matters more for students in 2026.
 TASK: Mini-matrix plus reasoned verdict with one present-day example.
 RUBRIC (30 XP): Correct matrix with contrasting instruments (10 XP) | Balanced assessment with concession sentence (10 XP) | Present-day link and closing judgement in academic English (10 XP).
 
-## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
+## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY (core summary):
 

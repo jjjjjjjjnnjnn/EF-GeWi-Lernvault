@@ -122,7 +122,7 @@ SITUATION: Ein Kunde will einen TV-Satelliten, der immer ueber derselben Stadt s
 AUFGABE (begruenden, AFB III): Lege in einer zusammenhaengenden Darstellung (ca. 150 Woerter) dar, warum dieser Plan scheitert, berechne Umlaufzeit-Groessenordnung und nenne die korrekte Bahnhoehe mit Begruendung.
 RUBRIC (30 XP): Kraeftegleichgewicht genannt (10 XP) | $T$-Abschaetzung mit $T^2 \sim r^3$ (10 XP) | Geostationaere Bedingung $T = 24\,\mathrm{h}$ (5 XP) | Geschlossene Darstellung (5 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY: Merke die Kette Gleichgewicht, Kuerzen, Wurzel: $\frac{mv^2}{r} = G\frac{mM}{r^2}$ fuehrt zu $v = \sqrt{GM/r}$ und $T^2 = \frac{4\pi^2}{GM}r^3$. Niedrig heisst schnell, hoch heisst langsam.
 

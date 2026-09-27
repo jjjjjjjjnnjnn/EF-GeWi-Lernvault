@@ -124,8 +124,7 @@ ANTWORT: A erfordert Verfahren (i): Es genuegt, drei Parameter sachlich zu benen
 
 Klausur-Satz: `Beschreiben nennt nur hoerbare Parameter, Deuten verknuepft diese Parameter mit einem Fachbegriff zu einer begruendeten Wirkung.`
 
-## Schritt 6 — check: Verständnisprüfung
-
+## Schritt 6 — check: Selbsttest zu Höranalyse Bausteine
 CHECK (3 Fragen zur Selbstkontrolle mit Antworten):
 
 FRAGE: In welcher Reihenfolge verlaufen die drei Schritte der Hoeranalyse? | ANTWORT: Beschreiben (Parameter), Deuten (Wirkung mit Fachbegriff), Beurteilen (begruendetes Urteil).
@@ -145,13 +144,12 @@ Klausur-Satz: `Das Urteil steht am Ende, weil es sich auf die zuvor beschriebene
    Korrektur: Die Reihenfolge ist umgekehrt. Der Begriff muss vom Gehoerten ausgeloest werden; zuerst die Struktur hoeren, dann den passenden Begriff waehlen. Sonst hoert man Dinge, die gar nicht vorhanden sind.
    Korrektur-Satz: `Nicht das Etikett fuehrt zur Wahrnehmung, sondern die beschriebene Struktur fuehrt zum passenden Fachbegriff.`
 
-## Schritt 7 — szenario: Klausurtransfer & Rubric
-
+## Schritt 7 — szenario: Klausurtransfer: Höranalyse Bausteine
 ROLLE: Du bist Pruefling in einer muendlichen Musikpruefung (EF) und sollst einen kurzen Hoerbeispiel-Ausschnitt beschreiben, deuten und beurteilen.
 SITUATION: Die Prueferin spielt einen etwa 30-sekuendigen Ausschnitt und fragt: Beschreiben Sie den Ausschnitt, erklaeren Sie seine Wirkung und beurteilen Sie ihn. Formuliere eine zusammenhaengende muendliche Stellungnahme (ca. 90 Sekunden), in der du mindestens zwei Parameter nennst, die Wirkung mit Fachbegriffen erklaerst und mit einem begruendeten Urteil schliesst. Beschreibe zuerst und urteile erst danach.
 RUBRIC (30 XP): Nennung von mindestens zwei Parametern mit korrekten Fachbegriffen (8 XP) | Klar erkennbare Struktur Beschreiben, Deuten, Beurteilen (7 XP) | Begruendung der Wirkung mit dem Baustein Ich hoere, das wirkt, weil (10 XP) | Begruendetes, nicht blosses gefuehlsmaessiges Urteil am Schluss (5 XP).
 
-## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
+## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY (Kernzusammenfassung):
 

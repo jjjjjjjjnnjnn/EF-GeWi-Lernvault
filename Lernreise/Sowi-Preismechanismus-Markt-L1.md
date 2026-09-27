@@ -134,7 +134,7 @@ ROLLE: Du bist Referent in einer Verbraucherzentrale und sollst auf einer Podium
 SITUATION: Die Stadt will per Satzung die Miete auf höchstens 8 Euro pro Quadratmeter festsetzen; der aktuelle Marktmietpreis liegt bei 11 Euro. Ein Teil des Publikums erwartet dadurch billigeren Wohnraum, ein anderer Teil warnt vor Wohnungsmangel. Beurteile die Maßnahme in einer zusammenhängenden Stellungnahme (ca. 150 Wörter) unter Rückgriff auf Preismechanismus und Marktformen.
 RUBRIC (30 XP): Benennung der Maßnahme als Höchstpreis unterhalb des Gleichgewichts (5 XP) | Analyse der Mengenwirkung — Nachfrage steigt, Angebot sinkt, Nachfrageüberhang (10 XP) | Darlegung der Folgeeffekte — Fehlallokation, Schattenmarkt, sinkende Investitionen in Neubauten (10 XP) | Kriteriengeleitetes Urteil mit Abwägung von Effizienz und sozialer Zielsetzung (5 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY 1盒（核心总结）：
 

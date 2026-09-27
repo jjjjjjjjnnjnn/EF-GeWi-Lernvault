@@ -130,7 +130,7 @@ SITUATION: Sie hat C-F-G-C korrekt als I-IV-V-I bestimmt, doch ihr vierstimmiger
 AUFGABE: Schreibe eine zusammenhaengende Korrektur (ca. 150 Woerter), in der du Stufe und Funktion bestaetigst, die zwei Stimmfuehrungsfehler benennst und je eine konkrete Umlagerung mit Beibehaltung des gemeinsamen Tons vorschlaegst.
 RUBRIC (30 XP): Stufen plus Funktionen korrekt (10 XP) | Beide Fehler mit Stimmenangabe benannt (10 XP) | Zwei praktikable Korrekturen mit Gegenbewegung (10 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY 1盒（核心总结）：
 

@@ -119,7 +119,7 @@ ROLLE: Du bist Tutorin im Philosophiekurs.
 SITUATION: Eine Mitschuelerin behauptet, Lockes Widerstandsrecht rechtfertige jede Regelverletzung. Widerlege dies in circa 150 Woertern mit Lockes Treuhandmodell und kontrastiere es mit Hobbes und Rousseau.
 RUBRIC (30 XP): Locke korrekt (10 XP) | Kontrast zu Hobbes und Rousseau (10 XP) | Widerlegung mit Kriterium (6 XP) | Fachsprachliche Darstellung (4 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY:
 

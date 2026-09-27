@@ -125,8 +125,7 @@ ANTWORT: A erfordert Verfahren (i): Da die Temperatur noch unterhalb des Optimum
 
 Klausur-Satz: `Dieselbe Temperaturerhoehung beschleunigt die Reaktion unterhalb des Optimums nach der RGT-Regel, zerstoert das Enzym jedoch oberhalb des Optimums durch Denaturierung.`
 
-## Schritt 6 — check: Verständnisprüfung
-
+## Schritt 6 — check: Selbsttest zu Enzymaktivitaet und Einflussfaktoren
 CHECK (drei Fragen mit Antworten):
 
 FRAGE: Warum veraendert ein Enzym die Lage des chemischen Gleichgewichts einer Reaktion nicht? | ANTWORT: Weil es nur die Aktivierungsenergie senkt und damit die Reaktionsgeschwindigkeit erhoeht, nicht aber die Energie der Edukte und Produkte; das Gleichgewicht bleibt unverschoben.
@@ -146,14 +145,13 @@ Klausur-Satz: `Waehrend die kompetitive Hemmung reversibel ist, beruht die Denat
    Korrektur: Die RGT-Regel gilt nur unterhalb des Temperaturoptimums; darueber ueberwiegt die Denaturierung, sodass die Reaktionsgeschwindigkeit wieder sinkt.
    Korrektur-Satz: `Die RGT-Regel gilt nur unterhalb des Temperaturoptimums; darueber ueberwiegt die Denaturierung, sodass die Reaktionsgeschwindigkeit wieder sinkt.`
 
-## Schritt 7 — szenario: Klausurtransfer & Rubric
-
+## Schritt 7 — szenario: Klausurtransfer: Enzymaktivitaet und Einflussfaktoren
 ROLLE: Du bist Referent in einem Schullabor und haeltst einen Kurzvortrag fuer juengere Schuelerinnen und Schueler.
 SITUATION: Ein Waschmittelhersteller wirbt damit, dass sein Pulver schon bei 30 Grad Celsius wirkt, waehrend ein aelteres Produkt erst bei 60 Grad Celsius optimale Leistung zeigt. In beiden Produkten stecken Proteasen, also Eiweiss spaltende Enzyme.
 AUFGABE (AFB II/III): Erklaere in einer zusammenhaengenden Stellungnahme (ca. 150 Woerter), warum ein modernes Waschmittel auf ein niedrigeres Temperaturoptimum optimiert wird und was bei 60 Grad Celsius mit den Enzymen geschieht.
 RUBRIC (30 XP): Benennung des Temperaturoptimums als Anpassung an den Einsatzbereich (5 XP) | Erklaerung der Wirkungssteigerung unterhalb des Optimums mit der RGT-Regel (8 XP) | Erklaerung der Denaturierung oberhalb des Optimums mit Bezug auf die Tertiaerstruktur und das aktive Zentrum (10 XP) | Kausale, fachsprachlich korrekte Stellungnahme mit den Fachbegriffen Denaturierung und irreversibel (7 XP).
 
-## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
+## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY (Kernbotschaft in einem Kasten):
 

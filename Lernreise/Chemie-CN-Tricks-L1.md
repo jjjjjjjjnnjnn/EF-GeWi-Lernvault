@@ -162,7 +162,7 @@ ROLLE: Du bist Tutor und erklärst einer Mitschülerin die sechs CN-Verfahren f�
 SITUATION: Die Mitschülerin hat zwei Aufgaben vor sich: (1) Aus 8,0 g Calcium (M = 40 g/mol) nach Ca + 2 HCl -> CaCl2 + H2 die Wasserstoffmenge berechnen; (2) in 2 Mg + O2 -> 2 MgO Oxidations- und Reduktionsmittel benennen. Erkläre ihr in einer zusammenhängenden Antwort (ca. 150 Wörter), welches Verfahren zu welcher Aufgabe gehört, führe beide vollständig durch und schließe jede Teilaufgabe mit einem deutschen Klausur-Satz ab.
 RUBRIC (30 XP): Zuordnung der Aufgabe (1) zum Erhaltungsverfahren und (2) zum Oxidationszahlverfahren (8 XP) | Rechnung n(Ca) = 0,20 mol und n(H2) = 0,20 mol mit Einheit (8 XP) | Oxidationszahlen Mg 0 -> +2 und O 0 -> -2 mit Benennung (8 XP) | Deutsche Fachsprache und klare Begründung (6 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY 1盒（核心总结）：
 

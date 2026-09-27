@@ -134,8 +134,7 @@ ANTWORT: A erfordert Verfahren (i): $\vec{u} \cdot \vec{v} = -1 + 0 + 1 = 0$, al
 
 Klausur-Satz: `Fuer Winkel- und Orthogonalitaetsfragen ist das Skalarprodukt das richtige Verfahren, fuer Normalenvektoren das Vektorprodukt.`
 
-## Schritt 6 — check: Verständnisprüfung
-
+## Schritt 6 — check: Selbsttest zu Skalarprodukt im Raum
 CHECK检索默写（自测 3 题，与答案配对）：
 
 FRAGE: Wie lautet die Koordinatenform des Skalarprodukts im Raum? | ANTWORT: $\vec{a} \cdot \vec{b} = a_1b_1 + a_2b_2 + a_3b_3$.
@@ -156,14 +155,13 @@ Klausur-Satz: `Aus Koordinatenform und Betraegen folgt der Winkel ueber den Arku
    中文纠偏：零向量与任何向量点积都为零，但它没有方向，谈垂直没有意义。垂直判定默认两个向量都是非零向量，考场上要先排除零向量。
    Korrektur-Satz: `Die Orthogonalitaetsregel $\vec{a} \cdot \vec{b} = 0$ gilt nur fuer vom Nullvektor verschiedene Vektoren.`
 
-## Schritt 7 — szenario: Klausurtransfer & Rubric
-
+## Schritt 7 — szenario: Klausurtransfer: Skalarprodukt im Raum
 ROLLE: Du bist Tutorin in der EF und hilfst einer Mitschuelerin bei der Klausurvorbereitung Vektoren.
 SITUATION: Sie hat $\vec{a} = (2, 1, -2)$ und $\vec{b} = (1, -2, 0)$ gegeben und weiss nicht, ob sie senkrecht stehen und welchen Winkel sie einschliessen.
 AUFGABE: Erklaere in ca. 150 Woertern mit Rechnung, wie Skalarprodukt, Betraege und Winkelformel zusammenhaengen, und gib eine klare Ja-Nein-Antwort zur Orthogonalitaet.
 RUBRIC (30 XP): Korrektes Skalarprodukt (10 XP) | Korrekte Betraege (10 XP) | Winkelberechnung plus Orthogonalitaetsurteil mit Fachbegriffen (10 XP).
 
-## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
+## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY 1盒（核心总结）：
 

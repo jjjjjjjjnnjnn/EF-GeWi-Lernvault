@@ -135,7 +135,7 @@ ROLLE: Du bist Sachverständige/r in einer Anhörung des Innenausschusses zur Fr
 SITUATION: Die Partei erreicht in Umfragen fünf Prozent, verbreitet völkisch-nationalistische Positionen und stellt Wahlen sowie Minderheitenrechte infrage. Ein Teil der Öffentlichkeit fordert ein sofortiges Verbot, ein anderer warnt vor einem „Wahlkampfhelfer-Effekt" und vor einem Eingriff in die Opposition. Beurteilen Sie in einer zusammenhängenden Stellungnahme (ca. 150 Wörter), ob ein Verbotsverfahren eingeleitet werden sollte, und berücksichtigen Sie dabei die Verhältnismäßigkeit.
 RUBRIC (30 XP): Benennung der Rechtslage — nur BVerfG, Art. 21 II, doppelte Hürde (6 XP) | Analyse der Gefahrenlage — Verstoß gegen die fdGO, Infragestellen von Wahlen und Minderheitenrechten (8 XP) | Abwägung mit Kriterien — Verhältnismäßigkeit, Funktionsfähigkeit der Opposition, Missbrauchsgefahr (10 XP) | Kriteriengeleitetes Urteil mit klarer Empfehlung (6 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY 1盒（核心总结）：
 

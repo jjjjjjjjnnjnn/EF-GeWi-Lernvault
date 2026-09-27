@@ -130,8 +130,7 @@ ANTWORT: A erfordert Verfahren (i): vergleichende Interpretation (Typ I). Erster
 
 Klausur-Satz: `Typ I endet bei der Deutung des Textes, Typ IV bei der überzeugenden Position gegenüber dem Adressaten.`
 
-## Schritt 6 — check: Verständnisprüfung
-
+## Schritt 6 — check: Selbsttest zu Aufgabenarten I-IV und AFB-Gewichtung
 CHECK (Selbsttest, 3 Fragen mit Antworten):
 
 FRAGE: Welche vier Aufgabenarten unterscheidet das Abitur im Fach Deutsch? | ANTWORT: I literarische Interpretation, II Analyse pragmatischer Texte, III Eroerterung und IV materialgestuetztes Verfassen.
@@ -152,13 +151,12 @@ Klausur-Satz: `Der Schwerpunkt liegt auf AFB II: Beleg, Zeile und Wirkung tragen
    Korrektur: Typ IV verlangt Auswahl und Verweis (auswaehlen + verweisen). Zwei starke Belege mit Autorennennung schlagen sechs funktionslose Zitate; jeder Verweis muss die eigene These stuetzend.
    Korrektur-Satz: `Beim materialgestützten Verfassen zählt die funktionale Auswahl weniger starker Belege, nicht die Menge der Materialien.`
 
-## Schritt 7 — szenario: Klausurtransfer & Rubric
-
+## Schritt 7 — szenario: Klausurtransfer: Aufgabenarten I-IV und AFB-Gewichtung
 ROLLE: Du bist Tutor in einer Deutsch-Lerngruppe und bereitest Mitschueler auf die Klausur vor.
 SITUATION: Eine Mitschuelerin hat vier Aufgabenstellungen vor sich und weiss nicht, welche Aufgabenart welche ist und wie sie die Zeit einteilen soll. Erklaere in einer zusammenhaengenden Antwort (ca. 150 Woerter), wie man die Aufgabenarten unterscheidet und wie man die AFB-Gewichtung plant.
 RUBRIC (30 XP): Unterscheidung der vier Aufgabenarten nach Operator und Material (5 XP) | Zuordnung mindestens zweier Beispiele zur richtigen Aufgabenart (10 XP) | Erklaerung der AFB-Gewichtung (10 XP) | Hinweis auf die Bedeutung von ZKE D1 (IIa) fuer EF (5 XP).
 
-## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
+## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY (Kernzusammenfassung):
 

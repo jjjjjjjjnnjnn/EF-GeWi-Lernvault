@@ -128,8 +128,7 @@ ANTWORT: A erfordert Konzept (i): Verfalls-These, Massnahme Verbot — kritikwue
 
 Klausur-Satz: `Verbote treffen Herkunft, Didaktik trifft Kompetenz: Nur eines davon wirkt.`
 
-## Schritt 6 — check: Verständnisprüfung
-
+## Schritt 6 — check: Selbsttest zu Sprachwandel und Kiezdeutsch-Debatte
 CHECK检索默写（自测 3 题，与答案配对）：
 
 FRAGE: Welche drei Merkmale hat Kiezdeutsch? | ANTWORT: Artikellosigkeit, neue Verb- und Wortstellungsmuster, Mehrsprachigkeits-Marker.
@@ -150,14 +149,13 @@ Klausur-Satz: `Ohne Korpus bleibt Sprachkritik Meinung, mit Korpus wird sie Wiss
    中文纠偏：辩证议论必须先公允重构对方最强论据（标准语确实需要保护），再用证据超越它。只骂不证会被判 einseitig。
    Korrektur-Satz: `Dialektik verlangt das staerkste Gegenargument, nicht das schwaechste.`
 
-## Schritt 7 — szenario: Klausurtransfer & Rubric
-
+## Schritt 7 — szenario: Klausurtransfer: Sprachwandel und Kiezdeutsch-Debatte
 ROLLE: Du schreibst einen Kommentar fuer die Schuelerzeitung zur Kiezdeutsch-Debatte.
 SITUATION: Ein Leserbrief fordert Handyverbot fuer „Sprachverderber", die Schulleitung plant einen Projekttag.
 AUFGABE: Nehmen Sie in ca. 150 Woertern dialektisch Stellung (Sorge—Befund—Synthese) und schlagen Sie ein Projekttag-Modul vor.
 RUBRIC (30 XP): Sorge fair rekonstruiert (8 XP) | Zwei Merkmale mit Systematik-Beleg (12 XP) | Synthese plus Modulvorschlag Wechseltraining (10 XP).
 
-## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
+## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY 1盒（核心总结）：
 

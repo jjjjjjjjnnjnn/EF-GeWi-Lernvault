@@ -131,8 +131,7 @@ ANTWORT: A erfordert Verfahren (i): n(Ca) = m/M = 8,0 g / 40 g/mol = 0,20 mol. D
 
 Klausur-Satz: `Das Erhaltungsverfahren liefert Stoffmengen aus Massen, während das Oxidationszahlverfahren die Elektronenübergänge und die Rolle der Stoffe beschreibt.`
 
-## Schritt 6 — check: Verständnisprüfung
-
+## Schritt 6 — check: Selbsttest zu CN-Tricks: sechs Loesungsverfahren
 CHECK (Selbsttest, 3 Fragen mit Antworten):
 
 FRAGE: Was liefert die Massendifferenz bei einer Reduktion eines Metalloxids? | ANTWORT: Sie liefert die Masse des abgegebenen Sauerstoffs und damit über n = m/M dessen Stoffmenge.
@@ -153,13 +152,12 @@ Klausur-Satz: `Jeder Trick endet in einer Gleichung, einer Einheit und einer Beg
    Korrektur: Reaktionen merken, keine Pole. In der galvanischen Zelle laeuft an der Anode die Oxidation unter Elektronenabgabe; sie ist der Minuspol. Nur in der Elektrolysezelle haengt die Anode am Pluspol. Erst den Elektronenfluss bestimmen (Austritt gleich Anode gleich Minus), dann irrt man nicht.
    Korrektur-Satz: `In einer galvanischen Zelle ist die Anode der negative Pol, da dort die Oxidation mit Elektronenabgabe stattfindet.`
 
-## Schritt 7 — szenario: Klausurtransfer & Rubric
-
+## Schritt 7 — szenario: Klausurtransfer: CN-Tricks: sechs Loesungsverfahren
 ROLLE: Du bist Tutor und erklärst einer Mitschülerin die sechs CN-Verfahren für die EF-Klausur.
 SITUATION: Die Mitschülerin hat zwei Aufgaben vor sich: (1) Aus 8,0 g Calcium (M = 40 g/mol) nach Ca + 2 HCl -> CaCl2 + H2 die Wasserstoffmenge berechnen; (2) in 2 Mg + O2 -> 2 MgO Oxidations- und Reduktionsmittel benennen. Erkläre ihr in einer zusammenhängenden Antwort (ca. 150 Wörter), welches Verfahren zu welcher Aufgabe gehört, führe beide vollständig durch und schließe jede Teilaufgabe mit einem deutschen Klausur-Satz ab.
 RUBRIC (30 XP): Zuordnung der Aufgabe (1) zum Erhaltungsverfahren und (2) zum Oxidationszahlverfahren (8 XP) | Rechnung n(Ca) = 0,20 mol und n(H2) = 0,20 mol mit Einheit (8 XP) | Oxidationszahlen Mg 0 -> +2 und O 0 -> -2 mit Benennung (8 XP) | Deutsche Fachsprache und klare Begründung (6 XP).
 
-## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
+## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY (Kernzusammenfassung):
 

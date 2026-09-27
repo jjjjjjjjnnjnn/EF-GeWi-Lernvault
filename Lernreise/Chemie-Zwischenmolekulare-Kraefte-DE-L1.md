@@ -121,8 +121,7 @@ ANTWORT: A erfordert Verfahren (i): Beide Moleküle sind unpolar, sodass nur Van
 
 Klausur-Satz: `Bei gleicher molarer Masse entscheidet das Vorhandensein einer O-H-Gruppe über die Siedetemperatur, weil Wasserstoffbrücken stärker als Dipol-Dipol-Wechselwirkungen sind.`
 
-## Schritt 6 — check: Verständnisprüfung
-
+## Schritt 6 — check: Selbsttest zu Zwischenmolekulare Kraefte und Stoffeigenschaften
 CHECK (Selbsttest, 3 Fragen mit Antworten):
 
 FRAGE: Welche Kräfte werden beim Verdampfen einer Flüssigkeit überwunden? | ANTWORT: Es werden nur die zwischenmolekularen Kräfte überwunden; die kovalenten Atombindungen innerhalb der Moleküle bleiben erhalten.
@@ -143,13 +142,12 @@ Klausur-Satz: `Je stärker die zwischenmolekularen Kräfte, desto mehr Energie i
    Korrektur: Die Regel gilt nur innerhalb einer Stoffklasse; Wasserstoffbruecken sprengen sie. Methanol ($CH_3$-$OH$, $M = 32\,\mathrm{g/mol}$) siedet bei $+65^\circ\mathrm{C}$ und damit hoeher als Propan ($C_3H_8$, $M = 44\,\mathrm{g/mol}$) bei $-42^\circ\mathrm{C}$ — die Bruecken heben Methanol darueber. Erst Krafttyp, dann Masse vergleichen.
    Korrektur-Satz: `Die molare Masse bestimmt den Siedepunkt nur innerhalb einer Stoffklasse; Wasserstoffbrücken können diesen Zusammenhang überlagern.`
 
-## Schritt 7 — szenario: Klausurtransfer & Rubric
-
+## Schritt 7 — szenario: Klausurtransfer: Zwischenmolekulare Kraefte und Stoffeigenschaften
 ROLLE: Du bist Tutor in der EF-Chemie und erklärst einer Mitschülerin den Stoff "zwischenmolekulare Kräfte".
 SITUATION: Auf dem Tisch stehen drei Gefäße mit Ethan (C2H6), Methanol (CH3-OH) und Wasser (H2O). Die Mitschülerin wundert sich, dass Ethan schon bei -89 °C gasförmig ist, Methanol erst bei +65 °C siedet und Wasser sogar erst bei +100 °C. Verfasse eine zusammenhängende Erklärung (ca. 150 Wörter), die die drei Siedetemperaturen mit den jeweils wirkenden zwischenmolekularen Kräften begründet.
 RUBRIC (30 XP): Nennung der drei Krafttypen (Van-der-Waals, Dipol-Dipol, Wasserstoffbrücken) (6 XP) | Zuordnung jeder Kraft zum jeweiligen Stoff mit Begründung aus der Struktur (10 XP) | Verknüpfung von Kraftstärke und Energieaufwand beim Sieden (8 XP) | Korrekte Fachsprache und klarer Vergleichssatz (6 XP).
 
-## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
+## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY (Kernzusammenfassung):
 

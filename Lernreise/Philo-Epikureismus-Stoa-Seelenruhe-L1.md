@@ -117,7 +117,7 @@ SITUATION: Ein Leser fragt, ob er vor lauter Karrierejagd nachts nicht mehr schl
 AUFGABE (beurteilen, AFB III): Beantworten Sie die Frage in einer zusammenhaengenden Darstellung (ca. 150 Woerter) mit beiden Schulen, klarer Abwaegung und eigenem Urteil.
 RUBRIC (30 XP): Epikur mit $Kalkuel$ korrekt (10 XP) | Stoa mit $Dichotomie$ korrekt (10 XP) | Vergleich plus begruendetes Urteil (5 XP) | Geschlossene Darstellung (5 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY: Merke Garten und Halle: $Ruhe = richtige Wahl + richtiges Urteil$. Epikur fragt $Brauche ich das wirklich$, die Stoa fragt $Muss ich dem zustimmen$.
 

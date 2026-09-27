@@ -121,7 +121,7 @@ ANTWORT: A erfordert Verfahren (i): $f'(x) = 3x^2 - 12x + 9 = 0$ ergibt $x = 1$ 
 
 Klausur-Satz: `Ist der Funktionsterm unbekannt, wird er ueber einen allgemeinen Ansatz und ein LGS aus den gegebenen Bedingungen rekonstruiert.`
 
-## Schritt 6 — check: Verständnisprüfung
+## Schritt 6 — check: Selbsttest zu Steckbriefaufgaben: Bedingungen in Gleichungen
 CHECK (drei Fragen mit Antworten):
 
 FRAGE: Welchen Ansatz waehlt man fuer eine ganzrationale Funktion dritten Grades? | ANTWORT: $f(x) = ax^3 + bx^2 + cx + d$ mit vier unbekannten Koeffizienten.
@@ -138,13 +138,13 @@ Klausur-Satz: `Ein Wendepunkt liefert die Bedingung f''(x0) = 0, ein Extrempunkt
 2. Fehlkonzept: Mit dem hingeschriebenen Funktionsterm ist die Aufgabe vollstaendig geloest.
    Korrektur-Satz: `Nach dem Loesen des LGS muessen die Koeffizienten zur Kontrolle in alle Ausgangsbedingungen eingesetzt werden.`
 
-## Schritt 7 — szenario: Klausurtransfer & Rubric
+## Schritt 7 — szenario: Klausurtransfer: Steckbriefaufgaben: Bedingungen in Gleichungen
 ROLLE: Du bist Mitarbeiter in einem Ingenieurbuero und sollst ein Brueckenprofil modellieren.
 SITUATION: Das Profil eines Brueckenbogens soll naeherungsweise durch eine ganzrationale Funktion dritten Grades beschrieben werden. Bekannt sind: Der Bogen beginnt im Ursprung mit waagerechter Tangente, erreicht an der Stelle $x = 4$ seinen hoechsten Punkt und hat dort eine Hoehe von $16$ Metern. Bestimme den Funktionsterm und erlaeutere in einer zusammenhaengenden Darstellung (circa 150 Woerter) dein Vorgehen.
 AUFGABE (aufstellen, AFB III): Verfasse eine zusammenhaengende Darstellung von etwa 150 Woertern mit Ansatz, Bedingungsuebersetzung, Loesung und Probe.
 RUBRIC (30 XP): Korrekter Ansatz $f(x) = ax^3 + bx^2 + cx + d$ (5 XP) | Uebersetzung der Bedingungen ($f(0) = 0$, $f'(0) = 0$, $f(4) = 16$, $f'(4) = 0$) (10 XP) | Loesung des LGS mit Ergebnis (10 XP) | Probe und Antwortsatz im Sachzusammenhang (5 XP).
 
-## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
+## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
 TAKEAWAY (Kernbotschaft in einem Kasten):
 
 Der Schluessel jeder Steckbriefaufgabe heisst Uebersetzen: Koeffizienten zaehlen, Ansatz waehlen (dritter Grad vier Koeffizienten, achsensymmetrischer vierter Grad drei), Ableitungskette $f'$ und $f''$ bereitstellen und jede geometrische Bedingung in eine Gleichung verwandeln: $f(x_0) = y_0$, $f'(x_0) = m$, $f'(x_0) = 0$, $f''(x_0) = 0$. Gleiche Zahl unabhaengiger Bedingungen und Koeffizienten sichert die eindeutige Loesung; die Probe schliesst ab. Die Tianyuanshu-Anekdote zeigt: Aus Bedingungen Gleichungen zu bauen, ist eine jahrhundertealte Idee.

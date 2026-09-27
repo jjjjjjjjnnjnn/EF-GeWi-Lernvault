@@ -134,8 +134,7 @@ ANTWORT: A erfordert Konzept (i): Transkription, Matrize DNA, Produkt mRNA. B er
 
 Klausur-Satz: `Transkription kopiert Information, Translation baut daraus das Protein.`
 
-## Schritt 6 — check: Verständnisprüfung
-
+## Schritt 6 — check: Selbsttest zu Proteinbiosynthese Transkription Translation
 CHECK检索默写（自测 3 题，与答案配对）：
 
 FRAGE: Welche Basenpaarung gilt bei der Transkription? | ANTWORT: $A$-$U$, $T$-$A$, $G$-$C$ (Uracil statt Thymin in RNA).
@@ -156,14 +155,13 @@ Klausur-Satz: `Ohne $AUG$ kein Beginn, ohne Stopp-Codon kein Ende der Translatio
    中文纠偏：两者是互补配对（$A$-$U$、$G$-$C$）且方向相反。密码子 $CUU$ 的 tRNA 反密码子是 $GAA$（反向读 $AAG$ 因方向），照抄等于认错人。
    Korrektur-Satz: `Codon und Anticodon sind komplementaer und antiparallel, nie identisch.`
 
-## Schritt 7 — szenario: Klausurtransfer & Rubric
-
+## Schritt 7 — szenario: Klausurtransfer: Proteinbiosynthese Transkription Translation
 ROLLE: Du bist Tutorin und erklaerst Proteinbiosynthese.
 SITUATION: Eine Mitschuelerin hat die mRNA $5'$-$AUG\,CCG\,UAG$-$3'$ und weiss nicht, wo Translation beginnt und endet.
 AUFGABE: Uebersetzen Sie in ca. 150 Woertern mit Codontabelle ($CCG$ = Prolin) in die Peptidfolge und erklaeren Sie Start/Stopp-Funktion.
 RUBRIC (30 XP): Transkriptionslogik korrekt (5 XP) | Peptid Met-Pro korrekt (10 XP) | Stopp-Funktion $UAG$ erklaert (10 XP) | Fachbegriffe Codon/Anticodon (5 XP).
 
-## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
+## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY 1盒（核心总结）：
 

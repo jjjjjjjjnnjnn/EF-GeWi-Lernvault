@@ -130,8 +130,7 @@ ANTWORT: A erfordert Verfahren (i): 4/4 festhalten, Betonungen auf 2/4 und Klavi
 
 Klausur-Satz: `Zaehlen sichert den Beleg, Deuten gewinnt die Stilthese.`
 
-## Schritt 6 — check: Verständnisprüfung
-
+## Schritt 6 — check: Selbsttest zu Rhythmus mit Synkopen und Jazz-Groove
 CHECK检索默写（自测 3 题，与答案配对）：
 
 FRAGE: Was ist eine Synkope? | ANTWORT: Eine Betonungsverlagerung auf schwache Zeit oder zwischen die Zaehlen.
@@ -152,13 +151,12 @@ Klausur-Satz: `Ohne Offbeat kein Backbeat, ohne Bass kein Groove.`
    中文纠偏：Groove 是三层咬合；只写鼓丢掉贝斯参照与钢琴错位两分。
    Korrektur-Satz: `Groove entsteht aus dem Zusammenspiel aller Schichten.`
 
-## Schritt 7 — szenario: Klausurtransfer & Rubric
-
+## Schritt 7 — szenario: Klausurtransfer: Rhythmus mit Synkopen und Jazz-Groove
 ROLLE: Du moderierst einen Jazz-Workshop fuer Anfaenger.
 SITUATION: Die Gruppe klatscht nur auf 1 und 3. Erklaere in zusammenhaengender Darstellung (ca. 150 Woerter) mit Klatschuebung, wie man Offbeat und Synkope findet und was Groove koerperlich bedeutet.
 RUBRIC (30 XP): Uebungsanleitung mit Zaehlen (10 XP) | Offbeat- und Synkopenbegriffe korrekt (10 XP) | Groovedeutung als Koerpererfahrung (6 XP) | Verstaendliche Sprache (4 XP).
 
-## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
+## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY 1盒（核心总结）：
 

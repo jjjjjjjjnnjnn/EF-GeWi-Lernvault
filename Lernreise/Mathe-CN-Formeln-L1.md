@@ -129,7 +129,7 @@ ROLLE: Du bist Tutor fuer zweisprachige Mathe-Lernende und haeltst eine kurze Di
 SITUATION: Ein Mitschueler kennt die chinesischen Merksprueche, kann sie aber nicht in deutsche Klausursaetze uebersetzen, und schreibt im Test nur Ergebnisse ohne Bedingung. Erklaere ihm in einer zusammenhaengenden Darstellung (ca. 150 Woerter) an zwei Beispielen (Potenzregel und AM-GM), wie man eine Formel dreisprachig mit Bedingungssatz klausurtugendlich aufschreibt.
 RUBRIC (30 XP): Erklaerung des Dreisprachen-Prinzips (CN-Heuristik, DE-Bedingung, DE-Anwendung) (5 XP) | Korrektes Beispiel zur Potenzregel mit Anwendungssatz (10 XP) | Korrektes Beispiel zu AM-GM mit Positivitaetsbedingung und Gleichheitsfall (10 XP) | Kriteriengeleitetes Fazit zum Verhaeltnis von Heuristik und Beweispflicht (5 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY 1盒（核心总结）：
 

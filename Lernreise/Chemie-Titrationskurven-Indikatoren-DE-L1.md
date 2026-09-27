@@ -117,8 +117,7 @@ ANTWORT: A erfordert Verfahren (i): Phenolphthalein schlaegt im oberen Sprungtei
 
 Klausur-Satz: `Salztyp bestimmt die Lage des Aequivalenzpunkts und damit die Indikatorwahl.`
 
-## Schritt 6 — check: Verständnisprüfung
-
+## Schritt 6 — check: Selbsttest zu Titrationskurven und Indikatoren
 CHECK (Selbsttest, 3 Fragen):
 
 FRAGE: Was gilt am Aequivalenzpunkt? | ANTWORT: $n(H^+) = n(OH^-)$; der $pH$ folgt aus dem Salztyp.
@@ -138,14 +137,13 @@ Klausur-Satz: `Ohne Sprungtreffer kein verlaesslicher Farbumschlag.`
    Korrektur: Nur ein Umschlag im Steilbereich ist scharf; daneben schleppt die Farbe und der Fehler waechst auf Milliliter.
    Korrektur-Satz: `Der Indikator muss zum Sprungbereich gehoeren, nicht zur Lieblingsfarbe.`
 
-## Schritt 7 — szenario: Klausurtransfer & Rubric
-
+## Schritt 7 — szenario: Klausurtransfer: Titrationskurven und Indikatoren
 ROLLE: Du bist Laborant in der Qualitaetskontrolle.
 SITUATION: Eine Essigprobe soll auf $c(CH_3COOH)$ geprueft werden; ein Kollege will Methylorange verwenden.
 AUFGABE (beurteilen, AFB III): Beurteilen Sie die Wahl in einer zusammenhaengenden Darstellung (ca. 150 Woerter), berechnen Sie die Auswertung mit $c_aV_a = c_bV_b$ im Prinzip und schlagen Sie einen korrekten Indikator mit Begruendung vor.
 RUBRIC (30 XP): Einordnung schwach/stark mit $pH > 7$ (10 XP) | Ablehnung von Methylorange mit $pK_{In}$-Argument (10 XP) | Alternative Phenolphthalein plus Auswerteformel (5 XP) | Geschlossene Darstellung (5 XP).
 
-## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
+## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY: Merke Sprung, Salz, Umschlag: $n(H^+) = n(OH^-)$ markiert den Punkt, Hydrolyse legt den $pH$ fest, $pK_{In}$ im Sprung sichert die Farbe. Faustregel stark/stark grosszuegig, schwach/stark waehlerisch.
 

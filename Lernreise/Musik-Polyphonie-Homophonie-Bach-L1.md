@@ -119,7 +119,7 @@ SITUATION: Sie hoeren eine Bach-Passage mit versetzten Einsaetzen und sollen spo
 AUFGABE (einordnen, AFB III): Ordnen Sie die Passage in einer zusammenhaengenden Darstellung (ca. 150 Woerter oder zwei Minuten Rede) mit Satztyp, Fugenelementen und Epochenbezug ein.
 RUBRIC (30 XP): Satztyp mit $Beleg$ (10 XP) | $Dux + Comes$ korrekt (10 XP) | Barockbezug $Kontrapunkt$ (5 XP) | Geschlossene Darstellung (5 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY: Merke $Rang + Einsatz = Urteil$. Formel $polyphon = gleich + versetzt$, $homophon = oben + Block$. Hoeranker $Thema + Quinte = Fuge$.
 

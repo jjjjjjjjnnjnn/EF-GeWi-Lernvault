@@ -134,8 +134,7 @@ ANTWORT: A erfordert Konzept (ii): Keine ruecktreibende Kraft, keine Periodizita
 
 Klausur-Satz: `Nur eine lineare Rueckstellkraft der Form $-D\,x$ erzeugt eine harmonische Sinusschwingung.`
 
-## Schritt 6 — check: Verständnisprüfung
-
+## Schritt 6 — check: Selbsttest zu Federpendel und harmonische Schwingung
 CHECK检索默写（自测 3 题，与答案配对）：
 
 FRAGE: Wie lautet das Kraftgesetz der harmonischen Schwingung? | ANTWORT: $F = -D\,x$, proportional zur Auslenkung, entgegengesetzt gerichtet.
@@ -156,14 +155,13 @@ Klausur-Satz: `Masse vergroessern verlaengert die Periode, Feder verhaerten verk
    中文纠偏：恰好相反。平衡位置 $x = 0$ 处弹簧处于原长，回复力为零，速度最大；两端位移最大处速度为零，回复力最大。力和速度永远错峰。
    Korrektur-Satz: `Am Gleichgewicht ist die Kraft null und die Geschwindigkeit maximal, an den Umkehrpunkten umgekehrt.`
 
-## Schritt 7 — szenario: Klausurtransfer & Rubric
-
+## Schritt 7 — szenario: Klausurtransfer: Federpendel und harmonische Schwingung
 ROLLE: Du bist Tutorin und erklaerst das Federpendel vor der Klausur.
 SITUATION: Ein Mitschueler behauptet, eine doppelt so weit ausgelenkte Feder schwinge doppelt so langsam.
 AUFGABE: Widerlegen Sie das in ca. 150 Woertern mit Formel $T = 2\pi\sqrt{m/D}$ und Energie-Argument und erklaeren Sie, was sich bei groesserer Amplitude wirklich aendert.
 RUBRIC (30 XP): Formel korrekt ohne Amplitude (10 XP) | Isochronie erklaert (10 XP) | Energie/Geschwindigkeit als wahre Aenderung genannt (10 XP).
 
-## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
+## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY 1盒（核心总结）：
 

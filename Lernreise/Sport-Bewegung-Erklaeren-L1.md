@@ -141,7 +141,7 @@ ROLLE: Du bist Prüfling in einer mündlichen Sportprüfung und sollst eine Bewe
 SITUATION: Der Prüfer fordert dich auf, eine von dir gewählte Bewegung (z. B. den Absprung beim Weitsprung oder den Kugelstoß) in drei Phasen zu erklären. Sprich in zusammenhängenden deutschen Sätzen (ca. 2 Minuten): Nenne die drei Phasen, markiere die Hauptphase, begründe sie biomechanisch oder physiologisch mit einem weil-Satz und nenne einen häufigen Fehler mit Korrektur.
 RUBRIC (30 XP): Vollständige Nennung der drei Phasen mit je einer Tätigkeit (8 XP) | Korrekte Markierung der Hauptphase (5 XP) | Biomechanische oder physiologische Begründung mit weil-Satz und Fachbegriff (z. B. Herzfrequenz, Dehnung, Koordination) (10 XP) | Ein typischer Fehler mit konkreter Korrektur (4 XP) | Freies, zusammenhängendes Sprechen mit Fachsprache (3 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY 1盒（核心总结）：
 

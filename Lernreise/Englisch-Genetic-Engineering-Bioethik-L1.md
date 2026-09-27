@@ -120,7 +120,7 @@ ROLLE: You are a speaker in a school debate.
 SITUATION: The motion says to allow germline editing for intelligence. Oppose in circa 150 words with technique, slippery slope and justice, closing with dignity.
 RUBRIC (30 XP): Technique correct (8 XP) | Risks weighed (10 XP) | Dignity judgement (8 XP) | Academic register (4 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY:
 

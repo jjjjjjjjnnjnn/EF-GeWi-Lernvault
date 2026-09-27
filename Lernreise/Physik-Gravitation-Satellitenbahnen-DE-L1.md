@@ -121,7 +121,7 @@ ANTWORT: A erfordert Verfahren (i): Nach $T^2 \sim r^3$ gilt $\frac{T_2}{T_1} = 
 
 Klausur-Satz: `Bahnen vergleichen heisst Kepler, Oberflaeche schaetzen heisst mg.`
 
-## Schritt 6 — check: Verständnisprüfung
+## Schritt 6 — check: Selbsttest zu Gravitation und Satellitenbahnen
 CHECK (Selbsttest, 3 Fragen mit Antworten):
 
 FRAGE: Wie lautet das Gravitationsgesetz? | ANTWORT: $F = G\frac{mM}{r^2}$ mit Abstand $r$ vom Massenzentrum.
@@ -140,12 +140,12 @@ Klausur-Satz: `Gleichgewicht der Kraefte erklaert jede Kreisbahn.`
    Korrektur: Es gilt $v = \sqrt{GM/r}$; weiter aussen ist die Gravitation schwaecher und verlangt weniger Zentripetalkraft.
    Korrektur-Satz: `Die Bahngeschwindigkeit faellt mit wachsendem Radius wie 1 durch Wurzel r.`
 
-## Schritt 7 — szenario: Klausurtransfer & Rubric
+## Schritt 7 — szenario: Klausurtransfer: Gravitation und Satellitenbahnen
 ROLLE: Du bist Praktikant bei einer Raumfahrtagentur.
 SITUATION: Ein Kunde will einen TV-Satelliten, der stets ueber derselben Stadt steht, plant ihn aber in $h = 800\,\mathrm{km}$. Lege in zusammenhaengender Darstellung (ca. 150 Woerter) dar, warum der Plan scheitert, schaetze die Umlaufzeit ab und nenne die korrekte Hoehe mit Begruendung.
 RUBRIC (30 XP): Kraeftegleichgewicht genannt (10 XP) | $T$-Abschaetzung mit $T^2 \sim r^3$ (10 XP) | Geostationaere Bedingung $T = 24\,\mathrm{h}$ (5 XP) | Geschlossene Darstellung (5 XP).
 
-## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
+## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
 TAKEAWAY (Kernzusammenfassung):
 
 Merke die Kette Gleichgewicht, Kuerzen, Wurzel: $\frac{mv^2}{r} = G\frac{mM}{r^2}$ fuehrt zu $v = \sqrt{GM/r}$ und $T^2 = \frac{4\pi^2}{GM}r^3$. Niedrig heisst schnell, hoch heisst langsam.

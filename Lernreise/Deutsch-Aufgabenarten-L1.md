@@ -144,7 +144,7 @@ ROLLE: Du bist Tutor in einer Deutsch-Lerngruppe und bereitest Mitschüler auf d
 SITUATION: Eine Mitschülerin hat vier Aufgabenstellungen vor sich und weiß nicht, welche Aufgabenart welche ist und wie sie die Zeit einteilen soll. Erkläre in einer zusammenhängenden Antwort (ca. 150 Wörter), wie man die Aufgabenarten unterscheidet und wie man die AFB-Gewichtung plant.
 RUBRIC (30 XP): Unterscheidung der vier Aufgabenarten nach Operator und Material (5 XP) | Zuordnung mindestens zweier Beispiele zur richtigen Aufgabenart (10 XP) | Erklärung der AFB-Gewichtung (10 XP) | Hinweis auf die Bedeutung von ZKE D1 (IIa) für EF (5 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY 1盒（核心总结）：
 

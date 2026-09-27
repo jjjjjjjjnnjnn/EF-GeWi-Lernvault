@@ -142,7 +142,7 @@ ROLLE: Du bist Tutor/in in der Oberstufe und leitest eine Wiederholungseinheit z
 SITUATION: Eine Lerngruppe soll in 15 Minuten die drei Modelle der Ungleichheit (Schichten, Lagen, Milieus) jeweils mit Definition, einem Beispiel und einer Grenze aufschreiben und anschliessend begruenden, welches Modell sich fuer die Analyse einer Einkommensstatistik am besten eignet. Fuehren Sie die Uebung durch und beurteilen Sie am Ende, welches Modell die beste Passung hat.
 RUBRIC (30 XP): Vollstaendige Definition der drei Modelle (Schichten/Lagen/Milieus) (9 XP) | Je ein treffendes Beispiel pro Modell (9 XP) | Benennung je einer Grenze pro Modell (6 XP) | Kriteriengeleitetes Urteil zur Modellwahl fuer die Einkommensstatistik (6 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY 1盒（核心总结）：
 

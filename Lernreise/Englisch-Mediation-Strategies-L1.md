@@ -139,7 +139,7 @@ ROLLE: Du bist Schuelerin in einem deutsch-britischen Austauschprojekt und solls
 SITUATION: Die Partnerschule bereitet eine Diskussion ueber Ehrenamt vor. Du erhaeltst einen formellen deutschen Zeitungsartikel (Erfindung fuer diese Aufgabe) ueber das Freiwillige Soziale Jahr und sollst daraus einen englischen Text fuer die Schuelerzeitung schreiben (ca. 150 Woerter). Achte besonders auf die zwei Strategien: Register (formeller Artikel → angemessenes Englisch) und Kulturwoerter (FSJ, Taschengeld, Seminartage).
 RUBRIC (30 XP): Bewusste und einheitliche Registerwahl mit Begruendung (5 XP) | Korrekte Behandlung von mindestens zwei Kulturwoertern mit Erklaerung (10 XP) | Vollstaendige Uebertragung der relevanten Aspekte ohne Auslassung oder Verzerrung (10 XP) | Anschliessende Kurzkontrolle — Nennung mindestens einer Stelle, die per Rueckuebersetzung geprueft wurde (5 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY 1盒（核心总结）：
 

@@ -135,7 +135,7 @@ SITUATION: Your actors confuse soliloquy with aside and speak every line at the 
 AUFGABE: Directing note with marked lines, rhythm instruction and irony effect.
 RUBRIC (30 XP): Correct soliloquy/aside marking with brief quotes (10 XP) | Rhythm note on short vs flowing lines (10 XP) | Irony effect on audience clearly stated with interpretive sentence (10 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY 1盒（核心总结）：
 

@@ -139,7 +139,7 @@ ROLLE: Du bist Lerncoach und bereitest eine Mitschülerin auf die Formelaufgaben
 SITUATION: Die Mitschülerin kennt viele Formeln, verwechselt aber ständig, wann sie welche einsetzen soll, und schreibt oft nur das Ergebnis ohne Ansatz. Erkläre ihr in einer zusammenhängenden Stellungnahme (ca. 150 Wörter), wie man mit einer Entscheidungshilfe die richtige Formel wählt und wie ein vollständiger Lösungsweg aussieht, damit sie die Schrittpunkte erhält.
 RUBRIC (30 XP): Darstellung der Entscheidungsregel (Bedingung waehlt Ansatz) mit mindestens zwei Beispielen (10 XP) | Erklaerung des dreischrittigen Loesungswegs Ansatz-Einsetzen-Ergebnis (10 XP) | Hinweis auf Einheiten und Groessenordnung als Kontrolle (5 XP) | Nachvollziehbare, adressatengerechte Sprache mit Fachbegriffen (5 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY 1盒（核心总结）：
 

@@ -122,7 +122,7 @@ ROLLE: Du bist Praktikantin im Verkehrslabor.
 SITUATION: Zwei Spielzeugwagen stossen auf einer Luftkissenbahn zusammen; Wagen 2 stand vorher. Aus Messwerten sollen Stossart und Energieverlust bestimmt werden. Formuliere in circa 150 Woertern die Auswertung mit Impulsbilanz und Energietest und beurteile, ob ein elastischer Stoss vorliegt.
 RUBRIC (30 XP): Korrekte Impulsbilanz mit Vorzeichen (10 XP) | Energietest mit Zahlen (10 XP) | Urteil zur Stossart mit Begruendung (6 XP) | Fachsprachliche Darstellung (4 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY:
 

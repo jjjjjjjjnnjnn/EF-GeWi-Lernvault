@@ -132,8 +132,7 @@ ANTWORT: A erfordert Verfahren (i): Zuerst gehetzt und angstvoll, in der zweiten
 
 Klausur-Satz: `Die Form ist kein Schmuck, sondern das Werkzeug, das die Gefühlskurve des Gedichts hervorbringt.`
 
-## Schritt 6 — check: Verständnisprüfung
-
+## Schritt 6 — check: Selbsttest zu Sturm und Drang: Bildlichkeit und Deutungshypothese
 CHECK (Selbsttest, 3 Fragen mit Antworten):
 
 FRAGE: Was unterscheidet Sturm und Drang von der Aufklaerung? | ANTWORT: Der Sturm und Drang setzt Gefuehl, Leidenschaft und Individualitaet ueber Vernunft, Mass und Ordnung.
@@ -154,13 +153,12 @@ Klausur-Satz: `Die Deutungshypothese wird zuerst aufgestellt und im Laufe der An
    Korrektur: Es ist ein Programm gegen die Vernunftdominanz. Metrum, Enjambement und Bildlichkeit erzeugen gezielt Gefuehlswirkung; Analyse zeigt, welche Form welches Gefuehl traegt.
    Korrektur-Satz: `Der Sturm und Drang ist kein formloses Schreiben, sondern ein Programm, das Gefühl bewusst über Vernunft stellt.`
 
-## Schritt 7 — szenario: Klausurtransfer & Rubric
-
+## Schritt 7 — szenario: Klausurtransfer: Sturm und Drang: Bildlichkeit und Deutungshypothese
 ROLLE: Du bist Tutor in der Oberstufe und erklaerst einer Mitschuelerin ein Sturm-und-Drang-Gedicht.
 SITUATION: Eine Mitschuelerin versteht nicht, warum die Lehrerin von einer "Stimmungskurve" spricht. Erklaere ihr in einer zusammenhaengenden Antwort (ca. 150 Woerter) zum Uebungsgedicht "Ritt im Dunkeln", wie Form und Bildlichkeit die Kurve erzeugen, und formuliere am Ende eine Deutungshypothese.
 RUBRIC (30 XP): Erklaerung des Gegensatzes Sturm und Drang gegen Aufklaerung (5 XP) | Benennung der Stimmungskurve mit Strophenangabe (10 XP) | Beleg einer Bildlichkeit und eines Formelements (10 XP) | Schluessige Deutungshypothese in einem Satz (5 XP).
 
-## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
+## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY (Kernzusammenfassung):
 

@@ -134,7 +134,7 @@ SITUATION: Debatte: Soll Schummeln bei einer unwichtigen Klausur erlaubt sein, w
 
 RUBRIC: These in Satz 1 (darstellen) | zwei Fachbegriffe (z. B. Maxime, Nutzenprinzip, Menschenwürde) | ein Beleg/Beispiel | Urteil mit Kriterium (beurteilen).
 
-## Schritt 8 — entdecken
+## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY 1盒（合书能背才算过）：
 

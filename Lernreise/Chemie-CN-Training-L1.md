@@ -151,7 +151,7 @@ ROLLE: Du simulierst unter Zeitdruck eine EF-Klausur und bewertest dich anschlie
 SITUATION: In 20 Minuten sind vier Aufgaben zu lösen: (1) Al + HCl -> AlCl3 + H2 ausgleichen; (2) aus 4,4 g CO2 (M = 44 g/mol) n und V im Standardzustand berechnen; (3) in 2 Na + Cl2 -> 2 NaCl Oxidations- und Reduktionsmittel bestimmen; (4) den pH-Wert einer Salzsäure mit c0 = 0,002 mol/L berechnen. Schreibe eine zusammenhängende Auswertung (ca. 150 Wörter), die deine Ergebnisse, die EHZ-Punkte pro Aufgabe und einen deutschen Transfer-Satz enthält.
 RUBRIC (30 XP): Aufgabe 1 korrekt ausgeglichen 2 Al + 6 HCl -> 2 AlCl3 + 3 H2 (6 XP) | Aufgabe 2 n = 0,10 mol und V = 2,24 L mit Einheit (8 XP) | Aufgabe 3 Na als Reduktionsmittel, Cl als Oxidationsmittel mit Oxidationszahlen (8 XP) | Aufgabe 4 pH = 2,70 mit Begründung der vollständigen Dissoziation (8 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY 1盒（核心总结）：
 

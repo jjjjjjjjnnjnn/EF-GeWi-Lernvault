@@ -131,8 +131,7 @@ ANSWER: A requires procedure (i): a formal letter with "Dear Mr [Name]", a clear
 
 Klausur-Satz: `The same source text produces a completely different English text depending on the addressee, because the four elements of the situation determine selection, structure and register.`
 
-## Schritt 6 — check: Verständnisprüfung
-
+## Schritt 6 — check: Selbsttest zu Mediation DE-EN: Ablauf und Textformate
 CHECK (three questions with answers):
 
 FRAGE: What distinguishes mediation from translation? | ANTWORT: Mediation selects the aspects relevant to the reader and reshapes them; translation transfers the whole text literally.
@@ -153,13 +152,12 @@ Klausur-Satz: `Before writing a mediation, I clarify the four elements of the si
    Correction: Target format scores separately. A letter without salutation or signature, or a blog without title or closing question, loses format marks that complete content cannot recover.
    Korrektur-Satz: `The target-text format is marked separately, so a missing salutation or blog title costs marks even when the content is complete.`
 
-## Schritt 7 — szenario: Klausurtransfer & Rubric
-
+## Schritt 7 — szenario: Klausurtransfer: Mediation DE-EN: Ablauf und Textformate
 ROLE: You are an exchange student in England asked by your German school to write a short text for the British partner school.
 SITUATION: The partner school plans a "German Culture Week" and wants to know how the German school system works. From a German briefing text (invented for this task) write a formal e-mail to the coordinator, Mr Clarke (ca. 150 words), selecting three aspects: school stages, grading system and one typical school subject.
 RUBRIC (30 XP): Clear situating — reader, purpose and format correctly named (5 XP) | Complete selection of the three required aspects (10 XP) | Correct format items — subject, salutation, closing formula, no slang (10 XP) | Consistently formal register with connectors (5 XP).
 
-## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
+## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY (core summary):
 

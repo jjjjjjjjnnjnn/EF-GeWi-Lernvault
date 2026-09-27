@@ -147,7 +147,7 @@ ROLLE: Du hilfst als Tutor beim "Formeldiktat" für eine EF-Klausurvorbereitung.
 SITUATION: Eine Mitschülerin soll drei Aufgaben unter Zeitdruck lösen: (1) Sie soll die deutsche Bezeichnung der chinesischen Größe "摩尔浓度" nennen, (2) aus 0,30 mol in 0,60 L die Konzentration berechnen und (3) aus [H3O+] = 10^-5 mol/L den pH-Wert ableiten. Erkläre ihr in einer zusammenhängenden Antwort (ca. 150 Wörter) die drei Formelkarten, führe die Rechnungen vollständig mit Einheiten durch und schließe mit einer Größenordnungsprüfung.
 RUBRIC (30 XP): Korrekte Übersetzung 摩尔浓度 -> die Konzentration c (6 XP) | Rechnung c = 0,30/0,60 = 0,50 mol/L mit Einheit (8 XP) | pH = -lg(10^-5) = 5,00 (8 XP) | Größenordnungsprüfung und deutsche Fachsprache (8 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY 1盒（核心总结）：
 

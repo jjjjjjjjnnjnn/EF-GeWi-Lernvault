@@ -136,8 +136,7 @@ ANTWORT: A erfordert Verfahren (i): Eine Gleichung $m_1v_1+m_2v_2 = (m_1+m_2)u$ 
 
 Klausur-Satz: `Unelastisch genuegt der Impulssatz, elastisch braucht man Impuls- und Energiesatz gemeinsam.`
 
-## Schritt 6 — check: Verständnisprüfung
-
+## Schritt 6 — check: Selbsttest zu Impulserhaltung und Stoesse
 CHECK检索默写（自测 3 题，与答案配对）：
 
 FRAGE: Wann gilt die Impulserhaltung? | ANTWORT: Wenn das System abgeschlossen ist bzw. beim Stoss die inneren Kraefte dominieren; dann gilt $p_{vor} = p_{nach}$.
@@ -158,13 +157,12 @@ Klausur-Satz: `Der Stosstyp entscheidet, ob nur der Impuls oder Impuls und Energ
    中文纠偏：动量是矢量，一维必须先定正方向，反向速度取负。符号错则整式错。
    Korrektur-Satz: `Geschwindigkeiten gegen die positive Richtung erhalten ein negatives Vorzeichen.`
 
-## Schritt 7 — szenario: Klausurtransfer & Rubric
-
+## Schritt 7 — szenario: Klausurtransfer: Impulserhaltung und Stoesse
 ROLLE: Du bist Laborassistent und erklaerst zwei Stossversuche.
 SITUATION: Eine Gruppe verwechselt Knete mit Stahlkugeln und schreibt immer beide Saetze hin. Erklaere in einer zusammenhaengenden Darstellung (ca. 150 Woerter), wie man am Versuchsergebnis (zusammen vs. getrennt) den Stosstyp erkennt und welchen Gleichungssatz man jeweils ansetzt.
 RUBRIC (30 XP): Erkennungsmerkmal des Stosstyps (8 XP) | Ansatz unelastisch mit Rechnung (8 XP) | Ansatz elastisch mit beiden Saetzen (8 XP) | Vorzeichenregel und Fachsprache (6 XP).
 
-## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
+## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY 1盒（核心总结）：
 

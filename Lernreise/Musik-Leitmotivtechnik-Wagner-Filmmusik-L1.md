@@ -120,7 +120,7 @@ ROLLE: Du bist Pruefling in der muendlichen Pruefung.
 SITUATION: Nach zweimaligem Hoeren sollst du ein unbekanntes Leitmotiv mit Verfahren und Funktion vorstellen (circa 2 Minuten). Gliedere Gestalt, zwei Transformationen und Deutung im Kontext.
 RUBRIC (30 XP): Gestalt korrekt (8 XP) | Zwei Verfahren benannt (10 XP) | Funktionsdeutung (8 XP) | Fachsprachlicher Vortrag (4 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY:
 

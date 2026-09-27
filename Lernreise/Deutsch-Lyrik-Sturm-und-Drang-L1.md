@@ -146,7 +146,7 @@ ROLLE: Du bist Tutor in der Oberstufe und erklärst einer Mitschülerin ein Stur
 SITUATION: Eine Mitschülerin hat ein Übungsgedicht (Ritt im Dunkeln) vor sich und versteht nicht, warum die Lehrerin von einer „Stimmungskurve" spricht. Erkläre ihr in einer zusammenhängenden Antwort (ca. 150 Wörter), wie Form und Bildlichkeit diese Kurve erzeugen, und formuliere am Ende eine Deutungshypothese.
 RUBRIC (30 XP): Erklärung des Gegensatzes Sturm und Drang vs. Aufklärung (5 XP) | Benennung der Stimmungskurve mit Strophenangabe (10 XP) | Beleg mindestens einer Bildlichkeit und eines Formelements (10 XP) | Schlüssige Deutungshypothese in einem Satz (5 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY 1盒（核心总结）：
 

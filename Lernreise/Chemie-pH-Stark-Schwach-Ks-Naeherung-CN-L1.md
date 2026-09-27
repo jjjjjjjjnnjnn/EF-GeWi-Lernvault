@@ -136,8 +136,7 @@ ANTWORT: A erfordert Verfahren (i): $[H_3O^+] = 0{,}01$, $pH = 2{,}00$. B erford
 
 Klausur-Satz: `Bei gleicher Konzentration liegt der pH der schwachen Saeure deutlich hoeher als der der starken.`
 
-## Schritt 6 — check: Verständnisprüfung
-
+## Schritt 6 — check: Selbsttest zu pH starker und schwacher Saeuren mit Ks-Naeherung
 CHECK检索默写（自测 3 题，与答案配对）：
 
 FRAGE: Wie berechnet man den pH einer starken einprotonigen Saeure? | ANTWORT: $[H_3O^+] = c_0$, dann $pH = -\lg c_0$.
@@ -158,13 +157,12 @@ Klausur-Satz: `Stark heisst direkt, schwach heisst ueber die Wurzel aus K_s mal 
    中文纠偏：pH 是对数标，差 1 表示十倍。$pH$ 从 2 到 3 是稀释十倍，不是两倍。
    Korrektur-Satz: `Eine pH-Einheit entspricht einer Zehnerpotenz der Konzentration.`
 
-## Schritt 7 — szenario: Klausurtransfer & Rubric
-
+## Schritt 7 — szenario: Klausurtransfer: pH starker und schwacher Saeuren mit Ks-Naeherung
 ROLLE: Du bist Laborhelfer und erklaerst zwei Flaschen mit je $0{,}1\,\mathrm{mol/L}$.
 SITUATION: Ein Praktikant erwartet gleichen pH, misst aber $1{,}0$ und $2{,}9$. Erklaere in einer zusammenhaengenden Darstellung (ca. 150 Woerter), warum $HCl$ und Essigsaeure trotz gleicher Konzentration verschiedene pH-Werte haben und wie man jeweils rechnet.
 RUBRIC (30 XP): Erklaerung stark gegen schwach (10 XP) | Rechnung stark mit Ergebnis (6 XP) | Rechnung schwach mit Naeherung (10 XP) | Fachsprachliche Korrektheit (4 XP).
 
-## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
+## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY 1盒（核心总结）：
 

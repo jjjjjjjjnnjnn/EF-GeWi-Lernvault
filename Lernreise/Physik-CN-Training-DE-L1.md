@@ -133,8 +133,7 @@ ANTWORT: A erfordert Verfahren (i): Flaeche unter der Linie als Weg; Trapez mit 
 
 Klausur-Satz: `Traegt die senkrechte Achse v, wird der Weg als Flaeche gelesen; traegt sie s, wird die Geschwindigkeit als Steigung gelesen.`
 
-## Schritt 6 — check: Verständnisprüfung
-
+## Schritt 6 — check: Selbsttest zu CN-Training: vier Klausuraufgaben unter Zeitdruck
 CHECK (Selbsttest, 3 Fragen mit Antworten):
 
 FRAGE: Wie folgt der Weg aus drei $v$-$t$-Abschnitten? | ANTWORT: Teilflaechen aus Dreiecken und Rechtecken zum Gesamtweg addieren.
@@ -154,13 +153,12 @@ Klausur-Satz: `Erst Mittelwert, dann Zufallsfehler aus der Streuung, dann system
    Korrektur: Zeittraining verlangt feste Reihenfolge: Achse sichern, Ansatz schreiben, Einheit und Urteil schliessen. Springen kostet Punkte.
    Korrektur-Satz: `Zeitdruck verlangt eine feste Reihenfolge, nicht das Ueberspringen von Ansaetzen und Urteilen.`
 
-## Schritt 7 — szenario: Klausurtransfer & Rubric
-
+## Schritt 7 — szenario: Klausurtransfer: CN-Training: vier Klausuraufgaben unter Zeitdruck
 ROLLE: Du bist Tutor und leitest eine 45-minuetige Klausursimulation fuer eine EF-Lerngruppe.
 SITUATION: Die Gruppe bearbeitet die vier Aufgaben aus Schritt 3 unter realen Bedingungen (ca. 47 Minuten) und korrigiert danach mit EHZ selbst. Beurteile in zusammenhaengender Stellungnahme (ca. 150 Woerter), wie die Zeit sinnvoll verteilt und worauf beim Selbstkorrigieren geachtet wird.
 RUBRIC (30 XP): Zeitverteilung mit Begruendung (10 XP) | Typische Verluste wie Ansatz, Einheit, Bewertung (10 XP) | Vorgehen mit EHZ (5 XP) | Fachsprachlich korrekte Darstellung (5 XP).
 
-## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
+## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY (Kernzusammenfassung):
 

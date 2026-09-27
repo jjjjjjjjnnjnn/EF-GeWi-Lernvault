@@ -149,7 +149,7 @@ SITUATION: Eine Gemeinde will einer Gruppe ein öffentliches Platzverbot erteile
 
 RUBRIC (30 XP): Benennung der kollidierenden Grundrechte bzw. Rechtsgüter (5 XP) | Erläuterung der praktischen Konkordanz als Lösungsregel (10 XP) | Analyse der Folgen einer einseitigen Lösung (z. B. Wesensgehalt, Verhältnismäßigkeit) (10 XP) | Kriteriengeleitetes Urteil mit Abwägung (5 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY 1盒（核心总结）：
 

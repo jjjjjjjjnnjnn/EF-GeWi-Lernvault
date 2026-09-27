@@ -128,8 +128,7 @@ Redemittel: `Die Bewegung gliedert sich in drei Phasen; entscheidend ist die Hau
 
 Klausur-Satz: `Beschreiben heisst, die Phasen zu benennen; erklaeren heisst, die entscheidende Phase mit einem Mechanismus zu begruenden.`
 
-## Schritt 6 — check: Verständnisprüfung
-
+## Schritt 6 — check: Selbsttest zu Bewegung erklären
 CHECK (3 Fragen zur Selbstkontrolle mit Antworten):
 
 FRAGE: In welche drei Phasen gliedert sich jede Bewegung? | ANTWORT: In die Vorbereitungsphase, die Hauptphase und die Endphase.
@@ -149,13 +148,12 @@ Klausur-Satz: `Eine vollstaendige Bewegungserklaerung besteht aus der Phasenglie
    Korrektur: Als Begruendung zaehlt nur ein konkreter Mechanismus, biomechanisch oder physiologisch. Die blosse Behauptung von Wichtigkeit bleibt leer und erhaelt keine Punkte.
    Korrektur-Satz: `Als Begruendung gilt nur ein konkreter Mechanismus, biomechanisch oder physiologisch, nicht die blosse Behauptung, eine Phase sei wichtig.`
 
-## Schritt 7 — szenario: Klausurtransfer & Rubric
-
+## Schritt 7 — szenario: Klausurtransfer: Bewegung erklären
 ROLLE: Du bist Pruefling in einer muendlichen Sportpruefung und sollst eine Bewegung aus deinem Kurs erklaeren.
 SITUATION: Der Pruefer fordert dich auf, eine von dir gewaehlte Bewegung (zum Beispiel den Absprung beim Weitsprung oder den Kugelstoss) in drei Phasen zu erklaeren. Sprich in zusammenhaengenden deutschen Saetzen (ca. 2 Minuten): Nenne die drei Phasen, markiere die Hauptphase, begruende sie biomechanisch oder physiologisch mit einem weil-Satz und nenne einen haeufigen Fehler mit Korrektur.
 RUBRIC (30 XP): Vollstaendige Nennung der drei Phasen mit je einer Taetigkeit (8 XP) | Korrekte Markierung der Hauptphase (5 XP) | Biomechanische oder physiologische Begruendung mit weil-Satz und Fachbegriff (10 XP) | Ein typischer Fehler mit konkreter Korrektur (4 XP) | Freies, zusammenhaengendes Sprechen mit Fachsprache (3 XP).
 
-## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
+## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY (Kernzusammenfassung):
 

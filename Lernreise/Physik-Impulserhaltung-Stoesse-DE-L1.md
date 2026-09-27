@@ -121,7 +121,7 @@ ANTWORT: A erfordert Verfahren (i) plus (ii): Impulsbilanz aufstellen und $E_{ki
 
 Klausur-Satz: `Kleben verrät den unelastischen Stoss, getrenntes Weiterrollen verlangt den Energietest.`
 
-## Schritt 6 — check: Verständnisprüfung
+## Schritt 6 — check: Selbsttest zu Impulserhaltung und Stoesse
 CHECK (Selbsttest, 3 Fragen mit Antworten):
 
 FRAGE: Wie lautet die Impulsbilanz beim geraden Stoss? | ANTWORT: $m_1 v_1 + m_2 v_2 = m_1 u_1 + m_2 u_2$ mit Vorzeichen je Richtung.
@@ -140,12 +140,12 @@ Klausur-Satz: `Ohne Vorzeichenregel ist keine Impulsbilanz klausurtauglich.`
    Korrektur: Impuls ist linear in $v$ und vektoriell, Energie quadratisch in $v$ und skalar.
    Korrektur-Satz: `Der Impuls ist linear in v und vektoriell, die kinetische Energie ist quadratisch in v und skalar.`
 
-## Schritt 7 — szenario: Klausurtransfer & Rubric
+## Schritt 7 — szenario: Klausurtransfer: Impulserhaltung und Stoesse
 ROLLE: Du bist Praktikantin im Verkehrslabor.
 SITUATION: Zwei Spielzeugwagen stossen auf der Luftkissenbahn zusammen; Wagen 2 stand vorher. Bestimmen Sie aus Messwerten Stossart und Energieverlust. Formulieren Sie in circa 150 Woertern die Auswertung mit Impulsbilanz und Energietest und beurteilen Sie, ob elastischer Stoss vorliegt.
 RUBRIC (30 XP): Korrekte Impulsbilanz mit Vorzeichen (10 XP) | Energietest mit Zahlen (10 XP) | Urteil zur Stossart mit Begruendung (6 XP) | Fachsprachliche Darstellung (4 XP).
 
-## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
+## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
 TAKEAWAY (Kernzusammenfassung):
 
 Impuls immer bilanzieren, Energie zusaetzlich testen: erhalten plus erhalten bedeutet elastisch, Impuls erhalten plus Energie verloren bedeutet unelastisch.

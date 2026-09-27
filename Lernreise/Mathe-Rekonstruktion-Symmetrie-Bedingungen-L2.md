@@ -120,7 +120,7 @@ ROLLE: Du bist Tutorin und korrigierst eine Rekonstruktion.
 SITUATION: Ein Mitschueler legt fuer eine achsensymmetrische Funktion vierten Grades den Ansatz $f(x) = ax^4 + bx^3 + cx^2 + dx + e$ vor und wundert sich ueber fehlende Gleichungen. Erklaere in circa 150 Woertern, wie der korrekte reduzierte Ansatz lautet, welche drei Bedingungen genuegen und wie die Kontrolle aussieht.
 RUBRIC (30 XP): Korrekter reduzierter Ansatz (8 XP) | Drei Bedingungen sauber eingesetzt (10 XP) | Loesung mit Kontrolle der Symmetrie (8 XP) | Fachsprachliche Begruendung (4 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY:
 

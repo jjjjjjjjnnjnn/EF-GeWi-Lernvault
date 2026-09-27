@@ -121,7 +121,7 @@ ROLLE: Du bist Sachbearbeiterin im Sozialausschuss.
 SITUATION: Vorgeschlagen wird, Beitragssatz und Rentenniveau gesetzlich gleichzeitig einzufrieren. Beurteile in circa 150 Woertern mit der Umlagegleichung, warum dieser Vorschlag bei alternder Bevoelkerung scheitert, und empfehle eine tragfaehige Kombination.
 RUBRIC (30 XP): Umlagegleichung korrekt (8 XP) | Demografiewirkung analysiert (10 XP) | Bewertung des Vorschlags (6 XP) | Begruendete Alternative (6 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY:
 

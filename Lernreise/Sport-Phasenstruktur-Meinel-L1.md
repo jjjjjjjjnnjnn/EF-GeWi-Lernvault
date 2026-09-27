@@ -146,7 +146,7 @@ ROLLE: Du bist Prüfling in einer mündlichen Sportprüfung und sollst eine Bewe
 SITUATION: Der Prüfer bittet dich, den Absprung beim Weitsprung zu beschreiben und anhand eines selbst erstellten Beobachtungsbogens eine Ausführung zu beurteilen, bei der ein Sportler kurz vor dem Brett abbremst. Erkläre deine Analyse mündlich in zusammenhängenden deutschen Sätzen (ca. 2 Minuten) und begründe dein Urteil mit biomechanischen Argumenten.
 RUBRIC (30 XP): Gliederung der Bewegung in Phasen mit korrekter Fachsprache (5 XP) | Benennung der Hauptphase und Begründung mit biomechanischer Wirkung (10 XP) | Vorlage eines Beobachtungsbogens mit konkreten Indikatoren (10 XP) | Kriteriengeleitetes Urteil über die abgebremste Ausführung mit Korrekturvorschlag (5 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY 1盒（核心总结）：
 

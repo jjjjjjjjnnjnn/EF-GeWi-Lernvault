@@ -149,7 +149,7 @@ SITUATION: Eine Diskussion dreht sich um die Frage, ob Werbung für ungesunde od
 
 RUBRIC (30 XP): Benennung und Einordnung der Instrumente (Verbot, Anreiz, Label) (5 XP) | Analyse der Wirkung auf die Kaufentscheidung und die Souveränität (10 XP) | Abwägung von Eingriffstiefe und Wirksamkeit (10 XP) | Kriteriengeleitetes Urteil (z. B. Kriterium Wirksamkeit oder Freiheit) (5 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY 1盒（核心总结）：
 

@@ -120,7 +120,7 @@ ROLLE: Du bist Klausurkorrektorin in der EF.
 SITUATION: Eine Klausur listet Bilder ohne Verfahren und Epoche auf. Formuliere in circa 150 Woertern ein Feedback mit Reihungsnachweis, Klangbefund und Epochenurteil.
 RUBRIC (30 XP): Bildnachweise korrekt (6 XP) | Verfahrensbestimmung (10 XP) | Epochenurteil (10 XP) | Fachsprachliche Rueckmeldung (4 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY:
 

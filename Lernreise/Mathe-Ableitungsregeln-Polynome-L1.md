@@ -134,7 +134,7 @@ SITUATION: Ein Mitschueler hat $f(x) = 4x^3 - 5x^2 + 7x - 2$ abgeleitet und als 
 (Tipp: Du kannst deine Erklärung handschriftlich auf Papier verfassen und als Foto oder Screenshot hochladen, um sie mit den Bewertungskriterien pruefen zu lassen.)
 RUBRIC (30 XP): Benennung des Fehlers — Exponent nicht verringert, Konstante nicht beachtet (5 XP) | Korrekte gliedweise Ableitung $f'(x) = 12x^2 - 10x + 7$ (10 XP) | Begruendung mit Potenz-, Faktor- und Summenregel (10 XP) | Abgrenzung berechnen gegen nachweisen (5 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY 1盒（核心总结）：
 

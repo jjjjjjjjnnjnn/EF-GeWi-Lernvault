@@ -126,7 +126,7 @@ ROLLE: Du bist Pruefling in der muendlichen Pruefung.
 SITUATION: Stelle in circa 2 Minuten eine Kurve vor: Schwellen markieren, Zonen zuordnen und zwei Trainingsempfehlungen mit Begruendung geben.
 RUBRIC (30 XP): Schwellen korrekt (8 XP) | Zonen zugeordnet (8 XP) | Zwei Empfehlungen (8 XP) | Fachsprachlicher Vortrag (6 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY:
 

@@ -128,8 +128,7 @@ ANTWORT: A erfordert Konzept (i): Kleiner Nutzen gegen grosses Tierleid abwaegen
 
 Klausur-Satz: `Nutzenethik rechnet, Verantwortungsethik verpflichtet: Beide koennen zum gleichen Verbot fuehren.`
 
-## Schritt 6 — check: Verständnisprüfung
-
+## Schritt 6 — check: Selbsttest zu Tierethik und Verantwortungsprinzip
 CHECK检索默写（自测 3 题，与答案配对）：
 
 FRAGE: Was ist Speziesismus nach Singer? | ANTWORT: Diskriminierung allein nach Artzugehoerigkeit, analog zu Rassismus, moralisch unbegruendet.
@@ -150,14 +149,13 @@ Klausur-Satz: `Ohne Kriterium bleibt Tierethik Gefuehl, mit Kriterium wird sie p
    中文纠偏：两者可以汇合于同一结论（如禁工厂养殖），只是理由不同。高分答案恰恰展示"两条路通一结论"，再比较哪条更强。
    Korrektur-Satz: `Verschiedene Begruendungen koennen dieselbe Norm stuetzen und sich ergaenzen.`
 
-## Schritt 7 — szenario: Klausurtransfer & Rubric
-
+## Schritt 7 — szenario: Klausurtransfer: Tierethik und Verantwortungsprinzip
 ROLLE: Du schreibst einen Leserbrief an die Lokalzeitung zur neuen Huehnerfarm.
 SITUATION: Die Farm verspricht billige Eier, Tierschuetzer warnen vor Kaefighaltung.
 AUFGABE: Nehmen Sie in ca. 150 Woertern mit Singer und Jonas Stellung und antworten Sie auf das Arbeitsplatz-Argument.
 RUBRIC (30 XP): Singer-Nutzenbilanz korrekt (10 XP) | Jonas-Verantwortung korrekt (10 XP) | Arbeitsplatz-Einwand entkraeftet plus Urteil (10 XP).
 
-## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
+## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY 1盒（核心总结）：
 

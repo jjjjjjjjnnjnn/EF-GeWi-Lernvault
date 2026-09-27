@@ -121,7 +121,7 @@ ANTWORT: A erfordert Verfahren (i): $v = 2\pi r f = 2\pi \cdot 0{,}30 \cdot 2{,}
 
 Klausur-Satz: `Kinematische Fragen nach v und ω verlangen das Bahn-Verfahren, Fragen nach Halten oder Reissen verlangen das Kraft-Verfahren mit F_Z.`
 
-## Schritt 6 — check: Verständnisprüfung
+## Schritt 6 — check: Selbsttest zu Gleichfoermige Kreisbewegung
 CHECK (Selbsttest, 3 Fragen mit Antworten):
 
 FRAGE: Wie folgen $v$ und $\omega$ aus $r$, $T$ und $f$? | ANTWORT: $v = 2\pi r/T = \omega r$ und $\omega = 2\pi f = 2\pi/T$; $v$ tangential, $\omega$ als Drehtempo.
@@ -140,12 +140,12 @@ Klausur-Satz: `Die Formeln v = 2πr/T, ω = 2πf und F_Z = m v^2/r bilden das ge
    Korrektur: Im Inertialsystem existiert keine Kraft nach aussen; real ist nur die Resultierende nach innen. Aussen wirkt nur im mitrotierenden System als Hilfsgroesse und gehoert nicht ins Kraeftebild.
    Korrektur-Satz: `Im Inertialsystem existiert keine reale Zentrifugalkraft nach aussen; die einzige reale Radialkraft ist die Zentripetalkraft nach innen.`
 
-## Schritt 7 — szenario: Klausurtransfer & Rubric
+## Schritt 7 — szenario: Klausurtransfer: Gleichfoermige Kreisbewegung
 ROLLE: Du bist Tutor in der EF und erklaerst einer Mitschuelerin die Kurvenphysik.
 SITUATION: Nach Regen ist ein Auto in flacher Kurve ($r = 60\,\mathrm{m}$) gerutscht. Die Mitschuelerin sagt: Die Fliehkraft zog das Auto hinaus. Nimm in zusammenhaengender Darstellung (ca. 150 Woerter) Stellung, rechne mit $v = 20\,\mathrm{m/s}$, $m = 1000\,\mathrm{kg}$ die noetige $F_Z$ aus und beurteile die Aussage. Schreibe Antwort mit Formeln, Rechnung, Kraftdeutung und Urteil.
 RUBRIC (30 XP): Rechnung mit $F_Z = m v^2/r$ (10 XP) | Deutung Haftreibung als Lieferant (10 XP) | Urteil: keine reale Kraft nach aussen, sondern Traegheit bei fehlender $F_Z$ (10 XP).
 
-## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
+## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
 TAKEAWAY (Kernzusammenfassung):
 
 Bahn tangential mit $v = 2\pi r/T$, Kraft radial mit $F_Z = m v^2/r$; doppelte Geschwindigkeit verlangt vierfache Haftung. Das Bild zeigt nur reale Kraefte nach innen, niemals Fliehkraft; Rutschen heisst fehlende Zentripetalkraft bei gerader Traegheit.

@@ -121,8 +121,7 @@ ANTWORT: A erfordert Verfahren (i): Ohne $Promotor$ bindet keine $RNA$-$Polymera
 
 Klausur-Satz: `Fehlt der Start, fehlt alles; kommt Stopp frueh, bleibt der Rest aus.`
 
-## Schritt 6 — check: Verständnisprüfung
-
+## Schritt 6 — check: Selbsttest zu Proteinbiosynthese Transkription und Translation
 CHECK (drei Fragen mit Antworten):
 
 FRAGE: Wo laufen Transkription und Translation ab? | ANTWORT: Transkription im $Nukleus$ als $DNA \to mRNA$, Translation am $Ribosom$ als $mRNA \to Protein$.
@@ -142,14 +141,13 @@ Klausur-Satz: `Komplementaer paaren heisst A-U und G-C beachten.`
    Korrektur: Der Code ist degeneriert: $GCU$, $GCC$, $GCA$ und $GCG$ bedeuten alle $Ala$.
    Korrektur-Satz: `Der Code ist redundant, aber eindeutig in Leserichtung.`
 
-## Schritt 7 — szenario: Klausurtransfer & Rubric
-
+## Schritt 7 — szenario: Klausurtransfer: Proteinbiosynthese Transkription und Translation
 ROLLE: Du bist Tutor im Biokurs.
 SITUATION: Ein Mitschueler uebersetzt $3'-AUG$-$5'$ direkt als $Met$ und ignoriert die Richtung.
 AUFGABE (vergleichen, AFB III): Korrigieren Sie die Leserichtung in einer zusammenhaengenden Darstellung (ca. 150 Woerter) mit $5' \to 3'$-Regel, $Codon$-$Anticodon$-Paarung und Auswirkung auf das Protein.
 RUBRIC (30 XP): Richtungsregel $5' \to 3'$ korrekt (10 XP) | Beispiel $AUG$ gegen $GUA$ ($Val$) (10 XP) | $Ribosom$-$tRNA$-Mechanismus genannt (5 XP) | Geschlossene Darstellung (5 XP).
 
-## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
+## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY (Kernbotschaft in einem Kasten):
 

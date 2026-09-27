@@ -120,7 +120,7 @@ ROLLE: Du bist Redakteurin der Schuelerzeitung.
 SITUATION: Die Busfahrer kuendigen Warnstreiks an; Eltern fordern ein Verbot. Beurteile in circa 150 Woertern, ob ein Verbot mit Artikel 9 Absatz 3 vereinbar waere, und ordne Warnstreiks in die Eskalationskette ein.
 RUBRIC (30 XP): Grundrechtsbezug korrekt (8 XP) | Eskalationskette eingeordnet (10 XP) | Abwaegung mit Gemeinwohl (8 XP) | Fachsprachliche Darstellung (4 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY:
 

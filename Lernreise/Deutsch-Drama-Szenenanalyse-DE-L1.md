@@ -136,8 +136,7 @@ ANTWORT: A erfordert Verfahren (i): Lena hat Geld aus der Kasse genommen; ihr Va
 
 Klausur-Satz: `Erst die Analyse der Beziehungsebene und des Subtexts erklärt, worum es in der Szene wirklich geht.`
 
-## Schritt 6 — check: Verständnisprüfung
-
+## Schritt 6 — check: Selbsttest zu Szenenanalyse im Drama
 CHECK (Selbsttest, 3 Fragen mit Antworten):
 
 FRAGE: In welchen vier Schritten analysiert man eine Dramenszene? | ANTWORT: Lokalisieren (Akt, Szene, Situation), Dialoganalyse, Figurenkonstellation und Szenenfunktion.
@@ -158,13 +157,12 @@ Klausur-Satz: `Sachebene und Beziehungsebene fallen oft auseinander; gerade dies
    Korrektur: Gestik und Ton in Klammern sind der Schluessel zum Subtext. Lenas Wechsel von Stehen zu Sitzen, von laut zu leise, zeigt die Machtlage deutlicher als die Woerter.
    Korrektur-Satz: `Die Regieanweisungen sind keine Nebensache, sondern ein zentraler Beleg für den Subtext einer Szene.`
 
-## Schritt 7 — szenario: Klausurtransfer & Rubric
-
+## Schritt 7 — szenario: Klausurtransfer: Szenenanalyse im Drama
 ROLLE: Du bist Regieassistentin und erklaerst dem Ensemble eine Szene aus einem fiktiven Stueck fuer die Probenarbeit.
 SITUATION: Das Ensemble versteht nicht, warum die Szene zwischen Herrn Berg und Lena trotz der Geld-Frage von Vertrauen handelt. Erklaere in einer zusammenhaengenden Antwort (ca. 150 Woerter) Beziehungsebene, Figurenkonstellation und Szenenfunktion und belege deine Deutung am Text.
 RUBRIC (30 XP): Trennung von Sachebene und Beziehungsebene (5 XP) | Analyse des Subtexts mit Beleg und Zeile (10 XP) | Darstellung der Konstellation mit Ziel und Mittel (10 XP) | Bestimmung der Szenenfunktion (5 XP).
 
-## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
+## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY (Kernzusammenfassung):
 

@@ -127,7 +127,7 @@ ROLLE: Du bist Tutor und kontrollierst eine Gleichgewichtsrechnung.
 SITUATION: Ein Kursmitglied verwechselt $Q$ mit $K_c$ und vergisst die Probe der Naeherung. Erklaere in zusammenhaengender Darstellung (ca. 150 Woerter) an einem Zahlenbeispiel, wie man $Q$ berechnet, die Richtung bestimmt und die Naeherung prueft.
 RUBRIC (30 XP): $Q$-Rechnung mit MWG-Ausdruck (10 XP) | Richtungsbegruendung ueber $K_c$ (8 XP) | Naeherungspruefung mit $5\%$-Regel (8 XP) | Fachsprachliche Korrektheit (4 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY 1盒（核心总结）：
 

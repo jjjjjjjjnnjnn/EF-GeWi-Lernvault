@@ -119,7 +119,7 @@ ROLLE: Du bist Verfahrenstechnikerin im Ammoniakwerk.
 SITUATION: Nach Produktentnahme meldet das Labor Momentanwerte mit $Q < K_c$. Erklaere in circa 150 Woertern mit $Q$-Rechnung, wohin die Anlage wandert und warum kein Eingriff noetig ist, solange Temperatur und Druck stabil bleiben.
 RUBRIC (30 XP): $Q$-Ausdruck korrekt (8 XP) | Vergleich mit $K_c$ (10 XP) | Ausgleichsprognose (8 XP) | Fachsprachliche Darstellung (4 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY:
 

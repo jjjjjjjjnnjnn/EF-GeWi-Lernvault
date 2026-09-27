@@ -146,7 +146,7 @@ ROLLE: Du bist EF-Tutor und erklärst einer Mitschülerin den Zusammenhang zwisc
 SITUATION: Die Mitschülerin hat drei Aufgaben verwechselt: (1) Sie soll Natrium im Periodensystem einordnen, (2) sie soll begründen, warum MgO eine Ionenbindung ist, und (3) sie soll aus 4,0 g NaOH (M = 40 g/mol) die Stoffmenge berechnen. Erkläre ihr in einer zusammenhängenden Antwort (ca. 150 Wörter), welches Verfahren zu welcher Aufgabe gehört und führe die Rechnung zu (3) vollständig durch.
 RUBRIC (30 XP): Zuordnung der drei Aufgaben zu Struktur- bzw. Stoffmengen-Verfahren (8 XP) | Korrekte Einordnung von Na (3. Periode, 1. Hauptgruppe) (6 XP) | Begründung der Ionenbindung in MgO aus den Bindungspartnern (8 XP) | Vollständige Rechnung n = 4,0/40 = 0,10 mol mit Einheit (8 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY 1盒（核心总结）：
 

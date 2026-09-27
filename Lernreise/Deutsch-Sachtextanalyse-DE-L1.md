@@ -132,8 +132,7 @@ ANTWORT: A erfordert Verfahren (i): Es handelt sich um eine rhetorische Frage, a
 
 Klausur-Satz: `Die Benennung allein genügt nicht; erst die Wirkungsanalyse zeigt, wohin der Autor den Leser lenkt.`
 
-## Schritt 6 — check: Verständnisprüfung
-
+## Schritt 6 — check: Selbsttest zu Leserlenkung und Rhetorik im Sachtext
 CHECK (Selbsttest, 3 Fragen mit Antworten):
 
 FRAGE: Aus welchen drei Schritten besteht die rhetorische Analyse? | ANTWORT: Benennung des Mittels, Beleg mit Zeile und Analyse von Funktion und Leserwirkung.
@@ -154,13 +153,12 @@ Klausur-Satz: `Eine überzeugende Wirkungsanalyse nennt immer das Ziel: Wohin wi
    Korrektur: Qualitaet schlaegt Menge. Zwei Mittel mit Wirkung und Rueckbindung zaehlen mehr als zehn Benennungen ohne Tiefe.
    Korrektur-Satz: `Zwei gründlich analysierte Mittel mit Wirkung sind wertvoller als eine lange Liste bloßer Benennungen.`
 
-## Schritt 7 — szenario: Klausurtransfer & Rubric
-
+## Schritt 7 — szenario: Klausurtransfer: Leserlenkung und Rhetorik im Sachtext
 ROLLE: Du bist Redakteurin der Schuelerzeitung und bewertest in einem Werkstattgespraech einen Leserkommentar.
 SITUATION: Ein Gastkommentar argumentiert fuer ein naechtliches Handyverbot in Familien. Der Autor nutzt rhetorische Fragen, eine Antithese und einen Schlussappell. Beurteile in einer zusammenhaengenden Stellungnahme (ca. 150 Woerter), wie der Autor seine Leser lenkt und wie ueberzeugend dies gelingt.
 RUBRIC (30 XP): Benennung zweier Lenkungsmittel mit Zeile (5 XP) | Analyse von Funktion und Leserwirkung je Mittel (10 XP) | Rueckbindung an These und Intention (10 XP) | Kriteriengeleitetes Urteil zur Ueberzeugungskraft (5 XP).
 
-## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
+## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY (Kernzusammenfassung):
 

@@ -149,7 +149,7 @@ SITUATION: Deine Gruppe soll auf einem Podium ein Wahlprogramm zum Thema Bildung
 
 RUBRIC (30 XP): Benennung der Funktion von Parteien nach Art. 21 GG (5 XP) | Analyse der Vor- und Nachteile der Volkspartei (10 XP) | Erörterung der Rolle der Sperrklausel für kleine Parteien (10 XP) | Kriteriengeleitetes Urteil (z. B. Kriterium Repräsentation oder Stabilität) (5 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY 1盒（核心总结）：
 

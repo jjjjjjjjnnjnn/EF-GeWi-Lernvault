@@ -136,8 +136,7 @@ ANTWORT: A erfordert den Begriff Atmung: Gemeint ist der Austausch von Sauerstof
 
 Klausur-Satz: `Der Begriff Atmung bezeichnet den Gasaustausch des Organismus, waehrend die Zellatmung den Energiegewinnungsprozess in der Zelle meint.`
 
-## Schritt 6 — check: Verständnisprüfung
-
+## Schritt 6 — check: Selbsttest zu CN-Begriffe: dreisprachige Terminologie DE-CN-EN
 CHECK (drei Fragen mit Antworten):
 
 FRAGE: Wie lautet der deutsche Fachbegriff fuer den Wassertransport durch eine semipermeable Membran, und was bewegt sich dabei? | ANTWORT: Der Begriff lautet die Osmose; dabei bewegt sich das Wasser durch eine selektiv permeable Membran zur Seite der hoeheren Teilchenkonzentration.
@@ -157,14 +156,13 @@ Klausur-Satz: `In der Klausur zaehlt nicht das isolierte Fachwort, sondern der v
    Korrektur: Ein Ausdruck kann mehreren deutschen Fachwoertern entsprechen; daher muss zuerst das Konzept geklaert und erst dann der Begriff gewaehlt werden.
    Korrektur-Satz: `Ein Begriff der Ausgangssprache kann mehreren deutschen Fachwoertern entsprechen; daher muss zuerst das Konzept geklaert und erst dann der Begriff gewaehlt werden.`
 
-## Schritt 7 — szenario: Klausurtransfer & Rubric
-
+## Schritt 7 — szenario: Klausurtransfer: CN-Begriffe: dreisprachige Terminologie DE-CN-EN
 ROLLE: Du bist Tutorin in einer deutschsprachigen Lerngruppe und hilfst einer Mitschaelerin, die mit den Fachbegriffen durcheinanderkommt.
 SITUATION: Deine Mitschaelerin hat in ihrer Klausur geschrieben: Die Atmung findet in den Mitochondrien statt und produziert ATP.
 AUFGABE (AFB II/III): Erklaere ihr in einer zusammenhaengenden Stellungnahme (ca. 150 Woerter), welche Begriffe sie verwechselt hat, wie die korrekten deutschen Fachbegriffe lauten und wie sie daraus einen fehlerfreien Fachsatz bilden kann.
 RUBRIC (30 XP): Benennung der verwechselten Begriffe Atmung und Zellatmung (5 XP) | Korrekte Zuordnung der beiden Begriffe zu ihren Ebenen, Organismus bzw. Zelle (10 XP) | Umformulierung in einen korrekten deutschen Fachsatz mit Artikel und Numerus (10 XP) | Hinweis auf die Brueckenfunktion von Konzept, Terminologie und Satz (5 XP).
 
-## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
+## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY (Kernbotschaft in einem Kasten):
 

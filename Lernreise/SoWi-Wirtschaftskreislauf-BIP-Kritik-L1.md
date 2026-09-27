@@ -134,7 +134,7 @@ ROLLE: Du bist EF-Schuelerin und schreibst einen Leserbrief an die Lokalzeitung.
 SITUATION: Die Stadt feiert ein gestiegenes regionales BIP nach einem Sturmjahr mit viel Wiederaufbau, waehrend Parks zerstoert und viele ehrenamtliche Helfer erschoepft sind. Beurteilen Sie in einer zusammenhaengenden Darstellung (ca. 150 Woerter) die Lage mit dem erweiterten Kreislauf, der BIP-Kritik in vier Punkten und NWI/HDI.
 RUBRIC (30 XP): Kreislauf mit Sektorbezug korrekt (5 XP) | Drei Berechnungsarten oder Formel C + I + G + (Ex - Im) genannt (5 XP) | Vier Kritikpunkte vollstaendig (10 XP) | NWI/HDI plus begruendetes Urteil Wachstum vs. Wohlfahrt (10 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY 1盒（核心总结）：
 

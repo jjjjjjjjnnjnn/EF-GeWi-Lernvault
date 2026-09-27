@@ -140,7 +140,7 @@ ROLLE: Du bist Klausurteilnehmer/in und bearbeitest eine Karikatur-Aufgabe unter
 SITUATION: In der Klausur liegt eine selbst erstellte Karikatur vor: Eine Wahlurne ist als Muelltonne gezeichnet; ein junger Mensch sitzt mit dem Smartphone auf dem Sofa, waehrend draussen Gleichaltrige mit Plakaten demonstrieren. Die Unterschrift lautet sinngemaess „Waehlen? Kein Bock. — Demo? Bin dabei!". Bearbeiten Sie die Aufgabe in 15 Minuten: Beschreiben Sie die Karikatur in hoechstens fuenf Saetzen (AFB I, 6 BE), analysieren Sie die Symbole im Kontext des Partizipationswandels (AFB II, 10 BE) und beurteilen Sie ihre Aussage nach dem Kriterium der Teilhabe (AFB III, 8 BE).
 RUBRIC (30 XP): Beschreibung ohne Deutung mit Figuren, Objekten und Text (6 XP) | Symboldeutung mit Realbezug und Kontext (Partizipationswandel) (8 XP) | Benennung der Intention des Karikaturisten (4 XP) | Kriterium der Teilhabe, Pro/Contra und begruendetes Urteil (8 XP) | Zeitdisziplin und klare Dreiteilung (4 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY 1盒（核心总结）：
 

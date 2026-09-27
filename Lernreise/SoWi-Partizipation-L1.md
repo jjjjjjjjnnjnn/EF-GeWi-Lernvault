@@ -152,7 +152,7 @@ SITUATION: Die Stadt will einen Bürgerrat zum Thema Verkehr einrichten. Ein Tei
 
 RUBRIC (30 XP): Benennung von Begriff und Verfahren des Bürgerrats (5 XP) | Analyse der Vorteile — Entpolarisierung, Alltagsperspektive (10 XP) | Analyse der Nachteile — fehlende Legitimation, fehlende Verbindlichkeit (10 XP) | Kriteriengeleitetes Urteil (z. B. Kriterium Verbindlichkeit) (5 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY 1盒（核心总结）：
 

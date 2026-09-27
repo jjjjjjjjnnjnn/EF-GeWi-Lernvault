@@ -128,8 +128,7 @@ Redemittel: `Dieser Plan verstoesst gegen das Prinzip der Belastung und Erholung
 
 Klausur-Satz: `Waehrend das Superkompensationsmodell den richtigen Zeitpunkt des Reizes bestimmt, liefert die Prinzipienpruefung die Kriterien fuer die Beurteilung des gesamten Plans.`
 
-## Schritt 6 — check: Verständnisprüfung
-
+## Schritt 6 — check: Selbsttest zu Superkompensation und die Prinzipien des Ausdauertrainings
 CHECK (3 Fragen zur Selbstkontrolle mit Antworten):
 
 FRAGE: Beschreiben Sie den Verlauf der Superkompensation in vier Phasen. | ANTWORT: Belastung, Ermuedung (Absinken), Erholung (Anstieg ueber das Ausgangsniveau gleich Superkompensation) und Rueckkehr auf das Ausgangsniveau.
@@ -149,13 +148,12 @@ Klausur-Satz: `Je hoeher die Belastungsintensitaet, desto laenger die notwendige
    Korrektur: Muskelkater ist eine Ermuedungserscheinung, Superkompensation eine spaetere Leistungsspitze. Beide liegen an verschiedenen Punkten der Kurve. Schmerz als Erfolgsmassstab fuehrt zu falschen Abstaenden.
    Korrektur-Satz: `Muskelkater und Superkompensation sind nicht dasselbe: Der Muskelkater ist eine Ermuedungserscheinung, die Superkompensation eine spaetere Leistungsspitze.`
 
-## Schritt 7 — szenario: Klausurtransfer & Rubric
-
+## Schritt 7 — szenario: Klausurtransfer: Superkompensation und die Prinzipien des Ausdauertrainings
 ROLLE: Du bist Pruefling in einer muendlichen Sportpruefung und sollst einen Trainingsplan fuer einen Mitschueler begruendet vorstellen.
 SITUATION: Ein Mitschueler moechte seine aerobe Ausdauer verbessern und plant, einmal pro Woche 3 mal 800 m in maximalem Tempo mit 5 Minuten Pause zu laufen. Erklaere ihm muendlich in zusammenhaengenden deutschen Saetzen (ca. 2 Minuten), ob dieser Plan sinnvoll ist, indem du ihn sowohl mit dem Superkompensationsmodell als auch mit den Trainingsprinzipien beurteilst, und schlage eine bessere Alternative vor.
 RUBRIC (30 XP): Benennung des Modells und der relevanten Trainingsprinzipien (5 XP) | Analyse des Superkompensationsverlaufs und der Reizhaeufigkeit (10 XP) | Feststellung der Ziel-Verfahren-Fehlpassung (Ziel aerob, Plan aber hochintensiv mit langen Pausen) (10 XP) | Kriteriengeleiteter Verbesserungsvorschlag mit konkreten Belastungsgroessen (5 XP).
 
-## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
+## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY (Kernzusammenfassung):
 

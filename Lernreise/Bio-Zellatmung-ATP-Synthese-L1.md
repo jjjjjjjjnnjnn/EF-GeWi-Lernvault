@@ -146,7 +146,7 @@ ROLLE: Du bist Tutorin in der EF und erklaerst einer Mitschuelerin die Zellatmun
 SITUATION: Deine Mitschuelerin versteht nicht, warum ein Gift wie Cyanid so schnell toetet, obwohl das Opfer normal atmet. Erklaere in einer zusammenhaengenden Darstellung (ca. 150 Woerter) die Gesamtgleichung, die vier Phasen mit Orten und die Rolle von Sauerstoff sowie Komplex IV.
 RUBRIC (30 XP): Korrekte Gesamtgleichung (5 XP) | Vier Phasen mit Ort und Produkt korrekt (10 XP) | Sauerstoff als terminaler Akzeptor erklaert (10 XP) | Cyanid-Blockade von Komplex IV als Fazit (5 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY 1盒（核心总结）：
 

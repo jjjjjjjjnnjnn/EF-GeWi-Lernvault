@@ -116,7 +116,7 @@ SITUATION: Ein Mitschueler behauptet, Meselson-Stahl habe konservative Replikati
 AUFGABE (vergleichen, AFB III): Widerlegen Sie die Deutung in einer zusammenhaengenden Darstellung (ca. 150 Woerter) mit Bandenprognose aller drei Modelle und Enzymbegruendung.
 RUBRIC (30 XP): Banden Runde eins und zwei korrekt (10 XP) | Alle drei Modelle verglichen (10 XP) | Leit- und Folgestrang mit $5' \to 3'$ genannt (5 XP) | Geschlossene Darstellung (5 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY: Merke Oeffnen, Starten, Bauen, Verbinden: $Helikase + Primase + Polymerase + Ligase$ erzeugen $2 \times (alt + neu)$. Bandenregel: $1 \times hybrid$ nach eins, $hybrid + leicht$ nach zwei.
 

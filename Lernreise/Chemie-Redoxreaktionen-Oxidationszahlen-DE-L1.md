@@ -114,8 +114,7 @@ ANTWORT: A erfordert Verfahren (i): $Zn: 0 \to +II$ und $Cu: +II \to 0$, also Re
 
 Klausur-Satz: `Ohne OZ-Aenderung keine Redoxreaktion.`
 
-## Schritt 6 — check: Verständnisprüfung
-
+## Schritt 6 — check: Selbsttest zu Redoxreaktionen und Oxidationszahlen
 CHECK (Selbsttest, 3 Fragen):
 
 FRAGE: Was ist Oxidation, was Reduktion? | ANTWORT: Oxidation: $Red \to Ox + e^-$; Reduktion: $Ox + e^- \to Red$.
@@ -135,14 +134,13 @@ Klausur-Satz: `Das Mittel bewirkt das Gegenteil seiner selbst.`
    Korrektur: Sie sind Bilanzhilfen; in $H_2$ gilt $0$, in $H_2O$ gilt $+I$, obwohl kein Ion vorliegt.
    Korrektur-Satz: `Oxidationszahlen bilanzieren Elektronen, sie messen keine echten Ionen.`
 
-## Schritt 7 — szenario: Klausurtransfer & Rubric
-
+## Schritt 7 — szenario: Klausurtransfer: Redoxreaktionen und Oxidationszahlen
 ROLLE: Du bist Tutor im Chemiekurs.
 SITUATION: Ein Mitschueler schreibt $Fe + O_2 \to Fe_2O_3$ ohne Koeffizienten und nennt Eisen das Oxidationsmittel.
 AUFGABE (begruenden, AFB III): Korrigieren Sie Gleichung und Begriffe in einer zusammenhaengenden Darstellung (ca. 150 Woerter) mit OZ-Bestimmung und Teilgleichungen.
 RUBRIC (30 XP): OZ $Fe: 0 \to +III$ und $O: 0 \to -II$ (10 XP) | Bilanz $4Fe + 3O_2 \to 2Fe_2O_3$ (10 XP) | Korrekte Mittelzuordnung (5 XP) | Geschlossene Darstellung (5 XP).
 
-## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
+## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY: Merke Zahl, Richtung, Bilanz: OZ bestimmen, $e^-$-Richtung deuten, Teilgleichungen angleichen. Anker: $Red \to Ox + e^-$ und $Ox + e^- \to Red$.
 

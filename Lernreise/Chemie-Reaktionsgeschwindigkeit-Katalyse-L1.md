@@ -132,7 +132,7 @@ SITUATION: Die Gruppe fragt, warum ein kleines Kat-Blech die giftigen Gase CO un
 AUFGABE: Schreibe eine Klausur-Antwort mit Berechnungsskizze, Teilchendeutung und Urteil ueber Verbrauch und Gleichgewicht.
 RUBRIC (30 XP): Korrekte Deutung von v = Δc/Δt und der drei Stossbedingungen (10 XP) | Beschreibung des Kat-Weges mit niedrigerer Ea als Doppelpeak (10 XP) | Urteil: Kat bleibt unveraendert, Gleichgewichtslage bleibt gleich (10 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY 1盒（核心总结）：
 

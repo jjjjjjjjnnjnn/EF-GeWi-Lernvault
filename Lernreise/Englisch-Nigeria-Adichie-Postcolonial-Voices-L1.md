@@ -119,7 +119,7 @@ ROLLE: You are a tutor for the English Abitur.
 SITUATION: A classmate reduces Nigeria to poverty in a comment. Respond in circa 150 words with Adichie, correct the single story with voice and detail, and close with a balanced judgement.
 RUBRIC (30 XP): Single-story thesis correct (8 XP) | Voice and image analysed (10 XP) | Balanced judgement (8 XP) | Academic register (4 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY:
 

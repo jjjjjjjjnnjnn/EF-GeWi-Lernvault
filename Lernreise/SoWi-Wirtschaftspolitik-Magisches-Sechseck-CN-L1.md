@@ -129,8 +129,7 @@ ANTWORT: A erfordert Konzept (ii): Preise stabilisiert, aber Wachstum und Bescha
 
 Klausur-Satz: `Expansiv hilft Jobs, restriktiv hilft Preisen: Jede Richtung hat ihren Preis im Sechseck.`
 
-## Schritt 6 — check: Verständnisprüfung
-
+## Schritt 6 — check: Selbsttest zu Wirtschaftspolitik und magisches Sechseck
 CHECK检索默写（自测 3 题，与答案配对）：
 
 FRAGE: Welche sechs Ziele hat das magische Sechseck? | ANTWORT: Wachstum, Beschaeftigung, Preisstabilitaet, Aussengleichgewicht, Verteilung, Umwelt.
@@ -151,14 +150,13 @@ Klausur-Satz: `Kein Politikvorschlag erfuellt alle sechs Ziele gleichzeitig ohne
    中文纠偏：平衡指大体相当。长期巨额顺差意味着占用他国需求、积累风险，在欧盟和国际层面同样挨批评，不等于满分。
    Korrektur-Satz: `Aussenwirtschaftliches Gleichgewicht meint Ausgeglichenheit, nicht maximalen Export.`
 
-## Schritt 7 — szenario: Klausurtransfer & Rubric
-
+## Schritt 7 — szenario: Klausurtransfer: Wirtschaftspolitik und magisches Sechseck
 ROLLE: Du bist Praktikantin im Wirtschaftsministerium und schreibst eine Kurzstellungnahme.
 SITUATION: Ein Abgeordneter fordert Steuersenkungen fuer mehr Wachstum und behauptet, das schade keinem anderen Ziel.
 AUFGABE: Beurteilen Sie in ca. 150 Woertern mit dem Sechseck, welche Ziele profitieren und welche leiden, plus Empfehlung.
 RUBRIC (30 XP): Zwei Profiteure korrekt mit Kette (10 XP) | Zwei Leidtragende korrekt mit Kette (10 XP) | Urteil mit Zielkonflikt-Begriff und Empfehlung (10 XP).
 
-## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
+## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY 1盒（核心总结）：
 

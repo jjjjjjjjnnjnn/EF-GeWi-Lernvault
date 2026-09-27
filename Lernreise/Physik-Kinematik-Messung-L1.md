@@ -139,7 +139,7 @@ ROLLE: Du bist Tutorin für Physik in der EF und leitest eine Kleingruppe bei de
 SITUATION: Eine Mitschülerin hat eine Messreihe mit t in s und s in m aufgenommen, aber die Punkte streuen leicht um eine Kurve. Sie fragt dich, wie sie entscheiden soll, ob eine gleichförmige oder eine gleichmäßig beschleunigte Bewegung vorliegt, und wie sie daraus a und v bestimmt. Erkläre ihr das Vorgehen in einer zusammenhängenden Antwort (ca. 150 Wörter) unter Rückgriff auf s-t- und v-t-Diagramm.
 RUBRIC (30 XP): Benennung des Prüfkriteriums — Gerade (gleichförmig) vs. Parabel (beschleunigt) (5 XP) | Test mit dem Ansatz s = 0,5*a*t^2 bzw. a = 2s/t^2 und Angabe des konstanten Werts (10 XP) | Bestimmung von v als Tangentensteigung bzw. über v = a*t (10 XP) | Sauberes Ergebnis mit Einheit und Gegenprobe über die v-t-Fläche (5 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY 1盒（核心总结）：
 

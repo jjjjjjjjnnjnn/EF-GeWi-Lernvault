@@ -150,7 +150,7 @@ SITUATION: Wegen Auftragsrückgangs will die Geschäftsleitung Personal entlasse
 
 RUBRIC (30 XP): Benennung der Instrumente (Kurzarbeit vs. Entlassung) und der Rolle des Betriebsrats (5 XP) | Analyse der Mitbestimmungsrechte und der Interessen der Belegschaft (10 XP) | Abwägung der Folgen für Beschäftigte und Unternehmen (10 XP) | Kriteriengeleitetes Urteil (z. B. Kriterium soziale Sicherheit) (5 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY 1盒（核心总结）：
 

@@ -130,8 +130,7 @@ ANTWORT: A erfordert Verfahren (i): Metrum-Bruch, Parataxe, Farblexik je mit Fun
 
 Klausur-Satz: `Formanalyse beginnt beim Mittel, Deutung beginnt bei der These.`
 
-## Schritt 6 — check: Verständnisprüfung
-
+## Schritt 6 — check: Selbsttest zu Gedichtanalyse zum expressionistischen Grossstadtgedicht
 CHECK检索默写（自测 3 题，与答案配对）：
 
 FRAGE: Wie lautet der Dreischritt pro Strophe? | ANTWORT: Bildfeld benennen, Mittel mit Beleg nennen, Funktion fuer Ich und Kritik deuten.
@@ -152,13 +151,12 @@ Klausur-Satz: `Bruchform plus Molochbilder ergeben Schrei statt Programm.`
    中文纠偏：罗列十个手法不如讲透三个；每个手法必须回扣城市控诉，无功能不写。
    Korrektur-Satz: `Drei gedeutete Mittel schlagen zehn benannte.`
 
-## Schritt 7 — szenario: Klausurtransfer & Rubric
-
+## Schritt 7 — szenario: Klausurtransfer: Gedichtanalyse zum expressionistischen Grossstadtgedicht
 ROLLE: Du schreibst die Klausur zum Grossstadtgedicht.
 SITUATION: Das Gedicht ist unbekannt, 90 Minuten Zeit. Verfasse in zusammenhaengender Analyse (ca. 150 Woerter) Ersteindruck, zwei Strophenbefunde mit Mittel und Funktion sowie Schluss zur Ich-Haltung.
 RUBRIC (30 XP): Ersteindruck und Aufbau (6 XP) | Zwei Strophen mit Bildfeld und Mittel (10 XP) | Funktionsdeutung und Epochenbezug (10 XP) | Fachsprache (4 XP).
 
-## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
+## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY 1盒（核心总结）：
 

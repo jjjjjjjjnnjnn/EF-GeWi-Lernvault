@@ -147,7 +147,7 @@ ROLLE: Du bist Mitglied einer Enquete-Kommission bzw. Sachverstaendige/r, die/de
 SITUATION: Ein Entwurf zur Entlastung der Kommunen wird im Bundestag beschlossen, im Bundesrat aber von einer Laendermehrheit abgelehnt; es kommt zum Vermittlungsausschuss. Ein Teil der Presse nennt den Bundesrat ein „Blockadeinstrument", ein anderer verteidigt ihn als „Stimme der Laender". Beurteilen Sie in einer zusammenhängenden Stellungnahme (ca. 150 Wörter), ob die Rolle des Bundesrates demokratisch zu rechtfertigen ist, und waehlen Sie dafuer eine demokratietheoretische Koordinate.
 RUBRIC (30 XP): Darstellung des Verfahrenswegs bis zum Vermittlungsausschuss (6 XP) | Analyse der Blockade-Logik — Foederalismus, Zustimmungsbeduerftigkeit, Politikverflechtung (8 XP) | Anwendung einer demokratietheoretischen Koordinate (liberal / republikanisch / prozedural) als Kriterium (10 XP) | Kriteriengeleitetes Urteil mit Abwaegung von Funktionsfaehigkeit und Repraesentation (6 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY 1盒（核心总结）：
 

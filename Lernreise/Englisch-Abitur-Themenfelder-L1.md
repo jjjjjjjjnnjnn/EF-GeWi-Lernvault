@@ -142,7 +142,7 @@ ROLLE: Du bist Teilnehmerin einer Podiumsdiskussion im Englisch-Leistungskurs zu
 SITUATION: Ein Text behauptet, junge Menschen in Grossbritannien, den USA und Nigeria teilten heute dieselbe Identitaetskrise, weil soziale Medien ueberall dieselben Ideale verbreiteten. Bewerte diese These in einer zusammenhängenden Stellungnahme (ca. 150 Woerter) mit Bezug auf mindestens zwei Themenfelder, einem Gegenargument und einem final judgement.
 RUBRIC (30 XP): Korrekte Nutzung von mindestens zwei Themenfeldern als Argumentmaterial (5 XP) | Klare, begruendete eigene Position (5 XP) | Zwei Argumente mit konkreten Beispielen und Wirkung (10 XP) | Ein fair behandeltes Gegenargument (5 XP) | Final judgement mit Abwaegung von Gemeinsamkeiten und Unterschieden (5 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY 1盒（核心总结）：
 

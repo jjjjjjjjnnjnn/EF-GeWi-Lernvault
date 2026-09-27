@@ -120,7 +120,7 @@ ROLLE: Du bist Pruefling in der muendlichen Pruefung.
 SITUATION: Stelle in circa 2 Minuten eine Foerderung fuer Orientierungsschwaeche im Passspiel vor: Diagnose, dominante Faehigkeit, zwei Uebungen mit Variation und Beurteilung.
 RUBRIC (30 XP): Diagnose korrekt (8 XP) | Faehigkeit zugeordnet (8 XP) | Zwei Uebungen mit Variation (8 XP) | Fachsprachlicher Vortrag (6 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY:
 

@@ -120,7 +120,7 @@ ANTWORT: A erfordert Verfahren (i): $v = g \cdot t$ und $s = g t^2/2$ ohne Korre
 
 Klausur-Satz: `Im Vakuum traegt das Idealmodell, in Luft bei grosser Flaeche und kleiner Masse nur das Widerstandsmodell.`
 
-## Schritt 6 — check: Verständnisprüfung
+## Schritt 6 — check: Selbsttest zu Freier Fall mit Luftwiderstand
 CHECK (Selbsttest, 3 Fragen mit Antworten):
 
 FRAGE: Wie lautet die Bewegungsgleichung mit Widerstand? | ANTWORT: $m \cdot a = m \cdot g - F_W(v)$ mit $F_W$ entgegen der Geschwindigkeit.
@@ -139,12 +139,12 @@ Klausur-Satz: `Die Sattigung der v-t-Kurve ist der graphische Beleg fuer geschwi
    Korrektur: $F_W$ haengt von der Momentangeschwindigkeit ab und waechst bis zum Gleichgewicht.
    Korrektur-Satz: `Der Luftwiderstand haengt von der Momentangeschwindigkeit ab und waechst waehrend des Falls bis zum Kraeftegleichgewicht.`
 
-## Schritt 7 — szenario: Klausurtransfer & Rubric
+## Schritt 7 — szenario: Klausurtransfer: Freier Fall mit Luftwiderstand
 ROLLE: Du bist Messassistentin im Physikkurs.
 SITUATION: Zwei $v$-$t$-Diagramme liegen vor: Kurve A ist eine Gerade mit Steigung $g$, Kurve B flacht nach $2\,\mathrm{s}$ deutlich ab. Entscheide in circa 150 Woertern, welche Kurve zu Vakuum und welche zu Luft gehoert, und bestimme graphisch $v_E$ von Kurve B.
 RUBRIC (30 XP): Richtige Zuordnung beider Kurven (8 XP) | Begruendung mit Kraeftegleichung (10 XP) | Ablesen von $v_E$ aus der Horizontalen (6 XP) | Fachsprachliche Darstellung (6 XP).
 
-## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
+## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
 TAKEAWAY (Kernzusammenfassung):
 
 Ohne Luft gilt $v = g \cdot t$, mit Luft $m \cdot a = m \cdot g - F_W(v)$ mit Saettigung bei $v_E$. Die Kurve verraet das Modell: steile Gerade bedeutet Vakuum, abflachende Kurve bedeutet Widerstand.

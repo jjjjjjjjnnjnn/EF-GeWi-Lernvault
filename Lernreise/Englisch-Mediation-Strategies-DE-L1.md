@@ -127,8 +127,7 @@ ANSWER: A requires procedure (i): I work DE-to-EN, select the blog-relevant aspe
 
 Klausur-Satz: `German into English is the examination direction, while English into German is only my private control tool for spotting omissions, distortions and register drift.`
 
-## Schritt 6 — check: Verständnisprüfung
-
+## Schritt 6 — check: Selbsttest zu Mediation-Strategien: Register und Kulturtransfer
 CHECK (three questions with answers):
 
 FRAGE: Why can register not transfer automatically? | ANTWORT: Because the languages are asymmetric: English "you" is neutral while German must choose du or Sie; register must therefore be set consciously and uniformly.
@@ -149,13 +148,12 @@ Klausur-Satz: `Back-translation checks completeness, accuracy and register, but 
    Correction: The written Abitur direction is German source to English target. Writing the reverse answers the wrong question; EN-to-DE serves only post-draft control.
    Korrektur-Satz: `The written exam requires German into English; English into German is only a private check, and using it in the exam would answer the wrong question.`
 
-## Schritt 7 — szenario: Klausurtransfer & Rubric
-
+## Schritt 7 — szenario: Klausurtransfer: Mediation-Strategien: Register und Kulturtransfer
 ROLE: You are a student in a German-British exchange project explaining an unknown topic to the British partner school.
 SITUATION: The partner school prepares a volunteering debate. From a formal German newspaper article (invented for this task) on the Freiwilliges Soziales Jahr write an English text for the student paper (ca. 150 words). Observe both strategies: register (formal article to appropriate English) and culture words (FSJ, Taschengeld, Seminartage).
 RUBRIC (30 XP): Conscious consistent register choice with reasons (5 XP) | Correct treatment of at least two culture words with glosses (10 XP) | Complete transfer of relevant aspects without omission or distortion (10 XP) | Short follow-up control — naming at least one passage verified by back-translation (5 XP).
 
-## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
+## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY (core summary):
 

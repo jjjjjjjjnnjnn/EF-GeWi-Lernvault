@@ -121,8 +121,7 @@ ANTWORT: A erfordert Verfahren (i): n(Mg) = 5.00/24.3 = 0.206 mol, n(O2) = 5.00/
 
 Klausur-Satz: `Mengenfragen verlangen n und Koeffizientenvergleich, Gleichgewichtsfragen verlangen Q gegen K.`
 
-## Schritt 6 — check: Verständnisprüfung
-
+## Schritt 6 — check: Selbsttest zu Stoechiometrie und Massenwirkungsgesetz
 CHECK (Selbsttest, 3 Fragen mit Antworten):
 
 FRAGE: Wie lautet die Merkhilfe der Stoechiometrie und was ist die Drehscheibe n? | ANTWORT: Erst ausgleichen, dann alles in n = m/M = cV umrechnen und im Verhaeltnis der Koeffizienten umsetzen; n verbindet Masse, Volumen und Gleichung.
@@ -143,14 +142,13 @@ Klausur-Satz: `Mit n als Drehscheibe, Koeffizienten als Verhaeltnis und Q gegen 
    Korrektur: Reine Feststoffe und Fluessigkeiten zaehlen als konstant und sind bereits in $K$ eingerechnet; sie entfallen. $K$ haengt nur von der Temperatur ab, nie von Konzentrationen. Geaenderte Konzentrationen aendern nur $Q$, das System stellt $Q = K$ durch Verschiebung wieder her.
    Korrektur-Satz: `Reine Feststoffe erscheinen nicht in K_c, und K_c haengt nur von der Temperatur ab, nicht von den Konzentrationen.`
 
-## Schritt 7 — szenario: Klausurtransfer & Rubric
-
+## Schritt 7 — szenario: Klausurtransfer: Stoechiometrie und Massenwirkungsgesetz
 ROLLE: Du bist Praktikant in der Batteriefertigung und pruefst eine NCM-Charge.
 SITUATION: Geliefert wurden 10.0 mol Ni-, 10.0 mol Co- und 12.0 mol Mn-Salz fuer eine Faellgleichung mit Koeffizienten 1:1:1 zum NCM-Precursor. Die Schichtleitung fragt, welche Komponente limitiert, wie viel Precursor maximal entsteht und wie das CO2-Abziehen beim Brennen per MWG wirkt. Antworte in einer zusammenhaengenden Darstellung (ca. 150 Woerter).
 AUFGABE: Schreibe eine Klausur-Antwort mit n/Coeff-Vergleich, Ertragsrechnung und Q-gegen-K-Urteil.
 RUBRIC (30 XP): Korrekter Limit-Nachweis per n durch Koeffizient (10 XP) | Ertrag aus dem knappsten Partner plus Ausbeute-Deutung (10 XP) | MWG-Urteil: Q kleiner als K laeuft zum Produkt (10 XP).
 
-## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
+## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY (Kernzusammenfassung):
 

@@ -135,7 +135,7 @@ SITUATION: After a reading project on a postcolonial short story, readers ask wh
 AUFGABE: Write the scene with at least one diaspora marker and one othering moment, then give a balanced judgement.
 RUBRIC (30 XP): Correct use of diaspora/othering/hybrid vocabulary (10 XP) | At least two Nigeria facts integrated naturally (10 XP) | Balanced discuss structure with closing judgement (10 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY 1盒（核心总结）：
 

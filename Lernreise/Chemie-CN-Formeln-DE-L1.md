@@ -138,8 +138,7 @@ ANTWORT: A erfordert Verfahren (i): c = n/V = 0,20 mol / 0,50 L = 0,40 mol/L; di
 
 Klausur-Satz: `Die Konzentration wird über das Volumen berechnet, während der Massenanteil das Verhältnis zweier Massen angibt.`
 
-## Schritt 6 — check: Verständnisprüfung
-
+## Schritt 6 — check: Selbsttest zu CN-Formelhandbuch: sechs Formelkarten
 CHECK (Selbsttest, 3 Fragen mit Antworten):
 
 FRAGE: Welche Formel verbindet Stoffmenge und Konzentration? | ANTWORT: c = n/V, wobei V das Volumen der Lösung in Litern ist.
@@ -160,13 +159,12 @@ Klausur-Satz: `Die sechs Formelkarten greifen über die Stoffmenge ineinander; E
    Korrektur: Der Wert gilt nur im Normzustand ($0^\circ\mathrm{C}$, $101{,}3\,\mathrm{kPa}$). Bei anderer Temperatur oder anderem Druck gilt $pV = nRT$. Raumtemperaturwerte direkt mit $22{,}4$ zu verrechnen ist ein klassischer Fehler.
    Korrektur-Satz: `Das molare Volumen V_m = 22,4 L/mol gilt nur im Standardzustand; bei anderen Bedingungen wird das Gasgesetz pV = nRT verwendet.`
 
-## Schritt 7 — szenario: Klausurtransfer & Rubric
-
+## Schritt 7 — szenario: Klausurtransfer: CN-Formelhandbuch: sechs Formelkarten
 ROLLE: Du hilfst als Tutor beim "Formeldiktat" für eine EF-Klausurvorbereitung.
 SITUATION: Eine Mitschülerin soll drei Aufgaben unter Zeitdruck lösen: (1) Sie soll die deutsche Bezeichnung einer Konzentrationsgroesse nennen, (2) aus 0,30 mol in 0,60 L die Konzentration berechnen und (3) aus [H3O+] = 10^-5 mol/L den pH-Wert ableiten. Erkläre ihr in einer zusammenhängenden Antwort (ca. 150 Wörter) die drei Formelkarten, führe die Rechnungen vollständig mit Einheiten durch und schließe mit einer Größenordnungsprüfung.
 RUBRIC (30 XP): Korrekte Benennung der Konzentration $c$ (6 XP) | Rechnung c = 0,30/0,60 = 0,50 mol/L mit Einheit (8 XP) | pH = -lg(10^-5) = 5,00 (8 XP) | Größenordnungsprüfung und deutsche Fachsprache (8 XP).
 
-## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
+## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY (Kernzusammenfassung):
 

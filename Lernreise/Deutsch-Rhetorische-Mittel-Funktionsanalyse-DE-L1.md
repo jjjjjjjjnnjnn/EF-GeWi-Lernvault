@@ -125,8 +125,7 @@ ANTWORT: A ist eine Metapher: Die Form ersetzt den Vorgang durch ein Bild; Funkt
 
 Klausur-Satz: `Metapher und Vergleich teilen die Bildfunktion, doch nur der Vergleich markiert sie offen mit einem Vergleichswort.`
 
-## Schritt 6 — check: Verständnisprüfung
-
+## Schritt 6 — check: Selbsttest zu Rhetorische Mittel und Funktionsanalyse
 CHECK (Selbsttest, 3 Fragen mit Antworten):
 
 FRAGE: Wie lautet die Drei-Schritt-Kette der Funktionsanalyse? | ANTWORT: Form benennen, Beleg zitieren, Funktion im Kontext deuten.
@@ -146,14 +145,13 @@ Klausur-Satz: `Die Funktionsdeutung muss stets an These und Kontext des Absatzes
    Korrektur: Das "wie" markiert Distanz und mildere Behauptung; direkte Gleichsetzung verstaerkt. Verwechslung kostet Praezisionspunkte.
    Korrektur-Satz: `Wer Vergleich und Metapher verwechselt, verschenkt die Praezisionspunkte der Analyse.`
 
-## Schritt 7 — szenario: Klausurtransfer & Rubric
-
+## Schritt 7 — szenario: Klausurtransfer: Rhetorische Mittel und Funktionsanalyse
 ROLLE: Du bist Tutorin in der EF und hilfst einer Mitschuelerin vor der Deutsch-Klausur.
 SITUATION: Sie hat in einem Kommentar ueber Hausaufgaben drei Mittel markiert, aber nur die Namen aufgelistet. Sie versteht nicht, warum die Lehrkraft dafuer kaum Punkte gegeben hat.
 AUFGABE: Schreibe eine zusammenhaengende Erklaerung (ca. 150 Woerter), in der du an einem Beleg die Kette Form, Beleg und Funktion vormachst und begruendest, warum die Funktionsdeutung den Unterschied zwischen Benennung und Analyse ausmacht.
 RUBRIC (30 XP): Korrekte Kette an einem Beispiel gezeigt (10 XP) | Zwei weitere Mittel mit Funktion skizziert (10 XP) | Fazit zur Bewertungsrelevanz mit Fachbegriffen (10 XP).
 
-## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
+## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY (Kernzusammenfassung):
 

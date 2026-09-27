@@ -128,8 +128,7 @@ ANTWORT: A requires concept (i): biased but not fake — read a second outlet fo
 
 Klausur-Satz: `Bias needs balance, fake needs debunking: diagnose before you react.`
 
-## Schritt 6 — check: Verständnisprüfung
-
+## Schritt 6 — check: Selbsttest zu Media manipulation and fake news
 CHECK检索默写（自测 3 题，与答案配对）：
 
 FRAGE: What are the three verification checks? | ANTWORT: WHO (author), WHERE (primary source), THREE (three independent confirmations).
@@ -150,14 +149,13 @@ Klausur-Satz: `Pause, check, compare: three seconds against sixfold speed.`
    中文纠偏：虚假平衡（给伪科学和共识平等篇幅）本身就是操纵。证据一边倒时中立站在证据这边，不是站在中间。
    Korrektur-Satz: `Neutrality follows evidence, not the midpoint between fact and fiction.`
 
-## Schritt 7 — szenario: Klausurtransfer & Rubric
-
+## Schritt 7 — szenario: Klausurtransfer: Media manipulation and fake news
 ROLLE: You are fact-checker for the school blog during flu season.
 SITUATION: The hot-water post spreads in class chats; some demand a ban on all health posts.
 AUFGABE: Publish ca. 150 words: verdict on the post with checks, plus a general 3-rule guide against over-blocking.
 RUBRIC (30 XP): Three checks applied (12 XP) | Bias/fake distinction (8 XP) | 3-rule guide plus proportionate verdict (10 XP).
 
-## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
+## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY 1盒（核心总结）：
 

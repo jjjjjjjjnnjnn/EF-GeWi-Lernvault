@@ -134,7 +134,7 @@ SITUATION: Sie hat einen Kommentar ueber Hausaufgaben geschrieben und darin drei
 AUFGABE: Schreibe eine zusammenhaengende Erklaerung (ca. 150 Woerter), in der du an einem ihrer Belege die Kette Form-Beleg-Funktion vormachst und begruendest, warum die Funktionsdeutung den Unterschied zwischen Benennung und Analyse ausmacht.
 RUBRIC (30 XP): Korrekte Kette an einem Beispiel gezeigt (10 XP) | Zwei weitere Mittel mit Funktion skizziert (10 XP) | Fazit zur Bewertungsrelevanz mit Fachbegriffen (10 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY 1盒（核心总结）：
 

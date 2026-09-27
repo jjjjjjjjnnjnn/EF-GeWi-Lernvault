@@ -117,7 +117,7 @@ SITUATION: Your school paper claims $Anyone = rich$ if $effort = high$.
 AUFGABE (evaluate, AFB III): Evaluate the claim in a coherent comment (ca. 150 words) with text example, data and counter-voice plus own judgement.
 RUBRIC (30 XP): Dream defined with $formula$ (10 XP) | Text plus data linked (10 XP) | Counter-voice plus judgement (5 XP) | Coherent language (5 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY: Remember $hope + proof = analysis$. Test $story$ with $statistic$, enrich $number$ with $voice$. Anchor: $Dream - Access = Task$.
 

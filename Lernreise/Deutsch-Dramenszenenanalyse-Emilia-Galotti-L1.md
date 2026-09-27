@@ -119,7 +119,7 @@ ROLLE: Du bist Klausurkorrektorin in der EF.
 SITUATION: Eine Klausur zu I/4 paraphrasiert nur den Inhalt. Formuliere in circa 150 Woertern ein Feedback mit zwei fehlenden Befunden, deren Funktion und einer Deutung auf Staendekonflikt.
 RUBRIC (30 XP): Einordnung korrekt (6 XP) | Zwei Befunde mit Zeilen (10 XP) | Funktion plus Deutung (10 XP) | Fachsprachliche Rueckmeldung (4 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY:
 

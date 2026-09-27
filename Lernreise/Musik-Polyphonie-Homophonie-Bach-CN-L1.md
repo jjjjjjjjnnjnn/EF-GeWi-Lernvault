@@ -128,8 +128,7 @@ ANTWORT: A erfordert Konzept (ii): homophoner Choralsatz, Begleitung austauschba
 
 Klausur-Satz: `Austauschbar heisst Begleitung, unentbehrlich heisst Stimme.`
 
-## Schritt 6 — check: Verständnisprüfung
-
+## Schritt 6 — check: Selbsttest zu Polyphonie und Homophonie bei Bach
 CHECK检索默写（自测 3 题，与答案配对）：
 
 FRAGE: Was unterscheidet Dux und Comes? | ANTWORT: Dux stellt das Thema in der Grundtonart vor, Comes antwortet auf der Quinte.
@@ -150,14 +149,13 @@ Klausur-Satz: `Ohne Comes keine Fuge, ohne Kontrasubjekt kein Fugenklang.`
    中文纠偏：卡农全程亦步亦趋，赋格只有呈示部轮答，之后有插部、对题、密接等自由发展。把赋格写成卡农会被判体裁错误。
    Korrektur-Satz: `Kanon wiederholt durchgehend, Fuge antwortet nur zu Beginn und entwickelt dann.`
 
-## Schritt 7 — szenario: Klausurtransfer & Rubric
-
+## Schritt 7 — szenario: Klausurtransfer: Polyphonie und Homophonie bei Bach
 ROLLE: Du moderierst das Schulkonzert und erklaerst zwei Bach-Stuecke an.
 SITUATION: Gespielt werden eine Fuge und ein Choral; das Publikum hoert keinen Unterschied.
 AUFGABE: Kuendigen Sie in ca. 150 Woertern beide Stuecke mit je einem Hoerauftrag an und benennen Sie Dux/Comes bzw. Melodie/Begleitung.
 RUBRIC (30 XP): Fuge mit Einsatzfolge und Hoerauftrag (12 XP) | Choral mit Melodie/Begleitung und Hoerauftrag (10 XP) | Vergleichspointe verstaendlich (8 XP).
 
-## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
+## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY 1盒（核心总结）：
 

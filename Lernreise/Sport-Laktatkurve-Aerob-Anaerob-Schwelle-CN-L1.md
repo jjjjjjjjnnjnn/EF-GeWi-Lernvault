@@ -132,8 +132,7 @@ ANTWORT: A erfordert Verfahren (i): Umfang unter der aeroben Schwelle, lange ruh
 
 Klausur-Satz: `Basis laeuft man lang und ruhig, Schwelle kurz und kontrolliert hart.`
 
-## Schritt 6 — check: Verständnisprüfung
-
+## Schritt 6 — check: Selbsttest zu Laktatkurve mit aerober und anaerober Schwelle
 CHECK检索默写（自测 3 题，与答案配对）：
 
 FRAGE: Wo liegen aerobe und anaerobe Schwelle? | ANTWORT: Bei ca. $2$ bzw. $4\,\mathrm{mmol/L}$ Laktat.
@@ -154,13 +153,12 @@ Klausur-Satz: `Rechts heisst trainiert, steil heisst ueberfordert.`
    中文纠偏：$2$/$4$ 是约定路标，可训练右移；同一速度阈值前后意义不同。
    Korrektur-Satz: `Schwellen sind verschiebbare Marken, keine Mauern.`
 
-## Schritt 7 — szenario: Klausurtransfer & Rubric
-
+## Schritt 7 — szenario: Klausurtransfer: Laktatkurve mit aerober und anaerober Schwelle
 ROLLE: Du betreust einen Hobbylaeufer mit Stufentest-Protokoll.
 SITUATION: Er will Marathon finishen und fragt nach Zonen. Deute in zusammenhaengender Darstellung (ca. 150 Woerter) seine drei Messpunkte und gib zwei Zonenempfehlungen.
 RUBRIC (30 XP): Zonenordnung aller Punkte (12 XP) | Zwei Trainingsempfehlungen mit Begruendung (10 XP) | Rechtsverschiebung als Ziel (4 XP) | Verstaendliche Sprache (4 XP).
 
-## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
+## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY 1盒（核心总结）：
 

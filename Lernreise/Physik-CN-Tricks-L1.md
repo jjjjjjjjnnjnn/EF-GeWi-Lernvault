@@ -160,7 +160,7 @@ ROLLE: Du bist Nachhilfelehrerin und bringst einer Schülergruppe die chinesisch
 SITUATION: Die Gruppe rechnet zwar schnell, verliert aber regelmäßig Punkte, weil die Ansätze fehlen und die Diagramme unvollständig sind. Erkläre in einer zusammenhängenden Stellungnahme (ca. 150 Wörter), wie man die sechs Verfahren mit den deutschen Schreibregeln verbindet, sodass Tempo und Formalkorrektheit zusammenkommen.
 RUBRIC (30 XP): Benennung und Zuordnung von mindestens drei Verfahren zu deutschen Schritten (10 XP) | Erlaeuterung, warum der ausgeschriebene Ansatz Punkte sichert (10 XP) | Beispiel zur Wahl zwischen Ganzheits- und Isolationsverfahren (5 XP) | Adressatengerechte, fachsprachlich korrekte Darstellung (5 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY 1盒（核心总结）：
 

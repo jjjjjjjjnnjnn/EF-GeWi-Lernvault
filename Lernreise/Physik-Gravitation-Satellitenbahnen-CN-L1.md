@@ -134,8 +134,7 @@ ANTWORT: A erfordert Konzept (i): $T \approx 90\,\mathrm{min}$, $v \approx 7{,}7
 
 Klausur-Satz: `Niedrige Bahnen sind schnell und kurzperiodisch, die geostationaere Bahn ist langsam und tagesperiodisch.`
 
-## Schritt 6 — check: Verständnisprüfung
-
+## Schritt 6 — check: Selbsttest zu Gravitation und Satellitenbahnen
 CHECK检索默写（自测 3 题，与答案配对）：
 
 FRAGE: Wie lautet der Kraftansatz fuer eine Kreisbahn? | ANTWORT: $G\,mM/r^2 = m v^2/r$, Gravitation liefert Zentripetalkraft.
@@ -156,14 +155,13 @@ Klausur-Satz: `Die Umlaufzeit folgt aus Umfang durch Geschwindigkeit: $T = 2\pi 
    中文纠偏：公式里的 $r$ 是到地心的距离，必须加地球半径 $6370\,\mathrm{km}$。直接用高度会算出超大速度，是计算题最常见的整题丢分。
    Korrektur-Satz: `In alle Bahngleichungen ist $r = R_{Erde} + h$ einzusetzen, nie die Hoehe allein.`
 
-## Schritt 7 — szenario: Klausurtransfer & Rubric
-
+## Schritt 7 — szenario: Klausurtransfer: Gravitation und Satellitenbahnen
 ROLLE: Du bist Tutor im Physikkurs und erklaerst Satellitenbahnen.
 SITUATION: Eine Mitschuelerin behauptet, ein TV-Satellit koenne in $400\,\mathrm{km}$ Hoehe fest ueber Berlin stehen.
 AUFGABE: Widerlegen Sie das in ca. 150 Woertern mit Umlaufzeit-Argument und Bahnradius-Rechnung und nennen Sie die korrekte Bahn.
 RUBRIC (30 XP): LEO-Periode ca. $90\,\mathrm{min}$ berechnet (10 XP) | Widerspruch zu feststehend erklaert (10 XP) | GEO-Bedingung $T = 24\,\mathrm{h}$ plus Aequatorlage genannt (10 XP).
 
-## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
+## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY 1盒（核心总结）：
 

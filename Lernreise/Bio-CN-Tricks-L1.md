@@ -136,7 +136,7 @@ ROLLE: Du bist Tutor in einem Bio-Grundkurs und erklärst einer Lerngruppe, wie 
 SITUATION: Die Lerngruppe hat drei verschiedene Materialien vor sich: ein Kurvendiagramm zur Enzymaktivität, einen Versuchsplan mit zwei Ansätzen und eine Reaktionsgleichung zur Fotosynthese. Erkläre in einer zusammenhängenden Stellungnahme (ca. 150 Wörter), wie man für jedes Material das passende Verfahren auswählt und warum man nicht alle Materialien gleich behandeln darf.
 RUBRIC (30 XP): Benennung der drei Verfahren und ihrer jeweiligen Materialtypen (8 XP) | Begründete Zuordnung von Verfahren und Material (10 XP) | Erklärung des Nutzens der Verfahrenswahl für die Punktevergabe (7 XP) | Kriteriengeleitetes Fazit zur systematischen Vorgehensweise (5 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY 1盒（核心总结）：
 

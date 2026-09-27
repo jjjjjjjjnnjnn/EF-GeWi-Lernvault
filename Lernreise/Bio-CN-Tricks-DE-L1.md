@@ -134,8 +134,7 @@ ANTWORT: A erfordert Verfahren (i): Nach dem Dreischritt beschreibe ich zunaechs
 
 Klausur-Satz: `Kurvenmaterial wird mit dem Dreischritt ausgewertet, waehrend kontrollierte Ansaetze nach dem Prinzip der einzigen Variable beurteilt werden.`
 
-## Schritt 6 — check: Verständnisprüfung
-
+## Schritt 6 — check: Selbsttest zu CN-Methoden fuer die Bio-Klausur
 CHECK (drei Fragen mit Antworten):
 
 FRAGE: Welche drei Schritte umfasst die Kurvenauswertung? | ANTWORT: Erst den Verlauf beschreiben, dann das Maximum oder Plateau bestimmen und schliesslich die Ursache mit der Fachregel erklaeren.
@@ -155,14 +154,13 @@ Klausur-Satz: `Die Kurvenauswertung folgt dem Dreischritt Verlauf, Maximum, Ursa
    Korrektur: Die Kontrolle ist nicht die untaetige Gruppe, sondern die Gruppe, die sich von der Versuchsgruppe nur in der einen unabhaengigen Variable unterscheidet.
    Korrektur-Satz: `Die Kontrolle ist nicht die untaetige Gruppe, sondern die Gruppe, die sich von der Versuchsgruppe nur in der einen unabhaengigen Variable unterscheidet.`
 
-## Schritt 7 — szenario: Klausurtransfer & Rubric
-
+## Schritt 7 — szenario: Klausurtransfer: CN-Methoden fuer die Bio-Klausur
 ROLLE: Du bist Tutor in einem Bio-Grundkurs und erklaerst einer Lerngruppe, wie man Materialaufgaben systematisch angeht.
 SITUATION: Die Lerngruppe hat drei verschiedene Materialien vor sich: ein Kurvendiagramm zur Enzymaktivitaet, einen Versuchsplan mit zwei Ansaetzen und eine Reaktionsgleichung zur Fotosynthese.
 AUFGABE (AFB II/III): Erklaere in einer zusammenhaengenden Stellungnahme (ca. 150 Woerter), wie man fuer jedes Material das passende Verfahren auswaehlt und warum man nicht alle Materialien gleich behandeln darf.
 RUBRIC (30 XP): Benennung der drei Verfahren und ihrer jeweiligen Materialtypen (8 XP) | Begruendete Zuordnung von Verfahren und Material (10 XP) | Erklaerung des Nutzens der Verfahrenswahl fuer die Punktevergabe (7 XP) | Kriteriengeleitetes Fazit zur systematischen Vorgehensweise (5 XP).
 
-## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
+## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY (Kernbotschaft in einem Kasten):
 

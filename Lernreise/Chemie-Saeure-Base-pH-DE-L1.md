@@ -121,8 +121,7 @@ ANTWORT: A erfordert Verfahren (i): HNO3 dissoziiert vollständig, also gilt [H3
 
 Klausur-Satz: `Nur bei vollständiger Dissoziation gilt pH = -lg(c0); bei einer schwachen Säure muss die Oxoniumionenkonzentration zuerst über das Protolysegleichgewicht bestimmt werden.`
 
-## Schritt 6 — check: Verständnisprüfung
-
+## Schritt 6 — check: Selbsttest zu Saeure-Base-Gleichgewichte und pH-Wert
 CHECK (Selbsttest, 3 Fragen mit Antworten):
 
 FRAGE: Wie lautet die Definition des pH-Wertes? | ANTWORT: pH = -lg[H3O+], also der negative dekadische Logarithmus der Oxoniumionenkonzentration.
@@ -143,13 +142,12 @@ Klausur-Satz: `Der pH-Wert folgt aus der Oxoniumionenkonzentration über den neg
    Korrektur: Niemals. Schwache Saeuren protolysieren nur teilweise; $[H_3O^+]$ liegt weit unter $c_0$ und folgt erst aus $K_S$ ueber die Dreisatztabelle. Direktes Einsetzen unterschaetzt den $pH$ um mehrere Einheiten — der klassische Fehler bei schwachen Saeuren.
    Korrektur-Satz: `Bei einer schwachen Säure ist [H3O+] deutlich kleiner als c0; die Konzentration muss deshalb über K_S aus dem Protolysegleichgewicht bestimmt werden.`
 
-## Schritt 7 — szenario: Klausurtransfer & Rubric
-
+## Schritt 7 — szenario: Klausurtransfer: Saeure-Base-Gleichgewichte und pH-Wert
 ROLLE: Du bist Praktikant im Schullabor und sollst eine Säure-Base-Titration vorbereiten und auswerten.
 SITUATION: Es liegen 100 mL Salzsäure mit c0 = 0,005 mol/L vor. Diese sollen mit Natronlauge (c = 0,02 mol/L) vollständig neutralisiert werden. Berechne das benötigte Volumen der Natronlauge, erläutere die Bedingung am Äquivalenzpunkt und begründe, warum der pH-Wert am Äquivalenzpunkt bei 7 liegt. Verfasse eine zusammenhängende Auswertung (ca. 150 Wörter).
 RUBRIC (30 XP): Aufstellen der Neutralisationsgleichung HCl + NaOH -> NaCl + H2O (5 XP) | Stoffmengenansatz c1 * V1 = c2 * V2 und Berechnung V2 = 25 mL (10 XP) | Bedingung am Äquivalenzpunkt n(H3O+) = n(OH-) (8 XP) | Begründung pH = 7 wegen vollständiger Neutralisation durch starke Säure und starke Base (7 XP).
 
-## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
+## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY (Kernzusammenfassung):
 

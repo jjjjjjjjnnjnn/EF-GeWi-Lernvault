@@ -137,7 +137,7 @@ ROLLE: Du bist Tutorin in einem Bio-Grundkurs der gymnasialen Oberstufe und soll
 SITUATION: Ein Mikroskopierpräparat mit roten Zwiebelzellen wird zunächst mit einer konzentrierten Kaliumnitratlösung und danach mit destilliertem Wasser behandelt. Deine Mitschülerin fragt, warum sich der gefärbte Zellsaftraum erst zusammenzieht und später wieder ausdehnt. Erkläre beide Beobachtungen in einer zusammenhängenden Stellungnahme (ca. 150 Wörter) mit den Fachbegriffen Osmose, hypertonisch, hypotonisch, Turgor, Plasmolyse und Deplasmolyse.
 RUBRIC (30 XP): Benennung der beiden Medien als hypertonisch bzw. hypotonisch (5 XP) | Richtige Bestimmung der Wasserbewegung über die selektiv permeable Membran (10 XP) | Erklärung von Plasmolyse und Deplasmolyse über den Turgor und die Zellwand (10 XP) | Fachsprachlich korrekte, kausale Formulierung mit passenden Fachbegriffen (5 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY 1盒（核心总结）：
 

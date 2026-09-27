@@ -145,7 +145,7 @@ ROLLE: Du bist Prüfling in einer mündlichen Sportprüfung und sollst eine Weit
 SITUATION: Der Prüfer zeigt dir die Videoaufnahme eines Mitschülers: Der Sportler bremst vor dem Brett ab, springt sehr steil ab und landet mit dem Gesäß zuerst. Erkläre mündlich in zusammenhängenden deutschen Sätzen (ca. 2 Minuten) die biomechanischen Ursachen des geringen Ergebnisses, ordne die Fehler den Phasen zu und schlage je eine konkrete Korrektur vor.
 RUBRIC (30 XP): Gliederung des Weitsprungs in Phasen mit Benennung der Hauptphase (5 XP) | Biomechanische Analyse des Absprungs (v_h, Absprungwinkel, fixierte KSP-Parabel) (10 XP) | Analyse der Flug- und Landungsfehler mit Hinweis auf die festgelegte Flugbahn (10 XP) | Kriteriengeleitete Korrekturvorschläge mit methodischem Bezug (5 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY 1盒（核心总结）：
 

@@ -117,7 +117,7 @@ SITUATION: Ein Mitspieler bietet $Tabletten = Muskel + schnell$ vor dem Finale a
 AUFGABE (beurteilen, AFB III): Beurteilen Sie das Angebot in einer zusammenhaengenden Darstellung (ca. 150 Woerter oder zwei Minuten Rede) mit Gesundheit, Fairness und Alternative.
 RUBRIC (30 XP): Risiken $Herz + Hormon + Psyche$ (10 XP) | Fairness mit $Liste + Haftung$ (10 XP) | Alternative $Training + Erholung$ (5 XP) | Geschlossene Darstellung (5 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY: Merke $kurz + verboten = teuer$. Formel $Sieg = Talent + Training + Taktik$ ohne $Chemie$. Bei Druck hilft $Nein + Arzt + Trainer$ statt $Pille$.
 

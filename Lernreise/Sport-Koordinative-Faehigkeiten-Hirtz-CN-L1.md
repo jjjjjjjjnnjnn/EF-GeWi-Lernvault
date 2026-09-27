@@ -130,8 +130,7 @@ ANTWORT: A erfordert Verfahren (i): Schrittfolge ohne Ball, dann Ballfuehrung im
 
 Klausur-Satz: `Kopplung lernt man in Teilen, Rhythmus im Ganzen.`
 
-## Schritt 6 — check: Verständnisprüfung
-
+## Schritt 6 — check: Selbsttest zu Koordinative Faehigkeiten nach Hirtz
 CHECK检索默写（自测 3 题，与答案配对）：
 
 FRAGE: Welche fuenf Faehigkeiten nennt Hirtz? | ANTWORT: Orientierung, Gleichgewicht, Rhythmisierung, Reaktion und Kopplung.
@@ -152,13 +151,12 @@ Klausur-Satz: `Variation der Bedingung schult die Steuerung.`
    中文纠偏：力量涨硬件，动作准靠软件；只举铁不练变式，技术照样糙。
    Korrektur-Satz: `Kraft ersetzt keine Steuerung.`
 
-## Schritt 7 — szenario: Klausurtransfer & Rubric
-
+## Schritt 7 — szenario: Klausurtransfer: Koordinative Faehigkeiten nach Hirtz
 ROLLE: Du leitest ein Aufwaermtraining fuer eine Schulmannschaft.
 SITUATION: Die Spieler sind kraftvoll, aber unpraezise. Begruende in zusammenhaengender Darstellung (ca. 150 Woerter) zwei koordinative Uebungen mit Faehigkeitszuordnung und Variation.
 RUBRIC (30 XP): Zwei Faehigkeiten korrekt zugeordnet (10 XP) | Zwei Variationen begruendet (10 XP) | Abgrenzung zu Kondition (6 XP) | Verstaendliche Anleitung (4 XP).
 
-## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
+## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY 1盒（核心总结）：
 

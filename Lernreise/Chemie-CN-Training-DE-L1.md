@@ -130,8 +130,7 @@ ANTWORT: A erfordert Verfahren (i): n(CO2) = m/M = 2,2 g / 44 g/mol = 0,050 mol.
 
 Klausur-Satz: `Das Mol-Verfahren führt über die Stoffmenge zur Gasmenge, während das pH-Verfahren direkt über den Logarithmus der Oxoniumionenkonzentration arbeitet.`
 
-## Schritt 6 — check: Verständnisprüfung
-
+## Schritt 6 — check: Selbsttest zu CN-Training: Zeitlimit und EHZ-Selbstbewertung
 CHECK (Selbsttest, 3 Fragen mit Antworten):
 
 FRAGE: Was gibt der Erwartungshorizont (EHZ) an? | ANTWORT: Er listet die Punkte pro Lösungsschritt auf, sodass jede Teilrechnung einzeln bewertet werden kann.
@@ -152,13 +151,12 @@ Klausur-Satz: `Gleichung, Verhältnis, Einheit und Prüfung – jeder Schritt tr
    Korrektur: Die Klausur verlangt die Trennung: erst Beobachtung (was ist zu sehen), dann Deutung (Erklaerung mit der Regel). Vermischung kostet Strukturpunkte, besonders bei Versuchs- und Redoxaufgaben.
    Korrektur-Satz: `Beobachtung und Deutung müssen getrennt dargestellt werden: zuerst das Phänomen, dann die Erklärung mit der Regel.`
 
-## Schritt 7 — szenario: Klausurtransfer & Rubric
-
+## Schritt 7 — szenario: Klausurtransfer: CN-Training: Zeitlimit und EHZ-Selbstbewertung
 ROLLE: Du simulierst unter Zeitdruck eine EF-Klausur und bewertest dich anschließend selbst mit dem EHZ.
 SITUATION: In 20 Minuten sind vier Aufgaben zu lösen: (1) Al + HCl -> AlCl3 + H2 ausgleichen; (2) aus 4,4 g CO2 (M = 44 g/mol) n und V im Standardzustand berechnen; (3) in 2 Na + Cl2 -> 2 NaCl Oxidations- und Reduktionsmittel bestimmen; (4) den pH-Wert einer Salzsäure mit c0 = 0,002 mol/L berechnen. Schreibe eine zusammenhängende Auswertung (ca. 150 Wörter), die deine Ergebnisse, die EHZ-Punkte pro Aufgabe und einen deutschen Transfer-Satz enthält.
 RUBRIC (30 XP): Aufgabe 1 korrekt ausgeglichen 2 Al + 6 HCl -> 2 AlCl3 + 3 H2 (6 XP) | Aufgabe 2 n = 0,10 mol und V = 2,24 L mit Einheit (8 XP) | Aufgabe 3 Na als Reduktionsmittel, Cl als Oxidationsmittel mit Oxidationszahlen (8 XP) | Aufgabe 4 pH = 2,70 mit Begründung der vollständigen Dissoziation (8 XP).
 
-## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
+## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY (Kernzusammenfassung):
 

@@ -153,7 +153,7 @@ SITUATION: In deiner Klasse sollen neue Regeln für die Handynutzung beschlossen
 
 RUBRIC (30 XP): Benennung der Rolle und der zugehörigen Erwartungen (5 XP) | Erklärung der Wirkung von Normen und positiven wie negativen Sanktionen (10 XP) | Übertragung des Konfliktbegriffs (Intra-/Inter-/Person-Rolle) auf den Fall (10 XP) | Kriteriengeleitetes Urteil mit Lösungsvorschlag über Rollendistanz (5 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY 1盒（核心总结）：
 

@@ -138,7 +138,7 @@ ROLLE: Du bist Mitglied der Schülervertretung und sollst auf einer Schulkonfere
 SITUATION: Die Schulleitung will Handys im Unterricht komplett verbieten; ein Kommentar in der Schülerzeitung argumentiert stattdessen für klare Nutzungsregeln. Beurteile in einer zusammenhängenden Stellungnahme (ca. 150 Wörter), wie überzeugend der Kommentar argumentiert, und stütze dich auf Argumentationsgang und Argumenttypen.
 RUBRIC (30 XP): Benennung der These und ihrer Textsorte (5 XP) | Nachzeichnung des Argumentationsgangs mit mindestens drei Stationen und Zeilen (10 XP) | Bestimmung der Argumenttypen und ihrer Wirkung (10 XP) | Kriteriengeleitetes eigenes Urteil mit Abwägung (5 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY 1盒（核心总结）：
 

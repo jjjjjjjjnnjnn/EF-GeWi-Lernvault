@@ -126,8 +126,7 @@ ANTWORT: A erfordert Verfahren (i): Sauerstoff ist klein und unpolar und diffund
 
 Klausur-Satz: `Passiver Transport folgt dem Konzentrationsgefaelle ohne ATP, waehrend aktiver Transport unter ATP-Verbrauch gegen das Gefaelle verlaeuft.`
 
-## Schritt 6 — check: Verständnisprüfung
-
+## Schritt 6 — check: Selbsttest zu Biomembran und Transportmechanismen
 CHECK (drei Fragen mit Antworten):
 
 FRAGE: Aus welchen drei Hauptbestandteilen besteht die Biomembran nach dem Fluessig-Mosaik-Modell? | ANTWORT: Aus der Phospholipid-Doppelschicht, den darin eingelagerten Membranproteinen und der Glykokalyx aus Glykolipiden und Glykoproteinen.
@@ -147,14 +146,13 @@ Klausur-Satz: `Die Plasmolyse beruht auf einem Wasserverlust im hypertonischen M
    Korrektur: Auch die erleichterte Diffusion folgt dem Gefaelle und braucht kein ATP, ist aber auf Kanal- oder Carrierproteine angewiesen.
    Korrektur-Satz: `Auch die erleichterte Diffusion folgt dem Konzentrationsgefaelle und benoetigt kein ATP, ist aber auf Kanal- oder Carrierproteine angewiesen.`
 
-## Schritt 7 — szenario: Klausurtransfer & Rubric
-
+## Schritt 7 — szenario: Klausurtransfer: Biomembran und Transportmechanismen
 ROLLE: Du bist Tutorin in einem Bio-Grundkurs der gymnasialen Oberstufe und sollst einer Mitschaelerin ein Experiment erklaeren.
 SITUATION: Ein Mikroskopierpraeparat mit roten Zwiebelzellen wird zunaechst mit einer konzentrierten Kaliumnitratloesung und danach mit destilliertem Wasser behandelt. Deine Mitschaelerin fragt, warum sich der gefaerbte Zellsaftraum erst zusammenzieht und spaeter wieder ausdehnt.
 AUFGABE (AFB II/III): Erklaere beide Beobachtungen in einer zusammenhaengenden Stellungnahme (ca. 150 Woerter) mit den Fachbegriffen Osmose, hypertonisch, hypotonisch, Turgor, Plasmolyse und Deplasmolyse.
 RUBRIC (30 XP): Benennung der beiden Medien als hypertonisch bzw. hypotonisch (5 XP) | Richtige Bestimmung der Wasserbewegung ueber die selektiv permeable Membran (10 XP) | Erklaerung von Plasmolyse und Deplasmolyse ueber den Turgor und die Zellwand (10 XP) | Fachsprachlich korrekte, kausale Formulierung mit passenden Fachbegriffen (5 XP).
 
-## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
+## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY (Kernbotschaft in einem Kasten):
 

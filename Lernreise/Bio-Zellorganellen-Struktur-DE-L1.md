@@ -122,8 +122,7 @@ ANTWORT: A erfordert Verfahren (i): Die gestapelten Membranen (Thylakoide) vergr
 
 Klausur-Satz: `Die gestapelten Thylakoidmembranen dienen der Fotosynthese, waehrend Doppelmembran und eigene DNA auf einen prokaryotischen Ursprung des Chloroplasten hinweisen.`
 
-## Schritt 6 — check: Verständnisprüfung
-
+## Schritt 6 — check: Selbsttest zu Zellorganellen und Endosymbiontentheorie
 CHECK (drei Fragen mit Antworten):
 
 FRAGE: Welche drei Strukturen besitzt eine Pflanzenzelle, die einer Tierzelle fehlen? | ANTWORT: Die Zellwand aus Cellulose, die Chloroplasten und eine grosse Zentralvakuole.
@@ -143,14 +142,13 @@ Klausur-Satz: `Doppelmembran, eigene DNA und eigene Ribosomen sind die zentralen
    Korrektur: Bei der Endosymbiose wurde der aufgenommene Prokaryot nicht verdaut, sondern blieb als Symbiont erhalten und entwickelte sich zum Organell.
    Korrektur-Satz: `Bei der Endosymbiose wurde der aufgenommene Prokaryot nicht verdaut, sondern blieb als Symbiont erhalten und entwickelte sich zum Organell.`
 
-## Schritt 7 — szenario: Klausurtransfer & Rubric
-
+## Schritt 7 — szenario: Klausurtransfer: Zellorganellen und Endosymbiontentheorie
 ROLLE: Du bist Mitglied einer Schuelergruppe, die auf einem Schulfest ein Poster ueber die Herkunft der Zellorganellen praesentiert.
 SITUATION: Ein Besucher bezweifelt die Endosymbiontentheorie mit dem Argument: Ein Mitochondrium kann doch unmoeglich einmal ein eigenes Lebewesen gewesen sein.
 AUFGABE (AFB II/III): Beurteile diese Aussage in einer zusammenhaengenden Stellungnahme (ca. 150 Woerter), indem du die stuetzenden Belege fuer Mitochondrien und Chloroplasten anfuehrst und die Theorie kriteriengeleitet bewertest.
 RUBRIC (30 XP): Benennung der Theorie und der beteiligten Organismen (Aerobier bzw. Cyanobakterium) (5 XP) | Anfuehrung der Belege — Doppelmembran, eigene ringfoermige DNA, eigene Ribosomen (10 XP) | Erklaerung, warum diese Belege einen prokaryotischen Ursprung stuetzen (10 XP) | Kriteriengeleitetes Urteil mit Abwaegung der Aussagekraft der Belege (5 XP).
 
-## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
+## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY (Kernbotschaft in einem Kasten):
 

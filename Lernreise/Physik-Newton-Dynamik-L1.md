@@ -136,7 +136,7 @@ ROLLE: Du bist Mitglied einer Schülerforschungsgruppe, die einen Rampenversuch 
 SITUATION: Auf einer Rampe mit dem Neigungswinkel alpha = 25 Grad soll ein Kasten (m = 3,0 kg) kontrolliert hinabgleiten. Die Gruppe diskutiert, ob eine bestimmte Oberfläche geeignet ist: Bei zu großer Reibung rutscht der Kasten nicht an, bei zu kleiner Reibung wird er zu schnell. Beurteile in einer zusammenhängenden Stellungnahme (ca. 150 Wörter), wovon die Beschleunigung abhängt und wie die Reibung das Ergebnis beeinflusst. Nutze g = 10 m/s^2.
 RUBRIC (30 XP): Benennung der zerlegten Kräfte F_H und F_N mit Formel (5 XP) | Aufstellen der Bewegungsgleichung F_res = F_H - F_R = m*a (10 XP) | Nachweis, dass a unabhaengig von der Masse ist, und Rechnung mit Zahlen (10 XP) | Kriteriengeleitetes Urteil zur Eignung der Oberflaeche mit Einheit (5 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY 1盒（核心总结）：
 

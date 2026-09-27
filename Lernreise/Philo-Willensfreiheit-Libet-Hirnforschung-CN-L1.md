@@ -130,8 +130,7 @@ ANTWORT: A erfordert Verfahren (i): Anzugreifen sind Reliabilitaet der Willensze
 
 Klausur-Satz: `Experimentkritik trifft das Modell, Begriffsarbeit die These.`
 
-## Schritt 6 — check: Verständnisprüfung
-
+## Schritt 6 — check: Selbsttest zu Willensfreiheit mit Libet und Hirnforschung
 CHECK检索默写（自测 3 题，与答案配对）：
 
 FRAGE: Was fand Libet 1983? | ANTWORT: Das Bereitschaftspotenzial geht dem bewussten Wollen ca. 0,3 s voraus.
@@ -152,13 +151,12 @@ Klausur-Satz: `Der Zeitvorsprung des Gehirns ist ein Befund, seine Deutung als F
    中文纠偏：这是 libertarische 狭义定义；相容论把自由定为按理由行动，决定论下仍可成立，责任也随之保留。
    Korrektur-Satz: `Freiheit kann Gruenden-Folgen heissen statt Ursachenlosigkeit.`
 
-## Schritt 7 — szenario: Klausurtransfer & Rubric
-
+## Schritt 7 — szenario: Klausurtransfer: Willensfreiheit mit Libet und Hirnforschung
 ROLLE: Du schreibst einen Leserbrief zur Schlagzeile Hirnforschung beweist Unfreiheit.
 SITUATION: Die Redaktion vermischt Befund und Deutung. Richtigstellung in einer zusammenhaengenden Stellungnahme (ca. 150 Woerter): Was zeigt Libet wirklich, und was folgt daraus fuer Schuld und Verantwortung?
 RUBRIC (30 XP): Rekonstruktion von Befund und Deutung (10 XP) | Zwei Einwaende (Experiment + Begriff) (10 XP) | Urteil zu Verantwortung (6 XP) | Adressatengerechte Sprache (4 XP).
 
-## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
+## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY 1盒（核心总结）：
 

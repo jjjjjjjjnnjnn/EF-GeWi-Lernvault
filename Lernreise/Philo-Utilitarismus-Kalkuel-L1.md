@@ -143,7 +143,7 @@ ROLLE: Du bist Berater in der Jugendvertretung deiner Gemeinde und sollst eine E
 SITUATION: Zur Wahl stehen ein dauerhafter, kostenloser Freizeitpark für alle Jugendlichen und ein einmaliges großes Konzert mit einem berühmten Star. Die Mehrheit der Jugendlichen wünscht sich das Konzert, eine Minderheit lehnt es als Geldverschwendung ab. Beurteile beide Optionen in einer zusammenhängenden Stellungnahme (ca. 150 Wörter) mit Benthams Kalkül und Mills qualitativem Einwand.
 RUBRIC (30 XP): Anwendung der sieben Dimensionen auf beide Optionen (10 XP) | Vergleich mit Schwerpunkt Umfang, Dauer und Fruchtbarkeit (8 XP) | Einbringung von Mills qualitativem Unterschied (7 XP) | Kriteriengeleitetes Urteil mit Abwägung von Mehrheit und Minderheit (5 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY 1盒（核心总结）：
 

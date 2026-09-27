@@ -120,7 +120,7 @@ ANTWORT: A erfordert Verfahren (i): $\vec{u} \cdot \vec{v} = 2 - 2 + 0 = 0$, als
 
 Klausur-Satz: `Orthogonalitaet braucht das Produkt, Normierung braucht nur den Betrag.`
 
-## Schritt 6 — check: Verständnisprüfung
+## Schritt 6 — check: Selbsttest zu Vektoren im Raum und Skalarprodukt
 CHECK (drei Fragen mit Antworten):
 
 FRAGE: Wie berechnet man das Skalarprodukt zweier Raumvektoren? | ANTWORT: $\vec{a} \cdot \vec{b} = a_1b_1 + a_2b_2 + a_3b_3$, komponentenweise multiplizieren und addieren.
@@ -137,13 +137,13 @@ Klausur-Satz: `Produkt null bedeutet rechter Winkel, Produkt ungleich null fuehr
 2. Fehlkonzept: Aus $\vec{a} \cdot \vec{b} = 0$ folgt stets Orthogonalitaet, auch beim Nullvektor.
    Korrektur-Satz: `Der Test a . b = 0 gilt nur fuer Vektoren ungleich null.`
 
-## Schritt 7 — szenario: Klausurtransfer & Rubric
+## Schritt 7 — szenario: Klausurtransfer: Vektoren im Raum und Skalarprodukt
 ROLLE: Du bist Tutor im Mathe-Foerderkurs der EF.
 SITUATION: Ein Mitschueler behauptet, die Vektoren $\vec{a} = (1, 1, 1)$ und $\vec{b} = (1, -1, 0)$ seien parallel, weil beide feste Laengen besitzen.
 AUFGABE (begruenden, AFB III): Widerlege die Behauptung in einer zusammenhaengenden Darstellung (circa 150 Woerter), berechne Skalarprodukt und Winkel und erklaere den Unterschied zwischen Betragsgleichheit und Parallelitaet.
 RUBRIC (30 XP): Korrektes Skalarprodukt $\vec{a} \cdot \vec{b} = 0$ (10 XP) | Winkel $\phi = 90^\circ$ mit Formel (10 XP) | Begruendung Betrag gegen Richtung (5 XP) | Sprachlich geschlossene Darstellung (5 XP).
 
-## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
+## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
 TAKEAWAY (Kernbotschaft in einem Kasten):
 
 Rechne komponentenweise, denke geometrisch. Das Skalarprodukt uebersetzt senkrecht in null und spitz oder stumpf in das Vorzeichen von $\cos(\phi)$. Formelanker: $\vec{a} \cdot \vec{b} = a_1b_1 + a_2b_2 + a_3b_3$ und $\cos(\phi) = \frac{\vec{a} \cdot \vec{b}}{|\vec{a}| \cdot |\vec{b}|}$. Gibbs Vektorformat macht Kraefte und Winkel in drei Zeilen berechenbar: erst Betraege, dann Produkt, dann Winkel.

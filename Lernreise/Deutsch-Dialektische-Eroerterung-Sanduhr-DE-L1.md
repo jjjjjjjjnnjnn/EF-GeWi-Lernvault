@@ -126,8 +126,7 @@ ANTWORT: A verlangt Verfahren (i): Einleitung mit Streitfrage, Contra-Block, Ums
 
 Klausur-Satz: `Die Operatoren entscheiden ueber das Verfahren: Eroertern verlangt Abwaegung, Begruenden verlangt Steigerung.`
 
-## Schritt 6 — check: Verständnisprüfung
-
+## Schritt 6 — check: Selbsttest zu Dialektische Eroerterung Sanduhr-Prinzip
 CHECK (Selbsttest, 3 Fragen mit Antworten):
 
 FRAGE: Wie ist die Sanduhr aufgebaut? | ANTWORT: Breite Einleitung mit Engfuehrung, zwei gesteigerte Argumentbloecke mit Umschwung, erweiterte Abwaegung mit Fazit.
@@ -147,14 +146,13 @@ Klausur-Satz: `Konnektoren markieren Steigerung, Umschwung und Abwaegung und mac
    Korrektur: Die Sanduhr nennt eingangs nur die Frage. Wer frueh urteilt, entwertet den Gegenblock und verschenkt die Abwaegungspunkte.
    Korrektur-Satz: `Wer die Position vorwegnimmt, entwertet den Gegenblock und verschenkt die Abwaegungspunkte.`
 
-## Schritt 7 — szenario: Klausurtransfer & Rubric
-
+## Schritt 7 — szenario: Klausurtransfer: Dialektische Eroerterung Sanduhr-Prinzip
 ROLLE: Du bist Debattenchefin der Klasse 10 und bereitest das Team auf einen Schulwettbewerb vor.
 SITUATION: Das Los-Thema lautet Handyverbot, eure Seite wird erst vor Ort gezogen. Mehrere Teammitglieder kennen nur ihre Lieblingsseite.
 AUFGABE: Entwirf in zusammenhaengender Form (ca. 150 Woerter) einen Sanduhr-Bauplan mit Hook, je zwei Stichwort-Argumenten pro Seite, einem Umschwung-Satz und einer Abwaegungs-Formel mit Bedingung, sodass das Team beide Seiten vertreten kann.
 RUBRIC (30 XP): Hook plus Streitfrage klar (5 XP) | Beide Bloecke gesteigert mit Konnektoren (10 XP) | Umschwung sauber formuliert (5 XP) | Abwaegung mit Bedingung und Fazit (10 XP).
 
-## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
+## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY (Kernzusammenfassung):
 

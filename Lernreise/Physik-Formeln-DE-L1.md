@@ -120,7 +120,7 @@ ANTWORT: A erfordert Verfahren (i): ohne Reibung gilt $m \cdot g \cdot h = 0{,}5
 
 Klausur-Satz: `Die Energieerhaltung verfolgt einen Koerper ueber verschiedene Positionen, waehrend die Impulserhaltung den Gesamtimpuls mehrerer Koerper vor und nach einem Stoss vergleicht.`
 
-## Schritt 6 — check: Verständnisprüfung
+## Schritt 6 — check: Selbsttest zu Formelhandbuch Mechanik: dreisprachig und handgerechnet
 CHECK (Selbsttest, 3 Fragen mit Antworten):
 
 FRAGE: Wie lautet die zeitfreie Gleichung der beschleunigten Bewegung? | ANTWORT: $v^2 - v_0^2 = 2 \cdot a \cdot s$ ohne Zeit.
@@ -139,12 +139,12 @@ Klausur-Satz: `Jede Formel wird zuerst in Buchstabenform angeschrieben, dann mit
    Korrektur: Einheit ist nur notwendig. Falscher Faktor wie $a \cdot t^2$ statt $0{,}5 \cdot a \cdot t^2$ traegt dieselbe Einheit $\mathrm{m}$ bei doppeltem Wert; Bedingung und Groessenordnung muessen folgen.
    Korrektur-Satz: `Die Dimensionsprobe ist nur eine notwendige Bedingung; erst der Vergleich mit Bedingung und Groessenordnung sichert das Ergebnis.`
 
-## Schritt 7 — szenario: Klausurtransfer & Rubric
+## Schritt 7 — szenario: Klausurtransfer: Formelhandbuch Mechanik: dreisprachig und handgerechnet
 ROLLE: Du bist Lerncoach und bereitest eine Mitschuelerin auf die Formelaufgaben der Physik-Klausur vor.
 SITUATION: Die Mitschuelerin kennt viele Formeln, verwechselt aber die Einsatzmomente und schreibt oft nur Ergebnisse ohne Ansatz. Erklaere in einer zusammenhaengenden Stellungnahme (ca. 150 Woerter), wie eine Entscheidungshilfe die Formel waehlt und wie ein vollstaendiger Loesungsweg die Schrittpunkte sichert.
 RUBRIC (30 XP): Entscheidungsregel Bedingung waehlt Ansatz mit zwei Beispielen (10 XP) | Dreischritt Ansatz-Einsetzen-Ergebnis (10 XP) | Einheiten und Groessenordnung als Kontrolle (5 XP) | Nachvollziehbare adressatengerechte Fachsprache (5 XP).
 
-## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
+## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
 TAKEAWAY (Kernzusammenfassung):
 
 Bedingung waehlt Ansatz, Buchstabenform vor Zahlen, Einheit und Groessenordnung als Kontrolle — so wird aus einer Formel volle Punktzahl. Ausloeser merken: $s = v \cdot t$ fuer gleichfoermig, Quadratterme fuer beschleunigt, $F = m \cdot a$ fuer Zeit und Richtung, Energie bei reibungsfrei, Impuls bei Stoss, $F_z = m \cdot v^2/r$ fuer Kreisbahn.

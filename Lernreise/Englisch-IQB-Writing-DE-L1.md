@@ -128,8 +128,7 @@ ANSWER: A requires procedure (i): I reproduce the author position in my own word
 
 Klausur-Satz: `Outline reproduces what the author says, whereas analyse explains how she says it and what effect the devices have on the reader.`
 
-## Schritt 6 — check: Verständnisprüfung
-
+## Schritt 6 — check: Selbsttest zu IQB Writing: Summary, Analysis, Comment
 CHECK (three questions with answers):
 
 FRAGE: In which order and with which AFB do the three IQB tasks run? | ANTWORT: First outline (AFB I), then analyse (AFB II), finally comment with assess or discuss (AFB III); the order is fixed.
@@ -150,13 +149,12 @@ Klausur-Satz: `A comment that repeats the text instead of judging it fails Task 
    Correction: Task 3 tests judgement, not reproduction. Repeated content scores zero on AFB III. Position, reasons, examples, counterargument and final judgement are obligatory.
    Korrektur-Satz: `Repeating the text in Task 3 earns no marks, because AFB III demands a reasoned judgement rather than a paraphrase.`
 
-## Schritt 7 — szenario: Klausurtransfer & Rubric
-
+## Schritt 7 — szenario: Klausurtransfer: IQB Writing: Summary, Analysis, Comment
 ROLE: You are a senior student correcting a peer draft for an IQB exam in a feedback round.
 SITUATION: The draft holds three paragraphs: paragraph 1 retells the plot, paragraph 2 names two devices without lines, paragraph 3 repeats the author opinion. Write feedback (ca. 150 words) that separates the three tasks, names the main error per paragraph and shows for paragraph 3 what a correct final judgement with counterargument looks like.
 RUBRIC (30 XP): Correct mapping of the three tasks to AFB I, II and III (5 XP) | Precise error naming in paragraphs 1 and 2 with the P.E.E. rule (10 XP) | Demonstration of a correct Task 3 ending with position, counterargument and verdict (10 XP) | Note on the target-format requirement if applicable (5 XP).
 
-## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
+## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY (core summary):
 

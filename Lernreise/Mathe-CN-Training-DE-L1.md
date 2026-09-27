@@ -130,8 +130,7 @@ ANTWORT: A erfordert Verfahren (i): $A(x) \ge 2 \cdot \sqrt{25} = 10$, Gleichhei
 
 Klausur-Satz: `Fuer Summen positiver Terme mit festem Produkt nutzt man AM-GM, fuer Polynome das Ableitungsverfahren mit Vorzeichentabelle.`
 
-## Schritt 6 — check: Verständnisprüfung
-
+## Schritt 6 — check: Selbsttest zu CN-Training: vier Aufgaben unter Zeitdruck
 CHECK (drei Fragen mit Antworten):
 
 FRAGE: Wie lautet die Punkt-Steigungs-Form der Tangente an der Stelle $x_0$? | ANTWORT: $t(x) = f(x_0) + f'(x_0) \cdot (x - x_0)$.
@@ -149,14 +148,13 @@ Klausur-Satz: `Ansatz, Rechnung und Antwortsatz gehoeren zu jeder Aufgabe; AM-GM
 2. Fehlkonzept: Beim Ziehen ohne Zuruecklegen bleiben die Wahrscheinlichkeiten der zweiten Stufe unveraendert.
    Korrektur-Satz: `Beim Ziehen ohne Zuruecklegen verringern sich Zaehler und Nenner jeweils um eins.`
 
-## Schritt 7 — szenario: Klausurtransfer & Rubric
-
+## Schritt 7 — szenario: Klausurtransfer: CN-Training: vier Aufgaben unter Zeitdruck
 ROLLE: Du bist Lerncoach und wertest die Ergebnisse des 60-Minuten-Trainings aus.
 SITUATION: Ein Schueler hat alle vier Aufgaben bearbeitet, aber bei Aufgabe 2 nur den Vektor angegeben, bei Aufgabe 3 die zweite Wahrscheinlichkeit als $4/7$ geschrieben und bei Aufgabe 4 das Ergebnis ohne Gleichheitsbedingung gelassen. Beurteile seine Leistung in einer zusammenhaengenden Darstellung (circa 150 Woerter), ordne die Fehler nach EHZ-Punkten ein und unterscheide Rechenfehler von Konzeptfehlern.
 AUFGABE (begruenden, AFB III): Verfasse eine zusammenhaengende Darstellung von etwa 150 Woertern mit Fehlerzuordnung, Analyse und Lernempfehlung.
 RUBRIC (30 XP): Zuordnung der Fehler zu den EHZ-Punkten (5 XP) | Analyse Aufgabe 2: fehlender Nachweis der Laenge und Punktprobe (10 XP) | Analyse Aufgabe 3 und 4: Konzeptfehler ohne Zuruecklegen beziehungsweise fehlende Gleichheitsbedingung (10 XP) | Fazit mit Lernempfehlung (5 XP).
 
-## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
+## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY (Kernbotschaft in einem Kasten):
 

@@ -126,7 +126,7 @@ ROLLE: Du schreibst einen Trainingsplan-Kommentar fuer eine Schul-AG.
 SITUATION: Die AG trainiert taeglich hart und stagniert. Begruende in zusammenhaengender Darstellung (ca. 150 Woerter) mit Reizstufen und Superkompensation einen 3-plus-1-Wochenplan mit zwei Beispiel-Normativen.
 RUBRIC (30 XP): Reizstufendiagnose des Fehlers (8 XP) | Normativbegruendung mit zwei Werten (10 XP) | Superkompensations-Timing (8 XP) | Verstaendliche Sprache (4 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY 1盒（核心总结）：
 

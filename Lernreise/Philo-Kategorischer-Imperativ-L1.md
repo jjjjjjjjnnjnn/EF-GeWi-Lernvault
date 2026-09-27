@@ -148,7 +148,7 @@ ROLLE: Du bist Mitglied im Ethikrat deiner Schule und sollst in einer Sitzung zu
 SITUATION: Ein Mitschüler schlägt vor, bei einer anstehenden Klausur zu schummeln, weil der Druck sonst zu groß sei und allen damit geholfen wäre. Beurteile diesen Vorschlag in einer zusammenhängenden Stellungnahme (ca. 150 Wörter), indem du die Maxime des Schummelns nach dem Vier-Schritte-Schema prüfst und mit der Selbstzweckformel abschließend urteilest.
 RUBRIC (30 XP): Formulierung der Maxime des Schummelns (5 XP) | Durchführung der Universalisierung mit Denkwiderspruch (10 XP) | Anwendung der Selbstzweckformel auf Mitschüler und Lehrkraft (10 XP) | Kriteriengeleitetes Urteil mit Begründung (5 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY 1盒（核心总结）：
 

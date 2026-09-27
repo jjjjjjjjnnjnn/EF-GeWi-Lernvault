@@ -126,8 +126,7 @@ ANSWER: A requires procedure (i): The aside gives the audience secret knowledge 
 
 Klausur-Satz: `While analysis describes the aside as a channel of secret knowledge, interpretation reads it as proof of divided loyalty.`
 
-## Schritt 6 — check: Verständnisprüfung
-
+## Schritt 6 — check: Selbsttest zu Shakespearean Drama Macbeth Romeo
 CHECK (three questions with answers):
 
 FRAGE: Distinguish soliloquy, aside, blank verse and dramatic irony. | ANTWORT: Soliloquy — alone, inner thoughts to the audience; aside — brief secret remark unheard by others on stage; blank verse — unrhymed ten-syllable lines close to speech; dramatic irony — the audience knows more than the character.
@@ -148,14 +147,13 @@ Klausur-Satz: `Short fragmented lines in the sleepwalking scene mirror a guilty,
    Correction: Words open the door only. After thou and hath comes: who speaks to whom, what the audience knows beyond the character, which theme the line advances. Translation without interpretation stays on AFB I.
    Korrektur-Satz: `Translating Early Modern words is only the first step; interpretation must link the line to character and theme.`
 
-## Schritt 7 — szenario: Klausurtransfer & Rubric
-
+## Schritt 7 — szenario: Klausurtransfer: Shakespearean Drama Macbeth Romeo
 ROLE: You are the dramaturg of a school theatre club staging a 3-minute Macbeth excerpt.
 SITUATION: Your actors confuse soliloquy with aside and speak every line at the same pace. Write a 120-word directing note: mark one soliloquy moment and one aside moment (invented lines allowed), explain the blank-verse rhythm cue, and close with what the audience should feel (dramatic irony).
 TASK: Directing note with marked lines, rhythm instruction and irony effect.
 RUBRIC (30 XP): Correct soliloquy and aside marking with brief quotes (10 XP) | Rhythm note on short vs flowing lines (10 XP) | Irony effect on the audience clearly stated with an interpretive sentence (10 XP).
 
-## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
+## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY (core summary):
 

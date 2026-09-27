@@ -121,7 +121,7 @@ ROLLE: Du bist Berichterstatterin fuer den Stadtrat.
 SITUATION: Die Stadt feiert sinkende Arbeitslosigkeit, doch die Beratungsstelle meldet mehr befristete Aufstock-Jobs. Nimm in circa 150 Woertern Stellung, ob der Strukturwandel gelungen ist, indem du Branchenverschiebung und Prekaritaet getrennt pruefst.
 RUBRIC (30 XP): Darstellung des Strukturwandels (8 XP) | Vier-Kriterien-Analyse (10 XP) | Kriteriengeleitetes Urteil (8 XP) | Fachsprachliche Darstellung (4 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY:
 

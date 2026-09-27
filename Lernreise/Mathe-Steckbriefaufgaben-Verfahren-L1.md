@@ -128,7 +128,7 @@ ROLLE: Du bist Mitarbeiter in einem Ingenieurbuero und sollst ein Brueckenprofil
 SITUATION: Das Profil eines Brueckenbogens soll naeherungsweise durch eine ganzrationale Funktion dritten Grades beschrieben werden. Bekannt sind: Der Bogen beginnt im Ursprung mit waagerechter Tangente, erreicht an der Stelle x = 4 seinen hoechsten Punkt und hat dort eine Hoehe von 16 Metern. Bestimme den Funktionsterm und erlaeutere in einer zusammenhaengenden Darstellung (ca. 150 Woerter) dein Vorgehen.
 RUBRIC (30 XP): Korrekter Ansatz f(x) = ax^3 + bx^2 + cx + d (5 XP) | Uebersetzung der Bedingungen (f(0) = 0, f'(0) = 0, f(4) = 16, f'(4) = 0) (10 XP) | Loesung des LGS mit Ergebnis (10 XP) | Probe und Antwortsatz im Sachzusammenhang (5 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY 1盒（核心总结）：
 

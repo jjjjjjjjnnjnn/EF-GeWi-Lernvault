@@ -125,8 +125,7 @@ ANTWORT: A erfordert Verfahren (i): Steht der Seitensatz in der Dominante, gehoe
 
 Klausur-Satz: `Ob ein Abschnitt als Exposition, Reprise oder Coda zu bestimmen ist, entscheidet sich an seinem Tonartziel und seiner Funktion, nicht an seiner Laenge.`
 
-## Schritt 6 — check: Verständnisprüfung
-
+## Schritt 6 — check: Selbsttest zu Sonatensatzform analysieren: Tonartplan und Themenvergleich
 CHECK (3 Fragen zur Selbstkontrolle mit Antworten):
 
 FRAGE: Welche Tonarten stehen im Tonartplan einer Exposition und einer Reprise einander gegenueber? | ANTWORT: In der Exposition Haupttonart (Hauptsatz) und Dominantseite (Seitensatz); in der Reprise beide Themen in der Haupttonart.
@@ -146,13 +145,12 @@ Klausur-Satz: `Die Coda schliesst den Tonartplan, indem sie die Haupttonart best
    Korrektur: Der Tonartplan muss die tonale Richtung zeigen: Aufbruch zur Dominantseite in der Exposition, Ausgleich in der Haupttonart in der Reprise. Ohne Richtung bleibt unsichtbar, wie Spannung aufgebaut und geloest wird.
    Korrektur-Satz: `Ein Tonartplan muss die tonale Richtung zeigen: Aufbruch zur Dominantseite in der Exposition, Ausgleich in der Haupttonart in der Reprise.`
 
-## Schritt 7 — szenario: Klausurtransfer & Rubric
-
+## Schritt 7 — szenario: Klausurtransfer: Sonatensatzform analysieren: Tonartplan und Themenvergleich
 ROLLE: Du bist Pruefling in einer muendlichen Musikpruefung (EF) und sollst deine schriftliche Analyse eines Sonatensatzes muendlich erlaeutern.
 SITUATION: Du hast zu Hause einen Tonartplan und eine Themenvergleichstabelle erstellt. In der Pruefung liegt dein Blatt vor dir; die Prueferin fragt: Erlaeutern Sie Ihren Tonartplan und begruenden Sie, warum der Schlussabschnitt eine Coda ist. Formuliere eine zusammenhaengende muendliche Erlaeuterung (ca. 90 Sekunden), in der du beide Tabellen nutzt und mit einem begruendeten Urteil zur Formwirkung schliesst.
 RUBRIC (30 XP): Vorstellen des Tonartplans mit Richtung $Hd$-$Dd$-$Hd$ (8 XP) | Vergleich von Hauptsatz und Seitensatz an mindestens zwei Merkmalen (8 XP) | Begruendung der Coda-Funktion ueber die fehlende Modulation (9 XP) | Begruendetes Urteil zur Formwirkung (Aufbau und Loesung der tonalen Spannung) (5 XP).
 
-## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
+## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY (Kernzusammenfassung):
 

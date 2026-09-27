@@ -130,8 +130,7 @@ ANTWORT: A erfordert Verfahren (i): Close reading of voice, hybridity and stylis
 
 Klausur-Satz: `Analysis proves from the text, discussion argues beyond it.`
 
-## Schritt 6 — check: Verständnisprüfung
-
+## Schritt 6 — check: Selbsttest zu Nigeria and Adichie postcolonial voices
 CHECK检索默写（自测 3 题，与答案配对）：
 
 FRAGE: What is a single story? | ANTWORT: An incomplete stereotype presenting Africa only as poor and war-torn.
@@ -152,13 +151,12 @@ Klausur-Satz: `Voice plus detail defeats stereotype.`
    中文纠偏：分析题每个论点配一个改写过的短例并讲效果；堆例无讲等于无证。
    Korrektur-Satz: `One paraphrased detail with effect beats five listed names.`
 
-## Schritt 7 — szenario: Klausurtransfer & Rubric
-
+## Schritt 7 — szenario: Klausurtransfer: Nigeria and Adichie postcolonial voices
 ROLLE: You write a comment for a school magazine on media coverage of Nigeria.
 SITUATION: A charity poster shows only starving children. Discuss in a coherent comment (ca. 150 words) the danger of a single story with reference to Adichie and propose fairer representation.
 RUBRIC (30 XP): Single-story thesis with Adichie link (8 XP) | Two arguments with examples (10 XP) | Counter-argument and rebuttal (6 XP) | Coherent English with linking words (6 XP).
 
-## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
+## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY 1盒（核心总结）：
 

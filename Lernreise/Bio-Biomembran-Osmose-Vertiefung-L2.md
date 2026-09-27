@@ -120,7 +120,7 @@ ROLLE: Du bist Tutorin im Bio-Grundkurs.
 SITUATION: Eine Mitschuelerin sieht Zwiebelzellen erst schrumpfen, dann schwellen. Erklaere in circa 150 Woertern mit $\Psi$-Rechnung, warum konzentrierte Loesung erst Plasmolyse und Wasser danach Deplasmolyse erzeugt.
 RUBRIC (30 XP): Psi-Gleichung korrekt (8 XP) | Beide Richtungen mit $\Delta\Psi$ (10 XP) | Turgordeutung (8 XP) | Fachsprachliche Darstellung (4 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY:
 

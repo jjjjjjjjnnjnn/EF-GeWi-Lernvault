@@ -127,7 +127,7 @@ ROLLE: Du bist Referent in einem Mathe-Crashkurs fuer die ZKE-Vorbereitung.
 SITUATION: Ein Kursteilnehmer behauptet, jede Stelle mit f'(x0) = 0 sei automatisch ein Hoch- oder Tiefpunkt, und will seine Behauptung an f(x) = x^3 (mit f'(0) = 0) belegen. Bewerte seine Aussage in einer zusammenhaengenden Darstellung (ca. 150 Woerter) unter Rueckgriff auf notwendige und hinreichende Bedingung.
 RUBRIC (30 XP): Benennung der Behauptung als Verwechslung von notwendig und hinreichend (5 XP) | Gegenbeispiel f(x) = x^3 mit f'(0) = 0, aber keinem Extremum (10 XP) | Korrekte Vorgehensweise mit f''- oder VZW-Kriterium (10 XP) | Kriteriengeleitetes Fazit zum Stellenwert beider Bedingungen (5 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY 1盒（核心总结）：
 
