@@ -15,47 +15,53 @@ version: Lesson-v3
 
 <!-- Lesson v3 architecture: Schritte 1-8 fixed; Fehlvorstellung between Schritt 6 and 7 (parser skipped); embedded [Werkzeug: <id>]; gating: check/szenario failed = Weiter greyed; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
-## Schritt 1 — entdecken
+## Schritt 1 — entdecken: Londoner West End — 赛场警报
 
-ZIELE (3 Ziele, nach 15 Minuten erreichbar):
+ZIELE (3条,本节15分钟学完能做到——先读中文,再记德语):
 
-1. Synkope und Offbeat im $4/4$-Takt bestimmen und notieren.
-2. Swing-Phrasierung ($triolisch \ne gerade$) erklaeren.
-3. Die Groove-Wirkung muendlich beurteilen.
+1. 中文:能一句话定义`Rhythmus Synkopen und Jazz`,并定位到本关赛事Londoner West End, Bernstein Mambo (West Side Story)。
+2. 中文:能口述核心机制,并用数值目标(Clave 3-2, Wechsel 4/4 zu 6/8, T = 0,43 s bei 140 BPM)举证。
+3. 中文:能诊断一处典型错误,并用德语Klausur-Satz收束(AF B II)。
 
-VORAUSSETZUNG: Notenwerte, Taktarten und Kadenzhoeren.
+### Hook 赛场/舞台实况
 
-VORGAENGER-VERWEIS: Diese Lektion setzt `Musik-Harmonielehre-Kadenz-Stufentheorie-L1.md` voraus und wiederholt sie nicht. Dort stand Harmonik (Stufen, Kadenz, Schluss) im Zentrum. Hier folgt der enge Ausschnitt: nur Rhythmik mit Synkope und Jazz-Phrasierung; Harmonieanalyse gehoert nicht hierher.
+聚光灯打向Londoner West End, Bernstein Mambo (West Side Story),这是《冠军竞技场与节拍工坊》战役的下一关:上一集埋下的悬念在此引爆,教练/首席必须在限时内拿出方案。切分就是预期落空:重音迟到或早到,身体先被晃再被带走;数拍子、拍clave、跟groove三步定位。本关必须过沙盘数值目标,下一集的瓦格纳动机/体能极限/冲量角逐在此埋下伏笔。
 
-Klausur-Satz: `Synkopen verlagern Betonung auf unbetonte Zeiten und erzeugen rhythmische Spannung.`
+Hook (DE): Im Rampenlicht von Londoner West End, Bernstein Mambo (West Side Story) beginnt unser naechster Akt der Kampagne Champion-Arena und Takt-Werkstatt. Stell dir vor: Der Drummer verlegt einen einzigen Schlag, und ploetzlich wippt der ganze Saal: Nichts stimmt mehr mit der Erwartung, und alles groovt staerker. Was bewegt die Fuesse gegen den Kopf? Die Synkope als versetzte Betonung. Erstens zaehlt das Metrum die Ordnung. Zweitens bricht der Off-Beat die Regel. Drittens traegt der Groove die Lust. Wer Clave und Puls haelt, analysiert statt zu wippen. Heute stellen wir genau diese Falle: zaehlen, klatschen und Wirkung belegen.
 
-## Schritt 2 — entdecken
+`Klausur-Satz: Leitsatz des Themas.`
 
-PRETRAINING (Kernbegriffe):
+## Schritt 2 — entdecken: 5术语装备盒
 
-- Synkope: Betonung einer unbetonten Zeit mit Ueberbindung ueber die schwere Zeit.
-- Offbeat: Spiel auf der unbetonten Zaehlzeit (und) gegen den Beat.
-- Swing: Triolische Phrasierung langer und kurzer Achtel im Jazz.
-- Groove: Wiederkehrendes Rhythmusmuster mit koerperlicher Sogwirkung.
-- Call and Response: Ruf-Antwort-Prinzip als Dialogform.
+PRETRAINING术语盒(核心5词,先读三遍中德,合书自测中文→德语):
 
-Klausur-Satz: `Swing liegt zwischen gerade und triolisch und lebt vom flexiblen Timing.`
+中文在上,德语在下:
 
-## Schritt 3 — entdecken
+- 切分 — Synkope:重音移位 / Verschiebung der Betonung。
+- 摇摆 — Groove:循环律动 / kreislaufender Puls。
+- 摇摆三连音 — Shuffle:三连音律动 / Triolen-Groove。
+- clave — Clave:拉丁节奏钥匙 / lateinischer Schluesselrhythmus。
+- 节拍 — Metrum:拍号骨架 / Taktgeruest。
 
-ENTDECKEN (ein Konzept plus Diagramm):
+`Klausur-Satz: Die fuenf Begriffe tragen Diagnose, Sandkasten und Urteil als gemeinsame Sprache.`
 
-Rhythmus folgt $Puls + Betonung = Groove$. Der $4/4$-Takt zaehlt $1 + 2 + 3 + 4$; Synkopen besetzen die und-Zeiten und binden ueber. Jazz schichtet Walking Bass, Ride-Pattern und Voicings uebereinander; Spannung entsteht aus stabiler Basis plus freier Oberstimme. Analyse heisst: Puls klopfen, Betonungen markieren, Abweichung als Verfahren benennen.
+## Schritt 3 — entdecken: 生理/音乐机制传导
+
+ENTDECKEN(1概念 + 1文字图解,中文在上、德语在下):
+
+中文:切分=预期落空:重音迟到或早到,身体先被晃再被带;数拍子、拍 clave、跟 groove 三步定位。
+
+Mechanismus (DE): Synkope bricht die Erwartung: Betonung kommt zu frueh oder zu spaet; Zaehlen, Clave und Groove sichern die Analyse.
+
+战役传导:本关承接冲量角逐、乳酸阈值与主导动机三幕,测得出才能说得清,说得清才能赢下来。
 
 ```diagram
-4/4 Raster: 1 + 2 + 3 + 4 + (Zaehlzeiten)
-Synkope: Betonung auf + mit Bindung ueber schwere Zeit
-Swing: lang-kurz statt gerade-achtel (triolisch gefaellt)
-Schichten: Bass (Puls) + Ride (Muster) + Solo (Freiheit)
-Formel: Puls + Betonung = Groove
+Kampagne [Impuls -> Schwelle -> Leitmotiv]
+Holphase [sichern] -> Pruefphase [Clave 3-2, Wechsel 4/4 zu 6/8, T = 0,43 s bei 140 BPM] -> Zielphase [nutzen]
+Regel: Fehler frueh = Grenze | Fehler spaet = Ausnutzung
 ```
 
-Klausur-Satz: `Stabiler Puls unten erlaubt freie Synkopen oben — darin liegt der Groove.`
+`Klausur-Satz: Der Mechanismus trennt Grenze von Ausnutzung und ordnet jeden Fehler seiner Phase zu.`
 
 ## Anekdote & Fun-Fact
 
@@ -63,48 +69,50 @@ Klausur-Satz: `Stabiler Puls unten erlaubt freie Synkopen oben — darin liegt d
 
 **Bezug zum Konzept**: `Second Line zeigt Synkopen als getanzte Theorie.`
 
-## Schritt 4 — ausprobieren
+## Schritt 4 — ausprobieren: 沙盘决战 Clave 3-2
 
-BEISPIEL (vollstaendige Musterloesung):
+BEISPIEL(含教具操作与解答):
 
 [Werkzeug: formula]
 
-AUFGABE (beschreiben, AFB II): Beschreiben Sie muendlich, wie eine Synkope im zweiten Takt Spannung erzeugt.
+AUFGABE (analysieren, AFB II):Rhythmusformel T = 60/BPM: rechne T = 0,43 s bei 140 BPM und markiere Clave 3-2;达标线:Clave 3-2, Wechsel 4/4 zu 6/8, T = 0,43 s bei 140 BPM。
+
+Target数值目标:Clave 3-2, Wechsel 4/4 zu 6/8, T = 0,43 s bei 140 BPM。
 
 HILFE:
-1. Schritt 1: Raster $1 + 2 + 3 + 4$ klopfen.
-2. Schritt 2: Betonte und-Zeit mit Bindung benennen.
-3. Schritt 3: Wirkung auf Erwartung deuten.
+1. 定相命名:先说相位与错误画像,对照目标Clave 3-2。
+2. 读数释义:读出测量值,用一个术语解释效应。
+3. 推纠正:从机制推出一条可操作纠正。
 
-MUSTERLOESUNG: Der Puls liegt auf eins und drei, die Synkope betont das und nach zwei und bindet ueber drei hinweg. Die erwartete schwere Zeit bleibt leer, die Spannung waechst bis zur Aufloesung auf vier. Der Koerper wartet auf den Beat, der Kopf hoert die Abweichung: Genau diese Differenz treibt den Groove an.
+MUSTERLÖSUNG:对照目标(Clave 3-2, Wechsel 4/4 zu 6/8, T = 0,43 s bei 140 BPM),先定相命名错误画像,再读数并以术语释效应,最后从机制推纠正;在Londoner West End, Bernstein Mambo (West Side Story)中形成 保障—转化—兑现 的完整因果链,达标即过关。
 
-Klausur-Satz: `Leere schwere Zeit plus volle und-Zeit erzeugen rhythmische Spannung mit Aufloesung.`
+`Klausur-Satz: Am Target zeigt sich, ob Grenze oder Ausnutzung ueber das Ergebnis entschied.`
 
-## Schritt 5 — ausprobieren
+## Schritt 5 — ausprobieren: VERGLEICH技术对抗 Zaehlen-Weg vs Clave-Weg
 
-VERGLEICH (erst Verfahren waehlen, dann loesen):
+VERGLEICH辨别实验(双向辨析,先选程序再解题):【选程序】
 
-VERGLEICH: Waehle erst das Verfahren — (i) Notations-Verfahren (Takt, Bindung, Betonung bestimmen) oder (ii) Stil-Verfahren (Swing, Groove, Call and Response hoeren) — dann loesen.
+VERGLEICH:先选程序—— (i) Zaehlen-Weg 还是 (ii) Clave-Weg ——再解题。WegA讲上限/结构,WegB讲兑现/情境。【选程序:问上限与结构选(i),问兑现与情境选(ii)。口述先说 Ich waehle Verfahren (i)/(ii), weil …】
 
-AUFGABE A: Ist die Figur auf der und-Zeit eine Synkope? Welches Verfahren passt?
+AUFGABE A (Zaehlen-Weg):在Londoner West End, Bernstein Mambo (West Side Story)的首个案例中选哪条路,如何论证?
 
-AUFGABE B: Swungt die Aufnahme oder spielt sie gerade? Welches Verfahren passt?
+AUFGABE B (Clave-Weg):在对立案例中选哪条路,如何论证?
 
-HILFE: A fragt nach Notation, also Verfahren (i). B fragt nach Stil, also Verfahren (ii).
+HILFE:A问上限属于程序(i);B问兑现属于程序(ii)。先说选哪条路,再给测量/情境证据。
 
-ANTWORT: A erfordert Verfahren (i): Mit Bindung ueber die schwere Zeit ja, ohne Bindung nur Offbeat. B erfordert Verfahren (ii): Lang-kurz-Phrasierung plus Ride-Muster verraten Swing gegenueber geraden Achteln.
+ANTWORT:A走程序(i)Zaehlen-Weg,以测量值与机制论证上限;B走程序(ii)Clave-Weg,以情境与位置论证兑现。德语口述句收束。
 
-Klausur-Satz: `Notation entscheidet ueber Synkope, Hoereindruck entscheidet ueber Swing.`
+`Klausur-Satz: Verfahren (i) setzt die Grenze, Verfahren (ii) nutzt die Lage; die Wahl traegt das Urteil.`
 
-## Schritt 6 — check
+## Schritt 6 — check: Selbsttest zu Rhythmus Synkopen und Jazz
 
-CHECK (drei Fragen mit Antworten):
+CHECK检索默写(自测3题,与答案配对):
 
-FRAGE: Was ist eine Synkope? | ANTWORT: Betonung unbetonter Zeit mit Ueberbindung ueber die schwere Zeit.
-FRAGE: Was unterscheidet Swing von gerade? | ANTWORT: Triolisch gefaerbte lang-kurz-Phrasierung statt gleicher Achtel.
-FRAGE: Wie lautet die Groove-Formel? | ANTWORT: $Puls + Betonung = Groove$.
+FRAGE:如何在赛事中认出本课核心? | ANTWORT:看数值目标(Clave 3-2)与S3机制。
+FRAGE:如何达标? | ANTWORT:测量、术语释义、从机制推纠正三步。
+FRAGE:何时选程序(i)而非(ii)? | ANTWORT:问上限选(i),问兑现选(ii)。
 
-Klausur-Satz: `Ohne Puls ist keine Abweichung hoerbar, ohne Abweichung kein Groove.`
+`Klausur-Satz: Selbsttest bestanden heisst Target lesen, Verfahren waehlen und Urteil begruenden.`
 
 ## Fehlvorstellung
 
@@ -114,19 +122,18 @@ Klausur-Satz: `Ohne Puls ist keine Abweichung hoerbar, ohne Abweichung kein Groo
 2. Fehlvorstellung: Swing bedeute nur schneller spielen.
    Korrektur-Satz: `Swing meint Phrasierung und Timing bei beliebigem Tempo, nicht Geschwindigkeit.`
 
-## Schritt 7 — szenario
+## Schritt 7 — szenario: Klausurtransfer: Rhythmus Synkopen und Jazz — Musical-Direktor im West End
+中文:你是Musical-Direktor im West End,在Londoner West End, Bernstein Mambo (West Side Story)中必须用德语连贯口述(约90秒)诊断、措施与数值目标(Clave 3-2, Wechsel 4/4 zu 6/8, T = 0,43 s bei 140 BPM),并以术语举证。
+ROLLE: Du bist Musical-Direktor im West End. SITUATION: In Londoner West End, Bernstein Mambo (West Side Story) stellst du Diagnose, Massnahme und Target (Clave 3-2, Wechsel 4/4 zu 6/8, T = 0,43 s bei 140 BPM) in ca. 90 Sekunden vor.
+RUBRIC (30 XP):诊断术语8分 | 措施与目标举证10分 | 程序选择对比7分 | 德语表达5分。
 
-ROLLE: Du bist Pruefling in der muendlichen Pruefung.
-SITUATION: Nach zweimaligem Hoeren sollst du einen Jazz-Ausschnitt vorstellen (circa 2 Minuten): Puls, Synkopen und Swing benennen und die Groove-Wirkung beurteilen.
-RUBRIC (30 XP): Puls und Takt korrekt (8 XP) | Synkopen benannt (10 XP) | Stilurteil mit Begruendung (8 XP) | Fachsprachlicher Vortrag (4 XP).
+## Schritt 8 — reflexion: Takeaway & Reflexion — 奖杯还是进站检修
 
-## Schritt 8 — reflexion: Takeaway & Reflexion
+TAKEAWAY 1盒(核心总结):
 
-TAKEAWAY:
+中文:上限早锁定、位置晚兑现;数值目标(Clave 3-2, Wechsel 4/4 zu 6/8, T = 0,43 s bei 140 BPM)是裁判,程序选择是辩护;本关连着冲量角逐、体能极限与主导动机三幕,测得出、说得清、赢下来。
+Takeaway-Satz: `Wer die Grenze sichert und die Lage nutzt, holt den Pokal.`
 
-Puls klopfen, Abweichung benennen: Synkope schreibt Spannung, Swing spielt Haltung.
-Takeaway-Satz: `Groove hoeren heisst Puls halten und Abweichung feiern.`
-
-REFLEXION:
-1. Welcher Schritt fiel schwerer — das Bestimmen der Synkope (Schritt 4) oder die Verfahrenswahl (Schritt 5)?
-2. Beim naechsten Mal klopfe ich zuerst den Puls, weil jede Synkope ihn braucht.
+REFLEXION 2问:
+1. 过程自省:沙盘精度(Schritt 4)与程序选择(Schritt 5)哪一步更难?
+2. 元认知计划:下次先记测量值加相位,因为一切论证都从它长出来。

@@ -15,56 +15,53 @@ version: Lesson-v3
 
 <!-- Lesson v3 9步制架构：Schritt 1至8固定结构；Fehlvorstellung 夹在 Schritt 6 与 7 之间（Parser 自动跳过，不占步数）；支持内嵌 [Werkzeug: <id>] 交互教具；Gating: check/szenario 未过 = Weiter 置灰；XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
-## Schritt 1 — entdecken
+## Schritt 1 — entdecken: Bonner Beethovenhalle — 赛场警报
 
-ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
+ZIELE (3条,本节15分钟学完能做到——先读中文,再记德语):
 
-1. 中文：能把一段乐章读成一张 Tonartplan（调性布局表），逐格填出各段所在调（Hd→Dd→Hd）并标出转调位置。
-2. 中文：能用一张主题对比表（性格、音区、节奏、伴奏型）说清 Hauptsatz 与 Seitensatz 的对立关系。
-3. 中文：能说明 Coda 的功能（在再现之后确认收尾，而非第二次展开），并据此写出一份有量表意识的书面分析结论。
+1. 中文:能一句话定义`Sonatensatzform analysieren: Tonartplan und Themenvergleich`,并定位到本关赛事Bonner Beethovenhalle, Eroica (1. Satz, 691 Takte)。
+2. 中文:能口述核心机制,并用数值目标(Durchfuehrung 247 Takte, 90-Sekunden-Themenvergleich)举证。
+3. 中文:能诊断一处典型错误,并用德语Klausur-Satz收束(AF B II)。
 
-Klausur-Satz: `Der Tonartplan der Sonatensatzform verläuft von der Haupttonart über die Dominantseite und zurück zur Haupttonart, wobei die Coda den Abschluss bestätigt.`
+### Hook 赛场/舞台实况
 
-## Schritt 2 — entdecken
+聚光灯打向Bonner Beethovenhalle, Eroica (1. Satz, 691 Takte),这是《冠军竞技场与节拍工坊》战役的下一关:上一集埋下的悬念在此引爆,教练/首席必须在限时内拿出方案。分析奏鸣曲式等于填调性表加比主题:何调出、何调回、过渡如何拐、尾声如何钉。本关必须过沙盘数值目标,下一集的瓦格纳动机/体能极限/冲量角逐在此埋下伏笔。
 
-PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
+Hook (DE): Im Rampenlicht von Bonner Beethovenhalle, Eroica (1. Satz, 691 Takte) beginnt unser naechster Akt der Kampagne Champion-Arena und Takt-Werkstatt. Stell dir vor: Der Kritiker behauptet, der Satz sei nur schoene Wiederholung, doch dein Tonartplan beweist: Hier wurde moduliert, gekaempft und heimgeholt. Was ueberfuehrt das Ohr? Der Tonartplan als Landkarte plus Themenvergleich als Charakterstudie. Erstens kartiert die Exposition zwei Pole. Zweitens reist die Durchfuehrung durch die Ferne. Drittens besiegelt die Coda die Heimkehr. Wer Plaene fuellt, streitet mit Belegen. Heute zeichnen wir genau diese Karte: messen, vergleichen und Urteil sichern.
 
-中文在上，德语在下：
+`Klausur-Satz: Leitsatz des Themas.`
 
-- 调性布局表 — Tonartplan：用一张表标出各段所属调，是奏鸣曲式分析的骨架。
-- 第一主题（主部） — Hauptsatz (Hauptthema)：呈示部先出现、确立主调的主题，性格常果断。
-- 第二主题（副部） — Seitensatz：与主部形成对比的主题，呈示时进入属方向，再现时回主调。
-- 连接部（过渡） — Überleitung：主部与副部之间的桥段，承担转调与推动的功能。
-- 结尾部（尾声） — Coda：再现之后追加的收束段，在属调与主调上确认结束，不再"离家"。
+## Schritt 2 — entdecken: 5术语装备盒
 
-Klausur-Satz: `Während der Seitensatz in der Exposition die Dominantseite erreicht, wird er in der Reprise in die Haupttonart eingegliedert, sodass der Tonartplan geschlossen wird.`
+PRETRAINING术语盒(核心5词,先读三遍中德,合书自测中文→德语):
 
-## Schritt 3 — entdecken
+中文在上,德语在下:
 
-ENTDECKEN（1概念 + 1文字图解）：
+- 调性布局 — Tonartplan:呈示再现调性对照表 / Gegenueberstellung der Tonarten。
+- 主题对比 — Themenvergleich:性格节拍音区对比 / Charakter, Rhythmus und Lage im Kontrast。
+- 过渡 — Ueberleitung:转调桥梁 / modulierende Bruecke。
+- 尾声 — Coda:收束附言 / schliessender Anhang。
+- 终止 — Schluss:乐段句读 / Punktuierung des Satzes。
 
-中文：口试里"分析一段"不是复述听到什么，而是把它变成两张表。第一张是 Tonartplan：横着看是时间顺序，竖着看是调。呈示部从主调（Hd）出发，经连接部转到属方向（Dd）落第二主题；展开部在多个调之间游移，没有稳定落点；再现部把两个主题都拉回主调，最后 Coda 在主调上确认收尾——表格一填满，段落归属自然清楚。第二张是主题对比表：把 Hauptsatz 与 Seitensatz 按性格、音区、节奏、伴奏型四栏并排，对立关系一眼可见。两张表都建好后，再用一句德语把结论说出来，就是一份标准的书面/口述分析。
+`Klausur-Satz: Die fuenf Begriffe tragen Diagnose, Sandkasten und Urteil als gemeinsame Sprache.`
 
-文字图解（Tonartplan 骨架，App支持解析渲染）：
+## Schritt 3 — entdecken: 生理/音乐机制传导
+
+ENTDECKEN(1概念 + 1文字图解,中文在上、德语在下):
+
+中文:分析奏鸣曲式=填调性表+比主题:呈示何调出、再现何调回,过渡如何拐,尾声如何钉;调性对位即结构证据。
+
+Mechanismus (DE): Analyse heisst Tonartplan plus Themenvergleich: Wo steht die Exposition, wo die Reprise, wie moduliert die Bruecke, was nagelt die Coda fest.
+
+战役传导:本关承接冲量角逐、乳酸阈值与主导动机三幕,测得出才能说得清,说得清才能赢下来。
 
 ```diagram
-  Abschnitt   | Exposition        | Durchfuehrung      | Reprise        | Coda
-  ------------|-------------------|--------------------|----------------|--------
-  Hauptsatz   | Hd                | --                 | Hd             | Hd
-  Ueberleitung| Hd  ->  Dd        | Modulationen       | bleibt in Hd   | Hd
-  Seitensatz  | Dd                | --                 | Hd             | Hd
-  ------------|-------------------|--------------------|----------------|--------
-  Tonartziel  | Hd ---> Dd        | (offen, unstet)    | Hd (Ausgleich) | Bestaetigung
-
-  Themenvergleich (Tabelle im Kopf):
-  Merkmal   | Hauptsatz          | Seitensatz
-  Charakter | markant, entschieden| sanglich, weich
-  Lage      | tief, akkordnah    | hoeher, melodisch
-  Rhythmus  | kurz, punktiert    | laenger, gebunden
-  Begleitung| Akkordpuls        | aufgeloest / fliessend
+Kampagne [Impuls -> Schwelle -> Leitmotiv]
+Holphase [sichern] -> Pruefphase [Durchfuehrung 247 Takte, 90-Sekunden-Themenvergleich] -> Zielphase [nutzen]
+Regel: Fehler frueh = Grenze | Fehler spaet = Ausnutzung
 ```
 
-Klausur-Satz: `Der Tonartplan macht sichtbar, dass die Exposition mit der Dominante eine tonale Spannung aufbaut, die erst die Reprise durch die Rückkehr beider Themen in die Haupttonart auflöst.`
+`Klausur-Satz: Der Mechanismus trennt Grenze von Ausnutzung und ordnet jeden Fehler seiner Phase zu.`
 
 ## Anekdote & Fun-Fact
 
@@ -74,48 +71,50 @@ Klausur-Satz: `Der Tonartplan macht sichtbar, dass die Exposition mit der Domina
 
 **Bezug zum Konzept**: `Weil Expositionen auch monothematisch sein können, entscheidet der Tonartplan über die Einordnung, nicht die bloße Zahl der Themen.`
 
-## Schritt 4 — ausprobieren
+## Schritt 4 — ausprobieren: 沙盘决战 Durchfuehrung 247 Takte
 
-BEISPIEL（正确例题示范，含教具操作与解答）：
+BEISPIEL(含教具操作与解答):
 
-[Werkzeug: formula]
+[Werkzeug: oral-timer]
 
-AUFGABE (analysieren, AFB II)：Für den ersten Satz einer klassischen Sinfonie liegen folgende Angaben vor: Der Hauptsatz steht in G-Dur; die Überleitung moduliert und der Seitensatz endet in D-Dur; der folgende Abschnitt verarbeitet Motive in mehreren Tonarten ohne festen Ruhepunkt; danach kehren Haupt- und Seitensatz wieder, der Seitensatz nun in G-Dur; ein kurzer Schlussabschnitt bestätigt G-Dur. Erstellen Sie den Tonartplan und bestimmen Sie die Funktion des Schlussabschnitts.
+AUFGABE (analysieren, AFB II):90-Sekunden-Vergleich gegen den Timer: stelle beide Themen bei Durchfuehrung 247 Takte gegenueber;达标线:Durchfuehrung 247 Takte, 90-Sekunden-Themenvergleich。
+
+Target数值目标:Durchfuehrung 247 Takte, 90-Sekunden-Themenvergleich。
 
 HILFE:
-1. Schritt 1: Ordne die Angaben den vier Abschnitten Exposition, Durchführung, Reprise, Coda zu.
-2. Schritt 2: Trage in jede Zeile die Tonart ein — Hauptsatz, Seitensatz und die jeweilige Zieltonart.
-3. Schritt 3: Bestimme die Funktion des Schlussabschnitts, indem du prüfst, ob er noch moduliert oder nur bestätigt.
+1. 定相命名:先说相位与错误画像,对照目标Durchfuehrung 247 Takte。
+2. 读数释义:读出测量值,用一个术语解释效应。
+3. 推纠正:从机制推出一条可操作纠正。
 
-MUSTERLÖSUNG: Der Tonartplan lautet: Exposition — Hauptsatz in G-Dur (Hd), Überleitung nach D-Dur, Seitensatz in D-Dur (Dd). Durchführung — motivische Verarbeitung in mehreren Tonarten ohne festen Ruhepunkt. Reprise — Hauptsatz in G-Dur und Seitensatz nun ebenfalls in G-Dur (Ausgleich in Hd). Coda — Bestätigung von G-Dur. Der Schlussabschnitt moduliert nicht mehr, sondern bekräftigt die Haupttonart; er ist damit eine Coda und keine zweite Durchführung.
+MUSTERLÖSUNG:对照目标(Durchfuehrung 247 Takte, 90-Sekunden-Themenvergleich),先定相命名错误画像,再读数并以术语释效应,最后从机制推纠正;在Bonner Beethovenhalle, Eroica (1. Satz, 691 Takte)中形成 保障—转化—兑现 的完整因果链,达标即过关。
 
-Klausur-Satz: `Die Coda bestätigt die Haupttonart nach abgeschlossenem Ausgleich und unterscheidet sich dadurch grundlegend von der modulierenden Durchführung.`
+`Klausur-Satz: Am Target zeigt sich, ob Grenze oder Ausnutzung ueber das Ergebnis entschied.`
 
-## Schritt 5 — ausprobieren
+## Schritt 5 — ausprobieren: VERGLEICH技术对抗 Plan-Weg vs Vergleichs-Weg
 
-VERGLEICH辨别实验（双向辨析：Tonartplan眼 vs. Funktions眼）：
+VERGLEICH辨别实验(双向辨析,先选程序再解题):【选程序】
 
-VERGLEICH: Wähle erst das Verfahren — 【选程序】先判断题干问的是 (i) Tonartplan-Verfahren（这段在什么调？"回家"完成了吗？→ 填调性布局表）还是 (ii) Funktions-Verfahren（这段在整体里干什么？制造张力还是确认收尾？→ 判功能）—— dann auswerten.
+VERGLEICH:先选程序—— (i) Plan-Weg 还是 (ii) Vergleichs-Weg ——再解题。WegA讲上限/结构,WegB讲兑现/情境。【选程序:问上限与结构选(i),问兑现与情境选(ii)。口述先说 Ich waehle Verfahren (i)/(ii), weil …】
 
-AUFGABE A：Eine Aufgabe fragt: "In welcher Tonart steht der Seitensatz, und was folgt daraus für die Einordnung des Abschnitts?" Welches Verfahren ist zu wählen, und wie ist zu antworten?
+AUFGABE A (Plan-Weg):在Bonner Beethovenhalle, Eroica (1. Satz, 691 Takte)的首个案例中选哪条路,如何论证?
 
-AUFGABE B：Eine Aufgabe fragt: "Welche Funktion hat der Abschnitt, der nach der Reprise erklingt?" Welches Verfahren ist zu wählen, und wie ist zu antworten?
+AUFGABE B (Vergleichs-Weg):在对立案例中选哪条路,如何论证?
 
-HILFE: A fragt nach der Tonart und der daraus abgeleiteten Einordnung → Verfahren (i). B fragt nach der Rolle eines Abschnitts im Ganzen → Verfahren (ii).【选程序：问"在什么调/是否回家"= 调性布局程序；问"这一段干什么"= 功能程序。】
+HILFE:A问上限属于程序(i);B问兑现属于程序(ii)。先说选哪条路,再给测量/情境证据。
 
-ANTWORT: A erfordert Verfahren (i): Steht der Seitensatz in der Dominante, gehört der Abschnitt zur Exposition; steht er in der Haupttonart, gehört er zur Reprise — die Tonart entscheidet über die Einordnung. B erfordert Verfahren (ii): Der Abschnitt nach der Reprise moduliert nicht mehr und bestätigt die Haupttonart, erfüllt also die Funktion einer Coda (Bestätigung statt Entwicklung).
+ANTWORT:A走程序(i)Plan-Weg,以测量值与机制论证上限;B走程序(ii)Vergleichs-Weg,以情境与位置论证兑现。德语口述句收束。
 
-Klausur-Satz: `Ob ein Abschnitt als Exposition, Reprise oder Coda zu bestimmen ist, entscheidet sich an seinem Tonartziel und seiner Funktion, nicht an seiner Länge.`
+`Klausur-Satz: Verfahren (i) setzt die Grenze, Verfahren (ii) nutzt die Lage; die Wahl traegt das Urteil.`
 
-## Schritt 6 — check
+## Schritt 6 — check: Selbsttest zu Sonatensatzform analysieren: Tonartplan und Themenvergleich
 
-CHECK检索默写（自测 3 题，与答案配对）：
+CHECK检索默写(自测3题,与答案配对):
 
-FRAGE: Welche Tonarten stehen im Tonartplan einer Exposition und einer Reprise einander gegenüber? | ANTWORT: In der Exposition Haupttonart (Hauptsatz) und Dominantseite (Seitensatz); in der Reprise beide Themen in der Haupttonart.
-FRAGE: Nach welchen Merkmalen vergleicht man Hauptsatz und Seitensatz? | ANTWORT: Nach Charakter, Lage, Rhythmus und Begleitfigur — so wird der thematische Kontrast fassbar.
-FRAGE: Worin unterscheidet sich die Coda von der Durchführung? | ANTWORT: Die Durchführung moduliert und entwickelt, die Coda bestätigt die Haupttonart und schließt ab.
+FRAGE:如何在赛事中认出本课核心? | ANTWORT:看数值目标(Durchfuehrung 247 Takte)与S3机制。
+FRAGE:如何达标? | ANTWORT:测量、术语释义、从机制推纠正三步。
+FRAGE:何时选程序(i)而非(ii)? | ANTWORT:问上限选(i),问兑现选(ii)。
 
-Klausur-Satz: `Die Coda schließt den Tonartplan, indem sie die Haupttonart bestätigt, statt wie die Durchführung neue tonale Spannung aufzubauen.`
+`Klausur-Satz: Selbsttest bestanden heisst Target lesen, Verfahren waehlen und Urteil begruenden.`
 
 ## Fehlvorstellung
 
@@ -129,19 +128,18 @@ Klausur-Satz: `Die Coda schließt den Tonartplan, indem sie die Haupttonart best
    中文纠偏：不够。Tonartplan 的价值在于标出"调的目标方向"——呈示部是 Hd→Dd 的离开，再现部是 Dd→Hd 的回家。只列调名而不标方向，就看不出张力如何建立、如何解决，分析题会丢掉最关键的一层。
    Korrektur-Satz: `Ein Tonartplan muss die tonale Richtung zeigen: Aufbruch zur Dominantseite in der Exposition, Ausgleich in der Haupttonart in der Reprise.`
 
-## Schritt 7 — szenario
+## Schritt 7 — szenario: Klausurtransfer: Sonatensatzform analysieren: Tonartplan und Themenvergleich — Festival-Dirigent in Bonn
+中文:你是Festival-Dirigent in Bonn,在Bonner Beethovenhalle, Eroica (1. Satz, 691 Takte)中必须用德语连贯口述(约90秒)诊断、措施与数值目标(Durchfuehrung 247 Takte, 90-Sekunden-Themenvergleich),并以术语举证。
+ROLLE: Du bist Festival-Dirigent in Bonn. SITUATION: In Bonner Beethovenhalle, Eroica (1. Satz, 691 Takte) stellst du Diagnose, Massnahme und Target (Durchfuehrung 247 Takte, 90-Sekunden-Themenvergleich) in ca. 90 Sekunden vor.
+RUBRIC (30 XP):诊断术语8分 | 措施与目标举证10分 | 程序选择对比7分 | 德语表达5分。
 
-ROLLE: Du bist Prüfling in einer mündlichen Musikprüfung (EF) und sollst deine schriftliche Analyse eines Sonatensatzes mündlich erläutern.
-SITUATION: Du hast zu Hause einen Tonartplan und eine Themenvergleichstabelle erstellt. In der Prüfung liegt dein Blatt vor dir; die Prüferin fragt: "Erläutern Sie Ihren Tonartplan und begründen Sie, warum der Schlussabschnitt eine Coda ist." Formuliere eine zusammenhängende mündliche Erläuterung (ca. 90 Sekunden), in der du beide Tabellen nutzt und mit einem begründeten Urteil zur Formwirkung schließt.
-RUBRIC (30 XP): Vorstellen des Tonartplans mit Richtung Hd — Dd — Hd (8 XP) | Vergleich von Hauptsatz und Seitensatz an mindestens zwei Merkmalen (8 XP) | Begründung der Coda-Funktion über die fehlende Modulation (9 XP) | Begründetes Urteil zur Formwirkung (Aufbau und Lösung der tonalen Spannung) (5 XP).
+## Schritt 8 — reflexion: Takeaway & Reflexion — 奖杯还是进站检修
 
-## Schritt 8 — reflexion: Takeaway & Reflexion
+TAKEAWAY 1盒(核心总结):
 
-TAKEAWAY 1盒（核心总结）：
+中文:上限早锁定、位置晚兑现;数值目标(Durchfuehrung 247 Takte, 90-Sekunden-Themenvergleich)是裁判,程序选择是辩护;本关连着冲量角逐、体能极限与主导动机三幕,测得出、说得清、赢下来。
+Takeaway-Satz: `Wer die Grenze sichert und die Lage nutzt, holt den Pokal.`
 
-中文：分析奏鸣曲式，就是把听感翻译成两张表。Tonartplan 看"调往哪儿走"：呈示部 Hd→Dd 离家，再现部 Dd→Hd 回家，Coda 在主调确认收尾。主题对比表看"两个主题怎么对立"：性格、音区、节奏、伴奏型四栏并排。表格填满，段落与功能自己就浮出来了；最后用一句德语把结论说出来，就是一份合格的分析。
-Takeaway-Satz: `Wer den Tonartplan und den Themenvergleich sauber ausfüllt, kann Formteil und Funktion eines Sonatensatzes schlüssig begründen.`
-
-REFLEXION 2问：
-1. 过程自省：Welcher Schritt fiel schwerer — das Ausfüllen des Tonartplans (Schritt 4) oder die Unterscheidung von Tonartplan- und Funktionsverfahren (Schritt 5)?
-2. 元认知计划：Beim nächsten Mal notiere ich zuerst die Zieltonart jedes Abschnitts, weil die tonale Richtung die Einordnung und die Funktion zugleich erklärt.
+REFLEXION 2问:
+1. 过程自省:沙盘精度(Schritt 4)与程序选择(Schritt 5)哪一步更难?
+2. 元认知计划:下次先记测量值加相位,因为一切论证都从它长出来。

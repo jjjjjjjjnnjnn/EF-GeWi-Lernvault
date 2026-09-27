@@ -15,73 +15,53 @@ version: Lesson-v3
 
 <!-- Lesson v3 9步制架构：Schritt 1至8固定结构；Fehlvorstellung 夹在 Schritt 6 与 7 之间（Parser 自动跳过，不占步数）；支持内嵌 [Werkzeug: <id>] 交互教具；Gating: check/szenario 未过 = Weiter 置灰；XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
-## Schritt 1 — entdecken: Ziele & Phänomen-Einstieg
+## Schritt 1 — entdecken: Bayreuther Festspielhaus — 赛场警报
 
-ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
+ZIELE (3条,本节15分钟学完能做到——先读中文,再记德语):
 
-1. 中文：能说出主导动机三要素——人物绑定、音乐可辨、变形表意。
-2. 中文：能识别四种变形——移调、变速、变调式、配器变化。
-3. 中文：能选择分析角度（选程序：人物绑定 vs 剧情预示）。
+1. 中文:能一句话定义`Leitmotivtechnik von Wagner bis Filmmusik`,并定位到本关赛事Bayreuther Festspielhaus, Walkuerenritt (Ring)。
+2. 中文:能口述核心机制,并用数值目标(2 Auftritte, 90-Sekunden-Deutung, Blech-Apotheose)举证。
+3. 中文:能诊断一处典型错误,并用德语Klausur-Satz收束(AF B II)。
 
-Voraussetzung（窄切口）：只做听辨与文字谱例描述，不做总谱分析；已会 Motiv 与 Thema 区别。
+### Hook 赛场/舞台实况
 
+聚光灯打向Bayreuther Festspielhaus, Walkuerenritt (Ring),这是《冠军竞技场与节拍工坊》战役的下一关:上一集埋下的悬念在此引爆,教练/首席必须在限时内拿出方案。主导动机等于形象加语义:瓦格纳织网,电影配乐截短;变形即叙事,同形异境就是新解。本关必须过沙盘数值目标,下一集的瓦格纳动机/体能极限/冲量角逐在此埋下伏笔。
 
-Hook中文生活切入:
+Hook (DE): Im Rampenlicht von Bayreuther Festspielhaus, Walkuerenritt (Ring) beginnt unser naechster Akt der Kampagne Champion-Arena und Takt-Werkstatt. Stell dir vor: Der Vorhang ist noch zu, doch zwei Toene aus dem Graben verkuenden bereits den Helden, und der Saal haelt den Atem an. Wie tragen zwei Toene ein ganzes Drama? Als Leitmotiv: praegnante Gestalt mit fester Bedeutung, die wandert, sich verwandelt und kommentiert. Erstens praegt die Gestalt das Ohr. Zweitens bindet der Kontext die Bedeutung. Drittens erzaehlt die Transformation die Entwicklung. Wer Motive wiedererkennt, liest das Drama mit den Ohren. Heute folgen wir genau dieser Spur: notieren, vergleichen und deuten.
 
-想象电视剧里反派一出场就响起同一段阴森的音乐,听到前奏观众还没看见人就开始紧张,后来主角黑化时这段音乐变了调跟来,人物命运全写在旋律里。瓦格纳的主导动机就是这套手法:给人物、物件、观念各发一张音乐身份证,变形、组合、回归,剧情不用台词也能听懂。
+`Klausur-Satz: Leitsatz des Themas.`
 
-Phaenomen-Satz (DE): Die Figur betritt die Buehne, ihre Melodie war schon da.
+## Schritt 2 — entdecken: 5术语装备盒
 
-中文机制铺垫:先认动机:音型特征与首次出场语境;再追变形:转调、配器、节奏变化如何映射人物命运;最后评功能:统一全剧加剧透心理,听辨题先记动机再对位剧情,电影音乐同理。
+PRETRAINING术语盒(核心5词,先读三遍中德,合书自测中文→德语):
 
-Mechanismus-Satz (DE): Ein Motiv traegt die Figur, seine Verwandlung erzaehlt ihr Schicksal.
+中文在上,德语在下:
 
-Klausur-Satz: `Ein Leitmotiv bindet eine musikalische Gestalt an Figur oder Idee und deutet sie durch Verwandlung.`
+- 主导动机 — Leitmotiv:短小精悍兼带语义的动机 / kurze praegnante Gestalt mit fester Bedeutung。
+- 变形 — Transformation:可辨认的变化 / Veraenderung bei erhaltener Wiedererkennbarkeit。
+- 扩大/缩小 — Augmentation/Diminution:时值拉长或压缩 / Dehnung oder Raffung der Notenwerte。
+- 配器更换 — Klangwechsel:同动机换乐器释新义 / gleiches Motiv in neuer Instrumentation。
+- 米老鼠式 — Mickey-Mousing:画面与音乐同步 / direkte Synchronisierung von Bild und Musik。
 
-## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
+`Klausur-Satz: Die fuenf Begriffe tragen Diagnose, Sandkasten und Urteil als gemeinsame Sprache.`
 
-PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
+## Schritt 3 — entdecken: 生理/音乐机制传导
 
-中文在上，德语在下：
+ENTDECKEN(1概念 + 1文字图解,中文在上、德语在下):
 
-- 主导动机 — Leitmotiv：与人物、物件或观念绑定的短音乐形象。
-- 移调 — Transposition：同一旋律搬高或搬低，人物再现。
-- 大小调转换 — Tongeschlechtswechsel：大调转小调常表悲剧转折。
-- 配器 — Instrumentation：换乐器即换色彩，铜管表权力、弦乐表内心。
-- 电影音乐 — Filmmusik：瓦格纳技法的当代延续，如人物主题随剧情变形。
+中文:主导动机=形象+语义:瓦格纳织网,电影配乐截短;变形(序列、倒影、扩大、换器)即叙事,同形异境=新解。
 
-Klausur-Satz: `Verwandlung statt Wiederholung: Lage, Tempo, Geschlecht und Klang tragen Bedeutung.`
+Mechanismus (DE): Leitmotivik verbindet Gestalt mit Bedeutung; Wagners Netz kommentiert das Drama, der Film erbt das Zeichen in kuerzeren Boegen.
 
-## Schritt 3 — entdecken: Kernkonzept & Wirkungsmodell
-
-ENTDECKEN（1概念 + 1文字图解，中文在上、德语在下）：
-
-Hook中文生活切入：
-
-中文：想象短视频里某人一出场BGM就响，黑化后同一旋律变调再响：你还没看画面就知道他变了。主导动机就是这种声音标签。
-
-Phaenomen-Satz (DE): Dasselbe Motiv, neue Lage: die Verwandlung erzaehlt den Wandel.
-
-Spiel-Aufgabe沙盒操作指引：
-
-中文：打开音频沙盒，按 oral-timer 分段听同一动机两次出现（关键词：Leitmotiv, Verwandlung, Lage, Klang），记下调式、配器与速度的变化。
-
-Beobachtungs-Satz (DE): Dur-Blech-Forte heisst Macht, Moll-Streicher-Adagio heisst Fall.
-
-Aha-Moment因果链：
-
-中文因果链：动机先锚定人物或观念，复现时故意变形，变形参数即叙事信息；谁变、怎么变、意味着什么三问走完，听辨即阐释，无变形则无阐释。
-
-Gesetz-Satz (DE): Wer die Veraenderung benennt, hat die Deutung halb gewonnen.
-
-文字图解（ASCII 结构图，App支持解析渲染）：
+战役传导:本关承接冲量角逐、乳酸阈值与主导动机三幕,测得出才能说得清,说得清才能赢下来。
 
 ```diagram
-Auftritt 1: Motiv X (Dur, Blech, Forte) = Macht
-Auftritt 2: Motiv X (Moll, Streicher, Adagio) = Fall
-Deutung: Anker + Verwandlung = Erzaehlung
+Kampagne [Impuls -> Schwelle -> Leitmotiv]
+Holphase [sichern] -> Pruefphase [2 Auftritte, 90-Sekunden-Deutung, Blech-Apotheose] -> Zielphase [nutzen]
+Regel: Fehler frueh = Grenze | Fehler spaet = Ausnutzung
 ```
-Klausur-Satz: `Wer die Veraenderung benennt, hat die Deutung halb gewonnen.`
+
+`Klausur-Satz: Der Mechanismus trennt Grenze von Ausnutzung und ordnet jeden Fehler seiner Phase zu.`
 
 ## Anekdote & Fun-Fact
 
@@ -91,53 +71,50 @@ Klausur-Satz: `Wer die Veraenderung benennt, hat die Deutung halb gewonnen.`
 
 **Bezug zum Konzept**: `Zwei Toene als Figur: Knapper geht Bindung nicht.`
 
-## Schritt 4 — ausprobieren: Interaktive Praxis & Labor
+## Schritt 4 — ausprobieren: 沙盘决战 2 Auftritte
+
+BEISPIEL(含教具操作与解答):
 
 [Werkzeug: oral-timer]
 
-BEISPIEL（正确例题示范，含教具操作与解答，中文在上、德语在下）：
+AUFGABE (analysieren, AFB II):90-Sekunden-Deutung gegen den Timer: vergleiche 2 Auftritte des Ritts mit Blech-Apotheose;达标线:2 Auftritte, 90-Sekunden-Deutung, Blech-Apotheose。
 
-AUFGABE中文导读（听辨谜题）：同一动机先以大调铜管强奏代表权力，后以小调弦乐慢板再现。请论证这是堕落而非简单的重复。
+Target数值目标:2 Auftritte, 90-Sekunden-Deutung, Blech-Apotheose。
 
-AUFGABE (deuten, AFB II): Dasselbe Motiv erscheint als Dur-Blech-Forte und spaeter als Moll-Streicher-Adagio. Deuten Sie die Verwandlung als Fall der Figur.
+HILFE:
+1. 定相命名:先说相位与错误画像,对照目标2 Auftritte。
+2. 读数释义:读出测量值,用一个术语解释效应。
+3. 推纠正:从机制推出一条可操作纠正。
 
-HILFE（中德双语步骤）：
+MUSTERLÖSUNG:对照目标(2 Auftritte, 90-Sekunden-Deutung, Blech-Apotheose),先定相命名错误画像,再读数并以术语释效应,最后从机制推纠正;在Bayreuther Festspielhaus, Walkuerenritt (Ring)中形成 保障—转化—兑现 的完整因果链,达标即过关。
 
-1. 中文：第1步定锚：动机绑定谁，关键词：Anker。
-   Schritt 1 (DE): Binden Sie das Motiv an Figur oder Idee.
-2. 中文：第2步列变形：调式配器速度逐项对比，关键词：Parameter。
-   Schritt 2 (DE): Listen Sie Lage, Tempo, Klang im Vergleich.
-3. 中文：第3步给阐释：变形即叙事，关键词：Deutung。
-   Schritt 3 (DE): Deuten Sie Verwandlung als Erzaehlung.
+`Klausur-Satz: Am Target zeigt sich, ob Grenze oder Ausnutzung ueber das Ergebnis entschied.`
 
-MUSTERLOESUNG：中文：锚定权力后，第二次小调加弦乐加慢速三重变形，把同一材料讲成衰落；重复只复制音高，变形才生产意义，故判堕落。
+## Schritt 5 — ausprobieren: VERGLEICH技术对抗 Gestalt-Weg vs Funktions-Weg
 
-MUSTERLOESUNG (DE): Dur-Blech-Forte verankert Macht; Moll-Streicher-Adagio verwandelt dasselbe Motiv zum Fall. Verwandlung statt Wiederholung: Lage, Tempo und Klang tragen Bedeutung.
-Klausur-Satz: `Dur-Blech-Forte als Macht, Moll-Streicher-Adagio als Fall — dasselbe Motiv erzaehlt den Wandel.`
+VERGLEICH辨别实验(双向辨析,先选程序再解题):【选程序】
 
-## Schritt 5 — ausprobieren: Verfahrensvergleich & Abgrenzung
+VERGLEICH:先选程序—— (i) Gestalt-Weg 还是 (ii) Funktions-Weg ——再解题。WegA讲上限/结构,WegB讲兑现/情境。【选程序:问上限与结构选(i),问兑现与情境选(ii)。口述先说 Ich waehle Verfahren (i)/(ii), weil …】
 
-VERGLEICH辨别实验（双向辨析：人物绑定 vs 剧情预示）：
+AUFGABE A (Gestalt-Weg):在Bayreuther Festspielhaus, Walkuerenritt (Ring)的首个案例中选哪条路,如何论证?
 
-VERGLEICH: Waehle erst das Verfahren — 【选程序】先看设问：(i) 人物绑定（welcher Figur：找首现锚点、证可辨性）oder (ii) 剧情预示（was kuendigt an：讲变形如何预告或回忆剧情）—— dann loesen.
+AUFGABE B (Funktions-Weg):在对立案例中选哪条路,如何论证?
 
-AUFGABE A：Welcher Figur gehoert das Motiv? Weisen Sie nach.
-AUFGABE B：Was deutet die Moll-Variante im Finale an?
+HILFE:A问上限属于程序(i);B问兑现属于程序(ii)。先说选哪条路,再给测量/情境证据。
 
-HILFE: A 问 wem → Verfahren (i)。B 问 deutet an → Verfahren (ii)。【选程序：问归属找锚点；问预示讲变形。】
+ANTWORT:A走程序(i)Gestalt-Weg,以测量值与机制论证上限;B走程序(ii)Funktions-Weg,以情境与位置论证兑现。德语口述句收束。
 
-ANTWORT: A erfordert Verfahren (i): Erstauftritt mit Figur synchronisieren, Kontur beschreiben, Wiederkehr bei Figurenzaehlen — Bindung bewiesen. B erfordert Verfahren (ii): Moll plus Verlangsamung als Trauer- und Warnsignal lesen, auf kommende Katastrophe beziehen — Deutung statt Zuordnung. Wer in B nur die Figur nennt, beantwortet die Deutungsfrage nicht.
-
-Klausur-Satz: `Zuordnung fragt nach dem Anker, Deutung nach der Verwandlung.`
+`Klausur-Satz: Verfahren (i) setzt die Grenze, Verfahren (ii) nutzt die Lage; die Wahl traegt das Urteil.`
 
 ## Schritt 6 — check: Selbsttest zu Leitmotivtechnik von Wagner bis Filmmusik
-CHECK检索默写（自测 3 题，与答案配对）：
 
-FRAGE: Was macht ein Motiv zum Leitmotiv? | ANTWORT: Bindung an Figur/Idee plus Wiedererkennbarkeit plus bedeutungstragende Verwandlung.
-FRAGE: Welche vier Parameter tragen Bedeutung? | ANTWORT: Lage, Tempo, Tongeschlecht und Instrumentation.
-FRAGE: Was verbindet Wagner mit Filmmusik? | ANTWORT: Die Technik: Figurthema kehrt situationsverwandelt wieder und erzaehlt mit.
+CHECK检索默写(自测3题,与答案配对):
 
-Klausur-Satz: `Ohne Verwandlung keine Deutung, ohne Anker keine Bindung.`
+FRAGE:如何在赛事中认出本课核心? | ANTWORT:看数值目标(2 Auftritte)与S3机制。
+FRAGE:如何达标? | ANTWORT:测量、术语释义、从机制推纠正三步。
+FRAGE:何时选程序(i)而非(ii)? | ANTWORT:问上限选(i),问兑现选(ii)。
+
+`Klausur-Satz: Selbsttest bestanden heisst Target lesen, Verfahren waehlen und Urteil begruenden.`
 
 ## Fehlvorstellung
 
@@ -151,18 +128,18 @@ Klausur-Satz: `Ohne Verwandlung keine Deutung, ohne Anker keine Bindung.`
    中文纠偏：在 Klausur 中配器即语义：Blech/Macht、 Streicher/Inneres；必须译成剧情义。
    Korrektur-Satz: `Instrumentationswechsel ist Bedeutungswechsel.`
 
-## Schritt 7 — szenario: Klausurtransfer: Leitmotivtechnik von Wagner bis Filmmusik
-ROLLE: Du schreibst das Programmheft zu einem Schulkonzert mit Filmmusik.
-SITUATION: Das Publikum kennt die Melodien, nicht die Technik. Erklaere in zusammenhaengender Darstellung (ca. 150 Woerter) an einem Figurenthema, wie Anker und zwei Verwandlungen Handlung erzaehlen.
-RUBRIC (30 XP): Anker mit Bindung (8 XP) | Zwei Verwandlungen mit Parametern (10 XP) | Dramaturgische Deutung (8 XP) | Verstaendliche Sprache (4 XP).
+## Schritt 7 — szenario: Klausurtransfer: Leitmotivtechnik von Wagner bis Filmmusik — Dramaturg in Bayreuth
+中文:你是Dramaturg in Bayreuth,在Bayreuther Festspielhaus, Walkuerenritt (Ring)中必须用德语连贯口述(约90秒)诊断、措施与数值目标(2 Auftritte, 90-Sekunden-Deutung, Blech-Apotheose),并以术语举证。
+ROLLE: Du bist Dramaturg in Bayreuth. SITUATION: In Bayreuther Festspielhaus, Walkuerenritt (Ring) stellst du Diagnose, Massnahme und Target (2 Auftritte, 90-Sekunden-Deutung, Blech-Apotheose) in ca. 90 Sekunden vor.
+RUBRIC (30 XP):诊断术语8分 | 措施与目标举证10分 | 程序选择对比7分 | 德语表达5分。
 
-## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
+## Schritt 8 — reflexion: Takeaway & Reflexion — 奖杯还是进站检修
 
-TAKEAWAY 1盒（核心总结）：
+TAKEAWAY 1盒(核心总结):
 
-中文：先锚定谁的动机，再表述变了什么，最后译成剧情。配器色彩即人物处境。记住一句话——同曲异形即异命。
-Takeaway-Satz: `Anker nennen, Verwandlung messen, Geschichte deuten.`
+中文:上限早锁定、位置晚兑现;数值目标(2 Auftritte, 90-Sekunden-Deutung, Blech-Apotheose)是裁判,程序选择是辩护;本关连着冲量角逐、体能极限与主导动机三幕,测得出、说得清、赢下来。
+Takeaway-Satz: `Wer die Grenze sichert und die Lage nutzt, holt den Pokal.`
 
-REFLEXION 2问：
-1. 过程自省：Welcher Schritt fiel schwerer — der Parametervergleich (Schritt 4) oder die Wahl von Zuordnung oder Deutung (Schritt 5)?
-2. 元认知计划：Beim naechsten Mal lege ich zuerst eine Vierer-Tabelle Lage/Tempo/Geschlecht/Klang an.
+REFLEXION 2问:
+1. 过程自省:沙盘精度(Schritt 4)与程序选择(Schritt 5)哪一步更难?
+2. 元认知计划:下次先记测量值加相位,因为一切论证都从它长出来。

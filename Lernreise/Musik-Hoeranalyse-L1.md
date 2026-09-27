@@ -15,58 +15,53 @@ version: Lesson-v3
 
 <!-- Lesson v3 9步制架构：Schritt 1至8固定结构；Fehlvorstellung 夹在 Schritt 6 与 7 之间（Parser 自动跳过，不占步数）；支持内嵌 [Werkzeug: <id>] 交互教具；Gating: check/szenario 未过 = Weiter 置灰；XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
-## Schritt 1 — entdecken
+## Schritt 1 — entdecken: Amsterdamer Concertgebouw — 赛场警报
 
-ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
+ZIELE (3条,本节15分钟学完能做到——先读中文,再记德语):
 
-1. 中文：能按"描述→解释→判断"三步走完一段听感分析，术语说准、判断有据。
-2. 中文：能用六大参数（Rhythmus / Melodie / Harmonie / Klangfarbe / Dynamik / Form）各写一句德语描述，并各配一个 Wirkung。
-3. 中文：能在口试中坚持"先结构后观点"——先给可核实的听感证据，再给评价，达到 AFB II 的口头标准。
+1. 中文:能一句话定义`Höranalyse Bausteine`,并定位到本关赛事Amsterdamer Concertgebouw, Vivaldi Fruehling (1. Satz)。
+2. 中文:能口述核心机制,并用数值目标(2 Parameter, 1 Fachbegriff, Tempo 120 BPM (T = 0,50 s))举证。
+3. 中文:能诊断一处典型错误,并用德语Klausur-Satz收束(AF B II)。
 
-Klausur-Satz: `Ich höre … (Parameter). Das wirkt …, weil … (Fachbegriff).`
+### Hook 赛场/舞台实况
 
-## Schritt 2 — entdecken
+聚光灯打向Amsterdamer Concertgebouw, Vivaldi Fruehling (1. Satz),这是《冠军竞技场与节拍工坊》战役的下一关:上一集埋下的悬念在此引爆,教练/首席必须在限时内拿出方案。听辨三步:先描述参数取证,再用术语释效应,最后下判断;结构先于观点,没有参数就没有判断。本关必须过沙盘数值目标,下一集的瓦格纳动机/体能极限/冲量角逐在此埋下伏笔。
 
-PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
+Hook (DE): Im Rampenlicht von Amsterdamer Concertgebouw, Vivaldi Fruehling (1. Satz) beginnt unser naechster Akt der Kampagne Champion-Arena und Takt-Werkstatt. Stell dir vor: Die Prueferin drueckt auf Play, dreissig Sekunden Musik, dann Stille, und alle Augen richten sich auf dich. Was sagst du zuerst? Viele beginnen mit Gefuehl und verlieren den ersten Punkt. Denn Gefuehle zaehlen nicht ohne Ton, Rhythmus und Dynamik als Beleg. Erstens sichert das Beschreiben Parameter. Zweitens deutet jeder Parameter ueber weil mit Fachbegriff. Drittens urteilt erst danach der begruendete Schluss. Wer zuerst misst und dann meint, verwandelt Eindruck in Nachweis. Heute trainieren wir genau diese Reihenfolge: hoeren, belegen und ueberzeugen.
 
-中文在上，德语在下：
+`Klausur-Satz: Leitsatz des Themas.`
 
-- 听辨分析 — Höranalyse：把听到的音乐翻译成"参数＋术语＋判断"的德语表述。
-- 参数 — Parameter：可客观描述的音乐特征：节奏、旋律、和声、音色、力度、曲式。
-- 音色 — Klangfarbe：乐器或人声的"颜色"，决定听感是明亮、温暖还是尖锐。
-- 力度 — Dynamik：音量强弱及其变化，crescendo 与 diminuendo 直接塑造表情张力。
-- 作用／效果 — Wirkung：音乐特征在听者身上产生的印象，必须用 weil 说明原因。
+## Schritt 2 — entdecken: 5术语装备盒
 
-Klausur-Satz: `Zuerst werden die Parameter beschrieben, dann wird die Wirkung mit einem Fachbegriff erklärt, und erst zuletzt wird geurteilt.`
+PRETRAINING术语盒(核心5词,先读三遍中德,合书自测中文→德语):
 
-## Schritt 3 — entdecken
+中文在上,德语在下:
 
-ENTDECKEN（1概念 + 1文字图解）：
+- 参数 — Parameter:节奏旋律和声织体力度曲式 / Rhythmus, Melodie, Harmonie, Farbe, Dynamik, Form。
+- 音色 — Klangfarbe:乐器色彩,明暗冷暖 / Farbe von Instrument und Stimme。
+- 力度 — Dynamik:piano到forte与渐变 / Lautstaerke von piano bis forte。
+- 曲式 — Form:重复对比展开 / Wiederholung, Kontrast, Entwicklung。
+- 判断 — Urteil:有依据的评价 / begruendete Bewertung。
 
-中文：听辨分析不是"我觉得好听"，而是一条固定流水线：先描述（Beschreiben）——客观说出参数；再解释（Deuten）——用术语说明它为什么产生这种效果；最后判断（Beurteilen）——给出有依据的评价。关键在"先结构后观点"：先把参数证据摆出来，观点才站得住。听一段音乐，可以按六个参数逐一扫描：节奏（Rhythmus）是急促还是舒展？旋律（Melodie）是上行还是下行？和声（Harmonie）稳定还是悬而未决？音色（Klangfarbe）明亮还是暗淡？力度（Dynamik）是渐强还是突弱？曲式（Form）是重复、对比还是发展？每个参数都对应一个 Wirkung，用 weil 把两者连起来，就是一句标准的分析。
+`Klausur-Satz: Die fuenf Begriffe tragen Diagnose, Sandkasten und Urteil als gemeinsame Sprache.`
 
-文字图解（听辨三步流水线，App支持解析渲染）：
+## Schritt 3 — entdecken: 生理/音乐机制传导
+
+ENTDECKEN(1概念 + 1文字图解,中文在上、德语在下):
+
+中文:听辨三步:先描述参数取证,再用术语释效应,最后下判断;结构先于观点,无参数不判断。
+
+Mechanismus (DE): Hoeren folgt Beleg, Deutung und Urteil: Parameter sichern, Fachbegriff deutet, Urteil schliesst; Struktur vor Meinung.
+
+战役传导:本关承接冲量角逐、乳酸阈值与主导动机三幕,测得出才能说得清,说得清才能赢下来。
 
 ```diagram
-  Hoeranalyse = drei Schritte in fester Reihenfolge
-
-  (1) BESCHREIBEN        (2) DEUTEN              (3) BEURTEILEN
-      Parameter              Wirkung + Fachbegriff    begruendetes Urteil
-      "Was hoere ich?"       "Wie wirkt es?"          "Wie bewerte ich es?"
-          |                       |                        |
-          v                       v                        v
-      Rhythmus   ----------> treibend / ruhig
-      Melodie    ----------> aufsteigend / klagend
-      Harmonie   ----------> spannungsvoll / stabil
-      Klangfarbe ----------> hell / dunkel
-      Dynamik    ----------> zu- / abnehmend
-      Form       ----------> wiederholend / kontrastierend / entwickelnd
-
-  Merksatz:  erst STRUKTUR (Parameter), dann MEINUNG (Urteil)
-  Baustein:  "Ich hoere ... das wirkt ..., weil ... (Fachbegriff)."
+Kampagne [Impuls -> Schwelle -> Leitmotiv]
+Holphase [sichern] -> Pruefphase [2 Parameter, 1 Fachbegriff, Tempo 120 BPM (T = 0,50 s)] -> Zielphase [nutzen]
+Regel: Fehler frueh = Grenze | Fehler spaet = Ausnutzung
 ```
 
-Klausur-Satz: `Eine belastbare Höranalyse nennt zuerst beschreibbare Parameter und leitet daraus mit einem Fachbegriff die Wirkung ab, bevor sie urteilt.`
+`Klausur-Satz: Der Mechanismus trennt Grenze von Ausnutzung und ordnet jeden Fehler seiner Phase zu.`
 
 ## Anekdote & Fun-Fact
 
@@ -76,48 +71,50 @@ Klausur-Satz: `Eine belastbare Höranalyse nennt zuerst beschreibbare Parameter 
 
 **Bezug zum Konzept**: `Beschreiben (Parameter) steht vor Deuten (Wirkung) und Beurteilen (Urteil) — ein bekannter Titel ersetzt keine Höranalyse.`
 
-## Schritt 4 — ausprobieren
+## Schritt 4 — ausprobieren: 沙盘决战 2 Parameter
 
-BEISPIEL（正确例题示范，含教具操作与解答）：
+BEISPIEL(含教具操作与解答):
 
-[Werkzeug: balance]
+[Werkzeug: formula]
 
-AUFGABE (beschreiben, AFB II)：Ein Hörbeispiel (ca. 30 Sekunden) beginnt mit einem kurzen, viertönigen Motiv in gleichmäßigem Rhythmus und leiser Dynamik. Danach setzt ein langsam aufsteigender Melodiebogen in den hohen Streichern ein, während die Lautstärke allmählich anschwillt. Beschreiben Sie zwei Parameter und erklären Sie jeweils mit einem Fachbegriff die Wirkung.
+AUFGABE (analysieren, AFB II):Strukturformel Parameter plus Begriff plus Urteil: belege Tempo 120 BPM mit T = 0,50 s;达标线:2 Parameter, 1 Fachbegriff, Tempo 120 BPM (T = 0,50 s)。
+
+Target数值目标:2 Parameter, 1 Fachbegriff, Tempo 120 BPM (T = 0,50 s)。
 
 HILFE:
-1. Schritt 1: Nenne zuerst den Parameter (z. B. Dynamik, Melodie) und beschreibe ihn sachlich, ohne zu bewerten.
-2. Schritt 2: Verbinde Beschreibung und Wirkung mit dem Baustein "Ich höre ... das wirkt ..., weil ...".
-3. Schritt 3: Prüfe, ob du für die Wirkung einen Fachbegriff (z. B. Crescendo, Melodiebogen, Steigerung) verwendest.
+1. 定相命名:先说相位与错误画像,对照目标2 Parameter。
+2. 读数释义:读出测量值,用一个术语解释效应。
+3. 推纠正:从机制推出一条可操作纠正。
 
-MUSTERLÖSUNG: Ich höre ein kurzes Motiv in gleichmäßigem Rhythmus und leiser Dynamik; das wirkt zurückhaltend und sammelnd, weil der geringe Lautstärkepegel und die regelmäßige Bewegung noch keine Spannung aufbauen. Danach höre ich einen langsam aufsteigenden Melodiebogen in den hohen Streichern, dessen Lautstärke stetig zunimmt; das wirkt steigernd und drängend, weil das Crescendo zusammen mit dem Aufwärtsverlauf der Melodie die Erwartung auf einen Höhepunkt lenkt.
+MUSTERLÖSUNG:对照目标(2 Parameter, 1 Fachbegriff, Tempo 120 BPM (T = 0,50 s)),先定相命名错误画像,再读数并以术语释效应,最后从机制推纠正;在Amsterdamer Concertgebouw, Vivaldi Fruehling (1. Satz)中形成 保障—转化—兑现 的完整因果链,达标即过关。
 
-Klausur-Satz: `Ich höre ein Crescendo im aufsteigenden Melodiebogen; das wirkt steigernd, weil die zunehmende Lautstärke zusammen mit der Aufwärtsrichtung einen Höhepunkt erwarten lässt.`
+`Klausur-Satz: Am Target zeigt sich, ob Grenze oder Ausnutzung ueber das Ergebnis entschied.`
 
-## Schritt 5 — ausprobieren
+## Schritt 5 — ausprobieren: VERGLEICH技术对抗 Beschreibungs-Weg vs Deutungs-Weg
 
-VERGLEICH辨别实验（双向辨析：Beschreiben眼 vs. Deuten眼）：
+VERGLEICH辨别实验(双向辨析,先选程序再解题):【选程序】
 
-VERGLEICH: Wähle erst das Verfahren — 【选程序】先判断题目要的是 (i) Beschreibungs-Verfahren（"我听到什么？"：只列可核实的参数）还是 (ii) Deutungs-Verfahren（"它为什么这样作用？"：用术语把参数与 Wirkung 连起来）—— dann antworten.
+VERGLEICH:先选程序—— (i) Beschreibungs-Weg 还是 (ii) Deutungs-Weg ——再解题。WegA讲上限/结构,WegB讲兑现/情境。【选程序:问上限与结构选(i),问兑现与情境选(ii)。口述先说 Ich waehle Verfahren (i)/(ii), weil …】
 
-AUFGABE A：Eine Aufgabe lautet: "Nennen Sie drei hörbare Parameter des Ausschnitts." Welches Verfahren ist zu wählen, und wie ist zu antworten?
+AUFGABE A (Beschreibungs-Weg):在Amsterdamer Concertgebouw, Vivaldi Fruehling (1. Satz)的首个案例中选哪条路,如何论证?
 
-AUFGABE B：Eine Aufgabe lautet: "Erklären Sie, warum der Ausschnitt spannungsvoll wirkt." Welches Verfahren ist zu wählen, und wie ist zu antworten?
+AUFGABE B (Deutungs-Weg):在对立案例中选哪条路,如何论证?
 
-HILFE: A fragt nur nach dem, was hörbar ist → Verfahren (i). B fragt nach dem Grund der Wirkung → Verfahren (ii).【选程序：问"听到什么"= 描述程序（只列参数）；问"为什么这样作用"= 解释程序（参数＋术语＋weil）。】
+HILFE:A问上限属于程序(i);B问兑现属于程序(ii)。先说选哪条路,再给测量/情境证据。
 
-ANTWORT: A erfordert Verfahren (i): Es genügt, drei Parameter sachlich zu benennen, etwa gleichmäßiger Rhythmus, tiefe Lage und leise Dynamik — eine Deutung ist hier nicht verlangt. B erfordert Verfahren (ii): Jetzt müssen Parameter und Wirkung mit einem Fachbegriff verknüpft werden, etwa: Der Ausschnitt wirkt spannungsvoll, weil die tiefe Lage, das Stocken des Rhythmus und das Crescendo zusammen eine Steigerung aufbauen, die noch nicht aufgelöst wird.
+ANTWORT:A走程序(i)Beschreibungs-Weg,以测量值与机制论证上限;B走程序(ii)Deutungs-Weg,以情境与位置论证兑现。德语口述句收束。
 
-Klausur-Satz: `Beschreiben nennt nur hörbare Parameter, Deuten verknüpft diese Parameter mit einem Fachbegriff zu einer begründeten Wirkung.`
+`Klausur-Satz: Verfahren (i) setzt die Grenze, Verfahren (ii) nutzt die Lage; die Wahl traegt das Urteil.`
 
-## Schritt 6 — check
+## Schritt 6 — check: Selbsttest zu Höranalyse Bausteine
 
-CHECK检索默写（自测 3 题，与答案配对）：
+CHECK检索默写(自测3题,与答案配对):
 
-FRAGE: In welcher Reihenfolge verlaufen die drei Schritte der Höranalyse? | ANTWORT: Beschreiben (Parameter) — Deuten (Wirkung mit Fachbegriff) — Beurteilen (begründetes Urteil).
-FRAGE: Mit welchem Satzbaustein verbindet man Parameter und Wirkung? | ANTWORT: Mit "Ich höre ... (Parameter). Das wirkt ..., weil ... (Fachbegriff)."
-FRAGE: Warum steht das Beschreiben vor dem Urteilen? | ANTWORT: Weil ein Urteil nur überprüfbar ist, wenn es sich auf beschriebene Parameter stützt; sonst bleibt es ein bloßer Eindruck.
+FRAGE:如何在赛事中认出本课核心? | ANTWORT:看数值目标(2 Parameter)与S3机制。
+FRAGE:如何达标? | ANTWORT:测量、术语释义、从机制推纠正三步。
+FRAGE:何时选程序(i)而非(ii)? | ANTWORT:问上限选(i),问兑现选(ii)。
 
-Klausur-Satz: `Das Urteil steht am Ende, weil es sich auf die zuvor beschriebenen Parameter und die gedeutete Wirkung stützen muss.`
+`Klausur-Satz: Selbsttest bestanden heisst Target lesen, Verfahren waehlen und Urteil begruenden.`
 
 ## Fehlvorstellung
 
@@ -131,19 +128,18 @@ Klausur-Satz: `Das Urteil steht am Ende, weil es sich auf die zuvor beschriebene
    中文纠偏：顺序反了。术语是给听感贴的标签，必须由听感触发；先套术语会让你"听到"并不存在的东西。正确顺序是：先结构（听清参数），后观点（选对术语）——这也正是听辨训练反复强调的原则。
    Korrektur-Satz: `Nicht das Etikett führt zur Wahrnehmung, sondern die beschriebene Struktur führt zum passenden Fachbegriff.`
 
-## Schritt 7 — szenario
+## Schritt 7 — szenario: Klausurtransfer: Höranalyse Bausteine — Orchesterchef im Concertgebouw
+中文:你是Orchesterchef im Concertgebouw,在Amsterdamer Concertgebouw, Vivaldi Fruehling (1. Satz)中必须用德语连贯口述(约90秒)诊断、措施与数值目标(2 Parameter, 1 Fachbegriff, Tempo 120 BPM (T = 0,50 s)),并以术语举证。
+ROLLE: Du bist Orchesterchef im Concertgebouw. SITUATION: In Amsterdamer Concertgebouw, Vivaldi Fruehling (1. Satz) stellst du Diagnose, Massnahme und Target (2 Parameter, 1 Fachbegriff, Tempo 120 BPM (T = 0,50 s)) in ca. 90 Sekunden vor.
+RUBRIC (30 XP):诊断术语8分 | 措施与目标举证10分 | 程序选择对比7分 | 德语表达5分。
 
-ROLLE: Du bist Prüfling in einer mündlichen Musikprüfung (EF) und sollst einen kurzen Hörbeispiel-Ausschnitt beschreiben, deuten und beurteilen.
-SITUATION: Die Prüferin spielt einen etwa 30-sekündigen Ausschnitt und fragt: "Beschreiben Sie den Ausschnitt, erklären Sie seine Wirkung und beurteilen Sie ihn." Formuliere eine zusammenhängende mündliche Stellungnahme (ca. 90 Sekunden), in der du mindestens zwei Parameter nennst, die Wirkung mit Fachbegriffen erklärst und mit einem begründeten Urteil schließt. Achte darauf, erst zu beschreiben und erst danach zu urteilen.
-RUBRIC (30 XP): Nennung von mindestens zwei Parametern mit korrekten Fachbegriffen (8 XP) | Klar erkennbare Struktur Beschreiben → Deuten → Beurteilen (7 XP) | Begründung der Wirkung mit dem Baustein "Ich höre ... das wirkt ..., weil ..." (10 XP) | Begründetes, nicht bloß gefühlsmäßiges Urteil am Schluss (5 XP).
+## Schritt 8 — reflexion: Takeaway & Reflexion — 奖杯还是进站检修
 
-## Schritt 8 — reflexion: Takeaway & Reflexion
+TAKEAWAY 1盒(核心总结):
 
-TAKEAWAY 1盒（核心总结）：
+中文:上限早锁定、位置晚兑现;数值目标(2 Parameter, 1 Fachbegriff, Tempo 120 BPM (T = 0,50 s))是裁判,程序选择是辩护;本关连着冲量角逐、体能极限与主导动机三幕,测得出、说得清、赢下来。
+Takeaway-Satz: `Wer die Grenze sichert und die Lage nutzt, holt den Pokal.`
 
-中文：听辨分析是一条固定流水线：描述（参数）→ 解释（术语＋weil）→ 判断（有据）。六大参数——节奏、旋律、和声、音色、力度、曲式——是扫描音乐的工具箱。记住"先结构后观点"：没有参数证据的判断只是印象，拿不到分；有了参数，术语才贴得住，判断才站得稳。
-Takeaway-Satz: `Ich beschreibe zuerst die Parameter, erkläre dann mit einem Fachbegriff die Wirkung und urteile erst danach — Struktur vor Meinung.`
-
-REFLEXION 2问：
-1. 过程自省：Welcher Schritt fiel schwerer — das Benennen der Parameter (Schritt 4) oder die Wahl des richtigen Verfahrens im Vergleich (Schritt 5)?
-2. 元认知计划：Beim nächsten Hören notiere ich zuerst die Parameter, bevor ich ein Urteil formuliere, weil die beschriebene Struktur das Urteil trägt.
+REFLEXION 2问:
+1. 过程自省:沙盘精度(Schritt 4)与程序选择(Schritt 5)哪一步更难?
+2. 元认知计划:下次先记测量值加相位,因为一切论证都从它长出来。

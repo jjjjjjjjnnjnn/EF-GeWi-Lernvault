@@ -15,87 +15,102 @@ version: Lesson-v3
 
 <!-- Lesson v3: Schritt 1-8 feste Struktur; Fehlvorstellung zwischen Schritt 6 und 7 (Parser skip); [Werkzeug: <id>] interaktiv; Gating: check/szenario nicht bestanden = Weiter grau; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
-## Schritt 1 — entdecken
+## Schritt 1 — entdecken: Berliner Philharmonie — 赛场警报
 
-ZIELE (3 Ziele, nach 15 Minuten erreichbar):
+ZIELE (3条,本节15分钟学完能做到——先读中文,再记德语):
 
-1. Du kannst $Reihe = 12 \times Ton$ mit $kein Ton = doppelt$ beschreiben.
-2. Du kannst $P + R + I + RI$ mit $Transposition_T = +n$ erklaeren.
-3. Du kannst eine Reihe bestimmen und eine Hoerprobe einordnen (AFB II).
+1. 中文:能一句话定义`Zwoelftonmusik und Schoenberg`,并定位到本关赛事Berliner Philharmonie, Berg Violinkonzert (Reihen-Ableitung)。
+2. 中文:能口述核心机制,并用数值目标(Reihe aus G-B-H, 90-Sekunden-Reihennachweis)举证。
+3. 中文:能诊断一处典型错误,并用德语Klausur-Satz收束(AF B II)。
 
-EINSTIEG: Im Jahr 1921 zeigte Arnold Schoenberg Freunden einen Zettel mit zwoelf Toenen und sagte, er habe die Musik von der Tonart befreit. Das Publikum pfiff, die Schueler jubelten. Wer $alt = Hierarchie$ durch $neu = Gleichheit$ ersetzt, braucht neue Hoerregeln.
+### Hook 赛场/舞台实况
 
-Klausur-Satz: `Zwolf gleiche Toene ersetzen Dur und Moll als Ordnung.`
+聚光灯打向Berliner Philharmonie, Berg Violinkonzert (Reihen-Ableitung),这是《冠军竞技场与节拍工坊》战役的下一关:上一集埋下的悬念在此引爆,教练/首席必须在限时内拿出方案。十二音等于半音民主:序列定order,原形倒影逆行逆行倒影四式统一全曲,无调中心靠统一代替。本关必须过沙盘数值目标,下一集的瓦格纳动机/体能极限/冲量角逐在此埋下伏笔。
 
-## Schritt 2 — entdecken
+Hook (DE): Im Rampenlicht von Berliner Philharmonie, Berg Violinkonzert (Reihen-Ableitung) beginnt unser naechster Akt der Kampagne Champion-Arena und Takt-Werkstatt. Stell dir vor: Kein Dur, kein Moll, kein Zuhause, und doch haelt alles zusammen wie ein unsichtbares Skelett. Was ordnet Musik ohne Zentrum? Die Reihe als demokratische Ordnung aller zwoelf Toene. Erstens verbietet sie Wiederholung vor Vollendung. Zweitens tragen vier Formen das ganze Stueck. Drittens ersetzt Einheit die Tonika. Wer die Reihe findet, versteht das System. Heute knacken wir genau diesen Code: notieren, formen und Einheit zeigen.
 
-GRUNDBEGRIFFE (5 Begriffe):
+`Klausur-Satz: Leitsatz des Themas.`
 
-- **Toenreihe**: $R = (t_1, ..., t_{12})$, alle $12$ Chromatoene genau einmal.
-- **Grundgestalt**: $P_n = Reihe + Transposition$, Original mit Start auf $n$.
-- **Krebs**: $R = rueckwaerts$, also $(t_{12}, ..., t_1)$.
-- **Umkehrung**: $I = Intervalle$ gespiegelt, aus $+3$ wird $-3$ mit $Summe = konstant$.
-- **Krebsumkehrung**: $RI = R + I$, rueckwaerts und gespiegelt zugleich.
+## Schritt 2 — entdecken: 5术语装备盒
 
-Klausur-Satz: `Vier Formen teilen eine Identitaet.`
+PRETRAINING术语盒(核心5词,先读三遍中德,合书自测中文→德语):
 
-## Schritt 3 — entdecken
+中文在上,德语在下:
 
-KONZEPT (ein Konzept plus ein Textdiagramm):
+- 十二音序列 — Zwoelftonreihe:十二半音各一次 / alle zwoelf Toene genau einmal。
+- 原形 — Grundform:序列初始 order / urspruengliche Reihenfolge。
+- 倒影 — Umkehrung:音程方向翻转 / Spiegelung der Intervalle。
+- 逆行 — Krebs:倒着读 / ruecklaeufige Lesart。
+- 无调性 — Atonalitaet:无调中心 / Musik ohne tonales Zentrum。
 
-Die Reihe sichert $Gleichheit = kein Zentrum$; Wiederholung wandert durch $P_n$, $R_n$, $I_n$ und $RI_n$ mit $n = 0, ..., 11$. Hoeren heisst $Wiedererkennen = Intervall + Rhythmus + Lage$, nicht $Mitsingen = Tonika$. Analyseformel: $Benenne Reihe + Form + Variante$.
+`Klausur-Satz: Die fuenf Begriffe tragen Diagnose, Sandkasten und Urteil als gemeinsame Sprache.`
+
+## Schritt 3 — entdecken: 生理/音乐机制传导
+
+ENTDECKEN(1概念 + 1文字图解,中文在上、德语在下):
+
+中文:十二音=民主半音:序列定 order,四式(原形倒影逆行逆行倒影)全曲统一;找序列、标变形、释统一。
+
+Mechanismus (DE): Die Reihe ordnet alle zwoelf Toene; Grundform, Umkehrung, Krebs und Krebsumkehrung tragen das ganze Stueck ohne tonales Zentrum.
+
+战役传导:本关承接冲量角逐、乳酸阈值与主导动机三幕,测得出才能说得清,说得清才能赢下来。
 
 ```diagram
-    Reihe P0: 0 - 11 - 3 - 4 - 8 - 7 - 9 - 5 - 6 - 1 - 2 - 10
-    P0 -> vorwaerts, R0 -> rueckwaerts
-    I0 -> gespiegelt, RI0 -> beides
-    Transposition: Pn = P0 + n (mod 12)
-    Hoeranker: Intervallfolge + Rhythmusprofil
+Kampagne [Impuls -> Schwelle -> Leitmotiv]
+Holphase [sichern] -> Pruefphase [Reihe aus G-B-H, 90-Sekunden-Reihennachweis] -> Zielphase [nutzen]
+Regel: Fehler frueh = Grenze | Fehler spaet = Ausnutzung
 ```
 
-Klausur-Satz: `Gestalt bleibt, Tonhoehe wandert.`
+`Klausur-Satz: Der Mechanismus trennt Grenze von Ausnutzung und ordnet jeden Fehler seiner Phase zu.`
 
-## Schritt 4 — ausprobieren
+## Anekdote
 
-BEISPIEL (Musteraufgabe mit Werkzeug):
+Platzhalter-Anekdote.
 
-[Werkzeug: formula]
+## Schritt 4 — ausprobieren: 沙盘决战 Reihe aus G-B-H
 
-AUFGABE (analysieren, AFB II): Bestimmen Sie aus $P_0 = (0, 11, 3, 4, 8, 7, 9, 5, 6, 1, 2, 10)$ die Krebsform und erklaeren Sie die Hoerwirkung.
+BEISPIEL(含教具操作与解答):
+
+[Werkzeug: oral-timer]
+
+AUFGABE (analysieren, AFB II):90-Sekunden-Nachweis gegen den Timer: singe die Reihe ab G-B-H und benenne 2 Formen;达标线:Reihe aus G-B-H, 90-Sekunden-Reihennachweis。
+
+Target数值目标:Reihe aus G-B-H, 90-Sekunden-Reihennachweis。
 
 HILFE:
-1. Schritt 1: Schreibe $R_0 = (t_{12}, ..., t_1)$ exakt ab.
-2. Schritt 2: Pruefe $Menge = 12$ und $Doppel = 0$.
-3. Schritt 3: Deute $Erwartung = Tonika$ gegen $Realitaet = Reihe$.
+1. 定相命名:先说相位与错误画像,对照目标Reihe aus G-B-H。
+2. 读数释义:读出测量值,用一个术语解释效应。
+3. 推纠正:从机制推出一条可操作纠正。
 
-MUSTERLOESUNG: Es gilt $R_0 = (10, 2, 1, 6, 5, 9, 7, 8, 4, 3, 11, 0)$ mit $12$ verschiedenen Werten und $Summe$-Kontrolle pro Intervall. Im Hoeren kehrt das eroeffnende $Intervall -1$ als $+1$ wieder; Wiedererkennen gelingt ueber $Kontur + Rhythmus$, nicht ueber $Grundton$. Wirkung: $Spannung = konstant$, $Aufloesung = offen$.
+MUSTERLÖSUNG:对照目标(Reihe aus G-B-H, 90-Sekunden-Reihennachweis),先定相命名错误画像,再读数并以术语释效应,最后从机制推纠正;在Berliner Philharmonie, Berg Violinkonzert (Reihen-Ableitung)中形成 保障—转化—兑现 的完整因果链,达标即过关。
 
-Klausur-Satz: `Rueckwaerts gelesen bleibt vorwaerts gedacht.`
+`Klausur-Satz: Am Target zeigt sich, ob Grenze oder Ausnutzung ueber das Ergebnis entschied.`
 
-## Schritt 5 — ausprobieren
+## Schritt 5 — ausprobieren: VERGLEICH技术对抗 Reihen-Weg vs Deutungs-Weg
 
-VERGLEICH (Verfahren A gegen Verfahren B):
+VERGLEICH辨别实验(双向辨析,先选程序再解题):【选程序】
 
-VERGLEICH: Waehle zuerst das Verfahren — (i) Reihen-Verfahren (mit $P + R + I + RI$ argumentieren) oder (ii) Kontext-Verfahren (mit $Tradition + Bruch + Wirkung$ argumentieren) — dann loesen.
+VERGLEICH:先选程序—— (i) Reihen-Weg 还是 (ii) Deutungs-Weg ——再解题。WegA讲上限/结构,WegB讲兑现/情境。【选程序:问上限与结构选(i),问兑现与情境选(ii)。口述先说 Ich waehle Verfahren (i)/(ii), weil …】
 
-AUFGABE A: Ordnen Sie eine Passage als $I_5$ ein.
-AUFGABE B: Ordnen Sie Schoenberg zwischen Spaetromantik und Avantgarde ein.
+AUFGABE A (Reihen-Weg):在Berliner Philharmonie, Berg Violinkonzert (Reihen-Ableitung)的首个案例中选哪条路,如何论证?
 
-HILFE: A nennt Form und Zahl, also Verfahren (i). B nennt Epoche und Bruch, also Verfahren (ii).
+AUFGABE B (Deutungs-Weg):在对立案例中选哪条路,如何论证?
 
-ANTWORT: A erfordert Verfahren (i): $Intervalle = gespiegelt + transponiert$, also $I_5$. B erfordert Verfahren (ii): $Bruch = Tonalitaet_{weg}$, $Kontinuitaet = Motivarbeit_{bleibt}$, also $Wende + Bruecke$.
+HILFE:A问上限属于程序(i);B问兑现属于程序(ii)。先说选哪条路,再给测量/情境证据。
 
-Klausur-Satz: `Form bestimmt Technik, Epoche bestimmt Sinn.`
+ANTWORT:A走程序(i)Reihen-Weg,以测量值与机制论证上限;B走程序(ii)Deutungs-Weg,以情境与位置论证兑现。德语口述句收束。
 
-## Schritt 6 — check
+`Klausur-Satz: Verfahren (i) setzt die Grenze, Verfahren (ii) nutzt die Lage; die Wahl traegt das Urteil.`
 
-CHECK (Selbsttest, 3 Fragen):
+## Schritt 6 — check: Selbsttest zu Zwoelftonmusik und Schoenberg
 
-FRAGE: Was enthaelt eine Reihe? | ANTWORT: $12$ verschiedene Chromatoene mit $Anzahl = 12$ und $Doppel = 0$.
-FRAGE: Was ist RI? | ANTWORT: $RI = R + I$, also $rueckwaerts + gespiegelt$.
-FRAGE: Wie hoert man Reihen? | ANTWORT: Ueber $Intervall + Kontur + Rhythmus$, nicht ueber $Tonika$.
+CHECK检索默写(自测3题,与答案配对):
 
-Klausur-Satz: `Zaehle Toene, verfolge Gestalt.`
+FRAGE:如何在赛事中认出本课核心? | ANTWORT:看数值目标(Reihe aus G-B-H)与S3机制。
+FRAGE:如何达标? | ANTWORT:测量、术语释义、从机制推纠正三步。
+FRAGE:何时选程序(i)而非(ii)? | ANTWORT:问上限选(i),问兑现选(ii)。
+
+`Klausur-Satz: Selbsttest bestanden heisst Target lesen, Verfahren waehlen und Urteil begruenden.`
 
 ## Fehlvorstellung
 
@@ -108,21 +123,18 @@ Klausur-Satz: `Zaehle Toene, verfolge Gestalt.`
    Korrektur: Ziel ist $Strukturhoeren = wieder + verwandelt$, nicht $Nachsingen = Tonika$.
    Korrektur-Satz: `Erkennen ersetzt Erwarten.`
 
-## Schritt 7 — szenario
+## Schritt 7 — szenario: Klausurtransfer: Zwoelftonmusik und Schoenberg — Philharmonischer Konzertmeister
+中文:你是Philharmonischer Konzertmeister,在Berliner Philharmonie, Berg Violinkonzert (Reihen-Ableitung)中必须用德语连贯口述(约90秒)诊断、措施与数值目标(Reihe aus G-B-H, 90-Sekunden-Reihennachweis),并以术语举证。
+ROLLE: Du bist Philharmonischer Konzertmeister. SITUATION: In Berliner Philharmonie, Berg Violinkonzert (Reihen-Ableitung) stellst du Diagnose, Massnahme und Target (Reihe aus G-B-H, 90-Sekunden-Reihennachweis) in ca. 90 Sekunden vor.
+RUBRIC (30 XP):诊断术语8分 | 措施与目标举证10分 | 程序选择对比7分 | 德语表达5分。
 
-ROLLE: Du bist Moderator eines Schulkonzerts.
-SITUATION: Das Publikum fuerchtet $modern = haesslich$ vor einer Schoenberg-Miniatur.
-AUFGABE (einordnen, AFB III): Fuehren Sie in einer zusammenhaengenden Darstellung (ca. 150 Woerter) mit Reihen Demo, Hoerauftrag und Epochenurteil ein.
-RUBRIC (30 XP): Reihe mit $Form$ korrekt (10 XP) | Hoerauftrag $Kontur + Rhythmus$ (10 XP) | Epochenurteil $Bruch + Bruecke$ (5 XP) | Geschlossene Darstellung (5 XP).
+## Schritt 8 — reflexion: Takeaway & Reflexion — 奖杯还是进站检修
 
-## Schritt 8 — reflexion: Takeaway & Reflexion
+TAKEAWAY 1盒(核心总结):
 
-TAKEAWAY: Merke $12 + 4 + 1$: Zwoelf Toene, vier Formen, eine Gestalt. Hoerformel $Intervall + Rhythmus = Wiedererkennen$.
+中文:上限早锁定、位置晚兑现;数值目标(Reihe aus G-B-H, 90-Sekunden-Reihennachweis)是裁判,程序选择是辩护;本关连着冲量角逐、体能极限与主导动机三幕,测得出、说得清、赢下来。
+Takeaway-Satz: `Wer die Grenze sichert und die Lage nutzt, holt den Pokal.`
 
-REFLEXION:
-1. Was fiel schwerer — das $Reihen-Bestimmen$ (Schritt 4) oder das $Einordnen$ (Schritt 5)?
-2. Plane: Beim naechsten Mal schreibe ich zuerst $P_0$ als Zahlen, dann erst $R + I + RI$.
-
-Anekdote (DE): Als Schoenberg 1923 seine Suite mit $P_0 + R_0 + I_0 + RI_0$ auffuehrte, verliess die Haelfte den Saal, die andere Haelfte blieb stehen und klatschte. Sein Schueler Webern notierte $Reihe = Gesetz + Freiheit$ — aus Pfiffen war eine Schule geworden.
-
-Bezug: `Schoenberg zeigt: Neue Regel plus alte Motivarbeit ergibt neue Schoenheit.`
+REFLEXION 2问:
+1. 过程自省:沙盘精度(Schritt 4)与程序选择(Schritt 5)哪一步更难?
+2. 元认知计划:下次先记测量值加相位,因为一切论证都从它长出来。

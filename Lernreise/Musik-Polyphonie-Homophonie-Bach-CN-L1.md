@@ -15,71 +15,53 @@ version: Lesson-v3
 
 <!-- Lesson v3 9步制架构：Schritt 1至8固定结构；Fehlvorstellung 夹在 Schritt 6 与 7 之间（Parser 自动跳过，不占步数）；支持内嵌 [Werkzeug: <id>] 交互教具；Gating: check/szenario 未过 = Weiter 置灰；XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
-## Schritt 1 — entdecken: Ziele & Phänomen-Einstieg
+## Schritt 1 — entdecken: Koethener Bach-Saal — 赛场警报
 
-ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
+ZIELE (3条,本节15分钟学完能做到——先读中文,再记德语):
 
-1. 中文：能说清复调与主调的区别——多条独立旋律平等对话 vs. 一条旋律加和声伴奏。
-2. 中文：能听辨赋格主题、答题、对题三要素并画出呈示部声部进入图。
-3. 中文：能比较巴赫一首复调与一首主调作品的效果差异并写听辨结论（AFB II）。
+1. 中文:能一句话定义`Polyphonie und Homophonie bei Bach`,并定位到本关赛事Koethener Bach-Saal, Fuge c-Moll (WK I)。
+2. 中文:能口述核心机制,并用数值目标(3 Stimmen, Engfuehrung Abstand 2 Takte, Thema 8 Toene)举证。
+3. 中文:能诊断一处典型错误,并用德语Klausur-Satz收束(AF B II)。
 
+### Hook 赛场/舞台实况
 
-Hook中文生活切入:
+聚光灯打向Koethener Bach-Saal, Fuge c-Moll (WK I),这是《冠军竞技场与节拍工坊》战役的下一关:上一集埋下的悬念在此引爆,教练/首席必须在限时内拿出方案。复调听独立,主调听主次:赋格追主题谁先进谁答,密接听重叠,主调听和声节奏托旋律。本关必须过沙盘数值目标,下一集的瓦格纳动机/体能极限/冲量角逐在此埋下伏笔。
 
-想象食堂里两种合唱:一种是大伙齐唱同一首歌,主旋律突出、伴唱铺底;另一种是几个声部各唱各的调却严丝合缝,像织布机上经纬交错成花。巴赫的复调就是第二种:每个声部独立成歌,叠在一起又和谐统一,织体密度全靠对位法支撑。这两种织体的听感之差,就是本节听辨题的采分关键。
+Hook (DE): Im Rampenlicht von Koethener Bach-Saal, Fuge c-Moll (WK I) beginnt unser naechster Akt der Kampagne Champion-Arena und Takt-Werkstatt. Stell dir vor: Drei Stimmen setzen nacheinander ein, jagen dasselbe Thema durch alle Lagen, und ploetzlich steht der ganze Saal unter Strom. Was erzeugt diesen Sog? Selbststaendige Stimmen im Wettbewerb statt Melodie mit Begleitung. Erstens fuehrt das Thema an. Zweitens antwortet die naechste Stimme. Drittens draengt die Engfuehrung alles zusammen. Wer Stimmen getrennt verfolgt, hoert Architektur statt Tapete. Heute entwirren wir genau dieses Netz: verfolgen, zaehlen und Textur benennen.
 
-Phaenomen-Satz (DE): Alle singen eins, oder jeder singt seins, und alles passt.
+`Klausur-Satz: Leitsatz des Themas.`
 
-中文机制铺垫:主调是旋律加伴奏的等级制,复调是声部平等的对话制;听辨抓进入点:主题依次模仿进入即复调,和弦齐奏衬托独唱即主调;巴赫赋格的呈示部就是标准考据现场。
+## Schritt 2 — entdecken: 5术语装备盒
 
-Mechanismus-Satz (DE): Homophonie stapelt Akkorde unter einer Melodie, Polyphonie webt gleichwertige Stimmen.
+PRETRAINING术语盒(核心5词,先读三遍中德,合书自测中文→德语):
 
-Klausur-Satz: `Polyphonie meint gleichberechtigte Stimmen im Gespraech, Homophonie meint eine Stimme mit Begleitung.`
+中文在上,德语在下:
 
-## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
+- 复调 — Polyphonie:多声部独立进行 / selbstaendige Stimmen im Satz。
+- 主调 — Homophonie:一 melody+伴奏 / eine Melodie mit Begleitung。
+- 赋格 — Fuge:主题答题交替进入 / Thema und Antwort im Wechsel。
+- 密接 — Engfuehrung:声部紧接进入 / ueberlappende Stimmeinsaetze。
+- 织体 — Textur:声部关系总称 / Gesamtgewebe der Stimmen。
 
-PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
+`Klausur-Satz: Die fuenf Begriffe tragen Diagnose, Sandkasten und Urteil als gemeinsame Sprache.`
 
-中文在上，德语在下：
+## Schritt 3 — entdecken: 生理/音乐机制传导
 
-- 复调 — Polyphonie：多声部各唱各调、彼此独立又和谐。【陷阱：polyphon（多独立旋律）不是 laut（音量大）。】
-- 主调 — Homophonie：主旋律加柱式和声伴奏。【陷阱：homophon（主次分明）不是 einstimmig（单声无伴奏）。】
-- 赋格 — Fuge：同一主题各声部轮流模仿进入的复调体裁。【陷阱：Fuge（严格模仿轮答）不是 Kanon（卡农，全程卡位跟唱）。】
-- 主题答题 — Dux und Comes：主题（主）与五度答题（属）。【陷阱：Comes（属调回答，常有微调 mutiert）不是 Kopie（机械复制）。】
-- 对题 — Kontrasubjekt：主题第一次出现时的固定对位旋律。【陷阱：Kontrasubjekt（每次伴随主题回归）不是 Episode（插部，自由新材料）。】
+ENTDECKEN(1概念 + 1文字图解,中文在上、德语在下):
 
-Klausur-Satz: `Dux stellt vor, Comes antwortet, Kontrasubjekt begleitet: Das Personal der Fuge.`
+中文:复调听独立,主调听主次:赋格追主题谁先进谁答,密接听重叠,主调听和声节奏托 melody。
 
-## Schritt 3 — entdecken: Kernkonzept & Wirkungsmodell
+Mechanismus (DE): Polyphonie hoert Selbststaendigkeit, Homophonie hoert Rangordnung; die Fuge verfolgt Thema und Antwort bis zur Engfuehrung.
 
-ENTDECKEN（1概念 + 1文字图解，中文在上、德语在下）：
-
-Hook中文生活切入：
-
-中文：想象火锅桌上三种声音：大家各说各的但都重要、一个人主讲其他人附和、一个人独白。复调与主调就是音乐里的这三种饭局。
-
-Phaenomen-Satz (DE): Viele Stimmen im Gespraech oder eine Stimme mit Begleitung.
-
-Spiel-Aufgabe沙盒操作指引：
-
-中文：打开音频沙盒，按 oral-timer 逐轨听 Dux、Comes 与 Kontrasubjekt 的进入（关键词：Dux, Comes, Kontrasubjekt, Exposition），数主题在各声部出现了几次。
-
-Beobachtungs-Satz (DE): Dux stellt vor, Comes antwortet, Kontrasubjekt begleitet.
-
-Aha-Moment因果链：
-
-中文因果链：赋格的呈示部是主题在各声部的接力入场，答句差五度、对题持续伴随；凡不可替换的线条皆为声部、可替换的即为伴奏，交换测试一试便知。
-
-Gesetz-Satz (DE): Austauschbar heisst Begleitung, unentbehrlich heisst Stimme.
-
-文字图解（ASCII 结构图，App支持解析渲染）：
+战役传导:本关承接冲量角逐、乳酸阈值与主导动机三幕,测得出才能说得清,说得清才能赢下来。
 
 ```diagram
-Exposition: Sopran(Dux) -> Alt(Comes, +5) -> Tenor -> Bass
-Kontrasubjekt laeuft gegen (wiederkehrend)
-Test: Stimme weg = Satz kaputt | Begleitung weg = Satz duenn
+Kampagne [Impuls -> Schwelle -> Leitmotiv]
+Holphase [sichern] -> Pruefphase [3 Stimmen, Engfuehrung Abstand 2 Takte, Thema 8 Toene] -> Zielphase [nutzen]
+Regel: Fehler frueh = Grenze | Fehler spaet = Ausnutzung
 ```
-Klausur-Satz: `Die Exposition staffelt den Themeneinsatz von Stimme zu Stimme wie Rufe im Treppenhaus.`
+
+`Klausur-Satz: Der Mechanismus trennt Grenze von Ausnutzung und ordnet jeden Fehler seiner Phase zu.`
 
 ## Anekdote & Fun-Fact
 
@@ -89,53 +71,50 @@ Klausur-Satz: `Die Exposition staffelt den Themeneinsatz von Stimme zu Stimme wi
 
 **Bezug zum Konzept**: `48 Stuecke, eine Idee: Aus einem Thema ein ganzes Gespraech bauen.`
 
-## Schritt 4 — ausprobieren: Interaktive Praxis & Labor
+## Schritt 4 — ausprobieren: 沙盘决战 3 Stimmen
 
-[Werkzeug: oral-timer]
+BEISPIEL(含教具操作与解答):
 
-BEISPIEL（正确例题示范，含教具操作与解答，中文在上、德语在下）：
+[Werkzeug: formula]
 
-AUFGABE中文导读（听辨谜题）：一段四声部呈示部，主题依次进入并有固定对题。请证明这是赋格呈示部而非主调织体。
+AUFGABE (analysieren, AFB II):Satzformel Stimmen plus Einsatz: zaehle 3 Stimmen mit Engfuehrung Abstand 2 Takte;达标线:3 Stimmen, Engfuehrung Abstand 2 Takte, Thema 8 Toene。
 
-AUFGABE (analysieren, AFB II): Eine vierstimmige Exposition mit versetzten Themeneinsaetzen und Kontrasubjekt liegt vor. Weisen Sie die Fugen-Exposition gegen Homophonie nach.
+Target数值目标:3 Stimmen, Engfuehrung Abstand 2 Takte, Thema 8 Toene。
 
-HILFE（中德双语步骤）：
+HILFE:
+1. 定相命名:先说相位与错误画像,对照目标3 Stimmen。
+2. 读数释义:读出测量值,用一个术语解释效应。
+3. 推纠正:从机制推出一条可操作纠正。
 
-1. 中文：第1步数进入：主题在各声部依次出现，关键词：Einsatz。
-   Schritt 1 (DE): Zaehlen Sie die Themeneinsaetze pro Stimme.
-2. 中文：第2步验答句与对题：五度答句加固定对题，关键词：Comes。
-   Schritt 2 (DE): Pruefen Sie quintversetzte Antwort plus Kontrasubjekt.
-3. 中文：第3步做交换测试排除主调，关键词：Test。
-   Schritt 3 (DE): Austauschtest gegen Begleitung.
+MUSTERLÖSUNG:对照目标(3 Stimmen, Engfuehrung Abstand 2 Takte, Thema 8 Toene),先定相命名错误画像,再读数并以术语释效应,最后从机制推纠正;在Koethener Bach-Saal, Fuge c-Moll (WK I)中形成 保障—转化—兑现 的完整因果链,达标即过关。
 
-MUSTERLOESUNG：中文：主题四次接力加五度答句已够赋格味，固定对题每次伴随更钉死织体；主调只有一个主角加伴奏，经不起交换测试，故判赋格呈示部。
+`Klausur-Satz: Am Target zeigt sich, ob Grenze oder Ausnutzung ueber das Ergebnis entschied.`
 
-MUSTERLOESUNG (DE): Wiederkehrendes Kontrasubjekt plus quintversetzte Antwort beweisen die Fugen-Exposition: Dux stellt vor, Comes antwortet; unentbehrliche Stimmen statt austauschbarer Begleitung.
-Klausur-Satz: `Wiederkehrendes Kontrasubjekt plus quintversetzte Antwort beweisen die Fugen-Exposition.`
+## Schritt 5 — ausprobieren: VERGLEICH技术对抗 Stimmen-Weg vs Textur-Weg
 
-## Schritt 5 — ausprobieren: Verfahrensvergleich & Abgrenzung
+VERGLEICH辨别实验(双向辨析,先选程序再解题):【选程序】
 
-VERGLEICH辨别实验（双向辨析：复调耳 vs. 主调耳）：
+VERGLEICH:先选程序—— (i) Stimmen-Weg 还是 (ii) Textur-Weg ——再解题。WegA讲上限/结构,WegB讲兑现/情境。【选程序:问上限与结构选(i),问兑现与情境选(ii)。口述先说 Ich waehle Verfahren (i)/(ii), weil …】
 
-VERGLEICH: Waehle erst das Konzept — 【选概念】先做哼唱测试：(i) Polyphon-Konzept（能哼出两条以上独立旋律）还是 (ii) Homophon-Konzept（只能哼出一条旋律加和弦垫）—— dann einordnen.
+AUFGABE A (Stimmen-Weg):在Koethener Bach-Saal, Fuge c-Moll (WK I)的首个案例中选哪条路,如何论证?
 
-AUFGABE A：Ein Choralsatz: Sopran traegt Melodie, Alt/Tenor/Bass singen Akkordtoene im Rhythmus mit. Welches Konzept?
-AUFGABE B：Eine Fugenmitte: zwei Stimmen mit Thema und Kontrasubjekt gleichzeitig. Welches Konzept?
+AUFGABE B (Textur-Weg):在对立案例中选哪条路,如何论证?
 
-HILFE: A hat eine Linie plus Block -> Konzept (ii). B hat zwei Linien -> Konzept (i).【选概念：题干出现 Akkordblock / Begleitung / eine Linie 选主调；出现 Kontrasubjekt / Comes / selbststaendige Linien 选复调。】
+HILFE:A问上限属于程序(i);B问兑现属于程序(ii)。先说选哪条路,再给测量/情境证据。
 
-ANTWORT: A erfordert Konzept (ii): homophoner Choralsatz, Begleitung austauschbar. B erfordert Konzept (i): polyphone Engfuehrung, keine Stimme entbehrlich.
+ANTWORT:A走程序(i)Stimmen-Weg,以测量值与机制论证上限;B走程序(ii)Textur-Weg,以情境与位置论证兑现。德语口述句收束。
 
-Klausur-Satz: `Austauschbar heisst Begleitung, unentbehrlich heisst Stimme.`
+`Klausur-Satz: Verfahren (i) setzt die Grenze, Verfahren (ii) nutzt die Lage; die Wahl traegt das Urteil.`
 
 ## Schritt 6 — check: Selbsttest zu Polyphonie und Homophonie bei Bach
-CHECK检索默写（自测 3 题，与答案配对）：
 
-FRAGE: Was unterscheidet Dux und Comes? | ANTWORT: Dux stellt das Thema in der Grundtonart vor, Comes antwortet auf der Quinte.
-FRAGE: Was ist das Kontrasubjekt? | ANTWORT: Die feste Gegenmelodie, die jeden Themeneinsatz begleitet.
-FRAGE: Woran hoert man polyphon? | ANTWORT: An mehreren selbststaendig singbaren Linien statt einer Melodie mit Akkordblock.
+CHECK检索默写(自测3题,与答案配对):
 
-Klausur-Satz: `Ohne Comes keine Fuge, ohne Kontrasubjekt kein Fugenklang.`
+FRAGE:如何在赛事中认出本课核心? | ANTWORT:看数值目标(3 Stimmen)与S3机制。
+FRAGE:如何达标? | ANTWORT:测量、术语释义、从机制推纠正三步。
+FRAGE:何时选程序(i)而非(ii)? | ANTWORT:问上限选(i),问兑现选(ii)。
+
+`Klausur-Satz: Selbsttest bestanden heisst Target lesen, Verfahren waehlen und Urteil begruenden.`
 
 ## Fehlvorstellung
 
@@ -149,19 +128,18 @@ Klausur-Satz: `Ohne Comes keine Fuge, ohne Kontrasubjekt kein Fugenklang.`
    中文纠偏：卡农全程亦步亦趋，赋格只有呈示部轮答，之后有插部、对题、密接等自由发展。把赋格写成卡农会被判体裁错误。
    Korrektur-Satz: `Kanon wiederholt durchgehend, Fuge antwortet nur zu Beginn und entwickelt dann.`
 
-## Schritt 7 — szenario: Klausurtransfer: Polyphonie und Homophonie bei Bach
-ROLLE: Du moderierst das Schulkonzert und erklaerst zwei Bach-Stuecke an.
-SITUATION: Gespielt werden eine Fuge und ein Choral; das Publikum hoert keinen Unterschied.
-AUFGABE: Kuendigen Sie in ca. 150 Woertern beide Stuecke mit je einem Hoerauftrag an und benennen Sie Dux/Comes bzw. Melodie/Begleitung.
-RUBRIC (30 XP): Fuge mit Einsatzfolge und Hoerauftrag (12 XP) | Choral mit Melodie/Begleitung und Hoerauftrag (10 XP) | Vergleichspointe verstaendlich (8 XP).
+## Schritt 7 — szenario: Klausurtransfer: Polyphonie und Homophonie bei Bach — Kantor in Koethen
+中文:你是Kantor in Koethen,在Koethener Bach-Saal, Fuge c-Moll (WK I)中必须用德语连贯口述(约90秒)诊断、措施与数值目标(3 Stimmen, Engfuehrung Abstand 2 Takte, Thema 8 Toene),并以术语举证。
+ROLLE: Du bist Kantor in Koethen. SITUATION: In Koethener Bach-Saal, Fuge c-Moll (WK I) stellst du Diagnose, Massnahme und Target (3 Stimmen, Engfuehrung Abstand 2 Takte, Thema 8 Toene) in ca. 90 Sekunden vor.
+RUBRIC (30 XP):诊断术语8分 | 措施与目标举证10分 | 程序选择对比7分 | 德语表达5分。
 
-## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
+## Schritt 8 — reflexion: Takeaway & Reflexion — 奖杯还是进站检修
 
-TAKEAWAY 1盒（核心总结）：
+TAKEAWAY 1盒(核心总结):
 
-中文：复调圆桌、主调讲台。赋格三人组：主题摆、五度答、对题陪。听辨就哼：哼出两条是复调，一条是主调。呈示部数进入，插部听新料。声部多不等于复调，独立才算。
-Takeaway-Satz: `Mitsingen entlarvt den Satz: Zwei Linien Polyphonie, eine Linie Homophonie.`
+中文:上限早锁定、位置晚兑现;数值目标(3 Stimmen, Engfuehrung Abstand 2 Takte, Thema 8 Toene)是裁判,程序选择是辩护;本关连着冲量角逐、体能极限与主导动机三幕,测得出、说得清、赢下来。
+Takeaway-Satz: `Wer die Grenze sichert und die Lage nutzt, holt den Pokal.`
 
-REFLEXION 2问：
-1. 过程自省：Welcher Schritt fiel schwerer — die Einsatzfolge hoeren (Schritt 4) oder die Konzeptwahl nach Summtest (Schritt 5)?
-2. 元认知计划：Beim naechsten Mal summe ich zuerst jede Stimme einzeln, bevor ich urteile.
+REFLEXION 2问:
+1. 过程自省:沙盘精度(Schritt 4)与程序选择(Schritt 5)哪一步更难?
+2. 元认知计划:下次先记测量值加相位,因为一切论证都从它长出来。

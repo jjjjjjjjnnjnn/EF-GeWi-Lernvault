@@ -15,75 +15,45 @@ version: Lesson-v3
 
 <!-- Lesson v3 Architektur mit 9 Abschnitten: Schritt 1 bis 8 mit fester Struktur; Fehlvorstellung liegt zwischen Schritt 6 und 7 (wird vom Parser uebersprungen, zaehlt nicht als Schritt); unterstuetzt eingebettete [Werkzeug: <id>] Elemente; Gating: check/szenario nicht bestanden = Weiter deaktiviert; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
-## Schritt 1 — entdecken: Ziele & Phänomen-Einstieg
+## Schritt 1 — entdecken: Eisenstadter Haydn-Saal — Alarm in der Arena
 
 ZIELE (drei messbare Ziele dieser Lektion):
 
-1. Du kannst das **Motiv** in einem Satz definieren und als kleinste rhythmisch gepraegte Gestalt im Hoerbeispiel wiedererkennen.
-2. Du kannst fuenf Verfahren — **Sequenz, Umkehrung, Krebs, Dehnung und Stauchung, Abspaltung** — am Notenbild und im Klang unterscheiden und zeitlich mit $T = 60/BPM$ einordnen.
-3. Du kannst eine Verarbeitung mit dem Baustein Ich hoere, das wirkt, weil belegen und mit einem Klausur-Satz abschliessen (AFB II).
+1. Du kannst das Kernthema `Motivische Verarbeitung: Sequenz, Umkehrung, Krebs, Abspaltung` in einem Satz definieren und im Wettkampfkontext verorten.
+2. Du kannst den Mechanismus muendlich erklaeren und mit dem Target (Sequenz plus 3 Stufen, Abspaltung 4 zu 2 Takte) belegen.
+3. Du kannst einen Fehler diagnostizieren und mit einem Klausur-Satz auf AFB-II-Niveau schliessen.
 
-### Hook / Phaenomen
+### Hook: Alarm in der Arena
 
-Stell dir vor: Vier Toene, kaum zwei Sekunden lang, und ein ganzer Saal haelt den Atem an. Ta-ta-ta-taa — jeder kennt diesen Anfang, doch fast niemand bemerkt, dass aus diesen vier Toenen ein ganzer Sinfoniesatz waechst. Wie kann so wenig Material so viel Musik tragen? Die Antwort liegt nicht in neuen Einfaellen, sondern in der Kunst, einen einzigen Gedanken immer neu zu drehen, zu wenden und zuzuspitzen. Genaues Hinhoeren entlarvt die Werkstatt: Erstens Wiederholung befestigt das Motiv im Ohr. Zweitens Sequenz hebt dieselbe Gestalt Ton fuer Ton hoeher und baut Spannung. Drittens Abspaltung wiederholt nur noch den Kopf und verknappt die Zeitwerte. Viertens Umkehrung oder Umrhythmierung spiegelt die Gestalt bei gleichem Kern. Mit der Pulsformel $T = 60/BPM$ misst das Ohr die Verknappung, mit Fachbegriffen benennt es die Technik. Wer Verarbeitung hoert statt nur Melodie, versteht Oekonomie als Schoenheit.
+Im Rampenlicht von Eisenstadter Haydn-Saal, Ueberraschungssinfonie (2. Satz) beginnt unser naechster Akt der Kampagne Champion-Arena und Takt-Werkstatt. Stell dir vor: Ein viertaktiger Einfall kehrt zurueck, doch nichts klingt gleich: hoeher, enger, zerlegt, und trotzdem unverkennbar derselbe Gedanke. Wie haelt Musik Einheit im Wechsel? Durch Verarbeitung: Sequenz, Umkehrung, Krebs und Abspaltung formen Neues aus Gleichem. Erstens versetzt die Sequenz die Stufe. Zweitens spiegelt die Umkehrung das Intervall. Drittens zerlegt die Abspaltung den Rest. Wer das Gleiche im Neuen erkennt, versteht den Satz. Heute sezieren wir genau diesen Einfall: finden, benennen und Wirkung zeigen.
 
-### Fachbegriff & Definition
+`Klausur-Satz: Leitsatz des Themas.`
 
-Das **Motiv** ist die kleinste sinntragende musikalische Gestalt aus wenigen Toenen mit praegnantem Rhythmus. Es ist bewusst unvollstaendig angelegt: rhythmisch markant, intervallisch fassbar, harmonisch offen. Erst die **motivische Verarbeitung** — also Sequenz, Umkehrung, Krebs, Dehnung und Stauchung sowie Abspaltung — entfaltet daraus einen Abschnitt. Kurz: Das Motiv ist der **Keim**, die Verarbeitung ist das **Wachstum**.
-
-### Wirkungsgefuege / Modell
-
-Der Kernmechanismus laeuft in drei Stufen: **Befestigung, Veraenderung, Zuspitzung**. Erstens wird das Motiv durch unveraenderte Wiederholung als Keim befestigt. Zweitens veraendern Sequenz mit $f_{neu} = f_{alt} \cdot 2^{n/12}$ bei Versetzung um $n$ Halbertoene, Umkehrung und Krebs seine Kontur, waehrend Dehnung mit $T_{neu} = 2 \cdot T_{alt}$ und Stauchung mit $T_{neu} = T_{alt}/2$ seine Zeitdichte bei $T = 60/BPM$ steuern. Drittens spitzt die Abspaltung nur noch das Kopf-Fragment zu, bis die Spannung einen Hoehepunkt verlangt. Faellt die Befestigung aus, wirkt alles beliebig; fehlt die Zuspitzung, wirkt alles endlos.
-
-Klausur-Satz: `Ein Motiv ist die kleinste sinntragende musikalische Gestalt, die durch Verfahren wie Sequenz, Umkehrung, Krebs, Dehnung oder Abspaltung weiterverarbeitet wird.`
-
-## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
+## Schritt 2 — entdecken: Ausruestungskiste der Werkstatt
 
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
-### Hook / Phaenomen
+- **Motiv:** kleinste sinntragende Gestalt.
+- **Sequenz:** versetzte Wiederholung.
+- **Umkehrung/Krebs:** Spiegelung oder Ruecklaeufigkeit.
+- **Abspaltung:** Zerlegung in Splitter zur Fortspinnung.
+- **Fortspinnung:** Weiterspinnen zum Satz.
 
-„Das klingt irgendwie hoeher und enger" — mit solchen Alltagswoertern vergibt die Pruefung keine Punkte. Erst wenn du sagen kannst, ob die Tonhoehe wanderte, die Richtung spiegelte oder nur ein Fragment uebrig blieb, wird aus dem Eindruck ein Beleg. Diese fuenf Werkzeuge brauchst du wie einen Schluesselbund.
+`Klausur-Satz: Die fuenf Begriffe tragen Diagnose, Sandkasten und Urteil als gemeinsame Sprache.`
 
-### Fachbegriffe & Definitionen
-
-- **Sequenz:** Stufenweise Versetzung desselben Motivmodells auf andere Tonhoehen mit $f_{neu} = f_{alt} \cdot 2^{n/12}$. Sie erhaelt die Gestalt und erzeugt Antrieb und Steigerung.
-- **Umkehrung:** Spiegelung aller Intervallrichtungen bei gleicher Reihenfolge — aufwaerts wird abwaerts. Sie kontrastiert die Kontur bei erhaltenem Rhythmus.
-- **Krebs:** Rueckwaertslesung des Motivs von hinten nach vorn. Sie kehrt die zeitliche Reihenfolge um und erzeugt die staerkste Verfremdung.
-- **Dehnung und Stauchung:** Verlaengerung mit $T_{neu} = 2 \cdot T_{alt}$ oder Verkuerzung mit $T_{neu} = T_{alt}/2$ der Notenwerte bei $T = 60/BPM$. Sie veraendern Zeitdichte und Ausdruck von getragen bis draengend.
-- **Abspaltung (Fragmentierung):** Isolierung und Wiederholung nur des Kopf- oder Schwanz-Fragments. Sie verknappt das Material und steigert die Spannung mit jeder Wiederholung.
-
-### Wirkungsgefuege / Modell
-
-Die Begriffe greifen ineinander: Die **Sequenz** treibt durch Tonhoehenversetzung an, die **Umkehrung** und der **Krebs** kontrastieren durch Kontur- und Reihenfolgewechsel, **Dehnung und Stauchung** regeln ueber $T = 60/BPM$ die zeitliche Dichte, die **Abspaltung** spitzt durch Materialverknappung zu. Wer in der Pruefung ein Hoerbeispiel deutet, prueft deshalb immer in der Reihenfolge Kontur, Zeit, Material — so schliesst jede Antwort genau ein Verfahren ein und ein anderes aus.
-
-Klausur-Satz: `Bei der Sequenz bleibt die Gestalt des Motivs erhalten, waehrend die Tonhoehe versetzt wird; bei der Abspaltung wird nur ein Fragment des Motivs weitergefuehrt.`
-
-## Schritt 3 — entdecken: Kernkonzept & Wirkungsmodell
+## Schritt 3 — entdecken: Mechanismus im Getriebe der Kampagne
 
 TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
-### Hook / Phaenomen
+Verarbeitung heisst Sequenz, Umkehrung, Krebs und Abspaltung; Analyse erkennt das Gleiche im Neuen und benennt das Verfahren. In unserer Kampagne Champion-Arena und Takt-Werkstatt verbindet dieser Mechanismus den Impuls-Wettkampf ueber die Laktat-Grenze bis zum Wagner-Leitmotiv: Wer misst, deutet; wer deutet, siegt.
 
-Hoere genau hin: Erst erklingt ein kurzer Ruf, dann derselbe Ruf eine Stufe hoeher, dann ploetzlich nur noch sein Anfang, immer schneller, immer dringlicher. Kein einziges neues Motiv — und doch steigt die Spannung von Sekunde zu Sekunde. Wie baut ein Komponist aus Wiederholung Drama, ohne je neues Material zu erfinden?
-
-### Spiel-Aufgabe (Oral-Timer-Probe)
-
-Pruefe die Drei-Ebenen laut gegen den 90-Sekunden-Timer: Kontur-Ebene (versetzt ist Sequenz, gespiegelt ist Umkehrung, rueckwaerts ist Krebs), Zeit-Ebene (mit $T_{neu}=2\cdot T_{alt}$ Dehnung, mit $T_{neu}=T_{alt}/2$ Stauchung bei $T=60/BPM$), Material-Ebene (nur Fragment ist Abspaltung). Das Ebenen-Raetsel: Ordne drei Hoer-Kaertchen genau einer Veraenderung zu — jede falsche Ebene stoppt die Uhr.
-
-### Aha-Moment & Gesetz
-
-Denke in Kausalkette Erkennen, Einordnen, Deuten: Das Grundmotiv wird als Keim festgehalten, jede Veraenderung auf drei Ebenen einsortiert — Gestalt erhalten bei $f_{neu}=f_{alt}\cdot 2^{n/12}$ heisst Sequenz, Richtungsumkehr heisst Umkehrung, Fragment heisst Abspaltung — und die Hoerwirkung gedeutet: Sequenz treibt, Umkehrung kontrastiert, Krebs verfremdet, Stauchung draengt, Abspaltung spitzt zu. Genau diese Kette traegt den Baustein Ich hoere, das wirkt, weil.
 ```diagram
-  Keim [Motiv: Rhythmus + Intervalle]
-  Keim -> Kontur? [versetzt=Sequenz | gespiegelt=Umkehrung | rueckwaerts=Krebs]
-  Keim -> Zeit? [Tneu=2*Talt=Dehnung | Tneu=Talt/2=Stauchung mit T=60/BPM]
-  Keim -> Material? [voll=Fortspinnung | Fragment=Abspaltung]
-  Abspaltung + Stauchung -> Zuspitzung -> Urteil (treibend)
-  Pulsanker: $T=60/BPM$
+Kampagne [Impuls -> Schwelle -> Leitmotiv]
+Holphase [sichern] -> Pruefphase [Sequenz plus 3 Stufen, Abspaltung 4 zu 2 Takte] -> Zielphase [nutzen]
+Regel: Fehler frueh = Grenze | Fehler spaet = Ausnutzung
 ```
 
-Klausur-Satz: `Verarbeitungstechniken lassen sich danach ordnen, ob sie die Kontur, die Zeitgestalt oder das Material des Motivs veraendern.`
+`Klausur-Satz: Der Mechanismus trennt Grenze von Ausnutzung und ordnet jeden Fehler seiner Phase zu.`
 
 ## Anekdote & Fun-Fact
 
@@ -91,47 +61,50 @@ Klausur-Satz: `Verarbeitungstechniken lassen sich danach ordnen, ob sie die Kont
 
 **Bezug zum Konzept**: `Motivische Verfahren wie Sequenz und Umkehrung wirken wie rhetorische Figuren: Sie wiederholen, steigern und kontrastieren ein Motiv, um es ueberzeugend zu entfalten.`
 
-## Schritt 4 — ausprobieren: Interaktive Praxis & Hoer-Labor
+## Schritt 4 — ausprobieren: Sandkasten-Duell um Sequenz plus 3 Stufen
 
 BEISPIEL (Musteraufgabe mit Loesungsweg):
 
-[Werkzeug: oral-timer]
+[Werkzeug: formula]
 
-AUFGABE (analysieren, AFB II): Ebenen-Challenge — ein Hoerbeispiel beginnt mit einem viertoenigen Motiv, das zuerst unveraendert wiederholt wird. Danach erklingt dieselbe Tonfolge dreimal, jeweils einen Ganzton hoeher. Im Mittelteil wird nur noch der erste Dreiklang in schneller Folge wiederholt, waehrend die Tonwerte immer kuerzer werden. Bestimme laut gegen den Timer die Verarbeitungstechniken und beschreibe ihre Wirkung.
+AUFGABE (analysieren, AFB II): Verarbeitungsformel Motiv mal Verfahren: finde Sequenz plus 3 Stufen und Abspaltung 4 zu 2. Erreiche das Target: Sequenz plus 3 Stufen, Abspaltung 4 zu 2 Takte.
+
+TARGET: Sequenz plus 3 Stufen, Abspaltung 4 zu 2 Takte.
 
 HILFE:
-1. Schritt 1: Pruefe zuerst die Kontur. Bleibt die Gestalt gleich und wandert nur die Tonhoehe, liegt eine Sequenz vor.
-2. Schritt 2: Pruefe das Material. Wird nur ein Teil weitergefuehrt, handelt es sich um eine Abspaltung.
-3. Schritt 3: Pruefe die Zeitgestalt. Werden die Tonwerte kuerzer, liegt eine Stauchung vor.
+1. Schritt 1: Benenne Phase und Fehlerbild am Target (Sequenz plus 3 Stufen).
+2. Schritt 2: Lies den Messwert ab und deute ihn mit einem Fachbegriff.
+3. Schritt 3: Leite die Korrektur aus dem Mechanismus ab.
 
-MUSTERLOESUNG (Sprech-Skript, 90 Sekunden): "Ich hoere zuerst das unveraenderte Motiv als Keim. Dann hoere ich die dreifache Versetzung um je einen Ganzton — das wirkt treibend, weil es stetigen Antrieb nach oben erzeugt: eine Sequenz. Im Mittelteil hoere ich nur den Kopf in immer kuerzeren Werten — das wirkt zuspitzend, weil das Material schrumpft und die Abstaende kuerzer werden: Abspaltung plus Stauchung."
+MUSTERLOESUNG: Das Target (Sequenz plus 3 Stufen, Abspaltung 4 zu 2 Takte) wird erreicht, indem zuerst Phase und Fehlerbild benannt, dann der Messwert mit Fachbegriff gedeutet und schliesslich die Korrektur aus dem Mechanismus abgeleitet wird; so schliesst sich die Kausalkette Sichern, Umsetzen und Nutzen in Eisenstadter Haydn-Saal.
 
-Klausur-Satz: `Sequenz, Abspaltung und Stauchung wirken zusammen treibend, weil das Material schrumpft und der zeitliche Abstand der Ereignisse immer kuerzer wird.`
+`Klausur-Satz: Am Target zeigt sich, ob Grenze oder Ausnutzung ueber das Ergebnis entschied.`
 
-## Schritt 5 — ausprobieren: Verfahrensvergleich & Abgrenzung
+## Schritt 5 — ausprobieren: Verfahrensduell Sequenz-Weg gegen Umkehrungs-Weg
 
 VERGLEICH (zwei Verfahren im Kontrast):
 
-VERGLEICH: Waehle zuerst das Verfahren: (i) Sequenz-Verfahren (Kontur bleibt, nur Tonhoehe wandert) oder (ii) Umkehrung- und Krebs-Verfahren (Kontur oder Reihenfolge wird umgeschrieben), dann benennen.
+VERGLEICH: Waehle zuerst das Verfahren: (i) Sequenz-Weg oder (ii) Umkehrungs-Weg, dann loesen. Die Wahl des Verfahrens entscheidet ueber die ganze Begruendung.
 
-AUFGABE A: Ein Motiv steigt erst aufwaerts, danach erklingt dieselbe Tonfolge unveraendert eine Quarte hoeher. Welches Verfahren ist zu waehlen, und wie ist die Technik zu benennen?
+AUFGABE A: Erster Fall in Eisenstadter Haydn-Saal: Welches Verfahren passt, und wie ist zu argumentieren?
 
-AUFGABE B: Ein Motiv steigt erst aufwaerts; danach erklingt es mit genau denselben Intervallen, aber in umgekehrter Richtung. Welches Verfahren ist zu waehlen, und wie ist die Technik zu benennen?
+AUFGABE B: Zweiter Gegenfall: Welches Verfahren passt, und wie ist zu argumentieren?
 
-HILFE: A behaelt die Richtung und verschiebt nur die Tonhoehe, also Verfahren (i). B kehrt die Richtung um, also Verfahren (ii).
+HILFE: A fragt nach Grenze und Aufbau, also Verfahren (i). B fragt nach Ausnutzung und Lage, also Verfahren (ii).
 
-ANTWORT: A erfordert Verfahren (i): Die Gestalt bleibt erhalten und wird lediglich um eine Quarte versetzt, also liegt eine Sequenz vor, die den Antrieb steigert. B erfordert Verfahren (ii): Die Intervalle bleiben gleich, aber die Richtung ist umgekehrt, also liegt eine Umkehrung vor. Wird zusaetzlich die Reihenfolge von hinten nach vorn gelesen, spricht man von einem Krebs.
+ANTWORT: A erfordert Verfahren (i) Sequenz-Weg mit Begruendung aus Messwert und Mechanismus. B erfordert Verfahren (ii) Umkehrungs-Weg mit Begruendung aus Lage und Kontext. Muendlich formuliere ich den Unterschied in einem Satz mit weil.
 
-Klausur-Satz: `Wird das Motiv nur auf eine andere Tonhoehe versetzt, handelt es sich um eine Sequenz; wird seine Richtung oder Reihenfolge veraendert, um eine Umkehrung beziehungsweise einen Krebs.`
+`Klausur-Satz: Verfahren (i) setzt die Grenze, Verfahren (ii) nutzt die Lage; die Wahl traegt das Urteil.`
 
 ## Schritt 6 — check: Selbsttest zu Motivische Verarbeitung: Sequenz, Umkehrung, Krebs, Abspaltung
+
 CHECK (3 Fragen zur Selbstkontrolle mit Antworten):
 
-FRAGE: Was ist ein Motiv, und warum wird es verarbeitet? | ANTWORT: Ein Motiv ist die kleinste sinntragende Gestalt aus wenigen Toenen und einem charakteristischen Rhythmus; es ist allein unvollstaendig und muss daher weitergefuehrt werden.
-FRAGE: Wie unterscheidet man Umkehrung und Krebs beim Hoeren? | ANTWORT: Bei der Umkehrung werden die Intervallrichtungen gespiegelt, beim Krebs wird das Motiv von hinten nach vorn gelesen.
-FRAGE: Was geschieht bei einer Abspaltung, und wie wirkt sie? | ANTWORT: Nur ein Fragment des Motivs wird wiederholt; die Wiederholung des Fragments steigert die Spannung.
+FRAGE: Woran erkennst du das Kernthema im Wettkampf? | ANTWORT: Am Target (Sequenz plus 3 Stufen) und am Mechanismus aus Schritt 3.
+FRAGE: Wie erreichst du das Target? | ANTWORT: Durch Messen, Deuten mit Fachbegriff und Ableiten der Korrektur.
+FRAGE: Wann waehlst du Verfahren (i) statt (ii)? | ANTWORT: Bei Grenzfragen (i), bei Lagenfragen (ii).
 
-Klausur-Satz: `Die Abspaltung fuehrt nur ein Fragment des Motivs weiter und steigert so die Spannung, ohne neues Material einzufuehren.`
+`Klausur-Satz: Selbsttest bestanden heisst Target lesen, Verfahren waehlen und Urteil begruenden.`
 
 ## Fehlvorstellung
 
@@ -144,18 +117,17 @@ Klausur-Satz: `Die Abspaltung fuehrt nur ein Fragment des Motivs weiter und stei
    Korrektur: Wiedererkennbarkeit bedeutet nur, dass der Rhythmus erhalten ist. Tonhoehe (Sequenz), Dauer (Dehnung oder Stauchung) oder Material (Abspaltung) koennen dennoch veraendert sein. Daher Kontur, Zeit und Material getrennt pruefen.
    Korrektur-Satz: `Ein wiedererkennbares Motiv kann zugleich sequenziert, gedehnt oder abgespalten sein; die Wiedererkennbarkeit sagt nichts ueber die Art der Verarbeitung.`
 
-## Schritt 7 — szenario: Klausurtransfer: Motivische Verarbeitung: Sequenz, Umkehrung, Krebs, Abspaltung
-ROLLE: Du bist Pruefling in einer muendlichen Musikpruefung (EF) und sollst motivische Verarbeitung an einem Hoerbeispiel nachweisen.
-SITUATION: Die Prueferin spielt einen Ausschnitt, in dem ein kurzes Motiv mehrfach in veraenderter Gestalt erscheint. Sie fragt: Nennen Sie das Motiv und beschreiben Sie, wie es verarbeitet wird. Formuliere eine zusammenhaengende muendliche Stellungnahme (ca. 90 Sekunden), in der du das Motiv benennst, mindestens zwei Verarbeitungstechniken mit Fachbegriffen belegst und mit einem begruendeten Urteil zur Wirkung schliesst.
-RUBRIC (30 XP): Benennung des Motivs mit Rhythmus und Intervallverlauf (8 XP) | Nachweis von zwei Verarbeitungstechniken mit korrekten Fachbegriffen (9 XP) | Beschreibung der Hoerwirkung mit dem Baustein Ich hoere, das wirkt, weil (8 XP) | Begruendetes Urteil zur Funktion der Verarbeitung im Abschnitt (5 XP).
+## Schritt 7 — szenario: Klausurtransfer: Motivische Verarbeitung: Sequenz, Umkehrung, Krebs, Abspaltung — Kapellmeister in Eisenstadt
+ROLLE: Du bist Kapellmeister in Eisenstadt und verteidigst deine Entscheidung vor der Pruefungskommission.
+SITUATION: In Eisenstadter Haydn-Saal, Ueberraschungssinfonie (2. Satz) musst du in zusammenhaengenden deutschen Saetzen (ca. 90 Sekunden) Diagnose, Massnahme und Target (Sequenz plus 3 Stufen, Abspaltung 4 zu 2 Takte) vorstellen und mit Fachsprache begruenden.
+RUBRIC (30 XP): Diagnose mit Fachbegriffen (8 XP) | Massnahme mit Target-Beleg (10 XP) | Verfahrenswahl im Vergleich (7 XP) | Fachsprachlicher Vortrag (5 XP).
 
-## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
+## Schritt 8 — reflexion: Takeaway & Reflexion — Pokal oder Pitstop in Eisenstadter Haydn-Saal
 
 TAKEAWAY (Kernzusammenfassung):
 
-Ein Motiv ist der kleinste Gedanke. Die Technik folgt drei Prueffragen: Kontur (versetzt ist Sequenz, gespiegelt ist Umkehrung, rueckwaerts ist Krebs), Zeit (laenger ist Dehnung, kuerzer ist Stauchung), Material (Fragment ist Abspaltung). In der Pruefung zuerst den Rhythmus des Motivs nennen, dann Technik und Wirkung belegen, dann Urteil formulieren.
-Takeaway-Satz: `Ich erkenne die Verarbeitung eines Motivs daran, ob sich seine Kontur, seine Zeitgestalt oder sein Material veraendert.`
+Grenze frueh sichern, Lage spaet nutzen: Das Target (Sequenz plus 3 Stufen, Abspaltung 4 zu 2 Takte) misst den Unterschied, das Verfahren traegt das Urteil. Takeaway-Satz: `Wer die Grenze sichert und die Lage nutzt, holt in Eisenstadter Haydn-Saal den Pokal.`
 
 REFLEXION (2 Fragen):
-1. Selbstkontrolle: Welcher Schritt fiel schwerer, das Hoeren der einzelnen Techniken (Schritt 4) oder die Unterscheidung von Sequenz- und Umkehrungsverfahren (Schritt 5)?
-2. Planung: Beim naechsten Hoeren pruefe ich zuerst Kontur, dann Zeitgestalt und zuletzt das Material, weil diese Reihenfolge die Technik eindeutig eingrenzt.
+1. Selbstkontrolle: Welcher Schritt fiel schwerer, die Sandkasten-Praezision (Schritt 4) oder die Verfahrenswahl im Duell (Schritt 5)?
+2. Planung: Beim naechsten Mal notiere ich zuerst Messwert plus Phase, weil daraus jede Begruendung folgt.

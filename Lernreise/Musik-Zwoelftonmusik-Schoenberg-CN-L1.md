@@ -15,71 +15,53 @@ version: Lesson-v3
 
 <!-- Lesson v3 9步制架构：Schritt 1至8固定结构；Fehlvorstellung 夹在 Schritt 6 与 7 之间（Parser 自动跳过，不占步数）；支持内嵌 [Werkzeug: <id>] 交互教具；Gating: check/szenario 未过 = Weiter 置灰；XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
-## Schritt 1 — entdecken: Ziele & Phänomen-Einstieg
+## Schritt 1 — entdecken: Wiener Arnold-Schoenberg-Center — 赛场警报
 
-ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
+ZIELE (3条,本节15分钟学完能做到——先读中文,再记德语):
 
-1. 中文：能说清十二音技法的核心——十二个半音平等、无主次，用序列组织全曲。
-2. 中文：能写出原形、逆行、倒影、倒影逆行四种序列形态并辨认。
-3. 中文：能就"十二音是解放还是枷锁"表态并论证（AFB II-III）。
+1. 中文:能一句话定义`Zwoelftonmusik und Schoenberg`,并定位到本关赛事Wiener Arnold-Schoenberg-Center, Suite op.25 (Gavotte)。
+2. 中文:能口述核心机制,并用数值目标(Reihe 12 Toene, 4 Grundformen, kein Ton doppelt)举证。
+3. 中文:能诊断一处典型错误,并用德语Klausur-Satz收束(AF B II)。
 
+### Hook 赛场/舞台实况
 
-Hook中文生活切入:
+聚光灯打向Wiener Arnold-Schoenberg-Center, Suite op.25 (Gavotte),这是《冠军竞技场与节拍工坊》战役的下一关:上一集埋下的悬念在此引爆,教练/首席必须在限时内拿出方案。十二音等于半音民主:序列定order,原形倒影逆行逆行倒影四式统一全曲,无调中心靠统一代替。本关必须过沙盘数值目标,下一集的瓦格纳动机/体能极限/冲量角逐在此埋下伏笔。
 
-想象一副扑克十二张牌,发牌前定好一个顺序,整局游戏只能按这个顺序循环出牌,不许偏爱某张,连花色变化都要从原顺序推导。勋伯格的十二音序列就是这副牌:十二个半音排成基本序列全曲通用,倒影、逆行、倒影逆行都是它的变形,杜绝调性中心人人平等。
+Hook (DE): Im Rampenlicht von Wiener Arnold-Schoenberg-Center, Suite op.25 (Gavotte) beginnt unser naechster Akt der Kampagne Champion-Arena und Takt-Werkstatt. Stell dir vor: Kein Dur, kein Moll, kein Zuhause, und doch haelt alles zusammen wie ein unsichtbares Skelett. Was ordnet Musik ohne Zentrum? Die Reihe als demokratische Ordnung aller zwoelf Toene. Erstens verbietet sie Wiederholung vor Vollendung. Zweitens tragen vier Formen das ganze Stueck. Drittens ersetzt Einheit die Tonika. Wer die Reihe findet, versteht das System. Heute knacken wir genau diesen Code: notieren, formen und Einheit zeigen.
 
-Phaenomen-Satz (DE): Zwoelf Karten, eine Reihenfolge, kein Liebling unter ihnen.
+`Klausur-Satz: Leitsatz des Themas.`
 
-中文机制铺垫:先写原序列并编号,再推三种变形:逆行倒读、倒影反向、倒影逆行兼施;听辨抓序列痕迹与和声色彩,论述落到解放不协和与传统断裂,画序列矩阵表是标准解题动作。
+## Schritt 2 — entdecken: 5术语装备盒
 
-Mechanismus-Satz (DE): Die Reihe ordnet alle Toene, ihre Formen tragen das ganze Stueck.
+PRETRAINING术语盒(核心5词,先读三遍中德,合书自测中文→德语):
 
-Klausur-Satz: `Die Zwoelftontechnik ersetzt die Tonarten-Hierarchie durch die Gleichberechtigung aller zwoelf Toene in einer Reihe.`
+中文在上,德语在下:
 
-## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
+- 十二音序列 — Zwoelftonreihe:十二半音各一次 / alle zwoelf Toene genau einmal。
+- 原形 — Grundform:序列初始 order / urspruengliche Reihenfolge。
+- 倒影 — Umkehrung:音程方向翻转 / Spiegelung der Intervalle。
+- 逆行 — Krebs:倒着读 / ruecklaeufige Lesart。
+- 无调性 — Atonalitaet:无调中心 / Musik ohne tonales Zentrum。
 
-PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
+`Klausur-Satz: Die fuenf Begriffe tragen Diagnose, Sandkasten und Urteil als gemeinsame Sprache.`
 
-中文在上，德语在下：
+## Schritt 3 — entdecken: 生理/音乐机制传导
 
-- 音列 — ZwölfTonreihe：十二个不同半音的固定顺序，全曲基因。【陷阱：Reihe（顺序即内容，换序即换曲）不是 Tonleiter（音阶，调式台阶）。】
-- 原形 — Grundform：作曲家选定的初始序列。【陷阱：Grundform（特定顺序）不是 Grundton（主音，十二音中已废除）。】
-- 逆行倒影 — Krebs und Umkehrung：倒着读、上下翻的序列变形。【陷阱：Krebs（时间倒置）不是 Umkehrung（音高镜像），两者可叠加成 Krebsumkehrung。】
-- 无调性 — Atonalitaet：无主音中心，各音平等。【陷阱：atonal（无中心）不是 dissonant（不协和；十二音也可柔和）。】
-- 第二维也纳乐派 — Zweite Wiener Schule：勋伯格、贝尔格、韦伯恩三人圈。【陷阱：zweite（20 世纪现代派）不是 erste（海顿莫扎特贝多芬古典派）。】
+ENTDECKEN(1概念 + 1文字图解,中文在上、德语在下):
 
-Klausur-Satz: `Grundform, Krebs, Umkehrung und Krebsumkehrung liefern das Material jeder Zwoelftonkomposition.`
+中文:十二音=民主半音:序列定 order,四式(原形倒影逆行逆行倒影)全曲统一;找序列、标变形、释统一。
 
-## Schritt 3 — entdecken: Kernkonzept & Wirkungsmodell
+Mechanismus (DE): Die Reihe ordnet alle zwoelf Toene; Grundform, Umkehrung, Krebs und Krebsumkehrung tragen das ganze Stueck ohne tonales Zentrum.
 
-ENTDECKEN（1概念 + 1文字图解，中文在上、德语在下）：
-
-Hook中文生活切入：
-
-中文：想象十二生肖开会规定轮完一圈才许重签：没人当老大，但人人都在场。十二音就是用序列代替调性当组织者。
-
-Phaenomen-Satz (DE): Gleichheit statt Hierarchie: die Reihe ersetzt die Tonika.
-
-Spiel-Aufgabe沙盒操作指引：
-
-中文：打开音列沙盒，按 oral-timer 听 Grundform 再听 Krebs、Umkehrung 与 Krebsumkehrung（关键词：Reihe, Krebs, Umkehrung），看十二个音如何不重复地变花样。
-
-Beobachtungs-Satz (DE): Krebs liest die Zeit rueckwaerts, Umkehrung spiegelt die Intervalle.
-
-Aha-Moment因果链：
-
-中文因果链：调性音乐靠主音统领，十二音靠音列统领；四个基本变形提供全部材料又永不确立主音，统一性来自序列而非调中心。
-
-Gesetz-Satz (DE): Ohne Reihe keine Einheit: die Form ersetzt die fehlende Tonika.
-
-文字图解（ASCII 结构图，App支持解析渲染）：
+战役传导:本关承接冲量角逐、乳酸阈值与主导动机三幕,测得出才能说得清,说得清才能赢下来。
 
 ```diagram
-Reihe: 12 Toene je 1x (Grundform)
-Krebs = rueckwaerts | Umkehrung = gespiegelt | Krebsumkehrung = beides
-Hoeren: kein Ruhepol, aber Wiedererkennen der Gestalt
+Kampagne [Impuls -> Schwelle -> Leitmotiv]
+Holphase [sichern] -> Pruefphase [Reihe 12 Toene, 4 Grundformen, kein Ton doppelt] -> Zielphase [nutzen]
+Regel: Fehler frueh = Grenze | Fehler spaet = Ausnutzung
 ```
-Klausur-Satz: `Die Reihe garantiert Einheit ohne Tonika: Gleichheit statt Hierarchie.`
+
+`Klausur-Satz: Der Mechanismus trennt Grenze von Ausnutzung und ordnet jeden Fehler seiner Phase zu.`
 
 ## Anekdote & Fun-Fact
 
@@ -89,53 +71,50 @@ Klausur-Satz: `Die Reihe garantiert Einheit ohne Tonika: Gleichheit statt Hierar
 
 **Bezug zum Konzept**: `Eine Technik, zwei Temperamente: Strenge befreit den einen und fesselt den anderen nie.`
 
-## Schritt 4 — ausprobieren: Interaktive Praxis & Labor
+## Schritt 4 — ausprobieren: 沙盘决战 Reihe 12 Toene
 
-[Werkzeug: oral-timer]
+BEISPIEL(含教具操作与解答):
 
-BEISPIEL（正确例题示范，含教具操作与解答，中文在上、德语在下）：
+[Werkzeug: formula]
 
-AUFGABE中文导读（听辨谜题）：一段无调性音乐听不到主音回归，却处处似曾相识。请用音列变形解释这种统一感。
+AUFGABE (analysieren, AFB II):Reihenformel 12 Toene: notiere die Reihe und bilde 4 Grundformen ohne Doppelung;达标线:Reihe 12 Toene, 4 Grundformen, kein Ton doppelt。
 
-AUFGABE (analysieren, AFB II): Ein atonales Stueck ohne Tonika wirkt dennoch einheitlich. Erklaeren Sie die Einheit ueber Reihenformen.
+Target数值目标:Reihe 12 Toene, 4 Grundformen, kein Ton doppelt。
 
-HILFE（中德双语步骤）：
+HILFE:
+1. 定相命名:先说相位与错误画像,对照目标Reihe 12 Toene。
+2. 读数释义:读出测量值,用一个术语解释效应。
+3. 推纠正:从机制推出一条可操作纠正。
 
-1. 中文：第1步找原型：十二音各出现一次，关键词：Reihe。
-   Schritt 1 (DE): Sichern Sie die zwoelftoenige Grundform.
-2. 中文：第2步认变形：倒影逆行逐个对号，关键词：Form。
-   Schritt 2 (DE): Bestimmen Sie Krebs und Umkehrung.
-3. 中文：第3步释统一：序列即组织者，关键词：Einheit。
-   Schritt 3 (DE): Reihe garantiert Einheit ohne Tonika.
+MUSTERLÖSUNG:对照目标(Reihe 12 Toene, 4 Grundformen, kein Ton doppelt),先定相命名错误画像,再读数并以术语释效应,最后从机制推纠正;在Wiener Arnold-Schoenberg-Center, Suite op.25 (Gavotte)中形成 保障—转化—兑现 的完整因果链,达标即过关。
 
-MUSTERLOESUNG：中文：听不到主音是因为本来就没有主音；处处眼熟是因为所有材料都是同一音列的四种变形，序列以变形维持统一，恰如主题以变奏维持统一。
+`Klausur-Satz: Am Target zeigt sich, ob Grenze oder Ausnutzung ueber das Ergebnis entschied.`
 
-MUSTERLOESUNG (DE): Grundform, Krebs, Umkehrung und Krebsumkehrung liefern alles Material; die Reihe garantiert Einheit ohne Tonika: Gleichheit statt Hierarchie.
-Klausur-Satz: `Krebs liest die Zeit rueckwaerts, Umkehrung spiegelt den Raum der Intervalle.`
+## Schritt 5 — ausprobieren: VERGLEICH技术对抗 Reihen-Weg vs Hoer-Weg
 
-## Schritt 5 — ausprobieren: Verfahrensvergleich & Abgrenzung
+VERGLEICH辨别实验(双向辨析,先选程序再解题):【选程序】
 
-VERGLEICH辨别实验（双向辨析：调性眼 vs. 十二音眼）：
+VERGLEICH:先选程序—— (i) Reihen-Weg 还是 (ii) Hoer-Weg ——再解题。WegA讲上限/结构,WegB讲兑现/情境。【选程序:问上限与结构选(i),问兑现与情境选(ii)。口述先说 Ich waehle Verfahren (i)/(ii), weil …】
 
-VERGLEICH: Waehle erst das Konzept — 【选概念】先听组织原则：(i) Tonal-Konzept（有主音、有终止式、有功能和声）还是 (ii) Reihen-Konzept（无主音、音列统一、四形态循环）—— dann einordnen.
+AUFGABE A (Reihen-Weg):在Wiener Arnold-Schoenberg-Center, Suite op.25 (Gavotte)的首个案例中选哪条路,如何论证?
 
-AUFGABE A：Ein Stueck endet mit autentischer Kadenz Dominante-Tonika in C-Dur. Welches Konzept?
-AUFGABE B：Ein Stueck nutzt nur Grundform, Krebs, Umkehrung, Krebsumkehrung einer Reihe. Welches Konzept?
+AUFGABE B (Hoer-Weg):在对立案例中选哪条路,如何论证?
 
-HILFE: A zeigt Tonika plus Kadenz -> Konzept (i). B zeigt Reihenformen ohne Zentrum -> Konzept (ii).【选概念：题干出现 Kadenz / Tonika / Dominante 选调性；出现 Reihe / Krebs / Umkehrung / kein Zentrum 选十二音。】
+HILFE:A问上限属于程序(i);B问兑现属于程序(ii)。先说选哪条路,再给测量/情境证据。
 
-ANTWORT: A erfordert Konzept (i): tonale Hierarchie mit Schlusskadenz. B erfordert Konzept (ii): Reiheneinheit ohne Hierarchie, erkennbar an den vier Formen.
+ANTWORT:A走程序(i)Reihen-Weg,以测量值与机制论证上限;B走程序(ii)Hoer-Weg,以情境与位置论证兑现。德语口述句收束。
 
-Klausur-Satz: `Kadenz verrät Tonalitaet, Reihenform verrät Zwoelftontechnik.`
+`Klausur-Satz: Verfahren (i) setzt die Grenze, Verfahren (ii) nutzt die Lage; die Wahl traegt das Urteil.`
 
 ## Schritt 6 — check: Selbsttest zu Zwoelftonmusik und Schoenberg
-CHECK检索默写（自测 3 题，与答案配对）：
 
-FRAGE: Was ist die Grundregel der Reihe? | ANTWORT: Alle zwoelf Toene erklingen gleichberechtigt, keiner wiederholt sich vor dem Durchlauf.
-FRAGE: Wie entstehen Krebs und Umkehrung? | ANTWORT: Krebs liest rueckwaerts, Umkehrung spiegelt Intervalle, kombinierbar.
-FRAGE: Wer gehoert zur Zweiten Wiener Schule? | ANTWORT: Schoenberg, Berg, Webern.
+CHECK检索默写(自测3题,与答案配对):
 
-Klausur-Satz: `Ohne Reihe keine Einheit: Die Form ersetzt die fehlende Tonika.`
+FRAGE:如何在赛事中认出本课核心? | ANTWORT:看数值目标(Reihe 12 Toene)与S3机制。
+FRAGE:如何达标? | ANTWORT:测量、术语释义、从机制推纠正三步。
+FRAGE:何时选程序(i)而非(ii)? | ANTWORT:问上限选(i),问兑现选(ii)。
+
+`Klausur-Satz: Selbsttest bestanden heisst Target lesen, Verfahren waehlen und Urteil begruenden.`
 
 ## Fehlvorstellung
 
@@ -149,19 +128,18 @@ Klausur-Satz: `Ohne Reihe keine Einheit: Die Form ersetzt die fehlende Tonika.`
    中文纠偏：逆行翻时间（从右读），倒影翻空间（上下镜像），考试各占一分。混用等于把"倒带"和"照镜子"说成一回事。
    Korrektur-Satz: `Krebs kehrt die Zeit um, Umkehrung spiegelt die Intervalle.`
 
-## Schritt 7 — szenario: Klausurtransfer: Zwoelftonmusik und Schoenberg
-ROLLE: Du schreibst das Programmheft zum Schulkonzert mit Webern-Miniatur.
-SITUATION: Das Publikum fuerchtet „modernen Laerm", die Musiklehrerin will Verstaendnis wecken.
-AUFGABE: Erklaeren Sie in ca. 150 Woertern Reihe plus eine Reihenform am Beispiel und urteilen Sie: Befreiung oder Fessel?
-RUBRIC (30 XP): Reihe plus Regel korrekt (10 XP) | Eine Form demonstriert (10 XP) | Urteil Befreiung/Fessel mit Begruendung (10 XP).
+## Schritt 7 — szenario: Klausurtransfer: Zwoelftonmusik und Schoenberg — Ensembleleiter im Schoenberg-Center
+中文:你是Ensembleleiter im Schoenberg-Center,在Wiener Arnold-Schoenberg-Center, Suite op.25 (Gavotte)中必须用德语连贯口述(约90秒)诊断、措施与数值目标(Reihe 12 Toene, 4 Grundformen, kein Ton doppelt),并以术语举证。
+ROLLE: Du bist Ensembleleiter im Schoenberg-Center. SITUATION: In Wiener Arnold-Schoenberg-Center, Suite op.25 (Gavotte) stellst du Diagnose, Massnahme und Target (Reihe 12 Toene, 4 Grundformen, kein Ton doppelt) in ca. 90 Sekunden vor.
+RUBRIC (30 XP):诊断术语8分 | 措施与目标举证10分 | 程序选择对比7分 | 德语表达5分。
 
-## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
+## Schritt 8 — reflexion: Takeaway & Reflexion — 奖杯还是进站检修
 
-TAKEAWAY 1盒（核心总结）：
+TAKEAWAY 1盒(核心总结):
 
-中文：十二音一句话：废主音、立音列、走四形。君主（调性）倒了，宪法（音列）来统。逆行倒着读，倒影翻着唱。答题先判有无终止式，再找四形态。解放派弹药：新统一；枷锁派弹药：听感代价。
-Takeaway-Satz: `Gleichheit statt Krone: Die Reihe regiert, wo die Tonika abdankte.`
+中文:上限早锁定、位置晚兑现;数值目标(Reihe 12 Toene, 4 Grundformen, kein Ton doppelt)是裁判,程序选择是辩护;本关连着冲量角逐、体能极限与主导动机三幕,测得出、说得清、赢下来。
+Takeaway-Satz: `Wer die Grenze sichert und die Lage nutzt, holt den Pokal.`
 
-REFLEXION 2问：
-1. 过程自省：Welcher Schritt fiel schwerer — die Reihenformen bilden (Schritt 4) oder die Konzeptwahl tonal gegen Reihe (Schritt 5)?
-2. 元认知计划：Beim naechsten Mal nummeriere ich die Reihe zuerst 0 bis 11, bevor ich Formen bilde.
+REFLEXION 2问:
+1. 过程自省:沙盘精度(Schritt 4)与程序选择(Schritt 5)哪一步更难?
+2. 元认知计划:下次先记测量值加相位,因为一切论证都从它长出来。

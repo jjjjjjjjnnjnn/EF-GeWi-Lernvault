@@ -15,53 +15,53 @@ version: Lesson-v3
 
 <!-- Lesson v3 9步制架构：Schritt 1至8固定结构；Fehlvorstellung 夹在 Schritt 6 与 7 之间（Parser 自动跳过，不占步数）；支持内嵌 [Werkzeug: <id>] 交互教具；Gating: check/szenario 未过 = Weiter 置灰；XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
-## Schritt 1 — entdecken
+## Schritt 1 — entdecken: Salzburger Festspielhaus — 赛场警报
 
-ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
+ZIELE (3条,本节15分钟学完能做到——先读中文,再记德语):
 
-1. 中文：能说清六个顺阶三和弦的级数与性质（I 大、ii 小、iii 小、IV 大、V 大、vi 小），并指出 T-S-D-T 的功能归属。
-2. 中文：能写出 C 大调正格终止 I-IV-V-I 四个和弦，并解释为何它有收束感（低音四五度进行加导音倾向）。
-3. 中文：能按声部进行规则连写两个和弦，保持共同音、其余声部级进，避免平行五八度（AFB II）。
+1. 中文:能一句话定义`Harmonielehre Kadenz und Stufentheorie`,并定位到本关赛事Salzburger Festspielhaus, Mozart K.545 C-Dur (1. Satz)。
+2. 中文:能口述核心机制,并用数值目标(V-I-Schluss in C-Dur, 90-Sekunden-Kadenzanalyse)举证。
+3. 中文:能诊断一处典型错误,并用德语Klausur-Satz收束(AF B II)。
 
-Klausur-Satz: `Die authentische Kadenz I-IV-V-I verbindet die Stufen- mit der Funktionstheorie und schliesst durch Bassquinten und Leittonwirkung.`
+### Hook 赛场/舞台实况
 
-## Schritt 2 — entdecken
+聚光灯打向Salzburger Festspielhaus, Mozart K.545 C-Dur (1. Satz),这是《冠军竞技场与节拍工坊》战役的下一关:上一集埋下的悬念在此引爆,教练/首席必须在限时内拿出方案。终止式是和声的句号:V-I最硬,I-IV-V-I最全;级数标功能,低音走骨架,属七推解决。本关必须过沙盘数值目标,下一集的瓦格纳动机/体能极限/冲量角逐在此埋下伏笔。
 
-PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
+Hook (DE): Im Rampenlicht von Salzburger Festspielhaus, Mozart K.545 C-Dur (1. Satz) beginnt unser naechster Akt der Kampagne Champion-Arena und Takt-Werkstatt. Stell dir vor: Der Schlussakkord verklingt, und die ganze Kirche weiss: Hier ist angekommen, was vier Takte zuvor noch suchte. Was schliesst so unwiderstehlich? Die Kadenz als Satzzeichen der Harmonik: Spannung, Steigerung und Loesung in vier Griffen. Erstens oeffnet die Tonika den Raum. Zweitens weitet die Subdominante den Blick. Drittens spitzt die Dominante die Erwartung. Viertens loest die Tonika alles ein. Wer Stufen hoert, versteht Saetze. Heute setzen wir genau diesen Schluss: legen, spannen und aufloesen.
 
-中文在上，德语在下：
+`Klausur-Satz: Leitsatz des Themas.`
 
-- 级数 — Stufe：按音阶顺序在每一级上叠三度构成的三和弦，C 大调为 C-d-e-F-G-a。
-- 正格终止 — Authentische Kadenz：I-IV-V-I 的标准收束进行，主功能开头结尾，考试最常考。
-- 功能组 — Funktionsgruppe：主 T（I, vi, iii）、下属 S（IV, ii）、属 D（V, vii0），T-S-D-T 为基本方向。
-- 共同音 — Gemeinsamer Ton：相邻两和弦共有的音，连写时应保留在同一声部。
-- 平行五八度 — Parallele Quinten/Oktaven：两声部同向进行并保持纯五或纯八度，传统和声中禁止。
+## Schritt 2 — entdecken: 5术语装备盒
 
-Klausur-Satz: `Gemeinsame Toene werden gehalten, die uebrigen Stimmen bewegen sich stufenweise in Gegenbewegung zum Bass.`
+PRETRAINING术语盒(核心5词,先读三遍中德,合书自测中文→德语):
 
-## Schritt 3 — entdecken
+中文在上,德语在下:
 
-ENTDECKEN（1概念 + 1文字图解）：
+- 正格终止 — authentische Kadenz:V-I收束,最强解决 / V-I als staerkster Schluss。
+- 级数 — Stufentheorie:I-IV-V功能标号 / Funktionsstufen I-IV-V。
+- 属七 — Dominantseptakkord:V7强解决倾向 / V7 mit starker Aufloesungstendenz。
+- 低音 — Bass:和声进行的骨架 / Geruest der Harmoniefolge。
+- 调性 — Tonart:主音与调式中心 / Tonika als Zentrum。
 
-中文：级数理论回答"和弦是哪一级"，功能理论回答"它往哪里走"。C 大调六个和弦中，I 是家，V 是门（有导音 B 拉向 C），IV 是另一条路。T-S-D-T 是单行道：主可以去任何地方，下属去属，属回家，属之后不可直接回下属（逆功能要扣分）。终止感来自两件事：低音 G 到 C 的纯四度上行（即五度下行），加三音 B 到 C 的半音解决。连写时先找共同音钉住，再让其他声部走小步，低音与高音反向最安全。
+`Klausur-Satz: Die fuenf Begriffe tragen Diagnose, Sandkasten und Urteil als gemeinsame Sprache.`
 
-文字图解（ASCII 结构图，App支持解析渲染）：
+## Schritt 3 — entdecken: 生理/音乐机制传导
+
+ENTDECKEN(1概念 + 1文字图解,中文在上、德语在下):
+
+中文:终止式是和声的句号:V-I最硬,I-IV-V-I最全;级数标功能,低音走骨架,属七推解决,调性定中心。
+
+Mechanismus (DE): Die Kadenz schliesst die Phrase: V-I als haertester Schluss, I-IV-V-I als Vollform; Stufen benennen die Funktion, der Bass traegt das Geruest.
+
+战役传导:本关承接冲量角逐、乳酸阈值与主导动机三幕,测得出才能说得清,说得清才能赢下来。
 
 ```diagram
-  C-Dur Stufen (Dreiklaenge):
-  I=C   ii=d   iii=e   IV=F   V=G   vi=a
-  Dur   moll   moll    Dur    Dur   moll
-  [T]   [S]    [T]     [S]    [D]   [T]
-
-  Kadenzweg T-S-D-T:
-  I  ---->  IV  ---->  V  ---->  I
-  C         F          G         C
-  Bass: C -> F -> G -> C (Quarte+Quinte)
-  Leitton: H -> C (Halbton, nur in V->I)
-  Verboten: S nach D ja, D nach S nein
+Kampagne [Impuls -> Schwelle -> Leitmotiv]
+Holphase [sichern] -> Pruefphase [V-I-Schluss in C-Dur, 90-Sekunden-Kadenzanalyse] -> Zielphase [nutzen]
+Regel: Fehler frueh = Grenze | Fehler spaet = Ausnutzung
 ```
 
-Klausur-Satz: `Die Kadenz folgt dem Weg T-S-D-T, weil nur diese Richtung Leittonspannung und Bassquinten zur Tonika aufloest.`
+`Klausur-Satz: Der Mechanismus trennt Grenze von Ausnutzung und ordnet jeden Fehler seiner Phase zu.`
 
 ## Anekdote & Fun-Fact
 
@@ -71,46 +71,50 @@ Klausur-Satz: `Die Kadenz folgt dem Weg T-S-D-T, weil nur diese Richtung Leitton
 
 **Bezug zum Konzept**: `Selbstaendige Stimmfuehrung mit Gegenbewegung sichert den vierstimmigen Satz gegen verbotene Parallelen.`
 
-## Schritt 4 — ausprobieren
+## Schritt 4 — ausprobieren: 沙盘决战 V-I-Schluss in C-Dur
 
-BEISPIEL（正确例题示范，含教具操作与解答）：
+BEISPIEL(含教具操作与解答):
 
-[Werkzeug: formula]
+[Werkzeug: oral-timer]
 
-AUFGABE (bestimmen, AFB II)：Bestimme in C-Dur die Stufen und Funktionen von C, F, G, C und setze die Kadenz I-IV-V-I vierstimmig in enger Lage, Soprananfang g2. Beachte die Stimmfuehrung ohne parallele Quinten/Oktaven.
+AUFGABE (analysieren, AFB II):90-Sekunden-Kadenzanalyse gegen den Timer: singe V-I in C-Dur und benenne I-IV-V-I;达标线:V-I-Schluss in C-Dur, 90-Sekunden-Kadenzanalyse。
+
+Target数值目标:V-I-Schluss in C-Dur, 90-Sekunden-Kadenzanalyse。
 
 HILFE:
-1. Schritt 1: Akkorde den Stufen zuordnen: C=I=T, F=IV=S, G=V=D, C=I=T.
-2. Schritt 2: Gemeinsame Toene suchen: I->IV teilt C, IV->V teilt kein Dreiklangston voll, V->I teilt G.
-3. Schritt 3: Sopran und Bass in Gegenbewegung fuehren, Leitton H in V nach C aufloesen, Quinten zwischen allen Stimmenpaaren pruefen.
+1. 定相命名:先说相位与错误画像,对照目标V-I-Schluss in C-Dur。
+2. 读数释义:读出测量值,用一个术语解释效应。
+3. 推纠正:从机制推出一条可操作纠正。
 
-MUSTERLOESUNG: Positiv-Beispiel 1 (I->IV, C nach F): I = C-E-G mit Sopran g2, IV = F-A-C mit Sopran a2. Gemeinsamer Ton C bleibt im Alt (c2->c2), Tenor E->F stufenweise, Bass C->F in Quarte, Sopran g2->a2 stufenweise; keine Parallelen. Positiv-Beispiel 2 (V->I, G nach C): V = G-H-D mit Sopran d2, I = C-E-G mit Sopran c2. Leitton H im Tenor steigt nach C, D->E stufenweise, G->G bleibt im Alt, Bass G->C in Quarte; Sopran faellt, Bass steigt (Gegenbewegung), Schlussakkord mit verdoppeltem Grundton C. Negativ-Beispiel (Fehler, zum Vergleich): V->I mit Sopran d2->e2 und Bass G->A fuehrt Tenor H->A und Alt G->E parallel in Quinten; zusaetzlich bleibt der Leitton H unaufgeloest. Fehlerurteil: Parallele Quinten zwischen Aussenstimmen plus fehlende Leittonaufloesung, daher als Kadenzschluss unbrauchbar.
+MUSTERLÖSUNG:对照目标(V-I-Schluss in C-Dur, 90-Sekunden-Kadenzanalyse),先定相命名错误画像,再读数并以术语释效应,最后从机制推纠正;在Salzburger Festspielhaus, Mozart K.545 C-Dur (1. Satz)中形成 保障—转化—兑现 的完整因果链,达标即过关。
 
-Klausur-Satz: `Die korrekte Kadenz haelt gemeinsame Toene, loest den Leitton auf und vermeidet Parallelen durch Gegenbewegung.`
+`Klausur-Satz: Am Target zeigt sich, ob Grenze oder Ausnutzung ueber das Ergebnis entschied.`
 
-## Schritt 5 — ausprobieren
+## Schritt 5 — ausprobieren: VERGLEICH技术对抗 Stufen-Weg vs Hoer-Weg
 
-VERGLEICH辨别实验（双向辨析：和弦归属与进行方向）：
+VERGLEICH辨别实验(双向辨析,先选程序再解题):【选程序】
 
-VERGLEICH: Waehle erst das Konzept — 【选概念】先判断题目问的是 (i) Stufen-Bestimmung（看根音是第几级、大小性质是什么）还是 (ii) Funktions-Weg（看 T-S-D-T 方向是否允许）—— dann loesen.
+VERGLEICH:先选程序—— (i) Stufen-Weg 还是 (ii) Hoer-Weg ——再解题。WegA讲上限/结构,WegB讲兑现/情境。【选程序:问上限与结构选(i),问兑现与情境选(ii)。口述先说 Ich waehle Verfahren (i)/(ii), weil …】
 
-AUFGABE A：Bestimme in C-Dur den Dreiklang A-C-E nach Stufe und Funktion. AUFGABE B：Ist die Folge V-IV-I als Kadenznachsatz zulaessig?
+AUFGABE A (Stufen-Weg):在Salzburger Festspielhaus, Mozart K.545 C-Dur (1. Satz)的首个案例中选哪条路,如何论证?
 
-HILFE: A fragt nach Name und Gruppe -> Konzept (i): Zaehle von C aus (A = VI), pruefe Terz (klein = moll), ordne T zu. B fragt nach Richtung -> Konzept (ii): Pruefe T-S-D-T.【选概念：问"这是什么和弦"选级数加功能；问"能否这样接"选方向规则，D 回 S 否决。】
+AUFGABE B (Hoer-Weg):在对立案例中选哪条路,如何论证?
 
-ANTWORT: A erfordert Konzept (i): A-C-E ist Stufe VI in Moll und gehoert zur Tonika-Gruppe als Vertreter von I. B erfordert Konzept (ii): V->IV verletzt die Richtung D->S und zerstoert die Schlusswirkung; korrekt waere IV->V->I. Die Kadenz lebt von der Quintspannung vor der Tonika, ein Rueckschritt nimmt ihr die Energie.
+HILFE:A问上限属于程序(i);B问兑现属于程序(ii)。先说选哪条路,再给测量/情境证据。
 
-Klausur-Satz: `Die Stufe VI vertritt die Tonika, doch die Folge Dominante vor Subdominante widerspricht dem Kadenzweg.`
+ANTWORT:A走程序(i)Stufen-Weg,以测量值与机制论证上限;B走程序(ii)Hoer-Weg,以情境与位置论证兑现。德语口述句收束。
 
-## Schritt 6 — check
+`Klausur-Satz: Verfahren (i) setzt die Grenze, Verfahren (ii) nutzt die Lage; die Wahl traegt das Urteil.`
 
-CHECK检索默写（自测 3 题，与答案配对）：
+## Schritt 6 — check: Selbsttest zu Harmonielehre Kadenz und Stufentheorie
 
-FRAGE: Welche Stufen gehoeren in Dur zu T, S und D? | ANTWORT: T = I, iii, vi; S = IV, ii; D = V, vii0; Grundweg T-S-D-T.
-FRAGE: Warum wirkt V->I schliessend? | ANTWORT: Bassquinte G->C plus Leitton H->C in Halbtonspannung loesen sich gemeinsam zur Tonika auf.
-FRAGE: Wie vermeidet man parallele Quinten praktisch? | ANTWORT: Gemeinsame Toene halten, uebrige Stimmen stufenweise und Bass gegen Sopran in Gegenbewegung fuehren.
+CHECK检索默写(自测3题,与答案配对):
 
-Klausur-Satz: `Der vierstimmige Satz verlangt regelmaessig verdoppelten Grundton und Aufloesung aller Leittoene.`
+FRAGE:如何在赛事中认出本课核心? | ANTWORT:看数值目标(V-I-Schluss in C-Dur)与S3机制。
+FRAGE:如何达标? | ANTWORT:测量、术语释义、从机制推纠正三步。
+FRAGE:何时选程序(i)而非(ii)? | ANTWORT:问上限选(i),问兑现选(ii)。
+
+`Klausur-Satz: Selbsttest bestanden heisst Target lesen, Verfahren waehlen und Urteil begruenden.`
 
 ## Fehlvorstellung
 
@@ -123,20 +127,18 @@ Klausur-Satz: `Der vierstimmige Satz verlangt regelmaessig verdoppelten Grundton
    中文纠偏：终止是功能方向不是顺耳与否。D 必须解向 T，D 回 S 是逆功能，考场直接判错。
    Korrektur-Satz: `Nach der Dominante ist nur die Tonika als Ziel zulaessig, nicht die Subdominante.`
 
-## Schritt 7 — szenario
+## Schritt 7 — szenario: Klausurtransfer: Harmonielehre Kadenz und Stufentheorie — Konzertmeister in Salzburg
+中文:你是Konzertmeister in Salzburg,在Salzburger Festspielhaus, Mozart K.545 C-Dur (1. Satz)中必须用德语连贯口述(约90秒)诊断、措施与数值目标(V-I-Schluss in C-Dur, 90-Sekunden-Kadenzanalyse),并以术语举证。
+ROLLE: Du bist Konzertmeister in Salzburg. SITUATION: In Salzburger Festspielhaus, Mozart K.545 C-Dur (1. Satz) stellst du Diagnose, Massnahme und Target (V-I-Schluss in C-Dur, 90-Sekunden-Kadenzanalyse) in ca. 90 Sekunden vor.
+RUBRIC (30 XP):诊断术语8分 | 措施与目标举证10分 | 程序选择对比7分 | 德语表达5分。
 
-ROLLE: Du bist Klavierbetreuer der EF-Musikgruppe und erklaerst einer Mitschuelerin die Klausuraufgabe.
-SITUATION: Sie hat C-F-G-C korrekt als I-IV-V-I bestimmt, doch ihr vierstimmiger Satz enthaelt parallele Oktaven zwischen Bass und Tenor und der Leitton bleibt liegen.
-AUFGABE: Schreibe eine zusammenhaengende Korrektur (ca. 150 Woerter), in der du Stufe und Funktion bestaetigst, die zwei Stimmfuehrungsfehler benennst und je eine konkrete Umlagerung mit Beibehaltung des gemeinsamen Tons vorschlaegst.
-RUBRIC (30 XP): Stufen plus Funktionen korrekt (10 XP) | Beide Fehler mit Stimmenangabe benannt (10 XP) | Zwei praktikable Korrekturen mit Gegenbewegung (10 XP).
+## Schritt 8 — reflexion: Takeaway & Reflexion — 奖杯还是进站检修
 
-## Schritt 8 — reflexion: Takeaway & Reflexion
+TAKEAWAY 1盒(核心总结):
 
-TAKEAWAY 1盒（核心总结）：
+中文:上限早锁定、位置晚兑现;数值目标(V-I-Schluss in C-Dur, 90-Sekunden-Kadenzanalyse)是裁判,程序选择是辩护;本关连着冲量角逐、体能极限与主导动机三幕,测得出、说得清、赢下来。
+Takeaway-Satz: `Wer die Grenze sichert und die Lage nutzt, holt den Pokal.`
 
-中文：六级只记"大小小大大小"加 T-S-D-T 单行道。终止四步 I-IV-V-I，低音 C-F-G-C，导音 B 必须到 C。连写三招：钉住共同音、小步走、与低音反向。检查只看两件事：外声部有无平行，导音解了没。
-Takeaway-Satz: `Stufen kennen, Weg T-S-D-T einhalten, gemeinsame Toene halten und Parallelen durch Gegenbewegung vermeiden.`
-
-REFLEXION 2问：
-1. 过程自省：Welcher Schritt fiel schwerer — die Stufen- und Funktionsbestimmung (Schritt 4) oder das fehlerfreie Fortschreiten der Stimmen (Schritt 5)?
-2. 元认知计划：Beim naechsten Mal pruefe ich zuerst Bass gegen Sopran und loese dann erst die Mittelstimmen auf.
+REFLEXION 2问:
+1. 过程自省:沙盘精度(Schritt 4)与程序选择(Schritt 5)哪一步更难?
+2. 元认知计划:下次先记测量值加相位,因为一切论证都从它长出来。
