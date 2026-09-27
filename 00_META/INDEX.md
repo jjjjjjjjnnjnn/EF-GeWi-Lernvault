@@ -27,6 +27,7 @@
 - [Lehrplan-Content-Spezifikation](Lehrplan-Content-Spezifikation.md) — **考纲全量内容搜集与生成规范（外置AI主交接案）**
 - [Aussen-AI-Kampagnen-und-Storyline-Didaktik](Aussen-AI-Kampagnen-und-Storyline-Didaktik.md) — **外部 AI 连续剧式关卡宇宙与个性化互动教学设计指南（P2 深度重塑指令集）**
 - [Aussen-AI-Qualitaets-Audit-und-Anti-Monotonie-Handbuch](Aussen-AI-Qualitaets-Audit-und-Anti-Monotonie-Handbuch.md) — **课件实质质量审查报告与去重深耕重塑手册（针对外部 AI 敷衍套模的根治案）**
+- [Aussen-AI-Simulations-Review-und-Bug-Audit](Aussen-AI-Simulations-Review-und-Bug-Audit.md) — **学生端全链路模拟审查与隐蔽 Bug 排查任务包（Simulation Walkthrough + Scoring + Bug Hunting，269 课分批）**
 - [Plan-接手执行](Plan-接手执行.md) — 接手执行计划（任务状态/铁约束/优先级分层/A–D待办清单）
 - **考纲体系（Curriculum）** — [设计总纲](Curriculum/00-Design.md) · [官方源清单](Curriculum/01-Quellen.md)
   - 德国 NRW Oberstufe（EF–Q2，10 科）：[Deutsch](Curriculum/Deutschland/Deutsch-Oberstufe.md) · [Englisch](Curriculum/Deutschland/Englisch-Oberstufe.md) · [Philosophie](Curriculum/Deutschland/Philosophie-Oberstufe.md) · [SoWi](Curriculum/Deutschland/SoWi-Oberstufe.md) · [Musik](Curriculum/Deutschland/Musik-Oberstufe.md) · [Sport](Curriculum/Deutschland/Sport-Oberstufe.md) · [Mathe](Curriculum/Deutschland/Mathe-Oberstufe.md) · [Physik](Curriculum/Deutschland/Physik-Oberstufe.md) · [Chemie](Curriculum/Deutschland/Chemie-Oberstufe.md) · [Bio](Curriculum/Deutschland/Bio-Oberstufe.md)
@@ -244,6 +245,7 @@
 - [2026-09-26-d-paket-batch-enrichment-completion](Journal/2026-09-26-d-paket-batch-enrichment-completion.md) — **D包收官：全学科-DE-纯德语互动课件四段式科学精讲与KaTeX定量全量落地**：四段式生动精讲+定量科学公式+98篇覆盖+零CJK+门禁全绿
 - [2026-09-26-interactive-pedagogy-and-scroll-sync](Journal/2026-09-26-interactive-pedagogy-and-scroll-sync.md) — **互动探索式学习重构、滚动同步与学科教具严格隔离**：TOC视口联动+回到顶部修复+入课置顶+生物/化学专有实验沙盘上线+排版重点升格（59套件391测试全绿）
 - [2026-09-27-p1-p2-gesamtabschluss](Journal/2026-09-27-p1-p2-gesamtabschluss.md) — **P1+P2全量收官：269门十科互动课程连续剧式关卡宇宙与微沙盘深度重塑**：8大战役故事线+三道门禁全绿（audit 6项全零+vault-check PASS+tsc零错误）+单科独立落库
+- [2026-09-27-simulation-review-und-feinschliff](Journal/2026-09-27-simulation-review-und-feinschliff.md) — **学生端全链路模拟审查269/269+11路逐课精修+4遗留清零**：任务包发布+11路审查（均分86.0）+返工6课+数值硬伤纠错+单科独立落库
 - 约定：文件名 `YYYY-MM-DD-<thema>.md`，头部frontmatter（`fach`可空，`tags: [EF, Meta]`）。
 
 
