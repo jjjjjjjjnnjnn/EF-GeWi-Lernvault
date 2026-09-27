@@ -15,7 +15,7 @@ version: Lesson-v3
 
 <!-- Lesson v3 9-Schritt-Architektur: Schritt 1 bis 8 feste Struktur; Fehlvorstellung zwischen Schritt 6 und 7 (Parser ueberspringt, zaehlt nicht); interaktives [Werkzeug: <id>]; Gating: check/szenario nicht bestanden = Weiter deaktiviert; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
-## Schritt 1 — entdecken
+## Schritt 1 — entdecken: Ziele & Phänomen-Einstieg
 ZIELE (drei messbare Ziele dieser Lektion):
 
 1. Du kannst eine Materialaufgabe im Zeitlimit nach AFB I zu AFB III gliedern und jeden Abschnitt an den Punkten des Erwartungshorizonts ausrichten.
@@ -24,8 +24,11 @@ ZIELE (drei messbare Ziele dieser Lektion):
 
 ### Hook / Phaenomen
 
-Brot wird beim langen Kauen suess: Amylase spaltet Staerke schon bei $37\,^\circ\mathrm{C}$ in Zucker — ein Enzym live im Mund. Doch in der Klausur zaehlt nicht das Erlebnis, sondern die Gliederung: $6$ Bewertungseinheiten in ca. $6$–$7$ Minuten, AFB I ohne weil-Satz, AFB II mit Kausalkette, AFB III mit Urteil. Wie verteilt man Zeit nach Punkten, statt nach Gefuehl?
+面包在嘴里嚼久了会变甜：唾液淀粉酶在三十七度就把淀粉切成糖，酶活性曲线也在讲同一个故事。考场不考你流口水，考你分层：六个评分点六七分钟、第一层只记数据不写因为、第二层必须因果链、第三层要判断句。中国学生常把理由写进描述段，德国期望视界直接扣掉结构分。本节把时间按分贝配、答案按层写，让每一分都有着落。
 
+Brot wird beim langen Kauen suess: Amylase spaltet Staerke schon bei 37 Grad in Zucker — ein Enzym live im Mund; in der Klausur zaehlt die Gliederung.
+
+机制铺垫双语：机制是预算、分层、检查，先按分贝配时间、再用因果链解释、最后用期望视界对照三类丢分。Die Kausalkette lautet: Budget, Schichten, Pruefen; erst Materialwerte zitieren, dann mit weil und deshalb erklaeren, dann urteilen.
 ### Fachbegriff & Definition
 
 Der **Erwartungshorizont** ist die **Liste der erwarteten Teilleistungen mit Punkten** — Landkarte der Antwort. Die **Materialaufgabe** liefert Material (Kurve, Experiment, Stammbaum) plus Teilfragen; das **Zeitlimit** bemisst etwa eine Minute je Punkt, der Erklaerteil erhaelt den groessten Anteil. Die **Schichtung** lautet: AFB I nennt nur, was im Material steht, mit Zahlen und ohne weil-Saetze; AFB II erklaert mit Fachregel und **Kausalkette** (Ursache zu Mechanismus zu Ergebnis mit weil und deshalb); AFB III urteilt zuerst als Sachurteil, bei Bedarf als Werturteil. Die **Selbsteinschaetzung** gleicht danach Antwort mit Horizont ab.
@@ -36,7 +39,7 @@ Die Kausalkette lautet: **Budget, Schichten, Pruefen**. Erstens Zeit nach Punkte
 
 Klausur-Satz: `Nur wer Messwerte, Fachregel und Urteil sauber trennt, erreicht alle Punkte des Erwartungshorizonts.`
 
-## Schritt 2 — entdecken
+## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
 ### Hook / Phaenomen
@@ -45,11 +48,11 @@ Drei Punktverlust-Typen fressen Noten: Operator verfehlt, Fachbegriff falsch, Be
 
 ### Fachbegriffe & Definitionen
 
-- **Erwartungshorizont:** Liste der erwarteten Teilleistungen mit Punkten; Landkarte der Antwort — jede Teilleistung einzeln abhakbar.
-- **Materialaufgabe:** Aufgabe mit Material wie Kurve, Experiment oder Stammbaum plus Teilfragen — erst Material, dann Frage, dann Schicht.
-- **Zeitlimit:** Zeitbudget nach Bewertungseinheiten; etwa eine Minute je Punkt — Erklaerteil erhaelt den groessten Anteil.
-- **Kausalkette:** Verknuepfung von Ursache zu Mechanismus zu Ergebnis mit weil und deshalb — etwa RGT treibt Anstieg, Denaturierung bricht Abfall.
-- **Selbsteinschaetzung:** Abgleich der eigenen Antwort mit dem Erwartungshorizont — Punktverluste den drei Typen zuordnen und naechstes Mal meiden.
+- **Erwartungshorizont: (评分标准)** Liste der erwarteten Teilleistungen mit Punkten; Landkarte der Antwort — jede Teilleistung einzeln abhakbar.
+- **Materialaufgabe: (材料题)** Aufgabe mit Material wie Kurve, Experiment oder Stammbaum plus Teilfragen — erst Material, dann Frage, dann Schicht.
+- **Zeitlimit: (时间分配)** Zeitbudget nach Bewertungseinheiten; etwa eine Minute je Punkt — Erklaerteil erhaelt den groessten Anteil.
+- **Kausalkette: (变性)** Verknuepfung von Ursache zu Mechanismus zu Ergebnis mit weil und deshalb — etwa RGT treibt Anstieg, Denaturierung bricht Abfall.
+- **Selbsteinschaetzung: (自我评估)** Abgleich der eigenen Antwort mit dem Erwartungshorizont — Punktverluste den drei Typen zuordnen und naechstes Mal meiden.
 
 ### Wirkungsgefuege / Modell
 
@@ -57,7 +60,7 @@ Die Begriffe bilden den Bewertungskreislauf: **Horizont lesen, Antwort schichten
 
 Klausur-Satz: `Der Erwartungshorizont gibt vor, welche Teilleistungen fuer die volle Punktzahl erforderlich sind.`
 
-## Schritt 3 — entdecken
+## Schritt 3 — entdecken: Kernkonzept & Wirkungsmodell
 TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
 ### Hook / Phaenomen
@@ -98,13 +101,13 @@ Klausur-Satz: `Wer den Erwartungshorizont in Abschnitte zerlegt, kann seine Antw
 
 **Bezug zum Konzept**: `Die Speichelamylase setzt Staerke bei Koerpertemperatur schnell um; genau diese Umsatzrate wird in Enzym-Kurven gemessen.`
 
-## Schritt 4 — ausprobieren
+## Schritt 4 — ausprobieren: Interaktive Praxis & Labor
 
 BEISPIEL (geleitete Aufgabe mit Werkzeug):
 
-[Werkzeug: formula]
+[Werkzeug: enzyme-lock]
 
-AUFGABE (auswerten, erklaeren, beurteilen, AFB I-III, 8 BE, ca. 8 min): Ein Versuch vergleicht die Aktivitaet eines Enzyms bei verschiedenen Temperaturen. Die Messwerte zeigen: Bei 20 Grad Celsius ist die Umsatzrate niedrig, sie steigt bis 40 Grad Celsius stark an, erreicht bei 40 Grad Celsius ihr Maximum und faellt danach steil ab; bei 70 Grad Celsius ist keine Umsetzung mehr messbar. a) Werten Sie den Kurvenverlauf aus (3 BE). b) Erklaeren Sie Anstieg und Abfall (3 BE). c) Beurteilen Sie die Aussage: Bei 70 Grad Celsius laesst sich das Enzym durch Abkuehlen reaktivieren. (2 BE).
+Stelle in der Sandbox (enzyme-lock) die Temperatur auf 20/40/70 Grad ein, ziehe den Slider Temperatur und lies die Umsatzrate ab; AUFGABE (auswerten, erklaeren, beurteilen, AFB I-III, 8 BE, ca. 8 min): Ein Versuch vergleicht die Aktivitaet eines Enzyms bei verschiedenen Temperaturen. Die Messwerte zeigen: Bei 20 Grad Celsius ist die Umsatzrate niedrig, sie steigt bis 40 Grad Celsius stark an, erreicht bei 40 Grad Celsius ihr Maximum und faellt danach steil ab; bei 70 Grad Celsius ist keine Umsetzung mehr messbar. a) Werten Sie den Kurvenverlauf aus (3 BE). b) Erklaeren Sie Anstieg und Abfall (3 BE). c) Beurteilen Sie die Aussage: Bei 70 Grad Celsius laesst sich das Enzym durch Abkuehlen reaktivieren. (2 BE).
 
 HILFE:
 1. Schritt 1: Teile die Aufgabe in die drei AFB-Abschnitte und notiere die BE-Zahl je Abschnitt (3 / 3 / 2) als Zeitbudget.
@@ -115,7 +118,7 @@ MUSTERLOESUNG: a) Die Umsatzrate ist bei 20 Grad Celsius gering, steigt bis 40 G
 
 Klausur-Satz: `Der Anstieg beruht auf der RGT-Regel, der Abfall auf der irreversiblen Denaturierung, weshalb eine Abkuehlung das Enzym nicht reaktiviert.`
 
-## Schritt 5 — ausprobieren
+## Schritt 5 — ausprobieren: Verfahrensvergleich & Abgrenzung
 
 VERGLEICH (Wahl des Verfahrens, A gegen B):
 
@@ -131,7 +134,7 @@ ANTWORT: A erfordert Verfahren (i): Ich beschreibe den Verlauf mit Werten (stark
 
 Klausur-Satz: `Kurvenmaterial wird nach dem Dreischritt ausgewertet, waehrend ein kontrollierter Ansatz erst durch den Vergleich mit der Kontrolle eine Aussage erlaubt.`
 
-## Schritt 6 — check
+## Schritt 6 — check: Verständnisprüfung
 
 CHECK (drei Fragen mit Antworten):
 
@@ -152,14 +155,14 @@ Klausur-Satz: `Die Selbsteinschaetzung mit dem Erwartungshorizont deckt auf, ob 
    Korrektur: Ohne Wiederholung und Kontrolle laesst sich aus einem einzelnen Ergebnis keine gesicherte Aussage ableiten.
    Korrektur-Satz: `Ohne Wiederholung und Kontrolle laesst sich aus einem einzelnen Ergebnis keine gesicherte Aussage ableiten.`
 
-## Schritt 7 — szenario
+## Schritt 7 — szenario: Klausurtransfer & Rubric
 
 ROLLE: Du bist Tutorin in der Klausurvorbereitung und leitest eine Uebungseinheit mit Zeitlimit.
 SITUATION: Eine Mitschaelerin hat eine Materialaufgabe (8 BE) bearbeitet, aber nur 4 Punkte erhalten. Ihr Kommentar war: Ich habe doch alles Wichtige geschrieben.
 AUFGABE (AFB II/III): Erklaere ihr in einer zusammenhaengenden Stellungnahme (ca. 150 Woerter), wie sie mit dem Erwartungshorizont systematisch herausfinden kann, wo die vier fehlenden Punkte verloren gegangen sind, und welches Vorgehen sie kuenftig anwenden sollte.
 RUBRIC (30 XP): Benennung der drei Fehlertypen — Operator verfehlt, Fachbegriff falsch, Beleg fehlt (8 XP) | Beschreibung des Vorgehens beim Vergleich von Antwort und Erwartungshorizont (10 XP) | Hinweis auf die Trennung von Beschreibung, Erklaerung und Urteil (7 XP) | Kriteriengeleitetes Fazit mit konkreter Handlungsempfehlung (5 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY (Kernbotschaft in einem Kasten):
 

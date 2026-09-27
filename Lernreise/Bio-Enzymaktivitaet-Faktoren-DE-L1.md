@@ -15,7 +15,7 @@ version: Lesson-v3
 
 <!-- Lesson v3 9-Schritt-Architektur: Schritt 1 bis 8 feste Struktur; Fehlvorstellung zwischen Schritt 6 und 7 (Parser ueberspringt, zaehlt nicht); interaktives [Werkzeug: <id>]; Gating: check/szenario nicht bestanden = Weiter deaktiviert; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
-## Schritt 1 — entdecken
+## Schritt 1 — entdecken: Ziele & Phänomen-Einstieg
 ZIELE (drei messbare Ziele dieser Lektion):
 
 1. Du kannst drei Grundeigenschaften von Enzymen nennen — ueberwiegend Proteine, Senkung der Aktivierungsenergie $E_a$, kein Verbrauch — und erklaeren, dass Enzyme die Gleichgewichtslage nicht veraendern.
@@ -24,7 +24,7 @@ ZIELE (drei messbare Ziele dieser Lektion):
 
 ### Hook / Phaenomen
 
-Hohes Fieber ueber etwa $42\,^\circ\mathrm{C}$ ist lebensgefaehrlich — nicht wegen der Waerme selbst, sondern weil koerpereigene Enzyme ihre Form verlieren. Gleichzeitig arbeitet Speichelamylase bei $37\,^\circ\mathrm{C}$ so schnell, dass Brot beim langen Kauen suess wird. Dieselbe Temperaturskala foerdert und zerstoert — wo liegt die Grenze, und warum kommt ein denaturiertes Enzym nie zurueck?
+Hohes Fieber ueber etwa $42\,^\circ\mathrm{C}$ ist lebensgefaehrlich — nicht wegen der Waerme selbst, sondern weil koerpereigene Enzyme ihre Form verlieren. Gleichzeitig arbeitet Speichelamylase bei $37\,^\circ\mathrm{C}$ so schnell, dass Brot beim langen Kauen suess wird. Dieselbe Temperaturskala foerdert und zerstoert — wo liegt die Grenze, und warum kommt ein denaturiertes Enzym nie zurueck? Wie ein gekochtes Ei zeigt, kehrt denaturiertes Protein nie zurueck: Hitze ueber etwa 42 Grad Celsius zerstoert Wasserstoffbruecken und Ionenbindungen der Tertiaerstruktur, das aktive Zentrum verliert seine Schluessel-Schloss-Passung und die Aktivitaet faellt irreversibel auf null. Unterhalb des Optimums gilt die RGT-Regel mit mehr wirksamen Stoessen je 10 Grad, oberhalb zerstoert Waerme die Form. Erst wer Anstieg mit weil und Abfall mit weil begruendet, trennt Regel von Ruine und sichert alle Kurvenpunkte.
 
 ### Fachbegriff & Definition
 
@@ -36,7 +36,7 @@ Die Kausalkette lautet: **Binden, Senken, Freisetzen**. Das Substrat bindet im a
 
 Klausur-Satz: `Enzyme senken als Biokatalysatoren die Aktivierungsenergie, besitzen ein Temperatur- und ein pH-Optimum und werden dabei nicht verbraucht.`
 
-## Schritt 2 — entdecken
+## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
 ### Hook / Phaenomen
@@ -57,38 +57,31 @@ Die Begriffe bilden die Glocke: **Anstieg** nach RGT (mehr kinetische Energie, m
 
 Klausur-Satz: `Unterhalb des Optimums steigt die Reaktionsgeschwindigkeit nach der RGT-Regel, oberhalb des Optimums fuehrt die Denaturierung zu einem steilen Abfall.`
 
-## Schritt 3 — entdecken
+## Schritt 3 — entdecken: Kernkonzept & Wirkungsmodell
 TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
 ### Hook / Phaenomen
 
-Brot wird beim langen Kauen suess: Amylase spaltet Staerke schon bei $37\,^\circ\mathrm{C}$ in Zucker — mitten im Koerperoptimum. Doch was zeigt eine Enzymkurve dem Pruefer: drei Abschnitte, zwei Ursachen, ein Urteil ueber reversibel oder irreversibel?
+Warum gerinnt Eiweiss in der heissen Pfanne irreversibel, waehrend gemaessigtes Erwaermen eine Reaktion nur beschleunigt? Und warum arbeitet Pepsin im Magen bei $pH = 2$, aber nicht im Duenndarm? Dahinter steckt die Form des aktiven Zentrums. Wann hilft Waerme, und wann zerstoert sie das Schloss?
 
-### Fachbegriff & Definition
+### Spiel-Aufgabe
 
-Die **Glockenkurve der Aktivitaet** traegt zwei Gesetze: Unterhalb des Optimums steigt die Geschwindigkeit nach der **RGT-Regel** (etwa Verdopplung je $10\,^\circ\mathrm{C}$), weil mehr Teilchen die Schwelle $E_a$ ueberwinden. Oberhalb faellt sie steil durch **Denaturierung** des aktiven Zentrums, weil Wasserstoffbruecken und Ionenbindungen brechen. Die $pH$-Kurve ist ebenfalls glockenfoermig: Pepsin piekt bei ca. $pH$ $2$ (Magen), Trypsin bei ca. $pH$ $8$ (Duodenum) — das Optimum spiegelt den Wirkungsort wider.
+Spiel-Aufgabe im Kopf-Labor: Ziehe den Temperatur-Schieberegler von $20^\circ\mathrm{C}$ ueber $37^\circ\mathrm{C}$ bis $70^\circ\mathrm{C}$ und den $pH$-Regler von $2$ ueber $7$ bis $12$. Beobachte die Aktivitaetskurve: Anstieg nach RGT-Regel, Optimum, steiler Abfall. Notiere Kurvenform und Substratpfeile zum aktiven Zentrum. Erklaere in einem Satz mit weil, warum der Abfall irreversibel ist.
 
-### Wirkungsgefuege / Modell
+### Aha-Moment & Gesetz
 
-Denke in Kausalkette: **Lesen, Zuordnen, Urteilen**. Erstens Kurve abschnittsweise beschreiben — Anstieg, Maximum mit Werten, Abfall. Zweitens Ursachen zuordnen — RGT gegen Denaturierung, Ladungsaenderung gegen Strukturverlust. Drittens urteilen: Bei $70\,^\circ\mathrm{C}$ hilft Abkuehlen nicht, weil die Tertiaerstruktur zerstoert ist — irreversibel, keine Reaktivierung. Anstieg folgt der Regel, Abfall der Ruine.
+Aha-Moment und Gesetz: Die Kausalkette lautet Bewegung, Passung, Zerstoerung. Waerme erhoeht erst die Stosserfolge, daher steigt $v$ mit der Temperatur. Jenseits des Optimums bricht die Tertiaerstruktur auf, das aktive Zentrum verliert seine Form, das Substrat passt nicht mehr ins Schloss. Es gilt $v = \frac{\Delta c}{\Delta t}$ fuer die Messung und $v_{max}$ nur bei intaktem Zentrum; Denaturierung durch Hitze oder Extrem-$pH$ ist irreversibel, Hemmung oft reversibel.
 
 ```diagram
-   Reaktions-
-   geschwindigkeit
-        ^
-        |            .-- Optimum (ca. 37-40 Grad C)
-        |          .'   '.
-        |        .'       '.
-        |      .'  RGT-     '.  Denaturierung
-        |    .'    Regel      '.  (irreversibel)
-        |  .'                    '.
-        |.'                        '.
-        +------------------------------> Temperatur
-         10   20   30   40   50   60   70  [Grad C]
-
-   pH-Kurve: glockenfoermig, Peak = pH-Optimum
-   Pepsin  ca. pH 2 (Magen)  |  Trypsin  ca. pH 8 (Duodenum)
-   Regel: Anstieg = RGT | Abfall = Denaturierung (kein Zurueck)
+    Aktivitaet v ueber T (pH optimal)
+    v ^
+      |      /\
+      |     /  \  Optimum ca. 37 C
+      |    /    \
+      |___/      \____  Denaturierung (irreversibel)
+         20  37  60  T in C
+    Aktivitaet v ueber pH (T optimal): Glocke mit Optimum (Pepsin pH 2)
+    Schloss-Schluessel: Substrat --> aktives Zentrum --> Produkt.
 ```
 
 Klausur-Satz: `Der Anstieg der Kurve folgt der RGT-Regel, der steile Abfall nach dem Optimum beruht auf der irreversiblen Denaturierung des aktiven Zentrums.`
@@ -99,24 +92,24 @@ Klausur-Satz: `Der Anstieg der Kurve folgt der RGT-Regel, der steile Abfall nach
 
 **Bezug zum Konzept**: `Zu hohes Fieber fuehrt zur Denaturierung der koerpereigenen Enzyme und damit zu einem irreversiblen Verlust der Aktivitaet.`
 
-## Schritt 4 — ausprobieren
+## Schritt 4 — ausprobieren: Interaktive Praxis & Enzym-Labor
 
 BEISPIEL (geleitete Aufgabe mit Werkzeug):
 
-[Werkzeug: formula]
+[Werkzeug: enzyme-lock]
 
-AUFGABE (auswerten und erklaeren, AFB II): In einem Versuch wird die Aktivitaet eines menschlichen Verdauungsenzyms bei Temperaturen von 10 Grad Celsius bis 70 Grad Celsius gemessen. Die Reaktionsgeschwindigkeit steigt bis 40 Grad Celsius stark an, erreicht dort ihr Maximum und faellt danach steil ab; bei 70 Grad Celsius ist keine Aktivitaet mehr messbar. Werten Sie den Kurvenverlauf aus und erklaeren Sie Anstieg und Abfall.
+AUFGABE (Spiel-Auftrag, AFB II, 3 Stufen): Stufe 1 Vorhersagen: Amylase zeigt bei $20^\circ\mathrm{C}$ wenig, bei $37^\circ\mathrm{C}$ maximal, bei $70^\circ\mathrm{C}$ null Umsatz. Beschreibe die Kurve. Stufe 2 Oeffnen: Entscheide per Schloss-Test, ob das Substrat noch passt. Stufe 3 Sichern: Begruende mit Denaturierung in zwei Saetzen mit weil.
 
 HILFE:
-1. Schritt 1: Werte zuerst aus (Operator auswerten): Beschreibe die drei Abschnitte und nenne die Zahlenwerte des Anstiegs und des Maximums.
-2. Schritt 2: Erklaere den Anstieg mit der RGT-Regel — mehr kinetische Energie, haeufigere wirksame Zusammenstoesse.
-3. Schritt 3: Erklaere den Abfall mit der Denaturierung — Zerstoerung der Tertiaerstruktur, Formaenderung des aktiven Zentrums, Substrat kann nicht mehr binden.
+1. Schritt 1: Anstieg durch RGT-Regel, Abfall durch Zerstoerung des Zentrums.
+2. Schritt 2: $v = \frac{\Delta c}{\Delta t}$ als Mass, $v_{max}$ nur bei intaktem Schloss.
+3. Schritt 3: Hitze bricht Tertiaerstruktur irreversibel auf.
 
-MUSTERLOESUNG: Die Kurve verlaeuft dreiphasig: Von 10 Grad Celsius bis 40 Grad Celsius steigt die Aktivitaet nahezu exponentiell an, bei 40 Grad Celsius liegt das Temperaturoptimum, danach faellt sie steil ab und erreicht bei 70 Grad Celsius den Wert null. Der Anstieg folgt der RGT-Regel: Mit steigender Temperatur nimmt die kinetische Energie der Molekuele zu, sodass es haeufiger zu wirksamen Zusammenstoessen zwischen Enzym und Substrat kommt und die Reaktionsgeschwindigkeit steigt. Der Abfall nach dem Optimum beruht auf der Denaturierung: Die hohe Temperatur zerstoert die Wasserstoffbruecken und Ionenbindungen der Tertiaerstruktur, wodurch das aktive Zentrum seine Form veraendert; das Substrat kann nicht mehr binden. Diese Denaturierung ist irreversibel, deshalb ist bei 70 Grad Celsius keine Aktivitaet mehr messbar.
+MUSTERLOESUNG: Von $20^\circ\mathrm{C}$ bis $37^\circ\mathrm{C}$ steigt $v = \frac{\Delta c}{\Delta t}$ nach der RGT-Regel, weil mehr wirksame Stoesse gelingen. Oberhalb des Optimums sinkt $v$ trotz weiter steigender Temperatur auf null, weil die Denaturierung die Form des aktiven Zentrums irreversibel veraendert und das Substrat nicht mehr passt. Daher ist der Abfall kein Mangel an Bewegung, sondern Verlust der Passung.
 
 Klausur-Satz: `Oberhalb des Temperaturoptimums veraendert die Denaturierung die Form des aktiven Zentrums irreversibel, sodass die Reaktionsgeschwindigkeit trotz weiter steigender Temperatur sinkt.`
 
-## Schritt 5 — ausprobieren
+## Schritt 5 — ausprobieren: Verfahrensvergleich & Abgrenzung
 
 VERGLEICH (Wahl des Verfahrens, A gegen B):
 
@@ -132,7 +125,7 @@ ANTWORT: A erfordert Verfahren (i): Da die Temperatur noch unterhalb des Optimum
 
 Klausur-Satz: `Dieselbe Temperaturerhoehung beschleunigt die Reaktion unterhalb des Optimums nach der RGT-Regel, zerstoert das Enzym jedoch oberhalb des Optimums durch Denaturierung.`
 
-## Schritt 6 — check
+## Schritt 6 — check: Verständnisprüfung
 
 CHECK (drei Fragen mit Antworten):
 
@@ -153,14 +146,14 @@ Klausur-Satz: `Waehrend die kompetitive Hemmung reversibel ist, beruht die Denat
    Korrektur: Die RGT-Regel gilt nur unterhalb des Temperaturoptimums; darueber ueberwiegt die Denaturierung, sodass die Reaktionsgeschwindigkeit wieder sinkt.
    Korrektur-Satz: `Die RGT-Regel gilt nur unterhalb des Temperaturoptimums; darueber ueberwiegt die Denaturierung, sodass die Reaktionsgeschwindigkeit wieder sinkt.`
 
-## Schritt 7 — szenario
+## Schritt 7 — szenario: Klausurtransfer & Rubric
 
 ROLLE: Du bist Referent in einem Schullabor und haeltst einen Kurzvortrag fuer juengere Schuelerinnen und Schueler.
 SITUATION: Ein Waschmittelhersteller wirbt damit, dass sein Pulver schon bei 30 Grad Celsius wirkt, waehrend ein aelteres Produkt erst bei 60 Grad Celsius optimale Leistung zeigt. In beiden Produkten stecken Proteasen, also Eiweiss spaltende Enzyme.
 AUFGABE (AFB II/III): Erklaere in einer zusammenhaengenden Stellungnahme (ca. 150 Woerter), warum ein modernes Waschmittel auf ein niedrigeres Temperaturoptimum optimiert wird und was bei 60 Grad Celsius mit den Enzymen geschieht.
 RUBRIC (30 XP): Benennung des Temperaturoptimums als Anpassung an den Einsatzbereich (5 XP) | Erklaerung der Wirkungssteigerung unterhalb des Optimums mit der RGT-Regel (8 XP) | Erklaerung der Denaturierung oberhalb des Optimums mit Bezug auf die Tertiaerstruktur und das aktive Zentrum (10 XP) | Kausale, fachsprachlich korrekte Stellungnahme mit den Fachbegriffen Denaturierung und irreversibel (7 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY (Kernbotschaft in einem Kasten):
 

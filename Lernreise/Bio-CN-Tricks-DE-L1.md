@@ -15,7 +15,7 @@ version: Lesson-v3
 
 <!-- Lesson v3 9-Schritt-Architektur: Schritt 1 bis 8 feste Struktur; Fehlvorstellung zwischen Schritt 6 und 7 (Parser ueberspringt, zaehlt nicht); interaktives [Werkzeug: <id>]; Gating: check/szenario nicht bestanden = Weiter deaktiviert; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
-## Schritt 1 — entdecken
+## Schritt 1 — entdecken: Ziele & Phänomen-Einstieg
 ZIELE (drei messbare Ziele dieser Lektion):
 
 1. Du kannst vier Verfahren der Einfuehrungsphase nennen — Kurvenauswertung in drei Schritten, Kontrollprinzip, Reaktionsgleichungen und Enzym-Merkregel — und jedes an einer kleinen Aufgabe anwenden.
@@ -24,8 +24,11 @@ ZIELE (drei messbare Ziele dieser Lektion):
 
 ### Hook / Phaenomen
 
-Pasteur liess mit Schwanenhalsflasche Keime in der Kruemmung haengen — die Bruehe blieb klar. Doch erst der Vergleich mit offener Probe machte die Aussage zulaessig: Eine Variable entscheidet ueber Beweis oder Behauptung. Vier Verfahren, ein Werkzeugkasten — Kurve, Kontrolle, Gleichung, Enzymregel. Welches Verfahren oeffnet welche Aufgabe?
+巴斯德用鹅颈瓶让菌落在弯颈处下不来，肉汤清澈如初：但真正让结论成立的是对照组，一个变量决定证明还是声称。水绵在光下吐泡、暗处沉默，加不加碳酸氢钠水就是唯一差别。中国学生做实验题喜欢一次性说完，德国考试要求曲线三步、对照单变量、方程式平衡各就各位。本节把四种流程装进工具箱，见到材料先选函再下笔。
 
+Pasteur liess mit Schwanenhalsflasche Keime in der Kruemmung haengen — die Bruehe blieb klar; doch erst der Vergleich mit offener Probe machte die Aussage zulaessig.
+
+机制铺垫双语：机制是识别、应用、表述，先看材料选工具，再用专业规则解释，最后写德语专业句。Die Kausalkette lautet: Erkennen, Anwenden, Formulieren; in der Klausur zaehlt ausschliesslich der deutsche Fachsatz.
 ### Fachbegriff & Definition
 
 Die **vier EF-Verfahren** lauten: **Kurvenauswertung in drei Schritten** (Verlauf beschreiben, Maximum bestimmen, Ursache mit Fachregel erklaeren), **Kontrollprinzip** (nur eine Variable aendern, alle uebrigen konstant halten), **Reaktionsgleichungen** ($6CO_2 + 6H_2O \to C_6H_{12}O_6 + 6O_2$ und Zellatmung als Umkehrung — Gasbilanzen daraus ableiten) und **Enzym-Merkregel** (spezifisch, effizient, bei Extremen denaturiert; Hemmung reversibel, Denaturierung irreversibel). Jedes Verfahren endet im deutschen Fachsatz — etwa das $pH$-Optimum spiegelt den Wirkungsort wider.
@@ -36,7 +39,7 @@ Die Kausalkette lautet: **Erkennen, Anwenden, Formulieren**. Erstens Aufgabentyp
 
 Klausur-Satz: `Die eingeuebten Loesungsverfahren dienen als Strukturhilfe; in der Klausur zaehlt jedoch ausschliesslich der deutsche Fachsatz.`
 
-## Schritt 2 — entdecken
+## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
 ### Hook / Phaenomen
@@ -45,11 +48,11 @@ Wasserpest im Licht blubbert, im Dunkeln schweigt — Hydrogencarbonat verstaerk
 
 ### Fachbegriffe & Definitionen
 
-- **Kurvenauswertung in drei Schritten:** Verlauf beschreiben, Maximum bestimmen, Ursache mit Fachregel erklaeren — etwa RGT-Regel gegen Denaturierung.
-- **Kontrollprinzip:** Nur eine Variable aendern, alle uebrigen Bedingungen konstant halten — sonst ist keine Aussage zulaessig.
-- **Eine einzige Variable:** Genau ein Einflussfaktor wird veraendert — etwa $CO_2$-Angebot (Hydrogencarbonat gegen destilliertes Wasser).
-- **Enzym-Merkregel:** Spezifisch, effizient, bei extremen Bedingungen denaturiert; Hemmung ist reversibel, Denaturierung irreversibel — das $pH$-Optimum spiegelt den Wirkungsort.
-- **Reaktionsgleichungen:** $6CO_2 + 6H_2O \to C_6H_{12}O_6 + 6O_2$ und die Umkehrung der Zellatmung; Gasbilanzen werden daraus abgeleitet — $O_2$-Plus heisst Fotosynthese.
+- **Kurvenauswertung in drei Schritten: (曲线三步法)** Verlauf beschreiben, Maximum bestimmen, Ursache mit Fachregel erklaeren — etwa RGT-Regel gegen Denaturierung.
+- **Kontrollprinzip: (对照原则)** Nur eine Variable aendern, alle uebrigen Bedingungen konstant halten — sonst ist keine Aussage zulaessig.
+- **Eine einzige Variable: (单一变量)** Genau ein Einflussfaktor wird veraendert — etwa $CO_2$-Angebot (Hydrogencarbonat gegen destilliertes Wasser).
+- **Enzym-Merkregel: (酶记忆规则)** Spezifisch, effizient, bei extremen Bedingungen denaturiert; Hemmung ist reversibel, Denaturierung irreversibel — das $pH$-Optimum spiegelt den Wirkungsort.
+- **Reaktionsgleichungen: (反应方程式)** $6CO_2 + 6H_2O \to C_6H_{12}O_6 + 6O_2$ und die Umkehrung der Zellatmung; Gasbilanzen werden daraus abgeleitet — $O_2$-Plus heisst Fotosynthese.
 
 ### Wirkungsgefuege / Modell
 
@@ -57,7 +60,7 @@ Die Begriffe bilden den Werkzeugkasten: **Kurve** misst (drei Schritte), **Kontr
 
 Klausur-Satz: `Nur eine Variable wird geaendert, alle uebrigen Bedingungen bleiben konstant.`
 
-## Schritt 3 — entdecken
+## Schritt 3 — entdecken: Kernkonzept & Wirkungsmodell
 TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
 ### Hook / Phaenomen
@@ -98,13 +101,13 @@ Klausur-Satz: `Zuerst werte ich Verlauf und Maximum aus, dann erklaere ich den W
 
 **Bezug zum Konzept**: `Wie bei Pasteurs Versuch wird eine Aussage erst durch die Kontrolle zulaessig, die sich in nur einer Variable vom Versuchsansatz unterscheidet.`
 
-## Schritt 4 — ausprobieren
+## Schritt 4 — ausprobieren: Interaktive Praxis & Labor
 
 BEISPIEL (geleitete Aufgabe mit Werkzeug):
 
-[Werkzeug: formula]
+[Werkzeug: enzyme-lock]
 
-AUFGABE (anwenden und erklaeren, AFB II): Ein Versuch untersucht, ob Kohlendioxid die Fotosyntheserate begrenzt. Zwei gleich grosse Wasserpflanzen werden in Bechglaeser gesetzt: Ansatz A erhaelt Wasser mit geloestem Hydrogencarbonat, Ansatz B gleich viel destilliertes Wasser. Lichtstaerke und Temperatur sind identisch. Nach zehn Minuten werden die aufsteigenden Gasblasen gezaehlt: In A sind es deutlich mehr als in B. Benennen Sie die Variable und die Kontrolle und erklaeren Sie, welche Aussage das Ergebnis zulaesst.
+Stelle in der Sandbox (enzyme-lock) Licht und CO2-Angebot ein, ziehe den Slider Lichtstaerke und lies die Blasenzahl ab; AUFGABE (anwenden und erklaeren, AFB II): Ein Versuch untersucht, ob Kohlendioxid die Fotosyntheserate begrenzt. Zwei gleich grosse Wasserpflanzen werden in Bechglaeser gesetzt: Ansatz A erhaelt Wasser mit geloestem Hydrogencarbonat, Ansatz B gleich viel destilliertes Wasser. Lichtstaerke und Temperatur sind identisch. Nach zehn Minuten werden die aufsteigenden Gasblasen gezaehlt: In A sind es deutlich mehr als in B. Benennen Sie die Variable und die Kontrolle und erklaeren Sie, welche Aussage das Ergebnis zulaesst.
 
 HILFE:
 1. Schritt 1: Bestimme die eine Variable, die sich aendert (Operator anwenden): $CO_2$-Angebot (Hydrogencarbonat gegen destilliertes Wasser).
@@ -115,7 +118,7 @@ MUSTERLOESUNG: Die unabhaengige Variable ist das $CO_2$-Angebot: Ansatz A enthae
 
 Klausur-Satz: `Da sich die beiden Ansaetze nur im CO2-Angebot unterscheiden, belegt der hoehere Gasanfall in A die CO2-Abhaengigkeit der Fotosynthese.`
 
-## Schritt 5 — ausprobieren
+## Schritt 5 — ausprobieren: Verfahrensvergleich & Abgrenzung
 
 VERGLEICH (Wahl des Verfahrens, A gegen B):
 
@@ -131,7 +134,7 @@ ANTWORT: A erfordert Verfahren (i): Nach dem Dreischritt beschreibe ich zunaechs
 
 Klausur-Satz: `Kurvenmaterial wird mit dem Dreischritt ausgewertet, waehrend kontrollierte Ansaetze nach dem Prinzip der einzigen Variable beurteilt werden.`
 
-## Schritt 6 — check
+## Schritt 6 — check: Verständnisprüfung
 
 CHECK (drei Fragen mit Antworten):
 
@@ -152,14 +155,14 @@ Klausur-Satz: `Die Kurvenauswertung folgt dem Dreischritt Verlauf, Maximum, Ursa
    Korrektur: Die Kontrolle ist nicht die untaetige Gruppe, sondern die Gruppe, die sich von der Versuchsgruppe nur in der einen unabhaengigen Variable unterscheidet.
    Korrektur-Satz: `Die Kontrolle ist nicht die untaetige Gruppe, sondern die Gruppe, die sich von der Versuchsgruppe nur in der einen unabhaengigen Variable unterscheidet.`
 
-## Schritt 7 — szenario
+## Schritt 7 — szenario: Klausurtransfer & Rubric
 
 ROLLE: Du bist Tutor in einem Bio-Grundkurs und erklaerst einer Lerngruppe, wie man Materialaufgaben systematisch angeht.
 SITUATION: Die Lerngruppe hat drei verschiedene Materialien vor sich: ein Kurvendiagramm zur Enzymaktivitaet, einen Versuchsplan mit zwei Ansaetzen und eine Reaktionsgleichung zur Fotosynthese.
 AUFGABE (AFB II/III): Erklaere in einer zusammenhaengenden Stellungnahme (ca. 150 Woerter), wie man fuer jedes Material das passende Verfahren auswaehlt und warum man nicht alle Materialien gleich behandeln darf.
 RUBRIC (30 XP): Benennung der drei Verfahren und ihrer jeweiligen Materialtypen (8 XP) | Begruendete Zuordnung von Verfahren und Material (10 XP) | Erklaerung des Nutzens der Verfahrenswahl fuer die Punktevergabe (7 XP) | Kriteriengeleitetes Fazit zur systematischen Vorgehensweise (5 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY (Kernbotschaft in einem Kasten):
 

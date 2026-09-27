@@ -15,7 +15,7 @@ version: Lesson-v3
 
 <!-- Lesson v3 9-Schritt-Architektur: Schritt 1 bis 8 feste Struktur; Fehlvorstellung zwischen Schritt 6 und 7 (Parser ueberspringt, zaehlt nicht); interaktives [Werkzeug: <id>]; Gating: check/szenario nicht bestanden = Weiter deaktiviert; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
-## Schritt 1 — entdecken
+## Schritt 1 — entdecken: Ziele & Phänomen-Einstieg
 ZIELE (drei messbare Ziele dieser Lektion):
 
 1. Du kannst die oekologische Nische als mehrdimensionalen Funktionsraum vom Habitat als Aufenthaltsort unterscheiden und Nischendifferenzierung entlang von Morphologie, Zeit und Nahrung erklaeren.
@@ -24,7 +24,7 @@ ZIELE (drei messbare Ziele dieser Lektion):
 
 ### Hook / Phaenomen
 
-Auf Galapagos knacken Finken harte Samen, picken Insekten oder stechen in Kakteen — ein Schnabel je Nahrung, ein Dutzend Arten auf engstem Raum. Warum vertreibt keine die andere? Gleichzeitig frisst ein Waldkauz Maeuse, wird aber nie so schwer wie alle Maeuse zusammen. Zwei Raetsel — Nische und Energie — entscheiden ueber Koexistenz und Pyramide.
+Auf Galapagos knacken Finken harte Samen, picken Insekten oder stechen in Kakteen — ein Schnabel je Nahrung, ein Dutzend Arten auf engstem Raum. Warum vertreibt keine die andere? Gleichzeitig frisst ein Waldkauz Maeuse, wird aber nie so schwer wie alle Maeuse zusammen. Zwei Raetsel — Nische und Energie — entscheiden ueber Koexistenz und Pyramide. Darwinfinken teilen Samen, Insekten und Kakteen per Schnabelform, Waldkaeuze bleiben leichter als alle Maeuse zusammen: Nischendifferenzierung in Zeit, Raum und Nahrung senkt Konkurrenz und ermoeglicht Koexistenz. Energie fliesst einseitig mit nur etwa 10 Prozent je Ebene nach $6CO_2 + 6H_2O \to C_6H_{12}O_6 + 6O_2$ in Rueckwaertsrichtung bei Atmung, Materie kreist ueber Destruenten. Wer Energiefluss und Stoffkreislauf mit weil und deshalb trennt, beurteilt jedes Nahrungsnetz korrekt.
 
 ### Fachbegriff & Definition
 
@@ -36,7 +36,7 @@ Die Kausalkette lautet: **Teilen, Begrenzen, Weitergeben**. Erstens teilen Arten
 
 Klausur-Satz: `Energie fliesst in einem Oekosystem einseitig und nimmt pro Trophieebene ab, waehrend die Materie im Stoffkreislauf zirkuliert.`
 
-## Schritt 2 — entdecken
+## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
 ### Hook / Phaenomen
@@ -57,38 +57,27 @@ Die Begriffe bilden das Oekosystem: **Produzenten, Konsumenten und Destruenten**
 
 Klausur-Satz: `Produzenten, Konsumenten und Destruenten bilden die drei Stufen, ueber die Energie und Materie im Oekosystem weitergegeben werden.`
 
-## Schritt 3 — entdecken
+## Schritt 3 — entdecken: Kernkonzept & Wirkungsmodell
 TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
 ### Hook / Phaenomen
 
-Darwinfinken zeigen Nischendifferenzierung im Schnabel, die Biomassepyramide zeigt Energieverlust in Zahlen: $100$ zu $10$ zu $1$. Zwei Bilder, ein Prinzip — Teilung spart Konkurrenz, Fluss kostet Energie. Wie liest man beide Diagramme in einer Klausurantwort zusammen?
+Warum findet man im See nach Duengereintrag erst Algenbluete, dann Fischsterben, obwohl Duenger doch Wachstum foerdert? Das Wasser kippt ueber eine Kausalkette. Wie wandert $O_2$ aus dem System, und warum bleibt von $1000\,\mathrm{kg}$ Algen nur etwa $10\,\mathrm{kg}$ Fisch uebrig?
 
-### Fachbegriff & Definition
+### Spiel-Aufgabe
 
-Die **Doppelregel der Oekologie** lautet: **Konkurrenz meiden durch Differenzierung, Energie verlieren durch Fluss**. Ueberlappende Nischen treiben Verdrängung oder Anpassung; geteilte Nischen (Morphologie, Zeit, Nahrung) tragen Koexistenz. Exponentielles Wachstum ($J$) gilt nur ohne Grenze; logistisches ($S$) endet an $K$. Energie fliesst einseitig und nimmt pro Trophieebene auf etwa ein Zehntel ab, waehrend Kohlenstoff und Naehrstoffe ueber Destruenten kreisen — Biomasse nimmt nach oben ab, weil nur $10\,\%$ weitergegeben werden.
+Spiel-Aufgabe im Kopf-Labor: Denke das Gewaesser als Osmose-Landschaft mit Stroemen und Pfeilen. Stelle den Naehrstoff-Regler von niedrig auf hoch und verfolge die Pfeile: Naehrstoffe $\to$ Algen $\to$ Detritus $\to$ $O_2$-Zehrung. Notiere $O_2$-Kurve, Biomassepyramide und Wasserpfeile bei $\Psi_{aussen} = -1{,}2\,\mathrm{MPa}$ im Salzteich gegen $0\,\mathrm{MPa}$ im Suesswasser. Erklaere in einem Satz mit weil, wo der Engpass liegt.
 
-### Wirkungsgefuege / Modell
+### Aha-Moment & Gesetz
 
-Denke in Kausalkette: **Ueberlappen, Teilen, Schichten**. Erstens Ueberlappung feststellen — gleiche Nahrung zur gleichen Zeit am gleichen Ort heisst Konkurrenz. Zweitens Teilung pruefen — Schnabel, Zeit oder Hoehe getrennt heisst Koexistenz. Drittens Pyramide bauen — Produzent $100\,\%$, Konsument $1$ ca. $10\,\%$, Konsument $2$ ca. $1\,\%$, Destruenten schliessen den Kreis. Da nur ein Zehntel weiterfliesst, trägt oben wenig Biomasse — die Pyramide ist kein Zufall, sondern Thermodynamik.
+Aha-Moment und Gesetz: Die Kausalkette lautet Eintrag, Bluete, Zehrung. Nur etwa $10\,\%$ der Energie erreichen die naechste Trophieebene, der Rest geht als Waerme und Atmung $C_6H_{12}O_6 + 6O_2 \to 6CO_2 + 6H_2O + Energie$ verloren. Nach Absterben der Algen atmen Destruenten den $O_2$ weg, Fische ersticken trotz Naehrstoffplus. Pyramiden lesen heisst Fluesse lesen: Breite unten bedeutet Verlust nach oben.
 
 ```diagram
-   Nahrungsnetz                    Energiepyramide
-                                    (pro Trophieebene ca. 10 %)
-
-   Kraeuter --> Raupe --> Vogel     Konsument 2  [##]      ~ 1 %
-   (Produzent)  (K1)      (K2)      Konsument 1  [#####]   ~ 10 %
-        |                            Produzent    [########] ~ 100 %
-        +--> Destruenten (Bakterien, Pilze)
-             --> anorganische Stoffe --> zurueck zum Produzenten
-
-   Population:  J-Kurve (exponentiell)   S-Kurve (logistisch)
-        ^ N                                  ^ N
-        |            .'                      |      ___ K (Kapazitaet)
-        |         .'                          |    .'
-        |      .'                             |  .'
-        +--------------> t                    +--------------> t
-   Merksatz: Energie fliesst, Materie kreist.
+    Naehrstoffe hoch --> Algenbluete --> Detritus hoch
+    Destruenten-Atmung: O2 sinkt, CO2 steigt, Fische sterben
+    Energiepyramide (kJ): Produzenten 10000 | Herbivoren 1000 | Karnivoren 100
+    Regel: nur ca. 10 % pro Ebene, Rest Atmung und Waerme
+    Wasserpfeile: Salz aussen (Psi negativ) zieht Wasser aus Algenzellen.
 ```
 
 Klausur-Satz: `Da auf jeder Trophieebene nur etwa zehn Prozent der Energie weitergegeben werden, nimmt die Biomasse nach oben hin ab.`
@@ -99,24 +88,24 @@ Klausur-Satz: `Da auf jeder Trophieebene nur etwa zehn Prozent der Energie weite
 
 **Bezug zum Konzept**: `Die Darwinfinken zeigen, wie die Differenzierung der Nahrungsnische die zwischenartliche Konkurrenz senkt und die Koexistenz ermoeglicht.`
 
-## Schritt 4 — ausprobieren
+## Schritt 4 — ausprobieren: Interaktive Praxis & Osmose-Labor
 
 BEISPIEL (geleitete Aufgabe mit Werkzeug):
 
-[Werkzeug: formula]
+[Werkzeug: osmose-lab]
 
-AUFGABE (beschreiben und erklaeren, AFB II): In einem Wald leben zwei Meisenarten. Art A sucht am fruehen Morgen kleine Insekten in den aeusseren Zweigen der Baumkrone, Art B sucht am Nachmittag groessere Insekten in den Rindenritzen des Stammes. Beschreiben Sie die Unterschiede in der Nutzung der Ressourcen und erklaeren Sie, warum beide Arten im selben Wald dauerhaft nebeneinander existieren koennen.
+AUFGABE (Spiel-Auftrag, AFB II, 3 Stufen): Stufe 1 Schaetzen: Aus $1000\,\mathrm{kg}$ Algen werden nur etwa $10\,\mathrm{kg}$ Fisch. Erklaere den Schwund. Stufe 2 Trennen: Zwei Vogelarten fressen gleiche Samen, koexistieren aber durch Tag- und Nachtaktivitaet. Benenne das Prinzip. Stufe 3 Sichern: Formuliere zwei Saetze mit weil und deshalb zur Konkurrenz. Stelle im Osmose-Labor den Naehrstoff-Regler von niedrig auf hoch und den Aussen-Psi-Regler auf $-1{,}2\,\mathrm{MPa}$ gegen $0\,\mathrm{MPa}$ und verfolge Biomassepyramide und Wasserpfeile.
 
 HILFE:
-1. Schritt 1: Beschreibe die Unterschiede strukturiert entlang der drei Achsen (Operator beschreiben): Zeit (Morgen gegen Nachmittag), Raum (Krone gegen Stamm), Nahrung (klein gegen gross).
-2. Schritt 2: Benenne das oekologische Prinzip: Ueberlappung der Nischen fuehrt zu Konkurrenz.
-3. Schritt 3: Schliesse den Kausalzusammenhang: Da sich die Nischen in drei Achsen unterscheiden, sinkt die Konkurrenz, daher ist Koexistenz moeglich.
+1. Schritt 1: Nur ca. $10\,\%$ pro Ebene weiter, Rest Atmung $C_6H_{12}O_6 + 6O_2 \to 6CO_2 + 6H_2O$.
+2. Schritt 2: Zeitliche Nischentrennung senkt Konkurrenz.
+3. Schritt 3: Nischendifferenzierung in Zeit, Raum und Nahrung nennen.
 
-MUSTERLOESUNG: Beide Arten unterscheiden sich in drei Dimensionen ihrer Ressourcennutzung: zeitlich (Art A am Morgen, Art B am Nachmittag), raeumlich (Art A in der Baumkrone, Art B am Stamm) und in der Nahrung (Art A kleine, Art B groessere Insekten). Diese Unterschiede bilden eine Nischendifferenzierung. Da zwei Arten nur dann in Konkurrenz geraten, wenn sich ihre oekologischen Nischen ueberlappen, verringert die Differenzierung auf drei Achsen die zwischenartliche Konkurrenz erheblich. Weil jede Art auf andere Ressourcen zugreift, koennen beide Populationen dauerhaft im selben Wald koexistieren, ohne dass eine die andere verdraengt.
+MUSTERLOESUNG: Auf jeder Trophieebene werden nur etwa $10\,\%$ der Energie weitergegeben, weil der Grossteil durch Atmung $C_6H_{12}O_6 + 6O_2 \to 6CO_2 + 6H_2O + Energie$ und Waerme verloren geht. Zwei Arten mit gleicher Nahrung koexistieren, wenn sie sich in Zeit, Raum oder Nahrung unterscheiden, weil die Nischendifferenzierung die zwischenartliche Konkurrenz senkt und deshalb beide Populationen stabil bleiben.
 
 Klausur-Satz: `Die Nischendifferenzierung in Zeit, Raum und Nahrung verringert die zwischenartliche Konkurrenz und ermoeglicht so die Koexistenz beider Arten.`
 
-## Schritt 5 — ausprobieren
+## Schritt 5 — ausprobieren: Verfahrensvergleich & Abgrenzung
 
 VERGLEICH (Wahl des Verfahrens, A gegen B):
 
@@ -132,7 +121,7 @@ ANTWORT: A erfordert Verfahren (i): Auf jeder Trophieebene werden nur etwa zehn 
 
 Klausur-Satz: `Die Abnahme der Biomasse nach oben erklaert sich aus dem einseitigen Energiefluss, waehrend die Rueckfuehrung anorganischer Stoffe durch Destruenten den Stoffkreislauf bildet.`
 
-## Schritt 6 — check
+## Schritt 6 — check: Verständnisprüfung
 
 CHECK (drei Fragen mit Antworten):
 
@@ -153,14 +142,14 @@ Klausur-Satz: `Energie wird bei jedem Transfer teilweise als Waerme abgegeben un
    Korrektur: Die oekologische Nische beschreibt die funktionellen Ansprueche einer Art, waehrend das Habitat nur ihren Aufenthaltsort angibt.
    Korrektur-Satz: `Die oekologische Nische beschreibt die funktionellen Ansprueche einer Art, waehrend das Habitat nur ihren Aufenthaltsort angibt.`
 
-## Schritt 7 — szenario
+## Schritt 7 — szenario: Klausurtransfer & Rubric
 
 ROLLE: Du bist Mitglied einer Naturschutz-AG und sollst auf einer Gemeinderatssitzung eine geplante Massnahme bewerten.
 SITUATION: In einem Waldgebiet soll der Fuchs intensiv bejagt werden, weil er angeblich die Population der Hasen bedroht. Ein Teil der Anwesenden erwartet, dass die Hasen daraufhin stark zunehmen.
 AUFGABE (AFB II/III): Beurteile den Eingriff in einer zusammenhaengenden Stellungnahme (ca. 150 Woerter), indem du den Energiefluss und die Rolle der Trophieebenen heranziehst und zu einem kriteriengeleiteten Urteil kommst.
 RUBRIC (30 XP): Einordnung des Fuchses als Konsument einer hoeheren Trophieebene (5 XP) | Erklaerung der begrenzten Energieweitergabe und der Kapazitaetsgrenze der Populationen (10 XP) | Analyse moeglicher Folgen des Eingriffs — Verschiebung im Nahrungsnetz, Konkurrenz-, Raeuber-Beute-Effekte (10 XP) | Kriteriengeleitetes Urteil unter Abwaegung von Sachurteil und naturschutzfachlichen Normen (5 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY (Kernbotschaft in einem Kasten):
 

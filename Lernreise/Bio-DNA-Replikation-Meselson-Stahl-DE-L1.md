@@ -15,7 +15,7 @@ version: Lesson-v3
 
 <!-- Lesson v3 9-Schritt-Architektur: Schritt 1 bis 8 feste Struktur; Fehlvorstellung zwischen Schritt 6 und 7 (Parser ueberspringt, zaehlt nicht); interaktives [Werkzeug: <id>]; Gating: check/szenario nicht bestanden = Weiter deaktiviert; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
-## Schritt 1 — entdecken
+## Schritt 1 — entdecken: Ziele & Phänomen-Einstieg
 ZIELE (drei messbare Ziele dieser Lektion):
 
 1. Du kannst die Replikation als $DNA \to 2 \times DNA$ mit den Phasen Entwindung, Priming, Elongation und Korrektur beschreiben.
@@ -24,7 +24,7 @@ ZIELE (drei messbare Ziele dieser Lektion):
 
 ### Hook / Phaenomen
 
-Als Meselson und Stahl 1958 ihre Zentrifuge stoppten, sahen sie nach einer Nacht in $^{14}N$ nur eine einzige mittlere Bande — Stahl soll gerufen haben, das Ergebnis sei so klar wie ein Sonnenaufgang. Eine Ultrazentrifuge entschied an einem Abend den Streit dreier Modelle, ohne dass jemand je ein Enzym arbeiten sah. Wie beweist ein Bandenmuster einen Mechanismus?
+Als Meselson und Stahl 1958 ihre Zentrifuge stoppten, sahen sie nach einer Nacht in $^{14}N$ nur eine einzige mittlere Bande — Stahl soll gerufen haben, das Ergebnis sei so klar wie ein Sonnenaufgang. Eine Ultrazentrifuge entschied an einem Abend den Streit dreier Modelle, ohne dass jemand je ein Enzym arbeiten sah. Wie beweist ein Bandenmuster einen Mechanismus? Im Meselson-Stahl-Experiment trennt die Zentrifuge schwere und leichte DNA-Baender wie ein Schloss die Schluessel: Nach einer Runde in leichtem Stickstoff liegt das Hybridband mittig, weil jede Doppelhelix einen alten und einen neuen Strang traegt. Enzyme oeffnen die Helix, Polymerasen bauen passgenau nach Basenpaarung auf, Ligasen schliessen die Luecken. Erst wer Vorlage, Enzym und Produkt als Kausalkette mit weil und deshalb verbindet, beweist die semikonservative Replikation vollstaendig.
 
 ### Fachbegriff & Definition
 
@@ -36,7 +36,7 @@ Die Kausalkette lautet: **Oeffnen, Starten, Bauen, Verbinden**. Helikase entwind
 
 Klausur-Satz: `Jede Tochter-DNA behaelt einen Elternstrang und erhaelt einen neuen Strang.`
 
-## Schritt 2 — entdecken
+## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
 ### Hook / Phaenomen
@@ -57,30 +57,28 @@ Die Begriffe bilden die Gabel: **Oeffnen** (Helikase), **Starten** (Primer), **B
 
 Klausur-Satz: `Die Polymerase kennt nur eine Richtung, daher arbeitet ein Strang stueckweise.`
 
-## Schritt 3 — entdecken
+## Schritt 3 — entdecken: Kernkonzept & Wirkungsmodell
 TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
 ### Hook / Phaenomen
 
-Zwei $^{15}N$-Helices starten in $^{14}N$-Medium: Nach einer Runde duerfte konservativ schwer plus leicht zeigen — doch es erscheint nur Hybrid. Nach zwei Runden duerfte dispersiv nur Hybrid zeigen — doch halb leicht erscheint. Zwei Bandenmuster widerlegen zwei Modelle; uebrig bleibt semikonservativ.
+Wie kann man einen Kopiermechanismus beweisen, ohne ein einziges Enzym zu sehen? Meselson und Stahl liessen Bakterien schweres $^{15}N$ einbauen und dann in leichtem $^{14}N$ wachsen. Warum zeigt eine Bande nach einer Teilung und zwei Banden nach zwei Teilungen semikonservative Replikation?
 
-### Fachbegriff & Definition
+### Spiel-Aufgabe
 
-Der **Bandenbeweis** lautet: Nach Trennung traegt jeder $^{15}N$-Elternstrang einen neuen $^{14}N$-Strang, also $2 \times (^{15}N$-$^{14}N)$ als eine mittlere Bande — konservativ haette $50\,\%$ schwer plus $50\,\%$ leicht verlangt und ist widerlegt. Nach zweiter Runde liefern die zwei $^{15}N$-Straenge wieder Hybrid und die zwei $^{14}N$-Straenge je $^{14}N$-$^{14}N$, also $50\,\%$ hybrid und $50\,\%$ leicht — dispersiv waere bei Hybrid geblieben und ist widerlegt. Bandenmuster beweisen den Mechanismus, ohne ein Enzym zu sehen.
+Spiel-Aufgabe im Kopf-Labor: Oeffne das Enzym-Schloss fuer die DNA-Polymerase. Ziehe den Temperatur-Schieberegler von $20^\circ\mathrm{C}$ zum Optimum $37^\circ\mathrm{C}$ und beobachte die Kopierpfeile $5^\prime \to 3^\prime$ sowie die Fehlerrate. Lege $^{15}N$- und $^{14}N$-Baende uebereinander und notiere Dichte nach Generation $0$, $1$, $2$. Erklaere in einem Satz mit weil, warum dispersiv ausscheidet.
 
-### Wirkungsgefuege / Modell
+### Aha-Moment & Gesetz
 
-Denke in Kausalkette: **Markieren, Teilen, Zaehlen**. Erstens Eltern mit $^{15}N$ markieren (schwer, unten). Zweitens in $^{14}N$ teilen und Straenge ergaenzen ($1\,alt + 1\,neu$). Drittens Banden zaehlen: eine Bande nach eins, zwei Banden nach zwei beweist semikonservativ. Die Basenpaarung sichert die Treue: $A{=}T$ mit zwei, $G{\equiv}C$ mit drei Wasserstoffbruecken — komplementaer paaren heisst fehlerarm kopieren.
+Aha-Moment und Gesetz: Die Kausalkette lautet Vorlage, Paarung, Halb-Bewahrung. Jeder Elternstrang dient als Vorlage, Basen paaren komplementaer $A$-$T$ und $G$-$C$, die Polymerase knuepft $5^\prime \to 3^\prime$. Nach einer Runde traegt jede Doppelhelix einen alten und einen neuen Strang (Hybridbande), nach zwei Runden kommen zusaetzlich reine $^{14}N$-Helices hinzu. Es gilt Vorlage plus Komplement gleich Doppelhelix; $v_{max}$ der Polymerase haengt vom intakten Zentrum ab, Denaturierung stoppt die Kopie.
 
 ```diagram
-    Eltern:  15N-15N (schwer, unten)
-    nach 1x: 15N-14N + 15N-14N (hybrid, Mitte)
-             -> konservativ widerlegt (haette schwer + leicht verlangt)
-    nach 2x: 2x hybrid + 2x 14N-14N (Mitte + oben)
-             -> dispersiv widerlegt (waere bei hybrid geblieben)
-    Leitstrang:  ----5'->3'----  kontinuierlich
-    Folgestrang: <-3' 5'--  Fragmente (1000-2000) + Ligase
-    A=T (2 H-Bindungen), G=C (3 H-Bindungen)
+    G0: 15N/15N schwer ............ eine schwere Bande unten
+    G1: 15N/14N hybrid ............ eine mittlere Bande
+    G2: 15N/14N + 14N/14N ......... zwei Banden (mittel + leicht)
+    konservativ waere: schwer + leicht schon in G1 (falsch)
+    dispersiv waere: immer nur eine mittlere Bande (falsch)
+    Pfeile: Helikase oeffnet, Polymerase 5'-->3' kopiert, Ligase schliesst.
 ```
 
 Klausur-Satz: `Bandemuster beweisen den Mechanismus ohne ein Enzym zu sehen.`
@@ -91,24 +89,24 @@ Klausur-Satz: `Bandemuster beweisen den Mechanismus ohne ein Enzym zu sehen.`
 
 **Bezug zum Konzept**: `Eine Ultrazentrifuge entschied den Streit der drei Modelle an einem Abend.`
 
-## Schritt 4 — ausprobieren
+## Schritt 4 — ausprobieren: Interaktive Praxis & Enzym-Labor
 
 BEISPIEL (geleitete Aufgabe mit Werkzeug):
 
-[Werkzeug: formula]
+[Werkzeug: enzyme-lock]
 
-AUFGABE (erklaeren, AFB II): Erklaeren Sie, warum nach einer Replikationsrunde im $^{14}N$-Medium nur eine Hybridbande auftritt, und sagen Sie das Muster nach zwei Runden voraus.
+AUFGABE (Spiel-Auftrag, AFB II, 3 Stufen): Stufe 1 Tippen: Nach einer Generation in $^{14}N$ erscheint eine mittlere Bande. Rate den Mechanismus. Stufe 2 Pruefen: Nach zwei Generationen erscheinen mittel plus leicht. Schliesse konservativ und dispersiv aus. Stufe 3 Sichern: Begruende semikonservativ in zwei Saetzen mit weil. Stelle im Enzym-Labor den Runden-Regler von $^{15}N$ auf $^{14}N$ und die Zentrifugen-Drehzahl schrittweise hoch und verfolge die Bandenlage nach jeder Runde.
 
 HILFE:
-1. Schritt 1: Starte mit $2 \times (^{15}N$-$^{15}N)$.
-2. Schritt 2: Trenne Straenge und ergaenze jeweils $^{14}N$ nach $1\,alt + 1\,neu$.
-3. Schritt 3: Wiederhole die Teilung und zaehle $hybrid$ gegen $leicht$.
+1. Schritt 1: Hybrid $^{15}N$/$^{14}N$ bedeutet je ein alter und ein neuer Strang.
+2. Schritt 2: Konservativ gaebe schon in G1 schwer plus leicht.
+3. Schritt 3: Polymerase baut $5^\prime \to 3^\prime$ komplementaer $A$-$T$, $G$-$C$.
 
-MUSTERLOESUNG: Nach Trennung traegt jeder $^{15}N$-Elternstrang einen neuen $^{14}N$-Strang, also $2 \times (^{15}N$-$^{14}N)$ als eine mittlere Bande. Nach zweiter Runde liefern die zwei $^{15}N$-Straenge wieder Hybrid und die zwei $^{14}N$-Straenge je $^{14}N$-$^{14}N$, also $50\,\%$ hybrid und $50\,\%$ leicht. Konservativ haette $50\,\%$ schwer plus $50\,\%$ leicht nach Runde eins verlangt und ist widerlegt.
+MUSTERLOESUNG: Eine Bande nach einer Generation in $^{14}N$ zeigt Hybridhelices $^{15}N$/$^{14}N$, weil jeder Elternstrang als Vorlage dient und komplementaer ergaenzt wird. Zwei Banden nach zwei Generationen (hybrid plus leicht $^{14}N$/$^{14}N$) beweisen semikonservative Replikation, weil konservativ schon in G1 zwei Banden und dispersiv dauerhaft nur eine mittlere Bande liefern wuerde. Daher schliesst das Muster beide Alternativen aus.
 
 Klausur-Satz: `Eine Bande nach eins, zwei Banden nach zwei beweist semikonservativ.`
 
-## Schritt 5 — ausprobieren
+## Schritt 5 — ausprobieren: Verfahrensvergleich & Abgrenzung
 
 VERGLEICH (Wahl des Verfahrens, A gegen B):
 
@@ -123,7 +121,7 @@ ANTWORT: A erfordert Verfahren (i): Primer liefert $3'$-OH fuer $5' \to 3'$, Lig
 
 Klausur-Satz: `Enzyme erklaeren den Strang, Banden entscheiden das Modell.`
 
-## Schritt 6 — check
+## Schritt 6 — check: Verständnisprüfung
 
 CHECK (drei Fragen mit Antworten):
 
@@ -144,14 +142,14 @@ Klausur-Satz: `Richtung plus Bande ergeben den vollen Beweis.`
    Korrektur: Antiparallelitaet erzwingt $5' \to 3'$; der Folgestrang entsteht aus $Okazaki$-Fragmenten rueckwaerts.
    Korrektur-Satz: `Antiparallel plus Einbahn-Enzym erzwingt einen diskontinuierlichen Strang.`
 
-## Schritt 7 — szenario
+## Schritt 7 — szenario: Klausurtransfer & Rubric
 
 ROLLE: Du bist Tutor im Biokurs.
 SITUATION: Ein Mitschueler behauptet, Meselson-Stahl habe konservative Replikation bewiesen, weil nach Runde zwei leichte DNA auftrete.
 AUFGABE (vergleichen, AFB III): Widerlegen Sie die Deutung in einer zusammenhaengenden Darstellung (ca. 150 Woerter) mit Bandenprognose aller drei Modelle und Enzymbegruendung.
 RUBRIC (30 XP): Banden Runde eins und zwei korrekt (10 XP) | Alle drei Modelle verglichen (10 XP) | Leit- und Folgestrang mit $5' \to 3'$ genannt (5 XP) | Geschlossene Darstellung (5 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY (Kernbotschaft in einem Kasten):
 

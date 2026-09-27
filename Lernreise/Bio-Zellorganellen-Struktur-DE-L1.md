@@ -15,7 +15,7 @@ version: Lesson-v3
 
 <!-- Lesson v3 9-Schritt-Architektur: Schritt 1 bis 8 feste Struktur; Fehlvorstellung zwischen Schritt 6 und 7 (Parser ueberspringt, zaehlt nicht); interaktives [Werkzeug: <id>]; Gating: check/szenario nicht bestanden = Weiter deaktiviert; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
-## Schritt 1 — entdecken
+## Schritt 1 — entdecken: Ziele & Phänomen-Einstieg
 ZIELE (drei messbare Ziele dieser Lektion):
 
 1. Du kannst die wichtigen Organellen — Zellkern, Mitochondrium, Chloroplast, endoplasmatisches Retikulum, Golgi-Apparat, Vakuole, Ribosom — benennen und jedem eine Struktur-Funktion-Aussage zuordnen.
@@ -24,7 +24,7 @@ ZIELE (drei messbare Ziele dieser Lektion):
 
 ### Hook / Phaenomen
 
-Margulis vertrat in den 1960er-Jahren eine kuehne Idee — Mitochondrien und Chloroplasten seien aufgenommene Bakterien — und Fachzeitschriften lehnten sie zunaechst ab. Heute gilt die Theorie als gut belegt: Doppelmembran, ringfoermige $DNA$, bakterienaehnliche Ribosomen. Wie verraten drei Merkmale eine Milliarden Jahre alte Aufnahme, die niemand beobachtete?
+Margulis vertrat in den 1960er-Jahren eine kuehne Idee — Mitochondrien und Chloroplasten seien aufgenommene Bakterien — und Fachzeitschriften lehnten sie zunaechst ab. Heute gilt die Theorie als gut belegt: Doppelmembran, ringfoermige $DNA$, bakterienaehnliche Ribosomen. Wie verraten drei Merkmale eine Milliarden Jahre alte Aufnahme, die niemand beobachtete? Die Salzgurke und die Zwiebelzelle zeigen dieselbe Membranlogik: Aussen hypertonisch mit niedrigem Psi zieht Wasser aus Vakuole und Zytoplasma, der Turgor sinkt und der Protoplast loest sich. Mitochondrien und Chloroplasten tragen Doppelmembran plus eigene DNA als Beleg der Endosymbiose, ihre Faltung liefert Flaeche fuer $ATP \to ADP + P_i$ in Rueckwaertsrichtung. Wer Struktur zu Funktion und Merkmal zu Herkunft mit weil verbindet, beherrscht Zelle und Theorie.
 
 ### Fachbegriff & Definition
 
@@ -36,7 +36,7 @@ Die Kausalkette lautet: **Struktur, Funktion, Herkunft**. Erstens Struktur zu Fu
 
 Klausur-Satz: `Mitochondrien und Chloroplasten besitzen eine Doppelmembran, eigene ringfoermige DNA und eigene Ribosomen, was als Beleg fuer die Endosymbiontentheorie gilt.`
 
-## Schritt 2 — entdecken
+## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
 ### Hook / Phaenomen
@@ -57,40 +57,28 @@ Die Begriffe bilden Fabrik und Geschichte: Kern, Ribosomen, $ER$, Golgi und Vaku
 
 Klausur-Satz: `Aus der Struktur folgt die Funktion: Die gefaltete Innenmembran der Mitochondrien vergroessert die Flaeche fuer die Zellatmung.`
 
-## Schritt 3 — entdecken
+## Schritt 3 — entdecken: Kernkonzept & Wirkungsmodell
 TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
 ### Hook / Phaenomen
 
-Pflanzenzelle unter dem Mikroskop: Zellwand, Membran, Kern, grüne Chloroplasten, grosse Vakuole — und unsichtbar die Geschichte einer Aufnahme vor Jahrmilliarden. Drei Belege genuegen dem Pruefer: Huelle, Erbgut, Teilung. Wie baut man daraus ein Urteil auf AFB III?
+Warum quillt eine rote Zwiebelzelle in destilliertem Wasser prall auf, platzt aber nicht, waehrend eine tierische Zelle ohne Wand platzen wuerde? Der Unterschied liegt in Wand, Vakuole und Membranflaeche. Welche Organelle speichert Wasser und erzeugt Turgor, und welche Membranfaltung liefert Flaeche fuer $ATP$-Bildung?
 
-### Fachbegriff & Definition
+### Spiel-Aufgabe
 
-Der **Dreifachbeleg der Endosymbiose** lautet: **Doppelmembran** (Aufnahmehuelle), **eigene ringfoermige $DNA$** (eigener Bauplan) und **eigene bakterienaehnliche Ribosomen** (eigene Proteinproduktion) plus Teilung wie Bakterien. Mitochondrien und Chloroplasten sind von einer Doppelmembran umgeben und enthalten eigene $DNA$ sowie Ribosomen — was auf einen prokaryotischen Ursprung hinweist. Das Urteil auf AFB III wägt ab: Die Belege stuetzen die Aufnahme stark, die Integration (die meisten Gene wanderten in den Kern) erklaert die Abhaengigkeit — Symbionten, keine Gaeste mehr.
+Spiel-Aufgabe im Kopf-Labor: Stelle den Aussenregler auf $\Psi_{aussen} = -1{,}2\,\mathrm{MPa}$ (Salz) und danach auf $\Psi_{aussen} = 0\,\mathrm{MPa}$ (Wasser). Zeichne die Wasserpfeile ueber das Plasmalemma in die Vakuole, notiere Zellform, Vakuolengroesse und Turgor. Vergleiche Mitochondrium mit eingestuelpter Innenmembran gegen Chloroplast mit Thylakoiden und erklaere in einem Satz mit weil, warum Faltung Leistung bedeutet.
 
-### Wirkungsgefuege / Modell
+### Aha-Moment & Gesetz
 
-Denke in Kausalkette: **Merkmal, Vergleich, Urteil**. Erstens Merkmale nennen — Huelle, $DNA$, Ribosomen, Teilung. Zweitens mit Bakterien vergleichen — Uebereinstimmung statt Zufall. Drittens urteilen: Aufnahme statt Entstehung im Haus, Symbiose statt Verdauung. Die Fabrikkarte ordnet den Rest: Kern steuert, $ER$ und Golgi verarbeiten, Vakuole haelt Turgor, Kraftwerke liefern.
+Aha-Moment und Gesetz: Die Kausalkette lautet Struktur, Flaeche, Leistung. Zellwand aus Cellulose faengt Druck ab, Zentralvakuole speichert $H_2O$ und baut Turgor auf. Mitochondrien und Chloroplasten tragen Doppelmembran plus eigene $DNA$ und Ribosomen; ihre Innenmembranen sind stark gefaltet, sodass mehr Atmungskette und mehr Photosysteme Platz finden. Es gilt Flaeche mal Dichte gleich Umsatz, und $ATP \to ADP + P_i$ laeuft dort, wo die Maschinen stehen.
 
 ```diagram
-   Pflanzenzelle (schematisch)
-   +--------------------------------------------------+
-   |  Zellwand (Cellulose)                            |
-   |  +--------------------------------------------+  |
-   |  |  Zellmembran                               |  |
-   |  |   ( Zellkern  <-- DNA, Steuerung )         |  |
-   |  |   ( Mitochondrium ==[Doppelmembran] )      |  |
-   |  |   ( Chloroplast   ==[Doppelmembran] )      |  |
-   |  |   [ ER ] ---> [ Golgi ] ---> Vesikel       |  |
-   |  |   ( Zentralvakuole  <-- Turgor )           |  |
-   |  |   . . Ribosomen . .                        |  |
-   |  +--------------------------------------------+  |
-   +--------------------------------------------------+
-
-   Endosymbiose: grosser Wirt + aufgenommener Prokaryot
-   ==> Mitochondrium (aus Aerobier, liefert ATP)
-   ==> Chloroplast   (aus Cyanobakterium, liefert Zucker)
-   Belege: Doppelmembran + eigene DNA + eigene Ribosomen + Teilung
+    Pflanzenzelle in Salz (Psi = -1,2 MPa): Wasserpfeile raus
+    Vakuole klein | Protoplast geloest | Plasmolyse
+    Pflanzenzelle in Wasser (Psi = 0 MPa): Wasserpfeile rein
+    Vakuole gross | Wand gespannt | Turgor hoch
+    Mitochondrium: Aussenmembran glatt, Innenmembran gefaltet (Cristae)
+    Chloroplast: Doppelmembran + Thylakoidstapel (Grana) im Stroma.
 ```
 
 Klausur-Satz: `Mitochondrien und Chloroplasten sind von einer Doppelmembran umgeben und enthalten eigene DNA sowie Ribosomen, was auf einen prokaryotischen Ursprung hinweist.`
@@ -101,24 +89,24 @@ Klausur-Satz: `Mitochondrien und Chloroplasten sind von einer Doppelmembran umge
 
 **Bezug zum Konzept**: `Doppelmembran, eigene ringfoermige DNA und eigene Ribosomen sind die Belege, die den endosymbiontischen Ursprung von Mitochondrien und Chloroplasten stuetzen.`
 
-## Schritt 4 — ausprobieren
+## Schritt 4 — ausprobieren: Interaktive Praxis & Osmose-Labor
 
 BEISPIEL (geleitete Aufgabe mit Werkzeug):
 
-[Werkzeug: lego]
+[Werkzeug: osmose-lab]
 
-AUFGABE (beschreiben und erklaeren, AFB II): Eine schematische Zeichnung einer pflanzlichen Zelle zeigt ein laengliches, von einer Doppelmembran umschlossenes Organell mit stark gefalteter innerer Membran. Benennen Sie das Organell, beschreiben Sie seinen Bau und erklaeren Sie, warum seine starke Membranfaltung fuer die Zelle vorteilhaft ist.
+AUFGABE (Spiel-Auftrag, AFB II, 3 Stufen): Stufe 1 Sortieren: Ordne Zellwand, Vakuole, Mitochondrium und Chloroplast den Merkmalen Turgor, Doppelmembran und Flaeche zu. Stufe 2 Zeichnen: Skizziere Wasserpfeile bei $\Psi_{aussen} = 0\,\mathrm{MPa}$ in die Vakuole. Stufe 3 Sichern: Begruende in zwei Saetzen mit weil, warum Faltung Leistung steigert.
 
 HILFE:
-1. Schritt 1: Benenne das Organell anhand der Merkmale Doppelmembran plus gefaltete Innenmembran (Operator nennen und beschreiben).
-2. Schritt 2: Beschreibe den Bau strukturiert: aeussere Membran, innere Membran mit Einstuelpungen, Innenraum (Matrix).
-3. Schritt 3: Stelle den Kausalzusammenhang her (Struktur zu Funktion): Mehr Membranflaeche bedeutet mehr Platz fuer die Reaktionen der Zellatmung, also mehr $ATP$-Bildung.
+1. Schritt 1: Wand faengt Druck, Vakuole speichert $H_2O$, Innenmembran liefert Flaeche.
+2. Schritt 2: Pfeile von $\Psi_{hoch}$ nach $\Psi_{niedrig}$ zeichnen.
+3. Schritt 3: Mehr Membran bedeutet mehr Atmungskette und mehr $ATP$ pro Zeit.
 
-MUSTERLOESUNG: Es handelt sich um ein Mitochondrium. Das Organell ist von einer Doppelmembran umgeben, wobei die innere Membran stark gefaltet ist und so genannte Cristae bildet; der von ihr umschlossene Raum heisst Matrix. Die Faltung vergroessert die Membranflaeche erheblich. Da die Enzyme der Atmungskette in der inneren Membran lokalisiert sind, bietet die vergroesserte Flaeche mehr Raum fuer die Reaktionen der Zellatmung; dadurch kann die Zelle pro Zeiteinheit mehr $ATP$ bereitstellen. Die Struktur erklaert also unmittelbar die Funktion: Eine grosse innere Oberflaeche ermoeglicht eine hohe Energieausbeute.
+MUSTERLOESUNG: In destilliertem Wasser stroemt $H_2O$ osmotisch in die Zelle, die Vakuole waechst und die Wand spannt sich (Turgor), weil das Aussenmedium hypotonisch ist. Mitochondrien und Chloroplasten besitzen Doppelmembran sowie eigene $DNA$ und Ribosomen; die stark gefaltete Innenmembran vergroessert die Flaeche fuer die Atmungskette, sodass pro Zeit mehr $ADP + P_i \to ATP$ umgesetzt wird. Daher bedeutet Faltung mehr Maschinen und mehr Leistung.
 
 Klausur-Satz: `Die stark gefaltete innere Membran des Mitochondriums vergroessert die Oberflaeche fuer die Atmungskette und steigert dadurch die ATP-Bildung.`
 
-## Schritt 5 — ausprobieren
+## Schritt 5 — ausprobieren: Verfahrensvergleich & Abgrenzung
 
 VERGLEICH (Wahl des Verfahrens, A gegen B):
 
@@ -134,7 +122,7 @@ ANTWORT: A erfordert Verfahren (i): Die gestapelten Membranen (Thylakoide) vergr
 
 Klausur-Satz: `Die gestapelten Thylakoidmembranen dienen der Fotosynthese, waehrend Doppelmembran und eigene DNA auf einen prokaryotischen Ursprung des Chloroplasten hinweisen.`
 
-## Schritt 6 — check
+## Schritt 6 — check: Verständnisprüfung
 
 CHECK (drei Fragen mit Antworten):
 
@@ -155,14 +143,14 @@ Klausur-Satz: `Doppelmembran, eigene DNA und eigene Ribosomen sind die zentralen
    Korrektur: Bei der Endosymbiose wurde der aufgenommene Prokaryot nicht verdaut, sondern blieb als Symbiont erhalten und entwickelte sich zum Organell.
    Korrektur-Satz: `Bei der Endosymbiose wurde der aufgenommene Prokaryot nicht verdaut, sondern blieb als Symbiont erhalten und entwickelte sich zum Organell.`
 
-## Schritt 7 — szenario
+## Schritt 7 — szenario: Klausurtransfer & Rubric
 
 ROLLE: Du bist Mitglied einer Schuelergruppe, die auf einem Schulfest ein Poster ueber die Herkunft der Zellorganellen praesentiert.
 SITUATION: Ein Besucher bezweifelt die Endosymbiontentheorie mit dem Argument: Ein Mitochondrium kann doch unmoeglich einmal ein eigenes Lebewesen gewesen sein.
 AUFGABE (AFB II/III): Beurteile diese Aussage in einer zusammenhaengenden Stellungnahme (ca. 150 Woerter), indem du die stuetzenden Belege fuer Mitochondrien und Chloroplasten anfuehrst und die Theorie kriteriengeleitet bewertest.
 RUBRIC (30 XP): Benennung der Theorie und der beteiligten Organismen (Aerobier bzw. Cyanobakterium) (5 XP) | Anfuehrung der Belege — Doppelmembran, eigene ringfoermige DNA, eigene Ribosomen (10 XP) | Erklaerung, warum diese Belege einen prokaryotischen Ursprung stuetzen (10 XP) | Kriteriengeleitetes Urteil mit Abwaegung der Aussagekraft der Belege (5 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY (Kernbotschaft in einem Kasten):
 

@@ -15,7 +15,7 @@ version: Lesson-v3
 
 <!-- Lesson v3 9步制架构：Schritt 1至8固定结构；Fehlvorstellung 夹在 Schritt 6 与 7 之间（Parser 自动跳过，不占步数）；支持内嵌 [Werkzeug: <id>] 交互教具；Gating: check/szenario 未过 = Weiter 置灰；XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
-## Schritt 1 — entdecken
+## Schritt 1 — entdecken: Ziele & Phänomen-Einstieg
 
 ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
@@ -25,9 +25,20 @@ ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
 Voraussetzung（窄切口）：只做底物浓度影响速率，已知酶促三步 E+S→ES→E+P；不推导米氏方程、不做 pH 曲线。
 
+
+Hook中文生活切入:
+
+想象食堂打饭窗口:窗口就一个,学生越聚越多,刚开始多来一个人就多打一份饭,可窗口忙到极限后,再排多少人速度也不再增加;而别处开了新窗口或者有人插队,整个队伍的速度又会变化。酶和底物的关系正是如此:酶的数量有限,底物再多也有上限,而抑制剂和激活剂还能远程调节酶的干劲。
+
+Phaenomen-Satz (DE): Ein Schalter bedient alle, doch irgendwann hilft keine laengere Schlange mehr.
+
+中文机制铺垫:底物浓度低时反应速度随浓度上升,酶被底物饱和后速度封顶为最大值;米氏常数标记达到半速所需的底物量,竞争性抑制抬高表观米氏常数,别构效应则改变酶的空间形状从而调节上限。
+
+Mechanismus-Satz (DE): Saettigung begrenzt die Geschwindigkeit, Hemmung und Aktivierung verstellen die Kennwerte.
+
 Klausur-Satz: `Die Reaktionsgeschwindigkeit folgt der Michaelis-Kurve mit v_max und K_m; Hemmtypen veraendern sie charakteristisch.`
 
-## Schritt 2 — entdecken
+## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
 
 PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
 
@@ -41,22 +52,43 @@ PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→�
 
 Klausur-Satz: `Kompetitiv erhoeht K_m, nichtkompetitiv senkt v_max; allosterisch veraendert die Enzymgestalt.`
 
-## Schritt 3 — entdecken
+## Schritt 3 — entdecken: Kernkonzept & Wirkungsmodell
 
-ENTDECKEN（1概念 + 1文字图解）：
+ENTDECKEN（1概念 + 1文字图解，中文在上、德语在下）：
 
-中文：底物少时速率随浓度直线上升，底物多时酶"忙不过来"进入平台——这就是饱和。$K_m$ 是亲和力的反指标：达到半速所需底物越少，亲和力越强。抑制剂分两类：竞争者可被底物"人多挤走"，多加底物能回到原 $v_{max}$，只是 $K_m$ 右移；非竞争者"另起 binding 位点"把酶总量变相减少，再多底物也回不到原平台。变构激活与抑制则是细胞的"远程开关"。
+Hook中文生活切入：
+
+中文：想象地铁早高峰安检口：人少时来一个过一个，人多了安检员满负荷，再多人也只能排队，通行速度封顶。酶也一样会忙不过来。
+
+Phaenomen-Satz (DE): Wenig Substrat heisst freie Kapazitaet, viel Substrat heisst Warteschlange am Enzym.
+
+Spiel-Aufgabe沙盒操作指引：
+
+中文：打开沙盒，拖动滑块底物浓度 [S] 从低到高（关键词：Substrat, Sättigung v_max, K_m），再分别加入竞争性抑制剂和非竞争性抑制剂，看曲线右移还是峰顶下压。
+
+Beobachtungs-Satz (DE): Mit steigendem [S] naehert sich v dem Plateau v_max; der Hemmstoff verschiebt die Kurve oder senkt das Plateau.
+
+Aha-Moment因果链：
+
+中文因果链：底物越多酶被占用比例越高，全部在岗即饱和，速度封顶为v_max；一半酶在岗时的底物浓度就是K_m；竞争者抢活性位点需更高底物才能赶上所以K_m变大、封顶不变，非竞争者从别处锁死酶所以封顶v_max直接下降。
+
+Gesetz-Satz (DE): Saettigung erzeugt das Plateau, der Hemmtyp entscheidet ueber K_m oder v_max.
+
+$v = v_{max} \cdot [S]/(K_m + [S])$
+
+$[S] = K_m \Rightarrow v = v_{max}/2$
 
 文字图解（ASCII 结构图，App支持解析渲染）：
 
 ```diagram
-  v ^  nichtkomp. senkt Plateau
-      |   normal ________ v_max
-      |  /  . kompetitiv: rechts verschoben, gleiches Plateau
-      | / .
-      +--------------> [S]   Km = [S] bei v_max/2
+v ^
+  |  v_max .................. Plateau
+  |         ....
+  |       ..
+  |     ..  K_m markiert v_max/2
+  +----------------------------------> [S]
+  kompetitiv: Kurve rechts | nichtkompetitiv: Plateau tiefer
 ```
-
 Klausur-Satz: `Die Saettigung erklaert das Plateau; der Hemmtyp entscheidet, ob K_m oder v_max betroffen ist.`
 
 ## Anekdote & Fun-Fact
@@ -67,24 +99,31 @@ Klausur-Satz: `Die Saettigung erklaert das Plateau; der Hemmtyp entscheidet, ob 
 
 **Bezug zum Konzept**: `K_m als Halbsaettigung macht Affinitaet messbar.`
 
-## Schritt 4 — ausprobieren
+## Schritt 4 — ausprobieren: Interaktive Praxis & Labor
 
-BEISPIEL（正确例题示范，含教具操作与解答）：
+[Werkzeug: enzyme-lock]
 
-[Werkzeug: enzyme]
+BEISPIEL（正确例题示范，含教具操作与解答，中文在上、德语在下）：
 
-AUFGABE (darstellen, AFB II)：Skizzieren und deuten Sie die Michaelis-Kurve eines Enzyms mit $v_{max} = 100\,\mu\mathrm{mol/min}$ und $K_m = 2\,\mathrm{mmol/L}$. Wo liegt $v$ bei $[S] = 2\,\mathrm{mmol/L}$ und bei Saettigung?
+AUFGABE中文导读（沙盒谜题）：两组酶实验，一组加抑制剂后曲线右移但封顶不变，另一组封顶下降。请判定抑制类型，并用K_m与v_max作证。
 
-HILFE:
-1. Schritt 1: Achsen beschriften ($v$ gegen $[S]$), Plateau $v_{max}$ einzeichnen.
-2. Schritt 2: Punkt $(K_m|v_{max}/2)$ markieren.
-3. Schritt 3: Verlauf von null bis Saettigung deuten.
+AUFGABE (auswerten, AFB II): Zwei Ansaetze mit Hemmstoff zeigen (a) Rechtsverschiebung bei gleichem Plateau, (b) gesenktes Plateau. Bestimmen Sie jeweils den Hemmtyp und begruenden Sie mit $K_m$ und $v_{max}$.
 
-MUSTERLÖSUNG: Die Kurve startet im Ursprung, steigt zunaechst fast linear und naehert sich dann dem Plateau $v_{max} = 100\,\mu\mathrm{mol/min}$. Bei $[S] = K_m = 2\,\mathrm{mmol/L}$ gilt definitionsgemaess $v = 50\,\mu\mathrm{mol/min}$. Bei sehr hoher Substratkonzentration sind praktisch alle aktiven Zentren besetzt (Saettigung), $v$ bleibt bei $v_{max}$. Ein kleineres $K_m$ wuerde steileren Anstieg und hoehere Affinitaet bedeuten.
+HILFE（中德双语步骤）：
 
+1. 中文：第1步读封顶：封顶不变看K_m，封顶下降看v_max，关键词：Plateau。
+   Schritt 1 (DE): Pruefen Sie zuerst das Plateau v_max.
+2. 中文：第2步右移等顶判竞争性、压顶判非竞争，关键词：Rechtsverschiebung。
+   Schritt 2 (DE): Rechtsverschiebung bei gleichem Plateau heisst kompetitiv.
+3. 中文：第3步补一句别构效应的形状变化含义，关键词：Gestalt。
+   Schritt 3 (DE): Ergaenzen Sie die Deutung der Gestaltveraenderung.
+
+MUSTERLOESUNG：中文：a组封顶不变只是达到同样速度需要更多底物，是竞争性抑制，K_m增大、v_max不变；b组天花板被压低，是非竞争或别构抑制，v_max下降；两类都可用洗掉抑制剂是否恢复来验证。
+
+MUSTERLOESUNG (DE): Ansatz (a) ist kompetitiv: $K_m$ steigt, $v_{max}$ bleibt, die Kurve wandert nach rechts. Ansatz (b) ist nichtkompetitiv bzw. allosterisch: $v_{max}$ sinkt, das Plateau liegt tiefer. Beide Deutungen folgen direkt aus $v = v_{max} \cdot [S]/(K_m + [S])$.
 Klausur-Satz: `Bei [S] = K_m betraegt v die Haelfte von v_max; bei Saettigung bleibt v auf v_max.`
 
-## Schritt 5 — ausprobieren
+## Schritt 5 — ausprobieren: Verfahrensvergleich & Abgrenzung
 
 VERGLEICH辨别实验（双向辨析：米氏定量 vs 变构定性）：
 
@@ -99,7 +138,7 @@ ANTWORT: A erfordert Verfahren (i): Gleiches $v_{max}$ bei groesserem $K_m$ ist 
 
 Klausur-Satz: `Rechtsverschiebung bei gleichem Plateau heisst kompetitiv; Endprodukt-Hemmung am Kettenanfang heisst allosterische Rueckkopplung.`
 
-## Schritt 6 — check
+## Schritt 6 — check: Verständnisprüfung
 
 CHECK检索默写（自测 3 题，与答案配对）：
 
@@ -121,13 +160,13 @@ Klausur-Satz: `Kompetitiv veraendert K_m, nichtkompetitiv v_max, allosterisch di
    中文纠偏：只对竞争性成立；非竞争性减少了有效酶量，平台永久压低，加底物无用。
    Korrektur-Satz: `Nur die kompetitive Hemmung laesst sich durch Substratueberschuss aufheben.`
 
-## Schritt 7 — szenario
+## Schritt 7 — szenario: Klausurtransfer & Rubric
 
 ROLLE: Du bist Tutor und erklaerst eine Enzymkurve mit Hemmstoff.
 SITUATION: Eine Gruppe liest $K_m$ und $v_{max}$ falsch ab und verwechselt die Hemmtypen. Erklaere in einer zusammenhaengenden Darstellung (ca. 150 Woerter) an einer Kurvenskizze, wie man beide Kennwerte abliest und woran man kompetitiv gegen nichtkompetitiv erkennt.
 RUBRIC (30 XP): Ablesen von $v_{max}$ und $K_m$ (10 XP) | Unterscheidung der Hemmtypen an der Kurve (10 XP) | Allosterische Deutung als Regulation (6 XP) | Fachsprachliche Korrektheit (4 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY 1盒（核心总结）：
 

@@ -15,7 +15,7 @@ version: Lesson-v3
 
 <!-- Lesson v3 9-Schritt-Architektur: Schritt 1 bis 8 feste Struktur; Fehlvorstellung zwischen Schritt 6 und 7 (Parser ueberspringt, zaehlt nicht); interaktives [Werkzeug: <id>]; Gating: check/szenario nicht bestanden = Weiter deaktiviert; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
-## Schritt 1 — entdecken
+## Schritt 1 — entdecken: Ziele & Phänomen-Einstieg
 ZIELE (drei messbare Ziele dieser Lektion):
 
 1. Du kannst die Gesamtgleichung $C_6H_{12}O_6 + 6O_2 \to 6CO_2 + 6H_2O + Energie$ wiedergeben und erklaeren, dass Glucose mit Sauerstoff oxidiert und Energie in $ATP$ gespeichert wird.
@@ -24,7 +24,7 @@ ZIELE (drei messbare Ziele dieser Lektion):
 
 ### Hook / Phaenomen
 
-Cyanid ist in Krimis als schnell wirkendes Gift bekannt — obwohl genug Sauerstoff im Blut vorhanden ist, ersticken die Zellen. Der Grund liegt an Komplex IV der Atmungskette: Blockiert die Uebergabe an Sauerstoff, bricht die $ATP$-Produktion ein, zuerst versagen Gehirn und Herzmuskel. Das Gift simuliert Sauerstoffmangel trotz voller Tanks. Wie haengt ein Atemgas mit der Energiewaehrung $ATP$ zusammen?
+Cyanid ist in Krimis als schnell wirkendes Gift bekannt — obwohl genug Sauerstoff im Blut vorhanden ist, ersticken die Zellen. Der Grund liegt an Komplex IV der Atmungskette: Blockiert die Uebergabe an Sauerstoff, bricht die $ATP$-Produktion ein, zuerst versagen Gehirn und Herzmuskel. Das Gift simuliert Sauerstoffmangel trotz voller Tanks. Wie haengt ein Atemgas mit der Energiewaehrung $ATP$ zusammen? In der Mitochondrienmatrix laeuft die Zellatmung als Umkehr der Fotosynthese mit $C_6H_{12}O_6 + 6O_2 \to 6CO_2 + 6H_2O + Energie$ und speichert die Energie als $ATP \to ADP + P_i$ in Rueckwaertsrichtung. Sauerstoff folgt dem Konzentrationsgefaelle durch die Membran in die Matrix, Wasser verlaesst die Zelle entlang dem Psi-Gefaelle bei Salzstress mit Turgorverlust. Erst wer Substrat, Gefaelle und ATP-Ausbeute als Kausalkette mit weil und deshalb verbindet, erklaert Atmung und Gaerung vollstaendig.
 
 ### Fachbegriff & Definition
 
@@ -36,7 +36,7 @@ Die Kausalkette lautet: **Zerlegen, Elektronen holen, $ATP$ tauschen**. Glykolys
 
 Klausur-Satz: `Die Zellatmung oxidiert Glucose mit Sauerstoff zu Kohlenstoffdioxid und Wasser und speichert die freigesetzte Energie in ATP.`
 
-## Schritt 2 — entdecken
+## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
 ### Hook / Phaenomen
@@ -57,40 +57,28 @@ Die Begriffe bilden die Fabrikstrasse: **Cytoplasma** zerlegt (Glykolyse), **Mat
 
 Klausur-Satz: `ATP entsteht ueberwiegend an der inneren Mitochondrienmembran durch oxidative Phosphorylierung in der Atmungskette.`
 
-## Schritt 3 — entdecken
+## Schritt 3 — entdecken: Kernkonzept & Wirkungsmodell
 TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
 ### Hook / Phaenomen
 
-Ein Muskel sprintet anaerob und zahlt danach Sauerstoffschuld — die Gaerung im Cytoplasma liefert wenig $ATP$ ohne $O_2$. Warum lohnt sich der lange Weg durchs Mitochondrium mit ca. $26$–$28$ $ATP$ gegenueber netto $2$ aus der Glykolyse? Vier Stationen beantworten die Ertragsfrage.
+Warum bleibt keimender Kresse-Samen in einem geschlossenen Kolben nur mit Sauerstoff lange leistungsfaehig, waehrend er ohne Sauerstoff schnell an Energie verliert, obwohl Glucose vorhanden ist? Die Antwort liegt an der inneren Mitochondrienmembran. Wo entsteht $CO_2$, wo fliesst $NADH$ in die Atmungskette, und wo wird aus $ADP$ wieder $ATP$?
 
-### Fachbegriff & Definition
+### Spiel-Aufgabe
 
-Die **Vier-Phasen-Bilanz** lautet: Glykolyse ($2$ $ATP$ netto $+$ $2$ $NADH$), oxidative Decarboxylierung ($Acetyl$-$CoA + CO_2 + NADH$), Citratzyklus ($CO_2 + NADH + FADH_2 + GTP$) und Atmungskette mit Synthase (viel $ATP$). Die **Reduktionsaequivalente** $NADH$ und $FADH_2$ tragen die Elektronen der ersten drei Phasen in die vierte: Dort pumpt ihr Fluss Protonen, der Rueckfluss durch die Synthase zahlt $ATP$. Sauerstoff schliesst die Kette als terminaler Akzeptor ($e^- + O_2 + H^+ \to H_2O$); Cyanid reisst sie an Komplex IV auf.
+Spiel-Aufgabe im Kopf-Labor: Simuliere die Zelle wie ein Osmose-Labor mit Membranen und Pfeilen. Stelle den Sauerstoff-Regler von $21\%$ auf $0\%$ und verfolge die Elektronenpfeile von $NADH$ und $FADH_2$ zur Atmungskette sowie die Protonenpfeile ueber die innere Membran. Notiere $O_2$-Verbrauch, $CO_2$-Abgabe und $ATP$-Ausbeute je $C_6H_{12}O_6$. Erklaere in einem Satz mit weil, warum ohne $O_2$ die Kette stoppt.
 
-### Wirkungsgefuege / Modell
+### Aha-Moment & Gesetz
 
-Denke in Kausalkette: **Oxidieren, Pumpen, Zahlen**. Erstens Glucose zu $CO_2$ oxidieren und Traeger beladen. Zweitens Traeger entladen und Gradienten pumpen. Drittens Gradienten durch die Synthase in $ATP$ tauschen. Glucose wird in Glykolyse, Decarboxylierung und Citratzyklus zu $CO_2$ oxidiert, $NADH$ und $FADH_2$ liefern in der Atmungskette die Energie fuer die $ATP$-Synthese — ein Satz, vier Phasen.
+Aha-Moment und Gesetz: Die Kausalkette lautet Oxidation, Transport, Phosphorylierung. Glucose wird in Glykolyse und Citratzyklus zu $CO_2$ oxidiert, dabei entstehen $NADH$ und $FADH_2$. Ihre Elektronen treiben Protonenpumpen an, der Rueckstrom durch die ATP-Synthase bildet $ADP + P_i \to ATP$. Die Gesamtbilanz $C_6H_{12}O_6 + 6O_2 \to 6CO_2 + 6H_2O + Energie$ fasst vier Phasen zusammen; der Hauptgewinn liegt an der inneren Membran, weil nur dort der Gradient in $ATP$ umgewandelt wird.
 
 ```diagram
-         Glucose (C6H12O6)
-               |
-               v
-   [1 Glykolyse | Cytoplasma] ---> 2 Pyruvat + 2 ATP (netto) + 2 NADH
-               |
-               v
-   [2 oxidative Decarboxylierung | Matrix] ---> Acetyl-CoA + CO2 + NADH
-               |
-               v
-   [3 Citratzyklus | Matrix] ---> CO2 + NADH + FADH2 + GTP(=ATP)
-               |
-               v
-   [4 Atmungskette + ATP-Synthase | innere Membran]
-      NADH/FADH2 --e- --> Komplex I-III --> Komplex IV --e- + O2 + H+ --> H2O
-      H+ -Gradient --> ATP-Synthase --> viel ATP (ca. 26-28)
-               |
-               X  Cyanid blockiert Komplex IV ==> e- -Stau ==> kein ATP
-   Abgrenzung: Gaerung ohne O2 im Cytoplasma, wenig ATP (EF-Niveau)
+    Cytosol: Glykolyse (Glucose --> Pyruvat + NADH)
+    Matrix: Pyruvat --> CO2 + NADH + FADH2 (Citratzyklus)
+    Innere Membran: NADH/FADH2 --e- + H+--> Pumpen --> Gradient
+    ATP-Synthase: ADP + Pi --Gradient--> ATP (Hauptgewinn)
+    Ohne O2: Kette blockiert, Gradient bricht ein, ATP sinkt.
+    Bilanz: C6H12O6 + 6O2 --> 6CO2 + 6H2O + Energie.
 ```
 
 Klausur-Satz: `Glucose wird in Glykolyse, oxidativer Decarboxylierung und Citratzyklus zu CO2 oxidiert, die Reduktionsaequivalente NADH und FADH2 liefern in der Atmungskette die Energie fuer die ATP-Synthese.`
@@ -101,33 +89,24 @@ Klausur-Satz: `Glucose wird in Glykolyse, oxidativer Decarboxylierung und Citrat
 
 **Bezug zum Konzept**: `Sauerstoff ist der terminale Elektronenakzeptor; ist Komplex IV blockiert, stoppt die gesamte ATP-Synthese.`
 
-## Schritt 4 — ausprobieren
+## Schritt 4 — ausprobieren: Interaktive Praxis & Osmose-Labor
 
 BEISPIEL (geleitete Aufgabe mit Werkzeug):
 
-[Werkzeug: formula]
+[Werkzeug: osmose-lab]
 
-AUFGABE (beschreiben, AFB II): Notieren Sie die Gesamtgleichung der Zellatmung und beschreiben Sie die vier Phasen mit Ort und Hauptprodukten in einer Tabelle. Grenzen Sie am Ende in einem Satz zur Gaerung ab (EF-Niveau, ohne Details).
+AUFGABE (Spiel-Auftrag, AFB II, 3 Stufen): Stufe 1 Rechnen: Aus $1\,\mathrm{mol}$ Glucose entstehen in der Atmungskette etwa $26$ bis $28\,\mathrm{mol}$ $ATP$. Nenne die Gesamtgleichung. Stufe 2 Verorten: Ordne Glykolyse, Citratzyklus und Atmungskette den Orten Cytosol, Matrix und Innenmembran zu. Stufe 3 Sichern: Begruende mit $NADH$ und Gradient in zwei Saetzen mit weil. Stelle im Osmose-Labor den Substrat-Regler von Glucose niedrig auf hoch und den Aussen-Psi-Regler auf $-1{,}2\,\mathrm{MPa}$ gegen $0\,\mathrm{MPa}$ und verfolge O2-Pfeile und ATP-Ausbeute.
 
 HILFE:
-1. Schritt 1: Gesamtgleichung auswendig notieren: $C_6H_{12}O_6 + 6 O_2 \to 6 CO_2 + 6 H_2O + Energie$ ($ATP$ plus Waerme).
-2. Schritt 2: Tabelle mit vier Zeilen anlegen: Phase, Ort, Input zu Output, Energiegewinn.
-3. Schritt 3: ATP-Schwerpunkt markieren: wenig $ATP$ in Phase 1 bis 3, viel $ATP$ in Phase 4; Gaerung nur als Satz: ohne Sauerstoff, im Cytoplasma, wenig $ATP$.
+1. Schritt 1: Gesamtgleichung $C_6H_{12}O_6 + 6O_2 \to 6CO_2 + 6H_2O + Energie$ nennen.
+2. Schritt 2: $CO_2$ entsteht in Glykolyse und Matrix, $ATP$-Hauptgewinn an der Innenmembran.
+3. Schritt 3: Ohne $O_2$ stoppt die Kette, weil der Endakzeptor fehlt und $ADP + P_i \to ATP$ versiegt.
 
-MUSTERLOESUNG: Gesamtgleichung: $C_6H_{12}O_6 + 6 O_2 \to 6 CO_2 + 6 H_2O + Energie$ ($ATP$ plus Waerme).
-
-| Phase | Ort | Input -> Output | Energie |
-|---|---|---|---|
-| 1 Glykolyse | Cytoplasma | Glucose -> 2 Pyruvat + 2 NADH | netto 2 ATP |
-| 2 oxidative Decarboxylierung | Mitochondrien-Matrix | Pyruvat -> Acetyl-CoA + CO2 + NADH | nur NADH |
-| 3 Citratzyklus | Matrix | Acetyl-CoA -> CO2 + NADH + FADH2 + GTP | 2 GTP (ca. 2 ATP) |
-| 4 Atmungskette + oxidative Phosphorylierung | innere Membran | NADH/FADH2 + O2 + ADP -> H2O + ATP | ca. 26-28 ATP, gesamt ca. 30-32 ATP |
-
-Abgrenzung: Die Gaerung laeuft ohne Sauerstoff nur im Cytoplasma ab und liefert mit ca. 2 ATP deutlich weniger Energie als die Zellatmung.
+MUSTERLOESUNG: Die Gesamtgleichung $C_6H_{12}O_6 + 6O_2 \to 6CO_2 + 6H_2O + Energie$ fasst Glykolyse im Cytosol, oxidative Decarboxylierung und Citratzyklus in der Matrix sowie die Atmungskette an der inneren Mitochondrienmembran zusammen. $NADH$ und $FADH_2$ liefern Elektronen, deren Energie Protonen pumpt; der Rueckstrom durch die ATP-Synthase bildet $ADP + P_i \to ATP$. Daher liegt der $ATP$-Hauptgewinn an der Innenmembran, weil nur dort der Gradient in chemische Energie umgewandelt wird.
 
 Klausur-Satz: `Die Gesamtgleichung C6H12O6 + 6 O2 -> 6 CO2 + 6 H2O + Energie fasst vier Phasen zusammen, deren ATP-Hauptgewinn an der inneren Mitochondrienmembran liegt.`
 
-## Schritt 5 — ausprobieren
+## Schritt 5 — ausprobieren: Verfahrensvergleich & Abgrenzung
 
 VERGLEICH (Wahl des Verfahrens, A gegen B):
 
@@ -142,7 +121,7 @@ ANTWORT: A erfordert Verfahren (i): Die Zelle nutzt die Zellatmung mit Gesamtgle
 
 Klausur-Satz: `Mit Sauerstoff dominiert die Zellatmung mit hohem ATP-Ertrag, ohne Sauerstoff bleibt nur die Gaerung mit geringem Ertrag.`
 
-## Schritt 6 — check
+## Schritt 6 — check: Verständnisprüfung
 
 CHECK (drei Fragen mit Antworten):
 
@@ -163,14 +142,14 @@ Klausur-Satz: `Ohne terminalen Elektronenakzeptor Sauerstoff bricht die oxidativ
    Korrektur: Cyanid blockiert Komplex IV, sodass Sauerstoff trotz Anwesenheit nicht als Elektronenakzeptor genutzt werden kann.
    Korrektur-Satz: `Cyanid blockiert Komplex IV, sodass Sauerstoff trotz Anwesenheit nicht als Elektronenakzeptor genutzt werden kann.`
 
-## Schritt 7 — szenario
+## Schritt 7 — szenario: Klausurtransfer & Rubric
 
 ROLLE: Du bist Tutorin in der EF und erklaerst einer Mitschaelerin die Zellatmung.
 SITUATION: Deine Mitschaelerin versteht nicht, warum ein Gift wie Cyanid so schnell toetet, obwohl das Opfer normal atmet.
 AUFGABE (AFB II/III): Erklaere in einer zusammenhaengenden Darstellung (ca. 150 Woerter) die Gesamtgleichung, die vier Phasen mit Orten und die Rolle von Sauerstoff sowie Komplex IV.
 RUBRIC (30 XP): Korrekte Gesamtgleichung (5 XP) | Vier Phasen mit Ort und Produkt korrekt (10 XP) | Sauerstoff als terminaler Akzeptor erklaert (10 XP) | Cyanid-Blockade von Komplex IV als Fazit (5 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY (Kernbotschaft in einem Kasten):
 
