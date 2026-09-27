@@ -143,6 +143,7 @@ ROLLE（中文）：你是Theaterkritiker der Stadtpost，负责审稿。
 德语 ROLLE: Du bist Theaterkritiker der Stadtpost.
 SITUATION: Fall 10 liegt unbearbeitet vor dir.
 AUFGABE（中文）：150词左右，含背景、两个证据、功能判断。
+ZEIT: 25 Minuten (5 Einordnung, 12 Intrigen-Schreiben, 8 Zeilen-Pruefung).
 RUBRIC (30 XP): Einordnung (6 XP) | Belege mit Zeile (10 XP) | Funktion plus Deutung (10 XP) | Fachsprache (4 XP).
 
 Klausur-Satz: `CN: 满分句须含断句、补全与意外伪装。DE: AFB-III-Satz braucht Bruch, Vollendung und Zufallstarnung mit Zeile.`

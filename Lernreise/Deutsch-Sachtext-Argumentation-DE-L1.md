@@ -23,21 +23,21 @@ ZIELE (3 Ziele, nach 15 Minuten erreichbar):
 
 HOOK:
 
-Der Stadtrat streitet ueber den Nachtbus: Freiheit gegen Kosten, Lärm gegen Teilhabe. Ein Leserbrief stapelt Argumente ohne Ordnung. Du erhaeltst die Argumentationskarte mit Bausteinen. Jede **Begruendung** braucht einen **Beleg**.
+Der Stadtrat streitet ueber die Skatepark-Erweiterung: Freiraum gegen Kosten, Jugendlaerm gegen Teilhabe. Ein Kommentar stapelt Stimmen ohne Ordnung. Du erhaeltst die Argumentationskarte mit Bausteinen. Jede **Forderung** braucht einen **Massstab**.
 
-Variante B prueft dieselbe Karte an einem zweiten Leserbrief mit vertauschten Lagern.
+Variante B prueft dieselbe Karte an einem zweiten Kommentar zum Skatepark-Laermschutz mit vertauschten Lagern (Anwohner gegen Jugendbeirat).
 
-Klausur-Satz: `Der Leserbrief braucht Gewicht: Ein starker Beleg schlaegt drei Phrasen.`
+Klausur-Satz: `Der Skatepark-Kommentar braucht Gewicht: Ein starker Beleg schlaegt drei Phrasen.`
 
 ## Schritt 2 — entdecken: Die Ausruestungskiste zum Fall
 
 AUSRUESTUNG (5 Instrumente im Koffer):
 
-- **Argument**: Das Argument verbindet Behauptung mit Begruendung. Es antwortet auf Warum. Ohne Weil bleibt Phrase.  Mechanismus: Mechanismus: These plus Grund plus Beleg ergibt Baustein; Staerke misst sich an Beleg.  Klausur-Tipp: Klausur-Tipp: Ein Absatz, ein Argument, ein Beleg.
-- **Belegtyp**: Belegtypen sind Statistik, Beispiel, Autoritaet und Erfahrung. Sie tragen unterschiedlich weit.  Mechanismus: Mechanismus: Zahl plus Quelle traegt am weitesten; Beispiel illustriert nur.  Klausur-Tipp: Klausur-Tipp: Nenne Typ und Grenze jedes Belegs.
-- **Gegenargument**: Das Gegenargument nennt den staerksten Einwand fair. Es prueft die Kette.  Mechanismus: Mechanismus: Einwand plus Entkraeftung oder Zugestaendnis staerkt Urteil.  Klausur-Tipp: Klausur-Tipp: Entkraefte oder gestehe zu, nie verschweigen.
-- **Argumentationsgang**: Der Argumentationsgang ordnet Bausteine nach Gewicht: steigend oder fallend. Ordnung erzeugt Ueberzeugung.  Mechanismus: Mechanismus: Schwach zuerst, stark zuletzt (Klimax) oder umgekehrt zur Sicherung.  Klausur-Tipp: Klausur-Tipp: Begruende deine Anordnung.
-- **Fazit**: Das Fazit bündelt Rangfolge und Position. Es antwortet auf die Frage.  Mechanismus: Mechanismus: Gewicht plus Folge ergibt Schluss; Ausblick oeffnet.  Klausur-Tipp: Klausur-Tipp: Ein Satz Antwort, ein Satz Folge.
+- **Argument**: Das Argument zum Skatepark verbindet Forderung mit Begruendung. Es antwortet auf Warum Freiraum. Ohne Weil bleibt Phrase.  Mechanismus: These plus Grund plus Beleg ergibt Baustein; Staerke misst sich an Beleg.  Klausur-Tipp: Ein Absatz, ein Argument, ein Beleg.
+- **Belegtyp**: Belegtypen zum Skategelaende sind Zaehldaten, Anwohnerbeispiel, Expertenurteil und Jugenderfahrung. Sie tragen unterschiedlich weit.  Mechanismus: Zahl plus Quelle traegt am weitesten; Einzelbeispiel illustriert nur.  Klausur-Tipp: Nenne Typ und Grenze jedes Skate-Belegs.
+- **Gegenargument**: Das Gegenargument nennt den Laerm-Einwand der Anwohner fair. Es prueft die Freiraum-Kette.  Mechanismus: Einwand plus Entkraeftung oder Zugestaendnis staerkt Urteil.  Klausur-Tipp: Entkraefte oder gestehe zu, nie verschweigen.
+- **Argumentationsgang**: Der Argumentationsgang ordnet Skate-Bausteine nach Gewicht: steigend als Klimax oder fallend als Antiklimax. Ordnung erzeugt Ueberzeugung.  Mechanismus: Schwach zuerst, stark zuletzt (Klimax) oder stark zuerst zur Sicherung (Antiklimax).  Klausur-Tipp: Begruende Klimax oder Antiklimax am Adressaten.
+- **Fazit**: Das Fazit zum Skatepark buendelt Rangfolge und Position. Es antwortet auf die Erweiterungsfrage.  Mechanismus: Gewicht plus Folge ergibt Schluss; Ausblick oeffnet.  Klausur-Tipp: Ein Satz Antwort, ein Satz Folge.
 
 Klausur-Satz: `Baustein, Belegtyp und Gang definieren jede Argumentation.`
 
@@ -46,6 +46,8 @@ Klausur-Satz: `Baustein, Belegtyp und Gang definieren jede Argumentation.`
 MECHANISMUS (Tiefenbau):
 
 Argumentation arbeitet mit **Baustein plus Gewicht**. Zahl der Gruende zaehlt nicht, Gewicht entscheidet.
+
+Regelkette: Forderung braucht Weil-Satz, Weil-Satz braucht Skate-Beleg, Skate-Beleg braucht Klimax-Platz. Zweite Ebene: Jeder Baustein beantwortet drei Fragen: Welcher Typ traegt, welche Anwohner-Grenze gilt, welcher Adressat hoert zu. Wer diese Kette verfehlt, stapelt nur Phrasen.
 
 Der Weg: Sammle Bausteine mit Belegtyp. Ordne nach Gewicht. Schliesse mit Fazit und Folge. So wird Brief zur Linie.
 
@@ -65,8 +67,8 @@ Bezug zum Konzept: `Grund plus Beleg plus Gewicht ergibt Fazit: Ordnung ueberzeu
 
 [Werkzeug: lego]
 
-AUFGABE: Baue zu einer Streitfrage drei Bausteine mit Belegtyp und ordne sie als Klimax.
-TARGET: Drei Bausteine mit Beleg, je mit Funktion und einer Deutung in vier Saetzen.
+AUFGABE: Baue zum Skatepark drei Bausteine mit Belegtyp und ordne sie als Klimax oder Antiklimax.
+TARGET: Drei Skatepark-Bausteine mit Belegtyp als Klimax oder Antiklimax, je mit Adressat und Fazitbezug in vier Saetzen.
 
 HILFE:
 1. Schritt 1: Ordne den Fall in zwei Saetzen ein.
@@ -79,15 +81,15 @@ Klausur-Satz: `Die Baustein-Regel: Je naeher das Fazit, desto staerker der Baust
 
 ## Schritt 5 — ausprobieren: Das doppelte Spiel Weg A gegen Weg B
 
-VERGLEICH: Weg A arbeitet mikroskopisch (Detail, Beleg, Form), Weg B plant makroskopisch (Strategie, Kontext, Gewicht).
+VERGLEICH: Weg A ordnet als Klimax zum Skatepark (Anwohnernutzen zuerst, Jugendteilhabe als Schlusspunkt), Weg B ordnet als Antiklimax (staerkste Zaehldaten zuerst zur Sicherung gegen Laerm-Einwand).
 
-AUFGABE A: Welche Spur verlangt Weg A? Begruende mit Beleg.
-AUFGABE B: Welche Frage verlangt Weg B? Begruende mit Kontext.
+AUFGABE A: Baue die Skatepark-Kette als Klimax (Kosten, Laermschutz, Teilhabe) mit Belegtyp pro Baustein. Begruende mit Gewicht.
+AUFGABE B: Baue dieselbe Kette als Antiklimax (Teilhabe zuerst, Kosten zuletzt) fuer kritische Anwohner. Begruende mit Adressat.
 
-HILFE: A fragt nach Form und Naehe, also Weg A. B fragt nach Rolle und Ganzem, also Weg B.
+HILFE: A stellt die Forderung voran und steigert zum Fazit. B sichert mit dem Staerksten zuerst und entkraeftet Laerm danach.
 
-ANTWORT A: Weg A baut mikroskopisch Bausteine: Weil-Saetze pruefen, Belegtypen benennen, Luecken markieren.
-ANTWORT B: Weg B plant makroskopisch Linie: Klimax oder Antiklimax je nach Adressat und staerkstem Beleg.
+ANTWORT A: Weg A baut Klimax Baustein fuer Baustein: Weil-Saetze pruefen, Skate-Belegtypen benennen, Teilhabe als Pointe ans Fazit stellen.
+ANTWORT B: Weg B plant Antiklimax als Strategie: Teilhabe-Beleg zuerst, Laerm-Entkraeftung und Kosten-Baustein danach als Absicherung.
 
 Klausur-Satz: `Naharbeit prueft das Wie der Belege, Fernplanung das Warum der Ordnung; beide tragen das Fazit.`
 
@@ -113,6 +115,7 @@ Klausur-Satz: `Haeufig verwechselt: Beispiel ist kein Beweis; Typ und Grenze nen
 ROLLE: Du bist Kommentarredakteur der Schulzeitung in der Pruefung.
 SITUATION: Ein Fall liegt unbearbeitet auf dem Tisch und verlangt Einordnung, Belege und Urteil.
 AUFGABE: Verfasse circa 150 Woerter mit Einordnung, zwei Belegen, Funktion, Deutung und Schlussurteil.
+ZEIT: 25 Minuten (5 Sammeln, 12 Klimax-Schreiben, 8 Adressat-Pruefung).
 RUBRIC (30 XP): Einordnung korrekt (6 XP) | Zwei Belege (10 XP) | Funktion plus Deutung (10 XP) | Fachsprache und Schluss (4 XP).
 
 Klausur-Satz: `AFB-III-Mustersatz: Obwohl der Kosten-Einwand belegt ist, wiegt Teilhabe schwerer, weil der Massstab Zugang gilt.`

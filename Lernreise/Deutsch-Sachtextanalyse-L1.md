@@ -133,6 +133,7 @@ Klausur-Satz: `Haeufig verwechselt: Mehrheit in der Fussgaengerzone ist keine St
 ROLLE: Du bist Faktencheck-Redakteur in der Pruefung.
 SITUATION: Ein Fall liegt unbearbeitet auf dem Tisch und verlangt Einordnung, Belege und Urteil.
 AUFGABE: Verfasse circa 150 Woerter mit Einordnung, zwei Belegen mit Zeile, Funktion, Deutung und Schlussurteil.
+ZEIT: 25 Minuten (5 These, 12 Rahmen-Schreiben, 8 Bilanz-Pruefung).
 RUBRIC (30 XP): Einordnung korrekt (6 XP) | Zwei Belege mit Zeile (10 XP) | Funktion plus Deutung (10 XP) | Fachsprache und Schluss (4 XP).
 
 Klausur-Satz: `AFB-III-Mustersatz: 22 Prozent (Z. 2) bei Sonnenmessung (Z. 5) ohne Randlagen (Z. 6) belegen Lenkung, weil Ausschnitt plus Rahmen Bilanz ersetzt.`

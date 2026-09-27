@@ -133,6 +133,7 @@ Klausur-Satz: `Haeufig verwechselt: Sanft heisst nicht schwach; Wiederholung ist
 ROLLE: Du bist Literaturkritiker der Stadtpost in der Pruefung.
 SITUATION: Ein Fall liegt unbearbeitet auf dem Tisch und verlangt Einordnung, Belege und Urteil.
 AUFGABE: Verfasse circa 150 Woerter mit Einordnung, zwei Belegen mit Zeile, Funktion, Deutung und Schlussurteil.
+ZEIT: 25 Minuten (5 These, 12 Fernbild-Schreiben, 8 Schluss-Pruefung).
 RUBRIC (30 XP): Einordnung korrekt (6 XP) | Zwei Belege mit Zeile (10 XP) | Funktion plus Deutung (10 XP) | Fachsprache und Schluss (4 XP).
 
 Klausur-Satz: `AFB-III-Mustersatz: Fernbilder (Z. 3-4) mit Sendungsappellen (Z. 5, Z. 11) belegen Selbstwerdung durch Ferne, weil Enge erst am Gegenbild sichtbar wird.`

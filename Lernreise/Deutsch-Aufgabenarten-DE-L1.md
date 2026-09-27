@@ -23,9 +23,9 @@ ZIELE (3 Ziele, nach 15 Minuten erreichbar):
 
 HOOK:
 
-Die Pruefungsordnung liegt auf dem Tisch: Vier Aufgabenarten, drei Anforderungsbereiche, ein Zeitplan. Wer Typ und AFB verwechselt, verschenkt Punkte vor dem ersten Satz. Du erhaeltst den Aufgabenarten-Kompass mit Musterverben. Jedes **Operator**-Verb verlangt eine eigene Textsorte.
+Der Klausurplan haengt am Brett: Drei Bloecke, vier Wege, eine Ampel von I bis III. Wer bei Rot ueber Meinung faehrt, verliert die Haelfte vor dem ersten Absatz. Du erhaeltst die Ampelkarte mit Signalverben. Jedes **Signal**-Verb schaltet eine eigene Schreibspur.
 
-Variante B prueft denselben Kompass an einem zweiten Aufgabensatz mit vertauschten Operatoren.
+Variante B prueft dieselbe Ampel an einem zweiten Klausursatz mit vertauschten Signalverben (analysieren gegen eroertern).
 
 Klausur-Satz: `Der Aufgabenartentyp entscheidet ueber Textsorte: Wer den Typ trifft, schreibt die halbe Note.`
 
@@ -33,11 +33,11 @@ Klausur-Satz: `Der Aufgabenartentyp entscheidet ueber Textsorte: Wer den Typ tri
 
 AUSRUESTUNG (5 Instrumente im Koffer):
 
-- **Aufgabenart I**: Die Aufgabenart I verlangt Reproduktion und Analyse: Zusammenfassen, einordnen, Verfahren sichern. Sie prueft Verstehen ohne Wertung.  Mechanismus: Mechanismus: Operatoren wie darstellen und zusammenfassen rufen AFB I-II; Belege tragen die Leistung.  Klausur-Tipp: Klausur-Tipp: Antworte mit Belegkette, nicht mit Meinung.
-- **Aufgabenart II**: Die Aufgabenart II verlangt Analyse und Vergleich zweier Texte oder Positionen. Sie misst Struktur- und Adressatenblick.  Mechanismus: Mechanismus: Vergleichskriterien plus Belegpaare erzeugen Profilm; jede These braucht Spiegelstelle.  Klausur-Tipp: Klausur-Tipp: Arbeite mit Kriterienraster und Paar-Belegen.
-- **Aufgabenart III**: Die Aufgabenart III verlangt Eroerterung mit eigenem Urteil. Sie prueft Abwaegung und Position.  Mechanismus: Mechanismus: Pro- und Contra-Kette plus Gewichtung ergibt Urteil; Staerkstes kommt zuletzt.  Klausur-Tipp: Klausur-Tipp: Schliesse mit gewichteter Position, nicht mit Sowohl-als-auch.
-- **Aufgabenart IV**: Die Aufgabenart IV verlangt gestaltendes Schreiben mit Kommentar. Sie misst Registerwechsel und Reflexion.  Mechanismus: Mechanismus: Adressat plus Anlass bestimmt Form; Kommentar begruendet jede Entscheidung.  Klausur-Tipp: Klausur-Tipp: Halte Form ein und kommentiere drei Eingriffe.
-- **AFB-Gewichtung**: AFB I sichert Wissen, AFB II wendet Verfahren an, AFB III urteilt und gestaltet. Die Gewichtung steht im Operator.  Mechanismus: Mechanismus: deuten und beurteilen rufen AFB III; jede Wertung braucht Beleg und Massstab.  Klausur-Tipp: Klausur-Tipp: Markiere Operatoren und plane Zeit nach AFB.
+- **Aufgabenart I**: Die Aufgabenart I verlangt Reproduktion und Analyse: Zusammenfassen, einordnen, Verfahren sichern. Sie prueft Verstehen ohne Wertung.  Mechanismus: Operatoren wie darstellen und zusammenfassen rufen AFB I-II; Belege tragen die Leistung.  Klausur-Tipp: Antworte mit Belegkette, nicht mit Meinung.
+- **Aufgabenart II**: Die Aufgabenart II verlangt Analyse und Vergleich zweier Standpunkte zum Schulkiosk. Sie misst Struktur- und Adressatenblick.  Mechanismus: Vergleichskriterien plus Belegpaare erzeugen Profil; jede These braucht Spiegelstelle.  Klausur-Tipp: Arbeite mit Kriterienraster und Paar-Belegen.
+- **Aufgabenart III**: Die Aufgabenart III verlangt Eroerterung zur Pausenhofgestaltung mit eigenem Urteil. Sie prueft Abwaegung und Position.  Mechanismus: Pro- und Contra-Kette plus Gewichtung ergibt Urteil; Staerkstes kommt zuletzt.  Klausur-Tipp: Schliesse mit gewichteter Position, nicht mit Sowohl-als-auch.
+- **Aufgabenart IV**: Die Aufgabenart IV verlangt einen Leserbrief mit Kommentar zur Mensaeroeffnung. Sie misst Registerwechsel und Reflexion.  Mechanismus: Adressat plus Anlass bestimmt Form; Kommentar begruendet jede Entscheidung.  Klausur-Tipp: Halte Form ein und kommentiere drei Eingriffe.
+- **AFB-Gewichtung**: AFB I sichert Wissen, AFB II wendet Verfahren an, AFB III urteilt und gestaltet. Die Gewichtung steht im Operator.  Mechanismus: deuten und beurteilen rufen AFB III; jede Wertung braucht Beleg und Massstab.  Klausur-Tipp: Markiere Operatoren und plane Zeit nach AFB.
 
 Klausur-Satz: `Reproduktion, Analyse und Urteil bilden die AFB-Treppe jeder Deutschklausur.`
 
@@ -66,7 +66,7 @@ Bezug zum Konzept: `Operator plus AFB ergibt Verfahren: darstellen sichert, verg
 [Werkzeug: lego]
 
 AUFGABE: Baue aus zwei Operatoren je einen Einleitungssatz und eine Gliederung mit drei Punkten.
-TARGET: Drei Bausteine mit Beleg, je mit Funktion und einer Deutung in vier Saetzen.
+TARGET: Zwei Einleitungssaetze mit Signalverb plus je eine Dreipunkt-Gliederung mit Typ- und AFB-Zuordnung.
 
 HILFE:
 1. Schritt 1: Ordne den Fall in zwei Saetzen ein.
@@ -79,15 +79,15 @@ Klausur-Satz: `Die Baukasten-Regel: Je hoeher der AFB, desto dichter Beleg plus 
 
 ## Schritt 5 — ausprobieren: Das doppelte Spiel Weg A gegen Weg B
 
-VERGLEICH: Weg A arbeitet mikroskopisch (Detail, Beleg, Form), Weg B plant makroskopisch (Strategie, Kontext, Gewicht).
+VERGLEICH: Weg A sichert Typ I-II am Kioskfall (Analyse mit Belegkette), Weg B entscheidet Typ III-IV am Mensafall (Urteil mit Massstab und Leserbriefkommentar).
 
-AUFGABE A: Welche Spur verlangt Weg A? Begruende mit Beleg.
-AUFGABE B: Welche Frage verlangt Weg B? Begruende mit Kontext.
+AUFGABE A: Ordne den Kiosksatz (analysieren, vergleichen) Typ und AFB zu. Begruende mit Operator.
+AUFGABE B: Ordne den Mensasatz (eroertern, gestalten mit Kommentar) Typ und AFB zu. Begruende mit Textsorte.
 
-HILFE: A fragt nach Form und Naehe, also Weg A. B fragt nach Rolle und Ganzem, also Weg B.
+HILFE: A verlangt AFB I-II mit Paar-Belegen zum Kiosk. B verlangt AFB III mit Massstab und drei kommentierten Eingriffen zum Mensabrief.
 
-ANTWORT A: Weg A sichert AFB I-II mikroskopisch: Operator zerlegen, Belegkette planen, Textsorte einhalten.
-ANTWORT B: Weg B entscheidet makroskopisch: Pruefungszeit, Punkteverteilung und Adressatenlage bestimmen Schwerpunkt und Urteilstiefe.
+ANTWORT A: Weg A sichert AFB I-II am Kiosk: Kriterienraster legen, Paar-Belege sichern, Analyseform einhalten.
+ANTWORT B: Weg B entscheidet Typ III-IV an der Mensa: Kosten gegen Teilhabe wiegen, Position unterschreiben, Briefform plus Kommentar liefern.
 
 Klausur-Satz: `Naharbeit sichert das Wie der Form, Fernplanung das Warum der Gewichtung; beide bestehen die Klausur.`
 
@@ -113,6 +113,7 @@ Klausur-Satz: `Haeufig verwechselt: zusammenfassen ist nicht deuten; jede Wertun
 ROLLE: Du bist Klausurplaner der Stufe in der Pruefung.
 SITUATION: Ein Fall liegt unbearbeitet auf dem Tisch und verlangt Einordnung, Belege und Urteil.
 AUFGABE: Verfasse circa 150 Woerter mit Einordnung, zwei Belegen, Funktion, Deutung und Schlussurteil.
+ZEIT: 25 Minuten (5 Einordnung, 12 Schreiben, 8 Pruefung mit Ampel-Check).
 RUBRIC (30 XP): Einordnung korrekt (6 XP) | Zwei Belege (10 XP) | Funktion plus Deutung (10 XP) | Fachsprache und Schluss (4 XP).
 
 Klausur-Satz: `AFB-III-Mustersatz: Die Aufgabe verlangt beurteilen (AFB III); daher folgt nach Analyse ein gewichtetes Urteil mit Beleg und Massstab.`

@@ -23,7 +23,7 @@ ZIELE (3 Ziele, nach 15 Minuten erreichbar):
 
 HOOK:
 
-Auf dem Schulhof urteilen zwei Lager ueber einen Satz. Die Linguistik misst statt zu moralisieren. **System** gegen **Gefuehl** eroentrant die Debatte. Ein Aufnahmegerät entscheidet, was Regel und was Vorurteil ist.
+Auf dem Schulhof urteilen zwei Lager ueber einen Satz. Die Linguistik misst statt zu moralisieren. **System** gegen **Gefuehl** eroeffnet die Debatte. Ein Aufnahmegerät entscheidet, was Regel und was Vorurteil ist.
 
 Variante B verlegt die Debatte in die Klassengruppe mit Sprachnachrichten und vergleicht Ton gegen Transkript.
 
@@ -33,11 +33,11 @@ Klausur-Satz: `Regel schlaegt Fehler; Zugehoerigkeit ist Funktion.`
 
 AUSRUESTUNG (5 Instrumente im Koffer):
 
-- **Sprachwandel**: Sprache wandelt sich durch Gebrauch; Wandel ist normal, nicht Verfall.  Mechanismus: Mechanismus: Kontakt plus Jugend plus Medien beschleunigt; Standard folgt spaet.  Klausur-Tipp: Klausur-Tipp: Nenne Ausloeser, nicht nur Urteil.
-- **Kiezdeutsch**: Kiezdeutsch ist regelhaftes Multiethnolekt mit eigener Grammatik. Es ist System, nicht Fehler.  Mechanismus: Mechanismus: Wegfall plus neue Partikeln plus Prosodie ergibt Stil; Funktion ist Zugehoerigkeit.  Klausur-Tipp: Klausur-Tipp: Belege Regel statt Fehler.
-- **Verfalls-These**: Die Verfalls-These deutet Wandel als Zerfall und moralisiert. Sie misst Ideal gegen Alltag.  Mechanismus: Mechanismus: Norm plus Nostalgie erzeugt Empörung; Belege bleiben anekdotisch.  Klausur-Tipp: Klausur-Tipp: Entlarve Norm und Stichprobe.
-- **Bereicherungs-These**: Die Bereicherungs-These liest Kontakt als Ressource und Systemleistung. Vielfalt traegt Ausdruck.  Mechanismus: Mechanismus: Funktion plus Kreativitaet belegt Gewinn; Sprecher wechseln kompetent.  Klausur-Tipp: Klausur-Tipp: Belege Codeswitching als Kompetenz.
-- **Debattenurteil**: Das Debattenurteil wägt mit Massstab: Verstaendlichkeit, Teilhabe, Ausdruck.  Mechanismus: Mechanismus: Kriterium plus Beleg ergibt Position; Ausblick nennt Foerderung.  Klausur-Tipp: Klausur-Tipp: Schliesse mit Massstab und Massnahme.
+- **Sprachwandel**: Sprache wandelt sich durch Gebrauch; Wandel ist normal, nicht Verfall.  Mechanismus: Kontakt plus Jugend plus Medien beschleunigt; Standard folgt spaet.  Klausur-Tipp: Nenne Ausloeser, nicht nur Urteil.
+- **Kiezdeutsch**: Kiezdeutsch ist regelhaftes Multiethnolekt mit eigener Grammatik. Es ist System, nicht Fehler.  Mechanismus: Wegfall plus neue Partikeln plus Prosodie ergibt Stil; Funktion ist Zugehoerigkeit.  Klausur-Tipp: Belege Regel statt Fehler.
+- **Verfalls-These**: Die Verfalls-These deutet Wandel als Zerfall und moralisiert. Sie misst Ideal gegen Alltag.  Mechanismus: Norm plus Nostalgie erzeugt Empörung; Belege bleiben anekdotisch.  Klausur-Tipp: Entlarve Norm und Stichprobe.
+- **Bereicherungs-These**: Die Bereicherungs-These liest Kontakt als Ressource und Systemleistung. Vielfalt traegt Ausdruck.  Mechanismus: Funktion plus Kreativitaet belegt Gewinn; Sprecher wechseln kompetent.  Klausur-Tipp: Belege Codeswitching als Kompetenz.
+- **Debattenurteil**: Das Debattenurteil wägt mit Massstab: Verstaendlichkeit, Teilhabe, Ausdruck.  Mechanismus: Kriterium plus Beleg ergibt Position; Ausblick nennt Foerderung.  Klausur-Tipp: Schliesse mit Massstab und Massnahme.
 
 Klausur-Satz: `Wandel, System und Massstab definieren die Debatte.`
 
@@ -45,7 +45,9 @@ Klausur-Satz: `Wandel, System und Massstab definieren die Debatte.`
 
 MECHANISMUS (Tiefenbau):
 
-System gegen Mythos: **Regelbeleg** schlaegt **Empörung**.
+System gegen Mythos: **Regelbeleg** schlaegt **Empoerung**.
+
+Regelkette: Hof-Beleg braucht Systempruefung, Systempruefung braucht Thesen-Test auf Norm und Stichprobe, Thesen-Test braucht Massstabsurteil mit Massnahme. Zweite Ebene: Jedes Urteil beantwortet drei Fragen: Welche Regel traegt, welche Norm verfaelscht, welche Teilhabefolge gilt. Wer diese Kette verfehlt, moralisiert statt zu messen.
 
 Der Weg: Sichere Sprachbelege mit Kontext. Pruefe These auf Norm und Stichprobe. Urteile mit Massstab. So wird Debatte zur Analyse.
 
@@ -66,7 +68,7 @@ Bezug zum Konzept: `Beleg plus Massstab ergibt Urteil.`
 [Werkzeug: oral-timer]
 
 AUFGABE: Sammle drei Hof-Belege, pruefe sie auf Regel und bilde je einen Pro- und Contra-Satz.
-TARGET: Drei Bausteine mit Beleg, je mit Funktion und einer Deutung in vier Saetzen.
+TARGET: Drei Hof-Belege mit Regelpruefung, je mit Thesen-Test und Massstabsbezug in vier Saetzen.
 
 HILFE:
 1. Schritt 1: Ordne den Fall in zwei Saetzen ein.
@@ -113,6 +115,7 @@ Klausur-Satz: `Register misst Zugehoerigkeit, nicht Klugheit.`
 ROLLE: Du bist Debattenleiter der Podiumsdiskussion in der Pruefung.
 SITUATION: Ein Fall liegt unbearbeitet auf dem Tisch und verlangt Einordnung, Belege und Urteil.
 AUFGABE: Verfasse circa 150 Woerter mit Einordnung, zwei Belegen, Funktion, Deutung und Schlussurteil.
+ZEIT: 25 Minuten (5 Sammeln, 12 Regel-Schreiben, 8 Massstab-Pruefung).
 RUBRIC (30 XP): Einordnung korrekt (6 XP) | Zwei Belege (10 XP) | Funktion plus Deutung (10 XP) | Fachsprache und Schluss (4 XP).
 
 Klausur-Satz: `AFB-III-Satz braucht Regelbeleg, staerksten Einwand und Massstabsurteil.`

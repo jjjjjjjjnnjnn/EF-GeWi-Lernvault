@@ -53,7 +53,7 @@ Klausur-Satz: `定义句——CN: 四耳、错位与我信息是三角。DE: Vie
 
 中文深层解构：先读中文抓链条，再用德语写判断。
 
-德语：CN: 机制是发送四层、接收一耳，错位即冲突。DE: Senden auf vier Seiten, Hoeren auf einem Ohr: Die **Differenz** erzeugt Konflikt.
+德语：CN: 机制是发送四层、接收一耳，错位即冲突。规则链是拆四层、定主导耳、造我信息桥。DE: Senden auf vier Seiten, Hoeren auf einem Ohr: Die **Differenz** erzeugt Konflikt. Regelkette: Zerlegung, Ohr-Bestimmung, Ich-Botschaft als Bruecke.
 
 Der Weg: Zerlege jede Aeusserung in vier Seiten. Bestimme das dominante Hoer-Ohr. Schlage Ich-Botschaft als Bruecke vor.
 
@@ -75,7 +75,10 @@ Bezug zum Konzept: `传导句——CN: 发送层加接收耳等于冲突度。DE
 
 中文任务：Zerlege zwei Alltagsaesserungen in vier Seiten und entwirf je eine Ich-Botschaft als Antwort.
 德语 AUFGABE: Zerlege zwei Alltagsaesserungen in vier Seiten und entwirf je eine Ich-Botschaft als Antwort.
-TARGET（目标）：三个证据，各配功能与判断，共四句。
+TARGET（目标）：两段转录的四层拆解，各配我信息，共四句。
+
+TRANSKRIPT A（食堂中午）：CN: 收银催促，学生小声要面，收银回呛，学生改要米饭。DE: KASSE: Naechster! Schnell bitte. — SCHUELER: Einmal Nudeln, bitte, ohne Koriander. — KASSE: Ohne was? Hier gibt es, was es gibt. — SCHUELER: Dann nehme ich Reis, danke.
+TRANSKRIPT B（班级群语音）：CN: Lea 催会议记录，Tim 说晚上，Lea 说早上就交。DE: LEA: Kann mal jemand das Protokoll schicken? Ich warte seit gestern. — TIM: Chill, kommt heute Abend. — LEA: Abend ist zu spaet, Abgabe ist morgen frueh.
 
 HILFE（中文在前）：
 1. 中文：两句交代背景。德语：Ordne den Fall in zwei Saetzen ein.
@@ -89,11 +92,11 @@ Klausur-Satz: `规律句——CN: 规律是关系耳越响，事实越哑。DE: 
 
 ## Schritt 5 — ausprobieren: Das doppelte Spiel Weg A gegen Weg B
 
-VERGLEICH（中文先行）：Weg A 微观做细节，Weg B 宏观定策略。
-德语：Weg A arbeitet mikroskopisch, Weg B plant makroskopisch.
+VERGLEICH（中文先行）：Weg A 做听耳诊断（哪只耳主导此句），Weg B 建规则策略（谈话规则加我信息）。
+德语：Weg A hoert mit Ohr-Diagnose, Weg B baut mit Regel-Strategie.
 
-AUFGABE A（中文：哪条线索走近路？）：Welche Spur verlangt Weg A?
-AUFGABE B（中文：哪个整体问题走远路？）：Welche Frage verlangt Weg B?
+AUFGABE A（中文：哪条线索走近路？配语气证据）：Bestimme zu zwei Mensa-Aeusserungen je das dominante Hoer-Ohr mit Beleg.
+AUFGABE B（中文：哪个整体问题走远路？配规则）：Entwirf zu derselben Differenz zwei Gespraechsregeln mit Ich-Botschaft.
 
 HILFE：A问形式细节选近路Weg A；B问整体结构选远路Weg B。
 
@@ -127,6 +130,7 @@ ROLLE（中文）：你是Mediationscoach der Klasse，负责审稿。
 德语 ROLLE: Du bist Mediationscoach der Klasse.
 SITUATION: Fall 18 liegt unbearbeitet vor dir.
 AUFGABE（中文）：150词左右，含背景、两个证据、功能判断。
+ZEIT: 25 Minuten (5 Zerlegen, 12 Ohr-Schreiben, 8 Bruecken-Pruefung).
 RUBRIC (30 XP): Einordnung (6 XP) | Belege (10 XP) | Funktion plus Deutung (10 XP) | Fachsprache (4 XP).
 
 Klausur-Satz: `满分句——CN: 满分句须含四层归属、主导耳与我信息。DE: AFB-III-Satz braucht Vier-Seiten-Zuordnung, Horohr und Ich-Botschaft.`

@@ -33,11 +33,11 @@ Klausur-Satz: `Ein Satz, vier Seiten, ein Ohr: Differenz erzeugt Streit.`
 
 AUSRUESTUNG (5 Instrumente im Koffer):
 
-- **Vier-Ohren-Modell**: Jede Nachricht enthaelt Sach-, Beziehungs-, Selbst- und Appellseite. Empfaenger hoeren selektiv.  Mechanismus: Mechanismus: Betonung plus Lage waehlt das dominante Ohr; Missverstaendnis folgt der Verwechslung.  Klausur-Tipp: Klausur-Tipp: Ordne jede Deutung einem Ohr zu.
-- **Sachinhalt**: Der Sachinhalt nennt pruefbare Daten und Fakten. Er entscheidet Richtig oder Falsch.  Mechanismus: Mechanismus: Zahl plus Quelle plus Klarheit sichert Verstaendnis.  Klausur-Tipp: Klausur-Tipp: Formuliere ihn in einem Satz.
-- **Beziehung**: Die Beziehung zeigt, wie Sender den Empfaenger sieht. Ton und Du-Botschaft verraten sie.  Mechanismus: Mechanismus: Tonfall plus Ich- oder Du-Formel erzeugt Naehe oder Distanz.  Klausur-Tipp: Klausur-Tipp: Zitiere Ton-Signal als Beleg.
-- **Selbstkundgabe**: Die Selbstkundgabe offenbart Gefuehl und Motiv des Senders. Jede Nachricht enthaelt Ich.  Mechanismus: Mechanismus: Ich-Anteil plus Geste verrät Lage; Verstellung braucht Aufwand.  Klausur-Tipp: Klausur-Tipp: Benenne Gefuehl mit Signal.
-- **Appell**: Der Appell fordert offen oder versteckt zum Handeln auf. Bitten tarnen sich oft.  Mechanismus: Mechanismus: Imperativ oder Wunsch plus Lage erzeugt Druck; Nein braucht Mut.  Klausur-Tipp: Klausur-Tipp: Formuliere den Appell ausdruecklich.
+- **Vier-Ohren-Modell**: Jede Nachricht enthaelt Sach-, Beziehungs-, Selbst- und Appellseite. Empfaenger hoeren selektiv.  Mechanismus: Betonung plus Lage waehlt das dominante Ohr; Missverstaendnis folgt der Verwechslung.  Klausur-Tipp: Ordne jede Deutung einem Ohr zu.
+- **Sachinhalt**: Der Sachinhalt nennt pruefbare Daten und Fakten. Er entscheidet Richtig oder Falsch.  Mechanismus: Zahl plus Quelle plus Klarheit sichert Verstaendnis.  Klausur-Tipp: Formuliere ihn in einem Satz.
+- **Beziehung**: Die Beziehung zeigt, wie Sender den Empfaenger sieht. Ton und Du-Botschaft verraten sie.  Mechanismus: Tonfall plus Ich- oder Du-Formel erzeugt Naehe oder Distanz.  Klausur-Tipp: Zitiere Ton-Signal als Beleg.
+- **Selbstkundgabe**: Die Selbstkundgabe offenbart Gefuehl und Motiv des Senders. Jede Nachricht enthaelt Ich.  Mechanismus: Ich-Anteil plus Geste verrät Lage; Verstellung braucht Aufwand.  Klausur-Tipp: Benenne Gefuehl mit Signal.
+- **Appell**: Der Appell fordert offen oder versteckt zum Handeln auf. Bitten tarnen sich oft.  Mechanismus: Imperativ oder Wunsch plus Lage erzeugt Druck; Nein braucht Mut.  Klausur-Tipp: Formuliere den Appell ausdruecklich.
 
 Klausur-Satz: `Vier Ohren, Differenz und Ich-Botschaft definieren das Modell.`
 
@@ -46,6 +46,8 @@ Klausur-Satz: `Vier Ohren, Differenz und Ich-Botschaft definieren das Modell.`
 MECHANISMUS (Tiefenbau):
 
 Senden auf vier Seiten, Hoeren auf einem Ohr: Die **Differenz** erzeugt Konflikt.
+
+Regelkette: Aeusserung braucht Vier-Seiten-Zerlegung, Zerlegung braucht Ohr-Bestimmung, Ohr-Bestimmung braucht Ich-Botschaft als Bruecke. Zweite Ebene: Jede Bruecke beantwortet drei Fragen: Welches Gefuehl liegt vor, welcher Wunsch folgt, welche Bitte schliesst. Wer diese Kette verfehlt, hoert nur das falsche Ohr.
 
 Der Weg: Zerlege jede Aeusserung in vier Seiten. Bestimme das dominante Hoer-Ohr. Schlage Ich-Botschaft als Bruecke vor.
 
@@ -66,7 +68,10 @@ Bezug zum Konzept: `Sendeseiten plus Hoer-Ohr ergibt Konflikthoehe.`
 [Werkzeug: oral-timer]
 
 AUFGABE: Zerlege zwei Alltagsaesserungen in vier Seiten und entwirf je eine Ich-Botschaft als Antwort.
-TARGET: Drei Bausteine mit Beleg, je mit Funktion und einer Deutung in vier Saetzen.
+TARGET: Zwei Transkript-Zerlegungen mit vier Seiten je Aeusserung und je einer Ich-Botschaft in vier Saetzen.
+
+TRANSKRIPT A (Mensa, Mittag): KASSE: Naechster! Was soll es sein, schnell bitte. — SCHUELER (leise): Einmal Nudeln, bitte, ohne Koriander. — KASSE (laut): Ohne was? Hier gibt es, was es gibt. — SCHUELER: Dann nehme ich Reis, danke.
+TRANSKRIPT B (Klassengruppe, Sprachnachricht): LEA (genervt): Kann mal jemand das Protokoll schicken? Ich warte seit gestern. — TIM (knapp): Chill, kommt heute Abend. — LEA: Abend ist zu spaet, Abgabe ist morgen frueh.
 
 HILFE:
 1. Schritt 1: Ordne den Fall in zwei Saetzen ein.
@@ -79,12 +84,12 @@ Klausur-Satz: `Je lauter das Beziehungsohr, desto leiser der Sachinhalt.`
 
 ## Schritt 5 — ausprobieren: Das doppelte Spiel Weg A gegen Weg B
 
-VERGLEICH: Weg A arbeitet mikroskopisch (Detail, Beleg, Form), Weg B plant makroskopisch (Strategie, Kontext, Gewicht).
+VERGLEICH: Weg A hoert mit Ohr-Diagnose (welches Hoer-Ohr dominiert Satz, Ton und Geste dieser Zeile), Weg B baut mit Regel-Strategie (Gespraechsregeln, Feedback und Metakommunikation als Ausweg aus der Differenz).
 
-AUFGABE A: Welche Spur verlangt Weg A? Begruende mit Beleg.
-AUFGABE B: Welche Frage verlangt Weg B? Begruende mit Kontext.
+AUFGABE A: Bestimme zu zwei Mensa-Aeusserungen je das dominante Hoer-Ohr mit Beleg. Begruende mit Ton-Signal.
+AUFGABE B: Entwirf zu derselben Differenz zwei Gespraechsregeln mit Ich-Botschaft als Bruecke. Begruende mit Kontext.
 
-HILFE: A fragt nach Form und Naehe, also Weg A. B fragt nach Rolle und Ganzem, also Weg B.
+HILFE: A fragt nach Ohr und Naehe, also Ohr-Diagnose. B fragt nach Loesung und Ganzem, also Regel-Strategie.
 
 ANTWORT A: Weg A analysiert mikroskopisch Satz, Ton und Geste: Welches Ohr dominiert diese Zeile.
 ANTWORT B: Weg B loest makroskopisch den Konflikt: Gespraechsregeln, Feedback und Metakommunikation als Ausweg.
@@ -113,6 +118,7 @@ Klausur-Satz: `Appell als Sachinhalt missversteht beides.`
 ROLLE: Du bist Mediationscoach der Klasse in der Pruefung.
 SITUATION: Ein Fall liegt unbearbeitet auf dem Tisch und verlangt Einordnung, Belege und Urteil.
 AUFGABE: Verfasse circa 150 Woerter mit Einordnung, zwei Belegen, Funktion, Deutung und Schlussurteil.
+ZEIT: 25 Minuten (5 Zerlegen, 12 Ohr-Schreiben, 8 Bruecken-Pruefung).
 RUBRIC (30 XP): Einordnung korrekt (6 XP) | Zwei Belege (10 XP) | Funktion plus Deutung (10 XP) | Fachsprache und Schluss (4 XP).
 
 Klausur-Satz: `AFB-III-Satz braucht Vier-Seiten-Zuordnung, Horohr und Ich-Botschaft.`

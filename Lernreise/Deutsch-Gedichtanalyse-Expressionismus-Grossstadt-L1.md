@@ -133,6 +133,7 @@ Klausur-Satz: `Haeufig verwechselt: Inhaltsangabe ist keine Analyse; erst Verfah
 ROLLE: Du bist Feuilletonkritiker der Stadtpost in der Pruefung.
 SITUATION: Ein Fall liegt unbearbeitet auf dem Tisch und verlangt Einordnung, Belege und Urteil.
 AUFGABE: Verfasse circa 150 Woerter mit Einordnung, zwei Belegen mit Zeile, Funktion, Deutung und Schlussurteil.
+ZEIT: 25 Minuten (5 Hypothese, 12 Bild-Schreiben, 8 Epochen-Pruefung).
 RUBRIC (30 XP): Einordnung korrekt (6 XP) | Zwei Belege mit Zeile (10 XP) | Funktion plus Deutung (10 XP) | Fachsprache und Schluss (4 XP).
 
 Klausur-Satz: `AFB-III-Mustersatz: Die Reihungen (Z. 5, Z. 11) und Apostrophen (Z. 4, Z. 12) belegen die Hypothese der entseelten Stadt, weil Formzerfall Seelenzerfall spiegelt.`

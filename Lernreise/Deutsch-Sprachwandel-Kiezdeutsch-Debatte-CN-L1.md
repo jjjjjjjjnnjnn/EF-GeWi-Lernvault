@@ -26,11 +26,11 @@ ZIELE（3条，15分钟可达成，先读中文，再记德语）：
 
 HOOK：
 
-CN: 操场上，“Alter, isch geh Kino”引来两种判决：堕落还是创造。语言学家带着录音笔来了。DE: Auf dem Schulhof urteilen zwei Lager ueber einen Satz. Die Linguistik misst statt zu moralisieren. **System** gegen **Gefuehl** eroentrant die Debatte.
+CN: 操场上，“Alter, isch geh Kino”引来两种判决：堕落还是创造。语言学家带着录音笔来了。DE: Auf dem Schulhof urteilen zwei Lager ueber einen Satz. Die Linguistik misst statt zu moralisieren. **System** gegen **Gefuehl** eroeffnet die Debatte.
 
 CN: 变体 B 把同一辩论搬进班级语音群。DE: Variante B verlegt die Debatte in die Klassengruppe mit Sprachnachrichten.
 
-Klausur-Satz: `矛盾句——CN: 有规则即非错， belonging 即功能。DE: Regel schlaegt Fehler; Zugehoerigkeit ist Funktion.`
+Klausur-Satz: `矛盾句——CN: 有规则即非错， Zugehoerigkeit 即功能。DE: Regel schlaegt Fehler; Zugehoerigkeit ist Funktion.`
 
 ## Schritt 2 — entdecken: Die Ausruestungskiste zum Fall
 
@@ -53,7 +53,7 @@ Klausur-Satz: `定义句——CN: 变迁、系统与标准构成三角。DE: Wan
 
 中文深层解构：先读中文抓链条，再用德语写判断。
 
-德语：CN: 机制是系统对神话：规则证据对道德感叹。DE: System gegen Mythos: **Regelbeleg** schlaegt **Empörung**.
+德语：CN: 机制是系统对神话：规则证据对道德感叹。规则链是验规则、测抽样、标准裁决。DE: System gegen Mythos: **Regelbeleg** schlaegt **Empoerung**. Regelkette: Systempruefung, Thesen-Test, Massstabsurteil.
 
 Der Weg: Sichere Sprachbelege mit Kontext. Pruefe These auf Norm und Stichprobe. Urteile mit Massstab. So wird Debatte zur Analyse.
 
@@ -75,7 +75,7 @@ Bezug zum Konzept: `传导句——CN: 证据加标准等于裁决。DE: Beleg p
 
 中文任务：Sammle drei Hof-Belege, pruefe sie auf Regel und bilde je einen Pro- und Contra-Satz.
 德语 AUFGABE: Sammle drei Hof-Belege, pruefe sie auf Regel und bilde je einen Pro- und Contra-Satz.
-TARGET（目标）：三个证据，各配功能与判断，共四句。
+TARGET（目标）：三个操场证据，各配规则检验与标准裁决，共四句。
 
 HILFE（中文在前）：
 1. 中文：两句交代背景。德语：Ordne den Fall in zwei Saetzen ein.
@@ -127,6 +127,7 @@ ROLLE（中文）：你是Debattenleiter der Podiumsdiskussion，负责审稿。
 德语 ROLLE: Du bist Debattenleiter der Podiumsdiskussion.
 SITUATION: Fall 22 liegt unbearbeitet vor dir.
 AUFGABE（中文）：150词左右，含背景、两个证据、功能判断。
+ZEIT: 25 Minuten (5 Sammeln, 12 Regel-Schreiben, 8 Massstab-Pruefung).
 RUBRIC (30 XP): Einordnung (6 XP) | Belege (10 XP) | Funktion plus Deutung (10 XP) | Fachsprache (4 XP).
 
 Klausur-Satz: `满分句——CN: 满分句须含规则证据、反方最强论与标准裁决。DE: AFB-III-Satz braucht Regelbeleg, staerksten Einwand und Massstabsurteil.`

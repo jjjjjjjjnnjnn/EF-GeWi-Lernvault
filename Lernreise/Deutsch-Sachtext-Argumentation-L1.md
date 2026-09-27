@@ -33,11 +33,11 @@ Klausur-Satz: `Der Leserbrief braucht Gewicht: Ein starker Beleg schlaegt drei P
 
 AUSRUESTUNG (5 Instrumente im Koffer):
 
-- **Argument**: Das Argument verbindet Behauptung mit Begruendung. Es antwortet auf Warum. Ohne Weil bleibt Phrase.  Mechanismus: Mechanismus: These plus Grund plus Beleg ergibt Baustein; Staerke misst sich an Beleg.  Klausur-Tipp: Klausur-Tipp: Ein Absatz, ein Argument, ein Beleg.
-- **Belegtyp**: Belegtypen sind Statistik, Beispiel, Autoritaet und Erfahrung. Sie tragen unterschiedlich weit.  Mechanismus: Mechanismus: Zahl plus Quelle traegt am weitesten; Beispiel illustriert nur.  Klausur-Tipp: Klausur-Tipp: Nenne Typ und Grenze jedes Belegs.
-- **Gegenargument**: Das Gegenargument nennt den staerksten Einwand fair. Es prueft die Kette.  Mechanismus: Mechanismus: Einwand plus Entkraeftung oder Zugestaendnis staerkt Urteil.  Klausur-Tipp: Klausur-Tipp: Entkraefte oder gestehe zu, nie verschweigen.
-- **Argumentationsgang**: Der Argumentationsgang ordnet Bausteine nach Gewicht: steigend oder fallend. Ordnung erzeugt Ueberzeugung.  Mechanismus: Mechanismus: Schwach zuerst, stark zuletzt (Klimax) oder umgekehrt zur Sicherung.  Klausur-Tipp: Klausur-Tipp: Begruende deine Anordnung.
-- **Fazit**: Das Fazit bündelt Rangfolge und Position. Es antwortet auf die Frage.  Mechanismus: Mechanismus: Gewicht plus Folge ergibt Schluss; Ausblick oeffnet.  Klausur-Tipp: Klausur-Tipp: Ein Satz Antwort, ein Satz Folge.
+- **Argument**: Das Argument verbindet Behauptung mit Begruendung. Es antwortet auf Warum. Ohne Weil bleibt Phrase.  Mechanismus: These plus Grund plus Beleg ergibt Baustein; Staerke misst sich an Beleg.  Klausur-Tipp: Ein Absatz, ein Argument, ein Beleg.
+- **Belegtyp**: Belegtypen sind Statistik, Beispiel, Autoritaet und Erfahrung. Sie tragen unterschiedlich weit.  Mechanismus: Zahl plus Quelle traegt am weitesten; Beispiel illustriert nur.  Klausur-Tipp: Nenne Typ und Grenze jedes Belegs.
+- **Gegenargument**: Das Gegenargument nennt den staerksten Einwand fair. Es prueft die Kette.  Mechanismus: Einwand plus Entkraeftung oder Zugestaendnis staerkt Urteil.  Klausur-Tipp: Entkraefte oder gestehe zu, nie verschweigen.
+- **Argumentationsgang**: Der Argumentationsgang ordnet Bausteine nach Gewicht: steigend oder fallend. Ordnung erzeugt Ueberzeugung.  Mechanismus: Schwach zuerst, stark zuletzt (Klimax) oder umgekehrt zur Sicherung.  Klausur-Tipp: Begruende deine Anordnung.
+- **Fazit**: Das Fazit bündelt Rangfolge und Position. Es antwortet auf die Frage.  Mechanismus: Gewicht plus Folge ergibt Schluss; Ausblick oeffnet.  Klausur-Tipp: Ein Satz Antwort, ein Satz Folge.
 
 Klausur-Satz: `Baustein, Belegtyp und Gang definieren jede Argumentation.`
 
@@ -46,6 +46,8 @@ Klausur-Satz: `Baustein, Belegtyp und Gang definieren jede Argumentation.`
 MECHANISMUS (Tiefenbau):
 
 Argumentation arbeitet mit **Baustein plus Gewicht**. Zahl der Gruende zaehlt nicht, Gewicht entscheidet.
+
+Regelkette: Behauptung braucht Weil-Satz, Weil-Satz braucht Belegtyp, Belegtyp braucht Gewichtsplatz. Zweite Ebene: Jeder Baustein beantwortet drei Fragen: Welcher Typ traegt, welche Grenze gilt, welcher Platz im Gang ueberzeugt. Wer diese Kette verfehlt, zaehlt nur auf.
 
 Der Weg: Sammle Bausteine mit Belegtyp. Ordne nach Gewicht. Schliesse mit Fazit und Folge. So wird Brief zur Linie.
 
@@ -66,7 +68,7 @@ Bezug zum Konzept: `Grund plus Beleg plus Gewicht ergibt Fazit: Ordnung ueberzeu
 [Werkzeug: lego]
 
 AUFGABE: Baue zu einer Streitfrage drei Bausteine mit Belegtyp und ordne sie als Klimax.
-TARGET: Drei Bausteine mit Beleg, je mit Funktion und einer Deutung in vier Saetzen.
+TARGET: Drei Nachtbus-Bausteine mit Belegtyp als Klimax, je mit Gewicht und Fazitbezug in vier Saetzen.
 
 HILFE:
 1. Schritt 1: Ordne den Fall in zwei Saetzen ein.
@@ -79,15 +81,15 @@ Klausur-Satz: `Die Baustein-Regel: Je naeher das Fazit, desto staerker der Baust
 
 ## Schritt 5 — ausprobieren: Das doppelte Spiel Weg A gegen Weg B
 
-VERGLEICH: Weg A arbeitet mikroskopisch (Detail, Beleg, Form), Weg B plant makroskopisch (Strategie, Kontext, Gewicht).
+VERGLEICH: Weg A ordnet als Klimax zum Nachtbus (schwach zuerst, Teilhabe-Beleg als Schlusspunkt), Weg B ordnet als Antiklimax (staerkster Beleg zuerst zur Sicherung gegen ungeduldige Leser).
 
-AUFGABE A: Welche Spur verlangt Weg A? Begruende mit Beleg.
-AUFGABE B: Welche Frage verlangt Weg B? Begruende mit Kontext.
+AUFGABE A: Baue die Nachtbus-Kette als Klimax (Kosten, Laerm, Teilhabe) mit Belegtyp pro Baustein. Begruende mit Gewicht.
+AUFGABE B: Baue dieselbe Kette als Antiklimax (Teilhabe zuerst, Kosten zuletzt) fuer eilige Stadtraete. Begruende mit Adressat.
 
-HILFE: A fragt nach Form und Naehe, also Weg A. B fragt nach Rolle und Ganzem, also Weg B.
+HILFE: A stellt die These voran und steigert zum Fazit. B sichert mit dem Staerksten zuerst und laesst schwache Bausteine folgen.
 
-ANTWORT A: Weg A baut mikroskopisch Bausteine: Weil-Saetze pruefen, Belegtypen benennen, Luecken markieren.
-ANTWORT B: Weg B plant makroskopisch Linie: Klimax oder Antiklimax je nach Adressat und staerkstem Beleg.
+ANTWORT A: Weg A baut Klimax Baustein fuer Baustein: Weil-Saetze pruefen, Belegtypen benennen, Teilhabe als Pointe ans Fazit stellen.
+ANTWORT B: Weg B plant Antiklimax als Strategie: Teilhabe-Beleg zuerst, Laerm- und Kosten-Bausteine danach als Absicherung.
 
 Klausur-Satz: `Naharbeit prueft das Wie der Belege, Fernplanung das Warum der Ordnung; beide tragen das Fazit.`
 
@@ -113,6 +115,7 @@ Klausur-Satz: `Haeufig verwechselt: Beispiel ist kein Beweis; Typ und Grenze nen
 ROLLE: Du bist Kommentarredakteur der Schulzeitung in der Pruefung.
 SITUATION: Ein Fall liegt unbearbeitet auf dem Tisch und verlangt Einordnung, Belege und Urteil.
 AUFGABE: Verfasse circa 150 Woerter mit Einordnung, zwei Belegen, Funktion, Deutung und Schlussurteil.
+ZEIT: 25 Minuten (5 Sammeln, 12 Klimax-Schreiben, 8 Belegtyp-Pruefung).
 RUBRIC (30 XP): Einordnung korrekt (6 XP) | Zwei Belege (10 XP) | Funktion plus Deutung (10 XP) | Fachsprache und Schluss (4 XP).
 
 Klausur-Satz: `AFB-III-Mustersatz: Obwohl der Kosten-Einwand belegt ist, wiegt Teilhabe schwerer, weil der Massstab Zugang gilt.`

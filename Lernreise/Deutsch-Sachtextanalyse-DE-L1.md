@@ -133,6 +133,7 @@ Klausur-Satz: `Haeufig verwechselt: Beispiel ist kein Beweis; erst Kette aus Que
 ROLLE: Du bist Faktencheck-Redakteur in der Pruefung.
 SITUATION: Ein Fall liegt unbearbeitet auf dem Tisch und verlangt Einordnung, Belege und Urteil.
 AUFGABE: Verfasse circa 150 Woerter mit Einordnung, zwei Belegen mit Zeile, Funktion, Deutung und Schlussurteil.
+ZEIT: 25 Minuten (5 These, 12 Lenkungs-Schreiben, 8 Quellen-Pruefung).
 RUBRIC (30 XP): Einordnung korrekt (6 XP) | Zwei Belege mit Zeile (10 XP) | Funktion plus Deutung (10 XP) | Fachsprache und Schluss (4 XP).
 
 Klausur-Satz: `AFB-III-Mustersatz: Die 87 Prozent (Z. 2) ohne Vergleichsgruppe (Z. 7) mit Abwertung (Z. 5, Z. 11) belegen Lenkung, weil Belegluecke plus Wortfeld Zustimmung erzwingt.`

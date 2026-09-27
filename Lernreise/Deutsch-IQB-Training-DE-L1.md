@@ -23,21 +23,21 @@ ZIELE (3 Ziele, nach 15 Minuten erreichbar):
 
 HOOK:
 
-Der IQB-Pool oeffnet seine Tueren: Zwei unbekannte Texte, ein Operator, neunzig Minuten. Wer das Verfahren kennt, bleibt ruhig. Du erhaeltst das IQB-Trainingsbrett mit Zeitplan. Jede **Minute** braucht einen **Beleg**.
+Der IQB-Pool schickt zwei Sachtexte zum digitalen Lernen: Kommentar gegen Kommentar, ein Doppeloperator, sechzig Minuten. Wer das Raster zuerst legt, bleibt ruhig. Du erhaeltst das IQB-Trainingsbrett mit Zeitplan. Jeder **Vergleich** braucht ein **Kriterium**.
 
-Variante B trainiert denselben Pool an einem zweiten Textpaar mit engerem Zeitplan.
+Variante B trainiert denselben Pool an einem zweiten Textpaar zum Schulkiosk mit engerem Zeitplan und vertauschten Operatoren (darstellen gegen beurteilen).
 
-Klausur-Satz: `Der Pool belohnt Verfahren: Wer Kriterien zuerst legt, vergleicht sauber.`
+Klausur-Satz: `Der Pool belohnt Raster: Wer Kriterien zuerst legt, vergleicht das Lerntext-Paar sauber.`
 
 ## Schritt 2 — entdecken: Die Ausruestungskiste zum Fall
 
 AUSRUESTUNG (5 Instrumente im Koffer):
 
-- **IQB-Operator**: IQB-Operatoren steuern Tiefe und Textsorte bundesweit vergleichbar. Jedes Verb bindet AFB.  Mechanismus: Mechanismus: analysieren ruft Verfahren, beurteilen ruft Massstab; Verben kombifizieren Leistungen.  Klausur-Tipp: Klausur-Tipp: Zerlege Doppeloperatoren der Reihe nach.
-- **Textvergleich**: Der Textvergleich misst zwei Texte an gemeinsamen Kriterien. Er sucht Profil, nicht Sieger.  Mechanismus: Mechanismus: Kriterienraster plus Paar-Belege erzeugt Kontrast; jede Zeile braucht Spiegel.  Klausur-Tipp: Klausur-Tipp: Lege Kriterien vor dem Lesen fest.
-- **Belegdichte**: Belegdichte meint Zitate pro These im Zeitrahmen. Sie sichert Nachpruefbarkeit.  Mechanismus: Mechanismus: These plus Zeile plus Funktion ergibt Punkt; Luecken kosten.  Klausur-Tipp: Klausur-Tipp: Plane zwei Belege pro These ein.
-- **Zeitplan**: Der Zeitplan verteilt Lesen, Gliedern, Schreiben und Pruefen. Er schuetzt vor Leere am Ende.  Mechanismus: Mechanismus: Bloecke plus Puffer erzeugen Ruhe; Schluss braucht eigene Minuten.  Klausur-Tipp: Klausur-Tipp: Reserviere zehn Minuten Schlussredaktion.
-- **Massstab**: Der Massstab begruendet jedes Urteil: Wirkung, Fairness oder Funktion. Ohne ihn bleibt Meinung.  Mechanismus: Mechanismus: Kriterium plus Beleg ergibt Urteil; Gegenmassstab schaerft.  Klausur-Tipp: Klausur-Tipp: Nenne den Massstab im Urteilssatz.
+- **IQB-Operator**: IQB-Operatoren zum Lerntext-Paar steuern Tiefe und Textsorte bundesweit vergleichbar. Jedes Verb bindet AFB.  Mechanismus: analysieren ruft Verfahren, beurteilen ruft Massstab; Verben kombifizieren Leistungen.  Klausur-Tipp: Zerlege Doppeloperatoren der Reihe nach.
+- **Textvergleich**: Der Textvergleich misst beide Lerntexte an gemeinsamen Kriterien (These, Beleg, Lenkung). Er sucht Profil, nicht Sieger.  Mechanismus: Kriterienraster plus Paar-Belege erzeugt Kontrast; jede Zeile braucht Spiegel.  Klausur-Tipp: Lege Kriterien vor dem Lesen fest.
+- **Belegdichte**: Belegdichte zum Textpaar meint Zitatpaare pro Kriterium im Sechzig-Minuten-Rahmen. Sie sichert Nachpruefbarkeit.  Mechanismus: These plus Zeile plus Funktion ergibt Punkt; Luecken kosten.  Klausur-Tipp: Plane zwei Paar-Belege pro Kriterium ein.
+- **Zeitplan**: Der Zeitplan verteilt Lesen, Raster, Schreiben und Pruefen auf sechzig Minuten. Er schuetzt vor Leere am Ende.  Mechanismus: Bloecke plus Puffer erzeugen Ruhe; Schluss braucht eigene Minuten.  Klausur-Tipp: Reserviere zehn Minuten Schlussredaktion.
+- **Massstab**: Der Massstab begruendet jedes Pool-Urteil: Belegkraft, Fairness oder Funktion. Ohne ihn bleibt Meinung.  Mechanismus: Kriterium plus Belegpaar ergibt Urteil; Gegenmassstab schaerft.  Klausur-Tipp: Nenne den Massstab im Urteilssatz.
 
 Klausur-Satz: `Operator, Kriterien und Belegdichte definieren jedes IQB-Training.`
 
@@ -46,6 +46,8 @@ Klausur-Satz: `Operator, Kriterien und Belegdichte definieren jedes IQB-Training
 MECHANISMUS (Tiefenbau):
 
 IQB-Training folgt **Uhr plus Raster**. Zeit schuetzt Form, Raster schuetzt Vergleich.
+
+Regelkette: Doppeloperator legt Lerntext-Kriterien fest, Kriterien fordern Kommentar-Paare, Kommentar-Paare brauchen Sechzig-Minuten-Bloecke mit Puffer. Zweite Ebene: Jedes Kriterium beantwortet drei Fragen: Welche Zeile traegt Pro-Lernen, welche Spiegelzeile traegt Contra-Lernen, welcher Massstab entscheidet. Wer diese Kette verfehlt, sammelt nur Zitate.
 
 Der Weg: Lies Operatoren zuerst. Lege Kriterien fest. Schreibe mit Belegdichte und Puffer. So wird Pool zur Routine.
 
@@ -65,8 +67,8 @@ Bezug zum Konzept: `Raster plus Uhr ergibt Leistung: Paar-Belege tragen, Puffer 
 
 [Werkzeug: lego]
 
-AUFGABE: Erstelle zu einem Textpaar Kriterienraster, Zeitplan und je zwei Paar-Belege.
-TARGET: Drei Bausteine mit Beleg, je mit Funktion und einer Deutung in vier Saetzen.
+AUFGABE: Erstelle zum Lerntext-Paar Kriterienraster, Sechzig-Minuten-Plan und je zwei Paar-Belege.
+TARGET: Kriterienraster mit drei Kriterien, Sechzig-Minuten-Plan mit Puffer und je zwei Paar-Belege zum Lerntext-Paar in vier Saetzen.
 
 HILFE:
 1. Schritt 1: Ordne den Fall in zwei Saetzen ein.
@@ -79,15 +81,15 @@ Klausur-Satz: `Die Pool-Regel: Je fremder der Text, desto fester das Raster.`
 
 ## Schritt 5 — ausprobieren: Das doppelte Spiel Weg A gegen Weg B
 
-VERGLEICH: Weg A arbeitet mikroskopisch (Detail, Beleg, Form), Weg B plant makroskopisch (Strategie, Kontext, Gewicht).
+VERGLEICH: Weg A legt das Kriterienraster zum Lerntext-Paar zuerst (These, Beleg, Lenkung) und vergleicht Kommentar gegen Kommentar Zeile fuer Zeile, Weg B steuert die Sechzig-Minuten-Uhr zuerst und sichert Belegdichte pro Kriterium.
 
-AUFGABE A: Welche Spur verlangt Weg A? Begruende mit Beleg.
-AUFGABE B: Welche Frage verlangt Weg B? Begruende mit Kontext.
+AUFGABE A: Lege zum Lerntext-Paar drei Kriterien fest und sichere je zwei Paar-Belege mit Zeile. Begruende mit Raster.
+AUFGABE B: Verteile sechzig Minuten auf Raster, Dichte und Puffer und begruende die Schlussredaktion zum Kiosk-Paar. Begruende mit Zeit.
 
-HILFE: A fragt nach Form und Naehe, also Weg A. B fragt nach Rolle und Ganzem, also Weg B.
+HILFE: A fragt nach Vergleich und Naehe, also Raster zuerst. B fragt nach Steuerung und Ganzem, also Uhr zuerst.
 
-ANTWORT A: Weg A arbeitet mikroskopisch am Text: Kriterien, Paar-Belege und Funktionswoerter Zeile fuer Zeile.
-ANTWORT B: Weg B steuert makroskopisch die Pruefung: Zeitbloecke, Punktraster und Schlusskontrolle sichern die Form.
+ANTWORT A: Weg A arbeitet mit Raster am Lerntext-Paar: Kriterien, Paar-Belege und Funktionswoerter Zeile fuer Zeile.
+ANTWORT B: Weg B steuert mit Uhr die Pruefung: Zeitbloecke, Punktraster und Schlusskontrolle sichern die Form.
 
 Klausur-Satz: `Naharbeit sichert das Wie der Belege, Fernsteuerung das Warum der Zeit; beide bestehen den Pool.`
 
@@ -113,6 +115,7 @@ Klausur-Satz: `Haeufig verwechselt: Viel schreiben ist nicht viel belegen; erst 
 ROLLE: Du bist IQB-Coach der Stufe in der Pruefung.
 SITUATION: Ein Fall liegt unbearbeitet auf dem Tisch und verlangt Einordnung, Belege und Urteil.
 AUFGABE: Verfasse circa 150 Woerter mit Einordnung, zwei Belegen, Funktion, Deutung und Schlussurteil.
+ZEIT: 25 Minuten (5 Raster, 12 Dichte-Schreiben, 8 Puffer-Pruefung).
 RUBRIC (30 XP): Einordnung korrekt (6 XP) | Zwei Belege (10 XP) | Funktion plus Deutung (10 XP) | Fachsprache und Schluss (4 XP).
 
 Klausur-Satz: `AFB-III-Mustersatz: Im Vergleich beider Texte (Kriterien A, B) belegt das Paar Z. X gegen Z. Y das Urteil mit Massstab M.`

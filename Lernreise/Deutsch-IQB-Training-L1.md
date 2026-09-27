@@ -33,11 +33,11 @@ Klausur-Satz: `Der Pool belohnt Verfahren: Wer Kriterien zuerst legt, vergleicht
 
 AUSRUESTUNG (5 Instrumente im Koffer):
 
-- **IQB-Operator**: IQB-Operatoren steuern Tiefe und Textsorte bundesweit vergleichbar. Jedes Verb bindet AFB.  Mechanismus: Mechanismus: analysieren ruft Verfahren, beurteilen ruft Massstab; Verben kombifizieren Leistungen.  Klausur-Tipp: Klausur-Tipp: Zerlege Doppeloperatoren der Reihe nach.
-- **Textvergleich**: Der Textvergleich misst zwei Texte an gemeinsamen Kriterien. Er sucht Profil, nicht Sieger.  Mechanismus: Mechanismus: Kriterienraster plus Paar-Belege erzeugt Kontrast; jede Zeile braucht Spiegel.  Klausur-Tipp: Klausur-Tipp: Lege Kriterien vor dem Lesen fest.
-- **Belegdichte**: Belegdichte meint Zitate pro These im Zeitrahmen. Sie sichert Nachpruefbarkeit.  Mechanismus: Mechanismus: These plus Zeile plus Funktion ergibt Punkt; Luecken kosten.  Klausur-Tipp: Klausur-Tipp: Plane zwei Belege pro These ein.
-- **Zeitplan**: Der Zeitplan verteilt Lesen, Gliedern, Schreiben und Pruefen. Er schuetzt vor Leere am Ende.  Mechanismus: Mechanismus: Bloecke plus Puffer erzeugen Ruhe; Schluss braucht eigene Minuten.  Klausur-Tipp: Klausur-Tipp: Reserviere zehn Minuten Schlussredaktion.
-- **Massstab**: Der Massstab begruendet jedes Urteil: Wirkung, Fairness oder Funktion. Ohne ihn bleibt Meinung.  Mechanismus: Mechanismus: Kriterium plus Beleg ergibt Urteil; Gegenmassstab schaerft.  Klausur-Tipp: Klausur-Tipp: Nenne den Massstab im Urteilssatz.
+- **IQB-Operator**: IQB-Operatoren steuern Tiefe und Textsorte bundesweit vergleichbar. Jedes Verb bindet AFB.  Mechanismus: analysieren ruft Verfahren, beurteilen ruft Massstab; Verben kombifizieren Leistungen.  Klausur-Tipp: Zerlege Doppeloperatoren der Reihe nach.
+- **Textvergleich**: Der Textvergleich misst zwei Texte an gemeinsamen Kriterien. Er sucht Profil, nicht Sieger.  Mechanismus: Kriterienraster plus Paar-Belege erzeugt Kontrast; jede Zeile braucht Spiegel.  Klausur-Tipp: Lege Kriterien vor dem Lesen fest.
+- **Belegdichte**: Belegdichte meint Zitate pro These im Zeitrahmen. Sie sichert Nachpruefbarkeit.  Mechanismus: These plus Zeile plus Funktion ergibt Punkt; Luecken kosten.  Klausur-Tipp: Plane zwei Belege pro These ein.
+- **Zeitplan**: Der Zeitplan verteilt Lesen, Gliedern, Schreiben und Pruefen. Er schuetzt vor Leere am Ende.  Mechanismus: Bloecke plus Puffer erzeugen Ruhe; Schluss braucht eigene Minuten.  Klausur-Tipp: Reserviere zehn Minuten Schlussredaktion.
+- **Massstab**: Der Massstab begruendet jedes Urteil: Wirkung, Fairness oder Funktion. Ohne ihn bleibt Meinung.  Mechanismus: Kriterium plus Beleg ergibt Urteil; Gegenmassstab schaerft.  Klausur-Tipp: Nenne den Massstab im Urteilssatz.
 
 Klausur-Satz: `Operator, Kriterien und Belegdichte definieren jedes IQB-Training.`
 
@@ -46,6 +46,8 @@ Klausur-Satz: `Operator, Kriterien und Belegdichte definieren jedes IQB-Training
 MECHANISMUS (Tiefenbau):
 
 IQB-Training folgt **Uhr plus Raster**. Zeit schuetzt Form, Raster schuetzt Vergleich.
+
+Regelkette: Operator legt Kriterien fest, Kriterien fordern Paar-Belege, Paar-Belege brauchen Zeitbloecke mit Puffer. Zweite Ebene: Jedes Kriterium beantwortet drei Fragen: Welche Zeile traegt Text A, welche Spiegelzeile traegt Text B, welcher Massstab entscheidet. Wer diese Kette verfehlt, vergleicht ohne Mass.
 
 Der Weg: Lies Operatoren zuerst. Lege Kriterien fest. Schreibe mit Belegdichte und Puffer. So wird Pool zur Routine.
 
@@ -66,7 +68,7 @@ Bezug zum Konzept: `Raster plus Uhr ergibt Leistung: Paar-Belege tragen, Puffer 
 [Werkzeug: lego]
 
 AUFGABE: Erstelle zu einem Textpaar Kriterienraster, Zeitplan und je zwei Paar-Belege.
-TARGET: Drei Bausteine mit Beleg, je mit Funktion und einer Deutung in vier Saetzen.
+TARGET: Kriterienraster mit drei Kriterien, Zeitplan mit Puffer und je zwei Paar-Belege zum Textpaar in vier Saetzen.
 
 HILFE:
 1. Schritt 1: Ordne den Fall in zwei Saetzen ein.
@@ -79,15 +81,15 @@ Klausur-Satz: `Die Pool-Regel: Je fremder der Text, desto fester das Raster.`
 
 ## Schritt 5 — ausprobieren: Das doppelte Spiel Weg A gegen Weg B
 
-VERGLEICH: Weg A arbeitet mikroskopisch (Detail, Beleg, Form), Weg B plant makroskopisch (Strategie, Kontext, Gewicht).
+VERGLEICH: Weg A legt das Kriterienraster zuerst (These, Beleg, Lenkung) und vergleicht Text gegen Text Zeile fuer Zeile, Weg B steuert die Uhr zuerst (Lesen, Schreiben, Puffer) und sichert Belegdichte pro Kriterium.
 
-AUFGABE A: Welche Spur verlangt Weg A? Begruende mit Beleg.
-AUFGABE B: Welche Frage verlangt Weg B? Begruende mit Kontext.
+AUFGABE A: Lege zum Textpaar drei Kriterien fest und sichere je zwei Paar-Belege mit Zeile. Begruende mit Raster.
+AUFGABE B: Verteile neunzig Minuten auf Raster, Dichte und Puffer und begruende die Schlussredaktion. Begruende mit Zeit.
 
-HILFE: A fragt nach Form und Naehe, also Weg A. B fragt nach Rolle und Ganzem, also Weg B.
+HILFE: A fragt nach Vergleich und Naehe, also Raster zuerst. B fragt nach Steuerung und Ganzem, also Uhr zuerst.
 
-ANTWORT A: Weg A arbeitet mikroskopisch am Text: Kriterien, Paar-Belege und Funktionswoerter Zeile fuer Zeile.
-ANTWORT B: Weg B steuert makroskopisch die Pruefung: Zeitbloecke, Punktraster und Schlusskontrolle sichern die Form.
+ANTWORT A: Weg A arbeitet mit Raster am Textpaar: Kriterien, Paar-Belege und Funktionswoerter Zeile fuer Zeile.
+ANTWORT B: Weg B steuert mit Uhr die Pruefung: Zeitbloecke, Punktraster und Schlusskontrolle sichern die Form.
 
 Klausur-Satz: `Naharbeit sichert das Wie der Belege, Fernsteuerung das Warum der Zeit; beide bestehen den Pool.`
 
@@ -113,6 +115,7 @@ Klausur-Satz: `Haeufig verwechselt: Viel schreiben ist nicht viel belegen; erst 
 ROLLE: Du bist IQB-Coach der Stufe in der Pruefung.
 SITUATION: Ein Fall liegt unbearbeitet auf dem Tisch und verlangt Einordnung, Belege und Urteil.
 AUFGABE: Verfasse circa 150 Woerter mit Einordnung, zwei Belegen, Funktion, Deutung und Schlussurteil.
+ZEIT: 25 Minuten (5 Raster, 12 Dichte-Schreiben, 8 Puffer-Pruefung).
 RUBRIC (30 XP): Einordnung korrekt (6 XP) | Zwei Belege (10 XP) | Funktion plus Deutung (10 XP) | Fachsprache und Schluss (4 XP).
 
 Klausur-Satz: `AFB-III-Mustersatz: Im Vergleich beider Texte (Kriterien A, B) belegt das Paar Z. X gegen Z. Y das Urteil mit Massstab M.`

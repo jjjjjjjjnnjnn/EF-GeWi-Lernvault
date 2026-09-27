@@ -133,6 +133,7 @@ Klausur-Satz: `Haeufig verwechselt: Lauter Trotz ist kein Beleg; erst Bild plus 
 ROLLE: Du bist Literaturkritiker der Stadtpost in der Pruefung.
 SITUATION: Ein Fall liegt unbearbeitet auf dem Tisch und verlangt Einordnung, Belege und Urteil.
 AUFGABE: Verfasse circa 150 Woerter mit Einordnung, zwei Belegen mit Zeile, Funktion, Deutung und Schlussurteil.
+ZEIT: 25 Minuten (5 These, 12 Kraftbild-Schreiben, 8 Epochen-Pruefung).
 RUBRIC (30 XP): Einordnung korrekt (6 XP) | Zwei Belege mit Zeile (10 XP) | Funktion plus Deutung (10 XP) | Fachsprache und Schluss (4 XP).
 
 Klausur-Satz: `AFB-III-Mustersatz: Adler- und Sturmmetaphern (Z. 2-3) mit Imperativketten (Z. 10) belegen die These der Selbstbefreiung, weil Naturbild zum Ich-Gesetz wird.`

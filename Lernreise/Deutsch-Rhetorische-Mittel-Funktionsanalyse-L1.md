@@ -133,6 +133,7 @@ Klausur-Satz: `Haeufig verwechselt: Milde ist kein Ausweichen; erst Grenze gegen
 ROLLE: Du bist Redenschreiber der Stadtverwaltung in der Pruefung.
 SITUATION: Ein Fall liegt unbearbeitet auf dem Tisch und verlangt Einordnung, Belege und Urteil.
 AUFGABE: Verfasse circa 150 Woerter mit Einordnung, zwei Belegen mit Zeile, Funktion, Deutung und Schlussurteil.
+ZEIT: 25 Minuten (5 Figur, 12 Mass-Schreiben, 8 Appell-Pruefung).
 RUBRIC (30 XP): Einordnung korrekt (6 XP) | Zwei Belege mit Zeile (10 XP) | Funktion plus Deutung (10 XP) | Fachsprache und Schluss (4 XP).
 
 Klausur-Satz: `AFB-III-Mustersatz: Litotes (Z. 3) mit Klimax (Z. 10-11) belegt wuerdevollen Trost, weil Daempfung Trauer sagbar und Steigerung Auftrag faehig macht.`

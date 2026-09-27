@@ -33,11 +33,11 @@ Klausur-Satz: `Die Streitfrage braucht Gegner: Ohne starke Antithese bleibt jede
 
 AUSRUESTUNG (5 Instrumente im Koffer):
 
-- **Sanduhr-Prinzip**: Das Sanduhr-Prinzip oeffnet breit, verengt zur Abwaegung und spitzt zum Urteil. Einleitung, Hauptteil und Schluss folgen der Form.  Mechanismus: Mechanismus: Breite plus Enge plus Spitze erzeugt Leseweg; jede These passiert die Engstelle.  Klausur-Tipp: Klausur-Tipp: Halte die Form sichtbar ein.
-- **These**: Die These behauptet eine Position mit Begruendung. Sie steht am Anfang jeder Kette. Ohne These treibt der Absatz.  Mechanismus: Mechanismus: Behauptung plus Weil-Satz ergibt Baustein; Beleg haertet ihn.  Klausur-Tipp: Klausur-Tipp: Eine These pro Absatz, ein Beleg dazu.
-- **Antithese**: Die Antithese stellt die staerkste Gegenposition fair dar. Sie prueft die These. Wer sie staerkt, staerkt das Urteil.  Mechanismus: Mechanismus: Staerkster Einwand plus Beleg erzeugt Pruefdruck; Entkraeftung oder Zugestaendnis folgt.  Klausur-Tipp: Klausur-Tipp: Waehle den staerksten Gegner, nicht den schwaechsten.
-- **Abwaegung**: Die Abwaegung wiegt Pro gegen Contra mit Massstab. Sie vergleicht Gewicht, nicht Zahl. Der Massstab entscheidet.  Mechanismus: Mechanismus: Kriterium plus Vergleich ergibt Rangfolge; staerkstes Argument schliesst.  Klausur-Tipp: Klausur-Tipp: Nenne den Massstab ausdruecklich.
-- **Urteil**: Das Urteil schliesst gewichtet mit Position und Ausblick. Es beantwortet die Frage. Sowohl-als-auch zaehlt nicht.  Mechanismus: Mechanismus: Rangfolge plus Konsequenz ergibt Schlusssatz; Ausblick oeffnet, ohne zu fliehen.  Klausur-Tipp: Klausur-Tipp: Ein Satz Position, ein Satz Folge.
+- **Sanduhr-Prinzip**: Das Sanduhr-Prinzip oeffnet breit, verengt zur Abwaegung und spitzt zum Urteil. Einleitung, Hauptteil und Schluss folgen der Form.  Mechanismus: Breite plus Enge plus Spitze erzeugt Leseweg; jede These passiert die Engstelle.  Klausur-Tipp: Halte die Form sichtbar ein.
+- **These**: Die These behauptet eine Position mit Begruendung. Sie steht am Anfang jeder Kette. Ohne These treibt der Absatz.  Mechanismus: Behauptung plus Weil-Satz ergibt Baustein; Beleg haertet ihn.  Klausur-Tipp: Eine These pro Absatz, ein Beleg dazu.
+- **Antithese**: Die Antithese stellt die staerkste Gegenposition fair dar. Sie prueft die These. Wer sie staerkt, staerkt das Urteil.  Mechanismus: Staerkster Einwand plus Beleg erzeugt Pruefdruck; Entkraeftung oder Zugestaendnis folgt.  Klausur-Tipp: Waehle den staerksten Gegner, nicht den schwaechsten.
+- **Abwaegung**: Die Abwaegung wiegt Pro gegen Contra mit Massstab. Sie vergleicht Gewicht, nicht Zahl. Der Massstab entscheidet.  Mechanismus: Kriterium plus Vergleich ergibt Rangfolge; staerkstes Argument schliesst.  Klausur-Tipp: Nenne den Massstab ausdruecklich.
+- **Urteil**: Das Urteil schliesst gewichtet mit Position und Ausblick. Es beantwortet die Frage. Sowohl-als-auch zaehlt nicht.  Mechanismus: Rangfolge plus Konsequenz ergibt Schlusssatz; Ausblick oeffnet, ohne zu fliehen.  Klausur-Tipp: Ein Satz Position, ein Satz Folge.
 
 Klausur-Satz: `These, Antithese und Massstab definieren jede dialektische Eroerterung.`
 
@@ -46,6 +46,8 @@ Klausur-Satz: `These, Antithese und Massstab definieren jede dialektische Eroert
 MECHANISMUS (Tiefenbau):
 
 Eroerterung arbeitet mit **Kette gegen Kette**. Jede Pro-Kette braucht Contra-Pruefung. Der Massstab wiegt.
+
+Regelkette: These braucht Antithese, Antithese braucht Massstab, Massstab braucht Rangfolge mit Klimax-Schluss. Zweite Ebene: Jede Kette beantwortet drei Fragen: Welche Seite traegt, welcher Einwand prueft, welcher Massstab entscheidet. Wer diese Kette verfehlt, zaehlt statt zu waegen.
 
 Der Weg: Sammle je drei Pro- und Contra-Bausteine. Ordne nach Gewicht. Schliesse mit Position und Folge. So wird Streit zur Note.
 
@@ -66,7 +68,7 @@ Bezug zum Konzept: `Kette gegen Kette plus Massstab ergibt Urteil: Gewicht schla
 [Werkzeug: lego]
 
 AUFGABE: Baue zu einer Streitfrage je zwei Pro- und Contra-Bausteine mit Beleg und ordne sie nach Gewicht.
-TARGET: Drei Bausteine mit Beleg, je mit Funktion und einer Deutung in vier Saetzen.
+TARGET: Je zwei Pro- und Contra-Bausteine zum Handyverbot mit Beleg, je mit Massstab und Rangfolge in vier Saetzen.
 
 HILFE:
 1. Schritt 1: Ordne den Fall in zwei Saetzen ein.
@@ -79,15 +81,15 @@ Klausur-Satz: `Die Sanduhr-Regel: Je breiter der Einstieg, desto spitzer das Urt
 
 ## Schritt 5 — ausprobieren: Das doppelte Spiel Weg A gegen Weg B
 
-VERGLEICH: Weg A arbeitet mikroskopisch (Detail, Beleg, Form), Weg B plant makroskopisch (Strategie, Kontext, Gewicht).
+VERGLEICH: Weg A baut Pro-dominant (eigene Kette zuerst, Gegner danach entkraeften), Weg B baut Contra-dominant (staerksten Gegner zuerst, eigene Kette als Klimax zum Urteil).
 
-AUFGABE A: Welche Spur verlangt Weg A? Begruende mit Beleg.
-AUFGABE B: Welche Frage verlangt Weg B? Begruende mit Kontext.
+AUFGABE A: Baue die Pro-Strecke zum Handyverbot (Konzentration, Fairness) mit Entkraeftung des Kosten-Einwands. Begruende mit Beleg.
+AUFGABE B: Baue die Contra-Strecke (Erreichbarkeit, Selbststeuerung) und widerlege sie mit der staerksten Pro-Kette. Begruende mit Massstab.
 
-HILFE: A fragt nach Form und Naehe, also Weg A. B fragt nach Rolle und Ganzem, also Weg B.
+HILFE: A stellt die These voran und nutzt den Gegner als Kontrast. B staerkt den Gegner zuerst und setzt die eigene Kette als Schlusspunkt.
 
-ANTWORT A: Weg A baut mikroskopisch Bausteine: These, Weil-Satz und Beleg Absatz fuer Absatz.
-ANTWORT B: Weg B wählt makroskopisch Strategie: Pro-dominant oder Contra-dominant je nach Staerke der besten Kette und Adressat.
+ANTWORT A: Weg A baut Pro-dominant Baustein fuer Baustein: These, Weil-Satz und Beleg Absatz fuer Absatz, Gegner danach knapp entkraeftet.
+ANTWORT B: Weg B waehlt Contra-dominant als Strategie: staerksten Einwand fair darstellen, dann mit Massstab Lernschutz die eigene Kette als Klimax schliessen.
 
 Klausur-Satz: `Naharbeit baut das Wie der Bausteine, Fernstrategie das Warum der Dominanz; beide tragen die Note.`
 
@@ -113,6 +115,7 @@ Klausur-Satz: `Haeufig verwechselt: Aufzaehlen ist nicht Abwaegen; erst Massstab
 ROLLE: Du bist Debattenleiter der Schuelervertretung in der Pruefung.
 SITUATION: Ein Fall liegt unbearbeitet auf dem Tisch und verlangt Einordnung, Belege und Urteil.
 AUFGABE: Verfasse circa 150 Woerter mit Einordnung, zwei Belegen, Funktion, Deutung und Schlussurteil.
+ZEIT: 25 Minuten (5 Sammeln, 12 Sanduhr-Schreiben, 8 Massstab-Pruefung).
 RUBRIC (30 XP): Einordnung korrekt (6 XP) | Zwei Belege (10 XP) | Funktion plus Deutung (10 XP) | Fachsprache und Schluss (4 XP).
 
 Klausur-Satz: `AFB-III-Mustersatz: Obwohl X stark belegt ist, wiegt Y schwerer, weil der Massstab Z gilt; daher Position mit Folge.`

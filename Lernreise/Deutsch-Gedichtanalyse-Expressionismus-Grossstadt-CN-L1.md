@@ -143,6 +143,7 @@ ROLLE（中文）：你是Feuilletonkritiker der Stadtpost，负责审稿。
 德语 ROLLE: Du bist Feuilletonkritiker der Stadtpost.
 SITUATION: Fall 06 liegt unbearbeitet vor dir.
 AUFGABE（中文）：150词左右，含背景、两个证据、功能判断。
+ZEIT: 25 Minuten (5 Hypothese, 12 Bild-Schreiben, 8 Epochen-Pruefung).
 RUBRIC (30 XP): Einordnung (6 XP) | Belege mit Zeile (10 XP) | Funktion plus Deutung (10 XP) | Fachsprache (4 XP).
 
 Klausur-Satz: `CN: 满分句须含并置、呼告与假设回扣。DE: AFB-III-Satz braucht Reihung, Apostrophe und Hypothesenbeleg.`

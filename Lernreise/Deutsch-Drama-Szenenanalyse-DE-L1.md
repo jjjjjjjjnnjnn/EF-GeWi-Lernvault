@@ -134,6 +134,7 @@ Klausur-Satz: `Haeufig verwechselt: Nacherzaehlung ist kein Befund; erst Zitat p
 ROLLE: Du bist Dramaturg am Stadttheater in der Pruefung.
 SITUATION: Ein Fall liegt unbearbeitet auf dem Tisch und verlangt Einordnung, Belege und Urteil.
 AUFGABE: Verfasse circa 150 Woerter mit Einordnung, zwei Belegen mit Zeile, Funktion, Deutung und Schlussurteil.
+ZEIT: 25 Minuten (5 Einordnung, 12 Protokoll-Schreiben, 8 Zeilen-Pruefung).
 RUBRIC (30 XP): Einordnung korrekt (6 XP) | Zwei Belege mit Zeile (10 XP) | Funktion plus Deutung (10 XP) | Fachsprache und Schluss (4 XP).
 
 Klausur-Satz: `AFB-III-Mustersatz: Die Szene kehrt die Anfangskonstellation um (Z. 8-11), weil Naehe das Protokoll bricht; so wird Bitte zu Widerstand.`
