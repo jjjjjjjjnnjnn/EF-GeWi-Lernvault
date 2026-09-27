@@ -13,146 +13,167 @@ version: Lesson-v3-pilot
 
 # Lernreise: Utilitarismus vs Kant (L2 Pilot, Lesson v3, Ziel Klausur)
 
-<!-- Lesson v3 9步制试点：Schritt-typ nur aus Whitelist (entdecken/ausprobieren/check/szenario)；VERGLEICH im ausprobieren-Schritt；## Fehlvorstellung ist kein Schritt (Parser skip)；Gating: check/szenario unbestanden = Weiter grau；XP: 5/15/20/30 -->
+<!-- Lesson-v3-pilot: 8 Schritte plus Anekdote und Fehlvorstellung; Fehlvorstellung zwischen Schritt 6 und 7 (Parser-Skip); interaktives [Werkzeug: <id>]; Gating: check/szenario nicht bestanden = Weiter gesperrt; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
-## Schritt 1 — entdecken: Weiche des Schicksals: Fünf gegen einen in der U-Bahn
+## Schritt 1 — entdecken: Nachtzug-Prozess: Weichensteller zwischen fünf und einem
 
-ZIELE (3条，本节20分钟学完能做到——先读中文，再记德语)：
+ZIELE (drei messbare Ziele dieser Lektion, Niveau L2):
 
-1. 中文：能用一句话说清两派检验题——功利问"多数人总幸福变多吗"，康德问"我的准则能变成人人遵守的法则吗"。
-2. 中文：能区分两副眼镜——后果题用功利程序（后果+权衡），动机/尊严题用康德程序（准则+普遍法则检验），先选程序再做题。
-3. 中文：能按AFB II-III写一段beurteilen答案（含 Fachbegriff + Vergleich + 以Menschenwürde为标准的Urteil）。
+1. Du kannst **Regelutilitarismus** und **Universalisierung** in je einem Satz unterscheiden und Mill und Kant korrekt zuordnen.
+2. Du kannst den Trolley-Fall doppelt rekonstruieren: einmal als Bilanz ueber alle Betroffenen und einmal als Maximenprobe an der Wuerde.
+3. Du kannst mit dem Kriterium **Verantwortung** ein vertieftes L2-Urteil zu Tun und Unterlassen formulieren und mit einem Klausur-Satz schliessen (AFB II/III).
 
-Hook中文法庭悬念（Tribunal Fall 13：无人驾驶电车案）：
+### Hook / Phaenomen
 
-人类伦理最高审判庭第十三夜全场窒息，大屏幕回放一辆失控的无人驾驶电车冲向五名轨道工人，而你站在道岔前，手边就是那只决定命运的扳手，AI检察官在你耳边低语，掰一下只死一个，不掰死五个，这道算术题连孩子都会。辩护律师却按住你的手，说慢着，若你为了多数人把那个无辜者只当刹车片，你的准则还能变成人人都可遵守的法则吗？五条命与一条命被放在天平两端，而尊严坐在法官席上不发一言，今晚你必须先选眼镜再作答。
+Stell dir den fuenfzehnten Prozesstag im Tribunal der Menschheit vor, diesmal im Stellwerk eines Nachtzugs. Ein ausser Kontrolle geratener Gueterwagen rast auf fuenf Gleisarbeiter zu. Du als Weichensteller kannst die Weiche umstellen, dann trifft der Wagen nur einen Arbeiter auf dem Nebengleis. Der KI-Anklaeger fluestert, fuenf minus eins sei doch simple Mathematik der Rettung. Dein Verteidigerherz fragt, ob deine Hand den einen zum blossen Mittel machen duerfte und ob Unterlassen weniger schuldig macht als Tun. Heute entscheidet das hohe Gericht, ob Bilanz oder Wuerde das Stellwerk regiert.
 
-Phaenomen-Satz (DE): Nutzen fuer die meisten oder Pflicht aus der Maxime, Waage oder Spiegel.
+Klausur-Satz: `Im Nachtzug-Prozess prallt die Rettungsmathematik fuenf gegen eins auf die Frage, ob Tun den Weichensteller zum Taeter an der Wuerde macht.`
 
-Klausur-Satz: `Utilitarismus und Kant stellen dieselbe Frage anders: Nutzen für die meisten oder Pflicht aus der Maxime?`
+## Schritt 2 — entdecken: Zwei Stellwerke fuenf Signale: Rechnen gegen Gebieten
 
-## Schritt 2 — entdecken: 两副眼镜五枚镜片：后果秤 against 准则镜
+PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen, L2 vertieft):
 
-PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
+### Hook / Phaenomen
 
-中文在上，德语在下：
+Fuenf gegen eins klingt nach Rechnen, doch Klausuren wollen Unterscheiden: Akt oder Regel, Tun oder Unterlassen, Bilanz oder Wuerde. Diese fuenf Signale stellen dein Stellwerk auf L2.
 
-- 功利原则 / 最大幸福 — Nutzenprinzip / größtes Glück der größten Zahl：后果加总，幸福多于痛苦就算对。
-- 准则 — Maxime：我行动的主观原则（"为了…我要…"），康德检验的对象。
-- 普遍法则检验 — Universalisierungstest / allgemeines Gesetz：设想人人都按我的准则行动，还能成立吗。
-- 义务 / 动机 — Pflicht / Gesinnung：康德看动机是否出于义务，不只看结果好坏。
-- 人的尊严 / 人是目的 — Menschenwürde / Selbstzweck：人不能只被当工具和数字 Verrechnung 的对象。
+### Fachbegriffe & Definitionen
 
-Klausur-Satz: `Der Utilitarismus bewertet eine Handlung nach ihren Folgen für das Gesamtglück.`
-Klausur-Satz: `Kant prüft nicht den Nutzen, sondern ob die Maxime allgemeines Gesetz werden kann.`
+- **Aktutilitarismus**: Die Bewertung jeder Einzelhandlung an ihrer eigenen Folgenbilanz. Was hier und jetzt mehr Glueck stiftet, ist geboten, auch das Umstellen der Weiche. Mechanismus: Fallweise Bilanz ohne Regelbindung maximiert situatives Gesamtwohl. Klausur-Tipp: L2 erwartet Abgrenzung zum Regelutilitarismus mit Weichenbeispiel.
+- **Regelutilitarismus**: Die Bewertung von Regeln statt Einzelakten an ihrer Gesamtbilanz. Eine Regel wie Toete niemals Unschuldige gilt, weil ihre allgemeine Befolgung mehr Wohl sichert. Mechanismus: Regelbindung schuetzt Vertrauen und verhindert Dammbrueche der Bilanz. Klausur-Tipp: Nenne Mills Regelblick als Schranke gegen kurzfristige Verrechnung.
+- **Universalisierung**: Kants Probe, ob die eigene Maxime als allgemeines Gesetz gedacht und gewollt werden kann. Sie sortiert Denk- gegen Wollenswiderspruch und vollkommene gegen unvollkommene Pflicht. Mechanismus: Verallgemeinerung deckt Selbstzerstoerung und Instrumentalisierung auf. Klausur-Tipp: Wende die Probe auf die Weichen-Maxime woertlich an.
+- **Tun-Unterlassen-Differenz**: Die Streitfrage, ob aktives Toeten schwerer wiegt als geschehenlassendes Sterbenlassen. Kantianer behaften Tun an der Maxime, Utilitaristen werten beide an Folgen. Mechanismus: Zurechnung ueber Maxime gegen Verrechnung ueber Bilanz erzeugt das Dilemma. Klausur-Tipp: Benenne beide Zurechnungen explizit, das traegt L2.
+- **Verantwortung**: Das L2-Kriterium der Zurechenbarkeit von Folgen an Gruende und Maximen. Es verbindet Bilanz mit Wuerde und fragt, wessen Hand wofuer einsteht. Mechanismus: Folgen zaehlen plus Maxime pruefen ergibt zurechenbares Urteil. Klausur-Tipp: Schliesse jedes L2-Urteil mit Verantwortung als Synthese.
 
-## Schritt 3 — entdecken: 秤与镜子的对决：多数压倒少数 against 尊严拦住天平
+### Wirkungsgefuege / Modell
 
-ENTDECKEN（1概念 + 1文字图解，两把尺子）：
+Der **Aktutilitarismus** stellt die Weiche, der **Regelutilitarismus** sichert das Stellwerk durch Regeln. Die **Universalisierung** prueft die Maxime des Stellens an Wuerde. Die **Tun-Unterlassen-Differenz** spitzt den Konflikt zu, und **Verantwortung** entscheidet ihn als L2-Synthese aus Bilanz und Pflicht.
 
-中文：功利是一把后果秤——把所有人的苦乐放上去称总和；康德是一面准则镜子——把你的私人理由放到"人人如此"里照一照，自相矛盾或把人当工具就不行。秤怕少数人被牺牲，镜子怕死板不管后果。Klausur 高分句式就是先各讲一遍，再用尊严标准下判断。
+Klausur-Satz: `Aktutilitarismus stellt die Weiche fallweise, Regelutilitarismus sichert sie durch Regeln und Kant prueft die Maxime an der Wuerde.`
 
-文字图解（Waage + Spiegel，自己照着画一遍）：
+## Schritt 3 — entdecken: Stellen oder geschehen lassen: Was rechnet die Hand an
 
+TIEFEN-KONZEPT (ein Konzept mit visuellem Schema, L2):
+
+### Hook / Phaenomen
+
+Stellen rettet fuenf und toetet einen, Nichtstellen laesst fuenf sterben und haelt die Haende rein. Was zaehlt: Ergebnis oder Handschrift? Regel oder Akt, was traegt weiter?
+
+### Argumentationskette (Praemisse gegen Konklusion)
+
+Praemisse 1: Utilitaristisch zaehlt jede Rettungsbilanz, kantisch zaehlt jede Maxime an Wuerde und Verallgemeinerbarkeit. Praemisse 2: Das Umstellen mehrt zwar das Gesamtwohl um vier Leben, benutzt aber den einen als blosses Mittel und bricht die Regel des Nichttoetens. Konklusion: Also spricht die Aktbilanz fuers Stellen, doch Regelblick plus Wuerde begrenzen sie, und Verantwortung verlangt Begruendung statt blossen Rechens.
+
+### Aha-Moment & Gesetz
+
+Aha-Moment: Rechnen, Regeln und Verantworten. Erstens bilanziert der Akt die Leben. Zweitens sichert die Regel das Vertrauen aller. Drittens urteilt **Verantwortung** als Synthese aus Bilanz und Wuerde. Gesetz: Stelle nur, was du als Regel wollen und als Maxime verantworten kannst.
+
+```diagram
+  Stellwerk [fuenf gegen einen]
+  Stellwerk -> Aktbilanz [5 minus 1 pro Stellen]
+  Aktbilanz -> Regelblick [Toetungsverbot plus Vertrauen]
+  Regelblick -> Urteil [Verantwortung aus Bilanz plus Wuerde]
 ```
-        Ethisches Urteil (EF)
-          /              \
-  UTILITARISMUS        KANT
-  (Folgen-Waage)     (Maximen-Spiegel)
-  Nutzen addieren    Maxime universalisieren
-  Glück minus Leid   Widerspruch? Würde verletzt?
-  Mehrheit schlägt     kein Mensch als bloßes Mittel
-  Minderheit auf         \              /
-                          URTEIL mit Kriterium
-                          (Menschenwürde)
-```
 
-Klausur-Satz: `Während der Utilitarismus die Folgen für die Mehrheit abwägt, prüft Kant, ob die Maxime alle als Zweck an sich achtet.`
+Kausalkette: Fall schildern, Aktbilanz gegen Regelblick stellen, Maxime an Wuerde pruefen und mit Verantwortung urteilen.
+
+Klausur-Satz: `Die Aktbilanz raet zum Stellen, doch Regel und Wuerde fragen, ob die Hand den einen als Mittel verantworten kann.`
 
 ## Anekdote & Fun-Fact
 
-**Anekdote / Fun-Fact (DE)**: In der modernen Ethik ist das „Trolley-Problem" berühmt: Ein außer Kontrolle geratener Wagen rast auf fünf Menschen zu; man könnte eine Weiche umstellen, sodass er nur einen Menschen trifft. Ein Utilitarist rechnet die Folgen und würde umstellen, ein Kantianer fragt dagegen, ob dabei ein Mensch zum bloßen Mittel gemacht wird. Derselbe Fall, zwei völlig verschiedene Prüfungen – genau darum geht es in dieser Lektion.
+Philippa Foot erfand den Trolley-Fall alsphilosophisches Gedankenexperiment, Judith Jarvis Thomson verschaerfte ihn zum Bruecken-Fall mit aktivem Stossen. Millianer stellten um, Kantianer verweigerten die Hand. Dieselbe Weiche, zwei Haende, und die Philosophie streitet bis heute, ob Unterlassen weniger schuldig macht. Genau dieser Streit hebt diese L2-Lektion ueber L1.
 
-**中文解读**: 这个思想实验把本课的两副眼镜摆在一起：功利主义看"后果总账"（救五舍一），康德主义看"能否普遍化、有没有把人只当工具"。记住它，是因为它用同一个场景逼你做出"选程序"的决定——先确定用后果秤还是准则镜，再作答。
+Bezug zum Konzept: `Die Anekdote zeigt die L2-Schaerfung: Vom blossen Rechnen zur Frage von Regel, Hand und Verantwortung.`
 
-**Bezug zum Konzept**: Das Trolley-Problem zeigt denselben Fall einmal durch die Folgen-Brille (Nutzenabwägung) und einmal durch die Pflicht-Brille (Maxime und Selbstzweck).
+## Schritt 4 — ausprobieren: Waage des Stellwerks: Vier Leben gegen eine Hand
 
-## Schritt 4 — ausprobieren: 天平推电车：救五舍一称得出尊严吗
+BEISPIEL (geleitete Aufgabe mit Werkzeug):
 
 [Werkzeug: balance-board]
 
-BEISPIEL（正确例题示范，AFB II darstellen，先遮住Musterlösung自己写3句，再对照）：
+Primaertext (vereinfachte deutsche Fassung nach Mill und Kant, L2, 100 bis 200 Woerter):
 
-AUFGABE (darstellen)：Stellen Sie dar, wie ein Utilitarist und ein Kantianer je über dieselbe Notlüge und über die U-Bahn-Weiche entscheiden. Legen Sie beide Brillen auf die Waage.
+> (Z.1) Vier gerettete Leben wiegen schwerer als ein verlorenes.
+> (Z.2) So rechnet die Klugheit der Rettung mit kalter Bilanz.
+> (Z.3) Stelle die Weiche, dann leben fuenf Familien weiter.
+> (Z.4) Doch frage, ob du als Regel toeten duerftest.
+> (Z.5) Eine Regel, die Unschuldige opfert, zerstoert Vertrauen.
+> (Z.6) Niemand betraete mehr Gleise im Glauben an Schutz.
+> (Z.7) Darum schuetzt der Regelblick das Toetungsverbot.
+> (Z.8) Frage weiter, nach welcher Maxime deine Hand handelt.
+> (Z.9) Duerfte jeder einen opfern, um vier zu retten.
+> (Z.10) Der eine wuerde zum blossen Werkzeug fremder Rettung.
+> (Z.11) Kein Vernuenftiger kann das als Gesetz wollen.
+> (Z.12) Handle so, dass du Menschen niemals bloss als Mittel brauchst.
+> (Z.13) Tun bindet deine Hand anders als blosses Geschehenlassen.
+> (Z.14) Verantwortung zaehlt Folgen und prueft Maximen zugleich.
+> (Z.15) Stelle nur, was du als Regel wollen und verantworten kannst.
 
-Target：左侧放 Folgen plus Gesamtglueck plus Mehrheit，右侧放 Maxime plus Gesetz plus Wuerde，每项权重 1 bis 5；当能说出 Nutzen spricht fuer Umstellen，Wuerde verbietet Instrumentalisierung 时通关。
+AUFGABE Waage-Raetsel (AFB II, L2): Lege Stellen gegen Nichtstellen auf [Werkzeug: balance-board]. Markiere mit GELB alle Stellen zur Aktbilanz (Z.1 bis Z.3) und mit BLAU alle Stellen zu Regel und Wuerde (Z.4 bis Z.14). Target: Aktbilanz, Regelblick und Maximenprobe je 1 bis 5 wichten und per Verantwortung entscheiden.
 
-HILFE: 三句模板——Utilitarismus-Satz (Folge + Nutzen) + Kant-Satz (Maxime + Test) + Unterschied-Satz. 每句一个Fachbegriff。先在天平上称后果，再照镜子查准则。
+HILFE:
+1. Schritt 1: Bilanziere Stellen gegen Nichtstellen mit Z.1 bis Z.3.
+2. Schritt 2: Pruefe Regel und Vertrauen mit Z.4 bis Z.7.
+3. Schritt 3: Pruefe Maxime und Wuerde mit Z.8 bis Z.12 und urteile mit Verantwortung aus Z.14 bis Z.15.
 
-MUSTERLÖSUNG：中文：功利看后果总账，救五舍一划算；康德看准则能否普遍化，把无辜者只当工具则 violates 尊严。区别在检验点：总后果 against 可普遍化。
+MUSTERLOESUNG: Die Aktbilanz spricht fuers Stellen mit plus vier Leben (Z.1 bis Z.3). Der Regelblick warnt vor Dammbruch des Toetungsverbots und Vertrauensverlust (Z.5 bis Z.7). Kant prueft die Maxime: Den einen opfern benutzt ihn als blosses Mittel (Z.10, Z.12) und ist als Gesetz nicht wollbar (Z.11). Verantwortung erlaubt das Stellen nur mit enger Regelbegruendung, sonst wiegt Unterlassen mit reinen Haenden schwerer.
 
-MUSTERLOESUNG (DE): Aus utilitaristischer Sicht ist das Umstellen erlaubt, wenn es mehr Glueck sichert als es Vertrauen kostet. Aus kantischer Sicht scheitert die Maxime Opfere einen zum Nutzen aller, weil sie den Einen zum blossen Mittel macht. Der Unterschied liegt im Pruefpunkt: Gesamtfolge gegen Verallgemeinerbarkeit.
+Klausur-Satz: `Am Stellwerk zeigt sich: Z.1 bis Z.3 tragen die Aktbilanz, Z.4 bis Z.12 tragen Regel und Wuerde als Grenze jeder Rettungsmathematik.`
 
-Klausur-Satz: `Aus utilitaristischer Sicht lässt sich die Notlüge rechtfertigen, weil sie mehr Nutzen stiftet als sie schadet.`
+## Schritt 5 — ausprobieren: Duell der Hoefe: Pflicht begrenzt Rettung Folgen fordern Rettung
 
-## Schritt 5 — ausprobieren: 双案对质：手机禁令 against 无辜顶罪
+VERGLEICH (Wahl des Weges, A gegen B, L2):
 
-VERGLEICH辨别实验（先选程序再做——两题用不同眼镜，别混）：
+VERGLEICH: Waehle zuerst den Denkweg, Weg A der Pflicht oder Weg B der Folgen, und loese dann die Aufgabe.
 
-VERGLEICH: Wähle erst das Verfahren — (i) Folgen-Brille (Nutzen, Glück, Abwägung, Minderheitenschutz als Problem) oder (ii) Pflicht-Brille (Maxime, allgemeines Gesetz, Würde, Selbstzweck) — dann lösen.
+Weg A (Deontologie nach Kant, Maxime und Wuerde): Der Mechanismus lautet Maxime, Universalisierung und Selbstzweckformel plus Tun-Zurechnung. Die Hand steht fuer ihre Maxime ein, auch wenn Nichtstun mehr Tote kostet. Die Staerke liegt im Handschutz der Wuerde: Niemand wird zum Stellmittel. Seine Grenze liegt in der Rettungsverweigerung: Fuenf Tote mit reinen Haenden wirken kalt.
 
-Weg A (Folgen, Utilitarismus)：机制为后果、加总、多数胜。长在治愈结果冷漠，短在牺牲少数。
-Weg B (Pflicht, Kant)：机制为准则、普遍化、禁工具化。长在守住尊严，短在显得死板。
+Weg B (Teleologie des Utilitarismus, Akt plus Regel): Der Mechanismus lautet Aktbilanz plus Regelbilanz des Gesamtwohls. Geprueft wird erst der Fall, dann die Regelwirkung auf Vertrauen. Die Staerke liegt in der Rettungsleistung: Vier Leben mehr zaehlen. Seine Grenze liegt im Dammbruch: Jede Ausnahme frisst das Toetungsverbot.
 
-AUFGABE A (Folgen-Brille)：Die Schule will Handys verbieten. Ein Utilitarist rechnet: weniger Ablenkung für 900 Schüler gegen Ärger bei 100 Schülern. Entscheide mit dem Nutzenprinzip und nenne den Preis für die Minderheit.
-AUFGABE B (Pflicht-Brille)：Darf man einen Unschuldigen bestrafen, um eine Panik der Mehrheit zu beruhigen? Prüfe mit dem Universalisierungstest und dem Selbstzweck-Verbot, warum Kant Nein sagt, auch wenn der Nutzen groß wäre.
+AUFGABE A: Der Weichensteller stellt um und toetet einen, um fuenf zu retten. Pruefe mit Weg A Maxime, Tun und Wuerde und formuliere ein L2-Urteil.
+AUFGABE B: Die Bahn will eine Stell-Regel fuer alle Nachtzuege festlegen. Pruefe mit Weg B Akt- gegen Regelbilanz und formuliere ein L2-Urteil.
 
-HILFE: A只准用Folge/Nutzen/Abwägung词；B只准用Maxime/Gesetz/Würde词。写前先写"Ich wähle Verfahren (i)/(ii), weil …"。天平左侧称900对100，右侧照是否把无辜者当工具。
+HILFE: Aufgabe A fragt nach Hand und Mittel, daher traegt Weg A mit Maxime und Tun-Zurechnung. Aufgabe B fragt nach Regel und Vertrauen, daher traegt Weg B mit Akt- plus Regelbilanz. Ordne zuerst die Leitfrage zu, stelle dann den passenden Denkweg dar und schliesse mit dem Klausur-Satz.
 
-ANTWORT: A = Verfahren (i); Punkte: Gesamtnutzen steigt (Konzentration), Minderheitsärger wird verrechnet — Schwäche nennen: Minderheit wird geopfert. B = Verfahren (ii); Punkte: Maxime Bestrafe Unschuldige zum Nutzen aller zerstört universalisiert Vertrauen und Gerechtigkeit; Mensch als bloßes Mittel verletzt Würde — Folgenblick tritt zurück.
+ANTWORT: Aufgabe A verlangt Weg A, weil das aktive Opfern den einen zum blossen Mittel macht und als Maxime nicht verallgemeinerbar ist, daher trotz Rettung nur unter engster Notstandsbegruendung verantwortbar. Aufgabe B verlangt Weg B, weil eine enge Stell-Regel mit Kontrolle mehr Leben rettet und Vertrauen wahrt, daher als Regel mit Schranken geboten.
 
-Klausur-Satz: `Aus kantischer Sicht ist die Bestrafung eines Unschuldigen problematisch, weil die Maxime nicht allgemeines Gesetz werden kann.`
-Klausur-Satz: `Der Utilitarismus rechnet Menschen gegeneinander auf, Kant verbietet, Menschen als bloßes Mittel zu benutzen.`
+Klausur-Satz: `Kant belastet die stellende Hand mit der Wuerde des einen, der Utilitarismus entlastet sie durch vier gerettete Leben und eine enge Regel.`
 
-## Schritt 6 — check: Selbsttest zu Utilitarismus vs Kant
+## Schritt 6 — check: Selbsttest zu Utilitarismus vs Kant auf L2
 
-CHECK检索（合书默写！觉得会了不算，能写出才算。Evidenz: Abrufen schlägt Wiederlesen — Karpicke & Blunt 2011）：
+CHECK (drei Fragen mit Antworten):
 
-合书默写3行（遮住上面写）：1) 两派检验题各一行；2) 对比句一行（Folgen vs Maxime）；3) 以Würde为标准的Urteil句一行。
+- FRAGE: Was trennt Akt- von Regelutilitarismus an der Weiche? | ANTWORT: Aktutilitarismus stellt fallweise nach Bilanz, Regelutilitarismus bindet das Stellen an eine vertrauenssichernde Regel gegen Dammbruch.
+- FRAGE: Wie prueft Kant die Weichen-Maxime? | ANTWORT: Maxime formulieren, als Gesetz denken, auf Denk- und Wollenswiderspruch pruefen und Selbstzweckformel anwenden.
+- FRAGE: Was leistet Verantwortung als L2-Synthese? | ANTWORT: Sie zaehlt Folgen mit Weg B und prueft Maximen mit Weg A und rechnet beides der Hand als begruendetes Urteil zu.
 
-FRAGE: Nenne die Prüffrage beider Positionen in je einem Satz. | ANTWORT: Utilitarismus: Mehrt es das Gesamtglück der meisten? Kant: Kann meine Maxime allgemeines Gesetz werden, ohne Würde zu verletzen?
-FRAGE: Welcher Operator passt: „… die beiden Positionen … und nimm begründet Stellung …"? | ANTWORT: vergleichen + beurteilen/Stellung nehmen (kriteriengeleitetes Urteil, z. B. Menschenwürde).
-FRAGE: Rekonstruiere in Kurzform: Prämisse → Konklusion für B. | ANTWORT: Prämisse: Unschuldige bestrafen benutzt Menschen als Mittel; Prämisse: Was Würde verletzt, kann kein Gesetz sein; Konklusion: Also ist es pflichtwidrig.
-
-Klausur-Satz: `Abschließend beurteile ich den Fall nach dem Kriterium der Menschenwürde und gewichte den Minderheitenschutz höher als den Gesamtnutzen.`
+Klausur-Satz: `Auf L2 zaehlt nicht nur die Bilanz, sondern wessen Hand sie als Regel und Maxime verantwortet.`
 
 ## Fehlvorstellung
 
-(非Schritt小节，check后纠偏；Parser skippt diesen Abschnitt.)
+(Kein Schritt; wird vom Parser uebersprungen.)
 
-1. 误解"功利主义 = 自私/只顾自己爽"。
-   中文纠偏：功利算的是所有人的总账，不是个人小算盘；自私只算自己，功利要算多数人，错在把Nutzen（总体）当成Eigennutz（利己）。
-   Korrektur-Satz: `Der Utilitarismus meint nicht Egoismus, sondern das Gesamtglück der meisten, nicht den eigenen Vorteil.`
+1. Fehlkonzept: Trolley sei blosse Mathematik und Unterlassen sei immer unschuldig.
+   Korrektur-Satz: `Auch Unterlassen wird zugerechnet, sobald eine Garantenstellung besteht; Verantwortung prueft Tun und Lassen an Maxime und Folgen.`
+2. Fehlkonzept: Regelutilitarismus sei verkappter Kantianismus mit absoluten Verboten.
+   Korrektur-Satz: `Regeln gelten utilitaristisch nur, solange ihre allgemeine Befolgung die beste Bilanz sichert, Kant bindet unbedingt an Wuerde.`
 
-2. 误解"康德 = 不看后果、死守规矩，谁死也不管"。
-   中文纠偏：康德是换检验点——先看准则能不能普遍化、有没有把人当工具，而不是看不到后果；Klausur 要写"Folgenblindheit是代价，但不是无视现实"，再补一句以尊严为标准的权衡才给分。
-   Korrektur-Satz: `Kant blendet Folgen nicht aus Unwissenheit aus, sondern ordnet sie der Würde unter: Keine Zahl rechtfertigt, einen Menschen als bloßes Mittel zu opfern.`
+## Schritt 7 — szenario: Klausurtransfer: Gutachten des Weichenstellers
 
-## Schritt 7 — szenario: Klausurtransfer: Verteidiger im U-Bahn-Weichenprozess
+ROLLE: Du bist Weichensteller im Nachtzug-Prozess und Gutachter der Bahn fuer die kuenftige Stell-Regel.
+SITUATION: Die Betriebsleitung fordert freie Stellbefugnis nach Bilanz, die Ethikkommission fordert ein enges Toetungsverbot mit Wuerde. Lege in etwa 150 Woertern mit Akt, Regel und Maxime dar, wann Stellen verantwortbar waere, und empfaehl eine Regel.
+AUFGABE (AFB III): Verfasse eine zusammenhaengende Darstellung von etwa 150 Woertern mit Kriterium, Anwendung und Urteil.
+RUBRIC (30 XP): Akt- gegen Regelbilanz mit Textbeleg (10 XP) | Maximenprobe mit Wuerde und Tun-Zurechnung (10 XP) | Regelvorschlag mit Schranken und Verantwortung (10 XP).
 
-ROLLE: Du bist Verteidiger des Weichenstellers vor dem Tribunal, Mitglied im Ethikrat der Schule, AG Ehrlichkeit und Technik.
-SITUATION: Debatte: Soll die U-Bahn-Weiche umgestellt werden, wenn dadurch fuenf gerettet und einer geopfert wird? Halte ein 2-Minuten-Plädoyer mit Folgen-Brille für Pro und Pflicht-Brille für Contra, dann eigenes Urteil mit Menschenwürde.
-AUFGABE (AFB III): Zusammenhängende Darstellung ca. 150 Wörter mit beiden Brillen, Beleg und Urteil.
-RUBRIC: These in Satz 1 mit Darstellung beider Brillen (10 XP) | zwei Fachbegriffe wie Maxime, Nutzenprinzip, Menschenwürde (10 XP) | ein Beleg aus Schritt 4 oder 5 (5 XP) | Urteil mit Kriterium Menschenwürde (5 XP).
+Klausur-Satz: `Im Gutachten gilt: Erst Akt und Regel getrennt bilanzieren, dann Maxime an Wuerde messen und schliesslich eng verantworten.`
 
-## Schritt 8 — reflexion: Urteil an der Weiche: Erst Brille waehlen dann vergleichen
+## Schritt 8 — reflexion: Urteil im Stellwerk: Hand plus Regel plus Wuerde
 
-TAKEAWAY 1盒（合书能背才算过）：
+TAKEAWAY (Kernbotschaft in einem Kasten):
 
-中文：一句话 = 功利称后果，康德照准则，写题三步 = 先选眼镜（后果/义务），再对比检验点，最后以尊严为标准下判断。
-Takeaway-Satz: `Folgen abwägen, Maxime universalisieren, mit Würde urteilen — erst Brille wählen, dann vergleichen.`
+Takeaway-Satz: `Zaehle die Leben, doch frage deine Hand: Was du stellst, musst du als Regel wollen und als Maxime verantworten koennen.`
 
-REFLEXION 2问（写2行，不锁分但进下轮计划）：
+REFLEXION (zwei Fragen):
+1. Wo faellt dir die Abwaegung schwerer, bei der Akt- gegen Regelbilanz oder bei der Tun- gegen Unterlassenszurechnung, und an welchem Kriterium machst du dein Urteil fest?
+2. Pruefe deine letzte Antwort an der L2-Norm: Hast du Akt und Regel getrennt, Maxime und Wuerde geprueft und erst danach verantwortet, oder hast du bloss gerechnet?
 
-1. 过程（哪步卡住了）：Welcher Schritt hat gestockt — Verfahrenwahl (Schritt 5), Merksätze (Schritt 6) oder Plädoyer (Schritt 7)? 中文写一句卡点。
-2. 元认知（下次先…）：Beim nächsten Mal fange ich zuerst mit der Verfahrenswahl an, weil sie jeden Vergleich trägt. 中文写一句计划。
+Klausur-Satz: `Reife L2-Urteilskraft verbindet drei Blicke: Akt rettet, Regel sichert und Wuerde begrenzt die stellende Hand.`

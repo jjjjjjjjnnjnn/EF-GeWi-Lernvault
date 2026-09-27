@@ -15,133 +15,165 @@ version: Lesson-v3
 
 <!-- Lesson v3 9步制架构：Schritt 1至8固定结构；Fehlvorstellung 夹在 Schritt 6 与 7 之间（Parser 自动跳过，不占步数）；支持内嵌 [Werkzeug: <id>] 交互教具；Gating: check/szenario 未过 = Weiter 置灰；XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
-## Schritt 1 — entdecken: 预算审判庭：球场十年 against 烟花一夜
+## Schritt 1 — entdecken: Oper gegen Reality-TV: Was wiegt schwerer im Kulturprozess
 
 ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
-1. 中文：能说清功利主义的后果论底色——行为对错完全由总体幸福决定，与动机无关。
-2. 中文：能背出边沁快乐计算的七个维度（强度、持续、确定、远近、繁殖、纯度、广度），并比较两个选项。
-3. 中文：能区分边沁"量的功利"与密尔"质的功利"，并解释密尔如何用"高级快乐"回应"猪的哲学"之讥。
+1. 中文：能说清边沁七标准与密尔质的区分，并正确归属两人。
+2. 中文：能对两个文化选项做七维称量，并用"行家检验"修正纯数量账。
+3. 中文：能以总幸福为标准写出 AFB II/III 评价句并处理少数人问题。
 
-Hook中文法庭悬念（Tribunal Fall 11：市政预算效益案）：
+Hook中文法庭悬念（Tribunal Fall 12：深夜档之争）：
 
-人类伦理最高审判庭第十一夜，AI检察官举起城市预算案，指控辩护律师偏袒少数文艺青年：全市只有一笔钱，是给所有孩子建一个能用十年的免费球场，还是请巨星来办一夜尖叫的音乐节？检察官在天平左侧堆满门票与尖叫，右侧只剩空荡的球场，喊道多数人的快乐就是正义。辩护律师却请出两位老证人：边沁带着七维量尺说先称总量，密尔带着诗集说还要称快乐的成色。今晚你必须学会这把双层尺，否则就会把少数人直接称没了。
+人类伦理最高审判庭第十二夜，电视台要砍掉收视惨淡的深夜歌剧，换成全天真人秀，AI检察官举着收视率报表高喊：三百万人的笑声大于三千人的眼泪，这不是算术而是民主！一位老调音师哽咽着说，歌剧里有他死去妻子的声音，检察官大笑，一份眼泪能当几份笑声称？辩护律师举起边沁的账本与密尔的《论自由》，说今晚既要算量，也要称质——懂两种快乐的行家会把票投给谁。法槌落下，开庭。
 
-Phaenomen-Satz (DE): Zaehlt nur die Menge der Freude oder auch ihre Wuerde.
+Phaenomen-Satz (DE): Drei Millionen Lacher gegen drei Tausend Traenen: Zaehlt Menge oder Wuerde.
 
-Klausur-Satz: `Der Utilitarismus beurteilt eine Handlung ausschließlich nach ihren Folgen, genauer nach dem Gesamtnutzen, den sie für alle Betroffenen stiftet.`
+Klausur-Satz: `Im Kulturprozess prallt Benthams Zuschauerbilanz auf Mills Frage, ob Kenner beider Freuden die Oper dem Dauerlacher vorziehen.`
 
-## Schritt 2 — entdecken: 五块效益砝码：原则 计算 苦乐 总量 高级
+## Schritt 2 — entdecken: Sieben Gewichte ein Kenner: Menge messen Wuerde wagen
 
-PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
+PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，三层结构）：
 
 中文在上，德语在下：
 
-- 功利原则 — Nutzenprinzip：行为正确，当且仅当它促进最大多数人的最大幸福；幸福即快乐多于痛苦。
-- 快乐计算 — hedonistischer Kalkül：边沁用七个维度对快乐与痛苦进行定量加总，以选出总幸福最大的选项。
-- 快乐 / 痛苦 — Lust / Unlust：功利计算的两个基本量，可加总、可比较、可抵消。
-- 最大幸福原则 — Prinzip des größten Glücks der größten Zahl：追求总体幸福最大化，代价是少数人可能被牺牲。
-- 高级快乐 — höhere Freuden：密尔认为精神性快乐在质上高于肉体快乐，不能用同一尺度简单换算。
+- 功利原则 — **Nutzenprinzip**：对的行动即带来最大总幸福的行动。DE: Der Grundsatz des groessten Gluecks der groessten Zahl durch Folgenbilanz. Er stellt Gesamtwohl ueber Einzelabsicht. Mechanismus: Optionen vergleichen, Freude minus Leid summieren und beste Bilanz waehlen. Klausur-Tipp: Formel groesstes Glueck plus Folgenbezug nennen.
+- 快乐算题 — **hedonistisches Kalkuel**：边沁七维：强度、时长、确定性、邻近、多产、纯洁、广度。DE: Benthams sieben Kriterien zur Vermessung von Freude und Leid. Sie machen Optionen rechnerisch vergleichbar. Mechanismus: Sieben Dimensionen operationalisieren Lust und addieren Gesamtbilanz. Klausur-Tipp: Mindestens vier Kriterien namentlich nennen.
+- 量 — **Quantitaet**：只算多少不问何种。DE: Benthams reine Mengenrechnung aus Staerke und Dauer. Sie bleibt berechenbar und demokratisch. Mechanismus: Mehr Betroffene mal staerkere Freude ergibt hoehere Punktzahl. Klausur-Tipp: Quantitaet stets als Bentham markieren.
+- 质 — **Qualitaet**：密尔区分高低快乐，行家更爱高级。DE: Mills Unterscheidung hoeherer und niederer Freuden durch den Kenner-Test. Geistige Freude wiegt schwerer. Mechanismus: Kenner-Vorzug korrigiert Mengenbilanz zugunsten hoeherer Freude. Klausur-Tipp: Formel unzufriedener Sokrates gegen zufriedenes Schwein zitieren.
+- 总幸福 — **Gesamtglueck**：所有受影响者的苦乐总和，少数人也计入。DE: Das Wohl aller Betroffenen zusammengenommen mit Minderheitenfrage. Mehrheit kann Minderheit ueberstimmen. Mechanismus: Aggregation plus Abwaegung erzeugt Urteil mit Spannungsfeld. Klausur-Tipp: Umfang gegen Intensitaet als Problem nennen.
 
-Klausur-Satz: `Bentham bewertet Lust und Unlust nach sieben quantitativen Kriterien, während Mill zusätzlich qualitative Unterschiede zwischen den Freuden annimmt.`
+Klausur-Satz: `Bentham vermisst Freude in sieben Mengen, Mill adelt sie durch die Qualitaet des erfahrenen Kenners.`
 
-## Schritt 3 — entdecken: 账本与诗集：先称量再称成色
+## Schritt 3 — entdecken: Lacher gegen Traene: Wann kippt die Waage
 
 ENTDECKEN（1概念 + 1文字图解）：
 
-中文：功利主义只认一个账本——所有人的快乐与痛苦。边沁给出七维：强度、持续、确定性、远近、繁殖力、纯度、广度，总分高者胜。但这样算等于承认打游戏和读诗没区别，于是密尔补一刀：快乐不仅有量还有质，宁做不满足的人不做满足的猪。先讲量再引入质，是EF高分点。
+中文：先算边沁七维：真人秀赢在广度邻近确定性，歌剧赢在多产纯洁与时长。再请密尔的行家入场：同时懂两种快乐的人，愿为一场《魔笛》放弃十晚傻笑吗？若愿，则质压量，天平翻转。少数人问题最后收束：三千人的高贵快乐能否对抗三百万人的快消？
+
+论证传导链：Praemisse 1 (DE): Richtig ist, was das Gesamtglueck maximiert, gemessen an sieben Kriterien der Menge. Praemisse 2 (DE): Reality-TV mehrt kurze Breitenfreude, Oper sichert dauernde Bildung und Kenner ziehen hoehere Freude vor. Konklusion (DE): Also kippt die Waage erst nach Mills Korrektur gegen die Quote, weil Dauerbildung plus Kenner-Vorzug die Minutenlacher ueberwiegt.
 
 文字图解（ASCII 结构图，App支持解析渲染）：
 
 ```diagram
-   Benthams Kalkuel 7 Dimensionen: Staerke Dauer Gewissheit Naehe Fruchtbarkeit Reinheit Umfang
-   Summe -> Nutzenmaximum
-   Mill korrigiert: Qualitaet vor Quantitaet, lieber unzufriedener Mensch als zufriedenes Schwein
+   Tribunal Fall 12: Quote oder Bildung
+   Bentham: sieben Mengen -> Breite gewinnt
+   Mill: Kenner-Test -> Hoehe gewinnt
+   Urteil: Gesamtglueck mit Minderheitenschutz
 ```
 
-Klausur-Satz: `Während Bentham alle Freuden nur quantitativ vergleicht, unterscheidet Mill zusätzlich zwischen höheren und niederen Freuden.`
+Klausur-Satz: `Erst sieben Mengen bilanzieren und danach durch Mills Kenner-Test korrigieren, das ergibt das vollstaendige Urteil.`
 
 ## Anekdote & Fun-Fact
 
-**Anekdote / Fun-Fact (DE)**: Benthams Kalkül, der alle Freuden nur nach Menge zählt, wurde von Spöttern als „Philosophie der Schweine" verspottet – als ob Menschen und Schweine dieselben Vergnügen hätten. Mill verteidigte den Utilitarismus, indem er einen qualitativen Unterschied einführte: „Es ist besser, ein unzufriedener Mensch zu sein als ein zufriedenes Schwein." Wer beide Arten von Freude kenne, entscheide sich für die höhere.
+**Anekdote / Fun-Fact (DE)**: Bentham vermachte sein Skelett der Universität, damit es weiter an Sitzungen teilnehme und noch Nutzen stifte. Mill lernte als Kind Griechisch und weinte über Gedichte, weil bloße Mengen ihn unglücklich machten. Der eine zählte Freuden wie Münzen, der andere wog sie wie ein Kenner.
 
-**中文解读**: 这段争论解释密尔为何修正边沁：如果快乐只有量没有质，吃饱打滚与读诗思考就无法区分，功利主义会沦为猪的哲学。密尔的高级快乐给计算加了质量刻度——答题先算量再分层比质。
+**中文解读**: 记住"骨架与眼泪"：边沁连死后都要出勤攒功利，密尔小小年纪就为诗流泪。一个算量，一个称质，考场上摆出这对意象，对比立刻立体。
 
-**Bezug zum Konzept**: Mills Unterscheidung zwischen höheren und niederen Freuden ist die qualitative Ergänzung zu Benthams rein quantitativem hedonistischem Kalkül.
+**Bezug zum Konzept**: `Skelett und Traene zeigen: Bentham maximiert Mengen, Mill verteidigt die Wuerde hoeherer Freuden.`
 
-## Schritt 4 — ausprobieren: 天平称预算：球场十年 against 烟花一夜
+## Schritt 4 — ausprobieren: Waage der Quote: Lacherbilanz gegen Bildungswert
 
 [Werkzeug: balance-board]
 
-BEISPIEL（正确例题示范，含教具操作与解答）：
+BEISPIEL（正确例题示范，含教具操作与解答，中文在上、德语在下）：
 
-AUFGABE (analysieren, AFB II)：Eine Stadt hat ein begrenztes Budget. Option A finanziert einen neuen Sportpark, der viele Bürger täglich nutzt und über Jahre Freude bringt. Option B finanziert ein einmaliges großes Musikfestival mit hoher Intensität, aber nur kurzer Dauer. Analysieren Sie beide Optionen mit Benthams Kalkül auf der Waage und begründen Sie, welche Option der Utilitarist wählen würde.
+AUFGABE中文导读：深夜歌剧保卫战。请把真人秀与歌剧摆上天平，先读选段。
 
-Target：左侧放 Sportpark mit Dauer plus Umfang plus Fruchtbarkeit，右侧放 Festival mit Staerke plus Naehe，每项权重 1 bis 5；当 Dauer 与 Umfang 压倒 Staerke 且能说出 Nutzenmaximum 时通关，再加 Mill 成色分。
+Primaertext（Bentham/Mill 简化德语版，约145词）：
 
-HILFE:
-1. Schritt 1: Wende die sieben Dimensionen auf beide Optionen an.
-2. Schritt 2: Vergleiche besonders Dauer, Fruchtbarkeit und Umfang.
-3. Schritt 3: Summiere die erwartete Lust und formuliere das Nutzenmaximum plus Mill-Einwand.
+> (Z.1) Richtig ist, was das groesste Glueck der groessten Zahl bringt.
+> (Z.2) Zaehle dazu Freude und Leid aller Betroffenen zusammen.
+> (Z.3) Schaetze Staerke, Dauer, Gewissheit und Naehe jeder Freude.
+> (Z.4) Frage nach Fruchtbarkeit, Reinheit und Umfang.
+> (Z.5) Was in allen sieben Punkten vorne liegt, ist vorzuziehen.
+> (Z.6) So zaehlt die Quote Millionen Lacher gegen tausend Traenen.
+> (Z.7) Doch Menge allein erniedrigt den Menschen zum Rechner.
+> (Z.8) Kenner beider Freudenarten ziehen geistige Freude vor.
+> (Z.9) Lieber ein unzufriedener Sokrates als ein zufriedenes Schwein.
+> (Z.10) Oper bildet Urteil, Sprache und Mitgefuehl fuer Jahre.
+> (Z.11) Dauerlacher verfliegt und hinterlaesst leere Abende.
+> (Z.12) Hohe Freude adelt die Bilanz und schuetzt die Minderheit.
+> (Z.13) Darum korrigiert Qualitaet jede blosse Mengenrechnung.
+> (Z.14) Wahre dabei die Wuerde des Menschen in jeder Quote.
+> (Z.15) Waehle das groesste Glueck, doch ehre die hoehere Freude.
 
-MUSTERLÖSUNG: Beim Sportpark sind Dauer, Fruchtbarkeit und Umfang hoch: Viele profitieren täglich über Jahre. Beim Festival ist die Intensität sehr hoch, aber Dauer kurz und Fruchtbarkeit gering. Nach Bentham liefert der Park die größere Gesamtsumme, der Utilitarist wählt A. Nach Mill könnte das Festival ästhetisch hochwertig sein, doch solange der Park vielen dauerhaft zugutekommt, bleibt A auch qualitativ vertretbar.
+双色标注任务：用 GELB 标出数量算题句（Z.1–Z.6），用 BLAU 标出行家修正句（Z.7–Z.14）。
 
-Klausur-Satz: `Nach Benthams Kalkül ist diejenige Handlung moralisch vorzuziehen, deren Summe aus Lust und Unlust über alle Betroffenen das größte Glück ergibt.`
+AUFGABE (analysieren, AFB II): Bilanzieren Sie Reality-TV gegen Mitternachtsoper mit sieben Kriterien und Mills Korrektur auf der Waage und entscheiden Sie ueber die Absetzung.
 
-## Schritt 5 — ausprobieren: 双秤对质：只称总量 against 先称成色
+Target：七个维度每项 1 bis 5，先算量，再加质；当质翻转量且能说出 Kenner-Test 时通关。
 
-VERGLEICH辨别实验（双向辨析：量的功利眼 vs. 质的功利眼）：
+HILFE（中德双语步骤）：
 
-VERGLEICH: Wähle erst das Verfahren — 【选程序】先判断 (i) quantitativer Kalkül（边沁式：按七维加总，多数总量定对错）还是 (ii) qualitativer Unterschied（密尔式：先比快乐的质，精神高于肉体）—— dann lösen.
+1. 中文：第1步七维称量：强度时长确定邻近多产纯洁广度，关键词：sieben。
+   Schritt 1 (DE): Sieben Kriterien aus Z.1 bis Z.5 auf beide Optionen anwenden.
+2. 中文：第2步行家入场：懂两种快乐者选谁，关键词：Kenner。
+   Schritt 2 (DE): Kenner-Test aus Z.8 bis Z.10 auf Oper und TV anwenden.
+3. 中文：第3步少数人收束：三千人能否对抗三百万人，关键词：Minderheit。
+   Schritt 3 (DE): Minderheitenschutz aus Z.12 bis Z.14 sichern.
 
-Weg A (Menge, Bentham)：机制为七维、加总、选大。长在直观可操作，短在牺牲少数。
-Weg B (Wuerde, Mill)：机制为成色、知情者、选高。长在守住尊严，短在难称量。
+MUSTERLOESUNG：中文：纯量真人秀胜，加入质后歌剧翻盘：持久教化加行家首选压过短笑；建议保留深夜档并配导赏，把质的门槛降低。
+MUSTERLOESUNG (DE): Ohne Korrektur gewinnt TV durch Umfang und Naehe nach Z.6, mit Korrektur gewinnt Oper durch Dauer, Fruchtbarkeit und Kenner-Vorzug nach Z.8 bis Z.10, daher Sendeplatz mit Vermittlung erhalten.
 
-AUFGABE A：Ein Land kann entweder die Zahl der Krankenhäuser verdoppeln oder jedem Bürger ein monatliches Unterhaltungsgeld zahlen. Welches Verfahren ist zu wählen, und wie würde ein Utilitarist entscheiden?
+Klausur-Satz: `Am Kulturfall zeigt sich: Z.1 bis Z.6 tragen die Quote, Z.8 bis Z.12 tragen Bildung und Kenner gegen die blosse Menge.`
 
-AUFGABE B：Jemand könnte sein Leben lang nur einfache Vergnügungen genießen oder sich mühevoll für eine anspruchsvolle Wissenschaft entscheiden. Welches Verfahren ist zu wählen, und wie argumentiert Mill?
+## Schritt 5 — ausprobieren: Duell der Hoefe: Pflicht schuetzt Minderheit Folgen fuellen Quote
 
-HILFE: A 比总量多少 → 程序 (i)。B 比快乐高低贵贱 → 程序 (ii)。【选程序：只比总量用边沁；要比层次用密尔。】
+VERGLEICH辨别实验（双向辨析：尊严眼 vs 收视账）：
 
-ANTWORT: A erfordert Verfahren (i): Krankenhäuser senken großes Leid langfristig, Gesamtsumme höher, Utilitarist wählt Krankenhäuser. B erfordert Verfahren (ii): Mill argumentiert qualitativ — wer beide Freuden kenne, wähle die höhere trotz Mühe, also Wissenschaft vorziehen.
+VERGLEICH: Waehle erst den Pruefweg — Weg A Kantische Minderheitenwuerde（准则 + 目的公式）oder Weg B Utilitaristische Quotebilanz（七维 + 行家修正）— dann loesen.
 
-Klausur-Satz: `Nach Mill ist eine geringere Menge höherer Freude einer größeren Menge niederer Freude vorzuziehen.`
+Weg A (Kant, Maxime und Wuerde)：机制为准测普遍化加目的公式。把少数人爱好当可弃耗材的准则能否普遍化？长在守护文化少数，短在不问收视现实。
+Weg B (Utilitarismus, Folgen und Gesamtwohl)：机制为七维称量加质的修正。长在算清千万人的夜晚，短在容易拿少数人的高贵快乐换多数人的傻笑。
+
+AUFGABE A：Der Sender will die Oper ersatzlos streichen, weil Quote alles sei. Pruefen Sie mit Weg A Maxime und Selbstzweckformel und formulieren Sie ein Urteil.
+AUFGABE B：Der Sender will Sendeplaetze per Bilanz plus Bildung neu schneiden. Pruefen Sie mit Weg B sieben Kriterien plus Qualitaet und formulieren Sie ein Urteil.
+
+HILFE: A 问少数人与工具化 → Weg A。B 问档期总账 → Weg B。【选程序：见 als Mittel 选康德；见 Bilanz 选功利。】
+
+ANTWORT: A erfordert Weg A: Die Streich-Maxime degradiert Kenner zu blossen Mitteln der Quote und ist als Gesetz nicht wollbar, daher ersatzlose Streichung pflichtwidrig. B erfordert Weg B: Geteilte Plaetze mit Vermittlung erhalten Bildung und sichern Quote, daher differenzierte Reform geboten.
+
+Klausur-Satz: `Kant verbietet, Minderheiten zu Quotenmitteln zu degradieren, der Utilitarismus optimiert Plaetze nach Bilanz und Qualitaet.`
 
 ## Schritt 6 — check: Selbsttest zu Kalkuel und Qualitaet
-
 CHECK检索默写（自测 3 题，与答案配对）：
 
-FRAGE: Nennen Sie die sieben Dimensionen von Benthams Kalkül. | ANTWORT: Intensität, Dauer, Gewissheit, Nähe, Fruchtbarkeit, Reinheit und Umfang.
-FRAGE: Worin besteht Mills Kritik an Bentham? | ANTWORT: Mill ergänzt den quantitativen Kalkül um einen qualitativen Unterschied: Höhere geistige Freuden sind wertvoller als niedere körperliche.
-FRAGE: Was bedeutet das Prinzip des größten Glücks der größten Zahl? | ANTWORT: Richtig ist die Handlung, die das Gesamtglück aller Betroffenen maximiert, auch wenn eine Minderheit Nachteile trägt.
+- FRAGE: Nenne das Nutzenprinzip in einem Satz. | ANTWORT: Richtig ist die Handlung, die das Gesamtglueck aller Betroffenen maximiert, also das groesste Glueck der groessten Zahl bringt.
+- FRAGE: Nenne vier der sieben Kriterien Benthams. | ANTWORT: Staerke, Dauer, Gewissheit, Naehe, Fruchtbarkeit, Reinheit und Umfang, zum Beispiel Staerke, Dauer, Umfang und Reinheit.
+- FRAGE: Kant gegen Utilitarismus am Kulturfall: Was entscheidet? | ANTWORT: Kant verbietet die Instrumentalisierung der Minderheit, der Utilitarismus bilanziert Quote, doch Qualitaet und Wuerde begrenzen die Bilanz.
 
-Klausur-Satz: `Der hedonistische Kalkül maximiert die Gesamtmenge an Lust, doch Mill ergänzt ihn um die qualitative Höherwertigkeit geistiger Freuden.`
+Klausur-Satz: `Wer das Kalkuel beherrscht, rechnet erst sieben Mengen und laesst dann den Kenner ueber die Wuerde entscheiden.`
 
 ## Fehlvorstellung
 
 (非Schritt小节，Parser 自动识别，不计入步骤步数)
 
-1. 误解"功利主义 = 利己主义，就是只顾自己好处"。
-   中文纠偏：完全相反。功利原则算的是"所有人的总账"，不是个人小算盘。它要求把每一个受影响者的苦乐都放进去加总，错在把 Nutzen（总体功利）误当成 Eigennutz（利己）。
-   Korrektur-Satz: `Der Utilitarismus meint nicht den eigenen Vorteil, sondern das Gesamtglück aller Betroffenen.`
+1. 误解"功利主义就是多数人可以随便压倒少数人"。
+   中文纠偏：每份苦乐都要计入，密尔的质更是给少数人的高贵快乐加了砝码。答题要写"量上少数输，质上可能赢"，再补行家检验才完整。
+   Korrektur-Satz: `Auch der Utilitarismus zaehlt jedes Leid mit, und Mills Qualitaet schuetzt hoehere Freuden der Minderheit vor blosser Mehrheit.`
+2. 误解"密尔的质就是个人口味、高雅装腔"。
+   中文纠偏：质有程序标准——同时体验过两种快乐的行家的持久偏好。不是"我喜欢歌剧"，而是"懂两种的人都选歌剧"。
+   Korrektur-Satz: `Mill meint den Kenner-Test beider Freudenarten: Was erfahrene Kenner dauerhaft vorziehen, wiegt objektiv schwerer.`
 
-2. 误解"快乐计算像数学题，谁算得准谁就赢"。
-   中文纠偏：七维不是精确公式，而是一套结构化的比较框架；苦乐的量与质都难以精确测定，这正是功利主义最常被攻击的弱点。答题应承认可操作性优点，同时指出"计算不可行"与"牺牲少数"的代价，才能拿到 AFB III 的分。
-   Korrektur-Satz: `Der hedonistische Kalkül liefert nur eine grobe Struktur; die exakte Messung von Lust und Unlust bleibt umstritten und macht die Verrechnung von Menschen zum ethischen Problem.`
+## Schritt 7 — szenario: Klausurtransfer: Gutachten zur Mitternachtsoper
 
-## Schritt 7 — szenario: Klausurtransfer: Anwalt des Jugendbudgets vor dem Tribunal
+ROLLE: Du bist Gutachter des Senders im Kulturprozess und sollst dem Programmdirektor eine Empfehlung zur Mitternachtsoper geben.
+SITUATION: Die Quote-Lobby fordert Reality-TV rund um die Uhr, die Bildungsinitiative fordert Oper mit Vermittlung. Beurteile in ca. 150 Woertern beide Optionen mit Kalkuel und Kenner-Test und empfiehl eine Regelung, und sichere dein Urteil mit Wuerde oder Bilanz ab.
+AUFGABE: Zusammenhaengende Stellungnahme ca. 150 Woerter mit Kriterium, Anwendung und Urteil.
+RUBRIC (30 XP): Bilanz beider Optionen mit Kriterien und Textbeleg (10 XP) | Anwendung der Qualitaetskorrektur mit Kenner-Test (10 XP) | Umgang mit der Minderheitenfrage plus Wuerde (6 XP) | Fachsprachliches Urteil (4 XP).
 
-ROLLE: Du bist Verteidiger der Minderheit und Berater der Jugendvertretung vor dem Tribunal und sollst eine Empfehlung zur Verwendung eines knappen Budgets abgeben.
-SITUATION: Zur Wahl stehen ein dauerhafter Freizeitpark für alle und ein einmaliges Star-Konzert. Die Mehrheit will das Konzert, eine Minderheit warnt vor Verschwendung. Beurteile beide Optionen in ca. 150 Wörtern mit Bentham und Mill.
-RUBRIC (30 XP): Anwendung der sieben Dimensionen auf beide Optionen (10 XP) | Vergleich mit Schwerpunkt Umfang, Dauer und Fruchtbarkeit (8 XP) | Einbringung von Mills qualitativem Unterschied (7 XP) | Kriteriengeleitetes Urteil mit Abwägung von Mehrheit und Minderheit (5 XP).
+Klausur-Satz: `Im Gutachten gilt: Erst Mengen mit Beleg bilanzieren, dann Qualitaet korrigieren und schliesslich die Minderheit vor der Quote schuetzen.`
 
-## Schritt 8 — reflexion: Urteil im Budgetprozess: Erst Menge dann Wuerde
+## Schritt 8 — reflexion: Urteil mit Kennerblick: Quote plus Bildung
 
 TAKEAWAY 1盒（核心总结）：
 
-中文：功利主义只有一个判据——看后果算总幸福。先选程序：只比总量走边沁七维，要分层次走密尔高级快乐。功利把道德变总账，强在直观，弱在牺牲少数且难计量。
-Takeaway-Satz: `Summiere Lust und Unlust über alle Betroffenen (Bentham) und beachte die qualitative Höherwertigkeit geistiger Freuden (Mill) — erst Menge, dann Wert der Freude.`
+中文：算题三步不丢分：七维称量、行家修正、少数人收束。边沁管算，密尔管称，康德管底线：再高的收视也不能把人当收视耗材。
+Takeaway-Satz: `Zaehle das Glueck aller mit Bentham, wage seine Wuerde mit Mill und wahre die Minderheit mit Kant.`
 
 REFLEXION 2问：
-1. 过程自省：Welcher Schritt fiel schwerer — die Anwendung der sieben Dimensionen (Schritt 4) oder die Unterscheidung von quantitativem und qualitativem Kalkül (Schritt 5)?
-2. 元认知计划：Beim nächsten Mal frage ich zuerst, ob die Aufgabe nur Mengen vergleicht oder auch die Qualität der Freuden bewertet, und wähle danach das Verfahren.
+1. 过程自省：Welcher Schritt fiel schwerer — die sieben Mengen mit Textbeleg (Schritt 4) oder das Duell Wuerde gegen Quote (Schritt 5)?
+2. 元认知计划：Beim naechsten Mal bilanzieren ich zuerst Mengen, korrigiere dann Qualitaet und pruefe zuletzt Wuerde gegen Bilanz.
+
+Klausur-Satz: `Reifer Utilitarismus rechnet mit Bentham, urteilt mit Mill und begrenzt mit Kant: Menge tragen, Qualitaet entscheiden, Wuerde wahren.`

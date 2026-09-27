@@ -29,27 +29,29 @@ Hook中文法庭悬念（Tribunal Fall 07：午夜信贷欺诈案）：
 
 Phaenomen-Satz (DE): Nicht die Folgen stehen vor Gericht, sondern die Maxime hinter der Tat.
 
-Klausur-Satz: `Der kategorische Imperativ verlangt, nur nach derjenigen Maxime zu handeln, durch die du zugleich wollen kannst, dass sie ein allgemeines Gesetz werde.`
+Klausur-Satz: `In der Mitternachts-Kreditkammer steht nicht die Kontonummer vor Gericht, sondern ob die Maxime des falschen Versprechens als Gesetz gewollt werden kann.`
 
 ## Schritt 2 — entdecken: 五件法袍：命令 准则 普遍化 善意 尊严
 
-PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
+PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，三层结构）：
 
 中文在上，德语在下：
 
-- 定言命令 — Kategorischer Imperativ：无条件、不依赖任何目的或欲望的道德命令，是检验准则的道德试金石。
-- 准则 — Maxime：行动的主观原则（"当我处于情形X，为达成目的Z，我要做Y"），正是检验的对象。
-- 普遍化 — Universalisierung：设想所有人无一例外都按该准则行动，看这个世界能否无矛盾地成立。
-- 善良意志 — Guter Wille：康德认为唯一无条件为善的东西；道德价值只看动机是否出于义务。
-- 人的尊严 / 目的公式 — Menschenwürde / Selbstzweckformel：人永远同时是目的本身，绝不可只被当作手段利用。
+- 定言命令 — **Kategorischer Imperativ**：无条件、不依赖任何目的或欲望的道德命令，是检验准则的道德试金石。DE: Das unbedingte Gebot der Universalisierung ohne Ausnahme und ohne Lohn. Es filtert verallgemeinerbare Maximen von blosser Willkuer. Mechanismus: Universalisierung als Probe scheidet Pflicht von Klugheit. Klausur-Tipp: Formel woertlich zitieren, das gibt den Kernpunkt.
+- 准则 — **Maxime**：行动的主观原则（"当我处于情形X，为达成目的Z，我要做Y"），正是检验的对象。DE: Der subjektive Grundsatz aus Lage, Handlung und Zweck in einem Satz. Er liefert das Pruefmaterial der Probe. Mechanismus: Vollstaendiger Satz mit X, Y und Z macht die Probe erst moeglich. Klausur-Tipp: Dreigliederung Lage-Handlung-Zweck stets vollstaendig nennen.
+- 普遍化 — **Universalisierung**：设想所有人无一例外都按该准则行动，看这个世界能否无矛盾地成立。DE: Die Probe, ob die Maxime als Gesetz fuer alle gedacht und gewollt werden kann. Denkwiderspruch trifft vollkommene, Wollenswiderspruch unvollkommene Pflicht. Mechanismus: Verallgemeinerung deckt Selbstzerstoerung der Maxime auf. Klausur-Tipp: Denk- gegen Wollenswiderspruch sauber zuordnen.
+- 善良意志 — **Guter Wille**：康德认为唯一无条件为善的东西；道德价值只看动机是否出于义务。DE: Das einzige unbedingt Gute, dessen Wert in der Gesinnung aus Pflicht liegt. Folgen adeln keine boese Maxime. Mechanismus: Pflichtgesinnung statt Neigung begruendet moralischen Wert. Klausur-Tipp: Aus Pflicht gegen aus Neigung als Kontrast nennen.
+- 人的尊严 / 目的公式 — **Menschenwürde / Selbstzweckformel**：人永远同时是目的本身，绝不可只被当作手段利用。DE: Das Verbot, Menschheit bloss als Mittel zu gebrauchen, mit Achtung jeder Person als Zweck. Es stoppt jede Verrechnung. Mechanismus: Wuerde blockiert Aufwiegen von Personen gegeneinander. Klausur-Tipp: Als zweite Pruefinstanz nach Universalisierung bringen.
 
-Klausur-Satz: `Eine Handlung gewinnt ihren moralischen Wert nicht aus den Folgen, sondern aus der Maxime, aus der sie hervorgeht.`
+Klausur-Satz: `Eine Handlung gewinnt ihren moralischen Wert nicht aus den Folgen, sondern aus der Maxime und der Gesinnung aus Pflicht.`
 
 ## Schritt 3 — entdecken: 四步照妖镜：表述 升格 设想 意愿
 
 ENTDECKEN（1概念 + 1文字图解）：
 
 中文：康德不问结果好不好，而问理由能不能变成人人都遵守的法则。四步：提炼准则；升格为普遍自然法则；逻辑矛盾检验看能否无矛盾设想，触犯完全义务则绝对禁止；意愿矛盾检验看能否无矛盾意愿，触犯不完全义务则必须履行。目的公式从另一侧把关：任何人不能只被当工具。
+
+论证传导链：Praemisse 1 (DE): Erlaubt ist nur, was als allgemeines Gesetz gedacht und gewollt werden kann. Praemisse 2 (DE): Das falsche Versprechen zerstoert verallgemeinert die Institution des Versprechens und degradiert den Geber zum Mittel. Konklusion (DE): Also verletzt die Kredit-Maxime vollkommene Pflicht und ist strikt verboten.
 
 文字图解（ASCII 结构图，App支持解析渲染）：
 
@@ -60,7 +62,7 @@ ENTDECKEN（1概念 + 1文字图解）：
    -> Selbstzweckformel sichert Wuerde
 ```
 
-Klausur-Satz: `Lässt sich die Maxime nicht widerspruchsfrei als allgemeines Gesetz denken oder wollen, so ist die Handlung pflichtwidrig.`
+Klausur-Satz: `Laesst sich die Maxime nicht widerspruchsfrei als allgemeines Gesetz denken oder wollen, so ist die Handlung pflichtwidrig.`
 
 ## Anekdote & Fun-Fact
 
@@ -76,49 +78,69 @@ Klausur-Satz: `Lässt sich die Maxime nicht widerspruchsfrei als allgemeines Ges
 
 BEISPIEL（正确例题示范，含教具操作与解答）：
 
-AUFGABE中文导读：被告准则为缺钱即借钱不还。请在天平上普遍化，看承诺概念是否崩塌。
+AUFGABE中文导读：被告准则为缺钱即借钱不还。请在天平上普遍化，看承诺概念是否崩塌。先读康德选段。
+
+Primaertext（Kant 简化德语版，约150词）：
+
+> (Z.1) Handle nur nach der Maxime, die zugleich Gesetz werden kann.
+> (Z.2) Sprich deine Maxime ehrlich aus, mit Lage, Handlung und Zweck.
+> (Z.3) Wenn ich in Geldnot bin, will ich leihen und nicht zurueckzahlen.
+> (Z.4) Denke diese Maxime nun als Gesetz fuer alle Menschen.
+> (Z.5) Stelle dir eine Welt vor, in der jedes Versprechen bricht.
+> (Z.6) Niemand wuerde mehr leihen, niemand wuerde mehr glauben.
+> (Z.7) Die Institution des Versprechens loest sich auf.
+> (Z.8) Die Maxime zerstoert ihre eigene Grundlage und wird undenkbar.
+> (Z.9) Das ist ein Denkwiderspruch gegen vollkommene Pflicht.
+> (Z.10) Frage danach, ob du diese Welt auch wollen kannst.
+> (Z.11) Niemand kann wollen, dass ihm selbst niemals geholfen wird.
+> (Z.12) Das ist ein Wollenswiderspruch gegen unvollkommene Pflicht.
+> (Z.13) Brauche die Menschheit niemals bloss als Mittel.
+> (Z.14) Der Verleiher ist Zweck an sich, kein Werkzeug deiner Not.
+> (Z.15) Klugheit rechnet, Moral gebietet: Nur Verallgemeinerbares ist erlaubt.
+
+双色标注任务：用 GELB 标出准则表述与普遍化句（Z.1–Z.5），用 BLAU 标出矛盾检验与尊严句（Z.6–Z.14）。
 
 AUFGABE (rekonstruieren, AFB II)：Prüfen Sie die Maxime Ich will mir Geld leihen und es nicht zurückzahlen nach dem Vier-Schritte-Schema auf der Waage und entscheiden Sie, ob die Handlung moralisch erlaubt ist.
 
 Target：左侧放 Maxime plus Vorteil，右侧放 Denkbarkeit plus Wollbarkeit plus Wuerde，每项权重 1 bis 5；当右侧以 Denkwiderspruch 胜出且能说出 vollkommene Pflicht 时通关。
 
 HILFE:
-1. Schritt 1: Formuliere die Maxime in der Form Wenn ich in Situation X bin, will ich Handlung Y tun, um Zweck Z zu erreichen.
-2. Schritt 2: Setze die Maxime als allgemeines Gesetz und stelle dir eine Welt vor, in der alle Menschen so handeln.
-3. Schritt 3: Prüfe Denkwiderspruch und Wollenswiderspruch und ordne die Pflichtart zu.
+1. Schritt 1: Formuliere die Maxime in der Form Wenn ich in Situation X bin, will ich Handlung Y tun, um Zweck Z zu erreichen, mit Z.2 bis Z.3.
+2. Schritt 2: Setze die Maxime als allgemeines Gesetz mit Z.4 bis Z.5 und stelle dir eine Welt vor, in der alle Menschen so handeln.
+3. Schritt 3: Prüfe Denkwiderspruch mit Z.6 bis Z.9 und Wollenswiderspruch mit Z.10 bis Z.12 und ordne die Pflichtart mit Z.13 bis Z.14 zu.
 
-MUSTERLÖSUNG: Die Maxime lautet: Wenn ich in Geldnot bin, will ich mir Geld leihen und es nicht zurückzahlen. Als allgemeines Gesetz gedacht, würde jeder Versprechen brechen. Es zeigt sich ein Denkwiderspruch: Die Institution des Versprechens würde sich auflösen, niemand bekäme mehr Geld, die Maxime zerstört ihre eigene Grundlage. Sie verletzt eine vollkommene Pflicht und ist strikt verboten. Zusätzlich degradiert sie den Verleiher zum bloßen Mittel gegen die Selbstzweckformel.
+MUSTERLÖSUNG：中文：准则升格后承诺概念瓦解，无人再放贷，准则自毁基础，属逻辑矛盾，触犯完全义务，绝对禁止；同时把放贷人只当工具，违反目的公式。
+MUSTERLOESUNG (DE): Die Maxime nach Z.3 zerstoert universalisiert mit Z.6 bis Z.8 ihre eigene Grundlage als Denkwiderspruch gegen vollkommene Pflicht und degradiert den Verleiher nach Z.13 bis Z.14 zum blossen Mittel.
 
-Klausur-Satz: `Die Maxime des gebrochenen Versprechens zerstört universalisiert den Begriff des Versprechens selbst und verstößt damit gegen eine vollkommene Pflicht.`
+Klausur-Satz: `Am Kreditfall zeigt sich: Z.6 bis Z.9 belegen den Denkwiderspruch und Z.13 bis Z.14 die Verletzung der Selbstzweckformel.`
 
-## Schritt 5 — ausprobieren: 双庭对质：设想崩塌 against 意愿崩塌
+## Schritt 5 — ausprobieren: 双庭对质：义务检验 against 功利算账
 
-VERGLEICH辨别实验（双向辨析：完全义务眼 vs. 不完全义务眼）：
+VERGLEICH辨别实验（双向辨析：康德眼 vs. 功利眼）：
 
-VERGLEICH: Wähle erst das Verfahren — 【选程序】先判断 (i) Denkwiderspruch-Verfahren（能否无矛盾设想：虚假承诺、偷窃，逻辑直接崩塌）还是 (ii) Wollenswiderspruch-Verfahren（能否无矛盾意愿：见死不救，逻辑可行但意愿自相矛盾）—— dann lösen.
+VERGLEICH: Wähle erst das Verfahren — Weg A Kantische Pflichtpruefung（准则普遍化 + 尊严）还是 Weg B Utilitaristische Bilanz（放贷总账 + 信用福利）— dann lösen.
 
-Weg A (Denken, vollkommene Pflicht)：机制为准则、普遍化、设想崩塌。长在绝对禁止说谎偷窃，短在显得不近人情。
-Weg B (Wollen, unvollkommene Pflicht)：机制为准则、普遍化、意愿崩塌。长在证成救助义务，短在义务强度较弱。
+Weg A (Kant, Maxime und Wuerde)：机制为准测、普遍化、目的公式。不还钱的准则普遍化即自毁。长在守护承诺与尊严，短在急难时显得不近人情。
+Weg B (Utilitarismus, Folgen und Gesamtwohl)：机制为受影响者、苦乐、总和。若赖账能救急且只伤一人，账面可能为正。长在算清现实代价，短在拿信用根基做交易。
 
-AUFGABE A：Jemand will in Geldnot ein falsches Versprechen geben, um sich einen Vorteil zu verschaffen. Welches Verfahren ist zu wählen, und wie lautet das Ergebnis?
+AUFGABE A：Jemand will in Geldnot ein falsches Versprechen geben, um sich einen Vorteil zu verschaffen. Pruefen Sie mit Weg A Universalisierung und Selbstzweckformel und formulieren Sie ein Urteil.
+AUFGABE B：Jemand will das Festbudget spenden statt feiern, weil es mehr Leid lindert. Pruefen Sie mit Weg B Folgenbilanz und Gesamtwohl und formulieren Sie ein Urteil.
 
-AUFGABE B：Jemand will einem Menschen in Not grundsätzlich nicht helfen. Welches Verfahren ist zu wählen, und wie lautet das Ergebnis?
+HILFE: A 问承诺与尊严 → Weg A。B 问总体福利 → Weg B。【选程序：逻辑崩塌选完全义务；总体算账选功利。】
 
-HILFE: A 虚假承诺普遍化让承诺概念瓦解，属能否设想 → 程序 (i)。B 不援助逻辑可设想但无人能合理意愿 → 程序 (ii)。【选程序：逻辑崩塌选完全义务；意愿崩塌选不完全义务。】
+ANTWORT: A erfordert Weg A: Universalisiert bricht die Institution des Versprechens nach Z.6 bis Z.8 zusammen als Denkwiderspruch gegen vollkommene Pflicht, strikt verboten. B erfordert Weg B: Der Verzicht mehrt das Gesamtwohl deutlich und mindert grosses Leid, daher geboten.
 
-ANTWORT: A erfordert Verfahren (i): Universalisiert bricht die Institution des Versprechens zusammen, Denkwiderspruch, vollkommene Pflicht, strikt verboten. B erfordert Verfahren (ii): Eine Welt ohne Hilfe ist denkbar, aber kein Vernünftiger kann wollen, dass ihm selbst niemand hilft, Wollenswiderspruch, Hilfspflicht.
-
-Klausur-Satz: `Der Denkwiderspruch begründet vollkommene Pflichten, der Wollenswiderspruch unvollkommene Pflichten wie die Hilfeleistung.`
+Klausur-Satz: `Der Denkwiderspruch begruendet vollkommene Pflichten gegen Luege und Betrug, die bessere Bilanz begruendet nuetzliche Hilfe: Pflicht begrenzt Nutzen.`
 
 ## Schritt 6 — check: Selbsttest zu Kategorischer Imperativ
 
 CHECK检索默写（自测 3 题，与答案配对）：
 
-FRAGE: Wie lautet die Universalisierungsformel des kategorischen Imperativs? | ANTWORT: Handle nur nach derjenigen Maxime, durch die du zugleich wollen kannst, dass sie ein allgemeines Gesetz werde.
-FRAGE: Was unterscheidet einen Denkwiderspruch von einem Wollenswiderspruch? | ANTWORT: Beim Denkwiderspruch lässt sich die universalisierte Maxime nicht widerspruchsfrei denken, beim Wollenswiderspruch ist sie denkbar, aber nicht vernünftig zu wollen.
-FRAGE: Was besagt die Selbstzweckformel? | ANTWORT: Handle so, dass du die Menschheit jederzeit zugleich als Zweck, niemals bloß als Mittel brauchst.
+- FRAGE: Wie lautet die Universalisierungsformel des kategorischen Imperativs? | ANTWORT: Handle nur nach derjenigen Maxime, durch die du zugleich wollen kannst, dass sie ein allgemeines Gesetz werde.
+- FRAGE: Was unterscheidet einen Denkwiderspruch von einem Wollenswiderspruch? | ANTWORT: Beim Denkwiderspruch laesst sich die universalisierte Maxime nicht widerspruchsfrei denken, beim Wollenswiderspruch ist sie denkbar, aber nicht vernuenftig zu wollen.
+- FRAGE: Kant gegen Utilitarismus am Kreditfall: Was entscheidet? | ANTWORT: Kant verbietet das falsche Versprechen durch Denkwiderspruch und Wuerde, der Utilitarismus bilanziert Folgen, doch Pflicht begrenzt jede Bilanz.
 
-Klausur-Satz: `Kant prüft die Maxime auf Denk- und Wollenswiderspruch und schützt über die Selbstzweckformel die unantastbare Würde jedes Menschen.`
+Klausur-Satz: `Kant prueft die Maxime auf Denk- und Wollenswiderspruch und schuetzt ueber die Selbstzweckformel die unantastbare Wuerde jedes Menschen.`
 
 ## Fehlvorstellung
 
@@ -126,25 +148,28 @@ Klausur-Satz: `Kant prüft die Maxime auf Denk- und Wollenswiderspruch und schü
 
 1. 误解"康德只看动机，所以完全不看后果、也不管现实"。
    中文纠偏：康德不是看不见后果，而是把后果从道德价值的判据位置上撤下来。他换了一个检验点：先看准则能否普遍化、有没有把人当工具。答题时要写清"后果被从属化，而非被无视"，再补一句以尊严为标准的权衡才得分。
-   Korrektur-Satz: `Kant verkennt die Folgen nicht, sondern ordnet sie der Pflicht und der Würde unter: Keine noch so gute Folge rechtfertigt es, einen Menschen bloß als Mittel zu benutzen.`
-
+   Korrektur-Satz: `Kant verkennt die Folgen nicht, sondern ordnet sie der Pflicht und der Wuerde unter: Keine noch so gute Folge rechtfertigt es, einen Menschen bloss als Mittel zu benutzen.`
 2. 误解"定言命令就是那条'己所不欲勿施于人'的黄金法则"。
    中文纠偏：两者形似而神不同。黄金法则以"你希望别人怎样对你"这一经验性愿望为准，定言命令则以"准则能否无矛盾地普遍化"这一先验形式为准。黄金法则可能因个人偏好而失效，定言命令对任何理性存在者都无条件有效。
-   Korrektur-Satz: `Anders als die goldene Regel stützt sich der kategorische Imperativ nicht auf individuelle Wünsche, sondern auf die Widerspruchsfreiheit der universalisierten Maxime.`
+   Korrektur-Satz: `Anders als die goldene Regel stuetzt sich der kategorische Imperativ nicht auf individuelle Wuensche, sondern auf die Widerspruchsfreiheit der universalisierten Maxime.`
 
 ## Schritt 7 — szenario: Klausurtransfer: Verteidiger im Schummel-Prozess
 
 ROLLE: Du bist Verteidiger im Schummel-Prozess vor dem Tribunal und Mitglied im Ethikrat deiner Schule zur Ehrlichkeit im Schulalltag.
-SITUATION: Ein Mitschüler schlägt vor, bei einer Klausur zu schummeln, weil der Druck zu groß sei und allen damit geholfen wäre. Beurteile in ca. 150 Wörtern die Maxime des Schummelns nach dem Vier-Schritte-Schema und urteile mit der Selbstzweckformel.
-RUBRIC (30 XP): Formulierung der Maxime des Schummelns (5 XP) | Durchführung der Universalisierung mit Denkwiderspruch (10 XP) | Anwendung der Selbstzweckformel auf Mitschüler und Lehrkraft (10 XP) | Kriteriengeleitetes Urteil mit Begründung (5 XP).
+SITUATION: Ein Mitschüler schlägt vor, bei einer Klausur zu schummeln, weil der Druck zu groß sei und allen damit geholfen wäre. Beurteile in ca. 150 Wörtern die Maxime des Schummelns nach dem Vier-Schritte-Schema und urteile mit der Selbstzweckformel, und wäge kurz die utilitaristische Entlastungsbilanz ab.
+RUBRIC (30 XP): Formulierung der Maxime des Schummelns (5 XP) | Durchführung der Universalisierung mit Denkwiderspruch und Textbeleg (10 XP) | Anwendung der Selbstzweckformel auf Mitschüler und Lehrkraft (10 XP) | Kriteriengeleitetes Urteil mit Begründung (5 XP).
+
+Klausur-Satz: `Im Transfer gilt: Erst Maxime mit Lage-Handlung-Zweck bilden, dann universalisieren und erst nach Widerspruch und Wuerde urteilen.`
 
 ## Schritt 8 — reflexion: Urteil ohne Rechner: Nur was verallgemeinerbar ist zaehlt
 
 TAKEAWAY 1盒（核心总结）：
 
-中文：康德的道德不是看结果而是照准则。先选程序：普遍化后概念崩塌走完全义务，逻辑可行却无人能合理意愿走不完全义务。最后用目的公式收尾——任何人都不能只被当工具。
-Takeaway-Satz: `Prüfe deine Maxime auf Denk- und Wollenswiderspruch und achte die Menschheit jederzeit als Zweck an sich — moralisch ist, was universalisierbar ist und die Würde achtet.`
+中文：康德的道德不是看结果而是照准则。先选程序：普遍化后概念崩塌走完全义务，逻辑可行却无人能合理意愿走不完全义务。最后用目的公式收尾——任何人都不能只被当工具。功利账可以算，但越不过尊严线。
+Takeaway-Satz: `Pruefe deine Maxime auf Denk- und Wollenswiderspruch und achte die Menschheit jederzeit als Zweck an sich: moralisch ist, was universalisierbar ist und die Wuerde achtet.`
 
 REFLEXION 2问：
-1. 过程自省：Welcher Schritt fiel schwerer — die Formulierung der Maxime (Schritt 4) oder die Unterscheidung von Denk- und Wollenswiderspruch (Schritt 5)?
+1. 过程自省：Welcher Schritt fiel schwerer — die Formulierung der Maxime mit Textbeleg (Schritt 4) oder das Duell Pflicht gegen Bilanz (Schritt 5)?
 2. 元认知计划：Beim nächsten Mal prüfe ich zuerst, ob die universalisierte Maxime logisch zusammenbricht oder nur nicht gewollt werden kann, und wähle danach das Verfahren.
+
+Klausur-Satz: `Reife Kant-Pruefung verbindet vier Schritte mit zwei Grenzen: Widerspruch sortiert die Pflicht und Wuerde stoppt jede nuetzliche Bilanz.`

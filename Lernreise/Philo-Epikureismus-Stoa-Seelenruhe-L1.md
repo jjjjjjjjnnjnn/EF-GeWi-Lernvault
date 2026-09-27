@@ -25,31 +25,33 @@ ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
 Hook中文法庭悬念（Tribunal Fall 03：过劳护士的宁静辩护）：
 
-人类伦理最高审判庭第三夜，AI检察官传唤了一名连续值班三十六小时后给病人发错药的护士，指控她玩忽职守，要求剥夺她的照护资格。辩护律师没有否认错误，而是申请传唤两位古人出庭作证：伊壁鸠鲁带着面包与朋友走进法庭，说真正的快乐在于剔除虚荣欲望；芝诺的斯多亚传人站在柱廊阴影里，说痛苦来自错误的判断而非事件本身。检察官冷笑，古人的心灵鸡汤能当无罪证据吗？法官敲槌，这个问题恰恰是本课的考点——两种通往心灵宁静的古道，哪一条更能解释现代人的焦虑，又各有什么代价。
+人类伦理最高审判庭第三夜，AI检察官传唤了一名连续值班三十六小时后给病人发错药的护士，指控她玩忽职守，要求剥夺她的照护资格。辩护律师没有否认错误，而是申请传唤两位古人出庭作证：伊壁鸠鲁带着面包与朋友走进法庭，说真正的快乐在于剔除虚荣欲望；芝诺的斯多亚传人站在柱廊阴影里，说痛苦来自错误的判断而非事件本身。检察官冷笑，古人的心灵鸡汤能当无罪证据吗？法官敲槌，这个问题恰恰是本课的考点。
 
 Phaenomen-Satz (DE): Der eine zaehlt Freuden, der andere prueft Urteile, beide suchen Ruhe.
 
-Klausur-Satz: `Beide Schulen suchen Ruhe, aber auf entgegengesetzten Wegen.`
+Klausur-Satz: `Im Pflegerprozess suchen Garten und Halle dieselbe Seelenruhe, aber auf entgegengesetzten Wegen der Begierde und des Urteils.`
 
 ## Schritt 2 — entdecken: Zwei Arzneischraenke: Begierde sortieren Urteil korrigieren
 
-PRETRAINING术语盒（核心5词）：
+PRETRAINING术语盒（核心5词，中文在上、德语在下，三层结构）：
 
-中文在上，德语在下：
+- 快乐主义 — **Epikureismus**：快乐为善，但主张计算长远、节制欲望，只取自然必要者。DE: Epikurs Lehre, dass Lust das Gute ist, aber nur berechnete Lust traegt. Eitle Wuensche erzeugen Unruhe und Abhaengigkeit. Mechanismus: Lustklassifikation filtert natuerlich-notwendige Wuensche heraus und streicht eitle Begierden. Klausur-Tipp: Betone berechnete Lust gegen Vulgär-Hedonismus, sonst droht Punktabzug.
+- 斯多亚 — **Stoa**：顺应自然与命运，只在可控之事上用力，接纳不可控。DE: Die Lehre der Halle, dass nur das Urteil in unserer Macht steht. Ereignisse sind gegeben, Zustimmung ist frei. Mechanismus: Dichotomie der Kontrolle trennt Einstellbares von Gegebenem und heilt durch Urteilskorrektur. Klausur-Tipp: Nenne Kontrollzone plus Zustimmung als Doppelkern jeder Stoa-Definition.
+- 心灵宁静 — **Seelenruhe / Ataraxie**：无纷扰的稳定状态，两派共同最高善。DE: Der Zustand unerschuetterlicher Stabilitaet durch richtige Wahl oder richtiges Urteil. Er ist beiden Schulen das hoechste Gut. Mechanismus: Weniger falsche Wuensche plus bessere Urteile ergeben gestaffelte Ruhe. Klausur-Tipp: Ataraxie stets als Ziel beider Schulen nennen, das sichert den Vergleichspunkt.
+- 快乐分类 — **Lustklassifikation**：天然必要 / 天然非必要 / 空虚欲望，只满足第一类。DE: Epikurs Dreiteilung in natuerlich-notwendige, natuerlich-unnoetige und eitle Begierden. Nur erste sichern dauerhaftes Glueck. Mechanismus: Sortieren plus Streichen plus Pflegen stabilisiert Lust ohne Reue. Klausur-Tipp: Alle drei Klassen namentlich nennen und Brot-Freunde-Beispiel geben.
+- 控制二分法 — **Dichotomie der Kontrolle**：区分可控判断行动与不可控名声命运。DE: Stoische Zweiteilung in Kontrollierbares und Unkontrollierbares. Sorge gilt nur dem Einstellbaren. Mechanismus: Rueckzug der Zustimmung vom Gegebenen loescht Aerger an der Wurzel. Klausur-Tipp: Formel sorge nur fuer Einstellbares woertlich zitieren.
 
-- 快乐主义 — Epikureismus：快乐为善，但主张计算长远、节制欲望，只取自然必要者。
-- 斯多亚 — Stoa：顺应自然与命运，只在可控之事上用力，接纳不可控。
-- 心灵宁静 — Seelenruhe / Ataraxie：无纷扰的稳定状态，两派共同最高善。
-- 快乐分类 — Lustklassifikation：天然必要 / 天然非必要 / 空虚欲望，只满足第一类。
-- 控制二分法 — Dichotomie der Kontrolle：区分可控判断行动与不可控名声命运。
-
-Klausur-Satz: `Epikur rechnet mit Luesten, die Stoa mit Urteilen.`
+Klausur-Satz: `Epikur heilt durch kleinere Wuensche mit der Lustklassifikation, die Stoa durch staerkere Urteile mit der Kontroll-Dichotomie.`
 
 ## Schritt 3 — entdecken: Zwei Therapien eine Seele: Wuensche verkleinern Urteile staerken
 
 ENTDECKEN（1概念 + 1文字图解）：
 
-中文：伊壁鸠鲁治欲望，把欲望分三类，只取天然必要，划掉虚荣；斯多亚治判断，把世界分可控与不可控，只在可控处用力。公式化记忆：花园靠正确选择得安宁，柱廊靠正确判断得安宁。前者缩小想要，后者管住评判，殊途同归于不动心。
+中文：伊壁鸠鲁治欲望，把欲望分三类，只取天然必要，划掉虚荣；斯多亚治判断，把世界分可控与不可控，只在可控处用力。花园靠正确选择得安宁，柱廊靠正确判断得安宁。前者缩小想要，后者管住评判，殊途同归于不动心。
+
+论证传导链（前提→结论）：
+
+Praemisse 1 (DE): Unruhe stammt entweder aus falschen Wuenschen oder aus falschen Urteilen ueber das Gegebene. Praemisse 2 (DE): Epikur streicht eitle Wuensche und pflegt natuerliche, die Stoa korrigiert Urteile und zieht Zustimmung vom Unkontrollierbaren zurueck. Konklusion (DE): Also therapieren beide Angst an verschiedener Wurzel und vereinen sich in der Seelenruhe als gemeinsamem Ziel.
 
 ```diagram
     Tribunal Fall 03: Burnout
@@ -57,7 +59,7 @@ ENTDECKEN（1概念 + 1文字图解）：
     Stoa Halle: Urteil pruefen -> nur Kontrollzone bearbeiten -> Ruhe
 ```
 
-Klausur-Satz: `Wahl der Lueste hier, Pruefung der Urteile dort.`
+Klausur-Satz: `Beide Schulen therapieren Angst, Epikur durch Begierdenkritik und die Stoa durch Urteilskritik mit gemeinsamer Ruhe als Ziel.`
 
 ## Anekdote & Fun-Fact
 
@@ -73,7 +75,27 @@ Klausur-Satz: `Wahl der Lueste hier, Pruefung der Urteile dort.`
 
 BEISPIEL（正确例题示范）：
 
-AUFGABE中文导读：护士的考试焦虑与值班崩溃，请一半用伊壁鸠鲁、一半用斯多亚开处方，在天平上称量。
+AUFGABE中文导读：护士的考试焦虑与值班崩溃，请一半用伊壁鸠鲁、一半用斯多亚开处方，在天平上称量。先读原著选段。
+
+Primaertext（Epikur/Seneca 简化德语版，约140词）：
+
+> (Z.1) Das Glueck liegt nicht in grossem Besitz, sondern in kleinen Wuenschen.
+> (Z.2) Teile deine Begierden in drei Arten und pruefe sie ehrlich.
+> (Z.3) Natuerlich und notwendig sind Brot, Wasser, Freunde und Denken.
+> (Z.4) Natuerlich, aber unnoetig ist Luxus, der nur kurz erfreut.
+> (Z.5) Eitel ist Ruhm, der dich von fremdem Lob abhaengig macht.
+> (Z.6) Streiche das Eitle, denn es erzeugt Unruhe und Neid.
+> (Z.7) Pflege Freundschaft, sie ist die sicherste Lust.
+> (Z.8) Doch manches Leid kommt nicht aus Wuenschen, sondern aus Urteilen.
+> (Z.9) Die Nachtschicht ist gegeben, dein Urteil darueber ist frei.
+> (Z.10) Was du nicht aendern kannst, musst du nicht beklagen.
+> (Z.11) Sorge nur fuer dein Urteil und dein Handeln in der Kontrollzone.
+> (Z.12) Ziehe deine Zustimmung vom Unkontrollierbaren zurueck.
+> (Z.13) So verwandelt sich Schicksal in Gelassenheit.
+> (Z.14) Kleine Wuensche beruhigen das Herz, starke Urteile festigen es.
+> (Z.15) Garten und Halle fuehren vereint zur Seelenruhe.
+
+双色标注任务：用 GELB 标出所有讲欲望分类的句子（Z.1–Z.7），用 BLAU 标出所有讲判断与控制区的句子（Z.8–Z.13）。
 
 AUFGABE (analysieren, AFB II): Analysieren Sie Pruefungsangst und Burnout aus epikureischer und aus stoischer Sicht vor dem Tribunal.
 
@@ -82,44 +104,44 @@ Target：左侧放 Begierde plus Freundschaft plus Genuegsamkeit，右侧放 Urt
 HILFE：
 
 1. 中文：第1步分诊：虚荣欲望归伊壁鸠鲁，不可控归斯多亚，关键词：Sortieren。
-   Schritt 1 (DE): Wuensche versus Urteile trennen.
+   Schritt 1 (DE): Wuensche versus Urteile mit Z.1 bis Z.2 trennen.
 2. 中文：第2步伊壁鸠鲁减欲望：划掉虚荣，守住睡眠朋友，关键词：Begierde。
-   Schritt 2 (DE): Epikur heilt durch kleinere Wuensche.
+   Schritt 2 (DE): Epikur heilt durch kleinere Wuensche mit Z.3 bis Z.7.
 3. 中文：第3步斯多亚正判断：备考可控、考题不可控，关键词：Urteil。
-   Schritt 3 (DE): Stoa heilt durch staerkere Urteile.
+   Schritt 3 (DE): Stoa heilt durch staerkere Urteile mit Z.8 bis Z.12.
 
 MUSTERLOESUNG：中文：球鞋与排名焦虑中，虚荣欲望用伊壁鸠鲁划掉，不可控用斯多亚接受；欲望小了、评判准了，心即安静。
-MUSTERLOESUNG (DE): Epikur heilt durch kleinere Wuensche, die Stoa durch staerkere Urteile ueber das Unkontrollierbare. Beide therapieren Angst, vereint zur Seelenruhe.
+MUSTERLOESUNG (DE): Epikur heilt durch kleinere Wuensche nach Z.5 bis Z.7, die Stoa durch staerkere Urteile nach Z.11 bis Z.12. Beide therapieren Angst, vereint zur Seelenruhe nach Z.14 bis Z.15.
 
-Klausur-Satz: `Garten beruhigt durch Auswahl, Halle durch Zustimmungskontrolle.`
+Klausur-Satz: `Am Primaertext zeigt sich: Z.1 bis Z.7 tragen die epikureische Therapie der Wuensche, Z.8 bis Z.13 die stoische Therapie der Urteile.`
 
-## Schritt 5 — ausprobieren: Kreuzverhoer im Garten und in der Halle: Konsum gegen Aerger
+## Schritt 5 — ausprobieren: Duell der Pruefwege: Kantische Pflicht gegen utilitaristisches Glueck
 
-VERGLEICH辨别实验（欲望眼 vs 判断眼）：
+VERGLEICH辨别实验（义务眼 vs 功利眼，投射到过劳案件）：
 
-VERGLEICH: Waehle zuerst das Verfahren — (i) Garten-Verfahren mit Begierde, Ataraxie und Lustklassifikation oder (ii) Hallen-Verfahren mit Urteil, Dichotomie und Gelassenheit — dann loesen.
+VERGLEICH: Waehle zuerst den Pruefweg — Weg A Kantische Pflichtpruefung（准则 + 尊严）oder Weg B Utilitaristische Gluecksbilanz（苦乐 + 总和）— dann loesen.
 
-Weg A (Garten, Epikur)：机制为分类、取舍、安宁。虚荣欲望拉黑，天然必要留下。长在治消费攀比，短在遇命运打击无力。
-Weg B (Halle, Stoa)：机制为事件、判断、同意。只管可控判断，不管不可控事件。长在治愤怒焦虑，短在易被误读为冷漠。
+Weg A (Kant, Maxime und Wuerde)：机制为准则普遍化加目的公式。护士不得只被当排班工具。长在守护人的尊严底线，短在排班 emergency 时显得僵硬。
+Weg B (Utilitarismus, Folgen und Gesamtwohl)：机制为受影响者苦乐加总。病人安全与护士健康同等计入。长在算清总体代价，短在可能牺牲少数人休息成全多数人方便。
 
-AUFGABE A: Beurteilen Sie Dauerkonsum teurer Statussymbole im Tribunal der Jugend.
-AUFGABE B: Beurteilen Sie Aerger ueber eine versaetete Rettungsbahn im Nachtdienst.
+AUFGABE A: Die Klinik will die 36-Stunden-Schicht behalten, weil sie billiger ist. Pruefen Sie mit Weg A Maxime und Selbstzweckformel und formulieren Sie ein Urteil.
+AUFGABE B: Die Klinik will Schichtlaenge und Fehlerquote per Bilanz neu regeln. Pruefen Sie mit Weg B Folgenbilanz und Gesamtwohl und formulieren Sie ein Urteil.
 
-HILFE: A 谈消费欲望用程序 (i)。B 谈事件愤怒用程序 (ii)。【选概念：见 Konsum Wunsch 选伊壁鸠鲁；见 Schicksal Aerger 选斯多亚。】
+HILFE: A 问工具化与尊严 → Weg A。B 问总体苦乐 → Weg B。【选程序：见 als Mittel 选康德；见 Bilanz 选功利。】
 
-ANTWORT: A erfordert Verfahren (i): Status ist weder natuerlich noch notwendig, erzeugt Unruhe und Abhaengigkeit, also meiden und Freundschaft pflegen. B erfordert Verfahren (ii): Die Bahn ist gegeben, nur das Urteil ist einstellbar, also Urteil korrigieren und Gelassenheit wahren.
+ANTWORT: A erfordert Weg A: Die Maxime der Erschopfung degradiert Pflegende zu blossen Mitteln der Kostenersparnis und ist als Gesetz nicht wollbar, daher pflichtwidrig. B erfordert Weg B: Kuerzere Schichten mindern Fehlerrisiko und Erholungsleid deutlich und mehren das Gesamtwohl, daher geboten.
 
-Klausur-Satz: `Konsum prueft Begierde, Aerger prueft Urteil.`
+Klausur-Satz: `Kant verbietet, Muede als Mittel zu verbrauchen, der Utilitarismus rechnet Erholung gegen Fehlerleid auf und begrenzt die Schicht.`
 
 ## Schritt 6 — check: Selbsttest zu Epikureismus und Stoa
 
 CHECK（自测 3 题）：
 
-FRAGE: Was ist Ataraxie, was stoische Gelassenheit? | ANTWORT: Ataraxie ist Unerschuetterlichkeit durch richtige Wahl der Lueste; stoische Gelassenheit ist Freiheit von Affekten durch Urteilskontrolle.
-FRAGE: Wie lautet der Lustkalkuel? | ANTWORT: Waehle nur natuerlich-notwendige Wuensche, meide eitle Begierden.
-FRAGE: Wie lautet die Dichotomie? | ANTWORT: Sorge nur fuer Einstellbares, akzeptiere das Gegebene.
+- FRAGE: Was ist Ataraxie, was stoische Gelassenheit? | ANTWORT: Ataraxie ist Unerschuetterlichkeit durch richtige Wahl der Lueste, stoische Gelassenheit ist Freiheit von Affekten durch Urteilskontrolle.
+- FRAGE: Wie lautet der Lustkalkuel des Epikur? | ANTWORT: Waehle nur natuerlich-notwendige Wuensche, meide eitle Begierden und pflege Freundschaft.
+- FRAGE: Kant gegen Utilitarismus am Klinikfall: Was entscheidet? | ANTWORT: Kant verbietet die Erschopfungs-Maxime durch Wuerde, der Utilitarismus begrenzt die Schicht durch die bessere Gesamtbilanz.
 
-Klausur-Satz: `Beide Formeln kuerzen Unruhe aus dem Leben.`
+Klausur-Satz: `Wer beide Schulen beherrscht, sortiert erst Wuensche und Welt und waehlt dann die passende Therapie der Ruhe.`
 
 ## Fehlvorstellung
 
@@ -135,17 +157,21 @@ Klausur-Satz: `Beide Formeln kuerzen Unruhe aus dem Leben.`
 ## Schritt 7 — szenario: Klausurtransfer: Verteidiger der Nachtschichtschwester
 
 ROLLE: Du bist Verteidiger der Nachtschichtschwester vor dem Tribunal und plaedierst mit beiden antiken Schulen fuer ein gerechtes Urteil.
-SITUATION: Die Anklaeger fordern Berufsverbot wegen Fehlverhaltens aus Erschoepfung. Nimm in ca. 150 Woertern mit Epikur und Stoa Stellung und beantworte, welche Therapie wo staerker wirkt.
+SITUATION: Die Anklaeger fordern Berufsverbot wegen Fehlverhaltens aus Erschoepfung. Nimm in ca. 150 Woertern mit Epikur und Stoa Stellung und beantworte, welche Therapie wo staerker wirkt, und sichere dein Urteil zusaetzlich mit Wuerde und Bilanz ab.
 AUFGABE (beurteilen, AFB III): Zusammenhaengende Darstellung ca. 150 Woerter mit beiden Schulen, Abwaegung und Urteil.
-RUBRIC (30 XP): Epikur mit Lustklassifikation korrekt (10 XP) | Stoa mit Dichotomie korrekt (10 XP) | Vergleich plus begruendetes Urteil (5 XP) | Geschlossene Darstellung (5 XP).
+RUBRIC (30 XP): Epikur mit Lustklassifikation und Textbeleg (10 XP) | Stoa mit Dichotomie und Textbeleg (10 XP) | Vergleich plus begruendetes Urteil mit Wuerde oder Bilanz (5 XP) | Geschlossene Darstellung (5 XP).
+
+Klausur-Satz: `Im Plaedoyer gilt: Erst beide Therapien mit Beleg rekonstruieren, dann am Fall abwaegen und mit Wuerde begrenzen.`
 
 ## Schritt 8 — reflexion: Freispruch der Seele: Weniger wollen besser urteilen
 
 TAKEAWAY: Merke Garten und Halle: Ruhe entsteht aus richtiger Wahl plus richtigem Urteil. Epikur fragt, ob du es wirklich brauchst, die Stoa fragt, ob du dem zustimmen musst.
 
 REFLEXION:
-1. Was fiel schwerer — die Lustklassifikation (Schritt 4) oder die Urteilsanalyse (Schritt 5)?
-2. Plane: Beim naechsten Mal sortiere ich zuerst einstellbar gegen gegeben, dann erst natuerlich gegen notwendig.
+1. Was fiel schwerer — die Lustklassifikation mit Textbeleg (Schritt 4) oder das Duell Kant gegen Nutzen (Schritt 5)?
+2. Plane: Beim naechsten Mal sortiere ich zuerst einstellbar gegen gegeben, dann erst natuerlich gegen notwendig, und pruefe zuletzt Wuerde gegen Bilanz.
+
+Klausur-Satz: `Reife Seelenruhe verbindet drei Pruefungen: Wuensche sichten, Urteile staerken und Menschen nie als Mittel verbrauchen.`
 
 Anekdote (DE): Als man Epikur teuren Fisch anbot, blieb er bei Brot und Freunden. Zenon nannte Schiffbruch eine Lehre in Gelassenheit. Zwei Orte, ein Ideal der Ruhe.
 
