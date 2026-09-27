@@ -1,7 +1,7 @@
 import { parseFrontmatter, parseBody, type Block } from "./vault/parser";
 import exemplarCourseRaw from "../../Lernreise/Sowi-Soziale-Marktwirtschaft-L1.md?raw";
 
-export type SchrittTyp = "entdecken" | "ausprobieren" | "check" | "szenario" | "muendlich";
+export type SchrittTyp = "entdecken" | "ausprobieren" | "check" | "szenario" | "muendlich" | "reflexion";
 
 export interface SchrittBase {
   typ: SchrittTyp;
@@ -12,6 +12,12 @@ export interface SchrittBase {
 
 export interface SchrittEntdecken extends SchrittBase {
   typ: "entdecken";
+  rawText: string;
+  blocks: Block[];
+}
+
+export interface SchrittReflexion extends SchrittBase {
+  typ: "reflexion";
   rawText: string;
   blocks: Block[];
 }
@@ -54,7 +60,8 @@ export type Schritt =
   | SchrittAusprobieren
   | SchrittCheck
   | SchrittSzenario
-  | SchrittMuendlich;
+  | SchrittMuendlich
+  | SchrittReflexion;
 
 export interface Reise {
   id: string;
@@ -85,7 +92,7 @@ function resolveStepTitle(stepNum: number, typ: SchrittTyp, customTitle?: string
     case 3: return "Kernkonzept & Wirkungsmodell";
     case 4: return "Interaktives Experiment & Praxis";
     case 5: return "Verfahrensvergleich & Abgrenzung";
-    case 6: return "Verständnisprüfung (Self-Check)";
+    case 6: return "Selbsttest (Verständnisprüfung)";
     case 7: return "Klausur-Transfer & Szenario";
     case 8: return "Takeaway & Reflexion";
     default:
@@ -95,6 +102,7 @@ function resolveStepTitle(stepNum: number, typ: SchrittTyp, customTitle?: string
         case "check": return "Verständnisprüfung";
         case "szenario": return "Klausurtransfer";
         case "muendlich": return "Mündliche Prüfung";
+        case "reflexion": return "Takeaway & Reflexion";
       }
   }
 }
@@ -117,18 +125,21 @@ export function parseReiseFile(path: string, raw: string): Reise | null {
 
   while ((m = stepRegex.exec(body)) !== null) {
     const rawTyp = m[2].toLowerCase();
+    const stepNum = Number(m[1]);
     const typ: SchrittTyp =
       rawTyp === "entdecken" ||
       rawTyp === "ausprobieren" ||
       rawTyp === "check" ||
       rawTyp === "szenario" ||
-      rawTyp === "muendlich"
-        ? (rawTyp as SchrittTyp)
-        : "entdecken";
+      rawTyp === "muendlich" ||
+      rawTyp === "reflexion" ||
+      rawTyp === "takeaway"
+        ? (rawTyp === "takeaway" ? "reflexion" : (rawTyp as SchrittTyp))
+        : (stepNum === 8 ? "reflexion" : "entdecken");
 
     matches.push({
       index: m.index,
-      stepNum: Number(m[1]),
+      stepNum,
       typ,
       header: m[0],
       customTitle: m[3]?.trim(),
@@ -147,11 +158,11 @@ export function parseReiseFile(path: string, raw: string): Reise | null {
     const toolMatch = /\[Werkzeug:\s*([a-zA-Z0-9_\-]+)\]/i.exec(content);
     const toolId = toolMatch ? toolMatch[1] : undefined;
 
-    if (cur.typ === "entdecken") {
+    if (cur.typ === "entdecken" || cur.typ === "reflexion") {
       schritte.push({
-        typ: "entdecken",
+        typ: cur.typ,
         stepNumber: cur.stepNum,
-        title: resolveStepTitle(cur.stepNum, "entdecken", cur.customTitle),
+        title: resolveStepTitle(cur.stepNum, cur.typ, cur.customTitle),
         rawText: content,
         blocks: parseBody(content),
         toolId,
@@ -265,7 +276,16 @@ export function getExemplarReise(lang?: string): Reise | null {
   return exemplarReise;
 }
 
-export function getStepTitle(typ: SchrittTyp, lang: "de" | "zh"): string {
+export function getStepTitle(typ: SchrittTyp, lang: "de" | "zh", stepNum?: number): string {
+  if (stepNum === 8 || typ === "reflexion") {
+    return lang === "de" ? "Takeaway & Reflexion" : "考点精粹与元认知反思";
+  }
+  if (stepNum === 6) {
+    return lang === "de" ? "Selbstüberprüfung" : "概念过关自测";
+  }
+  if (stepNum === 7) {
+    return lang === "de" ? "Klausur-Transfer" : "考试情境实战";
+  }
   if (lang === "de") {
     switch (typ) {
       case "entdecken": return "Erkundung & Konzept";

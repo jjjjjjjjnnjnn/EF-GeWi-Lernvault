@@ -7,6 +7,7 @@ import {
   type SchrittCheck,
   type SchrittSzenario,
   type SchrittMuendlich,
+  type SchrittReflexion,
   exemplarReise,
   getExemplarReise,
   getStepTitle,
@@ -820,9 +821,9 @@ export default function ReiseModule({
   const renderSchrittContent = (s: Schritt, idx: number, isDoc: boolean) => {
     if (!activeCourse) return null;
 
-    // STEP 1: ENTDECKEN (讲解)
-    if (s.typ === "entdecken") {
-      const stepEnt = s as SchrittEntdecken;
+    // STEP 1/8: ENTDECKEN / REFLEXION (讲解 / 结课反思)
+    if (s.typ === "entdecken" || s.typ === "reflexion") {
+      const stepEnt = s as SchrittEntdecken | SchrittReflexion;
       const sKey = `${activeCourse.id}#${s.stepNumber}`;
       const box = kiStore[sKey];
 
@@ -2011,14 +2012,14 @@ export default function ReiseModule({
                       <div className="flex flex-wrap items-baseline justify-between gap-3 border-b border-[var(--line)]/60 pb-3">
                         <div>
                           <span className="font-mono text-xs uppercase tracking-wider text-[var(--accent)]">
-                            0{s.stepNumber} · {getStepTitle(s.typ, lang)}
+                            0{s.stepNumber} · {getStepTitle(s.typ, lang, s.stepNumber)}
                           </span>
                           <h3 className="font-serif text-xl sm:text-2xl text-[var(--ink)] mt-0.5">
                             {s.title}
                           </h3>
                         </div>
                         <span className="text-xs font-mono text-[var(--gray)] border border-[var(--line)] px-2 py-0.5 rounded-[var(--radius)]">
-                          +{s.typ === "entdecken" ? 5 : s.typ === "ausprobieren" ? 15 : s.typ === "check" ? 20 : 30} XP
+                          +{s.typ === "entdecken" || s.typ === "reflexion" ? 5 : s.typ === "ausprobieren" ? 15 : s.typ === "check" ? 20 : 30} XP
                         </span>
                       </div>
 
@@ -2102,7 +2103,7 @@ export default function ReiseModule({
                             </span>
                             <div className="min-w-0 flex-1">
                               <span className="text-xs uppercase text-[var(--gray)] block tracking-wider">
-                                {getStepTitle(s.typ, lang)}
+                                {getStepTitle(s.typ, lang, s.stepNumber)}
                               </span>
                               <span className="truncate block font-serif text-xs leading-tight text-[var(--ink)]">
                                 {s.title}
