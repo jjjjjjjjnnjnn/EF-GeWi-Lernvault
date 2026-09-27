@@ -17,11 +17,14 @@
 - **vault**（Obsidian 知识库，**内容真相源**）+ `App-EF-Lernvault/`（Tauri 桌面学习软件，**只读 vault、不写回**）。
 - 目标：德国 NRW Gymnasium EF 十科笔试/口试提分，中德双语，**完全离线**。
 - **内容铁律**：所有题目材料只能来自用户自己的笔记原文 —— **超纲率 = 0**。
-- **当前规模**：笔记 **386** · Anki 卡片 **1595** · 互动课程 **88 篇**（`Lernreise/`，十科全覆盖，Lesson-v3 全量入库）· 术语表 **797 行** · 十科 Abi-Baum 应试树 · 考纲体系（NRW 十科 + 中国理科四科 + 中德映射）。
+- **当前规模**：笔记 **394** · Anki 卡片 **1595** · 互动课程 **269 篇**（`Lernreise/`，十科全覆盖，P1+P2 全量连续剧式关卡宇宙与微沙盘深度重塑）· 术语表 **797 行** · 十科 Abi-Baum 应试树 · 考纲体系（NRW 十科 + 中国理科四科 + 中德映射）。
 
 ---
 
-## 当前状态（2026-09-26）
+## 当前状态（2026-09-27）
+
+- ✅ **Lernreise 互动课程 P1+P2 全量重塑收官 (269/269 篇)**：十科 269 篇互动课程全量完成 8 大连续剧关卡宇宙（Campaign Storylines）深度重塑。S1 生活反差 Hook（$\ge 100$ 词/字）、8 步具名小节标题、S4 绑定 14 类注册实验教具（`osmose-lab`, `titration-lab`, `le-chatelier-sim`, `schiefe-ebene`, `kinematik-lab`, `box-optimizer`, `tangent-slider`, `gini-allocator`, `markt-sim`, `balance-board`, `highlighter`, `lego`, `oral-timer`, `formula`）、S5 双对抗辨析、S8 `reflexion` 标签全部对齐。三道流水线全绿：`audit-pedagogy-integrity.py` 6 项指标全零；`vault-check.py` 报告 `reisen=269`, `badnames=0`, `PASS`；`npx tsc -b` 零错误。十科单科独立 Commit 干净落库。
+- ✅ **App 客户端滚动与大纲目录同步底层修复**：在 `Reise.tsx` 中改用捕获阶段滚动监听（Capture Phase Scroll Listener），解决 DOM `scroll` 事件不冒泡导致的右侧 TOC 目录无法跟随滚动同步高亮的长期缺陷；升级穿透式 `scrollToContainerTop` 与三阶开课居顶时序，彻底修复“回到顶部失败”与“打开课程不在顶部”问题。
 
 - ✅ **Lernreise 互动课程全量扩充收官 (70 → 88 篇)**：十科 18 门紧缺核心新课全量入库验收（Mathe 3 篇 / 理化 3 篇 / 生社 3 篇 / 德音体 5 篇 / 英语 4 篇）。100% 对齐 Lesson-v3 9 步制架构（Schritt 1–8 + Fehlvorstellung + Anekdote），全量内嵌学科交互教具沙盒（`[Werkzeug: <id>]`）、双向辨析（`VERGLEICH:` 选程序/选概念）与直观 ASCII 结构图。`python scripts/vault-check.py` 报告 `reisen=88`、`vergleich=0`、`PASS`。
 - ✅ **知识网络 (Mindmap) 发散性星系图谱重构**：废除旧版竖向堆叠线性图，实现多中心发散算法（Multicentric Radial Divergent Algorithm）。支持全学科星系模式（Nebula：以中心辐射 10 学科并在外周扇形发散）与单学科环轨模式（Orbit：3 层同心轨道环绕）。支持节点悬停聚光灯高亮（Spotlight Hover）、视口多级平移缩放，严格遵循 SVG line 测试契约。
