@@ -54,7 +54,7 @@ PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→�
 
 Klausur-Satz: `Art. 38 GG garantiert das freie Mandat: Abgeordnete sind an Auftraege nicht gebunden, sondern nur ihrem Gewissen unterworfen.`
 
-## Schritt 3 — entdecken: Uhrwerk des Marktes: Kette von Ursache zu Wirkung
+## Schritt 3 — entdecken: Weg des Gesetzes: Kette von Ursache zu Wirkung
 
 ENTDECKEN（1概念 + 1文字图解）：
 
@@ -130,9 +130,9 @@ VERGLEICH辨别实验（双向辨析：程序之眼 vs. 民主理论之眼）：
 
 VERGLEICH: Wähle erst das Verfahren — 【选程序】先判断题目问的是 (i) Verfahrensprogramm（法案怎么走：三读、两院、调解、签署的路线）还是 (ii) Bewertungsprogramm（该程序好不好：用 liberal / republikanisch / prozedural 三坐标评价参与与代表）—— dann loesen.
 
-DUELL Weg A (freier Markt) gegen Weg B (Staat greift ein): Weg A vertraut der Mehrheitsdemokratie: Das Parlament entscheidet schnell, die Mehrheit regiert, die Minderheit kontrolliert. Weg B baut Vetospieler ein: Bundesrat, Vermittlungsausschuss und Verfassungsgericht bremsen und schuetzen Minderheiten sowie Laender. Entscheide am Kriterium: Handlungsfaehigkeit spricht fuer A, Machtbegrenzung und Foederalismus fuer B.
+DUELL Weg A (Regierungsmehrheit) gegen Weg B (Vermittlungsausschuss): Weg A vertraut der Mehrheitsdemokratie: Das Parlament entscheidet schnell, die Mehrheit regiert, die Minderheit kontrolliert. Weg B baut Vetospieler ein: Bundesrat, Vermittlungsausschuss und Verfassungsgericht bremsen und schuetzen Minderheiten sowie Laender. Entscheide am Kriterium: Handlungsfaehigkeit spricht fuer A, Machtbegrenzung und Foederalismus fuer B.
 
-对决 Weg A（自由市场）vs Weg B（国家干预）：Weg A信多数决效率：议会快投快决，多数执政少数监督。Weg B信否决点制衡：参议院、调解委员会、宪法法院踩刹车，保少数和州权。判据：行动能力站A，限权与联邦制站B。
+对决 Weg A（执政多数）vs Weg B（调解委员会）：Weg A信多数决效率：议会快投快决，多数执政少数监督。Weg B信否决点制衡：参议院、调解委员会、宪法法院踩刹车，保少数和州权。判据：行动能力站A，限权与联邦制站B。
 
 AUFGABE A：M1 beschreibt den Weg eines Gesetzes von der Einbringung bis zur Verkuendung und fragt, an welcher Stelle der Bundesrat eingreifen kann. Welches Verfahren ist zu waehlen?
 

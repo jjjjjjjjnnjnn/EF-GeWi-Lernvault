@@ -22,7 +22,11 @@ version: Lesson-v3
 
 > EPISODE 10｜Akt IV-V — Tarifarena und Demokratiewerkstatt｜召集人 Gewerkschaftssekretaer Tomasz Nowak：Leiharbeits-Skandal in der Apfelpackhalle。
 
-HOOK 市长危机（先读剧情，再进 ZIELE）：【本集战役 EP10｜Akt IV-V — Tarifarena und Demokratiewerkstatt｜虚拟城邦 Tycoon City 告急】市长办公室深夜灯火通明，Gewerkschaftssekretaer Tomasz Nowak 冲进来报告：Leiharbeits-Skandal in der Apfelpackhalle，而明天市议会就要投票。你的身份不变：市长直属经济改革规划委员。真实判例切入：联邦宪法法院在数据监控案（BND判决2020）里叫停无差别境外通信监控——安全不能吃掉隐私；另一起游行管制案里，法院要求警方优先保障集会，只许管交通不管内容。租金案同理：限价保护住户，但不能掏空财产权本质。三个案子同一把尺：实践调和。通关线索：TARGET: Bringt auf dem Verhandlungsbrett beide Waagschalen in die Balance — Bedingung: Zustimmung beider Baenke, Loesung mit Kompromisslinie, Ergebnisprotokoll mit zwei Begruendungen je Seite. 先读 ZIELE，再啃术语，把传导机制画成你的作战地图。DE-Briefing: Episode 10 — Gewerkschaftssekretaer Tomasz Nowak meldet Leiharbeits-Skandal in der Apfelpackhalle; der Stadtrat entscheidet morgen. Rette Tycoon City mit Analyse, Sandkasten und Klausur-Antwort zum Thema Grundgesetz und Verfassungsprinzipien.
+HOOK 市长危机（先读剧情，再进 ZIELE）：【本集战役 EP10｜Akt IV-V — Tarifarena und Demokratiewerkstatt｜虚拟城邦 Tycoon City 告急】市长办公室深夜灯火通明，Gewerkschaftssekretaer Tomasz Nowak 冲进来报告：Leiharbeits-Skandal in der Apfelpackhalle，而明天市议会就要投票。
+
+你的身份不变：市长直属经济改革规划委员。真实判例切入：联邦宪法法院在数据监控案（BND判决2020）里叫停无差别境外通信监控——安全不能吃掉隐私；另一起游行管制案里，法院要求警方优先保障集会，只许管交通不管内容。租金案同理：限价保护住户，但不能掏空财产权本质。三个案子同一把尺：实践调和。
+
+通关线索：TARGET: Bringt auf dem Verhandlungsbrett beide Waagschalen in die Balance — Bedingung: Zustimmung beider Baenke, Loesung mit Kompromisslinie, Ergebnisprotokoll mit zwei Begruendungen je Seite. 先读 ZIELE，再啃术语，把传导机制画成你的作战地图。DE-Briefing: Episode 10 — Gewerkschaftssekretaer Tomasz Nowak meldet Leiharbeits-Skandal in der Apfelpackhalle; der Stadtrat entscheidet morgen. Rette Tycoon City mit Analyse, Sandkasten und Klausur-Antwort zum Thema Grundgesetz und Verfassungsprinzipien.
 
 ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
@@ -54,7 +58,7 @@ PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→�
 
 Klausur-Satz: `Art. 20 GG nennt vier Verfassungsprinzipien: Demokratie, Rechtsstaat, Sozialstaat und Bundesstaat.`
 
-## Schritt 3 — entdecken: Uhrwerk des Marktes: Kette von Ursache zu Wirkung
+## Schritt 3 — entdecken: Uhrwerk der Verfassung: Kette von Ursache zu Wirkung
 
 ENTDECKEN（1概念 + 1文字图解）：
 
@@ -124,27 +128,9 @@ MUSTERLÖSUNG: Obersatz: Kollidieren zwei Grundrechte bzw. Grundrecht und Staats
 
 Klausur-Satz: `Religionsfreiheit und staatlicher Bildungsauftrag sind über die praktische Konkordanz auszugleichen, ohne dass ein Wesensgehalt angetastet wird.`
 
-## Schritt 5 — ausprobieren: Duell der Wege: Weg A gegen Weg B
+## Schritt 5 — ausprobieren: Duell der Wege: Grundrechts-Verfahren gegen Staatsstruktur-Verfahren
 
-VERGLEICH辨别实验（双向辨析：权利眼 vs. 原则眼）：
-
-VERGLEICH: Wähle erst das Verfahren —【选程序】先判断材料问的是 (i) Grundrechts-Verfahren（某项基本权利是否被侵犯、两项权利如何冲突：Art. 1/3/4/5 + praktische Konkordanz）还是 (ii) Staatsstruktur-Verfahren（国家的组织原则是什么、宪法能不能改：Art. 20 四原则 + Art. 79 Abs. 3）—— dann lösen.
-
-DUELL Weg A (freier Markt) gegen Weg B (Staat greift ein): Weg A vertraut der Freiheit des Einzelnen: Grundrechte wehren den Staat ab, Gerichte schuetzen den Kern. Weg B vertraut dem schuetzenden Staat: Sicherheit, Bildung und Versorgung rechtfertigen Eingriffe in Freiheit. Entscheide am Massstab der praktischen Konkordanz: Maximale beidseitige Verwirklichung bei unantastbarem Wesensgehalt.
-
-对决 Weg A（自由市场）vs Weg B（国家干预）：Weg A信个人自由：基本权利防国家，法院守底线。Weg B信保护型国家：安全、教育、供给值得限制自由。判据：实践调和——两边最大化实现，本质内容谁都不许动。
-
-DUELL Weg A (freier Markt) gegen Weg B (Staat greift ein): Weg A vertraut der Freiheit des Einzelnen: Grundrechte wehren den Staat ab, Gerichte schuetzen den Kern. Weg B vertraut dem schuetzenden Staat: Sicherheit, Bildung und Versorgung rechtfertigen Eingriffe in Freiheit. Entscheide am Massstab der praktischen Konkordanz: Maximale beidseitige Verwirklichung bei unantastbarem Wesensgehalt.
-
-对决 Weg A（自由市场）vs Weg B（国家干预）：Weg A信个人自由：基本权利防国家，法院守底线。Weg B信保护型国家：安全、教育、供给值得限制自由。判据：实践调和——两边最大化实现，本质内容谁都不许动。
-
-DUELL Weg A (freier Markt) gegen Weg B (Staat greift ein): Weg A vertraut der Freiheit des Einzelnen: Grundrechte wehren den Staat ab, Gerichte schuetzen den Kern. Weg B vertraut dem schuetzenden Staat: Sicherheit, Bildung und Versorgung rechtfertigen Eingriffe in Freiheit. Entscheide am Massstab der praktischen Konkordanz: Maximale beidseitige Verwirklichung bei unantastbarem Wesensgehalt.
-
-对决 Weg A（自由市场）vs Weg B（国家干预）：Weg A信个人自由：基本权利防国家，法院守底线。Weg B信保护型国家：安全、教育、供给值得限制自由。判据：实践调和——两边最大化实现，本质内容谁都不许动。
-
-DUELL Weg A (freier Markt) gegen Weg B (Staat greift ein): Weg A vertraut der Freiheit des Einzelnen: Grundrechte wehren den Staat ab, Gerichte schuetzen den Kern. Weg B vertraut dem schuetzenden Staat: Sicherheit, Bildung und Versorgung rechtfertigen Eingriffe in Freiheit. Entscheide am Massstab der praktischen Konkordanz: Maximale beidseitige Verwirklichung bei unantastbarem Wesensgehalt.
-
-对决 Weg A（自由市场）vs Weg B（国家干预）：Weg A信个人自由：基本权利防国家，法院守底线。Weg B信保护型国家：安全、教育、供给值得限制自由。判据：实践调和——两边最大化实现，本质内容谁都不许动。
+VERGLEICH und DUELL Weg A (Grundrechts-Verfahren) gegen Weg B (Staatsstruktur-Verfahren) in einem Absatz: Wähle erst das Verfahren —【选程序】先判断材料问的是 (i) Grundrechts-Verfahren（某项基本权利是否被侵犯、两项权利如何冲突：Art. 1/3/4/5 + praktische Konkordanz）还是 (ii) Staatsstruktur-Verfahren（国家的组织原则是什么、宪法能不能改：Art. 20 四原则 + Art. 79 Abs. 3）—— dann lösen; Weg A查个人权利、冲突走实践调和、本质内容不可动，Weg B查国家结构、核心靠 Art. 79 Abs. 3 锁死、多数也动不了；判据：材料问的是权利受侵还是宪法能不能改。
 
 AUFGABE A (AFB II, 8 BE)：Material 2 (Sachtext) berichtet, dass ein Arbeitgeber einer Bewerberin wegen ihrer Herkunft absagt. Erläutern Sie, welches Grundrecht berührt ist und warum es auch zwischen Privaten wirkt.
 

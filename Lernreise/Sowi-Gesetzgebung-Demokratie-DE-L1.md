@@ -65,7 +65,7 @@ Die Begriffe greifen ineinander: Der Bundestag beschliesst, der Bundesrat bremst
 
 Klausur-Satz: `Art. 38 GG garantiert das freie Mandat: Abgeordnete sind an Aufträge nicht gebunden, sondern nur ihrem Gewissen unterworfen.`
 
-## Schritt 3 — entdecken: Uhrwerk des Marktes: Kette von Ursache zu Wirkung
+## Schritt 3 — entdecken: Weg des Gesetzes: Kette von Ursache zu Wirkung
 
 TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
@@ -125,7 +125,7 @@ VERGLEICH (Wahl des Weges, Weg A gegen Weg B):
 
 VERGLEICH: Waehle zuerst bewusst Weg A (Regierungsmehrheit) oder Weg B (Vermittlungsausschuss) und begruende dann dein Urteil am passenden Kriterium.
 
-DUELL Weg A (freier Markt) gegen Weg B (Staat greift ein): Weg A vertraut der Mehrheitsdemokratie: Das Parlament entscheidet schnell, die Mehrheit regiert, die Minderheit kontrolliert. Weg B baut Vetospieler ein: Bundesrat, Vermittlungsausschuss und Verfassungsgericht bremsen und schuetzen Minderheiten sowie Laender. Entscheide am Kriterium: Handlungsfaehigkeit spricht fuer A, Machtbegrenzung und Foederalismus fuer B.
+DUELL Weg A (Regierungsmehrheit) gegen Weg B (Vermittlungsausschuss): Weg A vertraut der Mehrheitsdemokratie: Das Parlament entscheidet schnell, die Mehrheit regiert, die Minderheit kontrolliert. Weg B baut Vetospieler ein: Bundesrat, Vermittlungsausschuss und Verfassungsgericht bremsen und schuetzen Minderheiten sowie Laender. Entscheide am Kriterium: Handlungsfaehigkeit spricht fuer A, Machtbegrenzung und Foederalismus fuer B.
 
 Weg A: Die Regierungsmehrheit setzt auf effiziente Durchsetzung. Bundestag und Regierung aus einer Mehrheit beschliessen zuegig, Opposition kontrolliert oeffentlich, Wahlen strafen spaeter. Staerke dieses Weges ist Tempo und klare Verantwortung; Grenze ist die Versuchung, Laenderinteressen und Minderheiten zu uebergehen.
 

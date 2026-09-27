@@ -34,7 +34,7 @@ ZIELE (drei messbare Ziele dieser Lektion):
 
 Stell dir vor, du suchst in der Stadt eine Wohnung und siehst ein Schild mit einer Miete von elf Euro pro Quadratmeter, doch der Stadtrat beschliesst einen Deckel bei acht Euro und verspricht billiges Wohnen fuer alle. Alle freuen sich zuerst ueber die niedrige Miete, aber nach wenigen Monaten verschwinden viele Angebote, die Schlangen bei jeder Besichtigung werden laenger und ein Schattenmarkt mit Abstandszahlungen und Gefaelligkeiten entsteht. Gleichzeitig fordert die Gewerkschaft einen hoeheren Mindestlohn, weil der Lohn zum Leben reichen muss, waehrend kleine Betriebe warnen, dass sie bei diesem Lohn weniger Personal einstellen und ihre Preise erhoehen muessen.
 
-Es ist Samstagmorgen, das Regal im Supermarkt ist voll, niemand steht an, niemand hamstert. Vor achtzig Jahren war das Gegenteil normal: Schlangen, Bezugsscheine, leere Schaufenster. Im Juni 1948 fuellten sich die Laeden in Westdeutschland fast ueber Nacht — nicht weil ueber Nacht mehr produziert wurde, sondern weil sich die Spielregeln aenderten. Wie kann eine blosse Regel das Verhalten von Millionen Menschen so radikal veraendern? Und warum braucht eine freie Wirtschaft trotzdem einen Sozialstaat? Beide Faelle zeigen denselben Mechanismus aus Signal und Anpassung: Ein staatlich fixierter Preis ersetzt das freie Signal aus Angebot und Nachfrage, die Mengen reagieren mit Ausweichen oder Verknappung, und am Ende muss jedes Urteil zwischen Effizienz und sozialem Ziel sorgfaeltig abgewogen werden.
+Es ist Samstagmorgen, das Regal im Supermarkt ist voll, niemand steht an. Im Juni 1948 fuellten sich die Laeden fast ueber Nacht, weil sich die Spielregeln aenderten. Merke beide Faelle: Fixpreis ersetzt das Signal, Mengen reagieren mit Rueckzug oder Andrang.
 
 Klausur-Satz: `Die Soziale Marktwirtschaft legitimiert sich durch zwei Versprechen: Effizienz durch Wettbewerb und Gerechtigkeit durch sozialen Ausgleich.`
 
@@ -95,7 +95,7 @@ Aha-Moment: Wettbewerb — Eingriff — Ausgleich. Erstens raeumt der freie Prei
 
 Kausalkette: Festpreis bricht das freie Preissignal — Mengen reagieren mit Rueckzug oder Andrang — Deutung am Kriterium Effizienz gegen Sozialziel; die Abgrenzung zu Sozialismus und reiner Marktwirtschaft steht vor jedem Urteil.
 
-Klausur-Satz: `Tarifautonomie heißt: Löhne handeln Gewerkschaften und Arbeitgeber ohne den Staat aus.`
+Klausur-Satz: `Jeder Eingriff misst sich doppelt: an Effizienz aus Wettbewerb und an Gerechtigkeit aus sozialem Ausgleich.`
 
 ## Anekdote & Fun-Fact
 
@@ -168,7 +168,7 @@ Klausur-Satz: `Der Preismechanismus gleicht Angebot und Nachfrage über den Prei
 ROLLE: Du bist Abgeordnete/r im Bundestag, Ausschuss für Arbeit und Soziales
 SITUATION: Debatte: Soll der Mindestlohn auf 15 Euro steigen Halte ein 2-Minuten-Plädoyer (dafür oder dagegen). Nutze die Ordnungspolitik-Brille aus Schritt 5 und die Beispiel-Sätze aus Schritt 4
 AUFGABE (AFB III): Verfasse eine zusammenhaengende Darstellung von etwa 150 Woertern mit Kriterium, Anwendung und Urteil.
-RUBRIC (30 XP): These in Satz 1 (darstellen) | zwei Fachbegriffe (z. B. Tarifautonomie, Kaufkraft, Wettbewerbsfähigkeit) | ein Beleg/Beispiel | Urteil mit Kriterium (beurteilen).
+RUBRIC (30 XP): These in Satz 1 mit 150-Wort-Vorgabe (darstellen) (8 XP) | zwei Fachbegriffe wie Tarifautonomie und Kaufkraft (8 XP) | ein Beleg mit Preis- und Mengendeutung (8 XP) | Urteil mit Kriterium Effizienz gegen Gerechtigkeit (beurteilen) (6 XP).
 
 Klausur-Satz: `Die Mindestlohnstellungnahme misst den Eingriff an Preislogik und Schutzziel und benennt mit der Tarifautonomie den institutionellen Preis des Schutzes.`
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Was der Krisenstab lernt

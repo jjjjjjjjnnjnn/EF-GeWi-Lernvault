@@ -126,13 +126,13 @@ MUSTERLÖSUNG: Das Modell des homo oeconomicus unterstellt, dass Verbraucher vol
 
 Klausur-Satz: `Der Influencer-Einfluss belegt Fremdbestimmung: Kaufentscheidungen folgen sozialen Signalen statt eigenem Nutzenkalkül.`
 
-## Schritt 5 — ausprobieren: Duell der Wege: Weg A gegen Weg B
+## Schritt 5 — ausprobieren: Duell der Wege: Konsum-Verfahren gegen Politik-Verfahren
 
 VERGLEICH辨别实验（双向辨析：概念眼 vs. 政策眼）：
 
 VERGLEICH: Wähle erst das Verfahren —【选程序】先判断材料问的是 (i) Konsum-Verfahren（消费行为本身：Bedürfnis/Bedarf/Nachfrage、Souveränität vs. Fremdbestimmung、Nachhaltigkeit）还是 (ii) Politik-Verfahren（国家用什么手段干预消费：Label, Anreize, Verbote；先归类再判断）—— dann lösen.
 
-DUELL Weg A (freier Markt) gegen Weg B (Staat greift ein): Weg A vertraut dem freien Konsummarkt: Preise und Siegel lenken, der Muendige entscheidet, Wettbewerb senkt Kosten. Weg B greift lenkend ein: Verbote, Steuern und Klimageld schuetzen Klima und Arme vor der Marktlogik. Entscheide am Kriterium: Effizienz und Freiheit sprechen fuer A, Nachhaltigkeit und Schutz sprechen fuer B.
+DUELL Weg A (Konsum-Verfahren) gegen Weg B (Politik-Verfahren): Weg A prueft Kaufverhalten nach Kette, Signal und Souveraenitaet; Weg B ordnet Label, Anreize und Verbote ins Spektrum von mild bis hart und misst Lenkung plus Abfederung. Entscheide am Kriterium: Effizienz und Freiheit sprechen fuer A, Nachhaltigkeit und Schutz sprechen fuer B.
 
 对决 Weg A（自由市场）vs Weg B（国家干预）：Weg A信自由消费：价格标签引导，成熟消费者自己选。Weg B信引导干预：禁令税收气候钱，保气候也保穷人。判据：效率自由站A，可持续和保护站B。
 

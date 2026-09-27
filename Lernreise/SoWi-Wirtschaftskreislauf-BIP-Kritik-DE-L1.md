@@ -22,7 +22,7 @@ version: Lesson-v3
 
 > EPISODE 41 — Akt I-II — Apfelmarkt und Mietendeckel — Auftrag von Hausmeister Benno Strauss: Hausmeister-Streik im Winterdienst.
 
-HOOK (Stadtrats-Krise, lies zuerst): EPISODE 41 — Akt I-II — Apfelmarkt und Mietendeckel — Stadt Tycoon City ruft dich in den Krisenstab. Hausmeister Benno Strauss stuermt mit einer Eilmeldung ins Buero: Hausmeister-Streik im Winterdienst — und morgen entscheidet der Stadtrat. Realer Fall: Im Pandemiejahr fiel das BIP, Pflegekraefte brachen zusammen, Eltern unterrichteten nachts am Kuechentisch. Die Statistik zaehlte den Einbruch, nicht die Traeger. Hausarbeit, Pflege und Ehrenamt sind unsichtbares BIP, Dreck und Stau bleiben unabgezogen. Das BIP ist Thermometer, kein Check-up: Fieber ja, Erschoepfung nein. Erste Spur: TARGET: Stellt im Sandkasten Angebot und Nachfrage so ein, dass der Gleichgewichtspreis zwischen 8 und 12 Euro liegt, die gehandelte Menge mindestens 100 Einheiten erreicht und ein Probe-Hoechstpreis von 6 Euro als bindend mit Warteschlange entlarvt wird. Oeffne die Ziele, schnapp dir die Begriffe und beweise, dass Tycoon City regierbar bleibt.
+HOOK (Stadtrats-Krise, lies zuerst): EPISODE 41 — Akt I-II — Apfelmarkt und Mietendeckel — Stadt Tycoon City ruft dich in den Krisenstab. Hausmeister Benno Strauss stuermt mit einer Eilmeldung ins Buero: Hausmeister-Streik im Winterdienst — und morgen entscheidet der Stadtrat. Realer Fall: Im Pandemiejahr fiel das BIP, Pflegekraefte brachen zusammen, Eltern unterrichteten nachts am Kuechentisch. Die Statistik zaehlte den Einbruch, nicht die Traeger. Hausarbeit, Pflege und Ehrenamt sind unsichtbares BIP, Dreck und Stau bleiben unabgezogen. Das BIP ist Thermometer, kein Check-up: Fieber ja, Erschoepfung nein. Erste Spur: TARGET: Baut im Kreislauf-Modul fuenf Sektoren mit Geldstrom und Gueterstrom; erhoeht die Staatsausgaben schrittweise, aktiviert den Umweltkosten-Regler und belegt mit Verwendung C+I+G+(Ex-Im), warum Umsatzplus kein Wohlfahrtsplus ist. Oeffne die Ziele, schnapp dir die Begriffe und beweise, dass Tycoon City regierbar bleibt.
 
 ZIELE (drei messbare Ziele dieser Lektion):
 
@@ -105,7 +105,7 @@ BEISPIEL (geleitete Aufgabe mit Werkzeug):
 
 [Werkzeug: markt-sim]
 
-TARGET: Stellt im Sandkasten Angebot und Nachfrage so ein, dass der Gleichgewichtspreis zwischen 8 und 12 Euro liegt, die gehandelte Menge mindestens 100 Einheiten erreicht und ein Probe-Hoechstpreis von 6 Euro als bindend mit Warteschlange entlarvt wird.
+TARGET: Baut im Kreislauf-Modul fuenf Sektoren mit Geldstrom und Gueterstrom; erhoeht die Staatsausgaben schrittweise, aktiviert den Umweltkosten-Regler und belegt mit Verwendung C+I+G+(Ex-Im), warum Umsatzplus kein Wohlfahrtsplus ist.
 
 Baue im Tool den erweiterten Kreislauf mit fuenf Sektoren. Markiere Geldstrom und Gueterstrom mit Staat, Banken und Ausland. Erhoehe die Staatsausgaben schrittweise und aktiviere dann den Umweltkosten-Regler.
 

@@ -22,7 +22,11 @@ version: Lesson-v3
 
 > EPISODE 18｜Akt IV-V — Tarifarena und Demokratiewerkstatt｜召集人 Stadtzeichner Emil Kroll：Karikatur-Zensur-Eklat im Schaukasten。
 
-HOOK 市长危机（先读剧情，再进 ZIELE）：【本集战役 EP18｜Akt IV-V — Tarifarena und Demokratiewerkstatt｜虚拟城邦 Tycoon City 告急】市长办公室深夜灯火通明，Stadtzeichner Emil Kroll 冲进来报告：Karikatur-Zensur-Eklat im Schaukasten，而明天市议会就要投票。你的身份不变：市长直属经济改革规划委员。真实情境切入：某小党全国得票4.9%因5%门槛零席位，支持者骂门槛反民主；另一边，某极端政党被宪法法院判“反宪法但太小不必禁”（NPD案2017）。门槛保稳定还是掐多元？禁党保民主还是伤民主？同一考点两面开刀。通关线索：TARGET: Bringt auf dem Verhandlungsbrett beide Waagschalen in die Balance — Bedingung: Zustimmung beider Baenke, Loesung mit Kompromisslinie, Ergebnisprotokoll mit zwei Begruendungen je Seite. 先读 ZIELE，再啃术语，把传导机制画成你的作战地图。DE-Briefing: Episode 18 — Stadtzeichner Emil Kroll meldet Karikatur-Zensur-Eklat im Schaukasten; der Stadtrat entscheidet morgen. Rette Tycoon City mit Analyse, Sandkasten und Klausur-Antwort zum Thema Parteien und Willensbildung.
+HOOK 市长危机（先读剧情，再进 ZIELE）：【本集战役 EP18｜Akt IV-V — Tarifarena und Demokratiewerkstatt｜虚拟城邦 Tycoon City 告急】市长办公室深夜灯火通明，Stadtzeichner Emil Kroll 冲进来报告：Karikatur-Zensur-Eklat im Schaukasten，而明天市议会就要投票。你的身份不变：市长直属经济改革规划委员。
+
+真实情境切入：某小党全国得票4.9%因5%门槛零席位，支持者骂门槛反民主；另一边，某极端政党被宪法法院判“反宪法但太小不必禁”（NPD案2017）。门槛保稳定还是掐多元？禁党保民主还是伤民主？同一考点两面开刀。
+
+通关线索：TARGET: Bringt auf dem Verhandlungsbrett beide Waagschalen in die Balance — Bedingung: Zustimmung beider Baenke, Loesung mit Kompromisslinie, Ergebnisprotokoll mit zwei Begruendungen je Seite. 先读 ZIELE，再啃术语，把传导机制画成你的作战地图。DE-Briefing: Episode 18 — Stadtzeichner Emil Kroll meldet Karikatur-Zensur-Eklat im Schaukasten; der Stadtrat entscheidet morgen. Rette Tycoon City mit Analyse, Sandkasten und Klausur-Antwort zum Thema Parteien und Willensbildung.
 
 ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
@@ -39,7 +43,7 @@ PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→�
 中文在上，德语在下：
 
 - **Partei Art. 21**（政党）：政党参与人民意志形成，内部必须民主，经费透明，反宪法的可被禁。 Parteien wirken an der Willensbildung des Volkes mit und muessen innerlich demokratisch sein. Ihre Finanzierung ist teils staatlich und streng transparent. Verfassungsfeindliche Parteien kann das Gericht verbieten. Mechanismus: Mitglieder werben, Programme binden, Mandate tragen - vom Ortsverein bis zur Fraktion. Klausur-Tipp: Zitiere Art. 21 plus innere Ordnung als Doppelmerkmal.
-- **Fünfprozenthürde**（五 percent 门槛（写 Fuenfprozenthuerde））：5%才进议会：保稳定、能组阁，代价是小党选票作废。 Nur wer fuenf Prozent der Zweitstimmen holt, zieht in Fraktionsstaerke ein. Die Huerde sichert regierungsfaehige Mehrheiten. Sie kostet kleine Parteien ihre Stimme im Parlament. Mechanismus: Sperrklausel filtert Splittergruppen heraus und buendelt Koalitionsdruck hinter grossen Lagern. Klausur-Tipp: Waegle Stabilitaet gegen Chancengleichheit mit Urteil.
+- **Fünfprozenthürde**：5%才进议会：保稳定、能组阁，代价是小党选票作废。 Nur wer fuenf Prozent der Zweitstimmen holt, zieht in Fraktionsstaerke ein. Die Huerde sichert regierungsfaehige Mehrheiten. Sie kostet kleine Parteien ihre Stimme im Parlament. Mechanismus: Sperrklausel filtert Splittergruppen heraus und buendelt Koalitionsdruck hinter grossen Lagern. Klausur-Tipp: Waegle Stabilitaet gegen Chancengleichheit mit Urteil.
 - **Wahlrecht**（选举制）：人性化比例制：第一票选人、第二票定权，超额有平衡，比例不跑偏。 Die personalisierte Verhaeltniswahl mischt Personen- und Parteilogik. Erststimme waehlt Koepfe, Zweitstimme entscheidet Macht. Ueberhang und Ausgleich sichern Proportionalitaet. Mechanismus: Zweitstimmenanteil bestimmt Sitzanteil; Direktmandate ohne Deckung werden ausgeglichen. Klausur-Tipp: Erklaere jede Verzerrung ueber Erst- gegen Zweitstimme.
 - **Parteiverbot**（政党禁止）：只有宪法法院能禁党，且须积极反宪法；2017年NPD案立了高门槛。 Nur das Bundesverfassungsgericht darf Parteien verbieten, und nur bei kaempferischer Verfassungsfeindschaft. Die NPD-Entscheidung 2017 zeigt die hohe Huerde. Verbot schuetzt und riskiert Demokratie zugleich. Mechanismus: Potenzialitaet plus Aktivitaet - erst bewaffnete Relevanz rechtfertigt das schärfste Mittel; das Schaerfste bleibt Ultima Ratio. Klausur-Tipp: Nenne Monopol des Gerichts plus hohe Huerde.
 - **Willensbildung**（意志形成）：民意变权力三站：输入（街谈社团）→转换（政党媒体）→输出（选举决策）。 Vom Stammtisch ueber Medien und Verbaende bis zur Fraktion wandert Meinung zu Macht. Parteien buendeln, Medien filtern, Verbaende lobbyieren. Wahlen entscheiden, wer bindet. Mechanismus: Input, Konversion, Output - wer die Stufen trennt, analysiert sauber. Klausur-Tipp: Lege jede Szene auf diese Dreistufen-Schablone.
@@ -54,7 +58,7 @@ PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→�
 
 Klausur-Satz: `Die drei Leitideen — konservativ, sozialistisch und liberal — prägen bis heute die Programme der Bundestagsparteien.`
 
-## Schritt 3 — entdecken: Uhrwerk des Marktes: Kette von Ursache zu Wirkung
+## Schritt 3 — entdecken: Kreislauf der Willensbildung: Kette von Ursache zu Wirkung
 
 ENTDECKEN（1概念 + 1文字图解）：
 
@@ -124,13 +128,13 @@ MUSTERLÖSUNG: Nach dem Kriterium des Ziels strebt Partei A eine schnelle Abkehr
 
 Klausur-Satz: `Der Vergleich der Wahlprogramme zeigt, dass sich die Klimapolitik der Parteien vor allem bei Maßnahme und Finanzierung unterscheidet.`
 
-## Schritt 5 — ausprobieren: Duell der Wege: Weg A gegen Weg B
+## Schritt 5 — ausprobieren: Duell der Wege: Programm-Verfahren gegen Statistik-Verfahren
 
 VERGLEICH辨别实验（双向辨析：纲领眼 vs. 统计眼）：
 
 VERGLEICH: Wähle erst das Verfahren —【选程序】先判断材料问的是 (i) Programm-Verfahren（两份纲领/立场如何对比：Ziel, Maßnahme, Finanzierung, Verbindlichkeit, Leitidee）还是 (ii) Statistik-Verfahren（选举数据说明了什么：Volksparteien-Verluste, Sperrklausel, Verdrossenheit）—— dann lösen.
 
-DUELL Weg A (freier Markt) gegen Weg B (Staat greift ein): Weg A feiert den freien Wettbewerb der Parteien: Vielfalt, Wechsel und neue Kraefte halten das System offen. Weg B baut Schutzmauern: Huerden, Verbote und Beobachtung wehren Zersplitterung und Feinde ab. Entscheide am Kriterium: Offenheit und Chancengleichheit sprechen fuer A, Stabilitaet und wehrhafte Demokratie fuer B.
+DUELL Weg A (Programm-Verfahren) gegen Weg B (Statistik-Verfahren): Weg A vergleicht Programme nach Ziel, Massnahme, Finanzierung und Verbindlichkeit und ordnet sie einer Leitidee zu; Weg B deutet Wahlstatistik nach Stammverlust, Wechselgewinn, Huerdenwirkung und Verdrossenheit. Entscheide am Kriterium: Programmtreue und Leitidee sprechen fuer A, Repraesentation und Stabilitaet sprechen fuer B.
 
 对决 Weg A（自由市场）vs Weg B（国家干预）：Weg A信政党自由竞争：多元更替保开放。Weg B信防护墙：门槛禁令观察，防碎片防敌人。判据：开放均等站A，稳定防卫站B。
 

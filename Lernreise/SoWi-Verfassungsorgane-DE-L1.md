@@ -65,7 +65,7 @@ Die Begriffe greifen ineinander: Bundestag und Bundesrat geben Gesetzen doppelte
 
 Klausur-Satz: `Art. 38 GG garantiert das freie Mandat: Abgeordnete sind an Aufträge nicht gebunden, sondern nur ihrem Gewissen unterworfen.`
 
-## Schritt 3 — entdecken: Uhrwerk des Marktes: Kette von Ursache zu Wirkung
+## Schritt 3 — entdecken: Raederwerk der Organe: Kette von Ursache zu Wirkung
 
 TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
@@ -125,7 +125,7 @@ VERGLEICH (Wahl des Weges, Weg A gegen Weg B):
 
 VERGLEICH: Waehle zuerst bewusst Weg A (parlamentarische Fuehrung) oder Weg B (foederative Kontrolle) und begruende dann dein Urteil am passenden Kriterium.
 
-DUELL Weg A (freier Markt) gegen Weg B (Staat greift ein): Weg A setzt auf handlungsfaehige Mehrheit: Parlament und Regierung entscheiden zuegig, Verantwortung ist klar. Weg B setzt auf geteilte Macht: Bundesrat, Praesident und Gericht bremsen, schuetzen Minderheiten und Laender. Entscheide am Kriterium: Handlungsfaehigkeit spricht fuer A, Machtbegrenzung und Rechtsschutz sprechen fuer B.
+DUELL Weg A (parlamentarische Fuehrung) gegen Weg B (foederative Kontrolle): Weg A setzt auf handlungsfaehige Mehrheit: Parlament und Regierung entscheiden zuegig, Verantwortung ist klar. Weg B setzt auf geteilte Macht: Bundesrat, Praesident und Gericht bremsen, schuetzen Minderheiten und Laender. Entscheide am Kriterium: Handlungsfaehigkeit spricht fuer A, Machtbegrenzung und Rechtsschutz sprechen fuer B.
 
 Weg A: Die parlamentarische Fuehrung setzt auf Regierungsmehrheit und Handlungsfaehigkeit. Bundestag und Regierung aus einer Mehrheit gestalten zuegig, Opposition kontrolliert oeffentlich, Wahlen sanktionieren spaeter. Staerke dieses Weges ist Gestaltungskraft und klare Verantwortung; Grenze ist die Versuchung, Kontrolle durch Laender und Gericht als Stoerung zu deuten.
 

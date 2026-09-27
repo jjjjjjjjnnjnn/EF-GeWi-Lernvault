@@ -65,7 +65,7 @@ Die Begriffe greifen ineinander: Die Grundordnung definiert das Schutzgut, Radik
 
 Klausur-Satz: `Ein Parteiverbot nach Art. 21 II GG setzt voraus, dass eine Partei die fdGO beeinträchtigt oder beseitigt und dafür eine reale Durchsetzungschance besteht.`
 
-## Schritt 3 — entdecken: Uhrwerk des Marktes: Kette von Ursache zu Wirkung
+## Schritt 3 — entdecken: Schild der Demokratie: Kette von Ursache zu Wirkung
 
 TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
@@ -125,7 +125,7 @@ VERGLEICH (Wahl des Weges, Weg A gegen Weg B):
 
 VERGLEICH: Waehle zuerst bewusst Weg A (Toleranzprinzip) oder Weg B (wehrhafter Schutz) und begruende dann dein Urteil am passenden Kriterium.
 
-DUELL Weg A (freier Markt) gegen Weg B (Staat greift ein): Weg A vertraut der freien Auseinandersetzung: Offene Debatte, Bildung und Zivilcourage besiegen Extremismus ohne Verbote. Weg B greift wehrhaft ein: Beobachtung, Verbote und Treuepflichten schuetzen die Ordnung vor ihren Feinden. Entscheide am Kriterium: Offenheit und Meinungsfreiheit sprechen fuer A, Bestandsschutz der Demokratie spricht fuer B.
+DUELL Weg A (Toleranzprinzip) gegen Weg B (wehrhafter Schutz): Weg A vertraut der freien Auseinandersetzung: Offene Debatte, Bildung und Zivilcourage besiegen Extremismus ohne Verbote. Weg B greift wehrhaft ein: Beobachtung, Verbote und Treuepflichten schuetzen die Ordnung vor ihren Feinden. Entscheide am Kriterium: Offenheit und Meinungsfreiheit sprechen fuer A, Bestandsschutz der Demokratie spricht fuer B.
 
 Weg A: Das Toleranzprinzip setzt auf Meinungsfreiheit und Offenheit. Streit wird ausgehalten, Gegenrede staerkt die Demokratie, politische Bildung immunisiert langfristig. Staerke dieses Weges ist Freiheit und Lernchance; Grenze ist die Gefahr, dass Feinde der Freiheit die Offenheit zum Umbau der Ordnung nutzen.
 

@@ -54,7 +54,7 @@ PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→�
 
 Klausur-Satz: `Ein Parteiverbot nach Art. 21 II GG setzt voraus, dass eine Partei die fdGO beeinträchtigt oder beseitigt und dafür eine reale Durchsetzungschance besteht.`
 
-## Schritt 3 — entdecken: Uhrwerk des Marktes: Kette von Ursache zu Wirkung
+## Schritt 3 — entdecken: Schild der Demokratie: Kette von Ursache zu Wirkung
 
 ENTDECKEN（1概念 + 1文字图解）：
 
@@ -118,9 +118,9 @@ VERGLEICH辨别实验（双向辨析：Beobachtungs-Verfahren vs. Verbots-Verfah
 
 VERGLEICH: Wähle erst das Verfahren — 【选程序】先判断题目问的是 (i) Beobachtungs-Verfahren（谁观察、观察什么、有何报告后果：Verfassungsschutz、Bericht、Prävention）还是 (ii) Verbots-Verfahren（谁能禁、门槛是什么、后果如何：Art. 21 II、nur BVerfG、Potentialität）—— dann lösen.
 
-DUELL Weg A (freier Markt) gegen Weg B (Staat greift ein): Weg A vertraut der freien Auseinandersetzung: Offene Debatte, Bildung und Zivilcourage besiegen Extremismus ohne Verbote. Weg B greift wehrhaft ein: Beobachtung, Verbote und Treuepflichten schuetzen die Ordnung vor ihren Feinden. Entscheide am Kriterium: Offenheit und Meinungsfreiheit sprechen fuer A, Bestandsschutz der Demokratie spricht fuer B.
+DUELL Weg A (Toleranzprinzip) gegen Weg B (wehrhafter Schutz): Weg A vertraut der freien Auseinandersetzung: Offene Debatte, Bildung und Zivilcourage besiegen Extremismus ohne Verbote. Weg B greift wehrhaft ein: Beobachtung, Verbote und Treuepflichten schuetzen die Ordnung vor ihren Feinden. Entscheide am Kriterium: Offenheit und Meinungsfreiheit sprechen fuer A, Bestandsschutz der Demokratie spricht fuer B.
 
-对决 Weg A（自由市场）vs Weg B（国家干预）：Weg A信自由交锋：公开辩论教育勇气，不禁也能赢。Weg B信防卫出手：观察禁止忠诚义务，保制度不死。判据：开放言论站A，制度存续站B。
+对决 Weg A（宽容原则）vs Weg B（防卫性保护）：Weg A信自由交锋：公开辩论教育勇气，不禁也能赢。Weg B信防卫出手：观察禁止忠诚义务，保制度不死。判据：开放言论站A，制度存续站B。
 
 AUFGABE A：Ein Kommentar fordert, eine soeben als „Verdachtsfall" eingestufte Partei unverzüglich zu verbieten. Welches Verfahren ist zu wählen, und wie ist die Forderung rechtlich einzuordnen?
 

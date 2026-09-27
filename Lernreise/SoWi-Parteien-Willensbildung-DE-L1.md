@@ -65,7 +65,7 @@ Die Begriffe greifen ineinander: Konservatismus, Sozialismus und Liberalismus li
 
 Klausur-Satz: `Die drei Leitideen — konservativ, sozialistisch und liberal — prägen bis heute die Programme der Bundestagsparteien.`
 
-## Schritt 3 — entdecken: Uhrwerk des Marktes: Kette von Ursache zu Wirkung
+## Schritt 3 — entdecken: Kreislauf der Willensbildung: Kette von Ursache zu Wirkung
 
 TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
@@ -119,13 +119,13 @@ MUSTERLOESUNG: Beide versprechen Schutz; der Unterschied liegt bei Massnahme und
 
 Klausur-Satz: `Der Vergleich der Wahlprogramme zeigt, dass sich die Klimapolitik der Parteien vor allem bei Maßnahme und Finanzierung unterscheidet.`
 
-## Schritt 5 — ausprobieren: Duell der Wege: Weg A gegen Weg B
+## Schritt 5 — ausprobieren: Duell der Wege: Parteien als Vermittler gegen Buergerinitiativen und Bewegungen
 
 VERGLEICH (Wahl des Weges, Weg A gegen Weg B):
 
 VERGLEICH: Waehle zuerst bewusst Weg A (Parteien als Vermittler) oder Weg B (Buergerinitiativen und Bewegungen) und begruende dann dein Urteil am passenden Kriterium.
 
-DUELL Weg A (freier Markt) gegen Weg B (Staat greift ein): Weg A feiert den freien Wettbewerb der Parteien: Vielfalt, Wechsel und neue Kraefte halten das System offen. Weg B baut Schutzmauern: Huerden, Verbote und Beobachtung wehren Zersplitterung und Feinde ab. Entscheide am Kriterium: Offenheit und Chancengleichheit sprechen fuer A, Stabilitaet und wehrhafte Demokratie fuer B.
+DUELL Weg A (Parteien als Vermittler) gegen Weg B (Buergerinitiativen und Bewegungen): Weg A buendelt Interessen ueber Art. 21 GG zu regierungsfaehiger Mitte (Staerke: Dauer und Verantwortung; Grenze: Ferne und Apparate-Disziplin). Weg B mobilisiert Einzelthemen ueber Demo und Petition zu schnellem Druck (Staerke: Naehe und Tempo; Grenze: Enge und fehlende Gesamtverantwortung). Entscheide am Kriterium: Integration und Regierungsfaehigkeit sprechen fuer A, Themennaehe und Mobilisierung fuer B.
 
 Weg A: Parteien als Vermittler nach Art. 21 GG leisten Integration und Sozialisation. Sie buendeln Interessen, bilden Personal aus und sichern Regierungsfaehigkeit ueber die Mitte. Staerke dieses Weges ist Dauer und Verantwortung; Grenze ist die Ferne zu einzelnen Anliegen und die Disziplin der Apparate.
 

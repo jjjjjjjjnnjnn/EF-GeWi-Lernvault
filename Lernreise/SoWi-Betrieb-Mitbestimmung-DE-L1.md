@@ -66,7 +66,7 @@ Die Begriffe greifen ineinander: **Shareholder** gegen **Stakeholder** definiert
 
 Klausur-Satz: `Während der Shareholder-Ansatz die Rendite der Anteilseigner maximiert, berücksichtigt der Stakeholder-Ansatz alle Betroffenen des Unternehmenshandelns.`
 
-## Schritt 3 — entdecken: Uhrwerk des Marktes: Kette von Ursache zu Wirkung
+## Schritt 3 — entdecken: Waage der Mitbestimmung: Kette von Ursache zu Wirkung
 
 TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
@@ -120,11 +120,11 @@ MUSTERLOESUNG: Nach zwei Runden ohne Einigung droht Arbeitskampf als Druck. Eine
 
 Klausur-Satz: `Der Bahn-Streik zeigt die Tarifautonomie in Aktion: Arbeitskampf als letztes Mittel nach gescheiterten Verhandlungen.`
 
-## Schritt 5 — ausprobieren: Duell der Wege: Weg A gegen Weg B
+## Schritt 5 — ausprobieren: Duell der Wege: Effizienz mit Tempo gegen Mitbestimmung mit Betriebsfrieden
 
 VERGLEICH: Zwei Wege fuehren den Betrieb durch die Krise. Weg A setzt auf Effizienz mit agiler Leitung und schnellem Tempo. Weg B setzt auf Mitbestimmung nach Betriebsverfassungsgesetz mit Information, Mitsprache und Betriebsfrieden. Pruefe zuerst die Aufgabe, waehle dann den passenden Weg.
 
-DUELL Weg A (freier Markt) gegen Weg B (Staat greift ein): Weg A vertraut dem freien Arbeitsmarkt: Loehne folgen Angebot und Nachfrage, flexible Vertraege sichern Beschaeftigung. Weg B setzt auf Mitbestimmung und Tarifschutz: Betriebsrat, Aufsichtsrat und Tarifvertrag sichern Wuerde und Einkommen, kosten aber Flexibilitaet. Entscheide am Kriterium: Beschaeftigungsmenge spricht fuer A, Verteilungsgerechtigkeit fuer B.
+DUELL Weg A (Effizienz mit Tempo) gegen Weg B (Mitbestimmung mit Betriebsfrieden): Weg A entscheidet schnell ueber Kosten und Rendite (Staerke: Tempo; Schwaeche: Vertrauensverlust). Weg B sichert Akzeptanz ueber Betriebsrat, Aufsichtsrat und Tarifvertrag (Staerke: Frieden und Wissen; Schwaeche: Zeitbedarf). Entscheide am Kriterium: Tempo spricht fuer A, SozialerFrieden und Verteilungsgerechtigkeit fuer B.
 
 Weg A: Effizienz mit agiler Leitung. Klare Ansage, kurze Wege, schnelle Anpassung an Auftragsloch und Kostendruck. Staerke ist Tempo und Rettung der Rendite, Schwaeche sind Vertrauensverlust, Widerstand und stille Kuendigung.
 

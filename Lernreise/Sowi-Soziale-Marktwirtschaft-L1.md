@@ -53,7 +53,6 @@ PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→�
 
 
 Klausur-Satz: `Der Staat setzt den Ordnungsrahmen, greift aber nicht direkt in Preise und Löhne ein.`
-Klausur-Satz: `Tarifautonomie heißt: Löhne handeln Gewerkschaften und Arbeitgeber ohne den Staat aus.`
 
 ## Schritt 3 — entdecken: Uhrwerk des Marktes: Kette von Ursache zu Wirkung
 
@@ -98,7 +97,10 @@ BEISPIEL（正确例题示范，AB II analysieren，先遮住Musterlösung自己
 
 AUFGABE (analysieren, 原文自写)：Analysieren Sie, wie eine Mindestlohnerhöhung von 12 auf 15 Euro den Preismechanismus einschränkt und zugleich den sozialen Ausgleich stärkt. Nennen Sie dabei die betroffene Rolle der Tarifautonomie.
 
-HILFE: 三句模板——Wirkung 1 (Preis) + Wirkung 2 (sozial) + Einordnung (Tarifautonomie). 每句一个Fachbegriff。
+HILFE（三步）：
+1. Wirkung 1 (Preis)：写 Mindestlohn 15 Euro 高于 Gleichgewicht 12 Euro， Angebot 高于 Nachfrage。
+2. Wirkung 2 (sozial)：写谁被保护（Armut trotz Arbeit）+ 用哪个词（sozialer Ausgleich）。
+3. Einordnung (Tarifautonomie)：写干预代价 + Urteil-Ansatz（Effizienz vs Gerechtigkeit）。
 
 MUSTERLÖSUNG (selbst geschrieben, 只转述不复制)：Der höhere Mindestlohn setzt ein Lohnminimum über dem Marktpreis und bremst so den Preismechanismus. Gleichzeitig sichert er Einkommen trotz Arbeit und stärkt den sozialen Ausgleich. Er greift damit in die Tarifautonomie ein: Schutz gegen Marktfreiheit.
 
@@ -107,7 +109,7 @@ Klausur-Satz: `Der Mindestlohn schützt vor Armut trotz Arbeit, greift aber in P
 
 [Werkzeug: markt-sim]
 
-TARGET: Stellt im Sandkasten einen Lohnboden oberhalb des Gleichgewichts ein und zeigt an Mengen und Preisen, dass Sozialeinkommen steigt, waehrend die Beschaeftigungsmenge sinkt.
+TARGET: Stellt im Sandkasten Gleichgewichtslohn 12 Euro ein, hebt den Lohnboden auf 15 Euro und zeigt: Sozialeinkommen steigt, Beschaeftigungsmenge sinkt, Luecke am Regler ablesen.
 ## Schritt 5 — ausprobieren: Duell der Wege: Weg A gegen Weg B
 
 VERGLEICH辨别实验（先选程序再做——两题用不同眼镜，别混）：
@@ -127,13 +129,12 @@ HILFE: A只准用Preis/Menge/Anreiz词；B只准用Schutz/Bedarf/Ausgleich词。
 ANTWORT: A = Verfahren (i); Punkte: knappes Angebot → höherer Preis → weniger Nachfrage + Anreiz für mehr Angebot. B = Verfahren (ii); Punkte: Marktlohn deckt Bedarf nicht → sozialer Ausgleich (Sozialversicherung/Umverteilung) legitimiert Eingriff; Tarifautonomie-Grenze nennen genügt.
 
 Klausur-Satz: `Der Preismechanismus gleicht Angebot und Nachfrage über den Preis aus.`
-Klausur-Satz: `Sozialer Ausgleich heißt: Bedarf schlägt Marktergebnis, wenn Arbeit nicht vor Armut schützt.`
 
 ## Schritt 6 — check: Selbsttest zu Soziale Marktwirtschaft
 
 CHECK检索（合书默写！觉得会了不算，能写出才算。Evidenz: Abrufen schlägt Wiederlesen — Karpicke & Blunt 2011）：
 
-合书默写3行（遮住上面写）：1) 双支柱公式一行；2) 国家角色一行（裁判不是运动员）；3) Tarifautonomie定义一行。
+FLASHCARDS（遮住ANTWORT自测，一卡一分）：
 
 - FRAGE: Nenne die zwei Säulen der Sozialen Marktwirtschaft und die Staatsrolle in einem Satz. | ANTWORT: Wettbewerb (Effizienz) + sozialer Ausgleich (Gerechtigkeit); Staat als Schiedsrichter/Netz, nicht Spieler.
 - FRAGE: Was bedeutet Tarifautonomie in einem Satz? | ANTWORT: Löhne werden von Gewerkschaften und Arbeitgebern ohne Staat ausgehandelt.

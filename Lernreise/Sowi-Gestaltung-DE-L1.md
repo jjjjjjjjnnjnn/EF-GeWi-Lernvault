@@ -66,7 +66,7 @@ Die Begriffe greifen ineinander: **Redebeitrag** braucht Buehne und Appell aus H
 
 Klausur-Satz: `Der Redebeitrag verlangt Anlassbezug, die Auseinandersetzung mit zwei fremden Aspekten, einen eigenen Vorschlag und eine ueberzeugende Adressierung.`
 
-## Schritt 3 — entdecken: Uhrwerk des Marktes: Kette von Ursache zu Wirkung
+## Schritt 3 — entdecken: Werkstatt der Mitgestaltung: Kette von Ursache zu Wirkung
 
 TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 

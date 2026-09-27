@@ -13,16 +13,20 @@ version: Lesson-v3
 
 # Lernreise: Partizipation (L1, Ziel Klausur)
 
-> Kampagne *Virtuelle Stadt-Tycoon — Von der Apfelmarkt-Fehde zum modernen Sozialstaat*: Akt IV-V — Tarifarena und Demokratiewerkstatt — Episode 20, Cast: Birenbegehren-Aktivist Piet Janssen. Werkzeug dieser Episode: [balance-board].
+> Kampagne *Virtuelle Stadt-Tycoon — Von der Apfelmarkt-Fehde zum modernen Sozialstaat*: Akt IV-V — Tarifarena und Demokratiewerkstatt — Episode 20, Cast: Buergerbegehren-Aktivist Piet Janssen. Werkzeug dieser Episode: [balance-board].
 
 <!-- Lesson v3 9步制架构：Schritt 1至8固定结构；Fehlvorstellung 夹在 Schritt 6 与 7 之间（Parser 自动跳过，不占步数）；支持内嵌 [Werkzeug: balance-board] 交互教具；Gating: check/szenario 未过 = Weiter 置灰；XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
 ## Schritt 1 — entdecken: Alarm in Tycoon City: Quorum-Krimi beim Buergerbegehren
 
 
-> EPISODE 20｜Akt IV-V — Tarifarena und Demokratiewerkstatt｜召集人 Birenbegehren-Aktivist Piet Janssen：Quorum-Krimi beim Buergerbegehren。
+> EPISODE 20｜Akt IV-V — Tarifarena und Demokratiewerkstatt｜召集人 Buergerbegehren-Aktivist Piet Janssen：Quorum-Krimi beim Buergerbegehren。
 
-HOOK 市长危机（先读剧情，再进 ZIELE）：【本集战役 EP20｜Akt IV-V — Tarifarena und Demokratiewerkstatt｜虚拟城邦 Tycoon City 告急】市长办公室深夜灯火通明，Birenbegehren-Aktivist Piet Janssen 冲进来报告：Quorum-Krimi beim Buergerbegehren，而明天市议会就要投票。你的身份不变：市长直属经济改革规划委员。真实情境切入：某市青年议会投票率不到8%，同城气候游行却来了两万人；票箱变垃圾桶的漫画配文“投票没劲，游行真香”。票在睡觉、街在喊——参与ย้าย场了。考试要问：这是民主危机，还是参与换装？通关线索：TARGET: Bringt auf dem Verhandlungsbrett beide Waagschalen in die Balance — Bedingung: Zustimmung beider Baenke, Loesung mit Kompromisslinie, Ergebnisprotokoll mit zwei Begruendungen je Seite. 先读 ZIELE，再啃术语，把传导机制画成你的作战地图。DE-Briefing: Episode 20 — Birenbegehren-Aktivist Piet Janssen meldet Quorum-Krimi beim Buergerbegehren; der Stadtrat entscheidet morgen. Rette Tycoon City mit Analyse, Sandkasten und Klausur-Antwort zum Thema Partizipation.
+HOOK 市长危机（先读剧情，再进 ZIELE）：【本集战役 EP20｜Akt IV-V — Tarifarena und Demokratiewerkstatt｜虚拟城邦 Tycoon City 告急】市长办公室深夜灯火通明，Buergerbegehren-Aktivist Piet Janssen 冲进来报告：Quorum-Krimi beim Buergerbegehren，而明天市议会就要投票。你的身份不变：市长直属经济改革规划委员。
+
+真实情境切入：某市青年议会投票率不到8%，同城气候游行却来了两万人；票箱变垃圾桶的漫画配文“投票没劲，游行真香”。票在睡觉、街在喊——参与换场了。考试要问：这是民主危机，还是参与换装？
+
+通关线索：TARGET: Bringt auf dem Verhandlungsbrett beide Waagschalen in die Balance — Bedingung: Zustimmung beider Baenke, Loesung mit Kompromisslinie, Ergebnisprotokoll mit zwei Begruendungen je Seite. 先读 ZIELE，再啃术语，把传导机制画成你的作战地图。DE-Briefing: Episode 20 — Buergerbegehren-Aktivist Piet Janssen meldet Quorum-Krimi beim Buergerbegehren; der Stadtrat entscheidet morgen. Rette Tycoon City mit Analyse, Sandkasten und Klausur-Antwort zum Thema Partizipation.
 
 ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
@@ -32,7 +36,7 @@ ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
 Klausur-Satz: `Jugendliche engagieren sich stark sozial und politisch (NGOs, Fridays for Future), meiden aber Parteien — Partizipation ja, Parteibindung nein.`
 
-## Schritt 2 — entdecken: Werkzeugkoffer von Birenbegehren-Aktivist Piet Janssen: 5 Begriffe scharf stellen
+## Schritt 2 — entdecken: Werkzeugkoffer von Buergerbegehren-Aktivist Piet Janssen: 5 Begriffe scharf stellen
 
 PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
 
@@ -54,7 +58,7 @@ PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→�
 
 Klausur-Satz: `Der Weg zum Volksentscheid führt über Initiative, Begehren (Unterschriftenquorum) und Entscheid (Zustimmungsquorum).`
 
-## Schritt 3 — entdecken: Uhrwerk des Marktes: Kette von Ursache zu Wirkung
+## Schritt 3 — entdecken: Arena der Beteiligung: Kette von Ursache zu Wirkung
 
 ENTDECKEN（1概念 + 1文字图解）：
 
@@ -127,13 +131,13 @@ MUSTERLÖSUNG: Sichtbar wird zunächst die E-Partizipation: Die Online-Petition 
 
 Klausur-Satz: `E-Partizipation senkt die Kosten der Beteiligung, ersetzt aber keine dauerhafte politische Organisation.`
 
-## Schritt 5 — ausprobieren: Duell der Wege: Weg A gegen Weg B
+## Schritt 5 — ausprobieren: Duell der Wege: Verfahrens-Partizipation gegen Deliberations-Partizipation
 
 VERGLEICH辨别实验（双向辨析：程序眼 vs. 抽选眼）：
 
 VERGLEICH: Wähle erst das Verfahren —【选程序】先判断材料问的是 (i) Verfahrens-Partizipation（一条参与程序怎么走：Volksinitiative → Begehren → Entscheid、门槛、合法性）还是 (ii) Deliberations-Partizipation（参与的质量与合法性：Bürgerrat、Repräsentation、Minderheitenschutz）—— dann lösen.
 
-DUELL Weg A (freier Markt) gegen Weg B (Staat greift ein): Weg A feiert den freien Beteiligungsmarkt: Jeder waehlt seine Form, Wettbewerb der Stimmen diszipliniert die Macht. Weg B baut geschuetzte Beteiligung: Jugendparlamente, Quoten und Buergerratsverfahren sichern Gehoerte, die der Markt ueberhoert. Entscheide am Kriterium: Freiheit und Vielfalt sprechen fuer A, Gleichheit der Stimme und Teilhabe fuer B.
+DUELL Weg A (Verfahrens-Partizipation) gegen Weg B (Deliberations-Partizipation): Weg A prueft Verfahrensweg, Quoren und Rechtskonformitaet von Initiative bis Entscheid; Weg B prueft Qualitaet, Repraesentation und Verbindlichkeit von Buergerrat und Teilhabe. Entscheide am Kriterium: Verfahrenssicherheit spricht fuer A, Gleichheit der Stimme und Teilhabe sprechen fuer B.
 
 对决 Weg A（自由市场）vs Weg B（国家干预）：Weg A信参与自由市场：人各选各的招，竞争管住权力。Weg B信受保护的参与：青年议会、配额、公民议事保住被淹没的声音。判据：自由多元站A，票票平等站B。
 

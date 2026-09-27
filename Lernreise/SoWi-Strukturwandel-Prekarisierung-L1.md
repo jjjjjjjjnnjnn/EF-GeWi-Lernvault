@@ -13,9 +13,9 @@ version: Lesson-v3
 
 # Lernreise: Strukturwandel und Prekarisierung (L1, Ziel Klausur)
 
-> Kampagne *Virtuelle Stadt-Tycoon — Von der Apfelmarkt-Fehde zum modernen Sozialstaat*: Akt I-II — Apfelmarkt und Mietendeckel — Episode 34, Cast: Nachtmarkt-Buergermeister-Stellvertreter Deniz Yildiz. Werkzeug dieser Episode: [markt-sim].
+> Kampagne *Virtuelle Stadt-Tycoon — Von der Apfelmarkt-Fehde zum modernen Sozialstaat*: Akt I-II — Apfelmarkt und Mietendeckel — Episode 34, Cast: Nachtmarkt-Buergermeister-Stellvertreter Deniz Yildiz. Werkzeug dieser Episode: [balance-board].
 
-<!-- Lesson v3 architecture: Schritte 1-8 fixed; Fehlvorstellung between Schritt 6 and 7 (parser skipped); embedded [Werkzeug: markt-sim]; gating: check/szenario failed = Weiter greyed; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
+<!-- Lesson v3 architecture: Schritte 1-8 fixed; Fehlvorstellung between Schritt 6 and 7 (parser skipped); embedded [Werkzeug: balance-board]; gating: check/szenario failed = Weiter greyed; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
 ## Schritt 1 — entdecken: Alarm in Tycoon City: Apfelwein-Steuerdeal hinterm Rathaus
 
@@ -56,7 +56,7 @@ PRETRAINING (Kernbegriffe):
 
 Klausur-Satz: `Prekaer ist Arbeit, wenn Einkommen, Sicherheit, Schutz und Planbarkeit gleichzeitig verletzt sind.`
 
-## Schritt 3 — entdecken: Uhrwerk des Marktes: Kette von Ursache zu Wirkung
+## Schritt 3 — entdecken: Baustelle des Strukturwandels: Kette von Ursache zu Wirkung
 
 ENTDECKEN (ein Konzept plus Diagramm):
 
@@ -85,13 +85,13 @@ Klausur-Satz: `Erst die Kumulation mehrerer Unsicherheiten macht aus atypischer 
 
 **Bezug zum Konzept**: `Strukturwandel zeigt sich in Landschaften, Prekarisierung in Lebenslaeufen.`
 
-## Schritt 4 — ausprobieren: Sandkasten-Einsatz [markt-sim]: Rette die Stadt mit Zahlen
+## Schritt 4 — ausprobieren: Sandkasten-Einsatz [balance-board]: Rette die Stadt mit Zahlen
 
 BEISPIEL (vollstaendige Musterloesung):
 
-[Werkzeug: markt-sim]
+[Werkzeug: balance-board]
 
-TARGET: Stellt im Sandkasten Angebot und Nachfrage so ein, dass der Gleichgewichtspreis zwischen 8 und 12 Euro liegt, die gehandelte Menge mindestens 100 Einheiten erreicht und ein Probe-Hoechstpreis von 6 Euro als bindend mit Warteschlange entlarvt wird.
+TARGET: Prueft einen Job auf dem Balance-Board an vier Kriterien (Einkommen, Sicherheit, Schutz, Planbarkeit): 0–1 Defizite = stabil, kumuliert 2+ Defizite = prekaere Zone; Urteil nur ueber Kumulation.
 
 AUFGABE (analysieren, AFB II): Analysieren Sie, ob eine befristete Teilzeitstelle im Versandhandel mit $12 \, \mathrm{Euro}$ Stundenlohn, ohne Uebernahmeperspektive und mit wechselnden Schichten, als prekaer einzustufen ist.
 
@@ -104,13 +104,13 @@ MUSTERLOESUNG: Das Einkommen liegt nahe der Untergrenze und reicht bei Teilzeit 
 
 Klausur-Satz: `Die Stelle ist prekaer, weil Einkommen, Sicherheit und Planbarkeit kumulativ verletzt sind.`
 
-## Schritt 5 — ausprobieren: Duell der Wege: Weg A gegen Weg B
+## Schritt 5 — ausprobieren: Duell der Wege: Struktur-Verfahren gegen Prekaritaets-Verfahren
 
 VERGLEICH (erst Verfahren waehlen, dann loesen):
 
 VERGLEICH: Waehle erst das Verfahren — (i) Struktur-Verfahren (Sektoren, Qualifikationswandel, Deindustrialisierung) oder (ii) Prekaritaets-Verfahren (Vier-Kriterien-Test am Einzelfall) — dann loesen.
 
-DUELL Weg A (freier Markt) gegen Weg B (Staat greift ein): Weg A vertraut dem freien Arbeitsmarkt: Flexible Vertraege und Plattformen schaffen Jobs, niedrige Loehne sichern Wettbewerb. Weg B schuetzt per Eingriff: Mindestlohn, Equal Pay und Weiterbildung sichern Wuerde und Aufstieg. Entscheide am Kriterium: Beschaeftigungsmenge spricht fuer A, Sicherheit und Teilhabe sprechen fuer B.
+DUELL Weg A (Struktur-Verfahren) gegen Weg B (Prekaritaets-Verfahren): Weg A erklaert Branchenverschiebung und gespaltene Jobqualitaet; Weg B prueft Einzelfaelle am Vier-Kriterien-Test mit Kumulationsschwelle 2+ Defizite = prekaer. Entscheide am Kriterium: Branchenlage spricht fuer A, Kumulation am Fall spricht fuer B.
 
 对决 Weg A（自由市场）vs Weg B（国家干预）：Weg A信灵活市场：松合同多岗位、低工资保竞争力。Weg B信保护干预：底薪同工同酬培训保尊严和上升。判据：岗位量站A，安全参与站B。
 

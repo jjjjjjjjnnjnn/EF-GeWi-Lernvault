@@ -22,7 +22,7 @@ version: Lesson-v3
 
 > EPISODE 43｜Akt I-II — Apfelmarkt und Mietendeckel｜召集人 Hafenkapitain a. D. Sturmius Blank：Kapitaens-Protestzug in den Stadtrat。
 
-HOOK 市长危机（先读剧情，再进 ZIELE）：【本集战役 EP43｜Akt I-II — Apfelmarkt und Mietendeckel｜虚拟城邦 Tycoon City 告急】市长办公室深夜灯火通明，Hafenkapitain a. D. Sturmius Blank 冲进来报告：Kapitaens-Protestzug in den Stadtrat，而明天市议会就要投票。你的身份不变：市长直属经济改革规划委员。真实两难切入：央行加息压通胀，房贷家庭叫苦、企业投资熄火；政府大撒钱保就业，物价又抬头。六个目标（增长、就业、物价、外贸、分配、环境）像六块拼图，按下一块翘起两块——这就是“魔法”变“六角”的原因。通关线索：TARGET: Stellt im Sandkasten Angebot und Nachfrage so ein, dass der Gleichgewichtspreis zwischen 8 und 12 Euro liegt, die gehandelte Menge mindestens 100 Einheiten erreicht und ein Probe-Hoechstpreis von 6 Euro als bindend mit Warteschlange entlarvt wird. 先读 ZIELE，再啃术语，把传导机制画成你的作战地图。DE-Briefing: Episode 43 — Hafenkapitain a. D. Sturmius Blank meldet Kapitaens-Protestzug in den Stadtrat; der Stadtrat entscheidet morgen. Rette Tycoon City mit Analyse, Sandkasten und Klausur-Antwort zum Thema Wirtschaftspolitik und magisches Sechseck.
+HOOK 市长危机（先读剧情，再进 ZIELE）：【本集战役 EP43｜Akt I-II — Apfelmarkt und Mietendeckel｜虚拟城邦 Tycoon City 告急】市长办公室深夜灯火通明，Hafenkapitain a. D. Sturmius Blank 冲进来报告：Kapitaens-Protestzug in den Stadtrat，而明天市议会就要投票。你的身份不变：市长直属经济改革规划委员。真实两难切入：央行加息压通胀，房贷家庭叫苦、企业投资熄火；政府大撒钱保就业，物价又抬头。六个目标（增长、就业、物价、外贸、分配、环境）像六块拼图，按下一块翘起两块——这就是“魔法”变“六角”的原因。通关线索：TARGET: Zeichnet im Sechseck-Modul alle sechs Ecken mit Plus und Minus; vergleicht expansiv (Jobs und Wachstum plus, Preise und Umwelt minus) gegen restriktiv und benennt Gewinner, Verlierer und Zeithorizont. 先读 ZIELE，再啃术语，把传导机制画成你的作战地图。DE-Briefing: Episode 43 — Hafenkapitain a. D. Sturmius Blank meldet Kapitaens-Protestzug in den Stadtrat; der Stadtrat entscheidet morgen. Rette Tycoon City mit Analyse, Sandkasten und Klausur-Antwort zum Thema Wirtschaftspolitik und magisches Sechseck.
 
 ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
@@ -115,7 +115,7 @@ Klausur-Satz: `Expansive Fiskalpolitik staerkt Wachstum und Jobs, gefaehrdet abe
 
 [Werkzeug: markt-sim]
 
-TARGET: Stellt im Sandkasten Angebot und Nachfrage so ein, dass der Gleichgewichtspreis zwischen 8 und 12 Euro liegt, die gehandelte Menge mindestens 100 Einheiten erreicht und ein Probe-Hoechstpreis von 6 Euro als bindend mit Warteschlange entlarvt wird.
+TARGET: Zeichnet im Sechseck-Modul alle sechs Ecken mit Plus und Minus; vergleicht expansiv (Jobs und Wachstum plus, Preise und Umwelt minus) gegen restriktiv und benennt Gewinner, Verlierer und Zeithorizont.
 
 BEISPIEL（正确例题示范，含教具操作与解答，中文在上、德语在下）：
 

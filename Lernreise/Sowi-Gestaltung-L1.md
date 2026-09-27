@@ -54,7 +54,7 @@ PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→�
 
 Klausur-Satz: `Der Redebeitrag verlangt Anlassbezug, die Auseinandersetzung mit zwei fremden Aspekten, einen eigenen Vorschlag und eine ueberzeugende Adressierung.`
 
-## Schritt 3 — entdecken: Uhrwerk des Marktes: Kette von Ursache zu Wirkung
+## Schritt 3 — entdecken: Werkstatt der Mitgestaltung: Kette von Ursache zu Wirkung
 
 ENTDECKEN（1概念 + 1文字图解）：
 

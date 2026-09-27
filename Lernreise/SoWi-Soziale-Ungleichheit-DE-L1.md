@@ -66,7 +66,7 @@ Die Begriffe greifen ineinander: **Einkommen** und **Bildung** liefern die Dimen
 
 Klausur-Satz: `Chancengleichheit bedeutet gleiche Startbedingungen, nicht gleiche Ergebnisse — gemessen wird sie am Bildungstrichter und an der Armutsgefaehrdungsquote.`
 
-## Schritt 3 — entdecken: Uhrwerk des Marktes: Kette von Ursache zu Wirkung
+## Schritt 3 — entdecken: Schere der Verteilung: Kette von Ursache zu Wirkung
 
 TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
@@ -120,11 +120,11 @@ MUSTERLOESUNG: Der Trichter belegt Herkunftseffekt; nach Verschiebung sinkt der 
 
 Klausur-Satz: `Wenn der Bildungserfolg staerker von der Herkunft als von der Leistung abhaengt, widerspricht dies dem meritokratischen Prinzip und untergraebt das Vertrauen in die Demokratie.`
 
-## Schritt 5 — ausprobieren: Duell der Wege: Weg A gegen Weg B
+## Schritt 5 — ausprobieren: Duell der Wege: Klassen und Schichten gegen Sinus-Milieus
 
 VERGLEICH: Zwei Wege ordnen dieselbe Gesellschaft unterschiedlich. Weg A denkt in Klassen und Schichten mit senkrechter Staffelung nach Einkommen und Bildung. Weg B denkt in Sinus-Milieus mit waagerechten Werten und Lebensstilen. Pruefe zuerst die Aufgabe, waehle dann den passenden Weg.
 
-DUELL Weg A (freier Markt) gegen Weg B (Staat greift ein): Weg A setzt auf freie Leistung: Offene Maerkte, Wettbewerb und Eigenverantwortung belohnen Einsatz. Weg B setzt auf Ausgleich: Umverteilung, Foerderung und Quoten oeffnen Starts. Entscheide am Kriterium: Effizienz und Eigenverantwortung sprechen fuer A, Chancengerechtigkeit und Teilhabe fuer B.
+DUELL Weg A (Klassen und Schichten) gegen Weg B (Sinus-Milieus): Weg A erklaert Lebenschancen und Anreize ueber Einkommen, Bildung und Einfluss mit messbarer Spreizung; Weg B erklaert Zugehoerigkeit ueber Werte, Stile und Konsum mit Alltagsnaehe. Entscheide am Kriterium: Effizienz und Eigenverantwortung sprechen fuer A, Chancengerechtigkeit und Teilhabe fuer B.
 
 Weg A: Klassen und Schichten. Senkrechte Achse aus Einkommen plus Bildung plus Einfluss erklaert Lebenschancen und Anreize. Staerke ist klare Hierarchie mit messbarer Spreizung, Schwaeche ist Blindheit gegenueber Werten, Geschmack und Alltag.
 

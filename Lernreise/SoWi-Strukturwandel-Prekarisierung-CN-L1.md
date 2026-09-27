@@ -13,9 +13,9 @@ version: Lesson-v3
 
 # Lernreise: Strukturwandel und Prekarisierung der Arbeit (L1, Ziel Klausur)
 
-> Kampagne *Virtuelle Stadt-Tycoon — Von der Apfelmarkt-Fehde zum modernen Sozialstaat*: Akt I-II — Apfelmarkt und Mietendeckel — Episode 33, Cast: Redecoach Anton Berger. Werkzeug dieser Episode: [markt-sim].
+> Kampagne *Virtuelle Stadt-Tycoon — Von der Apfelmarkt-Fehde zum modernen Sozialstaat*: Akt I-II — Apfelmarkt und Mietendeckel — Episode 33, Cast: Redecoach Anton Berger. Werkzeug dieser Episode: [balance-board].
 
-<!-- Lesson v3 9步制架构：Schritt 1至8固定结构；Fehlvorstellung 夹在 Schritt 6 与 7 之间（Parser 自动跳过，不占步数）；支持内嵌 [Werkzeug: markt-sim] 交互教具；Gating: check/szenario 未过 = Weiter 置灰；XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
+<!-- Lesson v3 9步制架构：Schritt 1至8固定结构；Fehlvorstellung 夹在 Schritt 6 与 7 之间（Parser 自动跳过，不占步数）；支持内嵌 [Werkzeug: balance-board] 交互教具；Gating: check/szenario 未过 = Weiter 置灰；XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
 ## Schritt 1 — entdecken: Alarm in Tycoon City: Lampenfieber vor der Gestaltungsrede
 
@@ -67,7 +67,7 @@ PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→�
 
 Klausur-Satz: `Prekaer ist Beschaeftigung, wenn Einkommen, Schutz, Dauer und Planbarkeit gleichzeitig defizitär sind.`
 
-## Schritt 3 — entdecken: Uhrwerk des Marktes: Kette von Ursache zu Wirkung
+## Schritt 3 — entdecken: Baustelle des Strukturwandels: Kette von Ursache zu Wirkung
 
 ENTDECKEN（1概念 + 1文字图解，中文在上、德语在下）：
 
@@ -112,11 +112,11 @@ Klausur-Satz: `Der Wandel vernichtet nicht nur Jobs, sondern ersetzt geschuetzte
 
 **Bezug zum Konzept**: `Strukturwandel ist kein Diagramm, sondern eine umgebaute Landschaft.`
 
-## Schritt 4 — ausprobieren: Sandkasten-Einsatz [markt-sim]: Rette die Stadt mit Zahlen
+## Schritt 4 — ausprobieren: Sandkasten-Einsatz [balance-board]: Rette die Stadt mit Zahlen
 
-[Werkzeug: markt-sim]
+[Werkzeug: balance-board]
 
-TARGET: Stellt im Sandkasten Angebot und Nachfrage so ein, dass der Gleichgewichtspreis zwischen 8 und 12 Euro liegt, die gehandelte Menge mindestens 100 Einheiten erreicht und ein Probe-Hoechstpreis von 6 Euro als bindend mit Warteschlange entlarvt wird.
+TARGET: Prueft einen Job auf dem Balance-Board an vier Kriterien (Einkommen, Schutz, Dauer, Planbarkeit): 0–1 Defizite = stabil, kumuliert 2+ Defizite = prekaer; belegt das Urteil mit Kumulation statt Einzelmerkmal.
 
 BEISPIEL（正确例题示范，含教具操作与解答，中文在上、德语在下）：
 
@@ -138,13 +138,13 @@ MUSTERLOESUNG：中文：四项全缺即判定为不稳定就业；它是服务�
 MUSTERLOESUNG (DE): Nach allen vier Kriterien ist der Minijob prekaer und typisch fuer den dienstleistungsgetriebenen Strukturwandel: Struktur erklaert die Lage der Jobs.
 Klausur-Satz: `Nach allen vier Kriterien ist der Minijob prekaer und typisch fuer den dienstleistungsgetriebenen Strukturwandel.`
 
-## Schritt 5 — ausprobieren: Duell der Wege: Weg A gegen Weg B
+## Schritt 5 — ausprobieren: Duell der Wege: Strukturwandel gegen Individualdeutung
 
 VERGLEICH辨别实验（双向辨析：结构转型 vs 个体归因）：
 
 VERGLEICH: Waehle erst das Verfahren — 【选程序】先看设问：(i) 结构转型（问 Wandel/Folgen/Gruppen：讲部门转移、技术替代、风险分布）oder (ii) 个体归因（问 Eigenverantwortung/Qualifikation：讲教育、动机、个体选择）—— dann loesen.
 
-DUELL Weg A (freier Markt) gegen Weg B (Staat greift ein): Weg A vertraut dem freien Arbeitsmarkt: Flexible Vertraege und Plattformen schaffen Jobs, niedrige Loehne sichern Wettbewerb. Weg B schuetzt per Eingriff: Mindestlohn, Equal Pay und Weiterbildung sichern Wuerde und Aufstieg. Entscheide am Kriterium: Beschaeftigungsmenge spricht fuer A, Sicherheit und Teilhabe sprechen fuer B.
+DUELL Weg A (Strukturwandel) gegen Weg B (Individualdeutung): Weg A erklaert Lage der Jobs ueber Tertiarisierung, Technik und Plattformmacht; Weg B prueft Fleiss, Qualifikation und Einzelentscheidung. Entscheide am Kriterium: Struktur erklaert Welle, Individuum nur Fall; Beschaeftigungsmenge spricht fuer Flexibilitaet, Sicherheit und Teilhabe sprechen fuer Schutz.
 
 对决 Weg A（自由市场）vs Weg B（国家干预）：Weg A信灵活市场：松合同多岗位、低工资保竞争力。Weg B信保护干预：底薪同工同酬培训保尊严和上升。判据：岗位量站A，安全参与站B。
 

@@ -65,7 +65,7 @@ Die Begriffe greifen ineinander: Konventionelle Teilhabe sichert Dauer ueber Man
 
 Klausur-Satz: `Der Weg zum Volksentscheid führt über Initiative, Begehren (Unterschriftenquorum) und Entscheid (Zustimmungsquorum).`
 
-## Schritt 3 — entdecken: Uhrwerk des Marktes: Kette von Ursache zu Wirkung
+## Schritt 3 — entdecken: Arena der Beteiligung: Kette von Ursache zu Wirkung
 
 TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
@@ -119,13 +119,13 @@ MUSTERLOESUNG: Die Waage zeigt: Digitale Senkung hebt den Klick, nicht die Bindu
 
 Klausur-Satz: `E-Partizipation senkt die Kosten der Beteiligung, ersetzt aber keine dauerhafte politische Organisation.`
 
-## Schritt 5 — ausprobieren: Duell der Wege: Weg A gegen Weg B
+## Schritt 5 — ausprobieren: Duell der Wege: konventionell gegen unkonventionell
 
 VERGLEICH (Wahl des Weges, Weg A gegen Weg B):
 
 VERGLEICH: Waehle zuerst bewusst Weg A (konventionell) oder Weg B (unkonventionell) und begruende dann dein Urteil am passenden Kriterium.
 
-DUELL Weg A (freier Markt) gegen Weg B (Staat greift ein): Weg A feiert den freien Beteiligungsmarkt: Jeder waehlt seine Form, Wettbewerb der Stimmen diszipliniert die Macht. Weg B baut geschuetzte Beteiligung: Jugendparlamente, Quoten und Buergerratsverfahren sichern Gehoerte, die der Markt ueberhoert. Entscheide am Kriterium: Freiheit und Vielfalt sprechen fuer A, Gleichheit der Stimme und Teilhabe fuer B.
+DUELL Weg A (konventionell) gegen Weg B (unkonventionell): Weg A bindet ueber Wahl und Parteiarbeit mit Mandat und Organisation (Staerke: Verbindlichkeit und Bestand; Grenze: Ferne und hohe Schwelle). Weg B mobilisiert ueber Demo, Ungehorsam und digitalen Protest (Staerke: Tempo und Breite; Grenze: fehlende Verbindlichkeit und Rechts-Spannung). Entscheide am Kriterium: Verbindlichkeit spricht fuer A, Breite und Teilhabe fuer B.
 
 Weg A: Konventionelle Beteiligung setzt auf Wahl und Parteiarbeit. Sie bindet ueber Mandat und Organisation, wirkt dauerhaft und sichert Minderheitenschutz ueber Grundrechte und Gerichte. Staerke dieses Weges ist Verbindlichkeit und Bestand; Grenze ist die Ferne zum Alltag und die hohe Eintrittsschwelle fuer Junge.
 

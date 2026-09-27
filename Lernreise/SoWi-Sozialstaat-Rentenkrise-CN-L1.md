@@ -13,9 +13,9 @@ version: Lesson-v3
 
 # Lernreise: Sozialstaat und Rentenkrise im demografischen Wandel (L1, Ziel Klausur)
 
-> Kampagne *Virtuelle Stadt-Tycoon — Von der Apfelmarkt-Fehde zum modernen Sozialstaat*: Akt III — Gini-Waage und Steuerreform — Episode 31, Cast: Kurierfahrerin Samira Haddad. Werkzeug dieser Episode: [gini-allocator].
+> Kampagne *Virtuelle Stadt-Tycoon — Von der Apfelmarkt-Fehde zum modernen Sozialstaat*: Akt III — Gini-Waage und Steuerreform — Episode 31, Cast: Kurierfahrerin Samira Haddad. Werkzeug dieser Episode: [formula].
 
-<!-- Lesson v3 9步制架构：Schritt 1至8固定结构；Fehlvorstellung 夹在 Schritt 6 与 7 之间（Parser 自动跳过，不占步数）；支持内嵌 [Werkzeug: gini-allocator] 交互教具；Gating: check/szenario 未过 = Weiter 置灰；XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
+<!-- Lesson v3 9步制架构：Schritt 1至8固定结构；Fehlvorstellung 夹在 Schritt 6 与 7 之间（Parser 自动跳过，不占步数）；支持内嵌 [Werkzeug: formula] 交互教具；Gating: check/szenario 未过 = Weiter 置灰；XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
 ## Schritt 1 — entdecken: Alarm in Tycoon City: Prekaritaets-Protest der Nachtkuriere
 
@@ -67,7 +67,7 @@ PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→�
 
 Klausur-Satz: `Steigt der Altenquotient, muss bei gleichem Niveau entweder der Beitrag steigen oder die Leistung sinken.`
 
-## Schritt 3 — entdecken: Uhrwerk des Marktes: Kette von Ursache zu Wirkung
+## Schritt 3 — entdecken: Netz des Sozialstaats: Kette von Ursache zu Wirkung
 
 ENTDECKEN（1概念 + 1文字图解，中文在上、德语在下）：
 
@@ -112,11 +112,11 @@ Klausur-Satz: `Jede Reform verschiebt die Last zwischen Beitragszahlern, Rentner
 
 **Bezug zum Konzept**: `Die Rente altert mit der Gesellschaft, fuer die sie gebaut wurde.`
 
-## Schritt 4 — ausprobieren: Sandkasten-Einsatz [gini-allocator]: Rette die Stadt mit Zahlen
+## Schritt 4 — ausprobieren: Sandkasten-Einsatz [formula]: Rette die Stadt mit Zahlen
 
-[Werkzeug: gini-allocator]
+[Werkzeug: formula]
 
-TARGET: Justiert Steuer- und Transferregler so, dass der Gini-Indikator nach Umverteilung in den Korridor 0,28 bis 0,32 faellt, das unterste Quintil mindestens 8 Prozent des Kuchens haelt und die Armutsrisikoquote sichtbar sinkt.
+TARGET: Rechnet mit der Formel b·W·Z=R·N (b=18,6%): Stellt Beitrag, Niveau und Eintrittsalter so ein, dass die Umlagegleichung bei steigendem AQ=N/Z erfuellt bleibt und die Last fair auf Zahler, Rentner und Steuer verteilt ist.
 
 BEISPIEL（正确例题示范，含教具操作与解答，中文在上、德语在下）：
 
@@ -138,13 +138,13 @@ MUSTERLOESUNG：中文：少子缩工资基、长寿增人数与时长，水平�
 MUSTERLOESUNG (DE): Weniger Zahler bei mehr und laengeren Renten erzwingen hoehere Beitraege oder niedrigere Niveaus. Fair ist ein Mix aus Beitrag, Niveau und Alter plus Steuer: jede Schraube belastet eine andere Gruppe.
 Klausur-Satz: `Weniger Zahler bei mehr und laengeren Renten erzwingen hoehere Beitraege oder niedrigere Niveaus.`
 
-## Schritt 5 — ausprobieren: Duell der Wege: Weg A gegen Weg B
+## Schritt 5 — ausprobieren: Duell der Wege: Parametrisch gegen Systemisch
 
 VERGLEICH辨别实验（双向辨析：开源节流 vs 制度转轨）：
 
 VERGLEICH: Waehle erst das Verfahren — 【选程序】先看改革性质：(i) 开源节流（Beitrag/Niveau/Alter/Steuer 四旋钮内调参，不换制度）oder (ii) 制度转轨（Umlage→Kapitaldeckung：换融资逻辑，讨论转型成本）—— dann loesen.
 
-DUELL Weg A (freier Markt) gegen Weg B (Staat greift ein): Weg A setzt auf Markt und Eigenvorsorge: Kapitaldeckung, Riester und Aktienrente entkoppeln von Demografie, tragen aber Marktrisiko und Doppelbelastung. Weg B repariert die Umlage: Beitrag, Niveau und Alter werden nachjustiert plus Steuer - solidarisch, aber mit Verlierern je Schraube. Entscheide am Kriterium: Generationengerechtigkeit und Nachhaltigkeit, nicht Wunschdenken.
+DUELL Weg A (Parametrisch: Beitrag/Niveau/Alter/Steuer) gegen Weg B (Systemisch: Umlage→Kapitaldeckung): Weg A repariert die Umlage ueber Beitrag, Niveau, Alter plus Steuer (solidarisch, aber mit Verlierern je Schraube); Weg B setzt auf Kapitaldeckung, Riester und Aktienrente (entkoppelt von Demografie, traegt aber Marktrisiko und Doppelbelastung). Entscheide am Kriterium: Generationengerechtigkeit und Nachhaltigkeit, nicht Wunschdenken.
 
 对决 Weg A（自由市场）vs Weg B（国家干预）：Weg A信市场自备：资本覆盖、基金养老，脱钩人口但吃市场风险+一代人双缴费。Weg B信修补现收现付：三旋钮加税补，团结但每拧都有人疼。判据：代际公平和可持续，不是许愿。
 

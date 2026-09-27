@@ -22,7 +22,7 @@ version: Lesson-v3
 
 > EPISODE 01 — Akt V — Klausurwerkstatt der Stadtkanzlei — Auftrag von Buergermeisterin Lena Hartmann: Apfelpreis-Crash auf dem Nachtmarkt.
 
-HOOK (Stadtrats-Krise, lies zuerst): EPISODE 01 — Akt V — Klausurwerkstatt der Stadtkanzlei — Stadt Tycoon City ruft dich in den Krisenstab. Buergermeisterin Lena Hartmann stuermt mit einer Eilmeldung ins Buero: Apfelpreis-Crash auf dem Nachtmarkt — und morgen entscheidet der Stadtrat. Realer Fall: Der Berliner Mietendeckel wurde 2021 vom Bundesverfassungsgericht gekippt - die Wohnungsnot war echt, doch das Land hatte das falsche Werkzeug gewaehlt. Parallel tobte der Mindestlohn-Streit: Der Markt warnte vor Jobverlust, die Gewerkschaft versprach Schutz vor Armut trotz Arbeit. Diese Lektion ist dein Gesamt-Training: Derselbe Fall verlangt AFB I Beschreibung, AFB II Analyse und AFB III Urteil - mit klar getrennten Brillen. Erste Spur: TARGET: Hebt die Klausurformel aufs Brett — Bedingung: Dreischritt 30-40-30 eingehalten, drei Fachbegriffe korrekt gesetzt, Urteil mit Massstab und Abwaegung geschlossen. Oeffne die Ziele, schnapp dir die Begriffe und beweise, dass Tycoon City regierbar bleibt.
+HOOK (Stadtrats-Krise, lies zuerst): EPISODE 01 — Akt V — Klausurwerkstatt der Stadtkanzlei — Stadt Tycoon City ruft dich in den Krisenstab. Buergermeisterin Lena Hartmann stuermt mit einer Eilmeldung ins Buero: Apfelpreis-Crash auf dem Nachtmarkt — und morgen entscheidet der Stadtrat. Realer Fall: Der Berliner Mietendeckel wurde 2021 vom Bundesverfassungsgericht gekippt - die Wohnungsnot war echt, doch das Land hatte das falsche Werkzeug gewaehlt. Parallel tobte der Mindestlohn-Streit: Der Markt warnte vor Jobverlust, die Gewerkschaft versprach Schutz vor Armut trotz Arbeit. Diese Lektion ist dein Gesamt-Training: Derselbe Fall verlangt AFB I Beschreibung, AFB II Analyse und AFB III Urteil - mit klar getrennten Brillen. Erste Spur: TARGET: Hebt die Klausurformel aufs Brett — Bedingung: Alle Bausteine in die drei Felder These/Beleg/Urteil sortiert, Dreischritt 30-40-30 eingehalten, drei Fachbegriffe korrekt gesetzt, Urteil mit Massstab und Abwaegung geschlossen. Oeffne die Ziele, schnapp dir die Begriffe und beweise, dass Tycoon City regierbar bleibt.
 
 ZIELE (drei messbare Ziele dieser Lektion):
 
@@ -66,7 +66,7 @@ Die Begriffe greifen ineinander: Das **magische Viereck** definiert IF4 mit vier
 
 Klausur-Satz: `Als Fokussierungen sind in IF4 der Streit um die Staatsverschuldung und der Gegensatz von Freihandel und Protektionismus sowie in IF6 die Schichten-, Lagen- und Milieumodelle ausgewiesen.`
 
-## Schritt 3 — entdecken: Uhrwerk des Marktes: Kette von Ursache zu Wirkung
+## Schritt 3 — entdecken: Kompass der Klausur: Kette von Ursache zu Wirkung
 
 TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
@@ -105,7 +105,7 @@ BEISPIEL (geleitete Aufgabe mit Werkzeug):
 
 [Werkzeug: formula]
 
-TARGET: Hebt die Klausurformel aufs Brett — Bedingung: Dreischritt 30-40-30 eingehalten, drei Fachbegriffe korrekt gesetzt, Urteil mit Massstab und Abwaegung geschlossen.
+TARGET: Hebt die Klausurformel aufs Brett — Bedingung: Alle Bausteine in die drei Felder These/Beleg/Urteil sortiert, Dreischritt 30-40-30 eingehalten, drei Fachbegriffe korrekt gesetzt, Urteil mit Massstab und Abwaegung geschlossen.
 
 Ziehe im Tool Satzbausteine aus These und Beleg und Urteil in die richtige Reihenfolge und pruefe per Klick, ob Operator und Fachbegriff und Kriterium vollstaendig sind; verbessere die Reihenfolge, bis jeder Baustein am richtigen Platz liegt.
 
@@ -124,7 +124,7 @@ VERGLEICH (Wahl des Weges, A gegen B):
 
 VERGLEICH: Pruefe zuerst das Aufgabenziel und waehle dann den passenden Weg — Weg A oder Weg B — und loese erst danach die Aufgabe.
 
-DUELL Weg A (freier Markt) gegen Weg B (Staat greift ein): Weg A vertraut dem freien Markt: Preise signalisieren Knappheit, Wettbewerb diszipliniert Anbieter, der Staat bleibt Schiedsrichter. Weg B greift sozial ein: Hoechstpreis, Mindestlohn und Umverteilung schuetzen Existenzen, verzerren aber Signale und erzeugen Ausweichreaktionen. Entscheide am Kriterium: Effizienz spricht fuer A, Existenzschutz fuer B.
+DUELL Weg A (AFB II: theoriegeleitete Analyse) gegen Weg B (AFB III: kriteriengeleitete Abwaegung): Weg A leitet ohne Wertung her — Mechanismus Schritt fuer Schritt mit Modell und Materialbeleg. Weg B waegt mit Massstab ab — Pro und Contra von Effizienz und Legitimitaet bis zum eigenen Urteil. Entscheide am Aufgabenziel: Herleitung verlangt A, Stellungnahme verlangt B.
 
 Weg A: AFB II Kriterienanalyse als theoriegeleitete Kausalableitung. Leitfrage: Welcher Mechanismus erklaert den Fall Schritt fuer Schritt? Blick auf These, Kette und Beleg aus Material und Modell. Ergebnis ist eine saubere Analyse ohne vorschnelles Urteil: Ursachen werden mit Fachsprache hergeleitet.
 

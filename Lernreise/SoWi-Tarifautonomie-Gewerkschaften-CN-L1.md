@@ -67,7 +67,7 @@ PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→�
 
 Klausur-Satz: `Streik und Aussperrung sind nur als verhaeltnismaessige Kampfmittel um Tarifziele zulaessig.`
 
-## Schritt 3 — entdecken: Uhrwerk des Marktes: Kette von Ursache zu Wirkung
+## Schritt 3 — entdecken: Tisch der Tarifpartner: Kette von Ursache zu Wirkung
 
 ENTDECKEN（1概念 + 1文字图解，中文在上、德语在下）：
 
@@ -164,7 +164,7 @@ CHECK检索默写（自测 3 题，与答案配对）：
 - FRAGE: Welche vier Bedingungen machen einen Streik rechtmaessig? | ANTWORT: Gewerkschaft als Traeger, Tarifziel, erschoepfte Verhandlung/Schlichtung, Verhaeltnismaessigkeit.
 - FRAGE: Was ist die Aussperrung? | ANTWORT: Das spiegelbildliche Kampfmittel der Arbeitgeber: voruebergehender Ausschluss von der Arbeit.
 
-Klausur-Satz: `Ohne Tarifziel und ohne ultima ratio ist kein Streik rechtmaessig.`
+Klausur-Satz: `Der Warnstreik signalisiert kurz und verhaeltnismaessig nach Schlichtung, der Erzwingungsstreik eskaliert erst nach Urabstimmung mit vollem Schaden.`
 
 ## Fehlvorstellung
 

@@ -66,7 +66,7 @@ Die Begriffe greifen ineinander: **Identitaet** liefert das Ziel, **Entwicklungs
 
 Klausur-Satz: `Nach Hurrelmann verarbeiten Jugendliche innere und aeussere Realitaet produktiv, statt sich nur anzupassen.`
 
-## Schritt 3 — entdecken: Uhrwerk des Marktes: Kette von Ursache zu Wirkung
+## Schritt 3 — entdecken: Spiegel der Identitaet: Kette von Ursache zu Wirkung
 
 TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
@@ -118,13 +118,13 @@ MUSTERLOESUNG: Start mit steiler Kurve zeigt Star-Luecke; nach Ausgleich hebt si
 
 Klausur-Satz: `Soziale Netzwerke sind fuer die Identitaetsentwicklung ambivalent: Sie erweitern Ausdrucksmöglichkeiten, verstaerken aber zugleich den Vergleichsdruck.`
 
-## Schritt 5 — ausprobieren: Duell der Wege: Weg A gegen Weg B
+## Schritt 5 — ausprobieren: Duell der Wege: Ausgleich nach Hurrelmann gegen Vergleichsdruck durch Peers und Medien
 
 VERGLEICH (Wahl des Weges, A gegen B):
 
-VERGLEICH: Pruefe zuerst das Aufgabenziel und waehle dann den passenden Weg — Weg A oder Weg B — und loese erst danach die Aufgabe.
+VERGLEICH: Pruefe zuerst das Aufgabenziel und waehle dann den passenden Weg — Weg A (Ausgleich nach Hurrelmann) oder Weg B (Vergleichsdruck durch Peers und Mediatisierung) — und loese erst danach die Aufgabe.
 
-DUELL Weg A (freier Markt) gegen Weg B (Staat greift ein): Weg A setzt auf den freien Selbstentwurf: Jugendliche waehlen Identitaeten wie im Markt, Vielfalt und Wechsel sind Freiheit. Weg B setzt auf schuetzende Leitplanken: Familie, Schule und Jugendschutz geben Halt und Grenzen. Entscheide am Kriterium: Autonomie spricht fuer A, stabile Zugehoerigkeit und Schutz vor Ueberforderung fuer B.
+DUELL Weg A (Ausgleich nach Hurrelmann) gegen Weg B (Vergleichsdruck durch Peers und Medien): Weg A erklaert aktive Balance von Wunsch und Anforderung mit Autonomie in Bindung; Weg B erklaert Anerkennung, Konformitaet und Vergleich mit Druck und Entlastung. Entscheide am Kriterium: Autonomie spricht fuer A, stabile Zugehoerigkeit und Schutz vor Ueberforderung fuer B.
 
 Weg A: Hurrelmanns produktive Realitaetsverarbeitung. Leitfrage: Wie gleicht die Person innere Wuensche mit aeusseren Anforderungen aus? Blick auf Entwicklungsaufgaben, Ressourcen und aktive Gestaltung. Urteil an Autonomie in Bindung: Gelingt Ausgleich, staerkt er Selbst und Teilhabe.
 

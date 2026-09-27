@@ -54,7 +54,7 @@ PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→�
 
 Klausur-Satz: `Dahrendorfs Homo sociologicus handelt nach Rollenerwartungen; Abweichung löst soziale Kontrolle in Form positiver oder negativer Sanktionen aus.`
 
-## Schritt 3 — entdecken: Uhrwerk des Marktes: Kette von Ursache zu Wirkung
+## Schritt 3 — entdecken: Rollen auf der Buehne: Kette von Ursache zu Wirkung
 
 ENTDECKEN（1概念 + 1文字图解）：
 
@@ -128,13 +128,13 @@ MUSTERLÖSUNG: Zunächst liegt ein Inter-Rollenkonflikt vor: Die Erwartungen der
 
 Klausur-Satz: `Ein Inter-Rollenkonflikt entsteht, wenn die Erwartungen zweier Positionen zeitgleich erfüllt werden sollen.`
 
-## Schritt 5 — ausprobieren: Duell der Wege: Weg A gegen Weg B
+## Schritt 5 — ausprobieren: Duell der Wege: Sozialisations-Verfahren gegen Rollen-Verfahren
 
 VERGLEICH辨别实验（双向辨析：社会化眼 vs. 角色眼）：
 
 VERGLEICH: Wähle erst das Verfahren —【选程序】先判断材料问的是 (i) Sozialisations-Verfahren（规范/价值/角色是如何被学到的：家庭、学校、同伴、学习机制）还是 (ii) Rollen-Verfahren（角色期待如何运作、如何冲突、如何被制裁与调节）—— dann lösen.
 
-DUELL Weg A (freier Markt) gegen Weg B (Staat greift ein): Weg A feiert den freien Selbstentwurf: Das Individuum waehlt Rollen wie im Markt und bricht enge Normen auf. Weg B haelt schuetzende Normen hoch: Familie, Schule und Recht geben Halt gegen Beliebigkeit. Entscheide am Kriterium: Autonomie und Wandel sprechen fuer A, Sicherheit und Verlaesslichkeit fuer B.
+DUELL Weg A (Sozialisations-Verfahren) gegen Weg B (Rollen-Verfahren): Weg A erklaert Erwerb ueber Verstaerkung und Phase (primaer/sekundaer); Weg B ordnet Erwartungen, Konflikttyp (intra/inter/Person-Rolle) und Ausweg ueber Distanz. Entscheide am Kriterium: Sicherheit und Verlaesslichkeit sprechen fuer Normschutz, Autonomie und Wandel fuer Aushandlung.
 
 对决 Weg A（自由市场）vs Weg B（国家干预）：Weg A信自由自塑：角色自选，旧规范该碎就碎。Weg B信规范护栏：家校法给底线，防随波逐流。判据：自主变化站A，安全可靠站B。
 

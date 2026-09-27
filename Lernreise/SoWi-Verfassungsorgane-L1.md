@@ -54,7 +54,7 @@ PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→�
 
 Klausur-Satz: `Art. 38 GG garantiert das freie Mandat: Abgeordnete sind an Aufträge nicht gebunden, sondern nur ihrem Gewissen unterworfen.`
 
-## Schritt 3 — entdecken: Uhrwerk des Marktes: Kette von Ursache zu Wirkung
+## Schritt 3 — entdecken: Raederwerk der Organe: Kette von Ursache zu Wirkung
 
 ENTDECKEN（1概念 + 1文字图解）：
 
@@ -128,9 +128,9 @@ VERGLEICH辨别实验（双向辨析：程序眼 vs. 委任眼）：
 
 VERGLEICH: Wähle erst das Verfahren —【选程序】先判断材料问的是 (i) Verfahrens-Verfahren（一项法律或决定走哪条程序：立法路径、Zustimmung/Einspruch、Politikzyklus）还是 (ii) Mandats-Verfahren（议员到底听谁的：freies Mandat vs. Fraktionsdisziplin、Gewissensentscheidung）—— dann lösen.
 
-DUELL Weg A (freier Markt) gegen Weg B (Staat greift ein): Weg A setzt auf handlungsfaehige Mehrheit: Parlament und Regierung entscheiden zuegig, Verantwortung ist klar. Weg B setzt auf geteilte Macht: Bundesrat, Praesident und Gericht bremsen, schuetzen Minderheiten und Laender. Entscheide am Kriterium: Handlungsfaehigkeit spricht fuer A, Machtbegrenzung und Rechtsschutz sprechen fuer B.
+DUELL Weg A (parlamentarische Fuehrung) gegen Weg B (foederative Kontrolle): Weg A setzt auf handlungsfaehige Mehrheit: Parlament und Regierung entscheiden zuegig, Verantwortung ist klar. Weg B setzt auf geteilte Macht: Bundesrat, Praesident und Gericht bremsen, schuetzen Minderheiten und Laender. Entscheide am Kriterium: Handlungsfaehigkeit spricht fuer A, Machtbegrenzung und Rechtsschutz sprechen fuer B.
 
-对决 Weg A（自由市场）vs Weg B（国家干预）：Weg A信多数能干事：议会政府快决，责任清楚。Weg B信分权保平安：参议院总统法院踩刹车，保少数保州权。判据：效率站A，限权护权站B。
+对决 Weg A（议会主导）vs Weg B（联邦制衡）：Weg A信多数能干事：议会政府快决，责任清楚。Weg B信分权保平安：参议院总统法院踩刹车，保少数保州权。判据：效率站A，限权护权站B。
 
 AUFGABE A (AFB II, 8 BE)：Material 2 (Sachtext) schildert, dass ein Gesetz, das die Länderfinanzen betrifft, im Bundestag beschlossen wurde und nun im Bundesrat behandelt wird. Erläutern Sie, welcher Gesetzestyp vorliegt und was bei einer Ablehnung geschieht.
 

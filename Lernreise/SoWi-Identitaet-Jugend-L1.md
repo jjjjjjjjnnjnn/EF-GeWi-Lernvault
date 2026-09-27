@@ -54,7 +54,7 @@ PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→�
 
 Klausur-Satz: `Während Erikson die Ich-Identität als lebenslangen Prozess deutet, betont Krappmann, dass diese Balance auch scheitern kann.`
 
-## Schritt 3 — entdecken: Uhrwerk des Marktes: Kette von Ursache zu Wirkung
+## Schritt 3 — entdecken: Spiegel der Identitaet: Kette von Ursache zu Wirkung
 
 ENTDECKEN（1概念 + 1文字图解）：
 
@@ -121,13 +121,13 @@ MUSTERLÖSUNG: Zunächst lässt sich das Verhalten mit Goffman deuten: Auf der V
 
 Klausur-Satz: `Soziale Netzwerke sind für die Identitätsentwicklung ambivalent: Sie erweitern Ausdrucksmöglichkeiten, verstärken aber zugleich den Vergleichsdruck.`
 
-## Schritt 5 — ausprobieren: Duell der Wege: Weg A gegen Weg B
+## Schritt 5 — ausprobieren: Duell der Wege: Identitäts-Verfahren gegen Struktur-Verfahren
 
 VERGLEICH辨别实验（双向辨析：交往眼 vs. 结构眼）：
 
 VERGLEICH: Wähle erst das Verfahren —【选程序】先判断材料问的是 (i) Identitäts-Verfahren（身份如何在我与他人的交往中形成：Mead、Goffman、Krappmann）还是 (ii) Struktur-Verfahren（社会结构与媒体如何塑造身份：Riesman、Parsons、Wertewandel）—— dann lösen.
 
-DUELL Weg A (freier Markt) gegen Weg B (Staat greift ein): Weg A setzt auf den freien Selbstentwurf: Jugendliche waehlen Identitaeten wie im Markt, Vielfalt und Wechsel sind Freiheit. Weg B setzt auf schuetzende Leitplanken: Familie, Schule und Jugendschutz geben Halt und Grenzen. Entscheide am Kriterium: Autonomie spricht fuer A, stabile Zugehoerigkeit und Schutz vor Ueberforderung fuer B.
+DUELL Weg A (Identitäts-Verfahren) gegen Weg B (Struktur-Verfahren): Weg A erklaert Selbstwerdung in Kommunikation nach Mead und Goffman mit Balance oder Scheitern; Weg B erklaert Praegung durch Wertewandel, Rollenpluralismus und Aussenleitung. Entscheide am Kriterium: Autonomie in Bindung; Ausdruck spricht fuer A, Schutz vor Ueberforderung fuer B.
 
 对决 Weg A（自由市场）vs Weg B（国家干预）：Weg A信自由自选：认同像市场，多试多换是自由。Weg B信护栏：家庭学校青少年保护给底线和边界。判据：自主站A，稳定归属和防过载站B。
 

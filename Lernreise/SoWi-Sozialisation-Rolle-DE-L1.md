@@ -66,7 +66,7 @@ Die Begriffe greifen ineinander: **Primaer** und **sekundaer** liefern die Phase
 
 Klausur-Satz: `Dahrendorfs Homo sociologicus handelt nach Rollenerwartungen; Abweichung loest soziale Kontrolle in Form positiver oder negativer Sanktionen aus.`
 
-## Schritt 3 — entdecken: Uhrwerk des Marktes: Kette von Ursache zu Wirkung
+## Schritt 3 — entdecken: Rollen auf der Buehne: Kette von Ursache zu Wirkung
 
 TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
@@ -118,13 +118,13 @@ MUSTERLOESUNG: Bei stark ungleicher Verteilung haengt die Kurve tief — Zeitman
 
 Klausur-Satz: `Ein Inter-Rollenkonflikt entsteht, wenn die Erwartungen zweier Positionen zeitgleich erfuellt werden sollen.`
 
-## Schritt 5 — ausprobieren: Duell der Wege: Weg A gegen Weg B
+## Schritt 5 — ausprobieren: Duell der Wege: Strukturfunktionalismus nach Parsons gegen Interaktionismus nach Mead
 
 VERGLEICH (Wahl des Weges, A gegen B):
 
-VERGLEICH: Pruefe zuerst das Aufgabenziel und waehle dann den passenden Weg — Weg A oder Weg B — und loese erst danach die Aufgabe.
+VERGLEICH: Pruefe zuerst das Aufgabenziel und waehle dann den passenden Weg — Weg A (Strukturfunktionalismus nach Parsons) oder Weg B (Interaktionismus nach Mead) — und loese erst danach die Aufgabe.
 
-DUELL Weg A (freier Markt) gegen Weg B (Staat greift ein): Weg A feiert den freien Selbstentwurf: Das Individuum waehlt Rollen wie im Markt und bricht enge Normen auf. Weg B haelt schuetzende Normen hoch: Familie, Schule und Recht geben Halt gegen Beliebigkeit. Entscheide am Kriterium: Autonomie und Wandel sprechen fuer A, Sicherheit und Verlaesslichkeit fuer B.
+DUELL Weg A (Parsons) gegen Weg B (Mead): Weg A erklaert Ordnung ueber Internalisierung, Erwartungsbuendel und Sanktion mit Berechenbarkeit; Weg B erklaert Aushandlung ueber Spiegel-Selbst, Uebernahme und Distanz mit Freiheit in Bindung. Entscheide am Kriterium: Sicherheit und Verlaesslichkeit sprechen fuer A, Autonomie und Wandel fuer B.
 
 Weg A: Strukturfunktionalismus und Parsons. Leitfrage: Wie sichern Normen und Erwartungen Ordnung? Blick auf Internalisierung, Erwartungsbuendel und Sanktion. Urteil an Berechenbarkeit: Regeln entlasten, weil alle wissen, was gilt, doch sie engen Spielraum ein.
 

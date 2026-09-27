@@ -22,7 +22,7 @@ version: Lesson-v3
 
 > EPISODE 42｜Akt I-II — Apfelmarkt und Mietendeckel｜召集人 Radiomoderatorin Kim Neuhaus：Radio-Duell der Spitzenkandidaten。
 
-HOOK 市长危机（先读剧情，再进 ZIELE）：【本集战役 EP42｜Akt I-II — Apfelmarkt und Mietendeckel｜虚拟城邦 Tycoon City 告急】市长办公室深夜灯火通明，Radiomoderatorin Kim Neuhaus 冲进来报告：Radio-Duell der Spitzenkandidaten，而明天市议会就要投票。你的身份不变：市长直属经济改革规划委员。真实盲区切入：疫情年GDP掉了、护工累倒、家长辅导作业到半夜——账面只记了掉的部分，没记扛的部分。家务照护志愿全是“隐形GDP”，污染和拥堵也没扣账。BIP是温度计不是体检表：发烧看得出，亚健康看不出。通关线索：TARGET: Stellt im Sandkasten Angebot und Nachfrage so ein, dass der Gleichgewichtspreis zwischen 8 und 12 Euro liegt, die gehandelte Menge mindestens 100 Einheiten erreicht und ein Probe-Hoechstpreis von 6 Euro als bindend mit Warteschlange entlarvt wird. 先读 ZIELE，再啃术语，把传导机制画成你的作战地图。DE-Briefing: Episode 42 — Radiomoderatorin Kim Neuhaus meldet Radio-Duell der Spitzenkandidaten; der Stadtrat entscheidet morgen. Rette Tycoon City mit Analyse, Sandkasten und Klausur-Antwort zum Thema Wirtschaftskreislauf und BIP-Kritik.
+HOOK 市长危机（先读剧情，再进 ZIELE）：【本集战役 EP42｜Akt I-II — Apfelmarkt und Mietendeckel｜虚拟城邦 Tycoon City 告急】市长办公室深夜灯火通明，Radiomoderatorin Kim Neuhaus 冲进来报告：Radio-Duell der Spitzenkandidaten，而明天市议会就要投票。你的身份不变：市长直属经济改革规划委员。真实盲区切入：疫情年GDP掉了、护工累倒、家长辅导作业到半夜——账面只记了掉的部分，没记扛的部分。家务照护志愿全是“隐形GDP”，污染和拥堵也没扣账。BIP是温度计不是体检表：发烧看得出，亚健康看不出。通关线索：TARGET: Baut im Kreislauf-Modul fuenf Sektoren mit Geldstrom und Gueterstrom; erhoeht die Staatsausgaben schrittweise, aktiviert den Umweltkosten-Regler und belegt mit Verwendung C+I+G+(Ex-Im), warum Umsatzplus kein Wohlfahrtsplus ist. 先读 ZIELE，再啃术语，把传导机制画成你的作战地图。DE-Briefing: Episode 42 — Radiomoderatorin Kim Neuhaus meldet Radio-Duell der Spitzenkandidaten; der Stadtrat entscheidet morgen. Rette Tycoon City mit Analyse, Sandkasten und Klausur-Antwort zum Thema Wirtschaftskreislauf und BIP-Kritik.
 
 ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
@@ -101,7 +101,7 @@ BEISPIEL（正确例题示范，含教具操作与解答）：
 
 [Werkzeug: markt-sim]
 
-TARGET: Stellt im Sandkasten Angebot und Nachfrage so ein, dass der Gleichgewichtspreis zwischen 8 und 12 Euro liegt, die gehandelte Menge mindestens 100 Einheiten erreicht und ein Probe-Hoechstpreis von 6 Euro als bindend mit Warteschlange entlarvt wird.
+TARGET: Baut im Kreislauf-Modul fuenf Sektoren mit Geldstrom und Gueterstrom; erhoeht die Staatsausgaben schrittweise, aktiviert den Umweltkosten-Regler und belegt mit Verwendung C+I+G+(Ex-Im), warum Umsatzplus kein Wohlfahrtsplus ist.
 
 AUFGABE (analysieren, AFB II)：Analysieren Sie den erweiterten Wirtschaftskreislauf mit seinen fuenf Sektoren und erklaeren Sie in einem Satz die drei Berechnungsarten des BIP.
 

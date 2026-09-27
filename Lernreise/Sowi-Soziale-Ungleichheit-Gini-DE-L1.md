@@ -32,7 +32,7 @@ ZIELE (drei messbare Ziele dieser Lektion):
 
 ### Hook / Phaenomen
 
-Stell dir vor, zwei Regionen melden denselben Wert von null Komma drei vier, doch in der einen Region lebt fast jedes Kind in gesicherter Lage, waehrend in der anderen Region viele Familien trotz Arbeit kaum Miete und Lohn zusammenbringen. Wie kann eine einzige Zahl zwei voellig verschiedene Wirklichkeiten verdecken, und warum klingt die Warnlinie von null Komma vier wie ein Naturgesetz, obwohl sie nur eine Konvention der Berichterstattung ist. In dieser Lektion betrachtest du zuerst die Kurve als Bogen der Verteilung, dann liest du am Werkzeug Form und Wert parallel, und erst danach deutest du die Zahl am Kriterium der Chancengerechtigkeit.
+Stell dir vor, zwei Regionen melden denselben Wert von null Komma drei vier, doch die eine lebt gesichert, die andere kaempft trotz Arbeit um Miete und Lohn. Merke den Weg: erst Kurve als Bogen lesen, dann Form und Wert parallel deuten, erst danach am Kriterium urteilen.
 
 Klausur-Satz: `Die Lorenzkurve veranschaulicht die Einkommensverteilung, und der Gini-Koeffizient fasst ihren Abstand zur Gleichverteilungsgeraden zu einer Zahl zwischen 0 und 1 zusammen.`
 
@@ -66,7 +66,7 @@ Die Begriffe greifen ineinander: **Quintile** liefern das Material, **Lorenzkurv
 
 Klausur-Satz: `Der Gini-Koeffizient ergibt sich als Verhaeltnis der Flaeche zwischen Diagonale und Lorenzkurve zur Gesamtflaeche unter der Diagonalen.`
 
-## Schritt 3 — entdecken: Uhrwerk des Marktes: Kette von Ursache zu Wirkung
+## Schritt 3 — entdecken: Verteilungswaage der Einkommen: Kette von Ursache zu Wirkung
 
 TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 

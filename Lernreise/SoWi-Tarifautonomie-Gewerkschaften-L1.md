@@ -56,7 +56,7 @@ PRETRAINING (Kernbegriffe):
 
 Klausur-Satz: `Friedenspflicht und Schlichtung zivilisieren den Konflikt, bevor Streik oder Aussperrung greifen.`
 
-## Schritt 3 — entdecken: Uhrwerk des Marktes: Kette von Ursache zu Wirkung
+## Schritt 3 — entdecken: Tisch der Tarifpartner: Kette von Ursache zu Wirkung
 
 ENTDECKEN (ein Konzept plus Diagramm):
 

@@ -120,11 +120,11 @@ MUSTERLOESUNG: Der Influencer-Korb folgt Signalen statt Abwaegung: hohe Nachfrag
 
 Klausur-Satz: `Der Influencer-Einfluss belegt Fremdbestimmung: Kaufentscheidungen folgen sozialen Signalen statt eigenem Nutzenkalkül.`
 
-## Schritt 5 — ausprobieren: Duell der Wege: Weg A gegen Weg B
+## Schritt 5 — ausprobieren: Duell der Wege: souveraner Konsument gegen oekologische Konsumkritik
 
 VERGLEICH: Zwei Wege deuten denselben Kauf unterschiedlich. Weg A sieht den souveranen Konsumenten mit Nutzenstreben und Wettbewerb. Weg B uebt oekologische Konsumkritik mit Blick auf Nebenkosten, Fussabdruck und Zukunft. Pruefe zuerst die Aufgabe, waehle dann den passenden Weg.
 
-DUELL Weg A (freier Markt) gegen Weg B (Staat greift ein): Weg A vertraut dem freien Konsummarkt: Preise und Siegel lenken, der Muendige entscheidet, Wettbewerb senkt Kosten. Weg B greift lenkend ein: Verbote, Steuern und Klimageld schuetzen Klima und Arme vor der Marktlogik. Entscheide am Kriterium: Effizienz und Freiheit sprechen fuer A, Nachhaltigkeit und Schutz sprechen fuer B.
+DUELL Weg A (souveraner Konsument) gegen Weg B (oekologische Konsumkritik): Weg A vertraut Preisen, Siegeln und muendiger Wahl mit Wettbewerb (Staerke: Effizienz und Freiheit); Weg B rechnet Nebenkosten, Fussabdruck und Generationengerechtigkeit ein (Staerke: Nachhaltigkeit und Schutz). Entscheide am Kriterium: Effizienz und Freiheit sprechen fuer A, Nachhaltigkeit und Schutz sprechen fuer B.
 
 Weg A: Souveraener Konsument. Nutzenstreben plus Wettbewerb plus Information fuehren zu bester Wahl und effizienter Zuteilung. Staerke ist Freiheit und Vielfalt, Schwaeche ist Blindheit gegenueber Werbung, Impuls und ungleichen Budgets.
 

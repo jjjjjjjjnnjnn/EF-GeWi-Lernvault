@@ -54,7 +54,7 @@ PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→�
 
 Klausur-Satz: `Chancengleichheit bedeutet gleiche Startbedingungen, nicht gleiche Ergebnisse — gemessen wird sie am Bildungstrichter und an der Armutsgefaehrdungsquote.`
 
-## Schritt 3 — entdecken: Uhrwerk des Marktes: Kette von Ursache zu Wirkung
+## Schritt 3 — entdecken: Schere der Verteilung: Kette von Ursache zu Wirkung
 
 ENTDECKEN（1概念 + 1文字图解）：
 
@@ -120,13 +120,13 @@ MUSTERLÖSUNG: Die Grafik zeigt eine klare Schere: Akademikerkinder erreichen fa
 
 Klausur-Satz: `Wenn der Bildungserfolg staerker von der Herkunft als von der Leistung abhaengt, widerspricht dies dem meritokratischen Prinzip und untergraebt das Vertrauen in die Demokratie.`
 
-## Schritt 5 — ausprobieren: Duell der Wege: Weg A gegen Weg B
+## Schritt 5 — ausprobieren: Duell der Wege: funktional gegen konflikttheoretisch
 
 VERGLEICH辨别实验（双向辨析：功能派之眼 vs. 冲突派之眼）：
 
 VERGLEICH: Wähle erst das Verfahren — 【选概念】先判断材料把不平等解释为 (i) funktional（高位高薪=激励，合理，Davis-Moore）还是 (ii) konflikttheoretisch（不平等=权力固化，需矫正，Marx/Bourdieu）—— dann analysieren.
 
-DUELL Weg A (freier Markt) gegen Weg B (Staat greift ein): Weg A setzt auf freie Leistung: Offene Maerkte, Wettbewerb und Eigenverantwortung belohnen Einsatz. Weg B setzt auf Ausgleich: Umverteilung, Foerderung und Quoten oeffnen Starts. Entscheide am Kriterium: Effizienz und Eigenverantwortung sprechen fuer A, Chancengerechtigkeit und Teilhabe fuer B.
+DUELL Weg A (funktional) gegen Weg B (konflikttheoretisch): Weg A deutet Ungleichheit als Leistungsanreiz mit Anreizlogik; Weg B deutet sie als vererbte Benachteiligung mit Korrekturbedarf ueber Umverteilung. Entscheide am Kriterium: Effizienz und Eigenverantwortung sprechen fuer A, Chancengerechtigkeit und Teilhabe fuer B.
 
 对决 Weg A（自由市场）vs Weg B（国家干预）：Weg A信自由拼：开放市场奖勤罚懒。Weg B信补偿：再分配资助配额补起点。判据：效率责任站A，机会正义站B。
 

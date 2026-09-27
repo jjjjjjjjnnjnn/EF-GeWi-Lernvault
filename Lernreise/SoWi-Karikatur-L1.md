@@ -54,7 +54,7 @@ PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→�
 
 Klausur-Satz: `Die Zuspitzung ist kein Mangel, sondern Methode: Sie macht Strukturen sichtbar, die Statistiken nur abstrakt zeigen.`
 
-## Schritt 3 — entdecken: Uhrwerk des Marktes: Kette von Ursache zu Wirkung
+## Schritt 3 — entdecken: Blick durch die Lupe: Kette von Ursache zu Wirkung
 
 ENTDECKEN（1概念 + 1文字图解）：
 
@@ -117,13 +117,13 @@ MUSTERLÖSUNG: (a) Die Karikatur zeigt in der Mitte eine grosse Waage. Links kle
 
 Klausur-Satz: `Die Waage steht fuer die Verteilungsfrage, Leiter gegen Aufzug fuer ungleiche Startchancen trotz gleichen Versprechens.`
 
-## Schritt 5 — ausprobieren: Duell der Wege: Weg A gegen Weg B
+## Schritt 5 — ausprobieren: Duell der Wege: Verteilungskonflikt gegen Zielkonflikt
 
 VERGLEICH辨别实验（双向辨析：分配冲突之眼 vs. 目标冲突之眼）：
 
 VERGLEICH: Wähle erst das Verfahren — 【选程序】先判断漫画画的是 (i) Verteilungskonflikt（谁多谁少、起点是否公平：Waage/Leiter/Geldsaecke）还是 (ii) Zielkonflikt（两个好目标打架：Baum vs. Saege/Schornstein）—— dann analysieren.
 
-DUELL Weg A (freier Markt) gegen Weg B (Staat greift ein): Weg A liest die Karikatur als freien Markt der Meinungen: Der Zeichner duerfte zuspitzen, die Deutung bleibt offen, Pluralitaet siegt. Weg B liest sie als Schutzauftrag: Menschenwuerde und Jugendschutz begrenzen die Satire, Gerichte ziehen Linien. Entscheide am Kriterium: Meinungsfreiheit spricht fuer A, Wuerdeschutz fuer B - dokumentiert an Art. 5 Abs. 2.
+DUELL Weg A (Verteilungskonflikt) gegen Weg B (Zielkonflikt): Weg A deutet Waage, Leiter und Geldsaecke als Verteilungsfrage mit Meritokratiekritik; Weg B deutet Baum, Saege und Schornstein als Prioritaetenkonflikt mit Externalitaet und Marktversagen. Entscheide am Kriterium: Gerechtigkeit spricht fuer A-Deutung, Nachhaltigkeit fuer B-Deutung.
 
 对决 Weg A（自由市场）vs Weg B（国家干预）：Weg A把漫画当言论自由市场：允许夸张，解读开放。Weg B把漫画当保护任务：尊严和青少年保护给讽刺划线，法院看第5条第2款。判据：言论自由站A，尊严保护站B。
 

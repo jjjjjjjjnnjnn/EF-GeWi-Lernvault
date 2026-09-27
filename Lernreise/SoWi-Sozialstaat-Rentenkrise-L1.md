@@ -13,9 +13,9 @@ version: Lesson-v3
 
 # Lernreise: Sozialstaat und Rentenkrise (L1, Ziel Klausur)
 
-> Kampagne *Virtuelle Stadt-Tycoon — Von der Apfelmarkt-Fehde zum modernen Sozialstaat*: Akt III — Gini-Waage und Steuerreform — Episode 32, Cast: Abiturcoach Dr. Miriam Scholz. Werkzeug dieser Episode: [gini-allocator].
+> Kampagne *Virtuelle Stadt-Tycoon — Von der Apfelmarkt-Fehde zum modernen Sozialstaat*: Akt III — Gini-Waage und Steuerreform — Episode 32, Cast: Abiturcoach Dr. Miriam Scholz. Werkzeug dieser Episode: [formula].
 
-<!-- Lesson v3 architecture: Schritte 1-8 fixed; Fehlvorstellung between Schritt 6 and 7 (parser skipped); embedded [Werkzeug: gini-allocator]; gating: check/szenario failed = Weiter greyed; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
+<!-- Lesson v3 architecture: Schritte 1-8 fixed; Fehlvorstellung between Schritt 6 and 7 (parser skipped); embedded [Werkzeug: formula]; gating: check/szenario failed = Weiter greyed; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
 ## Schritt 1 — entdecken: Alarm in Tycoon City: Abitur-Countdown-Panik im Pruefungssaal
 
@@ -56,7 +56,7 @@ PRETRAINING (Kernbegriffe):
 
 Klausur-Satz: `Im Umlageverfahren uebersetzt Demografie direkt in Beitrags- oder Leistungsdruck.`
 
-## Schritt 3 — entdecken: Uhrwerk des Marktes: Kette von Ursache zu Wirkung
+## Schritt 3 — entdecken: Netz des Sozialstaats: Kette von Ursache zu Wirkung
 
 ENTDECKEN (ein Konzept plus Diagramm):
 
@@ -85,13 +85,13 @@ Klausur-Satz: `Jede Rentenreform verschiebt dieselbe Last zwischen Beitragszahle
 
 **Bezug zum Konzept**: `Steigende Lebenserwartung verlaengert die Rentenphase bei gleicher Umlagelogik.`
 
-## Schritt 4 — ausprobieren: Sandkasten-Einsatz [gini-allocator]: Rette die Stadt mit Zahlen
+## Schritt 4 — ausprobieren: Sandkasten-Einsatz [formula]: Rette die Stadt mit Zahlen
 
 BEISPIEL (vollstaendige Musterloesung):
 
-[Werkzeug: gini-allocator]
+[Werkzeug: formula]
 
-TARGET: Justiert Steuer- und Transferregler so, dass der Gini-Indikator nach Umverteilung in den Korridor 0,28 bis 0,32 faellt, das unterste Quintil mindestens 8 Prozent des Kuchens haelt und die Armutsrisikoquote sichtbar sinkt.
+TARGET: Rechnet mit der Formel b·W·Z=R·N (b=18,6%): Stellt Beitrag, Niveau und Eintrittsalter so ein, dass die Umlagegleichung bei steigendem AQ=N/Z erfuellt bleibt und die Last fair auf Zahler, Rentner und Steuer verteilt ist.
 
 AUFGABE (analysieren, AFB II): Analysieren Sie, warum ein steigender Altenquotient im Umlageverfahren zu Finanzierungsproblemen fuehrt.
 
@@ -104,13 +104,13 @@ MUSTERLOESUNG: Im Umlageverfahren finanzieren die laufenden Beitraege die laufen
 
 Klausur-Satz: `Der Altenquotient uebersetzt die Alterung in einen messbaren Finanzierungsdruck im Umlageverfahren.`
 
-## Schritt 5 — ausprobieren: Duell der Wege: Weg A gegen Weg B
+## Schritt 5 — ausprobieren: Duell der Wege: Prinzipien-Verfahren gegen Finanzierungs-Verfahren
 
 VERGLEICH (erst Verfahren waehlen, dann loesen):
 
 VERGLEICH: Waehle erst das Verfahren — (i) Prinzipien-Verfahren (Versicherung, Versorgung, Fuersorge zuordnen) oder (ii) Finanzierungs-Verfahren (Umlagegleichung mit Altenquotient) — dann loesen.
 
-DUELL Weg A (freier Markt) gegen Weg B (Staat greift ein): Weg A setzt auf Markt und Eigenvorsorge: Kapitaldeckung, Riester und Aktienrente entkoppeln von Demografie, tragen aber Marktrisiko und Doppelbelastung. Weg B repariert die Umlage: Beitrag, Niveau und Alter werden nachjustiert plus Steuer - solidarisch, aber mit Verlierern je Schraube. Entscheide am Kriterium: Generationengerechtigkeit und Nachhaltigkeit, nicht Wunschdenken.
+DUELL Weg A (Prinzipien-Verfahren) gegen Weg B (Finanzierungs-Verfahren): Weg A ordnet Saeulen nach Versicherung, Versorgung und Fuersorge und klaert die normative Logik; Weg B rechnet mit b·W·Z=R·N (b=18,6%) und prueft Beitrag, Niveau, Alter plus Steuer auf Tragfaehigkeit. Entscheide am Kriterium: Generationengerechtigkeit und Nachhaltigkeit, nicht Wunschdenken.
 
 对决 Weg A（自由市场）vs Weg B（国家干预）：Weg A信市场自备：资本覆盖、基金养老，脱钩人口但吃市场风险+一代人双缴费。Weg B信修补现收现付：三旋钮加税补，团结但每拧都有人疼。判据：代际公平和可持续，不是许愿。
 

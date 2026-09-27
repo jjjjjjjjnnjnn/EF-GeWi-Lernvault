@@ -22,7 +22,7 @@ version: Lesson-v3
 
 > EPISODE 02｜Akt V — Klausurwerkstatt der Stadtkanzlei｜召集人 Kassenwart Omar Berger：faule Riesenladung Apfelmuell-Cousin。
 
-HOOK 市长危机（先读剧情，再进 ZIELE）：【本集战役 EP02｜Akt V — Klausurwerkstatt der Stadtkanzlei｜虚拟城邦 Tycoon City 告急】市长办公室深夜灯火通明，Kassenwart Omar Berger 冲进来报告：faule Riesenladung Apfelmuell-Cousin，而明天市议会就要投票。你的身份不变：市长直属经济改革规划委员。真实判例切入：2021年柏林租金上限（Mietendeckel）被联邦宪法法院判违宪——租金危机真实存在，但州政府用错了工具。同一年，最低工资上调辩论烧遍全国：市场说会丢岗位，工会说能挡贫困打工。这一课就是你的总复习沙盘：同一套事实，AFB I先描述、AFB II再分析、AFB III最后权衡，两副眼镜绝不能混。通关线索：TARGET: Hebt die Klausurformel aufs Brett — Bedingung: Dreischritt 30-40-30 eingehalten, drei Fachbegriffe korrekt gesetzt, Urteil mit Massstab und Abwaegung geschlossen. 先读 ZIELE，再啃术语，把传导机制画成你的作战地图。DE-Briefing: Episode 02 — Kassenwart Omar Berger meldet faule Riesenladung Apfelmuell-Cousin; der Stadtrat entscheidet morgen. Rette Tycoon City mit Analyse, Sandkasten und Klausur-Antwort zum Thema Abitur-Fokus IF4 und IF6.
+HOOK 市长危机（先读剧情，再进 ZIELE）：【本集战役 EP02｜Akt V — Klausurwerkstatt der Stadtkanzlei｜虚拟城邦 Tycoon City 告急】市长办公室深夜灯火通明，Kassenwart Omar Berger 冲进来报告：faule Riesenladung Apfelmuell-Cousin，而明天市议会就要投票。你的身份不变：市长直属经济改革规划委员。真实判例切入：2021年柏林租金上限（Mietendeckel）被联邦宪法法院判违宪——租金危机真实存在，但州政府用错了工具。同一年，最低工资上调辩论烧遍全国：市场说会丢岗位，工会说能挡贫困打工。这一课就是你的总复习沙盘：同一套事实，AFB I先描述、AFB II再分析、AFB III最后权衡，两副眼镜绝不能混。通关线索：TARGET: Hebt die Klausurformel aufs Brett — Bedingung: Alle Bausteine in die drei Felder These/Beleg/Urteil sortiert, Dreischritt 30-40-30 eingehalten, drei Fachbegriffe korrekt gesetzt, Urteil mit Massstab und Abwaegung geschlossen. 先读 ZIELE，再啃术语，把传导机制画成你的作战地图。DE-Briefing: Episode 02 — Kassenwart Omar Berger meldet faule Riesenladung Apfelmuell-Cousin; der Stadtrat entscheidet morgen. Rette Tycoon City mit Analyse, Sandkasten und Klausur-Antwort zum Thema Abitur-Fokus IF4 und IF6.
 
 ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
@@ -54,7 +54,7 @@ PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→�
 
 Klausur-Satz: `Als Fokussierungen sind in IF4 der Streit um die Staatsverschuldung und der Gegensatz von Freihandel und Protektionismus sowie in IF6 die Schichten-, Lagen- und Milieumodelle ausgewiesen.`
 
-## Schritt 3 — entdecken: Uhrwerk des Marktes: Kette von Ursache zu Wirkung
+## Schritt 3 — entdecken: Kompass der Klausur: Kette von Ursache zu Wirkung
 
 ENTDECKEN（1概念 + 1文字图解）：
 
@@ -108,7 +108,7 @@ BEISPIEL（正确例题示范，含教具操作与解答）：
 
 [Werkzeug: formula]
 
-TARGET: Hebt die Klausurformel aufs Brett — Bedingung: Dreischritt 30-40-30 eingehalten, drei Fachbegriffe korrekt gesetzt, Urteil mit Massstab und Abwaegung geschlossen.
+TARGET: Hebt die Klausurformel aufs Brett — Bedingung: Alle Bausteine in die drei Felder These/Beleg/Urteil sortiert, Dreischritt 30-40-30 eingehalten, drei Fachbegriffe korrekt gesetzt, Urteil mit Massstab und Abwaegung geschlossen.
 
 AUFGABE (analysieren, AFB II, 12 BE)：M1 nennt die Forderung, den gesetzlichen Mindestlohn deutlich anzuheben. Analysieren Sie diese Forderung, indem Sie sie (a) in IF4 als wirtschaftspolitischen Eingriff einordnen und mit einem Instrument verbinden, (b) in IF6 als Verteilungsfrage einordnen und mit einem Modell verbinden, und (c) benennen Sie je ein EF-Kapitel, das den Punkt stuetzt.
 
@@ -127,9 +127,9 @@ VERGLEICH辨别实验（双向辨析：国债之眼 vs. 三模型之眼）：
 
 VERGLEICH: Wähle erst das Verfahren — 【选程序】先判断题目问的是 (i) IF4-Verfahren（国家该不该借钱、该用什么工具：Staatsverschuldung / magisches Viereck / Instrumente）还是 (ii) IF6-Verfahren（不平等怎么分层、怎么兜底：Schichten / Lagen / Milieus + Sozialstaat）—— dann loesen.
 
-DUELL Weg A (freier Markt) gegen Weg B (Staat greift ein): Weg A vertraut dem freien Markt: Preise signalisieren Knappheit, Wettbewerb diszipliniert Anbieter, der Staat bleibt Schiedsrichter. Weg B greift sozial ein: Hoechstpreis, Mindestlohn und Umverteilung schuetzen Existenzen, verzerren aber Signale und erzeugen Ausweichreaktionen. Entscheide am Kriterium: Effizienz spricht fuer A, Existenzschutz fuer B.
+DUELL Weg A (IF4-Verfahren: Schulden und Instrumente) gegen Weg B (IF6-Verfahren: Schichtung und Sicherung): Weg A prueft mit magischem Viereck und Staatsverschuldung, ob und wie der Staat in der Rezession handeln darf. Weg B deutet mit Lagen- und Milieumodell, wer betroffen ist, und antwortet mit sozialstaatlichen Instrumenten. Entscheide an der Frage: Geld und Konjunktur verlangen A, Verteilung und Gruppen verlangen B.
 
-对决 Weg A（自由市场）vs Weg B（国家干预）：Weg A信市场：价格发信号、竞争管供给，国家只当裁判。Weg B信干预：限价、最低工资、再分配保生存，但扭曲信号、逼出黑市和用工收缩。判据：效率站A，生存保障站B，答题必须两边都写再权衡。
+对决 Weg A（IF4程序：借钱与工具）vs Weg B（IF6程序：分层与兜底）：Weg A用魔法四角加国债概念判断衰退期国家能不能借、该怎么花。Weg B用分层与 milieu 模型判断谁被落在后面，再用最低工资、住房补贴、累进税兜底。判据：问"借钱/工具"走A，问"分层/兜底"走B。
 
 AUFGABE A：Ein Text diskutiert, ob der Staat in der Rezession zusaetzliche Schulden aufnehmen soll, um zu investieren. Welches Verfahren ist zu waehlen, und wie ist zu argumentieren?
 

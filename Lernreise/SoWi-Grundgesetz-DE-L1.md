@@ -22,7 +22,11 @@ version: Lesson-v3
 
 > EPISODE 09 — Akt IV-V — Tarifarena und Demokratiewerkstatt — Auftrag von Steuerplaner Felix Dorn: Rentenkassen-Schock im Seniorenheim.
 
-HOOK (Stadtrats-Krise, lies zuerst): EPISODE 09 — Akt IV-V — Tarifarena und Demokratiewerkstatt — Stadt Tycoon City ruft dich in den Krisenstab. Steuerplaner Felix Dorn stuermt mit einer Eilmeldung ins Buero: Rentenkassen-Schock im Seniorenheim — und morgen entscheidet der Stadtrat. Realer Fall: Das Bundesverfassungsgericht stoppte 2020 die anlasslose BND-Auslandsueberwachung - Sicherheit darf Privatheit nicht auffressen. Im Versammlungsrecht verlangt Karlsruhe: Die Polizei sichert den Verkehr, bewertet aber keine Inhalte. Auch Mietendeckel schuetzen Mieter, duerfen Eigentum aber nicht aushöhlen - aushöhlen heisst hier: im Kern entleeren. Alle drei Faelle messen mit einem Massstab: praktische Konkordanz. Erste Spur: TARGET: Bringt auf dem Verhandlungsbrett beide Waagschalen in die Balance — Bedingung: Zustimmung beider Baenke, Loesung mit Kompromisslinie, Ergebnisprotokoll mit zwei Begruendungen je Seite. Oeffne die Ziele, schnapp dir die Begriffe und beweise, dass Tycoon City regierbar bleibt.
+HOOK (Stadtrats-Krise, lies zuerst): EPISODE 09 — Akt IV-V — Tarifarena und Demokratiewerkstatt — Stadt Tycoon City ruft dich in den Krisenstab. Steuerplaner Felix Dorn stuermt mit einer Eilmeldung ins Buero: Rentenkassen-Schock im Seniorenheim — und morgen entscheidet der Stadtrat.
+
+Realer Fall: Das Bundesverfassungsgericht stoppte 2020 die anlasslose BND-Auslandsueberwachung - Sicherheit darf Privatheit nicht auffressen. Im Versammlungsrecht verlangt Karlsruhe: Die Polizei sichert den Verkehr, bewertet aber keine Inhalte. Auch Mietendeckel schuetzen Mieter, duerfen Eigentum aber nicht aushöhlen - aushöhlen heisst hier: im Kern entleeren. Alle drei Faelle messen mit einem Massstab: praktische Konkordanz.
+
+Erste Spur: TARGET: Bringt auf dem Verhandlungsbrett beide Waagschalen in die Balance — Bedingung: Zustimmung beider Baenke, Loesung mit Kompromisslinie, Ergebnisprotokoll mit zwei Begruendungen je Seite. Oeffne die Ziele, schnapp dir die Begriffe und beweise, dass Tycoon City regierbar bleibt.
 
 ZIELE (drei messbare Ziele dieser Lektion):
 
@@ -65,7 +69,7 @@ Die Begriffe greifen ineinander: Die Menschenwuerde gruendet alle Rechte und mar
 
 Klausur-Satz: `Art. 20 GG nennt vier Verfassungsprinzipien: Demokratie, Rechtsstaat, Sozialstaat und Bundesstaat.`
 
-## Schritt 3 — entdecken: Uhrwerk des Marktes: Kette von Ursache zu Wirkung
+## Schritt 3 — entdecken: Uhrwerk der Verfassung: Kette von Ursache zu Wirkung
 
 TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
@@ -119,23 +123,9 @@ MUSTERLOESUNG: Ein pauschales Verbot scheitert an der Erforderlichkeit; eine Ver
 
 Klausur-Satz: `Religionsfreiheit und staatlicher Bildungsauftrag sind über die praktische Konkordanz auszugleichen, ohne dass ein Wesensgehalt angetastet wird.`
 
-## Schritt 5 — ausprobieren: Duell der Wege: Weg A gegen Weg B
+## Schritt 5 — ausprobieren: Duell der Wege: Demokratieprinzip gegen Rechtsstaat mit Ewigkeitsklausel
 
-VERGLEICH (Wahl des Weges, Weg A gegen Weg B):
-
-VERGLEICH: Waehle zuerst bewusst Weg A (Demokratieprinzip) oder Weg B (Rechtsstaat mit Ewigkeitsklausel) und begruende dann dein Urteil am passenden Kriterium.
-
-DUELL Weg A (freier Markt) gegen Weg B (Staat greift ein): Weg A vertraut der Freiheit des Einzelnen: Grundrechte wehren den Staat ab, Gerichte schuetzen den Kern. Weg B vertraut dem schuetzenden Staat: Sicherheit, Bildung und Versorgung rechtfertigen Eingriffe in Freiheit. Entscheide am Massstab der praktischen Konkordanz: Maximale beidseitige Verwirklichung bei unantastbarem Wesensgehalt.
-
-DUELL Weg A (freier Markt) gegen Weg B (Staat greift ein): Weg A vertraut der Freiheit des Einzelnen: Grundrechte wehren den Staat ab, Gerichte schuetzen den Kern. Weg B vertraut dem schuetzenden Staat: Sicherheit, Bildung und Versorgung rechtfertigen Eingriffe in Freiheit. Entscheide am Massstab der praktischen Konkordanz: Maximale beidseitige Verwirklichung bei unantastbarem Wesensgehalt.
-
-DUELL Weg A (freier Markt) gegen Weg B (Staat greift ein): Weg A vertraut der Freiheit des Einzelnen: Grundrechte wehren den Staat ab, Gerichte schuetzen den Kern. Weg B vertraut dem schuetzenden Staat: Sicherheit, Bildung und Versorgung rechtfertigen Eingriffe in Freiheit. Entscheide am Massstab der praktischen Konkordanz: Maximale beidseitige Verwirklichung bei unantastbarem Wesensgehalt.
-
-DUELL Weg A (freier Markt) gegen Weg B (Staat greift ein): Weg A vertraut der Freiheit des Einzelnen: Grundrechte wehren den Staat ab, Gerichte schuetzen den Kern. Weg B vertraut dem schuetzenden Staat: Sicherheit, Bildung und Versorgung rechtfertigen Eingriffe in Freiheit. Entscheide am Massstab der praktischen Konkordanz: Maximale beidseitige Verwirklichung bei unantastbarem Wesensgehalt.
-
-Weg A: Das Demokratieprinzip vertraut der Mehrheitsregel und der Repraesentation. Gewaehlte Organe entscheiden, die Mehrheit legitimiert, die Minderheit fuegt sich und kaempft bei der naechsten Wahl um die Mehrheit. Staerke dieses Weges ist Handlungsfaehigkeit und Gleichheit der Stimmen; Grenze ist die Gefahr, dass eine Mehrheit Grundrechte der Minderheit ueberstimmt.
-
-Weg B: Der Rechtsstaat mit Art. 79 Abs. 3 GG setzt der Mehrheit eine materielle Grenze. Ewigkeitsklausel, Grundrechte und Gerichte schuetzen die Minderheit auch gegen deutliche Mehrheiten und sichern materielle Gerechtigkeit statt blosser Stimmenzahl. Staerke dieses Weges ist der unantastbare Kern; Grenze ist die Spannung zur demokratischen Selbstbestimmung.
+VERGLEICH und DUELL Weg A (Demokratieprinzip) gegen Weg B (Rechtsstaat mit Ewigkeitsklausel) in einem Absatz: Waehle zuerst bewusst Weg A oder Weg B und begruende dann dein Urteil; Weg A vertraut Mehrheitsregel und Repraesentation (Staerke: Handlungsfaehigkeit und Stimmengleichheit; Grenze: Mehrheit ueberstimmt Minderheit), Weg B setzt Ewigkeitsklausel, Grundrechte und Gerichte als materielle Grenze (Staerke: unantastbarer Kern; Grenze: Spannung zur Selbstbestimmung); entscheide am Massstab der praktischen Konkordanz: maximale beidseitige Verwirklichung bei unantastbarem Wesensgehalt.
 
 AUFGABE A: Eine Ratsmehrheit will eine unbequeme Versammlung dauerhaft vom Marktplatz verbannen. Loese den Fall ueber Weg A und diskutiere Mehrheitsregel und Repraesentation als Legitimation.
 

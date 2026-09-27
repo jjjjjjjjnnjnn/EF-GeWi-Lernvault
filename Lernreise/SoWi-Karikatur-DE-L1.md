@@ -66,7 +66,7 @@ Die Begriffe greifen ineinander: **Beschreibung** sichert das Fundament aus sach
 
 Klausur-Satz: `Die Zuspitzung ist kein Mangel, sondern Methode: Sie macht Strukturen sichtbar, die Statistiken nur abstrakt zeigen.`
 
-## Schritt 3 — entdecken: Uhrwerk des Marktes: Kette von Ursache zu Wirkung
+## Schritt 3 — entdecken: Blick durch die Lupe: Kette von Ursache zu Wirkung
 
 TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
@@ -118,13 +118,13 @@ MUSTERLOESUNG: Waage steht fuer Verteilung, Leiter gegen Aufzug fuer ungleiche S
 
 Klausur-Satz: `Die Waage steht fuer die Verteilungsfrage, Leiter gegen Aufzug fuer ungleiche Startchancen trotz gleichen Versprechens.`
 
-## Schritt 5 — ausprobieren: Duell der Wege: Weg A gegen Weg B
+## Schritt 5 — ausprobieren: Duell der Wege: deskriptiver Zugang gegen kritische Deutung
 
 VERGLEICH (Wahl des Weges, A gegen B):
 
-VERGLEICH: Pruefe zuerst das Aufgabenziel und waehle dann den passenden Weg — Weg A oder Weg B — und loese erst danach die Aufgabe.
+VERGLEICH: Pruefe zuerst das Aufgabenziel und waehle dann den passenden Weg — Weg A (deskriptiv: Elemente und Symbole) oder Weg B (kritisch: Uebertreibung und Haltung) — und loese erst danach die Aufgabe.
 
-DUELL Weg A (freier Markt) gegen Weg B (Staat greift ein): Weg A liest die Karikatur als freien Markt der Meinungen: Der Zeichner duerfte zuspitzen, die Deutung bleibt offen, Pluralitaet siegt. Weg B liest sie als Schutzauftrag: Menschenwuerde und Jugendschutz begrenzen die Satire, Gerichte ziehen Linien. Entscheide am Kriterium: Meinungsfreiheit spricht fuer A, Wuerdeschutz fuer B - dokumentiert an Art. 5 Abs. 2.
+DUELL Weg A (deskriptiv) gegen Weg B (kritisch): Weg A erfasst sichtbar Elemente und Symbole mit Realbezug und sauberer Deutung ohne vorschnelles Urteil; Weg B prueft Spott, Appell und Einseitigkeit am Kriterium Teilhabe. Entscheide am Kriterium: Meinungsfreiheit spricht fuer offene Deutung (A), Wuerdeschutz nach Art. 5 Abs. 2 begrenzt Satire (B).
 
 Weg A: Deskriptiver Zugang mit Bildelementen und Symbolen. Leitfrage: Was ist sichtbar und wofuer steht es? Blick auf Figuren, Objekte, Text und Realbezug. Ergebnis ist eine saubere Deutung ohne vorschnelles Urteil: Jedes Symbol erhaelt Bedeutung mit Beleg.
 

@@ -54,7 +54,7 @@ PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→�
 
 Klausur-Satz: `Während der Shareholder-Ansatz die Rendite der Anteilseigner maximiert, berücksichtigt der Stakeholder-Ansatz alle Betroffenen des Unternehmenshandelns.`
 
-## Schritt 3 — entdecken: Uhrwerk des Marktes: Kette von Ursache zu Wirkung
+## Schritt 3 — entdecken: Waage der Mitbestimmung: Kette von Ursache zu Wirkung
 
 ENTDECKEN（1概念 + 1文字图解）：
 
@@ -125,13 +125,13 @@ MUSTERLÖSUNG: Nach dem Prinzip der Tarifautonomie handeln Gewerkschaften und Ar
 
 Klausur-Satz: `Der Bahn-Streik zeigt die Tarifautonomie in Aktion: Arbeitskampf als letztes Mittel nach gescheiterten Verhandlungen.`
 
-## Schritt 5 — ausprobieren: Duell der Wege: Weg A gegen Weg B
+## Schritt 5 — ausprobieren: Duell der Wege: Modell-Verfahren gegen Mitbestimmungs-Verfahren
 
 VERGLEICH辨别实验（双向辨析：模式眼 vs. 程序眼）：
 
 VERGLEICH: Wähle erst das Verfahren —【选程序】先判断材料问的是 (i) Modell-Verfahren（企业为谁经营、该对谁负责：Shareholder vs. Stakeholder）还是 (ii) Mitbestimmungs-Verfahren（职工怎样参与、走什么程序：Betriebsrat, Aufsichtsrat, Tarif, Streik）—— dann lösen.
 
-DUELL Weg A (freier Markt) gegen Weg B (Staat greift ein): Weg A vertraut dem freien Arbeitsmarkt: Loehne folgen Angebot und Nachfrage, flexible Vertraege sichern Beschaeftigung. Weg B setzt auf Mitbestimmung und Tarifschutz: Betriebsrat, Aufsichtsrat und Tarifvertrag sichern Wuerde und Einkommen, kosten aber Flexibilitaet. Entscheide am Kriterium: Beschaeftigungsmenge spricht fuer A, Verteilungsgerechtigkeit fuer B.
+DUELL Weg A (Modell-Verfahren) gegen Weg B (Mitbestimmungs-Verfahren): Weg A klaert Leitbild nach Shareholder vs. Stakeholder und Verantwortung; Weg B prueft Ebenen, Rechte und Grenzen nach Betriebsrat, Aufsichtsrat, Tarif und Streik mit Friedenspflicht. Entscheide am Kriterium: Leitbildklarheit spricht fuer A, Verfahrenssicherheit spricht fuer B.
 
 对决 Weg A（自由市场）vs Weg B（国家干预）：Weg A信自由劳动力市场：工资随供求走，灵活用工保岗位。Weg B信共决与协议保护：职工委员会、监事会席位、行业工资协议保尊严和收入，但牺牲灵活性。判据：岗位数量站A，分配正义站B。
 
