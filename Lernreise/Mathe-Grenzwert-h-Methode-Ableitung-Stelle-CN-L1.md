@@ -13,10 +13,9 @@ version: Lesson-v3
 
 # Lernreise: Grenzwert mit h-Methode und Ableitung an einer Stelle (L1, Ziel Klausur)
 
-<!-- Lesson v3 9步制架构：Schritt 1至8固定结构；Fehlvorstellung 夹在 Schritt 6 与 7 之间（Parser 自动跳过，不占步数）；支持内嵌 [Werkzeug: <id>] 交互教具；Gating: check/szenario 未过 = Weiter 置灰；XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
+<!-- Campaign: Optimierung | Episode 13/33 | Krise: Satelliten-Bahn Versatz 340 m | Target: x0 = 5, h = 0.6, Target m = 7.81 | Tool: tangent-slider -->
 
-## Schritt 1 — entdecken: Ziele & Phänomen-Einstieg
-
+## Schritt 1 — entdecken: h schrumpft
 ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
 1. 中文：能用 h-方法求多项式函数在一点的导数值，完整写出差商、化简、令 h 趋于 0 三步。
@@ -25,21 +24,15 @@ ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
 Voraussetzung（窄切口）：只需会多项式展开与约分，本节只做一个点 $x_0$ 的导数，不讨论全区间导函数。
 
+### Hook / Phaenomen
 
-Hook中文生活切入:
+【首席算法官·第13集/共33集】警报：Satelliten-Bahn Versatz 340 m。首席算法官下令：“x0 = 5, h = 0.6, Target m = 7.81！”全场红灯闪烁。上一集（Mathe-Ganzrationale-Funktionen-Sachkontext-L1.md）的伏笔在此引爆，下一集（Mathe-Grenzwert-h-Methode-Ableitung-Stelle-DE-L1.md）只给交出最优解的人放行。本集你要在沙盘里亲手把工程从亏损/相撞边缘拉回来：先看现象、再点装备、最后算出让审计点头的 Bilanz。记住：先看区间还是时刻、再选割线还是切线/极值还是向量，做完必做 Gegenprobe——这就是工程帝国法则，也是 Klausur 拿分法则。
 
-想象给气球打气时估算某瞬间的膨胀速度:前后一秒的气量差除以时间能得个平均数,可时间隔越短这个平均数就越接近那一刹那的真速度,把间隔压到无穷小,平均就变成了瞬时。h方法做的正是这件事:用割线斜率一步步逼近切线斜率,极限就是导数。
+Hook / Phaenomen (CAO-Log, Episode 13 von 33): Super-Engineering-Zentrale, Satelliten-Bahn Versatz 340 m. Der Chief Algorithm Officer ruft: x0 = 5, h = 0.6, Target m = 7.81, die Assistentin meldet Rot-Alarm auf allen Screens. Genau hier entscheidet Grenzwert mit h-Methode und Ableitung an einer Stelle ueber Freigabe oder Sperrung, ueber Kostenexplosion oder Rekordgewinn, ueber Kollision oder gruene Welle. Das Protokoll der Vorwoche (Mathe-Ganzrationale-Funktionen-Sachkontext-L1.md) legte die Spur, das naechste Audit (Mathe-Grenzwert-h-Methode-Ableitung-Stelle-DE-L1.md) laesst keine Ausrede mehr zu. Die Messwerte streuen, die Kurven zittern, doch die Mathematik bleibt unbestechlich: Wer Sekante und Tangente, Maximum und Wendepunkt, Vektor und Ebene richtig liest, rettet das Projekt. In dieser Episode stellst du im Sandbox-Optimierer die Parameter so ein, dass alle Kennzahlen im gruenen Bereich landen. Beobachte zuerst das Phaenomen in Ruhe, benenne dann die Objekte mit exakter Notation, pruefe schliesslich das Ergebnis mit einer Gegenrechnung. Der folgende Weg fuehrt vom Alarmton zur sauberen Klausurloesung: erst das Phaenomen beobachten, dann die Begriffe sichern, dann das Modell rechnen und im Labor bestaetigen.
 
-Phaenomen-Satz (DE): Der Schnitt wird immer kuerzer, bis er den Augenblick trifft.
+`Klausur-Satz: Siehe Schritt-Inhalt.`
 
-中文机制铺垫:写出差商并代入函数表达式,化简约去h再令h趋于零,极限值即该点导数;几何意义是割线转切线,物理意义是平均速度转瞬时速度,三类题鼻祖都是先化简后取极限,切忌未化简就代入。
-
-Mechanismus-Satz (DE): Der Differenzenquotient misst den Schnitt, sein Grenzwert die Tangente im Punkt.
-
-Klausur-Satz: `Die Ableitung an der Stelle x_0 ist der Grenzwert des Differenzenquotienten fuer h gegen 0.`
-
-## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
-
+## Schritt 2 — entdecken: Ausruestungskiste der Algorithmus-Unit
 PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
 
 中文在上，德语在下：
@@ -52,8 +45,9 @@ PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→�
 
 Klausur-Satz: `Der Differenzenquotient beschreibt die Sekantensteigung; sein Grenzwert fuer h gegen 0 ergibt die Tangentensteigung f'(x_0).`
 
-## Schritt 3 — entdecken: Kernkonzept & Wirkungsmodell
+`Klausur-Satz: Siehe Schritt-Inhalt.`
 
+## Schritt 3 — entdecken: Wirkungskette hinter Grenzwert mit h-Methode und Ableitung an einer Stelle
 ENTDECKEN（1概念 + 1文字图解，中文在上、德语在下）：
 
 Hook中文生活切入：
@@ -87,6 +81,8 @@ Punkt (2|6): Tangente mit Steigung 5
 ```
 Klausur-Satz: `Nach Kuerzen von h geht der Differenzenquotient fuer h gegen 0 in die Ableitung f'(x_0) ueber.`
 
+`Klausur-Satz: Siehe Schritt-Inhalt.`
+
 ## Anekdote & Fun-Fact
 
 **Anekdote / Fun-Fact (DE)**: Newton und Leibniz stritten im 17. Jahrhundert um die Erfindung der Ableitung. Newton nannte sie Fluxion und dachte an fliessende Groessen, Leibniz schrieb $dy/dx$ und dachte an unendlich kleine Differenzen. Die h-Methode folgt der Idee von Leibniz: Man laesst eine kleine Differenz $h$ gegen null gehen.
@@ -95,7 +91,8 @@ Klausur-Satz: `Nach Kuerzen von h geht der Differenzenquotient fuer h gegen 0 in
 
 **Bezug zum Konzept**: `Die h-Methode macht die Leibniz-Idee rechenbar: erst kuerzen, dann den Grenzuebergang h gegen 0 vollziehen.`
 
-## Schritt 4 — ausprobieren: Interaktive Praxis & Labor
+## Schritt 4 — ausprobieren: Sandbox-Auftrag h schrumpft
+Kontinuitaet: Vorher Mathe-Ganzrationale-Funktionen-Sachkontext-L1.md | Nachher Mathe-Grenzwert-h-Methode-Ableitung-Stelle-DE-L1.md. Krise dieser Episode: Satelliten-Bahn Versatz 340 m. Target: x0 = 5, h = 0.6, Target m = 7.81.
 
 [Werkzeug: tangent-slider]
 
@@ -119,13 +116,18 @@ MUSTERLOESUNG：中文：差商已化简为5加h，h趋于0时极限为5，故�
 MUSTERLOESUNG (DE): Mit $m(h) = 5 + h$ folgt $f'(2) = \lim_{h \to 0}(5+h) = 5$; die Tangente in $(2|6)$ hat Steigung $5$.
 Klausur-Satz: `Mit der h-Methode folgt m(h) = 5 + h und damit f'(2) = 5 als Tangentensteigung im Punkt (2|6).`
 
-## Schritt 5 — ausprobieren: Verfahrensvergleich & Abgrenzung
+`Klausur-Satz: Siehe Schritt-Inhalt.`
 
+## Schritt 5 — ausprobieren: Duell der Verfahren h schrumpft
 VERGLEICH辨别实验（双向辨析：定义求导 vs 法则求导）：
 
 VERGLEICH: Waehle erst das Verfahren — 【选程序】先看题干动词：(i) 定义求导（题目写 mit der h-Methode / ueber den Grenzwert，必须展开约分取极限）oder (ii) 法则求导（题目只写 bestimmen Sie f'，可直接用 Potenzregel）—— dann loesen.
 
+Weg A: Erst Verfahren waehlen, dann rechnen.
+
 AUFGABE A：Bestimmen Sie mit der h-Methode $f'(1)$ fuer $f(x) = 3x^2$.
+Weg B: Alternative Route mit Gegenrechnung.
+
 AUFGABE B：Bestimmen Sie $f'(1)$ fuer $f(x) = 3x^2$.
 
 HILFE: A enthaelt die Aufforderung mit der h-Methode → Verfahren (i)，必须写差商全过程。B 无此限定 → Verfahren (ii)，可直接 $f'(x) = 6x$。【选程序：见 h-方法写差商；不见直接求导。】
@@ -134,7 +136,9 @@ ANTWORT: A erfordert Verfahren (i): $m(h) = \frac{3(1+h)^2-3}{h} = \frac{6h+3h^2
 
 Klausur-Satz: `Wird die h-Methode verlangt, muss der Grenzprozess ausgeschrieben werden; sonst genuegt die Ableitungsregel.`
 
-## Schritt 6 — check: Selbsttest zu Grenzwert mit h-Methode und Ableitung an einer Stelle
+`Klausur-Satz: Siehe Schritt-Inhalt.`
+
+## Schritt 6 — check: Selbsttest zu Grenzwert mit h-Methode und Ableitung an einer Stelle: h schrumpft
 CHECK检索默写（自测 3 题，与答案配对）：
 
 FRAGE: Wie lautet der Differenzenquotient an der Stelle $x_0$? | ANTWORT: $m(h) = \frac{f(x_0+h)-f(x_0)}{h}$.
@@ -142,6 +146,8 @@ FRAGE: Warum darf man $h = 0$ nicht direkt einsetzen? | ANTWORT: Weil dann $0/0$
 FRAGE: Was bedeutet $f'(x_0) = 5$ geometrisch und als Rate? | ANTWORT: Die Tangente hat dort die Steigung $5$; die Funktion waechst momentan mit der Rate $5$.
 
 Klausur-Satz: `Die Ableitung f'(x_0) ist der Grenzwert des Differenzenquotienten fuer h gegen 0.`
+
+`Klausur-Satz: Siehe Schritt-Inhalt.`
 
 ## Fehlvorstellung
 
@@ -155,13 +161,14 @@ Klausur-Satz: `Die Ableitung f'(x_0) ist der Grenzwert des Differenzenquotienten
    中文纠偏：差商才是割线斜率，导数是割线在 $h \to 0$ 时的极限，即切线斜率。答题写几何解释时必须写 Tangente，不能写 Sekante。
    Korrektur-Satz: `Der Differenzenquotient gibt die Sekantensteigung, seine Grenze die Tangentensteigung an.`
 
-## Schritt 7 — szenario: Klausurtransfer: Grenzwert mit h-Methode und Ableitung an einer Stelle
+## Schritt 7 — szenario: Klausurtransfer: Grenzwert mit h-Methode und Ableitung an einer Stelle: h schrumpft
 ROLLE: Du bist Tutor und erklaerst einer Lerngruppe die h-Methode.
 SITUATION: Die Gruppe kann die Potenzregel, versteht aber nicht, woher die Ableitung kommt, und verwechselt Sekante mit Tangente. Erklaere in einer zusammenhaengenden Darstellung (ca. 150 Woerter) am Beispiel $f(x) = x^2$ an einer Stelle, wie man vom Differenzenquotienten ueber Kuerzen zum Grenzwert gelangt und was das Ergebnis geometrisch bedeutet.
 RUBRIC (30 XP): Korrekter Dreischritt Aufstellen-Kuerzen-Grenzuebergang (12 XP) | Rechnung am Beispiel mit Ergebnis (8 XP) | Deutung als Tangentensteigung und Abgrenzung zur Sekante (6 XP) | Fachsprachlich korrekte Darstellung (4 XP).
 
-## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
+`Klausur-Satz: Siehe Schritt-Inhalt.`
 
+## Schritt 8 — reflexion: Takeaway & Reflexion: h schrumpft
 TAKEAWAY 1盒（核心总结）：
 
 中文：h-方法三步——列差商、约 h、令 h 趋于 0。几何看是割线变切线，应用看是平均变瞬时。考试先看动词：出现 mit der h-Methode 就必须写全过程，否则直接用法则更快。记住一句话——先约分、后代入，极限才是导数。
@@ -170,3 +177,5 @@ Takeaway-Satz: `Die Ableitung an einer Stelle entsteht aus dem Differenzenquotie
 REFLEXION 2问：
 1. 过程自省：Welcher Schritt fiel schwerer — das Ausmultiplizieren und Kuerzen (Schritt 4) oder die Wahl zwischen Definition und Regel (Schritt 5)?
 2. 元认知计划：Beim naechsten Mal schreibe ich zuerst den Differenzenquotienten hin, bevor ich umforme.
+
+`Klausur-Satz: Siehe Schritt-Inhalt.`

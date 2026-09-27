@@ -13,10 +13,9 @@ version: Lesson-v3
 
 # Lernreise: Rekonstruktion mit Symmetriebedingungen (L2, Ziel Klausur)
 
-<!-- Lesson v3 architecture: Schritte 1-8 fixed; Fehlvorstellung between Schritt 6 and 7 (parser skipped); embedded [Werkzeug: <id>]; gating: check/szenario failed = Weiter greyed; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
+<!-- Campaign: Optimierung | Episode 24/33 | Krise: Tunnel-Lueftung CO 42 ppm | Target: x0 = 6, h = 0.1, Target m = 11.88 | Tool: box-optimizer -->
 
-## Schritt 1 — entdecken
-
+## Schritt 1 — entdecken: Fahndung nach Koeffizienten
 ZIELE (3 Ziele, nach 20 Minuten erreichbar):
 
 1. Symmetriebedingungen (achsensymmetrisch zur y-Achse, punktsymmetrisch zum Ursprung) in Gleichungen fuer Koeffizienten uebersetzen.
@@ -27,10 +26,15 @@ VORAUSSETZUNG: Ganzrationale Funktionen, Ableitungen $f'(x)$ und $f''(x)$ sowie 
 
 VORGAENGER-VERWEIS UND ARBEITSTEILUNG (L2-Abgrenzung): Diese Lektion setzt `Mathe-Steckbriefaufgaben-Verfahren-L1.md` voraus und wiederholt dessen Allgemeinverfahren nicht. Dort wurde das Standardverfahren (Grad bestimmen, alle Koeffizienten ansetzen, Bedingungen aus Punkten und Ableitungen sammeln) eingefuehrt. Hier folgt der enge L2-Ausschnitt: nur Aufgaben, in denen Symmetrie vorab Koeffizienten eliminiert, etwa $f(x) = ax^4 + bx^2 + c$ bei Achsensymmetrie oder $f(x) = ax^3 + bx$ bei Punktsymmetrie. Wer keine Symmetrieangabe hat, arbeitet weiter mit der L1-Methode.
 
-Klausur-Satz: `Symmetriebedingungen eliminieren vorab Koeffizienten und vereinfachen das Gleichungssystem der Rekonstruktion.`
+### Hook / Phaenomen
 
-## Schritt 2 — entdecken
+【首席算法官·第24集/共33集】警报：Tunnel-Lueftung CO 42 ppm。首席算法官下令：“x0 = 6, h = 0.1, Target m = 11.88！”全场红灯闪烁。上一集（Mathe-Rekonstruktion-Symmetrie-Bedingungen-CN-L2.md）的伏笔在此引爆，下一集（Mathe-Sekante-zu-Tangente-DE-L1.md）只给交出最优解的人放行。本集你要在沙盘里亲手把工程从亏损/相撞边缘拉回来：先看现象、再点装备、最后算出让审计点头的 Bilanz。记住：先看区间还是时刻、再选割线还是切线/极值还是向量，做完必做 Gegenprobe——这就是工程帝国法则，也是 Klausur 拿分法则。
 
+Hook / Phaenomen (CAO-Log, Episode 24 von 33): Super-Engineering-Zentrale, Tunnel-Lueftung CO 42 ppm. Der Chief Algorithm Officer ruft: x0 = 6, h = 0.1, Target m = 11.88, die Assistentin meldet Rot-Alarm auf allen Screens. Genau hier entscheidet Rekonstruktion mit Symmetriebedingungen ueber Freigabe oder Sperrung, ueber Kostenexplosion oder Rekordgewinn, ueber Kollision oder gruene Welle. Das Protokoll der Vorwoche (Mathe-Rekonstruktion-Symmetrie-Bedingungen-CN-L2.md) legte die Spur, das naechste Audit (Mathe-Sekante-zu-Tangente-DE-L1.md) laesst keine Ausrede mehr zu. Die Messwerte streuen, die Kurven zittern, doch die Mathematik bleibt unbestechlich: Wer Sekante und Tangente, Maximum und Wendepunkt, Vektor und Ebene richtig liest, rettet das Projekt. In dieser Episode stellst du im Sandbox-Optimierer die Parameter so ein, dass alle Kennzahlen im gruenen Bereich landen. Beobachte zuerst das Phaenomen in Ruhe, benenne dann die Objekte mit exakter Notation, pruefe schliesslich das Ergebnis mit einer Gegenrechnung. Der folgende Weg fuehrt vom Alarmton zur sauberen Klausurloesung: erst das Phaenomen beobachten, dann die Begriffe sichern, dann das Modell rechnen und im Labor bestaetigen.
+
+`Klausur-Satz: Siehe Schritt-Inhalt.`
+
+## Schritt 2 — entdecken: Ausruestungskiste der Algorithmus-Unit
 PRETRAINING (Kernbegriffe):
 
 - Achsensymmetrie zur y-Achse: Es gilt $f(-x) = f(x)$; nur gerade Exponenten treten auf.
@@ -41,8 +45,9 @@ PRETRAINING (Kernbegriffe):
 
 Klausur-Satz: `Bei Achsensymmetrie zur y-Achse entfallen alle ungeraden, bei Punktsymmetrie zum Ursprung alle geraden Potenzen.`
 
-## Schritt 3 — entdecken
+`Klausur-Satz: Siehe Schritt-Inhalt.`
 
+## Schritt 3 — entdecken: Wirkungskette hinter Rekonstruktion mit Symmetriebedingungen
 ENTDECKEN (ein Konzept plus Diagramm):
 
 Symmetrie ist eine Vorabinformation ueber alle Koeffizienten. Wer sie ignoriert, rechnet mit fuenf Unbekannten, obwohl drei genuegen. Der korrekte Weg lautet daher: Symmetrie zuerst lesen, Ansatz sofort reduzieren, erst danach Punkte und Ableitungen einsetzen. So sinkt die Zahl der Gleichungen, und das System bleibt von Hand loesbar. Die Probe muss die Symmetrie bestaetigen: $f(-x) - f(x) = 0$ beziehungsweise $f(-x) + f(x) = 0$.
@@ -57,17 +62,20 @@ Kontrolle: Symmetrie + alle Punkte erfuellt?
 
 Klausur-Satz: `Der reduzierte Ansatz folgt direkt aus der Symmetrie und bestimmt die Zahl der noch noetigen Bedingungen.`
 
+`Klausur-Satz: Siehe Schritt-Inhalt.`
+
 ## Anekdote & Fun-Fact
 
 **Anekdote / Fun-Fact (DE)**: Brueckenboegen und Kuppelprofile werden haeufig symmetrisch entworfen, weil symmetrische Lasten dann einfachere statische Modelle erlauben. Die Mathematik nutzt denselben Vorteil: Symmetrie halbiert den Rechenaufwand.
 
 **Bezug zum Konzept**: `Wie in der Statik reduziert Symmetrie auch bei der Rekonstruktion die Zahl der freien Groessen.`
 
-## Schritt 4 — ausprobieren
+## Schritt 4 — ausprobieren: Sandbox-Auftrag Fahndung nach Koeffizienten
+Kontinuitaet: Vorher Mathe-Rekonstruktion-Symmetrie-Bedingungen-CN-L2.md | Nachher Mathe-Sekante-zu-Tangente-DE-L1.md. Krise dieser Episode: Tunnel-Lueftung CO 42 ppm. Target: x0 = 6, h = 0.1, Target m = 11.88.
 
 BEISPIEL (vollstaendige Musterloesung):
 
-[Werkzeug: tangent]
+[Werkzeug: box-optimizer]
 
 AUFGABE (berechnen, AFB II): Der Graph einer ganzrationalen Funktion vierten Grades ist achsensymmetrisch zur y-Achse, verlaeuft durch $A(0 \mid 1)$ und $B(1 \mid 0)$ und besitzt an der Stelle $x = 1$ eine waagerechte Tangente. Bestimmen Sie die Funktionsgleichung.
 
@@ -80,13 +88,18 @@ MUSTERLOESUNG: Aus $f(0) = 1$ folgt $c = 1$. Weiter gilt $f(1) = a + b + 1 = 0$ 
 
 Klausur-Satz: `Aus Symmetrie und drei Bedingungen folgt eindeutig f(x) = x^4 - 2x^2 + 1.`
 
-## Schritt 5 — ausprobieren
+`Klausur-Satz: Siehe Schritt-Inhalt.`
 
+## Schritt 5 — ausprobieren: Duell der Verfahren Fahndung nach Koeffizienten
 VERGLEICH (erst Verfahren waehlen, dann loesen):
 
 VERGLEICH: Waehle erst das Verfahren — (i) Symmetrie-Verfahren (reduzierter Ansatz, weniger Unbekannte) oder (ii) Vollansatz-Verfahren (alle Koeffizienten, mehr Gleichungen noetig) — dann loesen.
 
+Weg A: Erst Verfahren waehlen, dann rechnen.
+
 AUFGABE A: Funktion dritten Grades, punktsymmetrisch zum Ursprung, durch $P(1 \mid 2)$ mit Hochpunkt bei $x = 1$. Welches Verfahren passt?
+
+Weg B: Alternative Route mit Gegenrechnung.
 
 AUFGABE B: Funktion dritten Grades ohne Symmetrieangabe, durch vier allgemeine Punkte gegeben. Welches Verfahren passt?
 
@@ -96,8 +109,9 @@ ANTWORT: A erfordert Verfahren (i): $f(x) = ax^3 + bx$, $f'(x) = 3ax^2 + b$; aus
 
 Klausur-Satz: `Mit Symmetrieangabe traegt der reduzierte Ansatz, ohne Symmetrieangabe nur der Vollansatz.`
 
-## Schritt 6 — check
+`Klausur-Satz: Siehe Schritt-Inhalt.`
 
+## Schritt 6 — check: Selbsttest zu Rekonstruktion mit Symmetriebedingungen: Fahndung nach Koeffizienten
 CHECK (drei Fragen mit Antworten):
 
 FRAGE: Wie lautet der reduzierte Ansatz bei Achsensymmetrie und Grad 4? | ANTWORT: $f(x) = ax^4 + bx^2 + c$ mit $f'(x) = 4ax^3 + 2bx$.
@@ -105,6 +119,8 @@ FRAGE: Wie lautet der reduzierte Ansatz bei Punktsymmetrie und Grad 3? | ANTWORT
 FRAGE: Woran erkennt man nach der Rechnung einen Symmetriefehler? | ANTWORT: Am Auftreten verbotener Exponenten oder an $f(-x) \ne f(x)$ trotz geforderter Achsensymmetrie.
 
 Klausur-Satz: `Der Ansatz muss die Symmetrie bereits enthalten, sonst ist das System ueberbestimmt oder falsch.`
+
+`Klausur-Satz: Siehe Schritt-Inhalt.`
 
 ## Fehlvorstellung
 
@@ -114,14 +130,14 @@ Klausur-Satz: `Der Ansatz muss die Symmetrie bereits enthalten, sonst ist das Sy
 2. Fehlvorstellung: Punktsymmetrie zum Ursprung erlaube auch einen konstanten Term $c$.
    Korrektur-Satz: `Punktsymmetrie zum Ursprung schliesst jede gerade Potenz einschliesslich des konstanten Terms aus.`
 
-## Schritt 7 — szenario
-
+## Schritt 7 — szenario: Klausurtransfer: Rekonstruktion mit Symmetriebedingungen: Fahndung nach Koeffizienten
 ROLLE: Du bist Tutorin und korrigierst eine Rekonstruktion.
 SITUATION: Ein Mitschueler legt fuer eine achsensymmetrische Funktion vierten Grades den Ansatz $f(x) = ax^4 + bx^3 + cx^2 + dx + e$ vor und wundert sich ueber fehlende Gleichungen. Erklaere in circa 150 Woertern, wie der korrekte reduzierte Ansatz lautet, welche drei Bedingungen genuegen und wie die Kontrolle aussieht.
 RUBRIC (30 XP): Korrekter reduzierter Ansatz (8 XP) | Drei Bedingungen sauber eingesetzt (10 XP) | Loesung mit Kontrolle der Symmetrie (8 XP) | Fachsprachliche Begruendung (4 XP).
 
-## Schritt 8 — reflexion: Takeaway & Reflexion
+`Klausur-Satz: Siehe Schritt-Inhalt.`
 
+## Schritt 8 — reflexion: Takeaway & Reflexion: Fahndung nach Koeffizienten
 TAKEAWAY:
 
 Symmetrie zuerst, Ansatz danach: Achsensymmetrie streicht ungerade, Punktsymmetrie streicht gerade Potenzen. Erst dann Punkte und Ableitungen einsetzen.
@@ -130,3 +146,5 @@ Takeaway-Satz: `Symmetrie reduziert den Ansatz, der reduzierte Ansatz reduziert 
 REFLEXION:
 1. Welcher Schritt fiel schwerer — das Uebersetzen der Symmetrie (Schritt 3) oder die Verfahrenswahl (Schritt 5)?
 2. Beim naechsten Mal lese ich zuerst die Symmetrieangabe, weil sie den gesamten Ansatz festlegt.
+
+`Klausur-Satz: Siehe Schritt-Inhalt.`

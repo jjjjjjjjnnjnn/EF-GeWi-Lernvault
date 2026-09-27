@@ -13,20 +13,24 @@ version: Lesson-v3
 
 # Lernreise: Kurvendiskussion und Wendepunkte (L1, Ziel Klausur)
 
-<!-- Lesson v3 9步制架构：Schritt 1至8固定结构；Fehlvorstellung 夹在 Schritt 6 与 7 之间（Parser 自动跳过，不占步数）；支持内嵌 [Werkzeug: <id>] 交互教具；Gating: check/szenario 未过 = Weiter 置灰；XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
+<!-- Campaign: Optimierung | Episode 22/33 | Krise: Logistik-Drohne Akku nur 14 Minuten | Target: x0 = 4, h = 0.7, Target m = 11.14 | Tool: box-optimizer -->
 
-## Schritt 1 — entdecken
-
+## Schritt 1 — entdecken: Geheimakte Rekonstruktion
 ZIELE (3条，本节20分钟学完能做到——先读中文，再记德语)：
 
 1. 中文：能说清拐点的几何含义——曲线凹凸性改变的地方，流行病曲线上就是新增病例从加速变为减速的转折时刻。
 2. 中文：能执行标准检验链 f''(x)=0 加 Vorzeichenwechsel（或 f'''(x) 不为 0），并求出完整 Wendepunkt 坐标与 Wendetangente。
 3. 中文：能辨别反例 x^4 在 0 处二阶导为 0 却不是拐点，并写出德语标准结论句（AFB II）。
 
-Klausur-Satz: `Ein Wendepunkt liegt genau dort, wo die zweite Ableitung null wird und ihr Vorzeichen wechselt, also die Kruemmung ihre Richtung aendert.`
+### Hook / Phaenomen
 
-## Schritt 2 — entdecken
+【首席算法官·第22集/共33集】警报：Logistik-Drohne Akku nur 14 Minuten。首席算法官下令：“x0 = 4, h = 0.7, Target m = 11.14！”全场红灯闪烁。上一集（Mathe-Kurvendiskussion-Wendepunkte-DE-L1.md）的伏笔在此引爆，下一集（Mathe-Rekonstruktion-Symmetrie-Bedingungen-CN-L2.md）只给交出最优解的人放行。本集你要在沙盘里亲手把工程从亏损/相撞边缘拉回来：先看现象、再点装备、最后算出让审计点头的 Bilanz。记住：先看区间还是时刻、再选割线还是切线/极值还是向量，做完必做 Gegenprobe——这就是工程帝国法则，也是 Klausur 拿分法则。
 
+Hook / Phaenomen (CAO-Log, Episode 22 von 33): Super-Engineering-Zentrale, Logistik-Drohne Akku nur 14 Minuten. Der Chief Algorithm Officer ruft: x0 = 4, h = 0.7, Target m = 11.14, die Assistentin meldet Rot-Alarm auf allen Screens. Genau hier entscheidet Kurvendiskussion und Wendepunkte ueber Freigabe oder Sperrung, ueber Kostenexplosion oder Rekordgewinn, ueber Kollision oder gruene Welle. Das Protokoll der Vorwoche (Mathe-Kurvendiskussion-Wendepunkte-DE-L1.md) legte die Spur, das naechste Audit (Mathe-Rekonstruktion-Symmetrie-Bedingungen-CN-L2.md) laesst keine Ausrede mehr zu. Die Messwerte streuen, die Kurven zittern, doch die Mathematik bleibt unbestechlich: Wer Sekante und Tangente, Maximum und Wendepunkt, Vektor und Ebene richtig liest, rettet das Projekt. In dieser Episode stellst du im Sandbox-Optimierer die Parameter so ein, dass alle Kennzahlen im gruenen Bereich landen. Beobachte zuerst das Phaenomen in Ruhe, benenne dann die Objekte mit exakter Notation, pruefe schliesslich das Ergebnis mit einer Gegenrechnung. Der folgende Weg fuehrt vom Alarmton zur sauberen Klausurloesung: erst das Phaenomen beobachten, dann die Begriffe sichern, dann das Modell rechnen und im Labor bestaetigen.
+
+`Klausur-Satz: Siehe Schritt-Inhalt.`
+
+## Schritt 2 — entdecken: Ausruestungskiste der Algorithmus-Unit
 PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语）：
 
 中文在上，德语在下：
@@ -39,8 +43,9 @@ PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→�
 
 Klausur-Satz: `Aus f''(x_W) = 0 mit Vorzeichenwechsel folgt ein Wendepunkt, die Wendetangente beschreibt die Richtung an dieser Stelle.`
 
-## Schritt 3 — entdecken
+`Klausur-Satz: Siehe Schritt-Inhalt.`
 
+## Schritt 3 — entdecken: Wirkungskette hinter Kurvendiskussion und Wendepunkte
 ENTDECKEN（1概念 + 1文字图解）：
 
 中文：把流行病累计病例曲线画出来最直观。疫情初期大家都没免疫，新增越来越快，曲线下凸、越走越陡；防控起效后新增开始减少，曲线上凸、逐渐走平。中间凹凸切换的那个点就是 Wendepunkt——新增病例最多的时刻，也就是日增曲线的峰。数学上凹凸由 f'' 的符号管：f''>0 下凸，f''<0 上凸。找拐点就是找 f'' 变号的位置：先解 f''(x)=0 拿候选，再看左右符号是否翻转，最后可顺手写出该点切线。注意符号不变的零点不是拐点，这是 x^4 陷阱的全部秘密。
@@ -67,6 +72,8 @@ ENTDECKEN（1概念 + 1文字图解）：
 
 Klausur-Satz: `Wechselt f'' an einer Nullstelle das Vorzeichen, so aendert der Graph dort seine Kruemmung und besitzt einen Wendepunkt.`
 
+`Klausur-Satz: Siehe Schritt-Inhalt.`
+
 ## Anekdote & Fun-Fact
 
 **Anekdote / Fun-Fact (DE)**: In einer Epidemie starren alle auf die Tageszahlen, doch Experten schauen auf die kumulierte Kurve und suchen den Wendepunkt. Ab dort waechst die Kurve zwar weiter, aber immer langsamer. Der Moment wurde oft als Hoffnungszeichen gefeiert: der Anstieg bricht, auch wenn die Gesamtzahl noch steigt.
@@ -75,11 +82,12 @@ Klausur-Satz: `Wechselt f'' an einer Nullstelle das Vorzeichen, so aendert der G
 
 **Bezug zum Konzept**: `Der Wendepunkt der kumulierten Kurve markiert das Maximum des Tageszuwachses und den Wechsel der Kruemmung.`
 
-## Schritt 4 — ausprobieren
+## Schritt 4 — ausprobieren: Sandbox-Auftrag Geheimakte Rekonstruktion
+Kontinuitaet: Vorher Mathe-Kurvendiskussion-Wendepunkte-DE-L1.md | Nachher Mathe-Rekonstruktion-Symmetrie-Bedingungen-CN-L2.md. Krise dieser Episode: Logistik-Drohne Akku nur 14 Minuten. Target: x0 = 4, h = 0.7, Target m = 11.14.
 
 BEISPIEL（正确例题示范，含教具操作与解答）：
 
-[Werkzeug: tangent]
+[Werkzeug: box-optimizer]
 
 AUFGABE (analysieren, AFB II)：Gegeben ist f(x) = x^3 - 6x^2 + 9x + 1. Bestimmen Sie alle Wendepunkte und die Gleichung der Wendetangente.
 
@@ -92,13 +100,18 @@ MUSTERLÖSUNG / MUSTERLOESUNG: Es gilt f'(x) = 3x^2 - 12x + 9, f''(x) = 6x - 12,
 
 Klausur-Satz: `Mit f''(2) = 0, f'''(2) ungleich 0 und W(2 | 3) besitzt f dort einen Wendepunkt mit Tangente y = -3x + 9.`
 
-## Schritt 5 — ausprobieren
+`Klausur-Satz: Siehe Schritt-Inhalt.`
 
+## Schritt 5 — ausprobieren: Duell der Verfahren Geheimakte Rekonstruktion
 VERGLEICH辨别实验（真拐点 vs. 假拐点）：
 
 VERGLEICH: Wähle erst / Waehele erst das Verfahren — 【选程序】先判断属于 (i) Wende-Test（f''(x)=0 + VZW 或 f'''，再加 y-Wert 与 Kruemmung-Deutung）还是 (ii) Nur-Stationaer-Test（只看 f'(x)=0，管极值不管凹凸）—— dann lösen.
 
+Weg A: Erst Verfahren waehlen, dann rechnen.
+
 AUFGABE A：Untersuchen Sie g(x) = x^4 auf Wendepunkte. Pruefen Sie die Stelle x = 0 mit f'' und Vorzeichenwechsel und deuten Sie die Kruemmung.
+Weg B: Alternative Route mit Gegenrechnung.
+
 AUFGABE B：Eine Infektionskurve wird durch k(t) = -0.1t^3 + 3t^2 modelliert (t in Tagen). Bestimmen Sie den Wendepunkt und deuten Sie ihn als Moment des groessten Tageszuwachses.
 
 HILFE: A nennt Wendepunkte, aber f''(0) = 0 allein reicht nicht -> Verfahren (i) mit VZW-Tabelle, kein Zeichenwechsel bedeutet kein Wendepunkt.【选程序：题干出现 Wendepunkt/Kruemmung 选 Wende-Test，必须做 VZW；只出现 Hoch/Tief/Extrem 选 stationaer-Test，只看 f'。】B nennt Wendepunkt plus Deutung im Kontext -> Verfahren (i) plus Interpretation als Peak des Zuwachses.
@@ -107,8 +120,9 @@ ANTWORT: A erfordert Verfahren (i): g'(x) = 4x^3, g''(x) = 12x^2, g''(0) = 0, ab
 
 Klausur-Satz: `Ohne Vorzeichenwechsel von f'' liegt kein Wendepunkt vor, wie g(x) = x^4 an der Stelle x = 0 zeigt.`
 
-## Schritt 6 — check
+`Klausur-Satz: Siehe Schritt-Inhalt.`
 
+## Schritt 6 — check: Selbsttest zu Kurvendiskussion und Wendepunkte: Geheimakte Rekonstruktion
 CHECK检索默写（自测 3 题，与答案配对）：
 
 FRAGE: Wie lautet die notwendige und die hinreichende Bedingung fuer einen Wendepunkt? | ANTWORT: Notwendig ist f''(x_W) = 0, hinreichend ist ein Vorzeichenwechsel von f'' oder f'''(x_W) ungleich 0.
@@ -116,6 +130,8 @@ FRAGE: Warum ist x = 0 bei g(x) = x^4 kein Wendepunkt, obwohl g''(0) = 0 gilt? |
 FRAGE: Was gehoert zur vollstaendigen Angabe von Wendepunkt und Wendetangente? | ANTWORT: Beide Koordinaten W(x_W | f(x_W)), Nachweis per VZW oder f''', Tangentengleichung und Deutung der Kruemmung.
 
 Klausur-Satz: `Erst f''(x_W) = 0 plus Vorzeichenwechsel plus y-Wert ergeben einen vollstaendigen Wendepunkt-Nachweis.`
+
+`Klausur-Satz: Siehe Schritt-Inhalt.`
 
 ## Fehlvorstellung
 
@@ -129,15 +145,15 @@ Klausur-Satz: `Erst f''(x_W) = 0 plus Vorzeichenwechsel plus y-Wert ergeben eine
    中文纠偏：Wendepunkt 是点，必须写 W(x|y)。Wendetangente 是 Klausur 常问第二问，直接用点斜式 y = f'(x_W)(x-x_W)+f(x_W)。只写 x_W 会丢坐标分，漏切线会丢整问。
    Korrektur-Satz: `Ein Wendepunkt verlangt beide Koordinaten und bei Bedarf die Gleichung der Wendetangente.`
 
-## Schritt 7 — szenario
-
+## Schritt 7 — szenario: Klausurtransfer: Kurvendiskussion und Wendepunkte: Geheimakte Rekonstruktion
 ROLLE: Du bist Daten-Assistent im Gesundheitsamt.
 SITUATION: Die kumulierten Meldungen folgen k(t) = -0.05t^3 + 2.4t^2 + 100 (t in Tagen seit Ausbruch, k in Faellen). Der Stab fragt, wann der Tageszuwachs am groessten war und ab wann die Massnahmen sichtbar wirken. Erstelle eine Analyse (ca. 150 Woerter) mit Rechnung, Wendetangente und Deutung fuer die Presse.
 AUFGABE (interpretieren, AFB III)：Bestimme den Wendepunkt, erklaere seine Bedeutung als Peak des Zuwachses und beurteile Grenzen des Modells.
 RUBRIC (30 XP): Ableitungen plus x_W korrekt (5 XP) | Nachweis per VZW oder f''' plus y-Wert (10 XP) | Wendetangente korrekt (10 XP) | Deutung als Peak plus Modellkritik (5 XP).
 
-## Schritt 8 — reflexion: Takeaway & Reflexion
+`Klausur-Satz: Siehe Schritt-Inhalt.`
 
+## Schritt 8 — reflexion: Takeaway & Reflexion: Geheimakte Rekonstruktion
 TAKEAWAY 1盒（核心总结）：
 
 中文：拐点 = 凹凸切换点。流程固定四步：解 f''=0、验变号（VZW 或 f'''）、算 y 值、写切线。x^4 提醒你：不变号就不是拐点。应用题里拐点就是增速峰，日增最大处。记住口诀：零、变、点、线——零点、变号、点坐标、切线。
@@ -146,3 +162,5 @@ Takeaway-Satz: `Wendepunkt heisst null, Wechsel, Punkt und Linie: f''(x) = 0, Vo
 REFLEXION 2问：
 1. 过程自省：Welcher Teil fiel schwerer — die Rechnung der Wendetangente (Schritt 4) oder die Abwehr der x-hoch-vier-Falle im Vergleich (Schritt 5)?
 2. 元认知计划：Beim naechsten Mal zeichne ich zuerst die Vorzeichentabelle von f'' und formuliere danach erst den Antwortsatz.
+
+`Klausur-Satz: Siehe Schritt-Inhalt.`

@@ -13,20 +13,24 @@ version: Lesson-v3
 
 # Lernreise: Extremwertprobleme und Optimierung (L1, Ziel Klausur)
 
-<!-- Lesson v3 9步制架构：Schritt 1至8固定结构；Fehlvorstellung 夹在 Schritt 6 与 7 之间（Parser 自动跳过，不占步数）；支持内嵌 [Werkzeug: <id>] 交互教具；Gating: check/szenario 未过 = Weiter 置灰；XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
+<!-- Campaign: Optimierung | Episode 10/33 | Krise: Windpark-Rotor Unwucht 11 Hz Resonanz | Target: x0 = 2, h = 0.3, Target m = 6.70 | Tool: box-optimizer -->
 
-## Schritt 1 — entdecken
-
+## Schritt 1 — entdecken: Sachkontext Frachthafen
 ZIELE (3条，本节20分钟学完能做到——先读中文，再记德语)：
 
 1. 中文：能说清极值问题的三件套流程——列目标函数 Zielfunktion，找约束条件 Nebenbedingung 代入化为一元函数，再求导找候选点并做边界检验 Randpruefung。
 2. 中文：能对一个纸箱体积问题独立列出 V(x)、确定 Definitionsmenge，并用 f'=0 加二阶导或单调表判断极大还是极小。
 3. 中文：能解释为什么 f'=0 只是必要条件，必须结合 Randwerte 与 globallyer Vergleich 才能下结论“最大”，并写出德语标准结论句（AFB II-III）。
 
-Klausur-Satz: `Bei einem Extremwertproblem wird zuerst die Zielfunktion mit Hilfe der Nebenbedingung auf eine Variable reduziert, dann werden Kandidaten mit f'(x) = 0 bestimmt und mit Randpruefung beurteilt.`
+### Hook / Phaenomen
 
-## Schritt 2 — entdecken
+【首席算法官·第10集/共33集】警报：Windpark-Rotor Unwucht 11 Hz Resonanz。首席算法官下令：“x0 = 2, h = 0.3, Target m = 6.70！”全场红灯闪烁。上一集（Mathe-Extremwertprobleme-Optimierung-DE-L1.md）的伏笔在此引爆，下一集（Mathe-Ganzrationale-Funktionen-Sachkontext-DE-L1.md）只给交出最优解的人放行。本集你要在沙盘里亲手把工程从亏损/相撞边缘拉回来：先看现象、再点装备、最后算出让审计点头的 Bilanz。记住：先看区间还是时刻、再选割线还是切线/极值还是向量，做完必做 Gegenprobe——这就是工程帝国法则，也是 Klausur 拿分法则。
 
+Hook / Phaenomen (CAO-Log, Episode 10 von 33): Super-Engineering-Zentrale, Windpark-Rotor Unwucht 11 Hz Resonanz. Der Chief Algorithm Officer ruft: x0 = 2, h = 0.3, Target m = 6.70, die Assistentin meldet Rot-Alarm auf allen Screens. Genau hier entscheidet Extremwertprobleme und Optimierung ueber Freigabe oder Sperrung, ueber Kostenexplosion oder Rekordgewinn, ueber Kollision oder gruene Welle. Das Protokoll der Vorwoche (Mathe-Extremwertprobleme-Optimierung-DE-L1.md) legte die Spur, das naechste Audit (Mathe-Ganzrationale-Funktionen-Sachkontext-DE-L1.md) laesst keine Ausrede mehr zu. Die Messwerte streuen, die Kurven zittern, doch die Mathematik bleibt unbestechlich: Wer Sekante und Tangente, Maximum und Wendepunkt, Vektor und Ebene richtig liest, rettet das Projekt. In dieser Episode stellst du im Sandbox-Optimierer die Parameter so ein, dass alle Kennzahlen im gruenen Bereich landen. Beobachte zuerst das Phaenomen in Ruhe, benenne dann die Objekte mit exakter Notation, pruefe schliesslich das Ergebnis mit einer Gegenrechnung. Der folgende Weg fuehrt vom Alarmton zur sauberen Klausurloesung: erst das Phaenomen beobachten, dann die Begriffe sichern, dann das Modell rechnen und im Labor bestaetigen.
+
+`Klausur-Satz: Siehe Schritt-Inhalt.`
+
+## Schritt 2 — entdecken: Ausruestungskiste der Algorithmus-Unit
 PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语）：
 
 中文在上，德语在下：
@@ -39,8 +43,9 @@ PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→�
 
 Klausur-Satz: `Die Nebenbedingung reduziert die Zielfunktion auf eine Variable, die Definitionsmenge legt das Intervall fuer die Randpruefung fest.`
 
-## Schritt 3 — entdecken
+`Klausur-Satz: Siehe Schritt-Inhalt.`
 
+## Schritt 3 — entdecken: Wirkungskette hinter Extremwertprobleme und Optimierung
 ENTDECKEN（1概念 + 1文字图解）：
 
 中文：物流纸箱的故事就是全部思想。仓库有一块 20 cm x 12 cm 的纸板，四角各剪去边长为 x 的小正方形，折起来做成无盖纸箱。体积显然依赖于 x：剪太小，箱子矮扁；剪太大，底面缩没了。于是体积 V(x) = Hoehe mal Grundflaeche = x(20-2x)(12-2x)，x 只能在 0 到 6 之间。把这个 V(x) 画出来是一条三次曲线，先升后降，峰顶就是最优剪法。求峰顶分三步：求导找平点 f'(x)=0，判断凹凸或单调，最后把端点 V(0)=0 与 V(6)=0 拉进来比较。三步缺一不可，第三步正是考试最爱扣分的地方。
@@ -66,6 +71,8 @@ ENTDECKEN（1概念 + 1文字图解）：
 
 Klausur-Satz: `Das globale Maximum liegt entweder an einer inneren Stelle mit f'(x) = 0 oder am Rand des Definitionsbereichs.`
 
+`Klausur-Satz: Siehe Schritt-Inhalt.`
+
 ## Anekdote & Fun-Fact
 
 **Anekdote / Fun-Fact (DE)**: Ein Logistik-Unternehmen wollte Porto sparen und fragte: welche offene Kiste aus einem Standard-Bogen hat das groesste Volumen? Die Antwort war nicht die groesste oder die kleinste Schnitttiefe, sondern ein Wert dazwischen. Genau so arbeiten Optimierer in Fabriken: sie suchen den Gipfel einer Funktion, nicht das Extrem der Einzelteile.
@@ -74,11 +81,12 @@ Klausur-Satz: `Das globale Maximum liegt entweder an einer inneren Stelle mit f'
 
 **Bezug zum Konzept**: `Die optimale Kiste liegt am Gipfel der Zielfunktion, und erst die Randpruefung macht aus einem Kandidaten das globale Maximum.`
 
-## Schritt 4 — ausprobieren
+## Schritt 4 — ausprobieren: Sandbox-Auftrag Sachkontext Frachthafen
+Kontinuitaet: Vorher Mathe-Extremwertprobleme-Optimierung-DE-L1.md | Nachher Mathe-Ganzrationale-Funktionen-Sachkontext-DE-L1.md. Krise dieser Episode: Windpark-Rotor Unwucht 11 Hz Resonanz. Target: x0 = 2, h = 0.3, Target m = 6.70.
 
 BEISPIEL（正确例题示范，含教具操作与解答）：
 
-[Werkzeug: tangent]
+[Werkzeug: box-optimizer]
 
 AUFGABE (bestimmen, AFB II)：Aus einer Pappe 20 cm x 12 cm wird durch Ausschneiden von Quadraten der Seite x eine offene Kiste gebaut. Bestimmen Sie die Schnittlaenge x, fuer die das Volumen maximal wird, und geben Sie das maximale Volumen an.
 
@@ -91,13 +99,18 @@ MUSTERLÖSUNG / MUSTERLOESUNG: Es gilt V(x) = x(20-2x)(12-2x) = 4x^3 - 64x^2 + 2
 
 Klausur-Satz: `Mit V'(x1) = 0, V''(x1) < 0 und V(x1) > V(0), V(x1) > V(6) ist x1 die globale Maximalstelle auf D.`
 
-## Schritt 5 — ausprobieren
+`Klausur-Satz: Siehe Schritt-Inhalt.`
 
+## Schritt 5 — ausprobieren: Duell der Verfahren Sachkontext Frachthafen
 VERGLEICH辨别实验（配方选择 vs. 直接求导）：
 
 VERGLEICH: Wähle erst / Waehele erst das Verfahren — 【选程序】先判断题目属于 (i) Extremwert-Schema（求最大/最小、含 Zielfunktion + Nebenbedingung + Definitionsmenge + Randpruefung）还是 (ii) Nur-Ableitung-Schema（只求 f'=0 的 Stellen，无现实区间、无 Randvergleich）—— dann lösen.
 
+Weg A: Erst Verfahren waehlen, dann rechnen.
+
 AUFGABE A：Ein Versandhaus formt aus 36 cm Draht den Rand einer offenen Kiste mit quadratischer Grundflaeche. Das Volumen soll maximal werden. Stellen Sie erst Zielfunktion, Nebenbedingung und Definitionsmenge auf, dann loesen Sie.
+Weg B: Alternative Route mit Gegenrechnung.
+
 AUFGABE B：Gegeben ist f(x) = x^3 - 3x^2 + 2. Bestimmen Sie nur alle Stellen mit f'(x) = 0 und deren Art, ohne Sachkontext und ohne Randpruefung.
 
 HILFE: A enthaelt Woerter wie maximal, Drahtlaenge fest, offene Kiste -> Verfahren (i), Extremwert-Schema mit Randpruefung.【选程序：题干出现 maximal/minimal + feste Laenge/Flaeche/Volumen + Definitionsmenge 选极值流程；只出现 Bestimmen Sie f'(x)=0 无现实区间选纯求导。】B nennt nur eine Formel ohne Kontext -> Verfahren (ii), nur Ableiten plus Vorzeichen-Test.
@@ -106,8 +119,9 @@ ANTWORT: A erfordert Verfahren (i): Sei Grundkante a und Hoehe h, dann 4a + 4h =
 
 Klausur-Satz: `Ein Sachkontext mit fester Ressource verlangt das volle Extremwert-Schema inklusive Randpruefung, eine reine Formel verlangt nur die Analyse von f'(x) = 0.`
 
-## Schritt 6 — check
+`Klausur-Satz: Siehe Schritt-Inhalt.`
 
+## Schritt 6 — check: Selbsttest zu Extremwertprobleme und Optimierung: Sachkontext Frachthafen
 CHECK检索默写（自测 3 题，与答案配对）：
 
 FRAGE: Wie lautet das Drei-Schritt-Schema eines Extremwertproblems? | ANTWORT: Zielfunktion aufstellen, mit Nebenbedingung auf eine Variable reduzieren, Kandidaten mit f'(x) = 0 suchen und mit Randpruefung beurteilen.
@@ -115,6 +129,8 @@ FRAGE: Warum reicht f'(x) = 0 allein nicht fuer ein globales Maximum? | ANTWORT:
 FRAGE: Was gehoert zur vollstaendigen Angabe der Loesung im Sachkontext? | ANTWORT: Definitionsmenge mit Einheiten, optimale Stelle mit Einheit, maximaler Wert mit Einheit und ein Antwortsatz im Kontext.
 
 Klausur-Satz: `Erst Zielfunktion plus Nebenbedingung plus Definitionsmenge plus Randpruefung ergeben eine vollstaendige Extremwert-Loesung.`
+
+`Klausur-Satz: Siehe Schritt-Inhalt.`
 
 ## Fehlvorstellung
 
@@ -128,15 +144,15 @@ Klausur-Satz: `Erst Zielfunktion plus Nebenbedingung plus Definitionsmenge plus 
    中文纠偏：恰恰相反，Klausur 按 Definitionsmenge + Einheiten + Randwerte 给分。0 处的 0 正是证明“内部峰是全局峰”的证据。漏写 D 或漏算端点，Rubric 直接扣掉一半。养成习惯：列式先写 D = [...]，结尾必列 Randwerte。
    Korrektur-Satz: `Ohne Definitionsmenge mit Einheiten und ohne explizite Randwerte gilt eine Extremwert-Loesung als unvollstaendig.`
 
-## Schritt 7 — szenario
-
+## Schritt 7 — szenario: Klausurtransfer: Extremwertprobleme und Optimierung: Sachkontext Frachthafen
 ROLLE: Du bist Praktikant in der Logistik-Abteilung eines Online-Haendlers.
 SITUATION: Aus einem Standard-Bogen 24 cm x 18 cm sollen offene Versandkisten mit maximalem Volumen gebaut werden. Deine Chefin verlangt eine nachvollziehbare Rechnung mit Zielfunktion, Definitionsmenge, Ableitung und Randpruefung sowie eine klare Empfehlung fuer die Produktion (ca. 150 Woerter, mit Einheiten cm und cm^3).
 AUFGABE (beurteilen, AFB III)：Entscheide, welche Schnittlaenge in die Produktion geht, und beurteile, wie sensibel das Maximum auf Abweichungen von +-0.5 cm reagiert.
 RUBRIC (30 XP): Zielfunktion plus Definitionsmenge korrekt (5 XP) | Kandidaten mit Ableitung korrekt berechnet (10 XP) | Randpruefung mit Einheiten vollstaendig (10 XP) | Produktionsempfehlung mit Beurteilung der Sensibilitaet (5 XP).
 
-## Schritt 8 — reflexion: Takeaway & Reflexion
+`Klausur-Satz: Siehe Schritt-Inhalt.`
 
+## Schritt 8 — reflexion: Takeaway & Reflexion: Sachkontext Frachthafen
 TAKEAWAY 1盒（核心总结）：
 
 中文：极值问题永远四件套：目标函数、约束代入、定义域、边界检验。先把现实翻译成 V(x) 加 D，再求导找平点，最后把端点拉进来比大小。记住口诀：列、代、定、比——列目标、代约束、定区间、比边界。f'=0 只是入场券，Randvergleich 才是终审。
@@ -145,3 +161,5 @@ Takeaway-Satz: `Liste Zielfunktion, Nebenbedingung, Definitionsmenge und Randver
 REFLEXION 2问：
 1. 过程自省：Welcher Teil fiel schwerer — das Aufstellen von Zielfunktion und Nebenbedingung (Schritt 4) oder die Entscheidung fuer das volle Schema im Vergleich (Schritt 5)?
 2. 元认知计划：Beim naechsten Mal schreibe ich zuerst D mit Einheiten auf und plane die Randpruefung fest ein, bevor ich ableite.
+
+`Klausur-Satz: Siehe Schritt-Inhalt.`

@@ -13,30 +13,24 @@ version: Lesson-v3
 
 # Lernreise: Grenzwert mit der h-Methode an einer Stelle (L1, Ziel Klausur)
 
-<!-- Lesson v3: 8 Schritte plus Anekdote und Fehlvorstellung; Fehlvorstellung zwischen Schritt 6 und 7 (Parser-Skip); interaktives [Werkzeug: <id>]; Gating: check/szenario nicht bestanden = Weiter gesperrt; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
+<!-- Campaign: Optimierung | Episode 14/33 | Krise: Chemie-Reaktor Druck 6,8 bar kritisch | Target: x0 = 6, h = 0.7, Target m = 8.18 | Tool: tangent-slider -->
 
-## Schritt 1 — entdecken: Ziele & Phänomen-Einstieg
+## Schritt 1 — entdecken: Ableitung um Mitternacht
 ZIELE (drei messbare Ziele dieser Lektion):
 
 1. Du kannst $m(h) = \frac{f(x_0+h)-f(x_0)}{h}$ mit $h \ne 0$ an $x_0 = 1$ fuer $f(x) = 2x^2 - x$ aufstellen und zu $m(h) = 3 + 2h$ vereinfachen.
 2. Du kannst $\lim_{h \to 0} m(h) = 3$ bilden und als $f'(1) = 3$ sowie als Tangentensteigung in $P(1, 1)$ deuten.
 3. Du kannst begruenden, warum vor dem Einsetzen von $0$ gekuerzt werden muss, und den Antwortsatz im Sachkontext schreiben (AFB II).
 
+###
+
 ### Hook / Phaenomen
 
-Ein Tempomat haelt exakt 100, doch kein Sensor misst einen einzigen Moment, jeder Sensor mittelt ueber ein winziges Zeitfenster. Die Anzeige behauptet einen Punktwert, die Messtechnik liefert nur Mittel ueber Intervalle. Genau hier setzt die h-Methode an mit ihrer mutigen Idee: Man rechnet erst mit einer kleinen Breite h und laesst sie danach gegen null schrumpfen. Nimm die Funktion $f(x)=x^2$ an der Stelle $x_0=1$ und verfolge, wie der Differenzenquotient mit kleinerem h immer naeher an den Wert 3 heranrueckt. Wer h zu frueh null setzt, erzeugt den verbotenen Ausdruck null durch null und verliert jeden Punkt. Wer erst kuerzt und dann den Grenzuebergang betrachtet, gewinnt die exakte Ableitung und das volle Verstaendnis. Der folgende Weg fuehrt vom alltaeglichen Staunen zur exakten Rechnung: erst das Phaenomen beobachten, dann die Begriffe klaeren, schliesslich das Modell pruefen und im Sandbox-Labor selbst entdecken, warum jede Regel genau so und nicht anders funktioniert.
+Hook / Phaenomen (CAO-Log, Episode 14 von 33): Super-Engineering-Zentrale, Chemie-Reaktor Druck 6,8 bar kritisch. Der Chief Algorithm Officer ruft: x0 = 6, h = 0.7, Target m = 8.18, die Assistentin meldet Rot-Alarm auf allen Screens. Genau hier entscheidet Grenzwert mit der h-Methode an einer Stelle ueber Freigabe oder Sperrung, ueber Kostenexplosion oder Rekordgewinn, ueber Kollision oder gruene Welle. Das Protokoll der Vorwoche (Mathe-Grenzwert-h-Methode-Ableitung-Stelle-CN-L1.md) legte die Spur, das naechste Audit (Mathe-Grenzwert-h-Methode-Ableitung-Stelle-L1.md) laesst keine Ausrede mehr zu. Die Messwerte streuen, die Kurven zittern, doch die Mathematik bleibt unbestechlich: Wer Sekante und Tangente, Maximum und Wendepunkt, Vektor und Ebene richtig liest, rettet das Projekt. In dieser Episode stellst du im Sandbox-Optimierer die Parameter so ein, dass alle Kennzahlen im gruenen Bereich landen. Beobachte zuerst das Phaenomen in Ruhe, benenne dann die Objekte mit exakter Notation, pruefe schliesslich das Ergebnis mit einer Gegenrechnung. Der folgende Weg fuehrt vom Alarmton zur sauberen Klausurloesung: erst das Phaenomen beobachten, dann die Begriffe sichern, dann das Modell rechnen und im Labor bestaetigen.
 
-### Fachbegriff & Definition
+`Klausur-Satz: Siehe Schritt-Inhalt.`
 
-Nach dem NRW-Kernlehrplan gilt der untenstehende Klausur-Satz als verbindliche Definition dieser Lektion. Er fasst das Phaenomen in exakter Fachsprache und bildet die Grundlage fuer jede Deutung.
-
-### Wirkungsgefuege / Modell
-
-Der Mechanismus verbindet Alltag und Formel: Das Phaenomen liefert die Anschauung, die Definition liefert die Sprache und das Wirkungsmodell in Schritt 3 liefert die Kausalkette. Wer alle drei Ebenen verknuepft, beantwortet jede Klausurfrage vollständig.
-
-Klausur-Satz: `Die Ableitung an der Stelle x_0 ist der Grenzwert des Differenzenquotienten fuer h gegen 0.`
-
-## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
+## Schritt 2 — entdecken: Ausruestungskiste der Algorithmus-Unit
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
 ### Hook / Phaenomen
@@ -57,7 +51,9 @@ Die Kette verbindet alle fuenf Begriffe zu einem Verfahren: Erkennen, Einordnen,
 
 Klausur-Satz: `Der Differenzenquotient beschreibt die Sekantensteigung, sein Grenzwert die Tangentensteigung an der Stelle x_0.`
 
-## Schritt 3 — entdecken: Kernkonzept & Wirkungsmodell
+`Klausur-Satz: Siehe Schritt-Inhalt.`
+
+## Schritt 3 — entdecken: Wirkungskette hinter Grenzwert mit der h-Methode an einer Stelle
 EXPERIMENTELLE ERKUNDUNG (Sandbox, erst spielen, dann deuten):
 
 ### Hook & Phaenomen
@@ -85,12 +81,16 @@ Formelkern: $(f(x_0+h)-f(x_0))/h$
 
 Klausur-Satz: `Vor dem Grenzuebergang muss der Differenzenquotient algebraisch gekuerzt werden, da sonst der Ausdruck 0 durch 0 entstuende.`
 
+`Klausur-Satz: Siehe Schritt-Inhalt.`
+
 ## Anekdote & Fun-Fact
 Newtons Fluxionen und Leibniz Differenzen entstanden aus demselben Problem: Wie legt man an eine krumme Kurve eine gerade Tangente? Beide loesten es durch denselben Grenzgedanken, stritten aber jahrzehntelang um die Prioritaet.
 
 Bezug zum Konzept: `Die h-Methode vollzieht exakt diesen historischen Grenzgedanken an einer einzelnen Stelle nach.`
 
-## Schritt 4 — ausprobieren: Interaktive Praxis & h-Methoden-Labor
+## Schritt 4 — ausprobieren: Sandbox-Auftrag Ableitung um Mitternacht
+Kontinuitaet: Vorher Mathe-Grenzwert-h-Methode-Ableitung-Stelle-CN-L1.md | Nachher Mathe-Grenzwert-h-Methode-Ableitung-Stelle-L1.md. Krise dieser Episode: Chemie-Reaktor Druck 6,8 bar kritisch. Target: x0 = 6, h = 0.7, Target m = 8.18.
+
 BEISPIEL (Sandbox Level mit Werkzeug):
 
 [Werkzeug: tangent-slider]
@@ -106,12 +106,18 @@ MUSTERLOESUNG: Sandbox $h = 1{,}0$ liefert $m = 3$, $h = 0{,}5$ liefert $m = 2{,
 
 Klausur-Satz: `Mit der h-Methode folgt f'(1) = 3, also besitzt die Tangente im Punkt P die Steigung 3.`
 
-## Schritt 5 — ausprobieren: Verfahrensvergleich & Abgrenzung
+`Klausur-Satz: Siehe Schritt-Inhalt.`
+
+## Schritt 5 — ausprobieren: Duell der Verfahren Ableitung um Mitternacht
 VERGLEICH (Wahl des Verfahrens, A gegen B):
 
 VERGLEICH: Triff zuerst die Wahl des Verfahrens: (i) h-Methode an einer Stelle (AFB II mit Grenzwert; Vorgehen: Ansatz, Kuerzen, Limes) oder (ii) Ableitungsregel direkt (AFB I, nur Ergebnis nennen) > dann loesen.
 
+Weg A: Erst Verfahren waehlen, dann rechnen.
+
 AUFGABE A: Berechne mit der h-Methode $f'(2)$ fuer $f(x) = x^2 + 1$ und zeige alle Zwischenschritte.
+Weg B: Alternative Route mit Gegenrechnung.
+
 AUFGABE B: Nenne ohne Rechnung die Ableitung von $g(x) = x^2 + 1$ an der Stelle $x_0 = 2$ mithilfe der Potenzregel.
 
 HILFE: Aufgabe A verlangt den sichtbaren Grenzweg mit $h$, daher Verfahren (i). Aufgabe B verlangt nur das Ergebnis, daher Verfahren (ii).
@@ -120,7 +126,9 @@ ANTWORT: A erfordert Verfahren (i): $m(h) = ((2+h)^2 + 1 - 5)/h = (4h + h^2)/h =
 
 Klausur-Satz: `Die h-Methode und die Ableitungsregel liefern denselben Wert, doch nur die h-Methode belegt den Grenzprozess.`
 
-## Schritt 6 — check: Selbsttest zu Grenzwert mit der h-Methode an einer Stelle
+`Klausur-Satz: Siehe Schritt-Inhalt.`
+
+## Schritt 6 — check: Selbsttest zu Grenzwert mit der h-Methode an einer Stelle: Ableitung um Mitternacht
 CHECK (drei Fragen mit Antworten):
 
 FRAGE: Wie lautet der Ansatz der h-Methode an der Stelle $x_0$? | ANTWORT: $m(h) = (f(x_0+h) - f(x_0))/h$ mit $h \ne 0$.
@@ -128,6 +136,8 @@ FRAGE: Warum darf $h = 0$ nicht vor dem Kuerzen eingesetzt werden? | ANTWORT: We
 FRAGE: Was bedeutet das Ergebnis $f'(x_0)$ geometrisch? | ANTWORT: Die Steigung der Tangente an den Graphen im Punkt $P(x_0, f(x_0))$.
 
 Klausur-Satz: `Der Grenzwert des gekuerzten Differenzenquotienten ist die Ableitung an der Stelle x_0.`
+
+`Klausur-Satz: Siehe Schritt-Inhalt.`
 
 ## Fehlvorstellung
 (Kein Schritt; wird vom Parser uebersprungen.)
@@ -137,13 +147,15 @@ Klausur-Satz: `Der Grenzwert des gekuerzten Differenzenquotienten ist die Ableit
 2. Fehlkonzept: Sekantensteigung ueber ein Intervall und Ableitung an einer Stelle seien stets gleich.
    Korrektur-Satz: `Die Sekantensteigung mittelt ueber ein Intervall, die Ableitung erfasst die lokale Steigung an genau einer Stelle.`
 
-## Schritt 7 — szenario: Klausurtransfer: Grenzwert mit der h-Methode an einer Stelle
+## Schritt 7 — szenario: Klausurtransfer: Grenzwert mit der h-Methode an einer Stelle: Ableitung um Mitternacht
 ROLLE: Du bist Tutorin in der EF und erklaerst einer Mitschuelerin die h-Methode.
 SITUATION: Deine Mitschuelerin hat fuer $f(x) = x^2$ an der Stelle $x_0 = 3$ den Wert $6$ geraten, kann den Weg aber nicht zeigen. Stelle in einer zusammenhaengenden Darstellung (circa 150 Woerter) die vollstaendige h-Methode dar und deute das Ergebnis als Tangentensteigung.
 AUFGABE (begruenden, AFB III): Verfasse eine zusammenhaengende Darstellung von etwa 150 Woertern mit Ansatz, Umformung, Grenzwert und Deutung.
 RUBRIC (30 XP): Korrekter Ansatz mit $h$ (8 XP) | Vollstaendige Umformung mit Kuerzen (10 XP) | Grenzwert $f'(3) = 6$ (6 XP) | Geometrische Deutung als Tangentensteigung (6 XP).
 
-## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
+`Klausur-Satz: Siehe Schritt-Inhalt.`
+
+## Schritt 8 — reflexion: Takeaway & Reflexion: Ableitung um Mitternacht
 TAKEAWAY (Kernbotschaft in einem Kasten):
 
 Der enge Weg lautet: Ansatz mit $h$, ausmultiplizieren, $h$ kuerzen, erst dann $h \to 0$. Das Ergebnis $f'(x_0)$ ist die Tangentensteigung in $P$. Die historische Pointe bleibt: Der Grenzgedanke von Newton und Leibniz wird hier an einer einzigen Stelle vollstaendig nachvollzogen.
@@ -154,3 +166,4 @@ REFLEXION (zwei Fragen):
 1. Welcher Schritt fiel schwerer: das Ausklammern von $h$ (Schritt 4) oder die Verfahrenswahl (Schritt 5)?
 2. Beim naechsten Mal schreibe ich zuerst den Ansatz hin, bevor ich umforme, weil der Ansatz die Operatorleistung sichert.
 
+`Klausur-Satz: Siehe Schritt-Inhalt.`

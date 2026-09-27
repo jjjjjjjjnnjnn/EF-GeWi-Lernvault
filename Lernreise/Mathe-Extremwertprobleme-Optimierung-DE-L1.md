@@ -13,30 +13,24 @@ version: Lesson-v3
 
 # Lernreise: Extremwertprobleme und Optimierung (L1, Ziel Klausur)
 
-<!-- Lesson v3: 8 Schritte plus Anekdote und Fehlvorstellung; Fehlvorstellung zwischen Schritt 6 und 7 (Parser-Skip); interaktives [Werkzeug: <id>]; Gating: check/szenario nicht bestanden = Weiter gesperrt; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
+<!-- Campaign: Optimierung | Episode 9/33 | Krise: Stahlseil-Dehnung 2,3 mm auf 100 m | Target: x0 = 6, h = 0.2, Target m = 6.33 | Tool: box-optimizer -->
 
-## Schritt 1 — entdecken: Ziele & Phänomen-Einstieg
+## Schritt 1 — entdecken: Containerschloss
 ZIELE (drei messbare Ziele dieser Lektion):
 
 1. Du kannst das Drei-Schritt-Verfahren aufsagen und anwenden: Zielfunktion $V(x)$ aufstellen, mit der Nebenbedingung auf eine Variable reduzieren, Definitionsmenge $D = [0, 6]$ notieren.
 2. Du kannst $V(x) = x(20-2x)(12-2x) = 4x^3 - 64x^2 + 240x$ ableiten, $V'(x) = 0$ loesen und mit $V''(x)$ sowie Randpruefung $V(0)$, $V(6)$ das globale Maximum sichern.
 3. Du kannst begruenden, warum $f' = 0$ nur notwendig ist, und den Antwortsatz mit $x \approx 2{,}43\,\mathrm{cm}$ und $V_{\max} \approx 262{,}7\,\mathrm{cm}^3$ formulieren (AFB II/III).
 
+###
+
 ### Hook / Phaenomen
 
-Aus einem flachen Pappbogen soll die groesste offene Schachtel entstehen, doch wer an den Ecken winzige Quadrate herausschneidet, erhaelt flache Bloeden, und wer riesige Ecken opfert, behält kaum Boden uebrig. Irgendwo dazwischen versteckt sich das groesste Volumen und die Intuition allein findet es nicht. Nimm einen Bogen der Laenge L und Breite B und schneide Quadrate der Kantenlaenge a heraus: Das Volumen folgt $V(a)=(L-2a)(B-2a)a$ und besitzt genau ein inneres Maximum. Wer nur die Nullstelle der Ableitung sucht und den Rand vergisst, verliert die Haelfte der Punkte. Wer Zielfunktion, Nebenbedingung, Definitionsmenge und Randpruefung sauber trennt, loest jedes Extremwertproblem nach demselben sicheren Schema. Der folgende Weg fuehrt vom alltaeglichen Staunen zur exakten Rechnung: erst das Phaenomen beobachten, dann die Begriffe klaeren, schliesslich das Modell pruefen und im Sandbox-Labor selbst entdecken, warum jede Regel genau so und nicht anders funktioniert.
+Hook / Phaenomen (CAO-Log, Episode 9 von 33): Super-Engineering-Zentrale, Stahlseil-Dehnung 2,3 mm auf 100 m. Der Chief Algorithm Officer ruft: x0 = 6, h = 0.2, Target m = 6.33, die Assistentin meldet Rot-Alarm auf allen Screens. Genau hier entscheidet Extremwertprobleme und Optimierung ueber Freigabe oder Sperrung, ueber Kostenexplosion oder Rekordgewinn, ueber Kollision oder gruene Welle. Das Protokoll der Vorwoche (Mathe-CN-Tricks-L1.md) legte die Spur, das naechste Audit (Mathe-Extremwertprobleme-Optimierung-L1.md) laesst keine Ausrede mehr zu. Die Messwerte streuen, die Kurven zittern, doch die Mathematik bleibt unbestechlich: Wer Sekante und Tangente, Maximum und Wendepunkt, Vektor und Ebene richtig liest, rettet das Projekt. In dieser Episode stellst du im Sandbox-Optimierer die Parameter so ein, dass alle Kennzahlen im gruenen Bereich landen. Beobachte zuerst das Phaenomen in Ruhe, benenne dann die Objekte mit exakter Notation, pruefe schliesslich das Ergebnis mit einer Gegenrechnung. Der folgende Weg fuehrt vom Alarmton zur sauberen Klausurloesung: erst das Phaenomen beobachten, dann die Begriffe sichern, dann das Modell rechnen und im Labor bestaetigen.
 
-### Fachbegriff & Definition
+`Klausur-Satz: Siehe Schritt-Inhalt.`
 
-Nach dem NRW-Kernlehrplan gilt der untenstehende Klausur-Satz als verbindliche Definition dieser Lektion. Er fasst das Phaenomen in exakter Fachsprache und bildet die Grundlage fuer jede Deutung.
-
-### Wirkungsgefuege / Modell
-
-Der Mechanismus verbindet Alltag und Formel: Das Phaenomen liefert die Anschauung, die Definition liefert die Sprache und das Wirkungsmodell in Schritt 3 liefert die Kausalkette. Wer alle drei Ebenen verknuepft, beantwortet jede Klausurfrage vollständig.
-
-Klausur-Satz: `Bei einem Extremwertproblem wird zuerst die Zielfunktion mit Hilfe der Nebenbedingung auf eine Variable reduziert, dann werden Kandidaten mit f'(x) = 0 bestimmt und mit Randpruefung beurteilt.`
-
-## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
+## Schritt 2 — entdecken: Ausruestungskiste der Algorithmus-Unit
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
 ### Hook / Phaenomen
@@ -57,7 +51,9 @@ Die Kette verbindet alle fuenf Begriffe zu einem Verfahren: Erkennen, Einordnen,
 
 Klausur-Satz: `Die Nebenbedingung reduziert die Zielfunktion auf eine Variable, die Definitionsmenge legt das Intervall fuer die Randpruefung fest.`
 
-## Schritt 3 — entdecken: Kernkonzept & Wirkungsmodell
+`Klausur-Satz: Siehe Schritt-Inhalt.`
+
+## Schritt 3 — entdecken: Wirkungskette hinter Extremwertprobleme und Optimierung
 EXPERIMENTELLE ERKUNDUNG (Sandbox, erst spielen, dann deuten):
 
 ### Hook & Phaenomen
@@ -87,12 +83,16 @@ Formelkern: $V(a)=(L-2a)(B-2a)a$
 
 Klausur-Satz: `Das globale Maximum liegt entweder an einer inneren Stelle mit f'(x) = 0 oder am Rand des Definitionsbereichs.`
 
+`Klausur-Satz: Siehe Schritt-Inhalt.`
+
 ## Anekdote & Fun-Fact
 Ein Logistik-Unternehmen wollte Porto sparen und fragte: Welche offene Kiste aus einem Standard-Bogen hat das groesste Volumen? Die Antwort war nicht die groesste oder die kleinste Schnitttiefe, sondern ein Wert dazwischen. Genau so arbeiten Optimierer in Fabriken: Sie suchen den Gipfel einer Funktion, nicht das Extrem der Einzelteile.
 
 Bezug zum Konzept: `Die optimale Kiste liegt am Gipfel der Zielfunktion, und erst die Randpruefung macht aus einem Kandidaten das globale Maximum.`
 
-## Schritt 4 — ausprobieren: Interaktive Praxis & Box-Optimierung
+## Schritt 4 — ausprobieren: Sandbox-Auftrag Containerschloss
+Kontinuitaet: Vorher Mathe-CN-Tricks-L1.md | Nachher Mathe-Extremwertprobleme-Optimierung-L1.md. Krise dieser Episode: Stahlseil-Dehnung 2,3 mm auf 100 m. Target: x0 = 6, h = 0.2, Target m = 6.33.
+
 BEISPIEL (Sandbox Level mit Werkzeug):
 
 [Werkzeug: box-optimizer]
@@ -108,12 +108,18 @@ MUSTERLOESUNG: Sandbox zeigt das Maximum bei $a = a_1$ mit $V(a_1)$ als hoechste
 
 Klausur-Satz: `Mit V'(x1) = 0, V''(x1) < 0 und V(x1) > V(0), V(x1) > V(6) ist x1 die globale Maximalstelle auf D.`
 
-## Schritt 5 — ausprobieren: Verfahrensvergleich & Abgrenzung
+`Klausur-Satz: Siehe Schritt-Inhalt.`
+
+## Schritt 5 — ausprobieren: Duell der Verfahren Containerschloss
 VERGLEICH (Wahl des Verfahrens, A gegen B):
 
 VERGLEICH: Triff zuerst die Wahl des Verfahrens: (i) Extremwert-Schema (Maximum oder Minimum mit Zielfunktion, Nebenbedingung, Definitionsmenge und Randpruefung) oder (ii) Nur-Ableitung-Schema (nur Stellen mit $f' = 0$ bestimmen, ohne Sachkontext und ohne Randvergleich) > dann loesen.
 
+Weg A: Erst Verfahren waehlen, dann rechnen.
+
 AUFGABE A: Ein Versandhaus formt aus $36\,\mathrm{cm}$ Draht den Rand einer offenen Kiste mit quadratischer Grundflaeche. Das Volumen soll maximal werden. Stellen Sie erst Zielfunktion, Nebenbedingung und Definitionsmenge auf, dann loesen Sie.
+Weg B: Alternative Route mit Gegenrechnung.
+
 AUFGABE B: Gegeben ist $f(x) = x^3 - 3x^2 + 2$. Bestimmen Sie nur alle Stellen mit $f'(x) = 0$ und deren Art, ohne Sachkontext und ohne Randpruefung.
 
 HILFE: Aufgabe A enthaelt Woerter wie $maximal$, feste Drahtlaenge und offene Kiste, daher Verfahren (i) mit Randpruefung. Aufgabe B nennt nur eine Formel ohne Kontext, daher Verfahren (ii) mit Ableitung und Vorzeichentest.
@@ -122,7 +128,9 @@ ANTWORT: A erfordert Verfahren (i): Sei Grundkante $a$ und Hoehe $h$, dann $4a +
 
 Klausur-Satz: `Ein Sachkontext mit fester Ressource verlangt das volle Extremwert-Schema inklusive Randpruefung, eine reine Formel verlangt nur die Analyse von f'(x) = 0.`
 
-## Schritt 6 — check: Selbsttest zu Extremwertprobleme und Optimierung
+`Klausur-Satz: Siehe Schritt-Inhalt.`
+
+## Schritt 6 — check: Selbsttest zu Extremwertprobleme und Optimierung: Containerschloss
 CHECK (drei Fragen mit Antworten):
 
 FRAGE: Wie lautet das Drei-Schritt-Schema eines Extremwertproblems? | ANTWORT: Zielfunktion aufstellen, mit Nebenbedingung auf eine Variable reduzieren, Kandidaten mit $f'(x) = 0$ suchen und mit Randpruefung beurteilen.
@@ -130,6 +138,8 @@ FRAGE: Warum reicht $f'(x) = 0$ allein nicht fuer ein globales Maximum? | ANTWOR
 FRAGE: Was gehoert zur vollstaendigen Angabe der Loesung im Sachkontext? | ANTWORT: Definitionsmenge mit Einheiten, optimale Stelle mit Einheit, maximaler Wert mit Einheit und ein Antwortsatz im Kontext.
 
 Klausur-Satz: `Erst Zielfunktion plus Nebenbedingung plus Definitionsmenge plus Randpruefung ergeben eine vollstaendige Extremwert-Loesung.`
+
+`Klausur-Satz: Siehe Schritt-Inhalt.`
 
 ## Fehlvorstellung
 (Kein Schritt; wird vom Parser uebersprungen.)
@@ -139,13 +149,15 @@ Klausur-Satz: `Erst Zielfunktion plus Nebenbedingung plus Definitionsmenge plus 
 2. Fehlkonzept: Definitionsmenge, Einheiten und Randwerte sind Formsache und duerfen entfallen.
    Korrektur-Satz: `Ohne Definitionsmenge mit Einheiten und ohne explizite Randwerte gilt eine Extremwert-Loesung als unvollstaendig.`
 
-## Schritt 7 — szenario: Klausurtransfer: Extremwertprobleme und Optimierung
+## Schritt 7 — szenario: Klausurtransfer: Extremwertprobleme und Optimierung: Containerschloss
 ROLLE: Du bist Praktikant in der Logistik-Abteilung eines Online-Haendlers.
 SITUATION: Aus einem Standard-Bogen $24\,\mathrm{cm}$ mal $18\,\mathrm{cm}$ sollen offene Versandkisten mit maximalem Volumen gebaut werden. Deine Chefin verlangt eine nachvollziehbare Rechnung mit Zielfunktion, Definitionsmenge, Ableitung und Randpruefung sowie eine klare Empfehlung fuer die Produktion (circa 150 Woerter, mit Einheiten $\mathrm{cm}$ und $\mathrm{cm}^3$).
 AUFGABE (beurteilen, AFB III): Entscheide, welche Schnittlaenge in die Produktion geht, und beurteile, wie sensibel das Maximum auf Abweichungen von $\pm 0{,}5\,\mathrm{cm}$ reagiert.
 RUBRIC (30 XP): Zielfunktion plus Definitionsmenge korrekt (5 XP) | Kandidaten mit Ableitung korrekt berechnet (10 XP) | Randpruefung mit Einheiten vollstaendig (10 XP) | Produktionsempfehlung mit Beurteilung der Sensibilitaet (5 XP).
 
-## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
+`Klausur-Satz: Siehe Schritt-Inhalt.`
+
+## Schritt 8 — reflexion: Takeaway & Reflexion: Containerschloss
 TAKEAWAY (Kernbotschaft in einem Kasten):
 
 Ein Extremwertproblem verlangt stets vier Bausteine: Zielfunktion, Nebenbedingung, Definitionsmenge und Randvergleich. Zuerst wird die Sachsituation in $V(x)$ mit $D$ uebersetzt, dann werden Kandidaten mit $f'(x) = 0$ gesucht, schliesslich werden die Raender in den Vergleich einbezogen. Merksatz: aufstellen, reduzieren, festlegen, vergleichen. Denn $f' = 0$ ist nur die Eintrittskarte, der Randvergleich faellt das Urteil.
@@ -156,3 +168,4 @@ REFLEXION (zwei Fragen):
 1. Welcher Teil fiel schwerer: das Aufstellen von Zielfunktion und Nebenbedingung (Schritt 4) oder die Entscheidung fuer das volle Schema im Vergleich (Schritt 5)?
 2. Beim naechsten Mal schreibe ich zuerst $D$ mit Einheiten auf und plane die Randpruefung fest ein, bevor ich ableite.
 
+`Klausur-Satz: Siehe Schritt-Inhalt.`

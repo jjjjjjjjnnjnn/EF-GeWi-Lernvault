@@ -13,30 +13,24 @@ version: Lesson-v3
 
 # Lernreise: Steckbriefaufgaben: Bedingungen in Gleichungen (L1, Ziel Klausur)
 
-<!-- Lesson v3: 8 Schritte plus Anekdote und Fehlvorstellung; Fehlvorstellung zwischen Schritt 6 und 7 (Parser-Skip); interaktives [Werkzeug: <id>]; Gating: check/szenario nicht bestanden = Weiter gesperrt; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
+<!-- Campaign: Optimierung | Episode 27/33 | Krise: Fracht-Flugzeug Schwerpunkt 31 Prozent MAC | Target: x0 = 4, h = 0.4, Target m = 12.99 | Tool: box-optimizer -->
 
-## Schritt 1 — entdecken: Ziele & Phänomen-Einstieg
+## Schritt 1 — entdecken: Ebenen ueber dem Hafen
 ZIELE (drei messbare Ziele dieser Lektion):
 
 1. Du kannst aus vier Bedingungen den Ansatz $f(x) = ax^3+bx^2+cx+d$ und aus Symmetrie den Ansatz ohne ungerade Exponenten waehlen.
 2. Du kannst $P(0, 4)$ zu $f(0) = 4$, Steigung $-6$ zu $f'(0) = -6$, Wende bei $1$ zu $f''(1) = 0$ und Nullstelle bei $1$ zu $f(1) = 0$ uebersetzen.
 3. Du kannst das LGS zu $a = -1$, $b = 3$, $c = -6$, $d = 4$ loesen und die Probe gegen alle Bedingungen schreiben (AFB II).
 
+###
+
 ### Hook / Phaenomen
 
-Ein Detektiv rekonstruiert aus Fingerabdruecken den Taeter und ein Mathematiker rekonstruiert aus Punkten und Steigungen die ganze Funktion. Gegeben sind nur ein Hochpunkt hier, ein Wendepunkt dort und eine Steigung an dritter Stelle, gesucht ist der vollständige Funktionsterm. Nimm einen allgemeinen Ansatz vierten Grades und uebersetze jede geometrische Eigenschaft in genau eine Gleichung fuer f, f prime oder f prime prime. Wer Ansatz und Bedingungen verzaehlt, erhaelt ein unter- oder ueberbestimmtes System und scheitert. Wer jede Eigenschaft exakt uebersetzt, das System per Einsetzungs- oder Additionsverfahren loest und die Probe durchfuehrt, rekonstruiert jeden Funktionsterm und beherrscht das Standardverfahren der Klausur. Der folgende Weg fuehrt vom alltaeglichen Staunen zur exakten Rechnung: erst das Phaenomen beobachten, dann die Begriffe klaeren, schliesslich das Modell pruefen und im Sandbox-Labor selbst entdecken, warum jede Regel genau so und nicht anders funktioniert.
+Hook / Phaenomen (CAO-Log, Episode 27 von 33): Super-Engineering-Zentrale, Fracht-Flugzeug Schwerpunkt 31 Prozent MAC. Der Chief Algorithm Officer ruft: x0 = 4, h = 0.4, Target m = 12.99, die Assistentin meldet Rot-Alarm auf allen Screens. Genau hier entscheidet Steckbriefaufgaben: Bedingungen in Gleichungen ueber Freigabe oder Sperrung, ueber Kostenexplosion oder Rekordgewinn, ueber Kollision oder gruene Welle. Das Protokoll der Vorwoche (Mathe-Sekante-zu-Tangente-L1.md) legte die Spur, das naechste Audit (Mathe-Steckbriefaufgaben-Verfahren-L1.md) laesst keine Ausrede mehr zu. Die Messwerte streuen, die Kurven zittern, doch die Mathematik bleibt unbestechlich: Wer Sekante und Tangente, Maximum und Wendepunkt, Vektor und Ebene richtig liest, rettet das Projekt. In dieser Episode stellst du im Sandbox-Optimierer die Parameter so ein, dass alle Kennzahlen im gruenen Bereich landen. Beobachte zuerst das Phaenomen in Ruhe, benenne dann die Objekte mit exakter Notation, pruefe schliesslich das Ergebnis mit einer Gegenrechnung. Der folgende Weg fuehrt vom Alarmton zur sauberen Klausurloesung: erst das Phaenomen beobachten, dann die Begriffe sichern, dann das Modell rechnen und im Labor bestaetigen.
 
-### Fachbegriff & Definition
+`Klausur-Satz: Siehe Schritt-Inhalt.`
 
-Nach dem NRW-Kernlehrplan gilt der untenstehende Klausur-Satz als verbindliche Definition dieser Lektion. Er fasst das Phaenomen in exakter Fachsprache und bildet die Grundlage fuer jede Deutung.
-
-### Wirkungsgefuege / Modell
-
-Der Mechanismus verbindet Alltag und Formel: Das Phaenomen liefert die Anschauung, die Definition liefert die Sprache und das Wirkungsmodell in Schritt 3 liefert die Kausalkette. Wer alle drei Ebenen verknuepft, beantwortet jede Klausurfrage vollständig.
-
-Klausur-Satz: `Bei Steckbriefaufgaben wird aus jeder geometrischen Eigenschaft eine Bedingungsgleichung, aus der sich die Koeffizienten des Funktionsterms bestimmen lassen.`
-
-## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
+## Schritt 2 — entdecken: Ausruestungskiste der Algorithmus-Unit
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
 ### Hook / Phaenomen
@@ -57,7 +51,9 @@ Die Kette verbindet alle fuenf Begriffe zu einem Verfahren: Erkennen, Einordnen,
 
 Klausur-Satz: `Die Anzahl der unbekannten Koeffizienten muss der Anzahl der unabhaengigen Bedingungen entsprechen.`
 
-## Schritt 3 — entdecken: Kernkonzept & Wirkungsmodell
+`Klausur-Satz: Siehe Schritt-Inhalt.`
+
+## Schritt 3 — entdecken: Wirkungskette hinter Steckbriefaufgaben: Bedingungen in Gleichungen
 EXPERIMENTELLE ERKUNDUNG (Sandbox, erst spielen, dann deuten):
 
 ### Hook & Phaenomen
@@ -86,15 +82,19 @@ Formelkern: $f$
 
 Klausur-Satz: `Jede geometrische Eigenschaft des Graphen entspricht genau einer Bedingung an f, f' oder f''.`
 
+`Klausur-Satz: Siehe Schritt-Inhalt.`
+
 ## Anekdote & Fun-Fact
 Schon in der Song- und Yuan-Zeit loesten Mathematiker Aufgaben, indem sie eine unbekannte Groesse mit einem eigenen Zeichen ansetzten und daraus Gleichungen aufbauten. Diese Methode nannte man Tianyuanshu, die Kunst des himmlischen Elements. Im Kern ist sie nichts anderes als unser Ansatz mit unbekannten Koeffizienten.
 
 Bezug zum Konzept: `Ein Ansatz mit unbekannten Koeffizienten ist eine alte Idee: Aus Bedingungen werden Gleichungen gebaut.`
 
-## Schritt 4 — ausprobieren: Interaktive Praxis & Steckbrief-Labor
+## Schritt 4 — ausprobieren: Sandbox-Auftrag Ebenen ueber dem Hafen
+Kontinuitaet: Vorher Mathe-Sekante-zu-Tangente-L1.md | Nachher Mathe-Steckbriefaufgaben-Verfahren-L1.md. Krise dieser Episode: Fracht-Flugzeug Schwerpunkt 31 Prozent MAC. Target: x0 = 4, h = 0.4, Target m = 12.99.
+
 BEISPIEL (Sandbox Level mit Werkzeug):
 
-[Werkzeug: formula]
+[Werkzeug: box-optimizer]
 
 AUFGABE (Levelziel, AFB II): Knacke das Steckbrief-Level: Stelle im Sandbox-Formelgeruest nacheinander die vier Bedingungen ein und beobachte, wie aus jeder Eigenschaft eine Gleichung und aus vier Gleichungen ein loesbares System wird. Lies jede erzeugte Gleichung ab, uebersetze Hochpunkt, Wendepunkt und Steigung, loese das System und fuehre die Probe durch. Benenne das Loesungsverfahren.
 
@@ -107,12 +107,18 @@ MUSTERLOESUNG: Formelgeruest aus vier Bedingungen liefert das System mit der ein
 
 Klausur-Satz: `Aus den vier Bedingungen folgt das LGS mit der eindeutigen Loesung a = -1, b = 3, c = -6, d = 4, also f(x) = -x^3 + 3x^2 - 6x + 4.`
 
-## Schritt 5 — ausprobieren: Verfahrensvergleich & Abgrenzung
+`Klausur-Satz: Siehe Schritt-Inhalt.`
+
+## Schritt 5 — ausprobieren: Duell der Verfahren Ebenen ueber dem Hafen
 VERGLEICH (Wahl des Verfahrens, A gegen B):
 
 VERGLEICH: Triff zuerst die Wahl des Verfahrens: (i) Kurvendiskussion (Term gegeben, Eigenschaften gesucht: ableiten, Extrema und Wende bestimmen) oder (ii) Rekonstruktion (Eigenschaften gegeben, Term gesucht: Ansatz mit LGS aus Bedingungen) > dann loesen.
 
+Weg A: Erst Verfahren waehlen, dann rechnen.
+
 AUFGABE A: Gegeben ist $f(x) = x^3 - 6x^2 + 9x + 1$. Bestimmen Sie die Koordinaten der Extrempunkte.
+Weg B: Alternative Route mit Gegenrechnung.
+
 AUFGABE B: Der Graph einer ganzrationalen Funktion dritten Grades hat im Ursprung eine waagerechte Tangente und im Punkt $P(2, -4)$ einen Wendepunkt. Bestimmen Sie den Funktionsterm.
 
 HILFE: Aufgabe A gibt die Funktion vor und fragt nach Eigenschaften, daher Verfahren (i). Aufgabe B gibt Eigenschaften vor und fragt nach dem Term, daher Verfahren (ii).
@@ -121,7 +127,9 @@ ANTWORT: A erfordert Verfahren (i): $f'(x) = 3x^2 - 12x + 9 = 0$ ergibt $x = 1$ 
 
 Klausur-Satz: `Ist der Funktionsterm unbekannt, wird er ueber einen allgemeinen Ansatz und ein LGS aus den gegebenen Bedingungen rekonstruiert.`
 
-## Schritt 6 — check: Selbsttest zu Steckbriefaufgaben: Bedingungen in Gleichungen
+`Klausur-Satz: Siehe Schritt-Inhalt.`
+
+## Schritt 6 — check: Selbsttest zu Steckbriefaufgaben: Bedingungen in Gleichungen: Ebenen ueber dem Hafen
 CHECK (drei Fragen mit Antworten):
 
 FRAGE: Welchen Ansatz waehlt man fuer eine ganzrationale Funktion dritten Grades? | ANTWORT: $f(x) = ax^3 + bx^2 + cx + d$ mit vier unbekannten Koeffizienten.
@@ -129,6 +137,8 @@ FRAGE: In welche Gleichung uebersetzt man einen Wendepunkt an der Stelle $x_0$? 
 FRAGE: Wie viele unabhaengige Bedingungen braucht man fuer einen Ansatz mit vier Koeffizienten? | ANTWORT: Genau vier, da jede unabhaengige Bedingung eine Gleichung fuer das LGS liefert.
 
 Klausur-Satz: `Ein Wendepunkt liefert die Bedingung f''(x0) = 0, ein Extrempunkt die Bedingungen f(x0) = y0 und f'(x0) = 0.`
+
+`Klausur-Satz: Siehe Schritt-Inhalt.`
 
 ## Fehlvorstellung
 (Kein Schritt; wird vom Parser uebersprungen.)
@@ -138,13 +148,15 @@ Klausur-Satz: `Ein Wendepunkt liefert die Bedingung f''(x0) = 0, ein Extrempunkt
 2. Fehlkonzept: Mit dem hingeschriebenen Funktionsterm ist die Aufgabe vollstaendig geloest.
    Korrektur-Satz: `Nach dem Loesen des LGS muessen die Koeffizienten zur Kontrolle in alle Ausgangsbedingungen eingesetzt werden.`
 
-## Schritt 7 — szenario: Klausurtransfer: Steckbriefaufgaben: Bedingungen in Gleichungen
+## Schritt 7 — szenario: Klausurtransfer: Steckbriefaufgaben: Bedingungen in Gleichungen: Ebenen ueber dem Hafen
 ROLLE: Du bist Mitarbeiter in einem Ingenieurbuero und sollst ein Brueckenprofil modellieren.
 SITUATION: Das Profil eines Brueckenbogens soll naeherungsweise durch eine ganzrationale Funktion dritten Grades beschrieben werden. Bekannt sind: Der Bogen beginnt im Ursprung mit waagerechter Tangente, erreicht an der Stelle $x = 4$ seinen hoechsten Punkt und hat dort eine Hoehe von $16$ Metern. Bestimme den Funktionsterm und erlaeutere in einer zusammenhaengenden Darstellung (circa 150 Woerter) dein Vorgehen.
 AUFGABE (aufstellen, AFB III): Verfasse eine zusammenhaengende Darstellung von etwa 150 Woertern mit Ansatz, Bedingungsuebersetzung, Loesung und Probe.
 RUBRIC (30 XP): Korrekter Ansatz $f(x) = ax^3 + bx^2 + cx + d$ (5 XP) | Uebersetzung der Bedingungen ($f(0) = 0$, $f'(0) = 0$, $f(4) = 16$, $f'(4) = 0$) (10 XP) | Loesung des LGS mit Ergebnis (10 XP) | Probe und Antwortsatz im Sachzusammenhang (5 XP).
 
-## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
+`Klausur-Satz: Siehe Schritt-Inhalt.`
+
+## Schritt 8 — reflexion: Takeaway & Reflexion: Ebenen ueber dem Hafen
 TAKEAWAY (Kernbotschaft in einem Kasten):
 
 Der Schluessel jeder Steckbriefaufgabe heisst Uebersetzen: Koeffizienten zaehlen, Ansatz waehlen (dritter Grad vier Koeffizienten, achsensymmetrischer vierter Grad drei), Ableitungskette $f'$ und $f''$ bereitstellen und jede geometrische Bedingung in eine Gleichung verwandeln: $f(x_0) = y_0$, $f'(x_0) = m$, $f'(x_0) = 0$, $f''(x_0) = 0$. Gleiche Zahl unabhaengiger Bedingungen und Koeffizienten sichert die eindeutige Loesung; die Probe schliesst ab. Die Tianyuanshu-Anekdote zeigt: Aus Bedingungen Gleichungen zu bauen, ist eine jahrhundertealte Idee.
@@ -155,3 +167,4 @@ REFLEXION (zwei Fragen):
 1. Welcher Schritt fiel schwerer: das Uebersetzen der Bedingungen (Schritt 4) oder das Loesen des LGS (Schritt 5)?
 2. Beim naechsten Mal zaehle ich zuerst die Bedingungen und vergleiche sie mit der Anzahl der Koeffizienten, bevor ich den Ansatz waehle.
 
+`Klausur-Satz: Siehe Schritt-Inhalt.`

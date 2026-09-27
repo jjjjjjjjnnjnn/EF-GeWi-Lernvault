@@ -13,30 +13,24 @@ version: Lesson-v3
 
 # Lernreise: ZKE 2027: Teil A und Teil B im Zeitmodus (L1, Ziel Klausur)
 
-<!-- Lesson v3: 8 Schritte plus Anekdote und Fehlvorstellung; Fehlvorstellung zwischen Schritt 6 und 7 (Parser-Skip); interaktives [Werkzeug: <id>]; Gating: check/szenario nicht bestanden = Weiter gesperrt; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
+<!-- Campaign: Optimierung | Episode 32/33 | Krise: Reserve-Alarm: Nachtbereitschaft prueft alle Modelle | Target: x0 = 4, h = 0.1, Target m = 14.84 | Tool: formula -->
 
-## Schritt 1 — entdecken: Ziele & Phänomen-Einstieg
+## Schritt 1 — entdecken: Endabnahme II
 ZIELE (drei messbare Ziele dieser Lektion):
 
 1. Du kannst die ZKE-Struktur nennen: Teil A hilfsmittelfrei max. $25$ Minuten, Teil B mit WTR oder CAS plus Formelsammlung mind. $75$ Minuten, gesamt $100$ Minuten.
 2. Du kannst im Teil-A-Stil $f'(x) = 15x^2-4x+1$ zu $f'(1) = 12$ bilden und $x^2-9x+20 = 0$ per $pq$ zu $4$ und $5$ loesen.
 3. Du kannst in Teil B Ansatz, Rechnung und Antwortsatz mit $|\vec{a}|$ und Einheiten schreiben und die Zeit $25$ gegen $75$ einteilen (AFB II/III).
 
+###
+
 ### Hook / Phaenomen
 
-Zwanzig Minuten vor Abgabe starrt man auf eine Aufgabe ohne Taschenrechner und ploetzlich zaehlt nur noch das Handwerk: Potenzregel aus dem Kopf, pq-Formel ohne Zettel und Vektorlaenge per Pythagoras. Genau so fuehlt sich Teil A der Zentralen Klausur an, hilfsmittelfrei in hoechstens 25 Minuten, waehrend Teil B mit Rechner und Formelsammlung mindestens 75 Minuten vollstaendige Wege verlangt. Nimm eine typische Teil-A-Aufgabe und trainiere exaktes Rechnen ohne Netz: Nullstellen per pq-Formel, Ableitung per Potenzregel und Laenge per Betrag. Wer in Teil A lange Nebenrechnungen startet, verliert die Zeit und wer in Teil B nur Ergebnisse ohne Weg liefert, verliert die Punkte. Wer beide Teile kennt und je nach Teil handelt, betritt die ZKE vorbereitet. Der folgende Weg fuehrt vom alltaeglichen Staunen zur exakten Rechnung: erst das Phaenomen beobachten, dann die Begriffe klaeren, schliesslich das Modell pruefen und im Sandbox-Labor selbst entdecken, warum jede Regel genau so und nicht anders funktioniert.
+Hook / Phaenomen (CAO-Log, Episode 32 von 33): Super-Engineering-Zentrale, Reserve-Alarm: Nachtbereitschaft prueft alle Modelle. Der Chief Algorithm Officer ruft: x0 = 4, h = 0.1, Target m = 14.84, die Assistentin meldet Rot-Alarm auf allen Screens. Genau hier entscheidet ZKE 2027: Teil A und Teil B im Zeitmodus ueber Freigabe oder Sperrung, ueber Kostenexplosion oder Rekordgewinn, ueber Kollision oder gruene Welle. Das Protokoll der Vorwoche (Mathe-Vektoren-Raum-Skalarprodukt-L1.md) legte die Spur, das naechste Audit (Mathe-ZKE-2027-L1.md) laesst keine Ausrede mehr zu. Die Messwerte streuen, die Kurven zittern, doch die Mathematik bleibt unbestechlich: Wer Sekante und Tangente, Maximum und Wendepunkt, Vektor und Ebene richtig liest, rettet das Projekt. In dieser Episode stellst du im Sandbox-Optimierer die Parameter so ein, dass alle Kennzahlen im gruenen Bereich landen. Beobachte zuerst das Phaenomen in Ruhe, benenne dann die Objekte mit exakter Notation, pruefe schliesslich das Ergebnis mit einer Gegenrechnung. Der folgende Weg fuehrt vom Alarmton zur sauberen Klausurloesung: erst das Phaenomen beobachten, dann die Begriffe sichern, dann das Modell rechnen und im Labor bestaetigen.
 
-### Fachbegriff & Definition
+`Klausur-Satz: Siehe Schritt-Inhalt.`
 
-Nach dem NRW-Kernlehrplan gilt der untenstehende Klausur-Satz als verbindliche Definition dieser Lektion. Er fasst das Phaenomen in exakter Fachsprache und bildet die Grundlage fuer jede Deutung.
-
-### Wirkungsgefuege / Modell
-
-Der Mechanismus verbindet Alltag und Formel: Das Phaenomen liefert die Anschauung, die Definition liefert die Sprache und das Wirkungsmodell in Schritt 3 liefert die Kausalkette. Wer alle drei Ebenen verknuepft, beantwortet jede Klausurfrage vollständig.
-
-Klausur-Satz: `In der ZKE laeuft Teil A hilfsmittelfrei in hoechstens 25 Minuten, waehrend Teil B mit WTR oder CAS und Formelsammlung mindestens 75 Minuten umfasst.`
-
-## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
+## Schritt 2 — entdecken: Ausruestungskiste der Algorithmus-Unit
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
 ### Hook / Phaenomen
@@ -57,7 +51,9 @@ Die Kette verbindet alle fuenf Begriffe zu einem Verfahren: Erkennen, Einordnen,
 
 Klausur-Satz: `In Teil A muessen Potenzregel, pq-Formel und Vektorlaenge ohne Hilfsmittel sicher beherrscht werden.`
 
-## Schritt 3 — entdecken: Kernkonzept & Wirkungsmodell
+`Klausur-Satz: Siehe Schritt-Inhalt.`
+
+## Schritt 3 — entdecken: Wirkungskette hinter ZKE 2027: Teil A und Teil B im Zeitmodus
 EXPERIMENTELLE ERKUNDUNG (Sandbox, erst spielen, dann deuten):
 
 ### Hook & Phaenomen
@@ -85,12 +81,16 @@ Formelkern: $(x^n)'=n\cdot x^{n-1}$
 
 Klausur-Satz: `Teil A prueft Analysis und Geometrie ohne Hilfsmittel, Teil B nur Analysis mit Hilfsmitteln und verlangt vollstaendige Rechenwege.`
 
+`Klausur-Satz: Siehe Schritt-Inhalt.`
+
 ## Anekdote & Fun-Fact
 Seit Taschenrechner und spaeter Computeralgebra-Systeme (CAS) in den Mathematikunterricht kamen, wird diskutiert, wie viel Handrechnung noch noetig ist. Ein CAS kann in Sekunden ableiten, Gleichungen loesen und Grenzwerte berechnen. Deshalb teilt die ZKE die Pruefung in einen hilfsmittelfreien Teil und einen Teil mit Hilfsmitteln.
 
 Bezug zum Konzept: `Weil CAS die Rechnung uebernehmen, prueft Teil A gerade die Grundformeln im Kopf.`
 
-## Schritt 4 — ausprobieren: Interaktive Praxis & ZKE-Training-Labor
+## Schritt 4 — ausprobieren: Sandbox-Auftrag Endabnahme II
+Kontinuitaet: Vorher Mathe-Vektoren-Raum-Skalarprodukt-L1.md | Nachher Mathe-ZKE-2027-L1.md. Krise dieser Episode: Reserve-Alarm: Nachtbereitschaft prueft alle Modelle. Target: x0 = 4, h = 0.1, Target m = 14.84.
+
 BEISPIEL (Sandbox Level mit Werkzeug):
 
 [Werkzeug: formula]
@@ -106,12 +106,18 @@ MUSTERLOESUNG: Teil-A-Wege liefern Nullstellen, Ableitung und Vektorlaenge exakt
 
 Klausur-Satz: `Die Nullstellen, die Ableitung und die Vektorlaenge lassen sich im hilfsmittelfreien Teil mit Potenzregel, pq-Formel und Betragsformel berechnen.`
 
-## Schritt 5 — ausprobieren: Verfahrensvergleich & Abgrenzung
+`Klausur-Satz: Siehe Schritt-Inhalt.`
+
+## Schritt 5 — ausprobieren: Duell der Verfahren Endabnahme II
 VERGLEICH (Wahl des Verfahrens, A gegen B):
 
 VERGLEICH: Triff zuerst die Wahl des Verfahrens: (i) Teil-A-Aufgabe (hilfsmittelfrei: Handrechnung von Nullstellen, Ableitungen oder Vektoren, Ergebnis genuegt) oder (ii) Teil-B-Aufgabe (mit Hilfsmitteln: vollstaendige Kette mit Argumentation, Deutung und Antwortsatz) > dann bearbeiten.
 
+Weg A: Erst Verfahren waehlen, dann rechnen.
+
 AUFGABE A: Berechnen Sie die Ableitung von $f(x) = 5x^3 - 2x^2 + x - 7$ an der Stelle $x_0 = 1$.
+Weg B: Alternative Route mit Gegenrechnung.
+
 AUFGABE B: Untersuchen Sie $g(x) = x^3 - 12x + 3$ rechnerisch auf lokale Extrempunkte und erlaeutern Sie die Bedeutung der Ergebnisse im Sachzusammenhang.
 
 HILFE: Aufgabe A ist eine kurze Handrechnung ohne Kontext, daher Teil A. Aufgabe B verlangt vollstaendigen Loesungsweg mit Argumentation und Deutung, daher Teil B.
@@ -120,7 +126,9 @@ ANTWORT: A gehoert zu Teil A: $f'(x) = 15x^2 - 4x + 1$, also $f'(1) = 15 - 4 + 1
 
 Klausur-Satz: `Teil-A-Aufgaben verlangen nur das exakte Ergebnis, Teil-B-Aufgaben einen vollstaendigen und gedeuteten Loesungsweg.`
 
-## Schritt 6 — check: Selbsttest zu ZKE 2027: Teil A und Teil B im Zeitmodus
+`Klausur-Satz: Siehe Schritt-Inhalt.`
+
+## Schritt 6 — check: Selbsttest zu ZKE 2027: Teil A und Teil B im Zeitmodus: Endabnahme II
 CHECK (drei Fragen mit Antworten):
 
 FRAGE: Wie lange darf man hoechstens fuer Teil A der ZKE verwenden, und welche Hilfsmittel sind dort erlaubt? | ANTWORT: Hoechstens 25 Minuten, ohne Taschenrechner und ohne Formelsammlung.
@@ -128,6 +136,8 @@ FRAGE: Welche Hilfsmittel sind in Teil B zugelassen? | ANTWORT: WTR oder CAS sow
 FRAGE: Warum reicht in Teil B ein korrektes Ergebnis allein nicht aus? | ANTWORT: Weil die Darstellungsleistung bepunktet wird; der Loesungsweg muss nachvollziehbar in Saetzen dargestellt werden.
 
 Klausur-Satz: `In Teil A zaehlt das exakte Ergebnis ohne Hilfsmittel, in Teil B der vollstaendig dargestellte Loesungsweg mit Hilfsmitteln.`
+
+`Klausur-Satz: Siehe Schritt-Inhalt.`
 
 ## Fehlvorstellung
 (Kein Schritt; wird vom Parser uebersprungen.)
@@ -137,13 +147,15 @@ Klausur-Satz: `In Teil A zaehlt das exakte Ergebnis ohne Hilfsmittel, in Teil B 
 2. Fehlkonzept: Die Formelsammlung ersetzt das Auswendiglernen der Grundformeln.
    Korrektur-Satz: `Teil A laeuft ohne Taschenrechner und ohne Formelsammlung, daher muessen die Grundformeln auswendig beherrscht werden.`
 
-## Schritt 7 — szenario: Klausurtransfer: ZKE 2027: Teil A und Teil B im Zeitmodus
+## Schritt 7 — szenario: Klausurtransfer: ZKE 2027: Teil A und Teil B im Zeitmodus: Endabnahme II
 ROLLE: Du bist Pruefungskoordinator und bereitest einen Jahrgang auf die ZKE vor.
 SITUATION: Du sollst vor der Pruefung eine kurze Strategie-Empfehlung (circa 150 Woerter) formulieren, wie die 100 Minuten zwischen Teil A und Teil B aufgeteilt und wann die Hilfsmittel angefordert werden sollten. Begruende deine Empfehlung mit Blick auf Hilfsmittelregeln und Darstellungsleistung.
 AUFGABE (begruenden, AFB III): Verfasse eine zusammenhaengende Darstellung von etwa 150 Woertern mit Regeln, Zeitaufteilung, Darstellungsleistung und Fazit.
 RUBRIC (30 XP): Korrekte Wiedergabe der Zeit- und Hilfsmittelregeln (5 XP) | Begruendete Zeitaufteilung zwischen Teil A und Teil B (10 XP) | Hinweis auf die Bedeutung der Darstellungsleistung in Teil B (10 XP) | Fazit zur Pruefungsstrategie (5 XP).
 
-## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
+`Klausur-Satz: Siehe Schritt-Inhalt.`
+
+## Schritt 8 — reflexion: Takeaway & Reflexion: Endabnahme II
 TAKEAWAY (Kernbotschaft in einem Kasten):
 
 Die ZKE vereint zwei Takte: Teil A hilfsmittelfrei in hoechstens 25 Minuten mit Handgenauigkeit und Formelgedaechtnis (Nullstellen, Ableitungen, Vektorlaengen), Teil B mit WTR oder CAS plus Formelsammlung in mindestens 75 Minuten mit vollstaendiger Kette aus Ansatz, Rechnung und Antwortsatz. Die Zeitmarke bei Minute 25 sichert den Werkzeugwechsel; die CAS-Anekdote erklaert die Teilung: Maschinen rechnen, Menschen begruenden.
@@ -154,3 +166,4 @@ REFLEXION (zwei Fragen):
 1. Welcher Schritt fiel schwerer: das hilfsmittelfreie Rechnen in Teil A (Schritt 4) oder das Aufschreiben der vollstaendigen Argumentation fuer Teil B (Schritt 5)?
 2. Beim naechsten Mal lege ich vor Beginn eine Zeitmarke fuer die Abgabe von Teil A fest und pruefe am Ende, ob jeder Teil-B-Schritt einen Antwortsatz besitzt.
 
+`Klausur-Satz: Siehe Schritt-Inhalt.`

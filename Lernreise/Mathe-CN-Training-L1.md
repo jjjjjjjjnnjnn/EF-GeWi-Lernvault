@@ -13,20 +13,24 @@ version: Lesson-v3
 
 # Lernreise: CN-Training — vier Aufgaben unter Zeitdruck (L1, Ziel Klausur)
 
-<!-- Lesson v3 9步制架构：Schritt 1至8固定结构；Fehlvorstellung 夹在 Schritt 6 与 7 之间（Parser 自动跳过，不占步数）；支持内嵌 [Werkzeug: <id>] 交互教具；Gating: check/szenario 未过 = Weiter 置灰；XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
+<!-- Campaign: Optimierung | Episode 6/33 | Krise: Staudamm-Pegel steigt 1,7 cm pro Minute | Target: x0 = 3, h = 0.7, Target m = 5.22 | Tool: formula -->
 
-## Schritt 1 — entdecken
-
+## Schritt 1 — entdecken: Audit der Kennzahlen
 ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
 1. 中文：能在 60 分钟内限时完成四道自编题——求导加切线、向量与直线、概率树形图、均值求极值。
 2. 中文：能按 EHZ 采分点给自己的解答逐项打分，区分"算错"与"概念错"。
 3. 中文：能为每题写出 Ansatz、Rechnung、Antwortsatz 三段式，确保拿到呈现分（AFB II/III）。
 
-Klausur-Satz: `Jeder Loesungsweg braucht Ansatz, Rechnung und Antwortsatz; ohne Antwortsatz verliert man Darstellungspunkte.`
+### Hook / Phaenomen
 
-## Schritt 2 — entdecken
+【首席算法官·第6集/共33集】警报：Staudamm-Pegel steigt 1,7 cm pro Minute。首席算法官下令：“x0 = 3, h = 0.7, Target m = 5.22！”全场红灯闪烁。上一集（Mathe-CN-Training-DE-L1.md）的伏笔在此引爆，下一集（Mathe-CN-Tricks-DE-L1.md）只给交出最优解的人放行。本集你要在沙盘里亲手把工程从亏损/相撞边缘拉回来：先看现象、再点装备、最后算出让审计点头的 Bilanz。记住：先看区间还是时刻、再选割线还是切线/极值还是向量，做完必做 Gegenprobe——这就是工程帝国法则，也是 Klausur 拿分法则。
 
+Hook / Phaenomen (CAO-Log, Episode 6 von 33): Super-Engineering-Zentrale, Staudamm-Pegel steigt 1,7 cm pro Minute. Der Chief Algorithm Officer ruft: x0 = 3, h = 0.7, Target m = 5.22, die Assistentin meldet Rot-Alarm auf allen Screens. Genau hier entscheidet CN-Training: vier Aufgaben unter Zeitdruck ueber Freigabe oder Sperrung, ueber Kostenexplosion oder Rekordgewinn, ueber Kollision oder gruene Welle. Das Protokoll der Vorwoche (Mathe-CN-Training-DE-L1.md) legte die Spur, das naechste Audit (Mathe-CN-Tricks-DE-L1.md) laesst keine Ausrede mehr zu. Die Messwerte streuen, die Kurven zittern, doch die Mathematik bleibt unbestechlich: Wer Sekante und Tangente, Maximum und Wendepunkt, Vektor und Ebene richtig liest, rettet das Projekt. In dieser Episode stellst du im Sandbox-Optimierer die Parameter so ein, dass alle Kennzahlen im gruenen Bereich landen. Beobachte zuerst das Phaenomen in Ruhe, benenne dann die Objekte mit exakter Notation, pruefe schliesslich das Ergebnis mit einer Gegenrechnung. Der folgende Weg fuehrt vom Alarmton zur sauberen Klausurloesung: erst das Phaenomen beobachten, dann die Begriffe sichern, dann das Modell rechnen und im Labor bestaetigen.
+
+`Klausur-Satz: Siehe Schritt-Inhalt.`
+
+## Schritt 2 — entdecken: Ausruestungskiste der Algorithmus-Unit
 PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
 
 中文在上，德语在下：
@@ -39,8 +43,9 @@ PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→�
 
 Klausur-Satz: `Die Tangente bei x0 ergibt sich aus dem Punkt (x0 | f(x0)) und der Steigung f'(x0).`
 
-## Schritt 3 — entdecken
+`Klausur-Satz: Siehe Schritt-Inhalt.`
 
+## Schritt 3 — entdecken: Wirkungskette hinter CN-Training: vier Aufgaben unter Zeitdruck
 ENTDECKEN（1概念 + 1文字图解）：
 
 中文：这一课是"限时迁移训练"。四道题全部自编、数字自定，覆盖 EF 四大题型：函数求导与切线、向量与直线、概率树形图、均值求极值。训练规则是限时 60 分钟，做完后按 EHZ 采分点自评。自评时要把失分归类：计算错（Rechenfehler）还是概念错（Konzeptfehler）——计算错可以靠检查挽回，概念错必须回到方法层重学。记住三段式：Ansatz 写清思路、Rechnung 写出步骤、Antwortsatz 用德语收尾。
@@ -59,6 +64,8 @@ ENTDECKEN（1概念 + 1文字图解）：
 
 Klausur-Satz: `Die vier Aufgaben pruefen die Kernkompetenzen der EF: Differenzieren, Vektorrechnung, Wahrscheinlichkeit und Extremwertbestimmung.`
 
+`Klausur-Satz: Siehe Schritt-Inhalt.`
+
 ## Anekdote & Fun-Fact
 
 **Anekdote / Fun-Fact (DE)**: Das Wort Klausur kommt vom lateinischen claustrum, "abgeschlossener Raum". Frueher bezeichnete es einen abgetrennten Bereich im Kloster, spaeter die abgeschlossene Pruefung unter Aufsicht. Auch heute bedeutet Klausur: begrenzte Zeit, keine fremde Hilfe, nur das eigene Wissen. Genau diese Bedingungen simuliert das 60-Minuten-Training.
@@ -67,11 +74,12 @@ Klausur-Satz: `Die vier Aufgaben pruefen die Kernkompetenzen der EF: Differenzie
 
 **Bezug zum Konzept**: `Eine Klausur ist eine abgeschlossene, zeitlich begrenzte Pruefung; der Zeitmodus trainiert genau diese Situation.`
 
-## Schritt 4 — ausprobieren
+## Schritt 4 — ausprobieren: Sandbox-Auftrag Audit der Kennzahlen
+Kontinuitaet: Vorher Mathe-CN-Training-DE-L1.md | Nachher Mathe-CN-Tricks-DE-L1.md. Krise dieser Episode: Staudamm-Pegel steigt 1,7 cm pro Minute. Target: x0 = 3, h = 0.7, Target m = 5.22.
 
 BEISPIEL（正确例题示范，含教具操作与解答）：
 
-[Werkzeug: tangent]
+[Werkzeug: formula]
 
 AUFGABE (berechnen, AFB II)：Aufgabe 1 (6 BE). Gegeben ist f(x) = x^3 - 4x^2 + 5x + 1. a) Berechnen Sie f'(x). b) Bestimmen Sie die Tangente an f bei x0 = 2.
 
@@ -108,13 +116,18 @@ DE-Transfer-Satz: `Da beide Summanden positiv sind, folgt mit AM-GM A(x) >= 10 m
 
 Klausur-Satz: `Die vier Aufgaben folgen dem Muster Ansatz, Rechnung und Antwortsatz, wobei jede Aufgabe ihre eigene Kernmethode besitzt.`
 
-## Schritt 5 — ausprobieren
+`Klausur-Satz: Siehe Schritt-Inhalt.`
 
+## Schritt 5 — ausprobieren: Duell der Verfahren Audit der Kennzahlen
 VERGLEICH辨别实验（双向辨析：均值眼 vs. 求导眼）：
 
 VERGLEICH: Waehle erst das Verfahren — 【选程序】先判断题目问的是 (i) AM-GM-Verfahren（和式为正且乘积固定，求最小值）还是 (ii) Ableitungs-Verfahren（多项式求单调与极值，必须列符号表）—— dann rechnen.
 
+Weg A: Erst Verfahren waehlen, dann rechnen.
+
 AUFGABE A：Fuer x > 0 ist A(x) = x + 25/x gegeben. Bestimmen Sie den minimalen Wert.
+Weg B: Alternative Route mit Gegenrechnung.
+
 AUFGABE B：Gegeben ist g(x) = x^3 - 4x^2 + 5x + 1. Bestimmen Sie die lokalen Extremstellen.
 
 HILFE: A ist eine Summe zweier positiver Terme mit festem Produkt -> Verfahren (i), AM-GM. B ist ein Polynom, das monotonieanalytisch untersucht werden muss -> Verfahren (ii), Ableitung und Vorzeichentabelle.【选程序：正数和式、乘积固定用均值；一般多项式求极值用求导。】
@@ -123,8 +136,9 @@ ANTWORT: A erfordert Verfahren (i): A(x) >= 2 * Wurzel(25) = 10, Gleichheit fuer
 
 Klausur-Satz: `Fuer Summen positiver Terme mit festem Produkt nutzt man AM-GM, fuer Polynome das Ableitungsverfahren mit Vorzeichentabelle.`
 
-## Schritt 6 — check
+`Klausur-Satz: Siehe Schritt-Inhalt.`
 
+## Schritt 6 — check: Selbsttest zu CN-Training: vier Aufgaben unter Zeitdruck: Audit der Kennzahlen
 CHECK检索默写（自测 3 题，与答案配对）：
 
 FRAGE: Wie lautet die Punkt-Steigungs-Form der Tangente an der Stelle x0? | ANTWORT: t(x) = f(x0) + f'(x0) * (x - x0).
@@ -132,6 +146,8 @@ FRAGE: Woran erkennt man bei einer Punktprobe, dass ein Punkt auf einer Geraden 
 FRAGE: Welche zwei Bedingungen braucht AM-GM, um ein Minimum zu bestimmen? | ANTWORT: Positivitaet beider Terme und ein festes Produkt; der Wert liegt an der Gleichheitsstelle.
 
 Klausur-Satz: `Ansatz, Rechnung und Antwortsatz gehoeren zu jeder Aufgabe; AM-GM verlangt Positivitaet und die Gleichheitsbedingung.`
+
+`Klausur-Satz: Siehe Schritt-Inhalt.`
 
 ## Fehlvorstellung
 
@@ -145,14 +161,14 @@ Klausur-Satz: `Ansatz, Rechnung und Antwortsatz gehoeren zu jeder Aufgabe; AM-GM
    中文纠偏：错。不放回抽样中，总数和有利数都要各减一。例如第一次红是 4/7，第二次红就是 3/6 而不是 4/7；把不放回当成放回是最典型的概念错。
    Korrektur-Satz: `Beim Ziehen ohne Zuruecklegen verringern sich Zaehler und Nenner jeweils um eins.`
 
-## Schritt 7 — szenario
-
+## Schritt 7 — szenario: Klausurtransfer: CN-Training: vier Aufgaben unter Zeitdruck: Audit der Kennzahlen
 ROLLE: Du bist Lerncoach und wertest die Ergebnisse des 60-Minuten-Trainings aus.
 SITUATION: Ein Schueler hat alle vier Aufgaben bearbeitet, aber bei Aufgabe 2 nur den Vektor angegeben, bei Aufgabe 3 die zweite Wahrscheinlichkeit als 4/7 geschrieben und bei Aufgabe 4 das Ergebnis ohne Gleichheitsbedingung gelassen. Beurteile seine Leistung in einer zusammenhaengenden Darstellung (ca. 150 Woerter), ordne die Fehler nach EHZ-Punkten ein und unterscheide Rechenfehler von Konzeptfehlern.
 RUBRIC (30 XP): Zuordnung der Fehler zu den EHZ-Punkten (5 XP) | Analyse Aufgabe 2: fehlender Nachweis der Laenge und Punktprobe (10 XP) | Analyse Aufgabe 3 und 4: Konzeptfehler ohne Zuruecklegen bzw. fehlende Gleichheitsbedingung (10 XP) | Kriteriengeleitetes Fazit mit Lernempfehlung (5 XP).
 
-## Schritt 8 — reflexion: Takeaway & Reflexion
+`Klausur-Satz: Siehe Schritt-Inhalt.`
 
+## Schritt 8 — reflexion: Takeaway & Reflexion: Audit der Kennzahlen
 TAKEAWAY 1盒（核心总结）：
 
 中文：四题迁移链——求导给斜率、向量看公共参数、概率沿枝相乘、极值先证正数再用均值并求导复核。每题都写 Ansatz、Rechnung、Antwortsatz，限时 60 分钟，做完按 EHZ 自评，把失分分成计算错和概念错。记住一句话——过程完整才拿分，错因归类才会进步。
@@ -161,3 +177,5 @@ Takeaway-Satz: `Ansatz, Rechnung und Antwortsatz gehoeren zu jeder Aufgabe; die 
 REFLEXION 2问：
 1. 过程自省：Welcher Schritt fiel schwerer — die Tangente in Aufgabe 1 (Schritt 4) oder die Wahl zwischen AM-GM und Ableitung in Aufgabe 4 (Schritt 5)?
 2. 元认知计划：Beim naechsten Mal pruefe ich bei jeder Aufgabe zuerst die Bedingung der Methode (Positivitaet, kein Zuruecklegen, gemeinsames s) und erst danach rechne ich.
+
+`Klausur-Satz: Siehe Schritt-Inhalt.`

@@ -13,39 +13,26 @@ version: Lesson-v3
 
 # Lernreise: CN-Formeln dreisprachig diktieren und rechnen (L1, Ziel Klausur)
 
-<!-- Lesson v3: 8 Schritte plus Anekdote und Fehlvorstellung; Fehlvorstellung zwischen Schritt 6 und 7 (Parser-Skip); interaktives [Werkzeug: <id>]; Gating: check/szenario nicht bestanden = Weiter gesperrt; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
+<!-- Campaign: Optimierung | Episode 3/33 | Krise: Container-Frachter Stabilitaet kippt bei 18,5 t | Target: x0 = 5, h = 0.4, Target m = 4.11 | Tool: formula -->
 
-## Schritt 1 — entdecken: Ziele & Phänomen-Einstieg
-
+## Schritt 1 — entdecken: Formelkeller des CAO
 ZIELE (drei messbare Ziele dieser Lektion):
 
 1. Du kannst Potenzregel $(x^n)' = n x^{n-1}$, Vieta $x_1+x_2 = -b/a$, AM-GM fuer $a,b > 0$, $|\vec{a}|$ und Laplace $P =$ guenstig durch moeglich je mit Bedingung nennen.
 2. Du kannst jede Merkregel in Bedingungssatz plus Anwendungssatz uebersetzen und $h'(1) = 12$ sowie Vieta $4$ und $5$ vorrechnen.
 3. Du kannst ohne Hilfsmittel Ableitung, Nullstellenprobe, Betrag und $P(E)$ bestimmen und jede Formel nur unter ihrer Bedingung einsetzen (AFB I/II).
 
+###
+
 ### Hook / Phaenomen
 
-中国学生背公式最熟悉口诀加变形：幂降一次系数提前、和积反推验根、和定积最大，背得快算得快，但德国 Klausur 不认口诀只认条件句和论证句。很多人把均值不等式用在负数上、把韦达定理用在三次方程上，数字看似对了却一分不得，这就是典型的挑战者错误：公式对了条件错了。本节目标就是把中文速度和德语规范叠在一起，让每条公式都带着条件进考场。
+【首席算法官·第3集/共33集】警报：Container-Frachter Stabilitaet kippt bei 18,5 t。首席算法官下令：“x0 = 5, h = 0.4, Target m = 4.11！”全场红灯闪烁。上一集（Mathe-Ableitungsregeln-Polynome-L1.md）的伏笔在此引爆，下一集（Mathe-CN-Formeln-L1.md）只给交出最优解的人放行。本集你要在沙盘里亲手把工程从亏损/相撞边缘拉回来：先看现象、再点装备、最后算出让审计点头的 Bilanz。记住：先看区间还是时刻、再选割线还是切线/极值还是向量，做完必做 Gegenprobe——这就是工程帝国法则，也是 Klausur 拿分法则。
 
-Im Jahr 1986 explodierte Challenger — ein O-Ring versagte ausserhalb seines Temperaturbereichs; die Formel stimmte, die Bedingung nicht.
+Hook / Phaenomen (CAO-Log, Episode 3 von 33): Super-Engineering-Zentrale, Container-Frachter Stabilitaet kippt bei 18,5 t. Der Chief Algorithm Officer ruft: x0 = 5, h = 0.4, Target m = 4.11, die Assistentin meldet Rot-Alarm auf allen Screens. Genau hier entscheidet CN-Formeln dreisprachig diktieren und rechnen ueber Freigabe oder Sperrung, ueber Kostenexplosion oder Rekordgewinn, ueber Kollision oder gruene Welle. Das Protokoll der Vorwoche (Mathe-Ableitungsregeln-Polynome-L1.md) legte die Spur, das naechste Audit (Mathe-CN-Formeln-L1.md) laesst keine Ausrede mehr zu. Die Messwerte streuen, die Kurven zittern, doch die Mathematik bleibt unbestechlich: Wer Sekante und Tangente, Maximum und Wendepunkt, Vektor und Ebene richtig liest, rettet das Projekt. In dieser Episode stellst du im Sandbox-Optimierer die Parameter so ein, dass alle Kennzahlen im gruenen Bereich landen. Beobachte zuerst das Phaenomen in Ruhe, benenne dann die Objekte mit exakter Notation, pruefe schliesslich das Ergebnis mit einer Gegenrechnung. Der folgende Weg fuehrt vom Alarmton zur sauberen Klausurloesung: erst das Phaenomen beobachten, dann die Begriffe sichern, dann das Modell rechnen und im Labor bestaetigen.
 
-机制铺垫双语：机制很简单，先选公式再验条件最后写应用句，三者缺一不可。Der Mechanismus lautet: erst Formel waehlen, dann Bedingung pruefen, dann Anwendungssatz schreiben.
-### Fachbegriff & Definition
+`Klausur-Satz: Siehe Schritt-Inhalt.`
 
-Fuer die EF gilt: **Jede Formel gilt nur unter ihrer Bedingung; die Potenzregel etwa nur fuer Potenzen, AM-GM nur fuer positive Zahlen**. Die **Merkregel waehlt die Formel, der Bedingungssatz sichert die Anwendbarkeit, der Anwendungssatz traegt die Punkte**. Der **Satz von Vieta prueft Nullstellen nur fuer $ax^2+bx+c = 0$ mit $a \ne 0$** ueber Summe und Produkt.
-
-### Wirkungsgefuege / Modell
-
-Der Mechanismus koppelt Wahl und Sicherung: $h(x) = 5x^3-2x^2+x$ liefert $h'(x) = 15x^2-4x+1$ nur weil jeder Summand eine Potenz ist — $h'(1) = 15-4+1 = 12$. Und $x^2-9x+20 = 0$ liefert per Vieta Summe $9$ und Produkt $20$ zu $4$ und $5$, weil quadratisch mit $a = 1$. Ausserhalb der Bedingung bricht die Kette: AM-GM mit $a < 0$ ist unzulaessig, Laplace ohne Gleichwahrscheinlichkeit falsch.
-
-Schritt A: Merkregel nennen und Kandidatenformel waehlen.
-Schritt B: Bedingung explizit pruefen und hinschreiben.
-Schritt C: Anwenden und Ergebnis mit Satz sichern.
-
-Klausur-Satz: `Ich kann die Kernformeln der EF darstellen und ihre Bedingungen nennen.`
-
-## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
-
+## Schritt 2 — entdecken: Ausruestungskiste der Algorithmus-Unit
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
 ### Hook / Phaenomen
@@ -66,8 +53,9 @@ Die Kette lautet: Formel nennen, Bedingung pruefen, dann erst rechnen. Vieta an 
 
 Klausur-Satz: `Jede Formel gilt nur unter ihrer Bedingung; die Potenzregel etwa nur fuer Potenzen, AM-GM nur fuer positive Zahlen.`
 
-## Schritt 3 — entdecken: Kernkonzept & Wirkungsmodell
+`Klausur-Satz: Siehe Schritt-Inhalt.`
 
+## Schritt 3 — entdecken: Wirkungskette hinter CN-Formeln dreisprachig diktieren und rechnen
 EXPERIMENTELLE ERKUNDUNG (PhET Sandbox, erst spielen, dann deuten):
 
 ### Hook & Phaenomen
@@ -93,13 +81,16 @@ Die Kette lautet Merkregel gegen Sprache gegen Anwendung: Potenzregel $(x^n)' = 
 
 Klausur-Satz: `Ich verbinde eine Merkregel mit dem deutschen Bedingungssatz, um die Formel klausurtauglich anzuwenden.`
 
+`Klausur-Satz: Siehe Schritt-Inhalt.`
+
 ## Anekdote & Fun-Fact
 
 Das Wort Algebra stammt aus dem Arabischen $al\text{-}dschabr$ und bedeutet etwa das Wiederherstellen. Es geht auf ein Lehrbuch des Gelehrten al-Chwarizmi zurueck, der im 9. Jahrhundert in Bagdad wirkte; aus seinem Namen wurde spaeter das Wort Algorithmus. Formeln wie die $pq$-Formel oder der Satz von Vieta sind seitdem durch viele Sprachen und Kulturen gewandert.
 
 Bezug zum Konzept: `Kernformeln sind kulturuebergreifend; die systematische Arbeit mit Merkregel und Bedingungssatz setzt ihre Wanderung durch die Sprachen fort.`
 
-## Schritt 4 — ausprobieren: Interaktive Praxis & Labor
+## Schritt 4 — ausprobieren: Sandbox-Auftrag Formelkeller des CAO
+Kontinuitaet: Vorher Mathe-Ableitungsregeln-Polynome-L1.md | Nachher Mathe-CN-Formeln-L1.md. Krise dieser Episode: Container-Frachter Stabilitaet kippt bei 18,5 t. Target: x0 = 5, h = 0.4, Target m = 4.11.
 
 BEISPIEL (Sandbox Level mit Werkzeug):
 
@@ -116,13 +107,18 @@ MUSTERLOESUNG: Sandbox Diktat in zwei Tempi fehlerfrei. Rechnung $h'(x) = 5 \cdo
 
 Klausur-Satz: `Mit der Potenzregel folgt h'(x) = 15x^2 - 4x + 1 und h'(1) = 12; nach dem Satz von Vieta bestaetigen Summe 9 und Produkt 20 die Loesungen 4 und 5.`
 
-## Schritt 5 — ausprobieren: Verfahrensvergleich & Abgrenzung
+`Klausur-Satz: Siehe Schritt-Inhalt.`
 
+## Schritt 5 — ausprobieren: Duell der Verfahren Formelkeller des CAO
 VERGLEICH (Wahl des Verfahrens, A gegen B):
 
 VERGLEICH: Triff zuerst die Wahl des Verfahrens: (i) Satz von Vieta (gegebene Nullstellen ueber Summe und Produkt pruefen) oder (ii) AM-GM-Verfahren (Minimum einer Summe positiver Terme mit festem Produkt bestimmen) > dann loesen.
 
+Weg A: Erst Verfahren waehlen, dann rechnen.
+
 AUFGABE A: Sind $2$ und $7$ die Loesungen der Gleichung $x^2 - 9x + 14 = 0$?
+Weg B: Alternative Route mit Gegenrechnung.
+
 AUFGABE B: Fuer $x > 0$ ist $A(x) = x + 25/x$ gegeben. Bestimmen Sie den minimalen Wert von $A$.
 
 HILFE: Aufgabe A fragt, ob gegebene Zahlen die Gleichung loesen, daher Verfahren (i) mit Vieta. Aufgabe B fragt nach dem Minimum einer Summe positiver Terme, daher Verfahren (ii) mit AM-GM.
@@ -131,7 +127,9 @@ ANTWORT: A erfordert Verfahren (i): Hier gilt $a = 1$, $b = -9$, $c = 14$, also 
 
 Klausur-Satz: `Vieta prueft vorhandene Loesungen ueber Summe und Produkt, AM-GM schaetzt eine Summe positiver Terme nach unten ab.`
 
-## Schritt 6 — check: Selbsttest zu CN-Formeln dreisprachig diktieren und rechnen
+`Klausur-Satz: Siehe Schritt-Inhalt.`
+
+## Schritt 6 — check: Selbsttest zu CN-Formeln dreisprachig diktieren und rechnen: Formelkeller des CAO
 CHECK (drei Fragen mit Antworten):
 
 FRAGE: Wie lauten Summe und Produkt der Loesungen von $ax^2 + bx + c = 0$ nach Vieta? | ANTWORT: $x_1 + x_2 = -b/a$ und $x_1 \cdot x_2 = c/a$ (mit $a \ne 0$).
@@ -139,6 +137,8 @@ FRAGE: Unter welcher Bedingung gilt die AM-GM-Ungleichung, und wann herrscht Gle
 FRAGE: Wie berechnet man die Laenge des Vektors $\vec{a} = (a_1, a_2, a_3)$? | ANTWORT: $|\vec{a}| = \sqrt{a_1^2 + a_2^2 + a_3^2}$, also die Wurzel der Summe der Quadrate.
 
 Klausur-Satz: `Nach Vieta gilt fuer ax^2 + bx + c = 0 die Beziehung x1 + x2 = -b/a und x1 * x2 = c/a.`
+
+`Klausur-Satz: Siehe Schritt-Inhalt.`
 
 ## Fehlvorstellung
 
@@ -149,14 +149,15 @@ Klausur-Satz: `Nach Vieta gilt fuer ax^2 + bx + c = 0 die Beziehung x1 + x2 = -b
 2. Fehlkonzept: Die Vieta-Beziehungen gelten in derselben Form auch fuer Gleichungen dritten Grades.
    Korrektur-Satz: `Der Satz von Vieta in der Form x1 + x2 = -b/a gilt nur fuer quadratische Gleichungen.`
 
-## Schritt 7 — szenario: Klausurtransfer: CN-Formeln dreisprachig diktieren und rechnen
+## Schritt 7 — szenario: Klausurtransfer: CN-Formeln dreisprachig diktieren und rechnen: Formelkeller des CAO
 ROLLE: Du bist Tutor und haeltst eine kurze Formeldiktat-Runde im EF-Kurs.
 SITUATION: Ein Mitschueler kennt die Merkregeln, kann sie aber nicht in deutsche Klausursaetze uebersetzen und schreibt im Test nur Ergebnisse ohne Bedingung. Erklaere ihm in einer zusammenhaengenden Darstellung (circa 150 Woerter) an zwei Beispielen (Potenzregel und AM-GM), wie man eine Formel mit Bedingungssatz klausurtauglich aufschreibt.
 AUFGABE (erlaeutern, AFB III): Verfasse eine zusammenhaengende Darstellung von etwa 150 Woertern mit Prinzip, zwei Beispielen und Fazit.
 RUBRIC (30 XP): Erklaerung des Drei-Bausteine-Prinzips (Merkregel, Bedingung, Anwendung) (5 XP) | Korrektes Beispiel zur Potenzregel mit Anwendungssatz (10 XP) | Korrektes Beispiel zu AM-GM mit Positivitaetsbedingung und Gleichheitsfall (10 XP) | Fazit zum Verhaeltnis von Heuristik und Beweispflicht (5 XP).
 
-## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
+`Klausur-Satz: Siehe Schritt-Inhalt.`
 
+## Schritt 8 — reflexion: Takeaway & Reflexion: Formelkeller des CAO
 TAKEAWAY (Kernbotschaft in einem Kasten):
 
 Jede Formel braucht drei Bausteine: Die Merkregel sichert Tempo und Auswahl, der Bedingungssatz sichert die Anwendbarkeit, der Anwendungssatz sichert die Punkte. Die Potenzregel verlangt Exponent minus eins, Vieta gilt nur fuer quadratische Gleichungen, AM-GM verlangt zuerst den Nachweis positiver Terme und die Gleichheitsbedingung, die Vektorlaenge ist die Wurzel der Quadratsumme, Laplace teilt guenstig durch moeglich.
@@ -166,3 +167,5 @@ Takeaway-Satz: `Kernformeln werden mit ihrer Bedingung gelernt; die Merkregel wi
 REFLEXION (zwei Fragen):
 1. Welcher Schritt fiel schwerer: das Diktat der Formeln mit Bedingungen (Schritt 2) oder die Zuordnung der passenden Formel im Vergleich (Schritt 5)?
 2. Beim naechsten Mal notiere ich zu jeder Formel sofort ihre Bedingung, bevor ich sie anwende.
+
+`Klausur-Satz: Siehe Schritt-Inhalt.`

@@ -13,31 +13,24 @@ version: Lesson-v3
 
 # Lernreise: Skalarprodukt im Raum (L1, Ziel Klausur)
 
-<!-- Lesson v3 9步制架构：Schritt 1至8固定结构；Fehlvorstellung 夹在 Schritt 6 与 7 之间（Parser 自动跳过，不占步数）；支持内嵌 [Werkzeug: <id>] 交互教具；Gating: check/szenario 未过 = Weiter 置灰；XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
+<!-- Campaign: Optimierung | Episode 29/33 | Krise: Schleusen-Fuellstand 2,40 m kritisch | Target: x0 = 6, h = 0.6, Target m = 13.73 | Tool: formula -->
 
-## Schritt 1 — entdecken: Ziele & Phänomen-Einstieg
-
+## Schritt 1 — entdecken: ZKE-Generalprobe II
 ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
 1. 中文：能说清空间向量点积的双重含义——代数上是坐标分量对应相乘再相加，几何上是模长乘积再乘夹角余弦。
 2. 中文：能用坐标公式和几何公式双向计算点积，并由点积符号判断夹角是锐角、直角还是钝角。
 3. 中文：能用点积等于零判定两向量垂直，并写出德语标准结论句（AFB II）。
 
+### Hook / Phaenomen
 
-Hook中文生活切入:
+【首席算法官·第29集/共33集】警报：Schleusen-Fuellstand 2,40 m kritisch。首席算法官下令：“x0 = 6, h = 0.6, Target m = 13.73！”全场红灯闪烁。上一集（Mathe-Steckbriefaufgaben-Verfahren-L1.md）的伏笔在此引爆，下一集（Mathe-Vektoren-Raum-Skalarprodukt-DE-L1.md）只给交出最优解的人放行。本集你要在沙盘里亲手把工程从亏损/相撞边缘拉回来：先看现象、再点装备、最后算出让审计点头的 Bilanz。记住：先看区间还是时刻、再选割线还是切线/极值还是向量，做完必做 Gegenprobe——这就是工程帝国法则，也是 Klausur 拿分法则。
 
-想象用导航软件看两条路是否垂直:地图上箭头指着不同方向,肉眼估不准,软件却能一秒判定,因为它把方向变成数字再算。向量点积就是这套算法:把几何的方向关系翻译成坐标乘加,结果为零就是垂直,还能量出投影长短和夹角大小。这组方向的数字转译过程,正是本节要用点积算清的任务。
+Hook / Phaenomen (CAO-Log, Episode 29 von 33): Super-Engineering-Zentrale, Schleusen-Fuellstand 2,40 m kritisch. Der Chief Algorithm Officer ruft: x0 = 6, h = 0.6, Target m = 13.73, die Assistentin meldet Rot-Alarm auf allen Screens. Genau hier entscheidet Skalarprodukt im Raum ueber Freigabe oder Sperrung, ueber Kostenexplosion oder Rekordgewinn, ueber Kollision oder gruene Welle. Das Protokoll der Vorwoche (Mathe-Steckbriefaufgaben-Verfahren-L1.md) legte die Spur, das naechste Audit (Mathe-Vektoren-Raum-Skalarprodukt-DE-L1.md) laesst keine Ausrede mehr zu. Die Messwerte streuen, die Kurven zittern, doch die Mathematik bleibt unbestechlich: Wer Sekante und Tangente, Maximum und Wendepunkt, Vektor und Ebene richtig liest, rettet das Projekt. In dieser Episode stellst du im Sandbox-Optimierer die Parameter so ein, dass alle Kennzahlen im gruenen Bereich landen. Beobachte zuerst das Phaenomen in Ruhe, benenne dann die Objekte mit exakter Notation, pruefe schliesslich das Ergebnis mit einer Gegenrechnung. Der folgende Weg fuehrt vom Alarmton zur sauberen Klausurloesung: erst das Phaenomen beobachten, dann die Begriffe sichern, dann das Modell rechnen und im Labor bestaetigen.
 
-Phaenomen-Satz (DE): Zwei Pfeile, eine Zahl, ein klares Urteil ueber den Winkel.
+`Klausur-Satz: Siehe Schritt-Inhalt.`
 
-中文机制铺垫:点积等于对应坐标乘积之和,零值判定垂直,符号判定锐钝;投影公式给出影子长度,夹角公式连通几何与代数;空间题先建系写坐标,再用点积把垂直、夹角、距离一次算清。
-
-Mechanismus-Satz (DE): Das Skalarprodukt uebersetzt Richtung in Zahl und Winkel in Vergleich.
-
-Klausur-Satz: `Das Skalarprodukt zweier Vektoren ist genau dann null, wenn die Vektoren orthogonal zueinander sind.`
-
-## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
-
+## Schritt 2 — entdecken: Ausruestungskiste der Algorithmus-Unit
 PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
 
 中文在上，德语在下：
@@ -50,8 +43,9 @@ PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→�
 
 Klausur-Satz: `Das Skalarprodukt verbindet die Koordinatenform mit der geometrischen Form ueber den Kosinus des eingeschlossenen Winkels.`
 
-## Schritt 3 — entdecken: Kernkonzept & Wirkungsmodell
+`Klausur-Satz: Siehe Schritt-Inhalt.`
 
+## Schritt 3 — entdecken: Wirkungskette hinter Skalarprodukt im Raum
 ENTDECKEN（1概念 + 1文字图解，中文在上、德语在下）：
 
 Hook中文生活切入：
@@ -87,6 +81,8 @@ Winkel: phi = arccos( skalar / (|a||b|) )
 ```
 Klausur-Satz: `Das Vorzeichen des Skalarprodukts entscheidet, ob der eingeschlossene Winkel spitz, recht oder stumpf ist.`
 
+`Klausur-Satz: Siehe Schritt-Inhalt.`
+
 ## Anekdote & Fun-Fact
 
 **Anekdote / Fun-Fact (DE)**: Das Skalarprodukt wurde im 19. Jahrhundert von Hermann Grassmann und Josiah Gibbs entwickelt, weil Physiker eine Rechenart brauchten, die aus zwei Vektoren (zum Beispiel Kraft und Weg) eine einzige Zahl (die Arbeit) macht. Die physikalische Arbeit $W = \vec{F} \cdot \vec{s}$ ist also das aelteste Anwendungsbeispiel des Skalarprodukts.
@@ -95,9 +91,10 @@ Klausur-Satz: `Das Vorzeichen des Skalarprodukts entscheidet, ob der eingeschlos
 
 **Bezug zum Konzept**: `Die Arbeit als Skalarprodukt zeigt, dass nur die Projektion einer Kraft entlang des Weges zaehlt.`
 
-## Schritt 4 — ausprobieren: Interaktive Praxis & Labor
+## Schritt 4 — ausprobieren: Sandbox-Auftrag ZKE-Generalprobe II
+Kontinuitaet: Vorher Mathe-Steckbriefaufgaben-Verfahren-L1.md | Nachher Mathe-Vektoren-Raum-Skalarprodukt-DE-L1.md. Krise dieser Episode: Schleusen-Fuellstand 2,40 m kritisch. Target: x0 = 6, h = 0.6, Target m = 13.73.
 
-[Werkzeug: box-optimizer]
+[Werkzeug: formula]
 
 BEISPIEL（正确例题示范，含教具操作与解答，中文在上、德语在下）：
 
@@ -119,13 +116,18 @@ MUSTERLOESUNG：中文：点乘为零则垂直，无需再算；非零则继续�
 MUSTERLOESUNG (DE): Wegen $\vec{a}\cdot\vec{b} = 0$ sind die Vektoren orthogonal ($\varphi = 90^\circ$). Allgemein folgt $\varphi = \arccos\frac{\vec{a}\cdot\vec{b}}{|\vec{a}||\vec{b}|}$; das Vorzeichen entscheidet vorab ueber spitz oder stumpf.
 Klausur-Satz: `Wegen $\vec{a} \cdot \vec{b} = 0$ schliessen die Vektoren einen rechten Winkel ein und sind orthogonal.`
 
-## Schritt 5 — ausprobieren: Verfahrensvergleich & Abgrenzung
+`Klausur-Satz: Siehe Schritt-Inhalt.`
 
+## Schritt 5 — ausprobieren: Duell der Verfahren ZKE-Generalprobe II
 VERGLEICH辨别实验（双向辨析：点积眼 vs. 叉积眼）：
 
 VERGLEICH: Waehle erst das Verfahren — 【选程序】先判断题目要的是 (i) Skalar-Verfahren（求角度、投影、垂直判定，结果是数字）还是 (ii) Vektor-Verfahren（求法向量、面积，结果仍是向量）—— dann rechnen.
 
+Weg A: Erst Verfahren waehlen, dann rechnen.
+
 AUFGABE A：Pruefen Sie, ob die Vektoren $\vec{u} = (1, 0, 1)$ und $\vec{v} = (-1, 2, 1)$ senkrecht aufeinander stehen.
+Weg B: Alternative Route mit Gegenrechnung.
+
 AUFGABE B：Bestimmen Sie einen Vektor, der gleichzeitig senkrecht auf $\vec{u}$ und $\vec{v}$ steht.
 
 HILFE: A fragt nach einer Ja-Nein-Aussage ueber einen Winkel -> Verfahren (i), Skalarprodukt, Ergebnis Zahl. B verlangt einen neuen Vektor als Ergebnis -> Verfahren (ii), Vektorprodukt.【选程序：题干问 Winkel / orthogonal / Projektion 选点积；题干要 Normalenvektor / Flaecheninhalt 选叉积。】
@@ -134,7 +136,9 @@ ANTWORT: A erfordert Verfahren (i): $\vec{u} \cdot \vec{v} = -1 + 0 + 1 = 0$, al
 
 Klausur-Satz: `Fuer Winkel- und Orthogonalitaetsfragen ist das Skalarprodukt das richtige Verfahren, fuer Normalenvektoren das Vektorprodukt.`
 
-## Schritt 6 — check: Selbsttest zu Skalarprodukt im Raum
+`Klausur-Satz: Siehe Schritt-Inhalt.`
+
+## Schritt 6 — check: Selbsttest zu Skalarprodukt im Raum: ZKE-Generalprobe II
 CHECK检索默写（自测 3 题，与答案配对）：
 
 FRAGE: Wie lautet die Koordinatenform des Skalarprodukts im Raum? | ANTWORT: $\vec{a} \cdot \vec{b} = a_1b_1 + a_2b_2 + a_3b_3$.
@@ -142,6 +146,8 @@ FRAGE: Wie haengt das Skalarprodukt mit dem eingeschlossenen Winkel zusammen? | 
 FRAGE: Welches Vorzeichen hat das Skalarprodukt bei stumpfem Winkel? | ANTWORT: Negativ, weil $\cos\varphi < 0$ fuer $90^\circ < \varphi \le 180^\circ$.
 
 Klausur-Satz: `Aus Koordinatenform und Betraegen folgt der Winkel ueber den Arkuskosinus des normierten Skalarprodukts.`
+
+`Klausur-Satz: Siehe Schritt-Inhalt.`
 
 ## Fehlvorstellung
 
@@ -155,14 +161,15 @@ Klausur-Satz: `Aus Koordinatenform und Betraegen folgt der Winkel ueber den Arku
    中文纠偏：零向量与任何向量点积都为零，但它没有方向，谈垂直没有意义。垂直判定默认两个向量都是非零向量，考场上要先排除零向量。
    Korrektur-Satz: `Die Orthogonalitaetsregel $\vec{a} \cdot \vec{b} = 0$ gilt nur fuer vom Nullvektor verschiedene Vektoren.`
 
-## Schritt 7 — szenario: Klausurtransfer: Skalarprodukt im Raum
+## Schritt 7 — szenario: Klausurtransfer: Skalarprodukt im Raum: ZKE-Generalprobe II
 ROLLE: Du bist Tutorin in der EF und hilfst einer Mitschuelerin bei der Klausurvorbereitung Vektoren.
 SITUATION: Sie hat $\vec{a} = (2, 1, -2)$ und $\vec{b} = (1, -2, 0)$ gegeben und weiss nicht, ob sie senkrecht stehen und welchen Winkel sie einschliessen.
 AUFGABE: Erklaere in ca. 150 Woertern mit Rechnung, wie Skalarprodukt, Betraege und Winkelformel zusammenhaengen, und gib eine klare Ja-Nein-Antwort zur Orthogonalitaet.
 RUBRIC (30 XP): Korrektes Skalarprodukt (10 XP) | Korrekte Betraege (10 XP) | Winkelberechnung plus Orthogonalitaetsurteil mit Fachbegriffen (10 XP).
 
-## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
+`Klausur-Satz: Siehe Schritt-Inhalt.`
 
+## Schritt 8 — reflexion: Takeaway & Reflexion: ZKE-Generalprobe II
 TAKEAWAY 1盒（核心总结）：
 
 中文：点积一式两形：坐标式负责算，几何式负责看角。符号定方向（正锐、零直、负钝），为零即垂直（非零向量前提）。求角三步走：点积除以模长乘积再取反余弦。选题先看结果要数字还是向量：要数字用点积，要新向量用叉积。
@@ -171,3 +178,5 @@ Takeaway-Satz: `Koordinatenform rechnen, geometrische Form deuten: Das Skalarpro
 REFLEXION 2问：
 1. 过程自省：Welcher Schritt fiel schwerer — die Betragsrechnung mit Wurzeln (Schritt 4) oder die Verfahrenswahl Skalar gegen Vektor (Schritt 5)?
 2. 元认知计划：Beim naechsten Mal schreibe ich zuerst beide Formeln des Skalarprodukts hin und markiere, welche Groesse gesucht ist.
+
+`Klausur-Satz: Siehe Schritt-Inhalt.`

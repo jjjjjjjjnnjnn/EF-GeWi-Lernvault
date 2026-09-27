@@ -13,39 +13,26 @@ version: Lesson-v3
 
 # Lernreise: CN-Tricks: sechs Schnellverfahren (L1, Ziel Klausur)
 
-<!-- Lesson v3: 8 Schritte plus Anekdote und Fehlvorstellung; Fehlvorstellung zwischen Schritt 6 und 7 (Parser-Skip); interaktives [Werkzeug: <id>]; Gating: check/szenario nicht bestanden = Weiter gesperrt; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
+<!-- Campaign: Optimierung | Episode 7/33 | Krise: Flugkorridor-Konflikt: 2 Jets 4,8 km Abstand | Target: x0 = 4, h = 0.8, Target m = 5.59 | Tool: formula -->
 
-## Schritt 1 — entdecken: Ziele & Phänomen-Einstieg
-
+## Schritt 1 — entdecken: Tricks im Serverraum
 ZIELE (drei messbare Ziele dieser Lektion):
 
 1. Du kannst sechs Heuristiken nennen: Spezialwert, Ausschluss, Skizze, Vieta, AM-GM und Parametertrennung je mit Bedingung.
 2. Du kannst $2^{30}$ gegen $3^{20}$ per $8^{10}$ gegen $9^{10}$ zu $a < b$ entscheiden und per Potenzgesetzen belegen.
 3. Du kannst jede Vermutung per Standardweg sichern und bei verletzter Bedingung sofort wechseln, denn Reinschrift verlangt Beweis (AFB II/III).
 
+###
+
 ### Hook / Phaenomen
 
-没有计算器怎么比较二的三十次方和三的二十次方的大小：直接乘开算到手酸，换个角度几秒钟就出答案。把二的三十次方看成八的十次方、三的二十次方看成九的十次方，指数拉平之后大小一目了然。中国学生喜欢这种快速做法，德国卷面却要求草稿纸猜测加正稿证明。本节把六种捷径全部贴上条件标签，让快方法只帮忙找方向而不取代证明。
+【首席算法官·第7集/共33集】警报：Flugkorridor-Konflikt: 2 Jets 4,8 km Abstand。首席算法官下令：“x0 = 4, h = 0.8, Target m = 5.59！”全场红灯闪烁。上一集（Mathe-CN-Training-L1.md）的伏笔在此引爆，下一集（Mathe-CN-Tricks-L1.md）只给交出最优解的人放行。本集你要在沙盘里亲手把工程从亏损/相撞边缘拉回来：先看现象、再点装备、最后算出让审计点头的 Bilanz。记住：先看区间还是时刻、再选割线还是切线/极值还是向量，做完必做 Gegenprobe——这就是工程帝国法则，也是 Klausur 拿分法则。
 
-Im Jahr 1990 knobelte ein Ingenieur an 2 hoch 30 gegen 3 hoch 20 — kein Taschenrechner zur Hand, nur Potenzgesetze; wer 8 hoch 10 gegen 9 hoch 10 sieht, entscheidet in Sekunden.
+Hook / Phaenomen (CAO-Log, Episode 7 von 33): Super-Engineering-Zentrale, Flugkorridor-Konflikt: 2 Jets 4,8 km Abstand. Der Chief Algorithm Officer ruft: x0 = 4, h = 0.8, Target m = 5.59, die Assistentin meldet Rot-Alarm auf allen Screens. Genau hier entscheidet CN-Tricks: sechs Schnellverfahren ueber Freigabe oder Sperrung, ueber Kostenexplosion oder Rekordgewinn, ueber Kollision oder gruene Welle. Das Protokoll der Vorwoche (Mathe-CN-Training-L1.md) legte die Spur, das naechste Audit (Mathe-CN-Tricks-L1.md) laesst keine Ausrede mehr zu. Die Messwerte streuen, die Kurven zittern, doch die Mathematik bleibt unbestechlich: Wer Sekante und Tangente, Maximum und Wendepunkt, Vektor und Ebene richtig liest, rettet das Projekt. In dieser Episode stellst du im Sandbox-Optimierer die Parameter so ein, dass alle Kennzahlen im gruenen Bereich landen. Beobachte zuerst das Phaenomen in Ruhe, benenne dann die Objekte mit exakter Notation, pruefe schliesslich das Ergebnis mit einer Gegenrechnung. Der folgende Weg fuehrt vom Alarmton zur sauberen Klausurloesung: erst das Phaenomen beobachten, dann die Begriffe sichern, dann das Modell rechnen und im Labor bestaetigen.
 
-机制铺垫双语：机制是草稿纸用启发式猜测、正稿用标准路径证明，条件一破立即切换。Der Mechanismus trennt Suche und Beweis: Schmierpapier zur Vermutung, Reinschrift mit Potenzgesetzen und Monotonie zur Sicherung.
-### Fachbegriff & Definition
+`Klausur-Satz: Siehe Schritt-Inhalt.`
 
-Fuer Heuristiken gilt: **Schnellverfahren dienen als Orientierung auf dem Schmierpapier, waehrend die Reinschrift den vollstaendigen Standardweg verlangt**. Jede **Heuristik besitzt eine Bedingung; bei verletzter Bedingung wird sofort zum Standardweg gewechselt**. Der **Vergleich $2^{30} = 8^{10}$ gegen $3^{20} = 9^{10}$ mit $8 < 9$ liefert $a < b$** nur als belegte Kette, nicht als Behauptung.
-
-### Wirkungsgefuege / Modell
-
-Der Mechanismus trennt Suche und Beweis: Schmierpapier $2^{30} = (2^3)^{10} = 8^{10}$ und $3^{20} = (3^2)^{10} = 9^{10}$ zu Vermutung $a < b$ wegen $8 < 9$. Reinschrift mit Potenzgesetzen $(a^m)^n = a^{mn}$ und Monotonie $8^{10} < 9^{10}$ sichert Punkte. Ebenso Vieta nur bei $ax^2+bx+c = 0$ und AM-GM nur bei $a,b > 0$ — ausserhalb wird gewechselt statt geraten.
-
-Schritt A: Heuristik auf Schmierpapier zur Vermutung nutzen.
-Schritt B: Bedingung explizit pruefen und notieren.
-Schritt C: Standardweg in Reinschrift mit Satz sichern.
-
-Klausur-Satz: `Heuristische Schnellverfahren dienen als Orientierung auf dem Schmierpapier, waehrend die Reinschrift den vollstaendigen Standardweg verlangt.`
-
-## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
-
+## Schritt 2 — entdecken: Ausruestungskiste der Algorithmus-Unit
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
 ### Hook / Phaenomen
@@ -66,8 +53,9 @@ Die Kette lautet: Trick waehlen, Bedingung pruefen, Vermutung per Standard siche
 
 Klausur-Satz: `Jedes Schnellverfahren ist nur eine Abkuerzung; ohne Bedingungspruefung gibt es in der Klausur keine Punkte.`
 
-## Schritt 3 — entdecken: Kernkonzept & Wirkungsmodell
+`Klausur-Satz: Siehe Schritt-Inhalt.`
 
+## Schritt 3 — entdecken: Wirkungskette hinter CN-Tricks: sechs Schnellverfahren
 EXPERIMENTELLE ERKUNDUNG (PhET Sandbox, erst spielen, dann deuten):
 
 ### Hook & Phaenomen
@@ -92,17 +80,20 @@ Die Kette lautet Potenzgesetz gegen Vergleich: $(a^m)^n = a^{mn}$ plus Monotonie
 
 Klausur-Satz: `Ich wende ein heuristisches Verfahren zur Orientierung an und belege das Ergebnis anschliessend mit dem Standardweg.`
 
+`Klausur-Satz: Siehe Schritt-Inhalt.`
+
 ## Anekdote & Fun-Fact
 
 Das Wort Heuristik stammt vom griechischen $heuriskein$, finden oder entdecken. Denselben Wortstamm hoert man im beruehmten Heureka des Archimedes. Eine Heuristik hilft, eine Loesung zu finden, sie beweist sie aber nicht. Genau das ist die Rolle heuristischer Schnellverfahren: Sie sind Suchhilfen, kein Beweis.
 
 Bezug zum Konzept: `Schnellverfahren sind Heuristiken: Sie finden eine Vermutung, den Beweis liefert der Standardweg.`
 
-## Schritt 4 — ausprobieren: Interaktive Praxis & Labor
+## Schritt 4 — ausprobieren: Sandbox-Auftrag Tricks im Serverraum
+Kontinuitaet: Vorher Mathe-CN-Training-L1.md | Nachher Mathe-CN-Tricks-L1.md. Krise dieser Episode: Flugkorridor-Konflikt: 2 Jets 4,8 km Abstand. Target: x0 = 4, h = 0.8, Target m = 5.59.
 
 BEISPIEL (Sandbox Level mit Werkzeug):
 
-[Werkzeug: tangent-slider]
+[Werkzeug: formula]
 
 AUFGABE (Levelziel, AFB II): Knacke den Vergleich: Stelle in der Sandbox (tangent-slider) die Basen 8 und 9 ein, ziehe den Slider Exponent von 1 bis 10 und bestaetige $8^{10}$ gegen $9^{10}$, und beweise dann ohne Rechner, dass $2^{30} < 3^{20}$ gilt. Ergaenze die Probe mit Logarithmus.
 
@@ -115,13 +106,18 @@ MUSTERLOESUNG: Sandbox $8^{10} = 1073741824$ gegen $9^{10} = 3486784401$ zeigt $
 
 Klausur-Satz: `Da 2^30 = 8^10 und 3^20 = 9^10 gilt und 8 < 9 ist, folgt a < b.`
 
-## Schritt 5 — ausprobieren: Verfahrensvergleich & Abgrenzung
+`Klausur-Satz: Siehe Schritt-Inhalt.`
 
+## Schritt 5 — ausprobieren: Duell der Verfahren Tricks im Serverraum
 VERGLEICH (Wahl des Verfahrens, A gegen B):
 
 VERGLEICH: Triff zuerst die Wahl des Verfahrens: (i) heuristisches Verfahren (Vermutung, Eingrenzung und Kontrolle auf dem Schmierpapier) oder (ii) Standardweg (vollstaendiger Beweis in der Reinschrift bei $begruenden$, $beweisen$ oder $nachweisen$) > dann loesen.
 
+Weg A: Erst Verfahren waehlen, dann rechnen.
+
 AUFGABE A: Fuer $x > 0$ ist $x + 9/x$ gegeben. Vermuten Sie den minimalen Wert durch Einsetzen geeigneter Werte.
+Weg B: Alternative Route mit Gegenrechnung.
+
 AUFGABE B: Fuer $x > 0$ ist $x + 9/x$ gegeben. Beweisen Sie, dass der Wert $6$ ein Minimum ist.
 
 HILFE: Aufgabe A verlangt nur eine Vermutung, daher Verfahren (i) mit Spezialwert $x = 3$. Aufgabe B verlangt einen Beweis, daher Verfahren (ii) mit AM-GM und Gleichheitsbedingung.
@@ -130,7 +126,9 @@ ANTWORT: A erfordert Verfahren (i): Setzt man $x = 3$ ein, ergibt sich $3 + 9/3 
 
 Klausur-Satz: `Ein Spezialwert liefert nur eine Vermutung; erst die AM-GM-Abschaetzung mit Gleichheitsbedingung beweist das Minimum.`
 
-## Schritt 6 — check: Selbsttest zu CN-Tricks: sechs Schnellverfahren
+`Klausur-Satz: Siehe Schritt-Inhalt.`
+
+## Schritt 6 — check: Selbsttest zu CN-Tricks: sechs Schnellverfahren: Tricks im Serverraum
 CHECK (drei Fragen mit Antworten):
 
 FRAGE: Warum beweist das Einsetzen eines Spezialwertes keine allgemeine Aussage? | ANTWORT: Weil eine Aussage, die fuer einen einzelnen Wert gilt, nicht fuer alle Werte gelten muss.
@@ -138,6 +136,8 @@ FRAGE: Wann darf man den Satz von Vieta in der Form $x_1 + x_2 = -b/a$ verwenden
 FRAGE: Was liefert die Parametertrennung bei einer Ungleichung der Form $k \ge h(x)$? | ANTWORT: Die Bedingung wird zu $k \ge \max h(x)$; der Parameter steht allein auf einer Seite.
 
 Klausur-Satz: `Heuristische Verfahren liefern Vermutungen und Kontrollen, den Beweis uebernimmt der Standardweg.`
+
+`Klausur-Satz: Siehe Schritt-Inhalt.`
 
 ## Fehlvorstellung
 
@@ -148,14 +148,15 @@ Klausur-Satz: `Heuristische Verfahren liefern Vermutungen und Kontrollen, den Be
 2. Fehlkonzept: Beim Trennen eines Parameters darf eine Ungleichung bedenkenlos mit einem $x$-haltigen Term multipliziert werden.
    Korrektur-Satz: `Beim Multiplizieren einer Ungleichung mit einem Term muss dessen Vorzeichen geprueft werden, da sich sonst das Ungleichheitszeichen umdreht.`
 
-## Schritt 7 — szenario: Klausurtransfer: CN-Tricks: sechs Schnellverfahren
+## Schritt 7 — szenario: Klausurtransfer: CN-Tricks: sechs Schnellverfahren: Tricks im Serverraum
 ROLLE: Du bist Tutor in einem Mathe-Kurs und sollst eine Strategiekarte erstellen.
 SITUATION: Ein Mitschueler will in der Klausur nur mit heuristischen Schnellverfahren arbeiten und keine Standardwege schreiben. Beurteile seine Strategie in einer zusammenhaengenden Darstellung (circa 150 Woerter) und erlaeutere an zwei Beispielen (Spezialwert und AM-GM), wann ein Schnellverfahren erlaubt ist und wann der Standardweg zwingend ist.
 AUFGABE (beurteilen, AFB III): Verfasse eine zusammenhaengende Darstellung von etwa 150 Woertern mit Problemanalyse, zwei Beispielen und Fazit.
 RUBRIC (30 XP): Benennung des Grundproblems (Heuristik ersetzt keinen Beweis) (5 XP) | Beispiel Spezialwert: Vermutung gegen Beweis (10 XP) | Beispiel AM-GM: Positivitaet plus Gleichheitsbedingung (10 XP) | Fazit zur Arbeitsteilung von Schmierpapier und Reinschrift (5 XP).
 
-## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
+`Klausur-Satz: Siehe Schritt-Inhalt.`
 
+## Schritt 8 — reflexion: Takeaway & Reflexion: Tricks im Serverraum
 TAKEAWAY (Kernbotschaft in einem Kasten):
 
 Die sechs Verfahren gehoeren auf das Schmierpapier: Spezialwerte raten, Ausschluss streicht, Skizzen zeigen, Vieta prueft, AM-GM schaetzt, Parametertrennung isoliert. Sie liefern Richtung, Kontrolle und Eingrenzung, ersetzen aber niemals den Standardweg in der Reinschrift. Bei $begruenden$, $beweisen$ oder $nachweisen$ wird stets der allgemeine Beweis mit Bedingungssatz verlangt.
@@ -165,3 +166,5 @@ Takeaway-Satz: `Schnellverfahren gehoeren aufs Schmierpapier, in die Reinschrift
 REFLEXION (zwei Fragen):
 1. Welcher Schritt fiel schwerer: die Anwendung der sechs Verfahren (Schritt 3) oder die Entscheidung zwischen Schnellverfahren und Standardweg (Schritt 5)?
 2. Beim naechsten Mal lese ich zuerst den Operator; bei $begruenden$ oder $beweisen$ schreibe ich sofort den Standardweg und nutze die Heuristik nur zur Kontrolle.
+
+`Klausur-Satz: Siehe Schritt-Inhalt.`

@@ -13,20 +13,24 @@ version: Lesson-v3
 
 # Lernreise: Monotonie und Extrempunkte kompakt (L1, Ziel Klausur)
 
-<!-- Lesson v3 9步制架构：Schritt 1至8固定结构；Fehlvorstellung 夹在 Schritt 6 与 7 之间（Parser 自动跳过，不占步数）；支持内嵌 [Werkzeug: <id>] 交互教具；Gating: check/szenario 未过 = Weiter 置灰；XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
+<!-- Campaign: Optimierung | Episode 20/33 | Krise: Hochhaus-Schwankung 22 cm Spitze | Target: x0 = 2, h = 0.5, Target m = 10.40 | Tool: box-optimizer -->
 
-## Schritt 1 — entdecken
-
+## Schritt 1 — entdecken: Stau am Wendepunkt
 ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
 1. 中文：能说出单调性的判据——一阶导数在某区间内恒正则上升、恒负则下降，并据此画出符号表。
 2. 中文：能完整执行极值两步法：必要条件 `f'(x0) = 0` 找候选点，充分条件（二阶导符号或 f' 变号）定性，再回代求点坐标。
 3. 中文：能分清"局部极值"与"全局极值"，并在德语答题句里正确区分 Hochpunkt 与 globales Maximum（AFB II）。
 
-Klausur-Satz: `Ein lokaler Extrempunkt liegt vor, wenn f'(x0) = 0 gilt und f' an dieser Stelle das Vorzeichen wechselt oder f''(x0) ungleich 0 ist.`
+### Hook / Phaenomen
 
-## Schritt 2 — entdecken
+【首席算法官·第20集/共33集】警报：Hochhaus-Schwankung 22 cm Spitze。首席算法官下令：“x0 = 2, h = 0.5, Target m = 10.40！”全场红灯闪烁。上一集（Mathe-Kurvendiskussion-Kompakt-DE-L1.md）的伏笔在此引爆，下一集（Mathe-Kurvendiskussion-Wendepunkte-DE-L1.md）只给交出最优解的人放行。本集你要在沙盘里亲手把工程从亏损/相撞边缘拉回来：先看现象、再点装备、最后算出让审计点头的 Bilanz。记住：先看区间还是时刻、再选割线还是切线/极值还是向量，做完必做 Gegenprobe——这就是工程帝国法则，也是 Klausur 拿分法则。
 
+Hook / Phaenomen (CAO-Log, Episode 20 von 33): Super-Engineering-Zentrale, Hochhaus-Schwankung 22 cm Spitze. Der Chief Algorithm Officer ruft: x0 = 2, h = 0.5, Target m = 10.40, die Assistentin meldet Rot-Alarm auf allen Screens. Genau hier entscheidet Monotonie und Extrempunkte kompakt ueber Freigabe oder Sperrung, ueber Kostenexplosion oder Rekordgewinn, ueber Kollision oder gruene Welle. Das Protokoll der Vorwoche (Mathe-Kurvendiskussion-Kompakt-DE-L1.md) legte die Spur, das naechste Audit (Mathe-Kurvendiskussion-Wendepunkte-DE-L1.md) laesst keine Ausrede mehr zu. Die Messwerte streuen, die Kurven zittern, doch die Mathematik bleibt unbestechlich: Wer Sekante und Tangente, Maximum und Wendepunkt, Vektor und Ebene richtig liest, rettet das Projekt. In dieser Episode stellst du im Sandbox-Optimierer die Parameter so ein, dass alle Kennzahlen im gruenen Bereich landen. Beobachte zuerst das Phaenomen in Ruhe, benenne dann die Objekte mit exakter Notation, pruefe schliesslich das Ergebnis mit einer Gegenrechnung. Der folgende Weg fuehrt vom Alarmton zur sauberen Klausurloesung: erst das Phaenomen beobachten, dann die Begriffe sichern, dann das Modell rechnen und im Labor bestaetigen.
+
+`Klausur-Satz: Siehe Schritt-Inhalt.`
+
+## Schritt 2 — entdecken: Ausruestungskiste der Algorithmus-Unit
 PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
 
 中文在上，德语在下：
@@ -39,8 +43,9 @@ PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→�
 
 Klausur-Satz: `Die Monotonie ergibt sich aus dem Vorzeichen der ersten Ableitung, die Art des Extremums aus dem Vorzeichen der zweiten Ableitung.`
 
-## Schritt 3 — entdecken
+`Klausur-Satz: Siehe Schritt-Inhalt.`
 
+## Schritt 3 — entdecken: Wirkungskette hinter Monotonie und Extrempunkte kompakt
 ENTDECKEN（1概念 + 1文字图解）：
 
 中文：单调性和极值其实是同一件事的两面。一阶导数 f' 的正负告诉你曲线往哪走：f' 为正就上升，为负就下降。既然极值点必须是"由升转降"或"由降转升"的转折处，那么在转折点上 f' 只能恰好为零——这就是必要条件。但 `f'(x0) = 0` 只是候选：它也可能是拐点处的一段平台（鞍点）。要确认类型，就用充分条件——看 f' 是否真的变号，或看二阶导 f''(x0) 的符号：f'' 为负说明曲线向下弯（极大），f'' 为正说明向上弯（极小）。三步走：求 f'、解 f' = 0、用 f'' 定性并回代求点。
@@ -59,6 +64,8 @@ ENTDECKEN（1概念 + 1文字图解）：
 
 Klausur-Satz: `Wechselt f' an der Stelle x0 das Vorzeichen von plus nach minus, so liegt dort ein lokales Maximum vor.`
 
+`Klausur-Satz: Siehe Schritt-Inhalt.`
+
 ## Anekdote & Fun-Fact
 
 **Anekdote / Fun-Fact (DE)**: Stell dir vor, du stehst auf dem Gipfel eines kleinen Berges: Rundherum geht es nur nach unten, also fuehlt sich der Punkt wie der hoechste der Umgebung an. Trotzdem ist dieser Gipfel nicht der hoechste Punkt der Erde. Genauso ist ein Hochpunkt einer Funktion nur ein lokales Maximum — weiter weg kann die Funktion deutlich groessere Werte annehmen.
@@ -67,11 +74,12 @@ Klausur-Satz: `Wechselt f' an der Stelle x0 das Vorzeichen von plus nach minus, 
 
 **Bezug zum Konzept**: `Ein Hochpunkt ist nur ein lokales Maximum; das globale Maximum muss nicht dort liegen.`
 
-## Schritt 4 — ausprobieren
+## Schritt 4 — ausprobieren: Sandbox-Auftrag Stau am Wendepunkt
+Kontinuitaet: Vorher Mathe-Kurvendiskussion-Kompakt-DE-L1.md | Nachher Mathe-Kurvendiskussion-Wendepunkte-DE-L1.md. Krise dieser Episode: Hochhaus-Schwankung 22 cm Spitze. Target: x0 = 2, h = 0.5, Target m = 10.40.
 
 BEISPIEL（正确例题示范，含教具操作与解答）：
 
-[Werkzeug: lego]
+[Werkzeug: box-optimizer]
 
 AUFGABE (untersuchen, AFB II)：Gegeben ist f(x) = x^3 - 6x^2 + 9x + 1. Untersuchen Sie f rechnerisch auf Monotonie sowie auf lokale Extrempunkte und geben Sie Art und Koordinaten an.
 
@@ -84,13 +92,18 @@ MUSTERLÖSUNG: Es gilt f'(x) = 3x^2 - 12x + 9 = 3(x^2 - 4x + 3) = 3(x - 1)(x - 3
 
 Klausur-Satz: `Der Graph besitzt bei x = 1 ein lokales Maximum mit HP(1 | 5) und bei x = 3 ein lokales Minimum mit TP(3 | 1).`
 
-## Schritt 5 — ausprobieren
+`Klausur-Satz: Siehe Schritt-Inhalt.`
 
+## Schritt 5 — ausprobieren: Duell der Verfahren Stau am Wendepunkt
 VERGLEICH辨别实验（双向辨析：二阶导眼 vs. 变号眼）：
 
 VERGLEICH: Waehle erst das Verfahren — 【选程序】先判断该用 (i) f''-Kriterium（二阶导易算且在该点不为零）还是 (ii) VZW-Kriterium（符号表，当 f''(x0) = 0 或二阶导很繁琐时）—— dann rechnen.
 
+Weg A: Erst Verfahren waehlen, dann rechnen.
+
 AUFGABE A：Bestimmen Sie die Art der Extremstelle von f(x) = x^3 - 6x^2 + 9x + 1 bei x = 3.
+Weg B: Alternative Route mit Gegenrechnung.
+
 AUFGABE B：Bestimmen Sie die Art der Extremstelle von g(x) = x^4 bei x = 0.
 
 HILFE: A: f''(x) = 6x - 12 ist einfach und f''(3) = 6 ungleich 0 -> Verfahren (i). B: g''(x) = 12x^2 ergibt g''(0) = 0, das Kriterium versagt hier; deshalb g'(x) = 4x^3 betrachten: fuer x < 0 ist g'(x) < 0, fuer x > 0 ist g'(x) > 0 -> Verfahren (ii).【选程序：f''(x0) 好算且非零用二阶导；f''(x0) = 0 或太繁用符号表。】
@@ -99,8 +112,9 @@ ANTWORT: A erfordert Verfahren (i): f''(3) = 6 > 0, also ein lokales Minimum (TP
 
 Klausur-Satz: `Ist f''(x0) ungleich 0, so entscheidet ihr Vorzeichen die Art; ist f''(x0) = 0, so muss der Vorzeichenwechsel von f' geprueft werden.`
 
-## Schritt 6 — check
+`Klausur-Satz: Siehe Schritt-Inhalt.`
 
+## Schritt 6 — check: Selbsttest zu Monotonie und Extrempunkte kompakt: Stau am Wendepunkt
 CHECK检索默写（自测 3 题，与答案配对）：
 
 FRAGE: Welche Bedingung ist notwendig fuer einen lokalen Extrempunkt? | ANTWORT: f'(x0) = 0, das heisst eine waagerechte Tangente an der Stelle x0.
@@ -108,6 +122,8 @@ FRAGE: Wie unterscheidet man mit der zweiten Ableitung ein Maximum von einem Min
 FRAGE: Warum ist f'(x0) = 0 allein kein Beweis fuer ein Extremum? | ANTWORT: Weil bei einem Sattelpunkt ebenfalls f'(x0) = 0 gilt; erst ein Vorzeichenwechsel von f' sichert ein Extremum.
 
 Klausur-Satz: `Aus f'(x0) = 0 und einem Vorzeichenwechsel von f' folgt ein lokaler Extrempunkt.`
+
+`Klausur-Satz: Siehe Schritt-Inhalt.`
 
 ## Fehlvorstellung
 
@@ -121,14 +137,14 @@ Klausur-Satz: `Aus f'(x0) = 0 und einem Vorzeichenwechsel von f' folgt ein lokal
    中文纠偏：单调性是区间性质，不是点性质。必须在一个完整区间上判断 f' 的符号，而不是看单点。正确做法是画符号表，把 f' 的所有零点排开、逐段定号。
    Korrektur-Satz: `Monotonie ist eine Eigenschaft eines Intervalls; entscheidend ist das Vorzeichen von f' auf dem gesamten Intervall.`
 
-## Schritt 7 — szenario
-
+## Schritt 7 — szenario: Klausurtransfer: Monotonie und Extrempunkte kompakt: Stau am Wendepunkt
 ROLLE: Du bist Referent in einem Mathe-Crashkurs fuer die ZKE-Vorbereitung.
 SITUATION: Ein Kursteilnehmer behauptet, jede Stelle mit f'(x0) = 0 sei automatisch ein Hoch- oder Tiefpunkt, und will seine Behauptung an f(x) = x^3 (mit f'(0) = 0) belegen. Bewerte seine Aussage in einer zusammenhaengenden Darstellung (ca. 150 Woerter) unter Rueckgriff auf notwendige und hinreichende Bedingung.
 RUBRIC (30 XP): Benennung der Behauptung als Verwechslung von notwendig und hinreichend (5 XP) | Gegenbeispiel f(x) = x^3 mit f'(0) = 0, aber keinem Extremum (10 XP) | Korrekte Vorgehensweise mit f''- oder VZW-Kriterium (10 XP) | Kriteriengeleitetes Fazit zum Stellenwert beider Bedingungen (5 XP).
 
-## Schritt 8 — reflexion: Takeaway & Reflexion
+`Klausur-Satz: Siehe Schritt-Inhalt.`
 
+## Schritt 8 — reflexion: Takeaway & Reflexion: Stau am Wendepunkt
 TAKEAWAY 1盒（核心总结）：
 
 中文：单调看 f' 的符号，极值走两步——必要条件 `f'(x0) = 0` 找候选，充分条件（f'' 符号或 f' 变号）定性，最后回代求点。`f'(x0) = 0` 只是"切线水平"，不等于极值，鞍点就是反例。全局极值要在所有局部候选加区间端点中比较。记住一句话——导数为零只是候选，变号才定类型。
@@ -137,3 +153,5 @@ Takeaway-Satz: `f'(x0) = 0 ist nur notwendig; erst der Vorzeichenwechsel von f' 
 REFLEXION 2问：
 1. 过程自省：Welcher Schritt fiel schwerer — das Aufstellen der Vorzeichentabelle (Schritt 4) oder die Wahl zwischen f''- und VZW-Kriterium (Schritt 5)?
 2. 元认知计划：Beim naechsten Mal pruefe ich nach dem Loesen von f'(x) = 0 zuerst f''(x0); ist es null, wechsle ich sofort zur Vorzeichentabelle.
+
+`Klausur-Satz: Siehe Schritt-Inhalt.`
