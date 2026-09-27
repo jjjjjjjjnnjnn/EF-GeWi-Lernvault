@@ -15,7 +15,7 @@ version: Lesson-v3
 
 <!-- Lesson v3 architecture: Schritte 1 to 8 fixed; Fehlvorstellung between Schritt 6 and 7 (parser skips, not counted); embedded [Werkzeug: <id>]; gating: check/szenario failed = Weiter disabled; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
-## Schritt 1 — entdecken
+## Schritt 1 — entdecken: Ziele & Phänomen-Einstieg
 
 OBJECTIVES (three measurable goals of this lesson):
 
@@ -25,7 +25,7 @@ OBJECTIVES (three measurable goals of this lesson):
 
 ### Hook / Phenomenon
 
-Your British exchange partner asks how German work placements work. You translate every sentence faithfully — and still fail. Why does perfect translation score zero when the reader learns nothing useful?
+Your British exchange partner asks how German work placements work. You translate every sentence faithfully — and still fail. Why does perfect translation score zero when the reader learns nothing useful? Because mediation (Sprachmittlung) is not translation but reader-oriented transfer (adressatengerechte Uebertragung). First, strong candidates analyse the target reader: What does a British teenager already know, what confuses them, what do they need for their decision. Second, they select only relevant content and restructure it — headings, bullets, logical order — instead of following the German original sentence by sentence. Third, they explain culture-bound terms with brief bridges: Praktikum means a two-week unpaid school placement, Abitur means final school-leaving exams at eighteen. Fourth, they keep a consistent register and close with exactly the information the task question asked for. Fidelity to words fails; loyalty to the reader scores.
 
 ### Core Concept & Definition
 
@@ -37,7 +37,7 @@ The chain runs in four steps: **situation, selection, format, check**. First, th
 
 Klausur-Satz: `Mediation means selecting the aspects a specific reader needs from a German source and reshaping them into the required English text format, not translating the text word for word.`
 
-## Schritt 2 — entdecken
+## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
 
 PRETRAINING-Box (five core terms with definitions):
 
@@ -59,7 +59,7 @@ The terms form one routine: the **source text** offers the quarry, the **relevan
 
 Klausur-Satz: `I read the task first to identify the addressee and the relevant aspects, because selection is part of the examination and translating everything would miss the point.`
 
-## Schritt 3 — entdecken
+## Schritt 3 — entdecken: Kernkonzept & Wirkungsmodell
 
 TIEFEN-KONZEPT (one concept with visual schema):
 
@@ -67,14 +67,13 @@ TIEFEN-KONZEPT (one concept with visual schema):
 
 A missing "Yours sincerely" costs as much as a missing fact. Students call that unfair; examiners call it communication. Why does a polite formula weigh like an argument?
 
-### Core Concept & Definition
+### Play Task (Format-Slot Puzzle)
 
-**Format as a parallel mark** means that **genre conventions score independently** of content completeness. A formal letter needs **salutation and signature**, an e-mail needs **subject line and sign-off**, a blog needs **title and direct address**. The rule runs $Score = Content + Format$. A perfect paraphrase in the wrong shape remains half a performance.
+Assemble the target genre as a slot puzzle: the sandbox holds nine building blocks — subject line, salutation, three body aspects, connectors, closing formula, sign-off, title, direct address. Highlight the reader and purpose first, then drop the blocks into the letter, e-mail or blog frame. Empty obligatory slots glow red; an unasked aspect smuggled into the body costs the selection bonus. Rule: $Score=Content+Format$.
 
-### Causal Chain / Model
+### Aha-Moment & Rule
 
-The chain runs: **reader, genre, body, register**. First, the addressee decides formal versus semi-formal address. Second, the genre fixes obligatory slots that must not stay empty. Third, the body carries only selected aspects linked with connectors. Fourth, the register stays consistent from opening to closing. Two classic losses follow: literal translation destroys selection, forgotten formulas destroy format.
-
+The chain runs reader, genre, body, register: the addressee decides formal versus semi-formal address, the genre fixes obligatory slots, the body carries only selected aspects linked with connectors, the register stays consistent from opening to closing. Formula: $Score=Content+Format$. Two classic losses follow: literal translation destroys selection, forgotten formulas destroy format.
 ```diagram
   MEDIATION — selection plus format
   German source (material only)
@@ -85,28 +84,7 @@ The chain runs: **reader, genre, body, register**. First, the addressee decides 
          e-mail: Subject + Dear ... + body + Best regards
          blog: Title + Hi all! + body + closing question
     -> Register gate: formal vs. semi-formal (consistent)
-```
-
-```diagram
-   DEUTSCHER AUSGANGSTEXT (Quelle)
-              |
-   [1] SITUATION KLAEREN
-       Adressat? Ziel? Ort/Zeit? Textformat?
-              |
-   [2] SELEKTION (Kernpruefung!)
-       nur die genannten Aspekte -> 2-4 Punkte
-       (alles andere streichen)
-              |
-   [3] ENGLISCHER ZIELTEXT
-       +-----------+-----------+-----------+
-       |  LETTER   |  E-MAIL   |   BLOG    |
-       | Dear ...  | Subject:  | Title     |
-       | body      | Dear ...  | Hi all!   |
-       | Yours     | body      | body      |
-       | sincerely | Best reg. | question  |
-       +-----------+-----------+-----------+
-              |
-   Register: formal (letter/e-mail) | semi-formal (blog)
+  Formula: $Score=Content+Format$
 ```
 
 Klausur-Satz: `The three text formats differ mainly in their opening, their closing formula and their register, while the body follows the same principle of selected, paraphrased aspects.`
@@ -117,13 +95,13 @@ Klausur-Satz: `The three text formats differ mainly in their opening, their clos
 
 **Bezug zum Konzept**: Mediation grew out of European language policy, where the goal is to make information usable for a specific reader — which is exactly why selection, not literal translation, is the core of the task.
 
-## Schritt 4 — ausprobieren
+## Schritt 4 — ausprobieren: Interaktive Praxis & Text-Labor
 
 MODEL TASK (worked example with solution):
 
-[Werkzeug: lego]
+[Werkzeug: highlighter]
 
-TASK (outline, AFB II): Read the German source text below and write the opening and body plan of a formal e-mail to a British exchange partner, selecting only the three aspects named in the task.
+TASK (outline, AFB II): Selection puzzle — read the German source text below and write the opening and body plan of a formal e-mail to a British exchange partner, selecting only the three aspects named in the task. Highlight the asked aspects first and strike the unasked ones.
 
 > Source text (German, original practice text): "Das Schuelerpraktikum in der 10. Klasse dauert in Nordrhein-Westfalen drei Wochen. Es findet in einem Betrieb statt und wird von der Schule vorbereitet. Die Schueler muessen einen Praktikumsbericht schreiben, in dem sie ihre Taetigkeiten und ihre Erfahrungen dokumentieren. Viele Schueler sagen, dass sie im Praktikum zum ersten Mal verstehen, welche Berufe zu ihnen passen. Manche Betriebe bieten danach sogar eine Ausbildung an."
 
@@ -134,11 +112,11 @@ HELP:
 2. Mark only the three required aspects in the German text; delete company training offers if unasked.
 3. Build the structure: subject line, salutation, three paragraphs with one aspect each, closing formula.
 
-MODEL SOLUTION: Subject: Work placements in German schools — key facts. Salutation: Dear [Name], thank you for your question about work placements in Germany; I would like to outline the key facts for you. Paragraph 1 (length and setting): In North Rhine-Westphalia, the placement in Year 10 lasts three weeks and takes place in a company, prepared by the school. Paragraph 2 (what students do): During the placement, students have to write a report in which they document their tasks and experiences. Paragraph 3 (benefit): Many students say that the placement is the first time they understand which professions suit them. Closing: I hope this overview is helpful; please do not hesitate to ask if you need more details. Best regards, [Name]. The company training contracts were deliberately omitted as unasked — selection itself scores.
+MODEL SOLUTION: Subject: Work placements in German schools — key facts. Salutation plus opening: Dear [Name], thank you for your question; I would like to outline the key facts. Paragraph 1 (length and setting): In North Rhine-Westphalia, the placement in Year 10 lasts three weeks and takes place in a company, prepared by the school. Paragraph 2 (duties): Students have to write a report documenting tasks and experiences. Paragraph 3 (benefit): Many students say the placement first shows them which professions suit them. Closing: Best regards, [Name]. The training contracts were deliberately omitted as unasked — selection itself scores.
 
 Klausur-Satz: `I selected only the three aspects named in the task and reshaped them into a formal e-mail, because in a mediation the selection itself is part of the examination.`
 
-## Schritt 5 — ausprobieren
+## Schritt 5 — ausprobieren: Verfahrensvergleich & Abgrenzung
 
 COMPARISON (two procedures):
 
@@ -153,7 +131,7 @@ ANSWER: A requires procedure (i): a formal letter with "Dear Mr [Name]", a clear
 
 Klausur-Satz: `The same source text produces a completely different English text depending on the addressee, because the four elements of the situation determine selection, structure and register.`
 
-## Schritt 6 — check
+## Schritt 6 — check: Verständnisprüfung
 
 CHECK (three questions with answers):
 
@@ -175,13 +153,13 @@ Klausur-Satz: `Before writing a mediation, I clarify the four elements of the si
    Correction: Target format scores separately. A letter without salutation or signature, or a blog without title or closing question, loses format marks that complete content cannot recover.
    Korrektur-Satz: `The target-text format is marked separately, so a missing salutation or blog title costs marks even when the content is complete.`
 
-## Schritt 7 — szenario
+## Schritt 7 — szenario: Klausurtransfer & Rubric
 
 ROLE: You are an exchange student in England asked by your German school to write a short text for the British partner school.
 SITUATION: The partner school plans a "German Culture Week" and wants to know how the German school system works. From a German briefing text (invented for this task) write a formal e-mail to the coordinator, Mr Clarke (ca. 150 words), selecting three aspects: school stages, grading system and one typical school subject.
 RUBRIC (30 XP): Clear situating — reader, purpose and format correctly named (5 XP) | Complete selection of the three required aspects (10 XP) | Correct format items — subject, salutation, closing formula, no slang (10 XP) | Consistently formal register with connectors (5 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY (core summary):
 

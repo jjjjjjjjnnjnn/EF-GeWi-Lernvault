@@ -15,7 +15,7 @@ version: Lesson-v3
 
 <!-- Lesson v3 architecture: Schritte 1 to 8 fixed; Fehlvorstellung between Schritt 6 and 7 (parser skips, not counted); embedded [Werkzeug: <id>]; gating: check/szenario failed = Weiter disabled; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
-## Schritt 1 — entdecken
+## Schritt 1 — entdecken: Ziele & Phänomen-Einstieg
 
 OBJECTIVES (three measurable goals of this lesson):
 
@@ -25,7 +25,7 @@ OBJECTIVES (three measurable goals of this lesson):
 
 ### Hook / Phenomenon
 
-Knowing the population of Nigeria earns zero marks. Using one fact to judge a text earns many. When does knowledge turn from ballast into argument?
+Knowing the population of Nigeria earns zero marks. Using one fact to judge a text earns many. When does knowledge turn from ballast into argument? The answer decides the whole Abitur strategy, because the examiners never reward facts alone but only facts tied to text, question and judgement (Urteil). First, successful candidates sort every topic field — postcolonial Nigeria, American Dream, dystopia, media, science — into one transfer sentence each: This context explains that choice in the text because. Second, they anchor each sentence with a short quotation and a line reference instead of retelling history. Third, they close every paragraph with So what for the question, turning information into evaluation (Bewertung). Fourth, they rehearse the bridge phrases that examiners scan for: against this background, this sharpens, this limits. Knowledge without a bridge stays ballast; knowledge with Point plus Evidence equals Explanation becomes argument and collects the judgement marks.
 
 ### Core Concept & Definition
 
@@ -37,7 +37,7 @@ The chain runs: **field, terms, example, judgement**. First, the text is assigne
 
 Klausur-Satz: `Knowing facts about the UK, the USA or Nigeria earns no points unless I use them to assess a text's view, because in the Abitur knowledge must become judgement.`
 
-## Schritt 2 — entdecken
+## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
 
 PRETRAINING-Box (five core terms with definitions):
 
@@ -59,7 +59,7 @@ The terms connect fields into arguments: **colonial heritage** links UK and Nige
 
 Klausur-Satz: `The debate about a country's past shows that national identity is negotiated rather than inherited, which is why it keeps returning in Abitur texts.`
 
-## Schritt 3 — entdecken
+## Schritt 3 — entdecken: Kernkonzept & Wirkungsmodell
 
 TIEFEN-KONZEPT (one concept with visual schema):
 
@@ -67,14 +67,13 @@ TIEFEN-KONZEPT (one concept with visual schema):
 
 The "American Dream" sounds eternal but was coined in 1931. A whole Themenfeld hangs on a label younger than a hundred years. Why does naming an ideal already judge it?
 
-### Core Concept & Definition
+### Play Task (Field-Sorter Sandbox)
 
-**Ideal versus reality as judgement engine** reads every field promise against its **unequal fulfilment**. Its formula runs $Judgement = Ideal_{claim} + Reality_{gap}$. Freedom and equality motivate as ideals; race and wealth gaps limit them as facts. A fair verdict keeps both sides: powerful as hope, fragile as distribution. Construction awareness turns reciting into assessing.
+Open the field-sorter sandbox: five mini-theses lie unsorted — heritage debate, Dream versus gaps, megacity diversity, conformity pressure, feeds versus journalism. Highlight the core terms first, then drag each thesis into exactly one bucket: UK, USA, Nigeria, Identity or Media. The gate checks the core question plus five terms; a thesis without a gap fact bounces back. Target: five correct placements in a row.
 
-### Causal Chain / Model
+### Aha-Moment & Rule
 
-The chain runs: **ideal, gap, example, verdict**. First, the field ideal is named with its core terms. Second, the social gap is stated with one precise fact. Third, the text position is measured against both sides with line proof. Fourth, the verdict weighs attraction against inequality with concession. Hope plus gap produce a complete comment sentence.
-
+The causal chain runs ideal, gap, example, verdict: the field ideal is named with its core terms, the social gap is stated with one precise fact, the text position is measured with line proof, the verdict weighs attraction against inequality with concession. Formula: $Judgement=Ideal_{claim}+Reality_{gap}$. Construction awareness turns reciting into assessing; hope plus gap produce a complete comment sentence.
 ```diagram
   ABITUR PART A — field plus axes plus judgement
   Text belongs to ONE field: UK | USA | Nigeria | Identity | Media
@@ -84,30 +83,7 @@ The chain runs: **ideal, gap, example, verdict**. First, the field ideal is name
   Axes: conformity vs. individualism | participation vs. manipulation
   Method: core question + 5 terms + 1 comment sentence
   Rule: WISSEN -> JUDGEMENT (listing scores zero)
-```
-
-```diagram
-            [ ABITUR TEIL A: Text + Aufgaben ]
-                          |
-        Text gehoert zu EINEM Themenfeld
-                          |
-   +-----------+-----------+-----------+-----------+-----------+
-   |   UK      |   USA     |  Nigeria  | Identitaet| Medien/   |
-   |           |           |           |           | Literatur |
-   +-----------+-----------+-----------+-----------+-----------+
-   | colonial  | American  | post-     | conformity| journalism|
-   | heritage  | Dream     | colonial  | vs indivi-| vs enter- |
-   | multi-    | freedom   | ethnic    | dualism   | tainment  |
-   | cultural  | equality  | diversity | ambition  | partici-  |
-   | society   | ideal vs  | megacity  | vs obsta- | pation vs |
-   | Brexit    | reality   | Nollywood | cle       | manipula- |
-   | divide    |           | lingua    | diversity | tion      |
-   |           |           | franca    |           | multimodal|
-   +-----------+-----------+-----------+-----------+-----------+
-                          |
-              Kernfrage + 5 Woerter + 1 Comment-Satz
-                          |
-                   WISSEN -> JUDGEMENT
+  Formula: $Judgement=Ideal_{claim}+Reality_{gap}$
 ```
 
 Klausur-Satz: `Each Themenfeld is best prepared as one core question, five key terms and one ready-made comment sentence that can be adapted to any text on that field.`
@@ -118,24 +94,24 @@ Klausur-Satz: `Each Themenfeld is best prepared as one core question, five key t
 
 **Bezug zum Konzept**: Even a central Themenfeld term like the "American Dream" is a historical construction, which is why I use such knowledge to assess a text rather than to recite facts.
 
-## Schritt 4 — ausprobieren
+## Schritt 4 — ausprobieren: Interaktive Praxis & Text-Labor
 
 MODEL TASK (worked example with solution):
 
-[Werkzeug: balance]
+[Werkzeug: highlighter]
 
-TASK (outline, AFB I): Outline how the colonial past shapes the national self-concept of the UK today. Write 80-100 words in your own words and in the present tense.
+TASK (outline, AFB I): Field puzzle — outline how the colonial past shapes the national self-concept of the UK today. Highlight three aspects first, then write 80-100 words in your own words and in the present tense.
 
 HELP:
 1. Collect three aspects — multicultural society, the debate about empire, the European positioning after Brexit.
 2. Phrase each aspect in one or two sentences in your own words, without copying the task.
 3. Stay neutral — no judgement (that belongs to Task 3) and no "I think".
 
-MODEL SOLUTION: The text outlines how Britain's colonial past still shapes debates about national identity. Firstly, the former empire explains why modern Britain is a multicultural society in which people of many origins live together. Secondly, the colonial heritage is publicly debated: museums, statues and school curricula raise the question of how the empire should be remembered. Thirdly, this debate influences Britain's European positioning, because after Brexit the country keeps redefining its place between its imperial past and its present as a diverse nation. Together the aspects show that national identity in the UK is negotiated, not inherited.
+MODEL SOLUTION: The colonial past still shapes debates about national identity. Firstly, the former empire explains why modern Britain is a multicultural society in which people of many origins live together. Secondly, the heritage is publicly debated: museums, statues and school curricula raise the question of how the empire should be remembered. Thirdly, this debate influences Britain's European positioning, because after Brexit the country keeps redefining its place between its imperial past and its present as a diverse nation. Together the aspects show that national identity in the UK is negotiated, not inherited.
 
 Klausur-Satz: `The colonial heritage shapes British self-understanding in three ways: it explains multiculturalism, it fuels debates about memory, and it frames the country's position after Brexit.`
 
-## Schritt 5 — ausprobieren
+## Schritt 5 — ausprobieren: Verfahrensvergleich & Abgrenzung
 
 COMPARISON (two procedures):
 
@@ -150,7 +126,7 @@ ANSWER: A requires procedure (i): I restate in my own words and in the present t
 
 Klausur-Satz: `Outline reproduces the author's view neutrally, while discuss demands my own two-sided judgement supported by knowledge of the Themenfeld.`
 
-## Schritt 6 — check
+## Schritt 6 — check: Verständnisprüfung
 
 CHECK (three questions with answers):
 
@@ -172,13 +148,13 @@ Klausur-Satz: `Prepared as core question, five terms and one comment sentence, e
    Correction: A summary covers the gist of the whole text; an outline covers only the aspects named in the task. Mark the required scope first (for example "how the colonial past shapes ..."), otherwise the answer drifts.
    Korrektur-Satz: `An outline covers only the aspects named in the task, whereas a summary reproduces the whole text's gist.`
 
-## Schritt 7 — szenario
+## Schritt 7 — szenario: Klausurtransfer & Rubric
 
 ROLE: You are a panellist in an advanced English course debate on "Identity in a globalised world".
 SITUATION: A text claims that young people in Britain, the USA and Nigeria share the same identity crisis because social media spreads the same ideals everywhere. Evaluate this thesis in a coherent statement (ca. 150 words) with reference to at least two Themenfelder, one counterargument and a final judgement.
 RUBRIC (30 XP): Correct use of two fields as argument material (5 XP) | Clear reasoned position (5 XP) | Two arguments with examples (10 XP) | One fairly treated counterargument (5 XP) | Final judgement weighing similarities and differences (5 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY (core summary):
 

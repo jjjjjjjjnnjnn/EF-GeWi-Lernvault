@@ -15,7 +15,7 @@ version: Lesson-v3
 
 <!-- Lesson v3 architecture: Schritte 1 to 8 fixed; Fehlvorstellung between Schritt 6 and 7 (parser skips, not counted); embedded [Werkzeug: <id>]; gating: check/szenario failed = Weiter disabled; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
-## Schritt 1 — entdecken
+## Schritt 1 — entdecken: Ziele & Phänomen-Einstieg
 
 OBJECTIVES (three measurable goals of this lesson):
 
@@ -25,7 +25,7 @@ OBJECTIVES (three measurable goals of this lesson):
 
 ### Hook / Phenomenon
 
-"We came to walk, to work, to win" — three verbs, no argument, yet the room rises. Why do three beats persuade more than three reasons?
+We came to walk, to work, to win — three verbs, no argument, yet the room rises. Why do three beats persuade more than three reasons? Because speeches move audiences through rhythm and image before logic, and the analyst must name that machinery precisely. First, strong answers sort devices (Stilmittel) by function: repetition and tripling for emphasis, rhetorical questions for forced agreement, contrasts and metaphors for emotional framing. Second, every device needs the P.E.E. chain: Point naming the device, Evidence quoting briefly with line reference, Explanation stating the audience effect plus the link to intention (Wirkung und Intention). Third, structure matters: opening hook, argumentative chain, climactic appeal — each part judged separately. Fourth, evaluation must balance (Abwaegung) power against manipulation: When does persuasion inform, when does it pressure. Three beats persuade, but only the explained beat earns marks.
 
 ### Core Concept & Definition
 
@@ -37,7 +37,7 @@ The chain runs: **device, position, purpose, judgement**. First, the device is n
 
 Klausur-Satz: `The speaker employs stylistic devices to shape the audience's emotions and to strengthen the persuasiveness of the central argument.`
 
-## Schritt 2 — entdecken
+## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
 
 PRETRAINING-Box (five core terms with definitions):
 
@@ -59,7 +59,7 @@ The terms form one working method: **tricolon and anaphora** supply the most aud
 
 Klausur-Satz: `Each device can be analysed with the P.E.E. chain: a clear point, brief textual evidence, and an explanation of its effect on the audience.`
 
-## Schritt 3 — entdecken
+## Schritt 3 — entdecken: Kernkonzept & Wirkungsmodell
 
 TIEFEN-KONZEPT (one concept with visual schema):
 
@@ -67,14 +67,13 @@ TIEFEN-KONZEPT (one concept with visual schema):
 
 "Can we fail if we move as one?" Nobody answers, yet everybody answers no. How does a question without an answer move more minds than a statement with proof?
 
-### Core Concept & Definition
+### Play Task (Device-Hunter Sandbox)
 
-The **rhetorical question as contact device** is a **question expecting no reply** whose force lies in the **silently supplied answer**. Its formula runs $Effect = Question + ExpectedAnswer_{silent}$. Listeners persuade themselves by completing the thought, which turns unity into the logical condition of success. Analysis must name the expected answer explicitly.
+Hunt devices in the sandbox speech: fifteen hide in one hundred words — tricolon, anaphora, rhetorical questions, imperatives, inclusive "we". Highlight five finds first, then drag each into its drawer: SOUND, MEANING, CONTACT or ARGUMENT. The final puzzle names the silently supplied answer of each rhetorical question; a device filed without a position note (opening, climax, closing) stays open. Rule: P.E.E. = Point -> "quote" (max 8 words) -> Effect.
 
-### Causal Chain / Model
+### Aha-Moment & Rule
 
-The chain runs: **contact, self-answer, logic, trust**. First, the question opens direct contact and breaks passive listening. Second, the audience fills in the intended "no" without noticing the steering. Third, this self-given answer supports logos by framing unity as reason. Fourth, the confident questioner gains ethos as a leader who asks what all already know. Contact becomes consent.
-
+The chain runs contact, self-answer, logic, trust: the question opens direct contact, the audience fills in the intended "no" without noticing the steering, this self-given answer supports logos by framing unity as reason, and the confident questioner gains ethos. Formula: $Effect=Question+ExpectedAnswer_{silent}$; paragraph rule $Point+Evidence=Explanation$. Contact becomes consent.
 ```diagram
   SPEECH EFFECT = DEVICE + POSITION + PURPOSE
   SOUND: alliteration / anaphora / tricolon / parallelism
@@ -82,25 +81,7 @@ The chain runs: **contact, self-answer, logic, trust**. First, the question open
   CONTACT: rhetorical question / direct address / imperative
   ARGUMENT: inclusive we + ethos / pathos / logos
   Rule: P.E.E. = Point -> "quote" (max 8 words) -> Effect
-```
-
-```diagram
-         SPEECH EFFECT = DEVICE + POSITION + PURPOSE
-           +------------------+------------------+
-           |  SOUND           |  MEANING         |
-           |  alliteration    |  metaphor/simile |
-           |  anaphora        |  hyperbole       |
-           |  epiphora        |  personification |
-           |  tricolon        |  emotive language|
-           |  parallelism     |  antithesis      |
-           +------------------+------------------+
-           |  CONTACT         |  ARGUMENT        |
-           |  rhetorical ?    |  inclusive "we"  |
-           |  direct address  |  imperative      |
-           |  repetition      |  (ethos/pathos/  |
-           |                  |   logos)         |
-           +------------------+------------------+
-      P.E.E.: Point -> "quote" -> Effect on audience
+  Formula: $Effect=Question+ExpectedAnswer_{silent}$
 ```
 
 Klausur-Satz: `The effect of a device depends on its position in the speech and on the speaker's persuasive purpose.`
@@ -111,13 +92,13 @@ Klausur-Satz: `The effect of a device depends on its position in the speech and 
 
 **Bezug zum Konzept**: `Rhythm supports rhetoric: patterns of three guide attention and make the climax memorable.`
 
-## Schritt 4 — ausprobieren
+## Schritt 4 — ausprobieren: Interaktive Praxis & Text-Labor
 
 MODEL TASK (worked example with solution):
 
 [Werkzeug: highlighter]
 
-TASK (analyze, AFB II): Read the original 100-word model speech below (in the style of a civil-rights or wartime address, fully invented, no quotation from real speeches). Highlight 5 devices and analyse two of them in a P.E.E. paragraph.
+TASK (analyze, AFB II): Hunter puzzle — read the original 100-word model speech below (in the style of a civil-rights or wartime address, fully invented, no quotation from real speeches). Highlight 5 devices first, then analyse two of them in a P.E.E. paragraph.
 
 Model speech "The Bridge We Build" (100 words, original): "We did not come here to wait. We came to walk, to work, to win. Will our children ask whether we stood aside? We will answer: we stood together. They tell us the river is too wide; I tell you we are the bridge. We, the patient, we, the brave, we, the many — can we fail if we move as one? Stand up, speak out, hold on. The night is dark, but our purpose is dawn. Let history record not our fear, but our first step."
 
@@ -126,11 +107,11 @@ HELP:
 2. Mark contact devices — rhetorical questions ("Will our children ask ...?", "can we fail ...?"), imperatives ("Stand up, speak out, hold on"), inclusive "we".
 3. Take two finds and build one P.E.E. chain each: Point (device plus purpose), Evidence (eight words maximum), Explanation (effect on pathos or logos).
 
-MODEL SOLUTION: Point: The tricolon "to walk, to work, to win" accelerates the rhythm. Evidence: three parallel infinitives in one line. Explanation: The rising beat builds collective energy (pathos) and presents action as inevitable, which strengthens the leadership ethos. Point 2: The rhetorical question "can we fail if we move as one?" involves the audience. Evidence: a question with no answer expected. Explanation: Listeners silently answer "no", so they persuade themselves; this supports logos by turning unity into the logical condition of success. Inventory of all 15 devices in the speech: 1 tricolon, 2 anaphora, 3 echo (wait and win), 4 parallelism, 5 rhetorical question (twice), 6 hyperbole ("we are the bridge"), 7 metaphor ("purpose is dawn"), 8 antithesis (night vs dawn), 9 personification ("history record"), 10 alliteration, 11 antithesis (too wide vs bridge; fear vs first step), 12 repetition ("we"), 13 emotive language (brave, dark, dawn), 14 inclusive pronoun "we", 15 imperative ("Stand up ...").
+MODEL SOLUTION: Point: The tricolon "to walk, to work, to win" accelerates the rhythm. Evidence: three parallel infinitives in one line. Explanation: The rising beat builds collective energy (pathos) and presents action as inevitable, which strengthens the leadership ethos. Point 2: The rhetorical question "can we fail if we move as one?" involves the audience. Evidence: a question with no answer expected. Explanation: Listeners silently answer "no", so they persuade themselves; this supports logos by turning unity into the logical condition of success.
 
 Klausur-Satz: `By combining tricolon and rhetorical questions, the speaker turns passive listeners into active supporters of the cause.`
 
-## Schritt 5 — ausprobieren
+## Schritt 5 — ausprobieren: Verfahrensvergleich & Abgrenzung
 
 COMPARISON (two procedures):
 
@@ -145,7 +126,7 @@ ANSWER: A requires procedure (i): Point — inclusive anaphora builds unity; Evi
 
 Klausur-Satz: `While the inclusive language effectively creates solidarity, its persuasive power remains mainly emotional rather than logical.`
 
-## Schritt 6 — check
+## Schritt 6 — check: Verständnisprüfung
 
 CHECK (three questions with answers):
 
@@ -167,14 +148,14 @@ Klausur-Satz: `A complete analysis always connects the quoted device to its conc
    Correction: Their force lies in needing none. Listeners supply the intended answer silently and thereby persuade themselves. Name the expected answer in the analysis.
    Korrektur-Satz: `A rhetorical question is effective precisely because the audience supplies the intended answer silently.`
 
-## Schritt 7 — szenario
+## Schritt 7 — szenario: Klausurtransfer & Rubric
 
 ROLE: You are a student editor of the school debate magazine.
 SITUATION: A classmate wrote a 120-word speech opening full of devices but without P.E.E. discipline — labels only, no effects. Your teacher asks you to rewrite one paragraph (ca. 100 words) as a model and to add a 60-word evaluation of its persuasiveness.
 TASK: Write the model paragraph using at least three devices (mark them), then evaluate its strength and one limitation for a school audience.
 RUBRIC (30 XP): Three correctly marked devices (10 XP) | P.E.E. logic in evaluation, short quotes (10 XP) | Balanced judgement with ethos, pathos and logos vocabulary plus closing sentence (10 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY (core summary):
 

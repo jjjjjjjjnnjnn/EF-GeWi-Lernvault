@@ -15,7 +15,7 @@ version: Lesson-v3
 
 <!-- Lesson v3 architecture: Schritte 1 to 8 fixed; Fehlvorstellung between Schritt 6 and 7 (parser skips, not counted); embedded [Werkzeug: <id>]; gating: check/szenario failed = Weiter disabled; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
-## Schritt 1 — entdecken
+## Schritt 1 — entdecken: Ziele & Phänomen-Einstieg
 
 OBJECTIVES (three measurable goals of this lesson):
 
@@ -25,7 +25,7 @@ OBJECTIVES (three measurable goals of this lesson):
 
 ### Hook / Phenomenon
 
-After one novel readers cover their webcams; after the other they check their screen time — and feel caught by both. Which fear is nearer: being watched or being distracted?
+After one novel readers cover their webcams; after the other they check their screen time — and feel caught by both. Which fear is nearer: being watched or being distracted? The comparison of 1984 and Brave New World turns on exactly this difference in control (Kontrolle durch Angst versus Kontrolle durch Vergnuegen). First, Orwell builds power through surveillance, fear and language control: Big Brother watches, Newspeak narrows thought, the ending crushes hope. Second, Huxley builds power through pleasure, consumption and conditioning: soma soothes, entertainment distracts, stability replaces freedom before anyone misses it. Third, both use a limited perspective figure who wakes up too late, so the reader shares the delayed recognition. Fourth, a strong answer never retells plot but weighs relevance (Aktualitaet): Which mechanism shapes our present more — camera fear or feed addiction. The verdict must balance (Abwaegung) both texts against one criterion and close with a judgement.
 
 ### Core Concept & Definition
 
@@ -37,7 +37,7 @@ The chain runs: **instrument, language, mind, obedience**. First, the instrument
 
 Klausur-Satz: `Both novels warn against total control, but they imagine opposite instruments: fear versus pleasure.`
 
-## Schritt 2 — entdecken
+## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
 
 PRETRAINING-Box (five core terms with definitions):
 
@@ -59,7 +59,7 @@ The terms build the comparison: **dystopia** names the genre warning, **surveill
 
 Klausur-Satz: `Surveillance controls from the outside, entertainment controls from the inside.`
 
-## Schritt 3 — entdecken
+## Schritt 3 — entdecken: Kernkonzept & Wirkungsmodell
 
 TIEFEN-KONZEPT (one concept with visual schema):
 
@@ -67,14 +67,13 @@ TIEFEN-KONZEPT (one concept with visual schema):
 
 Terror warns its victims; pleasure recruits them. One regime must hide cameras, the other only needs to refresh feeds. Why is the voluntary danger harder to resist than the brutal one?
 
-### Core Concept & Definition
+### Play Task (Matrix Puzzle)
 
-**The nearer danger as assessment rule** states that **assessment must weigh visibility against voluntariness** before judging. Its formula runs $Danger = Horror + Nearness_{present}$. Surveillance is openly brutal and therefore recognisable; entertainment feels like choice and therefore escapes resistance. A concession sentence admitting both horrors is obligatory for AFB III.
+Complete the comparison matrix as a drag puzzle: six instrument cards — watcher, punishment, narrowed words, managers, rewards, flooded slogans — wait in the sandbox. Highlight the mechanism first, then drop each card into its column: 1984 surveillance or Brave New World entertainment. The gate asks per card who punishes and who rewards, whether words shrink or flood. A card without an effect note bounces back.
 
-### Causal Chain / Model
+### Aha-Moment & Rule
 
-The chain runs: **concede, contrast, link, judge**. First, the horror of surveillance is conceded without weakening the argument. Second, the hidden mechanism of pleasure is contrasted as self-distraction rewarded daily. Third, the present-day link connects cameras versus feeds to 2026 student life. Fourth, the verdict names pampering as the nearer danger since readers already trade attention for comfort. Weighing precedes judging.
-
+The chain runs concede, contrast, link, judge: the horror of surveillance is conceded, the hidden mechanism of pleasure is contrasted as rewarded self-distraction, the present-day link connects cameras versus feeds to 2026 student life, and the verdict names pampering as the nearer danger. Formula: $Danger=Horror+Nearness_{present}$; paragraph rule $Point+Evidence=Explanation$. A concession sentence admitting both horrors is obligatory for AFB III.
 ```diagram
   HOW FREEDOM IS LOST — two paths, one result
   1984 SURVEILLANCE: watch -> fear -> self-censorship
@@ -83,20 +82,7 @@ The chain runs: **concede, contrast, link, judge**. First, the horror of surveil
     language flooded (many empty words)
   Same result: citizens stop questioning power
   Assessment: concede horror + argue nearness + judge
-```
-
-```diagram
-              HOW FREEDOM IS LOST
-              /                 \
-   1984: SURVEILLANCE      BRAVE NEW WORLD: ENTERTAINMENT
-   watch -> fear ->        distract -> desire ->
-   self-censorship         indifference
-        |                        |
-   language narrowed        language flooded
-   (few words left)         (many empty words)
-        \                        /
-         v                      v
-     same result: citizens stop questioning power
+  Formula: $Danger=Horror+Nearness_{present}$
 ```
 
 Klausur-Satz: `Fear narrows thought, pleasure empties it; both end obedience.`
@@ -107,24 +93,24 @@ Klausur-Satz: `Fear narrows thought, pleasure empties it; both end obedience.`
 
 **Bezug zum Konzept**: `Surveillance fears the eye above; entertainment fears no eye because viewers volunteer their attention.`
 
-## Schritt 4 — ausprobieren
+## Schritt 4 — ausprobieren: Interaktive Praxis & Text-Labor
 
 MODEL TASK (worked example with solution):
 
-[Werkzeug: balance]
+[Werkzeug: highlighter]
 
-TASK (compare, AFB II): Complete the comparison matrix for the two novels across power, language and freedom. Use only paraphrase (no long quotations); invented short slogans in the style of each regime are allowed.
+TASK (compare, AFB II): Matrix challenge — complete the comparison matrix for the two novels across power, language and freedom. Highlight instruments first. Use only paraphrase (no long quotations); invented short slogans in the style of each regime are allowed.
 
 HELP:
 1. Power — 1984: open watcher plus punishment; Brave New World: hidden managers plus rewards. Question: who punishes, who rewards.
 2. Language — 1984: shrink vocabulary so dissent lacks words; Brave New World: flood with slogans and amusement so reflection lacks time. Question: fewer words or more distraction.
 3. Freedom — both abolish freedom, but 1984 produces obedience through fear, Brave New World through satisfaction. Write one sentence per category.
 
-MODEL SOLUTION: Power: In 1984 control is visible and punitive — citizens obey because they feel watched and fear punishment. In Brave New World control is invisible and rewarding — citizens obey because comfort, status pills and leisure make obedience feel like choice. Language: The 1984 regime narrows language so that critical thought finds no words (paraphrase: a slogan-style claim that loyalty equals truthfulness). The Brave New World regime floods language with catchy slogans and constant amusement so that critical thought finds no silence. Freedom: Both destroy political freedom, but by opposite paths — one through terror that forbids thinking differently, one through pleasure that removes the wish to think differently. One line per matrix cell earns full marks if each cell names instrument plus effect.
+MODEL SOLUTION: Power: In 1984 control is visible and punitive — citizens obey because they feel watched and fear punishment. In Brave New World control is invisible and rewarding — citizens obey because comfort and leisure make obedience feel like choice. Language: The 1984 regime narrows language so that critical thought finds no words; the Brave New World regime floods language with catchy slogans so that critical thought finds no silence. Freedom: Both destroy political freedom, but by opposite paths — one through terror that forbids thinking differently, one through pleasure that removes the wish to think differently.
 
 Klausur-Satz: `Visible surveillance punishes dissent, while engineered pleasure prevents dissent from arising.`
 
-## Schritt 5 — ausprobieren
+## Schritt 5 — ausprobieren: Verfahrensvergleich & Abgrenzung
 
 COMPARISON (two procedures):
 
@@ -139,7 +125,7 @@ ANSWER: A requires procedure (i): In both novels technology serves power, but di
 
 Klausur-Satz: `Terror warns its victims, pleasure recruits them; the unnoticed danger is harder to resist.`
 
-## Schritt 6 — check
+## Schritt 6 — check: Verständnisprüfung
 
 CHECK (three questions with answers):
 
@@ -161,14 +147,14 @@ Klausur-Satz: `Both regimes abolish freedom, but only one lets citizens notice t
    Correction: Assessment requires weighing. Attacking one side stays on AFB II; conceding that the other side is also terrifying but nearer to the present reaches AFB III. A concession sentence is obligatory.
    Korrektur-Satz: `An assessment requires weighing both dangers before judging which is more relevant today.`
 
-## Schritt 7 — szenario
+## Schritt 7 — szenario: Klausurtransfer & Rubric
 
 ROLE: You are a reviewer for the school book club blog.
 SITUATION: Two members argue endlessly: one fears cameras everywhere, the other fears endless entertainment. Write a 150-word review that compares both novels in a mini-matrix (power, language, freedom) and assesses which warning matters more for students in 2026.
 TASK: Mini-matrix plus reasoned verdict with one present-day example.
 RUBRIC (30 XP): Correct matrix with contrasting instruments (10 XP) | Balanced assessment with concession sentence (10 XP) | Present-day link and closing judgement in academic English (10 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY (core summary):
 

@@ -15,7 +15,7 @@ version: Lesson-v3
 
 <!-- Lesson v3 9步制架构：Schritt 1至8固定结构；Fehlvorstellung 夹在 Schritt 6 与 7 之间（Parser 自动跳过，不占步数）；支持内嵌 [Werkzeug: <id>] 交互教具；Gating: check/szenario 未过 = Weiter 置灰；XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
-## Schritt 1 — entdecken
+## Schritt 1 — entdecken: Ziele & Phänomen-Einstieg
 
 ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
@@ -23,9 +23,20 @@ ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 2. 中文：能用社会流动数据与文学例证（Gatsby）揭示神话与现实的裂缝。
 3. 中文：能就"美国梦是否已死"写出英文议论段并做价值判断（AFB II-III）。
 
+
+Hook中文生活切入:
+
+想象小镇青年拖着行李箱闯大城市:来之前相信只要拼命就能买房买车,来了之后发现房租吃掉一半工资,加班到深夜也只够糊口,梦想的海报还贴在墙上,现实的账单却堆满桌子。美国梦的文学书写正是这面镜子:许诺人人成功,现实却按肤色、出身和运气发牌。
+
+Phaenomen-Satz (DE): Das Plakat verspricht alles, die Rechnung verlangt alles zurueck.
+
+中文机制铺垫:先拆神话三要素:白手起家、机会均等、成功等于美德;再对照文本现实:结构性壁垒如何让努力贬值;最后评价:梦既是动力也是遮羞布,答题必须文本证据加结构分析,避免空喊口号。
+
+Mechanismus-Satz (DE): The Dream promises mobility, the text shows the barriers behind the promise.
+
 Klausur-Satz: `The American Dream promises upward mobility through hard work, yet statistics and literature question its reality for many.`
 
-## Schritt 2 — entdecken
+## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
 
 PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
 
@@ -39,25 +50,35 @@ PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→�
 
 Klausur-Satz: `Upward mobility depends less on effort alone than on zip code, schooling and starting capital.`
 
-## Schritt 3 — entdecken
+## Schritt 3 — entdecken: Kernkonzept & Wirkungsmodell
 
-ENTDECKEN（1概念 + 1文字图解）：
+ENTDECKEN（1概念 + 1文字图解，中文在上、德语在下）：
 
-中文：美国梦是"电梯承诺"：只要进电梯（努力），人人上楼。但现实有三重关：电梯票价（好学区房子贵，穷人买不起票）、电梯限载（种族与性别隐形天花板）、电梯故障（疾病一次返贫）。《了不起的盖茨比》是文学版证伪：盖茨比有钱到能点亮海湾，仍进不了旧钱圈子，最后只剩绿灯——梦越亮，现实越暗。考试套路：先复述承诺（Adams 1931 定义），再摆裂缝（数据 + 文本），最后判断（梦未死但需维修：教育、医保、起点公平）。
+Hook中文生活切入：
+
+中文：想象小镇青年带着行李去大城市，相信肯吃苦就能买房：十年后他发现，决定买房的还有户口、学区和第一桶金。美国梦的裂缝也在这里。
+
+Phenomenon sentence (EN/DE): The promise glows, the numbers doubt.
+
+Spiel-Aufgabe沙盒操作指引：
+
+中文：打开文本沙盒，用 highlighter 双色标出 promise 信号与 reality 信号（关键词：upward mobility, zip code, schooling, starting capital），看 Gatsby 的绿灯在哪一段最烫。
+
+Observation sentence (DE): Gatsby embodies the Dream and its failure at once.
+
+Aha-Moment因果链：
+
+中文因果链： individual 故事负责煽情、data 负责验货；盖茨比有钱却无归属，绿灯越亮越证明够不着；只有把轶事与数据分开，才能既读懂神话又戳破神话。
+
+Thesis sentence (DE/EN): Anecdotes illustrate the Dream, only data can test it.
 
 文字图解（ASCII 结构图，App支持解析渲染）：
 
 ```diagram
-   PROMISE (Adams 1931): effort -> success -> happiness
-           vs.
-   REALITY FILTERS:
-   [Ticket] good schools cost money (zip code fate)
-   [Ceiling] race/gender bias persists
-   [Accident] illness/debt resets progress
-   GATSBY: money YES / acceptance NO / green light FAR
-   Essay formula: promise -> crack (data + text) -> verdict
+Dream = effort -> mobility (promise)
+Reality = zip code + schooling + capital (filter)
+Gatsby: money rich, belonging poor -> green light
 ```
-
 Klausur-Satz: `Gatsby embodies the Dream and its failure at once: rich in money, poor in belonging.`
 
 ## Anekdote & Fun-Fact
@@ -68,26 +89,31 @@ Klausur-Satz: `Gatsby embodies the Dream and its failure at once: rich in money,
 
 **Bezug zum Konzept**: `The word was born in crisis, its counterexample even earlier.`
 
-## Schritt 4 — ausprobieren
+## Schritt 4 — ausprobieren: Interaktive Praxis & Labor
 
-BEISPIEL（正确例题示范，含教具操作与解答）：
+[Werkzeug: highlighter]
 
-[Werkzeug: dream]
+BEISPIEL（正确例题示范，含教具操作与解答，中文在上、德语在下）：
 
-AUFGABE中文导读：用盖茨比的绿灯分析"梦的象征"，论证财富与接纳的断裂，练习文本细读加议论。
+AUFGABE中文导读（文本谜题）：一段写绿灯的文字既闪希望又透绝望。请标出两类信号并论证绿灯为何既是承诺又是拒绝。
 
-AUFGABE (analyse, AFB II)：Analyse the green light in The Great Gatsby as a symbol of the American Dream and explain why Gatsby fails despite his wealth.
+AUFGABE (analyse, AFB II): A passage celebrates the green light yet mourns it. Mark promise versus reality signals and argue why the light is visible promise and structural denial.
 
-HILFE:
-1. Schritt 1: Symbol bestimmen: green light = Daisy plus dream (reachable-looking, ever-receding).
-2. Schritt 2: Textbeleg: orgastic future, boats against the current — past blocks future.
-3. Schritt 3: Urteil: money buys parties, not old-money acceptance; effort without access fails.
+HILFE（中德双语步骤）：
 
-MUSTERLÖSUNG: The green light symbolises Gatsby's dream: close enough to see, too far to hold. Fitzgerald shows a self-made millionaire who buys a mansion opposite Daisy yet never enters her class — old money (Tom, Daisy) protects itself by birth, not merit. The final image of boats beating on against the current condenses the verdict: the Dream demands forward effort while the past (class, origin) pulls backwards. Gatsby's failure is therefore structural, not personal: wealth without access cannot buy belonging.
+1. 中文：第1步标希望信号：灯、远方、努力词，关键词：promise。
+   Schritt 1 (DE/EN): Sammeln Sie promise markers (light, distance, effort).
+2. 中文：第2步标现实信号：距离不缩短、阶层门槛词，关键词：denial。
+   Schritt 2 (DE/EN): Sammeln Sie denial markers (unreachable, capital, code).
+3. 中文：第3步合拢：同一盏灯两种功能，关键词：paradox。
+   Schritt 3 (DE/EN): Fuse both: one light, two functions.
 
+MUSTERLOESUNG：中文：希望信号全是发光与前行的词，现实信号全是够不着与出身门槛的词；绿灯必须保持不可抵达才有意义，可见即承诺、不可达即拒绝，盖茨比有钱无归属正是缩影。
+
+MUSTERLOESUNG (DE/EN): Promise markers glow (light, far, strive), reality markers block (still far, class, money). The green light glows because it stays unreachable: visible promise, structural denial.
 Klausur-Satz: `The green light glows because it stays unreachable: visible promise, structural denial.`
 
-## Schritt 5 — ausprobieren
+## Schritt 5 — ausprobieren: Verfahrensvergleich & Abgrenzung
 
 VERGLEICH辨别实验（双向辨析：神话眼 vs. 现实眼）：
 
@@ -102,7 +128,7 @@ ANTWORT: A requires lens (i): anecdote inspires but proves nothing about chances
 
 Klausur-Satz: `Anecdotes illustrate the Dream, only data can test it.`
 
-## Schritt 6 — check
+## Schritt 6 — check: Verständnisprüfung
 
 CHECK检索默写（自测 3 题，与答案配对）：
 
@@ -124,14 +150,14 @@ Klausur-Satz: `Without access, effort alone cannot cash the Dream's promise.`
    中文纠偏：个例只能证伪"绝无可能"，不能证明"人人可能"。概率问题必须用群体数据，拿例外当规律是幸存者偏差。
    Korrektur-Satz: `Exceptions disprove impossibility, only cohorts prove opportunity.`
 
-## Schritt 7 — szenario
+## Schritt 7 — szenario: Klausurtransfer & Rubric
 
 ROLLE: You write a comment for the school magazine on "Is the Dream dead?"
 SITUATION: Readers quote billionaire dropouts; teachers quote mobility studies.
 AUFGABE: Take a nuanced stand in ca. 150 words with one Gatsby reference and one data argument plus a reform idea.
 RUBRIC (30 XP): Promise defined (5 XP) | Gatsby text evidence (10 XP) | Data barrier plus reform verdict (15 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY 1盒（核心总结）：
 

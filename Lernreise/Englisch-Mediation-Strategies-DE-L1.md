@@ -15,7 +15,7 @@ version: Lesson-v3
 
 <!-- Lesson v3 architecture: Schritte 1 to 8 fixed; Fehlvorstellung between Schritt 6 and 7 (parser skips, not counted); embedded [Werkzeug: <id>]; gating: check/szenario failed = Weiter disabled; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
-## Schritt 1 — entdecken
+## Schritt 1 — entdecken: Ziele & Phänomen-Einstieg
 
 OBJECTIVES (three measurable goals of this lesson):
 
@@ -25,7 +25,7 @@ OBJECTIVES (three measurable goals of this lesson):
 
 ### Hook / Phenomenon
 
-"After the Abitur" reads smoothly — for Germans. A British reader stops and wonders what examination you mean. When does faithful copying become failed communication?
+After the Abitur reads smoothly — for Germans. A British reader stops and wonders what examination you mean. When does faithful copying become failed communication? At exactly the moment a culture-bound term passes unexplained. Mediation strategies (Mittlungsstrategien) exist for this gap between languages. First, paraphrase replaces the term with its function: Abitur becomes final school-leaving exams qualifying for university. Second, exemplification adds a concrete anchor: similar to A levels but centrally set in most states. Third, reduction drops irrelevant detail — dates, paragraphs, administrative names — when the task asks for an overview rather than a record. Fourth, restructuring reorders the German original into the English reading logic: result first, background second, action required last. Fifth, every strategy must stay visible through polite bridges like In other words or This means that. Strategy is not decoration; it is the scored procedure.
 
 ### Core Concept & Definition
 
@@ -37,7 +37,7 @@ The chain runs: **detect, keep, gloss, check**. First, culture words such as Abi
 
 Klausur-Satz: `When a term has no equivalent in the target language, I keep the original word and add a short explanation, because a mediation must be understood by its reader, not translated word for word.`
 
-## Schritt 2 — entdecken
+## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
 
 PRETRAINING-Box (five core terms with definitions):
 
@@ -59,7 +59,7 @@ The terms form a control loop: **register choice** locks the tone before draftin
 
 Klausur-Satz: `I translate my English mediation back into German and compare it with the source, because that is the only way I can see what I actually left out or changed.`
 
-## Schritt 3 — entdecken
+## Schritt 3 — entdecken: Kernkonzept & Wirkungsmodell
 
 TIEFEN-KONZEPT (one concept with visual schema):
 
@@ -67,14 +67,13 @@ TIEFEN-KONZEPT (one concept with visual schema):
 
 English has no du or Sie, yet every German text chooses one. Where does politeness go when "you" erases the difference? It must be rebuilt — or the tone collapses.
 
-### Core Concept & Definition
+### Play Task (Register-Lock Puzzle)
 
-**Register anchoring** is the **conscious locking of the target tone** before drafting and its **consistent keeping** until the closing line. It maps a formal German report onto **complete sentences without contractions** and a forum post onto **semi-formal address**. The rule runs $Register = Source_{tone} + Reader_{expectation}$. Formal opening plus slang ending counts as drift and loses appropriateness marks.
+Crack the register lock in three moves. Move one: judge the source — formal report or peer post — and lock the English tone (formal bans contractions). Move two: gloss the culture cards — Abitur, Freiwilliges Soziales Jahr, Betriebsrat — with keep-plus-gloss inside the locked tone. Move three: back-translate privately (EN-to-DE) and hunt three failures: omission, distortion, register drift. Each failure found before submission scores a control point.
 
-### Causal Chain / Model
+### Aha-Moment & Rule
 
-The chain runs: **judge, lock, gloss, verify**. First, the source is judged as formal report or peer post. Second, the English register is locked and contractions are allowed or banned accordingly. Third, culture terms receive keep-plus-gloss treatment inside the locked tone. Fourth, back-translation checks three failures: omission of points, distortion of attitude or numbers, and drift of tone. Direction stays fixed: EN-to-DE controls privately while DE-to-EN scores publicly.
-
+The chain runs judge, lock, gloss, verify: the source tone is judged, the English register is locked, culture terms receive keep-plus-gloss treatment, back-translation checks omission, distortion and drift. Formula: $Register=Source_{tone}+Reader_{expectation}$. Direction stays fixed: EN-to-DE controls privately while DE-to-EN scores publicly. Formal opening plus slang ending counts as drift.
 ```diagram
   STRATEGIES — register plus culture plus control
   German source -> judge tone (formal report? forum post?)
@@ -83,25 +82,7 @@ The chain runs: **judge, lock, gloss, verify**. First, the source is judged as f
     -> back-translate EN to DE (private check)
     -> compare: omission? distortion? register drift?
   Rule: DE-to-EN produces, EN-to-DE only controls.
-```
-
-```diagram
-   DE-QUELLE ----(Uebersetzen)----> EN-ZIELTEXT
-        |                                |
-        |                                | (1) Register pruefen:
-        |                                |     formal? semi-formal?
-        |                                |     du/Sie -> you (bewusst waehlen)
-        |                                |
-        |                                | (2) Kultur pruefen:
-        |                                |     Abitur -> "the Abitur, the
-        |                                |     German school-leaving exam"
-        |                                |
-        |<----(Rueckuebersetzung)---------+
-        |
-   [3] VERGLEICH Quelle vs. Rueckuebersetzung
-        -> Auslassung? (Punkt fehlt)
-        -> Verzerrung? (Haltung/Zahl falsch)
-        -> Register-Drift? (foermlich -> umgangssprachlich)
+  Formula: $Register=Source_{tone}+Reader_{expectation}$
 ```
 
 Klausur-Satz: `Register anchoring and cultural explanation turn a correct mediation into an appropriate one, while back-translation reveals the omissions and distortions I cannot see while writing.`
@@ -112,13 +93,13 @@ Klausur-Satz: `Register anchoring and cultural explanation turn a correct mediat
 
 **Bezug zum Konzept**: Because English lost its own du-or-Sie distinction, the register must be chosen explicitly and kept consistent rather than inherited automatically from the German source.
 
-## Schritt 4 — ausprobieren
+## Schritt 4 — ausprobieren: Interaktive Praxis & Text-Labor
 
 MODEL TASK (worked example with solution):
 
-[Werkzeug: formula]
+[Werkzeug: highlighter]
 
-TASK (explain, AFB II): The German source text below is a formal newspaper article. Mediate one paragraph into English for a British reader, then explain the two strategy decisions you made (register and cultural term).
+TASK (explain, AFB II): Strategy puzzle — the German source text below is a formal newspaper article. Mediate one paragraph into English for a British reader, then highlight your two strategy decisions (register and cultural term) and explain them.
 
 > Source text (German, original practice text): "Nach dem Abitur entscheiden sich viele junge Menschen fuer ein Freiwilliges Soziales Jahr. Sie arbeiten ein Jahr lang in Krankenhaeusern oder sozialen Einrichtungen und erhalten ein Taschengeld. Der Betriebsrat hat in diesem Zusammenhang kuerzlich bessere Bedingungen gefordert."
 
@@ -127,11 +108,11 @@ HELP:
 2. Mark culture words (Abitur, Freiwilliges Soziales Jahr, Betriebsrat) and decide per word: keep plus explain.
 3. Write the transfer, then justify in two sentences why you chose the register and how you handled the culture words.
 
-MODEL SOLUTION: Mediation: After the Abitur, the German school-leaving examination, many young people decide to complete a "Freiwilliges Soziales Jahr", a voluntary social year during which they work for one year in hospitals or social institutions and receive pocket money. In this context, the works council ("Betriebsrat") recently demanded better conditions. Explanation of strategy decisions: First, I kept the formal register of the source article, using complete sentences and no contractions, because the target reader expects a formal report. Second, I handled the three culture-specific terms by keeping the original German word and adding a short explanation in each case, so that a British reader without the German system background can still follow. Bare "after the Abitur" would leave the reader lost, while full replacement would erase the German context.
+MODEL SOLUTION: Mediation: After the Abitur, the German school-leaving examination, many young people complete a "Freiwilliges Soziales Jahr", a voluntary social year in hospitals or social institutions for pocket money. The works council ("Betriebsrat") recently demanded better conditions. Strategy: First, I kept the formal register of the source, using complete sentences and no contractions, because the target reader expects a formal report. Second, I kept each German culture word and added a short apposition, so a British reader without the German system background can still follow.
 
 Klausur-Satz: `I kept the formal register of the source and explained every culture-specific term in a short apposition, because appropriateness and comprehensibility matter more than literal accuracy.`
 
-## Schritt 5 — ausprobieren
+## Schritt 5 — ausprobieren: Verfahrensvergleich & Abgrenzung
 
 COMPARISON (two procedures):
 
@@ -146,7 +127,7 @@ ANSWER: A requires procedure (i): I work DE-to-EN, select the blog-relevant aspe
 
 Klausur-Satz: `German into English is the examination direction, while English into German is only my private control tool for spotting omissions, distortions and register drift.`
 
-## Schritt 6 — check
+## Schritt 6 — check: Verständnisprüfung
 
 CHECK (three questions with answers):
 
@@ -168,13 +149,13 @@ Klausur-Satz: `Back-translation checks completeness, accuracy and register, but 
    Correction: The written Abitur direction is German source to English target. Writing the reverse answers the wrong question; EN-to-DE serves only post-draft control.
    Korrektur-Satz: `The written exam requires German into English; English into German is only a private check, and using it in the exam would answer the wrong question.`
 
-## Schritt 7 — szenario
+## Schritt 7 — szenario: Klausurtransfer & Rubric
 
 ROLE: You are a student in a German-British exchange project explaining an unknown topic to the British partner school.
 SITUATION: The partner school prepares a volunteering debate. From a formal German newspaper article (invented for this task) on the Freiwilliges Soziales Jahr write an English text for the student paper (ca. 150 words). Observe both strategies: register (formal article to appropriate English) and culture words (FSJ, Taschengeld, Seminartage).
 RUBRIC (30 XP): Conscious consistent register choice with reasons (5 XP) | Correct treatment of at least two culture words with glosses (10 XP) | Complete transfer of relevant aspects without omission or distortion (10 XP) | Short follow-up control — naming at least one passage verified by back-translation (5 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY (core summary):
 

@@ -15,7 +15,7 @@ version: Lesson-v3
 
 <!-- Lesson v3 architecture: Schritte 1 to 8 fixed; Fehlvorstellung between Schritt 6 and 7 (parser skips, not counted); embedded [Werkzeug: <id>]; gating: check/szenario failed = Weiter disabled; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
-## Schritt 1 — entdecken
+## Schritt 1 — entdecken: Ziele & Phänomen-Einstieg
 
 OBJECTIVES (three measurable goals of this lesson):
 
@@ -25,7 +25,7 @@ OBJECTIVES (three measurable goals of this lesson):
 
 ### Hook / Phenomenon
 
-Two calendars hang in one London flat: school term dates and a grandmother's market days in Enugu. Which calendar tells the truth about home? Perhaps both — and that doubling is the whole question.
+Two calendars hang in one London flat: school term dates and a grandmother's market days in Enugu. Which calendar tells the truth about home? Perhaps both — and that doubling is the whole question. Postcolonial identity (postkoloniale Identitaet) lives in such hybrid spaces between belonging and estrangement. First, strong readings track language as a power signal: English for school and office, Igbo words for intimacy and memory, code-switching as a claim to both worlds. Second, they analyse perspective: Who narrates, who is exoticised, whose gaze defines normal. Third, they connect single images — food, names, hair, photographs — to the larger theme of cultural negotiation rather than listing them. Fourth, they balance (Abwaegung) two judgements: What the text celebrates about hybridity and what it mourns about loss. Identity becomes arguable only when evidence meets ambivalence, and the closing sentence must hold both calendars at once.
 
 ### Core Concept & Definition
 
@@ -37,7 +37,7 @@ The chain runs: **imposition, persistence, mixing, choice**. First, colonisers i
 
 Klausur-Satz: `Postcolonial identity emerges from the tension between inherited traditions and imposed colonial structures.`
 
-## Schritt 2 — entdecken
+## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
 
 PRETRAINING-Box (five core terms with definitions):
 
@@ -59,7 +59,7 @@ The terms form one history: **othering** justifies rule by writing the colonised
 
 Klausur-Satz: `Othering creates a hierarchy of "us" versus "them", while hybrid identity challenges this binary.`
 
-## Schritt 3 — entdecken
+## Schritt 3 — entdecken: Kernkonzept & Wirkungsmodell
 
 TIEFEN-KONZEPT (one concept with visual schema):
 
@@ -67,14 +67,13 @@ TIEFEN-KONZEPT (one concept with visual schema):
 
 A textbook calls a living village "tribal and timeless". A student writes in the margin: "Who decides what is modern?" One margin note reverses four hundred years of gaze. How does a question reclaim definition power?
 
-### Core Concept & Definition
+### Play Task (Gaze-Reversal Sandbox)
 
-**Reversing the gaze** is the act of **questioning who defines normal** and answering from the labelled side. It turns an **othering label** into an object of analysis by asking after its author. Its formula runs $Agency = Label + Question_{who defines}$. The margin question does not refute the fact, it exposes the perspective. Definition power returns to the described.
+Reverse the gaze in four highlighted moves. Move one: highlight the othering label that freezes a community into stereotype. Move two: highlight the margin question that names the labeller. Move three: highlight code-switching traces (English plus Igbo) as lived hybridity. Move four: highlight the doubling verdict "I am double" and attach one Nigeria fact per move. A move without a fact card stays grey.
 
-### Causal Chain / Model
+### Aha-Moment & Rule
 
-The chain runs: **label, question, code-switch, doubling**. First, the othering label freezes a dynamic community into stereotype. Second, the margin question names the labeller and breaks the hierarchy. Third, code-switching between English and Igbo performs lived hybridity as daily proof. Fourth, the sentence "I am double" seals the verdict as resource. Critique plus practice produce agency. Note: if the class case study uses India or Kenya instead of Nigeria, the concept chain stays identical; only the facts change.
-
+The chain runs label, question, code-switch, doubling: the label freezes, the question breaks the hierarchy, code-switching performs daily hybridity as proof, the doubling sentence seals agency as resource. Formula: $Agency=Label+Question_{who defines}$; paragraph rule $Point+Evidence=Explanation$. Critique plus practice produce agency. Note: if the class case study uses India or Kenya instead of Nigeria, the concept chain stays identical; only the facts change.
 ```diagram
   COLONIAL PAST -> POSTCOLONIAL PRESENT
   othering ("them") vs. hybrid identity ("both/and")
@@ -83,19 +82,7 @@ The chain runs: **label, question, code-switch, doubling**. First, the othering 
     -> diaspora: living between worlds
     -> third culture: negotiated everyday mix
   Rule: doubling, not halving.
-```
-
-```diagram
-        COLONIAL PAST -----> POSTCOLONIAL PRESENT
-        othering ("them")       hybrid identity ("both/and")
-          |                          ^
-          v                          |
-   [language / school / border]  +  [home language /
-        imposed norm                  family / faith]
-                  \                  /
-                   v                v
-              diaspora: living between worlds
-              third culture: negotiated everyday mix
+  Formula: $Agency=Label+Question_{who defines}$
 ```
 
 Klausur-Satz: `Hybrid identity can be read as a creative answer to the colonial practice of othering.`
@@ -106,13 +93,13 @@ Klausur-Satz: `Hybrid identity can be read as a creative answer to the colonial 
 
 **Bezug zum Konzept**: `Code-switching makes hybrid identity audible in everyday communication.`
 
-## Schritt 4 — ausprobieren
+## Schritt 4 — ausprobieren: Interaktive Praxis & Text-Labor
 
 MODEL TASK (worked example with solution):
 
 [Werkzeug: highlighter]
 
-TASK (examine, AFB II): Examine how the invented vignette below presents hybrid identity. Highlight markers of diaspora, othering and hybridity (five Nigeria facts are given; use at least three).
+TASK (examine, AFB II): Reversal puzzle — examine how the invented vignette below presents hybrid identity. Highlight markers of diaspora, othering and hybridity (five Nigeria facts are given; use at least three).
 
 Vignette "Two Passports, One Kitchen" (original, 110 words): "Adaeze keeps two calendars in her London flat: the school term dates and her grandmother's market days in Enugu. At parents' evening she speaks polished English; on video calls she haggles in Igbo and laughs when her mother corrects her accent. A textbook once called her grandparents' village 'tribal and timeless' — she now writes in the margin: 'Who decides what is modern?' On Sundays jollof rice steams next to frozen pizza. 'I am not half of anything,' she says. 'I am double.'"
 
@@ -123,11 +110,11 @@ HELP:
 2. Mark othering (textbook phrase "tribal and timeless" plus margin question).
 3. Mark hybridity (polished English plus Igbo, jollof plus pizza, "I am double") and link one Nigeria fact each.
 
-MODEL SOLUTION: Diaspora appears in the split setting London and Enugu and the two calendars, matching fact 5 (large British diaspora). Othering appears in the textbook label "tribal and timeless", which freezes a dynamic Igbo community (fact 2) into a backward stereotype; Adaeze's margin question reverses the gaze and reclaims definition power. Hybrid identity appears in code-switching (English and Igbo, fact 3: English as colonial legacy plus indigenous languages) and in the kitchen image (jollof plus pizza): cultures are doubled, not halved. The closing line "I am double" turns hybridity from deficit into resource.
+MODEL SOLUTION: Diaspora appears in the split setting London and Enugu and the two calendars, matching fact 5 (large British diaspora). Othering appears in the textbook label "tribal and timeless", which freezes a dynamic Igbo community (fact 2) into a backward stereotype; the margin question reverses the gaze and reclaims definition power. Hybrid identity appears in code-switching (English and Igbo, fact 3) and in the kitchen image (jollof plus pizza): cultures are doubled, not halved. The closing line "I am double" turns hybridity from deficit into resource.
 
 Klausur-Satz: `The vignette presents hybrid identity not as loss but as a conscious doubling of cultural resources.`
 
-## Schritt 5 — ausprobieren
+## Schritt 5 — ausprobieren: Verfahrensvergleich & Abgrenzung
 
 COMPARISON (two procedures):
 
@@ -142,7 +129,7 @@ ANSWER: A requires procedure (i): Polished school English signals public belongi
 
 Klausur-Satz: `Although hybridity demands daily negotiation, it ultimately offers a broader repertoire of belonging.`
 
-## Schritt 6 — check
+## Schritt 6 — check: Verständnisprüfung
 
 CHECK (three questions with answers):
 
@@ -164,14 +151,14 @@ Klausur-Satz: `Colonial legacy survives in language and institutions, but diaspo
    Correction: Independence is a political event; legacy is a long structure: official language, schoolbooks and borders persist. Postcolonial analysis asks what remains after independence.
    Korrektur-Satz: `Political independence does not end colonial legacy in language, education and borders.`
 
-## Schritt 7 — szenario
+## Schritt 7 — szenario: Klausurtransfer & Rubric
 
 ROLE: You are a guest writer for the school magazine culture page.
 SITUATION: After a reading project on a postcolonial short story, readers ask what "third culture" means in daily life. Explain it with one invented everyday scene (ca. 100 words) and close with a 60-word discuss-style judgement: burden or resource?
 TASK: Write the scene with at least one diaspora marker and one othering moment, then give a balanced judgement.
 RUBRIC (30 XP): Correct use of diaspora, othering and hybrid vocabulary (10 XP) | At least two Nigeria facts integrated naturally (10 XP) | Balanced discuss structure with closing judgement (10 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY (core summary):
 

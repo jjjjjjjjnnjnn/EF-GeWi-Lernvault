@@ -15,7 +15,7 @@ version: Lesson-v3
 
 <!-- Lesson v3 9步制架构：Schritt 1至8固定结构；Fehlvorstellung 夹在 Schritt 6 与 7 之间（Parser 自动跳过，不占步数）；支持内嵌 [Werkzeug: <id>] 交互教具；Gating: check/szenario 未过 = Weiter 置灰；XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
-## Schritt 1 — entdecken
+## Schritt 1 — entdecken: Ziele & Phänomen-Einstieg
 
 ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
@@ -25,9 +25,20 @@ ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
 Voraussetzung（窄切口）：只做高中通用伦理词汇，不做分子机制细节；已会 comment 三段结构。
 
+
+Hook中文生活切入:
+
+想象基因编辑像修图软件:一键磨皮、一键瘦脸,照片完美了,可本人站在镜子前反而认不出自己;更麻烦的是修好的图还会传给下一代,后悔药无处可买。基因技术的伦理困境正在于此:治疗疾病人人赞成,定制婴儿人人害怕,界线划在哪里,谁来执笔。
+
+Phaenomen-Satz (DE): Ein Klick macht schoen, doch das Original ist unwiderruflich weg.
+
+中文机制铺垫:先分应用:体细胞治疗对个体负责,生殖系编辑影响后代;再列伦理标尺:自主、行善不伤害与公正,富人先用是否加剧不平等;最后给论证结构:让步加权衡,结论落在严格监管下的治疗优先。
+
+Mechanismus-Satz (DE): Therapy heals the patient, enhancement rewrites the future without consent.
+
 Klausur-Satz: `Genetic engineering promises cures and yields but threatens equity and dignity.`
 
-## Schritt 2 — entdecken
+## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
 
 PRETRAINING术语盒（核心5词，先读三遍中英，合书自测中文→英文，Evidenz：pretraining降认知负荷）：
 
@@ -41,20 +52,35 @@ PRETRAINING术语盒（核心5词，先读三遍中英，合书自测中文→�
 
 Klausur-Satz: `Therapy heals, enhancement selects; the line between them is the ethical frontier.`
 
-## Schritt 3 — entdecken
+## Schritt 3 — entdecken: Kernkonzept & Wirkungsmodell
 
-ENTDECKEN（1概念 + 1文字图解）：
+ENTDECKEN（1概念 + 1文字图解，中文在上、德语在下）：
 
-中文：议论文骨架只有两副。功利框架算总账：cure + hunger relief 对 risk + inequality，结论常是 regulate but allow。义务框架守红线：embryo cannot consent、 dignity not for sale，结论常是 ban germline。高分动作是让两副打一架：先承认对方最强一点（concession），再用标准反杀（however, justice outweighs utility）。词汇锚：on the one hand、 advocates claim、 critics warn、 all in all。
+Hook中文生活切入：
+
+中文：想象基因剪刀能删掉致病基因，也能定制眼睛颜色：治病大家鼓掌，定制大家后背发凉。这条线画在哪，就是整场辩论。
+
+Phenomenon sentence (EN/DE): Therapy heals, enhancement selects.
+
+Spiel-Aufgabe沙盒操作指引：
+
+中文：打开辩论沙盒，用 highlighter 标出 therapy 论据与 enhancement 论据（关键词：consent, germline, somatic, slippery slope），再滑到最强反方立场先让一步。
+
+Observation sentence (DE): Concede the strongest counterpoint, then decide by an explicit criterion.
+
+Aha-Moment因果链：
+
+中文因果链：先承认对方最强论点才有资格下判；体细胞治疗只影响本人、可监管，生殖系改造影响后代且无从征得同意，加上滑坡风险，禁生殖系、管体细胞即成有准则的裁决。
+
+Thesis sentence (DE/EN): No consent, no germline: that is the duty red line.
 
 文字图解（ASCII 结构图，App支持解析渲染）：
 
 ```diagram
-  utility: benefits (cure, yield) ──vs── costs (risk, gap)
-  duty: consent? dignity? slippery?
-  comment move: concession ──however──> criterion ──> verdict
+somatic (patient only, reversible-ish) -> regulate
+germline (offspring, no consent) -> ban
+criterion: consent + reversibility
 ```
-
 Klausur-Satz: `Concede the strongest counterpoint, then decide by an explicit criterion.`
 
 ## Anekdote & Fun-Fact
@@ -65,24 +91,31 @@ Klausur-Satz: `Concede the strongest counterpoint, then decide by an explicit cr
 
 **Bezug zum Konzept**: `Can implies ought never.`
 
-## Schritt 4 — ausprobieren
+## Schritt 4 — ausprobieren: Interaktive Praxis & Labor
 
-BEISPIEL（正确例题示范，含教具操作与解答）：
+[Werkzeug: highlighter]
 
-[Werkzeug: debate]
+BEISPIEL（正确例题示范，含教具操作与解答，中文在上、德语在下）：
 
-AUFGABE (discuss, AFB II)：Discuss whether germline editing for disease prevention should be allowed.
+AUFGABE中文导读（辩论谜题）：一方喊治病救人、一方喊后代同意与滑坡。请先让步再按明确标准裁决生殖系编辑。
 
-HILFE:
-1. Schritt 1: Two benefits with explanation.
-2. Schritt 2: Two objections (consent, slippery slope).
-3. Schritt 3: Weighed verdict with criterion.
+AUFGABE (discuss, AFB III): Heritable editing promises cures but risks consent and slippery slope. Concede the strongest counterpoint, then judge germline versus somatic by an explicit criterion.
 
-MUSTERLÖSUNG: Advocates claim germline editing eradicates hereditary disease once and for all, sparing families like those with Huntington lifelong suffering; it is also efficient, since one intervention protects all descendants. Critics warn, first, that embryos cannot give informed consent to irreversible changes, which violates autonomy as duty ethics holds; second, therapy opens a slippery slope to enhancement, deepening the gap between rich and poor children. Although cures matter, justice and consent outweigh utility here because errors are heritable and consent unobtainable. Therefore germline editing should stay banned while somatic therapy may continue under strict regulation.
+HILFE（中德双语步骤）：
 
+1. 中文：第1步摆双方最强论点并先让步，关键词：concede。
+   Schritt 1 (DE/EN): Grant cures and yields before judging.
+2. 中文：第2步亮标准：同意与可逆性，关键词：criterion。
+   Schritt 2 (DE/EN): Name consent and reversibility as yardstick.
+3. 中文：第3步裁决：禁生殖系、管体细胞，关键词：verdict。
+   Schritt 3 (DE/EN): Ban germline, regulate somatic.
+
+MUSTERLOESUNG：中文：先承认治愈与增产的功劳，再亮出标尺：后代无法同意、改动不可逆，故生殖系禁、体细胞管；滑坡不是借口而是需要监管的理由。
+
+MUSTERLOESUNG (DE/EN): Granted cures and yields; judged by consent: heritable benefit cannot outweigh missing consent and slippery-slope risk. Ban germline, regulate somatic.
 Klausur-Satz: `Heritable benefit cannot outweigh missing consent and slippery-slope risk; ban germline, regulate somatic.`
 
-## Schritt 5 — ausprobieren
+## Schritt 5 — ausprobieren: Verfahrensvergleich & Abgrenzung
 
 VERGLEICH辨别实验（双向辨析：利弊权衡 vs 立场论证）：
 
@@ -97,7 +130,7 @@ ANTWORT: A erfordert Verfahren (i): Balanced paragraphs (yield/pesticide vs ecol
 
 Klausur-Satz: `Discuss balances then judges, argue judges then defends.`
 
-## Schritt 6 — check
+## Schritt 6 — check: Verständnisprüfung
 
 CHECK检索默写（自测 3 题，与答案配对）：
 
@@ -119,13 +152,13 @@ Klausur-Satz: `No consent, no germline — that is the duty red line.`
    中文纠偏：英语考的是论证与语言，机制名词堆砌无评价等于跑题。
    Korrektur-Satz: `Argument plus language scores, biology lecture does not.`
 
-## Schritt 7 — szenario
+## Schritt 7 — szenario: Klausurtransfer & Rubric
 
 ROLLE: You debate GM crops in a school panel.
 SITUATION: Farmers praise yield, ecologists warn patents and genes. Deliver a balanced discussion (ca. 150 words) ending with your criterion-based verdict.
 RUBRIC (30 XP): Two benefits explained (8 XP) | Two risks explained (8 XP) | Criterion-based verdict (8 XP) | Linking words and register (6 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY 1盒（核心总结）：
 

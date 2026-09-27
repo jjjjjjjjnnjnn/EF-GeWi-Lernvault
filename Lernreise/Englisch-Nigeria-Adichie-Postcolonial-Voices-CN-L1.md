@@ -15,7 +15,7 @@ version: Lesson-v3
 
 <!-- Lesson v3 9步制架构：Schritt 1至8固定结构；Fehlvorstellung 夹在 Schritt 6 与 7 之间（Parser 自动跳过，不占步数）；支持内嵌 [Werkzeug: <id>] 交互教具；Gating: check/szenario 未过 = Weiter 置灰；XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
-## Schritt 1 — entdecken
+## Schritt 1 — entdecken: Ziele & Phänomen-Einstieg
 
 ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
@@ -25,9 +25,20 @@ ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
 Voraussetzung（窄切口）：只做 Adichie 代表性短论述与小说节选主题，不做全书细读；已会 characterization 基础。所有引用均为原创概括，不抄长段原文。
 
+
+Hook中文生活切入:
+
+想象只听一个人讲班级故事:班长说全班都服他,可角落里同学的版本完全不同,真相藏在没被递话筒的人嘴里。阿迪契警告的单一故事正是如此:西方叙事里的非洲只有贫穷与战争,而尼日利亚作家要夺回话筒,讲述复杂、矛盾、活生生的本土经验。
+
+Phaenomen-Satz (DE): One story tells poverty, many stories tell people.
+
+中文机制铺垫:先定位后殖民视角:谁在讲、为谁讲、省略了谁;再抓文本策略:本土意象、语言混杂与历史重写如何夺回主体性;最后评价:多声部不是政治正确,而是认知完整,分析必须紧扣文本细节而非空谈理论。
+
+Mechanismus-Satz (DE): Single stories flatten, postcolonial voices restore complexity and agency.
+
 Klausur-Satz: `Postcolonial voices replace the single story about Africa with plural Nigerian agencies.`
 
-## Schritt 2 — entdecken
+## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
 
 PRETRAINING术语盒（核心5词，先读三遍中英德，合书自测中文→英文，Evidenz：pretraining降认知负荷）：
 
@@ -41,21 +52,35 @@ PRETRAINING术语盒（核心5词，先读三遍中英德，合书自测中文�
 
 Klausur-Satz: `A single story robs people of dignity; hybrid voices restore agency.`
 
-## Schritt 3 — entdecken
+## Schritt 3 — entdecken: Kernkonzept & Wirkungsmodell
 
-ENTDECKEN（1概念 + 1文字图解）：
+ENTDECKEN（1概念 + 1文字图解，中文在上、德语在下）：
 
-中文：Adichie 的核心动作是"夺回话筒"：西方报道中的 Nigeria 只有 victims 需要拯救，Adichie 笔下则是 students、 mothers、 writers 在讨价还价、考试、迁徙。分析三步：先找 whose voice（谁在讲），再找 what is missing（省略了谁的日常），最后找 how hybridity shows（英语中夹 Igbo 词、基督教叠祖先仪式）。评论句式：The danger is not falsehood but incompleteness; Adichie completes it with lived detail.
+Hook中文生活切入：
+
+中文：想象你对非洲的全部印象来自一部电影：草原、贫困、需要拯救。Adichie 说这叫 single story，一种礼貌的掠夺。
+
+Phenomenon sentence (EN/DE): A single story robs people of dignity.
+
+Spiel-Aufgabe沙盒操作指引：
+
+中文：打开文本沙盒，用 highlighter 标出 voice 归属与 hybrid detail（关键词：single story, agency, hybridity, othering），看被写的人何时夺回了笔。
+
+Observation sentence (DE): Hybrid details turn the narrated object into a narrating subject.
+
+Aha-Moment因果链：
+
+中文因果链：单一故事把人写成客体，混杂细节把人写回主体；声音归属一换、角色一反转，他者化即被拆解；分析只许从文本举证，讨论才许走向文本之外。
+
+Thesis sentence (DE/EN): Voice plus detail defeats stereotype.
 
 文字图解（ASCII 结构图，App支持解析渲染）：
 
 ```diagram
-  single story: Africa = poverty + war (victim only)
-  Adichie turn: voice (Nigerian I) + detail (school/market/family)
-              + hybridity (English/Igbo, church/ancestor)
-  effect: from other to agent
+single story: one voice -> object (othering)
+hybrid text: many voices + details -> subject (agency)
+tool: who speaks? who reverses roles?
 ```
-
 Klausur-Satz: `Hybrid details turn the narrated object into a narrating subject.`
 
 ## Anekdote & Fun-Fact
@@ -66,24 +91,31 @@ Klausur-Satz: `Hybrid details turn the narrated object into a narrating subject.
 
 **Bezug zum Konzept**: `Who tells the story decides who counts as human.`
 
-## Schritt 4 — ausprobieren
+## Schritt 4 — ausprobieren: Interaktive Praxis & Labor
 
-BEISPIEL（正确例题示范，含教具操作与解答）：
+[Werkzeug: highlighter]
 
-[Werkzeug: text]
+BEISPIEL（正确例题示范，含教具操作与解答，中文在上、德语在下）：
 
-AUFGABE (analyse, AFB II)：Analyse how a short Adichie-style passage gives Nigerians agency against a single story. The passage shows a market woman bargaining in English mixed with Igbo, sending her daughter to university while criticising a foreign news crew.
+AUFGABE中文导读（文本谜题）：一段文字先写西方凝视、再写尼日利亚声音反转。请标出声音与细节并论证他者化如何被瓦解。
 
-HILFE:
-1. Schritt 1: Narrative perspective and voice identify.
-2. Schritt 2: Two hybrid details quote in paraphrase and explain.
-3. Schritt 3: Effect on reader stereotype evaluate.
+AUFGABE (analyse, AFB II): A passage moves from western gaze to Nigerian voice and role reversal. Mark voice and hybrid detail and argue how othering turns into agency.
 
-MUSTERLÖSUNG: The passage uses a first-person Nigerian perspective, so the market woman is subject, not object, of reporting. Two hybrid details prove agency: code-switching between English and Igbo signals education plus rootedness rather than backwardness; paying university fees from market profit reverses the victim script of dependence. The foreign crew in the background embodies the single story (camera seeks poverty), while the woman's bargaining embodies economic rationality. Stylistically, present-tense verbs and direct speech create immediacy; the effect is to replace pity with respect — the reader must revise Africa from helpless to enterprising.
+HILFE（中德双语步骤）：
 
+1. 中文：第1步定声音归属：谁在说、替谁说，关键词：voice。
+   Schritt 1 (DE/EN): Attribute every voice.
+2. 中文：第2步圈混杂细节：食物、语言、城市的具体感，关键词：detail。
+   Schritt 2 (DE/EN): Circle hybrid details.
+3. 中文：第3步点反转：被看者何时变成叙述者，关键词：reversal。
+   Schritt 3 (DE/EN): Name the reversal into agency.
+
+MUSTERLOESUNG：中文：前半声音全是外来凝视、尼日利亚人是被看的客体；后半本土声音接管、细节密到无法被标签收编，角色反转完成，他者化即被瓦解为主体性。
+
+MUSTERLOESUNG (DE/EN): Through voice, hybrid detail and role reversal the passage turns othering into agency: the narrated object becomes the narrating subject.
 Klausur-Satz: `Through voice, hybrid detail and role reversal the passage turns othering into agency.`
 
-## Schritt 5 — ausprobieren
+## Schritt 5 — ausprobieren: Verfahrensvergleich & Abgrenzung
 
 VERGLEICH辨别实验（双向辨析：文本分析 vs 议论评论）：
 
@@ -98,7 +130,7 @@ ANTWORT: A erfordert Verfahren (i): Close reading of voice, hybridity and stylis
 
 Klausur-Satz: `Analysis proves from the text, discussion argues beyond it.`
 
-## Schritt 6 — check
+## Schritt 6 — check: Verständnisprüfung
 
 CHECK检索默写（自测 3 题，与答案配对）：
 
@@ -120,13 +152,13 @@ Klausur-Satz: `Voice plus detail defeats stereotype.`
    中文纠偏：分析题每个论点配一个改写过的短例并讲效果；堆例无讲等于无证。
    Korrektur-Satz: `One paraphrased detail with effect beats five listed names.`
 
-## Schritt 7 — szenario
+## Schritt 7 — szenario: Klausurtransfer & Rubric
 
 ROLLE: You write a comment for a school magazine on media coverage of Nigeria.
 SITUATION: A charity poster shows only starving children. Discuss in a coherent comment (ca. 150 words) the danger of a single story with reference to Adichie and propose fairer representation.
 RUBRIC (30 XP): Single-story thesis with Adichie link (8 XP) | Two arguments with examples (10 XP) | Counter-argument and rebuttal (6 XP) | Coherent English with linking words (6 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY 1盒（核心总结）：
 

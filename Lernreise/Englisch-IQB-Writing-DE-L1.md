@@ -15,7 +15,7 @@ version: Lesson-v3
 
 <!-- Lesson v3 architecture: Schritte 1 to 8 fixed; Fehlvorstellung between Schritt 6 and 7 (parser skips, not counted); embedded [Werkzeug: <id>]; gating: check/szenario failed = Weiter disabled; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
-## Schritt 1 — entdecken
+## Schritt 1 — entdecken: Ziele & Phänomen-Einstieg
 
 OBJECTIVES (three measurable goals of this lesson):
 
@@ -25,7 +25,7 @@ OBJECTIVES (three measurable goals of this lesson):
 
 ### Hook / Phenomenon
 
-Three tasks, one text — and most students write the same paragraph three times. Summary becomes opinion, analysis becomes retelling, comment becomes repetition. Why do good writers fail a format they fully understand?
+Three tasks, one text — and most students write the same paragraph three times. Summary becomes opinion, analysis becomes retelling, comment becomes repetition. Why do good writers fail a format they fully understand? Because each IQB task type (Aufgabenart: summary, analysis, comment) rewards a different operation with different sentence skeletons. First, the summary reports content in own words, present tense, no quotation, no judgement, roughly one third of the length. Second, the analysis breaks effects down with the P.E.E. chain: device named, evidence quoted briefly, effect explained and tied to intention (Wirkung und Intention). Third, the comment leaves the text and judges the issue with weighed arguments and discourse markers like however, admittedly and consequently. Fourth, planning time must be split before writing: five minutes for structure, twenty for drafting, five for checking task fidelity. Format discipline beats fluency, because the examiner scans each part for its own procedure.
 
 ### Core Concept & Definition
 
@@ -37,7 +37,7 @@ The chain runs: **compress, prove, judge, link**. First, Task 1 reproduces requi
 
 Klausur-Satz: `Outline reproduces what the author says, analyse explains how she says it and to what effect, and comment judges whether her view holds — the three tasks must not blur into one another.`
 
-## Schritt 2 — entdecken
+## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
 
 PRETRAINING-Box (five core terms with definitions):
 
@@ -59,7 +59,7 @@ The terms form one ladder: **outline** stays neutral on AFB I, **analyse** climb
 
 Klausur-Satz: `The three tasks form one chain, so I keep summary, analysis and comment strictly apart and let each task build on the previous one.`
 
-## Schritt 3 — entdecken
+## Schritt 3 — entdecken: Kernkonzept & Wirkungsmodell
 
 TIEFEN-KONZEPT (one concept with visual schema):
 
@@ -67,14 +67,13 @@ TIEFEN-KONZEPT (one concept with visual schema):
 
 "Each mirror shows only half of my face" — one image says more than a page of biography. Why does a concrete mirror convince where abstract belonging bores?
 
-### Core Concept & Definition
+### Play Task (Chain-Sorter Puzzle)
 
-**Imagery as proof of split identity** turns an **abstract feeling into a visible image** that readers experience bodily. Its formula runs $Effect = Image + Contrast + l.$. The mirror metaphor plus the parallel breakfast-dinner contrast make incompleteness tangible and arouse sympathy. Without the line reference the image is decoration; with it the image is evidence.
+Sort the IQB chain as a puzzle: nine task cards — own words, present tense, line of argument, P.E.E., position, counterargument, verdict — wait unsorted. Highlight the operator verb first (outline, analyse, comment), then drop each card into its AFB slot: Task 1 outline (AFB I, neutral), Task 2 analyse (AFB II, imagery plus contrast), Task 3 comment (AFB III, judgement). A comment card in the summary slot bounces back; analysis without a line reference stays locked.
 
-### Causal Chain / Model
+### Aha-Moment & Rule
 
-The chain runs: **line, device, effect, overall**. First, the line of argument is fixed as contrast between two worlds. Second, one P.E.E. block proves imagery with quote and line. Third, a second block proves contrast through symmetrical sentence structure. Fourth, one overall sentence summarises the combined effect without new information. Image plus structure prove the in-between position instead of describing it.
-
+The chain runs line, device, effect, overall: the line of argument is fixed as contrast, one P.E.E. block proves imagery with quote and line, a second block proves contrast through symmetrical structure, one overall sentence summarises without new information. Formula: $Effect=Image+Contrast+l.$; paragraph rule $Point+Evidence=Explanation$. Task 3 must bridge back to a Task 2 finding.
 ```diagram
   ONE SOURCE -> THREE TASKS (fixed order)
   TASK 1 outline AFB I ~20%: four elements + core points
@@ -84,25 +83,7 @@ The chain runs: **line, device, effect, overall**. First, the line of argument i
   TASK 3 comment AFB III ~40%: assess or discuss
     position + arguments + example + counter + verdict
   Rule: Task 3 bridges back to a Task 2 finding.
-```
-
-```diagram
-   EINE QUELLE  ->  DREI AUFGABEN (feste Reihenfolge)
-   =====================================================
-   TASK 1  outline / sum up    AFB I   ~20%
-     vier Elemente + Kernpunkte, own words, present tense
-     -> was sagt der Autor? (neutral, KEINE Deutung)
-
-   TASK 2  analyse             AFB II  ~40%
-     line of argument + P.E.E. pro Aspekt
-     Point -> Evidence (l. ...) -> Explain (Wirkung)
-     -> WIE sagt er es, mit welcher Wirkung?
-
-   TASK 3  comment (Wahl)      AFB III ~40%
-     (a) assess  -> einen vorgegebenen Satz beurteilen
-     (b) discuss -> offene Frage, zwei Seiten
-     Position + Argumente + Beispiel + Gegenargument + Urteil
-     -> WAS halte ICH davon? (Zieltextformat beachten)
+  Formula: $Effect=Image+Contrast+l.$
 ```
 
 Klausur-Satz: `Each task in the IQB chain has its own AFB level, which is why a comment must never turn into a second summary and an analysis must never retell the plot.`
@@ -113,13 +94,13 @@ Klausur-Satz: `Each task in the IQB chain has its own AFB level, which is why a 
 
 **Bezug zum Konzept**: The AFB I to III ladder behind outline, analyse and comment comes from a general taxonomy of thinking levels, which is why each task must stay on its own level.
 
-## Schritt 4 — ausprobieren
+## Schritt 4 — ausprobieren: Interaktive Praxis & Text-Labor
 
 MODEL TASK (worked example with solution):
 
-[Werkzeug: lego]
+[Werkzeug: highlighter]
 
-TASK (analyse, AFB II): Read the short extract below and analyse how the author portrays her split identity. Focus on imagery and contrast, and use P.E.E.
+TASK (analyse, AFB II): Imagery puzzle — read the short extract below and analyse how the author portrays her split identity. Highlight imagery and contrast traces first, then focus on imagery and contrast, and use P.E.E.
 
 > Extract (original practice text): "My grandmother calls me her 'London girl'; my classmates call me 'the foreign one'. I grew up with Yoruba proverbs at breakfast and English news at dinner. Both cities give me a mirror, but each mirror shows only half of my face."
 
@@ -128,11 +109,11 @@ HELP:
 2. Write one P.E.E. block per focus; name the device, quote with line reference and explain the effect.
 3. Close with one overall sentence summarising the combined effect — no new information.
 
-MODEL SOLUTION: The author uses imagery and contrast to make her split identity visible and to win sympathy. Imagery — Point: She pictures identity as a mirror that "shows only half of my face" (l. 4). Evidence: The mirror metaphor turns an abstract feeling into a concrete image. Explain: Because the reader visualises the half face, the sense of being incomplete on both sides becomes tangible, which arouses sympathy. Contrast — Point: The author builds two parallel worlds, Yoruba proverbs "at breakfast" versus English news "at dinner" (l. 3). Evidence: The symmetrical sentence structure sets the two cultures side by side. Explain: This symmetry underlines that neither world alone completes her, so the reader understands her in-between position rather than judging it. Overall: Together, mirror imagery and breakfast-dinner contrast show that identity must be built from two halves, not inherited from one.
+MODEL SOLUTION: Imagery — Point: She pictures identity as a mirror that "shows only half of my face" (l. 4). Evidence: The mirror metaphor turns an abstract feeling into a concrete image. Explain: The reader visualises the half face, so incompleteness on both sides becomes tangible, which arouses sympathy. Contrast — Point: The author builds two parallel worlds, Yoruba proverbs "at breakfast" versus English news "at dinner" (l. 3). Evidence: The symmetrical structure sets both cultures side by side. Explain: Neither world alone completes her, so the reader understands her in-between position rather than judging it. Overall: mirror imagery plus breakfast-dinner contrast show identity built from two halves.
 
 Klausur-Satz: `Through the mirror imagery and the parallel breakfast-dinner contrast, the author makes the reader feel the protagonist's in-between position instead of merely describing it.`
 
-## Schritt 5 — ausprobieren
+## Schritt 5 — ausprobieren: Verfahrensvergleich & Abgrenzung
 
 COMPARISON (two procedures):
 
@@ -147,7 +128,7 @@ ANSWER: A requires procedure (i): I reproduce the author position in my own word
 
 Klausur-Satz: `Outline reproduces what the author says, whereas analyse explains how she says it and what effect the devices have on the reader.`
 
-## Schritt 6 — check
+## Schritt 6 — check: Verständnisprüfung
 
 CHECK (three questions with answers):
 
@@ -169,13 +150,13 @@ Klausur-Satz: `A comment that repeats the text instead of judging it fails Task 
    Correction: Task 3 tests judgement, not reproduction. Repeated content scores zero on AFB III. Position, reasons, examples, counterargument and final judgement are obligatory.
    Korrektur-Satz: `Repeating the text in Task 3 earns no marks, because AFB III demands a reasoned judgement rather than a paraphrase.`
 
-## Schritt 7 — szenario
+## Schritt 7 — szenario: Klausurtransfer & Rubric
 
 ROLE: You are a senior student correcting a peer draft for an IQB exam in a feedback round.
 SITUATION: The draft holds three paragraphs: paragraph 1 retells the plot, paragraph 2 names two devices without lines, paragraph 3 repeats the author opinion. Write feedback (ca. 150 words) that separates the three tasks, names the main error per paragraph and shows for paragraph 3 what a correct final judgement with counterargument looks like.
 RUBRIC (30 XP): Correct mapping of the three tasks to AFB I, II and III (5 XP) | Precise error naming in paragraphs 1 and 2 with the P.E.E. rule (10 XP) | Demonstration of a correct Task 3 ending with position, counterargument and verdict (10 XP) | Note on the target-format requirement if applicable (5 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY (core summary):
 

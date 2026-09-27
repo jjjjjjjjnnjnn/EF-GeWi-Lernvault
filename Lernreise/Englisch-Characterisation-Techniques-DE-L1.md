@@ -15,7 +15,7 @@ version: Lesson-v3
 
 <!-- Lesson v3 architecture: Schritte 1 to 8 fixed; Fehlvorstellung between Schritt 6 and 7 (parser skips, not counted); embedded [Werkzeug: <id>]; gating: check/szenario failed = Weiter disabled; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
-## Schritt 1 — entdecken
+## Schritt 1 — entdecken: Ziele & Phänomen-Einstieg
 
 OBJECTIVES (three measurable goals of this lesson):
 
@@ -25,7 +25,7 @@ OBJECTIVES (three measurable goals of this lesson):
 
 ### Hook / Phenomenon
 
-She laughs a little too loudly, then checks her phone although no message arrived. Nobody calls her insecure — yet everybody knows. How does behaviour confess what narration hides?
+She laughs a little too loudly, then checks her phone although no message arrived. Nobody calls her insecure — yet everybody knows. How does behaviour confess what narration hides? Through the craft of characterisation (Charakterisierung), which splits into direct definition and indirect revelation. First, direct characterisation names traits through narrator or other figures, cheap to quote but weak in marks unless explained. Second, indirect presentation shows behaviour, speech, appearance and decisions, and forces the reader to infer motive. Third, the contrast between self-presentation and observed action creates dramatic irony (dramatische Ironie): the audience understands more than the figure admits. Fourth, every observation must close with a P.E.E. chain — Point plus Evidence equals Explanation — naming the trait, quoting eight words maximum, then stating the effect on plot or theme. Behaviour becomes evidence only when the bridge sentence turns showing into meaning.
 
 ### Core Concept & Definition
 
@@ -37,7 +37,7 @@ The chain runs: **perspective, channel, evidence, effect**. First, narrative per
 
 Klausur-Satz: `While direct characterisation names a trait explicitly, indirect characterisation lets the reader infer it from a character's words, actions and the reactions of others.`
 
-## Schritt 2 — entdecken
+## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
 
 PRETRAINING-Box (five core terms with definitions):
 
@@ -59,7 +59,7 @@ The terms form one evidence system: **perspective** opens or closes channels, **
 
 Klausur-Satz: `In this extract the author relies on indirect characterisation, so I have to gather evidence from what the protagonist says and does instead of from explicit statements.`
 
-## Schritt 3 — entdecken
+## Schritt 3 — entdecken: Kernkonzept & Wirkungsmodell
 
 TIEFEN-KONZEPT (one concept with visual schema):
 
@@ -67,14 +67,13 @@ TIEFEN-KONZEPT (one concept with visual schema):
 
 Describe the glint on broken glass instead of stating that the moon shines — old advice, still examined. Why does an excessive laugh reveal more than the adjective insecure?
 
-### Core Concept & Definition
+### Play Task (STEAL Detective Sandbox)
 
-**STEAL as evidence system** organises indirect proof into **five channels**: Speech, Thoughts, Effect on others, Actions, Looks. Its formula runs $Trait = S + T + E + A + L$. Each channel carries quotable proof with line reference; together they force inference. Perspective controls access: a first-person narrator cannot report other minds. Showing works because self-drawn verdicts feel true.
+Play the STEAL detective: the sandbox passage hides five evidence channels — Speech, Thoughts, Effect on others, Actions, Looks. Highlight every behaviour trace, then drag each find into its channel and attach the line reference. The gate asks per passage which trait it suggests; a channel claimed without a quote stays locked. Target: two traits, each proven by two channels.
 
-### Causal Chain / Model
+### Aha-Moment & Rule
 
-The chain runs: **act, quote, infer, move**. First, excessive behaviour such as loud laughter plus compulsive phone-checking is marked. Second, the passage is quoted with line as channel evidence. Third, insecurity is inferred rather than received, which feels authentic. Fourth, the contrast between outward friendliness and inner comparison creates a sympathetic yet critical tone. Evidence makes the figure real instead of labelled.
-
+The chain runs act, quote, infer, move: excessive behaviour is marked, the passage is quoted with line as channel evidence, insecurity is inferred rather than received, and the contrast between outward friendliness and inner comparison creates tone. Formula: $Trait=S+T+E+A+L$; paragraph rule $Point+Evidence=Explanation$. Perspective (Erzählperspektive) controls accessible channels. Showing works because self-drawn verdicts feel true.
 ```diagram
   CHARACTER — direct vs. indirect
   DIRECT (telling): narrator names trait ("She was kind.")
@@ -84,28 +83,7 @@ The chain runs: **act, quote, infer, move**. First, excessive behaviour such as 
     -> INFERRED TRAIT (e.g. insecure)
     -> P.E.E. paragraph (channel + line + effect)
   Gate: perspective decides accessible channels.
-```
-
-```diagram
-                [ CHARACTER ]
-                      |
-        +-------------+-------------+
-        |                           |
-  DIRECT (telling)          INDIRECT (showing)
-  narrator names the         reader infers from
-  trait explicitly           evidence channels
-        |                           |
-   "She was kind."        +---------+---------+---------+---------+
-                          |         |         |         |         |
-                       Speech   Thoughts  Effect on  Actions   Looks
-                      (S)       (T)       others (E) (A)       (L)
-                          |         |         |         |         |
-                       quotes   inner      reactions  choices  appearance
-                          +---------+---------+---------+---------+
-                                    |
-                            INFERRED TRAIT (e.g. insecure)
-                                    |
-                              P.E.E. analysis paragraph
+  Formula: $Trait=S+T+E+A+L$
 ```
 
 Klausur-Satz: `Indirect characterisation works through the five evidence channels of speech, thoughts, effect on others, actions and looks, which together allow the reader to infer a character's traits.`
@@ -116,13 +94,13 @@ Klausur-Satz: `Indirect characterisation works through the five evidence channel
 
 **Bezug zum Konzept**: Chekhov's advice to show rather than tell is the principle behind indirect characterisation: the reader infers the trait from evidence instead of being told it.
 
-## Schritt 4 — ausprobieren
+## Schritt 4 — ausprobieren: Interaktive Praxis & Text-Labor
 
 MODEL TASK (worked example with solution):
 
-[Werkzeug: lego]
+[Werkzeug: highlighter]
 
-TASK (analyse, AFB II): Read the short extract below and analyse how the author characterises Mia. Focus on indirect characterisation and use P.E.E.
+TASK (analyse, AFB II): Detective puzzle — read the short extract below and analyse how the author characterises Mia. Highlight indirect traces first, then focus on indirect characterisation and use P.E.E.
 
 > Extract (original practice text): "Mia laughed a little too loudly at the joke, then checked her phone although no message had arrived. When the teacher praised Ben's essay, she clapped first and fastest. On the bus home she rewrote her own essay headline three times, crossing out every word that sounded like boasting."
 
@@ -131,11 +109,11 @@ HELP:
 2. Ask per passage: which trait does it suggest (loud laughter plus phone check signals insecurity).
 3. Write one P.E.E. block per trait: Point (channel plus trait), Evidence (line), Explain (effect on the reader).
 
-MODEL SOLUTION: The author characterises Mia indirectly rather than naming her trait. Point: Through her actions (l. 1-2), Mia appears insecure. Evidence: She laughs "a little too loudly" and checks a phone "although no message had arrived" — both actions are excessive and reveal a need for approval. Explain: Because the narrator never calls her insecure, the reader must infer it, which feels more authentic and arouses sympathy. A second channel reinforces this: she claps "first and fastest" (l. 3), competing while pretending to celebrate. Explain: The contrast between outward friendliness and inner comparison creates a critical yet sympathetic tone. The reader discovers the insecurity independently, which makes Mia feel real rather than labelled.
+MODEL SOLUTION: The author characterises Mia indirectly rather than naming her trait. Point: Through her actions (l. 1-2), Mia appears insecure. Evidence: She laughs "a little too loudly" and checks a phone "although no message had arrived" — both actions are excessive and reveal a need for approval. Explain: Because the narrator never calls her insecure, the reader must infer it, which feels more authentic and arouses sympathy. A second channel reinforces this: she claps "first and fastest" (l. 3), competing while pretending to celebrate — outward friendliness against inner comparison.
 
 Klausur-Satz: `Because the narrator never names Mia's insecurity, the reader must infer it from her excessive laughter and her compulsive phone-checking, which makes the characterisation more convincing.`
 
-## Schritt 5 — ausprobieren
+## Schritt 5 — ausprobieren: Verfahrensvergleich & Abgrenzung
 
 COMPARISON (two procedures):
 
@@ -150,7 +128,7 @@ ANSWER: A requires procedure (i): the narrator states "patient" and "fair" and s
 
 Klausur-Satz: `Direct characterisation hands the reader a ready-made judgement, whereas indirect characterisation makes the reader build that judgement from evidence and therefore feel it more strongly.`
 
-## Schritt 6 — check
+## Schritt 6 — check: Verständnisprüfung
 
 CHECK (three questions with answers):
 
@@ -172,13 +150,13 @@ Klausur-Satz: `Before analysing a character, I identify the narrative perspectiv
    Correction: Literary texts work mostly indirectly; explicit traits are rare. Readers who only collect direct labels miss the evidence that carries the analysis.
    Korrektur-Satz: `Most literary texts characterise indirectly, so a reader who only looks for explicit traits will miss the evidence that carries the analysis.`
 
-## Schritt 7 — szenario
+## Schritt 7 — szenario: Klausurtransfer & Rubric
 
 ROLE: You are an English tutor leading a small exam-preparation group.
 SITUATION: A student wrote: "The boy is shy and lonely." Then follows plot retelling. Explain in a coherent answer (ca. 150 words) why this is no analysis, and demonstrate with a short self-chosen example what a correct P.E.E. paragraph on indirect characterisation looks like.
 RUBRIC (30 XP): Naming the error — trait without proof, retelling instead of analysis (5 XP) | Explaining the five channels (10 XP) | Demonstrating a full P.E.E. paragraph with point, evidence and effect (10 XP) | Noting the role of narrative perspective (5 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY (core summary):
 
