@@ -26,6 +26,7 @@
 - [HANDOVER](../HANDOVER.md) — **一页交接（新agent/用户先读）** · 历史归档：[HANDOVER-Archiv](HANDOVER-Archiv.md)（2026-09-24 及以前里程碑 + 外部 AI 任务包）
 - [Lehrplan-Content-Spezifikation](Lehrplan-Content-Spezifikation.md) — **考纲全量内容搜集与生成规范（外置AI主交接案）**
 - [Aussen-AI-Kampagnen-und-Storyline-Didaktik](Aussen-AI-Kampagnen-und-Storyline-Didaktik.md) — **外部 AI 连续剧式关卡宇宙与个性化互动教学设计指南（P2 深度重塑指令集）**
+- [Aussen-AI-Qualitaets-Audit-und-Anti-Monotonie-Handbuch](Aussen-AI-Qualitaets-Audit-und-Anti-Monotonie-Handbuch.md) — **课件实质质量审查报告与去重深耕重塑手册（针对外部 AI 敷衍套模的根治案）**
 - [Plan-接手执行](Plan-接手执行.md) — 接手执行计划（任务状态/铁约束/优先级分层/A–D待办清单）
 - **考纲体系（Curriculum）** — [设计总纲](Curriculum/00-Design.md) · [官方源清单](Curriculum/01-Quellen.md)
   - 德国 NRW Oberstufe（EF–Q2，10 科）：[Deutsch](Curriculum/Deutschland/Deutsch-Oberstufe.md) · [Englisch](Curriculum/Deutschland/Englisch-Oberstufe.md) · [Philosophie](Curriculum/Deutschland/Philosophie-Oberstufe.md) · [SoWi](Curriculum/Deutschland/SoWi-Oberstufe.md) · [Musik](Curriculum/Deutschland/Musik-Oberstufe.md) · [Sport](Curriculum/Deutschland/Sport-Oberstufe.md) · [Mathe](Curriculum/Deutschland/Mathe-Oberstufe.md) · [Physik](Curriculum/Deutschland/Physik-Oberstufe.md) · [Chemie](Curriculum/Deutschland/Chemie-Oberstufe.md) · [Bio](Curriculum/Deutschland/Bio-Oberstufe.md)
