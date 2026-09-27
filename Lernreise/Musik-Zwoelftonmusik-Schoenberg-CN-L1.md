@@ -15,7 +15,7 @@ version: Lesson-v3
 
 <!-- Lesson v3 9步制架构：Schritt 1至8固定结构；Fehlvorstellung 夹在 Schritt 6 与 7 之间（Parser 自动跳过，不占步数）；支持内嵌 [Werkzeug: <id>] 交互教具；Gating: check/szenario 未过 = Weiter 置灰；XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
-## Schritt 1 — entdecken
+## Schritt 1 — entdecken: Ziele & Phänomen-Einstieg
 
 ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
@@ -23,9 +23,20 @@ ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 2. 中文：能写出原形、逆行、倒影、倒影逆行四种序列形态并辨认。
 3. 中文：能就"十二音是解放还是枷锁"表态并论证（AFB II-III）。
 
+
+Hook中文生活切入:
+
+想象一副扑克十二张牌,发牌前定好一个顺序,整局游戏只能按这个顺序循环出牌,不许偏爱某张,连花色变化都要从原顺序推导。勋伯格的十二音序列就是这副牌:十二个半音排成基本序列全曲通用,倒影、逆行、倒影逆行都是它的变形,杜绝调性中心人人平等。
+
+Phaenomen-Satz (DE): Zwoelf Karten, eine Reihenfolge, kein Liebling unter ihnen.
+
+中文机制铺垫:先写原序列并编号,再推三种变形:逆行倒读、倒影反向、倒影逆行兼施;听辨抓序列痕迹与和声色彩,论述落到解放不协和与传统断裂,画序列矩阵表是标准解题动作。
+
+Mechanismus-Satz (DE): Die Reihe ordnet alle Toene, ihre Formen tragen das ganze Stueck.
+
 Klausur-Satz: `Die Zwoelftontechnik ersetzt die Tonarten-Hierarchie durch die Gleichberechtigung aller zwoelf Toene in einer Reihe.`
 
-## Schritt 2 — entdecken
+## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
 
 PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
 
@@ -39,24 +50,35 @@ PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→�
 
 Klausur-Satz: `Grundform, Krebs, Umkehrung und Krebsumkehrung liefern das Material jeder Zwoelftonkomposition.`
 
-## Schritt 3 — entdecken
+## Schritt 3 — entdecken: Kernkonzept & Wirkungsmodell
 
-ENTDECKEN（1概念 + 1文字图解）：
+ENTDECKEN（1概念 + 1文字图解，中文在上、德语在下）：
 
-中文：调性音乐是"君主制"：主音是国王，其他音是臣民，永远围着国王转。勋伯格 1921 年搞"民主革命"：十二个半音一律平等，谁也不许重复当王——写完十二个不同音才能开始第二轮，这就是音列。四种形态是同一基因的四张脸：原形从左读，逆行从右读，倒影上下翻（大跳变小跳方向反转），逆行倒影又倒又翻。听感上"怪"不是目的，目的是旧国王（调性）用烂了之后，新组织方式照样能统一全曲。
+Hook中文生活切入：
+
+中文：想象十二生肖开会规定轮完一圈才许重签：没人当老大，但人人都在场。十二音就是用序列代替调性当组织者。
+
+Phaenomen-Satz (DE): Gleichheit statt Hierarchie: die Reihe ersetzt die Tonika.
+
+Spiel-Aufgabe沙盒操作指引：
+
+中文：打开音列沙盒，按 oral-timer 听 Grundform 再听 Krebs、Umkehrung 与 Krebsumkehrung（关键词：Reihe, Krebs, Umkehrung），看十二个音如何不重复地变花样。
+
+Beobachtungs-Satz (DE): Krebs liest die Zeit rueckwaerts, Umkehrung spiegelt die Intervalle.
+
+Aha-Moment因果链：
+
+中文因果链：调性音乐靠主音统领，十二音靠音列统领；四个基本变形提供全部材料又永不确立主音，统一性来自序列而非调中心。
+
+Gesetz-Satz (DE): Ohne Reihe keine Einheit: die Form ersetzt die fehlende Tonika.
 
 文字图解（ASCII 结构图，App支持解析渲染）：
 
 ```diagram
-   Tonal: C(DO) = Koenig, alle anderen = Diener -> Kadenz
-   Zwoelfton: 12 Toene gleich, Reihe = Verfassung
-   Beispiel-Reihe (Zahlen 0-11):
-   Grundform:       0  3  7  2  11  5  9  1  8  4  10  6
-   Krebs (rueckw.): 6 10  4  8  1   9  5 11  2   7  3  0
-   Umkehrung:       0  9  5 10   1  7  3 11  4   8  2  6
-   Regel: kein Ton wiederholt, bevor alle 12 erklangen
+Reihe: 12 Toene je 1x (Grundform)
+Krebs = rueckwaerts | Umkehrung = gespiegelt | Krebsumkehrung = beides
+Hoeren: kein Ruhepol, aber Wiedererkennen der Gestalt
 ```
-
 Klausur-Satz: `Die Reihe garantiert Einheit ohne Tonika: Gleichheit statt Hierarchie.`
 
 ## Anekdote & Fun-Fact
@@ -67,26 +89,31 @@ Klausur-Satz: `Die Reihe garantiert Einheit ohne Tonika: Gleichheit statt Hierar
 
 **Bezug zum Konzept**: `Eine Technik, zwei Temperamente: Strenge befreit den einen und fesselt den anderen nie.`
 
-## Schritt 4 — ausprobieren
+## Schritt 4 — ausprobieren: Interaktive Praxis & Labor
 
-BEISPIEL（正确例题示范，含教具操作与解答）：
+[Werkzeug: oral-timer]
 
-[Werkzeug: zwoelfton]
+BEISPIEL（正确例题示范，含教具操作与解答，中文在上、德语在下）：
 
-AUFGABE中文导读：给一条六音示范行列，写出其逆行与倒影，并判断一段续写是否违反"十二音不重复"规则。
+AUFGABE中文导读（听辨谜题）：一段无调性音乐听不到主音回归，却处处似曾相识。请用音列变形解释这种统一感。
 
-AUFGABE (analysieren, AFB II)：Gegeben ist die Reihenform $0$-$11$-$3$-$4$-$8$-$7$ (erste sechs Toene). Bilden Sie Krebs und Umkehrung und pruefen Sie, ob die Fortsetzung $...7$-$7$-$2$ zulaessig ist.
+AUFGABE (analysieren, AFB II): Ein atonales Stueck ohne Tonika wirkt dennoch einheitlich. Erklaeren Sie die Einheit ueber Reihenformen.
 
-HILFE:
-1. Schritt 1: Krebs durch Rueckwaertslesen: $7$-$8$-$4$-$3$-$11$-$0$.
-2. Schritt 2: Umkehrung durch Spiegelung am Startton $0$: Intervalle $+11, +4, +1, +4, -1$ werden zu $-11, -4, -1, -4, +1$ (mod $12$): $0$-$1$-$9$-$8$-$4$-$5$.
-3. Schritt 3: Wiederholungsregel: Ton $7$ direkt wiederholt ohne Durchlauf aller Zwoelf -> unzulaessig.
+HILFE（中德双语步骤）：
 
-MUSTERLÖSUNG: Krebs lautet $7$-$8$-$4$-$3$-$11$-$0$, Umkehrung $0$-$1$-$9$-$8$-$4$-$5$. Die Fortsetzung mit sofort wiederholtem Ton $7$ verletzt die Grundregel, dass kein Ton vor vollstaendigem Reihendurchlauf wiederkehren darf; korrekt waere erst nach den restlichen sechs Toenen eine Wiederholung erlaubt (bzw. eine neue Reihenform).
+1. 中文：第1步找原型：十二音各出现一次，关键词：Reihe。
+   Schritt 1 (DE): Sichern Sie die zwoelftoenige Grundform.
+2. 中文：第2步认变形：倒影逆行逐个对号，关键词：Form。
+   Schritt 2 (DE): Bestimmen Sie Krebs und Umkehrung.
+3. 中文：第3步释统一：序列即组织者，关键词：Einheit。
+   Schritt 3 (DE): Reihe garantiert Einheit ohne Tonika.
 
+MUSTERLOESUNG：中文：听不到主音是因为本来就没有主音；处处眼熟是因为所有材料都是同一音列的四种变形，序列以变形维持统一，恰如主题以变奏维持统一。
+
+MUSTERLOESUNG (DE): Grundform, Krebs, Umkehrung und Krebsumkehrung liefern alles Material; die Reihe garantiert Einheit ohne Tonika: Gleichheit statt Hierarchie.
 Klausur-Satz: `Krebs liest die Zeit rueckwaerts, Umkehrung spiegelt den Raum der Intervalle.`
 
-## Schritt 5 — ausprobieren
+## Schritt 5 — ausprobieren: Verfahrensvergleich & Abgrenzung
 
 VERGLEICH辨别实验（双向辨析：调性眼 vs. 十二音眼）：
 
@@ -101,7 +128,7 @@ ANTWORT: A erfordert Konzept (i): tonale Hierarchie mit Schlusskadenz. B erforde
 
 Klausur-Satz: `Kadenz verrät Tonalitaet, Reihenform verrät Zwoelftontechnik.`
 
-## Schritt 6 — check
+## Schritt 6 — check: Verständnisprüfung
 
 CHECK检索默写（自测 3 题，与答案配对）：
 
@@ -123,14 +150,14 @@ Klausur-Satz: `Ohne Reihe keine Einheit: Die Form ersetzt die fehlende Tonika.`
    中文纠偏：逆行翻时间（从右读），倒影翻空间（上下镜像），考试各占一分。混用等于把"倒带"和"照镜子"说成一回事。
    Korrektur-Satz: `Krebs kehrt die Zeit um, Umkehrung spiegelt die Intervalle.`
 
-## Schritt 7 — szenario
+## Schritt 7 — szenario: Klausurtransfer & Rubric
 
 ROLLE: Du schreibst das Programmheft zum Schulkonzert mit Webern-Miniatur.
 SITUATION: Das Publikum fuerchtet „modernen Laerm", die Musiklehrerin will Verstaendnis wecken.
 AUFGABE: Erklaeren Sie in ca. 150 Woertern Reihe plus eine Reihenform am Beispiel und urteilen Sie: Befreiung oder Fessel?
 RUBRIC (30 XP): Reihe plus Regel korrekt (10 XP) | Eine Form demonstriert (10 XP) | Urteil Befreiung/Fessel mit Begruendung (10 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY 1盒（核心总结）：
 

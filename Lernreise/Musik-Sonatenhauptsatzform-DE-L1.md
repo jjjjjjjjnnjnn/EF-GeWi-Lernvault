@@ -15,7 +15,7 @@ version: Lesson-v3
 
 <!-- Lesson v3 Architektur mit 9 Abschnitten: Schritt 1 bis 8 mit fester Struktur; Fehlvorstellung liegt zwischen Schritt 6 und 7 (wird vom Parser uebersprungen, zaehlt nicht als Schritt); unterstuetzt eingebettete [Werkzeug: <id>] Elemente; Gating: check/szenario nicht bestanden = Weiter deaktiviert; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
-## Schritt 1 — entdecken
+## Schritt 1 — entdecken: Ziele & Phänomen-Einstieg
 
 ZIELE (drei messbare Ziele dieser Lektion):
 
@@ -25,7 +25,7 @@ ZIELE (drei messbare Ziele dieser Lektion):
 
 ### Hook / Phaenomen
 
-Stell dir vor: Ein Orchester stellt zwei Melodien vor — erst markant und entschlossen, dann sanglich und weich. Die zweite klingt ploetzlich in fremder Tonart, alles draengt weiter, nichts kommt zur Ruhe. Spaeter kehren beide Melodien wieder, nun in derselben Tonart, und ploetzlich wirkt alles geloest. Dieselben Themen, voellig andere Wirkung — wie erkennt das Ohr, ob es aufbricht oder heimkehrt?
+Stell dir vor: Ein Orchester stellt zwei Melodien vor — erst markant und entschlossen, dann sanglich und weich. Die zweite klingt ploetzlich in fremder Tonart, alles draengt weiter, nichts kommt zur Ruhe. Spaeter kehren beide Melodien wieder, nun in derselben Tonart, und ploetzlich wirkt alles geloest. Dieselben Themen, voellig andere Wirkung — wie erkennt das Ohr, ob es aufbricht oder heimkehrt? Durch Hoeren auf Tonart und Funktion statt nur auf Melodie. Erstens markiert der Hauptsatz den Aufbruch in der Grundtonart. Zweitens signalisiert die Ueberleitung mit Modulation den Weg in die Dominante. Drittens bestaetigt der Seitensatz dort die neue Spannung. Viertens loest die Reprise beide Gedanken in der Grundtonart und schliesst den Bogen. Mit der Pulsformel $T = 60/BPM$ haelt das Ohr das Zeitmass, mit Kadenzhoeren prueft es Schluesse. Wer Aufbruch und Heimkehr so trennt, liest Form als Drama.
 
 ### Fachbegriff & Definition
 
@@ -37,7 +37,7 @@ Der Kernmechanismus laeuft in drei Stufen: **Aufbruch, Umweg, Heimkehr**. Ersten
 
 Klausur-Satz: `Die Exposition stellt zwei kontrastierende Themen in zwei Tonarten vor, die Durchfuehrung zerlegt und moduliert, und die Reprise holt beide Themen in die Haupttonart zurueck.`
 
-## Schritt 2 — entdecken
+## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
 
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
@@ -59,7 +59,7 @@ Die Begriffe greifen ineinander: Die **Haupttonart** $H_d$ stiftet den Bezugspun
 
 Klausur-Satz: `Die Haupttonart ist der tonale Ruhepunkt des Satzes, von dem die Exposition aufbricht und in den die Reprise zurueckkehrt.`
 
-## Schritt 3 — entdecken
+## Schritt 3 — entdecken: Kernkonzept & Wirkungsmodell
 
 TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
@@ -67,14 +67,13 @@ TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
 Ein Hoerprotokoll notiert: zwei Themen, das zweite in fremder Tonart, Ende offen und draengend. Ein zweites notiert: beide Themen in derselben Tonart, Ende beruhigt und geschlossen. Dieselbe Melodie, zwei entgegengesetzte Zustaende — woran entscheidet sich, ob die Musik noch unterwegs ist oder schon angekommen? Genau diese Frage stellt die Prueferin immer wieder.
 
-### Fachbegriff & Definition
+### Spiel-Aufgabe (Oral-Timer-Quiz)
 
-Der **Tonartplan $H_d-D_d-H_d$** ist das Verlaufsschema der Sonatenhauptsatzform: **Exposition** als Aufbruch $H_d$ nach $D_d$, **Durchfuehrung** als unsteter Umweg ohne Ruhepunkt, **Reprise** als Heimkehr $H_d$ nach $H_d$. Er beantwortet nicht, wie die Themen klingen, sondern wo sie stehen. Ohne Themen-Dualismus plus Tonartplan bleibt jede Dreiteiligkeit blosse Liedform $A-B-A$.
+Spiele das Formteil-Quiz gegen den 90-Sekunden-Timer: Zaehle die Themen (eins spricht gegen, zwei fuer Exposition oder Reprise), vergleiche die Tonart des zweiten Themas (Fremdtonart $D_d$ heisst unterwegs, Haupttonart $H_d$ heisst angekommen), entscheide laut — $H_d$ nach $D_d$ mit offenem Ende ist Exposition, $H_d$ nach $H_d$ mit geschlossenem Ende ist Reprise. Pulsanker $T=60/BPM$ als stabiler Puls der Heimkehr. Jede Entscheidung ohne Tonart-Beleg stoppt die Uhr.
 
-### Wirkungsgefuege / Modell
+### Aha-Moment & Gesetz
 
-Denke in Kausalkette: **Zaehlen, Vergleichen, Entscheiden**. Erstens werden die Themen gezaehlt: Ein Thema spricht gegen Exposition und Reprise, zwei Themen sprechen dafuer. Zweitens wird die Tonart des zweiten Themas verglichen: Fremdtonart $D_d$ bedeutet noch unterwegs, Haupttonart $H_d$ bedeutet angekommen. Drittens wird entschieden: $H_d$ nach $D_d$ mit offenem Ende ist Exposition, Fragmente plus Modulation sind Durchfuehrung, $H_d$ nach $H_d$ mit geschlossenem Ende ist Reprise mit $T = 60/BPM$ als stabilem Puls der Heimkehr. Genau diese Kette macht das Hoerurteil ueberpruefbar.
-
+Denke in Kausalkette Zaehlen, Vergleichen, Entscheiden: Themen werden gezaehlt, die Tonart des zweiten Themas verglichen, der Formteil entschieden. Der Tonartplan $H_d-D_d-H_d$ beantwortet nicht, wie die Themen klingen, sondern wo sie stehen: Exposition ist Aufbruch, Durchfuehrung ist Umweg, Reprise ist Heimkehr. Ohne Themen-Dualismus plus Tonartplan bleibt jede Dreiteiligkeit blosse Liedform $A-B-A$.
 ```diagram
   Tonartplan [Hd -> Dd -> Hd als Fahrplan]
   Exposition [Hd -> Dd] -> Spannung offen
@@ -82,6 +81,7 @@ Denke in Kausalkette: **Zaehlen, Vergleichen, Entscheiden**. Erstens werden die 
   Reprise [Hd -> Hd] -> Ausgleich geschlossen
   Coda [Hd] -> Bestaetigung
   Hoerfragen: Themenzahl? | Tonartwechsel? | Heimkehr?
+  Pulsanker: $T=60/BPM$
 ```
 
 Klausur-Satz: `Waehrend die Exposition die Spannung durch den Tonartwechsel zur Dominantseite aufbaut, loest die Reprise sie auf, indem sie beide Themen in die Haupttonart zurueckfuehrt.`
@@ -92,24 +92,24 @@ Klausur-Satz: `Waehrend die Exposition die Spannung durch den Tonartwechsel zur 
 
 **Bezug zum Konzept**: `Die Sonatenhauptsatzform ist ein nachtraeglich formulierter Begriff fuer die Praxis der Klassik; deshalb entscheidet der gehoerte Tonartplan, nicht ein starres Schema.`
 
-## Schritt 4 — ausprobieren
+## Schritt 4 — ausprobieren: Interaktive Praxis & Hoer-Labor
 
 BEISPIEL (Musteraufgabe mit Loesungsweg):
 
-[Werkzeug: lego]
+[Werkzeug: oral-timer]
 
-AUFGABE (beschreiben, AFB II): Ein Hoerbeispiel (ca. 40 Sekunden) stellt zuerst einen kurzen, markanten Gedanken vor, danach einen sanglichen Gedanken in neuer Tonlage. Am Ende kehren beide Gedanken unveraendert und in derselben Tonlage wieder. Bestimmen Sie den Formteil und begruenden Sie Ihre Entscheidung mit zwei Hoermerkmalen.
+AUFGABE (beschreiben, AFB II): Quiz-Challenge — ein Hoerbeispiel (ca. 40 Sekunden) stellt zuerst einen kurzen, markanten Gedanken vor, danach einen sanglichen Gedanken in neuer Tonlage. Am Ende kehren beide Gedanken unveraendert und in derselben Tonlage wieder. Bestimme laut gegen den Timer den Formteil und begruende mit zwei Hoermerkmalen.
 
 HILFE:
 1. Schritt 1: Zaehle die Themen. Zwei kontrastierende Themen sprechen fuer Exposition oder Reprise.
 2. Schritt 2: Pruefe die Tonart des zweiten Themas. Fremdtonart bedeutet Exposition, Haupttonart bedeutet Reprise.
 3. Schritt 3: Achte auf das Ende. Rueckkehr beider Themen in gleicher Tonlage bedeutet Ausgleich in der Reprise.
 
-MUSTERLOESUNG: Es liegt eine Reprise vor. Der Ausschnitt stellt zwei kontrastierende Themen vor, was zunaechst auch auf eine Exposition hindeuten koennte. Entscheidend ist jedoch der Tonartverlauf: Der zweite, sangliche Gedanke erklingt nicht in der Fremdtonart, sondern am Ende in derselben Tonlage wie der erste. Da beide Themen gemeinsam in die Haupttonart zurueckkehren und der Schluss geloest wirkt, handelt es sich um den Ausgleich der Reprise, nicht um den Aufbruch der Exposition.
+MUSTERLOESUNG (Sprech-Skript, 90 Sekunden): "Ich hoere zwei kontrastierende Themen — das spricht fuer Exposition oder Reprise. Entscheidend ist der Tonartverlauf: Der sangliche Gedanke kehrt in derselben Tonlage zurueck, nicht in der Fremdtonart. Ich hoere also beide Themen in der Haupttonart wiederkehren; das wirkt wie eine Reprise, weil erst die Rueckholung die Expositions-Spannung loest."
 
 Klausur-Satz: `Ich hoere beide Themen in derselben Tonlage wiederkehren; das wirkt wie eine Reprise, weil erst die Rueckholung in die Haupttonart die Expositions-Spannung loest.`
 
-## Schritt 5 — ausprobieren
+## Schritt 5 — ausprobieren: Verfahrensvergleich & Abgrenzung
 
 VERGLEICH (zwei Verfahren im Kontrast):
 
@@ -125,7 +125,7 @@ ANTWORT: A erfordert Verfahren (i): Das zweite Thema steht in der Dominante und 
 
 Klausur-Satz: `Solange der zweite Themenkomplex in der Fremdtonart steht, liegt eine Exposition vor; erst die Rueckkehr beider Themen in die Haupttonart kennzeichnet die Reprise.`
 
-## Schritt 6 — check
+## Schritt 6 — check: Verständnisprüfung
 
 CHECK (3 Fragen zur Selbstkontrolle mit Antworten):
 
@@ -146,13 +146,13 @@ Klausur-Satz: `Die Durchfuehrung fuehrt kein neues Thema ein, sondern verarbeite
    Korrektur: Beide koennen dicht wirken, aber die Richtung ist entgegengesetzt. Die Durchfuehrung entfernt sich modulierend ohne Abschluss; die Reprise steht bereits in der Haupttonart und stabilisiert sich. Entscheidend ist die Frage, ob die Tonart heimgekehrt ist.
    Korrektur-Satz: `Die Durchfuehrung entfernt sich durch Modulationen von der Haupttonart, waehrend die Reprise trotz dichter Faktur bereits in der Haupttonart angekommen ist.`
 
-## Schritt 7 — szenario
+## Schritt 7 — szenario: Klausurtransfer & Rubric
 
 ROLLE: Du bist Pruefling in einer muendlichen Musikpruefung (EF) und sollst einen kurzen Hoerbeispiel-Ausschnitt fachsprachlich einordnen.
 SITUATION: Die Prueferin spielt einen Ausschnitt, in dem zwei Themen zu hoeren sind und der zweite Gedanke in einer neuen Tonlage endet. Sie fragt: Ordnen Sie den Ausschnitt ein und begruenden Sie Ihre Entscheidung. Formuliere eine zusammenhaengende muendliche Stellungnahme (ca. 90 Sekunden) mit den drei Hoerfragen (Themenzahl, Tonart, Rueckkehr) und schliesse mit einem begruendeten Urteil zur Wirkung.
 RUBRIC (30 XP): Benennung des Formteils ueber Themenzahl und Tonartplan (8 XP) | Beschreibung von zwei Hoermerkmalen mit Fachbegriffen (8 XP) | Begruendung ueber den Tonartverlauf ($Hd$ und $Dd$, Fremdtonart gegen Haupttonart) (9 XP) | Begruendetes Urteil zur Ausdruckswirkung (Aufbruch gegen Heimkehr) (5 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY (Kernzusammenfassung):
 

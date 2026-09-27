@@ -15,7 +15,7 @@ version: Lesson-v3
 
 <!-- Lesson v3 9步制架构：Schritt 1至8固定结构；Fehlvorstellung 夹在 Schritt 6 与 7 之间（Parser 自动跳过，不占步数）；支持内嵌 [Werkzeug: <id>] 交互教具；Gating: check/szenario 未过 = Weiter 置灰；XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
-## Schritt 1 — entdecken
+## Schritt 1 — entdecken: Ziele & Phänomen-Einstieg
 
 ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
@@ -25,9 +25,20 @@ ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
 Voraussetzung（窄切口）：只做 4/4 拍，已会 Viertel/Achtel 与 Taktstrich；不做复拍子。
 
+
+Hook中文生活切入:
+
+想象跟着音乐拍手:大伙都拍在正拍上,突然有人专拍在两拍之间,错位的手掌声让全场身体一震,想跟着晃。爵士的切分就是这种故意的错位:重音从正拍挪到弱拍, expectation 落空反而生出摇摆感,稳定的拍子是地,错位的重音是画。这种忍不住摇摆的冲动,正是本节要解释的切分魔力。
+
+Phaenomen-Satz (DE): Alle klatschen auf eins, einer klatscht dazwischen, alle wippen mit.
+
+中文机制铺垫:先立拍号与正拍网格,再标切分位置:跨小节连线与弱拍重音;爵士在此基础上加摇摆时值与即兴,听辨题先打拍子找错位,再判断切分类型,口述加拍手演示是采分动作。
+
+Mechanismus-Satz (DE): Synkopen brechen das Gitter, der Beat bleibt, das Gefuehl swingt.
+
 Klausur-Satz: `Synkopen verlagern die Betonung, Jazz organisiert sie zum Groove.`
 
-## Schritt 2 — entdecken
+## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
 
 PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
 
@@ -41,20 +52,35 @@ PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→�
 
 Klausur-Satz: `Offbeat und Swing tragen den Groove, der Bass haelt das Metrum.`
 
-## Schritt 3 — entdecken
+## Schritt 3 — entdecken: Kernkonzept & Wirkungsmodell
 
-ENTDECKEN（1概念 + 1文字图解）：
+ENTDECKEN（1概念 + 1文字图解，中文在上、德语在下）：
 
-中文：切分是"错位生趣"：本该轻的地方响了，身体被迫晃一下。爵士把错位制度化——鼓打 2、4，贝斯走 1、2、3、4，钢琴在缝里补 synkope，三层错开又咬合即 Groove。听辨口诀：先数拍（eins-zwei-drei-vier），再找反拍（klatscht es auf zwei/vier），最后定 swing（laufen die Achtel ungleich）。写答案三句：Taktart nennen、 Synkopenort zeigen、 Groovewirkung deuten。
+Hook中文生活切入：
+
+中文：想象心跳突然漏一拍又赶上：重音跑到了弱拍上，身体却更想动了。爵士的 groove 就是把这种错位组织成常态。
+
+Phaenomen-Satz (DE): Die Betonung verrutscht, der Koerper tanzt.
+
+Spiel-Aufgabe沙盒操作指引：
+
+中文：打开节奏沙盒，按 oral-timer 先打稳 Bass 脉冲，再叠 Offbeat 与 Synkope（关键词：Offbeat, Backbeat, Synkope, Groove），听错位层何时织成 groove。
+
+Beobachtungs-Satz (DE): Stabiler Bass plus Offbeat plus Synkopen ergeben Groove.
+
+Aha-Moment因果链：
+
+中文因果链：稳定的节拍器层给参照，错位层给动力，两层叠加即 groove；先数拍定证据，再论风格，数不清就阐释不清。
+
+Gesetz-Satz (DE): Der Groove entsteht aus versetzten Schichten ueber stabilem Metrum.
 
 文字图解（ASCII 结构图，App支持解析渲染）：
 
 ```diagram
-  4/4: 1 . 2 . 3 . 4 .  (stark-schwach-mittel-schwach)
-  Synkope:   >        >   (Betonung auf 2 und 4 / zwischen den Zaehlen)
-  Jazz-Schichten: Bass 1-2-3-4 | Drums >2 >4 | Piano synkopisch dazwischen
+Schicht 1 (Bass): 1 . 2 . 3 . 4 .  (stabil)
+Schicht 2 (Offbeat): . x . x . x . x  (versetzt)
+Summe = Groove (tanzbar), Solo-Synkope = Wuerze
 ```
-
 Klausur-Satz: `Der Groove entsteht aus versetzten Schichten ueber stabilem Metrum.`
 
 ## Anekdote & Fun-Fact
@@ -65,24 +91,31 @@ Klausur-Satz: `Der Groove entsteht aus versetzten Schichten ueber stabilem Metru
 
 **Bezug zum Konzept**: `Jazz verwandelt Trauer-Schritte in Tanz-Synkopen.`
 
-## Schritt 4 — ausprobieren
+## Schritt 4 — ausprobieren: Interaktive Praxis & Labor
 
-BEISPIEL（正确例题示范，含教具操作与解答）：
+[Werkzeug: oral-timer]
 
-[Werkzeug: rhythm]
+BEISPIEL（正确例题示范，含教具操作与解答，中文在上、德语在下）：
 
-AUFGABE (analysieren, AFB II)：Beschreiben Sie einen achttaktigen Jazz-Ausschnitt in 4/4: Der Bass spielt Viertel 1-2-3-4, die Hi-Hat betont 2 und 4, das Klavier spielt synkopische Akkorde zwischen den Zaehlen. Deuten Sie die Groovewirkung.
+AUFGABE中文导读（听辨谜题）：一段音乐贝斯极稳、军鼓全打在反拍并有切分。请论证其舞曲性来自 groove 而非偶然错位。
 
-HILFE:
-1. Schritt 1: Taktart und Metrum sichern.
-2. Schritt 2: Jede Schicht mit Betonungsort nennen.
-3. Schritt 3: Gesamtwirkung als Groove deuten.
+AUFGABE (analysieren, AFB II): Stabile Basspulse tragen Offbeat und Synkopen. Weisen Sie Groove als Schichtprinzip nach.
 
-MUSTERLÖSUNG: Das Metrum ist stabiles 4/4 mit Walking Bass auf allen Vierteln als Referenz. Die Hi-Hat legt Offbeats auf 2 und 4 und erzeugt den typischen Backbeat-Sog. Das Klavier setzt Synkopen zwischen die Zaehlen und verstaerkt die Vorwaertsenergie. Zusammen bilden drei versetzte Schichten einen Groove: Der Koerper folgt dem Bass, der Kopf dem Offbeat — Tanzbarkeit entsteht aus geregelter Verschiebung, nicht aus Chaos.
+HILFE（中德双语步骤）：
 
+1. 中文：第1步数拍定贝斯层稳定，关键词：Metrum。
+   Schritt 1 (DE): Sichern Sie den stabilen Bass als Referenz.
+2. 中文：第2步标反拍与切分位置，关键词：Offbeat。
+   Schritt 2 (DE): Markieren Sie Offbeat und Synkopen.
+3. 中文：第3步合层论风格：两层叠加即 groove，关键词：Schicht。
+   Schritt 3 (DE): Deuten Sie Schichtung als Groove.
+
+MUSTERLOESUNG：中文：贝斯给出稳定参照，反拍与切分系统性错位而非一次性失误，两层长期叠加产生身体驱动力，故判 groove；偶然错位不会成层。
+
+MUSTERLOESUNG (DE): Stabiler Bass plus Offbeat plus Synkopen ergeben einen tanzbaren Groove: versetzte Schichten ueber stabilem Metrum, nicht Zufall.
 Klausur-Satz: `Stabiler Bass plus Offbeat plus Synkopen ergeben einen tanzbaren Groove.`
 
-## Schritt 5 — ausprobieren
+## Schritt 5 — ausprobieren: Verfahrensvergleich & Abgrenzung
 
 VERGLEICH辨别实验（双向辨析：节拍数拍 vs 律动描述）：
 
@@ -97,7 +130,7 @@ ANTWORT: A erfordert Verfahren (i): 4/4 festhalten, Betonungen auf 2/4 und Klavi
 
 Klausur-Satz: `Zaehlen sichert den Beleg, Deuten gewinnt die Stilthese.`
 
-## Schritt 6 — check
+## Schritt 6 — check: Verständnisprüfung
 
 CHECK检索默写（自测 3 题，与答案配对）：
 
@@ -119,13 +152,13 @@ Klausur-Satz: `Ohne Offbeat kein Backbeat, ohne Bass kein Groove.`
    中文纠偏：Groove 是三层咬合；只写鼓丢掉贝斯参照与钢琴错位两分。
    Korrektur-Satz: `Groove entsteht aus dem Zusammenspiel aller Schichten.`
 
-## Schritt 7 — szenario
+## Schritt 7 — szenario: Klausurtransfer & Rubric
 
 ROLLE: Du moderierst einen Jazz-Workshop fuer Anfaenger.
 SITUATION: Die Gruppe klatscht nur auf 1 und 3. Erklaere in zusammenhaengender Darstellung (ca. 150 Woerter) mit Klatschuebung, wie man Offbeat und Synkope findet und was Groove koerperlich bedeutet.
 RUBRIC (30 XP): Uebungsanleitung mit Zaehlen (10 XP) | Offbeat- und Synkopenbegriffe korrekt (10 XP) | Groovedeutung als Koerpererfahrung (6 XP) | Verstaendliche Sprache (4 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY 1盒（核心总结）：
 

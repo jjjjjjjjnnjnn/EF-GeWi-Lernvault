@@ -15,7 +15,7 @@ version: Lesson-v3
 
 <!-- Lesson v3 Architektur mit 9 Abschnitten: Schritt 1 bis 8 mit fester Struktur; Fehlvorstellung liegt zwischen Schritt 6 und 7 (wird vom Parser uebersprungen, zaehlt nicht als Schritt); unterstuetzt eingebettete [Werkzeug: <id>] Elemente; Gating: check/szenario nicht bestanden = Weiter deaktiviert; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
-## Schritt 1 — entdecken
+## Schritt 1 — entdecken: Ziele & Phänomen-Einstieg
 
 ZIELE (drei messbare Ziele dieser Lektion):
 
@@ -25,7 +25,7 @@ ZIELE (drei messbare Ziele dieser Lektion):
 
 ### Hook / Phaenomen
 
-Stell dir vor: Vor dir liegen zwei Seiten Noten, voller Themen, Ueberleitungen und Schlussgruppen. Die Prueferin fragt trocken: „Wo stehen wir — Aufbruch oder Heimkehr?" Wer jetzt die Melodien nachsingt, verliert den Faden. Wer dagegen eine einzige Tabelle zieht und sagt: „Hier bricht die Musik nach $D_d$ auf, dort kehrt sie nach $H_d$ zurueck", hat die Pruefung schon halb gewonnen. Wie wird aus Hoereindruecken ein lesbarer Plan?
+Stell dir vor: Vor dir liegen zwei Seiten Noten, voller Themen, Ueberleitungen und Schlussgruppen. Die Prueferin fragt trocken: Wo stehen wir — Aufbruch oder Heimkehr? Wer jetzt die Melodien nachsingt, verliert den Faden. Wer dagegen eine einzige Tabelle zieht und sagt: Hier bricht die Musik nach $D_d$ auf, dort kehrt sie nach $H_d$ zurueck, hat die Pruefung schon halb gewonnen. Wie wird aus Hoereindruecken ein lesbarer Plan? Durch systematisches Zuordnen von Hoermerkmal zu Formteil. Erstens Exposition mit zwei Themen in Grund- und Nebentonart. Zweitens Durchfuehrung mit Verarbeitung ohne festen Ruhepunkt. Drittens Reprise mit Rueckkehr beider Themen in die Grundtonart. Viertens Coda als Bestaetigung. Die Pulsformel $T = 60/BPM$ sichert das Sprechtempo in der Neunzig-Sekunden-Antwort, die Kadenzformel prueft jeden Schluss. Wer Tabelle plus Beleg liefert, ersetzt Geschmack durch Nachweis.
 
 ### Fachbegriff & Definition
 
@@ -37,7 +37,7 @@ Der Kernmechanismus laeuft in drei Stufen: **Eintragen, Vergleichen, Urteilen**.
 
 Klausur-Satz: `Der Tonartplan der Sonatensatzform verlaeuft von der Haupttonart ueber die Dominantseite und zurueck zur Haupttonart, wobei die Coda den Abschluss bestaetigt.`
 
-## Schritt 2 — entdecken
+## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
 
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
@@ -59,7 +59,7 @@ Die Begriffe greifen ineinander: Der **Tonartplan** gibt das Geruest $H_d-D_d-H_
 
 Klausur-Satz: `Waehrend der Seitensatz in der Exposition die Dominantseite erreicht, wird er in der Reprise in die Haupttonart eingegliedert, sodass der Tonartplan geschlossen wird.`
 
-## Schritt 3 — entdecken
+## Schritt 3 — entdecken: Kernkonzept & Wirkungsmodell
 
 TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
@@ -67,14 +67,13 @@ TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
 G-Dur, dann D-Dur, dann viele Tonarten ohne Ruhepunkt, dann wieder G-Dur, dann noch einmal G-Dur — ist der letzte Abschnitt nun eine zweite Durchfuehrung oder bloss ein Anhang? An genau dieser Stelle scheiden sich in der Pruefung gute und sehr gute Analysen. Denn dicht und laut klingen beide, doch nur eine moduliert noch. Wie trennt man Entwicklung von Bestaetigung?
 
-### Fachbegriff & Definition
+### Spiel-Aufgabe (Tonartplan-Diktat mit Timer)
 
-Die **Coda als Bestaetigung** ist der Schlussabschnitt nach abgeschlossener Reprise, der die Haupttonart $H_d$ ohne neue Modulation be festigt. Im Gegensatz zur **Durchfuehrung**, die durch Fragmentierung und staendige Ausweichung Spannung aufbaut, stabilisiert die Coda mit festem $H_d$ und ruhigem Puls bei $T = 60/BPM$. Kriterium ist der feste tonale Zielpunkt: unstetes Wandern bedeutet Durchfuehrung, stabiles Verweilen bedeutet Coda.
+Dikriere den Tonartplan laut gegen den 90-Sekunden-Timer: Trage Hauptsatz $H_d$ und Seitensatz $D_d$ oder $H_d$ ein, pruefe den Schlussabschnitt — moduliert er noch mit $f_{neu}=f_{alt}\cdot 2^{n/12}$ in neue Tonarten, bleibt es Durchfuehrung; verweilt er in $H_d$ bei ruhigem Puls $T=60/BPM$, ist es Coda. Das Diktat-Raetsel: Benenne Exposition als Aufbruch, Reprise als Ausgleich, Coda als Bestaetigung — dichte Faktur ohne Modulation zaehlt nicht als Entwicklung.
 
-### Wirkungsgefuege / Modell
+### Aha-Moment & Gesetz
 
-Denke in Kausalkette: **Eintragen, Pruefen, Benennen**. Erstens wird der Tonartplan eingetragen: Hauptsatz $H_d$, Seitensatz $D_d$ oder $H_d$, Durchfuehrung offen. Zweitens wird der Schlussabschnitt geprueft: Moduliert er noch mit $f_{neu} = f_{alt} \cdot 2^{n/12}$ in neue Tonarten, bleibt es Durchfuehrung; verweilt er in $H_d$, ist es Coda. Drittens wird benannt: Exposition ist Aufbruch, Reprise ist Ausgleich, Coda ist Bestaetigung. Genau diese Kette schuetzt vor der Verwechslung von dichter Faktur mit echter Entwicklung.
-
+Denke in Kausalkette Eintragen, Pruefen, Benennen: Der Tonartplan wird eingetragen, der Schlussabschnitt auf Modulation geprueft, der Formteil benannt. Kriterium ist der feste tonale Zielpunkt: unstetes Wandern bedeutet Durchfuehrung, stabiles Verweilen bedeutet Coda. Genau diese Kette schuetzt vor der Verwechslung von dichter Faktur mit echter Entwicklung.
 ```diagram
   Analyse [Tonartplan + Themenvergleich -> Urteil]
   Exposition [Hd -> Dd] -> Aufbruch offen
@@ -82,6 +81,7 @@ Denke in Kausalkette: **Eintragen, Pruefen, Benennen**. Erstens wird der Tonartp
   Reprise [Hd -> Hd] -> Ausgleich geschlossen
   Coda [Hd ohne Modulation] -> Bestaetigung
   Themenvergleich: Charakter | Lage | Rhythmus T=60/BPM | Begleitung
+  Pulsanker: $T=60/BPM$
 ```
 
 Klausur-Satz: `Der Tonartplan macht sichtbar, dass die Exposition mit der Dominante eine tonale Spannung aufbaut, die erst die Reprise durch die Rueckkehr beider Themen in die Haupttonart aufloest.`
@@ -92,24 +92,24 @@ Klausur-Satz: `Der Tonartplan macht sichtbar, dass die Exposition mit der Domina
 
 **Bezug zum Konzept**: `Weil Expositionen auch monothematisch sein koennen, entscheidet der Tonartplan ueber die Einordnung, nicht die blosse Zahl der Themen.`
 
-## Schritt 4 — ausprobieren
+## Schritt 4 — ausprobieren: Interaktive Praxis & Hoer-Labor
 
 BEISPIEL (Musteraufgabe mit Loesungsweg):
 
-[Werkzeug: formula]
+[Werkzeug: oral-timer]
 
-AUFGABE (analysieren, AFB II): Fuer den ersten Satz einer klassischen Sinfonie liegen folgende Angaben vor: Der Hauptsatz steht in G-Dur; die Ueberleitung moduliert und der Seitensatz endet in D-Dur; der folgende Abschnitt verarbeitet Motive in mehreren Tonarten ohne festen Ruhepunkt; danach kehren Haupt- und Seitensatz wieder, der Seitensatz nun in G-Dur; ein kurzer Schlussabschnitt bestaetigt G-Dur. Erstellen Sie den Tonartplan und bestimmen Sie die Funktion des Schlussabschnitts.
+AUFGABE (analysieren, AFB II): Plan-Challenge — fuer den ersten Satz einer klassischen Sinfonie liegen folgende Angaben vor: Der Hauptsatz steht in G-Dur; die Ueberleitung moduliert und der Seitensatz endet in D-Dur; der folgende Abschnitt verarbeitet Motive in mehreren Tonarten ohne festen Ruhepunkt; danach kehren Haupt- und Seitensatz wieder, der Seitensatz nun in G-Dur; ein kurzer Schlussabschnitt bestaetigt G-Dur. Erstelle laut gegen den Timer den Tonartplan und bestimme die Funktion des Schlussabschnitts.
 
 HILFE:
 1. Schritt 1: Ordne die Angaben den vier Abschnitten Exposition, Durchfuehrung, Reprise und Coda zu.
 2. Schritt 2: Trage in jede Zeile die Tonart ein, Hauptsatz, Seitensatz und jeweilige Zieltonart.
 3. Schritt 3: Bestimme die Funktion des Schlussabschnitts, indem du pruefst, ob er noch moduliert oder nur bestaetigt.
 
-MUSTERLOESUNG: Der Tonartplan lautet: Exposition mit Hauptsatz in G-Dur ($Hd$), Ueberleitung nach D-Dur, Seitensatz in D-Dur ($Dd$). Durchfuehrung mit motivischer Verarbeitung in mehreren Tonarten ohne festen Ruhepunkt. Reprise mit Hauptsatz in G-Dur und Seitensatz nun ebenfalls in G-Dur (Ausgleich in $Hd$). Coda als Bestaetigung von G-Dur. Der Schlussabschnitt moduliert nicht mehr, sondern bekaeftigt die Haupttonart; er ist damit eine Coda und keine zweite Durchfuehrung.
+MUSTERLOESUNG (Sprech-Skript, 90 Sekunden): "Exposition: Hauptsatz G-Dur ($H_d$), Seitensatz D-Dur ($D_d$) — Aufbruch mit Spannung. Durchfuehrung: Verarbeitung ohne Ruhepunkt — Umweg. Reprise: beide Saetze in G-Dur — Ausgleich. Der Schlussabschnitt moduliert nicht mehr, sondern bekaeftigt die Haupttonart; ich hoere also eine Coda, keine zweite Durchfuehrung."
 
 Klausur-Satz: `Die Coda bestaetigt die Haupttonart nach abgeschlossenem Ausgleich und unterscheidet sich dadurch grundlegend von der modulierenden Durchfuehrung.`
 
-## Schritt 5 — ausprobieren
+## Schritt 5 — ausprobieren: Verfahrensvergleich & Abgrenzung
 
 VERGLEICH (zwei Verfahren im Kontrast):
 
@@ -125,7 +125,7 @@ ANTWORT: A erfordert Verfahren (i): Steht der Seitensatz in der Dominante, gehoe
 
 Klausur-Satz: `Ob ein Abschnitt als Exposition, Reprise oder Coda zu bestimmen ist, entscheidet sich an seinem Tonartziel und seiner Funktion, nicht an seiner Laenge.`
 
-## Schritt 6 — check
+## Schritt 6 — check: Verständnisprüfung
 
 CHECK (3 Fragen zur Selbstkontrolle mit Antworten):
 
@@ -146,13 +146,13 @@ Klausur-Satz: `Die Coda schliesst den Tonartplan, indem sie die Haupttonart best
    Korrektur: Der Tonartplan muss die tonale Richtung zeigen: Aufbruch zur Dominantseite in der Exposition, Ausgleich in der Haupttonart in der Reprise. Ohne Richtung bleibt unsichtbar, wie Spannung aufgebaut und geloest wird.
    Korrektur-Satz: `Ein Tonartplan muss die tonale Richtung zeigen: Aufbruch zur Dominantseite in der Exposition, Ausgleich in der Haupttonart in der Reprise.`
 
-## Schritt 7 — szenario
+## Schritt 7 — szenario: Klausurtransfer & Rubric
 
 ROLLE: Du bist Pruefling in einer muendlichen Musikpruefung (EF) und sollst deine schriftliche Analyse eines Sonatensatzes muendlich erlaeutern.
 SITUATION: Du hast zu Hause einen Tonartplan und eine Themenvergleichstabelle erstellt. In der Pruefung liegt dein Blatt vor dir; die Prueferin fragt: Erlaeutern Sie Ihren Tonartplan und begruenden Sie, warum der Schlussabschnitt eine Coda ist. Formuliere eine zusammenhaengende muendliche Erlaeuterung (ca. 90 Sekunden), in der du beide Tabellen nutzt und mit einem begruendeten Urteil zur Formwirkung schliesst.
 RUBRIC (30 XP): Vorstellen des Tonartplans mit Richtung $Hd$-$Dd$-$Hd$ (8 XP) | Vergleich von Hauptsatz und Seitensatz an mindestens zwei Merkmalen (8 XP) | Begruendung der Coda-Funktion ueber die fehlende Modulation (9 XP) | Begruendetes Urteil zur Formwirkung (Aufbau und Loesung der tonalen Spannung) (5 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY (Kernzusammenfassung):
 

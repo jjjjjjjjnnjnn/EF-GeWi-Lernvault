@@ -15,7 +15,7 @@ version: Lesson-v3
 
 <!-- Lesson v3 Architektur mit 9 Abschnitten: Schritt 1 bis 8 mit fester Struktur; Fehlvorstellung liegt zwischen Schritt 6 und 7 (wird vom Parser uebersprungen, zaehlt nicht als Schritt); unterstuetzt eingebettete [Werkzeug: <id>] Elemente; Gating: check/szenario nicht bestanden = Weiter deaktiviert; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
-## Schritt 1 — entdecken
+## Schritt 1 — entdecken: Ziele & Phänomen-Einstieg
 
 ZIELE (drei messbare Ziele dieser Lektion):
 
@@ -25,7 +25,7 @@ ZIELE (drei messbare Ziele dieser Lektion):
 
 ### Hook / Phaenomen
 
-Stell dir vor: Die Prueferin drueckt auf Play, dreissig Sekunden Musik, dann Stille — und alle Augen richten sich auf dich. Was sagst du zuerst? Viele schueler beginnen mit „Es klingt traurig", und schon ist der erste Punkt verloren. Denn Gefuehle zaehlen nicht, solange kein Ton, kein Rhythmus, keine Dynamik sie traegt. Wie wird aus blossem Hoeren eine Analyse, die auch ohne Notenbild ueberzeugt?
+Stell dir vor: Die Prueferin drueckt auf Play, dreissig Sekunden Musik, dann Stille — und alle Augen richten sich auf dich. Was sagst du zuerst? Viele Schueler beginnen mit Es klingt traurig, und schon ist der erste Punkt verloren. Denn Gefuehle zaehlen nicht, solange kein Ton, kein Rhythmus, keine Dynamik sie traegt. Wie wird aus blossem Hoeren eine Analyse, die auch ohne Notenbild ueberzeugt? Durch das Verfahren Parameter plus Fachbegriff plus Urteil mit der Zeitformel $T = 60/BPM$ als Anker. Erstens sichert das Beschreiben Belege: Puls, Melodierichtung, Klangfarbe, Dynamik von $piano$ bis $forte$. Zweitens deutet jeder Parameter ueber Ich hoere, das wirkt, weil mit genau einem Fachbegriff wie Crescendo oder Orgelpunkt. Drittens folgt erst danach das begruendete Urteil. Viertens trainiert die Neunzig-Sekunden-Probe gegen den Timer genau diese Reihenfolge. Wer zuerst misst und dann meint, verwandelt Eindruck in Nachweis.
 
 ### Fachbegriff & Definition
 
@@ -37,7 +37,7 @@ Der Kernmechanismus laeuft in drei Stufen: **Beschreiben, Deuten, Beurteilen**. 
 
 Klausur-Satz: `Ich hoere einen Parameter. Das wirkt auf eine bestimmte Weise, weil ein Fachbegriff diesen Eindruck erklaert.`
 
-## Schritt 2 — entdecken
+## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
 
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
@@ -59,28 +59,28 @@ Die Begriffe greifen ineinander: Die **Parameter** liefern das belegbare Materia
 
 Klausur-Satz: `Zuerst werden die Parameter beschrieben, dann wird die Wirkung mit einem Fachbegriff erklaert, und erst zuletzt wird geurteilt.`
 
-## Schritt 3 — entdecken
+## Schritt 3 — entdecken: Kernkonzept & Wirkungsmodell
 
 TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
 ### Hook / Phaenomen
 
-Zwei Prueflinge hoeren denselben Ausschnitt. Der erste sagt: „Schoen und emotional." Der zweite sagt: „Ich hoere einen aufsteigenden Melodiebogen im Crescendo, das wirkt steigernd, weil Lautstaerke und Lage gemeinsam zum Hoehepunkt draengen." Wer bekommt die Punkte? Der Streit entscheidet sich nicht am Geschmack, sondern am Verfahren — und genau dieses Verfahren laesst sich trainieren.
+Zwei Prueflinge hoeren denselben Ausschnitt. Der erste sagt: "Schoen und emotional." Der zweite sagt: "Ich hoere einen aufsteigenden Melodiebogen im Crescendo, das wirkt steigernd, weil Lautstaerke und Lage gemeinsam zum Hoehepunkt draengen." Wer bekommt die Punkte? Der Streit entscheidet sich nicht am Geschmack, sondern am Verfahren — und genau dieses Verfahren laesst sich trainieren.
 
-### Fachbegriff & Definition
+### Spiel-Aufgabe (Oral-Timer-Probe)
 
-Der **Dreischritt Beschreiben, Deuten, Beurteilen** ist das Verlaufsschema jeder belastbaren Hoeranalyse. **Beschreiben** nennt den Parameter sachlich, **Deuten** verknuepft ihn mit Fachbegriff und weil zur Wirkung, **Beurteilen** formuliert erst danach ein begruendetes Urteil. Ein Urteil ohne vorherigen Parameterbeleg bleibt ein Eindruck und erhaelt keine Punkte.
+Starte die 90-Sekunden-Probe: Hoere 30 Sekunden, notiere zwei Parameter (Rhythmus mit $T=60/BPM$, Melodie, Klangfarbe, Dynamik von $piano$ bis $forte$), dann sprich 90 Sekunden gegen den Timer — jeder Parameter im Baustein Ich hoere, das wirkt, weil. Das Probe-Raetsel: Der Timer akzeptiert kein Urteil ohne vorherigen Parameterbeleg; ein blosser Eindruck stoppt die Uhr mit Rotstift-Feedback.
 
-### Wirkungsgefuege / Modell
+### Aha-Moment & Gesetz
 
-Denke in Kausalkette: **Beleg, Begruendung, Bewertung**. Erstens werden der Reihe nach Rhythmus mit $T = 60/BPM$, Melodie, Harmonie, Klangfarbe, Dynamik von $piano$ bis $forte$ und Form gesammelt. Zweitens wird jeder Beleg ueber den Baustein Ich hoere, das wirkt, weil gedeutet — etwa: aufsteigender Melodiebogen plus Crescendo wirkt steigernd, weil beide Parameter gemeinsam Erwartung aufbauen. Drittens wird aus mehreren gedeuteten Belegen ein Urteil gebaut. Genau diese Kette trennt Struktur von Meinung und macht die Analyse wiederholbar.
-
+Denke in Kausalkette Beleg, Begruendung, Bewertung: Erstens werden Rhythmus mit $T=60/BPM$, Melodie, Harmonie, Klangfarbe, Dynamik und Form gesammelt; zweitens wird jeder Beleg ueber Ich hoere, das wirkt, weil gedeutet — aufsteigender Bogen plus Crescendo wirkt steigernd, weil beide gemeinsam Erwartung aufbauen; drittens wird aus gedeuteten Belegen ein Urteil gebaut. Genau diese Kette trennt Struktur von Meinung und macht die Analyse wiederholbar.
 ```diagram
   Hoeranalyse [Beschreiben -> Deuten -> Beurteilen]
   Beschreiben -> Parameter [Rhythmus T=60/BPM | Melodie | Harmonie | Farbe | Dynamik p-f | Form]
   Parameter -> Deuten [Ich hoere -> das wirkt -> weil Fachbegriff]
   Deuten -> Beurteilen [begruendetes Urteil, kein Gefuehl]
   Merksatz: erst STRUKTUR (Beleg), dann MEINUNG (Urteil)
+  Pulsanker: $T=60/BPM$
 ```
 
 Klausur-Satz: `Eine belastbare Hoeranalyse nennt zuerst beschreibbare Parameter und leitet daraus mit einem Fachbegriff die Wirkung ab, bevor sie urteilt.`
@@ -91,24 +91,24 @@ Klausur-Satz: `Eine belastbare Hoeranalyse nennt zuerst beschreibbare Parameter 
 
 **Bezug zum Konzept**: `Beschreiben (Parameter) steht vor Deuten (Wirkung) und Beurteilen (Urteil). Ein bekannter Titel ersetzt keine Hoeranalyse.`
 
-## Schritt 4 — ausprobieren
+## Schritt 4 — ausprobieren: Interaktive Praxis & Hoer-Labor
 
 BEISPIEL (Musteraufgabe mit Loesungsweg):
 
-[Werkzeug: balance]
+[Werkzeug: oral-timer]
 
-AUFGABE (beschreiben, AFB II): Ein Hoerbeispiel (ca. 30 Sekunden) beginnt mit einem kurzen, viertoenigen Motiv in gleichmaessigem Rhythmus und leiser Dynamik. Danach setzt ein langsam aufsteigender Melodiebogen in den hohen Streichern ein, waehrend die Lautstaerke allmaehlich anschwillt. Beschreiben Sie zwei Parameter und erklaeren Sie jeweils mit einem Fachbegriff die Wirkung.
+AUFGABE (beschreiben, AFB II): 90-Sekunden-Challenge — ein Hoerbeispiel (ca. 30 Sekunden) beginnt mit einem kurzen, viertoenigen Motiv in gleichmaessigem Rhythmus und leiser Dynamik. Danach setzt ein langsam aufsteigender Melodiebogen in den hohen Streichern ein, waehrend die Lautstaerke allmaehlich anschwillt. Beschreibe laut gegen den Timer zwei Parameter und erklaere jeweils mit einem Fachbegriff die Wirkung.
 
 HILFE:
 1. Schritt 1: Nenne zuerst den Parameter (zum Beispiel Dynamik oder Melodie) und beschreibe ihn sachlich, ohne zu werten.
 2. Schritt 2: Verbinde Beschreibung und Wirkung mit dem Baustein Ich hoere, das wirkt, weil.
 3. Schritt 3: Pruefe, ob du fuer die Wirkung einen Fachbegriff (zum Beispiel Crescendo, Melodiebogen oder Steigerung) verwendest.
 
-MUSTERLOESUNG: Ich hoere ein kurzes Motiv in gleichmaessigem Rhythmus und leiser Dynamik; das wirkt zurueckhaltend und sammelnd, weil der geringe Lautstaerkepegel und die regelmaessige Bewegung noch keine Spannung aufbauen. Danach hoere ich einen langsam aufsteigenden Melodiebogen in den hohen Streichern, dessen Lautstaerke stetig zunimmt; das wirkt steigernd und draengend, weil das Crescendo zusammen mit dem Aufwaertsverlauf der Melodie die Erwartung auf einen Hoehepunkt lenkt.
+MUSTERLOESUNG (Sprech-Skript, 90 Sekunden): "Ich hoere ein kurzes Motiv in gleichmaessigem Rhythmus und leiser Dynamik; das wirkt zurueckhaltend und sammelnd, weil geringer Pegel und regelmaessige Bewegung noch keine Spannung aufbauen. Danach hoere ich einen aufsteigenden Melodiebogen in den hohen Streichern mit stetig zunehmender Lautstaerke; das wirkt steigernd und draengend, weil das Crescendo zusammen mit der Aufwaertsrichtung die Erwartung auf einen Hoehepunkt lenkt."
 
 Klausur-Satz: `Ich hoere ein Crescendo im aufsteigenden Melodiebogen; das wirkt steigernd, weil die zunehmende Lautstaerke zusammen mit der Aufwaertsrichtung einen Hoehepunkt erwarten laesst.`
 
-## Schritt 5 — ausprobieren
+## Schritt 5 — ausprobieren: Verfahrensvergleich & Abgrenzung
 
 VERGLEICH (zwei Verfahren im Kontrast):
 
@@ -124,7 +124,7 @@ ANTWORT: A erfordert Verfahren (i): Es genuegt, drei Parameter sachlich zu benen
 
 Klausur-Satz: `Beschreiben nennt nur hoerbare Parameter, Deuten verknuepft diese Parameter mit einem Fachbegriff zu einer begruendeten Wirkung.`
 
-## Schritt 6 — check
+## Schritt 6 — check: Verständnisprüfung
 
 CHECK (3 Fragen zur Selbstkontrolle mit Antworten):
 
@@ -145,13 +145,13 @@ Klausur-Satz: `Das Urteil steht am Ende, weil es sich auf die zuvor beschriebene
    Korrektur: Die Reihenfolge ist umgekehrt. Der Begriff muss vom Gehoerten ausgeloest werden; zuerst die Struktur hoeren, dann den passenden Begriff waehlen. Sonst hoert man Dinge, die gar nicht vorhanden sind.
    Korrektur-Satz: `Nicht das Etikett fuehrt zur Wahrnehmung, sondern die beschriebene Struktur fuehrt zum passenden Fachbegriff.`
 
-## Schritt 7 — szenario
+## Schritt 7 — szenario: Klausurtransfer & Rubric
 
 ROLLE: Du bist Pruefling in einer muendlichen Musikpruefung (EF) und sollst einen kurzen Hoerbeispiel-Ausschnitt beschreiben, deuten und beurteilen.
 SITUATION: Die Prueferin spielt einen etwa 30-sekuendigen Ausschnitt und fragt: Beschreiben Sie den Ausschnitt, erklaeren Sie seine Wirkung und beurteilen Sie ihn. Formuliere eine zusammenhaengende muendliche Stellungnahme (ca. 90 Sekunden), in der du mindestens zwei Parameter nennst, die Wirkung mit Fachbegriffen erklaerst und mit einem begruendeten Urteil schliesst. Beschreibe zuerst und urteile erst danach.
 RUBRIC (30 XP): Nennung von mindestens zwei Parametern mit korrekten Fachbegriffen (8 XP) | Klar erkennbare Struktur Beschreiben, Deuten, Beurteilen (7 XP) | Begruendung der Wirkung mit dem Baustein Ich hoere, das wirkt, weil (10 XP) | Begruendetes, nicht blosses gefuehlsmaessiges Urteil am Schluss (5 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY (Kernzusammenfassung):
 

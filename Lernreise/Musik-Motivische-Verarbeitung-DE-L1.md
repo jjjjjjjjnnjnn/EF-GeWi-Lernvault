@@ -15,7 +15,7 @@ version: Lesson-v3
 
 <!-- Lesson v3 Architektur mit 9 Abschnitten: Schritt 1 bis 8 mit fester Struktur; Fehlvorstellung liegt zwischen Schritt 6 und 7 (wird vom Parser uebersprungen, zaehlt nicht als Schritt); unterstuetzt eingebettete [Werkzeug: <id>] Elemente; Gating: check/szenario nicht bestanden = Weiter deaktiviert; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
-## Schritt 1 — entdecken
+## Schritt 1 — entdecken: Ziele & Phänomen-Einstieg
 
 ZIELE (drei messbare Ziele dieser Lektion):
 
@@ -25,7 +25,7 @@ ZIELE (drei messbare Ziele dieser Lektion):
 
 ### Hook / Phaenomen
 
-Stell dir vor: Vier Toene, kaum zwei Sekunden lang, und ein ganzer Saal haelt den Atem an. Ta-ta-ta-taa — jeder kennt diesen Anfang, doch fast niemand bemerkt, dass aus diesen vier Toenen ein ganzer Sinfoniesatz waechst. Wie kann so wenig Material so viel Musik tragen? Die Antwort liegt nicht in neuen Einfaellen, sondern in der Kunst, einen einzigen Gedanken immer neu zu drehen, zu wenden und zuzuspitzen.
+Stell dir vor: Vier Toene, kaum zwei Sekunden lang, und ein ganzer Saal haelt den Atem an. Ta-ta-ta-taa — jeder kennt diesen Anfang, doch fast niemand bemerkt, dass aus diesen vier Toenen ein ganzer Sinfoniesatz waechst. Wie kann so wenig Material so viel Musik tragen? Die Antwort liegt nicht in neuen Einfaellen, sondern in der Kunst, einen einzigen Gedanken immer neu zu drehen, zu wenden und zuzuspitzen. Genaues Hinhoeren entlarvt die Werkstatt: Erstens Wiederholung befestigt das Motiv im Ohr. Zweitens Sequenz hebt dieselbe Gestalt Ton fuer Ton hoeher und baut Spannung. Drittens Abspaltung wiederholt nur noch den Kopf und verknappt die Zeitwerte. Viertens Umkehrung oder Umrhythmierung spiegelt die Gestalt bei gleichem Kern. Mit der Pulsformel $T = 60/BPM$ misst das Ohr die Verknappung, mit Fachbegriffen benennt es die Technik. Wer Verarbeitung hoert statt nur Melodie, versteht Oekonomie als Schoenheit.
 
 ### Fachbegriff & Definition
 
@@ -37,7 +37,7 @@ Der Kernmechanismus laeuft in drei Stufen: **Befestigung, Veraenderung, Zuspitzu
 
 Klausur-Satz: `Ein Motiv ist die kleinste sinntragende musikalische Gestalt, die durch Verfahren wie Sequenz, Umkehrung, Krebs, Dehnung oder Abspaltung weiterverarbeitet wird.`
 
-## Schritt 2 — entdecken
+## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
 
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
@@ -59,7 +59,7 @@ Die Begriffe greifen ineinander: Die **Sequenz** treibt durch Tonhoehenversetzun
 
 Klausur-Satz: `Bei der Sequenz bleibt die Gestalt des Motivs erhalten, waehrend die Tonhoehe versetzt wird; bei der Abspaltung wird nur ein Fragment des Motivs weitergefuehrt.`
 
-## Schritt 3 — entdecken
+## Schritt 3 — entdecken: Kernkonzept & Wirkungsmodell
 
 TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
@@ -67,20 +67,20 @@ TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
 Hoere genau hin: Erst erklingt ein kurzer Ruf, dann derselbe Ruf eine Stufe hoeher, dann ploetzlich nur noch sein Anfang, immer schneller, immer dringlicher. Kein einziges neues Motiv — und doch steigt die Spannung von Sekunde zu Sekunde. Wie baut ein Komponist aus Wiederholung Drama, ohne je neues Material zu erfinden?
 
-### Fachbegriff & Definition
+### Spiel-Aufgabe (Oral-Timer-Probe)
 
-Die **Drei-Ebenen-Pruefung** ist das Entscheidungsverfahren zur Bestimmung jeder Verarbeitung: **Kontur-Ebene** (versetzt ist Sequenz, gespiegelt ist Umkehrung, rueckwaerts ist Krebs), **Zeit-Ebene** (verlaengert mit $T_{neu} = 2 \cdot T_{alt}$ ist Dehnung, verkuerzt mit $T_{neu} = T_{alt}/2$ ist Stauchung bei $T = 60/BPM$) und **Material-Ebene** (nur Fragment ist Abspaltung). Sie ordnet jede Hoerbeobachtung genau einer Veraenderung zu und macht die Deutung ueberpruefbar.
+Pruefe die Drei-Ebenen laut gegen den 90-Sekunden-Timer: Kontur-Ebene (versetzt ist Sequenz, gespiegelt ist Umkehrung, rueckwaerts ist Krebs), Zeit-Ebene (mit $T_{neu}=2\cdot T_{alt}$ Dehnung, mit $T_{neu}=T_{alt}/2$ Stauchung bei $T=60/BPM$), Material-Ebene (nur Fragment ist Abspaltung). Das Ebenen-Raetsel: Ordne drei Hoer-Kaertchen genau einer Veraenderung zu — jede falsche Ebene stoppt die Uhr.
 
-### Wirkungsgefuege / Modell
+### Aha-Moment & Gesetz
 
-Denke in Kausalkette: **Erkennen, Einordnen, Deuten**. Erstens wird das Grundmotiv an Rhythmus und Intervallen erkannt und als Keim festgehalten. Zweitens wird jede Veraenderung auf den drei Ebenen einsortiert: Bleibt die Gestalt bei $f_{neu} = f_{alt} \cdot 2^{n/12}$ erhalten, liegt Sequenz vor; kehrt sich die Richtung um, liegt Umkehrung vor; schrumpft das Material aufs Fragment, liegt Abspaltung vor. Drittens wird die Hoerwirkung gedeutet: Sequenz treibt, Umkehrung kontrastiert, Krebs verfremdet, Stauchung draengt, Abspaltung spitzt zu. Genau diese Kette traegt in der Pruefung den Baustein Ich hoere, das wirkt, weil.
-
+Denke in Kausalkette Erkennen, Einordnen, Deuten: Das Grundmotiv wird als Keim festgehalten, jede Veraenderung auf drei Ebenen einsortiert — Gestalt erhalten bei $f_{neu}=f_{alt}\cdot 2^{n/12}$ heisst Sequenz, Richtungsumkehr heisst Umkehrung, Fragment heisst Abspaltung — und die Hoerwirkung gedeutet: Sequenz treibt, Umkehrung kontrastiert, Krebs verfremdet, Stauchung draengt, Abspaltung spitzt zu. Genau diese Kette traegt den Baustein Ich hoere, das wirkt, weil.
 ```diagram
   Keim [Motiv: Rhythmus + Intervalle]
   Keim -> Kontur? [versetzt=Sequenz | gespiegelt=Umkehrung | rueckwaerts=Krebs]
   Keim -> Zeit? [Tneu=2*Talt=Dehnung | Tneu=Talt/2=Stauchung mit T=60/BPM]
   Keim -> Material? [voll=Fortspinnung | Fragment=Abspaltung]
   Abspaltung + Stauchung -> Zuspitzung -> Urteil (treibend)
+  Pulsanker: $T=60/BPM$
 ```
 
 Klausur-Satz: `Verarbeitungstechniken lassen sich danach ordnen, ob sie die Kontur, die Zeitgestalt oder das Material des Motivs veraendern.`
@@ -91,24 +91,24 @@ Klausur-Satz: `Verarbeitungstechniken lassen sich danach ordnen, ob sie die Kont
 
 **Bezug zum Konzept**: `Motivische Verfahren wie Sequenz und Umkehrung wirken wie rhetorische Figuren: Sie wiederholen, steigern und kontrastieren ein Motiv, um es ueberzeugend zu entfalten.`
 
-## Schritt 4 — ausprobieren
+## Schritt 4 — ausprobieren: Interaktive Praxis & Hoer-Labor
 
 BEISPIEL (Musteraufgabe mit Loesungsweg):
 
-[Werkzeug: lego]
+[Werkzeug: oral-timer]
 
-AUFGABE (analysieren, AFB II): Ein Hoerbeispiel beginnt mit einem viertoenigen Motiv, das zuerst unveraendert wiederholt wird. Danach erklingt dieselbe Tonfolge dreimal, jeweils einen Ganzton hoeher. Im Mittelteil wird nur noch der erste Dreiklang des Motivs in schneller Folge wiederholt, waehrend die Tonwerte immer kuerzer werden. Bestimmen Sie die verwendeten Verarbeitungstechniken und beschreiben Sie ihre Wirkung.
+AUFGABE (analysieren, AFB II): Ebenen-Challenge — ein Hoerbeispiel beginnt mit einem viertoenigen Motiv, das zuerst unveraendert wiederholt wird. Danach erklingt dieselbe Tonfolge dreimal, jeweils einen Ganzton hoeher. Im Mittelteil wird nur noch der erste Dreiklang in schneller Folge wiederholt, waehrend die Tonwerte immer kuerzer werden. Bestimme laut gegen den Timer die Verarbeitungstechniken und beschreibe ihre Wirkung.
 
 HILFE:
 1. Schritt 1: Pruefe zuerst die Kontur. Bleibt die Gestalt gleich und wandert nur die Tonhoehe, liegt eine Sequenz vor.
 2. Schritt 2: Pruefe das Material. Wird nur ein Teil weitergefuehrt, handelt es sich um eine Abspaltung.
 3. Schritt 3: Pruefe die Zeitgestalt. Werden die Tonwerte kuerzer, liegt eine Stauchung vor.
 
-MUSTERLOESUNG: Zunaechst wird das Motiv unveraendert wiederholt, was es als Keim des Abschnitts festigt. Die dreifache Versetzung um je einen Ganzton ist eine Sequenz; sie erzeugt stetigen Antrieb nach oben. Im Mittelteil wird nur der Kopf weitergefuehrt, also eine Abspaltung, waehrend die immer kuerzeren Tonwerte eine Stauchung darstellen. Beide Mittel steigern gemeinsam die Spannung, weil das Material schrumpft und der zeitliche Abstand der Ereignisse immer kuerzer wird.
+MUSTERLOESUNG (Sprech-Skript, 90 Sekunden): "Ich hoere zuerst das unveraenderte Motiv als Keim. Dann hoere ich die dreifache Versetzung um je einen Ganzton — das wirkt treibend, weil es stetigen Antrieb nach oben erzeugt: eine Sequenz. Im Mittelteil hoere ich nur den Kopf in immer kuerzeren Werten — das wirkt zuspitzend, weil das Material schrumpft und die Abstaende kuerzer werden: Abspaltung plus Stauchung."
 
 Klausur-Satz: `Sequenz, Abspaltung und Stauchung wirken zusammen treibend, weil das Material schrumpft und der zeitliche Abstand der Ereignisse immer kuerzer wird.`
 
-## Schritt 5 — ausprobieren
+## Schritt 5 — ausprobieren: Verfahrensvergleich & Abgrenzung
 
 VERGLEICH (zwei Verfahren im Kontrast):
 
@@ -124,7 +124,7 @@ ANTWORT: A erfordert Verfahren (i): Die Gestalt bleibt erhalten und wird ledigli
 
 Klausur-Satz: `Wird das Motiv nur auf eine andere Tonhoehe versetzt, handelt es sich um eine Sequenz; wird seine Richtung oder Reihenfolge veraendert, um eine Umkehrung beziehungsweise einen Krebs.`
 
-## Schritt 6 — check
+## Schritt 6 — check: Verständnisprüfung
 
 CHECK (3 Fragen zur Selbstkontrolle mit Antworten):
 
@@ -145,13 +145,13 @@ Klausur-Satz: `Die Abspaltung fuehrt nur ein Fragment des Motivs weiter und stei
    Korrektur: Wiedererkennbarkeit bedeutet nur, dass der Rhythmus erhalten ist. Tonhoehe (Sequenz), Dauer (Dehnung oder Stauchung) oder Material (Abspaltung) koennen dennoch veraendert sein. Daher Kontur, Zeit und Material getrennt pruefen.
    Korrektur-Satz: `Ein wiedererkennbares Motiv kann zugleich sequenziert, gedehnt oder abgespalten sein; die Wiedererkennbarkeit sagt nichts ueber die Art der Verarbeitung.`
 
-## Schritt 7 — szenario
+## Schritt 7 — szenario: Klausurtransfer & Rubric
 
 ROLLE: Du bist Pruefling in einer muendlichen Musikpruefung (EF) und sollst motivische Verarbeitung an einem Hoerbeispiel nachweisen.
 SITUATION: Die Prueferin spielt einen Ausschnitt, in dem ein kurzes Motiv mehrfach in veraenderter Gestalt erscheint. Sie fragt: Nennen Sie das Motiv und beschreiben Sie, wie es verarbeitet wird. Formuliere eine zusammenhaengende muendliche Stellungnahme (ca. 90 Sekunden), in der du das Motiv benennst, mindestens zwei Verarbeitungstechniken mit Fachbegriffen belegst und mit einem begruendeten Urteil zur Wirkung schliesst.
 RUBRIC (30 XP): Benennung des Motivs mit Rhythmus und Intervallverlauf (8 XP) | Nachweis von zwei Verarbeitungstechniken mit korrekten Fachbegriffen (9 XP) | Beschreibung der Hoerwirkung mit dem Baustein Ich hoere, das wirkt, weil (8 XP) | Begruendetes Urteil zur Funktion der Verarbeitung im Abschnitt (5 XP).
 
-## Schritt 8 — entdecken
+## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY (Kernzusammenfassung):
 
