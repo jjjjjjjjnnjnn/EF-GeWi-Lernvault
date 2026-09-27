@@ -14,7 +14,7 @@ version: Lesson-v3
 
 
 
-# Lernreise: Lernreise: Lernreise: Lernreise: Harmonielehre Kadenz und Stufentheorie (L1, Ziel Klausur)
+# Lernreise: Harmonielehre Kadenz und Stufentheorie (L1, Ziel Klausur)
 
 <!-- Lesson v3 Architektur mit 9 Abschnitten: Schritt 1 bis 8 mit fester Struktur; Fehlvorstellung liegt zwischen Schritt 6 und 7 (wird vom Parser uebersprungen, zaehlt nicht als Schritt); unterstuetzt eingebettete [Werkzeug: <id>] Elemente; Gating: check/szenario nicht bestanden = Weiter deaktiviert; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
@@ -138,10 +138,10 @@ RUBRIC (30 XP): Diagnose mit Fachbegriffen (8 XP) | Massnahme mit Target-Beleg (
 
 TAKEAWAY (Kernzusammenfassung):
 
-Vier Stufen schliessen jede Tonart: Zuhause oeffnen, spannen, heimkehren. Wer Kadenzen hoert, hoert Punkte. Takeaway-Satz: `Wer die Grenze sichert und die Lage nutzt, holt den Pokal.`
+Vier Stufen schliessen jede Tonart: Zuhause oeffnen, spannen, heimkehren. Wer Kadenzen hoert, hoert Punkte. Takeaway-Satz: `Wer I-IV-V-I mit Quinte 1,498 und Trugschluss V-VI benennt, hoert Kadenz-Architektur.`
 
 `Klausur-Satz: Metakern: Harmonie ist Syntax; wer Kadenzen liest, versteht jede Form.`
 
 REFLEXION (2 Fragen):
 1. Selbstkontrolle: Welcher Schritt fiel schwerer, die Sandkasten-Praezision (Schritt 4) oder die Verfahrenswahl im Duell (Schritt 5)?
-2. Planung: Beim naechsten Mal notiere ich zuerst Messwert plus Phase, weil daraus jede Begruendung folgt.
+2. Planung: Beim naechsten Mal notiere ich zuerst Stufen plus Bass und Quint-Rechnung 1,498, weil daraus jede Kadenzbegruendung folgt.

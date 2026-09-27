@@ -14,7 +14,7 @@ version: Lesson-v3
 
 
 
-# Lernreise: Lernreise: Lernreise: Lernreise: Motivische Verarbeitung hoeren (L1, Ziel Muendlich)
+# Lernreise: Motivische Verarbeitung hoeren (L1, Ziel Muendlich)
 
 <!-- Lesson v3 Architektur mit 9 Abschnitten: Schritt 1 bis 8 mit fester Struktur; Fehlvorstellung liegt zwischen Schritt 6 und 7 (wird vom Parser uebersprungen, zaehlt nicht als Schritt); unterstuetzt eingebettete [Werkzeug: <id>] Elemente; Gating: check/szenario nicht bestanden = Weiter deaktiviert; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
@@ -138,10 +138,10 @@ RUBRIC (30 XP): Diagnose mit Fachbegriffen (8 XP) | Massnahme mit Target-Beleg (
 
 TAKEAWAY (Kernzusammenfassung):
 
-Vier Toene, vierzig Takte: Verfahren veraendern, Tonarten entfernen, Reprise erloest. Wer DNA plus Ort nennt, versteht Entwicklung. Takeaway-Satz: `Wer die Grenze sichert und die Lage nutzt, holt den Pokal.`
+Vier Toene, vierzig Takte: Verfahren veraendern, Tonarten entfernen, Reprise erloest. Wer DNA plus Ort nennt, versteht Entwicklung. Takeaway-Satz: `Wer Sequenz mit 1,122 durch c-f-g nachweist, versteht Beethovens Motivlabor.`
 
 `Klausur-Satz: Metakern: Entwicklung ist Arbeit am Gleichen; wer Verfahren nennt, versteht jede Durchfuehrung.`
 
 REFLEXION (2 Fragen):
-1. Selbstkontrolle: Welcher Schritt fiel schwerer, die Sandkasten-Praezision (Schritt 4) oder die Verfahrenswahl im Duell (Schritt 5)?
-2. Planung: Beim naechsten Mal notiere ich zuerst Messwert plus Phase, weil daraus jede Begruendung folgt.
+1. Selbstkontrolle: Welcher Schritt fiel schwerer, das Benennen von zwei Verfahren mit Tonarten (Schritt 4) oder die Verfahrenswahl im Duell (Schritt 5)?
+2. Planung: Beim naechsten Mal notiere ich zuerst Motiv-DNA plus 1,122-Transposition, weil daraus jede Durchfuehrungsbegruendung folgt.

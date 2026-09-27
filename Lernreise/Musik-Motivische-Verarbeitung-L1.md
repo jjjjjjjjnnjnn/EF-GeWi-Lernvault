@@ -14,15 +14,15 @@ version: Lesson-v3
 
 
 
-# Lernreise: Lernreise: Lernreise: Lernreise: Motivische Verarbeitung hoeren (L1, Ziel Muendlich)
+# Lernreise: Motivische Verarbeitung hoeren (L1, Ziel Muendlich)
 
 <!-- Lesson v3 9步制架构：Schritt 1至8固定结构；Fehlvorstellung 夹在 Schritt 6 与 7 之间（Parser 自动跳过，不占步数）；支持内嵌 [Werkzeug: <id>] 交互教具；Gating: check/szenario 未过 = Weiter 置灰；XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
-## Schritt 1 — entdecken: Berliner Philharmonie, Schicksalsmotiv-Werkstatt (Vierton-Keim, 96 BPM) — 赛场警报
+## Schritt 1 — entdecken: Wiener Musikverein, Schicksalsmotiv-Werkstatt (Vierton-Keim, 96 BPM) — 赛场警报
 
 ZIELE (3条,本节15分钟学完能做到——先读中文,再记德语):
 
-1. 中文:能一句话定义`Motivische Verarbeitung: Sequenz, Umkehrung, Krebs, Abspaltung`,并定位到本关赛事Berliner Philharmonie, Schicksalsmotiv-Werkstatt (Vierton-Keim, 96 BPM)。
+1. 中文:能一句话定义`Motivische Verarbeitung: Sequenz, Umkehrung, Krebs, Abspaltung`,并定位到本关赛事Wiener Musikverein, Schicksalsmotiv-Werkstatt (Vierton-Keim, 96 BPM)。
 2. 中文:能口述核心机制,并用数值目标(2 Verfahren, 2 Tonarten, Faktor 1,122, 90 s Rede)举证。
 3. 中文:能诊断一处典型错误,并用德语Klausur-Satz收束(AF B II)。
 
@@ -134,9 +134,9 @@ CHECK检索默写(自测3题,与答案配对):
    Korrektur-Satz: `Labor statt Erzaehlung; Verfahren verraten es.`
 
 ## Schritt 7 — szenario: Klausurtransfer — Dozent Musikverein
-中文:你是Dozent Musikverein,在Berliner Philharmonie, Schicksalsmotiv-Werkstatt (Vierton-Keim, 96 BPM)中必须用德语连贯口述(约90秒)诊断、措施与数值目标(2 Verfahren, 2 Tonarten, Faktor 1,122, 90 s Rede),并以术语举证。
-ROLLE: Du bist Dozent Musikverein. SITUATION: 在柏林爱乐用德语90秒陈述手法、调性与目标(二加二)。
-RUBRIC (30 XP):诊断术语8分 | 措施与目标举证7分 | 程序选择对比7分 | 德语表达5分。
+中文:你是Dozent Musikverein,在Wiener Musikverein, Schicksalsmotiv-Werkstatt (Vierton-Keim, 96 BPM)中必须用德语连贯口述(约90秒)诊断、措施与数值目标(2 Verfahren, 2 Tonarten, Faktor 1,122, 90 s Rede),并以术语举证。
+ROLLE: Du bist Dozent Musikverein. SITUATION: 在维也纳音乐协会用德语90秒陈述手法、调性与目标(二加二)。
+RUBRIC (30 XP):诊断术语8分 | 措施与目标举证10分 | 程序选择对比7分 | 德语表达5分。
 
 `Klausur-Satz: 满分句:高潮因模进以1,122穿两调加缩小催跑;手法加调性锁定满分。`
 
@@ -145,10 +145,10 @@ RUBRIC (30 XP):诊断术语8分 | 措施与目标举证7分 | 程序选择对比
 TAKEAWAY 1盒(核心总结):
 
 中文:四音四十节:手法变脸、调性挪窝、再现解套。
-Takeaway-Satz: `Wer die Grenze sichert und die Lage nutzt, holt den Pokal.`
+Takeaway-Satz: `Wer Sequenz mit 1,122 und zwei Tonarten benennt, versteht Beethovens Motivlabor.`
 
 `Klausur-Satz: 元认知:发展是旧料新工,会点名就懂展开。`
 
 REFLEXION 2问:
-1. 过程自省:沙盘精度(Schritt 4)与程序选择(Schritt 5)哪一步更难?
-2. 元认知计划:下次先记测量值加相位,因为一切论证都从它长出来。
+1. 过程自省:沙盘点名两手法精度(Schritt 4)与手法调性程序选择(Schritt 5)哪一步更难?
+2. 元认知计划:下次先背动机DNA加1,122移调再判展开,因为动机论证从手法加调性长出来。

@@ -14,7 +14,7 @@ version: Lesson-v3
 
 
 
-# Lernreise: Lernreise: Lernreise: Lernreise: Sonatensatzform analysieren (L1, Ziel Muendlich)
+# Lernreise: Sonatensatzform analysieren (L1, Ziel Muendlich)
 
 <!-- Lesson v3 Architektur mit 9 Abschnitten: Schritt 1 bis 8 mit fester Struktur; Fehlvorstellung liegt zwischen Schritt 6 und 7 (wird vom Parser uebersprungen, zaehlt nicht als Schritt); unterstuetzt eingebettete [Werkzeug: <id>] Elemente; Gating: check/szenario nicht bestanden = Weiter deaktiviert; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
@@ -138,10 +138,10 @@ RUBRIC (30 XP): Diagnose mit Fachbegriffen (8 XP) | Massnahme mit Target-Beleg (
 
 TAKEAWAY (Kernzusammenfassung):
 
-Schneide zuerst, zaehle dann, schreibe zuletzt: Doppelstrich, Protokoll, These. Wer 1,0 pro Minute liefert, besteht. Takeaway-Satz: `Wer die Grenze sichert und die Lage nutzt, holt den Pokal.`
+Schneide zuerst, zaehle dann, schreibe zuletzt: Doppelstrich, Protokoll, These. Wer 1,0 pro Minute liefert, besteht. Takeaway-Satz: `Wer Doppelstrich Takt 32 mit 20 Belegen Score 1,0 in 20 Minuten belegt, besteht Haydn-Klausur.`
 
 `Klausur-Satz: Metakern: Methode ist Zeitmanagement; wer protokolliert, versteht jede Klausur.`
 
 REFLEXION (2 Fragen):
 1. Selbstkontrolle: Welcher Schritt fiel schwerer, die Sandkasten-Praezision (Schritt 4) oder die Verfahrenswahl im Duell (Schritt 5)?
-2. Planung: Beim naechsten Mal notiere ich zuerst Messwert plus Phase, weil daraus jede Begruendung folgt.
+2. Planung: Beim naechsten Mal schneide ich zuerst den Doppelstrich und liste Tonarten plus Themen fuer 20 Belege, weil daraus jede Klausurbegruendung folgt.

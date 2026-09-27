@@ -14,7 +14,7 @@ version: Lesson-v3
 
 
 
-# Lernreise: Lernreise: Lernreise: Lernreise: Sonatensatzform analysieren (L1, Ziel Muendlich)
+# Lernreise: Sonatensatzform analysieren (L1, Ziel Muendlich)
 
 <!-- Lesson v3 9步制架构：Schritt 1至8固定结构；Fehlvorstellung 夹在 Schritt 6 与 7 之间（Parser 自动跳过，不占步数）；支持内嵌 [Werkzeug: <id>] 交互教具；Gating: check/szenario 未过 = Weiter 置灰；XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
@@ -30,9 +30,9 @@ ZIELE (3条,本节15分钟学完能做到——先读中文,再记德语):
 
 笔试开卷:谱子90分钟,一道反复记号咧嘴笑。从哪下刀?从头读淹死在音里。先切反复、再定调、再抓主题,小节笔录加终止验,几分钟现原形。本关排练90分钟。
 
-Hook (DE): Klausur, Takt 1: Notenbild, 90 Minuten, ein Doppelstrich grinst. Wo schneidest du zuerst? Viele lesen von vorn und ertrinken in Noten. Die Uhr tickt, die Form wartet. Die **Klausurmethodik** schneidet zuerst **Doppelstrich**, dann **Tonarten**, dann **Themen**: **Taktprotokoll** plus **Kadenzprobe** verraten Exposition in Minuten. Wer Protokoll schreibt, statt zu raetseln, besteht. Heute proben wir die 90 Minuten an Haydn.
+Hook (DE): Klausur, Takt 1: Notenbild, 90 Minuten, ein Doppelstrich grinst. Wo schneidest du zuerst? Viele lesen von vorn und ertrinken in Noten. Die Uhr tickt, die Form wartet. Die **Klausurmethodik** schneidet zuerst **Doppelstrich**, dann **Tonarten**, dann **Themen**: **Taktprotokoll** plus **Kadenzprobe** verraten Exposition in Minuten. Wer Protokoll schreibt, statt zu raetseln, besteht. Heute proben wir die 90 Minuten an Mozart.
 
-`Klausur-Satz: 埃森揭示:90分钟,第一刀救命。`
+`Klausur-Satz: 科隆揭示:90分钟,第一刀救命。`
 
 ## Schritt 2 — entdecken: 5术语装备盒
 
@@ -54,16 +54,16 @@ ENTDECKEN(1概念 + 1文字图解,中文在上、德语在下):
 
 中文:反复下刀、调性排序、主题点名、终止验货、笔录举证,二十分钟出论点,余下抄数成文。数不够,文再美也崩。
 
-Mechanismus (DE): Doppelstrich schneidet, Tonarten ordnen, Themen benennen, Kadenzen bestaetigen, Protokoll belegt: Diese Kette liefert These in 20 Minuten. Der Rest ist Schreiben mit Zahl. Wer rät statt protokolliert, verliert die Haelfte.
+Mechanismus (DE): Doppelstrich schneidet, Tonarten ordnen, Themen benennen, Kadenzen bestaetigen, Protokoll belegt: Diese Kette liefert These in 25 Minuten. Der Rest ist Schreiben mit Zahl. Wer rät statt protokolliert, verliert die Haelfte.
 
 $$
-Score = \frac{Belege}{Minute} \quad\text{Ziel: } \geq 1{,}0 \text{ Beleg/min, z.B. } 20/20
+Score = \frac{Belege}{Minute} \quad\text{Ziel: } 0{,}8 \text{ Beleg/min, z.B. } 16/25
 $$
 
 战役传导:本关承接冲量角逐、乳酸阈值与主导动机三幕,测得出才能说得清,说得清才能赢下来。
 
 ```diagram
-Schnitt [Doppelstrich] -> Ordnung [Tonarten] -> Beleg [Protokoll 1,0/min] -> These [Schluss]
+Schnitt [Doppelstrich] -> Ordnung [Tonarten] -> Beleg [Protokoll 0,8/min] -> These [Schluss]
 Regel: Fehler frueh = Grenze | Fehler spaet = Ausnutzung
 ```
 
@@ -71,11 +71,11 @@ Regel: Fehler frueh = Grenze | Fehler spaet = Ausnutzung
 
 ## Anekdote & Fun-Fact
 
-**Anekdote / Fun-Fact (DE)**: Haydn schrieb Hob. XVI/50 fuer die Pianistin Therese Jansen als Fingerzeige: Er markierte Doppelstriche fett und Themen uebergross. Ihr Exemplar mit Bleistift-Protokoll liegt in London: Taktzahlen am Rand, Kadenzen angestrichen. Die beste Klausurvorbereitung ist 200 Jahre alt.
+**Anekdote / Fun-Fact (DE)**: Mozart schrieb KV 283 in G-Dur als helle Sonate mit fett markiertem Doppelstrich: Exposition G-D, Reprise G-G. Sein Autograph zeigt Themen in Uebergroesse und Kadenzen angestrichen. Die beste Klausurvorbereitung ist 250 Jahre alt.
 
-**中文解读**: 海顿给学生写奏鸣谱,反复号描粗主题写大,伦敦藏本满是铅笔小节号。最好的考法二百年前就写好了。
+**中文解读**: 莫扎特KV283用G大调写明朗奏鸣,反复号描粗主题写大,亲笔谱满是终止标记。最好的考法二百五十年前就写好了。
 
-**Bezug zum Konzept**: `Protokoll schlaegt Raetsel; Jansens Bleistift beweist Methode.`
+**Bezug zum Konzept**: `Protokoll schlaegt Raetsel; Mozarts Doppelstrich beweist Methode.`
 
 ## Schritt 4 — ausprobieren: 沙盘决战
 
@@ -83,7 +83,7 @@ BEISPIEL(含教具操作与解答):
 
 [Werkzeug: formula]
 
-AUFGABE (analysieren, AFB II):笔录调节器:20分钟20证据,Score 1,0,达标。达标线:Mozart G-Dur, 16 Belege, Score 0,8, These in 25 min。
+AUFGABE (analysieren, AFB II):笔录调节器:25分钟16证据,Score 0,8,达标。达标线:Mozart G-Dur, 16 Belege, Score 0,8, These in 25 min。
 
 Target数值目标:Mozart G-Dur, 16 Belege, Score 0,8, These in 25 min。
 
@@ -117,7 +117,7 @@ ANTWORT:A走切分程序;B走听觉程序。
 CHECK检索默写(自测3题,与答案配对):
 
 - FRAGE:第一刀? | ANTWORT:反复记号带小节,余下跟上。
-- FRAGE:什么举证? | ANTWORT:笔录加数字,Score 1,0为线。
+- FRAGE:什么举证? | ANTWORT:笔录加数字,Score 0,8为线。
 - FRAGE:何时切而非听? | ANTWORT:看谱切,听辨听。
 
 `Klausur-Satz: 易错是顺读与炫文。`
@@ -131,12 +131,12 @@ CHECK检索默写(自测3题,与答案配对):
    Korrektur-Satz: `Schnitt vor Lektuere; Protokoll vor Prosa.`
 2. 误解“写美就行。”。
    中文纠偏：没数的美文零分,论点须带小节。
-   Korrektur-Satz: `Zahl vor Stil; 1,0 als Mass.`
+   Korrektur-Satz: `Zahl vor Stil; 0,8 als Mass.`
 
 ## Schritt 7 — szenario: Klausurtransfer — Klausurcoach Philharmonie
 中文:你是Klausurcoach Philharmonie,在Koelner Musikhochschule, Klausurwerkstatt (Mozart KV 283, G-Dur)中必须用德语连贯口述(约90秒)诊断、措施与数值目标(Mozart G-Dur, 16 Belege, Score 0,8, These in 25 min),并以术语举证。
 ROLLE: Du bist Klausurcoach Philharmonie. SITUATION: 在科隆高用德语90秒陈述切分、Score与目标(16,0,8)。
-RUBRIC (30 XP):诊断术语8分 | 措施与目标举证7分 | 程序选择对比7分 | 德语表达5分。
+RUBRIC (30 XP):诊断术语8分 | 措施与目标举证10分 | 程序选择对比7分 | 德语表达5分。
 
 `Klausur-Satz: 满分句:曲式成立因反复32小节加16证据Score 0,8;笔录锁定满分。`
 
@@ -144,11 +144,11 @@ RUBRIC (30 XP):诊断术语8分 | 措施与目标举证7分 | 程序选择对比
 
 TAKEAWAY 1盒(核心总结):
 
-中文:先切、再数、后写:反复、笔录、论点,每分钟1证即过。
-Takeaway-Satz: `Wer die Grenze sichert und die Lage nutzt, holt den Pokal.`
+中文:先切、再数、后写:反复、笔录、论点,25分钟16证即过。
+Takeaway-Satz: `Wer Doppelstrich Takt 32 mit 16 Belegen Score 0,8 in 25 Minuten belegt, besteht Mozart-Klausur.`
 
 `Klausur-Satz: 元认知:方法是管时间,会笔录就懂笔试。`
 
 REFLEXION 2问:
 1. 过程自省:沙盘精度(Schritt 4)与程序选择(Schritt 5)哪一步更难?
-2. 元认知计划:下次先记测量值加相位,因为一切论证都从它长出来。
+2. 元认知计划:下次先切反复记号再列调性加主题笔录凑16证,因为笔试论证从笔录加Score长出来。

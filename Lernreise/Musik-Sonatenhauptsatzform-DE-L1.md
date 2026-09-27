@@ -14,7 +14,7 @@ version: Lesson-v3
 
 
 
-# Lernreise: Lernreise: Lernreise: Lernreise: Sonatenhauptsatzform hoeren (L1, Ziel Muendlich)
+# Lernreise: Sonatenhauptsatzform hoeren (L1, Ziel Muendlich)
 
 <!-- Lesson v3 Architektur mit 9 Abschnitten: Schritt 1 bis 8 mit fester Struktur; Fehlvorstellung liegt zwischen Schritt 6 und 7 (wird vom Parser uebersprungen, zaehlt nicht als Schritt); unterstuetzt eingebettete [Werkzeug: <id>] Elemente; Gating: check/szenario nicht bestanden = Weiter deaktiviert; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
@@ -138,10 +138,10 @@ RUBRIC (30 XP): Diagnose mit Fachbegriffen (8 XP) | Massnahme mit Target-Beleg (
 
 TAKEAWAY (Kernzusammenfassung):
 
-Zwei Themen, drei Fernen, eine Heimkehr: Exposition verspricht, Durchfuehrung entfernt, Reprise erloest. Wer Uhr liest, versteht Sonate. Takeaway-Satz: `Wer die Grenze sichert und die Lage nutzt, holt den Pokal.`
+Zwei Themen, drei Fernen, eine Heimkehr: Exposition verspricht, Durchfuehrung entfernt, Reprise erloest. Wer Uhr liest, versteht Sonate. Takeaway-Satz: `Wer Pathétique-Expo i-III mit 3 Quinten Ferne und Reprise i-i benennt, versteht Sonaten-Uhr.`
 
 `Klausur-Satz: Metakern: Sonate ist Tonarten-Drama; wer Uhr liest, versteht jede Reprise.`
 
 REFLEXION (2 Fragen):
 1. Selbstkontrolle: Welcher Schritt fiel schwerer, die Sandkasten-Praezision (Schritt 4) oder die Verfahrenswahl im Duell (Schritt 5)?
-2. Planung: Beim naechsten Mal notiere ich zuerst Messwert plus Phase, weil daraus jede Begruendung folgt.
+2. Planung: Beim naechsten Mal notiere ich zuerst Expo-Tonarten plus Quinten-Ferne und Reprise-Pflicht, weil daraus jede Sonatenbegruendung folgt.

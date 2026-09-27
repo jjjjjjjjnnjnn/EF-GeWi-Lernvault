@@ -14,7 +14,7 @@ version: Lesson-v3
 
 
 
-# Lernreise: Lernreise: Lernreise: Lernreise: Musik Hoeranalyse (L1, Ziel Muendlich)
+# Lernreise: Musik Hoeranalyse (L1, Ziel Muendlich)
 
 <!-- Lesson v3 Architektur mit 9 Abschnitten: Schritt 1 bis 8 mit fester Struktur; Fehlvorstellung liegt zwischen Schritt 6 und 7 (wird vom Parser uebersprungen, zaehlt nicht als Schritt); unterstuetzt eingebettete [Werkzeug: <id>] Elemente; Gating: check/szenario nicht bestanden = Weiter deaktiviert; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
@@ -138,10 +138,10 @@ RUBRIC (30 XP): Diagnose mit Fachbegriffen (8 XP) | Massnahme mit Target-Beleg (
 
 TAKEAWAY (Kernzusammenfassung):
 
-Wer misst, darf meinen: Parameter sichern, weil deuten, dann urteilen. Diese Reihenfolge verwandelt Eindruck in Punkte. Takeaway-Satz: `Wer die Grenze sichert und die Lage nutzt, holt den Pokal.`
+Wer misst, darf meinen: Parameter sichern, weil deuten, dann urteilen. Diese Reihenfolge verwandelt Eindruck in Punkte. Takeaway-Satz: `Wer 108 BPM mit T=0,56 s und drei Parametern belegt, verwandelt Eindruck in Urteil.`
 
 `Klausur-Satz: Metakern: Hoeren ist Messen mit Sinn; wer Parameter hoert, versteht jede Musik.`
 
 REFLEXION (2 Fragen):
 1. Selbstkontrolle: Welcher Schritt fiel schwerer, die Sandkasten-Praezision (Schritt 4) oder die Verfahrenswahl im Duell (Schritt 5)?
-2. Planung: Beim naechsten Mal notiere ich zuerst Messwert plus Phase, weil daraus jede Begruendung folgt.
+2. Planung: Beim naechsten Mal notiere ich zuerst 108 BPM mit T=0,56 s plus drei Parameter mit Takt, weil daraus jede Hoeranalyse-Begruendung folgt.

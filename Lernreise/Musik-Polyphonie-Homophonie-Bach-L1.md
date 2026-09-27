@@ -14,7 +14,7 @@ version: Lesson-v3
 
 
 
-# Lernreise: Lernreise: Lernreise: Lernreise: Polyphonie und Homophonie bei Bach (L1, Ziel Klausur)
+# Lernreise: Polyphonie und Homophonie bei Bach (L1, Ziel Klausur)
 
 <!-- Lesson v3: Schritt 1-8 feste Struktur; Fehlvorstellung zwischen Schritt 6 und 7 (Parser skip); [Werkzeug: <id>] interaktiv; Gating: check/szenario nicht bestanden = Weiter grau; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
@@ -136,7 +136,7 @@ CHECK检索默写(自测3题,与答案配对):
 ## Schritt 7 — szenario: Klausurtransfer — Kantor Thomaskirche
 中文:你是Kantor Thomaskirche,在Leipziger Thomaskirche, Wachet-auf-Fuge (4 Stimmen, 72 BPM)中必须用德语连贯口述(约90秒)诊断、措施与数值目标(4 Stimmen, Quinte 1,498, Engfuehrung Takt 24, 90 s Rede),并以术语举证。
 ROLLE: Du bist Kantor Thomaskirche. SITUATION: In Leipzig musst du 90 Sekunden lang Einsaetze, Quinte und Target (4 Stimmen) verteidigen.
-RUBRIC (30 XP):诊断术语8分 | 措施与目标举证7分 | 程序选择对比7分 | 德语表达5分。
+RUBRIC (30 XP):诊断术语8分 | 措施与目标举证10分 | 程序选择对比7分 | 德语表达5分。
 
 `Klausur-Satz: AFB-III-Mustersatz: Die Fugenwirkung entsteht, weil vier Subjekteinsaetze mit Quintantwort 1,498 und Engfuehrung verdichten; Taktliste sichert volle Punktzahl.`
 
@@ -145,10 +145,10 @@ RUBRIC (30 XP):诊断术语8分 | 措施与目标举证7分 | 程序选择对比
 TAKEAWAY 1盒(核心总结):
 
 中文:Zaehle Linien, nicht Laerm: Subjekt stellt, Quinte antwortet, Enge schliesst. Wer Einsaetze zaehlt, versteht Bach.
-Takeaway-Satz: `Wer die Grenze sichert und die Lage nutzt, holt den Pokal.`
+Takeaway-Satz: `Wer vier Einsaetze zaehlt und Engfuehrung ab Takt 24 benennt, versteht Bachs Wachet-Fuge.`
 
 `Klausur-Satz: Metakern: Kontrapunkt ist Gespraechsordnung; wer Stimmen zaehlt, versteht jedes Geflecht.`
 
 REFLEXION 2问:
-1. 过程自省:沙盘精度(Schritt 4)与程序选择(Schritt 5)哪一步更难?
-2. 元认知计划:下次先记测量值加相位,因为一切论证都从它长出来。
+1. 过程自省:沙盘数进入精度(Schritt 4)与横纵程序选择(Schritt 5)哪一步更难?
+2. 元认知计划:下次先列进入小节表加五度1,498再判织体,因为赋格论证从进入数长出来。

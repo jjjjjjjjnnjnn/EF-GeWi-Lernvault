@@ -14,7 +14,7 @@ version: Lesson-v3
 
 
 
-# Lernreise: Lernreise: Lernreise: Lernreise: Rhythmus mit Synkopen und Jazz-Groove (L1, Ziel Klausur)
+# Lernreise: Rhythmus mit Synkopen und Jazz-Groove (L1, Ziel Klausur)
 
 <!-- Lesson v3 9步制架构：Schritt 1至8固定结构；Fehlvorstellung 夹在 Schritt 6 与 7 之间（Parser 自动跳过，不占步数）；支持内嵌 [Werkzeug: <id>] 交互教具；Gating: check/szenario 未过 = Weiter 置灰；XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
@@ -28,11 +28,11 @@ ZIELE (3条,本节15分钟学完能做到——先读中文,再记德语):
 
 ### Hook 赛场/舞台实况
 
-Take Five 一响观众拍一全错位。爵士活在拍子边上不在拍上:切分把重音扔到弱拍与起拍,groove 用律动兜住张力。本关用身体加数字拆5/4。
+All Blues 一响观众拍一全错位。爵士活在拍子边上不在拍上:切分把重音扔到弱拍与起拍,groove 用律动兜住张力。本关用身体加数字拆6/8。
 
-Hook (DE): Take Five laeuft, das Publikum klatscht auf eins mit und liegt komplett daneben. Der Schlagzeuger grinst: Wer eins sucht, verliert den Groove. Denn der Jazz lebt neben dem Schlag, nicht darauf. Was tanzt hier eigentlich? Die **Synkope** verschiebt Betonung auf **Offbeat** und **Auftakt**, der **Groove** haelt die Spannung ueber **Metrum** und **Backbeat**. Wer Synkopen zaehlt statt fuehlt, versteht Dave Brubeck nie. Heute knacken wir 5/4-Takt mit Koerper und Zahl.
+Hook (DE): All Blues laeuft im 6/8-Feeling, das Publikum klatscht auf eins mit und liegt komplett daneben. Der Pianist grinst: Wer eins sucht, verliert den Groove. Denn der Jazz lebt neben dem Schlag, nicht darauf. Was tanzt hier eigentlich? Die **Synkope** verschiebt Betonung auf **Offbeat** und **Auftakt**, der **Groove** haelt die Spannung ueber **Metrum** und **Backbeat**. Wer Synkopen zaehlt statt fuehlt, versteht Miles Davis nie. Heute knacken wir 6/8-Feeling mit Koerper und Zahl.
 
-`Klausur-Satz: 科隆揭示:拍一的人丢 groove,爵士活在边上。`
+`Klausur-Satz: 柏林揭示:拍一的人丢 groove,爵士活在边上。`
 
 ## Schritt 2 — entdecken: 5术语装备盒
 
@@ -40,7 +40,7 @@ PRETRAINING术语盒(核心5词,先读三遍中德,合书自测中文→德语):
 
 中文在上,德语在下:
 
-- 节拍 — Metrum:规律重音网格,Take Five 5/4拆3+2,没网格无切分 / Das Metrum ist das regelmaessige Betonungsraster, etwa 5/4 mit 3+2-Gliederung bei Take Five. Es ordnet Zeit und erwartet Schwerpunkte. Ohne Metrum keine Synkope. Mechanismus: Neuronale Oszillation synchronisiert auf Pulse; Erwartung macht Abweichung hoerbar. Klausur-Tipp: Nenne Takt plus Gliederung 3+2; Raster ist das Wort.
+- 节拍 — Metrum:规律重音网格,All Blues 6/8三连感,没网格无切分 / Das Metrum ist das regelmaessige Betonungsraster, etwa 6/8-Feeling mit Triolen-Sog bei All Blues. Es ordnet Zeit und erwartet Schwerpunkte. Ohne Metrum keine Synkope. Mechanismus: Neuronale Oszillation synchronisiert auf Pulse; Erwartung macht Abweichung hoerbar. Klausur-Tipp: Nenne Takt plus 6/8-Feeling; Raster ist das Wort.
 - 切分 — Synkope:重音扔弱拍或跨强拍,与网格摩擦产驱动 / Die Synkope ist die Betonung leichter Zeit oder die Ueberbindung ueber schwere Zeit. Sie erzeugt Reibung gegen das Metrum und damit Drive. Jazz und Funk leben aus ihr. Mechanismus: Akzent gegen Erwartung erhoeht Erregung; Aufloesung auf eins entlaedt sie. Klausur-Tipp: Nenne leicht statt schwer plus Beispiel Takt; Reibung als Wirkung.
 - 弱拍与反拍 — Offbeat und Backbeat:und 拍与二四拍,拍手验 groove / Offbeat sind die unbetonten Zaehzeiten (und), Backbeat die Zwei und Vier im 4/4. Klatschen auf Backbeat definiert Groove. Wer eins klatscht, outet sich. Mechanismus: Antizipation auf schwache Pulse plus Bass-Drum-Kontrast; Koerper synchronisiert auf Gegenpuls. Klausur-Tipp: Nenne und plus Zwei/Vier; Klatschprobe als Beleg.
 - Groove律动 — Groove:贝斯鼓点重音的微时滞织体,拽着身体动 / Groove ist das wiederkehrende mikrozeitliche Gefuege aus Bass, Drums und Akzenten, das zum Mitbewegen zwingt. Er entsteht aus Praezision plus Winzigkeit der Abweichung. Guter Groove laesst sich nicht notieren, nur spueren. Mechanismus: Mikro-Timing (10 bis 30 ms frueh/spaet) plus Klangfarben-Layering; Konsistenz erzeugt Sog. Klausur-Tipp: Nenne Mitbewegung plus Mikro-Timing; Sog als Wirkung.
@@ -52,18 +52,18 @@ PRETRAINING术语盒(核心5词,先读三遍中德,合书自测中文→德语):
 
 ENTDECKEN(1概念 + 1文字图解,中文在上、德语在下):
 
-中文:节拍建预期,切分精准打破,groove 兜住破绽。弱拍偏离可计量:半拍长。数出偏离再拍手,5/4即拿下。
+中文:节拍建预期,切分精准打破,groove 兜住破绽。弱拍偏离可计量:半拍长。数出偏离再拍手,6/8即拿下。
 
-Mechanismus (DE): Das Metrum baut Erwartung, die Synkope bricht sie gezielt, der Groove haelt den Bruch ueber Takte durch. Der Versatz gegen den Puls laesst sich messen: Offbeat liegt exakt eine halbe Schlaglaenge daneben. Wer den Versatz zaehlt und klatscht, versteht Brubecks 3+2.
+Mechanismus (DE): Das Metrum baut Erwartung, die Synkope bricht sie gezielt, der Groove haelt den Bruch ueber Takte durch. Der Versatz gegen den Puls laesst sich messen: Offbeat liegt exakt eine halbe Schlaglaenge daneben. Wer den Versatz zaehlt und klatscht, versteht Davis' 6/8-Feeling.
 
 $$
-\Delta = \frac{T}{2} = \frac{30}{BPM} \quad\text{z.B. } \Delta = \frac{30}{176} \approx 0{,}17\,\mathrm{s}
+\Delta = \frac{T}{2} = \frac{30}{BPM} \quad\text{z.B. } \Delta = \frac{30}{138} \approx 0{,}22\,\mathrm{s}
 $$
 
 战役传导:本关承接冲量角逐、乳酸阈值与主导动机三幕,测得出才能说得清,说得清才能赢下来。
 
 ```diagram
-Metrum [3+2 Raster] -> Synkope [Delta 0,17 s] -> Groove [Sog ueber 32 Takte]
+Metrum [6/8 Raster] -> Synkope [Delta 0,22 s] -> Groove [Sog ueber 32 Takte]
 Regel: Fehler frueh = Grenze | Fehler spaet = Ausnutzung
 ```
 
@@ -71,11 +71,11 @@ Regel: Fehler frueh = Grenze | Fehler spaet = Ausnutzung
 
 ## Anekdote & Fun-Fact
 
-**Anekdote / Fun-Fact (DE)**: Dave Brubeck schrieb Take Five 1959 aus einer Tuerkei-Tournee, wo Strassenmusiker 9/8-Grooves klatschten. Sein Drummer Joe Morello probte den 5/4-Pattern wochenlang gegen Metronom, bis Kellner im Studio mitwippten. Der unverkauflichste Takt wurde zum meistverkauften Jazz-Single.
+**Anekdote / Fun-Fact (DE)**: Miles Davis nahm All Blues 1959 als 6/8-Feeling im 4/4 auf: Der Dreiton-Auftakt rollt wie ein Walzer ueber den Blues. Sein Pianist probte den Groove wochenlang gegen Metronom, bis das Studio mitwippte. Der laessigste Blues wurde zur Groove-Schule.
 
-**中文解读**: Take Five 灵感来自土耳其街头9/8,鼓手对节拍器磨几周,服务员都跟晃。最难卖的拍子成最畅销单曲。
+**中文解读**: All Blues 用6/8感觉套蓝调,三音起拍一滚即晃,钢琴对节拍器磨几周,全场跟晃。最松的蓝调成律动教材。
 
-**Bezug zum Konzept**: `Groove entsteht aus Vermessung plus Koerper; Morellos Metronom beweist beides.`
+**Bezug zum Konzept**: `Groove entsteht aus Vermessung plus Koerper; Davis' 6/8-Roller beweist beides.`
 
 ## Schritt 4 — ausprobieren: 沙盘决战
 
@@ -89,7 +89,7 @@ Target数值目标:138 BPM, Delta 0,22 s, 6/8-Feeling, 8 Takte klatschsicher。
 
 HILFE:
 1. 用30/BPM算Delta。
-2. 在3+2网格上标切分。
+2. 在6/8网格上标切分。
 3. 拍反拍说 groove 效果。
 
 MUSTERLÖSUNG:138 BPM下Delta 0,22秒,钢琴riff全坐弱拍,8小节反拍加计算即达标。
@@ -136,19 +136,19 @@ CHECK检索默写(自测3题,与答案配对):
 ## Schritt 7 — szenario: Klausurtransfer — Bandleader Jazz-Night
 中文:你是Bandleader Jazz-Night,在Berliner A-Trane Club, All Blues (138 BPM, 6/8-Feeling)中必须用德语连贯口述(约90秒)诊断、措施与数值目标(138 BPM, Delta 0,22 s, 6/8-Feeling, 8 Takte klatschsicher),并以术语举证。
 ROLLE: Du bist Bandleader Jazz-Night. SITUATION: 在A-Trane用德语90秒陈述网格、Delta与目标(138 BPM,0,22秒)。
-RUBRIC (30 XP):诊断术语8分 | 措施与目标举证7分 | 程序选择对比7分 | 德语表达5分。
+RUBRIC (30 XP):诊断术语8分 | 措施与目标举证10分 | 程序选择对比7分 | 德语表达5分。
 
-`Klausur-Satz: 满分句:groove 因弱拍riff以0,22秒摩擦3+2、反拍兜底;网格加拍手锁定满分。`
+`Klausur-Satz: 满分句:groove 因弱拍riff以0,22秒摩擦6/8、反拍兜底;网格加拍手锁定满分。`
 
 ## Schritt 8 — reflexion: Takeaway & Reflexion — 奖杯还是进站检修
 
 TAKEAWAY 1盒(核心总结):
 
 中文:数出偏离,晃出感觉:节拍许诺、切分打破、groove 兜底。
-Takeaway-Satz: `Wer die Grenze sichert und die Lage nutzt, holt den Pokal.`
+Takeaway-Satz: `Wer 138 BPM mit Delta 0,22 s im 6/8-Feeling reibt und Backbeat bindet, haelt All-Blues-Groove.`
 
 `Klausur-Satz: 元认知:节奏是预期管理,会量偏离就懂律动。`
 
 REFLEXION 2问:
 1. 过程自省:沙盘精度(Schritt 4)与程序选择(Schritt 5)哪一步更难?
-2. 元认知计划:下次先记测量值加相位,因为一切论证都从它长出来。
+2. 元认知计划:下次先算138 BPM对应Delta 0,22秒再标6/8切分,因为All Blues论证从网格加偏离长出来。

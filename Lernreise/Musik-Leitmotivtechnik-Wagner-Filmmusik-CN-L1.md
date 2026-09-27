@@ -14,7 +14,7 @@ version: Lesson-v3
 
 
 
-# Lernreise: Lernreise: Lernreise: Lernreise: Leitmotivtechnik von Wagner bis Filmmusik (L1, Ziel Klausur)
+# Lernreise: Leitmotivtechnik von Wagner bis Filmmusik (L1, Ziel Klausur)
 
 <!-- Lesson v3 9步制架构：Schritt 1至8固定结构；Fehlvorstellung 夹在 Schritt 6 与 7 之间（Parser 自动跳过，不占步数）；支持内嵌 [Werkzeug: <id>] 交互教具；Gating: check/szenario 未过 = Weiter 置灰；XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
@@ -28,11 +28,11 @@ ZIELE (3条,本节15分钟学完能做到——先读中文,再记德语):
 
 ### Hook 赛场/舞台实况
 
-女武神骑行一响就知要飞,后圆号小调再现英雄已倒。三音何以载命运?动机绑定人事物,变形讲变:大小调速度音色一改,命运即转。瓦格纳发明,电影沿用,本关追一支号角穿两界。
+原力主题一响就知英雄登场,后圆号大调再现希望重燃。三音何以载命运?动机绑定人事物,变形讲变:大小调速度音色一改,命运即转。瓦格纳发明,电影沿用,本关追一支圆号穿两界。
 
-Hook (DE): Walkuerenritt ertönt, und jeder weiss: Jetzt wird geflogen, nicht geritten. Spaeter kehrt das Horn in Moll wieder, und der Held ist gefallen. Wie erkennt das Ohr Schicksal in drei Toenen? Durch Erinnerung mit Kalkuel. Das **Leitmotiv** koppelt Person, Ding und Idee an praegnante Gestalt; **Transformation** (Dur/Moll, Tempo, Klangfarbe) erzaehlt Wandel; **Filmmusik** uebernimmt das System. Wer Motiv plus Wandel benennt, versteht Wagner und Williams. Heute verfolgen wir ein Horn durch zwei Welten.
+Hook (DE): Force-Theme ertoent in d-Moll, und jeder weiss: Jetzt tritt der Held auf, nicht ab. Spaeter kehrt das Horn in D-Dur wieder, und die Hoffnung kehrt zurueck. Wie erkennt das Ohr Schicksal in drei Toenen? Durch Erinnerung mit Kalkuel. Das **Leitmotiv** koppelt Person, Ding und Idee an praegnante Gestalt; **Transformation** (Dur/Moll, Tempo, Klangfarbe) erzaehlt Wandel; **Filmmusik** uebernimmt das System. Wer Motiv plus Wandel benennt, versteht Wagner und Williams. Heute verfolgen wir ein Horn durch zwei Welten.
 
-`Klausur-Satz: 拜罗伊特揭示:三音号角定飞定坠。`
+`Klausur-Satz: 伦敦揭示:三音圆号定出场定希望。`
 
 ## Schritt 2 — entdecken: 5术语装备盒
 
@@ -57,7 +57,7 @@ ENTDECKEN(1概念 + 1文字图解,中文在上、德语在下):
 Mechanismus (DE): Das Motiv tauft Traeger, Wiederkehr erkennt, Transformation deutet Wandel, Kombination erzaehlt Beziehung. Dur strahlt, Moll trauert bei gleicher DNA. Wer Traeger plus Veraenderung benennt, liest Handlung aus Musik.
 
 $$
-f_{Moll} = f_{Dur} \cdot 2^{-1/12} \quad\text{(Terz sinkt einen Halbton: E-Dur zu e-Moll)}
+f_{Moll} = f_{Dur} \cdot 2^{-1/12} \quad\text{(Terz sinkt einen Halbton: D-Dur zu d-Moll)}
 $$
 
 战役传导:本关承接冲量角逐、乳酸阈值与主导动机三幕,测得出才能说得清,说得清才能赢下来。
@@ -92,7 +92,7 @@ HILFE:
 2. 用半音验变形。
 3. 说叠置即关系。
 
-MUSTERLÖSUNG:圆号D大点名原力,E小半音下沉哀悼,叠帝国动机即冲突,三件套即达标。
+MUSTERLÖSUNG:圆号D大点名原力,d小半音下沉转悲,叠帝国动机即冲突,三件套即达标。
 
 `Klausur-Satz: 目标D/d一半音证明:物理变命运。`
 
@@ -136,7 +136,7 @@ CHECK检索默写(自测3题,与答案配对):
 ## Schritt 7 — szenario: Klausurtransfer — Dramaturg Bayreuth
 中文:你是Dramaturg Bayreuth,在Londoner Abbey Road Studio, Star-Wars-Force-Theme (d-Moll-Horn)中必须用德语连贯口述(约90秒)诊断、措施与数值目标(Force d-Moll, Triumph D-Dur, Halbton-Nachweis, 90 s Rede),并以术语举证。
 ROLLE: Du bist Dramaturg Bayreuth. SITUATION: 在Abbey Road用德语90秒陈述载体、半音与目标(d/D)。
-RUBRIC (30 XP):诊断术语8分 | 措施与目标举证7分 | 程序选择对比7分 | 德语表达5分。
+RUBRIC (30 XP):诊断术语8分 | 措施与目标举证10分 | 程序选择对比7分 | 德语表达5分。
 
 `Klausur-Satz: 满分句:悲因圆号DNA三度降半音转d小调加帝国叠置;载体加计算锁定满分。`
 
@@ -145,10 +145,10 @@ RUBRIC (30 XP):诊断术语8分 | 措施与目标举证7分 | 程序选择对比
 TAKEAWAY 1盒(核心总结):
 
 中文:点名加量变即剧情:大许诺、小反悔、叠置泄密,一半音定命运。
-Takeaway-Satz: `Wer die Grenze sichert und die Lage nutzt, holt den Pokal.`
+Takeaway-Satz: `Wer Force in d-Moll tauft und Terz-minus-Halbton nach D-Dur misst, hoert Filmmusik-Handlung.`
 
 `Klausur-Satz: 元认知:记住即表态,会量变就懂叙事音乐。`
 
 REFLEXION 2问:
 1. 过程自省:沙盘精度(Schritt 4)与程序选择(Schritt 5)哪一步更难?
-2. 元认知计划:下次先记测量值加相位,因为一切论证都从它长出来。
+2. 元认知计划:下次先写原力载体加D/d半音计算再判叠置关系,因为电影动机论证从载体加变形长出来。

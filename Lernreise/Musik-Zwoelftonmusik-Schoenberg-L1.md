@@ -14,7 +14,7 @@ version: Lesson-v3
 
 
 
-# Lernreise: Lernreise: Lernreise: Lernreise: Zwoelftonmusik und Schoenberg (L1, Ziel Klausur)
+# Lernreise: Zwoelftonmusik und Schoenberg (L1, Ziel Klausur)
 
 <!-- Lesson v3: Schritt 1-8 feste Struktur; Fehlvorstellung zwischen Schritt 6 und 7 (Parser skip); [Werkzeug: <id>] interaktiv; Gating: check/szenario nicht bestanden = Weiter grau; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
@@ -136,7 +136,7 @@ CHECK检索默写(自测3题,与答案配对):
 ## Schritt 7 — szenario: Klausurtransfer — Reihen-Detektiv Alte Oper
 中文:你是Reihen-Detektiv Alte Oper,在Frankfurter Alte Oper, Suite op. 25 (Reihe E-F-G-As-B-C)中必须用德语连贯口述(约90秒)诊断、措施与数值目标(op. 25, Reihe 12 Toene, 4 Formen, 48 gesamt),并以术语举证。
 ROLLE: Du bist Reihen-Detektiv Alte Oper. SITUATION: In Frankfurt musst du 90 Sekunden lang Reihe, Formen und Target (12, 48) verteidigen.
-RUBRIC (30 XP):诊断术语8分 | 措施与目标举证7分 | 程序选择对比7分 | 德语表达5分。
+RUBRIC (30 XP):诊断术语8分 | 措施与目标举证10分 | 程序选择对比7分 | 德语表达5分。
 
 `Klausur-Satz: AFB-III-Mustersatz: Die Schwebenwirkung entsteht, weil Reihe ohne Wiederholung in 4 Formen mit 48 Transpositionen kreist; Notation plus Zahl sichern volle Punktzahl.`
 
@@ -145,10 +145,10 @@ RUBRIC (30 XP):诊断术语8分 | 措施与目标举证7分 | 程序选择对比
 TAKEAWAY 1盒(核心总结):
 
 中文:Zwoelf Toene, achtundvierzig Formen, null Tonika: Reihe ordnet, Formen tarnen, Schweben befreit. Wer zaehlt und hoert, versteht Schoenberg.
-Takeaway-Satz: `Wer die Grenze sichert und die Lage nutzt, holt den Pokal.`
+Takeaway-Satz: `Wer op.25-Reihe ohne Wiederholung in 4 Formen mit 48 Transpositionen zaehlt, hoert System statt Chaos.`
 
 `Klausur-Satz: Metakern: Freiheit ist strenge Ordnung; wer Reihen zaehlt, versteht jede Moderne.`
 
 REFLEXION 2问:
 1. 过程自省:沙盘精度(Schritt 4)与程序选择(Schritt 5)哪一步更难?
-2. 元认知计划:下次先记测量值加相位,因为一切论证都从它长出来。
+2. 元认知计划:下次先写十二音行列再作P/I/R/RI四形数48,因为十二音论证从行列加形态长出来。

@@ -14,7 +14,7 @@ version: Lesson-v3
 
 
 
-# Lernreise: Lernreise: Lernreise: Lernreise: Zwoelftonmusik und Schoenberg (L1, Ziel Klausur)
+# Lernreise: Zwoelftonmusik und Schoenberg (L1, Ziel Klausur)
 
 <!-- Lesson v3 9步制架构：Schritt 1至8固定结构；Fehlvorstellung 夹在 Schritt 6 与 7 之间（Parser 自动跳过，不占步数）；支持内嵌 [Werkzeug: <id>] 交互教具；Gating: check/szenario 未过 = Weiter 置灰；XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
@@ -32,7 +32,7 @@ op25第一小节无大小调无家。十二音排队人人平等,原形逆行倒
 
 Hook (DE): Suite op. 25, erster Takt: Kein Dur, kein Moll, kein Zuhause. Zwoelf Toene in Reihe, und jeder zaehlt gleich. Der Pruefer fragt: Wo ist die Tonika? Die ehrliche Antwort: nirgendwo, und genau das ist System. Die **Reihe** ordnet alle **zwoelf Toene**, **Grundform, Umkehrung, Krebs, Krebsumkehrung** vervielfachen sie, **Komplement** und **Hexachord** bauen Bruecken. Wer Reihe plus Form benennt, versteht Schoenberg. Heute decodieren wir op. 25 mit Zahl und Ohr.
 
-`Klausur-Satz: 法兰克福揭示:没家照样有系统,行列说了算。`
+`Klausur-Satz: 斯图加特揭示:没家照样有系统,行列说了算。`
 
 ## Schritt 2 — entdecken: 5术语装备盒
 
@@ -136,7 +136,7 @@ CHECK检索默写(自测3题,与答案配对):
 ## Schritt 7 — szenario: Klausurtransfer — Reihen-Detektiv Alte Oper
 中文:你是Reihen-Detektiv Alte Oper,在Stuttgarter Liederhalle, Mondestrunken-Probe (Reihe mit 4 Formen)中必须用德语连贯口述(约90秒)诊断、措施与数值目标(Mondestrunken, Reihe 12 Toene, 2 Formen, Transposition +5),并以术语举证。
 ROLLE: Du bist Reihen-Detektiv Alte Oper. SITUATION: 在斯图加特用德语90秒陈述行列、形态与目标(十二音,两形)。
-RUBRIC (30 XP):诊断术语8分 | 措施与目标举证7分 | 程序选择对比7分 | 德语表达5分。
+RUBRIC (30 XP):诊断术语8分 | 措施与目标举证10分 | 程序选择对比7分 | 德语表达5分。
 
 `Klausur-Satz: 满分句:悬浮因行列不重复以两形移调循环;记谱加数字锁定满分。`
 
@@ -145,10 +145,10 @@ RUBRIC (30 XP):诊断术语8分 | 措施与目标举证7分 | 程序选择对比
 TAKEAWAY 1盒(核心总结):
 
 中文:十二音、四十八形、零主音:行列管料、形态易容、悬浮解放。
-Takeaway-Satz: `Wer die Grenze sichert und die Lage nutzt, holt den Pokal.`
+Takeaway-Satz: `Wer Mondestrunken-Reihe mit 2 Formen und Transposition +5 nachweist, hoert Zwölfton-Schweben.`
 
 `Klausur-Satz: 元认知:自由是严秩序,会数行列就懂现代。`
 
 REFLEXION 2问:
 1. 过程自省:沙盘精度(Schritt 4)与程序选择(Schritt 5)哪一步更难?
-2. 元认知计划:下次先记测量值加相位,因为一切论证都从它长出来。
+2. 元认知计划:下次先写十二音行列再作两形加移调+5验算,因为Mondestrunken论证从行列加形态长出来。

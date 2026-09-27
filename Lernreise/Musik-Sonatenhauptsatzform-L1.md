@@ -14,7 +14,7 @@ version: Lesson-v3
 
 
 
-# Lernreise: Lernreise: Lernreise: Lernreise: Sonatenhauptsatzform hoeren (L1, Ziel Muendlich)
+# Lernreise: Sonatenhauptsatzform hoeren (L1, Ziel Muendlich)
 
 <!-- Lesson v3 9步制架构：Schritt 1至8固定结构；Fehlvorstellung 夹在 Schritt 6 与 7 之间（Parser 自动跳过，不占步数）；支持内嵌 [Werkzeug: <id>] 交互教具；Gating: check/szenario 未过 = Weiter 置灰；XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
@@ -28,11 +28,11 @@ ZIELE (3条,本节15分钟学完能做到——先读中文,再记德语):
 
 ### Hook 赛场/舞台实况
 
-悲怆第一乐章:c小调对降E大调,命运撞安慰,展开撕碎,再现小调和解。耳朵怎知和解是义务?调性钟说了算:呈示摆主副、展开穿远调、再现回家。本关读贝多芬的钟。
+月光第一乐章:升c小调三连音绵绵,呈示摆主题、展开穿远调、再现回家。耳朵怎知和解是义务?调性钟说了算:呈示摆主副、展开穿远调、再现回家。本关读贝多芬的钟。
 
-Hook (DE): Pathétique, Esplosion: Zwei Themen prallen aufeinander, c-Moll gegen Es-Dur, Schicksal gegen Trost. Die Durchfuehrung zerreisst beide, die Reprise versoehnt sie in Moll. Woher weiss das Ohr, dass Versoehnung Pflicht ist? Aus der Tonarten-Uhr. **Exposition** stellt **Haupt- und Seitensatz** in Tonika und Dominante vor, **Durchfuehrung** moduliert durch die Ferne, **Reprise** loest in der Tonika. **Doppelstrich** und **Coda** markieren die Pflicht. Heute lesen wir diese Uhr an Beethoven.
+Hook (DE): Mondschein, Triolen-Fluss: Ein Thema wiegt in cis-Moll, die Durchfuehrung entfernt es um zwei Quinten, die Reprise holt es heim. Woher weiss das Ohr, dass Versoehnung Pflicht ist? Aus der Tonarten-Uhr. **Exposition** stellt **Haupt- und Seitensatz** in der Tonika vor, **Durchfuehrung** moduliert durch die Ferne, **Reprise** loest in der Tonika. **Doppelstrich** und **Coda** markieren die Pflicht. Heute lesen wir diese Uhr an Beethoven.
 
-`Klausur-Satz: 波恩揭示:两调开战须一调和解。`
+`Klausur-Satz: 魏玛揭示:一调远走须一调回家。`
 
 ## Schritt 2 — entdecken: 5术语装备盒
 
@@ -41,10 +41,10 @@ PRETRAINING术语盒(核心5词,先读三遍中德,合书自测中文→德语):
 中文在上,德语在下:
 
 - 呈示部 — Exposition:摆主副两主题两调,反复记号令对比 / Die Exposition stellt Haupt- und Seitensatz in Tonika und Kontrasttonart vor (Moll: Tonika-Mediante). Doppelstrich mit Wiederholung befiehlt Vergleich. Ohne sie keine Reprise. Mechanismus: Kadenz plus Tonartenplan praegen Gedächtnis; Kontrast erzeugt Erwartung. Klausur-Tipp: Nenne zwei Themen plus zwei Tonarten; Doppelstrich als Zeichen.
-- 主副部 — Haupt- und Seitensatz:主部主调硬朗、副部对比调抒情,对立即戏剧 / Hauptsatz in Tonika (maennlich, markant), Seitensatz in Kontrasttonart (weiblich, lyrisch). Dualismus treibt Drama. Pathétique lebt aus ihm. Mechanismus: Charakter plus Tonart codieren Konflikt; Bruecke moduliert. Klausur-Tipp: Nenne Charakter plus Tonart je Satz; Dualismus als Wort.
+- 主副部 — Haupt- und Seitensatz:主部主调硬朗、副部对比调抒情,对立即戏剧 / Hauptsatz in Tonika (maennlich, markant), Seitensatz in Kontrasttonart (weiblich, lyrisch). Dualismus treibt Drama. Mondschein lebt aus ihm. Mechanismus: Charakter plus Tonart codieren Konflikt; Bruecke moduliert. Klausur-Tipp: Nenne Charakter plus Tonart je Satz; Dualismus als Wort.
 - 展开部 — Durchführung:拆呈示穿远调,越远越想家 / Die Durchfuehrung zerlegt und moduliert Expositions-Material durch ferne Tonarten. Sie maximiert Ferne und Rueckkehrzwang. Laenge verrät Gewicht. Mechanismus: Sequenz plus Modulation erzeugen Distanz; Dominantorgelpunkt ruft zurueck. Klausur-Tipp: Nenne ferne Tonarten plus Verfahren; Ferne als Mass.
 - 再现部 — Reprise:两主题回主调和解,义务非选项 / Die Reprise bringt beide Saetze in der Tonika und loest den Konflikt. Versoehnung ist Pflicht, nicht Wahl. Coda bestaetigt sie. Mechanismus: Transposition des Seitensatzes in Tonika; Kadenz schliesst. Klausur-Tipp: Nenne beide in Tonika plus Pflicht; Versoehnung als Bild.
-- 尾声 — Coda:再现后加盖,终止连击钉死 / Die Coda bestaetigt den Schluss nach der Reprise mit Kadenzfeuer. Sie stemmt das Dach aufs Haus. Pathétique donnert so. Mechanismus: Pendelkadenz plus Steigerung; Schlussbekraeftigung. Klausur-Tipp: Nenne nach Reprise plus Bestaetigung; Dach als Bild.
+- 尾声 — Coda:再现后加盖,终止连击钉死 / Die Coda bestaetigt den Schluss nach der Reprise mit Kadenzfeuer. Sie stemmt das Dach aufs Haus. Mondschein schliesst so. Mechanismus: Pendelkadenz plus Steigerung; Schlussbekraeftigung. Klausur-Tipp: Nenne nach Reprise plus Bestaetigung; Dach als Bild.
 
 `Klausur-Satz: 呈示摆出再现收回,两定义撑起曲式。`
 
@@ -57,13 +57,13 @@ ENTDECKEN(1概念 + 1文字图解,中文在上、德语在下):
 Mechanismus (DE): Exposition spannt Tonarten auf, Durchfuehrung entfernt maximal, Reprise loest in Tonika, Coda nagelt zu. Der Seitensatz muss heimkehren: Transposition um Terz oder Quinte. Wer Tonartenkette nennt, erklaert Versoehnung.
 
 $$
-\text{Spannung} = |n_{Durchf} - n_{Tonika}| \quad\text{in Quintschritten, z.B. } 3 \text{ Quinten}
+\text{Spannung} = |n_{Durchf} - n_{Tonika}| \quad\text{in Quintschritten, z.B. } 2 \text{ Quinten}
 $$
 
 战役传导:本关承接冲量角逐、乳酸阈值与主导动机三幕,测得出才能说得清,说得清才能赢下来。
 
 ```diagram
-Expo [i-III] -> Durchf [fern, 3 Quinten] -> Reprise [i-i Pflicht] -> Coda [Dach]
+Expo [i] -> Durchf [fern, 2 Quinten] -> Reprise [i-i Pflicht] -> Coda [Dach]
 Regel: Fehler frueh = Grenze | Fehler spaet = Ausnutzung
 ```
 
@@ -71,9 +71,9 @@ Regel: Fehler frueh = Grenze | Fehler spaet = Ausnutzung
 
 ## Anekdote & Fun-Fact
 
-**Anekdote / Fun-Fact (DE)**: Beethoven schrieb Pathétique 1798 als Suizid der Konvention: Er liess Grave-Einleitung vor Allegro donnern, was Verleger als Fehler strichen. Sein Schueler Czerny behielt die Striche und spielte trotzdem alles. Die Erstausgabe traegt Widmung an Lichnowsky, der dafuer ein Schloss oeffnete.
+**Anekdote / Fun-Fact (DE)**: Beethoven widmete die Mondschein-Sonate 1801 der Giulietta Guicciardi und liess den ersten Satz ohne Allegro fliessen, was Verleger als Formfehler lasen. Sein Schueler Czerny behielt die Triolen und spielte trotzdem alles. Die Erstausgabe traegt den Titel Sonata quasi una Fantasia.
 
-**中文解读**: 悲怆1798年拿慢引子炸快板,出版商当错删,车尔尼照弹。反叛也守调性钟。
+**中文解读**: 月光1801年题献朱丽叶塔,首乐章无快板只流三连音,出版商当错体,车尔尼照弹。反叛也守调性钟。
 
 **Bezug zum Konzept**: `Regelbruch mit Uhr: Auch Revolte folgt Tonarten-Pflicht.`
 
@@ -117,7 +117,7 @@ ANTWORT:A走调性钟;B走人物戏。
 CHECK检索默写(自测3题,与答案配对):
 
 - FRAGE:谁须回家? | ANTWORT:副部回主调,义务。
-- FRAGE:远怎么量? | ANTWORT:五度数,三即必回。
+- FRAGE:远怎么量? | ANTWORT:五度数,二即必回。
 - FRAGE:何时钟而非戏? | ANTWORT:看谱用钟,听戏用人物。
 
 `Klausur-Satz: 易错是当复制与以慢判轻。`
@@ -136,7 +136,7 @@ CHECK检索默写(自测3题,与答案配对):
 ## Schritt 7 — szenario: Klausurtransfer — Kurator Beethovenhaus
 中文:你是Kurator Beethovenhaus,在Weimarer Stadtschloss, Mondschein 1. Satz (cis-Moll, 54 BPM)中必须用德语连贯口述(约90秒)诊断、措施与数值目标(Mondschein cis-Moll, Expo i, Durchf 2 Quinten, Coda 8 Takte),并以术语举证。
 ROLLE: Du bist Kurator Beethovenhaus. SITUATION: 在魏玛用德语90秒陈述呈示、远调与目标(升c,两五度)。
-RUBRIC (30 XP):诊断术语8分 | 措施与目标举证7分 | 程序选择对比7分 | 德语表达5分。
+RUBRIC (30 XP):诊断术语8分 | 措施与目标举证10分 | 程序选择对比7分 | 德语表达5分。
 
 `Klausur-Satz: 满分句:和解因副部移调回家、两五度远方回归;链条锁定满分。`
 
@@ -144,11 +144,11 @@ RUBRIC (30 XP):诊断术语8分 | 措施与目标举证7分 | 程序选择对比
 
 TAKEAWAY 1盒(核心总结):
 
-中文:两主题、三远方、一回家:呈示许诺、展开远走、再现解套。
-Takeaway-Satz: `Wer die Grenze sichert und die Lage nutzt, holt den Pokal.`
+中文:一主题、两远方、一回家:呈示许诺、展开远走、再现解套。
+Takeaway-Satz: `Wer Mondschein-Expo in cis-Moll mit 2 Quinten Ferne und Coda 8 Takte benennt, versteht Sonaten-Uhr.`
 
 `Klausur-Satz: 元认知:奏鸣是调性戏,会读钟就懂再现。`
 
 REFLEXION 2问:
 1. 过程自省:沙盘精度(Schritt 4)与程序选择(Schritt 5)哪一步更难?
-2. 元认知计划:下次先记测量值加相位,因为一切论证都从它长出来。
+2. 元认知计划:下次先写呈示调加远调五度数再验再现义务,因为奏鸣论证从调性钟长出来。

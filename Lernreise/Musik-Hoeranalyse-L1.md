@@ -14,15 +14,15 @@ version: Lesson-v3
 
 
 
-# Lernreise: Lernreise: Lernreise: Lernreise: Musik Höranalyse (L1, Ziel Muendlich)
+# Lernreise: Musik Höranalyse (L1, Ziel Muendlich)
 
 <!-- Lesson v3 9步制架构：Schritt 1至8固定结构；Fehlvorstellung 夹在 Schritt 6 与 7 之间（Parser 自动跳过，不占步数）；支持内嵌 [Werkzeug: <id>] 交互教具；Gating: check/szenario 未过 = Weiter 置灰；XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
-## Schritt 1 — entdecken: Hamburger Elbphilharmonie, Dvorak 9. Sinfonie (Aus der Neuen Welt, 92 BPM) — 赛场警报
+## Schritt 1 — entdecken: Konzerthaus Berlin, Dvorak 9. Sinfonie (Aus der Neuen Welt, 92 BPM) — 赛场警报
 
 ZIELE (3条,本节15分钟学完能做到——先读中文,再记德语):
 
-1. 中文:能一句话定义`Höranalyse Bausteine`,并定位到本关赛事Hamburger Elbphilharmonie, Dvorak 9. Sinfonie (Aus der Neuen Welt, 92 BPM)。
+1. 中文:能一句话定义`Höranalyse Bausteine`,并定位到本关赛事Konzerthaus Berlin, Dvorak 9. Sinfonie (Aus der Neuen Welt, 92 BPM)。
 2. 中文:能口述核心机制,并用数值目标(30 s Hoerbeispiel, 90 s Rede, 3 Parameter, Formel T = 60/92)举证。
 3. 中文:能诊断一处典型错误,并用德语Klausur-Satz收束(AF B II)。
 
@@ -57,7 +57,7 @@ ENTDECKEN(1概念 + 1文字图解,中文在上、德语在下):
 Mechanismus (DE): Beschreiben sichert Belege, Deuten verknuepft jeden Beleg mit Fachbegriff und Wirkung, Urteilen synthesisiert zur These. Die Kette ist Pflicht: Ueberspringt man Beschreiben, haengt Deutung in der Luft. Das Tempo der Musik liefert die erste Zahl: Taktlaenge aus BPM.
 
 $$
-T = \frac{60}{BPM} \quad\text{z.B. } T = \frac{60}{108} \approx 0{,}56\,\mathrm{s}
+T = \frac{60}{BPM} \quad\text{z.B. } T = \frac{60}{92} \approx 0{,}65\,\mathrm{s}
 $$
 
 战役传导:本关承接冲量角逐、乳酸阈值与主导动机三幕,测得出才能说得清,说得清才能赢下来。
@@ -134,9 +134,9 @@ CHECK检索默写(自测3题,与答案配对):
    Korrektur-Satz: `Nicht Etikett fuehrt zu Wahrnehmung, sondern Struktur zum Begriff.`
 
 ## Schritt 7 — szenario: Klausurtransfer — Chefdirigent im Konzerthaus
-中文:你是Chefdirigent im Konzerthaus,在Hamburger Elbphilharmonie, Dvorak 9. Sinfonie (Aus der Neuen Welt, 92 BPM)中必须用德语连贯口述(约90秒)诊断、措施与数值目标(30 s Hoerbeispiel, 90 s Rede, 3 Parameter, Formel T = 60/92),并以术语举证。
-ROLLE: Du bist Chefdirigent im Konzerthaus. SITUATION: 在易北厅用德语90秒陈述参数、解读与目标(92 BPM,三参数)。
-RUBRIC (30 XP):诊断术语8分 | 措施与目标举证7分 | 程序选择对比7分 | 德语表达5分。
+中文:你是Chefdirigent im Konzerthaus,在Konzerthaus Berlin, Dvorak 9. Sinfonie (Aus der Neuen Welt, 92 BPM)中必须用德语连贯口述(约90秒)诊断、措施与数值目标(30 s Hoerbeispiel, 90 s Rede, 3 Parameter, Formel T = 60/92),并以术语举证。
+ROLLE: Du bist Chefdirigent im Konzerthaus. SITUATION: 在柏林用德语90秒陈述参数、解读与目标(92 BPM,三参数)。
+RUBRIC (30 XP):诊断术语8分 | 措施与目标举证10分 | 程序选择对比7分 | 德语表达5分。
 
 `Klausur-Satz: 满分句:威慑因四音动机ff铜管92 BPM齐奏;先参数后判断锁定满分。`
 
@@ -145,10 +145,10 @@ RUBRIC (30 XP):诊断术语8分 | 措施与目标举证7分 | 程序选择对比
 TAKEAWAY 1盒(核心总结):
 
 中文:测了才配说:参数保底、weil解读、最后判断,印象变分数。
-Takeaway-Satz: `Wer die Grenze sichert und die Lage nutzt, holt den Pokal.`
+Takeaway-Satz: `Wer 92 BPM mit T=0,65 s und drei Parametern belegt, verwandelt Eindruck in Urteil.`
 
 `Klausur-Satz: 元认知:听是带着意义的测,会听参数就懂音乐。`
 
 REFLEXION 2问:
 1. 过程自省:沙盘精度(Schritt 4)与程序选择(Schritt 5)哪一步更难?
-2. 元认知计划:下次先记测量值加相位,因为一切论证都从它长出来。
+2. 元认知计划:下次先写92 BPM对应T=0,65秒加三参数小节表再下判断,因为听辨论证从参数加数字长出来。

@@ -14,7 +14,7 @@ version: Lesson-v3
 
 
 
-# Lernreise: Lernreise: Lernreise: Lernreise: Rhythmus Synkopen und Jazz (L1, Ziel Muendlich)
+# Lernreise: Rhythmus Synkopen und Jazz (L1, Ziel Muendlich)
 
 <!-- Lesson v3 architecture: Schritte 1-8 fixed; Fehlvorstellung between Schritt 6 and 7 (parser skipped); embedded [Werkzeug: <id>]; gating: check/szenario failed = Weiter greyed; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
@@ -136,7 +136,7 @@ CHECK检索默写(自测3题,与答案配对):
 ## Schritt 7 — szenario: Klausurtransfer — Bandleader Jazz-Night
 中文:你是Bandleader Jazz-Night,在Koelner Philharmonie, Jazz-Night (Take Five, 176 BPM, 5/4-Takt)中必须用德语连贯口述(约90秒)诊断、措施与数值目标(176 BPM, Delta 0,17 s, 3+2-Gliederung, 8 Takte klatschsicher),并以术语举证。
 ROLLE: Du bist Bandleader Jazz-Night. SITUATION: In Koeln musst du 90 Sekunden lang Raster, Delta und Target (176 BPM, 0,17 s) verteidigen.
-RUBRIC (30 XP):诊断术语8分 | 措施与目标举证7分 | 程序选择对比7分 | 德语表达5分。
+RUBRIC (30 XP):诊断术语8分 | 措施与目标举证10分 | 程序选择对比7分 | 德语表达5分。
 
 `Klausur-Satz: AFB-III-Mustersatz: Der Groove entsteht, weil Offbeat-Riffs mit 0,17 s Versatz gegen 3+2 reiben und Backbeat sie bindet; Raster plus Klatschprobe sichern volle Punktzahl.`
 
@@ -145,10 +145,10 @@ RUBRIC (30 XP):诊断术语8分 | 措施与目标举证7分 | 程序选择对比
 TAKEAWAY 1盒(核心总结):
 
 中文:Zaehle den Versatz, spuere den Sog: Metrum verspricht, Synkope bricht, Groove haelt. Wer 0,17 Sekunden hoert, versteht Jazz.
-Takeaway-Satz: `Wer die Grenze sichert und die Lage nutzt, holt den Pokal.`
+Takeaway-Satz: `Wer 176 BPM mit Delta 0,17 s gegen 3+2 reibt und Backbeat bindet, haelt Groove.`
 
 `Klausur-Satz: Metakern: Rhythmus ist Erwartungsmanagement; wer Versatz misst, versteht jede Groove-Musik.`
 
 REFLEXION 2问:
 1. 过程自省:沙盘精度(Schritt 4)与程序选择(Schritt 5)哪一步更难?
-2. 元认知计划:下次先记测量值加相位,因为一切论证都从它长出来。
+2. 元认知计划:下次先算176 BPM对应Delta 0,17秒再标3+2网格切分,因为groove论证从网格加偏离长出来。

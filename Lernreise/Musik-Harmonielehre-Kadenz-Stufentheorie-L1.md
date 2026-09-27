@@ -14,7 +14,7 @@ version: Lesson-v3
 
 
 
-# Lernreise: Lernreise: Lernreise: Lernreise: Harmonielehre Kadenz und Stufentheorie (L1, Ziel Klausur)
+# Lernreise: Harmonielehre Kadenz und Stufentheorie (L1, Ziel Klausur)
 
 <!-- Lesson v3 9步制架构：Schritt 1至8固定结构；Fehlvorstellung 夹在 Schritt 6 与 7 之间（Parser 自动跳过，不占步数）；支持内嵌 [Werkzeug: <id>] 交互教具；Gating: check/szenario 未过 = Weiter 置灰；XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
@@ -28,11 +28,11 @@ ZIELE (3条,本节15分钟学完能做到——先读中文,再记德语):
 
 ### Hook 赛场/舞台实况
 
-KV545最后两和弦全场松气:回家感因T-S-D-T属到主,失望感因阻碍终止。四字母管 architecture。本关拆莫扎特结尾,用级数与耳朵。
+卡农D大调八小节一响全场跟晃:回家感因D-G-A-D属到主,失望感因阻碍终止。四级数管 architecture。本关拆帕赫贝尔卡农,用级数与耳朵。
 
-Hook (DE): KV 545, Finaltakte: Zwei Akkorde, und der Saal atmet aus. Warum fuehlt sich dieser Schluss wie Heimkehr an, waehrend ein Trugschluss enttaeuscht? Die Antwort steht nicht im Gefuehl, sondern in vier Buchstaben. Die **authentische Kadenz** T-S-D-T (I-IV-V-I) schliesst mit **Dominantspannung** zur **Tonikaaufloesung**; **Stufen** zaehlen Funktionen, **Generalbass** beziffert sie. Wer Kadenzen hoert, hoert Architektur. Heute sezieren wir Mozarts Schluss mit Zahl und Ohr.
+Hook (DE): Pachelbel Kanon D-Dur, acht Takte: Vier Akkorde, und der Saal wiegt mit. Warum fuehlt sich dieser Schluss wie Heimkehr an, waehrend ein Trugschluss enttaeuscht? Die Antwort steht nicht im Gefuehl, sondern in vier Stufen. Die **authentische Kadenz** T-S-D-T (I-IV-V-I) schliesst mit **Dominantspannung** zur **Tonikaaufloesung**; **Stufen** zaehlen Funktionen, **Generalbass** beziffert sie. Wer Kadenzen hoert, hoert Architektur. Heute sezieren wir Pachelbels Kanon mit Zahl und Ohr.
 
-`Klausur-Satz: 慕尼黑揭示:两和弦定回家还是悬念。`
+`Klausur-Satz: 德累斯顿揭示:两和弦定回家还是悬念。`
 
 ## Schritt 2 — entdecken: 5术语装备盒
 
@@ -71,11 +71,11 @@ Regel: Fehler frueh = Grenze | Fehler spaet = Ausnutzung
 
 ## Anekdote & Fun-Fact
 
-**Anekdote / Fun-Fact (DE)**: Mozart schrieb KV 545 fuer Klavierschueler und versteckte darin ein Kadenz-Lehrbuch: Jeder Achttakter endet mit lupenreiner T-S-D-T. Sein Verleger nannte sie leichte Sonate, Pianisten nennen sie Kadenz-Bibel. Wer sie spielt, uebt Schluesse statt Finger.
+**Anekdote / Fun-Fact (DE)**: Pachelbels Kanon in D-Dur wandert als Achttakt-Ostinato durch alle Stimmen: Jeder Durchlauf endet mit lupenreiner T-S-D-T. Geiger nennen ihn Hochzeits-Bibel, Lehrer nennen ihn Kadenz-Loop. Wer ihn spielt, uebt Schluesse statt Finger.
 
-**中文解读**: KV545是莫扎特给学生藏的终止教材,每八小节一个标准T-S-D-T。练它等于练标点。
+**中文解读**: 帕赫贝尔卡农是八小节循环藏的终止教材,每轮一遍标准T-S-D-T。练它等于练标点。
 
-**Bezug zum Konzept**: `Der Schluss lehrt Form: Kadenzen sind Satzzeichen der Musik.`
+**Bezug zum Konzept**: `Der Kanon lehrt Form: Kadenzen sind Satzzeichen der Musik.`
 
 ## Schritt 4 — ausprobieren: 沙盘决战
 
@@ -136,7 +136,7 @@ CHECK检索默写(自测3题,与答案配对):
 ## Schritt 7 — szenario: Klausurtransfer — Korrepetitor Herkulessaal
 中文:你是Korrepetitor Herkulessaal,在Dresdner Frauenkirche, Pachelbel Kanon D-Dur (Achttakt-Kadenz)中必须用德语连贯口述(约90秒)诊断、措施与数值目标(Kanon D-Dur, 8 Takte, 4 Stufen korrekt, Trugschluss V-VI),并以术语举证。
 ROLLE: Du bist Korrepetitor Herkulessaal. SITUATION: 在德累斯顿用德语90秒陈述级数、五度与目标(卡农八小节)。
-RUBRIC (30 XP):诊断术语8分 | 措施与目标举证7分 | 程序选择对比7分 | 德语表达5分。
+RUBRIC (30 XP):诊断术语8分 | 措施与目标举证10分 | 程序选择对比7分 | 德语表达5分。
 
 `Klausur-Satz: 满分句:回家感因导音半音加五度下行锁死五到一;级数加1,498锁定满分。`
 
@@ -145,10 +145,10 @@ RUBRIC (30 XP):诊断术语8分 | 措施与目标举证7分 | 程序选择对比
 TAKEAWAY 1盒(核心总结):
 
 中文:四级关一切调:离家、拉满、回家。会听终止就有分。
-Takeaway-Satz: `Wer die Grenze sichert und die Lage nutzt, holt den Pokal.`
+Takeaway-Satz: `Wer I-IV-V-I mit Quinte 1,498 und Trugschluss V-VI benennt, hoert Kadenz-Architektur.`
 
 `Klausur-Satz: 元认知:和声是语法,会读终止就懂曲式。`
 
 REFLEXION 2问:
 1. 过程自省:沙盘精度(Schritt 4)与程序选择(Schritt 5)哪一步更难?
-2. 元认知计划:下次先记测量值加相位,因为一切论证都从它长出来。
+2. 元认知计划:下次先写级数加低音再算五度1,498验V-I,因为终止论证从级数加计算长出来。
