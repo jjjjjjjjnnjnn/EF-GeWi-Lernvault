@@ -11,134 +11,124 @@ tags: [EF, Chemie, Kinetik]
 version: Lesson-v3
 ---
 
-# Lernreise: Reaktionsgeschwindigkeit und Katalyse (L1, Ziel Klausur)
+# Lernreise: Reaktionsgeschwindigkeit und Katalyse — Episode C14: Druckstoß in Halle Haber
 
-<!-- Lesson v3 9步制架构：Schritt 1至8固定结构；Fehlvorstellung 夹在 Schritt 6 与 7 之间（Parser 自动跳过，不占步数）；支持内嵌 [Werkzeug: <id>] 交互教具；Gating: check/szenario 未过 = Weiter 置灰；XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
+<!-- Campaign: Imperium-Alchemie | Chemie | entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
-## Schritt 1 — entdecken
+## Schritt 1 — entdecken: Der schläfrige Rührkessel
 
-ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
+ZIELE（本节三目标）：
+1. 中文：能说清有效碰撞条件。
+2. 中文：能读懂加与不加催化剂的曲线。
+3. 中文：能论证浓度、接触面与温度的影响。
 
-1. 中文：能用 v = Δc/Δt 说清反应速率的含义——单位时间内反应物浓度减少或产物浓度增加的快慢，并会由 c-t 数据算平均速率。
-2. 中文：能说出有效碰撞三条件（足够能量、正确取向、有效接触），并解释浓度、温度、接触面积如何通过碰撞改变速率。
-3. 中文：能描述催化剂的作用——提供活化能更低的新路径、反应前后自身不变，并用德语标准句分析尾气反应 2CO + 2NO（Kat）→ 2CO2 + N2（AFB II）。
+【危机Hook】Direktorin Dr. Vera Haber meldet Druckabfall am Syntheseturm; KI LECHA-7 blinkt gelb. 搅拌釜里反应在打瞌睡：搅了几小时，产品没几滴。催化剂老Karl被从床上叫起，班长拧大加热，实习生把块状物越切越碎。总监在墙上画出两条曲线：一陡一平。今天决出谁掌管速度：碰撞、接触面、浓度——还有那位不消耗的隐形帮手。
 
-Klausur-Satz: `Die Reaktionsgeschwindigkeit v = Δc/Δt beschreibt die Konzentrationsaenderung pro Zeit und wird durch die Haeufigkeit wirksamer Zusammenstoesse bestimmt.`
+`Klausur-Satz: Wirksam heisst heftig und richtig herum.`
 
-## Schritt 2 — entdecken
+## Schritt 2 — entdecken: Die Tempo-Kiste der Kesselwache
 
-PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
+PRETRAINING术语盒（5大装备，中文在上、德语在下）：
 
-中文在上，德语在下：
+- 中文：有效碰撞 — 德语：Wirksamer Stoss：够猛且方向正确。 / Richtig heftig und richtig herum.
+- 中文：活化能 — 德语：Aktivierungsenergie：碰撞必须翻越的门槛。 / Hürde, die Stösse nehmen müssen.
+- 中文：催化剂 — 德语：Katalysator：降低门槛，自身不消耗。 / Senkt die Hürde, verbraucht sich nicht.
+- 中文：接触面 — 德语：Oberfläche：颗粒越碎越快。 / Kleiner gekörnt heisst schneller.
+- 中文：反应速率 — 德语：Reaktionsgeschwindigkeit：单位时间浓度变化。 / Konzentrationsabfall je Zeit.
 
-- 反应速率 — Reaktionsgeschwindigkeit v：单位时间内的浓度变化，v = Δc/Δt，单位如 mol/(L s)。
-- 有效碰撞 — Wirksamer Zusammenstoss：同时满足能量足够、取向正确、接触有效的碰撞，只有它能引发反应。
-- 活化能 — Aktivierungsenergie Ea：引发反应必须跨过的能量门槛，门槛越低、有效碰撞比例越高。
-- 催化剂 — Katalysator：提供低活化能新路径、反应前后质量与化学性质不变的物质。
-- 尾气催化 — Abgaskatalyse：铂铑表面把有毒 CO 与 NO 转化为 CO2 与 N2 的净化过程。
+`Klausur-Satz: Katalysator senkt die Hürde, nicht die Lage.`
 
-Klausur-Satz: `Ein Katalysator eroeffnet einen Reaktionsweg mit niedrigerer Aktivierungsenergie und bleibt dabei selbst unveraendert.`
+## Schritt 3 — entdecken: Vom Stoss zur Kurve: Die Tempokette
 
-## Schritt 3 — entdecken
+ENTDECKEN因果传导机制（中文拆解在上，德语链条在下）：
 
-ENTDECKEN（1概念 + 1文字图解）：
+中文：因果链：粒子多、温度高→猛烈碰撞多；接触面大→命中多；催化剂另开低门槛通道，正逆同加速，位置不动。
 
-中文：反应速率本质是"有效碰撞的计数"。粒子每秒碰撞无数次，但只有三条件同时满足才算数：能量够高能撞开旧键、取向正确能碰到反应部位、接触充分能真正相遇。增大浓度等于增加单位体积内的粒子数，升温等于提高能量达标比例，增大固体接触面积等于增加相遇机会，三者都是提高有效碰撞频率。催化剂走的是另一条路——它不增加碰撞总数，而是另开一条活化能更低的山道，让原来能量不够的大批碰撞一下达标。能量图上表现为双峰：无催化剂是一座高峰，有催化剂是两座矮峰，起点终点（反应物与产物能量）完全不动，因此平衡位置不变、只加快到达平衡的速度。
-
-文字图解（ASCII 结构图，App支持解析渲染）：
+德语：Die Kette: Mehr Teilchen und mehr Hitze heissen mehr heftige Stösse; mehr Fläche heisst mehr Treffer. Der Katalysator öffnet einen niedrigeren Pfad, die Hürde sinkt, beide Richtungen werden schneller — die Lage bleibt.
 
 ```diagram
-   Energie ^
-           |      ____  ohne Kat (hoch)
-           |     /    \
-           |    /      \            __ mit Kat (Peak 1)
-           |   /        \          /  \    __ (Peak 2)
-           |  /          \        /    \  /  \
-           +-/------------\------/------\/----\----> Reaktionsweg
-            Edukte          \    Kat-Weg  \   Produkte
-                             Ea(ohne) > Ea(mit)
-   Legende: Ea = Huerde, Kat = neuer Weg mit Doppelpeak
-   Formel: v = Δc/Δt, Beispiel: 2CO + 2NO --Kat--> 2CO2 + N2
+c hoch + T hoch + Flaeche hoch -> Stoesse hoch -> Tempo hoch
+Katalysator -> Huerde runter -> schneller, Lage gleich
 ```
 
-Klausur-Satz: `Der Katalysator senkt die Aktivierungsenergie ueber einen neuen Weg mit Doppelpeak, ohne Anfangs- und Endenergie zu veraendern.`
+`Klausur-Satz: Faktor 2 hoch Delta durch 10 trägt die RGT-Regel.`
 
 ## Anekdote & Fun-Fact
 
-**Anekdote / Fun-Fact (DE)**: Ein Autoabgaskatalysator enthaelt nur wenige Gramm Platin und Rhodium, reinigt aber ueber Jahre tausende Kubikmeter Abgas. Die Edelmetalle werden dabei nicht verbraucht, sondern reichen die Schadstoffe wie auf einem Fliessband weiter: CO und NO haften an, treffen sich in guenstiger Lage und verlassen das Blech als harmloses CO2 und N2. Darum darf bleihaltiges Benzin nie in ein Kat-Auto gelangen, weil Blei die kostbare Oberflaeche dauerhaft vergiftet.
+**Anekdote / Fun-Fact (DE)**: Karl der Katalysator ist der faulste Held des Werks: Er arbeitet am härtesten und geht doch leer aus — unverbraucht.
 
-**中文解读**: 尾气催化器只用几克贵金属、却能干几年的活，秘诀就是"只搭桥、不消耗"。铂铑表面把 CO 和 NO 吸附到合适位置，让它们低门槛相遇，全程只提供场地、不进产物。铅一来就会毒化表面、堵住活性位点，这正是含铅汽油被禁的关键原因。
+**中文解读**: 催化剂Karl是全厂最“懒”的英雄：干最重的活，却分文不取、全身而退。
 
-**Bezug zum Konzept**: `Der Katalysator stellt Haftplaetze bereit, senkt die Huerde und verlaesst die Reaktion unveraendert.`
+**Bezug zum Konzept**: Tempo und Lage sind zwei Paar Schuhe.
 
-## Schritt 4 — ausprobieren
-
-BEISPIEL（正确例题示范，含教具操作与解答）：
+## Schritt 4 — ausprobieren: Tempo-Sandkasten: Wecke den Kessel
 
 [Werkzeug: formula]
 
-AUFGABE (analysieren, AFB II)：In einem Abgasversuch sinkt die CO-Konzentration in 20 s von 0.80 mol/L auf 0.40 mol/L; die Reaktion lautet 2CO + 2NO --Kat--> 2CO2 + N2. Berechnen Sie die mittlere Reaktionsgeschwindigkeit v und beschreiben Sie, wie der Katalysator wirkt, ohne die Lage des Gleichgewichts zu veraendern.
+AUFGABE目标挑战：目标挑战：温度每升10度速率翻倍，由20°C升到500°C算倍数，并设计催化剂把门槛降20 kJ/mol，倍数精确+曲线解读。 德语原题：20 auf 500 °C nach RGT: Welcher Faktor?
 
 HILFE:
-1. Schritt 1: Δc aus Anfangs- und Endkonzentration bilden, Δt ablesen, dann v = Δc/Δt einsetzen.
-2. Schritt 2: Drei Bedingungen wirksamer Zusammenstoesse nennen und am Beispiel CO plus NO erklaeren.
-3. Schritt 3: Katalysator als neuen Weg mit niedrigerer Aktivierungsenergie deuten und betonen, dass Edukt- und Produktenergie gleich bleiben.
+1. Je 10 Grad mal 2.
+2. Differenz durch 10 als Exponent.
+3. Katalysator nur Hürde runter.
 
-MUSTERLOESUNG: Es gilt Δc = 0.80 mol/L minus 0.40 mol/L = 0.40 mol/L und Δt = 20 s, also v = 0.40/20 = 0.020 mol/(L s). Dieser Wert beschreibt die mittlere Abnahme von CO. Auf Teilchenebene muessen CO und NO mit genug Energie in richtiger Orientierung auf der Kat-Oberflaeche zusammentreffen; nur solche Stoesse sind wirksam. Der Katalysator bietet Haftplaetze und einen neuen Weg mit niedrigerer Aktivierungsenergie im Doppelpeak-Bild, sodass bei gleicher Temperatur mehr Stoesse die Huerde nehmen. Da Anfangs- und Endenergie unveraendert bleiben, aendert sich die Lage des Gleichgewichts nicht, nur die Zeit bis zum Erreichen wird kuerzer.
+MUSTERLÖSUNG：中文：倍数=2^(温差/10)；催化剂只降门槛使曲线变陡，不改位置。 / 德语：Faktor 2 hoch (Delta durch 10); der Katalysator senkt die Hürde und versteilert die Kurve ohne die Lage zu ändern.
 
-Klausur-Satz: `Mit v = Δc/Δt folgt v = 0.020 mol/(L s); der Katalysator beschleunigt ueber niedrigere Ea, ohne Edukt- und Produktenergie zu verschieben.`
+`Klausur-Satz: Mehr Stösse oder niedrigere Hürde: Das ist die Weiche.`
 
-## Schritt 5 — ausprobieren
+## Schritt 5 — ausprobieren: Duell der Kurven: Steil gegen flach
 
-VERGLEICH辨别实验（双向辨析：浓度效应眼 vs. 催化剂眼）：
+VERGLEICH: Waehle erst die Schraube — (i) mehr Stösse oder (ii) niedrigere Hürde — dann loesen.选程序：先看加碰撞还是降门槛。
 
-VERGLEICH: Waehle erst das Verfahren — 【选程序】先判断题目问的是 (i) Konzentrations-Verfahren（c-t 数据求 v = Δc/Δt、比较快慢、分析浓度温度接触面积对碰撞频率的影响）还是 (ii) Katalysator-Verfahren（问催化剂作用机理、画双峰 Ea 图、判断平衡是否移动）—— dann rechnen.
+Weg A：Weg A (Stoss-Weiche): c, T, Fläche erhöhen.
 
-AUFGABE A：Zwei Versuche mit CO/NO laufen bei gleicher Temperatur, Versuch 2 hat doppelte Anfangskonzentration. Gefragt ist, welcher Versuch schneller startet und warum.
-AUFGABE B：Versuch 3 nutzt dieselbe Mischung wie Versuch 1, aber mit Kat-Blech. Gefragt ist, wie sich Ea-Bild und Gleichgewichtslage aendern.
+Weg B：Weg B (Hürden-Weiche): Katalysator senkt die Hürde.
 
-HILFE: A nennt nur c-Unterschied ohne neuen Stoff -> Verfahren (i), Kollision. B nennt Zusatz Kat bei gleicher Mischung -> Verfahren (ii), Weg.【选程序：题干出现 c-t / Δc / 浓度加倍 / 升温 / 粉碎 选浓度程序；出现 Kat / Ea / 能量图 / 是否消耗 / 平衡动否 选催化剂程序。】
+AUFGABE A: Feineres Pulver reagiert schneller. Welche Schraube? 【选程序：先看信号词再选路】
 
-ANTWORT: A erfordert Verfahren (i): Versuch 2 startet schneller, weil mehr Teilchen pro Volumen haeufiger wirksam zusammenstossen; v = Δc/Δt ist dort groesser. B erfordert Verfahren (ii): Mit Kat erscheint im Energiebild ein Doppelpeak mit niedrigerer Ea, die Reaktion wird schneller, doch Edukt- und Produktenergie bleiben gleich, daher bleibt die Gleichgewichtslage unveraendert.
+AUFGABE B: Gleiche Füllung, plötzlich steiler mit Karl. Welche Schraube? 【选程序：先看信号词再选路】
 
-Klausur-Satz: `Mehr Konzentration erhoeht die Stosszahl, der Katalysator senkt die Huerde; nur der erste Fall aendert v ueber die Teilchenzahl, der zweite ueber Ea.`
+HILFE：A nennt Fläche — Weg A. B nennt Karl — Weg B.
 
-## Schritt 6 — check
+ANTWORT：ANTWORT: A folgt Weg A als Stoss-Faktor; B folgt Weg B als Katalysator mit gesenkter Hürde.
 
-CHECK检索默写（自测 3 题，与答案配对）：
+`Klausur-Satz: Fläche schafft Treffer.`
 
-FRAGE: Wie ist die Reaktionsgeschwindigkeit definiert und wie berechnet man sie aus c-t-Daten? | ANTWORT: v = Δc/Δt, also Konzentrationsaenderung pro Zeit; Beispiel: Δc = 0.40 mol/L in 20 s ergibt 0.020 mol/(L s).
-FRAGE: Welche drei Bedingungen machen einen Zusammenstoss wirksam? | ANTWORT: Genug Energie ueber Ea, richtige Orientierung der Treffstelle und wirksamer Kontakt; erst alle drei zusammen ermoeglichen den Umsatz.
-FRAGE: Was aendert ein Katalysator im Energiebild und was nicht? | ANTWORT: Er oeffnet einen neuen Weg mit niedrigerer Ea als Doppelpeak und bleibt selbst unveraendert; Edukt- und Produktenergie sowie die Gleichgewichtslage bleiben gleich.
+## Schritt 6 — check: Selbsttest zu Reaktionsgeschwindigkeit und Katalyse
 
-Klausur-Satz: `Wirksame Stoesse brauchen Energie, Orientierung und Kontakt; der Katalysator senkt nur die Huerde Ea.`
+FRAGE：有效碰撞要什么？（Was braucht ein wirksamer Stoss?） | ANTWORT：能量+正确方向。 / Energie plus richtige Richtung.
+FRAGE：催化剂干什么？（Was macht ein Katalysator?） | ANTWORT：降门槛、提速、不改位。 / Hürde runter, Tempo hoch, Lage gleich.
+FRAGE：磨碎有什么用？（Was bringt feineres Pulver?） | ANTWORT：接触面大、命中多。 / Mehr Fläche, mehr Treffer.
+
+`Klausur-Satz: Steil heisst schnell, flach heisst müde.`
 
 ## Fehlvorstellung
 
-(非Schritt小节，Parser 自动识别，不计入步骤步数)
+1. 误解：误解“催化剂被消耗”。
+   中文纠偏：见德语纠偏句。
+   Korrektur-Satz: `Er geht unverbraucht aus der Reaktion hervor.`
+2. 误解：误解“加热=催化剂”。
+   中文纠偏：见德语纠偏句。
+   Korrektur-Satz: `Heizen ändert bei Gleichgewicht K, Katalysator nie.`
 
-1. 误解"催化剂参加反应被消耗，所以要不断补充"。
-   中文纠偏：催化剂只提供吸附位点和新路径，反应前后质量与化学性质都不变。能量图起点终点不动就是证据——它搭完桥就撤，不进产物，因此少量贵金属能用很多年。
-   Korrektur-Satz: `Der Katalysator wird nicht verbraucht, sondern verlaesst die Reaktion unveraendert und steht fuer den naechsten Umsatz bereit.`
+## Schritt 7 — szenario: Klausurtransfer: Gutachten aus dem Rührkesselhaus
 
-2. 误解"加催化剂能让平衡向产物移动、提高产率"。
-   中文纠偏：催化剂只降低去程和回程共同的门槛，正逆反应同等加速，因此平衡位置不动、产率不变。它改变的是"多快到达"，不是"最终停在哪"。考题凡问平衡移动，一律不选催化剂。
-   Korrektur-Satz: `Der Katalysator beschleunigt Hin- und Rueckreaktion gleich und veraendert die Lage des Gleichgewichts nicht.`
+ROLLE：中文：你是化工基地夜班技术员。 / 德语：Du bist Gutachterin im Kesselhaus.
+SITUATION：一釜加热、一釜加催化剂，请论证谁快且位置为何不动（约130词）。 / 德语：Zwei Kessel: einer heiss, einer mit Karl. Beurteile in ca. 130 Woertern mit Hürde und Stössen, welcher schneller ist und warum die Lage gleich bleibt.
+RUBRIC (30 XP)：Stosslogik (10 XP) | Hürdenlogik (10 XP) | Lageabgrenzung (6 XP) | Sprache (4 XP).
 
-## Schritt 7 — szenario
-
-ROLLE: Du bist Praktikantin im Umweltlabor und erklaerst einer Besuchergruppe den Auto-Katalysator.
-SITUATION: Die Gruppe fragt, warum ein kleines Kat-Blech die giftigen Gase CO und NO dauerhaft in CO2 und N2 verwandeln kann, ohne selbst zu verschwinden. Antworte in einer zusammenhaengenden Darstellung (ca. 150 Woerter) mit der Gleichung 2CO + 2NO --Kat--> 2CO2 + N2, der Formel v = Δc/Δt und dem Ea-Doppelpeak.
-AUFGABE: Schreibe eine Klausur-Antwort mit Berechnungsskizze, Teilchendeutung und Urteil ueber Verbrauch und Gleichgewicht.
-RUBRIC (30 XP): Korrekte Deutung von v = Δc/Δt und der drei Stossbedingungen (10 XP) | Beschreibung des Kat-Weges mit niedrigerer Ea als Doppelpeak (10 XP) | Urteil: Kat bleibt unveraendert, Gleichgewichtslage bleibt gleich (10 XP).
+`Klausur-Satz: Karl geht unverbraucht nach Hause.`
 
 ## Schritt 8 — reflexion: Takeaway & Reflexion
 
-TAKEAWAY 1盒（核心总结）：
+TAKEAWAY核心总结：
 
-中文：速率题永远两步：先用 v = Δc/Δt 算快慢，再用有效碰撞三条件（能量、取向、接触）解释快慢。浓度温度接触面积改的是碰撞频率，催化剂改的是门槛高度——双峰变矮、起点终点不动。记住尾气方程 2CO + 2NO（Kat）→ 2CO2 + N2，凡问"催化剂是否消耗、平衡动否"，答案永远是"不消耗、不移动、只加速"。
-Takeaway-Satz: `Tempo folgt aus v = Δc/Δt, Deutung aus wirksamen Stoessen; der Katalysator senkt Ea im Doppelpeak und laesst Edukt, Produkt und Gleichgewicht unveraendert.`
+中文：因果链：粒子多、温度高→猛烈碰撞多；接触面大→命中多；催化剂另开低门槛通道，正逆同加速，位置不动。
+Takeaway-Satz: `Tempo fragen heisst Stösse zählen.`
+
+`Klausur-Satz: Tempo fragen heisst Stösse zählen.`
+
 
 REFLEXION 2问：
-1. 过程自省：Welcher Schritt fiel schwerer — die Rechnung mit v = Δc/Δt (Schritt 4) oder die Wahl zwischen Konzentrations- und Katalysator-Verfahren (Schritt 5)?
-2. 元认知计划：Beim naechsten Mal pruefe ich zuerst, ob nach c-t-Rechnung oder nach Ea-Weg gefragt ist, und zeichne danach das passende Bild.
+1. 过程自省：Welcher Schritt fiel schwerer — die Sandkasten-Challenge (Schritt 4) oder die Verfahrenswahl (Schritt 5)?
+2. 元认知计划：Beim nächsten Mal sichere ich zuerst die Werkzeugkiste, weil jeder Handgriff darauf aufbaut.

@@ -11,129 +11,125 @@ tags: [EF, Chemie, CN]
 version: Lesson-v3
 ---
 
-# Lernreise: Gleichgewicht vertieft mit Q-Berechnung (L2, Ziel Klausur)
+# Lernreise: Gleichgewicht vertieft mit Q-Berechnung — Episode C9: Der klebrige Kessel
 
-<!-- Lesson v3 9步制架构：Schritt 1至8固定结构；Fehlvorstellung 夹在 Schritt 6 与 7 之间（Parser 自动跳过，不占步数）；支持内嵌 [Werkzeug: <id>] 交互教具；Gating: check/szenario 未过 = Weiter 置灰；XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
+<!-- Campaign: Imperium-Alchemie | Chemie | entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
-## Schritt 1 — entdecken
+## Schritt 1 — entdecken: Der Eilzug Q gegen den Felsen K
 
-ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
+ZIELE（本节三目标）：
+1. 中文：会写质量作用定律并排除纯固体。
+2. 中文：会用Q与K判方向。
+3. 中文：会用勒夏特列分析扰动并说清K的变化。
 
-1. 中文：能用任意时刻浓度算反应商 $Q$ 并与 $K_c$ 比较判方向。
-2. 中文：能用三段式解含 $x^2$ 的平衡浓度，判断近似是否可用。
-3. 中文：能选择定量还是定性程序（选程序：算商定量 vs 原理定性）。
+【危机Hook】Viskose Brühe verstopft den Wärmetauscher; Jonas Säure vermutet Wasserstoffbrücken. 午夜帝国炼金基地压力警报大作：哈伯塔摇晃、氨收率暴跌，总监Vera Haber穿着白大褂冲过厂区。班长Jonas Säure盯着浓度、压强、温度三个旋钮不知先拧哪个，实习生Mia Puffer说出金句：系统总会削弱扰动。但小心：只有一个量能改变常数本身，其余只是推着比值来回跑。搞懂为何高压+适温能救塔、为何催化剂永远改不了位置，才能救下夜班。
 
-Voraussetzung（窄切口）：只做气相与溶液均相平衡，已会 MWG 表达式与 Le Chatelier 定性；L1 已学 $K_c$ 含义。
+`Klausur-Satz: K beschreibt die Lage, Q den Moment; gleich heisst Ruhe.`
 
-Klausur-Satz: `Q misst die aktuelle Lage, K_c die Ziellage; das System laeuft, bis Q gleich K_c ist.`
+## Schritt 2 — entdecken: Die Q-K-Rechenkiste der Bilanzauditoren
 
-## Schritt 2 — entdecken
+PRETRAINING术语盒（5大装备，中文在上、德语在下）：
 
-PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
+- 中文：动态平衡 — 德语：Dynamisches Gleichgewicht：正逆速率相等、浓度不变。 / Hin- und Rückrate gleich, Konzentrationen konstant.
+- 中文：质量作用定律 — 德语：Massenwirkungsgesetz：平衡浓度按系数幂次写成商。 / K als Quotient potenzierter Gleichgewichtskonzentrationen.
+- 中文：平衡常数 — 德语：Gleichgewichtskonstante：只随温度变，指示位置。 / Nur temperaturabhängig, zeigt die Lage.
+- 中文：反应商 — 德语：Reaktionsquotient Q：同式任意时刻代入，指方向。 / Gleiche Formel, beliebiger Zeitpunkt, Richtungsweiser.
+- 中文：勒夏特列 — 德语：Le Chatelier：系统削弱扰动。 / System weicht der Störung aus.
 
-中文在上，德语在下：
+`Klausur-Satz: Reine Feststoffe gehoeren nicht in den K-Ausdruck.`
 
-- 反应商 — Reaktionsquotient $Q$：任意时刻代入 MWG 式的值，$Q = \frac{[P]^p}{[E]^e}$。
-- 平衡常数 — Gleichgewichtskonstante $K_c$：平衡时刻的 $Q$，只随温度变。
-- 三段式 — Dreisatztabelle：Start、 Aenderung ($x$)、 Gleichgewicht 三行表。
-- 转化率 — Umsetzungsgrad：已转化量占初始量之比，$\alpha = x/c_0$。
-- 小 $x$ 近似 — Klein-x-Naeherung：$x \ll c_0$ 时 $c_0 - x \approx c_0$，需回代检验。
+## Schritt 3 — entdecken: Vom Messwert zur Richtung: Die Q-Kette
 
-Klausur-Satz: `Q kleiner K_c heisst Nachschub nach rechts, Q groesser K_c heisst Abbau nach links.`
+ENTDECKEN因果传导机制（中文拆解在上，德语链条在下）：
 
-## Schritt 3 — entdecken
+中文：因果链：K定位置，Q定此刻。Q<K缺产物→右补；Q>K产物过剩→左退；相等则静。浓度压强只改Q，系统跑到Q=K为止；只有温度改K：放热反应升温左移且K变小；催化剂只加速。
 
-ENTDECKEN（1概念 + 1文字图解）：
-
-中文：$Q$ 与 $K_c$ 用同一公式、不同时刻：$Q$ 问"现在在哪"，$K_c$ 说"该去哪"。$Q < K_c$ 说明产物不够、向右补；$Q > K_c$ 说明产物过多、向左退；相等即平衡。三段式是算 $Q$/$K_c$ 的脚手架：变化行按系数配 $x$（如 $2HI$ 对 $+2x$），平衡行代入 $K_c$ 解方程。若 $K_c$ 极小且 $c_0$ 大，可试 $c_0 - x \approx c_0$，解完必须验 $x/c_0 < 5\%$，否则回精确式。
-
-文字图解（ASCII 结构图，App支持解析渲染）：
+德语：Die Kette: K beschreibt die Lage, Q den Moment. Q kleiner als K heisst zu wenig Produkt — rechts nachfüllen; Q grösser als K heisst zu viel — links abbauen; gleich heisst Ruhe. Konzentration und Druck ändern nur Q, das System läuft, bis Q wieder gleich K ist. Nur Temperatur ändert K selbst: Heizen bei exotherm schiebt links und senkt K. Katalysator macht nur schneller.
 
 ```diagram
-  Q = [aktuelle c] in MWG-Formel;  Kc = [Gleichgew.-c] in MWG-Formel
-  Q < Kc ──> rechts (Produkt nachbilden)
-  Q = Kc ──> Gleichgewicht (Ruhe)
-  Q > Kc ──> links (Produkt abbauen)
-  Tabelle: Start | -/+x nach Koeff. | Gleichgew. ──> in Kc einsetzen
+Q < K -> rechts | Q = K -> Ruhe | Q > K -> links
+c/p aendern nur Q | T aendert K
+Exotherm + Heizen -> links, K sinkt
 ```
 
-Klausur-Satz: `Die Tabelle liefert Q oder die Gleichgewichtskonzentrationen, der Vergleich mit K_c die Richtung.`
+`Klausur-Satz: Q kleiner als K heisst rechts, groesser heisst links.`
 
 ## Anekdote & Fun-Fact
 
-**Anekdote / Fun-Fact (DE)**: Guldberg und Waage formulierten 1864 das Massenwirkungsgesetz aus der Idee, dass Hin- und Rueckrate sich aufheben. Ihre Formel mit $Q$ gegen $K_c$ ist bis heute das Navi jeder Gleichgewichtsrechnung.
+**Anekdote / Fun-Fact (DE)**: Haber und Bosch stritten mit der Temperatur: Heiss läuft schnell, kühl liegt gut — der Turm lebt vom Kompromiss aus Druck und Katalysator.
 
-**中文解读**: 质量作用定律生于 1864 年挪威，正逆速率相等的瞬间即平衡。记住 $Q$ 追 $K_c$ 的导航比喻，方向题永不错。
+**中文解读**: 哈伯与博施跟温度吵了一架：热跑得快、冷站得好——工厂靠压力与催化剂妥协求生。
 
-**Bezug zum Konzept**: `Q ist Standort, K_c ist Ziel — die Tabelle ist die Route.`
+**Bezug zum Konzept**: Der Turm zeigt: Lage und Tempo sind zwei Gegner.
 
-## Schritt 4 — ausprobieren
+## Schritt 4 — ausprobieren: Bilanz-Sandkasten: Jage Q zurück zu K
 
-BEISPIEL（正确例题示范，含教具操作与解答）：
+[Werkzeug: le-chatelier-sim]
 
-[Werkzeug: balance]
-
-AUFGABE (berechnen, AFB II/III)：Fuer $H_2 + I_2 \rightleftharpoons 2HI$ mit $K_c = 64$ liegen momentan $c(H_2) = 0{,}30$, $c(I_2) = 0{,}10$, $c(HI) = 1{,}00\,\mathrm{mol/L}$ vor. Berechnen Sie $Q$ und sagen Sie die Richtung voraus.
+AUFGABE目标挑战：目标挑战：K=64，H2、I2初浓度0,50 mol/L，用三段式算HI平衡浓度与转化率，转化率超70%，并验算Q=K。 德语原题：N2 + 3 H2 <-> 2 NH3, exotherm. Druck hoch, Temperatur hoch: Wohin läuft es?
 
 HILFE:
-1. Schritt 1: MWG-Ausdruck $Q = [HI]^2/([H_2][I_2])$ hinschreiben.
-2. Schritt 2: Aktuelle Werte einsetzen.
-3. Schritt 3: Mit $K_c$ vergleichen und Richtung mit Satz begruenden.
+1. Teilchen zählen: 4 gegen 2.
+2. Exotherm plus Heizen heisst links.
+3. Katalysator nur schneller.
 
-MUSTERLÖSUNG: Es gilt $Q = 1{,}00^2/(0{,}30 \cdot 0{,}10) = 1{,}00/0{,}030 \approx 33$. Da $Q \approx 33 < K_c = 64$ ist, liegen zu wenige Produkte vor; die Hinreaktion wird bevorzugt, das System laeuft nach rechts, bis $Q$ wieder gleich $K_c$ ist. In Klausursprache: Das Gleichgewicht verschiebt sich zugunsten von $HI$.
+MUSTERLÖSUNG：中文：加压推向气体少的右侧，升温推向吸热的左侧；工厂要高压、适温加催化剂。 / 德语：Mehr Druck schiebt rechts zu weniger Teilchen, Heizen schiebt links zur endothermen Seite; netto braucht der Turm Hochdruck, mässige Temperatur und Katalysator.
 
-Klausur-Satz: `Mit Q = 33 kleiner K_c = 64 verschiebt sich das Gleichgewicht nach rechts.`
+`Klausur-Satz: Hochdruck und Mass-Temperatur retten den Turm.`
 
-## Schritt 5 — ausprobieren
+## Schritt 5 — ausprobieren: Duell der Tabellen: Start gegen Gleichgewicht
 
-VERGLEICH辨别实验（双向辨析：算商定量 vs 原理定性）：
+VERGLEICH: Waehle erst das Auge — (i) MWG-Rechenauge oder (ii) Stoerungsauge — dann loesen.选程序：先看要数值还是判方向。
 
-VERGLEICH: Waehle erst das Verfahren — 【选程序】先看题给什么：(i) 算商定量（给了浓度或 $K_c$ 数值：算 $Q$、列三段式、解 $x$）oder (ii) 原理定性（只给扰动如 Druck/Temperatur：用 Le Chatelier 讲方向）—— dann loesen.
+Weg A：Weg A (Rechen-Weiche): Konzentrationen gegeben, K oder Q rechnen.
 
-AUFGABE A：Gegeben $K_c$ und drei Konzentrationen. Wohin laeuft das System?
-AUFGABE B：Das Volumen wird halbiert. Wohin verschiebt sich $N_2 + 3H_2 \rightleftharpoons 2NH_3$?
+Weg B：Weg B (Stoerungs-Weiche): Nur Stoerung genannt, Richtung mit Le Chatelier deuten.
 
-HILFE: A 有数值 → Verfahren (i)。B 只说体积减半 → Verfahren (ii)。【选程序：见数值算商；见扰动讲理。】
+AUFGABE A: c-Werte gegeben, K berechnen. Welches Auge? 【选程序：先看信号词再选路】
 
-ANTWORT: A erfordert Verfahren (i): $Q$ ausrechnen und mit $K_c$ vergleichen — Zahl entscheidet. B erfordert Verfahren (ii): Halbiertes Volumen verdoppelt alle Konzentrationen; $Q$ wuerde mit vierter Potenz im Nenner kleiner, also $Q < K_c$, oder direkt nach Le Chatelier: Druckerhoehung bevorzugt die Seite mit weniger Gasteilchen (rechts, 2 gegen 4) — Richtung ohne eine Zahl. Wer in B $Q$ ausrechnet, erfindet Daten; wer in A nur Le Chatelier zitiert, liefert keine Zahl.
+AUFGABE B: Nur Erhitzen genannt, Richtung gesucht. Welches Auge? 【选程序：先看信号词再选路】
 
-Klausur-Satz: `Zahlen verlangen Q, Stoerungen verlangen Le Chatelier.`
+HILFE：A nennt Zahlen — Weg A. B nennt Stoerung — Weg B.
 
-## Schritt 6 — check
+ANTWORT：ANTWORT: A folgt Weg A mit MWG-Ausdruck und Dreisatztabelle; B folgt Weg B mit Le-Chatelier-Begruendung.
 
-CHECK检索默写（自测 3 题，与答案配对）：
+`Klausur-Satz: Zahlen verlangen MWG, Stoerungen verlangen Le Chatelier.`
 
-FRAGE: Wie unterscheiden sich $Q$ und $K_c$? | ANTWORT: Gleiche Formel, $Q$ mit aktuellen, $K_c$ mit Gleichgewichtskonzentrationen; $K_c$ aendert nur mit $T$.
-FRAGE: Wie lautet die Richtungsregel? | ANTWORT: $Q < K_c$ nach rechts, $Q > K_c$ nach links, $Q = K_c$ im Gleichgewicht.
-FRAGE: Wann gilt die Klein-x-Naeherung? | ANTWORT: Wenn $x \ll c_0$ (Faustregel $x/c_0 < 5\%$), geprueft durch Rueckeinsetzen.
+## Schritt 6 — check: Selbsttest zu Gleichgewicht vertieft mit Q-Berechnung
 
-Klausur-Satz: `Q gegen K_c entscheidet jede Richtung, die Tabelle liefert jede Zahl.`
+FRAGE：什么不写入K？（Was gehört nicht in K?） | ANTWORT：纯固体与纯液体。 / Reine Feststoffe und Fluessigkeiten.
+FRAGE：Q<K意味着？（Was heisst Q kleiner als K?） | ANTWORT：缺产物，右行。 / Zu wenig Produkt: rechts laufen.
+FRAGE：什么改变K本身？（Was aendert K selbst?） | ANTWORT：只有温度。 / Nur die Temperatur.
+
+`Klausur-Satz: Ohne Q bleibt Richtung geraten, mit Q wird sie gerechnet.`
 
 ## Fehlvorstellung
 
-(非Schritt小节，Parser 自动识别，不计入步骤步数)
+1. 误解：误解“催化剂右移平衡”。
+   中文纠偏：见德语纠偏句。
+   Korrektur-Satz: `Er beschleunigt beide Richtungen gleich und aendert weder Lage noch K.`
+2. 误解：误解“平衡移动=K变了”。
+   中文纠偏：见德语纠偏句。
+   Korrektur-Satz: `Nur Temperatur aendert K; sonst läuft Q zurueck zu K.`
 
-1. 误解"$Q$ 与 $K_c$ 各有各的公式"。
-   中文纠偏：同一 MWG 式，只是代入时刻不同；写两个公式必错其一。
-   Korrektur-Satz: `Q und K_c teilen denselben Ausdruck, nur die Zeitpunkte differieren.`
+## Schritt 7 — szenario: Klausurtransfer: Auditoren-Einsatz im Messlabor
 
-2. 误解"近似解完不用检验"。
-   中文纠偏：小 $x$ 近似是赊账，必须回代验 $5\%$；超了就老实解二次方程。
-   Korrektur-Satz: `Jede Naeherung wird durch Rueckeinsetzen geprueft.`
+ROLLE：中文：你是化工基地夜班技术员。 / 德语：Du bist Verfahrenstechniker am Haber-Turm.
+SITUATION：领导想大升温大降压，请用勒夏特列反驳并给出正确条件（约150词）。 / 德语：Die Leitung will stark heizen und Druck senken. Beurteile in ca. 150 Woertern mit Le Chatelier, welche Bedingungen wirklich helfen.
+RUBRIC (30 XP)：Temperaturlogik (8 XP) | Drucklogik (8 XP) | Gegenentwurf (8 XP) | Abwaegung (6 XP).
 
-## Schritt 7 — szenario
-
-ROLLE: Du bist Tutor und kontrollierst eine Gleichgewichtsrechnung.
-SITUATION: Ein Kursmitglied verwechselt $Q$ mit $K_c$ und vergisst die Probe der Naeherung. Erklaere in zusammenhaengender Darstellung (ca. 150 Woerter) an einem Zahlenbeispiel, wie man $Q$ berechnet, die Richtung bestimmt und die Naeherung prueft.
-RUBRIC (30 XP): $Q$-Rechnung mit MWG-Ausdruck (10 XP) | Richtungsbegruendung ueber $K_c$ (8 XP) | Naeherungspruefung mit $5\%$-Regel (8 XP) | Fachsprachliche Korrektheit (4 XP).
+`Klausur-Satz: Heizen bei exotherm schiebt links und senkt K.`
 
 ## Schritt 8 — reflexion: Takeaway & Reflexion
 
-TAKEAWAY 1盒（核心总结）：
+TAKEAWAY核心总结：
 
-中文：有数就算 $Q$ 比 $K_c$，无扰动才空讲原理。三段式按系数配 $x$，近似必回代。记住一句话——商小补右，商大退左，相等即稳。
-Takeaway-Satz: `Q sucht K_c; die Tabelle weist den Weg, die Probe sichert die Zahl.`
+中文：因果链：K定位置，Q定此刻。Q<K缺产物→右补；Q>K产物过剩→左退；相等则静。浓度压强只改Q，系统跑到Q=K为止；只有温度改K：放热反应升温左移且K变小；催化剂只加速。
+Takeaway-Satz: `Lage halten heisst Q zu K zurueckfuehren.`
+
+`Klausur-Satz: Lage halten heisst Q zu K zurueckfuehren.`
+
 
 REFLEXION 2问：
-1. 过程自省：Welcher Schritt fiel schwerer — die Q-Rechnung (Schritt 4) oder die Verfahrenswahl (Schritt 5)?
-2. 元认知计划：Beim naechsten Mal schreibe ich zuerst den MWG-Ausdruck hin, dann erst Zahlen.
+1. 过程自省：Welcher Schritt fiel schwerer — die Sandkasten-Challenge (Schritt 4) oder die Verfahrenswahl (Schritt 5)?
+2. 元认知计划：Beim nächsten Mal sichere ich zuerst die Werkzeugkiste, weil jeder Handgriff darauf aufbaut.

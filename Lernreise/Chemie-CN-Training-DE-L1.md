@@ -11,158 +11,117 @@ tags: [EF, Chemie, CN]
 version: Lesson-v3
 ---
 
-# Lernreise: CN-Training mit Zeitlimit und EHZ (L1, Ziel Klausur)
+# Lernreise: CN-Training: Zeitlimit und EHZ-Selbstbewertung — Episode C3: Milchiges Geheimnis im Becken
 
-<!-- Lesson v3 9-Schritt-Architektur: Schritt 1 bis 8 feste Struktur; Fehlvorstellung zwischen Schritt 6 und 7 (Parser ueberspringt, zaehlt nicht); interaktive [Werkzeug: <id>]; Gating: check/szenario nicht bestanden = Weiter deaktiviert; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
+<!-- Campaign: Imperium-Alchemie | Chemie | entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
-## Schritt 1 — entdecken: Ziele & Phänomen-Einstieg
-ZIELE (drei messbare Ziele dieser Lektion):
+## Schritt 1 — entdecken: Der Countdown am Titriertisch
 
-1. Du kannst unter Zeitlimit vier Grundaufgaben in der festen Kette loesen: Ausgleichen, Koeffizientenverhaeltnis, Rechnung mit Einheit, Groessenordnungspruefung.
-2. Du kannst mit dem Erwartungshorizont (EHZ) die eigene Antwort schrittweise bepunktet und den punktlosen Schritt benennen.
-3. Du kannst jede Aufgabe mit einem deutschen Transfer-Satz auf AFB-II-Niveau schliessen.
+ZIELE:
+1. Ich kann sechs Formelkarten nennen.
+2. Ich kann jede Karte einer Frage zuordnen.
+3. Ich kann Karten in sechzig Sekunden abrufen.
 
-### Hook / Phaenomen
+Im Klärbecken fällt ein milchiger Niederschlag aus; Vera Haber ruft die Löslichkeitswache. Um Mitternacht flackern alle sechs Formel-Karten der Alchemie: MWG, Q, pH, Titration, Redox, Mol-Brücke. Mia Puffer sortiert das Handbuch neu, Jonas Säure klebt Merksätze an jede Karte, und Vera Haber prüft morgen jede einzelne. Heute wird gelegt, was sitzt: Wer die sechs Karten in sechzig Sekunden abrufen kann, besteht jede Klausur.
 
-火星气候轨道器不是被技术击垮而是被单位击垮的：一组用米制、一组用英制，一个单位漏写整个任务报废。考场同理：答案对了、方程式没配平、单位没跟全、检验句没写，精度再高也扣成半分卷。中国学生训练常追求答案正确率，德国期望视界追求步骤完整率。本节用二十分钟四题创造考场压力，把完整性练成条件反射。
+`Klausur-Satz: Sechs Karten tragen jede Klausur.`
 
-Im Jahr 1999 ging der Mars Climate Orbiter verloren — kein technischer Defekt, sondern ein Einheitenfehler: ein Team metrisch, das andere amerikanisch.
+## Schritt 2 — entdecken: Die EHZ-Stoppuhr der Zeitsprinter
 
-机制铺垫双语：机制是固定链，配平、摩尔比、带单位计算、检验、德语迁移句，每环对应期望视界分数。Die Kausalkette lautet: Kette einhalten, Punkte sichern, Luecke loggen; jeder Schritt traegt eigene Punkte.
-### Fachbegriff & Definition
+AUSRUESTUNG (5 Begriffe der Werkzeugkiste):
 
-Der **Erwartungshorizont (EHZ)** ist die **Punkteliste pro Loesungsschritt**: Gleichungsgeruest, Koeffizienten, Einheiten und Groessenordnungspruefung tragen je eigene Punkte. Die **feste Kette** lautet: Gleichung ausgleichen, Koeffizientenverhaeltnis als Molverhaeltnis ablesen, mit $n = m/M$ und Einheit rechnen, Groessenordnung pruefen und einen deutschen **Transfer-Satz** schreiben. Zeitlimit-Training prueft nicht das richtige Ergebnis, sondern die vollstaendige Darstellung unter Druck — $20$ Minuten, vier Aufgaben, danach Selbstkontrolle Schritt fuer Schritt.
+- MWG-Karte: K aus potenzierten c.
+- Q-Karte: Gleiche Formel, jetzt gemessen.
+- pH-Karte: Minus log der H-Konzentration.
+- Mol-Karte: n = m durch M.
+- Redox-Karte: Steigen geben, Sinken nehmen.
 
-### Wirkungsgefuege / Modell
+`Klausur-Satz: Wieviel zieht Mengen, Wohin zieht Lage.`
 
-Die Kausalkette lautet: **Kette einhalten, Punkte sichern, Luecke loggen**. Wer die Kette einhaelt — etwa $2Al + 6HCl \to 2AlCl_3 + 3H_2$ mit Zaehlkontrolle, $n = 0{,}10\,\mathrm{mol}$ und $V = 2{,}24\,\mathrm{L}$ mit $2$-L-Flaschenmass, $pH = 2{,}70$ aus $[H_3O^+] = c_0$ — sammelt Teilpunkte auch bei Rechenfehlern. Wer sie bricht, verliert ganze Bloecke. Nach dem Training wird der punktlose Schritt zum **Fehlerlog-Eintrag**: Beobachtung und Deutung trennen, erst Phaenomen beschreiben, dann mit der Regel erklaeren.
+## Schritt 3 — entdecken: Vom Zeitdruck zur Punktemaschine
 
-Klausur-Satz: `Gleichung, Verhältnis, Einheit und Prüfung – jeder Schritt trägt Punkte.`
+WIRKUNGSGEFUEGE (Ursache zu Wirkung):
 
-## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
-PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
-
-### Hook / Phaenomen
-
-Vier Aufgaben, $20$ Minuten, $18$ Punkte — doch die Punkte liegen nicht im Ergebnis, sondern in den Schritten. Welcher Schritt traegt wie viele Punkte, und woran erkennt man den eigenen punktlosen Schritt? Fuenf Begriffe machen das Training auswertbar.
-
-### Fachbegriffe & Definitionen
-
-- **Ausgleichen: (配平)** Nur Koeffizienten aendern, keine Indizes; danach die Atome beidseitig nachzaehlen — etwa $2Al + 6HCl \to 2AlCl_3 + 3H_2$ mit Kontrolle $Al$ $2$:$2$, $H$ $6$:$6$, $Cl$ $6$:$6$.
-- **Erwartungshorizont (EHZ): (评分标准)** Die Punkteliste pro Loesungsschritt; jeder Schritt traegt eigene Punkte — Geruest, Koeffizienten, Einheiten, Pruefung, Satz.
-- **Stoffmenge $n$: (物质的量)** Der Knoten zwischen Masse, Teilchenzahl und Konzentration — etwa $n = 4{,}4/44 = 0{,}10\,\mathrm{mol}$ und $V = 2{,}24\,\mathrm{L}$ mit Flaschenmass.
-- **Trennung von Beobachtung und Deutung: (观察与解释分离)** Erst das Phaenomen beschreiben, dann mit der Regel erklaeren — kein weil-Satz in der Beschreibung.
-- **Transfer-Satz: (迁移句)** Der Schlusssatz auf Deutsch, der das Ergebnis klausurtauglich formuliert — etwa da Salzsäure vollständig dissoziiert, gilt $[H_3O^+] = c_0$.
-
-### Wirkungsgefuege / Modell
-
-Die Begriffe bilden den Trainingskreislauf: **Aufgabe loesen, EHZ anlegen, Luecke benennen**. Die vier Uebungsaufgaben decken Ausgleichen, Molrechnung, Redox ($Na: 0 \to +I$, $Cl: 0 \to -I$) und $pH$ ab; jede traegt EHZ-Punkte und einen Pruefsatz. Nach $20$ Minuten folgt die Selbstkontrolle Schritt fuer Schritt; der punktlose Schritt wird zum Fehlerlog-Eintrag. Beobachtung und Deutung bleiben getrennt: Zuerst wird das Phaenomen beschrieben, dann mit der Regel erklaert.
-
-Klausur-Satz: `Beobachtung und Deutung werden getrennt: Zuerst wird das Phänomen beschrieben, dann mit der Regel erklärt.`
-
-## Schritt 3 — entdecken: Kernkonzept & Wirkungsmodell
-TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
-
-### Hook / Phaenomen
-
-$4{,}4\,\mathrm{g}$ $CO_2$ — wie viel Liter sind das, und woher weiss man ohne Rechner, ob $2{,}24\,\mathrm{L}$ plausibel sind? Die $2$-L-Flasche als Mass, die Einheit als Zeuge, der Transfer-Satz als Siegel. Vier Aufgaben trainieren genau diesen Dreiklang unter Zeitdruck.
-
-### Fachbegriff & Definition
-
-Die **feste Kette unter Zeitlimit** lautet: Gleichung aufstellen und ausgleichen, Koeffizientenverhaeltnis ablesen, $n = m/M$ mit Einheiten rechnen, Zielgroesse berechnen, Groessenordnung pruefen und deutschen Satz schreiben. Jede Station traegt EHZ-Punkte: Geruest $1$, Koeffizienten $2$, Zaehlkontrolle $1$; $n$-Formel mit Einheit $2$, $V$-Rechnung $1$, Groessenordnung $1$, Satz $1$. Redox traegt Oxidationszahlen $2$, Stoffbenennung $2$, Elektronenbilanz $1$. Wer die Kette kennt, verteilt die Zeit nach Punkten — etwa eine Minute je Punkt.
-
-### Wirkungsgefuege / Modell
-
-Denke in Kausalkette: **Budget, Kette, Kontrolle**. Erstens Zeit nach Punkten verteilen. Zweitens jede Aufgabe durch die fuenf Stationen schieben. Drittens Selbst-Check: Fehlt eine Einheit? Fehlt die Pruefung? Fehlt der Satz? Der punktlose Schritt wandert ins Fehlerlog — beim naechsten Mal zuerst die Einheit, dann das Ergebnis.
+Die Kette: Frage lesen, Karte ziehen, einsetzen. Wieviel zieht Mol und MWG, Wohin zieht Q und Le Chatelier, Sieden zieht Haft, Strom zieht Redox.
 
 ```diagram
-  ZEITLIMIT 20 min  --->  FESTE KETTE (jeder Schritt = Punkte)
-  ----------------------------------------------------------
-  1. Gleichung aufstellen / ausgleichen    [EHZ 1-2 P]
-  2. Koeffizientenverhaeltnis ablesen      [EHZ 1 P]
-  3. n = m/M  (Einheiten mitfuehren!)      [EHZ 2 P]
-  4. Zielgroesse (V, pH, ...) berechnen    [EHZ 1-2 P]
-  5. Groessenordnungspruefung + DE-Satz    [EHZ 1 P]
-  ----------------------------------------------------------
-  Selbst-Check:  fehlt eine Einheit? fehlt die Pruefung?
-  Beispiele: Al-Gleichung 2/6/2/3 | V(CO2) = 2,24 L | pH = 2,70
+Wieviel -> Mol/MWG | Wohin -> Q/LeChatelier
+Sieden -> Haft | Strom -> Redox
 ```
 
-Klausur-Satz: `Der Erwartungshorizont zeigt die Punkte pro Schritt, sodass jede Teilrechnung einzeln überprüft werden kann.`
+`Klausur-Satz: Q kleiner K heisst rechts.`
 
 ## Anekdote & Fun-Fact
 
-**Anekdote / Fun-Fact (DE)**: Im Jahr 1999 ging die NASA-Raumsonde Mars Climate Orbiter verloren. Die Ursache war kein technischer Defekt, sondern ein Einheitenfehler: Ein Team rechnete in metrischen Einheiten, ein anderes in amerikanischen Einheiten. Weil die Einheiten nicht durch alle Rechenschritte mitgeführt wurden, stimmte am Ende das Ergebnis nicht – ein einziger fehlender Schritt kostete die ganze Mission.
+**Anekdote / Fun-Fact (DE)**: Sechs Karten, sechzig Sekunden: Das Handbuch passt in eine Hosentasche und trägt durch jede Klausur.
 
-**Bezug zum Konzept**: Ein einziger fehlender Einheitenschritt kann das gesamte Ergebnis unbrauchbar machen; deshalb trägt in der Klausur jeder Schritt Punkte.
+**Bezug zum Konzept**: Karten tragen Klausuren.
 
-## Schritt 4 — ausprobieren: Interaktive Praxis & Labor
+## Schritt 4 — ausprobieren: Zeit-Sandkasten: Drei Stationen, sechs Minuten
 
-BEISPIEL (Musteraufgabe mit Loesungsweg):
+[Werkzeug: oral-timer]
 
-[Werkzeug: formula]
-
-Stelle in der Sandbox (formula) Masse und Koeffizienten ein, ziehe den Slider Stoffmenge und lies n und V ab; AUFGABE (berechnen & auswerten, AFB II): 6,0 g Kohlenstoff (C, M = 12 g/mol) werden vollständig verbrannt: C + O2 -> CO2. Berechnen Sie die Stoffmenge und das Volumen des entstehenden Kohlenstoffdioxids im Standardzustand (V_m = 22,4 L/mol) und bewerten Sie die Größenordnung. Schreiben Sie am Ende einen deutschen Transfer-Satz.
+AUFGABE (Target Challenge): Target Challenge: 90-Sekunden-Pitch zu Q-gegen-K plus 3 Mini-Aufgaben in 6 Minuten. Ziel: Volle EHZ-Punktzahl mit Zeitstempel. AUFGABE konkret: Q kleiner K: Welche Karte und welche Richtung?
 
 HILFE:
-1. Schritt 1: Prüfe, ob die Gleichung ausgeglichen ist (C + O2 -> CO2: C 1:1, O 2:2).
-2. Schritt 2: Berechne n(C) = m/M.
-3. Schritt 3: Nutze das Koeffizientenverhältnis (1:1) für n(CO2) und berechne V = n * V_m.
-4. Schritt 4: Prüfe die Größenordnung und formuliere den Transfer-Satz.
+1. Karte ziehen.
+2. Richtung nennen.
+3. Mini-Rechnung dazu.
 
-MUSTERLOESUNG: Die Gleichung C + O2 -> CO2 ist bereits ausgeglichen (C 1:1, O 2:2). Es gilt n(C) = m/M = 6,0 g / 12 g/mol = 0,50 mol. Da die Koeffizienten von C und CO2 beide 1 sind, folgt n(CO2) = 0,50 mol. Das Volumen im Standardzustand ist V(CO2) = n * V_m = 0,50 mol * 22,4 L/mol = 11,2 L. Die Größenordnung ist plausibel: Aus einer kleinen Portion Kohlenstoff entsteht ein Gasvolumen von etwa 11 L, was einem größeren Ballon entspricht. EHZ-Kontrolle: n-Formel mit Einheit (2 P), Koeffizientenverhältnis (1 P), V-Berechnung (1 P), Größenordnung (1 P). Transfer-Satz: Mit n = m/M und dem Stoffmengenverhältnis folgt das Volumen des Kohlenstoffdioxids; die Größenordnung entspricht etwa einem 11-L-Ballon.
+MUSTERLÖSUNG: Q-Karte ziehen, rechts laufen bis Q gleich K — plus Mini-Rechnung als Beleg.
 
-Klausur-Satz: `Mit n = m/M und dem Koeffizientenverhältnis folgt die Stoffmenge des Produkts, und über das molare Volumen ergibt sich das Gasvolumen im Standardzustand.`
+`Klausur-Satz: n gleich m durch M.`
 
-## Schritt 5 — ausprobieren: Verfahrensvergleich & Abgrenzung
+## Schritt 5 — ausprobieren: Duell der Taktiken: Tempo gegen Tiefe
 
-VERGLEICH (zwei Verfahren unterscheiden):
+VERGLEICH: Waehle erst den Stapel — (i) Mengen oder (ii) Lage — dann loesen.
 
-VERGLEICH: Wähle erst das Verfahren — (i) Mol-Verfahren (Masse $m$ in Gramm gegeben, $n$ oder $V$ gesucht) oder (ii) $pH$-Verfahren (Saeurekonzentration $c_0$ gegeben, $pH$ gesucht) — dann loesen.
+Weg A (Mengen-Stapel): Mol, MWG, pH direkt.
 
-AUFGABE A: 2,2 g Kohlenstoffdioxid (CO2, M = 44 g/mol) liegen vor. Berechnen Sie die Stoffmenge und das Volumen im Standardzustand (V_m = 22,4 L/mol).
+Weg B (Lage-Stapel): Q, Le Chatelier, Haft, Redox.
 
-AUFGABE B: Eine Salzsäurelösung hat c0 = 0,002 mol/L. Berechnen Sie den pH-Wert.
+AUFGABE A: Gramm aus Gleichung. Welcher Stapel?
 
-HILFE: A gibt eine Masse und verlangt n bzw. V, also Verfahren (i). B gibt eine Säurekonzentration und verlangt einen pH-Wert, also Verfahren (ii). Faustregel: Gramm und Masse verlangen das Mol-Verfahren ab $n = m/M$; Saeurekonzentration $c_0$ verlangt das $pH$-Verfahren ueber Staerkepruefung und Logarithmus.
+AUFGABE B: Richtung nach Druckstoss. Welcher Stapel?
 
-ANTWORT: A erfordert Verfahren (i): n(CO2) = m/M = 2,2 g / 44 g/mol = 0,050 mol. Damit ist V(CO2) = 0,050 mol * 22,4 L/mol = 1,12 L; die Größenordnung von etwa 1 L ist plausibel. B erfordert Verfahren (ii): Salzsäure ist eine starke Säure und dissoziiert vollständig, daher gilt [H3O+] = c0 = 2,0 * 10^-3 mol/L. Es folgt pH = -lg(2,0 * 10^-3) = -(0,30 - 3) = 2,70. Die beiden Verfahren greifen auf verschiedene Formelkarten zu: A nutzt n = m/M und das molare Volumen, B nutzt die logarithmische pH-Definition.
+HILFE: A fragt Gramm — Weg A. B fragt Richtung — Weg B.
 
-Klausur-Satz: `Das Mol-Verfahren führt über die Stoffmenge zur Gasmenge, während das pH-Verfahren direkt über den Logarithmus der Oxoniumionenkonzentration arbeitet.`
+ANTWORT: A folgt Weg A mit Mol-Brücke; B folgt Weg B mit Q-gegen-K.
+
+`Klausur-Satz: Jede Frage zieht genau eine Karte.`
 
 ## Schritt 6 — check: Selbsttest zu CN-Training: Zeitlimit und EHZ-Selbstbewertung
-CHECK (Selbsttest, 3 Fragen mit Antworten):
 
-FRAGE: Was gibt der Erwartungshorizont (EHZ) an? | ANTWORT: Er listet die Punkte pro Lösungsschritt auf, sodass jede Teilrechnung einzeln bewertet werden kann.
-FRAGE: Warum muss vor jeder Stoffmengenrechnung die Gleichung ausgeglichen sein? | ANTWORT: Weil das Koeffizientenverhältnis das Stoffmengenverhältnis bestimmt; ohne Ausgleichen ist das Verhältnis falsch.
-FRAGE: Warum darf man Beobachtung und Deutung nicht in einem Satz vermischen? | ANTWORT: Weil die Klausur eine klare Trennung verlangt: zuerst das Phänomen beschreiben, dann mit der Regel erklären.
+FRAGE: Nenne drei Karten. | ANTWORT: MWG, Q, pH.
+FRAGE: Wohin gehört Q? | ANTWORT: Zum Lage-Stapel.
+FRAGE: Wohin gehört Mol? | ANTWORT: Zum Mengen-Stapel.
 
-Klausur-Satz: `Gleichung, Verhältnis, Einheit und Prüfung – jeder Schritt trägt Punkte.`
+`Klausur-Satz: Abruf schlägt Besitz.`
 
 ## Fehlvorstellung
 
-(kein Schritt; wird vom Parser automatisch erkannt und nicht mitgezaehlt)
+1. Fehlvorstellung: Karten sammeln reiche.
+   Korrektur-Satz: `Nur Abruf unter Zeit zählt.`
+2. Fehlvorstellung: Eine Karte passe überall.
+   Korrektur-Satz: `Jede Frage zieht genau eine Karte.`
 
-1. Fehlannahme: Molaufgaben liessen sich ohne Ausgleichen direkt ueber Massenverhaeltnisse loesen.
-   Korrektur: Massenverhaeltnisse entsprechen nur ueber Koeffizienten und molare Massen den Stoffmengenverhaeltnissen. Erst ausgleichen, dann ueber das Molverhaeltnis in Masse oder Volumen zurueckrechnen; Ausgleichen zu ueberspringen ist der haeufigste Punktverlust.
-   Korrektur-Satz: `Massenverhältnisse sind nur über die Koeffizienten und die molaren Massen in Stoffmengenverhältnisse umzurechnen.`
+## Schritt 7 — szenario: Klausurtransfer: Marathon-Protokoll mit Punkteplan
 
-2. Fehlannahme: Beobachtung und Deutung in einem Satz zu verbinden spare Zeit.
-   Korrektur: Die Klausur verlangt die Trennung: erst Beobachtung (was ist zu sehen), dann Deutung (Erklaerung mit der Regel). Vermischung kostet Strukturpunkte, besonders bei Versuchs- und Redoxaufgaben.
-   Korrektur-Satz: `Beobachtung und Deutung müssen getrennt dargestellt werden: zuerst das Phänomen, dann die Erklärung mit der Regel.`
+ROLLE: Du bist Handbuch-Prüferin.
+SITUATION: Sechs Fragen liegen bereit. Ordne in ca. 120 Woertern jede Frage einer Karte zu und rechne zwei Beispiele.
+RUBRIC (30 XP): Zuordnung (12 XP) | Rechnungen (12 XP) | Sprache (6 XP).
 
-## Schritt 7 — szenario: Klausurtransfer: CN-Training: Zeitlimit und EHZ-Selbstbewertung
-ROLLE: Du simulierst unter Zeitdruck eine EF-Klausur und bewertest dich anschließend selbst mit dem EHZ.
-SITUATION: In 20 Minuten sind vier Aufgaben zu lösen: (1) Al + HCl -> AlCl3 + H2 ausgleichen; (2) aus 4,4 g CO2 (M = 44 g/mol) n und V im Standardzustand berechnen; (3) in 2 Na + Cl2 -> 2 NaCl Oxidations- und Reduktionsmittel bestimmen; (4) den pH-Wert einer Salzsäure mit c0 = 0,002 mol/L berechnen. Schreibe eine zusammenhängende Auswertung (ca. 150 Wörter), die deine Ergebnisse, die EHZ-Punkte pro Aufgabe und einen deutschen Transfer-Satz enthält.
-RUBRIC (30 XP): Aufgabe 1 korrekt ausgeglichen 2 Al + 6 HCl -> 2 AlCl3 + 3 H2 (6 XP) | Aufgabe 2 n = 0,10 mol und V = 2,24 L mit Einheit (8 XP) | Aufgabe 3 Na als Reduktionsmittel, Cl als Oxidationsmittel mit Oxidationszahlen (8 XP) | Aufgabe 4 pH = 2,70 mit Begründung der vollständigen Dissoziation (8 XP).
+`Klausur-Satz: Sechzig Sekunden entscheiden.`
 
-## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
+## Schritt 8 — reflexion: Takeaway & Reflexion
 
-TAKEAWAY (Kernzusammenfassung):
+TAKEAWAY:
 
-Zeitlimit-Training heisst schreiben nach Punkten. Alle vier Grundaufgaben folgen einer Kette: Gleichung ausgleichen, Koeffizientenverhaeltnis ablesen, mit Einheit rechnen, Groessenordnung pruefen, deutschen Transfer-Satz schliessen. Danach sofort mit dem EHZ kontrollieren: Fehlende Einheit, fehlende Pruefung oder fehlende Begruendung kosten je einen Punkt; der punktlose Schritt wird zum Fehlerlog-Eintrag. Zwei Regeln bleiben: Massen erst ueber das Koeffizientenverhaeltnis in Mol umrechnen; Beobachtung und Deutung stets trennen.
-Takeaway-Satz: `Gleichung, Verhältnis, Einheit und Prüfung – jeder Schritt trägt Punkte, und der EHZ macht sie sichtbar.`
+Takeaway-Satz: `Handbuch im Kopf statt Zettel.`
 
-REFLEXION (2 Fragen):
-1. Selbstbeobachtung: Welcher Schritt fiel schwerer — die Stoffmengenrechnung unter Zeitdruck (Schritt 4) oder die Wahl zwischen Mol- und pH-Verfahren (Schritt 5)?
-2. Planung: Beim nächsten Mal notiere ich vor dem Rechnen die EHZ-Punkte und schreibe nach jedem Ergebnis sofort Einheit und Größenordnungsprüfung dazu.
+`Klausur-Satz: Handbuch im Kopf statt Zettel.`
+
+
+REFLEXION:
+1. Welcher Schritt fiel schwerer — die Sandkasten-Challenge (Schritt 4) oder die Verfahrenswahl (Schritt 5)?
+2. Beim naechsten Mal sichere ich zuerst die Werkzeugkiste, weil jeder Handgriff darauf aufbaut.

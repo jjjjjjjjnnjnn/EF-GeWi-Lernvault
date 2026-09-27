@@ -11,120 +11,125 @@ tags: [EF, Chemie, Redox]
 version: Lesson-v3
 ---
 
-# Lernreise: Redoxreaktionen und Oxidationszahlen (L1, Ziel Klausur)
+# Lernreise: Redoxreaktionen und Oxidationszahlen — Episode C17: Kühler Kreuzschmerz des Turms
 
-<!-- Lesson v3: Schritt 1-8 feste Struktur; Fehlvorstellung zwischen Schritt 6 und 7 (Parser skip); [Werkzeug: <id>] interaktiv; Gating: check/szenario nicht bestanden = Weiter grau; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
+<!-- Campaign: Imperium-Alchemie | Chemie | entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
-## Schritt 1 — entdecken
+## Schritt 1 — entdecken: Rostalarm an Tor 9
 
-ZIELE (3 Ziele, nach 15 Minuten erreichbar):
+ZIELE（本节三目标）：
+1. 中文：会标氧化数。
+2. 中文：会判定氧化与还原。
+3. 中文：会配平氧化还原方程。
 
-1. Du kannst Oxidationszahlen mit den Regeln $O = -II$ und $H = +I$ bestimmen.
-2. Du kannst Oxidation als $e^-$-Abgabe und Reduktion als $e^-$-Aufnahme definieren und Oxidationsmittel und Reduktionsmittel benennen.
-3. Du kannst eine Redoxgleichung wie $Zn + Cu^{2+} \to Zn^{2+} + Cu$ in Teilgleichungen aufstellen und ausgleichen (AFB II).
+【危机Hook】Der Turm überhitzt bei 520 Grad; LECHA-7 schlägt Temperatursenkung vor. 9号门锈迹蔓延，总监下令红Dox警戒。班长数电子如数硬币，实习生喊出口诀：失电子被氧化、得电子被还原！可氧化数上下乱跳，方程必须“给出=拿走”才配得平。今天开一家电子会计事务所。
 
-EINSTIEG: Im Jahr 1839 verrostete die erste Eisenbahnbruecke ueber den Rhein so schnell, dass man sie nach wenigen Jahren sperren musste. Rost mit $4Fe + 3O_2 \to 2Fe_2O_3$ ist Redox im Alltag. Wer Elektronen wandern sieht, versteht Korrosion und Batterie zugleich.
+`Klausur-Satz: Steigt die Zahl, gibt das Atom: Oxidation.`
 
-Klausur-Satz: `Redox heisst Elektronenuebergang: Oxidation gibt ab, Reduktion nimmt auf.`
+## Schritt 2 — entdecken: Die Elektronen-Kasse der Buchhalter
 
-## Schritt 2 — entdecken
+PRETRAINING术语盒（5大装备，中文在上、德语在下）：
 
-GRUNDBEGRIFFE (5 Begriffe):
+- 中文：氧化数 — 德语：Oxidationszahl：每原子的记账账户。 / Buchhalter-Konto jedes Atoms.
+- 中文：氧化 — 德语：Oxidation：失电子。 / Elektronen abgeben.
+- 中文：还原 — 德语：Reduktion：得电子。 / Elektronen aufnehmen.
+- 中文：氧化剂 — 德语：Oxidationsmittel：拿走电子，自己被还原。 / Nimmt auf, wird selbst reduziert.
+- 中文：还原剂 — 德语：Reduktionsmittel：给出电子，自己被氧化。 / Gibt ab, wird selbst oxidiert.
 
-- **Oxidationszahl**: Fiktive Ladung, z. B. $O = -II$, $H = +I$, Alkalimetall $= +I$, Summe gleich Ionenladung.
-- **Oxidation**: $Red \to Ox + e^-$, Abgabe von Elektronen, Oxidationszahl steigt.
-- **Reduktion**: $Ox + e^- \to Red$, Aufnahme von Elektronen, Oxidationszahl sinkt.
-- **Oxidationsmittel**: Stoff wie $O_2$ oder $Cu^{2+}$, der oxidiert und selbst reduziert wird.
-- **Reduktionsmittel**: Stoff wie $Zn$ oder $H_2$, der reduziert und selbst oxidiert wird.
+`Klausur-Satz: Sinkt die Zahl, nimmt das Atom: Reduktion.`
 
-Klausur-Satz: `Steigt die Zahl, war es Oxidation; faellt sie, war es Reduktion.`
+## Schritt 3 — entdecken: Geben und Nehmen: Die Elektronenkette
 
-## Schritt 3 — entdecken
+ENTDECKEN因果传导机制（中文拆解在上，德语链条在下）：
 
-KONZEPT (ein Konzept plus ein Textdiagramm):
+中文：因果链：氧化数升=给出=氧化；降=拿走=还原。试剂以后果命名：让别人氧化的自己拿电子。配平即先让电子相等，再平原子与电荷。
 
-Oxidationszahlen bilanzieren Elektronen ohne sie zu zaehlen. Beispiel Zink in Kupferloesung: $Zn$ geht von $0$ nach $+II$, gibt also $2e^-$ ab; $Cu^{2+}$ geht von $+II$ nach $0$, nimmt $2e^-$ auf. Die Bilanz $Zn + Cu^{2+} \to Zn^{2+} + Cu$ ist ausgeglichen, weil Abgabe gleich Aufnahme ist. Das Schema gilt auch fuer $2Mg + O_2 \to 2MgO$ mit $Mg: 0 \to +II$ und $O: 0 \to -II$.
+德语：Die Kette: Zahl steigt heisst gegeben — Oxidation; Zahl sinkt heisst genommen — Reduktion. Mittel benennen sich nach dem Opfer: Wer oxidiert, nimmt. Bilanzieren heisst Elektronen gleichsetzen, dann Atome und Ladungen.
 
 ```diagram
-    Zn(0) ---- 2 e- ----> Zn(+II)   Oxidation
-              |
-              v  Elektronenfluss
-              |
-    Cu(+II) -- 2 e- ----> Cu(0)     Reduktion
-    Bilanz: Zn + Cu2+ -> Zn2+ + Cu
-    Regel: Summe der OZ links = Summe rechts
+Zahl hoch = geben = Oxidation | Zahl runter = nehmen = Reduktion
+Geben = Nehmen -> Bilanz
+Mittel heissen nach Opfer
 ```
 
-Klausur-Satz: `Abgabe und Aufnahme muessen sich exakt ausgleichen.`
+`Klausur-Satz: Mittel heissen nach dem Opfer, nicht nach sich.`
 
-## Schritt 4 — ausprobieren
+## Anekdote & Fun-Fact
 
-BEISPIEL (Musteraufgabe mit Werkzeug):
+**Anekdote / Fun-Fact (DE)**: Rost ist langsames Feuer ohne Flamme: Eisen gibt, Sauerstoff nimmt — die stillste Verbrennung des Werks.
+
+**中文解读**: 锈是没火的慢燃烧：铁给出、氧拿走——全厂最安静的燃烧。
+
+**Bezug zum Konzept**: Geben und Nehmen halten die Kasse im Gleichgewicht.
+
+## Schritt 4 — ausprobieren: Bilanz-Sandkasten: Fange die Elektronen
 
 [Werkzeug: formula]
 
-AUFGABE (erklaeren, AFB II): Bestimmen Sie die Oxidationszahlen in $2Mg + O_2 \to 2MgO$ und formulieren Sie Oxidations- und Reduktionsteilgleichung.
+AUFGABE目标挑战：目标挑战：标出CuO + 2 H+ -> Cu2+ + H2O中所有氧化数，用电子得失配平，指明给受双方与试剂，账分毫不差。 德语原题：In CuO + 2 H+ -> Cu2+ + H2O: Wer gibt, wer nimmt?
 
 HILFE:
-1. Schritt 1: Setze Element $Mg = 0$ und $O_2 = 0$, Produkt $Mg = +II$ und $O = -II$.
-2. Schritt 2: Schreibe $Mg \to Mg^{2+} + 2e^-$ und $O + 2e^- \to O^{2-}$.
-3. Schritt 3: Multipliziere so, dass $e^-$-Zahl links und rechts gleich ist, dann addiere.
+1. O vor H-Regeln anwenden.
+2. Steigen oder Sinken markieren.
+3. Elektronen gleichsetzen.
 
-MUSTERLOESUNG: Es gilt $Mg: 0 \to +II$ (Oxidation, $Mg \to Mg^{2+} + 2e^-$) und $O: 0 \to -II$ (Reduktion, $\frac{1}{2}O_2 + 2e^- \to O^{2-}$). Erweitert auf $O_2$ folgt $2Mg + O_2 \to 2MgO$. Magnesium ist Reduktionsmittel, Sauerstoff ist Oxidationsmittel.
+MUSTERLÖSUNG：中文：升者失电子被氧化，降者得电子被还原；试剂反向命名。 / 德语：Steigende Zahl gibt Elektronen ab und wird oxidiert, sinkende nimmt auf und wird reduziert; Mittel heissen umgekehrt dazu.
 
-Klausur-Satz: `Erst Zahlen bestimmen, dann Elektronen bilanzieren.`
+`Klausur-Satz: Geben gleich Nehmen: Das ist die Bilanz.`
 
-## Schritt 5 — ausprobieren
+## Schritt 5 — ausprobieren: Duell der Rollen: Geber gegen Nehmer
 
-VERGLEICH (Verfahren A gegen Verfahren B):
+VERGLEICH: Waehle erst die Rolle — (i) Geber oder (ii) Nehmer — dann loesen.选程序：先定电子角色。
 
-VERGLEICH: Waehle zuerst das Verfahren — (i) OZ-Verfahren (Zahlen vergleichen, $e^-$-Bilanz bauen) oder (ii) Sauerstoff-Verfahren (nur $O$-Aufnahme oder $O$-Abgabe betrachten) — dann loesen.
+Weg A：Weg A (Geber-Weiche): Zahl steigt, Oxidation, Reduktionsmittel.
 
-AUFGABE A: Entscheiden Sie, ob $Zn + Cu^{2+} \to Zn^{2+} + Cu$ eine Redoxreaktion ist.
-AUFGABE B: Entscheiden Sie, ob $HCl + NaOH \to NaCl + H_2O$ eine Redoxreaktion ist.
+Weg B：Weg B (Nehmer-Weiche): Zahl sinkt, Reduktion, Oxidationsmittel.
 
-HILFE: A aendert $+II$ und $0$, also Verfahren (i). B behaelt $H = +I$, $O = -II$, $Na = +I$, $Cl = -I$, also pruefe Verfahren (ii) als Saeure-Base.
+AUFGABE A: Eisen geht von 0 auf +2. Welche Rolle? 【选程序：先看信号词再选路】
 
-ANTWORT: A erfordert Verfahren (i): $Zn: 0 \to +II$ und $Cu: +II \to 0$, also Redox. B erfordert Verfahren (ii): Keine OZ aendert sich, es gilt nur $H^+ + OH^- \to H_2O$, also Saeure-Base ohne Redox.
+AUFGABE B: Sauerstoff geht von 0 auf -2. Welche Rolle? 【选程序：先看信号词再选路】
 
-Klausur-Satz: `Ohne OZ-Aenderung keine Redoxreaktion.`
+HILFE：A steigt — Weg A. B sinkt — Weg B.
 
-## Schritt 6 — check
+ANTWORT：ANTWORT: A folgt Weg A als Oxidation durch ein Reduktionsmittel; B folgt Weg B als Reduktion durch ein Oxidationsmittel.
 
-CHECK (Selbsttest, 3 Fragen):
+`Klausur-Satz: Geber oder Nehmer entscheidet die Rolle.`
 
-FRAGE: Was ist Oxidation, was Reduktion? | ANTWORT: Oxidation: $Red \to Ox + e^-$; Reduktion: $Ox + e^- \to Red$.
-FRAGE: Wie lautet die OZ von Sauerstoff und Wasserstoff in der Regel? | ANTWORT: $O = -II$ und $H = +I$, Ausnahmen wie Peroxide getrennt pruefen.
-FRAGE: Wer ist Oxidationsmittel in Zn + Cu2+ -> Zn2+ + Cu? | ANTWORT: $Cu^{2+}$, es oxidiert $Zn$ und wird selbst zu $Cu$ reduziert.
+## Schritt 6 — check: Selbsttest zu Redoxreaktionen und Oxidationszahlen
 
-Klausur-Satz: `Das Mittel bewirkt das Gegenteil seiner selbst.`
+FRAGE：氧化是什么？（Was heisst Oxidation?） | ANTWORT：失电子、数上升。 / Elektronen abgeben, Zahl steigt.
+FRAGE：氧化剂是什么？（Was ist ein Oxidationsmittel?） | ANTWORT：拿电子、自己被还原。 / Nimmt auf, wird selbst reduziert.
+FRAGE：配平先平什么？（Was zuerst beim Bilanzausgleich?） | ANTWORT：先让电子相等。 / Elektronen gleichsetzen.
+
+`Klausur-Satz: Elektronen zuerst, Atome danach.`
 
 ## Fehlvorstellung
 
-(kein Schritt, Parser skippt diesen Abschnitt)
+1. 误解：误解“氧化必须有氧”。
+   中文纠偏：见德语纠偏句。
+   Korrektur-Satz: `Nur Elektronen zählen; Sauerstoff ist nur ein Nehmer unter vielen.`
+2. 误解：误解“试剂按自己命名”。
+   中文纠偏：见德语纠偏句。
+   Korrektur-Satz: `Sie heissen nach dem Opfer: Oxidationsmittel oxidiert anderes.`
 
-1. Fehlvorstellung: Oxidation bedeute immer Reaktion mit Sauerstoff.
-   Korrektur: Sauerstoff ist nur ein Beispiel; entscheidend ist $e^-$-Abgabe, auch ohne $O_2$ wie bei $Zn + Cu^{2+}$.
-   Korrektur-Satz: `Oxidation ist Elektronenabgabe, nicht Sauerstoffpflicht.`
-2. Fehlvorstellung: Oxidationszahlen seien echte Ladungen der Atome.
-   Korrektur: Sie sind Bilanzhilfen; in $H_2$ gilt $0$, in $H_2O$ gilt $+I$, obwohl kein Ion vorliegt.
-   Korrektur-Satz: `Oxidationszahlen bilanzieren Elektronen, sie messen keine echten Ionen.`
+## Schritt 7 — szenario: Klausurtransfer: Protokoll der Redox-Wache
 
-## Schritt 7 — szenario
+ROLLE：中文：你是化工基地夜班技术员。 / 德语：Du bist Wache an Tor 9.
+SITUATION：钢架生锈，请用氧化数说清给受双方并命名试剂（约130词）。 / 德语：Rost frisst Stahl. Erklaere in ca. 130 Woertern mit Zahlen, wer gibt und nimmt, und benenne beide Mittel.
+RUBRIC (30 XP)：Zahlen (10 XP) | Rollen (10 XP) | Mittel (6 XP) | Sprache (4 XP).
 
-ROLLE: Du bist Tutor im Chemiekurs.
-SITUATION: Ein Mitschueler schreibt $Fe + O_2 \to Fe_2O_3$ ohne Koeffizienten und nennt Eisen das Oxidationsmittel.
-AUFGABE (begruenden, AFB III): Korrigieren Sie Gleichung und Begriffe in einer zusammenhaengenden Darstellung (ca. 150 Woerter) mit OZ-Bestimmung und Teilgleichungen.
-RUBRIC (30 XP): OZ $Fe: 0 \to +III$ und $O: 0 \to -II$ (10 XP) | Bilanz $4Fe + 3O_2 \to 2Fe_2O_3$ (10 XP) | Korrekte Mittelzuordnung (5 XP) | Geschlossene Darstellung (5 XP).
+`Klausur-Satz: Rost zeigt: Eisen gibt, Sauerstoff nimmt.`
 
 ## Schritt 8 — reflexion: Takeaway & Reflexion
 
-TAKEAWAY: Merke Zahl, Richtung, Bilanz: OZ bestimmen, $e^-$-Richtung deuten, Teilgleichungen angleichen. Anker: $Red \to Ox + e^-$ und $Ox + e^- \to Red$.
+TAKEAWAY核心总结：
 
-REFLEXION:
-1. Was fiel schwerer — die OZ-Regeln (Schritt 4) oder die Abgrenzung zu Saeure-Base (Schritt 5)?
-2. Plane: Beim naechsten Mal schreibe ich zuerst alle OZ ueber die Formel, dann erst die Pfeile.
+中文：因果链：氧化数升=给出=氧化；降=拿走=还原。试剂以后果命名：让别人氧化的自己拿电子。配平即先让电子相等，再平原子与电荷。
+Takeaway-Satz: `Buchhaltung mit Elektronen schlägt Raten.`
 
-Anekdote (DE): Als Alessandro Volta 1800 die erste Batterie aus $Zn$ und $Cu$ schichtete, floss Strom aus $Zn \to Zn^{2+} + 2e^-$ und $Cu^{2+} + 2e^- \to Cu$. Napoleon war so begeistert, dass er Volta nach Paris einlud — aus stapelnden Metallplaettchen wurde die moderne Elektrochemie.
+`Klausur-Satz: Buchhaltung mit Elektronen schlägt Raten.`
 
-Bezug: `Volta zeigt: Getrennte Redoxhaelften liefern nutzbaren Strom.`
+
+REFLEXION 2问：
+1. 过程自省：Welcher Schritt fiel schwerer — die Sandkasten-Challenge (Schritt 4) oder die Verfahrenswahl (Schritt 5)?
+2. 元认知计划：Beim nächsten Mal sichere ich zuerst die Werkzeugkiste, weil jeder Handgriff darauf aufbaut.

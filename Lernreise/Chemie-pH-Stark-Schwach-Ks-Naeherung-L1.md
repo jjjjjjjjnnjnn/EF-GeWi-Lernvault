@@ -11,121 +11,125 @@ tags: [EF, Chemie, Saeuren]
 version: Lesson-v3
 ---
 
-# Lernreise: pH starker und schwacher Saeuren mit Ks-Naeherung (L1, Ziel Klausur)
+# Lernreise: pH starker und schwacher Saeuren mit Ks-Naeherung — Episode C29: Milchiges Geheimnis im Becken
 
-<!-- Lesson v3 architecture: Schritte 1-8 fixed; Fehlvorstellung between Schritt 6 and 7 (parser skipped); embedded [Werkzeug: <id>]; gating: check/szenario failed = Weiter greyed; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
+<!-- Campaign: Imperium-Alchemie | Chemie | entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
-## Schritt 1 — entdecken
+## Schritt 1 — entdecken: Säureregen über dem Werkstor
 
-ZIELE (3 Ziele, nach 15 Minuten erreichbar):
+ZIELE（本节三目标）：
+1. 中文：能用质子定义酸碱。
+2. 中文：会由浓度算pH。
+3. 中文：会配平中和反应。
 
-1. Den pH starker Saeuren direkt aus $pH = -\log c_0$ berechnen.
-2. Fuer schwache Saeuren die Naeherung $[H_3O^+] = \sqrt{K_s \cdot c_0}$ herleiten und anwenden.
-3. Anhand von $K_s$ entscheiden, welche Formel zulaessig ist (AFB II).
+【危机Hook】Im Klärbecken fällt ein milchiger Niederschlag aus; Vera Haber ruft die Löslichkeitswache. 5号管边一滩液体在嘶嘶冒泡：酸泄漏了，实习生推来中和车。班长喊出口诀：酸给质子、碱收质子。可哪种酸下口狠、哪种只是轻轻咬？pH又在说什么？总监要的是数字不是感觉。今天用水、摩尔与冷静扑灭嘶鸣。
 
-VORAUSSETZUNG: Logarithmus, MWG-Ausdruck und Protolysegleichungen.
+`Klausur-Satz: Säure gibt, Base nimmt: Das ist das Paar.`
 
-VORGAENGER-VERWEIS: Diese Lektion setzt `Chemie-Saeure-Base-pH-L1.md` voraus und wiederholt sie nicht. Dort wurden pH-Definition, starke Saeuren und das Ablesen aus Skalen eingefuehrt. Hier folgt der enge Ausschnitt: nur die Unterscheidung stark/schwach mit $K_s$-Naeherung; Puffer und Titration gehoeren nicht hierher.
+## Schritt 2 — entdecken: Die Ks-Näherungs-Kiste der Rechenfüchse
 
-Klausur-Satz: `Starke Saeuren protolysieren vollstaendig, schwache nur teilweise gemaess ihrer Saeurekonstante K_s.`
+PRETRAINING术语盒（5大装备，中文在上、德语在下）：
 
-## Schritt 2 — entdecken
+- 中文：酸 — 德语：Säure：给出质子。 / Gibt Protonen ab.
+- 中文：碱 — 德语：Base：接受质子。 / Nimmt Protonen auf.
+- 中文：pH值 — 德语：pH-Wert：氢浓度取负对数。 / Minus Logarithmus der H-Konzentration.
+- 中文：中和 — 德语：Neutralisation：氢氧结合成水。 / H plus plus OH minus gibt Wasser.
+- 中文：共轭酸碱对 — 德语：Konjugiertes Paar：给与收成双成对。 / Geben und Nehmen im Doppelpack.
 
-PRETRAINING (Kernbegriffe):
+`Klausur-Satz: Stark heisst direkt, schwach heisst Gleichgewicht.`
 
-- Starke Saeure: Protolysiert praktisch vollstaendig, also $[H_3O^+] = c_0$.
-- Schwache Saeure: Gleichgewicht $HA + H_2O \rightleftharpoons H_3O^+ + A^-$ mit $K_s = [H_3O^+][A^-]/[HA]$.
-- Naeherung: Bei $K_s \ll c_0$ gilt $[H_3O^+] = \sqrt{K_s \cdot c_0}$.
-- $pK_s$-Wert: $pK_s = -\log K_s$; je kleiner, desto staerker die Saeure.
-- Ostwald-Formel: $pH = 0{,}5 \cdot (pK_s - \log c_0)$ als logarithmische Form der Naeherung.
+## Schritt 3 — entdecken: Stark direkt, schwach mit Bremse: Die pH-Kette
 
-Klausur-Satz: `Die Naeherung gilt nur fuer schwache Saeuren mit kleinem K_s relativ zur Ausgangskonzentration.`
+ENTDECKEN因果传导机制（中文拆解在上，德语链条在下）：
 
-## Schritt 3 — entdecken
+中文：因果链：强酸完全裂解，pH直取浓度；弱酸另有平衡，Ks说了算。碱收质子生成水，pH爬升；稀释十倍pH升1。
 
-ENTDECKEN (ein Konzept plus Diagramm):
-
-Bei starken Saeuren ist die Rechnung trivial, bei schwachen entscheidet das Gleichgewicht. Mit $[H_3O^+] = [A^-] = x$ und $[HA] = c_0 - x$ folgt $K_s = x^2/(c_0 - x)$. Die Naeherung $x \ll c_0$ kuerzt den Nenner zu $c_0$, also $x = \sqrt{K_s \cdot c_0}$. Sie ist nur tragfaehig, wenn $x$ unter etwa $5$ Prozent von $c_0$ bleibt; sonst muss die quadratische Gleichung geloest werden.
+德语：Die Kette: Stark heisst vollständig zerfallen — pH direkt aus c; schwach heisst Gleichgewicht — Ks bremst. Base fängt Protonen, Wasser entsteht, pH klettert. Verdünnen um Faktor 10 hebt pH um 1.
 
 ```diagram
-stark:   HA -> H3O+ + A-        [H3O+] = c_0        pH = -log c_0
-schwach: HA <-> H3O+ + A-       K_s = x^2/(c_0-x)   x = sqrt(K_s*c_0)
-Test:    x/c_0 < 0,05? Naeherung ok : quadratisch loesen
-pH-Skala: sauer <- 7 -> basisch, je Einheit Faktor 10
+Stark: c -> pH direkt | Schwach: Ks bremst
+H+ + OH- -> H2O
+Verdünnen x10 -> pH +1
 ```
 
-Klausur-Satz: `Die Wurzelformel folgt aus dem MWG unter der Annahme geringer Protolyse.`
+`Klausur-Satz: Gleiche Mol löschen den Fleck.`
 
 ## Anekdote & Fun-Fact
 
-**Anekdote / Fun-Fact (DE)**: Reiner Zitronensaft und Magensalzsaeure schmecken beide sauer, doch ihre $pH$-Werte entstehen voellig anders: Die eine Saeure gibt fast jedes Proton ab, die andere nur einen Bruchteil. Der Geschmack taeuscht ueber die Chemie hinweg.
+**Anekdote / Fun-Fact (DE)**: Eine Zitrone und eine Batterie streiten, wer saurer ist — der pH-Schiedsrichter pfeift logarithmisch.
 
-**Bezug zum Konzept**: `Gleicher pH kann aus hoher Konzentration einer schwachen oder niedriger Konzentration einer starken Saeure stammen.`
+**中文解读**: 柠檬和电池争谁更酸——pH裁判按对数吹哨。
 
-## Schritt 4 — ausprobieren
+**Bezug zum Konzept**: Protonen geben und nehmen schreibt den pH.
 
-BEISPIEL (vollstaendige Musterloesung):
+## Schritt 4 — ausprobieren: Näherungs-Sandkasten: Rechne schwach wie stark
 
-[Werkzeug: formula]
+[Werkzeug: titration-lab]
 
-AUFGABE (berechnen, AFB II): Berechnen Sie den pH von Essigsaeure mit $c_0 = 0{,}10 \, \mathrm{mol/L}$ und $K_s = 1{,}8 \cdot 10^{-5}$. Pruefen Sie die Naeherung.
+AUFGABE目标挑战：目标挑战：强酸HCl浓度0,50；弱酸HA浓度0,50、Ks=6,3 mal 10 hoch minus 5，分别算pH并展示“刹车效应”，两条路精确、口诀到位。 德语原题：50,0 mL HCl mit c = 0,50 mol/L: Wieviel NaOH gleicher c bis neutral?
 
 HILFE:
-1. Schritt 1: $x = \sqrt{K_s \cdot c_0}$ berechnen.
-2. Schritt 2: $pH = -\log x$ bilden.
-3. Schritt 3: $x/c_0$ pruefen.
+1. Mol Säure rechnen.
+2. Gleiche Mol Base nötig.
+3. pH Start aus minus log c.
 
-MUSTERLOESUNG: Es gilt $x = \sqrt{1{,}8 \cdot 10^{-5} \cdot 0{,}10} = \sqrt{1{,}8 \cdot 10^{-6}} = 1{,}34 \cdot 10^{-3} \, \mathrm{mol/L}$. Damit folgt $pH = -\log(1{,}34 \cdot 10^{-3}) = 2{,}87$. Die Pruefung ergibt $x/c_0 = 0{,}0134$, also $1{,}3$ Prozent; die Naeherung ist zulaessig. Zum Vergleich: Eine starke Saeure derselben Konzentration haette $pH = 1{,}00$.
+MUSTERLÖSUNG：中文：等浓度则等体积：50,0 mL；起点pH由负对数得，终点7。 / 德语：Gleiche Konzentration heisst gleiches Volumen: 50,0 mL; Start-pH aus minus log 0,50, Ziel pH 7.
 
-Klausur-Satz: `Mit zulaessiger Naeherung folgt pH = 2,87 statt pH = 1,00 bei starker Saeure gleicher Konzentration.`
+`Klausur-Satz: Verdünnen mal zehn hebt pH um eins.`
 
-## Schritt 5 — ausprobieren
+## Schritt 5 — ausprobieren: Duell der Näherungen: Direkt gegen Ks
 
-VERGLEICH (erst Verfahren waehlen, dann loesen):
+VERGLEICH: Waehle erst die Stärke — (i) stark oder (ii) schwach — dann loesen.选程序：先判强弱。
 
-VERGLEICH: Waehle erst das Verfahren — (i) Stark-Verfahren ($[H_3O^+] = c_0$) oder (ii) Schwach-Verfahren ($x = \sqrt{K_s \cdot c_0}$ mit Gueltigkeitstest) — dann loesen.
+Weg A：Weg A (Stark-Weiche): Vollständig, pH direkt aus c.
 
-AUFGABE A: Salzsaeure $c_0 = 0{,}010 \, \mathrm{mol/L}$, vollstaendige Protolyse. Welches Verfahren passt?
+Weg B：Weg B (Schwach-Weiche): Gleichgewicht, Ks-Näherung nötig.
 
-AUFGABE B: Fluorwasserstoff $c_0 = 0{,}010 \, \mathrm{mol/L}$, $K_s = 6{,}6 \cdot 10^{-4}$. Welches Verfahren passt?
+AUFGABE A: HCl 0,1 mol/L, pH gesucht. Welcher Weg? 【选程序：先看信号词再选路】
 
-HILFE: A nennt vollstaendige Protolyse, also Verfahren (i). B nennt $K_s$, also Verfahren (ii) mit Test.
+AUFGABE B: Essigsäure 0,1 mol/L, pH gesucht. Welcher Weg? 【选程序：先看信号词再选路】
 
-ANTWORT: A erfordert Verfahren (i): $pH = -\log 0{,}010 = 2{,}00$. B erfordert Verfahren (ii): $x = \sqrt{6{,}6 \cdot 10^{-4} \cdot 0{,}010} = 2{,}57 \cdot 10^{-3}$, $pH = 2{,}59$; Test $x/c_0 = 0{,}26$ ueberschreitet $0{,}05$, daher ist die Naeherung hier grenzwertig und die quadratische Loesung sicherer.
+HILFE：A stark — Weg A. B schwach — Weg B.
 
-Klausur-Satz: `Ohne K_s traegt das Stark-Verfahren, mit kleinem K_s das Schwach-Verfahren inklusive Gueltigkeitstest.`
+ANTWORT：ANTWORT: A folgt Weg A mit pH aus minus log c; B folgt Weg B mit Ks-Näherung und Gleichgewicht.
 
-## Schritt 6 — check
+`Klausur-Satz: Stark oder schwach entscheidet den Weg.`
 
-CHECK (drei Fragen mit Antworten):
+## Schritt 6 — check: Selbsttest zu pH starker und schwacher Saeuren mit Ks-Naeherung
 
-FRAGE: Wie berechnet man den pH einer starken Saeure? | ANTWORT: Mit $[H_3O^+] = c_0$ und $pH = -\log c_0$.
-FRAGE: Wie lautet die Naeherung fuer schwache Saeuren? | ANTWORT: $[H_3O^+] = \sqrt{K_s \cdot c_0}$ beziehungsweise $pH = 0{,}5 \cdot (pK_s - \log c_0)$.
-FRAGE: Wann ist die Naeherung unzulaessig? | ANTWORT: Wenn $x/c_0$ groesser als etwa $0{,}05$ ist; dann muss $K_s = x^2/(c_0 - x)$ exakt geloest werden.
+FRAGE：酸是什么？（Was ist eine Säure?） | ANTWORT：给质子。 / Gibt Protonen ab.
+FRAGE：pH3意味着？（Was heisst pH 3?） | ANTWORT：氢浓度10⁻³。 / c(H) = 10 hoch minus 3.
+FRAGE：中和生成什么？（Was entsteht bei Neutralisation?） | ANTWORT：水加盐。 / Wasser plus Salz.
 
-Klausur-Satz: `Jede Wurzelrechnung ohne Gueltigkeitstest ist klausurtechnisch unvollstaendig.`
+`Klausur-Satz: Erst Mol, dann pH.`
 
 ## Fehlvorstellung
 
-1. Fehlvorstellung: Der pH haenge nur von $c_0$ ab, $K_s$ sei Dekoration.
-   Korrektur-Satz: `Bei schwachen Saeuren bestimmt K_s den Protolysengrad und damit den pH bei gleicher Ausgangskonzentration.`
+1. 误解：误解“pH3是pH4的三倍酸”。
+   中文纠偏：见德语纠偏句。
+   Korrektur-Satz: `Logarithmisch: zehnmal so sauer je Stufe.`
+2. 误解：误解“中性不用算就是7”。
+   中文纠偏：见德语纠偏句。
+   Korrektur-Satz: `Erst Mol bilanzieren, dann pH deuten.`
 
-2. Fehlvorstellung: Die Wurzelformel gelte fuer jede Saeure mit bekanntem $K_s$.
-   Korrektur-Satz: `Die Wurzelformel gilt nur bei geringer Protolyse; sonst ist die quadratische Gleichung zu loesen.`
+## Schritt 7 — szenario: Klausurtransfer: Rechenprotokoll der pH-Wache
 
-## Schritt 7 — szenario
+ROLLE：中文：你是化工基地夜班技术员。 / 德语：Du bist Putzkolonne an Rohr 5.
+SITUATION：酸泄漏，请算出中和体积与pH全程并论证（约130词）。 / 德语：Säure läuft aus. Berechne in ca. 130 Woertern Volumen und pH-Weg von Start bis neutral und begruende jeden Schritt.
+RUBRIC (30 XP)：Volumen (10 XP) | Start-pH (8 XP) | Ziel-pH (8 XP) | Sprache (4 XP).
 
-ROLLE: Du bist Laborassistentin und pruefst zwei Flaschen.
-SITUATION: Flasche A enthaelt $0{,}10 \, \mathrm{mol/L}$ Salzsaeure, Flasche B $0{,}10 \, \mathrm{mol/L}$ Essigsaeure. Erklaere in circa 150 Woertern mit beiden Verfahren, welche pH-Werte zu erwarten sind und warum ein pH-Streifen allein die Saeuren nicht sicher unterscheidet.
-RUBRIC (30 XP): Stark-Verfahren korrekt (8 XP) | Schwach-Verfahren mit Test (10 XP) | Vergleich und Deutung (8 XP) | Fachsprachliche Darstellung (4 XP).
+`Klausur-Satz: pH zählt Zehnerpotenzen, keine Stufen.`
 
 ## Schritt 8 — reflexion: Takeaway & Reflexion
 
-TAKEAWAY:
+TAKEAWAY核心总结：
 
-Stark bedeutet direkt, schwach bedeutet Wurzel plus Test. Erst $K_s$ lesen, dann Verfahren waehlen.
-Takeaway-Satz: `Starke Saeuren rechnen mit c_0, schwache mit Wurzel aus K_s mal c_0 — stets mit Gueltigkeitstest.`
+中文：因果链：强酸完全裂解，pH直取浓度；弱酸另有平衡，Ks说了算。碱收质子生成水，pH爬升；稀释十倍pH升1。
+Takeaway-Satz: `Kühl löschen schlägt hastig kippen.`
 
-REFLEXION:
-1. Welcher Schritt fiel schwerer — die Wurzelrechnung (Schritt 4) oder die Verfahrenswahl (Schritt 5)?
-2. Beim naechsten Mal lese ich zuerst $K_s$ und $c_0$, weil ihr Verhaeltnis das Verfahren festlegt.
+`Klausur-Satz: Kühl löschen schlägt hastig kippen.`
+
+
+REFLEXION 2问：
+1. 过程自省：Welcher Schritt fiel schwerer — die Sandkasten-Challenge (Schritt 4) oder die Verfahrenswahl (Schritt 5)?
+2. 元认知计划：Beim nächsten Mal sichere ich zuerst die Werkzeugkiste, weil jeder Handgriff darauf aufbaut.

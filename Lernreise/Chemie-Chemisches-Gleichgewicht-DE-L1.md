@@ -11,150 +11,118 @@ tags: [EF, Chemie, Gleichgewicht]
 version: Lesson-v3
 ---
 
-# Lernreise: Chemisches Gleichgewicht und Le Chatelier (L1, Ziel Klausur)
+# Lernreise: Chemisches Gleichgewicht und Le Chatelier — Episode C7: Der störrische Indikator
 
-<!-- Lesson v3 9-Schritt-Architektur: Schritt 1 bis 8 feste Struktur; Fehlvorstellung zwischen Schritt 6 und 7 (Parser ueberspringt, zaehlt nicht); interaktive [Werkzeug: <id>]; Gating: check/szenario nicht bestanden = Weiter deaktiviert; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
+<!-- Campaign: Imperium-Alchemie | Chemie | entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
-## Schritt 1 — entdecken: Ziele & Phänomen-Einstieg
-ZIELE (drei messbare Ziele dieser Lektion):
+## Schritt 1 — entdecken: Der Turm atmet gegen den Sturm
 
-1. Du kannst den MWG-Ausdruck einer reversiblen Reaktion aufstellen — mit zwei Regeln: Exponent gleich Koeffizient, reine Feststoffe und Fluessigkeiten entfallen.
-2. Du kannst mit dem Reaktionsquotienten $Q$ gegen $K_c$ die Richtung der Verschiebung bestimmen ($Q < K_c$ nach rechts, $Q > K_c$ nach links).
-3. Du kannst mit dem Prinzip von Le Chatelier Konzentrations-, Druck- und Temperaturaenderungen deuten und begruenden, dass allein die Temperatur $K_c$ veraendert.
+ZIELE:
+1. Ich kann das MWG aufstellen und reine Feststoffe ausschliessen.
+2. Ich kann mit Q gegen K die Richtung bestimmen.
+3. Ich kann Stoerungen mit Le Chatelier deuten und K-Verhalten nennen.
 
-### Hook / Phaenomen
+Phenolphthalein bleibt farblos, wo Pink erwartet war; der Titrationsautomat streikt. Um Mitternacht heult im Imperium-Alchemie der Druckalarm: Der Haber-Turm schwankt, die Ammoniak-Ausbeute sackt ab, und Direktorin Dr. Vera Haber rennt im Laborkittel über den Hof. Schichtleiter Jonas Säure starrt auf drei Regler — Konzentration, Druck, Temperatur — und weiss nicht, welchen er zuerst anfassen soll. Praktikantin Mia Puffer flüstert die goldene Regel: Das System weicht jeder Störung aus. Doch Vorsicht: Nur eine Grösse ändert die Konstante selbst, die anderen schieben nur das Verhältnis hin und her. Wer heute versteht, warum Hochdruck und mässige Temperatur den Turm retten und warum ein Katalysator niemals die Lage verschiebt, rettet die Nachtschicht vor dem Stillstand.
 
-Im Schullabor stehen zwei Kolben mit demselben Gasgemisch: Erwaermt man den einen, wird er dunkelbraun, kuehlt man den anderen, wird er fast farblos — obwohl nichts hineingegeben und nichts entnommen wurde. Dahinter steckt $2NO_2 \rightleftharpoons N_2O_4$: Braunes $NO_2$ und farbloses $N_2O_4$ wandeln sich staendig ineinander um. Wie kann ein System reagieren, ohne dass sich am Ende die Konzentrationen aendern? Und warum veraendert Erwaermen die Lage dauerhaft, Druckerhoehung aber nur voruebergehend? Das System reagiert wie eine Wippe mit Drehpunkt Kc: Stoert man Konzentration oder Druck, aendert sich zunaechst nur der Reaktionsquotient Q, das System laeuft nach rechts fuer Q kleiner Kc und nach links fuer Q groesser Kc, bis wieder Q gleich Kc gilt. Allein die Temperatur verschiebt die Zielmarke Kc selbst, Erwaermen bevorzugt die endotherme Richtung. Wer Stoerung, Richtung und Begruendung ueber Q gegen Kc nennt, sichert alle Deutungspunkte auf AFB-II-Niveau.
+`Klausur-Satz: K beschreibt die Lage, Q den Moment; gleich heisst Ruhe.`
 
-### Fachbegriff & Definition
+## Schritt 2 — entdecken: Die Stellhebel-Kiste der Turmwache
 
-Das **dynamische Gleichgewicht** ist der Zustand einer reversiblen Reaktion, in dem **Hin- und Rueckreaktion gleich schnell** ablaufen ($v_{hin} = v_{rueck}$) und die Konzentrationen deshalb konstant bleiben — die Reaktion steht nicht still, sie laeuft nur unsichtbar in beide Richtungen. Seine Lage beschreibt das **Massenwirkungsgesetz (MWG)**: Fuer $aA + bB \rightleftharpoons cC + dD$ gilt $K_c = \frac{[C]^c \cdot [D]^d}{[A]^a \cdot [B]^b}$. Zwei Regeln gehoeren dazu: Der **Exponent ist der stoechiometrische Koeffizient**, und **reine Feststoffe und Fluessigkeiten entfallen**, weil ihre Konzentration konstant ist — etwa gilt fuer $CaCO_3(s) \rightleftharpoons CaO(s) + CO_2(g)$ nur $K_c = [CO_2]$.
+AUSRUESTUNG (5 Begriffe der Werkzeugkiste):
 
-### Wirkungsgefuege / Modell
+- Dynamisches Gleichgewicht: Hin- und Rückrate gleich, Konzentrationen konstant.
+- Massenwirkungsgesetz: K als Quotient potenzierter Gleichgewichtskonzentrationen.
+- Gleichgewichtskonstante: Nur temperaturabhängig, zeigt die Lage.
+- Reaktionsquotient Q: Gleiche Formel, beliebiger Zeitpunkt, Richtungsweiser.
+- Le Chatelier: System weicht der Störung aus.
 
-Die Kausalkette lautet: **Stoerung, Vergleich, Ablauf**. Jede Aenderung von Konzentration oder Druck veraendert zunaechst nur den **Reaktionsquotienten** $Q$, also denselben Ausdruck mit Momentanwerten. Ist $Q < K_c$, fehlen Produkte und das System laeuft nach rechts; ist $Q > K_c$, liegt ein Ueberschuss vor und es laeuft nach links — bis wieder $Q = K_c$ gilt. Allein die **Temperatur veraendert $K_c$ selbst**: Erwaermen bevorzugt die endotherme Richtung, Abkuehlen die exotherme. Wer eine Verschiebung deutet, nennt deshalb immer drei Teile — Stoerung, Richtung und Begruendung ueber $Q$ gegen $K_c$.
+`Klausur-Satz: Reine Feststoffe gehoeren nicht in den K-Ausdruck.`
 
-Klausur-Satz: `Nach dem Massenwirkungsgesetz ist die Gleichgewichtskonstante K_c der Quotient der mit ihren Koeffizienten potenzierten Gleichgewichtskonzentrationen von Produkten und Edukten; reine Feststoffe und Flüssigkeiten werden nicht aufgenommen.`
+## Schritt 3 — entdecken: Die Le-Chatelier-Weiche: Wer weicht wohin
 
-## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
-PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
+WIRKUNGSGEFUEGE (Ursache zu Wirkung):
 
-### Hook / Phaenomen
-
-Zwei Buchstaben entscheiden ueber die Richtung jeder Gleichgewichtsreaktion: $Q$ und $K_c$. In der Ammoniak-Anlage wird $NH_3$ staendig abgezogen, obwohl die Reaktion $N_2 + 3H_2 \rightleftharpoons 2NH_3$ laengst laeuft — warum kommt sie nie zum Stillstand? Und warum hilft Abkuehlen der Ausbeute, aber nicht der Geschwindigkeit? Ohne fuenf praezise Begriffe bleibt jede Klausurantwort ein Ratespiel.
-
-### Fachbegriffe & Definitionen
-
-- **Dynamisches Gleichgewicht:** Zustand mit $v_{hin} = v_{rueck}$; die Konzentrationen bleiben konstant, obwohl Hin- und Rueckreaktion weiterlaufen — kein Stillstand, sondern unsichtbarer Ausgleich.
-- **Massenwirkungsgesetz (MWG):** Vorschrift $K_c = \frac{[C]^c \cdot [D]^d}{[A]^a \cdot [B]^b}$; Exponenten sind die Koeffizienten, reine Feststoffe und Fluessigkeiten entfallen.
-- **Gleichgewichtskonstante $K_c$:** Haengt allein von der Temperatur ab; $K_c \gg 1$ bevorzugt die Produkte, $K_c \ll 1$ die Edukte — sie ist die Zielmarke des Systems.
-- **Reaktionsquotient $Q$:** Derselbe Ausdruck mit beliebigen Momentankonzentrationen; $Q < K_c$ treibt nach rechts, $Q > K_c$ nach links, $Q = K_c$ bedeutet Gleichgewicht.
-- **Prinzip von Le Chatelier:** Nach einer Stoerung weicht das System so aus, dass es die Stoerung abschwaecht — Eduktzugabe treibt nach rechts, Druckerhoehung auf die Seite mit weniger Gasteilchen, Erwaermen in die endotherme Richtung.
-
-### Wirkungsgefuege / Modell
-
-Die Begriffe greifen ineinander: Das **MWG** liefert den Ausdruck, $K_c$ die temperaturabhaengige Zielmarke und $Q$ den Momentanwert. **Le Chatelier** ist die qualitative Abkuerzung derselben Logik — jede Stoerung veraendert $Q$, das System laeuft, bis $Q$ wieder gleich $K_c$ ist. In der Klausur gehoeren beide Ebenen zusammen: erst die Richtung nach Le Chatelier nennen, dann mit $Q$ gegen $K_c$ begruenden. Nur die Temperatur verschiebt die Zielmarke $K_c$ selbst; Konzentration und Druck veraendern lediglich den Abstand $Q$ zu $K_c$.
-
-Klausur-Satz: `Ein dynamisches Gleichgewicht liegt vor, wenn die Geschwindigkeiten der Hin- und Rückreaktion gleich groß sind und die Konzentrationen konstant bleiben.`
-
-## Schritt 3 — entdecken: Kernkonzept & Wirkungsmodell
-TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
-
-### Hook / Phaenomen
-
-Warum wird braunes $NO_2$ beim Abkuehlen fast farblos, obwohl nichts entnommen wird, und warum arbeitet die Ammoniak-Anlage bei hohem Druck, obwohl hohe Temperatur die Ausbeute senkt? Das System reagiert wie eine Wippe: Druck auf einer Seite, Temperatur auf der anderen. Wo liegt der Drehpunkt $K_c$?
-
-### Spiel-Aufgabe
-
-Spiel-Aufgabe im Kopf-Labor: Erhoehe im Gedanken-Simulator den Druck von $1\,\mathrm{bar}$ auf $200\,\mathrm{bar}$ und danach die Temperatur von $400^\circ\mathrm{C}$ auf $550^\circ\mathrm{C}$. Beobachte die Verschiebungspfeile nach rechts oder links sowie $Q$ gegen $K_c$. Notiere Gasteilchenzahl $4$ gegen $2$ und Ausbeute. Erklaere in einem Satz mit weil, warum nur die Temperatur $K_c$ veraendert.
-
-### Aha-Moment & Gesetz
-
-Aha-Moment und Gesetz: Die Kausalkette lautet Stoerung, Vergleich, Ablauf. Jede Stoerung aendert zuerst $Q$, das System laeuft, bis $Q = K_c$ gilt. Es gilt $K_c = \frac{[C]^c \cdot [D]^d}{[A]^a \cdot [B]^b}$; ist $Q < K_c$, laeuft es nach rechts, ist $Q > K_c$, nach links. Druck bevorzugt die Seite mit weniger Gasteilchen, Waerme die endotherme Richtung. Le Chatelier ist die Wippe, $Q$ gegen $K_c$ die Waage dahinter.
+Die Kette: K beschreibt die Lage, Q den Moment. Q kleiner als K heisst zu wenig Produkt — rechts nachfüllen; Q grösser als K heisst zu viel — links abbauen; gleich heisst Ruhe. Konzentration und Druck ändern nur Q, das System läuft, bis Q wieder gleich K ist. Nur Temperatur ändert K selbst: Heizen bei exotherm schiebt links und senkt K. Katalysator macht nur schneller.
 
 ```diagram
-    N2 + 3H2 <==> 2NH3 (exotherm, 4 gegen 2 Teilchen)
-    Druck hoch (200 bar)  --Pfeil nach rechts--> Ausbeute hoch, Kc gleich
-    Temperatur hoch       --Pfeil nach links---> Ausbeute niedrig, Kc sinkt
-    Edukt plus            --Pfeil nach rechts--> Q < Kc, dann Ausgleich
-    Katalysator           --kein Pfeil---------> nur schneller, Lage gleich
-    Regel: Q < Kc rechts, Q > Kc links, Q = Kc Gleichgewicht.
+Q < K -> rechts | Q = K -> Ruhe | Q > K -> links
+c/p aendern nur Q | T aendert K
+Exotherm + Heizen -> links, K sinkt
 ```
 
-Klausur-Satz: `Eine Änderung der Konzentration oder des Drucks verändert K_c nicht, sondern nur den Reaktionsquotienten Q; allein eine Temperaturänderung verändert K_c selbst.`
+`Klausur-Satz: Q kleiner als K heisst rechts, groesser heisst links.`
 
 ## Anekdote & Fun-Fact
 
-**Anekdote / Fun-Fact (DE)**: Bei der industriellen Ammoniaksynthese nach dem Haber-Bosch-Verfahren wird das Gleichgewicht N2 + 3 H2 <-> 2 NH3 gezielt beeinflusst. Da die Hinreaktion exotherm ist, verschiebt eine hohe Temperatur das Gleichgewicht nach links und senkt die Ausbeute. Trotzdem arbeitet die Industrie bei mehreren hundert Grad, weil die Reaktion sonst viel zu langsam läuft; hoher Druck und ein Katalysator lösen diesen Konflikt.
+**Anekdote / Fun-Fact (DE)**: Haber und Bosch stritten mit der Temperatur: Heiss läuft schnell, kühl liegt gut — der Turm lebt vom Kompromiss aus Druck und Katalysator.
 
-**Bezug zum Konzept**: Das Haber-Bosch-Verfahren zeigt, dass Ausbeute und Reaktionsgeschwindigkeit nach dem Prinzip von Le Chatelier gegeneinander abgewogen werden müssen.
+**Bezug zum Konzept**: Der Turm zeigt: Lage und Tempo sind zwei Gegner.
 
-## Schritt 4 — ausprobieren: Interaktive Praxis & Gleichgewichts-Labor
-
-BEISPIEL (geleitete Aufgabe mit Werkzeug):
+## Schritt 4 — ausprobieren: Simulations-Sandkasten: Zähme den Haber-Turm
 
 [Werkzeug: le-chatelier-sim]
 
-AUFGABE (Spiel-Auftrag, AFB II, 3 Stufen): Stufe 1 Wippen: Fuer $H_2 + I_2 \rightleftharpoons 2HI$ mit $K_c = 64$ starten $0{,}50\,\mathrm{mol/L}$ je Edukt. Schaetze die Lage. Stufe 2 Rechnen: Stelle die Dreisatztabelle mit $-x$/$-x$/$+2x$ auf und loese ueber Wurzelziehen. Stufe 3 Pruefen: Kontrolliere mit $Q = K_c$ und nenne den Umsatz.
+AUFGABE (Target Challenge): Target Challenge: Haber-Bosch, exotherm, T = 480 °C, p = 250 bar. Ziel: Stelle so, dass die Ausbeute über 15 % steigt, und begruende, warum Heizen schadet und Druck hilft. AUFGABE konkret: N2 + 3 H2 <-> 2 NH3, exotherm. Druck hoch, Temperatur hoch: Wohin läuft es?
 
 HILFE:
-1. Schritt 1: $K_c = \frac{[HI]^2}{[H_2] \cdot [I_2]}$ aufstellen.
-2. Schritt 2: Gleichgewicht $0{,}50 - x$/$0{,}50 - x$/$2x$ einsetzen.
-3. Schritt 3: Wurzel ziehen $\frac{2x}{0{,}50 - x} = 8$, dann $x = 0{,}40$.
+1. Teilchen zählen: 4 gegen 2.
+2. Exotherm plus Heizen heisst links.
+3. Katalysator nur schneller.
 
-MUSTERLOESUNG: Mit Start $0{,}50$/$0{,}50$/$0$ und Aenderung $-x$/$-x$/$+2x$ gilt im Gleichgewicht $\frac{(2x)^2}{(0{,}50 - x)^2} = 64$. Wurzelziehen liefert $\frac{2x}{0{,}50 - x} = 8$, also $x = 0{,}40\,\mathrm{mol/L}$. Damit ist $c(HI) = 0{,}80\,\mathrm{mol/L}$ und $c(H_2) = c(I_2) = 0{,}10\,\mathrm{mol/L}$; die Kontrolle $\frac{0{,}80^2}{0{,}10 \cdot 0{,}10} = 64$ bestaetigt $Q = K_c$. Der Umsatz betraegt $80\,\%$, weil $K_c \gg 1$ die Produkte bevorzugt.
+MUSTERLÖSUNG: Mehr Druck schiebt rechts zu weniger Teilchen, Heizen schiebt links zur endothermen Seite; netto braucht der Turm Hochdruck, mässige Temperatur und Katalysator.
 
-Klausur-Satz: `Zur Berechnung von Gleichgewichtskonzentrationen wird eine Dreisatztabelle verwendet, deren Änderungszeile nach den stöchiometrischen Koeffizienten angesetzt und anschließend in das Massenwirkungsgesetz eingesetzt wird.`
+`Klausur-Satz: Hochdruck und Mass-Temperatur retten den Turm.`
 
-## Schritt 5 — ausprobieren: Verfahrensvergleich & Abgrenzung
+## Schritt 5 — ausprobieren: Duell der Augen: Rechenauge gegen Störungsauge
 
-VERGLEICH (zwei Verfahren unterscheiden):
+VERGLEICH: Waehle erst das Auge — (i) MWG-Rechenauge oder (ii) Stoerungsauge — dann loesen.
 
-VERGLEICH: Wähle erst das Verfahren — (i) MWG-Verfahren (Konzentrationen oder $K_c$ gegeben, Zahlenwert oder Umsatz gesucht) oder (ii) Le-Chatelier-Verfahren (eine Stoerung gegeben, Richtung gesucht) — dann loesen.
+Weg A (Rechen-Weiche): Konzentrationen gegeben, K oder Q rechnen.
 
-AUFGABE A: In einem Gefäß liegen bei 500 °C die Gleichgewichtskonzentrationen c(H2) = 0,20 mol/L, c(I2) = 0,20 mol/L und c(HI) = 1,60 mol/L vor. Berechnen Sie K_c und deuten Sie den Zahlenwert.
+Weg B (Stoerungs-Weiche): Nur Stoerung genannt, Richtung mit Le Chatelier deuten.
 
-AUFGABE B: Für die exotherme Reaktion N2 + 3 H2 <-> 2 NH3 wird die Temperatur des Reaktionsgemischs erhöht. Geben Sie an, in welche Richtung sich das Gleichgewicht verschiebt, und begründen Sie dies.
+AUFGABE A: c-Werte gegeben, K berechnen. Welches Auge?
 
-HILFE: A nennt konkrete Gleichgewichtskonzentrationen und verlangt einen Zahlenwert, also Verfahren (i). B nennt nur eine Temperaturänderung und fragt nach der Richtung, also Verfahren (ii). Faustregel: Zahlenwerte verlangen das MWG-Verfahren, eine beschriebene Stoerung verlangt Le Chatelier.
+AUFGABE B: Nur Erhitzen genannt, Richtung gesucht. Welches Auge?
 
-ANTWORT: A erfordert Verfahren (i): Es gilt K_c = [HI]^2 / ([H2] * [I2]) = (1,60)^2 / (0,20 * 0,20) = 2,56 / 0,04 = 64. Da K_c deutlich größer als 1 ist, liegt das Gleichgewicht auf der Produktseite, die Bildung von HI wird also stark begünstigt. B erfordert Verfahren (ii): Die Hinreaktion ist exotherm. Nach dem Prinzip von Le Chatelier weicht das System der Temperaturerhöhung aus, indem es die endotherme Richtung bevorzugt, also die Rückreaktion; das Gleichgewicht verschiebt sich nach links, und K_c sinkt, weil nur die Temperatur K_c verändert.
+HILFE: A nennt Zahlen — Weg A. B nennt Stoerung — Weg B.
 
-Klausur-Satz: `Wird ein exothermes Gleichgewicht erwärmt, verschiebt es sich in Richtung der Edukte, da das System der Erwärmung durch die endotherme Rückreaktion entgegenwirkt.`
+ANTWORT: A folgt Weg A mit MWG-Ausdruck und Dreisatztabelle; B folgt Weg B mit Le-Chatelier-Begruendung.
+
+`Klausur-Satz: Zahlen verlangen MWG, Stoerungen verlangen Le Chatelier.`
 
 ## Schritt 6 — check: Selbsttest zu Chemisches Gleichgewicht und Le Chatelier
-CHECK (Selbsttest, 3 Fragen mit Antworten):
 
-FRAGE: Welche Stoffe werden nicht in den Ausdruck für K_c aufgenommen? | ANTWORT: Reine Feststoffe und reine Flüssigkeiten, weil ihre Konzentration konstant ist.
-FRAGE: Was bedeutet Q < K_c für die Reaktionsrichtung? | ANTWORT: Es liegen zu wenige Produkte vor; die Reaktion läuft bevorzugt in Richtung der Produkte (nach rechts).
-FRAGE: Welche Größe verändert K_c selbst? | ANTWORT: Nur eine Temperaturänderung; Konzentration, Druck und Katalysator verändern K_c nicht.
+FRAGE: Was gehört nicht in K? | ANTWORT: Reine Feststoffe und Fluessigkeiten.
+FRAGE: Was heisst Q kleiner als K? | ANTWORT: Zu wenig Produkt: rechts laufen.
+FRAGE: Was aendert K selbst? | ANTWORT: Nur die Temperatur.
 
-Klausur-Satz: `Eine Änderung der Konzentration oder des Drucks verändert nur Q, während allein die Temperatur K_c verändert.`
+`Klausur-Satz: Ohne Q bleibt Richtung geraten, mit Q wird sie gerechnet.`
 
 ## Fehlvorstellung
 
-(kein Schritt; wird vom Parser automatisch erkannt und nicht mitgezaehlt)
+1. Fehlvorstellung: Katalysator verschiebe die Lage.
+   Korrektur-Satz: `Er beschleunigt beide Richtungen gleich und aendert weder Lage noch K.`
+2. Fehlvorstellung: Jede Verschiebung aendere K.
+   Korrektur-Satz: `Nur Temperatur aendert K; sonst läuft Q zurueck zu K.`
 
-1. Fehlannahme: Ein Katalysator verschiebe das Gleichgewicht nach rechts und erhoehe die Ausbeute.
-   Korrektur: Der Katalysator senkt nur die Aktivierungsenergie und beschleunigt Hin- und Rueckreaktion gleich stark; er erreicht das Gleichgewicht schneller, veraendert aber weder die Lage noch $K_c$. Mehr Ausbeute gelingt nur ueber Le Chatelier (Produkt entfernen, Druck oder Temperatur anpassen).
-   Korrektur-Satz: `Ein Katalysator beschleunigt Hin- und Rückreaktion gleichermaßen und verändert weder die Gleichgewichtslage noch K_c.`
+## Schritt 7 — szenario: Klausurtransfer: Schichtprotokoll am Haber-Turm
 
-2. Fehlannahme: Jede Verschiebung des Gleichgewichts bedeute, dass sich $K_c$ geaendert habe.
-   Korrektur: Beides ist zu trennen. Konzentration oder Druck veraendern nur $Q$; die Verschiebung stellt $Q = K_c$ wieder her, $K_c$ selbst bleibt. Allein die Temperatur veraendert $K_c$. Wer beides vermischt, verliert Begruendungspunkte.
-   Korrektur-Satz: `Das Gleichgewicht verschiebt sich so lange, bis Q wieder gleich K_c ist; nur eine Temperaturänderung verändert K_c selbst.`
+ROLLE: Du bist Verfahrenstechniker am Haber-Turm.
+SITUATION: Die Leitung will stark heizen und Druck senken. Beurteile in ca. 150 Woertern mit Le Chatelier, welche Bedingungen wirklich helfen.
+RUBRIC (30 XP): Temperaturlogik (8 XP) | Drucklogik (8 XP) | Gegenentwurf (8 XP) | Abwaegung (6 XP).
 
-## Schritt 7 — szenario: Klausurtransfer: Chemisches Gleichgewicht und Le Chatelier
-ROLLE: Du bist Verfahrenstechniker in einem Werk, das nach dem Haber-Bosch-Verfahren Ammoniak herstellt.
-SITUATION: Für die exotherme Reaktion N2(g) + 3 H2(g) <-> 2 NH3(g) soll die Ammoniak-Ausbeute erhöht werden. Die Betriebsleitung schlägt vor, die Temperatur deutlich zu erhöhen und den Druck abzusenken. Beurteile diesen Vorschlag in einer zusammenhängenden Stellungnahme (ca. 150 Wörter) mit dem Prinzip von Le Chatelier und begründe, welche Bedingungen tatsächlich günstig sind.
-RUBRIC (30 XP): Analyse der Temperaturwirkung — exotherm, Erwärmen verschiebt nach links (8 XP) | Analyse der Druckwirkung — 4 Gasteilchen links gegen 2 rechts, Druckabsenkung verschiebt nach links (8 XP) | Gegenentwurf mit korrekten Bedingungen — hoher Druck, mäßige Temperatur, Katalysator (8 XP) | Kriteriengeleitetes Urteil mit Abwägung von Ausbeute und Reaktionsgeschwindigkeit (6 XP).
+`Klausur-Satz: Heizen bei exotherm schiebt links und senkt K.`
 
-## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
+## Schritt 8 — reflexion: Takeaway & Reflexion
 
-TAKEAWAY (Kernzusammenfassung):
+TAKEAWAY:
 
-Gleichgewichtsaufgaben folgen zwei Verfahren: Zahlenwerte verlangen das MWG-Verfahren (Ausdruck aufstellen, Dreisatztabelle, nach $x$ loesen, Umsatz berechnen); eine Stoerung verlangt Le Chatelier (Eduktzugabe treibt zur Gegenseite, Druckerhoehung zur Seite mit weniger Gasteilchen, Erwaermen zur endothermen Seite). Die Trennlinie bleibt: Konzentration und Druck aendern nur $Q$, allein die Temperatur aendert $K_c$. Ein grosses $K_c$ bevorzugt die Produkte, ein Katalysator beschleunigt nur.
-Takeaway-Satz: `Das Gleichgewicht ist dynamisch; es verschiebt sich so lange, bis Q wieder gleich K_c ist, und nur die Temperatur verändert K_c selbst.`
+Takeaway-Satz: `Lage halten heisst Q zu K zurueckfuehren.`
 
-REFLEXION (2 Fragen):
-1. Selbstbeobachtung: Welcher Schritt fiel schwerer — das Aufstellen und Lösen der Gleichgewichtstabelle (Schritt 4) oder die Wahl zwischen MWG- und Le-Chatelier-Verfahren (Schritt 5)?
-2. Planung: Beim nächsten Mal prüfe ich zuerst, ob die Aufgabe einen Zahlenwert verlangt (dann MWG) oder nur eine Richtung nennt (dann Le Chatelier), und schreibe erst danach den Ansatz.
+`Klausur-Satz: Lage halten heisst Q zu K zurueckfuehren.`
+
+
+REFLEXION:
+1. Welcher Schritt fiel schwerer — die Sandkasten-Challenge (Schritt 4) oder die Verfahrenswahl (Schritt 5)?
+2. Beim naechsten Mal sichere ich zuerst die Werkzeugkiste, weil jeder Handgriff darauf aufbaut.
