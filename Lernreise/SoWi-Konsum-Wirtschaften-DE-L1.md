@@ -15,127 +15,119 @@ version: Lesson-v3
 
 <!-- Lesson-v3: 8 Schritte plus Anekdote und Fehlvorstellung; Fehlvorstellung zwischen Schritt 6 und 7 (Parser-Skip); interaktives [Werkzeug: <id>]; Gating: check/szenario nicht bestanden = Weiter gesperrt; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
-## Schritt 1 — entdecken: Ziele & Phänomen-Einstieg
+## Schritt 1 — entdecken: Ziele und Phaenomen-Einstieg
 
 ZIELE (drei messbare Ziele dieser Lektion):
 
-1. Du kannst **Beduerfnis** und **Nachfrage** in je einem Satz definieren und die Kette Beduerfnis zu Bedarf korrekt wiedergeben.
-2. Du kannst das Budget mit $p1x1 + p2x2 = m$ aufstellen und das Optimum mit $MU1/p1 = MU2/p2$ bestimmen.
+1. Du kannst **Beduerfnis** und **Nachfrage** in je einem Satz definieren und die Kette von Beduerfnis ueber Bedarf zur Nachfrage korrekt wiedergeben.
+2. Du kannst am Warenkorb zeigen, wie knappes Budget und gegensaetzliche Signale aus Werbung und Label die Wahl lenken.
 3. Du kannst mit dem Kriterium **Konsumentensouveraenitaet** ein Urteil zu Werbung und Label formulieren und mit einem Klausur-Satz schliessen (AFB II/III).
 
 ### Hook / Phaenomen
 
-Stell dir vor, du suchst in der Stadt eine Wohnung und siehst ein Schild mit Miete 11 Euro pro Quadratmeter, doch der Stadtrat beschliesst einen Deckel bei 8 Euro und verspricht billiges Wohnen fuer alle. Alle freuen sich zuerst ueber die niedrige Miete, aber nach wenigen Monaten verschwinden viele Angebote, die Schlangen bei jeder Besichtigung werden laenger und ein Schattenmarkt mit Abstandszahlungen und Gefaelligkeiten entsteht. Gleichzeitig fordert die Gewerkschaft 15 Euro Mindestlohn, weil der Lohn zum Leben reichen muss, waehrend kleine Betriebe warnen, dass sie bei diesem Lohn weniger Personal einstellen und ihre Preise erhoehen muessen. Beide Faelle zeigen denselben Mechanismus aus Signal und Anpassung: Ein staatlich fixierter Preis ersetzt das freie Signal aus Angebot und Nachfrage, die Mengen reagieren mit Ausweichen oder Verknappung, und am Ende muss jedes Urteil zwischen Effizienz und sozialem Ziel sorgfaeltig abgewogen werden.
-
-
-Ausgangslage aus der Vorlage: Influencer preist Sneaker, Label verspricht bio, Konto sagt Nein: Folgst du Nutzen oder Signalen? Wuensche sind unendlich, Geld ist knapp, Werbung ist laut. Wer entscheidet deinen Kauf: du oder der Feed?
-
-### Fachbegriff & Definition
-
-**Beduerfnisse** sind unbegrenzte Wuensche, **Gueter** sind knappe Mittel zu ihrer Befriedigung. Erst mit **Kaufkraft** wird Beduerfnis zu **Bedarf**, erst am Markt wird Bedarf zu **Nachfrage**. **Wirtschaften** heisst waehlen unter Knappheit mit $Wahl = Nutzen + Kosten$. Kurz: Wuenschen kann jeder, zahlen muss man.
-
-### Wirkungsgefuege / Modell
-
-Der Mechanismus laeuft in drei Stufen: **Knappheit, Wahl, Steuerung**. Erstens zwingt $Beduerfnis > Gut$ zu Verzicht mit $Opportunitaet = Verzicht$. Zweitens waehlt der Haushalt mit $m = 200$ und $10x1 + 20x2 = 200$ die beste Kombination. Drittens steuern Signale mit $Werbung = Reiz$ und $Label = Info$ die Wahl zwischen Fremd und Selbst. Faellt Souveraenitaet aus, gilt $Kauf = Signal$ statt $Kauf = Nutzen$.
+Stell dir vor, ein Influencer preist neue Sneaker, ein gruunes Label verspricht faire Bio-Qualitaet, doch dein Konto sagt Nein: Folgst du deinem Nutzen oder den Signalen des Feeds. Wuensche sind unendlich, Geld ist knapp, Werbung ist laut. In dieser Lektion klaerst du, wer deinen Kauf lenkt: du selbst mit Information und Budget oder fremde Reize mit Status und Impuls. Dabei pruefst du zwei Antworten auf dieselbe Knappheit: souverane Wahl mit Wettbewerb oder oekologische Kritik mit Blick auf Natur und Zukunft.
 
 Klausur-Satz: `Bedürfnisse sind unbegrenzt, Güter knapp — aus dieser Spannung entsteht alles Wirtschaften; erst mit Kaufkraft wird aus Bedürfnis Bedarf, erst am Markt wird daraus Nachfrage.`
 
-## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
+## Schritt 2 — entdecken: Fachbegriffe und Pre-Training
 
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
 ### Hook / Phaenomen
 
-Modellmensch oder echter Mensch: Rechnest du oder fuehlst du beim Kaufen? Theorie hilft nur mit scharfen Begriffen. Diese fuenf Bausteine geben dir Kasse und Kompass.
+Modellmensch oder echter Mensch: Rechnest du oder fuehlst du beim Kaufen. Theorie hilft nur mit scharfen Begriffen. Diese fuenf Bausteine geben dir Kasse und Kompass.
 
-### Fachbegriffe & Definitionen
+### Fachbegriffe und Definitionen
 
-- **Homo oeconomicus:** Das Modell mit $Wahl = MaxNutzen$ bei $Info = voll$. Es unterstellt $Rational = informiert + konsequent$ als Massstab, nicht als Mensch.
-- **Budgetgerade:** Die Grenze mit $p1x1 + p2x2 = m$ fuer Einkommen $m$. Beispiel: $10x1 + 20x2 = 200$ erlaubt $x1 = 20$ oder $x2 = 10$.
-- **Grenznutzenregel:** Das Optimum mit $MU1/p1 = MU2/p2$ fuer zwei Gueter. Es gilt $Optimum = Ausgleich$, wo letzter Euro gleich viel bringt.
-- **Konsumentensouveraenitaet:** Die Freiheit mit $Kauf = Wille + Info$. Sie verlangt $Bildung + Label + Angebot$ als Auftrag an Politik.
-- **Nachhaltigkeit:** Das Dreieck mit $Ziel = Oekologie + Soziales + Oekonomie$. Es fordert $Heute < Morgen$, also kein Raubbau an Zukunft.
+- **Homo oeconomicus:** Das Modell des voll informierten und konsequent nutzenorientierten Entscheiders. Es dient als Massstab, nicht als Menschenbeschreibung.
+- **Budgetgrenze:** Die knappe Grenze des Einkommens. Sie erlaubt nur eine Auswahl: Mehr von einem Gut bedeutet Verzicht auf ein anderes Gut.
+- **Grenznutzenregel:** Die Regel der besten Aufteilung. Das Optimum liegt dort, wo der letzte Euro in jeder Verwendung gleich viel zusaetzlichen Nutzen bringt.
+- **Konsumentensouveraenitaet:** Die Freiheit zur eigenen Wahl mit Information und Alternativen. Sie verlangt Bildung, ehrliche Label und bezahlbare Angebote.
+- **Nachhaltigkeit:** Das Dreieck aus Oekologie, Sozialem und Oekonomie. Es fordert, heute nicht auf Kosten von morgen zu leben und Nebenkosten ehrlich einzubeziehen.
 
 ### Wirkungsgefuege / Modell
 
-Die Begriffe greifen ineinander: **Homo oeconomicus** liefert den Massstab $MaxNutzen$, **Budgetgerade** liefert die Grenze $m = knapp$. **Grenznutzenregel** findet das Optimum $MU1/p1 = MU2/p2$. **Souveraenitaet** und **Nachhaltigkeit** liefern die Kritik $Mensch > Modell$. Wer in der Klausur deutet, muss deshalb immer fragen: Folgt der Kauf dem Nutzen oder dem Signal?
-
-Punkte-Hinweis: Nenne $Gleichgewichtspreis$ mit $p_N(q) = p_A(q)$ und beziffere $Ueberhang$ mit $q_A - q_N$; erst die Zahl plus Deutung am Kriterium gibt volle Punkte.
+Die Begriffe greifen ineinander: **Homo oeconomicus** liefert den Massstab der Nutzenorientierung, **Budgetgrenze** liefert die knappe Grenze. **Grenznutzenregel** findet die beste Aufteilung. **Souveraenitaet** und **Nachhaltigkeit** liefern die Kritik: Der Mensch ist mehr als das Modell. Wer in der Klausur deutet, muss deshalb immer fragen: Folgt der Kauf dem eigenen Nutzen oder einem fremden Signal.
 
 Klausur-Satz: `Der homo oeconomicus entscheidet vollständig informiert und nutzenmaximierend — ein Modell, keine Menschenbeschreibung.`
 
-## Schritt 3 — entdecken: Kernkonzept & Wirkungsmodell
+## Schritt 3 — entdecken: Kernkonzept und Wirkungsmodell
 
 TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
 ### Hook / Phaenomen
 
-Influencer sagt kaufen — du kaufst? Preis 5 Euro, Siegel fehlt — billig oder blind? Souveraen oder fremdbestimmt — wer lenkt deinen Warenkorb?
+Influencer sagt kaufen, du kaufst. Preis niedrig, Siegel fehlt: billig oder blind. Souveraen oder fremdbestimmt: Wer lenkt deinen Warenkorb.
 
 ### Spiel-Aufgabe mit [Werkzeug: markt-sim]
 
-Oeffne [Werkzeug: markt-sim]. Ziehe den Preis-Regler fuer das nachhaltige Produkt von $p = 8$ auf $p = 5$ und beobachte, wie $q_N$ steigt und $q_A - q_N$ schrumpft. Schalte das Label-Modul zu: Ehrliche Information verschiebt $p_N(q)$ nach rechts, soziale Signale verzerren sie. Pruefe $p_N(q) = p_A(q)$ vor und nach Label.
+Oeffne [Werkzeug: markt-sim]. Vergleiche zwei Koerbe: konventionell billig ohne Label gegen nachhaltig teurer mit Label. Beobachte, wie ehrliche Information die Nachfragekurve stabilisiert und wie soziale Signale sie verzerren. Pruefe, wann bezahlbare Alternativen plus ehrliche Info eine gute Wahl erst moeglich machen.
 
-### Aha-Moment & Gesetz
+### Aha-Moment und Gesetz
 
-Aha-Moment: Beduerfnis — Signal — Entscheidung. Erstens lenkt $p$ ueber $p_N(q) = p_A(q)$ die Menge $q_G$. Zweitens verzerren Werbung und Peers die Kurve zu $q_A - q_N \neq 0$ aus Impuls. Drittens stellt Verbraucherbildung mit Kriterium Konsumentensouveraenitaet klar: Erst Information, dann Wahl. Gesetz: $Souveraen \iff Info + Budget + Alternative$.
+Aha-Moment: Beduerfnis, Signal, Entscheidung. Erstens lenkt der Preis ueber Angebot und Nachfrage die Menge. Zweitens verzerren Werbung und Gruppenimpulse die Wahl zum Impuls. Drittens stellt Verbraucherbildung mit dem Kriterium Konsumentensouveraenitaet klar: Erst Information, dann Wahl. Gesetz: Souveraen ist nur, wer informiert waehlen kann und eine bezahlbare Alternative hat.
 
 ```diagram
-  Bedarf [Beduerfnis + Budget + Info]
-  Bedarf -> Markt [$p_N(q) = p_A(q)$ zu $p_G$, $q_G$]
-  Markt -> Stoerung [Werbung + Label-Luecke + $q_A - q_N$]
-  Stoerung -> Urteil [Souveraenitaet mit Bildung]
+  Bedarf [Beduerfnis plus Budget plus Info]
+  Bedarf -> Markt [Nachfrage trifft Angebot zum Gleichgewicht]
+  Markt -> Stoerung [Werbung plus fehlendes Label plus Impuls]
+  Stoerung -> Urteil [Souveraenitaet mit Bildung und Nachhaltigkeit]
 ```
 
-Kausalkette: Fixpreis ungleich $p_N(q) = p_A(q)$ — Mengen reagieren mit $q_A - q_N$ — Deutung am Kriterium Effizienz gegen Sozialziel; Abgrenzung zu $Gini$ und $U = \sum(Lust - Leid)$ steht vor jeder Rechnung.
+Kausalkette: Knappheit zwingt zur Wahl, Signale lenken die Wahl, Deutung am Kriterium Souveraenitaet gegen Fremdbestimmung mit Blick auf Umwelt und Zukunft.
 
 Klausur-Satz: `Konsumentensouveränität ist kein Zustand, sondern ein Auftrag an Verbraucherbildung, ehrliche Labels und eine Politik, die nachhaltige Optionen bezahlbar macht.`
 
-## Anekdote & Fun-Fact
+## Anekdote und Fun-Fact
 
-Das Wort „Ökonomie" stammt aus dem Griechischen: „oikos" heißt Haus, „nomos" heißt Ordnung oder Regel — Ökonomie war also ursprünglich die Lehre von der Hauswirtschaft. Dasselbe Wort „oikos" steckt auch in „Ökologie". Wirtschaften und Umwelt haben damit sprachlich dieselbe Wurzel
+Das Wort Oekonomie stammt aus dem Griechischen: oikos heisst Haus, nomos heisst Ordnung oder Regel. Oekonomie war also urspruenglich die Lehre von der Hauswirtschaft. Dasselbe Wort oikos steckt auch in Oekologie. Wirtschaften und Umwelt haben damit sprachlich dieselbe Wurzel: Wer das Haus gut ordnet, schont es zugleich.
 
-Bezug zum Konzept: `Das Beispiel zeigt, wie aus Beobachtung ein pruefbares Verfahren mit $x_1$ und $x_2$ entsteht.`
+Bezug zum Konzept: Das Beispiel zeigt, wie Konsum zwischen Nutzenwahl und Umweltverantwortung steht und warum Information und bezahlbare Alternativen ueber Souveraenitaet entscheiden.
 
-## Schritt 4 — ausprobieren: Interaktive Praxis & Markt-Labor
+## Schritt 4 — ausprobieren: Interaktive Praxis und Konsum-Labor
 
 BEISPIEL (geleitete Aufgabe mit Werkzeug):
 
 [Werkzeug: markt-sim]
 
-Ziehe im Tool den Mindestpreis-Regler von $p_G$ nach oben und beobachte live, wie $q_A - q_N$ als Ueberhang waechst; ziehe danach den Hoechstpreis-Regler von $p_G$ nach unten und notiere Mangel, Schlange und Schattenmarkt.
+Lege im Tool zwei Koerbe an: konventionell billig ohne Label und nachhaltig teurer mit Label. Veraendere Preis und Informationsstand Schritt fuer Schritt und beobachte, wann die Wahl dem Nutzen und wann sie dem Signal folgt.
 
-AUFGABE Spiel-Raetsel (AFB II): Vergleiche im Tool zwei Koerbe: konventionell $p = 3$ ohne Label gegen nachhaltig $p = 5$ mit Label. Ziehe den Preis-Regler, bis $q_A - q_N = 0$ gilt, und pruefe, welche Information $p_N(q)$ verschiebt.
+AUFGABE Spiel-Raetsel (AFB II): Vergleiche im Tool den Influencer-Korb mit dem Label-Korb. Notiere Preis, Label und soziales Signal je Korb. Pruefe, welche Information die Nachfragekurve zurueck zur abgewogenen Wahl verschiebt und welche Rolle bezahlbare Alternativen spielen.
 
 HILFE:
-1. Schritt 1: Notiere Preis, Label und soziales Signal je Korb. 2. Schritt 2: Veraendere $p$, lies $q_N$ und $q_A - q_N$. 3. Schritt 3: Deute am Kriterium Souveraenitaet und formuliere den Klausur-Satz.
+1. Schritt 1: Notiere Preis, Label und soziales Signal je Korb.
+2. Schritt 2: Veraendere Preis und Info, lies Nachfrage und Angebot ab.
+3. Schritt 3: Deute am Kriterium Souveraenitaet und formuliere den Klausur-Satz.
 
-MUSTERLOESUNG: Der Influencer-Korb folgt Signalen statt Kalkuel: $q_N$ hoch ohne Pruefung. Mit Label und Bildung verschiebt sich $p_N(q)$ zurueck zu $p_N(q) = p_A(q)$; erst bezahlbare Alternativen plus ehrliche Info machen $q_A - q_N = 0$ bei guter Wahl moeglich.
+MUSTERLOESUNG: Der Influencer-Korb folgt Signalen statt Abwaegung: hohe Nachfrage ohne Pruefung. Mit Label und Bildung kehrt die Wahl zurueck zur Nutzenpruefung; erst bezahlbare Alternativen plus ehrliche Info machen gute Wahl bei geraeumtem Markt moeglich.
 
 Klausur-Satz: `Der Influencer-Einfluss belegt Fremdbestimmung: Kaufentscheidungen folgen sozialen Signalen statt eigenem Nutzenkalkül.`
 
-## Schritt 5 — ausprobieren: Verfahrensvergleich & Abgrenzung
+## Schritt 5 — ausprobieren: Weg-Vergleich und Abgrenzung
 
-VERGLEICH (Wahl des Verfahrens, A gegen B):
+VERGLEICH: Zwei Wege deuten denselben Kauf unterschiedlich. Weg A sieht den souveranen Konsumenten mit Nutzenstreben und Wettbewerb. Weg B uebt oekologische Konsumkritik mit Blick auf Nebenkosten, Fussabdruck und Zukunft. Pruefe zuerst die Aufgabe, waehle dann den passenden Weg.
 
-VERGLEICH: Triff zuerst die Wahl des Verfahrens -- (i) Budget-Verfahren ($p_1 x_1 + p_2 x_2 = m$) oder (ii) Nutzen-Verfahren ($MU_1 / p_1 = MU_2 / p_2$) -- und loese dann die Aufgabe.
+Weg A: Souveraener Konsument. Nutzenstreben plus Wettbewerb plus Information fuehren zu bester Wahl und effizienter Zuteilung. Staerke ist Freiheit und Vielfalt, Schwaeche ist Blindheit gegenueber Werbung, Impuls und ungleichen Budgets.
 
-AUFGABE A: Ein Fall verlangt nur eine qualitative Rangfolge ohne Zahlenwert.
-AUFGABE B: Ein Fall verlangt einen belegten Vergleich mit Kennzahl und Begruendung.
+Weg B: Oekologische Konsumkritik. Nebenkosten der Produktion, Fussabdruck des Verbrauchs und Fairness gegenueber kuenftigen Generationen stehen im Zentrum. Staerke ist Ehrlichkeit gegenueber Natur und Zukunft, Schwaeche sind hoehere Preise und geringere Bequemlichkeit heute.
 
-HILFE: Aufgabe A nennt kein Berechnungsziel, daher Verfahren (i). Aufgabe B verlangt eine Kennzahl wie $Gini$ oder $p_N(q) = p_A(q)$, daher Verfahren (ii). Die Wahl des Verfahrens steht vor jeder Rechnung.
+AUFGABE A: Ein Discounter wirbt mit billigem Sneaker ohne Herkunftsnachweis. Stelle aus Sicht von Weg A dar, warum freie Wahl und Preiswettbewerb hier wirksam sind, und pruefe danach mit Weg B, welche Nebenkosten und welche Zukunftslasten der billige Preis verdeckt. Schliesse mit einem Urteil zu Labelpflicht und Verbraucherbildung.
 
-ANTWORT: Aufgabe A erfordert Verfahren (i), weil eine Rangfolge aus der Form genuegt. Aufgabe B erfordert Verfahren (ii), weil erst die Kennzahl mit $d = x_2 - x_1$ ein begruendetes Urteil erlaubt.
+AUFGABE B: Die Stadt plant eine Kampagne zum Fussabdruck mit Label, Pfand und Reparaturbonus. Stelle aus Sicht von Weg B dar, wie sich Nebenkosten, Fussabdruck und Generationengerechtigkeit auf die Wahl auswirken, und pruefe danach mit Weg A, ob Anreize statt Verbote die Souveraenitaet besser wahren. Schliesse mit einem Urteil zu milden gegenueber starken Eingriffen.
+
+HILFE: Aufgabe A verlangt erst Nutzenlob, dann Kritik der Nebenkosten. Aufgabe B verlangt erst Zukunftsbegruendung, dann Freiheitspruefung. Beide Male erst Weg benennen, dann Kaufmotiv mit Signalwirkung, dann Folgen fuer Natur und Budget, dann Urteil am Kriterium.
+
+ANTWORT: Aufgabe A folgt erst Weg A mit Preis- und Wettbewerbslob, dann Weg B mit Aufdeckung von Nebenkosten und Fussabdruck; Ergebnis ist ein Plaedoyer fuer ehrliches Label als mildes Mittel. Aufgabe B folgt erst Weg B mit Zukunftsbegruendung, dann Weg A mit Souveraenitaetspruefung; Ergebnis waegt Anreiz gegen Verbot und sichert Wahlfreiheit mit Information.
 
 Klausur-Satz: `Ein Werbeverbot ist ein starkes staatliches Instrument, während ein Label das mildere Mittel darstellt.`
 
-## Schritt 6 — check: Verständnisprüfung
+## Schritt 6 — check: Selbsttest zu Konsum
 
 CHECK (drei Fragen mit Antworten):
 
-FRAGE: Wie lautet die Konzeptkette vom Bedürfnis zur Nachfrage? | ANTWORT: Bedürfnis (unbegrenzt) → Bedarf (mit Kaufkraft) → Nachfrage (am Markt wirksam).
-FRAGE: Warum ist der homo oeconomicus keine Beschreibung realer Menschen? | ANTWORT: Weil er vollständige Information und reine Nutzenmaximierung unterstellt, während reale Menschen von Kultur, Gewohnheit und Emotionen geleitet werden.
-FRAGE: Auf welchen drei Säulen ruht Nachhaltigkeit? | ANTWORT: Auf der ökologischen, der sozialen und der ökonomischen Säule.
+FRAGE: Wie lautet die Kette vom Beduerfnis zur Nachfrage. | ANTWORT: Beduerfnis ohne Grenze wird mit Kaufkraft zu Bedarf und erst am Markt zu wirksamer Nachfrage.
+FRAGE: Warum ist der Homo oeconomicus keine Beschreibung realer Menschen. | ANTWORT: Weil er volle Information und reine Nutzenorientierung unterstellt, waehrend reale Menschen von Kultur, Gewohnheit und Gefuehlen geleitet werden.
+FRAGE: Auf welchen drei Saeulen ruht Nachhaltigkeit. | ANTWORT: Auf der oekologischen, der sozialen und der oekonomischen Saeule.
 
 Klausur-Satz: `Nachhaltigkeit ruht auf drei Säulen, die nicht gegeneinander ausgespielt werden dürfen.`
 
@@ -143,25 +135,25 @@ Klausur-Satz: `Nachhaltigkeit ruht auf drei Säulen, die nicht gegeneinander aus
 
 (Kein Schritt; wird vom Parser uebersprungen.)
 
-1. Fehlkonzept: Die beiden Verfahren seien austauschbar und fuehrten stets zum gleichen Ergebnis.
-   Korrektur-Satz: `Verfahren (i) liefert nur eine Rangfolge, Verfahren (ii) liefert eine Kennzahl; beide duerfen nicht gleichgesetzt werden.`
+1. Fehlkonzept: Teurer sei automatisch nachhaltiger und billiger sei automatisch schlechter, der Preis allein beweise die Moral des Produkts.
+   Korrektur-Satz: `Erst Herkunftsnachweis, Siegel und Lebensdauer zeigen die oekologische Qualitaet; der Preis allein taeuscht, weil er Werbung und Marge enthaelt.`
 
-2. Fehlkonzept: Ein einzelner Wert wie $Gini$ oder $p_G$ spreche bereits fuer sich und brauche kein Kriterium.
-   Korrektur-Satz: `Erst die Deutung der Kennzahl am Kriterium mit $d = x_2 - x_1$ ergibt ein klausurtaugliches Urteil.`
+2. Fehlkonzept: Souveraen sei, wer spontan kaufe, was der Feed lobe; Beeinflussung gebe es nur bei anderen, nicht bei mir.
+   Korrektur-Satz: `Souveraen ist nur, wer Preise vergleicht, Label prueft und Alternativen kennt; wer dem Impuls folgt, waehlt fremdbestimmt trotz Gefuehl von Freiheit.`
 
-## Schritt 7 — szenario: Klausurtransfer & Rubric
+## Schritt 7 — szenario: Verbraucherinitiative und Werberegulierung-Debatte
 
-ROLLE: Du bist Mitglied einer Verbraucherinitiative und sprichst auf einer öffentlichen Veranstaltung
-SITUATION: Eine Diskussion dreht sich um die Frage, ob Werbung für ungesunde oder nicht nachhaltige Produkte stärker reguliert werden soll. Ein Teil des Publikums fordert ein Werbeverbot, ein anderer Teil setzt auf Information und freiwillige Selbstverpflichtung der Unternehmen. Beurteile in einer zusammenhängenden Stellungnahme (ca. 150 Wörter), welches Instrument du befürwortest, und begründe dein Urteil mit Blick auf Konsumentensouveränität und Nachhaltigkeit
+ROLLE: Du bist Mitglied einer Verbraucherinitiative und sprichst auf einer oeffentlichen Veranstaltung.
+SITUATION: Eine Diskussion dreht sich um die Frage, ob Werbung fuer ungesunde oder nicht nachhaltige Produkte staerker begrenzt werden soll. Ein Teil des Publikums fordert ein Werbeverbot, ein anderer Teil setzt auf Information und freiwillige Selbstverpflichtung der Unternehmen. Beurteile in einer zusammenhaengenden Stellungnahme mit etwa 150 Woertern, welches Mittel du befuerwortest, und begruende dein Urteil mit Blick auf Konsumentensouveraenitaet und Nachhaltigkeit.
 AUFGABE (AFB III): Verfasse eine zusammenhaengende Darstellung von etwa 150 Woertern mit Kriterium, Anwendung und Urteil.
-RUBRIC (30 XP): These mit Kriterium (5 XP) | Rekonstruktion mit $x_1$, $x_2$ (10 XP) | Anwendung mit $d = x_2 - x_1$ (10 XP) | Fazit mit Fachbegriffen (5 XP).
+RUBRIC (30 XP): These mit Kriterium Souveraenitaet und Nachhaltigkeit (5 XP) | Darstellung von Werbung als Signal und Label als Info (10 XP) | Abwaegung von Verbot gegen mildes Mittel mit Fussabdruck und Nebenkosten (10 XP) | Fazit mit Fachbegriffen und konkreter Empfehlung (5 XP)
 
-## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
+## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY (Kernbotschaft in einem Kasten):
 
-Takeaway-Satz: `Begriff schaerfen, Wahl des Verfahrens treffen, Kennzahl mit $d = x_2 - x_1$ deuten und kriteriengeleitet urteilen.`
+Takeaway-Satz: `Wer nur auf den Preis schaut, zahlt doppelt: einmal an der Kasse und einmal mit Natur und Zukunft; kluger Konsum rechnet beides ein.`
 
 REFLEXION (zwei Fragen):
-1. Welcher Schritt fiel schwerer -- die Anwendung mit $x_1$ und $x_2$ (Schritt 4) oder die Wahl des Verfahrens (Schritt 5)?
-2. Beim naechsten Mal pruefe ich zuerst das Aufgabenziel und waehle danach Verfahren (i) oder (ii).
+1. Wo hast du zuletzt Weg A gelebt und Weg B vergessen: Welcher Kauf folgte Nutzen und Wettbewerb, und wo haetten Fussabdruck und Nebenkosten dein Urteil veraendert.
+2. Welchen Fehlschluss willst du kuenftig vermeiden: Preis mit Qualitaet zu verwechseln oder Impuls mit Souveraenitaet, und mit welcher Prueffrage zu Label und Alternative sicherst du kuenftig deine Wahl.

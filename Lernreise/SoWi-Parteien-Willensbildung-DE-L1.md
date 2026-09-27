@@ -15,30 +15,17 @@ version: Lesson-v3
 
 <!-- Lesson-v3: 8 Schritte plus Anekdote und Fehlvorstellung; Fehlvorstellung zwischen Schritt 6 und 7 (Parser-Skip); interaktives [Werkzeug: <id>]; Gating: check/szenario nicht bestanden = Weiter gesperrt; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
-## Schritt 1 — entdecken: Ziele & Phänomen-Einstieg
+## Schritt 1 — entdecken: Ziele & Phaenomen-Einstieg
 
 ZIELE (drei messbare Ziele dieser Lektion):
 
-1. Du kannst **Partei** und **Volkspartei** in je einem Satz definieren und Art. 21 GG korrekt wiedergeben.
-2. Du kannst **Stammwaehler** und **Wechselwaehler** mit $Bindung = fest$ gegen $Wahl = flexibel$ unterscheiden und Erosion deuten.
-3. Du kannst mit dem Kriterium **Repraesentation** ein Urteil zu 5ProzentHuerde formulieren und mit einem Klausur-Satz schliessen (AFB II/III).
+1. Du kannst Partei und Volkspartei in je einem Satz definieren und Art. 21 GG korrekt wiedergeben.
+2. Du kannst Stammwaehler und Wechselwaehler unterscheiden und die Erosion der Volksparteien deuten.
+3. Du kannst mit dem Kriterium Repraesentation ein Urteil zur Fuenfprozenthuerde formulieren und mit einem Klausur-Satz schliessen (AFB II/III).
 
 ### Hook / Phaenomen
 
-Stell dir vor, ein Wagen rast auf fuenf Menschen zu und du stehst an der Weiche und kannst den Wagen auf ein Gleis mit nur einer Person lenken, waehrend die Gruppe hinter dir ruft, dass Rechnen doch klar sei und fuenf Leben mehr zaehlten als eines. Gleichzeitig weisst du aus deiner Sozialisation in Familie und Schule und Freundeskreis, dass jeder Mensch Wuerde traegt und niemand zum blossen Mittel fuer andere gemacht werden darf. Genau hier kollidieren zwei Pruefungen desselben Falles: Die eine Bilanz zaehlt Lust und Leid fuer alle Betroffenen zusammen, die andere Pruefung fragt, ob deine Maxime als allgemeines Gesetz gewollt werden kann. In dieser Lektion lernst du den Mechanismus aus Bilanz und Probe und Abwaegung, damit du in der Klausur beide Brillen sauber trennst und dein Urteil an einem expliziten Kriterium begruendest.
-
-
-Ausgangslage aus der Vorlage: Ueber 90 Prozent fuer zwei Parteien in den Siebzigern, heute braucht es oft drei Partner fuer eine Regierung. Stammwaehler schmelzen, Wechselwaehler entscheiden. Braucht Demokratie noch grosse Schiffe oder viele Boote?
-
-### Fachbegriff & Definition
-
-**Parteien** wirken nach Art. 21 GG an der politischen **Willensbildung** des Volkes mit. Ihre Gruendung ist frei, ihre innere Ordnung muss demokratisch sein, verbieten darf nur das **Bundesverfassungsgericht**. **Volksparteien** binden mehrere Schichten und Regionen und streben Regierungsfaehigkeit an. Kurz: Viele Meinungen, ein Verfahren, klare Huete.
-
-### Wirkungsgefuege / Modell
-
-Der Mechanismus laeuft in drei Stufen: **Angebot, Bindung, Entscheidung**. Erstens bieten Parteien mit $Programm = Werte + Massnahmen$ Orientierung aus drei Leitideen: konservativ, sozialistisch, liberal. Zweitens bindet $Stamm = Gewohnheit + Milieu$ treu, waehrend $Wechsel = Themen + Personen$ wandert. Drittens filtert die **Fuenfprozenthuerde** mit $Sitz = Huerde + Mandat$ Splitter gegen Stabilitaet. Faellt Bindung aus, steigt Volatilitaet mit $Volatilitaet = hoch$.
-
-Klausur-Satz: `Art. 21 GG gibt den Parteien den Auftrag, an der politischen Willensbildung des Volkes mitzuwirken; ihre Gründung ist frei, ihre innere Ordnung muss demokratisch sein.`
+In den Siebzigern vereinten zwei Parteien ueber neunzig Prozent der Stimmen, heute braucht es oft drei Partner fuer eine Regierung. Stammwaehler schmelzen, Wechselwaehler entscheiden. Braucht die Demokratie noch grosse Schiffe oder viele Boote? In dieser Lektion lernst du zwei Wege der Antwort: Weg A vertraut den Parteien als Vermittlern nach Art. 21 GG, Weg B vertraut Buergerinitiativen und Bewegungen mit direktem Druck.
 
 ## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
 
@@ -50,17 +37,15 @@ Drei Ideen praegen alle Programme, doch wer steht wofuer? Ohne Kompass wird Wahl
 
 ### Fachbegriffe & Definitionen
 
-- **Konservatismus:** Die Leitidee mit $Wert = Ordnung + Tradition$. Sie betont $Wandel = massvoll$ und Staat als Hueter.
-- **Sozialismus:** Die Leitidee mit $Wert = Gleichheit + Solidaritat$. Sie fordert $Ausgleich = Staat + Umverteilung$ als Gerechtigkeit.
-- **Liberalismus:** Die Leitidee mit $Wert = Freiheit + Markt$. Sie verlangt $Staat = schlank$ und Eigenverantwortung.
-- **Volkspartei:** Der Typ mit $Basis = Schichten + Regionen$. Sie verbindet $Ziel = Mehrheit + Regierung$ mit Mitte.
-- **Parteienverdrossenheit:** Die Distanz mit $Kritik = Parteien + Personal$. Sie trifft nicht das System, sondern Akteure mit $Kritik = Personal$.
+- **Konservatismus:** Die Leitidee von Ordnung und Tradition. Sie betont massvollen Wandel und den Staat als Hueter von Stabilitaet.
+- **Sozialismus:** Die Leitidee von Gleichheit und Solidaritaet. Sie fordert staatlichen Ausgleich und soziale Gerechtigkeit durch Umverteilung.
+- **Liberalismus:** Die Leitidee von Freiheit und Eigenverantwortung. Sie verlangt einen schlanken Staat und offne Maerkte.
+- **Volkspartei:** Der Parteityp mit breiter Basis aus mehreren Schichten und Regionen. Sie verbindet Mitte mit Regierungsfaehigkeit und Kompromiss.
+- **Parteienverdrossenheit:** Die Distanz zu konkreten Parteien und Personen. Sie trifft meist nicht das System, sondern Akteure und Personal.
 
 ### Wirkungsgefuege / Modell
 
-Die Begriffe greifen ineinander: **Konservatismus**, **Sozialismus** und **Liberalismus** liefern die Achsen $Ordnung + Gleichheit + Freiheit$. Die **Volkspartei** buendelt sie zur Mitte mit $Erfolg = Breite + Kompromiss$. **Parteienverdrossenheit** warnt mit $Vertrauen = sinkend$ vor Entfremdung. Wer in der Klausur vergleicht, muss deshalb immer fragen: Welche Idee traegt welches Programm?
-
-Punkte-Hinweis: Nenne $Utilitarismus$ mit $U = \sum(Lust - Leid)$ und $Kategorischer Imperativ$ mit $M \to G$; erst beide Pruefungen plus Kriterium wie Menschenwuerde gibt volle Punkte.
+Die Begriffe greifen ineinander: Konservatismus, Sozialismus und Liberalismus liefern die Achsen von Ordnung, Gleichheit und Freiheit. Die Volkspartei buendelt sie zur regierungsfaehigen Mitte. Parteienverdrossenheit warnt vor Entfremdung zwischen Buergerschaft und Akteuren. Wer in der Klausur vergleicht, muss deshalb immer fragen: Welche Idee traegt welches Programm, und wen bindet es noch?
 
 Klausur-Satz: `Die drei Leitideen — konservativ, sozialistisch und liberal — prägen bis heute die Programme der Bundestagsparteien.`
 
@@ -70,24 +55,24 @@ TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
 ### Hook / Phaenomen
 
-Volkspartei schrumpft — Ende oder Haeutung? Klima kostet — wer zahlt, wer verspricht? Stammwaehler weg, Wechselwaehler da — wer entscheidet Wahl?
+Volkspartei schrumpft: Ende oder Haeutung? Klima kostet: Wer zahlt, wer verspricht? Stammwaehler weg, Wechselwaehler da: Wer entscheidet die Wahl?
 
 ### Spiel-Aufgabe mit [Werkzeug: balance-board]
 
-Oeffne [Werkzeug: balance-board]. Lege CDU gegen SPD gegen Gruene auf die Waage. Gewichte Massnahme, Finanzierung, Waehlermilieu je 1 bis 5. Beobachte Erosion: Stamm schmilzt, Wechsel entscheidet. Vergleiche Wahlprogramme zu Klima per Pro-Contra-Karten.
+Oeffne [Werkzeug: balance-board]. Lege zwei Wahlprogramme zum Klima auf die Waage. Gewichte Massnahme, Finanzierung und Waehlermilieu je 1 bis 5. Beobachte die Erosion: Der Stamm schmilzt, der Wechsel entscheidet. Vergleiche die Programme per Pro- und Contra-Karten zu Massnahme und Finanzierung.
 
 ### Aha-Moment & Gesetz
 
-Aha-Moment: Milieu — Programm — Entscheidung. Erstens erodieren Volksparteien mit $Stamm = schmelzend$. Zweitens trennt $Massnahme + Finanzierung$ die Programme. Drittens entscheidet Wechselwaehler nach Kriterium Responsivitaet. Gesetz: $Wahl = Stamm + Wechsel + Programm$.
+Aha-Moment: Milieu, Programm, Entscheidung. Erstens erodieren Volksparteien, weil Milieus zerfallen. Zweitens trennen Massnahme und Finanzierung die Programme. Drittens entscheidet der Wechselwaehler nach dem Kriterium Responsivitaet. Gesetz: Wahlentscheidung folgt aus Stammbindung plus Wechselbereitschaft plus Programmangebot.
 
 ```diagram
-  Milieu [Stamm + Wechsel + Jugend]
-  Milieu -> Waage [Programme + Gewichte 1 bis 5]
-  Waage -> Vergleich [Massnahme + Finanzierung]
-  Vergleich -> Urteil [Erosion + Responsivitaet]
+  Milieu [Stamm plus Wechsel plus Jugend]
+  Milieu -> Waage [Programme plus Gewichte 1 bis 5]
+  Waage -> Vergleich [Massnahme plus Finanzierung]
+  Vergleich -> Urteil [Erosion plus Responsivitaet]
 ```
 
-Kausalkette: Fall schildern — Bilanz mit $U = \sum(Lust - Leid)$ gegen Probe mit $M \to G$ — Urteil am Kriterium Menschenwuerde; Abgrenzung zu $p_N(q) = p_A(q)$ mit $q_A - q_N$ und zu $Gini$ steht vor jeder Stellungnahme.
+Kausalkette: Fall schildern, beide Programme nach Massnahme und Finanzierung ordnen, Stammverlust und Wechselgewinn deuten, Urteil am Kriterium Repraesentation und Integration formulieren.
 
 Klausur-Satz: `Die Verluste von CDU und SPD belegen die Erosion der Volksparteien: Stammwähler schmelzen, Wechselwähler entscheiden.`
 
@@ -95,7 +80,7 @@ Klausur-Satz: `Die Verluste von CDU und SPD belegen die Erosion der Volksparteie
 
 Bei Bundestagswahlen in den 1970er-Jahren kamen die Union und die SPD zusammen auf über 90 Prozent der Stimmen. Heute liegt dieser Wert deutlich niedriger, und oft braucht es drei Partner für eine Regierung. Der Wählerauftrag verteilt sich also auf immer mehr Schultern
 
-Bezug zum Konzept: `Das Beispiel zeigt, wie aus Beobachtung ein pruefbares Verfahren mit $x_1$ und $x_2$ entsteht.`
+Bezug zum Konzept: `Das Beispiel zeigt, wie aus stabilen Milieus volatile Wählermärkte mit Erosion und Wechsel wurden.`
 
 ## Schritt 4 — ausprobieren: Interaktive Praxis & Urteils-Waage
 
@@ -103,38 +88,45 @@ BEISPIEL (geleitete Aufgabe mit Werkzeug):
 
 [Werkzeug: balance-board]
 
-Lege im Tool Pro- und Contra-Argumente auf die Waage und gewichte jedes Argument von 1 bis 5; veraendere die Gewichte Schritt fuer Schritt und beobachte, wann das Urteil zwischen Erlaubnis und Verbot oder zwischen Massnahme und Verzicht umschlaegt.
+Lege im Tool Pro- und Contra-Argumente auf die Waage und gewichte jedes Argument von 1 bis 5; veraendere die Gewichte Schritt fuer Schritt und beobachte, wann das Urteil zwischen Integration und Protest oder zwischen Stabilitaet und Vielfalt umschlaegt.
 
-AUFGABE Waage-Raetsel (AFB II): Vergleiche auf [Werkzeug: balance-board] zwei Wahlprogramme zu Klima. Lege Massnahme gegen Finanzierung, gewichte 1 bis 5 und erklaere Erosion per Stamm-Verlust.
+AUFGABE Waage-Raetsel (AFB II): Vergleiche auf [Werkzeug: balance-board] zwei Wahlprogramme zum Klima. Lege Massnahme gegen Finanzierung, gewichte 1 bis 5 und erklaere die Erosion ueber den Stammverlust.
 
 HILFE:
-1. Schritt 1: Exzerpiere Massnahme und Finanzierung je Partei. 2. Schritt 2: Gewichte auf der Waage. 3. Schritt 3: Deute an Willensbildung und formuliere den Klausur-Satz.
+1. Schritt 1: Exzerpiere Massnahme und Finanzierung je Partei.
+2. Schritt 2: Gewichte beide Seiten auf der Waage.
+3. Schritt 3: Deute an Willensbildung und formuliere den Klausur-Satz.
 
-MUSTERLOESUNG: Beide versprechen Schutz; Unterschied liegt bei $Massnahme + Finanzierung$. Waage zeigt: Wer zahlt, trennt Lager — Erosion belegt, Wechsel entscheidet.
+MUSTERLOESUNG: Beide versprechen Schutz; der Unterschied liegt bei Massnahme und Finanzierung. Die Waage zeigt: Wer zahlt, trennt die Lager. Erosion belegt den Trend, der Wechsel entscheidet die Wahl.
 
 Klausur-Satz: `Der Vergleich der Wahlprogramme zeigt, dass sich die Klimapolitik der Parteien vor allem bei Maßnahme und Finanzierung unterscheidet.`
 
-## Schritt 5 — ausprobieren: Verfahrensvergleich & Abgrenzung
+## Schritt 5 — ausprobieren: Wegvergleich & Abgrenzung
 
-VERGLEICH (Wahl des Verfahrens, A gegen B):
+VERGLEICH (Wahl des Weges, Weg A gegen Weg B):
 
-VERGLEICH: Triff zuerst die Wahl des Verfahrens -- (i) Verfahren A (deskriptive Rekonstruktion) oder (ii) Verfahren B (kriteriengeleitete Beurteilung) -- und loese dann die Aufgabe.
+VERGLEICH: Waehle zuerst bewusst Weg A (Parteien als Vermittler) oder Weg B (Buergerinitiativen und Bewegungen) und begruende dann dein Urteil am passenden Kriterium.
 
-AUFGABE A: Ein Fall verlangt nur eine qualitative Rangfolge ohne Zahlenwert.
-AUFGABE B: Ein Fall verlangt einen belegten Vergleich mit Kennzahl und Begruendung.
+Weg A: Parteien als Vermittler nach Art. 21 GG leisten Integration und Sozialisation. Sie buendeln Interessen, bilden Personal aus und sichern Regierungsfaehigkeit ueber die Mitte. Staerke dieses Weges ist Dauer und Verantwortung; Grenze ist die Ferne zu einzelnen Anliegen und die Disziplin der Apparate.
 
-HILFE: Aufgabe A nennt kein Berechnungsziel, daher Verfahren (i). Aufgabe B verlangt eine Kennzahl wie $Gini$ oder $p_N(q) = p_A(q)$, daher Verfahren (ii). Die Wahl des Verfahrens steht vor jeder Rechnung.
+Weg B: Buergerinitiativen und Bewegungen setzen auf Einzelthemen-Protest und direkten Druck. Sie mobilisieren schnell, skandalisieren Versaeumnisse und zwingen Parteien zur Antwort. Staerke dieses Weges ist Naehe und Tempo; Grenze ist die Enge des Themas und die fehlende Verantwortung fuer das Ganze.
 
-ANTWORT: Aufgabe A erfordert Verfahren (i), weil eine Rangfolge aus der Form genuegt. Aufgabe B erfordert Verfahren (ii), weil erst die Kennzahl mit $d = x_2 - x_1$ ein begruendetes Urteil erlaubt.
+AUFGABE A: Jugendliche fragen, warum sie noch eine grosse Volkspartei waehlen sollen, wenn kleine Parteien genauer passen. Loese den Fall ueber Weg A und diskutiere Integration und Regierungsfaehigkeit.
+
+AUFGABE B: Dieselbe Jugendgruppe organisiert eine Klimainitiative mit Demo und Petition statt Parteiarbeit. Loese den Fall ueber Weg B und pruefe direkten Druck und Themenmobilisierung als Willensbildung.
+
+HILFE: Aufgabe A fragt nach Vermittlung, daher Art. 21 mit Integration und Sozialisation nennen. Aufgabe B fragt nach Bewegung, daher Mobilisierung und Druck nennen. Die Wahl des Weges steht vor jedem Urteil.
+
+ANTWORT: Aufgabe A wird ueber Weg A geloest, weil Parteien Interessen buendeln und regierungsfaehig machen, was Initiativen allein nicht leisten. Aufgabe B wird ueber Weg B geloest, weil Initiativen vernachlaessigte Themen schnell auf die Agenda setzen und Parteien zur Antwort zwingen. Erst beide Wege zusammen ergeben ein klausurtaugliches Urteil.
 
 Klausur-Satz: `Die Erosion der Volksparteien zeigt sich im sinkenden Stimmenanteil, weil Wechselwähler zunehmen und Stammwähler schmelzen.`
 
-## Schritt 6 — check: Verständnisprüfung
+## Schritt 6 — check: Selbsttest zu Parteien und Willensbildung
 
 CHECK (drei Fragen mit Antworten):
 
 FRAGE: Welche Aufgabe weist Art. 21 GG den Parteien zu, und wer darf sie verbieten? | ANTWORT: Parteien wirken an der politischen Willensbildung mit; verbieten darf sie nur das Bundesverfassungsgericht.
-FRAGE: Welche drei Merkmale kennzeichnen eine Volkspartei? | ANTWORT: Sie bindet mehrere Schichten, ist in vielen Regionen verankert und besitzt Regierungsfähigkeit.
+FRAGE: Welche drei Merkmale kennzeichnen eine Volkspartei? | ANTWORT: Sie bindet mehrere Schichten, ist in vielen Regionen verankert und besitzt Regierungsfaehigkeit.
 FRAGE: Worauf richtet sich Parteienverdrossenheit in der Regel? | ANTWORT: Auf die konkreten Parteien und Politiker, meist nicht auf die Demokratie als Staatsform.
 
 Klausur-Satz: `Die 5-Prozent-Hürde stabilisiert das Parlament, schließt aber kleine Parteien aus — Funktionsfähigkeit gegen Repräsentationsgerechtigkeit.`
@@ -143,25 +135,25 @@ Klausur-Satz: `Die 5-Prozent-Hürde stabilisiert das Parlament, schließt aber k
 
 (Kein Schritt; wird vom Parser uebersprungen.)
 
-1. Fehlkonzept: Die beiden Verfahren seien austauschbar und fuehrten stets zum gleichen Ergebnis.
-   Korrektur-Satz: `Verfahren (i) liefert nur eine Rangfolge, Verfahren (ii) liefert eine Kennzahl; beide duerfen nicht gleichgesetzt werden.`
+1. Fehlkonzept: Parteienverdrossenheit bedeute Ablehnung der Demokratie als Staatsform.
+   Korrektur-Satz: `Parteienverdrossenheit kritisiert meist Personen und Parteien, während die Zustimmung zur Demokratie als Ordnung erhalten bleibt.`
 
-2. Fehlkonzept: Ein einzelner Wert wie $Gini$ oder $p_G$ spreche bereits fuer sich und brauche kein Kriterium.
-   Korrektur-Satz: `Erst die Deutung der Kennzahl am Kriterium mit $d = x_2 - x_1$ ergibt ein klausurtaugliches Urteil.`
+2. Fehlkonzept: Die Fuenfprozenthuerde diene nur dem Ausschluss kleiner Parteien ohne demokratischen Nutzen.
+   Korrektur-Satz: `Die Hürde sichert Funktionsfähigkeit gegen Zersplitterung und wägt sie gegen Repräsentationsgerechtigkeit ab.`
 
-## Schritt 7 — szenario: Klausurtransfer & Rubric
+## Schritt 7 — szenario: Podiumsdiskussion & Programmstreit
 
-ROLLE: Du bist Wahlkampfberaterin bzw. Wahlkampfberater einer Jugendorganisation
-SITUATION: Deine Gruppe soll auf einem Podium ein Wahlprogramm zum Thema Bildung vorstellen. Ein Publikumsteil fragt, warum man überhaupt noch eine große Volkspartei wählen soll, wenn kleine Parteien genauer zu den eigenen Interessen passen. Beurteile in einer zusammenhängenden Stellungnahme (ca. 150 Wörter), welche Vor- und Nachteile Volksparteien und kleine Parteien für die politische Willensbildung haben
+ROLLE: Du bist Wahlkampfberaterin bzw. Wahlkampfberater einer Jugendorganisation.
+SITUATION: Deine Gruppe soll auf einem Podium ein Wahlprogramm zum Thema Bildung vorstellen. Ein Publikumsteil fragt, warum man ueberhaupt noch eine grosse Volkspartei waehlen soll, wenn kleine Parteien genauer zu den eigenen Interessen passen. Beurteile in einer zusammenhängenden Stellungnahme (ca. 150 Wörter), welche Vor- und Nachteile Volksparteien und kleine Parteien für die politische Willensbildung haben.
 AUFGABE (AFB III): Verfasse eine zusammenhaengende Darstellung von etwa 150 Woertern mit Kriterium, Anwendung und Urteil.
-RUBRIC (30 XP): These mit Kriterium (5 XP) | Rekonstruktion mit $x_1$, $x_2$ (10 XP) | Anwendung mit $d = x_2 - x_1$ (10 XP) | Fazit mit Fachbegriffen (5 XP).
+RUBRIC (30 XP): These mit Kriterium Repraesentation und Regierungsfaehigkeit (5 XP) | Darstellung von Volkspartei und kleiner Partei mit Art. 21 Bezug (10 XP) | Anwendung auf Bildung mit Abwaegung von Integration und Themennaehe (10 XP) | Fazit mit Fachbegriffen und Klausur-Satz (5 XP).
 
-## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
+## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY (Kernbotschaft in einem Kasten):
 
-Takeaway-Satz: `Begriff schaerfen, Wahl des Verfahrens treffen, Kennzahl mit $d = x_2 - x_1$ deuten und kriteriengeleitet urteilen.`
+Takeaway-Satz: `Parteien bündeln Macht, Bewegungen erzeugen Druck: Willensbildung braucht beide.`
 
 REFLEXION (zwei Fragen):
-1. Welcher Schritt fiel schwerer -- die Anwendung mit $x_1$ und $x_2$ (Schritt 4) oder die Wahl des Verfahrens (Schritt 5)?
-2. Beim naechsten Mal pruefe ich zuerst das Aufgabenziel und waehle danach Verfahren (i) oder (ii).
+1. Wann ueberzeugt Weg A mit Integration und Regierungsfaehigkeit staerker, und wann verlangt der Fall Weg B mit Protest und direktem Druck? Nenne ein Abgrenzungsmerkmal.
+2. Pruefe deine Antwort an der Klausurnorm: Hast du Art. 21 korrekt zugeordnet, beide Wege erwoegen und das Urteil an einem expliziten Kriterium begruendet?

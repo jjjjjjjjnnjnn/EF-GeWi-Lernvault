@@ -15,30 +15,17 @@ version: Lesson-v3
 
 <!-- Lesson-v3: 8 Schritte plus Anekdote und Fehlvorstellung; Fehlvorstellung zwischen Schritt 6 und 7 (Parser-Skip); interaktives [Werkzeug: <id>]; Gating: check/szenario nicht bestanden = Weiter gesperrt; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
-## Schritt 1 — entdecken: Ziele & Phänomen-Einstieg
+## Schritt 1 — entdecken: Ziele & Phaenomen-Einstieg
 
 ZIELE (drei messbare Ziele dieser Lektion):
 
-1. Du kannst **Verfassungsorgane** und **Gewaltenteilung** in je einem Satz definieren und fuenf Organe korrekt benennen.
-2. Du kannst **Bundestag** und **Bundesrat** mit $Volk = Wahl$ gegen $Laender = Regierung$ unterscheiden und Weg zum Gesetz darstellen.
-3. Du kannst mit dem Kriterium **Funktionsfaehigkeit** ein Urteil zu Verkleinerung formulieren und mit einem Klausur-Satz schliessen (AFB II/III).
+1. Du kannst Verfassungsorgane und Gewaltenteilung in je einem Satz definieren und die fuenf Organe korrekt benennen.
+2. Du kannst Bundestag und Bundesrat als Volks- und Laenderkammer unterscheiden und den Weg eines Gesetzes darstellen.
+3. Du kannst mit dem Kriterium Handlungsfaehigkeit ein Urteil zu parlamentarischer Fuehrung und foederativer Kontrolle formulieren und mit einem Klausur-Satz schliessen (AFB II/III).
 
 ### Hook / Phaenomen
 
-Stell dir vor, ein Wagen rast auf fuenf Menschen zu und du stehst an der Weiche und kannst den Wagen auf ein Gleis mit nur einer Person lenken, waehrend die Gruppe hinter dir ruft, dass Rechnen doch klar sei und fuenf Leben mehr zaehlten als eines. Gleichzeitig weisst du aus deiner Sozialisation in Familie und Schule und Freundeskreis, dass jeder Mensch Wuerde traegt und niemand zum blossen Mittel fuer andere gemacht werden darf. Genau hier kollidieren zwei Pruefungen desselben Falles: Die eine Bilanz zaehlt Lust und Leid fuer alle Betroffenen zusammen, die andere Pruefung fragt, ob deine Maxime als allgemeines Gesetz gewollt werden kann. In dieser Lektion lernst du den Mechanismus aus Bilanz und Probe und Abwaegung, damit du in der Klausur beide Brillen sauber trennst und dein Urteil an einem expliziten Kriterium begruendest.
-
-
-Ausgangslage aus der Vorlage: Bundestag zu gross, Reform soll deckeln, Direktkandidaten bangen um Sitz trotz Sieg im Kreis. Karlsruhe prueft, Versammlung waehlt, Notparlament wartet. Wer sichert Demokratie, wenn Groesse laehmt?
-
-### Fachbegriff & Definition
-
-**Verfassungsorgane** sind die obersten Staatsorgane nach dem Grundgesetz: **Bundestag, Bundesrat, Bundesregierung, Bundespraesident und Bundesverfassungsgericht**. **Gewaltenteilung** verteilt Macht auf Gesetzgebung, Vollzug und Rechtsprechung zur gegenseitigen Kontrolle. Der **Bundestag** vertritt das Volk, der **Bundesrat** die Laender. Kurz: Fuenf Hueter, ein Gleichgewicht.
-
-### Wirkungsgefuege / Modell
-
-Der Mechanismus laeuft in drei Stufen: **Wahl, Gesetz, Kontrolle**. Erstens legitimiert $Wahl = Volk$ den Bundestag mit $Mandat = frei$. Zweitens entsteht Gesetz mit $Bundestag + Bundesrat + Praesident$ als Kette. Drittens kontrolliert Karlsruhe mit $Norm = Verfassung$ jede Macht. Faellt Balance aus, gilt $Macht = konzentriert$ und Freiheit schrumpft.
-
-Klausur-Satz: `Der Gang der Gesetzgebung führt vom Bundestag über den Bundesrat (Zustimmung oder Einspruch) und ggf. den Vermittlungsausschuss bis zur Ausfertigung durch den Bundespräsidenten.`
+Der Bundestag waechst nach jeder Wahl, eine Reform soll die Sitze deckeln, doch Direktkandidaten bangen um ihren Sitz trotz Sieg im Wahlkreis. In Karlsruhe wird geprueft, im Bundesrat wird gebremst, die Regierung will handeln. Wer sichert hier die Demokratie: die handlungsfaehige Mehrheit im Parlament oder die bremsende Kontrolle durch Laender und Gericht? In dieser Lektion lernst du zwei Wege der Antwort: Weg A setzt auf parlamentarische Fuehrung, Weg B auf foederative Kontrolle.
 
 ## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
 
@@ -46,21 +33,19 @@ PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
 ### Hook / Phaenomen
 
-Wer waehlt wen, wer prueft was? Bonn gegen Berlin, Karlsruhe als Schiedsrichter. Diese fuenf Begriffe geben dir Karte und Kompass.
+Wer waehlt wen, wer prueft was? Bundestag gegen Bundesrat, Karlsruhe als Schiedsrichter. Diese fuenf Begriffe geben dir Karte und Kompass.
 
 ### Fachbegriffe & Definitionen
 
-- **Bundestag:** Das Parlament mit $Funktion = Gesetz + Wahl + Kontrolle$. Es traegt $Mehrheit = Kanzler$ als Zentrum.
-- **Bundesrat:** Die Laenderkammer mit $Stimme = Regierung + Weisung$. Sie sichert $Foederalismus = Mitwirkung$ bei Gesetzen.
-- **Bundesregierung:** Die Exekutive mit $Spitze = Kanzler + Minister$. Sie fuehrt $Politik = Initiative + Vollzug$.
-- **Bundesversammlung:** Das Wahlgremium mit $Halb = Bundestag + HalbLaender$. Sie waehlt $Praesident = Repraesentation$.
-- **Bundesverfassungsgericht:** Der Hueter mit $Sitz = Karlsruhe$ und $Macht = Pruefung + Verbot$. Es schuetzt $Verfassung = Grundrecht + Prinzip$.
+- **Bundestag:** Das direkt gewaehlte Parlament. Es beschliesst Gesetze, waehlt die Kanzlerin oder den Kanzler und kontrolliert die Regierung.
+- **Bundesrat:** Die Laenderkammer aus Mitgliedern der Landesregierungen. Sie sichert die Mitwirkung der Laender an der Bundesgesetzgebung.
+- **Bundesregierung:** Die Exekutive aus Kanzler und Ministern. Sie ergreift Initiativen und vollzieht die Gesetze im Alltag.
+- **Bundesversammlung:** Das Gremium zur Wahl des Bundespräsidenten. Es besteht zur Haelfte aus Bundestagsmitgliedern und zur Haelfte aus Laenderdelegierten.
+- **Bundesverfassungsgericht:** Der Hueter der Verfassung mit Sitz in Karlsruhe. Es prueft Gesetze, entscheidet ueber Parteiverbote und schuetzt Grundrechte.
 
 ### Wirkungsgefuege / Modell
 
-Die Begriffe greifen ineinander: **Bundestag** und **Bundesrat** geben $Gesetz = Volk + Laender$. **Regierung** handelt, **Versammlung** kuert, **Gericht** heilt mit $Kontrolle = letzt$. Wer in der Klausur ordnet, muss deshalb immer fragen: Wer handelt, wer segnet, wer stoppt?
-
-Punkte-Hinweis: Nenne $Utilitarismus$ mit $U = \sum(Lust - Leid)$ und $Kategorischer Imperativ$ mit $M \to G$; erst beide Pruefungen plus Kriterium wie Menschenwuerde gibt volle Punkte.
+Die Begriffe greifen ineinander: Bundestag und Bundesrat geben Gesetzen doppelte Legitimation aus Volk und Laendern. Die Regierung handelt, die Versammlung kuert das Staatsoberhaupt, das Gericht heilt Verstoesse als letzte Instanz. Wer in der Klausur ordnet, muss deshalb immer fragen: Wer handelt, wer stimmt zu, und wer stoppt bei einem Verstoss gegen die Verfassung?
 
 Klausur-Satz: `Art. 38 GG garantiert das freie Mandat: Abgeordnete sind an Aufträge nicht gebunden, sondern nur ihrem Gewissen unterworfen.`
 
@@ -70,24 +55,24 @@ TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
 ### Hook / Phaenomen
 
-Bund will, Laender blockieren — wer regiert? Gesetz eilig, Bundesrat bremst — Foederalismus als Bremse oder Schutz?
+Der Bund will ein Gesetz, die Laender blockieren: Wer regiert? Ein Gesetz ist eilig, der Bundesrat bremst: Ist Foederalismus Bremse oder Schutz?
 
 ### Spiel-Aufgabe mit [Werkzeug: balance-board]
 
-Oeffne [Werkzeug: balance-board]. Lege Bundestag als Volks-Kammer gegen Bundesrat als Laender-Kammer. Gewichte Zustimmungspflicht, Einspruch, Vermittlung von 1 bis 5. Spiele Politikzyklus: Problem — Programm — Implementation — Evaluation. Beobachte, wo $Ja$ des Bundesrates zwingend ist.
+Oeffne [Werkzeug: balance-board]. Lege Bundestag als Volkskammer gegen Bundesrat als Laenderkammer. Gewichte Zustimmungspflicht, Einspruch und Vermittlung von 1 bis 5. Spiele den Politikzyklus von Problem ueber Programm zu Implementation und Evaluation und beobachte, wo die Zustimmung des Bundesrates zwingend ist.
 
 ### Aha-Moment & Gesetz
 
-Aha-Moment: Volk — Land — Ausgleich. Erstens vertritt Bundestag das Volk, Bundesrat die Laender. Zweitens sichert Zustimmungsgesetz Mitwirkung bei $Haushalt = LaenderBeruehrt$. Drittens heilt Vermittlung Blockade nach Kriterium Foederaler Gewaltenteilung. Gesetz: $Gesetz \iff Bundestag + Bundesrat$.
+Aha-Moment: Volk, Land, Ausgleich. Erstens vertritt der Bundestag das Volk, der Bundesrat die Laender. Zweitens sichert das Zustimmungsgesetz die Mitwirkung der Laender, waehrend der Einspruch ueberstimmbar bleibt. Drittens heilt die Vermittlung die Blockade nach dem Kriterium foederaler Gewaltenteilung. Gesetz: Ein Gesetz braucht Bundestag plus Bundesrat.
 
 ```diagram
-  Initiative [Problem + Programm]
-  Initiative -> Waage [Bundestag vs Bundesrat 1 bis 5]
-  Waage -> Verfahren [Zustimmung + Einspruch + Vermittlung]
-  Verfahren -> Urteil [Evaluation offen]
+  Initiative [Problem plus Programm]
+  Initiative -> Waage [Bundestag gegen Bundesrat 1 bis 5]
+  Waage -> Verfahren [Zustimmung plus Einspruch plus Vermittlung]
+  Verfahren -> Urteil [Evaluation bleibt offen]
 ```
 
-Kausalkette: Fall schildern — Bilanz mit $U = \sum(Lust - Leid)$ gegen Probe mit $M \to G$ — Urteil am Kriterium Menschenwuerde; Abgrenzung zu $p_N(q) = p_A(q)$ mit $q_A - q_N$ und zu $Gini$ steht vor jeder Stellungnahme.
+Kausalkette: Fall schildern, beide Kammern mit ihrer Legitimation benennen, Zustimmung oder Einspruch zuordnen, Vermittlung als Ausgleich pruefen, Urteil am Kriterium Handlungsfaehigkeit und Kontrolle formulieren.
 
 Klausur-Satz: `Der Bundesrat vertritt die Länder, der Bundestag das Volk; beide zusammen sichern im Föderalismus die Mitwirkung der Länder an der Gesetzgebung.`
 
@@ -95,7 +80,7 @@ Klausur-Satz: `Der Bundesrat vertritt die Länder, der Bundestag das Volk; beide
 
 Der Bundespräsident wird nicht direkt vom Volk gewählt, sondern von der Bundesversammlung. Diese besteht zur Hälfte aus Mitgliedern des Bundestags und zur Hälfte aus Delegierten der Länder. Das war eine bewusste Lehre aus der Weimarer Republik, wo der direkt gewählte Reichspräsident sehr viel Macht besaß
 
-Bezug zum Konzept: `Das Beispiel zeigt, wie aus Beobachtung ein pruefbares Verfahren mit $x_1$ und $x_2$ entsteht.`
+Bezug zum Konzept: `Das Beispiel zeigt, wie Gewaltenteilung persönliche Macht begrenzt und Legitimation auf mehrere Organe verteilt.`
 
 ## Schritt 4 — ausprobieren: Interaktive Praxis & Urteils-Waage
 
@@ -103,39 +88,46 @@ BEISPIEL (geleitete Aufgabe mit Werkzeug):
 
 [Werkzeug: balance-board]
 
-Lege im Tool Pro- und Contra-Argumente auf die Waage und gewichte jedes Argument von 1 bis 5; veraendere die Gewichte Schritt fuer Schritt und beobachte, wann das Urteil zwischen Erlaubnis und Verbot oder zwischen Massnahme und Verzicht umschlaegt.
+Lege im Tool Pro- und Contra-Argumente auf die Waage und gewichte jedes Argument von 1 bis 5; veraendere die Gewichte Schritt fuer Schritt und beobachte, wann das Urteil zwischen Zustimmung und Blockade oder zwischen Fuehrung und Kontrolle umschlaegt.
 
-AUFGABE Waage-Raetsel (AFB II): Pruefe auf [Werkzeug: balance-board], ob ein Gesetz mit Laenderkosten zustimmungspflichtig ist. Lege Einspruch gegen Zustimmung, gewichte Blockade-Risiko und bestimme den Weg durch Vermittlung.
+AUFGABE Waage-Raetsel (AFB II): Pruefe auf [Werkzeug: balance-board], ob ein Gesetz mit Laenderkosten zustimmungspflichtig ist. Lege Einspruch gegen Zustimmung, gewichte das Blockaderisiko und bestimme den Weg durch die Vermittlung.
 
 HILFE:
-1. Schritt 1: Pruefe Laender-Beruehrung. 2. Schritt 2: Ordne Zustimmung oder Einspruch zu. 3. Schritt 3: Deute an Foederalismus und formuliere den Klausur-Satz.
+1. Schritt 1: Pruefe die Beruehrung der Laenderhaushalte.
+2. Schritt 2: Ordne Zustimmung oder Einspruch zu.
+3. Schritt 3: Deute an Foederalismus und formulieren den Klausur-Satz.
 
-MUSTERLOESUNG: Weil Haushalte der Laender beruehrt sind, gilt Zustimmungspflicht — ohne $Ja$ kein Inkrafttreten. Einspruch waere ueberstimmbar; hier heilt nur Vermittlung die Waage zwischen Volk und Laendern.
+MUSTERLOESUNG: Weil die Haushalte der Laender beruehrt sind, gilt Zustimmungspflicht: Ohne Zustimmung kein Inkrafttreten. Ein Einspruch waere ueberstimmbar; hier heilt nur die Vermittlung die Waage zwischen Volk und Laendern.
 
 Klausur-Satz: `Mithilfe des Politikzyklus lässt sich das Gesetz als Reaktion auf ein Problem mit schneller Implementation, aber offener Evaluation einordnen.`
 
-## Schritt 5 — ausprobieren: Verfahrensvergleich & Abgrenzung
+## Schritt 5 — ausprobieren: Wegvergleich & Abgrenzung
 
-VERGLEICH (Wahl des Verfahrens, A gegen B):
+VERGLEICH (Wahl des Weges, Weg A gegen Weg B):
 
-VERGLEICH: Triff zuerst die Wahl des Verfahrens -- (i) Verfahren A (deskriptive Rekonstruktion) oder (ii) Verfahren B (kriteriengeleitete Beurteilung) -- und loese dann die Aufgabe.
+VERGLEICH: Waehle zuerst bewusst Weg A (parlamentarische Fuehrung) oder Weg B (foederative Kontrolle) und begruende dann dein Urteil am passenden Kriterium.
 
-AUFGABE A: Ein Fall verlangt nur eine qualitative Rangfolge ohne Zahlenwert.
-AUFGABE B: Ein Fall verlangt einen belegten Vergleich mit Kennzahl und Begruendung.
+Weg A: Die parlamentarische Fuehrung setzt auf Regierungsmehrheit und Handlungsfaehigkeit. Bundestag und Regierung aus einer Mehrheit gestalten zuegig, Opposition kontrolliert oeffentlich, Wahlen sanktionieren spaeter. Staerke dieses Weges ist Gestaltungskraft und klare Verantwortung; Grenze ist die Versuchung, Kontrolle durch Laender und Gericht als Stoerung zu deuten.
 
-HILFE: Aufgabe A nennt kein Berechnungsziel, daher Verfahren (i). Aufgabe B verlangt eine Kennzahl wie $Gini$ oder $p_N(q) = p_A(q)$, daher Verfahren (ii). Die Wahl des Verfahrens steht vor jeder Rechnung.
+Weg B: Die foederative Kontrolle setzt auf Bundesrat, Bundesverfassungsgericht und Gewaltenteilung. Laender bremsen Bundesgesetze, Karlsruhe prueft sie, Ämter begrenzen einander. Staerke dieses Weges ist Machtbegrenzung und Minderheitenschutz; Grenze ist die Gefahr von Blockade und Verantwortungsdiffusion.
 
-ANTWORT: Aufgabe A erfordert Verfahren (i), weil eine Rangfolge aus der Form genuegt. Aufgabe B erfordert Verfahren (ii), weil erst die Kennzahl mit $d = x_2 - x_1$ ein begruendetes Urteil erlaubt.
+AUFGABE A: Eine Reform soll den Bundestag dauerhaft verkleinern, auch wenn siegreiche Direktkandidaten ihren Sitz verlieren könnten. Loese den Fall ueber Weg A und diskutiere Regierungsmehrheit und Handlungsfaehigkeit als Massstab.
+
+AUFGABE B: Dieselbe Reform zur Verkleinerung des Bundestages steht zur Pruefung. Loese den Fall ueber Weg B und pruefe Bundesrat, Gericht und Gewaltenteilung als Schutz von Repraesentation und Minderheit.
+
+HILFE: Aufgabe A fragt nach Gestaltung, daher Mehrheit und Funktionsfaehigkeit nennen. Aufgabe B fragt nach Begrenzung, daher foederative Mitwirkung und richterliche Pruefung nennen. Die Wahl des Weges steht vor jedem Urteil.
+
+ANTWORT: Aufgabe A wird ueber Weg A geloest, weil eine handlungsfaehige Mehrheit die Verkleinerung mit Funktionsfaehigkeit begruendet, solange Wahlen frei bleiben. Aufgabe B wird ueber Weg B geloest, weil Bundesrat und Gericht pruefen, ob Repraesentation und Minderheitenschutz gewahrt sind. Erst beide Wege zusammen ergeben ein klausurtaugliches Urteil.
 
 Klausur-Satz: `Beim Zustimmungsgesetz kann der Bundesrat ein Vorhaben blockieren, beim Einspruchsgesetz kann der Bundestag den Einspruch überstimmen.`
 
-## Schritt 6 — check: Verständnisprüfung
+## Schritt 6 — check: Selbsttest zu Verfassungsorganen
 
 CHECK (drei Fragen mit Antworten):
 
-FRAGE: Welche fünf Verfassungsorgane nennt das Grundgesetz, und wo sitzt das Bundesverfassungsgericht? | ANTWORT: Bundestag, Bundesrat, Bundesregierung, Bundespräsident und Bundesverfassungsgericht; das BVerfG sitzt in Karlsruhe.
-FRAGE: Wann greift der Vermittlungsausschuss ein? | ANTWORT: Wenn Bundestag und Bundesrat sich über ein Gesetz nicht einigen können; er sucht einen Kompromiss.
-FRAGE: Welcher Artikel garantiert das freie Mandat, und was folgt daraus? | ANTWORT: Art. 38 GG; Abgeordnete sind an Aufträge nicht gebunden und nur ihrem Gewissen unterworfen.
+FRAGE: Welche fuenf Verfassungsorgane nennt das Grundgesetz, und wo sitzt das Bundesverfassungsgericht? | ANTWORT: Bundestag, Bundesrat, Bundesregierung, Bundespraesident und Bundesverfassungsgericht; das Gericht sitzt in Karlsruhe.
+FRAGE: Wann greift der Vermittlungsausschuss ein? | ANTWORT: Wenn Bundestag und Bundesrat sich ueber ein Gesetz nicht einigen können; er sucht einen Kompromiss.
+FRAGE: Welcher Artikel garantiert das freie Mandat, und was folgt daraus? | ANTWORT: Art. 38 GG; Abgeordnete sind an Auftraege nicht gebunden und nur ihrem Gewissen unterworfen.
 
 Klausur-Satz: `Die Bundesversammlung besteht zur Hälfte aus Bundestagsmitgliedern und zur Hälfte aus Länderdelegierten; sie wählt den Bundespräsidenten.`
 
@@ -143,28 +135,25 @@ Klausur-Satz: `Die Bundesversammlung besteht zur Hälfte aus Bundestagsmitgliede
 
 (Kein Schritt; wird vom Parser uebersprungen.)
 
-1. Fehlkonzept: Die beiden Verfahren seien austauschbar und fuehrten stets zum gleichen Ergebnis.
-   Korrektur-Satz: `Verfahren (i) liefert nur eine Rangfolge, Verfahren (ii) liefert eine Kennzahl; beide duerfen nicht gleichgesetzt werden.`
+1. Fehlkonzept: Bundesrat und Bundestag seien gleichartige Kammern mit gleicher Wahl und gleichem Mandat.
+   Korrektur-Satz: `Der Bundestag wird direkt gewählt und entscheidet mit freiem Mandat nach Art. 38 GG, der Bundesrat besteht aus weisungsgebundenen Landesregierungen.`
 
-2. Fehlkonzept: Ein einzelner Wert wie $Gini$ oder $p_G$ spreche bereits fuer sich und brauche kein Kriterium.
-   Korrektur-Satz: `Erst die Deutung der Kennzahl am Kriterium mit $d = x_2 - x_1$ ergibt ein klausurtaugliches Urteil.`
+2. Fehlkonzept: Das Bundesverfassungsgericht sei eine weitere politische Instanz, die nach Mehrheit entscheide.
+   Korrektur-Satz: `Das Bundesverfassungsgericht prüft Recht gegen die Verfassung und bindet auch Mehrheiten an Grundrechte und Prinzipien.`
 
-## Schritt 7 — szenario: Klausurtransfer & Rubric
+## Schritt 7 — szenario: Karlsruhe-Debatte & Reformstreit
 
-ROLLE: BVerfG (Karlsruhe) <-- prueft Gesetze, verbietet Parteien
- Bundesversammlung -> waehlt Bundespraesident
- Gemeinsamer Ausschuss (2/3 BT + 1/3 BR) = Notparlament
-```
-SITUATION: Eine Reform soll den Bundestag dauerhaft verkleinern und die Zahl der Sitze deckeln; Kritiker warnen, dass dadurch gewählte Direktkandidaten ihren Sitz verlieren können, obwohl sie ihren Wahlkreis gewonnen haben. Beurteile in einer zusammenhängenden Stellungnahme (ca. 150 Wörter), ob die Reform zu befürworten ist, und nutze dabei Argumente zur Funktionsfähigkeit und zur Repräsentation
+ROLLE: Du bist Sachverstaendige bzw. Sachverstaendiger in einer Bundestagsanhoerung zur Parlamentsreform.
+SITUATION: Eine Reform soll den Bundestag dauerhaft verkleinern und die Zahl der Sitze deckeln; Kritiker warnen, dass dadurch gewaehlte Direktkandidaten ihren Sitz verlieren können, obwohl sie ihren Wahlkreis gewonnen haben. Beurteile in einer zusammenhängenden Stellungnahme (ca. 150 Wörter), ob die Reform zu befürworten ist, und nutze dabei Argumente zur Funktionsfähigkeit und zur Repräsentation.
 AUFGABE (AFB III): Verfasse eine zusammenhaengende Darstellung von etwa 150 Woertern mit Kriterium, Anwendung und Urteil.
-RUBRIC (30 XP): These mit Kriterium (5 XP) | Rekonstruktion mit $x_1$, $x_2$ (10 XP) | Anwendung mit $d = x_2 - x_1$ (10 XP) | Fazit mit Fachbegriffen (5 XP).
+RUBRIC (30 XP): These mit Kriterium Handlungsfaehigkeit und Repraesentation (5 XP) | Darstellung der Organe und ihres Zusammenwirkens (10 XP) | Anwendung auf Direktmandat und Deckelung mit Abwaegung (10 XP) | Fazit mit Fachbegriffen und Klausur-Satz (5 XP).
 
-## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
+## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY (Kernbotschaft in einem Kasten):
 
-Takeaway-Satz: `Begriff schaerfen, Wahl des Verfahrens treffen, Kennzahl mit $d = x_2 - x_1$ deuten und kriteriengeleitet urteilen.`
+Takeaway-Satz: `Führung gestaltet, Kontrolle begrenzt: Erst beide zusammen sichern Freiheit.`
 
 REFLEXION (zwei Fragen):
-1. Welcher Schritt fiel schwerer -- die Anwendung mit $x_1$ und $x_2$ (Schritt 4) oder die Wahl des Verfahrens (Schritt 5)?
-2. Beim naechsten Mal pruefe ich zuerst das Aufgabenziel und waehle danach Verfahren (i) oder (ii).
+1. Wann ueberzeugt Weg A mit Handlungsfaehigkeit staerker, und wann verlangt der Fall Weg B mit Bundesrat und Gericht? Nenne ein Abgrenzungsmerkmal.
+2. Pruefe deine Antwort an der Klausurnorm: Hast du Organe korrekt zugeordnet, beide Wege erwoegen und das Urteil an einem expliziten Kriterium begruendet?

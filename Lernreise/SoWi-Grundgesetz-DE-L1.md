@@ -15,30 +15,17 @@ version: Lesson-v3
 
 <!-- Lesson-v3: 8 Schritte plus Anekdote und Fehlvorstellung; Fehlvorstellung zwischen Schritt 6 und 7 (Parser-Skip); interaktives [Werkzeug: <id>]; Gating: check/szenario nicht bestanden = Weiter gesperrt; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
-## Schritt 1 — entdecken: Ziele & Phänomen-Einstieg
+## Schritt 1 — entdecken: Ziele & Phaenomen-Einstieg
 
 ZIELE (drei messbare Ziele dieser Lektion):
 
-1. Du kannst **Menschenwuerde** und **Verfassungsprinzipien** in je einem Satz definieren und Art. 1 und Art. 20 korrekt zuordnen.
-2. Du kannst **Grundrechtskollision** mit $RechtA + RechtB = Ausgleich$ durch praktische Konkordanz loesen.
-3. Du kannst mit dem Kriterium **Wesensgehalt** ein Urteil zu Eingriff und Schranke formulieren und mit einem Klausur-Satz schliessen (AFB II/III).
+1. Du kannst Menschenwuerde nach Art. 1 GG und die vier Prinzipien des Art. 20 GG in je einem Satz definieren und korrekt zuordnen.
+2. Du kannst Demokratieprinzip und Rechtsstaat als zwei Lesarten derselben Verfassung unterscheiden und am Fall einordnen.
+3. Du kannst mit dem Kriterium Minderheitenschutz ein Urteil zu Mehrheitsentscheidung und Ewigkeitsklausel formulieren und mit einem Klausur-Satz schliessen (AFB II/III).
 
 ### Hook / Phaenomen
 
-Stell dir vor, ein Wagen rast auf fuenf Menschen zu und du stehst an der Weiche und kannst den Wagen auf ein Gleis mit nur einer Person lenken, waehrend die Gruppe hinter dir ruft, dass Rechnen doch klar sei und fuenf Leben mehr zaehlten als eines. Gleichzeitig weisst du aus deiner Sozialisation in Familie und Schule und Freundeskreis, dass jeder Mensch Wuerde traegt und niemand zum blossen Mittel fuer andere gemacht werden darf. Genau hier kollidieren zwei Pruefungen desselben Falles: Die eine Bilanz zaehlt Lust und Leid fuer alle Betroffenen zusammen, die andere Pruefung fragt, ob deine Maxime als allgemeines Gesetz gewollt werden kann. In dieser Lektion lernst du den Mechanismus aus Bilanz und Probe und Abwaegung, damit du in der Klausur beide Brillen sauber trennst und dein Urteil an einem expliziten Kriterium begruendest.
-
-
-Ausgangslage aus der Vorlage: Platzverbot gegen Versammlung, Verkehr gegen Meinung: Zwei Rechte prallen auf einem Platz aufeinander. Die Gemeinde will Ruhe, die Gruppe will Stimme. Wer darf was verbieten, wenn beide sich aufs Grundgesetz berufen?
-
-### Fachbegriff & Definition
-
-Das **Grundgesetz** gruendet die Ordnung auf **Menschenwuerde** als unantastbaren Anfang nach Art. 1 GG. Art. 20 GG nennt vier **Verfassungsprinzipien**: **Demokratie, Rechtsstaat, Sozialstaat und Bundesstaat**. **Grundrechte** binden alle Staatsgewalt unmittelbar und wirken mittelbar auch zwischen Buergern. Kurz: Wuerde zuerst, Prinzipien als Geruest, Rechte als Schutz.
-
-### Wirkungsgefuege / Modell
-
-Der Mechanismus laeuft in drei Stufen: **Schutz, Kollision, Ausgleich**. Erstens garantiert $Art1 = Wuerde + Bindung$ den Kern mit $Ewig = Art79Abs3$. Zweitens kollidieren Rechte mit $Versammlung + Verkehr = Konflikt$. Drittens verlangt **praktische Konkordanz** mit $Optimum = RechtA + RechtB$ statt $Sieg = EntwederOder$. Faellt Ausgleich aus, wird ein **Wesensgehalt** mit $Gehalt = 0$ angetastet und der Eingriff verfassungswidrig.
-
-Klausur-Satz: `Art. 1 GG erklärt die Menschenwürde für unantastbar; über Art. 1 Abs. 3 binden die Grundrechte alle Staatsgewalt unmittelbar.`
+Eine Gemeinde will eine politische Versammlung vom zentralen Platz verbannen, weil der Verkehr stockt und Anwohner Ruhe verlangen. Die Gruppe beruft sich auf Versammlungsfreiheit und Meinungsfreiheit, die Gemeinde auf das Allgemeininteresse an Sicherheit und Ordnung. Beide Seiten rufen das Grundgesetz an. Darf die Mehrheit der Anwohner die Minderheit der Demonstrierenden verdrängen, oder setzt das Recht der Mehrheit eine feste Grenze? In dieser Lektion lernst du zwei Wege der Antwort: Weg A vertraut der demokratischen Mehrheit, Weg B vertraut dem rechtsstaatlichen Kern.
 
 ## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
 
@@ -46,21 +33,19 @@ PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
 ### Hook / Phaenomen
 
-Vier Prinzipien, ein Ewigkeitskern, viele Kollisionen: Ohne Kompass wird Verfassungsrecht zum Zitatenraten. Diese fuenf Begriffe geben dir Ordnung und Massstab.
+Vier Prinzipien, ein unantastbarer Kern, viele Kollisionen: Ohne Ordnung wird Verfassungsrecht zum Zitatenraten. Diese fuenf Begriffe geben dir Kompass und Massstab.
 
 ### Fachbegriffe & Definitionen
 
-- **Menschenwuerde:** Der oberste Wert mit $Wuerde = unantastbar + unverfuegbar$. Sie steht in $Art1Abs1$ und traegt $Schutz = Staatspflicht$.
-- **Demokratieprinzip:** Die Herrschaft mit $Macht = Volk + Wahl + Wechsel$. Sie verlangt $Legitim = Mehrheit + Minderheitsschutz$.
-- **Rechtsstaat:** Die Bindung mit $Staat = Gesetz + Gericht + Grundrecht$. Er sichert $Freiheit = Abwehr + Verfahren$.
-- **Sozialstaat:** Der Ausgleich mit $Hilfe = Steuer + Transfer + Vorsorge$. Er ergaenzt Freiheit durch $Teilhabe = Chance$.
-- **Ewigkeitsklausel:** Die Sperre aus Art. 79 Abs. 3 GG mit $Unveraenderbar = Art1 + Art20$. Sie entzieht den Kern mit $Aenderung = verboten$ jeder Reform.
+- **Menschenwuerde:** Der oberste Wert der Verfassung nach Art. 1 GG. Sie ist unantastbar und verpflichtet alle staatliche Gewalt zu Achtung und Schutz.
+- **Demokratieprinzip:** Das Prinzip aus Art. 20 GG, dass alle Staatsgewalt vom Volke ausgeht. Es verlangt Wahlen, Mehrheitsregel und Wechsel der Regierung bei gleichzeitigem Schutz der Minderheit.
+- **Rechtsstaat:** Die Bindung aller Staatsgewalt an Gesetz und Recht mit Grundrechten und Gerichten. Er sichert Freiheit durch Abwehrrechte und geordnete Verfahren.
+- **Ewigkeitsklausel:** Die Sperre aus Art. 79 Abs. 3 GG. Sie entzieht Art. 1 und Art. 20 jeder Aenderung und sichert damit den unantastbaren Kern der Verfassung.
+- **Praktische Konkordanz:** Der Grundsatz zum Ausgleich kollidierender Grundrechte. Beide Rechte sollen so weit wie möglich verwirklicht werden, ohne dass der Wesensgehalt eines Rechts angetastet wird.
 
 ### Wirkungsgefuege / Modell
 
-Die Begriffe greifen ineinander: **Menschenwuerde** gruendet mit $Wuerde = Anfang$ alle Rechte. **Demokratie** und **Rechtsstaat** balancieren mit $Mehrheit + Gericht$ Macht und Freiheit. **Sozialstaat** federt mit $Ausgleich = Umverteilung$ Haerten ab. Die **Ewigkeitsklausel** zementiert mit $Kern = unantastbar$ das Ganze. Wer in der Klausur prueft, muss deshalb immer fragen: Bleibt der Wesensgehalt erhalten?
-
-Punkte-Hinweis: Nenne $Utilitarismus$ mit $U = \sum(Lust - Leid)$ und $Kategorischer Imperativ$ mit $M \to G$; erst beide Pruefungen plus Kriterium wie Menschenwuerde gibt volle Punkte.
+Die Begriffe greifen ineinander: Die Menschenwuerde gruendet alle Rechte und markiert die absolute Grenze. Demokratie und Rechtsstaat balancieren Mehrheit und Freiheit: Die Mehrheit darf regieren, doch Grundrechte und Gerichte begrenzen sie. Die Ewigkeitsklausel zementiert diesen Kern gegen jede Reform. Wer in der Klausur prueft, muss deshalb immer fragen: Bleibt der Wesensgehalt beider Rechte erhalten, und achtet die Mehrheit den unantastbaren Kern?
 
 Klausur-Satz: `Art. 20 GG nennt vier Verfassungsprinzipien: Demokratie, Rechtsstaat, Sozialstaat und Bundesstaat.`
 
@@ -70,32 +55,32 @@ TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
 ### Hook / Phaenomen
 
-Versammlung blockiert Kreuzung — raeumen oder schuetzen? Kopftuch im Unterricht — Freiheit oder Auftrag? Zwei Rechte, eine Strasse — wer weicht?
+Versammlung blockiert die Kreuzung: raeumen oder schuetzen? Zwei Grundrechte, eine Strasse: Wer weicht, und nach welchem Massstab?
 
 ### Spiel-Aufgabe mit [Werkzeug: balance-board]
 
-Oeffne [Werkzeug: balance-board]. Lege Recht A gegen Recht B auf die Waage. Gewichte $Geeignet + Erforderlich + Angemessen$ je 1 bis 5. Teste Verbot gegen Verlegung mit Auflage aus $Zeit + Ort + Mittel$. Beobachte, wie $Loesung = RechtAOpt + RechtBOpt$ bei $Wesensgehalt > 0$ beide schuetzt.
+Oeffne [Werkzeug: balance-board]. Lege Versammlungsfreiheit gegen das Allgemeininteresse an ungestörtem Verkehr auf die Waage. Gewichte Verbot, Verlegung und Auflage mit Zeit, Ort und Mittel von 1 bis 5. Teste Verbot gegen Verlegung mit Auflagen und beobachte, welche Lösung beide Seiten am besten schuetzt, ohne ein Recht zu entleeren.
 
 ### Aha-Moment & Gesetz
 
-Aha-Moment: Kollision — Pruefung — Optimierung. Erstens kollidieren $Art8$ gegen Allgemeininteresse. Zweitens filtert Verhaeltnismaessigkeit mildestes Mittel. Drittens maximiert praktische Konkordanz beide nach Kriterium Wesensgehalts-Garantie. Gesetz: $Konkordanz = OptA + OptB$.
+Aha-Moment: Kollision, Pruefung, Optimierung. Erstens kollidiert ein Freiheitsrecht mit einem Allgemeininteresse. Zweitens filtert die Verhaeltnismaessigkeit das mildeste Mittel heraus. Drittens verlangt die praktische Konkordanz den schonendsten Ausgleich beider Positionen nach dem Kriterium des Wesensgehalts. Gesetz: Kollision verlangt Ausgleich statt Entweder-oder.
 
 ```diagram
-  Kollision [Recht A + Recht B]
-  Kollision -> Waage [Geeignet + Erforderlich + Angemessen]
-  Waage -> Optimierung [Zeit + Ort + Mittel]
-  Optimierung -> Urteil [Wesensgehalt bleibt]
+  Kollision [Versammlung plus Verkehr]
+  Kollision -> Waage [Geeignet plus Erforderlich plus Angemessen]
+  Waage -> Optimierung [Zeit plus Ort plus Mittel]
+  Optimierung -> Urteil [Wesensgehalt bleibt erhalten]
 ```
 
-Kausalkette: Fall schildern — Bilanz mit $U = \sum(Lust - Leid)$ gegen Probe mit $M \to G$ — Urteil am Kriterium Menschenwuerde; Abgrenzung zu $p_N(q) = p_A(q)$ mit $q_A - q_N$ und zu $Gini$ steht vor jeder Stellungnahme.
+Kausalkette: Fall schildern, beide Grundrechtspositionen benennen, Verhaeltnismaessigkeit pruefen, Ausgleich an Zeit und Ort und Mittel bestimmen, Urteil am Kriterium Wesensgehalt formulieren.
 
 Klausur-Satz: `Bei einer Grundrechtskollision verlangt die praktische Konkordanz, beide Rechte möglichst zu verwirklichen, ohne ihren Wesensgehalt anzutasten.`
 
 ## Anekdote & Fun-Fact
 
-Das Grundgesetz heißt bewusst nicht „Verfassung": Es war 1949 als Provisorium für eine Übergangszeit gedacht, bis Deutschland wiedervereinigt wäre. Trotz dieses vorläufigen Charakters stellten die Verfasser die Menschenwürde ganz an den Anfang. Diese erste Zeile ist eine direkte Antwort auf die Verbrechen der NS-Zeit
+Das Grundgesetz heisst bewusst nicht Verfassung: Es war 1949 als Provisorium fuer eine Uebergangszeit gedacht, bis Deutschland wiedervereinigt waere. Trotz dieses vorlaeufigen Charakters stellten die Verfasser die Menschenwuerde ganz an den Anfang. Diese erste Zeile ist eine direkte Antwort auf die Verbrechen der NS-Zeit
 
-Bezug zum Konzept: `Das Beispiel zeigt, wie aus Beobachtung ein pruefbares Verfahren mit $x_1$ und $x_2$ entsteht.`
+Bezug zum Konzept: `Das Beispiel zeigt, wie eine historische Lehre zum festen Verfassungskern mit Wuerde und Ewigkeitsklausel wurde.`
 
 ## Schritt 4 — ausprobieren: Interaktive Praxis & Urteils-Waage
 
@@ -105,37 +90,44 @@ BEISPIEL (geleitete Aufgabe mit Werkzeug):
 
 Lege im Tool Pro- und Contra-Argumente auf die Waage und gewichte jedes Argument von 1 bis 5; veraendere die Gewichte Schritt fuer Schritt und beobachte, wann das Urteil zwischen Erlaubnis und Verbot oder zwischen Massnahme und Verzicht umschlaegt.
 
-AUFGABE Waage-Raetsel (AFB II): Lege Versammlung gegen Verkehr auf [Werkzeug: balance-board]. Gewichte Verbot, Verlegung, Auflage je 1 bis 5 und finde die mildeste Loesung, die beide Rechte bei $Wesensgehalt > 0$ haelt.
+AUFGABE Waage-Raetsel (AFB II): Lege Versammlung gegen Verkehr auf [Werkzeug: balance-board]. Gewichte Verbot, Verlegung und Auflage je 1 bis 5 und finde die mildeste Loesung, die beide Rechte schuetzt.
 
 HILFE:
-1. Schritt 1: Benenne beide Grundrechte mit Artikel. 2. Schritt 2: Pruefe $Geeignet + Erforderlich + Angemessen$. 3. Schritt 3: Optimiere Zeit, Ort, Mittel und formuliere den Klausur-Satz.
+1. Schritt 1: Benenne beide Grundrechte mit Artikel.
+2. Schritt 2: Pruefe Geeignetheit, Erforderlichkeit und Angemessenheit.
+3. Schritt 3: Optimiere Zeit, Ort und Mittel und formuliere den Klausur-Satz.
 
-MUSTERLOESUNG: Verbot scheitert an Erforderlichkeit; Verlegung mit Auflage aus $Zeit + Route$ ist milder und haelt $Wesensgehalt > 0$. Konkordanz erlaubt plus verlegt — Versammlung fliesst, Verkehr stockt nur kurz.
+MUSTERLOESUNG: Ein pauschales Verbot scheitert an der Erforderlichkeit; eine Verlegung mit Auflagen zu Zeit und Route ist milder und erhaelt beide Positionen. Konkordanz heisst hier: erlauben plus verlegen. Die Versammlung fliesst, der Verkehr stockt nur kurz.
 
 Klausur-Satz: `Religionsfreiheit und staatlicher Bildungsauftrag sind über die praktische Konkordanz auszugleichen, ohne dass ein Wesensgehalt angetastet wird.`
 
-## Schritt 5 — ausprobieren: Verfahrensvergleich & Abgrenzung
+## Schritt 5 — ausprobieren: Wegvergleich & Abgrenzung
 
-VERGLEICH (Wahl des Verfahrens, A gegen B):
+VERGLEICH (Wahl des Weges, Weg A gegen Weg B):
 
-VERGLEICH: Triff zuerst die Wahl des Verfahrens -- (i) Verfahren A (deskriptive Rekonstruktion) oder (ii) Verfahren B (kriteriengeleitete Beurteilung) -- und loese dann die Aufgabe.
+VERGLEICH: Waehle zuerst bewusst Weg A (Demokratieprinzip) oder Weg B (Rechtsstaat mit Ewigkeitsklausel) und begruende dann dein Urteil am passenden Kriterium.
 
-AUFGABE A: Ein Fall verlangt nur eine qualitative Rangfolge ohne Zahlenwert.
-AUFGABE B: Ein Fall verlangt einen belegten Vergleich mit Kennzahl und Begruendung.
+Weg A: Das Demokratieprinzip vertraut der Mehrheitsregel und der Repraesentation. Gewaehlte Organe entscheiden, die Mehrheit legitimiert, die Minderheit fuegt sich und kaempft bei der naechsten Wahl um die Mehrheit. Staerke dieses Weges ist Handlungsfaehigkeit und Gleichheit der Stimmen; Grenze ist die Gefahr, dass eine Mehrheit Grundrechte der Minderheit ueberstimmt.
 
-HILFE: Aufgabe A nennt kein Berechnungsziel, daher Verfahren (i). Aufgabe B verlangt eine Kennzahl wie $Gini$ oder $p_N(q) = p_A(q)$, daher Verfahren (ii). Die Wahl des Verfahrens steht vor jeder Rechnung.
+Weg B: Der Rechtsstaat mit Art. 79 Abs. 3 GG setzt der Mehrheit eine materielle Grenze. Ewigkeitsklausel, Grundrechte und Gerichte schuetzen die Minderheit auch gegen deutliche Mehrheiten und sichern materielle Gerechtigkeit statt blosser Stimmenzahl. Staerke dieses Weges ist der unantastbare Kern; Grenze ist die Spannung zur demokratischen Selbstbestimmung.
 
-ANTWORT: Aufgabe A erfordert Verfahren (i), weil eine Rangfolge aus der Form genuegt. Aufgabe B erfordert Verfahren (ii), weil erst die Kennzahl mit $d = x_2 - x_1$ ein begruendetes Urteil erlaubt.
+AUFGABE A: Eine Ratsmehrheit will eine unbequeme Versammlung dauerhaft vom Marktplatz verbannen. Loese den Fall ueber Weg A und diskutiere Mehrheitsregel und Repraesentation als Legitimation.
 
-Klausur-Satz: `Grundrechte wirken über die Drittwirkung mittelbar auch zwischen Bürgern, während Art. 79 Abs. 3 den Kern der Verfassung gegen jede Änderung schützt.`
+AUFGABE B: Dieselbe Ratsmehrheit will die Versammlung dauerhaft verbannen. Loese den Fall ueber Weg B und pruefe Ewigkeitsklausel, Minderheitenschutz und Wesensgehalt als Grenze der Mehrheit.
 
-## Schritt 6 — check: Verständnisprüfung
+HILFE: Aufgabe A fragt nach demokratischer Legitimation, daher Mehrheitsargument mit Wechselchance nennen. Aufgabe B fragt nach rechtlicher Grenze, daher Art. 1 und Art. 79 Abs. 3 mit Minderheitenschutz nennen. Die Wahl des Weges steht vor jedem Urteil.
+
+ANTWORT: Aufgabe A wird ueber Weg A geloest, weil Mehrheitsregel und Repraesentation die Entscheidung tragen, solange der Rechtsweg offen bleibt. Aufgabe B wird ueber Weg B geloest, weil Ewigkeitsklausel und Wesensgehalt der Mehrheit den dauerhaften Ausschluss einer Minderheit verbieten. Erst beide Wege zusammen ergeben ein klausurtaugliches Urteil.
+
+Klausur-Satz: `Die Mehrheit legitimiert die Entscheidung, doch Art. 1 und Art. 79 Abs. 3 GG begrenzen jede Mehrheit durch Minderheitenschutz und materielle Gerechtigkeit.`
+
+## Schritt 6 — check: Selbsttest zu Grundgesetz und Verfassungsprinzipien
 
 CHECK (drei Fragen mit Antworten):
 
 FRAGE: Welche vier Verfassungsprinzipien nennt Art. 20 GG? | ANTWORT: Demokratie, Rechtsstaat, Sozialstaat und Bundesstaat.
-FRAGE: Was schützt die Ewigkeitsklausel des Art. 79 Abs. 3 GG? | ANTWORT: Sie entzieht Art. 1 und Art. 20 GG jeder Verfassungsänderung und sichert damit den unantastbaren Kern.
-FRAGE: Was bedeutet Drittwirkung der Grundrechte? | ANTWORT: Grundrechte binden unmittelbar nur den Staat, wirken aber mittelbar auch zwischen Privaten.
+FRAGE: Was schuetzt die Ewigkeitsklausel des Art. 79 Abs. 3 GG? | ANTWORT: Sie entzieht Art. 1 und Art. 20 jeder Aenderung und sichert damit den unantastbaren Kern.
+FRAGE: Was bedeutet praktische Konkordanz bei einer Grundrechtskollision? | ANTWORT: Beide Rechte sind so weit wie möglich zu verwirklichen, ohne dass der Wesensgehalt eines Rechts angetastet wird.
 
 Klausur-Satz: `Die Ewigkeitsklausel entzieht Art. 1 und Art. 20 GG jeder Verfassungsänderung und sichert so den unantastbaren Kern.`
 
@@ -143,25 +135,25 @@ Klausur-Satz: `Die Ewigkeitsklausel entzieht Art. 1 und Art. 20 GG jeder Verfass
 
 (Kein Schritt; wird vom Parser uebersprungen.)
 
-1. Fehlkonzept: Die beiden Verfahren seien austauschbar und fuehrten stets zum gleichen Ergebnis.
-   Korrektur-Satz: `Verfahren (i) liefert nur eine Rangfolge, Verfahren (ii) liefert eine Kennzahl; beide duerfen nicht gleichgesetzt werden.`
+1. Fehlkonzept: Die Ewigkeitsklausel schuetze das gesamte Grundgesetz vor jeder Aenderung.
+   Korrektur-Satz: `Art. 79 Abs. 3 GG schützt nur Art. 1 und Art. 20 GG; alle übrigen Artikel können mit Zweidrittelmehrheit geändert werden.`
 
-2. Fehlkonzept: Ein einzelner Wert wie $Gini$ oder $p_G$ spreche bereits fuer sich und brauche kein Kriterium.
-   Korrektur-Satz: `Erst die Deutung der Kennzahl am Kriterium mit $d = x_2 - x_1$ ergibt ein klausurtaugliches Urteil.`
+2. Fehlkonzept: In der Demokratie duerfe die Mehrheit alles beschliessen, auch die Abschaffung von Grundrechten.
+   Korrektur-Satz: `Die Mehrheit legitimiert Herrschaft, doch Grundrechte und Ewigkeitsklausel begrenzen jede Mehrheit zum Schutz der Minderheit.`
 
-## Schritt 7 — szenario: Klausurtransfer & Rubric
+## Schritt 7 — szenario: Anwaltskanzlei & Platzverbot-Debatte
 
-ROLLE: Du bist Anwältin bzw. Anwalt und formulierst eine kurze Verfassungsbeschwerde
-SITUATION: Eine Gemeinde will einer Gruppe ein öffentliches Platzverbot erteilen, weil deren politische Versammlung den Verkehr stört. Die Betroffenen berufen sich auf ihre Versammlungs- und Meinungsfreiheit, die Gemeinde auf das Interesse der Allgemeinheit an ungestörtem Verkehr. Beurteile in einer zusammenhängenden Stellungnahme (ca. 150 Wörter), wie nach dem Grundgesetz zwischen den Positionen zu vermitteln ist
+ROLLE: Du bist Anwaeltin bzw. Anwalt und formulierst eine kurze Verfassungsbeschwerde.
+SITUATION: Eine Gemeinde will einer Gruppe ein oeffentliches Platzverbot erteilen, weil deren politische Versammlung den Verkehr stoert. Die Betroffenen berufen sich auf ihre Versammlungs- und Meinungsfreiheit, die Gemeinde auf das Interesse der Allgemeinheit an ungestörtem Verkehr. Beurteile in einer zusammenhängenden Stellungnahme (ca. 150 Wörter), wie nach dem Grundgesetz zwischen den Positionen zu vermitteln ist.
 AUFGABE (AFB III): Verfasse eine zusammenhaengende Darstellung von etwa 150 Woertern mit Kriterium, Anwendung und Urteil.
-RUBRIC (30 XP): These mit Kriterium (5 XP) | Rekonstruktion mit $x_1$, $x_2$ (10 XP) | Anwendung mit $d = x_2 - x_1$ (10 XP) | Fazit mit Fachbegriffen (5 XP).
+RUBRIC (30 XP): These mit Kriterium Minderheitenschutz und Wesensgehalt (5 XP) | Darstellung beider Grundrechtspositionen mit Artikelbezug (10 XP) | Anwendung der Verhaeltnismaessigkeit mit Zeit, Ort und Mittel (10 XP) | Fazit mit Fachbegriffen und Klausur-Satz (5 XP).
 
-## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
+## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY (Kernbotschaft in einem Kasten):
 
-Takeaway-Satz: `Begriff schaerfen, Wahl des Verfahrens treffen, Kennzahl mit $d = x_2 - x_1$ deuten und kriteriengeleitet urteilen.`
+Takeaway-Satz: `Die Mehrheit entscheidet, doch die Würde begrenzt jede Mehrheit.`
 
 REFLEXION (zwei Fragen):
-1. Welcher Schritt fiel schwerer -- die Anwendung mit $x_1$ und $x_2$ (Schritt 4) oder die Wahl des Verfahrens (Schritt 5)?
-2. Beim naechsten Mal pruefe ich zuerst das Aufgabenziel und waehle danach Verfahren (i) oder (ii).
+1. Wann ueberzeugt Weg A mit Mehrheitsregel staerker, und wann verlangt der Fall Weg B mit Ewigkeitsklausel und Minderheitenschutz? Nenne ein Abgrenzungsmerkmal.
+2. Pruefe deine Antwort an der Klausurnorm: Hast du Fachbegriffe mit Artikelbezug genannt, beide Wege erwoegen und das Urteil an einem expliziten Kriterium begruendet?

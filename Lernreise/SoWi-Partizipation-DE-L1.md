@@ -15,30 +15,17 @@ version: Lesson-v3
 
 <!-- Lesson-v3: 8 Schritte plus Anekdote und Fehlvorstellung; Fehlvorstellung zwischen Schritt 6 und 7 (Parser-Skip); interaktives [Werkzeug: <id>]; Gating: check/szenario nicht bestanden = Weiter gesperrt; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
-## Schritt 1 — entdecken: Ziele & Phänomen-Einstieg
+## Schritt 1 — entdecken: Ziele & Phaenomen-Einstieg
 
 ZIELE (drei messbare Ziele dieser Lektion):
 
-1. Du kannst **Partizipation** und **Buergerrat** in je einem Satz definieren und konventionell und unkonventionell korrekt zuordnen.
-2. Du kannst **Initiative**, **Begehren** und **Entscheid** mit $Quorum = Unterschrift + Zustimmung$ als Weg zum Volksentscheid darstellen.
-3. Du kannst mit dem Kriterium **Minderheitenschutz** ein Urteil zu direkt und repraesentativ formulieren und mit einem Klausur-Satz schliessen (AFB II/III).
+1. Du kannst Partizipation und Buergerat in je einem Satz definieren und konventionell und unkonventionell korrekt zuordnen.
+2. Du kannst Initiative, Begehren und Entscheid als Weg zum Volksentscheid darstellen.
+3. Du kannst mit dem Kriterium Minderheitenschutz ein Urteil zu direkter und repraesentativer Beteiligung formulieren und mit einem Klausur-Satz schliessen (AFB II/III).
 
 ### Hook / Phaenomen
 
-Stell dir vor, ein Wagen rast auf fuenf Menschen zu und du stehst an der Weiche und kannst den Wagen auf ein Gleis mit nur einer Person lenken, waehrend die Gruppe hinter dir ruft, dass Rechnen doch klar sei und fuenf Leben mehr zaehlten als eines. Gleichzeitig weisst du aus deiner Sozialisation in Familie und Schule und Freundeskreis, dass jeder Mensch Wuerde traegt und niemand zum blossen Mittel fuer andere gemacht werden darf. Genau hier kollidieren zwei Pruefungen desselben Falles: Die eine Bilanz zaehlt Lust und Leid fuer alle Betroffenen zusammen, die andere Pruefung fragt, ob deine Maxime als allgemeines Gesetz gewollt werden kann. In dieser Lektion lernst du den Mechanismus aus Bilanz und Probe und Abwaegung, damit du in der Klausur beide Brillen sauber trennst und dein Urteil an einem expliziten Kriterium begruendest.
-
-
-Ausgangslage aus der Vorlage: Fridays for Future fuellt Strassen, Parteien bleiben leer, online klicken Tausende in Sekunden. Jugend meidet Partei, sucht aber Wirkung. Zaehlt Klick so viel wie Stimme, und schuetzt Mehrheit auch Minderheit?
-
-### Fachbegriff & Definition
-
-**Politische Partizipation** meint alle freiwilligen Handlungen zur Einflussnahme auf Politik. **Konventionelle** Formen nutzen Wahlen und Parteien, **unkonventionelle** nutzen Demo und Petition legal ausserhalb. **Direkte Demokratie** entscheidet unmittelbar durch Volksabstimmung, **repraesentative** mittelbar durch Gewaehlte. Kurz: Mitmachen ja, doch Form und Schutz unterscheiden.
-
-### Wirkungsgefuege / Modell
-
-Der Mechanismus laeuft in drei Stufen: **Anlass, Form, Sicherung**. Erstens mobilisiert $Anlass = Klimakrise + Frust$ vor allem Junge mit $KostenOnline = niedrig$. Zweitens waehlt die Form $Wahl = selten + bindend$ gegen $Protest = oft + druckvoll$. Drittens sichert Repraesentation mit $Schutz = Grundrecht + Gericht$ die Minderheit, waehrend Mehrheit mit $Risiko = Ueberstimmung$ droht. Faellt Schutz aus, wird Beteiligung mit $Mehrheit = absolut$ zur Herrschaft.
-
-Klausur-Satz: `Jugendliche engagieren sich stark sozial und politisch (NGOs, Fridays for Future), meiden aber Parteien — Partizipation ja, Parteibindung nein.`
+Fridays for Future fuellt die Strassen, die Parteien bleiben leer, online klicken Tausende in Sekunden. Die Jugend meidet die Partei, sucht aber Wirkung. Zaehlt der Klick so viel wie die Stimme, und schuetzt die Mehrheit auch die Minderheit? In dieser Lektion lernst du zwei Wege der Antwort: Weg A setzt auf konventionelle Beteiligung durch Wahl und Parteiarbeit, Weg B auf unkonventionelle Beteiligung durch Demo, Ungehorsam und digitalen Protest.
 
 ## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
 
@@ -50,17 +37,15 @@ Legal oder illegal, wirksam oder symbolisch: Wer mischt, verliert Punkte. Diese 
 
 ### Fachbegriffe & Definitionen
 
-- **Konventionelle Partizipation:** Die verfasste Teilhabe mit $Form = Wahl + Partei + Amt$. Sie wirkt mit $Bindung = Gesetz$ und braucht $Organisation = dauerhaft$.
-- **Unkonventionelle Partizipation:** Die freie Teilhabe mit $Form = Demo + Petition + Boykott$. Sie wirkt mit $Druck = Oeffentlichkeit$ und bleibt $Gewalt = verboten$.
-- **Volksinitiative:** Die erste Stufe mit $Start = Anregung + Sammlung$. Sie verlangt $Huerde = niedrig$ und oeffnet $Weg = Begehren$.
-- **Volksbegehren:** Die zweite Stufe mit $QuorumU = Unterschriften$ in Frist. Sie prueft mit $Ernst = Zahl$ die Tragfaehigkeit.
-- **Volksentscheid:** Die dritte Stufe mit $QuorumZ = Zustimmung$ an Urne. Sie entscheidet mit $Ja = Mehrheit$ und bindet $Politik = Ergebnis$.
+- **Konventionelle Partizipation:** Die verfasste Teilhabe durch Wahl, Partei und Amt. Sie wirkt dauerhaft und bindet ueber Gesetz und Organisation.
+- **Unkonventionelle Partizipation:** Die freie Teilhabe durch Demo, Petition und Boykott. Sie wirkt ueber Oeffentlichkeit und Druck und bleibt an Gewaltfreiheit gebunden.
+- **Volksinitiative:** Die erste Stufe zum Volksentscheid. Sie startet mit Anregung und Sammlung bei niedriger Huerde und oeffnet den Weg zum Begehren.
+- **Volksbegehren:** Die zweite Stufe mit Unterschriften in Frist. Sie prueft die Tragfaehigkeit eines Anliegens an der Zahl der Unterstuetzung.
+- **Volksentscheid:** Die dritte Stufe mit Abstimmung an der Urne. Sie entscheidet mit Mehrheit und bindet die Politik an das Ergebnis.
 
 ### Wirkungsgefuege / Modell
 
-Die Begriffe greifen ineinander: **Konventionell** sichert mit $Stimme = Mandat$ Dauer, **unkonventionell** erzeugt mit $Menge = Bild$ Druck. **Initiative** startet, **Begehren** filtert mit $Zahl = Ernst$, **Entscheid** bindet mit $Votum = Gesetz$. Wer in der Klausur ordnet, muss deshalb immer fragen: Ist die Form verfasst oder frei, legal oder bereits illegitim?
-
-Punkte-Hinweis: Nenne $Utilitarismus$ mit $U = \sum(Lust - Leid)$ und $Kategorischer Imperativ$ mit $M \to G$; erst beide Pruefungen plus Kriterium wie Menschenwuerde gibt volle Punkte.
+Die Begriffe greifen ineinander: Konventionelle Teilhabe sichert Dauer ueber Mandat und Organisation, unkonventionelle erzeugt Druck ueber Menge und Bild. Initiative startet, Begehren filtert nach Ernst, Entscheid bindet als Votum. Wer in der Klausur ordnet, muss deshalb immer fragen: Ist die Form verfasst oder frei, legal oder bereits illegitim, und wer schuetzt die Minderheit?
 
 Klausur-Satz: `Der Weg zum Volksentscheid führt über Initiative, Begehren (Unterschriftenquorum) und Entscheid (Zustimmungsquorum).`
 
@@ -70,24 +55,24 @@ TIEFEN-KONZEPT (ein Konzept mit visuellem Schema):
 
 ### Hook / Phaenomen
 
-Jugend waehlt selten — desinteressiert oder ausgeschlossen? Klick statt Partei — veraendert E-Partizipation alles oder nichts?
+Jugend waehlt selten: desinteressiert oder ausgeschlossen? Klick statt Partei: Veraendert E-Partizipation alles oder nichts?
 
 ### Spiel-Aufgabe mit [Werkzeug: balance-board]
 
-Oeffne [Werkzeug: balance-board]. Lege Wahl gegen E-Partizipation gegen Ehrenamt. Gewichte Kosten, Wirkung, Dauer je 1 bis 5. Senke per Regler Beteiligungskosten und beobachte: Klick steigt schnell, Organisation bleibt flach. Nichtwahl ungleich Desinteresse wird sichtbar.
+Oeffne [Werkzeug: balance-board]. Lege Wahl gegen E-Partizipation gegen Ehrenamt. Gewichte Kosten, Wirkung und Dauer je 1 bis 5. Senke per Regler die Beteiligungskosten und beobachte: Der Klick steigt schnell, die Organisation bleibt flach. Nichtwahl ist nicht gleich Desinteresse, das wird hier sichtbar.
 
 ### Aha-Moment & Gesetz
 
-Aha-Moment: Kosten — Form — Bindung. Erstens senkt Digital $Kosten = niedrig$. Zweitens ersetzt Klick keine $Organisation = dauerhaft$. Drittens urteilt Kriterium Demokratische Teilhabe: Breite plus Tiefe. Gesetz: $Teilhabe = Anlass + Organisation$.
+Aha-Moment: Kosten, Form, Bindung. Erstens senkt Digitales die Kosten der Beteiligung. Zweitens ersetzt der Klick keine dauerhafte Organisation. Drittens urteilt das Kriterium demokratische Teilhabe nach Breite plus Tiefe. Gesetz: Teilhabe braucht Anlass plus Organisation.
 
 ```diagram
-  Anlass [Wahl + Klick + Amt]
-  Anlass -> Waage [Kosten + Wirkung + Dauer 1 bis 5]
-  Waage -> Form [E-Partizipation vs Organisation]
-  Form -> Urteil [Breite + Tiefe]
+  Anlass [Wahl plus Klick plus Amt]
+  Anlass -> Waage [Kosten plus Wirkung plus Dauer 1 bis 5]
+  Waage -> Form [E-Partizipation gegen Organisation]
+  Form -> Urteil [Breite plus Tiefe]
 ```
 
-Kausalkette: Fall schildern — Bilanz mit $U = \sum(Lust - Leid)$ gegen Probe mit $M \to G$ — Urteil am Kriterium Menschenwuerde; Abgrenzung zu $p_N(q) = p_A(q)$ mit $q_A - q_N$ und zu $Gini$ steht vor jeder Stellungnahme.
+Kausalkette: Fall schildern, Beteiligungsformen nach verfasst und frei ordnen, Kosten und Bindung vergleichen, Urteil am Kriterium Teilhabe und Minderheitenschutz formulieren.
 
 Klausur-Satz: `Die Wahlbeteiligung nach Alter zeigt, dass junge Menschen seltener wählen — Nichtwahl ist jedoch nicht gleich Desinteresse.`
 
@@ -95,7 +80,7 @@ Klausur-Satz: `Die Wahlbeteiligung nach Alter zeigt, dass junge Menschen seltene
 
 In Deutschland darf man bei der Bundestagswahl ab 18 Jahren wählen. Bei der Europawahl und in einigen Landtagswahlen liegt das Wahlalter dagegen bei 16. Jugendliche dürfen also bei manchen Wahlen mitentscheiden, bei anderen noch nicht — die Regeln sind nicht überall gleich
 
-Bezug zum Konzept: `Das Beispiel zeigt, wie aus Beobachtung ein pruefbares Verfahren mit $x_1$ und $x_2$ entsteht.`
+Bezug zum Konzept: `Das Beispiel zeigt, wie unterschiedlich offen die Kanäle der Beteiligung je nach Wahl und Alter sind.`
 
 ## Schritt 4 — ausprobieren: Interaktive Praxis & Urteils-Waage
 
@@ -103,39 +88,46 @@ BEISPIEL (geleitete Aufgabe mit Werkzeug):
 
 [Werkzeug: balance-board]
 
-Lege im Tool Pro- und Contra-Argumente auf die Waage und gewichte jedes Argument von 1 bis 5; veraendere die Gewichte Schritt fuer Schritt und beobachte, wann das Urteil zwischen Erlaubnis und Verbot oder zwischen Massnahme und Verzicht umschlaegt.
+Lege im Tool Pro- und Contra-Argumente auf die Waage und gewichte jedes Argument von 1 bis 5; veraendere die Gewichte Schritt fuer Schritt und beobachte, wann das Urteil zwischen verfasster und freier Form oder zwischen Breite und Tiefe umschlaegt.
 
-AUFGABE Waage-Raetsel (AFB II): Lege auf [Werkzeug: balance-board] Wahlbeteiligung nach Alter gegen E-Kampagne. Gewichte Kosten, Wirkung, Dauer und pruefe, ob Senkung der Kosten allein Bindung schafft.
+AUFGABE Waage-Raetsel (AFB II): Lege auf [Werkzeug: balance-board] Wahlbeteiligung nach Alter gegen E-Kampagne. Gewichte Kosten, Wirkung und Dauer und pruefe, ob die Senkung der Kosten allein Bindung schafft.
 
 HILFE:
-1. Schritt 1: Notiere Beteiligungsquoten nach Alter. 2. Schritt 2: Gewichte drei Formen 1 bis 5. 3. Schritt 3: Deute an Teilhabe und formuliere den Klausur-Satz.
+1. Schritt 1: Notiere Beteiligungsquoten nach Alter.
+2. Schritt 2: Gewichte die drei Formen von 1 bis 5.
+3. Schritt 3: Deute an Teilhabe und formuliere den Klausur-Satz.
 
-MUSTERLOESUNG: Waage zeigt mit $Teilhabe = Anlass + Organisation$: E-Senkung hebt Klick, nicht Bindung. Jugend partizipiert anders — Nichtwahl heisst nicht Desinteresse, doch ohne Organisation verpufft Wirkung.
+MUSTERLOESUNG: Die Waage zeigt: Digitale Senkung hebt den Klick, nicht die Bindung. Die Jugend partizipiert anders: Nichtwahl heisst nicht Desinteresse, doch ohne Organisation verpufft die Wirkung.
 
 Klausur-Satz: `E-Partizipation senkt die Kosten der Beteiligung, ersetzt aber keine dauerhafte politische Organisation.`
 
-## Schritt 5 — ausprobieren: Verfahrensvergleich & Abgrenzung
+## Schritt 5 — ausprobieren: Wegvergleich & Abgrenzung
 
-VERGLEICH (Wahl des Verfahrens, A gegen B):
+VERGLEICH (Wahl des Weges, Weg A gegen Weg B):
 
-VERGLEICH: Triff zuerst die Wahl des Verfahrens -- (i) Verfahren A (deskriptive Rekonstruktion) oder (ii) Verfahren B (kriteriengeleitete Beurteilung) -- und loese dann die Aufgabe.
+VERGLEICH: Waehle zuerst bewusst Weg A (konventionell) oder Weg B (unkonventionell) und begruende dann dein Urteil am passenden Kriterium.
 
-AUFGABE A: Ein Fall verlangt nur eine qualitative Rangfolge ohne Zahlenwert.
-AUFGABE B: Ein Fall verlangt einen belegten Vergleich mit Kennzahl und Begruendung.
+Weg A: Konventionelle Beteiligung setzt auf Wahl und Parteiarbeit. Sie bindet ueber Mandat und Organisation, wirkt dauerhaft und sichert Minderheitenschutz ueber Grundrechte und Gerichte. Staerke dieses Weges ist Verbindlichkeit und Bestand; Grenze ist die Ferne zum Alltag und die hohe Eintrittsschwelle fuer Junge.
 
-HILFE: Aufgabe A nennt kein Berechnungsziel, daher Verfahren (i). Aufgabe B verlangt eine Kennzahl wie $Gini$ oder $p_N(q) = p_A(q)$, daher Verfahren (ii). Die Wahl des Verfahrens steht vor jeder Rechnung.
+Weg B: Unkonventionelle Beteiligung setzt auf Demo, zivilen Ungehorsam und digitalen Protest. Sie mobilisiert schnell, erzeugt oeffentlichen Druck und senkt die Kosten des Mitmachens. Staerke dieses Weges ist Tempo und Breite; Grenze ist die fehlende Verbindlichkeit und die Spannung zu Recht und Minderheitenschutz.
 
-ANTWORT: Aufgabe A erfordert Verfahren (i), weil eine Rangfolge aus der Form genuegt. Aufgabe B erfordert Verfahren (ii), weil erst die Kennzahl mit $d = x_2 - x_1$ ein begruendetes Urteil erlaubt.
+AUFGABE A: Eine Schuelergruppe will ueber die Kommunalwahl und Parteijugend Einfluss auf den Verkehr nehmen. Loese den Fall ueber Weg A und diskutiere Wahl und Parteiarbeit als Weg.
+
+AUFGABE B: Dieselbe Schuelergruppe plant stattdessen eine Demo mit Strassenblockade und Onlinekampagne. Loese den Fall ueber Weg B und pruefe Demo, Ungehorsam und digitalen Protest an Legalitaet und Wirkung.
+
+HILFE: Aufgabe A fragt nach verfasster Form, daher Mandat und Organisation nennen. Aufgabe B fragt nach freier Form, daher Druck und Legalitaetsgrenze nennen. Die Wahl des Weges steht vor jedem Urteil.
+
+ANTWORT: Aufgabe A wird ueber Weg A geloest, weil Wahl und Parteiarbeit dauerhaft binden und Minderheitenschutz wahren, auch wenn der Weg lang ist. Aufgabe B wird ueber Weg B geloest, weil Demo und digitaler Protest schnell Druck erzeugen, doch ziviler Ungehorsam an der Grenze zur Rechtsverletzung sorgfaeltig zu begruenden ist. Erst beide Wege zusammen ergeben ein klausurtaugliches Urteil.
 
 Klausur-Satz: `Der Bürgerrat ergänzt die repräsentative Demokratie, kann sie aber ohne Verbindlichkeit nicht ersetzen.`
 
-## Schritt 6 — check: Verständnisprüfung
+## Schritt 6 — check: Selbsttest zu Partizipation
 
 CHECK (drei Fragen mit Antworten):
 
-FRAGE: Welche zwei Achsen strukturieren die Formen politischer Partizipation? | ANTWORT: konventionell/unkonventionell sowie legal/illegal; illegale Gewalt ist in jedem Fall ausgeschlossen.
-FRAGE: Welche drei Stufen führen in Deutschland zum Volksentscheid? | ANTWORT: Volksinitiative, Volksbegehren (Unterschriftenquorum) und Volksentscheid (Zustimmungsquorum).
-FRAGE: Was ist das Hauptargument gegen direkte Demokratie? | ANTWORT: Der fehlende Minderheitenschutz — eine Mehrheit könnte Grundrechte einer Minderheit überstimmen.
+FRAGE: Welche zwei Achsen strukturieren die Formen politischer Partizipation? | ANTWORT: Konventionell gegen unkonventionell sowie legal gegen illegal; illegale Gewalt ist in jedem Fall ausgeschlossen.
+FRAGE: Welche drei Stufen fuehren in Deutschland zum Volksentscheid? | ANTWORT: Volksinitiative, Volksbegehren mit Unterschriften und Volksentscheid mit Zustimmung an der Urne.
+FRAGE: Was ist das Hauptargument gegen direkte Demokratie? | ANTWORT: Der fehlende Minderheitenschutz: Eine Mehrheit könnte Grundrechte einer Minderheit ueberstimmen.
 
 Klausur-Satz: `Direkte Demokratie kann die repräsentative Demokratie ergänzen, doch ihr fehlt der eingebaute Minderheitenschutz.`
 
@@ -143,25 +135,25 @@ Klausur-Satz: `Direkte Demokratie kann die repräsentative Demokratie ergänzen,
 
 (Kein Schritt; wird vom Parser uebersprungen.)
 
-1. Fehlkonzept: Die beiden Verfahren seien austauschbar und fuehrten stets zum gleichen Ergebnis.
-   Korrektur-Satz: `Verfahren (i) liefert nur eine Rangfolge, Verfahren (ii) liefert eine Kennzahl; beide duerfen nicht gleichgesetzt werden.`
+1. Fehlkonzept: Nichtwahl bedeute stets Desinteresse an Politik.
+   Korrektur-Satz: `Nichtwahl kann auch Entfremdung von Parteien bedeuten, während Betroffene unkonventionell oder digital stark partizipieren.`
 
-2. Fehlkonzept: Ein einzelner Wert wie $Gini$ oder $p_G$ spreche bereits fuer sich und brauche kein Kriterium.
-   Korrektur-Satz: `Erst die Deutung der Kennzahl am Kriterium mit $d = x_2 - x_1$ ergibt ein klausurtaugliches Urteil.`
+2. Fehlkonzept: Direkte Demokratie mit Volksentscheid schuetze Minderheiten genauso wie repraesentative Verfahren.
+   Korrektur-Satz: `Der Volksentscheid kennt keine eingebaute Minderheitssicherung; erst Grundrechte und Gerichte begrenzen die Mehrheit.`
 
-## Schritt 7 — szenario: Klausurtransfer & Rubric
+## Schritt 7 — szenario: Buergerversammlung & Rat-Debatte
 
-ROLLE: Du bist Teilnehmerin bzw. Teilnehmer an einer simulierten Bürgerversammlung zum Klimaschutz
-SITUATION: Die Stadt will einen Bürgerrat zum Thema Verkehr einrichten. Ein Teil der Anwesenden hält das für echte Teilhabe, ein anderer Teil nennt es eine Alibi-Veranstaltung, weil die Empfehlungen nicht bindend sind. Beurteile in einer zusammenhängenden Stellungnahme (ca. 150 Wörter), ob ein Bürgerrat die politische Beteiligung stärkt, und begründe dein Urteil mit mindestens zwei Argumenten
+ROLLE: Du bist Teilnehmerin bzw. Teilnehmer an einer simulierten Buergerversammlung zum Klimaschutz.
+SITUATION: Die Stadt will einen Buergerrat zum Thema Verkehr einrichten. Ein Teil der Anwesenden haelt das fuer echte Teilhabe, ein anderer Teil nennt es eine Alibi-Veranstaltung, weil die Empfehlungen nicht bindend sind. Beurteile in einer zusammenhängenden Stellungnahme (ca. 150 Wörter), ob ein Bürgerrat die politische Beteiligung stärkt, und begründe dein Urteil mit mindestens zwei Argumenten.
 AUFGABE (AFB III): Verfasse eine zusammenhaengende Darstellung von etwa 150 Woertern mit Kriterium, Anwendung und Urteil.
-RUBRIC (30 XP): These mit Kriterium (5 XP) | Rekonstruktion mit $x_1$, $x_2$ (10 XP) | Anwendung mit $d = x_2 - x_1$ (10 XP) | Fazit mit Fachbegriffen (5 XP).
+RUBRIC (30 XP): These mit Kriterium Teilhabe und Minderheitenschutz (5 XP) | Darstellung von konventioneller und unkonventioneller Form (10 XP) | Anwendung auf Buergerat mit Verbindlichkeit und Repraesentation (10 XP) | Fazit mit Fachbegriffen und Klausur-Satz (5 XP).
 
-## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
+## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY (Kernbotschaft in einem Kasten):
 
-Takeaway-Satz: `Begriff schaerfen, Wahl des Verfahrens treffen, Kennzahl mit $d = x_2 - x_1$ deuten und kriteriengeleitet urteilen.`
+Takeaway-Satz: `Stimme bindet, Protest bewegt: Erst beide zusammen tragen Demokratie.`
 
 REFLEXION (zwei Fragen):
-1. Welcher Schritt fiel schwerer -- die Anwendung mit $x_1$ und $x_2$ (Schritt 4) oder die Wahl des Verfahrens (Schritt 5)?
-2. Beim naechsten Mal pruefe ich zuerst das Aufgabenziel und waehle danach Verfahren (i) oder (ii).
+1. Wann ueberzeugt Weg A mit Wahl und Verbindlichkeit staerker, und wann verlangt der Fall Weg B mit Demo und digitalem Druck? Nenne ein Abgrenzungsmerkmal.
+2. Pruefe deine Antwort an der Klausurnorm: Hast du Formen sauber nach verfasst und frei sortiert, beide Wege erwoegen und das Urteil an einem expliziten Kriterium begruendet?

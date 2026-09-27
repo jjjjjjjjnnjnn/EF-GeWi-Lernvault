@@ -15,30 +15,19 @@ version: Lesson-v3
 
 <!-- Lesson-v3: 8 Schritte plus Anekdote und Fehlvorstellung; Fehlvorstellung zwischen Schritt 6 und 7 (Parser-Skip); interaktives [Werkzeug: <id>]; Gating: check/szenario nicht bestanden = Weiter gesperrt; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
-## Schritt 1 — entdecken: Ziele & Phänomen-Einstieg
+## Schritt 1 — entdecken: Ziele & Phaenomen-Einstieg
 
 ZIELE (drei messbare Ziele dieser Lektion):
 
 1. Du kannst **Redebeitrag** und **Handlungsempfehlung** in je einem Satz definieren und Anlass korrekt zuordnen.
-2. Du kannst ein Material mit $Grenze = Quelle + Aussage + Frage$ auswerten und zwei Massnahmen mit Wirkungskette entwerfen.
-3. Du kannst mit dem Kriterium **Adressatenkompetenz** ein Urteil zu Machbarkeit formulieren und mit einem Klausur-Satz schliessen (AFB II/III).
+2. Du kannst ein Material nach Quelle, Aussagebereich und Frage auswerten und zwei Massnahmen mit Wirkungskette entwerfen.
+3. Du kannst mit dem Kriterium **Verantwortbare Gestaltung** ein Urteil zu Machbarkeit formulieren und mit einem Klausur-Satz schliessen (AFB II/III).
 
 ### Hook / Phaenomen
 
-Stell dir vor, du sitzt in der Klausur und hast die Argumente im Kopf, doch auf dem Papier entsteht nur ein langer Absatz ohne These und ohne Beleg und ohne Urteil, und die Punkte fuer Darstellung und Begruendung gehen verloren. Viele Schueler kennen den Stoff aus Familie und Unterricht und Alltag, aber sie bauen ihre Saetze ohne Plan und mischen Beschreibung mit Deutung und Meinung mit Pruefung. In dieser Lektion lernst du den Mechanismus aus Baustein und Reihenfolge und Pruefung: Zuerst setzt du eine klare These mit Fachbegriff, dann legst du einen Beleg aus Material oder Beispiel dazu, und erst danach formulierst du ein Urteil an einem Kriterium. Wer dieses Handwerk beherrscht, schreibt in jeder Aufgabe schneller und holt die Punkte fuer Operator und Struktur und Sprache.
+Stell dir vor, du hast dreissig Minuten, einen Stapel Material und eine leere Seite: Rede oder Empfehlung? Viele schreiben Meinung statt Handlung, Appell statt Plan. Was unterscheidet Gestaltung von Geschwaetz? In dieser Lektion lernst du zwei Wege der Gestaltung und einen klaren Bauplan fuer die Klausur.
 
-
-Ausgangslage aus der Vorlage: Dreißig Minuten, ein Stapel Material, eine leere Seite: Rede oder Empfehlung? Viele schreiben Meinung statt Handlung, Appell statt Kompetenz. Was unterscheidet Gestaltung von Geschwaetz? Genau hier entscheidet das Format.
-
-### Fachbegriff & Definition
-
-Die **Gestaltungsaufgabe** verlangt eigenstaendiges Entwickeln als **Redebeitrag** oder **Handlungsempfehlung** auf AFB III. Der **Redebeitrag** spricht ein Publikum an mit Anlass, Reaktion und Appell. Die **Handlungsempfehlung** berät einen Adressaten mit Daten, Massnahmen und Kompetenzpruefung. Kurz: Ueberzeugen durch Auftritt oder durch Plan.
-
-### Wirkungsgefuege / Modell
-
-Der Mechanismus laeuft in drei Stufen: **Erkennen, Bauen, Pruefen**. Erstens erkennt das Rollenwort mit $Rede = Publikum + Appell$ gegen $Empfehlung = Adressat + Massnahme$. Zweitens baut der Text mit $Rede = Anlass + Reaktion + Vorschlag + Schluss$ oder $Empfehlung = Kappe + Grenzen + Kette + Kompetenz$. Drittens prueft **Adressatenkompetenz** mit $Darf = Zustaendigkeit$, sonst bleibt Gestaltung wirkungslos. Faellt Pruefung aus, wird Plan zur Pose.
-
-Klausur-Satz: `Die Aufgabenarten C und D enden jeweils mit einer Gestaltungsaufgabe (AFB III); die Operatoren lauten gestalten Sie oder entwickeln Sie.`
+Klausur-Satz: `Die Aufgabenarten C und D enden jeweils mit einer Gestaltungsaufgabe; die Operatoren lauten gestalten Sie oder entwickeln Sie.`
 
 ## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
 
@@ -50,17 +39,15 @@ Gute Rede folgt antiker Ordnung, gute Empfehlung folgt Datenlogik. Wer Bausteine
 
 ### Fachbegriffe & Definitionen
 
-- **Redebeitrag:** Die muendliche Gestaltung mit $Rede = Anlass + Fremdposition + Vorschlag + Appell$. Sie lebt von $Adressierung = direkt + emotional$.
-- **Handlungsempfehlung:** Die schriftliche Beratung mit $Empfehlung = Kappe + Massnahme + Folge + Kompetenz$. Sie lebt von $Beleg = Daten + Quelle$.
-- **Datenkappe:** Die Einordnung mit $Kappe = Quelle + Zeitraum + Einheit$. Sie klaert, was $Material = sagt + verschweigt$.
-- **Wirkungskette:** Die Folgeabschaetzung mit $Kette = Massnahme \to Effekt + Nebenfolge$. Sie nennt Gewinner und Verlierer jeder Option.
-- **Adressatenkompetenz:** Die Zustaendigkeitspruefung mit $Kompetenz = darf + kann + zahlt$. Sie verhindert Vorschlaege an Unzustaendige.
+- **Redebeitrag:** Die muendliche Gestaltung an ein Publikum mit Anlass, Reaktion auf fremde Positionen, eigenem Vorschlag und Schlussappell.
+- **Handlungsempfehlung:** Die schriftliche Beratung eines Adressaten mit Datenbasis, Massnahmen, Folgen und Kompetenzpruefung.
+- **Datenkappe:** Die Einordnung aus Quelle, Zeitraum und Einheit. Sie klaert, was das Material sagt und was es verschweigt.
+- **Wirkungskette:** Die Folgenabschaetzung aus Massnahme, beabsichtigtem Effekt und moeglicher Nebenfolge mit Gewinnern und Verlierern.
+- **Adressatenkompetenz:** Die Pruefung von Zustaendigkeit, Faehigkeit und Finanzierung. Sie verhindert Vorschlaege an Unzustaendige.
 
 ### Wirkungsgefuege / Modell
 
-Die Begriffe greifen ineinander: **Redebeitrag** braucht Buehne und Appell mit $Wirkung = Haltung + Beifall$. **Handlungsempfehlung** braucht **Datenkappe** und **Wirkungskette** mit $Wirkung = Beleg + Plan$. **Adressatenkompetenz** filtert mit $zustaendig = Ja$ das Machbare heraus. Wer in der Klausur gestaltet, muss deshalb immer fragen: Spreche ich zum Publikum oder rate ich dem Entscheider?
-
-Punkte-Hinweis: Nenne $These$ plus $Beleg$ plus $Urteil$ als Bausteine und markiere Operator und Fachbegriff; erst vollstaendige Struktur plus Kriterium gibt volle Punkte.
+Die Begriffe greifen ineinander: **Redebeitrag** braucht Buehne und Appell aus Haltung und Ansprache. **Handlungsempfehlung** braucht **Datenkappe** und **Wirkungskette** aus Beleg und Plan. **Adressatenkompetenz** filtert das Machbare heraus. Wer in der Klausur gestaltet, muss deshalb immer fragen: Spreche ich zum Publikum oder rate ich dem Entscheider?
 
 Klausur-Satz: `Der Redebeitrag verlangt Anlassbezug, die Auseinandersetzung mit zwei fremden Aspekten, einen eigenen Vorschlag und eine ueberzeugende Adressierung.`
 
@@ -74,28 +61,28 @@ Rede ohne Beleg — Meinung oder Wissen? Massnahme ohne Nebenfolge — Hilfe ode
 
 ### Spiel-Aufgabe mit [Werkzeug: balance-board]
 
-Oeffne [Werkzeug: balance-board]. Lege Massnahme A gegen Massnahme B. Gewichte Quelle, Aussagebereich, Betroffene je 1 bis 5. Baue Wirkungskette mit $Intendiert + Nebenfolge$ und beobachte, wie die Waage bei vergessener Nebenfolge kippt. Benenne zuerst Grenzen des Materials.
+Oeffne [Werkzeug: balance-board]. Lege Massnahme A gegen Massnahme B. Gewichte Quelle, Aussagebereich und Betroffene je 1 bis 5. Baue je eine Wirkungskette mit beabsichtigtem Effekt und Nebenfolge und beobachte, wie die Waage bei vergessener Nebenfolge kippt. Benenne zuerst Grenzen des Materials.
 
 ### Aha-Moment & Gesetz
 
-Aha-Moment: Quelle — Kette — Verantwortung. Erstens begrenzt $Quelle + Bereich$ die Aussage. Zweitens verknuepft $Kette = Massnahme \to Effekt + Nebenfolge$ Akteure. Drittens urteilt Kriterium Verantwortbare Gestaltung: Erst Grenzen, dann Empfehlung. Gesetz: $Empfehlung = Beleg + Kette + Abwaegung$.
+Aha-Moment: Quelle — Kette — Verantwortung. Erstens begrenzen Quelle und Bereich die Aussage. Zweitens verknuepft die Kette aus Massnahme, Effekt und Nebenfolge Akteure. Drittens urteilt das Kriterium Verantwortbare Gestaltung: Erst Grenzen, dann Empfehlung. Gesetz: Empfehlung entsteht aus Beleg plus Kette plus Abwaegung.
 
 ```diagram
-  Material [Quelle + Daten + Luecke]
-  Material -> Waage [A vs B + Gewichte 1 bis 5]
-  Waage -> Kette [$Intendiert$ + $Nebenfolge$]
+  Material [Quelle plus Daten plus Luecke]
+  Material -> Waage [A gegen B plus Gewichte 1 bis 5]
+  Waage -> Kette [Effekt plus Nebenfolge]
   Kette -> Urteil [Empfehlung mit Grenze]
 ```
 
-Kausalkette: Material sichten — Bausteine ordnen zu These plus Beleg plus Urteil — Pruefung an Operator und Kriterium; Abgrenzung zu $p_N(q) = p_A(q)$ mit $q_A - q_N$, zu $Gini$ und zu $U = \sum(Lust - Leid)$ steht vor jedem Transfer.
+Kausalkette: Material sichten — Bausteine ordnen zu These plus Beleg plus Urteil — Pruefung an Operator und Kriterium; Abgrenzung beider Wege steht vor jedem Transfer.
 
 Klausur-Satz: `Die Handlungsempfehlung wertet Daten nach Quelle, Aussagebereich und Fragestellung aus und benennt zuerst die Grenzen des Materials.`
 
 ## Anekdote & Fun-Fact
 
-Die Bausteine einer guten Rede sind viel älter, als sie aussehen. Schon in der Antike lehrten Rhetoriklehrer eine feste Reihenfolge: Einleitung, Schilderung des Falls, Argumentation und Schluss. Wer heute einen Redebeitrag mit Anlass, Reaktion auf den Vorredner, eigenem Vorschlag und Appell aufbaut, folgt im Kern genau diesem antiken Muster. Die Gestaltungsaufgabe verlangt also nichts Modernes, sondern eine sehr alte Ordnung
+Die Bausteine einer guten Rede sind viel aelter, als sie aussehen. Schon in der Antike lehrten Rhetoriklehrer eine feste Reihenfolge: Einleitung, Schilderung des Falls, Argumentation und Schluss. Wer heute einen Redebeitrag mit Anlass, Reaktion auf den Vorredner, eigenem Vorschlag und Appell aufbaut, folgt im Kern genau diesem antiken Muster. Die Gestaltungsaufgabe verlangt also nichts Modernes, sondern eine sehr alte Ordnung.
 
-Bezug zum Konzept: `Das Beispiel zeigt, wie aus Beobachtung ein pruefbares Verfahren mit $x_1$ und $x_2$ entsteht.`
+Bezug zum Konzept: `Das Beispiel zeigt, wie aus antiker Ordnung ein pruefbarer Bauplan aus Beleg und Kette und Urteil wird.`
 
 ## Schritt 4 — ausprobieren: Interaktive Praxis & Satz-Labor
 
@@ -105,31 +92,36 @@ BEISPIEL (geleitete Aufgabe mit Werkzeug):
 
 Ziehe im Tool Satzbausteine aus These und Beleg und Urteil in die richtige Reihenfolge und pruefe per Klick, ob Operator und Fachbegriff und Kriterium vollstaendig sind; verbessere die Reihenfolge, bis jeder Baustein am richtigen Platz liegt.
 
-AUFGABE Waage-Raetsel (AFB II): Entwirf auf [Werkzeug: lego] einen Redebeitrag mit zwei Massnahmen. Gewichte Wirkung und Nebenfolge je 1 bis 5, benenne Materialgrenzen und empfehle begründet.
+AUFGABE Waage-Raetsel (AFB II): Entwirf auf [Werkzeug: lego] einen Redebeitrag mit zwei Massnahmen. Gewichte Wirkung und Nebenfolge je 1 bis 5, benenne Materialgrenzen und empfehle begruendet.
 
 HILFE:
-1. Schritt 1: Werte Quelle, Bereich, Frage aus. 2. Schritt 2: Baue $Kette$ mit Nebenfolgen. 3. Schritt 3: Deute an Verantwortung und formuliere den Klausur-Satz.
+1. Schritt 1: Werte Quelle, Bereich und Frage aus. 2. Schritt 2: Baue Ketten mit Nebenfolgen. 3. Schritt 3: Deute an Verantwortung und formuliere den Klausur-Satz.
 
-MUSTERLOESUNG: Massnahme A wirkt schnell mit Nebenlast fuer Dritte; B wirkt langsamer ohne Nebenfolge. Waage kippt zu B nach $Kette$: Erst Grenzen benennen, dann behutsam empfehlen.
+MUSTERLOESUNG: Massnahme A wirkt schnell mit Nebenlast fuer Dritte; B wirkt langsamer ohne Nebenfolge. Waage kippt zu B nach Abwaegung der Ketten: Erst Grenzen benennen, dann behutsam empfehlen.
 
-Klausur-Satz: `Jede empfohlene Massnahme braucht eine Wirkungskette mit intendierten Effekten und moeglichen Nebenfolgen fuer andere Akteure.`
+Klausur-Satz: `Jede empfohlene Massnahme braucht eine Wirkungskette mit beabsichtigten Effekten und moeglichen Nebenfolgen fuer andere Akteure.`
 
-## Schritt 5 — ausprobieren: Verfahrensvergleich & Abgrenzung
+## Schritt 5 — ausprobieren: Wegvergleich & Abgrenzung
 
-VERGLEICH (Wahl des Verfahrens, A gegen B):
+VERGLEICH (Wahl des Weges, A gegen B):
 
-VERGLEICH: Triff zuerst die Wahl des Verfahrens -- (i) Verfahren A (deskriptive Rekonstruktion) oder (ii) Verfahren B (kriteriengeleitete Beurteilung) -- und loese dann die Aufgabe.
+VERGLEICH: Pruefe zuerst das Aufgabenziel und waehle dann den passenden Weg — Weg A oder Weg B — und loese erst danach die Aufgabe.
 
-AUFGABE A: Ein Fall verlangt nur eine qualitative Rangfolge ohne Zahlenwert.
-AUFGABE B: Ein Fall verlangt einen belegten Vergleich mit Kennzahl und Begruendung.
+Weg A: Realpolitik und Reform als schrittweiser Wandel im System. Leitfrage: Was ist mit vorhandenen Zustaendigkeiten und Mitteln machbar? Blick auf kleine Schritte, Kompromiss und Nebenfolgen. Urteil an Machbarkeit und Akzeptanz: Reform entlastet schnell, loest aber Tiefenursachen nur teilweise.
 
-HILFE: Aufgabe A nennt kein Berechnungsziel, daher Verfahren (i). Aufgabe B verlangt eine Kennzahl wie $Gini$ oder $p_N(q) = p_A(q)$, daher Verfahren (ii). Die Wahl des Verfahrens steht vor jeder Rechnung.
+Weg B: Transformation als Regelneugestaltung gegen Tiefenursachen. Leitfrage: Welche Regel muss neu geschrieben werden, damit das Problem an der Wurzel schwindet? Blick auf Anreize, Strukturen und lange Ketten. Urteil an Wirktiefe und Fairness: Transformation greift tiefer, braucht aber Zeit und Mehrheiten.
 
-ANTWORT: Aufgabe A erfordert Verfahren (i), weil eine Rangfolge aus der Form genuegt. Aufgabe B erfordert Verfahren (ii), weil erst die Kennzahl mit $d = x_2 - x_1$ ein begruendetes Urteil erlaubt.
+AUFGABE A: Ein Schulhof soll kuenftig Muell vermeiden. Entwirf im Reform-Weg zwei sofort umsetzbare Schritte mit Kette und Kompetenzpruefung.
+
+AUFGABE B: Die Schule diskutiert Einweg gegen Mehrweg als Grundregel mit Pfand und Spuelstrasse. Vergleiche Reform-Weg und Transformations-Weg und begruende kriteriengeleitet, welcher Weg gegen Tiefenursachen wirkt.
+
+HILFE: Aufgabe A verlangt schnelle Schritte im Rahmen, daher Weg A mit Machbarkeit. Aufgabe B verlangt Vergleich am Massstab von Tiefe und Fairness, daher beide Wege gegenueberstellen und Abwaegung begruenden. Die Wahl des Weges steht vor jeder Empfehlung.
+
+ANTWORT: Aufgabe A folgt Weg A, weil Trennung und Pfandstationen sofort wirken und zustimmungsfaehig sind. Aufgabe B verlangt den Vergleich, weil erst Gegenueberstellung von schnellem Schritt und neuer Regel ein begruendetes Urteil zu Ursache und Dauer erlaubt.
 
 Klausur-Satz: `Der Redebeitrag ueberzeugt ein Publikum mit Bezug und Appell, die Handlungsempfehlung ueberzeugt einen Adressaten mit Daten und Wirkungsketten.`
 
-## Schritt 6 — check: Verständnisprüfung
+## Schritt 6 — check: Selbsttest zu Gestaltungskompetenz
 
 CHECK (drei Fragen mit Antworten):
 
@@ -143,28 +135,25 @@ Klausur-Satz: `Ohne konkrete Massnahme, ohne Folge und ohne Kompetenzbezug bleib
 
 (Kein Schritt; wird vom Parser uebersprungen.)
 
-1. Fehlkonzept: Die beiden Verfahren seien austauschbar und fuehrten stets zum gleichen Ergebnis.
-   Korrektur-Satz: `Verfahren (i) liefert nur eine Rangfolge, Verfahren (ii) liefert eine Kennzahl; beide duerfen nicht gleichgesetzt werden.`
+1. Fehlkonzept: Gestaltung heisse, moeglichst viele Wuensche ohne Beleg und Kette aufzuschreiben, mehr sei besser.
+   Korrektur-Satz: `Gestaltung braucht Datenkappe plus zwei Ketten mit Nebenfolgen, erst Beleg und Abwaegung machen aus Meinung einen Plan.`
 
-2. Fehlkonzept: Ein einzelner Wert wie $Gini$ oder $p_G$ spreche bereits fuer sich und brauche kein Kriterium.
-   Korrektur-Satz: `Erst die Deutung der Kennzahl am Kriterium mit $d = x_2 - x_1$ ergibt ein klausurtaugliches Urteil.`
+2. Fehlkonzept: Redebeitrag und Handlungsempfehlung seien gleich aufgebaut, nur die Ueberschrift sei anders.
+   Korrektur-Satz: `Der Redebeitrag spricht ein Publikum mit Appell an, die Empfehlung beraet einen Adressaten mit Massnahmen und Kompetenzpruefung.`
 
-## Schritt 7 — szenario: Klausurtransfer & Rubric
+## Schritt 7 — szenario: Klausur-Simulation & Gestaltungs-Debatte
 
-ROLLE: Du bist Teilnehmer/in eines Klausur-Simulationsdurchgangs und bearbeitest Aufgabe 3 in Echtzeit unter Zeitdruck.
-SITUATION: Die Klausur umfasst drei Aufgaben. Aufgabe 1 (darstellen, AFB I, 24 BE) und Aufgabe 2 (analysieren, AFB II, 46 BE) sind bearbeitet; es bleiben 30 Minuten fuer Aufgabe 3. Gegeben ist ein Materialpaket zu einem fiktiven Vorschlag, die Mehrwertsteuer auf Lebensmittel zu senken. Entscheiden Sie zunaechst, welches Format die Aufgabe verlangt, und entwickeln Sie anschliessend die Gestaltung in 30 Minuten; notieren Sie am Rand Ihre Minutenaufteilung.
-RUBRIC (30 XP): Erkennen und Begruenden des Formats anhand des Rollenwortes (5 XP) | Vollstaendigkeit der vier bzw. fuenf Bausteine (10 XP) | Zwei konkrete Massnahmen mit je einer Wirkungskette und Nebenfolge (10 XP) | Adressatenkompetenz und widerspruchsfreier Schluss (5 XP)
-SITUATION: Die Klausur umfasst drei Aufgaben. Aufgabe 1 (darstellen, AFB I, 24 BE) und Aufgabe 2 (analysieren, AFB II, 46 BE) sind bearbeitet; es bleiben 30 Minuten fuer Aufgabe 3. Gegeben ist ein Materialpaket zu einem fiktiven Vorschlag, die Mehrwertsteuer auf Lebensmittel zu senken. Entscheiden Sie zunaechst, welches Format die Aufgabe verlangt, und entwickeln Sie anschliessend die Gestaltung in 30 Minuten; notieren Sie am Rand Ihre Minutenaufteilung.
-RUBRIC (30 XP): Erkennen und Begruenden des Formats anhand des Rollenwortes (5 XP) | Vollstaendigkeit der vier bzw. fuenf Bausteine (10 XP) | Zwei konkrete Massnahmen mit je einer Wirkungskette und Nebenfolge (10 XP) | Adressatenkompetenz und widerspruchsfreier Schluss (5 XP)
+ROLLE: Du bist Teilnehmerin bzw. Teilnehmer eines Klausur-Simulationsdurchgangs und bearbeitest Aufgabe 3 in Echtzeit unter Zeitdruck.
+SITUATION: Die Klausur umfasst drei Aufgaben. Aufgabe 1 mit Darstellen und Aufgabe 2 mit Analysieren sind bearbeitet; es bleiben 30 Minuten fuer Aufgabe 3. Gegeben ist ein Materialpaket zu einem Vorschlag, die Ausgaben fuer Schulessen sozial zu staffeln. Entscheide zunaechst, welches Format die Aufgabe verlangt, und entwickle anschliessend die Gestaltung in 30 Minuten; notiere am Rand deine Minutenaufteilung.
 AUFGABE (AFB III): Verfasse eine zusammenhaengende Darstellung von etwa 150 Woertern mit Kriterium, Anwendung und Urteil.
-RUBRIC (30 XP): These mit Kriterium (5 XP) | Rekonstruktion mit $x_1$, $x_2$ (10 XP) | Anwendung mit $d = x_2 - x_1$ (10 XP) | Fazit mit Fachbegriffen (5 XP).
+RUBRIC (30 XP): Erkennen und Begruenden des Formats anhand des Rollenwortes (5 XP) | Vollstaendigkeit der vier bzw. fuenf Bausteine (10 XP) | Zwei konkrete Massnahmen mit je einer Wirkungskette und Nebenfolge (10 XP) | Adressatenkompetenz und widerspruchsfreier Schluss (5 XP).
 
-## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
+## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY (Kernbotschaft in einem Kasten):
 
-Takeaway-Satz: `Begriff schaerfen, Wahl des Verfahrens treffen, Kennzahl mit $d = x_2 - x_1$ deuten und kriteriengeleitet urteilen.`
+Takeaway-Satz: `Erst Beleg sichern, dann Kette bauen, dann mutig empfehlen.`
 
 REFLEXION (zwei Fragen):
-1. Welcher Schritt fiel schwerer -- die Anwendung mit $x_1$ und $x_2$ (Schritt 4) oder die Wahl des Verfahrens (Schritt 5)?
-2. Beim naechsten Mal pruefe ich zuerst das Aufgabenziel und waehle danach Verfahren (i) oder (ii).
+1. Welcher Weg fiel dir leichter — kleine Reform mit schneller Wirkung (Schritt 4) oder neue Regel gegen Tiefenursachen (Schritt 5)?
+2. Woran erkennst du kuenftig, ob ein Fall nach Machbarkeit oder nach Wirktiefe verlangt?

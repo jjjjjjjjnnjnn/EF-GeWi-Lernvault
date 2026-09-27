@@ -15,7 +15,7 @@ version: Lesson-v3
 
 <!-- Lesson-v3: 8 Schritte plus Anekdote und Fehlvorstellung; Fehlvorstellung zwischen Schritt 6 und 7 (Parser-Skip); interaktives [Werkzeug: <id>]; Gating: check/szenario nicht bestanden = Weiter gesperrt; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
-## Schritt 1 — entdecken: Ziele & Phänomen-Einstieg
+## Schritt 1 — entdecken: Ziele & Phaenomen-Einstieg
 
 ZIELE (drei messbare Ziele dieser Lektion):
 
@@ -23,19 +23,11 @@ ZIELE (drei messbare Ziele dieser Lektion):
 2. Du kannst den **Preismechanismus** von Angebot und Nachfrage darstellen und die Folgen eines staatlichen Festpreises am Beispiel Miete oder Mindestlohn erklaeren.
 3. Du kannst einen Eingriff wie **Mietendeckel oder Mindestlohn** mit einem Kriterium beurteilen und mit einem Klausur-Satz abschliessen (AFB II/III).
 
-### Hook / Phänomen
+### Hook / Phaenomen
 
 Stell dir vor, du suchst in der Stadt eine Wohnung und siehst ein Schild mit einer Miete von elf Euro pro Quadratmeter, doch der Stadtrat beschliesst einen Deckel bei acht Euro und verspricht billiges Wohnen fuer alle. Alle freuen sich zuerst ueber die niedrige Miete, aber nach wenigen Monaten verschwinden viele Angebote, die Schlangen bei jeder Besichtigung werden laenger und ein Schattenmarkt mit Abstandszahlungen und Gefaelligkeiten entsteht. Gleichzeitig fordert die Gewerkschaft einen hoeheren Mindestlohn, weil der Lohn zum Leben reichen muss, waehrend kleine Betriebe warnen, dass sie bei diesem Lohn weniger Personal einstellen und ihre Preise erhoehen muessen.
 
 Es ist Samstagmorgen, das Regal im Supermarkt ist voll, niemand steht an, niemand hamstert. Vor achtzig Jahren war das Gegenteil normal: Schlangen, Bezugsscheine, leere Schaufenster. Im Juni 1948 fuellten sich die Laeden in Westdeutschland fast ueber Nacht — nicht weil ueber Nacht mehr produziert wurde, sondern weil sich die Spielregeln aenderten. Wie kann eine blosse Regel das Verhalten von Millionen Menschen so radikal veraendern? Und warum braucht eine freie Wirtschaft trotzdem einen Sozialstaat? Beide Faelle zeigen denselben Mechanismus aus Signal und Anpassung: Ein staatlich fixierter Preis ersetzt das freie Signal aus Angebot und Nachfrage, die Mengen reagieren mit Ausweichen oder Verknappung, und am Ende muss jedes Urteil zwischen Effizienz und sozialem Ziel sorgfaeltig abgewogen werden.
-
-### Fachbegriff & Definition
-
-Die **Soziale Marktwirtschaft** ist die Wirtschaftsordnung der Bundesrepublik: **freier Wettbewerb auf dem Markt** plus **staatlich gesicherter sozialer Ausgleich**. Der Staat setzt den **Ordnungsrahmen** — Eigentum, Vertragsfreiheit, Wettbewerbsrecht, Geldwertstabilitaet — greift aber nicht direkt in **Preise** und **Loehne** ein. Wettbewerb sorgt fuer **Effizienz und Innovation**, der Sozialstaat fuer **Gerechtigkeit und Sicherheit**. Kurz: Der Staat ist **Schiedsrichter, nicht Spieler**.
-
-### Wirkungsgefüge / Modell
-
-Der Kernmechanismus laeuft in drei Stufen: **Anreiz, Koordination, Korrektur**. Erstens setzt **Konkurrenz** Anreize: Wer besser oder billiger anbietet, gewinnt Kunden. Zweitens koordiniert der **Preis** Angebot und Nachfrage: Steigt die Nachfrage, steigt der Preis, mehr Anbieter kommen hinzu, bis sich Angebot und Nachfrage zum Gleichgewichtspreis treffen. Drittens korrigiert der **Sozialstaat**, wo der Markt blind ist: bei Krankheit, Arbeitslosigkeit, Marktmacht oder Umweltkosten. Faellt eine Stufe aus — etwa durch Monopole oder fehlende Absicherung — kippt die Legitimation der Ordnung.
 
 Klausur-Satz: `Die Soziale Marktwirtschaft legitimiert sich durch zwei Versprechen: Effizienz durch Wettbewerb und Gerechtigkeit durch sozialen Ausgleich.`
 

@@ -15,28 +15,17 @@ version: Lesson-v3
 
 <!-- Lesson-v3: 8 Schritte plus Anekdote und Fehlvorstellung; Fehlvorstellung zwischen Schritt 6 und 7 (Parser-Skip); interaktives [Werkzeug: <id>]; Gating: check/szenario nicht bestanden = Weiter gesperrt; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
-## Schritt 1 — entdecken: Ziele & Phänomen-Einstieg
+## Schritt 1 — entdecken: Ziele & Phaenomen-Einstieg
 
 ZIELE (drei messbare Ziele dieser Lektion):
 
 1. Du kannst **IF4** und **IF6** mit je einem Fokusthema benennen und EF-Kapitel korrekt zuordnen.
-2. Du kannst das **Magische Viereck** mit $Z = Preis + Beschaeftigung + Aussen + Wachstum$ darstellen und Zielkonflikte erklaeren.
-3. Du kannst mit dem Kriterium **Passung** ein Urteil zur Modellwahl formulieren und mit einem Klausur-Satz schliessen (AFB II/III).
+2. Du kannst das **Magische Viereck** mit Preis, Beschaeftigung, Aussenbilanz und Wachstum darstellen und Zielkonflikte erklaeren.
+3. Du kannst mit dem Kriterium **Passung und Aufgabenbezug** ein Urteil zur Modellwahl formulieren und mit einem Klausur-Satz schliessen (AFB II/III).
 
 ### Hook / Phaenomen
 
-Stell dir vor, du sitzt in der Klausur und hast die Argumente im Kopf, doch auf dem Papier entsteht nur ein langer Absatz ohne These und ohne Beleg und ohne Urteil, und die Punkte fuer Darstellung und Begruendung gehen verloren. Viele Schueler kennen den Stoff aus Familie und Unterricht und Alltag, aber sie bauen ihre Saetze ohne Plan und mischen Beschreibung mit Deutung und Meinung mit Pruefung. In dieser Lektion lernst du den Mechanismus aus Baustein und Reihenfolge und Pruefung: Zuerst setzt du eine klare These mit Fachbegriff, dann legst du einen Beleg aus Material oder Beispiel dazu, und erst danach formulierst du ein Urteil an einem Kriterium. Wer dieses Handwerk beherrscht, schreibt in jeder Aufgabe schneller und holt die Punkte fuer Operator und Struktur und Sprache.
-
-
-Ausgangslage aus der Vorlage: Vier Ziele, ein Widerspruch: Vollbeschaeftigung drueckt auf Preise, Wachstum belastet die Umwelt, stabile Preise bremsen Kredite. Das Magische Viereck heisst magisch, weil es fast nie gelingt. Wie lernst du fuer ein Abitur, das genau diese Spannung prueft?
-
-### Fachbegriff & Definition
-
-Die **Abitur-Fokussierungen** legen fest, welche Themen in **IF4 Wirtschaft** und **IF6 Ungleichheit** vertieft werden. IF4 verlangt **Staatsverschuldung** und **Freihandel gegen Protektionismus**, IF6 verlangt **Schichten, Lagen und Milieus**. Die EF-Kapitel liefern das Fundament: Stabilitaetspolitik traegt IF4, Ungleichheitsmessung traegt IF6.
-
-### Wirkungsgefuege / Modell
-
-Der Mechanismus laeuft in drei Stufen: **Vorgabe, Fundament, Transfer**. Erstens nennt die Vorgabe $Fokus = IF4 + IF6$ mit je zwei Schwerpunkten. Zweitens liefert das Fundament $EF = Kapitel9 + Kapitel11 + Gini$ die Begriffe und Kennzahlen. Drittens verlangt der Transfer $Urteil = Kriterium + Anwendung$: Dieselbe Mindestlohnforderung ist in IF4 ein Eingriff in $Tarifautonomie$, in IF6 eine Frage von $Gerechtigkeit$. Faellt die Zuordnung aus, wird Lernen beliebig.
+Stell dir vor, vier Ziele ziehen in vier Richtungen: Vollbeschaeftigung drueckt auf Preise, Wachstum belastet die Umwelt, stabile Preise bremsen Kredite. Das Magische Viereck heisst magisch, weil es fast nie gelingt. Wie lernst du fuer ein Abitur, das genau diese Spannung prueft? In dieser Lektion lernst du zwei Wege zum Abitur-Urteil und eine klare Brillenwahl.
 
 Klausur-Satz: `Die Vorgaben fuer das Zentralabitur verlangen in IF4 unter anderem die Legitimation staatlichen Handelns, die Zielgroessen des Stabilitaetsgesetzes und die internationalen Wirtschaftsbeziehungen.`
 
@@ -50,17 +39,15 @@ Ohne Landkarte verlierst du dich im Stoff. IF4 redet ueber Geld und Staat, IF6 u
 
 ### Fachbegriffe & Definitionen
 
-- **Magisches Viereck:** Die vier Ziele $Z = Preisstabilitaet + Beschaeftigung + Aussenbilanz + Wachstum$. Es gilt $Zielkonflikt > 0$, weil mehr Wachstum oft $Preis = Anstieg$ bedeutet.
-- **Staatsverschuldung:** Die Debatte um Kredit gegen Vorsorge mit $Schuld = Ausgabe - Einnahme$. Sie prueft Legitimation und Grenzen staatlichen Handelns.
-- **Freihandel:** Der offene Guetertausch mit $Wohlstand = Spezialisierung + Wettbewerb$. Sein Gegenpol $Protektionismus = Zoll + Quote$ schuetzt, verteuert aber.
-- **Schichtenmodell:** Die vertikale Gliederung nach Einkommen und Bildung mit $Schicht = oben + mitte + unten$. Es misst Ungleichheit eindimensional.
-- **Milieumodell:** Die Gruppierung nach Werten und Lebensstilen mit $Milieu = Haltung + Alltag$. Es erklaert Wahl und Konsum jenseits des Geldes.
+- **Magisches Viereck:** Die vier Ziele Preisstabilitaet, Beschaeftigung, Aussenbilanz und Wachstum. Mehr Wachstum bedeutet oft Preisdruck, daher bleibt Zielkonflikt die Regel.
+- **Staatsverschuldung:** Die Debatte um Kredit gegen Vorsorge aus Mehrausgaben gegenueber Einnahmen. Sie prueft Legitimation und Grenzen staatlichen Handelns.
+- **Freihandel:** Der offene Guetertausch aus Spezialisierung und Wettbewerb. Sein Gegenpol Protektionismus aus Zoll und Quote schuetzt, verteuert aber.
+- **Schichtenmodell:** Die vertikale Gliederung nach Einkommen und Bildung in oben, Mitte und unten. Es misst Ungleichheit eindimensional.
+- **Milieumodell:** Die Gruppierung nach Werten und Lebensstilen aus Haltung und Alltag. Es erklaert Wahl und Konsum jenseits des Geldes.
 
 ### Wirkungsgefuege / Modell
 
-Die Begriffe greifen ineinander: Das **magische Viereck** definiert IF4 mit $Z = 4Ziele$, **Staatsverschuldung** und **Freihandel** liefern die Streitfragen dazu. **Schichtenmodell** und **Milieumodell** definieren IF6 mit $Struktur = vertikal + kulturell$. Wer in der Klausur antwortet, muss deshalb immer fragen: Bin ich in IF4 mit Instrumenten oder in IF6 mit Modellen?
-
-Punkte-Hinweis: Nenne $These$ plus $Beleg$ plus $Urteil$ als Bausteine und markiere Operator und Fachbegriff; erst vollstaendige Struktur plus Kriterium gibt volle Punkte.
+Die Begriffe greifen ineinander: Das **magische Viereck** definiert IF4 mit vier Zielen, **Staatsverschuldung** und **Freihandel** liefern die Streitfragen dazu. **Schichtenmodell** und **Milieumodell** definieren IF6 aus Struktur und Kultur. Wer in der Klausur antwortet, muss deshalb immer fragen: Bin ich in IF4 mit Instrumenten oder in IF6 mit Modellen?
 
 Klausur-Satz: `Als Fokussierungen sind in IF4 der Streit um die Staatsverschuldung und der Gegensatz von Freihandel und Protektionismus sowie in IF6 die Schichten-, Lagen- und Milieumodelle ausgewiesen.`
 
@@ -74,28 +61,28 @@ Mindestlohn 15 Euro — IF4 oder IF6? Gleiche Forderung, zwei Brillen — Eingri
 
 ### Spiel-Aufgabe mit [Werkzeug: balance-board]
 
-Oeffne [Werkzeug: balance-board]. Lege IF4-Brille mit $p_N(q) = p_A(q)$ gegen IF6-Brille mit $Gini = 1 - 2B$. Gewichte Tarifautonomie gegen Verteilung je 1 bis 5. Ziehe Mindestlohn-Regler auf $p = 25$: Links $q_A - q_N = 7{,}5$ als Eingriff, rechts $Gini$-Senkung als Gewinn. Waehle Brille nach Aufgabenziel.
+Oeffne [Werkzeug: balance-board]. Lege IF4-Brille mit Markt und Tarif gegen IF6-Brille mit Verteilung und Teilhabe. Gewichte Tarifautonomie gegen Verteilung je 1 bis 5. Ziehe den Mindestlohn-Regler nach oben: Links zeigt sich Eingriff in freie Lohnbildung, rechts zeigt sich Entlastung am unteren Rand. Waehle die Brille nach Aufgabenziel.
 
 ### Aha-Moment & Gesetz
 
-Aha-Moment: Ziel — Verfahren — Urteil. Erstens traegt Kapitel 9 plus 11 IF4, Gini plus Trichter IF6. Zweitens trennt $p_N(q) = p_A(q)$ gegen $Gini$ die Wege. Drittens urteilt Kriterium Aufgabenbezug: Erst Ziel lesen, dann Verfahren. Gesetz: $Note = Brille + Beleg + Urteil$.
+Aha-Moment: Ziel — Weg — Urteil. Erstens tragen Kapitel 9 plus 11 IF4, Materialien zu Ungleichheit IF6. Zweitens trennen Markt-Blick und Verteilungs-Blick die Wege. Drittens urteilt das Kriterium Aufgabenbezug: Erst Ziel lesen, dann Weg. Gesetz: Note entsteht aus Brille plus Beleg plus Urteil.
 
 ```diagram
-  Forderung [Mindestlohn $p = 25$]
-  Forderung -> Waage [IF4 $p_N(q) = p_A(q)$ vs IF6 $Gini$]
-  Waage -> Verfahren [$q_A - q_N$ vs $Gini = 1 - 2B$]
-  Verfahren -> Urteil [Eingriff oder Verteilung]
+  Forderung [Mindestlohn erhoeht]
+  Forderung -> Waage [IF4 Markt gegen IF6 Verteilung]
+  Waage -> Weg [Eingriff oder Verteilungsfrage]
+  Weg -> Urteil [Eingriff oder Verteilung]
 ```
 
-Kausalkette: Material sichten — Bausteine ordnen zu These plus Beleg plus Urteil — Pruefung an Operator und Kriterium; Abgrenzung zu $p_N(q) = p_A(q)$ mit $q_A - q_N$, zu $Gini$ und zu $U = \sum(Lust - Leid)$ steht vor jedem Transfer.
+Kausalkette: Material sichten — Bausteine ordnen zu These plus Beleg plus Urteil — Pruefung an Operator und Kriterium; Abgrenzung beider Wege steht vor jedem Transfer.
 
-Klausur-Satz: `Die EF-Kapitel 9 und 11 tragen IF4, waehrend die EF-Materialien zu Ungleichheit (Gini, Bildungstrichter, Umverteilung) IF6 fuellen.`
+Klausur-Satz: `Die EF-Kapitel 9 und 11 tragen IF4, waehrend die EF-Materialien zu Ungleichheit IF6 fuellen.`
 
 ## Anekdote & Fun-Fact
 
-Das „magische Viereck" der Wirtschaftspolitik heißt nicht magisch, weil es leicht zu erreichen wäre — im Gegenteil. Die vier Ziele Preisstabilität, hoher Beschäftigungsstand, außenwirtschaftliches Gleichgewicht und stetiges Wachstum lassen sich kaum gleichzeitig voll erfüllen. Sobald ein Ziel stärker verfolgt wird, gerät ein anderes unter Druck. „Magisch" ist also nicht der Erfolg, sondern die Schwierigkeit, alle vier Ecken zugleich zu treffen
+Das magische Viereck der Wirtschaftspolitik heisst nicht magisch, weil es leicht zu erreichen waere — im Gegenteil. Die vier Ziele Preisstabilitaet, hoher Beschaeftigungsstand, aussenwirtschaftliches Gleichgewicht und stetiges Wachstum lassen sich kaum gleichzeitig voll erfuellen. Sobald ein Ziel staerker verfolgt wird, geraet ein anderes unter Druck. Magisch ist also nicht der Erfolg, sondern die Schwierigkeit, alle vier Ecken zugleich zu treffen.
 
-Bezug zum Konzept: `Das Beispiel zeigt, wie aus Beobachtung ein pruefbares Verfahren mit $x_1$ und $x_2$ entsteht.`
+Bezug zum Konzept: `Das Beispiel zeigt, wie aus einem Zielkonflikt eine pruefbare Brillenwahl mit Beleg und Urteil wird.`
 
 ## Schritt 4 — ausprobieren: Interaktive Praxis & Satz-Labor
 
@@ -105,31 +92,36 @@ BEISPIEL (geleitete Aufgabe mit Werkzeug):
 
 Ziehe im Tool Satzbausteine aus These und Beleg und Urteil in die richtige Reihenfolge und pruefe per Klick, ob Operator und Fachbegriff und Kriterium vollstaendig sind; verbessere die Reihenfolge, bis jeder Baustein am richtigen Platz liegt.
 
-AUFGABE Waage-Raetsel (AFB II): Lege Mindestlohn-Forderung auf [Werkzeug: lego]. Stelle $p = 25$ ein, miss $q_A - q_N$, stelle danach $Gini$-Blick ein und entscheide per Operator, welche Brille IF4 oder IF6 verlangt.
+AUFGABE Waage-Raetsel (AFB II): Lege die Mindestlohn-Forderung auf [Werkzeug: lego]. Stelle erst den Markt-Blick mit Eingriff in Tarifautonomie ein, stelle danach den Verteilungs-Blick mit Entlastung unten ein und entscheide per Operator, welche Brille IF4 oder IF6 verlangt.
 
 HILFE:
-1. Schritt 1: Lies Operator und Ziel. 2. Schritt 2: Waehle $p_N(q) = p_A(q)$ oder $Gini = 1 - 2B$. 3. Schritt 3: Deute am Aufgabenbezug und formuliere den Klausur-Satz.
+1. Schritt 1: Lies Operator und Ziel. 2. Schritt 2: Waehle Markt-Blick oder Verteilungs-Blick. 3. Schritt 3: Deute am Aufgabenbezug und formuliere den Klausur-Satz.
 
-MUSTERLOESUNG: In IF4 ist Lohn Eingriff in Tarifautonomie mit $q_A - q_N = 7{,}5$; in IF6 Verteilungsfrage mit $Gini$-Senkung. Waage kippt nach Ziel: Erst Brille waehlen, dann rechnen, dann urteilen.
+MUSTERLOESUNG: In IF4 ist Lohn Eingriff in Tarifautonomie mit Beschaeftigungsrisiko; in IF6 ist Lohn Verteilungsfrage mit Entlastung unten. Waage kippt nach Ziel: Erst Brille waehlen, dann belegen, dann urteilen.
 
 Klausur-Satz: `Dieselbe Forderung nach einem hoeheren Mindestlohn verlangt zwei Fachbrillen: In IF4 ist sie ein Eingriff in die Tarifautonomie, in IF6 eine Verteilungsfrage.`
 
-## Schritt 5 — ausprobieren: Verfahrensvergleich & Abgrenzung
+## Schritt 5 — ausprobieren: Wegvergleich & Abgrenzung
 
-VERGLEICH (Wahl des Verfahrens, A gegen B):
+VERGLEICH (Wahl des Weges, A gegen B):
 
-VERGLEICH: Triff zuerst die Wahl des Verfahrens -- (i) Verfahren A (deskriptive Rekonstruktion) oder (ii) Verfahren B (kriteriengeleitete Beurteilung) -- und loese dann die Aufgabe.
+VERGLEICH: Pruefe zuerst das Aufgabenziel und waehle dann den passenden Weg — Weg A oder Weg B — und loese erst danach die Aufgabe.
 
-AUFGABE A: Ein Fall verlangt nur eine qualitative Rangfolge ohne Zahlenwert.
-AUFGABE B: Ein Fall verlangt einen belegten Vergleich mit Kennzahl und Begruendung.
+Weg A: AFB II Kriterienanalyse als theoriegeleitete Kausalableitung. Leitfrage: Welcher Mechanismus erklaert den Fall Schritt fuer Schritt? Blick auf These, Kette und Beleg aus Material und Modell. Ergebnis ist eine saubere Analyse ohne vorschnelles Urteil: Ursachen werden mit Fachsprache hergeleitet.
 
-HILFE: Aufgabe A nennt kein Berechnungsziel, daher Verfahren (i). Aufgabe B verlangt eine Kennzahl wie $Gini$ oder $p_N(q) = p_A(q)$, daher Verfahren (ii). Die Wahl des Verfahrens steht vor jeder Rechnung.
+Weg B: AFB III Urteil als Abwaegung von Effizienz gegen Legitimitaet. Leitfrage: Was wiegt schwerer — schnelle Wirkung oder Zustimmung und Fairness? Blick auf Pro und Contra mit Massstab. Ergebnis ist ein begruendetes Urteil mit Ausblick: Abwaegung schliesst mit eigenem Standpunkt.
 
-ANTWORT: Aufgabe A erfordert Verfahren (i), weil eine Rangfolge aus der Form genuegt. Aufgabe B erfordert Verfahren (ii), weil erst die Kennzahl mit $d = x_2 - x_1$ ein begruendetes Urteil erlaubt.
+AUFGABE A: Leite theoriegeleitet her, warum ein hoher Mindestlohn in IF4 als Eingriff mit Zielkonflikt im Viereck und in IF6 als Entlastung mit Teilhabegewinn gelesen werden kann.
+
+AUFGABE B: Waeege Effizienz gegen Legitimitaet ab und begruende kriteriengeleitet, ob der Staat trotz Eingriffstiefe handeln sollte oder Zurueckhaltung zeigen muss.
+
+HILFE: Aufgabe A verlangt Herleitung ohne Wertung, daher Weg A mit Kette und Beleg. Aufgabe B verlangt Abwaegung am Massstab, daher Weg B mit Pro und Contra und Urteil. Die Wahl des Weges steht vor jeder Deutung.
+
+ANTWORT: Aufgabe A folgt Weg A, weil Kausalableitung mit Modellen und Material genuegt. Aufgabe B verlangt Weg B, weil erst Abwaegung von Wirkung und Zustimmung ein begruendetes Urteil zu Eingriff oder Zurueckhaltung erlaubt.
 
 Klausur-Satz: `Die Fokussierung des Inhaltsfelds 4 fragt nach dem Staatshaushalt und seinen Instrumenten, die des Inhaltsfelds 6 nach den Modellen der Ungleichheit und dem sozialstaatlichen Ausgleich.`
 
-## Schritt 6 — check: Verständnisprüfung
+## Schritt 6 — check: Selbsttest zu Abitur-Fokus
 
 CHECK (drei Fragen mit Antworten):
 
@@ -143,28 +135,25 @@ Klausur-Satz: `Die Vorgaben geben Stabilitaet: Wer IF4 ueber Instrumente und IF6
 
 (Kein Schritt; wird vom Parser uebersprungen.)
 
-1. Fehlkonzept: Die beiden Verfahren seien austauschbar und fuehrten stets zum gleichen Ergebnis.
-   Korrektur-Satz: `Verfahren (i) liefert nur eine Rangfolge, Verfahren (ii) liefert eine Kennzahl; beide duerfen nicht gleichgesetzt werden.`
+1. Fehlkonzept: IF4 und IF6 seien beliebig tauschbar, Mindestlohn passe ueberall gleich gut.
+   Korrektur-Satz: `IF4 fragt nach Staat und Markt mit Zielkonflikten, IF6 nach Ungleichheit und Modellen; erst das Aufgabenziel bestimmt die Brille.`
 
-2. Fehlkonzept: Ein einzelner Wert wie $Gini$ oder $p_G$ spreche bereits fuer sich und brauche kein Kriterium.
-   Korrektur-Satz: `Erst die Deutung der Kennzahl am Kriterium mit $d = x_2 - x_1$ ergibt ein klausurtaugliches Urteil.`
+2. Fehlkonzept: Analyse heisse schon Urteilen, wer Ursachen nenne, habe schon bewertet.
+   Korrektur-Satz: `Analyse leitet Ursachen theoriegeleitet her, Urteil waegt erst danach Wirkung gegen Legitimitaet mit Massstab ab.`
 
-## Schritt 7 — szenario: Klausurtransfer & Rubric
+## Schritt 7 — szenario: Tutorium & Modellwahl-Debatte
 
-ROLLE: Du bist Tutor/in in der Oberstufe und leitest eine Wiederholungseinheit zu den Abitur-Fokussierungen.
-SITUATION: Eine Lerngruppe soll in 15 Minuten die drei Modelle der Ungleichheit (Schichten, Lagen, Milieus) jeweils mit Definition, einem Beispiel und einer Grenze aufschreiben und anschliessend begruenden, welches Modell sich fuer die Analyse einer Einkommensstatistik am besten eignet. Fuehren Sie die Uebung durch und beurteilen Sie am Ende, welches Modell die beste Passung hat.
-RUBRIC (30 XP): Vollstaendige Definition der drei Modelle (Schichten/Lagen/Milieus) (9 XP) | Je ein treffendes Beispiel pro Modell (9 XP) | Benennung je einer Grenze pro Modell (6 XP) | Kriteriengeleitetes Urteil zur Modellwahl fuer die Einkommensstatistik (6 XP)
-SITUATION: Eine Lerngruppe soll in 15 Minuten die drei Modelle der Ungleichheit (Schichten, Lagen, Milieus) jeweils mit Definition, einem Beispiel und einer Grenze aufschreiben und anschliessend begruenden, welches Modell sich fuer die Analyse einer Einkommensstatistik am besten eignet. Fuehren Sie die Uebung durch und beurteilen Sie am Ende, welches Modell die beste Passung hat.
-RUBRIC (30 XP): Vollstaendige Definition der drei Modelle (Schichten/Lagen/Milieus) (9 XP) | Je ein treffendes Beispiel pro Modell (9 XP) | Benennung je einer Grenze pro Modell (6 XP) | Kriteriengeleitetes Urteil zur Modellwahl fuer die Einkommensstatistik (6 XP)
+ROLLE: Du bist Tutorin bzw. Tutor in der Oberstufe und leitest eine Wiederholungseinheit zu den Abitur-Fokussierungen.
+SITUATION: Eine Lerngruppe soll in 15 Minuten die drei Modelle der Ungleichheit (Schichten, Lagen, Milieus) jeweils mit Definition, einem Beispiel und einer Grenze aufschreiben und anschliessend begruenden, welches Modell sich fuer die Analyse einer Einkommensstatistik am besten eignet. Fuehre die Uebung durch und beurteile am Ende, welches Modell die beste Passung hat.
 AUFGABE (AFB III): Verfasse eine zusammenhaengende Darstellung von etwa 150 Woertern mit Kriterium, Anwendung und Urteil.
-RUBRIC (30 XP): These mit Kriterium (5 XP) | Rekonstruktion mit $x_1$, $x_2$ (10 XP) | Anwendung mit $d = x_2 - x_1$ (10 XP) | Fazit mit Fachbegriffen (5 XP).
+RUBRIC (30 XP): Vollstaendige Definition der drei Modelle Schichten, Lagen und Milieus (9 XP) | Je ein treffendes Beispiel pro Modell (9 XP) | Benennung je einer Grenze pro Modell (6 XP) | Kriteriengeleitetes Urteil zur Modellwahl fuer die Einkommensstatistik (6 XP).
 
-## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
+## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY (Kernbotschaft in einem Kasten):
 
-Takeaway-Satz: `Begriff schaerfen, Wahl des Verfahrens treffen, Kennzahl mit $d = x_2 - x_1$ deuten und kriteriengeleitet urteilen.`
+Takeaway-Satz: `Erst Brille nach Ziel waehlen, dann Kette bauen, dann Wirkung gegen Zustimmung abwaegen.`
 
 REFLEXION (zwei Fragen):
-1. Welcher Schritt fiel schwerer -- die Anwendung mit $x_1$ und $x_2$ (Schritt 4) oder die Wahl des Verfahrens (Schritt 5)?
-2. Beim naechsten Mal pruefe ich zuerst das Aufgabenziel und waehle danach Verfahren (i) oder (ii).
+1. Welcher Weg fiel dir leichter — Herleitung mit Kette und Beleg (Schritt 4) oder Abwaegung mit Massstab (Schritt 5)?
+2. Woran erkennst du kuenftig, ob eine Aufgabe nach Erklaerung oder nach eigenem Standpunkt verlangt?

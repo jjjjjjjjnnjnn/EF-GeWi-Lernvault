@@ -15,30 +15,19 @@ version: Lesson-v3
 
 <!-- Lesson-v3: 8 Schritte plus Anekdote und Fehlvorstellung; Fehlvorstellung zwischen Schritt 6 und 7 (Parser-Skip); interaktives [Werkzeug: <id>]; Gating: check/szenario nicht bestanden = Weiter gesperrt; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
-## Schritt 1 — entdecken: Ziele & Phänomen-Einstieg
+## Schritt 1 — entdecken: Ziele & Phaenomen-Einstieg
 
 ZIELE (drei messbare Ziele dieser Lektion):
 
-1. Du kannst **Karikatur** und **Zuspitzung** in je einem Satz definieren und Stilmittel korrekt benennen.
-2. Du kannst eine Karikatur mit $T = t1 + t2 + t3$ im Zeitverhaeltnis $30 + 40 + 30$ gliedern und Symbole deuten.
+1. Du kannst **Karikatur** und **Zuspitzung** in je einem Satz definieren und Bildelemente korrekt benennen.
+2. Du kannst eine Karikatur in **Beschreiben, Analysieren und Beurteilen** gliedern und Symbole mit Realbezug deuten.
 3. Du kannst mit dem Kriterium **Teilhabe** ein Urteil zu Aussage und Grenze formulieren und mit einem Klausur-Satz schliessen (AFB II/III).
 
 ### Hook / Phaenomen
 
-Stell dir vor, du sitzt in der Klausur und hast die Argumente im Kopf, doch auf dem Papier entsteht nur ein langer Absatz ohne These und ohne Beleg und ohne Urteil, und die Punkte fuer Darstellung und Begruendung gehen verloren. Viele Schueler kennen den Stoff aus Familie und Unterricht und Alltag, aber sie bauen ihre Saetze ohne Plan und mischen Beschreibung mit Deutung und Meinung mit Pruefung. In dieser Lektion lernst du den Mechanismus aus Baustein und Reihenfolge und Pruefung: Zuerst setzt du eine klare These mit Fachbegriff, dann legst du einen Beleg aus Material oder Beispiel dazu, und erst danach formulierst du ein Urteil an einem Kriterium. Wer dieses Handwerk beherrscht, schreibt in jeder Aufgabe schneller und holt die Punkte fuer Operator und Struktur und Sprache.
+Stell dir vor, du siehst ein Bild: Eine Wahlurne ist als Muelleimer gezeichnet, ein junger Mensch sitzt mit Handy auf dem Sofa, draussen ziehen Gleichaltrige mit Plakaten vorbei. Du musst lachen, bist aber unsicher: Meint der Zeichner nur Faulheit oder kritisiert er Macht und Wandel? In dieser Lektion lernst du zwei Wege des Sehens und ein klares Urteil mit Massstab.
 
-
-Ausgangslage aus der Vorlage: Wahlurne als Muelltonne, Sofa gegen Demo, Handy gegen Plakat: Ein Bild sagt Faulheit, meint aber Wandel. Lacht der Zeichner nur oder kritisiert er Macht? Genau hier beginnt methodisches Sehen.
-
-### Fachbegriff & Definition
-
-Die **Karikatur** ist eine ueberzeichnende Bildquelle, die durch **Zuspitzung** Strukturen sichtbar macht. **Beschreiben** erfasst nur Wahrnehmbares ohne Deutung, **Analysieren** uebersetzt Symbole in Kontext, **Beurteilen** misst Aussage an einem Kriterium. Die Zeitregel lautet $T = t1 + t2 + t3$ mit $t1 + t2 + t3 = 30 + 40 + 30$. Kurz: Sehen, deuten, werten.
-
-### Wirkungsgefuege / Modell
-
-Der Mechanismus laeuft in drei Stufen: **Zeigen, Meinen, Pruefen**. Erstens zeigt das Bild mit $Figur + Objekt + Text$ die Buehne. Zweitens meint es mit $Symbol = Deutung + Realbezug$ die Kritik, etwa $Waage = Verteilung$ und $LeiterAufzug = Chancen$. Drittens prueft das Urteil mit $Pro + Contra + Kriterium$ die Tragweite. Faellt Beleg aus, wird Deutung mit $D > B$ zur Behauptung.
-
-Klausur-Satz: `Die Karikaturanalyse erfolgt in drei Schritten: beschreiben, analysieren und beurteilen, wobei die Zeit im Verhaeltnis 30 zu 40 zu 30 verteilt wird.`
+Klausur-Satz: `Die Karikaturanalyse erfolgt in drei Schritten: beschreiben, analysieren und beurteilen.`
 
 ## Schritt 2 — entdecken: Fachbegriffe & Pre-Training
 
@@ -50,17 +39,15 @@ Ohne Handwerk wird aus Analyse Geschwafel. Was darf in Beschreibung stehen, was 
 
 ### Fachbegriffe & Definitionen
 
-- **Beschreibung:** Die wertfreie Erfassung mit $Bild = Figur + Objekt + Text$. Sie verbietet $Deutung = 0$ und Worte wie zeigt dass oder kritisiert.
-- **Symboldeutung:** Die Uebersetzung mit $D = Symbol + Realbezug$. Beispiel: $UrneMuell = Wahlmüdigkeit$ braucht $Beleg = Wahlbeteiligung$.
-- **Kontexteinordnung:** Die Verknuepfung mit $Kontext = EFThema + Wissen$. Sie bindet $Bild = Fall$ an $Politik = Partizipation$.
-- **Intention:** Die Absicht mit $Ziel = Kritik + Appell$. Sie fragt, wen der Zeichner mit $Mittel = Spott$ treffen will.
-- **Teilhabe:** Das Urteilskriterium mit $Teilhabe = Chance + Nutzung$. Es misst, ob $Bild = Klage$ oder $Loesung$ staerkt.
+- **Beschreibung:** Die wertfreie Erfassung von Figuren, Objekten und Text ohne Deutung. Sie verbietet Worte wie zeigt dass oder kritisiert.
+- **Symboldeutung:** Die Uebersetzung eines Bildelements in einen Wirklichkeitsbezug mit Beleg, etwa Urne als Wahlmuedigkeit mit Verweis auf Beteiligung.
+- **Kontexteinordnung:** Die Verknuepfung des Bildes mit EF-Thema und Vorwissen, etwa Partizipationswandel und Beteiligungsformen.
+- **Intention:** Die Absicht des Zeichners aus Kritik und Appell. Sie fragt, wen er mit Spott treffen und wen er zum Handeln bewegen will.
+- **Teilhabe:** Das Urteilskriterium aus Chance und Nutzung. Es misst, ob die Bildaussage Beteiligung staerkt oder entwertet.
 
 ### Wirkungsgefuege / Modell
 
-Die Begriffe greifen ineinander: **Beschreibung** sichert mit $Sehen = sachlich$ das Fundament. **Symboldeutung** und **Kontexteinordnung** bauen mit $D = B + Wissen$ die Bruecke zur Wirklichkeit. **Intention** und **Teilhabe** schliessen mit $Sinn + Massstab$ das Urteil. Wer in der Klausur arbeitet, muss deshalb immer fragen: Ist jede Deutung durch einen Beleg gedeckt?
-
-Punkte-Hinweis: Nenne $These$ plus $Beleg$ plus $Urteil$ als Bausteine und markiere Operator und Fachbegriff; erst vollstaendige Struktur plus Kriterium gibt volle Punkte.
+Die Begriffe greifen ineinander: **Beschreibung** sichert das Fundament aus sachlichem Sehen. **Symboldeutung** und **Kontexteinordnung** bauen die Bruecke zur Wirklichkeit aus Beleg und Wissen. **Intention** und **Teilhabe** schliessen mit Sinn und Massstab das Urteil. Wer in der Klausur arbeitet, muss deshalb immer fragen: Ist jede Deutung durch einen Beleg gedeckt?
 
 Klausur-Satz: `Die Zuspitzung ist kein Mangel, sondern Methode: Sie macht Strukturen sichtbar, die Statistiken nur abstrakt zeigen.`
 
@@ -74,28 +61,28 @@ Waage schief, Leiter kurz — Witz oder Anklage? Ein Bild, tausend Worte — doc
 
 ### Spiel-Aufgabe mit [Werkzeug: balance-board]
 
-Oeffne [Werkzeug: balance-board]. Lege Symbol Waage gegen Symbol Leiter-gegen-Aufzug. Gewichte Ueberzeichnung, Realbezug, Kritik je 1 bis 5. Zerlege in drei Schritten: Beschreiben — Deuten — Urteilen. Jedes Symbol braucht $Deutung + Beleg$ aus Wirklichkeit.
+Oeffne [Werkzeug: balance-board]. Lege Symbol Waage gegen Symbol Leiter-gegen-Aufzug. Gewichte Ueberzeichnung, Realbezug und Kritik je 1 bis 5. Zerlege in drei Schritten: Beschreiben — Deuten — Urteilen. Jedes Symbol braucht Deutung plus Beleg aus der Wirklichkeit.
 
 ### Aha-Moment & Gesetz
 
-Aha-Moment: Bild — Bruch — Urteil. Erstens ueberzeichnet $Symbol = Wirklichkeit + Spitze$. Zweitens bricht $Leiter \neq Aufzug$ das Versprechen gleicher Chancen. Drittens urteilt Kriterium Darstellungsabsicht: Kritisieren durch Zuspitzung. Gesetz: $Kritik = Symbol + Deutung + Beleg$.
+Aha-Moment: Bild — Bruch — Urteil. Erstens ueberzeichnet das Symbol Wirklichkeit mit stilistischer Spitze. Zweitens bricht ungleicher Start das Versprechen gleicher Chancen. Drittens urteilt das Kriterium Darstellungsabsicht: Kritisieren durch Zuspitzung. Gesetz: Kritik entsteht aus Symbol plus Deutung plus Beleg.
 
 ```diagram
-  Bild [Waage + Leiter + Aufzug]
-  Bild -> Waage [Symbol A vs B 1 bis 5]
-  Waage -> Deutung [$Deutung + Realbezug$]
-  Deutung -> Urteil [Absicht + Kritik]
+  Bild [Waage plus Leiter plus Aufzug]
+  Bild -> Waage [Symbol A gegen B 1 bis 5]
+  Waage -> Deutung [Deutung plus Realbezug]
+  Deutung -> Urteil [Absicht plus Kritik]
 ```
 
-Kausalkette: Material sichten — Bausteine ordnen zu These plus Beleg plus Urteil — Pruefung an Operator und Kriterium; Abgrenzung zu $p_N(q) = p_A(q)$ mit $q_A - q_N$, zu $Gini$ und zu $U = \sum(Lust - Leid)$ steht vor jedem Transfer.
+Kausalkette: Material sichten — Bausteine ordnen zu These plus Beleg plus Urteil — Pruefung an Operator und Kriterium; Abgrenzung beider Wege steht vor jedem Transfer.
 
 Klausur-Satz: `Der Karikaturist kritisiert ein Phaenomen, indem er es ueberzeichnet; jedes Symbol braucht eine Deutung mit konkretem Realbezug.`
 
 ## Anekdote & Fun-Fact
 
-Das Wort „Karikatur" kommt aus dem Italienischen: „caricare" bedeutet „beladen" oder „übertreiben". Eine Karikatur ist also wörtlich ein Bild, das ein Merkmal absichtlich überlädt und dadurch sichtbar macht. Genau diese Überzeichnung ist ihre Methode, nicht ihr Fehler
+Das Wort Karikatur kommt aus dem Italienischen: caricare bedeutet beladen oder uebertreiben. Eine Karikatur ist also woertlich ein Bild, das ein Merkmal absichtlich ueberlaedt und dadurch sichtbar macht. Genau diese Ueberzeichnung ist ihre Methode, nicht ihr Fehler.
 
-Bezug zum Konzept: `Das Beispiel zeigt, wie aus Beobachtung ein pruefbares Verfahren mit $x_1$ und $x_2$ entsteht.`
+Bezug zum Konzept: `Das Beispiel zeigt, wie aus genauer Beobachtung eine pruefbare Deutung mit Beleg und Massstab wird.`
 
 ## Schritt 4 — ausprobieren: Interaktive Praxis & Satz-Labor
 
@@ -110,30 +97,35 @@ AUFGABE Waage-Raetsel (AFB II): Analysiere auf [Werkzeug: lego] eine Verteilungs
 HILFE:
 1. Schritt 1: Beschreibe neutral ohne Deutung. 2. Schritt 2: Deute je Symbol mit Beleg. 3. Schritt 3: Urteile zur Absicht und formuliere den Klausur-Satz.
 
-MUSTERLOESUNG: Waage steht fuer Verteilung, Leiter gegen Aufzug fuer ungleiche Starts. Waage kippt zu Kritik mit $Kritik = Symbol + Deutung + Beleg$: Gleiches Versprechen bei ungleichen Chancen — Ueberzeichnung mit Realbeleg als Anklage.
+MUSTERLOESUNG: Waage steht fuer Verteilung, Leiter gegen Aufzug fuer ungleiche Starts. Waage kippt zu Kritik aus Symbol plus Deutung plus Beleg: Gleiches Versprechen bei ungleichen Chancen — Ueberzeichnung mit Realbeleg als Anklage.
 
 Klausur-Satz: `Die Waage steht fuer die Verteilungsfrage, Leiter gegen Aufzug fuer ungleiche Startchancen trotz gleichen Versprechens.`
 
-## Schritt 5 — ausprobieren: Verfahrensvergleich & Abgrenzung
+## Schritt 5 — ausprobieren: Wegvergleich & Abgrenzung
 
-VERGLEICH (Wahl des Verfahrens, A gegen B):
+VERGLEICH (Wahl des Weges, A gegen B):
 
-VERGLEICH: Triff zuerst die Wahl des Verfahrens -- (i) Verteilungskonflikt-Verfahren (Waage, Leiter, Geldsaecke) oder (ii) Zielkonflikt-Verfahren (Baum gegen Saege, Zielhierarchie) -- und loese dann die Aufgabe.
+VERGLEICH: Pruefe zuerst das Aufgabenziel und waehle dann den passenden Weg — Weg A oder Weg B — und loese erst danach die Aufgabe.
 
-AUFGABE A: Ein Fall verlangt nur eine qualitative Rangfolge ohne Zahlenwert.
-AUFGABE B: Ein Fall verlangt einen belegten Vergleich mit Kennzahl und Begruendung.
+Weg A: Deskriptiver Zugang mit Bildelementen und Symbolen. Leitfrage: Was ist sichtbar und wofuer steht es? Blick auf Figuren, Objekte, Text und Realbezug. Ergebnis ist eine saubere Deutung ohne vorschnelles Urteil: Jedes Symbol erhaelt Bedeutung mit Beleg.
 
-HILFE: Aufgabe A nennt kein Berechnungsziel, daher Verfahren (i). Aufgabe B verlangt eine Kennzahl wie $Gini$ oder $p_N(q) = p_A(q)$, daher Verfahren (ii). Die Wahl des Verfahrens steht vor jeder Rechnung.
+Weg B: Kritische Deutung mit Uebertreibung, Satire und Haltungskritik. Leitfrage: Was will der Zeichner entlarven und wie haltbar ist seine Haltung? Blick auf Spott, Appell und Einseitigkeit. Urteil am Kriterium Teilhabe: Staerkt die Kritik Beteiligung oder verzerrt sie Wirklichkeit?
 
-ANTWORT: Aufgabe A erfordert Verfahren (i), weil eine Rangfolge aus der Form genuegt. Aufgabe B erfordert Verfahren (ii), weil erst die Kennzahl mit $d = x_2 - x_1$ ein begruendetes Urteil erlaubt.
+AUFGABE A: Beschreibe die Sofa-Szene mit Urne, Handy und Demo-Zug in hoechstens fuenf Saetzen und ordne jedem Symbol einen Wirklichkeitsbezug mit Beleg zu.
+
+AUFGABE B: Beurteile die Bildaussage nach dem Kriterium der Teilhabe: Kritisiert der Zeichner treffend den Beteiligungswandel oder bedient er nur das Klischee der faulen Jugend? Waege Pro und Contra ab und begruende dein Urteil.
+
+HILFE: Aufgabe A verlangt nur Sichten und Zuordnen, daher Weg A mit Elementen und Symbolen. Aufgabe B verlangt Abwaegung am Massstab, daher Weg B mit Satire-Blick und Haltungskritik. Die Wahl des Weges steht vor jeder Deutung.
+
+ANTWORT: Aufgabe A folgt Weg A, weil saubere Erfassung und Deutung mit Beleg genuegen. Aufgabe B verlangt Weg B, weil erst Deutung von Uebertreibung und Appell plus Abwaegung am Kriterium ein begruendetes Urteil erlaubt.
 
 Klausur-Satz: `Ein Verteilungskonflikt fragt nach der gerechten Aufteilung, ein Zielkonflikt nach der Prioritaet zwischen zwei erstrebenswerten Guetern.`
 
-## Schritt 6 — check: Verständnisprüfung
+## Schritt 6 — check: Selbsttest zu Karikaturanalyse
 
 CHECK (drei Fragen mit Antworten):
 
-FRAGE: Was darf im Schritt beschreiben nicht vorkommen? | ANTWORT: Keine Deutung — also keine Formulierungen wie „zeigt, dass" oder „kritisiert"; beschrieben werden nur Figuren, Objekte und Text.
+FRAGE: Was darf im Schritt beschreiben nicht vorkommen? | ANTWORT: Keine Deutung — also keine Formulierungen wie zeigt, dass oder kritisiert; beschrieben werden nur Figuren, Objekte und Text.
 FRAGE: Aus welchen drei Bausteinen besteht der Schritt analysieren? | ANTWORT: Deutung der Symbole, Einordnung in den Kontext (EF-Thema) und Benennung der Intention des Karikaturisten.
 FRAGE: Was braucht eine gelungene Beurteilung einer Karikatur? | ANTWORT: Ein genanntes Kriterium, je ein Pro- und Contra-Argument und ein begruendetes eigenes Urteil.
 
@@ -143,28 +135,25 @@ Klausur-Satz: `Ohne einen genannten Beurteilungsmassstab bleibt jede Stellungnah
 
 (Kein Schritt; wird vom Parser uebersprungen.)
 
-1. Fehlkonzept: Die beiden Verfahren seien austauschbar und fuehrten stets zum gleichen Ergebnis.
-   Korrektur-Satz: `Verfahren (i) liefert nur eine Rangfolge, Verfahren (ii) liefert eine Kennzahl; beide duerfen nicht gleichgesetzt werden.`
+1. Fehlkonzept: Beschreiben heisse, schon zu deuten und zu werten, etwa die Urne sei Beweis fuer Politikverdrossenheit.
+   Korrektur-Satz: `Beschreiben erfasst nur Sichtbares, jede Deutung gehoert mit Beleg in den Analyse-Schritt.`
 
-2. Fehlkonzept: Ein einzelner Wert wie $Gini$ oder $p_G$ spreche bereits fuer sich und brauche kein Kriterium.
-   Korrektur-Satz: `Erst die Deutung der Kennzahl am Kriterium mit $d = x_2 - x_1$ ergibt ein klausurtaugliches Urteil.`
+2. Fehlkonzept: Uebertreibung mache eine Karikatur automatisch unglaubwuerdig, Satire sei nur Witz ohne Argument.
+   Korrektur-Satz: `Uebertreibung ist Methode zur Zuspitzung, ihre Tragweite prueft man mit Realbezug und Haltungskritik am Kriterium.`
 
-## Schritt 7 — szenario: Klausurtransfer & Rubric
+## Schritt 7 — szenario: Klausurteilnehmer & Karikatur-Debatte
 
-ROLLE: Du bist Klausurteilnehmer/in und bearbeitest eine Karikatur-Aufgabe unter Zeitdruck.
-SITUATION: In der Klausur liegt eine selbst erstellte Karikatur vor: Eine Wahlurne ist als Muelltonne gezeichnet; ein junger Mensch sitzt mit dem Smartphone auf dem Sofa, waehrend draussen Gleichaltrige mit Plakaten demonstrieren. Die Unterschrift lautet sinngemaess „Waehlen Kein Bock. — Demo Bin dabei!". Bearbeiten Sie die Aufgabe in 15 Minuten: Beschreiben Sie die Karikatur in hoechstens fuenf Saetzen (AFB I, 6 BE), analysieren Sie die Symbole im Kontext des Partizipationswandels (AFB II, 10 BE) und beurteilen Sie ihre Aussage nach dem Kriterium der Teilhabe (AFB III, 8 BE).
-RUBRIC (30 XP): Beschreibung ohne Deutung mit Figuren, Objekten und Text (6 XP) | Symboldeutung mit Realbezug und Kontext (Partizipationswandel) (8 XP) | Benennung der Intention des Karikaturisten (4 XP) | Kriterium der Teilhabe, Pro/Contra und begruendetes Urteil (8 XP) | Zeitdisziplin und klare Dreiteilung (4 XP)
-SITUATION: In der Klausur liegt eine selbst erstellte Karikatur vor: Eine Wahlurne ist als Muelltonne gezeichnet; ein junger Mensch sitzt mit dem Smartphone auf dem Sofa, waehrend draussen Gleichaltrige mit Plakaten demonstrieren. Die Unterschrift lautet sinngemaess „Waehlen Kein Bock. — Demo Bin dabei!". Bearbeiten Sie die Aufgabe in 15 Minuten: Beschreiben Sie die Karikatur in hoechstens fuenf Saetzen (AFB I, 6 BE), analysieren Sie die Symbole im Kontext des Partizipationswandels (AFB II, 10 BE) und beurteilen Sie ihre Aussage nach dem Kriterium der Teilhabe (AFB III, 8 BE).
-RUBRIC (30 XP): Beschreibung ohne Deutung mit Figuren, Objekten und Text (6 XP) | Symboldeutung mit Realbezug und Kontext (Partizipationswandel) (8 XP) | Benennung der Intention des Karikaturisten (4 XP) | Kriterium der Teilhabe, Pro/Contra und begruendetes Urteil (8 XP) | Zeitdisziplin und klare Dreiteilung (4 XP)
+ROLLE: Du bist Klausurteilnehmerin bzw. Klausurteilnehmer und bearbeitest eine Karikatur-Aufgabe unter Zeitdruck.
+SITUATION: In der Klausur liegt eine selbst erstellte Karikatur vor: Eine Wahlurne ist als Muelltonne gezeichnet; ein junger Mensch sitzt mit dem Smartphone auf dem Sofa, waehrend draussen Gleichaltrige mit Plakaten demonstrieren. Die Unterschrift lautet sinngemaess Waehlen Kein Bock, Demo Bin dabei. Bearbeite die Aufgabe in 15 Minuten: Beschreibe die Karikatur in hoechstens fuenf Saetzen, analysiere die Symbole im Kontext des Partizipationswandels und beurteile ihre Aussage nach dem Kriterium der Teilhabe.
 AUFGABE (AFB III): Verfasse eine zusammenhaengende Darstellung von etwa 150 Woertern mit Kriterium, Anwendung und Urteil.
-RUBRIC (30 XP): These mit Kriterium (5 XP) | Rekonstruktion mit $x_1$, $x_2$ (10 XP) | Anwendung mit $d = x_2 - x_1$ (10 XP) | Fazit mit Fachbegriffen (5 XP).
+RUBRIC (30 XP): Beschreibung ohne Deutung mit Figuren, Objekten und Text (6 XP) | Symboldeutung mit Realbezug und Kontext Partizipationswandel (8 XP) | Benennung der Intention des Karikaturisten (4 XP) | Kriterium der Teilhabe mit Pro und Contra und begruendetem Urteil (8 XP) | Zeitdisziplin und klare Dreiteilung (4 XP).
 
-## Schritt 8 — entdecken: Takeaway & Metakognitive Reflexion
+## Schritt 8 — reflexion: Takeaway & Metakognitive Reflexion
 
 TAKEAWAY (Kernbotschaft in einem Kasten):
 
-Takeaway-Satz: `Begriff schaerfen, Wahl des Verfahrens treffen, Kennzahl mit $d = x_2 - x_1$ deuten und kriteriengeleitet urteilen.`
+Takeaway-Satz: `Erst sauber sehen, dann mutig deuten, dann am Massstab urteilen.`
 
 REFLEXION (zwei Fragen):
-1. Welcher Schritt fiel schwerer -- die Anwendung mit $x_1$ und $x_2$ (Schritt 4) oder die Wahl des Verfahrens (Schritt 5)?
-2. Beim naechsten Mal pruefe ich zuerst das Aufgabenziel und waehle danach Verfahren (i) oder (ii).
+1. Welcher Weg fiel dir leichter — sauberes Beschreiben und Zuordnen (Schritt 4) oder Deutung von Spott und Haltung (Schritt 5)?
+2. Woran erkennst du kuenftig, ob eine Deutung noch Beleg braucht oder schon urteilsreif ist?
