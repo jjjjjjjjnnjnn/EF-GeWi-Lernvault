@@ -14,113 +14,136 @@ version: Lesson-v3
 # Lernreise: Redoxreaktionen und Oxidationszahlen — Episode C16: Milchiges Geheimnis im Becken
 
 <!-- Campaign: Imperium-Alchemie | Chemie | entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
-
-## Schritt 1 — entdecken: Rostalarm an Tor 9
+## Schritt 1 — entdecken: Die rostige Bruecke: Wer gab, wer nahm
 
 ZIELE:
-1. Ich kann Oxidationszahlen bestimmen.
-2. Ich kann Oxidation und Reduktion zuordnen.
-3. Ich kann Redoxgleichungen bilanzieren.
+1. Ich kann **Oxidationszahlen** nach Regeln bestimmen.
+2. Ich kann **Oxidation und Reduktion** als e-Uebergang deuten.
+3. Ich kann **Redox-Gleichungen** mit e-Bilanz ausgleichen.
 
-Im Klärbecken fällt ein milchiger Niederschlag aus; Vera Haber ruft die Löslichkeitswache. An Tor 9 blüht der Rost: Rote Flecken kriechen über das Stahlgerüst, und Direktorin Vera Haber ordnet Redox-Wache an. Jonas Säure zählt Elektronen wie Münzen, Mia Puffer ruft: Wer gibt, wird oxidiert, wer nimmt, wird reduziert! Doch die Oxidationszahlen tanzen, und eine Gleichung geht erst auf, wenn Geben gleich Nehmen ist. Heute wird Buchhaltung mit Elektronen betrieben.
+Bruecken-TUeV rot: Rost frisst sich durch Stahl, die Sperrung droht. Der Buergermeister will streichen, Ingenieurin Mara Zell will rechnen. Denn Rost ist kein Schmutz, sondern eine **Redox**-Abrechnung: Eisen gab Elektronen, Sauerstoff nahm sie.
 
-`Klausur-Satz: Steigt die Zahl, gibt das Atom: Oxidation.`
+Wer **Oxidationszahlen** bestimmt, sieht Geber und Nehmer. Wer **Elektronen** bilanziert, gleicht jede Gleichung aus. Heute entscheidet die e-Buchhaltung ueber Streichen oder Sanieren.
 
-## Schritt 2 — entdecken: Die Elektronen-Kasse der Buchhalter
+`Klausur-Satz: Rost ist Buchhaltung: Eisen gab, Sauerstoff nahm — die Bruecke zahlt.`
+
+## Schritt 2 — entdecken: Die Redox-Werkzeugkiste der Brueckenwaechter
 
 AUSRUESTUNG (5 Begriffe der Werkzeugkiste):
 
-- Oxidationszahl: Buchhalter-Konto jedes Atoms.
-- Oxidation: Elektronen abgeben.
-- Reduktion: Elektronen aufnehmen.
-- Oxidationsmittel: Nimmt auf, wird selbst reduziert.
-- Reduktionsmittel: Gibt ab, wird selbst oxidiert.
+- **Oxidationszahl**: Oxidationszahlen sind gedachte Ladungen nach Elektronegativitaets-Regeln. Sie nummerieren den Oxidationszustand jedes Atoms. Mechanismus: Man verteilt Bindungselektronen an den elektronegativeren Partner und zaehlt die Reste. Klausur-Tipp: Element null, Sauerstoff meist minus zwei als Startregeln.
 
-`Klausur-Satz: Sinkt die Zahl, nimmt das Atom: Reduktion.`
+- **Oxidation**: Oxidation ist Elektronenabgabe mit steigender Oxidationszahl. Der Geber heisst Reduktionsmittel. Mechanismus: Eisen wird zu plus zwei oder drei und liefert die Elektronen fuer den Partner. Klausur-Tipp: Steigen gibt als Merksatz mit Pfeil nach oben.
 
-## Schritt 3 — entdecken: Geben und Nehmen: Die Elektronenkette
+- **Reduktion**: Reduktion ist Elektronenaufnahme mit sinkender Oxidationszahl. Der Nehmer heisst Oxidationsmittel. Mechanismus: Sauerstoff sinkt auf minus zwei und kassiert die Elektronen des Eisens. Klausur-Tipp: Sinken nimmt als Spiegel zu Steigen gibt.
+
+- **Elektronenbilanz**: Die Elektronenbilanz gleicht abgegebene und aufgenommene Elektronen aus. Sie ist das Herz jeder Redox-Gleichung. Mechanismus: Man multipliziert Teilgleichungen aufs kleinste gemeinsame Vielfache der Elektronen. Klausur-Tipp: e-minus links und rechts gleich als Kontrollzeile.
+
+- **Spannungsreihe**: Die Spannungsreihe ordnet Metalle nach Elektronendonor-Staerke. Unedle geben bereitwillig, edle halten fest. Mechanismus: Zink schuetzt Eisen als Opferanode, weil es unedler ist und zuerst korrodiert. Klausur-Tipp: Opferanode als Anwendungsbeispiel bringt Zusatzpunkte.
+
+
+`Klausur-Satz: Steigen gibt, Sinken nimmt: Die Oxidationszahl verrät Geber und Nehmer.`
+
+## Schritt 3 — entdecken: Vom Rost zum Strom: Die Elektronenkette
 
 WIRKUNGSGEFUEGE (Ursache zu Wirkung):
 
-Die Kette: Zahl steigt heisst gegeben — Oxidation; Zahl sinkt heisst genommen — Reduktion. Mittel benennen sich nach dem Opfer: Wer oxidiert, nimmt. Bilanzieren heisst Elektronen gleichsetzen, dann Atome und Ladungen.
+Die Elektronenkette startet bei den **Oxidationszahlen**: Steigen markiert Geber, Sinken markiert Nehmer. Eisen steigt, Sauerstoff sinkt.
+
+Dann folgt die **Bilanz**: Teilgleichungen schreiben, **Elektronen** angleichen, Atome und Ladungen ausgleichen. Die Summe loescht die Elektronen heraus.
 
 ```diagram
-Zahl hoch = geben = Oxidation | Zahl runter = nehmen = Reduktion
-Geben = Nehmen -> Bilanz
-Mittel heissen nach Opfer
+OZ bestimmen -> Geber/Nehmer markieren
+Teilgleichungen -> e angleichen
+Atome + Ladung -> Summe ohne e
 ```
 
-`Klausur-Satz: Mittel heissen nach dem Opfer, nicht nach sich.`
+Die Rollenregel als Merkformel:
+
+$$Oxidation = e^-\text{-Abgabe} \quad ; \quad Reduktion = e^-\text{-Aufnahme}$$
+
+Mittel oxidiert, Nehmer reduziert sich: Die Namen beschreiben den Partner.
+
+`Klausur-Satz: Zahlen bestimmen, Haelften schreiben, Elektronen angleichen: Die Kette endet im Ausgleich.`
 
 ## Anekdote & Fun-Fact
 
-**Anekdote / Fun-Fact (DE)**: Rost ist langsames Feuer ohne Flamme: Eisen gibt, Sauerstoff nimmt — die stillste Verbrennung des Werks.
+**Anekdote / Fun-Fact (DE)**: Opferanoden aus Zink sterben fuer Schiffe — unedles Metall als Leibwaechter aus Blech.
 
-**Bezug zum Konzept**: Geben und Nehmen halten die Kasse im Gleichgewicht.
 
-## Schritt 4 — ausprobieren: Bilanz-Sandkasten: Fange die Elektronen
+**Bezug zum Konzept**: Edel schuetzt unedel nie: Die Reihe entscheidet, wer opfert.
+
+## Schritt 4 — ausprobieren: Sandkasten: Bestimme Zahlen und bilanzere
 
 [Werkzeug: formula]
 
-AUFGABE (Target Challenge): Target Challenge: Bestimme alle Zahlen in Zn + 2 H+ -> Zn2+ + H2 und gleiche mit Elektronenbilanz aus. Ziel: Geber, Nehmer, Mittel benannt, Bilanz exakt. AUFGABE konkret: In Zn + 2 H+ -> Zn2+ + H2: Wer gibt, wer nimmt?
+AUFGABE (Target Challenge): Gegeben: Fe + O2 zu Rost, dazu Cu und Zn in Saeure. Bestimme alle Oxidationszahlen, schreibe Teilgleichungen, bilanzere mit e-Ausgleich und sage voraus, welches Metall die Opferanode stellt.
 
 HILFE:
-1. O vor H-Regeln anwenden.
-2. Steigen oder Sinken markieren.
-3. Elektronen gleichsetzen.
+1. Oxidationszahlen nach Regeln bestimmen.
+2. Teilgleichungen mit e-Ausgleich schreiben.
+3. Reihe lesen: unedler opfert sich.
 
-MUSTERLÖSUNG: Steigende Zahl gibt Elektronen ab und wird oxidiert, sinkende nimmt auf und wird reduziert; Mittel heissen umgekehrt dazu.
+MUSTERLOESUNG: Fe null zu plus drei gibt drei e, O2 zu minus zwei nimmt vier e; Bilanz 4 Fe + 3 O2; Zn unedler als Cu und Eisen: Zn opfert sich.
 
-`Klausur-Satz: Geben gleich Nehmen: Das ist die Bilanz.`
+`Klausur-Satz: Mit plus zwei gegen null und e-Bilanz als Kontrolle gleicht der Sandkasten statt zu raten.`
 
-## Schritt 5 — ausprobieren: Duell der Rollen: Geber gegen Nehmer
+## Schritt 5 — ausprobieren: Duell der Wege: Zahlenrechnung gegen Strom-Deutung
 
-VERGLEICH: Waehle erst die Rolle — (i) Geber oder (ii) Nehmer — dann loesen.
+VERGLEICH: Waehle erst den Redox-Weg, dann loesen: (i) Zahlen-Rechenweg oder (ii) Strom-Deuteweg — dann loesen.
 
-Weg A (Geber-Weiche): Zahl steigt, Oxidation, Reduktionsmittel.
 
-Weg B (Nehmer-Weiche): Zahl sinkt, Reduktion, Oxidationsmittel.
+Weg A (Zahlen-Rechenweg): Oxidationszahlen quantitativ bestimmen und Bilanzen ausrechnen. Dieser Weg liefert exakte Gleichungen.
 
-AUFGABE A: Eisen geht von 0 auf +2. Welche Rolle?
+Weg B (Strom-Deuteweg): Stromrichtung und Korrosion qualitativ mit der Reihe deuten. Dieser Weg warnt schnell, bleibt aber ohne Zahl weich.
 
-AUFGABE B: Sauerstoff geht von 0 auf -2. Welche Rolle?
 
-HILFE: A steigt — Weg A. B sinkt — Weg B.
+AUFGABE A: Ausgeglichene Redox-Gleichung exakt gesucht. Welcher Weg?
 
-ANTWORT: A folgt Weg A als Oxidation durch ein Reduktionsmittel; B folgt Weg B als Reduktion durch ein Oxidationsmittel.
+AUFGABE B: Warum rostet Eisen am Zink nicht? Welcher Weg?
 
-`Klausur-Satz: Geber oder Nehmer entscheidet die Rolle.`
 
-## Schritt 6 — check: Selbsttest zu Redoxreaktionen und Oxidationszahlen
+HILFE: A nennt Gleichung — Weg A mit Bilanz. B nennt Warum mit Reihe — Weg B mit Deutung.
 
-FRAGE: Was heisst Oxidation? | ANTWORT: Elektronen abgeben, Zahl steigt.
-FRAGE: Was ist ein Oxidationsmittel? | ANTWORT: Nimmt auf, wird selbst reduziert.
-FRAGE: Was zuerst beim Bilanzausgleich? | ANTWORT: Elektronen gleichsetzen.
+ANTWORT: A folgt Weg A mit e-Ausgleich; B folgt Weg B mit Opferanoden-Argument.
 
-`Klausur-Satz: Elektronen zuerst, Atome danach.`
+`Klausur-Satz: Zahlen rechnen lokalisiert, Stroeme deuten warnen — die Klausur braucht beides.`
+
+## Schritt 6 — check: Selbsttest zu Redox und Oxidationszahlen
+
+- FRAGE: Was ist Oxidation? | ANTWORT: Elektronenabgabe mit steigender Zahl.
+
+- FRAGE: Wer wird reduziert? | ANTWORT: Das Oxidationsmittel, das nimmt.
+
+- FRAGE: Wozu dient die Spannungsreihe? | ANTWORT: Opferanoden bestimmen.
+
+
+`Klausur-Satz: Ohne e-Bilanz bleibt jede Redox-Gleichung geraten, mit ihr wird sie bewiesen.`
 
 ## Fehlvorstellung
 
 1. Fehlvorstellung: Oxidation brauche Sauerstoff.
-   Korrektur-Satz: `Nur Elektronen zählen; Sauerstoff ist nur ein Nehmer unter vielen.`
-2. Fehlvorstellung: Mittel hiessen nach sich selbst.
-   Korrektur-Satz: `Sie heissen nach dem Opfer: Oxidationsmittel oxidiert anderes.`
+   Korrektur-Satz: `Oxidation braucht nur Elektronenabgabe: Auch ohne Sauerstoff wird oxidiert.`
 
-## Schritt 7 — szenario: Klausurtransfer: Protokoll der Redox-Wache
+2. Fehlvorstellung: Oxidationsmittel werde oxidiert.
+   Korrektur-Satz: `Das Oxidationsmittel wird reduziert: Es nimmt und sinkt selbst.`
 
-ROLLE: Du bist Wache an Tor 9.
-SITUATION: Rost frisst Stahl. Erklaere in ca. 130 Woertern mit Zahlen, wer gibt und nimmt, und benenne beide Mittel.
-RUBRIC (30 XP): Zahlen (10 XP) | Rollen (10 XP) | Mittel (6 XP) | Sprache (4 XP).
+## Schritt 7 — szenario: Klausurtransfer: Gutachten zum Brueckenrost
 
-`Klausur-Satz: Rost zeigt: Eisen gibt, Sauerstoff nimmt.`
+ROLLE: Du bist Brueckenprueferin.
+SITUATION: Die Bruecke rostet. Entscheide in ca. 150 Woertern mit OZ, Bilanz und Reihe zwischen Streichen und Sanieren mit Opferanoden.
+RUBRIC (30 XP): OZ-Logik (8 XP) | Bilanz (8 XP) | Reihenurteil (8 XP) | Empfehlung (6 XP).
+
+
+`Klausur-Satz: Achtung Falle: Oxidationsmittel wird reduziert — die Namen tauschen die Rollen.`
 
 ## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY:
 
-Takeaway-Satz: `Buchhaltung mit Elektronen schlägt Raten.`
+Takeaway-Satz: `Steigen gibt, Sinken nimmt, Bilanz gleicht: Drei Schritte, null Rost-Raetsel.`
 
-`Klausur-Satz: Buchhaltung mit Elektronen schlägt Raten.`
+`Klausur-Satz: Korrosion ist Zeitlupe der Batterie: Dieselben Elektronen, anderes Tempo.`
 
 
 REFLEXION:

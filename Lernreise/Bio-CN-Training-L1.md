@@ -14,122 +14,142 @@ version: Lesson-v3
 # Lernreise: CN-Methodentraining mit Zeitlimit und EHZ — Episode B8: Funkstille aus dem Archiv
 
 <!-- Campaign: Nano-Zellfabrik-Krise | Bio | Instapower: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
-
-## Schritt 1 — entdecken: Der Countdown im Trainingsbunker
+## Schritt 1 — entdecken: Das Klausur-Trainingslager: Countdown zum Ernstfall
 
 ZIELE（本节三目标）：
-1. 中文：能三语说出细胞生物学核心术语。
-2. 中文：能把德语定义与中文口诀挂钩。
-3. 中文：能在题干中标出信号词并选程序。
+1. 中文：能把动词对接到AFB等级。
+2. 中文：能把考题拆成计算与阐释两部分。
+3. 中文：能按评分标准自查答案。
 
-【危机Hook】Das DNA-Archiv meldet Kopierfehler; Archivarin Helikase stoppt das Band. 周一早晨纳米工厂“语言大混乱”：新实习生既听不懂Turgordruck也不认识膨压，OSMO-9还用英语报错。队长Mara Zell搬出三语术语急救箱——一小时后考试委员会来检查，每台机器的标牌必须德中英三语准确，否则停工。她和Finn博士满厂贴标签，悟出一个道理：干净准确的术语就是半张考卷。拿下三语术语，解题速度翻倍。
+【危机Hook】Trainingslager T-7: In sieben Tagen ist Klausur, der Puls liegt bei 120. 考前七天训练营：脉搏120，全队盯着倒计时牌。教练Finn把历年题切成三叠——描述、解释、评价，每叠限时、每题称重。今晚的对手不是知识，是时间：谁能在90分钟里把会的东西全换成分数，谁就出线。
 
-`Klausur-Satz: Begriffe in drei Sprachen sind Werkzeuge: Jedes Signalwort oeffnet genau eine Kiste.`
+`Klausur-Satz: Training schlaegt Talent: Wer die Uhr besiegt, besiegt die Klausur.`
 
-## Schritt 2 — entdecken: Die EHZ-Werkzeugkiste der Zeitsprinter
+## Schritt 2 — entdecken: Die Trainings-Werkzeugkiste
 
 PRETRAINING术语盒（5大装备，中文在上、德语在下）：
 
-- 中文：渗透 — 德语：Osmose：水经半透膜的净扩散，水往盐多处走。 / Nettodiffusion von Wasser durch eine semipermeable Membran.
-- 中文：扩散 — 德语：Diffusion：顺梯度运动直至平衡。 / Bewegung mit dem Gefaelle bis zum Ausgleich.
-- 中文：质壁分离 — 德语：Plasmolyse：失水后原生质体脱壁。 / Abloesung des Protoplasten von der Wand bei Wasserverlust.
-- 中文：酶 — 德语：Enzym：蛋白质生物催化剂，有活性中心。 / Biokatalysator aus Protein mit aktivem Zentrum.
-- 中文：复制 — 德语：Replikation：DNA半保留复制。 / Semikonservative Verdopplung der DNA.
+- 中文：动词 — 德语：Operator：动词决定答题动作与AFB等级。 / Operator: Operatoren wie darstellen, erklaeren und beurteilen schreiben die geforderte Denkleistung vor. Sie verraten, ob Wiedergeben, Verknuepfen oder Werten verlangt ist. Mechanismus: Der Operator steht meist im ersten Satz der Aufgabe; wer ihn ueberliest, beantwortet die falsche Frage. Klausur-Tipp: Operator unterstreichen und AFB-Stufe daneben schreiben.
 
-`Klausur-Satz: Osmose ist Wasser durch die Membran, Diffusion ist alles mit dem Gefaelle.`
+- 中文：三级能力 — 德语：AFB-Stufen：一复述二联系三评价。 / AFB-Stufen: AFB I fordert Reproduktion, AFB II fordert Transfer, AFB III fordert Reflexion und Bewertung. Die Punkte wachsen mit der Stufe. Mechanismus: Eine reine Aufzaehlung bleibt AFB I; erst das begruendete Urteil mit Kriterien klettert auf AFB III. Klausur-Tipp: Pro Aufgabe mindestens einen III-Satz mit weil einplanen.
 
-## Schritt 3 — entdecken: Vom Zeitdruck zur Punktemaschine
+- 中文：评分标准 — 德语：Erwartungshorizont：采分点决定分数。 / Erwartungshorizont: Der Erwartungshorizont listet alle vergebenen Inhalts- und Darstellungspunkte. Jede Klausur wird daran gemessen, nicht am Gefuehl. Mechanismus: Man zerlegt die Musterloesung in Stichpunkte und haelt die eigene Antwort daneben: Fehlt ein Stichpunkt, fehlt ein Punkt. Klausur-Tipp: Antwort in nummerierte Punkte gliedern wie der Horizont.
+
+- 中文：计算部分 — 德语：Rechenanteil：数字加单位才给满分。 / Rechenanteil: Der Rechenanteil verlangt Ansatz, Einsetzen, Ergebnis und Einheit. Ohne Einheit gibt es in NRW fast nie die volle Punktzahl. Mechanismus: Man schreibt Gegeben und Gesucht, waehlt die Formel, rechnet mit Einheiten und deutet das Ergebnis in einem Satz. Klausur-Tipp: Formel zuerst, Zahlen spaeter — der Ansatz zaehlt auch bei Rechenfehlern.
+
+- 中文：阐释部分 — 德语：Deutungsanteil：图像文字转因果。 / Deutungsanteil: Der Deutungsanteil verlangt, aus Bild oder Text eine Kausalkette zu bauen. Beobachten, erklaeren und folgern sind drei getrennte Punkte. Mechanismus: Man beschreibt erst das Sichtbare, verknuepft es mit dem Mechanismus und zieht dann die Folgerung. Klausur-Tipp: Dreischritt sehen, verknuepfen, folgern als Absaetze trennen.
+
+
+`Klausur-Satz: Operator plus AFB-Stufe lesen heisst wissen, was der Pruefer kauft.`
+
+## Schritt 3 — entdecken: Vom Training zum Transfer: Die Leistungskette
 
 ENTDECKEN因果传导机制（中文拆解在上，德语链条在下）：
 
-中文：机制是一条“翻译链”：题干信号词→术语盒→解题程序。见“梯度+ATP”开运输盒，见“水势数值”开计算盒，单词就变成了决策树。
+中文：提分链：读动词→拆题为计算与阐释→各用其法解→对照评分标准数采分点，缺啥补啥再交卷。
 
-德语：Der Mechanismus ist eine Uebersetzungskette: Signalwort im Text erkennen, Begriff der passenden Kiste zuordnen, Verfahren aus der Kiste ableiten. Steht Gefaelle plus ATP im Text, oeffnet sich die Transport-Kiste; steht Psi-Zahl im Text, oeffnet sich die Rechen-Kiste. So wird aus Vokabeln ein Entscheidungsbaum.
+德语：Die Leistungskette laeuft vom **Operator** ueber die Zerlegung zum Punkt. Erst liest du die Verben und teilst die Aufgabe in Rechen- und Deutungsanteile. Dann loest du jeden Anteil mit seinem Verfahren. Zuletzt haeltst du die Antwort an den **Erwartungshorizont** und zaehlst die Stichpunkte ab. Was fehlt, wird ergaenzt, bevor die Zeit ablaeuft.
 
 ```diagram
-Signalwort -> Begriffs-Kiste -> Verfahren
-Gefaelle + ATP = Transport | Psi-Zahl = Rechnung
-Deutsch oben, Zhongwen als Merkhaken
+Operator lesen -> Anteile teilen -> Verfahren waehlen
+Rechnen mit Einheit | Deuten mit Kette
+Horizont anlegen -> Punkte zaehlen
 ```
 
-`Klausur-Satz: Markieren, zuordnen, Verfahren waehlen — so wird Vokabel zur Klausurwaffe.`
+Die Zeitbudget-Regel des Trainingslagers:
+
+$$T_{\text{gesamt}} = T_{\text{rechnen}} + T_{\text{deuten}} + T_{\text{reserve}} \quad (30 + 40 + 20)$$
+
+中文：总时长=计算30+阐释40+预留20，超时必须换题。 / 德语：Wer einen Anteil ueberzieht, frisst die Reserve; die Uhr entscheidet ueber Vollstaendigkeit.
+
+`Klausur-Satz: Vom Signal zum Punkt: Zerlegen, rechnen, deuten, selbst pruefen.`
 
 ## Anekdote & Fun-Fact
 
-**Anekdote / Fun-Fact (DE)**: Gorter und Grendel vermassen 1925 rote Blutzellen und bewiesen die Doppelschicht — kernlose Zellen verrieten die doppelte Haut.
+**Anekdote / Fun-Fact (DE)**: Schwimmer trainieren die Wende tausendmal trocken, bevor sie einmal nass zaehlt — Klausur ist dieselbe Wende.
 
-**中文解读**: 1925年Gorter和Grendel用无核红细胞量出双分子层——最简单的细胞泄露了最大的秘密。
 
-**Bezug zum Konzept**: Die Doppelschicht bildet die Schranke, Proteine oeffnen die Tore.
+**中文解读**: 游泳运动员上岸练一千次转身，下水只算一次——考试就是那个转身。
 
-## Schritt 4 — ausprobieren: Zeit-Sandkasten: 90 Sekunden pro Station
 
-[Werkzeug: oral-timer]
+**Bezug zum Konzept**: Trocken drillen, nass liefern: Das Lager trennt Ueben und Ernstfall.
 
-AUFGABE目标挑战：目标挑战：90秒讲清渗透（含5术语），再6分钟做完3道迷你题，按EHZ量表拿满分。 德语原题：Markiere im Satz alle Fachbegriffe und entscheide: Transport- oder Rechen-Kiste?
+## Schritt 4 — ausprobieren: Trainings-Sandkasten: Miss dich an der Uhr
+
+[Werkzeug: formula]
+
+AUFGABE目标挑战：已知90分钟三题（描述10分、计算解释30分、评价30分）：做预算表，规范解计算题并按三条评分点自查。 德语原题：Gegeben: 90 Minuten, drei Aufgaben (darstellen 10 XP, erklaeren mit Rechnung 30 XP, beurteilen 30 XP). Verplane das Budget, loese die Rechenaufgabe mit Ansatz und Einheit und pruefe deine Antwort an drei Horizont-Stichpunkten.
 
 HILFE:
-1. Erst unterstreichen, dann zuordnen.
-2. Signalwoerter sind Gefaelle, ATP, Psi-Zahl.
-3. Jeder Begriff bekommt genau eine Kiste.
+1. Zeit budgetieren: 30 rechnen, 40 deuten, 20 Reserve.
+2. Rechnung mit Gegeben, Formel, Einheit aufschreiben.
+3. Antwort gegen Horizont-Stichpunkte abhaken.
 
-MUSTERLÖSUNG：中文：渗透、半透膜、水势数值→计算盒；ATP、逆梯度→运输盒。标干净，解题快一半。 / 德语：Osmose, semipermeabel und Psi-Zahl oeffnen die Rechen-Kiste; ATP und gegen das Gefaelle oeffnen die Transport-Kiste. Saubere Markierung halbiert die Loesungszeit.
+MUSTERLOESUNG：中文：预算守住，计算有公式有单位，自查三中三再补一句阐释。 / 德语：Budget 30-40-20 eingehalten; Rechnung mit Ansatz und MPa-Einheit vollstaendig; Horizont zeigt drei Treffer, ein Deutungssatz ergaenzt.
 
-`Klausur-Satz: Acht Treffer in vier Minuten: Markieren schlaegt Pauken im Kontext.`
+`Klausur-Satz: Neunzig Minuten, drei Stapel, null Ausreden: Die Uhr ist der ehrlichste Trainer.`
 
-## Schritt 5 — ausprobieren: Duell der Taktiken: Tempo gegen Tiefe
+## Schritt 5 — ausprobieren: Duell der Trainingswege: Drill gegen Simulation
 
-VERGLEICH: Waehle erst den Lernweg — (i) Karteikarten-Weg oder (ii) Kontext-Weg — dann loesen.选程序：先选记忆路线，再解题。
+VERGLEICH: Waehle erst den Trainingsweg, dann loesen: (i) Drill-Weg oder (ii) Simulations-Weg — dann loesen.选程序：先看信号词再选路。
 
-Weg A：Weg A (Karteikarten-Weg): Begriff pauken, Definition hersagen, dann anwenden.
 
-Weg B：Weg B (Kontext-Weg): Im Satz markieren, Kiste waehlen, Verfahren ableiten.
+Weg A：Weg A (Drill-Weg): Isolierte Operator-Saetze pauken und Rechenansaetze unter Stoppuhr wiederholen. Dieser Weg baut Tempo und Automatik und macht die Hand schnell.
 
-AUFGABE A: Fuenf Begriffe in drei Sprachen pauken. Welcher Weg? 【选程序：先看信号词再选路】
+Weg B：Weg B (Simulations-Weg): Komplette Klausur unter Ernstfallbedingungen schreiben und am Horizont auswerten. Dieser Weg baut Nerven und Vollstaendigkeit, kostet aber viel Zeit.
 
-AUFGABE B: Im Fliesstext die Verfahrenswahl treffen. Welcher Weg? 【选程序：先看信号词再选路】
 
-HILFE：A verlangt Pauken — Weg A. B verlangt Textarbeit — Weg B.
+AUFGABE A: AFB-III-Saetze mit weil in unter zwei Minuten bauen. Welcher Weg? 【选程序：先看信号词再选路】
 
-ANTWORT：ANTWORT: A folgt Weg A über Karteikarten mit Selbstabfrage; B folgt Weg B über Markierung und Kistenwahl im Kontext.
+AUFGABE B: Neunzig Minuten durchhalten ohne Einbruch bei Aufgabe drei. Welcher Weg? 【选程序：先看信号词再选路】
 
-`Klausur-Satz: Karteikarte paukt den Begriff, Kontext waehlt das Verfahren.`
 
-## Schritt 6 — check: Selbsttest zu CN-Methodentraining mit Zeitlimit und EHZ
+HILFE：A verlangt Satzbau-Automatik — Weg A mit Drill. B verlangt Durchhaltevermoegen — Weg B mit Simulation.
 
-FRAGE：术语卡要哪三语？（Nenne drei Sprachen einer Begriffskarte.） | ANTWORT：德、中、英+例句。 / Deutsch, Chinesisch, Englisch plus Beispielsatz.
-FRAGE：计算盒的信号是什么？（Woran erkennst du die Rechen-Kiste?） | ANTWORT：水势数值与梯度计算。 / An Psi-Zahlen und Gefaelle-Rechnung im Text.
-FRAGE：运输盒的信号是什么？（Woran erkennst du die Transport-Kiste?） | ANTWORT：ATP与逆梯度。 / An ATP und Richtung gegen das Gefaelle.
+ANTWORT：中文：A走苦练路拼句式；B走模考路练续航加对标。 / 德语：A folgt Weg A mit Satzbau-Lego unter Zeit; B folgt Weg B mit kompletter Probeklausur und Horizont-Check.
 
-`Klausur-Satz: Wer markiert, halbiert die Loesungszeit.`
+`Klausur-Satz: Drill haertet das Tempo, Simulation haertet die Nerven — die Klausur braucht beides.`
+
+## Schritt 6 — check: Selbsttest zu CN-Training
+
+- FRAGE:：动词决定什么？（Was verrät der Operator） | ANTWORT:：思维动作与AFB等级。 / Denkleistung und AFB-Stufe der Aufgabe.
+
+- FRAGE:：计算满分需要什么？（Was braucht der Rechenanteil） | ANTWORT:：公式加单位。 / Ansatz, Einsetzen, Ergebnis und Einheit.
+
+- FRAGE:：自查用什么尺？（Womit prüfst du dich selbst） | ANTWORT:：对照评分标准数点。 / Mit dem Erwartungshorizont Stichpunkt für Stichpunkt.
+
+
+`Klausur-Satz: Ohne Erwartungshorizont bleibt Selbstkontrolle geraten, mit ihm wird sie gemessen.`
 
 ## Fehlvorstellung
 
-1. 误解：误解“渗透=扩散”。
-   中文纠偏：见德语纠偏句。
-   Korrektur-Satz: `Osmose ist nur Wasser durch eine Membran, Diffusion gilt fuer alle Teilchen auch ohne Membran.`
-2. 误解：误解“死记硬背就够”。
-   中文纠偏：见德语纠偏句。
-   Korrektur-Satz: `Erst markieren und zuordnen, dann pauken — sonst bleibt die Kiste leer.`
+1. 误解：写多分多。
+   中文纠偏：分只认采分点，不认字数。
+   Korrektur-Satz: `Punkte gibt nur der Horizont: Drei Treffer in fuenf Zeilen schlagen drei Seiten ohne Treffer.`
 
-## Schritt 7 — szenario: Klausurtransfer: Pruefungs-Marathon mit Punkteplan
+2. 误解：计算不用单位。
+   中文纠偏：无单位半分没，数字必须穿衣服。
+   Korrektur-Satz: `Ohne Einheit fehlt der halbe Rechenpunkt: Jede Zahl braucht MPa, mol oder Sekunden.`
 
-ROLLE：中文：你是工厂夜班技术员。 / 德语：Du bist Tutorin im Vokabel-Notdienst.
-SITUATION：同学混淆渗透与扩散，请用三语各举一例并给口诀（约120词）。 / 德语：Eine SchuEls:erin verwechselt Osmose und Diffusion. Erklaere beide dreisprachig in ca. 120 Woertern mit je einem Beispiel und einer Merkregel.
-RUBRIC (30 XP)：Korrekte Definitionen (10 XP) | Dreisprachigkeit (8 XP) | Beispiele (8 XP) | Merkregel (4 XP).
+## Schritt 7 — szenario: Klausurtransfer: Generalprobe unter Zeitdruck
 
-`Klausur-Satz: Dreisprachig erklaeren heisst: definieren, Beispiel geben, Merkregel liefern.`
+ROLLE：中文：你是T-7训练营教练。 / 德语：Du bist Coach des Trainingslagers T-7.
+SITUATION：请为一份含计算、阐释、评价三部分的生物卷设计90分钟作战计划并论证每个时间决策（约150词）。 / 德语：Entwirf in ca. 150 Woertern einen 90-Minuten-Plan fuer eine Bio-Klausur mit Rechen-, Deutungs- und Urteilsteil und begruende jede Zeitentscheidung.
+RUBRIC (30 XP)：Zeitbudget (8 XP) | Verfahrenswahl (8 XP) | Horizont-Check (8 XP) | Reserve-Logik (6 XP).
+
+
+`Klausur-Satz: Achtung Falle: Schoene Antwort ohne Operatorbezug verschenkt die Haelfte der Punkte.`
 
 ## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY核心总结：
 
-中文：机制是一条“翻译链”：题干信号词→术语盒→解题程序。见“梯度+ATP”开运输盒，见“水势数值”开计算盒，单词就变成了决策树。
-Takeaway-Satz: `Begriffe tragen Verfahren: Das Signalwort entscheidet die Kiste.`
+中文：像考试那样练：定时间、分题叠、对标准。
+Takeaway-Satz: `Trainiere wie geprueft: Zeit setzen, Stapel waehlen, Horizont anlegen.`
 
-`Klausur-Satz: Begriffe tragen Verfahren: Das Signalwort entscheidet die Kiste.`
+`Klausur-Satz: Klausurreife ist kein Gefuehl, sondern ein Protokoll aus Zeit, Verfahren und Selbstpruefung.`
 
 
 REFLEXION 2问：
 1. 过程自省：Welcher Schritt fiel schwerer — die Sandkasten-Challenge (Schritt 4) oder die Verfahrenswahl (Schritt 5)?
-2. 元认知计划：Beim nächsten Mal sichere ich zuerst die Werkzeugkiste, weil jeder Handgriff darauf aufbaut.
+2. 元认知计划：Beim naechsten Mal sichere ich zuerst die Werkzeugkiste, weil jeder Handgriff darauf aufbaut.

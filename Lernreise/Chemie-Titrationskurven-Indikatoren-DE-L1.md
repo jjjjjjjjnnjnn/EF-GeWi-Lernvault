@@ -14,113 +14,136 @@ version: Lesson-v3
 # Lernreise: Titrationskurven und Indikatoren — Episode C23: Nachtschicht am Rührkessel
 
 <!-- Campaign: Imperium-Alchemie | Chemie | entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
-
-## Schritt 1 — entdecken: Stille vor dem Äquivalenzpunkt
+## Schritt 1 — entdecken: Der störrische Indikator: Pink bleibt aus
 
 ZIELE:
-1. Ich kann Titrationskurven skizzieren und deuten.
-2. Ich kann Indikatoren nach Umschlag wählen.
-3. Ich kann den Äquivalenzpunkt begruenden.
+1. Ich kann eine **Titration** mit Buerette und Indikator beschreiben.
+2. Ich kann den **Aequivalenzpunkt** aus c-mal-V bestimmen.
+3. Ich kann **Indikatoren** nach Umschlagsbereich waehlen.
 
-Die Reaktion schläft ein; Katalysator-Karl wird aus dem Bett geklingelt. Am Titriertisch herrscht atemlose Stille: Tropfen für Tropfen fällt Base in Säure, die Kurve kriecht — und springt plötzlich steil nach oben. Jonas hält den Kolben wie ein rohes Ei, Mia Puffer starrt auf den Indikator, der genau im Sprung umschlagen muss. Doch welcher Farbstoff passt zu welcher Kurve, und warum liegt der Sprung mal bei 7 und mal darüber? Heute zählt jeder Tropfen.
+Phenolphthalein bleibt farblos, wo Pink erwartet war; der Titrationsautomat streikt. Analystin Mia Puffer starrt auf den Erlenmeyerkolben: Ein Tropfen zu viel faelscht die Charge, einer zu wenig laesst die Konzentration im Dunkeln. Der **Aequivalenzpunkt** versteckt sich im steilen **pH-Sprung**.
 
-`Klausur-Satz: Mol gleich Mol markiert den Punkt.`
+Falscher **Indikator**, falsches Urteil: Wer Umschlagsbereich und Sprunglage paart, trifft. Heute wird von Hand titriert, was der Automat verweigerte — Tropfen fuer Tropfen bis Pink.
 
-## Schritt 2 — entdecken: Die Kurven-Kiste der Tropfenzähler
+`Klausur-Satz: Pink bleibt aus, wo der Automat streikt: Nur die Hand am Hahn findet den Sprung.`
+
+## Schritt 2 — entdecken: Die Titrations-Werkzeugkiste der Analysten
 
 AUSRUESTUNG (5 Begriffe der Werkzeugkiste):
 
-- Äquivalenzpunkt: Mol gleich Mol: Sprungmitte.
-- Indikator: Schlägt im Sprung um.
-- Puffer: Fängt Tropfen ab, bremst den Sprung.
-- Stark-stark: Sprung bei pH 7.
-- Schwach-stark: Sprung oberhalb 7.
+- **Titration**: Titration bestimmt Unbekanntes mit bekannter Massloesung aus der Buerette. Tropfenweise Naeherung an den Aequivalenzpunkt. Mechanismus: Man laesst Massloesung zu, bis der Indikator umschlaegt, und liest das Volumen ab. Klausur-Tipp: Massloesung plus Buerette als Geraetepaar.
 
-`Klausur-Satz: Der Indikator wohnt im Sprung.`
+- **Aequivalenzpunkt**: Am Aequivalenzpunkt gleichen sich Saeure- und Basenmengen exakt aus. Hier springt die Kurve am steilsten. Mechanismus: Man rechnet c-mal-V beider Seiten gleich und loest nach Unbekannt auf. Klausur-Tipp: cS-mal-VS-gleich-cM-mal-VM als Kerngleichung.
 
-## Schritt 3 — entdecken: Vom Tropfen zum Sprung: Die Kurvenkette
+- **pH-Sprung**: Der pH-Sprung ist der steile Anstieg der Kurve am Aequivalenzpunkt. Ein Tropfen aendert Einheiten. Mechanismus: Stark-stark springt durch 7, schwach-stark startet hoeher: Die Lage verrät die Staerke. Klausur-Tipp: Sprunglage als Staerke-Beweis lesen.
+
+- **Indikator**: Indikatoren schlagen in engen pH-Bereichen farbig um. Richtig gewaehlt faerben sie genau den Sprung. Mechanismus: Phenolphthalein 8 bis 10 faengt den stark-stark-Sprung, Methylorange 3 bis 4 den schwachen. Klausur-Tipp: Bereich plus Sprung als Wahlpaar begruenden.
+
+- **Titrationskurve**: Die Titrationskurve zeichnet pH gegen Volumen mit Start, Pufferzone, Sprung und Plateau. Jede Phase erzaehlt Chemie. Mechanismus: Man liest Halb-Aequivalenz als pKs und Aequivalenz als Sprungmitte. Klausur-Tipp: Vier Phasen benennen als Gliederungspunkt.
+
+
+`Klausur-Satz: Aequivalenz heisst: Saeure-Mol gleich Base-Mol, c-mal-V entscheidet.`
+
+## Schritt 3 — entdecken: Vom Tropfen zum Sprung: Die Neutralisationskette
 
 WIRKUNGSGEFUEGE (Ursache zu Wirkung):
 
-Die Kette: Tropfen neutralisieren, pH kriecht, am Punkt kippt alles — Sprung. Stark gegen stark springt bei 7, schwach gegen stark darüber, weil das Salz basisch hydrolysiert. Der Indikator muss im Sprung wohnen.
+Die Neutralisationskette startet mit **Tropfen**: Massloesung fliesst zu, H3O+ schrumpft. Die **Kurve** steigt erst flach durch Puffer, dann schiesst der **Sprung** hoch.
+
+Am **Aequivalenzpunkt** gilt c-mal-V-Gleichheit; der **Indikator** bestaetigt farbig, was die Rechnung vorhersagte. Falscher Bereich, falsches Pink.
 
 ```diagram
-Tropfen -> Kriechen -> Sprung -> Plateau
-Stark-stark: Sprung bei 7 | Schwach-stark: Sprung > 7
-Indikator wohnt im Sprung
+Tropfen -> Puffer flach -> Sprung steil -> Plateau
+cS*VS = cM*VM am Punkt
+Indikator-Bereich muss Sprung treffen
 ```
 
-`Klausur-Satz: Stark-stark springt bei sieben.`
+Die Aequivalenzgleichung des Sandkastens (1 zu 1):
+
+$$c_S \cdot V_S = c_M \cdot V_M \quad \text{(Aequivalenzpunkt 1:1)}$$
+
+Bei anderen Verhaeltnissen Koeffizienten als Faktoren davorsetzen.
+
+`Klausur-Satz: Tropfen naehern, Sprung verrät, Indikator bestaetigt: Die Kette endet in Pink.`
 
 ## Anekdote & Fun-Fact
 
-**Anekdote / Fun-Fact (DE)**: Ein Tropfen zu viel, und Pink schreit auf: Die Kurve verzeiht keinen Übermut am Äquivalenzpunkt.
+**Anekdote / Fun-Fact (DE)**: Apotheker titrieren seit 200 Jahren von Hand — die Buerette ist aelter als das Auto.
 
-**Bezug zum Konzept**: Der Sprung entscheidet, der Tropfen zählt.
 
-## Schritt 4 — ausprobieren: Tropf-Sandkasten: Triff den Umschlag
+**Bezug zum Konzept**: Alt plus exakt: Die Hand am Hahn schlaegt manchen Automaten.
+
+## Schritt 4 — ausprobieren: Sandkasten: Titriere bis zum Umschlag
 
 [Werkzeug: titration-lab]
 
-AUFGABE (Target Challenge): Target Challenge: 10,0 mL Säure (c = 0,05 mol/L) mit Base gleicher c titrieren. Ziel: Äquivalenzvolumen auf 0,1 mL, Sprung skizziert, Indikator begründet gewählt. AUFGABE konkret: 10,0 mL mit c = 0,05: Wo liegt das Äquivalenzvolumen?
+AUFGABE (Target Challenge): Gegeben: 25 mL Essig unbekannt, 0,1 mol/L NaOH, Phenolphthalein. Titriere im Simulator bis Pink, lies das Volumen ab und berechne c; waehle dann den Indikator fuer schwache Base gegen starke Saeure.
 
 HILFE:
-1. Mol gleich Mol.
-2. Gleiche c heisst gleiches V.
-3. Sprungmitte markieren.
+1. Langsam zutropfen und Farbe beobachten.
+2. Volumen am Umschlag ablesen.
+3. c-mal-V-Gleichung nach Unbekannt loesen.
 
-MUSTERLÖSUNG: Bei gleicher Konzentration gilt V gleich 10,0 mL; Kurve kriecht, springt, plateaut — Indikator im Sprung gewählt.
+MUSTERLOESUNG: Umschlag bei 12,5 mL: c Essig gleich 0,05 mol/L; schwache Base gegen starke Saeure braucht Methylorange, weil der Sprung sauer liegt.
 
-`Klausur-Satz: Schwach-stark springt darüber.`
+`Klausur-Satz: Mit 12,5 mL fuer 25 mL 0,1-molarer Saeure titriert der Sandkasten statt zu raten.`
 
-## Schritt 5 — ausprobieren: Duell der Kurven: Stark gegen schwach
+## Schritt 5 — ausprobieren: Duell der Wege: Bueretten-Rechnung gegen Kurven-Deutung
 
-VERGLEICH: Waehle erst die Kurve — (i) stark-stark oder (ii) schwach-stark — dann loesen.
+VERGLEICH: Waehle erst den Analyse-Weg, dann loesen: (i) Bueretten-Rechenweg oder (ii) Kurven-Deuteweg — dann loesen.
 
-Weg A (Sieben-Weiche): Sprung bei 7, Bromthymolblau passt.
 
-Weg B (Oben-Weiche): Sprung über 7, Phenolphthalein passt.
+Weg A (Bueretten-Rechenweg): Volumina quantitativ ablesen und Konzentrationen ausrechnen. Dieser Weg liefert c-Zahlen und ist protokollfest.
 
-AUFGABE A: HCl gegen NaOH. Welche Kurve?
+Weg B (Kurven-Deuteweg): Kurvenformen qualitativ lesen und Indikatoren begruenden. Dieser Weg waehlt richtig, rechnet aber nichts.
 
-AUFGABE B: Essigsäure gegen NaOH. Welche Kurve?
 
-HILFE: A stark-stark — Weg A. B schwach-stark — Weg B.
+AUFGABE A: Essigkonzentration aus Volumen exakt gesucht. Welcher Weg?
 
-ANTWORT: A folgt Weg A mit Sprung bei 7; B folgt Weg B mit Sprung oberhalb 7 und Phenolphthalein.
+AUFGABE B: Welcher Indikator bei saurem Sprung? Welcher Weg?
 
-`Klausur-Satz: Kurve wählen heisst Sprung lesen.`
 
-## Schritt 6 — check: Selbsttest zu Titrationskurven und Indikatoren
+HILFE: A nennt Volumen — Weg A mit Gleichung. B nennt Sprung — Weg B mit Bereich.
 
-FRAGE: Wo liegt der Punkt? | ANTWORT: Mol gleich Mol, Sprungmitte.
-FRAGE: Wo wohnt der Indikator? | ANTWORT: Im steilen Sprung.
-FRAGE: Warum springt schwach-stark oben? | ANTWORT: Salz hydrolysiert basisch.
+ANTWORT: A folgt Weg A mit c-mal-V-Rechnung; B folgt Weg B mit Bereich-trifft-Sprung-Argument.
 
-`Klausur-Satz: Erst kriechen, dann springen.`
+`Klausur-Satz: Buerette rechnen beweist, Kurven deuten warnen — die Klausur braucht beides.`
+
+## Schritt 6 — check: Selbsttest zu Titration und Indikatoren
+
+- FRAGE: Wie lautet die Äquivalenzgleichung? | ANTWORT: c-mal-V gleich c-mal-V.
+
+- FRAGE: Wozu passt Phenolphthalein? | ANTWORT: Stark-stark mit Sprung ueber 7.
+
+- FRAGE: Ist Umschlag gleich Äquivalenz? | ANTWORT: Nah genug zaehlt, exakt ist selten.
+
+
+`Klausur-Satz: Ohne Sprunglage bleibt jede Indikatorwahl geraten, mit ihr wird sie begruendet.`
 
 ## Fehlvorstellung
 
-1. Fehlvorstellung: Jeder Indikator passe überall.
-   Korrektur-Satz: `Nur der Sprungbewohner zeigt richtig.`
-2. Fehlvorstellung: Der Punkt liege immer bei 7.
-   Korrektur-Satz: `Nur stark-stark springt bei 7.`
+1. Fehlvorstellung: Umschlag sei Aequivalenz.
+   Korrektur-Satz: `Umschlag liegt nah, selten exakt: Nah genug zaehlt als Treffer.`
 
-## Schritt 7 — szenario: Klausurtransfer: Messprotokoll am Titriertisch
+2. Fehlvorstellung: Jeder Indikator passe ueberall.
+   Korrektur-Satz: `Bereich muss Sprung treffen: Phenolphthalein verfehlt saure Spruenge.`
 
-ROLLE: Du bist Messwartin am Titriertisch.
-SITUATION: Wähle in ca. 130 Woertern für eine schwache Säure Kurve und Indikator und begruende mit Sprunglage.
-RUBRIC (30 XP): Kurve (10 XP) | Sprunglage (8 XP) | Indikatorwahl (8 XP) | Sprache (4 XP).
+## Schritt 7 — szenario: Klausurtransfer: Analyseprotokoll zur Essigprobe
 
-`Klausur-Satz: Ein Tropfen entscheidet Pink.`
+ROLLE: Du bist Analystin im Lebensmittellabor.
+SITUATION: Die Essigprobe weicht ab. Schreibe in ca. 150 Woertern ein Protokoll mit Titration, Rechnung und Indikatorwahl.
+RUBRIC (30 XP): Durchfuehrung (8 XP) | Rechnung (8 XP) | Indikatorwahl (8 XP) | Urteil (6 XP).
+
+
+`Klausur-Satz: Achtung Falle: Umschlag ungleich Aequivalenz — nah genug zaehlt, gleich ist selten.`
 
 ## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY:
 
-Takeaway-Satz: `Sprungmitte statt Bauchgefühl.`
+Takeaway-Satz: `Bereich auf Sprung legen: Der Indikator muss springen, wo die Kurve springt.`
 
-`Klausur-Satz: Sprungmitte statt Bauchgefühl.`
+`Klausur-Satz: Titration ist Geduld als Methode: Tropfen zaehlen, bis die Chemie spricht.`
 
 
 REFLEXION:

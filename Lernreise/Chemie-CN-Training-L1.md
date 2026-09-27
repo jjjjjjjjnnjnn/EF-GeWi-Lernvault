@@ -14,121 +14,142 @@ version: Lesson-v3
 # Lernreise: CN-Training: Zeitlimit und EHZ-Selbstbewertung — Episode C4: Kühler Kreuzschmerz des Turms
 
 <!-- Campaign: Imperium-Alchemie | Chemie | entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
-
-## Schritt 1 — entdecken: Der Countdown am Titriertisch
+## Schritt 1 — entdecken: Das Alchemie-Bootcamp: Scherit vor der Pruefung
 
 ZIELE（本节三目标）：
-1. 中文：能说出六张公式卡。
-2. 中文：会把每卡配到题型。
-3. 中文：能六十秒调取全套。
+1. 中文：能自动化三步作答。
+2. 中文：能把题分成算量与判向两类。
+3. 中文：能按标准自评。
 
-【危机Hook】Der Turm überhitzt bei 520 Grad; LECHA-7 schlägt Temperatursenkung vor. 午夜六张公式卡集体闪烁：MWG、Q、pH、滴定、 redox、摩尔桥。实习生重排手册，班长每卡贴口诀，总监明早逐张抽查。今天把卡片铺进脑子：六十秒调出六卡，考试无忧。
+【危机Hook】Bootcamp Tag null: 90 Minuten, drei Stationen, kein Erbarmen. 魔鬼营第零天：90分钟、三个站点、毫不留情。教官Vera把考题切成算量、判向、评价三关，每关限时每分称重。今晚的敌人不是化学，是手速：写得出还要写得完。
 
-`Klausur-Satz: Sechs Karten tragen jede Klausur.`
+`Klausur-Satz: Bootcamp schlaegt Begabung: Wer den Ansatz automatisiert, gewinnt Minuten.`
 
-## Schritt 2 — entdecken: Die EHZ-Stoppuhr der Zeitsprinter
+## Schritt 2 — entdecken: Die Bootcamp-Werkzeugkiste
 
 PRETRAINING术语盒（5大装备，中文在上、德语在下）：
 
-- 中文：质量作用卡 — 德语：MWG-Karte：浓度幂次成商。 / K aus potenzierten c.
-- 中文：反应商卡 — 德语：Q-Karte：同式此刻代入。 / Gleiche Formel, jetzt gemessen.
-- 中文：pH卡 — 德语：pH-Karte：氢浓度负对数。 / Minus log der H-Konzentration.
-- 中文：摩尔卡 — 德语：Mol-Karte：质量除摩尔质量。 / n = m durch M.
-- 中文：氧化还原卡 — 德语：Redox-Karte：升失降得。 / Steigen geben, Sinken nehmen.
+- 中文：已知待求 — 德语：Gegeben-Gesucht-Ansatz：动笔先列两栏。 / Gegeben-Gesucht-Ansatz: Gegeben und Gesucht ordnen jede Rechnung vor der ersten Zahl. Sie verhindern Einheiten- und Formelirrtuemer. Mechanismus: Man schreibt Symbole mit Werten und Einheiten; der Ansatz folgt fast von selbst. Klausur-Tipp: Zwei Zeilen Ansatz sichern Teilpunkte bei jedem Folgefehler.
 
-`Klausur-Satz: Wieviel zieht Mengen, Wohin zieht Lage.`
+- 中文：算量型 — 德语：Wieviel-Typ：见克见升就算。 / Wieviel-Typ: Der Wieviel-Typ fragt nach Masse, Volumen oder Konzentration. Er verlangt Mol-Bruecke und Verhaeltnisse. Mechanismus: Man rechnet n gleich m durch M und uebersetzt Koeffizienten in Mol-Verhaeltnisse. Klausur-Tipp: Gramm im Text heisst sofort Mol-Bruecke ziehen.
 
-## Schritt 3 — entdecken: Vom Zeitdruck zur Punktemaschine
+- 中文：判向型 — 德语：Wohin-Typ：见扰动就判逃逸。 / Wohin-Typ: Der Wohin-Typ fragt nach Richtung unter Stoerung. Er verlangt Q oder Le Chatelier. Mechanismus: Man benennt den Zwang und zeigt die Fluchtseite mit Begruendung. Klausur-Tipp: Stoerwort plus Pfeil als Antwortpaar.
+
+- 中文：单位检验 — 德语：Einheitencheck：量纲不对公式必错。 / Einheitencheck: Der Einheitencheck vergleicht links und rechts jeder Gleichung. Er faengt Formel- und Logikfehler. Mechanismus: Man kuerzt mol, L und s; bleibt Falsches uebrig, war der Ansatz falsch. Klausur-Tipp: Check als letzte Zeile hinschreiben.
+
+- 中文：评分标准 — 德语：Erwartungshorizont：采分点即分数。 / Erwartungshorizont: Der Erwartungshorizont listet alle Punkte der Musterloesung. Er ist das Gesetz der Korrektur. Mechanismus: Man haelt die Antwort Stichpunkt fuer Stichpunkt daneben und ergaenzt Luecken. Klausur-Tipp: Nummerierte Antwort spiegelt den Horizont.
+
+
+`Klausur-Satz: Gramm zieht Mol, Stoerung zieht Le Chatelier.`
+
+## Schritt 3 — entdecken: Vom Drill zum Urteil: Die Trainingsleiter
 
 ENTDECKEN因果传导机制（中文拆解在上，德语链条在下）：
 
-中文：链条：读题→抽卡→代入。问量抽摩尔与MWG，问向抽Q与勒夏特列，问沸点抽分子间力，问电子抽 redox。
+中文：训练梯：先分类（算量或判向），再列三步作答，最后对标准数点查漏。
 
-德语：Die Kette: Frage lesen, Karte ziehen, einsetzen. Wieviel zieht Mol und MWG, Wohin zieht Q und Le Chatelier, Sieden zieht Haft, Strom zieht Redox.
+德语：Die Trainingsleiter startet mit dem **Sortieren**: Jede Aufgabe wird Wieviel oder Wohin. Dann folgt der **Ansatz**: Gegeben, Formel, Einheit stehen vor jeder Zahl. Zuletzt sichert der **Horizont**: Stichpunkte abhaken, Luecken schliessen, Zeitreserve halten. Was der Horizont nicht findet, findet der Pruefer auch nicht.
 
 ```diagram
-Wieviel -> Mol/MWG | Wohin -> Q/LeChatelier
-Sieden -> Haft | Strom -> Redox
+Sortieren -> Ansetzen -> Rechnen
+Wieviel = Mol | Wohin = Q/LeChatelier
+Horizont -> Luecken schliessen
 ```
 
-`Klausur-Satz: Q kleiner K heisst rechts.`
+Die Budgetregel des Bootcamps:
+
+$$c = \frac{n}{V} \quad \text{in } \frac{\text{mol}}{\text{L}}$$
+
+中文：浓度=摩尔除以体积，单位mol/L。 / 德语：Jede Konzentration braucht Volumen im Nenner; ohne L kein c.
+
+`Klausur-Satz: Sortieren, ansetzen, sichern: Der Dreischritt traegt jede Klausur.`
 
 ## Anekdote & Fun-Fact
 
-**Anekdote / Fun-Fact (DE)**: Sechs Karten, sechzig Sekunden: Das Handbuch passt in eine Hosentasche und trägt durch jede Klausur.
+**Anekdote / Fun-Fact (DE)**: Feuerwehr uebt den Angriff trocken tausendmal — der Ernstfall dankt es mit Sekunden.
 
-**中文解读**: 六卡六十秒：手册装进口袋，考场一路绿灯。
 
-**Bezug zum Konzept**: Karten tragen Klausuren.
+**中文解读**: 消防队把进攻练一千遍——实战用秒回报。
 
-## Schritt 4 — ausprobieren: Zeit-Sandkasten: Drei Stationen, sechs Minuten
 
-[Werkzeug: oral-timer]
+**Bezug zum Konzept**: Trocken drillen, nass liefern: Das Bootcamp trennt Ueben und Ernst.
 
-AUFGABE目标挑战：目标挑战：90秒讲清Q与K，再6分钟做完3道迷你题，按EHZ拿满分并打时间戳。 德语原题：Q kleiner K: Welche Karte und welche Richtung?
+## Schritt 4 — ausprobieren: Trainings-Sandkasten: Drei Stationen gegen die Uhr
+
+[Werkzeug: formula]
+
+AUFGABE目标挑战：三站：碳酸钙产气、哈伯Q判、放热升温评价，30分钟规范解完并自评。 德语原题：Drei Stationen: 10 g CaCO3 zu CO2-Volumen, Q-Entscheid bei Haber-Werten, Urteil ueber Heizen bei exotherm. Loese alle mit Ansatz und Einheit in 30 Minuten und bewerte dich am Horizont.
 
 HILFE:
-1. Karte ziehen.
-2. Richtung nennen.
-3. Mini-Rechnung dazu.
+1. Typ bestimmen: Wieviel oder Wohin.
+2. Ansatz mit Gegeben, Formel, Einheit schreiben.
+3. Horizont anlegen und Luecken schliessen.
 
-MUSTERLÖSUNG：中文：抽Q卡、右行至Q=K，并附迷你计算作证。 / 德语：Q-Karte ziehen, rechts laufen bis Q gleich K — plus Mini-Rechnung als Beleg.
+MUSTERLOESUNG：中文：气体2.24升、Q小右补、升温左移，皆有单位，自评全中。 / 德语：CO2: 0,1 mol, 2,24 L; Q kleiner K heisst rechts; Heizen bei exotherm schiebt links; alle mit Einheit, Horizont zeigt Volltreffer.
 
-`Klausur-Satz: n gleich m durch M.`
+`Klausur-Satz: Drei Stationen, neunzig Minuten, null Ausreden: Die Uhr trainiert mit.`
 
-## Schritt 5 — ausprobieren: Duell der Taktiken: Tempo gegen Tiefe
+## Schritt 5 — ausprobieren: Duell der Wege: Ansatz-Drill gegen Vollklausur
 
-VERGLEICH: Waehle erst den Stapel — (i) Mengen oder (ii) Lage — dann loesen.选程序：先选牌堆。
+VERGLEICH: Waehle erst den Trainingsweg, dann loesen: (i) Ansatz-Drillweg oder (ii) Vollklausurweg — dann loesen.选程序：先看信号词再选路。
 
-Weg A：Weg A (Mengen-Stapel): Mol, MWG, pH direkt.
 
-Weg B：Weg B (Lage-Stapel): Q, Le Chatelier, Haft, Redox.
+Weg A：Weg A (Ansatz-Drillweg): Ansaetze unter Stoppuhr automatisieren und Typen sortieren. Dieser Weg baut Tempo und Sicherheit.
 
-AUFGABE A: Gramm aus Gleichung. Welcher Stapel? 【选程序：先看信号词再选路】
+Weg B：Weg B (Vollklausurweg): Komplette Klausur unter Ernstfall schreiben und auswerten. Dieser Weg baut Nerven und Vollstaendigkeit.
 
-AUFGABE B: Richtung nach Druckstoss. Welcher Stapel? 【选程序：先看信号词再选路】
 
-HILFE：A fragt Gramm — Weg A. B fragt Richtung — Weg B.
+AUFGABE A: Mol-Ansaetze in unter einer Minute bauen. Welcher Weg? 【选程序：先看信号词再选路】
 
-ANTWORT：ANTWORT: A folgt Weg A mit Mol-Brücke; B folgt Weg B mit Q-gegen-K.
+AUFGABE B: Neunzig Minuten ohne Einbruch durchhalten. Welcher Weg? 【选程序：先看信号词再选路】
 
-`Klausur-Satz: Jede Frage zieht genau eine Karte.`
 
-## Schritt 6 — check: Selbsttest zu CN-Training: Zeitlimit und EHZ-Selbstbewertung
+HILFE：A verlangt Automatik — Weg A mit Drill. B verlangt Dauer — Weg B mit Simulation.
 
-FRAGE：说出三卡？（Nenne drei Karten.） | ANTWORT：MWG、Q、pH。 / MWG, Q, pH.
-FRAGE：Q归哪堆？（Wohin gehört Q?） | ANTWORT：方向堆。 / Zum Lage-Stapel.
-FRAGE：摩尔归哪堆？（Wohin gehört Mol?） | ANTWORT：数量堆。 / Zum Mengen-Stapel.
+ANTWORT：中文：A走苦练路刷卡；B走模考路练续航。 / 德语：A folgt Weg A mit Kartendrill; B folgt Weg B mit Probeklausur und Horizont.
 
-`Klausur-Satz: Abruf schlägt Besitz.`
+`Klausur-Satz: Drill baut Tempo, Vollklausur baut Nerven — die Pruefung braucht beides.`
+
+## Schritt 6 — check: Selbsttest zu CN-Training
+
+- FRAGE:：三步作答是哪三步？（Wie lautet der Ansatz-Dreischritt） | ANTWORT:：已知公式单位。 / Gegeben, Formel, Einheit.
+
+- FRAGE:：克出现抽什么？（Was zieht das Wort Gramm） | ANTWORT:：摩尔桥。 / Die Mol-Bruecke.
+
+- FRAGE:：自评用什么？（Womit bewertest du dich） | ANTWORT:：评分标准逐条。 / Stichpunkt fuer Stichpunkt am Horizont.
+
+
+`Klausur-Satz: Ohne Horizont bleibt Selbstcheck geraten, mit ihm wird er gezaehlt.`
 
 ## Fehlvorstellung
 
-1. 误解：误解“集卡就够”。
-   中文纠偏：见德语纠偏句。
-   Korrektur-Satz: `Nur Abruf unter Zeit zählt.`
-2. 误解：误解“一卡通吃”。
-   中文纠偏：见德语纠偏句。
-   Korrektur-Satz: `Jede Frage zieht genau eine Karte.`
+1. 误解：算快就行。
+   中文纠偏：快加全才行，漏点扣分不扣速。
+   Korrektur-Satz: `Schnell plus vollstaendig zaehlt: Der Horizont bestraft Luecken, nicht Tempo.`
 
-## Schritt 7 — szenario: Klausurtransfer: Marathon-Protokoll mit Punkteplan
+2. 误解：列已知浪费时间。
+   中文纠偏：三步保证同情分，无它一错全错。
+   Korrektur-Satz: `Ansatz sichert Teilpunkte: Ohne ihn kostet ein Zahlendreher alles.`
 
-ROLLE：中文：你是化工基地夜班技术员。 / 德语：Du bist Handbuch-Prüferin.
-SITUATION：六问待配卡，请配对并算两例（约120词）。 / 德语：Sechs Fragen liegen bereit. Ordne in ca. 120 Woertern jede Frage einer Karte zu und rechne zwei Beispiele.
-RUBRIC (30 XP)：Zuordnung (12 XP) | Rechnungen (12 XP) | Sprache (6 XP).
+## Schritt 7 — szenario: Klausurtransfer: Bootcamp-Abschlusspruefung
 
-`Klausur-Satz: Sechzig Sekunden entscheiden.`
+ROLLE：中文：你是魔鬼营考官。 / 德语：Du bist Bootcamp-Prueferin.
+SITUATION：三题待解：请规范作答并公开评分标准（约120词）。 / 德语：Drei Aufgaben liegen bereit. Schreibe in ca. 120 Woertern Loesungen mit Ansatz und Einheit und lege den Horizont offen.
+RUBRIC (30 XP)：Ansaetze (12 XP) | Rechnungen (12 XP) | Horizont (6 XP).
+
+
+`Klausur-Satz: Achtung Falle: Schoener Rechenweg ohne Einheit verschenkt den halben Punkt.`
 
 ## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY核心总结：
 
-中文：链条：读题→抽卡→代入。问量抽摩尔与MWG，问向抽Q与勒夏特列，问沸点抽分子间力，问电子抽 redox。
-Takeaway-Satz: `Handbuch im Kopf statt Zettel.`
+中文：像考试那样练：分类、列式、对标准。
+Takeaway-Satz: `Trainiere wie geprueft: sortieren, ansetzen, Horizont anlegen.`
 
-`Klausur-Satz: Handbuch im Kopf statt Zettel.`
+`Klausur-Satz: Klausurreife ist Handwerk: Verfahren schlaegt Einfall, Vollstaendigkeit schlaegt Brillanz.`
 
 
 REFLEXION 2问：
 1. 过程自省：Welcher Schritt fiel schwerer — die Sandkasten-Challenge (Schritt 4) oder die Verfahrenswahl (Schritt 5)?
-2. 元认知计划：Beim nächsten Mal sichere ich zuerst die Werkzeugkiste, weil jeder Handgriff darauf aufbaut.
+2. 元认知计划：Beim naechsten Mal sichere ich zuerst die Werkzeugkiste, weil jeder Handgriff darauf aufbaut.

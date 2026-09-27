@@ -14,113 +14,137 @@ version: Lesson-v3
 # Lernreise: CN-Methoden fuer die Bio-Klausur — Episode B9: Stau auf der Membran-Autobahn
 
 <!-- Campaign: Nano-Zellfabrik-Krise | Bio | Instapower: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
-
-## Schritt 1 — entdecken: Die Trickkiste des alten Hausmeisters
+## Schritt 1 — entdecken: Der Sechzig-Sekunden-Kartentisch
 
 ZIELE:
-1. Ich kann die Kernbegriffe der Zellbiologie dreisprachig nennen und zuordnen.
-2. Ich kann deutsche Definitionen mit chinesischen Merksätzen verknüpfen.
-3. Ich kann im Klausurtext die Signalwoerter markieren und das Verfahren waehlen.
+1. Ich kann sechs **Methodenkarten** nennen.
+2. Ich kann jede Karte einer **Frageart** zuordnen.
+3. Ich kann alle Karten in sechzig Sekunden abrufen.
 
-Carrier ueberlastet; Mara Zell leitet den Verkehr auf Aquaporine um. Es ist Montagfrueh und in der Nano-Zellfabrik herrscht Sprachverwirrung: Die neue Praktikantin versteht weder das deutsche Wort Turgordruck noch das chinesische Wort dafuer, und OSMO-9 funkt Fehlermeldungen auf Englisch. Captain Mara Zell greift zum dicksten Handbuch der Fabrik, dem dreisprachigen Terminologie-Notfallkoffer, denn in einer Stunde kommt die Klausur-Kommission zur Inspektion. Jedes Schild an jeder Maschine muss auf Deutsch, Chinesisch und Englisch stimmen, sonst droht Stillstand. Mara Zell und Dr. Finn Katalys rennen von Halle zu Halle, kleben zweisprachige Etiketten und entdecken dabei, dass ein sauberer Begriff die halbe Klausur rettet: Wer Osmose, Diffusion, Plasmolyse, Enzym und Replikation in drei Sprachen sicher beherrscht, loest jede Aufgabe doppelt so schnell. Heute wird die Fabrik zur Sprachschule.
+Um Mitternacht flackern alle sechs Methodenkarten der Zellfabrik: Osmose, Enzym, Genetik, Oekologie, Atmung, Fotosynthese. Mia Puffer sortiert das Handbuch neu, Jonas klebt Merksaetze an jede Karte, und Vera Haber prueft morgen jede einzelne.
 
-`Klausur-Satz: Begriffe in drei Sprachen sind Werkzeuge: Jedes Signalwort oeffnet genau eine Kiste.`
+Heute wird gelegt, was sitzt: Wer die sechs Karten in sechzig Sekunden abrufen kann, besteht jede Klausur. Jede Karte traegt genau eine Frageart — und jede Frageart schreit nach genau einer Karte.
 
-## Schritt 2 — entdecken: Sechs Methoden-Bausteine im Kasten
+`Klausur-Satz: Sechs Karten tragen jede Klausur: Wer zieht, loest.`
+
+## Schritt 2 — entdecken: Sechs Karten im Kasten
 
 AUSRUESTUNG (5 Begriffe der Werkzeugkiste):
 
-- Osmose: Nettodiffusion von Wasser durch eine semipermeable Membran.
-- Diffusion: Bewegung mit dem Gefaelle bis zum Ausgleich.
-- Plasmolyse: Abloesung des Protoplasten von der Wand bei Wasserverlust.
-- Enzym: Biokatalysator aus Protein mit aktivem Zentrum.
-- Replikation: Semikonservative Verdopplung der DNA.
+- **Osmose-Karte**: Die Osmose-Karte gilt bei jeder Aufgabe mit Psi-Zahlen oder Konzentrationen. Sie verlangt Delta-Berechnung und Richtungsaussage. Mechanismus: Man bildet Delta-Psi, deutet das Vorzeichen und prognostiziert den Turgorverlauf. Klausur-Tipp: Psi-Zahl im Text heisst sofort diese Karte ziehen.
 
-`Klausur-Satz: Osmose ist Wasser durch die Membran, Diffusion ist alles mit dem Gefaelle.`
+- **Enzym-Karte**: Die Enzym-Karte gilt bei Temperatur-, pH- und Substratfragen. Sie verlangt Kurvendeutung mit Optimum und Denaturierung. Mechanismus: Man liest das Optimum ab, erklaert links die Brownsche Bewegung und rechts die Zerstoerung der Struktur. Klausur-Tipp: Optimum plus Denaturierung als Zangenbegruendung.
+
+- **Genetik-Karte**: Die Genetik-Karte gilt bei Kreuzungs- und Stammbaumfragen. Sie verlangt Punnett-Quadrat und Wahrscheinlichkeitsrechnung. Mechanismus: Man notiert Genotypen der Eltern, fuellt das Quadrat und liest Verhaeltnisse wie 3 zu 1 ab. Klausur-Tipp: Genotypen zuerst, Phaenotypen spaeter — nie umgekehrt.
+
+- **Oekologie-Karte**: Die Oekologie-Karte gilt bei Populations- und Nahrungsnetzfragen. Sie verlangt Bilanzen aus Geburt, Tod und Wanderung. Mechanismus: Man schreibt die Bilanz N-neu gleich N-alt plus Geburten minus Tote und deutet die Kapazitaetsgrenze. Klausur-Tipp: Kapazitaet K als Deckel immer einzeichnen.
+
+- **Atmungs-Karte**: Die Atmungs-Karte gilt bei jeder Energiefrage der Zelle. Sie verlangt die Bilanz aus Glukose, Sauerstoff und ATP. Mechanismus: Man verfolgt Glukose durch Glykolyse, Citratzyklus und Atmungskette bis zu 32 ATP. Klausur-Tipp: 32 ATP plus Sauerstoff als Endakzeptor hinschreiben.
+
+
+`Klausur-Satz: Psi-Zahl zieht Osmose, Optimum zieht Enzym, Kreuzung zieht Genetik.`
 
 ## Schritt 3 — entdecken: Vom Trick zum Verfahren: Die Methoden-Weiche
 
 WIRKUNGSGEFUEGE (Ursache zu Wirkung):
 
-Der Mechanismus ist eine Uebersetzungskette: Signalwort im Text erkennen, Begriff der passenden Kiste zuordnen, Verfahren aus der Kiste ableiten. Steht Gefaelle plus ATP im Text, oeffnet sich die Transport-Kiste; steht Psi-Zahl im Text, oeffnet sich die Rechen-Kiste. So wird aus Vokabeln ein Entscheidungsbaum.
+Die Kette heisst: Frage lesen, Karte ziehen, einsetzen. Wieviel-Fragen ziehen Messkarten mit Formeln, Wohin-Fragen ziehen **Richtungskarten** mit Gefaellen, Warum-Fragen ziehen **Regulationskarten** mit Kurven.
+
+Jede Karte endet mit einem Beleg: einer Zahl mit Einheit oder einer Kurve mit Optimum. Ohne Beleg bleibt die Antwort Behauptung.
 
 ```diagram
-Signalwort -> Begriffs-Kiste -> Verfahren
-Gefaelle + ATP = Transport | Psi-Zahl = Rechnung
-Deutsch oben, Zhongwen als Merkhaken
+Wieviel -> Messkarte mit Formel
+Wohin -> Richtung mit Gefaelle
+Warum -> Regulation mit Kurve
+Jede Karte endet mit Beleg
 ```
 
-`Klausur-Satz: Markieren, zuordnen, Verfahren waehlen — so wird Vokabel zur Klausurwaffe.`
+Die Tempomessung des Kartentischs:
+
+$$v = \frac{\Delta c}{\Delta t} \quad \text{mit Einheit } \frac{\text{mol}}{\text{L} \cdot \text{s}}$$
+
+Die Rate traegt immer Einheit pro Zeit; ohne pro Sekunde gibt es keinen Punkt.
+
+`Klausur-Satz: Frage lesen, Karte ziehen, einsetzen — die Weiche irrt nie.`
 
 ## Anekdote & Fun-Fact
 
-**Anekdote / Fun-Fact (DE)**: Gorter und Grendel vermassen 1925 rote Blutzellen und bewiesen die Doppelschicht — kernlose Zellen verrieten die doppelte Haut.
+**Anekdote / Fun-Fact (DE)**: Kartenspieler mischen blind und finden jedes Ass — Abruf unter Zeit ist dieselbe Fingerfertigkeit.
 
-**Bezug zum Konzept**: Die Doppelschicht bildet die Schranke, Proteine oeffnen die Tore.
 
-## Schritt 4 — ausprobieren: Baukasten-Sandkasten: Sechs Tricks im Einsatz
+**Bezug zum Konzept**: Mischen, ziehen, legen: Der Tisch trainiert Griff und Tempo.
 
-[Werkzeug: lego]
+## Schritt 4 — ausprobieren: Trick-Sandkasten: Sechs Karten im Einsatz
 
-AUFGABE (Target Challenge): Target Challenge: Baue aus 6 Methoden-Bausteinen die Loesung zu einer Transportaufgabe: Skizze, Tabelle, Rechnung, Satz. Ziel: Alle 4 Bauteile in 10 Minuten fehlerfrei stecken. AUFGABE konkret: Markiere im Satz alle Fachbegriffe und entscheide: Transport- oder Rechen-Kiste?
+[Werkzeug: formula]
+
+AUFGABE (Target Challenge): Sechs Mini-Faelle liegen bereit: Psi-Differenz, Temperaturoptimum, Kreuzung Aa mal Aa, Populationsbilanz, ATP-Bilanz und Fotosynthese-Rate. Ordne jede der sechs Karten zu und rechne zwei Faelle mit Ansatz und Einheit durch.
 
 HILFE:
-1. Erst unterstreichen, dann zuordnen.
-2. Signalwoerter sind Gefaelle, ATP, Psi-Zahl.
-3. Jeder Begriff bekommt genau eine Kiste.
+1. Frageart bestimmen: Wieviel, Wohin oder Warum.
+2. Passende Karte ziehen und Verfahren nennen.
+3. Zwei Faelle mit Formel und Einheit durchrechnen.
 
-MUSTERLÖSUNG: Osmose, semipermeabel und Psi-Zahl oeffnen die Rechen-Kiste; ATP und gegen das Gefaelle oeffnen die Transport-Kiste. Saubere Markierung halbiert die Loesungszeit.
+MUSTERLOESUNG: Psi zieht Osmose mit Delta-Rechnung, Aa mal Aa zieht Genetik mit 3-zu-1-Quadrat; alle sechs Zuordnungen sitzen, zwei Rechnungen tragen Einheiten.
 
-`Klausur-Satz: Acht Treffer in vier Minuten: Markieren schlaegt Pauken im Kontext.`
+`Klausur-Satz: Sechs Minuten, sechs Karten, sechs Treffer: Abruf schlaegt Besitz.`
 
-## Schritt 5 — ausprobieren: Duell der Methoden: Skizze gegen Rechnung
+## Schritt 5 — ausprobieren: Duell der Stapel: Mengen gegen Regulation
 
-VERGLEICH: Waehle erst den Lernweg — (i) Karteikarten-Weg oder (ii) Kontext-Weg — dann loesen.
+VERGLEICH: Waehle erst den Stapel, dann loesen: (i) Mengen-Stapel oder (ii) Regulations-Stapel — dann loesen.
 
-Weg A (Karteikarten-Weg): Begriff pauken, Definition hersagen, dann anwenden.
 
-Weg B (Kontext-Weg): Im Satz markieren, Kiste waehlen, Verfahren ableiten.
+Weg A (Mengen-Stapel): Zaehlen, wiegen, rechnen: Mol, Bilanzen und Raten mit Formeln loesen. Dieser Weg liefert harte Zahlen und ist pruefungssicher.
 
-AUFGABE A: Fuenf Begriffe in drei Sprachen pauken. Welcher Weg?
+Weg B (Regulations-Stapel): Kurven lesen, Optima deuten, Regulation erklaeren. Dieser Weg liefert Verstaendnis und Bloom-Punkte, bleibt aber ohne Zahl duenn.
 
-AUFGABE B: Im Fliesstext die Verfahrenswahl treffen. Welcher Weg?
 
-HILFE: A verlangt Pauken — Weg A. B verlangt Textarbeit — Weg B.
+AUFGABE A: Gramm-Angabe aus Reaktionsgleichung gesucht. Welcher Stapel?
 
-ANTWORT: A folgt Weg A über Karteikarten mit Selbstabfrage; B folgt Weg B über Markierung und Kistenwahl im Kontext.
+AUFGABE B: Warum bricht die Rate jenseits von 40 Grad ein? Welcher Stapel?
 
-`Klausur-Satz: Karteikarte paukt den Begriff, Kontext waehlt das Verfahren.`
 
-## Schritt 6 — check: Selbsttest zu CN-Methoden fuer die Bio-Klausur
+HILFE: A fragt Gramm — Weg A mit Mol. B fragt Einbruch mit Warum — Weg B mit Kurve.
 
-FRAGE: Nenne drei Sprachen einer Begriffskarte. | ANTWORT: Deutsch, Chinesisch, Englisch plus Beispielsatz.
-FRAGE: Woran erkennst du die Rechen-Kiste? | ANTWORT: An Psi-Zahlen und Gefaelle-Rechnung im Text.
-FRAGE: Woran erkennst du die Transport-Kiste? | ANTWORT: An ATP und Richtung gegen das Gefaelle.
+ANTWORT: A folgt Weg A mit Mol-Bruecke und Einheit Gramm; B folgt Weg B mit Optimumkurve und Denaturierung.
 
-`Klausur-Satz: Wer markiert, halbiert die Loesungszeit.`
+`Klausur-Satz: Mengen fragen die Mol-Brücke, Regulation fragt die Kurve.`
+
+## Schritt 6 — check: Selbsttest zu CN-Tricks
+
+- FRAGE: Wie viele Karten in wie vielen Sekunden? | ANTWORT: Sechs Karten in sechzig Sekunden.
+
+- FRAGE: Welche Karte zieht die Psi-Zahl? | ANTWORT: Die Osmose-Karte.
+
+- FRAGE: Welche Karte zieht die Kreuzung? | ANTWORT: Die Genetik-Karte mit Punnett-Quadrat.
+
+
+`Klausur-Satz: Ohne Zuordnung bleibt jede Karte Deko, mit Zuordnung wird sie Waffe.`
 
 ## Fehlvorstellung
 
-1. Fehlvorstellung: Osmose und Diffusion seien dasselbe.
-   Korrektur-Satz: `Osmose ist nur Wasser durch eine Membran, Diffusion gilt fuer alle Teilchen auch ohne Membran.`
-2. Fehlvorstellung: Vokabeln pauken reiche ohne Anwendung.
-   Korrektur-Satz: `Erst markieren und zuordnen, dann pauken — sonst bleibt die Kiste leer.`
+1. Fehlvorstellung: Karten sammeln reiche.
+   Korrektur-Satz: `Nur Abruf unter Zeit zaehlt: Sechzig Sekunden entscheiden ueber Besitz oder Deko.`
 
-## Schritt 7 — szenario: Klausurtransfer: Methoden-Feuerwehr im Klausurbrand
+2. Fehlvorstellung: Eine Karte passe ueberall.
+   Korrektur-Satz: `Jede Frage zieht genau eine Karte: Psi zieht Osmose, Kreuzung zieht Genetik.`
 
-ROLLE: Du bist Tutorin im Vokabel-Notdienst.
-SITUATION: Eine SchuEls:erin verwechselt Osmose und Diffusion. Erklaere beide dreisprachig in ca. 120 Woertern mit je einem Beispiel und einer Merkregel.
-RUBRIC (30 XP): Korrekte Definitionen (10 XP) | Dreisprachigkeit (8 XP) | Beispiele (8 XP) | Merkregel (4 XP).
+## Schritt 7 — szenario: Klausurtransfer: Feuerwehr-Einsatz im Klausurbrand
 
-`Klausur-Satz: Dreisprachig erklaeren heisst: definieren, Beispiel geben, Merkregel liefern.`
+ROLLE: Du bist Handbuch-Prueferin.
+SITUATION: Sechs Fragen liegen bereit. Ordne in ca. 120 Woertern jede Frage einer Karte zu und rechne zwei Beispiele mit Einheit.
+RUBRIC (30 XP): Zuordnung (12 XP) | Rechnungen (12 XP) | Sprache (6 XP).
+
+
+`Klausur-Satz: Achtung Falle: Die schoenste Karte am falschen Stapel gibt null Punkte.`
 
 ## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY:
 
-Takeaway-Satz: `Begriffe tragen Verfahren: Das Signalwort entscheidet die Kiste.`
+Takeaway-Satz: `Handbuch im Kopf statt Zettel: sechzig Sekunden entscheiden.`
 
-`Klausur-Satz: Begriffe tragen Verfahren: Das Signalwort entscheidet die Kiste.`
+`Klausur-Satz: Methoden sind Abkuerzungen des Denkens: Wer sie wählt, denkt schneller als er schreibt.`
 
 
 REFLEXION:

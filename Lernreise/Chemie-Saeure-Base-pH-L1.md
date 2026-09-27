@@ -14,122 +14,142 @@ version: Lesson-v3
 # Lernreise: Saeure-Base-Gleichgewichte und pH-Wert — Episode C19: Säureregen über dem Werkstor
 
 <!-- Campaign: Imperium-Alchemie | Chemie | entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
-
-## Schritt 1 — entdecken: Der zischende Fleck an Rohr 5
+## Schritt 1 — entdecken: Der saure Regen ueber dem Fichtenhang
 
 ZIELE（本节三目标）：
-1. 中文：能用质子定义酸碱。
-2. 中文：会由浓度算pH。
-3. 中文：会配平中和反应。
+1. 中文：能用质子转移定义酸碱。
+2. 中文：能从浓度算pH。
+3. 中文：能用方程与突跃讲中和。
 
-【危机Hook】pH-Sonden am Tor melden pH 3; Mia Puffer kalibriert hastig nach. 5号管边一滩液体在嘶嘶冒泡：酸泄漏了，实习生推来中和车。班长喊出口诀：酸给质子、碱收质子。可哪种酸下口狠、哪种只是轻轻咬？pH又在说什么？总监要的是数字不是感觉。今天用水、摩尔与冷静扑灭嘶鸣。
+【危机Hook】Regen-pH 4,2: Fichten nadeln ab, der Foerster misst. 雨水pH4.2：云杉掉针，林务员举着试纸上山。是谁把天酸化的？工厂烟囱、汽车尾气，还是远方的火电？湖水还撑得住，土壤已喊救命——今晚必须揪出质子从哪来，否则整片林子变标本。
 
-`Klausur-Satz: Säure gibt, Base nimmt: Das ist das Paar.`
+`Klausur-Satz: Der Wald klagt an: Saeure gibt, Base nimmt, der Boden zahlt.`
 
-## Schritt 2 — entdecken: Die Säure-Base-Werkzeugkiste der Putzkolonne
+## Schritt 2 — entdecken: Die Saeure-Werkzeugkiste der Foerster
 
 PRETRAINING术语盒（5大装备，中文在上、德语在下）：
 
-- 中文：酸 — 德语：Säure：给出质子。 / Gibt Protonen ab.
-- 中文：碱 — 德语：Base：接受质子。 / Nimmt Protonen auf.
-- 中文：pH值 — 德语：pH-Wert：氢浓度取负对数。 / Minus Logarithmus der H-Konzentration.
-- 中文：中和 — 德语：Neutralisation：氢氧结合成水。 / H plus plus OH minus gibt Wasser.
-- 中文：共轭酸碱对 — 德语：Konjugiertes Paar：给与收成双成对。 / Geben und Nehmen im Doppelpack.
+- 中文：酸 — 德语：Broensted-Saeure：给质子者。 / Broensted-Saeure: Saeure nach Broensted ist der Protonendonator. Sie gibt H+ an einen Partner ab. Mechanismus: HCl gibt an Wasser und wird zu Cl-minus; die Staerke folgt aus Ks. Klausur-Tipp: Donator plus Partnerpaar als Definition.
 
-`Klausur-Satz: Stark heisst direkt, schwach heisst Gleichgewicht.`
+- 中文：碱 — 德语：Broensted-Base：收质子者。 / Broensted-Base: Base nach Broensted ist der Protonenakzeptor. Sie nimmt H+ auf und wird zur Saeure. Mechanismus: Ammoniak nimmt von Wasser und wird zu Ammonium; Staerke folgt aus Kb. Klausur-Tipp: Akzeptor als Spiegel zur Saeure.
 
-## Schritt 3 — entdecken: Geben und Nehmen: Die Protonenkette
+- 中文：pH标尺 — 德语：pH-Skala：对数压缩的酸度。 / pH-Skala: Die pH-Skala quetscht Oxonium von 10 hoch 0 bis 10 hoch minus 14 in 0 bis 14. Jede Stufe heisst Faktor zehn. Mechanismus: Man misst logarithmisch; neutral bei 7 gilt nur bei 25 Grad. Klausur-Tipp: Faktor zehn pro Stufe als Rechenanker.
+
+- 中文：水的离子积 — 德语：Ionenprodukt：Kw恒等于10的负14次方。 / Ionenprodukt: Das Ionenprodukt Kw gleich 10 hoch minus 14 koppelt H3O+ und OH-minus. Es gilt in jeder waessrigen Loesung. Mechanismus: Man rechnet die fehlende Sorte aus der gegebenen; pH plus pOH bleibt 14. Klausur-Tipp: pH-plus-pOH-gleich-14 als Rettungsformel.
+
+- 中文：中和 — 德语：Neutralisation：质子与氢氧根成水。 / Neutralisation: Neutralisation vereint H3O+ und OH-minus zu Wasser. Saeure und Base vernichten einander messbar. Mechanismus: Der pH-Sprung am Aequivalenzpunkt verrät das Ende; Salz bleibt als Zuschauer. Klausur-Tipp: H3O-plus-OH-gibt-Wasser als Kerngleichung.
+
+
+`Klausur-Satz: Saeure doniert Protonen, Base akzeptiert: Das Paar erklaert alles.`
+
+## Schritt 3 — entdecken: Vom Proton zum pH: Die Uebergabekette
 
 ENTDECKEN因果传导机制（中文拆解在上，德语链条在下）：
 
-中文：因果链：强酸完全裂解，pH直取浓度；弱酸另有平衡，Ks说了算。碱收质子生成水，pH爬升；稀释十倍pH升1。
+中文：传递链：酸给碱收成共轭对，强弱看Ks；离子积锁死两离子，取对数上标尺，中和则双双成水。
 
-德语：Die Kette: Stark heisst vollständig zerfallen — pH direkt aus c; schwach heisst Gleichgewicht — Ks bremst. Base fängt Protonen, Wasser entsteht, pH klettert. Verdünnen um Faktor 10 hebt pH um 1.
+德语：Die Uebergabekette startet beim **Proton**: Saeure gibt, Base nimmt, konjugierte Paare entstehen. Die Staerke folgt aus **Ks** und Kb. Dann zaehlt der **pH**: **Ionenprodukt** koppelt beide Sorten, der Log schreibt die Skala. **Neutralisation** loescht beide zu Wasser aus.
 
 ```diagram
-Stark: c -> pH direkt | Schwach: Ks bremst
-H+ + OH- -> H2O
-Verdünnen x10 -> pH +1
+Saeure -> H+ -> Base | Paar entsteht
+Kw koppelt H3O+ und OH-
+H3O+ + OH- -> 2 H2O
 ```
 
-`Klausur-Satz: Gleiche Mol löschen den Fleck.`
+Die Kopplungsgleichungen des Sandkastens:
+
+$$K_w = [H_3O^+]\,[OH^-] = 10^{-14} \quad ; \quad pH + pOH = 14$$
+
+中文：离子积恒定，pH加pOH恒为14。 / 德语：Eine Sorte rechnen genuegt: Die andere folgt aus Kw.
+
+`Klausur-Satz: Proton wandert, Wasser puffert, Log zaehlt: Die Kette endet auf der Skala.`
 
 ## Anekdote & Fun-Fact
 
-**Anekdote / Fun-Fact (DE)**: Eine Zitrone und eine Batterie streiten, wer saurer ist — der pH-Schiedsrichter pfeift logarithmisch.
+**Anekdote / Fun-Fact (DE)**: Kalk gegen sauren Boden seit Jahrhunderten — Baecksteine der Chemie retten Waelder.
 
-**中文解读**: 柠檬和电池争谁更酸——pH裁判按对数吹哨。
 
-**Bezug zum Konzept**: Protonen geben und nehmen schreibt den pH.
+**中文解读**: 石灰改酸土用了几百年——化学的砖头救森林。
 
-## Schritt 4 — ausprobieren: Neutralisations-Sandkasten: Lösche den Fleck
 
-[Werkzeug: titration-lab]
+**Bezug zum Konzept**: Vom Acker zum Hang: Neutralisation als Landschaftsmedizin.
 
-AUFGABE目标挑战：目标挑战：50,0 mL盐酸(浓度0,50 mol/L)泄漏，用等浓度NaOH精确中和，算出起点与终点pH，体积精确到0.1 mL，终点pH=7。 德语原题：50,0 mL HCl mit c = 0,50 mol/L: Wieviel NaOH gleicher c bis neutral?
+## Schritt 4 — ausprobieren: Sandkasten: Miss pH und neutralisiere
+
+[Werkzeug: formula]
+
+AUFGABE目标挑战：已知雨与湖pH：算氢离子浓度、比倍数并评价撒石灰方案。 德语原题：Gegeben: Regen pH 4,2, See pH 6,5, Kalkbedarf gesucht. Berechne Oxonium beider, vergleiche Faktoren und bewerte die Kalkung mit Neutralisationsgleichung.
 
 HILFE:
-1. Mol Säure rechnen.
-2. Gleiche Mol Base nötig.
-3. pH Start aus minus log c.
+1. Oxonium aus pH rueckrechnen: 10 hoch minus pH.
+2. Faktoren als Zehnerpotenz-Differenz bilden.
+3. Kalkung mit H3O-plus-OH-Gleichung begruenden.
 
-MUSTERLÖSUNG：中文：等浓度则等体积：50,0 mL；起点pH由负对数得，终点7。 / 德语：Gleiche Konzentration heisst gleiches Volumen: 50,0 mL; Start-pH aus minus log 0,50, Ziel pH 7.
+MUSTERLOESUNG：中文：雨氢为湖的约200倍，撒灰中和成水可回升pH。 / 德语：Regen 6,3 mal 10 hoch minus 5, See 3,2 mal 10 hoch minus 7: Faktor 200; Kalk neutralisiert zu Wasser und hebt pH messbar.
 
-`Klausur-Satz: Verdünnen mal zehn hebt pH um eins.`
+`Klausur-Satz: Mit pH aus 0,01 mol/L und Sprung bei 7 neutralisiert der Sandkasten statt zu raten.`
 
-## Schritt 5 — ausprobieren: Duell der Paare: Säure gegen Base
+## Schritt 5 — ausprobieren: Duell der Wege: pH-Rechnung gegen Indikator-Deutung
 
-VERGLEICH: Waehle erst die Stärke — (i) stark oder (ii) schwach — dann loesen.选程序：先判强弱。
+VERGLEICH: Waehle erst den Saeure-Weg, dann loesen: (i) pH-Rechenweg oder (ii) Indikator-Deuteweg — dann loesen.选程序：先看信号词再选路。
 
-Weg A：Weg A (Stark-Weiche): Vollständig, pH direkt aus c.
 
-Weg B：Weg B (Schwach-Weiche): Gleichgewicht, Ks-Näherung nötig.
+Weg A：Weg A (pH-Rechenweg): Konzentrationen quantitativ in pH uebersetzen und Faktoren berechnen. Dieser Weg liefert exakte Zahlen.
 
-AUFGABE A: HCl 0,1 mol/L, pH gesucht. Welcher Weg? 【选程序：先看信号词再选路】
+Weg B：Weg B (Indikator-Deuteweg): Farben und Umschlaege qualitativ deuten und Bereiche abschaetzen. Dieser Weg ist schnell, bleibt aber grob.
 
-AUFGABE B: Essigsäure 0,1 mol/L, pH gesucht. Welcher Weg? 【选程序：先看信号词再选路】
 
-HILFE：A stark — Weg A. B schwach — Weg B.
+AUFGABE A: Oxonium-Faktor zwischen Regen und See exakt gesucht. Welcher Weg? 【选程序：先看信号词再选路】
 
-ANTWORT：ANTWORT: A folgt Weg A mit pH aus minus log c; B folgt Weg B mit Ks-Näherung und Gleichgewicht.
+AUFGABE B: Ist der See noch im gruenen Bereich? Welcher Weg? 【选程序：先看信号词再选路】
 
-`Klausur-Satz: Stark oder schwach entscheidet den Weg.`
 
-## Schritt 6 — check: Selbsttest zu Saeure-Base-Gleichgewichte und pH-Wert
+HILFE：A nennt Faktor — Weg A mit Log. B nennt Bereich — Weg B mit Streifen.
 
-FRAGE：酸是什么？（Was ist eine Säure?） | ANTWORT：给质子。 / Gibt Protonen ab.
-FRAGE：pH3意味着？（Was heisst pH 3?） | ANTWORT：氢浓度10⁻³。 / c(H) = 10 hoch minus 3.
-FRAGE：中和生成什么？（Was entsteht bei Neutralisation?） | ANTWORT：水加盐。 / Wasser plus Salz.
+ANTWORT：中文：A走计算路算幂差；B走试纸路比色。 / 德语：A folgt Weg A mit Zehnerpotenz-Rechnung; B folgt Weg B mit Farbvergleich.
 
-`Klausur-Satz: Erst Mol, dann pH.`
+`Klausur-Satz: Rechnen misst exakt, Indikatoren zeigen schnell — die Klausur braucht beides.`
+
+## Schritt 6 — check: Selbsttest zu Saeure, Base und pH
+
+- FRAGE:：酸是什么？（Was ist eine Säure） | ANTWORT:：质子供体。 / Der Protonendonator.
+
+- FRAGE:：碱是什么？（Was ist eine Base） | ANTWORT:：质子受体。 / Der Protonenakzeptor.
+
+- FRAGE:：pH加pOH等于多少？（Was gibt pH plus pOH） | ANTWORT:：14（25度）。 / 14 bei 25 Grad.
+
+
+`Klausur-Satz: Ohne Ionenprodukt bleibt jede pOH-Aussage geraten, mit ihm wird sie gerechnet.`
 
 ## Fehlvorstellung
 
-1. 误解：误解“pH3是pH4的三倍酸”。
-   中文纠偏：见德语纠偏句。
-   Korrektur-Satz: `Logarithmisch: zehnmal so sauer je Stufe.`
-2. 误解：误解“中性不用算就是7”。
-   中文纠偏：见德语纠偏句。
-   Korrektur-Satz: `Erst Mol bilanzieren, dann pH deuten.`
+1. 误解：中性永为7。
+   中文纠偏：中性是两离子相等，热水中性低于7。
+   Korrektur-Satz: `Neutral heisst gleich viel H3O+ und OH-minus: Bei Hitze liegt das unter 7.`
 
-## Schritt 7 — szenario: Klausurtransfer: Einsatzprotokoll der Putzkolonne
+2. 误解：强即浓。
+   中文纠偏：强指离解全、浓指量多，稀强酸照赢浓弱酸。
+   Korrektur-Satz: `Stark heisst voll protolysiert, konzentriert heisst viel: Duenne Starke schlaegt dicke Schwache.`
 
-ROLLE：中文：你是化工基地夜班技术员。 / 德语：Du bist Putzkolonne an Rohr 5.
-SITUATION：酸泄漏，请算出中和体积与pH全程并论证（约130词）。 / 德语：Säure läuft aus. Berechne in ca. 130 Woertern Volumen und pH-Weg von Start bis neutral und begruende jeden Schritt.
-RUBRIC (30 XP)：Volumen (10 XP) | Start-pH (8 XP) | Ziel-pH (8 XP) | Sprache (4 XP).
+## Schritt 7 — szenario: Klausurtransfer: Gutachten zum Waldsterben
 
-`Klausur-Satz: pH zählt Zehnerpotenzen, keine Stufen.`
+ROLLE：中文：你是森林化学师。 / 德语：Du bist Waldchemikerin.
+SITUATION：山坡掉针：请用质子、pH与Kw查因并开石灰处方（约150词）。 / 德语：Der Hang nadelt. Klaere in ca. 150 Woertern mit Proton, pH und Kw die Ursache und empfehle die Kalkung mit Dosis.
+RUBRIC (30 XP)：Protonenlogik (8 XP) | pH-Rechnung (8 XP) | Kalkdosis (8 XP) | Oekobilanz (6 XP).
+
+
+`Klausur-Satz: Achtung Falle: Neutral heisst 7 nur bei 25 Grad; heisses Wasser ist anders neutral.`
 
 ## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY核心总结：
 
-中文：因果链：强酸完全裂解，pH直取浓度；弱酸另有平衡，Ks说了算。碱收质子生成水，pH爬升；稀释十倍pH升1。
-Takeaway-Satz: `Kühl löschen schlägt hastig kippen.`
+中文：给、收、数：供体受体标尺三步走。
+Takeaway-Satz: `Geben, nehmen, zaehlen: Donator, Akzeptor, Skala in dieser Reihenfolge.`
 
-`Klausur-Satz: Kühl löschen schlägt hastig kippen.`
+`Klausur-Satz: Saeure und Base sind ein Paar: Getrennt stark, vereint Wasser.`
 
 
 REFLEXION 2问：
 1. 过程自省：Welcher Schritt fiel schwerer — die Sandkasten-Challenge (Schritt 4) oder die Verfahrenswahl (Schritt 5)?
-2. 元认知计划：Beim nächsten Mal sichere ich zuerst die Werkzeugkiste, weil jeder Handgriff darauf aufbaut.
+2. 元认知计划：Beim naechsten Mal sichere ich zuerst die Werkzeugkiste, weil jeder Handgriff darauf aufbaut.

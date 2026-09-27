@@ -14,113 +14,136 @@ version: Lesson-v3
 # Lernreise: Enzymaktivitaet und Einflussfaktoren — Episode B14: Das Leck in Halle 7
 
 <!-- Campaign: Nano-Zellfabrik-Krise | Bio | Instapower: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
-
-## Schritt 1 — entdecken: Fieber im Katalys-Reaktor
+## Schritt 1 — entdecken: Fieber 40 Grad: Wenn Helfer schlappmachen
 
 ZIELE:
-1. Ich kann Temperatur- und pH-Optimum mit Denaturierung erklaeren.
-2. Ich kann Substrat- und Enzymkonzentration an Kurven deuten.
-3. Ich kann kompetitive und nichtkompetitive Hemmung unterscheiden.
+1. Ich kann den **Temperatur- und pH-Einfluss** auf Enzyme erklaeren.
+2. Ich kann **Substrat- und Enzymkonzentration** in Raten uebersetzen.
+3. Ich kann **Denaturierung** von reversibler Hemmung unterscheiden.
 
-Osmose-Fluegel meldet Wassereinbruch; Captain Mara Zell ruft die Nachtschicht zusammen. Im Katalys-Reaktor der Nano-Zellfabrik steigt das Fieberthermometer: 42 Grad, und die Foerderbaender laufen trotzdem weiter. Dr. Finn Katalys starrt auf die Kurve, die erst steil steigt und dann ploetzlich abstuerzt wie eine Achterbahn. Nebenan kippt ein Praktikant versehentlich Zitronensaft in ein Becken, und prompt bleibt eine zweite Maschine stehen. Captain Mara Zell ruft die Reaktorwarte zusammen: Warum beschleunigt Waerme erst und zerstoert dann alles? Warum legt Saeure manche Enzyme lahm, waehrend Schwermetalle wie Blei alles fuer immer vergiften? Heute Nacht entscheidet das Verstaendnis von Temperatur, pH, Konzentration und Hemmung darueber, ob die Fabrik weiteratmet oder in den Notstopp faehrt.
+Das Fieberthermometer zeigt 40,2 Grad: Mara Zell schwitzt, und ihre Waschmaschine verspricht kaltes Waschen bei 20 Grad — doch der Blutfleck bleibt. Zwei Kurven starren sie an: Waerme beschleunigt jede Reaktion, aber zu viel Waerme zerstoert den Helfer selbst. **Enzyme** sind die waehlerischsten Kuechenchefs der Zelle.
 
-`Klausur-Satz: Jedes Enzym hat ein Optimum; jenseits davon denaturiert die Raumstruktur irreversibel.`
+Auch der **pH-Wert** diktiert mit: Ein Schritt daneben, und die Aktivitaet bricht ein. Heute Nacht sucht die Fabrik den schmalen Gipfel zwischen schnell und kaputt — das **Optimum**. Wer es findet, senkt das Fieber richtig und waehlt das Waschprogramm mit Verstand.
 
-## Schritt 2 — entdecken: Die Stellschrauben-Kiste der Reaktorwarte
+`Klausur-Satz: Zwischen schnell und kaputt liegt ein schmaler Gipfel: Das Optimum entscheidet ueber Heilung und Wäsche.`
+
+## Schritt 2 — entdecken: Die Faktoren-Werkzeugkiste der Kueche
 
 AUSRUESTUNG (5 Begriffe der Werkzeugkiste):
 
-- Aktives Zentrum: Passgenaue Tasche für das Substrat.
-- Denaturierung: Zerstoerung der Raumstruktur durch Hitze oder Extrem-pH.
-- Substratsaettigung: Alle Zentren besetzt: mehr Substrat bringt nichts.
-- Kompetitive Hemmung: Hemmstoff blockiert das Zentrum, mehr Substrat hilft.
-- Nichtkompetitive Hemmung: Hemmstoff bindet anderswo und verformt das Zentrum.
+- **Aktives Zentrum**: Das aktive Zentrum ist die Bindungstasche des Enzyms mit passgenauer Form und Ladung. Nur das passende Substrat dockt nach dem Schluessel-Schloss-Prinzip an. Mechanismus: Substrat bindet, der Enzym-Substrat-Komplex stabilisiert den Uebergangszustand, das Produkt verlaesst die Tasche. Klausur-Tipp: Schluessel-Schloss plus Uebergangszustand als Doppelpunkt.
 
-`Klausur-Satz: Substrat hilft bis zur Saettigung, Enzym hebt das Plateau.`
+- **Temperaturoptimum**: Das Temperaturoptimum ist der Gipfel der Ratenkurve, meist um 37 Grad beim Menschen. Links treibt die Brownsche Bewegung die Rate hoch. Mechanismus: Rechts zerreissen Schwingungen die schwachen Bindungen der Tertiaerstruktur: Die Tasche verformt sich irreversibel. Klausur-Tipp: Links Bewegung, rechts Zerstoerung — Zangenbegruendung schreiben.
 
-## Schritt 3 — entdecken: Vom Fieber zur Vollbremsung: Die Einflusskette
+- **pH-Optimum**: Das pH-Optimum ist der Saeuregrad hoechster Aktivitaet, etwa pH 2 bei Pepsin und pH 8 bei Trypsin. Falsche Protonierung veraendert Ladungen im Zentrum. Mechanismus: Saure denaturiert die Struktur oder blockiert die katalytischen Reste; jedes Enzym traegt sein eigenes Fenster. Klausur-Tipp: Pepsin sauer, Trypsin basisch als Beispielpaar bringen.
+
+- **Substratkonzentration**: Steigende Substratkonzentration erhoeht die Rate erst linear, dann flacht sie zur Saettigung ab. Irgendwann ist jedes Zentrum besetzt. Mechanismus: Anfangs findet jedes Substrat ein freies Zentrum; spaeter warten Substrate in der Schlange, die Rate haengt nur noch an der Enzymmenge. Klausur-Tipp: Saettigung mit alle Zentren besetzt begruenden.
+
+- **Denaturierung**: Denaturierung ist der irreversible Verlust der Raumstruktur durch Hitze, Extreme oder Gifte. Die Aminosaeurekette bleibt, die Funktion stirbt. Mechanismus: Schwache Bindungen brechen, hydrophobe Kerne klappen nach aussen, das Zentrum passt nie wieder. Klausur-Tipp: Irreversibel plus Struktur bleibt Kette, Funktion tot als Abgrenzung zu Hemmung.
+
+
+`Klausur-Satz: Links treibt Bewegung die Rate, rechts zerstoert Hitze die Struktur.`
+
+## Schritt 3 — entdecken: Vom Zittern zum Zerfall: Die Ratenkette
 
 WIRKUNGSGEFUEGE (Ursache zu Wirkung):
 
-Die Kette: Mehr Waerme heisst mehr Kollisionen bis zum Optimum, danach schmilzt die Raumstruktur — Denaturierung, irreversibel. Falscher pH veraendert Ladungen im Zentrum. Mehr Substrat hilft nur bis zur Saettigung, mehr Enzym hebt das Plateau. Kompetitiv laesst sich mit Substrat ueberstimmen, nichtkompetitiv senkt das Maximum dauerhaft.
+Die Ratenkette startet mit der **Bewegung**: Waerme laesst Substrate oefter kollidieren, die Rate steigt. Parallel veraendert der **pH-Wert** die Ladungen im aktiven Zentrum und entscheidet ueber Passform.
+
+Jenseits des Optimums kippt die Kette: **Denaturierung** zerstoert die Tertiaerstruktur, die Rate stuerzt ab. Mehr Substrat hilft nur bis zur **Saettigung**, danach begrenzt allein die Enzymmenge.
 
 ```diagram
-Waerme hoch -> Kollision hoch -> Optimum -> Denaturierung
-pH falsch -> Ladung falsch -> Zentrum blockiert
-Kompetitiv + Substrat = ok | Nichtkompetitiv = vmax sinkt
+T hoch -> Kollision hoch -> Rate hoch
+T zu hoch -> Denaturierung -> Rate null
+Substrat hoch -> Saettigung -> Enzymmenge limitiert
 ```
 
-`Klausur-Satz: Kompetitiv blockiert das Zentrum, nichtkompetitiv verformt es.`
+Die Ratendefinition des Sandkastens:
+
+$$v = \frac{\Delta c}{\Delta t} \quad \text{in } \frac{\text{mol}}{\text{L} \cdot \text{s}}$$
+
+Jede Rate braucht Zeit im Nenner; Kurven werden als Steigung gelesen.
+
+`Klausur-Satz: Temperatur schiebt die Kurve, pH verbiegt das Schloss, Substrat fuellt die Zentren bis zur Saettigung.`
 
 ## Anekdote & Fun-Fact
 
-**Anekdote / Fun-Fact (DE)**: Fieber ab 42 Grad wird lebensgefaehrlich, weil Koerpereiweisse wie Enzyme ihre Form verlieren — die Fabrik fiebert wie ein Mensch.
+**Anekdote / Fun-Fact (DE)**: Fieber ueber 42 Grad wird lebensgefaehrlich, weil Koerpereiweisse gerinnen — das Spiegelei in der Pfanne zeigt dieselbe Chemie.
 
-**Bezug zum Konzept**: Das Optimum ist schmal, die Denaturierung ist endgültig.
 
-## Schritt 4 — ausprobieren: Rechen-Sandkasten: Finde das Temperaturoptimum
+**Bezug zum Konzept**: Pfanne und Fieber folgen derselben Kurve: erst schneller, dann kaputt.
+
+## Schritt 4 — ausprobieren: Sandkasten: Finde das Optimum
 
 [Werkzeug: formula]
 
-AUFGABE (Target Challenge): Target Challenge: Optimum bei 37 Grad und pH 7,4. Rechne mit der Faustformel: Rate steigt bis Optimum, faellt danach je 5 Grad um die Haelfte. Ziel: Sage die Restaktivitaet bei 47 Grad und pH 4,0 voraus und begruende Denaturierung. AUFGABE konkret: Bei 37 Grad 100 %, bei 47 Grad nur 25 %: Erklaere mit Denaturierung.
+AUFGABE (Target Challenge): Gegeben: Raten bei 20/30/37/45/60 Grad: 0,2/0,5/0,9/0,4/0,0 mol/(L s); dazu pH-Reihe 5/7/9. Bestimme beide Optima, berechne die Rate bei 30 Grad aus c-Verlauf und begruende den Absturz bei 60 Grad molekular.
 
 HILFE:
-1. Optimum markieren.
-2. Jenseits schmilzt Struktur.
-3. pH-Extreme veraendern Ladungen.
+1. Optima als Gipfel ablesen: Temperatur und pH getrennt.
+2. Rate aus Delta-c durch Delta-t mit Einheit berechnen.
+3. Absturz mit Denaturierung der Tertiaerstruktur begruenden.
 
-MUSTERLÖSUNG: Jenseits des Optimums zerstoert Hitze die Raumstruktur irreversibel, daher der Absturz; Extrem-pH verformt zusaetzlich das Zentrum.
+MUSTERLOESUNG: Optimum 37 Grad und pH 7; v bei 30 Grad aus Steigung 0,5 mol/(L s); bei 60 Grad bricht die Rate auf null ein, weil die Tertiaerstruktur irreversibel zerfaellt.
 
-`Klausur-Satz: 25 % bei 47 Grad heissen: Hitze hat die Struktur geschmolzen.`
+`Klausur-Satz: Mit Optimum bei 37 Grad und Einbruch jenseits 45 Grad rechnet die Kurve statt zu raten.`
 
-## Schritt 5 — ausprobieren: Duell der Bremsen: Hitze gegen Gift
+## Schritt 5 — ausprobieren: Duell der Wege: Kurvenmessung gegen Strukturdeutung
 
-VERGLEICH: Waehle erst die Bremse — (i) reversibel-kompetitiv oder (ii) nichtkompetitiv/denaturierend — dann loesen.
+VERGLEICH: Waehle erst den Beweisweg, dann loesen: (i) Kurvenmess-Rechenweg oder (ii) Strukturdeute-Weg — dann loesen.
 
-Weg A (Kompetitiv-Weiche): Zentrum blockiert, Substrat hilft noch.
 
-Weg B (Struktur-Weiche): Zentrum verformt oder zerstoert, Substrat hilft nicht.
+Weg A (Kurvenmess-Rechenweg): Raten messen, Optima ablesen, Steigungen quantitativ berechnen. Dieser Weg liefert Zahlen mit Einheit und ist pruefungssicher.
 
-AUFGABE A: Mehr Substrat stellt die Rate wieder her. Welche Bremse?
+Weg B (Strukturdeute-Weg): Taschenform und Ladungen am Modell deuten und Denaturierung qualitativ erklaeren. Dieser Weg liefert Verstaendnis, bleibt aber ohne Zahl duenn.
 
-AUFGABE B: Mehr Substrat hilft nichts, vmax bleibt unten. Welche Bremse?
 
-HILFE: A reagiert auf Substrat — Weg A. B bleibt unten — Weg B.
+AUFGABE A: v aus Zeitverlauf mit Einheit gesucht. Welcher Weg?
 
-ANTWORT: A folgt Weg A als kompetitive Hemmung; B folgt Weg B als nichtkompetitive Hemmung oder Denaturierung.
+AUFGABE B: Warum hilft mehr Substrat jenseits der Saettigung nichts? Welcher Weg?
 
-`Klausur-Satz: Substrat rettet nur die kompetitive Bremse.`
 
-## Schritt 6 — check: Selbsttest zu Enzymaktivitaet und Einflussfaktoren
+HILFE: A nennt Verlauf und Einheit — Weg A mit Rechnung. B nennt Warum mit Struktur — Weg B mit Deutung.
 
-FRAGE: Was passiert jenseits des Optimums? | ANTWORT: Denaturierung: Raumstruktur zerstoert, irreversibel.
-FRAGE: Wie hilft Substrat bei kompetitiv? | ANTWORT: Es ueberstimmt den Hemmstoff am Zentrum.
-FRAGE: Was aendert mehr Enzym? | ANTWORT: Es hebt das Plateau, nicht die Saettigung pro Zentrum.
+ANTWORT: A folgt Weg A mit Steigungsrechnung; B folgt Weg B mit alle Zentren besetzt als Strukturargument.
 
-`Klausur-Satz: Jenseits des Optimums hilft kein Substrat mehr.`
+`Klausur-Satz: Raten messen zaehlt, Strukturen deuten erklaert — die Klausur braucht beides.`
+
+## Schritt 6 — check: Selbsttest zu Enzymaktivitaet und Faktoren
+
+- FRAGE: Wo liegt das Temperaturoptimum? | ANTWORT: Etwa 37 Grad beim Menschen.
+
+- FRAGE: Ist Denaturierung reversibel? | ANTWORT: Nein, der Bau faellt irreversibel zusammen.
+
+- FRAGE: Hilft mehr Substrat immer? | ANTWORT: Nur bis zur Saettigung, danach zaehlt Enzymmenge.
+
+
+`Klausur-Satz: Ohne Optimum bleibt jede Enzymaussage geraten, mit ihm wird sie gemessen.`
 
 ## Fehlvorstellung
 
-1. Fehlvorstellung: Hitze helfe immer.
-   Korrektur-Satz: `Nur bis zum Optimum; danach denaturiert das Enzym irreversibel.`
-2. Fehlvorstellung: Kompetitiv und nichtkompetitiv seien gleich.
-   Korrektur-Satz: `Nur kompetitiv laesst sich mit Substrat ueberstimmen.`
+1. Fehlvorstellung: Waerme helfe immer.
+   Korrektur-Satz: `Waerme hilft nur bis zum Optimum: Jenseits zerstoert sie das Enzym irreversibel.`
 
-## Schritt 7 — szenario: Klausurtransfer: Gutachten aus dem Reaktorgebaeude
+2. Fehlvorstellung: pH sei egal.
+   Korrektur-Satz: `Der pH veraendert Ladungen im Zentrum: Falscher pH, falsche Passform, keine Katalyse.`
 
-ROLLE: Du bist Gutachterin im Reaktorgebaeude.
-SITUATION: Nach Hitzespitze und Saeureunfall stehen zwei Reaktoren. Beurteile in ca. 140 Woertern mit Optimum, Denaturierung und Hemmtyp, welcher Reaktor rettbar ist.
-RUBRIC (30 XP): Optimumslogik (10 XP) | Denaturierung (8 XP) | Hemmtyp (8 XP) | Urteil (4 XP).
+## Schritt 7 — szenario: Klausurtransfer: Gutachten zum Waschmittel-Test
 
-`Klausur-Satz: Rettbar ist, was reversibel gehemmt ist; denaturiert ist verloren.`
+ROLLE: Du bist Laborprueferin fuer Waschenzyme.
+SITUATION: Ein Hersteller wirbt mit Kaltwasch-Enzym bei 20 Grad. Bewerte in ca. 150 Woertern mit Optimum, Rate und Denaturierung, ob das Versprechen haelt, und entwirf den Gegenversuch.
+RUBRIC (30 XP): Optimumslogik (8 XP) | Ratendeutung (8 XP) | Gegenversuch (8 XP) | Abwaegung (6 XP).
+
+
+`Klausur-Satz: Achtung Falle: Denaturierung ist irreversibel, Hemmung oft reversibel — wer tauscht, verliert.`
 
 ## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY:
 
-Takeaway-Satz: `Optimum halten heisst Struktur halten.`
+Takeaway-Satz: `Optimum suchen, Zange begruenden: links Bewegung, rechts Zerfall.`
 
-`Klausur-Satz: Optimum halten heisst Struktur halten.`
+`Klausur-Satz: Enzyme sind Massanzuege der Natur: Nur im richtigen Klima sitzt die Katalyse.`
 
 
 REFLEXION:

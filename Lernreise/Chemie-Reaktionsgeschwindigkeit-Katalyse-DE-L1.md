@@ -14,112 +14,136 @@ version: Lesson-v3
 # Lernreise: Reaktionsgeschwindigkeit und Katalyse — Episode C13: Stille vor dem Äquivalenzpunkt
 
 <!-- Campaign: Imperium-Alchemie | Chemie | entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
-
-## Schritt 1 — entdecken: Der schläfrige Rührkessel
+## Schritt 1 — entdecken: Der Kat, der alles schluckt: Abgas gegen Stau
 
 ZIELE:
-1. Ich kann Stossbedingungen für Tempo nennen.
-2. Ich kann Kurven mit und ohne Katalysator deuten.
-3. Ich kann Konzentration, Fläche und Temperatur begruenden.
+1. Ich kann die **Reaktionsgeschwindigkeit** aus Konzentrationsverlaeufen bestimmen.
+2. Ich kann **Konzentration, Temperatur und Zerteilung** als Faktoren deuten.
+3. Ich kann die **Katalysatorwirkung** am Energiediagramm erklaeren.
 
-Die Kurve steigt kaum, dann springt sie; Jonas hält den Kolben wie rohes Ei. Im Rührkesselhaus gähnt die Reaktion: Der Kessel rührt seit Stunden, doch kaum Produkt tropft. Katalysator-Karl wird aus dem Bett geklingelt, Jonas Säure dreht die Heizung hoch, und Mia Puffer zerkleinert die Brocken immer feiner. Direktorin Vera Haber zeichnet zwei Kurven an die Wand: steil gegen flach. Heute entscheidet sich, wer das Tempo macht: Stösse, Fläche, Konzentration — und der stille Helfer, der sich nicht verbraucht.
+Abgas-Alarm im Tunnel: CO steigt, der Katalysator bleibt kalt. In den ersten Minuten nach dem Kaltstart schluckt der Kat nichts — giftige Abgase stroemen roh in die Luft. Gas geben oder warten, bis die Keramik heiss ist?
 
-`Klausur-Satz: Wirksam heisst heftig und richtig herum.`
+Die Antwort steckt in **Kollisionstheorie** und **Aktivierungsenergie**: Haeufiger und heftiger stossen heisst schneller reagieren, ein **Katalysator** oeffnet den Abkuerzungsweg. Wer heute Raten misst, faehrt morgen sauberer.
 
-## Schritt 2 — entdecken: Die Tempo-Kiste der Kesselwache
+`Klausur-Satz: Kaltstart giftet, Heisslauf reinigt: Die Rate entscheidet, was der Auspuff ausspuckt.`
+
+## Schritt 2 — entdecken: Die Tempo-Werkzeugkiste der Leitstelle
 
 AUSRUESTUNG (5 Begriffe der Werkzeugkiste):
 
-- Wirksamer Stoss: Richtig heftig und richtig herum.
-- Aktivierungsenergie: Hürde, die Stösse nehmen müssen.
-- Katalysator: Senkt die Hürde, verbraucht sich nicht.
-- Oberfläche: Kleiner gekörnt heisst schneller.
-- Reaktionsgeschwindigkeit: Konzentrationsabfall je Zeit.
+- **Reaktionsgeschwindigkeit**: Reaktionsgeschwindigkeit ist die Konzentrationsaenderung pro Zeit. Sie faellt mit dem Verbrauch der Edukte stetig. Mechanismus: Man liest sie als Steigung der c-t-Kurve; Anfangssteigung heisst Anfangsgeschwindigkeit. Klausur-Tipp: Steigung plus Einheit mol/(L s) als Doppelpunkt.
 
-`Klausur-Satz: Katalysator senkt die Hürde, nicht die Lage.`
+- **Kollisionstheorie**: Die Kollisionstheorie fordert haeufige, energiereiche und richtig orientierte Stoesse. Nur ein Bruchteil wirkt. Mechanismus: Konzentration hebt die Haeufigkeit, Temperatur die Heftigkeit, Zerteilung die Trefferflaeche. Klausur-Tipp: Haeufig plus heftig plus richtig als Tripel.
 
-## Schritt 3 — entdecken: Vom Stoss zur Kurve: Die Tempokette
+- **Aktivierungsenergie**: Aktivierungsenergie ist der Huegel zwischen Edukt und Produkt. Nur Teilchen mit genug Schwung kommen rueber. Mechanismus: Temperatur schiebt mehr Teilchen ueber den Berg; der Huegel selbst bleibt ohne Katalysator gleich. Klausur-Tipp: Huegel zeichnen und Schwelle markieren.
+
+- **Katalysator**: Katalysatoren oeffnen Alternativwege mit niedrigerer Aktivierungsenergie. Sie bleiben unverbraucht und aendern nie die Lage. Mechanismus: Adsorption, Reaktion, Desorption: Der Weg wird kuerzer, das Ziel bleibt gleich. Klausur-Tipp: Unverbraucht plus Lage-gleich als Abgrenzung zum Reaktanden.
+
+- **Zeitgesetz**: Das Zeitgesetz v gleich k mal Konzentrationen hoch Ordnungen beschreibt die Abhaengigkeit. Exponenten folgen aus Messung, nie aus Gleichung. Mechanismus: Man bestimmt Ordnungen aus Anfangsraten bei Variation je einer Groesse. Klausur-Tipp: Ordnung aus Messung als Satz gegen Gleichungsraten.
+
+
+`Klausur-Satz: Hauefiger plus heftiger plus richtiger: Nur solche Stoesse reagieren.`
+
+## Schritt 3 — entdecken: Vom Stoss zum Umsatz: Die Kollisionskette
 
 WIRKUNGSGEFUEGE (Ursache zu Wirkung):
 
-Die Kette: Mehr Teilchen und mehr Hitze heissen mehr heftige Stösse; mehr Fläche heisst mehr Treffer. Der Katalysator öffnet einen niedrigeren Pfad, die Hürde sinkt, beide Richtungen werden schneller — die Lage bleibt.
+Die Kollisionskette startet mit dem **Stoss**: Konzentration und Zerteilung erhoehen Treffer, Temperatur erhoeht Schwung. Nur orientierte Treffer mit Mindestenergie zaehlen.
+
+Dann wartet der **Berg**: Die **Aktivierungsenergie** filtert die Schwachen heraus. **Katalysatoren** senken den Pass, lassen Lage und K aber unangetastet.
 
 ```diagram
-c hoch + T hoch + Flaeche hoch -> Stoesse hoch -> Tempo hoch
-Katalysator -> Huerde runter -> schneller, Lage gleich
+c hoch -> Stoss hoch -> Rate hoch
+T hoch -> Schwung hoch -> mehr ueber Berg
+Kat -> Berg niedrig -> schneller, Lage gleich
 ```
 
-`Klausur-Satz: Faktor 2 hoch Delta durch 10 trägt die RGT-Regel.`
+Das Zeitgesetz des Sandkastens:
+
+$$v = k \cdot [A]^m \cdot [B]^n$$
+
+Ordnungen m und n folgen aus Messreihen, nie aus der Reaktionsgleichung.
+
+`Klausur-Satz: Stoss braucht Flaeche, Waerme hebt Schwung, Katalysator senkt den Berg.`
 
 ## Anekdote & Fun-Fact
 
-**Anekdote / Fun-Fact (DE)**: Karl der Katalysator ist der faulste Held des Werks: Er arbeitet am härtesten und geht doch leer aus — unverbraucht.
+**Anekdote / Fun-Fact (DE)**: Waschbaeren? Nein: Platin im Kat waescht Abgase seit 1975 — Gramm-Edelmetall gegen Tonnen Gift.
 
-**Bezug zum Konzept**: Tempo und Lage sind zwei Paar Schuhe.
 
-## Schritt 4 — ausprobieren: Tempo-Sandkasten: Wecke den Kessel
+**Bezug zum Konzept**: Wenig Edelmetall, viel saubere Luft: Katalyse als Alltagsretter.
+
+## Schritt 4 — ausprobieren: Sandkasten: Miss Raten und lege den Katalysator
 
 [Werkzeug: formula]
 
-AUFGABE (Target Challenge): Target Challenge: Rate verdoppelt sich je 10 Grad (RGT-Regel). Von 20 auf 420 °C: Rechne den Faktor und plane, wieviel Katalysator die Hürde um 20 kJ/mol senken muss. Ziel: Faktor exakt plus Kurvendeutung. AUFGABE konkret: 20 auf 420 °C nach RGT: Welcher Faktor?
+AUFGABE (Target Challenge): Gegeben: c-t-Werte einer Entfaerbung bei 20 und 40 Grad sowie mit/ohne Braunstein. Bestimme Anfangsraten, deute den Temperatur- und Katalysatoreffekt und stelle das Zeitgesetz auf.
 
 HILFE:
-1. Je 10 Grad mal 2.
-2. Differenz durch 10 als Exponent.
-3. Katalysator nur Hürde runter.
+1. Anfangssteigungen als Tangenten legen.
+2. Faktoren getrennt variieren und vergleichen.
+3. Ordnungen aus Messreihen ablesen.
 
-MUSTERLÖSUNG: Faktor 2 hoch (Delta durch 10); der Katalysator senkt die Hürde und versteilert die Kurve ohne die Lage zu ändern.
+MUSTERLOESUNG: Rate bei 40 Grad etwa vierfach; Braunstein halbiert die Zeit ohne Verbrauch; Zeitgesetz erster Ordnung in Peroxid aus Verdopplungsreihe.
 
-`Klausur-Satz: Mehr Stösse oder niedrigere Hürde: Das ist die Weiche.`
+`Klausur-Satz: Mit Steigung aus der c-t-Kurve und halbierter Huegelhoehe misst der Sandkasten statt zu raten.`
 
-## Schritt 5 — ausprobieren: Duell der Kurven: Steil gegen flach
+## Schritt 5 — ausprobieren: Duell der Wege: Zeitgesetz-Rechnung gegen Diagramm-Deutung
 
-VERGLEICH: Waehle erst die Schraube — (i) mehr Stösse oder (ii) niedrigere Hürde — dann loesen.
+VERGLEICH: Waehle erst den Tempo-Weg, dann loesen: (i) Zeitgesetz-Rechenweg oder (ii) Diagramm-Deuteweg — dann loesen.
 
-Weg A (Stoss-Weiche): c, T, Fläche erhöhen.
 
-Weg B (Hürden-Weiche): Katalysator senkt die Hürde.
+Weg A (Zeitgesetz-Rechenweg): Raten und Ordnungen quantitativ aus Messreihen bestimmen. Dieser Weg liefert k und Exponenten.
 
-AUFGABE A: Feineres Pulver reagiert schneller. Welche Schraube?
+Weg B (Diagramm-Deuteweg): Energiediagramme qualitativ lesen und Katalysatorwege einzeichnen. Dieser Weg ist anschaulich, bleibt aber ohne Zahl weich.
 
-AUFGABE B: Gleiche Füllung, plötzlich steiler mit Karl. Welche Schraube?
 
-HILFE: A nennt Fläche — Weg A. B nennt Karl — Weg B.
+AUFGABE A: Ordnung und k aus Reihen exakt gesucht. Welcher Weg?
 
-ANTWORT: A folgt Weg A als Stoss-Faktor; B folgt Weg B als Katalysator mit gesenkter Hürde.
+AUFGABE B: Warum wirkt der Kat auch kalt nicht? Welcher Weg?
 
-`Klausur-Satz: Fläche schafft Treffer.`
+
+HILFE: A nennt Reihen — Weg A mit Rechnung. B nennt Warum mit Berg — Weg B mit Diagramm.
+
+ANTWORT: A folgt Weg A mit Anfangsraten-Methode; B folgt Weg B mit Berg-noch-zu-hoch-Argument.
+
+`Klausur-Satz: Zeitgesetze rechnen exakt, Diagramme deuten anschaulich — die Klausur braucht beides.`
 
 ## Schritt 6 — check: Selbsttest zu Reaktionsgeschwindigkeit und Katalyse
 
-FRAGE: Was braucht ein wirksamer Stoss? | ANTWORT: Energie plus richtige Richtung.
-FRAGE: Was macht ein Katalysator? | ANTWORT: Hürde runter, Tempo hoch, Lage gleich.
-FRAGE: Was bringt feineres Pulver? | ANTWORT: Mehr Fläche, mehr Treffer.
+- FRAGE: Wie liest du die Rate ab? | ANTWORT: Als Steigung der c-t-Kurve.
 
-`Klausur-Satz: Steil heisst schnell, flach heisst müde.`
+- FRAGE: Was ändert der Katalysator? | ANTWORT: Nur die Aktivierungsenergie, nie die Lage.
+
+- FRAGE: Woher kommen die Ordnungen? | ANTWORT: Aus Messreihen, nie aus der Gleichung.
+
+
+`Klausur-Satz: Ohne Steigung bleibt jede Tempoaussage geraten, mit ihr wird sie gemessen.`
 
 ## Fehlvorstellung
 
-1. Fehlvorstellung: Katalysator werde verbraucht.
-   Korrektur-Satz: `Er geht unverbraucht aus der Reaktion hervor.`
-2. Fehlvorstellung: Heizen ändere die Lage wie Katalysator.
-   Korrektur-Satz: `Heizen ändert bei Gleichgewicht K, Katalysator nie.`
+1. Fehlvorstellung: Katalysator verschiebe Gleichgewichte.
+   Korrektur-Satz: `Katalysator beschleunigt beide Richtungen gleich: Lage und K bleiben.`
 
-## Schritt 7 — szenario: Klausurtransfer: Gutachten aus dem Rührkesselhaus
+2. Fehlvorstellung: Heisser reagiere immer vollstaendiger.
+   Korrektur-Satz: `Heisser reagiert schneller, nicht vollstaendiger: Vollstaendigkeit regelt K, nicht T-Tempo.`
 
-ROLLE: Du bist Gutachterin im Kesselhaus.
-SITUATION: Zwei Kessel: einer heiss, einer mit Karl. Beurteile in ca. 130 Woertern mit Hürde und Stössen, welcher schneller ist und warum die Lage gleich bleibt.
-RUBRIC (30 XP): Stosslogik (10 XP) | Hürdenlogik (10 XP) | Lageabgrenzung (6 XP) | Sprache (4 XP).
+## Schritt 7 — szenario: Klausurtransfer: Gutachten zum Katalysator-Tausch
 
-`Klausur-Satz: Karl geht unverbraucht nach Hause.`
+ROLLE: Du bist Werkstatt-Chemikerin.
+SITUATION: Der Chef will den Kat gegen billigeres Material tauschen. Bewerte in ca. 150 Woertern mit Rate, Berg und Lage, ob der Tausch traegt.
+RUBRIC (30 XP): Ratendeutung (8 XP) | Berglogik (8 XP) | Lageabgrenzung (8 XP) | Empfehlung (6 XP).
+
+
+`Klausur-Satz: Achtung Falle: Der Katalysator aendert Tempo, nie Lage und nie K.`
 
 ## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY:
 
-Takeaway-Satz: `Tempo fragen heisst Stösse zählen.`
+Takeaway-Satz: `Stoss, Berg, Abkuerzung: Wer die drei benennt, erklaert jedes Tempo.`
 
-`Klausur-Satz: Tempo fragen heisst Stösse zählen.`
+`Klausur-Satz: Tempo ist Statistik: Milliarden Stoesse, wenige Treffer — und ein Berg dazwischen.`
 
 
 REFLEXION:

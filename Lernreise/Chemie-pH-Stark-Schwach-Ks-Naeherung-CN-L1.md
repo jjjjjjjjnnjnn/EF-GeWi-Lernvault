@@ -14,122 +14,142 @@ version: Lesson-v3
 # Lernreise: pH starker und schwacher Saeuren mit Ks-Naeherung — Episode C27: Druckstoß in Halle Haber
 
 <!-- Campaign: Imperium-Alchemie | Chemie | entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
-
-## Schritt 1 — entdecken: Säureregen über dem Werkstor
+## Schritt 1 — entdecken: Der Pool kippt: Eine Kelle zu viel Saeure
 
 ZIELE（本节三目标）：
-1. 中文：能用质子定义酸碱。
-2. 中文：会由浓度算pH。
-3. 中文：会配平中和反应。
+1. 中文：能用Ks区分强弱酸。
+2. 中文：能直接算强酸pH。
+3. 中文：能用近似算弱酸pH。
 
-【危机Hook】Direktorin Dr. Vera Haber meldet Druckabfall am Syntheseturm; KI LECHA-7 blinkt gelb. 5号管边一滩液体在嘶嘶冒泡：酸泄漏了，实习生推来中和车。班长喊出口诀：酸给质子、碱收质子。可哪种酸下口狠、哪种只是轻轻咬？pH又在说什么？总监要的是数字不是感觉。今天用水、摩尔与冷静扑灭嘶鸣。
+【危机Hook】Pool-pH 3,2: Kinder reiben sich die Augen, Bademeister greift zur Kelle. 泳池pH3.2：孩子们揉眼睛，救生员抄起药勺。多倒一勺酸水质达标，倒过一勺满池流泪——强酸一滴入魂、弱酸温吞半离，今晚必须算准那勺的分寸，否则清澈见底的水照样伤人。
 
-`Klausur-Satz: Säure gibt, Base nimmt: Das ist das Paar.`
+`Klausur-Satz: Der Pool lehrt: Stark trifft voll, schwach trifft zum Teil — Ks entscheidet die Dosis.`
 
-## Schritt 2 — entdecken: Die Ks-Näherungs-Kiste der Rechenfüchse
+## Schritt 2 — entdecken: Die Saeure-Werkzeugkiste der Bademeister
 
 PRETRAINING术语盒（5大装备，中文在上、德语在下）：
 
-- 中文：酸 — 德语：Säure：给出质子。 / Gibt Protonen ab.
-- 中文：碱 — 德语：Base：接受质子。 / Nimmt Protonen auf.
-- 中文：pH值 — 德语：pH-Wert：氢浓度取负对数。 / Minus Logarithmus der H-Konzentration.
-- 中文：中和 — 德语：Neutralisation：氢氧结合成水。 / H plus plus OH minus gibt Wasser.
-- 中文：共轭酸碱对 — 德语：Konjugiertes Paar：给与收成双成对。 / Geben und Nehmen im Doppelpack.
+- 中文：酸度常数 — 德语：Saeurekonstante：强弱一刀切的标尺。 / Saeurekonstante: Die Saeurekonstante Ks misst die Protolysestaerke als Gleichgewichtswert. Grosses Ks heisst starke, kleines heisst schwache Saeure. Mechanismus: Man schreibt das MWG der Protolyse; pKs als negativer Log macht kleine Zahlen handlich. Klausur-Tipp: pKs klein heisst stark als Merksatzpaar.
 
-`Klausur-Satz: Stark heisst direkt, schwach heisst Gleichgewicht.`
+- 中文：强酸 — 德语：Starke Saeure：彻底离解直接算。 / Starke Saeure: Starke Saeuren protolysieren praktisch vollstaendig. Die Oxoniumkonzentration gleicht der Anfangskonzentration. Mechanismus: Man setzt c0 direkt in die pH-Formel ein; keine Naeherung, keine Wurzel. Klausur-Tipp: Stark heisst pH gleich minus Log c0 als Sofortsatz.
 
-## Schritt 3 — entdecken: Stark direkt, schwach mit Bremse: Die pH-Kette
+- 中文：弱酸 — 德语：Schwache Saeure：部分离解需近似。 / Schwache Saeure: Schwache Saeuren protolysieren nur zu Bruchteilen. Das MWG mit Ks bestimmt den Rest. Mechanismus: Man naehert mit Wurzel aus Ks mal c0 und prueft die 5-Prozent-Regel. Klausur-Tipp: Wurzel plus Check als Pflichtduo.
+
+- 中文：近似条件 — 德语：Naeherungsbedingung：离解度低于5%才准用。 / Naeherungsbedingung: Die Naeherung gilt nur bei kleinem Umsatz relativ zu c0. Sie streicht x gegen c0 aus dem Nenner. Mechanismus: Man rechnet genähert und teilt x durch c0: Unter 5 Prozent gilt, darueber nicht. Klausur-Tipp: Check hinschreiben, sonst kein Punkt fuer die Wurzel.
+
+- 中文：缓冲痕迹 — 德语：Pufferspur：弱酸共轭碱成对出现。 / Pufferspur: Schwache Saeuren bilden mit ihrer korrespondierenden Base Puffersysteme. Das Paar faengt Saeure- und Basenstoesse ab. Mechanismus: Henderson-Hasselbalch verbindet pH mit dem Verhaeltnis der Partner. Klausur-Tipp: Paar benennen als Bruecke zum Pufferkapitel.
+
+
+`Klausur-Satz: Stark heisst pH gleich minus Log c0, schwach heisst Wurzel aus Ks mal c0.`
+
+## Schritt 3 — entdecken: Von der Staerke zum pH: Die Dissoziationskette
 
 ENTDECKEN因果传导机制（中文拆解在上，德语链条在下）：
 
-中文：因果链：强酸完全裂解，pH直取浓度；弱酸另有平衡，Ks说了算。碱收质子生成水，pH爬升；稀释十倍pH升1。
+中文：离解链：Ks大则全离解直接代，Ks小则走平衡式开方近似再验5%门槛，最后取负对数进pH标尺。
 
-德语：Die Kette: Stark heisst vollständig zerfallen — pH direkt aus c; schwach heisst Gleichgewicht — Ks bremst. Base fängt Protonen, Wasser entsteht, pH klettert. Verdünnen um Faktor 10 hebt pH um 1.
+德语：Die Dissoziationskette startet bei **Ks**: gross heisst vollstaendig, klein heisst bruchteilig. Starke Saeure setzt **c0** direkt in Oxonium um. Schwache Saeure folgt dem **MWG**: Wurzel aus Ks mal c0 naehert, der **5-Prozent-Check** bestaetigt. Der **Log** quetscht das Ergebnis in die pH-Skala.
 
 ```diagram
-Stark: c -> pH direkt | Schwach: Ks bremst
-H+ + OH- -> H2O
-Verdünnen x10 -> pH +1
+Ks gross -> vollstaendig -> pH = -log c0
+Ks klein -> MWG -> Wurzel(Ks*c0) -> Check
+Log quetscht Zehnerpotenzen in pH
 ```
 
-`Klausur-Satz: Gleiche Mol löschen den Fleck.`
+Die beiden pH-Wege des Sandkastens:
+
+$$pH = -\log c_0 \quad \text{(stark)} \quad ; \quad pH = \tfrac{1}{2}(pK_S - \log c_0) \quad \text{(schwach)}$$
+
+中文：强酸直接负对数，弱酸取半和式再验门槛。 / 德语：Jede Wurzel ohne Check ist in der Klausur wertlos.
+
+`Klausur-Satz: Dissoziation bestimmt Oxonium, Oxonium bestimmt pH: Die Kette endet im Log.`
 
 ## Anekdote & Fun-Fact
 
-**Anekdote / Fun-Fact (DE)**: Eine Zitrone und eine Batterie streiten, wer saurer ist — der pH-Schiedsrichter pfeift logarithmisch.
+**Anekdote / Fun-Fact (DE)**: Magen mit pH 2 verdaut Steak und schont sich selbst mit Schleim — Staerke plus Schutz als Paket.
 
-**中文解读**: 柠檬和电池争谁更酸——pH裁判按对数吹哨。
 
-**Bezug zum Konzept**: Protonen geben und nehmen schreibt den pH.
+**中文解读**: 胃酸pH2化牛排却靠黏液自保——强悍加防护打包出售。
 
-## Schritt 4 — ausprobieren: Näherungs-Sandkasten: Rechne schwach wie stark
 
-[Werkzeug: titration-lab]
+**Bezug zum Konzept**: Scharf plus Hülle: Der Magen dosiert Staerke mit Schleim.
 
-AUFGABE目标挑战：目标挑战：强酸HCl浓度0,20；弱酸HA浓度0,20、Ks=1,0 mal 10 hoch minus 4，分别算pH并展示“刹车效应”，两条路精确、口诀到位。 德语原题：25,0 mL HCl mit c = 0,20 mol/L: Wieviel NaOH gleicher c bis neutral?
+## Schritt 4 — ausprobieren: Sandkasten: Rechne stark exakt und schwach genaehert
+
+[Werkzeug: formula]
+
+AUFGABE目标挑战：已知盐酸与醋酸浓度及Ks：算双pH、验近似并预测稀释十倍的变化。 德语原题：Gegeben: 0,01 mol/L HCl und 0,10 mol/L Essigsaeure mit Ks = 1,8 mal 10 hoch minus 5. Berechne beide pH-Werte, pruefe die Naeherung und sage die pH-Aenderung bei zehnfacher Verduennung voraus.
 
 HILFE:
-1. Mol Säure rechnen.
-2. Gleiche Mol Base nötig.
-3. pH Start aus minus log c.
+1. Stark oder schwach an Ks entscheiden.
+2. Stark direkt, schwach mit Wurzel rechnen.
+3. 5-Prozent-Check plus Verduennungsregel anfuegen.
 
-MUSTERLÖSUNG：中文：等浓度则等体积：25,0 mL；起点pH由负对数得，终点7。 / 德语：Gleiche Konzentration heisst gleiches Volumen: 25,0 mL; Start-pH aus minus log 0,20, Ziel pH 7.
+MUSTERLOESUNG：中文：盐酸pH2，醋酸约2.87且过检，稀释十倍强升1弱升0.5。 / 德语：HCl stark: pH 2; Essig: pH halb mal (4,74 plus 1) gleich 2,87, Check 1,3 Prozent gilt; Verduennung hebt stark um 1, schwach um 0,5.
 
-`Klausur-Satz: Verdünnen mal zehn hebt pH um eins.`
+`Klausur-Satz: Mit pH 2 aus 0,01 mol/L HCl und pH 3 aus Essig-Naeherung misst der Sandkasten statt zu raten.`
 
-## Schritt 5 — ausprobieren: Duell der Näherungen: Direkt gegen Ks
+## Schritt 5 — ausprobieren: Duell der Wege: Direktrechnung gegen Ks-Naeherung
 
-VERGLEICH: Waehle erst die Stärke — (i) stark oder (ii) schwach — dann loesen.选程序：先判强弱。
+VERGLEICH: Waehle erst den Saeure-Weg, dann loesen: (i) Direkt-Rechenweg oder (ii) Ks-Naeherweg — dann loesen.选程序：先看信号词再选路。
 
-Weg A：Weg A (Stark-Weiche): Vollständig, pH direkt aus c.
 
-Weg B：Weg B (Schwach-Weiche): Gleichgewicht, Ks-Näherung nötig.
+Weg A：Weg A (Direkt-Rechenweg): Starke Saeuren quantitativ direkt aus c0 berechnen. Dieser Weg ist exakt und schnell.
 
-AUFGABE A: HCl 0,1 mol/L, pH gesucht. Welcher Weg? 【选程序：先看信号词再选路】
+Weg B：Weg B (Ks-Naeherweg): Schwache Saeuren qualitativ einordnen und mit Wurzel plus Check naehern. Dieser Weg braucht den Check als Siegel.
 
-AUFGABE B: Essigsäure 0,1 mol/L, pH gesucht. Welcher Weg? 【选程序：先看信号词再选路】
 
-HILFE：A stark — Weg A. B schwach — Weg B.
+AUFGABE A: pH aus 0,01 mol/L HCl exakt gesucht. Welcher Weg? 【选程序：先看信号词再选路】
 
-ANTWORT：ANTWORT: A folgt Weg A mit pH aus minus log c; B folgt Weg B mit Ks-Näherung und Gleichgewicht.
+AUFGABE B: Essig-pH mit Gueltigkeitsnachweis gesucht. Welcher Weg? 【选程序：先看信号词再选路】
 
-`Klausur-Satz: Stark oder schwach entscheidet den Weg.`
 
-## Schritt 6 — check: Selbsttest zu pH starker und schwacher Saeuren mit Ks-Naeherung
+HILFE：A nennt stark — Weg A direkt. B nennt Nachweis — Weg B mit Check.
 
-FRAGE：酸是什么？（Was ist eine Säure?） | ANTWORT：给质子。 / Gibt Protonen ab.
-FRAGE：pH3意味着？（Was heisst pH 3?） | ANTWORT：氢浓度10⁻³。 / c(H) = 10 hoch minus 3.
-FRAGE：中和生成什么？（Was entsteht bei Neutralisation?） | ANTWORT：水加盐。 / Wasser plus Salz.
+ANTWORT：中文：A走直算路取对数；B走近似路开方加验。 / 德语：A folgt Weg A mit minus-Log-Rechnung; B folgt Weg B mit Wurzel-plus-Check-Protokoll.
 
-`Klausur-Satz: Erst Mol, dann pH.`
+`Klausur-Satz: Direkt rechnen beweist, naehern mit Check sichert — die Klausur braucht beides.`
+
+## Schritt 6 — check: Selbsttest zu Starke und schwache Saeuren
+
+- FRAGE:：强酸pH怎么算？（Wie rechnest du starke Säuren） | ANTWORT:：直接负对数c0。 / Direkt minus Log c0.
+
+- FRAGE:：弱酸pH怎么算？（Wie rechnest du schwache Säuren） | ANTWORT:：开方加检验。 / Wurzel plus 5-Prozent-Check.
+
+- FRAGE:：近似门槛多少？（Wann gilt die Näherung） | ANTWORT:：x低于5%初值。 / Wenn x unter 5 Prozent von c0 liegt.
+
+
+`Klausur-Satz: Ohne 5-Prozent-Check bleibt jede Wurzel geraten, mit ihm wird sie gerechnet.`
 
 ## Fehlvorstellung
 
-1. 误解：误解“pH3是pH4的三倍酸”。
-   中文纠偏：见德语纠偏句。
-   Korrektur-Satz: `Logarithmisch: zehnmal so sauer je Stufe.`
-2. 误解：误解“中性不用算就是7”。
-   中文纠偏：见德语纠偏句。
-   Korrektur-Satz: `Erst Mol bilanzieren, dann pH deuten.`
+1. 误解：pH3是6的两倍酸。
+   中文纠偏：pH差3即千倍酸，差1即十倍。
+   Korrektur-Satz: `Die Skala ist logarithmisch: pH 3 ist tausendmal saurer als pH 6.`
 
-## Schritt 7 — szenario: Klausurtransfer: Rechenprotokoll der pH-Wache
+2. 误解：酸都一个算法。
+   中文纠偏：强直算弱开方，混用必错。
+   Korrektur-Satz: `Stark direkt, schwach mit Wurzel: Wer tauscht, rechnet daneben.`
 
-ROLLE：中文：你是化工基地夜班技术员。 / 德语：Du bist Putzkolonne an Rohr 5.
-SITUATION：酸泄漏，请算出中和体积与pH全程并论证（约130词）。 / 德语：Säure läuft aus. Berechne in ca. 130 Woertern Volumen und pH-Weg von Start bis neutral und begruende jeden Schritt.
-RUBRIC (30 XP)：Volumen (10 XP) | Start-pH (8 XP) | Ziel-pH (8 XP) | Sprache (4 XP).
+## Schritt 7 — szenario: Klausurtransfer: Protokoll zur Pool-Rettung
 
-`Klausur-Satz: pH zählt Zehnerpotenzen, keine Stufen.`
+ROLLE：中文：你是手持药勺的救生员。 / 德语：Du bist Bademeister mit Kelle.
+SITUATION：泳池pH3.2：请用强弱酸与Ks解释事故并算出纠正剂量（约150词）。 / 德语：Der Pool zeigt pH 3,2. Erklaere in ca. 150 Woertern mit stark, schwach und Ks, was geschah, und berechne die Korrektur.
+RUBRIC (30 XP)：Diagnose (8 XP) | Rechnung (8 XP) | Korrektur (8 XP) | Sicherheit (6 XP).
+
+
+`Klausur-Satz: Achtung Falle: Verduennen hebt pH starker Saeuren um eins pro Faktor zehn, schwacher nur um halb.`
 
 ## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY核心总结：
 
-中文：因果链：强酸完全裂解，pH直取浓度；弱酸另有平衡，Ks说了算。碱收质子生成水，pH爬升；稀释十倍pH升1。
-Takeaway-Satz: `Kühl löschen schlägt hastig kippen.`
+中文：强直算、弱开方加验：先看Ks再取对数。
+Takeaway-Satz: `Stark direkt, schwach mit Wurzel und Check: Ks zuerst, Log danach.`
 
-`Klausur-Satz: Kühl löschen schlägt hastig kippen.`
+`Klausur-Satz: Staerke ist relativ: Dieselbe Saeure wirkt in Wasser anders als die Skala verspricht.`
 
 
 REFLEXION 2问：
 1. 过程自省：Welcher Schritt fiel schwerer — die Sandkasten-Challenge (Schritt 4) oder die Verfahrenswahl (Schritt 5)?
-2. 元认知计划：Beim nächsten Mal sichere ich zuerst die Werkzeugkiste, weil jeder Handgriff darauf aufbaut.
+2. 元认知计划：Beim naechsten Mal sichere ich zuerst die Werkzeugkiste, weil jeder Handgriff darauf aufbaut.

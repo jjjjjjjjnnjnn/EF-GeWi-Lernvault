@@ -14,121 +14,142 @@ version: Lesson-v3
 # Lernreise: Stoechiometrie und Massenwirkungsgesetz — Episode C21: Rost an Tor 9
 
 <!-- Campaign: Imperium-Alchemie | Chemie | entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
-
-## Schritt 1 — entdecken: Der verschwundene Umschlag
+## Schritt 1 — entdecken: Der Airbag in 30 Millisekunden
 
 ZIELE（本节三目标）：
-1. 中文：会配平。
-2. 中文：会走摩尔桥计算。
-3. 中文：会算产率与转化率。
+1. 中文：能从系数读摩尔比。
+2. 中文：能换算质量体积浓度。
+3. 中文：能定限制反应物。
 
-【危机Hook】Rote Flecken am Stahlgerüst; Vera Haber ordnet Redox-Wache an. 结算室丢了一个信封：整批料比计划轻，班长一摩尔一摩尔地找。总监亮出天平：先配平方程，再过摩尔桥去称。实习生找到元凶——一个系数错了，整座桥都晃。今天把账算到Q回到K为止。
+【危机Hook】Crash-Test 09:00 Uhr: 30 Millisekunden entscheiden ueber Leben. 九点碰撞测试：30毫秒定生死。气囊里叠氮化钠要在一眨眼间变出60升氮气——多一点炸伤人，少一点护不住。今晚必须把克算成摩尔、摩尔算成升，差一克都不行。
 
-`Klausur-Satz: Erst ausgleichen, dann wiegen.`
+`Klausur-Satz: Dreissig Millisekunden Sicherheit stecken in einem Verhaeltnis: Wer wiegt, schuetzt.`
 
-## Schritt 2 — entdecken: Die Mol-Brücken-Kiste der Bilanzprüfer
+## Schritt 2 — entdecken: Die Mengen-Werkzeugkiste der Sprengmeister
 
 PRETRAINING术语盒（5大装备，中文在上、德语在下）：
 
-- 中文：系数 — 德语：Koeffizient：物质间的摩尔桥。 / Mol-Brücke zwischen Stoffen.
-- 中文：摩尔质量 — 德语：Molmasse：每摩尔克数。 / Gramm je Mol aus dem Periodensystem.
-- 中文：限制试剂 — 德语：Limitierendes Reagens：最缺的料决定整批。 / Knappste Grösse bremst die Charge.
-- 中文：理论产量 — 德语：Theoretische Ausbeute：账面最大值。 / Maximum aus der Bilanz.
-- 中文：转化率 — 德语：Umsatz：用掉除以投入。 / Verbraucht durch Einsatz.
+- 中文：系数比 — 德语：Koeffizientenverhaeltnis：方程系数的摩尔契约。 / Koeffizientenverhaeltnis: Koeffizienten geben Mol-Verhaeltnisse der Reaktion an. Sie sind der Vertrag jeder Umsetzung. Mechanismus: Man liest 2 zu 1 zu 2 und uebersetzt jede Menge ueber Mol in die Partner. Klausur-Tipp: Verhaeltnis als Bruch schreiben, nie im Kopf behalten.
 
-`Klausur-Satz: Koeffizienten sind Mol-Brücken.`
+- 中文：限制反应物 — 德语：Begrenzender Reaktand：先用完的说了算。 / Begrenzender Reaktand: Der begrenzende Reaktand verbraucht sich zuerst und stoppt die Reaktion. Er allein bestimmt die Ausbeute. Mechanismus: Man rechnet alle Edukte in Mol um und teilt durch Koeffizienten; der kleinste Quotient begrenzt. Klausur-Tipp: Quotientenvergleich als Nachweis hinschreiben.
 
-## Schritt 3 — entdecken: Vom Koeffizienten zur Ausbeute: Die Brückenkette
+- 中文：气体摩尔体积 — 德语：Molares Volumen：标况22.4升每摩尔。 / Molares Volumen: Das molare Volumen fasst 22,4 L pro Mol Gas bei Normbedingungen. Es verbindet Mol mit Litern. Mechanismus: Man multipliziert Mol mit 22,4; andere Bedingungen verlangen die Gasgleichung. Klausur-Tipp: 22,4 nur mit Normbedingungen nennen.
+
+- 中文：产率 — 德语：Prozent-Ausbeute：实得除以理论。 / Prozent-Ausbeute: Die prozentuale Ausbeute teilt reale durch theoretische Menge. Sie misst Verluste und Nebenwege. Mechanismus: Man rechnet theoretisch aus dem Begrenzer und vergleicht mit der Waage. Klausur-Tipp: Theorie zuerst, Praxis danach als Ordnung.
+
+- 中文：平衡列式 — 德语：MWG-Ansatz：幂次商定位置。 / MWG-Ansatz: Der MWG-Ansatz schreibt K aus Gleichgewichtswerten mit Exponenten. Er ergaenzt Mengen um Lage. Mechanismus: Man setzt c_eq ein; Feststoffe entfallen aus dem Bruch. Klausur-Tipp: Ansatz und Rechnung als zwei getrennte Punkte.
+
+
+`Klausur-Satz: Koeffizienten sind Mol-Vertraege: Der kleinste Quotient begrenzt.`
+
+## Schritt 3 — entdecken: Von Gramm zu Gas: Die Verhaeltniskette
 
 ENTDECKEN因果传导机制（中文拆解在上，德语链条在下）：
 
-中文：链条：配平→换摩尔→按系数过桥→找限制试剂→算产率。桥搭错，秤就错。
+中文：比例链：克经摩尔桥变摩尔，系数变伙伴摩尔，限制物定产，其余变升或毫升。
 
-德语：Die Kette: Ausgleichen, Mol umrechnen, Brücke über Koeffizienten schlagen, knappste Grösse finden, Ausbeute teilen. Wer die Brücke falsch baut, wiegt falsch.
+德语：Die Verhaeltniskette startet mit **Gramm**: Mol-Brücke in Mol umrechnen. Dann folgt der **Vertrag**: Koeffizienten uebersetzen Mol in Mol des Partners. Zuletzt kuerzt der **Begrenzer**: Kleinster Quotient gewinnt, Rest bleibt uebrig. Gas wird ueber **22,4 L** zu Litern, Loesung ueber c zu Millilitern.
 
 ```diagram
-Ausgleich -> Mol -> Bruecke -> Knappste -> Ausbeute
-Koeffizient = Brueckenpfeiler
+m -> n (M) -> Partner-n (Koeff) -> Zielgroesse
+Begrenzer = min(n/Koeff)
+Gas: mal 22,4 L | Loesung: durch c
 ```
 
-`Klausur-Satz: Knapp bestimmt die Charge.`
+Die Uebersetzungsformeln des Sandkastens:
+
+$$\frac{n_A}{n_B} = \frac{a}{b} \quad ; \quad m = n \cdot M$$
+
+中文：摩尔比等于系数比，质量等于摩尔乘摩尔质量。 / 德语：Jede Stöchiometrie laeuft ueber Mol: Gramm sind nur die Verpackung.
+
+`Klausur-Satz: Gramm wird Mol, Mol wird Partner, Partner wird Liter: Die Kette endet im Airbag.`
 
 ## Anekdote & Fun-Fact
 
-**Anekdote / Fun-Fact (DE)**: Die Waage lügt nie, aber sie spricht Mol: Wer Gramm vergleicht, hört die falsche Sprache.
+**Anekdote / Fun-Fact (DE)**: Backpulver treibt Kuchen mit CO2 — Stöchiometrie als Gebaeck.
 
-**中文解读**: 天平从不说谎，但它只说摩尔语：直接比克数等于听错话。
 
-**Bezug zum Konzept**: Brücken tragen Chargen.
+**中文解读**: 泡打粉用二氧化碳发面——化学计量做点心。
 
-## Schritt 4 — ausprobieren: Brücken-Sandkasten: Rette die Charge
+
+**Bezug zum Konzept**: Vom Kuchen zum Airbag: Dieselbe Kette, anderes Tempo.
+
+## Schritt 4 — ausprobieren: Sandkasten: Fuell den Airbag exakt
 
 [Werkzeug: formula]
 
-AUFGABE目标挑战：目标挑战：5,85 g原料(M=58,5)、系数1,0 mal 10 hoch minus 4，按80%产率算产品质量与转化率，精确到克并展示过桥全程。 德语原题：5,85 g Edukt, M = 58,5: Wieviel Mol sind im Spiel?
+AUFGABE目标挑战：已知叠氮化钠分解方程与60升目标：算药量、判限制物并算产率。 德语原题：Gegeben: 2 NaN3 -> 2 Na + 3 N2; Ziel 60 L N2 bei Normbedingungen. Berechne die Azidmasse, bestimme den Begrenzer bei 200 g Azid plus Zuenderueberschuss und gib die Ausbeute bei real 55 L an.
 
 HILFE:
-1. n = m durch M.
-2. Brücke über Koeffizienten.
-3. Mal Ausbeute.
+1. Ziel-Liter in Mol uebersetzen: durch 22,4.
+2. Ueber Koeffizienten zum Azid zurueckrechnen.
+3. Begrenzer per Quotient, Ausbeute per Division.
 
-MUSTERLÖSUNG：中文：换摩尔、过桥、找限制、除产率——精确到克。 / 德语：Mol bilden, Brücke schlagen, knappste Grösse wägen, Ausbeute teilen — Gramm-exakt.
+MUSTERLOESUNG：中文：需叠氮化钠约117克，限制物为叠氮化物，产率约92%。 / 德语：60 L sind 2,68 mol N2 und brauchen 1,79 mol Azid, also 117 g; Begrenzer Azid; Ausbeute 55 durch 60 gleich 92 Prozent.
 
-`Klausur-Satz: Gramm lügen, Mol sprechen wahr.`
+`Klausur-Satz: Mit 130 g Azid fuer 60 L Stickstoff fuellt der Sandkasten statt zu raten.`
 
-## Schritt 5 — ausprobieren: Duell der Fragen: Wieviel gegen Wohin
+## Schritt 5 — ausprobieren: Duell der Wege: Mol-Rechnung gegen Koeffizienten-Blick
 
-VERGLEICH: Waehle erst die Frage — (i) Wieviel oder (ii) Wohin — dann loesen.选程序：先看问量还是问向。
+VERGLEICH: Waehle erst den Mengen-Weg, dann loesen: (i) Mol-Rechenweg oder (ii) Koeffizienten-Blickweg — dann loesen.选程序：先看信号词再选路。
 
-Weg A：Weg A (Mengen-Weiche): Brücken rechnen bis Gramm.
 
-Weg B：Weg B (Lage-Weiche): Q gegen K bis Richtung.
+Weg A：Weg A (Mol-Rechenweg): Mengen quantitativ durchrechnen bis Gramm und Liter. Dieser Weg liefert exakte Zahlen.
 
-AUFGABE A: Produktmasse aus 5,85 g gesucht. Welcher Weg? 【选程序：先看信号词再选路】
+Weg B：Weg B (Koeffizienten-Blickweg): Verhaeltnisse qualitativ lesen und Begrenzer schnell erkennen. Dieser Weg ist schnell, bleibt aber grob.
 
-AUFGABE B: Nur Druck erhöht, Richtung gesucht. Welcher Weg? 【选程序：先看信号词再选路】
 
-HILFE：A fragt Gramm — Weg A. B fragt Richtung — Weg B.
+AUFGABE A: Azidmasse aus Litern exakt gesucht. Welcher Weg? 【选程序：先看信号词再选路】
 
-ANTWORT：ANTWORT: A folgt Weg A mit Mol-Brücke; B folgt Weg B mit Q-gegen-K.
+AUFGABE B: Welcher Stoff begrenzt bei Überschuss? Welcher Weg? 【选程序：先看信号词再选路】
 
-`Klausur-Satz: Wieviel oder Wohin entscheidet den Weg.`
 
-## Schritt 6 — check: Selbsttest zu Stoechiometrie und Massenwirkungsgesetz
+HILFE：A nennt exakt — Weg A mit Kette. B nennt Begrenzer — Weg B mit Quotient.
 
-FRAGE：桥是什么？（Was ist die Brücke?） | ANTWORT：系数即摩尔比。 / Koeffizienten als Mol-Verhältnis.
-FRAGE：谁卡住整批？（Was bremst die Charge?） | ANTWORT：最缺的原料。 / Das knappste Reagens.
-FRAGE：转化率是什么？（Was heisst Umsatz?） | ANTWORT：用掉除以投入。 / Verbraucht durch Einsatz.
+ANTWORT：中文：A走换算路升摩克三连；B走系数路比商。 / 德语：A folgt Weg A mit Liter-Mol-Gramm-Kette; B folgt Weg B mit min-Quotienten.
 
-`Klausur-Satz: Brücke schlagen heisst Koeffizienten lesen.`
+`Klausur-Satz: Mol rechnen beweist, Koeffizienten lesen lenkt — die Klausur braucht beides.`
+
+## Schritt 6 — check: Selbsttest zu Stoechiometrie und MWG
+
+- FRAGE:：系数代表什么？（Was geben Koeffizienten an） | ANTWORT:：摩尔比。 / Mol-Verhaeltnisse.
+
+- FRAGE:：标准气体摩尔体积？（Wie gross ist das molare Volumen） | ANTWORT:：22.4升每摩尔。 / 22,4 L pro Mol bei Normbedingungen.
+
+- FRAGE:：限制物怎么找？（Wie findest du den Begrenzer） | ANTWORT:：最小商限制。 / Der kleinste Quotient begrenzt.
+
+
+`Klausur-Satz: Ohne Begrenzer bleibt jede Ausbeute geraten, mit ihm wird sie berechnet.`
 
 ## Fehlvorstellung
 
-1. 误解：误解“克数直接比”。
-   中文纠偏：见德语纠偏句。
-   Korrektur-Satz: `Erst Mol, dann Brücke — Gramm lügen.`
-2. 误解：误解“系数是装饰”。
-   中文纠偏：见德语纠偏句。
-   Korrektur-Satz: `Sie sind die Pfeiler jeder Brücke.`
+1. 误解：质量比等于系数比。
+   中文纠偏：系数数摩尔不数克，克比必须换算。
+   Korrektur-Satz: `Koeffizienten zaehlen Mol, nicht Gramm: Erst M macht Masse daraus.`
 
-## Schritt 7 — szenario: Klausurtransfer: Prüfbericht aus der Bilanzkammer
+2. 误解：产率总是百分百。
+   中文纠偏：实得除以理论才是诚实。
+   Korrektur-Satz: `Verluste und Nebenwege kosten: Real durch Theorie heisst Ehrlichkeit.`
 
-ROLLE：中文：你是化工基地夜班技术员。 / 德语：Du bist Prüferin in der Bilanzkammer.
-SITUATION：一批料未达计划，请用过桥法找出限制试剂与真实产率（约130词）。 / 德语：Eine Charge bleibt unter Plan. Finde in ca. 130 Woertern per Brückenrechnung das knappste Reagens und die wahre Ausbeute.
-RUBRIC (30 XP)：Ausgleich (8 XP) | Brücke (10 XP) | Knappste (6 XP) | Ausbeute (6 XP).
+## Schritt 7 — szenario: Klausurtransfer: Freigabebericht zum Gasgenerator
 
-`Klausur-Satz: Ausbeute teilt Traum durch Bilanz.`
+ROLLE：中文：你是碰撞实验室装药师。 / 德语：Du bist Sprengmeisterin im Crash-Labor.
+SITUATION：发生器只产55升：请用摩尔、限制物与产率解释缺口并决定放行与否（约150词）。 / 德语：Der Generator liefert 55 statt 60 L. Erklaere in ca. 150 Woertern mit Mol, Begrenzer und Ausbeute die Luecke und gib die Charge frei oder nicht.
+RUBRIC (30 XP)：Mol-Kette (8 XP) | Begrenzer (8 XP) | Ausbeute (8 XP) | Urteil (6 XP).
+
+
+`Klausur-Satz: Achtung Falle: Ueberschuss reagiert nie vollstaendig — nur der Begrenzer zaehlt.`
 
 ## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY核心总结：
 
-中文：链条：配平→换摩尔→按系数过桥→找限制试剂→算产率。桥搭错，秤就错。
-Takeaway-Satz: `Bilanz bis Q bei K.`
+中文：称、除、比：摩尔、商、限制物三步走。
+Takeaway-Satz: `Wiegen, teilen, vergleichen: Mol, Quotient, Begrenzer in dieser Reihenfolge.`
 
-`Klausur-Satz: Bilanz bis Q bei K.`
+`Klausur-Satz: Stöchiometrie ist Gerechtigkeit: Kein Atom geht verloren, jedes wird verbucht.`
 
 
 REFLEXION 2问：
 1. 过程自省：Welcher Schritt fiel schwerer — die Sandkasten-Challenge (Schritt 4) oder die Verfahrenswahl (Schritt 5)?
-2. 元认知计划：Beim nächsten Mal sichere ich zuerst die Werkzeugkiste, weil jeder Handgriff darauf aufbaut.
+2. 元认知计划：Beim naechsten Mal sichere ich zuerst die Werkzeugkiste, weil jeder Handgriff darauf aufbaut.

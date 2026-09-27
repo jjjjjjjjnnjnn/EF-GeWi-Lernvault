@@ -14,15 +14,16 @@ version: Lesson-v3
 # Lernreise: DNA-Replikation und Meselson-Stahl — Episode B12: Der cholesterin-klemmende Fahrstuhl
 
 <!-- Campaign: Nano-Zellfabrik-Krise | Bio | Instapower: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
-
 ## Schritt 1 — entdecken: Funkstille aus dem Geheimarchiv
 
 ZIELE:
-1. Ich kann die semikonservative Replikation mit Enzymen beschreiben.
-2. Ich kann das Meselson-Stahl-Experiment mit Dichtebaendern auswerten.
+1. Ich kann die **semikonservative Replikation** mit Enzymen darstellen.
+2. Ich kann **Meselson-Stahl-Banden** nach Runden auswerten.
 3. Ich kann konservativ, semikonservativ und dispersiv unterscheiden.
 
-Membran-Fahrstuhl klemmt bei Kaelte; Techniker Fluid rückt mit Cholesterin an. Tief unter der Nano-Zellfabrik liegt das Geheimarchiv, in dem die Blaupausen aller Maschinen lagern. Heute Nacht blinkt dort rotes Licht: Archivarin Helikase hat das Kopierband gestoppt, weil eine spannende Frage die ganze Fabrik entzweit: Bleibt beim Kopieren ein alter Strang erhalten, oder wird alles neu gebaut? Captain Mara Zell erinnert sich an das Kuechenexperiment mit schweren und leichten Zutaten, waehrend Dr. Finn Katalys die legendäre Zentrifuge aus dem Keller holt. Zwei Forscher, zwei Fluessigkeiten, ein Roehrchen, das Geschichte schrieb: Meselson und Stahl. Wer heute versteht, warum nach einer Runde genau ein mittleres Band erscheint, entsperrt das Archiv und rettet die Nachtschicht vor dem Produktionsstopp.
+Tief in der Zellfabrik liegt das Geheimarchiv mit den Bauplaenen aller Maschinen. Heute Nacht blinkt Rot: Archivarin **Helikase** hat das Kopierband angehalten — bleibt beim Kopieren ein altes Band erhalten oder entsteht alles neu? Captain Mara Zell erinnert sich an Kuechenversuche mit schweren und leichten Zutaten.
+
+Dr. Finn Katalys holt die legendaere **Zentrifuge** aus dem Keller: Meselson und Stahl schrieben 1958 mit einem einzigen Roehrchen Geschichte. Wer versteht, warum nach einer Runde genau ein mittleres Band erscheint, entsiegelt das Archiv und rettet die Nachtschicht.
 
 `Klausur-Satz: Jede Tochter-DNA behaelt einen parentalen Strang: Replikation ist semikonservativ.`
 
@@ -30,11 +31,16 @@ Membran-Fahrstuhl klemmt bei Kaelte; Techniker Fluid rückt mit Cholesterin an. 
 
 AUSRUESTUNG (5 Begriffe der Werkzeugkiste):
 
-- Replikation: Verdopplung der DNA vor der Teilung.
-- Semikonservativ: Jede Tochter haelt einen alten und einen neuen Strang.
-- Helikase: Oeffnet die Doppelhelix am Replikationsursprung.
-- DNA-Polymerase: Baut den neuen Strang in 5-nach-3-Richtung.
-- Meselson-Stahl: Dichte-Experiment mit 15N und Zentrifuge.
+- **Replikation**: Replikation ist die Verdopplung der DNA vor jeder Zellteilung. Sie startet an definierten Urspruengen und laeuft bidirektional. Mechanismus: Helikase oeffnet die Doppelhelix, Topoisomerase entspannt die Spannung, Einzelstrang-Bindeproteine stabilisieren die Gabel. Klausur-Tipp: Ursprung plus bidirektional zeigt, dass du mehr als nur verdoppeln kannst.
+
+- **Semikonservativ**: Semikonservativ bedeutet: Jede Tochter-DNA behaelt einen parentalen und einen neuen Strang. Das alte Band dient als Matrize. Mechanismus: Die Komplementaritaet A-T und G-C schreibt die Kopie vor; Fehler faengt die Korrekturlesefunktion der Polymerase ab. Klausur-Tipp: Ein alt plus ein neu ist der Satz, der den Punkt holt.
+
+- **DNA-Polymerase**: Die DNA-Polymerase baut den neuen Strang nur in 5-nach-3-Richtung auf. Sie braucht Primer und Matrize gleichzeitig. Mechanismus: Am Leitstrang laeuft sie durch, am Folgestrang stueckelt sie Okazaki-Fragmente, die Ligase verschliesst. Klausur-Tipp: 5-nach-3 plus Primer-Abhaengigkeit nie weglassen.
+
+- **Helikase**: Helikase oeffnet die Doppelhelix am Replikationsursprung unter ATP-Verbrauch. Sie bricht die Wasserstoffbruecken zwischen den Basen. Mechanismus: Die Gabel wandert voran, waehrend dahinter sofort die Polymerase einsteigt; ohne Oeffnung kein Start. Klausur-Tipp: ATP-Verbrauch plus Wasserstoffbruecken als Details nennen.
+
+- **Meselson-Stahl**: Meselson und Stahl markierten DNA mit schwerem 15N und verfolgten sie in leichtem 14N-Medium. Die CsCl-Zentrifuge trennte schwer, mittel und leicht. Mechanismus: Nach einer Runde erschien genau ein Mittelband: konservativ waere widerlegt, dispersiv scheidet erst Runde zwei aus. Klausur-Tipp: Ein Mittelband nach Runde eins als Killerargument formulieren.
+
 
 `Klausur-Satz: Helikase oeffnet, Polymerase baut 5-nach-3, Ligase schliesst die Luecken.`
 
@@ -42,13 +48,21 @@ AUSRUESTUNG (5 Begriffe der Werkzeugkiste):
 
 WIRKUNGSGEFUEGE (Ursache zu Wirkung):
 
-Die Kausalkette: Helikase oeffnet, Primase setzt Primer, Polymerase baut 5-nach-3, Ligase schliesst Luecken. Der Leitstrang laeuft durch, der Folgestrang entsteht in Okazaki-Stuecken. Meselson-Stahl prueft das Ergebnis: Nach einer Runde in 14N zeigt semikonservativ genau ein mittleres Band — konservativ zeigte schwer plus leicht, dispersiv zeigte nur Mittelmaessiges in jeder Runde ohne Trennung.
+Die Kausalkette: **Helikase** oeffnet, Primase setzt Primer, **Polymerase** baut 5-nach-3, Ligase schliesst Luecken. Der Leitstrang laeuft durch, der Folgestrang entsteht in **Okazaki-Stuecken**.
+
+Meselson-Stahl prueft das Ergebnis: Nach einer Runde in 14N zeigt semikonservativ genau ein mittleres Band. Konservativ zeigte schwer plus leicht, dispersiv zeigte nur Mittelmaessiges ohne Trennung in Runde zwei.
 
 ```diagram
 Helikase -> Primer -> Polymerase 5-3 -> Ligase
-Leitstrang kontinuierlich | Folge strang Okazaki
+Leitstrang kontinuierlich | Folgestrang Okazaki
 Runde 1 in 14N: semikonservativ = 1 Mittelband
 ```
+
+Die Bandenregel als Entscheidungsformel:
+
+$$^{15}N \to ^{14}N: \; \text{Runde 1} = 1 \times \text{Mittelband} \Rightarrow \text{semikonservativ}$$
+
+Konservativ wuerde schwer plus leicht zeigen; nur semikonservativ liefert exakt ein Mittelband.
 
 `Klausur-Satz: Ein Mittelband nach Runde eins beweist die semikonservative Verdopplung.`
 
@@ -56,71 +70,80 @@ Runde 1 in 14N: semikonservativ = 1 Mittelband
 
 **Anekdote / Fun-Fact (DE)**: Meselson und Stahl zuechteten Bakterien erst schwer, dann leicht — und sahen die Wahrheit als Bande in der Zentrifuge schwimmen.
 
-**Bezug zum Konzept**: Ein Mittelband nach Runde eins entlarvt die semikonservative Kopie.
 
-## Schritt 4 — ausprobieren: Baukasten-Sandkasten: Kopiere das Strang-Puzzle
+**Bezug zum Konzept**: Ein Roehrchen entschied zwischen drei Weltbildern der Vererbung.
 
-[Werkzeug: lego]
+## Schritt 4 — ausprobieren: Sandkasten: Lies die Dichtebanden
 
-AUFGABE (Target Challenge): Target Challenge: Stecke aus Lego-Bausteinen 12 Nukleotide Doppelstrang, trenne und baue beide Toechter fehlerfrei. Ziel: Beide Toechter halb alt halb neu, Richtung 5-nach-3 markiert, in 8 Minuten. AUFGABE konkret: Nach einer Runde Replikation in 14N: Welche Baender erwartest du bei semikonservativ?
+[Werkzeug: formula]
+
+AUFGABE (Target Challenge): Gegeben: Start voll 15N-markiert, dann zwei Runden in 14N. Sage fuer konservativ, semikonservativ und dispersiv die Banden beider Runden voraus und rechne die Dichteanteile pro Bande aus. Entscheide, welches Modell die echte Messung (Runde 1: ein Mittelband, Runde 2: mittel plus leicht) bestaetigt.
 
 HILFE:
-1. Alte Straenge sind schwer markiert.
-2. Jede Tochter behaelt einen alten Strang.
-3. Ein Mittelband heisst halb schwer halb leicht.
+1. Modelle sauber trennen: konservativ, semikonservativ, dispersiv.
+2. Banden pro Runde vorhersagen: schwer, mittel, leicht.
+3. Messung dagegenhalten: Runde eins entscheidet fast alles.
 
-MUSTERLÖSUNG: Beide Toechter tragen einen schweren alten und einen leichten neuen Strang, also genau ein mittleres Band; konservativ gaebe zwei Baender.
+MUSTERLOESUNG: Konservativ: Runde eins schwer plus leicht — falsch. Dispersiv: Runde eins mittel, Runde zwei nur mittel — falsch. Semikonservativ: Runde eins ein Mittelband, Runde zwei mittel plus leicht — exakt die Messung.
 
-`Klausur-Satz: Zwoelf Bausteine in acht Minuten: halb alt halb neu, Richtung markiert.`
+`Klausur-Satz: Drei Modelle, eine Zentrifuge: Nur semikonservativ ueberlebt beide Runden.`
 
-## Schritt 5 — ausprobieren: Duell der Modelle: Konservativ gegen semikonservativ
+## Schritt 5 — ausprobieren: Duell der Wege: Bandenzaehlung gegen Modellvergleich
 
-VERGLEICH: Waehle erst das Modell — (i) semikonservativ oder (ii) konservativ/dispersiv — dann loesen.
+VERGLEICH: Waehle erst den Beweisweg, dann loesen: (i) Bandenzaehl-Rechenweg oder (ii) Modellvergleichs-Deuteweg — dann loesen.
 
-Weg A (Band-Lesart): Baender zaehlen, Dichte deuten, Runde zuordnen.
 
-Weg B (Enzym-Lesart): Enzyme der Reihe nach nennen, Strangrichtung pruefen.
+Weg A (Bandenzaehl-Rechenweg): Banden pro Runde zaehlen und Dichteanteile quantitativ ausrechnen. Dieser Weg liefert harte Zahlen und haelt der Protokollpruefung stand.
 
-AUFGABE A: Nach Runde 1 genau ein Mittelband. Welches Modell?
+Weg B (Modellvergleichs-Deuteweg): Die drei Modelle qualitativ gegeneinander halten und am Schaubild ausscheiden. Dieser Weg ist schnell und anschaulich, bleibt aber ohne Zahlen angreifbar.
 
-AUFGABE B: Leit- und Folgestrang mit Richtungen benennen. Welcher Weg?
 
-HILFE: A nennt Baender — Weg A. B nennt Enzyme — Weg B.
+AUFGABE A: Dichteanteile der Mittelbande in Runde zwei gesucht. Welcher Weg?
 
-ANTWORT: A folgt Weg A und bestaetigt semikonservativ; B folgt Weg B mit Helikase, Primase, Polymerase 5-nach-3 und Ligase.
+AUFGABE B: Warum scheidet dispersiv erst in Runde zwei aus? Welcher Weg?
 
-`Klausur-Satz: Baender lesen waehlt das Modell, Enzyme nennen prueft die Richtung.`
+
+HILFE: A nennt Anteile — Weg A mit Rechnung. B nennt Warum mit Schaubild — Weg B mit Vergleich.
+
+ANTWORT: A folgt Weg A mit 50-zu-50-Rechnung der Mittel- und Leichtbande; B folgt Weg B mit dem Argument, dass dispersiv nie trennt.
+
+`Klausur-Satz: Banden zaehlen beweist, Modelle vergleichen erklaert — die Klausur braucht beides.`
 
 ## Schritt 6 — check: Selbsttest zu DNA-Replikation und Meselson-Stahl
 
-FRAGE: Was heisst semikonservativ? | ANTWORT: Jede Tochter halb alt halb neu.
-FRAGE: Welche Richtung baut die Polymerase? | ANTWORT: Nur 5-nach-3 am neuen Strang.
-FRAGE: Was zeigt Runde 1 bei semikonservativ? | ANTWORT: Genau ein mittleres Dichteband.
+- FRAGE: In welcher Richtung baut die Polymerase? | ANTWORT: Nur in 5-nach-3-Richtung und nur mit Primer.
 
-`Klausur-Satz: Halb alt halb neu — das ist der Satz der Replikation.`
+- FRAGE: Was beweist ein Mittelband nach Runde eins? | ANTWORT: Semikonservativ; konservativ zeigte schwer plus leicht.
+
+- FRAGE: Wann scheidet dispersiv aus? | ANTWORT: Erst in Runde zwei, weil es nie trennt.
+
+
+`Klausur-Satz: Ohne Rundenlogik bleibt jede Bande geraten, mit ihr wird sie gelesen.`
 
 ## Fehlvorstellung
 
-1. Fehlvorstellung: Beide Straenge wuerden neu gebaut.
-   Korrektur-Satz: `Jede Tochter behaelt einen alten parentalen Strang — halb alt, halb neu.`
-2. Fehlvorstellung: Meselson-Stahl habe radioaktiv markiert.
-   Korrektur-Satz: `Markiert wurde die Dichte mit schwerem Stickstoff 15N, getrennt per Zentrifuge.`
+1. Fehlvorstellung: Der neue Strang entstehe beliebig in beide Richtungen.
+   Korrektur-Satz: `Polymerase baut strikt 5-nach-3: Der Folgestrang braucht Okazaki-Stuecke, Beliebigkeit gibt es nicht.`
 
-## Schritt 7 — szenario: Klausurtransfer: Forensik-Einsatz: Wessen DNA schwimmt wo
+2. Fehlvorstellung: Ein Mittelband beweise allein schon alles.
+   Korrektur-Satz: `Runde eins killt konservativ, aber erst Runde zwei killt dispersiv: Beide Runden gehoeren zum Beweis.`
 
-ROLLE: Du bist Forensikerin im Dichte-Labor.
-SITUATION: Ein Extrakt zeigt nach einer Replikationsrunde in 14N genau ein Mittelband. Entscheide in ca. 130 Woertern zwischen den drei Modellen und begruende mit der Bandenlogik.
-RUBRIC (30 XP): Modellwahl (10 XP) | Bandenlogik (10 XP) | Abgrenzung der Gegenmodelle (6 XP) | Fachsprache (4 XP).
+## Schritt 7 — szenario: Klausurtransfer: Gutachten zum Zentrifugenbeweis
 
-`Klausur-Satz: Ein Mittelband entscheidet: semikonservativ schlaegt konservativ und dispersiv.`
+ROLLE: Du bist Gutachterin im Genetik-Labor.
+SITUATION: Ein Praktikant behauptet, ein einziges Mittelband beweise alles. Schreibe in ca. 150 Woertern ein Gutachten, das alle drei Modelle ueber zwei Runden prueft und das Urteil begruendet.
+RUBRIC (30 XP): Modellkenntnis (8 XP) | Rundenlogik (8 XP) | Bandendeutung (8 XP) | Urteil (6 XP).
+
+
+`Klausur-Satz: Achtung Falle: Dispersiv zeigt auch Mittelbaender, scheidet aber erst in Runde zwei aus.`
 
 ## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY:
 
-Takeaway-Satz: `Kopieren heisst bewahren: Ein alter Strang traegt jede Tochter.`
+Takeaway-Satz: `Halb alt, halb neu: Ein Mittelband nach Runde eins ist der Fingerabdruck der Natur.`
 
-`Klausur-Satz: Kopieren heisst bewahren: Ein alter Strang traegt jede Tochter.`
+`Klausur-Satz: Grosse Beweise sind klein: Ein Roehrchen, zwei Runden, drei Modelle — und die Wahrheit schwimmt als Bande.`
 
 
 REFLEXION:

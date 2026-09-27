@@ -14,122 +14,142 @@ version: Lesson-v3
 # Lernreise: Redoxreaktionen und Oxidationszahlen — Episode C15: Der zischende Fleck
 
 <!-- Campaign: Imperium-Alchemie | Chemie | entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
-
-## Schritt 1 — entdecken: Rostalarm an Tor 9
+## Schritt 1 — entdecken: Die rostige Bruecke: Wer gab, wer nahm
 
 ZIELE（本节三目标）：
-1. 中文：会标氧化数。
-2. 中文：会判定氧化与还原。
-3. 中文：会配平氧化还原方程。
+1. 中文：能按规则定氧化数。
+2. 中文：能把氧化还原讲成电子得失。
+3. 中文：能用电子平衡配平。
 
-【危机Hook】Schichtleiter Jonas Säure findet eine zischende Pfütze an Rohr 5; Praktikantin Mia Puffer holt den Neutralisationswagen. 9号门锈迹蔓延，总监下令红Dox警戒。班长数电子如数硬币，实习生喊出口诀：失电子被氧化、得电子被还原！可氧化数上下乱跳，方程必须“给出=拿走”才配得平。今天开一家电子会计事务所。
+【危机Hook】Bruecken-TUeV rot: Rost frisst Stahl, Sperrung droht. 大桥年检亮红灯：锈吃钢，封桥在即。市长问是刷漆还是换梁，工程师Mara说先算电子账——谁给了电子谁生锈，谁抢了电子谁被保护。今晚必须分清给与取，否则油漆盖住的是定时炸弹。
 
-`Klausur-Satz: Steigt die Zahl, gibt das Atom: Oxidation.`
+`Klausur-Satz: Rost ist Buchhaltung: Eisen gab, Sauerstoff nahm — die Bruecke zahlt.`
 
-## Schritt 2 — entdecken: Die Elektronen-Kasse der Buchhalter
+## Schritt 2 — entdecken: Die Redox-Werkzeugkiste der Brueckenwaechter
 
 PRETRAINING术语盒（5大装备，中文在上、德语在下）：
 
-- 中文：氧化数 — 德语：Oxidationszahl：每原子的记账账户。 / Buchhalter-Konto jedes Atoms.
-- 中文：氧化 — 德语：Oxidation：失电子。 / Elektronen abgeben.
-- 中文：还原 — 德语：Reduktion：得电子。 / Elektronen aufnehmen.
-- 中文：氧化剂 — 德语：Oxidationsmittel：拿走电子，自己被还原。 / Nimmt auf, wird selbst reduziert.
-- 中文：还原剂 — 德语：Reduktionsmittel：给出电子，自己被氧化。 / Gibt ab, wird selbst oxidiert.
+- 中文：氧化数 — 德语：Oxidationszahl：假想电荷标价签。 / Oxidationszahl: Oxidationszahlen sind gedachte Ladungen nach Elektronegativitaets-Regeln. Sie nummerieren den Oxidationszustand jedes Atoms. Mechanismus: Man verteilt Bindungselektronen an den elektronegativeren Partner und zaehlt die Reste. Klausur-Tipp: Element null, Sauerstoff meist minus zwei als Startregeln.
 
-`Klausur-Satz: Sinkt die Zahl, nimmt das Atom: Reduktion.`
+- 中文：氧化 — 德语：Oxidation：失去电子。 / Oxidation: Oxidation ist Elektronenabgabe mit steigender Oxidationszahl. Der Geber heisst Reduktionsmittel. Mechanismus: Eisen wird zu plus zwei oder drei und liefert die Elektronen fuer den Partner. Klausur-Tipp: Steigen gibt als Merksatz mit Pfeil nach oben.
 
-## Schritt 3 — entdecken: Geben und Nehmen: Die Elektronenkette
+- 中文：还原 — 德语：Reduktion：得到电子。 / Reduktion: Reduktion ist Elektronenaufnahme mit sinkender Oxidationszahl. Der Nehmer heisst Oxidationsmittel. Mechanismus: Sauerstoff sinkt auf minus zwei und kassiert die Elektronen des Eisens. Klausur-Tipp: Sinken nimmt als Spiegel zu Steigen gibt.
+
+- 中文：电子平衡 — 德语：Elektronenbilanz：得失相抵才配平。 / Elektronenbilanz: Die Elektronenbilanz gleicht abgegebene und aufgenommene Elektronen aus. Sie ist das Herz jeder Redox-Gleichung. Mechanismus: Man multipliziert Teilgleichungen aufs kleinste gemeinsame Vielfache der Elektronen. Klausur-Tipp: e-minus links und rechts gleich als Kontrollzeile.
+
+- 中文：活动顺序 — 德语：Spannungsreihe：谁强谁先得失。 / Spannungsreihe: Die Spannungsreihe ordnet Metalle nach Elektronendonor-Staerke. Unedle geben bereitwillig, edle halten fest. Mechanismus: Zink schuetzt Eisen als Opferanode, weil es unedler ist und zuerst korrodiert. Klausur-Tipp: Opferanode als Anwendungsbeispiel bringt Zusatzpunkte.
+
+
+`Klausur-Satz: Steigen gibt, Sinken nimmt: Die Oxidationszahl verrät Geber und Nehmer.`
+
+## Schritt 3 — entdecken: Vom Rost zum Strom: Die Elektronenkette
 
 ENTDECKEN因果传导机制（中文拆解在上，德语链条在下）：
 
-中文：因果链：氧化数升=给出=氧化；降=拿走=还原。试剂以后果命名：让别人氧化的自己拿电子。配平即先让电子相等，再平原子与电荷。
+中文：电子链：先定氧化数找给取，再列半反应配电子，最后配原子与电荷，加总消去电子。
 
-德语：Die Kette: Zahl steigt heisst gegeben — Oxidation; Zahl sinkt heisst genommen — Reduktion. Mittel benennen sich nach dem Opfer: Wer oxidiert, nimmt. Bilanzieren heisst Elektronen gleichsetzen, dann Atome und Ladungen.
+德语：Die Elektronenkette startet bei den **Oxidationszahlen**: Steigen markiert Geber, Sinken markiert Nehmer. Eisen steigt, Sauerstoff sinkt. Dann folgt die **Bilanz**: Teilgleichungen schreiben, **Elektronen** angleichen, Atome und Ladungen ausgleichen. Die Summe loescht die Elektronen heraus.
 
 ```diagram
-Zahl hoch = geben = Oxidation | Zahl runter = nehmen = Reduktion
-Geben = Nehmen -> Bilanz
-Mittel heissen nach Opfer
+OZ bestimmen -> Geber/Nehmer markieren
+Teilgleichungen -> e angleichen
+Atome + Ladung -> Summe ohne e
 ```
 
-`Klausur-Satz: Mittel heissen nach dem Opfer, nicht nach sich.`
+Die Rollenregel als Merkformel:
+
+$$Oxidation = e^-\text{-Abgabe} \quad ; \quad Reduktion = e^-\text{-Aufnahme}$$
+
+中文：氧化失电子数升，还原得电子数降。 / 德语：Mittel oxidiert, Nehmer reduziert sich: Die Namen beschreiben den Partner.
+
+`Klausur-Satz: Zahlen bestimmen, Haelften schreiben, Elektronen angleichen: Die Kette endet im Ausgleich.`
 
 ## Anekdote & Fun-Fact
 
-**Anekdote / Fun-Fact (DE)**: Rost ist langsames Feuer ohne Flamme: Eisen gibt, Sauerstoff nimmt — die stillste Verbrennung des Werks.
+**Anekdote / Fun-Fact (DE)**: Opferanoden aus Zink sterben fuer Schiffe — unedles Metall als Leibwaechter aus Blech.
 
-**中文解读**: 锈是没火的慢燃烧：铁给出、氧拿走——全厂最安静的燃烧。
 
-**Bezug zum Konzept**: Geben und Nehmen halten die Kasse im Gleichgewicht.
+**中文解读**: 锌块为轮船当替死鬼——贱金属做保镖。
 
-## Schritt 4 — ausprobieren: Bilanz-Sandkasten: Fange die Elektronen
+
+**Bezug zum Konzept**: Edel schuetzt unedel nie: Die Reihe entscheidet, wer opfert.
+
+## Schritt 4 — ausprobieren: Sandkasten: Bestimme Zahlen und bilanzere
 
 [Werkzeug: formula]
 
-AUFGABE目标挑战：目标挑战：标出Fe + Cu2+ -> Fe2+ + Cu中所有氧化数，用电子得失配平，指明给受双方与试剂，账分毫不差。 德语原题：In Fe + Cu2+ -> Fe2+ + Cu: Wer gibt, wer nimmt?
+AUFGABE目标挑战：已知铁生锈与铜锌遇酸：定氧化数、列半反应、配平并判谁当牺牲阳极。 德语原题：Gegeben: Fe + O2 zu Rost, dazu Cu und Zn in Saeure. Bestimme alle Oxidationszahlen, schreibe Teilgleichungen, bilanzere mit e-Ausgleich und sage voraus, welches Metall die Opferanode stellt.
 
 HILFE:
-1. O vor H-Regeln anwenden.
-2. Steigen oder Sinken markieren.
-3. Elektronen gleichsetzen.
+1. Oxidationszahlen nach Regeln bestimmen.
+2. Teilgleichungen mit e-Ausgleich schreiben.
+3. Reihe lesen: unedler opfert sich.
 
-MUSTERLÖSUNG：中文：升者失电子被氧化，降者得电子被还原；试剂反向命名。 / 德语：Steigende Zahl gibt Elektronen ab und wird oxidiert, sinkende nimmt auf und wird reduziert; Mittel heissen umgekehrt dazu.
+MUSTERLOESUNG：中文：铁升给电子、氧降得电子，配平4比3，锌最不活泼排前当替死鬼。 / 德语：Fe null zu plus drei gibt drei e, O2 zu minus zwei nimmt vier e; Bilanz 4 Fe + 3 O2; Zn unedler als Cu und Eisen: Zn opfert sich.
 
-`Klausur-Satz: Geben gleich Nehmen: Das ist die Bilanz.`
+`Klausur-Satz: Mit plus zwei gegen null und e-Bilanz als Kontrolle gleicht der Sandkasten statt zu raten.`
 
-## Schritt 5 — ausprobieren: Duell der Rollen: Geber gegen Nehmer
+## Schritt 5 — ausprobieren: Duell der Wege: Zahlenrechnung gegen Strom-Deutung
 
-VERGLEICH: Waehle erst die Rolle — (i) Geber oder (ii) Nehmer — dann loesen.选程序：先定电子角色。
+VERGLEICH: Waehle erst den Redox-Weg, dann loesen: (i) Zahlen-Rechenweg oder (ii) Strom-Deuteweg — dann loesen.选程序：先看信号词再选路。
 
-Weg A：Weg A (Geber-Weiche): Zahl steigt, Oxidation, Reduktionsmittel.
 
-Weg B：Weg B (Nehmer-Weiche): Zahl sinkt, Reduktion, Oxidationsmittel.
+Weg A：Weg A (Zahlen-Rechenweg): Oxidationszahlen quantitativ bestimmen und Bilanzen ausrechnen. Dieser Weg liefert exakte Gleichungen.
 
-AUFGABE A: Eisen geht von 0 auf +2. Welche Rolle? 【选程序：先看信号词再选路】
+Weg B：Weg B (Strom-Deuteweg): Stromrichtung und Korrosion qualitativ mit der Reihe deuten. Dieser Weg warnt schnell, bleibt aber ohne Zahl weich.
 
-AUFGABE B: Sauerstoff geht von 0 auf -2. Welche Rolle? 【选程序：先看信号词再选路】
 
-HILFE：A steigt — Weg A. B sinkt — Weg B.
+AUFGABE A: Ausgeglichene Redox-Gleichung exakt gesucht. Welcher Weg? 【选程序：先看信号词再选路】
 
-ANTWORT：ANTWORT: A folgt Weg A als Oxidation durch ein Reduktionsmittel; B folgt Weg B als Reduktion durch ein Oxidationsmittel.
+AUFGABE B: Warum rostet Eisen am Zink nicht? Welcher Weg? 【选程序：先看信号词再选路】
 
-`Klausur-Satz: Geber oder Nehmer entscheidet die Rolle.`
 
-## Schritt 6 — check: Selbsttest zu Redoxreaktionen und Oxidationszahlen
+HILFE：A nennt Gleichung — Weg A mit Bilanz. B nennt Warum mit Reihe — Weg B mit Deutung.
 
-FRAGE：氧化是什么？（Was heisst Oxidation?） | ANTWORT：失电子、数上升。 / Elektronen abgeben, Zahl steigt.
-FRAGE：氧化剂是什么？（Was ist ein Oxidationsmittel?） | ANTWORT：拿电子、自己被还原。 / Nimmt auf, wird selbst reduziert.
-FRAGE：配平先平什么？（Was zuerst beim Bilanzausgleich?） | ANTWORT：先让电子相等。 / Elektronen gleichsetzen.
+ANTWORT：中文：A走数字路配电子；B走电化学路讲牺牲阳极。 / 德语：A folgt Weg A mit e-Ausgleich; B folgt Weg B mit Opferanoden-Argument.
 
-`Klausur-Satz: Elektronen zuerst, Atome danach.`
+`Klausur-Satz: Zahlen rechnen lokalisiert, Stroeme deuten warnen — die Klausur braucht beides.`
+
+## Schritt 6 — check: Selbsttest zu Redox und Oxidationszahlen
+
+- FRAGE:：氧化是什么？（Was ist Oxidation） | ANTWORT:：失电子数升。 / Elektronenabgabe mit steigender Zahl.
+
+- FRAGE:：谁被还原？（Wer wird reduziert） | ANTWORT:：得电子的氧化剂。 / Das Oxidationsmittel, das nimmt.
+
+- FRAGE:：砺状阵怎么用？（Wozu dient die Spannungsreihe） | ANTWORT:：判牺牲阳极。 / Opferanoden bestimmen.
+
+
+`Klausur-Satz: Ohne e-Bilanz bleibt jede Redox-Gleichung geraten, mit ihr wird sie bewiesen.`
 
 ## Fehlvorstellung
 
-1. 误解：误解“氧化必须有氧”。
-   中文纠偏：见德语纠偏句。
-   Korrektur-Satz: `Nur Elektronen zählen; Sauerstoff ist nur ein Nehmer unter vielen.`
-2. 误解：误解“试剂按自己命名”。
-   中文纠偏：见德语纠偏句。
-   Korrektur-Satz: `Sie heissen nach dem Opfer: Oxidationsmittel oxidiert anderes.`
+1. 误解：氧化必有氧。
+   中文纠偏：氧化只需失电子，无氧也行。
+   Korrektur-Satz: `Oxidation braucht nur Elektronenabgabe: Auch ohne Sauerstoff wird oxidiert.`
 
-## Schritt 7 — szenario: Klausurtransfer: Protokoll der Redox-Wache
+2. 误解：氧化剂被氧化。
+   中文纠偏：氧化剂被还原，拿电子自己降。
+   Korrektur-Satz: `Das Oxidationsmittel wird reduziert: Es nimmt und sinkt selbst.`
 
-ROLLE：中文：你是化工基地夜班技术员。 / 德语：Du bist Wache an Tor 9.
-SITUATION：钢架生锈，请用氧化数说清给受双方并命名试剂（约130词）。 / 德语：Rost frisst Stahl. Erklaere in ca. 130 Woertern mit Zahlen, wer gibt und nimmt, und benenne beide Mittel.
-RUBRIC (30 XP)：Zahlen (10 XP) | Rollen (10 XP) | Mittel (6 XP) | Sprache (4 XP).
+## Schritt 7 — szenario: Klausurtransfer: Gutachten zum Brueckenrost
 
-`Klausur-Satz: Rost zeigt: Eisen gibt, Sauerstoff nimmt.`
+ROLLE：中文：你是桥梁检测员。 / 德语：Du bist Brueckenprueferin.
+SITUATION：大桥生锈：请用氧化数、配平与顺序在刷漆与牺牲阳极间裁决（约150词）。 / 德语：Die Bruecke rostet. Entscheide in ca. 150 Woertern mit OZ, Bilanz und Reihe zwischen Streichen und Sanieren mit Opferanoden.
+RUBRIC (30 XP)：OZ-Logik (8 XP) | Bilanz (8 XP) | Reihenurteil (8 XP) | Empfehlung (6 XP).
+
+
+`Klausur-Satz: Achtung Falle: Oxidationsmittel wird reduziert — die Namen tauschen die Rollen.`
 
 ## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY核心总结：
 
-中文：因果链：氧化数升=给出=氧化；降=拿走=还原。试剂以后果命名：让别人氧化的自己拿电子。配平即先让电子相等，再平原子与电荷。
-Takeaway-Satz: `Buchhaltung mit Elektronen schlägt Raten.`
+中文：升失降得、配平收尾：三步终结锈题。
+Takeaway-Satz: `Steigen gibt, Sinken nimmt, Bilanz gleicht: Drei Schritte, null Rost-Raetsel.`
 
-`Klausur-Satz: Buchhaltung mit Elektronen schlägt Raten.`
+`Klausur-Satz: Korrosion ist Zeitlupe der Batterie: Dieselben Elektronen, anderes Tempo.`
 
 
 REFLEXION 2问：
 1. 过程自省：Welcher Schritt fiel schwerer — die Sandkasten-Challenge (Schritt 4) oder die Verfahrenswahl (Schritt 5)?
-2. 元认知计划：Beim nächsten Mal sichere ich zuerst die Werkzeugkiste, weil jeder Handgriff darauf aufbaut.
+2. 元认知计划：Beim naechsten Mal sichere ich zuerst die Werkzeugkiste, weil jeder Handgriff darauf aufbaut.

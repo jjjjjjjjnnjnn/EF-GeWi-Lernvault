@@ -14,112 +14,136 @@ version: Lesson-v3
 # Lernreise: Stoechiometrie und Massenwirkungsgesetz — Episode C20: Der störrische Indikator
 
 <!-- Campaign: Imperium-Alchemie | Chemie | entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
-
-## Schritt 1 — entdecken: Der verschwundene Umschlag
+## Schritt 1 — entdecken: Der Airbag in 30 Millisekunden
 
 ZIELE:
-1. Ich kann Gleichungen ausgleichen.
-2. Ich kann über Mol-Brücken rechnen.
-3. Ich kann Ausbeute und Umsatz bestimmen.
+1. Ich kann **Mol-Verhaeltnisse** aus Koeffizienten lesen.
+2. Ich kann **Massen, Volumina und Konzentrationen** umrechnen.
+3. Ich kann **begrenzende Reaktanden** bestimmen.
 
-Phenolphthalein bleibt farblos, wo Pink erwartet war; der Titrationsautomat streikt. In der Bilanzkammer fehlt ein Umschlag: Die Charge wiegt weniger als geplant, und Jonas Säure vermisst Mol um Mol. Vera Haber legt die Waage frei: Erst die Gleichung ausgleichen, dann über Mol-Brücken wiegen. Mia Puffer findet den Fehler — ein Koeffizient war falsch, und die ganze Brücke wackelte. Heute wird bilanziert, bis Q wieder bei K steht.
+Crash-Test 09:00 Uhr: In 30 Millisekunden entscheidet der Airbag ueber Leben. Natriumazid muss blitzschnell exakt 60 Liter Stickstoff liefern — ein Gramm zu viel verletzt, ein Gramm zu wenig schuetzt nicht. Die **Koeffizienten** schreiben das Drehbuch.
 
-`Klausur-Satz: Erst ausgleichen, dann wiegen.`
+Wer **Mol** in Gramm und Liter uebersetzt und den **begrenzenden Reaktanden** findet, baut Sicherheit statt Zufall. Heute wird gewogen, was knallt.
 
-## Schritt 2 — entdecken: Die Mol-Brücken-Kiste der Bilanzprüfer
+`Klausur-Satz: Dreissig Millisekunden Sicherheit stecken in einem Verhaeltnis: Wer wiegt, schuetzt.`
+
+## Schritt 2 — entdecken: Die Mengen-Werkzeugkiste der Sprengmeister
 
 AUSRUESTUNG (5 Begriffe der Werkzeugkiste):
 
-- Koeffizient: Mol-Brücke zwischen Stoffen.
-- Molmasse: Gramm je Mol aus dem Periodensystem.
-- Limitierendes Reagens: Knappste Grösse bremst die Charge.
-- Theoretische Ausbeute: Maximum aus der Bilanz.
-- Umsatz: Verbraucht durch Einsatz.
+- **Koeffizientenverhaeltnis**: Koeffizienten geben Mol-Verhaeltnisse der Reaktion an. Sie sind der Vertrag jeder Umsetzung. Mechanismus: Man liest 2 zu 1 zu 2 und uebersetzt jede Menge ueber Mol in die Partner. Klausur-Tipp: Verhaeltnis als Bruch schreiben, nie im Kopf behalten.
 
-`Klausur-Satz: Koeffizienten sind Mol-Brücken.`
+- **Begrenzender Reaktand**: Der begrenzende Reaktand verbraucht sich zuerst und stoppt die Reaktion. Er allein bestimmt die Ausbeute. Mechanismus: Man rechnet alle Edukte in Mol um und teilt durch Koeffizienten; der kleinste Quotient begrenzt. Klausur-Tipp: Quotientenvergleich als Nachweis hinschreiben.
 
-## Schritt 3 — entdecken: Vom Koeffizienten zur Ausbeute: Die Brückenkette
+- **Molares Volumen**: Das molare Volumen fasst 22,4 L pro Mol Gas bei Normbedingungen. Es verbindet Mol mit Litern. Mechanismus: Man multipliziert Mol mit 22,4; andere Bedingungen verlangen die Gasgleichung. Klausur-Tipp: 22,4 nur mit Normbedingungen nennen.
+
+- **Prozent-Ausbeute**: Die prozentuale Ausbeute teilt reale durch theoretische Menge. Sie misst Verluste und Nebenwege. Mechanismus: Man rechnet theoretisch aus dem Begrenzer und vergleicht mit der Waage. Klausur-Tipp: Theorie zuerst, Praxis danach als Ordnung.
+
+- **MWG-Ansatz**: Der MWG-Ansatz schreibt K aus Gleichgewichtswerten mit Exponenten. Er ergaenzt Mengen um Lage. Mechanismus: Man setzt c_eq ein; Feststoffe entfallen aus dem Bruch. Klausur-Tipp: Ansatz und Rechnung als zwei getrennte Punkte.
+
+
+`Klausur-Satz: Koeffizienten sind Mol-Vertraege: Der kleinste Quotient begrenzt.`
+
+## Schritt 3 — entdecken: Von Gramm zu Gas: Die Verhaeltniskette
 
 WIRKUNGSGEFUEGE (Ursache zu Wirkung):
 
-Die Kette: Ausgleichen, Mol umrechnen, Brücke über Koeffizienten schlagen, knappste Grösse finden, Ausbeute teilen. Wer die Brücke falsch baut, wiegt falsch.
+Die Verhaeltniskette startet mit **Gramm**: Mol-Brücke in Mol umrechnen. Dann folgt der **Vertrag**: Koeffizienten uebersetzen Mol in Mol des Partners.
+
+Zuletzt kuerzt der **Begrenzer**: Kleinster Quotient gewinnt, Rest bleibt uebrig. Gas wird ueber **22,4 L** zu Litern, Loesung ueber c zu Millilitern.
 
 ```diagram
-Ausgleich -> Mol -> Bruecke -> Knappste -> Ausbeute
-Koeffizient = Brueckenpfeiler
+m -> n (M) -> Partner-n (Koeff) -> Zielgroesse
+Begrenzer = min(n/Koeff)
+Gas: mal 22,4 L | Loesung: durch c
 ```
 
-`Klausur-Satz: Knapp bestimmt die Charge.`
+Die Uebersetzungsformeln des Sandkastens:
+
+$$\frac{n_A}{n_B} = \frac{a}{b} \quad ; \quad m = n \cdot M$$
+
+Jede Stöchiometrie laeuft ueber Mol: Gramm sind nur die Verpackung.
+
+`Klausur-Satz: Gramm wird Mol, Mol wird Partner, Partner wird Liter: Die Kette endet im Airbag.`
 
 ## Anekdote & Fun-Fact
 
-**Anekdote / Fun-Fact (DE)**: Die Waage lügt nie, aber sie spricht Mol: Wer Gramm vergleicht, hört die falsche Sprache.
+**Anekdote / Fun-Fact (DE)**: Backpulver treibt Kuchen mit CO2 — Stöchiometrie als Gebaeck.
 
-**Bezug zum Konzept**: Brücken tragen Chargen.
 
-## Schritt 4 — ausprobieren: Brücken-Sandkasten: Rette die Charge
+**Bezug zum Konzept**: Vom Kuchen zum Airbag: Dieselbe Kette, anderes Tempo.
+
+## Schritt 4 — ausprobieren: Sandkasten: Fuell den Airbag exakt
 
 [Werkzeug: formula]
 
-AUFGABE (Target Challenge): Target Challenge: Aus 8,78 g Edukt (M = 36,5 g/mol) mit Koeffizienten 6,3 mal 10 hoch minus 5 rechne Produktmasse und Umsatz bei 85 % Ausbeute. Ziel: Gramm-exakt mit Brückenweg. AUFGABE konkret: 8,78 g Edukt, M = 36,5: Wieviel Mol sind im Spiel?
+AUFGABE (Target Challenge): Gegeben: 2 NaN3 -> 2 Na + 3 N2; Ziel 60 L N2 bei Normbedingungen. Berechne die Azidmasse, bestimme den Begrenzer bei 200 g Azid plus Zuenderueberschuss und gib die Ausbeute bei real 55 L an.
 
 HILFE:
-1. n = m durch M.
-2. Brücke über Koeffizienten.
-3. Mal Ausbeute.
+1. Ziel-Liter in Mol uebersetzen: durch 22,4.
+2. Ueber Koeffizienten zum Azid zurueckrechnen.
+3. Begrenzer per Quotient, Ausbeute per Division.
 
-MUSTERLÖSUNG: Mol bilden, Brücke schlagen, knappste Grösse wägen, Ausbeute teilen — Gramm-exakt.
+MUSTERLOESUNG: 60 L sind 2,68 mol N2 und brauchen 1,79 mol Azid, also 117 g; Begrenzer Azid; Ausbeute 55 durch 60 gleich 92 Prozent.
 
-`Klausur-Satz: Gramm lügen, Mol sprechen wahr.`
+`Klausur-Satz: Mit 130 g Azid fuer 60 L Stickstoff fuellt der Sandkasten statt zu raten.`
 
-## Schritt 5 — ausprobieren: Duell der Fragen: Wieviel gegen Wohin
+## Schritt 5 — ausprobieren: Duell der Wege: Mol-Rechnung gegen Koeffizienten-Blick
 
-VERGLEICH: Waehle erst die Frage — (i) Wieviel oder (ii) Wohin — dann loesen.
+VERGLEICH: Waehle erst den Mengen-Weg, dann loesen: (i) Mol-Rechenweg oder (ii) Koeffizienten-Blickweg — dann loesen.
 
-Weg A (Mengen-Weiche): Brücken rechnen bis Gramm.
 
-Weg B (Lage-Weiche): Q gegen K bis Richtung.
+Weg A (Mol-Rechenweg): Mengen quantitativ durchrechnen bis Gramm und Liter. Dieser Weg liefert exakte Zahlen.
 
-AUFGABE A: Produktmasse aus 8,78 g gesucht. Welcher Weg?
+Weg B (Koeffizienten-Blickweg): Verhaeltnisse qualitativ lesen und Begrenzer schnell erkennen. Dieser Weg ist schnell, bleibt aber grob.
 
-AUFGABE B: Nur Druck erhöht, Richtung gesucht. Welcher Weg?
 
-HILFE: A fragt Gramm — Weg A. B fragt Richtung — Weg B.
+AUFGABE A: Azidmasse aus Litern exakt gesucht. Welcher Weg?
 
-ANTWORT: A folgt Weg A mit Mol-Brücke; B folgt Weg B mit Q-gegen-K.
+AUFGABE B: Welcher Stoff begrenzt bei Überschuss? Welcher Weg?
 
-`Klausur-Satz: Wieviel oder Wohin entscheidet den Weg.`
 
-## Schritt 6 — check: Selbsttest zu Stoechiometrie und Massenwirkungsgesetz
+HILFE: A nennt exakt — Weg A mit Kette. B nennt Begrenzer — Weg B mit Quotient.
 
-FRAGE: Was ist die Brücke? | ANTWORT: Koeffizienten als Mol-Verhältnis.
-FRAGE: Was bremst die Charge? | ANTWORT: Das knappste Reagens.
-FRAGE: Was heisst Umsatz? | ANTWORT: Verbraucht durch Einsatz.
+ANTWORT: A folgt Weg A mit Liter-Mol-Gramm-Kette; B folgt Weg B mit min-Quotienten.
 
-`Klausur-Satz: Brücke schlagen heisst Koeffizienten lesen.`
+`Klausur-Satz: Mol rechnen beweist, Koeffizienten lesen lenkt — die Klausur braucht beides.`
+
+## Schritt 6 — check: Selbsttest zu Stoechiometrie und MWG
+
+- FRAGE: Was geben Koeffizienten an? | ANTWORT: Mol-Verhaeltnisse.
+
+- FRAGE: Wie gross ist das molare Volumen? | ANTWORT: 22,4 L pro Mol bei Normbedingungen.
+
+- FRAGE: Wie findest du den Begrenzer? | ANTWORT: Der kleinste Quotient begrenzt.
+
+
+`Klausur-Satz: Ohne Begrenzer bleibt jede Ausbeute geraten, mit ihm wird sie berechnet.`
 
 ## Fehlvorstellung
 
-1. Fehlvorstellung: Gramm direkt vergleichen.
-   Korrektur-Satz: `Erst Mol, dann Brücke — Gramm lügen.`
-2. Fehlvorstellung: Koeffizienten seien Deko.
-   Korrektur-Satz: `Sie sind die Pfeiler jeder Brücke.`
+1. Fehlvorstellung: Masseverhaeltnisse folgten Koeffizienten.
+   Korrektur-Satz: `Koeffizienten zaehlen Mol, nicht Gramm: Erst M macht Masse daraus.`
 
-## Schritt 7 — szenario: Klausurtransfer: Prüfbericht aus der Bilanzkammer
+2. Fehlvorstellung: Ausbeute sei immer hundert.
+   Korrektur-Satz: `Verluste und Nebenwege kosten: Real durch Theorie heisst Ehrlichkeit.`
 
-ROLLE: Du bist Prüferin in der Bilanzkammer.
-SITUATION: Eine Charge bleibt unter Plan. Finde in ca. 130 Woertern per Brückenrechnung das knappste Reagens und die wahre Ausbeute.
-RUBRIC (30 XP): Ausgleich (8 XP) | Brücke (10 XP) | Knappste (6 XP) | Ausbeute (6 XP).
+## Schritt 7 — szenario: Klausurtransfer: Freigabebericht zum Gasgenerator
 
-`Klausur-Satz: Ausbeute teilt Traum durch Bilanz.`
+ROLLE: Du bist Sprengmeisterin im Crash-Labor.
+SITUATION: Der Generator liefert 55 statt 60 L. Erklaere in ca. 150 Woertern mit Mol, Begrenzer und Ausbeute die Luecke und gib die Charge frei oder nicht.
+RUBRIC (30 XP): Mol-Kette (8 XP) | Begrenzer (8 XP) | Ausbeute (8 XP) | Urteil (6 XP).
+
+
+`Klausur-Satz: Achtung Falle: Ueberschuss reagiert nie vollstaendig — nur der Begrenzer zaehlt.`
 
 ## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY:
 
-Takeaway-Satz: `Bilanz bis Q bei K.`
+Takeaway-Satz: `Wiegen, teilen, vergleichen: Mol, Quotient, Begrenzer in dieser Reihenfolge.`
 
-`Klausur-Satz: Bilanz bis Q bei K.`
+`Klausur-Satz: Stöchiometrie ist Gerechtigkeit: Kein Atom geht verloren, jedes wird verbucht.`
 
 
 REFLEXION:

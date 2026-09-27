@@ -14,112 +14,136 @@ version: Lesson-v3
 # Lernreise: CN-Tricks: sechs Loesungsverfahren — Episode C5: Der verschwundene Umschlag
 
 <!-- Campaign: Imperium-Alchemie | Chemie | entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
-
 ## Schritt 1 — entdecken: Die Trickkiste von Katalysator-Karl
 
 ZIELE:
-1. Ich kann sechs Formelkarten nennen.
-2. Ich kann jede Karte einer Frage zuordnen.
-3. Ich kann Karten in sechzig Sekunden abrufen.
+1. Ich kann sechs **Formelkarten** nennen.
+2. Ich kann jede Karte einer **Frageart** zuordnen.
+3. Ich kann alle Karten in sechzig Sekunden abrufen.
 
-Die Stoffmengenbilanz geht nicht auf; Jonas Säure zählt Mol um Mol nach. Um Mitternacht flackern alle sechs Formel-Karten der Alchemie: MWG, Q, pH, Titration, Redox, Mol-Brücke. Mia Puffer sortiert das Handbuch neu, Jonas Säure klebt Merksätze an jede Karte, und Vera Haber prüft morgen jede einzelne. Heute wird gelegt, was sitzt: Wer die sechs Karten in sechzig Sekunden abrufen kann, besteht jede Klausur.
+Die Stoffmengenbilanz geht nicht auf; Jonas Saeure zaehlt Mol um Mol nach. Um Mitternacht flackern alle sechs Formel-Karten der Alchemie: MWG, Q, pH, Titration, Redox, Mol-Bruecke. Mia Puffer sortiert das Handbuch neu, Jonas klebt Merksaetze an jede Karte.
 
-`Klausur-Satz: Sechs Karten tragen jede Klausur.`
+Vera Haber prueft morgen jede einzelne. Heute wird gelegt, was sitzt: Wer die sechs Karten in sechzig Sekunden abrufen kann, besteht jede Klausur. Jede Frage zieht genau eine Karte — und jede Karte loest genau einen Fragetyp.
+
+`Klausur-Satz: Sechs Karten tragen jede Klausur: Wer zieht, loest.`
 
 ## Schritt 2 — entdecken: Sechs Verfahrens-Bausteine im Kasten
 
 AUSRUESTUNG (5 Begriffe der Werkzeugkiste):
 
-- MWG-Karte: K aus potenzierten c.
-- Q-Karte: Gleiche Formel, jetzt gemessen.
-- pH-Karte: Minus log der H-Konzentration.
-- Mol-Karte: n = m durch M.
-- Redox-Karte: Steigen geben, Sinken nehmen.
+- **MWG-Karte**: Die MWG-Karte schreibt K aus potenzierten Gleichgewichtskonzentrationen. Sie gilt nur im Gleichgewicht, nie unterwegs. Mechanismus: Man setzt c_eq mit Hochzahlen aus der Gleichung ein und deutet die Lage aus der Groesse von K. Klausur-Tipp: Gleichgewicht im Text heisst sofort diese Karte.
 
-`Klausur-Satz: Wieviel zieht Mengen, Wohin zieht Lage.`
+- **Q-Karte**: Die Q-Karte nutzt dieselbe Formel zum aktuellen Zeitpunkt. Sie verrät die Richtung aus dem Vergleich mit K. Mechanismus: Man setzt Momentanwerte ein: kleiner heisst rechts, groesser heisst links. Klausur-Tipp: Richtungswort im Text heisst diese Karte plus Pfeil.
+
+- **pH-Karte**: Die pH-Karte berechnet den negativen Log der H3O-Konzentration. Sie gilt verduennt bei 25 Grad. Mechanismus: Man nimmt starke Saeuren direkt, schwache mit Naeherung ueber Ks. Klausur-Tipp: Stark oder schwach zuerst klaeren, dann rechnen.
+
+- **Mol-Karte**: Die Mol-Karte n gleich m durch M verbindet Gramm mit Gleichung. Jede Wieviel-Frage startet hier. Mechanismus: Man rechnet in Mol um, uebersetzt Koeffizienten und rechnet zurueck in die gefragte Groesse. Klausur-Tipp: Gramm im Text heisst diese Karte ohne Nachdenken.
+
+- **Redox-Karte**: Die Redox-Karte ordnet Oxidation als Abgabe und Reduktion als Aufnahme von Elektronen. Steigen gibt, Sinken nimmt. Mechanismus: Man bestimmt Oxidationszahlen, bilanziert Elektronen und gleicht Ladungen aus. Klausur-Tipp: e-minus-Bilanz als letzte Zeile nie vergessen.
+
+
+`Klausur-Satz: Wieviel zieht Mengen, Wohin zieht Lage, Strom zieht Redox.`
 
 ## Schritt 3 — entdecken: Vom Trick zum Verfahren: Die Methoden-Weiche
 
 WIRKUNGSGEFUEGE (Ursache zu Wirkung):
 
-Die Kette: Frage lesen, Karte ziehen, einsetzen. Wieviel zieht Mol und MWG, Wohin zieht Q und Le Chatelier, Sieden zieht Haft, Strom zieht Redox.
+Die Kette: Frage lesen, Karte ziehen, einsetzen. **Wieviel** zieht Mol und MWG, **Wohin** zieht Q und Le Chatelier, Sieden zieht Haftkraefte, Strom zieht **Redox**.
+
+Jede Karte endet mit Beleg: Zahl mit Einheit oder Richtung mit Pfeil. Die sechste Karte, Titration, wartet auf den Aequivalenzpunkt mit c-mal-V-Gleichung.
 
 ```diagram
 Wieviel -> Mol/MWG | Wohin -> Q/LeChatelier
 Sieden -> Haft | Strom -> Redox
+Jede Karte endet mit Beleg
 ```
 
-`Klausur-Satz: Q kleiner K heisst rechts.`
+Die Brueckenformel des Stapels:
+
+$$n = \frac{m}{M} \quad ; \quad c = \frac{n}{V}$$
+
+Jede Wieviel-Rechnung startet mit dieser Bruecke; ohne Mol keine Stöchiometrie.
+
+`Klausur-Satz: Frage lesen, Karte ziehen, einsetzen — die Weiche irrt nie.`
 
 ## Anekdote & Fun-Fact
 
-**Anekdote / Fun-Fact (DE)**: Sechs Karten, sechzig Sekunden: Das Handbuch passt in eine Hosentasche und trägt durch jede Klausur.
+**Anekdote / Fun-Fact (DE)**: Sechs Karten, sechzig Sekunden: Das Handbuch passt in eine Hosentasche und traegt durch jede Klausur.
 
-**Bezug zum Konzept**: Karten tragen Klausuren.
+
+**Bezug zum Konzept**: Karten tragen Klausuren: Griff und Tempo entscheiden.
 
 ## Schritt 4 — ausprobieren: Trick-Sandkasten: Sechs Bausteine im Einsatz
 
-[Werkzeug: highlighter]
+[Werkzeug: formula]
 
-AUFGABE (Target Challenge): Target Challenge: Markiere in 220 Woertern alle Signalwörter und ordne sechs Tricks zu. Ziel: 8 Treffer in 4 Minuten. AUFGABE konkret: Q kleiner K: Welche Karte und welche Richtung?
+AUFGABE (Target Challenge): Sechs Faelle: Gramm aus Gleichung, Q-Richtung nach Druckstoss, pH aus 0,01 mol/L, Aequivalenz aus Buerette, Redox-Bilanz, Siede-Erklärung. Ordne alle sechs Karten zu und rechne Mol-Fall und Q-Fall mit Einheit durch.
 
 HILFE:
-1. Karte ziehen.
-2. Richtung nennen.
-3. Mini-Rechnung dazu.
+1. Frageart bestimmen: Wieviel, Wohin, Warum.
+2. Karte ziehen und Verfahren nennen.
+3. Zwei Faelle mit Formel und Einheit durchrechnen.
 
-MUSTERLÖSUNG: Q-Karte ziehen, rechts laufen bis Q gleich K — plus Mini-Rechnung als Beleg.
+MUSTERLOESUNG: Gramm zieht Mol-Karte mit n gleich m durch M; Druckstoss zieht Q-Karte mit rechts; alle Zuordnungen sitzen, beide Rechnungen tragen Einheiten.
 
-`Klausur-Satz: n gleich m durch M.`
+`Klausur-Satz: Mit Q-Karte und Mini-Rechnung als Beleg laeuft der Sandkasten statt zu raten.`
 
-## Schritt 5 — ausprobieren: Duell der Methoden: Skizze gegen Rechnung
+## Schritt 5 — ausprobieren: Duell der Stapel: Mengen gegen Lage
 
-VERGLEICH: Waehle erst den Stapel — (i) Mengen oder (ii) Lage — dann loesen.
+VERGLEICH: Waehle erst den Stapel, dann loesen: (i) Mengen-Stapel oder (ii) Lage-Stapel — dann loesen.
 
-Weg A (Mengen-Stapel): Mol, MWG, pH direkt.
 
-Weg B (Lage-Stapel): Q, Le Chatelier, Haft, Redox.
+Weg A (Mengen-Stapel): Mol, MWG und pH quantitativ direkt berechnen. Dieser Weg liefert harte Zahlen und ist pruefungssicher.
 
-AUFGABE A: Gramm aus Gleichung. Welcher Stapel?
+Weg B (Lage-Stapel): Q, Le Chatelier, Haft und Redox qualitativ deuten und zuordnen. Dieser Weg liefert Verstaendnis, bleibt aber ohne Zahl duenn.
 
-AUFGABE B: Richtung nach Druckstoss. Welcher Stapel?
 
-HILFE: A fragt Gramm — Weg A. B fragt Richtung — Weg B.
+AUFGABE A: Gramm aus Gleichung gesucht. Welcher Stapel?
 
-ANTWORT: A folgt Weg A mit Mol-Brücke; B folgt Weg B mit Q-gegen-K.
+AUFGABE B: Richtung nach Druckstoss gesucht. Welcher Stapel?
 
-`Klausur-Satz: Jede Frage zieht genau eine Karte.`
 
-## Schritt 6 — check: Selbsttest zu CN-Tricks: sechs Loesungsverfahren
+HILFE: A fragt Gramm — Weg A mit Mol. B fragt Richtung — Weg B mit Q.
 
-FRAGE: Nenne drei Karten. | ANTWORT: MWG, Q, pH.
-FRAGE: Wohin gehört Q? | ANTWORT: Zum Lage-Stapel.
-FRAGE: Wohin gehört Mol? | ANTWORT: Zum Mengen-Stapel.
+ANTWORT: A folgt Weg A mit Mol-Bruecke und Gramm-Einheit; B folgt Weg B mit Q-gegen-K-Pfeil.
 
-`Klausur-Satz: Abruf schlägt Besitz.`
+`Klausur-Satz: Mengen stapeln wiegen, Lage stapeln deuten — jede Frage zieht genau eine Karte.`
+
+## Schritt 6 — check: Selbsttest zu CN-Tricks
+
+- FRAGE: Wie viele Karten in wie vielen Sekunden? | ANTWORT: Sechs Karten in sechzig Sekunden.
+
+- FRAGE: Wohin gehört Q? | ANTWORT: Zum Lage-Stapel.
+
+- FRAGE: Wohin gehört Mol? | ANTWORT: Zum Mengen-Stapel.
+
+
+`Klausur-Satz: Ohne Zuordnung bleibt jede Karte Deko, mit ihr wird sie Waffe.`
 
 ## Fehlvorstellung
 
 1. Fehlvorstellung: Karten sammeln reiche.
-   Korrektur-Satz: `Nur Abruf unter Zeit zählt.`
-2. Fehlvorstellung: Eine Karte passe überall.
-   Korrektur-Satz: `Jede Frage zieht genau eine Karte.`
+   Korrektur-Satz: `Nur Abruf unter Zeit zaehlt: Sechzig Sekunden entscheiden ueber Besitz oder Deko.`
+
+2. Fehlvorstellung: Eine Karte passe ueberall.
+   Korrektur-Satz: `Jede Frage zieht genau eine Karte: Gramm zieht Mol, Richtung zieht Q.`
 
 ## Schritt 7 — szenario: Klausurtransfer: Feuerwehr-Einsatz im Klausurbrand
 
-ROLLE: Du bist Handbuch-Prüferin.
-SITUATION: Sechs Fragen liegen bereit. Ordne in ca. 120 Woertern jede Frage einer Karte zu und rechne zwei Beispiele.
+ROLLE: Du bist Handbuch-Prueferin.
+SITUATION: Sechs Fragen liegen bereit. Ordne in ca. 120 Woertern jede Frage einer Karte zu und rechne zwei Beispiele mit Einheit.
 RUBRIC (30 XP): Zuordnung (12 XP) | Rechnungen (12 XP) | Sprache (6 XP).
 
-`Klausur-Satz: Sechzig Sekunden entscheiden.`
+
+`Klausur-Satz: Achtung Falle: Titrations-Karte braucht den Umschlagpunkt, nicht irgendeinen Farbumschlag.`
 
 ## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY:
 
-Takeaway-Satz: `Handbuch im Kopf statt Zettel.`
+Takeaway-Satz: `Handbuch im Kopf statt Zettel: sechzig Sekunden entscheiden.`
 
-`Klausur-Satz: Handbuch im Kopf statt Zettel.`
+`Klausur-Satz: Tricks sind komprimierte Verfahren: Wer sie wählt, rechnet; wer sie sammelt, starrt.`
 
 
 REFLEXION:

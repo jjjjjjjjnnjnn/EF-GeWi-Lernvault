@@ -14,112 +14,136 @@ version: Lesson-v3
 # Lernreise: CN-Formelhandbuch: sechs Formelkarten — Episode C1: Druckstoß in Halle Haber
 
 <!-- Campaign: Imperium-Alchemie | Chemie | entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
-
-## Schritt 1 — entdecken: Formelalarm um Mitternacht
+## Schritt 1 — entdecken: Der Formeltresor: Sieben Schluessel
 
 ZIELE:
-1. Ich kann sechs Formelkarten nennen.
-2. Ich kann jede Karte einer Frage zuordnen.
-3. Ich kann Karten in sechzig Sekunden abrufen.
+1. Ich kann sieben **Kernformeln** mit Bedingung nennen.
+2. Ich kann jede Formel einer **Frageart** zuordnen.
+3. Ich kann mit **Einheitencheck** Fehler fangen.
 
-Direktorin Dr. Vera Haber meldet Druckabfall am Syntheseturm; KI LECHA-7 blinkt gelb. Um Mitternacht flackern alle sechs Formel-Karten der Alchemie: MWG, Q, pH, Titration, Redox, Mol-Brücke. Mia Puffer sortiert das Handbuch neu, Jonas Säure klebt Merksätze an jede Karte, und Vera Haber prüft morgen jede einzelne. Heute wird gelegt, was sitzt: Wer die sechs Karten in sechzig Sekunden abrufen kann, besteht jede Klausur.
+Der Formeltresor blinkt rot: Sieben Faecher, ein Schluesselbund, Pruefung morgen. Verwalter Jonas Saeure feilt Formeln zu Schluesseln — pH, Mol, MWG, Q, Titration, Redox, Gas. Doch jeder Schluessel oeffnet genau ein Fach.
 
-`Klausur-Satz: Sechs Karten tragen jede Klausur.`
+Falscher Schluessel, zuer Tuer: Wer **Bedingungen** und **Einheiten** beherrscht, oeffnet alle sieben. Heute wird sortiert, was sitzt: Formel, Frage, Einheit — der Dreiklang jeder Klausur.
 
-## Schritt 2 — entdecken: Die Sechs-Karten-Kiste der Formelwache
+`Klausur-Satz: Sieben Schluessel, sieben Faecher: Wer die Bedingung kennt, oeffnet.`
+
+## Schritt 2 — entdecken: Sieben Formel-Bausteine im Tresor
 
 AUSRUESTUNG (5 Begriffe der Werkzeugkiste):
 
-- MWG-Karte: K aus potenzierten c.
-- Q-Karte: Gleiche Formel, jetzt gemessen.
-- pH-Karte: Minus log der H-Konzentration.
-- Mol-Karte: n = m durch M.
-- Redox-Karte: Steigen geben, Sinken nehmen.
+- **pH-Formel**: pH ist der negative dekadische Logarithmus der H3O-Konzentration. Sie quetscht zehn Zehnerpotenzen in Zahlen von 0 bis 14. Mechanismus: Man misst c(H3O+), nimmt den Log und wechselt das Vorzeichen; jede Einheit halbiert oder verzehnfacht. Klausur-Tipp: pH plus pOH gleich 14 als Rettungsanker.
 
-`Klausur-Satz: Wieviel zieht Mengen, Wohin zieht Lage.`
+- **Mol-Brücke**: Die Mol-Bruecke n gleich m durch M verbindet wiegbare Masse mit zaehlbaren Teilchen. Sie ist der Pass jeder Stöchiometrie. Mechanismus: Man wiegt Gramm, teilt durch die molare Masse und erhaelt Mol fuer die Gleichung. Klausur-Tipp: n-gleich-m-durch-M als ersten Satz jeder Rechnung.
 
-## Schritt 3 — entdecken: Vom Zettel zum Zugriff: Die Abrufkarte
+- **MWG-Ausdruck**: Der MWG-Ausdruck schreibt K als Quotient potenzierter Konzentrationen. Koeffizienten werden Exponenten, Feststoffe entfallen. Mechanismus: Man setzt Gleichgewichtswerte ein; der Bruch verrät die Lage. Klausur-Tipp: Hochzahlen aus der Gleichung, nie aus dem Kopf.
+
+- **Q-Kompass**: Q nutzt die K-Formel zum aktuellen Zeitpunkt als Kompass. Kleiner, groesser oder gleich K entscheidet. Mechanismus: Man setzt Momentanwerte ein und liest die Richtung ab wie einen Pfeil. Klausur-Tipp: Q-K-Paar immer gemeinsam hinschreiben.
+
+- **Redox-Leiter**: Die Redox-Leiter ordnet Oxidation als Elektronenabgabe und Reduktion als Aufnahme. Steigen gibt, Sinken nimmt. Mechanismus: Man bestimmt Oxidationszahlen schrittweise und bilanziert Elektronen links gegen rechts. Klausur-Tipp: e-minus-Bilanz als letzte Zeile jeder Redox-Rechnung.
+
+
+`Klausur-Satz: pH misst Saeure, Mol zaehlt Teilchen, K beschreibt Lage.`
+
+## Schritt 3 — entdecken: Vom Symbol zur Zahl: Die Formelbruecke
 
 WIRKUNGSGEFUEGE (Ursache zu Wirkung):
 
-Die Kette: Frage lesen, Karte ziehen, einsetzen. Wieviel zieht Mol und MWG, Wohin zieht Q und Le Chatelier, Sieden zieht Haft, Strom zieht Redox.
+Die Formelbruecke startet beim **Symbol**: Jede Frage traegt ihr Zeichen — pH, n, K, Q. Dann folgt die **Bedingung**: stark oder schwach, Gas oder Loesung, Moment oder Gleichgewicht.
+
+Zuletzt sichert der **Einheitencheck**: mol, mol/L, dimensionslos bei K. Falsche Einheit entlarvt falsche Formel, bevor der Pruefer es tut.
 
 ```diagram
-Wieviel -> Mol/MWG | Wohin -> Q/LeChatelier
-Sieden -> Haft | Strom -> Redox
+Symbol -> Bedingung -> Formel
+Einheitencheck: mol | mol/L | K dimensionslos
+Falsch hier -> zurueck zum Symbol
 ```
 
-`Klausur-Satz: Q kleiner K heisst rechts.`
+Die meistgegriffene Formel des Tresors:
+
+$$pH = -\log_{10}[H_3O^+]$$
+
+Jede pH-Einheit bedeutet Faktor zehn; der Log quetscht Welten in Zahlen.
+
+`Klausur-Satz: Symbol erkennen, Bedingung pruefen, Einheit sichern — die Bruecke haelt.`
 
 ## Anekdote & Fun-Fact
 
-**Anekdote / Fun-Fact (DE)**: Sechs Karten, sechzig Sekunden: Das Handbuch passt in eine Hosentasche und trägt durch jede Klausur.
+**Anekdote / Fun-Fact (DE)**: Soerensen erfand pH 1909 fuer Bier — die Brauerei gebar die Saeure-Skala.
 
-**Bezug zum Konzept**: Karten tragen Klausuren.
 
-## Schritt 4 — ausprobieren: Karten-Sandkasten: Lege das Handbuch
+**Bezug zum Konzept**: Vom Bier zur Batterie: Eine Skala regiert Saeuren und Keller.
+
+## Schritt 4 — ausprobieren: Formel-Sandkasten: Sieben Schloesser knacken
 
 [Werkzeug: formula]
 
-AUFGABE (Target Challenge): Target Challenge: Sechs Fragen, sechs Karten, sechzig Sekunden: Ordne fehlerfrei zu und rechne zwei Mini-Beispiele. Ziel: 6 von 6 plus 2 Rechnungen. AUFGABE konkret: Q kleiner K: Welche Karte und welche Richtung?
+AUFGABE (Target Challenge): Sieben Mini-Faelle: pH aus 0,01 mol/L HCl, Mol aus 10 g NaOH, K-Ansatz fuer Haber, Q-Entscheid, Aequivalenz aus Titration, Redox-Bilanz, Gasvolumen. Ordne zu und rechne drei mit Einheit.
 
 HILFE:
-1. Karte ziehen.
-2. Richtung nennen.
-3. Mini-Rechnung dazu.
+1. Symbol der Frage bestimmen.
+2. Bedingung pruefen: stark, Moment, Phase.
+3. Mit Einheit durchrechnen.
 
-MUSTERLÖSUNG: Q-Karte ziehen, rechts laufen bis Q gleich K — plus Mini-Rechnung als Beleg.
+MUSTERLOESUNG: HCl stark: pH 2; 10 g NaOH sind 0,25 mol; Haber-K mit Hochzahlen; alle mit Einheit belegt.
 
-`Klausur-Satz: n gleich m durch M.`
+`Klausur-Satz: Sieben Schloesser in sieben Minuten: Abruf schlaegt Besitz.`
 
-## Schritt 5 — ausprobieren: Duell der Karten: MWG gegen pH
+## Schritt 5 — ausprobieren: Duell der Wege: Formelrechnung gegen Einheitenblick
 
-VERGLEICH: Waehle erst den Stapel — (i) Mengen oder (ii) Lage — dann loesen.
+VERGLEICH: Waehle erst den Pruefweg, dann loesen: (i) Formel-Rechenweg oder (ii) Einheiten-Blickweg — dann loesen.
 
-Weg A (Mengen-Stapel): Mol, MWG, pH direkt.
 
-Weg B (Lage-Stapel): Q, Le Chatelier, Haft, Redox.
+Weg A (Formel-Rechenweg): Formeln quantitativ anwenden und Ergebnisse berechnen. Dieser Weg liefert Zahlen und ist klausurfest.
 
-AUFGABE A: Gramm aus Gleichung. Welcher Stapel?
+Weg B (Einheiten-Blickweg): Einheiten qualitativ pruefen und Formelwahl absichern. Dieser Weg faengt Fehler, rechnet aber nichts.
 
-AUFGABE B: Richtung nach Druckstoss. Welcher Stapel?
 
-HILFE: A fragt Gramm — Weg A. B fragt Richtung — Weg B.
+AUFGABE A: pH aus Konzentration exakt gesucht. Welcher Weg?
 
-ANTWORT: A folgt Weg A mit Mol-Brücke; B folgt Weg B mit Q-gegen-K.
+AUFGABE B: Warum kann mol/L nie pH sein? Welcher Weg?
 
-`Klausur-Satz: Jede Frage zieht genau eine Karte.`
 
-## Schritt 6 — check: Selbsttest zu CN-Formelhandbuch: sechs Formelkarten
+HILFE: A nennt exakt — Weg A mit Formel. B nennt Warum mit Einheit — Weg B mit Blick.
 
-FRAGE: Nenne drei Karten. | ANTWORT: MWG, Q, pH.
-FRAGE: Wohin gehört Q? | ANTWORT: Zum Lage-Stapel.
-FRAGE: Wohin gehört Mol? | ANTWORT: Zum Mengen-Stapel.
+ANTWORT: A folgt Weg A mit Log-Rechnung; B folgt Weg B mit Skalen-Argument.
 
-`Klausur-Satz: Abruf schlägt Besitz.`
+`Klausur-Satz: Formeln rechnen exakt, Einheiten fangen Fehler — die Klausur braucht beides.`
+
+## Schritt 6 — check: Selbsttest zu CN-Formeln
+
+- FRAGE: Wie lautet die pH-Formel? | ANTWORT: Negativer Log der H3O-Konzentration.
+
+- FRAGE: Wie lautet die Mol-Brücke? | ANTWORT: n gleich m durch M.
+
+- FRAGE: Trägt K eine Einheit? | ANTWORT: Nein, K ist dimensionslos.
+
+
+`Klausur-Satz: Ohne Einheit bleibt jede Zahl geraten, mit ihr wird sie gemessen.`
 
 ## Fehlvorstellung
 
-1. Fehlvorstellung: Karten sammeln reiche.
-   Korrektur-Satz: `Nur Abruf unter Zeit zählt.`
-2. Fehlvorstellung: Eine Karte passe überall.
-   Korrektur-Satz: `Jede Frage zieht genau eine Karte.`
+1. Fehlvorstellung: Jede Formel passe ueberall.
+   Korrektur-Satz: `Jede Formel traegt Bedingungen: pH braucht verduennt, MWG braucht Gleichgewicht.`
 
-## Schritt 7 — szenario: Klausurtransfer: Handbuch-Abnahme durch Vera Haber
+2. Fehlvorstellung: Einheit sei Deko.
+   Korrektur-Satz: `Einheit ist Pruefer: Falsche Einheit entlarvt falsche Formel.`
 
-ROLLE: Du bist Handbuch-Prüferin.
-SITUATION: Sechs Fragen liegen bereit. Ordne in ca. 120 Woertern jede Frage einer Karte zu und rechne zwei Beispiele.
-RUBRIC (30 XP): Zuordnung (12 XP) | Rechnungen (12 XP) | Sprache (6 XP).
+## Schritt 7 — szenario: Klausurtransfer: Tresor-Inventur unter Zeit
 
-`Klausur-Satz: Sechzig Sekunden entscheiden.`
+ROLLE: Du bist Tresor-Verwalter.
+SITUATION: Sieben Fragen liegen bereit. Ordne in ca. 120 Woertern jede Frage einer Formel mit Bedingung zu und rechne drei Beispiele.
+RUBRIC (30 XP): Zuordnung (12 XP) | Bedingungen (12 XP) | Rechnungen (6 XP).
+
+
+`Klausur-Satz: Achtung Falle: pH-Formel gilt nur fuer verduennte Loesungen bei 25 Grad.`
 
 ## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY:
 
-Takeaway-Satz: `Handbuch im Kopf statt Zettel.`
+Takeaway-Satz: `Formel plus Bedingung plus Einheit: Der Dreiklang oeffnet jeden Tresor.`
 
-`Klausur-Satz: Handbuch im Kopf statt Zettel.`
+`Klausur-Satz: Formeln sind verdichtetes Denken: Wer sie versteht, rechnet; wer sie paukt, raet.`
 
 
 REFLEXION:

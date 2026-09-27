@@ -14,35 +14,43 @@ version: Lesson-v3
 # Lernreise: Chemische Grundlagen: Atombau, Bindung, Gleichungen, Mol — Episode C11: Formelalarm um Mitternacht
 
 <!-- Campaign: Imperium-Alchemie | Chemie | entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
-
 ## Schritt 1 — entdecken: Steckbrief der Atome unterm Mikroskop
 
 ZIELE:
-1. Ich kann Atombau mit Ordnungszahl und Schalen nennen.
-2. Ich kann Bindungstypen aus Eigenschaften folgern.
-3. Ich kann Gleichungen ausgleichen und Mol rechnen.
+1. Ich kann den **Atombau** mit Ordnungszahl und Schalen nennen.
+2. Ich kann **Bindungstypen** aus Eigenschaften folgern.
+3. Ich kann Gleichungen **ausgleichen** und Mol rechnen.
 
-Alle sechs Formel-Karten flackern; Mia Puffer sortiert das Handbuch neu. Am Werkstor des Imperium-Alchemie steht Praktikantin Mia Puffer vor einem Berg weisser Pulver und soll sagen, was drin ist. Direktorin Vera Haber reicht ihr drei Lupen: Atombau, Bindung und Mol. Jonas Säure murmelt, dass jede Gleichung erst ausgeglichen stimmen muss, bevor ein einziges Gramm gewogen wird. Heute wird sortiert, was die Welt zusammenhält: Wer Protonen zählt, Bindungen erkennt und Mol stapelt, besteht die Azubi-Prüfung.
+Am Werkstor des Imperium-Alchemie steht Praktikantin Mia Puffer vor einem Berg weissen Pulvers und soll sagen, was drin ist. Direktorin Vera Haber reicht ihr drei Lupen: **Atombau**, Bindung und Mol. Jonas Saeure murmelt, dass jede Gleichung erst ausgeglichen stimmen muss.
 
-`Klausur-Satz: Protonen bestimmen das Element, Elektronen die Bindung.`
+Heute wird sortiert, was die Welt zusammenhaelt: Wer **Protonen** zaehlt, findet das Element; wer **Elektronen** liest, erkennt die Bindung; wer **Mol** stapelt, wiegt die Welt. Die Azubi-Pruefung verzeiht keine Luecke.
+
+`Klausur-Satz: Protonen bestimmen das Element, Elektronen die Bindung, Mol die Menge.`
 
 ## Schritt 2 — entdecken: Die Grundbaukasten-Kiste der Azubis
 
 AUSRUESTUNG (5 Begriffe der Werkzeugkiste):
 
-- Ordnungszahl: Zahl der Protonen, Identität des Elements.
-- Ionenbindung: Schenken und Gitter, hart und spröde.
-- Kovalente Bindung: Teilen von Elektronenpaaren.
-- Mol: Stapel aus 6,022 mal 10 hoch 23 Teilchen.
-- Ausgeglichene Gleichung: Atome links gleich rechts.
+- **Ordnungszahl**: Die Ordnungszahl zaehlt die Protonen und definiert das Element. Sie steht links unten am Symbol und ordnet das Periodensystem. Mechanismus: Mehr Protonen heisst mehr Kernladung, mehr Elektronen in Huellen: So wachsen Groesse und Eigenschaften periodisch. Klausur-Tipp: Protonen gleich Elektronen im neutralen Atom als Basissatz.
 
-`Klausur-Satz: Ionen schenken, Kovalente teilen.`
+- **Ionenbindung**: Die Ionenbindung entsteht durch Elektronenuebergabe zwischen Metall und Nichtmetall. Kationen und Anionen bauen harte, sproede Gitter. Mechanismus: Gitterenergie erklaert hohe Schmelzpunkte; bewegliche Ionen in Schmelze leiten Strom. Klausur-Tipp: Schenken plus Gitter plus sproede als Merkmalstripel.
+
+- **Kovalente Bindung**: Die kovalente Bindung teilt Elektronenpaare zwischen Nichtmetallen. Molekuele mit geteilten Paaren fuellen Oktette. Mechanismus: Einfach, doppelt oder dreifach bestimmt Laenge und Staerke; Polaritaet folgt aus Elektronegativitaet. Klausur-Tipp: Teilen plus Oktett als Kern, EN-Differenz als Zusatz.
+
+- **Mol**: Das Mol stapelt 6,022 mal 10 hoch 23 Teilchen zum Wiegen. Es verbindet Mikro- und Makrowelt. Mechanismus: Molare Masse in g/mol macht Teilchen wiegbar: Ein Mol Wasser wiegt 18 g. Klausur-Tipp: Avogadro-Zahl plus g/mol als Einheitenpaar.
+
+- **Ausgeglichene Gleichung**: Die ausgeglichene Gleichung haelt links und rechts gleiche Atomzahlen ein. Sie erfuellt die Massenerhaltung. Mechanismus: Koeffizienten werden Mol-Verhaeltnisse; erst ausgleichen, dann wiegen. Klausur-Tipp: Erst H und O zuletzt, Metalle zuerst als Arbeitsregel.
+
+
+`Klausur-Satz: Ionen schenken, Kovalente teilen: Die Eigenschaft verrät den Typ.`
 
 ## Schritt 3 — entdecken: Vom Atom zum Mol: Die Stapelkette
 
 WIRKUNGSGEFUEGE (Ursache zu Wirkung):
 
-Die Kette: Protonen bestimmen das Element, Elektronen die Bindung. Metall plus Nichtmetall schenkt, Nichtmetall plus Nichtmetall teilt. Erst ausgleichen, dann wiegen: Koeffizienten werden Mol-Verhältnisse.
+Die Stapelkette startet beim **Proton**: Ordnungszahl verrät Element und Huellenbau. Dann folgt das **Elektron**: Abgabe heisst Ionen, Teilen heisst kovalent.
+
+Zuletzt kommt das **Mol**: Ausgeglichene Koeffizienten werden Verhaeltnisse, Gramm werden ueber n gleich m durch M zu Teilchen. Zaehlung wird Wiegung.
 
 ```diagram
 Proton -> Element | Elektron -> Bindung
@@ -50,77 +58,92 @@ Metall + Nichtmetall = Ionen | Nichtmetall + Nichtmetall = kovalent
 Koeffizient = Mol-Verhaeltnis
 ```
 
-`Klausur-Satz: Erst ausgleichen, dann wiegen.`
+Die Wiegeformel der Azubis:
+
+$$n = \frac{m}{M} \quad ; \quad N = n \cdot N_A$$
+
+M in g/mol macht aus jeder Waage eine Teilchenzaehlung.
+
+`Klausur-Satz: Erst ausgleichen, dann wiegen: Koeffizienten werden Mol-Verhaeltnisse.`
 
 ## Anekdote & Fun-Fact
 
-**Anekdote / Fun-Fact (DE)**: Ein Löffel Salz enthält mehr Bausteine als Sterne am Himmel über dem Werk — der Mol-Stapel macht das Unsichtbare zählbar.
+**Anekdote / Fun-Fact (DE)**: Ein Loeffel Salz enthaelt mehr Bausteine als Sterne am Himmel ueber dem Werk — der Mol-Stapel macht das Unsichtbare zaehlbar.
 
-**Bezug zum Konzept**: Zählen statt raten: Das Mol stapelt die Welt.
 
-## Schritt 4 — ausprobieren: Stapel-Sandkasten: Zähle Mol um Mol
+**Bezug zum Konzept**: Zaehlen statt raten: Das Mol stapelt die Welt.
+
+## Schritt 4 — ausprobieren: Sandkasten: Wiege, was du ausgleichst
 
 [Werkzeug: formula]
 
-AUFGABE (Target Challenge): Target Challenge: 5,85 g NaCl (M = 58,5 g/mol) lösen. Rechne Stoffmenge und Teilchenzahl. Ziel: Exakte Stapelrechnung mit Einheit. AUFGABE konkret: 5,85 g NaCl: Wieviel Mol und wieviele Formeleinheiten?
+AUFGABE (Target Challenge): Gegeben: 10 g CaCO3, unbekanntes weisses Pulver mit Schmelzpunkt 800 Grad, H2 + O2 ungeregelt. Bestimme Bindungstyp, gleiche die Knallgasgleichung aus und berechne das CO2-Volumen aus 10 g.
 
 HILFE:
-1. n = m durch M.
-2. Mal Avogadro für Teilchen.
-3. Einheit immer dazu.
+1. Bindung aus Partner und Eigenschaft folgern.
+2. Gleichung mit Koeffizienten ausgleichen.
+3. Mol-Brücke mit Einheit anwenden.
 
-MUSTERLÖSUNG: n = 5,85 durch 58,5 ergibt den Molwert; mal 6,022 mal 10 hoch 23 ergibt die Zahl der Einheiten.
+MUSTERLOESUNG: Pulver mit 800 Grad: Ionenbindung; 2 H2 + O2 -> 2 H2O; 10 g CaCO3 sind 0,1 mol und liefern 0,1 mol CO2, also 2,24 L.
 
-`Klausur-Satz: Stapelrechnung mit Einheit schlägt Raten.`
+`Klausur-Satz: Mit n gleich m durch M und Koeffizienten-Verhaeltnis wiegt der Sandkasten statt zu raten.`
 
-## Schritt 5 — ausprobieren: Duell der Bindungen: Teilen gegen Schenken
+## Schritt 5 — ausprobieren: Duell der Wege: Zaehlen gegen Wiegen
 
-VERGLEICH: Waehle erst die Frage — (i) Was ist es oder (ii) Wieviel ist es — dann loesen.
+VERGLEICH: Waehle erst den Azubi-Weg, dann loesen: (i) Zaehl-Rechenweg oder (ii) Eigenschafts-Deuteweg — dann loesen.
 
-Weg A (Stoff-Weiche): Bau und Bindung aus Eigenschaften folgern.
 
-Weg B (Mengen-Weiche): Ausgleichen, dann Mol rechnen.
+Weg A (Zaehl-Rechenweg): Mengen quantitativ aus Gleichungen berechnen. Dieser Weg liefert Gramm und Liter und ist pruefungssicher.
 
-AUFGABE A: Salz hart, spröde, leitend als Schmelze. Welcher Weg?
+Weg B (Eigenschafts-Deuteweg): Bindungstypen qualitativ aus Eigenschaften folgern. Dieser Weg liefert Verstaendnis, bleibt aber ohne Zahl weich.
 
-AUFGABE B: 5,85 g Ausbeute aus Gleichung. Welcher Weg?
 
-HILFE: A fragt Stoff — Weg A. B fragt Menge — Weg B.
+AUFGABE A: CO2-Volumen aus Gramm exakt gesucht. Welcher Weg?
 
-ANTWORT: A folgt Weg A als Ionenbindung im Gitter; B folgt Weg B mit Ausgleich und Mol-Brücke.
+AUFGABE B: Ionen oder kovalent aus Schmelzpunkt gesucht. Welcher Weg?
 
-`Klausur-Satz: Stoff fragen heisst Eigenschaften lesen.`
 
-## Schritt 6 — check: Selbsttest zu Chemische Grundlagen: Atombau, Bindung, Gleichungen, Mol
+HILFE: A nennt Volumen — Weg A mit Mol. B nennt Typ — Weg B mit Eigenschaft.
 
-FRAGE: Was bestimmt das Element? | ANTWORT: Die Protonenzahl.
-FRAGE: Woran erkennst du Ionenbindung? | ANTWORT: Hart, spröde, Schmelze leitet.
-FRAGE: Was heisst 1 Mol? | ANTWORT: 6,022 mal 10 hoch 23 Teilchen.
+ANTWORT: A folgt Weg A mit Mol-Brücke und 22,4-L-Regel; B folgt Weg B mit Gitter-Argument.
 
-`Klausur-Satz: Koeffizienten sind Mol-Brücken.`
+`Klausur-Satz: Zaehlen bestimmt das Was, Wiegen bestimmt das Wieviel — die Pruefung braucht beides.`
+
+## Schritt 6 — check: Selbsttest zu Chemische Grundlagen
+
+- FRAGE: Was bestimmen Protonen? | ANTWORT: Die Identitaet des Elements.
+
+- FRAGE: Ionen oder kovalent? | ANTWORT: Schenken gegen Teilen.
+
+- FRAGE: Erst ausgleichen oder wiegen? | ANTWORT: Erst ausgleichen, dann wiegen.
+
+
+`Klausur-Satz: Ohne Ausgleich bleibt jede Mengenrechnung geraten, mit ihm wird sie gewogen.`
 
 ## Fehlvorstellung
 
-1. Fehlvorstellung: Moleküle hätten auch Gitter.
-   Korrektur-Satz: `Gitter gehoeren zu Ionen; Moleküle sind diskrete Einheiten.`
-2. Fehlvorstellung: Koeffizienten seien Atome.
-   Korrektur-Satz: `In der Rechnung sind sie Mol-Verhältnisse.`
+1. Fehlvorstellung: Index und Koeffizient seien gleich.
+   Korrektur-Satz: `Index aendert den Stoff, Koeffizient nur die Menge: H2O ist nie H2O2.`
 
-## Schritt 7 — szenario: Klausurtransfer: Azubi-Prüfung am Periodentisch
+2. Fehlvorstellung: Mol sei eine Masse.
+   Korrektur-Satz: `Mol zaehlt Teilchen, Gramm wiegt: Erst M verbindet beide.`
 
-ROLLE: Du bist Azubi-Prüferin am Werkstor.
-SITUATION: Ein Pulver ist hart, spröde, Schmelze leitet. Bestimme in ca. 120 Woertern Bindungstyp und begruende mit Eigenschaften.
-RUBRIC (30 XP): Beobachtung (8 XP) | Bindungsschluss (10 XP) | Gegenprobe (6 XP) | Sprache (6 XP).
+## Schritt 7 — szenario: Klausurtransfer: Azubi-Pruefung am Werkstor
 
-`Klausur-Satz: Hart und spröde verrät das Gitter.`
+ROLLE: Du bist Azubi am Werkstor.
+SITUATION: Drei Pulver warten. Identifiziere in ca. 150 Woertern Bindungstypen aus Eigenschaften, gleiche eine Gleichung aus und rechne eine Menge.
+RUBRIC (30 XP): Typologie (8 XP) | Ausgleich (8 XP) | Rechnung (8 XP) | Sprache (6 XP).
+
+
+`Klausur-Satz: Achtung Falle: Index veraendert den Stoff, Koeffizient nur die Menge — wer tauscht, faellt durch.`
 
 ## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY:
 
-Takeaway-Satz: `Vom Atom zum Mol führt eine Kette.`
+Takeaway-Satz: `Zaehlen, erkennen, wiegen: Proton, Bindung, Mol in dieser Reihenfolge.`
 
-`Klausur-Satz: Vom Atom zum Mol führt eine Kette.`
+`Klausur-Satz: Grundlagen sind Fundamente: Wer sie legt, baut; wer sie ueberspringt, stuerzt.`
 
 
 REFLEXION:

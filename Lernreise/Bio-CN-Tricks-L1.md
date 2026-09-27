@@ -14,122 +14,143 @@ version: Lesson-v3
 # Lernreise: CN-Methoden fuer die Bio-Klausur — Episode B10: Der saure Regen
 
 <!-- Campaign: Nano-Zellfabrik-Krise | Bio | Instapower: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
-
-## Schritt 1 — entdecken: Die Trickkiste des alten Hausmeisters
+## Schritt 1 — entdecken: Der Sechzig-Sekunden-Kartentisch
 
 ZIELE（本节三目标）：
-1. 中文：能三语说出细胞生物学核心术语。
-2. 中文：能把德语定义与中文口诀挂钩。
-3. 中文：能在题干中标出信号词并选程序。
+1. 中文：能说出六张方法卡。
+2. 中文：会把每卡配到题型。
+3. 中文：能六十秒调取全套。
 
-【危机Hook】Oekologie-Aussenposten meldet pH-Sturz im Teich; Frosch-Beobachter Quak funkt SOS. 周一早晨纳米工厂“语言大混乱”：新实习生既听不懂Turgordruck也不认识膨压，OSMO-9还用英语报错。队长Mara Zell搬出三语术语急救箱——一小时后考试委员会来检查，每台机器的标牌必须德中英三语准确，否则停工。她和Finn博士满厂贴标签，悟出一个道理：干净准确的术语就是半张考卷。拿下三语术语，解题速度翻倍。
+【危机Hook】Sechs Karten flackern: Osmose, Enzym, Genetik, Oekologie, Atmung, Fotosynthese. 午夜六张方法卡集体闪烁：渗透、酶、遗传、生态、呼吸、光合。实习生重排手册，班长每卡贴口诀，总监明早逐张抽查。今天把卡片铺进脑子：六十秒调出六卡，考试无忧。
 
-`Klausur-Satz: Begriffe in drei Sprachen sind Werkzeuge: Jedes Signalwort oeffnet genau eine Kiste.`
+`Klausur-Satz: Sechs Karten tragen jede Klausur: Wer zieht, loest.`
 
-## Schritt 2 — entdecken: Sechs Methoden-Bausteine im Kasten
+## Schritt 2 — entdecken: Sechs Karten im Kasten
 
 PRETRAINING术语盒（5大装备，中文在上、德语在下）：
 
-- 中文：渗透 — 德语：Osmose：水经半透膜的净扩散，水往盐多处走。 / Nettodiffusion von Wasser durch eine semipermeable Membran.
-- 中文：扩散 — 德语：Diffusion：顺梯度运动直至平衡。 / Bewegung mit dem Gefaelle bis zum Ausgleich.
-- 中文：质壁分离 — 德语：Plasmolyse：失水后原生质体脱壁。 / Abloesung des Protoplasten von der Wand bei Wasserverlust.
-- 中文：酶 — 德语：Enzym：蛋白质生物催化剂，有活性中心。 / Biokatalysator aus Protein mit aktivem Zentrum.
-- 中文：复制 — 德语：Replikation：DNA半保留复制。 / Semikonservative Verdopplung der DNA.
+- 中文：渗透卡 — 德语：Osmose-Karte：见水势数值就算差。 / Osmose-Karte: Die Osmose-Karte gilt bei jeder Aufgabe mit Psi-Zahlen oder Konzentrationen. Sie verlangt Delta-Berechnung und Richtungsaussage. Mechanismus: Man bildet Delta-Psi, deutet das Vorzeichen und prognostiziert den Turgorverlauf. Klausur-Tipp: Psi-Zahl im Text heisst sofort diese Karte ziehen.
 
-`Klausur-Satz: Osmose ist Wasser durch die Membran, Diffusion ist alles mit dem Gefaelle.`
+- 中文：酶卡 — 德语：Enzym-Karte：见温度pH就画曲线。 / Enzym-Karte: Die Enzym-Karte gilt bei Temperatur-, pH- und Substratfragen. Sie verlangt Kurvendeutung mit Optimum und Denaturierung. Mechanismus: Man liest das Optimum ab, erklaert links die Brownsche Bewegung und rechts die Zerstoerung der Struktur. Klausur-Tipp: Optimum plus Denaturierung als Zangenbegruendung.
+
+- 中文：遗传卡 — 德语：Genetik-Karte：见杂交就列棋盘。 / Genetik-Karte: Die Genetik-Karte gilt bei Kreuzungs- und Stammbaumfragen. Sie verlangt Punnett-Quadrat und Wahrscheinlichkeitsrechnung. Mechanismus: Man notiert Genotypen der Eltern, fuellt das Quadrat und liest Verhaeltnisse wie 3 zu 1 ab. Klausur-Tipp: Genotypen zuerst, Phaenotypen spaeter — nie umgekehrt.
+
+- 中文：生态卡 — 德语：Oekologie-Karte：见种群就算出生死亡。 / Oekologie-Karte: Die Oekologie-Karte gilt bei Populations- und Nahrungsnetzfragen. Sie verlangt Bilanzen aus Geburt, Tod und Wanderung. Mechanismus: Man schreibt die Bilanz N-neu gleich N-alt plus Geburten minus Tote und deutet die Kapazitaetsgrenze. Klausur-Tipp: Kapazitaet K als Deckel immer einzeichnen.
+
+- 中文：呼吸卡 — 德语：Atmungs-Karte：见能量就追踪ATP。 / Atmungs-Karte: Die Atmungs-Karte gilt bei jeder Energiefrage der Zelle. Sie verlangt die Bilanz aus Glukose, Sauerstoff und ATP. Mechanismus: Man verfolgt Glukose durch Glykolyse, Citratzyklus und Atmungskette bis zu 32 ATP. Klausur-Tipp: 32 ATP plus Sauerstoff als Endakzeptor hinschreiben.
+
+
+`Klausur-Satz: Psi-Zahl zieht Osmose, Optimum zieht Enzym, Kreuzung zieht Genetik.`
 
 ## Schritt 3 — entdecken: Vom Trick zum Verfahren: Die Methoden-Weiche
 
 ENTDECKEN因果传导机制（中文拆解在上，德语链条在下）：
 
-中文：机制是一条“翻译链”：题干信号词→术语盒→解题程序。见“梯度+ATP”开运输盒，见“水势数值”开计算盒，单词就变成了决策树。
+中文：链条：读题→抽卡→代入。问量抽公式卡，问向抽梯度卡，问因为抽调节曲线卡，每卡必附数字或曲线作证。
 
-德语：Der Mechanismus ist eine Uebersetzungskette: Signalwort im Text erkennen, Begriff der passenden Kiste zuordnen, Verfahren aus der Kiste ableiten. Steht Gefaelle plus ATP im Text, oeffnet sich die Transport-Kiste; steht Psi-Zahl im Text, oeffnet sich die Rechen-Kiste. So wird aus Vokabeln ein Entscheidungsbaum.
+德语：Die Kette heisst: Frage lesen, Karte ziehen, einsetzen. Wieviel-Fragen ziehen Messkarten mit Formeln, Wohin-Fragen ziehen **Richtungskarten** mit Gefaellen, Warum-Fragen ziehen **Regulationskarten** mit Kurven. Jede Karte endet mit einem Beleg: einer Zahl mit Einheit oder einer Kurve mit Optimum. Ohne Beleg bleibt die Antwort Behauptung.
 
 ```diagram
-Signalwort -> Begriffs-Kiste -> Verfahren
-Gefaelle + ATP = Transport | Psi-Zahl = Rechnung
-Deutsch oben, Zhongwen als Merkhaken
+Wieviel -> Messkarte mit Formel
+Wohin -> Richtung mit Gefaelle
+Warum -> Regulation mit Kurve
+Jede Karte endet mit Beleg
 ```
 
-`Klausur-Satz: Markieren, zuordnen, Verfahren waehlen — so wird Vokabel zur Klausurwaffe.`
+Die Tempomessung des Kartentischs:
+
+$$v = \frac{\Delta c}{\Delta t} \quad \text{mit Einheit } \frac{\text{mol}}{\text{L} \cdot \text{s}}$$
+
+中文：速率=浓度变化除以时间，单位mol/(L·s)。 / 德语：Die Rate traegt immer Einheit pro Zeit; ohne pro Sekunde gibt es keinen Punkt.
+
+`Klausur-Satz: Frage lesen, Karte ziehen, einsetzen — die Weiche irrt nie.`
 
 ## Anekdote & Fun-Fact
 
-**Anekdote / Fun-Fact (DE)**: Gorter und Grendel vermassen 1925 rote Blutzellen und bewiesen die Doppelschicht — kernlose Zellen verrieten die doppelte Haut.
+**Anekdote / Fun-Fact (DE)**: Kartenspieler mischen blind und finden jedes Ass — Abruf unter Zeit ist dieselbe Fingerfertigkeit.
 
-**中文解读**: 1925年Gorter和Grendel用无核红细胞量出双分子层——最简单的细胞泄露了最大的秘密。
 
-**Bezug zum Konzept**: Die Doppelschicht bildet die Schranke, Proteine oeffnen die Tore.
+**中文解读**: 牌手闭眼洗牌也能摸到A——限时调取是同样的手上功夫。
 
-## Schritt 4 — ausprobieren: Baukasten-Sandkasten: Sechs Tricks im Einsatz
 
-[Werkzeug: lego]
+**Bezug zum Konzept**: Mischen, ziehen, legen: Der Tisch trainiert Griff und Tempo.
 
-AUFGABE目标挑战：目标挑战：用6个方法积木10分钟拼出运输题完整解答：示意图、表格、计算、结论句，四件套缺一不可。 德语原题：Markiere im Satz alle Fachbegriffe und entscheide: Transport- oder Rechen-Kiste?
+## Schritt 4 — ausprobieren: Trick-Sandkasten: Sechs Karten im Einsatz
+
+[Werkzeug: formula]
+
+AUFGABE目标挑战：六个迷你案例（水势差、最适温度、Aa×Aa杂交、种群平衡、ATP结算、光合速率）：配卡并规范算出两例。 德语原题：Sechs Mini-Faelle liegen bereit: Psi-Differenz, Temperaturoptimum, Kreuzung Aa mal Aa, Populationsbilanz, ATP-Bilanz und Fotosynthese-Rate. Ordne jede der sechs Karten zu und rechne zwei Faelle mit Ansatz und Einheit durch.
 
 HILFE:
-1. Erst unterstreichen, dann zuordnen.
-2. Signalwoerter sind Gefaelle, ATP, Psi-Zahl.
-3. Jeder Begriff bekommt genau eine Kiste.
+1. Frageart bestimmen: Wieviel, Wohin oder Warum.
+2. Passende Karte ziehen und Verfahren nennen.
+3. Zwei Faelle mit Formel und Einheit durchrechnen.
 
-MUSTERLÖSUNG：中文：渗透、半透膜、水势数值→计算盒；ATP、逆梯度→运输盒。标干净，解题快一半。 / 德语：Osmose, semipermeabel und Psi-Zahl oeffnen die Rechen-Kiste; ATP und gegen das Gefaelle oeffnen die Transport-Kiste. Saubere Markierung halbiert die Loesungszeit.
+MUSTERLOESUNG：中文：水势配渗透卡算差，杂交配遗传卡画3:1棋盘，六配六中、两算带单位。 / 德语：Psi zieht Osmose mit Delta-Rechnung, Aa mal Aa zieht Genetik mit 3-zu-1-Quadrat; alle sechs Zuordnungen sitzen, zwei Rechnungen tragen Einheiten.
 
-`Klausur-Satz: Acht Treffer in vier Minuten: Markieren schlaegt Pauken im Kontext.`
+`Klausur-Satz: Sechs Minuten, sechs Karten, sechs Treffer: Abruf schlaegt Besitz.`
 
-## Schritt 5 — ausprobieren: Duell der Methoden: Skizze gegen Rechnung
+## Schritt 5 — ausprobieren: Duell der Stapel: Mengen gegen Regulation
 
-VERGLEICH: Waehle erst den Lernweg — (i) Karteikarten-Weg oder (ii) Kontext-Weg — dann loesen.选程序：先选记忆路线，再解题。
+VERGLEICH: Waehle erst den Stapel, dann loesen: (i) Mengen-Stapel oder (ii) Regulations-Stapel — dann loesen.选程序：先看信号词再选路。
 
-Weg A：Weg A (Karteikarten-Weg): Begriff pauken, Definition hersagen, dann anwenden.
 
-Weg B：Weg B (Kontext-Weg): Im Satz markieren, Kiste waehlen, Verfahren ableiten.
+Weg A：Weg A (Mengen-Stapel): Zaehlen, wiegen, rechnen: Mol, Bilanzen und Raten mit Formeln loesen. Dieser Weg liefert harte Zahlen und ist pruefungssicher.
 
-AUFGABE A: Fuenf Begriffe in drei Sprachen pauken. Welcher Weg? 【选程序：先看信号词再选路】
+Weg B：Weg B (Regulations-Stapel): Kurven lesen, Optima deuten, Regulation erklaeren. Dieser Weg liefert Verstaendnis und Bloom-Punkte, bleibt aber ohne Zahl duenn.
 
-AUFGABE B: Im Fliesstext die Verfahrenswahl treffen. Welcher Weg? 【选程序：先看信号词再选路】
 
-HILFE：A verlangt Pauken — Weg A. B verlangt Textarbeit — Weg B.
+AUFGABE A: Gramm-Angabe aus Reaktionsgleichung gesucht. Welcher Stapel? 【选程序：先看信号词再选路】
 
-ANTWORT：ANTWORT: A folgt Weg A über Karteikarten mit Selbstabfrage; B folgt Weg B über Markierung und Kistenwahl im Kontext.
+AUFGABE B: Warum bricht die Rate jenseits von 40 Grad ein? Welcher Stapel? 【选程序：先看信号词再选路】
 
-`Klausur-Satz: Karteikarte paukt den Begriff, Kontext waehlt das Verfahren.`
 
-## Schritt 6 — check: Selbsttest zu CN-Methoden fuer die Bio-Klausur
+HILFE：A fragt Gramm — Weg A mit Mol. B fragt Einbruch mit Warum — Weg B mit Kurve.
 
-FRAGE：术语卡要哪三语？（Nenne drei Sprachen einer Begriffskarte.） | ANTWORT：德、中、英+例句。 / Deutsch, Chinesisch, Englisch plus Beispielsatz.
-FRAGE：计算盒的信号是什么？（Woran erkennst du die Rechen-Kiste?） | ANTWORT：水势数值与梯度计算。 / An Psi-Zahlen und Gefaelle-Rechnung im Text.
-FRAGE：运输盒的信号是什么？（Woran erkennst du die Transport-Kiste?） | ANTWORT：ATP与逆梯度。 / An ATP und Richtung gegen das Gefaelle.
+ANTWORT：中文：A走数量堆用摩尔桥；B走调节堆用最适曲线加变性解释。 / 德语：A folgt Weg A mit Mol-Bruecke und Einheit Gramm; B folgt Weg B mit Optimumkurve und Denaturierung.
 
-`Klausur-Satz: Wer markiert, halbiert die Loesungszeit.`
+`Klausur-Satz: Mengen fragen die Mol-Brücke, Regulation fragt die Kurve.`
+
+## Schritt 6 — check: Selbsttest zu CN-Tricks
+
+- FRAGE:：几张卡？多少秒？（Wie viele Karten in wie vielen Sekunden） | ANTWORT:：六卡六十秒。 / Sechs Karten in sechzig Sekunden.
+
+- FRAGE:：水势数值抽哪卡？（Welche Karte zieht die Psi-Zahl） | ANTWORT:：渗透卡。 / Die Osmose-Karte.
+
+- FRAGE:：杂交题抽哪卡？（Welche Karte zieht die Kreuzung） | ANTWORT:：遗传卡棋盘。 / Die Genetik-Karte mit Punnett-Quadrat.
+
+
+`Klausur-Satz: Ohne Zuordnung bleibt jede Karte Deko, mit Zuordnung wird sie Waffe.`
 
 ## Fehlvorstellung
 
-1. 误解：误解“渗透=扩散”。
-   中文纠偏：见德语纠偏句。
-   Korrektur-Satz: `Osmose ist nur Wasser durch eine Membran, Diffusion gilt fuer alle Teilchen auch ohne Membran.`
-2. 误解：误解“死记硬背就够”。
-   中文纠偏：见德语纠偏句。
-   Korrektur-Satz: `Erst markieren und zuordnen, dann pauken — sonst bleibt die Kiste leer.`
+1. 误解：集卡就够。
+   中文纠偏：只有限时调取才算活卡。
+   Korrektur-Satz: `Nur Abruf unter Zeit zaehlt: Sechzig Sekunden entscheiden ueber Besitz oder Deko.`
 
-## Schritt 7 — szenario: Klausurtransfer: Methoden-Feuerwehr im Klausurbrand
+2. 误解：一卡通吃。
+   中文纠偏：水势抽渗透、杂交抽遗传，一题一卡。
+   Korrektur-Satz: `Jede Frage zieht genau eine Karte: Psi zieht Osmose, Kreuzung zieht Genetik.`
 
-ROLLE：中文：你是工厂夜班技术员。 / 德语：Du bist Tutorin im Vokabel-Notdienst.
-SITUATION：同学混淆渗透与扩散，请用三语各举一例并给口诀（约120词）。 / 德语：Eine SchuEls:erin verwechselt Osmose und Diffusion. Erklaere beide dreisprachig in ca. 120 Woertern mit je einem Beispiel und einer Merkregel.
-RUBRIC (30 XP)：Korrekte Definitionen (10 XP) | Dreisprachigkeit (8 XP) | Beispiele (8 XP) | Merkregel (4 XP).
+## Schritt 7 — szenario: Klausurtransfer: Feuerwehr-Einsatz im Klausurbrand
 
-`Klausur-Satz: Dreisprachig erklaeren heisst: definieren, Beispiel geben, Merkregel liefern.`
+ROLLE：中文：你是手册审查员。 / 德语：Du bist Handbuch-Prueferin.
+SITUATION：六问待配卡：请配对并规范算出两例（约120词）。 / 德语：Sechs Fragen liegen bereit. Ordne in ca. 120 Woertern jede Frage einer Karte zu und rechne zwei Beispiele mit Einheit.
+RUBRIC (30 XP)：Zuordnung (12 XP) | Rechnungen (12 XP) | Sprache (6 XP).
+
+
+`Klausur-Satz: Achtung Falle: Die schoenste Karte am falschen Stapel gibt null Punkte.`
 
 ## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY核心总结：
 
-中文：机制是一条“翻译链”：题干信号词→术语盒→解题程序。见“梯度+ATP”开运输盒，见“水势数值”开计算盒，单词就变成了决策树。
-Takeaway-Satz: `Begriffe tragen Verfahren: Das Signalwort entscheidet die Kiste.`
+中文：手册装进脑子：六十秒定胜负。
+Takeaway-Satz: `Handbuch im Kopf statt Zettel: sechzig Sekunden entscheiden.`
 
-`Klausur-Satz: Begriffe tragen Verfahren: Das Signalwort entscheidet die Kiste.`
+`Klausur-Satz: Methoden sind Abkuerzungen des Denkens: Wer sie wählt, denkt schneller als er schreibt.`
 
 
 REFLEXION 2问：
 1. 过程自省：Welcher Schritt fiel schwerer — die Sandkasten-Challenge (Schritt 4) oder die Verfahrenswahl (Schritt 5)?
-2. 元认知计划：Beim nächsten Mal sichere ich zuerst die Werkzeugkiste, weil jeder Handgriff darauf aufbaut.
+2. 元认知计划：Beim naechsten Mal sichere ich zuerst die Werkzeugkiste, weil jeder Handgriff darauf aufbaut.

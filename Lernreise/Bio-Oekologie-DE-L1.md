@@ -14,113 +14,136 @@ version: Lesson-v3
 # Lernreise: Oekologie: Nische, Population, Energiefluss — Episode B19: Blackout im ATP-Keller
 
 <!-- Campaign: Nano-Zellfabrik-Krise | Bio | Instapower: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
-
-## Schritt 1 — entdecken: Der Hilferuf vom Fabrikteich
+## Schritt 1 — entdecken: Der grüne See kippt: Algen gegen Fische
 
 ZIELE:
-1. Ich kann oekologische Nische und Population beschreiben.
-2. Ich kann Energiefluss und Trophieebenen mit der 10-Prozent-Regel deuten.
-3. Ich kann Eutrophierung und Sukzession begruenden.
+1. Ich kann **abiotische und biotische Faktoren** am See benennen.
+2. Ich kann **Eutrophierung** als Kausalkette erklaeren.
+3. Ich kann **Kapazitaet und Nachhaltigkeit** gegeneinander abwaegen.
 
-Mitochondrien melden Stromausfall; Notstromaggregat Glykolyse springt an. Hinter der Nano-Zellfabrik liegt ein kleiner Teich, und heute Morgen schwimmen dort die Fische mit dem Bauch nach oben. Frosch-Beobachter Quak funkt SOS an Captain Mara Zell: Das Wasser ist trüb, die Algen wuchern, und nachts fehlt der Sauerstoff. Dr. Finn Katalys misst Nitrat aus dem Fabrikabfluss und OSMO-9 zeichnet eine Bevoelkerungskurve, die erst explodiert und dann abstuerzt. Mara Zell versteht: Hier kaempfen Nische, Nahrungsnetz und Energiefluss um das Gleichgewicht, und irgendwo ist die Kette gerissen. Wer heute oekologische Nische, Population, Sukzession und Energiepyramide versteht, findet das Leck und rettet den Teich vor dem Umkippen.
+Im Morgengrauen treiben tote Fische auf gruenem Wasser: Der See ist gekippt, der Sauerstoff am Grund liegt bei null. Huehnerhof-Besitzer Jonas will mehr duengen und mehr verdienen, Fischerin Mara will klares Wasser und lebendige Netze. Buergermeister Finn steht dazwischen.
 
-`Klausur-Satz: Die Nische beschreibt Ansprueche und Rolle einer Art im System.`
+Der Duenger, der die Felder naehrt, erstickt den See: **Eutrophierung** heisst der stille Killer. Heute waegt die Waage Geld gegen Leben, Ertrag gegen **Kapazitaet**. Wer die Kette versteht, rettet See und Existenzen.
 
-## Schritt 2 — entdecken: Die Oekologie-Werkzeugkiste der Teichwache
+`Klausur-Satz: Der See kippt lautlos: Was das Feld duengt, erstickt das Wasser.`
+
+## Schritt 2 — entdecken: Die Oekologie-Werkzeugkiste der Ranger
 
 AUSRUESTUNG (5 Begriffe der Werkzeugkiste):
 
-- Oekologische Nische: Gesamtheit der Ansprüche und Rolle einer Art.
-- Population: Alle Individuen einer Art in einem Gebiet.
-- Nahrungsnetz: Verflochtene Nahrungsbeziehungen statt linearer Kette.
-- Energiepyramide: Nur ca. 10 % fliessen je Ebene weiter.
-- Eutrophierung: Naehrstoff-Plus erzeugt Algenbluete und Sauerstoffminus.
+- **Abiotische Faktoren**: Abiotische Faktoren wie Licht, Temperatur, Wasser und Naehrstoffe setzen die Spielregeln. Sie bestimmen, wer ueberhaupt leben kann. Mechanismus: Lichtmangel bremst Produzenten, Sauerstoffmangel erstickt Fische: Physik und Chemie schreiben das Drehbuch. Klausur-Tipp: Immer zwei Faktoren mit Wirkungspaar nennen.
 
-`Klausur-Satz: Nur etwa zehn Prozent der Energie erreichen die naechste Ebene.`
+- **Biotische Faktoren**: Biotische Faktoren sind Frass, Konkurrenz, Parasiten und Symbiosen. Sie vernetzen alle Arten im Nahrungsnetz. Mechanismus: Mehr Algen naehren mehr Zooplankton, mehr Raeuber dezimieren Beute: Jede Masche zieht an anderen. Klausur-Tipp: Nahrungsnetz statt Nahrungskette zeichnen.
 
-## Schritt 3 — entdecken: Von der Nische bis zur Pyramide: Die Flusskette
+- **Eutrophierung**: Eutrophierung ist die Ueberduengung eines Gewaessers mit Phosphat und Nitrat. Algenbluehten verdunkeln, tote Biomasse verfault sauerstoffzehrend. Mechanismus: Bakterien atmen den Sauerstoff weg, Fische ersticken, der See kippt in Faulnis um. Klausur-Tipp: Naehrstoff plus Algenbluete plus Sauerstoffzehrung als Dreiklang.
+
+- **Oekologische Kapazitaet**: Die Kapazitaet K ist die maximale Population, die ein Lebensraum dauerhaft traegt. Jenseits von K bricht die Kurve ein. Mechanismus: Logistisches Wachstum steigt erst steil und flacht an K ab; Ueberschuss stirbt oder wandert ab. Klausur-Tipp: K als waagerechte Decke in die Kurve einzeichnen.
+
+- **Nachhaltigkeit**: Nachhaltigkeit entnimmt nur den Zuwachs und schont den Bestand. Sie denkt in Generationen statt in Quartalen. Mechanismus: Fangquoten unterhalb des Zuwachses halten Bestand und Ertrag stabil; Raubbau maximiert einmal und ruiniert dann. Klausur-Tipp: Zuwachs entnehmen, Bestand schonen als Merksatz.
+
+
+`Klausur-Satz: Eutrophierung heisst: Naehrstoff herein, Algenbluete herauf, Sauerstoff hinaus.`
+
+## Schritt 3 — entdecken: Vom Duenger zum Fischsterben: Die Kippkette
 
 WIRKUNGSGEFUEGE (Ursache zu Wirkung):
 
-Die Kette: Nitrat duengt Algen, Algenbluete beschattet, Absterben fuettert Bakterien, Bakterien fressen Sauerstoff — Fischsterben. Parallel begrenzt die Kapazitaetsgrenze das Wachstum: erst exponentiell, dann logistisch. Nur ein Zehntel der Energie erreicht die naechste Ebene, daher die Pyramide.
+Die Kippkette startet mit **Phosphat** aus Duenger und Abwasser. Algen explodieren zur Bluete und verdunkeln das Wasser. Unter der Decke sterben Pflanzen, tote Biomasse sinkt.
+
+Bakterien zersetzen die Flut und atmen den **Sauerstoff** weg. Fische ersticken, der See kippt: Aus Ueberfluss wird Faulnis, aus Ertrag wird Verlust.
 
 ```diagram
-Nitrat -> Algenbluete -> Schatten -> Detritus -> Bakterien -> O2 minus -> Fisch tot
-Wachstum: exponentiell -> Kapazitaet -> logistisch
-Energie je Ebene: nur ca. 10 % weiter
+Duenger -> Algenbluete -> Dunkelheit -> Tote Biomasse
+Bakterien atmen -> O2 null -> Fischsterben
+K überschritten -> Kippen
 ```
 
-`Klausur-Satz: Nitrat duengt die Bluete, der Abbau frisst den Sauerstoff.`
+Die logistische Decke des Sees:
+
+$$\frac{dN}{dt} = r \cdot N \cdot \frac{K - N}{K}$$
+
+Nahe K bremst der Term die Rate auf null; Fang muss unter dem Zuwachs bleiben.
+
+`Klausur-Satz: Duenger naehrt Algen, Algen sterben, Bakterien atmen — die Kette endet im Fischsterben.`
 
 ## Anekdote & Fun-Fact
 
-**Anekdote / Fun-Fact (DE)**: Ein Teich kippt ueber Nacht: Tagsueber produzieren Algen Sauerstoff, nachts atmen alle — die Bilanz entscheidet ueber Leben und Tod.
+**Anekdote / Fun-Fact (DE)**: Woelfe im Yellowstone draengten Hirsche zurueck, Waelder kehrten, Fluesse beruhigten sich — ein Raeuber reparierte das Tal.
 
-**Bezug zum Konzept**: Die Energiepyramide zeigt, warum oben wenig ankommt.
 
-## Schritt 4 — ausprobieren: Waage-Sandkasten: Rette den Teich
+**Bezug zum Konzept**: Jede Masche zieht: Der Ranger denkt in Netzen, nicht in Einzelarten.
+
+## Schritt 4 — ausprobieren: Waage-Sandkasten: Duengen oder Schuetzen
 
 [Werkzeug: balance-board]
 
-AUFGABE (Target Challenge): Target Challenge: Produzenten 10 000 kJ. Verteile nach 10-Prozent-Regel auf drei Ebenen und kippe zusaetzlich 50 kg Nitrat in die Simulation. Ziel: Zeige, warum Ebene 3 hungert und der Teich umkippt. AUFGABE konkret: 10 000 kJ Produzenten: Wieviel erreicht die dritte Ebene?
+AUFGABE (Target Challenge): Waage zwei Plaene: Plan Duengung plus 30 Prozent Ertrag gegen Plan Pufferzone mit 10 Prozent Minderertrag. Lege Phosphat-Bilanz und Sauerstoffprognose auf beide Schalen und entscheide mit Kapazitaets-Argument.
 
 HILFE:
-1. Pro Ebene mal 0,1.
-2. Drei Ebenen heisst zweimal weitergeben.
-3. Eutrophierung frisst Sauerstoff.
+1. Phosphat-Eintrag beider Plaene bilanzieren.
+2. Sauerstofffolge ueber die Kippkette abschaetzen.
+3. Mit K und Nachhaltigkeit das Urteil faellen.
 
-MUSTERLÖSUNG: Ebene 2 erhaelt ca. 1 000 kJ, Ebene 3 ca. 100 kJ; der Rest geht als Waerme verloren. Nitrat treibt die Bluete, der Abbau frisst den Sauerstoff.
+MUSTERLOESUNG: Duengung treibt Phosphat ueber die Kippschwelle und Sauerstoff gegen null; Pufferzone haelt unter K und sichert Ertrag plus Bestand. Urteil: Pufferzone.
 
-`Klausur-Satz: 100 kJ auf Ebene drei erklaeren Hunger und Kippen.`
+`Klausur-Satz: Mit Phosphat-Bilanz und Sauerstoffkurve wiegt die Waage statt zu raten.`
 
-## Schritt 5 — ausprobieren: Duell der Kurven: Exponentiell gegen logistisch
+## Schritt 5 — ausprobieren: Duell der Wege: Bilanzrechnung gegen Nahrungsnetz-Deutung
 
-VERGLEICH: Waehle erst die Kurve — (i) exponentiell oder (ii) logistisch — dann loesen.
+VERGLEICH: Waehle erst den Ranger-Weg, dann loesen: (i) Bilanz-Rechenweg oder (ii) Netzdeute-Weg — dann loesen.
 
-Weg A (Labor-Weiche): Ohne Grenze, Kurve steigt immer steiler.
 
-Weg B (Teich-Weiche): Mit Kapazitaetsgrenze, Kurve flacht zum S ab.
+Weg A (Bilanz-Rechenweg): Eintraege und Entnaehmen quantitativ bilanzieren und K-Ueberschreitung berechnen. Dieser Weg liefert Zahlen und ist behoerdenfest.
 
-AUFGABE A: Bakterien im Ueberfluss verdoppeln sich stuendlich. Welche Kurve?
+Weg B (Netzdeute-Weg): Nahrungsnetz qualitativ lesen und Kippfolgen frueh warnen. Dieser Weg ist schnell und ganzheitlich, bleibt aber ohne Zahl weich.
 
-AUFGABE B: Fische im Teich mit Futtergrenze. Welche Kurve?
 
-HILFE: A ohne Grenze — Weg A. B mit Grenze — Weg B.
+AUFGABE A: Phosphatfracht gegen Schwelle mit Zahlen gesucht. Welcher Weg?
 
-ANTWORT: A folgt Weg A als exponentielles Wachstum; B folgt Weg B als logistisches Wachstum mit Kapazitaetsgrenze.
+AUFGABE B: Warum folgt dem Algenfruehling das Fischsterben? Welcher Weg?
 
-`Klausur-Satz: Ohne Grenze exponentiell, mit Grenze logistisch.`
 
-## Schritt 6 — check: Selbsttest zu Oekologie: Nische, Population, Energiefluss
+HILFE: A nennt Fracht und Schwelle — Weg A mit Bilanz. B nennt Warum mit Netz — Weg B mit Kette.
 
-FRAGE: Was ist eine oekologische Nische? | ANTWORT: Ansprueche plus Rolle einer Art im System.
-FRAGE: Wieviel Energie fliesst weiter? | ANTWORT: Etwa 10 % je Trophieebene.
-FRAGE: Was treibt die Eutrophierung? | ANTWORT: Naehrstoff-Plus, Algenbluete, Sauerstoffminus.
+ANTWORT: A folgt Weg A mit Eintrag-minus-Austrag-Rechnung; B folgt Weg B mit Eutrophierungs-Kausalkette.
 
-`Klausur-Satz: Netze statt Ketten denken schuetzt vor Fehlschluessen.`
+`Klausur-Satz: Bilanzen rechnen stellt, Netze deuten warnen — der Ranger braucht beides.`
+
+## Schritt 6 — check: Selbsttest zu Oekologie und Umwelt
+
+- FRAGE: Nenne den Eutrophierungs-Dreiklang? | ANTWORT: Naehrstoff, Bluete, Sauerstoffzehrung.
+
+- FRAGE: Was ist die Kapazität K? | ANTWORT: Dauerhaft tragbare Obergrenze des Lebensraums.
+
+- FRAGE: Wie fischt man nachhaltig? | ANTWORT: Nur den Zuwachs entnehmen, nie den Bestand.
+
+
+`Klausur-Satz: Ohne Kapazitaet bleibt jeder Fang geraten, mit K wird er geplant.`
 
 ## Fehlvorstellung
 
-1. Fehlvorstellung: Nahrungsketten seien linear.
-   Korrektur-Satz: `Real herrschen Netze; Ketten sind nur Ausschnitte.`
-2. Fehlvorstellung: Energie kreise wie Stoffe.
-   Korrektur-Satz: `Energie fliesst einseitig und geht als Waerme verloren.`
+1. Fehlvorstellung: Klares Wasser sei gesund.
+   Korrektur-Satz: `Phosphate sind unsichtbar: Klares Wasser kann ueberduengt sein und naechste Woche kippen.`
 
-## Schritt 7 — szenario: Klausurtransfer: Anhoerung vor dem Teichgericht
+2. Fehlvorstellung: Mehr Dünger helfe immer.
+   Korrektur-Satz: `Jenseits von K frisst der Mehrertrag den See: Ertrag heute, Faulnis morgen.`
 
-ROLLE: Du bist Sachverstaendige vor dem Teichgericht.
-SITUATION: Nach Fischsterben streiten Fabrik und Angler. Beurteile in ca. 140 Woertern mit Nische, Energiefluss und Eutrophierung, wer das Leck stopfen muss.
-RUBRIC (30 XP): Nischenbezug (8 XP) | Energiefluss (8 XP) | Eutrophierungskette (8 XP) | Urteil (6 XP).
+## Schritt 7 — szenario: Klausurtransfer: Gutachten zum See-Gutachten
 
-`Klausur-Satz: Eutrophierung ist eine Kette, kein einzelner Wert.`
+ROLLE: Du bist Rangerin am Kippsee.
+SITUATION: Der Hof will 30 Prozent mehr duengen. Schreibe in ca. 150 Woertern ein Gutachten mit Kippkette, Kapazitaet und Nachhaltigkeit und empfehle eine Auflage.
+RUBRIC (30 XP): Kippkette (8 XP) | Kapazitaet (8 XP) | Nachhaltigkeit (8 XP) | Auflage (6 XP).
+
+
+`Klausur-Satz: Achtung Falle: Klares Wasser ist nicht gesundes Wasser; Phosphate sind unsichtbar.`
 
 ## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY:
 
-Takeaway-Satz: `Energie fliesst, Stoffe kreisen: Das trennt Pyramide und Kreislauf.`
+Takeaway-Satz: `Zuwachs entnehmen, Bestand schonen: K ist der Deckel jeder Gier.`
 
-`Klausur-Satz: Energie fliesst, Stoffe kreisen: Das trennt Pyramide und Kreislauf.`
+`Klausur-Satz: Oekologie ist Haushaltskunde der Natur: Wer ueber K lebt, zahlt mit dem See.`
 
 
 REFLEXION:

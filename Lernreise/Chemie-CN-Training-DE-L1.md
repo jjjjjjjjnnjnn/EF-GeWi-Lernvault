@@ -14,112 +14,136 @@ version: Lesson-v3
 # Lernreise: CN-Training: Zeitlimit und EHZ-Selbstbewertung — Episode C3: Milchiges Geheimnis im Becken
 
 <!-- Campaign: Imperium-Alchemie | Chemie | entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
-
-## Schritt 1 — entdecken: Der Countdown am Titriertisch
+## Schritt 1 — entdecken: Das Alchemie-Bootcamp: Scherit vor der Pruefung
 
 ZIELE:
-1. Ich kann sechs Formelkarten nennen.
-2. Ich kann jede Karte einer Frage zuordnen.
-3. Ich kann Karten in sechzig Sekunden abrufen.
+1. Ich kann **Ansaetze** (Gegeben, Formel, Einheit) automatisieren.
+2. Ich kann Aufgaben in **Wieviel- und Wohin-Typen** sortieren.
+3. Ich kann meine Loesung am **Horizont** selbst bewerten.
 
-Im Klärbecken fällt ein milchiger Niederschlag aus; Vera Haber ruft die Löslichkeitswache. Um Mitternacht flackern alle sechs Formel-Karten der Alchemie: MWG, Q, pH, Titration, Redox, Mol-Brücke. Mia Puffer sortiert das Handbuch neu, Jonas Säure klebt Merksätze an jede Karte, und Vera Haber prüft morgen jede einzelne. Heute wird gelegt, was sitzt: Wer die sechs Karten in sechzig Sekunden abrufen kann, besteht jede Klausur.
+Bootcamp Tag null: 90 Minuten, drei Stationen, kein Erbarmen. Ausbilderin Vera Haber schneidet die Klausur in **Wieviel**, Wohin und Warum. Jede Station laeuft gegen die Uhr, jeder Punkt wird gewogen.
 
-`Klausur-Satz: Sechs Karten tragen jede Klausur.`
+Mia Puffer verteilt Ansatzkarten: **Gegeben**, Formel, Einheit. Wer den **Ansatz** automatisiert, rettet Minuten fuer das Urteil. Heute wird trainiert, was zaehlt: vollstaendig statt brillant.
 
-## Schritt 2 — entdecken: Die EHZ-Stoppuhr der Zeitsprinter
+`Klausur-Satz: Bootcamp schlaegt Begabung: Wer den Ansatz automatisiert, gewinnt Minuten.`
+
+## Schritt 2 — entdecken: Die Bootcamp-Werkzeugkiste
 
 AUSRUESTUNG (5 Begriffe der Werkzeugkiste):
 
-- MWG-Karte: K aus potenzierten c.
-- Q-Karte: Gleiche Formel, jetzt gemessen.
-- pH-Karte: Minus log der H-Konzentration.
-- Mol-Karte: n = m durch M.
-- Redox-Karte: Steigen geben, Sinken nehmen.
+- **Gegeben-Gesucht-Ansatz**: Gegeben und Gesucht ordnen jede Rechnung vor der ersten Zahl. Sie verhindern Einheiten- und Formelirrtuemer. Mechanismus: Man schreibt Symbole mit Werten und Einheiten; der Ansatz folgt fast von selbst. Klausur-Tipp: Zwei Zeilen Ansatz sichern Teilpunkte bei jedem Folgefehler.
 
-`Klausur-Satz: Wieviel zieht Mengen, Wohin zieht Lage.`
+- **Wieviel-Typ**: Der Wieviel-Typ fragt nach Masse, Volumen oder Konzentration. Er verlangt Mol-Bruecke und Verhaeltnisse. Mechanismus: Man rechnet n gleich m durch M und uebersetzt Koeffizienten in Mol-Verhaeltnisse. Klausur-Tipp: Gramm im Text heisst sofort Mol-Bruecke ziehen.
 
-## Schritt 3 — entdecken: Vom Zeitdruck zur Punktemaschine
+- **Wohin-Typ**: Der Wohin-Typ fragt nach Richtung unter Stoerung. Er verlangt Q oder Le Chatelier. Mechanismus: Man benennt den Zwang und zeigt die Fluchtseite mit Begruendung. Klausur-Tipp: Stoerwort plus Pfeil als Antwortpaar.
+
+- **Einheitencheck**: Der Einheitencheck vergleicht links und rechts jeder Gleichung. Er faengt Formel- und Logikfehler. Mechanismus: Man kuerzt mol, L und s; bleibt Falsches uebrig, war der Ansatz falsch. Klausur-Tipp: Check als letzte Zeile hinschreiben.
+
+- **Erwartungshorizont**: Der Erwartungshorizont listet alle Punkte der Musterloesung. Er ist das Gesetz der Korrektur. Mechanismus: Man haelt die Antwort Stichpunkt fuer Stichpunkt daneben und ergaenzt Luecken. Klausur-Tipp: Nummerierte Antwort spiegelt den Horizont.
+
+
+`Klausur-Satz: Gramm zieht Mol, Stoerung zieht Le Chatelier.`
+
+## Schritt 3 — entdecken: Vom Drill zum Urteil: Die Trainingsleiter
 
 WIRKUNGSGEFUEGE (Ursache zu Wirkung):
 
-Die Kette: Frage lesen, Karte ziehen, einsetzen. Wieviel zieht Mol und MWG, Wohin zieht Q und Le Chatelier, Sieden zieht Haft, Strom zieht Redox.
+Die Trainingsleiter startet mit dem **Sortieren**: Jede Aufgabe wird Wieviel oder Wohin. Dann folgt der **Ansatz**: Gegeben, Formel, Einheit stehen vor jeder Zahl.
+
+Zuletzt sichert der **Horizont**: Stichpunkte abhaken, Luecken schliessen, Zeitreserve halten. Was der Horizont nicht findet, findet der Pruefer auch nicht.
 
 ```diagram
-Wieviel -> Mol/MWG | Wohin -> Q/LeChatelier
-Sieden -> Haft | Strom -> Redox
+Sortieren -> Ansetzen -> Rechnen
+Wieviel = Mol | Wohin = Q/LeChatelier
+Horizont -> Luecken schliessen
 ```
 
-`Klausur-Satz: Q kleiner K heisst rechts.`
+Die Budgetregel des Bootcamps:
+
+$$c = \frac{n}{V} \quad \text{in } \frac{\text{mol}}{\text{L}}$$
+
+Jede Konzentration braucht Volumen im Nenner; ohne L kein c.
+
+`Klausur-Satz: Sortieren, ansetzen, sichern: Der Dreischritt traegt jede Klausur.`
 
 ## Anekdote & Fun-Fact
 
-**Anekdote / Fun-Fact (DE)**: Sechs Karten, sechzig Sekunden: Das Handbuch passt in eine Hosentasche und trägt durch jede Klausur.
+**Anekdote / Fun-Fact (DE)**: Feuerwehr uebt den Angriff trocken tausendmal — der Ernstfall dankt es mit Sekunden.
 
-**Bezug zum Konzept**: Karten tragen Klausuren.
 
-## Schritt 4 — ausprobieren: Zeit-Sandkasten: Drei Stationen, sechs Minuten
+**Bezug zum Konzept**: Trocken drillen, nass liefern: Das Bootcamp trennt Ueben und Ernst.
 
-[Werkzeug: oral-timer]
+## Schritt 4 — ausprobieren: Trainings-Sandkasten: Drei Stationen gegen die Uhr
 
-AUFGABE (Target Challenge): Target Challenge: 90-Sekunden-Pitch zu Q-gegen-K plus 3 Mini-Aufgaben in 6 Minuten. Ziel: Volle EHZ-Punktzahl mit Zeitstempel. AUFGABE konkret: Q kleiner K: Welche Karte und welche Richtung?
+[Werkzeug: formula]
+
+AUFGABE (Target Challenge): Drei Stationen: 10 g CaCO3 zu CO2-Volumen, Q-Entscheid bei Haber-Werten, Urteil ueber Heizen bei exotherm. Loese alle mit Ansatz und Einheit in 30 Minuten und bewerte dich am Horizont.
 
 HILFE:
-1. Karte ziehen.
-2. Richtung nennen.
-3. Mini-Rechnung dazu.
+1. Typ bestimmen: Wieviel oder Wohin.
+2. Ansatz mit Gegeben, Formel, Einheit schreiben.
+3. Horizont anlegen und Luecken schliessen.
 
-MUSTERLÖSUNG: Q-Karte ziehen, rechts laufen bis Q gleich K — plus Mini-Rechnung als Beleg.
+MUSTERLOESUNG: CO2: 0,1 mol, 2,24 L; Q kleiner K heisst rechts; Heizen bei exotherm schiebt links; alle mit Einheit, Horizont zeigt Volltreffer.
 
-`Klausur-Satz: n gleich m durch M.`
+`Klausur-Satz: Drei Stationen, neunzig Minuten, null Ausreden: Die Uhr trainiert mit.`
 
-## Schritt 5 — ausprobieren: Duell der Taktiken: Tempo gegen Tiefe
+## Schritt 5 — ausprobieren: Duell der Wege: Ansatz-Drill gegen Vollklausur
 
-VERGLEICH: Waehle erst den Stapel — (i) Mengen oder (ii) Lage — dann loesen.
+VERGLEICH: Waehle erst den Trainingsweg, dann loesen: (i) Ansatz-Drillweg oder (ii) Vollklausurweg — dann loesen.
 
-Weg A (Mengen-Stapel): Mol, MWG, pH direkt.
 
-Weg B (Lage-Stapel): Q, Le Chatelier, Haft, Redox.
+Weg A (Ansatz-Drillweg): Ansaetze unter Stoppuhr automatisieren und Typen sortieren. Dieser Weg baut Tempo und Sicherheit.
 
-AUFGABE A: Gramm aus Gleichung. Welcher Stapel?
+Weg B (Vollklausurweg): Komplette Klausur unter Ernstfall schreiben und auswerten. Dieser Weg baut Nerven und Vollstaendigkeit.
 
-AUFGABE B: Richtung nach Druckstoss. Welcher Stapel?
 
-HILFE: A fragt Gramm — Weg A. B fragt Richtung — Weg B.
+AUFGABE A: Mol-Ansaetze in unter einer Minute bauen. Welcher Weg?
 
-ANTWORT: A folgt Weg A mit Mol-Brücke; B folgt Weg B mit Q-gegen-K.
+AUFGABE B: Neunzig Minuten ohne Einbruch durchhalten. Welcher Weg?
 
-`Klausur-Satz: Jede Frage zieht genau eine Karte.`
 
-## Schritt 6 — check: Selbsttest zu CN-Training: Zeitlimit und EHZ-Selbstbewertung
+HILFE: A verlangt Automatik — Weg A mit Drill. B verlangt Dauer — Weg B mit Simulation.
 
-FRAGE: Nenne drei Karten. | ANTWORT: MWG, Q, pH.
-FRAGE: Wohin gehört Q? | ANTWORT: Zum Lage-Stapel.
-FRAGE: Wohin gehört Mol? | ANTWORT: Zum Mengen-Stapel.
+ANTWORT: A folgt Weg A mit Kartendrill; B folgt Weg B mit Probeklausur und Horizont.
 
-`Klausur-Satz: Abruf schlägt Besitz.`
+`Klausur-Satz: Drill baut Tempo, Vollklausur baut Nerven — die Pruefung braucht beides.`
+
+## Schritt 6 — check: Selbsttest zu CN-Training
+
+- FRAGE: Wie lautet der Ansatz-Dreischritt? | ANTWORT: Gegeben, Formel, Einheit.
+
+- FRAGE: Was zieht das Wort Gramm? | ANTWORT: Die Mol-Bruecke.
+
+- FRAGE: Womit bewertest du dich? | ANTWORT: Stichpunkt fuer Stichpunkt am Horizont.
+
+
+`Klausur-Satz: Ohne Horizont bleibt Selbstcheck geraten, mit ihm wird er gezaehlt.`
 
 ## Fehlvorstellung
 
-1. Fehlvorstellung: Karten sammeln reiche.
-   Korrektur-Satz: `Nur Abruf unter Zeit zählt.`
-2. Fehlvorstellung: Eine Karte passe überall.
-   Korrektur-Satz: `Jede Frage zieht genau eine Karte.`
+1. Fehlvorstellung: Schnell rechnen reiche.
+   Korrektur-Satz: `Schnell plus vollstaendig zaehlt: Der Horizont bestraft Luecken, nicht Tempo.`
 
-## Schritt 7 — szenario: Klausurtransfer: Marathon-Protokoll mit Punkteplan
+2. Fehlvorstellung: Ansatz sei Zeitverschwendung.
+   Korrektur-Satz: `Ansatz sichert Teilpunkte: Ohne ihn kostet ein Zahlendreher alles.`
 
-ROLLE: Du bist Handbuch-Prüferin.
-SITUATION: Sechs Fragen liegen bereit. Ordne in ca. 120 Woertern jede Frage einer Karte zu und rechne zwei Beispiele.
-RUBRIC (30 XP): Zuordnung (12 XP) | Rechnungen (12 XP) | Sprache (6 XP).
+## Schritt 7 — szenario: Klausurtransfer: Bootcamp-Abschlusspruefung
 
-`Klausur-Satz: Sechzig Sekunden entscheiden.`
+ROLLE: Du bist Bootcamp-Prueferin.
+SITUATION: Drei Aufgaben liegen bereit. Schreibe in ca. 120 Woertern Loesungen mit Ansatz und Einheit und lege den Horizont offen.
+RUBRIC (30 XP): Ansaetze (12 XP) | Rechnungen (12 XP) | Horizont (6 XP).
+
+
+`Klausur-Satz: Achtung Falle: Schoener Rechenweg ohne Einheit verschenkt den halben Punkt.`
 
 ## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY:
 
-Takeaway-Satz: `Handbuch im Kopf statt Zettel.`
+Takeaway-Satz: `Trainiere wie geprueft: sortieren, ansetzen, Horizont anlegen.`
 
-`Klausur-Satz: Handbuch im Kopf statt Zettel.`
+`Klausur-Satz: Klausurreife ist Handwerk: Verfahren schlaegt Einfall, Vollstaendigkeit schlaegt Brillanz.`
 
 
 REFLEXION:

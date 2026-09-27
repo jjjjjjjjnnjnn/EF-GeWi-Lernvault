@@ -14,122 +14,142 @@ version: Lesson-v3
 # Lernreise: Zwischenmolekulare Kraefte und Stoffeigenschaften — Episode C26: Stille vor dem Äquivalenzpunkt
 
 <!-- Campaign: Imperium-Alchemie | Chemie | entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
-
-## Schritt 1 — entdecken: Der klebrige Kessel
+## Schritt 1 — entdecken: Der Gecko an der Decke: Kleben ohne Kleber
 
 ZIELE（本节三目标）：
-1. 中文：会给分子间力排序。
-2. 中文：会论证沸点高低。
-3. 中文：能解读水的特殊性。
+1. 中文：能按强度排三种分子间力。
+2. 中文：能从结构预测沸点。
+3. 中文：能用相似相溶讲溶解。
 
-【危机Hook】Die Kurve steigt kaum, dann springt sie; Jonas hält den Kolben wie rohes Ei. 换热器堵了：一种料黏如蜜，一种挥发如香水。班长怀疑分子间有看不见的手，实习生举起两块磁铁：伦敦力、偶极、氢键。总监要排序：粘得越牢、沸点越高。今天分拣“黏性”。
+【危机Hook】Gecko an der Decke: 50 Newton Haft, null Klebstoff. 壁虎吸在天花板上：50牛吸力，零胶水。工程师盯着它的脚发呆——数百万刚毛靠最弱的力粘住最重的身，胶水厂却天天为粘不牢赔钱。今晚必须从最弱的力讲起，否则强力胶永远不懂温柔。
 
-`Klausur-Satz: London überall, Brücke nur bei H-NOF.`
+`Klausur-Satz: Der Gecko beweist: Die schwaechste Kraft, millionenfach summiert, haelt ein Leben.`
 
-## Schritt 2 — entdecken: Die Haft-Kiste der Brückenbauer
+## Schritt 2 — entdecken: Die Haft-Werkzeugkiste der Materialpruefer
 
 PRETRAINING术语盒（5大装备，中文在上、德语在下）：
 
-- 中文：伦敦力 — 德语：London-Kräfte：处处有、弱，随接触面增大。 / Überall, schwach, mit Fläche wachsend.
-- 中文：偶极作用 — 德语：Dipol-Dipol：极性分子正负相吸。 / Plus an Minus bei polaren.
-- 中文：氢键 — 德语：Wasserstoffbrücke：H连NOF时特强。 / Stark bei H an N, O, F.
-- 中文：沸点 — 德语：Siedepunkt：粘性标尺。 / Misst die Haftstärke.
-- 中文：溶解性 — 德语：Löslichkeit：相似相溶。 / Gleich löst gleich.
+- 中文：色散力 — 德语：London-Kraefte：人人都有最弱却关键。 / London-Kraefte: London-Kraefte entstehen aus momentanen Dipolen in jeder Elektronenhülle. Sie wirken überall und wachsen mit der Huellengroesse. Mechanismus: Iod schmilzt hoeher als Chlor, weil mehr Elektronen staerker flattern; Geckos summieren Millionen Schwachstellen zu Newton. Klausur-Tipp: Ueberall plus Huellengroesse als Doppelpunkt.
 
-`Klausur-Satz: Stärker haftet, höher siedet.`
+- 中文：偶极作用 — 德语：Dipol-Dipol：永久偶极相吸。 / Dipol-Dipol: Dipol-Dipol-Kraefte ziehen permanente Teilladungen an. Sie ordnen Molekuele Plus an Minus. Mechanismus: HCl siedet hoeher als unpolares Analogon; Ausrichtung kostet Ordnung und bringt Halt. Klausur-Tipp: Teilladungen mit Delta-Plus-Minus einzeichnen.
+
+- 中文：氢键 — 德语：Wasserstoffbruecke：最强需H加FON。 / Wasserstoffbruecke: H-Brücken brauchen H an F, O oder N plus freies Paar. Sie sind die staerkste Zwischenkraft. Mechanismus: Wasser siedet absurd hoch, Eis schwimmt: Ohne Brücken gaebe es kein Leben. Klausur-Tipp: H-an-FON plus freies Paar als Bedingungspaar.
+
+- 中文：沸点趋势 — 德语：Siedepunkt-Trend：力越强越难跑。 / Siedepunkt-Trend: Siedepunkte steigen mit staerkeren Zwischenkraeften und groesseren Huellen. Trennen kostet Energie. Mechanismus: Ethanol schlaegt Ethan haushoch dank Brücken; Kettenlaenge hebt London schrittweise. Klausur-Tipp: Kraft benennen plus Vergleichspaar als Antwort.
+
+- 中文：溶解性 — 德语：Loeslichkeit：相似相溶。 / Loeslichkeit: Gleiches loest Gleiches: Polares loest Polares, Unpolares loest Unpolares. H-Brücken oeffnen Wasser fuer Zucker und Alkohole. Mechanismus: Oel perlt ab, weil Wasser seine Brücken nicht fuer Fremde opfert. Klausur-Tipp: Brückenargument als Loeslichkeitsbeweis.
+
+
+`Klausur-Satz: London ueberall, Dipol bei Ladung, Brücke nur mit H-an-FON.`
 
 ## Schritt 3 — entdecken: Vom Dipol zum Siedepunkt: Die Haftkette
 
 ENTDECKEN因果传导机制（中文拆解在上，德语链条在下）：
 
-中文：链条：伦敦处处有，极性加偶极，H连NOF成氢键。粘越牢沸越高；水四重氢键，虽轻仍为液。
+中文：黏附链：电子层喂大色散，部分电荷建偶极，H-FON结氢键；力强则沸点高，溶解看相似相溶，水永远是例外。
 
-德语：Die Kette: London überall, Dipol bei Polarität, Brücke bei H-NOF. Stärker haftet, höher siedet. Wasser brückt vierfach — daher flüssig trotz Leichtigkeit.
+德语：Die Haftkette startet bei der **Struktur**: Huellengroesse naehrt London, Teilladungen bauen Dipole, H-an-FON gruendet **Brücken**. Staerke folgt der Leiter London, Dipol, Brücke. Dann folgen die **Folgen**: Staerkere Haft hebt den **Siedepunkt** und filtert die **Loeslichkeit** nach Gleiches-loest-Gleiches. Wasser tanzt aus jeder Reihe.
 
 ```diagram
-London < Dipol < H-Bruecke
-Staerker haftet -> hoeher siedet
-Wasser: 4 Bruecken -> fluessig
+Struktur -> Kraft (London < Dipol < Bruecke)
+Kraft hoch -> Siedepunkt hoch
+Polar passt polar | Unpolar passt unpolar
 ```
 
-`Klausur-Satz: Wasser brückt vierfach und bleibt flüssig.`
+Die Abstandsregel der schwächsten Kraft:
+
+$$E_{\text{London}} \propto -\frac{1}{r^6}$$
+
+中文：色散能随距离六次方衰减，贴得越近黏得越牢。 / 德语：Kleiner Abstand, riesige Wirkung: Darum zaehlen Gecko-Haerchen Millionen Kontakte.
+
+`Klausur-Satz: Struktur baut Kraft, Kraft baut Siedepunkt: Die Kette endet im Blubbern.`
 
 ## Anekdote & Fun-Fact
 
-**Anekdote / Fun-Fact (DE)**: Wasser schwimmt auf eigenem Eis und kocht erst bei hundert Grad — die Brücke trägt Berge.
+**Anekdote / Fun-Fact (DE)**: Eis schwimmt, weil Brücken Lücken bauen — gefrorenes Wasser rettet Seen im Winter.
 
-**中文解读**: 水浮于自家冰上、百度才开——氢键驮得起山。
 
-**Bezug zum Konzept**: Haft schreibt den Siedepunkt.
+**中文解读**: 冰能浮因氢键搭出空架子——冻水救了冬天的湖。
 
-## Schritt 4 — ausprobieren: Haft-Sandkasten: Sortiere die Brühen
 
-[Werkzeug: balance-board]
+**Bezug zum Konzept**: Lücken als Rettung: Die Anomalie des Wassers ist Leben.
 
-AUFGABE目标挑战：目标挑战：把4种物质按沸点排序，每级用力型论证，并解释水为何是“离群者”。 德语原题：Ethanol gegen Ethan: Wer siedet höher und warum?
+## Schritt 4 — ausprobieren: Sandkasten: Ordne Siede- und Loeslichkeit
+
+[Werkzeug: formula]
+
+AUFGABE目标挑战：已知三沸点与油水混合：配力、解释跳变并预测丁醇溶解性。 德语原题：Gegeben: Ethan minus 89, Ethanol 78, Wasser 100 Grad; dazu Mischproben mit Oel. Ordne Kraefte zu, erklaere die Spruenge und sage Loeslichkeit von Butanol in Wasser voraus.
 
 HILFE:
-1. Haftart bestimmen.
-2. H-NOF suchen.
-3. Stärker heisst höher.
+1. Kraefte nach Struktur zuordnen.
+2. Siedespruenge mit Kraftdifferenz erklaeren.
+3. Loeslichkeit mit Brückenargument vorhersagen.
 
-MUSTERLÖSUNG：中文：乙醇靠羟基成氢键，乙烷只有伦敦力，氢键胜，故乙醇沸点高。 / 德语：Ethanol brückt über OH, Ethan nur London: Brücke schlägt London, also siedet Ethanol höher.
+MUSTERLOESUNG：中文：乙烷仅色散、乙醇加氢键故高167度，丁醇半溶因链与羟基拔河。 / 德语：Ethan nur London, Ethanol plus Brücke: plus 167 Grad; Wasser maximal vernetzt; Butanol halb loeslich, weil Kette gegen OH kaempft.
 
-`Klausur-Satz: London oder Brücke entscheidet den Weg.`
+`Klausur-Satz: Mit 78 gegen minus 89 Grad und Mischprobe als Beleg ordnet der Sandkasten statt zu raten.`
 
-## Schritt 5 — ausprobieren: Duell der Hafte: London gegen Wasserstoff
+## Schritt 5 — ausprobieren: Duell der Wege: Siededaten-Rechnung gegen Struktur-Deutung
 
-VERGLEICH: Waehle erst die Haft — (i) London oder (ii) Brücke — dann loesen.选程序：先定力型。
+VERGLEICH: Waehle erst den Haft-Weg, dann loesen: (i) Siededaten-Rechenweg oder (ii) Struktur-Deuteweg — dann loesen.选程序：先看信号词再选路。
 
-Weg A：Weg A (London-Weiche): Unpolar, schwach, niedrig siedend.
 
-Weg B：Weg B (Brücken-Weiche): H-NOF, stark, hoch siedend.
+Weg A：Weg A (Siededaten-Rechenweg): Siededifferenzen quantitativ vergleichen und Kraefte zuordnen. Dieser Weg liefert Grad-Zahlen und ist beweisfest.
 
-AUFGABE A: Ethan ohne OH. Welche Haft? 【选程序：先看信号词再选路】
+Weg B：Weg B (Struktur-Deuteweg): Strukturen qualitativ lesen und Loeslichkeit vorhersagen. Dieser Weg ist anschaulich, bleibt aber ohne Zahl weich.
 
-AUFGABE B: Ethanol mit OH. Welche Haft? 【选程序：先看信号词再选路】
 
-HILFE：A ohne NOF — Weg A. B mit OH — Weg B.
+AUFGABE A: Kraft aus Siedesprung exakt gesucht. Welcher Weg? 【选程序：先看信号词再选路】
 
-ANTWORT：ANTWORT: A folgt Weg A als London; B folgt Weg B als Wasserstoffbrücke.
+AUFGABE B: Loest sich Butanol in Wasser? Welcher Weg? 【选程序：先看信号词再选路】
 
-`Klausur-Satz: Gleich löst gleich.`
 
-## Schritt 6 — check: Selbsttest zu Zwischenmolekulare Kraefte und Stoffeigenschaften
+HILFE：A nennt Sprung — Weg A mit Differenz. B nennt Loeslichkeit — Weg B mit Brücke.
 
-FRAGE：三种力排序？（Ordne die drei Hafte.） | ANTWORT：伦敦<偶极<氢键。 / London unter Dipol unter Brücke.
-FRAGE：水为何沸点反常高？（Warum siedet Wasser hoch?） | ANTWORT：每分子四个氢键。 / Vier Brücken je Molekül.
-FRAGE：谁溶谁？（Was löst was?） | ANTWORT：相似相溶。 / Gleich löst gleich.
+ANTWORT：中文：A走数据路算167度差；B走结构路以链羟拔河作答。 / 德语：A folgt Weg A mit 167-Grad-Differenz; B folgt Weg B mit Kette-gegen-OH-Argument.
 
-`Klausur-Satz: Haft schlägt Masse.`
+`Klausur-Satz: Siededaten rechnen belegt, Strukturen deuten erklaert — die Klausur braucht beides.`
+
+## Schritt 6 — check: Selbsttest zu Zwischenmolekulare Kraefte
+
+- FRAGE:：三种力怎么排？（Ordne die drei Kräfte） | ANTWORT:：色散偶极氢键递增。 / London, Dipol, Bruecke aufsteigend.
+
+- FRAGE:：氢键条件是什么？（Wann gibt es H-Brücken） | ANTWORT:：H连 FON加孤对。 / H an FON plus freies Paar.
+
+- FRAGE:：溶解规则是什么？（Wie lautet die Löseregel） | ANTWORT:：相似相溶。 / Gleiches loest Gleiches.
+
+
+`Klausur-Satz: Ohne Kraftbenennung bleibt jede Siedeaussage geraten, mit ihr wird sie begruendet.`
 
 ## Fehlvorstellung
 
-1. 误解：误解“极性=氢键”。
-   中文纠偏：见德语纠偏句。
-   Korrektur-Satz: `Nur H an N, O, F brückt; Rest bleibt Dipol.`
-2. 误解：误解“质量大必沸点高”。
-   中文纠偏：见德语纠偏句。
-   Korrektur-Satz: `Haft schlägt Masse: Wasser besiegt Schwere.`
+1. 误解：质量定沸点。
+   中文纠偏：力胜质量，氢键一条胜半周期表。
+   Korrektur-Satz: `Kraft schlaegt Masse: Brücken heben mehr als Huellen je wiegen.`
 
-## Schritt 7 — szenario: Klausurtransfer: Gutachten aus dem Wärmetauscher
+2. 误解：极性溶一切。
+   中文纠偏：只有相似才相溶，油水不溶。
+   Korrektur-Satz: `Nur Gleiches loest Gleiches: Oel perlt an Wasser ab trotz Naehe.`
 
-ROLLE：中文：你是化工基地夜班技术员。 / 德语：Du bist Gutachterin am Tauscher.
-SITUATION：两种料黏度迥异，请归属力型并论证沸点（约120词）。 / 德语：Zwei Brühen kleben verschieden. Ordne in ca. 120 Woertern Haftarten zu und begruende Siedepunkte.
-RUBRIC (30 XP)：Haftwahl (10 XP) | Reihung (10 XP) | Wasser-Deutung (6 XP) | Sprache (4 XP).
+## Schritt 7 — szenario: Klausurtransfer: Gutachten zum Klebstoff-Versagen
 
-`Klausur-Satz: Sortieren heisst Haften lesen.`
+ROLLE：中文：你是材料检测员。 / 德语：Du bist Materialprueferin.
+SITUATION：胶粘剂在潮钢上失效：请用黏附阶梯、水与表面解释原因并开预处理处方（约150词）。 / 德语：Der Kleber versagt an feuchtem Stahl. Erklaere in ca. 150 Woertern mit Haftleiter, Wasser und Oberflaeche die Ursache und empfehle die Vorbehandlung.
+RUBRIC (30 XP)：Haftleiter (8 XP) | Wasserrolle (8 XP) | Vorbehandlung (8 XP) | Empfehlung (6 XP).
+
+
+`Klausur-Satz: Achtung Falle: Masse allein siedet nicht — Brücken schlagen Huellen um Laengen.`
 
 ## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY核心总结：
 
-中文：链条：伦敦处处有，极性加偶极，H连NOF成氢键。粘越牢沸越高；水四重氢键，虽轻仍为液。
-Takeaway-Satz: `Kleben erklärt Sieden.`
+中文：点名力、比成对、敬例外：水专破一切规则。
+Takeaway-Satz: `Kraft benennen, Paar vergleichen, Ausnahme ehren: Wasser bricht jede Regel.`
 
-`Klausur-Satz: Kleben erklärt Sieden.`
+`Klausur-Satz: Zwischen den Molekuelen entscheidet sich Kochen, Loesen und Leben.`
 
 
 REFLEXION 2问：
 1. 过程自省：Welcher Schritt fiel schwerer — die Sandkasten-Challenge (Schritt 4) oder die Verfahrenswahl (Schritt 5)?
-2. 元认知计划：Beim nächsten Mal sichere ich zuerst die Werkzeugkiste, weil jeder Handgriff darauf aufbaut.
+2. 元认知计划：Beim naechsten Mal sichere ich zuerst die Werkzeugkiste, weil jeder Handgriff darauf aufbaut.

@@ -14,113 +14,136 @@ version: Lesson-v3
 # Lernreise: Proteinbiosynthese Transkription und Translation — Episode B24: Nachtschicht im Zellkern
 
 <!-- Campaign: Nano-Zellfabrik-Krise | Bio | Instapower: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
-
-## Schritt 1 — entdecken: Stillstand auf dem Foerderband
+## Schritt 1 — entdecken: Die Insulin-Fabrik steht still
 
 ZIELE:
-1. Ich kann Transkription und Translation mit Orten und Produkten darstellen.
-2. Ich kann den Code mit Triplett, Start und Stopp anwenden.
-3. Ich kann Mutationsfolgen auf Proteinebene deuten.
+1. Ich kann **Transkription** und **Translation** nach Ort und Produkt trennen.
+2. Ich kann den **genetischen Code** zum Uebersetzen nutzen.
+3. Ich kann **Mutationen** in ihrer Wirkung abschaetzen.
 
-Nukleolus-Ueberstunden; Polymerase Paula braucht eine zweite Kaffeepause. Auf dem Foerderband der Nano-Zellfabrik herrscht Stillstand: Die mRNA-Rolle liegt bereit, doch kein einziges Protein verlaesst das Band. Logistik-Chef Ribos funkt Captain Mara Zell an, waehrend Dr. Finn Katalys mit einer geheimnisvollen Tabelle wedelt, in der aus drei Buchstaben ein Baustein wird. Drei Buchstaben, ein Baustein — der genetische Code. Doch wo wird gelesen und wo gebaut? Warum startet alles mit AUG und endet mit Stopp? Heute Nacht wird die Fabrik zur Uebersetzungsagentur: Wer Transkription und Translation trennt, rettet die Produktion.
+Insulin alle: In der Zellfabrik stapeln sich Bauplaene, aber kein Produkt verlaesst das Band. Die **mRNA** haengt am Kernporus fest, die **Ribosomen** laufen leer. Ist die **Transkription** falsch kopiert oder stockt die Translation?
 
-`Klausur-Satz: Transkription kopiert im Kern DNA zu mRNA, Translation baut am Ribosom Protein.`
+Gleichzeitig fehlt das Antibiotikum, das bakterielle Ribosomen blockiert — und vielleicht auch unsere. Wer den Weg vom **Gen** zum Protein Schritt fuer Schritt geht, findet den Fehler und waehlt das Mittel ohne Kollateralschaden.
 
-## Schritt 2 — entdecken: Die Code-Werkzeugkiste der Logistiker
+`Klausur-Satz: Vom Gen zum Protein fuehrt genau ein Weg: erst kopieren, dann bauen.`
+
+## Schritt 2 — entdecken: Die Bauplan-Werkzeugkiste der Zelle
 
 AUSRUESTUNG (5 Begriffe der Werkzeugkiste):
 
-- Transkription: mRNA-Kopie eines Gens im Kern.
-- Translation: Aminosaeure-Kette am Ribosom nach mRNA.
-- Triplett/Codon: Drei Basen codieren eine Aminosaeure.
-- Start AUG: Startet mit Methionin.
-- Stopp-Codon: Beendet die Kette ohne Aminosaeure.
+- **Transkription**: Transkription kopiert im Kern einen Genabschnitt in prae-mRNA. RNA-Polymerase liest 3-nach-5 und baut 5-nach-3. Mechanismus: Nach Spleissen der Introns verlaesst reife mRNA den Kern durch die Poren ins Zytoplasma. Klausur-Tipp: Ort Kern plus Produkt mRNA als Trennpaar zur Translation.
 
-`Klausur-Satz: AUG startet mit Methionin, Stopp-Codons beenden ohne Baustein.`
+- **mRNA**: mRNA traegt die Bauanweisung in Codons zu den Ribosomen. Jedes Triplett ruft genau eine Aminosaeure. Mechanismus: Stopp-Codons beenden die Kette; die Sequenz liest sich stets in Leserichtung. Klausur-Tipp: Codon gleich Triplett gleich eine Aminosaeure als Kette.
 
-## Schritt 3 — entdecken: Vom Gen zum Protein: Die Doppelstrecke
+- **Translation**: Translation baut am Ribosom aus mRNA die Aminosaeurekette. tRNA liefert, Ribosom verknuepft. Mechanismus: Start-Codon AUG oeffnet, Elongation knuepft Peptidbindungen, Stopp loest die Kette. Klausur-Tipp: Ort Ribosom plus Produkt Polypeptid als Spiegel zur Transkription.
+
+- **Genetischer Code**: Der genetische Code ordnet 64 Codons 20 Aminosaeuren zu. Er ist redundant, universell und kommafrei. Mechanismus: Mehrere Codons rufen dieselbe Saeure; fast alle Lebewesen teilen das Woerterbuch. Klausur-Tipp: Redundant plus universell als Doppelpunktschatz.
+
+- **Mutation**: Mutationen aendern die Basenfolge und damit moeglichst das Protein. Stumm, missense oder nonsense entscheiden ueber harmlos bis fatal. Mechanismus: Basenaustausch tauscht eine Saeure, Rasterschub verschiebt alles dahinter, Stopp bricht ab. Klausur-Tipp: Typ benennen plus Proteineffekt folgern, nie nur DNA zitieren.
+
+
+`Klausur-Satz: Transkription schreibt im Kern mRNA, Translation baut am Ribosom Protein.`
+
+## Schritt 3 — entdecken: Vom Gen zum Protein: Die Bauleiter-Kette
 
 WIRKUNGSGEFUEGE (Ursache zu Wirkung):
 
-Die Doppelstrecke: Im Kern schreibt die RNA-Polymerase DNA in mRNA um, Introns werden gespleisst. Am Ribosom lesen tRNAs Tripletts und liefern Aminosaeuren, bis ein Stopp-Codon die Kette beendet. Rasterverschiebung veraendert alles dahinter, Austausch nur eine Stelle.
+Die Bauleiter-Kette startet mit der **Transkription**: Polymerase kopiert das Gen in mRNA, Introns fliegen raus. Die reife Botschaft wandert durch die Kernpore.
+
+Dann uebernimmt die **Translation**: Ribosomen lesen Codons, tRNA liefert Aminosaeuren, Peptidbindungen wachsen zur Kette. **Mutationen** an jeder Stelle aendern das Produkt.
 
 ```diagram
-DNA -[Kern/Transkription]-> mRNA -[Ribosom/Translation]-> Protein
-AUG = Start | Stopp = Ende
-Raster +1 = alles dahinter neu
+DNA -> Transkription -> mRNA -> Translation -> Protein
+AUG = Start | UAA/UAG/UGA = Stopp
+Mutation: stumm | missense | nonsense
 ```
 
-`Klausur-Satz: AUG CCA UAA ergibt das Dipeptid Met-Pro.`
+Das Zentraldogma als Flusspfeil:
+
+$$DNA \xrightarrow{\text{Transkription}} mRNA \xrightarrow{\text{Translation}} \text{Protein}$$
+
+Jeder Pfeil ist ein eigener Ort mit eigenem Enzymapparat und eigenen Fehlern.
+
+`Klausur-Satz: Codon ruft Saeure, Kette faellt vom Band: Der Code uebersetzt Buchstaben in Funktion.`
 
 ## Anekdote & Fun-Fact
 
-**Anekdote / Fun-Fact (DE)**: Drei Buchstaben, zwanzig Bausteine: Der Code quetscht ein ganzes Proteom in vier Buchstaben — die kuerzeste Sprache der Welt.
+**Anekdote / Fun-Fact (DE)**: Insulin aus Bakterien rettet Diabetiker seit 1982 — ein umprogrammiertes Mikrob als Medikamentenfabrik.
 
-**Bezug zum Konzept**: AUG startet, Stopp endet: Dazwischen liegt die Kette.
 
-## Schritt 4 — ausprobieren: Code-Sandkasten: Baue das Protein-Puzzle
+**Bezug zum Konzept**: Vom Code zum Medikament: Wer liest, baut; wer baut, heilt.
 
-[Werkzeug: lego]
+## Schritt 4 — ausprobieren: Sandkasten: Schreibe mRNA und baue das Peptid
 
-AUFGABE (Target Challenge): Target Challenge: Baue aus 9 Basen-Bausteinen (AUG CCA UAA) die Kette: Transkribiere, translatiere, stoppe. Ziel: Korrekte 2-Aminosaeure-Kette mit Start und Stopp in 6 Minuten. AUFGABE konkret: AUG CCA UAA: Welche Kette entsteht?
+[Werkzeug: formula]
+
+AUFGABE (Target Challenge): Gegeben: DNA 3-TAC AAA ATT-5. Schreibe mRNA und Peptid, berechne die Kettenlaenge aus 900 Basen und bewerte eine Punktmutation an Position zwei als stumm, missense oder nonsense.
 
 HILFE:
-1. Tripletts schneiden.
-2. AUG startet.
-3. UAA stoppt ohne Baustein.
+1. mRNA komplementaer zu DNA bauen: A-U, T-A, G-C.
+2. Codons in Leserichtung mit Code-Tabelle uebersetzen.
+3. Mutationstyp aus Proteineffekt bestimmen.
 
-MUSTERLÖSUNG: AUG startet mit Methionin, CCA liefert Prolin, UAA stoppt: Dipeptid Met-Pro.
+MUSTERLOESUNG: mRNA 5-AUG UUU UAA-3 ergibt Met-Phe-Stopp; 900 Basen liefern 300 Codons minus Stopp; Austausch an zwei aendert Phe je nach Base zu Leu oder bricht nichts.
 
-`Klausur-Satz: Kern heisst Kopie, Ribosom heisst Kette.`
+`Klausur-Satz: Mit AUG als Start und UAA als Stopp liest der Sandkasten jedes Gen.`
 
-## Schritt 5 — ausprobieren: Duell der Strecken: Kern gegen Ribosom
+## Schritt 5 — ausprobieren: Duell der Wege: Code-Rechnung gegen Mutations-Deutung
 
-VERGLEICH: Waehle erst die Strecke — (i) Kern oder (ii) Ribosom — dann loesen.
+VERGLEICH: Waehle erst den Code-Weg, dann loesen: (i) Code-Rechenweg oder (ii) Mutations-Deuteweg — dann loesen.
 
-Weg A (Kern-Weiche): DNA, Polymerase, mRNA, Spleissen.
 
-Weg B (Ribosom-Weiche): mRNA, tRNA, Aminosaeure, Stopp.
+Weg A (Code-Rechenweg): Sequenzen quantitativ uebersetzen und Kettenlaengen berechnen. Dieser Weg liefert exakte Peptide und ist klausurfest.
 
-AUFGABE A: Wo entsteht die mRNA-Kopie?
+Weg B (Mutations-Deuteweg): Mutationsfolgen qualitativ abschaetzen und Krankheitsbilder deuten. Dieser Weg liefert Verstaendnis, bleibt aber ohne Zahl weich.
 
-AUFGABE B: Wo wird die Kette gebaut?
 
-HILFE: A nennt Kopie — Weg A. B nennt Kette — Weg B.
+AUFGABE A: Peptid aus DNA-Sequenz exakt gesucht. Welcher Weg?
 
-ANTWORT: A folgt Weg A als Transkription im Kern; B folgt Weg B als Translation am Ribosom.
+AUFGABE B: Warum toetet Rasterschub, waehrend stumm schont? Welcher Weg?
 
-`Klausur-Satz: Raster trifft alles dahinter, Austausch nur eine Stelle.`
 
-## Schritt 6 — check: Selbsttest zu Proteinbiosynthese Transkription und Translation
+HILFE: A nennt Sequenz — Weg A mit Tabelle. B nennt Warum mit Effekt — Weg B mit Typologie.
 
-FRAGE: Wo laeuft die Transkription? | ANTWORT: Im Kern: DNA zu mRNA.
-FRAGE: Was startet die Translation? | ANTWORT: AUG mit Methionin.
-FRAGE: Was beendet sie? | ANTWORT: Ein Stopp-Codon ohne Aminosaeure.
+ANTWORT: A folgt Weg A mit Codon-fuer-Codon-Uebersetzung; B folgt Weg B mit alles-dahinter-verschoben-Argument.
 
-`Klausur-Satz: Kopie im Kern, Kette am Ribosom.`
+`Klausur-Satz: Codes rechnen uebersetzt, Mutationen deuten warnen — die Klausur braucht beides.`
+
+## Schritt 6 — check: Selbsttest zu Proteinbiosynthese
+
+- FRAGE: Wo läuft Transkription, was entsteht? | ANTWORT: Im Kern entsteht mRNA.
+
+- FRAGE: Wo läuft Translation, was entsteht? | ANTWORT: Am Ribosom entsteht die Kette.
+
+- FRAGE: Welche Mutation ist harmlos? | ANTWORT: Stumme Mutation ohne Proteineffekt.
+
+
+`Klausur-Satz: Ohne Leserichtung bleibt jede Sequenz geraten, mit ihr wird sie gebaut.`
 
 ## Fehlvorstellung
 
-1. Fehlvorstellung: Transkription und Translation seien dasselbe.
-   Korrektur-Satz: `Kern kopiert DNA zu mRNA, Ribosom baut daraus Protein — zwei Orte, zwei Produkte.`
-2. Fehlvorstellung: Jedes Triplett trage eine neue Aminosaeure.
-   Korrektur-Satz: `Stopp-Codons tragen keine, sie beenden.`
+1. Fehlvorstellung: DNA verlasse den Kern.
+   Korrektur-Satz: `DNA bleibt immer im Kern: Nur die mRNA-Kopie reist durch die Poren.`
 
-## Schritt 7 — szenario: Klausurtransfer: Einsatz im Code-Kontrollraum
+2. Fehlvorstellung: Jede Mutation mache krank.
+   Korrektur-Satz: `Stumme Mutationen aendern nichts am Protein: Nur Effekt zaehlt, nicht Buchstabe.`
 
-ROLLE: Du bist Kontrolleurin im Code-Raum.
-SITUATION: Eine Mutation tauscht eine Base vor dem Stopp-Codon. Beurteile in ca. 130 Woertern mit Code-Tabelle, ob und wie sich das Protein aendert.
-RUBRIC (30 XP): Code-Anwendung (10 XP) | Stopp-Logik (8 XP) | Mutationsfolge (8 XP) | Fachsprache (4 XP).
+## Schritt 7 — szenario: Klausurtransfer: Gutachten zur Antibiotika-Wahl
 
-`Klausur-Satz: Code lesen heisst Tripletts schneiden.`
+ROLLE: Du bist Klinikerin im Resistenz-Team.
+SITUATION: Ein Antibiotikum blockiert bakterielle Ribosomen. Begruende in ca. 150 Woertern mit Transkription, Translation und Code-Universalitaet, warum es wirkt und wo die Gefahr fuer den Patienten liegt.
+RUBRIC (30 XP): Wirklogik (8 XP) | Universalitaet (8 XP) | Risiko (8 XP) | Empfehlung (6 XP).
+
+
+`Klausur-Satz: Achtung Falle: Stumme Mutation aendert die DNA, aber nie das Protein.`
 
 ## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY:
 
-Takeaway-Satz: `Vom Gen zum Protein fuehren zwei Strecken, ein Ziel.`
+Takeaway-Satz: `Erst lesen, dann bauen: AUG oeffnet, Stopp schliesst, der Rest ist Handwerk.`
 
-`Klausur-Satz: Vom Gen zum Protein fuehren zwei Strecken, ein Ziel.`
+`Klausur-Satz: Der Code ist das aelteste Buch der Welt: vier Buchstaben, ein Bauplan, alles Leben.`
 
 
 REFLEXION:

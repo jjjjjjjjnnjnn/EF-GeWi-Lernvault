@@ -14,113 +14,136 @@ version: Lesson-v3
 # Lernreise: Photosynthese Licht- und Dunkelreaktion — Episode B21: Funkstille aus dem Archiv
 
 <!-- Campaign: Nano-Zellfabrik-Krise | Bio | Instapower: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
-
-## Schritt 1 — entdecken: Der blasse Garten unterm Glasdach
+## Schritt 1 — entdecken: Das Treibhaus-Dilemma: Mehr CO2 oder weniger Hitze
 
 ZIELE:
-1. Ich kann Licht- und Dunkelreaktion mit Orten und Produkten vergleichen.
-2. Ich kann die Fotosynthesegleichung aufstellen und deuten.
-3. Ich kann Licht, CO2 und Wasser als limitierende Faktoren auswerten.
+1. Ich kann **Licht- und Dunkelreaktion** nach Ort und Aufgabe trennen.
+2. Ich kann **limitierende Faktoren** mit dem Minimumgesetz deuten.
+3. Ich kann die **Fotosynthese-Gleichung** bilanzieren und begruenden.
 
-Das DNA-Archiv meldet Kopierfehler; Archivarin Helikase stoppt das Band. Unter dem Glasdach der Nano-Zellfabrik steht Gaertnerin Chlorella vor blassen Blaettern und runzelt die Stirn. Die Tomaten schlafen ein, obwohl die Lampen brennen, und OSMO-9 meldet sinkenden Sauerstoff. Captain Mara Zell schleppt eine alte Waage herbei, Dr. Finn Katalys schreibt die berühmteste Gleichung der Welt an die Scheibe: aus Licht, Wasser und Luft wird Zucker und Sauerstoff. Doch warum helfen Lampen manchmal nicht, und warum braucht es nachts trotzdem einen dunklen Schritt? Heute wird das Glasdach zum Labor: Wer Licht- und Dunkelreaktion trennt und wieder verbindet, rettet die Ernte.
+Im Treibhaus stehen 42 Grad: Gaertner Jonas duengt mit CO2 und erntet dicke Gurken, doch die Blaetter rollen sich ein. Die **Lichtreaktion** giert nach Photonen, die **Dunkelreaktion** stoehnt unter Hitze. Mehr Gas oder weniger Grad?
 
-`Klausur-Satz: Die Lichtreaktion spaltet Wasser im Thylakoid und liefert ATP, NADPH und O2.`
+Das **Minimumgesetz** kennt die Antwort: Nur der knappste Faktor zaehlt. Wer Licht, CO2 und Temperatur getrennt dreht, findet den Engpass und rettet die Ernte statt sie zu verheizen.
 
-## Schritt 2 — entdecken: Die Licht-Werkzeugkiste der Gaertner
+`Klausur-Satz: Licht liefert Energie, CO2 liefert Kohlenstoff: Fehlt eines, steht die Fabrik.`
+
+## Schritt 2 — entdecken: Die Licht-Werkzeugkiste der Blaetter
 
 AUSRUESTUNG (5 Begriffe der Werkzeugkiste):
 
-- Thylakoid: Membranort der Lichtreaktion mit Chlorophyll.
-- Lichtreaktion: Spaltet Wasser, liefert ATP, NADPH und O2.
-- Calvin-Zyklus: CO2-Fixierung im Stroma zu Zucker.
-- Chlorophyll: Faengt Licht im Fotosystem ein.
-- Limitierender Faktor: Knappste Groesse bremst alles.
+- **Lichtreaktion**: Die Lichtreaktion spaltet Wasser an der Thylakoidmembran und liefert ATP plus NADPH. Sauerstoff faellt als Abfall an. Mechanismus: Photonen schlagen Elektronen heraus, die Kette pumpt Protonen, ATP-Synthase mahlt ATP. Klausur-Tipp: Ort Thylakoid plus Produkte ATP/NADPH als Pflichtpaar.
 
-`Klausur-Satz: Der Calvin-Zyklus fixiert CO2 im Stroma zu Zucker.`
+- **Dunkelreaktion**: Die Dunkelreaktion fixiert CO2 im Stroma mit Hilfe von ATP und NADPH. Der Calvin-Zyklus baut Zucker auf. Mechanismus: Rubisco bindet CO2 an Ribulose, ATP treibt den Kreislauf, jeder sechste Durchlauf wirft Zucker ab. Klausur-Tipp: Ort Stroma plus Rubisco als Fixierer nennen.
 
-## Schritt 3 — entdecken: Licht fangen, Zucker bauen: Die Doppelkette
+- **Chlorophyll**: Chlorophyll absorbiert vor allem Rot und Blau und reflektiert Gruen. Es fängt Photonen und reicht Energie weiter. Mechanismus: Angeregte Elektronen springen aufs Reaktionszentrum ueber; Gruenluecken erklaeren die Blattfarbe. Klausur-Tipp: Absorptionsluecke Gruen als Farb-Begruendung.
+
+- **Minimumgesetz**: Das Minimumgesetz besagt: Der knappste Faktor begrenzt die Rate. Mehr vom Rest hilft nichts. Mechanismus: Bei Dunst hilft kein CO2, bei CO2-Mangel hilft kein Licht: Nur der Engpass zaehlt. Klausur-Tipp: Fassdauben-Bild mit kuerzester Daube zeichnen.
+
+- **Fotosynthese-Gleichung**: Sechs CO2 plus sechs H2O werden mit Licht zu Glukose plus sechs O2. Die Gleichung bilanziert Stoff und Energie. Mechanismus: Wasser liefert Elektronen und Protonen, CO2 liefert Kohlenstoff, Licht liefert die Energie. Klausur-Tipp: Vollstaendig mit Licht ueber dem Pfeil schreiben.
+
+
+`Klausur-Satz: Lichtreaktion spaltet Wasser am Thylakoid, Dunkelreaktion fixiert CO2 im Stroma.`
+
+## Schritt 3 — entdecken: Vom Photon zum Zucker: Die Energiekette
 
 WIRKUNGSGEFUEGE (Ursache zu Wirkung):
 
-Die Kette: Licht spaltet im Thylakoid Wasser, Sauerstoff entweicht, ATP und NADPH wandern ins Stroma. Dort fixiert der Calvin-Zyklus CO2 zu Zucker. Fehlt Licht, fehlt Energie; fehlt CO2, steht der Zyklus; fehlt Wasser, schliessen die Spaltoeffnungen und CO2 fehlt erst recht.
+Die Energiekette startet beim **Photon**: Chlorophyll faengt Licht, Wasser wird gespalten, **ATP** und NADPH entstehen. Sauerstoff entweicht als Abfall.
+
+Dann uebernimmt der **Calvin-Zyklus**: Rubisco fixiert CO2, ATP treibt den Kreis, Zucker waechst. Der knappste Faktor nach dem **Minimumgesetz** setzt das Tempo.
 
 ```diagram
-Licht + H2O -> [Thylakoid] -> O2 + ATP + NADPH
-ATP + NADPH + CO2 -> [Stroma/Calvin] -> Zucker
-Limit: Licht | CO2 | H2O — knappste bremst
+Photon -> Wasserspaltung -> ATP + NADPH + O2
+CO2 + ATP -> Calvin -> Zucker
+Engpass = Minimum aus Licht, CO2, Temperatur
 ```
 
-`Klausur-Satz: Aus 132 g CO2 werden maximal 90 g Glukose.`
+Die bilanzierte Gesamtgleichung:
+
+$$6\,CO_2 + 6\,H_2O \xrightarrow{\text{Licht}} C_6H_{12}O_6 + 6\,O_2$$
+
+Wasser liefert den Sauerstoff, CO2 den Kohlenstoff: Isotopenversuche belegen die Herkunft.
+
+`Klausur-Satz: Photon treibt Elektron, Elektron treibt Pumpe, Pumpe treibt Zucker: Die Kette endet in Glukose.`
 
 ## Anekdote & Fun-Fact
 
-**Anekdote / Fun-Fact (DE)**: Ein Blatt wiegt die Luft: Aus unsichtbarem CO2 baut es sichtbaren Zucker — die stillste Fabrik der Welt.
+**Anekdote / Fun-Fact (DE)**: Ein Hektar Wald bindet pro Jahr Tonnen CO2 — Blaetter sind die groesste Chemiefabrik der Welt.
 
-**Bezug zum Konzept**: Licht fangen, Zucker bauen: Zwei Orte, ein Produkt.
 
-## Schritt 4 — ausprobieren: Licht-Sandkasten: Drehe an der Sonnen-Schraube
+**Bezug zum Konzept**: Vom Blatt zum Klima: Wer Zucker versteht, versteht die Luft.
+
+## Schritt 4 — ausprobieren: Sandkasten: Drehe an Licht, CO2 und Temperatur
 
 [Werkzeug: formula]
 
-AUFGABE (Target Challenge): Target Challenge: 6 CO2 + 6 H2O liefern 1 Glukose (180 g). Rechne aus 132 g CO2 die Zuckermasse und variiere Licht von 2 auf 10 klx. Ziel: Zeige Saettigung und benenne den limitierenden Faktor je Stufe. AUFGABE konkret: 132 g CO2: Wieviel Glukose maximal?
+AUFGABE (Target Challenge): Gegeben: Lichtreihe 200/500/800/1200 Lux mit Raten 2/5/8/8; CO2-Sprung bei 800 Lux hebt auf 12. Bestimme Lichtsaettigung und Engpassfolge und berechne die Glukose-Ausbeute aus 132 g CO2.
 
 HILFE:
-1. Molmassen: CO2 44, Glukose 180.
-2. 6 zu 1 verhaelt.
-3. Lichtdeoeckelt nur bis Saettigung.
+1. Saettigung als Plateau ablesen: 800 Lux.
+2. CO2-Sprung als Engpasswechsel deuten.
+3. Stoechiometrie 6-zu-1 mit Mol rechnen.
 
-MUSTERLÖSUNG: 132 g CO2 sind 3 mol, also 0,5 mol Glukose gleich 90 g. Mehr Licht hilft nur bis zur Saettigung, danach limitiert CO2.
+MUSTERLOESUNG: Saettigung bei 800 Lux, danach CO2-Engpass; 132 g CO2 sind 3 mol und liefern 0,5 mol Glukose, also 90 g.
 
-`Klausur-Satz: Thylakoid heisst Licht, Stroma heisst Zucker.`
+`Klausur-Satz: Mit Lichtsaettigung bei 800 Lux und CO2-Sprung danach misst der Sandkasten statt zu raten.`
 
-## Schritt 5 — ausprobieren: Duell der Reaktionen: Licht gegen Dunkel
+## Schritt 5 — ausprobieren: Duell der Wege: Gaswechsel-Messung gegen Pigment-Deutung
 
-VERGLEICH: Waehle erst den Ort — (i) Thylakoid oder (ii) Stroma — dann loesen.
+VERGLEICH: Waehle erst den Messweg, dann loesen: (i) Gaswechsel-Rechenweg oder (ii) Pigment-Deuteweg — dann loesen.
 
-Weg A (Licht-Weiche): Thylakoid, Wasser, O2, ATP, NADPH.
 
-Weg B (Zucker-Weiche): Stroma, CO2, Calvin, Zucker.
+Weg A (Gaswechsel-Rechenweg): O2- oder CO2-Umsatz quantitativ messen und Ausbeuten berechnen. Dieser Weg liefert Zahlen und ist klausurfest.
 
-AUFGABE A: Sauerstoff steigt bei Licht. Welcher Ort?
+Weg B (Pigment-Deuteweg): Pigmente und Blattbau qualitativ deuten und Standorte erklaeren. Dieser Weg liefert Verstaendnis, bleibt aber ohne Zahl weich.
 
-AUFGABE B: Zucker steigt bei CO2-Duengung. Welcher Ort?
 
-HILFE: A nennt O2 — Weg A. B nennt CO2 — Weg B.
+AUFGABE A: Glukose-Ausbeute aus CO2-Masse gesucht. Welcher Weg?
 
-ANTWORT: A folgt Weg A als Lichtreaktion im Thylakoid; B folgt Weg B als Calvin-Zyklus im Stroma.
+AUFGABE B: Warum sind Blaetter gruen? Welcher Weg?
 
-`Klausur-Satz: Der knappste Faktor bremst die ganze Kette.`
 
-## Schritt 6 — check: Selbsttest zu Photosynthese Licht- und Dunkelreaktion
+HILFE: A nennt Masse — Weg A mit Stoechiometrie. B nennt Warum mit Farbe — Weg B mit Pigment.
 
-FRAGE: Wo laeuft die Lichtreaktion? | ANTWORT: In der Thylakoidmembran mit Chlorophyll.
-FRAGE: Was liefert sie dem Calvin-Zyklus? | ANTWORT: ATP und NADPH als Energie und Wasserstoff.
-FRAGE: Was limitiert nachts? | ANTWORT: Licht als Energie, also steht alles.
+ANTWORT: A folgt Weg A mit 6-zu-1-Rechnung; B folgt Weg B mit Absorptionsluecke Gruen.
 
-`Klausur-Satz: O2 stammt aus Wasser, Zucker aus CO2.`
+`Klausur-Satz: Gaswechsel zaehlt, Pigmente erklaeren — die Klausur braucht beides.`
+
+## Schritt 6 — check: Selbsttest zu Fotosynthese
+
+- FRAGE: Wo läuft die Lichtreaktion? | ANTWORT: Thylakoidmembran.
+
+- FRAGE: Wo läuft der Calvin-Zyklus? | ANTWORT: Stroma des Chloroplasten.
+
+- FRAGE: Woher stammt der Sauerstoff? | ANTWORT: Aus Wasser, nicht aus CO2.
+
+
+`Klausur-Satz: Ohne Minimumgesetz bleibt jeder Duengeversuch geraten, mit ihm wird er geplant.`
 
 ## Fehlvorstellung
 
-1. Fehlvorstellung: Licht- und Dunkelreaktion liefen zeitlich getrennt.
-   Korrektur-Satz: `Getrennt sind Orte und Aufgaben, nicht Tag und Nacht: Calvin braucht die Lichtprodukte.`
-2. Fehlvorstellung: Sauerstoff kaeme aus CO2.
-   Korrektur-Satz: `O2 stammt aus der Fotolyse von Wasser.`
+1. Fehlvorstellung: Pflanzen atmeten am Tag nicht.
+   Korrektur-Satz: `Pflanzen atmen immer: Tagsueber ueberdeckt Fotosynthese die Atmung nur in der Bilanz.`
 
-## Schritt 7 — szenario: Klausurtransfer: Gutachten aus dem Gewaechshaus
+2. Fehlvorstellung: CO2 liefere den Sauerstoff.
+   Korrektur-Satz: `Isotopen zeigen: O2 stammt aus H2O, CO2 liefert nur Kohlenstoff.`
 
-ROLLE: Du bist Gewaechaus-Gutachterin.
-SITUATION: Trotz Lampen bleibt die Ernte blass. Beurteile in ca. 130 Woertern mit Orten, Produkten und limitierenden Faktoren, ob Licht, CO2 oder Wasser bremst.
-RUBRIC (30 XP): Orte (8 XP) | Produkte (8 XP) | Faktorlogik (8 XP) | Massnahme (6 XP).
+## Schritt 7 — szenario: Klausurtransfer: Protokoll zum Treibhausversuch
 
-`Klausur-Satz: Saettigung zeigt den naechsten Engpass.`
+ROLLE: Du bist Gewaechshaus-Biologin.
+SITUATION: Der Chef will CO2 duengen statt kuehlen. Bewerte in ca. 150 Woertern mit Minimumgesetz, Licht- und Dunkelreaktion und entwirf den Gegenversuch.
+RUBRIC (30 XP): Minimumslogik (8 XP) | Reaktionsorte (8 XP) | Gegenversuch (8 XP) | Abwaegung (6 XP).
+
+
+`Klausur-Satz: Achtung Falle: Sauerstoff stammt aus Wasser, nicht aus CO2 — Isotopen beweisen es.`
 
 ## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY:
 
-Takeaway-Satz: `Zwei Orte, ein Ziel: Zucker aus Licht und Luft.`
+Takeaway-Satz: `Engpass suchen, Rest ignorieren: Die kuerzeste Daube haelt das Fass.`
 
-`Klausur-Satz: Zwei Orte, ein Ziel: Zucker aus Licht und Luft.`
+`Klausur-Satz: Fotosynthese ist die einzige Fabrik, die aus Licht und Luft Zucker backt — alles Leben isst davon.`
 
 
 REFLEXION:

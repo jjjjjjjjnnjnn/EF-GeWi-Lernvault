@@ -14,113 +14,136 @@ version: Lesson-v3
 # Lernreise: CN-Methodentraining mit Zeitlimit und EHZ — Episode B7: Der blasse Garten
 
 <!-- Campaign: Nano-Zellfabrik-Krise | Bio | Instapower: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
-
-## Schritt 1 — entdecken: Der Countdown im Trainingsbunker
+## Schritt 1 — entdecken: Das Klausur-Trainingslager: Countdown zum Ernstfall
 
 ZIELE:
-1. Ich kann die Kernbegriffe der Zellbiologie dreisprachig nennen und zuordnen.
-2. Ich kann deutsche Definitionen mit chinesischen Merksätzen verknüpfen.
-3. Ich kann im Klausurtext die Signalwoerter markieren und das Verfahren waehlen.
+1. Ich kann **Operatoren** (darstellen, erklaeren, beurteilen) den AFB-Stufen zuordnen.
+2. Ich kann Klausuraufgaben in **Rechen- und Deutungsanteile** zerlegen.
+3. Ich kann meine Antwort an der **Erwartungshorizont**-Logik selbst pruefen.
 
-Chloroplasten melden Lichtmangel; Gaertnerin Chlorella oeffnet die Spaltoeffnungen. Es ist Montagfrueh und in der Nano-Zellfabrik herrscht Sprachverwirrung: Die neue Praktikantin versteht weder das deutsche Wort Turgordruck noch das chinesische Wort dafuer, und OSMO-9 funkt Fehlermeldungen auf Englisch. Captain Mara Zell greift zum dicksten Handbuch der Fabrik, dem dreisprachigen Terminologie-Notfallkoffer, denn in einer Stunde kommt die Klausur-Kommission zur Inspektion. Jedes Schild an jeder Maschine muss auf Deutsch, Chinesisch und Englisch stimmen, sonst droht Stillstand. Mara Zell und Dr. Finn Katalys rennen von Halle zu Halle, kleben zweisprachige Etiketten und entdecken dabei, dass ein sauberer Begriff die halbe Klausur rettet: Wer Osmose, Diffusion, Plasmolyse, Enzym und Replikation in drei Sprachen sicher beherrscht, loest jede Aufgabe doppelt so schnell. Heute wird die Fabrik zur Sprachschule.
+Sieben Tage bis zur Klausur: Im Trainingslager T-7 liegt der Puls bei 120. Coach Finn Katalys schneidet Altklausuren in drei Stapel — **darstellen**, erklaeren, beurteilen — und jeder Stapel laeuft gegen die Uhr. Der Gegner heute heisst nicht Wissen, sondern Zeit.
 
-`Klausur-Satz: Begriffe in drei Sprachen sind Werkzeuge: Jedes Signalwort oeffnet genau eine Kiste.`
+Mara Zell verteilt farbige Zeitkarten: 30 Minuten Rechnen, 40 Minuten Deuten, 20 Minuten Reserve. Wer seine Antwort am **Erwartungshorizont** selbst prueft, verwandelt Wissen in Punkte. Heute wird trainiert, was zaehlt: Tempo mit Treffsicherheit.
 
-## Schritt 2 — entdecken: Die EHZ-Werkzeugkiste der Zeitsprinter
+`Klausur-Satz: Training schlaegt Talent: Wer die Uhr besiegt, besiegt die Klausur.`
+
+## Schritt 2 — entdecken: Die Trainings-Werkzeugkiste
 
 AUSRUESTUNG (5 Begriffe der Werkzeugkiste):
 
-- Osmose: Nettodiffusion von Wasser durch eine semipermeable Membran.
-- Diffusion: Bewegung mit dem Gefaelle bis zum Ausgleich.
-- Plasmolyse: Abloesung des Protoplasten von der Wand bei Wasserverlust.
-- Enzym: Biokatalysator aus Protein mit aktivem Zentrum.
-- Replikation: Semikonservative Verdopplung der DNA.
+- **Operator**: Operatoren wie darstellen, erklaeren und beurteilen schreiben die geforderte Denkleistung vor. Sie verraten, ob Wiedergeben, Verknuepfen oder Werten verlangt ist. Mechanismus: Der Operator steht meist im ersten Satz der Aufgabe; wer ihn ueberliest, beantwortet die falsche Frage. Klausur-Tipp: Operator unterstreichen und AFB-Stufe daneben schreiben.
 
-`Klausur-Satz: Osmose ist Wasser durch die Membran, Diffusion ist alles mit dem Gefaelle.`
+- **AFB-Stufen**: AFB I fordert Reproduktion, AFB II fordert Transfer, AFB III fordert Reflexion und Bewertung. Die Punkte wachsen mit der Stufe. Mechanismus: Eine reine Aufzaehlung bleibt AFB I; erst das begruendete Urteil mit Kriterien klettert auf AFB III. Klausur-Tipp: Pro Aufgabe mindestens einen III-Satz mit weil einplanen.
 
-## Schritt 3 — entdecken: Vom Zeitdruck zur Punktemaschine
+- **Erwartungshorizont**: Der Erwartungshorizont listet alle vergebenen Inhalts- und Darstellungspunkte. Jede Klausur wird daran gemessen, nicht am Gefuehl. Mechanismus: Man zerlegt die Musterloesung in Stichpunkte und haelt die eigene Antwort daneben: Fehlt ein Stichpunkt, fehlt ein Punkt. Klausur-Tipp: Antwort in nummerierte Punkte gliedern wie der Horizont.
+
+- **Rechenanteil**: Der Rechenanteil verlangt Ansatz, Einsetzen, Ergebnis und Einheit. Ohne Einheit gibt es in NRW fast nie die volle Punktzahl. Mechanismus: Man schreibt Gegeben und Gesucht, waehlt die Formel, rechnet mit Einheiten und deutet das Ergebnis in einem Satz. Klausur-Tipp: Formel zuerst, Zahlen spaeter — der Ansatz zaehlt auch bei Rechenfehlern.
+
+- **Deutungsanteil**: Der Deutungsanteil verlangt, aus Bild oder Text eine Kausalkette zu bauen. Beobachten, erklaeren und folgern sind drei getrennte Punkte. Mechanismus: Man beschreibt erst das Sichtbare, verknuepft es mit dem Mechanismus und zieht dann die Folgerung. Klausur-Tipp: Dreischritt sehen, verknuepfen, folgern als Absaetze trennen.
+
+
+`Klausur-Satz: Operator plus AFB-Stufe lesen heisst wissen, was der Pruefer kauft.`
+
+## Schritt 3 — entdecken: Vom Training zum Transfer: Die Leistungskette
 
 WIRKUNGSGEFUEGE (Ursache zu Wirkung):
 
-Der Mechanismus ist eine Uebersetzungskette: Signalwort im Text erkennen, Begriff der passenden Kiste zuordnen, Verfahren aus der Kiste ableiten. Steht Gefaelle plus ATP im Text, oeffnet sich die Transport-Kiste; steht Psi-Zahl im Text, oeffnet sich die Rechen-Kiste. So wird aus Vokabeln ein Entscheidungsbaum.
+Die Leistungskette laeuft vom **Operator** ueber die Zerlegung zum Punkt. Erst liest du die Verben und teilst die Aufgabe in Rechen- und Deutungsanteile. Dann loest du jeden Anteil mit seinem Verfahren.
+
+Zuletzt haeltst du die Antwort an den **Erwartungshorizont** und zaehlst die Stichpunkte ab. Was fehlt, wird ergaenzt, bevor die Zeit ablaeuft.
 
 ```diagram
-Signalwort -> Begriffs-Kiste -> Verfahren
-Gefaelle + ATP = Transport | Psi-Zahl = Rechnung
-Deutsch oben, Zhongwen als Merkhaken
+Operator lesen -> Anteile teilen -> Verfahren waehlen
+Rechnen mit Einheit | Deuten mit Kette
+Horizont anlegen -> Punkte zaehlen
 ```
 
-`Klausur-Satz: Markieren, zuordnen, Verfahren waehlen — so wird Vokabel zur Klausurwaffe.`
+Die Zeitbudget-Regel des Trainingslagers:
+
+$$T_{\text{gesamt}} = T_{\text{rechnen}} + T_{\text{deuten}} + T_{\text{reserve}} \quad (30 + 40 + 20)$$
+
+Wer einen Anteil ueberzieht, frisst die Reserve; die Uhr entscheidet ueber Vollstaendigkeit.
+
+`Klausur-Satz: Vom Signal zum Punkt: Zerlegen, rechnen, deuten, selbst pruefen.`
 
 ## Anekdote & Fun-Fact
 
-**Anekdote / Fun-Fact (DE)**: Gorter und Grendel vermassen 1925 rote Blutzellen und bewiesen die Doppelschicht — kernlose Zellen verrieten die doppelte Haut.
+**Anekdote / Fun-Fact (DE)**: Schwimmer trainieren die Wende tausendmal trocken, bevor sie einmal nass zaehlt — Klausur ist dieselbe Wende.
 
-**Bezug zum Konzept**: Die Doppelschicht bildet die Schranke, Proteine oeffnen die Tore.
 
-## Schritt 4 — ausprobieren: Zeit-Sandkasten: 90 Sekunden pro Station
+**Bezug zum Konzept**: Trocken drillen, nass liefern: Das Lager trennt Ueben und Ernstfall.
 
-[Werkzeug: oral-timer]
+## Schritt 4 — ausprobieren: Trainings-Sandkasten: Miss dich an der Uhr
 
-AUFGABE (Target Challenge): Target Challenge: Halte einen 90-Sekunden-Pitch zu Osmose mit allen 5 Kernbegriffen, dann loese 3 Mini-Aufgaben in 6 Minuten. Ziel: volle Punktzahl nach EHZ-Raster. AUFGABE konkret: Markiere im Satz alle Fachbegriffe und entscheide: Transport- oder Rechen-Kiste?
+[Werkzeug: formula]
+
+AUFGABE (Target Challenge): Gegeben: 90 Minuten, drei Aufgaben (darstellen 10 XP, erklaeren mit Rechnung 30 XP, beurteilen 30 XP). Verplane das Budget, loese die Rechenaufgabe mit Ansatz und Einheit und pruefe deine Antwort an drei Horizont-Stichpunkten.
 
 HILFE:
-1. Erst unterstreichen, dann zuordnen.
-2. Signalwoerter sind Gefaelle, ATP, Psi-Zahl.
-3. Jeder Begriff bekommt genau eine Kiste.
+1. Zeit budgetieren: 30 rechnen, 40 deuten, 20 Reserve.
+2. Rechnung mit Gegeben, Formel, Einheit aufschreiben.
+3. Antwort gegen Horizont-Stichpunkte abhaken.
 
-MUSTERLÖSUNG: Osmose, semipermeabel und Psi-Zahl oeffnen die Rechen-Kiste; ATP und gegen das Gefaelle oeffnen die Transport-Kiste. Saubere Markierung halbiert die Loesungszeit.
+MUSTERLOESUNG: Budget 30-40-20 eingehalten; Rechnung mit Ansatz und MPa-Einheit vollstaendig; Horizont zeigt drei Treffer, ein Deutungssatz ergaenzt.
 
-`Klausur-Satz: Acht Treffer in vier Minuten: Markieren schlaegt Pauken im Kontext.`
+`Klausur-Satz: Neunzig Minuten, drei Stapel, null Ausreden: Die Uhr ist der ehrlichste Trainer.`
 
-## Schritt 5 — ausprobieren: Duell der Taktiken: Tempo gegen Tiefe
+## Schritt 5 — ausprobieren: Duell der Trainingswege: Drill gegen Simulation
 
-VERGLEICH: Waehle erst den Lernweg — (i) Karteikarten-Weg oder (ii) Kontext-Weg — dann loesen.
+VERGLEICH: Waehle erst den Trainingsweg, dann loesen: (i) Drill-Weg oder (ii) Simulations-Weg — dann loesen.
 
-Weg A (Karteikarten-Weg): Begriff pauken, Definition hersagen, dann anwenden.
 
-Weg B (Kontext-Weg): Im Satz markieren, Kiste waehlen, Verfahren ableiten.
+Weg A (Drill-Weg): Isolierte Operator-Saetze pauken und Rechenansaetze unter Stoppuhr wiederholen. Dieser Weg baut Tempo und Automatik und macht die Hand schnell.
 
-AUFGABE A: Fuenf Begriffe in drei Sprachen pauken. Welcher Weg?
+Weg B (Simulations-Weg): Komplette Klausur unter Ernstfallbedingungen schreiben und am Horizont auswerten. Dieser Weg baut Nerven und Vollstaendigkeit, kostet aber viel Zeit.
 
-AUFGABE B: Im Fliesstext die Verfahrenswahl treffen. Welcher Weg?
 
-HILFE: A verlangt Pauken — Weg A. B verlangt Textarbeit — Weg B.
+AUFGABE A: AFB-III-Saetze mit weil in unter zwei Minuten bauen. Welcher Weg?
 
-ANTWORT: A folgt Weg A über Karteikarten mit Selbstabfrage; B folgt Weg B über Markierung und Kistenwahl im Kontext.
+AUFGABE B: Neunzig Minuten durchhalten ohne Einbruch bei Aufgabe drei. Welcher Weg?
 
-`Klausur-Satz: Karteikarte paukt den Begriff, Kontext waehlt das Verfahren.`
 
-## Schritt 6 — check: Selbsttest zu CN-Methodentraining mit Zeitlimit und EHZ
+HILFE: A verlangt Satzbau-Automatik — Weg A mit Drill. B verlangt Durchhaltevermoegen — Weg B mit Simulation.
 
-FRAGE: Nenne drei Sprachen einer Begriffskarte. | ANTWORT: Deutsch, Chinesisch, Englisch plus Beispielsatz.
-FRAGE: Woran erkennst du die Rechen-Kiste? | ANTWORT: An Psi-Zahlen und Gefaelle-Rechnung im Text.
-FRAGE: Woran erkennst du die Transport-Kiste? | ANTWORT: An ATP und Richtung gegen das Gefaelle.
+ANTWORT: A folgt Weg A mit Satzbau-Lego unter Zeit; B folgt Weg B mit kompletter Probeklausur und Horizont-Check.
 
-`Klausur-Satz: Wer markiert, halbiert die Loesungszeit.`
+`Klausur-Satz: Drill haertet das Tempo, Simulation haertet die Nerven — die Klausur braucht beides.`
+
+## Schritt 6 — check: Selbsttest zu CN-Training
+
+- FRAGE: Was verrät der Operator? | ANTWORT: Denkleistung und AFB-Stufe der Aufgabe.
+
+- FRAGE: Was braucht der Rechenanteil? | ANTWORT: Ansatz, Einsetzen, Ergebnis und Einheit.
+
+- FRAGE: Womit prüfst du dich selbst? | ANTWORT: Mit dem Erwartungshorizont Stichpunkt für Stichpunkt.
+
+
+`Klausur-Satz: Ohne Erwartungshorizont bleibt Selbstkontrolle geraten, mit ihm wird sie gemessen.`
 
 ## Fehlvorstellung
 
-1. Fehlvorstellung: Osmose und Diffusion seien dasselbe.
-   Korrektur-Satz: `Osmose ist nur Wasser durch eine Membran, Diffusion gilt fuer alle Teilchen auch ohne Membran.`
-2. Fehlvorstellung: Vokabeln pauken reiche ohne Anwendung.
-   Korrektur-Satz: `Erst markieren und zuordnen, dann pauken — sonst bleibt die Kiste leer.`
+1. Fehlvorstellung: Viel schreiben gebe viel Punkte.
+   Korrektur-Satz: `Punkte gibt nur der Horizont: Drei Treffer in fuenf Zeilen schlagen drei Seiten ohne Treffer.`
 
-## Schritt 7 — szenario: Klausurtransfer: Pruefungs-Marathon mit Punkteplan
+2. Fehlvorstellung: Rechnen ohne Einheit reiche.
+   Korrektur-Satz: `Ohne Einheit fehlt der halbe Rechenpunkt: Jede Zahl braucht MPa, mol oder Sekunden.`
 
-ROLLE: Du bist Tutorin im Vokabel-Notdienst.
-SITUATION: Eine SchuEls:erin verwechselt Osmose und Diffusion. Erklaere beide dreisprachig in ca. 120 Woertern mit je einem Beispiel und einer Merkregel.
-RUBRIC (30 XP): Korrekte Definitionen (10 XP) | Dreisprachigkeit (8 XP) | Beispiele (8 XP) | Merkregel (4 XP).
+## Schritt 7 — szenario: Klausurtransfer: Generalprobe unter Zeitdruck
 
-`Klausur-Satz: Dreisprachig erklaeren heisst: definieren, Beispiel geben, Merkregel liefern.`
+ROLLE: Du bist Coach des Trainingslagers T-7.
+SITUATION: Entwirf in ca. 150 Woertern einen 90-Minuten-Plan fuer eine Bio-Klausur mit Rechen-, Deutungs- und Urteilsteil und begruende jede Zeitentscheidung.
+RUBRIC (30 XP): Zeitbudget (8 XP) | Verfahrenswahl (8 XP) | Horizont-Check (8 XP) | Reserve-Logik (6 XP).
+
+
+`Klausur-Satz: Achtung Falle: Schoene Antwort ohne Operatorbezug verschenkt die Haelfte der Punkte.`
 
 ## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY:
 
-Takeaway-Satz: `Begriffe tragen Verfahren: Das Signalwort entscheidet die Kiste.`
+Takeaway-Satz: `Trainiere wie geprueft: Zeit setzen, Stapel waehlen, Horizont anlegen.`
 
-`Klausur-Satz: Begriffe tragen Verfahren: Das Signalwort entscheidet die Kiste.`
+`Klausur-Satz: Klausurreife ist kein Gefuehl, sondern ein Protokoll aus Zeit, Verfahren und Selbstpruefung.`
 
 
 REFLEXION:
