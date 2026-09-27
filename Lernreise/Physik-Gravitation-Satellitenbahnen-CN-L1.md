@@ -35,11 +35,11 @@ PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→�
 
 中文在上，德语在下：
 
-- 万有引力 — Gravitationskraft：$F = G\,mM/r^2$，质量乘积成正比、距离平方成反比。【陷阱：Gravitation（质量间的普适引力）不是 Gewichtskraft（特指地球对物体的重力 $mg$，只在地面附近近似）。】 Sie faellt mit dem Abstandsquadrat und reicht bis zum Mond. Sie faellt mit dem Abstandsquadrat und reicht bis zum Mond. Mechanismus: Massen und Abstand in das Gravitationsgesetz einsetzen. Klausur-Tipp: Abstand ab Erdmittelpunkt messen.
-- 向心力 — Zentripetalkraft：维持圆周运动指向圆心的合力，$F_z = mv^2/r$。【陷阱：Zentripetal（向心，真实合力）不是 Zentrifugal（离心，惯性系中的假想力）。】 Gravitation und Zentripetalkraft halten sich exakt die Waage. Gravitation und Zentripetalkraft halten sich exakt die Waage. Mechanismus: Beide Kraefte gleichsetzen und kuerzen. Klausur-Tipp: Gleichsetzung als eigene Zeile zeigen.
-- 轨道半径 — Bahnradius：从地心算起，$r = R_{Erde} + h$。【陷阱：Bahnradius（自地心起算）不是 Flughöhe（自地面起算的高度 $h$）。】 Keplers drittes Gesetz steckt in der Bahnkonstanten; die Gravitationskonstante G bestimmt ihren Zahlenwert. Keplers drittes Gesetz steckt in der Bahnkonstanten; die Gravitationskonstante G bestimmt ihren Zahlenwert. Mechanismus: T Quadrat durch r hoch drei als Konstante nutzen. Klausur-Tipp: Kepler als Kontrolle der Rechnung einsetzen.
-- 第一宇宙速度 — Erste kosmische Geschwindigkeit：地面附近环绕速度约 $7{,}9\,\mathrm{km/s}$。【陷阱：erste kosmische（环绕不落地）不是 zweite kosmische（$11{,}2\,\mathrm{km/s}$，脱离地球）。】 Sie sinkt mit wachsendem Bahnradius wie eins durch Wurzel r. Sie sinkt mit wachsendem Bahnradius wie eins durch Wurzel r. Mechanismus: Gleichgewicht nach v aufloesen. Klausur-Tipp: Hoehenabhaengigkeit in Worten deuten.
-- 地球同步轨道 — Geostationaere Bahn：周期 $24\,\mathrm{h}$、高度约 $35\,786\,\mathrm{km}$ 的赤道轨道。【陷阱：geostationaer（定点于赤道上空）不是 sonnensynchron（极地轨道，过境地方时固定）。】 GEO steht ueber dem Aequator still, erdnahe Bahnen rasen in 90 Minuten herum. GEO steht ueber dem Aequator still, erdnahe Bahnen rasen in 90 Minuten herum. Mechanismus: Umlaufzeit 24 Stunden mit Bahnradius verknuepfen. Klausur-Tipp: GEO-Radius als bekannte Groesse zitieren.
+- 万有引力 — Gravitationskraft：$F = G\,mM/r^2$，质量乘积成正比、距离平方成反比。【陷阱：Gravitation（质量间的普适引力）不是 Gewichtskraft（特指地球对物体的重力 $mg$，只在地面附近近似）。】 Mechanismus: Massen und Abstand in das Gravitationsgesetz einsetzen. Klausur-Tipp: Abstand ab Erdmittelpunkt messen.
+- 向心力 — Zentripetalkraft：维持圆周运动指向圆心的合力，$F_z = mv^2/r$。【陷阱：Zentripetal（向心，真实合力）不是 Zentrifugal（离心，惯性系中的假想力）。】 Mechanismus: Beide Kraefte gleichsetzen und kuerzen. Klausur-Tipp: Gleichsetzung als eigene Zeile zeigen.
+- 轨道半径 — Bahnradius：从地心算起，$r = R_{Erde} + h$。【陷阱：Bahnradius（自地心起算）不是 Flughöhe（自地面起算的高度 $h$）。】 Mechanismus: T Quadrat durch r hoch drei als Konstante nutzen. Klausur-Tipp: Kepler als Kontrolle der Rechnung einsetzen.
+- 第一宇宙速度 — Erste kosmische Geschwindigkeit：地面附近环绕速度约 $7{,}9\,\mathrm{km/s}$。【陷阱：erste kosmische（环绕不落地）不是 zweite kosmische（$11{,}2\,\mathrm{km/s}$，脱离地球）。】 Mechanismus: Gleichgewicht nach v aufloesen. Klausur-Tipp: Hoehenabhaengigkeit in Worten deuten.
+- 地球同步轨道 — Geostationaere Bahn：周期 $24\,\mathrm{h}$、高度约 $35\,786\,\mathrm{km}$ 的赤道轨道。【陷阱：geostationaer（定点于赤道上空）不是 sonnensynchron（极地轨道，过境地方时固定）。】 Mechanismus: Umlaufzeit 24 Stunden mit Bahnradius verknuepfen. Klausur-Tipp: GEO-Radius als bekannte Groesse zitieren.
 
 `Klausur-Satz: Der Bahnradius wird immer vom Erdmittelpunkt aus gemessen, nicht von der Erdoberflaeche.`
 

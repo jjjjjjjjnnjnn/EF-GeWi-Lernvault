@@ -22,8 +22,6 @@ ZIELE (drei messbare Ziele dieser Lektion):
 2. $v = \Delta s/\Delta t \approx 0{,}50\,\mathrm{m/s}$ per Zweipunktformel aus der Ausgleichsgeraden bestimmen.
 3. Zufall als Streuung beiderseits gegen Systematik als Verschiebung deuten und nur im Rahmen der Unsicherheit urteilen.
 
-###
-
 ### Hook / Phaenomen
 
 Hook / Phaenomen: Punkte streuen, doch das Gesetz liegt gerade dazwischen: Die **Ausgleichsgerade** mittelt den **zufaelligen Fehler** weg. Der **systematische Fehler** bleibt und verschiebt alles. Wer **Achsen und Einheiten** sauber fuehrt, liest Steigung und Flaeche wie einen Vertrag.

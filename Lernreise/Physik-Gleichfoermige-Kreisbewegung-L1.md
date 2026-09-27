@@ -13,7 +13,7 @@ version: Lesson-v3
 
 # Lernreise: Gleichfoermige Kreisbewegung (L1, Ziel Klausur)
 
-<!-- Campaign: Mars-Mission | Episode 18/28 | Krise: Sol-102 Bodennebel pH-Sensor meldet Fehlkalibrierung | Zielgroessen: Karussell mit Radius r und Umlaufzeit T, Ziel Zentripetalkraft | Tool: schiefe-ebene -->
+<!-- Campaign: Mars-Mission | Episode 18/28 | Krise: Sol-102 Bodennebel pH-Sensor meldet Fehlkalibrierung | Zielgroessen: Karussell mit Radius r und Umlaufzeit T, Ziel Zentripetalkraft | Tool: formula -->
 
 ## Schritt 1 — entdecken: Satelliten-Fessel
 ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
@@ -84,16 +84,16 @@ Kontinuitaet: Vorher Physik-Gleichfoermige-Kreisbewegung-DE-L1.md | Nachher Phys
 
 BEISPIEL（正确例题示范，含教具操作与解答）：
 
-[Werkzeug: schiefe-ebene]
+[Werkzeug: formula]
 
-AUFGABE (berechnen, AFB II)：Ein Auto der Masse m = 1200 kg durchfaehrt eine flache Kurve mit Radius r = 50 m und Umlaufdauer T = 12 s fuer einen vollen Kreis. Berechnen Sie v, ω und die erforderliche Zentripetalkraft F_Z und erklaeren Sie, was bei doppelter Geschwindigkeit geschieht.
+AUFGABE (berechnen, AFB II)：Ein Auto der Masse m = 1000 kg durchfaehrt eine flache Kurve mit Radius r = 60 m mit v = 15 m/s (Karussell-Modell mit gleichem r). Bestimmen Sie Umlaufdauer T, Winkelgeschwindigkeit ω und die erforderliche Zentripetalkraft F_Z = m v^2/r und erklaeren Sie, was bei doppelter Geschwindigkeit geschieht.
 
 HILFE:
-1. Schritt 1: Umfang berechnen U = 2πr, dann v = U/T einsetzen.
-2. Schritt 2: Frequenz f = 1/T bestimmen, dann ω = 2πf berechnen, alternativ ω = v/r nutzen.
+1. Schritt 1: Umfang berechnen U = 2πr = 2π mal 60 m, dann T = U/v und ω = v/r einsetzen.
+2. Schritt 2: Frequenz f = 1/T bestimmen, Kontrolle ω = 2πf = v/r nutzen.
 3. Schritt 3: F_Z = m v^2/r einsetzen; danach v verdoppeln und zeigen, dass F_Z sich vervierfacht, weil v quadratisch eingeht.
 
-MUSTERLOESUNG: Es gilt U = 2πr = 2π mal 50 m = 314 m, also v = 314 m / 12 s = 26.2 m/s. Die Frequenz betraegt f = 1/12 s = 0.0833 1/s, also ω = 2πf = 0.524 1/s, Kontrolle: ω = v/r = 26.2/50 = 0.524 1/s. Die Zentripetalkraft betraegt F_Z = m v^2/r = 1200 mal (26.2)^2 / 50 = 1200 mal 686 / 50 = 16470 N. Bei doppelter Geschwindigkeit gilt F_Z neu = m (2v)^2/r = 4 m v^2/r, also das Vierfache. In der Kurve muss die Haftreibung diese Radialkraft liefern; reicht sie nicht, so folgt das Auto der Traegheit tangential nach aussen und rutscht.
+MUSTERLOESUNG: Es gilt U = 2πr = 2π mal 60 m = 377 m, also T = U/v = 377 m / 15 m/s = 25.1 s. Die Winkelgeschwindigkeit betraegt ω = v/r = 15/60 = 0.25 1/s, Kontrolle: f = 1/T = 0.0398 1/s, ω = 2πf = 0.25 1/s. Die Zentripetalkraft betraegt F_Z = m v^2/r = 1000 mal 225 / 60 = 3750 N. Bei doppelter Geschwindigkeit gilt F_Z neu = m (2v)^2/r = 4 m v^2/r = 15000 N, also das Vierfache. In der Kurve muss die Haftreibung diese Radialkraft liefern; reicht sie nicht, so folgt das Auto der Traegheit tangential nach aussen und rutscht.
 
 `Klausur-Satz: Mit v = 2πr/T und F_Z = m v^2/r folgt, dass eine Verdopplung von v die vierfache Zentripetalkraft erfordert.`
 

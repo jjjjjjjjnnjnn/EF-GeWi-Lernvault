@@ -22,8 +22,6 @@ ZIELE (drei messbare Ziele dieser Lektion):
 2. $F_G = m \cdot g$ an $\alpha = 30^\circ$ in $F_H = m g \sin(\alpha)$ und $F_N = m g \cos(\alpha)$ zerlegen und mit $\mu$ zu $F_{res}$ addieren.
 3. Zwischen $F_{res} = 0$ zu $a = 0$ und $F_{res} = m a$ entscheiden und den Ansatz mit Kraeftediagramm begruenden.
 
-###
-
 ### Hook / Phaenomen
 
 Hook / Phaenomen: Eis, Rampe, Seil: Kraefte ziehen aus allen Richtungen, doch nur die Summe zaehlt. Die **Kraeftezerlegung** sortiert in Hang und Normale, das **zweite Axiom** verwandelt Summe in Beschleunigung. **Reibung** bremst, **Gleichgewicht** steht still.

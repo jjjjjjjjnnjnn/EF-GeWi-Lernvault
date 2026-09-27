@@ -13,16 +13,14 @@ version: Lesson-v3
 
 # Lernreise: Gleichfoermige Kreisbewegung (L1, Ziel Klausur)
 
-<!-- Campaign: Mars-Mission | Episode 17/28 | Krise: Sol-097 Mikrometeoriteneinschlag Panel D-4 | Zielgroessen: Karussell mit Radius r und Umlaufzeit T, Ziel Zentripetalkraft | Tool: schiefe-ebene -->
+<!-- Campaign: Mars-Mission | Episode 17/28 | Krise: Sol-097 Mikrometeoriteneinschlag Panel D-4 | Zielgroessen: Karussell mit Radius r und Umlaufzeit T, Ziel Zentripetalkraft | Tool: formula -->
 
 ## Schritt 1 — entdecken: Schwerkraft-Anker
 ZIELE (drei messbare Ziele dieser Lektion):
 
 1. Den Widerspruch nennen: $|v|$ konstant, Richtung wechselnd, daher $a_Z$ zum Zentrum.
-2. $v = 2\pi r/T$, $\omega = 2\pi f$ und $F_Z = m v^2/r$ an Kurve $r = 20\,\mathrm{m}$ und Scheibe anwenden.
+2. $v = 2\pi r/T$, $\omega = 2\pi f$ und $F_Z = m v^2/r$ an Kurve $r = 60\,\mathrm{m}$ und Scheibe anwenden.
 3. Rutschen per $F_Z$ gegen Haftung deuten und Fliehkraft als Traegheit im Auto einordnen.
-
-###
 
 ### Hook / Phaenomen
 
@@ -90,16 +88,16 @@ Kontinuitaet: Vorher Physik-Freier-Fall-Luftwiderstand-L1.md | Nachher Physik-Gl
 
 BEISPIEL (Sandbox Level mit Werkzeug):
 
-[Werkzeug: schiefe-ebene]
+[Werkzeug: formula]
 
-AUFGABE (Levelziel, AFB II): Knacke das Kreis-Level: Ziehe im Sandbox-Labor Radius $r$ und Umlaufzeit $T$ durch je drei Stufen und beobachte, wie $v$ linear und $F_Z$ quadratisch folgen. Verdopple $v$ bei festem $r$ und miss die vierfache Kraft. Berechne dann exakt per $v=2\pi r/T$ und $F_Z=mv^2/r$ und vergleiche Labor mit Rechnung.
+AUFGABE (Levelziel, AFB II): Ein Auto der Masse $m = 1000\,\mathrm{kg}$ durchfaehrt eine flache Kurve mit Radius $r = 60\,\mathrm{m}$ mit $v = 15\,\mathrm{m/s}$ (Karussell-Modell mit gleichem $r$). Bestimmen Sie Umlaufdauer $T$, Winkelgeschwindigkeit $\omega$ und die erforderliche Zentripetalkraft $F_Z = m v^2/r$ und erklaeren Sie die Verdopplungsregel.
 
 HILFE:
-1. Stelle $r$ und $T$ ein und lies $v$ sowie $F_Z$ im Labor ab.
-2. Berechne $v = 2\pi r/T$ und $F_Z = mv^2/r$ Schritt fuer Schritt.
-3. Verdopple $v$, weise vierfaches $F_Z$ nach und gleiche mit dem Labor ab.
+1. Stelle $r = 60\,\mathrm{m}$ und $v = 15\,\mathrm{m/s}$ ein: Umfang $U = 2\pi r$, dann $T = U/v$ und $\omega = v/r$.
+2. Berechne $v = 2\pi r/T$ und $F_Z = mv^2/r$ Schritt fuer Schritt mit Kontrolle $\omega = 2\pi/T$.
+3. Verdopple $v$, weise vierfaches $F_Z$ nach und deute Haftreibung als Traeger in der Kurve.
 
-MUSTERLOESUNG: Labor zeigt $v$ linear in $1/T$ und $F_Z$ quadratisch in $v$. Rechnung $v=2\pi r/T$ und $F_Z=mv^2/r$ bestaetigt die Laborwerte. Verdopplung von $v$ erfordert vierfache Zentripetalkraft wegen des Quadrats, Bahn-Fragen brauchen nur $v$, Halte-Fragen brauchen $F_Z$ mit Traeger.
+MUSTERLOESUNG: Es gilt $U = 2\pi\cdot 60 = 377\,\mathrm{m}$, also $T = 377/15 = 25{,}1\,\mathrm{s}$ und $\omega = v/r = 15/60 = 0{,}25\,\mathrm{1/s}$ mit Kontrolle $f = 1/T = 0{,}0398\,\mathrm{1/s}$. Die Zentripetalkraft betraegt $F_Z = 1000\cdot 15^2/60 = 3750\,\mathrm{N}$, bei doppeltem $v$ das Vierfache $15000\,\mathrm{N}$ wegen des Quadrats. Bahn-Fragen brauchen nur $v$ und $\omega$, Halte-Fragen brauchen $F_Z$ mit Traeger Haftreibung.
 
 `Klausur-Satz: Mit v = 2πr/T und F_Z = m v^2/r folgt, dass eine Verdopplung von v die vierfache Zentripetalkraft erfordert.`
 

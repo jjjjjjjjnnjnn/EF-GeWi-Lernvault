@@ -22,8 +22,6 @@ ZIELE (drei messbare Ziele dieser Lektion):
 2. Reibungsfrei per $E_{vor} = E_{nach}$ zu $v = \sqrt{2 g h}$ und $s = \sqrt{2 m g h/D}$ loesen.
 3. Dissipation per $E_{vor} = E_{nach}+W_R$ pruefen und ein bedingtes Urteil mit weil-Satz formulieren.
 
-###
-
 ### Hook / Phaenomen
 
 Hook / Phaenomen: Oben schnell nichts, unten alles Tempo: Die **Lageenergie** verwandelt sich restlos in **Bewegungsenergie**. Die **Energiebilanz** schreibt jede Umwandlung auf, die **Energieerhaltung** buergt fuer die Summe. Reibung ist der einzige Steuerdieb in dieser Bilanz.

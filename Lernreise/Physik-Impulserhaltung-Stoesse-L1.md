@@ -38,9 +38,9 @@ Hook / Phaenomen: Billardkugeln klicken, Autos knirschen: Der **Impuls** wandert
 PRETRAINING (Kernbegriffe):
 
 - Impuls: $p = m \cdot v$ mit Einheit $1 \, \mathrm{Ns} = 1 \, \mathrm{kgm/s}$. Im abgeschlossenen System bleibt die Vektorsumme aller Impulse konstant. Mechanismus: Impulse vor und nach dem Stoss gleichsetzen. Klausur-Tipp: Abgeschlossenheit zuerst feststellen.
-- Abgeschlossenes System: Keine aeusseren Kraefte, also $p_{gesamt}$ konstant. Form geht verloren, nur der Impuls bleibt als Bilanz erhalten. Mechanismus: Gemeinsame Endgeschwindigkeit aus Impulssumme bestimmen. Klausur-Tipp: Verformungsenergie als Verlust benennen.
-- Elastischer Stoss: Impuls und kinetische Energie bleiben erhalten. Er verbindet Masse und Geschwindigkeit zu einer Erhaltungsgroesse. Mechanismus: Masse mal Geschwindigkeit je Koerper bilden. Klausur-Tipp: Richtung per Vorzeichen fuehren.
-- Unelastischer Stoss: Nur der Impuls bleibt erhalten; es entsteht Verformungs- oder Waermeenergie. Form bleibt, zusaetzlich gilt Energieerhaltung der Bewegung. Mechanismus: Impuls- plus Energiesatz als System loesen. Klausur-Tipp: Beide Saetze nebeneinander aufstellen.
+- Abgeschlossenes System: Keine aeusseren Kraefte, also $p_{gesamt}$ konstant. Mechanismus: Systemgrenzen ziehen und aeussere Kraefte ausschliessen. Klausur-Tipp: Abgeschlossenheit zuerst feststellen.
+- Elastischer Stoss: Impuls und kinetische Energie bleiben erhalten, die Form bleibt. Mechanismus: Impuls- plus Energiesatz als System loesen. Klausur-Tipp: Beide Saetze nebeneinander aufstellen.
+- Unelastischer Stoss: Nur der Impuls bleibt erhalten; es entsteht Verformungs- oder Waermeenergie, die Form geht verloren. Mechanismus: Gemeinsame Endgeschwindigkeit aus Impulssumme bestimmen. Klausur-Tipp: Verformungsenergie als Verlust benennen.
 - Rueckstoss: Spezialfall mit $p_{vor} = 0$, etwa bei Explosion in zwei Teile. Ausgestossene Masse treibt die Restmasse in Gegenrichtung. Mechanismus: Nullimpuls in Rueckstoss plus Strahl aufteilen. Klausur-Tipp: Vorzeichen beider Teile sorgfaeltig setzen.
 
 `Klausur-Satz: Der Impuls ist eine Vektorgroesse; sein Vorzeichen haengt von der gewaehlten positiven Richtung ab.`

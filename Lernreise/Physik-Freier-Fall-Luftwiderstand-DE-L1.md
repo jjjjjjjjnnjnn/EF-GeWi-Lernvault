@@ -18,11 +18,9 @@ version: Lesson-v3
 ## Schritt 1 — entdecken: Zentrifuge der Umlaufbahn
 ZIELE (drei messbare Ziele dieser Lektion):
 
-1. $m a = m g - F_W(v)$ mit $F_W = k v$ oder $c v^2$ aufstellen und Richtungen benennen.
+1. $m a = m g - F_W(v)$ mit $F_W = k v$ aufstellen und Richtungen benennen.
 2. Ideal $v = g t$ gegen real mit Saettigung $v_E$ unterscheiden und $v_E = 6{,}54\,\mathrm{m/s}$ einordnen.
 3. An $s$-$t$ Parabel gegen Linie und $v$-$t$ Gerade gegen Abflachung auf $F_W$ schliessen.
-
-###
 
 ### Hook / Phaenomen
 
@@ -40,7 +38,7 @@ Fuenf Begriffe trennen in dieser Lektion Alltagssprache von Klausursprache. Wer 
 ### Fachbegriffe & Definitionen
 
 - **Freier Fall:** Das Ideal ohne Luft mit $a=g=9{,}81\,m/s^2$ laesst alle Koerper gleich fallen. Ohne Luft gilt konstante Beschleunigung g und parabelfoermiger Weg. Mechanismus: $v=gt$ und $s=\frac12gt^2$ anwenden. Klausur-Tipp: Vakuum nennen und Idealformeln ohne Korrektur nutzen.
-- **Luftwiderstand:** Die Kraft $F_W=kv$ oder $cv^2$ wirkt gegen die Bewegung und waechst mit $v$. Er waechst mit dem Tempo und wirkt stets gegen die Bewegung. Mechanismus: Widerstand in $ma=mg-F_W(v)$ einsetzen. Klausur-Tipp: Richtung gegen $v$ nennen und Wachstum mit Tempo begruenden.
+- **Luftwiderstand:** Die Kraft $F_W=kv$ wirkt gegen die Bewegung und waechst mit $v$. Er waechst mit dem Tempo und wirkt stets gegen die Bewegung. Mechanismus: Widerstand in $ma=mg-F_W(v)$ einsetzen. Klausur-Tipp: Richtung gegen $v$ nennen und Wachstum mit Tempo begruenden.
 - **Bewegungsgleichung:** Die Bilanz $ma=mg-F_W(v)$ steuert die Beschleunigung aus Gewicht minus Widerstand. Sie verknuepft Gewicht, Widerstand und Beschleunigung; im freien Fall bleibt nur m mal g uebrig. Mechanismus: Kraefte mit Richtungen ansetzen und $a$ ablesen. Klausur-Tipp: Gleichung aufstellen und Start mit $a=g$ deuten.
 - **Endgeschwindigkeit:** Bei $mg=F_W(v_E)$ gilt $a=0$ und der Fall wird konstant mit $v_E$. Dort heben sich Gewicht und Widerstand exakt auf. Mechanismus: Gleichgewicht ansetzen und nach $v_E$ aufloesen. Klausur-Tipp: $v_E$ berechnen und als Grenze jeder realen Kurve deuten.
 - **v-t-Diagramm:** Die reale Kurve flacht gegen $v_E$ ab statt als Gerade zu steigen. Die Steigung zeigt Beschleunigung, die Flaeche den Weg. Mechanismus: Abflachung als Widerstandssignatur lesen. Klausur-Tipp: Gerade gegen Kurve zuordnen und $v_E$ aus der Horizontalen ablesen.
@@ -95,10 +93,10 @@ AUFGABE (Levelziel, AFB II): Knacke das Fall-Level: Ziehe im Sandbox-Labor die S
 
 HILFE:
 1. Lies $v_E = 6{,}54$ im Luft-Modus ab und verfolge Abflachung gegen Horizontale.
-2. Setze $mg = kv_E^2$ als Gleichgewicht an und loese nach $v_E$ auf.
+2. Setze linear $F_W = k v$ und im Gleichgewicht $m g = k v_E$ an und loese nach $v_E = m g/k = 6{,}54\,\mathrm{m/s}$ auf.
 3. Vergleiche ideal $v = gt$ als fruehe Grenze mit $v_E$ als spaeter Grenze.
 
-MUSTERLOESUNG: Labor $v_E = 6{,}54\,m/s$ im Luft-Modus mit Abflachung gegen die Horizontale. Rechnung $mg-kv^2 = 0$ zu $v_E=\sqrt{mg/k}=6{,}54\,m/s$. Ideal $v=gt$ waechst linear, real flacht durch $kv^2$ ab bis $v_E$. Daher begrenzt $6{,}54$ jede reale Kurve, die Abflachung beweist den Widerstand bis zum Gleichgewicht.
+MUSTERLOESUNG: Labor $v_E = 6{,}54\,\mathrm{m/s}$ im Luft-Modus mit Abflachung gegen die Horizontale. Linear gilt $m g - k v = 0$, also $v_E = m g/k = 6{,}54\,\mathrm{m/s}$. Ideal $v = g t$ waechst linear, real flacht durch $k v$ ab bis $v_E$. Daher begrenzt $6{,}54\,\mathrm{m/s}$ jede reale Kurve, die Abflachung beweist den linearen Widerstand bis zum Gleichgewicht.
 
 `Klausur-Satz: Die berechnete Endgeschwindigkeit von 6,54 m/s begrenzt jede reale Fallgeschwindigkeit nach unten wie nach oben im Vergleich zum Idealwert.`
 

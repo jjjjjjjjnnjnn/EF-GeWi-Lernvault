@@ -22,8 +22,6 @@ ZIELE (drei messbare Ziele dieser Lektion):
 2. Per Bedingung waehlt Ansatz erst Buchstabenform, dann SI-Einheiten bis zum Ende, dann Zahl mit Einheit rechnen.
 3. Per $1\,\mathrm{N} = 1\,\mathrm{kgm/s^2}$ und Alltag $v = 100\,\mathrm{m}$, $W = 300\,\mathrm{kJ}$ auf Plausibilitaet pruefen.
 
-###
-
 ### Hook / Phaenomen
 
 Hook / Phaenomen: Buchstaben statt Zahlen: Wer die **Formel** erst allgemein loest, rechnet danach jede Variante in Sekunden. Der **Buchstabenansatz** trennt Physik vom Taschenrechner, die **Bedingungspruefung** schuetzt vor falschem Einsatz. Die **Einheitenprobe** fängt den Rest ab.

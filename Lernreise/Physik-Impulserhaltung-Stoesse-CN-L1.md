@@ -37,10 +37,10 @@ PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→�
 
 中文在上，德语在下：
 
-- 动量 — Impuls $p = m v$：矢量，方向与速度相同，单位 $\mathrm{kg \cdot m/s}$。 Im abgeschlossenen System bleibt die Vektorsumme aller Impulse konstant. Mechanismus: Impulse vor und nach dem Stoss gleichsetzen. Klausur-Tipp: Abgeschlossenheit zuerst feststellen.
-- 封闭系统 — abgeschlossenes System：合外力为零，$p_{ges}$ 不变。 Er verbindet Masse und Geschwindigkeit zu einer Erhaltungsgroesse. Mechanismus: Masse mal Geschwindigkeit je Koerper bilden. Klausur-Tipp: Richtung per Vorzeichen fuehren.
-- 完全非弹性碰撞 — vollkommen unelastischer Stoss：碰后粘连共速 $u$，动能损失最大。 Form bleibt, zusaetzlich gilt Energieerhaltung der Bewegung. Mechanismus: Impuls- plus Energiesatz als System loesen. Klausur-Tipp: Beide Saetze nebeneinander aufstellen.
-- 弹性碰撞 — elastischer Stoss：动量与动能双守恒，$E_{kin}$ 不变。 Form geht verloren, nur der Impuls bleibt als Bilanz erhalten. Mechanismus: Gemeinsame Endgeschwindigkeit aus Impulssumme bestimmen. Klausur-Tipp: Verformungsenergie als Verlust benennen.
+- 动量 — Impuls $p = m v$：矢量，方向与速度相同，单位 $\mathrm{kg \cdot m/s}$。 Er verbindet Masse und Geschwindigkeit zu einer Erhaltungsgroesse. Mechanismus: Masse mal Geschwindigkeit je Koerper bilden. Klausur-Tipp: Richtung per Vorzeichen fuehren.
+- 封闭系统 — abgeschlossenes System：合外力为零，$p_{ges}$ 不变。 Im abgeschlossenen System bleibt die Vektorsumme aller Impulse konstant. Mechanismus: Impulse vor und nach dem Stoss gleichsetzen. Klausur-Tipp: Abgeschlossenheit zuerst feststellen.
+- 完全非弹性碰撞 — vollkommen unelastischer Stoss：碰后粘连共速 $u$，动能损失最大。 Form geht verloren, nur der Impuls bleibt als Bilanz erhalten. Mechanismus: Gemeinsame Endgeschwindigkeit aus Impulssumme bestimmen. Klausur-Tipp: Verformungsenergie als Verlust benennen.
+- 弹性碰撞 — elastischer Stoss：动量与动能双守恒，$E_{kin}$ 不变。 Form bleibt, zusaetzlich gilt Energieerhaltung der Bewegung. Mechanismus: Impuls- plus Energiesatz als System loesen. Klausur-Tipp: Beide Saetze nebeneinander aufstellen.
 - 反冲 — Rueckstoss：系统初动量为零时两部分向相反方向运动。 Ausgestossene Masse treibt die Restmasse in Gegenrichtung. Mechanismus: Nullimpuls in Rueckstoss plus Strahl aufteilen. Klausur-Tipp: Vorzeichen beider Teile sorgfaeltig setzen.
 
 `Klausur-Satz: Der Impuls ist eine vektorielle Groesse; seine Richtung muss im Ansatz durch Vorzeichen beruecksichtigt werden.`

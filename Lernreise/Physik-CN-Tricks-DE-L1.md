@@ -22,8 +22,6 @@ ZIELE (diese Lektion in 15 Minuten: danach kannst du):
 2. $F_H = 15\,\mathrm{N}$ zu $a = 5{,}0\,\mathrm{m/s^2}$ und $s = 25\,\mathrm{m}$ per $0{,}5 \cdot 5 \cdot 10$ rechnen.
 3. Gesamt gegen Teil entscheiden und Dimensionsprobe $v = s/t$ gegen $v = m s$ begruenden.
 
-###
-
 ### Hook / Phaenomen
 
 Hook / Phaenomen: Zwei Wagen mit 15 Newton, doch innen zieht die Kupplung nur mit 9 Newton. Wer nur das Ganze sieht, uebersieht die Trennstelle. **Kraeftediagramm** und **Systemschnitt** zerlegen das Problem, **Ersatzkraft** und **Dimensionsprobe** sichern Zahl und Einheit.

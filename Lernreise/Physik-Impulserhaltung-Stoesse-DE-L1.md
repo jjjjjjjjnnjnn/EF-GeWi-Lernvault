@@ -22,8 +22,6 @@ ZIELE (drei messbare Ziele dieser Lektion):
 2. $p_{vor} = p_{nach}$ an Stoss $m_1 v_1+m_2 v_2 = m_1 u_1+m_2 u_2$ und Rueckstoss $0$ anwenden.
 3. Elastisch per $E_{kin}$ erhalten gegen unelastisch per $E$-Verlust mit Vorzeichenregel unterscheiden.
 
-###
-
 ### Hook / Phaenomen
 
 Hook / Phaenomen: Billardkugeln klicken, Autos knirschen: Der **Impuls** wandert von Masse zu Masse, die Summe bleibt. **Elastisch** federt mit Form, **unelastisch** klebt mit Waerme. Der **Rueckstoss** treibt Raketen nach exakt demselben Gesetz.
@@ -92,14 +90,14 @@ BEISPIEL (Sandbox Level mit Werkzeug):
 
 [Werkzeug: formula]
 
-AUFGABE (Levelziel, AFB II): Knacke das Stoss-Level: Stelle im Sandbox-Labor Massen $m_1$, $m_2$ und Tempi $v_1$, $v_2$ ein und beobachte, wie sich Endtempi bei elastisch gegen unelastisch unterscheiden und die Impulssumme stets gleich bleibt. Miss beide Faelle, rechne dann exakt per Impulsbilanz und vergleiche Labor mit Rechnung. Erklaere in einem Satz den Energieunterschied.
+AUFGABE (Levelziel, AFB II): Ein Wagen $m_1 = 2{,}0\,\mathrm{kg}$ faehrt mit $v_1 = 3{,}0\,\mathrm{m/s}$ auf einen ruhenden Wagen $m_2 = 1{,}0\,\mathrm{kg}$ auf. Nach dem vollstaendig unelastischen Stoss kleben beide zusammen. Berechnen Sie die gemeinsame Geschwindigkeit $u$ und den Verlust an kinetischer Energie.
 
 HILFE:
-1. Lege die positive Richtung fest und lies im Labor Endtempi beider Stossarten ab.
-2. Stelle $m_1v_1+m_2v_2 = m_1u_1+m_2u_2$ auf und loese je Stossart auf.
-3. Gleiche mit dem Labor ab und deute fehlende Energie als innere Energie.
+1. Legen Sie die positive Richtung fest und stellen Sie $m_1 v_1 = (m_1+m_2) u$ auf.
+2. Loesen Sie nach $u$ auf und berechnen Sie $E_{kin}$ vor und nach.
+3. Deuten Sie fehlende Energie als innere Energie und vergleichen Sie die Impulssumme.
 
-MUSTERLOESUNG: Labor zeigt gleiche Impulssumme vor und nach in beiden Faellen, aber verschiedene Endtempi und Energien. Rechnung per Impulsbilanz bestaetigt die Labor-Endtempi, elastisch mit Energiezusatz, unelastisch mit $u_1=u_2$. Beim unelastischen Stoss bleibt der Impuls erhalten, waehrend ein Teil der kinetischen Energie in innere Energie umgewandelt wird.
+MUSTERLOESUNG: Es gilt $u = m_1 v_1/(m_1+m_2) = 2{,}0\cdot 3{,}0/3{,}0 = 2{,}0\,\mathrm{m/s}$. Vorher: $E_{vor} = 0{,}5\cdot 2{,}0\cdot 9{,}0 = 9{,}0\,\mathrm{J}$. Nachher: $E_{nach} = 0{,}5\cdot 3{,}0\cdot 4{,}0 = 6{,}0\,\mathrm{J}$. Der Verlust betraegt $3{,}0\,\mathrm{J}$ als Verformungs- und Waermeenergie. Der Impuls $p = 6{,}0\,\mathrm{Ns}$ bleibt erhalten; elastisch kaeme zusaetzlich der Energiesatz hinzu.
 
 `Klausur-Satz: Beim unelastischen Stoss bleibt der Impuls erhalten, waehrend ein Teil der kinetischen Energie in innere Energie umgewandelt wird.`
 

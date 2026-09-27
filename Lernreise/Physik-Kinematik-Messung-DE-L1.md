@@ -22,8 +22,6 @@ ZIELE (drei messbare Ziele dieser Lektion):
 2. $v$ als Steigung in $s$-$t$, $s$ als Flaeche in $v$-$t$ und $a$ als Steigung in $v$-$t$ mit $2s/t^2$ bestimmen.
 3. Tabelle, Diagramm, Steigung oder Flaeche plus Einheit mit Ansatz und Ergebnissatz in vier Schritten loesen.
 
-###
-
 ### Hook / Phaenomen
 
 Hook / Phaenomen: Lichtschranken klicken, das Handy stoppt: Jede **Messung** von Weg und Zeit endet in Diagrammen. Das **Weg-Zeit-Diagramm** zeigt Orte, das **Geschwindigkeit-Zeit-Diagramm** zeigt Flaechen als Wege. **Momentan gegen Mittel** entscheidet, ob Blitzer oder Tacho recht hat.
@@ -91,14 +89,14 @@ BEISPIEL (Sandbox Level mit Werkzeug):
 
 [Werkzeug: kinematik-lab]
 
-AUFGABE (Levelziel, AFB II): Knacke das Kinematik-Level: Stelle im Sandbox-Labor nacheinander Anfangstempo $v_0$ und Beschleunigung $a$ ein und beobachte, wie sich s-t-Parabel und v-t-Gerade live veraendern. Miss per Ausgleichsgerade die Geschwindigkeit, lies Weg als Flaeche ab und pruefe $s(t)=v_0t+\frac12at^2$ an einem Zahlenbeispiel. Erklaere in einem Satz den Zusammenhang beider Diagramme.
+AUFGABE (Levelziel, AFB II): Bei einem Schulexperiment auf der Luftkissenbahn werden zu den Zeiten $t = 0\,\mathrm{s}$, $1\,\mathrm{s}$, $2\,\mathrm{s}$, $3\,\mathrm{s}$ und $4\,\mathrm{s}$ die Strecken $s = 0\,\mathrm{m}$; $0{,}50\,\mathrm{m}$; $2{,}00\,\mathrm{m}$; $4{,}50\,\mathrm{m}$ und $8{,}00\,\mathrm{m}$ gemessen. Pruefen Sie, ob eine gleichmaessig beschleunigte Bewegung vorliegt, und bestimmen Sie die Beschleunigung $a$ sowie die Momentangeschwindigkeit bei $t = 4\,\mathrm{s}$.
 
 HILFE:
-1. Stelle $v_0$ und $a$ ein, verfolge s-t- und v-t-Kurven und lies Steigung und Flaeche im Labor ab.
-2. Lege die Ausgleichsgerade durch die Messpunkte und berechne $v = \Delta s/\Delta t$ mit Einheiten.
-3. Pruefe $s(t) = v_0t+\frac12at^2$ numerisch und deute Steigung gegen Flaeche in einem Satz.
+1. Pruefen Sie mit dem Ansatz $s = 0{,}5\cdot a\cdot t^2$, ob $a = 2s/t^2$ fuer alle Messpunkte denselben Wert ergibt.
+2. Setzen Sie $t = 4\,\mathrm{s}$ und $s = 8{,}00\,\mathrm{m}$ ein, um $a$ zu bestimmen.
+3. Nutzen Sie fuer die Momentangeschwindigkeit $v = a\cdot t$ und gegenpruefen Sie per Dreiecksflaeche im $v$-$t$-Diagramm.
 
-MUSTERLOESUNG: Labor mit $v_0$ und $a$ zeigt s-t-Parabel und v-t-Gerade konsistent zueinander. Ausgleichsgerade liefert $v = \Delta s/\Delta t$ als Steigung, die Flaeche unter $v(t)$ bestaetigt den Weg $s(t)=v_0t+\frac12at^2$ numerisch. Zusammenhang: Die Steigung im s-t-Diagramm ist das Tempo, die Flaeche im v-t-Diagramm ist der Weg, beide beschreiben dieselbe Bewegung.
+MUSTERLOESUNG: Mit $a = 2s/t^2$ folgt fuer jeden Punkt derselbe Wert: $2\cdot 0{,}50/1^2 = 1{,}0$; $2\cdot 2{,}00/2^2 = 1{,}0$; $2\cdot 4{,}50/3^2 = 1{,}0$; $2\cdot 8{,}00/4^2 = 1{,}0$ (Einheit $\mathrm{m/s^2}$). Daher liegt eine gleichmaessig beschleunigte Bewegung mit $a = 1{,}0\,\mathrm{m/s^2}$ vor. Die Momentangeschwindigkeit bei $t = 4\,\mathrm{s}$ betraegt $v = a\cdot t = 1{,}0\cdot 4 = 4{,}0\,\mathrm{m/s}$. Gegenprobe per $v$-$t$-Flaeche: Dreieck $0{,}5\cdot 4\,\mathrm{s}\cdot 4{,}0\,\mathrm{m/s} = 8{,}0\,\mathrm{m}$ stimmt mit der Messstrecke ueberein.
 
 `Klausur-Satz: Da der Quotient 2s/t^2 fuer alle Messpunkte konstant ist, liegt eine gleichmaessig beschleunigte Bewegung mit a = 1,0 m/s^2 vor, und die Endgeschwindigkeit betraegt v = 4,0 m/s.`
 

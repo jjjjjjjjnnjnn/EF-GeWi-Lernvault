@@ -22,8 +22,6 @@ ZIELE (drei messbare Ziele dieser Lektion):
 2. $v = \sqrt{G M/r}$ per $m v^2/r = G m M/r^2$ herleiten und GEO gegen LEO abgrenzen.
 3. $T^2 = 4\pi^2 r^3/(G M)$ deuten und $r \approx 42164\,\mathrm{km}$ zu $T = 24\,\mathrm{h}$ zuordnen.
 
-###
-
 ### Hook / Phaenomen
 
 Hook / Phaenomen: Der Mond faellt staendig zur Erde und trifft sie nie: **Gravitationskraft** liefert exakt die noetige Zentripetalkraft. Dieses **Bahn-Gleichgewicht** sortiert Satelliten nach Hoehe, **Kepler** sortiert sie nach Zeit. **GEO** steht still, erdnahe Bahnen rasen.

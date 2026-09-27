@@ -22,8 +22,6 @@ ZIELE (diese Lektion in 15 Minuten: danach kannst du):
 2. Kiste $3{,}0\,\mathrm{kg}$ per $F_{res} = 12\,\mathrm{N}$ zu $W = 48\,\mathrm{J}$ zu $h = 1{,}6\,\mathrm{m}$ per $m g h$ loesen.
 3. Per EHZ selbst bepunkten und jeden Ansatz mit Formel, Einheit und Urteil schreiben.
 
-###
-
 ### Hook / Phaenomen
 
 Hook / Phaenomen: Vier Aufgaben, ein **Erwartungshorizont**: Diagramm, Kraft, Kreis, Messung. Wer nur Zahlen liefert, halbiert seine Punkte, denn der EHZ bepunktet Wege, nicht Ergebnisse. **Loesungsweg**, **Transfersatz** und **Teilflaeche** sichern jeden Teilpunkt vor der ersten Zahl.
@@ -92,7 +90,7 @@ BEISPIEL (Sandbox Level mit Werkzeug):
 
 [Werkzeug: formula]
 
-AUFGABE (Levelziel, AFB II): Schaffe den Zeitlauf: Stelle in der Sandbox (kinematik-lab) die Zeit ein, ziehe den Slider Zeit von 0 bis 36 s und bestaetige Weg $336$ $m$, und berechne dann Flaeche und $v_{mittel}$ schriftlich. Wende die Ordnung auf alle vier Typen an.
+AUFGABE (Levelziel, AFB II): Schaffe den Zeitlauf: Stelle in der Sandbox (formula) die Zeit ein, ziehe den Slider Zeit von 0 bis 36 s und bestaetige Weg $336$ $m$, und berechne dann Flaeche und $v_{mittel}$ schriftlich. Wende die Ordnung auf alle vier Typen an.
 
 HILFE:
 1. Zerlege die $v$ gegen $t$ Figur in Rechtecke und Dreiecke und lies die Sandbox Flaeche $336$ ab.

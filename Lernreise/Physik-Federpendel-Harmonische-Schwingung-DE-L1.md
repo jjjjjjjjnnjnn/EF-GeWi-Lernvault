@@ -22,8 +22,6 @@ ZIELE (drei messbare Ziele dieser Lektion):
 2. Aus $F = -D x$ und $F = m a$ zu $\ddot{x}+Dx/m = 0$ formen und Minus als Rueckstellung deuten.
 3. Per $\omega = \sqrt{D/m}$ und $f = 1/T$ aus $T$ auf $D$ oder $m$ schliessen.
 
-###
-
 ### Hook / Phaenomen
 
 Hook / Phaenomen: Ein Wagen rauscht ueber eine Bodenwelle: Ohne **Stossdaempfer** wuerde die Karosserie endlos nachschwingen. Mit Daempfer klingt die **Schwingung** in einer Sekunde ab. Dieselbe Physik schuetzt Hochhaeuser im Erdbebengebiet: Abgestimmte **Tilger** schlucken die Resonanz statt sie zu verstaerken.
@@ -93,10 +91,6 @@ BEISPIEL (Sandbox Level mit Werkzeug):
 [Werkzeug: formula]
 
 AUFGABE (Levelziel, AFB II): Eine Masse m = 0,50 kg haengt an einer Feder mit D = 20 N/m. Berechnen Sie T und f und weisen Sie nach, dass doppelte Masse die Zeit um Wurzel zwei verlaengert.
-
-$$T=2\pi\sqrt{m/D}$$
-
-$$T=2\pi\sqrt{m/D}$$
 
 HILFE:
 1. Stellen Sie m = 0,50 kg und D = 20 N/m ein und lesen Sie T im Labor ab.
