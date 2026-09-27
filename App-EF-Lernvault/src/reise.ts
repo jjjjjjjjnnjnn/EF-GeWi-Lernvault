@@ -159,12 +159,21 @@ export function parseReiseFile(path: string, raw: string): Reise | null {
     const toolId = toolMatch ? toolMatch[1] : undefined;
 
     if (cur.typ === "entdecken" || cur.typ === "reflexion") {
+      let cachedBlocks: Block[] | null = null;
       schritte.push({
         typ: cur.typ,
         stepNumber: cur.stepNum,
         title: resolveStepTitle(cur.stepNum, cur.typ, cur.customTitle),
         rawText: content,
-        blocks: parseBody(content),
+        get blocks(): Block[] {
+          if (!cachedBlocks) {
+            cachedBlocks = parseBody(content);
+          }
+          return cachedBlocks;
+        },
+        set blocks(val: Block[]) {
+          cachedBlocks = val;
+        },
         toolId,
       });
     } else if (cur.typ === "ausprobieren") {

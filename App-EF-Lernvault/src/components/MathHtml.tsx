@@ -5,10 +5,17 @@ import { useEffect, useRef, useState } from "react";
 // Grund: statischer `import katex` zog ~270KB in den erst-chunk.
 
 const htmlCache = new Map<string, string>();
+let katexModule: typeof import("katex") | null = null;
 let katexPromise: Promise<typeof import("katex")> | null = null;
 
 function loadKatex(): Promise<typeof import("katex")> {
-  if (!katexPromise) katexPromise = import("katex");
+  if (katexModule) return Promise.resolve(katexModule);
+  if (!katexPromise) {
+    katexPromise = import("katex").then((m) => {
+      katexModule = m;
+      return m;
+    });
+  }
   return katexPromise;
 }
 
@@ -32,7 +39,21 @@ export default function MathHtml({
   display: boolean;
   cacheKey: string;
 }) {
-  const [html, setHtml] = useState<string | null>(() => htmlCache.get(cacheKey) ?? null);
+  const [html, setHtml] = useState<string | null>(() => {
+    const cached = htmlCache.get(cacheKey);
+    if (cached !== undefined) return cached;
+    if (katexModule) {
+      try {
+        const out = katexModule.default.renderToString(code, { displayMode: display, throwOnError: false });
+        htmlCache.set(cacheKey, out);
+        return out;
+      } catch {
+        htmlCache.set(cacheKey, "");
+        return "";
+      }
+    }
+    return null;
+  });
   const alive = useRef(true);
 
   useEffect(() => {
@@ -40,6 +61,17 @@ export default function MathHtml({
     const cached = htmlCache.get(cacheKey);
     if (cached !== undefined) {
       setHtml(cached);
+      return;
+    }
+    if (katexModule) {
+      try {
+        const out = katexModule.default.renderToString(code, { displayMode: display, throwOnError: false });
+        htmlCache.set(cacheKey, out);
+        setHtml(out);
+      } catch {
+        htmlCache.set(cacheKey, "");
+        setHtml("");
+      }
       return;
     }
     let cancelled = false;

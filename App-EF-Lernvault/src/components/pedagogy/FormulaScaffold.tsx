@@ -6,65 +6,141 @@ interface FormulaScaffoldProps {
   lang?: Lang;
   onFormulaStepComplete?: (formattedAnswer: string) => void;
   fach?: string;
+  thema?: string;
 }
 
 export default function FormulaScaffold({
   lang = "de",
   onFormulaStepComplete,
   fach = "Mathe",
+  thema = "",
 }: FormulaScaffoldProps) {
-  const [gegeben, setGegeben] = useState("");
-  const [gesucht, setGesucht] = useState("");
-  const [formel, setFormel] = useState("");
-  const [rechnung, setRechnung] = useState("");
-  const [einheit, setEinheit] = useState("");
-  const [antwort, setAntwort] = useState("");
-  const [copied, setCopied] = useState(false);
+  const getContextualPreset = () => {
+    const fLow = (fach || "").toLowerCase();
+    const th = (thema || "").toLowerCase();
 
-  const presetsByFach: Record<string, { f: string; g: string; s: string; u: string }> = {
-    Mathe: {
+    // 1. Chemie specific themes
+    if (fLow.includes("chem")) {
+      if (th.includes("ph") || th.includes("saeure") || th.includes("base") || th.includes("titration")) {
+        return {
+          f: "\\text{pH} = -\\log_{10}[H_3O^+], \\quad [H_3O^+] = 10^{-\\text{pH}}",
+          g: "\\text{pH} = 4.2, \\quad [H_3O^+] = 10^{-4.2} \\approx 6.3 \\cdot 10^{-5} \\text{ mol/L}",
+          s: "c(H_3O^+) \\text{ und Neutralisations-Kalkbedarf}",
+          u: "mol/L",
+          r: lang === "de"
+            ? "Zehnerpotenzen subtrahieren / aus pH = -log[H3O+] Konzentration bestimmen."
+            : "利用 pH = -log[H3O+] 展开对数与指数计算，求算酸碱度与中和量。",
+          a: lang === "de"
+            ? "Ergebnis: Saure Lösung erfordert gezielte Kalk-Neutralisation."
+            : "结论：酸性溶液需要精准投加碳酸钙完成中和反应。",
+        };
+      }
+      if (th.includes("gleichgewicht") || th.includes("chatelier") || th.includes("mwg")) {
+        return {
+          f: "K_c = \\frac{[C]^c \\cdot [D]^d}{[A]^a \\cdot [B]^b}",
+          g: "[N_2] = 0.5\\text{ mol/L}, [H_2] = 1.5\\text{ mol/L}, [NH_3] = 0.2\\text{ mol/L}",
+          s: "Gleichgewichtskonstante K_c",
+          u: "L^2/mol^2",
+          r: lang === "de"
+            ? "Konzentrationen der Produkte durch Edukte teilen."
+            : "将平衡浓度代入质量作用定律计算平衡常数。",
+          a: lang === "de"
+            ? "Ergebnis: Kc bestätigt die Lage des chemischen Gleichgewichts."
+            : "结论：Kc 确认了化学反应平衡位置偏向反应物或产物。",
+        };
+      }
+      return {
+        f: "c = \\frac{n}{V} = \\frac{m}{M \\cdot V}",
+        g: "m = 5.85\\text{ g (NaCl)}, V = 0.5\\text{ L}, M = 58.44\\text{ g/mol}",
+        s: "Stoffmengenkonzentration c",
+        u: "mol/L",
+        r: lang === "de"
+          ? "Stoffmenge n = m/M berechnen und durch Volumen V teilen."
+          : "先求摩尔质量，再代入计算物质的量浓度。",
+        a: lang === "de"
+          ? "Ergebnis: c = 0.20 mol/L entspricht der gewünschten Konzentration."
+          : "结论：浓度为 0.20 mol/L，符合标准溶液配置要求。",
+      };
+    }
+
+    // 2. Physik specific themes
+    if (fLow.includes("phys")) {
+      if (th.includes("feder") || th.includes("pendel") || th.includes("schwingung")) {
+        return {
+          f: "T = 2\\pi \\sqrt{\\frac{m}{D}}, \\quad \\omega = \\sqrt{\\frac{D}{m}}",
+          g: "m = 0.25\\text{ kg}, D = 25\\text{ N/m}",
+          s: "Periodendauer T \\text{ und Eigenkreisfrequenz } \\omega",
+          u: "s",
+          r: lang === "de"
+            ? "T = 2 * pi * sqrt(0.25 / 25) = 2 * pi * 0.1 s = 0.628 s"
+            : "代入周期公式 T = 2π√(m/D) 计算振动周期。",
+          a: lang === "de"
+            ? "Ergebnis: T = 0.63 s entspricht der ungedämpften Schwingung."
+            : "结论：周期 T = 0.63 秒，与弹簧振子理论谐振一致。",
+        };
+      }
+      return {
+        f: "s(t) = \\frac{1}{2} a t^2 + v_0 t + s_0",
+        g: "a = 2.5\\text{ m/s}^2, t = 4\\text{ s}, v_0 = 0",
+        s: "Zurückgelegte Strecke s(4)",
+        u: "m (Meter)",
+        r: lang === "de"
+          ? "Werte in Weg-Zeit-Gesetz einsetzen: s = 0.5 * 2.5 * 16 = 20 m"
+          : "将已知量代入运动学规律计算位移。",
+        a: lang === "de"
+          ? "Ergebnis: Der Körper legt 20 Meter in 4 Sekunden zurück."
+          : "结论：在 4 秒内物体匀加速位移为 20 米。",
+      };
+    }
+
+    // 3. Bio specific themes
+    if (fLow.includes("bio")) {
+      return {
+        f: "v = \\frac{v_{\\max} \\cdot [S]}{K_m + [S]}",
+        g: "[S] = 2.0\\text{ mmol/L}, K_m = 0.5\\text{ mmol/L}, v_{\\max} = 100\\text{ µmol/(min·mg)}",
+        s: "Reaktionsgeschwindigkeit v",
+        u: "µmol/(min·mg)",
+        r: lang === "de"
+          ? "Substratkonzentration in Michaelis-Menten-Gleichung einsetzen."
+          : "代入米氏方程计算酶促反应速率。",
+        a: lang === "de"
+          ? "Ergebnis: v = 80 µmol/(min·mg) zeigt hohe Substratsättigung."
+          : "结论：反应速率达 80，表明底物已高度饱和。",
+      };
+    }
+
+    // 4. Mathe default
+    return {
       f: "f'(x) = \\lim_{h \\to 0} \\frac{f(x+h) - f(x)}{h}",
       g: "f(x) = x^2, x_0 = 3",
-      s: "Steigung m = f'(3)",
+      s: "Lokale Steigung m = f'(3)",
       u: "-",
-    },
-    Physik: {
-      f: "s(t) = \\frac{1}{2} a t^2 + v_0 t + s_0",
-      g: "a = 2.5 m/s^2, t = 4 s, v_0 = 0",
-      s: "Strecke s(4)",
-      u: "m (Meter)",
-    },
-    Chemie: {
-      f: "c = \\frac{n}{V} = \\frac{m}{M \\cdot V}",
-      g: "m = 5.85 g (NaCl), V = 0.5 L, M = 58.44 g/mol",
-      s: "Stoffmengenkonzentration c",
-      u: "mol/L",
-    },
-    Bio: {
-      f: "v = \\frac{v_{\\max} \\cdot [S]}{K_m + [S]}",
-      g: "[S] = 2.0 mmol/L, K_m = 0.5 mmol/L",
-      s: "Reaktionsgeschwindigkeit v",
-      u: "µmol/(min·mg)",
-    },
+      r: lang === "de"
+        ? "Differenzenquotient aufstellen und Grenzwert h gegen 0 bilden."
+        : "构建差商并对增量 h 取极限求导。",
+      a: lang === "de"
+        ? "Ergebnis: Tangentensteigung m = 6 an der Stelle x0 = 3."
+        : "结论：在点 x0 = 3 处的切线斜率为 6。",
+    };
   };
 
-  const currentPreset = presetsByFach[fach] ?? presetsByFach.Mathe;
+  const initialPreset = getContextualPreset();
+  const [gegeben, setGegeben] = useState(initialPreset.g);
+  const [gesucht, setGesucht] = useState(initialPreset.s);
+  const [formel, setFormel] = useState(initialPreset.f);
+  const [rechnung, setRechnung] = useState(initialPreset.r);
+  const [einheit, setEinheit] = useState(initialPreset.u);
+  const [antwort, setAntwort] = useState(initialPreset.a);
+  const [copied, setCopied] = useState(false);
 
   const loadPreset = () => {
-    setFormel(currentPreset.f);
-    setGegeben(currentPreset.g);
-    setGesucht(currentPreset.s);
-    setEinheit(currentPreset.u);
-    setRechnung(
-      lang === "de"
-        ? "Einsetzen der Werte in den Formelansatz mit Einheitenkontrolle."
-        : "将已知数值与物理量纲代入公式展开计算。"
-    );
-    setAntwort(
-      lang === "de"
-        ? "Ergebnis: Der berechnete Wert entspricht den Modellannahmen."
-        : "结论：计算数值符合物理/化学/生物模型预期。"
-    );
+    const p = getContextualPreset();
+    setFormel(p.f);
+    setGegeben(p.g);
+    setGesucht(p.s);
+    setEinheit(p.u);
+    setRechnung(p.r);
+    setAntwort(p.a);
   };
 
   const handleExport = () => {

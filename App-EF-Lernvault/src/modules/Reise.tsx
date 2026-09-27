@@ -161,7 +161,7 @@ function getAutoToolForContext(fach: string, thema: string): string | null {
   return null;
 }
 
-function renderEmbeddedTool(toolName: string, lang: Lang, fach: string) {
+function renderEmbeddedTool(toolName: string, lang: Lang, fach: string, thema?: string) {
   const t = toolName.toLowerCase().trim();
   const f = (fach || "").toLowerCase();
 
@@ -174,7 +174,7 @@ function renderEmbeddedTool(toolName: string, lang: Lang, fach: string) {
             <span>{lang === "de" ? "Interaktives Werkzeug: MINT-Scaffold" : "交互教具：理科四步规范解题脚手架"}</span>
             <span className="text-[var(--text-meta)] text-[var(--gray)]">Bio</span>
           </div>
-          <FormulaScaffold lang={lang} />
+          <FormulaScaffold lang={lang} fach={fach} thema={thema} />
         </div>
       );
     }
@@ -206,7 +206,7 @@ function renderEmbeddedTool(toolName: string, lang: Lang, fach: string) {
             <span>{lang === "de" ? "Interaktives Werkzeug: MINT-Scaffold" : "交互教具：理科四步规范解题脚手架"}</span>
             <span className="text-[var(--text-meta)] text-[var(--gray)]">Chemie</span>
           </div>
-          <FormulaScaffold lang={lang} />
+          <FormulaScaffold lang={lang} fach={fach} thema={thema} />
         </div>
       );
     }
@@ -245,7 +245,7 @@ function renderEmbeddedTool(toolName: string, lang: Lang, fach: string) {
             <span>{lang === "de" ? "Interaktives Werkzeug: MINT-Scaffold" : "交互教具：理科四步规范解题脚手架"}</span>
             <span className="text-[var(--text-meta)] text-[var(--gray)]">Physik</span>
           </div>
-          <FormulaScaffold lang={lang} />
+          <FormulaScaffold lang={lang} fach={fach} thema={thema} />
         </div>
       );
     }
@@ -296,7 +296,7 @@ function renderEmbeddedTool(toolName: string, lang: Lang, fach: string) {
             <span>{lang === "de" ? "Interaktives Werkzeug: MINT-Scaffold" : "交互教具：理科四步规范解题脚手架"}</span>
             <span className="text-[var(--text-meta)] text-[var(--gray)]">Mathe</span>
           </div>
-          <FormulaScaffold lang={lang} />
+          <FormulaScaffold lang={lang} fach={fach} thema={thema} />
         </div>
       );
     }
@@ -459,6 +459,7 @@ export default function ReiseModule({
   const [activeCourse, setActiveCourse] = useState<Reise | null>(initialCourse);
   const [stepIdx, setStepIdx] = useState(0);
   const [activeDocStepIdx, setActiveDocStepIdx] = useState(0);
+  const lastActiveDocStepIdxRef = useRef<number>(0);
   const [viewMode, setViewMode] = useState<"document" | "steps">(initialViewMode);
   const rootContainerRef = useRef<HTMLDivElement>(null);
 
@@ -529,6 +530,7 @@ export default function ReiseModule({
       const timer = setTimeout(() => {
         scrollToContainerTop("instant");
       }, 50);
+      lastActiveDocStepIdxRef.current = 0;
       setActiveDocStepIdx(0);
       setStepIdx(0);
       return () => {
@@ -542,7 +544,10 @@ export default function ReiseModule({
   useEffect(() => {
     if (viewMode !== "document" || !activeCourse) return;
 
-    const handleScroll = () => {
+    let rafId: number | null = null;
+
+    const updateActiveStep = () => {
+      rafId = null;
       const schritte = activeCourse.schritte;
       if (!schritte || schritte.length === 0) return;
 
@@ -552,7 +557,11 @@ export default function ReiseModule({
       if (container) {
         const isNearBottom = container.scrollHeight - container.scrollTop - container.clientHeight < 80;
         if (isNearBottom) {
-          setActiveDocStepIdx(schritte.length - 1);
+          const lastIdx = schritte.length - 1;
+          if (lastActiveDocStepIdxRef.current !== lastIdx) {
+            lastActiveDocStepIdxRef.current = lastIdx;
+            setActiveDocStepIdx(lastIdx);
+          }
           return;
         }
       }
@@ -570,7 +579,16 @@ export default function ReiseModule({
         }
       }
 
-      setActiveDocStepIdx(currentIdx);
+      if (lastActiveDocStepIdxRef.current !== currentIdx) {
+        lastActiveDocStepIdxRef.current = currentIdx;
+        setActiveDocStepIdx(currentIdx);
+      }
+    };
+
+    const handleScroll = () => {
+      if (rafId === null) {
+        rafId = requestAnimationFrame(updateActiveStep);
+      }
     };
 
     // Capture phase intercepts scroll events from ANY scrollable container in the document
@@ -579,9 +597,12 @@ export default function ReiseModule({
     window.addEventListener("resize", handleScroll, { passive: true });
 
     // Initial evaluation
-    handleScroll();
+    updateActiveStep();
 
     return () => {
+      if (rafId !== null) {
+        cancelAnimationFrame(rafId);
+      }
       document.removeEventListener("scroll", handleScroll, { capture: true });
       window.removeEventListener("scroll", handleScroll);
       window.removeEventListener("resize", handleScroll);
@@ -989,7 +1010,7 @@ export default function ReiseModule({
             const raw = stepEnt.rawText || "";
             const match = /\[Werkzeug:\s*([a-zA-Z0-9_\-]+)\]/i.exec(raw);
             const tool = s.toolId || (match ? match[1] : null);
-            return tool ? renderEmbeddedTool(tool, lang, activeCourse.fach) : null;
+            return tool ? renderEmbeddedTool(tool, lang, activeCourse.fach, activeCourse.thema) : null;
           })()}
 
           {/* D2: KI-erklaerung (auto) + rueckfragen */}
@@ -1082,12 +1103,16 @@ export default function ReiseModule({
     if (s.typ === "ausprobieren") {
       const stepAus = s as SchrittAusprobieren;
       const aufgabe = stepAus.aufgabe || "";
-      const match = /\[Werkzeug:\s*([a-zA-Z0-9_\-]+)\]/i.exec(aufgabe);
       const cleanAufgabe = aufgabe.replace(/\[Werkzeug:\s*[a-zA-Z0-9_\-]+\]/gi, "").trim();
+      const toolMatch = /\[Werkzeug:\s*([a-zA-Z0-9_\-]+)\]/i.exec(aufgabe);
+      const isDuelStep =
+        s.stepNumber === 5 ||
+        cleanAufgabe.includes("VERGLEICH") ||
+        (s.title && s.title.toLowerCase().includes("duell"));
       const tool =
         stepAus.toolId ||
-        (match ? match[1] : null) ||
-        getAutoToolForContext(activeCourse.fach, activeCourse.thema);
+        (toolMatch ? toolMatch[1] : null) ||
+        (!isDuelStep && s.stepNumber === 4 ? getAutoToolForContext(activeCourse.fach, activeCourse.thema) : null);
 
       const curInput = isDoc ? getTryInput(s.stepNumber) : tryInput;
       const curImage = isDoc ? getTryImage(s.stepNumber) : tryImage;
@@ -1115,7 +1140,7 @@ export default function ReiseModule({
             {renderFormattedText(cleanAufgabe)}
           </div>
 
-          {tool && renderEmbeddedTool(tool, lang, activeCourse.fach)}
+          {tool && renderEmbeddedTool(tool, lang, activeCourse.fach, activeCourse.thema)}
 
           {stepAus.hilfe && (
             <div className="rounded-[var(--radius)] border border-[var(--line)] bg-[var(--paper-subtle)] p-3.5 space-y-2">
