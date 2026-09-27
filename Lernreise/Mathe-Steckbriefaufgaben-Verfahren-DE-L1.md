@@ -13,7 +13,7 @@ version: Lesson-v3
 
 # Lernreise: Steckbriefaufgaben: Bedingungen in Gleichungen (L1, Ziel Klausur)
 
-<!-- Campaign: Optimierung | Episode 27/33 | Krise: Fracht-Flugzeug Schwerpunkt 31 Prozent MAC | Zielgroessen: Ansatz ax^3+bx^2+cx+d mit 4 Bedingungen, Ziel Koeffizienten | Tool: box-optimizer -->
+<!-- Campaign: Optimierung | Episode 27/33 | Krise: Fracht-Flugzeug Schwerpunkt 31 Prozent MAC | Zielgroessen: Ansatz ax^3+bx^2+cx+d mit 4 Bedingungen, Ziel Koeffizienten | Tool: formula -->
 
 ## Schritt 1 — entdecken: Ebenen ueber dem Hafen
 ZIELE (drei messbare Ziele dieser Lektion):
@@ -91,7 +91,7 @@ Kontinuitaet: Vorher Mathe-Sekante-zu-Tangente-L1.md | Nachher Mathe-Steckbriefa
 
 BEISPIEL (Sandbox Level mit Werkzeug):
 
-[Werkzeug: box-optimizer]
+[Werkzeug: formula]
 
 AUFGABE (Levelziel, AFB II): Knacke das Steckbrief-Level: Stelle im Sandbox-Formelgeruest nacheinander die vier Bedingungen ein und beobachte, wie aus jeder Eigenschaft eine Gleichung und aus vier Gleichungen ein loesbares System wird. Lies jede erzeugte Gleichung ab, uebersetze Hochpunkt, Wendepunkt und Steigung, loese das System und fuehre die Probe durch. Benenne das Loesungsverfahren.
 

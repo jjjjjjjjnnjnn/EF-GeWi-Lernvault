@@ -13,7 +13,7 @@ version: Lesson-v3
 
 # Lernreise: Steckbriefaufgaben — Bedingungen in Gleichungen (L1, Ziel Klausur)
 
-<!-- Campaign: Optimierung | Episode 28/33 | Krise: Datenkabel-Latenz 47 ms Spike | Zielgroessen: Ansatz ax^3+bx^2+cx+d mit 4 Bedingungen, Ziel Koeffizienten | Tool: box-optimizer -->
+<!-- Campaign: Optimierung | Episode 28/33 | Krise: Datenkabel-Latenz 47 ms Spike | Zielgroessen: Ansatz ax^3+bx^2+cx+d mit 4 Bedingungen, Ziel Koeffizienten | Tool: formula -->
 
 ## Schritt 1 — entdecken: ZKE-Generalprobe I
 ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
@@ -36,10 +36,10 @@ PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→�
 中文在上，德语在下：
 
 - 一般式 — allgemeiner Ansatz：含全部待定系数的多项式形式，如 `f(x) = ax^3 + bx^2 + cx + d`。 Sein Grad folgt aus der hoechsten genannten Eigenschaft. Mechanismus: Allgemeines Polynom mit benannten Koeffizienten aufstellen. Klausur-Tipp: Gradwahl in einem Satz begruenden.
-- 待定系数 — Koeffizienten：尚未确定的常数 a, b, c, d，由条件解出。 Sie liefert zwei Gleichungen: Funktion und erste Ableitung. Mechanismus: f und f Strich an der Extremstelle auswerten. Klausur-Tipp: Stelle und Wert getrennt notieren.
-- 几何条件翻译 — Uebersetzung der Bedingungen：把点、斜率、极值等特征写成方程。 Punkt heisst Funktionswert, Extremum heisst Ableitung null. Mechanismus: Jede Eigenschaft Wort fuer Wort in Gleichungen uebersetzen. Klausur-Tipp: Uebersetzungen nummerieren und abhaken.
-- 线性方程组 — lineares Gleichungssystem (LGS)：把各条方程联立后求解系数。 Sie liefert zwei Gleichungen: erste und zweite Ableitung. Mechanismus: f Strich und f zwei Strich an der Wendestelle auswerten. Klausur-Tipp: Wendepunkt als vollen Punkt angeben.
-- 验算 — Probe：把解得的系数代回原条件，检查是否全部满足。 Vier Bedingungen fordern vier Gleichungen und ein Loesungsverfahren. Mechanismus: System per Einsetzen oder Matrix loesen. Klausur-Tipp: Loesungsweg auch bei Technologieeinsatz skizzieren.
+- 待定系数 — Koeffizienten：尚未确定的常数 a, b, c, d，由条件解出。 Sie sind die Unbekannten a, b, c, d und werden aus dem LGS bestimmt. Mechanismus: Unbekannte im Ansatz benennen und aus den Bedingungsgleichungen loesen. Klausur-Tipp: Unbekannte zuerst zaehlen und mit der Bedingungszahl vergleichen.
+- 几何条件翻译 — Uebersetzung der Bedingungen：把点、斜率、极值等特征写成方程。 Sie ordnet Punkte zu f, Steigungen zu f Strich und Kruemmung zu f zwei Strich zu. Mechanismus: Jede Eigenschaft Wort fuer Wort in Gleichungen uebersetzen. Klausur-Tipp: Uebersetzungen nummerieren und abhaken.
+- 线性方程组 — lineares Gleichungssystem (LGS)：把各条方程联立后求解系数。 Es verbindet alle Bedingungsgleichungen und liefert per Loesungsverfahren die Koeffizienten. Mechanismus: System per Einsetzen oder Matrix loesen. Klausur-Tipp: Loesungsweg auch bei Technologieeinsatz skizzieren.
+- 验算 — Probe：把解得的系数代回原条件，检查是否全部满足。 Sie setzt die Loesung in alle Ausgangsbedingungen ein und bestaetigt jede Gleichung. Mechanismus: Koeffizienten in Ansatz und Bedingungen einsetzen und jede Gleichung pruefen. Klausur-Tipp: Probe als eigenen letzten Schritt zeigen.
 
 `Klausur-Satz: Die Anzahl der unbekannten Koeffizienten muss der Anzahl der unabhaengigen Bedingungen entsprechen.`
 
@@ -77,7 +77,7 @@ Kontinuitaet: Vorher Mathe-Steckbriefaufgaben-Verfahren-DE-L1.md | Nachher Mathe
 
 BEISPIEL（正确例题示范，含教具操作与解答）：
 
-[Werkzeug: box-optimizer]
+[Werkzeug: formula]
 
 AUFGABE (bestimmen, AFB II)：Gesucht ist der Funktionsterm einer ganzrationalen Funktion dritten Grades, deren Graph die y-Achse bei y = 4 schneidet, an der Stelle x = 0 die Tangentensteigung -6 besitzt, an der Stelle x = 1 einen Wendepunkt hat und an der Stelle x = 1 eine Nullstelle besitzt.
 

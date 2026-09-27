@@ -13,7 +13,7 @@ version: Lesson-v3
 
 # Lernreise: Rekonstruktion mit Symmetriebedingungen (L2, Ziel Klausur)
 
-<!-- Campaign: Optimierung | Episode 24/33 | Krise: Tunnel-Lueftung CO 42 ppm | Zielgroessen: Ansatz ax^4+bx^2+c mit Punkten und Extrema, Ziel Koeffizienten | Tool: box-optimizer -->
+<!-- Campaign: Optimierung | Episode 24/33 | Krise: Tunnel-Lueftung CO 42 ppm | Zielgroessen: Ansatz ax^4+bx^2+c mit Punkten und Extrema, Ziel Koeffizienten | Tool: formula -->
 
 ## Schritt 1 — entdecken: Fahndung nach Koeffizienten
 ZIELE (3 Ziele, nach 20 Minuten erreichbar):
@@ -74,7 +74,7 @@ Kontinuitaet: Vorher Mathe-Rekonstruktion-Symmetrie-Bedingungen-CN-L2.md | Nachh
 
 BEISPIEL (vollstaendige Musterloesung):
 
-[Werkzeug: box-optimizer]
+[Werkzeug: formula]
 
 AUFGABE (berechnen, AFB II): Der Graph einer ganzrationalen Funktion vierten Grades ist achsensymmetrisch zur y-Achse, verlaeuft durch $A(0 \mid 1)$ und $B(1 \mid 0)$ und besitzt an der Stelle $x = 1$ eine waagerechte Tangente. Bestimmen Sie die Funktionsgleichung.
 

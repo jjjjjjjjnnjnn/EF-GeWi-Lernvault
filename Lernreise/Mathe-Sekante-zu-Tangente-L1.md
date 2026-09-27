@@ -15,7 +15,7 @@ version: Lesson-v3
 
 <!-- Campaign: Optimierung | Episode 26/33 | Krise: Gleis-Kruemmung Radius 310 m zu eng | Zielgroessen: f(x) = x^2, Stelle 3, Sekanten mit h gegen 0, Ziel 6 | Tool: tangent-slider -->
 
-## Schritt 1 — entdecken: Skalar-Jagd
+## Schritt 1 — entdecken: Sekante wird Tangente
 ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
 1. 中文：能说清割线斜率（平均变化率）与切线斜率（瞬时变化率）的几何区别——一个是跨区间的两点连线，一个是停在一点上的极限位置。
@@ -79,7 +79,7 @@ $$m_s = \frac{f(3+h)-f(3)}{h}\to m_t = 6$$
 
 **Bezug zum Konzept**: `Der Grenzuebergang von der schneidenden Sekante zur beruehrenden Tangente liefert die Ableitung.`
 
-## Schritt 4 — ausprobieren: Sandbox-Auftrag Skalar-Jagd
+## Schritt 4 — ausprobieren: Sandbox-Auftrag Sekante wird Tangente
 Kontinuitaet: Vorher Mathe-Sekante-zu-Tangente-DE-L1.md | Nachher Mathe-Steckbriefaufgaben-Verfahren-DE-L1.md. Krise dieser Episode: Gleis-Kruemmung Radius 310 m zu eng. Zielgroessen: f(x) = x^2, Stelle 3, Sekanten mit h gegen 0, Ziel 6
 
 BEISPIEL（正确例题示范，含教具操作与解答）：
@@ -97,7 +97,7 @@ MUSTERLÖSUNG: Es gilt f(3 + h) = (3 + h)^2 = 9 + 6h + h^2, also f(3 + h) - f(3)
 
 `Klausur-Satz: Der Grenzwert des Differenzenquotienten ergibt f'(3) = 6, waehrend die Sekantensteigung ueber [3; 5] den groesseren Wert 8 besitzt.`
 
-## Schritt 5 — ausprobieren: Duell der Verfahren Skalar-Jagd
+## Schritt 5 — ausprobieren: Duell der Verfahren Sekante wird Tangente
 VERGLEICH辨别实验（双向辨析：割线眼 vs. 切线眼）：
 
 VERGLEICH: (Weg A quantitativ-rechnerisch gegen Weg B qualitativ-strukturell): Waehle erst das Verfahren — 【选程序】先判断题目给的是 (i) Sekanten-Verfahren（一个区间、两点、平均变化率、Differenzenquotient）还是 (ii) Tangenten-Verfahren（一个 Stelle/Zeitpunkt、Momentanwert、Ableitung）—— dann rechnen.
@@ -115,7 +115,7 @@ ANTWORT: A erfordert Verfahren (i): v_mittel = 240 km / 4 h = 60 km/h; dies ist 
 
 `Klausur-Satz: Durchschnittsgeschwindigkeiten entsprechen Sekantensteigungen, Momentangeschwindigkeiten entsprechen Tangentensteigungen.`
 
-## Schritt 6 — check: Selbsttest zu Von der Sekante zur Tangente: Skalar-Jagd
+## Schritt 6 — check: Selbsttest zu Von der Sekante zur Tangente: Sekante wird Tangente
 CHECK检索默写（自测 3 题，与答案配对）：
 
 - FRAGE: Wie lautet der Differenzenquotient einer Funktion f im Intervall [x0; x0 + h]? | ANTWORT: m = (f(x0 + h) - f(x0)) / h, also die Steigung der Sekante durch die beiden Punkte.
@@ -136,14 +136,14 @@ CHECK检索默写（自测 3 题，与答案配对）：
    中文纠偏：极限过程不是代入。h 只是无限逼近 0，我们先把分子中公共的 h 约掉，得到一个在 h = 0 处有定义的表达式，再令 h 趋于 0，因此并不违反任何运算规则。
    Korrektur-Satz: `Beim Grenzuebergang wird der Differenzenquotient zuerst algebraisch gekuerzt, bevor h gegen 0 betrachtet wird.`
 
-## Schritt 7 — szenario: Klausurtransfer: Von der Sekante zur Tangente: Skalar-Jagd
+## Schritt 7 — szenario: Klausurtransfer: Von der Sekante zur Tangente: Sekante wird Tangente
 ROLLE: Du bist Tutorin in der EF und bereitest eine Mitschuelerin auf die ZKE vor.
 SITUATION: Deine Mitschuelerin hat mit dem GTR fuer f(x) = x^3 im Intervall [-1; 1] eine Durchschnittssteigung von 1 erhalten, ist aber verwirrt, weil die Tangente an der Stelle x = 0 waagerecht verlaeuft. Erklaere ihr in einer zusammenhaengenden Darstellung (ca. 150 Woerter) den Unterschied zwischen Sekante und Tangente und ordne beide Ergebnisse ein.
 RUBRIC (30 XP): Klare These zum Unterschied Sekante/Tangente (5 XP) | Korrekte Sekantenrechnung (f(1) - f(-1)) / 2 = 1 (10 XP) | Begruendung der Tangentensteigung f'(0) = 0 (10 XP) | Abschlussfazit mit Fachbegriffen (5 XP).
 
 `Klausur-Satz: Wer Sekantensteigung berechnet, Grenzprozess zeigt und Tangentensteigung deutet, erhaelt die volle Punktzahl.`
 
-## Schritt 8 — reflexion: Takeaway & Reflexion: Skalar-Jagd
+## Schritt 8 — reflexion: Takeaway & Reflexion: Sekante wird Tangente
 TAKEAWAY 1盒（核心总结）：
 
 中文：割线管区间、算平均；切线管一点、算瞬时。两者的桥就是差商加极限——先写 `(f(x0 + h) - f(x0)) / h`，约掉 h，再让 h 趋于 0，得到 f'(x0)。做题先看题干问的是"时间段/区间"还是"时刻/某点"：问区间选割线，问时刻选导数。记住一句话：平均是两点的连线，瞬时是一点的极限。

@@ -15,7 +15,7 @@ version: Lesson-v3
 
 <!-- Campaign: Optimierung | Episode 15/33 | Krise: Stromnetz-Frequenz 49,82 Hz instabil | Zielgroessen: f(x) = x^2, Stelle x0 = 3, h-Methode mit Ziel 6 | Tool: tangent-slider -->
 
-## Schritt 1 — entdecken: Skalarprodukt im Hangar
+## Schritt 1 — entdecken: h-Methode am Punkt
 ZIELE (3 Ziele, nach 15 Minuten erreichbar):
 
 1. Den Differenzenquotienten an einer festen Stelle $x_0$ aufstellen und algebraisch vereinfachen.
@@ -67,7 +67,7 @@ $$f'(x_0) = \lim_{h\to 0}\frac{f(x_0+h)-f(x_0)}{h}$$
 
 **Bezug zum Konzept**: `Die h-Methode vollzieht exakt diesen historischen Grenzgedanken an einer einzelnen Stelle nach.`
 
-## Schritt 4 — ausprobieren: Sandbox-Auftrag Skalarprodukt im Hangar
+## Schritt 4 — ausprobieren: Sandbox-Auftrag h-Methode am Punkt
 Kontinuitaet: Vorher Mathe-Grenzwert-h-Methode-Ableitung-Stelle-DE-L1.md | Nachher Mathe-Kosinussatz-Orthogonalitaet-CN-L1.md. Krise dieser Episode: Stromnetz-Frequenz 49,82 Hz instabil. Zielgroessen: f(x) = x^2, Stelle x0 = 3, h-Methode mit Ziel 6
 
 BEISPIEL (vollstaendige Musterloesung):
@@ -85,7 +85,7 @@ MUSTERLOESUNG: Es gilt $f(1) = 1$ und $f(1+h) = 2(1+h)^2 - (1+h) = 2 + 4h + 2h^2
 
 `Klausur-Satz: Mit der h-Methode folgt f'(1) = 3, also besitzt die Tangente im Punkt P die Steigung 3.`
 
-## Schritt 5 — ausprobieren: Duell der Verfahren Skalarprodukt im Hangar
+## Schritt 5 — ausprobieren: Duell der Verfahren h-Methode am Punkt
 VERGLEICH (zwei Verfahren, erst Verfahren waehlen, dann rechnen):
 
 VERGLEICH: (Weg A quantitativ-rechnerisch gegen Weg B qualitativ-strukturell): Waehle erst das Verfahren — (i) h-Methode an einer Stelle (AFB II mit Grenzwert, Vorgehen: Ansatz, Kuerzen, Limes) oder (ii) Ableitungsregel direkt (AFB I, nur Ergebnis nennen) — dann loesen.
@@ -104,7 +104,7 @@ ANTWORT: A erfordert Verfahren (i): $m(h) = ((2+h)^2 + 1 - 5)/h = (4h + h^2)/h =
 
 `Klausur-Satz: Die h-Methode und die Ableitungsregel liefern denselben Wert, doch nur die h-Methode belegt den Grenzprozess.`
 
-## Schritt 6 — check: Selbsttest zu Grenzwert mit der h-Methode an einer Stelle: Skalarprodukt im Hangar
+## Schritt 6 — check: Selbsttest zu Grenzwert mit der h-Methode an einer Stelle: h-Methode am Punkt
 CHECK (drei Fragen mit Antworten):
 
 - FRAGE: Wie lautet der Ansatz der h-Methode an der Stelle $x_0$? | ANTWORT: $m(h) = (f(x_0+h) - f(x_0))/h$ mit $h \ne 0$.
@@ -121,14 +121,14 @@ CHECK (drei Fragen mit Antworten):
 2. Fehlvorstellung: Sekantensteigung ueber ein Intervall und Ableitung an einer Stelle seien stets gleich.
    Korrektur-Satz: `Die Sekantensteigung mittelt ueber ein Intervall, die Ableitung erfasst die lokale Steigung an genau einer Stelle.`
 
-## Schritt 7 — szenario: Klausurtransfer: Grenzwert mit der h-Methode an einer Stelle: Skalarprodukt im Hangar
+## Schritt 7 — szenario: Klausurtransfer: Grenzwert mit der h-Methode an einer Stelle: h-Methode am Punkt
 ROLLE: Du bist Tutorin in der EF und erklaerst einer Mitschuelerin die h-Methode.
 SITUATION: Deine Mitschuelerin hat fuer $f(x) = x^2$ an der Stelle $x_0 = 3$ den Wert $6$ geraten, kann den Weg aber nicht zeigen. Stelle in einer zusammenhaengenden Darstellung (circa 150 Woerter) die vollstaendige h-Methode dar und deute das Ergebnis als Tangentensteigung.
 RUBRIC (30 XP): Korrekter Ansatz mit $h$ (8 XP) | Vollstaendige Umformung mit Kuerzen (10 XP) | Grenzwert $f'(3) = 6$ (6 XP) | Geometrische Deutung als Tangentensteigung (6 XP).
 
 `Klausur-Satz: Wer Differenzenquotient aufstellt, kuerzt, Grenzuebergang vollzieht und als Tangentensteigung deutet, erhaelt die volle Punktzahl.`
 
-## Schritt 8 — reflexion: Takeaway & Reflexion: Skalarprodukt im Hangar
+## Schritt 8 — reflexion: Takeaway & Reflexion: h-Methode am Punkt
 TAKEAWAY:
 
 Der enge Weg lautet: Ansatz mit $h$, ausmultiplizieren, $h$ kuerzen, erst dann $h \to 0$. Das Ergebnis $f'(x_0)$ ist die Tangentensteigung in $P$.

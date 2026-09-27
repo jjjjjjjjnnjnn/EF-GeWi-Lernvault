@@ -15,7 +15,7 @@ version: Lesson-v3
 
 <!-- Campaign: Optimierung | Episode 25/33 | Krise: Kran-Ausleger Biegemoment 96 kNm | Zielgroessen: f(x) = x^2, Stelle 3, Sekanten mit h gegen 0, Ziel 6 | Tool: tangent-slider -->
 
-## Schritt 1 — entdecken: Vektoren im Nebel
+## Schritt 1 — entdecken: Sekante wird Tangente
 ZIELE (drei messbare Ziele dieser Lektion):
 
 1. Du kannst Sekante als Gerade durch zwei Punkte und Tangente als Grenzlage fuer $h \to 0$ unterscheiden und je ein Bild skizzieren.
@@ -86,7 +86,7 @@ Das Wort Tangente kommt vom lateinischen $tangere$, beruehren, und Sekante von $
 
 Bezug zum Konzept: `Der Grenzuebergang von der schneidenden Sekante zur beruehrenden Tangente liefert die Ableitung.`
 
-## Schritt 4 — ausprobieren: Sandbox-Auftrag Vektoren im Nebel
+## Schritt 4 — ausprobieren: Sandbox-Auftrag Sekante wird Tangente
 Kontinuitaet: Vorher Mathe-Rekonstruktion-Symmetrie-Bedingungen-L2.md | Nachher Mathe-Sekante-zu-Tangente-L1.md. Krise dieser Episode: Kran-Ausleger Biegemoment 96 kNm. Zielgroessen: f(x) = x^2, Stelle 3, Sekanten mit h gegen 0, Ziel 6
 
 BEISPIEL (Sandbox Level mit Werkzeug):
@@ -104,7 +104,7 @@ MUSTERLOESUNG: Sandbox $h = 2{,}0$ liefert $m = 8$, $h = 1{,}0$ liefert $m = 7$,
 
 `Klausur-Satz: Der Grenzwert des Differenzenquotienten ergibt f'(3) = 6, waehrend die Sekantensteigung ueber [3; 5] den groesseren Wert 8 besitzt.`
 
-## Schritt 5 — ausprobieren: Duell der Verfahren Vektoren im Nebel
+## Schritt 5 — ausprobieren: Duell der Verfahren Sekante wird Tangente
 VERGLEICH (Wahl des Verfahrens, A gegen B):
 
 VERGLEICH: (Weg A quantitativ-rechnerisch gegen Weg B qualitativ-strukturell): Triff zuerst die Wahl des Verfahrens: (i) Sekanten-Verfahren (ein Intervall, zwei Punkte, mittlere Aenderungsrate mit Differenzenquotient) oder (ii) Tangenten-Verfahren (eine Stelle oder ein Zeitpunkt, Momentanwert mit Ableitung) > dann rechnen.
@@ -122,7 +122,7 @@ ANTWORT: A erfordert Verfahren (i): $v_{\text{mittel}} = 240\,\mathrm{km} / 4\,\
 
 `Klausur-Satz: Durchschnittsgeschwindigkeiten entsprechen Sekantensteigungen, Momentangeschwindigkeiten entsprechen Tangentensteigungen.`
 
-## Schritt 6 — check: Selbsttest zu Von der Sekante zur Tangente: Vektoren im Nebel
+## Schritt 6 — check: Selbsttest zu Von der Sekante zur Tangente: Sekante wird Tangente
 CHECK (drei Fragen mit Antworten):
 
 - FRAGE: Wie lautet der Differenzenquotient einer Funktion $f$ im Intervall $[x_0, x_0 + h]$? | ANTWORT: $m = (f(x_0 + h) - f(x_0)) / h$, also die Steigung der Sekante durch die beiden Punkte.
@@ -139,7 +139,7 @@ CHECK (drei Fragen mit Antworten):
 2. Fehlkonzept: Der Grenzuebergang $h \to 0$ setzt unerlaubt den Nenner null.
    Korrektur-Satz: `Beim Grenzuebergang wird der Differenzenquotient zuerst algebraisch gekuerzt, bevor h gegen 0 betrachtet wird.`
 
-## Schritt 7 — szenario: Klausurtransfer: Von der Sekante zur Tangente: Vektoren im Nebel
+## Schritt 7 — szenario: Klausurtransfer: Von der Sekante zur Tangente: Sekante wird Tangente
 ROLLE: Du bist Tutorin in der EF und bereitest eine Mitschuelerin auf die ZKE vor.
 SITUATION: Deine Mitschuelerin hat mit dem GTR fuer $f(x) = x^3$ im Intervall $[-1, 1]$ eine Durchschnittssteigung von $1$ erhalten, ist aber verwirrt, weil die Tangente an der Stelle $x = 0$ waagerecht verlaeuft. Erklaere ihr in einer zusammenhaengenden Darstellung (circa 150 Woerter) den Unterschied zwischen Sekante und Tangente und ordne beide Ergebnisse ein.
 AUFGABE (interpretieren, AFB III): Verfasse eine zusammenhaengende Darstellung von etwa 150 Woertern mit These, Sekantenrechnung, Tangentenbegruendung und Fazit.
@@ -147,7 +147,7 @@ RUBRIC (30 XP): Klare These zum Unterschied Sekante und Tangente (5 XP) | Korrek
 
 `Klausur-Satz: Wer Sekantensteigung berechnet, Grenzprozess zeigt und Tangentensteigung deutet, erhaelt die volle Punktzahl.`
 
-## Schritt 8 — reflexion: Takeaway & Reflexion: Vektoren im Nebel
+## Schritt 8 — reflexion: Takeaway & Reflexion: Sekante wird Tangente
 TAKEAWAY (Kernbotschaft in einem Kasten):
 
 Die Sekante gehoert zum Intervall und misst den Durchschnitt, die Tangente gehoert zum Punkt und misst den Moment. Die Bruecke bildet Differenzenquotient plus Grenzwert: erst $(f(x_0 + h) - f(x_0)) / h$ aufstellen, $h$ kuerzen, dann $h \to 0$ betrachten. Die Aufgabenstellung verraet das Verfahren: Intervall oder Zeitraum bedeuten Sekante, Zeitpunkt oder Stelle bedeuten Ableitung. Die Wortherkunft bestaetigt es: $secare$ schneidet, $tangere$ beruehrt.

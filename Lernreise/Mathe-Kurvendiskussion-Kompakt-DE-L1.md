@@ -13,9 +13,9 @@ version: Lesson-v3
 
 # Lernreise: Monotonie und Extrempunkte kompakt (L1, Ziel Klausur)
 
-<!-- Campaign: Optimierung | Episode 19/33 | Krise: Wasserrohr-Druck 5,4 bar Leck | Zielgroessen: f mit f'(x) = 3x^2-12x+9, Ziele Extrema bei 1 und 3 | Tool: box-optimizer -->
+<!-- Campaign: Optimierung | Episode 19/33 | Krise: Wasserrohr-Druck 5,4 bar Leck | Zielgroessen: f mit f'(x) = 3x^2-12x+9, Ziele Extrema bei 1 und 3 | Tool: formula -->
 
-## Schritt 1 — entdecken: Wendepunkt der Produktion
+## Schritt 1 — entdecken: Monotonie und Extrema
 ZIELE (drei messbare Ziele dieser Lektion):
 
 1. Du kannst das Monotoniekriterium nennen und an $f(x) = x^3 - 3x^2 + 1$ die Vorzeichentabelle von $f'(x) = 3x^2 - 6x$ aufstellen.
@@ -85,12 +85,12 @@ Stell dir vor, du stehst auf dem Gipfel eines kleinen Berges: Rundherum geht es 
 
 Bezug zum Konzept: `Ein Hochpunkt ist nur ein lokales Maximum; das globale Maximum muss nicht dort liegen.`
 
-## Schritt 4 — ausprobieren: Sandbox-Auftrag Wendepunkt der Produktion
+## Schritt 4 — ausprobieren: Sandbox-Auftrag Monotonie und Extrema
 Kontinuitaet: Vorher Mathe-Kosinussatz-Orthogonalitaet-L1.md | Nachher Mathe-Kurvendiskussion-Kompakt-L1.md. Krise dieser Episode: Wasserrohr-Druck 5,4 bar Leck. Zielgroessen: f mit f'(x) = 3x^2-12x+9, Ziele Extrema bei 1 und 3
 
 BEISPIEL (Sandbox Level mit Werkzeug):
 
-[Werkzeug: box-optimizer]
+[Werkzeug: formula]
 
 AUFGABE (Levelziel, AFB II): Knacke das Kurven-Level: Ziehe im Sandbox-Slider die Stelle $x$ ueber den Graphen und beobachte, wie die Tangentensteigung an zwei Stellen null wird und dazwischen das Vorzeichen wechselt. Lies beide Kandidaten ab, fuehre dann die Rechnung mit $f'=0$, Vorzeichentabelle und $f''$ vollständig durch und gib HP und TP mit Koordinaten an.
 
@@ -103,7 +103,7 @@ MUSTERLOESUNG: Sandbox zeigt Kandidaten bei $x = 1$ mit Wechsel plus nach minus 
 
 `Klausur-Satz: Der Graph besitzt bei x = 1 ein lokales Maximum mit HP(1 | 5) und bei x = 3 ein lokales Minimum mit TP(3 | 1).`
 
-## Schritt 5 — ausprobieren: Duell der Verfahren Wendepunkt der Produktion
+## Schritt 5 — ausprobieren: Duell der Verfahren Monotonie und Extrema
 VERGLEICH (Wahl des Verfahrens, A gegen B):
 
 VERGLEICH: (Weg A quantitativ-rechnerisch gegen Weg B qualitativ-strukturell): Triff zuerst die Wahl des Verfahrens: (i) $f''$-Kriterium (zweite Ableitung gut berechenbar und an der Stelle ungleich null) oder (ii) VZW-Kriterium (Vorzeichentabelle, wenn $f''(x_0) = 0$ gilt oder die zweite Ableitung zu aufwendig ist) > dann rechnen.
@@ -121,7 +121,7 @@ ANTWORT: A erfordert Verfahren (i): $f''(3) = 6 > 0$, also ein lokales Minimum (
 
 `Klausur-Satz: Ist f''(x0) ungleich 0, so entscheidet ihr Vorzeichen die Art; ist f''(x0) = 0, so muss der Vorzeichenwechsel von f' geprueft werden.`
 
-## Schritt 6 — check: Selbsttest zu Monotonie und Extrempunkte kompakt: Wendepunkt der Produktion
+## Schritt 6 — check: Selbsttest zu Monotonie und Extrempunkte kompakt: Monotonie und Extrema
 CHECK (drei Fragen mit Antworten):
 
 - FRAGE: Welche Bedingung ist notwendig fuer einen lokalen Extrempunkt? | ANTWORT: $f'(x_0) = 0$, das heisst eine waagerechte Tangente an der Stelle $x_0$.
@@ -138,7 +138,7 @@ CHECK (drei Fragen mit Antworten):
 2. Fehlkonzept: Eine positive Ableitung an einem einzelnen Punkt beweist globale Monotonie.
    Korrektur-Satz: `Monotonie ist eine Eigenschaft eines Intervalls; entscheidend ist das Vorzeichen von f' auf dem gesamten Intervall.`
 
-## Schritt 7 — szenario: Klausurtransfer: Monotonie und Extrempunkte kompakt: Wendepunkt der Produktion
+## Schritt 7 — szenario: Klausurtransfer: Monotonie und Extrempunkte kompakt: Monotonie und Extrema
 ROLLE: Du bist Referent in einem Mathe-Crashkurs fuer die ZKE-Vorbereitung.
 SITUATION: Ein Kursteilnehmer behauptet, jede Stelle mit $f'(x_0) = 0$ sei automatisch ein Hoch- oder Tiefpunkt, und will seine Behauptung an $f(x) = x^3$ (mit $f'(0) = 0$) belegen. Bewerte seine Aussage in einer zusammenhaengenden Darstellung (circa 150 Woerter) unter Rueckgriff auf notwendige und hinreichende Bedingung.
 AUFGABE (begruenden, AFB III): Verfasse eine zusammenhaengende Darstellung von etwa 150 Woertern mit Fehlerbenennung, Gegenbeispiel, Verfahren und Fazit.
@@ -146,7 +146,7 @@ RUBRIC (30 XP): Benennung der Behauptung als Verwechslung von notwendig und hinr
 
 `Klausur-Satz: Wer Extrema, Wendepunkte, Monotonie und y-Werte mit Bedingungen zeigt und deutet, erhaelt die volle Punktzahl.`
 
-## Schritt 8 — reflexion: Takeaway & Reflexion: Wendepunkt der Produktion
+## Schritt 8 — reflexion: Takeaway & Reflexion: Monotonie und Extrema
 TAKEAWAY (Kernbotschaft in einem Kasten):
 
 Die Monotonie folgt aus dem Vorzeichen von $f'$, Extrempunkte folgen dem Zwei-Schritt-Verfahren: $f'(x_0) = 0$ liefert Kandidaten, Vorzeichenwechsel oder $f''(x_0)$ liefern die Art, Einsetzen liefert die Punkte. Waagerechte Tangente allein beweist nichts, der Sattelpunkt ist das Gegenbeispiel. Globale Extrema verlangen den Vergleich aller lokalen Kandidaten mit den Intervallraendern.

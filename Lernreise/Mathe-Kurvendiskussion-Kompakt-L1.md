@@ -13,7 +13,7 @@ version: Lesson-v3
 
 # Lernreise: Monotonie und Extrempunkte kompakt (L1, Ziel Klausur)
 
-<!-- Campaign: Optimierung | Episode 20/33 | Krise: Hochhaus-Schwankung 22 cm Spitze | Zielgroessen: f mit f'(x) = 3x^2-12x+9, Ziele Extrema bei 1 und 3 | Tool: box-optimizer -->
+<!-- Campaign: Optimierung | Episode 20/33 | Krise: Hochhaus-Schwankung 22 cm Spitze | Zielgroessen: f mit f'(x) = 3x^2-12x+9, Ziele Extrema bei 1 und 3 | Tool: formula -->
 
 ## Schritt 1 — entdecken: Stau am Wendepunkt
 ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
@@ -35,11 +35,11 @@ PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→�
 
 中文在上，德语在下：
 
-- 单调递增 — monoton steigend：在该区间内 `f'(x) > 0`，图像自左向右上升。 Sie liefert Kandidaten, erst der Vorzeichenwechsel adelt sie zu Extrema. Mechanismus: Erste Ableitung null setzen und Kandidaten bestimmen. Klausur-Tipp: Kandidat und Extremum sprachlich trennen.
-- 单调递减 — monoton fallend：在该区间内 `f'(x) < 0`，图像自左向右下降。 Ihr Vorzeichen misst die Kruemmung und bestaetigt die Extremart. Mechanismus: Kandidaten in die zweite Ableitung einsetzen. Klausur-Tipp: Beide Kriterien nennen, eines davon ausfuehren.
-- 必要条件 — notwendige Bedingung：`f'(x0) = 0`，只是极值点的候选条件，单独不充分。 Zwischen den Extrema steigt oder faellt der Graph streng monoton. Mechanismus: Intervalle zwischen Nullstellen von f Strich testen. Klausur-Tipp: Intervalle mit Ungleichungsketten angeben.
-- 充分条件 — hinreichende Bedingung：`f''(x0) < 0` 为极大、`f''(x0) > 0` 为极小（或 f' 变号）。 Erst der y-Wert macht aus der Stelle einen vollstaendigen Punkt. Mechanismus: Extremstellen in f einsetzen und Punkte notieren. Klausur-Tipp: Punkte als Koordinatenpaare schreiben.
-- 符号表 — Vorzeichentabelle：把 f' 的零点排开、逐段判断正负，据此读出单调区间。 Wechsel von plus nach minus bedeutet Hochpunkt, umgekehrt Tiefpunkt. Mechanismus: Vorzeichen von f Strich links und rechts des Kandidaten pruefen. Klausur-Tipp: Vorzeichentabelle als Beleg beilegen.
+- 单调递增 — monoton steigend：在该区间内 `f'(x) > 0`，图像自左向右上升。 Sie bedeutet streng steigenden Graphen mit f Strich groesser null auf dem Intervall. Mechanismus: Vorzeichen von f Strich je Intervall bestimmen und als steigend deuten. Klausur-Tipp: Intervalle mit Ungleichungsketten plus Monotonie angeben.
+- 单调递减 — monoton fallend：在该区间内 `f'(x) < 0`，图像自左向右下降。 Sie bedeutet streng fallenden Graphen mit f Strich kleiner null auf dem Intervall. Mechanismus: Vorzeichen von f Strich je Intervall bestimmen und als fallend deuten. Klausur-Tipp: Fallende Intervalle getrennt mit f Strich begruenden.
+- 必要条件 — notwendige Bedingung：`f'(x0) = 0`，只是极值点的候选条件，单独不充分。 Sie liefert Kandidaten, erst der Vorzeichenwechsel adelt sie zu Extrema. Mechanismus: Erste Ableitung null setzen und Kandidaten bestimmen. Klausur-Tipp: Kandidat und Extremum sprachlich trennen.
+- 充分条件 — hinreichende Bedingung：`f''(x0) < 0` 为极大、`f''(x0) > 0` 为极小（或 f' 变号）。 Ihr Vorzeichen misst die Kruemmung und bestaetigt die Extremart. Mechanismus: Kandidaten in die zweite Ableitung einsetzen oder VZW pruefen. Klausur-Tipp: Beide Kriterien nennen, eines davon ausfuehren.
+- 符号表 — Vorzeichentabelle：把 f' 的零点排开、逐段判断正负，据此读出单调区间。 Sie listet das f-Strich-Vorzeichen je Intervall zwischen den Nullstellen. Mechanismus: Vorzeichen von f Strich links und rechts des Kandidaten pruefen. Klausur-Tipp: Vorzeichentabelle als Beleg beilegen.
 
 `Klausur-Satz: Die Monotonie ergibt sich aus dem Vorzeichen der ersten Ableitung, die Art des Extremums aus dem Vorzeichen der zweiten Ableitung.`
 
@@ -76,7 +76,7 @@ Kontinuitaet: Vorher Mathe-Kurvendiskussion-Kompakt-DE-L1.md | Nachher Mathe-Kur
 
 BEISPIEL（正确例题示范，含教具操作与解答）：
 
-[Werkzeug: box-optimizer]
+[Werkzeug: formula]
 
 AUFGABE (untersuchen, AFB II)：Gegeben ist f(x) = x^3 - 6x^2 + 9x + 1. Untersuchen Sie f rechnerisch auf Monotonie sowie auf lokale Extrempunkte und geben Sie Art und Koordinaten an.
 

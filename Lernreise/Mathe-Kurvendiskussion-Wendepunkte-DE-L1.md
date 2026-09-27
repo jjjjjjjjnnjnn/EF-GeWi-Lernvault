@@ -13,7 +13,7 @@ version: Lesson-v3
 
 # Lernreise: Kurvendiskussion und Wendepunkte (L1, Ziel Klausur)
 
-<!-- Campaign: Optimierung | Episode 21/33 | Krise: Eisenbahn-Weiche stellt 0,8 s zu langsam | Zielgroessen: f mit f''(x) = 6x-12, Ziel Wendepunkt bei 2 | Tool: box-optimizer -->
+<!-- Campaign: Optimierung | Episode 21/33 | Krise: Eisenbahn-Weiche stellt 0,8 s zu langsam | Zielgroessen: f mit f''(x) = 6x-12, Ziel Wendepunkt bei 2 | Tool: formula -->
 
 ## Schritt 1 — entdecken: Phantom der Symmetrie
 ZIELE (drei messbare Ziele dieser Lektion):
@@ -90,7 +90,7 @@ Kontinuitaet: Vorher Mathe-Kurvendiskussion-Kompakt-L1.md | Nachher Mathe-Kurven
 
 BEISPIEL (Sandbox Level mit Werkzeug):
 
-[Werkzeug: box-optimizer]
+[Werkzeug: formula]
 
 AUFGABE (Levelziel, AFB II): Knacke das Wende-Level: Ziehe im Sandbox-Slider die Stelle $x$ ueber den Graphen und beobachte, wie die Kruemmung von rechts nach links kippt und die Tangentensteigung dort minimal wird. Lies den Kandidaten ab, weise dann den Vorzeichenwechsel von $f''$ nach, berechne $W$ vollständig und stelle die Wendetangente auf.
 

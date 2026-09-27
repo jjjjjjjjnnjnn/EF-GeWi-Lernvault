@@ -37,9 +37,9 @@ PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→�
 
 - 免工具部分 — hilfsmittelfreier Teil (Teil A)：不用计算器、不用公式表，全部靠手算与记忆。 Dort zaehlen Kopfrechen-Tempo und Formelsicherheit ohne jeden Zettel. Mechanismus: Grundformeln auswendig abrufen und sauber anwenden. Klausur-Tipp: Jede Zeile hinschreiben, auch Kopfrechnung.
 - 工具部分 — Teil B mit Hilfsmitteln：可用 WTR 或 CAS，并配官方公式表，但过程必须完整书写。 Dort zaehlen Modellierung und Rechnerweg mit Dokumentation. Mechanismus: Ansatz per Hand, Rechnung mit Werkzeug, Deutung per Hand. Klausur-Tipp: Rechnereinsatz als Befehl protokollieren.
-- 平均变化率 — mittlere Aenderungsrate：区间上的差商，即割线斜率。 Sie ist die schnellste Ableitungsregel fuer ganzrationale Funktionen. Mechanismus: Exponenten senken und gliedweise ableiten. Klausur-Tipp: Auch im Teil B per Hand zeigen.
-- 瞬时变化率 — lokale Aenderungsrate：某点的导数值，即切线斜率。 Sie loest normierte quadratische Gleichungen in einer Zeile. Mechanismus: p und q ablesen und in die Formel einsetzen. Klausur-Tipp: Normierung auf x Quadrat zuerst sichern.
-- 呈现能力 — Darstellungsleistung：解答过程本身计分，答案对但过程缺失同样扣分。 Er misst Laengen und Abstaende auch in der Ebene. Mechanismus: Quadratsumme unter der Wurzel bilden. Klausur-Tipp: Wurzelterm bis zum Ende exakt lassen.
+- 平均变化率 — mittlere Aenderungsrate：区间上的差商，即割线斜率。 Sie ist die Sekantensteigung ueber ein sichtbares Intervall. Mechanismus: Differenz der Funktionswerte durch Differenz der Stellen teilen. Klausur-Tipp: Intervallgrenzen stets dazuschreiben.
+- 瞬时变化率 — lokale Aenderungsrate：某点的导数值，即切线斜率。 Sie ist die Tangentensteigung in genau einem Punkt als Grenzwert des Differenzenquotienten. Mechanismus: Grenzuebergang h gegen null nach dem Kuerzen vollziehen. Klausur-Tipp: Stelle als Index an der Rate vermerken.
+- 呈现能力 — Darstellungsleistung：解答过程本身计分，答案对但过程缺失同样扣分。 Sie verlangt den nachvollziehbaren Loesungsweg mit Ansatz, Rechnung und Antwortsatz. Mechanismus: Jeden Schritt als Satz mit Ansatz und Deutung dokumentieren. Klausur-Tipp: Rechenweg auch bei richtigem Ergebnis voll zeigen.
 
 `Klausur-Satz: In Teil A muessen Potenzregel, pq-Formel und Vektorlaenge ohne Hilfsmittel sicher beherrscht werden.`
 

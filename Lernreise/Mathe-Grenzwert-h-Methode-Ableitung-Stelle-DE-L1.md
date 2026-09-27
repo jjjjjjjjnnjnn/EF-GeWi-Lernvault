@@ -18,11 +18,9 @@ version: Lesson-v3
 ## Schritt 1 — entdecken: Ableitung um Mitternacht
 ZIELE (drei messbare Ziele dieser Lektion):
 
-1. Du kannst $m(h) = \frac{f(x_0+h)-f(x_0)}{h}$ mit $h \ne 0$ an $x_0 = 1$ fuer $f(x) = 2x^2 - x$ aufstellen und zu $m(h) = 3 + 2h$ vereinfachen.
-2. Du kannst $\lim_{h \to 0} m(h) = 3$ bilden und als $f'(1) = 3$ sowie als Tangentensteigung in $P(1, 1)$ deuten.
+1. Du kannst $m(h) = \frac{f(x_0+h)-f(x_0)}{h}$ mit $h \ne 0$ an $x_0 = 1$ fuer $f(x) = x^2$ aufstellen und zu $m(h) = 2 + h$ vereinfachen.
+2. Du kannst $\lim_{h \to 0} m(h) = 2$ bilden und als $f'(1) = 2$ sowie als Tangentensteigung in $P(1, 1)$ deuten.
 3. Du kannst begruenden, warum vor dem Einsetzen von $0$ gekuerzt werden muss, und den Antwortsatz im Sachkontext schreiben (AFB II).
-
-###
 
 ### Hook / Phaenomen
 
@@ -101,7 +99,7 @@ HILFE:
 
 MUSTERLOESUNG: Sandbox $h = 1{,}0$ liefert $m = 3$, $h = 0{,}5$ liefert $m = 2{,}5$, $h = 0{,}1$ liefert $m = 2{,}1$, die Tendenz zeigt $2$. Rechnung $f(1+h)-f(1) = 2h+h^2 = h(2+h)$, also $m(h) = 2+h$ fuer $h \ne 0$, mit $h \to 0$ folgt $f'(1) = 2$. Der verbotene Schritt waere $h = 0$ vor dem Kuerzen mit Ergebnis $0/0$. Die Tangente in P(1|1) besitzt die Steigung 2.
 
-`Klausur-Satz: Mit der h-Methode folgt f'(1) = 3, also besitzt die Tangente im Punkt P die Steigung 3.`
+`Klausur-Satz: Mit der h-Methode folgt f'(1) = 2, also besitzt die Tangente im Punkt P die Steigung 2.`
 
 ## Schritt 5 — ausprobieren: Duell der Verfahren Ableitung um Mitternacht
 VERGLEICH (Wahl des Verfahrens, A gegen B):

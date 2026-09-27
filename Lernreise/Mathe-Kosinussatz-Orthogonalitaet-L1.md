@@ -78,7 +78,7 @@ HILFE:
 2. Schritt 2: Nutze $\cos(60^\circ) = 0{,}5$ und berechne $c = \sqrt{c^2}$.
 3. Schritt 3: Pruefe $a^2 + b^2 = c^2$ fuer die Orthogonalitaetsfrage.
 
-MUSTERLOESUNG: Es gilt $c^2 = 25 + 49 - 2 \cdot 5 \cdot 7 \cdot 0{,}5 = 74 - 35 = 39$, also $c = \sqrt{39} \approx 6{,}24$. Da $25 + 36{,}98 \ne 49$ in jeder Paarung und $\gamma = 60^\circ \ne 90^\circ$ ist, liegt kein rechter Winkel vor. Das Dreieck ist spitzwinklig am Winkel $\gamma$.
+MUSTERLOESUNG: Es gilt $c^2 = 25 + 49 - 2 \cdot 5 \cdot 7 \cdot 0{,}5 = 74 - 35 = 39$, also $c = \sqrt{39} \approx 6{,}24$. Zur Orthogonalitaetsprobe gelten drei Pythagoras-Vergleiche: $a^2+b^2 = 74 \ne 39 = c^2$, $a^2+c^2 = 64 \ne 49 = b^2$ und $b^2+c^2 = 88 \ne 25 = a^2$; in keiner Paarung liegt Gleichheit vor, zudem ist $\gamma = 60^\circ \ne 90^\circ$. Das Dreieck ist spitzwinklig am Winkel $\gamma$.
 
 `Klausur-Satz: Einsetzen, Wurzel ziehen, Pythagoras-Probe anschliessen.`
 

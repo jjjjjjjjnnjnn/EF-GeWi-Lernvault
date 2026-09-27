@@ -18,7 +18,7 @@ version: Lesson-v3
 ## Schritt 1 — entdecken: Kurskorrektur
 ZIELE (drei messbare Ziele dieser Lektion):
 
-1. Du kannst mit $c^2 = a^2 + b^2 - 2ab\cos(\gamma)$ aus $a = 5$, $b = 7$, $\gamma = 60^\circ$ die Seite $c$ schrittweise zu $c \approx 6{,}08$ berechnen.
+1. Du kannst mit $c^2 = a^2 + b^2 - 2ab\cos(\gamma)$ aus $a = 5$, $b = 7$, $\gamma = 60^\circ$ die Seite $c$ schrittweise zu $c \approx 6{,}24$ berechnen.
 2. Du kannst den Kosinussatz als Pythagoras mit Korrektur erklaeren und $\gamma = 90^\circ$ mit $\cos(90^\circ) = 0$ einordnen.
 3. Du kannst mit $\cos(\gamma) = \frac{a^2+b^2-c^2}{2ab}$ an $3$-$4$-$5$ nachweisen, dass $\gamma = 90^\circ$ vorliegt (AFB II).
 
@@ -64,7 +64,7 @@ Oeffne die Sandbox aus Schritt 4, variiere die zentralen Parameter in kleinen Sc
 
 ### Aha-Moment & Gesetz
 
-Die Kausalkette laeuft von der Lage ueber die Formel zur Probe: Zuerst identifiziert man SWS oder SSS aus den gegebenen Stuecken, dann wendet man $c^2=a^2+b^2-2ab\cos(\gamma)$ an oder stellt nach dem Winkel um, schliesslich sichert man per Pythagoras-Probe ab. Das Vorzeichen von $\cos(\gamma)$ entscheidet ueber verkuerzt bei spitzem oder verlaengert bei stumpfem Winkel. Ohne Korrekturterm rechnet man fälschlich mit rechtem Winkel und verfehlt jede nicht-rechtwinklige Loesung.
+Die Kausalkette laeuft von der Lage ueber die Formel zur Probe: Zuerst identifiziert man SWS oder SSS aus den gegebenen Stuecken, dann wendet man $c^2=a^2+b^2-2ab\cos(\gamma)$ an oder stellt nach dem Winkel um, schliesslich sichert man per Pythagoras-Probe ab. Das Vorzeichen von $\cos(\gamma)$ entscheidet ueber verkuerzt bei spitzem oder verlaengert bei stumpfem Winkel. Ohne Korrekturterm rechnet man faelschlich mit rechtem Winkel und verfehlt jede nicht-rechtwinklige Loesung.
 
 ```diagram
 +------------------------------------------+

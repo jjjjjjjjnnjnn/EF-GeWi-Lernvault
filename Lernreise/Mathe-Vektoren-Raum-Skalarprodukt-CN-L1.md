@@ -35,11 +35,11 @@ PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→�
 
 中文在上，德语在下：
 
-- 空间向量 — Vektor im Raum：用三个坐标 $(x_1, x_2, x_3)$ 描述的有向线段。【陷阱：Vektor（向量）不是 Punkt（点），书写必须带箭头 $\vec{a}$。】 Er besitzt Richtung und Laenge, aber keinen festen Ort. Er besitzt Richtung und Laenge, aber keinen festen Ort. Mechanismus: Pfeil durch Koordinatentripel darstellen. Klausur-Tipp: Koordinaten als Spalte oder Zeile schreiben.
-- 点积（数量积） — Skalarprodukt：结果是标量（数字）而非向量，记作 $\vec{a} \cdot \vec{b}$。【陷阱：Skalarprodukt（点积，结果是数）不是 Vektorprodukt（叉积，结果是向量）。】 Es verdichtet zwei Vektoren zu einer einzigen Kooperationszahl. Es verdichtet zwei Vektoren zu einer einzigen Kooperationszahl. Mechanismus: Koordinatenweise multiplizieren und summieren. Klausur-Tipp: Summenformel vor dem Einsetzen hinschreiben.
-- 模长 — Betrag：向量长度 $|\vec{a}| = \sqrt{a_1^2 + a_2^2 + a_3^2}$。【陷阱：Betrag（长度恒非负）不是 Koordinate（坐标可为负）。】 Er misst die Laenge des Pfeils im Raum. Er misst die Laenge des Pfeils im Raum. Mechanismus: Koordinaten quadrieren, addieren und Wurzel ziehen. Klausur-Tipp: Wurzel erst am Ende numerisch auswerten
-- 夹角 — Winkel zwischen Vektoren：两向量起点重合时张开的角，范围 $0^\circ$ 至 $180^\circ$。【陷阱：Winkel（几何夹角恒取小角）不是 Richtung（方向角）。】 Sie loest den eingeschlossenen Winkel aus Skalarprodukt und Betraegen. Sie loest den eingeschlossenen Winkel aus Skalarprodukt und Betraegen. Mechanismus: Skalarprodukt durch Betragsprodukt teilen und arccos nehmen. Klausur-Tipp: Gradmass und Bogenmass sauber trennen.
-- 正交（垂直） — Orthogonalitaet：夹角为 $90^\circ$，等价于点积为零。【陷阱：orthogonal（垂直相交）与 parallel（平行）互斥，不可混用。】 Orthogonal heisst Skalarprodukt null bei Vektoren ungleich null. Orthogonal heisst Skalarprodukt null bei Vektoren ungleich null. Mechanismus: Skalarprodukt null setzen und pruefen. Klausur-Tipp: Nullvektor als Sonderfall ausschliessen.
+- 空间向量 — Vektor im Raum：用三个坐标 $(x_1, x_2, x_3)$ 描述的有向线段。【陷阱：Vektor（向量）不是 Punkt（点），书写必须带箭头 $\vec{a}$。】 Er besitzt Richtung und Laenge, aber keinen festen Ort. Mechanismus: Pfeil durch Koordinatentripel darstellen. Klausur-Tipp: Koordinaten als Spalte oder Zeile schreiben.
+- 点积（数量积） — Skalarprodukt：结果是标量（数字）而非向量，记作 $\vec{a} \cdot \vec{b}$。【陷阱：Skalarprodukt（点积，结果是数）不是 Vektorprodukt（叉积，结果是向量）。】 Es verdichtet zwei Vektoren zu einer einzigen Kooperationszahl. Mechanismus: Koordinatenweise multiplizieren und summieren. Klausur-Tipp: Summenformel vor dem Einsetzen hinschreiben.
+- 模长 — Betrag：向量长度 $|\vec{a}| = \sqrt{a_1^2 + a_2^2 + a_3^2}$。【陷阱：Betrag（长度恒非负）不是 Koordinate（坐标可为负）。】 Er misst die Laenge des Pfeils im Raum. Mechanismus: Koordinaten quadrieren, addieren und Wurzel ziehen. Klausur-Tipp: Wurzel erst am Ende numerisch auswerten
+- 夹角 — Winkel zwischen Vektoren：两向量起点重合时张开的角，范围 $0^\circ$ 至 $180^\circ$。【陷阱：Winkel（几何夹角恒取小角）不是 Richtung（方向角）。】 Sie loest den eingeschlossenen Winkel aus Skalarprodukt und Betraegen. Mechanismus: Skalarprodukt durch Betragsprodukt teilen und arccos nehmen. Klausur-Tipp: Gradmass und Bogenmass sauber trennen.
+- 正交（垂直） — Orthogonalitaet：夹角为 $90^\circ$，等价于点积为零。【陷阱：orthogonal（垂直相交）与 parallel（平行）互斥，不可混用。】 Orthogonal heisst Skalarprodukt null bei Vektoren ungleich null. Mechanismus: Skalarprodukt null setzen und pruefen. Klausur-Tipp: Nullvektor als Sonderfall ausschliessen.
 
 `Klausur-Satz: Das Skalarprodukt verbindet die Koordinatenform mit der geometrischen Form ueber den Kosinus des eingeschlossenen Winkels.`
 

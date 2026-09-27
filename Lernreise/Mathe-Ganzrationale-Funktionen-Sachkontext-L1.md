@@ -13,9 +13,9 @@ version: Lesson-v3
 
 # Lernreise: Ganzrationale Funktionen im Sachkontext (L1, Ziel Klausur)
 
-<!-- Campaign: Optimierung | Episode 12/33 | Krise: Kuehlhaus-Temperatur driftet auf -13,2 Grad | Zielgroessen: G(x) mit Break-even und Gewinnmaximum, Menge x in Stück | Tool: box-optimizer -->
+<!-- Campaign: Optimierung | Episode 12/33 | Krise: Kuehlhaus-Temperatur driftet auf -13,2 Grad | Zielgroessen: G(x) mit Break-even und Gewinnmaximum, Menge x in Stück | Tool: formula -->
 
-## Schritt 1 — entdecken: Grenzwert am Limit
+## Schritt 1 — entdecken: Gewinnzone im Sachkontext
 ZIELE (3条，本节20分钟学完能做到——先读中文，再记德语)：
 
 1. 中文：能把企业故事翻译成函数：收入 E(x)、成本 K(x)、利润 G(x)=E(x)-K(x)，x 为产量（ME），函数值为钱（GE），并写出 Definitionsmenge。
@@ -35,9 +35,9 @@ PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→�
 
 中文在上，德语在下：
 
-- 产量与货币单位 — Mengeneinheit (ME) und Geldeinheit (GE)：x in ME misst die Menge, f(x) in GE misst das Geld; jede Achse braucht Einheiten. Dort deckt der Erloes exakt die Kosten, der Gewinn ist null. Mechanismus: Gewinnfunktion null setzen und Nullstellen bestimmen. Klausur-Tipp: Beide Schnittpunkte oekonomisch deuten.
-- 收入函数 — Erloesfunktion E(x)：Verkaufserloes in Abhaengigkeit von der Menge, oft linear wie E(x) = p mal x. Dort bringt eine weitere Einheit weniger Gewinn als sie kostet. Mechanismus: Erste Ableitung null setzen und Maximum per Vorzeichen sichern. Klausur-Tipp: Maximale Menge plus maximaler Gewinn angeben.
-- 成本函数 — Kostenfunktion K(x)：Gesamtkosten aus fixen plus variablen Anteilen, oft ganzrational dritten Grades. Jede Zahl braucht Einheit und Bezug zur Sachsituation. Mechanismus: Mathematisches Ergebnis in Kontextsprache uebersetzen. Klausur-Tipp: Deutungssatz mit weil-Begruendung schliessen.
+- 产量与货币单位 — Mengeneinheit (ME) und Geldeinheit (GE)：x in ME misst die Menge, f(x) in GE misst das Geld; jede Achse braucht Einheiten. x in ME zaehlt die Stuecke, f(x) in GE zaehlt das Geld. Mechanismus: Achsen mit ME und GE beschriften und D festlegen. Klausur-Tipp: Einheiten bei jedem Wert mitfuehren.
+- 收入函数 — Erloesfunktion E(x)：Verkaufserloes in Abhaengigkeit von der Menge, oft linear wie E(x) = p mal x. Er waechst proportional zur Menge mit Preis p als Steigung. Mechanismus: Preis mal Menge als Gerade ansetzen. Klausur-Tipp: E(x)-Term mit Preis und Einheit nennen.
+- 成本函数 — Kostenfunktion K(x)：Gesamtkosten aus fixen plus variablen Anteilen, oft ganzrational dritten Grades. Sie addiert Fixkosten und variable Kosten zu einer S-Kurve. Mechanismus: Fixkosten plus variable Kosten gliedweise addieren. Klausur-Tipp: K(x)-Term mit Gradbegruendung nennen.
 - 利润函数 — Gewinnfunktion G(x)：G(x) = E(x) - K(x); G(x) > 0 bedeutet Gewinnzone, G(x) = 0 bedeutet Break-even. Sie entsteht als Erloes minus Kosten und traegt die Einheit Euro. Mechanismus: Erloesfunktion minus Kostenfunktion gliedweise bilden. Klausur-Tipp: Funktionsterm plus Einheit in der Antwort nennen.
 - 现实定义域 — Sachnahe Definitionsmenge：z. B. D = [0; 20] ME aus Kapazitaet; Rechnung ausserhalb von D ist oekonomisch sinnlos. Negative Stueckzahlen sind oekonomisch sinnlos und werden ausgeschlossen. Mechanismus: Sinnvolle Grenzen aus dem Kontext ablesen. Klausur-Tipp: Definitionsmenge vor der Rechnung festlegen.
 
@@ -83,7 +83,7 @@ Kontinuitaet: Vorher Mathe-Ganzrationale-Funktionen-Sachkontext-DE-L1.md | Nachh
 
 BEISPIEL（正确例题示范，含教具操作与解答）：
 
-[Werkzeug: box-optimizer]
+[Werkzeug: formula]
 
 AUFGABE (berechnen, AFB II)：Gegeben sind E(x) = 12x und K(x) = 0.5x^3 - 6x^2 + 26x + 8 auf D = [0; 12] (x in ME, Werte in GE). Bestimmen Sie die Gewinnfunktion G(x), die Break-even-Punkte und die gewinnmaximale Menge.
 

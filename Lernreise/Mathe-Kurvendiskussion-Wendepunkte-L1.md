@@ -13,9 +13,9 @@ version: Lesson-v3
 
 # Lernreise: Kurvendiskussion und Wendepunkte (L1, Ziel Klausur)
 
-<!-- Campaign: Optimierung | Episode 22/33 | Krise: Logistik-Drohne Akku nur 14 Minuten | Zielgroessen: f mit f''(x) = 6x-12, Ziel Wendepunkt bei 2 | Tool: box-optimizer -->
+<!-- Campaign: Optimierung | Episode 22/33 | Krise: Logistik-Drohne Akku nur 14 Minuten | Zielgroessen: f mit f''(x) = 6x-12, Ziel Wendepunkt bei 2 | Tool: formula -->
 
-## Schritt 1 — entdecken: Geheimakte Rekonstruktion
+## Schritt 1 — entdecken: Wendepunkt und Wendetangente
 ZIELE (3条，本节20分钟学完能做到——先读中文，再记德语)：
 
 1. 中文：能说清拐点的几何含义——曲线凹凸性改变的地方，流行病曲线上就是新增病例从加速变为减速的转折时刻。
@@ -79,12 +79,12 @@ $$f''(x_W) = 0,\quad f'''(x_W)\ne 0$$
 
 **Bezug zum Konzept**: `Der Wendepunkt der kumulierten Kurve markiert das Maximum des Tageszuwachses und den Wechsel der Kruemmung.`
 
-## Schritt 4 — ausprobieren: Sandbox-Auftrag Geheimakte Rekonstruktion
+## Schritt 4 — ausprobieren: Sandbox-Auftrag Wendepunkt und Wendetangente
 Kontinuitaet: Vorher Mathe-Kurvendiskussion-Wendepunkte-DE-L1.md | Nachher Mathe-Rekonstruktion-Symmetrie-Bedingungen-CN-L2.md. Krise dieser Episode: Logistik-Drohne Akku nur 14 Minuten. Zielgroessen: f mit f''(x) = 6x-12, Ziel Wendepunkt bei 2
 
 BEISPIEL（正确例题示范，含教具操作与解答）：
 
-[Werkzeug: box-optimizer]
+[Werkzeug: formula]
 
 AUFGABE (analysieren, AFB II)：Gegeben ist f(x) = x^3 - 6x^2 + 9x + 1. Bestimmen Sie alle Wendepunkte und die Gleichung der Wendetangente.
 
@@ -97,7 +97,7 @@ MUSTERLÖSUNG / MUSTERLOESUNG: Es gilt f'(x) = 3x^2 - 12x + 9, f''(x) = 6x - 12,
 
 `Klausur-Satz: Mit f''(2) = 0, f'''(2) ungleich 0 und W(2 | 3) besitzt f dort einen Wendepunkt mit Tangente y = -3x + 9.`
 
-## Schritt 5 — ausprobieren: Duell der Verfahren Geheimakte Rekonstruktion
+## Schritt 5 — ausprobieren: Duell der Verfahren Wendepunkt und Wendetangente
 VERGLEICH辨别实验（真拐点 vs. 假拐点）：
 
 VERGLEICH: (Weg A quantitativ-rechnerisch gegen Weg B qualitativ-strukturell): Wähle erst / Waehele erst das Verfahren — 【选程序】先判断属于 (i) Wende-Test（f''(x)=0 + VZW 或 f'''，再加 y-Wert 与 Kruemmung-Deutung）还是 (ii) Nur-Stationaer-Test（只看 f'(x)=0，管极值不管凹凸）—— dann lösen.
@@ -115,7 +115,7 @@ ANTWORT: A erfordert Verfahren (i): g'(x) = 4x^3, g''(x) = 12x^2, g''(0) = 0, ab
 
 `Klausur-Satz: Ohne Vorzeichenwechsel von f'' liegt kein Wendepunkt vor, wie g(x) = x^4 an der Stelle x = 0 zeigt.`
 
-## Schritt 6 — check: Selbsttest zu Kurvendiskussion und Wendepunkte: Geheimakte Rekonstruktion
+## Schritt 6 — check: Selbsttest zu Kurvendiskussion und Wendepunkte: Wendepunkt und Wendetangente
 CHECK检索默写（自测 3 题，与答案配对）：
 
 - FRAGE: Wie lautet die notwendige und die hinreichende Bedingung fuer einen Wendepunkt? | ANTWORT: Notwendig ist f''(x_W) = 0, hinreichend ist ein Vorzeichenwechsel von f'' oder f'''(x_W) ungleich 0.
@@ -136,7 +136,7 @@ CHECK检索默写（自测 3 题，与答案配对）：
    中文纠偏：Wendepunkt 是点，必须写 W(x|y)。Wendetangente 是 Klausur 常问第二问，直接用点斜式 y = f'(x_W)(x-x_W)+f(x_W)。只写 x_W 会丢坐标分，漏切线会丢整问。
    Korrektur-Satz: `Ein Wendepunkt verlangt beide Koordinaten und bei Bedarf die Gleichung der Wendetangente.`
 
-## Schritt 7 — szenario: Klausurtransfer: Kurvendiskussion und Wendepunkte: Geheimakte Rekonstruktion
+## Schritt 7 — szenario: Klausurtransfer: Kurvendiskussion und Wendepunkte: Wendepunkt und Wendetangente
 ROLLE: Du bist Daten-Assistent im Gesundheitsamt.
 SITUATION: Die kumulierten Meldungen folgen k(t) = -0.05t^3 + 2.4t^2 + 100 (t in Tagen seit Ausbruch, k in Faellen). Der Stab fragt, wann der Tageszuwachs am groessten war und ab wann die Massnahmen sichtbar wirken. Erstelle eine Analyse (ca. 150 Woerter) mit Rechnung, Wendetangente und Deutung fuer die Presse.
 AUFGABE (interpretieren, AFB III)：Bestimme den Wendepunkt, erklaere seine Bedeutung als Peak des Zuwachses und beurteile Grenzen des Modells.
@@ -144,7 +144,7 @@ RUBRIC (30 XP): Ableitungen plus x_W korrekt (5 XP) | Nachweis per VZW oder f'''
 
 `Klausur-Satz: Wer Wendekandidat, Vorzeichenwechsel, Punkt und Wendetangente zeigt, erhaelt die volle Punktzahl.`
 
-## Schritt 8 — reflexion: Takeaway & Reflexion: Geheimakte Rekonstruktion
+## Schritt 8 — reflexion: Takeaway & Reflexion: Wendepunkt und Wendetangente
 TAKEAWAY 1盒（核心总结）：
 
 中文：拐点 = 凹凸切换点。流程固定四步：解 f''=0、验变号（VZW 或 f'''）、算 y 值、写切线。x^4 提醒你：不变号就不是拐点。应用题里拐点就是增速峰，日增最大处。记住口诀：零、变、点、线——零点、变号、点坐标、切线。

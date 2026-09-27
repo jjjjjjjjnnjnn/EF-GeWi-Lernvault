@@ -13,7 +13,7 @@ version: Lesson-v3
 
 # Lernreise: Rekonstruktion mit Symmetrie und passenden Bedingungen (L2, Ziel Klausur)
 
-<!-- Campaign: Optimierung | Episode 23/33 | Krise: Hafenbecken-Tide plus 68 cm | Zielgroessen: Ansatz ax^4+bx^2+c mit Punkten und Extrema, Ziel Koeffizienten | Tool: box-optimizer -->
+<!-- Campaign: Optimierung | Episode 23/33 | Krise: Hafenbecken-Tide plus 68 cm | Zielgroessen: Ansatz ax^4+bx^2+c mit Punkten und Extrema, Ziel Koeffizienten | Tool: formula -->
 
 ## Schritt 1 — entdecken: Steckbrief des Täters
 ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
@@ -77,7 +77,7 @@ Kontinuitaet: Vorher Mathe-Kurvendiskussion-Wendepunkte-L1.md | Nachher Mathe-Re
 
 BEISPIEL（正确例题示范，含教具操作与解答）：
 
-[Werkzeug: box-optimizer]
+[Werkzeug: formula]
 
 AUFGABE (berechnen, AFB II)：Der Graph einer ganzrationalen Funktion 3. Grades ist punktsymmetrisch zum Ursprung, verlaeuft durch $P(1|2)$ und besitzt an der Stelle $x = 2$ einen Extrempunkt. Bestimmen Sie den Funktionsterm.
 
