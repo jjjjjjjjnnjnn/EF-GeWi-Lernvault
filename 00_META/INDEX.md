@@ -43,7 +43,7 @@
 - **S8 笔记生产** — [施工宪法/波次台账](Lernbaum/00-Notenproduktion-Plan.md) · [**S8 新增笔记索引（224 篇，按学科）**](S8-Noten-Index.md) · 模板：[Wissensnotiz-Template](../Templates/Wissensnotiz-Template.md) · 官方源（本地 `_Downloads/`，不进 git）：[Download-Quellen](Download-Quellen.md)
 - **阻塞项** — [**Blocker-Register（统一台账，唯一真相源）**](Blocker-Register.md) · [**Lehrkraft-Anfragen（可直接转发的德语问询稿）**](Lehrkraft-Anfragen.md)
 - **四套 Abitur 任务包（P1–P4，共 22 份）** — [**Pruefungspakete-Uebersicht（总入口：80:20 BE 口径 + 15 分换算表 + 三轮打法）**](Pruefungspakete-Uebersicht.md)
-- **全新视觉/UI重构共创** — [**UI-Redesign-Exploration-and-External-AI-Brief（外部 AI 自由设计任务书与 5 大范式规范）**](UI-Redesign-Exploration-and-External-AI-Brief.md) · [**UI-Interactive-Game-Design-Plan（十科课程交互游戏化设计与外部 AI 任务分配总纲）**](UI-Interactive-Game-Design-Plan.md) · [**PROJECT-DESIGN-GUIDELINES（项目设计方案与架构策略全景指南，AI复刻与扩展必读）**](../PROJECT-DESIGN-GUIDELINES.md) · [**PHET-CONVERSION-BATCH-SOP（PhET 仿真器批量重构与外部 AI 自审核手册）**](PHET-CONVERSION-BATCH-SOP.md)
+- **全新视觉/UI重构共创** — [**UI-Redesign-Exploration-and-External-AI-Brief（外部 AI 自由设计任务书与 5 大范式规范）**](UI-Redesign-Exploration-and-External-AI-Brief.md) · [**UI-Interactive-Game-Design-Plan（十科课程交互游戏化设计与外部 AI 任务分配总纲）**](UI-Interactive-Game-Design-Plan.md) · [**PROJECT-DESIGN-GUIDELINES（项目设计方案与架构策略全景指南，AI复刻与扩展必读）**](../PROJECT-DESIGN-GUIDELINES.md) · [**PHET-CONVERSION-BATCH-SOP（PhET 仿真器批量重构与外部 AI 自审核手册）**](PHET-CONVERSION-BATCH-SOP.md) · [**GEISTESWISSENSCHAFTEN-INTERACTIVE-PEDAGOGY-PLAN（文科交互教学调研与 GeWi-Labor 24款工坊总纲）**](GEISTESWISSENSCHAFTEN-INTERACTIVE-PEDAGOGY-PLAN.md)
 
 ## 考试包 P1–P4（2026-09-26 入库，共 22 份）
 
