@@ -9,6 +9,8 @@ export type ModuleId =
   | "mindmap"
   | "lernbaum"
   | "reise"
+  | "labor"
+  | "designlab"
   | "werkzeuge"
   | "einstellungen";
 
@@ -167,6 +169,22 @@ export const MODULE_KEYS: readonly ModuleKeyBinding[] = [
     keys: "Alt B",
     altHint: "Alt B",
     label: { de: "Lernbaum", zh: "学习树" },
+  },
+  {
+    id: "module-labor",
+    module: "labor",
+    match: { key: "l", code: "KeyL", alt: true },
+    keys: "Alt L",
+    altHint: "Alt L",
+    label: { de: "Labor", zh: "探索实验" },
+  },
+  {
+    id: "module-designlab",
+    module: "designlab",
+    match: { key: "d", code: "KeyD", alt: true },
+    keys: "Alt D",
+    altHint: "Alt D",
+    label: { de: "Design-Lab", zh: "设计展厅" },
   },
   {
     id: "module-werkzeuge",
@@ -349,6 +367,8 @@ export const PER_MODULE_KEYS: Readonly<Record<LearnModuleId, readonly KeyBinding
       label: { de: "Szenario-Timer starten / stoppen", zh: "场景计时开始/停止" },
     },
   ],
+  labor: [],
+  designlab: [],
   werkzeuge: [],
 };
 

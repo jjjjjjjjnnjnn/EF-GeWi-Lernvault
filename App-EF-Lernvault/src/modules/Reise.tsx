@@ -28,22 +28,26 @@ import {
 import { setFeedbackContext } from "../components/FeedbackBox";
 import { xpStore, type XpData } from "../engine/stores";
 import { PER_MODULE_KEYS, isTyping, matchesKey } from "../keys";
+import { restoreGermanUmlauts } from "../utils/germanOrthography";
 import type { Lang } from "../i18n";
 import { SatzbauLego } from "../components/pedagogy/SatzbauLego";
-import { BalanceBoard } from "../components/pedagogy/BalanceBoard";
-import { TextHighlighter } from "../components/pedagogy/TextHighlighter";
 import { TangentSlider } from "../components/pedagogy/TangentSlider";
 import FormulaScaffold from "../components/pedagogy/FormulaScaffold";
 import OralExamTimer from "../components/pedagogy/OralExamTimer";
-import { MarktMechanismusSim } from "../components/pedagogy/MarktMechanismusSim";
 import { KinematikSim } from "../components/pedagogy/KinematikSim";
 import { OsmoseSimulator } from "../components/pedagogy/OsmoseSimulator";
-import { GleichgewichtSimulator } from "../components/pedagogy/GleichgewichtSimulator";
-import { TitrationSimulator } from "../components/pedagogy/TitrationSimulator";
-import { BoxOptimizerSim } from "../components/pedagogy/BoxOptimizerSim";
 import { SchiefeEbeneSim } from "../components/pedagogy/SchiefeEbeneSim";
 import { GiniAllocatorSim } from "../components/pedagogy/GiniAllocatorSim";
 import ImageAnswerUpload from "../components/ImageAnswerUpload";
+import { DilemmaTheatre } from "../components/pedagogy/DilemmaTheatre";
+import { HaberBoschLab } from "../components/pedagogy/HaberBoschLab";
+import { OpticsBench } from "../components/pedagogy/OpticsBench";
+import { TitrationLab } from "../components/pedagogy/TitrationLab";
+import { BoxOptimizerLab } from "../components/pedagogy/BoxOptimizerLab";
+import { MarktWelfareLab } from "../components/pedagogy/MarktWelfareLab";
+import { EditorialReader } from "../components/pedagogy/EditorialReader";
+import { BentoMastery } from "../components/pedagogy/BentoMastery";
+import { SowiDepotLecture } from "../components/pedagogy/SowiDepotLecture";
 
 function CheckMarkSvg() {
   return (
@@ -224,20 +228,27 @@ function renderEmbeddedTool(toolName: string, lang: Lang, fach: string, thema?: 
     if (t === "titration" || t === "titration-lab" || t === "saeure-base") {
       return (
         <div className="my-3 p-3.5 border border-[var(--line)] bg-[var(--surface)] rounded-[var(--radius)]">
-          <TitrationSimulator lang={lang} />
+          <TitrationLab lang={lang} />
         </div>
       );
     }
-    // Default & specific for Chemie: GleichgewichtSimulator
+    // Default & specific for Chemie: HaberBoschLab (60FPS particle collision & piston dynamics)
     return (
       <div className="my-3 p-3.5 border border-[var(--line)] bg-[var(--surface)] rounded-[var(--radius)]">
-        <GleichgewichtSimulator lang={lang} />
+        <HaberBoschLab lang={lang} />
       </div>
     );
   }
 
   // 3. PHYSIK GUARDS & TOOLS
   if (f.includes("physik")) {
+    if (t === "optik" || t === "optics" || t === "snell" || t === "brechung" || t === "reflexion" || t === "licht" || t === "laser") {
+      return (
+        <div className="my-3 p-3.5 border border-[var(--line)] bg-[var(--surface)] rounded-[var(--radius)]">
+          <OpticsBench lang={lang} />
+        </div>
+      );
+    }
     if (t === "formula" || t === "formel" || t === "mint") {
       return (
         <div className="my-3 p-3.5 border border-[var(--line)] bg-[var(--surface)] rounded-[var(--radius)]">
@@ -281,11 +292,11 @@ function renderEmbeddedTool(toolName: string, lang: Lang, fach: string, thema?: 
 
   // 4. MATHEMATIK TOOLS
   if (f.includes("mathe")) {
-    // box-optimizer FIRST (BoxOptimizerSim; must precede formula branch)
+    // box-optimizer FIRST (BoxOptimizerLab; must precede formula branch)
     if (t === "box-optimizer" || t === "box" || t === "optimizer" || t === "extremwert") {
       return (
         <div className="my-3 p-3.5 border border-[var(--line)] bg-[var(--surface)] rounded-[var(--radius)]">
-          <BoxOptimizerSim lang={lang} />
+          <BoxOptimizerLab lang={lang} />
         </div>
       );
     }
@@ -312,16 +323,26 @@ function renderEmbeddedTool(toolName: string, lang: Lang, fach: string, thema?: 
     );
   }
 
-  // 5. SOWI & PHILO TOOLS (BalanceBoard is STRICTLY restricted here)
+  // 5. SOWI & PHILO TOOLS (MarktWelfareLab + DilemmaTheatre)
   if (f.includes("sowi") || f.includes("philo") || f.includes("philosophie")) {
-    if (t === "markt" || t === "markt-sim" || t === "marktwirtschaft" || t === "preisbildung" || t === "angebot" || t === "nachfrage") {
+    if (t === "markt" || t === "markt-sim" || t === "marktwirtschaft" || t === "preisbildung" || t === "angebot" || t === "nachfrage" || t === "welfare" || t === "wohlfahrt") {
       return (
         <div className="my-3 p-3.5 border border-[var(--line)] bg-[var(--surface)] rounded-[var(--radius)]">
-          <div className="flex items-center justify-between text-xs font-mono text-[var(--accent)] mb-2 font-medium">
-            <span>{lang === "de" ? "Interaktives Werkzeug: Markt-Simulator" : "交互教具：供求均衡与价格形成沙盘"}</span>
-            <span className="text-[var(--text-meta)] text-[var(--gray)]">SoWi (Wirtschaft)</span>
-          </div>
-          <MarktMechanismusSim lang={lang} />
+          <MarktWelfareLab lang={lang} />
+        </div>
+      );
+    }
+    if (t === "dilemma" || t === "ethik" || t === "trolley" || t === "kant" || t === "bentham" || t === "konflikt") {
+      return (
+        <div className="my-3 p-3.5 border border-[var(--line)] bg-[var(--surface)] rounded-[var(--radius)]">
+          <DilemmaTheatre lang={lang} scenarioId={f.includes("sowi") ? "sowi-mindestlohn" : "philo-trolley"} />
+        </div>
+      );
+    }
+    if (t === "depot" || t === "orderarten" || t === "orderbuch" || t === "wertpapier" || t === "aktien" || t === "boerse" || t === "anleger" || (f.includes("sowi") && (thema?.includes("depot") || thema?.includes("wertpapier") || thema?.includes("aktie") || thema?.includes("finanz")))) {
+      return (
+        <div className="my-4 w-full">
+          <SowiDepotLecture lang={lang} />
         </div>
       );
     }
@@ -345,17 +366,27 @@ function renderEmbeddedTool(toolName: string, lang: Lang, fach: string, thema?: 
     }
     return (
       <div className="my-3 p-3.5 border border-[var(--line)] bg-[var(--surface)] rounded-[var(--radius)]">
-        <div className="flex items-center justify-between text-xs font-mono text-[var(--accent)] mb-2 font-medium">
-          <span>{lang === "de" ? "Interaktives Werkzeug: Urteils-Waage" : "交互教具：辩证价值裁决天平"}</span>
-          <span className="text-[var(--text-meta)] text-[var(--gray)]">SoWi & Philo</span>
-        </div>
-        <BalanceBoard lang={lang} />
+        <DilemmaTheatre lang={lang} scenarioId={f.includes("sowi") ? "sowi-mindestlohn" : "philo-trolley"} />
       </div>
     );
   }
 
-  // 6. DEUTSCH & ENGLISCH TOOLS
+  // 6. DEUTSCH & ENGLISCH TOOLS (EditorialReader + DilemmaTheatre)
   if (f.includes("deutsch") || f.includes("englisch") || f.includes("english")) {
+    if (t === "reader" || t === "originaltext" || t === "text-analyse" || t === "faust" || t === "drama") {
+      return (
+        <div className="my-3 p-3.5 border border-[var(--line)] bg-[var(--surface)] rounded-[var(--radius)]">
+          <EditorialReader lang={lang} />
+        </div>
+      );
+    }
+    if (t === "dilemma" || t === "tragik" || t === "schuld") {
+      return (
+        <div className="my-3 p-3.5 border border-[var(--line)] bg-[var(--surface)] rounded-[var(--radius)]">
+          <DilemmaTheatre lang={lang} scenarioId="deutsch-faust" />
+        </div>
+      );
+    }
     if (t === "lego" || t === "satzbau") {
       return (
         <div className="my-3 p-3.5 border border-[var(--line)] bg-[var(--surface)] rounded-[var(--radius)]">
@@ -369,11 +400,16 @@ function renderEmbeddedTool(toolName: string, lang: Lang, fach: string, thema?: 
     }
     return (
       <div className="my-3 p-3.5 border border-[var(--line)] bg-[var(--surface)] rounded-[var(--radius)]">
-        <div className="flex items-center justify-between text-xs font-mono text-[var(--accent)] mb-2 font-medium">
-          <span>{lang === "de" ? "Interaktives Werkzeug: Text-Dekonstruierer" : "交互教具：多维文本解构器"}</span>
-          <span className="text-[var(--text-meta)] text-[var(--gray)]">Deutsch & Englisch</span>
-        </div>
-        <TextHighlighter lang={lang} />
+        <EditorialReader lang={lang} />
+      </div>
+    );
+  }
+
+  // 7. UNIVERSAL BENTO MASTERY & KLAUSUR HUD
+  if (t === "bento" || t === "mastery" || t === "klausur-hud") {
+    return (
+      <div className="my-3 p-3.5 border border-[var(--line)] bg-[var(--surface)] rounded-[var(--radius)]">
+        <BentoMastery lang={lang} />
       </div>
     );
   }
@@ -891,13 +927,13 @@ export default function ReiseModule({
       const matchZiel =
         wizardZiel === "alle" || r.ziel.toLowerCase() === wizardZiel.toLowerCase();
       const isDe = r.path.includes("-DE-");
-      const isCn = r.path.includes("-CN-");
+      const isBilingual = !isDe;
       const matchEdition =
         wizardEdition === "alle"
           ? true
           : wizardEdition === "de"
-          ? isDe || (!isCn && !/[\u4e00-\u9fff]/.test(r.thema))
-          : isCn || (!isDe && /[\u4e00-\u9fff]/.test(r.thema));
+          ? isDe
+          : isBilingual;
       const matchQuery =
         !q ||
         r.thema.toLowerCase().includes(q) ||
@@ -1849,8 +1885,32 @@ export default function ReiseModule({
             <>
               <span>/</span>
               <span className="font-serif text-[var(--ink)] font-medium">
-                {activeCourse.fach} · {activeCourse.thema}
+                {activeCourse.fach} · {restoreGermanUmlauts(activeCourse.thema)}
               </span>
+              <span className={`text-[10px] font-mono px-1.5 py-0.5 rounded-[var(--radius)] border ${
+                activeCourse.path.includes("-DE-")
+                  ? "border-[var(--accent)] text-[var(--accent)]"
+                  : "border-[var(--line)] text-[var(--gray)]"
+              }`}>
+                {activeCourse.path.includes("-DE-") ? "DE rein" : (lang === "de" ? "Bilingual (DE/ZH)" : "双语点拨")}
+              </span>
+              <select
+                aria-label={lang === "de" ? "Anderen Kurs wählen" : "切换课程"}
+                value={activeCourse.id}
+                onChange={(e) => {
+                  const target = allReisen.find((r) => r.id === e.target.value);
+                  if (target) {
+                    setActiveCourse(resolveCourseForAudience(target, allReisen, lang));
+                  }
+                }}
+                className="font-mono text-xs border border-[var(--line)] bg-[var(--surface)] text-[var(--ink)] px-2 py-0.5 rounded cursor-pointer max-w-[220px] truncate ml-1"
+              >
+                {allReisen.map((r) => (
+                  <option key={r.id} value={r.id}>
+                    [{r.fach}] {r.thema} {r.path.includes("Wertpapierdepot") ? "★ NEU" : ""}
+                  </option>
+                ))}
+              </select>
             </>
           )}
         </div>
@@ -1891,6 +1951,39 @@ export default function ReiseModule({
             <div className="font-mono text-xs text-[var(--gray)]">
               <span className="text-[var(--ink)] font-medium">{wizardCourses.length}</span> / {allReisen.length} {lang === "de" ? "Lektionen verfügbar" : "门可用课程"}
             </div>
+          </div>
+
+          {/* Spotlight / New Release Card */}
+          <div className="rounded-[var(--radius)] border border-[var(--accent)]/40 bg-[var(--surface)] p-4 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 shadow-xs">
+            <div className="space-y-1">
+              <div className="flex items-center gap-2">
+                <span className="font-mono text-[10px] uppercase tracking-wider px-1.5 py-0.5 rounded bg-[var(--accent)] text-[var(--paper)] font-bold">
+                  {lang === "de" ? "NEU ERSCHIENEN" : "最新上架"}
+                </span>
+                <span className="font-mono text-xs text-[var(--accent)] font-semibold">SoWi · Geldanlage & Finanzmärkte</span>
+              </div>
+              <h3 className="font-serif text-base font-semibold text-[var(--ink)]">
+                Wertpapierdepot & Orderarten: Von Negativzinsen bis zur Orderbuch-Tiefe
+              </h3>
+              <p className="font-sans text-xs text-[var(--gray)]">
+                {lang === "de"
+                  ? "Interaktive Vorlesungsstrecke mit 5 Szenarien: Fisher-Gleichung, Sondervermögen § 92 KAGB, Xetra-Orderbuch & Magisches Dreieck."
+                  : "探究式微课画卷（5大关卡）：费雪实际利率、破产隔离Sondervermögen、Xetra撮合与不可能三角。"}
+              </p>
+            </div>
+            <button
+              type="button"
+              onClick={() => {
+                const depotCourse = allReisen.find((r) => r.path.includes("Wertpapierdepot") && (lang === "de" ? r.path.includes("-DE-") : !r.path.includes("-DE-")))
+                  || allReisen.find((r) => r.path.includes("Wertpapierdepot"));
+                if (depotCourse) {
+                  setActiveCourse(resolveCourseForAudience(depotCourse, allReisen, lang));
+                }
+              }}
+              className="shrink-0 px-4 py-2 font-mono text-xs uppercase bg-[var(--accent)] text-[var(--paper)] rounded-[var(--radius)] hover:opacity-90 transition-opacity font-medium cursor-pointer"
+            >
+              {lang === "de" ? "Jetzt starten →" : "立即进入微课 →"}
+            </button>
           </div>
 
           {/* Filter Bar (Subject tabs + Search + Ziel) */}
@@ -1967,9 +2060,9 @@ export default function ReiseModule({
                   {lang === "de" ? "Edition:" : "版本:"}
                 </span>
                 {[
-                  { id: "alle" as const, de: "Alle", zh: "全部" },
-                  { id: "de" as const, de: "DE rein", zh: "纯德语" },
-                  { id: "bilingual" as const, de: "Bilingual", zh: "双语桥接" },
+                  { id: "alle" as const, de: `Alle (${allReisen.length})`, zh: `全部 (${allReisen.length})` },
+                  { id: "de" as const, de: `DE rein (${allReisen.filter(r => r.path.includes("-DE-")).length})`, zh: `纯德语 (${allReisen.filter(r => r.path.includes("-DE-")).length})` },
+                  { id: "bilingual" as const, de: `Bilingual (${allReisen.filter(r => !r.path.includes("-DE-")).length})`, zh: `双语 (${allReisen.filter(r => !r.path.includes("-DE-")).length})` },
                 ].map((ed) => (
                   <button
                     type="button"
@@ -2046,19 +2139,19 @@ export default function ReiseModule({
                   {/* Thema & Details */}
                   <div className="col-span-6 sm:col-span-7 pr-2">
                     <div className="font-serif text-sm text-[var(--ink)] font-medium">
-                      {c.thema}
+                      {restoreGermanUmlauts(c.thema)}
                     </div>
                     <div className="font-mono text-[var(--text-meta)] text-[var(--gray)] mt-0.5 flex flex-wrap items-center gap-1.5">
                       <span className="uppercase text-[var(--accent)] font-medium">{c.fach}</span>
                       {c.path.includes("-DE-") ? (
-                        <span className="border border-[var(--accent)] text-[var(--accent)] px-1.5 py-0.5 rounded-[var(--radius)] text-xs">
+                        <span className="border border-[var(--accent)] text-[var(--accent)] px-1.5 py-0.5 rounded-[var(--radius)] text-xs font-mono">
                           DE rein
                         </span>
-                      ) : c.path.includes("-CN-") ? (
-                        <span className="border border-[var(--line)] text-[var(--gray)] px-1.5 py-0.5 rounded-[var(--radius)] text-xs">
-                          Bilingual
+                      ) : (
+                        <span className="border border-[var(--line)] text-[var(--ink)] bg-[var(--paper-subtle)] px-1.5 py-0.5 rounded-[var(--radius)] text-xs font-mono">
+                          {lang === "de" ? "Bilingual (DE/ZH)" : "双语点拨"}
                         </span>
-                      ) : null}
+                      )}
                       <span>·</span>
                       <span>Level {c.level}</span>
                       <span>·</span>
@@ -2187,7 +2280,7 @@ export default function ReiseModule({
                             0{s.stepNumber} · {getStepTitle(s.typ, lang, s.stepNumber)}
                           </span>
                           <h3 className="font-serif text-xl sm:text-2xl text-[var(--ink)] mt-0.5">
-                            {s.title}
+                            {restoreGermanUmlauts(s.title)}
                           </h3>
                         </div>
                         <span className="text-xs font-mono text-[var(--gray)] border border-[var(--line)] px-2 py-0.5 rounded-[var(--radius)]">
@@ -2278,7 +2371,7 @@ export default function ReiseModule({
                                 {getStepTitle(s.typ, lang, s.stepNumber)}
                               </span>
                               <span className="truncate block font-serif text-xs leading-tight text-[var(--ink)]">
-                                {s.title}
+                                {restoreGermanUmlauts(s.title)}
                               </span>
                             </div>
                             {isDone && (
@@ -2365,7 +2458,7 @@ export default function ReiseModule({
                       Schritt {currentSchritt?.stepNumber} · {currentSchritt?.typ}
                     </span>
                     <h3 className="font-serif text-xl text-[var(--ink)] mt-0.5">
-                      {currentSchritt?.title}
+                      {restoreGermanUmlauts(currentSchritt?.title ?? "")}
                     </h3>
                   </div>
                   <span className="text-xs font-mono text-[var(--gray)]">

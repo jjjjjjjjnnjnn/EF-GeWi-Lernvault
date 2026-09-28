@@ -112,7 +112,7 @@ export function MarktMechanismusSim({ lang = "zh", onFormulaGenerated }: MarktMe
           </span>
         </div>
         <span className="font-mono text-xs text-[var(--gray)]">
-          PhET-style Sim
+          Labor-style Sim
         </span>
       </div>
 

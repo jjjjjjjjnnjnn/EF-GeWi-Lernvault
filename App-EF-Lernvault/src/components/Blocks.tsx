@@ -2,6 +2,7 @@ import { useState, type ReactNode } from "react";
 import type { Block } from "../vault/parser";
 import MathHtml from "./MathHtml";
 import { filterBlocksForGermanNative } from "../config/audience";
+import { restoreGermanUmlauts } from "../utils/germanOrthography";
 
 /**
  * Checks if an inline code snippet resembles a mathematical formula
@@ -172,7 +173,7 @@ function renderRichTextTokens(text: string, keyPrefix: string): ReactNode {
 
   while ((match = tokenRegex.exec(remainingText)) !== null) {
     if (match.index > lastIndex) {
-      parts.push(remainingText.slice(lastIndex, match.index));
+      parts.push(restoreGermanUmlauts(remainingText.slice(lastIndex, match.index)));
     }
 
     const fullMatch = match[0];
@@ -186,7 +187,7 @@ function renderRichTextTokens(text: string, keyPrefix: string): ReactNode {
           key={`${keyPrefix}-b-${match.index}`}
           className="font-semibold text-[var(--ink)] bg-[var(--accent)]/10 px-1 py-0.5 rounded-[var(--radius)]"
         >
-          {boldContent}
+          {restoreGermanUmlauts(boldContent)}
         </strong>
       );
     } else if (codeContent !== undefined) {
@@ -244,7 +245,7 @@ function renderRichTextTokens(text: string, keyPrefix: string): ReactNode {
   }
 
   if (lastIndex < remainingText.length) {
-    parts.push(remainingText.slice(lastIndex));
+    parts.push(restoreGermanUmlauts(remainingText.slice(lastIndex)));
   }
 
   if (parts.length === 0) return remainingText;

@@ -91,6 +91,8 @@ describe("keyboard registry", () => {
       "mindmap",
       "reise",
       "lernbaum",
+      "labor",
+      "designlab",
       "werkzeuge",
       "einstellungen",
     ]);
@@ -105,6 +107,8 @@ describe("keyboard registry", () => {
       "Alt 8",
       "Alt 9",
       "Alt B",
+      "Alt L",
+      "Alt D",
       "Alt W",
       "Alt 0",
     ]);

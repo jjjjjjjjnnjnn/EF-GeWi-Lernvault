@@ -167,7 +167,7 @@ describe("Pädagogische Komponenten (Pedagogy UI Library)", () => {
 
       fireEvent.click(screen.getByText("载入典型范例"));
       expect(screen.getByDisplayValue(/s\(t\)/)).toBeInTheDocument();
-      expect(screen.getByDisplayValue(/a = 2.5 m\/s\^2/)).toBeInTheDocument();
+      expect(screen.getByDisplayValue((val) => val.includes("a = 2.5"))).toBeInTheDocument();
 
       fireEvent.click(screen.getByText("带入作答框"));
       expect(onComplete).toHaveBeenCalled();
@@ -195,31 +195,29 @@ describe("Pädagogische Komponenten (Pedagogy UI Library)", () => {
   });
 
   describe("TitrationSimulator", () => {
-    it("rendert Titrationslabor mit Ausgangsbedingungen und berechnet pH-Wert", () => {
+    it("rendert Titrationslabor mit Ausgangsbedingungen und berechnet pH-Wert", async () => {
       render(<TitrationSimulator lang="zh" />);
-      expect(screen.getByText("学科教具：酸碱滴定中和反应与指示剂沙盘")).toBeInTheDocument();
-      expect(screen.getByText("pH = 1.00")).toBeInTheDocument();
-      expect(screen.getByText("黄色 (pH < 6.0)")).toBeInTheDocument();
+      expect(screen.getByText("酸碱滴定与 pH-V 曲线")).toBeInTheDocument();
+      expect(screen.getByText("强酸起点 pH=1.00, 等当点 pH=7。")).toBeInTheDocument();
+      expect(screen.getAllByText("1.00").length).toBeGreaterThan(0);
 
-      // Schnell-Button Aequivalenzpunkt klicken
-      fireEvent.click(screen.getByText("等当点 (20 mL)"));
-      expect(screen.getByText("pH = 7.00")).toBeInTheDocument();
-      expect(screen.getByText("已达到化学计量等当点！(pH = 7.00)")).toBeInTheDocument();
-      expect(screen.getByText("绿色（中性突跃区, pH 6.0–7.6）")).toBeInTheDocument();
+      // AP-Button springt zum Aequivalenzpunkt (V = 20 mL, rAF holt auf)
+      fireEvent.click(screen.getByText("AP"));
+      const eqMarks = await screen.findAllByText("等当点(中性, pH 7)", {}, { timeout: 10000 });
+      expect(eqMarks.length).toBeGreaterThan(0);
+      const phMarks = await screen.findAllByText("7.00", {}, { timeout: 10000 });
+      expect(phMarks.length).toBeGreaterThan(0);
     });
 
-    it("wechselt Indikator zu Phenolphthalein und aendert Farbanzeige", () => {
+    it("wechselt Indikator zu Phenolphthalein und aendert Farbanzeige", async () => {
       render(<TitrationSimulator lang="de" />);
-      const select = screen.getByRole("combobox");
-      fireEvent.change(select, { target: { value: "phenolphthalein" } });
-      expect(screen.getByText("Farblos (pH < 8,2)")).toBeInTheDocument();
+      fireEvent.click(screen.getByText("Phenolphth. 8,2"));
+      expect(await screen.findByText("Aktuell: Farblos (pH < 8,2)", {}, { timeout: 3000 })).toBeInTheDocument();
 
-      // Ueberdosierung auf 40 mL
-      fireEvent.click(screen.getByText("+ 1.0 mL"));
-      // Slider auf 30 mL schieben
+      // Slider auf 30 mL schieben (rAF holt auf, pH springt ueber 8,2)
       const slider = screen.getByRole("slider");
       fireEvent.change(slider, { target: { value: "30" } });
-      expect(screen.getByText("Magenta / Pink (pH > 8,2)")).toBeInTheDocument();
+      expect(await screen.findByText("Aktuell: Pink (pH > 8,2)", {}, { timeout: 10000 })).toBeInTheDocument();
     });
   });
 

@@ -22,13 +22,15 @@ import ReiseModule from "./modules/Reise";
 import { defaultVaultReisen } from "./reise";
 import { KlausurSim } from "./modules/KlausurSim";
 import Werkzeuge from "./modules/Werkzeuge";
+import Labor from "./modules/Labor";
+import { DesignLab } from "./modules/DesignLab";
 import { DailySprintModal } from "./components/DailySprintModal";
 import { getStudyStreak } from "./engine/dailyMix";
 import Settings from "./modules/Settings";
 import Onboarding, { loadOnboarding, saveOnboarding, type OnboardingResult } from "./modules/Onboarding";
 import { initTheme } from "./engine/theme";
 
-type Tab = "home" | "library" | "flashcards" | "quiz" | "klausursim" | "tutor" | "planner" | "mindmap" | "lernbaum" | "reise" | "werkzeuge" | "einstellungen";
+type Tab = "home" | "library" | "flashcards" | "quiz" | "klausursim" | "tutor" | "planner" | "mindmap" | "lernbaum" | "reise" | "labor" | "designlab" | "werkzeuge" | "einstellungen";
 
 const settingsShortcut = MODULE_KEYS.find((binding) => binding.module === "einstellungen")!;
 
@@ -126,6 +128,19 @@ const icons: Record<Tab, ReactNode> = {
       <path d="M10.8 5.2l-2.1 4.7-4-1.2 2.1-4.7 4 1.2z" />
     </svg>
   ),
+  labor: (
+    <svg {...iconProps}>
+      <path d="M6 2h4M7 2v3.5L3.2 12.8A1.5 1.5 0 0 0 4.5 15h7a1.5 1.5 0 0 0 1.3-2.2L9 5.5V2" />
+      <path d="M4.8 11.5h6.4" />
+    </svg>
+  ),
+  designlab: (
+    <svg {...iconProps}>
+      <path d="M2.5 13.5l3.5-3.5 6.5 6.5" />
+      <path d="M12.5 2.5l1 1-6 6-1-1 6-6z" />
+      <circle cx="4" cy="4" r="2" />
+    </svg>
+  ),
   einstellungen: (
     <svg {...iconProps}>
       <circle cx="8" cy="8" r="2.2" />
@@ -134,11 +149,25 @@ const icons: Record<Tab, ReactNode> = {
   ),
 };
 
+const isDevModeActive = (): boolean => {
+  if (typeof window === "undefined") return false;
+  try {
+    const q = new URLSearchParams(window.location.search).get("dev");
+    if (q === "1" || q === "true") return true;
+    return localStorage.getItem("ef_dev_mode") === "true";
+  } catch {
+    return false;
+  }
+};
+
 const getInitialTab = (): Tab => {
   if (typeof window !== "undefined") {
     const params = new URLSearchParams(window.location.search);
     const t = params.get("tab") as Tab;
-    if (["home", "library", "flashcards", "quiz", "klausursim", "tutor", "planner", "mindmap", "lernbaum", "reise", "werkzeuge", "einstellungen"].includes(t)) {
+    if (t === "designlab" && !isDevModeActive()) {
+      return "home";
+    }
+    if (["home", "library", "flashcards", "quiz", "klausursim", "tutor", "planner", "mindmap", "lernbaum", "reise", "labor", "designlab", "werkzeuge", "einstellungen"].includes(t)) {
       return t;
     }
   }
@@ -147,6 +176,20 @@ const getInitialTab = (): Tab => {
 
 export default function App() {
   const [tab, setTab] = useState<Tab>(getInitialTab);
+  const [devMode, setDevModeState] = useState<boolean>(isDevModeActive);
+
+  const setDevMode = (active: boolean) => {
+    setDevModeState(active);
+    try {
+      if (active) localStorage.setItem("ef_dev_mode", "true");
+      else {
+        localStorage.removeItem("ef_dev_mode");
+        if (tab === "designlab") switchTab("home");
+      }
+    } catch {
+      // ignorieren
+    }
+  };
   // Standardsprache: Systemsprache (zh → zh), sonst Deutsch; Nutzerwahl persistiert.
   const [lang, setLangState] = useState<Lang>(() => {
     if (typeof window !== "undefined") {
@@ -191,7 +234,7 @@ export default function App() {
 
   const getWorkspaceForTab = (t: Tab): PrimaryWorkspace => {
     if (t === "home") return "home";
-    if (["reise", "library", "lernbaum", "mindmap"].includes(t)) return "lernen";
+    if (["reise", "labor", "library", "lernbaum", "mindmap"].includes(t)) return "lernen";
     if (["flashcards", "planner"].includes(t)) return "wiederholen";
     if (["klausursim", "quiz", "tutor", "werkzeuge"].includes(t)) return "ueben";
     return "einstellungen";
@@ -216,12 +259,21 @@ export default function App() {
     shortcut: string;
   }
 
-  const lernenTabs: SubNavItem[] = [
-    { id: "reise", label: lang === "de" ? "Lernreise" : "新知课程", shortcut: "Alt 9", icon: icons.reise },
-    { id: "library", label: tr.library, shortcut: "Alt 2", icon: icons.library },
-    { id: "lernbaum", label: tr.lernbaum, shortcut: "Alt B", icon: icons.lernbaum },
-    { id: "mindmap", label: tr.mindmap, shortcut: "Alt 8", icon: icons.mindmap },
-  ];
+  const lernenTabs: SubNavItem[] = useMemo(() => {
+    const list: SubNavItem[] = [
+      { id: "reise", label: lang === "de" ? "Lernreise" : "新知课程", shortcut: "Alt 9", icon: icons.reise },
+      { id: "labor", label: lang === "de" ? "Labor" : "互动实验", shortcut: "Alt L", icon: icons.labor },
+    ];
+    if (devMode) {
+      list.push({ id: "designlab", label: lang === "de" ? "Design-Lab" : "设计展厅", shortcut: "Alt D", icon: icons.designlab });
+    }
+    list.push(
+      { id: "library", label: tr.library, shortcut: "Alt 2", icon: icons.library },
+      { id: "lernbaum", label: tr.lernbaum, shortcut: "Alt B", icon: icons.lernbaum },
+      { id: "mindmap", label: tr.mindmap, shortcut: "Alt 8", icon: icons.mindmap },
+    );
+    return list;
+  }, [lang, devMode, tr]);
 
   const wiederholenTabs: SubNavItem[] = [
     { id: "flashcards", label: tr.flashcards, shortcut: "Alt 3", icon: icons.flashcards },
@@ -235,24 +287,29 @@ export default function App() {
     { id: "werkzeuge", label: tr.werkzeuge, shortcut: "Alt W", icon: icons.werkzeuge },
   ];
 
-
-
   const allNavItems: NavItem[] = useMemo(
-    () => [
-      { id: "home", label: tr.home, icon: icons.home },
-      { id: "library", label: tr.library, icon: icons.library },
-      { id: "lernbaum", label: tr.lernbaum, icon: icons.lernbaum },
-      { id: "mindmap", label: tr.mindmap, icon: icons.mindmap },
-      { id: "planner", label: tr.planner, icon: icons.planner },
-      { id: "flashcards", label: tr.flashcards, icon: icons.flashcards },
-      { id: "klausursim", label: tr.klausursim, icon: icons.klausursim },
-      { id: "quiz", label: tr.quiz, icon: icons.quiz },
-      { id: "werkzeuge", label: tr.werkzeuge, icon: icons.werkzeuge },
-      { id: "tutor", label: tr.tutor, icon: icons.tutor },
-      { id: "reise", label: tr.reise, icon: icons.reise },
-      { id: "einstellungen", label: tr.settings, icon: icons.einstellungen },
-    ],
-    [tr]
+    () => {
+      const list: NavItem[] = [
+        { id: "home", label: tr.home, icon: icons.home },
+        { id: "library", label: tr.library, icon: icons.library },
+        { id: "lernbaum", label: tr.lernbaum, icon: icons.lernbaum },
+        { id: "mindmap", label: tr.mindmap, icon: icons.mindmap },
+        { id: "planner", label: tr.planner, icon: icons.planner },
+        { id: "flashcards", label: tr.flashcards, icon: icons.flashcards },
+        { id: "klausursim", label: tr.klausursim, icon: icons.klausursim },
+        { id: "quiz", label: tr.quiz, icon: icons.quiz },
+        { id: "werkzeuge", label: tr.werkzeuge, icon: icons.werkzeuge },
+        { id: "tutor", label: tr.tutor, icon: icons.tutor },
+        { id: "reise", label: tr.reise, icon: icons.reise },
+        { id: "labor", label: lang === "de" ? "Labor" : "互动实验", icon: icons.labor },
+      ];
+      if (devMode) {
+        list.push({ id: "designlab", label: lang === "de" ? "Design-Lab" : "设计展厅", icon: icons.designlab });
+      }
+      list.push({ id: "einstellungen", label: tr.settings, icon: icons.einstellungen });
+      return list;
+    },
+    [tr, lang, devMode]
   );
   const currentWorkspace = getWorkspaceForTab(tab);
   const [tutorPrefilledInput, setTutorPrefilledInput] = useState<string | undefined>(undefined);
@@ -352,6 +409,12 @@ export default function App() {
       }
 
       if (isTyping()) return;
+
+      if (e.ctrlKey && e.shiftKey && (e.key === "D" || e.key === "d")) {
+        e.preventDefault();
+        setDevMode(!devMode);
+        return;
+      }
 
       const globalBinding = GLOBAL_KEYS.find((binding) => matchesKey(e, binding));
       if (globalBinding) {
@@ -844,6 +907,15 @@ export default function App() {
               initialViewMode="document"
             />
           )}
+          {tab === "labor" && (
+            <Labor
+              lang={lang}
+              onDiscussInTutor={jumpToTutor}
+            />
+          )}
+          {tab === "designlab" && (
+            <DesignLab lang={lang} />
+          )}
           {tab === "lernbaum" && (
             <Lernbaum
               lang={lang}
@@ -875,6 +947,8 @@ export default function App() {
               onExportXp={exportXp}
               onRedoOnboarding={() => setObOpen(true)}
               onOpenHelp={() => setHelpOpen(true)}
+              devMode={devMode}
+              onDevModeChange={setDevMode}
             />
           )}
         </div>

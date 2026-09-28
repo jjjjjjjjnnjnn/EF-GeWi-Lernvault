@@ -34,6 +34,7 @@
   2. 故障级联自动转移机制（Active -> Fallback -> Vault Native）；
   3. Token 消耗统计看板与每日预算预警管理（Token Ledger & Daily Budget Alert）；
   4. 供应商交互与模型自主选择映射（API Key 掩码显隐、请求地址 OpenAI 兼容提示、Model ID 自由输入与预设列表、显式保存动作反馈）。
+- University of Colorado Boulder (PhET Interactive Simulations)：Theoretical modeling and physics mechanics inspired by open science education resources (PhET Project). 本项目代码 100% 洁净室原创，未复制其源码；"PhET" 商标权归 Regents of the University of Colorado 所有，界面中不作品牌使用。
 
 ## 待引入（P2+，引入时补记）
 - ts-fsrs — MIT — Open Spaced Repetition（记忆调度）

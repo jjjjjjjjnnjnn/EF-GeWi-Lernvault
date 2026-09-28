@@ -32,6 +32,8 @@ export default function Settings({
   onExportXp,
   onRedoOnboarding,
   onOpenHelp,
+  devMode = false,
+  onDevModeChange,
 }: {
   lang: Lang;
   onLangChange: (l: Lang) => void;
@@ -42,6 +44,8 @@ export default function Settings({
   onExportXp: () => void;
   onRedoOnboarding: () => void;
   onOpenHelp: () => void;
+  devMode?: boolean;
+  onDevModeChange?: (active: boolean) => void;
 }) {
   const tr = t(lang);
 
@@ -298,11 +302,43 @@ export default function Settings({
       </section>
 
       {/* 7. Über */}
-      <section className="mt-6 border-y border-[var(--line)] py-4">
+      <section className="mt-6 border-t border-[var(--line)] pt-4">
         <h2 className="font-mono text-[var(--text-meta)] uppercase tracking-wider text-[var(--gray)]">
           7. {tr.stAbout}
         </h2>
         <p className="mt-2 font-sans text-xs leading-relaxed text-[var(--gray)]">{tr.stAboutText}</p>
+      </section>
+
+      {/* 8. Entwickler-Modus (Dev-Mode) */}
+      <section className="mt-6 border-y border-[var(--line)] py-4">
+        <h2 className="font-mono text-[var(--text-meta)] uppercase tracking-wider text-[var(--accent)] font-semibold">
+          8. {lang === "de" ? "Entwickler- & Testmodus" : "开发者与组件测试模式 (Dev-Mode)"}
+        </h2>
+        <p className="mt-1 font-sans text-xs text-[var(--gray)]">
+          {lang === "de"
+            ? "Aktiviert interne Testmodule wie das Design-Lab. Standardmäßig für reguläre Lernende verborgen."
+            : "激活内部测试模块（如 Design-Lab 设计展厅）。默认对普通学习者隐藏，防止界面干扰。快捷键：Ctrl + Shift + D。"}
+        </p>
+        <div className="mt-3 flex items-center gap-3">
+          <label className="flex items-center gap-2 cursor-pointer font-sans text-xs text-[var(--ink)]">
+            <input
+              type="checkbox"
+              checked={devMode}
+              onChange={(e) => onDevModeChange?.(e.target.checked)}
+              className="h-4 w-4 accent-[var(--accent)] rounded"
+            />
+            <span className="font-medium">
+              {lang === "de" ? "Design-Lab in Navigation anzeigen" : "在侧边栏显示 Design-Lab (设计展厅)"}
+            </span>
+          </label>
+          <span className={`font-mono text-[10px] px-2 py-0.5 rounded border ${
+            devMode
+              ? "border-[var(--accent)] text-[var(--accent)] bg-[var(--accent)]/10"
+              : "border-[var(--line)] text-[var(--gray)]"
+          }`}>
+            {devMode ? (lang === "de" ? "Aktiviert" : "已开启") : (lang === "de" ? "Deaktiviert (Standard)" : "已停用 (默认)")}
+          </span>
+        </div>
       </section>
     </div>
   );

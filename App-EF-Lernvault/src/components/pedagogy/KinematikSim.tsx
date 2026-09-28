@@ -137,7 +137,7 @@ export function KinematikSim({ lang = "zh", onFormulaGenerated }: KinematikSimPr
           </span>
         </div>
         <span className="font-mono text-xs text-[var(--gray)]">
-          PhET-style Sim
+          Labor-style Sim
         </span>
       </div>
 

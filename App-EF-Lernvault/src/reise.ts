@@ -1,5 +1,7 @@
 import { parseFrontmatter, parseBody, type Block } from "./vault/parser";
 import exemplarCourseRaw from "../../Lernreise/Sowi-Soziale-Marktwirtschaft-L1.md?raw";
+import sowiDepotRaw from "../../Lernreise/SoWi-Wertpapierdepot-Orderarten-L1.md?raw";
+import sowiDepotDeRaw from "../../Lernreise/SoWi-Wertpapierdepot-Orderarten-DE-L1.md?raw";
 
 export type SchrittTyp = "entdecken" | "ausprobieren" | "check" | "szenario" | "muendlich" | "reflexion";
 
@@ -263,13 +265,25 @@ const reisenFiles: Record<string, string> = import.meta.glob("../../Lernreise/*.
   eager: true,
 });
 
-export const defaultVaultReisen: Reise[] = Object.entries(reisenFiles)
+const fallbackDepotCourses: Reise[] = [
+  parseReiseFile("Lernreise/SoWi-Wertpapierdepot-Orderarten-L1.md", sowiDepotRaw),
+  parseReiseFile("Lernreise/SoWi-Wertpapierdepot-Orderarten-DE-L1.md", sowiDepotDeRaw),
+].filter((r): r is Reise => r !== null);
+
+const parsedReisen = Object.entries(reisenFiles)
   .map(([path, raw]) => {
     const cleanPath = path.replace(/^.*\/Lernreise\//, "Lernreise/");
     return parseReiseFile(cleanPath, String(raw));
   })
-  .filter((r): r is Reise => r !== null)
+  .filter((r): r is Reise => r !== null);
+
+const reisenMap = new Map<string, Reise>();
+fallbackDepotCourses.forEach((r) => reisenMap.set(r.id, r));
+parsedReisen.forEach((r) => reisenMap.set(r.id, r));
+
+export const defaultVaultReisen: Reise[] = Array.from(reisenMap.values())
   .sort((a, b) => a.fach.localeCompare(b.fach) || a.thema.localeCompare(b.thema));
+
 
 // Built-in exemplar course parsed from vault
 export const exemplarReise: Reise | null =
