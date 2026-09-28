@@ -1,16 +1,16 @@
 // DesignLab: 前沿教学交互实验展厅 (Didaktische Experimentierbühne)
 // 专用于孵化、打磨与验证下一代微课动画剧场与文科实验 Demo 的专属沙盒空间。
-// 移除了早期冗余的基础排版原型，专注于高品质真实互动沙盘的研发展示。
+// 移除了抽象多体碰撞模型与早期静态卡片，专注于高质量场景微课（presentation.html 范式）。
 
 import { useState } from "react";
 import type { Lang } from "../i18n";
 import { SowiDepotLecture } from "../components/pedagogy/SowiDepotLecture";
-import { TrustGameSim } from "../components/pedagogy/TrustGameSim";
+import { FaustLectureTheatre } from "../components/pedagogy/FaustLectureTheatre";
 import { DilemmaTheatre } from "../components/pedagogy/DilemmaTheatre";
 
 export type DesignDemoId =
   | "sowi-depot"
-  | "sowi-trust"
+  | "faust-lecture"
   | "philo-trolley";
 
 interface DemoOption {
@@ -34,13 +34,13 @@ const DEMO_OPTIONS: DemoOption[] = [
     status: "verified",
   },
   {
-    id: "sowi-trust",
-    nameDE: "Vertrauens-Labor (Game Theory & Trust)",
-    nameZH: "信任博弈实验室 · 囚徒困境与社会资本",
-    taglineDE: "Iteriertes Gefangenendilemma, Sanktionskosten, Rausch-Simulation & Sozialkapital",
-    taglineZH: "重复囚徒困境演化、法治惩罚威慑、信息误解率与社会信任指数折线图",
-    category: "gewi-lab",
-    status: "incubating",
+    id: "faust-lecture",
+    nameDE: "Vorlesungs-Bühne: Faust I (Erkenntnis vs. Schuld)",
+    nameZH: "互动微课动画剧场 · 浮士德悲剧：求知探索 对阵 毁人罪责",
+    taglineDE: "Goethe-Pflichtlektüre Abitur: Gelehrtenkrise, Blutpakt, Gretchenfrage & Kerker-Dialektik",
+    taglineZH: "德国高考必考原典微课剧场：学者认识论绝望、血字契约、格蕾琴诱惑链与死牢终审之声",
+    category: "lecture",
+    status: "verified",
   },
   {
     id: "philo-trolley",
@@ -55,7 +55,7 @@ const DEMO_OPTIONS: DemoOption[] = [
 
 export function DesignLab({ lang }: { lang: Lang }) {
   const de = lang === "de";
-  const [currentDemo, setCurrentDemo] = useState<DesignDemoId>("sowi-depot");
+  const [currentDemo, setCurrentDemo] = useState<DesignDemoId>("faust-lecture");
 
   const activeDemoMeta = DEMO_OPTIONS.find((d) => d.id === currentDemo) ?? DEMO_OPTIONS[0];
 
@@ -111,7 +111,7 @@ export function DesignLab({ lang }: { lang: Lang }) {
                 <span>{de ? demo.nameDE : demo.nameZH}</span>
                 {demo.status === "verified" && (
                   <span className="text-[10px] font-mono text-[#065f46] bg-[#ecfdf5] border border-[#a7f3d0] px-1 rounded-xs">
-                    {de ? "Freigegeben" : "定稿主推"}
+                    {de ? "Vorlesungs-Theater" : "动画微课剧场"}
                   </span>
                 )}
                 {demo.status === "incubating" && (
@@ -133,7 +133,7 @@ export function DesignLab({ lang }: { lang: Lang }) {
       {/* 动态实验 Demo 舞台 */}
       <div className="transition-all duration-300">
         {currentDemo === "sowi-depot" && <SowiDepotLecture lang={lang} />}
-        {currentDemo === "sowi-trust" && <TrustGameSim lang={lang} />}
+        {currentDemo === "faust-lecture" && <FaustLectureTheatre lang={lang} />}
         {currentDemo === "philo-trolley" && (
           <DilemmaTheatre lang={lang} scenarioId="philo-trolley" />
         )}
