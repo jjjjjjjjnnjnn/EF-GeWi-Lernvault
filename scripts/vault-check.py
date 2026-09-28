@@ -11,7 +11,7 @@ EXEMPT_NAMES = {"Lehrplan.md", "Ressourcen.md", "Satzbausteine.md",
                 "Fehlerlog.md", "README.md", "INDEX.md", "HANDOVER.md",
                 "AGENTS.md", "Anki-Karte-GeWi.md", "Klausur-Drill-GeWi.md",
                 "Fach-Template.md", "Stunden-Nachbereitung-GeWi.md",
-                ".gitkeep-note.md"}
+                ".gitkeep-note.md", "PROJECT-DESIGN-GUIDELINES.md"}
 SKIP_DIRS = {".git", ".obsidian", ".workbuddy-ai", "App-EF-Lernvault", "_Downloads",
              "node_modules", "dist", "target", "Journal", "Templates",
              "Skills", "Lernreise", "scripts"}

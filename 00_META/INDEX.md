@@ -43,6 +43,7 @@
 - **S8 笔记生产** — [施工宪法/波次台账](Lernbaum/00-Notenproduktion-Plan.md) · [**S8 新增笔记索引（224 篇，按学科）**](S8-Noten-Index.md) · 模板：[Wissensnotiz-Template](../Templates/Wissensnotiz-Template.md) · 官方源（本地 `_Downloads/`，不进 git）：[Download-Quellen](Download-Quellen.md)
 - **阻塞项** — [**Blocker-Register（统一台账，唯一真相源）**](Blocker-Register.md) · [**Lehrkraft-Anfragen（可直接转发的德语问询稿）**](Lehrkraft-Anfragen.md)
 - **四套 Abitur 任务包（P1–P4，共 22 份）** — [**Pruefungspakete-Uebersicht（总入口：80:20 BE 口径 + 15 分换算表 + 三轮打法）**](Pruefungspakete-Uebersicht.md)
+- **全新视觉/UI重构共创** — [**UI-Redesign-Exploration-and-External-AI-Brief（外部 AI 自由设计任务书与 5 大范式规范）**](UI-Redesign-Exploration-and-External-AI-Brief.md) · [**UI-Interactive-Game-Design-Plan（十科课程交互游戏化设计与外部 AI 任务分配总纲）**](UI-Interactive-Game-Design-Plan.md) · [**PROJECT-DESIGN-GUIDELINES（项目设计方案与架构策略全景指南，AI复刻与扩展必读）**](../PROJECT-DESIGN-GUIDELINES.md) · [**PHET-CONVERSION-BATCH-SOP（PhET 仿真器批量重构与外部 AI 自审核手册）**](PHET-CONVERSION-BATCH-SOP.md)
 
 ## 考试包 P1–P4（2026-09-26 入库，共 22 份）
 
@@ -73,6 +74,7 @@
 - Abitur-Fokussierungen IF4+IF6 (2027–2029) — [Sowi-Abitur-Fokussierungen](../08_SoWi/Texte-Analyse/Sowi-Abitur-Fokussierungen.md)（Wirtschaftspolitik+Ungleichheit，EF衔接Kap.1–11）· [Gestaltungsaufgabe-Training](../08_SoWi/Klausur-Training/SW-Gestaltungsaufgabe-Training.md)（Redebeitrag/Handlungsempfehlung+EHZ）
 - 电子书11章地图 — [Sowi-NRW-EF-Buch-Navigator](../08_SoWi/Texte-Analyse/Sowi-NRW-EF-Buch-Navigator.md)（C.C.Buchner click & study，需学校登录；Ungleichheit无专章）
 - Preismechanismus & Marktformen (IF Wirtschaft) — [Preismechanismus-und-Marktformen](../08_SoWi/Texte-Analyse/Preismechanismus-und-Marktformen.md)（供求/弹性/限价负效应+CN供求十字速画法，配 Lernreise L1）
+- Wertpapierdepot & Orderarten (IF Wirtschaft) — [Wertpapierdepot-und-Orderarten](../08_SoWi/Texte-Analyse/Wertpapierdepot-und-Orderarten.md)（名义负利率/破产隔离Sondervermögen/Xetra撮合/不可能三角，配 Lernreise 探究式微课画卷）
 
 ### Philosophie
 - Gerechtigkeit & Wirtschaftsethik — [Gerechtigkeit-Wirtschaftsethik-Vernetzung](../07_Philosophie/Gerechtigkeit-Wirtschaftsethik-Vernetzung.md)（Rawls差异原则/无知之幕/SoWi不平等再分配跨学科）
@@ -247,6 +249,20 @@
 - [2026-09-27-p1-p2-gesamtabschluss](Journal/2026-09-27-p1-p2-gesamtabschluss.md) — **P1+P2全量收官：269门十科互动课程连续剧式关卡宇宙与微沙盘深度重塑**：8大战役故事线+三道门禁全绿（audit 6项全零+vault-check PASS+tsc零错误）+单科独立落库
 - [2026-09-27-simulation-review-und-feinschliff](Journal/2026-09-27-simulation-review-und-feinschliff.md) — **学生端全链路模拟审查269/269+11路逐课精修+4遗留清零**：任务包发布+11路审查（均分86.0）+返工6课+数值硬伤纠错+单科独立落库
 - [2026-09-27-duel-tool-mismatch-and-performance-fix](Journal/2026-09-27-duel-tool-mismatch-and-performance-fix.md) — **第5步对决教具错配根治与长文档滚动/刷新性能优化**：对决步骤防御阻断+FormulaScaffold学科上下文感应+requestAnimationFrame节流防抖+2150步按需惰性解析（npm run build/vault-check PASS）
+- [2026-09-27-phet-labor-and-bilingual-classification](Journal/2026-09-27-phet-labor-and-bilingual-classification.md) — **PhET风格互动仿真实验室上线、德语真实变音字母(Umlaute)排版恢复与双语课程精准分类**：纯德语/双语标签138+131精准分流+ae/oe/ue真实两点变音呈现+首级Labor仿真探索实验室与5大新型仿真器上线（门禁全绿）
+- [2026-09-27-design-studio-tracks-6-11](Journal/2026-09-27-design-studio-tracks-6-11.md) — **Design-Lab方案六~十一：6轨并行创意设计与集成**：时间河流/Bento仪表盘/全屏章节/答题控制台/抽卡快检/苏格拉底工作台+注册集成+build通过
+- [2026-09-28-wave-1-wp1-wp4-mint-workshops](Journal/2026-09-28-wave-1-wp1-wp4-mint-workshops.md) — **第一波WP-1~WP-4：MINT理科交互工坊上线**：光学折射/滴定追问/渗透对照/极值沙盘+Design-Lab扩至15方案+测试审核零新增失败
+- [2026-09-28-wave-2-wp5-wp7-geisteswissenschaften](Journal/2026-09-28-wave-2-wp5-wp7-geisteswissenschaften.md) — **第二波WP-5~WP-7：文科社科沉浸工作台上线**：福利调控台/伦理剧场/原典精读画刊+Design-Lab扩至18方案+测试审核零新增失败
+- [2026-09-28-wave-3-wp8-bento-recap-dashboard](Journal/2026-09-28-wave-3-wp8-bento-recap-dashboard.md) — **第三波WP-8：全课程通用收官仪表盘上线**：Bento四宫格第8步复盘模板+Design-Lab扩至19方案三大波次收官+测试审核零新增失败
+- [2026-09-28-phet-wave-1-mechanik-rewrite](Journal/2026-09-28-phet-wave-1-mechanik-rewrite.md) — **PhET Wave1力学十款洁净室重写+T0商标清洗**：能量滑板/单摆/弹簧/抛体/斜面/碰撞/杠杆/胡克/摩擦/轨道+74处去品牌+NOTICE致谢+注册挂载+零新增失败
+- [2026-09-28-phet-wave-2-wellen-elektromagnetismus](Journal/2026-09-28-phet-wave-2-wellen-elektromagnetismus.md) — **PhET Wave2波动光学与电磁8款**：双缝/折射/电路/库仑重写+透镜/场线/法拉第/绳波新建+4ID注册+Labor共30仿真
+- [2026-09-28-phet-wave-3-thermodynamik](Journal/2026-09-28-phet-wave-3-thermodynamik.md) — **PhET Wave3热力学5款**：气体/浮力重写+三态/压强/扩散新建+3ID注册+Labor共33仿真（含温度计标尺倒置bugfix）
+- [2026-09-28-phet-wave-4-quantenphysik](Journal/2026-09-28-phet-wave-4-quantenphysik.md) — **PhET Wave4近代物理4款**：光电/卢瑟福/氢原子/黑体辐射+4ID注册+Labor共37仿真
+- [2026-09-28-phet-wave-5-chemie](Journal/2026-09-28-phet-wave-5-chemie.md) — **PhET Wave5化学4款**：滴定/VSEPR/平衡/比尔定律+滴定测试返工+Labor共39仿真
+- [2026-09-28-phet-wave-6-mathe-bio](Journal/2026-09-28-phet-wave-6-mathe-bio.md) — **PhET Wave6数生5款六波收官**：向量/切线/高尔顿/膜转运/神经元+Labor共42仿真+总门禁全绿
+- [2026-09-28-golden-archetypes-production-consolidation](Journal/2026-09-28-golden-archetypes-production-consolidation.md) — **五大黄金交互原型提炼、精简与全量转产上线**：剔除低质冗余原型+精炼G1~G5五大黄金范式（8大生产级组件）+生产Reise全自动路由+DesignLab双轨上线+三道门禁全绿
+- [2026-09-28-scholarly-atelier-color-and-layout-redesign](Journal/2026-09-28-scholarly-atelier-color-and-layout-redesign.md) — **学术工坊美学：去 AI 化与全套调色板及布局重构**：剔除深黑发光赛博朋克与霓虹色块+确立毫米方格图纸与墨水/纸张基底+八大生产交互组件与展厅全面脱敏（tsc/vault-check/npm run build全绿）
+- [2026-09-28-vorlesungs-buehne-und-60fps-physics](Journal/2026-09-28-vorlesungs-buehne-und-60fps-physics.md) — **互动微课剧场与60FPS微观物理重构**：哈伯法独立Canvas物理循环根治4FPS跳帧+纯代码驱动免录制微课引擎上线+首门经济学标杆微课《证券存托与订单簿》落地（全绿）
 - 约定：文件名 `YYYY-MM-DD-<thema>.md`，头部frontmatter（`fach`可空，`tags: [EF, Meta]`）。
 
 
