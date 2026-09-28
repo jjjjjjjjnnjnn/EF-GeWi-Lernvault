@@ -915,3 +915,8 @@ tags: [EF, Meta]
 | Regeneration | 恢复 | Sport | Die Anpassung entsteht nicht während der Belastung, sondern in der Regeneration. |
 | Mikrozyklus | 小周期 | Sport | Der Mikrozyklus ordnet Belastung und Erholung innerhalb einer Woche. |
 | Trainingssteuerung | 训练调控 | Sport | Trainingssteuerung bedeutet, Intensität und Umfang gegeneinander auszutarieren. |
+| Wertpapierdepot | 证券账户／托管账户 | SoWi | Das Wertpapierdepot dient der Verwahrung und Verwaltung von Wertpapieren getrennt vom Bankvermögen. |
+| Sondervermögen | 特别资产（破产隔离财产） | SoWi | Fondsanteile im Wertpapierdepot gelten als Sondervermögen nach § 92 KAGB und fallen nicht in die Insolvenzmasse. |
+| Freistellungsauftrag | 免税额委托申请 | SoWi | Mit einem Freistellungsauftrag schöpfen Sparer den Sparer-Pauschbetrag direkt bei der Depotbank steuerfrei aus. |
+| Slippage | 滑点（实际成交与预期价格偏差） | SoWi | Bei einer unlimitierten Bestens-Order droht in volatilen Marktphasen eine erhebliche Slippage. |
+
