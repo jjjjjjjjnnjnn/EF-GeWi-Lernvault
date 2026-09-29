@@ -67,11 +67,11 @@ ENTDECKEN: Ein Bankguthaben auf dem Girokonto ist rechtlich kein Sachwert im Tre
 
 Klausur-Satz: `Wertpapiere im Depot gelten als Sondervermögen und bleiben bei einer Bankinsolvenz uneingeschränkt im Eigentum des Kunden, während Giroguthaben lediglich als Gläubigerforderung geschützt ist.`
 
-## Schritt 4 — ausprobieren: Interaktive Praxis: Die vertiefte Vorlesungsstrecke
+## Schritt 4 — ausprobieren: Interaktive Praxis: Xetra-Orderbuch & Auftragsarten im Praxistest
 
-[Werkzeug: depot]
+[Werkzeug: orderbuch]
 
-TARGET: Absolviere die 5 interaktiven Stationen der Vorlesungsstrecke. Teste den Zeitschieber der Inflationsschere, erkunde die Clearing-Schleuse, die 3-Schritte-Legitimation, die Xetra-Orderbuch-Tiefe und das Magische Dreieck. Beantworte alle 5 Verständnis-Checks korrekt.
+TARGET: Teste im interaktiven Xetra-Orderbuch die Ausführung von Billigst-/Bestens-Orders, Limit-Orders und Stop-Loss-Orders. Beobachte die Auswirkung des Spreads und die Gefahren von Slippage bei mangelnder Liquidität.
 
 AUFGABE (analysieren & beurteilen, AFB II/III): Ein Privatanleger verfügt über 10.000 € Ersparnisse. Die Inflation beträgt 3,0 % p.a., der Zins auf dem Tagesgeldkonto 0,5 % p.a.
 a) Berechnen Sie den realen Kaufkraftverlust nach 5 Jahren näherungsweise und erläutern Sie die Einordnung im Magischen Dreieck.
