@@ -43,12 +43,16 @@ export function LectureTheatre({
   lang,
   courseTitleDE,
   courseTitleZH,
+  courseDescDE,
+  courseDescZH,
   subject,
   scenes,
 }: {
   lang: Lang;
   courseTitleDE: string;
   courseTitleZH: string;
+  courseDescDE?: string;
+  courseDescZH?: string;
   subject: string;
   scenes: LectureScene[];
 }) {
@@ -173,8 +177,8 @@ export function LectureTheatre({
         </h1>
         <p className="mt-2 text-xs sm:text-sm text-[var(--gray)] leading-relaxed max-w-3xl">
           {de
-            ? "Eine systematische Lehrstrecke von den makroökonomischen Ursachen der Realzinsfalle über die Trennung von Giro- und Wertpapierdepot (§ 92 KAGB / GWG) bis hin zu Xetra-Orderbuchmechanismen und dem magischen Anlagedreieck."
-            : "本微课涵盖德国经济学科考纲核心体系：从负利率与通胀剪刀差的宏观成因，到德国《资本投资法》（KAGB）与《反洗钱法》（GWG）监管下的存托分立体系，再到 Xetra 交易所订单簿撮合机制与投资理财不可能三角。"}
+            ? (courseDescDE || "Systematische Lehrstrecke mit interaktiven Modellen, Fachvertiefung und Klausuraufgaben nach Gymnasialstandards.")
+            : (courseDescZH || "系统化互动微课：结合交互推演、考纲理论深度解析与真实题型训练。")}
         </p>
       </header>
 
@@ -240,7 +244,7 @@ export function LectureTheatre({
                         </span>
                       </div>
                       <span className="font-mono text-[10px] text-[var(--gray)]">
-                        {de ? "Gymnasium EF Standard" : "北威州高中经济会考标准"}
+                        {de ? `Gymnasium EF · ${subject}` : `高中考纲标准 · ${subject}`}
                       </span>
                     </div>
 

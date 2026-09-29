@@ -637,6 +637,8 @@ export function FaustLectureTheatre({ lang }: { lang: Lang }) {
       subject="Deutsch / Pflichtlektüre Abitur NRW"
       courseTitleDE="Faust I: Gelehrtentragödie & Gretchentragödie"
       courseTitleZH="歌德《浮士德》悲剧解剖：无限求知探索 对阵 道德毁人罪责"
+      courseDescDE="Goethes Meisterwerk im Spannungsfeld zwischen wissenschaftlichem Erkenntnisdrang (Gelehrtentragödie) und existenzieller Schuld (Gretchentragödie) nach den Anforderungen des NRW Abiturs."
+      courseDescZH="歌德德国文学巅峰之作：聚焦学者危机（Titanismus）与格蕾琴悲剧的伦理审判，全景拆解高中德语会考核心考点。"
       scenes={FAUST_SCENES}
     />
   );

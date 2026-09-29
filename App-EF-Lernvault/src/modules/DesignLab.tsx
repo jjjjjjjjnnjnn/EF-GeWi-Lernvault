@@ -6,9 +6,11 @@ import { useState } from "react";
 import type { Lang } from "../i18n";
 import { SowiDepotLecture } from "../components/pedagogy/SowiDepotLecture";
 import { FaustLectureTheatre } from "../components/pedagogy/FaustLectureTheatre";
+import { FaustReadingLab } from "../components/pedagogy/FaustReadingLab";
 import { DilemmaTheatre } from "../components/pedagogy/DilemmaTheatre";
 
 export type DesignDemoId =
+  | "faust-reading"
   | "sowi-depot"
   | "faust-lecture"
   | "philo-trolley";
@@ -24,6 +26,15 @@ interface DemoOption {
 }
 
 const DEMO_OPTIONS: DemoOption[] = [
+  {
+    id: "faust-reading",
+    nameDE: "Klausur-Labor: Faust I (6 Dimensionen)",
+    nameZH: "原著细读与六维会考解剖工坊 · 歌德《浮士德 I》",
+    taglineDE: "Originaltext mit Versnummern, Zeilen-Analyse, Stilmittel-Filter, 6 Klausur-Dimensionen & EHZ-Muster",
+    taglineZH: "带行号德语原著文本流、逐行显微镜、修辞透视、六大考试维度（内容/主旨/情节/词汇/修辞/描写）与官方评分标准",
+    category: "gewi-lab",
+    status: "verified",
+  },
   {
     id: "sowi-depot",
     nameDE: "Interaktive Vorlesung: Depot & Orderbuch",
@@ -55,7 +66,7 @@ const DEMO_OPTIONS: DemoOption[] = [
 
 export function DesignLab({ lang }: { lang: Lang }) {
   const de = lang === "de";
-  const [currentDemo, setCurrentDemo] = useState<DesignDemoId>("faust-lecture");
+  const [currentDemo, setCurrentDemo] = useState<DesignDemoId>("faust-reading");
 
   const activeDemoMeta = DEMO_OPTIONS.find((d) => d.id === currentDemo) ?? DEMO_OPTIONS[0];
 
@@ -132,6 +143,7 @@ export function DesignLab({ lang }: { lang: Lang }) {
 
       {/* 动态实验 Demo 舞台 */}
       <div className="transition-all duration-300">
+        {currentDemo === "faust-reading" && <FaustReadingLab lang={lang} />}
         {currentDemo === "sowi-depot" && <SowiDepotLecture lang={lang} />}
         {currentDemo === "faust-lecture" && <FaustLectureTheatre lang={lang} />}
         {currentDemo === "philo-trolley" && (

@@ -48,6 +48,45 @@ import { MarktWelfareLab } from "../components/pedagogy/MarktWelfareLab";
 import { EditorialReader } from "../components/pedagogy/EditorialReader";
 import { BentoMastery } from "../components/pedagogy/BentoMastery";
 import { SowiDepotLecture } from "../components/pedagogy/SowiDepotLecture";
+import { OrderbuchSimulator } from "../components/pedagogy/OrderbuchSimulator";
+
+function DepotStepWidget({ lang }: { lang: Lang }) {
+  const [showFullLecture, setShowFullLecture] = useState(false);
+  const de = lang === "de";
+
+  return (
+    <div className="my-3 space-y-3">
+      <div className="p-3.5 border border-[var(--line)] bg-[var(--surface)] rounded-[var(--radius)]">
+        <OrderbuchSimulator lang={lang} />
+      </div>
+
+      <div className="flex justify-end">
+        <button
+          type="button"
+          onClick={() => setShowFullLecture(!showFullLecture)}
+          className="text-xs font-mono text-[var(--gray)] hover:text-[var(--ink)] underline cursor-pointer flex items-center gap-1.5"
+        >
+          <span>{showFullLecture ? "▲" : "▼"}</span>
+          <span>
+            {showFullLecture
+              ? de
+                ? "Vollständige Vorlesungsstrecke einklappen"
+                : "收起完整学术微课剧场"
+              : de
+              ? "Vollständige Vorlesungsstrecke (5 Kapitel) zur Vertiefung einblenden"
+              : "展开完整学术微课剧场 (5幕深度研讨) 深入探究"}
+          </span>
+        </button>
+      </div>
+
+      {showFullLecture && (
+        <div className="p-4 border border-[var(--line)] bg-[var(--surface)] rounded-[var(--radius)] shadow-xs">
+          <SowiDepotLecture lang={lang} />
+        </div>
+      )}
+    </div>
+  );
+}
 
 function CheckMarkSvg() {
   return (
@@ -340,11 +379,7 @@ function renderEmbeddedTool(toolName: string, lang: Lang, fach: string, thema?: 
       );
     }
     if (t === "depot" || t === "orderarten" || t === "orderbuch" || t === "wertpapier" || t === "aktien" || t === "boerse" || t === "anleger" || (f.includes("sowi") && (thema?.includes("depot") || thema?.includes("wertpapier") || thema?.includes("aktie") || thema?.includes("finanz")))) {
-      return (
-        <div className="my-4 w-full">
-          <SowiDepotLecture lang={lang} />
-        </div>
-      );
+      return <DepotStepWidget lang={lang} />;
     }
     if (t === "gini" || t === "gini-allocator" || t === "lorenz" || t === "verteilung" || t === "ungleichheit") {
       return (

@@ -990,6 +990,8 @@ export function SowiDepotLecture({ lang }: { lang: Lang }) {
       lang={lang}
       courseTitleDE="Wertpapierdepot & Orderarten: Von Negativzinsen bis zur Orderbuch-Tiefe"
       courseTitleZH="证券存托账户与委托类型：从负利率困局到订单簿撮合深度"
+      courseDescDE="Eine systematische Lehrstrecke von den makroökonomischen Ursachen der Realzinsfalle über die Trennung von Giro- und Wertpapierdepot (§ 92 KAGB / GWG) bis hin zu Xetra-Orderbuchmechanismen und dem magischen Anlagedreieck."
+      courseDescZH="本微课涵盖德国经济学科考纲核心体系：从负利率与通胀剪刀差的宏观成因，到德国《资本投资法》（KAGB）与《反洗钱法》（GWG）监管下的存托分立体系，再到 Xetra 交易所订单簿撮合机制与投资理财不可能三角。"
       subject="SoWi"
       scenes={scenes}
     />
