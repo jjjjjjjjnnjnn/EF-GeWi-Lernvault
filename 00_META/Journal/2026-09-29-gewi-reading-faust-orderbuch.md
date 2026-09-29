@@ -70,10 +70,20 @@ tags: [EF, Meta, Journal, App, Deutsch, SoWi]
       - 试题题名直接提炼核心问题焦点（如「核心论点与知识检视」、「浮士德求索精神与存在危机」等），去除生硬的 AFB 与题号前缀。
       - 右侧改造成纯粹的「阅读理解 · 逐题深入」卡片流程，顶部提供极简题号圆形指示器（显示序号与作答对错勾叉），底部提供上一题/下一题步进（作答后下一题高亮引导）。
 
+11. **12 道考纲高难度试题超级详细化与长篇诊断重构（FaustReadingLab）**：
+    - **全题型深度重构**：将《浮士德》两大选段（`nacht-monolog` 与 `studierzimmer-pakt`）共 12 道精选题全部重写为符合北威州高中文理高级班（Gymnasiale Oberstufe）14–15 Punkte 要求的超高密度考纲题。
+    - **五层立体诊断矩阵**：每道题均配备：
+      - **背景与时代思潮**：深入挖掘启蒙理性（Aufklärung）、狂飙突进（Sturm und Drang）、虔信派神秘主义（Pietismus）与近代资本世俗化动能。
+      - **高迷惑性考场干扰项**：针对文科生常见审题陷阱设计 3 个极具迷惑性的错误选项。
+      - **全景逐项诊断分析**：分设【✅ 正解依据与文本锚点】、【❌ 干扰项逐项诊断】、【🏛 时代思潮与哲学脉络】三大解析段落。
+      - **14 分标准句式（Muster-Formulierung）**：直接提供可套用于 Abitur 考试的高分定式表达。
+      - **官方采分点（Erwartungshorizont / EHZ）**：标明评分准则与分析深度层级。
+    - **排版容器升级**：解析卡片升级为 `whitespace-pre-line shadow-2xs`，段落分明，层级清晰，兼顾极简呼吸感与学术严谨性。
+
 ## 2. 门禁验证
 
 - `cmd /c "npx tsc -b"`：0 错误，类型检查全绿。
-- `cmd /c "npm run build"`：7.82s 构建通过（dist 产物完整）。
+- `cmd /c "npm run build"`：5.50s 构建通过（dist 产物完整）。
 - `python scripts/vault-check.py`：PASS（notes=401, csv_rows=1599, index_links=337, reisen=271, 0 badnames, 0 badglossar）。
 - Commit 记录：
   - `0830bb2`: `[App] 重构微课文案解耦并新增歌德浮士德原著六维会考阅读工坊与订单簿教具`
@@ -82,6 +92,7 @@ tags: [EF, Meta, Journal, App, Deutsch, SoWi]
   - `801a8ba`: `[App] 浮士德阅读工坊永久全卷展开并默认折叠诗句书签取消外层滚动`
   - `85fd214`: `[App] 诗歌书签定位改为诗歌栏局部内部平滑滚动外部窗口静止`
   - `f27fea7`: `[App] 重塑浮士德精读工坊为极简单题聚焦模式彻底根治字海与版面杂乱`
+
 
 
 

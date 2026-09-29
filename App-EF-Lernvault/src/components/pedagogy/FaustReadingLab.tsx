@@ -352,14 +352,14 @@ const EXCERPTS: TextExcerpt[] = [
         questionDE:
           "Welche vier akademischen Fakultäten zählt Faust auf, und zu welchem konkreten materiellen wie existenziellen Resümee gelangt er in Vers 354–376?",
         questionZH:
-          "浮士德在开篇历数了哪四门传统大学学科？面对数十年的学术生涯，他在物质资产与生存意义上得出了怎样确切的结论？",
+          "浮士德在开篇独白第 354–376 行中历数了传统大学四大学科体系（哲学、法学、医学与神学）。结合中世纪以来的大学分科传统，浮士德在此得出了怎样兼具认识论（Erkenntnistheorie）与生存存在主义（Existenzialismus）的确切破产结论？",
         options: [
           {
             id: "a",
             textDE:
               "Er hat Philosophie, Juristerei, Medizin und Theologie studiert, ist jedoch vermögenslos ('weder Gut noch Geld') und verzweifelt daran, dass wahre Naturerkenntnis dem menschlichen Verstand unzugänglich bleibt.",
             textZH:
-              "他穷尽哲学、法律、医学与神学，却身无分文（‘既无财产又无金钱’），更对人类知性终究无法掌握终极自然真理感到绝望崩塌。",
+              "他以三十年皓首穷经证实：传统经院学术不仅无法通达终极自然奥义（‘自知人类一无所知’），而且在现实生活中使他陷入尊严与物质的双重赤贫（‘无金钱财产、无尘世荣光’），更沦为欺骗学生的虚伪教书匠。",
             isCorrect: true,
           },
           {
@@ -367,7 +367,7 @@ const EXCERPTS: TextExcerpt[] = [
             textDE:
               "Er bedauert vor allem den Verlust seines Universitätslehrstuhls und plant die Eröffnung einer privaten Apotheke in Leipzig.",
             textZH:
-              "他主要悔恨自己被大学剥夺了讲席教席，并计划在莱比锡开设私人药铺维生。",
+              "他主要批判神学垄断了自然科学的研究经费，导致医学与法学无法展开经验主义解剖实验，因而悔恨自己未能早日脱离教会管辖前往新大陆开办实科学校。",
             isCorrect: false,
           },
           {
@@ -375,18 +375,18 @@ const EXCERPTS: TextExcerpt[] = [
             textDE:
               "Er ist stolz auf seine akademischen Titel als Magister und Doktor und möchte sein Wissen in einem neuen Handbuch der Naturlehre publizieren.",
             textZH:
-              "他为自己荣膺硕士与博士头衔深感自豪，正准备将毕生所学汇编成自然科学指南出版。",
+              "他认为四大传统学科的逻辑推演本身严密无误，但因当时哥廷根大学学派内讧频繁、同行评议不公，使他失去了晋升帝国顾问的机会，从而产生了暂时性的职业倦怠。",
             isCorrect: false,
           },
         ],
         explanationDE:
-          "Goethe lässt Faust die gesamte damalige Wissensordnung (Artistenfakultät + die drei oberen Fakultäten Jura, Medizin, Theologie) abarbeiten. Das nüchterne Fazit: Trotz Titeln völlige Orientierungslosigkeit ('armer Tor') und absolute Armut.",
+          "Goethe lässt Faust die gesamte damalige Wissensordnung abarbeiten: Das Resümee ist der absolute geistige und materielle Nullpunkt.",
         explanationZH:
-          "歌德借浮士德之口全盘检视欧洲中世纪以来的四大经典知识体系。其残酷结论是：空有虚衔，却毫无真知（‘可怜的愚汉’），且尘世财产与意义荡然无存。",
+          "【✅ 正解依据与文本锚点】\n第 354–376 行构成了全剧著名的「学者危机总清算」（Abrechnung mit der Spätscholastik）。歌德让浮士德自底向上的检视中世纪以来的四大经典分科（预备学科 Artistenfakultät / 哲学，以及三门高等学院：法学、医学、神学）。浮士德的绝望具有双重毁灭性：\n1. 认识论灭顶：人类纯粹依靠理性字面推演根本无法洞悉宇宙生命本源（„Dass wir nichts wissen können!“，第 364 行）；\n2. 存在与生存清零：他既无财产金钱，又无世俗名望（„Weder Gut noch Geld, noch Ehr und Herrlichkeit der Welt“），甚至在道德上痛感自己沦为误人子弟的骗子（„unsre Schüler an der Nase herumführen“）。\n\n【❌ 干扰项逐项诊断】\n• 选项 B 诊断（时代概念倒错）：将 16 世纪至 18 世纪末的形而上学存在危机降维成了 19 世纪晚期关于「科研经费分配」与「实科中学（Realschule）」的现代世俗化体制争端；\n• 选项 C 诊断（庸俗化心理误读）：浮士德的痛苦绝非学者晋升受阻的职业倦怠（Burnout），而是直面人类理性极限时的形而上学绝望。\n\n【🏛 时代思潮与哲学脉络】\n歌德借此打破了启蒙运动（Aufklärung）对「理性全能论」的盲目乐观迷信，宣告单凭笛卡尔式的知性推演无法拯救人类的心灵荒原。",
         klausurSatzDE:
-          "In den einleitenden Versen 354–376 konstatiert Faust das Scheitern seines lebenslangen Studiums aller vier Fakultäten, indem er formale Gelehrsamkeit als inhaltsleere Illusion entlarvt und seinen materiellen wie geistigen Ruin bilanziert.",
+          "In der Exposition (V. 354–376) bilanziert Faust das existentielle Scheitern seines lebenslangen Studiums aller vier Fakultäten: Indem er das scholastische Buchwissen als illusionsstiftenden Selbstbetrug entlarvt, radikalisiert er seine Erkenntniskrise zu einem absoluten geistigen und materiellen Nullpunkt.",
         klausurSatzZH:
-          "在开篇第 354 至 376 行中，浮士德宣告了其毕生研习四大传统学科的彻底失败，不仅揭露了经院学衔的虚妄空洞，更总结了自己在精神与物质上的全面破产。",
+          "在开篇独白（第 354–376 行）中，浮士德全面清算了其毕生研习四大传统学院所遭遇的存在主义溃败：他将经院书斋知识揭露为虚妄的自我欺骗，从而将其认识论危机激化为精神与物质的双重绝对归零。",
         ehzKeyPointsDE: [
           "Nennung der vier Fakultäten: Philosophie, Jura, Medizin, Theologie.",
           "Existenzieller Nullpunkt: Erkenntnisgrenze ('dass wir nichts wissen können').",
@@ -394,10 +394,10 @@ const EXCERPTS: TextExcerpt[] = [
           "Verlust pädagogischer Legitimität: Täuschung der Schüler.",
         ],
         ehzKeyPointsZH: [
-          "准确列举四大传统学科：哲学、法学、医学、神学。",
-          "指出认识论归零：‘人类根本什么都无法知道’。",
-          "概括世俗利益的剥夺：无钱、无产、无世俗名望。",
-          "自省教育合法性的丧失：‘牵着学生的鼻子走’。",
+          "踩分点 1 (Inhalt 4P)：精准列举四大学科（哲学、法学、医学、神学）并定性为欧洲经院知识传统完备体系。",
+          "踩分点 2 (Erkenntnis 4P)：提炼认识论死局——指出理性逻辑在终极自然面前的无能（引证 V. 364 „dass wir nichts wissen können“）。",
+          "踩分点 3 (Existenz 4P)：概括生存与道德的三重破产：无产无金（Gut/Geld）、无世俗尊荣（Ehr）、教育合法性沦丧（An-der-Nase-Herumführen）。",
+          "扣分警示 (Abzug -2P)：若仅将此独白解读为普通失业或学者心理倦怠，未上升至启蒙理性危机者，扣除相应层级分数。",
         ],
       },
       {
@@ -409,14 +409,14 @@ const EXCERPTS: TextExcerpt[] = [
         questionDE:
           "Welches Kernmotiv des 'Sturm und Drang' bzw. der deutschen Klassik manifestiert sich in den berühmten Versen 382–383 ('Dass ich erkenne, was die Welt / Im Innersten zusammenhält')?",
         questionZH:
-          "在全剧最著名的第 382–383 行（‘好教我参透：究竟是什么力量 / 在最核心深处维系着整个宇宙’）中，集中体现了狂飙突进与德国古典文学的哪一核心母题？",
+          "在独白核心诗行第 382–383 行（„Dass ich erkenne, was die Welt / Im Innersten zusammenhält“）中，浮士德所宣示的探索诉求如何体现了「狂飙突进」（Sturm und Drang）与「浮士德精神」（Faustisches Streben）的崇高本质？",
         options: [
           {
             id: "a",
             textDE:
               "Das titanische Faustische Streben: Die Weigerung, sich mit beschränktem Buchwissen zu begnügen, und der unbedingte Drang nach ganzheitlicher Wesenserkenntnis der Natur.",
             textZH:
-              "泰坦式‘浮士德求索精神’（Faustisches Streben）：绝不安于干瘪孤立的书斋死知识，誓要把握宇宙本体论全貌与生命源动力的极度冲动。",
+              "他所追求的绝非冷冰冰的外在科学定律或孤立的经验事实拼凑，而是渴求与宇宙生生不息的活态有机造化源初力量（‚alle Wirkenskraft und Samen‘）实现神性合一与直观体悟。",
             isCorrect: true,
           },
           {
@@ -424,7 +424,7 @@ const EXCERPTS: TextExcerpt[] = [
             textDE:
               "Das barocke 'Memento Mori': Die ständige Todesermahnung und die Sehnsucht nach asketischer Weltabgewandtheit.",
             textZH:
-              "巴洛克时期的‘铭记死亡’（Memento Mori）母题：无休止反思肉身速朽，渴求禁欲出世遁入空门。",
+              "他试图恢复托马斯·阿奎那的经院哲学权威，证明上帝在创世时赋予神圣罗马帝国的君权神授法律基础具有不可动摇的永恒性。",
             isCorrect: false,
           },
           {
@@ -432,27 +432,28 @@ const EXCERPTS: TextExcerpt[] = [
             textDE:
               "Der aufklärerische Deismus: Das Vertrauen, dass Gott die Welt wie ein perfektes mechanisches Uhrwerk konstruiert hat.",
             textZH:
-              "启蒙运动的自然神论（Deismus）：坚信上帝宛如钟表匠，将宇宙构筑为精密运转的机械装置。",
+              "他希望借助莱布尼茨的单子论数学公式，将大自然的一切生物运动精确计算为无摩擦的机械齿轮运动，从而制造出永动机。",
             isCorrect: false,
           },
         ],
         explanationDE:
-          "Das 'Faustische Streben' (Titanismus) überwindet die rationalistische Aufklärung: Faust sucht keine bloßen mathematisch-mechanischen Formeln, sondern die organische, lebendige Urkraft des Kosmos ('alle Wirkenskraft und Samen').",
+          "Das Faustische Streben überwindet die rationalistische Aufklärung: Faust sucht die lebendige Urkraft des Kosmos statt toter Begriffe.",
         explanationZH:
-          "‘浮士德式求索’（Titanismus / 狂飙突进时期的巨人主义）超越了启蒙理性的机械论框架：他要洞悉的不是冰冷的公式，而是宇宙有机生命繁衍的终极奥义与本源动力。",
+          "【✅ 正解依据与文本锚点】\n第 382–383 行是全剧最著名的哲理诗句（Kernzitat），确立了整个德语文学史上最崇高的母题——「浮士德式永恒求索」（Faustisches Streben）：\n1. 质的跃迁：浮士德不再满足于「在词藻杂货堆里翻检（in Worten kramen）」，他要把握的是维系宇宙生生不息运转的内在灵魂枢纽；\n2. 活态有机论（Organismusgedanke）：结合第 384 行的「全部活力与胚芽（alle Wirkenskraft und Samen）」，歌德在此融入了赫尔德（Herder）与斯宾诺莎（Spinoza）的泛神论生命观——大自然并非冰冷的机械钟表，而是充满神性神力的生命巨流，浮士德渴望的是主体与客体的终极融合。\n\n【❌ 干扰项逐项诊断】\n• 选项 B 诊断（反动经院神学）：浮士德在开篇就已经宣称自己「既不怕地狱也不怕魔鬼（fürchte mich weder vor Hölle noch Teufel，V. 369）」，彻底打破了天主教教权枷锁，绝不可能去为经院神权背书；\n• 选项 C 诊断（启蒙机械论混淆）：将宇宙拆解为「无摩擦齿轮」是笛卡尔与牛顿机械宇宙观的典型产物，而狂飙突进时期的歌德最激烈的正是反抗这种将自然物化去神圣化的机械模型。\n\n【🏛 时代思潮与哲学脉络】\n此处的浮士德展现了狂飙突进典型的「泰坦主义（Titanismus）」：拒绝接受凡人理性的有限天花板，宁可打破禁忌涉足魔法（Magie），也要夺取等同于造物主的无限神性。",
         klausurSatzDE:
-          "Das in den Versen 382–385 artikulierte Verlangen markiert das zentrale Faustische Erkenntnismotiv des Dramas: Faust begehrt nicht bloß additive Faktenkenntnis, sondern die unmittelbare Schau der ontologischen Schöpfungskräfte.",
+          "Mit dem berühmten Bekenntnis, erkennen zu wollen, »was die Welt im Innersten zusammenhält« (V. 382f.), artikuliert Faust das titanische Streben des Sturm und Drang nach einer holistischen Naturmystik, die den analytischen Reduktionismus der Aufklärung radikal transzendiert.",
         klausurSatzZH:
-          "第 382 至 385 行所迸发的情感确立了全剧的核心母题——浮士德式的本体求索：他绝非追求零散事实的简单累加，而是渴望直接目睹并融入造化的源初力量。",
+          "通过宣告渴求参透‘究竟何种力量在最核心深处维系着整个宇宙’（第382–383行），浮士德精准外化了狂飙突进时期整体性自然神秘主义的泰坦求索，从根本上超越了启蒙运动割裂的分析还原论。",
         ehzKeyPointsDE: [
           "Begriff 'Titanismus / Faustisches Streben' präzise definieren.",
           "Kontrastierung von toter Begriffswelt ('Worte kramen') und organischer Naturkraft ('Samen').",
           "Überwindung der rationalistischen Schranken durch Magie.",
         ],
         ehzKeyPointsZH: [
-          "准确界定‘泰坦精神 / 浮士德式求索’的概念内涵。",
-          "对比干瘪语言词藻（‘Worte kramen’）与鲜活有机生命（‘Samen’）的本质鸿沟。",
-          "阐明其企图借助魔法打破人类知性天花板的狂妄野心。",
+          "踩分点 1 (Definition 4P)：精准界定「浮士德式求索精神（Faustisches Streben）」及狂飙突进泰坦主义（Titanismus）特征。",
+          "踩分点 2 (Antithese 4P)：尖锐对比死文字考据（Worten kramen）与自然有机生命原动力（Wirkenskraft und Samen）的本质对立。",
+          "踩分点 3 (Pantheismus 4P)：指出歌德泛神论（Gott-Natur）思想在诗句中的渗透——追求主体与自然造化的神圣同一。",
+          "扣分警示 (Abzug -2P)：若未能指出该母题对启蒙理性机械论的超越，仅停留于字面科学好奇心，视为论证浮于表面。",
         ],
       },
       {
@@ -464,14 +465,14 @@ const EXCERPTS: TextExcerpt[] = [
         questionDE:
           "Welche dramaturgische Schlüsselfunktion erfüllt dieser Monolog in der Makrostruktur des Gesamtwerkes, und welche unmittelbare Kausalkette stößt er im Folgenden an?",
         questionZH:
-          "此段开篇独白在整部《浮士德 I》的戏剧宏观结构中承担了怎样的关键职能？它在接下来的情节中直接引发了哪一连串多米诺骨牌式的因果链条？",
+          "此段独白在整部《浮士德 I》的戏剧宏观架构中承担了怎样的「多米诺骨牌」首推职能？它在接下来的场景中不可逆地引发了怎样环环相扣的因果戏剧行动链条？",
         options: [
           {
             id: "a",
             textDE:
               "Er dient als psychologische Exposition der Gelehrtentragödie: Die Verzweiflung treibt Faust zur Geisterbeschwörung (Erdgeist), nach dessen schroffer Zurückweisung an den Rand des Suizids und öffnet ihn letztlich für den teuflischen Pakt mit Mephisto.",
             textZH:
-              "它构成了‘学者悲剧’的心理铺垫开端：绝望促使他召唤地灵（Erdgeist），在地灵冷酷拒绝其比肩企图后将其逼至服毒自尽边缘，并最终为其接受魔鬼梅菲斯特的赌约契约彻底敞开大门。",
+              "独白呈现的存在绝境直接触发其‘转向魔法’，而召唤地灵遭受的残酷人格羞辱进一步将其逼向‘服毒自尽’边缘；自杀未遂后的侥幸与空虚，最终在心理上为他毫无顾忌地接受‘魔鬼血契’奠定了无可替代的行动支点。",
             isCorrect: true,
           },
           {
@@ -479,7 +480,7 @@ const EXCERPTS: TextExcerpt[] = [
             textDE:
               "Er bildet den Schlusspunkt der Gretchentragödie und fasst Fausts Reue über den Tod von Valentins Schwester zusammen.",
             textZH:
-              "它构成了‘格蕾琴悲剧’的终局反思，总结了浮士德对瓦伦廷妹妹之死所承担的迟到忏悔。",
+              "独白促使浮士德立刻顿悟了基督教天恩救赎的真谛，使他当晚便在书斋中写下《圣经·约翰福音》的德语译本，并在第二天复活节清晨前往格蕾琴的忏悔室完成了灵魂洗礼。",
             isCorrect: false,
           },
           {
@@ -487,27 +488,28 @@ const EXCERPTS: TextExcerpt[] = [
             textDE:
               "Er dient der Einführung der Wette zwischen dem Herrn und Mephisto im 'Prolog im Himmel'.",
             textZH:
-              "它专用于在人间引出‘天上序曲’中上帝与魔鬼梅菲斯特关于浮士德灵魂归属的对赌。",
+              "独白在戏剧法上纯粹是一段独立抒情插曲，与后文魔鬼梅菲斯特的登场毫无因果关联，梅菲斯特之所以来到书斋完全是出于天上序曲中上帝的直接行政派遣。",
             isCorrect: false,
           },
         ],
         explanationDE:
-          "Ohne diese existentielle Ausweglosigkeit im Studierzimmer wäre Fausts Bereitschaft, sich mit dem Teufel einzulassen, psychologisch unmotiviert. Der Monolog begründet Fausts absolute Radikalität und Risikobereitschaft.",
+          "Dramaturgisch fungiert der Monolog als unverzichtbare Kausalkette: Wissenschaftskrise → Magie → Erdgeist → Giftbecher → Mephisto-Pakt.",
         explanationZH:
-          "若无书斋中这种走到尽头的深重绝望，浮士德后续与魔鬼缔结血契在心理学上就将失去立足点。正是此处的破罐破摔，赋予了他不顾毁灭的亡命赌徒心态。",
+          "【✅ 正解依据与文本锚点】\n在亚里士多德式与现代戏剧因果法中，黑夜独白构成了「学者悲剧（Gelehrtentragödie）」无可替代的第一推动力：\n1. 动机链条 1：理性破产 → 转向通灵魔法（„Drum hab ich mich der Magie ergeben“，V. 377）；\n2. 动机链条 2：宏观宇宙符号（Makrokosmos）的隔靴搔痒 → 强行召唤地灵（Erdgeist）→ 遭地灵严酷鄙夷（„Du gleichst dem Geist, den du begreifst, / Nicht mir!“）引发精神崩塌；\n3. 动机链条 3：认知天花板被焊死 → 试图通过服毒自杀（Giftbecher）以肉身毁灭强渡彼岸 → 被复活节圣歌（Osterglocken）唤回尘世留恋；\n4. 动机链条 4：城门口游春时无处安放的精神危机 → 招引黑犬进书斋 → 浮士德已成亡命之徒，彻底为与梅菲斯特立下豪赌契约做好了心理准备。\n\n【❌ 干扰项逐项诊断】\n• 选项 B 诊断（情节移花接木与道德美化）：浮士德翻译约翰福音是在与魔鬼立约之前（将 „Im Anfang war das Wort“ 改为 „die Tat“，展现行动主义而非虔信）；格蕾琴更是后文「市民悲剧（Gretchentragödie）」才登场的受害者，浮士德绝非圣徒；\n• 选项 C 诊断（抹杀戏剧内在必然性）：若无此独白揭示浮士德破罐破摔的绝境，后续他毫不犹豫与魔鬼赌命的行为将在心理学上显得毫无说服力。戏剧必须由浮士德内在危机自发推进。\n\n【🏛 时代思潮与哲学脉络】\n歌德在此展现了深刻的因果宿命：浮士德之所以走向深渊，不是因为他平庸邪恶，恰恰是因为其精神追求过于崇高而尘世无法承载。",
         klausurSatzDE:
-          "Dramaturgisch fungiert der Monolog als Exposition der Gelehrtentragödie, indem er Fausts inneren Notstand offenlegt und somit die Kausalitätskette von Erdgeistbeschwörung über Suizidversuch bis zum Mephisto-Pakt zwingend grundlegt.",
+          "Dramaturgisch fungiert der Eingangsmonolog als psychologische Exposition der Gelehrtentragödie, indem er die unausweichliche Kausalitätskette von magischer Geisterbeschwörung über die existentielle Zurückweisung durch den Erdgeist bis hin zur Suizidalität und der daraus resultierenden Paktbereitschaft zwingend grundlegt.",
         klausurSatzZH:
-          "在戏剧法上，该独白承担了学者悲剧的开端铺垫功能，剖白了浮士德的内在绝境，从而必然地诱发了由召唤地灵、企图自杀到与梅菲斯特立约的戏剧因果锁链。",
+          "在戏剧法上，开篇独白充当了学者悲剧的心理铺垫开端，必然地奠定了从通灵召魂、遭地灵无情贬斥、诱发自杀倾向直至最终甘愿立下魔鬼契约的一连串不可逆因果链条。",
         ehzKeyPointsDE: [
           "Einordnung in die Szenenfolge: Nach 'Prolog im Himmel', vor 'Vor dem Tor'.",
           "Kausale Verknüpfung: Wissenschaftskrise → Magie → Erdgeist → Giftbecher → Teufelspakt.",
           "Verbindung von Gelehrtentragödie und späterer Gretchentragödie.",
         ],
         ehzKeyPointsZH: [
-          "精准定位戏剧位序：紧随‘天上序曲’之后，‘城门口游春’之前。",
-          "清晰梳理因果链：学术危机 → 投身魔法 → 地灵受挫 → 服毒自杀未遂 → 缔结魔契。",
-          "点明从个人学者求索向后续格蕾琴道德悲剧转移的深层动力。",
+          "踩分点 1 (Exposition 4P)：准确定位开篇独白在整剧宏观结构中的功能——奠定学者悲剧（Gelehrtentragödie）的心理与情节基石。",
+          "踩分点 2 (Kausalkette 4P)：完整梳理四级因果递进：学术危机 → 投身魔法 → 地灵受挫自尊破碎 → 服毒自尽未遂 → 缔结魔契。",
+          "踩分点 3 (Figurenmotivation 4P)：剖析浮士德亡命徒赌徒心理（Risikobereitschaft）的形成机理，说明其接受魔鬼要约的内在合理性。",
+          "扣分警示 (Abzug -2P)：若割裂独白与后续情节的内在逻辑联系，将其孤立描述为无因果作用的情感宣泄，扣除结构分析分值。",
         ],
       },
       {
@@ -519,14 +521,14 @@ const EXCERPTS: TextExcerpt[] = [
         questionDE:
           "Welche historische Konnotation tragen Goethes Wendungen „armer Tor“ (V. 358), „Laffen“ (V. 366) und „in Worten kramen“ (V. 385) im Kontext der damaligen Gelehrsamkeit?",
         questionZH:
-          "歌德在诗行中使用的‘armer Tor’（358行）、‘Laffen’（366行）以及‘in Worten kramen’（385行），在当时的学术语境中承载了怎样的历史语用内涵？",
+          "歌德在独白中密集选用了具有强烈贬抑色彩的民间与古典词汇，如「armer Tor」（第358行）、「Laffen」（第366行）以及「in Worten kramen」（第385行）。结合当时的语言社会学语境，这些词汇承载了怎样的修辞颠覆力？",
         options: [
           {
             id: "a",
             textDE:
               "„Tor“ meint den trotz Buchwissens unweisen Menschen; „Laffen“ degradiert das universitäre Establishment zu eitlen Gecken; „in Worten kramen“ brandmarkt scholastische Begriffsklauberei ohne Lebensbezug.",
             textZH:
-              "‘Tor’指空有经院学衔却缺乏真正宇宙大智慧的‘愚痴者’；‘Laffen’将大学体面阶层贬为虚荣轻浮的纨绔与佞臣；‘in Worten kramen’直指脱离鲜活生命、在故纸堆字缝里扣字眼的僵化经院考据。",
+              "歌德以市井大众口语反讽暴力砸碎了经院学术的体面外壳：‘Tor’将拥有博士学衔的学者定性为精神愚人；‘Laffen’将道貌岸然的教授群体贬为浅薄佞臣与纨绔；‘kramen’则将崇高的神圣学术推演贬低为在旧货杂物堆里翻检毫无生气的破烂。",
             isCorrect: true,
           },
           {
@@ -534,7 +536,7 @@ const EXCERPTS: TextExcerpt[] = [
             textDE:
               "„Tor“ beschreibt ein architektonisches Portal; „Laffen“ bezeichnet studentische Verbindungen; „kramen“ bedeutet das Verkaufen von Schriften auf dem Marktplatz.",
             textZH:
-              "‘Tor’指哥特书斋的拱券大门；‘Laffen’指当时的新式学生社团；‘kramen’指在集市摆摊叫卖学术手册。",
+              "这些词汇是 18 世纪魏玛宫廷贵族在沙龙交际中专用的高雅社交辞令，歌德借此展示浮士德作为上流社会枢密顾问官的优雅教养与外交礼节。",
             isCorrect: false,
           },
           {
@@ -542,27 +544,28 @@ const EXCERPTS: TextExcerpt[] = [
             textDE:
               "Alle drei Begriffe stammen aus der mittelhochdeutschen Minnedichtung und drücken Fausts unerfüllte Liebessehnsucht aus.",
             textZH:
-              "这三个词汇均源自中古高地德语宫廷抒情诗，表达的是浮士德对纯洁女性爱情的求而不得。",
+              "歌德从马丁·路德德译《圣经》的启示录中直接借用了这些末世神学词汇，旨在告诫读者审判日即将来临，任何异端学者都将被视为撒旦的走狗。",
             isCorrect: false,
           },
         ],
         explanationDE:
-          "Goethes Sprachwahl ist hochexplosiv: Er nutzt volkssprachliche, abwertende Ausdrücke, um die elitäre Fassade der Spätscholastik zu zertrümmern. Wissenschaft wird semantisch als nutzloses 'Trödeln' (kramen) abqualifiziert.",
+          "Goethes Sprachwahl ist revolutionär: Volkssprachliche Abwertungen zerstören das elitäre Gehabe der Spätscholastik.",
         explanationZH:
-          "歌德在用词上极具颠覆性：他大胆采纳市井民间贬抑性词汇砸碎经院正统的高雅面具，将自命清高的学术考据在语义上贬斥为毫无产出价值的‘在旧货摊翻破烂’（kramen）。",
+          "【✅ 正解依据与文本锚点】\n歌德在狂飙突进时期最革命性的贡献之一便是「语言的非宫廷化与粗砺现实主义复归」：\n1. „armer Tor“（可怜的愚汉）：在古高地与中古德语中，„Tor“ 代表狂妄自大却对真实天命毫无感知的愚痴者。浮士德自加硕士（Magister）与博士（Doktor）高贵桂冠，转瞬间自嘲为「愚汉」，构成刺痛人心的反讽矛盾法（Oxymoron）；\n2. „Laffen“（佞臣/浮滑纨绔）：源自古低地德语，特指那些毫无真才实学、依附体制耀武扬威的庸俗之辈。浮士德用 „gescheiter als alle die Laffen, Doktoren, Magister, Schreiber und Pfaffen“ 将所有传统学术官僚一网打尽；\n3. „in Worten kramen“（翻检词藻字据）：动词 „kramen“ 带有极其浓烈的贱民集市色彩，原指小商贩在旧货摊里手忙脚乱地翻动破旧织物杂物。学术被降格为「翻破烂」，无情撕下了经院哲学装腔作势的神圣遮羞布。\n\n【❌ 干扰项逐项诊断】\n• 选项 B 诊断（词域完全颠倒）：将激进反叛的狂飙突进粗砺语言，曲解为法国化的魏玛宫廷客套辞令（Hofsprache），完全违背了歌德反抗古典宫廷戏剧浮华文风的初衷；\n• 选项 C 诊断（神学原条教条主义）：将歌德自觉的文学反叛语言误读为路德教派的末日宣教，脱离了德国启蒙时代与狂飙突进时期的思想史语境。\n\n【🏛 时代思潮与哲学脉络】\n这种语用颠覆正是德国 18 世纪「民族文学解放」的核心策源：打破拉丁化经院语法与法语宫廷文风，重新接引 16 世纪汉斯·萨克斯（Hans Sachs）式的民间鲜活血脉。",
         klausurSatzDE:
-          "Die Wortwahl Goethes – von der Selbsttitulierung als 'armer Tor' bis zur Entwertung von Bildungskonventionen als 'in Worten kramen' – verdeutlicht die Kluft zwischen toter Nomenklatur und existenzieller Wahrheit.",
+          "Goethes provokante Wortwahl – von der Selbstentwürdigung als »armer Tor« über die Invektive gegen universitäre Würdenträger als »Laffen« bis zur Degradierung von Wissenschaft als bloßes »in Worten kramen« – dekonstruiert die elitäre Scheinautorität der Spätscholastik mit drastischer sprachlicher Wucht.",
         klausurSatzZH:
-          "歌德的用词——从自嘲为‘可怜的愚汉’，到将传统学术贬低为‘在文字堆里翻捡’——鲜明地揭示了僵死学术概念与存在主义终极真理之间的巨大鸿沟。",
+          "歌德极具挑衅性的用词——从自嘲为‘可怜的愚汉’，到怒斥大学体面学者为‘浮滑佞臣’，再到将科学推演贬黜为低贱的‘旧货摊翻检词藻’——以惊人的语言冲击力彻底解构了晚期经院哲学的虚伪精英权威。",
         ehzKeyPointsDE: [
           "Etymologische Präzision: 'Tor' = Narr vs. intellektueller Anspruch.",
           "Soziokulturelle Konnotation: 'Laffen' als Entlarvung autoritärer Scheinautoritäten.",
           "Metaphorische Abwertung: 'Kramen' im Gegensatz zu lebendigem Schaffen.",
         ],
         ehzKeyPointsZH: [
-          "词源准确性：区分普通无知与大学者自省下的‘知识愚人’。",
-          "社会文化内涵：‘Laffen’对虚妄权威与教条主义的无情解构。",
-          "隐喻贬义：将学术推演降维为旧物杂货翻检。",
+          "踩分点 1 (Semantik 'Tor' 3P)：分析「Tor」与「Magister/Doktor」的强烈反讽对照，揭示知识丰富与宇宙智慧赤贫的张力。",
+          "踩分点 2 (Soziokultur 'Laffen' 3P)：阐明「Laffen」对建制派学者（Doktoren, Schreiber, Pfaffen）伪善外衣的颠覆性嘲弄。",
+          "踩分点 3 (Metaphorik 'kramen' 3P)：精准拆解「in Worten kramen」的市井商业隐喻——将形而上学推演贬斥为死文字的杂物翻捡。",
+          "踩分点 4 (Epoche 3P)：结合狂飙突进（Sturm und Drang）反叛宫廷优雅语言、拥抱民间生命力的语域特征进行综述评价。",
         ],
       },
       {
@@ -574,14 +577,14 @@ const EXCERPTS: TextExcerpt[] = [
         questionDE:
           "Welche formalen und rhetorischen Gestaltungsmerkmale (Metrik, Stilfiguren) prägen Goethes Verse, und wie spiegeln sie Fausts psychische Verfassung wider?",
         questionZH:
-          "歌德在此段诗行中运用了哪些标志性的形式格律（Metrik）与修辞手法（Stilmittel）？它们如何外化并映射出浮士德内心的剧烈精神动荡？",
+          "歌德在此段诗行中选用古德国四音步「Knittelvers」（短韵偶句体）与随韵（Paarreim），并大量杂糅感叹词（Exclamatio）、尖锐对照（Antithese）与突兀破折号。这种形式格律如何服务于浮士德心理状态的外化表达？",
         options: [
           {
             id: "a",
             textDE:
               "Der vierhebige Knittelvers mit freier Senkungsfüllung und Paarreimen verleiht der Rede einen erregten, pochenden Redefluss; rhetorische Ausrufe (Exclamatio 'ach!'), drastische Tiervergleiche ('Hund') und Antithesen spiegeln seine Zerrissenheit.",
             textZH:
-              "采用四音步Knittelvers古朴偶韵短诗格律，自由的轻音顿挫赋予独白狂暴急促、如心脏剧烈搏动般的语流；感叹法（‘ach!’）、严酷的野兽粗鄙隐喻（‘Hund’）与鲜明对照（Antithese）精准外化其极度精神分裂与挣扎。",
+              "具有自由轻音填充的四音步 Knittelvers 打破了传统戏剧格律的死板工整，形成如心脏剧烈搏动般的急促语流；感叹法（‘ach!’）、严酷野兽比喻（‘kein Hund’）与破折号停顿，精准外化了浮士德内心剧烈的精神动荡与濒临绝境的痉挛挣扎。",
             isCorrect: true,
           },
           {
@@ -589,7 +592,7 @@ const EXCERPTS: TextExcerpt[] = [
             textDE:
               "Klassischer fünfhebiger Blankvers ohne Reim, der durch vollkommene Harmonie und Ruhe antike Gelassenheit demonstriert.",
             textZH:
-              "采用严整无韵五音步抑扬格无韵诗（Blankvers），以近乎完美的和谐静穆展现古典主义的不以物喜、不以己悲。",
+              "Knittelvers 是为了模仿天主教复调弥撒的平缓圣咏，通过绝对对称的抑扬格五音步，营造出超脱尘世焦虑的安详冥想氛围，旨在向观众传达内心的无喜无悲。",
             isCorrect: false,
           },
           {
@@ -597,27 +600,28 @@ const EXCERPTS: TextExcerpt[] = [
             textDE:
               "Ein gereimtes Sonett mit strenger Terzett-Struktur, das rational geordnete Argumente wie ein juristisches Plädoyer gliedert.",
             textZH:
-              "采用严格遵循十四行诗（Sonett）的起承转合结构，如法庭答辩般将论据编排得井井有条、逻辑严密。",
+              "这纯粹是歌德在早年创作戏剧时格律技巧不成熟留下的技术硬伤，歌德在后来的魏玛古典主义修正版中已全面放弃此种粗糙形式，改用严格的古典酒神赞歌颂体。",
             isCorrect: false,
           },
         ],
         explanationDE:
-          "Der Knittelvers ist kein formelles Manko, sondern bewusstes Stilmittel: Er knüpft an die Dichtung des 16. Jahrhunderts (Hans Sachs) an, erzeugt dynamische Unruhe und unterscheidet sich radikal von der glatten Eleganz des französischen Hoftheaters.",
+          "Der Knittelvers ist kein formelles Manko, sondern bewusstes Stilmittel: Er erzeugt seismographische Unruhe und bricht mit der starren Hofdichtung.",
         explanationZH:
-          "歌德选用古德国Knittelvers短韵绝非草率，而是高度自觉的美学实践：它致敬了16世纪汉斯·萨克斯等平民大师的铿锵生命力，打破了宫廷法语戏剧虚伪工整的桎梏，让读者真切听到浮士德灵魂的战栗与呐喊。",
+          "【✅ 正解依据与文本锚点】\n歌德选用 Knittelvers 是德国戏剧史上里程碑式的形式美学自觉（Formbewusstsein）：\n1. 音步自由性：Knittelvers 固定为四重音步（vier Hebungen），但轻音音节数量完全自由（freie Senkungsfüllung）。这种韵律绝不像法国古典主义的六音步亚历山大琴体（Alexandriner）那样平整匀称，而是随着呼吸狂暴波动，时而短促迫切（„Habe nun, ach! Philosophie“），时而沉重绵长；\n2. 随韵（Paarreim, aabb）的紧逼感：两两押韵形成步步紧逼的听觉压迫感，催促戏剧动作快速向前；\n3. 修辞图景的精神地震仪功能：\n   • 叹词 Exclamatio（„ach!“）：开门见山宣告生存痛苦，打破传统学者的沉稳风度；\n   • 严酷动物隐喻 Metapher（„Es möchte kein Hund so länger leben!“）：将博学的自己置于连看门狗都不如的苟且地位，自虐式的夸张（Hyperbel）达到情绪峰值；\n   • 破折号（Gedankenstrich）：在 „Und sehe, dass wir nichts wissen können! – / Das will mir schier das Herz verbrennen“ 处，破折号充当了思想断裂与内心绞痛的停顿符。\n\n【❌ 干扰项逐项诊断】\n• 选项 B 诊断（格律与氛围颠倒）：将狂暴短韵指鹿为马说成「天主教复调平缓圣咏」，其音响特征与冥想氛围完全与浮士德焦躁狂暴的心理状态背道而驰；\n• 选项 C 诊断（否定文学史常识）：Knittelvers 是歌德向宗教改革时期平民诗人汉斯·萨克斯致敬的杰作，更是《浮士德》最标志性的声音指纹，绝非所谓技术缺陷。\n\n【🏛 时代思潮与哲学脉络】\n内容与形式的辩证统一：狂暴无羁的 Knittelvers 本身就是对启蒙理性「秩序、对称、自制」形式枷锁的直接炸裂，是狂飙突进天才美学的最生动注脚。",
         klausurSatzDE:
-          "Formal unterstützt der unruhige Rhythmus des Knittelverses die emotive Erregung des Sprechers: Die Anhäufung von Exclamationes, Antithesen und expressiven Metaphern zeichnet die innere Getriebenheit Fausts seismographisch nach.",
+          "Indem Goethe den erregten Redefluss Fausts im ungebändigten Rhythmus des vierhebigen Knittelverses fasst und mit expressiven Stilfiguren wie Exclamationes und Antithesen überlagert, fungiert die Metrik als akustisches Seismogramm einer tiefgreifenden psychischen Zerrissenheit.",
         klausurSatzZH:
-          "在形式层面上，Knittelvers格律的波澜起伏生动衬托出言说者的激愤情绪：反复出现的感叹调、尖锐对照以及极具爆发力的隐喻，如地震仪般精准记录下浮士德内心野兽般的被困与暴突。",
+          "歌德将浮士德激愤的语流浇筑于不羁的四音步 Knittelvers 格律之中，并叠加感叹词与对照等爆发性修辞，使形式格律化为精准记录其深层精神分裂与狂躁痛苦的声学地震仪。",
         ehzKeyPointsDE: [
           "Metrik: Vierhebiger Knittelvers (historischer Kolorit des 16. Jh.).",
           "Reimschema: Vorwiegend Paarreim (aabb), rhythmisch drängend.",
           "Figuren: Exclamatio ('ach!'), Oxymoron ('armer Tor'), Enjambement ('was die Welt / Im Innersten').",
         ],
         ehzKeyPointsZH: [
-          "格律定性：四音步Knittelvers，融入16世纪德国民间歌谣的浑厚质感。",
-          "押韵范式：以随韵/偶韵（aabb）为主，音步紧逼扣人心弦。",
-          "典型修辞：感叹词（‘ach!’）、矛盾法（‘armer Tor’）、跨行连缀（‘was die Welt / Im Innersten zusammenhält’）。",
+          "踩分点 1 (Metrik 4P)：精准指出四音步 Knittelvers 及轻音自由填充（freie Senkungsfüllung）的不规则节律特征。",
+          "踩分点 2 (Stilmittel 4P)：分析 Exclamatio (ach!)、Tiervergleich (Hund) 与破折号停顿对心理痉挛的外化功能。",
+          "踩分点 3 (Synthese 4P)：深刻阐述格律形式如何完美服务于狂飙突进反抗宫廷雅正、抒发原始野性激情的戏剧主旨。",
+          "扣分警示 (Abzug -2P)：若仅罗列修辞名称，未能说明其与浮士德痛苦心理之间的功能性映射关系，扣除分析深度分数。",
         ],
       },
       {
@@ -629,14 +633,14 @@ const EXCERPTS: TextExcerpt[] = [
         questionDE:
           "Welche seelische Zerrissenheit und welche paradoxen Charakterzüge offenbart Faust in seinem Verhältnis zur bürgerlichen Gesellschaft einerseits und zur Natur andererseits?",
         questionZH:
-          "浮士德在独白中展现了怎样深刻的精神分裂与悖论性格？他一方面面对世俗市民社会，另一方面面对自然造化，其心理状态呈现何种极性张力？",
+          "结合整段独白，浮士德一方面面对世俗同行展现出冷酷傲慢（„gescheiter als alle die Laffen“），另一方面面对自然神明又陷入无尽的自轻自贱（„armer Tor“、„nichts wissen“）。这种悖论式的双极人格揭示了其怎样的存在主义裂变？",
         options: [
           {
             id: "a",
             textDE:
               "Ein paradoxer Dualismus aus elitärer Überheblichkeit gegenüber den Mitmenschen ('gescheiter als alle die Laffen') und tiefster Ohnmacht vor der Natur ('nichts wissen können'); er verachtet bürgerliche Sicherheit, leidet jedoch unter seiner totalen existentiellen Isolation.",
             textZH:
-              "展现出奇特而深刻的双极分裂：面对尘世同侪展现出极度傲岸冷蔑（‘自认胜过所有蠢材与伪君子’），但面对宇宙造化又展现出深入骨髓的卑微绝望（‘自知人类一无所知’）；他唾弃小市民的平庸安稳，却又备受自身极端精神孤立的折磨煎熬。",
+              "揭示出歌德笔下著名的‘浮士德双重灵魂撕裂’：他在知性优越感上凌驾于庸俗市民之上，因而无法融入世俗平庸的安稳幸福；但面对宇宙造化的无限神圣，其凡人肉身的有限性又令他痛感虚无与瘫痪，这种两极张力注定将其推向悲剧深渊。",
             isCorrect: true,
           },
           {
@@ -644,7 +648,7 @@ const EXCERPTS: TextExcerpt[] = [
             textDE:
               "Er ist ein bescheidener, gottesfürchtiger Gelehrter, der sich nach familiärem Glück und bürgerlicher Eintracht im Kreise der Dorfgemeinschaft sehnt.",
             textZH:
-              "他是一个谦卑敬虔的传统书生，终日向往家庭的天伦之乐，渴望回归乡村邻里社会安享天年。",
+              "证明浮士德患有典型的间歇性精神分裂症，其所有痛苦仅源于独居书斋缺乏社交导致的心智退化，只要娶妻生子便能彻底消解其内心矛盾。",
             isCorrect: false,
           },
           {
@@ -652,27 +656,28 @@ const EXCERPTS: TextExcerpt[] = [
             textDE:
               "Er ist ein rein zynischer Nihilist, der die Natur völlig geringschätzt und ausschließlich nach materieller Bereicherung und politischer Macht am Kaiserhof strebt.",
             textZH:
-              "他是一个纯粹冷酷的虚无主义狂徒，视大自然如草芥，毕生只求在帝国宫廷攫取金钱与政治特权。",
+              "说明浮士德骨子里是一个机会主义骗子，他在市民面前装出博学以骗取学费，在独自一人时又因担心被司法机关识破伪造文凭而惊恐万状。",
             isCorrect: false,
           },
         ],
         explanationDE:
-          "Hier kündigt sich bereits das berühmte Faustische 'Zwei-Seelen-Dilemma' (Vers 1112) an: Der unstillbare Drang nach oben (Transzendenz, Verschmelzung mit der Natur) bei gleichzeitiger Bindung an irdische Begrenztheit und Verzweiflung.",
+          "Hier kündigt sich bereits das Faustische 'Zwei-Seelen-Dilemma' (V. 1112) an: Titanische Hybris prallt auf fundamentale menschliche Ohnmacht.",
         explanationZH:
-          "此处已深刻预示了全剧核心命题‘两个灵魂在胸中争战’（1112行）：一个灵魂渴望拔地而起、与宇宙神性合为一体，另一个灵魂却被困在肉身的局限与冷酷绝望中无处遁形。",
+          "【✅ 正解依据与文本锚点】\n此处已然奠定了全剧第 1112 行最震撼的心理谶语——„Zwei Seelen wohnen, ach! in meiner Brust“（两道灵魂在我胸中交战）：\n1. 向上攀登的灵魂（Der titanische Geist）：傲视群伦的泰坦狂傲（Titanische Hybris）。浮士德蔑视一切体制内的凡夫俗子（Doktoren, Magister, Schreiber, Pfaffen），他拥有超凡的智性自觉，拒绝被琐碎平庸的市民温饱所规训驯化；\n2. 被肉身钉死的灵魂（Die irdische Begrenzung）：面对大自然与浩瀚宇宙，他又无比清醒地意识到人类理性的苍白与肉体皮囊的脆弱。越是渴望与神比肩，越能感受到凡人天花板带来的窒息绝望；\n3. 悲剧根源：他既「回不去平庸安稳的市民生活」，又「上不去全知全能的神圣天堂」。正是这种悬置在人神之间的绝望张力，逼迫他跨越善恶界限，并在后续情节中为了追逐超越性体验而不惜摧毁纯洁无辜的格蕾琴。\n\n【❌ 干扰项逐项诊断】\n• 选项 B 诊断（庸俗心理学消解）：将崇高的存在主义形而上学悲剧降维成「大龄单身宅男缺乏社交」，彻底瓦解了古典悲剧主人公的崇高尊严与时代反思价值；\n• 选项 C 诊断（小人度君子）：浮士德在独白中正是因为无法忍受对学生的欺骗与知识的虚妄才陷入自杀边缘，其痛苦源于极度的良知苛责与求知真诚，绝非世俗诈骗犯的畏罪恐慌。\n\n【🏛 时代思潮与哲学脉络】\n浮士德的人格裂变是现代西方「现代性人（Der moderne Mensch）」的诞生日记：理性的启蒙让人摆脱了神权襁褓成为自主个体，但孤独的主体也因此失去了精神家园，注定在永无止境的漂泊中承受痛苦。",
         klausurSatzDE:
-          "Die Figurenkonzeption Fausts im Eingangsmonolog zeichnet das Porträt eines existentiell Entwurzelten: Zerrissen zwischen titanischem Allmachtsbegehren und niederschmetternder Erkenntnisgrenze verkörpert Faust den modernen Krisenmenschen an der Schwelle zur Moderne.",
+          "In der bipolaren Spannung zwischen elitärer Verachtung des bürgerlichen Konformismus und existentieller Selbstzerrüttung vor der unzugänglichen Natur manifestiert sich bereits Fausts tragisches »Zwei-Seelen-Dilemma«, das seine Unfähigkeit zu irdischer Genügsamkeit ontologisch begründet.",
         klausurSatzZH:
-          "开篇独白对浮士德的人物塑造，刻画了一位存在主义意义上的‘失根之人’：在狂妄的泰坦全知渴求与毁灭性的认识论天花板之间剧烈撕扯，成为了步入近代门槛前现代人精神危机的缩影。",
+          "在蔑视市民庸俗从众的精英傲岸，与面对不可企及的大自然时彻底的精神自我摧毁之间，鲜明地展现出浮士德悲剧性的‘双重灵魂裂变’，在本体论层面上奠定了他绝不可能安于凡尘小确幸的悲剧宿命。",
         ehzKeyPointsDE: [
           "Charakter-Ambivalenz: Hybris vs. Demut/Verzweiflung.",
           "Verhältnis zur Gesellschaft: Verachtung ('Laffen'), Isolation, Einsamkeit.",
           "Verhältnis zur Natur: Sehnsucht nach unmittelbarer Verschmelzung statt wissenschaftlicher Sezierung.",
         ],
         ehzKeyPointsZH: [
-          "人物性格的两面性：自命不凡的狂妄傲骨（Hybris）与绝望自惭的剧烈拉锯。",
-          "与人类社会的关系：深恶痛绝传统建制（‘Laffen’），陷入绝对的精神孤独孤岛。",
-          "与大自然的关系：拒绝把自然当冷冰冰的解剖客体，渴求直接拥抱合一。",
+          "踩分点 1 (Dualismus 4P)：精准分析浮士德双极人格——对市民学术体制的居高临下（Hybris）与面对终极宇宙时的谦卑绝望（Ohnmacht）。",
+          "踩分点 2 (Zwei-Seelen 4P)：联系后文第 1112 行「两道灵魂（Zwei Seelen）」母题，阐明肉身有限性与精神无限性不可调和的矛盾。",
+          "踩分点 3 (Tragik 4P)：揭示该性格结构对整部悲剧的推动作用——注定无法在世俗秩序中获得安宁，必然走向打破道德禁忌的激进冒险。",
+          "扣分警示 (Abzug -2P)：若简单归咎于性格缺陷或病理失常，未理解其代表现代性人类存在困境的崇高性，扣除人物形象评价层级分值。",
         ],
       },
     ],
@@ -870,44 +875,46 @@ const EXCERPTS: TextExcerpt[] = [
         questionDE:
           "Welche präzise Bedingung nennt Faust für den Zeitpunkt, an dem Mephisto seine Seele rechtmäßig fordern darf (V. 1692–1699)?",
         questionZH:
-          "浮士德在诗行 V. 1692–1699 中，为梅菲斯特何时可以合法索取其灵魂设定了什么极其严密的先决条件？",
+          "浮士德在诗行 V. 1692–1699 中为魔鬼何时可以合法索取其灵魂设定了什么极其严密的先决条件？歌德在此如何将传统的民间卖魂契约（Pakt）颠覆为动态的意志之赌（Wette）？",
         options: [
           {
             id: "a",
             textDE:
               "Erst in dem Augenblick, in dem Faust sich in träger Selbstzufriedenheit verliert und zum Moment sagt: »Verweile doch! du bist so schön!«",
             textZH:
-              "唯有当浮士德在懒惰的自我满足中驻足止步，并对某一个瞬间由衷赞叹说出‘停一停吧！你是多么的美丽！’之时。",
+              "浮士德将判定权严格绑定于自身内在的精神求索状态：唯有当他丧失前进意志、在懒惰与世俗享乐中陷入彻底自满并对某个瞬间由衷赞叹说出‘停一停吧！你是多么的美丽！’时，魔鬼方可判其输掉赌局、夺取灵魂；只要他仍在永恒奋斗求索，魔鬼便无可奈何。",
             isCorrect: true,
           },
           {
             id: "b",
             textDE: "Genau 24 Jahre nach der Unterzeichnung des Vertrages mit seinem Blut.",
-            textZH: "在用自己的鲜血签署契约整整 24 年之后。",
+            textZH: "浮士德与魔鬼约定了整整 24 年的固定法定期限，在此期间无论浮士德是否停步，魔鬼都必须无偿提供法力；24 年期满钟声敲响的一刻，魔鬼便可不论条件自动勾走其魂魄。",
             isCorrect: false,
           },
           {
             id: "c",
             textDE: "Sobald Mephisto ihm Reichtum, Jugend und die Liebe Gretchens verschafft hat.",
-            textZH: "只要梅菲斯特为他提供了财富、青春以及格蕾琴的爱情之后。",
+            textZH: "浮士德规定魔鬼必须将他护送至神圣罗马帝国的皇宫加冕为全欧洲皇帝，若魔鬼无法在三年内夺取帝国皇冠，赌约便自动作废且魔鬼将反向成为浮士德的永久奴仆。",
             isCorrect: false,
           },
         ],
         explanationDE:
-          "Faust schließt keinen Zeitvertrag, sondern bindet sein Schicksal an seine innere geistige Dynamik: Stillstand bedeutet Niederlage.",
+          "Faust transformiert den mittelalterlichen Pakt in eine moderne Dynamik-Wette: Nur geistiger Stillstand besiegelt die Niederlage.",
         explanationZH:
-          "浮士德签订的绝非期限固定的买卖契约，而是将自身命运与内在精神求索状态紧密绑定：停滞沉溺即宣告失败。",
+          "【✅ 正解依据与文本锚点】\n第 1692–1699 行是全剧的法律与哲学基石：\n„Werd ich zum Augenblicke sagen: / Verweile doch! du bist so schön! / Dann magst du mich in Fesseln schlagen, / Dann will ich gern zugrunde gehn!“\n1. 从契约到赌约的伟大跃迁：在 1587 年《浮士德民间故事书》（Faustbuch）中，浮士德签订的是卖身契（Pakt）——以 24 年固定期限换取魔术享乐。而歌德将之彻底升华为动态哲学豪赌（Wette）；\n2. 判决标准的内在化：赌局输赢的裁判权不在魔鬼手中，而在浮士德自身的精神能动性上。唯有浮士德「主动放弃对无限的追求，沉溺于当下的凡俗满足（Verweilen）」，他才算真正精神死亡；\n3. 浮士德的胜算自信：浮士德深知大自然与人性的无限渴求，认定尘世没有任何有限的享乐可以真正填饱自己的灵魂，因而立于不败之地。\n\n【❌ 干扰项逐项诊断】\n• 选项 B 诊断（民间故事旧范式倒错）：24 年固定期限是 16 世纪马洛（Christopher Marlowe）与民间木偶戏的陈旧模式。若真有固定年限，浮士德后期的求索与救赎便毫无意义；\n• 选项 C 诊断（把文学巨著降级为权谋爽文）：浮士德在契约之初就鄙视世俗黄金与政治皇权，他要的是吞吐全宇宙的崇高体验，而非小朝廷的虚名。\n\n【🏛 时代思潮与哲学脉络】\n此处直接呼应了天上序曲（Prolog im Himmel）中上帝对浮士德的定性：„Es irrt der Mensch, solang er strebt“（人只要奋斗，就难免迷惘）。在歌德的魏玛古典主义伦理学中，最大的罪孽不是犯错，而是「停滞（Stillstand）」！",
         klausurSatzDE:
-          "Der Pakt wird von Faust als existenzielle Wette definiert, deren Erfüllungsbedingung ausschließlich im subjektiven Stillstand des Strebens (»Verweile doch!«) liegt.",
+          "Indem Faust den traditionellen Teufelspakt in eine anthropologische Dynamik-Wette transformiert (V. 1692ff.), bindet er sein Seelenheil nicht an eine zeitliche Frist, sondern an die Unstillbarkeit seines transzendenten Strebens: Erst die Kapitulation vor dem Moment (»Verweile doch!«) besiegelt seinen Untergang.",
         klausurSatzZH:
-          "浮士德将契约重新定义为一场存在主义的赌约，其输掉赌局的先决条件仅仅在于内在求索意志的主观停顿（‘停一停吧！’）。",
+          "通过将传统魔鬼契约改造为充满人类学动能的意志豪赌（第1692行起），浮士德将其灵魂救赎的裁判权不是绑定于固定时间期限，而是锚定于其超越性求索的永不满足：唯有向某一瞬间屈膝投降（‘停一停吧！’），才会宣告其彻底毁灭。",
         ehzKeyPointsDE: [
           "Identifikation der Kernaussage V. 1692–1693 als Bedingungssatz.",
           "Abgrenzung von traditionellen Teufelsbündnissen mit fester Jahresfrist.",
         ],
         ehzKeyPointsZH: [
-          "精准提炼 V. 1692–1693 条件假设句作为判定赌局输赢的唯一核心准则。",
-          "严格区分传统民间传说中 24 年固定期限出卖灵魂的陈旧模式。",
+          "踩分点 1 (Transformation 4P)：精准指出歌德对传统卖魂契约（Pakt）向现代动态赌约（Wette）的革命性改造。",
+          "踩分点 2 (Kernbedingung 4P)：深入解析「Verweile doch! du bist so schön!」的象征意义——代表精神进取向动物性感官自满的堕落投降。",
+          "踩分点 3 (Prolog-Bezug 4P)：紧扣天上序曲中上帝的判词，阐明人只要保持奋斗求索（Streben），即使历经沉沦亦具备免除罪责的崇高合法性。",
+          "扣分警示 (Abzug -2P)：若混淆传统固定期限民间契约与现代意志之赌，扣除核心主旨分析分数。",
         ],
       },
       {
@@ -919,14 +926,14 @@ const EXCERPTS: TextExcerpt[] = [
         questionDE:
           "Warum handelt es sich bei Fausts Abmachung mit Mephisto nicht um einen traditionellen Teufelspakt, sondern um eine dynamische Wette?",
         questionZH:
-          "为什么浮士德与梅菲斯特达成的协议并非传统民间传说里的被动魔鬼契约，而是一场由浮士德主导的动态‘意志之赌’？",
+          "在这场立约中，浮士德与梅菲斯特各自抱持着怎样截然对立的心理预期？这场赌约为何在本质上是两种根本人性观的殊死决战？",
         options: [
           {
             id: "a",
             textDE:
               "Weil Faust seine Seele erst dann an Mephisto verliert, wenn er sich jemals in träger Selbstzufriedenheit und Genuss erschöpft ('Verweile doch!'), während Mephisto davon ausgeht, ihn mit Sinnesfreuden abzustumpfen.",
             textZH:
-              "因为浮士德唯有在自己哪一天屈服于懒惰自满的世俗享乐、说出‘停一停吧’沉湎止步时，灵魂才会输给魔鬼；他笃定自己的求索永无止境，而梅菲斯特则企图用低俗感官享乐将他驯服腐化。",
+              "浮士德坚信人类灵魂深处的‘神圣求索冲动’永无止境，绝不可能被有限的肉欲享乐填饱；而梅菲斯特作为虚无犬儒主义者，认定人不过是披着理性外衣的动物，笃信只要用美色、权力与浅薄感官刺激便能使其意志瘫痪堕落。",
             isCorrect: true,
           },
           {
@@ -934,7 +941,7 @@ const EXCERPTS: TextExcerpt[] = [
             textDE:
               "Weil Mephisto von Faust verlangt, ihm monatliche Zinsen in Golddukaten zu zahlen.",
             textZH:
-              "因为梅菲斯特仅仅要求浮士德按月用金币支付仆从劳务报酬与利息。",
+              "浮士德打算在契约生效的第一天便故意大喊‘停一停吧’，以此尽早前往地狱刺探冥界虚实并刺杀路西法；而梅菲斯特则深爱浮士德的高洁灵魂，企图用契约保护他不被尘世小人谋害。",
             isCorrect: false,
           },
           {
@@ -942,27 +949,28 @@ const EXCERPTS: TextExcerpt[] = [
             textDE:
               "Weil der Vertrag sofort erlischt, sobald Faust die heilige Messe in Köln besucht.",
             textZH:
-              "因为契约规定一旦浮士德前往科隆大教堂做弥撒，魔鬼的约定便自动作废失效。",
+              "两人在人性观上毫无分歧，都一致赞同康德的绝对命令（Kategorischer Imperativ），立约只是为了向魏玛公国法庭演示一份合法的标准跨国劳动聘用合同。",
             isCorrect: false,
           },
         ],
         explanationDE:
-          "Goethe transformiert die mittelalterliche Volkssage: Faust ist kein passiver Sünder, sondern ein moderner Aktivist. Stillstand ('Verweilen') ist seine Sünde, unendliche Dynamik ('Streben') seine Existenzberechtigung.",
+          "Der Antagonismus der Wette basiert auf zwei unvereinbaren Menschenbildern: Glaube an transzendente Dynamik vs. nihilistischer Materialismus.",
         explanationZH:
-          "歌德彻底改造了民间魔鬼契约的陈旧叙事：浮士德不是怯懦的卖灵魂者，而是激进的现代探索者。在歌德的世界观里，停滞与自满才是唯一的堕落，永恒奋斗求索则是生命的最高神圣性。",
+          "【✅ 正解依据与文本锚点】\n这场赌约是全剧戏剧冲突的总发动机，承载了西方文明核心人性观的对决：\n1. 浮士德的人性观（古典人文主义与神性肯定）：他鄙视魔鬼所能提供的一切世俗玩物（„Was willst du armer Teufel geben?“）。他自知灵魂是一口无底深渊，任何有限的食粮、黄金与美色都会在触碰的一瞬间化为索然无味，因此他坚信自己永远不可能说出 „Verweile doch!“；\n2. 梅菲斯特的人性观（机械唯物论与虚无主义嘲弄）：魔鬼在天上序曲中就把人类比作「长腿的蚱蜢（Heuschrecke）」，认定人所谓的理性不过是用来比野兽更兽性。在梅菲斯特看来，只要给浮士德喂饱了感官享乐（从莱比锡奥尔巴赫地下酒馆到格蕾琴的闺房），浮士德那点可怜的狂傲立刻就会烟消云散，老老实实当一具享乐的行尸走肉。\n\n【❌ 干扰项逐项诊断】\n• 选项 B 诊断（奇幻降智解读）：将深刻的哲学意志之赌曲解为玄幻网络爽文中的卧底行刺，丧失了世界文学名著的基本思辨尊严；\n• 选项 C 诊断（康德伦理学乱入）：康德的绝对命令要求将人视为目的而非手段，而魔鬼梅菲斯特恰恰是要将人完全物化为欲望的奴隶，二者根本水火不容。\n\n【🏛 时代思潮与哲学脉络】\n这不仅是浮士德与魔鬼的对赌，更是启蒙主义理想（人类拥有自主超越的神圣火种）与现代消费主义/虚无主义（一切价值皆可被感官满足所消解）之间的永恒论辩。",
         klausurSatzDE:
-          "Durch die Umwandlung des Paktes in eine Wette auf das Nicht-Verweilen begründet Goethe das dynamische Menschenbild der Weimarer Klassik: Der Mensch rettet sich durch rastloses Streben.",
+          "Der Antagonismus der Wette begründet sich in zwei unversöhnlichen Anthropologien: Während Faust auf die transzendente Unersättlichkeit des humanen Geistes vertraut, kalkuliert Mephisto zynisch mit der Triebhaftigkeit des Menschen, den er durch materielle Verführung zur geistigen Selbstaufgabe verleiten will.",
         klausurSatzZH:
-          "歌德通过将卖魂契约转化为‘绝不停步沉沦’的世纪豪赌，牢固确立了魏玛古典主义充满能动性的崇高人类形象：唯有永不停歇的奋发求索，才能成就灵魂的超拔救赎。",
+          "赌约的尖锐对抗植根于两种水火不容的人类学世界观：浮士德坚信人类精神具有不可填满的超越性饥渴，而梅菲斯特则冷酷算计着人性的动物本能，企图以物质诱惑诱使其走向精神的彻底自我缴械。",
         ehzKeyPointsDE: [
           "Differenzierung: Pakt (feste Frist gegen Seele) vs. Wette (Bedingung des Stillstands).",
           "Bedeutung von 'Verweile doch!': Metapher für geistige Trägheit und Genusssättigung.",
           "Verknüpfung mit dem 'Prolog im Himmel' ('Ein guter Mensch in seinem dunklen Drange...').",
         ],
         ehzKeyPointsZH: [
-          "精准辨析概念差异：传统契约（固定年限换取法力）vs 现代赌约（以精神停滞为判定门槛）。",
-          "剖析‘停一停吧’的哲学隐喻：警惕心灵的懈怠与感官动物化沉溺。",
-          "遥相呼应‘天上序曲’中天主的判词：‘善良的人在追求的迷惘中，终究会意识到正确的路径’。",
+          "踩分点 1 (Fausts Position 4P)：深刻阐述浮士德对人类精神永恒求索（Faustisches Streben）的自傲信任，指出其蔑视有限物质享乐的泰坦气度。",
+          "踩分点 2 (Mephistos Zynismus 4P)：剖析梅菲斯特的唯物本能论与虚无主义——认定任何崇高理想终将被动物性欲望腐蚀驯服。",
+          "踩分点 3 (Philosophischer Diskurs 4P)：联系魏玛古典主义对人性完整性（Humanitätsideal）的肯定，揭示对赌背后的人性论决战实质。",
+          "扣分警示 (Abzug -2P)：若未能提炼出两种根本对立的人性观与哲学假设，仅流于具体享乐描写的复述，降等给分。",
         ],
       },
       {
@@ -974,46 +982,50 @@ const EXCERPTS: TextExcerpt[] = [
         questionDE:
           "Welche dramaturgische Funktion hat Mephistos Beharren auf »ein paar Zeilen« (V. 1708) vor dem Hintergrund der Pakt-Szene?",
         questionZH:
-          "在赌约订立的情节关键节点，梅菲斯特坚持索要‘几行字据’（V. 1708）具有什么重要的戏剧因果与结构功能？",
+          "当浮士德已然庄严给出口头男儿誓言后，梅菲斯特却在第 1708 行斤斤计较地坚持要求‘赐下几行字据’（ein paar Zeilen ausbitten）。这一戏剧细节具有怎样深刻的因果转折与讽刺批判职能？",
         options: [
           {
             id: "a",
             textDE:
               "Es entlarvt Mephistos juristisch-bürokratische Natur als zynischer Kleinbürger, der dem lebendigen Geist misstraut und das überlegene Genie Faust an ein formelles, mittelalterliches Blutsiegel ketten will.",
             textZH:
-              "它暴露出梅菲斯特作为犬儒市民官僚的死板本性：魔鬼不信任鲜活自由的生命意志，企图用中世纪形式主义的血书印契将浮士德套牢。",
+              "它以极具戏剧性的讽刺笔法无情剥去了魔鬼所谓的超自然威严，暴露其本质上是一个死扣中世纪形式主义字据的庸俗市民官僚；同时点燃了浮士德对‘写定死字据’的狂怒，促使其进一步喊出‘男儿誓言’的高贵自主性。",
             isCorrect: true,
           },
           {
             id: "b",
             textDE:
               "Mephisto benötigt die Unterschrift lediglich, um Fausts Erbe gerichtlich einzufordern.",
-            textZH: "梅菲斯特仅仅需要这张签名以便向法庭主张继承浮士德的祖传庄园遗产。",
+            textZH:
+              "它表明魔鬼在司法程序上极为严谨合法，准备将该手谕呈递至德国联邦宪法法院进行公证，以确保双方在民法典框架下的债权债务关系受到普鲁士警察力量的严格保护。",
             isCorrect: false,
           },
           {
             id: "c",
             textDE:
               "Es soll beweisen, dass Faust des Lesens und Schreibens mächtig ist.",
-            textZH: "这是为了向冥界证明浮士德确实识字并具备民事签字行为能力。",
+            textZH:
+              "梅菲斯特之所以坚持要写字据，是因为他年迈体衰、患有严重的阿尔茨海默健忘症，若没有白纸黑字提醒，第二天醒来就会忘记浮士德的名字与住址。",
             isCorrect: false,
           },
         ],
         explanationDE:
-          "Der Kontrast zwischen Fausts titanischem Geist (Ehrenwort) und Mephistos pedantischer Bürokratie (Blutvertrag) vertieft die unüberbrückbare Wesensdifferenz beider Figuren.",
+          "Der Kontrast zwischen lebendigem Ehrenwort und toter Schriftlichkeit entlarvt Mephistos bürokratische Entfremdung.",
         explanationZH:
-          "浮士德泰坦式的崇高气魄（注重人格承诺）与梅菲斯特小肚鸡肠的官僚教条（死扣血书字据）形成强烈戏剧反差，深化了二者本质的不可调和性。",
+          "【✅ 正解依据与文本锚点】\n第 1708–1710 行是全场最具戏剧反讽力量的火花碰撞：\n„MEPHISTO: Nur eins! – Um Lebens oder Sterbens willen / Bitt ich mir ein paar Zeilen aus. / FAUST: Auch was Geschriebnes forderst du, Pedant? / Hast du noch keinen Mann, kein Mannes-Wort gekannt?“\n1. 魔鬼的市民化与官僚化：号称无所不能的地狱化身，在面对真正的誓约时，居然露出了小市民公证员般的可笑嘴脸。歌德在此尖锐解构了封建法权与经院官僚对白纸黑字（toter Buchstabe）的病态迷信；\n2. 生机意志 vs 死板教条：浮士德信奉的是狂飙突进时期推崇的「生动男儿一诺（lebendiges Mannes-Wort）」，是主体人格的至高无上；而梅菲斯特笃信的则是字据契约（mittelalterliche Schriftlichkeit），认定人本质上势必反悔赖账；\n3. 戏剧推进动力：正是梅菲斯特这一冬烘小人般的索求，激怒了浮士德，促使浮士德在后续诗行中用血签下名字（„Blut ist ein ganz besondrer Saft“），不仅未损其豪气，反而将契约推向了极度悲壮的血色仪式。\n\n【❌ 干扰项逐项诊断】\n• 选项 B 诊断（普鲁士现代宪法倒错）：将神圣悲剧与讽刺戏谑，错误关联到 19–20 世纪的现代宪法法院与民法典，完全脱离了神圣罗马帝国晚期的市民法学背景；\n• 选项 C 诊断（低级生理恶搞）：将歌德精心编织的「制度异化与官僚主义批判」降维为无厘头的记忆力衰退段子，背离了高中德语考纲对文本讽刺（Ironie）与人物刻画的鉴赏要求。\n\n【🏛 时代思潮与哲学脉络】\n歌德身兼魏玛公国枢密顾问官与法学博士，深谙欧洲官僚法制对人性的物化剥夺。在此处，他借魔鬼之口狠狠讽刺了市民社会将一切人际信用契约化、票据化、非人格化的虚伪本质。",
         klausurSatzDE:
-          "Mephistos Verlangen nach schriftlicher Besiegelung (V. 1708) fungiert als dramaturgischer Katalysator, der die bürokratische Begrenztheit des Verführers der titanischen Autonomie des Protagonisten diametral gegenüberstellt.",
+          "Mephistos pedantische Forderung nach schriftlicher Fixierung des Paktes (V. 1708) entlarvt den Verfehrer als zynischen Repräsentanten einer erstarrten Kontrakt-Bürokratie, die Fausts idealistischer Berufung auf das unantastbare »Mannes-Wort« mit bürokratischem Misstrauen begegnet.",
         klausurSatzZH:
-          "梅菲斯特对书面字据的顽固索求（V. 1708）充当了关键戏剧催化剂，将诱惑者狭隘的官僚教条与主人公崇高的泰坦式主体自主性形成了水火不容的鲜明对照。",
+          "梅菲斯特对契约书面字据的学究式死抠（第1708行），无情拆穿了诱惑者作为僵化合同官僚主义化身的犬儒嘴脸，使其对浮士德基于神圣不可侵犯的‘男儿誓言’所作出的理想主义宣告，报以满腹狐疑的官僚式不信任。",
         ehzKeyPointsDE: [
           "Dramaturgische Funktion des Übergangs vom mündlichen Gelöbnis zum Blutkontrakt.",
           "Charakterisierung Mephistos als pedantischer Repräsentant toter Buchstabenregeln.",
         ],
         ehzKeyPointsZH: [
-          "分析口头立誓过渡到血书字据的情节转折意义。",
-          "揭示梅菲斯特作为死板教条代表的市民性与讽刺性。",
+          "踩分点 1 (Charakterisierung 4P)：精准指出梅菲斯特作为死板教条冬烘学究（Pedant）的市民官僚特征，剖析其超自然威严的去神圣化反讽。",
+          "踩分点 2 (Antithese 4P)：深入对比浮士德自主性人格「男儿诺言（Mannes-Wort）」与魔鬼「书面字据（geschriebnes Wort）」之间的哲学理念鸿沟。",
+          "踩分点 3 (Dramaturgie 4P)：阐述该细节如何激化冲突，引出后续标志性的「鲜血立约（Blutvertrag）」戏剧高潮。",
+          "扣分警示 (Abzug -2P)：若仅理解为正常的商业办事手续，未能体会歌德对官僚制度主义的讽刺意图者，扣除相应鉴赏分数。",
         ],
       },
       {
@@ -1025,46 +1037,50 @@ const EXCERPTS: TextExcerpt[] = [
         questionDE:
           "Welche semantische Tiefenschärfe besitzen die Begriffe »Pedant« (V. 1709) und »Knecht« (V. 1703) im Diskurs der Szene?",
         questionZH:
-          "场景中出现的概念‘冬烘学究 (Pedant)’（V. 1709）与‘奴隶 (Knecht)’（V. 1703）蕴含着怎样的考纲语用学与哲学深度？",
+          "浮士德在第 1703 行怒斥的「奴隶 (Knecht)」与第 1709 行嘲讽的「冬烘学究 (Pedant)」两个核心词汇，在全剧的语用学与存在主义哲学体系中承载了怎样的对立张力？",
         options: [
           {
             id: "a",
             textDE:
               "»Pedant« geißelt Mephistos kleinkariertes Pochen auf tote Formalien; »Knecht« bringt Fausts Überzeugung zum Ausdruck, dass jeglicher Stillstand des Geistes bereits die ultimative Sklaverei bedeutet – gleichgültig unter welchem Herrn.",
             textZH:
-              "‘Pedant’痛斥梅菲斯特死抠教条字据的狭隘市侩气；‘Knecht’则深刻阐明浮士德的哲学信念：精神一旦止步怠惰，便已然沦为最可耻的奴隶——根本无需在乎主人是谁。",
+              "‘Pedant’直击那些丧失生命活力、死抱僵死教条字据不放的狭隘市侩；‘Knecht’则宣告了浮士德的存在主义铁律：只要主体的精神求索陷入停滞，便已然自甘堕落为最可耻的奴隶——在此种行尸走肉状态下，究竟当谁的奴仆（即便是当魔鬼的奴仆）都已经毫无差别。",
             isCorrect: true,
           },
           {
             id: "b",
             textDE:
               "»Pedant« war damals der offizielle akademische Titel für juristische Notare in Weimar.",
-            textZH: "‘Pedant’在当时的魏玛公国是公证员与书记官的正式学术官衔称谓。",
+            textZH:
+              "‘Pedant’指代那些在古希腊雅典学院教授修辞学的尊敬学者；‘Knecht’则严格指代当时波罗的海沿岸受到容克地主残酷剥削的农业农奴，表达了浮士德对废除农奴制的无产阶级同情。",
             isCorrect: false,
           },
           {
             id: "c",
             textDE:
               "»Knecht« bezieht sich wörtlich auf Fausts Wunsch, Landwirt in der Magdeburger Börde zu werden.",
-            textZH: "‘Knecht’在此按字面意义指代浮士德打算前往马格德堡农场当雇工的朴素愿望。",
+            textZH:
+              "这两个词只是浮士德在酒后语无伦次脱口而出的市井脏话，在考纲文学分析中被视为无实际语义功能的填充词（Füllwörter），无需进行哲学解读。",
             isCorrect: false,
           },
         ],
         explanationDE:
-          "Goethe nutzt philosophisch aufgeladene Begriffe: Knechtschaft ist bei ihm kein sozialer, sondern ein ontologischer Zustand der Passivität.",
+          "Knechtschaft ist bei Goethe ein ontologischer Zustand der Passivität; Pedanterie die Kapitulation vor toten Buchstaben.",
         explanationZH:
-          "歌德赋予日常词汇深刻的本体论哲学色彩：‘奴役’在此不是社会阶级地位，而是主体失去求索活力后的精神瘫痪状态。",
+          "【✅ 正解依据与文本锚点】\n歌德在精炼的对白中使用了两个极具哲学张力的关键词汇：\n1. „Knecht“（奴隶，第 1703 行）：\n   „Wie ich beharre, bin ich Knecht, / Ob dein, was frag ich, oder wessen.“\n   这是浮士德最石破天惊的存在主义自白！浮士德指出：人之所以为尊贵的主体，唯在其永不停息的求索动能（Streben）。一旦停滞僵死（Beharren），主体的灵魂便已然丧失自由与尊严，彻底沦为虚无的奴隶。既然已经是精神奴隶，那么在形式上归魔鬼奴役还是归别人奴役，根本就无足轻重了；\n2. „Pedant“（冬烘学究，第 1709 行）：\n   来自意大利语 pedante，18 世纪专指那些在大学与行政机构中死抱繁文缛节、缺乏精神开创力的小人。浮士德用此词嘲弄梅菲斯特，暴露出魔鬼试图用有限的死文字捆绑无限的生命意志，展现了主体对教条主义的绝顶轻蔑。\n\n【❌ 干扰项逐项诊断】\n• 选项 B 诊断（农奴制阶级分析穿凿附会）：把存在主义的精神奴役隐喻（ontologischer Knechtschaftszustand）硬套成 19 世纪东普鲁士废除农奴制的土地政治议题，属于典型的过度解读与时代倒错；\n• 选项 C 诊断（虚无解构放弃鉴赏）：歌德字字珠玑，在代表作核心立约场景中绝不可能存在无意义的粗俗填充词。放弃解读反映了文学文本细读能力的缺失。\n\n【🏛 时代思潮与哲学脉络】\n康德在《什么是启蒙？》中呼吁人摆脱「自我招致的蒙昧与不成熟」，而歌德借「Knecht」将这一哲学命题推至终极：自由不是被赐予的特权，而是主体每时每刻在行动中夺取的生存状态。",
         klausurSatzDE:
-          "Mit der semantischen Opposition von freiem »Mannes-Wort« und servilem »Knecht« radikalisiert Faust die aufklärerische Autonomie: Nur der rastlos Strebende bewahrt seine menschliche Würde.",
+          "Die semantische Antithese von autonomer Tat und servilem »Knecht« (V. 1703) fundiert Fausts existenzialistische Ethik: Geistiger Stillstand bedeutet ontologische Sklaverei, gegenüber der Mephistos bürokratischer Kleinmut als unbedeutende Pedanterie (V. 1709) verblasst.",
         klausurSatzZH:
-          "通过自由‘男儿誓言’与屈从‘奴隶’的语义对立，浮士德将启蒙自主性激进化：唯有永不停步的求索者，方能捍卫真正的人格尊严。",
+          "自主行动与屈从‘奴隶’（第1703行）的语义尖锐对立，奠定了浮士德存在主义伦理学基石：精神停滞即意味着本体论意义上的自我奴役，相形之下，梅菲斯特死抠形式的官僚主义胆怯则彻底沦为微不足道的迂腐冬烘（第1709行）。",
         ehzKeyPointsDE: [
           "Semantische Analyse von 'Pedant' als Invektive gegen bürokratischen Kleinmut.",
           "Philosophische Interpretation von 'Knecht' als existentieller Stillstand.",
         ],
         ehzKeyPointsZH: [
-          "分析‘Pedant’作为痛击官僚胆怯的嘲讽语用学色彩。",
-          "阐释‘Knecht’作为存在主义式停滞不前的哲学投射。",
+          "踩分点 1 (Analyse 'Knecht' 4P)：精准阐发「Wie ich beharre, bin ich Knecht」的哲学内涵——停滞即是奴役（Stillstand = Sklaverei）。",
+          "踩分点 2 (Analyse 'Pedant' 4P)：分析「Pedant」作为反讽嘲骂词的语用学价值，揭示其对僵死形式主义与契约拜物教的解构力。",
+          "踩分点 3 (Existenzialistische Relevanz 4P)：提炼出歌德对人类主体能动性（Subjekt-Autonomie）的高扬与对被动依附状态的绝对拒斥。",
+          "扣分警示 (Abzug -2P)：若将「Knecht」仅按字面理解为社会阶级雇工，未上升至精神存在状态分析者，扣除相应哲学分析分值。",
         ],
       },
       {
@@ -1076,46 +1092,50 @@ const EXCERPTS: TextExcerpt[] = [
         questionDE:
           "Welche rhetorische Dynamik entfaltet die vierfache Anapher »Dann...« (V. 1694–1697) in Verbindung mit der Metapher der fallenden Zeiger (V. 1698)?",
         questionZH:
-          "四重首语重复‘到那时... (Dann...)’（V. 1694–1697）与指针崩落的时钟终局隐喻（V. 1698）结合，产生了怎样的修辞气势与修辞效果？",
+          "浮士德在第 1694–1698 行连续使用了四重排比首语重复（Anapher: „Dann...“），并最终导向‘时钟停摆、指针崩落’（„Die Uhr mag stehn, der Zeiger fallen“）的末日隐喻。这种修辞建构产生了怎样的戏剧性高潮张力？",
         options: [
           {
             id: "a",
             textDE:
               "Sie erzeugt eine unerbittliche Klimax kompromissloser Entschlossenheit: Die kaskadenartige Reihung potenziert Fausts Verachtung für ein bequemes Dasein und inszeniert den Stillstand als kosmisches Weltenende.",
             textZH:
-              "它构成了层层递进的决绝高潮：瀑布般的排比排空了对安逸的一切留恋，将意志的停顿直接等同于宇宙时空终结的宏大末日图景。",
+              "连续四重‘Dann’的如惊雷贯耳，以排山倒海的势头强化了浮士德对自己永不妥协沉沦的绝对自负，构成了层层递进的戏剧誓言高潮；而时钟指针崩落的隐喻，则将个人意志的怠惰直接提升为宇宙时空毁灭的壮绝末日图景，展现出毁灭亦无悔的崇高意志。",
             isCorrect: true,
           },
           {
             id: "b",
             textDE:
               "Die Wiederholung von »Dann« dient lediglich als metrische Notlösung zur Wahrung des Knittelverses.",
-            textZH: "‘Dann’的重复仅仅是为了凑足四音步民谣体押韵的音节不足。",
+            textZH:
+              "首语重复‘Dann’纯粹是为了在音律上凑足四音步 Knittelvers 的音节缺额，时钟停摆则是因为书斋中的机械摆钟确实因为年久失修而发条断裂，提醒观众注意剧场道具的现实主义精巧。",
             isCorrect: false,
           },
           {
             id: "c",
             textDE:
               "Sie signalisiert Fausts wachsende Verwirrung und Resignation gegenüber Mephistos Zauberkräften.",
-            textZH: "它表明浮士德面对梅菲斯特的神通感到了深深的语无伦次与认输顺从。",
+            textZH:
+              "浮士德通过四次重复‘到那时’，暗示他在为自己寻找退路与法律豁免漏洞，时钟停落象征着他打算通过调慢发条来拖延向魔鬼交接灵魂的时间。",
             isCorrect: false,
           },
         ],
         explanationDE:
-          "Die rhetorische Wucht der Anapher unterstreicht Fausts Hybris und seine absolute Siegesgewissheit über Mephistos Versuchungen.",
+          "Die anaphorische Steigerung potenziert den Schwur; der Uhren-Zeiger-Fall stilisiert den Stillstand zum absoluten Weltenende.",
         explanationZH:
-          "连续排比句展现出惊人的修辞张力，生动彰显了浮士德傲然睥睨一切平庸诱惑的泰坦自信。",
+          "【✅ 正解依据与文本锚点】\n第 1694–1698 行是全剧修辞美学的巅峰华彩段落：\n„Dann magst du mich in Fesseln schlagen, / Dann will ich gern zugrunde gehn! / Dann mag die Totenglocke schallen, / Dann bist du deines Dienstes frei, / Die Uhr mag stehn, der Zeiger fallen, / Es sei die Zeit für mich vorbei!“\n1. 四重首语重复（Vierfache Anapher: Dann...）：\n   以极其严密的句法结构一气呵成。每一次重复都在加码毁灭的代价——从「被缚上枷锁（in Fesseln schlagen）」到「甘愿毁灭（zugrunde gehn）」，再到「丧钟鸣响（Totenglocke schallen）」，最终是「你的仆役之责解除（deines Dienstes frei）」。这种层层递进（Klimax）彰显了他视死如归的豪情，毫无犹疑畏缩；\n2. 宇宙级的时钟停摆隐喻（Metapher der zerbrochenen Uhr）：\n   „Die Uhr mag stehn, der Zeiger fallen“ 不仅是肉身生物学死亡的宣告，更是形而上学时间的终结。在歌德的世界里，浮士德的存在就是时间的标尺；浮士德一旦停滞，时间对人类便失去了意义，整个宇宙时钟即可轰然崩塌。\n\n【❌ 干扰项逐项诊断】\n• 选项 B 诊断（道具实物化滑稽解构）：将震撼人心的宇宙终极时间隐喻，误读为书斋里真有一座机械钟坏了，完全丧失了文学抽象思维能力；\n• 选项 C 诊断（小人度君子式臆测）：浮士德用这一连串排比恰恰是为了断绝自己的一切退路，向魔鬼展示男子汉顶天立地的绝决气概，绝非在钻法律空子。\n\n【🏛 时代思潮与哲学脉络】\n康德论崇高（Das Erhabene）：当主体直面粉身碎骨的浩大威胁时，其内在道德意志却依然高高超越于一切物理毁灭之上。浮士德在此处展现的正是纯正的德国古典「崇高之美」。",
         klausurSatzDE:
-          "Die anaphorische Steigerung (»Dann...«, V. 1694ff.) kulminiert in der Metapher der zerbrochenen Uhr und stilisiert Fausts existenziellen Pakt zu einem Drama von kosmischer Tragweite.",
+          "Die anaphorische Kaskade (»Dann...«, V. 1694ff.) kulminiert in der kosmischen Metapher der zerbrechenden Uhr (V. 1698) und radikalisiert Fausts Pakt-Eingehung zu einem heroischen Akt der Selbstüberhöhung, in dem die eigene existentielle Dynamik mit dem Fortlauf der Weltzeit gleichgesetzt wird.",
         klausurSatzZH:
-          "首语重复的层层推进（‘Dann...’，V. 1694起）最终在钟表停摆崩落的隐喻中达到顶点，将浮士德的存在之赌升格为震撼宇宙维度的崇高戏剧。",
+          "首语重复的瀑布式排比（‘到那时...’，第1694行起）在时钟崩落停摆的宏大宇宙隐喻中达到高潮（第1698行），将浮士德的订约行为激化为英雄主义的自我升华行动，在此行动中，其个人的存在动能直接与整个宇宙世界时间的运转画上了等号。",
         ehzKeyPointsDE: [
           "Funktionsbestimmung der Anapher (V. 1694–1697) als dramatische Steigerung.",
           "Deutung der Metapher 'Die Uhr mag stehn, der Zeiger fallen' als Zeitstillstand.",
         ],
         ehzKeyPointsZH: [
-          "分析首语重复（Anapher）作为戏剧性递进强化的功能。",
-          "阐释时钟指针停落隐喻所代表的生命存在时间终结。",
+          "踩分点 1 (Rhetorische Klimax 4P)：精准剖析四重首语重复（Anapher: Dann...）如何步步递进，构建出视死如归的誓言高潮（Klimax）。",
+          "踩分点 2 (Metaphorik der Zeit 4P)：深入阐发时钟停摆（Uhr stehn / Zeiger fallen）的象征意蕴——意志停滞即等于时空终结与形而上学死亡。",
+          "踩分点 3 (Heroismus & Hybris 4P)：揭示浮士德在此处迸发的泰坦式英雄狂傲（Titanische Hybris）与其敢于对赌整个宇宙的崇高美学（Das Erhabene）。",
+          "扣分警示 (Abzug -2P)：若仅将时钟指针视为普通时间工具，未能挖掘其作为生命与宇宙进程隐喻的深层意涵，扣除修辞深度分值。",
         ],
       },
       {
@@ -1127,48 +1147,51 @@ const EXCERPTS: TextExcerpt[] = [
         questionDE:
           "Inwiefern offenbart der Dialog V. 1700–1711 die psychologische Kollision zweier diametral entgegengesetzter Welt- und Menschenbilder?",
         questionZH:
-          "在诗行 V. 1700–1711 的激烈交锋中，展现了哪两种截然对立的世界观与人性观在心理层面的剧烈冲撞？",
+          "立约对话中浮士德诉诸‘男儿誓言’的神圣尊严，而梅菲斯特则死死咬定‘一纸血书字据’的条规约束。这一人物心理交锋如何生动折射了 18 世纪末德国狂飙突进‘天才观’与现代市民官僚‘犬儒理性’的剧烈历史冲撞？",
         options: [
           {
             id: "a",
             textDE:
               "Faust verkörpert das autonome Sturm-und-Drang-Genie, das allein dem lebendigen Ehrenwort vertraut; Mephisto hingegen repräsentiert den zynischen, bürgerlich-bürokratischen Geist, der den Menschen prinzipiell für korrupt und wortbrüchig hält.",
             textZH:
-              "浮士德体现了狂飙突进时期推崇的‘自主天才观’，坚信男儿人格誓言的神圣性；而梅菲斯特则代表了现代市民官僚体制的犬儒主义，在骨子里认定人性本恶、势必毁约背信，因而死抱字据不放。",
+              "浮士德化身狂飙突进运动所推崇的‘自主性原初天才（Originalgenie）’，坚信人神之间以神圣的人格与自由意志为最高契约；而梅菲斯特则代表了现代资本主义官僚体制下异化的犬儒主义，在骨子里认定人性唯利是图、必定背信弃义，因而将一切生命关系还原为冰冷、物化的字据契约。",
             isCorrect: true,
           },
           {
             id: "b",
             textDE:
               "Faust zeigt sich als ängstlicher Schüler, während Mephisto als liebevoller väterlicher Mentor agiert.",
-            textZH: "浮士德表现为一个胆怯的学生，而梅菲斯特则扮演着慈祥温和的慈父良师。",
+            textZH:
+              "浮士德代表了中世纪封建贵族赖账不还的霸道特权，而梅菲斯特则是保护平民合法债权的无产阶级劳动法先驱，二人争辩的是封建债务豁免权与现代破产保护法的法理边界。",
             isCorrect: false,
           },
           {
             id: "c",
             textDE:
               "Beide Figuren vertreten exakt dieselbe philosophische Schule des scholastischen Kirchenrechts.",
-            textZH: "两人代表了完全相同的中世纪经院教会法学派传统。",
+            textZH:
+              "这一对话表明浮士德对笔墨文字怀有严重的心理创伤恐惧症，而梅菲斯特作为受过正规师范教育的家庭教师，正在通过严格的拼写练习帮助浮士德克服书写障碍。",
             isCorrect: false,
           },
         ],
         explanationDE:
-          "Dieser Dialog ist das philosophische Kernstück des Dramas: Glaube an die transzendente Würde des Geistes vs. nihilistischer Materialismus.",
+          "Im Antagonismus prallen das autonome Sturm-und-Drang-Genie und die materialistische Zweckrationalität aufeinander.",
         explanationZH:
-          "这段交锋是全剧的哲学灵魂：是对人类精神超越性尊严的崇高信仰，与将一切还原为契约物质的虚无主义冷酷算计之间的永恒交战。",
+          "【✅ 正解依据与文本锚点】\n全幕对话是全剧在思想史层面最具深度的人物交锋：\n1. 浮士德——狂飙突进的原初天才（Originalgenie）：\n   浮士德继承了卢梭（Rousseau）与赫尔德（Herder）的思想精髓，信奉内心的诚挚神圣性。在他看来，男儿立于天地之间，一诺千金（„Das Mannes-Wort“）；白纸黑字非但不能增添信任，反而是对人格尊严的极大侮辱；\n2. 梅菲斯特——现代性冰冷理性的化身（Zynischer Bürokrat）：\n   魔鬼深谙现代市民社会的阴暗面：契约制度的诞生本身就基于「对人性的根本不信任」。魔鬼嘲笑浮士德的狂妄浪漫主义，他深知在欲望与生存的逼迫下，人类的豪言壮语往往不堪一击，唯有物理留存的血书字据（Blutvertrag）才能作为在法庭上强制执行的合法凭证。\n\n【❌ 干扰项逐项诊断】\n• 选项 B 诊断（封建特权与破产法生搬硬套）：把浮士德基于崇高人格信用的抗争，歪曲成贵族老赖逃废债务，把魔鬼美化成劳动法先驱，完全颠倒了作品的善恶美学价值取向；\n• 选项 C 诊断（书写障碍心理搞笑）：将伟大的时代世界观冲突降维为小学语文书写障碍矫正，属于对世界名著的荒诞解构。\n\n【🏛 时代思潮与哲学脉络】\n这一冲突是现代性进程中人类灵魂痛苦的缩影：浪漫主义/古典主义渴望人与人之间充满信任与灵性共鸣，但现代文明的科层制（Bürokratie）与法律理性（Rechtsrationalismus）却不可逆转地将一切神圣誓约物化为冰冷的合同条款。",
         klausurSatzDE:
-          "Im Antagonismus zwischen Fausts Berufung auf das »Mannes-Wort« und Mephistos Beharren auf der Schriftlichkeit prallen das idealistische Menschenbild des autonomen Subjekts und der materialistisch-entfremdete Bürokratismus unversöhnlich aufeinander.",
+          "Im Disput um das »Mannes-Wort« und die schriftliche Besiegelung kollidieren das idealistische Menschenbild des Sturm-und-Drang-Genies und der nihilistische Materialismus der modernen Zweckrationalität, wodurch Goethe die Entfremdung der zwischenmenschlichen Beziehungen im bürokratischen Zeitalter antizipiert.",
         klausurSatzZH:
-          "在浮士德诉诸‘男儿誓言’与梅菲斯特死抠‘书面字据’的戏剧对抗中，自主主体的唯意志论理想主义人类观与异化的物化官僚教条展开了水火不容的深刻碰撞。",
+          "在围绕‘男儿誓言’与书面字据印契的激烈争辩中，狂飙突进天才的理想主义人类观与现代工具理性的虚无主义唯物论展开了尖锐碰撞，歌德以此深刻预示了官僚时代人际关系的物化与异化。",
         ehzKeyPointsDE: [
           "Charakterisierung Fausts als Repräsentant des Geniekults (Autonomie, Ehrenwort).",
           "Charakterisierung Mephistos als skeptisch-bürokratischer Spötter.",
           "Bewertung der Szene für den Gesamtverlauf der Gelehrten- und Gretchentragödie.",
         ],
         ehzKeyPointsZH: [
-          "将浮士德定性为狂飙突进狂傲天才观（自主性、人格信用）的代表。",
-          "将梅菲斯特剖析为怀疑论与市民官僚主义嘲讽者的化身。",
-          "对该场景在整个学者悲剧与格蕾琴悲剧中的枢纽地位作出论述评价。",
+          "踩分点 1 (Geniekult 4P)：深刻界定浮士德所代表的狂飙突进原初天才观（Originalgenie）——高扬生命本真性、人格自主与内在神圣一诺。",
+          "踩分点 2 (Zweckrationalität 4P)：剖析梅菲斯特所象征的现代工具理性（Zweckrationalität）与资本官僚制——基于对人性的彻底不信任与契约物化。",
+          "踩分点 3 (Epochendiagnose 4P)：联系卢梭对文明异化的批判，评价歌德在该段对话中所展现出的超前现代性批判视野。",
+          "扣分警示 (Abzug -2P)：若未能指出两种时代思潮（浪漫/狂飙突进 vs 启蒙末期市民工具理性）的对抗本质，扣除时代语境综合分析分数。",
         ],
       },
     ],
@@ -1582,9 +1605,9 @@ export function FaustReadingLab({ lang }: { lang: Lang }) {
                     </span>
                   </div>
 
-                  <p className="text-xs leading-relaxed text-[var(--gray)] font-sans">
+                  <div className="text-xs leading-relaxed text-[var(--ink)] font-sans space-y-1.5 whitespace-pre-line p-3 rounded-md bg-[var(--paper-subtle)] border border-[var(--line)]/60 shadow-2xs">
                     {currentQ.explanationZH}
-                  </p>
+                  </div>
 
                   {/* 德语标准答题句式积木 (Klausur-Formulierung) */}
                   <div className="p-2 rounded border border-[var(--line)] bg-[var(--paper-subtle)] space-y-1">
