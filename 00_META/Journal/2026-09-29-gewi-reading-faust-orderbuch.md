@@ -131,7 +131,9 @@ tags: [EF, Meta, Journal, App, Deutsch, SoWi]
   - 彻底移除 `🎛️ 排版评估实验室` 切换条及相关 Demo B/C/D 冗余代码，版面直接呈现开阔舒展的宽幅双栏。
 - **验证**：
   - `tsc -b` 0 错误；`npm run build` 6.84s 通过。
-  - `python scripts/vault-check.py` PASS。
+- **用户验收**：
+  - 用户明确确认：“这一版本可以，确定了”。
+  - 该纯色无框标记、舒朗呼吸双栏交互架构正式固化为文科巨著原典细读工坊（GeWi Reading Lab）的标准设计规范。
 
 
 
