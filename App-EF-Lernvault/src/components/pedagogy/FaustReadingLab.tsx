@@ -680,12 +680,12 @@ const EXCERPTS: TextExcerpt[] = [
   {
     id: "studierzimmer-pakt",
     sceneTitleDE: "Szene: Studierzimmer // Pakt & Wette mit Mephistopheles",
-    sceneTitleZH: "核心冲突：书斋立约 · 浮士德与魔鬼的灵魂豪赌",
-    versesRange: "Vers 1692–1711",
+    sceneTitleZH: "书斋立约 · 世纪之赌",
+    versesRange: "V. 1692–1711",
     contextDE:
       "Faust schließt mit Mephistopheles keine klassische Verkaufsurkunde, sondern eine dynamische Wette auf sein unstillbares Lebensstreben ab.",
     contextZH:
-      "浮士德与魔鬼梅菲斯特签订的并非传统意义上的单向出卖灵魂文书，而是一场赌上其永恒不熄生命求索意志的动态世纪之赌。",
+      "浮士德与魔鬼梅菲斯特签订的并非传统买卖灵魂契约，而是一场赌上其永恒求索意志的现代动态之赌。",
     verses: [
       {
         lineNum: 1692,
@@ -703,8 +703,8 @@ const EXCERPTS: TextExcerpt[] = [
         textDE: "Verweile doch! du bist so schön!",
         translationZH: "‘停一停吧！你是多么的美丽！’",
         stilmittel: {
-          type: "Apostrophe & Epik (全剧核心母题句)",
-          descDE: "Die berühmteste Zeile des Werkes: Das Verweilen bedeutet Stillstand und Tod.",
+          type: "Apostrophe & Kernmotiv (核心母题金句)",
+          descDE: "Die berühmteste Zeile des Werkes: Das Verweilen bedeutet Stillstand und geistigen Tod.",
           descZH: "全剧灵魂核心金句：一旦沉溺安逸止步不前，即意味着精神死灭与契约失守。",
         },
         toneCategory: "titanismus",
@@ -713,22 +713,40 @@ const EXCERPTS: TextExcerpt[] = [
         lineNum: 1694,
         textDE: "Dann magst du mich in Fesseln schlagen,",
         translationZH: "到那时，你就把锁链套在我身上，",
+        stilmittel: {
+          type: "Anapher (Dann...) & Konzessivreihe",
+          descDE: "Beginn der vierfachen Anapher bedingungsloser Unterwerfung.",
+          descZH: "开启连续四重‘到那时’排比，展现对安逸堕落的决绝否定。",
+        },
+        toneCategory: "titanismus",
       },
       {
         lineNum: 1695,
         textDE: "Dann will ich gern zugrunde gehn!",
         translationZH: "到那时，我甘愿万劫不复、自取毁灭！",
+        vocab: {
+          word: "zugrunde gehn",
+          meaningDE: "Untergehen, vernichtet werden.",
+          meaningZH: "自取毁灭、万劫不复。",
+        },
         toneCategory: "titanismus",
       },
       {
         lineNum: 1696,
         textDE: "Dann mag die Totenglocke schallen,",
         translationZH: "到那时，就让送葬的丧钟敲响吧，",
+        stilmittel: {
+          type: "Akustische Metapher (死亡听觉意象)",
+          descDE: "Totenglocke als traditionelles Zeichen des physischen und seelischen Endes.",
+          descZH: "丧钟敲响作为肉体与精神双重终局的象征。",
+        },
+        toneCategory: "titanismus",
       },
       {
         lineNum: 1697,
         textDE: "Dann bist du deines Dienstes frei,",
         translationZH: "到那时，你的仆役之役便可就此结束，",
+        toneCategory: "titanismus",
       },
       {
         lineNum: 1698,
@@ -736,9 +754,10 @@ const EXCERPTS: TextExcerpt[] = [
         translationZH: "时钟可以停摆，指针可以崩落，",
         stilmittel: {
           type: "Metapher des Zeitendes (生命终局隐喻)",
-          descDE: "Stillstand der Uhr symbolisiert das Erlöschen der Zeitlichkeit.",
-          descZH: "指针崩落标志着生命时间维度的终结。",
+          descDE: "Stillstand der Uhr symbolisiert das Erlöschen der existentiellen Zeitlichkeit.",
+          descZH: "指针崩落标志着生命存在性时间维度的终结。",
         },
+        toneCategory: "titanismus",
       },
       {
         lineNum: 1699,
@@ -746,8 +765,151 @@ const EXCERPTS: TextExcerpt[] = [
         translationZH: "对我来说，时间便彻底化作了过去！",
         toneCategory: "titanismus",
       },
+      {
+        lineNum: 1700,
+        textDE: "MEPHISTOPHELES: Bedenk dies wohl, wir werden's nicht vergessen.",
+        translationZH: "梅菲斯特：你可要想清楚了，我们是绝不会遗忘此约的。",
+        commentDE: "Mephisto pocht auf juristische Verbindlichkeit und unterschätzt Fausts Streben.",
+        commentZH: "梅菲斯特极力强调契约的法律约束力，暴露出魔鬼对人类求索本质的狭隘理解。",
+        toneCategory: "spott",
+      },
+      {
+        lineNum: 1701,
+        textDE: "FAUST: Dazu hast du ein volles Recht;",
+        translationZH: "浮士德：这一点你大有权利放心；",
+      },
+      {
+        lineNum: 1702,
+        textDE: "Ich habe mich nicht freventlich vermessen.",
+        translationZH: "我绝非出于狂妄而轻率托大。",
+        vocab: {
+          word: "freventlich vermessen",
+          meaningDE: "Sich frevlerisch, anmaßend überschätzen.",
+          meaningZH: "狂妄自大、轻率非分地自以为是。",
+        },
+        toneCategory: "titanismus",
+      },
+      {
+        lineNum: 1703,
+        textDE: "Wie ich beharre, bin ich Knecht,",
+        translationZH: "只要我一旦停滞不前，我便沦为了奴隶，",
+        commentDE: "Stillstand = Sklaverei des Geistes.",
+        commentZH: "核心哲学公式：停顿即精神的奴隶化。",
+        toneCategory: "krise",
+      },
+      {
+        lineNum: 1704,
+        textDE: "Ob dein, was frag ich, oder wessen.",
+        translationZH: "无论沦为你或是谁的奴仆，我全不在乎。",
+        toneCategory: "titanismus",
+      },
+      {
+        lineNum: 1705,
+        textDE: "MEPHISTOPHELES: Ich werde heute gleich, beim Doktorschmaus,",
+        translationZH: "梅菲斯特：我今天就去博士宴席上，",
+      },
+      {
+        lineNum: 1706,
+        textDE: "Als Diener meine Pflicht erfüllen.",
+        translationZH: "以仆人身份恪尽职守侍奉你。",
+      },
+      {
+        lineNum: 1707,
+        textDE: "Nur eins! – Um Lebens oder Sterbens willen",
+        translationZH: "只有一件事！——看在生死由命的份上，",
+      },
+      {
+        lineNum: 1708,
+        textDE: "Bitt ich mir ein paar Zeilen aus.",
+        translationZH: "我还得劳烦你赐下几行亲笔手谕。",
+        commentDE: "Mephisto fordert den schriftlichen Blutvertrag (mittelalterliche Bürokratie).",
+        commentZH: "梅菲斯特坚持索要书面血书字据，暴露出中世纪市民官僚主义的狭隘习气。",
+        toneCategory: "spott",
+      },
+      {
+        lineNum: 1709,
+        textDE: "FAUST: Auch was Geschriebnes forderst du, Pedant?",
+        translationZH: "浮士德：你这迂腐冬烘的学究，竟还要什么字据？",
+        vocab: {
+          word: "Pedant",
+          meaningDE: "Kleinlicher, engstirniger Prinzipienreiter.",
+          meaningZH: "迂腐冬烘、死扣条规教条的小人。",
+        },
+        stilmittel: {
+          type: "Invektive & Ironie (嘲讽斥责)",
+          descDE: "Entrüstung über Mephistos bürokratische Engstirnigkeit.",
+          descZH: "对梅菲斯特市民官僚主义死板教条的极度轻蔑与怒斥。",
+        },
+        toneCategory: "spott",
+      },
+      {
+        lineNum: 1710,
+        textDE: "Hast du noch keinen Mann, nicht Mannes-Wort gekannt?",
+        translationZH: "难道你从未见识过一个男子汉、领教过男子汉的诺言？",
+        stilmittel: {
+          type: "Rhetorische Frage (反诘修辞)",
+          descDE: "Antithese zwischen moralischem Ehrenwort und bürokratischem Papier.",
+          descZH: "以反问对比男儿千金一诺与官僚死板字据的境界天壤之别。",
+        },
+        toneCategory: "titanismus",
+      },
+      {
+        lineNum: 1711,
+        textDE: "Ist's nicht genug, dass mein gesprochnes Wort / Auf ewig soll mit meinen Tagen schalten?",
+        translationZH: "难道我亲口说出的誓言，还不足以永远主宰我一生的岁月么？",
+        toneCategory: "titanismus",
+      },
     ],
     questions: [
+      {
+        id: "q-pakt-inhalt",
+        dimension: "inhalt",
+        titleDE: "1. Inhalt & Fakten",
+        titleZH: "1. 内容与事实：赌约生效触发条件 (AFB I)",
+        afb: "AFB I",
+        questionDE:
+          "Welche präzise Bedingung nennt Faust für den Zeitpunkt, an dem Mephisto seine Seele rechtmäßig fordern darf (V. 1692–1699)?",
+        questionZH:
+          "浮士德在诗行 V. 1692–1699 中，为梅菲斯特何时可以合法索取其灵魂设定了什么极其严密的先决条件？",
+        options: [
+          {
+            id: "a",
+            textDE:
+              "Erst in dem Augenblick, in dem Faust sich in träger Selbstzufriedenheit verliert und zum Moment sagt: »Verweile doch! du bist so schön!«",
+            textZH:
+              "唯有当浮士德在懒惰的自我满足中驻足止步，并对某一个瞬间由衷赞叹说出‘停一停吧！你是多么的美丽！’之时。",
+            isCorrect: true,
+          },
+          {
+            id: "b",
+            textDE: "Genau 24 Jahre nach der Unterzeichnung des Vertrages mit seinem Blut.",
+            textZH: "在用自己的鲜血签署契约整整 24 年之后。",
+            isCorrect: false,
+          },
+          {
+            id: "c",
+            textDE: "Sobald Mephisto ihm Reichtum, Jugend und die Liebe Gretchens verschafft hat.",
+            textZH: "只要梅菲斯特为他提供了财富、青春以及格蕾琴的爱情之后。",
+            isCorrect: false,
+          },
+        ],
+        explanationDE:
+          "Faust schließt keinen Zeitvertrag, sondern bindet sein Schicksal an seine innere geistige Dynamik: Stillstand bedeutet Niederlage.",
+        explanationZH:
+          "浮士德签订的绝非期限固定的买卖契约，而是将自身命运与内在精神求索状态紧密绑定：停滞沉溺即宣告失败。",
+        klausurSatzDE:
+          "Der Pakt wird von Faust als existenzielle Wette definiert, deren Erfüllungsbedingung ausschließlich im subjektiven Stillstand des Strebens (»Verweile doch!«) liegt.",
+        klausurSatzZH:
+          "浮士德将契约重新定义为一场存在主义的赌约，其输掉赌局的先决条件仅仅在于内在求索意志的主观停顿（‘停一停吧！’）。",
+        ehzKeyPointsDE: [
+          "Identifikation der Kernaussage V. 1692–1693 als Bedingungssatz.",
+          "Abgrenzung von traditionellen Teufelsbündnissen mit fester Jahresfrist.",
+        ],
+        ehzKeyPointsZH: [
+          "精准提炼 V. 1692–1693 条件假设句作为判定赌局输赢的唯一核心准则。",
+          "严格区分传统民间传说中 24 年固定期限出卖灵魂的陈旧模式。",
+        ],
+      },
       {
         id: "q-pakt-wette",
         dimension: "motiv",
@@ -803,6 +965,212 @@ const EXCERPTS: TextExcerpt[] = [
           "遥相呼应‘天上序曲’中天主的判词：‘善良的人在追求的迷惘中，终究会意识到正确的路径’。",
         ],
       },
+      {
+        id: "q-pakt-handlung",
+        dimension: "handlung",
+        titleDE: "3. Handlung & Dramenkontext",
+        titleZH: "3. 情节与戏剧因果：梅菲斯特索求血字手谕 (AFB II)",
+        afb: "AFB II",
+        questionDE:
+          "Welche dramaturgische Funktion hat Mephistos Beharren auf »ein paar Zeilen« (V. 1708) vor dem Hintergrund der Pakt-Szene?",
+        questionZH:
+          "在赌约订立的情节关键节点，梅菲斯特坚持索要‘几行字据’（V. 1708）具有什么重要的戏剧因果与结构功能？",
+        options: [
+          {
+            id: "a",
+            textDE:
+              "Es entlarvt Mephistos juristisch-bürokratische Natur als zynischer Kleinbürger, der dem lebendigen Geist misstraut und das überlegene Genie Faust an ein formelles, mittelalterliches Blutsiegel ketten will.",
+            textZH:
+              "它暴露出梅菲斯特作为犬儒市民官僚的死板本性：魔鬼不信任鲜活自由的生命意志，企图用中世纪形式主义的血书印契将浮士德套牢。",
+            isCorrect: true,
+          },
+          {
+            id: "b",
+            textDE:
+              "Mephisto benötigt die Unterschrift lediglich, um Fausts Erbe gerichtlich einzufordern.",
+            textZH: "梅菲斯特仅仅需要这张签名以便向法庭主张继承浮士德的祖传庄园遗产。",
+            isCorrect: false,
+          },
+          {
+            id: "c",
+            textDE:
+              "Es soll beweisen, dass Faust des Lesens und Schreibens mächtig ist.",
+            textZH: "这是为了向冥界证明浮士德确实识字并具备民事签字行为能力。",
+            isCorrect: false,
+          },
+        ],
+        explanationDE:
+          "Der Kontrast zwischen Fausts titanischem Geist (Ehrenwort) und Mephistos pedantischer Bürokratie (Blutvertrag) vertieft die unüberbrückbare Wesensdifferenz beider Figuren.",
+        explanationZH:
+          "浮士德泰坦式的崇高气魄（注重人格承诺）与梅菲斯特小肚鸡肠的官僚教条（死扣血书字据）形成强烈戏剧反差，深化了二者本质的不可调和性。",
+        klausurSatzDE:
+          "Mephistos Verlangen nach schriftlicher Besiegelung (V. 1708) fungiert als dramaturgischer Katalysator, der die bürokratische Begrenztheit des Verführers der titanischen Autonomie des Protagonisten diametral gegenüberstellt.",
+        klausurSatzZH:
+          "梅菲斯特对书面字据的顽固索求（V. 1708）充当了关键戏剧催化剂，将诱惑者狭隘的官僚教条与主人公崇高的泰坦式主体自主性形成了水火不容的鲜明对照。",
+        ehzKeyPointsDE: [
+          "Dramaturgische Funktion des Übergangs vom mündlichen Gelöbnis zum Blutkontrakt.",
+          "Charakterisierung Mephistos als pedantischer Repräsentant toter Buchstabenregeln.",
+        ],
+        ehzKeyPointsZH: [
+          "分析口头立誓过渡到血书字据的情节转折意义。",
+          "揭示梅菲斯特作为死板教条代表的市民性与讽刺性。",
+        ],
+      },
+      {
+        id: "q-pakt-wortschatz",
+        dimension: "wortschatz",
+        titleDE: "4. Wortschatz & Semantik",
+        titleZH: "4. 核心词汇与语义：Pedant 与 Knecht 的考纲语义 (AFB II)",
+        afb: "AFB II",
+        questionDE:
+          "Welche semantische Tiefenschärfe besitzen die Begriffe »Pedant« (V. 1709) und »Knecht« (V. 1703) im Diskurs der Szene?",
+        questionZH:
+          "场景中出现的概念‘冬烘学究 (Pedant)’（V. 1709）与‘奴隶 (Knecht)’（V. 1703）蕴含着怎样的考纲语用学与哲学深度？",
+        options: [
+          {
+            id: "a",
+            textDE:
+              "»Pedant« geißelt Mephistos kleinkariertes Pochen auf tote Formalien; »Knecht« bringt Fausts Überzeugung zum Ausdruck, dass jeglicher Stillstand des Geistes bereits die ultimative Sklaverei bedeutet – gleichgültig unter welchem Herrn.",
+            textZH:
+              "‘Pedant’痛斥梅菲斯特死抠教条字据的狭隘市侩气；‘Knecht’则深刻阐明浮士德的哲学信念：精神一旦止步怠惰，便已然沦为最可耻的奴隶——根本无需在乎主人是谁。",
+            isCorrect: true,
+          },
+          {
+            id: "b",
+            textDE:
+              "»Pedant« war damals der offizielle akademische Titel für juristische Notare in Weimar.",
+            textZH: "‘Pedant’在当时的魏玛公国是公证员与书记官的正式学术官衔称谓。",
+            isCorrect: false,
+          },
+          {
+            id: "c",
+            textDE:
+              "»Knecht« bezieht sich wörtlich auf Fausts Wunsch, Landwirt in der Magdeburger Börde zu werden.",
+            textZH: "‘Knecht’在此按字面意义指代浮士德打算前往马格德堡农场当雇工的朴素愿望。",
+            isCorrect: false,
+          },
+        ],
+        explanationDE:
+          "Goethe nutzt philosophisch aufgeladene Begriffe: Knechtschaft ist bei ihm kein sozialer, sondern ein ontologischer Zustand der Passivität.",
+        explanationZH:
+          "歌德赋予日常词汇深刻的本体论哲学色彩：‘奴役’在此不是社会阶级地位，而是主体失去求索活力后的精神瘫痪状态。",
+        klausurSatzDE:
+          "Mit der semantischen Opposition von freiem »Mannes-Wort« und servilem »Knecht« radikalisiert Faust die aufklärerische Autonomie: Nur der rastlos Strebende bewahrt seine menschliche Würde.",
+        klausurSatzZH:
+          "通过自由‘男儿誓言’与屈从‘奴隶’的语义对立，浮士德将启蒙自主性激进化：唯有永不停步的求索者，方能捍卫真正的人格尊严。",
+        ehzKeyPointsDE: [
+          "Semantische Analyse von 'Pedant' als Invektive gegen bürokratischen Kleinmut.",
+          "Philosophische Interpretation von 'Knecht' als existentieller Stillstand.",
+        ],
+        ehzKeyPointsZH: [
+          "分析‘Pedant’作为痛击官僚胆怯的嘲讽语用学色彩。",
+          "阐释‘Knecht’作为存在主义式停滞不前的哲学投射。",
+        ],
+      },
+      {
+        id: "q-pakt-stilmittel",
+        dimension: "stilmittel",
+        titleDE: "5. Stilmittel & Rhetorik",
+        titleZH: "5. 修辞手法与韵律：四重 Anapher 与末日隐喻 (AFB II)",
+        afb: "AFB II",
+        questionDE:
+          "Welche rhetorische Dynamik entfaltet die vierfache Anapher »Dann...« (V. 1694–1697) in Verbindung mit der Metapher der fallenden Zeiger (V. 1698)?",
+        questionZH:
+          "四重首语重复‘到那时... (Dann...)’（V. 1694–1697）与指针崩落的时钟终局隐喻（V. 1698）结合，产生了怎样的修辞气势与修辞效果？",
+        options: [
+          {
+            id: "a",
+            textDE:
+              "Sie erzeugt eine unerbittliche Klimax kompromissloser Entschlossenheit: Die kaskadenartige Reihung potenziert Fausts Verachtung für ein bequemes Dasein und inszeniert den Stillstand als kosmisches Weltenende.",
+            textZH:
+              "它构成了层层递进的决绝高潮：瀑布般的排比排空了对安逸的一切留恋，将意志的停顿直接等同于宇宙时空终结的宏大末日图景。",
+            isCorrect: true,
+          },
+          {
+            id: "b",
+            textDE:
+              "Die Wiederholung von »Dann« dient lediglich als metrische Notlösung zur Wahrung des Knittelverses.",
+            textZH: "‘Dann’的重复仅仅是为了凑足四音步民谣体押韵的音节不足。",
+            isCorrect: false,
+          },
+          {
+            id: "c",
+            textDE:
+              "Sie signalisiert Fausts wachsende Verwirrung und Resignation gegenüber Mephistos Zauberkräften.",
+            textZH: "它表明浮士德面对梅菲斯特的神通感到了深深的语无伦次与认输顺从。",
+            isCorrect: false,
+          },
+        ],
+        explanationDE:
+          "Die rhetorische Wucht der Anapher unterstreicht Fausts Hybris und seine absolute Siegesgewissheit über Mephistos Versuchungen.",
+        explanationZH:
+          "连续排比句展现出惊人的修辞张力，生动彰显了浮士德傲然睥睨一切平庸诱惑的泰坦自信。",
+        klausurSatzDE:
+          "Die anaphorische Steigerung (»Dann...«, V. 1694ff.) kulminiert in der Metapher der zerbrochenen Uhr und stilisiert Fausts existenziellen Pakt zu einem Drama von kosmischer Tragweite.",
+        klausurSatzZH:
+          "首语重复的层层推进（‘Dann...’，V. 1694起）最终在钟表停摆崩落的隐喻中达到顶点，将浮士德的存在之赌升格为震撼宇宙维度的崇高戏剧。",
+        ehzKeyPointsDE: [
+          "Funktionsbestimmung der Anapher (V. 1694–1697) als dramatische Steigerung.",
+          "Deutung der Metapher 'Die Uhr mag stehn, der Zeiger fallen' als Zeitstillstand.",
+        ],
+        ehzKeyPointsZH: [
+          "分析首语重复（Anapher）作为戏剧性递进强化的功能。",
+          "阐释时钟指针停落隐喻所代表的生命存在时间终结。",
+        ],
+      },
+      {
+        id: "q-pakt-figuren",
+        dimension: "figuren",
+        titleDE: "6. Figurenzeichnung & Psychologie",
+        titleZH: "6. 人物形象与心理：狂飙突进天才观 vs 市民官僚犬儒 (AFB III)",
+        afb: "AFB III",
+        questionDE:
+          "Inwiefern offenbart der Dialog V. 1700–1711 die psychologische Kollision zweier diametral entgegengesetzter Welt- und Menschenbilder?",
+        questionZH:
+          "在诗行 V. 1700–1711 的激烈交锋中，展现了哪两种截然对立的世界观与人性观在心理层面的剧烈冲撞？",
+        options: [
+          {
+            id: "a",
+            textDE:
+              "Faust verkörpert das autonome Sturm-und-Drang-Genie, das allein dem lebendigen Ehrenwort vertraut; Mephisto hingegen repräsentiert den zynischen, bürgerlich-bürokratischen Geist, der den Menschen prinzipiell für korrupt und wortbrüchig hält.",
+            textZH:
+              "浮士德体现了狂飙突进时期推崇的‘自主天才观’，坚信男儿人格誓言的神圣性；而梅菲斯特则代表了现代市民官僚体制的犬儒主义，在骨子里认定人性本恶、势必毁约背信，因而死抱字据不放。",
+            isCorrect: true,
+          },
+          {
+            id: "b",
+            textDE:
+              "Faust zeigt sich als ängstlicher Schüler, während Mephisto als liebevoller väterlicher Mentor agiert.",
+            textZH: "浮士德表现为一个胆怯的学生，而梅菲斯特则扮演着慈祥温和的慈父良师。",
+            isCorrect: false,
+          },
+          {
+            id: "c",
+            textDE:
+              "Beide Figuren vertreten exakt dieselbe philosophische Schule des scholastischen Kirchenrechts.",
+            textZH: "两人代表了完全相同的中世纪经院教会法学派传统。",
+            isCorrect: false,
+          },
+        ],
+        explanationDE:
+          "Dieser Dialog ist das philosophische Kernstück des Dramas: Glaube an die transzendente Würde des Geistes vs. nihilistischer Materialismus.",
+        explanationZH:
+          "这段交锋是全剧的哲学灵魂：是对人类精神超越性尊严的崇高信仰，与将一切还原为契约物质的虚无主义冷酷算计之间的永恒交战。",
+        klausurSatzDE:
+          "Im Antagonismus zwischen Fausts Berufung auf das »Mannes-Wort« und Mephistos Beharren auf der Schriftlichkeit prallen das idealistische Menschenbild des autonomen Subjekts und der materialistisch-entfremdete Bürokratismus unversöhnlich aufeinander.",
+        klausurSatzZH:
+          "在浮士德诉诸‘男儿誓言’与梅菲斯特死抠‘书面字据’的戏剧对抗中，自主主体的唯意志论理想主义人类观与异化的物化官僚教条展开了水火不容的深刻碰撞。",
+        ehzKeyPointsDE: [
+          "Charakterisierung Fausts als Repräsentant des Geniekults (Autonomie, Ehrenwort).",
+          "Charakterisierung Mephistos als skeptisch-bürokratischer Spötter.",
+          "Bewertung der Szene für den Gesamtverlauf der Gelehrten- und Gretchentragödie.",
+        ],
+        ehzKeyPointsZH: [
+          "将浮士德定性为狂飙突进狂傲天才观（自主性、人格信用）的代表。",
+          "将梅菲斯特剖析为怀疑论与市民官僚主义嘲讽者的化身。",
+          "对该场景在整个学者悲剧与格蕾琴悲剧中的枢纽地位作出论述评价。",
+        ],
+      },
     ],
   },
 ];
@@ -820,9 +1188,12 @@ const BOOKMARKS: Record<string, { lineNum: number; labelDE: string; labelZH: str
   ],
   "studierzimmer-pakt": [
     { lineNum: 1692, labelDE: "V. 1692: Zum Augenblicke", labelZH: "V. 1692: 瞬间假设" },
-    { lineNum: 1693, labelDE: "V. 1693: Verweile doch!", labelZH: "V. 1693: 停一停吧" },
-    { lineNum: 1695, labelDE: "V. 1695: Zugrunde gehn", labelZH: "V. 1695: 自取毁灭" },
+    { lineNum: 1693, labelDE: "V. 1693: Verweile doch!", labelZH: "V. 1693: 停一停吧 · 核心母题" },
+    { lineNum: 1695, labelDE: "V. 1695: Zugrunde gehn", labelZH: "V. 1695: 万劫不复" },
     { lineNum: 1698, labelDE: "V. 1698: Der Zeiger fallen", labelZH: "V. 1698: 指针崩落" },
+    { lineNum: 1703, labelDE: "V. 1703: Bin ich Knecht", labelZH: "V. 1703: 精神奴役" },
+    { lineNum: 1709, labelDE: "V. 1709: Pedant?", labelZH: "V. 1709: 怒斥学究" },
+    { lineNum: 1710, labelDE: "V. 1710: Mannes-Wort", labelZH: "V. 1710: 男儿誓言" },
   ],
 };
 
@@ -882,6 +1253,18 @@ export function FaustReadingLab({ lang }: { lang: Lang }) {
       ? activeExcerpt.questions
       : activeExcerpt.questions.filter((q) => q.dimension === activeDimension);
 
+  // 选段切换处理：重置诗行、维度、折叠状态并滚动至顶部
+  const handleSelectExcerpt = (id: string) => {
+    setSelectedExcerptId(id);
+    const target = EXCERPTS.find((e) => e.id === id) ?? EXCERPTS[0];
+    setActiveVerseNum(target.verses[0].lineNum);
+    setActiveDimension("all");
+    setCollapsedQuestions({});
+    if (verseListRef.current) {
+      verseListRef.current.scrollTop = 0;
+    }
+  };
+
   const handleCopySentence = (text: string, id: string) => {
     navigator.clipboard.writeText(text);
     setCopiedId(id);
@@ -889,50 +1272,59 @@ export function FaustReadingLab({ lang }: { lang: Lang }) {
   };
 
   return (
-    <div className="font-sans text-[var(--ink)] space-y-6">
-      {/* 头部文献卷宗 Masthead */}
-      <div className="border-b border-[var(--line)] pb-4 space-y-2">
-        <div className="flex flex-wrap items-center justify-between gap-2 text-xs font-mono text-[var(--gray)]">
-          <div className="flex items-center gap-2">
-            <span className="font-bold text-[var(--ink)] bg-[var(--surface)] px-2 py-0.5 border border-[var(--line)] rounded">
-              Gymnasium Oberstufe · EF/Q1
-            </span>
-            <span>·</span>
-            <span>Aufgabentyp 1A: Literarische Textanalyse</span>
+    <div className="font-sans text-[var(--ink)] space-y-4">
+      {/* 典雅顶栏：文献信息 + 显眼易选的选段切换器 */}
+      <div className="border-b border-[var(--line)] pb-3 space-y-2.5">
+        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
+          <div>
+            <div className="flex items-center gap-2">
+              <h2 className="font-serif text-xl font-bold tracking-tight text-[var(--ink)]">
+                Johann Wolfgang von Goethe: <span className="italic">Faust I</span>
+              </h2>
+              <span className="text-[10px] font-mono text-[var(--gray)] bg-[var(--paper-subtle)] px-2 py-0.5 border border-[var(--line)] rounded">
+                EF/Q1 · Aufgabentyp 1A
+              </span>
+            </div>
+            <div className="text-xs font-serif italic text-[var(--gray)] mt-0.5">
+              {de ? activeExcerpt.sceneTitleDE : activeExcerpt.sceneTitleZH} · {activeExcerpt.versesRange}
+            </div>
           </div>
-          <div className="flex items-center gap-1.5 text-[11px]">
-            <span className="text-[var(--gray)]">{de ? "Textauswahl:" : "选段切换:"}</span>
-            {EXCERPTS.map((ex) => (
-              <button
-                key={ex.id}
-                type="button"
-                onClick={() => {
-                  setSelectedExcerptId(ex.id);
-                  setActiveVerseNum(ex.verses[0].lineNum);
-                }}
-                className={`px-2 py-0.5 rounded text-[11px] font-mono border cursor-pointer transition ${
-                  selectedExcerptId === ex.id
-                    ? "bg-[var(--ink)] text-white border-[var(--ink)] font-bold shadow-2xs"
-                    : "bg-[var(--surface)] text-[var(--gray)] border-[var(--line)] hover:border-[var(--gray)]"
-                }`}
-              >
-                {ex.id === "nacht-monolog" ? (de ? "Nacht (V. 354–385)" : "学者独白 (V. 354–385)") : de ? "Pakt (V. 1692–1711)" : "书斋立约 (V. 1692–1711)"}
-              </button>
-            ))}
+
+          {/* 醒目的选段切换 Segmented Controls */}
+          <div className="inline-flex rounded-md border border-[var(--line)] bg-[var(--paper-subtle)] p-1 shadow-2xs self-start sm:self-auto">
+            {EXCERPTS.map((ex) => {
+              const isCurrent = selectedExcerptId === ex.id;
+              return (
+                <button
+                  key={ex.id}
+                  type="button"
+                  onClick={() => handleSelectExcerpt(ex.id)}
+                  className={`flex items-center gap-1.5 px-3 py-1.5 rounded text-xs font-mono transition cursor-pointer ${
+                    isCurrent
+                      ? "bg-[var(--surface)] text-[var(--ink)] font-bold shadow-2xs border border-[var(--line)]"
+                      : "text-[var(--gray)] hover:text-[var(--ink)]"
+                  }`}
+                >
+                  <span>{ex.id === "nacht-monolog" ? "📜" : "⚡"}</span>
+                  <span>
+                    {de
+                      ? ex.id === "nacht-monolog"
+                        ? "Nacht (V. 354–385)"
+                        : "Studierzimmer (V. 1692–1711)"
+                      : ex.id === "nacht-monolog"
+                      ? "学者独白 (V. 354–385)"
+                      : "书斋立约 (V. 1692–1711)"}
+                  </span>
+                </button>
+              );
+            })}
           </div>
         </div>
 
-        <div className="pt-1">
-          <h2 className="font-serif text-2xl font-bold tracking-tight text-[var(--ink)]">
-            Johann Wolfgang von Goethe: <span className="italic">Faust. Der Tragödie erster Teil</span>
-          </h2>
-          <div className="mt-1 text-sm font-serif italic text-[var(--gray)]">
-            {de ? activeExcerpt.sceneTitleDE : activeExcerpt.sceneTitleZH} · {activeExcerpt.versesRange}
-          </div>
-          <p className="mt-2 text-xs text-[var(--gray)] leading-relaxed max-w-4xl bg-[var(--paper-subtle)] p-2.5 rounded border border-[var(--line)]/60">
-            <strong>{de ? "Dramatischer Kontext: " : "戏剧发生背景："}</strong>
-            {de ? activeExcerpt.contextDE : activeExcerpt.contextZH}
-          </p>
+        {/* 紧凑优雅的戏剧背景栏 */}
+        <div className="text-xs text-[var(--ink-muted)] bg-[var(--paper-subtle)] px-3 py-1.5 rounded border border-[var(--line)]/60 flex items-baseline gap-2">
+          <strong className="text-[var(--ink)] shrink-0 font-sans">{de ? "Dramatischer Kontext:" : "戏剧背景:"}</strong>
+          <span className="leading-relaxed">{de ? activeExcerpt.contextDE : activeExcerpt.contextZH}</span>
         </div>
       </div>
 
@@ -989,7 +1381,7 @@ export function FaustReadingLab({ lang }: { lang: Lang }) {
           {/* 诗句原著卷轴 */}
           <div
             ref={verseListRef}
-            className="rounded-lg border border-[var(--line)] bg-[var(--paper)] p-3 sm:p-4 shadow-2xs font-serif divide-y divide-[var(--line)]/30 max-h-[36vh] sm:max-h-[38vh] overflow-y-auto select-none scroll-smooth"
+            className="rounded-lg border border-[var(--line)] bg-[var(--paper)] p-3 sm:p-4 shadow-2xs font-serif divide-y divide-[var(--line)]/30 h-[340px] sm:h-[360px] overflow-y-auto select-none scroll-smooth"
           >
             {activeExcerpt.verses.map((verse) => {
               const isSelected = verse.lineNum === activeVerseNum;
@@ -1015,7 +1407,7 @@ export function FaustReadingLab({ lang }: { lang: Lang }) {
                     verseRefs.current[verse.lineNum] = el;
                   }}
                   onClick={() => setActiveVerseNum(verse.lineNum)}
-                  className={`group py-1.5 px-2 rounded transition cursor-pointer flex items-baseline gap-3 text-sm leading-relaxed ${
+                  className={`group py-1.5 px-2.5 rounded transition cursor-pointer flex items-baseline gap-2.5 text-sm leading-relaxed ${
                     isSelected
                       ? "bg-[var(--paper-subtle)] ring-1 ring-[var(--ink)] font-semibold"
                       : "hover:bg-[var(--surface)]"
@@ -1027,24 +1419,20 @@ export function FaustReadingLab({ lang }: { lang: Lang }) {
                   </span>
 
                   {/* 德语原诗 + 中文对照 */}
-                  <div className="flex-1">
+                  <div className="flex-1 min-w-0">
                     <span className="text-[var(--ink)] tracking-wide">{verse.textDE}</span>
-                    <span className="ml-3 font-sans text-xs text-[var(--gray)] opacity-0 group-hover:opacity-100 transition-opacity">
+                    <span className="ml-2 font-sans text-xs text-[var(--gray)] opacity-0 group-hover:opacity-100 transition-opacity">
                       // {verse.translationZH}
                     </span>
                   </div>
 
-                  {/* 提示微标 */}
-                  <div className="flex items-center gap-1 shrink-0 font-mono text-[9px]">
+                  {/* 精致微标指示器，极简无噪音 */}
+                  <div className="flex items-center gap-1 shrink-0 text-[10px] select-none">
                     {hasStilmittel && (
-                      <span className="px-1 py-0.2 rounded bg-amber-100 text-amber-900 border border-amber-200">
-                        {verse.stilmittel?.type.split(" ")[0]}
-                      </span>
+                      <span className="text-amber-700 font-mono font-bold" title={verse.stilmittel?.type}>§</span>
                     )}
                     {hasVocab && (
-                      <span className="px-1 py-0.2 rounded bg-blue-100 text-blue-900 border border-blue-200">
-                        Glossar
-                      </span>
+                      <span className="text-blue-700 font-mono" title={verse.vocab?.word}>📖</span>
                     )}
                   </div>
                 </div>
@@ -1204,27 +1592,34 @@ export function FaustReadingLab({ lang }: { lang: Lang }) {
             {/* 维度选项卡 */}
             <div className="flex flex-wrap gap-1">
               {[
-                { id: "all", labelDE: "Alle", labelZH: "全部维度" },
-                { id: "inhalt", labelDE: "1. Inhalt", labelZH: "1.内容" },
-                { id: "motiv", labelDE: "2. Motiv", labelZH: "2.主旨" },
-                { id: "handlung", labelDE: "3. Handlung", labelZH: "3.情节" },
-                { id: "wortschatz", labelDE: "4. Sprache", labelZH: "4.词汇" },
-                { id: "stilmittel", labelDE: "5. Stil", labelZH: "5.修辞" },
-                { id: "figuren", labelDE: "6. Psyche", labelZH: "6.描写" },
-              ].map((dim) => (
-                <button
-                  key={dim.id}
-                  type="button"
-                  onClick={() => setActiveDimension(dim.id as any)}
-                  className={`px-2 py-0.5 rounded text-[11px] font-mono border cursor-pointer transition ${
-                    activeDimension === dim.id
-                      ? "bg-[var(--ink)] text-white border-[var(--ink)] font-bold shadow-2xs"
-                      : "bg-[var(--surface)] text-[var(--gray)] border-[var(--line)] hover:border-[var(--gray)]"
-                  }`}
-                >
-                  {de ? dim.labelDE : dim.labelZH}
-                </button>
-              ))}
+                { id: "all", labelDE: "Alle", labelZH: "全部" },
+                { id: "inhalt", labelDE: "1. Inhalt", labelZH: "1. 内容" },
+                { id: "motiv", labelDE: "2. Motiv", labelZH: "2. 主旨" },
+                { id: "handlung", labelDE: "3. Handlung", labelZH: "3. 情节" },
+                { id: "wortschatz", labelDE: "4. Sprache", labelZH: "4. 词汇" },
+                { id: "stilmittel", labelDE: "5. Stil", labelZH: "5. 修辞" },
+                { id: "figuren", labelDE: "6. Psyche", labelZH: "6. 描写" },
+              ].map((dim) => {
+                const count =
+                  dim.id === "all"
+                    ? activeExcerpt.questions.length
+                    : activeExcerpt.questions.filter((q) => q.dimension === dim.id).length;
+                return (
+                  <button
+                    key={dim.id}
+                    type="button"
+                    onClick={() => setActiveDimension(dim.id as any)}
+                    className={`px-2 py-0.5 rounded text-[11px] font-mono border cursor-pointer transition ${
+                      activeDimension === dim.id
+                        ? "bg-[var(--ink)] text-white border-[var(--ink)] font-bold shadow-2xs"
+                        : "bg-[var(--surface)] text-[var(--gray)] border-[var(--line)] hover:border-[var(--gray)]"
+                    }`}
+                  >
+                    <span>{de ? dim.labelDE : dim.labelZH}</span>
+                    <span className="ml-1 opacity-75 text-[10px]">({count})</span>
+                  </button>
+                );
+              })}
             </div>
           </div>
 
