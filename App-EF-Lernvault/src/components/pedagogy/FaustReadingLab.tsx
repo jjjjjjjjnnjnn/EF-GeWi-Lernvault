@@ -347,7 +347,7 @@ const EXCERPTS: TextExcerpt[] = [
         id: "q-inhalt",
         dimension: "inhalt",
         titleDE: "1. Inhalt & Fakten",
-        titleZH: "1. 内容与事实理解 (AFB I)",
+        titleZH: "核心论点与知识检视",
         afb: "AFB I",
         questionDE:
           "Welche vier akademischen Fakultäten zählt Faust auf, und zu welchem konkreten materiellen wie existenziellen Resümee gelangt er in Vers 354–376?",
@@ -404,7 +404,7 @@ const EXCERPTS: TextExcerpt[] = [
         id: "q-motiv",
         dimension: "motiv",
         titleDE: "2. Hauptthema & Motiv",
-        titleZH: "2. 主旨与母题辨析 (AFB II)",
+        titleZH: "浮士德求索精神与存在危机",
         afb: "AFB II",
         questionDE:
           "Welches Kernmotiv des 'Sturm und Drang' bzw. der deutschen Klassik manifestiert sich in den berühmten Versen 382–383 ('Dass ich erkenne, was die Welt / Im Innersten zusammenhält')?",
@@ -459,7 +459,7 @@ const EXCERPTS: TextExcerpt[] = [
         id: "q-handlung",
         dimension: "handlung",
         titleDE: "3. Handlung & Dramenkontext",
-        titleZH: "3. 情节脉络与戏剧结构 (AFB I/II)",
+        titleZH: "戏剧开端与因果动机链条",
         afb: "AFB II",
         questionDE:
           "Welche dramaturgische Schlüsselfunktion erfüllt dieser Monolog in der Makrostruktur des Gesamtwerkes, und welche unmittelbare Kausalkette stößt er im Folgenden an?",
@@ -514,7 +514,7 @@ const EXCERPTS: TextExcerpt[] = [
         id: "q-wortschatz",
         dimension: "wortschatz",
         titleDE: "4. Wortschatz & Semantik",
-        titleZH: "4. 古典词汇与语义剖析 (AFB II)",
+        titleZH: "经院学术词汇的历史语用内涵",
         afb: "AFB II",
         questionDE:
           "Welche historische Konnotation tragen Goethes Wendungen „armer Tor“ (V. 358), „Laffen“ (V. 366) und „in Worten kramen“ (V. 385) im Kontext der damaligen Gelehrsamkeit?",
@@ -569,7 +569,7 @@ const EXCERPTS: TextExcerpt[] = [
         id: "q-stilmittel",
         dimension: "stilmittel",
         titleDE: "5. Stilmittel & Rhetorik",
-        titleZH: "5. 修辞手法与格律音韵 (AFB II)",
+        titleZH: "Knittelvers 韵律与修辞手法功能",
         afb: "AFB II",
         questionDE:
           "Welche formalen und rhetorischen Gestaltungsmerkmale (Metrik, Stilfiguren) prägen Goethes Verse, und wie spiegeln sie Fausts psychische Verfassung wider?",
@@ -624,7 +624,7 @@ const EXCERPTS: TextExcerpt[] = [
         id: "q-figuren",
         dimension: "figuren",
         titleDE: "6. Figurenzeichnung & Psychologie",
-        titleZH: "6. 人物刻画与心理描写 (AFB II/III)",
+        titleZH: "浮士德自傲与自卑的悖论人格",
         afb: "AFB III",
         questionDE:
           "Welche seelische Zerrissenheit und welche paradoxen Charakterzüge offenbart Faust in seinem Verhältnis zur bürgerlichen Gesellschaft einerseits und zur Natur andererseits?",
@@ -865,7 +865,7 @@ const EXCERPTS: TextExcerpt[] = [
         id: "q-pakt-inhalt",
         dimension: "inhalt",
         titleDE: "1. Inhalt & Fakten",
-        titleZH: "1. 内容与事实：赌约生效触发条件 (AFB I)",
+        titleZH: "赌约生效的核心触发条件",
         afb: "AFB I",
         questionDE:
           "Welche präzise Bedingung nennt Faust für den Zeitpunkt, an dem Mephisto seine Seele rechtmäßig fordern darf (V. 1692–1699)?",
@@ -914,7 +914,7 @@ const EXCERPTS: TextExcerpt[] = [
         id: "q-pakt-wette",
         dimension: "motiv",
         titleDE: "2. Hauptthema & Motiv",
-        titleZH: "2. 主旨与母题：浮士德与魔鬼的赌约机制 (AFB II)",
+        titleZH: "浮士德与魔鬼的赌约机制",
         afb: "AFB II",
         questionDE:
           "Warum handelt es sich bei Fausts Abmachung mit Mephisto nicht um einen traditionellen Teufelspakt, sondern um eine dynamische Wette?",
@@ -969,7 +969,7 @@ const EXCERPTS: TextExcerpt[] = [
         id: "q-pakt-handlung",
         dimension: "handlung",
         titleDE: "3. Handlung & Dramenkontext",
-        titleZH: "3. 情节与戏剧因果：梅菲斯特索求血字手谕 (AFB II)",
+        titleZH: "梅菲斯特索求血字手谕的因果功能",
         afb: "AFB II",
         questionDE:
           "Welche dramaturgische Funktion hat Mephistos Beharren auf »ein paar Zeilen« (V. 1708) vor dem Hintergrund der Pakt-Szene?",
@@ -1020,7 +1020,7 @@ const EXCERPTS: TextExcerpt[] = [
         id: "q-pakt-wortschatz",
         dimension: "wortschatz",
         titleDE: "4. Wortschatz & Semantik",
-        titleZH: "4. 核心词汇与语义：Pedant 与 Knecht 的考纲语义 (AFB II)",
+        titleZH: "冬烘学究与精神奴役的语义对立",
         afb: "AFB II",
         questionDE:
           "Welche semantische Tiefenschärfe besitzen die Begriffe »Pedant« (V. 1709) und »Knecht« (V. 1703) im Diskurs der Szene?",
@@ -1071,7 +1071,7 @@ const EXCERPTS: TextExcerpt[] = [
         id: "q-pakt-stilmittel",
         dimension: "stilmittel",
         titleDE: "5. Stilmittel & Rhetorik",
-        titleZH: "5. 修辞手法与韵律：四重 Anapher 与末日隐喻 (AFB II)",
+        titleZH: "四重首语重复与末日隐喻修辞",
         afb: "AFB II",
         questionDE:
           "Welche rhetorische Dynamik entfaltet die vierfache Anapher »Dann...« (V. 1694–1697) in Verbindung mit der Metapher der fallenden Zeiger (V. 1698)?",
@@ -1122,7 +1122,7 @@ const EXCERPTS: TextExcerpt[] = [
         id: "q-pakt-figuren",
         dimension: "figuren",
         titleDE: "6. Figurenzeichnung & Psychologie",
-        titleZH: "6. 人物形象与心理：狂飙突进天才观 vs 市民官僚犬儒 (AFB III)",
+        titleZH: "狂飙突进天才观与市民官僚犬儒",
         afb: "AFB III",
         questionDE:
           "Inwiefern offenbart der Dialog V. 1700–1711 die psychologische Kollision zweier diametral entgegengesetzter Welt- und Menschenbilder?",
@@ -1235,8 +1235,6 @@ export function FaustReadingLab({ lang }: { lang: Lang }) {
   const [copiedId, setCopiedId] = useState<string | null>(null);
   // 当前聚焦的考题索引 (0 - 5)
   const [focusIndex, setFocusIndex] = useState<number>(0);
-  // 是否全卷展开模式
-  const [streamMode, setStreamMode] = useState<boolean>(false);
 
   const activeExcerpt = EXCERPTS.find((e) => e.id === selectedExcerptId) ?? EXCERPTS[0];
   const activeVerse = activeExcerpt.verses.find((v) => v.lineNum === activeVerseNum) ?? activeExcerpt.verses[0];
@@ -1323,6 +1321,18 @@ export function FaustReadingLab({ lang }: { lang: Lang }) {
               const hasStilmittel = !!verse.stilmittel;
               const hasVocab = !!verse.vocab;
 
+              // 标黄等标记：还原学生最喜爱的重点标记与批注感
+              let highlightBg = "";
+              if (isSelected) {
+                highlightBg = "bg-amber-100 ring-2 ring-amber-500 font-medium shadow-2xs";
+              } else if (hasStilmittel) {
+                highlightBg = "bg-amber-50/90 border-l-[3px] border-amber-400 pl-2 text-amber-950";
+              } else if (hasVocab) {
+                highlightBg = "bg-blue-50/70 border-l-[3px] border-blue-400 pl-2 text-blue-950";
+              } else {
+                highlightBg = "hover:bg-[var(--surface)]";
+              }
+
               return (
                 <div
                   key={verse.lineNum}
@@ -1330,11 +1340,7 @@ export function FaustReadingLab({ lang }: { lang: Lang }) {
                     verseRefs.current[verse.lineNum] = el;
                   }}
                   onClick={() => setActiveVerseNum(verse.lineNum)}
-                  className={`group py-1.5 px-2.5 rounded transition cursor-pointer flex items-baseline gap-2.5 text-sm leading-relaxed ${
-                    isSelected
-                      ? "bg-[var(--paper-subtle)] ring-1 ring-[var(--ink)] font-semibold"
-                      : "hover:bg-[var(--surface)]"
-                  }`}
+                  className={`group py-1.5 px-2.5 rounded transition cursor-pointer flex items-baseline gap-2.5 text-sm leading-relaxed ${highlightBg}`}
                 >
                   {/* 行号 */}
                   <span className="font-mono text-[10px] text-[var(--gray)]/80 w-8 shrink-0 text-right select-none">
@@ -1343,19 +1349,31 @@ export function FaustReadingLab({ lang }: { lang: Lang }) {
 
                   {/* 德语原诗 + 中文对照 (悬停显示翻译) */}
                   <div className="flex-1 min-w-0">
-                    <span className="text-[var(--ink)] tracking-wide">{verse.textDE}</span>
+                    <span className={`tracking-wide ${hasStilmittel ? "font-serif text-amber-950 font-medium" : "text-[var(--ink)]"}`}>
+                      {verse.textDE}
+                    </span>
                     <span className="ml-2 font-sans text-xs text-[var(--gray)] opacity-0 group-hover:opacity-100 transition-opacity">
                       // {verse.translationZH}
                     </span>
                   </div>
 
-                  {/* 精致微标指示器，极简无噪音 */}
-                  <div className="flex items-center gap-1 shrink-0 text-[10px] select-none">
+                  {/* 右侧标记：标黄修辞标签与词汇标签 */}
+                  <div className="flex items-center gap-1.5 shrink-0 text-[10px] select-none">
                     {hasStilmittel && (
-                      <span className="text-amber-700 font-mono font-bold" title={verse.stilmittel?.type}>§</span>
+                      <span
+                        className="px-1.5 py-0.5 rounded bg-amber-200/90 text-amber-900 border border-amber-300 font-mono font-bold"
+                        title={verse.stilmittel?.type}
+                      >
+                        § {verse.stilmittel?.type.split("(")[0].trim()}
+                      </span>
                     )}
                     {hasVocab && (
-                      <span className="text-blue-700 font-mono" title={verse.vocab?.word}>📖</span>
+                      <span
+                        className="px-1.5 py-0.5 rounded bg-blue-100 text-blue-900 border border-blue-200 font-mono"
+                        title={verse.vocab?.word}
+                      >
+                        📖 {verse.vocab?.word}
+                      </span>
                     )}
                   </div>
                 </div>
@@ -1449,123 +1467,65 @@ export function FaustReadingLab({ lang }: { lang: Lang }) {
         </div>
 
         {/* ================================================================= */}
-        {/* 右栏 (6列): 会考真题解剖矩阵 (单题聚焦模式，杜绝字海) */}
+        {/* 右栏 (6列): 逐题精读理解 (选项性阅读理解，一点一点深入) */}
         {/* ================================================================= */}
-        <div className="lg:col-span-6 space-y-2.5">
-          {/* 六大考向维度导航 */}
-          <div className="flex items-center justify-between border-b border-[var(--line)]/60 pb-1">
-            <div className="flex items-center gap-1 overflow-x-auto">
+        <div className="lg:col-span-6 space-y-3">
+          {/* 精读理解进度顶栏：无标签噪音，纯净步进 */}
+          <div className="flex items-center justify-between border-b border-[var(--line)]/60 pb-2">
+            <div className="flex items-center gap-2">
+              <span className="font-mono font-bold text-xs text-[var(--ink)]">
+                📖 {de ? "Leseverständnis · Schritt für Schritt" : "阅读理解 · 逐题深入"}
+              </span>
+              <span className="text-[11px] font-mono text-[var(--gray)]">
+                (第 {focusIndex + 1} 题 / 共 {activeExcerpt.questions.length} 题)
+              </span>
+            </div>
+
+            {/* 6 题进度圆点导航：点击可直达，已答即标勾叉 */}
+            <div className="flex items-center gap-1.5 font-mono text-xs">
               {activeExcerpt.questions.map((q, idx) => {
-                const isSelected = focusIndex === idx;
-                const isAnswered = !!answers[q.id];
+                const isCurrent = focusIndex === idx;
+                const ans = answers[q.id];
+                const isCorr = q.options.find((o) => o.id === ans)?.isCorrect;
                 return (
                   <button
                     key={q.id}
                     type="button"
-                    onClick={() => {
-                      setFocusIndex(idx);
-                      setStreamMode(false);
-                    }}
-                    className={`px-2.5 py-1 rounded text-xs font-mono border cursor-pointer transition whitespace-nowrap ${
-                      isSelected && !streamMode
-                        ? "bg-[var(--ink)] text-white border-[var(--ink)] font-bold shadow-2xs"
-                        : "bg-[var(--surface)] text-[var(--gray)] border-[var(--line)] hover:border-[var(--gray)]"
+                    onClick={() => setFocusIndex(idx)}
+                    className={`h-5 w-5 rounded-full text-[10px] flex items-center justify-center font-bold cursor-pointer transition ${
+                      isCurrent
+                        ? "bg-[var(--ink)] text-white shadow-2xs scale-110"
+                        : ans
+                        ? isCorr
+                          ? "bg-emerald-100 text-emerald-800 border border-emerald-300"
+                          : "bg-rose-100 text-rose-800 border border-rose-300"
+                        : "bg-[var(--paper-subtle)] text-[var(--gray)] border border-[var(--line)] hover:border-[var(--gray)]"
                     }`}
+                    title={`第 ${idx + 1} 题: ${q.titleZH}`}
                   >
-                    <span>{idx + 1}. {q.titleZH.split("：")[0].split(".")[1]?.trim() || q.dimension}</span>
-                    {isAnswered && <span className="ml-1 text-emerald-500 font-bold">✓</span>}
+                    {ans ? (isCorr ? "✓" : "✗") : idx + 1}
                   </button>
                 );
               })}
             </div>
-
-            <button
-              type="button"
-              onClick={() => setStreamMode(!streamMode)}
-              className="text-[11px] font-mono text-[var(--gray)] hover:text-[var(--ink)] cursor-pointer shrink-0 ml-2"
-            >
-              {streamMode ? (de ? "🎯 Fokus" : "🎯 逐题聚焦") : (de ? "📑 Alle" : "📑 全卷展开")}
-            </button>
           </div>
 
-          {/* 试题展示区 */}
-          {streamMode ? (
-            /* 全卷展开流 */
-            <div className="space-y-3">
-              {activeExcerpt.questions.map((q) => {
-                const selectedOptId = answers[q.id];
-                const isAns = !!selectedOptId;
-                const chosen = q.options.find((o) => o.id === selectedOptId);
-                const isCorr = chosen?.isCorrect ?? false;
-
-                return (
-                  <div key={q.id} className="rounded-lg border border-[var(--line)] bg-[var(--surface)] p-3.5 shadow-2xs space-y-2.5">
-                    <div className="flex items-center justify-between text-xs font-mono">
-                      <span className="font-bold text-[var(--ink)]">{q.titleZH}</span>
-                      <span className="px-1.5 py-0.5 rounded bg-[var(--paper-subtle)] text-[var(--gray)] border border-[var(--line)] text-[10px]">
-                        {q.afb}
-                      </span>
-                    </div>
-
-                    <p className="font-serif text-[13px] leading-relaxed text-[var(--ink)]">
-                      {q.questionZH}
-                    </p>
-
-                    <div className="space-y-1.5 pt-0.5">
-                      {q.options.map((opt) => {
-                        const isThis = selectedOptId === opt.id;
-                        let style = "border-[var(--line)] bg-[var(--paper)] text-[var(--ink)] hover:border-[var(--gray)]";
-                        if (isAns) {
-                          if (opt.isCorrect) style = "border-emerald-500 bg-emerald-50/80 text-emerald-950 font-medium ring-1 ring-emerald-500";
-                          else if (isThis) style = "border-rose-400 bg-rose-50 text-rose-950 line-through";
-                          else style = "border-[var(--line)] bg-[var(--paper-subtle)] opacity-50";
-                        }
-                        return (
-                          <button
-                            key={opt.id}
-                            type="button"
-                            disabled={isAns}
-                            onClick={() => setAnswers({ ...answers, [q.id]: opt.id })}
-                            className={`w-full text-left p-2.5 rounded-md border text-xs leading-relaxed transition cursor-pointer flex items-start gap-2 ${style}`}
-                          >
-                            <span className="font-mono font-bold shrink-0 mt-0.5">{opt.id.toUpperCase()}.</span>
-                            <span>{opt.textZH}</span>
-                          </button>
-                        );
-                      })}
-                    </div>
-
-                    {isAns && (
-                      <div className="mt-2.5 pt-2.5 border-t border-[var(--line)]/60 space-y-1.5">
-                        <div className={`text-xs font-mono font-bold ${isCorr ? "text-emerald-800" : "text-rose-900"}`}>
-                          {isCorr ? "✓ 解题命中" : "✗ 需强化辨析"}
-                        </div>
-                        <p className="text-xs leading-relaxed text-[var(--gray)] font-sans">{q.explanationZH}</p>
-                      </div>
-                    )}
-                  </div>
-                );
-              })}
-            </div>
-          ) : (
-            /* 单题聚焦模式 (默认)：高度契合左侧，空间清爽 */
+          {/* 单题阅读理解卡片 */}
+          {currentQ && (
             <div className="rounded-lg border border-[var(--line)] bg-[var(--surface)] p-4 shadow-2xs space-y-3">
-              {/* 题头 */}
+              {/* 题头：清晰明确 */}
               <div className="flex items-center justify-between text-xs font-mono border-b border-[var(--line)]/60 pb-2">
-                <div className="flex items-center gap-2">
-                  <span className="font-bold text-[var(--ink)]">
-                    第 {focusIndex + 1} 题 · {currentQ.titleZH}
-                  </span>
-                  <span className="px-1.5 py-0.2 rounded bg-[var(--paper-subtle)] text-[var(--gray)] border border-[var(--line)] text-[10px]">
-                    {currentQ.afb}
-                  </span>
-                </div>
-                <span className="text-[11px] text-[var(--gray)] font-mono">
-                  {focusIndex + 1} / {activeExcerpt.questions.length}
+                <span className="font-bold text-[var(--ink)]">
+                  第 {focusIndex + 1} 题：{currentQ.titleZH}
                 </span>
+                {answers[currentQ.id] && (
+                  <span className="text-[10px] text-emerald-700 font-bold bg-emerald-50 px-1.5 py-0.5 rounded border border-emerald-200">
+                    已作答
+                  </span>
+                )}
               </div>
 
-              {/* 题目正文 */}
+              {/* 设问正文 */}
               <p className="font-serif text-[14px] leading-relaxed text-[var(--ink)]">
                 {currentQ.questionZH}
               </p>
@@ -1617,8 +1577,8 @@ export function FaustReadingLab({ lang }: { lang: Lang }) {
                   >
                     <span>
                       {currentQ.options.find((o) => o.id === answers[currentQ.id])?.isCorrect
-                        ? "✓ RICHTIG // 解题命中"
-                        : "✗ FEHLER // 需强化辨析"}
+                        ? "✓ 解题命中 // 正确理解"
+                        : "✗ 需强化辨析 // 深入思考"}
                     </span>
                   </div>
 
@@ -1630,7 +1590,7 @@ export function FaustReadingLab({ lang }: { lang: Lang }) {
                   <div className="p-2 rounded border border-[var(--line)] bg-[var(--paper-subtle)] space-y-1">
                     <div className="flex items-center justify-between text-[10px] font-mono text-[var(--gray)]">
                       <span className="font-bold text-[var(--ink)]">
-                        § {de ? "Muster-Formulierung für die Klausur" : "德语会考高分答题句式"}
+                        § {de ? "Muster-Formulierung für die Klausur" : "德语高分答题句式"}
                       </span>
                       <button
                         type="button"
@@ -1676,31 +1636,29 @@ export function FaustReadingLab({ lang }: { lang: Lang }) {
               )}
 
               {/* 题目导航步进器 */}
-              <div className="flex items-center justify-between pt-2.5 border-t border-[var(--line)]/60">
+              <div className="flex items-center justify-between pt-3 border-t border-[var(--line)]/60">
                 <button
                   type="button"
                   disabled={focusIndex === 0}
                   onClick={() => setFocusIndex(focusIndex - 1)}
-                  className="px-3 py-1 rounded border border-[var(--line)] text-xs font-mono cursor-pointer disabled:opacity-30 disabled:cursor-not-allowed hover:bg-[var(--paper-subtle)]"
+                  className="px-3 py-1.5 rounded border border-[var(--line)] text-xs font-mono cursor-pointer disabled:opacity-30 disabled:cursor-not-allowed hover:bg-[var(--paper-subtle)]"
                 >
                   ◀ 上一题
                 </button>
-                <div className="flex items-center gap-1">
-                  {activeExcerpt.questions.map((_, i) => (
-                    <span
-                      key={i}
-                      onClick={() => setFocusIndex(i)}
-                      className={`h-2 w-2 rounded-full cursor-pointer transition ${
-                        focusIndex === i ? "bg-[var(--ink)] scale-125" : "bg-[var(--line)] hover:bg-[var(--gray)]"
-                      }`}
-                    />
-                  ))}
-                </div>
+
+                <span className="text-xs font-mono text-[var(--gray)]">
+                  第 {focusIndex + 1} 题 / 共 {activeExcerpt.questions.length} 题
+                </span>
+
                 <button
                   type="button"
                   disabled={focusIndex === activeExcerpt.questions.length - 1}
                   onClick={() => setFocusIndex(focusIndex + 1)}
-                  className="px-3 py-1 rounded border border-[var(--line)] text-xs font-mono cursor-pointer disabled:opacity-30 disabled:cursor-not-allowed hover:bg-[var(--paper-subtle)]"
+                  className={`px-3.5 py-1.5 rounded text-xs font-mono cursor-pointer transition ${
+                    answers[currentQ.id] && focusIndex < activeExcerpt.questions.length - 1
+                      ? "bg-[var(--ink)] text-white shadow-2xs font-bold hover:opacity-90"
+                      : "border border-[var(--line)] disabled:opacity-30 disabled:cursor-not-allowed hover:bg-[var(--paper-subtle)]"
+                  }`}
                 >
                   下一题 ▶
                 </button>
