@@ -3,7 +3,7 @@
 // 1. 典雅文献双栏架构：左侧高密度行号原著选段（Zeilennummerierung）+ 逐句交互释义与修辞高亮
 // 2. 六维真题考向解剖矩阵：内容(Inhalt)、主旨(Motiv)、情节(Handlung)、词汇(Wortschatz)、修辞(Stilmittel)、描写(Figurenzeichnung)
 // 3. 官方评卷期望标准（Erwartungshorizont / EHZ）+ 高中德语会考标准句式积木（Klausur-Formulierungshilfe）
-import { useState, useRef } from "react";
+import { useState } from "react";
 import type { Lang } from "../../i18n";
 
 export interface VerseItem {
@@ -839,21 +839,14 @@ export function FaustReadingLab({ lang }: { lang: Lang }) {
   const [activeDimension, setActiveDimension] = useState<
     "all" | "inhalt" | "motiv" | "handlung" | "wortschatz" | "stilmittel" | "figuren"
   >("all");
-  // 答题展示模式：'focus' (单题聚焦模式，左右等高无空白) | 'stream' (六维全览模式)
-  const [viewMode, setViewMode] = useState<"focus" | "stream">("focus");
-  // 在单题模式下的当前问题索引
-  const [focusIndex, setFocusIndex] = useState<number>(0);
-  // 全览模式下各题折叠状态
+  // 全卷展开模式下各题独立折叠状态 (默认全卷展开)
   const [collapsedQuestions, setCollapsedQuestions] = useState<Record<string, boolean>>({});
-  // 诗行 DOM 引用，用于点击金句平滑滚动定位
-  const verseRefs = useRef<Record<number, HTMLDivElement | null>>({});
+  // 会考黄金诗句定位板块：默认折叠
+  const [bookmarksExpanded, setBookmarksExpanded] = useState<boolean>(false);
 
+  // 定位诗句：仅切换选中行及显微镜解析，绝不触发浏览器外层页面或标签页滚动移动
   const jumpToVerse = (lineNum: number) => {
     setActiveVerseNum(lineNum);
-    const el = verseRefs.current[lineNum];
-    if (el) {
-      el.scrollIntoView({ behavior: "smooth", block: "center" });
-    }
   };
 
   // 用户的答题记录
@@ -998,9 +991,6 @@ export function FaustReadingLab({ lang }: { lang: Lang }) {
               return (
                 <div
                   key={verse.lineNum}
-                  ref={(el) => {
-                    verseRefs.current[verse.lineNum] = el;
-                  }}
                   onClick={() => setActiveVerseNum(verse.lineNum)}
                   className={`group py-1.5 px-2 rounded transition cursor-pointer flex items-baseline gap-3 text-sm leading-relaxed ${
                     isSelected
@@ -1114,30 +1104,41 @@ export function FaustReadingLab({ lang }: { lang: Lang }) {
             </div>
           )}
 
-          {/* 📌 会考核心黄金诗句快速直达书签 */}
-          <div className="rounded-md border border-[var(--line)] bg-[var(--surface)] p-2.5 space-y-1.5 text-xs font-mono">
-            <div className="flex items-center justify-between text-[10px] text-[var(--gray)] uppercase">
-              <span className="font-bold text-[var(--ink)]">
-                📌 {de ? "Abitur-Kernzitate Schnellzugriff" : "会考必背黄金诗句定位"}
+          {/* 📌 会考核心黄金诗句快速直达书签 (默认折叠) */}
+          <div className="rounded-md border border-[var(--line)] bg-[var(--surface)] p-2.5 text-xs font-mono transition-all">
+            <button
+              type="button"
+              onClick={() => setBookmarksExpanded(!bookmarksExpanded)}
+              className="w-full flex items-center justify-between text-[10px] text-[var(--gray)] uppercase cursor-pointer hover:text-[var(--ink)]"
+            >
+              <span className="font-bold text-[var(--ink)] flex items-center gap-1.5">
+                <span>📌</span>
+                <span>{de ? "Abitur-Kernzitate Schnellzugriff" : "会考必背黄金诗句定位"}</span>
               </span>
-              <span>{de ? "Klick zum Fokussieren" : "点击秒级定位原诗"}</span>
-            </div>
-            <div className="flex flex-wrap gap-1">
-              {(BOOKMARKS[activeExcerpt.id] || []).map((bm) => (
-                <button
-                  key={bm.lineNum}
-                  type="button"
-                  onClick={() => jumpToVerse(bm.lineNum)}
-                  className={`px-1.5 py-0.5 text-[10px] rounded border cursor-pointer transition ${
-                    activeVerseNum === bm.lineNum
-                      ? "bg-[var(--ink)] text-white border-[var(--ink)] font-bold shadow-2xs"
-                      : "bg-[var(--paper-subtle)] text-[var(--gray)] border-[var(--line)] hover:border-[var(--gray)] hover:text-[var(--ink)]"
-                  }`}
-                >
-                  {de ? bm.labelDE : bm.labelZH}
-                </button>
-              ))}
-            </div>
+              <span className="flex items-center gap-1 text-[11px]">
+                <span>{bookmarksExpanded ? "▲" : "▼"}</span>
+                <span>{bookmarksExpanded ? (de ? "Einklappen" : "收起") : (de ? "Ausklappen" : "展开")}</span>
+              </span>
+            </button>
+
+            {bookmarksExpanded && (
+              <div className="mt-2 pt-2 border-t border-[var(--line)]/50 flex flex-wrap gap-1">
+                {(BOOKMARKS[activeExcerpt.id] || []).map((bm) => (
+                  <button
+                    key={bm.lineNum}
+                    type="button"
+                    onClick={() => jumpToVerse(bm.lineNum)}
+                    className={`px-1.5 py-0.5 text-[10px] rounded border cursor-pointer transition ${
+                      activeVerseNum === bm.lineNum
+                        ? "bg-[var(--ink)] text-white border-[var(--ink)] font-bold shadow-2xs"
+                        : "bg-[var(--paper-subtle)] text-[var(--gray)] border-[var(--line)] hover:border-[var(--gray)] hover:text-[var(--ink)]"
+                    }`}
+                  >
+                    {de ? bm.labelDE : bm.labelZH}
+                  </button>
+                ))}
+              </div>
+            )}
           </div>
 
           {/* 🏛️ 考纲能力层级 (AFB I / II / III) 对照速查指南 */}
@@ -1166,38 +1167,15 @@ export function FaustReadingLab({ lang }: { lang: Lang }) {
         {/* 右栏 (6列): 会考六大考查维度答题训练矩阵 (Die 6 Prüfungsdimensionen) */}
         {/* ================================================================= */}
         <div className="lg:col-span-6 space-y-4">
-          {/* 六大考向维度与展示模式切换导航 */}
-          <div className="border-b border-[var(--line)]/60 pb-3 space-y-2">
-            <div className="flex flex-wrap items-center justify-between gap-2 text-xs font-mono">
+          {/* 六大考向维度导航 */}
+          <div className="border-b border-[var(--line)]/60 pb-2.5 space-y-2">
+            <div className="flex items-center justify-between text-xs font-mono">
               <span className="font-bold text-[var(--ink)]">
                 {de ? "Klausur-Fragenmatrix (Abitur-Standard)" : "六维会考真题解剖矩阵"}
               </span>
-
-              {/* 模式切换：单题精炼 vs 全卷全览 */}
-              <div className="flex items-center gap-1 bg-[var(--paper-subtle)] p-0.5 rounded border border-[var(--line)]">
-                <button
-                  type="button"
-                  onClick={() => setViewMode("focus")}
-                  className={`px-2 py-0.5 rounded text-[10px] font-mono cursor-pointer transition ${
-                    viewMode === "focus"
-                      ? "bg-[var(--surface)] text-[var(--ink)] font-bold shadow-2xs border border-[var(--line)]"
-                      : "text-[var(--gray)] hover:text-[var(--ink)]"
-                  }`}
-                >
-                  🎯 {de ? "Fokus-Modus" : "逐题聚焦"}
-                </button>
-                <button
-                  type="button"
-                  onClick={() => setViewMode("stream")}
-                  className={`px-2 py-0.5 rounded text-[10px] font-mono cursor-pointer transition ${
-                    viewMode === "stream"
-                      ? "bg-[var(--surface)] text-[var(--ink)] font-bold shadow-2xs border border-[var(--line)]"
-                      : "text-[var(--gray)] hover:text-[var(--ink)]"
-                  }`}
-                >
-                  📑 {de ? "Alle Fragen" : "全卷展开"}
-                </button>
-              </div>
+              <span className="text-[10px] text-[var(--gray)]">
+                {filteredQuestions.length} {de ? "Aufgaben · Vollständige Prüfung" : "道题 · 全卷展开"}
+              </span>
             </div>
 
             {/* 维度选项卡 */}
@@ -1214,10 +1192,7 @@ export function FaustReadingLab({ lang }: { lang: Lang }) {
                 <button
                   key={dim.id}
                   type="button"
-                  onClick={() => {
-                    setActiveDimension(dim.id as any);
-                    setFocusIndex(0);
-                  }}
+                  onClick={() => setActiveDimension(dim.id as any)}
                   className={`px-2 py-0.5 rounded text-[11px] font-mono border cursor-pointer transition ${
                     activeDimension === dim.id
                       ? "bg-[var(--ink)] text-white border-[var(--ink)] font-bold shadow-2xs"
@@ -1230,60 +1205,15 @@ export function FaustReadingLab({ lang }: { lang: Lang }) {
             </div>
           </div>
 
-          {/* 逐题聚焦模式导航条 (仅在 focus 模式且有题目时展示) */}
-          {viewMode === "focus" && filteredQuestions.length > 0 && (
-            <div className="flex items-center justify-between text-xs font-mono bg-[var(--paper-subtle)] p-2 rounded border border-[var(--line)]/60">
-              <button
-                type="button"
-                disabled={focusIndex === 0}
-                onClick={() => setFocusIndex((prev) => Math.max(0, prev - 1))}
-                className="px-2 py-1 rounded bg-[var(--surface)] border border-[var(--line)] text-[var(--ink)] disabled:opacity-40 disabled:cursor-not-allowed cursor-pointer hover:bg-[var(--paper)] transition"
-              >
-                ◀ {de ? "Vorherige" : "上一题"}
-              </button>
-
-              <div className="flex items-center gap-1.5 text-[11px]">
-                {filteredQuestions.map((q, idx) => (
-                  <button
-                    key={q.id}
-                    type="button"
-                    onClick={() => setFocusIndex(idx)}
-                    className={`h-6 w-6 rounded flex items-center justify-center font-bold text-[10px] cursor-pointer transition border ${
-                      focusIndex === idx
-                        ? "bg-[var(--ink)] text-white border-[var(--ink)] shadow-2xs"
-                        : answers[q.id]
-                        ? "bg-emerald-100 text-emerald-900 border-emerald-300"
-                        : "bg-[var(--surface)] text-[var(--gray)] border-[var(--line)] hover:border-[var(--ink)]"
-                    }`}
-                  >
-                    {idx + 1}
-                  </button>
-                ))}
-              </div>
-
-              <button
-                type="button"
-                disabled={focusIndex === filteredQuestions.length - 1}
-                onClick={() => setFocusIndex((prev) => Math.min(filteredQuestions.length - 1, prev + 1))}
-                className="px-2 py-1 rounded bg-[var(--surface)] border border-[var(--line)] text-[var(--ink)] disabled:opacity-40 disabled:cursor-not-allowed cursor-pointer hover:bg-[var(--paper)] transition"
-              >
-                {de ? "Nächste" : "下一题"} ▶
-              </button>
-            </div>
-          )}
-
-          {/* 考题列表流 */}
+          {/* 考题全卷展开流 */}
           <div className="space-y-4">
-            {(viewMode === "focus"
-              ? [filteredQuestions[focusIndex] || filteredQuestions[0]].filter(Boolean)
-              : filteredQuestions
-            ).map((q) => {
+            {filteredQuestions.map((q) => {
               const selectedOptionId = answers[q.id];
               const isAnswered = !!selectedOptionId;
               const chosenOption = q.options.find((o) => o.id === selectedOptionId);
               const isCorrect = chosenOption?.isCorrect ?? false;
               const isEHZOpen = showEHZ[q.id] ?? false;
-              const isCollapsed = viewMode === "stream" && !!collapsedQuestions[q.id];
+              const isCollapsed = !!collapsedQuestions[q.id];
 
               if (isCollapsed) {
                 return (
@@ -1336,17 +1266,15 @@ export function FaustReadingLab({ lang }: { lang: Lang }) {
                       </span>
                     </div>
 
-                    {viewMode === "stream" && (
-                      <button
-                        type="button"
-                        onClick={() =>
-                          setCollapsedQuestions({ ...collapsedQuestions, [q.id]: true })
-                        }
-                        className="text-[10px] text-[var(--gray)] hover:text-[var(--ink)] cursor-pointer underline"
-                      >
-                        ▲ {de ? "Einklappen" : "折叠"}
-                      </button>
-                    )}
+                    <button
+                      type="button"
+                      onClick={() =>
+                        setCollapsedQuestions({ ...collapsedQuestions, [q.id]: true })
+                      }
+                      className="text-[10px] text-[var(--gray)] hover:text-[var(--ink)] cursor-pointer underline"
+                    >
+                      ▲ {de ? "Einklappen" : "折叠"}
+                    </button>
                   </div>
 
                   {/* 题目正文 */}
