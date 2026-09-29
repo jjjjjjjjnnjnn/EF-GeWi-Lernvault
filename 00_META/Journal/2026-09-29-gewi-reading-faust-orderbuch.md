@@ -131,14 +131,28 @@ tags: [EF, Meta, Journal, App, Deutsch, SoWi]
   - 彻底移除 `🎛️ 排版评估实验室` 切换条及相关 Demo B/C/D 冗余代码，版面直接呈现开阔舒展的宽幅双栏。
 - **验证**：
   - `tsc -b` 0 错误；`npm run build` 6.84s 通过。
-- **用户验收**：
-  - 用户明确确认：“这一版本可以，确定了”。
-  - 该纯色无框标记、舒朗呼吸双栏交互架构正式固化为文科巨著原典细读工坊（GeWi Reading Lab）的标准设计规范。
-
-
-
-
-
-
-
-
+### 16. 文科原典精读工坊广泛化解耦与跨学科课程/教具箱批量落地
+- **问题与诉求**：
+  - 用户指令：“进行这个项目广泛化设计，以及其他课程批量进行。把这个demo落实到真正课程中去”。
+  - 需将此前单一的歌德浮士德原型解耦为通用型学术组件，并批量扩充至北威州文科高中文理班（EF / Q1）四大学科。
+- **实施要点**：
+  1. **数据中心解耦（`readingLabRegistry.ts`）**：
+     - 构建通用数据接口 `GeWiTextExcerpt`、`VerseOrLineItem` 与 `DimensionQuestion`。
+     - 预置 4 大学科 6 部重磅会考经典文献，每篇配备完整的逐行对译、生词与修辞标记、以及 6 道覆盖 AFB I/II/III 的超级高难会考题（含迷惑项诊断、14分标准答案定式、EHZ采分点）：
+       - 德语文学（Deutsch）：Goethe《Faust I》（夜半学者独白 V. 354–385；书斋立约赌局 V. 1692–1711）
+       - 德语戏剧（Deutsch）：Georg Büchner《Woyzeck》（理发长官对话，反英雄社会现实主义悲剧）
+       - 哲学原典（Philosophie）：Immanuel Kant《Grundlegung zur Metaphysik der Sitten》（定言命令与绝对责任伦理）
+       - 社会科学（SoWi）：Frank-Walter Steinmeier《Demokratie braucht Demokraten》（政治演说论证结构与公民韧性剖析）
+       - 英语文学（Englisch）：William Shakespeare《Macbeth》（Act V Scene 5 虚无独白与伊丽莎白时代抑扬五音步）
+  2. **通用阅读工坊组件（`GeWiReadingLab.tsx`）**：
+     - 延续用户确认的基线标准：纯色无边框标记（`bg-amber-100/60`、`bg-sky-100/60`）、开阔舒朗双栏（`gap-8 xl:gap-10`）、左栏吸顶伴读、右栏单题深入决策台。
+     - 支持学科分类筛选、篇目下拉无缝调度、紧凑模式适配。
+  3. **落地到真实课程与教具（`Reise.tsx` / `Werkzeuge.tsx` / `DesignLab.tsx`）**：
+     - `Reise.tsx`：当文科互动课程（Deutsch, Englisch, Philosophie, SoWi）触发 `[Werkzeug: text-analyse]`、`reader`、`originaltext`、`faust`、`woyzeck`、`kant`、`rede` 等别名时，自动挂载激活通用 `GeWiReadingLab`，彻底取代原简陋的 4 行 `EditorialReader`。
+     - `DesignLab.tsx`：升级为通用文科原典解剖展厅，支持全量 6 大原典自由研读。
+     - `Werkzeuge.tsx`：工具箱中原文本高亮器升级为「原典解剖台」（Textanalyse-Labor），支持按当前学科过滤与全量文科文献探索。
+  4. **工程修复**：
+     - 修复根目录 `.gitignore` 中 `data/` 误屏蔽 `App-EF-Lernvault/src/data/` 的规则，明确锚定为 `/data/`。
+- **验证**：
+  - `tsc -b` 0 错误；`npm run build` 6.12s 构建通过。
+  - `python scripts/vault-check.py` PASS（401 notes, 1599 csv rows, 337 links, 271 reisen, 0 badnames, 0 badglossar）。
