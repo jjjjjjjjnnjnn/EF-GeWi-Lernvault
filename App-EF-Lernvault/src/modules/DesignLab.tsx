@@ -41,7 +41,11 @@ export function DesignLab({ lang }: { lang: Lang }) {
   const activeDemoMeta = DEMO_OPTIONS.find((d) => d.id === currentDemo) ?? DEMO_OPTIONS[0];
 
   return (
-    <div className="mx-auto w-full min-w-0 max-w-6xl space-y-4 pb-16">
+    <div
+      className={`mx-auto w-full min-w-0 space-y-4 pb-16 transition-all duration-300 ${
+        currentDemo === "faust-reading" ? "max-w-[1440px] px-2 sm:px-4" : "max-w-6xl px-4"
+      }`}
+    >
       {/* 极简 Tufte 学术工坊顶栏 */}
       <header className="border-b border-[var(--line)] pb-2.5 flex items-center justify-between gap-4">
         <div className="flex items-center gap-2 min-w-0">

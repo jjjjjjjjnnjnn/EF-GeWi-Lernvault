@@ -1250,10 +1250,15 @@ export function FaustReadingLab({ lang }: { lang: Lang }) {
     }
   };
 
+  // 布局评估模式切换 (A: 宽幅双栏, B: 三栏工作台, C: 典籍抽屉, D: 两阶段流)
+  const [layoutMode, setLayoutMode] = useState<"wide-split" | "three-col" | "drawer" | "two-phase">("wide-split");
+  // 诊断面板分段胶囊 (Demo A 专享或通用)
+  const [activeDiagTab, setActiveDiagTab] = useState<"anchor" | "distractors" | "context" | "muster" | "all">("anchor");
+  // 抽屉展开状态 (Demo C)
+  const [drawerOpen, setDrawerOpen] = useState<boolean>(true);
+
   // 用户的答题记录
   const [answers, setAnswers] = useState<Record<string, string>>({});
-  // 是否展示 Erwartungshorizont (评分标准详情)
-  const [showEHZ, setShowEHZ] = useState<Record<string, boolean>>({});
   // 复制提示
   const [copiedId, setCopiedId] = useState<string | null>(null);
   // 当前聚焦的考题索引 (0 - 5)
@@ -1278,6 +1283,439 @@ export function FaustReadingLab({ lang }: { lang: Lang }) {
     navigator.clipboard.writeText(text);
     setCopiedId(id);
     setTimeout(() => setCopiedId(null), 1800);
+  };
+
+  // 解析长篇诊断文案为结构化区块
+  const parseExplanationSections = (text: string) => {
+    const anchorMatch = text.match(/【✅ 正解依据与文本锚点】([\s\S]*?)(?=【❌ 干扰项逐项诊断】|$)/);
+    const distractorsMatch = text.match(/【❌ 干扰项逐项诊断】([\s\S]*?)(?=【🏛 时代思潮与哲学脉络】|$)/);
+    const contextMatch = text.match(/【🏛 时代思潮与哲学脉络】([\s\S]*?)$/);
+
+    return {
+      anchor: anchorMatch ? anchorMatch[1].trim() : text,
+      distractors: distractorsMatch ? distractorsMatch[1].trim() : "",
+      context: contextMatch ? contextMatch[1].trim() : "",
+      full: text,
+    };
+  };
+
+  const diagSections = parseExplanationSections(currentQ.explanationZH);
+
+  // 渲染诗句原著卷轴（去燥、紧凑微标、杜绝折行挤压）
+  const renderVerseScroll = (heightClass: string = "h-[420px]") => (
+    <div
+      ref={verseListRef}
+      className={`rounded-lg border border-[var(--line)] bg-[var(--paper)] p-3 shadow-2xs font-serif divide-y divide-[var(--line)]/20 ${heightClass} overflow-y-auto select-none scroll-smooth`}
+    >
+      {activeExcerpt.verses.map((verse) => {
+        const isSelected = verse.lineNum === activeVerseNum;
+        const hasStilmittel = !!verse.stilmittel;
+        const hasVocab = !!verse.vocab;
+
+        let highlightBg = "";
+        if (isSelected) {
+          highlightBg = "bg-amber-100 ring-2 ring-amber-500 font-medium shadow-2xs";
+        } else if (hasStilmittel) {
+          highlightBg = "bg-amber-50/90 border-l-[3px] border-amber-400 pl-2 text-amber-950";
+        } else if (hasVocab) {
+          highlightBg = "bg-blue-50/70 border-l-[3px] border-blue-400 pl-2 text-blue-950";
+        } else {
+          highlightBg = "hover:bg-[var(--surface)]";
+        }
+
+        return (
+          <div
+            key={verse.lineNum}
+            ref={(el) => {
+              verseRefs.current[verse.lineNum] = el;
+            }}
+            onClick={() => setActiveVerseNum(verse.lineNum)}
+            className={`group py-1.5 px-2 rounded transition cursor-pointer flex items-baseline gap-2 text-sm leading-relaxed ${highlightBg}`}
+          >
+            {/* 行号 */}
+            <span className="font-mono text-[10px] text-[var(--gray)]/80 w-7 shrink-0 text-right select-none">
+              {verse.lineNum % 5 === 0 || isSelected ? verse.lineNum : ""}
+            </span>
+
+            {/* 德语原诗 + 紧凑微标 (不再挤占整行) */}
+            <div className="flex-1 min-w-0 flex items-baseline justify-between gap-1.5">
+              <div className="min-w-0">
+                <span className={`tracking-wide ${hasStilmittel ? "font-serif text-amber-950 font-medium" : "text-[var(--ink)]"}`}>
+                  {verse.textDE}
+                </span>
+                <span className="ml-2 font-sans text-xs text-[var(--gray)] opacity-0 group-hover:opacity-100 transition-opacity">
+                  // {verse.translationZH}
+                </span>
+              </div>
+
+              {/* 极简徽章：符号化展示，悬停显全称 */}
+              <div className="flex items-center gap-1 shrink-0 text-[10px] select-none">
+                {hasStilmittel && (
+                  <span
+                    className="px-1 py-0.2 rounded bg-amber-200/90 text-amber-950 border border-amber-300 font-mono text-[9px] font-bold"
+                    title={verse.stilmittel?.type}
+                  >
+                    § {verse.stilmittel?.type.split("(")[0].replace("&", "+").trim()}
+                  </span>
+                )}
+                {hasVocab && (
+                  <span
+                    className="px-1 py-0.2 rounded bg-blue-100 text-blue-900 border border-blue-200 font-mono text-[9px]"
+                    title={verse.vocab?.word}
+                  >
+                    📖 {verse.vocab?.word}
+                  </span>
+                )}
+              </div>
+            </div>
+          </div>
+        );
+      })}
+    </div>
+  );
+
+  // 渲染显微镜解析抽屉
+  const renderMicroscope = () => (
+    activeVerse && (
+      <div className="rounded-md border border-[var(--line)] bg-[var(--surface)] p-2.5 space-y-1.5 shadow-2xs font-sans text-xs">
+        <div className="flex items-center justify-between border-b border-[var(--line)]/60 pb-1">
+          <div className="flex items-center gap-2">
+            <span className="font-mono font-bold text-[var(--ink)]">
+              Vers {activeVerse.lineNum} // {de ? "Detail-Analyse" : "逐行显微镜解析"}
+            </span>
+            {activeVerse.toneCategory && (
+              <span
+                className={`font-mono text-[9px] px-1 py-0.2 rounded border ${
+                  activeVerse.toneCategory === "krise"
+                    ? "bg-rose-50 text-rose-900 border-rose-200"
+                    : activeVerse.toneCategory === "spott"
+                    ? "bg-purple-50 text-purple-900 border-purple-200"
+                    : "bg-emerald-50 text-emerald-900 border-emerald-200"
+                }`}
+              >
+                {activeVerse.toneCategory === "krise"
+                  ? de ? "Erkenntniskrise" : "学者认知绝望"
+                  : activeVerse.toneCategory === "spott"
+                  ? de ? "Spott über Dogmatik" : "对经院伪善的嘲讽"
+                  : de ? "Titanisches Streben" : "泰坦式求索冲动"}
+              </span>
+            )}
+          </div>
+        </div>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs">
+          <div className="p-1.5 rounded bg-[var(--paper-subtle)] border border-[var(--line)]/50">
+            <div className="font-mono text-[9px] text-[var(--gray)] uppercase mb-0.5">
+              {de ? "Wortgetreue Übersetzung" : "直译与义理对照"}
+            </div>
+            <div className="font-serif text-[12px] text-[var(--ink)] leading-snug">
+              {activeVerse.translationZH}
+            </div>
+          </div>
+
+          {activeVerse.stilmittel && (
+            <div className="p-1.5 rounded bg-amber-50/70 border border-amber-200/60 text-amber-950">
+              <div className="font-mono text-[9px] uppercase font-bold text-amber-900 mb-0.5">
+                § {activeVerse.stilmittel.type}
+              </div>
+              <div className="text-[11px] leading-relaxed">
+                {de ? activeVerse.stilmittel.descDE : activeVerse.stilmittel.descZH}
+              </div>
+            </div>
+          )}
+        </div>
+
+        {activeVerse.vocab && (
+          <div className="p-1.5 rounded bg-blue-50/60 border border-blue-200/60 text-blue-950">
+            <div className="font-mono text-[9px] font-bold text-blue-900 mb-0.5">
+              📖 Glossar: <span className="underline">{activeVerse.vocab.word}</span>
+            </div>
+            <div className="text-[11px] leading-relaxed">
+              <strong>{activeVerse.vocab.meaningDE}</strong> — {activeVerse.vocab.meaningZH}
+            </div>
+          </div>
+        )}
+      </div>
+    )
+  );
+
+  // 渲染黄金诗句书签
+  const renderBookmarks = () => (
+    <div className="flex items-center gap-1 flex-wrap text-xs font-mono pt-0.5">
+      <span className="text-[10px] text-[var(--gray)] font-bold">📌 {de ? "Kernzitate:" : "黄金诗句:"}</span>
+      {(BOOKMARKS[activeExcerpt.id] || []).map((bm) => (
+        <button
+          key={bm.lineNum}
+          type="button"
+          onClick={() => jumpToVerse(bm.lineNum)}
+          className={`px-1.5 py-0.5 text-[10px] rounded border cursor-pointer transition ${
+            activeVerseNum === bm.lineNum
+              ? "bg-[var(--ink)] text-white border-[var(--ink)] font-bold"
+              : "bg-[var(--paper-subtle)] text-[var(--gray)] border-[var(--line)] hover:border-[var(--gray)] hover:text-[var(--ink)]"
+          }`}
+        >
+          {de ? bm.labelDE : bm.labelZH}
+        </button>
+      ))}
+    </div>
+  );
+
+  // 渲染试题设问与选项
+  const renderQuestionCard = (hideDiagnostics: boolean = false) => {
+    const isAnswered = !!answers[currentQ.id];
+    return (
+      <div className="rounded-lg border border-[var(--line)] bg-[var(--surface)] p-4 shadow-2xs space-y-3">
+        {/* 题头 */}
+        <div className="flex items-center justify-between text-xs font-mono border-b border-[var(--line)]/60 pb-2">
+          <span className="font-bold text-[var(--ink)]">
+            第 {focusIndex + 1} 题：{currentQ.titleZH}
+          </span>
+          {isAnswered && (
+            <span className="text-[10px] text-emerald-700 font-bold bg-emerald-50 px-1.5 py-0.5 rounded border border-emerald-200">
+              已作答
+            </span>
+          )}
+        </div>
+
+        {/* 设问正文 */}
+        <p className="font-serif text-[14px] leading-relaxed text-[var(--ink)]">
+          {currentQ.questionZH}
+        </p>
+
+        {/* 选项组 */}
+        <div className="space-y-2 pt-1">
+          {currentQ.options.map((opt) => {
+            const selectedOptionId = answers[currentQ.id];
+            const isThisSelected = selectedOptionId === opt.id;
+            let btnStyle = "border-[var(--line)] bg-[var(--paper)] text-[var(--ink)] hover:border-[var(--gray)]";
+
+            if (isAnswered) {
+              if (opt.isCorrect) {
+                btnStyle = "border-emerald-500 bg-emerald-50/80 text-emerald-950 font-medium ring-1 ring-emerald-500";
+              } else if (isThisSelected && !opt.isCorrect) {
+                btnStyle = "border-rose-400 bg-rose-50 text-rose-950 line-through";
+              } else {
+                btnStyle = "border-[var(--line)] bg-[var(--paper-subtle)] opacity-50";
+              }
+            }
+
+            return (
+              <button
+                key={opt.id}
+                type="button"
+                disabled={isAnswered}
+                onClick={() => setAnswers({ ...answers, [currentQ.id]: opt.id })}
+                className={`w-full text-left p-2.5 rounded-md border text-xs leading-relaxed transition cursor-pointer flex items-start gap-2.5 ${btnStyle}`}
+              >
+                <span className="font-mono font-bold shrink-0 mt-0.5">
+                  {opt.id.toUpperCase()}.
+                </span>
+                <span>{opt.textZH}</span>
+              </button>
+            );
+          })}
+        </div>
+
+        {/* 嵌入式诊断（在非分栏模式下展示） */}
+        {!hideDiagnostics && isAnswered && renderDiagnosticTabs()}
+
+        {/* 步进器 */}
+        <div className="flex items-center justify-between pt-3 border-t border-[var(--line)]/60">
+          <button
+            type="button"
+            disabled={focusIndex === 0}
+            onClick={() => setFocusIndex(focusIndex - 1)}
+            className="px-3 py-1.5 rounded border border-[var(--line)] text-xs font-mono cursor-pointer disabled:opacity-30 disabled:cursor-not-allowed hover:bg-[var(--paper-subtle)]"
+          >
+            ◀ 上一题
+          </button>
+
+          <span className="text-xs font-mono text-[var(--gray)]">
+            第 {focusIndex + 1} 题 / 共 {activeExcerpt.questions.length} 题
+          </span>
+
+          <button
+            type="button"
+            disabled={focusIndex === activeExcerpt.questions.length - 1}
+            onClick={() => setFocusIndex(focusIndex + 1)}
+            className={`px-3.5 py-1.5 rounded text-xs font-mono cursor-pointer transition ${
+              answers[currentQ.id] && focusIndex < activeExcerpt.questions.length - 1
+                ? "bg-[var(--ink)] text-white shadow-2xs font-bold hover:opacity-90"
+                : "border border-[var(--line)] disabled:opacity-30 disabled:cursor-not-allowed hover:bg-[var(--paper-subtle)]"
+            }`}
+          >
+            下一题 ▶
+          </button>
+        </div>
+      </div>
+    );
+  };
+
+  // 渲染诊断胶囊切换卡（Demo A 核心：大幅降低长文本垂直拥挤）
+  const renderDiagnosticTabs = () => {
+    const isAnswered = !!answers[currentQ.id];
+    if (!isAnswered) return null;
+    const isCorr = currentQ.options.find((o) => o.id === answers[currentQ.id])?.isCorrect;
+
+    return (
+      <div className="mt-3 pt-3 border-t border-[var(--line)]/60 space-y-2.5 animate-fadeIn">
+        {/* 正误提示 */}
+        <div
+          className={`text-xs font-mono font-bold flex items-center justify-between ${
+            isCorr ? "text-emerald-800" : "text-rose-900"
+          }`}
+        >
+          <span>{isCorr ? "✓ 解题命中 // 正确理解" : "✗ 需强化辨析 // 深入思考"}</span>
+          <span className="text-[10px] text-[var(--gray)] font-normal">点击胶囊分段阅读</span>
+        </div>
+
+        {/* 诊断分段胶囊选择器 */}
+        <div className="flex items-center gap-1 flex-wrap border-b border-[var(--line)]/40 pb-1.5 text-xs font-mono">
+          <button
+            type="button"
+            onClick={() => setActiveDiagTab("anchor")}
+            className={`px-2 py-0.5 rounded text-[11px] transition cursor-pointer ${
+              activeDiagTab === "anchor"
+                ? "bg-emerald-700 text-white font-bold shadow-2xs"
+                : "bg-[var(--paper-subtle)] text-[var(--gray)] hover:text-[var(--ink)]"
+            }`}
+          >
+            🎯 正解依据与锚点
+          </button>
+          <button
+            type="button"
+            onClick={() => setActiveDiagTab("distractors")}
+            className={`px-2 py-0.5 rounded text-[11px] transition cursor-pointer ${
+              activeDiagTab === "distractors"
+                ? "bg-rose-700 text-white font-bold shadow-2xs"
+                : "bg-[var(--paper-subtle)] text-[var(--gray)] hover:text-[var(--ink)]"
+            }`}
+          >
+            ⚠️ 干扰项深度诊断
+          </button>
+          <button
+            type="button"
+            onClick={() => setActiveDiagTab("context")}
+            className={`px-2 py-0.5 rounded text-[11px] transition cursor-pointer ${
+              activeDiagTab === "context"
+                ? "bg-purple-700 text-white font-bold shadow-2xs"
+                : "bg-[var(--paper-subtle)] text-[var(--gray)] hover:text-[var(--ink)]"
+            }`}
+          >
+            🏛 时代思潮哲学
+          </button>
+          <button
+            type="button"
+            onClick={() => setActiveDiagTab("muster")}
+            className={`px-2 py-0.5 rounded text-[11px] transition cursor-pointer ${
+              activeDiagTab === "muster"
+                ? "bg-[var(--ink)] text-white font-bold shadow-2xs"
+                : "bg-[var(--paper-subtle)] text-[var(--gray)] hover:text-[var(--ink)]"
+            }`}
+          >
+            ✍️ 高分句与EHZ
+          </button>
+          <button
+            type="button"
+            onClick={() => setActiveDiagTab("all")}
+            className={`px-2 py-0.5 rounded text-[11px] transition cursor-pointer ${
+              activeDiagTab === "all"
+                ? "bg-amber-800 text-white font-bold shadow-2xs"
+                : "bg-[var(--paper-subtle)] text-[var(--gray)] hover:text-[var(--ink)]"
+            }`}
+          >
+            📑 全景展开
+          </button>
+        </div>
+
+        {/* 动态分段内容 */}
+        <div className="text-xs leading-relaxed text-[var(--ink)] font-sans p-3 rounded-md bg-[var(--paper-subtle)] border border-[var(--line)]/60 shadow-2xs">
+          {activeDiagTab === "anchor" && (
+            <div className="space-y-1.5 whitespace-pre-line">
+              <div className="font-mono text-[10px] font-bold text-emerald-800">
+                【✅ 正解依据与文本锚点】
+              </div>
+              <div>{diagSections.anchor}</div>
+            </div>
+          )}
+
+          {activeDiagTab === "distractors" && (
+            <div className="space-y-1.5 whitespace-pre-line">
+              <div className="font-mono text-[10px] font-bold text-rose-800">
+                【❌ 干扰项逐项诊断】
+              </div>
+              <div>{diagSections.distractors || "针对错误审题与概念混淆的深度辨析。"}</div>
+            </div>
+          )}
+
+          {activeDiagTab === "context" && (
+            <div className="space-y-1.5 whitespace-pre-line">
+              <div className="font-mono text-[10px] font-bold text-purple-800">
+                【🏛 时代思潮与哲学脉络】
+              </div>
+              <div>{diagSections.context || "启蒙时代、狂飙突进与近代知识体系演进。"}</div>
+            </div>
+          )}
+
+          {activeDiagTab === "all" && (
+            <div className="space-y-2 whitespace-pre-line">
+              {currentQ.explanationZH}
+            </div>
+          )}
+
+          {activeDiagTab === "muster" && (
+            <div className="space-y-2.5">
+              <div className="p-2 rounded border border-[var(--line)] bg-[var(--surface)] space-y-1">
+                <div className="flex items-center justify-between text-[10px] font-mono text-[var(--gray)]">
+                  <span className="font-bold text-[var(--ink)]">
+                    § {de ? "Muster-Formulierung für die Klausur" : "德语高分答题句式"}
+                  </span>
+                  <button
+                    type="button"
+                    onClick={() => handleCopySentence(currentQ.klausurSatzDE, currentQ.id)}
+                    className="text-[var(--ink)] hover:underline cursor-pointer"
+                  >
+                    {copiedId === currentQ.id ? "✓ Kopiert" : de ? "Kopieren" : "复制德语文案"}
+                  </button>
+                </div>
+                <div className="font-serif italic text-xs text-[var(--ink)] leading-relaxed">
+                  „{currentQ.klausurSatzDE}“
+                </div>
+              </div>
+
+              <div className="p-2 rounded bg-[var(--surface)] border border-[var(--line)] text-xs space-y-1">
+                <div className="font-mono text-[10px] text-[var(--gray)] font-bold">
+                  📋 官方评分期望标准 (EHZ 要点):
+                </div>
+                <ul className="list-disc pl-4 space-y-0.5 text-[var(--gray)] font-sans text-xs">
+                  {currentQ.ehzKeyPointsZH.map((pt, pIdx) => (
+                    <li key={pIdx}>
+                      <span className="text-[var(--ink)]">{pt}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          )}
+        </div>
+
+        {/* 常驻迷你高分句快捷栏 (在非 muster tab 时展现单行) */}
+        {activeDiagTab !== "muster" && (
+          <div className="flex items-center justify-between px-2.5 py-1.5 rounded bg-[var(--paper-subtle)] border border-[var(--line)] text-xs font-mono">
+            <span className="text-[11px] text-[var(--gray)] truncate max-w-[80%]">
+              § 考场标准句: „{currentQ.klausurSatzDE.slice(0, 50)}...“
+            </span>
+            <button
+              type="button"
+              onClick={() => setActiveDiagTab("muster")}
+              className="text-[11px] text-[var(--ink)] font-bold underline cursor-pointer"
+            >
+              展开完整句式 ▶
+            </button>
+          </div>
+        )}
+      </div>
+    );
   };
 
   return (
@@ -1318,378 +1756,301 @@ export function FaustReadingLab({ lang }: { lang: Lang }) {
         </div>
       </div>
 
-      {/* 核心双栏精读解剖台 */}
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-5 items-start">
-        {/* ================================================================= */}
-        {/* 左栏 (6列): 原著诗剧精读 + 逐行显微镜 */}
-        {/* ================================================================= */}
-        <div className="lg:col-span-6 space-y-2.5">
-          {/* 原文工具栏 */}
-          <div className="flex items-center justify-between text-xs font-mono border-b border-[var(--line)]/60 pb-1">
-            <span className="font-bold text-[var(--ink)]">
-              {de ? "Originaltext (Goethe)" : "原著德语诗剧正文"}
-            </span>
-            <span className="text-[10px] text-[var(--gray)]">
-              {de ? "Klick auf Zeile zum Analysieren" : "点击诗行即可释义"}
-            </span>
-          </div>
-
-          {/* 诗句原著卷轴 */}
-          <div
-            ref={verseListRef}
-            className="rounded-lg border border-[var(--line)] bg-[var(--paper)] p-3 shadow-2xs font-serif divide-y divide-[var(--line)]/20 h-[360px] overflow-y-auto select-none scroll-smooth"
-          >
-            {activeExcerpt.verses.map((verse) => {
-              const isSelected = verse.lineNum === activeVerseNum;
-              const hasStilmittel = !!verse.stilmittel;
-              const hasVocab = !!verse.vocab;
-
-              // 标黄等标记：还原学生最喜爱的重点标记与批注感
-              let highlightBg = "";
-              if (isSelected) {
-                highlightBg = "bg-amber-100 ring-2 ring-amber-500 font-medium shadow-2xs";
-              } else if (hasStilmittel) {
-                highlightBg = "bg-amber-50/90 border-l-[3px] border-amber-400 pl-2 text-amber-950";
-              } else if (hasVocab) {
-                highlightBg = "bg-blue-50/70 border-l-[3px] border-blue-400 pl-2 text-blue-950";
-              } else {
-                highlightBg = "hover:bg-[var(--surface)]";
-              }
-
-              return (
-                <div
-                  key={verse.lineNum}
-                  ref={(el) => {
-                    verseRefs.current[verse.lineNum] = el;
-                  }}
-                  onClick={() => setActiveVerseNum(verse.lineNum)}
-                  className={`group py-1.5 px-2.5 rounded transition cursor-pointer flex items-baseline gap-2.5 text-sm leading-relaxed ${highlightBg}`}
-                >
-                  {/* 行号 */}
-                  <span className="font-mono text-[10px] text-[var(--gray)]/80 w-8 shrink-0 text-right select-none">
-                    {verse.lineNum % 5 === 0 || isSelected ? verse.lineNum : ""}
-                  </span>
-
-                  {/* 德语原诗 + 中文对照 (悬停显示翻译) */}
-                  <div className="flex-1 min-w-0">
-                    <span className={`tracking-wide ${hasStilmittel ? "font-serif text-amber-950 font-medium" : "text-[var(--ink)]"}`}>
-                      {verse.textDE}
-                    </span>
-                    <span className="ml-2 font-sans text-xs text-[var(--gray)] opacity-0 group-hover:opacity-100 transition-opacity">
-                      // {verse.translationZH}
-                    </span>
-                  </div>
-
-                  {/* 右侧标记：标黄修辞标签与词汇标签 */}
-                  <div className="flex items-center gap-1.5 shrink-0 text-[10px] select-none">
-                    {hasStilmittel && (
-                      <span
-                        className="px-1.5 py-0.5 rounded bg-amber-200/90 text-amber-900 border border-amber-300 font-mono font-bold"
-                        title={verse.stilmittel?.type}
-                      >
-                        § {verse.stilmittel?.type.split("(")[0].trim()}
-                      </span>
-                    )}
-                    {hasVocab && (
-                      <span
-                        className="px-1.5 py-0.5 rounded bg-blue-100 text-blue-900 border border-blue-200 font-mono"
-                        title={verse.vocab?.word}
-                      >
-                        📖 {verse.vocab?.word}
-                      </span>
-                    )}
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-
-          {/* 选定单行的显微镜详情卡片 */}
-          {activeVerse && (
-            <div className="rounded-md border border-[var(--line)] bg-[var(--surface)] p-3 space-y-2 shadow-2xs font-sans text-xs">
-              <div className="flex items-center justify-between border-b border-[var(--line)]/60 pb-1.5">
-                <div className="flex items-center gap-2">
-                  <span className="font-mono font-bold text-[var(--ink)]">
-                    Vers {activeVerse.lineNum} // {de ? "Detail-Analyse" : "逐行显微镜解析"}
-                  </span>
-                  {activeVerse.toneCategory && (
-                    <span
-                      className={`font-mono text-[10px] px-1.5 py-0.2 rounded border ${
-                        activeVerse.toneCategory === "krise"
-                          ? "bg-rose-50 text-rose-900 border-rose-200"
-                          : activeVerse.toneCategory === "spott"
-                          ? "bg-purple-50 text-purple-900 border-purple-200"
-                          : "bg-emerald-50 text-emerald-900 border-emerald-200"
-                      }`}
-                    >
-                      {activeVerse.toneCategory === "krise"
-                        ? de ? "Erkenntniskrise" : "学者认知绝望"
-                        : activeVerse.toneCategory === "spott"
-                        ? de ? "Spott über Dogmatik" : "对经院伪善的嘲讽"
-                        : de ? "Titanisches Streben" : "泰坦式求索冲动"}
-                    </span>
-                  )}
-                </div>
-              </div>
-
-              {/* 逐句直译与诗意精析 */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs">
-                <div className="p-2 rounded bg-[var(--paper-subtle)] border border-[var(--line)]/50">
-                  <div className="font-mono text-[10px] text-[var(--gray)] uppercase mb-0.5">
-                    {de ? "Wortgetreue Übersetzung" : "直译与义理对照"}
-                  </div>
-                  <div className="font-serif text-[13px] text-[var(--ink)] leading-snug">
-                    {activeVerse.translationZH}
-                  </div>
-                </div>
-
-                {activeVerse.stilmittel && (
-                  <div className="p-2 rounded bg-amber-50/70 border border-amber-200/60 text-amber-950">
-                    <div className="font-mono text-[10px] uppercase font-bold text-amber-900 mb-0.5">
-                      § {activeVerse.stilmittel.type}
-                    </div>
-                    <div className="text-[11px] leading-relaxed">
-                      {de ? activeVerse.stilmittel.descDE : activeVerse.stilmittel.descZH}
-                    </div>
-                  </div>
-                )}
-              </div>
-
-              {/* 古典词汇释义 */}
-              {activeVerse.vocab && (
-                <div className="p-2 rounded bg-blue-50/60 border border-blue-200/60 text-blue-950">
-                  <div className="font-mono text-[10px] font-bold text-blue-900 mb-0.5">
-                    📖 Glossar: <span className="underline">{activeVerse.vocab.word}</span>
-                  </div>
-                  <div className="text-[11px] leading-relaxed">
-                    <strong>{activeVerse.vocab.meaningDE}</strong> — {activeVerse.vocab.meaningZH}
-                  </div>
-                </div>
-              )}
-            </div>
-          )}
-
-          {/* 黄金诗句快速定位 */}
-          <div className="flex items-center gap-1.5 flex-wrap text-xs font-mono pt-0.5">
-            <span className="text-[10px] text-[var(--gray)] font-bold">📌 {de ? "Kernzitate:" : "黄金诗句:"}</span>
-            {(BOOKMARKS[activeExcerpt.id] || []).map((bm) => (
-              <button
-                key={bm.lineNum}
-                type="button"
-                onClick={() => jumpToVerse(bm.lineNum)}
-                className={`px-1.5 py-0.5 text-[10px] rounded border cursor-pointer transition ${
-                  activeVerseNum === bm.lineNum
-                    ? "bg-[var(--ink)] text-white border-[var(--ink)] font-bold"
-                    : "bg-[var(--paper-subtle)] text-[var(--gray)] border-[var(--line)] hover:border-[var(--gray)] hover:text-[var(--ink)]"
-                }`}
-              >
-                {de ? bm.labelDE : bm.labelZH}
-              </button>
-            ))}
-          </div>
+      {/* 排版评估实验室切换器 (4大 Demo 模式) */}
+      <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 p-2 rounded-md bg-[var(--paper-subtle)] border border-[var(--line)]/80 text-xs">
+        <div className="flex items-center gap-1.5 font-mono text-[11px] text-[var(--gray)]">
+          <span className="font-bold text-[var(--ink)]">🎛️ 排版评估实验室:</span>
+          <span>切换排版 Demo，评估舒适度</span>
         </div>
+        <div className="inline-flex rounded border border-[var(--line)] bg-[var(--surface)] p-0.5 text-xs font-mono flex-wrap">
+          <button
+            type="button"
+            onClick={() => setLayoutMode("wide-split")}
+            className={`px-2.5 py-1 rounded transition cursor-pointer ${
+              layoutMode === "wide-split"
+                ? "bg-[var(--ink)] text-white font-bold shadow-2xs"
+                : "text-[var(--gray)] hover:text-[var(--ink)]"
+            }`}
+          >
+            Demo A: 宽幅呼吸双栏
+          </button>
+          <button
+            type="button"
+            onClick={() => setLayoutMode("three-col")}
+            className={`px-2.5 py-1 rounded transition cursor-pointer ${
+              layoutMode === "three-col"
+                ? "bg-[var(--ink)] text-white font-bold shadow-2xs"
+                : "text-[var(--gray)] hover:text-[var(--ink)]"
+            }`}
+          >
+            Demo B: 三栏学术工作台
+          </button>
+          <button
+            type="button"
+            onClick={() => setLayoutMode("drawer")}
+            className={`px-2.5 py-1 rounded transition cursor-pointer ${
+              layoutMode === "drawer"
+                ? "bg-[var(--ink)] text-white font-bold shadow-2xs"
+                : "text-[var(--gray)] hover:text-[var(--ink)]"
+            }`}
+          >
+            Demo C: 典籍中置·随行抽屉
+          </button>
+          <button
+            type="button"
+            onClick={() => setLayoutMode("two-phase")}
+            className={`px-2.5 py-1 rounded transition cursor-pointer ${
+              layoutMode === "two-phase"
+                ? "bg-[var(--ink)] text-white font-bold shadow-2xs"
+                : "text-[var(--gray)] hover:text-[var(--ink)]"
+            }`}
+          >
+            Demo D: 横向两阶段流
+          </button>
+        </div>
+      </div>
 
-        {/* ================================================================= */}
-        {/* 右栏 (6列): 逐题精读理解 (选项性阅读理解，一点一点深入) */}
-        {/* ================================================================= */}
-        <div className="lg:col-span-6 space-y-3">
-          {/* 精读理解进度顶栏：无标签噪音，纯净步进 */}
-          <div className="flex items-center justify-between border-b border-[var(--line)]/60 pb-2">
-            <div className="flex items-center gap-2">
-              <span className="font-mono font-bold text-xs text-[var(--ink)]">
-                📖 {de ? "Leseverständnis · Schritt für Schritt" : "阅读理解 · 逐题深入"}
+      {/* ===================================================================== */}
+      {/* 模式 A：宽幅呼吸双栏 (Wide Canvas Breathing Split) */}
+      {/* ===================================================================== */}
+      {layoutMode === "wide-split" && (
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-5 items-start">
+          {/* 左栏 (5列): 诗剧原著精读 + 显微镜 */}
+          <div className="lg:col-span-5 space-y-2.5">
+            <div className="flex items-center justify-between text-xs font-mono border-b border-[var(--line)]/60 pb-1">
+              <span className="font-bold text-[var(--ink)]">
+                {de ? "Originaltext (Goethe)" : "原著德语诗剧正文"}
               </span>
-              <span className="text-[11px] font-mono text-[var(--gray)]">
-                (第 {focusIndex + 1} 题 / 共 {activeExcerpt.questions.length} 题)
+              <span className="text-[10px] text-[var(--gray)]">
+                {de ? "Klick auf Zeile zum Analysieren" : "点击诗行即可释义"}
               </span>
             </div>
-
-            {/* 6 题进度圆点导航：点击可直达，已答即标勾叉 */}
-            <div className="flex items-center gap-1.5 font-mono text-xs">
-              {activeExcerpt.questions.map((q, idx) => {
-                const isCurrent = focusIndex === idx;
-                const ans = answers[q.id];
-                const isCorr = q.options.find((o) => o.id === ans)?.isCorrect;
-                return (
-                  <button
-                    key={q.id}
-                    type="button"
-                    onClick={() => setFocusIndex(idx)}
-                    className={`h-5 w-5 rounded-full text-[10px] flex items-center justify-center font-bold cursor-pointer transition ${
-                      isCurrent
-                        ? "bg-[var(--ink)] text-white shadow-2xs scale-110"
-                        : ans
-                        ? isCorr
-                          ? "bg-emerald-100 text-emerald-800 border border-emerald-300"
-                          : "bg-rose-100 text-rose-800 border border-rose-300"
-                        : "bg-[var(--paper-subtle)] text-[var(--gray)] border border-[var(--line)] hover:border-[var(--gray)]"
-                    }`}
-                    title={`第 ${idx + 1} 题: ${q.titleZH}`}
-                  >
-                    {ans ? (isCorr ? "✓" : "✗") : idx + 1}
-                  </button>
-                );
-              })}
-            </div>
+            {renderVerseScroll("h-[430px]")}
+            {renderMicroscope()}
+            {renderBookmarks()}
           </div>
 
-          {/* 单题阅读理解卡片 */}
-          {currentQ && (
-            <div className="rounded-lg border border-[var(--line)] bg-[var(--surface)] p-4 shadow-2xs space-y-3">
-              {/* 题头：清晰明确 */}
-              <div className="flex items-center justify-between text-xs font-mono border-b border-[var(--line)]/60 pb-2">
-                <span className="font-bold text-[var(--ink)]">
-                  第 {focusIndex + 1} 题：{currentQ.titleZH}
+          {/* 右栏 (7列): 逐题精读 + 诊断分段胶囊 */}
+          <div className="lg:col-span-7 space-y-2.5">
+            <div className="flex items-center justify-between border-b border-[var(--line)]/60 pb-2">
+              <div className="flex items-center gap-2">
+                <span className="font-mono font-bold text-xs text-[var(--ink)]">
+                  📖 {de ? "Leseverständnis · Schritt für Schritt" : "阅读理解 · 逐题深入"}
                 </span>
-                {answers[currentQ.id] && (
-                  <span className="text-[10px] text-emerald-700 font-bold bg-emerald-50 px-1.5 py-0.5 rounded border border-emerald-200">
-                    已作答
-                  </span>
-                )}
+                <span className="text-[11px] font-mono text-[var(--gray)]">
+                  (第 {focusIndex + 1} 题 / 共 {activeExcerpt.questions.length} 题)
+                </span>
               </div>
-
-              {/* 设问正文 */}
-              <p className="font-serif text-[14px] leading-relaxed text-[var(--ink)]">
-                {currentQ.questionZH}
-              </p>
-
-              {/* 选项组 */}
-              <div className="space-y-2 pt-1">
-                {currentQ.options.map((opt) => {
-                  const selectedOptionId = answers[currentQ.id];
-                  const isAnswered = !!selectedOptionId;
-                  const isThisSelected = selectedOptionId === opt.id;
-                  let btnStyle = "border-[var(--line)] bg-[var(--paper)] text-[var(--ink)] hover:border-[var(--gray)]";
-
-                  if (isAnswered) {
-                    if (opt.isCorrect) {
-                      btnStyle = "border-emerald-500 bg-emerald-50/80 text-emerald-950 font-medium ring-1 ring-emerald-500";
-                    } else if (isThisSelected && !opt.isCorrect) {
-                      btnStyle = "border-rose-400 bg-rose-50 text-rose-950 line-through";
-                    } else {
-                      btnStyle = "border-[var(--line)] bg-[var(--paper-subtle)] opacity-50";
-                    }
-                  }
-
+              {/* 进度圆点 */}
+              <div className="flex items-center gap-1.5 font-mono text-xs">
+                {activeExcerpt.questions.map((q, idx) => {
+                  const isCurrent = focusIndex === idx;
+                  const ans = answers[q.id];
+                  const isCorr = q.options.find((o) => o.id === ans)?.isCorrect;
                   return (
                     <button
-                      key={opt.id}
+                      key={q.id}
                       type="button"
-                      disabled={isAnswered}
-                      onClick={() => setAnswers({ ...answers, [currentQ.id]: opt.id })}
-                      className={`w-full text-left p-2.5 rounded-md border text-xs leading-relaxed transition cursor-pointer flex items-start gap-2.5 ${btnStyle}`}
+                      onClick={() => setFocusIndex(idx)}
+                      className={`h-5 w-5 rounded-full text-[10px] flex items-center justify-center font-bold cursor-pointer transition ${
+                        isCurrent
+                          ? "bg-[var(--ink)] text-white shadow-2xs scale-110"
+                          : ans
+                          ? isCorr
+                            ? "bg-emerald-100 text-emerald-800 border border-emerald-300"
+                            : "bg-rose-100 text-rose-800 border border-rose-300"
+                          : "bg-[var(--paper-subtle)] text-[var(--gray)] border border-[var(--line)] hover:border-[var(--gray)]"
+                      }`}
                     >
-                      <span className="font-mono font-bold shrink-0 mt-0.5">
-                        {opt.id.toUpperCase()}.
-                      </span>
-                      <span>{opt.textZH}</span>
+                      {ans ? (isCorr ? "✓" : "✗") : idx + 1}
                     </button>
                   );
                 })}
               </div>
+            </div>
+            {renderQuestionCard(false)}
+          </div>
+        </div>
+      )}
 
-              {/* 作答反馈与解析 */}
-              {answers[currentQ.id] && (
-                <div className="mt-2.5 pt-2.5 border-t border-[var(--line)]/60 space-y-2 animate-fadeIn">
-                  <div
-                    className={`text-xs font-mono font-bold flex items-center gap-1.5 ${
-                      currentQ.options.find((o) => o.id === answers[currentQ.id])?.isCorrect
-                        ? "text-emerald-800"
-                        : "text-rose-900"
-                    }`}
-                  >
-                    <span>
-                      {currentQ.options.find((o) => o.id === answers[currentQ.id])?.isCorrect
-                        ? "✓ 解题命中 // 正确理解"
-                        : "✗ 需强化辨析 // 深入思考"}
-                    </span>
-                  </div>
+      {/* ===================================================================== */}
+      {/* 模式 B：三栏学术工作台 (Three-Column Scholarly Workbench / IDE Mode) */}
+      {/* ===================================================================== */}
+      {layoutMode === "three-col" && (
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-3.5 items-start">
+          {/* 第 1 栏 (4列): 原著卷轴 */}
+          <div className="lg:col-span-4 space-y-2">
+            <div className="flex items-center justify-between text-xs font-mono border-b border-[var(--line)]/60 pb-1">
+              <span className="font-bold text-[var(--ink)]">
+                📜 {de ? "Originaltext (Goethe)" : "原著德语卷轴"}
+              </span>
+              <span className="text-[10px] text-[var(--gray)]">
+                共 {activeExcerpt.verses.length} 行
+              </span>
+            </div>
+            {renderVerseScroll("h-[540px]")}
+            {renderBookmarks()}
+          </div>
 
-                  <div className="text-xs leading-relaxed text-[var(--ink)] font-sans space-y-1.5 whitespace-pre-line p-3 rounded-md bg-[var(--paper-subtle)] border border-[var(--line)]/60 shadow-2xs">
-                    {currentQ.explanationZH}
-                  </div>
+          {/* 第 2 栏 (4列): 设问决策台 + 显微镜 */}
+          <div className="lg:col-span-4 space-y-2">
+            <div className="flex items-center justify-between text-xs font-mono border-b border-[var(--line)]/60 pb-1">
+              <span className="font-bold text-[var(--ink)]">
+                🎯 {de ? "Leseverständnis · Aufgabe" : "设问与选项决策"}
+              </span>
+              <span className="text-[10px] text-[var(--gray)]">
+                {focusIndex + 1} / {activeExcerpt.questions.length}
+              </span>
+            </div>
+            {renderQuestionCard(true)}
+            {renderMicroscope()}
+          </div>
 
-                  {/* 德语标准答题句式积木 (Klausur-Formulierung) */}
-                  <div className="p-2 rounded border border-[var(--line)] bg-[var(--paper-subtle)] space-y-1">
-                    <div className="flex items-center justify-between text-[10px] font-mono text-[var(--gray)]">
-                      <span className="font-bold text-[var(--ink)]">
-                        § {de ? "Muster-Formulierung für die Klausur" : "德语高分答题句式"}
-                      </span>
+          {/* 第 3 栏 (4列): 考纲深度诊断台 (专享长栏，永不遮挡) */}
+          <div className="lg:col-span-4 space-y-2">
+            <div className="flex items-center justify-between text-xs font-mono border-b border-[var(--line)]/60 pb-1">
+              <span className="font-bold text-[var(--ink)]">
+                🔬 {de ? "Klausur-Diagnosekonsole" : "考纲深度诊断台"}
+              </span>
+              <span className="text-[10px] text-[var(--gray)]">
+                14-Punkte 评卷
+              </span>
+            </div>
+
+            {answers[currentQ.id] ? (
+              <div className="h-[540px] overflow-y-auto space-y-2.5 pr-1">
+                {renderDiagnosticTabs()}
+              </div>
+            ) : (
+              <div className="h-[540px] rounded-lg border border-dashed border-[var(--line)] bg-[var(--paper-subtle)] flex flex-col items-center justify-center p-6 text-center text-xs text-[var(--gray)] space-y-2">
+                <span className="text-2xl">←</span>
+                <span className="font-mono font-bold text-[var(--ink)]">等待选项研判</span>
+                <p className="max-w-[220px] leading-relaxed">
+                  请在中间栏完成第 {focusIndex + 1} 题作答，系统将在此处即时展开文本锚点、干扰项诊断与 14 分句式。
+                </p>
+              </div>
+            )}
+          </div>
+        </div>
+      )}
+
+      {/* ===================================================================== */}
+      {/* 模式 C：典籍中置 · 随行抽屉 (Center Gutenberg Text + Floating Drawer) */}
+      {/* ===================================================================== */}
+      {layoutMode === "drawer" && (
+        <div className="relative">
+          <div className="max-w-2xl mx-auto space-y-3 pb-8">
+            <div className="flex items-center justify-between border-b border-[var(--line)]/60 pb-1.5 text-xs font-mono">
+              <span className="font-bold text-[var(--ink)]">
+                📖 {de ? "Klassische Textansicht" : "经典典籍装帧阅览 (舒朗版)"}
+              </span>
+              <button
+                type="button"
+                onClick={() => setDrawerOpen(!drawerOpen)}
+                className="px-2.5 py-1 rounded bg-[var(--ink)] text-white font-mono text-[11px] font-bold cursor-pointer hover:opacity-90"
+              >
+                {drawerOpen ? "收起精读抽屉 ▲" : `展开精读考题 (第 ${focusIndex + 1} 题) ▼`}
+              </button>
+            </div>
+
+            {/* 舒朗典籍正文 */}
+            {renderVerseScroll("h-[480px]")}
+            {renderMicroscope()}
+            {renderBookmarks()}
+
+            {/* 抽屉浮层或折叠卡片 */}
+            {drawerOpen && (
+              <div className="mt-4 pt-3 border-t-2 border-[var(--ink)] animate-fadeIn">
+                <div className="flex items-center justify-between mb-2">
+                  <span className="font-mono font-bold text-xs text-[var(--ink)]">
+                    🎯 精读解剖抽屉 (第 {focusIndex + 1} 题)
+                  </span>
+                  <div className="flex items-center gap-1 font-mono text-xs">
+                    {activeExcerpt.questions.map((q, idx) => (
                       <button
+                        key={q.id}
                         type="button"
-                        onClick={() => handleCopySentence(currentQ.klausurSatzDE, currentQ.id)}
-                        className="text-[var(--ink)] hover:underline cursor-pointer"
+                        onClick={() => setFocusIndex(idx)}
+                        className={`h-5 w-5 rounded-full text-[10px] font-bold cursor-pointer ${
+                          focusIndex === idx ? "bg-[var(--ink)] text-white" : "bg-[var(--paper-subtle)] text-[var(--gray)]"
+                        }`}
                       >
-                        {copiedId === currentQ.id ? "✓ Kopiert" : de ? "Kopieren" : "复制德语文案"}
+                        {idx + 1}
                       </button>
-                    </div>
-                    <div className="font-serif italic text-xs text-[var(--ink)] leading-relaxed">
-                      „{currentQ.klausurSatzDE}“
-                    </div>
-                  </div>
-
-                  {/* 官方评卷期望标准 (Erwartungshorizont / EHZ) 折叠栏 */}
-                  <div className="pt-0.5">
-                    <button
-                      type="button"
-                      onClick={() => setShowEHZ({ ...showEHZ, [currentQ.id]: !showEHZ[currentQ.id] })}
-                      className="text-[11px] font-mono text-[var(--gray)] hover:text-[var(--ink)] flex items-center gap-1 underline cursor-pointer"
-                    >
-                      <span>{showEHZ[currentQ.id] ? "▲" : "▼"}</span>
-                      <span>
-                        {showEHZ[currentQ.id]
-                          ? de ? "Erwartungshorizont verbergen" : "收起官方评分期望标准"
-                          : de ? "Offiziellen Erwartungshorizont (EHZ) einsehen" : "查看官方评分期望标准 (EHZ 要点)"}
-                      </span>
-                    </button>
-
-                    {showEHZ[currentQ.id] && (
-                      <div className="mt-1.5 p-2 rounded bg-[var(--surface)] border border-[var(--line)] text-xs space-y-1 font-mono text-[11px]">
-                        <ul className="list-disc pl-4 space-y-0.5 text-[var(--gray)] font-sans text-xs">
-                          {currentQ.ehzKeyPointsZH.map((pt, pIdx) => (
-                            <li key={pIdx}>
-                              <span className="text-[var(--ink)]">{pt}</span>
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
-                    )}
+                    ))}
                   </div>
                 </div>
-              )}
+                {renderQuestionCard(false)}
+              </div>
+            )}
+          </div>
+        </div>
+      )}
 
-              {/* 题目导航步进器 */}
-              <div className="flex items-center justify-between pt-3 border-t border-[var(--line)]/60">
-                <button
-                  type="button"
-                  disabled={focusIndex === 0}
-                  onClick={() => setFocusIndex(focusIndex - 1)}
-                  className="px-3 py-1.5 rounded border border-[var(--line)] text-xs font-mono cursor-pointer disabled:opacity-30 disabled:cursor-not-allowed hover:bg-[var(--paper-subtle)]"
-                >
-                  ◀ 上一题
-                </button>
-
-                <span className="text-xs font-mono text-[var(--gray)]">
-                  第 {focusIndex + 1} 题 / 共 {activeExcerpt.questions.length} 题
-                </span>
-
-                <button
-                  type="button"
-                  disabled={focusIndex === activeExcerpt.questions.length - 1}
-                  onClick={() => setFocusIndex(focusIndex + 1)}
-                  className={`px-3.5 py-1.5 rounded text-xs font-mono cursor-pointer transition ${
-                    answers[currentQ.id] && focusIndex < activeExcerpt.questions.length - 1
-                      ? "bg-[var(--ink)] text-white shadow-2xs font-bold hover:opacity-90"
-                      : "border border-[var(--line)] disabled:opacity-30 disabled:cursor-not-allowed hover:bg-[var(--paper-subtle)]"
-                  }`}
-                >
-                  下一题 ▶
-                </button>
+      {/* ===================================================================== */}
+      {/* 模式 D：横向两阶段流 (Two-Phase Focus Flow / Card Studio) */}
+      {/* ===================================================================== */}
+      {layoutMode === "two-phase" && (
+        <div className="max-w-5xl mx-auto space-y-4">
+          {/* 上半区：原典研读工坊 */}
+          <div className="rounded-lg border border-[var(--line)] bg-[var(--paper)] p-3 space-y-2">
+            <div className="flex items-center justify-between text-xs font-mono border-b border-[var(--line)]/60 pb-1">
+              <span className="font-bold text-[var(--ink)]">
+                阶段 1: 原典研读与重点标记 (V. {activeExcerpt.verses[0].lineNum}–{activeExcerpt.verses[activeExcerpt.verses.length - 1].lineNum})
+              </span>
+              <span className="text-[10px] text-[var(--gray)]">
+                选定行：Vers {activeVerse.lineNum}
+              </span>
+            </div>
+            {renderVerseScroll("h-[260px]")}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-2">
+              <div className="md:col-span-2">{renderMicroscope()}</div>
+              <div className="p-2 rounded bg-[var(--surface)] border border-[var(--line)]">
+                {renderBookmarks()}
               </div>
             </div>
-          )}
+          </div>
+
+          {/* 下半区：横向双屏问答与诊断卡片 */}
+          <div className="rounded-lg border border-[var(--line)] bg-[var(--surface)] p-4 shadow-2xs space-y-3">
+            <div className="flex items-center justify-between border-b border-[var(--line)]/60 pb-2">
+              <span className="font-mono font-bold text-xs text-[var(--ink)]">
+                阶段 2: 考纲精读决策与 14-Punkte 诊断
+              </span>
+              <div className="flex items-center gap-1 font-mono text-xs">
+                {activeExcerpt.questions.map((q, idx) => (
+                  <button
+                    key={q.id}
+                    type="button"
+                    onClick={() => setFocusIndex(idx)}
+                    className={`h-5 w-5 rounded-full text-[10px] font-bold cursor-pointer ${
+                      focusIndex === idx ? "bg-[var(--ink)] text-white" : "bg-[var(--paper-subtle)] text-[var(--gray)]"
+                    }`}
+                  >
+                    {idx + 1}
+                  </button>
+                ))}
+              </div>
+            </div>
+
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 items-start">
+              <div>{renderQuestionCard(true)}</div>
+              <div>
+                {answers[currentQ.id] ? (
+                  renderDiagnosticTabs()
+                ) : (
+                  <div className="h-[280px] rounded-lg border border-dashed border-[var(--line)] bg-[var(--paper-subtle)] flex flex-col items-center justify-center p-6 text-center text-xs text-[var(--gray)] space-y-1">
+                    <span className="text-xl">👉</span>
+                    <span className="font-mono font-bold text-[var(--ink)]">请在左侧作答</span>
+                    <p className="max-w-[200px]">作答后此处将实时展开 14-Punkte 深度诊断报告与会考句式。</p>
+                  </div>
+                )}
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
+      )}
     </div>
   );
 }
+

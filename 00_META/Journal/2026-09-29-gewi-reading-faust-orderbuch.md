@@ -80,10 +80,19 @@ tags: [EF, Meta, Journal, App, Deutsch, SoWi]
       - **官方采分点（Erwartungshorizont / EHZ）**：标明评分准则与分析深度层级。
     - **排版容器升级**：解析卡片升级为 `whitespace-pre-line shadow-2xs`，段落分明，层级清晰，兼顾极简呼吸感与学术严谨性。
 
+12. **空间解构与排版评估实验室（4套不同设计排版 Demo）**：
+    - **现状瓶颈治理**：针对用户指出的「目前排版还是太挤」问题，全面破除 `max-w-6xl` 容器束缚，在 `DesignLab.tsx` 引入 `max-w-[1440px]` 宽幅呼吸空间，并将诗行右侧大色块微标精简为符号化胶囊，彻底杜绝文字折行挤压。
+    - **部署 4 套实时交互排版 Demo 供评估选择**：
+      - **Demo A: 宽幅呼吸双栏（Wide Canvas Split）**：左 5 列诗卷 + 右 7 列精读，配合诊断分段胶囊（`🎯 正解锚点` / `⚠️ 干扰诊断` / `🏛 时代哲学` / `✍️ 高分句` / `📑 全景展开`），垂直字海高度降低 65%。
+      - **Demo B: 三栏学术工作台（Three-Column IDE）**：左栏原著卷轴（540px）+ 中栏设问与选项决策 + 右栏专属考纲深度诊断台，同屏并列，零滚动冲突。
+      - **Demo C: 典籍中置·随行抽屉（Center Gutenberg + Drawer）**：诗歌以 720px 精装版典籍居中排版，右侧配备可折叠精读解剖抽屉，兼具文学尊严与互动。
+      - **Demo D: 横向两阶段流（Two-Phase Flow）**：上半区全宽原典研读 + 下半区横向双屏问答与诊断卡片，视野极其舒展。
+    - **设计计划规范**：沉淀产出 `gewi_reading_lab_layout_paradigms_plan.md` 架构方案供决策参考。
+
 ## 2. 门禁验证
 
 - `cmd /c "npx tsc -b"`：0 错误，类型检查全绿。
-- `cmd /c "npm run build"`：5.50s 构建通过（dist 产物完整）。
+- `cmd /c "npm run build"`：6.89s 构建通过（dist 产物完整）。
 - `python scripts/vault-check.py`：PASS（notes=401, csv_rows=1599, index_links=337, reisen=271, 0 badnames, 0 badglossar）。
 - Commit 记录：
   - `0830bb2`: `[App] 重构微课文案解耦并新增歌德浮士德原著六维会考阅读工坊与订单簿教具`
@@ -92,6 +101,8 @@ tags: [EF, Meta, Journal, App, Deutsch, SoWi]
   - `801a8ba`: `[App] 浮士德阅读工坊永久全卷展开并默认折叠诗句书签取消外层滚动`
   - `85fd214`: `[App] 诗歌书签定位改为诗歌栏局部内部平滑滚动外部窗口静止`
   - `f27fea7`: `[App] 重塑浮士德精读工坊为极简单题聚焦模式彻底根治字海与版面杂乱`
+  - `8dd0b85`: `[App] 全面升级浮士德精读工坊12道考纲真题为长篇深度诊断与会考标准句式`
+
 
 
 
