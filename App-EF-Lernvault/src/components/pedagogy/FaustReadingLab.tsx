@@ -1220,6 +1220,155 @@ const BOOKMARKS: Record<string, { lineNum: number; labelDE: string; labelZH: str
   ],
 };
 
+// 试题与原典诗行强共振映射表（解决视觉重点缺失，建立左典右题联动）
+interface TargetLinkInfo {
+  lines: number[];
+  snippetDE: string;
+  snippetZH: string;
+  dimensionBadge: {
+    labelZH: string;
+    labelDE: string;
+    colorClass: string;
+  };
+}
+
+const QUESTION_TARGET_MAP: Record<string, TargetLinkInfo> = {
+  "q-inhalt": {
+    lines: [354, 355, 356, 357, 358],
+    snippetDE: "Habe nun, ach! Philosophie... Da steh ich nun, ich armer Tor!",
+    snippetZH: "四大学科学历终结与认知幻灭 (V. 354–358)",
+    dimensionBadge: {
+      labelZH: "📜 内容事实 · 经院学科危机",
+      labelDE: "Inhalt · Universitätsfakultäten",
+      colorClass: "bg-blue-50 text-blue-900 border-blue-300 ring-blue-500/20",
+    },
+  },
+  "q-motiv": {
+    lines: [382, 383, 384, 385],
+    snippetDE: "Dass ich erkenne, was die Welt / Im Innersten zusammenhält",
+    snippetZH: "洞悉宇宙内在生命脉动的泰坦求索 (V. 382–385)",
+    dimensionBadge: {
+      labelZH: "⚡ 主旨母题 · 浮士德泰坦精神",
+      labelDE: "Motiv · Faustisches Streben",
+      colorClass: "bg-amber-50 text-amber-950 border-amber-300 ring-amber-500/20",
+    },
+  },
+  "q-wortschatz": {
+    lines: [364, 365],
+    snippetDE: "Und sehe, dass wir nichts wissen können!",
+    snippetZH: "绝望断言：凡人理性无法企及本质真理 (V. 364–365)",
+    dimensionBadge: {
+      labelZH: "📖 关键术语 · 认识论界限辨析",
+      labelDE: "Wortschatz · Erkenntnisgrenze",
+      colorClass: "bg-teal-50 text-teal-900 border-teal-300 ring-teal-500/20",
+    },
+  },
+  "q-stilmittel": {
+    lines: [354, 355, 356, 357],
+    snippetDE: "Habe nun, ach!... Juristerei... Und leider auch Theologie!",
+    snippetZH: "叹词破空与经院四科学阶渐强排比 (V. 354–357)",
+    dimensionBadge: {
+      labelZH: "§ 修辞美学 · 抑扬格排比与反讽",
+      labelDE: "Stilmittel · Klimax & Exclamatio",
+      colorClass: "bg-purple-50 text-purple-900 border-purple-300 ring-purple-500/20",
+    },
+  },
+  "q-figuren": {
+    lines: [382, 383, 384, 385],
+    snippetDE: "Schau alle Wirkenskraft und Samen / Und tu nicht mehr in Worten kramen.",
+    snippetZH: "破除骨灰瓮牢笼，拥抱宇宙生命源初力 (V. 382–385)",
+    dimensionBadge: {
+      labelZH: "🏛 空间意象 · 哥特书斋牢笼隐喻",
+      labelDE: "Raum · Gotisches Zimmer als Kerker",
+      colorClass: "bg-indigo-50 text-indigo-900 border-indigo-300 ring-indigo-500/20",
+    },
+  },
+  "q-handlung": {
+    lines: [377, 378, 379, 380],
+    snippetDE: "Drum hab ich mich der Magie ergeben...",
+    snippetZH: "绝望后的决绝跃迁：投身魔法秘术 (V. 377–380)",
+    dimensionBadge: {
+      labelZH: "⚔️ 戏剧转折 · 理性向秘术的跃迁",
+      labelDE: "Handlung · Wendepunkt zur Magie",
+      colorClass: "bg-rose-50 text-rose-900 border-rose-300 ring-rose-500/20",
+    },
+  },
+  "q-pakt-inhalt": {
+    lines: [1692, 1693, 1694, 1695],
+    snippetDE: "Werd ich beruhigt je mich auf ein Faulbett legen, / So sei es gleich um mich getan!",
+    snippetZH: "誓死拒绝平庸感官怠惰与安乐榻 (V. 1692–1695)",
+    dimensionBadge: {
+      labelZH: "📜 内容事实 · 拒斥安乐怠惰之誓",
+      labelDE: "Inhalt · Verweigerung des Faulbetts",
+      colorClass: "bg-blue-50 text-blue-900 border-blue-300 ring-blue-500/20",
+    },
+  },
+  "q-pakt-motiv": {
+    lines: [1699, 1700, 1701, 1702],
+    snippetDE: "Werd ich zum Augenblicke sagen: / Verweile doch! du bist so schön!",
+    snippetZH: "绝唱之约：一旦向虚幻片刻妥协便万劫不复 (V. 1699–1702)",
+    dimensionBadge: {
+      labelZH: "⚡ 核心母题 · 停滞之死与行动之生",
+      labelDE: "Motiv · Verweile doch!",
+      colorClass: "bg-amber-50 text-amber-950 border-amber-300 ring-amber-500/20",
+    },
+  },
+  "q-pakt-handlung": {
+    lines: [1703, 1704, 1705, 1706],
+    snippetDE: "Die Uhr mag stehn, der Zeiger fallen, / Es sei die Zeit für mich vorbei!",
+    snippetZH: "魔鬼契约倒计时与本体论终结判决 (V. 1703–1706)",
+    dimensionBadge: {
+      labelZH: "⚔️ 情节冲突 · 时钟骤停与主客体易位",
+      labelDE: "Handlung · Paktbedingungen & Tod",
+      colorClass: "bg-rose-50 text-rose-900 border-rose-300 ring-rose-500/20",
+    },
+  },
+  "q-pakt-wortschatz": {
+    lines: [1692, 1693, 1694],
+    snippetDE: "Kannst du mich schmeichelnd je belügen... Die Wette biet ich!",
+    snippetZH: "神圣赌约（Wette）与魔鬼契约（Pakt）分水岭 (V. 1692–1694)",
+    dimensionBadge: {
+      labelZH: "📖 词义法理 · Wette 与 Pakt 严格界分",
+      labelDE: "Wortschatz · Wette vs. Pakt",
+      colorClass: "bg-teal-50 text-teal-900 border-teal-300 ring-teal-500/20",
+    },
+  },
+  "q-pakt-stilmittel": {
+    lines: [1699, 1700, 1701, 1702, 1703],
+    snippetDE: "Dann magst du mich in Fesseln schlagen, / Dann will ich gern zugrunde gehn!",
+    snippetZH: "连珠排比连词 Dann 的极速戏剧律动 (V. 1699–1703)",
+    dimensionBadge: {
+      labelZH: "§ 修辞韵律 · 连珠排比与时态突变",
+      labelDE: "Stilmittel · Anapher 'Dann'",
+      colorClass: "bg-purple-50 text-purple-900 border-purple-300 ring-purple-500/20",
+    },
+  },
+  "q-pakt-figuren": {
+    lines: [1707, 1708, 1709, 1710, 1711],
+    snippetDE: "Bedenke wohl, wir werdens nicht vergessen.",
+    snippetZH: "墨菲斯托形而上盲区与资产阶级世俗行动主义 (V. 1707–1711)",
+    dimensionBadge: {
+      labelZH: "🎭 人物解剖 · 否定之灵与近代求索者",
+      labelDE: "Figuren · Mephistos Nihilismus",
+      colorClass: "bg-indigo-50 text-indigo-900 border-indigo-300 ring-indigo-500/20",
+    },
+  },
+};
+
+// 选段灵魂题眼引句（确立戏剧灵魂基调，点燃视觉重心）
+const SCENE_HERO_QUOTES: Record<string, { quoteDE: string; quoteZH: string; subheadZH: string }> = {
+  "nacht-monolog": {
+    quoteDE: "»Dass ich erkenne, was die Welt im Innersten zusammenhält!«",
+    quoteZH: "究竟何种原初力量，在宇宙最核心深处维系着万物生生不息运转！",
+    subheadZH: "第一幕 · 黑夜书斋学者独白 // 启蒙理性的幻灭与狂飙突进泰坦生命意志",
+  },
+  "studierzimmer-pakt": {
+    quoteDE: "»Werd ich zum Augenblicke sagen: Verweile doch! du bist so schön!«",
+    quoteZH: "倘若我沉湎于某一片刻安宁，哀告它‘停一停吧，你真美丽！’，那时我便甘愿毁灭！",
+    subheadZH: "第二幕 · 书斋誓约 // 拒斥平庸怠惰，以永恒无休行动击溃虚无魔鬼",
+  },
+};
+
 export function FaustReadingLab({ lang }: { lang: Lang }) {
   const de = lang === "de";
 
@@ -1268,6 +1417,10 @@ export function FaustReadingLab({ lang }: { lang: Lang }) {
   const activeVerse = activeExcerpt.verses.find((v) => v.lineNum === activeVerseNum) ?? activeExcerpt.verses[0];
   const currentQ = activeExcerpt.questions[focusIndex] || activeExcerpt.questions[0];
 
+  const targetInfo = QUESTION_TARGET_MAP[currentQ.id];
+  const heroQuote = SCENE_HERO_QUOTES[activeExcerpt.id] || SCENE_HERO_QUOTES["nacht-monolog"];
+  const answeredCount = activeExcerpt.questions.filter((q) => !!answers[q.id]).length;
+
   // 选段切换处理：重置诗行、题目索引并滚动至顶部
   const handleSelectExcerpt = (id: string) => {
     setSelectedExcerptId(id);
@@ -1301,7 +1454,7 @@ export function FaustReadingLab({ lang }: { lang: Lang }) {
 
   const diagSections = parseExplanationSections(currentQ.explanationZH);
 
-  // 渲染诗句原著卷轴（去燥、紧凑微标、杜绝折行挤压、舒朗行间距）
+  // 渲染诗句原著卷轴（去燥、紧凑微标、动态考点聚光灯、舒朗行间距）
   const renderVerseScroll = (heightClass: string = "h-[480px]") => (
     <div
       ref={verseListRef}
@@ -1309,16 +1462,19 @@ export function FaustReadingLab({ lang }: { lang: Lang }) {
     >
       {activeExcerpt.verses.map((verse) => {
         const isSelected = verse.lineNum === activeVerseNum;
+        const isTargetLine = targetInfo?.lines.includes(verse.lineNum);
         const hasStilmittel = !!verse.stilmittel;
         const hasVocab = !!verse.vocab;
 
         let highlightBg = "";
         if (isSelected) {
-          highlightBg = "bg-amber-100/90 ring-2 ring-amber-500 font-medium shadow-2xs";
+          highlightBg = "bg-amber-100 ring-2 ring-amber-500 font-medium shadow-2xs";
+        } else if (isTargetLine) {
+          highlightBg = "bg-amber-50/90 border-l-[4px] border-amber-500 pl-2 text-amber-950 font-medium ring-1 ring-amber-400/40 shadow-xs";
         } else if (hasStilmittel) {
-          highlightBg = "bg-amber-50/90 border-l-[3px] border-amber-400 pl-2.5 text-amber-950";
+          highlightBg = "bg-amber-50/70 border-l-[3px] border-amber-300 pl-2 text-amber-950";
         } else if (hasVocab) {
-          highlightBg = "bg-blue-50/70 border-l-[3px] border-blue-400 pl-2.5 text-blue-950";
+          highlightBg = "bg-blue-50/60 border-l-[3px] border-blue-300 pl-2 text-blue-950";
         } else {
           highlightBg = "hover:bg-[var(--surface)]";
         }
@@ -1337,10 +1493,10 @@ export function FaustReadingLab({ lang }: { lang: Lang }) {
               {verse.lineNum % 5 === 0 || isSelected ? verse.lineNum : ""}
             </span>
 
-            {/* 德语原诗 + 紧凑微标 (不再挤占整行) */}
+            {/* 德语原诗 + 紧凑微标 */}
             <div className="flex-1 min-w-0 flex items-baseline justify-between gap-2">
               <div className="min-w-0">
-                <span className={`tracking-wide ${hasStilmittel ? "font-serif text-amber-950 font-medium" : "text-[var(--ink)]"}`}>
+                <span className={`tracking-wide ${isTargetLine ? "font-serif text-amber-950 font-bold" : hasStilmittel ? "font-serif text-amber-950 font-medium" : "text-[var(--ink)]"}`}>
                   {verse.textDE}
                 </span>
                 <span className="ml-2.5 font-sans text-xs text-[var(--gray)] opacity-0 group-hover:opacity-100 transition-opacity">
@@ -1348,8 +1504,13 @@ export function FaustReadingLab({ lang }: { lang: Lang }) {
                 </span>
               </div>
 
-              {/* 极简徽章：符号化展示，悬停显全称 */}
-              <div className="flex items-center gap-1 shrink-0 text-[10px] select-none">
+              {/* 徽章：优先显示考点聚焦徽章，再显示修辞/词汇 */}
+              <div className="flex items-center gap-1.5 shrink-0 text-[10px] select-none">
+                {isTargetLine && (
+                  <span className="px-1.5 py-0.5 rounded bg-amber-500 text-white font-mono text-[9px] font-bold shadow-2xs">
+                    🎯 考点
+                  </span>
+                )}
                 {hasStilmittel && (
                   <span
                     className="px-1.5 py-0.5 rounded bg-amber-200/90 text-amber-950 border border-amber-300 font-mono text-[9px] font-bold"
@@ -1459,21 +1620,58 @@ export function FaustReadingLab({ lang }: { lang: Lang }) {
     </div>
   );
 
-  // 渲染试题设问与选项（开阔大卡片，舒展内边距与字体）
+  // 渲染试题设问与选项（开阔大卡片，具象戏剧题眼、维度标牌与进阶通关条）
   const renderQuestionCard = (hideDiagnostics: boolean = false) => {
     const isAnswered = !!answers[currentQ.id];
     return (
       <div className="rounded-xl border border-[var(--line)]/70 bg-[var(--surface)] p-6 sm:p-7 shadow-xs space-y-5">
-        {/* 题头 */}
-        <div className="flex items-center justify-between text-xs font-mono border-b border-[var(--line)]/60 pb-3">
-          <span className="font-bold text-sm text-[var(--ink)]">
-            第 {focusIndex + 1} 题：{currentQ.titleZH}
-          </span>
-          {isAnswered && (
-            <span className="text-[11px] text-emerald-800 font-bold bg-emerald-50 px-2.5 py-0.8 rounded-md border border-emerald-300">
-              ✓ 已作答
-            </span>
-          )}
+        {/* 顶部视觉锚点：灵魂引句 + 维度勋章 + 通关进度 */}
+        <div className="border-b border-[var(--line)]/60 pb-3.5 space-y-2.5">
+          {/* 戏剧题眼引言 */}
+          <div className="p-3 rounded-lg bg-gradient-to-r from-amber-50/90 via-[var(--paper-subtle)] to-transparent border-l-4 border-amber-500 text-xs space-y-1 shadow-2xs">
+            <div className="font-serif italic font-bold text-amber-950 text-[13px] leading-snug">
+              {heroQuote.quoteDE}
+            </div>
+            <div className="font-sans text-[11px] text-[var(--gray)]">
+              {heroQuote.subheadZH}
+            </div>
+          </div>
+
+          {/* 维度徽章与作答状态 */}
+          <div className="flex items-center justify-between flex-wrap gap-2 pt-0.5">
+            <div className="flex items-center gap-2 flex-wrap">
+              {targetInfo?.dimensionBadge && (
+                <span className={`px-2.5 py-1 rounded-md border text-xs font-mono font-bold shadow-2xs ring-1 ${targetInfo.dimensionBadge.colorClass}`}>
+                  {targetInfo.dimensionBadge.labelZH}
+                </span>
+              )}
+              <span className="font-mono text-xs text-[var(--gray)]">
+                AFB: {currentQ.afb}
+              </span>
+            </div>
+
+            {isAnswered && (
+              <span className="text-[11px] text-emerald-800 font-bold bg-emerald-50 px-2.5 py-0.8 rounded-md border border-emerald-300">
+                ✓ 已作答
+              </span>
+            )}
+          </div>
+
+          {/* 答题掌握度进度条 */}
+          <div className="space-y-1 pt-1">
+            <div className="flex items-center justify-between text-[11px] font-mono text-[var(--gray)]">
+              <span>第 {focusIndex + 1} 题（共 {activeExcerpt.questions.length} 题）</span>
+              <span className="font-bold text-[var(--ink)]">
+                Abitur 考纲掌握度: {answeredCount} / {activeExcerpt.questions.length} 题
+              </span>
+            </div>
+            <div className="w-full bg-[var(--line)]/40 h-1.5 rounded-full overflow-hidden">
+              <div
+                className="h-full bg-gradient-to-r from-amber-500 to-emerald-500 transition-all duration-500"
+                style={{ width: `${(answeredCount / activeExcerpt.questions.length) * 100}%` }}
+              />
+            </div>
+          </div>
         </div>
 
         {/* 设问正文 */}
@@ -1481,18 +1679,18 @@ export function FaustReadingLab({ lang }: { lang: Lang }) {
           {currentQ.questionZH}
         </p>
 
-        {/* 选项组 */}
+        {/* 选项组（交互感饱满的触控卡片） */}
         <div className="space-y-3 pt-1">
           {currentQ.options.map((opt) => {
             const selectedOptionId = answers[currentQ.id];
             const isThisSelected = selectedOptionId === opt.id;
-            let btnStyle = "border-[var(--line)] bg-[var(--paper)] text-[var(--ink)] hover:border-[var(--gray)] shadow-2xs";
+            let btnStyle = "border-[var(--line)] bg-[var(--paper)] text-[var(--ink)] hover:border-amber-400 hover:bg-amber-50/20 shadow-2xs";
 
             if (isAnswered) {
               if (opt.isCorrect) {
-                btnStyle = "border-emerald-500 bg-emerald-50/90 text-emerald-950 font-medium ring-1 ring-emerald-500 shadow-2xs";
+                btnStyle = "border-emerald-500 bg-emerald-50/90 text-emerald-950 font-medium ring-2 ring-emerald-500/30 shadow-2xs";
               } else if (isThisSelected && !opt.isCorrect) {
-                btnStyle = "border-rose-400 bg-rose-50 text-rose-950 line-through";
+                btnStyle = "border-rose-400 bg-rose-50 text-rose-950 ring-2 ring-rose-400/30 line-through";
               } else {
                 btnStyle = "border-[var(--line)]/60 bg-[var(--paper-subtle)] opacity-40";
               }
@@ -1506,10 +1704,26 @@ export function FaustReadingLab({ lang }: { lang: Lang }) {
                 onClick={() => setAnswers({ ...answers, [currentQ.id]: opt.id })}
                 className={`w-full text-left p-3.5 sm:p-4 rounded-lg border text-xs sm:text-[13px] leading-relaxed transition cursor-pointer flex items-start gap-3.5 ${btnStyle}`}
               >
-                <span className="h-6 w-6 rounded-md bg-[var(--paper-subtle)] border border-[var(--line)] font-mono font-bold text-xs flex items-center justify-center shrink-0 mt-0.5">
+                <span className={`h-6 w-6 rounded-md font-mono font-bold text-xs flex items-center justify-center shrink-0 mt-0.5 border ${
+                  isAnswered && opt.isCorrect
+                    ? "bg-emerald-600 text-white border-emerald-600"
+                    : isAnswered && isThisSelected && !opt.isCorrect
+                    ? "bg-rose-600 text-white border-rose-600"
+                    : "bg-[var(--paper-subtle)] border-[var(--line)] text-[var(--ink)]"
+                }`}>
                   {opt.id.toUpperCase()}
                 </span>
                 <span className="flex-1">{opt.textZH}</span>
+                {isAnswered && opt.isCorrect && (
+                  <span className="text-[10px] text-emerald-800 font-bold bg-emerald-100/90 px-1.5 py-0.5 rounded border border-emerald-300 shrink-0">
+                    ✓ 14分正解
+                  </span>
+                )}
+                {isAnswered && isThisSelected && !opt.isCorrect && (
+                  <span className="text-[10px] text-rose-800 font-bold bg-rose-100 px-1.5 py-0.5 rounded border border-rose-300 shrink-0">
+                    ✗ 典型陷阱
+                  </span>
+                )}
               </button>
             );
           })}
@@ -1550,7 +1764,7 @@ export function FaustReadingLab({ lang }: { lang: Lang }) {
     );
   };
 
-  // 渲染诊断胶囊切换卡（舒展大气，段落分明）
+  // 渲染诊断胶囊切换卡（结构化彩色解剖卷宗）
   const renderDiagnosticTabs = () => {
     const isAnswered = !!answers[currentQ.id];
     if (!isAnswered) return null;
@@ -1565,7 +1779,7 @@ export function FaustReadingLab({ lang }: { lang: Lang }) {
           }`}
         >
           <span className="text-sm">{isCorr ? "✓ 解题命中 // 正确理解" : "✗ 需强化辨析 // 深入思考"}</span>
-          <span className="text-[11px] text-[var(--gray)] font-normal">点击胶囊分段阅读深度分析</span>
+          <span className="text-[11px] text-[var(--gray)] font-normal">点击胶囊分段研读解剖档案</span>
         </div>
 
         {/* 诊断分段胶囊选择器 */}
@@ -1575,7 +1789,7 @@ export function FaustReadingLab({ lang }: { lang: Lang }) {
             onClick={() => setActiveDiagTab("anchor")}
             className={`px-3 py-1 rounded-md text-xs transition cursor-pointer ${
               activeDiagTab === "anchor"
-                ? "bg-emerald-700 text-white font-bold shadow-2xs"
+                ? "bg-emerald-700 text-white font-bold shadow-2xs ring-1 ring-emerald-500"
                 : "bg-[var(--paper-subtle)] text-[var(--gray)] hover:text-[var(--ink)]"
             }`}
           >
@@ -1586,7 +1800,7 @@ export function FaustReadingLab({ lang }: { lang: Lang }) {
             onClick={() => setActiveDiagTab("distractors")}
             className={`px-3 py-1 rounded-md text-xs transition cursor-pointer ${
               activeDiagTab === "distractors"
-                ? "bg-rose-700 text-white font-bold shadow-2xs"
+                ? "bg-rose-700 text-white font-bold shadow-2xs ring-1 ring-rose-500"
                 : "bg-[var(--paper-subtle)] text-[var(--gray)] hover:text-[var(--ink)]"
             }`}
           >
@@ -1597,7 +1811,7 @@ export function FaustReadingLab({ lang }: { lang: Lang }) {
             onClick={() => setActiveDiagTab("context")}
             className={`px-3 py-1 rounded-md text-xs transition cursor-pointer ${
               activeDiagTab === "context"
-                ? "bg-purple-700 text-white font-bold shadow-2xs"
+                ? "bg-purple-700 text-white font-bold shadow-2xs ring-1 ring-purple-500"
                 : "bg-[var(--paper-subtle)] text-[var(--gray)] hover:text-[var(--ink)]"
             }`}
           >
@@ -1608,7 +1822,7 @@ export function FaustReadingLab({ lang }: { lang: Lang }) {
             onClick={() => setActiveDiagTab("muster")}
             className={`px-3 py-1 rounded-md text-xs transition cursor-pointer ${
               activeDiagTab === "muster"
-                ? "bg-[var(--ink)] text-white font-bold shadow-2xs"
+                ? "bg-amber-800 text-white font-bold shadow-2xs ring-1 ring-amber-600"
                 : "bg-[var(--paper-subtle)] text-[var(--gray)] hover:text-[var(--ink)]"
             }`}
           >
@@ -1619,7 +1833,7 @@ export function FaustReadingLab({ lang }: { lang: Lang }) {
             onClick={() => setActiveDiagTab("all")}
             className={`px-3 py-1 rounded-md text-xs transition cursor-pointer ${
               activeDiagTab === "all"
-                ? "bg-amber-800 text-white font-bold shadow-2xs"
+                ? "bg-[var(--ink)] text-white font-bold shadow-2xs"
                 : "bg-[var(--paper-subtle)] text-[var(--gray)] hover:text-[var(--ink)]"
             }`}
           >
@@ -1630,7 +1844,7 @@ export function FaustReadingLab({ lang }: { lang: Lang }) {
         {/* 动态分段内容 */}
         <div className="text-[13px] sm:text-[14px] leading-[1.8] text-[var(--ink)] font-sans p-4 sm:p-5 rounded-xl bg-[var(--paper-subtle)] border border-[var(--line)]/60 shadow-2xs">
           {activeDiagTab === "anchor" && (
-            <div className="space-y-2 whitespace-pre-line">
+            <div className="space-y-2 whitespace-pre-line border-l-4 border-emerald-500 pl-3">
               <div className="font-mono text-[11px] font-bold text-emerald-800">
                 【✅ 正解依据与文本锚点】
               </div>
@@ -1639,7 +1853,7 @@ export function FaustReadingLab({ lang }: { lang: Lang }) {
           )}
 
           {activeDiagTab === "distractors" && (
-            <div className="space-y-2 whitespace-pre-line">
+            <div className="space-y-2 whitespace-pre-line border-l-4 border-rose-500 pl-3">
               <div className="font-mono text-[11px] font-bold text-rose-800">
                 【❌ 干扰项逐项诊断】
               </div>
@@ -1648,7 +1862,7 @@ export function FaustReadingLab({ lang }: { lang: Lang }) {
           )}
 
           {activeDiagTab === "context" && (
-            <div className="space-y-2 whitespace-pre-line">
+            <div className="space-y-2 whitespace-pre-line border-l-4 border-purple-500 pl-3">
               <div className="font-mono text-[11px] font-bold text-purple-800">
                 【🏛 时代思潮与哲学脉络】
               </div>
@@ -1664,25 +1878,25 @@ export function FaustReadingLab({ lang }: { lang: Lang }) {
 
           {activeDiagTab === "muster" && (
             <div className="space-y-3">
-              <div className="p-3 rounded-lg border border-[var(--line)] bg-[var(--surface)] space-y-1.5">
-                <div className="flex items-center justify-between text-[11px] font-mono text-[var(--gray)]">
-                  <span className="font-bold text-[var(--ink)]">
+              <div className="p-3.5 rounded-lg border border-amber-300 bg-amber-50/50 space-y-1.5 shadow-2xs">
+                <div className="flex items-center justify-between text-[11px] font-mono text-amber-900">
+                  <span className="font-bold">
                     § {de ? "Muster-Formulierung für die Klausur" : "德语高分答题句式"}
                   </span>
                   <button
                     type="button"
                     onClick={() => handleCopySentence(currentQ.klausurSatzDE, currentQ.id)}
-                    className="text-[var(--ink)] hover:underline cursor-pointer"
+                    className="px-2 py-0.5 rounded bg-amber-200 hover:bg-amber-300 text-amber-950 font-bold transition cursor-pointer"
                   >
-                    {copiedId === currentQ.id ? "✓ Kopiert" : de ? "Kopieren" : "复制德语文案"}
+                    {copiedId === currentQ.id ? "✓ 已复制" : de ? "Kopieren" : "一键复制"}
                   </button>
                 </div>
-                <div className="font-serif italic text-[13px] sm:text-[14px] text-[var(--ink)] leading-relaxed pl-3 border-l-2 border-amber-500/70">
+                <div className="font-serif italic text-[14px] text-amber-950 leading-relaxed pl-3 border-l-3 border-amber-500">
                   „{currentQ.klausurSatzDE}“
                 </div>
               </div>
 
-              <div className="p-3 rounded-lg bg-[var(--surface)] border border-[var(--line)] text-xs space-y-1.5">
+              <div className="p-3.5 rounded-lg bg-[var(--surface)] border border-[var(--line)] text-xs space-y-1.5">
                 <div className="font-mono text-[11px] text-[var(--gray)] font-bold">
                   📋 官方评分期望标准 (EHZ 要点):
                 </div>
@@ -1700,14 +1914,14 @@ export function FaustReadingLab({ lang }: { lang: Lang }) {
 
         {/* 常驻迷你高分句快捷栏 (在非 muster tab 时展现单行) */}
         {activeDiagTab !== "muster" && (
-          <div className="flex items-center justify-between px-3 py-2 rounded-lg bg-[var(--paper-subtle)] border border-[var(--line)] text-xs font-mono">
-            <span className="text-[11px] text-[var(--gray)] truncate max-w-[80%]">
+          <div className="flex items-center justify-between px-3 py-2 rounded-lg bg-amber-50/60 border border-amber-200 text-xs font-mono text-amber-950">
+            <span className="text-[11px] truncate max-w-[80%]">
               § 考场标准句: „{currentQ.klausurSatzDE.slice(0, 55)}...“
             </span>
             <button
               type="button"
               onClick={() => setActiveDiagTab("muster")}
-              className="text-[11px] text-[var(--ink)] font-bold underline cursor-pointer"
+              className="text-[11px] font-bold underline cursor-pointer hover:text-amber-700"
             >
               展开完整句式 ▶
             </button>
@@ -1771,7 +1985,7 @@ export function FaustReadingLab({ lang }: { lang: Lang }) {
                 : "text-[var(--gray)] hover:text-[var(--ink)]"
             }`}
           >
-            Demo A: 宽幅呼吸双栏 (已开阔舒展)
+            Demo A: 宽幅呼吸双栏 (聚光灯高亮版)
           </button>
           <button
             type="button"
@@ -1810,13 +2024,32 @@ export function FaustReadingLab({ lang }: { lang: Lang }) {
       </div>
 
       {/* ===================================================================== */}
-      {/* 模式 A：宽幅呼吸双栏 (Wide Canvas Breathing Split · 开阔舒朗升级版) */}
+      {/* 模式 A：宽幅呼吸双栏 (Wide Canvas Breathing Split · 视觉重点与戏剧聚焦版) */}
       {/* ===================================================================== */}
       {layoutMode === "wide-split" && (
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 xl:gap-10 items-start">
-          {/* 左栏 (5列): 诗剧原著精读 + 显微镜 */}
+          {/* 左栏 (5列): 诗剧原著精读 + 考点动态聚光灯 + 显微镜 */}
           <div className="lg:col-span-5 space-y-3.5">
             {renderBookmarks()}
+
+            {/* 考点聚焦诗行动态条 */}
+            {targetInfo && (
+              <div className="flex items-center justify-between px-3.5 py-2.5 rounded-lg bg-amber-50/90 border border-amber-300/80 text-amber-950 text-xs font-mono shadow-2xs">
+                <div className="flex items-center gap-2 truncate">
+                  <span className="h-2 w-2 rounded-full bg-amber-500 animate-pulse shrink-0" />
+                  <span className="font-bold">🎯 考点聚焦:</span>
+                  <span className="truncate italic font-serif">„{targetInfo.snippetDE}“</span>
+                </div>
+                <button
+                  type="button"
+                  onClick={() => jumpToVerse(targetInfo.lines[0])}
+                  className="shrink-0 px-2.5 py-1 rounded bg-amber-200/90 hover:bg-amber-300 text-amber-950 font-bold transition cursor-pointer text-[11px]"
+                >
+                  直达诗行 ↗
+                </button>
+              </div>
+            )}
+
             <div className="flex items-center justify-between text-xs font-mono border-b border-[var(--line)]/60 pb-1.5">
               <span className="font-bold text-[var(--ink)]">
                 {de ? "Originaltext (Goethe)" : "原著德语诗剧正文"}
@@ -1825,12 +2058,14 @@ export function FaustReadingLab({ lang }: { lang: Lang }) {
                 {de ? "Klick auf Zeile zum Analysieren" : "点击诗行即可深入释义"}
               </span>
             </div>
+
             {renderVerseScroll("h-[480px]")}
             {renderMicroscope()}
           </div>
 
           {/* 右栏 (7列): 逐题精读 + 诊断分段胶囊 */}
           <div className="lg:col-span-7 space-y-3.5">
+            {/* 步进器顶栏 */}
             <div className="flex items-center justify-between border-b border-[var(--line)]/60 pb-2.5">
               <div className="flex items-center gap-2.5">
                 <span className="font-mono font-bold text-sm text-[var(--ink)]">
