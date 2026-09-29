@@ -29,14 +29,22 @@ tags: [EF, Meta, Journal, App, Deutsch, SoWi]
      - 5. **Stilmittel & Rhetorik**（Knittelvers音步、随韵、破折号与激情排比 AFB II）
      - 6. **Figurenzeichnung & Psychologie**（极度自傲与极度自卑的悖论双重人格 AFB III）
    - 配套**官方会考评分标准（Erwartungshorizont / EHZ）**采分点明细、**德语标准答题句式积木（Klausur-Formulierungshilfe）**一键复制功能，以及**论述文开头破题标准句式（TATTE-Satz）**示范。
-4. **展厅（DesignLab.tsx）集成**：
-   - 将 `FaustReadingLab` 作为文科首发王牌工坊置顶展示，默认为首选试验台。
+4. **展厅（DesignLab.tsx）集成与画幅拓宽**：
+   - 将 `FaustReadingLab` 作为文科首发王牌工坊置顶展示，画幅拓宽至 `max-w-6xl`。
+
+5. **根治左右高度差空白与阅读滚出视野体验**（`FaustReadingLab.tsx`）：
+   - **左栏吸顶驻留（`lg:sticky lg:top-4 lg:self-start`）**：无论右侧试题如何展开，原著文本与逐行显微镜始终锁定在视口左侧伴读，彻底杜绝滚动后的左侧空白。
+   - **双视图模式切换（Fokus vs. Stream）**：
+     - **🎯 逐题聚焦模式（Fokus-Modus，默认）**：配备 `[◀ 上一题] [1] [2]... [下一题 ▶]` 导航步进器，每次仅聚焦一题，右侧题目卡与左侧诗文高度 1:1 严谨等高，消除纵向失衡。
+     - **📑 全卷展开模式（Alle Fragen）**：支持六题整卷通览，各题卡支持极简一键折叠（▲ / ▼）。
+   - **左栏伴读高密增强**：新增 **会考黄金必背诗句直达书签（Kernzitate-Schnellzugriff）**（一键平滑滚动居中并高亮特定诗行）与 **高中会考能力层级（AFB I / II / III）考纲对照卡**。
 
 ## 2. 门禁验证
 
 - `cmd /c "npx tsc -b"`：0 错误，类型检查全绿。
-- `cmd /c "npm run build"`：6.77s 构建通过（dist 产物完整）。
+- `cmd /c "npm run build"`：6.71s 构建通过（dist 产物完整）。
 - `python scripts/vault-check.py`：PASS（notes=401, csv_rows=1599, index_links=337, reisen=271, 0 badnames, 0 badglossar）。
 - Commit 记录：
   - `0830bb2`: `[App] 重构微课文案解耦并新增歌德浮士德原著六维会考阅读工坊与订单簿教具`
   - `9a9a1cd`: `[SoWi] 优化证券存托研习步骤4为专属订单簿撮合与委托类型实操`
+  - `474ae20`: `[App] 优化浮士德阅读工坊布局引入吸顶文本流单题聚焦模式与黄金诗句书签`
