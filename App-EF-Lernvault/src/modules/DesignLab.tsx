@@ -71,7 +71,7 @@ export function DesignLab({ lang }: { lang: Lang }) {
   const activeDemoMeta = DEMO_OPTIONS.find((d) => d.id === currentDemo) ?? DEMO_OPTIONS[0];
 
   return (
-    <div className="mx-auto w-full min-w-0 max-w-5xl space-y-6 pb-20">
+    <div className="mx-auto w-full min-w-0 max-w-6xl space-y-6 pb-20">
       {/* 典雅展馆/实验工坊 Masthead（Tufte 高雅学术风格） */}
       <header className="border-b border-[var(--line)] pb-5 pt-2">
         <div className="flex flex-col gap-3 sm:flex-row sm:items-baseline sm:justify-between">
