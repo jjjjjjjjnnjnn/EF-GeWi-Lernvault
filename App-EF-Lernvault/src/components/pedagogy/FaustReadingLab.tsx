@@ -1301,11 +1301,11 @@ export function FaustReadingLab({ lang }: { lang: Lang }) {
 
   const diagSections = parseExplanationSections(currentQ.explanationZH);
 
-  // 渲染诗句原著卷轴（去燥、紧凑微标、杜绝折行挤压）
-  const renderVerseScroll = (heightClass: string = "h-[420px]") => (
+  // 渲染诗句原著卷轴（去燥、紧凑微标、杜绝折行挤压、舒朗行间距）
+  const renderVerseScroll = (heightClass: string = "h-[480px]") => (
     <div
       ref={verseListRef}
-      className={`rounded-lg border border-[var(--line)] bg-[var(--paper)] p-3 shadow-2xs font-serif divide-y divide-[var(--line)]/20 ${heightClass} overflow-y-auto select-none scroll-smooth`}
+      className={`rounded-xl border border-[var(--line)]/70 bg-[var(--paper)] p-3.5 shadow-xs font-serif divide-y divide-[var(--line)]/20 ${heightClass} overflow-y-auto select-none scroll-smooth`}
     >
       {activeExcerpt.verses.map((verse) => {
         const isSelected = verse.lineNum === activeVerseNum;
@@ -1314,11 +1314,11 @@ export function FaustReadingLab({ lang }: { lang: Lang }) {
 
         let highlightBg = "";
         if (isSelected) {
-          highlightBg = "bg-amber-100 ring-2 ring-amber-500 font-medium shadow-2xs";
+          highlightBg = "bg-amber-100/90 ring-2 ring-amber-500 font-medium shadow-2xs";
         } else if (hasStilmittel) {
-          highlightBg = "bg-amber-50/90 border-l-[3px] border-amber-400 pl-2 text-amber-950";
+          highlightBg = "bg-amber-50/90 border-l-[3px] border-amber-400 pl-2.5 text-amber-950";
         } else if (hasVocab) {
-          highlightBg = "bg-blue-50/70 border-l-[3px] border-blue-400 pl-2 text-blue-950";
+          highlightBg = "bg-blue-50/70 border-l-[3px] border-blue-400 pl-2.5 text-blue-950";
         } else {
           highlightBg = "hover:bg-[var(--surface)]";
         }
@@ -1330,20 +1330,20 @@ export function FaustReadingLab({ lang }: { lang: Lang }) {
               verseRefs.current[verse.lineNum] = el;
             }}
             onClick={() => setActiveVerseNum(verse.lineNum)}
-            className={`group py-1.5 px-2 rounded transition cursor-pointer flex items-baseline gap-2 text-sm leading-relaxed ${highlightBg}`}
+            className={`group py-2 px-2.5 rounded-lg transition cursor-pointer flex items-baseline gap-2.5 text-[14px] sm:text-[15px] leading-[1.8] ${highlightBg}`}
           >
             {/* 行号 */}
-            <span className="font-mono text-[10px] text-[var(--gray)]/80 w-7 shrink-0 text-right select-none">
+            <span className="font-mono text-[11px] text-[var(--gray)]/60 w-8 shrink-0 text-right select-none">
               {verse.lineNum % 5 === 0 || isSelected ? verse.lineNum : ""}
             </span>
 
             {/* 德语原诗 + 紧凑微标 (不再挤占整行) */}
-            <div className="flex-1 min-w-0 flex items-baseline justify-between gap-1.5">
+            <div className="flex-1 min-w-0 flex items-baseline justify-between gap-2">
               <div className="min-w-0">
                 <span className={`tracking-wide ${hasStilmittel ? "font-serif text-amber-950 font-medium" : "text-[var(--ink)]"}`}>
                   {verse.textDE}
                 </span>
-                <span className="ml-2 font-sans text-xs text-[var(--gray)] opacity-0 group-hover:opacity-100 transition-opacity">
+                <span className="ml-2.5 font-sans text-xs text-[var(--gray)] opacity-0 group-hover:opacity-100 transition-opacity">
                   // {verse.translationZH}
                 </span>
               </div>
@@ -1352,7 +1352,7 @@ export function FaustReadingLab({ lang }: { lang: Lang }) {
               <div className="flex items-center gap-1 shrink-0 text-[10px] select-none">
                 {hasStilmittel && (
                   <span
-                    className="px-1 py-0.2 rounded bg-amber-200/90 text-amber-950 border border-amber-300 font-mono text-[9px] font-bold"
+                    className="px-1.5 py-0.5 rounded bg-amber-200/90 text-amber-950 border border-amber-300 font-mono text-[9px] font-bold"
                     title={verse.stilmittel?.type}
                   >
                     § {verse.stilmittel?.type.split("(")[0].replace("&", "+").trim()}
@@ -1360,7 +1360,7 @@ export function FaustReadingLab({ lang }: { lang: Lang }) {
                 )}
                 {hasVocab && (
                   <span
-                    className="px-1 py-0.2 rounded bg-blue-100 text-blue-900 border border-blue-200 font-mono text-[9px]"
+                    className="px-1.5 py-0.5 rounded bg-blue-100 text-blue-900 border border-blue-200 font-mono text-[9px]"
                     title={verse.vocab?.word}
                   >
                     📖 {verse.vocab?.word}
@@ -1374,18 +1374,18 @@ export function FaustReadingLab({ lang }: { lang: Lang }) {
     </div>
   );
 
-  // 渲染显微镜解析抽屉
+  // 渲染显微镜解析抽屉（舒朗统一单卡，消除嵌套方框）
   const renderMicroscope = () => (
     activeVerse && (
-      <div className="rounded-md border border-[var(--line)] bg-[var(--surface)] p-2.5 space-y-1.5 shadow-2xs font-sans text-xs">
-        <div className="flex items-center justify-between border-b border-[var(--line)]/60 pb-1">
+      <div className="rounded-xl border border-[var(--line)]/70 bg-[var(--surface)] p-4 space-y-2.5 shadow-xs font-sans text-xs">
+        <div className="flex items-center justify-between border-b border-[var(--line)]/60 pb-1.5">
           <div className="flex items-center gap-2">
-            <span className="font-mono font-bold text-[var(--ink)]">
-              Vers {activeVerse.lineNum} // {de ? "Detail-Analyse" : "逐行显微镜解析"}
+            <span className="font-mono font-bold text-xs text-[var(--ink)]">
+              Vers {activeVerse.lineNum} // {de ? "Detail-Analyse" : "逐行显微镜精析"}
             </span>
             {activeVerse.toneCategory && (
               <span
-                className={`font-mono text-[9px] px-1 py-0.2 rounded border ${
+                className={`font-mono text-[10px] px-2 py-0.5 rounded border ${
                   activeVerse.toneCategory === "krise"
                     ? "bg-rose-50 text-rose-900 border-rose-200"
                     : activeVerse.toneCategory === "spott"
@@ -1403,34 +1403,33 @@ export function FaustReadingLab({ lang }: { lang: Lang }) {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs">
-          <div className="p-1.5 rounded bg-[var(--paper-subtle)] border border-[var(--line)]/50">
-            <div className="font-mono text-[9px] text-[var(--gray)] uppercase mb-0.5">
-              {de ? "Wortgetreue Übersetzung" : "直译与义理对照"}
-            </div>
-            <div className="font-serif text-[12px] text-[var(--ink)] leading-snug">
-              {activeVerse.translationZH}
-            </div>
+        {/* 逐句直译与诗意精析 */}
+        <div className="p-2.5 rounded-lg bg-[var(--paper-subtle)] border border-[var(--line)]/50 space-y-1">
+          <div className="font-mono text-[9px] text-[var(--gray)] uppercase tracking-wider">
+            {de ? "Wortgetreue Übersetzung" : "直译与义理对照"}
           </div>
-
-          {activeVerse.stilmittel && (
-            <div className="p-1.5 rounded bg-amber-50/70 border border-amber-200/60 text-amber-950">
-              <div className="font-mono text-[9px] uppercase font-bold text-amber-900 mb-0.5">
-                § {activeVerse.stilmittel.type}
-              </div>
-              <div className="text-[11px] leading-relaxed">
-                {de ? activeVerse.stilmittel.descDE : activeVerse.stilmittel.descZH}
-              </div>
-            </div>
-          )}
+          <div className="font-serif text-[13px] text-[var(--ink)] leading-relaxed">
+            {activeVerse.translationZH}
+          </div>
         </div>
 
+        {activeVerse.stilmittel && (
+          <div className="p-2.5 rounded-lg bg-amber-50/80 border border-amber-200/70 text-amber-950 space-y-0.5">
+            <div className="font-mono text-[10px] uppercase font-bold text-amber-900">
+              § {activeVerse.stilmittel.type}
+            </div>
+            <div className="text-xs leading-relaxed">
+              {de ? activeVerse.stilmittel.descDE : activeVerse.stilmittel.descZH}
+            </div>
+          </div>
+        )}
+
         {activeVerse.vocab && (
-          <div className="p-1.5 rounded bg-blue-50/60 border border-blue-200/60 text-blue-950">
-            <div className="font-mono text-[9px] font-bold text-blue-900 mb-0.5">
+          <div className="p-2.5 rounded-lg bg-blue-50/70 border border-blue-200/70 text-blue-950 space-y-0.5">
+            <div className="font-mono text-[10px] font-bold text-blue-900">
               📖 Glossar: <span className="underline">{activeVerse.vocab.word}</span>
             </div>
-            <div className="text-[11px] leading-relaxed">
+            <div className="text-xs leading-relaxed">
               <strong>{activeVerse.vocab.meaningDE}</strong> — {activeVerse.vocab.meaningZH}
             </div>
           </div>
@@ -1441,16 +1440,16 @@ export function FaustReadingLab({ lang }: { lang: Lang }) {
 
   // 渲染黄金诗句书签
   const renderBookmarks = () => (
-    <div className="flex items-center gap-1 flex-wrap text-xs font-mono pt-0.5">
-      <span className="text-[10px] text-[var(--gray)] font-bold">📌 {de ? "Kernzitate:" : "黄金诗句:"}</span>
+    <div className="flex items-center gap-1.5 flex-wrap text-xs font-mono pb-2 border-b border-[var(--line)]/40">
+      <span className="text-[11px] text-[var(--gray)] font-bold shrink-0">📌 黄金诗句直达:</span>
       {(BOOKMARKS[activeExcerpt.id] || []).map((bm) => (
         <button
           key={bm.lineNum}
           type="button"
           onClick={() => jumpToVerse(bm.lineNum)}
-          className={`px-1.5 py-0.5 text-[10px] rounded border cursor-pointer transition ${
+          className={`px-2 py-0.8 text-[11px] rounded border cursor-pointer transition ${
             activeVerseNum === bm.lineNum
-              ? "bg-[var(--ink)] text-white border-[var(--ink)] font-bold"
+              ? "bg-[var(--ink)] text-white border-[var(--ink)] font-bold shadow-2xs"
               : "bg-[var(--paper-subtle)] text-[var(--gray)] border-[var(--line)] hover:border-[var(--gray)] hover:text-[var(--ink)]"
           }`}
         >
@@ -1460,42 +1459,42 @@ export function FaustReadingLab({ lang }: { lang: Lang }) {
     </div>
   );
 
-  // 渲染试题设问与选项
+  // 渲染试题设问与选项（开阔大卡片，舒展内边距与字体）
   const renderQuestionCard = (hideDiagnostics: boolean = false) => {
     const isAnswered = !!answers[currentQ.id];
     return (
-      <div className="rounded-lg border border-[var(--line)] bg-[var(--surface)] p-4 shadow-2xs space-y-3">
+      <div className="rounded-xl border border-[var(--line)]/70 bg-[var(--surface)] p-6 sm:p-7 shadow-xs space-y-5">
         {/* 题头 */}
-        <div className="flex items-center justify-between text-xs font-mono border-b border-[var(--line)]/60 pb-2">
-          <span className="font-bold text-[var(--ink)]">
+        <div className="flex items-center justify-between text-xs font-mono border-b border-[var(--line)]/60 pb-3">
+          <span className="font-bold text-sm text-[var(--ink)]">
             第 {focusIndex + 1} 题：{currentQ.titleZH}
           </span>
           {isAnswered && (
-            <span className="text-[10px] text-emerald-700 font-bold bg-emerald-50 px-1.5 py-0.5 rounded border border-emerald-200">
-              已作答
+            <span className="text-[11px] text-emerald-800 font-bold bg-emerald-50 px-2.5 py-0.8 rounded-md border border-emerald-300">
+              ✓ 已作答
             </span>
           )}
         </div>
 
         {/* 设问正文 */}
-        <p className="font-serif text-[14px] leading-relaxed text-[var(--ink)]">
+        <p className="font-serif text-[15px] sm:text-[16px] leading-[1.75] text-[var(--ink)]">
           {currentQ.questionZH}
         </p>
 
         {/* 选项组 */}
-        <div className="space-y-2 pt-1">
+        <div className="space-y-3 pt-1">
           {currentQ.options.map((opt) => {
             const selectedOptionId = answers[currentQ.id];
             const isThisSelected = selectedOptionId === opt.id;
-            let btnStyle = "border-[var(--line)] bg-[var(--paper)] text-[var(--ink)] hover:border-[var(--gray)]";
+            let btnStyle = "border-[var(--line)] bg-[var(--paper)] text-[var(--ink)] hover:border-[var(--gray)] shadow-2xs";
 
             if (isAnswered) {
               if (opt.isCorrect) {
-                btnStyle = "border-emerald-500 bg-emerald-50/80 text-emerald-950 font-medium ring-1 ring-emerald-500";
+                btnStyle = "border-emerald-500 bg-emerald-50/90 text-emerald-950 font-medium ring-1 ring-emerald-500 shadow-2xs";
               } else if (isThisSelected && !opt.isCorrect) {
                 btnStyle = "border-rose-400 bg-rose-50 text-rose-950 line-through";
               } else {
-                btnStyle = "border-[var(--line)] bg-[var(--paper-subtle)] opacity-50";
+                btnStyle = "border-[var(--line)]/60 bg-[var(--paper-subtle)] opacity-40";
               }
             }
 
@@ -1505,12 +1504,12 @@ export function FaustReadingLab({ lang }: { lang: Lang }) {
                 type="button"
                 disabled={isAnswered}
                 onClick={() => setAnswers({ ...answers, [currentQ.id]: opt.id })}
-                className={`w-full text-left p-2.5 rounded-md border text-xs leading-relaxed transition cursor-pointer flex items-start gap-2.5 ${btnStyle}`}
+                className={`w-full text-left p-3.5 sm:p-4 rounded-lg border text-xs sm:text-[13px] leading-relaxed transition cursor-pointer flex items-start gap-3.5 ${btnStyle}`}
               >
-                <span className="font-mono font-bold shrink-0 mt-0.5">
-                  {opt.id.toUpperCase()}.
+                <span className="h-6 w-6 rounded-md bg-[var(--paper-subtle)] border border-[var(--line)] font-mono font-bold text-xs flex items-center justify-center shrink-0 mt-0.5">
+                  {opt.id.toUpperCase()}
                 </span>
-                <span>{opt.textZH}</span>
+                <span className="flex-1">{opt.textZH}</span>
               </button>
             );
           })}
@@ -1520,12 +1519,12 @@ export function FaustReadingLab({ lang }: { lang: Lang }) {
         {!hideDiagnostics && isAnswered && renderDiagnosticTabs()}
 
         {/* 步进器 */}
-        <div className="flex items-center justify-between pt-3 border-t border-[var(--line)]/60">
+        <div className="flex items-center justify-between pt-4 border-t border-[var(--line)]/60">
           <button
             type="button"
             disabled={focusIndex === 0}
             onClick={() => setFocusIndex(focusIndex - 1)}
-            className="px-3 py-1.5 rounded border border-[var(--line)] text-xs font-mono cursor-pointer disabled:opacity-30 disabled:cursor-not-allowed hover:bg-[var(--paper-subtle)]"
+            className="px-4 py-2 rounded-lg border border-[var(--line)] text-xs font-mono cursor-pointer disabled:opacity-30 disabled:cursor-not-allowed hover:bg-[var(--paper-subtle)] transition"
           >
             ◀ 上一题
           </button>
@@ -1538,7 +1537,7 @@ export function FaustReadingLab({ lang }: { lang: Lang }) {
             type="button"
             disabled={focusIndex === activeExcerpt.questions.length - 1}
             onClick={() => setFocusIndex(focusIndex + 1)}
-            className={`px-3.5 py-1.5 rounded text-xs font-mono cursor-pointer transition ${
+            className={`px-4 py-2 rounded-lg text-xs font-mono cursor-pointer transition ${
               answers[currentQ.id] && focusIndex < activeExcerpt.questions.length - 1
                 ? "bg-[var(--ink)] text-white shadow-2xs font-bold hover:opacity-90"
                 : "border border-[var(--line)] disabled:opacity-30 disabled:cursor-not-allowed hover:bg-[var(--paper-subtle)]"
@@ -1551,30 +1550,30 @@ export function FaustReadingLab({ lang }: { lang: Lang }) {
     );
   };
 
-  // 渲染诊断胶囊切换卡（Demo A 核心：大幅降低长文本垂直拥挤）
+  // 渲染诊断胶囊切换卡（舒展大气，段落分明）
   const renderDiagnosticTabs = () => {
     const isAnswered = !!answers[currentQ.id];
     if (!isAnswered) return null;
     const isCorr = currentQ.options.find((o) => o.id === answers[currentQ.id])?.isCorrect;
 
     return (
-      <div className="mt-3 pt-3 border-t border-[var(--line)]/60 space-y-2.5 animate-fadeIn">
+      <div className="mt-5 pt-5 border-t border-[var(--line)]/70 space-y-3.5 animate-fadeIn">
         {/* 正误提示 */}
         <div
           className={`text-xs font-mono font-bold flex items-center justify-between ${
             isCorr ? "text-emerald-800" : "text-rose-900"
           }`}
         >
-          <span>{isCorr ? "✓ 解题命中 // 正确理解" : "✗ 需强化辨析 // 深入思考"}</span>
-          <span className="text-[10px] text-[var(--gray)] font-normal">点击胶囊分段阅读</span>
+          <span className="text-sm">{isCorr ? "✓ 解题命中 // 正确理解" : "✗ 需强化辨析 // 深入思考"}</span>
+          <span className="text-[11px] text-[var(--gray)] font-normal">点击胶囊分段阅读深度分析</span>
         </div>
 
         {/* 诊断分段胶囊选择器 */}
-        <div className="flex items-center gap-1 flex-wrap border-b border-[var(--line)]/40 pb-1.5 text-xs font-mono">
+        <div className="flex items-center gap-1.5 flex-wrap border-b border-[var(--line)]/40 pb-2 text-xs font-mono">
           <button
             type="button"
             onClick={() => setActiveDiagTab("anchor")}
-            className={`px-2 py-0.5 rounded text-[11px] transition cursor-pointer ${
+            className={`px-3 py-1 rounded-md text-xs transition cursor-pointer ${
               activeDiagTab === "anchor"
                 ? "bg-emerald-700 text-white font-bold shadow-2xs"
                 : "bg-[var(--paper-subtle)] text-[var(--gray)] hover:text-[var(--ink)]"
@@ -1585,7 +1584,7 @@ export function FaustReadingLab({ lang }: { lang: Lang }) {
           <button
             type="button"
             onClick={() => setActiveDiagTab("distractors")}
-            className={`px-2 py-0.5 rounded text-[11px] transition cursor-pointer ${
+            className={`px-3 py-1 rounded-md text-xs transition cursor-pointer ${
               activeDiagTab === "distractors"
                 ? "bg-rose-700 text-white font-bold shadow-2xs"
                 : "bg-[var(--paper-subtle)] text-[var(--gray)] hover:text-[var(--ink)]"
@@ -1596,7 +1595,7 @@ export function FaustReadingLab({ lang }: { lang: Lang }) {
           <button
             type="button"
             onClick={() => setActiveDiagTab("context")}
-            className={`px-2 py-0.5 rounded text-[11px] transition cursor-pointer ${
+            className={`px-3 py-1 rounded-md text-xs transition cursor-pointer ${
               activeDiagTab === "context"
                 ? "bg-purple-700 text-white font-bold shadow-2xs"
                 : "bg-[var(--paper-subtle)] text-[var(--gray)] hover:text-[var(--ink)]"
@@ -1607,7 +1606,7 @@ export function FaustReadingLab({ lang }: { lang: Lang }) {
           <button
             type="button"
             onClick={() => setActiveDiagTab("muster")}
-            className={`px-2 py-0.5 rounded text-[11px] transition cursor-pointer ${
+            className={`px-3 py-1 rounded-md text-xs transition cursor-pointer ${
               activeDiagTab === "muster"
                 ? "bg-[var(--ink)] text-white font-bold shadow-2xs"
                 : "bg-[var(--paper-subtle)] text-[var(--gray)] hover:text-[var(--ink)]"
@@ -1618,7 +1617,7 @@ export function FaustReadingLab({ lang }: { lang: Lang }) {
           <button
             type="button"
             onClick={() => setActiveDiagTab("all")}
-            className={`px-2 py-0.5 rounded text-[11px] transition cursor-pointer ${
+            className={`px-3 py-1 rounded-md text-xs transition cursor-pointer ${
               activeDiagTab === "all"
                 ? "bg-amber-800 text-white font-bold shadow-2xs"
                 : "bg-[var(--paper-subtle)] text-[var(--gray)] hover:text-[var(--ink)]"
@@ -1629,10 +1628,10 @@ export function FaustReadingLab({ lang }: { lang: Lang }) {
         </div>
 
         {/* 动态分段内容 */}
-        <div className="text-xs leading-relaxed text-[var(--ink)] font-sans p-3 rounded-md bg-[var(--paper-subtle)] border border-[var(--line)]/60 shadow-2xs">
+        <div className="text-[13px] sm:text-[14px] leading-[1.8] text-[var(--ink)] font-sans p-4 sm:p-5 rounded-xl bg-[var(--paper-subtle)] border border-[var(--line)]/60 shadow-2xs">
           {activeDiagTab === "anchor" && (
-            <div className="space-y-1.5 whitespace-pre-line">
-              <div className="font-mono text-[10px] font-bold text-emerald-800">
+            <div className="space-y-2 whitespace-pre-line">
+              <div className="font-mono text-[11px] font-bold text-emerald-800">
                 【✅ 正解依据与文本锚点】
               </div>
               <div>{diagSections.anchor}</div>
@@ -1640,8 +1639,8 @@ export function FaustReadingLab({ lang }: { lang: Lang }) {
           )}
 
           {activeDiagTab === "distractors" && (
-            <div className="space-y-1.5 whitespace-pre-line">
-              <div className="font-mono text-[10px] font-bold text-rose-800">
+            <div className="space-y-2 whitespace-pre-line">
+              <div className="font-mono text-[11px] font-bold text-rose-800">
                 【❌ 干扰项逐项诊断】
               </div>
               <div>{diagSections.distractors || "针对错误审题与概念混淆的深度辨析。"}</div>
@@ -1649,8 +1648,8 @@ export function FaustReadingLab({ lang }: { lang: Lang }) {
           )}
 
           {activeDiagTab === "context" && (
-            <div className="space-y-1.5 whitespace-pre-line">
-              <div className="font-mono text-[10px] font-bold text-purple-800">
+            <div className="space-y-2 whitespace-pre-line">
+              <div className="font-mono text-[11px] font-bold text-purple-800">
                 【🏛 时代思潮与哲学脉络】
               </div>
               <div>{diagSections.context || "启蒙时代、狂飙突进与近代知识体系演进。"}</div>
@@ -1658,15 +1657,15 @@ export function FaustReadingLab({ lang }: { lang: Lang }) {
           )}
 
           {activeDiagTab === "all" && (
-            <div className="space-y-2 whitespace-pre-line">
+            <div className="space-y-2.5 whitespace-pre-line">
               {currentQ.explanationZH}
             </div>
           )}
 
           {activeDiagTab === "muster" && (
-            <div className="space-y-2.5">
-              <div className="p-2 rounded border border-[var(--line)] bg-[var(--surface)] space-y-1">
-                <div className="flex items-center justify-between text-[10px] font-mono text-[var(--gray)]">
+            <div className="space-y-3">
+              <div className="p-3 rounded-lg border border-[var(--line)] bg-[var(--surface)] space-y-1.5">
+                <div className="flex items-center justify-between text-[11px] font-mono text-[var(--gray)]">
                   <span className="font-bold text-[var(--ink)]">
                     § {de ? "Muster-Formulierung für die Klausur" : "德语高分答题句式"}
                   </span>
@@ -1678,16 +1677,16 @@ export function FaustReadingLab({ lang }: { lang: Lang }) {
                     {copiedId === currentQ.id ? "✓ Kopiert" : de ? "Kopieren" : "复制德语文案"}
                   </button>
                 </div>
-                <div className="font-serif italic text-xs text-[var(--ink)] leading-relaxed">
+                <div className="font-serif italic text-[13px] sm:text-[14px] text-[var(--ink)] leading-relaxed pl-3 border-l-2 border-amber-500/70">
                   „{currentQ.klausurSatzDE}“
                 </div>
               </div>
 
-              <div className="p-2 rounded bg-[var(--surface)] border border-[var(--line)] text-xs space-y-1">
-                <div className="font-mono text-[10px] text-[var(--gray)] font-bold">
+              <div className="p-3 rounded-lg bg-[var(--surface)] border border-[var(--line)] text-xs space-y-1.5">
+                <div className="font-mono text-[11px] text-[var(--gray)] font-bold">
                   📋 官方评分期望标准 (EHZ 要点):
                 </div>
-                <ul className="list-disc pl-4 space-y-0.5 text-[var(--gray)] font-sans text-xs">
+                <ul className="list-disc pl-4 space-y-1 text-[var(--gray)] font-sans text-xs sm:text-[13px] leading-relaxed">
                   {currentQ.ehzKeyPointsZH.map((pt, pIdx) => (
                     <li key={pIdx}>
                       <span className="text-[var(--ink)]">{pt}</span>
@@ -1701,9 +1700,9 @@ export function FaustReadingLab({ lang }: { lang: Lang }) {
 
         {/* 常驻迷你高分句快捷栏 (在非 muster tab 时展现单行) */}
         {activeDiagTab !== "muster" && (
-          <div className="flex items-center justify-between px-2.5 py-1.5 rounded bg-[var(--paper-subtle)] border border-[var(--line)] text-xs font-mono">
+          <div className="flex items-center justify-between px-3 py-2 rounded-lg bg-[var(--paper-subtle)] border border-[var(--line)] text-xs font-mono">
             <span className="text-[11px] text-[var(--gray)] truncate max-w-[80%]">
-              § 考场标准句: „{currentQ.klausurSatzDE.slice(0, 50)}...“
+              § 考场标准句: „{currentQ.klausurSatzDE.slice(0, 55)}...“
             </span>
             <button
               type="button"
@@ -1719,14 +1718,14 @@ export function FaustReadingLab({ lang }: { lang: Lang }) {
   };
 
   return (
-    <div className="font-sans text-[var(--ink)] space-y-3">
+    <div className="font-sans text-[var(--ink)] space-y-4">
       {/* 极简顶栏：歌德《浮士德 I》+ 选段切换 */}
-      <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 border-b border-[var(--line)] pb-2.5">
-        <div className="flex items-center gap-2">
-          <span className="font-serif font-bold text-base text-[var(--ink)]">
+      <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 border-b border-[var(--line)] pb-3">
+        <div className="flex items-center gap-2.5">
+          <span className="font-serif font-bold text-lg text-[var(--ink)]">
             Johann Wolfgang von Goethe: <span className="italic">Faust I</span>
           </span>
-          <span className="text-[10px] font-mono text-[var(--gray)] bg-[var(--paper-subtle)] px-1.5 py-0.5 rounded border border-[var(--line)]">
+          <span className="text-[10px] font-mono text-[var(--gray)] bg-[var(--paper-subtle)] px-2 py-0.5 rounded border border-[var(--line)]">
             EF/Q1
           </span>
           <span className="text-xs text-[var(--gray)] font-serif italic hidden sm:inline">
@@ -1735,7 +1734,7 @@ export function FaustReadingLab({ lang }: { lang: Lang }) {
         </div>
 
         {/* 选段切换 */}
-        <div className="inline-flex rounded border border-[var(--line)] bg-[var(--paper-subtle)] p-0.5 text-xs font-mono self-start sm:self-auto">
+        <div className="inline-flex rounded-lg border border-[var(--line)] bg-[var(--paper-subtle)] p-0.5 text-xs font-mono self-start sm:self-auto shadow-2xs">
           {EXCERPTS.map((ex) => {
             const isCurrent = selectedExcerptId === ex.id;
             return (
@@ -1743,7 +1742,7 @@ export function FaustReadingLab({ lang }: { lang: Lang }) {
                 key={ex.id}
                 type="button"
                 onClick={() => handleSelectExcerpt(ex.id)}
-                className={`px-3 py-1 rounded transition cursor-pointer font-medium ${
+                className={`px-3.5 py-1.5 rounded-md transition cursor-pointer font-medium ${
                   isCurrent
                     ? "bg-[var(--surface)] text-[var(--ink)] font-bold shadow-2xs border border-[var(--line)]"
                     : "text-[var(--gray)] hover:text-[var(--ink)]"
@@ -1757,27 +1756,27 @@ export function FaustReadingLab({ lang }: { lang: Lang }) {
       </div>
 
       {/* 排版评估实验室切换器 (4大 Demo 模式) */}
-      <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 p-2 rounded-md bg-[var(--paper-subtle)] border border-[var(--line)]/80 text-xs">
+      <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2.5 p-2.5 rounded-lg bg-[var(--paper-subtle)] border border-[var(--line)]/80 text-xs">
         <div className="flex items-center gap-1.5 font-mono text-[11px] text-[var(--gray)]">
           <span className="font-bold text-[var(--ink)]">🎛️ 排版评估实验室:</span>
           <span>切换排版 Demo，评估舒适度</span>
         </div>
-        <div className="inline-flex rounded border border-[var(--line)] bg-[var(--surface)] p-0.5 text-xs font-mono flex-wrap">
+        <div className="inline-flex rounded-md border border-[var(--line)] bg-[var(--surface)] p-0.5 text-xs font-mono flex-wrap">
           <button
             type="button"
             onClick={() => setLayoutMode("wide-split")}
-            className={`px-2.5 py-1 rounded transition cursor-pointer ${
+            className={`px-3 py-1 rounded transition cursor-pointer ${
               layoutMode === "wide-split"
                 ? "bg-[var(--ink)] text-white font-bold shadow-2xs"
                 : "text-[var(--gray)] hover:text-[var(--ink)]"
             }`}
           >
-            Demo A: 宽幅呼吸双栏
+            Demo A: 宽幅呼吸双栏 (已开阔舒展)
           </button>
           <button
             type="button"
             onClick={() => setLayoutMode("three-col")}
-            className={`px-2.5 py-1 rounded transition cursor-pointer ${
+            className={`px-3 py-1 rounded transition cursor-pointer ${
               layoutMode === "three-col"
                 ? "bg-[var(--ink)] text-white font-bold shadow-2xs"
                 : "text-[var(--gray)] hover:text-[var(--ink)]"
@@ -1788,7 +1787,7 @@ export function FaustReadingLab({ lang }: { lang: Lang }) {
           <button
             type="button"
             onClick={() => setLayoutMode("drawer")}
-            className={`px-2.5 py-1 rounded transition cursor-pointer ${
+            className={`px-3 py-1 rounded transition cursor-pointer ${
               layoutMode === "drawer"
                 ? "bg-[var(--ink)] text-white font-bold shadow-2xs"
                 : "text-[var(--gray)] hover:text-[var(--ink)]"
@@ -1799,7 +1798,7 @@ export function FaustReadingLab({ lang }: { lang: Lang }) {
           <button
             type="button"
             onClick={() => setLayoutMode("two-phase")}
-            className={`px-2.5 py-1 rounded transition cursor-pointer ${
+            className={`px-3 py-1 rounded transition cursor-pointer ${
               layoutMode === "two-phase"
                 ? "bg-[var(--ink)] text-white font-bold shadow-2xs"
                 : "text-[var(--gray)] hover:text-[var(--ink)]"
@@ -1811,38 +1810,38 @@ export function FaustReadingLab({ lang }: { lang: Lang }) {
       </div>
 
       {/* ===================================================================== */}
-      {/* 模式 A：宽幅呼吸双栏 (Wide Canvas Breathing Split) */}
+      {/* 模式 A：宽幅呼吸双栏 (Wide Canvas Breathing Split · 开阔舒朗升级版) */}
       {/* ===================================================================== */}
       {layoutMode === "wide-split" && (
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-5 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 xl:gap-10 items-start">
           {/* 左栏 (5列): 诗剧原著精读 + 显微镜 */}
-          <div className="lg:col-span-5 space-y-2.5">
-            <div className="flex items-center justify-between text-xs font-mono border-b border-[var(--line)]/60 pb-1">
+          <div className="lg:col-span-5 space-y-3.5">
+            {renderBookmarks()}
+            <div className="flex items-center justify-between text-xs font-mono border-b border-[var(--line)]/60 pb-1.5">
               <span className="font-bold text-[var(--ink)]">
                 {de ? "Originaltext (Goethe)" : "原著德语诗剧正文"}
               </span>
               <span className="text-[10px] text-[var(--gray)]">
-                {de ? "Klick auf Zeile zum Analysieren" : "点击诗行即可释义"}
+                {de ? "Klick auf Zeile zum Analysieren" : "点击诗行即可深入释义"}
               </span>
             </div>
-            {renderVerseScroll("h-[430px]")}
+            {renderVerseScroll("h-[480px]")}
             {renderMicroscope()}
-            {renderBookmarks()}
           </div>
 
           {/* 右栏 (7列): 逐题精读 + 诊断分段胶囊 */}
-          <div className="lg:col-span-7 space-y-2.5">
-            <div className="flex items-center justify-between border-b border-[var(--line)]/60 pb-2">
-              <div className="flex items-center gap-2">
-                <span className="font-mono font-bold text-xs text-[var(--ink)]">
+          <div className="lg:col-span-7 space-y-3.5">
+            <div className="flex items-center justify-between border-b border-[var(--line)]/60 pb-2.5">
+              <div className="flex items-center gap-2.5">
+                <span className="font-mono font-bold text-sm text-[var(--ink)]">
                   📖 {de ? "Leseverständnis · Schritt für Schritt" : "阅读理解 · 逐题深入"}
                 </span>
-                <span className="text-[11px] font-mono text-[var(--gray)]">
+                <span className="text-xs font-mono text-[var(--gray)]">
                   (第 {focusIndex + 1} 题 / 共 {activeExcerpt.questions.length} 题)
                 </span>
               </div>
               {/* 进度圆点 */}
-              <div className="flex items-center gap-1.5 font-mono text-xs">
+              <div className="flex items-center gap-2 font-mono text-xs">
                 {activeExcerpt.questions.map((q, idx) => {
                   const isCurrent = focusIndex === idx;
                   const ans = answers[q.id];
@@ -1852,9 +1851,9 @@ export function FaustReadingLab({ lang }: { lang: Lang }) {
                       key={q.id}
                       type="button"
                       onClick={() => setFocusIndex(idx)}
-                      className={`h-5 w-5 rounded-full text-[10px] flex items-center justify-center font-bold cursor-pointer transition ${
+                      className={`h-6 w-6 rounded-full text-[11px] flex items-center justify-center font-bold cursor-pointer transition ${
                         isCurrent
-                          ? "bg-[var(--ink)] text-white shadow-2xs scale-110"
+                          ? "bg-[var(--ink)] text-white shadow-xs scale-110"
                           : ans
                           ? isCorr
                             ? "bg-emerald-100 text-emerald-800 border border-emerald-300"
