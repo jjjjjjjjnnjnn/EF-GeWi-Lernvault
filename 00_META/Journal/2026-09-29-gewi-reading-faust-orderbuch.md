@@ -36,18 +36,24 @@ tags: [EF, Meta, Journal, App, Deutsch, SoWi]
    - **左栏吸顶驻留（`lg:sticky lg:top-4 lg:self-start`）**：无论右侧试题如何展开，原著文本与逐行显微镜始终锁定在视口左侧伴读，彻底杜绝滚动后的左侧空白。
    - **左栏伴读高密增强**：新增 **会考黄金必背诗句直达书签（Kernzitate-Schnellzugriff）** 与 **高中会考能力层级（AFB I / II / III）考纲对照卡**。
 
-6. **用户交互反馈调优（全卷常开 + 消除外层跳动 + 诗句书签默认折叠）**：
+6. **用户交互反馈调优（全卷常开 + 诗句书签默认折叠）**：
    - **永久全卷展开（Permanent Stream View）**：彻底移除了复杂的单题焦点步进与视图切换按钮，进入即展示全部六维真题，并保留各题卡独立折叠（▲ 收起 / ▼ 展开）控制。
-   - **消除页面跳动与标签定位漂移**：移除了诗句直达书签点击时的 `el.scrollIntoView` 外层冒泡滚动，点击书签仅更新所选行号与精读显微镜高亮，不再拉动或跳转外层视口。
    - **黄金诗句板块默认折叠**：`bookmarksExpanded` 初始置为 `false`，界面首屏更加紧凑清爽，按需展开查阅。
+
+7. **诗歌栏目局部精确定位（仅内部滚动，外部窗口静止）**：
+   - 摒弃了会引发全页面或祖先容器联动滚动的 `scrollIntoView`，引入 `verseListRef` 诗歌栏滚动容器引用与各诗行节点引用。
+   - 通过 `getBoundingClientRect()` 计算目标行相对于诗歌卷轴的相对偏移量，调用 `container.scrollTo({ top, behavior: "smooth" })` 精确将目标诗行平滑居中到诗歌栏视野中。
+   - **零冒泡无外溢**：仅且只有诗歌列表框内部发生平滑滚动定位，外层大窗口、标签栏及页面全局完全纹丝不动。
 
 ## 2. 门禁验证
 
 - `cmd /c "npx tsc -b"`：0 错误，类型检查全绿。
-- `cmd /c "npm run build"`：6.35s 构建通过（dist 产物完整）。
+- `cmd /c "npm run build"`：5.42s 构建通过（dist 产物完整）。
 - `python scripts/vault-check.py`：PASS（notes=401, csv_rows=1599, index_links=337, reisen=271, 0 badnames, 0 badglossar）。
 - Commit 记录：
   - `0830bb2`: `[App] 重构微课文案解耦并新增歌德浮士德原著六维会考阅读工坊与订单簿教具`
   - `9a9a1cd`: `[SoWi] 优化证券存托研习步骤4为专属订单簿撮合与委托类型实操`
   - `474ae20`: `[App] 优化浮士德阅读工坊布局引入吸顶文本流单题聚焦模式与黄金诗句书签`
+  - `801a8ba`: `[App] 浮士德阅读工坊永久全卷展开并默认折叠诗句书签取消外层滚动`
+
 

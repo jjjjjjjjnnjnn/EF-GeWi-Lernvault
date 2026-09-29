@@ -3,7 +3,7 @@
 // 1. 典雅文献双栏架构：左侧高密度行号原著选段（Zeilennummerierung）+ 逐句交互释义与修辞高亮
 // 2. 六维真题考向解剖矩阵：内容(Inhalt)、主旨(Motiv)、情节(Handlung)、词汇(Wortschatz)、修辞(Stilmittel)、描写(Figurenzeichnung)
 // 3. 官方评卷期望标准（Erwartungshorizont / EHZ）+ 高中德语会考标准句式积木（Klausur-Formulierungshilfe）
-import { useState } from "react";
+import { useState, useRef } from "react";
 import type { Lang } from "../../i18n";
 
 export interface VerseItem {
@@ -844,9 +844,26 @@ export function FaustReadingLab({ lang }: { lang: Lang }) {
   // 会考黄金诗句定位板块：默认折叠
   const [bookmarksExpanded, setBookmarksExpanded] = useState<boolean>(false);
 
-  // 定位诗句：仅切换选中行及显微镜解析，绝不触发浏览器外层页面或标签页滚动移动
+  // 诗句滚动容器引用与各诗句节点引用（仅在诗歌栏目局部内平滑居中滚动，绝不拉扯外层页面）
+  const verseListRef = useRef<HTMLDivElement | null>(null);
+  const verseRefs = useRef<Record<number, HTMLDivElement | null>>({});
+
+  // 定位诗句：仅在诗歌栏目内部进行局部平滑滚动，并更新当前激活诗行与显微镜解析，外层大窗口和页面完全静止
   const jumpToVerse = (lineNum: number) => {
     setActiveVerseNum(lineNum);
+    const container = verseListRef.current;
+    const target = verseRefs.current[lineNum];
+    if (container && target) {
+      const containerRect = container.getBoundingClientRect();
+      const targetRect = target.getBoundingClientRect();
+      const relativeTop = targetRect.top - containerRect.top;
+      const targetScrollTop =
+        container.scrollTop + relativeTop - container.clientHeight / 2 + targetRect.height / 2;
+      container.scrollTo({
+        top: Math.max(0, targetScrollTop),
+        behavior: "smooth",
+      });
+    }
   };
 
   // 用户的答题记录
@@ -970,7 +987,10 @@ export function FaustReadingLab({ lang }: { lang: Lang }) {
           </div>
 
           {/* 诗句原著卷轴 */}
-          <div className="rounded-lg border border-[var(--line)] bg-[var(--paper)] p-3 sm:p-4 shadow-2xs font-serif divide-y divide-[var(--line)]/30 max-h-[36vh] sm:max-h-[38vh] overflow-y-auto select-none scroll-smooth">
+          <div
+            ref={verseListRef}
+            className="rounded-lg border border-[var(--line)] bg-[var(--paper)] p-3 sm:p-4 shadow-2xs font-serif divide-y divide-[var(--line)]/30 max-h-[36vh] sm:max-h-[38vh] overflow-y-auto select-none scroll-smooth"
+          >
             {activeExcerpt.verses.map((verse) => {
               const isSelected = verse.lineNum === activeVerseNum;
               const hasStilmittel = !!verse.stilmittel;
@@ -991,6 +1011,9 @@ export function FaustReadingLab({ lang }: { lang: Lang }) {
               return (
                 <div
                   key={verse.lineNum}
+                  ref={(el) => {
+                    verseRefs.current[verse.lineNum] = el;
+                  }}
                   onClick={() => setActiveVerseNum(verse.lineNum)}
                   className={`group py-1.5 px-2 rounded transition cursor-pointer flex items-baseline gap-3 text-sm leading-relaxed ${
                     isSelected
