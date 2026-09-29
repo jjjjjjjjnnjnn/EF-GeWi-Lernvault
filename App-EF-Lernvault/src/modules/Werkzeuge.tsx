@@ -4,12 +4,12 @@ import { FAECHER, type FachId } from "../fach";
 import { getToolsForFach, getFachDidaktik, type DidaktikToolId } from "../engine/fachDidaktik";
 import { SatzbauLego } from "../components/pedagogy/SatzbauLego";
 import { BalanceBoard } from "../components/pedagogy/BalanceBoard";
-import { TextHighlighter } from "../components/pedagogy/TextHighlighter";
 import { TangentSlider } from "../components/pedagogy/TangentSlider";
 import FormulaScaffold from "../components/pedagogy/FormulaScaffold";
 import OralExamTimer from "../components/pedagogy/OralExamTimer";
 import { MarktMechanismusSim } from "../components/pedagogy/MarktMechanismusSim";
 import { KinematikSim } from "../components/pedagogy/KinematikSim";
+import { GeWiReadingLab } from "../components/pedagogy/GeWiReadingLab";
 
 interface WerkzeugeProps {
   lang: Lang;
@@ -76,12 +76,12 @@ const TOOLS_CONFIG: ToolMeta[] = [
   },
   {
     id: "highlighter",
-    nameDE: "Text-Dekonstruierer",
-    nameZH: "文本解构",
-    descDE: "Mehrfarbige Textanalyse: Zerlege Primärquellen in Thesen, Argumente, Belege & rhetorische Mittel.",
-    descZH: "多维荧光文本解构：拆解原著与论述文之核心论点、论据链条、证据引用与修辞手法。",
-    badgeDE: "Deutsch & Englisch",
-    badgeZH: "德语 / 英语",
+    nameDE: "Textanalyse-Labor",
+    nameZH: "原典解剖台",
+    descDE: "Klausurrelevante Primärtext-Analyse: Zeilenweise Mikroskop-Exegese, Stilmittel-Erkennung & 14-Punkte-Klausurdiagnose.",
+    descZH: "考纲重点原典解剖：逐行显微镜字句对照、纯色修辞定性与 14 分会考真题结构化深度诊断。",
+    badgeDE: "Geisteswissenschaften",
+    badgeZH: "文科 / 社科",
     icon: (
       <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" className="h-4 w-4">
         <path d="M11.2 2.3l2.5 2.5-7.6 7.6-3.3.8.8-3.3 7.6-7.6zM9.8 3.7l2.5 2.5" />
@@ -357,9 +357,19 @@ export default function Werkzeuge({
             )}
 
             {activeTool === "highlighter" && (
-              <TextHighlighter
+              <GeWiReadingLab
                 lang={lang}
-                onAnalysisGenerated={(analysis) => setLatestOutput(analysis)}
+                filterFach={
+                  currentFach === "Deutsch"
+                    ? "Deutsch"
+                    : currentFach === "Philosophie"
+                    ? "Philosophie"
+                    : currentFach === "SoWi"
+                    ? "SoWi"
+                    : currentFach === "Englisch"
+                    ? "Englisch"
+                    : "alle"
+                }
               />
             )}
 

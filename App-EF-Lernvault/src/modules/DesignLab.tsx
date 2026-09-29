@@ -5,7 +5,7 @@
 import { useState } from "react";
 import type { Lang } from "../i18n";
 import { SowiDepotLecture } from "../components/pedagogy/SowiDepotLecture";
-import { FaustReadingLab } from "../components/pedagogy/FaustReadingLab";
+import { GeWiReadingLab } from "../components/pedagogy/GeWiReadingLab";
 
 export type DesignDemoId = "faust-reading" | "sowi-depot";
 
@@ -20,10 +20,10 @@ interface DemoOption {
 const DEMO_OPTIONS: DemoOption[] = [
   {
     id: "faust-reading",
-    nameDE: "Faust I: Textanalyse",
-    nameZH: "歌德《浮士德 I》原著精读",
+    nameDE: "GeWi: Textanalyse-Labor",
+    nameZH: "文科原典精读 · 六维会考工坊",
     taglineDE: "Originaltext & 6 Klausur-Dimensionen",
-    taglineZH: "原著诗剧细读与六维会考真题",
+    taglineZH: "涵盖歌德/毕希纳/康德/施泰因迈尔/莎士比亚原典细读",
   },
   {
     id: "sowi-depot",
@@ -86,7 +86,7 @@ export function DesignLab({ lang }: { lang: Lang }) {
 
       {/* 动态实验 Demo 舞台 */}
       <div className="transition-all duration-200">
-        {currentDemo === "faust-reading" && <FaustReadingLab lang={lang} />}
+        {currentDemo === "faust-reading" && <GeWiReadingLab lang={lang} />}
         {currentDemo === "sowi-depot" && <SowiDepotLecture lang={lang} />}
       </div>
     </div>

@@ -45,7 +45,7 @@ import { OpticsBench } from "../components/pedagogy/OpticsBench";
 import { TitrationLab } from "../components/pedagogy/TitrationLab";
 import { BoxOptimizerLab } from "../components/pedagogy/BoxOptimizerLab";
 import { MarktWelfareLab } from "../components/pedagogy/MarktWelfareLab";
-import { EditorialReader } from "../components/pedagogy/EditorialReader";
+import { GeWiReadingLab } from "../components/pedagogy/GeWiReadingLab";
 import { BentoMastery } from "../components/pedagogy/BentoMastery";
 import { SowiDepotLecture } from "../components/pedagogy/SowiDepotLecture";
 import { OrderbuchSimulator } from "../components/pedagogy/OrderbuchSimulator";
@@ -362,7 +362,7 @@ function renderEmbeddedTool(toolName: string, lang: Lang, fach: string, thema?: 
     );
   }
 
-  // 5. SOWI & PHILO TOOLS (MarktWelfareLab + DilemmaTheatre)
+  // 5. SOWI & PHILO TOOLS (MarktWelfareLab + GeWiReadingLab + DilemmaTheatre)
   if (f.includes("sowi") || f.includes("philo") || f.includes("philosophie")) {
     if (t === "markt" || t === "markt-sim" || t === "marktwirtschaft" || t === "preisbildung" || t === "angebot" || t === "nachfrage" || t === "welfare" || t === "wohlfahrt") {
       return (
@@ -371,7 +371,21 @@ function renderEmbeddedTool(toolName: string, lang: Lang, fach: string, thema?: 
         </div>
       );
     }
-    if (t === "dilemma" || t === "ethik" || t === "trolley" || t === "kant" || t === "bentham" || t === "konflikt") {
+    if (t === "kant" || t === "kategorisch" || (f.includes("philo") && (thema?.toLowerCase().includes("kant") || thema?.toLowerCase().includes("pflicht") || thema?.toLowerCase().includes("imperativ")))) {
+      return (
+        <div className="my-3 p-3.5 border border-[var(--line)] bg-[var(--surface)] rounded-[var(--radius)]">
+          <GeWiReadingLab lang={lang} defaultExcerptId="kant-kategorisch" filterFach="Philosophie" compact={true} />
+        </div>
+      );
+    }
+    if (t === "rede" || t === "steinmeier" || (f.includes("sowi") && (thema?.toLowerCase().includes("rede") || thema?.toLowerCase().includes("demokratie")))) {
+      return (
+        <div className="my-3 p-3.5 border border-[var(--line)] bg-[var(--surface)] rounded-[var(--radius)]">
+          <GeWiReadingLab lang={lang} defaultExcerptId="steinmeier-rede" filterFach="SoWi" compact={true} />
+        </div>
+      );
+    }
+    if (t === "dilemma" || t === "ethik" || t === "trolley" || t === "bentham" || t === "konflikt") {
       return (
         <div className="my-3 p-3.5 border border-[var(--line)] bg-[var(--surface)] rounded-[var(--radius)]">
           <DilemmaTheatre lang={lang} scenarioId={f.includes("sowi") ? "sowi-mindestlohn" : "philo-trolley"} />
@@ -406,12 +420,23 @@ function renderEmbeddedTool(toolName: string, lang: Lang, fach: string, thema?: 
     );
   }
 
-  // 6. DEUTSCH & ENGLISCH TOOLS (EditorialReader + DilemmaTheatre)
+  // 6. DEUTSCH & ENGLISCH TOOLS (GeWiReadingLab + DilemmaTheatre)
   if (f.includes("deutsch") || f.includes("englisch") || f.includes("english")) {
-    if (t === "reader" || t === "originaltext" || t === "text-analyse" || t === "faust" || t === "drama") {
+    if (t === "reader" || t === "originaltext" || t === "text-analyse" || t === "faust" || t === "drama" || t === "woyzeck" || t === "shakespeare") {
+      let defaultExcerpt = "faust-monolog";
+      const th = (thema || "").toLowerCase();
+      if (th.includes("woyzeck") || t === "woyzeck") defaultExcerpt = "woyzeck-rasieren";
+      else if (th.includes("macbeth") || th.includes("shakespeare") || f.includes("engl") || t === "shakespeare") defaultExcerpt = "macbeth-soliloquy";
+      else if (th.includes("pakt") || th.includes("wette")) defaultExcerpt = "faust-pakt";
+
       return (
         <div className="my-3 p-3.5 border border-[var(--line)] bg-[var(--surface)] rounded-[var(--radius)]">
-          <EditorialReader lang={lang} />
+          <GeWiReadingLab
+            lang={lang}
+            defaultExcerptId={defaultExcerpt}
+            filterFach={f.includes("engl") ? "Englisch" : "Deutsch"}
+            compact={true}
+          />
         </div>
       );
     }
@@ -435,7 +460,12 @@ function renderEmbeddedTool(toolName: string, lang: Lang, fach: string, thema?: 
     }
     return (
       <div className="my-3 p-3.5 border border-[var(--line)] bg-[var(--surface)] rounded-[var(--radius)]">
-        <EditorialReader lang={lang} />
+        <GeWiReadingLab
+          lang={lang}
+          defaultExcerptId={f.includes("engl") ? "macbeth-soliloquy" : "faust-monolog"}
+          filterFach={f.includes("engl") ? "Englisch" : "Deutsch"}
+          compact={true}
+        />
       </div>
     );
   }
