@@ -1204,16 +1204,6 @@ export function FaustReadingLab({ lang }: { lang: Lang }) {
   const [selectedExcerptId, setSelectedExcerptId] = useState<string>("nacht-monolog");
   // 当前激活选中的诗行号（用于左侧点亮与右侧详情联动）
   const [activeVerseNum, setActiveVerseNum] = useState<number>(354);
-  // 高亮显示模式开关
-  const [highlightMode, setHighlightMode] = useState<"all" | "stilmittel" | "vocab" | "tone">("stilmittel");
-  // 选中的考向维度标签
-  const [activeDimension, setActiveDimension] = useState<
-    "all" | "inhalt" | "motiv" | "handlung" | "wortschatz" | "stilmittel" | "figuren"
-  >("all");
-  // 全卷展开模式下各题独立折叠状态 (默认全卷展开)
-  const [collapsedQuestions, setCollapsedQuestions] = useState<Record<string, boolean>>({});
-  // 会考黄金诗句定位板块：默认折叠
-  const [bookmarksExpanded, setBookmarksExpanded] = useState<boolean>(false);
 
   // 诗句滚动容器引用与各诗句节点引用（仅在诗歌栏目局部内平滑居中滚动，绝不拉扯外层页面）
   const verseListRef = useRef<HTMLDivElement | null>(null);
@@ -1243,23 +1233,21 @@ export function FaustReadingLab({ lang }: { lang: Lang }) {
   const [showEHZ, setShowEHZ] = useState<Record<string, boolean>>({});
   // 复制提示
   const [copiedId, setCopiedId] = useState<string | null>(null);
+  // 当前聚焦的考题索引 (0 - 5)
+  const [focusIndex, setFocusIndex] = useState<number>(0);
+  // 是否全卷展开模式
+  const [streamMode, setStreamMode] = useState<boolean>(false);
 
   const activeExcerpt = EXCERPTS.find((e) => e.id === selectedExcerptId) ?? EXCERPTS[0];
   const activeVerse = activeExcerpt.verses.find((v) => v.lineNum === activeVerseNum) ?? activeExcerpt.verses[0];
+  const currentQ = activeExcerpt.questions[focusIndex] || activeExcerpt.questions[0];
 
-  // 过滤当前维度的问题
-  const filteredQuestions =
-    activeDimension === "all"
-      ? activeExcerpt.questions
-      : activeExcerpt.questions.filter((q) => q.dimension === activeDimension);
-
-  // 选段切换处理：重置诗行、维度、折叠状态并滚动至顶部
+  // 选段切换处理：重置诗行、题目索引并滚动至顶部
   const handleSelectExcerpt = (id: string) => {
     setSelectedExcerptId(id);
     const target = EXCERPTS.find((e) => e.id === id) ?? EXCERPTS[0];
     setActiveVerseNum(target.verses[0].lineNum);
-    setActiveDimension("all");
-    setCollapsedQuestions({});
+    setFocusIndex(0);
     if (verseListRef.current) {
       verseListRef.current.scrollTop = 0;
     }
@@ -1272,133 +1260,68 @@ export function FaustReadingLab({ lang }: { lang: Lang }) {
   };
 
   return (
-    <div className="font-sans text-[var(--ink)] space-y-4">
-      {/* 典雅顶栏：文献信息 + 显眼易选的选段切换器 */}
-      <div className="border-b border-[var(--line)] pb-3 space-y-2.5">
-        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
-          <div>
-            <div className="flex items-center gap-2">
-              <h2 className="font-serif text-xl font-bold tracking-tight text-[var(--ink)]">
-                Johann Wolfgang von Goethe: <span className="italic">Faust I</span>
-              </h2>
-              <span className="text-[10px] font-mono text-[var(--gray)] bg-[var(--paper-subtle)] px-2 py-0.5 border border-[var(--line)] rounded">
-                EF/Q1 · Aufgabentyp 1A
-              </span>
-            </div>
-            <div className="text-xs font-serif italic text-[var(--gray)] mt-0.5">
-              {de ? activeExcerpt.sceneTitleDE : activeExcerpt.sceneTitleZH} · {activeExcerpt.versesRange}
-            </div>
-          </div>
-
-          {/* 醒目的选段切换 Segmented Controls */}
-          <div className="inline-flex rounded-md border border-[var(--line)] bg-[var(--paper-subtle)] p-1 shadow-2xs self-start sm:self-auto">
-            {EXCERPTS.map((ex) => {
-              const isCurrent = selectedExcerptId === ex.id;
-              return (
-                <button
-                  key={ex.id}
-                  type="button"
-                  onClick={() => handleSelectExcerpt(ex.id)}
-                  className={`flex items-center gap-1.5 px-3 py-1.5 rounded text-xs font-mono transition cursor-pointer ${
-                    isCurrent
-                      ? "bg-[var(--surface)] text-[var(--ink)] font-bold shadow-2xs border border-[var(--line)]"
-                      : "text-[var(--gray)] hover:text-[var(--ink)]"
-                  }`}
-                >
-                  <span>{ex.id === "nacht-monolog" ? "📜" : "⚡"}</span>
-                  <span>
-                    {de
-                      ? ex.id === "nacht-monolog"
-                        ? "Nacht (V. 354–385)"
-                        : "Studierzimmer (V. 1692–1711)"
-                      : ex.id === "nacht-monolog"
-                      ? "学者独白 (V. 354–385)"
-                      : "书斋立约 (V. 1692–1711)"}
-                  </span>
-                </button>
-              );
-            })}
-          </div>
+    <div className="font-sans text-[var(--ink)] space-y-3">
+      {/* 极简顶栏：歌德《浮士德 I》+ 选段切换 */}
+      <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 border-b border-[var(--line)] pb-2.5">
+        <div className="flex items-center gap-2">
+          <span className="font-serif font-bold text-base text-[var(--ink)]">
+            Johann Wolfgang von Goethe: <span className="italic">Faust I</span>
+          </span>
+          <span className="text-[10px] font-mono text-[var(--gray)] bg-[var(--paper-subtle)] px-1.5 py-0.5 rounded border border-[var(--line)]">
+            EF/Q1
+          </span>
+          <span className="text-xs text-[var(--gray)] font-serif italic hidden sm:inline">
+            {de ? activeExcerpt.sceneTitleDE.split("//")[0] : activeExcerpt.sceneTitleZH}
+          </span>
         </div>
 
-        {/* 紧凑优雅的戏剧背景栏 */}
-        <div className="text-xs text-[var(--ink-muted)] bg-[var(--paper-subtle)] px-3 py-1.5 rounded border border-[var(--line)]/60 flex items-baseline gap-2">
-          <strong className="text-[var(--ink)] shrink-0 font-sans">{de ? "Dramatischer Kontext:" : "戏剧背景:"}</strong>
-          <span className="leading-relaxed">{de ? activeExcerpt.contextDE : activeExcerpt.contextZH}</span>
+        {/* 选段切换 */}
+        <div className="inline-flex rounded border border-[var(--line)] bg-[var(--paper-subtle)] p-0.5 text-xs font-mono self-start sm:self-auto">
+          {EXCERPTS.map((ex) => {
+            const isCurrent = selectedExcerptId === ex.id;
+            return (
+              <button
+                key={ex.id}
+                type="button"
+                onClick={() => handleSelectExcerpt(ex.id)}
+                className={`px-3 py-1 rounded transition cursor-pointer font-medium ${
+                  isCurrent
+                    ? "bg-[var(--surface)] text-[var(--ink)] font-bold shadow-2xs border border-[var(--line)]"
+                    : "text-[var(--gray)] hover:text-[var(--ink)]"
+                }`}
+              >
+                {ex.id === "nacht-monolog" ? "📜 学者独白" : "⚡ 书斋立约"} ({ex.versesRange})
+              </button>
+            );
+          })}
         </div>
       </div>
 
-      {/* 核心双栏阅读解剖工作台 */}
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+      {/* 核心双栏精读解剖台 */}
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-5 items-start">
         {/* ================================================================= */}
-        {/* 左栏 (6列): 原著典籍文本流 + 逐行号交互高亮与显微镜 (Sticky 吸顶驻留) */}
+        {/* 左栏 (6列): 原著诗剧精读 + 逐行显微镜 */}
         {/* ================================================================= */}
-        <div className="lg:col-span-6 lg:sticky lg:top-4 lg:self-start space-y-3">
-          {/* 原文工具栏：显色过滤器 */}
-          <div className="flex flex-wrap items-center justify-between gap-2 border-b border-[var(--line)]/60 pb-2 text-xs font-mono">
+        <div className="lg:col-span-6 space-y-2.5">
+          {/* 原文工具栏 */}
+          <div className="flex items-center justify-between text-xs font-mono border-b border-[var(--line)]/60 pb-1">
             <span className="font-bold text-[var(--ink)]">
-              {de ? "Goethes Originaltext (Kritische Edition)" : "歌德德语原版诗剧正文"}
+              {de ? "Originaltext (Goethe)" : "原著德语诗剧正文"}
             </span>
-
-            <div className="flex items-center gap-1 text-[10px]">
-              <span className="text-[var(--gray)] mr-1">{de ? "Filter:" : "文本透视:"}</span>
-              <button
-                type="button"
-                onClick={() => setHighlightMode("stilmittel")}
-                className={`px-1.5 py-0.5 rounded border cursor-pointer ${
-                  highlightMode === "stilmittel"
-                    ? "bg-amber-100 text-amber-950 border-amber-300 font-bold"
-                    : "bg-[var(--surface)] text-[var(--gray)] border-[var(--line)]"
-                }`}
-              >
-                🎨 {de ? "Stilmittel" : "修辞手法"}
-              </button>
-              <button
-                type="button"
-                onClick={() => setHighlightMode("vocab")}
-                className={`px-1.5 py-0.5 rounded border cursor-pointer ${
-                  highlightMode === "vocab"
-                    ? "bg-blue-100 text-blue-950 border-blue-300 font-bold"
-                    : "bg-[var(--surface)] text-[var(--gray)] border-[var(--line)]"
-                }`}
-              >
-                📖 {de ? "Schlüsselbegriffe" : "考纲词汇"}
-              </button>
-              <button
-                type="button"
-                onClick={() => setHighlightMode("tone")}
-                className={`px-1.5 py-0.5 rounded border cursor-pointer ${
-                  highlightMode === "tone"
-                    ? "bg-rose-100 text-rose-950 border-rose-300 font-bold"
-                    : "bg-[var(--surface)] text-[var(--gray)] border-[var(--line)]"
-                }`}
-              >
-                ⚡ {de ? "Seelenzustand" : "心境裂变"}
-              </button>
-            </div>
+            <span className="text-[10px] text-[var(--gray)]">
+              {de ? "Klick auf Zeile zum Analysieren" : "点击诗行即可释义"}
+            </span>
           </div>
 
           {/* 诗句原著卷轴 */}
           <div
             ref={verseListRef}
-            className="rounded-lg border border-[var(--line)] bg-[var(--paper)] p-3 sm:p-4 shadow-2xs font-serif divide-y divide-[var(--line)]/30 h-[340px] sm:h-[360px] overflow-y-auto select-none scroll-smooth"
+            className="rounded-lg border border-[var(--line)] bg-[var(--paper)] p-3 shadow-2xs font-serif divide-y divide-[var(--line)]/20 h-[360px] overflow-y-auto select-none scroll-smooth"
           >
             {activeExcerpt.verses.map((verse) => {
               const isSelected = verse.lineNum === activeVerseNum;
               const hasStilmittel = !!verse.stilmittel;
               const hasVocab = !!verse.vocab;
-
-              // 根据透视模式动态匹配底色
-              let badgeColor = "";
-              if (highlightMode === "stilmittel" && hasStilmittel) {
-                badgeColor = "bg-amber-50/80 border-l-2 border-amber-500 pl-2";
-              } else if (highlightMode === "vocab" && hasVocab) {
-                badgeColor = "bg-blue-50/80 border-l-2 border-blue-500 pl-2";
-              } else if (highlightMode === "tone") {
-                if (verse.toneCategory === "krise") badgeColor = "bg-rose-50/60 border-l-2 border-rose-500 pl-2";
-                if (verse.toneCategory === "spott") badgeColor = "bg-purple-50/60 border-l-2 border-purple-500 pl-2";
-                if (verse.toneCategory === "titanismus") badgeColor = "bg-emerald-50/60 border-l-2 border-emerald-600 pl-2";
-              }
 
               return (
                 <div
@@ -1411,14 +1334,14 @@ export function FaustReadingLab({ lang }: { lang: Lang }) {
                     isSelected
                       ? "bg-[var(--paper-subtle)] ring-1 ring-[var(--ink)] font-semibold"
                       : "hover:bg-[var(--surface)]"
-                  } ${badgeColor}`}
+                  }`}
                 >
-                  {/* 行号 (Zeilennummerierung) */}
+                  {/* 行号 */}
                   <span className="font-mono text-[10px] text-[var(--gray)]/80 w-8 shrink-0 text-right select-none">
                     {verse.lineNum % 5 === 0 || isSelected ? verse.lineNum : ""}
                   </span>
 
-                  {/* 德语原诗 + 中文对照 */}
+                  {/* 德语原诗 + 中文对照 (悬停显示翻译) */}
                   <div className="flex-1 min-w-0">
                     <span className="text-[var(--ink)] tracking-wide">{verse.textDE}</span>
                     <span className="ml-2 font-sans text-xs text-[var(--gray)] opacity-0 group-hover:opacity-100 transition-opacity">
@@ -1466,9 +1389,6 @@ export function FaustReadingLab({ lang }: { lang: Lang }) {
                     </span>
                   )}
                 </div>
-                <span className="text-[10px] text-[var(--gray)] font-mono">
-                  {de ? "Klick auf beliebige Zeile zum Wechseln" : "点击任意行即可切换解析"}
-                </span>
               </div>
 
               {/* 逐句直译与诗意精析 */}
@@ -1505,325 +1425,288 @@ export function FaustReadingLab({ lang }: { lang: Lang }) {
                   </div>
                 </div>
               )}
-
-              {/* 历史哲学注疏 */}
-              {activeVerse.commentDE && (
-                <div className="text-[11px] text-[var(--gray)] font-serif italic pt-1 border-t border-[var(--line)]/40">
-                  💡 {de ? activeVerse.commentDE : activeVerse.commentZH}
-                </div>
-              )}
             </div>
           )}
 
-          {/* 📌 会考核心黄金诗句快速直达书签 (默认折叠) */}
-          <div className="rounded-md border border-[var(--line)] bg-[var(--surface)] p-2.5 text-xs font-mono transition-all">
-            <button
-              type="button"
-              onClick={() => setBookmarksExpanded(!bookmarksExpanded)}
-              className="w-full flex items-center justify-between text-[10px] text-[var(--gray)] uppercase cursor-pointer hover:text-[var(--ink)]"
-            >
-              <span className="font-bold text-[var(--ink)] flex items-center gap-1.5">
-                <span>📌</span>
-                <span>{de ? "Abitur-Kernzitate Schnellzugriff" : "会考必背黄金诗句定位"}</span>
-              </span>
-              <span className="flex items-center gap-1 text-[11px]">
-                <span>{bookmarksExpanded ? "▲" : "▼"}</span>
-                <span>{bookmarksExpanded ? (de ? "Einklappen" : "收起") : (de ? "Ausklappen" : "展开")}</span>
-              </span>
-            </button>
-
-            {bookmarksExpanded && (
-              <div className="mt-2 pt-2 border-t border-[var(--line)]/50 flex flex-wrap gap-1">
-                {(BOOKMARKS[activeExcerpt.id] || []).map((bm) => (
-                  <button
-                    key={bm.lineNum}
-                    type="button"
-                    onClick={() => jumpToVerse(bm.lineNum)}
-                    className={`px-1.5 py-0.5 text-[10px] rounded border cursor-pointer transition ${
-                      activeVerseNum === bm.lineNum
-                        ? "bg-[var(--ink)] text-white border-[var(--ink)] font-bold shadow-2xs"
-                        : "bg-[var(--paper-subtle)] text-[var(--gray)] border-[var(--line)] hover:border-[var(--gray)] hover:text-[var(--ink)]"
-                    }`}
-                  >
-                    {de ? bm.labelDE : bm.labelZH}
-                  </button>
-                ))}
-              </div>
-            )}
-          </div>
-
-          {/* 🏛️ 考纲能力层级 (AFB I / II / III) 对照速查指南 */}
-          <div className="rounded-md border border-[var(--line)] bg-[var(--paper-subtle)] p-2 text-[10px] text-[var(--gray)] font-mono space-y-1">
-            <div className="font-bold text-[var(--ink)] uppercase">
-              § {de ? "Gymnasiale Operatoren & AFB-Stufen" : "高中德语会考三大能力层级 (AFB)"}
-            </div>
-            <div className="grid grid-cols-3 gap-1.5 pt-0.5 text-[9px] text-[var(--ink)]">
-              <div className="p-1 rounded bg-[var(--surface)] border border-[var(--line)]/60">
-                <div className="font-bold text-blue-900">AFB I · 事实再现</div>
-                <div className="text-[var(--gray)] leading-tight">nennen, wiedergeben</div>
-              </div>
-              <div className="p-1 rounded bg-[var(--surface)] border border-[var(--line)]/60">
-                <div className="font-bold text-amber-900">AFB II · 重构分析</div>
-                <div className="text-[var(--gray)] leading-tight">analysieren, einordnen</div>
-              </div>
-              <div className="p-1 rounded bg-[var(--surface)] border border-[var(--line)]/60">
-                <div className="font-bold text-rose-900">AFB III · 评判反思</div>
-                <div className="text-[var(--gray)] leading-tight">beurteilen, deuten</div>
-              </div>
-            </div>
+          {/* 黄金诗句快速定位 */}
+          <div className="flex items-center gap-1.5 flex-wrap text-xs font-mono pt-0.5">
+            <span className="text-[10px] text-[var(--gray)] font-bold">📌 {de ? "Kernzitate:" : "黄金诗句:"}</span>
+            {(BOOKMARKS[activeExcerpt.id] || []).map((bm) => (
+              <button
+                key={bm.lineNum}
+                type="button"
+                onClick={() => jumpToVerse(bm.lineNum)}
+                className={`px-1.5 py-0.5 text-[10px] rounded border cursor-pointer transition ${
+                  activeVerseNum === bm.lineNum
+                    ? "bg-[var(--ink)] text-white border-[var(--ink)] font-bold"
+                    : "bg-[var(--paper-subtle)] text-[var(--gray)] border-[var(--line)] hover:border-[var(--gray)] hover:text-[var(--ink)]"
+                }`}
+              >
+                {de ? bm.labelDE : bm.labelZH}
+              </button>
+            ))}
           </div>
         </div>
 
         {/* ================================================================= */}
-        {/* 右栏 (6列): 会考六大考查维度答题训练矩阵 (Die 6 Prüfungsdimensionen) */}
+        {/* 右栏 (6列): 会考真题解剖矩阵 (单题聚焦模式，杜绝字海) */}
         {/* ================================================================= */}
-        <div className="lg:col-span-6 space-y-4">
+        <div className="lg:col-span-6 space-y-2.5">
           {/* 六大考向维度导航 */}
-          <div className="border-b border-[var(--line)]/60 pb-2.5 space-y-2">
-            <div className="flex items-center justify-between text-xs font-mono">
-              <span className="font-bold text-[var(--ink)]">
-                {de ? "Klausur-Fragenmatrix (Abitur-Standard)" : "六维会考真题解剖矩阵"}
-              </span>
-              <span className="text-[10px] text-[var(--gray)]">
-                {filteredQuestions.length} {de ? "Aufgaben · Vollständige Prüfung" : "道题 · 全卷展开"}
-              </span>
-            </div>
-
-            {/* 维度选项卡 */}
-            <div className="flex flex-wrap gap-1">
-              {[
-                { id: "all", labelDE: "Alle", labelZH: "全部" },
-                { id: "inhalt", labelDE: "1. Inhalt", labelZH: "1. 内容" },
-                { id: "motiv", labelDE: "2. Motiv", labelZH: "2. 主旨" },
-                { id: "handlung", labelDE: "3. Handlung", labelZH: "3. 情节" },
-                { id: "wortschatz", labelDE: "4. Sprache", labelZH: "4. 词汇" },
-                { id: "stilmittel", labelDE: "5. Stil", labelZH: "5. 修辞" },
-                { id: "figuren", labelDE: "6. Psyche", labelZH: "6. 描写" },
-              ].map((dim) => {
-                const count =
-                  dim.id === "all"
-                    ? activeExcerpt.questions.length
-                    : activeExcerpt.questions.filter((q) => q.dimension === dim.id).length;
+          <div className="flex items-center justify-between border-b border-[var(--line)]/60 pb-1">
+            <div className="flex items-center gap-1 overflow-x-auto">
+              {activeExcerpt.questions.map((q, idx) => {
+                const isSelected = focusIndex === idx;
+                const isAnswered = !!answers[q.id];
                 return (
                   <button
-                    key={dim.id}
+                    key={q.id}
                     type="button"
-                    onClick={() => setActiveDimension(dim.id as any)}
-                    className={`px-2 py-0.5 rounded text-[11px] font-mono border cursor-pointer transition ${
-                      activeDimension === dim.id
+                    onClick={() => {
+                      setFocusIndex(idx);
+                      setStreamMode(false);
+                    }}
+                    className={`px-2.5 py-1 rounded text-xs font-mono border cursor-pointer transition whitespace-nowrap ${
+                      isSelected && !streamMode
                         ? "bg-[var(--ink)] text-white border-[var(--ink)] font-bold shadow-2xs"
                         : "bg-[var(--surface)] text-[var(--gray)] border-[var(--line)] hover:border-[var(--gray)]"
                     }`}
                   >
-                    <span>{de ? dim.labelDE : dim.labelZH}</span>
-                    <span className="ml-1 opacity-75 text-[10px]">({count})</span>
+                    <span>{idx + 1}. {q.titleZH.split("：")[0].split(".")[1]?.trim() || q.dimension}</span>
+                    {isAnswered && <span className="ml-1 text-emerald-500 font-bold">✓</span>}
                   </button>
                 );
               })}
             </div>
+
+            <button
+              type="button"
+              onClick={() => setStreamMode(!streamMode)}
+              className="text-[11px] font-mono text-[var(--gray)] hover:text-[var(--ink)] cursor-pointer shrink-0 ml-2"
+            >
+              {streamMode ? (de ? "🎯 Fokus" : "🎯 逐题聚焦") : (de ? "📑 Alle" : "📑 全卷展开")}
+            </button>
           </div>
 
-          {/* 考题全卷展开流 */}
-          <div className="space-y-4">
-            {filteredQuestions.map((q) => {
-              const selectedOptionId = answers[q.id];
-              const isAnswered = !!selectedOptionId;
-              const chosenOption = q.options.find((o) => o.id === selectedOptionId);
-              const isCorrect = chosenOption?.isCorrect ?? false;
-              const isEHZOpen = showEHZ[q.id] ?? false;
-              const isCollapsed = !!collapsedQuestions[q.id];
+          {/* 试题展示区 */}
+          {streamMode ? (
+            /* 全卷展开流 */
+            <div className="space-y-3">
+              {activeExcerpt.questions.map((q) => {
+                const selectedOptId = answers[q.id];
+                const isAns = !!selectedOptId;
+                const chosen = q.options.find((o) => o.id === selectedOptId);
+                const isCorr = chosen?.isCorrect ?? false;
 
-              if (isCollapsed) {
                 return (
-                  <div
-                    key={q.id}
-                    onClick={() =>
-                      setCollapsedQuestions({ ...collapsedQuestions, [q.id]: false })
-                    }
-                    className="flex items-center justify-between text-xs font-mono p-3 bg-[var(--surface)] rounded border border-[var(--line)] hover:border-[var(--gray)] cursor-pointer transition shadow-2xs"
-                  >
-                    <div className="flex items-center gap-2">
-                      <span className="font-bold text-[var(--ink)]">
-                        {de ? q.titleDE : q.titleZH}
-                      </span>
-                      <span className="text-[10px] text-[var(--gray)]">({q.afb})</span>
-                    </div>
-                    <div className="flex items-center gap-3">
-                      <span
-                        className={`text-[10px] font-bold ${
-                          isAnswered ? "text-emerald-800" : "text-[var(--gray)]"
-                        }`}
-                      >
-                        {isAnswered
-                          ? de
-                            ? "✓ Beantwortet"
-                            : "✓ 已作答"
-                          : de
-                          ? "Ausstehend"
-                          : "待作答"}
-                      </span>
-                      <span className="text-[var(--gray)] text-[11px]">▼ {de ? "Ausklappen" : "展开"}</span>
-                    </div>
-                  </div>
-                );
-              }
-
-              return (
-                <div
-                  key={q.id}
-                  className="rounded-lg border border-[var(--line)] bg-[var(--surface)] p-4 shadow-2xs space-y-3 transition-all"
-                >
-                  {/* 题头眉标 */}
-                  <div className="flex items-center justify-between text-xs font-mono">
-                    <div className="flex items-center gap-2">
-                      <span className="font-bold text-[var(--ink)]">
-                        {de ? q.titleDE : q.titleZH}
-                      </span>
-                      <span className="px-1.5 py-0.2 rounded bg-[var(--paper-subtle)] text-[var(--gray)] border border-[var(--line)] text-[10px]">
+                  <div key={q.id} className="rounded-lg border border-[var(--line)] bg-[var(--surface)] p-3.5 shadow-2xs space-y-2.5">
+                    <div className="flex items-center justify-between text-xs font-mono">
+                      <span className="font-bold text-[var(--ink)]">{q.titleZH}</span>
+                      <span className="px-1.5 py-0.5 rounded bg-[var(--paper-subtle)] text-[var(--gray)] border border-[var(--line)] text-[10px]">
                         {q.afb}
                       </span>
                     </div>
 
+                    <p className="font-serif text-[13px] leading-relaxed text-[var(--ink)]">
+                      {q.questionZH}
+                    </p>
+
+                    <div className="space-y-1.5 pt-0.5">
+                      {q.options.map((opt) => {
+                        const isThis = selectedOptId === opt.id;
+                        let style = "border-[var(--line)] bg-[var(--paper)] text-[var(--ink)] hover:border-[var(--gray)]";
+                        if (isAns) {
+                          if (opt.isCorrect) style = "border-emerald-500 bg-emerald-50/80 text-emerald-950 font-medium ring-1 ring-emerald-500";
+                          else if (isThis) style = "border-rose-400 bg-rose-50 text-rose-950 line-through";
+                          else style = "border-[var(--line)] bg-[var(--paper-subtle)] opacity-50";
+                        }
+                        return (
+                          <button
+                            key={opt.id}
+                            type="button"
+                            disabled={isAns}
+                            onClick={() => setAnswers({ ...answers, [q.id]: opt.id })}
+                            className={`w-full text-left p-2.5 rounded-md border text-xs leading-relaxed transition cursor-pointer flex items-start gap-2 ${style}`}
+                          >
+                            <span className="font-mono font-bold shrink-0 mt-0.5">{opt.id.toUpperCase()}.</span>
+                            <span>{opt.textZH}</span>
+                          </button>
+                        );
+                      })}
+                    </div>
+
+                    {isAns && (
+                      <div className="mt-2.5 pt-2.5 border-t border-[var(--line)]/60 space-y-1.5">
+                        <div className={`text-xs font-mono font-bold ${isCorr ? "text-emerald-800" : "text-rose-900"}`}>
+                          {isCorr ? "✓ 解题命中" : "✗ 需强化辨析"}
+                        </div>
+                        <p className="text-xs leading-relaxed text-[var(--gray)] font-sans">{q.explanationZH}</p>
+                      </div>
+                    )}
+                  </div>
+                );
+              })}
+            </div>
+          ) : (
+            /* 单题聚焦模式 (默认)：高度契合左侧，空间清爽 */
+            <div className="rounded-lg border border-[var(--line)] bg-[var(--surface)] p-4 shadow-2xs space-y-3">
+              {/* 题头 */}
+              <div className="flex items-center justify-between text-xs font-mono border-b border-[var(--line)]/60 pb-2">
+                <div className="flex items-center gap-2">
+                  <span className="font-bold text-[var(--ink)]">
+                    第 {focusIndex + 1} 题 · {currentQ.titleZH}
+                  </span>
+                  <span className="px-1.5 py-0.2 rounded bg-[var(--paper-subtle)] text-[var(--gray)] border border-[var(--line)] text-[10px]">
+                    {currentQ.afb}
+                  </span>
+                </div>
+                <span className="text-[11px] text-[var(--gray)] font-mono">
+                  {focusIndex + 1} / {activeExcerpt.questions.length}
+                </span>
+              </div>
+
+              {/* 题目正文 */}
+              <p className="font-serif text-[14px] leading-relaxed text-[var(--ink)]">
+                {currentQ.questionZH}
+              </p>
+
+              {/* 选项组 */}
+              <div className="space-y-2 pt-1">
+                {currentQ.options.map((opt) => {
+                  const selectedOptionId = answers[currentQ.id];
+                  const isAnswered = !!selectedOptionId;
+                  const isThisSelected = selectedOptionId === opt.id;
+                  let btnStyle = "border-[var(--line)] bg-[var(--paper)] text-[var(--ink)] hover:border-[var(--gray)]";
+
+                  if (isAnswered) {
+                    if (opt.isCorrect) {
+                      btnStyle = "border-emerald-500 bg-emerald-50/80 text-emerald-950 font-medium ring-1 ring-emerald-500";
+                    } else if (isThisSelected && !opt.isCorrect) {
+                      btnStyle = "border-rose-400 bg-rose-50 text-rose-950 line-through";
+                    } else {
+                      btnStyle = "border-[var(--line)] bg-[var(--paper-subtle)] opacity-50";
+                    }
+                  }
+
+                  return (
                     <button
+                      key={opt.id}
                       type="button"
-                      onClick={() =>
-                        setCollapsedQuestions({ ...collapsedQuestions, [q.id]: true })
-                      }
-                      className="text-[10px] text-[var(--gray)] hover:text-[var(--ink)] cursor-pointer underline"
+                      disabled={isAnswered}
+                      onClick={() => setAnswers({ ...answers, [currentQ.id]: opt.id })}
+                      className={`w-full text-left p-2.5 rounded-md border text-xs leading-relaxed transition cursor-pointer flex items-start gap-2.5 ${btnStyle}`}
                     >
-                      ▲ {de ? "Einklappen" : "折叠"}
+                      <span className="font-mono font-bold shrink-0 mt-0.5">
+                        {opt.id.toUpperCase()}.
+                      </span>
+                      <span>{opt.textZH}</span>
                     </button>
+                  );
+                })}
+              </div>
+
+              {/* 作答反馈与解析 */}
+              {answers[currentQ.id] && (
+                <div className="mt-2.5 pt-2.5 border-t border-[var(--line)]/60 space-y-2 animate-fadeIn">
+                  <div
+                    className={`text-xs font-mono font-bold flex items-center gap-1.5 ${
+                      currentQ.options.find((o) => o.id === answers[currentQ.id])?.isCorrect
+                        ? "text-emerald-800"
+                        : "text-rose-900"
+                    }`}
+                  >
+                    <span>
+                      {currentQ.options.find((o) => o.id === answers[currentQ.id])?.isCorrect
+                        ? "✓ RICHTIG // 解题命中"
+                        : "✗ FEHLER // 需强化辨析"}
+                    </span>
                   </div>
 
-                  {/* 题目正文 */}
-                  <p className="font-serif text-[13px] leading-relaxed text-[var(--ink)]">
-                    {de ? q.questionDE : q.questionZH}
+                  <p className="text-xs leading-relaxed text-[var(--gray)] font-sans">
+                    {currentQ.explanationZH}
                   </p>
 
-                  {/* 选项组 */}
-                  <div className="space-y-2 pt-1">
-                    {q.options.map((opt) => {
-                      const isThisSelected = selectedOptionId === opt.id;
-                      let btnStyle = "border-[var(--line)] bg-[var(--paper)] text-[var(--ink)] hover:border-[var(--gray)]";
-
-                      if (isAnswered) {
-                        if (opt.isCorrect) {
-                          btnStyle = "border-emerald-500 bg-emerald-50/80 text-emerald-950 font-medium ring-1 ring-emerald-500";
-                        } else if (isThisSelected && !opt.isCorrect) {
-                          btnStyle = "border-rose-400 bg-rose-50 text-rose-950 line-through";
-                        } else {
-                          btnStyle = "border-[var(--line)] bg-[var(--paper-subtle)] opacity-50";
-                        }
-                      }
-
-                      return (
-                        <button
-                          key={opt.id}
-                          type="button"
-                          disabled={isAnswered}
-                          onClick={() => setAnswers({ ...answers, [q.id]: opt.id })}
-                          className={`w-full text-left p-2.5 rounded-md border text-xs leading-relaxed transition cursor-pointer flex items-start gap-2 ${btnStyle}`}
-                        >
-                          <span className="font-mono font-bold shrink-0 mt-0.5">
-                            {opt.id.toUpperCase()}.
-                          </span>
-                          <span>{de ? opt.textDE : opt.textZH}</span>
-                        </button>
-                      );
-                    })}
+                  {/* 德语标准答题句式积木 (Klausur-Formulierung) */}
+                  <div className="p-2 rounded border border-[var(--line)] bg-[var(--paper-subtle)] space-y-1">
+                    <div className="flex items-center justify-between text-[10px] font-mono text-[var(--gray)]">
+                      <span className="font-bold text-[var(--ink)]">
+                        § {de ? "Muster-Formulierung für die Klausur" : "德语会考高分答题句式"}
+                      </span>
+                      <button
+                        type="button"
+                        onClick={() => handleCopySentence(currentQ.klausurSatzDE, currentQ.id)}
+                        className="text-[var(--ink)] hover:underline cursor-pointer"
+                      >
+                        {copiedId === currentQ.id ? "✓ Kopiert" : de ? "Kopieren" : "复制德语文案"}
+                      </button>
+                    </div>
+                    <div className="font-serif italic text-xs text-[var(--ink)] leading-relaxed">
+                      „{currentQ.klausurSatzDE}“
+                    </div>
                   </div>
 
-                  {/* 作答反馈与解析 */}
-                  {isAnswered && (
-                    <div className="mt-3 pt-3 border-t border-[var(--line)]/60 space-y-2.5 animate-fadeIn">
-                      <div
-                        className={`text-xs font-mono font-bold flex items-center gap-1.5 ${
-                          isCorrect ? "text-emerald-800" : "text-rose-900"
-                        }`}
-                      >
-                        <span>{isCorrect ? "✓ RICHTIG // 解题命中" : "✗ FEHLER // 需强化辨析"}</span>
+                  {/* 官方评卷期望标准 (Erwartungshorizont / EHZ) 折叠栏 */}
+                  <div className="pt-0.5">
+                    <button
+                      type="button"
+                      onClick={() => setShowEHZ({ ...showEHZ, [currentQ.id]: !showEHZ[currentQ.id] })}
+                      className="text-[11px] font-mono text-[var(--gray)] hover:text-[var(--ink)] flex items-center gap-1 underline cursor-pointer"
+                    >
+                      <span>{showEHZ[currentQ.id] ? "▲" : "▼"}</span>
+                      <span>
+                        {showEHZ[currentQ.id]
+                          ? de ? "Erwartungshorizont verbergen" : "收起官方评分期望标准"
+                          : de ? "Offiziellen Erwartungshorizont (EHZ) einsehen" : "查看官方评分期望标准 (EHZ 要点)"}
+                      </span>
+                    </button>
+
+                    {showEHZ[currentQ.id] && (
+                      <div className="mt-1.5 p-2 rounded bg-[var(--surface)] border border-[var(--line)] text-xs space-y-1 font-mono text-[11px]">
+                        <ul className="list-disc pl-4 space-y-0.5 text-[var(--gray)] font-sans text-xs">
+                          {currentQ.ehzKeyPointsZH.map((pt, pIdx) => (
+                            <li key={pIdx}>
+                              <span className="text-[var(--ink)]">{pt}</span>
+                            </li>
+                          ))}
+                        </ul>
                       </div>
-
-                      <p className="text-xs leading-relaxed text-[var(--gray)] font-sans">
-                        {de ? q.explanationDE : q.explanationZH}
-                      </p>
-
-                      {/* 德语标准答题句式积木 (Klausur-Formulierung) */}
-                      <div className="p-2.5 rounded border border-[var(--line)] bg-[var(--paper-subtle)] space-y-1.5">
-                        <div className="flex items-center justify-between text-[10px] font-mono text-[var(--gray)]">
-                          <span className="font-bold text-[var(--ink)]">
-                            § {de ? "Muster-Formulierung für die Klausur" : "德语会考高分答题句式 (Abitur-Niveau)"}
-                          </span>
-                          <button
-                            type="button"
-                            onClick={() => handleCopySentence(q.klausurSatzDE, q.id)}
-                            className="text-[var(--ink)] hover:underline cursor-pointer"
-                          >
-                            {copiedId === q.id ? "✓ Kopiert" : de ? "Kopieren" : "复制德语文案"}
-                          </button>
-                        </div>
-                        <div className="font-serif italic text-xs text-[var(--ink)] leading-relaxed">
-                          „{q.klausurSatzDE}“
-                        </div>
-                        <div className="font-sans text-[11px] text-[var(--gray)] leading-snug">
-                          {q.klausurSatzZH}
-                        </div>
-                      </div>
-
-                      {/* 官方评卷期望标准 (Erwartungshorizont / EHZ) 折叠栏 */}
-                      <div className="pt-1">
-                        <button
-                          type="button"
-                          onClick={() => setShowEHZ({ ...showEHZ, [q.id]: !isEHZOpen })}
-                          className="text-[11px] font-mono text-[var(--gray)] hover:text-[var(--ink)] flex items-center gap-1 underline cursor-pointer"
-                        >
-                          <span>{isEHZOpen ? "▲" : "▼"}</span>
-                          <span>
-                            {isEHZOpen
-                              ? de ? "Erwartungshorizont verbergen" : "收起官方评分期望标准"
-                              : de ? "Offiziellen Erwartungshorizont (EHZ) einsehen" : "查看官方会考评分期望标准 (EHZ 要点)"}
-                          </span>
-                        </button>
-
-                        {isEHZOpen && (
-                          <div className="mt-2 p-2.5 rounded bg-[var(--surface)] border border-[var(--line)] text-xs space-y-1.5 font-mono text-[11px]">
-                            <div className="font-bold text-[var(--ink)] text-[10px] uppercase">
-                              {de ? "Bewertungskriterien (Inhaltliche Leistung):" : "评分采分点明细 (Inhaltliche Leistung):"}
-                            </div>
-                            <ul className="list-disc pl-4 space-y-1 text-[var(--gray)] font-sans text-xs">
-                              {(de ? q.ehzKeyPointsDE : q.ehzKeyPointsZH).map((pt, pIdx) => (
-                                <li key={pIdx}>
-                                  <span className="text-[var(--ink)]">{pt}</span>
-                                </li>
-                              ))}
-                            </ul>
-                          </div>
-                        )}
-                      </div>
-                    </div>
-                  )}
+                    )}
+                  </div>
                 </div>
-              );
-            })}
-          </div>
+              )}
 
-          {/* 底部：会考写作导语句式积木 (TATTE-Satz Baukasten) */}
-          <div className="rounded-lg border border-[var(--line)] bg-[var(--surface)] p-3.5 space-y-2 text-xs font-mono">
-            <div className="flex items-center justify-between border-b border-[var(--line)]/60 pb-1.5">
-              <span className="font-bold text-[var(--ink)]">
-                {de ? "Klausur-Auftakt: Der TATTE-Basissatz" : "会考必备：论述文开头破题标准句式 (TATTE)"}
-              </span>
-              <span className="text-[10px] text-[var(--gray)]">
-                Textsorte · Autor · Titel · Thema · Epoche
-              </span>
+              {/* 题目导航步进器 */}
+              <div className="flex items-center justify-between pt-2.5 border-t border-[var(--line)]/60">
+                <button
+                  type="button"
+                  disabled={focusIndex === 0}
+                  onClick={() => setFocusIndex(focusIndex - 1)}
+                  className="px-3 py-1 rounded border border-[var(--line)] text-xs font-mono cursor-pointer disabled:opacity-30 disabled:cursor-not-allowed hover:bg-[var(--paper-subtle)]"
+                >
+                  ◀ 上一题
+                </button>
+                <div className="flex items-center gap-1">
+                  {activeExcerpt.questions.map((_, i) => (
+                    <span
+                      key={i}
+                      onClick={() => setFocusIndex(i)}
+                      className={`h-2 w-2 rounded-full cursor-pointer transition ${
+                        focusIndex === i ? "bg-[var(--ink)] scale-125" : "bg-[var(--line)] hover:bg-[var(--gray)]"
+                      }`}
+                    />
+                  ))}
+                </div>
+                <button
+                  type="button"
+                  disabled={focusIndex === activeExcerpt.questions.length - 1}
+                  onClick={() => setFocusIndex(focusIndex + 1)}
+                  className="px-3 py-1 rounded border border-[var(--line)] text-xs font-mono cursor-pointer disabled:opacity-30 disabled:cursor-not-allowed hover:bg-[var(--paper-subtle)]"
+                >
+                  下一题 ▶
+                </button>
+              </div>
             </div>
-            <p className="font-serif italic text-xs text-[var(--ink)] leading-relaxed">
-              „In der Szene ‚Nacht‘ aus Johann Wolfgang von Goethes Tragödie ‚Faust I‘ (1808) thematisiert der Gelehrte Heinrich Faust im einleitenden Monolog seine existentielle Wissenschaftskrise sowie die Unfähigkeit des menschlichen Geistes, die wesentlichen Zusammenhänge der Welt rein rational zu erfassen.“
-            </p>
-            <div className="text-[11px] font-sans text-[var(--gray)]">
-              中文释义：在歌德1808年悲剧《浮士德 I》的‘黑夜’一幕中，学者浮士德在开篇独白中深入探讨了其生存主义维度的科学危机，以及人类理性知性无法纯粹凭借逻辑掌握宇宙万物本质枢纽的宿命困境。
-            </div>
-          </div>
+          )}
         </div>
       </div>
     </div>

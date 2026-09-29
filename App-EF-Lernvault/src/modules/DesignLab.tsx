@@ -20,17 +20,17 @@ interface DemoOption {
 const DEMO_OPTIONS: DemoOption[] = [
   {
     id: "faust-reading",
-    nameDE: "Klausur-Labor: Faust I (6 Dimensionen)",
-    nameZH: "歌德《浮士德 I》文本细读与六维会考解剖工坊",
-    taglineDE: "Originaltext mit Zeilen-Analyse, 6 Klausur-Dimensionen & EHZ-Erwartungshorizont",
-    taglineZH: "带行号原著诗剧文本、逐行显微镜、六大考试维度与官方评分标准 (EHZ)",
+    nameDE: "Faust I: Textanalyse",
+    nameZH: "歌德《浮士德 I》原著精读",
+    taglineDE: "Originaltext & 6 Klausur-Dimensionen",
+    taglineZH: "原著诗剧细读与六维会考真题",
   },
   {
     id: "sowi-depot",
-    nameDE: "Interaktive Vorlesung: Depot & Orderbuch",
-    nameZH: "经济微课动画剧场 · 证券存托与订单簿撮合",
-    taglineDE: "Zinskrise, Orderbuch-Tiefe & Sokratischer Dialog",
-    taglineZH: "通胀剪刀差危机、Xetra 订单簿撮合与苏格拉底思维互动",
+    nameDE: "SoWi: Depot & Orderbuch",
+    nameZH: "经济微课 · 订单簿撮合",
+    taglineDE: "Zinskrise & Orderbuch-Tiefe",
+    taglineZH: "通胀危机与 Xetra 订单簿撮合",
   },
 ];
 
@@ -43,18 +43,18 @@ export function DesignLab({ lang }: { lang: Lang }) {
   return (
     <div className="mx-auto w-full min-w-0 max-w-6xl space-y-4 pb-16">
       {/* 极简 Tufte 学术工坊顶栏 */}
-      <header className="border-b border-[var(--line)] pb-3 pt-1 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
-        <div className="flex items-center gap-3">
-          <h1 className="font-serif text-xl font-bold tracking-tight text-[var(--ink)]">
+      <header className="border-b border-[var(--line)] pb-2.5 flex items-center justify-between gap-4">
+        <div className="flex items-center gap-2 min-w-0">
+          <h1 className="font-serif text-lg font-bold text-[var(--ink)] whitespace-nowrap">
             {de ? "Didaktische Experimentierbühne" : "教学交互实验展厅"}
           </h1>
-          <span className="text-[11px] font-mono text-[var(--gray)] border-l border-[var(--line)] pl-3 hidden sm:inline">
+          <span className="text-[11px] font-mono text-[var(--gray)] border-l border-[var(--line)] pl-2 hidden md:inline truncate">
             {de ? activeDemoMeta.taglineDE : activeDemoMeta.taglineZH}
           </span>
         </div>
 
         {/* 核心工坊切换胶囊 */}
-        <div className="flex items-center gap-1.5 p-1 bg-[var(--paper-subtle)] border border-[var(--line)] rounded-md">
+        <div className="inline-flex rounded-md border border-[var(--line)] bg-[var(--paper-subtle)] p-0.5 shadow-2xs shrink-0">
           {DEMO_OPTIONS.map((demo) => {
             const isSelected = demo.id === currentDemo;
             return (
