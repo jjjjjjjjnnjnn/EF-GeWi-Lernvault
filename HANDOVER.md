@@ -20,12 +20,32 @@
 - **文科交互教学与工坊总纲**：[`00_META/GEISTESWISSENSCHAFTEN-INTERACTIVE-PEDAGOGY-PLAN.md`](00_META/GEISTESWISSENSCHAFTEN-INTERACTIVE-PEDAGOGY-PLAN.md)（**文科可探索解释与 GeWi-Labor 24款工坊建设总纲：博弈系统、道德天平、论证树、漫画透镜、戏剧张力与音乐动机**）。
 - 目标：德国 NRW Gymnasium EF 十科笔试/口试提分，中德双语，**完全离线**。
 - **内容铁律**：所有题目材料只能来自用户自己的笔记原文 —— **超纲率 = 0**。
-- **当前规模**：笔记 **394** · Anki 卡片 **1595** · 互动课程 **269 篇**（`Lernreise/`，十科全覆盖，P1+P2 全量连续剧式关卡宇宙与微沙盘深度重塑）· 术语表 **797 行** · 十科 Abi-Baum 应试树 · 考纲体系（NRW 十科 + 中国理科四科 + 中德映射）。
+- **当前规模**：笔记 **401** · Anki 卡片 **1599** · 互动课程 **271 篇**（`Lernreise/`，十科全覆盖，P1+P2 全量连续剧式关卡宇宙与多学科学术解剖台）· 术语表 **805 行** · 十科 Abi-Baum 应试树 · 考纲体系（NRW 十科 + 中国理科四科 + 中德映射）。
 
 ---
 
-## 当前状态（2026-09-27）
+## 当前状态（2026-09-29）
 
+- ✅ **文科原典精读工坊 (GeWi Reading Lab) 广泛化解耦与四大学科批量扩充落地**：
+  - **架构解耦**：通用组件 `GeWiReadingLab.tsx` 与统一数据注册中心 `readingLabRegistry.ts`。
+  - **标准设计基线（用户验收锁定）**：纯色无边框标记（`bg-amber-100/60` 修辞、`bg-sky-100/60` 词汇、`bg-amber-200/70` 聚焦，彻底移除所有方框与边线）、开阔舒朗双栏（`gap-8 xl:gap-10`）、左栏吸顶伴读无外溢滚动、右栏单题深入精读决策台、紧凑折叠分段诊断胶囊（`🎯 正解锚点` / `⚠️ 干扰诊断` / `🏛 时代哲学` / `✍️ 高分句` / `📑 全景展开`）。
+  - **跨学科批量原典库（4 科 6 部典籍 36 道长篇真题）**：
+    - 德语文学（Deutsch）：Goethe《Faust I》（黑夜学者独白 V. 354–385；书斋立约豪赌 V. 1692–1711）
+    - 德语戏剧（Deutsch）：Georg Büchner《Woyzeck》（理发长官场景 Beim Hauptmann，阶级规训与反英雄悲剧）
+    - 哲学原典（Philosophie）：Immanuel Kant《Grundlegung zur Metaphysik der Sitten》（定言命令与绝对自律）
+    - 社会科学（SoWi）：Frank-Walter Steinmeier《Demokratie braucht Demokraten》（政治演说论证与公民韧性）
+    - 英语文学（Englisch）：William Shakespeare《Macbeth》（Act V Scene 5 虚无独白与抑扬格五音步）
+    - 每道题均配备【✅ 正解依据与文本锚点】、【❌ 干扰项逐项诊断】、【🏛 时代思潮与哲学脉络】、【✍️ 14 分标准句式（Muster-Formulierung）】与【官方采分点（Erwartungshorizont / EHZ）】。
+  - **正式课程与教具全链路落地**：
+    - `Reise.tsx`：当文科互动课程调用 `[Werkzeug: text-analyse]`、`reader`、`originaltext`、`faust`、`woyzeck`、`kant`、`rede` 等别名时，自动激活 `GeWiReadingLab`，彻底取代原简陋的 4 行 `EditorialReader`。
+    - `Werkzeuge.tsx`：工具箱原文本标记器升级为「原典解剖台（Textanalyse-Labor）」，按当前学科动态过滤文献。
+    - `DesignLab.tsx`：升级为 1440px 宽幅原典解剖工坊展厅。
+- ✅ **社科 Xetra 电子订单簿撮合实验台与微课解耦**：
+  - 新建独立教具 `OrderbuchSimulator.tsx`，攻克证券存托研习步骤 4（`SoWi-Wertpapierdepot-Orderarten-L1.md`）的排版拥挤与内容重复缺陷，提供买卖深度、市价/限价/止损单撮合、滑点与价差仿真台，并解耦完整微课剧场折叠展开。
+  - 重构 `LectureTheatre.tsx` 微课文案为动态属性，彻底消除文学微课显示经济学解说的串味缺陷。
+- ✅ **工程与规范维护**：
+  - 修复根目录 `.gitignore` 中 `/data/` 锚点规则，确保 `App-EF-Lernvault/src/data/` 正常纳入版本控制。
+  - 门禁流水线全绿：`vault-check.py` PASS（401 notes, 1599 csv rows, 337 index links, 271 reisen, 0 badnames, 0 badglossar），`tsc -b && vite build` 0 错误（6.12s 通过）。
 - ✅ **Lernreise 互动课程 P1+P2 全量重塑收官 (269/269 篇)**：十科 269 篇互动课程全量完成 8 大连续剧关卡宇宙（Campaign Storylines）深度重塑。S1 生活反差 Hook（$\ge 100$ 词/字）、8 步具名小节标题、S4 绑定 14 类注册实验教具（`osmose-lab`, `titration-lab`, `le-chatelier-sim`, `schiefe-ebene`, `kinematik-lab`, `box-optimizer`, `tangent-slider`, `gini-allocator`, `markt-sim`, `balance-board`, `highlighter`, `lego`, `oral-timer`, `formula`）、S5 双对抗辨析、S8 `reflexion` 标签全部对齐。三道流水线全绿：`audit-pedagogy-integrity.py` 6 项指标全零；`vault-check.py` 报告 `reisen=269`, `badnames=0`, `PASS`；`npx tsc -b` 零错误。十科单科独立 Commit 干净落库。
 - ✅ **App 客户端滚动与大纲目录同步底层修复**：在 `Reise.tsx` 中改用捕获阶段滚动监听（Capture Phase Scroll Listener），解决 DOM `scroll` 事件不冒泡导致的右侧 TOC 目录无法跟随滚动同步高亮的长期缺陷；升级穿透式 `scrollToContainerTop` 与三阶开课居顶时序，彻底修复“回到顶部失败”与“打开课程不在顶部”问题。
 
