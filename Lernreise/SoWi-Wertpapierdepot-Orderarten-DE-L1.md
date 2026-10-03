@@ -13,9 +13,9 @@ version: Lesson-v3
 
 # Lernreise: Wertpapierdepot und Orderarten (L1, Ziel Klausur)
 
-> Kampagne *Virtuelle Stadt-Tycoon — Von der Apfelmarkt-Fehde zum modernen Sozialstaat*: Akt I-II — Vermögensaufbau und Finanzmärkte — Episode 28, Cast: Vermögensberaterin Dr. Elena Weber. Werkzeug dieser Episode: [Werkzeug: depot].
+> Kampagne *Virtuelle Stadt-Tycoon — Von der Apfelmarkt-Fehde zum modernen Sozialstaat*: Akt I-II — Vermögensaufbau und Finanzmärkte — Episode 28, Cast: Vermögensberaterin Dr. Elena Weber. Werkzeug dieser Episode: [Werkzeug: orderbuch].
 
-<!-- Lesson v3 9步制架构：Schritt 1至8固定结构；Fehlvorstellung 夹在 Schritt 6 与 7 之间（Parser 自动跳过，不占步数）；支持内嵌 [Werkzeug: depot] 交互教具；Gating: check/szenario 未过 = Weiter 置灰；XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
+<!-- Lesson-v3: Schritt 1 bis 8 feste Struktur; Fehlvorstellung zwischen Schritt 6 und 7; [Werkzeug: orderbuch] interaktiv; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
 ## Schritt 1 — entdecken: Alarm in Tycoon City: Die schleichende Geldentwertung
 
@@ -90,7 +90,7 @@ Klausur-Satz: `Market-Orders bergen erhebliche Slippage-Risiken, während eine b
 
 ## Schritt 5 — ausprobieren: Duell der Wege: Weg A gegen Weg B
 
-VERGLEICH: Wähle erst das Verfahren — 【选程序】先判断题目问的是 (i) Liquiditäts-Verfahren (kurzfristige Verfügbarkeit, kein Kursrisiko, Einlagensicherung) oder (ii) Allokations-Verfahren (langfristiger Realwerterhalt, Kursschwankungstoleranz, Sondervermögen) — dann lösen.
+VERGLEICH: Wähle erst das Verfahren — entscheide anhand der Signalwörter, ob (i) das Liquiditäts-Verfahren (kurzfristige Verfügbarkeit, kein Kursrisiko, Einlagensicherung) oder (ii) das Allokations-Verfahren (langfristiger Realwerterhalt, Kursschwankungstoleranz, Sondervermögen) greift — dann lösen.
 
 DUELL Weg A (Tagesgeld) gegen Weg B (Welt-ETF im Depot): Weg A garantiert absolute nominale Preissicherheit und tägliche Verfügbarkeit, nimmt jedoch bei Inflation eine schleichende reale Entwertung in Kauf. Weg B investiert in Produktivkapital, erzielt langfristig positive Realrenditen und ist als Sondervermögen insolvenzfest, erfordert aber das Aushalten von Marktvolatilität.
 

@@ -13,15 +13,15 @@ version: Lesson-v3
 
 # Lernreise: Wertpapierdepot und Orderarten (L1, Ziel Klausur)
 
-> Kampagne *Virtuelle Stadt-Tycoon — Von der Apfelmarkt-Fehde zum modernen Sozialstaat*: Akt I-II — Vermögensaufbau und Finanzmärkte — Episode 28, Cast: Vermögensberaterin Dr. Elena Weber. Werkzeug dieser Episode: [Werkzeug: depot].
+> Kampagne *Virtuelle Stadt-Tycoon — Von der Apfelmarkt-Fehde zum modernen Sozialstaat*: Akt I-II — Vermögensaufbau und Finanzmärkte — Episode 28, Cast: Vermögensberaterin Dr. Elena Weber. Werkzeug dieser Episode: [Werkzeug: orderbuch].
 
-<!-- Lesson v3 9步制架构：Schritt 1至8固定结构；Fehlvorstellung 夹在 Schritt 6 与 7 之间（Parser 自动跳过，不占步数）；支持内嵌 [Werkzeug: depot] 交互教具；Gating: check/szenario 未过 = Weiter 置灰；XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
+<!-- Lesson v3 9步制架构：Schritt 1至8固定结构；Fehlvorstellung 夹在 Schritt 6 与 7 之间（Parser 自动跳过，不占步数）；支持内嵌 [Werkzeug: orderbuch] 交互教具；Gating: check/szenario 未过 = Weiter 置灰；XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
 ## Schritt 1 — entdecken: Alarm in Tycoon City: Die schleichende Geldentwertung
 
 > EPISODE 28｜Akt I-II — Vermögensaufbau und Finanzmärkte｜召集人 Vermögensberaterin Dr. Elena Weber：Die schleichende Geldentwertung。
 
-HOOK 储蓄危机（先读剧情，再进 ZIELE）：【本集战役 EP28｜Akt I-II — Vermögensaufbau und Finanzmärkte｜虚拟城邦 Tycoon City 告急】市民 Max 带着存折急匆匆跑进咨询室：他在活期账户存了 10.000 欧元，银行仅给 0,5 % 利息，而物价通胀率高达 3,0 %。账面上看似每年多了 50 欧元，但在超市里的实际购买力却年年缩水（通胀剪刀差）。如何从制度层面区分普通银行活期账户与证券存托账户？股票交易中的订单簿与止损单如何防范暴跌风险？通关线索：TARGET: Durchlaufe alle 5 Lektionen der interaktiven Vorlesungsstrecke [Werkzeug: depot], analysiere Realzins, Sondervermoegen, GWG-Legitimation, Xetra-Orderbuch und meistere das Magische Dreieck der Geldanlage. 先读 ZIELE，再啃术语，把传导机制画成你的作战地图。DE-Briefing: Episode 28 — Vermögensberaterin Dr. Elena Weber meldet Kaufkraftkrise privater Haushalte. Rette Max' Ersparnisse mit Fachanalyse, Vorlesungsstrecke und Klausur-Urteil zum Thema Wertpapierdepot und Orderarten.
+HOOK 储蓄危机（先读剧情，再进 ZIELE）：【本集战役 EP28｜Akt I-II — Vermögensaufbau und Finanzmärkte｜虚拟城邦 Tycoon City 告急】市民 Max 带着存折急匆匆跑进咨询室：他在活期账户存了 10.000 欧元，银行仅给 0,5 % 利息，而物价通胀率高达 3,0 %。账面上看似每年多了 50 欧元，但在超市里的实际购买力却年年缩水（通胀剪刀差）。如何从制度层面区分普通银行活期账户与证券存托账户？股票交易中的订单簿与止损单如何防范暴跌风险？通关线索：TARGET: Durchlaufe alle 5 Lektionen der interaktiven Vorlesungsstrecke [Werkzeug: orderbuch], analysiere Realzins, Sondervermoegen, GWG-Legitimation, Xetra-Orderbuch und meistere das Magische Dreieck der Geldanlage. 先读 ZIELE，再啃术语，把传导机制画成你的作战地图。DE-Briefing: Episode 28 — Vermögensberaterin Dr. Elena Weber meldet Kaufkraftkrise privater Haushalte. Rette Max' Ersparnisse mit Fachanalyse, Vorlesungsstrecke und Klausur-Urteil zum Thema Wertpapierdepot und Orderarten.
 
 ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
