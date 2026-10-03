@@ -920,3 +920,5 @@ tags: [EF, Meta]
 | Freistellungsauftrag | 免税额委托申请 | SoWi | Mit einem Freistellungsauftrag schöpfen Sparer den Sparer-Pauschbetrag direkt bei der Depotbank steuerfrei aus. |
 | Slippage | 滑点（实际成交与预期价格偏差） | SoWi | Bei einer unlimitierten Bestens-Order droht in volatilen Marktphasen eine erhebliche Slippage. |
 
+| Stabilitätsgesetz | 稳定与增长法 | SoWi | Das Stabilitätsgesetz von 1967 verpflichtet Bund und Länder auf das gesamtwirtschaftliche Gleichgewicht. |
+| Maximenprüfung | 行动准则检验法 | Philosophie | Die vierstufige Maximenprüfung prüft die Verallgemeinerbarkeit einer Handlungsregel nach Kant. |
