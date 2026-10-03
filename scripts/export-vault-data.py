@@ -27,18 +27,8 @@ def sanitize_text(text: str) -> str:
     return EMOJI_PATTERN.sub("", text).strip()
 
 def export_flashcards():
-    csv_paths = [
-        os.path.join(VAULT_ROOT, "01_Deutsch", "Vokabeln-Anki", "Deutsch-EF-Phrasen.csv"),
-        os.path.join(VAULT_ROOT, "02_Englisch", "Vokabeln-Anki", "Englisch-EF-Phrasen.csv"),
-        os.path.join(VAULT_ROOT, "03_Mathe", "Vokabeln-Anki", "Mathe-EF-Basis.csv"),
-        os.path.join(VAULT_ROOT, "04_Physik", "Vokabeln-Anki", "Physik-EF-Basis.csv"),
-        os.path.join(VAULT_ROOT, "05_Chemie", "Vokabeln-Anki", "Chemie-EF-Basis.csv"),
-        os.path.join(VAULT_ROOT, "06_Bio", "Vokabeln-Anki", "Bio-EF-Basis.csv"),
-        os.path.join(VAULT_ROOT, "07_Philosophie", "Vokabeln-Anki", "Philo-EF-Basis.csv"),
-        os.path.join(VAULT_ROOT, "08_SoWi", "Vokabeln-Anki", "SoWi-EF-Basis.csv"),
-        os.path.join(VAULT_ROOT, "09_Musik-m\u00fcndl", "Vokabeln-Anki", "Musik-EF-Basis.csv"),
-        os.path.join(VAULT_ROOT, "10_Sport-m\u00fcndl", "Vokabeln-Anki", "Sport-EF-Basis.csv"),
-    ]
+    import glob
+    csv_paths = sorted(glob.glob(os.path.join(VAULT_ROOT, "*", "Vokabeln-Anki", "*.csv")))
 
     cards = []
     card_idx = 1

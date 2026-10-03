@@ -20,26 +20,27 @@
 - **文科交互教学与工坊总纲**：[`00_META/GEISTESWISSENSCHAFTEN-INTERACTIVE-PEDAGOGY-PLAN.md`](00_META/GEISTESWISSENSCHAFTEN-INTERACTIVE-PEDAGOGY-PLAN.md)（**文科可探索解释与 GeWi-Labor 24款工坊建设总纲：博弈系统、道德天平、论证树、漫画透镜、戏剧张力与音乐动机**）。
 - 目标：德国 NRW Gymnasium EF 十科笔试/口试提分，中德双语，**完全离线**。
 - **内容铁律**：所有题目材料只能来自用户自己的笔记原文 —— **超纲率 = 0**。
-- **当前规模**：笔记 **401** · Anki 卡片 **1599** · 互动课程 **271 篇**（`Lernreise/`，十科全覆盖，P1+P2 全量连续剧式关卡宇宙与多学科学术解剖台）· 术语表 **805 行** · 十科 Abi-Baum 应试树 · 考纲体系（NRW 十科 + 中国理科四科 + 中德映射）。
+- **当前规模**：笔记 **401** · Anki 卡片 **1931** · 互动课程 **356 篇**（`Lernreise/`，十科全覆盖，含 Lesson-v3 全量高阶微课与多学科学术解剖台）· 术语表 **933 行** · 十科 Abi-Baum 应试树 **403 节点** · 考纲体系（NRW 十科 + 中国理科四科 + 中德映射）。
 
 ---
 
-## 当前状态（2026-10-03）
+## 当前状态（2026-10-03 最新里程碑）
 
-- ✅ **App 学习树（`src/baum/`）对全部 333 篇学科知识笔记实现 100% 满分拓扑覆盖**：
-  - 彻底攻克历史遗留的 `src/baum/*.ts` 仅覆盖旧版概念的重大缺陷，对十科学科树全量补全 Level 1 / Level 2 / Level 3 拓扑分支；
-  - 精准注入 64 篇未匹配笔记的德中学术核心术语与关键识别项，实现 **十科 333 篇学科知识笔记在学习树与大纲目录中 0 缺口（Unmatched = 0，100% 覆盖）**；
-  - `cmd /c "cd App-EF-Lernvault && npx tsc -b"` 类型系统编译 0 错误。
-- ✅ **全库互动微课矩阵扩充升级至 278 门（新增 7 门高互动好玩标杆示范新课）**：
-  - 严格落实用户关于“好玩、互动、教学为主、内容清晰有重点、布局不无聊”的指示，高标准研制 7 门全新 9 步微课（Lesson-v3）：
-    - 哲学《Philo-Willensfreiheit-Determinismus-L1》：拉普拉斯妖 vs 李贝特脑电准备电位（350ms时差与自由意志），绑定 `ethik-waage`；
-    - 哲学《Philo-Staatsphilosophie-Hobbes-Locke-L1》：末日无政府自然状态与契约论（利维坦 vs 分权立宪与反抗权），绑定 `gewi-reading`；
-    - 社科《SoWi-Konjunktur-und-Wachstum-L1》：经济过山车与先行/同步/滞后指标雷达，绑定 `magisches-viereck`；
-    - 数学《Mathe-Extremwert-Dosenoptimierung-L1》：330ml 易拉罐省钱密码与 $h=2r$ 极值优化，绑定 `box-optimizer`；
-    - 音乐《Musik-Programmmusik-Vivaldi-L1》：维瓦尔第《四季》音画技法（小提琴犬吠与雷暴碎弓），绑定 `lego`；
-    - 体育《Sport-Trainingssteuerung-Superkompensation-L1》：超量恢复五阶段与黄金窗口期，绑定 `balance-board`；
-    - 德语《Deutsch-Drama-Spannungskurve-Freytag-L1》：戏剧过山车与弗赖塔格金字塔五幕张力，绑定 `highlighter`。
-  - `scripts/audit-pedagogy-integrity.py` 6 项指标全零；全库课程总数达 **278 篇**；`vault-check.py` 持续全绿 PASS（`reisen=278`）。
+- ✅ **互动课程矩阵扩张至 356 门（覆盖 NRW Oberstufe 十科学科核心考点）**：
+  - 全量微课通过自动化双门禁系统（`scripts/vault-check.py` PASS, `scripts/audit-pedagogy-integrity.py` 0 缺陷）；
+  - 课程体系严格遵循 Lesson-v3 规范：生动导入、预训练盒、概念图谱、模块化教具（balance-board, lego, highlighter, etc.）、双极深度对比、三级真题 Szenario、口试 Blitz、元认知反思与考前速记 Spickzettel；
+- ✅ **Anki 词卡库全面扩充至 1,931 张**：
+  - 跨十大学科词库同步拓展，格式完全标准化（5 列分号分隔，0 键冲突，0 语法错误）；
+  - `scripts/export-vault-data.py` 实现全库卡片与笔记向 App 编译层（`src/generatedCards.ts` 等）动态导出；
+- ✅ **全链路用户模拟交互测试套件（`scripts/simulate-user-interaction.py`）100% PASS**：
+  - 模块 1：356 门互动微课端到端交互运行与步骤序列校验 100% 通过；
+  - 模块 2：1,931 张词卡 SM-2 间隔记忆学习会话仿真 100% 通过；
+  - 模块 3：10 大学科 403 个知识拓扑节点导航与匹配 100% 通过；
+  - 模块 4：933 条跨学科术语高频检索系统 100% 通过；
+- ✅ **Tauri 桌面应用前端编译 0 错误**：
+  - `App-EF-Lernvault`: `npx tsc -b` 0 报错；
+- ✅ **代码与数据实时同步 GitHub 远程备份**：
+  - 远端分支 `origin/main` 保持最新，确保极高可追溯性与随时回退保障。
 - ✅ **文理四大标志性数字工坊研发与 PhET 级全面升级**：
   - **文科哲学标志性工坊：伦理道德天平（`EthikWaageSim.tsx`）**：
     - 纯 SVG 古腾堡力学天平（力矩平衡与 $\arctan(\Delta U / 120)$ 物理微倾角阻尼）；
