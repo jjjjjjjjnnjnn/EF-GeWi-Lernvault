@@ -112,11 +112,11 @@ ANTWORT：中文：A走测量路图除倍数；B走功能路以膜面积作答�
 
 ## Schritt 6 — check: Selbsttest zu Zellorganellen
 
-- FRAGE:：核的职责是什么？（Was steuert der Kern） | ANTWORT:：珍护DNA并指挥全局。 / DNA hueten und alles steuern.
+- FRAGE: 核的职责是什么？（Was steuert der Kern） | ANTWORT: 珍护DNA并指挥全局。 / DNA hueten und alles steuern.
 
-- FRAGE:：动植物细胞怎么分？（Woran trennst du Tier und Pflanze） | ANTWORT:：中央液泡加叶绿体加壁。 / Vakuole plus Chloroplast plus Wand.
+- FRAGE: 动植物细胞怎么分？（Woran trennst du Tier und Pflanze） | ANTWORT: 中央液泡加叶绿体加壁。 / Vakuole plus Chloroplast plus Wand.
 
-- FRAGE:：分泌通路怎么走？（Wie läuft der Sekretionsweg） | ANTWORT:：内质网高尔基囊泡出口。 / ER, Golgi, Vesikel, Export.
+- FRAGE: 分泌通路怎么走？（Wie läuft der Sekretionsweg） | ANTWORT: 内质网高尔基囊泡出口。 / ER, Golgi, Vesikel, Export.
 
 
 `Klausur-Satz: Ohne Massstab bleibt jede Mikroskopie geraten, mit ihm wird sie gemessen.`

@@ -112,11 +112,11 @@ ANTWORT：中文：A走结算路摩尔乘32；B走毒理路以链断电作答。
 
 ## Schritt 6 — check: Selbsttest zu Zellatmung und ATP
 
-- FRAGE:：糖酵解在哪？净得多少？（Wo läuft Glykolyse, wie viel netto） | ANTWORT:：细胞质净2ATP。 / Zytoplasma, netto zwei ATP.
+- FRAGE: 糖酵解在哪？净得多少？（Wo läuft Glykolyse, wie viel netto） | ANTWORT: 细胞质净2ATP。 / Zytoplasma, netto zwei ATP.
 
-- FRAGE:：氧是什么角色？（Welche Rolle spielt Sauerstoff） | ANTWORT:：链末端电子受体。 / Endakzeptor der Kette.
+- FRAGE: 氧是什么角色？（Welche Rolle spielt Sauerstoff） | ANTWORT: 链末端电子受体。 / Endakzeptor der Kette.
 
-- FRAGE:：氰化物卡哪？（Wo blockiert Cyanid） | ANTWORT:：复合体IV，链断电。 / Komplex IV, die Kette steht.
+- FRAGE: 氰化物卡哪？（Wo blockiert Cyanid） | ANTWORT: 复合体IV，链断电。 / Komplex IV, die Kette steht.
 
 
 `Klausur-Satz: Ohne Bilanz bleibt jede Energieaussage geraten, mit 32 wird sie gerechnet.`

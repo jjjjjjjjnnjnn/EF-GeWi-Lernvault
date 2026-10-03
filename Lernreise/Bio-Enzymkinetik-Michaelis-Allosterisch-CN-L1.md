@@ -113,11 +113,11 @@ ANTWORT：中文：A走计算路读半速点；B走图像路以中心变形作�
 
 ## Schritt 6 — check: Selbsttest zu Enzymkinetik und Regulation
 
-- FRAGE:：小Km代表什么？（Was bedeutet kleines Km） | ANTWORT:：亲和力高。 / Hohe Affinitaet.
+- FRAGE: 小Km代表什么？（Was bedeutet kleines Km） | ANTWORT: 亲和力高。 / Hohe Affinitaet.
 
-- FRAGE:：竞争性抑制曲线怎么变？（Wie aendert kompetitive Hemmung die Kurve） | ANTWORT:：Km右移、vmax不变。 / Km wandert rechts, vmax bleibt.
+- FRAGE: 竞争性抑制曲线怎么变？（Wie aendert kompetitive Hemmung die Kurve） | ANTWORT: Km右移、vmax不变。 / Km wandert rechts, vmax bleibt.
 
-- FRAGE:：别构调节为何像开关？（Warum wirkt allosterisch wie ein Schalter） | ANTWORT:：终产物反馈关整条链。 / Endprodukt schaltet die Kette per Feedback ab.
+- FRAGE: 别构调节为何像开关？（Warum wirkt allosterisch wie ein Schalter） | ANTWORT: 终产物反馈关整条链。 / Endprodukt schaltet die Kette per Feedback ab.
 
 
 `Klausur-Satz: Ohne Kurvenvergleich bleibt jeder Hemmtyp geraten, mit ihm wird er gelesen.`

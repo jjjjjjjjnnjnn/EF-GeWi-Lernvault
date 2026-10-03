@@ -112,11 +112,11 @@ ANTWORT：中文：A走苦练路拼句式；B走模考路练续航加对标。 /
 
 ## Schritt 6 — check: Selbsttest zu CN-Training
 
-- FRAGE:：动词决定什么？（Was verrät der Operator） | ANTWORT:：思维动作与AFB等级。 / Denkleistung und AFB-Stufe der Aufgabe.
+- FRAGE: 动词决定什么？（Was verrät der Operator） | ANTWORT: 思维动作与AFB等级。 / Denkleistung und AFB-Stufe der Aufgabe.
 
-- FRAGE:：计算满分需要什么？（Was braucht der Rechenanteil） | ANTWORT:：公式加单位。 / Ansatz, Einsetzen, Ergebnis und Einheit.
+- FRAGE: 计算满分需要什么？（Was braucht der Rechenanteil） | ANTWORT: 公式加单位。 / Ansatz, Einsetzen, Ergebnis und Einheit.
 
-- FRAGE:：自查用什么尺？（Womit prüfst du dich selbst） | ANTWORT:：对照评分标准数点。 / Mit dem Erwartungshorizont Stichpunkt für Stichpunkt.
+- FRAGE: 自查用什么尺？（Womit prüfst du dich selbst） | ANTWORT: 对照评分标准数点。 / Mit dem Erwartungshorizont Stichpunkt für Stichpunkt.
 
 
 `Klausur-Satz: Ohne Erwartungshorizont bleibt Selbstkontrolle geraten, mit ihm wird sie gemessen.`

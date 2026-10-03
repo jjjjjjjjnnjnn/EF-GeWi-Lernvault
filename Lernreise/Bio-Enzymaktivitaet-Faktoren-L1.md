@@ -112,11 +112,11 @@ ANTWORT：中文：A走测量路算斜率；B走结构路以中心占满作答�
 
 ## Schritt 6 — check: Selbsttest zu Enzymaktivitaet und Faktoren
 
-- FRAGE:：最适温度一般多少？（Wo liegt das Temperaturoptimum） | ANTWORT:：人类约37度。 / Etwa 37 Grad beim Menschen.
+- FRAGE: 最适温度一般多少？（Wo liegt das Temperaturoptimum） | ANTWORT: 人类约37度。 / Etwa 37 Grad beim Menschen.
 
-- FRAGE:：变性可逆吗？（Ist Denaturierung reversibel） | ANTWORT:：不可逆，结构坍了。 / Nein, der Bau faellt irreversibel zusammen.
+- FRAGE: 变性可逆吗？（Ist Denaturierung reversibel） | ANTWORT: 不可逆，结构坍了。 / Nein, der Bau faellt irreversibel zusammen.
 
-- FRAGE:：底物无限加有用吗？（Hilft mehr Substrat immer） | ANTWORT:：到饱和为止，后看酶量。 / Nur bis zur Saettigung, danach zaehlt Enzymmenge.
+- FRAGE: 底物无限加有用吗？（Hilft mehr Substrat immer） | ANTWORT: 到饱和为止，后看酶量。 / Nur bis zur Saettigung, danach zaehlt Enzymmenge.
 
 
 `Klausur-Satz: Ohne Optimum bleibt jede Enzymaussage geraten, mit ihm wird sie gemessen.`

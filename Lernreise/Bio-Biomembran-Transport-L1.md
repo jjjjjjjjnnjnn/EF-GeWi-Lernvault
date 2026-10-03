@@ -113,11 +113,11 @@ ANTWORT：中文：A走计算路：经水通道的渗透；B走类型路：Na+/K
 
 ## Schritt 6 — check: Selbsttest zu Biomembran und Transport
 
-- FRAGE:：水质自由通过的是什么？（Welche Teilchen passieren die Doppelschicht frei） | ANTWORT:：小的非极性分子如O2和CO2，离子必须走蛋白。 / Kleine unpolare wie O2 und CO2; Ionen brauchen Proteine.
+- FRAGE: 水质自由通过的是什么？（Welche Teilchen passieren die Doppelschicht frei） | ANTWORT: 小的非极性分子如O2和CO2，离子必须走蛋白。 / Kleine unpolare wie O2 und CO2; Ionen brauchen Proteine.
 
-- FRAGE:：为何植物细胞在水中不爆？（Warum platzt die Pflanzenzelle in Wasser nicht） | ANTWORT:：细胞壁提供膨压反压，无壁动物细胞则破裂。 / Die Wand baut Turgor als Gegendruck auf; Tierzellen ohne Wand lysieren.
+- FRAGE: 为何植物细胞在水中不爆？（Warum platzt die Pflanzenzelle in Wasser nicht） | ANTWORT: 细胞壁提供膨压反压，无壁动物细胞则破裂。 / Die Wand baut Turgor als Gegendruck auf; Tierzellen ohne Wand lysieren.
 
-- FRAGE:：怎样认出主动运输？（Woran erkennst du aktiven Transport） | ANTWORT:：逆梯度加耗ATP。 / Bewegung gegen das Gefaelle plus ATP-Verbrauch.
+- FRAGE: 怎样认出主动运输？（Woran erkennst du aktiven Transport） | ANTWORT: 逆梯度加耗ATP。 / Bewegung gegen das Gefaelle plus ATP-Verbrauch.
 
 
 `Klausur-Satz: Ohne Delta-Psi bleibt Osmose geraten, mit Delta-Psi wird sie gerechnet.`

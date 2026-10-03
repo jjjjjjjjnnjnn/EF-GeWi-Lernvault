@@ -112,11 +112,11 @@ ANTWORT：中文：A走计数路算出中轻带各半；B走比较路指出分�
 
 ## Schritt 6 — check: Selbsttest zu DNA-Replikation und Meselson-Stahl
 
-- FRAGE:：复制的方向是什么？（In welcher Richtung baut die Polymerase） | ANTWORT:：仅能5’3，需要引物。 / Nur in 5-nach-3-Richtung und nur mit Primer.
+- FRAGE: 复制的方向是什么？（In welcher Richtung baut die Polymerase） | ANTWORT: 仅能5’3，需要引物。 / Nur in 5-nach-3-Richtung und nur mit Primer.
 
-- FRAGE:：一轮后中间带证明什么？（Was beweist ein Mittelband nach Runde eins） | ANTWORT:：半保留，全保留应为重加轻。 / Semikonservativ; konservativ zeigte schwer plus leicht.
+- FRAGE: 一轮后中间带证明什么？（Was beweist ein Mittelband nach Runde eins） | ANTWORT: 半保留，全保留应为重加轻。 / Semikonservativ; konservativ zeigte schwer plus leicht.
 
-- FRAGE:：分散模型何时出局？（Wann scheidet dispersiv aus） | ANTWORT:：第二轮，因为永不分离。 / Erst in Runde zwei, weil es nie trennt.
+- FRAGE: 分散模型何时出局？（Wann scheidet dispersiv aus） | ANTWORT: 第二轮，因为永不分离。 / Erst in Runde zwei, weil es nie trennt.
 
 
 `Klausur-Satz: Ohne Rundenlogik bleibt jede Bande geraten, mit ihr wird sie gelesen.`

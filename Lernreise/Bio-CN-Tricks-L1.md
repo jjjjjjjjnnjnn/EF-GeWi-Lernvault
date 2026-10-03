@@ -115,11 +115,11 @@ ANTWORT：中文：A走数量堆用摩尔桥；B走调节堆用最适曲线加�
 
 ## Schritt 6 — check: Selbsttest zu CN-Tricks
 
-- FRAGE:：几张卡？多少秒？（Wie viele Karten in wie vielen Sekunden） | ANTWORT:：六卡六十秒。 / Sechs Karten in sechzig Sekunden.
+- FRAGE: 几张卡？多少秒？（Wie viele Karten in wie vielen Sekunden） | ANTWORT: 六卡六十秒。 / Sechs Karten in sechzig Sekunden.
 
-- FRAGE:：水势数值抽哪卡？（Welche Karte zieht die Psi-Zahl） | ANTWORT:：渗透卡。 / Die Osmose-Karte.
+- FRAGE: 水势数值抽哪卡？（Welche Karte zieht die Psi-Zahl） | ANTWORT: 渗透卡。 / Die Osmose-Karte.
 
-- FRAGE:：杂交题抽哪卡？（Welche Karte zieht die Kreuzung） | ANTWORT:：遗传卡棋盘。 / Die Genetik-Karte mit Punnett-Quadrat.
+- FRAGE: 杂交题抽哪卡？（Welche Karte zieht die Kreuzung） | ANTWORT: 遗传卡棋盘。 / Die Genetik-Karte mit Punnett-Quadrat.
 
 
 `Klausur-Satz: Ohne Zuordnung bleibt jede Karte Deko, mit Zuordnung wird sie Waffe.`

@@ -112,11 +112,11 @@ ANTWORT：中文：A走查表路逐个翻译；B走分型路以移码皆毁作�
 
 ## Schritt 6 — check: Selbsttest zu Proteinbiosynthese
 
-- FRAGE:：转录在哪？产物是什么？（Wo läuft Transkription, was entsteht） | ANTWORT:：核内产mRNA。 / Im Kern entsteht mRNA.
+- FRAGE: 转录在哪？产物是什么？（Wo läuft Transkription, was entsteht） | ANTWORT: 核内产mRNA。 / Im Kern entsteht mRNA.
 
-- FRAGE:：翻译在哪？产物是什么？（Wo läuft Translation, was entsteht） | ANTWORT:：核糖体产肽链。 / Am Ribosom entsteht die Kette.
+- FRAGE: 翻译在哪？产物是什么？（Wo läuft Translation, was entsteht） | ANTWORT: 核糖体产肽链。 / Am Ribosom entsteht die Kette.
 
-- FRAGE:：哪种突变最轻？（Welche Mutation ist harmlos） | ANTWORT:：同义默突变不改蛋白。 / Stumme Mutation ohne Proteineffekt.
+- FRAGE: 哪种突变最轻？（Welche Mutation ist harmlos） | ANTWORT: 同义默突变不改蛋白。 / Stumme Mutation ohne Proteineffekt.
 
 
 `Klausur-Satz: Ohne Leserichtung bleibt jede Sequenz geraten, mit ihr wird sie gebaut.`

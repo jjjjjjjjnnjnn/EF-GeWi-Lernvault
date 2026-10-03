@@ -112,11 +112,11 @@ ANTWORT：中文：A走卡片路自测背诵；B走语境路称重分盒。 / �
 
 ## Schritt 6 — check: Selbsttest zu CN-Begriffe
 
-- FRAGE:：术语卡要哪三语？（Nenne drei Sprachen einer Begriffskarte） | ANTWORT:：德中英加例句。 / Deutsch, Chinesisch, Englisch plus Beispielsatz.
+- FRAGE: 术语卡要哪三语？（Nenne drei Sprachen einer Begriffskarte） | ANTWORT: 德中英加例句。 / Deutsch, Chinesisch, Englisch plus Beispielsatz.
 
-- FRAGE:：计算盒的信号是什么？（Woran erkennst du die Rechen-Kiste） | ANTWORT:：水势数值与梯度计算。 / An Psi-Zahlen und Gefaelle-Rechnung im Text.
+- FRAGE: 计算盒的信号是什么？（Woran erkennst du die Rechen-Kiste） | ANTWORT: 水势数值与梯度计算。 / An Psi-Zahlen und Gefaelle-Rechnung im Text.
 
-- FRAGE:：运输盒的信号是什么？（Woran erkennst du die Transport-Kiste） | ANTWORT:：ATP与逆梯度。 / An ATP und Richtung gegen das Gefaelle.
+- FRAGE: 运输盒的信号是什么？（Woran erkennst du die Transport-Kiste） | ANTWORT: ATP与逆梯度。 / An ATP und Richtung gegen das Gefaelle.
 
 
 `Klausur-Satz: Wer nur paukt ohne zuzuordnen, laesst die Kiste leer.`

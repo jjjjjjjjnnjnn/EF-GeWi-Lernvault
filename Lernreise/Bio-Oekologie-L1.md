@@ -112,11 +112,11 @@ ANTWORT：中文：A走核算路算磷账；B走网络路讲翻塘链。 / 德�
 
 ## Schritt 6 — check: Selbsttest zu Oekologie und Umwelt
 
-- FRAGE:：富营养化三部曲是什么？（Nenne den Eutrophierungs-Dreiklang） | ANTWORT:：营养水华耗氧。 / Naehrstoff, Bluete, Sauerstoffzehrung.
+- FRAGE: 富营养化三部曲是什么？（Nenne den Eutrophierungs-Dreiklang） | ANTWORT: 营养水华耗氧。 / Naehrstoff, Bluete, Sauerstoffzehrung.
 
-- FRAGE:：容量K是什么？（Was ist die Kapazität K） | ANTWORT:：环境长期能抗的上限。 / Dauerhaft tragbare Obergrenze des Lebensraums.
+- FRAGE: 容量K是什么？（Was ist die Kapazität K） | ANTWORT: 环境长期能抗的上限。 / Dauerhaft tragbare Obergrenze des Lebensraums.
 
-- FRAGE:：可持续怎么捕？（Wie fischt man nachhaltig） | ANTWORT:：只捕增量不动本金。 / Nur den Zuwachs entnehmen, nie den Bestand.
+- FRAGE: 可持续怎么捕？（Wie fischt man nachhaltig） | ANTWORT: 只捕增量不动本金。 / Nur den Zuwachs entnehmen, nie den Bestand.
 
 
 `Klausur-Satz: Ohne Kapazitaet bleibt jeder Fang geraten, mit K wird er geplant.`

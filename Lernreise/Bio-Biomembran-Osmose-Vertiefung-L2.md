@@ -112,11 +112,11 @@ ANTWORT：中文：A走计算路配出等渗液；B走图像路在50%处读水�
 
 ## Schritt 6 — check: Selbsttest zu Osmose-Vertiefung
 
-- FRAGE:：渗透压公式是什么？（Wie lautet van t Hoff） | ANTWORT:：π=i·c·R·T，T用开尔温。 / π = i mal c mal R mal T mit T in Kelvin.
+- FRAGE: 渗透压公式是什么？（Wie lautet van t Hoff） | ANTWORT: π=i·c·R·T，T用开尔温。 / π = i mal c mal R mal T mit T in Kelvin.
 
-- FRAGE:：临界点怎么判？（Wann liegt Grenzplasmolyse vor） | ANTWORT:：恰好50%细胞刚脱壁。 / Genau 50 Prozent der Zellen zeigen beginnende Abloesung.
+- FRAGE: 临界点怎么判？（Wann liegt Grenzplasmolyse vor） | ANTWORT: 恰好50%细胞刚脱壁。 / Genau 50 Prozent der Zellen zeigen beginnende Abloesung.
 
-- FRAGE:：死细胞能去质壁分离吗？（Deplasmolysiert eine tote Zelle） | ANTWORT:：不能，可逆性证明成活。 / Nein; Umkehrbarkeit beweist Vitalitaet.
+- FRAGE: 死细胞能去质壁分离吗？（Deplasmolysiert eine tote Zelle） | ANTWORT: 不能，可逆性证明成活。 / Nein; Umkehrbarkeit beweist Vitalitaet.
 
 
 `Klausur-Satz: Ohne 50-Prozent-Regel bleibt Grenzplasmolyse geraten, mit ihr wird sie gemessen.`

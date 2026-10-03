@@ -112,11 +112,11 @@ ANTWORT：中文：A走测量路按6比1算；B走色素路以绿光反射作答
 
 ## Schritt 6 — check: Selbsttest zu Fotosynthese
 
-- FRAGE:：光反应在哪？（Wo läuft die Lichtreaktion） | ANTWORT:：类囊体膜。 / Thylakoidmembran.
+- FRAGE: 光反应在哪？（Wo läuft die Lichtreaktion） | ANTWORT: 类囊体膜。 / Thylakoidmembran.
 
-- FRAGE:：卡尔文循环在哪？（Wo läuft der Calvin-Zyklus） | ANTWORT:：叶绿体基质。 / Stroma des Chloroplasten.
+- FRAGE: 卡尔文循环在哪？（Wo läuft der Calvin-Zyklus） | ANTWORT: 叶绿体基质。 / Stroma des Chloroplasten.
 
-- FRAGE:：氧来自哪？（Woher stammt der Sauerstoff） | ANTWORT:：来自水不是CO2。 / Aus Wasser, nicht aus CO2.
+- FRAGE: 氧来自哪？（Woher stammt der Sauerstoff） | ANTWORT: 来自水不是CO2。 / Aus Wasser, nicht aus CO2.
 
 
 `Klausur-Satz: Ohne Minimumgesetz bleibt jeder Duengeversuch geraten, mit ihm wird er geplant.`
