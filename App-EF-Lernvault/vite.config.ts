@@ -147,8 +147,10 @@ export default defineConfig({
     },
   },
   server: {
+    host: "0.0.0.0",
     port: 1420,
     strictPort: true,
+    allowedHosts: true,
     // vault-md per ?raw (exemplar-kurs aus ../../Lernreise) — dev + vitest
     fs: { allow: [".."] },
   },
