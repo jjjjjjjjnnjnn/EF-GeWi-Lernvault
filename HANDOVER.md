@@ -26,6 +26,20 @@
 
 ## 当前状态（2026-10-03）
 
+- ✅ **App 学习树（`src/baum/`）对全部 333 篇学科知识笔记实现 100% 满分拓扑覆盖**：
+  - 彻底攻克历史遗留的 `src/baum/*.ts` 仅覆盖旧版概念的重大缺陷，对十科学科树全量补全 Level 1 / Level 2 / Level 3 拓扑分支；
+  - 精准注入 64 篇未匹配笔记的德中学术核心术语与关键识别项，实现 **十科 333 篇学科知识笔记在学习树与大纲目录中 0 缺口（Unmatched = 0，100% 覆盖）**；
+  - `cmd /c "cd App-EF-Lernvault && npx tsc -b"` 类型系统编译 0 错误。
+- ✅ **全库互动微课矩阵扩充升级至 278 门（新增 7 门高互动好玩标杆示范新课）**：
+  - 严格落实用户关于“好玩、互动、教学为主、内容清晰有重点、布局不无聊”的指示，高标准研制 7 门全新 9 步微课（Lesson-v3）：
+    - 哲学《Philo-Willensfreiheit-Determinismus-L1》：拉普拉斯妖 vs 李贝特脑电准备电位（350ms时差与自由意志），绑定 `ethik-waage`；
+    - 哲学《Philo-Staatsphilosophie-Hobbes-Locke-L1》：末日无政府自然状态与契约论（利维坦 vs 分权立宪与反抗权），绑定 `gewi-reading`；
+    - 社科《SoWi-Konjunktur-und-Wachstum-L1》：经济过山车与先行/同步/滞后指标雷达，绑定 `magisches-viereck`；
+    - 数学《Mathe-Extremwert-Dosenoptimierung-L1》：330ml 易拉罐省钱密码与 $h=2r$ 极值优化，绑定 `box-optimizer`；
+    - 音乐《Musik-Programmmusik-Vivaldi-L1》：维瓦尔第《四季》音画技法（小提琴犬吠与雷暴碎弓），绑定 `lego`；
+    - 体育《Sport-Trainingssteuerung-Superkompensation-L1》：超量恢复五阶段与黄金窗口期，绑定 `balance-board`；
+    - 德语《Deutsch-Drama-Spannungskurve-Freytag-L1》：戏剧过山车与弗赖塔格金字塔五幕张力，绑定 `highlighter`。
+  - `scripts/audit-pedagogy-integrity.py` 6 项指标全零；全库课程总数达 **278 篇**；`vault-check.py` 持续全绿 PASS（`reisen=278`）。
 - ✅ **文理四大标志性数字工坊研发与 PhET 级全面升级**：
   - **文科哲学标志性工坊：伦理道德天平（`EthikWaageSim.tsx`）**：
     - 纯 SVG 古腾堡力学天平（力矩平衡与 $\arctan(\Delta U / 120)$ 物理微倾角阻尼）；

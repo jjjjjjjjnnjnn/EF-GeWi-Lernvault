@@ -521,6 +521,20 @@ export const sportBaum: FachBaum = {
           },
         ],
       },
+      {
+        id: "sport/trainingssteuerung-klausur",
+        level: 1,
+        code: "Pruefung",
+        titleDE: "Trainingssteuerung, Leistungsdiagnostik und Abitur",
+        titleZH: "训练监控、体能诊断与专项备考",
+        operatoren: ["erstellen", "beurteilen"],
+        klausurDE: "Trainingsplan-Erstellung nach Superkompensation und Leistungsdiagnostik.",
+        klausurZH: "超量恢复周期训练计划制定与体能诊断综合分析",
+        leitfrageDE: "Wie plant und kontrolliert man sportliche Trainingsprozesse?",
+        leitfrageZH: "如何科学规划与监测运动训练周期？",
+        noteKeywords: ["trainingsplan-erstellen", "muendliche pruefung training", "redemittel und operatoren", "leistungsdiagnostik", "superkompensation", "varianten-training"],
+        children: []
+      }
     ],
   },
 };

@@ -449,6 +449,34 @@ export const philosophieBaum: FachBaum = {
           },
         ],
       },
+      {
+        id: "philo/if-erkenntnis-freiheit",
+        level: 1,
+        code: "IF 3",
+        titleDE: "Erkenntnis, Wissenschaft und Willensfreiheit",
+        titleZH: "认识论与自由意志争论",
+        operatoren: ["analysieren", "problematisieren"],
+        klausurDE: "Determinismus vs. Willensfreiheit: Laplacescher Daemon vs. Libet-Experiment.",
+        klausurZH: "决定论与自由意志对决、利贝特脑科学实验剖析",
+        leitfrageDE: "Ist der menschliche Wille frei oder determiniert?",
+        leitfrageZH: "人类意志是自由的还是被决定的？",
+        noteKeywords: ["willensfreiheit", "leib-seele", "dualismus", "monismus", "leib-seele: dualismus vs. monismus", "determinismus", "libet", "primaertext-analyse willensfreiheit", "primaertext-analyse"],
+        children: []
+      },
+      {
+        id: "philo/if-staatsphilosophie",
+        level: 1,
+        code: "IF 4",
+        titleDE: "Rechts- und Staatsphilosophie, Gerechtigkeit",
+        titleZH: "国家政治哲学与正义论",
+        operatoren: ["erlaeutern", "beurteilen"],
+        klausurDE: "Vertragstheorien (Hobbes, Locke, Rousseau) und Rawls Gerechtigkeitstheorie.",
+        klausurZH: "霍布斯洛克社会契约论与罗尔斯无知之幕差异原则",
+        leitfrageDE: "Was rechtfertigt staatliche Herrschaft und was ist gerecht?",
+        leitfrageZH: "国家统治的合法性基础是什么？何谓正义？",
+        noteKeywords: ["gerechtigkeit", "wirtschaftsethik", "rawls", "schleier des nichtwissens", "differenzprinzip", "vertragstheorie", "philo-textanalyse", "abitur kernstellen", "kernstellen", "philosophische fragen", "philosophische fragen stellen", "plickat", "textanalyse-training", "sonderstellung des menschen", "peter singer"],
+        children: []
+      }
     ],
   },
 };

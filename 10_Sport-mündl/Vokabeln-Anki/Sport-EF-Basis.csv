@@ -117,3 +117,39 @@ Absprung;起跳;Der Absprung ist die Hauptphase des Weitsprungs.;Sport;Weitsprun
 Flugphase;腾空相;In der Flugphase kann der Sportler nur die Haltung optimieren.;Sport;Weitsprung
 Koerper-Schwerpunkt;身体重心;Nach dem Absprung folgt der Koerper-Schwerpunkt einer festen Parabel.;Sport;Weitsprung
 Horizontal- und Vertikalgeschwindigkeit;水平/垂直速度;Horizontal- und Vertikalgeschwindigkeit bestimmen zusammen die Flugkurve.;Sport;Weitsprung
+
+die anaerob-alaktazide Phase;无氧非乳酸阶段;Die anaerob-alaktazide Phase nutzt ATP und Kreatinphosphat.;Sport;Energie
+die anaerob-laktazide Phase;无氧乳酸阶段;Die anaerob-laktazide Phase fuehrt zur Muskelazidose.;Sport;Energie
+die aerobe Glykolyse;有氧糖酵解;Die aerobe Glykolyse verbrennt Glukose unter Sauerstoffzufuhr.;Sport;Energie
+die Lipolyse;脂肪酸氧化;Die Lipolyse gewinnt Energie aus freien Fettsaeuren.;Sport;Energie
+die metabolische Azidose;代谢性酸中毒;Metabolische Azidose hemmt die Muskelkontraktionsenzyme.;Sport;Energie
+die Individuelle Anaerobe Schwelle;个体无氧阈;Die Individuelle Anaerobe Schwelle liegt bei maximalem Laktat-Gleichgewicht.;Sport;Energie
+die Flussrate;能量流动速率;Die Flussrate misst erzeugte Energie pro Zeiteinheit.;Sport;Energie
+das DORFKRU-Modell;DORFKRU七大协调模型;Das DORFKRU-Modell buendelt die 7 koordinativen Faehigkeiten.;Sport;Koordination
+die Differenzierungsfaehigkeit;动作分化能力;Differenzierungsfaehigkeit steuert die Feinabstimmung der Muskelkraft.;Sport;Koordination
+die Kopplungsfaehigkeit;动作连结能力;Kopplungsfaehigkeit verbindet Teilbewegungen harmonisch.;Sport;Koordination
+die Umstellungsfaehigkeit;即时应变能力;Umstellungsfaehigkeit passt Aktionen an neue Bedingungen an.;Sport;Koordination
+der kinaesthetische Analysator;本体感觉分析器;Der kinaesthetische Analysator meldet Gelenkwinkel und Muskelspannung.;Sport;Koordination
+der vestibulaere Analysator;前庭平衡分析器;Der vestibulaere Analysator meldet Dreh- und Linearbeschleunigungen.;Sport;Koordination
+die Neumaier-Druckbedingungen;诺伊迈尔压力条件;Neumaier-Druckbedingungen steigern das koordinative Anforderungsniveau.;Sport;Koordination
+der Praezisionsdruck;精准度压力;Praezisionsdruck verlangt hoechste Zielgenauigkeit unter Belastung.;Sport;Koordination
+der Zeitdruck;时间压力;Zeitdruck verkuerzt die verfuegbare Reaktions- und Bewegungszeit.;Sport;Koordination
+das Arousal;唤醒水平;Das Arousal spiegelt die neuronale Erregung des zentralen Nervensystems.;Sport;Sportpsychologie
+die Inverted-U-Hypothese;倒U型假说;Die Inverted-U-Hypothese beschreibt das Erregungsoptimum fuer Leistung.;Sport;Sportpsychologie
+das Choking under Pressure;高压崩溃;Choking under Pressure blockiert automatisierte Bewegungsmuster.;Sport;Sportpsychologie
+das IZOF-Modell;最佳机能区假说;Das IZOF-Modell beruecksichtigt individuelle Erregungsoptima.;Sport;Sportpsychologie
+die kognitive Angst;认知性焦虑;Kognitive Angst manifestiert sich in negativen Versagensgedanken.;Sport;Sportpsychologie
+die somatische Angst;躯体性焦虑;Somatische Angst aeussert sich in Pulsrasen und Muskelzittern.;Sport;Sportpsychologie
+das ideomotorische Training;意象演练/心理表象训练;Ideomotorisches Training visualisiert Bewegungen aus der Innenperspektive.;Sport;Sportpsychologie
+die ballorientierte Raumdeckung;随球区域防守;Die ballorientierte Raumdeckung verdichtet Raeume am Ballort.;Sport;Taktik
+die Viererkette;四后卫防线;Die Viererkette verschiebt synchron als elastisches Abwehrband.;Sport;Taktik
+das diagonale Einruecken;对角内收;Diagonales Einruecken des Aussenverteidigers schuetzt das Torzentrum.;Sport;Taktik
+der Schnittstellenpass;穿透防线传球/直塞;Ein Schnittstellenpass nutzt Luecken zwischen den Abwehrketten.;Sport;Taktik
+die Abseitsfalle;越位陷阱;Die Abseitsfalle erfordert synchrones Vorschieben der Kette.;Sport;Taktik
+das Uebergabeprinzip;区域交接原则;Das Uebergabeprinzip verhindert das Herausziehen aus der Zone.;Sport;Taktik
+die muskulaere Dysbalance;肌肉失衡;Muskulaere Dysbalance entsteht durch einseitiges Sitzen.;Sport;Gesundheit
+das Janda-Kreuzsyndrom;扬达交叉综合征;Das Janda-Kreuzsyndrom zeigt typische X-foermige Verkrampfungsmuster.;Sport;Gesundheit
+der Musculus iliopsoas;髂腰肌;Der Musculus iliopsoas verkuerzt durch chronisches Sitzen.;Sport;Gesundheit
+die gluteale Amnesie;臀肌失忆症;Gluteale Amnesie beschreibt die Inaktivierung der Gesaessmuskeln.;Sport;Gesundheit
+die Kraftausdauer-Methode;力量耐力训练法;Die Kraftausdauer-Methode arbeitet mit 20 bis 30 Wiederholungen.;Sport;Fitness
+die Hyperlordose;腰椎过度前凸/骨盆前倾;Hyperlordose entsteht durch den Zug des verkuerzten Hueftbeugers.;Sport;Gesundheit

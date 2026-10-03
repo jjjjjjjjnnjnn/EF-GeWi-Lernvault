@@ -82,3 +82,44 @@ Hauptsatz;第一主题;Der Hauptsatz steht am Anfang und legt die Haupttonart fe
 Seitensatz;第二主题;Der Seitensatz steht in der Exposition in der Dominante.;Musik;Sonatensatzform
 Ueberleitung;连接部;Die Ueberleitung verbindet Hauptsatz und Seitensatz und moduliert.;Musik;Sonatensatzform
 Coda;结尾部;Die Coda bestaetigt am Ende noch einmal die Haupttonart.;Musik;Sonatensatzform
+
+der Grundton;基音;Der Grundton bestimmt die wahrgenommene Tonhoehe.;Musik;Akustik
+die Obertonreihe;自然泛音列;Die Obertonreihe folgt ganzzahligen Frequenzverhaeltnissen.;Musik;Akustik
+der Teilton;分音/谐音;Jeder Teilton traegt zur Klangfarbe bei.;Musik;Akustik
+das Frequenzspektrum;频谱;Das Frequenzspektrum zeigt die Amplituden der Tealtoene.;Musik;Akustik
+die Fourier-Synthese;傅里叶合成;Die Fourier-Synthese baut Klaenge aus Sinuswellen auf.;Musik;Akustik
+der Formant;共鸣峰;Formanten bestimmen den Vokalklang einer Stimme.;Musik;Akustik
+der reine Sinuston;纯正弦音;Ein reiner Sinuston enthaelt keinerlei Obertoene.;Musik;Akustik
+die Grundgestalt;基础序列;Die Grundgestalt enthaelt alle zwoelf chromatischen Toene.;Musik;Zwoelftontechnik
+die Dodekaphonie;十二音体系;Die Dodekaphonie schafft die Hierarchie der Tonalitaet ab.;Musik;Zwoelftontechnik
+die Umkehrung der Reihe;序列倒影;Die Umkehrung der Reihe spiegelt alle Intervalle vertikal.;Musik;Zwoelftontechnik
+der Krebs der Reihe;序列逆行;Der Krebs der Reihe liest die Toene von hinten nach vorn.;Musik;Zwoelftontechnik
+die Krebsumkehrung;逆行倒影;Die Krebsumkehrung kombiniert Krebs und Intervallspiegelung.;Musik;Zwoelftontechnik
+die Emanzipation der Dissonanz;不协和音的解放;Die Emanzipation der Dissonanz befreit Reibungen vom Aufloesungszwang.;Musik;Moderne
+die Zweite Wiener Schule;第二维也纳乐派;Schoenberg, Berg und Webern bilden die Zweite Wiener Schule.;Musik;Moderne
+die Leitmotivtechnik;主导动机技术;Die Leitmotivtechnik ordnet musikalische Motive Figuren zu.;Musik;Filmmusik
+die motivische Transformation;动机变奏;Motivische Transformation zeigt die Wandlung einer Figur.;Musik;Filmmusik
+das Mickey-Mousing;米老鼠式同步;Mickey-Mousing vertont jede koerperliche Bewegung bildsynchron.;Musik;Filmmusik
+das Underscoring;背景配乐铺垫;Underscoring untermalt die Szene mit stimmungstragenden Akkorden.;Musik;Filmmusik
+die Source Music;场景音乐;Source Music toent aus dem Radio im Filmraum.;Musik;Filmmusik
+die nicht-diegetische Musik;叙事外配乐;Nicht-diegetische Musik hoeren nur die Kinobesucher.;Musik;Filmmusik
+das 12-Takt-Blues-Schema;12小节布鲁斯结构;Das 12-Takt-Blues-Schema basiert auf den Stufen I, IV und V.;Musik;Jazz-Harmonik
+die Blue Notes;蓝调音;Blue Notes trüben die Terz, Quinte und Septime expressiv ein.;Musik;Jazz-Harmonik
+die II-V-I-Verbindung;二-五-一进行;Die II-V-I-Verbindung ist die archetypische Jazz-Kadenz.;Musik;Jazz-Harmonik
+der Turnaround;回转/周转和弦;Der Turnaround fuehrt harmonisch zurueck zum Chorusanfang.;Musik;Jazz-Harmonik
+der Walking Bass;行走低音;Der Walking Bass schreitet kontinuierlich in Viertelnoten.;Musik;Jazz-Harmonik
+das Call and Response;呼应式对唱;Call and Response spiegelt afroamerikanische Dialogstrukturen.;Musik;Jazz-Harmonik
+die Periodenbildung;乐段对称结构;Die klassische Periode besteht aus 4 Takten Vordersatz und 4 Takten Nachsatz.;Musik;Wiener Klassik
+der Alberti-Bass;阿尔贝蒂低音;Der Alberti-Bass zerlegt Dreiklaenge in der Folge tief-hoch-mittel-hoch.;Musik;Wiener Klassik
+das Sehnsuchtsmotiv;渴望动机;Das Sehnsuchtsmotiv nutzt Chromatik zur Darstellung unerfuellbaren Verlangens.;Musik;Romantik
+der Tristan-Akkord;特里斯坦和弦;Der Tristan-Akkord markiert den Beginn der modernen Harmonik.;Musik;Romantik
+das Rubato;自由速度;Das Rubato gestattet expressive Temposchwankungen.;Musik;Romantik
+die Fuge;赋格;Die Fuge ist der Hoehepunkt polyphoner Kontrapunktik.;Musik;Formenlehre
+der Dux;导句/赋格主句;Der Dux traegt das Thema zuerst in der Tonika vor.;Musik;Formenlehre
+der Comes;答句;Der Comes beantwortet den Dux auf der Dominante.;Musik;Formenlehre
+das Kontrasubjekt;对题;Das Kontrasubjekt begleitet Comes oder Dux als feste Gegenstimme.;Musik;Formenlehre
+die Engfuehrung;密接交叠;In der Engfuehrung setzen Stimmen vor Themenende verfrueht ein.;Musik;Formenlehre
+die Polyphonie;复调;Polyphonie gewaehrleistet voellige Selbststaendigkeit aller Stimmen.;Musik;Formenlehre
+die Homophonie;主调;Homophonie ordnet Begleitstimmen einer Hauptmelodie unter.;Musik;Formenlehre
+die Tonmalerei;描绘性音响;Die Tonmalerei ahmt Naturlaute instrumental nach.;Musik;Programmmusik
+die Ritornellform;重来段式;Die Ritornellform wechselt Tutti-Refrain und Solo-Episoden.;Musik;Barock

@@ -42,4 +42,47 @@ export const matheBaum: FachBaum = { fach: "Mathe", nameDE: "Mathematik", nameZH
 { id: "mathe/if2/lagebeziehungen/windschief", level: 3, code: "", titleDE: "Windschief", titleZH: "异面", operatoren: ["untersuchen", "begründen", "beschreiben"], klausurDE: "Teil B Nachweis: windschief durch Ausschluss nachweisen. Darstellungsleistung zählt.", klausurZH: "Teil B 证明题：用排除法证明异面；表达分计入成绩。", leitfrageDE: "Wann heißen zwei Geraden windschief?", leitfrageZH: "两条直线何时叫异面？", noteKeywords: ["windschief", "lagebeziehung", "schnittpunkt", "parameterform"], children: [] }
 ] }
 ] }
-] } };
+,
+      {
+        id: "mathe/if-stochastik",
+        level: 1,
+        code: "IF 3",
+        titleDE: "Stochastik und Wahrscheinlichkeitsrechnung",
+        titleZH: "概率论与数理统计",
+        operatoren: ["berechnen", "modellieren", "interpretieren"],
+        klausurDE: "Baumdiagramme, Vierfeldertafeln, bedingte Wahrscheinlichkeit und Binomialverteilung.",
+        klausurZH: "树状图、四格表、条件概率、贝叶斯公式与二项分布建模",
+        leitfrageDE: "Wie modelliert man Zufallsprozesse mathematisch exakt?",
+        leitfrageZH: "如何精确用数学建立随机过程模型？",
+        noteKeywords: ["stochastik", "baumdiagramm", "vierfeldertafel", "bedingte wahrscheinlichkeit", "satz von bayes", "binomialverteilung", "baumdiagramm und vierfeldertafel", "beurteilende statistik", "konfidenzintervall", "prognoseintervall", "prognose- und konfidenzintervall"],
+        children: []
+      },
+      {
+        id: "mathe/if-extremwert",
+        level: 1,
+        code: "Anwendung",
+        titleDE: "Extremwertprobleme und Optimierung",
+        titleZH: "最值优化与实际建模",
+        operatoren: ["modellieren", "bestimmen"],
+        klausurDE: "Zielfunktion mit Nebenbedingung aufstellen, Extremstelle bestimmen und Randwerte pruefen.",
+        klausurZH: "目标函数与约束条件构造、求导判定极值与端点检验",
+        leitfrageDE: "Wie loest man Optimierungsaufgaben mit Nebenbedingungen?",
+        leitfrageZH: "如何利用导数求解带约束条件的最优化问题？",
+        noteKeywords: ["extremwert-schema", "dosenoptimierung", "nebenbedingung", "zielfunktion", "extremwertprobleme", "varianten-training", "solaranlage"],
+        children: []
+      },
+      {
+        id: "mathe/methoden-und-lgs",
+        level: 1,
+        code: "Methoden",
+        titleDE: "Lineare Gleichungssysteme, Formeln und Tricks",
+        titleZH: "线性方程组、高斯消元与解题速查",
+        operatoren: ["loesen", "anwenden"],
+        klausurDE: "LGS mit Gauss-Verfahren in Stufenform ueberfuehren; Formelhandbuch und Tricks.",
+        klausurZH: "高斯消元阶梯化、CN解题程序与公式全览",
+        leitfrageDE: "Wie loest man Gleichungssysteme systematisch?",
+        leitfrageZH: "如何系统高效求解多元方程组？",
+        noteKeywords: ["gleichungssysteme", "gauss-verfahren", "stufenform", "lgs", "cn mathe formelhandbuch", "cn tricks", "formel-spickzettel", "cn formelhandbuch", "formelhandbuch de-cn-en", "zke 2027", "zke 2027 training", "cn training transferaufgaben", "mathe-abitur-aufgabentraining", "mathe operatoren", "cn mathe training"],
+        children: []
+      }
+    ] } };

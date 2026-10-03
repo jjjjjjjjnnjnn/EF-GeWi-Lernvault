@@ -159,3 +159,8 @@ Energie;能量;Die Energie eines Koerpers wird in Joule gemessen.;Physik;Formeln
 Strecke;路程;Die Strecke ist die gesamte Laenge des zurueckgelegten Weges.;Physik;Kinematik
 Flaeche unter der Linie;曲线下面积;Die Flaeche unter der Linie im v-t-Diagramm liefert die Strecke.;Physik;Kinematik
 Reibungskraft;摩擦力;Die Reibungskraft wirkt immer entgegen der relativen Bewegung.;Physik;Dynamik
+
+die De-Broglie-Wellenlaenge;德布罗意物质波长;Die De-Broglie-Wellenlaenge verknuepft Impuls und Welle.;Physik;Quantenphysik
+die Bornsche Wahrscheinlichkeitsinterpretation;波恩几率诠释;Die Bornsche Wahrscheinlichkeitsinterpretation deutet das Betragsquadrat der Wellenfunktion.;Physik;Quantenphysik
+die Welcher-Weg-Information;哪条路径信息;Die Welcher-Weg-Information zerstoert das Interferenzmuster.;Physik;Quantenphysik
+das Komplementaritaetsprinzip;互补原理;Bohrs Komplementaritaetsprinzip schliesst gleichzeitige Wellen- und Teilchenmessung aus.;Physik;Quantenphysik

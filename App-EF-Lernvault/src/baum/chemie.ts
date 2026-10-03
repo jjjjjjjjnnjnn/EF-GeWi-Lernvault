@@ -21,6 +21,78 @@ export const chemieBaum: FachBaum = {
     noteKeywords: [],
     children: [
       {
+        id: "chemie/if-elektrochemie",
+        level: 1,
+        code: "IF 3",
+        titleDE: "Elektrochemie und Redoxprozesse",
+        titleZH: "电化学与氧化还原过程",
+        operatoren: ["berechnen", "darstellen", "erklaeren"],
+        klausurDE: "Galvanische Zelle, Standardpotenziale, Nernst-Gleichung und Elektrolyse loesen.",
+        klausurZH: "原电池、电极电势差与氧化还原电子转移计算",
+        leitfrageDE: "Wie wird chemische Energie in elektrische Energie umgewandelt?",
+        leitfrageZH: "化学能如何转化为电能？",
+        noteKeywords: ["elektrochemie", "galvanische zelle", "spannungsreihe", "vier-elemente-raster", "redox", "anode", "kathode", "redoxpotential"],
+        children: [
+          {
+            id: "chemie/if-elektrochemie/raster",
+            level: 2,
+            code: "",
+            titleDE: "Vier-Elemente-Raster der Elektrochemie",
+            titleZH: "电化学四要素分析网格",
+            operatoren: ["anwenden"],
+            klausurDE: "Anode (Oxidation) und Kathode (Reduktion) sicher zuordnen.",
+            klausurZH: "正负极与氧化还原半反应四要素识别",
+            leitfrageDE: "Wo findet welche Reaktion statt?",
+            leitfrageZH: "反应发生在哪个电极？",
+            noteKeywords: ["vier-elemente-raster", "elektrochemie q1 grundlagen", "donator-halbzelle", "akzeptor-halbzelle"],
+            children: []
+          }
+        ]
+      },
+      {
+        id: "chemie/if-thermodynamik",
+        level: 1,
+        code: "IF 4",
+        titleDE: "Thermodynamik und Kinetik",
+        titleZH: "化学热力学与反应动力学",
+        operatoren: ["berechnen", "auswerten"],
+        klausurDE: "Reaktionsenthalpie ueber Satz von Hess und Bindungsenergien bestimmen.",
+        klausurZH: "盖斯定律路径法计算反应焓变与能量守恒",
+        leitfrageDE: "Wie berechnet man die Energiebilanz chemischer Reaktionen?",
+        leitfrageZH: "如何计算化学反应的能量收支？",
+        noteKeywords: ["hess-pfadmethode", "reaktionsenthalpie", "satz von hess", "enthalpie", "bildungsenthalpie", "ionengleichung"],
+        children: [
+          {
+            id: "chemie/if-thermodynamik/hess",
+            level: 2,
+            code: "",
+            titleDE: "Hess-Pfadmethode (CN-Methode)",
+            titleZH: "盖斯定律路径法 (CN-Methode)",
+            operatoren: ["berechnen"],
+            klausurDE: "Reaktionsenthalpien schrittweise ueber Standardbildungsenthalpien ermitteln.",
+            klausurZH: "生成焓与反应焓阶梯计算程序",
+            leitfrageDE: "Wie setzt man Hess sche Zyklen an?",
+            leitfrageZH: "如何规范列写盖斯循环？",
+            noteKeywords: ["hess-pfadmethode", "ionengleichung in fuenf schritten", "ionengleichung"],
+            children: []
+          }
+        ]
+      },
+      {
+        id: "chemie/methoden-und-training",
+        level: 1,
+        code: "Pruefung",
+        titleDE: "Basiskonzepte, Formeln und Abiturtraining",
+        titleZH: "基本概念轴、公式手册与应试训练",
+        operatoren: ["anwenden", "ueberpruefen"],
+        klausurDE: "Klausurrelevante Methoden, CN-Formeln und Abituraufgaben.",
+        klausurZH: "基本概念三大轴、应试技巧与真题考核",
+        leitfrageDE: "Wie besteht man die Klausur mit Bestnote?",
+        leitfrageZH: "如何拿下化学考试满分标答？",
+        noteKeywords: ["basiskonzepte", "funktionsgruppen", "nachweisreaktionen", "oxidationsreihe", "veresterung", "reaktionsmechanismen", "elektronenpaar", "formalladung", "polarisation", "drei achsen", "cn formelhandbuch", "cn tricks", "formel-spickzettel", "q1/q2-terminologie", "chemie-ef-grundlagen-training", "chemie-abitur-aufgabentraining", "chemie operatoren", "cn chemie training"],
+        children: []
+      },
+      {
         id: "chemie/if1",
         level: 1,
         code: "IF 1",

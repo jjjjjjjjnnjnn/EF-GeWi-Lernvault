@@ -160,3 +160,7 @@ Probe;验算;Nach dem Loesen mache ich mit einer Probe die Kontrolle.;Mathe;Stec
 hilfsmittelfreier Teil;免工具部分;Im hilfsmittelfreien Teil darf ich keinen Taschenrechner benutzen.;Mathe;ZKE
 Teil B mit Hilfsmitteln;工具部分;Im Teil B mit Hilfsmitteln schreibe ich jeden Rechenschritt auf.;Mathe;ZKE
 Darstellungsleistung;呈现能力;Die Darstellungsleistung bewertet den vollstaendigen Loesungsweg.;Mathe;ZKE
+
+die Hessesche Normalenform;黑塞标准式;Die Hessesche Normalenform normiert den Normalenvektor auf Laenge eins.;Mathe;Analytische-Geometrie
+der Einheitsnormalenvektor;单位法向量;Der Einheitsnormalenvektor steht senkrecht auf der Ebene und hat die Laenge eins.;Mathe;Analytische-Geometrie
+das Lotgeraden-Verfahren;垂线法/垂足法;Das Lotgeraden-Verfahren berechnet den Lotfusspunkt auf der Ebene.;Mathe;Analytische-Geometrie

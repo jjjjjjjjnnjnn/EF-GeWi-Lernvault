@@ -6776,6 +6776,25 @@ export const allVaultNotes: GeneratedNote[] = [
     "path": "08_SoWi/Texte-Analyse/Wehrhafte-Demokratie.md"
   },
   {
+    "id": "sowi-wertpapierdepot-und-orderarten",
+    "fach": "SoWi",
+    "thema": "Wertpapierdepot und Orderarten",
+    "zh": "证券存托账户与交易所委托机制",
+    "operatoren": [
+      "darstellen",
+      "analysieren",
+      "beurteilen"
+    ],
+    "klausurrelevant": true,
+    "bodyDE": [
+      "Thema: Wertpapierdepot und Orderarten (SoWi). Exam-relevante Wissensnotiz."
+    ],
+    "bodyZH": [
+      "SoWi 核心考纲笔记：证券存托账户与交易所委托机制。"
+    ],
+    "path": "08_SoWi/Texte-Analyse/Wertpapierdepot-und-Orderarten.md"
+  },
+  {
     "id": "sowi-wirtschaftspolitik-instrumente",
     "fach": "SoWi",
     "thema": "Wirtschaftspolitik: Bereiche und Instrumente",

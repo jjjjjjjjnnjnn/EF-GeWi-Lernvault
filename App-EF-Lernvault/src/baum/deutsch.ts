@@ -74,4 +74,19 @@ export const deutschBaum: FachBaum = { fach: "Deutsch", nameDE: "Deutsch", nameZ
 { id: "deutsch/if4/multimodalitaet/ton-film", level: 3, code: "", titleDE: "Ton-Film", titleZH: "声音与影像", operatoren: ["untersuchen", "interpretieren"], klausurDE: "Aufgabenart II, AFB II-III, Film-Ton-Baustein", klausurZH: "任务类型 II,AFB II-III,影视声音模块", leitfrageDE: "Wie steuert der Ton den Blick?", leitfrageZH: "声音如何引导视线?", noteKeywords: ["ton-film", "multimodal", "film"], children: [] }
 ] }
 ] }
-] } };
+,
+      {
+        id: "deutsch/klausur-aufgabenarten",
+        level: 1,
+        code: "Pruefung",
+        titleDE: "Abitur-Aufgabenarten, Sprachphilosophie und digitale Medien",
+        titleZH: "会考题型全览、语言哲学与数字媒体",
+        operatoren: ["analysieren", "eroertern", "gestalten"],
+        klausurDE: "Aufgabenarten I-IV, Filterblasen in der digitalen Oeffentlichkeit und Sprachtheorien.",
+        klausurZH: "四类官方高考题型、算法回音室过滤器气泡与语言思维哲学分析",
+        leitfrageDE: "Wie gestaltet sich sprachliche und mediale Urteilskraft?",
+        leitfrageZH: "如何在考场展现批判性语言与媒体鉴别力？",
+        noteKeywords: ["abitur-aufgabenarten", "aufgabenarten i-iv", "zke-anschluss", "filterblase", "digitale oeffentlichkeit", "muendliche abiturpruefung", "qa-kette", "sprache denken wirklichkeit", "sprachskepsis", "spracherwerb"],
+        children: []
+      }
+    ] } };

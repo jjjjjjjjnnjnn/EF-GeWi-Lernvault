@@ -1,0 +1,28 @@
+die Bernoulli-Kette;伯努利试验序列;Eine Bernoulli-Kette der Laenge n besteht aus unabhaengigen Versuchen mit konstanter Erfolgswahrscheinlichkeit p.;Mathe;Stochastik
+die Binomialverteilung;二项分布;Die Zufallsgroesse X beschreibt die Anzahl der Treffer und ist nach B(n, p) binomialverteilt.;Mathe;Stochastik
+der Binomialkoeffizient;二项式系数;Der Binomialkoeffizient n ueber k gibt die Anzahl der Pfade mit genau k Treffern im Baumdiagramm an.;Mathe;Stochastik
+der Erwartungswert der Binomialverteilung;二项分布期望值;Fuer eine binomialverteilte Zufallsgroesse gilt der Erwartungswert E(X) = n * p.;Mathe;Stochastik
+der Rotationskoerper;旋转体;Ein Rotationskoerper entsteht durch die kontinuierliche Drehung eines Funktionsgraphen um die Koordinatenachse.;Mathe;Analysis
+das uneigentliche Integral;反常积分/广义积分;Ein uneigentliches Integral liegt vor wenn mindestens eine Integrationsgrenze unendlich ist oder der Integrand eine Polstelle aufweist.;Mathe;Analysis
+das Zylinderscheiben-Verfahren;圆盘分割积分法;Beim Zylinderscheiben-Verfahren wird das Rotationsvolumen durch infinitesimale Zylinderscheiben mit Grundflaeche pi mal f(x) Quadrat angenaehert.;Mathe;Analysis
+die Grenzwertkonvergenz;极限收敛性;Ein uneigentliches Integral konvergiert wenn der Grenzwert des endlichen Integrals existiert und eine reelle Zahl ergibt.;Mathe;Analysis
+die Parameterform der Ebene;平面的参数方程;Die Parameterform einer Ebene wird durch einen Stuetzvektor und zwei linear unabhaengige Spannvektoren aufgespannt.;Mathe;Analytische Geometrie
+der Normalenvektor;法向量;Ein Normalenvektor steht orthogonal auf allen Richtungsvektoren einer Ebene und bestimmt ihre Lage.;Mathe;Analytische Geometrie
+die Koordinatenform der Ebene;平面的坐标方程;In der Koordinatenform entsprechen die Koeffizienten von x1 x2 x3 direkt den Komponenten des Normalenvektors.;Mathe;Analytische Geometrie
+die Hessesche Normalform;黑塞标准式;Die Hessesche Normalform normiert den Normalenvektor auf die Laenge Eins und liefert direkt den Punkt-Ebene-Abstand.;Mathe;Analytische Geometrie
+die Hauptbedingung;优化主条件/目标函数;Die Hauptbedingung formuliert die zu maximierende oder minimierende Zielgroesse mathematisch.;Mathe;Analysis
+die Nebenbedingung;约束条件/副条件;Die Nebenbedingung stellt eine feste geometrische oder physikalische Relation zwischen den Variablen dar.;Mathe;Analysis
+die Zielfunktion einer Variablen;降维单变量目标函数;Durch Einsetzen der Nebenbedingung entsteht eine Zielfunktion mit nur einer einzigen Variablen.;Mathe;Analysis
+die Randwertpruefung;边界值检验;Die Randwertpruefung stellt sicher dass an den Grenzen des Definitionsbereichs kein extremerer Wert vorliegt.;Mathe;Analysis
+die Funktionenschar;函数族/曲线族;Eine Funktionenschar enthaelt neben der Variablen x einen reellen Formparameter k.;Mathe;Analysis
+der Scharparameter;函数族形态参数;Der Scharparameter k wird beim Ableiten wie eine feste Zahl behandelt steuert aber die Kurvengestalt.;Mathe;Analysis
+die Ortskurve;轨道曲线/轨迹方程;Die Ortskurve ist der geometrische Graph auf dem alle Extrem- oder Wendepunkte einer Schar liegen.;Mathe;Analysis
+die Parameterelimination;参数消元法;Bei der Parameterelimination wird xk nach k aufgeloest und in yk eingesetzt um die Ortskurve zu erhalten.;Mathe;Analysis
+die stochastische Matrix;随机矩阵/转移矩阵;In einer stochastischen Matrix ergeben die Eintraege jeder einzelnen Spalte exakt die Summe 1.;Mathe;Stochastik
+der Zustandsvektor;状态概率向量;Ein Zustandsvektor beschreibt die prozentuale Verteilung auf alle moeglichen Systemzustaende zum Zeitpunkt n.;Mathe;Stochastik
+die stationaere Grenzverteilung;稳态平衡分布/不动点向量;Die stationaere Grenzverteilung erfuellt die Matrixgleichung M mal v gleich v und aendert sich nicht mehr.;Mathe;Stochastik
+die Markov-Kette;马尔可夫链;Eine Markov-Kette ist ein stochastischer Prozess dessen zukuenftiger Zustand nur vom aktuellen Zustand abhaengt.;Mathe;Stochastik
+die Nullhypothese;零假设;Die Nullhypothese H0 wird als Ausgangsannahme so lange beibehalten bis das Stichprobenergebnis signifikant dagegen spricht.;Mathe;Stochastik
+das Signifikanzniveau;显著性水平;Das Signifikanzniveau alpha begrenzt die maximale Irrtumswahrscheinlichkeit fuer das fehlerhafte Ablehnen einer wahren Nullhypothese.;Mathe;Stochastik
+der Fehler 1. Art;第一类错误(弃真);Ein Fehler 1. Art liegt vor wenn die Nullhypothese faelschlicherweise verworfen wird obwohl sie in Wirklichkeit wahr ist.;Mathe;Stochastik
+der Fehler 2. Art;第二类错误(存伪);Ein Fehler 2. Art liegt vor wenn eine falsche Nullhypothese faelschlicherweise nicht verworfen und beibehalten wird.;Mathe;Stochastik

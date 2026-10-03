@@ -922,3 +922,41 @@ tags: [EF, Meta]
 
 | Stabilitätsgesetz | 稳定与增长法 | SoWi | Das Stabilitätsgesetz von 1967 verpflichtet Bund und Länder auf das gesamtwirtschaftliche Gleichgewicht. |
 | Maximenprüfung | 行动准则检验法 | Philosophie | Die vierstufige Maximenprüfung prüft die Verallgemeinerbarkeit einer Handlungsregel nach Kant. |
+| Sinus-Milieu | 西诺斯社会阶层/生活形态族群 | SoWi | Das Sinus-Milieu-Modell verknüpft die soziale Lage mit grundlegenden Werteorientierungen und Lebensweisen. |
+| soziale Lage | 社会处境/社会地位 | SoWi | Die soziale Lage wird durch objektive Faktoren wie Einkommen, Vermögen und Bildungsabschluss bestimmt. |
+| Grundorientierung | 基本价值取向 | SoWi | Die Grundorientierung im Milieumodell reicht von traditioneller Pflichtauffassung bis zu postmaterieller Selbstverwirklichung. |
+| Dahrendorf-Haus | 达伦多夫社会结构房型模型 | SoWi | Das Dahrendorf-Häuser-Modell veranschaulicht soziale Schichten und deren Durchlässigkeit in einer bildhaften Architektur. |
+| Gretchenfrage | 格蕾琴之问/核心试金石提问 | Deutsch | Die Gretchenfrage bezeichnet eine direkte, gewissensprüfende Frage, die ein klares moralisches Bekenntnis fordert. |
+| Pantheismus | 泛神论 | Deutsch | Goethes pantheistisches Weltbild betrachtet Gott und Natur als eine unteilbare, beseelte Einheit. |
+| Gelehrten-Tragödie | 学者悲剧 | Deutsch | Die Gelehrten-Tragödie thematisiert Fausts Verzweiflung an den Grenzen menschlicher Erkenntnisfähigkeit. |
+| intellektuelle Hybris | 智识狂妄/知识分子的傲慢 | Deutsch | Fausts intellektuelle Hybris verleitet ihn dazu, sittliche Schranken im Bund mit Mephisto niederzureißen. |
+| Supranationalismus | 超国家主义 | SoWi | Im Supranationalismus übertragen Mitgliedstaaten Hoheitsrechte auf unabhängige EU-Organe mit bindender Wirkung. |
+| Intergouvernementalismus | 政府间主义 | SoWi | Der Intergouvernementalismus beschreibt die Zusammenarbeit souveräner Staaten unter Wahrung des Vetorechts. |
+| institutionelles Dreieck | 欧盟机构铁三角 | SoWi | Das institutionelle Dreieck aus Kommission, Rat und Europäischem Parlament balanciert die Machtverhältnisse. |
+| Staatenverbund | 国家联合体/特殊实体 | SoWi | Die Europäische Union ist ein staatsrechtlicher Staatenverbund sui generis zwischen Bund und Bundesstaat. |
+| anaphora (Anapher) | 首语重复/首字排比 | Englisch | The deliberate repetition of words at the beginning of successive sentences creates rhythmic resonance. |
+| Naturzustand | 自然状态 | Philosophie | Der Naturzustand ist ein hypothetisches Gedankenexperiment zur Beschreibung des Zusammenlebens vor staatlicher Herrschaft. |
+| bellum omnium contra omnes | 万人对万人的战争 | Philosophie | Bei Hobbes führt das Fehlen einer Ordnungsmacht zum permanenten Krieg aller gegen alle. |
+| Ganztonleiter | 全音阶 | Musik | Die Ganztonleiter besteht nur aus Ganztonschritten und hebt das Gefühl eines tonalen Leittons völlig auf. |
+| Superkompensation | 超量恢复 | Sport | Die Superkompensation beschreibt die überschießende Wiederherstellung über das Ausgangsniveau nach der Regeneration. |
+| Reihungsstil | 并置风格 | Deutsch | Der expressionistische Reihungsstil montiert zusammenhanglose Einzelbilder parataktisch aneinander. |
+| Determinismus | 决定论 | Philosophie | Der Determinismus besagt, dass alle künftigen Ereignisse durch vorangegangene Ursachen eindeutig festgelegt sind. |
+| Bereitschaftspotenzial | 准备电位 | Philosophie | Das Bereitschaftspotenzial im Gehirn tritt messbar vor dem bewussten Entschluss zu einer Willkürbewegung auf. |
+| Kompatibilismus | 兼容论/软决定论 | Philosophie | Der Kompatibilismus behauptet die Vereinbarkeit von kausalem Determinismus und moralischer Verantwortung. |
+| tragic flaw (Hamartia) | 悲剧性缺陷/致命弱点 | Englisch | Hamlet's fatal character flaw of excessive procrastination leads inevitably to the tragedy. |
+| blank verse (Blankvers) | 无韵抑扬格五音步 | Englisch | Shakespeare wrote most of his plays in blank verse consisting of unrhymed iambic pentameter. |
+| Nachfrageorientierung | 需求导向经济政策 | SoWi | Die Nachfrageorientierung nach Keynes bekämpft Rezessionen durch staatliche Konsum- und Investitionsimpulse. |
+| Deficit Spending | 赤字财政支出 | SoWi | Unter Deficit Spending versteht man die schuldenfinanzierte Erhöhung staatlicher Nachfrage in Krisen. |
+| freie Atonalität | 自由无调性 | Musik | In der freien Atonalität löst sich die Musik völlig von Grundtönen und kadenziellen Auflösungen. |
+| Emanzipation der Dissonanz | 不协和音的解放 | Musik | Schönbergs Emanzipation der Dissonanz erklärt Dissonanzen zu eigenständigen, ausdrucksstarken Klängen. |
+| Kafkaeske | 卡夫卡式的荒诞与异化 | Deutsch | Das Kafkaeske bezeichnet eine unheimliche, absurde Situation existenzieller Ohnmacht gegenüber Behörden. |
+| Sprachspiel | 语言游戏 | Philosophie | Ein Sprachspiel nach Wittgenstein verknüpft das Sprechen einer Sprache mit praktischem Handeln. |
+| Bedeutung als Gebrauch | 意义即用法 | Philosophie | Nach Wittgenstein ist die Bedeutung eines Wortes sein konkreter Gebrauch innerhalb eines Sprachspiels. |
+| Familienähnlichkeit | 家族相似性 | Philosophie | Begriffe wie Spiel besitzen kein starres Wesensmerkmal, sondern ein Netz sich kreuzender Familienähnlichkeiten. |
+| cultural collision | 文化碰撞/文明冲突 | Englisch | Cultural collision describes the traumatic shock when divergent civilizations clash during imperial conquest. |
+| episches Theater | 史诗剧场 | Deutsch | Das epische Theater nach Brecht setzt auf Distanz und Erzählung statt auf bürgerliche Schicksalskatharsis. |
+| Verfremdungseffekt | 间离效果/V效果 | Deutsch | Der Verfremdungseffekt macht alltägliche Vorgänge auffällig, um kritisches Nachdenken beim Zuschauer anzuregen. |
+| Banalität des Bösen | 恶的平庸性 | Philosophie | Nach Hannah Arendt können monströse Verbrechen aus völliger Gedankenlosigkeit und Konformismus entstehen. |
+| Vita activa | 积极生活的三重境界 | Philosophie | Hannah Arendts Vita activa gliedert die menschliche Tätigkeit in Arbeiten, Herstellen und politisches Handeln. |
+| Pluralität | 人类的复多性 | Philosophie | Pluralität bedeutet, dass viele einzigartige Menschen im gemeinsamen öffentlichen Raum politisch handeln. |
+| corrupted American Dream | 蜕变的美国梦/消费主义神话 | Englisch | The corrupted American Dream equates personal happiness and human worth exclusively with material wealth. |

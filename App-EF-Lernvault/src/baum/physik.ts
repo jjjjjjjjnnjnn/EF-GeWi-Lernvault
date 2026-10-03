@@ -40,4 +40,19 @@ export const physikBaum: FachBaum = { fach: "Physik", nameDE: "Physik", nameZH: 
 { id: "physik/if2/weltbilder-bezugssysteme/lichtuhr", level: 3, code: "", titleDE: "Lichtuhr-Gedankenexperiment", titleZH: "光钟思想实验", operatoren: ["beschreiben", "erklären", "deuten"], klausurDE: "Lichtuhr beschreiben, Invarianz von c deuten.", klausurZH: "思想实验解读：描述光钟并解释光速不变。", leitfrageDE: "Was zeigt die Lichtuhr über Lichtgeschwindigkeit?", leitfrageZH: "光钟说明了光速的什么？", noteKeywords: ["lichtuhr", "gedankenexperiment", "lichtgeschwindigkeit", "invarianz"], children: [] }
 ] }
 ] }
-] } };
+,
+      {
+        id: "physik/methoden-und-pruefung",
+        level: 1,
+        code: "Pruefung",
+        titleDE: "Formeln, Modellierung und Klausurtraining",
+        titleZH: "公式速记、电磁变式与真题实战",
+        operatoren: ["anwenden", "modellieren"],
+        klausurDE: "Formelsammlung, E-Bike-Generator Induktionsmodell und Abituraufgaben.",
+        klausurZH: "物理核心公式卡、电磁感应发电机变式与历年大题",
+        leitfrageDE: "Wie loest man komplexe physikalische Transferaufgaben?",
+        leitfrageZH: "如何规范解答物理综合大题与实验迁移问答？",
+        noteKeywords: ["formel-spickzettel", "physik formeln", "kinematik spickzettel", "cn physik training", "cn tricks verfahren", "cn tricks", "physik operatoren", "physik operatoren check", "physik-abitur-aufgabentraining", "varianten-training", "e-bike-generator"],
+        children: []
+      }
+    ] } };

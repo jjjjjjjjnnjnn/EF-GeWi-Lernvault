@@ -64,4 +64,33 @@ export const englischBaum: FachBaum = { fach: "Englisch", nameDE: "Englisch", na
 { id: "englisch/zusatz/teil-b-wahlteil/hoerverstehen", level: 3, code: "", titleDE: "Hoerverstehen", titleZH: "听力理解", operatoren: ["outline", "examine"], klausurDE: "Teil B isoliert, AFB I-II, 2 Texte ca. 6 Min, 2 Durchgaenge", klausurZH: "B 卷独立,AFB I-II,两文本约 6 分钟,两遍", leitfrageDE: "What are the key points?", leitfrageZH: "要点是什么?", noteKeywords: ["listening", "summary", "strategies"], children: [] }
 ] }
 ] }
-] } };
+,
+      {
+        id: "en/target-cultures",
+        level: 1,
+        code: "Kultur",
+        titleDE: "Target Cultures (UK, USA, Nigeria)",
+        titleZH: "英语国家与后殖民文化聚焦",
+        operatoren: ["analysieren", "vergleichen", "erlaeutern"],
+        klausurDE: "Tradition and change in the UK, American Dream and diversity in Nigeria.",
+        klausurZH: "英国社会传统变迁、美国梦与现实、尼日利亚后殖民历史与多元社会",
+        leitfrageDE: "How do historical legacies shape modern societies?",
+        leitfrageZH: "历史遗产如何塑造当代英语国家社会？",
+        noteKeywords: ["orientierungswissen uk", "vereinigtes koenigreich", "vereinigtes", "orientierungswissen usa", "bezugskultur nigeria", "nigeria", "united kingdom", "american dream", "postcolonialism", "abitur themenfelder", "klett-themenfelder"],
+        children: []
+      },
+      {
+        id: "en/communication-exam",
+        level: 1,
+        code: "Exam",
+        titleDE: "Oral Exam, Writing & Mediation",
+        titleZH: "口试表达、中继写作与综合模考",
+        operatoren: ["beurteilen", "kommentieren", "mitteln"],
+        klausurDE: "Conversation strategies, attention economy, AI in education and mock exams.",
+        klausurZH: "口试交际策略、注意力经济、AI教育影响与全真模考",
+        leitfrageDE: "How to excel in written and oral Abitur exams?",
+        leitfrageZH: "如何在英语笔试与口试中取得卓越表现？",
+        noteKeywords: ["gespraechsstrategien", "verstaendigungssicherung", "aussprache", "speaking", "muendliche abiturpruefung", "oral exam", "attention economy", "mental health", "social media", "iqb writing", "teil-a-dreischritt", "mockklausur", "ai in education", "beeinflussungsstrategien", "world-standard-english", "sprachliche mittel"],
+        children: []
+      }
+    ] } };

@@ -58,3 +58,6 @@ App-EF-Lernvault/*.tsbuildinfo
 
 # WorkBuddy agent 内部数据（记忆/会话），不进仓库
 .workbuddy-ai/
+
+# 临时脚本执行目录
+scratch/

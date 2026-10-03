@@ -11163,6 +11163,38 @@ export const allVaultCards: GeneratedCard[] = [
   },
   {
     "id": "card_1395",
+    "front": "das Wertpapierdepot",
+    "back": "证券账户／托管账户",
+    "example": "Das Wertpapierdepot verwahrt Aktien und Fondsanteile getrennt vom Bankvermoegen.",
+    "fach": "SoWi",
+    "dueIn": "heute"
+  },
+  {
+    "id": "card_1396",
+    "front": "das Sondervermoegen",
+    "back": "特别资产（破产隔离）",
+    "example": "Fondsanteile gelten als Sondervermoegen und sind bei Bankinsolvenz voll geschuetzt.",
+    "fach": "SoWi",
+    "dueIn": "heute"
+  },
+  {
+    "id": "card_1397",
+    "front": "der Freistellungsauftrag",
+    "back": "免税额委托申请",
+    "example": "Mit dem Freistellungsauftrag bleiben Kapitalertraege bis 1000 Euro steuerfrei.",
+    "fach": "SoWi",
+    "dueIn": "heute"
+  },
+  {
+    "id": "card_1398",
+    "front": "die Slippage",
+    "back": "滑点偏差",
+    "example": "Bei einer unlimitierten Bestens-Order droht in volatilen Maerkten erhebliche Slippage.",
+    "fach": "SoWi",
+    "dueIn": "heute"
+  },
+  {
+    "id": "card_1399",
     "front": "Prime",
     "back": "纯一度",
     "example": "Die Prime klingt wie derselbe Ton.",
@@ -11170,7 +11202,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1396",
+    "id": "card_1400",
     "front": "Oktave",
     "back": "纯八度",
     "example": "Die Oktave klingt hoeher, aber gleich.",
@@ -11178,7 +11210,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1397",
+    "id": "card_1401",
     "front": "Sekunde",
     "back": "二度",
     "example": "Die Sekunde reibt sich und draengt weiter.",
@@ -11186,7 +11218,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1398",
+    "id": "card_1402",
     "front": "Terz",
     "back": "三度",
     "example": "Die Terz singt und traegt die Melodie.",
@@ -11194,7 +11226,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1399",
+    "id": "card_1403",
     "front": "Quarte",
     "back": "纯四度",
     "example": "Die Quarte erkenne ich am Liedanfang.",
@@ -11202,7 +11234,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1400",
+    "id": "card_1404",
     "front": "Quinte",
     "back": "纯五度",
     "example": "Die Quinte klingt offen und stabil.",
@@ -11210,7 +11242,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1401",
+    "id": "card_1405",
     "front": "Sexte",
     "back": "六度",
     "example": "Die Sexte uebe ich einzeln, sie ist schwer.",
@@ -11218,7 +11250,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1402",
+    "id": "card_1406",
     "front": "Septime",
     "back": "七度",
     "example": "Die Septime zieht stark zur Oktave.",
@@ -11226,7 +11258,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1403",
+    "id": "card_1407",
     "front": "Sonatenhauptsatzform",
     "back": "奏鸣曲式",
     "example": "Die Sonatenhauptsatzform hat Exposition, Durchfuehrung und Reprise.",
@@ -11234,7 +11266,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1404",
+    "id": "card_1408",
     "front": "Wiener Klassik",
     "back": "维也纳古典乐派",
     "example": "Haydn, Mozart und Beethoven praegen die Wiener Klassik.",
@@ -11242,7 +11274,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1405",
+    "id": "card_1409",
     "front": "IF1 Bedeutungen",
     "back": "内容域1音乐的意义",
     "example": "IF1 verbindet Ausdrucksabsicht und musikalische Struktur.",
@@ -11250,7 +11282,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1406",
+    "id": "card_1410",
     "front": "IF2 Entwicklungen",
     "back": "内容域2音乐的发展",
     "example": "IF2 verbindet Epoche und musikalischen Stil.",
@@ -11258,7 +11290,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1407",
+    "id": "card_1411",
     "front": "die Ausdrucksgeste",
     "back": "表达姿态",
     "example": "Die Ausdrucksgeste ist eine hoerbare musikalische Geste.",
@@ -11266,7 +11298,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1408",
+    "id": "card_1412",
     "front": "die musikalische Konvention",
     "back": "音乐惯例",
     "example": "Die musikalische Konvention wirkt nur geteilt.",
@@ -11274,7 +11306,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1409",
+    "id": "card_1413",
     "front": "der Affekt",
     "back": "情感",
     "example": "Der Affekt meint eine einheitliche Gefuehlslage.",
@@ -11282,7 +11314,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1410",
+    "id": "card_1414",
     "front": "der Seufzer",
     "back": "叹息动机",
     "example": "Der Seufzer faellt in kleinen Sekunden ab.",
@@ -11290,7 +11322,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1411",
+    "id": "card_1415",
     "front": "die Semiotik",
     "back": "符号学",
     "example": "Die Semiotik deutet Musik als Zeichensystem.",
@@ -11298,7 +11330,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1412",
+    "id": "card_1416",
     "front": "die Filmmusik",
     "back": "电影音乐",
     "example": "Die Filmmusik dient dem Bild.",
@@ -11306,7 +11338,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1413",
+    "id": "card_1417",
     "front": "die Werbemusik",
     "back": "广告音乐",
     "example": "Die Werbemusik zielt auf Erinnerung.",
@@ -11314,7 +11346,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1414",
+    "id": "card_1418",
     "front": "die Diegese",
     "back": "叙事世界",
     "example": "Diegetische Musik hoeren auch die Figuren.",
@@ -11322,7 +11354,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1415",
+    "id": "card_1419",
     "front": "das Leitmotiv",
     "back": "主导动机",
     "example": "Das Leitmotiv erinnert an eine Figur.",
@@ -11330,7 +11362,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1416",
+    "id": "card_1420",
     "front": "der Ohrwurm",
     "back": "记忆钩",
     "example": "Der Ohrwurm bleibt im Kopf.",
@@ -11338,7 +11370,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1417",
+    "id": "card_1421",
     "front": "der Emotionstransfer",
     "back": "情绪迁移",
     "example": "Der Emotionstransfer uebertraegt Gefuehle aufs Produkt.",
@@ -11346,7 +11378,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1418",
+    "id": "card_1422",
     "front": "die Klangfarbe",
     "back": "音色",
     "example": "Die Klangfarbe macht den Klang unverwechselbar.",
@@ -11354,7 +11386,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1419",
+    "id": "card_1423",
     "front": "die Instrumentation",
     "back": "配器",
     "example": "Die Instrumentation verteilt die Stimmen.",
@@ -11362,7 +11394,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1420",
+    "id": "card_1424",
     "front": "die Instrumentengruppen",
     "back": "乐器组",
     "example": "Die Instrumentengruppen umfassen Streicher und Blaeser.",
@@ -11370,7 +11402,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1421",
+    "id": "card_1425",
     "front": "die Spieltechnik",
     "back": "演奏技法",
     "example": "Die Spieltechnik veraendert die Klangfarbe.",
@@ -11378,7 +11410,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1422",
+    "id": "card_1426",
     "front": "die Klangmischung",
     "back": "音色融合",
     "example": "Die Klangmischung verschmilzt zwei Klaenge.",
@@ -11386,7 +11418,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1423",
+    "id": "card_1427",
     "front": "die Klangvorstellung",
     "back": "音响想象",
     "example": "Die Klangvorstellung praegt eine Epoche.",
@@ -11394,7 +11426,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1424",
+    "id": "card_1428",
     "front": "das Stilmerkmal",
     "back": "风格特征",
     "example": "Das Stilmerkmal ordnet einen Klang ein.",
@@ -11402,7 +11434,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1425",
+    "id": "card_1429",
     "front": "der Generalbass",
     "back": "通奏低音",
     "example": "Der Generalbass traegt die Barockmusik.",
@@ -11410,7 +11442,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1426",
+    "id": "card_1430",
     "front": "der Kontrapunkt",
     "back": "对位",
     "example": "Der Kontrapunkt fuehrt mehrere Stimmen.",
@@ -11418,7 +11450,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1427",
+    "id": "card_1431",
     "front": "die Atonalitaet",
     "back": "无调性",
     "example": "Die Atonalitaet loest die Tonalitaet ab.",
@@ -11426,7 +11458,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1428",
+    "id": "card_1432",
     "front": "die Zwoelftontechnik",
     "back": "十二音技法",
     "example": "Die Zwoelftontechnik ordnet alle Toene in einer Reihe.",
@@ -11434,7 +11466,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1429",
+    "id": "card_1433",
     "front": "die Collage",
     "back": "拼贴",
     "example": "Die Collage mischt vorhandenes Material.",
@@ -11442,7 +11474,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1430",
+    "id": "card_1434",
     "front": "der aussermusikalische Kontext",
     "back": "非音乐语境",
     "example": "Der aussermusikalische Kontext bestimmt die Funktion.",
@@ -11450,7 +11482,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1431",
+    "id": "card_1435",
     "front": "die Autonomie",
     "back": "自律性",
     "example": "Die Autonomie loest Musik von Zwecken.",
@@ -11458,7 +11490,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1432",
+    "id": "card_1436",
     "front": "die Dienstfunktion",
     "back": "服务功能",
     "example": "Die Dienstfunktion ordnet Musik einem Zweck unter.",
@@ -11466,7 +11498,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1433",
+    "id": "card_1437",
     "front": "die Programmmusik",
     "back": "标题音乐",
     "example": "Die Programmmusik erzaehlt ein Bild.",
@@ -11474,7 +11506,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1434",
+    "id": "card_1438",
     "front": "die Gebrauchsmusik",
     "back": "实用音乐",
     "example": "Die Gebrauchsmusik dient einem Anlass.",
@@ -11482,7 +11514,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1435",
+    "id": "card_1439",
     "front": "die Funktionalisierung",
     "back": "功能化",
     "example": "Die Funktionalisierung nimmt Musik in Dienst.",
@@ -11490,7 +11522,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1436",
+    "id": "card_1440",
     "front": "das Paradigma",
     "back": "范式",
     "example": "Das Paradigma buendelt die Grundannahmen.",
@@ -11498,7 +11530,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1437",
+    "id": "card_1441",
     "front": "der Paradigmenwechsel",
     "back": "范式转换",
     "example": "Der Paradigmenwechsel tauscht die Grundannahmen.",
@@ -11506,7 +11538,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1438",
+    "id": "card_1442",
     "front": "der Stilwandel",
     "back": "风格演变",
     "example": "Der Stilwandel bleibt im alten Rahmen.",
@@ -11514,7 +11546,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1439",
+    "id": "card_1443",
     "front": "das Kompositionsprinzip",
     "back": "作曲原则",
     "example": "Das Kompositionsprinzip ordnet die Musik.",
@@ -11522,7 +11554,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1440",
+    "id": "card_1444",
     "front": "der Funktionswandel",
     "back": "功能转变",
     "example": "Der Funktionswandel veraendert die Rolle der Musik.",
@@ -11530,7 +11562,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1441",
+    "id": "card_1445",
     "front": "das Rollenbild",
     "back": "角色图景",
     "example": "Das Rollenbild zeigt, wie Geschlechter gelten.",
@@ -11538,7 +11570,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1442",
+    "id": "card_1446",
     "front": "die Geschlechterrolle",
     "back": "性别角色",
     "example": "Die Geschlechterrolle ist gesellschaftlich gepraegt.",
@@ -11546,7 +11578,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1443",
+    "id": "card_1447",
     "front": "die Komponistin",
     "back": "女作曲家",
     "example": "Die Komponistin wurde lange uebersehen.",
@@ -11554,7 +11586,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1444",
+    "id": "card_1448",
     "front": "die Stimmlage",
     "back": "声部音域",
     "example": "Die Stimmlage traegt Bedeutung.",
@@ -11562,7 +11594,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1445",
+    "id": "card_1449",
     "front": "der Klangtopos",
     "back": "音响套式",
     "example": "Der Klangtopos verbindet Klang und Bild.",
@@ -11570,7 +11602,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1446",
+    "id": "card_1450",
     "front": "die Wahrnehmungssteuerung",
     "back": "感知操控",
     "example": "Die Wahrnehmungssteuerung lenkt den Blick.",
@@ -11578,7 +11610,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1447",
+    "id": "card_1451",
     "front": "das Bild-Ton-Verhaeltnis",
     "back": "音画关系",
     "example": "Das Bild-Ton-Verhaeltnis kann widersprechen.",
@@ -11586,7 +11618,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1448",
+    "id": "card_1452",
     "front": "die Semantisierung",
     "back": "意义赋予",
     "example": "Die Semantisierung gibt dem Bild einen Sinn.",
@@ -11594,7 +11626,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1449",
+    "id": "card_1453",
     "front": "die Emotionalisierung",
     "back": "情绪着色",
     "example": "Die Emotionalisierung faerbt die Szene.",
@@ -11602,7 +11634,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1450",
+    "id": "card_1454",
     "front": "die Perspektivierung",
     "back": "视角引导",
     "example": "Die Perspektivierung zeigt, wessen Gefuehl klingt.",
@@ -11610,7 +11642,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1451",
+    "id": "card_1455",
     "front": "die Wirkungsabsicht",
     "back": "效果意图",
     "example": "Die Wirkungsabsicht plant eine Reaktion.",
@@ -11618,7 +11650,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1452",
+    "id": "card_1456",
     "front": "die Wirkung",
     "back": "实际效果",
     "example": "Die Wirkung kann von der Absicht abweichen.",
@@ -11626,7 +11658,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1453",
+    "id": "card_1457",
     "front": "das Stereotyp",
     "back": "刻板印象",
     "example": "Das Stereotyp wirkt nur geteilt.",
@@ -11634,7 +11666,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1454",
+    "id": "card_1458",
     "front": "das Klischee",
     "back": "陈词滥调",
     "example": "Das Klischee verliert durch Nutzung an Reiz.",
@@ -11642,7 +11674,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1455",
+    "id": "card_1459",
     "front": "der Funktionskontext",
     "back": "功能语境",
     "example": "Der Funktionskontext bestimmt die Wirkung.",
@@ -11650,7 +11682,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1456",
+    "id": "card_1460",
     "front": "die muendliche Pruefung",
     "back": "口试",
     "example": "Die muendliche Pruefung hat zwei Teile.",
@@ -11658,7 +11690,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1457",
+    "id": "card_1461",
     "front": "der zusammenhaengende Vortrag",
     "back": "连贯陈述",
     "example": "Der zusammenhaengende Vortrag bildet Teil eins.",
@@ -11666,7 +11698,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1458",
+    "id": "card_1462",
     "front": "das Pruefungsgespraech",
     "back": "考试对话",
     "example": "Das Pruefungsgespraech vertieft das Thema.",
@@ -11674,7 +11706,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1459",
+    "id": "card_1463",
     "front": "die Redemittel",
     "back": "话术",
     "example": "Die Redemittel helfen im Gespraech.",
@@ -11682,7 +11714,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1460",
+    "id": "card_1464",
     "front": "der rote Faden",
     "back": "主线",
     "example": "Der rote Faden haelt den Vortrag zusammen.",
@@ -11690,7 +11722,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1461",
+    "id": "card_1465",
     "front": "Hoeranalyse",
     "back": "听辨分析",
     "example": "Ich mache zuerst eine Hoeranalyse, bevor ich die Wirkung beurteile.",
@@ -11698,7 +11730,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1462",
+    "id": "card_1466",
     "front": "Parameter",
     "back": "参数",
     "example": "Ich nenne zuerst drei Parameter, dann beschreibe ich ihre Wirkung.",
@@ -11706,7 +11738,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1463",
+    "id": "card_1467",
     "front": "Dynamik",
     "back": "力度",
     "example": "Die Dynamik steigt langsam an und baut Spannung auf.",
@@ -11714,7 +11746,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1464",
+    "id": "card_1468",
     "front": "Sequenz",
     "back": "模进",
     "example": "Die Sequenz versetzt das Motiv immer hoeher und treibt die Musik an.",
@@ -11722,7 +11754,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1465",
+    "id": "card_1469",
     "front": "Umkehrung",
     "back": "倒影",
     "example": "Die Umkehrung spiegelt die Melodie und schafft einen Kontrast.",
@@ -11730,7 +11762,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1466",
+    "id": "card_1470",
     "front": "Krebs",
     "back": "逆行",
     "example": "Der Krebs liest das Motiv von hinten und klingt fremd.",
@@ -11738,7 +11770,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1467",
+    "id": "card_1471",
     "front": "Dehnung / Stauchung",
     "back": "扩缩",
     "example": "Die Dehnung verlaengert die Toene, die Stauchung verkuerzt sie.",
@@ -11746,7 +11778,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1468",
+    "id": "card_1472",
     "front": "Abspaltung",
     "back": "碎片化",
     "example": "Die Abspaltung wiederholt nur ein Fragment des Motivs und steigert die Spannung.",
@@ -11754,7 +11786,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1469",
+    "id": "card_1473",
     "front": "Exposition",
     "back": "呈示部",
     "example": "In der Exposition stellt die Musik zwei Themen vor.",
@@ -11762,7 +11794,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1470",
+    "id": "card_1474",
     "front": "Durchfuehrung",
     "back": "展开部",
     "example": "Die Durchfuehrung zerlegt das Motiv und moduliert oft.",
@@ -11770,7 +11802,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1471",
+    "id": "card_1475",
     "front": "Reprise",
     "back": "再现部",
     "example": "In der Reprise kehren beide Themen in die Haupttonart zurueck.",
@@ -11778,7 +11810,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1472",
+    "id": "card_1476",
     "front": "Haupttonart",
     "back": "主调",
     "example": "Die Haupttonart ist das tonale Zuhause des Satzes.",
@@ -11786,7 +11818,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1473",
+    "id": "card_1477",
     "front": "Tonartplan",
     "back": "调性布局表",
     "example": "Der Tonartplan zeigt den Weg von der Haupttonart zur Dominante und zurueck.",
@@ -11794,7 +11826,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1474",
+    "id": "card_1478",
     "front": "Hauptsatz",
     "back": "第一主题",
     "example": "Der Hauptsatz steht am Anfang und legt die Haupttonart fest.",
@@ -11802,7 +11834,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1475",
+    "id": "card_1479",
     "front": "Seitensatz",
     "back": "第二主题",
     "example": "Der Seitensatz steht in der Exposition in der Dominante.",
@@ -11810,7 +11842,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1476",
+    "id": "card_1480",
     "front": "Ueberleitung",
     "back": "连接部",
     "example": "Die Ueberleitung verbindet Hauptsatz und Seitensatz und moduliert.",
@@ -11818,7 +11850,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1477",
+    "id": "card_1481",
     "front": "Coda",
     "back": "结尾部",
     "example": "Die Coda bestaetigt am Ende noch einmal die Haupttonart.",
@@ -11826,7 +11858,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1478",
+    "id": "card_1482",
     "front": "Absprungwinkel",
     "back": "起跳角度",
     "example": "Ein flacher Absprungwinkel traegt weit.",
@@ -11834,7 +11866,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1479",
+    "id": "card_1483",
     "front": "Koerperschwerpunkt",
     "back": "身体重心",
     "example": "Der Koerperschwerpunkt fliegt auf einer Parabel.",
@@ -11842,7 +11874,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1480",
+    "id": "card_1484",
     "front": "Landung",
     "back": "落地",
     "example": "Die Landung federt mit Beugung ab.",
@@ -11850,7 +11882,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1481",
+    "id": "card_1485",
     "front": "die aerobe Ausdauer",
     "back": "有氧耐力",
     "example": "Die aerobe Ausdauer traegt die Grundlage.",
@@ -11858,7 +11890,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1482",
+    "id": "card_1486",
     "front": "die anaerobe Ausdauer",
     "back": "无氧耐力",
     "example": "Die anaerobe Ausdauer sichert die Spurtkraft.",
@@ -11866,7 +11898,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1483",
+    "id": "card_1487",
     "front": "die Dauermethode",
     "back": "持续法",
     "example": "Die Dauermethode laeuft ohne Pause.",
@@ -11874,7 +11906,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1484",
+    "id": "card_1488",
     "front": "die Intervallmethode",
     "back": "间歇法",
     "example": "Die Intervallmethode wechselt Last und Pause.",
@@ -11882,7 +11914,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1485",
+    "id": "card_1489",
     "front": "die Belastungsintensitaet",
     "back": "负荷强度",
     "example": "Die Belastungsintensitaet beschreibt das Wie.",
@@ -11890,7 +11922,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1486",
+    "id": "card_1490",
     "front": "der Belastungsumfang",
     "back": "负荷量",
     "example": "Der Belastungsumfang beschreibt das Wie viel.",
@@ -11898,7 +11930,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1487",
+    "id": "card_1491",
     "front": "die Belastungsdauer",
     "back": "负荷时长",
     "example": "Die Belastungsdauer misst die Zeit des Reizes.",
@@ -11906,7 +11938,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1488",
+    "id": "card_1492",
     "front": "die Belastungsdichte",
     "back": "负荷密度",
     "example": "Die Belastungsdichte steigt mit kurzer Pause.",
@@ -11914,7 +11946,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1489",
+    "id": "card_1493",
     "front": "das ATP",
     "back": "三磷酸腺苷",
     "example": "ATP ist die direkte Energie der Muskeln.",
@@ -11922,7 +11954,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1490",
+    "id": "card_1494",
     "front": "das Kreatinphosphat",
     "back": "磷酸肌酸",
     "example": "Kreatinphosphat erneuert ATP schnell.",
@@ -11930,7 +11962,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1491",
+    "id": "card_1495",
     "front": "die Glykolyse",
     "back": "糖酵解",
     "example": "Die Glykolyse liefert Energie ohne Sauerstoff.",
@@ -11938,7 +11970,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1492",
+    "id": "card_1496",
     "front": "die Laktatschwelle",
     "back": "乳酸阈",
     "example": "Die Laktatschwelle trennt die Intensitaetsbereiche.",
@@ -11946,7 +11978,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1493",
+    "id": "card_1497",
     "front": "die Aggression",
     "back": "攻击性",
     "example": "Aggression richtet sich gegen andere.",
@@ -11954,7 +11986,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1494",
+    "id": "card_1498",
     "front": "die feindselige Aggression",
     "back": "敌意性攻击",
     "example": "Die feindselige Aggression will schaden.",
@@ -11962,7 +11994,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1495",
+    "id": "card_1499",
     "front": "die instrumentelle Aggression",
     "back": "工具性攻击",
     "example": "Die instrumentelle Aggression dient einem Ziel.",
@@ -11970,7 +12002,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1496",
+    "id": "card_1500",
     "front": "die Fairness",
     "back": "公平",
     "example": "Fairness achtet den Gegner.",
@@ -11978,7 +12010,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1497",
+    "id": "card_1501",
     "front": "die Grundlagenausdauer",
     "back": "基础耐力",
     "example": "Die Grundlagenausdauer ist die Basis.",
@@ -11986,7 +12018,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1498",
+    "id": "card_1502",
     "front": "der Trainingszustand",
     "back": "训练状态",
     "example": "Der Trainingszustand ist veraenderlich.",
@@ -11994,7 +12026,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1499",
+    "id": "card_1503",
     "front": "der motorische Test",
     "back": "运动测试",
     "example": "Der motorische Test misst die Fitness.",
@@ -12002,7 +12034,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1500",
+    "id": "card_1504",
     "front": "die WHO-Bewegungsempfehlung",
     "back": "WHO运动建议",
     "example": "Die WHO-Bewegungsempfehlung nennt 150 Minuten pro Woche.",
@@ -12010,7 +12042,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1501",
+    "id": "card_1505",
     "front": "das Gestaltungskriterium",
     "back": "编排准则",
     "example": "Das Gestaltungskriterium ordnet die Analyse.",
@@ -12018,7 +12050,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1502",
+    "id": "card_1506",
     "front": "der Raum",
     "back": "空间",
     "example": "Der Raum ordnet die Bewegung.",
@@ -12026,7 +12058,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1503",
+    "id": "card_1507",
     "front": "die Zeit",
     "back": "时间",
     "example": "Die Zeit ordnet den Rhythmus.",
@@ -12034,7 +12066,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1504",
+    "id": "card_1508",
     "front": "die Dynamik",
     "back": "动态",
     "example": "Die Dynamik zeigt den Krafteinsatz.",
@@ -12042,7 +12074,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1505",
+    "id": "card_1509",
     "front": "der gesundheitliche Nutzen",
     "back": "健康益处",
     "example": "Der gesundheitliche Nutzen waechst mit regelmaessigem Training.",
@@ -12050,7 +12082,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1506",
+    "id": "card_1510",
     "front": "die Dosis-Wirkung-Beziehung",
     "back": "剂量-效应关系",
     "example": "Die Dosis-Wirkung-Beziehung zeigt die Grenzen.",
@@ -12058,7 +12090,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1507",
+    "id": "card_1511",
     "front": "die Praevention",
     "back": "预防",
     "example": "Die Praevention senkt das Verletzungsrisiko.",
@@ -12066,7 +12098,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1508",
+    "id": "card_1512",
     "front": "das Schlagvolumen",
     "back": "每搏输出量",
     "example": "Das Schlagvolumen steigt durch Ausdauertraining.",
@@ -12074,7 +12106,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1509",
+    "id": "card_1513",
     "front": "die Handlungssteuerung",
     "back": "行动调控",
     "example": "Die Handlungssteuerung regelt das Handeln.",
@@ -12082,7 +12114,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1510",
+    "id": "card_1514",
     "front": "die Aktivierung",
     "back": "激活水平",
     "example": "Die Aktivierung beeinflusst die Leistung.",
@@ -12090,7 +12122,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1511",
+    "id": "card_1515",
     "front": "das Yerkes-Dodson-Gesetz",
     "back": "耶克斯-多德森定律",
     "example": "Das Yerkes-Dodson-Gesetz beschreibt die Kurve.",
@@ -12098,7 +12130,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1512",
+    "id": "card_1516",
     "front": "die Emotionsregulation",
     "back": "情绪调节",
     "example": "Die Emotionsregulation senkt die Aufregung.",
@@ -12106,7 +12138,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1513",
+    "id": "card_1517",
     "front": "die Improvisation",
     "back": "即兴",
     "example": "Die Improvisation entsteht im Moment.",
@@ -12114,7 +12146,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1514",
+    "id": "card_1518",
     "front": "die Variation",
     "back": "变奏",
     "example": "Die Variation veraendert ein Merkmal gezielt.",
@@ -12122,7 +12154,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1515",
+    "id": "card_1519",
     "front": "das Variationskriterium",
     "back": "变奏准则",
     "example": "Das Variationskriterium aendert nur eines.",
@@ -12130,7 +12162,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1516",
+    "id": "card_1520",
     "front": "die Verfremdung",
     "back": "陌生化",
     "example": "Die Verfremdung macht Vertrautes fremd.",
@@ -12138,7 +12170,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1517",
+    "id": "card_1521",
     "front": "die Informationsaufnahme",
     "back": "信息接收",
     "example": "Die Informationsaufnahme beginnt mit den Sinnen.",
@@ -12146,7 +12178,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1518",
+    "id": "card_1522",
     "front": "die Wahrnehmung",
     "back": "感知",
     "example": "Die Wahrnehmung deutet die Reize.",
@@ -12154,7 +12186,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1519",
+    "id": "card_1523",
     "front": "die Antizipation",
     "back": "预判",
     "example": "Die Antizipation erkennt die Bewegung voraus.",
@@ -12162,7 +12194,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1520",
+    "id": "card_1524",
     "front": "die Reaktionszeit",
     "back": "反应时",
     "example": "Die Reaktionszeit endet mit dem Bewegungsstart.",
@@ -12170,7 +12202,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1521",
+    "id": "card_1525",
     "front": "die koordinativen Faehigkeiten",
     "back": "协调能力",
     "example": "Die koordinativen Faehigkeiten steuern die Bewegung.",
@@ -12178,7 +12210,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1522",
+    "id": "card_1526",
     "front": "die Gleichgewichtsfaehigkeit",
     "back": "平衡能力",
     "example": "Die Gleichgewichtsfaehigkeit haelt die Lage.",
@@ -12186,7 +12218,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1523",
+    "id": "card_1527",
     "front": "die Orientierungsfaehigkeit",
     "back": "定向能力",
     "example": "Die Orientierungsfaehigkeit ordnet den Raum.",
@@ -12194,7 +12226,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1524",
+    "id": "card_1528",
     "front": "die Rhythmisierungsfaehigkeit",
     "back": "节奏能力",
     "example": "Die Rhythmisierungsfaehigkeit traegt den Takt.",
@@ -12202,7 +12234,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1525",
+    "id": "card_1529",
     "front": "das Doping",
     "back": "兴奋剂使用",
     "example": "Doping verstoesst gegen die Verbotsliste.",
@@ -12210,7 +12242,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1526",
+    "id": "card_1530",
     "front": "die Anabolika",
     "back": "合成代谢类固醇",
     "example": "Anabolika foerdern den Muskelaufbau.",
@@ -12218,7 +12250,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1527",
+    "id": "card_1531",
     "front": "das EPO",
     "back": "促红细胞生成素",
     "example": "EPO erhoeht die Sauerstoffaufnahme.",
@@ -12226,7 +12258,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1528",
+    "id": "card_1532",
     "front": "das Blutdoping",
     "back": "血液兴奋剂",
     "example": "Blutdoping erhoeht die Ausdauer.",
@@ -12234,7 +12266,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1529",
+    "id": "card_1533",
     "front": "das Gesundheitskonzept",
     "back": "健康概念",
     "example": "Das Gesundheitskonzept erklaert die Gesundheit.",
@@ -12242,7 +12274,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1530",
+    "id": "card_1534",
     "front": "die Pathogenese",
     "back": "病理取向",
     "example": "Die Pathogenese fragt nach den Ursachen.",
@@ -12250,7 +12282,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1531",
+    "id": "card_1535",
     "front": "die Salutogenese",
     "back": "健康生成取向",
     "example": "Die Salutogenese fragt nach den Quellen der Gesundheit.",
@@ -12258,7 +12290,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1532",
+    "id": "card_1536",
     "front": "das Kohaerenzgefuehl",
     "back": "一致感",
     "example": "Das Kohaerenzgefuehl staerkt die Gesundheit.",
@@ -12266,7 +12298,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1533",
+    "id": "card_1537",
     "front": "die Leistungsdiagnostik",
     "back": "成绩诊断",
     "example": "Die Leistungsdiagnostik misst die Leistung.",
@@ -12274,7 +12306,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1534",
+    "id": "card_1538",
     "front": "die Objektivitaet",
     "back": "客观性",
     "example": "Die Objektivitaet haengt nicht vom Tester ab.",
@@ -12282,7 +12314,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1535",
+    "id": "card_1539",
     "front": "die Reliabilitaet",
     "back": "可靠性",
     "example": "Die Reliabilitaet zeigt stabile Werte.",
@@ -12290,7 +12322,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1536",
+    "id": "card_1540",
     "front": "die Validitaet",
     "back": "效度",
     "example": "Die Validitaet prueft, was gemessen wird.",
@@ -12298,7 +12330,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1537",
+    "id": "card_1541",
     "front": "das Spielvermittlungsmodell",
     "back": "球类教学模型",
     "example": "Das Spielvermittlungsmodell ordnet den Weg.",
@@ -12306,7 +12338,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1538",
+    "id": "card_1542",
     "front": "die Technikorientierung",
     "back": "技术优先",
     "example": "Die Technikorientierung uebt zuerst die Technik.",
@@ -12314,7 +12346,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1539",
+    "id": "card_1543",
     "front": "die Taktikorientierung",
     "back": "战术优先",
     "example": "Die Taktikorientierung beginnt mit dem Spiel.",
@@ -12322,7 +12354,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1540",
+    "id": "card_1544",
     "front": "die Spielfaehigkeit",
     "back": "比赛能力",
     "example": "Die Spielfaehigkeit verbindet Technik und Taktik.",
@@ -12330,7 +12362,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1541",
+    "id": "card_1545",
     "front": "die Steuerung",
     "back": "调控",
     "example": "Die Steuerung beeinflusst die Bedingungen.",
@@ -12338,7 +12370,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1542",
+    "id": "card_1546",
     "front": "die Spielmanipulation",
     "back": "操纵比赛",
     "example": "Die Spielmanipulation folgt dem Wettbetrug.",
@@ -12346,7 +12378,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1543",
+    "id": "card_1547",
     "front": "die Kommerzialisierung",
     "back": "商业化",
     "example": "Die Kommerzialisierung praegt den Sport.",
@@ -12354,7 +12386,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1544",
+    "id": "card_1548",
     "front": "die Integritaet",
     "back": "诚信",
     "example": "Die Integritaet schuetzt den Wettkampf.",
@@ -12362,7 +12394,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1545",
+    "id": "card_1549",
     "front": "die Ganzheitsmethode",
     "back": "整体法",
     "example": "Die Ganzheitsmethode uebt das ganze Bewegungsbild.",
@@ -12370,7 +12402,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1546",
+    "id": "card_1550",
     "front": "die analytisch-synthetische Methode",
     "back": "分解合成法",
     "example": "Die analytisch-synthetische Methode zerlegt die Bewegung.",
@@ -12378,7 +12410,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1547",
+    "id": "card_1551",
     "front": "die methodische Uebungsreihe",
     "back": "方法练习序列",
     "example": "Die methodische Uebungsreihe steigert die Schwierigkeit.",
@@ -12386,7 +12418,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1548",
+    "id": "card_1552",
     "front": "die Erleichterung",
     "back": "简化",
     "example": "Die Erleichterung senkt die Anforderung.",
@@ -12394,7 +12426,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1549",
+    "id": "card_1553",
     "front": "das Motiv",
     "back": "动因",
     "example": "Das Motiv wirkt als stabile Neigung.",
@@ -12402,7 +12434,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1550",
+    "id": "card_1554",
     "front": "die Motivation",
     "back": "动机",
     "example": "Die Motivation entsteht aus Situation und Motiv.",
@@ -12410,7 +12442,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1551",
+    "id": "card_1555",
     "front": "die intrinsische Motivation",
     "back": "内在动机",
     "example": "Die intrinsische Motivation kommt von der Sache.",
@@ -12418,7 +12450,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1552",
+    "id": "card_1556",
     "front": "die extrinsische Motivation",
     "back": "外在动机",
     "example": "Die extrinsische Motivation folgt dem Lohn.",
@@ -12426,7 +12458,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1553",
+    "id": "card_1557",
     "front": "das motorische Lernen",
     "back": "运动学习",
     "example": "Das motorische Lernen fuehrt zur Fertigkeit.",
@@ -12434,7 +12466,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1554",
+    "id": "card_1558",
     "front": "die Bewegungsfertigkeit",
     "back": "运动技能",
     "example": "Die Bewegungsfertigkeit wird durch Ueben stabil.",
@@ -12442,7 +12474,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1555",
+    "id": "card_1559",
     "front": "die Lernphase",
     "back": "学习阶段",
     "example": "Die Lernphase gliedert den Lernweg.",
@@ -12450,7 +12482,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1556",
+    "id": "card_1560",
     "front": "die Grobkoordination",
     "back": "粗糙协调",
     "example": "Die Grobkoordination zeigt viele Fehler.",
@@ -12458,7 +12490,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1557",
+    "id": "card_1561",
     "front": "die Skelettmuskulatur",
     "back": "骨骼肌",
     "example": "Die Skelettmuskulatur bewegt das Skelett.",
@@ -12466,7 +12498,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1558",
+    "id": "card_1562",
     "front": "die isometrische Kontraktion",
     "back": "等长收缩",
     "example": "Die isometrische Kontraktion haelt die Spannung.",
@@ -12474,7 +12506,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1559",
+    "id": "card_1563",
     "front": "die konzentrische Kontraktion",
     "back": "向心收缩",
     "example": "Die konzentrische Kontraktion verkuerzt den Muskel.",
@@ -12482,7 +12514,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1560",
+    "id": "card_1564",
     "front": "die exzentrische Kontraktion",
     "back": "离心收缩",
     "example": "Die exzentrische Kontraktion bremst die Bewegung.",
@@ -12490,7 +12522,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1561",
+    "id": "card_1565",
     "front": "das Phasenmodell",
     "back": "分相模型",
     "example": "Das Phasenmodell gliedert die Bewegung.",
@@ -12498,7 +12530,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1562",
+    "id": "card_1566",
     "front": "die Vorbereitungsphase",
     "back": "准备相",
     "example": "Die Vorbereitungsphase sammelt Kraft.",
@@ -12506,7 +12538,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1563",
+    "id": "card_1567",
     "front": "die Hauptphase",
     "back": "主相",
     "example": "Die Hauptphase entscheidet die Leistung.",
@@ -12514,7 +12546,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1564",
+    "id": "card_1568",
     "front": "die Endphase",
     "back": "结束相",
     "example": "Die Endphase sichert die Landung.",
@@ -12522,7 +12554,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1565",
+    "id": "card_1569",
     "front": "die konstitutive Regel",
     "back": "构成性规则",
     "example": "Die konstitutive Regel macht das Spiel aus.",
@@ -12530,7 +12562,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1566",
+    "id": "card_1570",
     "front": "die regulative Regel",
     "back": "调节性规则",
     "example": "Die regulative Regel ordnet das Verhalten.",
@@ -12538,7 +12570,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1567",
+    "id": "card_1571",
     "front": "die Spielgelegenheit",
     "back": "比赛机会",
     "example": "Die Spielgelegenheit schafft Beteiligung.",
@@ -12546,7 +12578,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1568",
+    "id": "card_1572",
     "front": "die Spielidee",
     "back": "比赛理念",
     "example": "Die Spielidee traegt das Spiel.",
@@ -12554,7 +12586,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1569",
+    "id": "card_1573",
     "front": "die Superkompensation",
     "back": "超量恢复",
     "example": "Die Superkompensation hebt das Niveau.",
@@ -12562,7 +12594,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1570",
+    "id": "card_1574",
     "front": "die Erholung",
     "back": "恢复",
     "example": "Die Erholung stellt das Niveau wieder her.",
@@ -12570,7 +12602,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1571",
+    "id": "card_1575",
     "front": "die Anpassung",
     "back": "适应",
     "example": "Die Anpassung folgt dem Reiz.",
@@ -12578,7 +12610,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1572",
+    "id": "card_1576",
     "front": "die Reversibilitaet",
     "back": "可逆性",
     "example": "Die Reversibilitaet laesst die Anpassung schwinden.",
@@ -12586,7 +12618,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1573",
+    "id": "card_1577",
     "front": "der wirksame Belastungsreiz",
     "back": "有效刺激原则",
     "example": "Der wirksame Belastungsreiz ueberschreitet die Schwelle.",
@@ -12594,7 +12626,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1574",
+    "id": "card_1578",
     "front": "die progressive Belastungssteigerung",
     "back": "渐进负荷提升",
     "example": "Die progressive Belastungssteigerung hebt die Last.",
@@ -12602,7 +12634,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1575",
+    "id": "card_1579",
     "front": "die Variation der Trainingsbelastung",
     "back": "负荷变化原则",
     "example": "Die Variation der Trainingsbelastung vermeidet Stillstand.",
@@ -12610,7 +12642,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1576",
+    "id": "card_1580",
     "front": "die Periodisierung",
     "back": "周期化",
     "example": "Die Periodisierung ordnet die Trainingsjahre.",
@@ -12618,7 +12650,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1577",
+    "id": "card_1581",
     "front": "die Bewegungsanalyse",
     "back": "动作分析",
     "example": "Die Bewegungsanalyse beschreibt den Ablauf.",
@@ -12626,7 +12658,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1578",
+    "id": "card_1582",
     "front": "die Bewegungsbeschreibung",
     "back": "动作描述",
     "example": "Die Bewegungsbeschreibung bleibt sachlich.",
@@ -12634,7 +12666,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1579",
+    "id": "card_1583",
     "front": "die Bewegungsbeobachtung",
     "back": "动作观察",
     "example": "Die Bewegungsbeobachtung folgt Kriterien.",
@@ -12642,7 +12674,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1580",
+    "id": "card_1584",
     "front": "das Qualitaetsmerkmal",
     "back": "质量特征",
     "example": "Das Qualitaetsmerkmal beschreibt die Ausfuehrung.",
@@ -12650,7 +12682,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1581",
+    "id": "card_1585",
     "front": "Drei-Phasen-Struktur",
     "back": "动作三相",
     "example": "Mit der Drei-Phasen-Struktur zerlege ich jede Bewegung in drei Teile.",
@@ -12658,7 +12690,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1582",
+    "id": "card_1586",
     "front": "Vorbereitungsphase",
     "back": "准备相",
     "example": "In der Vorbereitungsphase sammelt der Sportler Kraft und richtet sich aus.",
@@ -12666,7 +12698,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1583",
+    "id": "card_1587",
     "front": "Hauptphase",
     "back": "主相",
     "example": "Die Hauptphase entscheidet ueber das Ergebnis der Bewegung.",
@@ -12674,7 +12706,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1584",
+    "id": "card_1588",
     "front": "Endphase",
     "back": "结束相",
     "example": "Die Endphase faengt die Bewegung ab und stabilisiert den Koerper.",
@@ -12682,7 +12714,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1585",
+    "id": "card_1589",
     "front": "Fehlerbild",
     "back": "典型错误",
     "example": "Zu jedem Fehlerbild gehoert eine passende Korrektur.",
@@ -12690,7 +12722,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1586",
+    "id": "card_1590",
     "front": "Superkompensation",
     "back": "超量恢复",
     "example": "Nach der Erholung steigt die Leistung durch Superkompensation ueber das Ausgangsniveau.",
@@ -12698,7 +12730,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1587",
+    "id": "card_1591",
     "front": "Belastung",
     "back": "负荷",
     "example": "Jede Belastung setzt einen Reiz fuer den Koerper.",
@@ -12706,7 +12738,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1588",
+    "id": "card_1592",
     "front": "Ermuedung",
     "back": "疲劳",
     "example": "Nach harter Belastung sinkt die Leistung durch Ermuedung.",
@@ -12714,7 +12746,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1589",
+    "id": "card_1593",
     "front": "Uebertraining",
     "back": "过度训练",
     "example": "Zu dichte Reize fuehren zum Uebertraining.",
@@ -12722,7 +12754,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1590",
+    "id": "card_1594",
     "front": "optimale Relation von Belastung und Erholung",
     "back": "负荷—恢复最优关系",
     "example": "Nach der optimalen Relation von Belastung und Erholung folgt der naechste Reiz erst nach genug Pause.",
@@ -12730,7 +12762,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1591",
+    "id": "card_1595",
     "front": "Beobachtungsbogen",
     "back": "观察记录表",
     "example": "Mit dem Beobachtungsbogen notiere ich pro Phase den Beobachtungsschwerpunkt.",
@@ -12738,7 +12770,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1592",
+    "id": "card_1596",
     "front": "Absprung",
     "back": "起跳",
     "example": "Der Absprung ist die Hauptphase des Weitsprungs.",
@@ -12746,7 +12778,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1593",
+    "id": "card_1597",
     "front": "Flugphase",
     "back": "腾空相",
     "example": "In der Flugphase kann der Sportler nur die Haltung optimieren.",
@@ -12754,7 +12786,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1594",
+    "id": "card_1598",
     "front": "Koerper-Schwerpunkt",
     "back": "身体重心",
     "example": "Nach dem Absprung folgt der Koerper-Schwerpunkt einer festen Parabel.",
@@ -12762,7 +12794,7 @@ export const allVaultCards: GeneratedCard[] = [
     "dueIn": "heute"
   },
   {
-    "id": "card_1595",
+    "id": "card_1599",
     "front": "Horizontal- und Vertikalgeschwindigkeit",
     "back": "水平/垂直速度",
     "example": "Horizontal- und Vertikalgeschwindigkeit bestimmen zusammen die Flugkurve.",
