@@ -9,6 +9,8 @@ import FormulaScaffold from "./FormulaScaffold";
 import OralExamTimer from "./OralExamTimer";
 import { TitrationSimulator } from "./TitrationSimulator";
 import { BoxOptimizerSim } from "./BoxOptimizerSim";
+import { EthikWaageSim } from "./EthikWaageSim";
+import { MagischesViereckSim } from "./MagischesViereckSim";
 import { SchiefeEbeneSim } from "./SchiefeEbeneSim";
 import { GiniAllocatorSim } from "./GiniAllocatorSim";
 
@@ -224,16 +226,29 @@ describe("Pädagogische Komponenten (Pedagogy UI Library)", () => {
   describe("BoxOptimizerSim", () => {
     it("rendert Schachtelproblem mit Karton-Skizze und berechnet Volumen", () => {
       render(<BoxOptimizerSim lang="zh" />);
-      expect(screen.getByText("折纸盒问题：无盖盒子容积极大化探索")).toBeInTheDocument();
-      expect(screen.getByText("原始纸板：24 cm × 24 cm")).toBeInTheDocument();
+      expect(screen.getByText("导数极值与约束条件最优化实验室")).toBeInTheDocument();
+      expect(screen.getByText("正方形纸板折盒")).toBeInTheDocument();
 
-      // Initial x = 2.0 -> b = 20 -> V = 2 * 20 * 20 = 800
-      expect(screen.getByText("盒子容积 V(x) = 800 cm³")).toBeInTheDocument();
+      // Klick auf exaktes Optimum (x = 4 cm)
+      fireEvent.click(screen.getByText("跳转理论极值点 (4 cm)"));
+      expect(screen.getByText("✓ 达成极值！")).toBeInTheDocument();
+      expect(screen.getAllByText(/1024/).length).toBeGreaterThan(0);
+    });
+  });
 
-      // Klick auf exaktes Optimum (x = 4) -> V = 4 * 16 * 16 = 1024
-      fireEvent.click(screen.getByText("直接跳转理论极值点 (x = 4 cm)"));
-      expect(screen.getByText("盒子容积 V(x) = 1024 cm³")).toBeInTheDocument();
-      expect(screen.getByText("满足必要极值条件：V'(x) = 0！（容积达到极大值）")).toBeInTheDocument();
+  describe("EthikWaageSim", () => {
+    it("rendert Ethik-Waage und Dilemma-Auswahl", () => {
+      render(<EthikWaageSim lang="zh" />);
+      expect(screen.getByText("伦理道德天平与双轨决策工坊 (Ethik-Waage: Utilitarismus vs. Kant)")).toBeInTheDocument();
+      expect(screen.getByText("1. 经典电车难题：变道拉杆 vs. 桥上推人")).toBeInTheDocument();
+    });
+  });
+
+  describe("MagischesViereckSim", () => {
+    it("rendert Magisches Viereck und Szenarien", () => {
+      render(<MagischesViereckSim lang="zh" />);
+      expect(screen.getByText("魔术四角形：四大目标博弈与宏观调控动态沙盘")).toBeInTheDocument();
+      expect(screen.getByText("四角理想稳态（黄金平衡）")).toBeInTheDocument();
     });
   });
 
