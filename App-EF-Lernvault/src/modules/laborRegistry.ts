@@ -43,7 +43,9 @@ export type LaborSimId =
   | "charges-fields"
   | "faraday"
   | "wave-string"
-  | "orbit";
+  | "orbit"
+  | "ethik-waage"
+  | "magisches-viereck";
 
 export interface SimEntry {
   id: LaborSimId;
@@ -476,5 +478,25 @@ export const SIMULATION_REGISTRY: SimEntry[] = [
     descZH: "事实裁决（有效性）与价值裁决（合法性/伦理尊严）多维论据配重与定论推导。",
     formula: "\\text{Urteil} = f(\\text{Sachkriterien}, \\text{Wertkriterien})",
     tags: ["Ethik", "Philosophie", "Urteilsbildung", "Klausur"],
+  },
+  {
+    id: "ethik-waage",
+    fach: "Philosophie",
+    titleDE: "Ethik-Waage und Dilemma-Entscheidung",
+    titleZH: "伦理道德天平与双轨决策工坊",
+    descDE: "Utilitarismus vs. Kantische Deontologie: Hedonistisches Kalkuel, Maximenpruefung und Antinomien.",
+    descZH: "边沁快乐量度法定量净效用 vs 康德定言命令四步检验法（普遍法则与目的自身公式）。",
+    formula: "\\Delta U = \\sum (F - L) \\quad \\text{vs.} \\quad \\text{Maximenpruefung: Widerspruch in Denken/Wollen}",
+    tags: ["Ethik", "Philosophie", "Kant", "Utilitarismus", "Dilemma", "Labor"],
+  },
+  {
+    id: "magisches-viereck",
+    fach: "SoWi",
+    titleDE: "Magisches Viereck (§ 1 StabG 1967)",
+    titleZH: "宏观经济魔术四角形博弈沙盘",
+    descDE: "Stabilitätsgesetz 1967: Wirtschaftswachstum, Vollbeschäftigung, Preisstabilität und Außenbeitrag im Zielkonflikt.",
+    descZH: "增长、充分就业、物价稳定与对外经济平衡四大目标冲突，菲利普斯曲线与货币财政调控沙盘。",
+    formula: "Y = C + I + G + (X - M) \\quad \\text{Zielkonflikt: } \\text{ALQ} \\leftrightarrow \\text{Inflation}",
+    tags: ["Wirtschaft", "SoWi", "Konjunktur", "Stabilitätsgesetz", "EZB", "Fiskalpolitik", "Labor"],
   },
 ];

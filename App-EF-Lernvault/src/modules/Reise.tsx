@@ -1,3 +1,5 @@
+import { EthikWaageSim } from "../components/pedagogy/EthikWaageSim";
+import { MagischesViereckSim } from "../components/pedagogy/MagischesViereckSim";
 import { useEffect, useMemo, useRef, useState } from "react";
 import {
   type Reise,
@@ -382,6 +384,20 @@ function renderEmbeddedTool(toolName: string, lang: Lang, fach: string, thema?: 
       return (
         <div className="my-3 p-3.5 border border-[var(--line)] bg-[var(--surface)] rounded-[var(--radius)]">
           <GeWiReadingLab lang={lang} defaultExcerptId="steinmeier-rede" filterFach="SoWi" compact={true} />
+        </div>
+      );
+    }
+        if (t === "ethik-waage" || t === "waage" || t === "utilitarismus" || t === "kalkuel" || t === "maximenpruefung" || (f.includes("philo") && thema?.toLowerCase().includes("utilitarismus"))) {
+      return (
+        <div className="my-3 p-3.5 border border-[var(--line)] bg-[var(--surface)] rounded-[var(--radius)]">
+          <EthikWaageSim lang={lang} />
+        </div>
+      );
+    }
+    if (t === "magisches-viereck" || t === "viereck" || t === "wirtschaftspolitik" || t === "stabilitaetsgesetz" || t === "konjunktur" || (f.includes("sowi") && (thema?.toLowerCase().includes("viereck") || thema?.toLowerCase().includes("stabilitaet") || thema?.toLowerCase().includes("konjunktur")))) {
+      return (
+        <div className="my-3 p-3.5 border border-[var(--line)] bg-[var(--surface)] rounded-[var(--radius)]">
+          <MagischesViereckSim lang={lang} />
         </div>
       );
     }

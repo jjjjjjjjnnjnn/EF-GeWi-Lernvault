@@ -1,3 +1,5 @@
+import { EthikWaageSim } from "../components/pedagogy/EthikWaageSim";
+import { MagischesViereckSim } from "../components/pedagogy/MagischesViereckSim";
 import { useState, useMemo } from "react";
 import type { Lang } from "../i18n";
 import { EnergySkateParkSim } from "../components/pedagogy/EnergySkateParkSim";
@@ -180,7 +182,11 @@ export function Labor({ lang, onDiscussInTutor }: LaborProps) {
         return <WaveStringSim lang={lang} studioMode={isStudioExpanded} onExportFinding={handleExportFinding} />;
       case "orbit":
         return <GravityOrbitSim lang={lang} studioMode={isStudioExpanded} onExportFinding={handleExportFinding} />;
-      default:
+            case "ethik-waage":
+        return <EthikWaageSim lang={lang} studioMode={isStudioExpanded} onExportFinding={handleExportFinding} />;
+      case "magisches-viereck":
+        return <MagischesViereckSim lang={lang} />;
+default:
         return null;
     }
   };
