@@ -364,7 +364,7 @@ export function SinusMilieusSim({ lang = "de", onExportFinding }: SinusMilieusSi
       <div className="flex flex-wrap items-center justify-between gap-3 border-b border-[var(--line)] pb-4">
         <div>
           <div className="flex items-center gap-2">
-            <span className="px-2 py-0.5 text-xs font-bold font-mono rounded bg-amber-500/10 text-amber-700 dark:text-amber-300 border border-amber-500/20">
+            <span className="px-2 py-0.5 text-xs font-bold font-mono rounded bg-[var(--paper-subtle)] text-[var(--ink)] border border-[var(--line)]">
               SoWi EF / Q1 · Soziale Ungleichheit
             </span>
             <span className="text-xs font-mono text-[var(--gray)]">Modell: Sinus-Institut (Bonn/Heidelberg)</span>
@@ -431,13 +431,13 @@ export function SinusMilieusSim({ lang = "de", onExportFinding }: SinusMilieusSi
                 <line x1="20" y1="260" x2="580" y2="260" stroke="var(--line)" strokeDasharray="3,3" strokeOpacity="0.6" />
 
                 {/* 区域背景标示文字 */}
-                <text x="35" y="40" fontSize="10" fill="var(--gray)" fillOpacity="0.6" fontFamily="monospace">
+                <text x="35" y="32" fontSize="10.5" fill="var(--ink)" fillOpacity="0.8" fontWeight="bold" fontFamily="monospace">
                   Tradition (传统保留)
                 </text>
-                <text x="240" y="40" fontSize="10" fill="var(--gray)" fillOpacity="0.6" fontFamily="monospace">
+                <text x="240" y="32" fontSize="10.5" fill="var(--ink)" fillOpacity="0.8" fontWeight="bold" fontFamily="monospace">
                   Modernisierung (现代自主)
                 </text>
-                <text x="440" y="40" fontSize="10" fill="var(--gray)" fillOpacity="0.6" fontFamily="monospace">
+                <text x="440" y="32" fontSize="10.5" fill="var(--ink)" fillOpacity="0.8" fontWeight="bold" fontFamily="monospace">
                   Neuorientierung (多元探索)
                 </text>
 
@@ -451,7 +451,11 @@ export function SinusMilieusSim({ lang = "de", onExportFinding }: SinusMilieusSi
                     <g
                       key={m.id}
                       onClick={() => setSelectedMilieuId(m.id)}
-                      className="cursor-pointer transition-transform hover:scale-105"
+                      className="cursor-pointer transition-transform duration-200 hover:scale-105"
+                      style={{
+                        transformOrigin: `${cx}px ${cy}px`,
+                        transformBox: "view-box",
+                      }}
                     >
                       {/* 选中高亮晕环 */}
                       {isSelected && (
@@ -473,30 +477,32 @@ export function SinusMilieusSim({ lang = "de", onExportFinding }: SinusMilieusSi
                         cy={cy}
                         r={m.radius}
                         fill={m.color}
-                        fillOpacity={isSelected ? 0.85 : 0.45}
+                        fillOpacity={isSelected ? 0.90 : 0.65}
                         stroke={m.color}
                         strokeWidth={isSelected ? 3 : 1.5}
                       />
 
-                      {/* 缩写与占比文字 */}
+                      {/* 缩写与占比文字 - 强化投影确保任何背景底色上 100% 高对比清晰 */}
                       <text
                         x={cx}
-                        y={cy - 5}
+                        y={cy - 4}
                         textAnchor="middle"
-                        fontSize={m.radius > 36 ? "10" : "9"}
+                        fontSize={m.radius > 36 ? "10.5" : "9.5"}
                         fontWeight="bold"
                         fill="#ffffff"
+                        style={{ filter: "drop-shadow(0 1px 2px rgba(0, 0, 0, 0.85))" }}
                         pointerEvents="none"
                       >
                         {isDe ? m.shortDE : m.shortZH}
                       </text>
                       <text
                         x={cx}
-                        y={cy + 9}
+                        y={cy + 10}
                         textAnchor="middle"
-                        fontSize="9"
+                        fontSize="9.5"
+                        fontWeight="600"
                         fill="#ffffff"
-                        fillOpacity="0.9"
+                        style={{ filter: "drop-shadow(0 1px 2px rgba(0, 0, 0, 0.85))" }}
                         fontFamily="monospace"
                         pointerEvents="none"
                       >
@@ -544,50 +550,50 @@ export function SinusMilieusSim({ lang = "de", onExportFinding }: SinusMilieusSi
             </div>
 
             {/* 核心生活格言 */}
-            <div className="p-2.5 rounded-lg bg-[var(--paper-subtle)] border-l-3 border-[var(--accent)] text-xs italic text-[var(--ink)]">
+            <div className="p-3 rounded-lg bg-[var(--paper-subtle)] border-l-4 border-l-[var(--ink)] text-xs italic text-[var(--ink)] font-serif leading-relaxed">
               "{isDe ? selectedMilieu.mottoDE : selectedMilieu.mottoZH}"
             </div>
 
             {/* 四维结构化画像卡片 */}
             <div className="space-y-2.5 text-xs">
-              <div className="p-2.5 rounded bg-[var(--paper-subtle)]/50 border border-[var(--line)]/60">
-                <span className="font-bold text-[var(--accent)]">
+              <div className="p-3 rounded-lg bg-[var(--paper-subtle)] border border-[var(--line)]">
+                <span className="font-bold text-[var(--ink)] block mb-1">
                   {isDe ? "🎯 Leitwerte & Lebensgefühl:" : "🎯 核心价值观与生活态度："}
                 </span>
-                <p className="mt-0.5 text-[var(--ink)] leading-relaxed">
+                <p className="text-[var(--ink)] leading-relaxed">
                   {isDe ? selectedMilieu.leitwertDE : selectedMilieu.leitwertZH}
                 </p>
               </div>
 
-              <div className="p-2.5 rounded bg-[var(--paper-subtle)]/50 border border-[var(--line)]/60">
-                <span className="font-bold text-sky-700 dark:text-sky-300">
+              <div className="p-3 rounded-lg bg-[var(--paper-subtle)] border border-[var(--line)]">
+                <span className="font-bold text-[var(--ink)] block mb-1">
                   {isDe ? "💼 Sozioökonomischer Status & Einkommen:" : "💼 职业阶层地位与收入水准："}
                 </span>
-                <p className="mt-0.5 text-[var(--ink)] leading-relaxed">
+                <p className="text-[var(--ink)] leading-relaxed">
                   {isDe ? selectedMilieu.einkommenDE : selectedMilieu.einkommenZH}
                 </p>
-                <p className="text-[11px] text-[var(--gray)] mt-0.5">
+                <p className="text-[11px] text-[var(--gray)] mt-1 font-mono">
                   {isDe ? selectedMilieu.demografieDE : selectedMilieu.demografieZH}
                 </p>
               </div>
 
-              <div className="p-2.5 rounded bg-[var(--paper-subtle)]/50 border border-[var(--line)]/60">
-                <span className="font-bold text-emerald-700 dark:text-emerald-300">
+              <div className="p-3 rounded-lg bg-[var(--paper-subtle)] border border-[var(--line)]">
+                <span className="font-bold text-[var(--ink)] block mb-1">
                   {isDe ? "🗳️ Mediennutzung & Wahlverhalten:" : "🗳️ 媒体消费习惯与政党投票流向："}
                 </span>
-                <p className="mt-0.5 text-[var(--ink)] leading-relaxed">
+                <p className="text-[var(--ink)] leading-relaxed">
                   {isDe ? selectedMilieu.parteienDE : selectedMilieu.parteienZH}
                 </p>
-                <p className="text-[11px] text-[var(--gray)] mt-0.5">
+                <p className="text-[11px] text-[var(--gray)] mt-1 font-mono">
                   {isDe ? `Medien: ${selectedMilieu.medienDE}` : `信息渠道：${selectedMilieu.medienZH}`}
                 </p>
               </div>
 
-              <div className="p-2.5 rounded bg-amber-500/10 border border-amber-500/20 text-amber-900 dark:text-amber-200">
-                <span className="font-bold">
+              <div className="p-3 rounded-lg bg-[var(--paper-subtle)] border-l-4 border-l-[var(--ink)] border border-[var(--line)] text-xs text-[var(--ink)]">
+                <span className="font-bold text-[var(--ink)] block mb-1">
                   {isDe ? "🏛️ Klausur-Schwerpunkt (NRW):" : "🏛️ 北威州会考采分高频考点："}
                 </span>
-                <p className="mt-0.5 leading-relaxed">
+                <p className="leading-relaxed text-[var(--ink)]/90">
                   {isDe ? selectedMilieu.klausurFokusDE : selectedMilieu.klausurFokusZH}
                 </p>
               </div>
@@ -636,7 +642,7 @@ export function SinusMilieusSim({ lang = "de", onExportFinding }: SinusMilieusSi
               <div>
                 <div className="flex justify-between text-xs font-semibold mb-1">
                   <span>{isDe ? "2. Grundorientierung (Wertewandel)" : "2. 价值观取向（传统保守 vs 多元先锋）"}</span>
-                  <span className="font-mono text-emerald-600 dark:text-emerald-400">{personaWerte} / 100</span>
+                  <span className="font-mono text-[var(--ink)] font-bold">{personaWerte} / 100</span>
                 </div>
                 <input
                   type="range"
@@ -644,7 +650,7 @@ export function SinusMilieusSim({ lang = "de", onExportFinding }: SinusMilieusSi
                   max="100"
                   value={personaWerte}
                   onChange={(e) => setPersonaWerte(Number(e.target.value))}
-                  className="w-full accent-emerald-600 cursor-pointer"
+                  className="w-full accent-[var(--ink)] cursor-pointer"
                 />
                 <div className="flex justify-between text-[10px] text-[var(--gray)] mt-0.5 font-mono">
                   <span>Tradition / Sicherheit</span>
@@ -655,7 +661,7 @@ export function SinusMilieusSim({ lang = "de", onExportFinding }: SinusMilieusSi
             </div>
 
             {/* 实时匹配结果 */}
-            <div className="p-5 rounded-xl border-2 border-[var(--accent)] bg-[var(--paper-subtle)]/40 flex flex-col gap-2">
+            <div className="p-5 rounded-xl border border-[var(--line)] bg-[var(--paper-subtle)] flex flex-col gap-2">
               <span className="text-[11px] font-mono text-[var(--gray)] uppercase tracking-wider">
                 {isDe ? "Dynamisches Match-Ergebnis" : "社会学算法动态定格社群："}
               </span>
@@ -692,9 +698,9 @@ export function SinusMilieusSim({ lang = "de", onExportFinding }: SinusMilieusSi
 
       {/* 模式 3：北威州会考真题与 EHZ 评分标准 */}
       {activeTab === "klausur" && (
-        <div className="flex flex-col gap-4 p-4 rounded-xl border border-[var(--line)] bg-[var(--paper-subtle)]/30 text-xs">
+        <div className="flex flex-col gap-4 p-4 rounded-xl border border-[var(--line)] bg-[var(--paper-subtle)] text-xs">
           <div className="border-b border-[var(--line)] pb-3">
-            <span className="px-2 py-0.5 font-bold font-mono text-[10px] rounded bg-red-500/10 text-red-700 dark:text-red-300 border border-red-500/20">
+            <span className="px-2 py-0.5 font-bold font-mono text-[10px] rounded border border-[var(--line)] bg-[var(--paper)] text-[var(--ink)]">
               AFB III · Beurteilungsaufgabe (15 BE)
             </span>
             <h4 className="text-sm font-bold mt-1.5 text-[var(--ink)]">
@@ -706,7 +712,7 @@ export function SinusMilieusSim({ lang = "de", onExportFinding }: SinusMilieusSi
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div className="p-3 rounded-lg bg-[var(--paper)] border border-[var(--line)]">
-              <span className="font-bold text-emerald-700 dark:text-emerald-300 block mb-1">
+              <span className="font-bold text-[var(--ink)] block mb-1">
                 {isDe ? "✅ Erwartungshorizont (EHZ-Kernpunkte):" : "✅ 官方采分点 (Erwartungshorizont):"}
               </span>
               <ul className="list-disc list-inside space-y-1 text-[var(--ink)] leading-relaxed">
@@ -729,10 +735,10 @@ export function SinusMilieusSim({ lang = "de", onExportFinding }: SinusMilieusSi
             </div>
 
             <div className="p-3 rounded-lg bg-[var(--paper)] border border-[var(--line)]">
-              <span className="font-bold text-amber-700 dark:text-amber-300 block mb-1">
+              <span className="font-bold text-[var(--ink)] block mb-1">
                 {isDe ? "✍️ 15-Punkte Musterformulierung:" : "✍️ 15分满分标准句式 (Muster-Formulierung):"}
               </span>
-              <blockquote className="italic border-l-2 border-[var(--accent)] pl-2 text-[var(--ink)] leading-relaxed">
+              <blockquote className="italic border-l-2 border-[var(--ink)] pl-2 text-[var(--ink)] leading-relaxed">
                 {isDe
                   ? "„Das Sinus-Milieu-Modell belegt eindrucksvoll, dass die gesellschaftliche Erosion nicht primär als klassischer Klassenkonflikt, sondern als Fragmentierung von Lebenswelten verstanden werden muss. Während kosmopolitische Eliten (Postmaterielle, Performer) von der Globalisierung profitieren, verharrt das Prekäre Milieu in systemischer Resignation – die Schnittmengen gemeinsamen Wertebewusstseins schrumpfen zusehends.“"
                   : "‘Sinus-Milieus 容积模型有力证明了，当今社会的撕裂不应被狭隘地理解为传统的阶级对立，而应被视为生存生活世界（Lebenswelten）的碎片化。当国际化大都市精英（后物质主义、进取精英）从全球化红利中汲取滋养时，边缘困境阶层却陷入体制性的被剥夺与无力感中——维系社会整合的基础共同价值公约数正显著收缩。’"}
