@@ -52,6 +52,7 @@ import { DilemmaTheatre } from "../components/pedagogy/DilemmaTheatre";
 import { MagischesViereckSim } from "../components/pedagogy/MagischesViereckSim";
 import { TrustGameSim } from "../components/pedagogy/TrustGameSim";
 import { GeWiReadingLab } from "../components/pedagogy/GeWiReadingLab";
+import { UniversalInteractiveWorkbench } from "../components/pedagogy/UniversalInteractiveWorkbench";
 import {
   type LaborSimId,
   type SimEntry,
@@ -73,6 +74,7 @@ export function Labor({ lang, onDiscussInTutor }: LaborProps) {
   const [kategorieFilter, setKategorieFilter] = useState<string>("alle");
   const [stufeFilter, setStufeFilter] = useState<string>("alle");
   const [isStudioExpanded, setIsStudioExpanded] = useState<boolean>(true);
+  const [isCategoryExpanded, setIsCategoryExpanded] = useState<boolean>(false);
 
   // Available categories based on selected Fach
   const availableCategories = useMemo(() => {
@@ -262,6 +264,16 @@ export function Labor({ lang, onDiscussInTutor }: LaborProps) {
       case "gewi-reading":
         return <GeWiReadingLab lang={lang} />;
       default:
+        if (activeSim) {
+          return (
+            <UniversalInteractiveWorkbench
+              sim={activeSim}
+              lang={lang}
+              studioMode={isStudioExpanded}
+              onExportFinding={handleExportFinding}
+            />
+          );
+        }
         return null;
     }
   };
@@ -439,40 +451,95 @@ export function Labor({ lang, onDiscussInTutor }: LaborProps) {
               })}
             </div>
 
-            {/* Sub-Category Filter Row (Themenkategorien / 实验专题分类) */}
-            <div className="flex flex-wrap items-center gap-1.5 pt-1">
-              <span className="text-[11px] font-mono text-[var(--gray)] mr-1 font-semibold">
-                {lang === "de" ? "Themen-Kategorie:" : "实验专题分类:"}
-              </span>
-              <button
-                type="button"
-                onClick={() => setKategorieFilter("alle")}
-                className={`px-2 py-0.5 text-[11px] font-mono rounded border transition-colors ${
-                  kategorieFilter === "alle"
-                    ? "border-[var(--accent)] bg-[var(--accent)] text-white font-medium"
-                    : "border-[var(--line)] text-[var(--gray)] hover:text-[var(--ink)] hover:bg-[var(--surface)]"
-                }`}
-              >
-                {tr.laborAllCategories}
-              </button>
-              {availableCategories.map((c) => {
-                const isSelected =
-                  kategorieFilter === c.de || kategorieFilter === c.zh;
-                return (
+            {/* Sub-Category Filter (Themenkategorien / 实验专题分类) - 默认折叠以节约空间 */}
+            <div className="space-y-1.5 pt-1">
+              <div className="flex flex-wrap items-center justify-between gap-2">
+                <div className="flex flex-wrap items-center gap-2">
+                  <span className="text-[11px] font-mono text-[var(--gray)] font-semibold">
+                    {lang === "de" ? "Themen-Kategorie:" : "实验专题分类:"}
+                  </span>
+                  {kategorieFilter === "alle" ? (
+                    <span className="text-[11px] font-mono px-2 py-0.5 rounded border border-[var(--line)] bg-[var(--paper-subtle)] text-[var(--gray)]">
+                      {lang === "de"
+                        ? `Alle Kategorien (${availableCategories.length})`
+                        : `全部专题 (${availableCategories.length} 个分类)`}
+                    </span>
+                  ) : (
+                    <span className="inline-flex items-center gap-1.5 text-[11px] font-mono px-2.5 py-0.5 rounded border border-[var(--accent)] bg-[var(--accent)] text-white font-medium shadow-xs">
+                      <span>
+                        {(() => {
+                          const match = availableCategories.find(
+                            (c) => c.de === kategorieFilter || c.zh === kategorieFilter
+                          );
+                          return match ? (lang === "de" ? match.de : match.zh) : kategorieFilter;
+                        })()}
+                      </span>
+                      <button
+                        type="button"
+                        onClick={() => setKategorieFilter("alle")}
+                        title={lang === "de" ? "Filter aufheben" : "清除分类筛选"}
+                        className="hover:opacity-80 font-bold ml-0.5 text-xs leading-none"
+                      >
+                        ✕
+                      </button>
+                    </span>
+                  )}
+                </div>
+
+                {/* 展开/折叠切换按钮 */}
+                <button
+                  type="button"
+                  onClick={() => setIsCategoryExpanded(!isCategoryExpanded)}
+                  className="flex items-center gap-1.5 text-[11px] font-mono px-2.5 py-1 rounded border border-[var(--line)] hover:border-[var(--accent)] text-[var(--gray)] hover:text-[var(--ink)] bg-[var(--surface)] transition-colors"
+                >
+                  <span className="text-[10px]">{isCategoryExpanded ? "▴" : "▾"}</span>
+                  <span>
+                    {isCategoryExpanded
+                      ? lang === "de"
+                        ? "Kategorien einklappen"
+                        : "收起专题分类"
+                      : lang === "de"
+                      ? `Kategorien ausklappen (${availableCategories.length})`
+                      : `展开专题分类 (${availableCategories.length})`}
+                  </span>
+                </button>
+              </div>
+
+              {/* 展开后的专题抽屉列表 */}
+              {isCategoryExpanded && (
+                <div className="flex flex-wrap items-center gap-1.5 p-2 rounded-[var(--radius)] border border-[var(--line)] bg-[var(--paper-subtle)]/50 transition-all">
                   <button
-                    key={c.de}
                     type="button"
-                    onClick={() => setKategorieFilter(c.de)}
+                    onClick={() => setKategorieFilter("alle")}
                     className={`px-2 py-0.5 text-[11px] font-mono rounded border transition-colors ${
-                      isSelected
+                      kategorieFilter === "alle"
                         ? "border-[var(--accent)] bg-[var(--accent)] text-white font-medium"
                         : "border-[var(--line)] text-[var(--gray)] hover:text-[var(--ink)] hover:bg-[var(--surface)]"
                     }`}
                   >
-                    {lang === "de" ? c.de : c.zh} <span className="opacity-75">({c.count})</span>
+                    {tr.laborAllCategories}
                   </button>
-                );
-              })}
+                  {availableCategories.map((c) => {
+                    const isSelected =
+                      kategorieFilter === c.de || kategorieFilter === c.zh;
+                    return (
+                      <button
+                        key={c.de}
+                        type="button"
+                        onClick={() => setKategorieFilter(c.de)}
+                        className={`px-2 py-0.5 text-[11px] font-mono rounded border transition-colors ${
+                          isSelected
+                            ? "border-[var(--accent)] bg-[var(--accent)] text-white font-medium"
+                            : "border-[var(--line)] text-[var(--gray)] hover:text-[var(--ink)] hover:bg-[var(--surface)]"
+                        }`}
+                      >
+                        {lang === "de" ? c.de : c.zh}{" "}
+                        <span className="opacity-75">({c.count})</span>
+                      </button>
+                    );
+                  })}
+                </div>
+              )}
             </div>
 
             {/* Stufe (EF/Q1/Q2) + Search Bar */}
