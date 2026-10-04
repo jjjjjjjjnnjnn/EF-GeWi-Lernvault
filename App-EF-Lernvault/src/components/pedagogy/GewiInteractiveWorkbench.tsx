@@ -931,6 +931,164 @@ const DRAMA_PLAYS: DramaPlay[] = [
         ehzClueZH: "会考满分结论：格雷特琴以肉身牺牲捍卫了道德纯洁性，达成了亚里士多德意义上的怜悯与崇高净化（Katharsis）。"
       }
     ]
+  },
+  {
+    id: "maria-stuart",
+    titleDE: "Maria Stuart (Friedrich Schiller)",
+    titleZH: "《玛丽亚·斯图亚特》：两女王权力与自由之决死较量",
+    autor: "Friedrich Schiller (1800)",
+    epoche: "Weimarer Klassik (Idealismus)",
+    acts: [
+      {
+        actNum: 1,
+        actNameDE: "I. Exposition",
+        actNameZH: "第一幕：开端阐述 (Gefangenschaft in Fotheringhay)",
+        tensionLevel: 35,
+        sceneTitleDE: "Szene: Fotheringhay",
+        sceneTitleZH: "福瑟灵海城堡 · 囚徒困境与莫蒂默的营救密谋",
+        quoteDE: "„Das Recht des Schwertes ist mein einz’ger Schild, nicht das Gesetz.“",
+        quoteZH: "“宝剑的暴力是我唯一的盾牌，法律早已名存实亡。”",
+        functionDE: "Exposition der Ausgangslage: Maria als katholische Thronprätendentin in englischer Festungshaft; illegitimes Tribunal.",
+        functionZH: "确立开端冲突：苏格兰玛丽女王被伊丽莎白秘密囚禁，揭露审判的非法性与莫蒂默的狂热效忠计划。",
+        ehzClueDE: "AFB I: Zeigen Sie auf, warum Maria das englische Gericht als illegitim ablehnt.",
+        ehzClueZH: "会考重点：剖析玛丽亚为何依据主权豁免权坚决否定英格兰法庭管辖权。"
+      },
+      {
+        actNum: 2,
+        actNameDE: "II. Steigende Handlung",
+        actNameZH: "第二幕：冲突升级 (Elisabeths Staatsräson)",
+        tensionLevel: 60,
+        sceneTitleDE: "Szene: Westminster-Palast",
+        sceneTitleZH: "威斯敏斯特宫 · 伊丽莎白的王冠重负与两难抉择",
+        quoteDE: "„O Sklaverei des Volksdiensts! Schmähliche Knechtschaft! — Wie bin ich dieses Gaukelspiels so müde!“",
+        quoteZH: "“哦，侍奉臣民的奴役！可耻的束缚！——我是多么厌恶这出戴着王冠的傀儡戏！”",
+        functionDE: "Erregendes Moment: Elisabeth schwankt zwischen Volksbegehren nach Hinrichtung und Furcht vor dem Urteil der Nachwelt.",
+        functionZH: "激化行动契机：伊丽莎白被国内新教民众逼宫，陷入政治国家理性（Staatsräson）与历史道德评价的双重夹缝。",
+        ehzClueDE: "AFB II: Analysieren Sie Elisabeths Monolog als Konflikt zwischen persönlicher Freiheit und politischem Rollenzwang.",
+        ehzClueZH: "会考重点：分析伊丽莎白独白中统治者角色异化与自由丧失的悲剧张力。"
+      },
+      {
+        actNum: 3,
+        actNameDE: "III. Höhepunkt & Peripetie",
+        actNameZH: "第三幕：最高潮与突转 (Treffen der Königinnen)",
+        tensionLevel: 98,
+        sceneTitleDE: "Szene: Park von Fotheringhay",
+        sceneTitleZH: "城堡花园 · 两女王历史性会面与尊严爆发",
+        quoteDE: "„Der Thron von England ist durch einen Bastard entweiht, das edelmüt’ge Volk von London durch eine Gauklerin betrogen!“",
+        quoteZH: "“英格兰的王座被一个私生女所玷污，高贵的伦敦人民被一个伪善的女骗子所欺骗！”",
+        functionDE: "Peripetie: Historisch fiktives Treffen. Maria bricht aus der demütigen Unterwerfung aus und beleidigt Elisabeth tödlich; die Hinrichtung wird unvermeidlich.",
+        functionZH: "全剧最高潮与命运逆转点（Peripetie）：席勒虚构的两女王会晤。玛丽亚在受尽羞辱后撕破伪装，当面痛斥其为私生女，彻底掐死和平希望。",
+        ehzClueDE: "AFB II: Deuten Sie Marias Gefühlsausbruch dramaturgisch als Sieg der inneren Freiheit über die äußere Selbsterhaltung.",
+        ehzClueZH: "会考核心采分点：玛丽亚的爆发标志着‘精神崇高自主’战胜了‘肉体苟且偷生’，席勒经典道德自由胜利。"
+      },
+      {
+        actNum: 4,
+        actNameDE: "IV. Retardierendes Moment",
+        actNameZH: "第四幕：延缓动作与暗杀败露 (Die Unterschrift)",
+        tensionLevel: 75,
+        sceneTitleDE: "Szene: Audienzzimmer",
+        sceneTitleZH: "密室 · 莫蒂默自刎与伊丽莎白推诿死刑签字",
+        quoteDE: "„Ich unterschreibe, doch ich befehle nicht... Nehmt dieses Blatt, tut, was Ihr wollt damit!“",
+        quoteZH: "“我签字了，但我并未下令执行……拿去吧，随你们大臣怎么处置！”",
+        functionDE: "Retardation: Zaudern der Königin, Verhaftung Leicesters, scheinbare Rettungsmöglichkeiten zerschlagen sich.",
+        functionZH: "延缓动作：伊丽莎白通过含糊不清的转交手段试图推脱历史弑君罪责，各方政治合谋加速推向刑场。",
+        ehzClueDE: "AFB III: Beurteilen Sie Elisabeths opportunistische Verantwortungslosigkeit im Lichte Schillers Freiheitsphilosophie.",
+        ehzClueZH: "会考重点：批判伊丽莎白假借‘公意’推卸个人政治道德责任的虚伪性。"
+      },
+      {
+        actNum: 5,
+        actNameDE: "V. Katastrophe / Sittliche Läuterung",
+        actNameZH: "第五幕：悲剧灾难与精神超越 (Der Gang zum Schafott)",
+        tensionLevel: 88,
+        sceneTitleDE: "Szene: Fotheringhay Schafott",
+        sceneTitleZH: "断头台前夕 · 宽恕宿敌与纯洁赴死",
+        quoteDE: "„Gott würdigt mich, durch diesen unverdienten Tod die frühe schwere Blutschuld abzubüßen.“",
+        quoteZH: "“上帝怜悯我，让我通过这场不应得的死刑，洗刷我早年深重的情欲与谋杀血债。”",
+        functionDE: "Katastrophe & Katharsis: Maria nimmt den unrechtmäßigen Tod freiwillig als Sühne für ihre frühere Mitschuld an Darnleys Tod an; Transzendenz des Erhabenen.",
+        functionZH: "终局灾难与精神崇高：玛丽亚肉身虽死，但在精神上实现了对早年罪孽的救赎（Schillers Begriff des Erhabenen）；伊丽莎白虽胜犹败，众叛亲离终身孤独。",
+        ehzClueDE: "AFB III: Erläutern Sie das 'Erhabene' nach Schiller anhand von Marias Haltung im Angesicht des Todes.",
+        ehzClueZH: "会考大题高频考点：席勒美育与崇高哲学（Das Erhabene）——肉体遭受摧毁时，理性道德意志获得绝对解放！"
+      }
+    ]
+  },
+  {
+    id: "woyzeck",
+    titleDE: "Woyzeck (Georg Büchner)",
+    titleZH: "《沃伊采克》：开放式社会悲剧与社会达尔文主义解剖",
+    autor: "Georg Büchner (1837)",
+    epoche: "Vormärz (Realismus & Sozialkritik)",
+    acts: [
+      {
+        actNum: 1,
+        actNameDE: "I. Exposition (Offene Form)",
+        actNameZH: "第一幕：社会底层异化 (Beim Hauptmann)",
+        tensionLevel: 40,
+        sceneTitleDE: "Szene: Der Hauptmann rasiert sich",
+        sceneTitleZH: "给上尉刮胡子：有钱人才谈得起道德",
+        quoteDE: "„Sehn Sie, Herr Hauptmann, Tugend — ich hab's nicht so. Wir arme Leut — sehn Sie, einer wie unsereiner hat keine Tugend.“",
+        quoteZH: "“您瞧，上尉先生，说到品德——我可没有那玩意儿。我们穷苦人——像我们这样的人哪谈得起品德。”",
+        functionDE: "Entlarvung der bürgerlichen Moral als Klassenprivileg; Woyzecks existentieller Zeitdruck und Verhetzung durch die Obrigkeit.",
+        functionZH: "无情戳穿市民阶级所谓‘道德修养’的虚伪金钱本质；揭示底层无产者被军官从肉体到灵魂的残酷规训与压迫。",
+        ehzClueDE: "AFB I: Arbeiten Sie Büchners Kritik am bürgerlichen Moralbegriff aus Woyzecks Replik heraus.",
+        ehzClueZH: "会考核心：结合沃伊采克名言解构‘经济贫困导致道德剥夺’的阶级现实。"
+      },
+      {
+        actNum: 2,
+        actNameDE: "II. Steigende Handlung",
+        actNameZH: "第二幕：诱惑与背叛 (Der Tambourmajor)",
+        tensionLevel: 65,
+        sceneTitleDE: "Szene: Maries Kammer",
+        sceneTitleZH: "玛丽的房间 · 军乐长的耳环与肉体诱惑",
+        quoteDE: "„Was die Steine glänzen! Was sind's für welche? Was hat er gesagt? — Unsereins hat nur ein Eckchen in der Welt...“",
+        quoteZH: "“这红宝石闪闪发光！这是什么名堂？他说了什么？——像我们这样的人在这个世界上只有巴掌大的一角……”",
+        functionDE: "Der Tambourmajor als vitale, brutale Gegenfigur zu Woyzeck; Maries Verführung durch Glanz und physische Überlegenheit.",
+        functionZH: "军乐长象征野蛮的社会达尔文强势力量；玛丽在极度赤贫下无法抵抗闪光首饰的虚荣诱惑，出轨背叛。",
+        ehzClueDE: "AFB II: Deuten Sie die Ohrringe als Symbol für Maries Sehnsucht nach gesellschaftlicher Anerkennung.",
+        ehzClueZH: "会考重点：分析‘金耳环’作为底层女性挣脱赤贫绝望与通奸堕落的双重象征。"
+      },
+      {
+        actNum: 3,
+        actNameDE: "III. Höhepunkt (Erbsen-Diät)",
+        actNameZH: "第三幕：科学异化与幻觉加剧 (Beim Doktor)",
+        tensionLevel: 90,
+        sceneTitleDE: "Szene: Die Straße / Arztpraxis",
+        sceneTitleZH: "诊所 · 豌豆禁食人体实验与理智崩溃",
+        quoteDE: "„Woyzeck, Er hat eine schöne Aberratio mentalis partialis, die zweite Spezies!... Er bekommt zwei Groschen Zulage.“",
+        quoteZH: "“沃伊采克，你患上了极其美妙的局部精神失常，这是第二类型！……给你加发两格罗申津贴。”",
+        functionDE: "Wissenschaftliche Ausbeutung: Der Arzt degradiert Woyzeck zum biologischen Objekt; Mangelernährung erzeugt Halluzinationen.",
+        functionZH: "冷血功利主义科学实验：医生将活生生的人贬低为生理学试验豚鼠；长期只吃豌豆引发严重营养不良与听觉幻觉狂躁症。",
+        ehzClueDE: "AFB II: Untersuchen Sie, wie Büchner den Doktor als Karikatur einer entmenschlichten Naturwissenschaft darstellt.",
+        ehzClueZH: "会考重点：批判近代实验科学丧失人道伦理底线、将底层人彻底物化（Verdinglichung）的恐怖灾难。"
+      },
+      {
+        actNum: 4,
+        actNameDE: "IV. Zuspitzung (Stimmen im Wind)",
+        actNameZH: "第四幕：发疯的催命符 (Im Wirtshaus)",
+        tensionLevel: 80,
+        sceneTitleDE: "Szene: Freies Feld",
+        sceneTitleZH: "荒野 · 地下轰鸣与天外幻听：刺死她！",
+        quoteDE: "„Horch! Sch, ganz leis!... Stich, stich die Zickmörderin tot! — Hör ich's da unten auch? Sagt's der Wind auch?“",
+        quoteZH: "“听！嘘，轻轻地！……刺，刺死这个荡妇！——地底下也在这么说吗？风也在这么说吗？”",
+        functionDE: "Verlust der subjektiven Handlungsautonomie; Halluzinatorischer Wahn treibt den psychotisch zerrütteten Protagonisten zum Femizid.",
+        functionZH: "自主意识彻底瓦解：狂风地底的幻听呼啸而至，将饱受屈辱、暴力与饥饿折磨的沃伊采克推向精神分裂杀戮深渊。",
+        ehzClueDE: "AFB III: Erörtern Sie die Frage der Zurechnungsfähigkeit (Schuldfähigkeit) Woyzecks aus juristischer und literarischer Sicht.",
+        ehzClueZH: "法学与文学高频命题：沃伊采克究竟是凶残凶手，还是被整个残酷社会逼疯的免责精神病受害者？"
+      },
+      {
+        actNum: 5,
+        actNameDE: "V. Katastrophe (Femizid & Resignation)",
+        actNameZH: "第五幕：悲剧收场与漠然冷血 (Am Teich)",
+        tensionLevel: 85,
+        sceneTitleDE: "Szene: Waldweg am Teich",
+        sceneTitleZH: "池塘林径 · 乱刀弑爱与看客的冷血狂欢",
+        quoteDE: "„Ein guter Mord, ein echter Mord, ein schöner Mord, so schön, als man ihn nur verlangen kann; wir haben schon lange keinen so hübschen gehabt.“",
+        quoteZH: "“一桩漂亮的谋杀，货真价实的谋杀，一桩美妙绝伦的谋杀！很久都没遇到过这么精彩的好戏了。”",
+        functionDE: "Femizid an Marie. Der Gerichtsdiener zynisiert den Tod zur bürgerlichen Schau-Sensation; die Gesellschaft bleibt unverändert brutal.",
+        functionZH: "玛丽惨死在池塘边。官府司法衙役非但毫无悲悯，反而将惨案当成市民社会猎奇观赏的‘好戏’，凸显社会制度永恒的冰冷绝望。",
+        ehzClueDE: "AFB III: Deuten Sie den Zynismus der Gerichtsleute als Büchners Generalabrechnung mit der bürgerlichen Gesellschaftsordnung.",
+        ehzClueZH: "会考总结点拨：看客的冷血狂欢证明沃伊采克的悲剧不是偶发事故，而是腐朽残酷阶级秩序的必然牺牲品！"
+      }
+    ]
   }
 ];
 
@@ -1002,6 +1160,32 @@ const POEM_SAMPLES: PoemLine[] = [
     rhymeSchemeZH: "交叉韵 (abab)",
     wirkungDE: "Der sanfte Jambus mit abwechselnd weiblichen und männlichen Kadenzen erzeugt einen schwebenden, wiegenden Traumrhythmus.",
     wirkungZH: "抑扬格（◡ —）配合阴阳韵脚交替，营造出灵魂宛如展翅飞越大地的梦幻空灵之美。"
+  },
+  {
+    id: "trakl-verfall",
+    titleDE: "Verfall (Georg Trakl)",
+    titleZH: "《衰败》：表现主义黄昏绝望与五音步抑扬格",
+    autor: "Georg Trakl (1913)",
+    epoche: "Expressionismus (Weltende & Entfremdung)",
+    syllables: [
+      { text: "Am", stressed: false },
+      { text: "A-", stressed: true },
+      { text: "bend,", stressed: false },
+      { text: "wenn", stressed: false },
+      { text: "die", stressed: false },
+      { text: "Glock-", stressed: true },
+      { text: "en", stressed: false },
+      { text: "Frie-", stressed: true },
+      { text: "den", stressed: false },
+      { text: "klang-", stressed: true },
+      { text: "en", stressed: false }
+    ],
+    correctMetrum: "jambus",
+    correctMetrumZH: "五音步抑扬格 (5-hebiger Jambus mit Dissonanz)",
+    rhymeScheme: "umarmend",
+    rhymeSchemeZH: "抱韵 (abba)",
+    wirkungDE: "Zerrissener Jambusrhythmus mit harten Enjambements drückt die expressionistische Apokalypseangst und Identitätskrise vor Ausbruch des Ersten Weltkriegs aus.",
+    wirkungZH: "顿挫破碎的抑扬格与突兀跨行（Enjambement），沉痛传达出一战爆发前夕表现主义知识分子面对‘世界末日’与人性异化的极度绝望。"
   }
 ];
 
@@ -1025,6 +1209,8 @@ export function GewiInteractiveWorkbench({
     if (sim.id === "deutsch-lyrik-metrum") return "lyrik";
     if (sim.id === "deutsch-brecht-episch") return "brecht";
     if (sim.id === "deutsch-kafka-verwandlung") return "kafka";
+    if (sim.id === "deutsch-borchert-draussen") return "borchert";
+    if (sim.id === "deutsch-sachtext-argument") return "toulmin";
     // 其余绝大多数哲学、伦理及社科理论议题，全部接入直观动态天平
     return "balance";
   }, [sim.id]);
@@ -1081,8 +1267,11 @@ export function GewiInteractiveWorkbench({
   // -----------------------------------------------------------------------
   // 子工坊 3：戏剧五幕构建台
   // -----------------------------------------------------------------------
-  const activeDrama = DRAMA_PLAYS[0];
+  const [selectedDramaId, setSelectedDramaId] = useState<string>("faust-1");
   const [selectedActNum, setSelectedActNum] = useState<1 | 2 | 3 | 4 | 5>(3); // 默认定位 Peripetie
+  const activeDrama = useMemo(() => {
+    return DRAMA_PLAYS.find((d) => d.id === selectedDramaId) ?? DRAMA_PLAYS[0];
+  }, [selectedDramaId]);
   const currentAct = useMemo(() => {
     return activeDrama.acts.find((a) => a.actNum === selectedActNum) ?? activeDrama.acts[2];
   }, [activeDrama, selectedActNum]);
@@ -1090,8 +1279,55 @@ export function GewiInteractiveWorkbench({
   // -----------------------------------------------------------------------
   // 子工坊 4：诗歌格律节拍器与 Web Audio 节拍声
   // -----------------------------------------------------------------------
-  const activePoem = POEM_SAMPLES[0];
+  const [selectedPoemId, setSelectedPoemId] = useState<string>("gryphius-traenen");
+  const activePoem = useMemo(() => {
+    return POEM_SAMPLES.find((p) => p.id === selectedPoemId) ?? POEM_SAMPLES[0];
+  }, [selectedPoemId]);
   const [userSyllables, setUserSyllables] = useState(activePoem.syllables);
+
+  useEffect(() => {
+    setUserSyllables(activePoem.syllables);
+  }, [activePoem]);
+
+  // -----------------------------------------------------------------------
+  // 子工坊 5：布莱希特史诗剧间离透镜工坊 (Brecht V-Effekt)
+  // -----------------------------------------------------------------------
+  const [isEpischTheater, setIsEpischTheater] = useState<boolean>(true);
+  const [activeVEffekts, setActiveVEffekts] = useState<string[]>(["wand", "songs"]);
+  const toggleVEffekt = (eff: string) => {
+    setActiveVEffekts((prev) =>
+      prev.includes(eff) ? prev.filter((x) => x !== eff) : [...prev, eff]
+    );
+  };
+
+  // -----------------------------------------------------------------------
+  // 子工坊 6：卡夫卡《变形记》异化空间与权力解剖台
+  // -----------------------------------------------------------------------
+  const [utilityLevel, setUtilityLevel] = useState<number>(20); // 劳动剩余价值 (0-100%)
+  const [activeDoor, setActiveDoor] = useState<"vater" | "zimmer" | "schwester">("vater");
+
+  // -----------------------------------------------------------------------
+  // 子工坊 7：博尔歇特废墟文学零度语言解剖台
+  // -----------------------------------------------------------------------
+  const [borchertExcerpt, setBorchertExcerpt] = useState<"draussen" | "brot">("draussen");
+  const [staccatoFilter, setStaccatoFilter] = useState<"all" | "short" | "repetition">("all");
+
+  // -----------------------------------------------------------------------
+  // 子工坊 8：图尔敏论证六要素解剖工坊
+  // -----------------------------------------------------------------------
+  const [activeToulminBlocks, setActiveToulminBlocks] = useState<{
+    datum: boolean;
+    warrant: boolean;
+    backing: boolean;
+    qualifier: boolean;
+    rebuttal: boolean;
+  }>({
+    datum: true,
+    warrant: true,
+    backing: true,
+    qualifier: true,
+    rebuttal: true,
+  });
   const [isPlayingBeat, setIsPlayingBeat] = useState(false);
   const [currentBeatIdx, setCurrentBeatIdx] = useState<number | null>(null);
 
@@ -1645,6 +1881,30 @@ export function GewiInteractiveWorkbench({
           {/* --------------------------------------------------------------- */}
           {mode === "drama" && (
             <div className="flex flex-col gap-4">
+              {/* 剧目选择切换栏 */}
+              <div className="flex flex-wrap items-center gap-2 p-2.5 rounded-lg border border-[var(--line)] bg-[var(--paper-subtle)]/40">
+                <span className="font-mono text-xs text-[var(--gray)] mr-1">
+                  🎭 {de ? "Klassisches Drama:" : "典型高考考纲剧目:"}
+                </span>
+                {DRAMA_PLAYS.map((dp) => (
+                  <button
+                    key={dp.id}
+                    type="button"
+                    onClick={() => {
+                      setSelectedDramaId(dp.id);
+                      setSelectedActNum(3);
+                    }}
+                    className={`font-mono text-xs px-2.5 py-1 rounded border transition-colors cursor-pointer ${
+                      selectedDramaId === dp.id
+                        ? "border-[var(--accent)] bg-[var(--surface)] text-[var(--accent)] font-bold shadow-2xs"
+                        : "border-[var(--line)] bg-[var(--surface)] text-[var(--gray)] hover:text-[var(--ink)]"
+                    }`}
+                  >
+                    {dp.titleDE.split(" (")[0]}
+                  </button>
+                ))}
+              </div>
+
               {/* 剧目横幅 */}
               <div className="p-3.5 rounded-lg border border-[var(--line)] bg-[var(--paper-subtle)]/40 flex items-center justify-between">
                 <div>
@@ -1785,6 +2045,27 @@ export function GewiInteractiveWorkbench({
           {/* --------------------------------------------------------------- */}
           {mode === "lyrik" && (
             <div className="flex flex-col gap-4">
+              {/* 诗篇选择切换栏 */}
+              <div className="flex flex-wrap items-center gap-2 p-2.5 rounded-lg border border-[var(--line)] bg-[var(--paper-subtle)]/40">
+                <span className="font-mono text-xs text-[var(--gray)] mr-1">
+                  📜 {de ? "Klassische Gedichte:" : "经典诗作研学样本:"}
+                </span>
+                {POEM_SAMPLES.map((pm) => (
+                  <button
+                    key={pm.id}
+                    type="button"
+                    onClick={() => setSelectedPoemId(pm.id)}
+                    className={`font-mono text-xs px-2.5 py-1 rounded border transition-colors cursor-pointer ${
+                      selectedPoemId === pm.id
+                        ? "border-[var(--accent)] bg-[var(--surface)] text-[var(--accent)] font-bold shadow-2xs"
+                        : "border-[var(--line)] bg-[var(--surface)] text-[var(--gray)] hover:text-[var(--ink)]"
+                    }`}
+                  >
+                    {pm.titleDE.split(" (")[0]} ({pm.epoche.split(" ")[0]})
+                  </button>
+                ))}
+              </div>
+
               {/* 诗篇信息 */}
               <div className="p-3.5 rounded-lg border border-[var(--line)] bg-[var(--paper-subtle)]/40 flex items-center justify-between">
                 <div>
@@ -1866,6 +2147,622 @@ export function GewiInteractiveWorkbench({
                   </span>
                   <p>{de ? activePoem.wirkungDE : activePoem.wirkungZH}</p>
                 </div>
+              </div>
+            </div>
+          )}
+
+          {/* --------------------------------------------------------------- */}
+          {/* 模式 E：🎭 布莱希特史诗剧间离透镜工坊 (Brecht V-Effekt) */}
+          {/* --------------------------------------------------------------- */}
+          {mode === "brecht" && (
+            <div className="flex flex-col gap-4">
+              {/* 顶部史诗剧 vs 传统戏剧模式切换 */}
+              <div className="p-3.5 rounded-lg border border-[var(--line)] bg-[var(--paper-subtle)]/40 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
+                <div>
+                  <h3 className="font-serif text-sm font-bold text-[var(--ink)]">
+                    {de ? "Bertolt Brecht: Episches Theater & Verfremdungseffekt (V-Effekt)" : "布莱希特：叙事剧模式与间离效果 (V-Effekt) 透镜"}
+                  </h3>
+                  <span className="font-mono text-[11px] text-[var(--gray)]">
+                    {de ? "Moderne (1930–1956) · Leben des Galilei / Mutter Courage" : "现代戏剧 ·《伽利略传》《高加索灰阑记》《四川好人》"}
+                  </span>
+                </div>
+                <div className="flex items-center gap-1 p-1 bg-[var(--surface)] rounded border border-[var(--line)] text-xs font-mono">
+                  <button
+                    type="button"
+                    onClick={() => setIsEpischTheater(false)}
+                    className={`px-2.5 py-1 rounded transition-colors cursor-pointer ${
+                      !isEpischTheater
+                        ? "bg-[var(--paper-subtle)] text-[var(--ink)] font-bold shadow-2xs border border-[var(--line)]"
+                        : "text-[var(--gray)] hover:text-[var(--ink)]"
+                    }`}
+                  >
+                    {de ? "Klassisch (Einfühlung)" : "传统经典式 (共情沉浸)"}
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => setIsEpischTheater(true)}
+                    className={`px-2.5 py-1 rounded transition-colors cursor-pointer ${
+                      isEpischTheater
+                        ? "bg-[var(--accent)] text-white font-bold shadow-2xs"
+                        : "text-[var(--gray)] hover:text-[var(--ink)]"
+                    }`}
+                  >
+                    {de ? "Episch (Verfremdung)" : "布莱希特史诗剧 (间离批判)"}
+                  </button>
+                </div>
+              </div>
+
+              {/* 舞台与剧场第四面墙动态演示 SVG */}
+              <div className="relative rounded-lg border border-[var(--line)] bg-[var(--surface)] p-6 flex flex-col items-center justify-center">
+                <svg viewBox="0 0 600 220" className="w-full max-w-[600px] h-48 select-none">
+                  {/* 舞台演区 (左) */}
+                  <rect x="40" y="30" width="220" height="150" fill="var(--paper-subtle)" stroke="var(--line)" strokeWidth="1.5" rx="4" />
+                  <text x="150" y="50" textAnchor="middle" fontSize="10" fontWeight="bold" fill="var(--ink)" fontFamily="serif">
+                    {de ? "Bühnengeschehen (Szene)" : "舞台演区 (戏剧场景)"}
+                  </text>
+                  
+                  {/* 演员 */}
+                  <circle cx="110" cy="110" r="14" fill="var(--surface)" stroke="var(--ink)" strokeWidth="1.5" />
+                  <text x="110" y="114" textAnchor="middle" fontSize="9" fontFamily="monospace">🎭</text>
+                  <text x="110" y="136" textAnchor="middle" fontSize="8" fill="var(--gray)" fontFamily="monospace">
+                    {isEpischTheater ? (de ? "Demonstrator" : "姿态展示者") : (de ? "Schauspieler" : "角色化身")}
+                  </text>
+
+                  {/* 史诗剧间离投影片 / 标语 */}
+                  {isEpischTheater && activeVEffekts.includes("songs") && (
+                    <g>
+                      <rect x="70" y="65" width="160" height="24" fill="var(--surface)" stroke="var(--accent)" strokeWidth="1" rx="2" />
+                      <text x="150" y="80" textAnchor="middle" fontSize="7.5" fill="var(--accent)" fontWeight="bold" fontFamily="monospace">
+                        📢 GALILEI WIDERRUFT SEINE LEHRE
+                      </text>
+                    </g>
+                  )}
+
+                  {/* 第四面墙 (Die 4. Wand) */}
+                  {isEpischTheater && activeVEffekts.includes("wand") ? (
+                    <g>
+                      <line x1="300" y1="25" x2="300" y2="185" stroke="#ef4444" strokeWidth="2" strokeDasharray="4,4" />
+                      <rect x="245" y="90" width="110" height="30" rx="3" fill="var(--surface)" stroke="#ef4444" strokeWidth="1" />
+                      <text x="300" y="105" textAnchor="middle" fontSize="8" fontWeight="bold" fill="#ef4444" fontFamily="monospace">
+                        {de ? "4. Wand DURCHBROCHEN" : "打破第四面墙"}
+                      </text>
+                      <text x="300" y="116" textAnchor="middle" fontSize="7" fill="var(--gray)" fontFamily="monospace">
+                        Akteur spricht Zuschauer an
+                      </text>
+                    </g>
+                  ) : (
+                    <g>
+                      <line x1="300" y1="25" x2="300" y2="185" stroke="var(--ink)" strokeWidth="3" />
+                      <rect x="250" y="95" width="100" height="24" rx="3" fill="var(--surface)" stroke="var(--ink)" strokeWidth="1" />
+                      <text x="300" y="110" textAnchor="middle" fontSize="8.5" fontWeight="bold" fill="var(--ink)" fontFamily="monospace">
+                        {de ? "Feste 4. Wand" : "坚固的第四面墙"}
+                      </text>
+                    </g>
+                  )}
+
+                  {/* 观众坐席 (右) */}
+                  <rect x="340" y="30" width="220" height="150" fill="var(--paper-subtle)" stroke="var(--line)" strokeWidth="1.5" rx="4" />
+                  <text x="450" y="50" textAnchor="middle" fontSize="10" fontWeight="bold" fill="var(--ink)" fontFamily="serif">
+                    {de ? "Zuschauerraum" : "观众坐席 (受众心态)"}
+                  </text>
+
+                  {/* 观众认知状态 */}
+                  <circle cx="450" cy="110" r="18" fill="var(--surface)" stroke={isEpischTheater ? "var(--accent)" : "#2563eb"} strokeWidth="1.8" />
+                  <text x="450" y="115" textAnchor="middle" fontSize="11" fontFamily="monospace">
+                    {isEpischTheater ? "🧐" : "🥺"}
+                  </text>
+                  <text x="450" y="142" textAnchor="middle" fontSize="8.5" fontWeight="bold" fill={isEpischTheater ? "var(--accent)" : "#2563eb"} fontFamily="monospace">
+                    {isEpischTheater ? (de ? "Kritischer Beobachter" : "理性审慎批判者 (Verstand)") : (de ? "Einfühlung & Katharsis" : "感官沉浸共鸣 (Gefühl)")}
+                  </text>
+                  <text x="450" y="156" textAnchor="middle" fontSize="7.5" fill="var(--gray)" fontFamily="sans-serif">
+                    {isEpischTheater ? (de ? "„Warum handelt er so?“" : "“社会制度何以迫使他如此？”") : (de ? "„Ich leide mit ihm!“" : "“我与主角一同悲痛绝望！”")}
+                  </text>
+                </svg>
+
+                <p className="text-xs font-mono text-[var(--gray)] mt-2">
+                  {de
+                    ? "Schalten Sie die 4 V-Effekt-Mechanismen unten an oder aus, um die Distanzierung der Zuschauer zu steuern."
+                    : "点击下方间离机制开关，观察第四面墙的崩解、观众认知状态的跃迁与理性批判激活。"}
+                </p>
+              </div>
+
+              {/* 4 大间离机制开关与剖析 */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2.5 text-xs font-mono">
+                {[
+                  {
+                    id: "wand",
+                    labelDE: "1. Bruch der 4. Wand",
+                    labelZH: "1. 打破第四面墙",
+                    descDE: "Direkte Ansprache an den Zuschauer; Zerstörung der bühneninternen Illusion.",
+                    descZH: "演员直接面向台下观众质询发言，切断‘偷窥真实人生’的虚幻幻象。"
+                  },
+                  {
+                    id: "songs",
+                    labelDE: "2. Spruchbänder & Songs",
+                    labelZH: "2. 标语剧透与叙事曲",
+                    descDE: "Vorwegnahme der Handlung; das 'Wie' wird wichtiger als das 'Was'.",
+                    descZH: "幕前横幅直接公布本幕结局，观众无需悬念猎奇，转而追问‘为何发生’。"
+                  },
+                  {
+                    id: "historisierung",
+                    labelDE: "3. Historisierung",
+                    labelZH: "3. 历史化陌生感",
+                    descDE: "Verhältnisse als veränderbar und von Menschen gemacht darstellen.",
+                    descZH: "将现实呈现为历史特定阶段的人为建构，而非命中注定，从而激发改造社会意志。"
+                  },
+                  {
+                    id: "gestus",
+                    labelDE: "4. Gesellschaftlicher Gestus",
+                    labelZH: "4. 社会姿态外化",
+                    descDE: "Körperhaltung und Verhalten spiegeln Klassenverhältnisse wider.",
+                    descZH: "用符号化机械动作外化阶级利益剥削本质（如母亲一边数钱一边为儿子收尸）。"
+                  }
+                ].map((eff) => {
+                  const isActive = activeVEffekts.includes(eff.id);
+                  return (
+                    <div
+                      key={eff.id}
+                      onClick={() => toggleVEffekt(eff.id)}
+                      className={`p-3 rounded-lg border cursor-pointer transition-all ${
+                        isActive
+                          ? "border-[var(--accent)] bg-[var(--surface)] shadow-2xs"
+                          : "border-[var(--line)] bg-[var(--paper-subtle)]/50 opacity-60"
+                      }`}
+                    >
+                      <div className="flex items-center justify-between mb-1.5">
+                        <strong className="text-[var(--ink)]">{de ? eff.labelDE : eff.labelZH}</strong>
+                        <span className={`text-[10px] px-1.5 py-0.5 rounded ${isActive ? "bg-[var(--accent)]/10 text-[var(--accent)] font-bold" : "text-[var(--gray)]"}`}>
+                          {isActive ? "AKTIV" : "AUS"}
+                        </span>
+                      </div>
+                      <p className="text-[11px] font-sans text-[var(--gray)] leading-relaxed">
+                        {de ? eff.descDE : eff.descZH}
+                      </p>
+                    </div>
+                  );
+                })}
+              </div>
+
+              {/* 会考核心答题范文与 EHZ 对照 */}
+              <div className="p-4 rounded-lg border border-[var(--line)] bg-[var(--paper-subtle)]/30 space-y-2">
+                <span className="font-mono text-xs font-bold text-[var(--accent)] block">
+                  {de ? "Klausur-Vergleich: Aristotelisches vs. Episches Theater (NRW Abitur):" : "北威州高中会考高频大题：亚里士多德 vs 布莱希特戏剧对比矩阵："}
+                </span>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-3 text-xs font-sans">
+                  <div className="p-3 rounded border border-[var(--line)] bg-[var(--surface)] space-y-1">
+                    <span className="font-mono font-bold text-[var(--ink)] block">Aristotelisches Theater (Klassik):</span>
+                    <p className="text-[var(--gray)] leading-relaxed">
+                      Handlung als geschlossenes Ganzes · Zuschauer wird in die Illusion hineingezogen · Katharsis durch Furcht und Mitleid (Eleos & Phobos) · Unveränderbares Schicksal.
+                    </p>
+                  </div>
+                  <div className="p-3 rounded border border-[var(--line)] bg-[var(--surface)] space-y-1">
+                    <span className="font-mono font-bold text-[var(--accent)] block">Episches Theater (Brecht):</span>
+                    <p className="text-[var(--gray)] leading-relaxed">
+                      Episodische Montage (Szenen nebeneinander) · Kritisches Urteil statt Rausch · Verfremdung weckt Erkenntnis · Mensch und Gesellschaft sind veränderbar.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          )}
+
+          {/* --------------------------------------------------------------- */}
+          {/* 模式 F：🪲 卡夫卡《变形记》异化空间与权力解剖台 (Kafka-Entfremdung) */}
+          {/* --------------------------------------------------------------- */}
+          {mode === "kafka" && (
+            <div className="flex flex-col gap-4">
+              <div className="p-3.5 rounded-lg border border-[var(--line)] bg-[var(--paper-subtle)]/40 flex items-center justify-between">
+                <div>
+                  <h3 className="font-serif text-sm font-bold text-[var(--ink)]">
+                    {de ? "Franz Kafka: Die Verwandlung (1915)" : "弗兰茨·卡夫卡《变形记》：资本物化与家庭权力解剖台"}
+                  </h3>
+                  <span className="font-mono text-[11px] text-[var(--gray)]">
+                    {de ? "Moderne / Expressionismus · Gregor Samsas Zimmer (Drei Türen)" : "现代主义小说 · 萨姆沙卧室空间拓扑与三扇门的权力透镜"}
+                  </span>
+                </div>
+                <span className="font-mono text-xs px-2.5 py-1 rounded border border-[var(--line)] bg-[var(--surface)] text-[var(--accent)] font-bold">
+                  {utilityLevel < 20 ? (de ? "Status: Ausgestoßenes Ungeziefer" : "判决：被彻底弃绝的害虫") : (de ? "Status: Ausgebeuteter Ernährer" : "判决：被压榨的家庭顶梁柱")}
+                </span>
+              </div>
+
+              {/* 核心双视窗：左侧萨姆沙卧室平面图 SVG，右侧异化力场与关系演变 */}
+              <div className="grid grid-cols-1 lg:grid-cols-12 gap-5 items-start">
+                {/* 左侧：萨姆沙卧室拓扑图 (7 列) */}
+                <div className="lg:col-span-7 flex flex-col gap-3 p-4 bg-[var(--surface)] rounded-xl border border-[var(--line)]">
+                  <div className="flex justify-between items-center text-xs text-[var(--gray)] font-mono">
+                    <span>Gregor Samsas Zimmer (Klaustrophobischer Grundriss)</span>
+                    <span>3 Türen zur bürgerlichen Welt</span>
+                  </div>
+
+                  <div className="relative w-full aspect-16/11 rounded-lg overflow-hidden border border-[var(--line)] bg-[var(--paper)] p-2">
+                    <svg className="w-full h-full select-none" viewBox="0 0 460 260">
+                      {/* 房间墙壁 */}
+                      <rect x="80" y="30" width="300" height="190" fill="none" stroke="var(--ink)" strokeWidth="2.5" />
+
+                      {/* 门 1：左侧通往父亲房间 (Vater) */}
+                      <g onClick={() => setActiveDoor("vater")} className="cursor-pointer">
+                        <rect x="65" y="90" width="16" height="50" fill={activeDoor === "vater" ? "var(--accent)" : "#ef4444"} rx="2" />
+                        <text x="55" y="118" textAnchor="end" fontSize="9" fontWeight="bold" fill={activeDoor === "vater" ? "var(--accent)" : "#ef4444"} fontFamily="monospace">
+                          Tür Vater
+                        </text>
+                      </g>
+
+                      {/* 门 2：右侧通往妹妹格雷特房间 (Schwester Grete) */}
+                      <g onClick={() => setActiveDoor("schwester")} className="cursor-pointer">
+                        <rect x="379" y="90" width="16" height="50" fill={activeDoor === "schwester" ? "var(--accent)" : "#0284c7"} rx="2" />
+                        <text x="403" y="118" fontSize="9" fontWeight="bold" fill={activeDoor === "schwester" ? "var(--accent)" : "#0284c7"} fontFamily="monospace">
+                          Tür Grete
+                        </text>
+                      </g>
+
+                      {/* 门 3：下侧通往起居室与外界雇主 (Wohnzimmer / Prokurist) */}
+                      <g onClick={() => setActiveDoor("zimmer")} className="cursor-pointer">
+                        <rect x="200" y="212" width="60" height="16" fill={activeDoor === "zimmer" ? "var(--accent)" : "#d97706"} rx="2" />
+                        <text x="230" y="242" textAnchor="middle" fontSize="9" fontWeight="bold" fill={activeDoor === "zimmer" ? "var(--accent)" : "#d97706"} fontFamily="monospace">
+                          Tür Wohnzimmer (Familie & Prokurist)
+                        </text>
+                      </g>
+
+                      {/* 卧室中央：格里高尔·萨姆沙蜕变之躯 */}
+                      <ellipse cx="230" cy="115" rx={24 + (100 - utilityLevel) * 0.12} ry={14 + (100 - utilityLevel) * 0.08} fill="#78350f" fillOpacity="0.8" stroke="#451a03" strokeWidth="2" />
+                      {/* 背上的烂苹果 (Apfel im Fleisch) */}
+                      {utilityLevel < 40 && (
+                        <g>
+                          <circle cx="238" cy="112" r="5" fill="#ef4444" />
+                          <text x="248" y="110" fontSize="7.5" fill="#ef4444" fontFamily="monospace">Faulender Apfel</text>
+                        </g>
+                      )}
+                      <text x="230" y="145" textAnchor="middle" fontSize="8.5" fontWeight="bold" fill="var(--ink)" fontFamily="serif">
+                        Gregor ({utilityLevel}% Verwertbarkeit)
+                      </text>
+                    </svg>
+                  </div>
+
+                  {/* 两个调控滑块：劳动力价值 vs 异化程度 */}
+                  <div className="space-y-3 pt-2">
+                    <div>
+                      <div className="flex justify-between text-xs font-mono mb-1">
+                        <span className="text-[var(--ink)] font-semibold">
+                          {de ? "Ökonomische Verwertbarkeit als Handlungsreisender:" : "作为推销员的劳动力经济剩余价值："}
+                        </span>
+                        <strong className="text-[var(--accent)]">{utilityLevel}%</strong>
+                      </div>
+                      <input
+                        type="range"
+                        min="0"
+                        max="100"
+                        value={utilityLevel}
+                        onChange={(e) => setUtilityLevel(Number(e.target.value))}
+                        className="w-full accent-[var(--accent)] cursor-pointer"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                {/* 右侧：权力与亲情异化解剖 (5 列) */}
+                <div className="lg:col-span-5 flex flex-col gap-3 p-4 bg-[var(--surface)] rounded-xl border border-[var(--line)] shadow-xs text-xs">
+                  <div className="border-b border-[var(--line)] pb-2">
+                    <span className="font-mono text-[var(--gray)] uppercase tracking-wider text-[10px]">
+                      {de ? "Soziologische & Psychoanalytische Deutung" : "社会学（物化）与精神分析双重视角"}
+                    </span>
+                    <h4 className="text-sm font-serif font-bold text-[var(--ink)] mt-0.5">
+                      {activeDoor === "vater"
+                        ? de ? "Das Verhältnis zum Vater (Autorität & Gewalt)" : "父子关系：权威复仇与肉体惩戒"
+                        : activeDoor === "schwester"
+                        ? de ? "Die Entfremdung von Grete (Bruch der Empathie)" : "妹妹格雷特：由最后同情走向断然弃绝"
+                        : de ? "Die bürgerliche Familie als ökonomischer Zweckverband" : "家庭本质：赤裸裸的经济利益交换联盟"}
+                    </h4>
+                  </div>
+
+                  <div className="space-y-2 leading-relaxed">
+                    <p className="text-[var(--gray)]">
+                      {activeDoor === "vater"
+                        ? de
+                          ? "Der Vater gewinnt durch Gregors Schwäche seine patriarchalische Macht zurück. Der tödliche Apfelwurf symbolisiert die brutale Wiederherstellung der bürgerlichen Ordnung durch Zerstörung des unnützen Sohnes."
+                          : "格里高尔的残废使衰老的父亲重新穿上了笔挺的制服，重获绝对家长权威。扔出的致命苹果陷进后背肉里化脓腐烂，象征着市民阶级秩序对‘无价值废物’的残酷物理毁灭。"
+                        : activeDoor === "schwester"
+                        ? de
+                          ? "Grete pflegt Gregor anfangs aus Pflichtgefühl und Musikalität (Violine). Sobald Gregors Existenz ihre Heiratsperspektiven bedroht, spricht sie das Todesurteil: „Weg muss es!“"
+                          : "妹妹起初拉小提琴唤醒格里高尔最后的温情。然而一旦发现这个怪物的存在彻底阻碍了她自己嫁入体面阶层的未来，她最冷血地说出全书绝命判决：“我们必须摆脱它！”"
+                        : de
+                          ? "Die Familie liebt Gregor nicht als Mensch, sondern allein als Tilger der elterlichen Schulden. Mit dem Wegfall der Erwerbsfähigkeit entlarvt Kafka die bürgerliche Kleinfamilie als kapitalistische Verwertungsgesellschaft."
+                          : "萨姆沙一家对长子的所谓温情，完全建立在他能否按月给父亲还债的基础上。劳动力一旦清零，卡夫卡撕下了市民温情的所有伪装，直击冷酷无情的商品拜物教本质。"}
+                    </p>
+
+                    <blockquote className="p-2.5 rounded bg-[var(--paper-subtle)] border-l-2 border-[var(--accent)] font-mono text-[11px] text-[var(--ink)] italic">
+                      {activeDoor === "vater"
+                        ? "„Es war ein Apfel; gleich flog ihm ein zweiter nach... ein dritter drang in Gregors Rücken ein.“"
+                        : activeDoor === "schwester"
+                        ? "„Er muss weg, rief die Schwester, das ist das einzige Mittel, Vater. Du musst nur den Gedanken loszuwerden suchen, dass es Gregor ist.“"
+                        : "„Als Gregor Samsa eines Morgens aus unruhigen Träumen erwachte, fand er sich in seinem Bett zu einem ungeheuren Ungeziefer verwandelt.“"}
+                    </blockquote>
+                  </div>
+
+                  <div className="mt-2 p-2.5 rounded bg-[var(--paper-subtle)]/50 border border-[var(--line)] text-[11px] font-mono">
+                    <span className="font-bold text-[var(--accent)] block mb-1">Abitur-Kernbegriffe:</span>
+                    Verdinglichung (Marx) · Patriarchalische Entmündigung · Psychoanalytischer Vater-Sohn-Konflikt · Kafkasche Bürokratie
+                  </div>
+                </div>
+              </div>
+            </div>
+          )}
+
+          {/* --------------------------------------------------------------- */}
+          {/* 模式 G：🏚️ 博尔歇特战后废墟文学断奏研读工坊 (Borchert Trümmerliteratur) */}
+          {/* --------------------------------------------------------------- */}
+          {mode === "borchert" && (
+            <div className="flex flex-col gap-4">
+              <div className="p-3.5 rounded-lg border border-[var(--line)] bg-[var(--paper-subtle)]/40 flex items-center justify-between">
+                <div>
+                  <h3 className="font-serif text-sm font-bold text-[var(--ink)]">
+                    {de ? "Wolfgang Borchert: Trümmerliteratur & Kahlschlag der Sprache" : "沃尔夫冈·博尔歇特：战后废墟文学与‘零度语言’解剖台"}
+                  </h3>
+                  <span className="font-mono text-[11px] text-[var(--gray)]">
+                    {de ? "Nachkriegsliteratur (1945–1950) · Draußen vor der Tür / Das Brot" : "1945战后文学 ·《门外》《面包》· 断奏短句与去崇高化"}
+                  </span>
+                </div>
+                <div className="flex items-center gap-1 p-1 bg-[var(--surface)] rounded border border-[var(--line)] text-xs font-mono">
+                  <button
+                    type="button"
+                    onClick={() => setBorchertExcerpt("draussen")}
+                    className={`px-2.5 py-1 rounded transition-colors cursor-pointer ${
+                      borchertExcerpt === "draussen"
+                        ? "bg-[var(--accent)] text-white font-bold shadow-2xs"
+                        : "text-[var(--gray)] hover:text-[var(--ink)]"
+                    }`}
+                  >
+                    Draußen vor der Tür
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => setBorchertExcerpt("brot")}
+                    className={`px-2.5 py-1 rounded transition-colors cursor-pointer ${
+                      borchertExcerpt === "brot"
+                        ? "bg-[var(--accent)] text-white font-bold shadow-2xs"
+                        : "text-[var(--gray)] hover:text-[var(--ink)]"
+                    }`}
+                  >
+                    Das Brot (1946)
+                  </button>
+                </div>
+              </div>
+
+              {/* 核心断奏研读视窗 */}
+              <div className="grid grid-cols-1 lg:grid-cols-12 gap-5 items-start">
+                <div className="lg:col-span-7 flex flex-col gap-3 p-5 bg-[var(--surface)] rounded-xl border border-[var(--line)]">
+                  <div className="flex flex-wrap justify-between items-center text-xs font-mono text-[var(--gray)] border-b border-[var(--line)] pb-2 gap-2">
+                    <span>Textanalyse: {borchertExcerpt === "draussen" ? "Beckmanns Heimkehr (Elbe)" : "Die nächtliche Küchenszene"}</span>
+                    <div className="flex items-center gap-1.5">
+                      <span className="text-[10px] uppercase font-mono text-[var(--gray)]">Fokus:</span>
+                      {(["all", "short", "repetition"] as const).map((filter) => (
+                        <button
+                          key={filter}
+                          type="button"
+                          onClick={() => setStaccatoFilter(filter)}
+                          className={`px-2 py-0.5 rounded text-[11px] font-mono cursor-pointer transition-colors ${
+                            staccatoFilter === filter
+                              ? "bg-[var(--accent)] text-white font-bold"
+                              : "bg-[var(--paper-subtle)] text-[var(--gray)] hover:text-[var(--ink)]"
+                          }`}
+                        >
+                          {filter === "all" ? (de ? "Alle" : "全部") : filter === "short" ? (de ? "Kurzsätze" : "断奏短句") : (de ? "Repetition" : "首语重复")}
+                        </button>
+                      ))}
+                    </div>
+                  </div>
+
+                  {/* 文本片段高亮展示 */}
+                  <div className="p-4 rounded-lg bg-[var(--paper)] border border-[var(--line)] font-serif text-sm leading-relaxed text-[var(--ink)] space-y-2">
+                    {borchertExcerpt === "draussen" ? (
+                      <>
+                        <p className={staccatoFilter === "short" ? "bg-[var(--accent)]/10 p-1 rounded border-l-2 border-[var(--accent)]" : ""}>
+                          „Ein Mann kommt nach Deutschland. Ein Mann ist lange weg gewesen. Vielleicht zu lange. Er kommt ganz anders wieder, als er wegging.“
+                        </p>
+                        <p className={staccatoFilter === "repetition" ? "bg-amber-500/10 p-1.5 rounded border-l-2 border-amber-500" : "bg-[var(--accent)]/10 p-1.5 rounded border-l-2 border-[var(--accent)]"}>
+                          „Ein Mann hat eine Gasmaskenbrille. Ein Mann friert. Er steht an der Elbe. Das Wasser stinkt. Die Stadt ist tot.“
+                        </p>
+                        <p className={staccatoFilter === "short" ? "bg-[var(--accent)]/10 p-1 rounded border-l-2 border-[var(--accent)]" : ""}>
+                          „Gott ist tot. Niemand antwortet. Ein Mann klopft an Türen. Aber die Türen sind zu. Immer zu.“
+                        </p>
+                      </>
+                    ) : (
+                      <>
+                        <p className={staccatoFilter === "short" ? "bg-[var(--accent)]/10 p-1 rounded border-l-2 border-[var(--accent)]" : ""}>
+                          „Sie wachte auf. Es war halb drei. Sie tastete nach ihm. Er war nicht da. Das Bett war kalt.“
+                        </p>
+                        <p className={staccatoFilter === "repetition" ? "bg-amber-500/10 p-1.5 rounded border-l-2 border-amber-500" : "bg-[var(--accent)]/10 p-1.5 rounded border-l-2 border-[var(--accent)]"}>
+                          „Sie ging in die Küche. Da stand er. Im Dunkeln. Er hatte das Messer in der Hand. Und Brotkrümel auf dem Tisch.“
+                        </p>
+                        <p className={staccatoFilter === "short" ? "bg-[var(--accent)]/10 p-1 rounded border-l-2 border-[var(--accent)]" : ""}>
+                          „‚Ich dachte, hier wäre was‘, sagte er. Sie log: ‚Ich habe auch was gehört.‘ Beide wussten es. Keiner sprach es aus.“
+                        </p>
+                      </>
+                    )}
+                  </div>
+
+                  {/* 语言风格量化仪表盘 */}
+                  <div className="grid grid-cols-3 gap-2 text-center text-xs font-mono pt-1">
+                    <div className="p-2 rounded bg-[var(--paper-subtle)] border border-[var(--line)]">
+                      <span className="text-[var(--gray)] block text-[10px]">Mittlere Satzlänge</span>
+                      <strong className="text-[var(--ink)] text-sm">5,4 Wörter</strong>
+                    </div>
+                    <div className="p-2 rounded bg-[var(--paper-subtle)] border border-[var(--line)]">
+                      <span className="text-[var(--gray)] block text-[10px]">Adjektiv-Dichte</span>
+                      <strong className="text-[var(--accent)] text-sm">3,8% (extrem karg)</strong>
+                    </div>
+                    <div className="p-2 rounded bg-[var(--paper-subtle)] border border-[var(--line)]">
+                      <span className="text-[var(--gray)] block text-[10px]">Parataxe-Quote</span>
+                      <strong className="text-emerald-700 dark:text-emerald-300 text-sm">94% (Reihung)</strong>
+                    </div>
+                  </div>
+                </div>
+
+                {/* 右侧：废墟文学教学论考点 (5 列) */}
+                <div className="lg:col-span-5 flex flex-col gap-3 p-4 bg-[var(--surface)] rounded-xl border border-[var(--line)] shadow-xs text-xs">
+                  <div className="border-b border-[var(--line)] pb-2">
+                    <span className="font-mono text-[var(--gray)] uppercase tracking-wider text-[10px]">
+                      {de ? "Fachdidaktische Merkmale der Trümmerliteratur" : "战后废墟文学核心教学论特征"}
+                    </span>
+                    <h4 className="text-sm font-serif font-bold text-[var(--ink)] mt-0.5">
+                      {de ? "Kahlschlag der Sprache (Borchert / Weyrauch)" : "语言的推倒重建（零度语言 Kahlschlag）"}
+                    </h4>
+                  </div>
+
+                  <div className="space-y-2 leading-relaxed text-[var(--gray)] font-sans">
+                    <p>
+                      <strong>1. Radikale Verweigerung von Pathos:</strong> Die junge Generation lehnte alle schöngeistigen, pompösen Vokabeln der Weimarer Klassik oder Romantik ab, weil diese von der NS-Propaganda missbraucht und kontaminiert worden waren.
+                    </p>
+                    <p>
+                      <strong>2. Stakkato & Parataxe:</strong> Kurze, abgehackte Hauptsätze spiegeln die physische und seelische Zerrüttung der Heimkehrer wider. Keine geschachtelten Hypotaxen mehr.
+                    </p>
+                    <p>
+                      <strong>3. Das Trauma der Schuld:</strong> Beckmanns Verantwortung für seine gefallenen Kameraden; das unausgesprochene Lügen über das gestohlene Brot als Chiffre für die moralische Verwüstung einer ganzen Gesellschaft.
+                    </p>
+                  </div>
+
+                  <div className="p-3 rounded bg-[var(--paper-subtle)] border-l-2 border-[var(--accent)] font-mono text-[11px] text-[var(--ink)]">
+                    AFB III Klausurtipp: Formulieren Sie präzise, dass Borcherts Sprache selbst wie ein Haufen Trümmer wirkt — ungeschminkt, direkt und ohne falschen Trost!
+                  </div>
+                </div>
+              </div>
+            </div>
+          )}
+
+          {/* --------------------------------------------------------------- */}
+          {/* 模式 H：🔍 图尔敏论证结构解剖工坊 (Toulmin Argumentationsanalyse) */}
+          {/* --------------------------------------------------------------- */}
+          {mode === "toulmin" && (
+            <div className="flex flex-col gap-4">
+              <div className="p-3.5 rounded-lg border border-[var(--line)] bg-[var(--paper-subtle)]/40 flex items-center justify-between">
+                <div>
+                  <h3 className="font-serif text-sm font-bold text-[var(--ink)]">
+                    {de ? "Stephen Toulmin: Argumentationsmodell für Sachtexte" : "图尔敏论证模型：非虚构议论文 (Sachtext) 逻辑解剖沙盒"}
+                  </h3>
+                  <span className="font-mono text-[11px] text-[var(--gray)]">
+                    {de ? "Sachtextanalyse (Klausur AFB II & III) · Datum → Warrant → Backing → Rebuttal → Claim" : "会考非虚构文本分析 · 事实根据 → 推论法则 → 权威法理支撑 → 限制反驳 → 中心论点"}
+                  </span>
+                </div>
+                <span className="font-mono text-xs px-2.5 py-1 rounded border border-[var(--line)] bg-[var(--surface)] text-[var(--accent)] font-bold">
+                  {activeToulminBlocks.warrant && activeToulminBlocks.backing && activeToulminBlocks.rebuttal
+                    ? (de ? "Urteil: STICHHALTIG (Vollständig)" : "裁决：逻辑严密 / 无懈可击")
+                    : (de ? "Urteil: ANGANG / FEHLSCHLUSS" : "裁决：存在漏洞 / 论据不足")}
+                </span>
+              </div>
+
+              {/* 交互式图尔敏积木流水线 SVG */}
+              <div className="relative rounded-lg border border-[var(--line)] bg-[var(--surface)] p-6 flex flex-col items-center justify-center">
+                <svg viewBox="0 0 620 220" className="w-full max-w-[620px] h-52 select-none">
+                  {/* 1. Datum (Fakt) */}
+                  <rect x="30" y="50" width="120" height="60" rx="4" fill="var(--paper-subtle)" stroke="var(--ink)" strokeWidth="1.5" />
+                  <text x="90" y="72" textAnchor="middle" fontSize="10" fontWeight="bold" fill="var(--ink)" fontFamily="monospace">[D] Datum</text>
+                  <text x="90" y="88" textAnchor="middle" fontSize="8" fill="var(--gray)" fontFamily="sans-serif">Tatsachenbeleg</text>
+
+                  {/* 连接箭头 */}
+                  <path d="M 150 80 L 220 80" stroke="var(--ink)" strokeWidth="2" />
+
+                  {/* 2. Warrant (Schlussregel) - 可开启/关闭 */}
+                  <rect
+                    x="220"
+                    y="50"
+                    width="140"
+                    height="60"
+                    rx="4"
+                    fill={activeToulminBlocks.warrant ? "var(--surface)" : "var(--paper-subtle)"}
+                    stroke={activeToulminBlocks.warrant ? "var(--accent)" : "var(--line)"}
+                    strokeWidth={activeToulminBlocks.warrant ? "2" : "1"}
+                    strokeDasharray={activeToulminBlocks.warrant ? undefined : "3,3"}
+                  />
+                  <text x="290" y="72" textAnchor="middle" fontSize="10" fontWeight="bold" fill={activeToulminBlocks.warrant ? "var(--accent)" : "var(--gray)"} fontFamily="monospace">
+                    [W] Warrant
+                  </text>
+                  <text x="290" y="88" textAnchor="middle" fontSize="8" fill="var(--gray)" fontFamily="sans-serif">
+                    {activeToulminBlocks.warrant ? "Schlussregel (aktiv)" : "FEHLT (Sprung!)"}
+                  </text>
+
+                  {/* 连接箭头 */}
+                  <path d="M 360 80 L 440 80" stroke="var(--ink)" strokeWidth="2" />
+
+                  {/* 3. Claim (These) */}
+                  <rect x="440" y="50" width="150" height="60" rx="4" fill="var(--paper-subtle)" stroke="var(--ink)" strokeWidth="2" />
+                  <text x="515" y="72" textAnchor="middle" fontSize="10" fontWeight="bold" fill="var(--ink)" fontFamily="monospace">[C] Claim (These)</text>
+                  <text x="515" y="88" textAnchor="middle" fontSize="8" fill="var(--gray)" fontFamily="sans-serif">Zielbehauptung</text>
+
+                  {/* 4. Backing (Stütze von unten an Warrant) */}
+                  {activeToulminBlocks.backing && (
+                    <g>
+                      <line x1="290" y1="110" x2="290" y2="150" stroke="var(--accent)" strokeWidth="1.5" strokeDasharray="2,2" />
+                      <rect x="220" y="150" width="140" height="45" rx="3" fill="var(--surface)" stroke="var(--line)" />
+                      <text x="290" y="170" textAnchor="middle" fontSize="9" fontWeight="bold" fill="var(--ink)" fontFamily="monospace">[B] Backing</text>
+                      <text x="290" y="184" textAnchor="middle" fontSize="7.5" fill="var(--gray)" fontFamily="sans-serif">Normative Stütze</text>
+                    </g>
+                  )}
+
+                  {/* 5. Rebuttal (Einwand von unten an Claim) */}
+                  {activeToulminBlocks.rebuttal && (
+                    <g>
+                      <line x1="515" y1="110" x2="515" y2="150" stroke="#ef4444" strokeWidth="1.5" strokeDasharray="2,2" />
+                      <rect x="440" y="150" width="150" height="45" rx="3" fill="var(--surface)" stroke="#ef4444" strokeWidth="1" />
+                      <text x="515" y="170" textAnchor="middle" fontSize="9" fontWeight="bold" fill="#ef4444" fontFamily="monospace">[R] Rebuttal</text>
+                      <text x="515" y="184" textAnchor="middle" fontSize="7.5" fill="var(--gray)" fontFamily="sans-serif">Ausnahmebedingung</text>
+                    </g>
+                  )}
+                </svg>
+
+                <p className="text-xs font-mono text-[var(--gray)] mt-2">
+                  {de
+                    ? "Schalten Sie Bausteine an/aus, um zu prüfen, wie das Weglassen von Stützen (Backing) oder Einschränkungen (Rebuttal) ein Argument angreifbar macht."
+                    : "点击下方积木卡片开关，测试抽离‘公认准则 (Warrant)’或‘反例限制 (Rebuttal)’时，论证如何立刻沦为漏洞百出的逻辑谬误。"}
+                </p>
+              </div>
+
+              {/* 积木真实案例内容卡片 */}
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-3 text-xs font-sans">
+                <div className="p-3.5 rounded-lg border border-[var(--line)] bg-[var(--surface)] space-y-1.5">
+                  <div className="flex items-center justify-between font-mono">
+                    <strong className="text-[var(--ink)]">[D] Datum (Tatsache)</strong>
+                    <span className="text-[10px] text-emerald-700 bg-emerald-50 px-1.5 py-0.5 rounded font-bold">FAKT</span>
+                  </div>
+                  <p className="text-[var(--gray)] leading-relaxed">
+                    „72% aller Oberstufenschüler in NRW nutzen bereits generative KI zur Bearbeitung von Textaufgaben.“
+                  </p>
+                </div>
+
+                <div
+                  onClick={() => setActiveToulminBlocks((p) => ({ ...p, warrant: !p.warrant }))}
+                  className={`p-3.5 rounded-lg border cursor-pointer transition-all space-y-1.5 ${
+                    activeToulminBlocks.warrant
+                      ? "border-[var(--accent)] bg-[var(--surface)] shadow-2xs"
+                      : "border-[var(--line)] bg-[var(--paper-subtle)] opacity-50"
+                  }`}
+                >
+                  <div className="flex items-center justify-between font-mono">
+                    <strong className="text-[var(--accent)]">[W] Warrant (Schlussregel)</strong>
+                    <span className="text-[10px]">{activeToulminBlocks.warrant ? "✓ AKTIV" : "✕ WEGGELASSEN"}</span>
+                  </div>
+                  <p className="text-[var(--gray)] leading-relaxed">
+                    „Bildung muss Schüler auf die reale Berufswelt vorbereiten; ein Verbot von allgegenwärtigen Zukunftstechnologien ist praxisfremd.“
+                  </p>
+                </div>
+
+                <div className="p-3.5 rounded-lg border border-[var(--line)] bg-[var(--surface)] space-y-1.5">
+                  <div className="flex items-center justify-between font-mono">
+                    <strong className="text-[var(--ink)]">[C] Claim (These)</strong>
+                    <span className="text-[10px] text-[var(--accent)] font-bold">THESE</span>
+                  </div>
+                  <p className="text-[var(--gray)] leading-relaxed">
+                    „KI-Kompetenz und kritische Prompt-Urteilskraft sollten verbindlich im gymnasialen Lehrplan verankert werden.“
+                  </p>
+                </div>
+              </div>
+
+              {/* 会考 Sachtextanalyse 答题话术 */}
+              <div className="p-4 rounded-lg border border-[var(--line)] bg-[var(--paper-subtle)]/40 space-y-2 text-xs">
+                <span className="font-mono font-bold text-[var(--accent)] block">
+                  Klausur-Satzbaustein für die Argumentationsanalyse (AFB II):
+                </span>
+                <blockquote className="p-3 rounded bg-[var(--surface)] border-l-2 border-[var(--accent)] font-mono text-[11px] text-[var(--ink)] leading-relaxed italic">
+                  „Der Verfasser stützt seinen zentralen Claim nicht bloß auf empirische Daten [Datum], sondern legitimiert den Schluss durch den pädagogischen Grundsatz [Warrant], wonach Schule lebensweltliche Anschlussfähigkeit garantieren muss. Indem er mögliche Einwände bezüglich akademischer Täuschungsversuche antizipiert und einschränkt [Rebuttal], verleiht er seiner Argumentation eine hohe argumentative Schlüssigkeit.“
+                </blockquote>
               </div>
             </div>
           )}

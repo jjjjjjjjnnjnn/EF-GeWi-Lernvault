@@ -7,6 +7,7 @@
 import { useState, useMemo } from "react";
 import type { Lang } from "../../i18n";
 import type { SimEntry } from "../../modules/laborRegistry";
+import MathHtml from "../MathHtml";
 
 export interface UniversalWorkbenchProps {
   sim: SimEntry;
@@ -1659,29 +1660,31 @@ export function UniversalInteractiveWorkbench({
         };
       }
 
-      // 默认回退（若有未知实验室，展示精密科学仪器刻度与测量台）
+      // 默认回退（针对未单独硬编码的实验室，提供与学科主题深度绑定的测量台）
       default: {
+        const topicZH = sim.themenZH || sim.titleZH || "实验参数";
+        const topicDE = sim.themenDE || sim.titleDE || "Experiment";
         return {
           archetype: "instrument",
-          paramALabelDE: "Messwert-Kalibrierung",
-          paramALabelZH: "探测传感器灵敏度校准",
+          paramALabelDE: `${topicDE} (Primärfaktor)`,
+          paramALabelZH: `${topicZH} · 核心调控参量`,
           paramAValueDisplay: `${paramA} %`,
-          paramBLabelDE: "Dämpfungskoeffizient",
-          paramBLabelZH: "系统响应滤波阻尼系数",
+          paramBLabelDE: `${topicDE} (Kopplungsgrad)`,
+          paramBLabelZH: `${topicZH} · 耦合阻尼约束`,
           paramBValueDisplay: `${paramB} %`,
-          rateLabelDE: "System-Gleichgewichtswert",
-          rateLabelZH: "稳态系统输出参量",
+          rateLabelDE: "System-Reaktionswert",
+          rateLabelZH: "动态系统输出测定值",
           rateValue: `${+(paramA * 0.1).toFixed(2)}`,
-          subLabelDE: "Signal-Rausch-Verhältnis",
-          subLabelZH: "信噪比响应比率",
-          subValue: `${paramB} dB`,
+          subLabelDE: "Stationäre Stabilität",
+          subLabelZH: "稳态系统响应比率",
+          subValue: `${paramB} %`,
           graphY: paramA,
-          insightDE: "Systemparameter im Gleichgewicht. Konsistente Verhaltensdynamik.",
-          insightZH: "参数在有效量程内稳定运行，动态展现微观定量交互规律。",
+          insightDE: `Interaktive Untersuchung zu ${topicDE}: Systemparameter im Gleichgewicht. Konsistente Verhaltensdynamik.`,
+          insightZH: `正在进行【${topicZH}】实验测定：参量在有效物理量程内运行，可观测动态定量演进规律。`,
         };
       }
     }
-  }, [sim.id, paramA, paramB, de]);
+  }, [sim.id, sim.themenZH, sim.themenDE, sim.titleZH, sim.titleDE, paramA, paramB, de]);
 
   const renderArchetypeCanvas = () => {
     switch (data.archetype) {
@@ -2701,22 +2704,33 @@ export function UniversalInteractiveWorkbench({
       // 默认精密科学测量刻度与响应示波器
       default: {
         return (
-          <svg className="w-full h-64 sm:h-72 rounded bg-[var(--paper-subtle)]/40 border border-[var(--line)]/50" viewBox="0 0 440 200">
-            <line x1="40" y1="20" x2="40" y2="170" stroke="currentColor" strokeOpacity="0.2" strokeWidth="1.5" />
-            <line x1="40" y1="170" x2="410" y2="170" stroke="currentColor" strokeOpacity="0.2" strokeWidth="1.5" />
-            <line x1="40" y1="95" x2="410" y2="95" stroke="currentColor" strokeOpacity="0.1" strokeDasharray="3,3" />
-            <path
-              d={`M 40 170 Q 220 ${170 - data.graphY * 1.3} 410 ${170 - data.graphY * 1.1}`}
-              fill="none"
-              stroke="var(--accent)"
-              strokeWidth="2.5"
-              strokeLinecap="round"
-            />
-            <circle cx={40 + paramA * 3.7} cy={170 - data.graphY * 1.2} r="6" fill="var(--accent)" stroke="var(--paper)" strokeWidth="2" />
-            <text x="50" y="35" fontSize="11" fill="var(--ink)" fontFamily="monospace">
-              {sim.formula}
-            </text>
-          </svg>
+          <div className="flex flex-col gap-2">
+            {sim.formula && (
+              <div className="flex items-center justify-between px-3 py-1.5 rounded bg-[var(--paper-subtle)] border border-[var(--line)] text-xs font-mono">
+                <span className="text-[var(--gray)] font-semibold">{de ? "Formel / Modellgesetz:" : "数学/物理模型公式："}</span>
+                <MathHtml code={sim.formula} display={false} cacheKey={`universal-formula:${sim.id}`} />
+              </div>
+            )}
+            <svg className="w-full h-64 sm:h-72 rounded bg-[var(--paper-subtle)]/40 border border-[var(--line)]/50 select-none" viewBox="0 0 440 200">
+              <line x1="40" y1="20" x2="40" y2="170" stroke="currentColor" strokeOpacity="0.2" strokeWidth="1.5" />
+              <line x1="40" y1="170" x2="410" y2="170" stroke="currentColor" strokeOpacity="0.2" strokeWidth="1.5" />
+              <line x1="40" y1="95" x2="410" y2="95" stroke="currentColor" strokeOpacity="0.1" strokeDasharray="3,3" />
+              <path
+                d={`M 40 170 Q 220 ${170 - data.graphY * 1.3} 410 ${170 - data.graphY * 1.1}`}
+                fill="none"
+                stroke="var(--accent)"
+                strokeWidth="2.5"
+                strokeLinecap="round"
+              />
+              <circle cx={40 + paramA * 3.7} cy={170 - data.graphY * 1.2} r="6" fill="var(--accent)" stroke="var(--paper)" strokeWidth="2" />
+              <text x="50" y="32" fontSize="9" fill="var(--gray)" fontFamily="monospace">
+                f(x) · y = {data.rateValue}
+              </text>
+              <text x="405" y="185" textAnchor="end" fontSize="8" fill="var(--gray)" fontFamily="monospace">
+                x →
+              </text>
+            </svg>
+          </div>
         );
       }
     }
@@ -2751,8 +2765,8 @@ export function UniversalInteractiveWorkbench({
               {sim.stufe}
             </span>
             {sim.formula && (
-              <span className="hidden sm:inline-block font-mono text-[11px] text-[var(--gray)] bg-[var(--paper-subtle)]/70 px-2 py-0.5 rounded border border-[var(--line)]/50">
-                {sim.formula}
+              <span className="hidden sm:inline-flex items-center font-mono text-[11px] text-[var(--gray)] bg-[var(--paper-subtle)]/70 px-2 py-0.5 rounded border border-[var(--line)]/50">
+                <MathHtml code={sim.formula} display={false} cacheKey={`header-formula:${sim.id}`} />
               </span>
             )}
           </div>
