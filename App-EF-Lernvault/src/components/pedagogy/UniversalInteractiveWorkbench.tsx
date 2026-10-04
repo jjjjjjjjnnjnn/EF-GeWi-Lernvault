@@ -4555,11 +4555,11 @@ export function UniversalInteractiveWorkbench({
                 <span
                   className={`inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-[11px] font-mono font-medium border ${
                     taskAchieved
-                      ? "border-emerald-500/30 bg-emerald-50 text-emerald-700 dark:bg-emerald-950/40 dark:text-emerald-300"
-                      : "border-[var(--accent)]/30 bg-[var(--accent)]/5 text-[var(--accent)]"
+                      ? "border-[var(--line)] bg-[var(--paper-subtle)] text-[var(--ink)] font-semibold"
+                      : "border-[var(--line)] bg-[var(--paper)] text-[var(--gray)]"
                   }`}
                 >
-                  <span className={`w-1.5 h-1.5 rounded-full ${taskAchieved ? "bg-emerald-500" : "bg-[var(--accent)] animate-pulse"}`} />
+                  <span className={`w-1.5 h-1.5 rounded-full ${taskAchieved ? "bg-[var(--ink)]" : "bg-[var(--gray)] animate-pulse"}`} />
                   {taskAchieved
                     ? de
                       ? "Zielzustand erreicht"
@@ -4687,10 +4687,10 @@ export function UniversalInteractiveWorkbench({
               <div className="flex items-center gap-2 font-mono">
                 <span className="font-bold text-[var(--ink)]">🎯 {de ? "Forschungsauftrag:" : "本实验探究挑战目标:"}</span>
                 <span
-                  className={`px-2 py-0.5 rounded text-[11px] font-bold ${
+                  className={`px-2 py-0.5 rounded text-[11px] font-mono font-bold border ${
                     taskAchieved
-                      ? "bg-emerald-100 text-emerald-800 dark:bg-emerald-950 dark:text-emerald-300"
-                      : "bg-amber-100 text-amber-800 dark:bg-amber-950 dark:text-amber-300"
+                      ? "border-[var(--line)] bg-[var(--paper-subtle)] text-[var(--ink)]"
+                      : "border-[var(--line)] bg-[var(--paper-subtle)] text-[var(--gray)]"
                   }`}
                 >
                   {taskAchieved ? (de ? "✓ Erreicht" : "✓ 成功达成") : (de ? "⏳ In Arbeit" : "⏳ 探索调整中")}

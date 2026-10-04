@@ -216,15 +216,7 @@ export function MarktMechanismusSim({
 
         {/* 状态徽章 */}
         <div className="flex items-center gap-2">
-          <span
-            className={`rounded-md border px-2.5 py-1 font-mono text-xs font-bold ${
-              !isIntervention
-                ? "border-emerald-500/30 bg-emerald-500/10 text-emerald-700 dark:text-emerald-300"
-                : isAngebotsueberhang
-                ? "border-amber-500/30 bg-amber-500/10 text-amber-700 dark:text-amber-300"
-                : "border-sky-500/30 bg-sky-500/10 text-sky-700 dark:text-sky-300"
-            }`}
-          >
+          <span className="rounded-md border border-[var(--line)] bg-[var(--paper-subtle)] px-2.5 py-1 font-mono text-xs font-semibold text-[var(--ink)]">
             {!isIntervention
               ? de ? "⚖️ Markträumung (Optimal)" : "⚖️ 市场出清（帕累托最优）"
               : isAngebotsueberhang
@@ -237,7 +229,7 @@ export function MarktMechanismusSim({
       {/* 2. 顶部 4 栏 Tufte KPI 仪表盘 (CS · PS · Total · DWL) */}
       <div className="grid grid-cols-2 gap-2 sm:grid-cols-4 font-mono text-center">
         <div className="rounded-lg border border-[var(--line)] bg-[var(--paper-subtle)] p-2.5">
-          <span className="text-[10px] text-[var(--gray)] block">
+          <span className="text-[10px] text-[var(--gray)] block uppercase tracking-wider">
             {de ? "Effektiver Preis & Menge" : "有效价格 P / 成交量 Q"}
           </span>
           <p className="mt-0.5 text-sm font-bold text-[var(--ink)]">
@@ -245,35 +237,29 @@ export function MarktMechanismusSim({
           </p>
         </div>
 
-        <div className="rounded-lg border border-blue-500/30 bg-blue-500/5 p-2.5">
-          <span className="text-[10px] text-blue-700 dark:text-blue-300 block">
+        <div className="rounded-lg border border-[var(--line)] bg-[var(--paper-subtle)] p-2.5">
+          <span className="text-[10px] text-[var(--gray)] block uppercase tracking-wider">
             {de ? "CS Konsumentenrente" : "CS 消费者剩余"}
           </span>
-          <p className="mt-0.5 text-sm font-bold text-blue-800 dark:text-blue-200">
+          <p className="mt-0.5 text-sm font-bold text-[var(--ink)]">
             {welfare.cs} GE
           </p>
         </div>
 
-        <div className="rounded-lg border border-emerald-500/30 bg-emerald-500/5 p-2.5">
-          <span className="text-[10px] text-emerald-700 dark:text-emerald-300 block">
+        <div className="rounded-lg border border-[var(--line)] bg-[var(--paper-subtle)] p-2.5">
+          <span className="text-[10px] text-[var(--gray)] block uppercase tracking-wider">
             {de ? "PS Produzentenrente" : "PS 生产者剩余"}
           </span>
-          <p className="mt-0.5 text-sm font-bold text-emerald-800 dark:text-emerald-200">
+          <p className="mt-0.5 text-sm font-bold text-[var(--ink)]">
             {welfare.ps} GE
           </p>
         </div>
 
-        <div
-          className={`rounded-lg border p-2.5 ${
-            welfare.dwl > 0
-              ? "border-rose-500/40 bg-rose-500/10 text-rose-700 dark:text-rose-300"
-              : "border-[var(--line)] bg-[var(--paper-subtle)] text-[var(--gray)]"
-          }`}
-        >
-          <span className="text-[10px] block">
+        <div className="rounded-lg border border-[var(--line)] bg-[var(--paper-subtle)] p-2.5">
+          <span className="text-[10px] text-[var(--gray)] block uppercase tracking-wider">
             {de ? "DWL Wohlfahrtsverlust" : "DWL 死重损失 (无谓损失)"}
           </span>
-          <p className="mt-0.5 text-sm font-bold">
+          <p className={`mt-0.5 text-sm font-bold ${welfare.dwl > 0 ? "text-[#dc2626]" : "text-[var(--ink)]"}`}>
             {welfare.dwl > 0 ? `-${welfare.dwl} GE ⚠️` : "0 GE (Optimal)"}
           </p>
         </div>
@@ -352,17 +338,17 @@ export function MarktMechanismusSim({
             {/* 透光福利几何区域 (CS / PS / DWL) */}
             <g clipPath="url(#markt-chart-clip-main)">
               {/* CS 消费者剩余多边形 */}
-              <polygon points={csPolygonPoints} fill="#2563eb" fillOpacity="0.18" stroke="#2563eb" strokeWidth="0.8" />
+              <polygon points={csPolygonPoints} fill="var(--ink)" fillOpacity="0.06" stroke="var(--ink)" strokeWidth="0.8" strokeDasharray="3 3" />
               {/* PS 生产者剩余多边形 */}
-              <polygon points={psPolygonPoints} fill="#16a34a" fillOpacity="0.18" stroke="#16a34a" strokeWidth="0.8" />
+              <polygon points={psPolygonPoints} fill="var(--ink)" fillOpacity="0.12" stroke="var(--ink)" strokeWidth="0.8" />
               {/* DWL 死重损失多边形 */}
               {isIntervention && welfare.dwl > 0 && (
                 <polygon
                   points={dwlPolygonPoints}
-                  fill="#e11d48"
-                  fillOpacity="0.30"
-                  stroke="#e11d48"
-                  strokeWidth="1.5"
+                  fill="#dc2626"
+                  fillOpacity="0.18"
+                  stroke="#dc2626"
+                  strokeWidth="1.2"
                 />
               )}
 
@@ -494,28 +480,28 @@ export function MarktMechanismusSim({
             )}
 
             {/* 区域文字水印 */}
-            <text x={toSvgX(transactedQ * 0.35)} y={toSvgY(effectivePrice + (dBase - effectivePrice) * 0.35)} fontSize="8.5" fontWeight="bold" fill="#1e40af">
+            <text x={toSvgX(transactedQ * 0.35)} y={toSvgY(effectivePrice + (dBase - effectivePrice) * 0.35)} fontSize="9" fontWeight="bold" fill="var(--ink)" fillOpacity="0.5" fontFamily="monospace">
               CS
             </text>
-            <text x={toSvgX(transactedQ * 0.35)} y={toSvgY(effectivePrice - (effectivePrice - sBase) * 0.35)} fontSize="8.5" fontWeight="bold" fill="#15803d">
+            <text x={toSvgX(transactedQ * 0.35)} y={toSvgY(effectivePrice - (effectivePrice - sBase) * 0.35)} fontSize="9" fontWeight="bold" fill="var(--ink)" fillOpacity="0.5" fontFamily="monospace">
               PS
             </text>
           </svg>
 
           {/* 图例 */}
-          <div className="mt-2 flex flex-wrap items-center justify-center gap-4 text-[11px] font-mono">
+          <div className="mt-2 flex flex-wrap items-center justify-center gap-4 text-[11px] font-mono text-[var(--ink)]">
             <span className="flex items-center gap-1.5">
-              <span className="h-2.5 w-3 rounded-xs bg-blue-500/30 border border-blue-600" />
+              <span className="h-2.5 w-3.5 rounded-xs bg-[var(--ink)]/10 border border-[var(--ink)]/30" />
               <span>{de ? "Konsumentenrente (CS)" : "消费者剩余 (CS)"}</span>
             </span>
             <span className="flex items-center gap-1.5">
-              <span className="h-2.5 w-3 rounded-xs bg-emerald-500/30 border border-emerald-600" />
+              <span className="h-2.5 w-3.5 rounded-xs bg-[var(--ink)]/25 border border-[var(--ink)]/50" />
               <span>{de ? "Produzentenrente (PS)" : "生产者剩余 (PS)"}</span>
             </span>
             {isIntervention && welfare.dwl > 0 && (
               <span className="flex items-center gap-1.5">
-                <span className="h-2.5 w-3 rounded-xs bg-rose-500/40 border border-rose-600" />
-                <span className="font-bold text-rose-600 dark:text-rose-400">
+                <span className="h-2.5 w-3.5 rounded-xs bg-red-500/20 border border-red-500" />
+                <span className="font-bold text-red-600 dark:text-red-400">
                   {de ? "Wohlfahrtsverlust (DWL)" : "无谓损失 (DWL)"}
                 </span>
               </span>
@@ -572,13 +558,13 @@ export function MarktMechanismusSim({
               {de ? "2. Staatliche Intervention (Ordnungspolitik)" : "2. 国家价格干预与管制模式"}
             </span>
 
-            <div className="grid grid-cols-3 gap-1 mb-3">
+            <div className="grid grid-cols-3 gap-1.5 mb-3">
               <button
                 type="button"
                 onClick={() => setPriceControlMode("free")}
-                className={`py-1.5 px-1 rounded border text-center transition-colors text-xs ${
+                className={`py-1.5 px-1 rounded border text-center transition-colors text-xs font-mono ${
                   priceControlMode === "free"
-                    ? "border-[var(--accent)] bg-[var(--accent)] text-[var(--paper)] font-bold shadow-xs"
+                    ? "border-[var(--ink)] bg-[var(--ink)] text-[var(--paper)] font-bold shadow-xs"
                     : "border-[var(--line)] bg-[var(--paper)] text-[var(--gray)] hover:text-[var(--ink)]"
                 }`}
               >
@@ -590,10 +576,10 @@ export function MarktMechanismusSim({
                   setPriceControlMode("mindestpreis");
                   setControlPrice(Math.round(eqP + 12));
                 }}
-                className={`py-1.5 px-1 rounded border text-center transition-colors text-xs ${
+                className={`py-1.5 px-1 rounded border text-center transition-colors text-xs font-mono ${
                   priceControlMode === "mindestpreis"
-                    ? "border-red-600 bg-red-600 text-white font-bold shadow-xs"
-                    : "border-[var(--line)] bg-[var(--paper)] text-[var(--gray)] hover:text-red-600"
+                    ? "border-[var(--ink)] bg-[var(--ink)] text-[var(--paper)] font-bold shadow-xs"
+                    : "border-[var(--line)] bg-[var(--paper)] text-[var(--gray)] hover:text-[var(--ink)]"
                 }`}
               >
                 {de ? "🛡️ Mindestpreis" : "🛡️ 最低限价"}
@@ -604,10 +590,10 @@ export function MarktMechanismusSim({
                   setPriceControlMode("hoechstpreis");
                   setControlPrice(Math.round(eqP - 12));
                 }}
-                className={`py-1.5 px-1 rounded border text-center transition-colors text-xs ${
+                className={`py-1.5 px-1 rounded border text-center transition-colors text-xs font-mono ${
                   priceControlMode === "hoechstpreis"
-                    ? "border-sky-600 bg-sky-600 text-white font-bold shadow-xs"
-                    : "border-[var(--line)] bg-[var(--paper)] text-[var(--gray)] hover:text-sky-600"
+                    ? "border-[var(--ink)] bg-[var(--ink)] text-[var(--paper)] font-bold shadow-xs"
+                    : "border-[var(--line)] bg-[var(--paper)] text-[var(--gray)] hover:text-[var(--ink)]"
                 }`}
               >
                 {de ? "🏠 Höchstpreis" : "🏠 最高限价"}

@@ -373,12 +373,12 @@ export function EzbGeldpolitikSim({ lang = "de", onExportFinding }: EzbGeldpolit
             <div className="text-3xl font-mono font-bold tracking-tight mb-1 text-[var(--ink)]">
               {macro.hvpi.toFixed(1)} %
             </div>
-            <div className={`px-2 py-0.5 rounded text-[11px] font-bold ${
+            <div className={`px-2.5 py-1 rounded text-xs font-mono font-semibold border ${
               Math.abs(macro.zielAbweichung) <= 0.3
-                ? "bg-emerald-500/15 text-emerald-700 dark:text-emerald-300 border border-emerald-500/30"
+                ? "border-[var(--line)] bg-[var(--paper)] text-[var(--ink)]"
                 : macro.hvpi > 2.3
-                ? "bg-red-500/15 text-red-600 border border-red-500/30"
-                : "bg-sky-500/15 text-sky-600 border border-sky-500/30"
+                ? "border-red-500/40 bg-[var(--paper)] text-red-600"
+                : "border-sky-500/40 bg-[var(--paper)] text-sky-600"
             }`}>
               {Math.abs(macro.zielAbweichung) <= 0.3
                 ? (isDe ? "✓ ZIELKONFORM (Preisstabilität)" : "✓ 契合目标（物价稳定黄金区间）")
@@ -390,19 +390,19 @@ export function EzbGeldpolitikSim({ lang = "de", onExportFinding }: EzbGeldpolit
             {/* 视觉刻度进度条 */}
             <div className="w-full mt-4">
               <div className="relative w-full h-3 bg-slate-200 dark:bg-slate-800 rounded-full overflow-hidden">
-                {/* 2% 黄金目标区绿色标记 */}
-                <div className="absolute left-[20%] w-[10%] inset-y-0 bg-emerald-500/60" />
+                {/* 2% 黄金目标区标记 */}
+                <div className="absolute left-[20%] w-[10%] inset-y-0 bg-[var(--ink)]/20" />
                 {/* 实际通胀指针 */}
                 <div
                   className={`h-full transition-all duration-300 ${
-                    macro.hvpi > 3 ? "bg-red-500" : macro.hvpi < 1 ? "bg-sky-500" : "bg-emerald-500"
+                    macro.hvpi > 3 ? "bg-red-500" : macro.hvpi < 1 ? "bg-sky-500" : "bg-[var(--ink)]"
                   }`}
                   style={{ width: `${Math.min(100, (macro.hvpi / 8) * 100)}%` }}
                 />
               </div>
               <div className="flex justify-between text-[9px] font-mono text-[var(--gray)] mt-1">
                 <span>0.0% (Deflation)</span>
-                <span className="text-emerald-600 font-bold">2.0% (Ziel)</span>
+                <span className="text-[var(--ink)] font-bold">2.0% (Ziel)</span>
                 <span>4.0%</span>
                 <span className="text-red-600">8.0% (Galoppierend)</span>
               </div>
@@ -430,8 +430,8 @@ export function EzbGeldpolitikSim({ lang = "de", onExportFinding }: EzbGeldpolit
           </div>
 
           {/* 会考满分点拨 */}
-          <div className="p-3 rounded-lg bg-[var(--paper-subtle)] border-l-4 border-l-emerald-600 border border-[var(--line)] text-[var(--ink)] leading-relaxed">
-            <span className="font-bold text-emerald-800 dark:text-emerald-300 block mb-1">
+          <div className="p-3 rounded-lg bg-[var(--paper-subtle)] border-l-4 border-l-[var(--ink)] border border-[var(--line)] text-[var(--ink)] leading-relaxed">
+            <span className="font-bold text-[var(--ink)] block mb-1">
               {isDe ? "✍️ SoWi-Abitur Merksatz (Art. 127 AEUV):" : "✍️ 北威州会考采分核心规范："}
             </span>
             <p className="text-xs text-[var(--ink)]/90">
