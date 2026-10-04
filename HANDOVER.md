@@ -24,9 +24,21 @@
 
 ---
 
-## 当前状态（2026-10-03 最新里程碑）
+## 当前状态（2026-10-04 最新里程碑）
 
-- ✅ **互动课程矩阵扩张至 356 门（覆盖 NRW Oberstufe 十科学科核心考点）**：
+- ✅ **Labor 仿真实验路由精准化与串味/内容不符缺陷根治**：
+  - **根本原因排查**：用户截图反馈 `sowi-ezb-geldpolitik`（欧洲央行货币政策沙盒）打开后竟显示 `philo-willensfreiheit`（李贝特脑电自由意志天平）。经溯源：`Labor.tsx` 原逻辑中以宽泛条件将非硬编码的社科题目通配至文科思辨台，且 `GewiInteractiveWorkbench.tsx` 中硬编码了哲学自由意志默认降级（fallback），且状态未随 `sim.id` 切换重置。
+  - **路由彻底精准化（`Labor.tsx`）**：建立 `GEWI_WORKBENCH_IDS` 白名单，将纯文科、哲学伦理与文学赏析（如自由意志、康德定言、绝对平庸之恶、戏剧五幕、诗歌节拍、卡夫卡异化等）精准导流至 `GewiInteractiveWorkbench`；宏观经济量化模型（如 `sowi-ezb-geldpolitik` 欧洲央行利率走廊、菲利普斯曲线、德国社保转移动态、比较优势等）100% 走 `UniversalInteractiveWorkbench`，呈现真实的货币外生冲击与利率传导机制！
+  - **动态辩证天平生成器（`GewiInteractiveWorkbench.tsx`）**：
+    - 新增核心考点专属实战案例（最低工资与劳资自治 `sowi-mindestlohn`、生态碳税与累退分配 `sowi-oekosteuer`、德国工业区位与双元制 `sowi-standort-deutschland`、议论文逻辑诊断 `deutsch-sachtext-argument`）；
+    - 实现 `getOrGenerateBalanceCase(sim)` 动态生成机制：基于当前微课的学科（Deutsch / Philo / SoWi）、双语标题与核心主题，动态构建 100% 贴合题目本身的论据砝码、事实裁决（Sachurteil）与价值裁决（Werturteil）答题支架，彻底根除任何跨学科无关回退；
+    - 绑定 `useEffect` 状态重置监听，当用户切换不同课题时，天平托盘砝码自动刷新为当前命题。
+- ✅ **全链路门禁与生产编译 100% 零错误**：
+  - `App-EF-Lernvault`: `npx tsc -b` 0 报错；
+  - `npm run build`: 生产构建 6.47s 干净输出（0 语法阻断，0 废弃调用）；
+  - `scripts/vault-check.py`: PASS（notes=401, csv_rows=1921, index_links=332, reisen=356, badnames=0, badglossar=0）；
+  - `scripts/simulate-user-interaction.py`: 100% PASS（356 门互动微课、1,931 张词卡、403 个拓扑节点、933 跨学科术语全量仿真通过）。
+
   - 全量微课通过自动化双门禁系统（`scripts/vault-check.py` PASS, `scripts/audit-pedagogy-integrity.py` 0 缺陷）；
   - 课程体系严格遵循 Lesson-v3 规范：生动导入、预训练盒、概念图谱、模块化教具（balance-board, lego, highlighter, etc.）、双极深度对比、三级真题 Szenario、口试 Blitz、元认知反思与考前速记 Spickzettel；
 - ✅ **Anki 词卡库全面扩充至 1,931 张**：
