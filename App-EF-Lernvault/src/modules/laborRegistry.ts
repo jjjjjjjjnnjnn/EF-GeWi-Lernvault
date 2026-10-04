@@ -773,37 +773,22 @@ export const SIMULATION_REGISTRY: SimEntry[] = [
   },
 
   // ==========================================
-  // SOWI / WIRTSCHAFT (6 Labore)
+  // SOWI / WIRTSCHAFT (5 Labore)
   // ==========================================
   {
     id: "markt",
     fach: "SoWi",
-    kategorieDE: "Marktmechanismus & Mikroökonomie",
-    kategorieZH: "微观经济与市场均衡",
-    themenDE: "Preisbildung & Marktkräfte",
-    themenZH: "供求曲线相交与消费者剩余",
+    kategorieDE: "Marktmechanismus & Wohlfahrtsökonomie",
+    kategorieZH: "市场机制与福利经济学",
+    themenDE: "Preisbildung, Intervention & Wohlfahrt",
+    themenZH: "供求均衡、价格管制与福利几何",
     stufe: "EF",
     titleDE: "Markt-Mechanismus & Wohlfahrts-Simulator",
-    titleZH: "供求曲线与市场价格机制沙盘",
-    descDE: "Angebot und Nachfrage, Marktpreisbildung, Mindest-/Höchstpreise und Konsumentenrente.",
-    descZH: "供求曲线平移、市场出清均衡价 P*、价格干预与消费者/生产者剩余。",
-    formula: "Q_S(P) = Q_D(P)",
-    tags: ["Wirtschaft", "Markt", "Preis", "Wohlfahrt"],
-  },
-  {
-    id: "markt-welfare",
-    fach: "SoWi",
-    kategorieDE: "Marktmechanismus & Mikroökonomie",
-    kategorieZH: "市场干预与福利经济学",
-    themenDE: "Staatliche Eingriffe & Wohlfahrtsverlust",
-    themenZH: "最低限价与无谓损失几何剖析",
-    stufe: "Q1",
-    titleDE: "MarktWelfareLab: Wohlfahrtsverlust (Labor)",
-    titleZH: "市场干预、福利几何与无谓损失沙盘",
-    descDE: "Tufte-geometrischer Prüfstand für Mindestpreis P_min, Konsumentenrente, Produzentenrente und Deadweight Loss (DWL).",
-    descZH: "最低限价干预管制沙盘、透光多边形展示消费者剩余 (CS)、生产者剩余 (PS) 与社会总福利无谓损失 (DWL)。",
-    formula: "\\text{DWL} = \\frac{1}{2} (P - P_{\\text{Anbieter}}) \\cdot (Q^* - Q_{\\text{trans}})",
-    tags: ["SoWi", "Wohlfahrt", "DWL", "Mindestpreis", "Labor"],
+    titleZH: "供求曲线、价格机制与福利经济学沙盘",
+    descDE: "Angebot und Nachfrage, Marktpreisbildung, Mindest-/Höchstpreise, Konsumenten-/Produzentenrente und Deadweight Loss (DWL).",
+    descZH: "供求曲线平移、市场出清均衡价 P*、价格干预（最低/最高限价）与福利几何剖析（CS、PS 与无谓损失 DWL）。",
+    formula: "Q_S(P) = Q_D(P) \\quad \\text{bzw.} \\quad \\text{DWL} = \\frac{1}{2} (P - P_{\\text{Anbieter}}) \\cdot (Q^* - Q_{\\text{trans}})",
+    tags: ["SoWi", "Wirtschaft", "Markt", "Preis", "Wohlfahrt", "DWL", "Mindestpreis"],
   },
   {
     id: "orderbuch",

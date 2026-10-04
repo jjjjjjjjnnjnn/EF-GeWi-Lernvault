@@ -1417,12 +1417,15 @@ export function UniversalInteractiveWorkbench({
       // ==========================================
       case "sowi-sozialstaat-transfer": {
         const primGini = 0.48;
-        const transferReduktion = +((paramA / 100) * 0.22).toFixed(2);
+        // Steuerprogression (paramA) dämpft Spitzen, Bürgergeld/Grundsicherung (paramB) sichert die untersten 20% ab
+        const taxReduktion = (paramA / 100) * 0.12;
+        const buergergeldReduktion = (paramB / 100) * 0.08;
+        const transferReduktion = +(taxReduktion + buergergeldReduktion).toFixed(2);
         const sekGini = +(primGini - transferReduktion).toFixed(2);
         return {
           archetype: "sozialstaat",
-          paramALabelDE: "Steuerprogression & Transfervolumen",
-          paramALabelZH: "累进所得税与转移支付再分配力度",
+          paramALabelDE: "Steuerprogression & Spitzensteuersatz",
+          paramALabelZH: "累进所得税与高收入调节力度",
           paramAValueDisplay: `${paramA} %`,
           paramBLabelDE: "Grundsicherungs-Niveau (Bürgergeld)",
           paramBLabelZH: "公民基本生活兜底保障金基数",
@@ -1434,8 +1437,8 @@ export function UniversalInteractiveWorkbench({
           subLabelZH: "基尼系数平抑改善幅度",
           subValue: `-${transferReduktion} Punkte`,
           graphY: Math.round(Number(sekGini) * 160),
-          insightDE: "Sozialstaatsgebot Art. 20 Abs. 1 GG: Das System aus progressiver Einkommensteuer und Sozialtransfers senkt den deutschen Gini von 0,48 auf unter 0,30.",
-          insightZH: "德国基本法第20条第1款社会国原则：通过累进税率、社保基金与转移支付，使初次分配基尼系数（0.48）显著降至二次净收入（0.29-0.31），极大缩小贫富剪刀差。",
+          insightDE: "Sozialstaatsgebot Art. 20 Abs. 1 GG: Das System aus progressiver Einkommensteuer und Bürgergeld senkt den deutschen Gini von 0,48 auf unter 0,30.",
+          insightZH: "德国基本法第20条第1款社会国原则：通过累进所得税（平抑高收入）配合公民保障金Bürgergeld（托底低收入），使初次分配基尼系数（0.48）降至二次净收入（0.28-0.31）。",
         };
       }
 
@@ -3461,9 +3464,23 @@ export function UniversalInteractiveWorkbench({
 
       // 29. 社科：福利国家洛伦兹曲线再分配 (Sozialstaat)
       case "sozialstaat": {
-        const k = paramA / 100;
-        const ctrlX = Math.round(210 - k * 45);
-        const ctrlY = Math.round(155 - k * 60);
+        const kTax = paramA / 100;
+        const kBasic = paramB / 100;
+
+        // Bürgergeld (paramB) primarily lifts the bottom deciles (x: 60 -> 120)
+        // Tax progression (paramA) arches the upper middle class towards the diagonal
+        const ctrl1X = Math.round(115 + kBasic * 15);
+        const ctrl1Y = Math.round(165 - kBasic * 32 - kTax * 10);
+        const ctrl2X = Math.round(210 - kTax * 35);
+        const ctrl2Y = Math.round(155 - kTax * 55 - kBasic * 18);
+
+        // Point at 20% population indicating citizen's income floor
+        const p20X = 60 + 44; // 20% of 220px
+        const p20Y = Math.round(163 - kBasic * 25 - kTax * 8);
+
+        const nettoPath = `M 60 165 C ${ctrl1X} ${ctrl1Y}, ${ctrl2X} ${ctrl2Y}, 280 25`;
+        const primaerPath = "M 60 165 C 115 163, 210 155, 280 25";
+
         return (
           <svg className="w-full h-64 sm:h-72 rounded bg-[var(--paper)] border border-[var(--line)]" viewBox="0 0 440 200">
             {/* 45° 绝对均等对角线 (Gini = 0) */}
@@ -3474,16 +3491,23 @@ export function UniversalInteractiveWorkbench({
 
             {/* 再分配缩小的不平等面积 A (Umverteilungsfläche) */}
             <path
-              d={`M 60 165 Q ${ctrlX} ${ctrlY} 280 25 Q 210 155 60 165 Z`}
+              d={`${nettoPath} C ${ctrl2X} ${ctrl2Y}, 115 163, 60 165 Z`}
               fill="#16a34a"
               fillOpacity="0.18"
             />
 
             {/* 初次分配曲线 (Markteinkommen vor Steuern, Gini=0.48) */}
-            <path d="M 60 165 Q 210 155 280 25" fill="none" stroke="#dc2626" strokeWidth="2" strokeDasharray="3,2" />
+            <path d={primaerPath} fill="none" stroke="#dc2626" strokeWidth="2" strokeDasharray="3,2" />
 
             {/* 二次分配净收入曲线 (Nettoeinkommen nach Steuern & Bürgergeld) */}
-            <path d={`M 60 165 Q ${ctrlX} ${ctrlY} 280 25`} fill="none" stroke="#16a34a" strokeWidth="2.5" />
+            <path d={nettoPath} fill="none" stroke="#16a34a" strokeWidth="2.5" />
+
+            {/* Bürgergeld 底层兜底指示标 */}
+            <line x1={p20X} y1="165" x2={p20X} y2={p20Y} stroke="#16a34a" strokeWidth="1.2" strokeDasharray="2,2" />
+            <circle cx={p20X} cy={p20Y} r="3.5" fill="#16a34a" />
+            <text x={p20X + 4} y={p20Y - 5} fontSize="6.5" fill="#16a34a" fontWeight="bold" fontFamily="monospace">
+              Bürgergeld (+{paramB}%)
+            </text>
 
             {/* 坐标轴与刻度 */}
             <line x1="60" y1="165" x2="285" y2="165" stroke="var(--ink)" strokeWidth="1.5" />
@@ -3544,7 +3568,7 @@ export function UniversalInteractiveWorkbench({
                 Netto-Gini: {data.rateValue}
               </text>
               <text x="25" y="82" fontSize="6.5" fill="var(--gray)">
-                Nach Steuer & Bürgergeld
+                Progression {paramA}% · Bürgergeld {paramB}%
               </text>
 
               {/* 平抑效果 */}

@@ -37,7 +37,6 @@ import { FrictionMicroSim } from "../components/pedagogy/FrictionMicroSim";
 import { BoxOptimizerSim } from "../components/pedagogy/BoxOptimizerSim";
 import { TangentSlider } from "../components/pedagogy/TangentSlider";
 import { MarktMechanismusSim } from "../components/pedagogy/MarktMechanismusSim";
-import { MarktWelfareLab } from "../components/pedagogy/MarktWelfareLab";
 import { OrderbuchSimulator } from "../components/pedagogy/OrderbuchSimulator";
 import { GiniAllocatorSim } from "../components/pedagogy/GiniAllocatorSim";
 import { BalanceBoard } from "../components/pedagogy/BalanceBoard";
@@ -241,9 +240,8 @@ export function Labor({ lang, onDiscussInTutor }: LaborProps) {
       case "tangent":
         return <TangentSlider lang={lang} onFormulaGenerated={handleExportFinding} />;
       case "markt":
-        return <MarktMechanismusSim lang={lang} onFormulaGenerated={handleExportFinding} />;
       case "markt-welfare":
-        return <MarktWelfareLab lang={lang} />;
+        return <MarktMechanismusSim lang={lang} onFormulaGenerated={handleExportFinding} />;
       case "orderbuch":
         return <OrderbuchSimulator lang={lang} />;
       case "gini":

@@ -220,31 +220,67 @@ export function EzbGeldpolitikSim({ lang = "de", onExportFinding }: EzbGeldpolit
           <div className="relative w-full aspect-16/11 rounded-lg overflow-hidden border border-[var(--line)] bg-[var(--paper)] p-2">
             <svg className="w-full h-full" viewBox="0 0 500 320">
               {/* 1. 左侧：利率走廊阶梯 (Zinskorridor) */}
-              <rect x="25" y="40" width="130" height="240" rx="6" fill="var(--paper-subtle)" stroke="var(--line)" />
-              <text x="90" y="60" textAnchor="middle" fontSize="10" fontWeight="bold" fill="var(--ink)">
+              <rect x="25" y="40" width="135" height="240" rx="6" fill="var(--paper-subtle)" stroke="var(--line)" />
+              <text x="92" y="58" textAnchor="middle" fontSize="10" fontWeight="bold" fill="var(--ink)">
                 Zinskorridor
               </text>
 
-              {/* 边际贷款便利 Spitzenrefinanzierungsfazilität (上限) */}
-              <line x1="35" y1={190 - spitzenzins * 22} x2="145" y2={190 - spitzenzins * 22} stroke="#dc2626" strokeWidth="2.5" strokeDasharray="3,2" />
-              <text x="142" y={185 - spitzenzins * 22} textAnchor="end" fontSize="8" fill="#dc2626" fontWeight="bold">
-                Spitzenzins: {spitzenzins}%
-              </text>
+              {/* 利率标尺刻度 (0%, 2%, 4%, 6%) */}
+              {[0, 2, 4, 6].map((rate) => {
+                const y = 230 - (rate / 6) * 155;
+                return (
+                  <g key={rate}>
+                    <line x1="28" y1={y} x2="35" y2={y} stroke="var(--line)" strokeWidth="1" />
+                    <line x1="35" y1={y} x2="150" y2={y} stroke="var(--line)" strokeWidth="0.5" strokeDasharray="2,2" strokeOpacity="0.4" />
+                    <text x="26" y={y + 2.5} textAnchor="end" fontSize="7" fill="var(--gray)" fontFamily="monospace">
+                      {rate}%
+                    </text>
+                  </g>
+                );
+              })}
 
-              {/* 主再融资利率 Hauptrefinanzierungssatz (核心基准) */}
-              <line x1="35" y1={190 - leitzins * 22} x2="145" y2={190 - leitzins * 22} stroke="#2563eb" strokeWidth="3.5" />
-              <circle cx="90" cy={190 - leitzins * 22} r="5" fill="#2563eb" />
-              <text x="142" y={184 - leitzins * 22} textAnchor="end" fontSize="8" fill="#2563eb" fontWeight="bold">
-                Leitzins: {leitzins}%
-              </text>
+              {(() => {
+                const ySpitze = 230 - (spitzenzins / 6) * 155;
+                const yLeit = 230 - (leitzins / 6) * 155;
+                const yEinlage = 230 - (einlagezins / 6) * 155;
 
-              {/* 存款便利 Einlagefazilität (下限) */}
-              <line x1="35" y1={190 - einlagezins * 22} x2="145" y2={190 - einlagezins * 22} stroke="#16a34a" strokeWidth="2.5" strokeDasharray="3,2" />
-              <text x="142" y={185 - einlagezins * 22} textAnchor="end" fontSize="8" fill="#16a34a" fontWeight="bold">
-                Einlagezins: {einlagezins}%
-              </text>
+                return (
+                  <>
+                    {/* 走廊通带半透明阴影 */}
+                    <rect
+                      x="35"
+                      y={ySpitze}
+                      width="115"
+                      height={Math.max(4, yEinlage - ySpitze)}
+                      fill="#2563eb"
+                      fillOpacity="0.08"
+                    />
 
-              <text x="90" y="265" textAnchor="middle" fontSize="8" fill="var(--gray)" fontFamily="monospace">
+                    {/* 边际贷款便利 Spitzenrefinanzierungsfazilität (上限) */}
+                    <line x1="35" y1={ySpitze} x2="150" y2={ySpitze} stroke="#dc2626" strokeWidth="2" strokeDasharray="4,2" />
+                    <text x="38" y={ySpitze - 4} fontSize="7.5" fill="#dc2626" fontWeight="bold" fontFamily="monospace">
+                      ▲ Spitzen: {spitzenzins}%
+                    </text>
+
+                    {/* 主再融资利率 Hauptrefinanzierungssatz (核心基准) */}
+                    <line x1="35" y1={yLeit} x2="150" y2={yLeit} stroke="#2563eb" strokeWidth="3" />
+                    <circle cx="85" cy={yLeit} r="4" fill="#2563eb" />
+                    {/* 浮动中央基准徽章 */}
+                    <rect x="94" y={yLeit - 7} width="52" height="14" rx="2" fill="var(--paper)" stroke="#2563eb" strokeWidth="1" />
+                    <text x="120" y={yLeit + 3.5} textAnchor="middle" fontSize="7.5" fill="#2563eb" fontWeight="bold" fontFamily="monospace">
+                      Leit: {leitzins}%
+                    </text>
+
+                    {/* 存款便利 Einlagefazilität (下限) */}
+                    <line x1="35" y1={yEinlage} x2="150" y2={yEinlage} stroke="#16a34a" strokeWidth="2" strokeDasharray="4,2" />
+                    <text x="38" y={yEinlage + 11} fontSize="7.5" fill="#16a34a" fontWeight="bold" fontFamily="monospace">
+                      ▼ Einlage: {einlagezins}%
+                    </text>
+                  </>
+                );
+              })()}
+
+              <text x="92" y="268" textAnchor="middle" fontSize="8" fill="var(--gray)" fontFamily="monospace">
                 EZB-Geldmarkt
               </text>
 
@@ -394,11 +430,11 @@ export function EzbGeldpolitikSim({ lang = "de", onExportFinding }: EzbGeldpolit
           </div>
 
           {/* 会考满分点拨 */}
-          <div className="p-2.5 rounded-lg bg-emerald-500/10 border border-emerald-500/20 text-emerald-900 dark:text-emerald-200 leading-relaxed">
-            <span className="font-bold block mb-0.5">
+          <div className="p-3 rounded-lg bg-[var(--paper-subtle)] border-l-4 border-l-emerald-600 border border-[var(--line)] text-[var(--ink)] leading-relaxed">
+            <span className="font-bold text-emerald-800 dark:text-emerald-300 block mb-1">
               {isDe ? "✍️ SoWi-Abitur Merksatz (Art. 127 AEUV):" : "✍️ 北威州会考采分核心规范："}
             </span>
-            <p>
+            <p className="text-xs text-[var(--ink)]/90">
               {isDe
                 ? "„Das vorrangige Ziel des Eurosystems ist die Gewährleistung der Preisstabilität (Art. 127 Abs. 1 AEUV). Soweit dies ohne Beeinträchtigung des Ziels der Preisstabilität möglich ist, unterstützt das ESZB die allgemeine Wirtschaftspolitik in der Union.“"
                 : "‘欧洲中央银行体系的首要目标是维持物价稳定（欧盟运行条约第127条第1款）。在绝不损害物价稳定目标的前提下，欧洲央行才兼顾支持欧盟的整体经济政策（如充分就业与经济增长）。’"}
