@@ -1093,8 +1093,9 @@ export function UniversalInteractiveWorkbench({
       // 23. 数学：黎曼和与定积分面积逼近 (Integral)
       // ==========================================
       case "mathe-integral-flaeche": {
-        const nTrapeze = Math.round(2 + (paramA / 100) * 48);
-        const exakt = 9.0;
+        const nTrapeze = Math.round(2 + (paramA / 100) * 30);
+        const b = +(1.0 + (paramB / 100) * 3.0).toFixed(1); // 1.0 to 4.0
+        const exakt = +(Math.pow(Number(b), 3) / 3).toFixed(3);
         const riemann = +(exakt * (1 - 1 / (nTrapeze * 1.5))).toFixed(3);
         const fehler = +Math.abs(exakt - riemann).toFixed(3);
         return {
@@ -1102,18 +1103,18 @@ export function UniversalInteractiveWorkbench({
           paramALabelDE: "Anzahl Streifen n (Zerlegung)",
           paramALabelZH: "微元区间分割数 n (黎曼矩形)",
           paramAValueDisplay: `n = ${nTrapeze}`,
-          paramBLabelDE: "Integrationsbereich [0; b]",
+          paramBLabelDE: "Integrationsgrenze b",
           paramBLabelZH: "积分区间上限 b",
-          paramBValueDisplay: `b = 3.0`,
+          paramBValueDisplay: `b = ${b}`,
           rateLabelDE: "Riemannsche Untersumme",
           rateLabelZH: "黎曼和近似计算面积",
           rateValue: `${riemann} FE`,
-          subLabelDE: "Exakter Grenzwert ∫₀³ x² dx",
+          subLabelDE: `Exakter Grenzwert ∫₀ᵇ x² dx`,
           subLabelZH: "理论精确真值与绝对误差",
-          subValue: `9.000 FE (Δ = ${fehler})`,
-          graphY: Math.round((riemann / 9) * 100),
-          insightDE: `Bei n = ${nTrapeze} Streifen konvergieren Ober- und Untersumme gegen den exakten Flächeninhalt des Hauptsatzes.`,
-          insightZH: `分割数 n = ${nTrapeze} 时，阶梯矩形和极限逼近牛顿-莱布尼茨公式真值 F(3)-F(0) = 9.000 FE，微元误差迅速收敛至零！`,
+          subValue: `${exakt} FE (Δ = ${fehler})`,
+          graphY: Math.min(100, Math.round((riemann / 22) * 100)),
+          insightDE: `Bei n = ${nTrapeze} Streifen auf [0; ${b}] konvergieren Ober- und Untersumme gegen den exakten Flächeninhalt F(${b})-F(0) = ${exakt} FE.`,
+          insightZH: `分割数 n = ${nTrapeze} 在 [0, ${b}] 区间上，阶梯矩形和极限逼近牛顿-莱布尼茨公式真值 F(${b})-F(0) = ${exakt} FE，微元误差迅速收敛！`,
         };
       }
 
@@ -1829,28 +1830,72 @@ export function UniversalInteractiveWorkbench({
         );
       }
 
-      // 3. 化学：丹尼尔原电池与盐桥
+      // 3. 化学：丹尼尔原电池与盐桥 (Galvanische Zelle)
       case "galvanisch": {
+        const cZn = +((paramA / 50) + 0.01).toFixed(2);
+        const cCu = +((paramB / 50) + 0.01).toFixed(2);
+        // Ion count in beakers
+        const znIonCount = Math.min(10, Math.max(2, Math.round(cZn * 4)));
+        const cuIonCount = Math.min(10, Math.max(2, Math.round(cCu * 4)));
+        // Voltage and current flow direction
+        const deltaE = +(1.10 + 0.0295 * Math.log10(cCu / cZn)).toFixed(3);
+
         return (
           <svg className="w-full h-64 sm:h-72 rounded bg-[var(--paper-subtle)]/40 border border-[var(--line)]/50" viewBox="0 0 440 200">
-            <rect x="50" y="70" width="110" height="95" rx="4" fill="#e2e8f0" stroke="var(--ink)" strokeWidth="1.8" />
-            <rect x="52" y="90" width="106" height="73" fill="#cbd5e1" fillOpacity="0.5" />
-            <rect x="80" y="50" width="22" height="100" fill="#94a3b8" stroke="var(--ink)" strokeWidth="1.2" />
-            <text x="91" y="42" textAnchor="middle" fontSize="9" fontWeight="bold" fill="var(--ink)" fontFamily="monospace">Zn Anode (-)</text>
+            {/* Left beaker: Zn / ZnSO4 */}
+            <rect x="45" y="70" width="115" height="95" rx="4" fill="#e2e8f0" stroke="var(--ink)" strokeWidth="1.6" />
+            <rect x="47" y="90" width="111" height="73" fill="#cbd5e1" fillOpacity={0.25 + (cZn / 2) * 0.45} />
+            <rect x="75" y="50" width="22" height="100" fill="#94a3b8" stroke="var(--ink)" strokeWidth="1.2" />
+            <text x="86" y="42" textAnchor="middle" fontSize="9" fontWeight="bold" fill="var(--ink)" fontFamily="monospace">
+              Zn Anode (-)
+            </text>
+            {/* Dynamic Zn2+ ions in beaker */}
+            {Array.from({ length: znIonCount }).map((_, i) => (
+              <text key={i} x={55 + (i % 3) * 30} y={105 + Math.floor(i / 3) * 16} fontSize="7" fill="#475569" fontFamily="monospace">
+                Zn²⁺
+              </text>
+            ))}
 
-            <rect x="280" y="70" width="110" height="95" rx="4" fill="#e2e8f0" stroke="var(--ink)" strokeWidth="1.8" />
-            <rect x="282" y="90" width="106" height="73" fill="#38bdf8" fillOpacity="0.4" />
-            <rect x="338" y="50" width="22" height="100" fill="#b45309" stroke="var(--ink)" strokeWidth="1.2" />
-            <text x="349" y="42" textAnchor="middle" fontSize="9" fontWeight="bold" fill="var(--ink)" fontFamily="monospace">Cu Kathode (+)</text>
+            {/* Right beaker: Cu / CuSO4 */}
+            <rect x="280" y="70" width="115" height="95" rx="4" fill="#e2e8f0" stroke="var(--ink)" strokeWidth="1.6" />
+            <rect x="282" y="90" width="111" height="73" fill="#0284c7" fillOpacity={0.15 + (cCu / 2) * 0.65} />
+            <rect x="343" y="50" width={18 + Math.min(10, cCu * 3)} height="100" fill="#b45309" stroke="var(--ink)" strokeWidth="1.2" />
+            <text x="352" y="42" textAnchor="middle" fontSize="9" fontWeight="bold" fill="#b45309" fontFamily="monospace">
+              Cu Kathode (+)
+            </text>
+            {/* Dynamic Cu2+ ions in beaker */}
+            {Array.from({ length: cuIonCount }).map((_, i) => (
+              <text key={i} x={290 + (i % 3) * 26} y={105 + Math.floor(i / 3) * 16} fontSize="7" fill="#0284c7" fontWeight="bold" fontFamily="monospace">
+                Cu²⁺
+              </text>
+            ))}
 
-            <path d="M 130 110 L 130 65 L 310 65 L 310 110" fill="none" stroke="#f8fafc" strokeWidth="16" />
-            <path d="M 130 110 L 130 65 L 310 65 L 310 110" fill="none" stroke="var(--ink)" strokeWidth="1.8" />
+            {/* U-tube Salt Bridge KNO3 */}
+            <path d="M 135 110 L 135 65 L 305 65 L 305 110" fill="none" stroke="#f1f5f9" strokeWidth="16" />
+            <path d="M 135 110 L 135 65 L 305 65 L 305 110" fill="none" stroke="var(--ink)" strokeWidth="1.6" />
             <text x="220" y="60" textAnchor="middle" fontSize="8" fill="var(--gray)" fontFamily="monospace">KNO₃-Salzbrücke</text>
 
-            <path d="M 91 50 L 91 25 L 200 25 M 240 25 L 349 25 L 349 50" fill="none" stroke="var(--ink)" strokeWidth="1.8" />
-            <rect x="200" y="12" width="40" height="26" rx="4" fill="var(--surface)" stroke="var(--ink)" strokeWidth="1.5" />
-            <text x="220" y="29" textAnchor="middle" fontSize="10" fontWeight="bold" fill="var(--accent)" fontFamily="monospace">
-              {data.rateValue}
+            {/* External Wire Circuit with Voltmeter */}
+            <path d="M 86 50 L 86 22 L 195 22 M 245 22 L 352 22 L 352 50" fill="none" stroke="var(--ink)" strokeWidth="1.8" />
+            {/* Moving electron indicators */}
+            <circle cx={130} cy={22} r="2.5" fill="#dc2626" />
+            <text x={130} y={15} textAnchor="middle" fontSize="7" fill="#dc2626" fontFamily="monospace">e⁻ →</text>
+            <circle cx={310} cy={22} r="2.5" fill="#dc2626" />
+            <text x={310} y={15} textAnchor="middle" fontSize="7" fill="#dc2626" fontFamily="monospace">→ e⁻</text>
+
+            {/* Voltmeter Dial Badge */}
+            <rect x="195" y="8" width="50" height="28" rx="4" fill="var(--surface)" stroke="var(--ink)" strokeWidth="1.5" />
+            <text x="220" y="22" textAnchor="middle" fontSize="8" fill="var(--gray)" fontFamily="monospace">U_Zell</text>
+            <text x="220" y="33" textAnchor="middle" fontSize="9" fontWeight="bold" fill="var(--accent)" fontFamily="monospace">
+              {deltaE} V
+            </text>
+
+            {/* Bottom info readout */}
+            <text x="102" y="180" textAnchor="middle" fontSize="8" fill="var(--ink)" fontFamily="monospace">
+              [Zn²⁺] = {cZn} M
+            </text>
+            <text x="337" y="180" textAnchor="middle" fontSize="8" fill="var(--ink)" fontFamily="monospace">
+              [Cu²⁺] = {cCu} M
             </text>
           </svg>
         );
@@ -1858,59 +1903,118 @@ export function UniversalInteractiveWorkbench({
 
       // 4. 化学：法拉第电解与铜沉积 (Elektrolyse)
       case "elektrolyse": {
-        const mCu = Math.min(20, Math.round(data.graphY));
+        const strom = 1 + (paramA / 100) * 9; // 1 to 10 A
+        const zeit = 10 + (paramB / 100) * 110; // 10 to 120 min
+        const mCu = (63.55 * strom * (zeit * 60)) / (2 * 96485); // mass in g
+        const depositW = Math.min(22, 4 + (mCu / 15) * 18); // copper layer thickness
+        const bubbleSpeedCount = Math.min(8, Math.max(2, Math.round(strom * 0.8)));
+
         return (
           <svg className="w-full h-64 sm:h-72 rounded bg-[var(--paper-subtle)]/40 border border-[var(--line)]/50" viewBox="0 0 440 200">
-            <rect x="195" y="10" width="50" height="30" rx="4" fill="#1e293b" />
-            <text x="220" y="24" textAnchor="middle" fontSize="8" fill="#38bdf8" fontFamily="monospace">DC-Quelle</text>
-            <text x="220" y="35" textAnchor="middle" fontSize="9" fontWeight="bold" fill="#f8fafc" fontFamily="monospace">{data.paramAValueDisplay}</text>
+            {/* Power Source */}
+            <rect x="190" y="10" width="60" height="32" rx="4" fill="#1e293b" />
+            <text x="220" y="24" textAnchor="middle" fontSize="8" fill="#38bdf8" fontFamily="monospace">DC-Netzgerät</text>
+            <text x="220" y="36" textAnchor="middle" fontSize="9" fontWeight="bold" fill="#f8fafc" fontFamily="monospace">
+              I = {strom.toFixed(1)} A
+            </text>
 
-            <rect x="100" y="60" width="240" height="125" rx="6" fill="#0284c7" fillOpacity="0.25" stroke="var(--ink)" strokeWidth="2" />
-            <text x="220" y="175" textAnchor="middle" fontSize="8" fill="var(--gray)" fontFamily="monospace">CuSO4-Elektrolyt (aq)</text>
+            {/* Electrolyte Tank */}
+            <rect x="90" y="62" width="260" height="122" rx="6" fill="#0284c7" fillOpacity="0.22" stroke="var(--ink)" strokeWidth="2" />
+            <text x="220" y="176" textAnchor="middle" fontSize="8" fill="var(--gray)" fontFamily="monospace">
+              CuSO₄ Elektrolytlösung (aq) | t = {Math.round(zeit)} min
+            </text>
 
-            <path d="M 205 40 L 150 40 L 150 70" fill="none" stroke="var(--ink)" strokeWidth="1.8" />
-            <rect x="140" y="70" width="20" height="90" fill="#334155" stroke="var(--ink)" strokeWidth="1.2" />
-            <text x="150" y="65" textAnchor="middle" fontSize="8" fontWeight="bold" fill="var(--ink)" fontFamily="monospace">Anode (+)</text>
-            {[1, 2, 3, 4].map((i) => (
-              <circle key={i} cx={145 + (i % 2) * 10} cy={140 - i * 14} r="2.5" fill="none" stroke="#38bdf8" strokeWidth="1.2" />
+            {/* Anode (Graphite / Pt) (+) */}
+            <path d="M 200 42 L 145 42 L 145 70" fill="none" stroke="var(--ink)" strokeWidth="1.8" />
+            <rect x="135" y="70" width="18" height="85" fill="#334155" stroke="var(--ink)" strokeWidth="1.2" />
+            <text x="144" y="65" textAnchor="middle" fontSize="8" fontWeight="bold" fill="var(--ink)" fontFamily="monospace">Anode (+)</text>
+            <text x="144" y="140" textAnchor="middle" fontSize="7" fill="white" fontFamily="monospace">2H₂O→O₂</text>
+            {/* Dynamic Oxygen Bubbles */}
+            {Array.from({ length: bubbleSpeedCount }).map((_, i) => (
+              <circle key={i} cx={140 + (i % 2) * 8} cy={135 - i * 11} r="2.5" fill="none" stroke="#38bdf8" strokeWidth="1.4" />
             ))}
 
-            <path d="M 235 40 L 290 40 L 290 70" fill="none" stroke="var(--ink)" strokeWidth="1.8" />
-            <rect x="280" y="70" width="20" height="90" fill="#b45309" stroke="var(--ink)" strokeWidth="1.2" />
-            <rect x="277" y="80" width={6 + mCu * 0.4} height="70" fill="#ea580c" rx="1" />
-            <text x="290" y="65" textAnchor="middle" fontSize="8" fontWeight="bold" fill="var(--ink)" fontFamily="monospace">Kathode (-)</text>
+            {/* Kathode (Copper Plate) (-) */}
+            <path d="M 240 42 L 295 42 L 295 70" fill="none" stroke="var(--ink)" strokeWidth="1.8" />
+            <rect x="285" y="70" width="18" height="85" fill="#b45309" stroke="var(--ink)" strokeWidth="1.2" />
+            {/* Growing Copper Deposit Layer */}
+            <rect x={285 - depositW} y="75" width={depositW} height="75" fill="#ea580c" rx="1.5" stroke="#c2410c" strokeWidth="0.8" />
+            <text x="294" y="65" textAnchor="middle" fontSize="8" fontWeight="bold" fill="var(--ink)" fontFamily="monospace">Kathode (-)</text>
+            <text x="294" y="140" textAnchor="middle" fontSize="7" fill="white" fontFamily="monospace">Cu²⁺→Cu</text>
 
-            <rect x="350" y="70" width="75" height="60" rx="3" fill="var(--surface)" stroke="var(--line)" />
-            <text x="387" y="88" textAnchor="middle" fontSize="8" fill="var(--gray)" fontFamily="monospace">m(Cu) Abscheidung</text>
-            <text x="387" y="112" textAnchor="middle" fontSize="11" fontWeight="bold" fill="var(--accent)" fontFamily="monospace">{data.rateValue}</text>
+            {/* Faraday Result Badge */}
+            <rect x="330" y="30" width="95" height="55" rx="3" fill="var(--surface)" stroke="var(--line)" />
+            <text x="377" y="46" textAnchor="middle" fontSize="8" fill="var(--gray)" fontFamily="monospace">m(Cu) Abscheidung</text>
+            <text x="377" y="64" textAnchor="middle" fontSize="11" fontWeight="bold" fill="#ea580c" fontFamily="monospace">
+              {mCu.toFixed(3)} g
+            </text>
+            <text x="377" y="77" textAnchor="middle" fontSize="7" fill="var(--ink)" fontFamily="monospace">
+              Q = {Math.round(strom * zeit * 60)} C
+            </text>
           </svg>
         );
       }
 
       // 5. 化学：缓冲溶液滴定曲线 (Puffer)
       case "puffer": {
+        const verhaeltnis = Math.pow(10, (paramA - 50) / 25);
+        const pks = 4.75;
+        const ph = pks + Math.log10(verhaeltnis);
+        const bufferCap = 0.05 + (paramB / 100) * 0.95; // 0.05 to 1.0 mol/L
+
+        // Curve mapping: pH 0 to 14 maps to Y = 170 down to 25
+        const mapPhToY = (val: number) => 170 - (val / 14) * 145;
+        const currentY = mapPhToY(ph);
+        const currentX = 60 + (paramA / 100) * 300;
+
+        // Henderson-Hasselbalch titration curve path
+        const curvePoints: string[] = [];
+        for (let i = 0; i <= 50; i++) {
+          const ratio = Math.pow(10, ((i / 50) * 100 - 50) / 25);
+          const valPh = Math.max(1, Math.min(13, pks + Math.log10(ratio)));
+          const sx = 60 + (i / 50) * 300;
+          const sy = mapPhToY(valPh);
+          curvePoints.push(`${i === 0 ? "M" : "L"} ${sx.toFixed(1)} ${sy.toFixed(1)}`);
+        }
+        const titrationPath = curvePoints.join(" ");
+
+        // Buffer plateau band (pKs +/- 1 => pH 3.75 to 5.75)
+        const yTopBuffer = mapPhToY(5.75);
+        const yBtmBuffer = mapPhToY(3.75);
+
         return (
           <svg className="w-full h-64 sm:h-72 rounded bg-[var(--paper-subtle)]/40 border border-[var(--line)]/50" viewBox="0 0 440 200">
+            {/* Coordinate Grid */}
             <line x1="50" y1="170" x2="390" y2="170" stroke="var(--ink)" strokeWidth="1.5" />
             <line x1="50" y1="20" x2="50" y2="170" stroke="var(--ink)" strokeWidth="1.5" />
             <text x="42" y="30" textAnchor="end" fontSize="8" fill="var(--gray)" fontFamily="monospace">pH 14</text>
-            <text x="42" y="95" textAnchor="end" fontSize="8" fill="var(--gray)" fontFamily="monospace">pH 7</text>
-            <text x="42" y="165" textAnchor="end" fontSize="8" fill="var(--gray)" fontFamily="monospace">pH 0</text>
+            <text x="42" y={mapPhToY(7)} textAnchor="end" fontSize="8" fill="var(--gray)" fontFamily="monospace">pH 7</text>
+            <text x="42" y="168" textAnchor="end" fontSize="8" fill="var(--gray)" fontFamily="monospace">pH 0</text>
+            <text x="390" y="185" textAnchor="end" fontSize="8" fill="var(--gray)" fontFamily="monospace">[Ac⁻] / [HAc] →</text>
 
-            <rect x="140" y="30" width="140" height="130" fill="#22c55e" fillOpacity="0.08" />
-            <line x1="210" y1="30" x2="210" y2="170" stroke="#16a34a" strokeDasharray="3,3" />
-            <text x="210" y="25" textAnchor="middle" fontSize="8" fill="#16a34a" fontWeight="bold" fontFamily="monospace">pKs = 4.75 (Pufferoptimum)</text>
+            {/* Buffer zone highlight [pH 3.75 ; 5.75] */}
+            <rect x="50" y={yTopBuffer} width="340" height={yBtmBuffer - yTopBuffer} fill="#22c55e" fillOpacity={0.08 + bufferCap * 0.1} />
+            <line x1="50" y1={mapPhToY(pks)} x2="390" y2={mapPhToY(pks)} stroke="#16a34a" strokeWidth="1" strokeDasharray="3,3" />
+            <text x="210" y={mapPhToY(pks) - 4} textAnchor="middle" fontSize="8" fill="#16a34a" fontWeight="bold" fontFamily="monospace">
+              pKs = 4.75 (Pufferoptimum)
+            </text>
 
-            <path
-              d="M 60 150 C 130 135, 170 115, 210 115 C 250 115, 290 95, 360 40"
-              fill="none"
-              stroke="var(--accent)"
-              strokeWidth="2.5"
-            />
-            <circle cx={60 + (paramA / 100) * 300} cy={170 - data.graphY * 1.3} r="6" fill="var(--accent)" stroke="var(--paper)" strokeWidth="2" />
-            <rect x="290" y="130" width="90" height="35" rx="3" fill="var(--surface)" stroke="var(--line)" />
-            <text x="335" y="145" textAnchor="middle" fontSize="8" fill="var(--gray)" fontFamily="monospace">pH-Messsonde</text>
-            <text x="335" y="158" textAnchor="middle" fontSize="10" fontWeight="bold" fill="var(--ink)" fontFamily="monospace">{data.rateValue}</text>
+            {/* Titration Path */}
+            <path d={titrationPath} fill="none" stroke="var(--accent)" strokeWidth="2.5" />
+
+            {/* Current Probe Point */}
+            <circle cx={currentX} cy={currentY} r="5.5" fill="var(--accent)" stroke="var(--paper)" strokeWidth="2" />
+            <line x1={currentX} y1={currentY} x2={currentX} y2="170" stroke="var(--accent)" strokeWidth="1" strokeDasharray="2,2" strokeOpacity="0.5" />
+
+            {/* Dynamic Sensor Badge */}
+            <rect x="275" y="25" width="130" height="48" rx="3" fill="var(--surface)" stroke="var(--line)" />
+            <text x="283" y="40" fontSize="8" fill="var(--gray)" fontFamily="monospace">pH-Messsonde (Glaselektrode)</text>
+            <text x="283" y="55" fontSize="11" fontWeight="bold" fill="var(--ink)" fontFamily="monospace">
+              pH = {ph.toFixed(2)}
+            </text>
+            <text x="283" y="66" fontSize="7" fill="#16a34a" fontFamily="monospace">
+              Kapazität c={bufferCap.toFixed(2)} M
+            </text>
           </svg>
         );
       }
@@ -1918,535 +2022,1335 @@ export function UniversalInteractiveWorkbench({
       // 6. 化学：亲核取代反应能量图 (SN1 vs SN2)
       case "sn1sn2": {
         const isSN1 = paramA > 50;
+        const isProtisch = paramB > 50;
+
+        // SN1: two-step curve with carbocation intermediate minimum
+        // SN2: single-step concerted peak (Walden inversion)
         return (
           <svg className="w-full h-64 sm:h-72 rounded bg-[var(--paper-subtle)]/40 border border-[var(--line)]/50" viewBox="0 0 440 200">
+            {/* Axes */}
             <line x1="50" y1="170" x2="390" y2="170" stroke="var(--ink)" strokeWidth="1.5" />
             <line x1="50" y1="20" x2="50" y2="170" stroke="var(--ink)" strokeWidth="1.5" />
             <text x="45" y="30" textAnchor="end" fontSize="8" fill="var(--gray)" fontFamily="monospace">ΔG</text>
-            <text x="390" y="185" textAnchor="end" fontSize="8" fill="var(--gray)" fontFamily="monospace">Reaktionskoordinate</text>
+            <text x="390" y="185" textAnchor="end" fontSize="8" fill="var(--gray)" fontFamily="monospace">Reaktionskoordinate →</text>
 
             {isSN1 ? (
-              <path
-                d="M 60 140 Q 120 40 160 50 Q 200 60 220 90 Q 250 50 300 70 Q 340 90 380 150"
-                fill="none"
-                stroke="var(--accent)"
-                strokeWidth="2.5"
-              />
+              <g>
+                {/* Two peaks for SN1 */}
+                <path
+                  d="M 60 140 Q 110 35 150 45 Q 185 55 210 90 Q 235 55 270 65 Q 310 85 375 145"
+                  fill="none"
+                  stroke="var(--accent)"
+                  strokeWidth="2.5"
+                />
+                {/* Peak 1: TS1 (C-X cleavage) */}
+                <circle cx="150" cy="45" r="4" fill="#dc2626" />
+                <text x="150" y="37" textAnchor="middle" fontSize="7" fill="#dc2626" fontFamily="monospace">ÜG 1 [R···X]‡</text>
+
+                {/* Valley: Planar Carbokation Intermediat */}
+                <circle cx="210" cy="90" r="4.5" fill="#f59e0b" />
+                <text x="210" y="104" textAnchor="middle" fontSize="7" fontWeight="bold" fill="#b45309" fontFamily="monospace">
+                  C⁺ (planar)
+                </text>
+
+                {/* Peak 2: TS2 (Nu- attack) */}
+                <circle cx="270" cy="65" r="4" fill="#dc2626" />
+                <text x="270" y="57" textAnchor="middle" fontSize="7" fill="#dc2626" fontFamily="monospace">ÜG 2 [Nu···C]‡</text>
+
+                {/* Stereochemistry Annotation */}
+                <text x="375" y="135" textAnchor="end" fontSize="8" fill="#16a34a" fontWeight="bold" fontFamily="monospace">
+                  50:50 Racemisierung
+                </text>
+              </g>
             ) : (
-              <path
-                d="M 60 140 Q 180 30 220 35 Q 260 40 380 150"
-                fill="none"
-                stroke="#0284c7"
-                strokeWidth="2.5"
-              />
+              <g>
+                {/* Single peak for SN2 */}
+                <path
+                  d="M 60 140 Q 190 25 220 30 Q 250 35 375 145"
+                  fill="none"
+                  stroke="#0284c7"
+                  strokeWidth="2.5"
+                />
+                {/* Single TS: Trigonal bipyramidal pentacoordinate */}
+                <circle cx="220" cy="30" r="5" fill="#0284c7" />
+                <text x="220" y="22" textAnchor="middle" fontSize="8" fontWeight="bold" fill="#0284c7" fontFamily="monospace">
+                  ÜG [Nu···C···X]‡ (5-fach koordiniert)
+                </text>
+
+                {/* Stereochemistry Annotation */}
+                <text x="375" y="135" textAnchor="end" fontSize="8" fill="#0284c7" fontWeight="bold" fontFamily="monospace">
+                  Walden-Inversion (100%)
+                </text>
+              </g>
             )}
 
-            <rect x="280" y="25" width="105" height="35" rx="3" fill="var(--surface)" stroke="var(--line)" />
-            <text x="332" y="39" textAnchor="middle" fontSize="8" fill="var(--gray)" fontFamily="monospace">Pfad</text>
-            <text x="332" y="52" textAnchor="middle" fontSize="9" fontWeight="bold" fill="var(--ink)" fontFamily="monospace">{data.rateValue}</text>
-            <text x="220" y="160" textAnchor="middle" fontSize="8" fill="var(--gray)" fontFamily="monospace">{data.subValue}</text>
+            {/* Readout badge */}
+            <rect x="275" y="32" width="135" height="42" rx="3" fill="var(--surface)" stroke="var(--line)" />
+            <text x="283" y="47" fontSize="9" fontWeight="bold" fill="var(--ink)" fontFamily="monospace">
+              {isSN1 ? "S_N1: Tertiär (3°)" : "S_N2: Primär (1°)"}
+            </text>
+            <text x="283" y="61" fontSize="7" fill="var(--gray)" fontFamily="monospace">
+              Lösungsmittel: {isProtisch ? "Polar protisch" : "Polar aprotisch"}
+            </text>
           </svg>
         );
       }
 
       // 7. 化学：聚合反应链增长 (Polymerisation)
       case "polymerisation": {
-        const units = Math.min(10, Math.round(data.graphY / 10));
+        // paramA controls conversion % (chain length), paramB controls initiator concentration
+        const monomerConversion = paramA; // 0 to 100%
+        // High initiator => more radicals but shorter individual chains!
+        const visibleUnits = Math.min(10, Math.max(1, Math.round((monomerConversion / 100) * 10)));
+        const dpVal = Math.round(100 + paramA * 50);
+
         return (
           <svg className="w-full h-64 sm:h-72 rounded bg-[var(--paper-subtle)]/40 border border-[var(--line)]/50" viewBox="0 0 440 200">
-            <text x="220" y="35" textAnchor="middle" fontSize="10" fill="var(--ink)" fontWeight="bold" fontFamily="monospace">
-              Radikal-Kettenwachstum: [ - CH₂ - CH(Ph) - ]ₙ
+            <text x="220" y="30" textAnchor="middle" fontSize="10" fill="var(--ink)" fontWeight="bold" fontFamily="monospace">
+              Radikalkettenpolymerisation: [ - CH₂ - CH(R) - ]ₙ
             </text>
-            <circle cx="60" cy="100" r="14" fill="#ef4444" />
-            <text x="60" y="104" textAnchor="middle" fontSize="9" fill="white" fontWeight="bold" fontFamily="monospace">R•</text>
-            {Array.from({ length: Math.max(1, units) }).map((_, i) => (
+
+            {/* Initiator Radical */}
+            <circle cx="50" cy="100" r="13" fill="#ef4444" />
+            <text x="50" y="104" textAnchor="middle" fontSize="9" fill="white" fontWeight="bold" fontFamily="monospace">R•</text>
+
+            {/* Growing Monomer Chain Units */}
+            {Array.from({ length: visibleUnits }).map((_, i) => (
               <g key={i}>
-                <line x1={74 + i * 32} y1="100" x2={90 + i * 32} y2="100" stroke="var(--ink)" strokeWidth="2.5" />
-                <rect x={90 + i * 32} y="86" width="24" height="28" rx="3" fill="#0284c7" fillOpacity="0.8" />
-                <text x={102 + i * 32} y="103" textAnchor="middle" fontSize="8" fill="white" fontFamily="monospace">M</text>
+                <line x1={63 + i * 32} y1="100" x2={78 + i * 32} y2="100" stroke="var(--ink)" strokeWidth="2.5" />
+                <rect x={78 + i * 32} y="85" width="24" height="30" rx="3" fill="#0284c7" fillOpacity="0.85" />
+                <text x={90 + i * 32} y="103" textAnchor="middle" fontSize="8" fill="white" fontWeight="bold" fontFamily="monospace">
+                  M
+                </text>
               </g>
             ))}
-            <line x1={74 + units * 32} y1="100" x2={90 + units * 32} y2="100" stroke="var(--ink)" strokeWidth="2.5" strokeDasharray="2,2" />
-            <circle cx={98 + units * 32} cy="100" r="5" fill="#ef4444" />
-            <rect x="140" y="145" width="160" height="35" rx="3" fill="var(--surface)" stroke="var(--line)" />
-            <text x="220" y="159" textAnchor="middle" fontSize="8" fill="var(--gray)" fontFamily="monospace">Mittlerer Polymerisationsgrad</text>
-            <text x="220" y="172" textAnchor="middle" fontSize="10" fontWeight="bold" fill="var(--accent)" fontFamily="monospace">{data.rateValue}</text>
+
+            {/* Active chain end radical */}
+            <line x1={63 + visibleUnits * 32} y1="100" x2={78 + visibleUnits * 32} y2="100" stroke="var(--ink)" strokeWidth="2.5" strokeDasharray="2,2" />
+            <circle cx={85 + visibleUnits * 32} cy="100" r="5" fill="#ef4444" />
+            <text x={85 + visibleUnits * 32} y="88" textAnchor="middle" fontSize="8" fill="#ef4444" fontWeight="bold" fontFamily="monospace">
+              • (aktiv)
+            </text>
+
+            {/* Stats Card */}
+            <rect x="130" y="145" width="180" height="42" rx="3" fill="var(--surface)" stroke="var(--line)" />
+            <text x="220" y="159" textAnchor="middle" fontSize="8" fill="var(--gray)" fontFamily="monospace">
+              Polymerisationsgrad P_n = {dpVal}
+            </text>
+            <text x="220" y="174" textAnchor="middle" fontSize="10" fontWeight="bold" fill="var(--accent)" fontFamily="monospace">
+              M_n = {(dpVal * 0.104).toFixed(1)} kg/mol
+            </text>
           </svg>
         );
       }
 
       // 8. 化学：配合物深蓝光谱 (Komplexchemie)
       case "komplex": {
-        const tetra = paramB > 40;
+        const nh3Amount = paramB * 0.1; // 0 to 10 mL
+        const isTetra = paramB > 40;
+        const cuConc = +(0.01 + (paramA / 100) * 0.2).toFixed(2);
+
+        // Cuvette liquid color transitions from light cyan to royal dark navy blue
+        const cuvetteBlue = isTetra ? "#1e3a8a" : "#38bdf8";
+        const cuvetteOpacity = 0.3 + (paramA / 100) * 0.4 + (paramB / 100) * 0.3;
+
+        // Absorbance spectrum peak shifts bathochromically from 800nm (cyan) to 610nm (deep blue)
+        const peakX = isTetra ? 285 : 345;
+        const peakH = 40 + (paramA / 100) * 45;
+
         return (
           <svg className="w-full h-64 sm:h-72 rounded bg-[var(--paper-subtle)]/40 border border-[var(--line)]/50" viewBox="0 0 440 200">
-            <rect x="70" y="40" width="80" height="120" rx="4" fill="var(--paper-subtle)" stroke="var(--ink)" strokeWidth="1.8" />
-            <rect x="72" y="60" width="76" height="98" fill={tetra ? "#1e3a8a" : "#38bdf8"} fillOpacity={tetra ? 0.9 : 0.4} />
-            <text x="110" y="175" textAnchor="middle" fontSize="8" fill="var(--gray)" fontFamily="monospace">Küvette</text>
+            {/* Photometer Cuvette */}
+            <rect x="55" y="40" width="85" height="120" rx="4" fill="var(--paper-subtle)" stroke="var(--ink)" strokeWidth="1.8" />
+            <rect x="57" y="60" width="81" height="98" fill={cuvetteBlue} fillOpacity={Math.min(0.95, cuvetteOpacity)} />
+            <text x="97" y="175" textAnchor="middle" fontSize="8" fill="var(--gray)" fontFamily="monospace">
+              Photometer-Küvette
+            </text>
+            <text x="97" y="110" textAnchor="middle" fontSize="9" fontWeight="bold" fill="white" fontFamily="monospace">
+              {isTetra ? "[Cu(NH₃)₄]²⁺" : "[Cu(H₂O)₆]²⁺"}
+            </text>
 
-            <rect x="200" y="40" width="190" height="120" rx="4" fill="var(--surface)" stroke="var(--line)" />
-            <line x1="220" y1="140" x2="370" y2="140" stroke="var(--ink)" strokeWidth="1" />
-            <line x1="220" y1="50" x2="220" y2="140" stroke="var(--ink)" strokeWidth="1" />
-            <text x="220" y="45" fontSize="7" fill="var(--gray)" fontFamily="monospace">Extinktion</text>
-            <text x="370" y="150" fontSize="7" fill="var(--gray)" fontFamily="monospace">Wellenlänge λ</text>
+            {/* Spectrophotometer Absorption Spectrum */}
+            <rect x="180" y="35" width="220" height="130" rx="4" fill="var(--surface)" stroke="var(--line)" />
+            <line x1="205" y1="140" x2="380" y2="140" stroke="var(--ink)" strokeWidth="1" />
+            <line x1="205" y1="45" x2="205" y2="140" stroke="var(--ink)" strokeWidth="1" />
+            <text x="205" y="42" fontSize="7" fill="var(--gray)" fontFamily="monospace">Extinktion E</text>
+            <text x="380" y="152" fontSize="7" fill="var(--gray)" fontFamily="monospace">λ (nm)</text>
 
-            {tetra ? (
-              <path d="M 230 135 Q 290 55 350 135" fill="none" stroke="#1e3a8a" strokeWidth="2.5" />
-            ) : (
-              <path d="M 230 135 Q 350 95 365 70" fill="none" stroke="#38bdf8" strokeWidth="2.5" />
-            )}
-            <text x="295" y="70" textAnchor="middle" fontSize="9" fontWeight="bold" fill="var(--ink)" fontFamily="monospace">{data.rateValue}</text>
+            {/* Dynamic Absorption Peak Curve */}
+            <path
+              d={`M 215 138 Q ${peakX - 35} 135 ${peakX} ${140 - peakH} Q ${peakX + 35} 135 375 138`}
+              fill="none"
+              stroke={cuvetteBlue}
+              strokeWidth="2.5"
+            />
+            <circle cx={peakX} cy={140 - peakH} r="4" fill="#dc2626" />
+            <text x={peakX} y={130 - peakH} textAnchor="middle" fontSize="8" fontWeight="bold" fill="#dc2626" fontFamily="monospace">
+              λmax = {isTetra ? "610 nm" : "800 nm"}
+            </text>
+
+            {/* Cuvette details badge */}
+            <text x="290" y="160" textAnchor="middle" fontSize="8" fill="var(--ink)" fontFamily="monospace">
+              NH₃: {nh3Amount.toFixed(1)} mL | [Cu²⁺]: {cuConc} M
+            </text>
           </svg>
         );
       }
 
       // 9. 生物：细胞呼吸线粒体 (Zellatmung)
       case "zellatmung": {
+        const atpVal = Math.min(32, Math.round((paramA / 100) * (paramB / 100) * 32));
+        const pO2 = paramA;
+        const glucose = paramB;
+        // Proton gradient across inner membrane (H+ dots)
+        const protonCount = Math.max(3, Math.round((atpVal / 32) * 16));
+        const atpProducedCount = Math.max(1, Math.round((atpVal / 32) * 12));
+
         return (
           <svg className="w-full h-64 sm:h-72 rounded bg-[var(--paper-subtle)]/40 border border-[var(--line)]/50" viewBox="0 0 440 200">
-            <ellipse cx="220" cy="100" rx="190" ry="85" fill="none" stroke="var(--ink)" strokeWidth="2" strokeDasharray="5,2" />
+            {/* Outer Membrane */}
+            <ellipse cx="220" cy="100" rx="195" ry="85" fill="none" stroke="var(--ink)" strokeWidth="1.8" />
+            <text x="55" y="45" fontSize="7" fill="var(--gray)" fontFamily="monospace">Äußere Membran</text>
+
+            {/* Inner Membrane with Cristae Folds */}
             <path
-              d="M 50 100 C 70 50, 110 50, 130 90 C 150 130, 180 60, 210 95 C 240 130, 270 50, 300 90 C 330 130, 370 70, 390 100 C 370 140, 330 140, 300 115 C 270 90, 240 150, 210 115 C 180 80, 150 150, 130 115 C 110 80, 70 150, 50 100 Z"
+              d="M 55 100 C 70 45, 105 45, 125 85 C 145 125, 175 60, 205 95 C 235 130, 265 50, 295 90 C 325 130, 365 70, 385 100 C 365 135, 325 135, 295 110 C 265 85, 235 145, 205 110 C 175 75, 145 145, 125 110 C 105 75, 70 145, 55 100 Z"
               fill="#fed7aa"
-              fillOpacity="0.4"
+              fillOpacity={0.25 + (atpVal / 32) * 0.4}
               stroke="#ea580c"
               strokeWidth="2"
             />
-            <text x="220" y="60" textAnchor="middle" fontSize="9" fill="#9a3412" fontFamily="monospace">Mitochondrien-Matrix</text>
-            <circle cx="220" cy="105" r="16" fill="#facc15" stroke="var(--ink)" strokeWidth="1.5" />
-            <text x="220" y="108" textAnchor="middle" fontSize="8" fontWeight="bold" fill="#78350f" fontFamily="monospace">ATP-Syn</text>
-            <rect x="150" y="155" width="140" height="30" rx="3" fill="var(--surface)" stroke="var(--line)" />
-            <text x="220" y="174" textAnchor="middle" fontSize="10" fontWeight="bold" fill="var(--accent)" fontFamily="monospace">{data.rateValue}</text>
+            <text x="220" y="58" textAnchor="middle" fontSize="9" fontWeight="bold" fill="#9a3412" fontFamily="monospace">
+              Mitochondrien-Matrix (Citratzyklus)
+            </text>
+
+            {/* Dynamic H+ protons in intermembrane space */}
+            {Array.from({ length: protonCount }).map((_, i) => (
+              <text key={i} x={75 + (i * 22) % 300} y={32 + (i % 2) * 12} fontSize="7" fill="#dc2626" fontWeight="bold" fontFamily="monospace">
+                H⁺
+              </text>
+            ))}
+
+            {/* ATP-Synthase Complex */}
+            <circle cx="220" cy="105" r="14" fill="#facc15" stroke="var(--ink)" strokeWidth="1.5" />
+            <rect x="216" y="90" width="8" height="15" fill="#ca8a04" />
+            <text x="220" y="108" textAnchor="middle" fontSize="7" fontWeight="bold" fill="#78350f" fontFamily="monospace">ATP-Syn</text>
+
+            {/* Output ATP particles */}
+            {Array.from({ length: atpProducedCount }).map((_, i) => (
+              <text key={i} x={155 + (i % 4) * 35} y={135 + Math.floor(i / 4) * 14} fontSize="8" fill="#16a34a" fontWeight="bold" fontFamily="monospace">
+                ATP
+              </text>
+            ))}
+
+            {/* Readout Badge */}
+            <rect x="285" y="145" width="140" height="42" rx="3" fill="var(--surface)" stroke="var(--line)" />
+            <text x="355" y="159" textAnchor="middle" fontSize="8" fill="var(--gray)" fontFamily="monospace">
+              pO₂: {pO2}% | Glu: {glucose} mM
+            </text>
+            <text x="355" y="176" textAnchor="middle" fontSize="10" fontWeight="bold" fill="var(--accent)" fontFamily="monospace">
+              {data.rateValue} ({data.subValue})
+            </text>
           </svg>
         );
       }
 
       // 10. 生物：米氏酶动力学 (Enzymkinetik)
       case "enzym": {
+        const sVal = 0.1 + (paramA / 100) * 9.9; // 0.1 to 10.0 mmol/L
+        const vmax = 100;
+        const isComp = paramB > 50;
+        const km = isComp ? 2.5 + ((paramB - 50) / 50) * 5.0 : 2.5;
+        const vVal = (vmax * sVal) / (km + sVal);
+
+        // SVG mappings: [S] in [0, 10] -> X in [60, 390], v in [0, 110] -> Y in [165, 35]
+        const mapX = (s: number) => 60 + (s / 10) * 330;
+        const mapY = (v: number) => 165 - (v / 110) * 130;
+
+        // Path for baseline without inhibitor (Km = 2.5)
+        const basePts: string[] = [];
+        // Path for actual curve (with potential inhibitor)
+        const actualPts: string[] = [];
+        for (let i = 0; i <= 40; i++) {
+          const s = (i / 40) * 10;
+          const vBase = (vmax * s) / (2.5 + s);
+          const vAct = (vmax * s) / (km + s);
+          basePts.push(`${i === 0 ? "M" : "L"} ${mapX(s).toFixed(1)} ${mapY(vBase).toFixed(1)}`);
+          actualPts.push(`${i === 0 ? "M" : "L"} ${mapX(s).toFixed(1)} ${mapY(vAct).toFixed(1)}`);
+        }
+
+        const currentSx = mapX(sVal);
+        const currentSy = mapY(vVal);
+
         return (
           <svg className="w-full h-64 sm:h-72 rounded bg-[var(--paper-subtle)]/40 border border-[var(--line)]/50" viewBox="0 0 440 200">
-            <line x1="50" y1="170" x2="390" y2="170" stroke="var(--ink)" strokeWidth="1.5" />
-            <line x1="50" y1="20" x2="50" y2="170" stroke="var(--ink)" strokeWidth="1.5" />
-            <line x1="50" y1="50" x2="390" y2="50" stroke="var(--gray)" strokeWidth="1" strokeDasharray="3,3" />
-            <text x="390" y="45" textAnchor="end" fontSize="8" fill="var(--gray)" fontFamily="monospace">v_max</text>
-            <line x1="50" y1="110" x2="390" y2="110" stroke="var(--gray)" strokeWidth="1" strokeDasharray="3,3" />
-            <text x="45" y="113" textAnchor="end" fontSize="8" fill="var(--gray)" fontFamily="monospace">½ v_max</text>
+            {/* Coordinate Grid */}
+            <line x1="50" y1="165" x2="400" y2="165" stroke="var(--ink)" strokeWidth="1.5" />
+            <line x1="60" y1="20" x2="60" y2="165" stroke="var(--ink)" strokeWidth="1.5" />
+            <text x="405" y="169" fontSize="9" fill="var(--ink)" fontFamily="monospace">[S]</text>
+            <text x="52" y="24" fontSize="9" fill="var(--ink)" fontFamily="monospace">v</text>
 
-            <path
-              d="M 50 170 Q 120 70 390 55"
-              fill="none"
-              stroke="var(--accent)"
-              strokeWidth="2.5"
-            />
-            <circle cx={50 + (paramA / 100) * 320} cy={170 - (data.graphY / 100) * 115} r="6" fill="var(--accent)" stroke="var(--paper)" strokeWidth="2" />
-            <text x="280" y="140" textAnchor="middle" fontSize="9" fontWeight="bold" fill="var(--ink)" fontFamily="monospace">{data.rateValue}</text>
-            <text x="280" y="155" textAnchor="middle" fontSize="8" fill="var(--gray)" fontFamily="monospace">{data.subValue}</text>
+            {/* Asymptote vmax */}
+            <line x1="60" y1={mapY(vmax)} x2="400" y2={mapY(vmax)} stroke="var(--gray)" strokeWidth="1" strokeDasharray="3,3" />
+            <text x="395" y={mapY(vmax) - 4} textAnchor="end" fontSize="8" fill="var(--gray)" fontFamily="monospace">v_max = 100</text>
+
+            {/* Half vmax line */}
+            <line x1="60" y1={mapY(vmax / 2)} x2="400" y2={mapY(vmax / 2)} stroke="var(--gray)" strokeWidth="1" strokeDasharray="2,2" strokeOpacity="0.5" />
+            <text x="52" y={mapY(vmax / 2) + 3} textAnchor="end" fontSize="8" fill="var(--gray)" fontFamily="monospace">½ v_max</text>
+
+            {/* Reference curve (uninhibited) if inhibitor present */}
+            {isComp && (
+              <g>
+                <path d={basePts.join(" ")} fill="none" stroke="var(--gray)" strokeWidth="1.5" strokeDasharray="3,3" strokeOpacity="0.7" />
+                <text x="340" y={mapY((vmax * 8) / (2.5 + 8)) - 6} fontSize="7" fill="var(--gray)" fontFamily="monospace">Ohne Hemmstoff</text>
+              </g>
+            )}
+
+            {/* Active reaction curve */}
+            <path d={actualPts.join(" ")} fill="none" stroke="var(--accent)" strokeWidth="2.5" />
+
+            {/* Current operating point */}
+            <circle cx={currentSx} cy={currentSy} r="5" fill="var(--accent)" stroke="var(--paper)" strokeWidth="2" />
+            <line x1={currentSx} y1={currentSy} x2={currentSx} y2="165" stroke="var(--accent)" strokeWidth="1" strokeDasharray="2,2" strokeOpacity="0.5" />
+
+            {/* Km marker on axis */}
+            <line x1={mapX(km)} y1="162" x2={mapX(km)} y2="168" stroke="#dc2626" strokeWidth="2" />
+            <text x={mapX(km)} y="178" textAnchor="middle" fontSize="8" fontWeight="bold" fill="#dc2626" fontFamily="monospace">
+              Km={km.toFixed(1)}
+            </text>
+
+            {/* Readout Badge */}
+            <rect x="75" y="30" width="135" height="46" rx="3" fill="var(--surface)" stroke="var(--line)" />
+            <text x="83" y="45" fontSize="9" fontWeight="bold" fill="var(--accent)" fontFamily="monospace">
+              v = {vVal.toFixed(1)} μmol/min
+            </text>
+            <text x="83" y="58" fontSize="8" fill="var(--ink)" fontFamily="monospace">
+              [S] = {sVal.toFixed(1)} mM
+            </text>
+            <text x="83" y="69" fontSize="7" fill={isComp ? "#dc2626" : "var(--gray)"} fontFamily="monospace">
+              {isComp ? "● 竞争性抑制生效 (Km ↑)" : "未受抑制 (Km = 2.5)"}
+            </text>
           </svg>
         );
       }
 
-      // 11. 生物：孟德尔 9:3:3:1 棋盘与表型分布沙盒
-      case "genetik": {
-        const nSamen = Math.round(16 + (paramA / 100) * 984);
-        const rRate = (paramB / 100) * 0.5; // 0 to 0.5
-        const fracYR = 0.5 + 0.25 * (1 - 2 * rRate) + (2 * rRate * 0.0625);
-        const fracyR = rRate * 0.375;
-        const fracYr = rRate * 0.375;
-        const fracyr = Math.max(0.01, 1 - fracYR - fracyR - fracYr);
-
-        const seeds = Array.from({ length: 16 }).map((_, i) => {
-          const pseudo = (Math.sin(i * 12.9898 + paramA * 0.05 + paramB * 0.08) * 43758.5453) % 1;
-          const val = Math.abs(pseudo);
-          if (val < fracYR) {
-            return { color: "yellow", icon: "🟡", isWrinkled: false };
-          } else if (val < fracYR + fracyR) {
-            return { color: "green", icon: "🟢", isWrinkled: false };
-          } else if (val < fracYR + fracyR + fracYr) {
-            return { color: "yellow", icon: "🟡", isWrinkled: true };
-          } else {
-            return { color: "green", icon: "🟢", isWrinkled: true };
-          }
-        });
-
-        const countYR = Math.round(nSamen * fracYR);
-        const countyR = Math.round(nSamen * fracyR);
-        const countYr = Math.round(nSamen * fracYr);
-        const countyr = Math.max(0, nSamen - countYR - countyR - countYr);
-
-        return (
-          <div className="flex flex-col gap-3 p-3 w-full bg-[var(--paper-subtle)]/40 rounded-lg border border-[var(--line)]">
-            <div className="flex items-center justify-between text-xs font-mono border-b border-[var(--line)] pb-1.5">
-              <span className="font-bold text-[var(--ink)]">
-                {de ? "F2-Stichprobe & Phänotypen-Schale" : "F2 代杂交种培养皿样本观察"}
-              </span>
-              <span className="text-[var(--accent)] font-bold">
-                N = {nSamen} Samen ({de ? "Rekombination" : "重组率"}: {(rRate * 100).toFixed(1)}%)
-              </span>
-            </div>
-
-            {/* 动态 16 粒种子培养皿网格 (随着滑块拖动实时变换性状外观) */}
-            <div className="grid grid-cols-8 gap-1.5 justify-center py-1">
-              {seeds.map((s, idx) => (
-                <div
-                  key={idx}
-                  className={`flex flex-col items-center justify-center p-1.5 rounded-lg border text-center transition-all duration-150 ${
-                    s.color === "green"
-                      ? "bg-emerald-50 dark:bg-emerald-950/30 border-emerald-300 dark:border-emerald-700"
-                      : "bg-amber-50 dark:bg-amber-950/30 border-amber-300 dark:border-amber-700"
-                  }`}
-                >
-                  <span className="text-base select-none">{s.icon}</span>
-                  <span className="text-[8px] font-mono font-semibold text-[var(--ink)]">
-                    {s.isWrinkled ? (de ? "runz." : "皱粒") : (de ? "rund" : "圆粒")}
-                  </span>
-                </div>
-              ))}
-            </div>
-
-            {/* 四类表型统计直方对比条 */}
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 pt-1 font-mono text-[11px]">
-              <div className="p-2 rounded bg-[var(--paper)] border border-[var(--line)]">
-                <div className="flex justify-between items-center text-[10px] text-[var(--gray)]">
-                  <span>🟡 {de ? "Gelb-Rund" : "黄圆"}</span>
-                  <span className="font-bold text-[var(--ink)]">{countYR}</span>
-                </div>
-                <div className="w-full bg-[var(--paper-subtle)] h-1.5 rounded-full overflow-hidden mt-1">
-                  <div className="bg-amber-400 h-full rounded-full" style={{ width: `${(fracYR * 100).toFixed(0)}%` }} />
-                </div>
-                <span className="text-[9px] text-[var(--gray)] block mt-0.5">{(fracYR * 100).toFixed(1)}% (9/16)</span>
-              </div>
-
-              <div className="p-2 rounded bg-[var(--paper)] border border-[var(--line)]">
-                <div className="flex justify-between items-center text-[10px] text-[var(--gray)]">
-                  <span>🟢 {de ? "Grün-Rund" : "绿圆"}</span>
-                  <span className="font-bold text-[var(--ink)]">{countyR}</span>
-                </div>
-                <div className="w-full bg-[var(--paper-subtle)] h-1.5 rounded-full overflow-hidden mt-1">
-                  <div className="bg-emerald-500 h-full rounded-full" style={{ width: `${(fracyR * 100).toFixed(0)}%` }} />
-                </div>
-                <span className="text-[9px] text-[var(--gray)] block mt-0.5">{(fracyR * 100).toFixed(1)}% (3/16)</span>
-              </div>
-
-              <div className="p-2 rounded bg-[var(--paper)] border border-[var(--line)]">
-                <div className="flex justify-between items-center text-[10px] text-[var(--gray)]">
-                  <span>🟡 {de ? "Gelb-Runz." : "黄皱"}</span>
-                  <span className="font-bold text-[var(--ink)]">{countYr}</span>
-                </div>
-                <div className="w-full bg-[var(--paper-subtle)] h-1.5 rounded-full overflow-hidden mt-1">
-                  <div className="bg-amber-600 h-full rounded-full" style={{ width: `${(fracYr * 100).toFixed(0)}%` }} />
-                </div>
-                <span className="text-[9px] text-[var(--gray)] block mt-0.5">{(fracYr * 100).toFixed(1)}% (3/16)</span>
-              </div>
-
-              <div className="p-2 rounded bg-[var(--paper)] border border-[var(--line)]">
-                <div className="flex justify-between items-center text-[10px] text-[var(--gray)]">
-                  <span>🟢 {de ? "Grün-Runz." : "绿皱"}</span>
-                  <span className="font-bold text-[var(--ink)]">{countyr}</span>
-                </div>
-                <div className="w-full bg-[var(--paper-subtle)] h-1.5 rounded-full overflow-hidden mt-1">
-                  <div className="bg-emerald-700 h-full rounded-full" style={{ width: `${(fracyr * 100).toFixed(0)}%` }} />
-                </div>
-                <span className="text-[9px] text-[var(--gray)] block mt-0.5">{(fracyr * 100).toFixed(1)}% (1/16)</span>
-              </div>
-            </div>
-          </div>
-        );
-      }
-
-      // 12. 生物：化学突触
+      // 12. 生物：化学突触 (Synapse)
       case "synapse": {
+        const achAmount = paramA; // 0 to 100% ACh
+        const toxinLevel = paramB; // 0 to 100% Curare/Toxin
+        const epsp = Math.max(0, +(15 * (achAmount / 100) * (1 - toxinLevel / 100)).toFixed(1));
+        const isTriggered = epsp > 10;
+
+        // Number of active ACh neurotransmitter dots in synaptic cleft
+        const achDotCount = Math.max(2, Math.round((achAmount / 100) * 14));
+        // Blocked receptors count
+        const blockedCount = Math.round((toxinLevel / 100) * 5);
+
         return (
           <svg className="w-full h-64 sm:h-72 rounded bg-[var(--paper-subtle)]/40 border border-[var(--line)]/50" viewBox="0 0 440 200">
-            <path d="M 50 20 L 50 140 C 90 140, 150 150, 180 150 C 210 150, 220 120, 220 20 Z" fill="#f8fafc" stroke="var(--ink)" strokeWidth="2" />
-            <text x="110" y="50" fontSize="10" fill="var(--ink)" fontWeight="bold" fontFamily="monospace">Präsynapse</text>
+            {/* Presynapse Button */}
+            <path d="M 40 20 L 40 145 C 90 145, 140 155, 175 155 C 205 155, 215 125, 215 20 Z" fill="#f8fafc" stroke="var(--ink)" strokeWidth="2" />
+            <text x="110" y="45" fontSize="10" fill="var(--ink)" fontWeight="bold" fontFamily="monospace">Präsynaptisches Endknöpfchen</text>
+
+            {/* Synaptic Vesicles with ACh */}
             {[
-              [100, 80],
-              [140, 95],
-              [120, 120],
-              [160, 125],
+              [90, 80], [130, 95], [110, 125], [155, 128], [175, 105],
             ].map(([cx, cy], i) => (
-              <circle key={i} cx={cx} cy={cy} r="8" fill="#e0e7ff" stroke="#4f46e5" strokeWidth="1.5" />
+              <circle key={i} cx={cx} cy={cy} r="8.5" fill="#e0e7ff" stroke="#4f46e5" strokeWidth="1.5" />
             ))}
-            <rect x="220" y="20" width="30" height="160" fill="#f1f5f9" fillOpacity="0.6" />
-            {Array.from({ length: 8 }).map((_, i) => (
-              <circle key={i} cx={225 + (i % 3) * 8} cy={40 + i * 15} r="2.5" fill="#ef4444" />
+            <text x="115" y="105" fontSize="7" fill="#4f46e5" fontFamily="monospace">ACh-Vesikel</text>
+
+            {/* Synaptic Cleft with Released ACh molecules */}
+            <rect x="215" y="20" width="35" height="160" fill="#f1f5f9" fillOpacity="0.5" />
+            {Array.from({ length: achDotCount }).map((_, i) => (
+              <circle key={i} cx={222 + (i % 3) * 8} cy={35 + i * 10} r="2.8" fill="#16a34a" />
             ))}
-            <path d="M 250 20 L 250 180 L 400 180 L 400 20 Z" fill="#f8fafc" stroke="var(--ink)" strokeWidth="2" />
-            <text x="310" y="50" fontSize="10" fill="var(--ink)" fontWeight="bold" fontFamily="monospace">Postsynapse</text>
-            <path d={`M 280 120 Q 330 ${120 - data.graphY * 0.7} 380 120`} fill="none" stroke="var(--accent)" strokeWidth="2" />
-            <text x="330" y="145" textAnchor="middle" fontSize="9" fill="var(--accent)" fontWeight="bold" fontFamily="monospace">{data.rateValue}</text>
+
+            {/* Postsynapse Membrane with Receptors */}
+            <path d="M 250 20 L 250 180 L 410 180 L 410 20 Z" fill="#f8fafc" stroke="var(--ink)" strokeWidth="2" />
+            <text x="320" y="45" fontSize="10" fill="var(--ink)" fontWeight="bold" fontFamily="monospace">Postsynaptische Membran</text>
+
+            {/* 5 Nicotinic Receptors along postsynaptic cleft boundary */}
+            {Array.from({ length: 5 }).map((_, idx) => {
+              const ry = 60 + idx * 22;
+              const isBlocked = idx < blockedCount;
+              return (
+                <g key={idx}>
+                  <rect x="247" y={ry - 6} width="8" height="12" rx="2" fill={isBlocked ? "#dc2626" : "#22c55e"} />
+                  {isBlocked && (
+                    <text x="258" y={ry + 3} fontSize="6" fill="#dc2626" fontFamily="monospace">Curare</text>
+                  )}
+                </g>
+              );
+            })}
+
+            {/* Postsynaptic Depolarisation Wave */}
+            <path
+              d={`M 275 125 Q 330 ${125 - epsp * 4} 390 125`}
+              fill="none"
+              stroke={isTriggered ? "#16a34a" : "var(--accent)"}
+              strokeWidth="2.5"
+            />
+            <circle cx="330" cy={125 - epsp * 4} r="4.5" fill={isTriggered ? "#16a34a" : "var(--accent)"} />
+
+            {/* EPSP Readout Badge */}
+            <rect x="280" y="135" width="125" height="42" rx="3" fill="var(--surface)" stroke="var(--line)" />
+            <text x="342" y="150" textAnchor="middle" fontSize="9" fontWeight="bold" fill="var(--ink)" fontFamily="monospace">
+              EPSP = +{epsp} mV
+            </text>
+            <text x="342" y="165" textAnchor="middle" fontSize="7" fontWeight="bold" fill={isTriggered ? "#16a34a" : "#dc2626"} fontFamily="monospace">
+              {isTriggered ? "● AP AUSGELÖST (> -50mV)" : "○ Unterschwellig (Kein AP)"}
+            </text>
           </svg>
         );
       }
 
       // 13. 生物：捕食者猎物波动 (Raeuber-Beute)
       case "raeuber-beute": {
+        const tCycle = (paramA / 100) * 4 * Math.PI; // time progression
+        const capK = 50 + paramB; // carrying capacity K
+
+        // Prey and Predator curves over time window [0, 4*PI]
+        const preyPts: string[] = [];
+        const predPts: string[] = [];
+        for (let i = 0; i <= 60; i++) {
+          const t = (i / 60) * 4 * Math.PI;
+          const sx = 60 + (i / 60) * 330;
+          const preyVal = Math.max(10, 45 + 30 * Math.sin(t) * (capK / 100));
+          const predVal = Math.max(8, 28 + 22 * Math.sin(t - Math.PI / 2) * (capK / 100));
+          const syPrey = 165 - (preyVal / 90) * 125;
+          const syPred = 165 - (predVal / 90) * 125;
+          preyPts.push(`${i === 0 ? "M" : "L"} ${sx.toFixed(1)} ${syPrey.toFixed(1)}`);
+          predPts.push(`${i === 0 ? "M" : "L"} ${sx.toFixed(1)} ${syPred.toFixed(1)}`);
+        }
+
+        const currentPrey = Math.round(45 + 30 * Math.sin(tCycle) * (capK / 100));
+        const currentPred = Math.round(28 + 22 * Math.sin(tCycle - Math.PI / 2) * (capK / 100));
+        const curX = 60 + (paramA / 100) * 330;
+        const curYPrey = 165 - (currentPrey / 90) * 125;
+        const curYPred = 165 - (currentPred / 90) * 125;
+
         return (
           <svg className="w-full h-64 sm:h-72 rounded bg-[var(--paper-subtle)]/40 border border-[var(--line)]/50" viewBox="0 0 440 200">
-            <line x1="50" y1="170" x2="390" y2="170" stroke="var(--ink)" strokeWidth="1.5" />
-            <line x1="50" y1="20" x2="50" y2="170" stroke="var(--ink)" strokeWidth="1.5" />
-            <path
-              d="M 50 110 C 100 50, 150 50, 200 110 C 250 170, 300 170, 350 110 C 370 80, 385 80, 390 95"
-              fill="none"
-              stroke="#16a34a"
-              strokeWidth="2.5"
-            />
-            <path
-              d="M 50 150 C 120 150, 160 70, 210 70 C 260 70, 310 150, 360 150 C 380 150, 385 120, 390 100"
-              fill="none"
-              stroke="#dc2626"
-              strokeWidth="2.5"
-              strokeDasharray="4,2"
-            />
-            <text x="340" y="45" fontSize="8" fill="#16a34a" fontWeight="bold" fontFamily="monospace">― Beute (Hase)</text>
-            <text x="340" y="58" fontSize="8" fill="#dc2626" fontWeight="bold" fontFamily="monospace">--- Räuber (Luchs)</text>
-            <circle cx={50 + (paramA / 100) * 340} cy={170 - (data.graphY / 100) * 110} r="5" fill="#16a34a" />
+            {/* Coordinate Grid */}
+            <line x1="50" y1="165" x2="400" y2="165" stroke="var(--ink)" strokeWidth="1.5" />
+            <line x1="60" y1="20" x2="60" y2="165" stroke="var(--ink)" strokeWidth="1.5" />
+            <text x="405" y="169" fontSize="9" fill="var(--ink)" fontFamily="monospace">t</text>
+            <text x="52" y="24" fontSize="9" fill="var(--ink)" fontFamily="monospace">N</text>
+
+            {/* Carrying capacity K horizontal dashed line */}
+            <line x1="60" y1={165 - (capK / 150) * 125} x2="400" y2={165 - (capK / 150) * 125} stroke="var(--gray)" strokeWidth="1" strokeDasharray="3,3" strokeOpacity="0.6" />
+            <text x="395" y={165 - (capK / 150) * 125 - 4} textAnchor="end" fontSize="7" fill="var(--gray)" fontFamily="monospace">
+              Kapazität K = {Math.round(capK)}
+            </text>
+
+            {/* Prey Curve (Green) */}
+            <path d={preyPts.join(" ")} fill="none" stroke="#16a34a" strokeWidth="2.2" />
+
+            {/* Predator Curve (Red Dashed) */}
+            <path d={predPts.join(" ")} fill="none" stroke="#dc2626" strokeWidth="2.2" strokeDasharray="4,2" />
+
+            {/* Time Cursor Line */}
+            <line x1={curX} y1="25" x2={curX} y2="165" stroke="var(--ink)" strokeWidth="1" strokeDasharray="2,2" strokeOpacity="0.4" />
+
+            {/* Current Prey & Predator Marker Points */}
+            <circle cx={curX} cy={curYPrey} r="4.5" fill="#16a34a" />
+            <circle cx={curX} cy={curYPred} r="4.5" fill="#dc2626" />
+
+            {/* Legend & Current Densities */}
+            <rect x="70" y="26" width="145" height="46" rx="3" fill="var(--surface)" stroke="var(--line)" />
+            <text x="78" y="40" fontSize="8" fontWeight="bold" fill="#16a34a" fontFamily="monospace">
+              ― Beute: {currentPrey} Ind./ha
+            </text>
+            <text x="78" y="53" fontSize="8" fontWeight="bold" fill="#dc2626" fontFamily="monospace">
+              --- Räuber: {currentPred} Ind./ha
+            </text>
+            <text x="78" y="64" fontSize="7" fill="var(--gray)" fontFamily="monospace">
+              Phasenversatz Δφ = π/2
+            </text>
           </svg>
         );
       }
 
       // 14. 生物：PCR 变温曲线与电泳条带 (PCR)
       case "pcr": {
+        const cycles = Math.round(1 + (paramA / 100) * 34); // 1 to 35
+        const taq = paramB; // 0 to 100%
+        // Band brightness and thickness scales with cycles
+        const bandH = Math.min(16, Math.max(1, Math.round((cycles / 35) * 14 * (taq / 100))));
+        const bandOpacity = 0.2 + (cycles / 35) * 0.75 * (taq / 100);
+
         return (
           <svg className="w-full h-64 sm:h-72 rounded bg-[var(--paper-subtle)]/40 border border-[var(--line)]/50" viewBox="0 0 440 200">
-            <path d="M 50 140 L 90 40 L 130 40 L 160 120 L 200 120 L 230 85 L 270 85 L 300 140" fill="none" stroke="var(--accent)" strokeWidth="2.5" />
-            <text x="110" y="32" textAnchor="middle" fontSize="8" fill="#dc2626" fontFamily="monospace">95°C Denat.</text>
-            <text x="180" y="132" textAnchor="middle" fontSize="8" fill="#0284c7" fontFamily="monospace">55°C Anneal</text>
-            <text x="250" y="78" textAnchor="middle" fontSize="8" fill="#16a34a" fontFamily="monospace">72°C Elong.</text>
+            {/* Thermocycler Temperature Profile for 1 representative cycle */}
+            <text x="60" y="24" fontSize="9" fontWeight="bold" fill="var(--ink)" fontFamily="monospace">
+              Thermocycler-Profil (Zyklus {cycles}/35)
+            </text>
+            <path d="M 60 145 L 95 45 L 140 45 L 165 125 L 205 125 L 230 85 L 275 85 L 295 145" fill="none" stroke="var(--accent)" strokeWidth="2.5" />
+            <text x="117" y="38" textAnchor="middle" fontSize="8" fill="#dc2626" fontWeight="bold" fontFamily="monospace">95°C Denat.</text>
+            <text x="185" y="137" textAnchor="middle" fontSize="8" fill="#0284c7" fontWeight="bold" fontFamily="monospace">55°C Anneal</text>
+            <text x="252" y="78" textAnchor="middle" fontSize="8" fill="#16a34a" fontWeight="bold" fontFamily="monospace">72°C Elong.</text>
 
-            <rect x="330" y="30" width="80" height="135" rx="3" fill="#0f172a" />
-            <rect x="345" y="45" width="50" height="6" fill="#38bdf8" fillOpacity="0.4" />
-            <rect x="345" y="75" width="50" height={Math.min(12, Math.round(data.graphY * 0.12))} fill="#38bdf8" />
-            <rect x="345" y="115" width="50" height="4" fill="#38bdf8" fillOpacity="0.4" />
-            <text x="370" y="155" textAnchor="middle" fontSize="7" fill="#94a3b8" fontFamily="monospace">Gel-Bande</text>
+            {/* Agarose Gel Electrophoresis Tank */}
+            <rect x="320" y="25" width="95" height="145" rx="4" fill="#0f172a" stroke="var(--ink)" strokeWidth="1.5" />
+            <text x="367" y="38" textAnchor="middle" fontSize="8" fill="#94a3b8" fontFamily="monospace">Agarose-Gel</text>
+
+            {/* Well / Tasche */}
+            <rect x="340" y="44" width="50" height="5" fill="#334155" />
+
+            {/* DNA Ladder marker bands */}
+            <rect x="340" y="65" width="14" height="2" fill="#38bdf8" fillOpacity="0.4" />
+            <rect x="340" y="90" width="14" height="2" fill="#38bdf8" fillOpacity="0.4" />
+            <rect x="340" y="115" width="14" height="2" fill="#38bdf8" fillOpacity="0.4" />
+            <rect x="340" y="140" width="14" height="2" fill="#38bdf8" fillOpacity="0.4" />
+
+            {/* Target PCR Amplicon Band (Sample lane) */}
+            <rect
+              x="365"
+              y={95 - bandH / 2}
+              width="22"
+              height={bandH}
+              fill="#38bdf8"
+              fillOpacity={bandOpacity}
+              rx="1.5"
+            />
+            <text x="367" y="160" textAnchor="middle" fontSize="7" fill="#38bdf8" fontFamily="monospace">
+              Zielbande (500 bp)
+            </text>
+
+            {/* Yield Badge */}
+            <rect x="60" y="150" width="220" height="35" rx="3" fill="var(--surface)" stroke="var(--line)" />
+            <text x="170" y="164" textAnchor="middle" fontSize="8" fill="var(--gray)" fontFamily="monospace">
+              Taq-Aktivität: {taq}% | DNA-Ausbeute:
+            </text>
+            <text x="170" y="177" textAnchor="middle" fontSize="9" fontWeight="bold" fill="var(--accent)" fontFamily="monospace">
+              {data.rateValue}
+            </text>
           </svg>
         );
       }
 
       // 15. 生物：表观遗传核小体松紧 (Epigenetik)
       case "epigenetik": {
-        const aktiv = data.graphY > 50;
+        const methyl = paramA; // 0 to 100%
+        const acetyl = paramB; // 0 to 100%
+        const aktiv = Math.max(0, Math.min(100, Math.round(acetyl * 1.2 - methyl * 0.8)));
+        const isEuchromatin = aktiv > 50;
+
+        // Dynamic spacing and radius: open Euchromatin spreads apart (spacing 68px, r=16), closed Heterochromatin condenses (spacing 48px, r=22)
+        const spacing = 48 + (aktiv / 100) * 22;
+        const nucleosomeR = 24 - (aktiv / 100) * 8;
+        const centerX = 220;
+
         return (
           <svg className="w-full h-64 sm:h-72 rounded bg-[var(--paper-subtle)]/40 border border-[var(--line)]/50" viewBox="0 0 440 200">
-            <text x="220" y="35" textAnchor="middle" fontSize="10" fontWeight="bold" fill="var(--ink)" fontFamily="monospace">
-              {aktiv ? "Euchromatin (Aktiv / Zugänglich)" : "Heterochromatin (Kondensiert / Stumm)"}
+            <text x="220" y="32" textAnchor="middle" fontSize="10" fontWeight="bold" fill={isEuchromatin ? "#16a34a" : "#dc2626"} fontFamily="monospace">
+              {isEuchromatin ? "Euchromatin: Aufgelockert / Transkription aktiv" : "Heterochromatin: Kondensiert / Gen stummgeschaltet"}
             </text>
-            {[60, 140, 220, 300, 380].map((cx, i) => (
-              <g key={i}>
-                <circle cx={cx} cy="100" r={aktiv ? 18 : 25} fill="#fde047" stroke="#ca8a04" strokeWidth="2" />
-                <path d={`M ${cx - 25} 100 Q ${cx} 60 ${cx + 25} 100`} fill="none" stroke="var(--ink)" strokeWidth="2" />
+
+            {/* 5 Histone Octamer Nucleosomes with DNA wrapping */}
+            {[-2, -1, 0, 1, 2].map((idx) => {
+              const cx = centerX + idx * spacing;
+              const cy = 100;
+              return (
+                <g key={idx}>
+                  {/* Histone octamer core */}
+                  <circle cx={cx} cy={cy} r={nucleosomeR} fill="#fde047" stroke="#ca8a04" strokeWidth="2" />
+                  <text x={cx} y={cy + 3} textAnchor="middle" fontSize="7" fill="#78350f" fontFamily="monospace">Histon</text>
+
+                  {/* DNA strand wrapping around */}
+                  <path
+                    d={`M ${cx - nucleosomeR - 4} ${cy} Q ${cx} ${cy - nucleosomeR - 12} ${cx + nucleosomeR + 4} ${cy}`}
+                    fill="none"
+                    stroke="var(--ink)"
+                    strokeWidth="2.2"
+                  />
+
+                  {/* Epigenetic tag markers */}
+                  {acetyl > 30 && (
+                    <circle cx={cx} cy={cy - nucleosomeR - 6} r="3" fill="#16a34a" />
+                  )}
+                  {methyl > 30 && (
+                    <circle cx={cx} cy={cy + nucleosomeR + 6} r="3" fill="#dc2626" />
+                  )}
+                </g>
+              );
+            })}
+
+            {/* RNA Polymerase binding if Euchromatin */}
+            {isEuchromatin && (
+              <g>
+                <ellipse cx={centerX} cy="62" rx="18" ry="11" fill="#38bdf8" fillOpacity="0.8" stroke="var(--ink)" strokeWidth="1.5" />
+                <text x={centerX} y="65" textAnchor="middle" fontSize="7" fontWeight="bold" fill="#0369a1" fontFamily="monospace">
+                  RNA-Pol II
+                </text>
               </g>
-            ))}
-            <rect x="140" y="150" width="160" height="30" rx="3" fill="var(--surface)" stroke="var(--line)" />
-            <text x="220" y="169" textAnchor="middle" fontSize="9" fontWeight="bold" fill="var(--accent)" fontFamily="monospace">{data.rateValue}</text>
+            )}
+
+            {/* Chemical Tag Legend & Transkriptionsrate */}
+            <rect x="70" y="145" width="300" height="42" rx="3" fill="var(--surface)" stroke="var(--line)" />
+            <text x="220" y="160" textAnchor="middle" fontSize="8" fill="var(--gray)" fontFamily="monospace">
+              Methylierung (CpG): {methyl}% | Acetylierung (H3K9ac): {acetyl}%
+            </text>
+            <text x="220" y="176" textAnchor="middle" fontSize="10" fontWeight="bold" fill="var(--accent)" fontFamily="monospace">
+              Transkriptionsrate: {data.rateValue}
+            </text>
           </svg>
         );
       }
 
       // 16. 生物：温带湖泊温跃层 (See-Ökologie)
       case "see": {
+        const seasonVal = paramA; // 0 to 100 (Spring, Summer, Autumn, Winter)
+        const eutrophVal = paramB; // 0 to 100%
+        const isSummer = seasonVal >= 25 && seasonVal < 50;
+        const isWinter = seasonVal >= 75;
+
+        // Profile temperature path:
+        // Summer: Epilimnion 20°C -> Metalimnion sharp drop -> Hypolimnion 4°C
+        // Spring/Autumn: Homogenous 4-10°C full circulation
+        // Winter: Inversion 0°C surface ice -> 4°C bottom
+        const tempPath = isSummer
+          ? "M 380 35 C 380 65, 320 80, 320 155"
+          : isWinter
+          ? "M 315 35 C 315 50, 325 80, 325 155"
+          : "M 340 35 L 340 155";
+
         return (
           <svg className="w-full h-64 sm:h-72 rounded bg-[var(--paper-subtle)]/40 border border-[var(--line)]/50" viewBox="0 0 440 200">
-            <rect x="50" y="25" width="220" height="40" fill="#bae6fd" />
-            <text x="160" y="48" textAnchor="middle" fontSize="9" fill="#0369a1" fontFamily="monospace">Epilimnion (20°C)</text>
-            <rect x="50" y="65" width="220" height="35" fill="#7dd3fc" />
-            <text x="160" y="86" textAnchor="middle" fontSize="9" fontWeight="bold" fill="#0284c7" fontFamily="monospace">Metalimnion / Sprungschicht</text>
-            <rect x="50" y="100" width="220" height="65" fill="#38bdf8" fillOpacity="0.4" />
-            <text x="160" y="138" textAnchor="middle" fontSize="9" fill="#0284c7" fontFamily="monospace">Hypolimnion (4°C)</text>
+            {/* Lake water strata layers */}
+            {/* Layer 1: Epilimnion (Surface) */}
+            <rect x="50" y="25" width="220" height="45" fill={isSummer ? "#bae6fd" : isWinter ? "#e0f2fe" : "#7dd3fc"} />
+            <text x="160" y="50" textAnchor="middle" fontSize="9" fontWeight="bold" fill="#0369a1" fontFamily="monospace">
+              {isSummer ? "Epilimnion (~20°C, lichtdurchflutet)" : isWinter ? "Eisdecke (0°C)" : "Deckschicht (Zirkulation)"}
+            </text>
 
-            <rect x="300" y="25" width="100" height="140" rx="3" fill="var(--surface)" stroke="var(--line)" />
-            <path d="M 380 35 C 380 65, 330 75, 330 150" fill="none" stroke="#ef4444" strokeWidth="2" />
-            <text x="350" y="155" textAnchor="middle" fontSize="8" fill="#ef4444" fontFamily="monospace">T-Profil</text>
+            {/* Layer 2: Metalimnion (Sprungschicht) */}
+            <rect x="50" y="70" width="220" height="35" fill={isSummer ? "#38bdf8" : "#7dd3fc"} />
+            <text x="160" y="92" textAnchor="middle" fontSize="9" fontWeight="bold" fill="#0284c7" fontFamily="monospace">
+              {isSummer ? "Metalimnion / Sprungschicht (ΔT=15°C)" : "Homogene Mischung"}
+            </text>
+
+            {/* Layer 3: Hypolimnion (Deep water) */}
+            <rect
+              x="50"
+              y="105"
+              width="220"
+              height="60"
+              fill={isSummer && eutrophVal > 50 ? "#334155" : "#0284c7"}
+              fillOpacity={isSummer && eutrophVal > 50 ? 0.85 : 0.4}
+            />
+            <text
+              x="160"
+              y="140"
+              textAnchor="middle"
+              fontSize="9"
+              fontWeight="bold"
+              fill={isSummer && eutrophVal > 50 ? "#f8fafc" : "#0284c7"}
+              fontFamily="monospace"
+            >
+              {isSummer && eutrophVal > 50 ? "Hypolimnion (Anaerob / Faulschlamm 4°C)" : "Hypolimnion (4°C, Dichteanomalie)"}
+            </text>
+
+            {/* Temperature Profile Graph Panel */}
+            <rect x="290" y="25" width="120" height="140" rx="3" fill="var(--surface)" stroke="var(--line)" />
+            <line x1="305" y1="155" x2="395" y2="155" stroke="var(--ink)" strokeWidth="1" />
+            <line x1="305" y1="35" x2="305" y2="155" stroke="var(--ink)" strokeWidth="1" />
+            <text x="305" y="30" fontSize="7" fill="var(--gray)" fontFamily="monospace">Tiefe (m)</text>
+            <text x="395" y="165" fontSize="7" fill="var(--gray)" fontFamily="monospace">T(°C)</text>
+
+            {/* Dynamic Temperature Curve */}
+            <path d={tempPath} fill="none" stroke="#ef4444" strokeWidth="2.5" />
+            <text x="350" y="55" fontSize="7" fill="#ef4444" fontWeight="bold" fontFamily="monospace">
+              T-Profil
+            </text>
+
+            {/* Current Season Badge */}
+            <text x="160" y="180" textAnchor="middle" fontSize="8" fill="var(--ink)" fontFamily="monospace">
+              {data.paramAValueDisplay} | Eutrophierung: {eutrophVal}%
+            </text>
           </svg>
         );
       }
 
       // 17. 数学：黎曼和梯形积分割矩形 (Integral)
       case "integral": {
-        const nBars = Math.min(24, Math.round(Number(data.paramAValueDisplay.slice(4)) || 8));
-        const dx = 240 / (nBars || 1);
+        const nBars = Math.max(2, Math.min(32, Math.round(2 + (paramA / 100) * 30)));
+        const bVal = 1.0 + (paramB / 100) * 3.0; // 1.0 to 4.0
+        // coordinate mapping: x from 0 to 4.5 -> SVG X 70 to 390 (width 320, scale = 320 / 4.5 = 71.1)
+        const originX = 70;
+        const originY = 165;
+        const scaleX = 70;
+        const scaleY = 135 / 16; // f(4) = 16, height 135
+        const bSvgX = originX + bVal * scaleX;
+        const dx = bVal / nBars;
+        const dxSvg = dx * scaleX;
+
+        // Path for f(x) = x^2
+        const curvePoints: string[] = [];
+        for (let i = 0; i <= 40; i++) {
+          const cx = (i / 40) * 4.2;
+          const cy = Math.pow(cx, 2);
+          const sx = originX + cx * scaleX;
+          const sy = originY - cy * scaleY;
+          curvePoints.push(`${i === 0 ? "M" : "L"} ${sx.toFixed(1)} ${sy.toFixed(1)}`);
+        }
+        const curvePath = curvePoints.join(" ");
+
         return (
           <svg className="w-full h-64 sm:h-72 rounded bg-[var(--paper-subtle)]/40 border border-[var(--line)]/50" viewBox="0 0 440 200">
-            <line x1="60" y1="170" x2="380" y2="170" stroke="var(--ink)" strokeWidth="1.5" />
-            <line x1="70" y1="20" x2="70" y2="170" stroke="var(--ink)" strokeWidth="1.5" />
+            {/* Coordinate grid */}
+            <line x1="50" y1={originY} x2="400" y2={originY} stroke="var(--ink)" strokeWidth="1.5" />
+            <line x1={originX} y1="15" x2={originX} y2="180" stroke="var(--ink)" strokeWidth="1.5" />
+            <text x="405" y={originY + 4} fontSize="9" fill="var(--ink)" fontFamily="monospace">x</text>
+            <text x={originX - 5} y="15" textAnchor="end" fontSize="9" fill="var(--ink)" fontFamily="monospace">y</text>
+
+            {/* Riemann lower sum rectangles */}
             {Array.from({ length: nBars }).map((_, i) => {
-              const xVal = (i / nBars) * 3;
-              const barH = (Math.pow(xVal, 2) / 9) * 125;
+              const xi = i * dx;
+              const barH = Math.pow(xi, 2) * scaleY;
+              const bx = originX + i * dxSvg;
+              const by = originY - barH;
               return (
                 <rect
                   key={i}
-                  x={70 + i * dx}
-                  y={170 - barH}
-                  width={dx - 1}
+                  x={bx}
+                  y={by}
+                  width={Math.max(1, dxSvg - 0.8)}
                   height={barH}
                   fill="var(--accent)"
-                  fillOpacity="0.3"
+                  fillOpacity="0.32"
                   stroke="var(--accent)"
                   strokeWidth="0.8"
                 />
               );
             })}
-            <path d="M 70 170 Q 190 165 310 45" fill="none" stroke="var(--ink)" strokeWidth="2.5" />
-            <text x="240" y="45" fontSize="10" fill="var(--ink)" fontWeight="bold" fontFamily="monospace">f(x) = x²</text>
-            <text x="310" y="182" fontSize="9" fill="var(--ink)" fontFamily="monospace">b = 3</text>
+
+            {/* Continuous curve f(x) = x^2 */}
+            <path d={curvePath} fill="none" stroke="var(--ink)" strokeWidth="2.2" />
+
+            {/* Boundary line x = b */}
+            <line x1={bSvgX} y1="20" x2={bSvgX} y2={originY} stroke="#dc2626" strokeWidth="1.5" strokeDasharray="3,3" />
+            <circle cx={bSvgX} cy={originY - Math.pow(bVal, 2) * scaleY} r="3.5" fill="#dc2626" />
+            <text x={bSvgX} y={originY + 14} textAnchor="middle" fontSize="9" fontWeight="bold" fill="#dc2626" fontFamily="monospace">
+              b={bVal.toFixed(1)}
+            </text>
+
+            {/* Info badge */}
+            <rect x="78" y="24" width="130" height="42" rx="3" fill="var(--surface)" stroke="var(--line)" />
+            <text x="86" y="39" fontSize="9" fontWeight="bold" fill="var(--ink)" fontFamily="monospace">f(x) = x²</text>
+            <text x="86" y="52" fontSize="8" fill="var(--accent)" fontFamily="monospace">{data.rateLabelZH}: {data.rateValue}</text>
+            <text x="86" y="62" fontSize="7" fill="var(--gray)" fontFamily="monospace">n={nBars} 阶梯矩形</text>
           </svg>
         );
       }
 
       // 18. 数学：三次多项式切线 (Kurvendiskussion)
       case "kurvendiskussion": {
-        const xPos = 220 + ((paramA - 50) / 50) * 120;
+        const xVal = (paramA - 50) / 15; // roughly -3.3 to +3.3
+        const yVal = Math.pow(xVal, 3) - 3 * xVal;
+        const slope = 3 * Math.pow(xVal, 2) - 3;
+
+        // Coordinate center (220, 100). scaleX: 1 unit = 50px, scaleY: 1 unit = 20px
+        const cx = 220;
+        const cy = 100;
+        const scaleX = 48;
+        const scaleY = 18;
+
+        const pX = cx + xVal * scaleX;
+        const pY = cy - yVal * scaleY;
+
+        // Tangent line segment through (xVal, yVal)
+        const tLen = 1.2; // span in x
+        const tX1 = cx + (xVal - tLen) * scaleX;
+        const tY1 = cy - (yVal - tLen * slope) * scaleY;
+        const tX2 = cx + (xVal + tLen) * scaleX;
+        const tY2 = cy - (yVal + tLen * slope) * scaleY;
+
+        // Plot f(x) = x^3 - 3x from x = -2.6 to 2.6
+        const pathPoints: string[] = [];
+        for (let i = 0; i <= 60; i++) {
+          const t = -2.6 + (i / 60) * 5.2;
+          const ft = Math.pow(t, 3) - 3 * t;
+          const sx = cx + t * scaleX;
+          const sy = cy - ft * scaleY;
+          pathPoints.push(`${i === 0 ? "M" : "L"} ${sx.toFixed(1)} ${sy.toFixed(1)}`);
+        }
+        const cubicPath = pathPoints.join(" ");
+
         return (
           <svg className="w-full h-64 sm:h-72 rounded bg-[var(--paper-subtle)]/40 border border-[var(--line)]/50" viewBox="0 0 440 200">
-            <line x1="50" y1="100" x2="390" y2="100" stroke="var(--ink)" strokeWidth="1" strokeOpacity="0.4" />
-            <line x1="220" y1="20" x2="220" y2="180" stroke="var(--ink)" strokeWidth="1" strokeOpacity="0.4" />
-            <path d="M 120 180 C 150 40, 180 40, 220 100 C 260 160, 290 160, 320 20" fill="none" stroke="var(--accent)" strokeWidth="2.5" />
-            <circle cx="160" cy="50" r="4" fill="#16a34a" />
-            <text x="160" y="42" textAnchor="middle" fontSize="8" fill="#16a34a" fontFamily="monospace">HP(-1|2)</text>
-            <circle cx="280" cy="150" r="4" fill="#dc2626" />
-            <text x="280" y="165" textAnchor="middle" fontSize="8" fill="#dc2626" fontFamily="monospace">TP(1|-2)</text>
-            <circle cx={xPos} cy={100 - ((data.graphY - 50) / 50) * 50} r="6" fill="var(--accent)" stroke="var(--paper)" strokeWidth="2" />
+            {/* Axes */}
+            <line x1="40" y1={cy} x2="400" y2={cy} stroke="var(--ink)" strokeWidth="1" strokeOpacity="0.4" />
+            <line x1={cx} y1="20" x2={cx} y2="180" stroke="var(--ink)" strokeWidth="1" strokeOpacity="0.4" />
+            <text x="405" y={cy + 4} fontSize="9" fill="var(--ink)" fontFamily="monospace">x</text>
+            <text x={cx + 6} y="22" fontSize="9" fill="var(--ink)" fontFamily="monospace">y</text>
+
+            {/* Static HP(-1, 2) and TP(1, -2) markers */}
+            <circle cx={cx - 1 * scaleX} cy={cy - 2 * scaleY} r="3.5" fill="#16a34a" />
+            <text x={cx - 1 * scaleX - 6} y={cy - 2 * scaleY - 6} textAnchor="end" fontSize="8" fill="#16a34a" fontFamily="monospace">HP(-1|2)</text>
+            <circle cx={cx + 1 * scaleX} cy={cy + 2 * scaleY} r="3.5" fill="#dc2626" />
+            <text x={cx + 1 * scaleX + 6} y={cy + 2 * scaleY + 12} fontSize="8" fill="#dc2626" fontFamily="monospace">TP(1|-2)</text>
+
+            {/* Curve */}
+            <path d={cubicPath} fill="none" stroke="var(--ink)" strokeWidth="2.2" strokeOpacity="0.8" />
+
+            {/* Dynamic Tangent Line */}
+            <line x1={tX1} y1={tY1} x2={tX2} y2={tY2} stroke="var(--accent)" strokeWidth="2.5" />
+
+            {/* Dynamic Point P */}
+            <circle cx={pX} cy={pY} r="5" fill="var(--accent)" stroke="var(--paper)" strokeWidth="2" />
+
+            {/* Dynamic Coordinates Box */}
+            <rect x="20" y="20" width="135" height="48" rx="3" fill="var(--surface)" stroke="var(--line)" />
+            <text x="28" y="35" fontSize="9" fontWeight="bold" fill="var(--ink)" fontFamily="monospace">
+              P({xVal.toFixed(1)} | {yVal.toFixed(2)})
+            </text>
+            <text x="28" y="49" fontSize="8" fill="var(--accent)" fontFamily="monospace">
+              Tangente m = {slope.toFixed(2)}
+            </text>
+            <text x="28" y="60" fontSize="7" fill="var(--gray)" fontFamily="monospace">
+              f''(x) = {(6 * xVal).toFixed(1)}
+            </text>
           </svg>
         );
       }
 
       // 19. 数学：函数族与轨迹曲线 (Funktionenscharen)
       case "funktionenschar": {
+        const k = 0.5 + (paramA / 100) * 4.5; // 0.5 to 5.0
+        const showOrtskurve = paramB > 40;
+
+        // Origin at (220, 100). scaleX: 1 unit = 65px, scaleY: 1 unit = 24px
+        const cx = 220;
+        const cy = 100;
+        const scaleX = 65;
+        const scaleY = 22;
+
+        // Extremum calculations: f_k(x) = x^3 - kx
+        // f'_k(x) = 3x^2 - k = 0 => x_HP = -sqrt(k/3), x_TP = sqrt(k/3)
+        const xHp = -Math.sqrt(k / 3);
+        const yHp = Math.pow(xHp, 3) - k * xHp; // = 2 * (k/3)^(3/2)
+        const xTp = Math.sqrt(k / 3);
+        const yTp = -yHp;
+
+        const hpSvgX = cx + xHp * scaleX;
+        const hpSvgY = cy - yHp * scaleY;
+        const tpSvgX = cx + xTp * scaleX;
+        const tpSvgY = cy - yTp * scaleY;
+
+        // Sample points for current curve f_k(x)
+        const fPoints: string[] = [];
+        for (let i = 0; i <= 60; i++) {
+          const t = -2.2 + (i / 60) * 4.4;
+          const ft = Math.pow(t, 3) - k * t;
+          const sx = cx + t * scaleX;
+          const sy = cy - ft * scaleY;
+          fPoints.push(`${i === 0 ? "M" : "L"} ${sx.toFixed(1)} ${sy.toFixed(1)}`);
+        }
+        const fPath = fPoints.join(" ");
+
+        // Sample points for Ortskurve: y = -2x^3 (for x < 0: HP locus, x > 0: TP locus)
+        const ortsPoints: string[] = [];
+        for (let i = 0; i <= 40; i++) {
+          const t = -1.6 + (i / 40) * 3.2;
+          const ortY = -2 * Math.pow(t, 3);
+          const sx = cx + t * scaleX;
+          const sy = cy - ortY * scaleY;
+          ortsPoints.push(`${i === 0 ? "M" : "L"} ${sx.toFixed(1)} ${sy.toFixed(1)}`);
+        }
+        const ortsPath = ortsPoints.join(" ");
+
         return (
           <svg className="w-full h-64 sm:h-72 rounded bg-[var(--paper-subtle)]/40 border border-[var(--line)]/50" viewBox="0 0 440 200">
-            <line x1="50" y1="100" x2="390" y2="100" stroke="var(--ink)" strokeWidth="1" strokeOpacity="0.3" />
-            <line x1="220" y1="20" x2="220" y2="180" stroke="var(--ink)" strokeWidth="1" strokeOpacity="0.3" />
-            <path d="M 160 30 C 180 50, 200 70, 220 100" fill="none" stroke="#dc2626" strokeWidth="2" strokeDasharray="3,3" />
-            <text x="160" y="24" fontSize="8" fill="#dc2626" fontFamily="monospace">Ortskurve: y = -2x³</text>
-            <path d="M 130 180 C 150 50, 180 50, 220 100 C 260 150, 290 150, 310 20" fill="none" stroke="var(--accent)" strokeWidth="2.5" />
-            <rect x="290" y="145" width="120" height="35" rx="3" fill="var(--surface)" stroke="var(--line)" />
-            <text x="350" y="166" textAnchor="middle" fontSize="9" fontWeight="bold" fill="var(--ink)" fontFamily="monospace">{data.rateValue}</text>
+            {/* Coordinate Grid */}
+            <line x1="40" y1={cy} x2="400" y2={cy} stroke="var(--ink)" strokeWidth="1" strokeOpacity="0.35" />
+            <line x1={cx} y1="15" x2={cx} y2="185" stroke="var(--ink)" strokeWidth="1" strokeOpacity="0.35" />
+            <text x="405" y={cy + 4} fontSize="9" fill="var(--ink)" fontFamily="monospace">x</text>
+            <text x={cx + 6} y="22" fontSize="9" fill="var(--ink)" fontFamily="monospace">y</text>
+
+            {/* Ortskurve (Dashed line) */}
+            {showOrtskurve && (
+              <g>
+                <path d={ortsPath} fill="none" stroke="#dc2626" strokeWidth="1.8" strokeDasharray="4,4" />
+                <text x="75" y="32" fontSize="8" fill="#dc2626" fontFamily="monospace">Ortskurve: y = -2x³</text>
+              </g>
+            )}
+
+            {/* Dynamic Curve for parameter k */}
+            <path d={fPath} fill="none" stroke="var(--accent)" strokeWidth="2.5" />
+
+            {/* Dynamic High Point (HP) */}
+            <circle cx={hpSvgX} cy={hpSvgY} r="5" fill="#16a34a" stroke="var(--paper)" strokeWidth="1.5" />
+            <text x={hpSvgX - 8} y={hpSvgY - 8} textAnchor="end" fontSize="8" fontWeight="bold" fill="#16a34a" fontFamily="monospace">
+              HP({xHp.toFixed(2)} | {yHp.toFixed(2)})
+            </text>
+
+            {/* Dynamic Low Point (TP) */}
+            <circle cx={tpSvgX} cy={tpSvgY} r="5" fill="#2563eb" stroke="var(--paper)" strokeWidth="1.5" />
+            <text x={tpSvgX + 8} y={tpSvgY + 12} fontSize="8" fontWeight="bold" fill="#2563eb" fontFamily="monospace">
+              TP({xTp.toFixed(2)} | {yTp.toFixed(2)})
+            </text>
+
+            {/* Live readout badge */}
+            <rect x="290" y="145" width="135" height="42" rx="3" fill="var(--surface)" stroke="var(--line)" />
+            <text x="357" y="160" textAnchor="middle" fontSize="9" fontWeight="bold" fill="var(--ink)" fontFamily="monospace">
+              f_{k.toFixed(1)}(x) = x³ - {k.toFixed(1)}x
+            </text>
+            <text x="357" y="176" textAnchor="middle" fontSize="8" fill="#16a34a" fontFamily="monospace">
+              {data.rateValue}
+            </text>
           </svg>
         );
       }
 
       // 20. 数学：旋转体体积 (Rotation)
       case "rotation": {
+        const b = 1 + (paramA / 100) * 3; // 1.0 to 4.0
+        const phiDeg = Math.round((paramB / 100) * 360); // 0 to 360 deg
+        const phiRad = (phiDeg * Math.PI) / 180;
+
+        // X origin at 90, axis at Y = 100. scaleX = 70px per unit, f(x) = sqrt(x), so max r = sqrt(4) = 2 -> scaleY = 32px
+        const ox = 90;
+        const oy = 100;
+        const scaleX = 65;
+        const scaleR = 28;
+
+        const bx = ox + b * scaleX;
+        const rB = Math.sqrt(b) * scaleR;
+        // perspective vertical radius scales with sin(phi)
+        const ryEnd = Math.max(2, rB * Math.abs(Math.sin(Math.max(0.2, phiRad / 2))));
+
+        // Build upper and lower profile lines for f(x) = sqrt(x)
+        const topPts: string[] = [];
+        const btmPts: string[] = [];
+        for (let i = 0; i <= 30; i++) {
+          const x = (i / 30) * b;
+          const rx = Math.sqrt(x) * scaleR;
+          const px = ox + x * scaleX;
+          topPts.push(`${i === 0 ? "M" : "L"} ${px.toFixed(1)} ${(oy - rx).toFixed(1)}`);
+          btmPts.push(`${i === 0 ? "M" : "L"} ${px.toFixed(1)} ${(oy + rx).toFixed(1)}`);
+        }
+
+        // Cross-section disc at mid-interval x = b * 0.65
+        const midX = ox + b * 0.65 * scaleX;
+        const midR = Math.sqrt(b * 0.65) * scaleR;
+        const midRy = Math.max(2, midR * Math.abs(Math.sin(Math.max(0.2, phiRad / 2))));
+
         return (
           <svg className="w-full h-64 sm:h-72 rounded bg-[var(--paper-subtle)]/40 border border-[var(--line)]/50" viewBox="0 0 440 200">
-            <line x1="50" y1="100" x2="390" y2="100" stroke="var(--ink)" strokeWidth="1.5" />
-            <path d="M 100 100 Q 200 40 320 40 L 320 160 Q 200 160 100 100 Z" fill="var(--accent)" fillOpacity="0.15" stroke="var(--accent)" strokeWidth="2" />
-            <ellipse cx="320" cy="100" rx="15" ry="60" fill="none" stroke="var(--accent)" strokeWidth="1.5" />
-            <rect x="230" y="55" width="12" height="90" fill="var(--accent)" fillOpacity="0.4" stroke="var(--ink)" strokeWidth="1" />
-            <text x="220" y="175" textAnchor="middle" fontSize="8" fill="var(--gray)" fontFamily="monospace">π · (f(x))² dx</text>
-            <rect x="330" y="30" width="80" height="40" rx="3" fill="var(--surface)" stroke="var(--line)" />
-            <text x="370" y="54" textAnchor="middle" fontSize="10" fontWeight="bold" fill="var(--ink)" fontFamily="monospace">{data.rateValue}</text>
+            {/* Axis */}
+            <line x1="50" y1={oy} x2="390" y2={oy} stroke="var(--ink)" strokeWidth="1.5" strokeDasharray="6,3" />
+            <text x="395" y={oy + 4} fontSize="9" fill="var(--ink)" fontFamily="monospace">x</text>
+
+            {/* Rotated Solid Body Fill */}
+            <path
+              d={`${topPts.join(" ")} L ${bx.toFixed(1)} ${(oy + rB).toFixed(1)} ${btmPts.reverse().join(" ")} Z`}
+              fill="var(--accent)"
+              fillOpacity={0.12 + (phiDeg / 360) * 0.18}
+              stroke="none"
+            />
+
+            {/* Outer Boundary Curves */}
+            <path d={topPts.join(" ")} fill="none" stroke="var(--accent)" strokeWidth="2.2" />
+            <path d={btmPts.join(" ")} fill="none" stroke="var(--accent)" strokeWidth="1.5" strokeOpacity="0.7" />
+
+            {/* Intermediate differential disc (π * f(x)^2 dx) */}
+            <ellipse cx={midX} cy={oy} rx={4} ry={midRy} fill="var(--accent)" fillOpacity="0.45" stroke="var(--ink)" strokeWidth="1" />
+            <line x1={midX} y1={oy - midR} x2={midX} y2={oy + midR} stroke="var(--ink)" strokeWidth="1" strokeDasharray="2,2" />
+            <text x={midX} y={oy + midR + 14} textAnchor="middle" fontSize="7" fill="var(--gray)" fontFamily="monospace">
+              dV = π·x dx
+            </text>
+
+            {/* End ellipse cap at x = b */}
+            <ellipse cx={bx} cy={oy} rx={Math.max(3, 14 * Math.sin(phiRad / 2))} ry={ryEnd} fill="var(--accent)" fillOpacity="0.25" stroke="var(--ink)" strokeWidth="1.5" />
+            <line x1={bx} y1={oy - rB} x2={bx} y2={oy + rB} stroke="#dc2626" strokeWidth="1.5" />
+
+            {/* Labels and readout */}
+            <rect x="20" y="20" width="150" height="46" rx="3" fill="var(--surface)" stroke="var(--line)" />
+            <text x="28" y="35" fontSize="9" fontWeight="bold" fill="var(--ink)" fontFamily="monospace">
+              f(x) = √x | b = {b.toFixed(1)}
+            </text>
+            <text x="28" y="49" fontSize="8" fill="var(--accent)" fontFamily="monospace">
+              {data.rateValue}
+            </text>
+            <text x="28" y="60" fontSize="7" fill="var(--gray)" fontFamily="monospace">
+              旋转角 φ = {phiDeg}°
+            </text>
           </svg>
         );
       }
 
       // 21. 数学：点到平面空间几何 (Ebene & Abstand)
       case "ebene": {
+        const pz = 1 + (paramA / 100) * 8; // 1.0 to 9.0
+        const d = pz / 3; // distance = pz / 3
+
+        // Plane polygon in isometric projection
+        // Center of plane around (220, 130)
+        // Point P moves strictly upward as pz increases
+        const pX = 220;
+        const pY = 130 - pz * 10; // moves from 120 down to 40
+        const fX = 220;
+        const fY = 130; // base footprint on the plane
+
         return (
           <svg className="w-full h-64 sm:h-72 rounded bg-[var(--paper-subtle)]/40 border border-[var(--line)]/50" viewBox="0 0 440 200">
-            <polygon points="100,160 280,160 360,90 180,90" fill="#0284c7" fillOpacity="0.2" stroke="var(--ink)" strokeWidth="1.5" />
-            <circle cx="230" cy="40" r="5" fill="#dc2626" />
-            <text x="240" y="42" fontSize="9" fontWeight="bold" fill="#dc2626" fontFamily="monospace">{data.paramAValueDisplay}</text>
-            <line x1="230" y1="40" x2="230" y2="125" stroke="#dc2626" strokeWidth="2" strokeDasharray="3,3" />
-            <circle cx="230" cy="125" r="4" fill="var(--ink)" />
-            <text x="240" y="125" fontSize="8" fill="var(--gray)" fontFamily="monospace">Lotfußpunkt F</text>
-            <text x="200" y="80" textAnchor="end" fontSize="9" fontWeight="bold" fill="#dc2626" fontFamily="monospace">{data.rateValue}</text>
+            {/* Plane coordinate grid in perspective */}
+            <polygon
+              points="90,165 290,165 370,95 170,95"
+              fill="#0284c7"
+              fillOpacity="0.18"
+              stroke="var(--ink)"
+              strokeWidth="1.6"
+            />
+            {/* Grid lines on the plane */}
+            <line x1="130" y1="130" x2="330" y2="130" stroke="#0284c7" strokeWidth="1" strokeOpacity="0.4" />
+            <line x1="220" y1="95" x2="190" y2="165" stroke="#0284c7" strokeWidth="1" strokeOpacity="0.4" />
+
+            <text x="360" y="105" fontSize="8" fontWeight="bold" fill="#0284c7" fontFamily="monospace">E: 2x + 2y - z = 4</text>
+
+            {/* Orthogonal projection drop line */}
+            <line x1={pX} y1={pY} x2={fX} y2={fY} stroke="#dc2626" strokeWidth="2.2" strokeDasharray="3,3" />
+
+            {/* Right angle symbol at Footprint F */}
+            <path d={`M ${fX} ${fY - 10} L ${fX + 10} ${fY - 10} L ${fX + 10} ${fY}`} fill="none" stroke="#dc2626" strokeWidth="1.2" />
+
+            {/* Footprint point F */}
+            <circle cx={fX} cy={fY} r="4" fill="var(--ink)" />
+            <text x={fX + 12} y={fY + 4} fontSize="8" fill="var(--ink)" fontFamily="monospace">Lotfußpunkt F</text>
+
+            {/* Moving Point P */}
+            <circle cx={pX} cy={pY} r="5.5" fill="#dc2626" stroke="var(--paper)" strokeWidth="2" />
+            <text x={pX + 10} y={pY - 2} fontSize="9" fontWeight="bold" fill="#dc2626" fontFamily="monospace">
+              P(1 | 1 | {pz.toFixed(1)})
+            </text>
+
+            {/* Distance measurement label */}
+            <rect x="25" y="25" width="135" height="42" rx="3" fill="var(--surface)" stroke="var(--line)" />
+            <text x="33" y="40" fontSize="8" fill="var(--gray)" fontFamily="monospace">Hessesche NF: |pz| / 3</text>
+            <text x="33" y="55" fontSize="10" fontWeight="bold" fill="#dc2626" fontFamily="monospace">
+              d(P, E) = {d.toFixed(2)} LE
+            </text>
           </svg>
         );
       }
 
       // 22. 数学：向量点积与叉积 (Vektor)
       case "vektor": {
-        const rad = (data.graphY / 100) * Math.PI;
-        const x2 = 140 + 80 * Math.cos(rad);
-        const y2 = 140 - 80 * Math.sin(rad);
+        const alphaDeg = Math.round((paramA / 100) * 180);
+        const alphaRad = (alphaDeg * Math.PI) / 180;
+        const lenB = 1 + (paramB / 100) * 4; // 1.0 to 5.0
+        const scale = 24; // px per unit
+        const lenA = 4.5; // fixed vector a along x-axis
+
+        const originX = 110;
+        const originY = 145;
+
+        // Vector a along horizontal
+        const aX = originX + lenA * scale;
+        const aY = originY;
+
+        // Vector b at angle alpha
+        const bX = originX + lenB * scale * Math.cos(alphaRad);
+        const bY = originY - lenB * scale * Math.sin(alphaRad);
+
+        // Orthogonal projection of b onto a
+        const projX = originX + lenB * scale * Math.cos(alphaRad);
+        const projY = originY;
+
+        // Parallelogram 4th vertex
+        const p4X = aX + (bX - originX);
+        const p4Y = aY + (bY - originY);
+
         return (
           <svg className="w-full h-64 sm:h-72 rounded bg-[var(--paper-subtle)]/40 border border-[var(--line)]/50" viewBox="0 0 440 200">
-            <line x1="140" y1="140" x2="260" y2="140" stroke="var(--ink)" strokeWidth="2.5" />
-            <text x="265" y="145" fontSize="9" fontWeight="bold" fill="var(--ink)" fontFamily="monospace">a</text>
-            <line x1="140" y1="140" x2={x2} y2={y2} stroke="var(--accent)" strokeWidth="2.5" />
-            <text x={x2 + 5} y={y2} fontSize="9" fontWeight="bold" fill="var(--accent)" fontFamily="monospace">b</text>
-            <rect x="290" y="50" width="120" height="50" rx="3" fill="var(--surface)" stroke="var(--line)" />
-            <text x="350" y="70" textAnchor="middle" fontSize="8" fill="var(--gray)" fontFamily="monospace">Skalarprodukt</text>
-            <text x="350" y="88" textAnchor="middle" fontSize="10" fontWeight="bold" fill="var(--ink)" fontFamily="monospace">{data.rateValue}</text>
+            {/* Parallelogram area (Cross product |a x b|) */}
+            <polygon
+              points={`${originX},${originY} ${aX},${aY} ${p4X},${p4Y} ${bX},${bY}`}
+              fill="var(--accent)"
+              fillOpacity="0.14"
+              stroke="var(--accent)"
+              strokeWidth="1"
+              strokeDasharray="3,3"
+            />
+
+            {/* Projection drop line */}
+            <line x1={bX} y1={bY} x2={projX} y2={projY} stroke="var(--gray)" strokeWidth="1.2" strokeDasharray="3,2" />
+            <line x1={originX} y1={originY} x2={projX} y2={projY} stroke="#16a34a" strokeWidth="3" strokeOpacity="0.6" />
+
+            {/* Angle arc */}
+            <path
+              d={`M ${originX + 26} ${originY} A 26 26 0 ${alphaDeg > 180 ? 1 : 0} 0 ${originX + 26 * Math.cos(alphaRad)} ${originY - 26 * Math.sin(alphaRad)}`}
+              fill="none"
+              stroke="var(--ink)"
+              strokeWidth="1.5"
+            />
+            <text x={originX + 32} y={originY - 10} fontSize="8" fill="var(--ink)" fontFamily="monospace">α={alphaDeg}°</text>
+
+            {/* Vector a */}
+            <line x1={originX} y1={originY} x2={aX} y2={aY} stroke="var(--ink)" strokeWidth="2.8" />
+            <polygon points={`${aX},${aY} ${aX - 7},${aY - 3} ${aX - 7},${aY + 3}`} fill="var(--ink)" />
+            <text x={aX + 8} y={aY + 4} fontSize="10" fontWeight="bold" fill="var(--ink)" fontFamily="monospace">a</text>
+
+            {/* Vector b */}
+            <line x1={originX} y1={originY} x2={bX} y2={bY} stroke="var(--accent)" strokeWidth="2.8" />
+            <circle cx={bX} cy={bY} r="3" fill="var(--accent)" />
+            <text x={bX + 6} y={bY - 4} fontSize="10" fontWeight="bold" fill="var(--accent)" fontFamily="monospace">b (|b|={lenB.toFixed(1)})</text>
+
+            {/* Data Badge */}
+            <rect x="280" y="25" width="145" height="52" rx="3" fill="var(--surface)" stroke="var(--line)" />
+            <text x="288" y="42" fontSize="9" fontWeight="bold" fill="var(--ink)" fontFamily="monospace">
+              a · b = {(lenA * lenB * Math.cos(alphaRad)).toFixed(2)}
+            </text>
+            <text x="288" y="56" fontSize="8" fill="var(--accent)" fontFamily="monospace">
+              |a × b| = {(lenA * lenB * Math.sin(alphaRad)).toFixed(2)} FE
+            </text>
+            <text x="288" y="68" fontSize="7" fill={alphaDeg === 90 ? "#16a34a" : "var(--gray)"} fontFamily="monospace">
+              {alphaDeg === 90 ? "● 正交垂直 Orthogonal!" : `夹角: ${alphaDeg}°`}
+            </text>
           </svg>
         );
       }
 
       // 23. 数学：马尔可夫转移图 (Markov-Ketten)
       case "markov": {
+        const pA2B = +(0.1 + (paramA / 100) * 0.8).toFixed(2);
+        const pB2A = +(0.1 + (paramB / 100) * 0.8).toFixed(2);
+        const statA = Math.round((Number(pB2A) / (Number(pA2B) + Number(pB2A))) * 100);
+        const statB = 100 - statA;
+
+        // Radius scales with stationary distribution (15px to 38px)
+        const rA = 16 + (statA / 100) * 22;
+        const rB = 16 + (statB / 100) * 22;
+
+        // Arrow stroke width scales with transition probability
+        const wA2B = 1.2 + pA2B * 3.5;
+        const wB2A = 1.2 + pB2A * 3.5;
+
         return (
           <svg className="w-full h-64 sm:h-72 rounded bg-[var(--paper-subtle)]/40 border border-[var(--line)]/50" viewBox="0 0 440 200">
-            <circle cx="120" cy="100" r="30" fill="var(--paper)" stroke="var(--ink)" strokeWidth="2" />
-            <text x="120" y="105" textAnchor="middle" fontSize="12" fontWeight="bold" fill="var(--ink)" fontFamily="monospace">A</text>
-            <circle cx="320" cy="100" r="30" fill="var(--paper)" stroke="var(--accent)" strokeWidth="2" />
-            <text x="320" y="105" textAnchor="middle" fontSize="12" fontWeight="bold" fill="var(--accent)" fontFamily="monospace">B</text>
-            <path d="M 145 80 Q 220 50 295 80" fill="none" stroke="var(--ink)" strokeWidth="2" />
-            <text x="220" y="60" textAnchor="middle" fontSize="9" fill="var(--ink)" fontFamily="monospace">p(A→B) = {data.paramAValueDisplay}</text>
-            <path d="M 295 120 Q 220 150 145 120" fill="none" stroke="var(--accent)" strokeWidth="2" />
-            <text x="220" y="145" textAnchor="middle" fontSize="9" fill="var(--accent)" fontFamily="monospace">p(B→A) = {data.paramBValueDisplay}</text>
-            <rect x="150" y="165" width="140" height="25" rx="3" fill="var(--surface)" stroke="var(--line)" />
-            <text x="220" y="181" textAnchor="middle" fontSize="9" fontWeight="bold" fill="var(--ink)" fontFamily="monospace">{data.rateValue}</text>
+            {/* Transition curve A -> B (upper) */}
+            <path d="M 140 75 Q 220 30 300 75" fill="none" stroke="var(--ink)" strokeWidth={wA2B} />
+            <polygon points="300,75 290,68 293,78" fill="var(--ink)" />
+            <text x="220" y="44" textAnchor="middle" fontSize="9" fontWeight="bold" fill="var(--ink)" fontFamily="monospace">
+              P(A→B) = {pA2B}
+            </text>
+
+            {/* Transition curve B -> A (lower) */}
+            <path d="M 300 125 Q 220 170 140 125" fill="none" stroke="var(--accent)" strokeWidth={wB2A} />
+            <polygon points="140,125 150,132 147,122" fill="var(--accent)" />
+            <text x="220" y="162" textAnchor="middle" fontSize="9" fontWeight="bold" fill="var(--accent)" fontFamily="monospace">
+              P(B→A) = {pB2A}
+            </text>
+
+            {/* Node A */}
+            <circle cx="110" cy="100" r={rA} fill="var(--paper)" stroke="var(--ink)" strokeWidth="2.5" />
+            <text x="110" y="96" textAnchor="middle" fontSize="12" fontWeight="bold" fill="var(--ink)" fontFamily="monospace">A</text>
+            <text x="110" y="112" textAnchor="middle" fontSize="8" fill="var(--gray)" fontFamily="monospace">{statA}%</text>
+
+            {/* Node B */}
+            <circle cx="330" cy="100" r={rB} fill="var(--paper)" stroke="var(--accent)" strokeWidth="2.5" />
+            <text x="330" y="96" textAnchor="middle" fontSize="12" fontWeight="bold" fill="var(--accent)" fontFamily="monospace">B</text>
+            <text x="330" y="112" textAnchor="middle" fontSize="8" fill="var(--accent)" fontFamily="monospace">{statB}%</text>
+
+            {/* Equilibrium Info Box */}
+            <rect x="135" y="85" width="170" height="30" rx="3" fill="var(--surface)" stroke="var(--line)" />
+            <text x="220" y="104" textAnchor="middle" fontSize="9" fontWeight="bold" fill="var(--ink)" fontFamily="monospace">
+              稳态分布: [A: {statA}% | B: {statB}%]
+            </text>
           </svg>
         );
       }
 
       // 24. 数学：假设检验拒绝域 (Hypothesentest)
       case "hypothese": {
+        const kKrit = Math.round(40 + (paramA / 100) * 20); // 40 to 60
+        // Svg X mapping: k from 0 to 100 -> X from 70 to 370
+        const kX = 70 + (kKrit / 100) * 300;
+
+        // Normal distribution curve points centered at x=50 (Svg X=220)
+        const bellPoints: string[] = [];
+        for (let i = 0; i <= 60; i++) {
+          const t = i / 60; // 0 to 1
+          const xSvg = 70 + t * 300;
+          const z = (t * 100 - 50) / 14;
+          const ySvg = 165 - Math.exp(-0.5 * z * z) * 125;
+          bellPoints.push(`${i === 0 ? "M" : "L"} ${xSvg.toFixed(1)} ${ySvg.toFixed(1)}`);
+        }
+        const bellPath = bellPoints.join(" ");
+
         return (
           <svg className="w-full h-64 sm:h-72 rounded bg-[var(--paper-subtle)]/40 border border-[var(--line)]/50" viewBox="0 0 440 200">
-            <line x1="50" y1="170" x2="390" y2="170" stroke="var(--ink)" strokeWidth="1.5" />
-            <path d="M 60 170 Q 200 30 360 170" fill="none" stroke="var(--ink)" strokeWidth="2" />
-            <rect x="290" y="100" width="80" height="70" fill="#dc2626" fillOpacity="0.25" />
-            <line x1="290" y1="30" x2="290" y2="170" stroke="#dc2626" strokeWidth="1.5" strokeDasharray="3,3" />
-            <text x="290" y="25" textAnchor="middle" fontSize="8" fill="#dc2626" fontWeight="bold" fontFamily="monospace">k (Kritischer Wert)</text>
-            <text x="330" y="140" textAnchor="middle" fontSize="8" fill="#dc2626" fontFamily="monospace">Ablehnungsbereich K</text>
-            <rect x="60" y="40" width="100" height="40" rx="3" fill="var(--surface)" stroke="var(--line)" />
-            <text x="110" y="64" textAnchor="middle" fontSize="10" fontWeight="bold" fill="var(--ink)" fontFamily="monospace">{data.rateValue}</text>
+            {/* Axis */}
+            <line x1="50" y1="165" x2="390" y2="165" stroke="var(--ink)" strokeWidth="1.5" />
+            <text x="395" y="169" fontSize="9" fill="var(--ink)" fontFamily="monospace">X</text>
+
+            {/* Bell Curve */}
+            <path d={bellPath} fill="none" stroke="var(--ink)" strokeWidth="2.2" />
+
+            {/* Rejection Region Shading from kX to 370 */}
+            <rect x={kX} y="35" width={Math.max(0, 370 - kX)} height="130" fill="#dc2626" fillOpacity="0.22" />
+
+            {/* Decision Threshold Line k */}
+            <line x1={kX} y1="30" x2={kX} y2="165" stroke="#dc2626" strokeWidth="2" strokeDasharray="4,3" />
+            <polygon points={`${kX},30 ${kX - 4},22 ${kX + 4},22`} fill="#dc2626" />
+            <text x={kX} y="18" textAnchor="middle" fontSize="9" fontWeight="bold" fill="#dc2626" fontFamily="monospace">
+              k = {kKrit}
+            </text>
+
+            {/* Region Annotations */}
+            <text x={(70 + kX) / 2} y="155" textAnchor="middle" fontSize="8" fill="var(--ink)" fontFamily="monospace">
+              接受域 A (H0)
+            </text>
+            <text x={Math.min(380, kX + 35)} y="155" textAnchor="middle" fontSize="8" fontWeight="bold" fill="#dc2626" fontFamily="monospace">
+              拒绝域 K
+            </text>
+
+            {/* Readout Badge */}
+            <rect x="65" y="32" width="130" height="42" rx="3" fill="var(--surface)" stroke="var(--line)" />
+            <text x="73" y="47" fontSize="8" fill="var(--gray)" fontFamily="monospace">显著性水平 α (弃真概率)</text>
+            <text x="73" y="62" fontSize="9" fontWeight="bold" fill="#dc2626" fontFamily="monospace">
+              {data.rateValue}
+            </text>
           </svg>
         );
       }
 
       // 25. 数学：线性回归与散点 (Regression)
       case "regression": {
+        const rVal = 0.2 + (paramA / 100) * 0.78; // 0.20 to 0.98
+        const outlier = paramB / 100; // 0.0 to 1.0
+
+        // Base linear function: y = 0.5 * x + 20
+        // Data points (x_i in [0, 100]). When r is high, scatter variance shrinks!
+        const basePoints = [
+          { x: 15, y: 30, noise: -18 },
+          { x: 25, y: 35, noise: 22 },
+          { x: 38, y: 45, noise: -15 },
+          { x: 50, y: 52, noise: 25 },
+          { x: 62, y: 60, noise: -20 },
+          { x: 75, y: 72, noise: 18 },
+          { x: 88, y: 80, noise: -22 },
+          { x: 95, y: 88, noise: 16 },
+        ];
+
+        // Coordinate mapping: X: [0, 100] -> [75, 375], Y: [0, 100] -> [165, 35]
+        const mapX = (x: number) => 75 + (x / 100) * 300;
+        const mapY = (y: number) => 165 - (y / 100) * 130;
+
+        // Dynamic points: variance scaled by (1 - rVal)
+        const dynamicPoints = basePoints.map((p) => {
+          const spread = (1 - rVal) * 1.5;
+          const py = Math.max(10, Math.min(90, p.y + p.noise * spread));
+          return { sx: mapX(p.x), sy: mapY(py) };
+        });
+
+        // Add dynamic outlier
+        const outlierSx = mapX(85);
+        const outlierSy = mapY(20 + (1 - outlier) * 60);
+
         return (
           <svg className="w-full h-64 sm:h-72 rounded bg-[var(--paper-subtle)]/40 border border-[var(--line)]/50" viewBox="0 0 440 200">
-            <line x1="60" y1="170" x2="380" y2="170" stroke="var(--ink)" strokeWidth="1.5" />
-            <line x1="60" y1="30" x2="60" y2="170" stroke="var(--ink)" strokeWidth="1.5" />
-            <line x1="80" y1="150" x2="360" y2="50" stroke="var(--accent)" strokeWidth="2.5" />
-            {[
-              [100, 140], [130, 125], [160, 135], [190, 110], [220, 95],
-              [250, 105], [280, 80], [310, 65], [340, 55],
-            ].map(([x, y], i) => (
-              <circle key={i} cx={x} cy={y} r="3.5" fill="var(--ink)" />
-            ))}
-            <rect x="260" y="125" width="115" height="35" rx="3" fill="var(--surface)" stroke="var(--line)" />
-            <text x="317" y="146" textAnchor="middle" fontSize="10" fontWeight="bold" fill="var(--accent)" fontFamily="monospace">{data.rateValue}</text>
+            {/* Axes */}
+            <line x1="60" y1="165" x2="390" y2="165" stroke="var(--ink)" strokeWidth="1.5" />
+            <line x1="60" y1="25" x2="60" y2="165" stroke="var(--ink)" strokeWidth="1.5" />
+            <text x="395" y="169" fontSize="9" fill="var(--ink)" fontFamily="monospace">x</text>
+            <text x="52" y="25" fontSize="9" fill="var(--ink)" fontFamily="monospace">y</text>
+
+            {/* Regression Line */}
+            <line
+              x1={mapX(5)}
+              y1={mapY(22)}
+              x2={mapX(98)}
+              y2={mapY(90)}
+              stroke="var(--accent)"
+              strokeWidth="2.5"
+            />
+
+            {/* Residual drop lines and scatter points */}
+            {dynamicPoints.map((p, idx) => {
+              // Expected line Y at this sx
+              const normX = (p.sx - 75) / 300;
+              const lineY = mapY(22 + normX * 68);
+              return (
+                <g key={idx}>
+                  <line x1={p.sx} y1={p.sy} x2={p.sx} y2={lineY} stroke="var(--gray)" strokeWidth="0.8" strokeDasharray="2,2" strokeOpacity="0.6" />
+                  <circle cx={p.sx} cy={p.sy} r="3.5" fill="var(--ink)" />
+                </g>
+              );
+            })}
+
+            {/* Outlier Point */}
+            {outlier > 0.1 && (
+              <g>
+                <circle cx={outlierSx} cy={outlierSy} r="4.5" fill="#dc2626" />
+                <text x={outlierSx + 6} y={outlierSy + 3} fontSize="7" fill="#dc2626" fontFamily="monospace">Ausreißer</text>
+              </g>
+            )}
+
+            {/* Readout badge */}
+            <rect x="75" y="32" width="135" height="42" rx="3" fill="var(--surface)" stroke="var(--line)" />
+            <text x="83" y="47" fontSize="9" fontWeight="bold" fill="var(--accent)" fontFamily="monospace">
+              {data.rateValue}
+            </text>
+            <text x="83" y="62" fontSize="8" fill="var(--ink)" fontFamily="monospace">
+              {data.subValue}
+            </text>
           </svg>
         );
       }
 
       // 26. 社科：德国 Sinus-Milieus 坐标矩阵 (Sinus-Milieus)
       case "milieu": {
+        const curX = 60 + (paramA / 100) * 320;
+        const curY = 170 - (paramB / 100) * 135;
+
         return (
           <svg className="w-full h-64 sm:h-72 rounded bg-[var(--paper-subtle)]/40 border border-[var(--line)]/50" viewBox="0 0 440 200">
+            {/* Coordinate axes */}
             <line x1="60" y1="170" x2="390" y2="170" stroke="var(--ink)" strokeWidth="1.5" />
-            <line x1="60" y1="30" x2="60" y2="170" stroke="var(--ink)" strokeWidth="1.5" />
-            <text x="390" y="185" textAnchor="end" fontSize="7" fill="var(--gray)" fontFamily="monospace">Grundorientierung →</text>
-            <text x="50" y="25" fontSize="7" fill="var(--gray)" fontFamily="monospace">↑ Soziale Lage</text>
+            <line x1="60" y1="25" x2="60" y2="170" stroke="var(--ink)" strokeWidth="1.5" />
+            <text x="390" y="185" textAnchor="end" fontSize="7.5" fill="var(--gray)" fontFamily="monospace">Grundorientierung (Tradition → Modernisierung) →</text>
+            <text x="50" y="22" fontSize="7.5" fill="var(--gray)" fontFamily="monospace">↑ Soziale Lage</text>
 
-            <ellipse cx="120" cy="140" rx="35" ry="18" fill="#cbd5e1" fillOpacity="0.4" stroke="var(--ink)" strokeWidth="1" />
-            <text x="120" y="143" textAnchor="middle" fontSize="7" fontFamily="monospace">Traditionelle</text>
+            {/* Milieu cluster bubbles */}
+            {/* Traditional */}
+            <ellipse cx="110" cy="140" rx="38" ry="18" fill="#cbd5e1" fillOpacity="0.45" stroke="var(--ink)" strokeWidth="1" />
+            <text x="110" y="143" textAnchor="middle" fontSize="7" fontFamily="monospace">Traditionelle</text>
 
-            <ellipse cx="220" cy="110" rx="45" ry="22" fill="#bae6fd" fillOpacity="0.5" stroke="#0284c7" strokeWidth="1.2" />
-            <text x="220" y="113" textAnchor="middle" fontSize="7" fontWeight="bold" fill="#0369a1" fontFamily="monospace">Bürgerl. Mitte</text>
+            {/* Prekäre */}
+            <ellipse cx="115" cy="165" rx="30" ry="12" fill="#fca5a5" fillOpacity="0.35" stroke="#dc2626" strokeWidth="0.8" />
+            <text x="115" y="167" textAnchor="middle" fontSize="6.5" fill="#b91c1c" fontFamily="monospace">Prekäre</text>
 
-            <ellipse cx="320" cy="70" rx="40" ry="20" fill="#fed7aa" fillOpacity="0.5" stroke="#ea580c" strokeWidth="1.2" />
-            <text x="320" y="73" textAnchor="middle" fontSize="7" fontWeight="bold" fill="#c2410c" fontFamily="monospace">Performer</text>
+            {/* Bürgerliche Mitte */}
+            <ellipse cx="210" cy="115" rx="48" ry="22" fill="#bae6fd" fillOpacity="0.5" stroke="#0284c7" strokeWidth="1.2" />
+            <text x="210" y="118" textAnchor="middle" fontSize="7.5" fontWeight="bold" fill="#0369a1" fontFamily="monospace">Bürgerl. Mitte</text>
 
-            <circle cx={60 + (paramA / 100) * 320} cy={170 - (paramB / 100) * 135} r="7" fill="var(--accent)" stroke="var(--paper)" strokeWidth="2" />
-            <rect x="130" y="15" width="180" height="25" rx="3" fill="var(--surface)" stroke="var(--line)" />
-            <text x="220" y="31" textAnchor="middle" fontSize="9" fontWeight="bold" fill="var(--accent)" fontFamily="monospace">{data.rateValue}</text>
+            {/* Adaptiv-Pragmatische */}
+            <ellipse cx="270" cy="85" rx="42" ry="20" fill="#a7f3d0" fillOpacity="0.45" stroke="#059669" strokeWidth="1.2" />
+            <text x="270" y="88" textAnchor="middle" fontSize="7" fontWeight="bold" fill="#047857" fontFamily="monospace">Adaptiv-Pragm.</text>
+
+            {/* Konservativ-Gehobene */}
+            <ellipse cx="150" cy="55" rx="45" ry="18" fill="#e2e8f0" fillOpacity="0.5" stroke="#475569" strokeWidth="1" />
+            <text x="150" y="58" textAnchor="middle" fontSize="7" fontFamily="monospace">Konserv.-Gehobene</text>
+
+            {/* Performer / Postmaterielle */}
+            <ellipse cx="325" cy="55" rx="42" ry="20" fill="#fed7aa" fillOpacity="0.55" stroke="#ea580c" strokeWidth="1.2" />
+            <text x="325" y="58" textAnchor="middle" fontSize="7" fontWeight="bold" fill="#c2410c" fontFamily="monospace">Performer / Expeditiv</text>
+
+            {/* Crosshair drop lines to current position */}
+            <line x1={curX} y1={curY} x2={curX} y2="170" stroke="var(--accent)" strokeWidth="1" strokeDasharray="2,2" strokeOpacity="0.6" />
+            <line x1="60" y1={curY} x2={curX} y2={curY} stroke="var(--accent)" strokeWidth="1" strokeDasharray="2,2" strokeOpacity="0.6" />
+
+            {/* Dynamic individual person coordinate */}
+            <circle cx={curX} cy={curY} r="6.5" fill="var(--accent)" stroke="var(--paper)" strokeWidth="2" />
+
+            {/* Readout badge */}
+            <rect x="130" y="10" width="180" height="26" rx="3" fill="var(--surface)" stroke="var(--line)" />
+            <text x="220" y="27" textAnchor="middle" fontSize="9" fontWeight="bold" fill="var(--accent)" fontFamily="monospace">
+              {data.rateValue}
+            </text>
           </svg>
         );
       }
@@ -2454,38 +3358,103 @@ export function UniversalInteractiveWorkbench({
       // 27. 社科：宏观景气周期 (Konjunktur)
       case "konjunktur": {
         const curX = 60 + (paramA / 100) * 320;
-        const curY = 100 - 45 * Math.sin((paramA / 100) * 2 * Math.PI);
+        const bip = +(1.5 + 2.5 * Math.sin((paramA / 100) * 2 * Math.PI)).toFixed(1);
+        const antiImpuls = paramB / 100; // 0 to 1.0 (fiscal counter-cyclical damper)
+
+        // Wave curve: damped by antiImpuls
+        const wavePoints: string[] = [];
+        for (let i = 0; i <= 60; i++) {
+          const t = i / 60;
+          const sx = 60 + t * 320;
+          const baseSin = Math.sin(t * 2 * Math.PI);
+          // Potential growth path has a 1% upward slope: from 115 down to 85
+          const potY = 115 - t * 30;
+          // Actual amplitude shrinks as antiImpuls increases
+          const amp = 45 * (1 - antiImpuls * 0.45);
+          const sy = potY - baseSin * amp;
+          wavePoints.push(`${i === 0 ? "M" : "L"} ${sx.toFixed(1)} ${sy.toFixed(1)}`);
+        }
+
+        const potCurY = 115 - (paramA / 100) * 30;
+        const curY = potCurY - Math.sin((paramA / 100) * 2 * Math.PI) * (45 * (1 - antiImpuls * 0.45));
+
         return (
           <svg className="w-full h-64 sm:h-72 rounded bg-[var(--paper-subtle)]/40 border border-[var(--line)]/50" viewBox="0 0 440 200">
-            <line x1="50" y1="130" x2="390" y2="70" stroke="var(--gray)" strokeWidth="1.8" strokeDasharray="4,4" />
-            <rect x="60" y="30" width="80" height="140" fill="#22c55e" fillOpacity="0.08" />
-            <rect x="140" y="30" width="80" height="140" fill="#f59e0b" fillOpacity="0.08" />
-            <rect x="220" y="30" width="80" height="140" fill="#f97316" fillOpacity="0.08" />
-            <rect x="300" y="30" width="80" height="140" fill="#ef4444" fillOpacity="0.08" />
-            <text x="100" y="45" textAnchor="middle" fontSize="8" fill="#16a34a" fontWeight="bold" fontFamily="monospace">Aufschwung</text>
-            <text x="180" y="45" textAnchor="middle" fontSize="8" fill="#d97706" fontWeight="bold" fontFamily="monospace">Boom</text>
-            <text x="260" y="45" textAnchor="middle" fontSize="8" fill="#ea580c" fontWeight="bold" fontFamily="monospace">Abschwung</text>
-            <text x="340" y="45" textAnchor="middle" fontSize="8" fill="#dc2626" fontWeight="bold" fontFamily="monospace">Depression</text>
-            <path d="M 60 100 C 100 50, 140 50, 180 60 C 220 70, 260 145, 300 150 C 340 155, 360 120, 380 100" fill="none" stroke="var(--accent)" strokeWidth="2.5" />
-            <circle cx={curX} cy={curY} r="6" fill="var(--accent)" stroke="var(--paper)" strokeWidth="2" />
+            {/* Phase Background Bands */}
+            <rect x="60" y="25" width="80" height="145" fill="#22c55e" fillOpacity="0.08" />
+            <rect x="140" y="25" width="80" height="145" fill="#f59e0b" fillOpacity="0.08" />
+            <rect x="220" y="25" width="80" height="145" fill="#ea580c" fillOpacity="0.08" />
+            <rect x="300" y="25" width="80" height="145" fill="#ef4444" fillOpacity="0.08" />
+
+            <text x="100" y="40" textAnchor="middle" fontSize="7.5" fill="#16a34a" fontWeight="bold" fontFamily="monospace">I. Aufschwung</text>
+            <text x="180" y="40" textAnchor="middle" fontSize="7.5" fill="#d97706" fontWeight="bold" fontFamily="monospace">II. Boom (Hoch)</text>
+            <text x="260" y="40" textAnchor="middle" fontSize="7.5" fill="#ea580c" fontWeight="bold" fontFamily="monospace">III. Abschwung</text>
+            <text x="340" y="40" textAnchor="middle" fontSize="7.5" fill="#dc2626" fontWeight="bold" fontFamily="monospace">IV. Tiefstand</text>
+
+            {/* Potential GDP trend line */}
+            <line x1="50" y1="120" x2="390" y2="80" stroke="var(--gray)" strokeWidth="1.8" strokeDasharray="4,4" />
+            <text x="390" y="74" textAnchor="end" fontSize="7" fill="var(--gray)" fontFamily="monospace">
+              Potenzialwachstum
+            </text>
+
+            {/* Actual business cycle curve */}
+            <path d={wavePoints.join(" ")} fill="none" stroke="var(--accent)" strokeWidth="2.5" />
+
+            {/* Moving current point */}
+            <circle cx={curX} cy={curY} r="5.5" fill="var(--accent)" stroke="var(--paper)" strokeWidth="2" />
+            <line x1={curX} y1={curY} x2={curX} y2="170" stroke="var(--accent)" strokeWidth="1" strokeDasharray="2,2" strokeOpacity="0.5" />
+
+            {/* Readout badge */}
+            <rect x="25" y="145" width="165" height="38" rx="3" fill="var(--surface)" stroke="var(--line)" />
+            <text x="33" y="159" fontSize="8" fill="var(--gray)" fontFamily="monospace">BIP-Wachstum: {bip}%</text>
+            <text x="33" y="173" fontSize="9" fontWeight="bold" fill="var(--accent)" fontFamily="monospace">
+              {data.subValue}
+            </text>
           </svg>
         );
       }
 
       // 28. 社科：欧洲央行利率走廊 (EZB)
       case "ezb": {
+        const leitzins = 0.25 + (paramA / 100) * 4.75; // 0.25 to 5.0%
+        // Corridor width: Spitzenrefinanzierung = leitzins + 0.25, Einlage = leitzins - 0.25
+        // Map rate 0% to 6% -> Y = 160 to 40
+        const mapZinsY = (r: number) => 160 - (r / 6) * 115;
+
+        const yLeit = mapZinsY(leitzins);
+        const ySpitze = mapZinsY(leitzins + 0.25);
+        const yEinlage = mapZinsY(Math.max(0, leitzins - 0.25));
+
         return (
           <svg className="w-full h-64 sm:h-72 rounded bg-[var(--paper-subtle)]/40 border border-[var(--line)]/50" viewBox="0 0 440 200">
-            <rect x="60" y="40" width="320" height="120" fill="var(--paper-subtle)" rx="4" />
-            <line x1="60" y1="60" x2="380" y2="60" stroke="#dc2626" strokeWidth="2" strokeDasharray="3,3" />
-            <text x="70" y="55" fontSize="8" fill="#dc2626" fontWeight="bold" fontFamily="monospace">Spitzenrefinanzierung (Kredit-Obergrenze)</text>
-            <line x1="60" y1="100" x2="380" y2="100" stroke="var(--accent)" strokeWidth="3" />
-            <text x="70" y="95" fontSize="9" fill="var(--accent)" fontWeight="bold" fontFamily="monospace">Hauptrefinanzierungssatz: {data.paramAValueDisplay}</text>
-            <line x1="60" y1="140" x2="380" y2="140" stroke="#16a34a" strokeWidth="2" strokeDasharray="3,3" />
-            <text x="70" y="135" fontSize="8" fill="#16a34a" fontWeight="bold" fontFamily="monospace">Einlagefazilität (Boden)</text>
-            <rect x="290" y="115" width="85" height="40" rx="3" fill="var(--surface)" stroke="var(--line)" />
-            <text x="332" y="132" textAnchor="middle" fontSize="8" fill="var(--gray)" fontFamily="monospace">HVPI-Inflation</text>
-            <text x="332" y="146" textAnchor="middle" fontSize="10" fontWeight="bold" fill="var(--ink)" fontFamily="monospace">{data.rateValue}</text>
+            {/* Rate Corridor Shaded Background */}
+            <rect x="60" y={ySpitze} width="320" height={Math.max(4, yEinlage - ySpitze)} fill="var(--accent)" fillOpacity="0.12" />
+
+            {/* Top Ceiling: Spitzenrefinanzierungsfazilität */}
+            <line x1="60" y1={ySpitze} x2="380" y2={ySpitze} stroke="#dc2626" strokeWidth="2" strokeDasharray="4,3" />
+            <text x="65" y={ySpitze - 4} fontSize="8" fill="#dc2626" fontWeight="bold" fontFamily="monospace">
+              Spitzenrefinanzierung (Obergrenze): {(leitzins + 0.25).toFixed(2)}%
+            </text>
+
+            {/* Center Policy Rate: Hauptrefinanzierungssatz */}
+            <line x1="60" y1={yLeit} x2="380" y2={yLeit} stroke="var(--accent)" strokeWidth="3" />
+            <circle cx="220" cy={yLeit} r="4.5" fill="var(--accent)" />
+            <text x="65" y={yLeit + 13} fontSize="8.5" fontWeight="bold" fill="var(--ink)" fontFamily="monospace">
+              Hauptrefinanzierungssatz: {leitzins.toFixed(2)}%
+            </text>
+
+            {/* Bottom Floor: Einlagefazilität */}
+            <line x1="60" y1={yEinlage} x2="380" y2={yEinlage} stroke="#16a34a" strokeWidth="2" strokeDasharray="4,3" />
+            <text x="65" y={yEinlage + 12} fontSize="8" fill="#16a34a" fontWeight="bold" fontFamily="monospace">
+              Einlagefazilität (Zinsboden): {Math.max(0, leitzins - 0.25).toFixed(2)}%
+            </text>
+
+            {/* Inflation Indicator Card */}
+            <rect x="290" y="25" width="105" height="46" rx="3" fill="var(--surface)" stroke="var(--line)" />
+            <text x="342" y="42" textAnchor="middle" fontSize="8" fill="var(--gray)" fontFamily="monospace">HVPI-Inflation</text>
+            <text x="342" y="60" textAnchor="middle" fontSize="11" fontWeight="bold" fill="var(--ink)" fontFamily="monospace">
+              {data.rateValue}
+            </text>
           </svg>
         );
       }
@@ -2615,56 +3584,161 @@ export function UniversalInteractiveWorkbench({
 
       // 31. 社科：李嘉图比较优势 (Ricardo)
       case "ricardo": {
+        const prodA = paramA / 100; // 0 to 1
+        const prodB = paramB / 100; // 0 to 1
+        // Dynamic slope lines for autarky vs free trade
+        const endAutarkyX = 220 + prodA * 70;
+        const endTradeX = 260 + (prodA + prodB) * 60;
+
         return (
           <svg className="w-full h-64 sm:h-72 rounded bg-[var(--paper-subtle)]/40 border border-[var(--line)]/50" viewBox="0 0 440 200">
-            <line x1="80" y1="160" x2="360" y2="160" stroke="var(--ink)" strokeWidth="1.5" />
-            <line x1="80" y1="30" x2="80" y2="160" stroke="var(--ink)" strokeWidth="1.5" />
-            <line x1="80" y1="60" x2="260" y2="160" stroke="#dc2626" strokeWidth="2" />
-            <text x="210" y="95" fontSize="8" fill="#dc2626" fontFamily="monospace">Land A (Autarkie)</text>
-            <line x1="80" y1="40" x2="340" y2="160" stroke="#16a34a" strokeWidth="2.5" strokeDasharray="3,3" />
-            <text x="290" y="75" fontSize="8" fill="#16a34a" fontWeight="bold" fontFamily="monospace">Mit Freihandel</text>
-            <rect x="140" y="115" width="160" height="35" rx="3" fill="var(--surface)" stroke="var(--line)" />
-            <text x="220" y="136" textAnchor="middle" fontSize="10" fontWeight="bold" fill="var(--accent)" fontFamily="monospace">{data.rateValue}</text>
+            {/* Axes */}
+            <line x1="80" y1="160" x2="380" y2="160" stroke="var(--ink)" strokeWidth="1.5" />
+            <line x1="80" y1="25" x2="80" y2="160" stroke="var(--ink)" strokeWidth="1.5" />
+            <text x="385" y="164" fontSize="8" fill="var(--ink)" fontFamily="monospace">Maschinenbau (Einheiten) →</text>
+            <text x="75" y="20" textAnchor="end" fontSize="8" fill="var(--ink)" fontFamily="monospace">↑ Agrargüter</text>
+
+            {/* Transform Curve 1: Autarky PPF (Transformationskurve Autarkie) */}
+            <line x1="80" y1="65" x2={endAutarkyX} y2="160" stroke="#dc2626" strokeWidth="2" />
+            <text x={endAutarkyX} y="155" textAnchor="end" fontSize="8" fill="#dc2626" fontFamily="monospace">
+              Autarkie
+            </text>
+
+            {/* Transform Curve 2: Free Trade PPF Shift outwards */}
+            <line x1="80" y1="45" x2={endTradeX} y2="160" stroke="#16a34a" strokeWidth="2.5" strokeDasharray="4,2" />
+            <text x={endTradeX} y="155" fontSize="8" fill="#16a34a" fontWeight="bold" fontFamily="monospace">
+              Freihandel
+            </text>
+
+            {/* Welfare Gain Area */}
+            <polygon
+              points={`80,65 ${endAutarkyX},160 ${endTradeX},160 80,45`}
+              fill="#16a34a"
+              fillOpacity="0.15"
+            />
+
+            {/* Dynamic Results Card */}
+            <rect x="180" y="35" width="180" height="42" rx="3" fill="var(--surface)" stroke="var(--line)" />
+            <text x="270" y="50" textAnchor="middle" fontSize="8" fill="var(--gray)" fontFamily="monospace">
+              Wohlfahrtsgewinn (Ricardo):
+            </text>
+            <text x="270" y="66" textAnchor="middle" fontSize="10" fontWeight="bold" fill="#16a34a" fontFamily="monospace">
+              {data.rateValue}
+            </text>
           </svg>
         );
       }
 
       // 32. 社科：投资区位雷达 (Standort Deutschland)
       case "standort": {
+        const energieP = (100 - paramA) / 100; // lower energy burden = higher score
+        const bueroP = (100 - paramB) / 100; // lower bureaucracy = higher score
+        const infraP = 0.88; // fixed high
+        const ausbildP = 0.85; // dual education high
+        const rechtP = 0.90; // legal certainty high
+
+        // 5-point radar polygon:
+        // Angle 0: Top (Infrastruktur)
+        // Angle 72: Top-right (Duale Ausbildung)
+        // Angle 144: Bottom-right (Rechtssicherheit)
+        // Angle 216: Bottom-left (Energiekosten)
+        // Angle 288: Top-left (Bürokratie)
+        const centerRx = 220;
+        const centerRy = 100;
+        const maxR = 68;
+
+        const getPt = (angleDeg: number, val: number) => {
+          const rad = ((angleDeg - 90) * Math.PI) / 180;
+          return `${(centerRx + maxR * val * Math.cos(rad)).toFixed(1)},${(centerRy + maxR * val * Math.sin(rad)).toFixed(1)}`;
+        };
+
+        const gridPts = [0, 72, 144, 216, 288].map((a) => getPt(a, 1.0)).join(" ");
+        const dataPts = [
+          getPt(0, infraP),
+          getPt(72, ausbildP),
+          getPt(144, rechtP),
+          getPt(216, Math.max(0.15, energieP)),
+          getPt(288, Math.max(0.15, bueroP)),
+        ].join(" ");
+
         return (
           <svg className="w-full h-64 sm:h-72 rounded bg-[var(--paper-subtle)]/40 border border-[var(--line)]/50" viewBox="0 0 440 200">
-            <polygon points="220,40 290,80 260,150 180,150 150,80" fill="none" stroke="var(--gray)" strokeWidth="1" strokeDasharray="2,2" />
-            <polygon points="220,50 280,85 240,135 190,140 170,85" fill="var(--accent)" fillOpacity="0.25" stroke="var(--accent)" strokeWidth="2" />
-            <text x="220" y="32" textAnchor="middle" fontSize="8" fontFamily="monospace">Infrastruktur</text>
-            <text x="310" y="85" fontSize="8" fontFamily="monospace">Duale Ausbildung</text>
-            <text x="270" y="165" fontSize="8" fontFamily="monospace">Rechtssicherheit</text>
-            <text x="170" y="165" fontSize="8" fontFamily="monospace">Energiekosten</text>
-            <text x="110" y="85" fontSize="8" fontFamily="monospace">Bürokratie</text>
-            <rect x="310" y="120" width="110" height="40" rx="3" fill="var(--surface)" stroke="var(--line)" />
-            <text x="365" y="144" textAnchor="middle" fontSize="10" fontWeight="bold" fill="var(--ink)" fontFamily="monospace">{data.rateValue}</text>
+            {/* Outer reference grid radar */}
+            <polygon points={gridPts} fill="none" stroke="var(--gray)" strokeWidth="1" strokeDasharray="3,3" strokeOpacity="0.4" />
+            {[0.5, 0.75].map((s, idx) => (
+              <polygon key={idx} points={[0, 72, 144, 216, 288].map((a) => getPt(a, s)).join(" ")} fill="none" stroke="var(--gray)" strokeWidth="0.8" strokeDasharray="2,2" strokeOpacity="0.25" />
+            ))}
+
+            {/* Dynamic radar polygon */}
+            <polygon points={dataPts} fill="var(--accent)" fillOpacity="0.28" stroke="var(--accent)" strokeWidth="2.2" />
+
+            {/* Radar vertex labels */}
+            <text x="220" y="24" textAnchor="middle" fontSize="7.5" fontWeight="bold" fill="var(--ink)" fontFamily="monospace">Infrastruktur (88)</text>
+            <text x="315" y="80" fontSize="7.5" fontWeight="bold" fill="var(--ink)" fontFamily="monospace">Duale Ausbildung (85)</text>
+            <text x="275" y="178" fontSize="7.5" fontWeight="bold" fill="var(--ink)" fontFamily="monospace">Rechtssicherheit (90)</text>
+            <text x="165" y="178" textAnchor="end" fontSize="7.5" fontWeight="bold" fill="#dc2626" fontFamily="monospace">Energie ({Math.round(energieP * 100)})</text>
+            <text x="125" y="80" textAnchor="end" fontSize="7.5" fontWeight="bold" fill="#dc2626" fontFamily="monospace">Bürokratie ({Math.round(bueroP * 100)})</text>
+
+            {/* Score Badge */}
+            <rect x="310" y="115" width="115" height="42" rx="3" fill="var(--surface)" stroke="var(--line)" />
+            <text x="367" y="130" textAnchor="middle" fontSize="8" fill="var(--gray)" fontFamily="monospace">DIHK-Index</text>
+            <text x="367" y="146" textAnchor="middle" fontSize="10" fontWeight="bold" fill="var(--accent)" fontFamily="monospace">
+              {data.rateValue}
+            </text>
           </svg>
         );
       }
 
       // 33. 哲学：康德定言令式普适化过滤机 (Kant)
       case "kant": {
-        const pass = data.graphY > 50;
+        const universalisierbar = paramA > 50 && paramB > 50;
+        const selfZweck = paramB; // 0 to 100%
+
         return (
           <svg className="w-full h-64 sm:h-72 rounded bg-[var(--paper-subtle)]/40 border border-[var(--line)]/50" viewBox="0 0 440 200">
-            <rect x="50" y="75" width="80" height="50" rx="4" fill="var(--paper)" stroke="var(--ink)" strokeWidth="1.5" />
-            <text x="90" y="95" textAnchor="middle" fontSize="8" fill="var(--gray)" fontFamily="monospace">Subjektive</text>
-            <text x="90" y="110" textAnchor="middle" fontSize="9" fontWeight="bold" fill="var(--ink)" fontFamily="monospace">Maxime</text>
+            {/* Input: Subjective Maxime */}
+            <rect x="35" y="70" width="95" height="55" rx="4" fill="var(--paper)" stroke="var(--ink)" strokeWidth="1.5" />
+            <text x="82" y="88" textAnchor="middle" fontSize="8" fill="var(--gray)" fontFamily="monospace">Subjektive</text>
+            <text x="82" y="102" textAnchor="middle" fontSize="10" fontWeight="bold" fill="var(--ink)" fontFamily="monospace">Maxime</text>
+            <text x="82" y="115" textAnchor="middle" fontSize="7" fill="var(--accent)" fontFamily="monospace">{paramA}% Geltung</text>
 
-            <path d="M 130 100 L 190 100" stroke="var(--ink)" strokeWidth="2" />
-            <polygon points="230,60 270,100 230,140 190,100" fill="#fef08a" stroke="var(--ink)" strokeWidth="1.8" />
-            <text x="230" y="98" textAnchor="middle" fontSize="8" fontWeight="bold" fill="#78350f" fontFamily="monospace">Naturgesetz-</text>
-            <text x="230" y="110" textAnchor="middle" fontSize="8" fontWeight="bold" fill="#78350f" fontFamily="monospace">Filter</text>
+            {/* Arrow into Filter 1: Universal Law (Naturgesetz-Formel) */}
+            <line x1="130" y1="97" x2="165" y2="97" stroke="var(--ink)" strokeWidth="2" />
+            <polygon points="165,97 158,93 158,101" fill="var(--ink)" />
 
-            <path d="M 270 100 L 330 100" stroke="var(--ink)" strokeWidth="2" />
-            <rect x="330" y="75" width="90" height="50" rx="4" fill={pass ? "#dcfce7" : "#fee2e2"} stroke={pass ? "#16a34a" : "#dc2626"} strokeWidth="2" />
-            <text x="375" y="95" textAnchor="middle" fontSize="8" fill="var(--gray)" fontFamily="monospace">Urteil</text>
-            <text x="375" y="110" textAnchor="middle" fontSize="8" fontWeight="bold" fill={pass ? "#15803d" : "#b91c1c"} fontFamily="monospace">
-              {pass ? "GEBOTEN" : "VERBOTEN"}
+            {/* Filter Chamber 1: Universalisierung */}
+            <polygon points="205,55 245,97 205,140 165,97" fill="#fef08a" stroke="#ca8a04" strokeWidth="1.8" />
+            <text x="205" y="94" textAnchor="middle" fontSize="7.5" fontWeight="bold" fill="#78350f" fontFamily="monospace">1. Allgemeines</text>
+            <text x="205" y="105" textAnchor="middle" fontSize="7.5" fontWeight="bold" fill="#78350f" fontFamily="monospace">Gesetz?</text>
+
+            {/* Arrow into Filter 2: Humanity / End-in-itself (Selbstzweck-Formel) */}
+            <line x1="245" y1="97" x2="275" y2="97" stroke="var(--ink)" strokeWidth="2" />
+            <polygon points="275,97 268,93 268,101" fill="var(--ink)" />
+
+            {/* Filter Chamber 2: Zweck an sich selbst */}
+            <polygon points="315,55 355,97 315,140 275,97" fill={selfZweck > 50 ? "#dcfce7" : "#fee2e2"} stroke={selfZweck > 50 ? "#16a34a" : "#dc2626"} strokeWidth="1.8" />
+            <text x="315" y="94" textAnchor="middle" fontSize="7" fontWeight="bold" fill={selfZweck > 50 ? "#15803d" : "#b91c1c"} fontFamily="monospace">2. Mensch als</text>
+            <text x="315" y="105" textAnchor="middle" fontSize="7" fontWeight="bold" fill={selfZweck > 50 ? "#15803d" : "#b91c1c"} fontFamily="monospace">Zweck?</text>
+
+            {/* Output: Final Verdict */}
+            <line x1="355" y1="97" x2="380" y2="97" stroke="var(--ink)" strokeWidth="2" />
+            <polygon points="380,97 373,93 373,101" fill="var(--ink)" />
+
+            <circle cx="405" cy="97" r="22" fill={universalisierbar ? "#16a34a" : "#dc2626"} />
+            <text x="405" y="95" textAnchor="middle" fontSize="8" fontWeight="bold" fill="white" fontFamily="monospace">
+              {universalisierbar ? "GEBOTEN" : "VERBOTEN"}
+            </text>
+            <text x="405" y="106" textAnchor="middle" fontSize="6.5" fill="white" fontFamily="monospace">
+              {universalisierbar ? "Pflicht" : "Widerspruch"}
+            </text>
+
+            {/* Bottom Insight Badge */}
+            <rect x="70" y="150" width="300" height="35" rx="3" fill="var(--surface)" stroke="var(--line)" />
+            <text x="220" y="165" textAnchor="middle" fontSize="8" fill="var(--gray)" fontFamily="monospace">
+              Kants Imperativ: {universalisierbar ? "Kein Widerspruch im Wollen und Denken" : "Widerspruch: Maxime zerstört ihre eigene Möglichkeit"}
+            </text>
+            <text x="220" y="177" textAnchor="middle" fontSize="9" fontWeight="bold" fill={universalisierbar ? "#16a34a" : "#dc2626"} fontFamily="monospace">
+              {data.rateValue}
             </text>
           </svg>
         );
@@ -2673,87 +3747,312 @@ export function UniversalInteractiveWorkbench({
       // 34. 哲学：柏拉图洞穴之喻 (Höhle)
       case "hoehle": {
         const step = paramA < 25 ? 0 : paramA < 50 ? 1 : paramA < 75 ? 2 : 3;
+
+        // Sun position and glow
+        const sunGlow = Math.max(12, 12 + (paramA / 100) * 16);
+
         return (
           <svg className="w-full h-64 sm:h-72 rounded bg-[var(--paper-subtle)]/40 border border-[var(--line)]/50" viewBox="0 0 440 200">
-            <path d="M 40 170 L 130 170 L 130 130 L 220 130 L 220 90 L 310 90 L 310 50 L 400 50" fill="none" stroke="var(--ink)" strokeWidth="2" />
-            <rect x="40" y="140" width="80" height="28" fill="#1e293b" fillOpacity={step === 0 ? 0.8 : 0.2} rx="3" />
-            <text x="80" y="157" textAnchor="middle" fontSize="9" fill="white" fontFamily="monospace">I. Schatten</text>
-            <rect x="130" y="100" width="80" height="28" fill="#ea580c" fillOpacity={step === 1 ? 0.8 : 0.2} rx="3" />
-            <text x="170" y="117" textAnchor="middle" fontSize="9" fill="white" fontFamily="monospace">II. Feuer</text>
-            <rect x="220" y="60" width="80" height="28" fill="#0284c7" fillOpacity={step === 2 ? 0.8 : 0.2} rx="3" />
-            <text x="260" y="77" textAnchor="middle" fontSize="9" fill="white" fontFamily="monospace">III. Dianoia</text>
-            <circle cx="360" cy="35" r="22" fill="#facc15" />
-            <text x="360" y="38" textAnchor="middle" fontSize="8" fontWeight="bold" fill="#78350f" fontFamily="monospace">SONNE</text>
-            <circle cx={70 + step * 90} cy={160 - step * 40} r="6" fill="var(--accent)" stroke="var(--paper)" strokeWidth="2" />
+            {/* Cave ascent stairway profile */}
+            <path
+              d="M 35 170 L 120 170 L 120 135 L 210 135 L 210 95 L 300 95 L 300 50 L 405 50"
+              fill="none"
+              stroke="var(--ink)"
+              strokeWidth="2"
+            />
+
+            {/* Step I: Schatten (Cave wall & Chains) */}
+            <rect x="40" y="142" width="75" height="26" fill="#0f172a" fillOpacity={step === 0 ? 0.9 : 0.25} rx="3" />
+            <text x="77" y="158" textAnchor="middle" fontSize="8" fontWeight="bold" fill="white" fontFamily="monospace">
+              I. Schatten (Eikasia)
+            </text>
+
+            {/* Step II: Feuer & Artefakte */}
+            <rect x="125" y="107" width="80" height="26" fill="#ea580c" fillOpacity={step === 1 ? 0.9 : 0.25} rx="3" />
+            <text x="165" y="123" textAnchor="middle" fontSize="8" fontWeight="bold" fill="white" fontFamily="monospace">
+              II. Feuer (Pistis)
+            </text>
+
+            {/* Step III: Reflexionen / Sterne */}
+            <rect x="215" y="67" width="80" height="26" fill="#0284c7" fillOpacity={step === 2 ? 0.9 : 0.25} rx="3" />
+            <text x="255" y="83" textAnchor="middle" fontSize="8" fontWeight="bold" fill="white" fontFamily="monospace">
+              III. Dianoia (Mathe)
+            </text>
+
+            {/* Step IV: Die Idee des Guten (Sonne) */}
+            <circle cx="365" cy="40" r={sunGlow} fill="#facc15" fillOpacity="0.4" />
+            <circle cx="365" cy="40" r="16" fill="#facc15" stroke="#ca8a04" strokeWidth="1.5" />
+            <text x="365" y="43" textAnchor="middle" fontSize="7.5" fontWeight="bold" fill="#78350f" fontFamily="monospace">
+              IV. SONNE
+            </text>
+
+            {/* Moving Philosopher / Soul (paideia) */}
+            <circle
+              cx={75 + step * 92}
+              cy={155 - step * 38}
+              r="7"
+              fill="var(--accent)"
+              stroke="var(--paper)"
+              strokeWidth="2"
+            />
+            <text
+              x={75 + step * 92}
+              y={145 - step * 38}
+              textAnchor="middle"
+              fontSize="7.5"
+              fontWeight="bold"
+              fill="var(--accent)"
+              fontFamily="monospace"
+            >
+              Erkenner
+            </text>
+
+            {/* Readout Badge */}
+            <rect x="50" y="18" width="220" height="38" rx="3" fill="var(--surface)" stroke="var(--line)" />
+            <text x="60" y="32" fontSize="8" fill="var(--gray)" fontFamily="monospace">
+              Platons Paideia: {step < 2 ? "Sinnenwelt (Doxa / Schein)" : "Ideenwelt (Episteme / Wahrheit)"}
+            </text>
+            <text x="60" y="46" fontSize="9" fontWeight="bold" fill="var(--ink)" fontFamily="monospace">
+              {data.rateValue}
+            </text>
           </svg>
         );
       }
 
       // 35. 哲学：社会契约谱系 (Staatsvertrag)
       case "staatsvertrag": {
+        const pA = paramA; // 0 to 100
+        const hobbesActive = pA < 35;
+        const lockeActive = pA >= 35 && pA < 70;
+        const rousseauActive = pA >= 70;
+        const freiheitAbgabe = paramB;
+
         return (
           <svg className="w-full h-64 sm:h-72 rounded bg-[var(--paper-subtle)]/40 border border-[var(--line)]/50" viewBox="0 0 440 200">
-            <line x1="60" y1="100" x2="380" y2="100" stroke="var(--ink)" strokeWidth="2" />
-            <circle cx="100" cy="100" r="12" fill="#ef4444" />
-            <text x="100" y="80" textAnchor="middle" fontSize="9" fontWeight="bold" fill="#ef4444" fontFamily="monospace">Hobbes</text>
-            <circle cx="220" cy="100" r="12" fill="#0284c7" />
-            <text x="220" y="80" textAnchor="middle" fontSize="9" fontWeight="bold" fill="#0284c7" fontFamily="monospace">Locke</text>
-            <circle cx="340" cy="100" r="12" fill="#16a34a" />
-            <text x="340" y="80" textAnchor="middle" fontSize="9" fontWeight="bold" fill="#16a34a" fontFamily="monospace">Rousseau</text>
-            <circle cx={60 + (paramA / 100) * 320} cy="100" r="8" fill="var(--accent)" stroke="var(--paper)" strokeWidth="2.5" />
-            <rect x="140" y="135" width="160" height="35" rx="3" fill="var(--surface)" stroke="var(--line)" />
-            <text x="220" y="156" textAnchor="middle" fontSize="10" fontWeight="bold" fill="var(--ink)" fontFamily="monospace">{data.rateValue}</text>
+            {/* Axis timeline connecting the 3 philosophers */}
+            <line x1="60" y1="80" x2="380" y2="80" stroke="var(--ink)" strokeWidth="2" />
+
+            {/* Node 1: Hobbes (Leviathan) */}
+            <circle cx="100" cy="80" r={hobbesActive ? 20 : 14} fill={hobbesActive ? "#dc2626" : "#fee2e2"} stroke="#dc2626" strokeWidth="2" />
+            <text x="100" y="84" textAnchor="middle" fontSize={hobbesActive ? "10" : "8"} fontWeight="bold" fill={hobbesActive ? "white" : "#dc2626"} fontFamily="monospace">
+              Hobbes
+            </text>
+            <text x="100" y="115" textAnchor="middle" fontSize="7" fill="var(--gray)" fontFamily="monospace">Leviathan</text>
+            <text x="100" y="125" textAnchor="middle" fontSize="6.5" fill="var(--gray)" fontFamily="monospace">(Sicherheit)</text>
+
+            {/* Node 2: Locke (Zwei Abhandlungen) */}
+            <circle cx="220" cy="80" r={lockeActive ? 20 : 14} fill={lockeActive ? "#0284c7" : "#e0f2fe"} stroke="#0284c7" strokeWidth="2" />
+            <text x="220" y="84" textAnchor="middle" fontSize={lockeActive ? "10" : "8"} fontWeight="bold" fill={lockeActive ? "white" : "#0284c7"} fontFamily="monospace">
+              Locke
+            </text>
+            <text x="220" y="115" textAnchor="middle" fontSize="7" fill="var(--gray)" fontFamily="monospace">Gewaltenteilung</text>
+            <text x="220" y="125" textAnchor="middle" fontSize="6.5" fill="var(--gray)" fontFamily="monospace">(Eigentum/Rechte)</text>
+
+            {/* Node 3: Rousseau (Contrat Social) */}
+            <circle cx="340" cy="80" r={rousseauActive ? 20 : 14} fill={rousseauActive ? "#16a34a" : "#dcfce7"} stroke="#16a34a" strokeWidth="2" />
+            <text x="340" y="84" textAnchor="middle" fontSize={rousseauActive ? "10" : "8"} fontWeight="bold" fill={rousseauActive ? "white" : "#16a34a"} fontFamily="monospace">
+              Rousseau
+            </text>
+            <text x="340" y="115" textAnchor="middle" fontSize="7" fill="var(--gray)" fontFamily="monospace">Gemeinwille</text>
+            <text x="340" y="125" textAnchor="middle" fontSize="6.5" fill="var(--gray)" fontFamily="monospace">(Volkssouveränität)</text>
+
+            {/* Current Position Cursor */}
+            <circle cx={60 + (pA / 100) * 320} cy="80" r="7" fill="var(--accent)" stroke="var(--paper)" strokeWidth="2" />
+
+            {/* Bottom info readout */}
+            <rect x="70" y="145" width="300" height="42" rx="3" fill="var(--surface)" stroke="var(--line)" />
+            <text x="220" y="160" textAnchor="middle" fontSize="8" fill="var(--gray)" fontFamily="monospace">
+              Freiheitsabgabe: {freiheitAbgabe}% | Herrschaftsform:
+            </text>
+            <text x="220" y="176" textAnchor="middle" fontSize="10" fontWeight="bold" fill="var(--ink)" fontFamily="monospace">
+              {data.rateValue}
+            </text>
           </svg>
         );
       }
 
       // 36. 哲学：罗尔斯无知之幕天平 (Rawls)
       case "rawls": {
+        const schleierAktiv = paramA > 40;
+        const diffPrinzip = paramB; // 0 to 100% transfer
+        const minIncome = Math.round(20 + (diffPrinzip / 100) * 55); // worst-off income
+
         return (
           <svg className="w-full h-64 sm:h-72 rounded bg-[var(--paper-subtle)]/40 border border-[var(--line)]/50" viewBox="0 0 440 200">
-            <rect x="80" y="40" width="280" height="90" fill="#334155" fillOpacity={paramA > 40 ? 0.9 : 0.15} rx="6" />
-            <text x="220" y="85" textAnchor="middle" fontSize="12" fontWeight="bold" fill={paramA > 40 ? "#f8fafc" : "#94a3b8"} fontFamily="monospace">
-              {paramA > 40 ? "SCHLEIER DES NICHTWISSENS (AKTIV)" : "KEIN SCHLEIER (PRIVILEGIERT)"}
+            {/* The Veil of Ignorance Curtain / Cloud */}
+            <rect
+              x="50"
+              y="30"
+              width="340"
+              height="80"
+              rx="6"
+              fill="#1e293b"
+              fillOpacity={schleierAktiv ? 0.9 : 0.15}
+              stroke="var(--ink)"
+              strokeWidth="1.5"
+            />
+            <text
+              x="220"
+              y="60"
+              textAnchor="middle"
+              fontSize="11"
+              fontWeight="bold"
+              fill={schleierAktiv ? "#f8fafc" : "#64748b"}
+              fontFamily="monospace"
+            >
+              {schleierAktiv ? "SCHLEIER DES NICHTWISSENS (VEIL OF IGNORANCE)" : "KEIN SCHLEIER: STATUS & TALENTE BEKANNT"}
             </text>
-            <rect x="130" y="145" width="180" height="35" rx="3" fill="var(--surface)" stroke="var(--line)" />
-            <text x="220" y="166" textAnchor="middle" fontSize="10" fontWeight="bold" fill="var(--accent)" fontFamily="monospace">{data.rateValue}</text>
+            <text
+              x="220"
+              y="78"
+              textAnchor="middle"
+              fontSize="8"
+              fill={schleierAktiv ? "#94a3b8" : "#94a3b8"}
+              fontFamily="monospace"
+            >
+              {schleierAktiv ? "Niemand kennt seine spätere Klasse, Hautfarbe oder Gesundheit" : "Privilegierte Schichten blockieren Umverteilung"}
+            </text>
+
+            {/* Maximin distribution bars under the veil */}
+            {/* Worst-off group */}
+            <rect x="80" y={170 - minIncome} width="55" height={minIncome} fill="#16a34a" rx="2" />
+            <text x="107" y="165 - minIncome - 4" textAnchor="middle" fontSize="8" fontWeight="bold" fill="#16a34a" fontFamily="monospace">
+              {minIncome}
+            </text>
+            <text x="107" y="184" textAnchor="middle" fontSize="7" fill="var(--ink)" fontFamily="monospace">
+              Ärmste (Min)
+            </text>
+
+            {/* Middle group */}
+            <rect x="180" y="170 - (minIncome + 25)" width="55" height={minIncome + 25} fill="#0284c7" rx="2" />
+            <text x="207" y={170 - (minIncome + 25) - 4} textAnchor="middle" fontSize="8" fontWeight="bold" fill="#0284c7" fontFamily="monospace">
+              {minIncome + 25}
+            </text>
+            <text x="207" y="184" textAnchor="middle" fontSize="7" fill="var(--ink)" fontFamily="monospace">
+              Mitte
+            </text>
+
+            {/* Richest group */}
+            <rect x="280" y="170 - Math.min(100, minIncome + 50)" width="55" height={Math.min(100, minIncome + 50)} fill="#f59e0b" rx="2" />
+            <text x="307" y={170 - Math.min(100, minIncome + 50) - 4} textAnchor="middle" fontSize="8" fontWeight="bold" fill="#b45309" fontFamily="monospace">
+              {Math.min(100, minIncome + 50)}
+            </text>
+            <text x="307" y="184" textAnchor="middle" fontSize="7" fill="var(--ink)" fontFamily="monospace">
+              Reichste
+            </text>
+
+            {/* Verdict Box */}
+            <rect x="350" y="125" width="80" height="55" rx="3" fill="var(--surface)" stroke="var(--line)" />
+            <text x="390" y="142" textAnchor="middle" fontSize="7" fill="var(--gray)" fontFamily="monospace">Maximin:</text>
+            <text x="390" y="158" textAnchor="middle" fontSize="8" fontWeight="bold" fill={schleierAktiv ? "#16a34a" : "#dc2626"} fontFamily="monospace">
+              {schleierAktiv ? "GERECHT" : "UNGERECHT"}
+            </text>
           </svg>
         );
       }
 
       // 37. 哲学：波普尔黑天鹅证伪计数器 (Popper)
       case "popper": {
-        const geg = paramB > 60;
+        const whiteCount = Math.round(10 + paramA * 99);
+        const blackFound = paramB > 60;
+
         return (
           <svg className="w-full h-64 sm:h-72 rounded bg-[var(--paper-subtle)]/40 border border-[var(--line)]/50" viewBox="0 0 440 200">
-            <rect x="60" y="40" width="140" height="110" rx="4" fill="var(--paper)" stroke="var(--ink)" strokeWidth="1.5" />
-            <text x="130" y="65" textAnchor="middle" fontSize="9" fill="var(--gray)" fontFamily="monospace">Weiße Schwäne (n)</text>
-            <text x="130" y="105" textAnchor="middle" fontSize="18" fontWeight="bold" fill="var(--ink)" fontFamily="monospace">{data.paramAValueDisplay}</text>
-
-            <rect x="240" y="40" width="140" height="110" rx="4" fill={geg ? "#0f172a" : "var(--paper)"} stroke={geg ? "#dc2626" : "var(--line)"} strokeWidth="2" />
-            <text x="310" y="65" textAnchor="middle" fontSize="9" fill={geg ? "#f8fafc" : "var(--gray)"} fontFamily="monospace">Schwarzer Schwan</text>
-            <text x="310" y="105" textAnchor="middle" fontSize="16" fontWeight="bold" fill={geg ? "#ef4444" : "var(--gray)"} fontFamily="monospace">
-              {geg ? "WIDERLEGT!" : "Keiner"}
+            {/* Box 1: Induktive Verifikation (Weiße Schwäne) */}
+            <rect x="50" y="35" width="155" height="115" rx="4" fill="var(--surface)" stroke="var(--ink)" strokeWidth="1.5" />
+            <text x="127" y="55" textAnchor="middle" fontSize="8.5" fill="var(--gray)" fontFamily="monospace">
+              Induktion: Beobachtungen
             </text>
-            <rect x="150" y="160" width="140" height="25" rx="3" fill="var(--surface)" stroke="var(--line)" />
-            <text x="220" y="176" textAnchor="middle" fontSize="9" fontWeight="bold" fill={geg ? "#dc2626" : "var(--accent)"} fontFamily="monospace">{data.rateValue}</text>
+            <text x="127" y="90" textAnchor="middle" fontSize="22" fontWeight="bold" fill="var(--ink)" fontFamily="monospace">
+              n = {whiteCount}
+            </text>
+            <text x="127" y="110" textAnchor="middle" fontSize="8" fill="var(--ink)" fontFamily="monospace">
+              weiße Schwäne 🦢
+            </text>
+            <text x="127" y="135" textAnchor="middle" fontSize="7" fill="var(--gray)" fontFamily="monospace">
+              (Beweist die All-Aussage NIE!)
+            </text>
+
+            {/* Modus Tollens Arrow */}
+            <line x1="210" y1="92" x2="230" y2="92" stroke="var(--ink)" strokeWidth="2" strokeDasharray="3,2" />
+
+            {/* Box 2: Falsifikation (Schwarzer Schwan) */}
+            <rect
+              x="235"
+              y="35"
+              width="155"
+              height="115"
+              rx="4"
+              fill={blackFound ? "#0f172a" : "var(--surface)"}
+              stroke={blackFound ? "#dc2626" : "var(--line)"}
+              strokeWidth={blackFound ? 2.5 : 1}
+            />
+            <text x="312" y="55" textAnchor="middle" fontSize="8.5" fill={blackFound ? "#f8fafc" : "var(--gray)"} fontFamily="monospace">
+              Falsifikation: Gegenbeispiel
+            </text>
+            <text x="312" y="90" textAnchor="middle" fontSize="20" fontWeight="bold" fill={blackFound ? "#ef4444" : "var(--gray)"} fontFamily="monospace">
+              {blackFound ? "1 SCHWARZER!" : "0 Gefunden"}
+            </text>
+            <text x="312" y="110" textAnchor="middle" fontSize="8" fill={blackFound ? "#fca5a5" : "var(--gray)"} fontFamily="monospace">
+              {blackFound ? "Modus Tollens: ¬Q ⇒ ¬P" : "Suche nach Gegenbeispiel..."}
+            </text>
+            <text x="312" y="135" textAnchor="middle" fontSize="8" fontWeight="bold" fill={blackFound ? "#ef4444" : "var(--gray)"} fontFamily="monospace">
+              {blackFound ? "THEORIE WIDERLEGT!" : "Vorläufig bewährt"}
+            </text>
+
+            {/* Readout */}
+            <rect x="110" y="160" width="220" height="28" rx="3" fill="var(--surface)" stroke="var(--line)" />
+            <text x="220" y="178" textAnchor="middle" fontSize="9" fontWeight="bold" fill={blackFound ? "#dc2626" : "var(--accent)"} fontFamily="monospace">
+              {data.rateValue}
+            </text>
           </svg>
         );
       }
 
       // 38. 哲学：阿伦特独立判断力齿轮 (Arendt)
       case "arendt": {
+        const konformitaet = paramA; // 0 to 100%
+        const urteilskraft = paramB; // 0 to 100%
+        const isMitlaeufer = konformitaet > 50 && urteilskraft < 40;
+
         return (
           <svg className="w-full h-64 sm:h-72 rounded bg-[var(--paper-subtle)]/40 border border-[var(--line)]/50" viewBox="0 0 440 200">
-            <circle cx="140" cy="100" r="45" fill="none" stroke="var(--ink)" strokeWidth="4" strokeDasharray="8,6" />
-            <circle cx="140" cy="100" r="15" fill="var(--paper-subtle)" stroke="var(--ink)" strokeWidth="1.5" />
-            <text x="140" y="104" textAnchor="middle" fontSize="7" fill="var(--gray)" fontFamily="monospace">Rädchen</text>
+            {/* Gear 1: Bureaucratic Machinery (Apparat) */}
+            <circle cx="130" cy="95" r="45" fill="none" stroke="var(--ink)" strokeWidth="4" strokeDasharray="10,6" />
+            <circle cx="130" cy="95" r="16" fill="var(--paper-subtle)" stroke="var(--ink)" strokeWidth="1.5" />
+            <text x="130" y="99" textAnchor="middle" fontSize="7" fill="var(--gray)" fontFamily="monospace">Bürokratie</text>
+            <text x="130" y="155" textAnchor="middle" fontSize="8" fill="var(--ink)" fontFamily="monospace">
+              Konformitätsdruck: {konformitaet}%
+            </text>
 
-            <circle cx="300" cy="100" r="40" fill="#fef08a" stroke="#ca8a04" strokeWidth="2" />
-            <text x="300" y="95" textAnchor="middle" fontSize="9" fontWeight="bold" fill="#78350f" fontFamily="monospace">Autonome</text>
-            <text x="300" y="110" textAnchor="middle" fontSize="9" fontWeight="bold" fill="#78350f" fontFamily="monospace">Urteilskraft</text>
-            <rect x="130" y="160" width="180" height="25" rx="3" fill="var(--surface)" stroke="var(--line)" />
-            <text x="220" y="176" textAnchor="middle" fontSize="9" fontWeight="bold" fill="var(--ink)" fontFamily="monospace">{data.rateValue}</text>
+            {/* Connection: Mesh or Broken */}
+            {isMitlaeufer ? (
+              <text x="215" y="98" textAnchor="middle" fontSize="8" fill="#dc2626" fontWeight="bold" fontFamily="monospace">
+                ⚙️ Rädchen im Getriebe
+              </text>
+            ) : (
+              <text x="215" y="98" textAnchor="middle" fontSize="8" fill="#16a34a" fontWeight="bold" fontFamily="monospace">
+                ⚡ Entkoppelt (Reflexion)
+              </text>
+            )}
+
+            {/* Gear 2: Individual Judgement (Urteilskraft / Gewissensdialog) */}
+            <circle cx="300" cy="95" r="42" fill={isMitlaeufer ? "#fee2e2" : "#fef08a"} stroke={isMitlaeufer ? "#dc2626" : "#ca8a04"} strokeWidth="2.5" />
+            <text x="300" y="90" textAnchor="middle" fontSize="9" fontWeight="bold" fill="#78350f" fontFamily="monospace">
+              Autonome
+            </text>
+            <text x="300" y="104" textAnchor="middle" fontSize="9" fontWeight="bold" fill="#78350f" fontFamily="monospace">
+              Urteilskraft
+            </text>
+            <text x="300" y="155" textAnchor="middle" fontSize="8" fill="var(--ink)" fontFamily="monospace">
+              Reflexionsgrad: {urteilskraft}%
+            </text>
+
+            {/* Result Readout */}
+            <rect x="90" y="165" width="260" height="26" rx="3" fill="var(--surface)" stroke="var(--line)" />
+            <text x="220" y="182" textAnchor="middle" fontSize="9" fontWeight="bold" fill={isMitlaeufer ? "#dc2626" : "#16a34a"} fontFamily="monospace">
+              Haltung: {data.rateValue}
+            </text>
           </svg>
         );
       }
@@ -2762,38 +4061,110 @@ export function UniversalInteractiveWorkbench({
       case "freytag": {
         const pA = paramA / 100;
         const curX = 50 + pA * 340;
-        const curY = pA < 0.5 ? 160 - (pA / 0.5) * 110 : 50 + ((pA - 0.5) / 0.5) * 110;
+        // Tension curve: rises up to x = 220 (Akt III), then falls down to 390
+        const curY = pA < 0.5 ? 165 - (pA / 0.5) * 115 : 50 + ((pA - 0.5) / 0.5) * 115;
+        const konfliktLevel = paramB / 100;
+
         return (
           <svg className="w-full h-64 sm:h-72 rounded bg-[var(--paper-subtle)]/40 border border-[var(--line)]/50" viewBox="0 0 440 200">
-            <polygon points="50,165 220,50 390,165" fill="none" stroke="var(--ink)" strokeWidth="2" strokeOpacity="0.3" />
+            {/* Pyramid Base & Sides */}
+            <polygon points="50,165 220,50 390,165" fill="none" stroke="var(--ink)" strokeWidth="1.8" strokeOpacity="0.35" />
             <line x1="30" y1="165" x2="410" y2="165" stroke="var(--ink)" strokeWidth="1.5" />
+
+            {/* Act Markers */}
+            {/* I. Exposition */}
             <circle cx="50" cy="165" r="4" fill="var(--ink)" />
-            <text x="50" y="180" textAnchor="middle" fontSize="9" fill="var(--ink)" fontFamily="monospace">I. Exposition</text>
+            <text x="50" y="180" textAnchor="middle" fontSize="8" fill="var(--ink)" fontFamily="monospace">I. Exposition</text>
+
+            {/* II. Steigende Handlung */}
             <circle cx="135" cy="107" r="4" fill="var(--ink)" />
-            <text x="100" y="95" textAnchor="middle" fontSize="9" fill="var(--ink)" fontFamily="monospace">II. Steigend</text>
-            <circle cx="220" cy="50" r="5" fill="var(--accent)" />
-            <text x="220" y="38" textAnchor="middle" fontSize="10" fontWeight="bold" fill="var(--accent)" fontFamily="monospace">III. Peripetie</text>
+            <text x="105" y="96" textAnchor="middle" fontSize="8" fill="var(--ink)" fontFamily="monospace">II. Steigend</text>
+
+            {/* III. Peripetie (Höhepunkt) */}
+            <circle cx="220" cy="50" r="5.5" fill="#dc2626" />
+            <text x="220" y="38" textAnchor="middle" fontSize="9" fontWeight="bold" fill="#dc2626" fontFamily="monospace">
+              III. Peripetie (Wendepunkt)
+            </text>
+
+            {/* IV. Fallende Handlung mit retardierendem Moment */}
             <circle cx="305" cy="107" r="4" fill="var(--ink)" />
-            <text x="345" y="95" textAnchor="middle" fontSize="9" fill="var(--ink)" fontFamily="monospace">IV. Retardierend</text>
+            <text x="345" y="96" textAnchor="middle" fontSize="8" fill="var(--ink)" fontFamily="monospace">IV. Retardierend</text>
+
+            {/* V. Katastrophe */}
             <circle cx="390" cy="165" r="4" fill="var(--ink)" />
-            <text x="390" y="180" textAnchor="middle" fontSize="9" fill="var(--ink)" fontFamily="monospace">V. Katastrophe</text>
-            <circle cx={curX} cy={curY} r="7" fill="var(--accent)" stroke="var(--paper)" strokeWidth="2" />
+            <text x="390" y="180" textAnchor="middle" fontSize="8" fill="var(--ink)" fontFamily="monospace">V. Katastrophe</text>
+
+            {/* Dynamic Tension Path filled area */}
+            <path
+              d={`M 50 165 ${curX <= 220 ? `L ${curX} ${curY}` : `L 220 50 L ${curX} ${curY}`} L ${curX} 165 Z`}
+              fill="var(--accent)"
+              fillOpacity={0.15 + konfliktLevel * 0.15}
+            />
+
+            {/* Current Plot Head Tracking Point */}
+            <circle cx={curX} cy={curY} r="7" fill="var(--accent)" stroke="var(--paper)" strokeWidth="2.5" />
+            <line x1={curX} y1={curY} x2={curX} y2="165" stroke="var(--accent)" strokeWidth="1" strokeDasharray="2,2" strokeOpacity="0.6" />
+
+            {/* Info badge */}
+            <rect x="130" y="115" width="180" height="42" rx="3" fill="var(--surface)" stroke="var(--line)" />
+            <text x="220" y="130" textAnchor="middle" fontSize="8" fill="var(--gray)" fontFamily="monospace">
+              Spannung: {data.rateValue}
+            </text>
+            <text x="220" y="146" textAnchor="middle" fontSize="8.5" fontWeight="bold" fill="var(--accent)" fontFamily="monospace">
+              {data.subValue}
+            </text>
           </svg>
         );
       }
 
       // 40. 德语：音步格律波形 (Metrum)
       case "metrum": {
+        const isMale = paramB > 50; // male (stumpf) vs female (klingend)
+        const pA = paramA;
+        // 0-25: Jambus (v -), 25-50: Trochäus (- v), 50-75: Daktylus (- v v), 75-100: Anapäst (v v -)
+        const metrumType = pA < 25 ? "jambus" : pA < 50 ? "trochaeus" : pA < 75 ? "daktylus" : "anapaest";
+
+        // Generate waveform peaks for 4 bars
+        // For Jambus: [low, high, low, high, low, high, low, high]
+        // For Trochäus: [high, low, high, low, high, low, high, low]
+        // For Daktylus: [high, low, low, high, low, low, high, low, low]
+        // For Anapäst: [low, low, high, low, low, high, low, low, high]
+        let wavePath = "M 50 115 ";
+        if (metrumType === "jambus") {
+          wavePath = "M 50 135 Q 70 145 90 135 Q 115 60 140 135 Q 160 145 180 135 Q 205 60 230 135 Q 250 145 270 135 Q 295 60 320 135 Q 340 145 360 135 Q 385 60 400 135";
+        } else if (metrumType === "trochaeus") {
+          wavePath = "M 50 135 Q 75 60 100 135 Q 120 145 140 135 Q 165 60 190 135 Q 210 145 230 135 Q 255 60 280 135 Q 300 145 320 135 Q 345 60 370 135 Q 390 145 400 135";
+        } else if (metrumType === "daktylus") {
+          wavePath = "M 50 135 Q 75 55 100 135 Q 115 145 130 135 Q 145 145 160 135 Q 185 55 210 135 Q 225 145 240 135 Q 255 145 270 135 Q 295 55 320 135 Q 335 145 350 135 Q 365 145 380 135";
+        } else {
+          wavePath = "M 50 135 Q 65 145 80 135 Q 95 145 110 135 Q 135 55 160 135 Q 175 145 190 135 Q 205 145 220 135 Q 245 55 270 135 Q 285 145 300 135 Q 315 145 330 135 Q 355 55 380 135";
+        }
+
         return (
           <svg className="w-full h-64 sm:h-72 rounded bg-[var(--paper-subtle)]/40 border border-[var(--line)]/50" viewBox="0 0 440 200">
-            <text x="220" y="40" textAnchor="middle" fontSize="12" fontWeight="bold" fill="var(--ink)" fontFamily="monospace">
+            {/* Header */}
+            <text x="220" y="32" textAnchor="middle" fontSize="10.5" fontWeight="bold" fill="var(--ink)" fontFamily="monospace">
               Versfuß: {data.paramAValueDisplay}
             </text>
-            <path d="M 60 120 Q 90 70 120 120 Q 150 160 180 120 Q 210 70 240 120 Q 270 160 300 120 Q 330 70 360 120" fill="none" stroke="var(--accent)" strokeWidth="2.5" />
-            <text x="90" y="60" textAnchor="middle" fontSize="9" fontWeight="bold" fill="var(--accent)" fontFamily="monospace">― (Hebung)</text>
-            <text x="150" y="180" textAnchor="middle" fontSize="9" fill="var(--gray)" fontFamily="monospace">∪ (Senkung)</text>
-            <rect x="130" y="145" width="180" height="35" rx="3" fill="var(--surface)" stroke="var(--line)" />
-            <text x="220" y="167" textAnchor="middle" fontSize="10" fontWeight="bold" fill="var(--ink)" fontFamily="monospace">{data.rateValue}</text>
+
+            {/* Baseline */}
+            <line x1="40" y1="135" x2="410" y2="135" stroke="var(--ink)" strokeWidth="1" strokeDasharray="3,3" strokeOpacity="0.4" />
+
+            {/* Rhythm Waveform */}
+            <path d={wavePath} fill="none" stroke="var(--accent)" strokeWidth="2.8" />
+
+            {/* Legend annotations */}
+            <text x="70" y="55" fontSize="8" fontWeight="bold" fill="var(--accent)" fontFamily="monospace">― (Hebung / betont)</text>
+            <text x="70" y="165" fontSize="8" fill="var(--gray)" fontFamily="monospace">∪ (Senkung / unbetont)</text>
+
+            {/* Kadenz Badge at the end */}
+            <rect x="290" y="45" width="125" height="42" rx="3" fill="var(--surface)" stroke="var(--line)" />
+            <text x="352" y="60" textAnchor="middle" fontSize="8" fill="var(--gray)" fontFamily="monospace">
+              Kadenz am Versende:
+            </text>
+            <text x="352" y="75" textAnchor="middle" fontSize="9" fontWeight="bold" fill={isMale ? "#dc2626" : "#0284c7"} fontFamily="monospace">
+              {isMale ? "Männlich (stumpf ―)" : "Weiblich (klingend ― ∪)"}
+            </text>
           </svg>
         );
       }
@@ -2801,22 +4172,45 @@ export function UniversalInteractiveWorkbench({
       // 41. 德语：布莱希特间离效果舞台 (Brecht)
       case "brecht": {
         const vEffekt = paramB > 45;
+        const katharsis = paramA; // empathy vs detachment
+        const curtainWidth = vEffekt ? 30 : 110; // open exposed stage vs closed illusion
+
         return (
           <svg className="w-full h-64 sm:h-72 rounded bg-[var(--paper-subtle)]/40 border border-[var(--line)]/50" viewBox="0 0 440 200">
-            <line x1="50" y1="30" x2="390" y2="30" stroke="var(--ink)" strokeWidth="2" />
-            {[80, 150, 220, 290, 360].map((x, i) => (
-              <circle key={i} cx={x} cy="30" r="6" fill="#facc15" stroke="var(--ink)" strokeWidth="1" />
+            {/* Visible Spotlight Battery on Ceiling (anti-illusion) */}
+            <line x1="50" y1="28" x2="390" y2="28" stroke="var(--ink)" strokeWidth="2" />
+            {[80, 140, 200, 260, 320, 370].map((x, i) => (
+              <circle key={i} cx={x} cy="28" r="5.5" fill={vEffekt ? "#facc15" : "#64748b"} stroke="var(--ink)" strokeWidth="1" />
             ))}
-            <text x="220" y="20" textAnchor="middle" fontSize="7" fill="var(--gray)" fontFamily="monospace">Sichtbare Scheinwerfer-Batterie</text>
-
-            <rect x="120" y="55" width="200" height="35" rx="2" fill="#1e293b" />
-            <text x="220" y="76" textAnchor="middle" fontSize="10" fontWeight="bold" fill="#38bdf8" fontFamily="monospace">
-              [ SPRUCHBAND: GLOTZT NICHT SO ROMANTISCH! ]
+            <text x="220" y="18" textAnchor="middle" fontSize="7" fill="var(--gray)" fontFamily="monospace">
+              Offen sichtbare Bühnentechnik (Entzauberung)
             </text>
 
-            <line x1="50" y1="160" x2="390" y2="160" stroke="var(--ink)" strokeWidth="3" />
-            <text x="220" y="180" textAnchor="middle" fontSize="9" fill="var(--gray)" fontFamily="monospace">
-              {vEffekt ? "Zerbrochene 4. Wand: Zuschauer beobachtet kritisch" : "Einfühlungstheater"}
+            {/* Brecht Spruchband Banner */}
+            <rect x="75" y="42" width="290" height="26" rx="2" fill="#1e293b" stroke="var(--line)" />
+            <text x="220" y="58" textAnchor="middle" fontSize="8.5" fontWeight="bold" fill="#38bdf8" fontFamily="monospace">
+              {vEffekt ? "[ TAFEL: DER MENSCH WIRD DURCH SEINE VERHÄLTNISSE GEFORMT ]" : "[ TRADITIONELLES BÜHNENBILD: SCHÖNE ILLUSION ]"}
+            </text>
+
+            {/* Stage Floor and Broken 4th Wall */}
+            <polygon points="50,155 390,155 360,105 80,105" fill="var(--paper-subtle)" stroke="var(--ink)" strokeWidth="1.5" />
+            
+            {/* Curtains (half-drawn in illusion mode, pulled back in V-Effekt) */}
+            <rect x="50" y="75" width={curtainWidth} height="70" fill="#7f1d1d" opacity="0.75" />
+            <rect x={390 - curtainWidth} y="75" width={curtainWidth} height="70" fill="#7f1d1d" opacity="0.75" />
+            <text x="220" y="92" textAnchor="middle" fontSize="7.5" fill="var(--ink)" fontFamily="monospace">
+              Empathie: {katharsis}% · Epische Distanz: {paramB}%
+            </text>
+
+            <line x1="50" y1="155" x2="390" y2="155" stroke={vEffekt ? "#dc2626" : "var(--ink)"} strokeWidth={vEffekt ? 2.5 : 4} strokeDasharray={vEffekt ? "6,4" : "none"} />
+
+            <text x="220" y="172" textAnchor="middle" fontSize="8" fontWeight="bold" fill={vEffekt ? "#dc2626" : "var(--gray)"} fontFamily="monospace">
+              {vEffekt ? "⚡ VIERTE WAND ZERBROCHEN: Publikum als kritischer Begutachter" : "Guckkastenbühne: Vierte Wand geschlossen (Hypnose)"}
+            </text>
+
+            {/* Readout badge */}
+            <text x="220" y="188" textAnchor="middle" fontSize="9" fontWeight="bold" fill="var(--accent)" fontFamily="monospace">
+              {data.rateValue}
             </text>
           </svg>
         );
@@ -2824,63 +4218,152 @@ export function UniversalInteractiveWorkbench({
 
       // 42. 德语：卡夫卡卧室平面图 (Kafka)
       case "kafka": {
+        const entfremdung = Math.round(paramA * 0.6 + paramB * 0.4);
+        const appleWound = paramA > 50;
+
         return (
           <svg className="w-full h-64 sm:h-72 rounded bg-[var(--paper-subtle)]/40 border border-[var(--line)]/50" viewBox="0 0 440 200">
-            <rect x="120" y="30" width="200" height="140" fill="none" stroke="var(--ink)" strokeWidth="2.5" />
-            <text x="220" y="22" textAnchor="middle" fontSize="9" fontWeight="bold" fill="var(--ink)" fontFamily="monospace">Gregor Samsas Zimmer</text>
+            {/* The Samsa Apartment: Gregor's claustrophobic room in the center */}
+            <rect x="115" y="25" width="210" height="145" fill="none" stroke="var(--ink)" strokeWidth="2.5" />
+            <text x="220" y="18" textAnchor="middle" fontSize="8.5" fontWeight="bold" fill="var(--ink)" fontFamily="monospace">
+              Gregor Samsas Zimmer (Entfremdung: {entfremdung}%)
+            </text>
 
-            <rect x="105" y="80" width="15" height="40" fill="#b91c1c" />
-            <text x="80" y="103" textAnchor="end" fontSize="7" fill="#b91c1c" fontFamily="monospace">Tür Vater</text>
+            {/* Door 1: Father's room (Left) */}
+            <rect x="106" y="75" width="18" height="42" fill="#b91c1c" />
+            <text x="80" y="98" textAnchor="end" fontSize="7" fill="#b91c1c" fontFamily="monospace">
+              Tür Vater 🔒
+            </text>
 
-            <rect x="200" y="155" width="40" height="15" fill="#b91c1c" />
-            <text x="220" y="185" textAnchor="middle" fontSize="7" fill="#b91c1c" fontFamily="monospace">Tür Wohnzimmer</text>
+            {/* Door 2: Living room / Boss (Bottom) */}
+            <rect x="195" y="160" width="50" height="18" fill="#b91c1c" />
+            <text x="220" y="190" textAnchor="middle" fontSize="7" fill="#b91c1c" fontFamily="monospace">
+              Tür Wohnzimmer (Prokurist) 🔒
+            </text>
 
-            <rect x="320" y="80" width="15" height="40" fill="#b91c1c" />
-            <text x="345" y="103" fontSize="7" fill="#b91c1c" fontFamily="monospace">Tür Schwester</text>
+            {/* Door 3: Grete's room (Right) */}
+            <rect x="316" y="75" width="18" height="42" fill="#b91c1c" />
+            <text x="345" y="98" fontSize="7" fill="#b91c1c" fontFamily="monospace">
+              🔒 Tür Schwester
+            </text>
 
-            <ellipse cx="220" cy="100" rx="22" ry="12" fill="#78350f" stroke="#451a03" strokeWidth="1.5" />
-            <circle cx="230" cy="97" r="4" fill="#dc2626" />
-            <text x="220" y="125" textAnchor="middle" fontSize="8" fontWeight="bold" fill="#78350f" fontFamily="monospace">Ungeziefer (Apfel)</text>
+            {/* Gregor as monstrous vermin (Ungeziefer) on the floor */}
+            <ellipse cx="220" cy="95" rx={18 + (entfremdung / 100) * 8} ry={11 + (entfremdung / 100) * 5} fill="#451a03" stroke="#291102" strokeWidth="2" />
+            {/* Vermin legs */}
+            {[-12, -4, 4, 12].map((xOff, i) => (
+              <g key={i}>
+                <line x1={220 + xOff} y1={85} x2={220 + xOff * 1.3} y2={76} stroke="#451a03" strokeWidth="1.5" />
+                <line x1={220 + xOff} y1={105} x2={220 + xOff * 1.3} y2={114} stroke="#451a03" strokeWidth="1.5" />
+              </g>
+            ))}
+
+            {/* Rotten apple lodged in back if paramA is high */}
+            {appleWound && (
+              <g>
+                <circle cx="228" cy="93" r="5" fill="#dc2626" />
+                <circle cx="228" cy="93" r="2" fill="#facc15" />
+                <text x="220" y="132" textAnchor="middle" fontSize="7.5" fontWeight="bold" fill="#dc2626" fontFamily="monospace">
+                  Faulender Apfel im Fleisch
+                </text>
+              </g>
+            )}
+
+            {/* Status Readout Badge */}
+            <rect x="25" y="25" width="85" height="35" rx="3" fill="var(--surface)" stroke="var(--line)" />
+            <text x="67" y="38" textAnchor="middle" fontSize="7" fill="var(--gray)" fontFamily="monospace">Daseinsform:</text>
+            <text x="67" y="52" textAnchor="middle" fontSize="8" fontWeight="bold" fill="var(--ink)" fontFamily="monospace">
+              {entfremdung > 70 ? "Ungeziefer" : "Restmensch"}
+            </text>
           </svg>
         );
       }
 
       // 43. 德语：博尔歇特废墟文学零度语言 (Trümmerliteratur)
       case "borchert": {
+        const kahlschlag = paramA; // language stripping
+        const trauma = paramB; // veteran trauma
+
         return (
           <svg className="w-full h-64 sm:h-72 rounded bg-[var(--paper-subtle)]/40 border border-[var(--line)]/50" viewBox="0 0 440 200">
-            <polygon points="60,170 90,80 110,130 140,60 170,170" fill="#475569" />
-            <polygon points="270,170 300,90 330,140 360,70 390,170" fill="#334155" />
-            <rect x="190" y="60" width="60" height="110" fill="#1e293b" stroke="var(--ink)" strokeWidth="2" />
+            {/* Bombed City Ruins Silhouettes */}
+            <polygon points="50,170 80,75 105,130 135,55 170,170" fill="#334155" />
+            <polygon points="265,170 295,85 325,135 355,65 390,170" fill="#475569" />
+
+            {/* Beckmann's Closed Door (Draußen vor der Tür) */}
+            <rect x="185" y="50" width="70" height="120" rx="2" fill="#0f172a" stroke="var(--ink)" strokeWidth="2.5" />
             <circle cx="240" cy="115" r="4" fill="#facc15" />
-            <text x="220" y="50" textAnchor="middle" fontSize="9" fontWeight="bold" fill="#dc2626" fontFamily="monospace">Draußen vor der Tür</text>
-            <text x="220" y="188" textAnchor="middle" fontSize="8" fill="var(--gray)" fontFamily="monospace">Das Brot: Schnittkante & Hunger</text>
+            <text x="220" y="42" textAnchor="middle" fontSize="9" fontWeight="bold" fill="#dc2626" fontFamily="monospace">
+              Draußen vor der Tür
+            </text>
+
+            {/* Beckmann's Broken Mask / Gasmask Glasses */}
+            <circle cx="140" cy="150" r="10" fill="none" stroke="#94a3b8" strokeWidth="2" />
+            <circle cx="165" cy="150" r="10" fill="none" stroke="#94a3b8" strokeWidth="2" />
+            <line x1="150" y1="150" x2="155" y2="150" stroke="#94a3b8" strokeWidth="2" />
+
+            {/* Readout Card */}
+            <rect x="75" y="145" width="290" height="38" rx="3" fill="var(--surface)" stroke="var(--line)" />
+            <text x="220" y="159" textAnchor="middle" fontSize="8" fill="var(--gray)" fontFamily="monospace">
+              Kahlschlag der Sprache: {kahlschlag}% | Trauma: {trauma}%
+            </text>
+            <text x="220" y="173" textAnchor="middle" fontSize="9.5" fontWeight="bold" fill="var(--accent)" fontFamily="monospace">
+              {data.rateValue} (Stakkato-Sätze)
+            </text>
           </svg>
         );
       }
 
       // 44. 德语：图尔敏论证模型 (Toulmin)
       case "toulmin": {
+        const datumStaerke = paramA; // 0 to 100%
+        const einwandStaerke = paramB; // 0 to 100%
+        const isSchluessig = datumStaerke > 40 && einwandStaerke < 60;
+
         return (
           <svg className="w-full h-64 sm:h-72 rounded bg-[var(--paper-subtle)]/40 border border-[var(--line)]/50" viewBox="0 0 440 200">
-            <rect x="40" y="45" width="85" height="40" rx="3" fill="var(--paper)" stroke="var(--ink)" strokeWidth="1.5" />
-            <text x="82" y="68" textAnchor="middle" fontSize="9" fontWeight="bold" fill="var(--ink)" fontFamily="monospace">Datum (Fakt)</text>
+            {/* Box 1: Datum (Facts / Evidence) */}
+            <rect x="35" y="45" width="90" height="42" rx="3" fill="var(--paper)" stroke="var(--ink)" strokeWidth="1.6" />
+            <text x="80" y="64" textAnchor="middle" fontSize="9" fontWeight="bold" fill="var(--ink)" fontFamily="monospace">Datum (Fakt)</text>
+            <text x="80" y="77" textAnchor="middle" fontSize="7.5" fill="var(--gray)" fontFamily="monospace">Evidenz: {datumStaerke}%</text>
 
-            <path d="M 125 65 L 185 65" stroke="var(--ink)" strokeWidth="2" />
-            <rect x="185" y="45" width="95" height="40" rx="3" fill="#fef08a" stroke="#ca8a04" strokeWidth="1.5" />
-            <text x="232" y="68" textAnchor="middle" fontSize="8" fontWeight="bold" fill="#78350f" fontFamily="monospace">Warrant (Regel)</text>
+            {/* Arrow to Warrant */}
+            <line x1="125" y1="66" x2="175" y2="66" stroke="var(--ink)" strokeWidth="2" />
+            <polygon points="175,66 168,62 168,70" fill="var(--ink)" />
 
-            <path d="M 280 65 L 335 65" stroke="var(--ink)" strokeWidth="2" />
-            <rect x="335" y="45" width="80" height="40" rx="3" fill="#dcfce7" stroke="#16a34a" strokeWidth="1.8" />
-            <text x="375" y="68" textAnchor="middle" fontSize="9" fontWeight="bold" fill="#15803d" fontFamily="monospace">Claim (These)</text>
+            {/* Box 2: Warrant (Schlussregel) */}
+            <rect x="175" y="45" width="105" height="42" rx="3" fill="#fef08a" stroke="#ca8a04" strokeWidth="1.6" />
+            <text x="227" y="64" textAnchor="middle" fontSize="8.5" fontWeight="bold" fill="#78350f" fontFamily="monospace">Warrant (Regel)</text>
+            <text x="227" y="77" textAnchor="middle" fontSize="7.5" fill="#78350f" fontFamily="monospace">Schlusslogik</text>
 
-            <path d="M 232 85 L 232 125" stroke="var(--ink)" strokeWidth="1.5" strokeDasharray="3,3" />
-            <rect x="185" y="125" width="95" height="35" rx="3" fill="var(--paper-subtle)" stroke="var(--line)" />
-            <text x="232" y="146" textAnchor="middle" fontSize="8" fill="var(--gray)" fontFamily="monospace">Backing (Stütze)</text>
+            {/* Arrow to Claim */}
+            <line x1="280" y1="66" x2="330" y2="66" stroke="var(--ink)" strokeWidth="2" />
+            <polygon points="330,66 323,62 323,70" fill="var(--ink)" />
 
-            <path d="M 375 85 L 375 125" stroke="#dc2626" strokeWidth="1.5" strokeDasharray="3,3" />
-            <rect x="330" y="125" width="90" height="35" rx="3" fill="#fee2e2" stroke="#dc2626" strokeWidth="1" />
-            <text x="375" y="146" textAnchor="middle" fontSize="8" fill="#b91c1c" fontFamily="monospace">Rebuttal (Einwand)</text>
+            {/* Box 3: Claim (These) */}
+            <rect x="330" y="45" width="85" height="42" rx="3" fill={isSchluessig ? "#dcfce7" : "#fee2e2"} stroke={isSchluessig ? "#16a34a" : "#dc2626"} strokeWidth="2" />
+            <text x="372" y="64" textAnchor="middle" fontSize="9" fontWeight="bold" fill={isSchluessig ? "#15803d" : "#b91c1c"} fontFamily="monospace">
+              Claim (These)
+            </text>
+            <text x="372" y="77" textAnchor="middle" fontSize="7.5" fontWeight="bold" fill={isSchluessig ? "#16a34a" : "#dc2626"} fontFamily="monospace">
+              {isSchluessig ? "Gültig" : "Wackelig"}
+            </text>
+
+            {/* Backing (Stütze von Warrant) */}
+            <line x1="227" y1="87" x2="227" y2="125" stroke="var(--ink)" strokeWidth="1.5" strokeDasharray="3,3" />
+            <rect x="175" y="125" width="105" height="35" rx="3" fill="var(--paper-subtle)" stroke="var(--line)" />
+            <text x="227" y="146" textAnchor="middle" fontSize="8" fill="var(--gray)" fontFamily="monospace">Backing (Stütze)</text>
+
+            {/* Rebuttal (Einwand gegen Claim) */}
+            <line x1="372" y1="87" x2="372" y2="125" stroke="#dc2626" strokeWidth="1.5" strokeDasharray="3,3" />
+            <rect x="325" y="125" width="95" height="35" rx="3" fill="#fee2e2" stroke="#dc2626" strokeWidth="1" />
+            <text x="372" y="142" textAnchor="middle" fontSize="7.5" fill="#b91c1c" fontFamily="monospace">Rebuttal ({einwandStaerke}%)</text>
+            <text x="372" y="153" textAnchor="middle" fontSize="7" fill="#b91c1c" fontFamily="monospace">Einwand</text>
+
+            {/* Overall Verdict Badge */}
+            <rect x="60" y="130" width="100" height="30" rx="3" fill="var(--surface)" stroke="var(--line)" />
+            <text x="110" y="149" textAnchor="middle" fontSize="8.5" fontWeight="bold" fill={isSchluessig ? "#16a34a" : "#dc2626"} fontFamily="monospace">
+              {isSchluessig ? "✓ Schlüssig" : "⚠ Anfechtbar"}
+            </text>
           </svg>
         );
       }
