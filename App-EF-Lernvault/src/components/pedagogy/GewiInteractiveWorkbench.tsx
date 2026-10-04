@@ -510,8 +510,169 @@ const GEWI_BALANCE_CASES: Record<string, BalanceCaseData> = {
     werturteilGuideZH: "批判评价：综合评定该文本是理性探讨公共议题的典范，还是带有单向说教色彩的宣传文。",
     formulierungshilfe: "Wenngleich der Verfasser durch eine dichte Aneinanderreihung normativer Argumente eine hohe Dringlichkeit erzeugt, schwächt der Verzicht auf empirische Belege die argumentative Stichhaltigkeit seines Gesamturteils.",
     chineseComment: "德语会考Sachtext必杀技：永远不要只总结‘说了什么’，必须用【Argumentationstyp + Rhetorische Absicht + Wirkung】三件套答题！"
+  },
+  "philo-rawls-schleier": {
+    titleDE: "John Rawls: Gerechtigkeit als Fairness & Schleier des Nichtwissens",
+    titleZH: "约翰·罗尔斯：作为公平的正义与无知之幕 (Veil of Ignorance)",
+    questionDE: "Bietet der 'Schleier des Nichtwissens' das überlegene Fundament für eine gerechte Gesellschaftsordnung im Vergleich zum Utilitarismus?",
+    questionZH: "相较于追求总效用最大化的功利主义，罗尔斯的‘无知之幕’是否为构建正义社会提供了更具道德合法性的理论基石？",
+    labelProDE: "Rawls'sche Fairness / Deontologie",
+    labelProZH: "罗尔斯正义论立场（无知之幕 / 最大化最小值原则）",
+    labelContraDE: "Leistungs- / Nützlichkeitsprinzip",
+    labelContraZH: "优绩功利主义批判（效率激励 / 风险承担自由）",
+    weights: [
+      {
+        id: "rw-p1",
+        side: "pro",
+        textDE: "Schleier des Nichtwissens (Veil of Ignorance): Niemand kennt seinen Platz in der Gesellschaft, seine Klasse oder Talente.",
+        textZH: "无知之幕：在原初状态下，无人知晓自身的阶层出身、天赋才能或健康体质，消除一切利己算计偏见。",
+        weight: 3,
+        categoryDE: "Urzustand",
+        categoryZH: "原初契约状态"
+      },
+      {
+        id: "rw-p2",
+        side: "pro",
+        textDE: "Differenzprinzip: Soziale und ökonomische Ungleichheiten sind nur dann gerechtfertigt, wenn sie den am wenigsten Begünstigten den größtmöglichen Vorteil bringen.",
+        textZH: "差异原则（Differenzprinzip）：社会经济不平等必须且仅在‘能为处于最不利地位者带来最大利益改善’时才具备正当性。",
+        weight: 3,
+        categoryDE: "Gerechtigkeitsgrundsatz",
+        categoryZH: "正义第二原则"
+      },
+      {
+        id: "rw-c1",
+        side: "contra",
+        textDE: "Maximin-Kritik (Harsanyi): Unterstellt irrationale, absolute Risikoaversion der Menschen im Urzustand.",
+        textZH: "哈萨尼批判：罗尔斯武断假设了所有人在原初状态中都是绝对风险厌恶者，而忽视了人类对冒险与激进创新的偏好。",
+        weight: 2,
+        categoryDE: "Entscheidungstheorie",
+        categoryZH: "决策理论反驳"
+      },
+      {
+        id: "rw-c2",
+        side: "contra",
+        textDE: "Libertäre Kritik (Nozick): Besteuerung und Umverteilung zur Erzielung von Mustergerechtigkeit verletzen das Selbsteigentum (Art. 14 GG).",
+        textZH: "诺齐克自由至上主义批判：强制再分配实质上是将个人的劳动才能强行充公，侵犯了个体对自己身体与财产的不可剥夺自主权。",
+        weight: 2,
+        categoryDE: "Eigentumsrecht",
+        categoryZH: "自我所有权哲学"
+      }
+    ],
+    sachurteilGuideDE: "Sachurteil: Mechanismus des Urzustands, Maximin-Regel und die beiden Gerechtigkeitsprinzipien systematisch herleiten.",
+    sachurteilGuideZH: "事实分析：系统推导原初状态（Urzustand）、最大化最小值准则（Maximin）以及两大正义原则的逻辑递进。",
+    werturteilGuideDE: "Werturteil: Vereinbarkeit von Rawls' Differenzprinzip mit dem Grundgesetz (Art. 20 Abs. 1 GG Sozialstaatsprinzip) beurteilen.",
+    werturteilGuideZH: "价值裁决：评析罗尔斯差异原则在德国基本法‘社会国原则’与‘财产自由’之间的宪制张力与适用边界。",
+    formulierungshilfe: "Rawls' Gedankenexperiment des Schleiers des Nichtwissens neutralisiert private Sonderinteressen und begründet überzeugend, dass eine gerechte Ordnung nicht auf Kosten der schwächsten Glieder optimiert werden darf. Das Differenzprinzip liefert somit das theoretische Leitbild für den modernen Wohlfahrtsstaat.",
+    chineseComment: "哲学Abitur王牌大题：罗尔斯是抗衡功利主义的终极武器！牢记‘Maximin-Regel’（在最坏情境中追求最好的结果），答题时必提差异原则！"
+  },
+  "philo-hoehlengleichnis": {
+    titleDE: "Platon: Das Höhlengleichnis (Politeia)",
+    titleZH: "柏拉图：洞穴寓言与知识认识论之跃迁 (Politeia VII)",
+    questionDE: "Beschreibt Platons Höhlengleichnis den Bildungsweg des Menschen und den Status wissenschaftlicher Erkenntnis adäquat?",
+    questionZH: "柏拉图的洞穴寓言，是否在根本上精辟概括了人类从被动蒙昧走向理性启蒙的认识论历程？",
+    labelProDE: "Ideenlehre / Rationalismus (Platon)",
+    labelProZH: "理念论立场（理性真理 / 挣脱感官投影束缚）",
+    labelContraDE: "Empirismus / Konstruktivismus (Kritik)",
+    labelContraZH: "经验主义批判（感官是实证基石 / 真理的社会建构）",
+    weights: [
+      {
+        id: "pl-p1",
+        side: "pro",
+        textDE: "Erkenntnisstufen: Vom Schattensehen (Eikasia) über Gegenstände (Pistis) zur mathematischen Vernunft (Dianoia) und zur Schau der Idee des Guten (Noesis).",
+        textZH: "认识四阶段论：从墙壁幻影（猜想）$\to$ 实物火光（信念）$\to$ 几何理性（思辨）$\to$ 走出洞穴仰望太阳（善的理念真知）。",
+        weight: 3,
+        categoryDE: "Liniengleichnis",
+        categoryZH: "认识阶梯模型"
+      },
+      {
+        id: "pl-p2",
+        side: "pro",
+        textDE: "Schmerzhafte Paideia (Bildung): Befreiung aus der Selbsttäuschung ist ein anstrengender, erzwungener Emanzipationsprozess.",
+        textZH: "痛苦的教化历程（Paideia）：个体打破习惯枷锁、直面刺眼的光明，必然经历心理抗拒与认知重构的阵痛。",
+        weight: 2,
+        categoryDE: "Bildungstheorie",
+        categoryZH: "古典教化论"
+      },
+      {
+        id: "pl-c1",
+        side: "contra",
+        textDE: "Empiristische Kritik (Aristoteles/Bacon): Abwertung der Sinnenwelt. Reale Naturforschung beginnt mit systematischer Sinnesbeobachtung.",
+        textZH: "亚里士多德与经验论批判：贬低感官世界是唯心迷信，真正的自然科学与物理实证恰恰始于对可感知现实的精确测量。",
+        weight: 2,
+        categoryDE: "Naturwissenschaft",
+        categoryZH: "实证主义反驳"
+      },
+      {
+        id: "pl-c2",
+        side: "contra",
+        textDE: "Gefahr des Elitismus (Popper): Die Idee des 'Philosophenherrschers' birgt die Keimform autoritärer, totalitärer Wissensmonopole.",
+        textZH: "波普尔批判（《开放社会及其敌人》）：洞穴寓言预设了唯有走出洞穴的哲学家才有权启蒙大众，潜藏着独裁精英主义危险。",
+        weight: 3,
+        categoryDE: "Offene Gesellschaft",
+        categoryZH: "开放社会批判"
+      }
+    ],
+    sachurteilGuideDE: "Sachurteil: Die Allegorie dechiffrieren (Höhle = Sinnenwelt, Sonne = Idee des Guten, Fesseln = unreflektierte Vorurteile).",
+    sachurteilGuideZH: "事实解析：解码全套寓言隐喻符号（洞穴=感官现象界，太阳=善的理念，锁链=未经反思的先入之见）。",
+    werturteilGuideDE: "Werturteil: Aktualität im Zeitalter digitaler Echokammern, Social Media Algorithmen und 'Fake News' prüfen.",
+    werturteilGuideZH: "价值裁决：将柏拉图洞穴寓言投射至当代数字时代，反思社交媒体信息茧房与算法造影下的‘现代数字洞穴’。",
+    formulierungshilfe: "Platons Höhlengleichnis besitzt ungebrochene analytische Kraft, indem es Bildung nicht als bloße Wissensanhäufung, sondern als existenzielle Umwendung (Periagoge) des gesamten Geistes hin zum kritischen Hinterfragen scheinbarer Gewissheiten begreift.",
+    chineseComment: "破题亮点：联结当代现实！考场中把‘洞壁投影’类比为‘短视频算法与信息茧房’，立刻拿满 AFB III 创造性思辨高分！"
+  },
+  "philo-staatsvertrag": {
+    titleDE: "Staatsphilosophie: Gesellschaftsvertrag (Hobbes vs. Locke vs. Rousseau)",
+    titleZH: "国家哲学与契约论对决：霍布斯 vs. 洛克 vs. 卢梭 (Der Gesellschaftsvertrag)",
+    questionDE: "Welches Vertragsmodell begründet legitime staatliche Herrschaft am überzeugendsten: Sicherheit (Hobbes) oder Freiheit (Locke)?",
+    questionZH: "为了终结自然状态，何种国家契约模型最具正当性：以绝对秩序换取安全的利维坦（霍布斯），还是以分权捍卫自然人权的立宪政府（洛克）？",
+    labelProDE: "Lockescher Liberalismus (Rechte & Gewaltenteilung)",
+    labelProZH: "洛克古典自由主义立场（不可让渡的自然权利 / 分权监督）",
+    labelContraDE: "Hobbesscher Realismus (Leviathan & Ordnung)",
+    labelContraZH: "霍布斯现实主义立场（利维坦强权 / 秩序压倒一切）",
+    weights: [
+      {
+        id: "sv-p1",
+        side: "pro",
+        textDE: "Unveräußerliche Naturrechte: Leben, Freiheit und Eigentum (Life, Liberty, Estate) existieren vor jedem Staat.",
+        textZH: "不可剥夺的自然法权利：生命、自由与财产（Life, Liberty, Estate）先于国家而神圣存在，国家仅为托管者。",
+        weight: 3,
+        categoryDE: "John Locke (1689)",
+        categoryZH: "洛克人权基石"
+      },
+      {
+        id: "sv-p2",
+        side: "pro",
+        textDE: "Widerstandsrecht: Verletzt der Herrscher den Staatszweck, haben die Bürger das moralische Recht zur Absetzung (Art. 20 Abs. 4 GG).",
+        textZH: "抵抗权（Widerstandsrecht）：若政府沦为专制并剥夺公民自由，人民拥有起义与推翻统治的合法抵抗权。",
+        weight: 3,
+        categoryDE: "Gewaltenteilung",
+        categoryZH: "反抗专制权利"
+      },
+      {
+        id: "sv-c1",
+        side: "contra",
+        textDE: "Krieg aller gegen alle (Homo homini lupus): Im Naturzustand herrscht ständige Todesfurcht; nur absolute Zentralmacht garantiert Frieden.",
+        textZH: "所有人对所有人的战争（Homo homini lupus）：无国家状态是野蛮的丛林杀戮，唯有不可分割的利维坦集权才能威慑暴力。",
+        weight: 3,
+        categoryDE: "Thomas Hobbes (1651)",
+        categoryZH: "霍布斯秩序先决论"
+      },
+      {
+        id: "sv-c2",
+        side: "contra",
+        textDE: "Gemeinwille (Rousseau): Reiner Liberalismus zementiert egoistische Sonderinteressen statt der Identität des Volkes (Volkssouveränität).",
+        textZH: "公意论（卢梭批判）：纯粹自由主义契约只保护富人私产，真正的民主必须是服从不可分割的公意（Volonté Générale）。",
+        weight: 2,
+        categoryDE: "Jean-Jacques Rousseau",
+        categoryZH: "卢梭公意批判"
+      }
+    ],
+    sachurteilGuideDE: "Sachurteil: Menschenbild (negativ bei Hobbes, kooperativ bei Locke) als Ursache der unterschiedlichen Staatsmodelle analysieren.",
+    sachurteilGuideZH: "事实分析：深入解构‘人性假设’（霍布斯的恶狼假设 vs 洛克的理性协作假设）如何决定了国家统治形式的差异。",
+    werturteilGuideDE: "Werturteil: Das Spannungsverhältnis zwischen Sicherheit und Freiheit im modernen freiheitlichen Verfassungsstaat abwägen.",
+    werturteilGuideZH: "价值裁决：在反恐与紧急状态下，权衡自由法治国（Rechtsstaat）中公共安全保障与公民宪法隐私自由的辩证平衡。",
+    formulierungshilfe: "Während Hobbes den Staat als ultimativen Sicherheitsgaranten konstruiert und dafür die individuelle Freiheit opfert, liefert Locke mit der Bindung staatlicher Macht an unveräußerliche Grundrechte und Gewaltenteilung das unsterbliche Fundament moderner Verfassungsstaaten.",
+    chineseComment: "会考得分核心结构：牢记‘Naturzustand（自然状态）➔ Menschenbild（人性假设）➔ Staatszweck（立国目的）➔ Herrschaftsform（政体模式）’四级跳答题框架！"
   }
-
 };
 
 // 动态为未在静态表中硬编码的 GeWi 议题生成 100% 对齐主题的辩证天平方案，坚决杜绝任何无关默认回退！

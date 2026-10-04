@@ -26,6 +26,16 @@
 
 ## 当前状态（2026-10-04 最新里程碑）
 
+- ✅ **Labor 互动探索实验室五大标志性工坊与哲学思辨深度重构落地**：
+  - **病灶根治**：针对用户指出的“不好玩、空、不存在内容、不直观、标题/名字与内容不符、同质化、缺少创新”等问题，彻底废除粗糙千篇一律的双滑块回退，全量研发上线 5 大全新独立高保真交互工坊：
+    1. **社科旗舰 1：`SinusMilieusSim.tsx`（德国当代 10 大社会群落全景沙盘）**：官方 Sinus-Institut 二维气泡矩阵 + 360° 学术画像显微镜 + 首创 Persona-Builder 自由人画像漫游沙盒，直观体验布尔迪厄阶层固化与流动壁垒；
+    2. **社科旗舰 2：`TrilemmaSim.tsx`（蒙代尔-弗莱明国际金融三元悖论张力沙盘）**：真实等边几何三角形，点击选两边第三边红光断裂，内置三大制度重演与 1992 索罗斯狙击英镑推演沙盒；
+    3. **生物旗舰 1：`DnaPcrSim.tsx`（PCR 变温扩增与琼脂糖凝胶电泳跑带工坊）**：95°-55°-72° 三温阶梯热循环仪动画 + 紫外凝胶电泳槽负电荷向正极迁移发光跑带对比 Marker；
+    4. **生物旗舰 2：`SeeOekologieSim.tsx`（湖泊生态断面、四季全对流与富营养化翻湖沙盒）**：表水层/温跃层/深水层深度纵切面 + 四季全对流/温跃停滞 + 磷氮污染输入致藻华爆发、底层缺氧与黑臭腐泥（Sapropel）剧毒硫化氢释放；
+    5. **化学旗舰：`GalvanischeZelleSim.tsx`（丹尼尔原电池微观反应器）**：Mg/Zn/Fe/Cu/Ag 自由切换电极对 + 导线电子微观流动 + 盐桥离子迁移粒子动画 + 能斯特方程电动势计算；
+    6. **数学旗舰：`RotationskoerperSim.tsx`（立体旋转体体积与黎曼圆盘切片微元工坊）**：香槟杯/艺术花瓶/圆台/指数号角 4 大模型 + 真 3D 轴测透视 + $N=4 \to 40$ 黎曼薄圆盘求和动态逼近定积分极限 $V = \pi \int [f(x)]^2 dx$；
+    7. **哲学三大核心思辨考点补全（`GewiInteractiveWorkbench.tsx`）**：深度补齐罗尔斯无知之幕与差异原则（`philo-rawls-schleier`）、柏拉图洞穴寓言四阶段与数字茧房（`philo-hoehlengleichnis`）、契约论霍布斯vs洛克vs卢梭（`philo-staatsvertrag`）。
+  - **门禁全绿**：`npx tsc -b` 0 报错；`vault-check.py` PASS；`simulate-user-interaction.py` 100% PASS。
 - ✅ **Labor 仿真实验路由精准化与串味/内容不符缺陷根治**：
   - **根本原因排查**：用户截图反馈 `sowi-ezb-geldpolitik`（欧洲央行货币政策沙盒）打开后竟显示 `philo-willensfreiheit`（李贝特脑电自由意志天平）。经溯源：`Labor.tsx` 原逻辑中以宽泛条件将非硬编码的社科题目通配至文科思辨台，且 `GewiInteractiveWorkbench.tsx` 中硬编码了哲学自由意志默认降级（fallback），且状态未随 `sim.id` 切换重置。
   - **路由彻底精准化（`Labor.tsx`）**：建立 `GEWI_WORKBENCH_IDS` 白名单，将纯文科、哲学伦理与文学赏析（如自由意志、康德定言、绝对平庸之恶、戏剧五幕、诗歌节拍、卡夫卡异化等）精准导流至 `GewiInteractiveWorkbench`；宏观经济量化模型（如 `sowi-ezb-geldpolitik` 欧洲央行利率走廊、菲利普斯曲线、德国社保转移动态、比较优势等）100% 走 `UniversalInteractiveWorkbench`，呈现真实的货币外生冲击与利率传导机制！

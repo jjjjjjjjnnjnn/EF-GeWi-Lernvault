@@ -52,6 +52,12 @@ import { DilemmaTheatre } from "../components/pedagogy/DilemmaTheatre";
 import { MagischesViereckSim } from "../components/pedagogy/MagischesViereckSim";
 import { TrustGameSim } from "../components/pedagogy/TrustGameSim";
 import { GeWiReadingLab } from "../components/pedagogy/GeWiReadingLab";
+import { SinusMilieusSim } from "../components/pedagogy/SinusMilieusSim";
+import { TrilemmaSim } from "../components/pedagogy/TrilemmaSim";
+import { DnaPcrSim } from "../components/pedagogy/DnaPcrSim";
+import { SeeOekologieSim } from "../components/pedagogy/SeeOekologieSim";
+import { GalvanischeZelleSim } from "../components/pedagogy/GalvanischeZelleSim";
+import { RotationskoerperSim } from "../components/pedagogy/RotationskoerperSim";
 import { UniversalInteractiveWorkbench } from "../components/pedagogy/UniversalInteractiveWorkbench";
 import { GewiInteractiveWorkbench } from "../components/pedagogy/GewiInteractiveWorkbench";
 import {
@@ -264,6 +270,18 @@ export function Labor({ lang, onDiscussInTutor }: LaborProps) {
         return <TrustGameSim lang={lang} studioMode={isStudioExpanded} onExportFinding={handleExportFinding} />;
       case "gewi-reading":
         return <GeWiReadingLab lang={lang} />;
+      case "sowi-sinus-milieus":
+        return <SinusMilieusSim lang={lang} studioMode={isStudioExpanded} onExportFinding={handleExportFinding} />;
+      case "sowi-trilemma-trilemma":
+        return <TrilemmaSim lang={lang} studioMode={isStudioExpanded} onExportFinding={handleExportFinding} />;
+      case "bio-dna-pcr":
+        return <DnaPcrSim lang={lang} studioMode={isStudioExpanded} onExportFinding={handleExportFinding} />;
+      case "bio-oekologie-see":
+        return <SeeOekologieSim lang={lang} studioMode={isStudioExpanded} onExportFinding={handleExportFinding} />;
+      case "chemie-galvanische-zelle":
+        return <GalvanischeZelleSim lang={lang} studioMode={isStudioExpanded} onExportFinding={handleExportFinding} />;
+      case "mathe-rotationskoerper":
+        return <RotationskoerperSim lang={lang} studioMode={isStudioExpanded} onExportFinding={handleExportFinding} />;
       default:
         if (activeSim) {
           // 纯文科文学、哲学伦理与特定社科政策辩论使用专门直观工坊 (GewiInteractiveWorkbench)
@@ -273,6 +291,9 @@ export function Labor({ lang, onDiscussInTutor }: LaborProps) {
             "philo-utilitarismus-bentham",
             "philo-kant-kategorischer",
             "philo-arendt-banalitaet",
+            "philo-rawls-schleier",
+            "philo-hoehlengleichnis",
+            "philo-staatsvertrag",
             "philo-ethik-dilemma",
             "deutsch-drama-freytag",
             "deutsch-lyrik-metrum",
