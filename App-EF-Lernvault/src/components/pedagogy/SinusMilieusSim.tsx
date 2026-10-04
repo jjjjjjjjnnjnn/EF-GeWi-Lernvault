@@ -602,147 +602,518 @@ export function SinusMilieusSim({ lang = "de", onExportFinding }: SinusMilieusSi
         </div>
       )}
 
-      {/* 模式 2：自由人画像漫游沙盒 (Persona-Builder) */}
+      {/* 模式 2：自由人画像漫游沙盒 (Persona-Builder & 2D SVG 空间定格) */}
       {activeTab === "persona" && (
         <div className="flex flex-col gap-5">
-          <div className="p-4 bg-[var(--paper-subtle)]/60 rounded-xl border border-[var(--line)] text-xs text-[var(--ink)] leading-relaxed">
-            <h4 className="font-bold text-sm mb-1 text-[var(--accent)]">
-              {isDe ? "🔬 Interaktives Mobilitäts-Labor: Wo landen Sie in der Gesellschaft?" : "🔬 阶层跃迁实验室：拖动资本与价值观，您将落定在哪个德国社群？"}
+          {/* 模式导引栏 */}
+          <div className="p-4 bg-[var(--paper-subtle)] rounded-xl border border-[var(--line)] text-xs text-[var(--ink)] leading-relaxed">
+            <h4 className="font-bold text-sm mb-1 text-[var(--ink)] flex items-center gap-2">
+              <span className="font-mono text-base">🔬</span>
+              <span>{isDe ? "Interaktives Mobilitäts-Labor: Wo landen Sie in der Gesellschaft?" : "阶层跃迁实验室：拖动资本与价值观，观察您在德国社会空间中的动态落位"}</span>
             </h4>
-            <p>
+            <p className="text-[var(--gray)]">
               {isDe
                 ? "Das Sinus-Modell überwindet starre Einkommensgrenzen. Durch die Kombination aus Sozialer Lage (Bildung, Einkommen, Beruf) und individueller Grundorientierung (Tradition, Modernisierung, Neuorientierung) entsteht die exakte soziokulturelle Verortung."
-                : "德国社会学不仅考察‘您赚多少钱’，更考察‘您的生活品味与价值观’。请拖动下方两项核心杠杆，观察个体如何在布尔迪厄的社会空间中移动，以及阶层固化的张力。"}
+                : "德国社会学不仅考察‘您赚多少钱’，更考察‘您的生活品味与价值观’。拖动右侧两项核心杠杆，或点击预设社会画像，观察个体如何在布尔迪厄的社会空间中移动，以及阶层固化天花板的张力。"}
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-5 items-center">
-            {/* 左右滑块调节器 */}
-            <div className="flex flex-col gap-4 p-4 rounded-xl border border-[var(--line)] bg-[var(--paper)]">
-              <div>
-                <div className="flex justify-between text-xs font-semibold mb-1">
-                  <span>{isDe ? "1. Soziale Lage (Ökonomisches & Kulturelles Kapital)" : "1. 经济与文化资本（学历/收入/地位）"}</span>
-                  <span className="font-mono text-[var(--accent)]">{personaLage} / 100</span>
-                </div>
-                <input
-                  type="range"
-                  min="0"
-                  max="100"
-                  value={personaLage}
-                  onChange={(e) => setPersonaLage(Number(e.target.value))}
-                  className="w-full accent-[var(--accent)] cursor-pointer"
-                />
-                <div className="flex justify-between text-[10px] text-[var(--gray)] mt-0.5 font-mono">
-                  <span>Prekär / Ohne Abschluss</span>
-                  <span>Mittlere Reife / Fachkraft</span>
-                  <span>Akademiker / Top-Gehalt</span>
-                </div>
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-5 items-start">
+            {/* 左侧 (7 列)：全景 2D SVG 动态矩阵与画像定位 */}
+            <div className="lg:col-span-7 flex flex-col gap-3 bg-[var(--paper-subtle)]/40 p-4 rounded-xl border border-[var(--line)]">
+              <div className="flex items-center justify-between text-xs text-[var(--gray)] font-mono">
+                <span className="font-bold text-[var(--ink)]">▲ Oberschicht / Höhere soziale Lage (上层地位)</span>
+                <span>
+                  {isDe ? "Aktuelle Position:" : "当前动态定格："} <strong className="text-[var(--ink)] font-mono font-bold">({personaWerte}%, {personaLage}%)</strong>
+                </span>
               </div>
 
-              <div>
-                <div className="flex justify-between text-xs font-semibold mb-1">
-                  <span>{isDe ? "2. Grundorientierung (Wertewandel)" : "2. 价值观取向（传统保守 vs 多元先锋）"}</span>
-                  <span className="font-mono text-[var(--ink)] font-bold">{personaWerte} / 100</span>
-                </div>
-                <input
-                  type="range"
-                  min="0"
-                  max="100"
-                  value={personaWerte}
-                  onChange={(e) => setPersonaWerte(Number(e.target.value))}
-                  className="w-full accent-[var(--ink)] cursor-pointer"
-                />
-                <div className="flex justify-between text-[10px] text-[var(--gray)] mt-0.5 font-mono">
-                  <span>Tradition / Sicherheit</span>
-                  <span>Modernisierung / Pragmatismus</span>
-                  <span>Neuorientierung / Grenzenlos</span>
+              {/* 2D 互动画布 */}
+              <div className="relative w-full aspect-4/3 rounded-lg overflow-hidden border border-[var(--line)] bg-[var(--paper)] shadow-inner">
+                <svg className="w-full h-full" viewBox="0 0 600 400">
+                  {/* 网格参考线 */}
+                  <line x1="200" y1="20" x2="200" y2="380" stroke="var(--line)" strokeDasharray="3,3" strokeOpacity="0.6" />
+                  <line x1="400" y1="20" x2="400" y2="380" stroke="var(--line)" strokeDasharray="3,3" strokeOpacity="0.6" />
+                  <line x1="20" y1="130" x2="580" y2="130" stroke="var(--line)" strokeDasharray="3,3" strokeOpacity="0.6" />
+                  <line x1="20" y1="260" x2="580" y2="260" stroke="var(--line)" strokeDasharray="3,3" strokeOpacity="0.6" />
+
+                  {/* 阶层跃迁天花板指示线 (Gläserne Decke) */}
+                  <line x1="20" y1="110" x2="580" y2="110" stroke="var(--ink)" strokeDasharray="6,4" strokeWidth="1" strokeOpacity="0.25" />
+                  <text x="25" y="105" fontSize="8.5" fill="var(--ink)" fillOpacity="0.6" fontStyle="italic" fontFamily="monospace">
+                    ⚠️ {isDe ? "Gläserne Decke (Habitus-Aufstiegsbarriere nach Bourdieu)" : "阶层跃迁隐形天花板 (Gläserne Decke)"}
+                  </text>
+
+                  {/* 象限背景标示文字 */}
+                  <text x="35" y="32" fontSize="10.5" fill="var(--ink)" fillOpacity="0.8" fontWeight="bold" fontFamily="monospace">
+                    Tradition (传统保留)
+                  </text>
+                  <text x="240" y="32" fontSize="10.5" fill="var(--ink)" fillOpacity="0.8" fontWeight="bold" fontFamily="monospace">
+                    Modernisierung (现代自主)
+                  </text>
+                  <text x="440" y="32" fontSize="10.5" fill="var(--ink)" fillOpacity="0.8" fontWeight="bold" fontFamily="monospace">
+                    Neuorientierung (多元探索)
+                  </text>
+
+                  {/* 绘制 10 大社群气泡 */}
+                  {SINUS_MILIEUS_DATA.map((m) => {
+                    const isMatched = m.id === personaCalculated.matched.id;
+                    const cx = (m.x / 100) * 600;
+                    const cy = (m.y / 100) * 400;
+
+                    return (
+                      <g
+                        key={m.id}
+                        className="transition-transform duration-200"
+                        style={{
+                          transformOrigin: `${cx}px ${cy}px`,
+                          transformBox: "view-box",
+                        }}
+                      >
+                        {/* 匹配高亮脉冲环 */}
+                        {isMatched && (
+                          <circle
+                            cx={cx}
+                            cy={cy}
+                            r={m.radius + 6}
+                            fill="none"
+                            stroke="var(--ink)"
+                            strokeWidth="2.5"
+                            strokeDasharray="4,4"
+                            className="animate-pulse"
+                          />
+                        )}
+
+                        {/* 气泡本体 */}
+                        <circle
+                          cx={cx}
+                          cy={cy}
+                          r={m.radius}
+                          fill={m.color}
+                          fillOpacity={isMatched ? 0.9 : 0.4}
+                          stroke={isMatched ? "var(--ink)" : "var(--paper)"}
+                          strokeWidth={isMatched ? 2.5 : 1.5}
+                          className="transition-all duration-300"
+                        />
+
+                        {/* 社群名称 */}
+                        <text
+                          x={cx}
+                          y={cy - 4}
+                          textAnchor="middle"
+                          fontSize="10"
+                          fontWeight="bold"
+                          fill="#ffffff"
+                          style={{ filter: "drop-shadow(0 1px 2px rgba(0, 0, 0, 0.85))" }}
+                          pointerEvents="none"
+                        >
+                          {isDe ? m.shortDE : m.shortZH}
+                        </text>
+
+                        {/* 人口占比 */}
+                        <text
+                          x={cx}
+                          y={cy + 10}
+                          textAnchor="middle"
+                          fontSize="9"
+                          fill="#ffffff"
+                          fontWeight="bold"
+                          style={{ filter: "drop-shadow(0 1px 2px rgba(0, 0, 0, 0.85))" }}
+                          pointerEvents="none"
+                          fontFamily="monospace"
+                        >
+                          {m.share}%
+                        </text>
+                      </g>
+                    );
+                  })}
+
+                  {/* 动态 Persona 十字投影引导线 */}
+                  <line
+                    x1="20"
+                    y1={personaCalculated.svgY}
+                    x2={personaCalculated.svgX}
+                    y2={personaCalculated.svgY}
+                    stroke="var(--ink)"
+                    strokeDasharray="3,3"
+                    strokeWidth="1.5"
+                    strokeOpacity="0.5"
+                  />
+                  <line
+                    x1={personaCalculated.svgX}
+                    y1="380"
+                    x2={personaCalculated.svgX}
+                    y2={personaCalculated.svgY}
+                    stroke="var(--ink)"
+                    strokeDasharray="3,3"
+                    strokeWidth="1.5"
+                    strokeOpacity="0.5"
+                  />
+
+                  {/* 动态 Persona 动态定位指针 (Avatar Pin) */}
+                  <circle
+                    cx={personaCalculated.svgX}
+                    cy={personaCalculated.svgY}
+                    r="22"
+                    fill="none"
+                    stroke="var(--ink)"
+                    strokeWidth="1.5"
+                    className="animate-ping"
+                    opacity="0.4"
+                  />
+                  <circle
+                    cx={personaCalculated.svgX}
+                    cy={personaCalculated.svgY}
+                    r="13"
+                    fill="var(--ink)"
+                    fillOpacity="0.15"
+                    stroke="var(--ink)"
+                    strokeWidth="1.5"
+                  />
+                  <circle
+                    cx={personaCalculated.svgX}
+                    cy={personaCalculated.svgY}
+                    r="6.5"
+                    fill="var(--ink)"
+                    stroke="var(--paper)"
+                    strokeWidth="2"
+                  />
+
+                  {/* 悬浮坐标标签 */}
+                  <g
+                    transform={`translate(${Math.min(480, Math.max(80, personaCalculated.svgX))}, ${
+                      personaCalculated.svgY > 60 ? personaCalculated.svgY - 20 : personaCalculated.svgY + 28
+                    })`}
+                  >
+                    <rect
+                      x="-65"
+                      y="-11"
+                      width="130"
+                      height="22"
+                      rx="11"
+                      fill="var(--ink)"
+                      stroke="var(--paper)"
+                      strokeWidth="1"
+                    />
+                    <text
+                      textAnchor="middle"
+                      y="4"
+                      fontSize="9.5"
+                      fill="var(--paper)"
+                      fontWeight="bold"
+                      fontFamily="monospace"
+                    >
+                      📍 {isDe ? "Sie" : "当前漫游"}: ({personaWerte}%, {personaLage}%)
+                    </text>
+                  </g>
+                </svg>
+              </div>
+
+              {/* 快速预设角色：一键阶层漫游 */}
+              <div className="pt-2 border-t border-[var(--line)]">
+                <span className="text-[11px] font-mono text-[var(--gray)] block mb-2">
+                  {isDe ? "⚡ Archetypische Schnell-Verortung (1-Klick-Szenarien):" : "⚡ 典型德国社会画像一键跃迁预设："}
+                </span>
+                <div className="grid grid-cols-2 sm:grid-cols-5 gap-1.5 text-xs">
+                  <button
+                    type="button"
+                    onClick={() => {
+                      setPersonaLage(85);
+                      setPersonaWerte(72);
+                    }}
+                    className="p-1.5 rounded border border-[var(--line)] bg-[var(--paper)] hover:bg-[var(--paper-subtle)] text-center transition-colors"
+                  >
+                    <span className="block font-bold text-[var(--ink)]">🎓 {isDe ? "Akademiker" : "学术世家"}</span>
+                    <span className="text-[10px] text-[var(--gray)] font-mono">85% / 72%</span>
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => {
+                      setPersonaLage(90);
+                      setPersonaWerte(95);
+                    }}
+                    className="p-1.5 rounded border border-[var(--line)] bg-[var(--paper)] hover:bg-[var(--paper-subtle)] text-center transition-colors"
+                  >
+                    <span className="block font-bold text-[var(--ink)]">🚀 {isDe ? "Tech-Pionier" : "科技创客"}</span>
+                    <span className="text-[10px] text-[var(--gray)] font-mono">90% / 95%</span>
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => {
+                      setPersonaLage(52);
+                      setPersonaWerte(62);
+                    }}
+                    className="p-1.5 rounded border border-[var(--line)] bg-[var(--paper)] hover:bg-[var(--paper-subtle)] text-center transition-colors"
+                  >
+                    <span className="block font-bold text-[var(--ink)]">👔 {isDe ? "Aufsteiger" : "奋斗中产"}</span>
+                    <span className="text-[10px] text-[var(--gray)] font-mono">52% / 62%</span>
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => {
+                      setPersonaLage(25);
+                      setPersonaWerte(18);
+                    }}
+                    className="p-1.5 rounded border border-[var(--line)] bg-[var(--paper)] hover:bg-[var(--paper-subtle)] text-center transition-colors"
+                  >
+                    <span className="block font-bold text-[var(--ink)]">🏭 {isDe ? "Facharbeiter" : "传统工薪"}</span>
+                    <span className="text-[10px] text-[var(--gray)] font-mono">25% / 18%</span>
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => {
+                      setPersonaLage(12);
+                      setPersonaWerte(45);
+                    }}
+                    className="p-1.5 rounded border border-[var(--line)] bg-[var(--paper)] hover:bg-[var(--paper-subtle)] text-center transition-colors"
+                  >
+                    <span className="block font-bold text-[var(--ink)]">📦 {isDe ? "Prekariat" : "边缘零工"}</span>
+                    <span className="text-[10px] text-[var(--gray)] font-mono">12% / 45%</span>
+                  </button>
                 </div>
               </div>
             </div>
 
-            {/* 实时匹配结果 */}
-            <div className="p-5 rounded-xl border border-[var(--line)] bg-[var(--paper-subtle)] flex flex-col gap-2">
-              <span className="text-[11px] font-mono text-[var(--gray)] uppercase tracking-wider">
-                {isDe ? "Dynamisches Match-Ergebnis" : "社会学算法动态定格社群："}
-              </span>
-              <div className="flex items-center gap-2">
-                <span
-                  className="w-3.5 h-3.5 rounded-full"
-                  style={{ backgroundColor: personaCalculated.matched.color }}
-                />
-                <h4 className="text-lg font-bold text-[var(--ink)]">
-                  {isDe ? personaCalculated.matched.nameDE : personaCalculated.matched.nameZH}
-                </h4>
+            {/* 右侧 (5 列)：双杠杆微调、布尔迪厄三大资本解构与匹配研报 */}
+            <div className="lg:col-span-5 flex flex-col gap-4">
+              {/* 杠杆调节器 */}
+              <div className="flex flex-col gap-3 p-4 rounded-xl border border-[var(--line)] bg-[var(--paper)] shadow-xs">
+                <div>
+                  <div className="flex justify-between text-xs font-semibold mb-1">
+                    <span className="text-[var(--ink)]">{isDe ? "1. Soziale Lage (Kapital & Status)" : "1. 经济与文化资本（学历/收入/地位）"}</span>
+                    <span className="font-mono text-[var(--ink)] font-bold">{personaLage} / 100</span>
+                  </div>
+                  <input
+                    type="range"
+                    min="0"
+                    max="100"
+                    value={personaLage}
+                    onChange={(e) => setPersonaLage(Number(e.target.value))}
+                    className="w-full accent-[var(--ink)] cursor-pointer"
+                  />
+                  <div className="flex justify-between text-[10px] text-[var(--gray)] mt-0.5 font-mono">
+                    <span>Prekär (底层)</span>
+                    <span>Mitte (中坚)</span>
+                    <span>Elite (上层)</span>
+                  </div>
+                </div>
+
+                <div>
+                  <div className="flex justify-between text-xs font-semibold mb-1">
+                    <span className="text-[var(--ink)]">{isDe ? "2. Grundorientierung (Wertewandel)" : "2. 价值观取向（传统保守 vs 多元先锋）"}</span>
+                    <span className="font-mono text-[var(--ink)] font-bold">{personaWerte} / 100</span>
+                  </div>
+                  <input
+                    type="range"
+                    min="0"
+                    max="100"
+                    value={personaWerte}
+                    onChange={(e) => setPersonaWerte(Number(e.target.value))}
+                    className="w-full accent-[var(--ink)] cursor-pointer"
+                  />
+                  <div className="flex justify-between text-[10px] text-[var(--gray)] mt-0.5 font-mono">
+                    <span>Tradition (保守)</span>
+                    <span>Modernisierung (现代)</span>
+                    <span>Neuorientierung (先锋)</span>
+                  </div>
+                </div>
               </div>
-              <p className="text-xs text-[var(--ink)] leading-relaxed italic">
-                "{isDe ? personaCalculated.matched.mottoDE : personaCalculated.matched.mottoZH}"
-              </p>
-              <div className="text-xs pt-2 border-t border-[var(--line)] text-[var(--gray)]">
-                <strong>{isDe ? "Soziale Mobilität:" : "社会流动性与阻力："}</strong>{" "}
-                {personaLage > 70 && personaWerte < 30
-                  ? isDe
-                    ? "Hohes Kapital schützt vor Abstieg, aber starkes Festhalten an tradierten Elitestrukturen."
-                    : "高资本铸就护城河，但由于文化品味极其守旧，很难融入新潮的创新先锋圈层。"
-                  : personaLage < 35 && personaWerte > 70
-                  ? isDe
-                    ? "Hohe kulturelle Weltoffenheit trifft auf finanzielle Barrieren (Prekärer Kreativer)."
-                    : "高度拥抱前沿思想，但受制于经济资本匮乏，容易陷入生活困窘与‘高知低薪’的结构性摩擦。"
-                  : isDe
-                  ? "Ausbalancierter Status mit stetiger Anpassung an Marktchancen."
-                  : "状态均衡，拥有广泛的社会适应力，处于德意志社会的主流承载区间。"}
+
+              {/* 布尔迪厄三大资本透视条 */}
+              <div className="p-4 rounded-xl border border-[var(--line)] bg-[var(--paper-subtle)] space-y-2 text-xs">
+                <span className="font-mono text-[10px] text-[var(--gray)] uppercase tracking-wider block font-bold">
+                  {isDe ? "Kapitaltheorie nach Pierre Bourdieu:" : "布尔迪厄三大资本结构推演："}
+                </span>
+
+                <div className="space-y-1.5">
+                  <div>
+                    <div className="flex justify-between text-[11px] mb-0.5 font-mono">
+                      <span>💰 {isDe ? "Ökonomisches Kapital" : "经济资本 (收入/储蓄/房产)"}</span>
+                      <span className="font-bold">{personaLage}%</span>
+                    </div>
+                    <div className="w-full h-1.5 bg-[var(--line)] rounded-full overflow-hidden">
+                      <div className="h-full bg-[var(--ink)] transition-all duration-300" style={{ width: `${personaLage}%` }} />
+                    </div>
+                  </div>
+
+                  <div>
+                    <div className="flex justify-between text-[11px] mb-0.5 font-mono">
+                      <span>📚 {isDe ? "Kulturelles Kapital" : "文化资本 (学历/惯习/品味)"}</span>
+                      <span className="font-bold">{Math.round(Math.min(100, personaLage * 0.55 + personaWerte * 0.45))}%</span>
+                    </div>
+                    <div className="w-full h-1.5 bg-[var(--line)] rounded-full overflow-hidden">
+                      <div className="h-full bg-[var(--ink)] transition-all duration-300" style={{ width: `${Math.round(Math.min(100, personaLage * 0.55 + personaWerte * 0.45))}%` }} />
+                    </div>
+                  </div>
+
+                  <div>
+                    <div className="flex justify-between text-[11px] mb-0.5 font-mono">
+                      <span>🤝 {isDe ? "Soziales Kapital" : "社会资本 (人脉/阶层网络)"}</span>
+                      <span className="font-bold">{Math.round(Math.min(100, personaLage * 0.5 + (100 - Math.abs(personaWerte - 50) * 1.1) * 0.5))}%</span>
+                    </div>
+                    <div className="w-full h-1.5 bg-[var(--line)] rounded-full overflow-hidden">
+                      <div className="h-full bg-[var(--ink)] transition-all duration-300" style={{ width: `${Math.round(Math.min(100, personaLage * 0.5 + (100 - Math.abs(personaWerte - 50) * 1.1) * 0.5))}%` }} />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* 实时匹配结果卡片 */}
+              <div className="p-4 rounded-xl border border-[var(--line)] bg-[var(--paper)] flex flex-col gap-2 shadow-xs text-xs">
+                <span className="text-[10px] font-mono text-[var(--gray)] uppercase tracking-wider">
+                  {isDe ? "Dynamisches Match-Ergebnis" : "社会学算法动态定格社群："}
+                </span>
+                <div className="flex items-center gap-2">
+                  <span
+                    className="w-3.5 h-3.5 rounded-full"
+                    style={{ backgroundColor: personaCalculated.matched.color }}
+                  />
+                  <h4 className="text-base font-bold text-[var(--ink)]">
+                    {isDe ? personaCalculated.matched.nameDE : personaCalculated.matched.nameZH}
+                  </h4>
+                  <span className="font-mono text-[11px] text-[var(--gray)]">
+                    ({personaCalculated.matched.share}% dt. Bev.)
+                  </span>
+                </div>
+                <p className="text-[var(--ink)] italic leading-relaxed">
+                  "{isDe ? personaCalculated.matched.mottoDE : personaCalculated.matched.mottoZH}"
+                </p>
+
+                <div className="pt-2 border-t border-[var(--line)] text-[var(--ink)] leading-relaxed">
+                  <strong className="block mb-0.5 text-[var(--ink)] font-mono">{isDe ? "Soziologische Mobilitäts-Diagnose:" : "阶层流动性与惯习阻力研判："}</strong>
+                  {personaLage > 70 && personaWerte < 30
+                    ? isDe
+                      ? "Hohes Kapital schützt vor Abstieg, aber starkes Festhalten an tradierten Elitestrukturen verhindert Anschluss an postmaterielle Milieus."
+                      : "高资本铸就深厚护城河，但由于文化品味极其守旧，很难融入新潮的创新先锋圈层，代际封闭性高。"
+                    : personaLage < 35 && personaWerte > 70
+                    ? isDe
+                      ? "Hohe kulturelle Weltoffenheit trifft auf finanzielle Barrieren (Prekärer Kreativer mit Aufstiegsblockade)."
+                      : "高度拥抱前沿思想，但受制于经济资本匮乏，容易陷入生活困窘与‘高知低薪’的结构性摩擦。"
+                    : personaLage > 70 && personaWerte > 70
+                    ? isDe
+                      ? "Kosmopolitische Gewinner der Globalisierung mit maximaler Autonomie und grenzenlosem Habitus."
+                      : "全球化红利的最大受益者，拥有极高的社会资本转换能力与前沿跨国话语权。"
+                    : isDe
+                    ? "Ausbalancierter Status mit stetiger Anpassung an Marktchancen; Kern des gesellschaftlichen Zusammenhalts."
+                    : "状态均衡，拥有广泛的社会适应力，处于德意志社会的主流承载区间与稳定缓冲带。"}
+                </div>
+
+                <div className="pt-2 flex justify-end">
+                  <button
+                    type="button"
+                    onClick={() => {
+                      const text = isDe
+                        ? `Persona-Roaming: Position (${personaWerte}%, ${personaLage}%) -> Milieu: ${personaCalculated.matched.nameDE} (${personaCalculated.matched.share}%)`
+                        : `自由人画像漫游报告：当前定格坐标 (${personaWerte}%, ${personaLage}%) -> 匹配社群：【${personaCalculated.matched.nameZH}】（占比 ${personaCalculated.matched.share}%）`;
+                      if (onExportFinding) onExportFinding(text);
+                      else {
+                        navigator.clipboard.writeText(text);
+                        alert(isDe ? "In die Zwischenablage kopiert!" : "已复制到剪贴板！");
+                      }
+                    }}
+                    className="px-2.5 py-1 text-xs font-mono font-medium rounded border border-[var(--line)] bg-[var(--paper-subtle)] hover:border-[var(--ink)] transition-colors"
+                  >
+                    {isDe ? "📥 Befund exportieren" : "📥 导出漫游报告"}
+                  </button>
+                </div>
               </div>
             </div>
           </div>
         </div>
       )}
 
-      {/* 模式 3：北威州会考真题与 EHZ 评分标准 */}
+      {/* 模式 3：北威州会考真题与 EHZ 评分演练工坊 */}
       {activeTab === "klausur" && (
-        <div className="flex flex-col gap-4 p-4 rounded-xl border border-[var(--line)] bg-[var(--paper-subtle)] text-xs">
-          <div className="border-b border-[var(--line)] pb-3">
-            <span className="px-2 py-0.5 font-bold font-mono text-[10px] rounded border border-[var(--line)] bg-[var(--paper)] text-[var(--ink)]">
-              AFB III · Beurteilungsaufgabe (15 BE)
-            </span>
-            <h4 className="text-sm font-bold mt-1.5 text-[var(--ink)]">
-              {isDe
-                ? "Klausuraufgabe: 'Erörtern Sie, inwiefern das Sinus-Milieu-Modell die These einer zunehmenden Spaltung der deutschen Gesellschaft stützt.' (15 Punkte)"
-                : "北威州典型考题：‘请结合 Sinus-Milieus 容积模型，深入评析关于德国社会正日益走向撕裂分化的论点。’ (15分满分题)"}
-            </h4>
+        <div className="flex flex-col gap-4 p-4 rounded-xl border border-[var(--line)] bg-[var(--paper)] text-xs text-[var(--ink)]">
+          <div className="border-b border-[var(--line)] pb-3 flex flex-wrap items-center justify-between gap-2">
+            <div>
+              <span className="px-2 py-0.5 font-bold font-mono text-[10px] rounded border border-[var(--line)] bg-[var(--paper-subtle)] text-[var(--ink)]">
+                NRW Zentralabitur · AFB III Beurteilungsaufgabe (15 BE / Notenpunkte)
+              </span>
+              <h4 className="text-sm font-bold mt-1.5 text-[var(--ink)]">
+                {isDe
+                  ? "Klausuraufgabe: 'Erörtern Sie, inwiefern das Sinus-Milieu-Modell die These einer zunehmenden Spaltung der deutschen Gesellschaft stützt.' (15 Punkte)"
+                  : "北威州高考真题：‘请结合 Sinus-Milieus 容积模型，深入评析关于德国社会正日益走向撕裂分化的论点。’ (15分满分题)"}
+              </h4>
+            </div>
+            <div className="text-right">
+              <span className="text-[10px] font-mono text-[var(--gray)] block">{isDe ? "Zielerreichung" : "自测目标达成度"}</span>
+              <span className="font-mono text-sm font-bold text-[var(--ink)]">15 / 15 NP (Sehr gut)</span>
+            </div>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <div className="p-3 rounded-lg bg-[var(--paper)] border border-[var(--line)]">
-              <span className="font-bold text-[var(--ink)] block mb-1">
-                {isDe ? "✅ Erwartungshorizont (EHZ-Kernpunkte):" : "✅ 官方采分点 (Erwartungshorizont):"}
+            {/* 采分要点 (EHZ) 与自测打分核对表 */}
+            <div className="p-3.5 rounded-lg bg-[var(--paper-subtle)] border border-[var(--line)] space-y-2.5">
+              <span className="font-bold text-[var(--ink)] block mb-1 font-mono">
+                {isDe ? "✅ Erwartungshorizont (EHZ-Kernkriterien & Bepunktung):" : "✅ 官方阅卷采分标准 (Erwartungshorizont 15分拆解):"}
               </span>
-              <ul className="list-disc list-inside space-y-1 text-[var(--ink)] leading-relaxed">
-                <li>
-                  {isDe
-                    ? "Differenzierung: Spaltung verläuft nicht nur ökonomisch (Arm vs. Reich), sondern horizontal soziokulturell (Weltoffenheit vs. Bewahrung)."
-                    : "跳出单纯的‘贫富二元论’，指出撕裂不仅发生在垂直纵向（收入分化），更发生于水平横向（全球主义开放 vs 本土保守）。"}
-                </li>
-                <li>
-                  {isDe
-                    ? "Rückzug in Milieu-Echokammern: Kaum noch soziale Begegnungsräume zwischen Prekärem Milieu und Postmateriellen/Performern."
-                    : "社群信息茧房化：弱势困境群体与大都市后物质主义精英在生活空间、教育圈层与话语体系上几乎完全脱节。"}
-                </li>
-                <li>
-                  {isDe
-                    ? "Gegenargument: Die Bürgerliche Mitte und die Adaptiv-Pragmatische Mitte bilden weiterhin einen stabilen Puffer (~25%)."
-                    : "反驳论据：市民中坚阶层与务实中产仍占据 25% 以上体量，在社会动荡中发挥关键缓冲阀门作用。"}
-                </li>
-              </ul>
+
+              <div className="space-y-2">
+                <div className="p-2 rounded bg-[var(--paper)] border border-[var(--line)] flex items-start gap-2">
+                  <span className="font-mono font-bold text-[var(--ink)] shrink-0">[3 BE]</span>
+                  <div className="leading-relaxed">
+                    <strong>{isDe ? "1. Zweidimensionale Strukturierung:" : "1. 二维结构阐释："}</strong>{" "}
+                    {isDe
+                      ? "Erklärung der Achsen (Grundorientierung + soziale Lage). Abgrenzung von reinen Einkommensmodellen."
+                      : "准确阐明横轴（基本价值取向）与纵轴（社会地位）的二维矩阵，跳出单纯的传统贫富二元划分。"}
+                  </div>
+                </div>
+
+                <div className="p-2 rounded bg-[var(--paper)] border border-[var(--line)] flex items-start gap-2">
+                  <span className="font-mono font-bold text-[var(--ink)] shrink-0">[4 BE]</span>
+                  <div className="leading-relaxed">
+                    <strong>{isDe ? "2. Lebensweltliche Spaltung & Habitus:" : "2. 生活世界隔离与惯习壁垒："}</strong>{" "}
+                    {isDe
+                      ? "Rückzug in Milieu-Echokammern (Prekäre vs. Performer/Postmaterielle). Habitus-Konzepte nach Bourdieu."
+                      : "弱势困境阶层与大都市后物质主义精英在教育圈层、审美与生活世界上的彻底隔离；运用布尔迪厄惯习理论剖析隐性壁垒。"}
+                  </div>
+                </div>
+
+                <div className="p-2 rounded bg-[var(--paper)] border border-[var(--line)] flex items-start gap-2">
+                  <span className="font-mono font-bold text-[var(--ink)] shrink-0">[4 BE]</span>
+                  <div className="leading-relaxed">
+                    <strong>{isDe ? "3. Gegenargumentation & Mitte-Puffer:" : "3. 缓冲阀门与模型局限反驳："}</strong>{" "}
+                    {isDe
+                      ? "Die Bürgerliche und Adaptiv-Pragmatische Mitte puffern Konflikte ab (~25%). Modellkritik: kommerzielle Intransparenz."
+                      : "市民中坚阶层与务实中产仍占据 25% 以上体量，发挥缓冲阀门作用；同时批判该商业咨询模型的黑箱定性归类局限。"}
+                  </div>
+                </div>
+
+                <div className="p-2 rounded bg-[var(--paper)] border border-[var(--line)] flex items-start gap-2">
+                  <span className="font-mono font-bold text-[var(--ink)] shrink-0">[4 BE]</span>
+                  <div className="leading-relaxed">
+                    <strong>{isDe ? "4. Abgewogenes Sach- & Werturteil:" : "4. 独立事实与价值裁决："}</strong>{" "}
+                    {isDe
+                      ? "Eigenständiges Fazit unter Abwägung von Chancengleichheit und demokratischer Kohäsion."
+                      : "在权衡机会均等与民主社会整合力之间，得出逻辑自洽、论据充实的最终研判结论。"}
+                  </div>
+                </div>
+              </div>
             </div>
 
-            <div className="p-3 rounded-lg bg-[var(--paper)] border border-[var(--line)]">
-              <span className="font-bold text-[var(--ink)] block mb-1">
-                {isDe ? "✍️ 15-Punkte Musterformulierung:" : "✍️ 15分满分标准句式 (Muster-Formulierung):"}
-              </span>
-              <blockquote className="italic border-l-2 border-[var(--ink)] pl-2 text-[var(--ink)] leading-relaxed">
-                {isDe
-                  ? "„Das Sinus-Milieu-Modell belegt eindrucksvoll, dass die gesellschaftliche Erosion nicht primär als klassischer Klassenkonflikt, sondern als Fragmentierung von Lebenswelten verstanden werden muss. Während kosmopolitische Eliten (Postmaterielle, Performer) von der Globalisierung profitieren, verharrt das Prekäre Milieu in systemischer Resignation – die Schnittmengen gemeinsamen Wertebewusstseins schrumpfen zusehends.“"
-                  : "‘Sinus-Milieus 容积模型有力证明了，当今社会的撕裂不应被狭隘地理解为传统的阶级对立，而应被视为生存生活世界（Lebenswelten）的碎片化。当国际化大都市精英（后物质主义、进取精英）从全球化红利中汲取滋养时，边缘困境阶层却陷入体制性的被剥夺与无力感中——维系社会整合的基础共同价值公约数正显著收缩。’"}
-              </blockquote>
+            {/* 满分范文与低分诊断对照 */}
+            <div className="flex flex-col gap-3">
+              <div className="p-3.5 rounded-lg bg-[var(--paper-subtle)] border border-[var(--line)]">
+                <span className="font-bold text-[var(--ink)] block mb-1 font-mono">
+                  {isDe ? "✍️ 15-Punkte Musterformulierung (Abitur-Niveau):" : "✍️ 15分满分标准句式 (Muster-Formulierung):"}
+                </span>
+                <blockquote className="italic border-l-2 border-[var(--ink)] pl-2 text-[var(--ink)] leading-relaxed bg-[var(--paper)] p-2 rounded">
+                  {isDe
+                    ? "„Das Sinus-Milieu-Modell belegt eindrucksvoll, dass die gesellschaftliche Erosion nicht primär als klassischer Klassenkonflikt, sondern als Fragmentierung von Lebenswelten verstanden werden muss. Während kosmopolitische Eliten (Postmaterielle, Performer) von der Globalisierung profitieren, verharrt das Prekäre Milieu in systemischer Resignation – die Schnittmengen gemeinsamen Wertebewusstseins schrumpfen zusehends.“"
+                    : "‘Sinus-Milieus 容积模型有力证明了，当今社会的撕裂不应被狭隘地理解为传统的阶级对立，而应被视为生存生活世界（Lebenswelten）的碎片化。当国际化大都市精英（后物质主义、进取精英）从全球化红利中汲取滋养时，边缘困境阶层却陷入体制性的被剥夺与无力感中——维系社会整合的基础共同价值公约数正显著收缩。’"}
+                </blockquote>
+              </div>
+
+              <div className="p-3.5 rounded-lg bg-[var(--paper-subtle)] border border-[var(--line)]">
+                <span className="font-bold text-[var(--ink)] block mb-1 font-mono">
+                  {isDe ? "⚠️ Typischer Schülerfehler (Punktabzug auf 04 NP):" : "⚠️ 典型低分失误诊断 (导致降至04分的陷阱):"}
+                </span>
+                <p className="leading-relaxed text-[var(--ink)]/80 bg-[var(--paper)] p-2 rounded">
+                  {isDe
+                    ? "Bloßes Aufzählen der Milieu-Namen ohne Rückbindung an die soziologischen Fachbegriffe (Habitus, Kapitalarten nach Bourdieu) und Verwechslung von 'Beurteilen' mit reiner persönlicher Meinungsäußerung ohne Kriterien."
+                    : "仅机械罗列社群名称与八卦式人物标签，未能联结布尔迪厄的‘文化资本’与‘生活惯习’（Habitus）等考纲术语；把‘Beurteilen（学术评判）’误写为缺乏量化标准的情绪化个人感言。"}
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -750,3 +1121,4 @@ export function SinusMilieusSim({ lang = "de", onExportFinding }: SinusMilieusSi
     </div>
   );
 }
+

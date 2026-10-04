@@ -4725,55 +4725,122 @@ export function UniversalInteractiveWorkbench({
       {/* ===================================================================== */}
       {activeTab === "causality" && (
         <div className="flex flex-col gap-4">
-          {/* 1. 因果动态推演链 */}
-          <div className="rounded-lg border border-[var(--line)] bg-[var(--surface)] p-4 space-y-2">
-            <h3 className="font-serif text-sm font-bold text-[var(--ink)] flex items-center gap-2">
-              <span className="text-[var(--accent)] font-mono">01.</span>
-              {de ? "Phänomenologische Kausalkette (Wenn-Dann-Analyse)" : "动态因果推演链 (Wenn-Dann 推理)"}
-            </h3>
-            <div className="rounded bg-[var(--paper-subtle)]/60 p-3 text-xs font-sans text-[var(--ink)] leading-relaxed border border-[var(--line)]/50">
-              <p className="mb-2">
-                <strong className="font-mono text-[var(--accent)]">DE: </strong>
-                {pedagogy.causality.phenomenonDE}
-              </p>
-              <p>
-                <strong className="font-mono text-[var(--accent)]">ZH: </strong>
-                {pedagogy.causality.phenomenonZH}
-              </p>
+          {/* 1. 四阶段互动因果推演链条导航 (Kausal-Domino) */}
+          <div className="rounded-xl border border-[var(--line)] bg-[var(--surface)] p-4 space-y-3 shadow-xs">
+            <div className="flex items-center justify-between border-b border-[var(--line)] pb-2.5">
+              <h3 className="font-serif text-sm font-bold text-[var(--ink)] flex items-center gap-2">
+                <span className="font-mono text-base">⛓️</span>
+                <span>{de ? "Vierstündige Kausalkette (Ursache-Wirkungs-Domino)" : "四步因果推演链 (Ursache ➔ Wirkung 动态演绎)"}</span>
+              </h3>
+              <span className="text-[11px] font-mono text-[var(--gray)]">
+                {de ? "Klicken Sie auf eine Phase zur Vertiefung" : "点击各阶段查看微观传导机制"}
+              </span>
+            </div>
+
+            {/* 4 步进度阶梯 */}
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-2">
+              {[
+                {
+                  idx: 0,
+                  step: "01",
+                  titleDE: "Impuls / Ursache",
+                  titleZH: "初始驱动 / 扰动",
+                  icon: "⚡",
+                  descDE: "Externer Parameterwechsel",
+                  descZH: "输入变量参数突变"
+                },
+                {
+                  idx: 1,
+                  step: "02",
+                  titleDE: "Mikromechanismus",
+                  titleZH: "微观本质机制",
+                  icon: "🔬",
+                  descDE: "Didaktische Übertragung",
+                  descZH: "底层逻辑与粒子传导"
+                },
+                {
+                  idx: 2,
+                  step: "03",
+                  titleDE: "System-Reaktion",
+                  titleZH: "系统宏观效应",
+                  icon: "🌐",
+                  descDE: "Dynamische Gleichgewicht",
+                  descZH: "稳态破坏与二次均衡"
+                },
+                {
+                  idx: 3,
+                  step: "04",
+                  titleDE: "Klausur-Fazit",
+                  titleZH: "考纲核心论断",
+                  icon: "🏛️",
+                  descDE: "KLP NRW Operatoren",
+                  descZH: "AFB II/III 满分采分点"
+                }
+              ].map((phase) => (
+                <div
+                  key={phase.idx}
+                  className="p-3 rounded-lg border border-[var(--line)] bg-[var(--paper-subtle)] space-y-1 transition-all"
+                >
+                  <div className="flex items-center justify-between">
+                    <span className="font-mono text-xs font-bold text-[var(--ink)]">
+                      {phase.icon} {phase.step}
+                    </span>
+                    <span className="w-2 h-2 rounded-full bg-[var(--ink)]/40" />
+                  </div>
+                  <h4 className="font-bold text-xs text-[var(--ink)]">
+                    {de ? phase.titleDE : phase.titleZH}
+                  </h4>
+                  <p className="text-[10px] text-[var(--gray)] font-mono">
+                    {de ? phase.descDE : phase.descZH}
+                  </p>
+                </div>
+              ))}
+            </div>
+
+            {/* 动态因果推理深度展开 */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-3 pt-2">
+              <div className="rounded-lg bg-[var(--paper-subtle)] p-3 text-xs font-sans text-[var(--ink)] leading-relaxed border border-[var(--line)]">
+                <span className="font-bold text-[var(--ink)] block mb-1 font-mono">
+                  {de ? "⚡ Phänomenologische Wenn-Dann-Analyse:" : "⚡ 动态因果演绎分析 (Wenn-Dann 推理):"}
+                </span>
+                <p className="mb-2 text-[var(--ink)] font-serif">
+                  <strong className="font-mono text-[var(--ink)]">DE: </strong>
+                  {pedagogy.causality.phenomenonDE}
+                </p>
+                <p className="text-[var(--ink)]/90">
+                  <strong className="font-mono text-[var(--ink)]">ZH: </strong>
+                  {pedagogy.causality.phenomenonZH}
+                </p>
+              </div>
+
+              <div className="rounded-lg bg-[var(--paper-subtle)] p-3 text-xs font-sans text-[var(--ink)] leading-relaxed border border-[var(--line)]">
+                <span className="font-bold text-[var(--ink)] block mb-1 font-mono">
+                  {de ? "🔬 Mikroskopischer Mechanismus:" : "🔬 微观机制与学科底层逻辑:"}
+                </span>
+                <p className="text-[var(--ink)]/90">
+                  {de ? pedagogy.causality.mechanismDE : pedagogy.causality.mechanismZH}
+                </p>
+              </div>
             </div>
           </div>
 
-          {/* 2. 微观本质机制剖析 */}
-          <div className="rounded-lg border border-[var(--line)] bg-[var(--surface)] p-4 space-y-2">
-            <h3 className="font-serif text-sm font-bold text-[var(--ink)] flex items-center gap-2">
-              <span className="text-[var(--accent)] font-mono">02.</span>
-              {de ? "Mikroskopischer Mechanismus & Didaktische Erklärung" : "微观本质机制与学科底层逻辑"}
-            </h3>
-            <div className="rounded bg-[var(--paper-subtle)]/60 p-3 text-xs font-sans text-[var(--gray)] leading-relaxed border border-[var(--line)]/50 space-y-2">
-              <p className="text-[var(--ink)]">
-                <span className="font-bold text-[var(--ink)] block mb-1 font-mono">Wissenschaftliche Erklärung:</span>
-                {de ? pedagogy.causality.mechanismDE : pedagogy.causality.mechanismZH}
-              </p>
-            </div>
-          </div>
-
-          {/* 3. 核心专业术语表 */}
-          <div className="rounded-lg border border-[var(--line)] bg-[var(--surface)] p-4 space-y-3">
-            <h3 className="font-serif text-sm font-bold text-[var(--ink)] flex items-center gap-2">
-              <span className="text-[var(--accent)] font-mono">03.</span>
-              {de ? "Fachbegriffe & Vokabular" : "官方考纲核心术语与定义"}
+          {/* 2. 核心考纲学术术语库 (Fachbegriffe) */}
+          <div className="rounded-xl border border-[var(--line)] bg-[var(--surface)] p-4 space-y-3 shadow-xs">
+            <h3 className="font-serif text-sm font-bold text-[var(--ink)] flex items-center gap-2 border-b border-[var(--line)] pb-2">
+              <span className="font-mono text-base">📖</span>
+              <span>{de ? "Fachbegriffe & Offizielles Prüfungsvokabular" : "官方考纲核心学科术语与精准定义"}</span>
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
               {pedagogy.causality.fachbegriffe.map((fb, idx) => (
                 <div
                   key={idx}
-                  className="rounded border border-[var(--line)] bg-[var(--paper-subtle)]/40 p-2.5 text-xs font-mono space-y-1"
+                  className="rounded-lg border border-[var(--line)] bg-[var(--paper-subtle)] p-3 text-xs font-mono space-y-1.5"
                 >
-                  <div className="flex items-center justify-between">
-                    <span className="font-bold text-[var(--ink)]">{fb.term}</span>
-                    <span className="text-[var(--accent)] text-[11px] font-sans">{fb.zh}</span>
+                  <div className="flex items-center justify-between border-b border-[var(--line)]/60 pb-1">
+                    <span className="font-bold text-[var(--ink)] text-sm">{fb.term}</span>
+                    <span className="text-[var(--ink)] text-[11px] font-sans font-bold">{fb.zh}</span>
                   </div>
-                  <p className="text-[var(--gray)] font-sans text-[11px] leading-relaxed">
+                  <p className="text-[var(--ink)] font-sans text-[11px] leading-relaxed pt-0.5">
                     {fb.def}
                   </p>
                 </div>
@@ -4789,33 +4856,39 @@ export function UniversalInteractiveWorkbench({
       {activeTab === "klausur" && (
         <div className="flex flex-col gap-4">
           {/* 会考原题题干与分值 */}
-          <div className="rounded-lg border border-[var(--line)] bg-[var(--surface)] p-4 space-y-3">
-            <div className="flex items-center justify-between flex-wrap gap-2">
-              <span className="font-mono text-xs uppercase px-2 py-0.5 rounded border border-[var(--accent)]/40 text-[var(--accent)] font-bold">
+          <div className="rounded-xl border border-[var(--line)] bg-[var(--surface)] p-4 space-y-3 shadow-xs">
+            <div className="flex items-center justify-between flex-wrap gap-2 border-b border-[var(--line)] pb-2.5">
+              <span className="font-mono text-xs uppercase px-2 py-0.5 rounded border border-[var(--line)] bg-[var(--paper-subtle)] text-[var(--ink)] font-bold">
                 NRW Klausuraufgabe · {pedagogy.klausur.afb}
               </span>
               <span className="font-mono text-xs font-bold text-[var(--ink)] bg-[var(--paper-subtle)] px-2 py-0.5 rounded border border-[var(--line)]">
-                {pedagogy.klausur.points} Punkte
+                {pedagogy.klausur.points} Punkte (15 NP-Skala)
               </span>
             </div>
-            <div className="text-xs font-sans text-[var(--ink)] leading-relaxed space-y-1.5 p-3 rounded bg-[var(--paper-subtle)]/60 border border-[var(--line)]/50">
+            <div className="text-xs font-sans text-[var(--ink)] leading-relaxed space-y-1.5 p-3 rounded-lg bg-[var(--paper-subtle)] border border-[var(--line)]">
               <p className="font-semibold text-[var(--ink)]">
-                <span className="font-mono text-[var(--accent)] mr-1">Aufgabe:</span>
+                <span className="font-mono mr-1 text-[var(--ink)] font-bold">Aufgabe:</span>
                 {de ? pedagogy.klausur.promptDE : pedagogy.klausur.promptZH}
               </p>
             </div>
           </div>
 
-          {/* 阅卷评分细则 (Erwartungshorizont - EHZ) */}
-          <div className="rounded-lg border border-[var(--line)] bg-[var(--surface)] p-4 space-y-2">
-            <h3 className="font-serif text-sm font-bold text-[var(--ink)] flex items-center gap-2">
-              <span className="text-emerald-600 font-mono">EHZ</span>
-              {de ? "Erwartungshorizont (Kriterienkatalog)" : "官方阅卷采分要点 (Erwartungshorizont)"}
-            </h3>
-            <ul className="space-y-2 text-xs font-sans text-[var(--gray)]">
+          {/* 阅卷评分细则 (Erwartungshorizont - EHZ) 与互动自评 */}
+          <div className="rounded-xl border border-[var(--line)] bg-[var(--surface)] p-4 space-y-3 shadow-xs">
+            <div className="flex items-center justify-between border-b border-[var(--line)] pb-2">
+              <h3 className="font-serif text-sm font-bold text-[var(--ink)] flex items-center gap-2">
+                <span className="font-mono text-xs px-1.5 py-0.5 rounded border border-[var(--line)] bg-[var(--paper-subtle)]">EHZ</span>
+                <span>{de ? "Offizieller Erwartungshorizont (Kriterienkatalog)" : "官方阅卷采分要点 (Erwartungshorizont 全真评分规范)"}</span>
+              </h3>
+              <span className="text-[10px] font-mono text-[var(--gray)]">
+                {de ? "Kriterien zur Maximalpunktzahl" : "踩中全部关键论点可获满分"}
+              </span>
+            </div>
+
+            <ul className="space-y-2 text-xs font-sans">
               {(de ? pedagogy.klausur.erwartungshorizontDE : pedagogy.klausur.erwartungshorizontZH).map((item, idx) => (
-                <li key={idx} className="flex items-start gap-2">
-                  <span className="font-mono font-bold text-[var(--accent)] shrink-0 mt-0.5">
+                <li key={idx} className="flex items-start gap-2.5 p-2.5 rounded-lg border border-[var(--line)] bg-[var(--paper-subtle)]">
+                  <span className="font-mono font-bold text-[var(--ink)] shrink-0 mt-0.5">
                     [{idx + 1}]
                   </span>
                   <span className="leading-relaxed text-[var(--ink)]">{item}</span>
@@ -4825,19 +4898,19 @@ export function UniversalInteractiveWorkbench({
           </div>
 
           {/* 15分满分答题模版 (Formulierungshilfe) */}
-          <div className="rounded-lg border border-[var(--line)] bg-[var(--surface)] p-4 space-y-2">
-            <h3 className="font-serif text-sm font-bold text-[var(--ink)] flex items-center gap-2">
-              <span className="text-[var(--accent)] font-mono">15 NP</span>
-              {de ? "Muster-Formulierung (Oberstufe)" : "15分满分德语答题模版与得分话术"}
+          <div className="rounded-xl border border-[var(--line)] bg-[var(--surface)] p-4 space-y-2 shadow-xs">
+            <h3 className="font-serif text-sm font-bold text-[var(--ink)] flex items-center gap-2 border-b border-[var(--line)] pb-2">
+              <span className="font-mono text-xs px-1.5 py-0.5 rounded border border-[var(--line)] bg-[var(--paper-subtle)]">15 NP</span>
+              <span>{de ? "Muster-Formulierung (Gymnasiale Oberstufe)" : "15分满分德语答题模版与得分句式 (Formulierungshilfe)"}</span>
             </h3>
-            <blockquote className="rounded bg-[var(--paper-subtle)] p-3 text-xs font-mono text-[var(--ink)] border-l-2 border-[var(--accent)] leading-relaxed italic">
+            <blockquote className="rounded-lg bg-[var(--paper-subtle)] p-3.5 text-xs font-mono text-[var(--ink)] border-l-4 border-l-[var(--ink)] border border-[var(--line)] leading-relaxed italic">
               "{pedagogy.klausur.formulierungshilfe}"
             </blockquote>
           </div>
 
           {/* 中文考点点拨与得分秘籍 */}
-          <div className="rounded-lg border border-amber-500/30 bg-amber-500/5 p-4 space-y-1.5 text-xs">
-            <h4 className="font-bold text-amber-900 dark:text-amber-300 flex items-center gap-1.5">
+          <div className="rounded-xl border-l-4 border-l-[var(--ink)] border border-[var(--line)] bg-[var(--paper-subtle)] p-4 space-y-1.5 text-xs shadow-xs">
+            <h4 className="font-bold text-[var(--ink)] flex items-center gap-1.5">
               <span>💡</span>
               <span>得分陷阱与审题破局点拨 (Tipps & Stolpersteine):</span>
             </h4>
