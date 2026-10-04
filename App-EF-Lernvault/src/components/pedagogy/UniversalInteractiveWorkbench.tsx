@@ -772,23 +772,30 @@ export function UniversalInteractiveWorkbench({
       // 11. 生物：孟德尔双杂交 9:3:3:1 棋盘 (Genetik)
       // ==========================================
       case "bio-genetik-kreuzung": {
+        const nSamen = Math.round(16 + (paramA / 100) * 984);
+        const rRate = +((paramB / 100) * 50).toFixed(1); // 0% - 50%
+        const isLinked = Number(rRate) < 45;
         return {
           archetype: "genetik",
           paramALabelDE: "Stichprobengröße F2 (Individuen)",
           paramALabelZH: "F2 代杂交植株样本容量",
-          paramAValueDisplay: `${Math.round(16 + paramA * 10)} Samen`,
-          paramBLabelDE: "Rekombinationswahrscheinlichkeit",
-          paramBLabelZH: "等位基因独立自由组合率",
-          paramBValueDisplay: `50.0 % (nicht gekoppelt)`,
-          rateLabelDE: "Klassisches Spaltungsverhältnis",
-          rateLabelZH: "孟德尔经典表型分离比",
-          rateValue: "9 : 3 : 3 : 1",
+          paramAValueDisplay: `${nSamen} Samen`,
+          paramBLabelDE: "Rekombinationsfrequenz r (Kopplung)",
+          paramBLabelZH: "重组交换率 r (基因连锁程度)",
+          paramBValueDisplay: Number(rRate) >= 49 ? "50.0 % (frei kombiniert)" : `${rRate} % (gekoppelt)`,
+          rateLabelDE: isLinked ? "Gekoppelte Vererbung (Morgan)" : "Mendel-Spaltungsverhältnis",
+          rateLabelZH: isLinked ? "摩尔根连锁遗传分离" : "孟德尔经典表型分离比",
+          rateValue: isLinked ? `Kopplung (r=${rRate}%)` : "9 : 3 : 3 : 1",
           subLabelDE: "Phänotypen-Verteilung",
           subLabelZH: "双杂交表型分布 (黄色/圆粒等)",
-          subValue: "56.25% : 18.75% : 18.75% : 6.25%",
-          graphY: 75,
-          insightDE: "3. Mendelsche Regel: Zwei Merkmalspaare auf verschiedenen Chromosomen werden unabhängig voneinander nach dem Gesetz der Kombination vererbt.",
-          insightZH: "孟德尔第三定律（自由组合定律）：控制两对相对性状的等位基因在形成配子时彼此独立分离、自由组合，形成 16 种基因型组合与 9:3:3:1 表型分离比。",
+          subValue: isLinked ? `Elterlich dominiert (r=${rRate}%)` : "56.25% : 18.75% : 18.75% : 6.25%",
+          graphY: Math.round(Number(rRate) * 2),
+          insightDE: isLinked
+            ? `Genkopplung: Liegen zwei Gene auf demselben Chromosom, entstehen Rekombinanten nur durch Crossing-Over in der Prophase I (Austauschwert r = ${rRate}%).`
+            : "3. Mendelsche Regel: Zwei Merkmalspaare auf verschiedenen Chromosomen werden unabhängig voneinander nach dem Gesetz der Neukombination vererbt.",
+          insightZH: isLinked
+            ? `摩尔根连锁互换定律：两对等位基因位于同一对同源染色体上，仅减数第一次分裂前期非姐妹染色单体交叉互换产生重组配子（重组率 r = ${rRate}%）。`
+            : "孟德尔自由组合定律：位于非同源染色体上的两对等位基因彼此独立分离、自由组合，形成 16 种基因型组合与 9:3:3:1 经典表型比。",
         };
       }
 
@@ -2038,22 +2045,109 @@ export function UniversalInteractiveWorkbench({
         );
       }
 
-      // 11. 生物：孟德尔 9:3:3:1 棋盘
+      // 11. 生物：孟德尔 9:3:3:1 棋盘与表型分布沙盒
       case "genetik": {
+        const nSamen = Math.round(16 + (paramA / 100) * 984);
+        const rRate = (paramB / 100) * 0.5; // 0 to 0.5
+        const fracYR = 0.5 + 0.25 * (1 - 2 * rRate) + (2 * rRate * 0.0625);
+        const fracyR = rRate * 0.375;
+        const fracYr = rRate * 0.375;
+        const fracyr = Math.max(0.01, 1 - fracYR - fracyR - fracYr);
+
+        const seeds = Array.from({ length: 16 }).map((_, i) => {
+          const pseudo = (Math.sin(i * 12.9898 + paramA * 0.05 + paramB * 0.08) * 43758.5453) % 1;
+          const val = Math.abs(pseudo);
+          if (val < fracYR) {
+            return { color: "yellow", icon: "🟡", isWrinkled: false };
+          } else if (val < fracYR + fracyR) {
+            return { color: "green", icon: "🟢", isWrinkled: false };
+          } else if (val < fracYR + fracyR + fracYr) {
+            return { color: "yellow", icon: "🟡", isWrinkled: true };
+          } else {
+            return { color: "green", icon: "🟢", isWrinkled: true };
+          }
+        });
+
+        const countYR = Math.round(nSamen * fracYR);
+        const countyR = Math.round(nSamen * fracyR);
+        const countYr = Math.round(nSamen * fracYr);
+        const countyr = Math.max(0, nSamen - countYR - countyR - countYr);
+
         return (
-          <div className="flex flex-col items-center justify-center p-2 w-full">
-            <div className="grid grid-cols-4 gap-1 w-64 h-40 font-mono text-[10px]">
-              {Array.from({ length: 16 }).map((_, i) => {
-                const isGreen = i === 5 || i === 7 || i === 13 || i === 15;
-                const isWrinkled = i === 10 || i === 11 || i === 14 || i === 15;
-                const bg = isGreen && isWrinkled ? "bg-emerald-200 border-emerald-400" : isGreen ? "bg-emerald-100 border-emerald-300" : isWrinkled ? "bg-amber-100 border-amber-300" : "bg-yellow-100 border-yellow-300";
-                return (
-                  <div key={i} className={`flex flex-col items-center justify-center rounded border ${bg} text-[var(--ink)] font-bold shadow-2xs`}>
-                    <span>{isGreen ? "🟢" : "🟡"}</span>
-                    <span className="text-[8px]">{isWrinkled ? "wrinkled" : "round"}</span>
-                  </div>
-                );
-              })}
+          <div className="flex flex-col gap-3 p-3 w-full bg-[var(--paper-subtle)]/40 rounded-lg border border-[var(--line)]">
+            <div className="flex items-center justify-between text-xs font-mono border-b border-[var(--line)] pb-1.5">
+              <span className="font-bold text-[var(--ink)]">
+                {de ? "F2-Stichprobe & Phänotypen-Schale" : "F2 代杂交种培养皿样本观察"}
+              </span>
+              <span className="text-[var(--accent)] font-bold">
+                N = {nSamen} Samen ({de ? "Rekombination" : "重组率"}: {(rRate * 100).toFixed(1)}%)
+              </span>
+            </div>
+
+            {/* 动态 16 粒种子培养皿网格 (随着滑块拖动实时变换性状外观) */}
+            <div className="grid grid-cols-8 gap-1.5 justify-center py-1">
+              {seeds.map((s, idx) => (
+                <div
+                  key={idx}
+                  className={`flex flex-col items-center justify-center p-1.5 rounded-lg border text-center transition-all duration-150 ${
+                    s.color === "green"
+                      ? "bg-emerald-50 dark:bg-emerald-950/30 border-emerald-300 dark:border-emerald-700"
+                      : "bg-amber-50 dark:bg-amber-950/30 border-amber-300 dark:border-amber-700"
+                  }`}
+                >
+                  <span className="text-base select-none">{s.icon}</span>
+                  <span className="text-[8px] font-mono font-semibold text-[var(--ink)]">
+                    {s.isWrinkled ? (de ? "runz." : "皱粒") : (de ? "rund" : "圆粒")}
+                  </span>
+                </div>
+              ))}
+            </div>
+
+            {/* 四类表型统计直方对比条 */}
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 pt-1 font-mono text-[11px]">
+              <div className="p-2 rounded bg-[var(--paper)] border border-[var(--line)]">
+                <div className="flex justify-between items-center text-[10px] text-[var(--gray)]">
+                  <span>🟡 {de ? "Gelb-Rund" : "黄圆"}</span>
+                  <span className="font-bold text-[var(--ink)]">{countYR}</span>
+                </div>
+                <div className="w-full bg-[var(--paper-subtle)] h-1.5 rounded-full overflow-hidden mt-1">
+                  <div className="bg-amber-400 h-full rounded-full" style={{ width: `${(fracYR * 100).toFixed(0)}%` }} />
+                </div>
+                <span className="text-[9px] text-[var(--gray)] block mt-0.5">{(fracYR * 100).toFixed(1)}% (9/16)</span>
+              </div>
+
+              <div className="p-2 rounded bg-[var(--paper)] border border-[var(--line)]">
+                <div className="flex justify-between items-center text-[10px] text-[var(--gray)]">
+                  <span>🟢 {de ? "Grün-Rund" : "绿圆"}</span>
+                  <span className="font-bold text-[var(--ink)]">{countyR}</span>
+                </div>
+                <div className="w-full bg-[var(--paper-subtle)] h-1.5 rounded-full overflow-hidden mt-1">
+                  <div className="bg-emerald-500 h-full rounded-full" style={{ width: `${(fracyR * 100).toFixed(0)}%` }} />
+                </div>
+                <span className="text-[9px] text-[var(--gray)] block mt-0.5">{(fracyR * 100).toFixed(1)}% (3/16)</span>
+              </div>
+
+              <div className="p-2 rounded bg-[var(--paper)] border border-[var(--line)]">
+                <div className="flex justify-between items-center text-[10px] text-[var(--gray)]">
+                  <span>🟡 {de ? "Gelb-Runz." : "黄皱"}</span>
+                  <span className="font-bold text-[var(--ink)]">{countYr}</span>
+                </div>
+                <div className="w-full bg-[var(--paper-subtle)] h-1.5 rounded-full overflow-hidden mt-1">
+                  <div className="bg-amber-600 h-full rounded-full" style={{ width: `${(fracYr * 100).toFixed(0)}%` }} />
+                </div>
+                <span className="text-[9px] text-[var(--gray)] block mt-0.5">{(fracYr * 100).toFixed(1)}% (3/16)</span>
+              </div>
+
+              <div className="p-2 rounded bg-[var(--paper)] border border-[var(--line)]">
+                <div className="flex justify-between items-center text-[10px] text-[var(--gray)]">
+                  <span>🟢 {de ? "Grün-Runz." : "绿皱"}</span>
+                  <span className="font-bold text-[var(--ink)]">{countyr}</span>
+                </div>
+                <div className="w-full bg-[var(--paper-subtle)] h-1.5 rounded-full overflow-hidden mt-1">
+                  <div className="bg-emerald-700 h-full rounded-full" style={{ width: `${(fracyr * 100).toFixed(0)}%` }} />
+                </div>
+                <span className="text-[9px] text-[var(--gray)] block mt-0.5">{(fracyr * 100).toFixed(1)}% (1/16)</span>
+              </div>
             </div>
           </div>
         );
@@ -2398,15 +2492,105 @@ export function UniversalInteractiveWorkbench({
 
       // 29. 社科：福利国家洛伦兹曲线再分配 (Sozialstaat)
       case "sozialstaat": {
+        const k = paramA / 100;
+        const ctrlX = Math.round(210 - k * 45);
+        const ctrlY = Math.round(155 - k * 60);
         return (
-          <svg className="w-full h-64 sm:h-72 rounded bg-[var(--paper-subtle)]/40 border border-[var(--line)]/50" viewBox="0 0 440 200">
-            <line x1="80" y1="170" x2="320" y2="170" stroke="var(--ink)" strokeWidth="1.5" />
-            <line x1="80" y1="30" x2="80" y2="170" stroke="var(--ink)" strokeWidth="1.5" />
-            <line x1="80" y1="170" x2="320" y2="30" stroke="var(--gray)" strokeWidth="1.5" strokeDasharray="3,3" />
-            <path d="M 80 170 Q 220 160 320 30" fill="none" stroke="#dc2626" strokeWidth="2" />
-            <text x="260" y="145" fontSize="8" fill="#dc2626" fontFamily="monospace">Primär-Gini: 0.48</text>
-            <path d="M 80 170 Q 180 120 320 30" fill="none" stroke="#16a34a" strokeWidth="2.5" />
-            <text x="180" y="95" fontSize="8" fill="#16a34a" fontWeight="bold" fontFamily="monospace">Netto-Gini: {data.rateValue}</text>
+          <svg className="w-full h-64 sm:h-72 rounded bg-[var(--paper)] border border-[var(--line)]" viewBox="0 0 440 200">
+            {/* 45° 绝对均等对角线 (Gini = 0) */}
+            <line x1="60" y1="165" x2="280" y2="25" stroke="var(--line)" strokeWidth="1.5" strokeDasharray="4,4" />
+            <text x="175" y="85" textAnchor="middle" fontSize="8" fill="var(--gray)" fontFamily="monospace" transform="rotate(-32 175 85)">
+              45° Diagonale (Gini = 0)
+            </text>
+
+            {/* 再分配缩小的不平等面积 A (Umverteilungsfläche) */}
+            <path
+              d={`M 60 165 Q ${ctrlX} ${ctrlY} 280 25 Q 210 155 60 165 Z`}
+              fill="#16a34a"
+              fillOpacity="0.18"
+            />
+
+            {/* 初次分配曲线 (Markteinkommen vor Steuern, Gini=0.48) */}
+            <path d="M 60 165 Q 210 155 280 25" fill="none" stroke="#dc2626" strokeWidth="2" strokeDasharray="3,2" />
+
+            {/* 二次分配净收入曲线 (Nettoeinkommen nach Steuern & Bürgergeld) */}
+            <path d={`M 60 165 Q ${ctrlX} ${ctrlY} 280 25`} fill="none" stroke="#16a34a" strokeWidth="2.5" />
+
+            {/* 坐标轴与刻度 */}
+            <line x1="60" y1="165" x2="285" y2="165" stroke="var(--ink)" strokeWidth="1.5" />
+            <line x1="60" y1="20" x2="60" y2="165" stroke="var(--ink)" strokeWidth="1.5" />
+
+            {/* X 轴刻度 (人口累计 %) */}
+            {[0, 25, 50, 75, 100].map((pct, idx) => {
+              const xPos = 60 + (idx / 4) * 220;
+              return (
+                <g key={pct}>
+                  <line x1={xPos} y1="165" x2={xPos} y2="169" stroke="var(--ink)" strokeWidth="1" />
+                  <text x={xPos} y="178" textAnchor="middle" fontSize="7" fill="var(--gray)" fontFamily="monospace">
+                    {pct}%
+                  </text>
+                </g>
+              );
+            })}
+            <text x="170" y="192" textAnchor="middle" fontSize="8.5" fill="var(--ink)" fontFamily="monospace">
+              {de ? "Kumulierte Bevölkerung (%)" : "累积人口百分比 (%)"}
+            </text>
+
+            {/* Y 轴刻度 (收入累计 %) */}
+            {[0, 25, 50, 75, 100].map((pct, idx) => {
+              const yPos = 165 - (idx / 4) * 140;
+              return (
+                <g key={pct}>
+                  <line x1="56" y1={yPos} x2="60" y2={yPos} stroke="var(--ink)" strokeWidth="1" />
+                  <text x="52" y={yPos + 2.5} textAnchor="end" fontSize="7" fill="var(--gray)" fontFamily="monospace">
+                    {pct}%
+                  </text>
+                </g>
+              );
+            })}
+            <text x="22" y="95" textAnchor="middle" fontSize="8" fill="var(--ink)" fontFamily="monospace" transform="rotate(-90 22 95)">
+              {de ? "Kumuliertes Einkommen (%)" : "累积收入百分比 (%)"}
+            </text>
+
+            {/* 右侧学术解剖与图例卡片 */}
+            <g transform="translate(295, 25)">
+              <rect x="0" y="0" width="135" height="145" rx="4" fill="var(--paper-subtle)" stroke="var(--line)" />
+              <text x="10" y="18" fontSize="9" fontWeight="bold" fill="var(--ink)" fontFamily="monospace">
+                Lorenz-Kurven-Analyse
+              </text>
+              <line x1="10" y1="24" x2="125" y2="24" stroke="var(--line)" strokeWidth="1" />
+
+              {/* 初次分配 */}
+              <circle cx="16" cy="38" r="3.5" fill="#dc2626" />
+              <text x="25" y="41" fontSize="7.5" fill="var(--ink)" fontFamily="monospace">
+                Primär: Gini = 0.48
+              </text>
+              <text x="25" y="52" fontSize="6.5" fill="var(--gray)">
+                Markteinkommen (vor Steuer)
+              </text>
+
+              {/* 二次分配 */}
+              <circle cx="16" cy="68" r="3.5" fill="#16a34a" />
+              <text x="25" y="71" fontSize="8" fontWeight="bold" fill="#16a34a" fontFamily="monospace">
+                Netto-Gini: {data.rateValue}
+              </text>
+              <text x="25" y="82" fontSize="6.5" fill="var(--gray)">
+                Nach Steuer & Bürgergeld
+              </text>
+
+              {/* 平抑效果 */}
+              <rect x="8" y="94" width="118" height="24" rx="2" fill="var(--paper)" stroke="var(--line)" />
+              <text x="14" y="105" fontSize="7" fill="var(--gray)">
+                Umverteilungsgewinn ΔGini:
+              </text>
+              <text x="14" y="115" fontSize="7.5" fontWeight="bold" fill="#16a34a" fontFamily="monospace">
+                {data.subValue}
+              </text>
+
+              <text x="10" y="132" fontSize="6.5" fill="var(--gray)" fontStyle="italic">
+                Gini = Fläche A / (A + B)
+              </text>
+            </g>
           </svg>
         );
       }

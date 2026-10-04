@@ -50,15 +50,11 @@ export function MarktMechanismusSim({ lang = "zh", onFormulaGenerated }: MarktMe
     return svgHeight - margin.bottom - (p / 100) * (svgHeight - margin.top - margin.bottom);
   };
 
-  // Demand line (Q=0 to Q=100)
-  const dP0 = Math.min(100, dBase);
-  const dP100 = Math.max(0, dBase - 100);
-  const demandPath = `M ${toSvgX(0)} ${toSvgY(dP0)} L ${toSvgX(100)} ${toSvgY(dP100)}`;
+  // Demand line (Q=-5 to Q=105, un-distorted slope -1, clipped in chart)
+  const demandPath = `M ${toSvgX(-5)} ${toSvgY(dBase - (-5))} L ${toSvgX(105)} ${toSvgY(dBase - 105)}`;
 
-  // Supply line (Q=0 to Q=100)
-  const sP0 = Math.max(0, sBase);
-  const sP100 = Math.min(100, sBase + 100);
-  const supplyPath = `M ${toSvgX(0)} ${toSvgY(sP0)} L ${toSvgX(100)} ${toSvgY(sP100)}`;
+  // Supply line (Q=-5 to Q=105, un-distorted slope +1, clipped in chart)
+  const supplyPath = `M ${toSvgX(-5)} ${toSvgY(sBase + (-5))} L ${toSvgX(105)} ${toSvgY(sBase + 105)}`;
 
   // Klausur summary sentence
   const klausursatz = useMemo(() => {
@@ -120,6 +116,17 @@ export function MarktMechanismusSim({ lang = "zh", onFormulaGenerated }: MarktMe
         {/* SVG Diagram */}
         <div className="bg-[var(--surface)] rounded-[var(--radius)] border border-[var(--line)] p-2 flex flex-col items-center justify-center relative overflow-hidden">
           <svg width={svgWidth} height={svgHeight} className="overflow-visible select-none">
+            <defs>
+              <clipPath id="markt-chart-clip">
+                <rect
+                  x={margin.left}
+                  y={margin.top}
+                  width={svgWidth - margin.left - margin.right}
+                  height={svgHeight - margin.top - margin.bottom}
+                />
+              </clipPath>
+            </defs>
+
             {/* Coordinate axes */}
             <line
               x1={margin.left}
@@ -146,29 +153,57 @@ export function MarktMechanismusSim({ lang = "zh", onFormulaGenerated }: MarktMe
               Preis (P)
             </text>
 
-            {/* Demand curve (Nachfrage) */}
-            <path d={demandPath} fill="none" stroke="var(--ink)" strokeWidth="2" />
-            <text x={toSvgX(85)} y={toSvgY(dP100 + 12)} fontSize="11" fill="var(--ink)" fontWeight="bold" fontFamily="monospace">
+            {/* Clipped Demand and Supply Curves */}
+            <g clipPath="url(#markt-chart-clip)">
+              {/* Demand curve (Nachfrage) */}
+              <path d={demandPath} fill="none" stroke="var(--ink)" strokeWidth="2" />
+              {/* Supply curve (Angebot) */}
+              <path d={supplyPath} fill="none" stroke="var(--accent)" strokeWidth="2" />
+            </g>
+
+            {/* Curve labels */}
+            <text x={toSvgX(Math.min(88, Math.max(10, dBase - 15)))} y={toSvgY(15)} fontSize="11" fill="var(--ink)" fontWeight="bold" fontFamily="monospace">
               N (Demand)
             </text>
-
-            {/* Supply curve (Angebot) */}
-            <path d={supplyPath} fill="none" stroke="var(--accent)" strokeWidth="2" />
-            <text x={toSvgX(85)} y={toSvgY(sP100 - 6)} fontSize="11" fill="var(--accent)" fontWeight="bold" fontFamily="monospace">
+            <text x={toSvgX(Math.min(88, Math.max(10, 85 - sBase)))} y={toSvgY(85)} fontSize="11" fill="var(--accent)" fontWeight="bold" fontFamily="monospace">
               A (Supply)
             </text>
 
-            {/* Effective Price horizontal line */}
+            {/* Orthogonal drop lines to axes from equilibrium point */}
             <line
               x1={toSvgX(0)}
-              y1={toSvgY(effectivePrice)}
-              x2={toSvgX(100)}
-              y2={toSvgY(effectivePrice)}
+              y1={toSvgY(eqP)}
+              x2={toSvgX(eqQ)}
+              y2={toSvgY(eqP)}
               stroke="var(--accent)"
               strokeWidth="1.5"
-              strokeDasharray={priceControlMode === "free" ? "2 2" : "none"}
-              strokeOpacity="0.8"
+              strokeDasharray="3 3"
+              strokeOpacity="0.6"
             />
+            <line
+              x1={toSvgX(eqQ)}
+              y1={toSvgY(0)}
+              x2={toSvgX(eqQ)}
+              y2={toSvgY(eqP)}
+              stroke="var(--accent)"
+              strokeWidth="1.5"
+              strokeDasharray="3 3"
+              strokeOpacity="0.6"
+            />
+
+            {/* Effective Price horizontal line if in price control mode */}
+            {priceControlMode !== "free" && (
+              <line
+                x1={toSvgX(0)}
+                y1={toSvgY(effectivePrice)}
+                x2={toSvgX(100)}
+                y2={toSvgY(effectivePrice)}
+                stroke="#dc2626"
+                strokeWidth="1.5"
+                strokeDasharray="4 2"
+                strokeOpacity="0.9"
+              />
+            )}
 
             {/* Equilibrium Point */}
             <circle cx={toSvgX(eqQ)} cy={toSvgY(eqP)} r="4.5" fill="var(--accent)" stroke="var(--surface)" strokeWidth="1.5" />

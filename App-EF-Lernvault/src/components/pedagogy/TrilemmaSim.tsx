@@ -104,7 +104,7 @@ export function TrilemmaSim({ lang = "de", onExportFinding }: TrilemmaSimProps) 
       <div className="flex flex-wrap items-center justify-between gap-3 border-b border-[var(--line)] pb-4">
         <div>
           <div className="flex items-center gap-2">
-            <span className="px-2 py-0.5 text-xs font-bold font-mono rounded bg-blue-500/10 text-blue-700 dark:text-blue-300 border border-blue-500/20">
+            <span className="px-2 py-0.5 text-xs font-bold font-mono rounded bg-[var(--paper-subtle)] text-[var(--ink)] border border-[var(--line)]">
               SoWi EF / Q2 · Internationale Wirtschaftspolitik
             </span>
             <span className="text-xs font-mono text-[var(--gray)]">Modell: Robert Mundell & Marcus Fleming (Nobelpreis)</span>
@@ -238,78 +238,90 @@ export function TrilemmaSim({ lang = "de", onExportFinding }: TrilemmaSimProps) 
               )}
 
               {/* 边的标签说明 */}
-              <text x="110" y="150" textAnchor="middle" fontSize="9" fill="#2563eb" fontWeight="bold" transform="rotate(-60 110 150)">
+              <text x="110" y="150" textAnchor="middle" fontSize="10" fill="#1d4ed8" fontWeight="bold" transform="rotate(-60 110 150)">
                 Regime 1: Floating
               </text>
-              <text x="200" y="295" textAnchor="middle" fontSize="9" fill="#10b981" fontWeight="bold">
+              <text x="200" y="295" textAnchor="middle" fontSize="10" fill="#047857" fontWeight="bold">
                 Regime 2: Währungsunion
               </text>
-              <text x="290" y="150" textAnchor="middle" fontSize="9" fill="#d97706" fontWeight="bold" transform="rotate(60 290 150)">
+              <text x="290" y="150" textAnchor="middle" fontSize="10" fill="#b45309" fontWeight="bold" transform="rotate(60 290 150)">
                 Regime 3: Bretton Woods
               </text>
 
               {/* 顶点 1：独立货币政策 (Top) */}
-              <g onClick={() => toggleGoal("geldpolitik")} className="cursor-pointer group">
+              <g
+                onClick={() => toggleGoal("geldpolitik")}
+                className="cursor-pointer group"
+                style={{ transformBox: "fill-box", transformOrigin: "200px 45px" }}
+              >
                 <circle
                   cx="200"
                   cy="45"
                   r="24"
-                  fill={goalGeldpolitik ? "#2563eb" : "var(--paper)"}
-                  stroke="#2563eb"
+                  fill={goalGeldpolitik ? "#1d4ed8" : "var(--paper)"}
+                  stroke="#1d4ed8"
                   strokeWidth="2.5"
-                  className="transition-transform group-hover:scale-110"
+                  className="transition-all duration-200 group-hover:stroke-[3.5px] group-hover:r-[26px]"
                 />
-                <text x="200" y="49" textAnchor="middle" fontSize="12" fill={goalGeldpolitik ? "#ffffff" : "#2563eb"} fontWeight="bold">
+                <text x="200" y="49" textAnchor="middle" fontSize="13" fill={goalGeldpolitik ? "#ffffff" : "#1d4ed8"} fontWeight="bold">
                   🏛️
                 </text>
-                <text x="200" y="18" textAnchor="middle" fontSize="10" fontWeight="bold" fill="var(--ink)">
+                <text x="200" y="16" textAnchor="middle" fontSize="10.5" fontWeight="bold" fill="var(--ink)">
                   {isDe ? "Autonome Geldpolitik" : "独立自主货币政策"}
                 </text>
-                <text x="200" y="82" textAnchor="middle" fontSize="8" fill="var(--gray)" fontFamily="monospace">
+                <text x="200" y="82" textAnchor="middle" fontSize="8.5" fill="var(--ink)" opacity="0.75" fontFamily="monospace">
                   {goalGeldpolitik ? (isDe ? "[AKTIV: EZB setzt Leitzins]" : "[已启用: 自主决定基准利率]") : (isDe ? "[GEOPFERT: Zinsdiktat]" : "[已牺牲: 失去利率自主权]")}
                 </text>
               </g>
 
               {/* 顶点 2：资本完全自由流动 (Bottom-Left) */}
-              <g onClick={() => toggleGoal("kapital")} className="cursor-pointer group">
+              <g
+                onClick={() => toggleGoal("kapital")}
+                className="cursor-pointer group"
+                style={{ transformBox: "fill-box", transformOrigin: "65px 275px" }}
+              >
                 <circle
                   cx="65"
                   cy="275"
                   r="24"
-                  fill={goalKapital ? "#10b981" : "var(--paper)"}
-                  stroke="#10b981"
+                  fill={goalKapital ? "#047857" : "var(--paper)"}
+                  stroke="#047857"
                   strokeWidth="2.5"
-                  className="transition-transform group-hover:scale-110"
+                  className="transition-all duration-200 group-hover:stroke-[3.5px] group-hover:r-[26px]"
                 />
-                <text x="65" y="279" textAnchor="middle" fontSize="12" fill={goalKapital ? "#ffffff" : "#10b981"} fontWeight="bold">
+                <text x="65" y="279" textAnchor="middle" fontSize="13" fill={goalKapital ? "#ffffff" : "#047857"} fontWeight="bold">
                   💸
                 </text>
-                <text x="65" y="315" textAnchor="middle" fontSize="10" fontWeight="bold" fill="var(--ink)">
+                <text x="65" y="315" textAnchor="middle" fontSize="10.5" fontWeight="bold" fill="var(--ink)">
                   {isDe ? "Freier Kapitalverkehr" : "资本完全自由流动"}
                 </text>
-                <text x="65" y="327" textAnchor="middle" fontSize="8" fill="var(--gray)" fontFamily="monospace">
+                <text x="65" y="328" textAnchor="middle" fontSize="8.5" fill="var(--ink)" opacity="0.75" fontFamily="monospace">
                   {goalKapital ? (isDe ? "[AKTIV: Kein Stopp]" : "[已启用: 资金无障碍出入]") : (isDe ? "[KONTROLLEN: Zensur]" : "[已牺牲: 严厉资本出境管制]")}
                 </text>
               </g>
 
               {/* 顶点 3：固定汇率 (Bottom-Right) */}
-              <g onClick={() => toggleGoal("wechselkurs")} className="cursor-pointer group">
+              <g
+                onClick={() => toggleGoal("wechselkurs")}
+                className="cursor-pointer group"
+                style={{ transformBox: "fill-box", transformOrigin: "335px 275px" }}
+              >
                 <circle
                   cx="335"
                   cy="275"
                   r="24"
-                  fill={goalWechselkurs ? "#d97706" : "var(--paper)"}
-                  stroke="#d97706"
+                  fill={goalWechselkurs ? "#b45309" : "var(--paper)"}
+                  stroke="#b45309"
                   strokeWidth="2.5"
-                  className="transition-transform group-hover:scale-110"
+                  className="transition-all duration-200 group-hover:stroke-[3.5px] group-hover:r-[26px]"
                 />
-                <text x="335" y="279" textAnchor="middle" fontSize="12" fill={goalWechselkurs ? "#ffffff" : "#d97706"} fontWeight="bold">
+                <text x="335" y="279" textAnchor="middle" fontSize="13" fill={goalWechselkurs ? "#ffffff" : "#b45309"} fontWeight="bold">
                   🔒
                 </text>
-                <text x="335" y="315" textAnchor="middle" fontSize="10" fontWeight="bold" fill="var(--ink)">
+                <text x="335" y="315" textAnchor="middle" fontSize="10.5" fontWeight="bold" fill="var(--ink)">
                   {isDe ? "Fester Wechselkurs" : "固定汇率稳定"}
                 </text>
-                <text x="335" y="327" textAnchor="middle" fontSize="8" fill="var(--gray)" fontFamily="monospace">
+                <text x="335" y="328" textAnchor="middle" fontSize="8.5" fill="var(--ink)" opacity="0.75" fontFamily="monospace">
                   {goalWechselkurs ? (isDe ? "[AKTIV: 1:1 Kursgarantie]" : "[已启用: 刚性钉住固定汇率]") : (isDe ? "[FLEXIBEL: Schwankt]" : "[已牺牲: 承受汇率剧烈波动]")}
                 </text>
               </g>
@@ -413,11 +425,11 @@ export function TrilemmaSim({ lang = "de", onExportFinding }: TrilemmaSimProps) 
           </div>
 
           {/* 会考高分答题点拨 */}
-          <div className="p-3 rounded-lg bg-emerald-500/10 border border-emerald-500/20 text-emerald-900 dark:text-emerald-200 text-xs">
-            <span className="font-bold block mb-1">
+          <div className="p-3.5 rounded-lg bg-[var(--paper-subtle)] border-l-4 border-l-emerald-600 border border-[var(--line)] text-xs text-[var(--ink)]">
+            <span className="font-bold text-emerald-800 dark:text-emerald-400 block mb-1">
               {isDe ? "✍️ SoWi-Klausur Merksatz (EHZ-Kern):" : "✍️ 北威州会考采分高频考点点拨："}
             </span>
-            <p className="leading-relaxed">
+            <p className="leading-relaxed text-[var(--ink)]">
               {isDe
                 ? "„Im internationalen Währungssystem ist es einer Volkswirtschaft strukturell unmöglich, alle drei Ziele des Mundell-Fleming-Trilemmas simultan zu realisieren. Die Wahl des Regimes ist stets eine politische Grundsatzentscheidung über die Priorität von Souveränität, Stabilität oder Marktintegration.“"
                 : "‘在国际货币金融体系中，任何主权经济体都绝对无法同时达成蒙代尔三元悖论的全部三个目标。制度的选择本质上是在货币主权、汇率稳定性与跨国资本市场一体化之间的终极政治抉择。’"}

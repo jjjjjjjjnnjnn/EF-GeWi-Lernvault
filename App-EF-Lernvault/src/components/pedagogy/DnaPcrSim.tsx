@@ -201,39 +201,86 @@ export function DnaPcrSim({ lang = "de", onExportFinding }: DnaPcrSimProps) {
             </div>
           </div>
 
+          {/* 3步微观温控阶段快捷导航条 */}
+          <div className="grid grid-cols-3 gap-2 text-xs font-mono text-center">
+            <button
+              type="button"
+              onClick={() => setStepPhase("denaturation")}
+              className={`p-2 rounded border transition-colors cursor-pointer ${
+                phase === "denaturation"
+                  ? "bg-rose-50 dark:bg-rose-950/30 border-rose-400 text-rose-800 dark:text-rose-200 font-bold shadow-2xs"
+                  : "bg-[var(--paper)] border-[var(--line)] text-[var(--gray)] hover:text-[var(--ink)]"
+              }`}
+            >
+              <span className="block text-[10px] text-[var(--gray)]">Schritt 1 (95°C)</span>
+              {isDe ? "1. Denaturierung" : "1. 热变性解链"}
+            </button>
+            <button
+              type="button"
+              onClick={() => setStepPhase("annealing")}
+              className={`p-2 rounded border transition-colors cursor-pointer ${
+                phase === "annealing"
+                  ? "bg-sky-50 dark:bg-sky-950/30 border-sky-400 text-sky-800 dark:text-sky-200 font-bold shadow-2xs"
+                  : "bg-[var(--paper)] border-[var(--line)] text-[var(--gray)] hover:text-[var(--ink)]"
+              }`}
+            >
+              <span className="block text-[10px] text-[var(--gray)]">Schritt 2 (55°C)</span>
+              {isDe ? "2. Primer-Hybridisierung" : "2. 引物特异结合"}
+            </button>
+            <button
+              type="button"
+              onClick={() => setStepPhase("elongation")}
+              className={`p-2 rounded border transition-colors cursor-pointer ${
+                phase === "elongation"
+                  ? "bg-emerald-50 dark:bg-emerald-950/30 border-emerald-400 text-emerald-800 dark:text-emerald-200 font-bold shadow-2xs"
+                  : "bg-[var(--paper)] border-[var(--line)] text-[var(--gray)] hover:text-[var(--ink)]"
+              }`}
+            >
+              <span className="block text-[10px] text-[var(--gray)]">Schritt 3 (72°C)</span>
+              {isDe ? "3. Taq-Elongation" : "3. Taq 酶延伸"}
+            </button>
+          </div>
+
           {/* DNA 复制微观动画画布 */}
           <div className="relative w-full aspect-16/10 rounded-lg overflow-hidden border border-[var(--line)] bg-[var(--paper)] p-3">
             <svg className="w-full h-full" viewBox="0 0 500 280">
               {/* 阶段 1：95°C 变性解链 */}
               {phase === "denaturation" && (
                 <g className="transition-all duration-300">
-                  <text x="250" y="30" textAnchor="middle" fill="#dc2626" fontSize="11" fontWeight="bold">
+                  <rect x="50" y="12" width="400" height="24" rx="4" fill="#fee2e2" stroke="#f87171" strokeWidth="1" />
+                  <text x="250" y="28" textAnchor="middle" fill="#b91c1c" fontSize="10.5" fontWeight="bold" fontFamily="monospace">
                     95°C: Thermische Trennung der Wasserstoffbrücken (Helikase entfällt)
                   </text>
 
                   {/* 上单链 5' -> 3' */}
-                  <path d="M 60 80 L 440 80" stroke="#2563eb" strokeWidth="4" strokeLinecap="round" />
-                  <text x="45" y="84" fontSize="9" fontWeight="bold" fill="#2563eb" fontFamily="monospace">5'</text>
-                  <text x="448" y="84" fontSize="9" fontWeight="bold" fill="#2563eb" fontFamily="monospace">3'</text>
-                  <text x="250" y="70" textAnchor="middle" fontSize="9" fill="#2563eb" fontFamily="monospace">
-                    Template Strand A (Matrizenstrang)
+                  <path d="M 60 75 L 440 75" stroke="#1d4ed8" strokeWidth="4" strokeLinecap="round" />
+                  <text x="44" y="79" fontSize="10" fontWeight="bold" fill="#1d4ed8" fontFamily="monospace">5'</text>
+                  <text x="448" y="79" fontSize="10" fontWeight="bold" fill="#1d4ed8" fontFamily="monospace">3'</text>
+                  <text x="250" y="65" textAnchor="middle" fontSize="9.5" fontWeight="bold" fill="#1d4ed8" fontFamily="monospace">
+                    Matrizenstrang A (5' → 3')
                   </text>
 
-                  {/* 正在断裂散开的氢键虚线 */}
-                  {[100, 140, 180, 220, 260, 300, 340, 380, 420].map((x) => (
-                    <line key={x} x1={x} y1="90" x2={x} y2="150" stroke="#dc2626" strokeWidth="1.5" strokeDasharray="3,3" strokeOpacity="0.4" />
+                  {/* 正在断裂散开的氢键虚线与碱基 */}
+                  {[90, 130, 170, 210, 250, 290, 330, 370, 410].map((x) => (
+                    <g key={x}>
+                      <line x1={x} y1="80" x2={x} y2="100" stroke="#1d4ed8" strokeWidth="2" />
+                      <line x1={x} y1="102" x2={x} y2="148" stroke="#ef4444" strokeWidth="1.5" strokeDasharray="3,3" strokeOpacity="0.6" />
+                      <line x1={x} y1="150" x2={x} y2="170" stroke="#047857" strokeWidth="2" />
+                      <text x={x} y="128" textAnchor="middle" fontSize="8" fill="#b91c1c" fontFamily="monospace">✕</text>
+                    </g>
                   ))}
 
                   {/* 下单链 3' -> 5' */}
-                  <path d="M 60 160 L 440 160" stroke="#059669" strokeWidth="4" strokeLinecap="round" />
-                  <text x="45" y="164" fontSize="9" fontWeight="bold" fill="#059669" fontFamily="monospace">3'</text>
-                  <text x="448" y="164" fontSize="9" fontWeight="bold" fill="#059669" fontFamily="monospace">5'</text>
-                  <text x="250" y="180" textAnchor="middle" fontSize="9" fill="#059669" fontFamily="monospace">
-                    Template Strand B (Matrizenstrang)
+                  <path d="M 60 175 L 440 175" stroke="#047857" strokeWidth="4" strokeLinecap="round" />
+                  <text x="44" y="179" fontSize="10" fontWeight="bold" fill="#047857" fontFamily="monospace">3'</text>
+                  <text x="448" y="179" fontSize="10" fontWeight="bold" fill="#047857" fontFamily="monospace">5'</text>
+                  <text x="250" y="195" textAnchor="middle" fontSize="9.5" fontWeight="bold" fill="#047857" fontFamily="monospace">
+                    Matrizenstrang B (3' → 5')
                   </text>
 
-                  <text x="250" y="240" textAnchor="middle" fontSize="9" fill="var(--gray)" fontStyle="italic">
-                    {isDe ? "Keine Reißverschluss-Öffnung nötig: Hitze bricht die H-Brücken instantan!" : "无需解旋酶开路：纯物理高温瞬间破坏碱基间氢键！"}
+                  <rect x="70" y="225" width="360" height="24" rx="4" fill="var(--paper-subtle)" stroke="var(--line)" />
+                  <text x="250" y="241" textAnchor="middle" fontSize="9.5" fill="var(--ink)" fontStyle="italic">
+                    {isDe ? "Keine Helikase/Topoisomerase nötig: 95°C Hitze trennt H-Brücken physikalisch." : "无需解旋酶开路：纯物理高温瞬间破坏碱基间氢键！"}
                   </text>
                 </g>
               )}
@@ -241,34 +288,36 @@ export function DnaPcrSim({ lang = "de", onExportFinding }: DnaPcrSimProps) {
               {/* 阶段 2：55°C 引物特异结合 */}
               {phase === "annealing" && (
                 <g className="transition-all duration-300">
-                  <text x="250" y="30" textAnchor="middle" fill="#0284c7" fontSize="11" fontWeight="bold">
-                    55°C: Spezifische Primer-Hybridisierung (Forward & Reverse)
+                  <rect x="50" y="12" width="400" height="24" rx="4" fill="#e0f2fe" stroke="#38bdf8" strokeWidth="1" />
+                  <text x="250" y="28" textAnchor="middle" fill="#0369a1" fontSize="10.5" fontWeight="bold" fontFamily="monospace">
+                    55°C: Spezifische Primer-Hybridisierung an den flankierenden 3'-Enden
                   </text>
 
                   {/* 上链 */}
-                  <path d="M 60 70 L 440 70" stroke="#2563eb" strokeWidth="3.5" />
-                  <text x="45" y="74" fontSize="9" fontWeight="bold" fill="#2563eb" fontFamily="monospace">5'</text>
-                  <text x="448" y="74" fontSize="9" fontWeight="bold" fill="#2563eb" fontFamily="monospace">3'</text>
+                  <path d="M 60 70 L 440 70" stroke="#1d4ed8" strokeWidth="3.5" />
+                  <text x="44" y="74" fontSize="10" fontWeight="bold" fill="#1d4ed8" fontFamily="monospace">5'</text>
+                  <text x="448" y="74" fontSize="10" fontWeight="bold" fill="#1d4ed8" fontFamily="monospace">3'</text>
 
-                  {/* 上链对应的 Reverse Primer (在 3' 端附着) */}
-                  <rect x="360" y="80" width="70" height="8" fill="#e11d48" rx="2" />
-                  <text x="395" y="102" textAnchor="middle" fontSize="8" fill="#e11d48" fontWeight="bold">
-                    Reverse Primer (3' 结合)
+                  {/* 上链对应的 Reverse Primer (在 3' 端附着，延伸方向朝左 5'->3') */}
+                  <rect x="350" y="80" width="80" height="12" fill="#be123c" rx="2" />
+                  <text x="390" y="89" textAnchor="middle" fontSize="8" fill="#ffffff" fontWeight="bold" fontFamily="monospace">
+                    ◀ Reverse Primer (5'→3')
                   </text>
 
                   {/* 下链 */}
-                  <path d="M 60 170 L 440 170" stroke="#059669" strokeWidth="3.5" />
-                  <text x="45" y="174" fontSize="9" fontWeight="bold" fill="#059669" fontFamily="monospace">3'</text>
-                  <text x="448" y="174" fontSize="9" fontWeight="bold" fill="#059669" fontFamily="monospace">5'</text>
+                  <path d="M 60 170 L 440 170" stroke="#047857" strokeWidth="3.5" />
+                  <text x="44" y="174" fontSize="10" fontWeight="bold" fill="#047857" fontFamily="monospace">3'</text>
+                  <text x="448" y="174" fontSize="10" fontWeight="bold" fill="#047857" fontFamily="monospace">5'</text>
 
-                  {/* 下链对应的 Forward Primer (在 3' 端附着) */}
-                  <rect x="70" y="152" width="70" height="8" fill="#e11d48" rx="2" />
-                  <text x="105" y="145" textAnchor="middle" fontSize="8" fill="#e11d48" fontWeight="bold">
-                    Forward Primer (3' 结合)
+                  {/* 下链对应的 Forward Primer (在 3' 端附着，延伸方向朝右 5'->3') */}
+                  <rect x="70" y="148" width="80" height="12" fill="#be123c" rx="2" />
+                  <text x="110" y="157" textAnchor="middle" fontSize="8" fill="#ffffff" fontWeight="bold" fontFamily="monospace">
+                    Forward Primer (5'→3') ▶
                   </text>
 
-                  <text x="250" y="240" textAnchor="middle" fontSize="9" fill="var(--gray)" fontStyle="italic">
-                    {isDe ? "Sequenzspezifische Oligonukleotide definieren die Grenzen des Zielamplikons." : "人工合成寡核苷酸特异性锚定目的基因片段边界。"}
+                  <rect x="70" y="225" width="360" height="24" rx="4" fill="var(--paper-subtle)" stroke="var(--line)" />
+                  <text x="250" y="241" textAnchor="middle" fontSize="9.5" fill="var(--ink)" fontStyle="italic">
+                    {isDe ? "Künstliche DNA-Primer (ca. 20 nt) definieren die Grenzen des Zielgens exakt." : "人工合成寡核苷酸引物（约20bp）精准锚定目的基因边界。"}
                   </text>
                 </g>
               )}
@@ -276,30 +325,38 @@ export function DnaPcrSim({ lang = "de", onExportFinding }: DnaPcrSimProps) {
               {/* 阶段 3：72°C Taq 延伸合成 */}
               {phase === "elongation" && (
                 <g className="transition-all duration-300">
-                  <text x="250" y="30" textAnchor="middle" fill="#059669" fontSize="11" fontWeight="bold">
-                    72°C: Synthese durch hitzestabile Taq-Polymerase (5' → 3')
+                  <rect x="50" y="12" width="400" height="24" rx="4" fill="#dcfce7" stroke="#4ade80" strokeWidth="1" />
+                  <text x="250" y="28" textAnchor="middle" fill="#15803d" fontSize="10.5" fontWeight="bold" fontFamily="monospace">
+                    72°C: Synthese durch hitzestabile Taq-Polymerase (immer 5' → 3')
                   </text>
 
                   {/* 上链 */}
-                  <path d="M 60 70 L 440 70" stroke="#2563eb" strokeWidth="3" />
+                  <path d="M 60 70 L 440 70" stroke="#1d4ed8" strokeWidth="3.5" />
+                  <text x="44" y="74" fontSize="10" fontWeight="bold" fill="#1d4ed8" fontFamily="monospace">5'</text>
+                  <text x="448" y="74" fontSize="10" fontWeight="bold" fill="#1d4ed8" fontFamily="monospace">3'</text>
+
                   {/* 新合成的互补链沿 5' -> 3' 延伸 */}
-                  <path d="M 430 84 L 200 84" stroke="#e11d48" strokeWidth="3" strokeDasharray="4,2" />
+                  <path d="M 430 84 L 190 84" stroke="#be123c" strokeWidth="3" strokeDasharray="5,2" />
                   {/* Taq 酶示意图 */}
-                  <circle cx="200" cy="77" r="14" fill="#10b981" fillOpacity="0.8" stroke="#047857" strokeWidth="1.5" />
-                  <text x="200" y="80" textAnchor="middle" fontSize="7" fill="#ffffff" fontWeight="bold">Taq</text>
-                  <text x="180" y="60" fontSize="8" fill="#10b981" fontWeight="bold">◀ 5' → 3'</text>
+                  <circle cx="190" cy="84" r="13" fill="#15803d" stroke="#166534" strokeWidth="1.5" />
+                  <text x="190" y="87" textAnchor="middle" fontSize="7.5" fill="#ffffff" fontWeight="bold" fontFamily="monospace">Taq</text>
+                  <text x="165" y="66" fontSize="8.5" fill="#15803d" fontWeight="bold" fontFamily="monospace">◀ 5' → 3'</text>
 
                   {/* 下链 */}
-                  <path d="M 60 170 L 440 170" stroke="#059669" strokeWidth="3" />
-                  {/* 下链新合成互补链 */}
-                  <path d="M 70 156 L 300 156" stroke="#e11d48" strokeWidth="3" strokeDasharray="4,2" />
-                  {/* 下链 Taq 酶 */}
-                  <circle cx="300" cy="163" r="14" fill="#10b981" fillOpacity="0.8" stroke="#047857" strokeWidth="1.5" />
-                  <text x="300" y="166" textAnchor="middle" fontSize="7" fill="#ffffff" fontWeight="bold">Taq</text>
-                  <text x="320" y="185" fontSize="8" fill="#10b981" fontWeight="bold">5' → 3' ▶</text>
+                  <path d="M 60 170 L 440 170" stroke="#047857" strokeWidth="3.5" />
+                  <text x="44" y="174" fontSize="10" fontWeight="bold" fill="#047857" fontFamily="monospace">3'</text>
+                  <text x="448" y="174" fontSize="10" fontWeight="bold" fill="#047857" fontFamily="monospace">5'</text>
 
-                  <text x="250" y="240" textAnchor="middle" fontSize="9" fill="var(--gray)" fontStyle="italic">
-                    {isDe ? "Thermus aquaticus Polymerase: Denaturiert selbst bei 95°C nicht!" : "水生栖热菌聚合酶：耐受 95°C 高温而不失活！"}
+                  {/* 下链新合成互补链 */}
+                  <path d="M 70 156 L 310 156" stroke="#be123c" strokeWidth="3" strokeDasharray="5,2" />
+                  {/* 下链 Taq 酶 */}
+                  <circle cx="310" cy="156" r="13" fill="#15803d" stroke="#166534" strokeWidth="1.5" />
+                  <text x="310" y="159" textAnchor="middle" fontSize="7.5" fill="#ffffff" fontWeight="bold" fontFamily="monospace">Taq</text>
+                  <text x="330" y="178" fontSize="8.5" fill="#15803d" fontWeight="bold" fontFamily="monospace">5' → 3' ▶</text>
+
+                  <rect x="70" y="225" width="360" height="24" rx="4" fill="var(--paper-subtle)" stroke="var(--line)" />
+                  <text x="250" y="241" textAnchor="middle" fontSize="9.5" fill="var(--ink)" fontStyle="italic">
+                    {isDe ? "Thermus aquaticus Polymerase: Optimale Elongation bei 72°C mit freien dNTPs." : "水生栖热菌聚合酶：耐 95°C 高温，在 72°C 快速将游离 dNTP 链入新链。"}
                   </text>
                 </g>
               )}
@@ -318,7 +375,7 @@ export function DnaPcrSim({ lang = "de", onExportFinding }: DnaPcrSimProps) {
           </div>
         </div>
 
-        {/* 右侧：紫外琼脂糖凝胶电泳检测槽 (5 列) */}
+        {/* 右侧：琼脂糖凝胶电泳学术检测槽 (5 列) */}
         <div className="lg:col-span-5 flex flex-col gap-3 p-4 bg-[var(--paper)] rounded-xl border border-[var(--line)] shadow-xs">
           <div className="flex items-center justify-between border-b border-[var(--line)] pb-3">
             <div>
@@ -335,33 +392,33 @@ export function DnaPcrSim({ lang = "de", onExportFinding }: DnaPcrSimProps) {
                 setGelProgress(0);
                 setIsGelRunning(true);
               }}
-              className="px-2.5 py-1 text-xs font-bold rounded bg-sky-600 text-white hover:bg-sky-500 transition-colors shadow-xs"
+              className="px-2.5 py-1 text-xs font-bold rounded bg-[var(--accent)] text-white hover:opacity-90 transition-opacity shadow-xs cursor-pointer"
             >
               {isDe ? "⚡ Strom AN (100V)" : "⚡ 通电跑胶"}
             </button>
           </div>
 
-          {/* 紫外暗箱与凝胶槽 */}
-          <div className="relative w-full aspect-3/4 rounded-lg overflow-hidden border-2 border-slate-700 bg-slate-950 p-3 flex flex-col justify-between">
+          {/* 学术级凝胶槽 (Tufte 极简素描风) */}
+          <div className="relative w-full aspect-3/4 rounded-lg overflow-hidden border border-[var(--line)] bg-[var(--paper-subtle)]/50 p-3 flex flex-col justify-between">
             {/* 负极顶部 (Kathode -) */}
-            <div className="flex justify-between items-center text-[10px] font-mono text-slate-400 border-b border-slate-800 pb-1">
-              <span className="text-red-400 font-bold">Kathode (-) 点样端</span>
-              <span>100V · 1.5% Agarose</span>
+            <div className="flex justify-between items-center text-[10px] font-mono border-b border-[var(--line)] pb-1.5">
+              <span className="text-rose-700 dark:text-rose-400 font-bold">Kathode (-) 点样端</span>
+              <span className="text-[var(--gray)]">100V · 1.5% Agarose-Gel</span>
             </div>
 
             {/* 点样孔 (Wells) */}
-            <div className="grid grid-cols-2 gap-4 pt-2">
-              <div className="h-3 rounded-xs bg-slate-800 border border-slate-600 flex items-center justify-center text-[8px] font-mono text-slate-400">
+            <div className="grid grid-cols-2 gap-4 pt-1">
+              <div className="h-4 rounded-xs bg-[var(--paper)] border border-[var(--line)] flex items-center justify-center text-[9px] font-mono text-[var(--ink)]">
                 Well 1: Marker
               </div>
-              <div className="h-3 rounded-xs bg-slate-800 border border-slate-600 flex items-center justify-center text-[8px] font-mono text-slate-400">
+              <div className="h-4 rounded-xs bg-[var(--paper)] border border-[var(--line)] flex items-center justify-center text-[9px] font-mono text-[var(--ink)]">
                 Well 2: PCR-Produkt
               </div>
             </div>
 
-            {/* 凝胶泳动区 */}
-            <div className="relative flex-1 my-2">
-              {/* 标准 Marker 梯级 (已固定跑开) */}
+            {/* 凝胶基质板 (Slab) */}
+            <div className="relative flex-1 my-2 rounded bg-slate-100 dark:bg-slate-800/40 border border-slate-300 dark:border-slate-700">
+              {/* 标准 Marker 梯级 (分子量阶梯) */}
               <div className="absolute left-6 inset-y-0 w-8 flex flex-col justify-between py-2">
                 {[
                   { bp: "2000 bp", y: 15 },
@@ -372,10 +429,10 @@ export function DnaPcrSim({ lang = "de", onExportFinding }: DnaPcrSimProps) {
                 ].map((band) => (
                   <div
                     key={band.bp}
-                    className="absolute inset-x-0 h-1 bg-cyan-400/90 rounded-xs shadow-[0_0_8px_rgba(34,211,238,0.8)]"
+                    className="absolute inset-x-0 h-1.5 bg-slate-800 dark:bg-slate-200 rounded-xs"
                     style={{ top: `${band.y}%` }}
                   >
-                    <span className="absolute -left-7 -top-1.5 text-[8px] font-mono text-slate-500">
+                    <span className="absolute -left-12 -top-1 text-[8.5px] font-mono font-medium text-[var(--gray)] whitespace-nowrap">
                       {band.bp}
                     </span>
                   </div>
@@ -385,15 +442,14 @@ export function DnaPcrSim({ lang = "de", onExportFinding }: DnaPcrSimProps) {
               {/* 样本泳动带 (随 gelProgress 动态向下迁移) */}
               {cycleCount > 0 && (
                 <div
-                  className="absolute right-6 w-12 h-1.5 rounded-xs transition-all duration-100"
+                  className="absolute right-6 w-12 h-2 rounded-xs transition-all duration-100"
                   style={{
                     top: `${Math.min(70, 10 + (gelProgress / 100) * 60)}%`,
-                    backgroundColor: "#38bdf8",
-                    boxShadow: "0 0 12px #38bdf8",
-                    opacity: cycleCount >= 15 ? 1 : cycleCount >= 5 ? 0.6 : 0.25
+                    backgroundColor: "#4338ca",
+                    opacity: cycleCount >= 15 ? 1 : cycleCount >= 5 ? 0.75 : 0.4
                   }}
                 >
-                  <span className="absolute -right-16 -top-1.5 text-[8px] font-mono text-cyan-300 font-bold whitespace-nowrap">
+                  <span className="absolute -right-22 -top-1 text-[8.5px] font-mono text-indigo-800 dark:text-indigo-300 font-bold whitespace-nowrap">
                     500 bp Amplikon
                   </span>
                 </div>
@@ -401,9 +457,9 @@ export function DnaPcrSim({ lang = "de", onExportFinding }: DnaPcrSimProps) {
             </div>
 
             {/* 正极底部 (Anode +) */}
-            <div className="flex justify-between items-center text-[10px] font-mono text-slate-400 border-t border-slate-800 pt-1">
-              <span className="text-emerald-400 font-bold">Anode (+) 阳极端</span>
-              <span className="text-[9px] text-slate-500">DNA migriert zu (+)</span>
+            <div className="flex justify-between items-center text-[10px] font-mono border-t border-[var(--line)] pt-1.5">
+              <span className="text-emerald-700 dark:text-emerald-400 font-bold">Anode (+) 阳极端</span>
+              <span className="text-[9px] text-[var(--gray)] font-mono">DNA (PO₄³⁻) wandert zu (+)</span>
             </div>
           </div>
 
