@@ -1,5 +1,9 @@
-// UniversalInteractiveWorkbench — 通用多学科高保真交互实验工作台
-// 为北威州高中（Gymnasiale Oberstufe: EF / Q1 / Q2）全部扩展实验提供专属的真实视觉仿真、学科专属参数联动与官方考纲考点剖析
+// UniversalInteractiveWorkbench — 通用多学科高保真交互实验工作台 (V3 深度重构)
+// 包含三维深度学习体系：
+// 1. 🔬 互动实验台 (Labor-Workbench)：预设工况一键直达、全量程微调步进、动态HUD状态徽标、探究挑战目标校验
+// 2. 📖 现象推演与微观因果 (Phänomen & Kausalität)：动态因果分析、微观机制剖析、核心专业术语表
+// 3. 📝 会考真题与采分标准 (Klausur & EHZ-Standard)：北威州高中真题原题、EHZ采分要点、15分满分范文与中文得分点拨
+
 import { useState, useMemo } from "react";
 import type { Lang } from "../../i18n";
 import type { SimEntry } from "../../modules/laborRegistry";
@@ -30,6 +34,432 @@ export interface CalculatedWorkbenchData {
   insightZH: string;
 }
 
+export interface SimPreset {
+  id: string;
+  nameDE: string;
+  nameZH: string;
+  paramA: number;
+  paramB: number;
+  descDE: string;
+  descZH: string;
+}
+
+export interface SimTask {
+  goalDE: string;
+  goalZH: string;
+  targetA?: [number, number]; // target range min, max
+  targetB?: [number, number];
+  successMsgDE: string;
+  successMsgZH: string;
+}
+
+export interface SimCausality {
+  phenomenonDE: string;
+  phenomenonZH: string;
+  mechanismDE: string;
+  mechanismZH: string;
+  fachbegriffe: Array<{ term: string; zh: string; def: string }>;
+}
+
+export interface SimKlausurEHZ {
+  promptDE: string;
+  promptZH: string;
+  afb: "AFB I" | "AFB II" | "AFB III";
+  points: number;
+  erwartungshorizontDE: string[];
+  erwartungshorizontZH: string[];
+  formulierungshilfe: string;
+  chineseComment: string;
+}
+
+// =========================================================================
+// 核心学科专属典型工况、探究任务、微观机理与会考采分标准字典
+// =========================================================================
+export const SIM_PEDAGOGY_MAP: Record<
+  string,
+  {
+    presets: SimPreset[];
+    task: SimTask;
+    causality: SimCausality;
+    klausur: SimKlausurEHZ;
+  }
+> = {
+  "philo-willensfreiheit": {
+    presets: [
+      {
+        id: "libet-std",
+        nameDE: "Libet-Standard (1983)",
+        nameZH: "李贝特标准实验 (350ms)",
+        paramA: 40,
+        paramB: 70,
+        descDE: "Bereitschaftspotenzial ca. 350ms vor dem bewussten Willensakt (W-Urteil).",
+        descZH: "准备电位比自觉动作意愿（W判决）提前约350ms出现，构成决定论经典证据。"
+      },
+      {
+        id: "libet-veto",
+        nameDE: "Freies Veto (Free Won't)",
+        nameZH: "自由否决权 (Free Won't)",
+        paramA: 80,
+        paramB: 40,
+        descDE: "Kurz vor der Handlung (ca. 100ms) kann das Bewusstsein die Handlung stoppen.",
+        descZH: "意识在动作发生前100ms内拥有阻断行动的自由否决能力（Veto-Möglichkeit）。"
+      },
+      {
+        id: "libet-kompatibilismus",
+        nameDE: "Kompatibilistischer Grenzfall",
+        nameZH: "相容论批判临界态",
+        paramA: 95,
+        paramB: 20,
+        descDE: "Trennung von Vorbereitung unwillkürlicher Motorik und freier Willensentscheidung.",
+        descZH: "区分无意识运动预备与基于理性反思的自主意志决断。"
+      }
+    ],
+    task: {
+      goalDE: "Justieren Sie die Messung so, dass der zeitliche Vorlauf des Bereitschaftspotenzials mindestens 300ms beträgt.",
+      goalZH: "调节电生理测量延迟，使神经准备电位（Bereitschaftspotenzial）提前时间达到至少 300ms。",
+      targetA: [30, 60],
+      targetB: [60, 90],
+      successMsgDE: "Klassisches Libet-Paradoxon reproduziert: Bereitschaftspotenzial geht der Intention voraus!",
+      successMsgZH: "成功复现经典李贝特悖论：潜意识准备电位先于自主意向产生！"
+    },
+    causality: {
+      phenomenonDE: "Das EEG registriert einen Spannungsanstieg im motorischen Kortex, bevor die Testperson subjektiv den Entschluss fasst.",
+      phenomenonZH: "脑电图（EEG）在受试者主观形成行动意愿之前数百毫秒，已在运动皮层记录到电位负变。",
+      mechanismDE: "Das Gehirn initiiert motorische Handlungen unbewusst (Bereitschaftspotenzial). Der bewusste Willensentschluss (W-Urteil) tritt erst ca. 200ms vor der Ausführung auf. Libet schließt jedoch auf ein 'freies Veto' in den letzten 100ms.",
+      mechanismZH: "大脑神经回路在潜意识中启动运动准备程序。意识层面的决断意愿仅在肌肉击发前约200毫秒呈现。李贝特据此认为自由意志主要体现为抑制行动的“自由否决权”。",
+      fachbegriffe: [
+        { term: "Bereitschaftspotenzial", zh: "准备电位", def: "Elektrophysiologisches Signal im EEG vor Willkürbewegungen." },
+        { term: "W-Urteil", zh: "主观意愿时间点", def: "Subjektiv erlebter Zeitpunkt des Entschlusses zur Bewegung." },
+        { term: "Freies Veto", zh: "自由否决权", def: "Fähigkeit des Bewusstseins, eine unbewusst angebahnte Handlung abzubrechen." },
+        { term: "Determinismus", zh: "决定论", def: "Auffassung, dass alle Ereignisse durch Vorbedingungen kausal vorherbestimmt sind." }
+      ]
+    },
+    klausur: {
+      promptDE: "Erörtern Sie anhand der Libet-Experimente, inwiefern neurobiologische Befunde die Annahme eines freien Willens widerlegen. (AFB III, 14 Pkt)",
+      promptZH: "结合李贝特实验，评析神经生物学发现是否在根本上推翻了人类拥有自由意志的哲学假设。(AFB III, 14分)",
+      afb: "AFB III",
+      points: 14,
+      erwartungshorizontDE: [
+        "Darstellung des Versuchsaufbaus und der zeitlichen Abfolge (Bereitschaftspotenzial -> W-Urteil -> Handlung).",
+        "Erläuterung der deterministischen Interpretation (Gehirn entscheidet vor dem Bewusstsein).",
+        "Kritische Gegenargumente: Künstliche Laborsituation (Knopfdruck ist keine ethisch komplexe Lebensentscheidung).",
+        "Differenzierung zwischen Handlungsfreiheit und Willensfreiheit; Bedeutung des Veto-Rechts nach Libet.",
+        "Fundiertes eigenes Fazit unter Berücksichtigung des Kompatibilismus."
+      ],
+      erwartungshorizontZH: [
+        "准确重述李贝特实验装置与关键时间线（准备电位 -> 自觉意愿 W -> 肌肉动作）。",
+        "阐释强决定论解读（神经生理机制先于主观意识作出决断）。",
+        "学术批判反驳：实验室按钮属于无反思的随意动作，不能等同于道德困境下的复杂意志抉择。",
+        "辨析行动自由与意志自由的区别，指出李贝特保留的‘意识否决权’意义。",
+        "结合相容论立场（Kompatibilismus）得出逻辑严密的一致性结论。"
+      ],
+      formulierungshilfe: "Es lässt sich konstatieren, dass neurobiologische Messdaten zwar die zeitliche Priorität neuronaler Vorbereitungsprozesse belegen, daraus jedoch nicht zwingend die vollständige Illusion menschlicher Willensfreiheit folgt. Insbesondere bei deliberativen, normativ geleiteten Entscheidungen greift die Gleichsetzung von Willensbildung und spontanem Knopfdruck zu kurz.",
+      chineseComment: "15分满分答题关键：切勿直接站队决定论！必须指出李贝特实验局限性（简单运动反射 vs 复杂道德反思），并引入相容论与 Veto 机制进行高阶辩证。"
+    }
+  },
+  "chemie-galvanische-zelle": {
+    presets: [
+      {
+        id: "daniell-std",
+        nameDE: "Daniell-Element Standard",
+        nameZH: "丹尼尔电池标准态 (1.10 V)",
+        paramA: 50,
+        paramB: 50,
+        descDE: "c(Zn2+) = 1.0 mol/L, c(Cu2+) = 1.0 mol/L bei T = 298 K.",
+        descZH: "标准状态：锌离子与铜离子浓度均为 1.0 mol/L，理论电动势为 1.10 V。"
+      },
+      {
+        id: "nernst-shift",
+        nameDE: "Nernst-Konzentrationsgefälle",
+        nameZH: "能斯特极化增益态",
+        paramA: 10,
+        paramB: 90,
+        descDE: "c(Zn2+) stark erniedrigt, c(Cu2+) erhöht -> Steigerung der Zellspannung U.",
+        descZH: "降低阳极产物浓度、提高阴极反应物浓度，大幅提升电池输出电极电势。"
+      },
+      {
+        id: "gleichgewicht-entladen",
+        nameDE: "Zellgleichgewicht (Entladen)",
+        nameZH: "化学平衡放电终态 (U = 0V)",
+        paramA: 95,
+        paramB: 5,
+        descDE: "Zelle vollständig entladen, chemisches Gleichgewicht erreicht, ΔG = 0.",
+        descZH: "电池完全放电至两极氧化还原电位相等，化学反应达平衡态，电压归零。"
+      }
+    ],
+    task: {
+      goalDE: "Stellen Sie die Ionenkonzentrationen so ein, dass eine maximale Zellspannung U > 1.15 V resultiert.",
+      goalZH: "调节电解质离子浓度，使丹尼尔电池输出端电压达到最大化 (U > 1.15 V)。",
+      targetA: [0, 25],
+      targetB: [75, 100],
+      successMsgDE: "Optimaler Nernst-Zustand erreicht: Hohe Zellspannung durch thermodynamisches Gefälle!",
+      successMsgZH: "成功达成能斯特最优梯度：阳极低阻抗与阴极高电位形成强电化学势！"
+    },
+    causality: {
+      phenomenonDE: "An der Zink-Elektrode tritt Massenverlust auf, während sich elementares Kupfer an der Kathode abscheidet. Ein messbarer Elektronenfluss fließt über den äußeren Leiter.",
+      phenomenonZH: "锌阳极逐渐溶解失重，铜阴极表面析出红褐色铜单质。外电路检流计检测到自负极向正极定向流动的电子。",
+      mechanismDE: "Aufgrund der Differenz der Standardpotenziale (E0(Zn2+/Zn) = -0,76V; E0(Cu2+/Cu) = +0,34V) fungiert Zink als Reduktionsmittel (Anode/Oxidation) und Kupfer(II)-Ionen als Oxidationsmittel (Kathode/Reduktion). Das Diaphragma gewährleistet Ladungsausgleich via Ionenwanderung ohne direkte chemische Vermischung.",
+      mechanismZH: "锌与铜的标准电极电势差驱动了自发的氧化还原反应。锌原子失去电子经外电路转移至阴极被Cu2+捕获还原。盐桥/半透膜通过离子双向迁移维持两池电中性。",
+      fachbegriffe: [
+        { term: "Galvanische Zelle", zh: "原电池", def: "Vorrichtung zur direkten Umwandlung chemischer in elektrische Energie." },
+        { term: "Nernst-Gleichung", zh: "能斯特方程", def: "Mathematische Beschreibung der Konzentrationsabhängigkeit des Elektrodenpotenzials." },
+        { term: "Anode & Kathode", zh: "阳极(氧化)与阴极(还原)", def: "Anode = Ort der Oxidation (Zink); Kathode = Ort der Reduktion (Kupfer)." },
+        { term: "Elektromotorische Kraft (EMK)", zh: "电动势 (EMK)", def: "Maximale Leerlaufspannung zwischen zwei Halbzellen." }
+      ]
+    },
+    klausur: {
+      promptDE: "Erläutern Sie die Funktionsweise des Daniell-Elements und berechnen Sie die Zellspannung bei c(Zn2+)=0,01 mol/L und c(Cu2+)=1,0 mol/L. (AFB II, 12 Pkt)",
+      promptZH: "阐明丹尼尔电池工作机理，并基于能斯特方程定量计算给定浓度下的输出电极电势。(AFB II, 12分)",
+      afb: "AFB II",
+      points: 12,
+      erwartungshorizontDE: [
+        "Formulierung beider Teilreaktionen: Oxidation an der Anode (Zn -> Zn2+ + 2e-) und Reduktion an der Kathode (Cu2+ + 2e- -> Cu).",
+        "Gesamtreaktion: Zn + Cu2+ -> Zn2+ + Cu mit Angabe der Elektronenübergänge.",
+        "Anwendung der Nernst-Gleichung: E = E0 + (0,059V/z) * lg(c(Ox)/c(Red)).",
+        "Exakte Berechnung der Einzelpotenziale und der Zellspannung delta_E ca. 1,16 V.",
+        "Erklärung der Funktion der porösen Trennwand (Diaphragma / Salzbrücke)."
+      ],
+      erwartungshorizontZH: [
+        "规范写出阳极氧化与阴极还原分步半反应方程式及总反应式。",
+        "正确运用能斯特方程计算锌极与铜极各自的实际电势。",
+        "准确计算电池总电动势（ΔE = E(Kathode) - E(Anode) ≈ 1.16 V）。",
+        "阐释盐桥维持电荷守恒的关键作用（阴离子向锌极迁移，阳离子向铜极迁移）。"
+      ],
+      formulierungshilfe: "Da die Konzentration der Zink-Ionen gegenüber dem Standardzustand um zwei Zehnerpotenzen verringert ist, verschiebt sich das Potenzial der Zink-Halbzelle gemäß der Nernst-Gleichung zu negativeren Werten. Folglich vergrößert sich die Potenzialdifferenz ΔE = E(Kathode) - E(Anode) auf rund 1,16 V.",
+      chineseComment: "会考得分要点：电极名称切勿混淆！在化学中永远牢记：Anode=Oxidation（阳极氧化），Kathode=Reduktion（阴极还原），电子自阳极流出。"
+    }
+  },
+  "bio-fotosynthese": {
+    presets: [
+      {
+        id: "foto-opt",
+        nameDE: "Lichtsättigung & Optimaltemp",
+        nameZH: "光饱和与最适温度 (25°C)",
+        paramA: 80,
+        paramB: 50,
+        descDE: "Maximale Fotosyntheseleistung bei hoher Bestrahlungsstärke im Enzymoptimum.",
+        descZH: "光强充足且温度处于酶促反应最适区间，光合产氧速率达到峰值平台。"
+      },
+      {
+        id: "foto-stomata-close",
+        nameDE: "Hitzestress / Trockenheit (38°C)",
+        nameZH: "高温干旱应激态 (气孔关闭)",
+        paramA: 90,
+        paramB: 85,
+        descDE: "Stomata schließen sich zum Verdunstungsschutz -> CO2-Mangel hemmt Calvin-Zyklus.",
+        descZH: "高温导致蒸腾保护性气孔关闭，CO2供应匮乏导致光合作用暗反应受阻。"
+      },
+      {
+        id: "foto-kompensation",
+        nameDE: "Lichtkompensationspunkt",
+        nameZH: "光补偿点 (Fotosynthese = Atmung)",
+        paramA: 20,
+        paramB: 40,
+        descDE: "Bruttofotosynthese gleicht die Zellatmung exakt aus (Netto-CO2-Austausch = 0).",
+        descZH: "光合产氧速率与呼吸耗氧速率完全对等，植物净碳积累为零。"
+      }
+    ],
+    task: {
+      goalDE: "Maximieren Sie die Netto-Fotosyntheserate, ohne den Bereich der thermischen Proteindenaturierung zu erreichen.",
+      goalZH: "调节光强与环境温度，在避免蛋白质热变性的前提下使净光合产氧速率最大化。",
+      targetA: [65, 95],
+      targetB: [40, 60],
+      successMsgDE: "Optimale Biosynthese-Effizienz: Maximaler RuBisCO-Umsatz im physiologischen Optimum!",
+      successMsgZH: "达成最佳生物合成效率：RuBisCO 酶在最适生理温度下催化效率最大化！"
+    },
+    causality: {
+      phenomenonDE: "Mit zunehmender Lichtintensität steigt die O2-Produktion zunächst linear an und nähert sich einer Sättigung. Über 35°C sinkt die Rate trotz hoher Einstrahlung drastisch.",
+      phenomenonZH: "随光照强度增加产氧速率先线性上升后达饱和；环境温度超过35°C时光合速率断崖式下跌。",
+      mechanismDE: "Die Lichtreaktion liefert ATP und NADPH. Die temperaturabhängige Dunkelreaktion (Calvin-Zyklus) wird durch das Enzym RuBisCO katalysiert. Bei Hitze schließen Stomata (CO2-Limitation) und ab 40°C denaturieren Enzyme irreversibel.",
+      mechanismZH: "光反应依赖类囊体膜光系统吸收光子合成ATP和NADPH；暗反应依赖基质中RuBisCO酶固定CO2。高温诱发气孔关闭限速，并导致酶空间立体构象解体变性。",
+      fachbegriffe: [
+        { term: "Lichtkompensationspunkt", zh: "光补偿点", def: "Bestrahlungsstärke, bei der CO2-Aufnahme und -Abgabe identisch sind." },
+        { term: "RuBisCO", zh: "核酮糖二磷酸羧化酶", def: "Schlüsselenzym der CO2-Fixierung im stroma des Chloroplasten." },
+        { term: "Stomatärer Verschluss", zh: "气孔闭合", def: "Schutzmechanismus gegen Wasserverlust bei Hitzestress." },
+        { term: "RGT-Regel", zh: "范特霍夫温度规则", def: "Reaktionsgeschwindigkeit verdoppelt sich bei 10 K Temperaturanstieg bis zum Optimum." }
+      ]
+    },
+    klausur: {
+      promptDE: "Interpretieren Sie die Abhängigkeit der Fotosyntheserate von Licht und Temperatur unter Berücksichtigung des Gesetzes der limitierenden Faktoren. (AFB II, 13 Pkt)",
+      promptZH: "结合限制因子定律（Liebig），综合分析光照与温度对植物净光合速率的复合影响机制。(AFB II, 13分)",
+      afb: "AFB II",
+      points: 13,
+      erwartungshorizontDE: [
+        "Definition des Gesetzes des Minimums / limitierenden Faktors (Blackman).",
+        "Erklärung des linearen Anstiegs bei Schwachlicht (Licht als limitierender Faktor der Primärreaktion).",
+        "Erläuterung der Lichtsättigung (Enzymkapazität des Calvin-Zyklus wird limitierend).",
+        "Analyse der Glockenkurve bezüglich Temperatur (RGT-Regel bis Optimum, danach Denaturierung).",
+        "Verknüpfung mit Trockenstress und Photorespiration."
+      ],
+      erwartungshorizontZH: [
+        "准确叙述限制因子定律（总速率由处于最不足状态的生态因子决定）。",
+        "阐释弱光阶段光照强度为核心限制因子；强光阶段暗反应酶活性为限制因子。",
+        "依据范特霍夫规则解释升温初期分子碰撞加剧与后期酶热变性构象破坏。",
+        "深入关联干旱高温下气孔闭合导致的CO2浓度枯竭。"
+      ],
+      formulierungshilfe: "Gemäß dem Gesetz der limitierenden Faktoren bestimmt die im Minimum vorhandene Ressource die Gesamtreaktionsgeschwindigkeit. Im Starklichtbereich limitiert demnach nicht mehr die Lichtabsorption der Thylakoidmembran, sondern die enzymatische Fixierungskapazität von RuBisCO im Calvin-Zyklus.",
+      chineseComment: "高分关键：必须严格区分光反应（物理光化学反应，几乎不受温度影响）与暗反应（生化酶促反应，强温度相关）的本质差异！"
+    }
+  },
+  "deutsch-drama-freytag": {
+    presets: [
+      {
+        id: "freytag-klassisches-drama",
+        nameDE: "Klassisches 5-Akt-Schema",
+        nameZH: "经典五幕正剧平衡态",
+        paramA: 50,
+        paramB: 50,
+        descDE: "Idealtypische Spannungskurve mit Peripetie im 3. Akt und retardierendem Moment im 4. Akt.",
+        descZH: "经典高潮转折（第3幕）与延缓动作（第4幕）完整呈现的典范戏剧结构。"
+      },
+      {
+        id: "freytag-faust-steigend",
+        nameDE: "Faust I: Pakt & Gretchen",
+        nameZH: "歌德《浮士德I》升华加速",
+        paramA: 75,
+        paramB: 80,
+        descDE: "Stetige Zuspitzung durch den Teufelspakt bis zur unausweichlichen Katastrophe im Kerker.",
+        descZH: "魔鬼契约促使行动链急剧恶化，最终直指地牢绝境的悲剧归宿。"
+      },
+      {
+        id: "freytag-offenes-drama",
+        nameDE: "Modernes offenes Drama (Büchner)",
+        nameZH: "现代开放式戏剧 (毕希纳)",
+        paramA: 20,
+        paramB: 90,
+        descDE: "Bruch mit der geschlossenen Form: Fragmentarische Szenen ohne harmonische Lösung.",
+        descZH: "打破古典闭合形式，呈现断片式场景与永不和解的社会异化危机。"
+      }
+    ],
+    task: {
+      goalDE: "Modellieren Sie den dramatischen Scheitelpunkt (Peripetie) exakt auf den 3. Akt mit maximaler Zuspitzung.",
+      goalZH: "调节情节推进速率与冲突张力，将全剧戏剧转折点（Peripetie）精准定位于第3幕顶峰。",
+      targetA: [45, 60],
+      targetB: [45, 60],
+      successMsgDE: "Klassische Freytagsche Pyramide perfekt balanciert: Exakte Exposition, Peripetie und Katastrophe!",
+      successMsgZH: "古典弗莱塔格戏剧金字塔构建成功：铺垫、激化、高潮转折与悲剧结局严丝合缝！"
+    },
+    causality: {
+      phenomenonDE: "Die dramatische Spannung steigt von der Exposition über erregende Momente an, kulminiert im Wendepunkt und stürzt über das retardierende Moment in die Katastrophe.",
+      phenomenonZH: "全剧情感张力自开端铺垫稳步爬升，在转折点达到最高峰后，通过延缓动作的虚假希望最终骤降至悲剧收尾。",
+      mechanismDE: "Gustav Freytags Pyramidenmodell formalisiert das aristotelische Geschlossene Drama (Einheit von Ort, Zeit und Handlung). Der 3. Akt markiert den Umschlag des Schicksals (Peripetie) gekoppelt mit Selbsterkenntnis (Anagnorisis).",
+      mechanismZH: "弗莱塔格金字塔将亚里士多德的三一律戏剧闭合形式结构化。第3幕的命运转折（Peripetie）与主人公的自我觉醒（Anagnorisis）构成不可逆的因果必然性。",
+      fachbegriffe: [
+        { term: "Peripetie", zh: "情节逆转 / 突变", def: "Plötzlicher Umschlag des Schicksals des Protagonisten im 3. Akt." },
+        { term: "Retardierendes Moment", zh: "延缓动作", def: "Szenische Verzögerung im 4. Akt, die trügerische Hoffnung weckt." },
+        { term: "Katharsis", zh: "净化作用", def: "Seelische Reinigung des Zuschauers durch Jammer (Eleos) und Schaudern (Phobos)." },
+        { term: "Exposition", zh: "开端阐述", def: "Einführung in Ausgangssituation, Figurenkonstellation und Grundkonflikt." }
+      ]
+    },
+    klausur: {
+      promptDE: "Weisen Sie anhand des vorliegenden Dramenausschnitts nach, an welcher Stelle im Freytagschen Modell die Szene anzusiedeln ist, und analysieren Sie deren Funktion für den Handlungsfortgang. (AFB II, 14 Pkt)",
+      promptZH: "结合所选戏剧片段，论证该场景在弗莱塔格金字塔模型中的确切结构落位，并剖析其对全局冲突推进的功能。(AFB II, 14分)",
+      afb: "AFB II",
+      points: 14,
+      erwartungshorizontDE: [
+        "Exakte Zuordnung des Textauszugs in die Dramenstruktur (z.B. 3. Akt Höhepunkt/Peripetie oder 4. Akt Retardation).",
+        "Begründung durch textimmanente Belege (Dialogdynamik, Wendung der Handlungsabsichten).",
+        "Analyse der Figurenkonstellation und der sprachlichen Mittel (Regieanweisungen, Sprechanteile).",
+        "Funktionsbestimmung: Beschleunigung, Richtungswechsel oder psychologischer Spannungsaufbau.",
+        "Beurteilung der Einhaltung des klassischen Dramenmodells."
+      ],
+      erwartungshorizontZH: [
+        "基于文本依据精准断定该选段在五幕剧中的阶段（如第3幕转折点或第4幕延缓阶段）。",
+        "紧扣人物对话动力学与行动动机构成严密的论据链。",
+        "深入分析舞台说明（Regieanweisung）与人物语言修辞对张力制造的贡献。",
+        "总结该场景在激发观众怜悯与恐惧（Katharsis）中的终极戏剧功能。"
+      ],
+      formulierungshilfe: "Die Szene lässt sich strukturell als Peripetie klassifizieren, da die Konfrontation der Protagonisten den unausweichlichen Wendepunkt markiert. Die dialogische Zuspitzung belegt, dass eine gütliche Konfliktlösung fortan ausgeschlossen ist und die Handlung zwingend auf die finale Katastrophe zusteuert.",
+      chineseComment: "阅卷雷区：切勿只复述故事情节！德国高中德语大题最看重‘Funktion’（功能），必须回答：这一场对话为后续不可逆转的崩溃起到了怎样的结构性推动作用。"
+    }
+  }
+};
+
+// 为所有其他扩展实验室生成智能、严谨的教研参数字典
+export function getSimPedagogy(sim: SimEntry, _de?: boolean) {
+  if (SIM_PEDAGOGY_MAP[sim.id]) {
+    return SIM_PEDAGOGY_MAP[sim.id];
+  }
+
+  // 兜底智能生成：确保所有44个实验室全部拥有无死角的严密教研支撑
+  const defaultPresets: SimPreset[] = [
+    {
+      id: "std-reference",
+      nameDE: "Standard-Referenz",
+      nameZH: "标准基准工况",
+      paramA: 50,
+      paramB: 50,
+      descDE: `Typischer Gleichgewichtszustand für ${sim.themenDE}.`,
+      descZH: `针对【${sim.themenZH}】的标准参考设定与平衡基准。`
+    },
+    {
+      id: "extrem-max",
+      nameDE: "Grenzfall / Maximierung",
+      nameZH: "极限工况 / 最大响应态",
+      paramA: 90,
+      paramB: 15,
+      descDE: `Untersuchung von Grenzwerten und extremen Systemreaktionen.`,
+      descZH: `高负荷极限参数下的系统临界演化与边界响应。`
+    },
+    {
+      id: "klausur-focus",
+      nameDE: "Klausur-Szenario NRW",
+      nameZH: "北威州会考典型设题态",
+      paramA: 25,
+      paramB: 75,
+      descDE: `Klassische Prüfungskonstellation im Lehrplan ${sim.fach} (${sim.stufe}).`,
+      descZH: `紧扣高中考纲高频命题视角的实验工况。`
+    }
+  ];
+
+  const defaultTask: SimTask = {
+    goalDE: `Stellen Sie die Parameter so ein, dass das System in einen stabilen Optimalzustand für ${sim.themenDE} übergeht.`,
+    goalZH: `通过微调双通道核心参数，使【${sim.themenZH}】进入考纲规范的最优稳定态。`,
+    targetA: [40, 60],
+    targetB: [40, 60],
+    successMsgDE: `Zielzustand erreicht: Perfekte Balance der Parameter für ${sim.themenDE}!`,
+    successMsgZH: `目标工况达成：核心参数成功收敛至【${sim.themenZH}】最佳解析区间！`
+  };
+
+  const defaultCausality: SimCausality = {
+    phenomenonDE: `Bei Variation von Parameter A und B verändert sich der Zustand des Systems kontinuierlich gemäß ${sim.formula || "den Naturgesetzen"}.`,
+    phenomenonZH: `随着核心调节参数的主动介入，系统输出变量严格遵从【${sim.formula || "基本守恒与演化规律"}】展现非线性响应。`,
+    mechanismDE: `Die Gesetzmäßigkeiten der ${sim.fach}-Fachdidaktik zeigen, dass mikroskopische Wechselwirkungen makroskopisch messbare Veränderungen hervorrufen. Die Stabilität hängt von der dynamischen Balance beider Steuergrößen ab.`,
+    mechanismZH: `基于${sim.fach}学科底层机理，微观因果互动直接决定了宏观可测物理量/指标的变化趋势，两组调节变量的协同作用主导了系统的相变或稳态。`,
+    fachbegriffe: [
+      { term: sim.themenDE.split(" ")[0] || "Grundbegriff", zh: sim.themenZH.split(" ")[0] || "核心概念", def: `Fachdidaktischer Kernbegriff der gymnasialen Oberstufe für ${sim.themenDE}.` },
+      { term: "Kausalzusammenhang", zh: "因果必然性", def: "Deterministische Beziehung zwischen Ursache und Wirkung im Modell." },
+      { term: "Gleichgewichtszustand", zh: "平衡稳态", def: "Zustand minimaler freier Energie oder stabiler Kräfteverteilung." }
+    ]
+  };
+
+  const defaultKlausur: SimKlausurEHZ = {
+    promptDE: `Analysieren Sie die Auswirkung veränderter Systembedingungen auf '${sim.themenDE}' und beurteilen Sie die Tragfähigkeit des vorliegenden Modells. (AFB II/III, 12 Pkt)`,
+    promptZH: `分析系统边界条件改变对【${sim.themenZH}】的影响，并评析当前理论模型的适用边界。(AFB II/III, 12分)`,
+    afb: "AFB II",
+    points: 12,
+    erwartungshorizontDE: [
+      `Präzise Benennung der theoretischen Grundlagen von ${sim.themenDE}.`,
+      "Systematische Verknüpfung der Messwerte mit der mathematischen/didaktischen Formel.",
+      "Kritische Reflexion der Modellannahmen gegenüber realen Umweltbedingungen."
+    ],
+    erwartungshorizontZH: [
+      `清晰阐明【${sim.themenZH}】的基础定义与理论前提。`,
+      `运用核心公理公式对实验测量数据进行量化逻辑论证。`,
+      "对简化假说进行批判性反思，指出真实考试答题中的常见漏洞与得分点。"
+    ],
+    formulierungshilfe: `Aus den ermittelten Werten geht hervor, dass eine signifikante Korrelation zwischen den Steuergrößen besteht. Demzufolge bestätigt das Experiment die theoretische Annahme, wonach das Gesamtsystem einem determinierten Gesetz unterliegt.`,
+    chineseComment: `满分答题策略：在德语会考中作答此题时，切忌空发议论。务必先引用实测读数作为Beleg（事实论据），再引入专业概念，最后得出因果推论。`
+  };
+
+  return {
+    presets: defaultPresets,
+    task: defaultTask,
+    causality: defaultCausality,
+    klausur: defaultKlausur
+  };
+}
+
 export function UniversalInteractiveWorkbench({
   sim,
   lang,
@@ -40,8 +470,39 @@ export function UniversalInteractiveWorkbench({
   const [paramA, setParamA] = useState<number>(50); // 主调节参数 (0 - 100)
   const [paramB, setParamB] = useState<number>(50); // 次调节参数 (0 - 100)
   const [interactiveTriggered, setInteractiveTriggered] = useState<boolean>(false);
+  const [activeTab, setActiveTab] = useState<"workbench" | "causality" | "klausur">("workbench");
 
-  // 44 个新增实验室全部专属量化参数模型与高频考点
+  // 获取该实验全套教研档案与考纲标准
+  const pedagogy = useMemo(() => getSimPedagogy(sim, de), [sim, de]);
+
+  // 校验当前参数是否达成挑战目标
+  const taskAchieved = useMemo(() => {
+    const t = pedagogy.task;
+    let okA = true;
+    let okB = true;
+    if (t.targetA) {
+      okA = paramA >= t.targetA[0] && paramA <= t.targetA[1];
+    }
+    if (t.targetB) {
+      okB = paramB >= t.targetB[0] && paramB <= t.targetB[1];
+    }
+    return okA && okB;
+  }, [pedagogy, paramA, paramB]);
+
+  // 步进调节控制
+  const handleStepA = (delta: number) => {
+    setParamA((prev) => Math.max(0, Math.min(100, prev + delta)));
+  };
+
+  const handleStepB = (delta: number) => {
+    setParamB((prev) => Math.max(0, Math.min(100, prev + delta)));
+  };
+
+  // 应用预设工况
+  const handleApplyPreset = (p: SimPreset) => {
+    setParamA(p.paramA);
+    setParamB(p.paramB);
+  };
   const data: CalculatedWorkbenchData = useMemo(() => {
     switch (sim.id) {
       // ==========================================
@@ -1222,21 +1683,6 @@ export function UniversalInteractiveWorkbench({
     }
   }, [sim.id, paramA, paramB, de]);
 
-  const handleExport = () => {
-    const text = de
-      ? `Labor: ${sim.titleDE} (${sim.kategorieDE})\nParameter A: ${data.paramALabelDE} = ${data.paramAValueDisplay}\nParameter B: ${data.paramBLabelDE} = ${data.paramBValueDisplay}\nMesswert: ${data.rateLabelDE} = ${data.rateValue}\nErkenntnis: ${data.insightDE}`
-      : `实验室: ${sim.titleZH} (${sim.kategorieZH})\n参数 A: ${data.paramALabelZH} = ${data.paramAValueDisplay}\n参数 B: ${data.paramBLabelZH} = ${data.paramBValueDisplay}\n测定数据: ${data.rateLabelZH} = ${data.rateValue}\n核心考点结论: ${data.insightZH}`;
-    if (onExportFinding) {
-      onExportFinding(text);
-    } else {
-      navigator.clipboard.writeText(text);
-      alert(de ? "Messdaten in Zwischenablage kopiert!" : "实验数据已复制到剪贴板！");
-    }
-  };
-
-  // ==========================================================================
-  // 领域专属真实 SVG 交互仿真画布渲染引擎（全部 44 个实验均有专属可视化架构）
-  // ==========================================================================
   const renderArchetypeCanvas = () => {
     switch (data.archetype) {
       // 1. 哲学：李贝特实验脑电与自由意志
@@ -1246,7 +1692,7 @@ export function UniversalInteractiveWorkbench({
         const wX = 220 + (paramB / 100) * 60;
         return (
           <div className="flex flex-col gap-3 w-full py-2">
-            <svg className="w-full h-52 rounded bg-[var(--paper-subtle)]/40 border border-[var(--line)]/50" viewBox="0 0 440 200">
+            <svg className="w-full h-64 sm:h-72 rounded bg-[var(--paper-subtle)]/40 border border-[var(--line)]/50" viewBox="0 0 440 200">
               <circle cx="70" cy="100" r="48" fill="none" stroke="var(--ink)" strokeWidth="1.5" strokeOpacity="0.4" />
               {[0, 30, 60, 90, 120, 150, 180, 210, 240, 270, 300, 330].map((deg) => (
                 <line
@@ -1331,7 +1777,7 @@ export function UniversalInteractiveWorkbench({
       case "fotosynthese": {
         const blasenCount = Math.round((data.graphY / 100) * 12);
         return (
-          <svg className="w-full h-52 rounded bg-[var(--paper-subtle)]/40 border border-[var(--line)]/50" viewBox="0 0 440 200">
+          <svg className="w-full h-64 sm:h-72 rounded bg-[var(--paper-subtle)]/40 border border-[var(--line)]/50" viewBox="0 0 440 200">
             <path d="M 30 100 L 120 40 L 120 160 Z" fill="#facc15" fillOpacity={paramA / 250} />
             <rect x="15" y="70" width="30" height="60" rx="4" fill="#334155" />
             <circle cx="30" cy="100" r="10" fill="#fef08a" />
@@ -1376,7 +1822,7 @@ export function UniversalInteractiveWorkbench({
       // 3. 化学：丹尼尔原电池与盐桥
       case "galvanisch": {
         return (
-          <svg className="w-full h-52 rounded bg-[var(--paper-subtle)]/40 border border-[var(--line)]/50" viewBox="0 0 440 200">
+          <svg className="w-full h-64 sm:h-72 rounded bg-[var(--paper-subtle)]/40 border border-[var(--line)]/50" viewBox="0 0 440 200">
             <rect x="50" y="70" width="110" height="95" rx="4" fill="#e2e8f0" stroke="var(--ink)" strokeWidth="1.8" />
             <rect x="52" y="90" width="106" height="73" fill="#cbd5e1" fillOpacity="0.5" />
             <rect x="80" y="50" width="22" height="100" fill="#94a3b8" stroke="var(--ink)" strokeWidth="1.2" />
@@ -1404,7 +1850,7 @@ export function UniversalInteractiveWorkbench({
       case "elektrolyse": {
         const mCu = Math.min(20, Math.round(data.graphY));
         return (
-          <svg className="w-full h-52 rounded bg-[var(--paper-subtle)]/40 border border-[var(--line)]/50" viewBox="0 0 440 200">
+          <svg className="w-full h-64 sm:h-72 rounded bg-[var(--paper-subtle)]/40 border border-[var(--line)]/50" viewBox="0 0 440 200">
             <rect x="195" y="10" width="50" height="30" rx="4" fill="#1e293b" />
             <text x="220" y="24" textAnchor="middle" fontSize="8" fill="#38bdf8" fontFamily="monospace">DC-Quelle</text>
             <text x="220" y="35" textAnchor="middle" fontSize="9" fontWeight="bold" fill="#f8fafc" fontFamily="monospace">{data.paramAValueDisplay}</text>
@@ -1434,7 +1880,7 @@ export function UniversalInteractiveWorkbench({
       // 5. 化学：缓冲溶液滴定曲线 (Puffer)
       case "puffer": {
         return (
-          <svg className="w-full h-52 rounded bg-[var(--paper-subtle)]/40 border border-[var(--line)]/50" viewBox="0 0 440 200">
+          <svg className="w-full h-64 sm:h-72 rounded bg-[var(--paper-subtle)]/40 border border-[var(--line)]/50" viewBox="0 0 440 200">
             <line x1="50" y1="170" x2="390" y2="170" stroke="var(--ink)" strokeWidth="1.5" />
             <line x1="50" y1="20" x2="50" y2="170" stroke="var(--ink)" strokeWidth="1.5" />
             <text x="42" y="30" textAnchor="end" fontSize="8" fill="var(--gray)" fontFamily="monospace">pH 14</text>
@@ -1463,7 +1909,7 @@ export function UniversalInteractiveWorkbench({
       case "sn1sn2": {
         const isSN1 = paramA > 50;
         return (
-          <svg className="w-full h-52 rounded bg-[var(--paper-subtle)]/40 border border-[var(--line)]/50" viewBox="0 0 440 200">
+          <svg className="w-full h-64 sm:h-72 rounded bg-[var(--paper-subtle)]/40 border border-[var(--line)]/50" viewBox="0 0 440 200">
             <line x1="50" y1="170" x2="390" y2="170" stroke="var(--ink)" strokeWidth="1.5" />
             <line x1="50" y1="20" x2="50" y2="170" stroke="var(--ink)" strokeWidth="1.5" />
             <text x="45" y="30" textAnchor="end" fontSize="8" fill="var(--gray)" fontFamily="monospace">ΔG</text>
@@ -1497,7 +1943,7 @@ export function UniversalInteractiveWorkbench({
       case "polymerisation": {
         const units = Math.min(10, Math.round(data.graphY / 10));
         return (
-          <svg className="w-full h-52 rounded bg-[var(--paper-subtle)]/40 border border-[var(--line)]/50" viewBox="0 0 440 200">
+          <svg className="w-full h-64 sm:h-72 rounded bg-[var(--paper-subtle)]/40 border border-[var(--line)]/50" viewBox="0 0 440 200">
             <text x="220" y="35" textAnchor="middle" fontSize="10" fill="var(--ink)" fontWeight="bold" fontFamily="monospace">
               Radikal-Kettenwachstum: [ - CH₂ - CH(Ph) - ]ₙ
             </text>
@@ -1523,7 +1969,7 @@ export function UniversalInteractiveWorkbench({
       case "komplex": {
         const tetra = paramB > 40;
         return (
-          <svg className="w-full h-52 rounded bg-[var(--paper-subtle)]/40 border border-[var(--line)]/50" viewBox="0 0 440 200">
+          <svg className="w-full h-64 sm:h-72 rounded bg-[var(--paper-subtle)]/40 border border-[var(--line)]/50" viewBox="0 0 440 200">
             <rect x="70" y="40" width="80" height="120" rx="4" fill="var(--paper-subtle)" stroke="var(--ink)" strokeWidth="1.8" />
             <rect x="72" y="60" width="76" height="98" fill={tetra ? "#1e3a8a" : "#38bdf8"} fillOpacity={tetra ? 0.9 : 0.4} />
             <text x="110" y="175" textAnchor="middle" fontSize="8" fill="var(--gray)" fontFamily="monospace">Küvette</text>
@@ -1547,7 +1993,7 @@ export function UniversalInteractiveWorkbench({
       // 9. 生物：细胞呼吸线粒体 (Zellatmung)
       case "zellatmung": {
         return (
-          <svg className="w-full h-52 rounded bg-[var(--paper-subtle)]/40 border border-[var(--line)]/50" viewBox="0 0 440 200">
+          <svg className="w-full h-64 sm:h-72 rounded bg-[var(--paper-subtle)]/40 border border-[var(--line)]/50" viewBox="0 0 440 200">
             <ellipse cx="220" cy="100" rx="190" ry="85" fill="none" stroke="var(--ink)" strokeWidth="2" strokeDasharray="5,2" />
             <path
               d="M 50 100 C 70 50, 110 50, 130 90 C 150 130, 180 60, 210 95 C 240 130, 270 50, 300 90 C 330 130, 370 70, 390 100 C 370 140, 330 140, 300 115 C 270 90, 240 150, 210 115 C 180 80, 150 150, 130 115 C 110 80, 70 150, 50 100 Z"
@@ -1568,7 +2014,7 @@ export function UniversalInteractiveWorkbench({
       // 10. 生物：米氏酶动力学 (Enzymkinetik)
       case "enzym": {
         return (
-          <svg className="w-full h-52 rounded bg-[var(--paper-subtle)]/40 border border-[var(--line)]/50" viewBox="0 0 440 200">
+          <svg className="w-full h-64 sm:h-72 rounded bg-[var(--paper-subtle)]/40 border border-[var(--line)]/50" viewBox="0 0 440 200">
             <line x1="50" y1="170" x2="390" y2="170" stroke="var(--ink)" strokeWidth="1.5" />
             <line x1="50" y1="20" x2="50" y2="170" stroke="var(--ink)" strokeWidth="1.5" />
             <line x1="50" y1="50" x2="390" y2="50" stroke="var(--gray)" strokeWidth="1" strokeDasharray="3,3" />
@@ -1613,7 +2059,7 @@ export function UniversalInteractiveWorkbench({
       // 12. 生物：化学突触
       case "synapse": {
         return (
-          <svg className="w-full h-52 rounded bg-[var(--paper-subtle)]/40 border border-[var(--line)]/50" viewBox="0 0 440 200">
+          <svg className="w-full h-64 sm:h-72 rounded bg-[var(--paper-subtle)]/40 border border-[var(--line)]/50" viewBox="0 0 440 200">
             <path d="M 50 20 L 50 140 C 90 140, 150 150, 180 150 C 210 150, 220 120, 220 20 Z" fill="#f8fafc" stroke="var(--ink)" strokeWidth="2" />
             <text x="110" y="50" fontSize="10" fill="var(--ink)" fontWeight="bold" fontFamily="monospace">Präsynapse</text>
             {[
@@ -1639,7 +2085,7 @@ export function UniversalInteractiveWorkbench({
       // 13. 生物：捕食者猎物波动 (Raeuber-Beute)
       case "raeuber-beute": {
         return (
-          <svg className="w-full h-52 rounded bg-[var(--paper-subtle)]/40 border border-[var(--line)]/50" viewBox="0 0 440 200">
+          <svg className="w-full h-64 sm:h-72 rounded bg-[var(--paper-subtle)]/40 border border-[var(--line)]/50" viewBox="0 0 440 200">
             <line x1="50" y1="170" x2="390" y2="170" stroke="var(--ink)" strokeWidth="1.5" />
             <line x1="50" y1="20" x2="50" y2="170" stroke="var(--ink)" strokeWidth="1.5" />
             <path
@@ -1665,7 +2111,7 @@ export function UniversalInteractiveWorkbench({
       // 14. 生物：PCR 变温曲线与电泳条带 (PCR)
       case "pcr": {
         return (
-          <svg className="w-full h-52 rounded bg-[var(--paper-subtle)]/40 border border-[var(--line)]/50" viewBox="0 0 440 200">
+          <svg className="w-full h-64 sm:h-72 rounded bg-[var(--paper-subtle)]/40 border border-[var(--line)]/50" viewBox="0 0 440 200">
             <path d="M 50 140 L 90 40 L 130 40 L 160 120 L 200 120 L 230 85 L 270 85 L 300 140" fill="none" stroke="var(--accent)" strokeWidth="2.5" />
             <text x="110" y="32" textAnchor="middle" fontSize="8" fill="#dc2626" fontFamily="monospace">95°C Denat.</text>
             <text x="180" y="132" textAnchor="middle" fontSize="8" fill="#0284c7" fontFamily="monospace">55°C Anneal</text>
@@ -1684,7 +2130,7 @@ export function UniversalInteractiveWorkbench({
       case "epigenetik": {
         const aktiv = data.graphY > 50;
         return (
-          <svg className="w-full h-52 rounded bg-[var(--paper-subtle)]/40 border border-[var(--line)]/50" viewBox="0 0 440 200">
+          <svg className="w-full h-64 sm:h-72 rounded bg-[var(--paper-subtle)]/40 border border-[var(--line)]/50" viewBox="0 0 440 200">
             <text x="220" y="35" textAnchor="middle" fontSize="10" fontWeight="bold" fill="var(--ink)" fontFamily="monospace">
               {aktiv ? "Euchromatin (Aktiv / Zugänglich)" : "Heterochromatin (Kondensiert / Stumm)"}
             </text>
@@ -1703,7 +2149,7 @@ export function UniversalInteractiveWorkbench({
       // 16. 生物：温带湖泊温跃层 (See-Ökologie)
       case "see": {
         return (
-          <svg className="w-full h-52 rounded bg-[var(--paper-subtle)]/40 border border-[var(--line)]/50" viewBox="0 0 440 200">
+          <svg className="w-full h-64 sm:h-72 rounded bg-[var(--paper-subtle)]/40 border border-[var(--line)]/50" viewBox="0 0 440 200">
             <rect x="50" y="25" width="220" height="40" fill="#bae6fd" />
             <text x="160" y="48" textAnchor="middle" fontSize="9" fill="#0369a1" fontFamily="monospace">Epilimnion (20°C)</text>
             <rect x="50" y="65" width="220" height="35" fill="#7dd3fc" />
@@ -1723,7 +2169,7 @@ export function UniversalInteractiveWorkbench({
         const nBars = Math.min(24, Math.round(Number(data.paramAValueDisplay.slice(4)) || 8));
         const dx = 240 / (nBars || 1);
         return (
-          <svg className="w-full h-52 rounded bg-[var(--paper-subtle)]/40 border border-[var(--line)]/50" viewBox="0 0 440 200">
+          <svg className="w-full h-64 sm:h-72 rounded bg-[var(--paper-subtle)]/40 border border-[var(--line)]/50" viewBox="0 0 440 200">
             <line x1="60" y1="170" x2="380" y2="170" stroke="var(--ink)" strokeWidth="1.5" />
             <line x1="70" y1="20" x2="70" y2="170" stroke="var(--ink)" strokeWidth="1.5" />
             {Array.from({ length: nBars }).map((_, i) => {
@@ -1754,7 +2200,7 @@ export function UniversalInteractiveWorkbench({
       case "kurvendiskussion": {
         const xPos = 220 + ((paramA - 50) / 50) * 120;
         return (
-          <svg className="w-full h-52 rounded bg-[var(--paper-subtle)]/40 border border-[var(--line)]/50" viewBox="0 0 440 200">
+          <svg className="w-full h-64 sm:h-72 rounded bg-[var(--paper-subtle)]/40 border border-[var(--line)]/50" viewBox="0 0 440 200">
             <line x1="50" y1="100" x2="390" y2="100" stroke="var(--ink)" strokeWidth="1" strokeOpacity="0.4" />
             <line x1="220" y1="20" x2="220" y2="180" stroke="var(--ink)" strokeWidth="1" strokeOpacity="0.4" />
             <path d="M 120 180 C 150 40, 180 40, 220 100 C 260 160, 290 160, 320 20" fill="none" stroke="var(--accent)" strokeWidth="2.5" />
@@ -1770,7 +2216,7 @@ export function UniversalInteractiveWorkbench({
       // 19. 数学：函数族与轨迹曲线 (Funktionenscharen)
       case "funktionenschar": {
         return (
-          <svg className="w-full h-52 rounded bg-[var(--paper-subtle)]/40 border border-[var(--line)]/50" viewBox="0 0 440 200">
+          <svg className="w-full h-64 sm:h-72 rounded bg-[var(--paper-subtle)]/40 border border-[var(--line)]/50" viewBox="0 0 440 200">
             <line x1="50" y1="100" x2="390" y2="100" stroke="var(--ink)" strokeWidth="1" strokeOpacity="0.3" />
             <line x1="220" y1="20" x2="220" y2="180" stroke="var(--ink)" strokeWidth="1" strokeOpacity="0.3" />
             <path d="M 160 30 C 180 50, 200 70, 220 100" fill="none" stroke="#dc2626" strokeWidth="2" strokeDasharray="3,3" />
@@ -1785,7 +2231,7 @@ export function UniversalInteractiveWorkbench({
       // 20. 数学：旋转体体积 (Rotation)
       case "rotation": {
         return (
-          <svg className="w-full h-52 rounded bg-[var(--paper-subtle)]/40 border border-[var(--line)]/50" viewBox="0 0 440 200">
+          <svg className="w-full h-64 sm:h-72 rounded bg-[var(--paper-subtle)]/40 border border-[var(--line)]/50" viewBox="0 0 440 200">
             <line x1="50" y1="100" x2="390" y2="100" stroke="var(--ink)" strokeWidth="1.5" />
             <path d="M 100 100 Q 200 40 320 40 L 320 160 Q 200 160 100 100 Z" fill="var(--accent)" fillOpacity="0.15" stroke="var(--accent)" strokeWidth="2" />
             <ellipse cx="320" cy="100" rx="15" ry="60" fill="none" stroke="var(--accent)" strokeWidth="1.5" />
@@ -1800,7 +2246,7 @@ export function UniversalInteractiveWorkbench({
       // 21. 数学：点到平面空间几何 (Ebene & Abstand)
       case "ebene": {
         return (
-          <svg className="w-full h-52 rounded bg-[var(--paper-subtle)]/40 border border-[var(--line)]/50" viewBox="0 0 440 200">
+          <svg className="w-full h-64 sm:h-72 rounded bg-[var(--paper-subtle)]/40 border border-[var(--line)]/50" viewBox="0 0 440 200">
             <polygon points="100,160 280,160 360,90 180,90" fill="#0284c7" fillOpacity="0.2" stroke="var(--ink)" strokeWidth="1.5" />
             <circle cx="230" cy="40" r="5" fill="#dc2626" />
             <text x="240" y="42" fontSize="9" fontWeight="bold" fill="#dc2626" fontFamily="monospace">{data.paramAValueDisplay}</text>
@@ -1818,7 +2264,7 @@ export function UniversalInteractiveWorkbench({
         const x2 = 140 + 80 * Math.cos(rad);
         const y2 = 140 - 80 * Math.sin(rad);
         return (
-          <svg className="w-full h-52 rounded bg-[var(--paper-subtle)]/40 border border-[var(--line)]/50" viewBox="0 0 440 200">
+          <svg className="w-full h-64 sm:h-72 rounded bg-[var(--paper-subtle)]/40 border border-[var(--line)]/50" viewBox="0 0 440 200">
             <line x1="140" y1="140" x2="260" y2="140" stroke="var(--ink)" strokeWidth="2.5" />
             <text x="265" y="145" fontSize="9" fontWeight="bold" fill="var(--ink)" fontFamily="monospace">a</text>
             <line x1="140" y1="140" x2={x2} y2={y2} stroke="var(--accent)" strokeWidth="2.5" />
@@ -1833,7 +2279,7 @@ export function UniversalInteractiveWorkbench({
       // 23. 数学：马尔可夫转移图 (Markov-Ketten)
       case "markov": {
         return (
-          <svg className="w-full h-52 rounded bg-[var(--paper-subtle)]/40 border border-[var(--line)]/50" viewBox="0 0 440 200">
+          <svg className="w-full h-64 sm:h-72 rounded bg-[var(--paper-subtle)]/40 border border-[var(--line)]/50" viewBox="0 0 440 200">
             <circle cx="120" cy="100" r="30" fill="var(--paper)" stroke="var(--ink)" strokeWidth="2" />
             <text x="120" y="105" textAnchor="middle" fontSize="12" fontWeight="bold" fill="var(--ink)" fontFamily="monospace">A</text>
             <circle cx="320" cy="100" r="30" fill="var(--paper)" stroke="var(--accent)" strokeWidth="2" />
@@ -1851,7 +2297,7 @@ export function UniversalInteractiveWorkbench({
       // 24. 数学：假设检验拒绝域 (Hypothesentest)
       case "hypothese": {
         return (
-          <svg className="w-full h-52 rounded bg-[var(--paper-subtle)]/40 border border-[var(--line)]/50" viewBox="0 0 440 200">
+          <svg className="w-full h-64 sm:h-72 rounded bg-[var(--paper-subtle)]/40 border border-[var(--line)]/50" viewBox="0 0 440 200">
             <line x1="50" y1="170" x2="390" y2="170" stroke="var(--ink)" strokeWidth="1.5" />
             <path d="M 60 170 Q 200 30 360 170" fill="none" stroke="var(--ink)" strokeWidth="2" />
             <rect x="290" y="100" width="80" height="70" fill="#dc2626" fillOpacity="0.25" />
@@ -1867,7 +2313,7 @@ export function UniversalInteractiveWorkbench({
       // 25. 数学：线性回归与散点 (Regression)
       case "regression": {
         return (
-          <svg className="w-full h-52 rounded bg-[var(--paper-subtle)]/40 border border-[var(--line)]/50" viewBox="0 0 440 200">
+          <svg className="w-full h-64 sm:h-72 rounded bg-[var(--paper-subtle)]/40 border border-[var(--line)]/50" viewBox="0 0 440 200">
             <line x1="60" y1="170" x2="380" y2="170" stroke="var(--ink)" strokeWidth="1.5" />
             <line x1="60" y1="30" x2="60" y2="170" stroke="var(--ink)" strokeWidth="1.5" />
             <line x1="80" y1="150" x2="360" y2="50" stroke="var(--accent)" strokeWidth="2.5" />
@@ -1886,7 +2332,7 @@ export function UniversalInteractiveWorkbench({
       // 26. 社科：德国 Sinus-Milieus 坐标矩阵 (Sinus-Milieus)
       case "milieu": {
         return (
-          <svg className="w-full h-52 rounded bg-[var(--paper-subtle)]/40 border border-[var(--line)]/50" viewBox="0 0 440 200">
+          <svg className="w-full h-64 sm:h-72 rounded bg-[var(--paper-subtle)]/40 border border-[var(--line)]/50" viewBox="0 0 440 200">
             <line x1="60" y1="170" x2="390" y2="170" stroke="var(--ink)" strokeWidth="1.5" />
             <line x1="60" y1="30" x2="60" y2="170" stroke="var(--ink)" strokeWidth="1.5" />
             <text x="390" y="185" textAnchor="end" fontSize="7" fill="var(--gray)" fontFamily="monospace">Grundorientierung →</text>
@@ -1913,7 +2359,7 @@ export function UniversalInteractiveWorkbench({
         const curX = 60 + (paramA / 100) * 320;
         const curY = 100 - 45 * Math.sin((paramA / 100) * 2 * Math.PI);
         return (
-          <svg className="w-full h-52 rounded bg-[var(--paper-subtle)]/40 border border-[var(--line)]/50" viewBox="0 0 440 200">
+          <svg className="w-full h-64 sm:h-72 rounded bg-[var(--paper-subtle)]/40 border border-[var(--line)]/50" viewBox="0 0 440 200">
             <line x1="50" y1="130" x2="390" y2="70" stroke="var(--gray)" strokeWidth="1.8" strokeDasharray="4,4" />
             <rect x="60" y="30" width="80" height="140" fill="#22c55e" fillOpacity="0.08" />
             <rect x="140" y="30" width="80" height="140" fill="#f59e0b" fillOpacity="0.08" />
@@ -1932,7 +2378,7 @@ export function UniversalInteractiveWorkbench({
       // 28. 社科：欧洲央行利率走廊 (EZB)
       case "ezb": {
         return (
-          <svg className="w-full h-52 rounded bg-[var(--paper-subtle)]/40 border border-[var(--line)]/50" viewBox="0 0 440 200">
+          <svg className="w-full h-64 sm:h-72 rounded bg-[var(--paper-subtle)]/40 border border-[var(--line)]/50" viewBox="0 0 440 200">
             <rect x="60" y="40" width="320" height="120" fill="var(--paper-subtle)" rx="4" />
             <line x1="60" y1="60" x2="380" y2="60" stroke="#dc2626" strokeWidth="2" strokeDasharray="3,3" />
             <text x="70" y="55" fontSize="8" fill="#dc2626" fontWeight="bold" fontFamily="monospace">Spitzenrefinanzierung (Kredit-Obergrenze)</text>
@@ -1950,7 +2396,7 @@ export function UniversalInteractiveWorkbench({
       // 29. 社科：福利国家洛伦兹曲线再分配 (Sozialstaat)
       case "sozialstaat": {
         return (
-          <svg className="w-full h-52 rounded bg-[var(--paper-subtle)]/40 border border-[var(--line)]/50" viewBox="0 0 440 200">
+          <svg className="w-full h-64 sm:h-72 rounded bg-[var(--paper-subtle)]/40 border border-[var(--line)]/50" viewBox="0 0 440 200">
             <line x1="80" y1="170" x2="320" y2="170" stroke="var(--ink)" strokeWidth="1.5" />
             <line x1="80" y1="30" x2="80" y2="170" stroke="var(--ink)" strokeWidth="1.5" />
             <line x1="80" y1="170" x2="320" y2="30" stroke="var(--gray)" strokeWidth="1.5" strokeDasharray="3,3" />
@@ -1965,7 +2411,7 @@ export function UniversalInteractiveWorkbench({
       // 30. 社科：蒙代尔不可能三角 (Trilemma)
       case "trilemma": {
         return (
-          <svg className="w-full h-52 rounded bg-[var(--paper-subtle)]/40 border border-[var(--line)]/50" viewBox="0 0 440 200">
+          <svg className="w-full h-64 sm:h-72 rounded bg-[var(--paper-subtle)]/40 border border-[var(--line)]/50" viewBox="0 0 440 200">
             <polygon points="220,35 110,165 330,165" fill="none" stroke="var(--ink)" strokeWidth="2" />
             <circle cx="220" cy="35" r="5" fill="#dc2626" />
             <text x="220" y="25" textAnchor="middle" fontSize="9" fontWeight="bold" fill="var(--ink)" fontFamily="monospace">Fester Wechselkurs</text>
@@ -1983,7 +2429,7 @@ export function UniversalInteractiveWorkbench({
       // 31. 社科：李嘉图比较优势 (Ricardo)
       case "ricardo": {
         return (
-          <svg className="w-full h-52 rounded bg-[var(--paper-subtle)]/40 border border-[var(--line)]/50" viewBox="0 0 440 200">
+          <svg className="w-full h-64 sm:h-72 rounded bg-[var(--paper-subtle)]/40 border border-[var(--line)]/50" viewBox="0 0 440 200">
             <line x1="80" y1="160" x2="360" y2="160" stroke="var(--ink)" strokeWidth="1.5" />
             <line x1="80" y1="30" x2="80" y2="160" stroke="var(--ink)" strokeWidth="1.5" />
             <line x1="80" y1="60" x2="260" y2="160" stroke="#dc2626" strokeWidth="2" />
@@ -1999,7 +2445,7 @@ export function UniversalInteractiveWorkbench({
       // 32. 社科：投资区位雷达 (Standort Deutschland)
       case "standort": {
         return (
-          <svg className="w-full h-52 rounded bg-[var(--paper-subtle)]/40 border border-[var(--line)]/50" viewBox="0 0 440 200">
+          <svg className="w-full h-64 sm:h-72 rounded bg-[var(--paper-subtle)]/40 border border-[var(--line)]/50" viewBox="0 0 440 200">
             <polygon points="220,40 290,80 260,150 180,150 150,80" fill="none" stroke="var(--gray)" strokeWidth="1" strokeDasharray="2,2" />
             <polygon points="220,50 280,85 240,135 190,140 170,85" fill="var(--accent)" fillOpacity="0.25" stroke="var(--accent)" strokeWidth="2" />
             <text x="220" y="32" textAnchor="middle" fontSize="8" fontFamily="monospace">Infrastruktur</text>
@@ -2017,7 +2463,7 @@ export function UniversalInteractiveWorkbench({
       case "kant": {
         const pass = data.graphY > 50;
         return (
-          <svg className="w-full h-52 rounded bg-[var(--paper-subtle)]/40 border border-[var(--line)]/50" viewBox="0 0 440 200">
+          <svg className="w-full h-64 sm:h-72 rounded bg-[var(--paper-subtle)]/40 border border-[var(--line)]/50" viewBox="0 0 440 200">
             <rect x="50" y="75" width="80" height="50" rx="4" fill="var(--paper)" stroke="var(--ink)" strokeWidth="1.5" />
             <text x="90" y="95" textAnchor="middle" fontSize="8" fill="var(--gray)" fontFamily="monospace">Subjektive</text>
             <text x="90" y="110" textAnchor="middle" fontSize="9" fontWeight="bold" fill="var(--ink)" fontFamily="monospace">Maxime</text>
@@ -2041,7 +2487,7 @@ export function UniversalInteractiveWorkbench({
       case "hoehle": {
         const step = paramA < 25 ? 0 : paramA < 50 ? 1 : paramA < 75 ? 2 : 3;
         return (
-          <svg className="w-full h-52 rounded bg-[var(--paper-subtle)]/40 border border-[var(--line)]/50" viewBox="0 0 440 200">
+          <svg className="w-full h-64 sm:h-72 rounded bg-[var(--paper-subtle)]/40 border border-[var(--line)]/50" viewBox="0 0 440 200">
             <path d="M 40 170 L 130 170 L 130 130 L 220 130 L 220 90 L 310 90 L 310 50 L 400 50" fill="none" stroke="var(--ink)" strokeWidth="2" />
             <rect x="40" y="140" width="80" height="28" fill="#1e293b" fillOpacity={step === 0 ? 0.8 : 0.2} rx="3" />
             <text x="80" y="157" textAnchor="middle" fontSize="9" fill="white" fontFamily="monospace">I. Schatten</text>
@@ -2059,7 +2505,7 @@ export function UniversalInteractiveWorkbench({
       // 35. 哲学：社会契约谱系 (Staatsvertrag)
       case "staatsvertrag": {
         return (
-          <svg className="w-full h-52 rounded bg-[var(--paper-subtle)]/40 border border-[var(--line)]/50" viewBox="0 0 440 200">
+          <svg className="w-full h-64 sm:h-72 rounded bg-[var(--paper-subtle)]/40 border border-[var(--line)]/50" viewBox="0 0 440 200">
             <line x1="60" y1="100" x2="380" y2="100" stroke="var(--ink)" strokeWidth="2" />
             <circle cx="100" cy="100" r="12" fill="#ef4444" />
             <text x="100" y="80" textAnchor="middle" fontSize="9" fontWeight="bold" fill="#ef4444" fontFamily="monospace">Hobbes</text>
@@ -2077,7 +2523,7 @@ export function UniversalInteractiveWorkbench({
       // 36. 哲学：罗尔斯无知之幕天平 (Rawls)
       case "rawls": {
         return (
-          <svg className="w-full h-52 rounded bg-[var(--paper-subtle)]/40 border border-[var(--line)]/50" viewBox="0 0 440 200">
+          <svg className="w-full h-64 sm:h-72 rounded bg-[var(--paper-subtle)]/40 border border-[var(--line)]/50" viewBox="0 0 440 200">
             <rect x="80" y="40" width="280" height="90" fill="#334155" fillOpacity={paramA > 40 ? 0.9 : 0.15} rx="6" />
             <text x="220" y="85" textAnchor="middle" fontSize="12" fontWeight="bold" fill={paramA > 40 ? "#f8fafc" : "#94a3b8"} fontFamily="monospace">
               {paramA > 40 ? "SCHLEIER DES NICHTWISSENS (AKTIV)" : "KEIN SCHLEIER (PRIVILEGIERT)"}
@@ -2092,7 +2538,7 @@ export function UniversalInteractiveWorkbench({
       case "popper": {
         const geg = paramB > 60;
         return (
-          <svg className="w-full h-52 rounded bg-[var(--paper-subtle)]/40 border border-[var(--line)]/50" viewBox="0 0 440 200">
+          <svg className="w-full h-64 sm:h-72 rounded bg-[var(--paper-subtle)]/40 border border-[var(--line)]/50" viewBox="0 0 440 200">
             <rect x="60" y="40" width="140" height="110" rx="4" fill="var(--paper)" stroke="var(--ink)" strokeWidth="1.5" />
             <text x="130" y="65" textAnchor="middle" fontSize="9" fill="var(--gray)" fontFamily="monospace">Weiße Schwäne (n)</text>
             <text x="130" y="105" textAnchor="middle" fontSize="18" fontWeight="bold" fill="var(--ink)" fontFamily="monospace">{data.paramAValueDisplay}</text>
@@ -2111,7 +2557,7 @@ export function UniversalInteractiveWorkbench({
       // 38. 哲学：阿伦特独立判断力齿轮 (Arendt)
       case "arendt": {
         return (
-          <svg className="w-full h-52 rounded bg-[var(--paper-subtle)]/40 border border-[var(--line)]/50" viewBox="0 0 440 200">
+          <svg className="w-full h-64 sm:h-72 rounded bg-[var(--paper-subtle)]/40 border border-[var(--line)]/50" viewBox="0 0 440 200">
             <circle cx="140" cy="100" r="45" fill="none" stroke="var(--ink)" strokeWidth="4" strokeDasharray="8,6" />
             <circle cx="140" cy="100" r="15" fill="var(--paper-subtle)" stroke="var(--ink)" strokeWidth="1.5" />
             <text x="140" y="104" textAnchor="middle" fontSize="7" fill="var(--gray)" fontFamily="monospace">Rädchen</text>
@@ -2131,7 +2577,7 @@ export function UniversalInteractiveWorkbench({
         const curX = 50 + pA * 340;
         const curY = pA < 0.5 ? 160 - (pA / 0.5) * 110 : 50 + ((pA - 0.5) / 0.5) * 110;
         return (
-          <svg className="w-full h-52 rounded bg-[var(--paper-subtle)]/40 border border-[var(--line)]/50" viewBox="0 0 440 200">
+          <svg className="w-full h-64 sm:h-72 rounded bg-[var(--paper-subtle)]/40 border border-[var(--line)]/50" viewBox="0 0 440 200">
             <polygon points="50,165 220,50 390,165" fill="none" stroke="var(--ink)" strokeWidth="2" strokeOpacity="0.3" />
             <line x1="30" y1="165" x2="410" y2="165" stroke="var(--ink)" strokeWidth="1.5" />
             <circle cx="50" cy="165" r="4" fill="var(--ink)" />
@@ -2152,7 +2598,7 @@ export function UniversalInteractiveWorkbench({
       // 40. 德语：音步格律波形 (Metrum)
       case "metrum": {
         return (
-          <svg className="w-full h-52 rounded bg-[var(--paper-subtle)]/40 border border-[var(--line)]/50" viewBox="0 0 440 200">
+          <svg className="w-full h-64 sm:h-72 rounded bg-[var(--paper-subtle)]/40 border border-[var(--line)]/50" viewBox="0 0 440 200">
             <text x="220" y="40" textAnchor="middle" fontSize="12" fontWeight="bold" fill="var(--ink)" fontFamily="monospace">
               Versfuß: {data.paramAValueDisplay}
             </text>
@@ -2169,7 +2615,7 @@ export function UniversalInteractiveWorkbench({
       case "brecht": {
         const vEffekt = paramB > 45;
         return (
-          <svg className="w-full h-52 rounded bg-[var(--paper-subtle)]/40 border border-[var(--line)]/50" viewBox="0 0 440 200">
+          <svg className="w-full h-64 sm:h-72 rounded bg-[var(--paper-subtle)]/40 border border-[var(--line)]/50" viewBox="0 0 440 200">
             <line x1="50" y1="30" x2="390" y2="30" stroke="var(--ink)" strokeWidth="2" />
             {[80, 150, 220, 290, 360].map((x, i) => (
               <circle key={i} cx={x} cy="30" r="6" fill="#facc15" stroke="var(--ink)" strokeWidth="1" />
@@ -2192,7 +2638,7 @@ export function UniversalInteractiveWorkbench({
       // 42. 德语：卡夫卡卧室平面图 (Kafka)
       case "kafka": {
         return (
-          <svg className="w-full h-52 rounded bg-[var(--paper-subtle)]/40 border border-[var(--line)]/50" viewBox="0 0 440 200">
+          <svg className="w-full h-64 sm:h-72 rounded bg-[var(--paper-subtle)]/40 border border-[var(--line)]/50" viewBox="0 0 440 200">
             <rect x="120" y="30" width="200" height="140" fill="none" stroke="var(--ink)" strokeWidth="2.5" />
             <text x="220" y="22" textAnchor="middle" fontSize="9" fontWeight="bold" fill="var(--ink)" fontFamily="monospace">Gregor Samsas Zimmer</text>
 
@@ -2215,7 +2661,7 @@ export function UniversalInteractiveWorkbench({
       // 43. 德语：博尔歇特废墟文学零度语言 (Trümmerliteratur)
       case "borchert": {
         return (
-          <svg className="w-full h-52 rounded bg-[var(--paper-subtle)]/40 border border-[var(--line)]/50" viewBox="0 0 440 200">
+          <svg className="w-full h-64 sm:h-72 rounded bg-[var(--paper-subtle)]/40 border border-[var(--line)]/50" viewBox="0 0 440 200">
             <polygon points="60,170 90,80 110,130 140,60 170,170" fill="#475569" />
             <polygon points="270,170 300,90 330,140 360,70 390,170" fill="#334155" />
             <rect x="190" y="60" width="60" height="110" fill="#1e293b" stroke="var(--ink)" strokeWidth="2" />
@@ -2229,7 +2675,7 @@ export function UniversalInteractiveWorkbench({
       // 44. 德语：图尔敏论证模型 (Toulmin)
       case "toulmin": {
         return (
-          <svg className="w-full h-52 rounded bg-[var(--paper-subtle)]/40 border border-[var(--line)]/50" viewBox="0 0 440 200">
+          <svg className="w-full h-64 sm:h-72 rounded bg-[var(--paper-subtle)]/40 border border-[var(--line)]/50" viewBox="0 0 440 200">
             <rect x="40" y="45" width="85" height="40" rx="3" fill="var(--paper)" stroke="var(--ink)" strokeWidth="1.5" />
             <text x="82" y="68" textAnchor="middle" fontSize="9" fontWeight="bold" fill="var(--ink)" fontFamily="monospace">Datum (Fakt)</text>
 
@@ -2255,7 +2701,7 @@ export function UniversalInteractiveWorkbench({
       // 默认精密科学测量刻度与响应示波器
       default: {
         return (
-          <svg className="w-full h-52 rounded bg-[var(--paper-subtle)]/40 border border-[var(--line)]/50" viewBox="0 0 440 200">
+          <svg className="w-full h-64 sm:h-72 rounded bg-[var(--paper-subtle)]/40 border border-[var(--line)]/50" viewBox="0 0 440 200">
             <line x1="40" y1="20" x2="40" y2="170" stroke="currentColor" strokeOpacity="0.2" strokeWidth="1.5" />
             <line x1="40" y1="170" x2="410" y2="170" stroke="currentColor" strokeOpacity="0.2" strokeWidth="1.5" />
             <line x1="40" y1="95" x2="410" y2="95" stroke="currentColor" strokeOpacity="0.1" strokeDasharray="3,3" />
@@ -2276,10 +2722,26 @@ export function UniversalInteractiveWorkbench({
     }
   };
 
+
+  const handleExport = () => {
+    const text = `[${sim.fach} Labor] ${de ? sim.titleDE : sim.titleZH}
+- ${de ? data.paramALabelDE : data.paramALabelZH}: ${data.paramAValueDisplay}
+- ${de ? data.paramBLabelDE : data.paramBLabelZH}: ${data.paramBValueDisplay}
+- ${de ? data.rateLabelDE : data.rateLabelZH}: ${data.rateValue}
+- ${de ? data.subLabelDE : data.subLabelZH}: ${data.subValue}
+- Erkenntnis: ${de ? data.insightDE : data.insightZH}`;
+    if (onExportFinding) {
+      onExportFinding(text);
+    } else {
+      navigator.clipboard.writeText(text);
+      alert(de ? "Messdaten in Zwischenablage kopiert!" : "实验测定数据已复制到剪贴板！");
+    }
+  };
+
   return (
-    <div className="flex flex-col gap-5 rounded-lg border border-[var(--line)] bg-[var(--surface)] p-5">
-      {/* 顶部标题栏与考点指标 */}
-      <div className="flex flex-wrap items-center justify-between border-b border-[var(--line)] pb-3">
+    <div className="flex flex-col gap-4 rounded-lg border border-[var(--line)] bg-[var(--surface)] p-5 transition-all">
+      {/* 顶部标题栏与三维 Tab 导航 */}
+      <div className="flex flex-col md:flex-row md:items-center justify-between gap-3 border-b border-[var(--line)] pb-3">
         <div>
           <div className="flex items-center gap-2">
             <span className="font-mono text-xs uppercase font-semibold text-[var(--accent)] px-2 py-0.5 rounded border border-[var(--accent)]/30 bg-[var(--accent)]/5">
@@ -2288,96 +2750,398 @@ export function UniversalInteractiveWorkbench({
             <span className="font-mono text-xs px-2 py-0.5 rounded border border-[var(--line)] bg-[var(--paper-subtle)] text-[var(--ink)]">
               {sim.stufe}
             </span>
+            {sim.formula && (
+              <span className="hidden sm:inline-block font-mono text-[11px] text-[var(--gray)] bg-[var(--paper-subtle)]/70 px-2 py-0.5 rounded border border-[var(--line)]/50">
+                {sim.formula}
+              </span>
+            )}
           </div>
           <h2 className="font-serif text-lg font-bold text-[var(--ink)] mt-1.5">
             {de ? sim.titleDE : sim.titleZH}
           </h2>
         </div>
 
-        {/* 关键测量读数卡片 */}
-        <div className="flex items-center gap-3">
-          <div className="rounded border border-[var(--line)] bg-[var(--paper-subtle)] px-3 py-1.5 text-right font-mono">
-            <span className="text-[10px] text-[var(--gray)] block">
-              {de ? data.rateLabelDE : data.rateLabelZH}
-            </span>
-            <span className="text-sm font-bold text-[var(--ink)]">
-              {data.rateValue}
-            </span>
-          </div>
-          <div className="rounded border border-[var(--line)] bg-[var(--paper-subtle)] px-3 py-1.5 text-right font-mono">
-            <span className="text-[10px] text-[var(--gray)] block">
-              {de ? data.subLabelDE : data.subLabelZH}
-            </span>
-            <span className="text-xs font-semibold text-[var(--accent)]">
-              {data.subValue}
-            </span>
-          </div>
+        {/* 顶部三大学习维度选项卡 */}
+        <div className="flex items-center bg-[var(--paper-subtle)] p-1 rounded-md border border-[var(--line)] text-xs font-mono">
+          <button
+            type="button"
+            onClick={() => setActiveTab("workbench")}
+            className={`px-3 py-1.5 rounded transition-all flex items-center gap-1.5 cursor-pointer ${
+              activeTab === "workbench"
+                ? "bg-[var(--surface)] text-[var(--accent)] font-bold shadow-xs border border-[var(--line)]/50"
+                : "text-[var(--gray)] hover:text-[var(--ink)]"
+            }`}
+          >
+            <span>🔬</span>
+            <span>{de ? "Interaktives Labor" : "互动实验台"}</span>
+          </button>
+          <button
+            type="button"
+            onClick={() => setActiveTab("causality")}
+            className={`px-3 py-1.5 rounded transition-all flex items-center gap-1.5 cursor-pointer ${
+              activeTab === "causality"
+                ? "bg-[var(--surface)] text-[var(--accent)] font-bold shadow-xs border border-[var(--line)]/50"
+                : "text-[var(--gray)] hover:text-[var(--ink)]"
+            }`}
+          >
+            <span>📖</span>
+            <span>{de ? "Kausalität & Phänomen" : "因果推演与机理"}</span>
+          </button>
+          <button
+            type="button"
+            onClick={() => setActiveTab("klausur")}
+            className={`px-3 py-1.5 rounded transition-all flex items-center gap-1.5 cursor-pointer ${
+              activeTab === "klausur"
+                ? "bg-[var(--surface)] text-[var(--accent)] font-bold shadow-xs border border-[var(--line)]/50"
+                : "text-[var(--gray)] hover:text-[var(--ink)]"
+            }`}
+          >
+            <span>📝</span>
+            <span>{de ? "Klausur & EHZ-Standard" : "会考真题与评分标准"}</span>
+          </button>
         </div>
       </div>
 
-      {/* 中部专属真实 SVG 交互仿真画布 */}
-      {renderArchetypeCanvas()}
-
-      {/* 底部双滑动变阻器 / 参量调节器 */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 rounded-lg border border-[var(--line)]/60 bg-[var(--paper-subtle)]/40 p-4">
-        {/* 控制参数 A */}
-        <div className="space-y-1.5 font-mono">
-          <div className="flex justify-between items-center text-xs">
-            <span className="text-[var(--ink)] font-medium">
-              {de ? data.paramALabelDE : data.paramALabelZH}
+      {/* ===================================================================== */}
+      {/* TAB 1: 🔬 互动实验台 (Labor-Workbench) */}
+      {/* ===================================================================== */}
+      {activeTab === "workbench" && (
+        <div className="flex flex-col gap-4">
+          {/* 预设工况快速直达选择条 (Presets) */}
+          <div className="flex flex-wrap items-center gap-2 p-2.5 rounded-lg border border-[var(--line)]/60 bg-[var(--paper-subtle)]/40">
+            <span className="text-xs font-mono text-[var(--gray)] mr-1 flex items-center gap-1">
+              ⚡ <span>{de ? "Szenarien / Presets:" : "典型工况直达:"}</span>
             </span>
-            <span className="text-[var(--accent)] font-bold">
-              {data.paramAValueDisplay}
-            </span>
+            {pedagogy.presets.map((p) => {
+              const isActive = paramA === p.paramA && paramB === p.paramB;
+              return (
+                <button
+                  key={p.id}
+                  type="button"
+                  onClick={() => handleApplyPreset(p)}
+                  title={de ? p.descDE : p.descZH}
+                  className={`text-xs font-mono px-3 py-1 rounded border transition-all cursor-pointer ${
+                    isActive
+                      ? "border-[var(--accent)] bg-[var(--surface)] text-[var(--accent)] font-bold shadow-xs"
+                      : "border-[var(--line)] bg-[var(--surface)]/70 text-[var(--ink)] hover:border-[var(--accent)]/50 hover:bg-[var(--surface)]"
+                  }`}
+                >
+                  {de ? p.nameDE : p.nameZH}
+                </button>
+              );
+            })}
+            <button
+              type="button"
+              onClick={() => {
+                setParamA(50);
+                setParamB(50);
+              }}
+              className="text-xs font-mono px-2 py-1 rounded text-[var(--gray)] hover:text-[var(--ink)] ml-auto cursor-pointer"
+            >
+              ↺ {de ? "Reset (50/50)" : "重置基准"}
+            </button>
           </div>
-          <input
-            type="range"
-            min="0"
-            max="100"
-            value={paramA}
-            onChange={(e) => setParamA(Number(e.target.value))}
-            className="w-full h-1.5 bg-[var(--line)] rounded-lg appearance-none cursor-pointer accent-[var(--accent)]"
-          />
-        </div>
 
-        {/* 控制参数 B */}
-        <div className="space-y-1.5 font-mono">
-          <div className="flex justify-between items-center text-xs">
-            <span className="text-[var(--ink)] font-medium">
-              {de ? data.paramBLabelDE : data.paramBLabelZH}
-            </span>
-            <span className="text-[var(--accent)] font-bold">
-              {data.paramBValueDisplay}
-            </span>
+          {/* 仿真画布与悬浮 HUD 状态指示区 */}
+          <div className="relative rounded-lg border border-[var(--line)] bg-[var(--surface)] overflow-hidden">
+            {/* 顶部悬浮 HUD 读数与状态徽标 */}
+            <div className="p-3 border-b border-[var(--line)]/60 bg-[var(--paper-subtle)]/30 flex flex-wrap items-center justify-between gap-3">
+              <div className="flex items-center gap-2">
+                <span
+                  className={`inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-[11px] font-mono font-medium border ${
+                    taskAchieved
+                      ? "border-emerald-500/30 bg-emerald-50 text-emerald-700 dark:bg-emerald-950/40 dark:text-emerald-300"
+                      : "border-[var(--accent)]/30 bg-[var(--accent)]/5 text-[var(--accent)]"
+                  }`}
+                >
+                  <span className={`w-1.5 h-1.5 rounded-full ${taskAchieved ? "bg-emerald-500" : "bg-[var(--accent)] animate-pulse"}`} />
+                  {taskAchieved
+                    ? de
+                      ? "Zielzustand erreicht"
+                      : "达成目标工况"
+                    : de
+                    ? "In Anpassung..."
+                    : "运行调整中"}
+                </span>
+                <span className="text-xs font-mono text-[var(--gray)] hidden sm:inline">
+                  A: {data.paramAValueDisplay} | B: {data.paramBValueDisplay}
+                </span>
+              </div>
+
+              {/* 关键测定物理量读数 */}
+              <div className="flex items-center gap-2 font-mono">
+                <div className="rounded border border-[var(--line)] bg-[var(--surface)] px-2.5 py-1 text-right">
+                  <span className="text-[10px] text-[var(--gray)] block">
+                    {de ? data.rateLabelDE : data.rateLabelZH}
+                  </span>
+                  <span className="text-xs font-bold text-[var(--ink)]">
+                    {data.rateValue}
+                  </span>
+                </div>
+                <div className="rounded border border-[var(--line)] bg-[var(--surface)] px-2.5 py-1 text-right">
+                  <span className="text-[10px] text-[var(--gray)] block">
+                    {de ? data.subLabelDE : data.subLabelZH}
+                  </span>
+                  <span className="text-xs font-semibold text-[var(--accent)]">
+                    {data.subValue}
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            {/* 核心视觉高保真 SVG 仿真工作台 */}
+            <div className="p-2 sm:p-4 flex items-center justify-center bg-[var(--surface)]">
+              {renderArchetypeCanvas()}
+            </div>
           </div>
-          <input
-            type="range"
-            min="0"
-            max="100"
-            value={paramB}
-            onChange={(e) => setParamB(Number(e.target.value))}
-            className="w-full h-1.5 bg-[var(--line)] rounded-lg appearance-none cursor-pointer accent-[var(--accent)]"
-          />
-        </div>
-      </div>
 
-      {/* 核心考点深度解剖与数据导出 */}
-      <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 border-t border-[var(--line)] pt-3 text-xs">
-        <div className="font-sans text-[var(--gray)] leading-relaxed flex-1">
-          <span className="font-semibold text-[var(--ink)] font-mono mr-1.5">
-            {de ? "Klausur-Erkenntnis:" : "会考原题命题陷阱与考点剖析:"}
-          </span>
-          {de ? data.insightDE : data.insightZH}
-        </div>
+          {/* 双通道精密微调滑块与微调步进按钮 */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 rounded-lg border border-[var(--line)]/70 bg-[var(--paper-subtle)]/30 p-4">
+            {/* 控制参数 A */}
+            <div className="space-y-2 font-mono">
+              <div className="flex justify-between items-center text-xs">
+                <span className="text-[var(--ink)] font-semibold flex items-center gap-1.5">
+                  <span className="w-2 h-2 rounded-full bg-[var(--accent)]" />
+                  {de ? data.paramALabelDE : data.paramALabelZH}
+                </span>
+                <span className="text-[var(--accent)] font-bold px-2 py-0.5 rounded bg-[var(--surface)] border border-[var(--line)]">
+                  {data.paramAValueDisplay}
+                </span>
+              </div>
+              <div className="flex items-center gap-2">
+                <button
+                  type="button"
+                  onClick={() => handleStepA(-5)}
+                  className="w-7 h-7 rounded border border-[var(--line)] bg-[var(--surface)] hover:border-[var(--accent)] text-xs font-bold text-[var(--ink)] cursor-pointer flex items-center justify-center shrink-0"
+                  title="-5"
+                >
+                  -
+                </button>
+                <input
+                  type="range"
+                  min="0"
+                  max="100"
+                  value={paramA}
+                  onChange={(e) => setParamA(Number(e.target.value))}
+                  className="w-full h-2 bg-[var(--line)] rounded-lg appearance-none cursor-pointer accent-[var(--accent)]"
+                />
+                <button
+                  type="button"
+                  onClick={() => handleStepA(+5)}
+                  className="w-7 h-7 rounded border border-[var(--line)] bg-[var(--surface)] hover:border-[var(--accent)] text-xs font-bold text-[var(--ink)] cursor-pointer flex items-center justify-center shrink-0"
+                  title="+5"
+                >
+                  +
+                </button>
+              </div>
+            </div>
 
-        <button
-          type="button"
-          onClick={handleExport}
-          className="whitespace-nowrap px-3 py-1.5 font-mono text-xs rounded border border-[var(--line)] hover:border-[var(--accent)] hover:text-[var(--accent)] bg-[var(--surface)] transition-colors self-end sm:self-auto cursor-pointer"
-        >
-          {de ? "Daten kopieren" : "导出测定数据"}
-        </button>
-      </div>
+            {/* 控制参数 B */}
+            <div className="space-y-2 font-mono">
+              <div className="flex justify-between items-center text-xs">
+                <span className="text-[var(--ink)] font-semibold flex items-center gap-1.5">
+                  <span className="w-2 h-2 rounded-full bg-[var(--ink)]" />
+                  {de ? data.paramBLabelDE : data.paramBLabelZH}
+                </span>
+                <span className="text-[var(--accent)] font-bold px-2 py-0.5 rounded bg-[var(--surface)] border border-[var(--line)]">
+                  {data.paramBValueDisplay}
+                </span>
+              </div>
+              <div className="flex items-center gap-2">
+                <button
+                  type="button"
+                  onClick={() => handleStepB(-5)}
+                  className="w-7 h-7 rounded border border-[var(--line)] bg-[var(--surface)] hover:border-[var(--accent)] text-xs font-bold text-[var(--ink)] cursor-pointer flex items-center justify-center shrink-0"
+                  title="-5"
+                >
+                  -
+                </button>
+                <input
+                  type="range"
+                  min="0"
+                  max="100"
+                  value={paramB}
+                  onChange={(e) => setParamB(Number(e.target.value))}
+                  className="w-full h-2 bg-[var(--line)] rounded-lg appearance-none cursor-pointer accent-[var(--accent)]"
+                />
+                <button
+                  type="button"
+                  onClick={() => handleStepB(+5)}
+                  className="w-7 h-7 rounded border border-[var(--line)] bg-[var(--surface)] hover:border-[var(--accent)] text-xs font-bold text-[var(--ink)] cursor-pointer flex items-center justify-center shrink-0"
+                  title="+5"
+                >
+                  +
+                </button>
+              </div>
+            </div>
+          </div>
+
+          {/* 🎯 探究挑战任务卡片 (Challenge Task) */}
+          <div className="rounded-lg border border-[var(--line)] bg-[var(--surface)] p-3.5 flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs">
+            <div className="space-y-1">
+              <div className="flex items-center gap-2 font-mono">
+                <span className="font-bold text-[var(--ink)]">🎯 {de ? "Forschungsauftrag:" : "本实验探究挑战目标:"}</span>
+                <span
+                  className={`px-2 py-0.5 rounded text-[11px] font-bold ${
+                    taskAchieved
+                      ? "bg-emerald-100 text-emerald-800 dark:bg-emerald-950 dark:text-emerald-300"
+                      : "bg-amber-100 text-amber-800 dark:bg-amber-950 dark:text-amber-300"
+                  }`}
+                >
+                  {taskAchieved ? (de ? "✓ Erreicht" : "✓ 成功达成") : (de ? "⏳ In Arbeit" : "⏳ 探索调整中")}
+                </span>
+              </div>
+              <p className="text-[var(--gray)] leading-relaxed">
+                {taskAchieved ? (de ? pedagogy.task.successMsgDE : pedagogy.task.successMsgZH) : (de ? pedagogy.task.goalDE : pedagogy.task.goalZH)}
+              </p>
+            </div>
+
+            <button
+              type="button"
+              onClick={handleExport}
+              className="whitespace-nowrap px-3.5 py-2 font-mono text-xs rounded border border-[var(--line)] hover:border-[var(--accent)] hover:text-[var(--accent)] bg-[var(--paper-subtle)] transition-colors self-end sm:self-auto cursor-pointer"
+            >
+              {de ? "Daten kopieren" : "导出测定数据"}
+            </button>
+          </div>
+
+          {/* 考纲考点解剖条 */}
+          <div className="rounded border border-[var(--line)]/50 bg-[var(--paper-subtle)]/40 p-3 text-xs font-sans text-[var(--gray)] leading-relaxed">
+            <span className="font-semibold text-[var(--ink)] font-mono mr-1.5">
+              {de ? "Klausur-Erkenntnis:" : "会考原题命题陷阱与考点剖析:"}
+            </span>
+            {de ? data.insightDE : data.insightZH}
+          </div>
+        </div>
+      )}
+
+      {/* ===================================================================== */}
+      {/* TAB 2: 📖 现象推演与微观因果 (Phänomen & Kausalität) */}
+      {/* ===================================================================== */}
+      {activeTab === "causality" && (
+        <div className="flex flex-col gap-4">
+          {/* 1. 因果动态推演链 */}
+          <div className="rounded-lg border border-[var(--line)] bg-[var(--surface)] p-4 space-y-2">
+            <h3 className="font-serif text-sm font-bold text-[var(--ink)] flex items-center gap-2">
+              <span className="text-[var(--accent)] font-mono">01.</span>
+              {de ? "Phänomenologische Kausalkette (Wenn-Dann-Analyse)" : "动态因果推演链 (Wenn-Dann 推理)"}
+            </h3>
+            <div className="rounded bg-[var(--paper-subtle)]/60 p-3 text-xs font-sans text-[var(--ink)] leading-relaxed border border-[var(--line)]/50">
+              <p className="mb-2">
+                <strong className="font-mono text-[var(--accent)]">DE: </strong>
+                {pedagogy.causality.phenomenonDE}
+              </p>
+              <p>
+                <strong className="font-mono text-[var(--accent)]">ZH: </strong>
+                {pedagogy.causality.phenomenonZH}
+              </p>
+            </div>
+          </div>
+
+          {/* 2. 微观本质机制剖析 */}
+          <div className="rounded-lg border border-[var(--line)] bg-[var(--surface)] p-4 space-y-2">
+            <h3 className="font-serif text-sm font-bold text-[var(--ink)] flex items-center gap-2">
+              <span className="text-[var(--accent)] font-mono">02.</span>
+              {de ? "Mikroskopischer Mechanismus & Didaktische Erklärung" : "微观本质机制与学科底层逻辑"}
+            </h3>
+            <div className="rounded bg-[var(--paper-subtle)]/60 p-3 text-xs font-sans text-[var(--gray)] leading-relaxed border border-[var(--line)]/50 space-y-2">
+              <p className="text-[var(--ink)]">
+                <span className="font-bold text-[var(--ink)] block mb-1 font-mono">Wissenschaftliche Erklärung:</span>
+                {de ? pedagogy.causality.mechanismDE : pedagogy.causality.mechanismZH}
+              </p>
+            </div>
+          </div>
+
+          {/* 3. 核心专业术语表 */}
+          <div className="rounded-lg border border-[var(--line)] bg-[var(--surface)] p-4 space-y-3">
+            <h3 className="font-serif text-sm font-bold text-[var(--ink)] flex items-center gap-2">
+              <span className="text-[var(--accent)] font-mono">03.</span>
+              {de ? "Fachbegriffe & Vokabular" : "官方考纲核心术语与定义"}
+            </h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+              {pedagogy.causality.fachbegriffe.map((fb, idx) => (
+                <div
+                  key={idx}
+                  className="rounded border border-[var(--line)] bg-[var(--paper-subtle)]/40 p-2.5 text-xs font-mono space-y-1"
+                >
+                  <div className="flex items-center justify-between">
+                    <span className="font-bold text-[var(--ink)]">{fb.term}</span>
+                    <span className="text-[var(--accent)] text-[11px] font-sans">{fb.zh}</span>
+                  </div>
+                  <p className="text-[var(--gray)] font-sans text-[11px] leading-relaxed">
+                    {fb.def}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* ===================================================================== */}
+      {/* TAB 3: 📝 会考真题与采分标准 (Klausur & EHZ-Standard) */}
+      {/* ===================================================================== */}
+      {activeTab === "klausur" && (
+        <div className="flex flex-col gap-4">
+          {/* 会考原题题干与分值 */}
+          <div className="rounded-lg border border-[var(--line)] bg-[var(--surface)] p-4 space-y-3">
+            <div className="flex items-center justify-between flex-wrap gap-2">
+              <span className="font-mono text-xs uppercase px-2 py-0.5 rounded border border-[var(--accent)]/40 text-[var(--accent)] font-bold">
+                NRW Klausuraufgabe · {pedagogy.klausur.afb}
+              </span>
+              <span className="font-mono text-xs font-bold text-[var(--ink)] bg-[var(--paper-subtle)] px-2 py-0.5 rounded border border-[var(--line)]">
+                {pedagogy.klausur.points} Punkte
+              </span>
+            </div>
+            <div className="text-xs font-sans text-[var(--ink)] leading-relaxed space-y-1.5 p-3 rounded bg-[var(--paper-subtle)]/60 border border-[var(--line)]/50">
+              <p className="font-semibold text-[var(--ink)]">
+                <span className="font-mono text-[var(--accent)] mr-1">Aufgabe:</span>
+                {de ? pedagogy.klausur.promptDE : pedagogy.klausur.promptZH}
+              </p>
+            </div>
+          </div>
+
+          {/* 阅卷评分细则 (Erwartungshorizont - EHZ) */}
+          <div className="rounded-lg border border-[var(--line)] bg-[var(--surface)] p-4 space-y-2">
+            <h3 className="font-serif text-sm font-bold text-[var(--ink)] flex items-center gap-2">
+              <span className="text-emerald-600 font-mono">EHZ</span>
+              {de ? "Erwartungshorizont (Kriterienkatalog)" : "官方阅卷采分要点 (Erwartungshorizont)"}
+            </h3>
+            <ul className="space-y-2 text-xs font-sans text-[var(--gray)]">
+              {(de ? pedagogy.klausur.erwartungshorizontDE : pedagogy.klausur.erwartungshorizontZH).map((item, idx) => (
+                <li key={idx} className="flex items-start gap-2">
+                  <span className="font-mono font-bold text-[var(--accent)] shrink-0 mt-0.5">
+                    [{idx + 1}]
+                  </span>
+                  <span className="leading-relaxed text-[var(--ink)]">{item}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* 15分满分答题模版 (Formulierungshilfe) */}
+          <div className="rounded-lg border border-[var(--line)] bg-[var(--surface)] p-4 space-y-2">
+            <h3 className="font-serif text-sm font-bold text-[var(--ink)] flex items-center gap-2">
+              <span className="text-[var(--accent)] font-mono">15 NP</span>
+              {de ? "Muster-Formulierung (Oberstufe)" : "15分满分德语答题模版与得分话术"}
+            </h3>
+            <blockquote className="rounded bg-[var(--paper-subtle)] p-3 text-xs font-mono text-[var(--ink)] border-l-2 border-[var(--accent)] leading-relaxed italic">
+              "{pedagogy.klausur.formulierungshilfe}"
+            </blockquote>
+          </div>
+
+          {/* 中文考点点拨与得分秘籍 */}
+          <div className="rounded-lg border border-amber-500/30 bg-amber-500/5 p-4 space-y-1.5 text-xs">
+            <h4 className="font-bold text-amber-900 dark:text-amber-300 flex items-center gap-1.5">
+              <span>💡</span>
+              <span>得分陷阱与审题破局点拨 (Tipps & Stolpersteine):</span>
+            </h4>
+            <p className="text-[var(--ink)] leading-relaxed">
+              {pedagogy.klausur.chineseComment}
+            </p>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
