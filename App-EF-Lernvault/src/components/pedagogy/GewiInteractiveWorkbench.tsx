@@ -8,7 +8,7 @@
 // 6. 🎭 布莱希特史诗剧间离透镜 (Brecht-V-Effekt)：共情 vs 间离冷峻反思、四重间离机制交互触发
 // 7. 🔍 会考原典引导做题台 (Klausur-Scaffolding)：论点扫描 → 逻辑分类 → 15分句式拼装
 
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect } from "react";
 import type { Lang } from "../../i18n";
 import type { SimEntry } from "../../modules/laborRegistry";
 
@@ -294,8 +294,292 @@ const GEWI_BALANCE_CASES: Record<string, BalanceCaseData> = {
     werturteilGuideZH: "价值裁决 (Werturteil)：援引基本法第20条社会国原则与第1条人尊，论证任何削减必须设立人道底线。",
     formulierungshilfe: "Unter dem Kriterium der wirtschaftlichen Effizienz lassen sich Deregulierungen zur Stärkung der internationalen Wettbewerbsfähigkeit begründen. Unter dem normativ übergeordneten Kriterium der sozialen Gerechtigkeit (Art. 20 GG) erweist sich jedoch eine radikale Beschneidung existenzieller Sicherungssysteme als verfassungsrechtlich illegitim.",
     chineseComment: "满分采分点：社科大题必须分别写出【Sachurteil (效率/就业)】与【Werturteil (正义/宪法)】，最后在 Fazit 中做出有优先级的价值权衡！"
+  }  ,
+  "sowi-mindestlohn": {
+    titleDE: "Gesetzlicher Mindestlohn: Soziale Gerechtigkeit vs. Marktallokation",
+    titleZH: "法定最低工资制度：劳动者生存尊严 vs. 市场出清与企业雇佣成本",
+    questionDE: "Sollte der gesetzliche Mindestlohn zur Armutsbekämpfung weiter angehoben werden?",
+    questionZH: "为防止工作贫困（Working Poor），德国是否应进一步大幅调高法定最低工资？",
+    labelProDE: "Bedarfsgerechtigkeit & Kaufkraft (Pro)",
+    labelProZH: "生存与分配正义 / 提振内需购买力",
+    labelContraDE: "Marktfreiheit & Arbeitsplatzrisiko (Contra)",
+    labelContraZH: "市场自由配置 / 防范企业裁员与转嫁成本",
+    weights: [
+      {
+        id: "ml-p1",
+        side: "pro",
+        textDE: "Schutz vor Armut trotz Vollzeitarbeit (Working Poor) und Sicherung des soziokulturellen Existenzminimums.",
+        textZH: "杜绝‘工作仍贫困’现象，保障劳动者维持体面生活的最低社会文化生活线。",
+        weight: 3,
+        categoryDE: "Sozialstaatsgebot",
+        categoryZH: "社会国人道底线"
+      },
+      {
+        id: "ml-p2",
+        side: "pro",
+        textDE: "Stärkung der Binnennachfrage durch höhere Einkommen in unteren Konsumschichten mit hoher Konsumquote.",
+        textZH: "底层群体边际消费倾向高，提高最低工资可直接拉动国内消费循环与宏观总需求。",
+        weight: 2,
+        categoryDE: "Nachfragepolitik",
+        categoryZH: "凯恩斯需求效应"
+      },
+      {
+        id: "ml-c1",
+        side: "contra",
+        textDE: "Verletzung der Tarifautonomie (Art. 9 Abs. 3 GG): Staatlicher Eingriff in freie Lohnfindung.",
+        textZH: "冲击薪酬自主权（基本法第9条第3款）：国家强行行政干预工会与雇主协会自主议价。",
+        weight: 2,
+        categoryDE: "Tarifautonomie",
+        categoryZH: "宪法劳资自治原则"
+      },
+      {
+        id: "ml-c2",
+        side: "contra",
+        textDE: "Gefahr von Arbeitsplatzabbau und Substitution von Niedrigqualifizierten durch Automatisierung.",
+        textZH: "劳动力成本跃升可能迫使中小企业裁员、外包或加速以机器替代低技能劳动力。",
+        weight: 2,
+        categoryDE: "Beschaeftigungseffekte",
+        categoryZH: "新古典就业挤出"
+      }
+    ],
+    sachurteilGuideDE: "Sachurteil: Empirische Beschäftigungseffekte und Kaufkraftentwicklung anhand von Bundesbank-/DIW-Daten prüfen.",
+    sachurteilGuideZH: "事实裁决 (Sachurteil)：引用德国央行及 DIW 实证数据，评估最低工资对低端就业岗位与通胀的具体冲击。",
+    werturteilGuideDE: "Werturteil: Spannung zwischen verfassungsrechtlicher Tarifautonomie und sozialstaatlicher Fürsorgepflicht abwägen.",
+    werturteilGuideZH: "价值裁决 (Werturteil)：权衡基本法第9条劳资自治自由与第20条社会国托底人尊义务的规范优先级。",
+    formulierungshilfe: "Während ökonomisch die Gefahr allokativer Verzerrungen und möglicher Rationalisierungsschübe im Niedriglohnsektor besteht, überwiegt verfassungsrechtlich der normative Auftrag des Sozialstaatsgebots, Arbeitnehmer vor existenzbedrohender Ausbeutung zu schützen.",
+    chineseComment: "满分破题点：切忌只谈‘好不好’，先从 Sachurteil（实证就业效应）切入，再上升到 Werturteil（社会国 vs. 劳资自治自由）！"
+  },
+  "sowi-oekosteuer": {
+    titleDE: "CO2-Bepreisung und Ökosteuer: Marktanreiz vs. Verteilungsgerechtigkeit",
+    titleZH: "碳税与绿色生态税改革：外部性内部化 vs. 低收入家庭能源负担",
+    questionDE: "Ist ein stetig steigender CO2-Preis das beste Leitinstrument für den klimaneutralen Umbau?",
+    questionZH: "持续攀升的碳价格是否应作为德国实现气候中和的首要核心调控杠杆？",
+    labelProDE: "Marktbasierte Allokation (Pigou-Prinzip)",
+    labelProZH: "市场价格信号 / 庇古税修正外部性",
+    labelContraDE: "Regressive Belastung (Soziale Härte)",
+    labelContraZH: "累退税收痛点 / 弱势群体生活成本挤压",
+    weights: [
+      {
+        id: "oe-p1",
+        side: "pro",
+        textDE: "Internalsierung externer Kosten: Preissignal setzt stärkste Anreize für Innovation und emissionsarme Technologien.",
+        textZH: "负外部性内部化：真实反映环境代价，利用价格杠杆倒逼企业技术创新与绿色转型。",
+        weight: 3,
+        categoryDE: "Marktökonomie",
+        categoryZH: "环境经济学理论"
+      },
+      {
+        id: "oe-p2",
+        side: "pro",
+        textDE: "Generationengerechtigkeit (BVerfG Klimabeschluss 2021): Schutz der Lebensgrundlagen künftiger Generationen.",
+        textZH: "跨代正义（德国联邦宪法法院2021裁决）：今天减排是为了捍卫后代人的根本自由生存权利。",
+        weight: 3,
+        categoryDE: "Verfassungsrang (Art. 20a GG)",
+        categoryZH: "宪法基本法20a条"
+      },
+      {
+        id: "oe-c1",
+        side: "contra",
+        textDE: "Regressive Wirkung: Höhere Heiz- und Kraftstoffkosten belasten untere Einkommensschichten prozentual drastischer.",
+        textZH: "严重的累退效应：燃气与燃油涨价占低收入家庭支出比例极高，形成‘冷暖贫困’。",
+        weight: 2,
+        categoryDE: "Verteilungsgerechtigkeit",
+        categoryZH: "分配公平考量"
+      },
+      {
+        id: "oe-c2",
+        side: "contra",
+        textDE: "Gefahr der Deindustrialisierung und von Carbon Leakage bei unzureichendem EU-Grenzausgleich.",
+        textZH: "若无完善的碳边境调节机制，过高的能源价格将导致本土高耗能制造业外流海外。",
+        weight: 2,
+        categoryDE: "Standortsicherung",
+        categoryZH: "产业与区位安全"
+      }
+    ],
+    sachurteilGuideDE: "Sachurteil: CO2-Vermeidungseffizienz und Einnahmenverwendung (Klimageld-Rückerstattung) bewerten.",
+    sachurteilGuideZH: "事实裁决：核算碳减排实效，并检验通过‘气候红利（Klimageld）’返还民众的行政可行性。",
+    werturteilGuideDE: "Werturteil: Abwägung zwischen ökologischer Generationenverantwortung (Art. 20a GG) und sozialer Teilhabe.",
+    werturteilGuideZH: "价值裁决：在生态代际生存权与当代弱势群体的基本生活尊严之间寻找制度平衡。",
+    formulierungshilfe: "Ein CO2-Preis ist allokationstheoretisch das effizienteste Instrument, erlangt jedoch gesellschaftliche und verfassungsrechtliche Legitimität erst dann, wenn seine regressive Belastungswirkung durch einen zügigen sozialen Ausgleich (z. B. Pro-Kopf-Klimageld) kompensiert wird.",
+    chineseComment: "德国Abitur社科高频考题：必须结合【Klimabeschluss 2021】与【Klimageld 气候补贴】两手抓，才是完整满分答卷！"
+  },
+  "sowi-standort-deutschland": {
+    titleDE: "Standort Deutschland: Industrielle Wettbewerbsfähigkeit vs. Sozialstandards",
+    titleZH: "德国工业区位竞争力辩论：企业减负去官僚化 vs. 维持高福利高环保标准",
+    questionDE: "Droht Deutschland eine strukturelle Deindustrialisierung ohne grundlegende Reformen?",
+    questionZH: "若不推行大刀阔斧的去管制与降税改革，德国是否面临实质性的结构性去工业化？",
+    labelProDE: "Reformdruck / Angebotspolitik",
+    labelProZH: "危机预警 / 供给侧减负去行政壁垒",
+    labelContraDE: "Strukturstärke / Modell Resilienz",
+    labelContraZH: "制度韧性 / 高技能创新与社会稳定资产",
+    weights: [
+      {
+        id: "st-p1",
+        side: "pro",
+        textDE: "Hohe Energiekosten, Steuerbelastung und ausufernde Bürokratie hemmen private Investitionen.",
+        textZH: "电价高企、全球前列的综合企业税率与繁琐审批流程严重抑制民间固定资产投资意愿。",
+        weight: 2,
+        categoryDE: "Kostenfaktoren",
+        categoryZH: "供给侧成本约束"
+      },
+      {
+        id: "st-p2",
+        side: "pro",
+        textDE: "Fachkräftemangel und demografischer Wandel bedrohen die Innovationskraft industrieller Cluster.",
+        textZH: "人口老龄化加剧，专业技术工人短缺危机直接危及隐形冠军与传统制造集群。",
+        weight: 2,
+        categoryDE: "Demografie",
+        categoryZH: "人口结构瓶颈"
+      },
+      {
+        id: "st-c1",
+        side: "contra",
+        textDE: "Exzellente Infrastruktur, hohe F&E-Quote, duale Ausbildung und stabile rechtliche Rahmenbedingungen.",
+        textZH: "世界顶尖的‘双元制’职业教育、高研发投入占比、法治健全度与欧洲单一市场腹地优势。",
+        weight: 3,
+        categoryDE: "Qualitative Standortvorteile",
+        categoryZH: "制度与人才护城河"
+      },
+      {
+        id: "st-c2",
+        side: "contra",
+        textDE: "Sozialer Frieden: Geringe Streikquoten durch etablierte Mitbestimmung und Sozialpartnerschaft.",
+        textZH: "社会和平与低罢工率：劳资共决制（Mitbestimmung）与社会伙伴关系构成了无价的生产力护盾。",
+        weight: 2,
+        categoryDE: "Sozialpartnerschaft",
+        categoryZH: "社会伙伴治理红利"
+      }
+    ],
+    sachurteilGuideDE: "Sachurteil: FDI-Kapitalabflüsse gegen langfristige Produktivitäts- und Exportkennzahlen spiegeln.",
+    sachurteilGuideZH: "事实裁决：比对近年外国直接投资（FDI）外流数据与隐形冠军专利出口产出率。",
+    werturteilGuideDE: "Werturteil: Balance zwischen wirtschaftlicher Dynamik und Bewahrung des Rheinischen Kapitalismus.",
+    werturteilGuideZH: "价值裁决：在纯粹英美式新自由主义与德国社会市场经济（莱茵模式）的基石间取舍。",
+    formulierungshilfe: "Die Diagnose einer drohenden Deindustrialisierung verkennt die spezifischen institutionellen Stärken des Standorts Deutschland; gleichwohl erfordert der Transformationsdruck gezielte Entlastungen bei Bürokratie und Energieabgaben.",
+    chineseComment: "文科解题公式：避免非黑即白的唱衰或盲目乐观，用【Qualitative vs. Quantitative Standortfaktoren】分类法破题！"
+  },
+  "deutsch-sachtext-argument": {
+    titleDE: "Sachtextanalyse: Argumentationsstrukturen und rhetorische Überzeugungskraft",
+    titleZH: "议论文深度剖析：事实论据、权威论据与修辞说服力天平",
+    questionDE: "Ist die Argumentation des vorliegenden Autors stichhaltig und normativ überzeugend?",
+    questionZH: "本文作者的论证链条在逻辑形式上是否严密，抑或存在修辞诱导与非形式谬误？",
+    labelProDE: "Stichhaltig & Logisch fundiert (Pro)",
+    labelProZH: "逻辑严密 / 论据客观与因果成立",
+    labelContraDE: "Rhetorisch manipulierend / Defizitär (Contra)",
+    labelContraZH: "逻辑漏洞 / 情感绑架与权威绑架",
+    weights: [
+      {
+        id: "dt-p1",
+        side: "pro",
+        textDE: "Faktenargumente: Verifizierbare empirische Daten und nachprüfbare Quellen als Begründungsfundament.",
+        textZH: "坚实的事实论据：引用经得起检验的统计数据与公开调查作为主旨论证基石。",
+        weight: 2,
+        categoryDE: "Faktenargument",
+        categoryZH: "客观事实支撑"
+      },
+      {
+        id: "dt-p2",
+        side: "pro",
+        textDE: "Deduktive Schlüssigkeit: Klare Prämisse-Konklusion-Struktur ohne interne Widersprüche.",
+        textZH: "演绎逻辑闭环：前提清晰推导出结论，各小节过渡自然且无推论断层。",
+        weight: 3,
+        categoryDE: "Logische Struktur",
+        categoryZH: "推论严密性"
+      },
+      {
+        id: "dt-c1",
+        side: "contra",
+        textDE: "Argumentum ad verecundiam: Einseitige Berufung auf Autoritäten ohne inhaltliche Differenzierung.",
+        textZH: "诉诸权威谬误：未对专业争议进行辩证讨论，仅机械搬出名人言论代替论证过程。",
+        weight: 2,
+        categoryDE: "Scheinargument",
+        categoryZH: "假性伪论据"
+      },
+      {
+        id: "dt-c2",
+        side: "contra",
+        textDE: "Emotionale Aufladung: Einsatz suggestiver Metaphern und Polemik zur Überwältigung des Lesers.",
+        textZH: "过度煽情修辞：使用恐吓性隐喻或情绪化煽动词汇，违反了德国教学论禁止强制灌输原则。",
+        weight: 2,
+        categoryDE: "Rhetorische Mittel",
+        categoryZH: "诱导性修辞"
+      }
+    ],
+    sachurteilGuideDE: "Sachurteil: Trennung von Thesen, Argumenttypen und rhetorischen Mitteln im Textverlauf darlegen.",
+    sachurteilGuideZH: "事实分析：梳理作者的核心中心论点、各级分论点以及论据类型（事实/权威/规范/类比）。",
+    werturteilGuideDE: "Werturteil: Gesamtüberzeugungskraft und Angemessenheit der sprachlichen Mittel für die Zielgruppe beurteilen.",
+    werturteilGuideZH: "批判评价：综合评定该文本是理性探讨公共议题的典范，还是带有单向说教色彩的宣传文。",
+    formulierungshilfe: "Wenngleich der Verfasser durch eine dichte Aneinanderreihung normativer Argumente eine hohe Dringlichkeit erzeugt, schwächt der Verzicht auf empirische Belege die argumentative Stichhaltigkeit seines Gesamturteils.",
+    chineseComment: "德语会考Sachtext必杀技：永远不要只总结‘说了什么’，必须用【Argumentationstyp + Rhetorische Absicht + Wirkung】三件套答题！"
   }
+
 };
+
+// 动态为未在静态表中硬编码的 GeWi 议题生成 100% 对齐主题的辩证天平方案，坚决杜绝任何无关默认回退！
+function getOrGenerateBalanceCase(sim: SimEntry): BalanceCaseData {
+  if (GEWI_BALANCE_CASES[sim.id]) {
+    return GEWI_BALANCE_CASES[sim.id];
+  }
+  
+  const titleDE = sim.titleDE || sim.titleZH || sim.id;
+  const titleZH = sim.titleZH || sim.titleDE || sim.id;
+  const fachLabel = sim.fach === "Philosophie" ? "哲学伦理" : sim.fach === "Deutsch" ? "德语思辨" : "社科经济";
+  
+  return {
+    titleDE: `${titleDE} (Didaktische Diskursanalyse)`,
+    titleZH: `${titleZH} · 德国高中思辨与价值天平研学`,
+    questionDE: `Inwiefern lässt sich der thematische Kern von „${titleDE}“ unter Abwägung ethischer, fachlicher und normativer Kriterien überzeugend beurteilen?`,
+    questionZH: `围绕“${titleZH}”的核心争议，如何在事实有效性（Sachurteil）与价值规范性（Werturteil）之间做出严谨的辩证权衡？`,
+    labelProDE: `Pro-These / Begründende Argumente (${sim.fach})`,
+    labelProZH: `支持方观点 / 理论与制度依据 (${fachLabel})`,
+    labelContraDE: `Contra-These / Kritische Gegenposition`,
+    labelContraZH: `反对方观点 / 局限性与风险防范`,
+    weights: [
+      {
+        id: `${sim.id}-p1`,
+        side: "pro",
+        textDE: `Fundierung im Lehrplan: Relevanz von ${titleDE} für die systematische Erkenntnisgewinnung und Problemlösung im Fach ${sim.fach}.`,
+        textZH: `学科大纲基石：${titleZH} 是德国高中 ${sim.fach} 核心考点，为认知框架与现实问题剖析提供了坚实的理论工具。`,
+        weight: 3,
+        categoryDE: `Fachliche Fundierung (${sim.fach})`,
+        categoryZH: "学科理论基石"
+      },
+      {
+        id: `${sim.id}-p2`,
+        side: "pro",
+        textDE: `Praktische Wirksamkeit: Gezielter Einsatz methodischer Ansätze zur nachhaltigen Gestaltung gesellschaftlicher/fachlicher Prozesse.`,
+        textZH: `实践有效性（Wirksamkeit）：该范式能在现实中指导政策落地、文本严谨阐释或伦理决策实践。`,
+        weight: 2,
+        categoryDE: "Wirksamkeitskriterium",
+        categoryZH: "实践有效性"
+      },
+      {
+        id: `${sim.id}-c1`,
+        side: "contra",
+        textDE: `Normative Einwände & Zielkonflikte: Mögliche unbeabsichtigte Nebenwirkungen oder ethische Dilemmata bei unreflektierter Anwendung.`,
+        textZH: `规范性目标冲突：若不加批判地绝对化应用该理论，可能忽视复杂的现实约束或引发伦理公平性争议。`,
+        weight: 3,
+        categoryDE: "Normativer Zielkonflikt",
+        categoryZH: "规范性价值冲突"
+      },
+      {
+        id: `${sim.id}-c2`,
+        side: "contra",
+        textDE: `Allokative & institutionelle Restriktionen: Grenzen der Durchsetzbarkeit vor dem Hintergrund realer Systemzwänge.`,
+        textZH: `现实系统性制约：在多元社会制度与制度边界下，该方案的推行可能面临制度阻力与资源再分配成本。`,
+        weight: 2,
+        categoryDE: "Systemische Grenzen",
+        categoryZH: "现实边界考量"
+      }
+    ],
+    sachurteilGuideDE: `Sachurteil: Fachliche Prämissen, empirische Daten und logische Schlüssigkeit von „${titleDE}“ herausarbeiten.`,
+    sachurteilGuideZH: `事实裁决 (Sachurteil)：基于概念定义、因果逻辑与客观实据，分析“${titleZH}”的内在推导是否成立。`,
+    werturteilGuideDE: `Werturteil: Vereinbarkeit mit grundlegenden Werten (Menschenwürde, Gerechtigkeit, Freiheit, Verfassung) prüfen.`,
+    werturteilGuideZH: `价值裁决 (Werturteil)：参照人的尊严、社会正义、自由自治或基本法准则，对该命题做出最终的伦理定性。`,
+    formulierungshilfe: `Bei der differenzierten Beurteilung von ${titleDE} zeigt sich, dass fachliche Effizienzkriterien und normative Gerechtigkeitsprinzipien in einem Spannungsverhältnis stehen. Während die deskriptive Analyse wesentliche Mechanismen verdeutlicht, erfordert das abschließende Werturteil eine sorgfältige Güterabwägung.`,
+    chineseComment: `满分破题要诀：面对“${titleZH}”，千万不可凭感性喜好下结论！必须首先在天平中放上支撑论据与批判论据，明确界定 Sachurteil 与 Werturteil 的分界线。`
+  };
+}
+
 
 // =========================================================================
 // 2. 🏛️ 康德绝对命令 4 步检验机 (Kantscher Navigator)
@@ -588,13 +872,17 @@ export function GewiInteractiveWorkbench({
   // 子工坊 1：天平状态 (Urteils-Waage)
   // -----------------------------------------------------------------------
   const balanceCase = useMemo(() => {
-    return GEWI_BALANCE_CASES[sim.id] ?? GEWI_BALANCE_CASES["philo-willensfreiheit"];
-  }, [sim.id]);
+    return getOrGenerateBalanceCase(sim);
+  }, [sim]);
 
   const [activeWeightIds, setActiveWeightIds] = useState<string[]>(() => {
-    // 默认加载部分基础砝码呈现辩证平衡
-    return balanceCase.weights.slice(0, 3).map((w) => w.id);
+    return getOrGenerateBalanceCase(sim).weights.slice(0, 3).map((w) => w.id);
   });
+
+  // 当切换不同模拟时，自动同步重置砝码为当前模拟案例的专属论据
+  useEffect(() => {
+    setActiveWeightIds(balanceCase.weights.slice(0, 3).map((w) => w.id));
+  }, [balanceCase]);
 
   const toggleWeight = (id: string) => {
     setActiveWeightIds((prev) =>

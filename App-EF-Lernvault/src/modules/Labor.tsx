@@ -266,12 +266,32 @@ export function Labor({ lang, onDiscussInTutor }: LaborProps) {
         return <GeWiReadingLab lang={lang} />;
       default:
         if (activeSim) {
-          // 文科与社科理论研学路由到全新直观工坊（天平称重、四步做题检验、五幕金字塔、格律打击器）
+          // 纯文科文学、哲学伦理与特定社科政策辩论使用专门直观工坊 (GewiInteractiveWorkbench)
+          // 宏观经济量化模型（如央行货币传导、菲利普斯曲线、李嘉图比较优势等）走高保真量化仿真台 (UniversalInteractiveWorkbench)
+          const GEWI_WORKBENCH_IDS = new Set([
+            "philo-willensfreiheit",
+            "philo-utilitarismus-bentham",
+            "philo-kant-kategorischer",
+            "philo-arendt-banalitaet",
+            "philo-ethik-dilemma",
+            "deutsch-drama-freytag",
+            "deutsch-lyrik-metrum",
+            "deutsch-brecht-episch",
+            "deutsch-kafka-verwandlung",
+            "deutsch-borchert-draussen",
+            "deutsch-sachtext-argument",
+            "sowi-mindestlohn",
+            "sowi-wohlfahrtsstaat",
+            "sowi-oekosteuer",
+            "sowi-standort-deutschland",
+            "sowi-soziale-marktwirtschaft",
+            "sowi-soziale-mobilitaet",
+          ]);
+
           const isGeWi =
-            activeSim.fach === "Deutsch" ||
+            GEWI_WORKBENCH_IDS.has(activeSim.id) ||
             activeSim.fach === "Philosophie" ||
-            (activeSim.fach === "SoWi" &&
-              !["markt", "orderbuch", "gini", "magisches-viereck", "trust-game", "markt-welfare"].includes(activeSim.id));
+            activeSim.fach === "Deutsch";
 
           if (isGeWi) {
             return (
