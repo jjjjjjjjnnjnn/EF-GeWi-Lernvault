@@ -1,5 +1,6 @@
 // Labor & Interaktive MINT/GeWi Simulationen Registry
-// Getrennt von Labor.tsx für sauberes Vite Fast-Refresh (HMR).
+// Vollstaendiges bilinguales Register fuer alle interaktiven 52 Labore & Simulationen
+// Enthaelt systematische Fach- und Themenkategorien (DE/ZH) sowie Stufenzuordnung (EF/Q1/Q2).
 
 export type LaborSimId =
   | "skate"
@@ -10,6 +11,7 @@ export type LaborSimId =
   | "spring"
   | "circuit"
   | "optics"
+  | "optics-bench"
   | "gas"
   | "states-matter"
   | "under-pressure"
@@ -31,11 +33,15 @@ export type LaborSimId =
   | "hooke"
   | "friction"
   | "titration"
+  | "titration-lab"
   | "gleichgewicht"
+  | "haber-bosch"
   | "osmose"
   | "tangent"
   | "box"
   | "markt"
+  | "markt-welfare"
+  | "orderbuch"
   | "gini"
   | "balance"
   | "wave"
@@ -45,11 +51,22 @@ export type LaborSimId =
   | "wave-string"
   | "orbit"
   | "ethik-waage"
-  | "magisches-viereck";
+  | "dilemma-theatre"
+  | "magisches-viereck"
+  | "trust-game"
+  | "gewi-reading";
+
+export type LaborFach = "Physik" | "Chemie" | "Bio" | "Mathe" | "SoWi" | "Philosophie" | "Deutsch";
+export type LaborStufe = "EF" | "Q1" | "Q2";
 
 export interface SimEntry {
   id: LaborSimId;
-  fach: "Physik" | "Chemie" | "Bio" | "Mathe" | "SoWi" | "Philosophie";
+  fach: LaborFach;
+  kategorieDE: string;
+  kategorieZH: string;
+  themenDE: string;
+  themenZH: string;
+  stufe: LaborStufe;
   titleDE: string;
   titleZH: string;
   descDE: string;
@@ -59,9 +76,17 @@ export interface SimEntry {
 }
 
 export const SIMULATION_REGISTRY: SimEntry[] = [
+  // ==========================================
+  // PHYSIK (24 Labore)
+  // ==========================================
   {
     id: "skate",
     fach: "Physik",
+    kategorieDE: "Mechanik & Energie",
+    kategorieZH: "力学与能量守恒",
+    themenDE: "Energieerhaltung und Reibung",
+    themenZH: "机械能转化与守恒定律",
+    stufe: "EF",
     titleDE: "Energie-Skaterpark (Labor)",
     titleZH: "能量滑板场与机械能守恒 (Labor)",
     descDE: "U-Bahn/Rampe, potentielle/kinetische/thermische Energie, Reibungsdämpfung und dynamisches Kreisdiagramm.",
@@ -72,6 +97,11 @@ export const SIMULATION_REGISTRY: SimEntry[] = [
   {
     id: "pendulum",
     fach: "Physik",
+    kategorieDE: "Schwingungen & Wellen",
+    kategorieZH: "机械振动与周期",
+    themenDE: "Harmonische Schwingungen",
+    themenZH: "单摆非线性摆动与重力加速度",
+    stufe: "EF",
     titleDE: "Pendel-Labor & Schwingungsdauer (Labor)",
     titleZH: "单摆实验室与重力周期 (Labor)",
     descDE: "Exakte nichtlineare Pendelgleichung, Fadenlänge L, Photogate-Zeitmessung und Massenunabhängigkeit.",
@@ -82,6 +112,11 @@ export const SIMULATION_REGISTRY: SimEntry[] = [
   {
     id: "projectile",
     fach: "Physik",
+    kategorieDE: "Kinematik & Ballistik",
+    kategorieZH: "运动学与抛体运动",
+    themenDE: "Zweidimensionale Bewegungen",
+    themenZH: "平抛与斜抛弹道轨迹拟合",
+    stufe: "EF",
     titleDE: "Wurfbewegung & Ballistik (Labor)",
     titleZH: "抛体运动与弹道射程 (Labor)",
     descDE: "Kanonenabschuss, Flugbahn-Trajektorie, Scheitelhöhe, Luftwiderstand und Zieltreffer-Simulation.",
@@ -92,6 +127,11 @@ export const SIMULATION_REGISTRY: SimEntry[] = [
   {
     id: "buoyancy",
     fach: "Physik",
+    kategorieDE: "Hydrostatik & Fluide",
+    kategorieZH: "流体静力学与浮力",
+    themenDE: "Fluiddynamik und Dichte",
+    themenZH: "阿基米德浮力定律与沉浮条件",
+    stufe: "EF",
     titleDE: "Dichte & Auftrieb / Archimedes (Labor)",
     titleZH: "密度与阿基米德浮力定律 (Labor)",
     descDE: "Eintauchtiefe, verdrängtes Flüssigkeitsvolumen, Auftriebskraft F_A vs. Gewichtskraft F_G und Waagenmessung.",
@@ -102,6 +142,11 @@ export const SIMULATION_REGISTRY: SimEntry[] = [
   {
     id: "coulomb",
     fach: "Physik",
+    kategorieDE: "Elektrizität & Magnetismus",
+    kategorieZH: "静电学与场强分布",
+    themenDE: "Elektrostatisches Feld",
+    themenZH: "库仑定律与反平方力场",
+    stufe: "Q1",
     titleDE: "Coulomb-Gesetz & Elektrostatik (Labor)",
     titleZH: "库仑定律与静电力反平方律 (Labor)",
     descDE: "Zwei Punktladungen auf Lineal, anziehende/abstoßende Kräfte, Vektoren und Abstandsgesetz F ~ 1/r².",
@@ -112,6 +157,11 @@ export const SIMULATION_REGISTRY: SimEntry[] = [
   {
     id: "spring",
     fach: "Physik",
+    kategorieDE: "Schwingungen & Wellen",
+    kategorieZH: "机械振动与弹性势能",
+    themenDE: "Federpendel & Oszillation",
+    themenZH: "简谐振动与劲度系数",
+    stufe: "EF",
     titleDE: "Masse-Feder-System & Schwingungslabor",
     titleZH: "弹簧振子与简谐振动实验室",
     descDE: "Harmonische Schwingung, Federkonstante D, Periodendauer T und Energieerhaltung (E_kin, E_spann).",
@@ -122,6 +172,11 @@ export const SIMULATION_REGISTRY: SimEntry[] = [
   {
     id: "circuit",
     fach: "Physik",
+    kategorieDE: "Elektrizität & Magnetismus",
+    kategorieZH: "直流电路与欧姆定律",
+    themenDE: "Gleichstromkreise",
+    themenZH: "欧姆定律与电功率测量",
+    stufe: "EF",
     titleDE: "Virtueller Stromkreis & Ohmsches Gesetz",
     titleZH: "直流电路与欧姆定律实验室",
     descDE: "Elektronenfluss-Animation, Spannung U, Widerstand R, Stromstärke I und Glühlampenleistung.",
@@ -132,6 +187,11 @@ export const SIMULATION_REGISTRY: SimEntry[] = [
   {
     id: "optics",
     fach: "Physik",
+    kategorieDE: "Optik & Licht",
+    kategorieZH: "几何光学与光的折射",
+    themenDE: "Strahlenoptik und Reflexion",
+    themenZH: "斯涅尔折射定律与全反射",
+    stufe: "EF",
     titleDE: "Brechungsgesetz von Snellius & Totalreflexion",
     titleZH: "几何光学折射与全反射实验室",
     descDE: "Laserstrahl an Grenzflächen, Brechungsindizes n₁/n₂, Einfallslot und Grenzwinkel der Totalreflexion.",
@@ -140,8 +200,28 @@ export const SIMULATION_REGISTRY: SimEntry[] = [
     tags: ["Optik", "Licht", "Brechung", "Laser"],
   },
   {
+    id: "optics-bench",
+    fach: "Physik",
+    kategorieDE: "Optik & Licht",
+    kategorieZH: "相干光波与光学工作台",
+    themenDE: "Optische Medien & Fresnel",
+    themenZH: "斯涅尔光学台与脉冲流动",
+    stufe: "EF",
+    titleDE: "OpticsBench: Snellius-Präzisionsbank (Labor)",
+    titleZH: "斯涅尔高精度光学台与介质色散实验室",
+    descDE: "Laser-Rotationsprüfstand mit Kohärenzpuls-Simulation, Fresnel-Intensitätsaufteilung und Brechungsindex-Presets.",
+    descZH: "激光转角测试台、相干光脉冲流动、菲涅尔界面光强反射率分配与常见介质预设库。",
+    formula: "n = \\frac{c_0}{c} \\quad R = \\left(\\frac{n_1 - n_2}{n_1 + n_2}\\right)^2",
+    tags: ["Optik", "OpticsBench", "Brechung", "Fresnel", "Labor"],
+  },
+  {
     id: "kinematik",
     fach: "Physik",
+    kategorieDE: "Kinematik & Ballistik",
+    kategorieZH: "运动学与自由落体",
+    themenDE: "Gleichförmig beschleunigte Bewegung",
+    themenZH: "匀变速运动与加速度微积分",
+    stufe: "EF",
     titleDE: "Kinematik-Labor & Bewegungsgesetze",
     titleZH: "匀变速运动与自由落体实验室",
     descDE: "Orts-, Geschwindigkeits- und Beschleunigungsdiagramme (s-t, v-t, a-t) für freies Fallen.",
@@ -152,6 +232,11 @@ export const SIMULATION_REGISTRY: SimEntry[] = [
   {
     id: "schiefe-ebene",
     fach: "Physik",
+    kategorieDE: "Mechanik & Energie",
+    kategorieZH: "斜面受力分析与摩擦",
+    themenDE: "Kräftezerlegung & Reibung",
+    themenZH: "重力沿斜面分解与临界滑移",
+    stufe: "EF",
     titleDE: "Schiefe Ebene & Kräftezerlegung",
     titleZH: "斜面力学分解与摩擦力实验室",
     descDE: "Kräftezerlegung am Hang: Hangabtriebskraft F_H, Normalkraft F_N und Haft-/Gleitreibungsgrenze.",
@@ -162,6 +247,11 @@ export const SIMULATION_REGISTRY: SimEntry[] = [
   {
     id: "collision",
     fach: "Physik",
+    kategorieDE: "Mechanik & Energie",
+    kategorieZH: "碰撞动力学与动量守恒",
+    themenDE: "Impulserhaltung & Stöße",
+    themenZH: "一维/二维弹性与非弹性碰撞",
+    stufe: "EF",
     titleDE: "Stoß-Labor & Impulserhaltung (Labor)",
     titleZH: "二维弹性碰撞与动量守恒实验室",
     descDE: "Zwei Wagen auf Luftkissenbahn: Massen, Geschwindigkeiten, Impuls- und Energieerhaltung beim elastischen Stoß.",
@@ -172,6 +262,11 @@ export const SIMULATION_REGISTRY: SimEntry[] = [
   {
     id: "lever",
     fach: "Physik",
+    kategorieDE: "Mechanik & Energie",
+    kategorieZH: "静力学与力矩平衡",
+    themenDE: "Starrkörper & Drehmoment",
+    themenZH: "杠杆原理与力矩平衡方程",
+    stufe: "EF",
     titleDE: "Drehmoment & Hebel-Gleichgewicht (Labor)",
     titleZH: "杠杆力矩平衡实验室",
     descDE: "Massen und Hebelarme beidseits der Drehachse: Drehmomentbilanz ΣM = 0 und Gleichgewichtsanzeige.",
@@ -182,6 +277,11 @@ export const SIMULATION_REGISTRY: SimEntry[] = [
   {
     id: "hooke",
     fach: "Physik",
+    kategorieDE: "Mechanik & Energie",
+    kategorieZH: "弹性力学与胡克定律",
+    themenDE: "Elastizität & Federkonstante",
+    themenZH: "弹簧串并联等效刚度",
+    stufe: "EF",
     titleDE: "Hookesches Gesetz & Feder-Kombination (Labor)",
     titleZH: "胡克定律与弹簧串并联实验室",
     descDE: "Federsteifigkeit k, Kraft-Verlängerungs-Diagramm, Reihen- und Parallelschaltung von Federn.",
@@ -192,6 +292,11 @@ export const SIMULATION_REGISTRY: SimEntry[] = [
   {
     id: "friction",
     fach: "Physik",
+    kategorieDE: "Mechanik & Energie",
+    kategorieZH: "微观摩擦力与耗散",
+    themenDE: "Reibungseffekte & Dissipation",
+    themenZH: "最大静摩擦与滑动摩擦过渡",
+    stufe: "EF",
     titleDE: "Haft- & Gleitreibung (Labor)",
     titleZH: "静摩擦与动摩擦过渡实验室",
     descDE: "Angreifende Kraft vs. Haftreibungsgrenze, Übergang zur Gleitreibung und Dissipationswärme.",
@@ -200,8 +305,28 @@ export const SIMULATION_REGISTRY: SimEntry[] = [
     tags: ["Mechanik", "Reibung", "Dissipation", "Labor"],
   },
   {
+    id: "under-pressure",
+    fach: "Physik",
+    kategorieDE: "Hydrostatik & Fluide",
+    kategorieZH: "流体静压与连通器",
+    themenDE: "Hydrostatischer Druck",
+    themenZH: "液体压强公式与U型管差压",
+    stufe: "EF",
+    titleDE: "Hydrostatischer Druck & U-Rohr (Labor)",
+    titleZH: "液体内部压强与连通器实验室",
+    descDE: "Tiefensonde, Flüssigkeitsdichte, U-Rohr-Vergleich und Druck-Tiefe-Kennlinie p(h).",
+    descZH: "深度探针拖拽、液体密度选择、U 型管对比与压强深度直线图。",
+    formula: "p(h) = p_0 + \\rho g h",
+    tags: ["Hydrostatik", "Druck", "Labor"],
+  },
+  {
     id: "wave",
     fach: "Physik",
+    kategorieDE: "Optik & Licht",
+    kategorieZH: "波动光学与干涉衍射",
+    themenDE: "Welleninterferenz & Beugung",
+    themenZH: "双缝干涉与波动光学图样",
+    stufe: "Q1",
     titleDE: "Welleninterferenz & Doppelspalt (Labor)",
     titleZH: "波动干涉与杨氏双缝实验",
     descDE: "Zweiquellen-Interferenz, Wellenlänge λ, Spaltabstand d, Schirmabstand L und Intensitätsmuster.",
@@ -212,6 +337,11 @@ export const SIMULATION_REGISTRY: SimEntry[] = [
   {
     id: "optics-lens",
     fach: "Physik",
+    kategorieDE: "Optik & Licht",
+    kategorieZH: "几何光学透镜成像",
+    themenDE: "Linsengleichung & Abbildung",
+    themenZH: "薄透镜成像方程与特殊光线",
+    stufe: "EF",
     titleDE: "Dünne Linsen & Linsenabbildung (Labor)",
     titleZH: "凸透镜成像与三特殊光线实验室",
     descDE: "Brennweite f, Gegenstandsweite g, drei Hauptstrahlen, reelles/virtuelles Bild und Vergrößerung.",
@@ -222,6 +352,11 @@ export const SIMULATION_REGISTRY: SimEntry[] = [
   {
     id: "charges-fields",
     fach: "Physik",
+    kategorieDE: "Elektrizität & Magnetismus",
+    kategorieZH: "电场线与等势面分布",
+    themenDE: "Elektrisches Potenzial",
+    themenZH: "多点电荷电场与等势线绘制",
+    stufe: "Q1",
     titleDE: "Ladungen & Feldlinien (Labor)",
     titleZH: "点电荷电场线与等势线实验室",
     descDE: "Punktladungen verschieben, Feldlinien-Tracing, Äquipotenziallinien und Sondenmessung von E und V.",
@@ -232,6 +367,11 @@ export const SIMULATION_REGISTRY: SimEntry[] = [
   {
     id: "faraday",
     fach: "Physik",
+    kategorieDE: "Elektrizität & Magnetismus",
+    kategorieZH: "电磁感应与法拉第定律",
+    themenDE: "Induktion & Magnetischer Fluss",
+    themenZH: "磁通变化与楞次定律阻抗",
+    stufe: "Q1",
     titleDE: "Elektromagnetische Induktion (Labor)",
     titleZH: "法拉第电磁感应实验室",
     descDE: "Magnet durch Spule, Flusskurve Φ(t), induzierte Spannung, Lampenhelligkeit und Lenz-Regel.",
@@ -242,6 +382,11 @@ export const SIMULATION_REGISTRY: SimEntry[] = [
   {
     id: "wave-string",
     fach: "Physik",
+    kategorieDE: "Schwingungen & Wellen",
+    kategorieZH: "驻波振动与机械波谐振",
+    themenDE: "Stehende Wellen & Resonanz",
+    themenZH: "弦波反射、驻波节点与共振",
+    stufe: "Q1",
     titleDE: "Seilwellen & Resonanz (Labor)",
     titleZH: "绳波传播与驻波谐振实验室",
     descDE: "Spannung T, Massenbelegung μ, Anregungsfrequenz f, festes/loses Ende und Resonanzbedingung.",
@@ -252,6 +397,11 @@ export const SIMULATION_REGISTRY: SimEntry[] = [
   {
     id: "orbit",
     fach: "Physik",
+    kategorieDE: "Mechanik & Energie",
+    kategorieZH: "天体引力与天体轨道",
+    themenDE: "Gravitation & Keplersche Gesetze",
+    themenZH: "万有引力与开普勒三大定律",
+    stufe: "EF",
     titleDE: "Gravitations- & Orbitallabor (Labor)",
     titleZH: "天体引力与开普勒轨道实验室 (Labor)",
     descDE: "Zentralgestirn, Umlaufbahnen, Keplersche Gesetze, Kreisbahn- und Fluchtgeschwindigkeit.",
@@ -260,68 +410,13 @@ export const SIMULATION_REGISTRY: SimEntry[] = [
     tags: ["Astrophysik", "Gravitation", "Kepler", "Orbit", "Labor"],
   },
   {
-    id: "titration",
-    fach: "Chemie",
-    titleDE: "pH-Skala & Säure-Base-Titration",
-    titleZH: "酸碱溶液与 pH 滴定实验室",
-    descDE: "Büretten-Titration, Indikatorfarben (Bromthymolblau, Phenolphthalein) und Äquivalenzpunkt.",
-    descZH: "滴定管酸碱中和计量、指示剂变色梯级与化学计量等当点曲线。",
-    formula: "\\text{pH} = -\\log_{10}[H_3O^+]",
-    tags: ["Säure", "Base", "pH", "Titration", "Indikator"],
-  },
-  {
-    id: "gleichgewicht",
-    fach: "Chemie",
-    titleDE: "Chemisches Gleichgewicht & Le Chatelier",
-    titleZH: "化学平衡与勒夏特列原理实验室",
-    descDE: "Druck- und Temperaturverschiebung, Gaskompressor und Reaktionsquotient Q vs. K_c.",
-    descZH: "压力活塞加压、吸放热温度干扰与勒夏特列分子碰撞动态平衡转移。",
-    formula: "K_c = \\frac{[C]^c [D]^d}{[A]^a [B]^b}",
-    tags: ["Gleichgewicht", "Thermodynamik", "Le Chatelier", "Kinetik"],
-  },
-  {
-    id: "gas",
-    fach: "Chemie",
-    titleDE: "Ideales Gasgesetz & Teilchenbewegung (Labor)",
-    titleZH: "理想气体状态方程与分子热运动实验室",
-    descDE: "Movable Piston, manometrischer Druck p, absolute Temperatur T (Kelvin) und Boyle-Mariotte.",
-    descZH: "活塞容积压缩、压力表测压、开尔文温度与波义耳-马略特气体定律。",
-    formula: "p \\cdot V = n \\cdot R \\cdot T",
-    tags: ["Thermodynamik", "Gase", "Druck", "Temperatur", "Labor"],
-  },
-  {
-    id: "states-matter",
-    fach: "Chemie",
-    titleDE: "Aggregatzustände & Phasenübergang (Labor)",
-    titleZH: "物质三态与熔沸相变实验室",
-    descDE: "Teilchenmodell fest/flüssig/gasförmig, Schmelz- und Siedepunkt, latente Wärme und Heizkurve.",
-    descZH: "三态粒子模型、熔沸点平台、潜热与加热冷却曲线。",
-    formula: "Q = m \\cdot c \\cdot \\Delta T \\quad Q = m \\cdot L",
-    tags: ["Thermodynamik", "Phasen", "Teilchen", "Labor"],
-  },
-  {
-    id: "under-pressure",
-    fach: "Physik",
-    titleDE: "Hydrostatischer Druck & U-Rohr (Labor)",
-    titleZH: "液体内部压强与连通器实验室",
-    descDE: "Tiefensonde, Flüssigkeitsdichte, U-Rohr-Vergleich und Druck-Tiefe-Kennlinie p(h).",
-    descZH: "深度探针拖拽、液体密度选择、U 型管对比与压强深度直线图。",
-    formula: "p(h) = p_0 + \\rho g h",
-    tags: ["Hydrostatik", "Druck", "Labor"],
-  },
-  {
-    id: "diffusion",
-    fach: "Chemie",
-    titleDE: "Teilchendiffusion & Fick-Gesetz (Labor)",
-    titleZH: "粒子扩散与浓度平衡实验室",
-    descDE: "Konzentrationsgradient, Teilchenmasse, Temperatur und Konzentrations-Zeit-Kurve bis zum Gleichgewicht.",
-    descZH: "浓度梯度、分子质量、温度影响与浓度时间平衡曲线。",
-    formula: "J \\propto -\\Delta c",
-    tags: ["Teilchen", "Diffusion", "Gleichgewicht", "Labor"],
-  },
-  {
     id: "photoelectric",
     fach: "Physik",
+    kategorieDE: "Atom- & Quantenphysik",
+    kategorieZH: "量子理论与光电效应",
+    themenDE: "Lichtquantenhypothese",
+    themenZH: "爱因斯坦光电方程与普朗克常量",
+    stufe: "Q2",
     titleDE: "Photoeffekt & Gegenfeldmethode (Labor)",
     titleZH: "光电效应与截止电压实验室",
     descDE: "Lichtfrequenz, Kathodenmaterial, Grenzfrequenz, Gegenspannung und Kennlinie des Photostroms.",
@@ -332,6 +427,11 @@ export const SIMULATION_REGISTRY: SimEntry[] = [
   {
     id: "rutherford",
     fach: "Physik",
+    kategorieDE: "Atom- & Quantenphysik",
+    kategorieZH: "原子物理与核式结构",
+    themenDE: "Atommodelle & Streuung",
+    themenZH: "卢瑟福散射与核电荷集中",
+    stufe: "Q2",
     titleDE: "Rutherford-Streuung & Kernmodell (Labor)",
     titleZH: "卢瑟福散射与核式结构实验室",
     descDE: "Alpha-Teilchen, Stoßparameter, Coulomb-Abstoßung, Streuwinkel und Folgerung zum Kernmodell.",
@@ -342,6 +442,11 @@ export const SIMULATION_REGISTRY: SimEntry[] = [
   {
     id: "hydrogen-atom",
     fach: "Physik",
+    kategorieDE: "Atom- & Quantenphysik",
+    kategorieZH: "原子物理与氢光谱",
+    themenDE: "Bohrsches Atommodell",
+    themenZH: "玻尔能级跃迁与巴尔末公式",
+    stufe: "Q2",
     titleDE: "Bohr-Wasserstoffatom & Spektrallinien (Labor)",
     titleZH: "玻尔氢原子能级跃迁实验室",
     descDE: "Energieniveaus, Übergänge, Photonenenergie, Balmer-Serie und Absorptions-/Emissionsspektren.",
@@ -352,6 +457,11 @@ export const SIMULATION_REGISTRY: SimEntry[] = [
   {
     id: "blackbody",
     fach: "Physik",
+    kategorieDE: "Atom- & Quantenphysik",
+    kategorieZH: "黑体辐射与量子起源",
+    themenDE: "Wärmestrahlung & Planck",
+    themenZH: "普朗克黑体辐射与维恩位移",
+    stufe: "Q2",
     titleDE: "Schwarzkörperstrahlung & Planck-Kurve (Labor)",
     titleZH: "黑体辐射谱与维恩位移实验室",
     descDE: "Temperatur, Planck-Kurve, Wiensches Verschiebungsgesetz und Stefan-Boltzmann-Leistung.",
@@ -359,9 +469,123 @@ export const SIMULATION_REGISTRY: SimEntry[] = [
     formula: "\\lambda_{\\max}T = b",
     tags: ["Quanten", "Strahlung", "Thermodynamik", "Labor"],
   },
+
+  // ==========================================
+  // CHEMIE (9 Labore)
+  // ==========================================
+  {
+    id: "titration",
+    fach: "Chemie",
+    kategorieDE: "Säure-Base & Analytik",
+    kategorieZH: "酸碱理论与滴定分析",
+    themenDE: "Säure-Base-Gleichgewichte",
+    themenZH: "pH 滴定曲线与指示剂变色",
+    stufe: "EF",
+    titleDE: "pH-Skala & Säure-Base-Titration",
+    titleZH: "酸碱溶液与 pH 滴定实验室",
+    descDE: "Büretten-Titration, Indikatorfarben (Bromthymolblau, Phenolphthalein) und Äquivalenzpunkt.",
+    descZH: "滴定管酸碱中和计量、指示剂变色梯级与化学计量等当点曲线。",
+    formula: "\\text{pH} = -\\log_{10}[H_3O^+]",
+    tags: ["Säure", "Base", "pH", "Titration", "Indikator"],
+  },
+  {
+    id: "titration-lab",
+    fach: "Chemie",
+    kategorieDE: "Säure-Base & Analytik",
+    kategorieZH: "电位滴定与突跃微观舱",
+    themenDE: "Ionenkonzentration & pH-Sprung",
+    themenZH: "强酸强碱突跃微观对数雪崩",
+    stufe: "EF",
+    titleDE: "TitrationLab: pH-Sprung & Ionen-Kaskade (Labor)",
+    titleZH: "电位滴定与离子雪崩突跃微观实验室",
+    descDE: "Sokratisches Schritt-Labor zum logarithmischen pH-Sprung von 4 auf 10 am Äquivalenzpunkt mit Mikroskop-Simulation.",
+    descZH: "等当点（25mL）酸碱中和对数雪崩跳跃微观剖析、指示剂显色与苏格拉底递进式问答。",
+    formula: "[H_3O^+] \\cdot [OH^-] = 10^{-14} \\; \\text{mol}^2/\\text{L}^2",
+    tags: ["Chemie", "TitrationLab", "Säure", "Base", "pH-Sprung", "Labor"],
+  },
+  {
+    id: "gleichgewicht",
+    fach: "Chemie",
+    kategorieDE: "Gleichgewicht & Kinetik",
+    kategorieZH: "化学平衡与勒夏特列原理",
+    themenDE: "Massenwirkungsgesetz & Gleichgewicht",
+    themenZH: "平衡常数与外加条件扰动转移",
+    stufe: "Q1",
+    titleDE: "Chemisches Gleichgewicht & Le Chatelier",
+    titleZH: "化学平衡与勒夏特列原理实验室",
+    descDE: "Druck- und Temperaturverschiebung, Gaskompressor und Reaktionsquotient Q vs. K_c.",
+    descZH: "压力活塞加压、吸放热温度干扰与勒夏特列分子碰撞动态平衡转移。",
+    formula: "K_c = \\frac{[C]^c [D]^d}{[A]^a [B]^b}",
+    tags: ["Gleichgewicht", "Thermodynamik", "Le Chatelier", "Kinetik"],
+  },
+  {
+    id: "haber-bosch",
+    fach: "Chemie",
+    kategorieDE: "Gleichgewicht & Kinetik",
+    kategorieZH: "工业化学与高压合成动力学",
+    themenDE: "Ammoniaksynthese & Stoßtheorie",
+    themenZH: "哈伯-博施法动态反应器",
+    stufe: "Q1",
+    titleDE: "Haber-Bosch-Lab: 60FPS Stoßreaktor (Labor)",
+    titleZH: "哈伯法合成氨高压反应动力学实验室",
+    descDE: "60FPS mikroskopischer Teilchenkollisionsreaktor, Kompressorkolben und Le-Chatelier-Ausweichreaktion.",
+    descZH: "60FPS 分子微观碰撞动力学引擎、活塞加压体积压缩与温度-压力工业平衡产率寻优。",
+    formula: "N_2 + 3H_2 \\rightleftharpoons 2NH_3 \\quad \\Delta H = -92{,}4 \\; \\text{kJ/mol}",
+    tags: ["Gleichgewicht", "HaberBosch", "Kinetik", "Stöße", "Labor"],
+  },
+  {
+    id: "gas",
+    fach: "Chemie",
+    kategorieDE: "Gase & Thermodynamik",
+    kategorieZH: "气体定律与分子热运动",
+    themenDE: "Gasgesetze & Kinetische Gastheorie",
+    themenZH: "理想气体状态方程与玻尔兹曼分布",
+    stufe: "EF",
+    titleDE: "Ideales Gasgesetz & Teilchenbewegung (Labor)",
+    titleZH: "理想气体状态方程与分子热运动实验室",
+    descDE: "Movable Piston, manometrischer Druck p, absolute Temperatur T (Kelvin) und Boyle-Mariotte.",
+    descZH: "活塞容积压缩、压力表测压、开尔文温度与波义耳-马略特气体定律。",
+    formula: "p \\cdot V = n \\cdot R \\cdot T",
+    tags: ["Thermodynamik", "Gase", "Druck", "Temperatur", "Labor"],
+  },
+  {
+    id: "states-matter",
+    fach: "Chemie",
+    kategorieDE: "Gase & Thermodynamik",
+    kategorieZH: "物质三态与相变潜热",
+    themenDE: "Aggregatzustände & Phasen",
+    themenZH: "三态微观粒子模型与相变平台",
+    stufe: "EF",
+    titleDE: "Aggregatzustände & Phasenübergang (Labor)",
+    titleZH: "物质三态与熔沸相变实验室",
+    descDE: "Teilchenmodell fest/flüssig/gasförmig, Schmelz- und Siedepunkt, latente Wärme und Heizkurve.",
+    descZH: "三态粒子模型、熔沸点平台、潜热与加热冷却曲线。",
+    formula: "Q = m \\cdot c \\cdot \\Delta T \\quad Q = m \\cdot L",
+    tags: ["Thermodynamik", "Phasen", "Teilchen", "Labor"],
+  },
+  {
+    id: "diffusion",
+    fach: "Chemie",
+    kategorieDE: "Lösungen & Diffusion",
+    kategorieZH: "溶液扩散与热运动",
+    themenDE: "Diffusion & Entropie",
+    themenZH: "费克扩散定律与浓度均一化",
+    stufe: "EF",
+    titleDE: "Teilchendiffusion & Fick-Gesetz (Labor)",
+    titleZH: "粒子扩散与浓度平衡实验室",
+    descDE: "Konzentrationsgradient, Teilchenmasse, Temperatur und Konzentrations-Zeit-Kurve bis zum Gleichgewicht.",
+    descZH: "浓度梯度、分子质量、温度影响与浓度时间平衡曲线。",
+    formula: "J \\propto -\\Delta c",
+    tags: ["Teilchen", "Diffusion", "Gleichgewicht", "Labor"],
+  },
   {
     id: "molecule-shape",
     fach: "Chemie",
+    kategorieDE: "Molekülstruktur & Bindung",
+    kategorieZH: "分子构型与价层互斥",
+    themenDE: "Chemische Bindung & VSEPR",
+    themenZH: "VSEPR 理论与空间杂化构型",
+    stufe: "EF",
     titleDE: "VSEPR Molekülgeometrie (Labor)",
     titleZH: "价层电子对互斥构型实验室",
     descDE: "AXE-Klassen, Bindungswinkel, freie Elektronenpaare und Drehansicht der Moleküle.",
@@ -372,6 +596,11 @@ export const SIMULATION_REGISTRY: SimEntry[] = [
   {
     id: "concentration",
     fach: "Chemie",
+    kategorieDE: "Lösungen & Diffusion",
+    kategorieZH: "溶液浓度与比尔定律",
+    themenDE: "Stoffmengenkonzentration & Photometrie",
+    themenZH: "吸光度定量分析与标准工作曲线",
+    stufe: "Q1",
     titleDE: "Molarität & Lambert-Beer-Gesetz (Labor)",
     titleZH: "溶液浓度与比尔定律实验室",
     descDE: "Konzentration, Schichtdicke, Extinktionskoeffizient und Kalibriergerade des Photometers.",
@@ -379,19 +608,18 @@ export const SIMULATION_REGISTRY: SimEntry[] = [
     formula: "A = \\varepsilon \\cdot c \\cdot d",
     tags: ["Lösungen", "Spektroskopie", "Labor"],
   },
-  {
-    id: "probability",
-    fach: "Mathe",
-    titleDE: "Galton-Brett & Normalverteilung (Labor)",
-    titleZH: "高尔顿板与正态分布实验室",
-    descDE: "Nagelschichten, Kugelzahl, Binomial-Histogramm, Normal-Anpassung und Gesetz der großen Zahlen.",
-    descZH: "钉层球数调控、二项直方图、正态拟合曲线与大数定律收敛。",
-    formula: "P(k) = \\binom{n}{k} p^k (1-p)^{n-k}",
-    tags: ["Stochastik", "Verteilung", "Labor"],
-  },
+
+  // ==========================================
+  // BIOLOGIE (3 Labore)
+  // ==========================================
   {
     id: "membrane",
     fach: "Bio",
+    kategorieDE: "Zellbiologie & Membrantransport",
+    kategorieZH: "细胞生物学与跨膜运输",
+    themenDE: "Biomembranen & Stofftransport",
+    themenZH: "主动运输与被动扩散动力学",
+    stufe: "EF",
     titleDE: "Membrantransport & ATP-Pumpe (Labor)",
     titleZH: "细胞膜转运与钠钾泵实验室",
     descDE: "Doppellipidschicht, Kanal vs. Pumpe, Sättigungskinetik und ATP-Verbrauch.",
@@ -402,6 +630,11 @@ export const SIMULATION_REGISTRY: SimEntry[] = [
   {
     id: "neuron",
     fach: "Bio",
+    kategorieDE: "Neurobiologie & Erregungsleitung",
+    kategorieZH: "神经生物学与动作电位",
+    themenDE: "Neuronale Informationsverarbeitung",
+    themenZH: "动作电位形成与离子通道时序",
+    stufe: "Q1",
     titleDE: "Aktionspotenzial & Ionenkanäle (Labor)",
     titleZH: "神经元动作电位实验室",
     descDE: "Reizstärke, Schwelle, Na+/K+-Kanaldynamik, vier Phasen und Refraktärzeit.",
@@ -412,6 +645,11 @@ export const SIMULATION_REGISTRY: SimEntry[] = [
   {
     id: "osmose",
     fach: "Bio",
+    kategorieDE: "Zellbiologie & Membrantransport",
+    kategorieZH: "渗透压与质壁分离",
+    themenDE: "Wasserhaushalt der Pflanze",
+    themenZH: "半透膜渗透平衡与水势方程",
+    stufe: "EF",
     titleDE: "Osmose, Turgor & Plasmolyse-Labor",
     titleZH: "细胞渗透压与质壁分离微观实验室",
     descDE: "Semipermeable Biomembran, Konzentrationsgradient, Vakuolenvolumen und Hämolyse.",
@@ -419,9 +657,18 @@ export const SIMULATION_REGISTRY: SimEntry[] = [
     formula: "\\Psi = \\Psi_s + \\Psi_p",
     tags: ["Zellbiologie", "Membran", "Wasserpotenzial", "Plasmolyse"],
   },
+
+  // ==========================================
+  // MATHEMATIK (4 Labore)
+  // ==========================================
   {
     id: "tangent",
     fach: "Mathe",
+    kategorieDE: "Analysis & Extremwertoptimierung",
+    kategorieZH: "微积分与导数切线",
+    themenDE: "Differentialrechnung & Ableitung",
+    themenZH: "割线斜率极限逼近与瞬间导数",
+    stufe: "EF",
     titleDE: "Differential- & Tangenten-Simulator",
     titleZH: "导数切线极限逼近沙盒",
     descDE: "Sekantensteigung Δy/Δx im Grenzübergang h → 0 zur Tangentensteigung f'(x).",
@@ -432,6 +679,11 @@ export const SIMULATION_REGISTRY: SimEntry[] = [
   {
     id: "vector",
     fach: "Mathe",
+    kategorieDE: "Vektorrechnung & Geometrie",
+    kategorieZH: "空间向量与几何加法",
+    themenDE: "Analytische Geometrie & Vektoren",
+    themenZH: "二维/三维向量加法与点积正交",
+    stufe: "EF",
     titleDE: "Vektor-Addition & Kräfte-Parallelogramm",
     titleZH: "二维向量加法与力学平行四边形",
     descDE: "Vektorkomponenten in 2D, Resultierende c = a + b, Betrag und Skalarprodukt.",
@@ -442,6 +694,11 @@ export const SIMULATION_REGISTRY: SimEntry[] = [
   {
     id: "box",
     fach: "Mathe",
+    kategorieDE: "Analysis & Extremwertoptimierung",
+    kategorieZH: "极值问题与约束条件优化",
+    themenDE: "Extremwertprobleme mit Nebenbedingungen",
+    themenZH: "纸盒容积优化与驻点二阶导数判别",
+    stufe: "EF",
     titleDE: "Box-Optimizer (Extremwert-Probleme)",
     titleZH: "长方体容积极值优化沙盒",
     descDE: "Eckenausschnitt x optimieren für maximales Volumen V(x) mit erster und zweiter Ableitung.",
@@ -450,8 +707,32 @@ export const SIMULATION_REGISTRY: SimEntry[] = [
     tags: ["Analysis", "Extremwert", "Optimierung", "Volumen"],
   },
   {
+    id: "probability",
+    fach: "Mathe",
+    kategorieDE: "Stochastik & Wahrscheinlichkeit",
+    kategorieZH: "概率论与大数定律",
+    themenDE: "Binomial- & Normalverteilung",
+    themenZH: "高尔顿板下落二项分布拟合",
+    stufe: "EF",
+    titleDE: "Galton-Brett & Normalverteilung (Labor)",
+    titleZH: "高尔顿板与正态分布实验室",
+    descDE: "Nagelschichten, Kugelzahl, Binomial-Histogramm, Normal-Anpassung und Gesetz der großen Zahlen.",
+    descZH: "钉层球数调控、二项直方图、正态拟合曲线与大数定律收敛。",
+    formula: "P(k) = \\binom{n}{k} p^k (1-p)^{n-k}",
+    tags: ["Stochastik", "Verteilung", "Labor"],
+  },
+
+  // ==========================================
+  // SOWI / WIRTSCHAFT (6 Labore)
+  // ==========================================
+  {
     id: "markt",
     fach: "SoWi",
+    kategorieDE: "Marktmechanismus & Mikroökonomie",
+    kategorieZH: "微观经济与市场均衡",
+    themenDE: "Preisbildung & Marktkräfte",
+    themenZH: "供求曲线相交与消费者剩余",
+    stufe: "EF",
     titleDE: "Markt-Mechanismus & Wohlfahrts-Simulator",
     titleZH: "供求曲线与市场价格机制沙盘",
     descDE: "Angebot und Nachfrage, Marktpreisbildung, Mindest-/Höchstpreise und Konsumentenrente.",
@@ -460,8 +741,43 @@ export const SIMULATION_REGISTRY: SimEntry[] = [
     tags: ["Wirtschaft", "Markt", "Preis", "Wohlfahrt"],
   },
   {
+    id: "markt-welfare",
+    fach: "SoWi",
+    kategorieDE: "Marktmechanismus & Mikroökonomie",
+    kategorieZH: "市场干预与福利经济学",
+    themenDE: "Staatliche Eingriffe & Wohlfahrtsverlust",
+    themenZH: "最低限价与无谓损失几何剖析",
+    stufe: "Q1",
+    titleDE: "MarktWelfareLab: Wohlfahrtsverlust (Labor)",
+    titleZH: "市场干预、福利几何与无谓损失沙盘",
+    descDE: "Tufte-geometrischer Prüfstand für Mindestpreis P_min, Konsumentenrente, Produzentenrente und Deadweight Loss (DWL).",
+    descZH: "最低限价干预管制沙盘、透光多边形展示消费者剩余 (CS)、生产者剩余 (PS) 与社会总福利无谓损失 (DWL)。",
+    formula: "\\text{DWL} = \\frac{1}{2} (P - P_{\\text{Anbieter}}) \\cdot (Q^* - Q_{\\text{trans}})",
+    tags: ["SoWi", "Wohlfahrt", "DWL", "Mindestpreis", "Labor"],
+  },
+  {
+    id: "orderbuch",
+    fach: "SoWi",
+    kategorieDE: "Finanzmärkte & Handel",
+    kategorieZH: "金融市场与订单簿撮合",
+    themenDE: "Börsenhandel & Preisfindung",
+    themenZH: "Xetra 连续双向拍卖与滑点",
+    stufe: "Q1",
+    titleDE: "OrderbuchSimulator: Xetra-Matching (Labor)",
+    titleZH: "证券交易所限价订单簿与深度撮合实验室",
+    descDE: "Xetra-Orderbuch-Matching, Geld/Brief-Spanne (Spread), Ausführungsrisiko, Slippage und Stop-Loss-Orders.",
+    descZH: "实时多档买卖深度撮合、买卖价差 Spread、市价单执行滑点损失与止损委托触发仿真。",
+    formula: "\\text{Spread} = P_{\\text{Brief}} - P_{\\text{Geld}}",
+    tags: ["SoWi", "Börse", "Orderbuch", "Slippage", "Labor"],
+  },
+  {
     id: "gini",
     fach: "SoWi",
+    kategorieDE: "Sozialstruktur & Ungleichheit",
+    kategorieZH: "社会结构与财富分配",
+    themenDE: "Einkommens- und Vermögensverteilung",
+    themenZH: "洛伦茨曲线积分与基尼系数",
+    stufe: "EF",
     titleDE: "Gini-Koeffizient & Lorenz-Kurve",
     titleZH: "基尼系数与洛伦茨收入分配沙盒",
     descDE: "Einkommens- und Vermögensverteilung, Lorenz-Kurve und Ungleichheitsmaße.",
@@ -470,8 +786,47 @@ export const SIMULATION_REGISTRY: SimEntry[] = [
     tags: ["Soziologie", "Verteilung", "Gini", "Ungleichheit"],
   },
   {
+    id: "magisches-viereck",
+    fach: "SoWi",
+    kategorieDE: "Makroökonomie & Wirtschaftspolitik",
+    kategorieZH: "宏观调控与经济稳定",
+    themenDE: "Stabilitätsgesetz 1967 & Konjunktur",
+    themenZH: "经济四大目标冲突与宏观博弈",
+    stufe: "Q1",
+    titleDE: "Magisches Viereck (§ 1 StabG 1967)",
+    titleZH: "宏观经济魔术四角形博弈沙盘",
+    descDE: "Stabilitätsgesetz 1967: Wirtschaftswachstum, Vollbeschäftigung, Preisstabilität und Außenbeitrag im Zielkonflikt.",
+    descZH: "增长、充分就业、物价稳定与对外经济平衡四大目标冲突，菲利普斯曲线与货币财政调控沙盘。",
+    formula: "Y = C + I + G + (X - M) \\quad \\text{Zielkonflikt: } \\text{ALQ} \\leftrightarrow \\text{Inflation}",
+    tags: ["Wirtschaft", "SoWi", "Konjunktur", "Stabilitätsgesetz", "EZB", "Fiskalpolitik", "Labor"],
+  },
+  {
+    id: "trust-game",
+    fach: "SoWi",
+    kategorieDE: "Spieltheorie & Verhaltensökonomie",
+    kategorieZH: "博弈论与合作演化",
+    themenDE: "Gefangenendilemma & Vertrauen",
+    themenZH: "以牙还牙策略与制度信任演化",
+    stufe: "EF",
+    titleDE: "TrustGameSim: Vertrauensspiel & Evolution (Labor)",
+    titleZH: "信任博弈演化与纳什均衡仿真沙盘",
+    descDE: "Evolutionäre Spieltheorie: Tit-for-Tat, Trittbrettfahrer, Sanktionskosten und Vertrauensindex im Agenten-Netzwerk.",
+    descZH: "演化博弈论：以牙还牙（Tit-for-Tat）、搭便车背叛者、法律制裁成本与多智能体社会信任指数动态推演。",
+    formula: "\\text{Payoff: } T > R > P > S \\quad (2R > T + S)",
+    tags: ["SoWi", "Spieltheorie", "Vertrauen", "Tit-for-Tat", "Labor"],
+  },
+
+  // ==========================================
+  // PHILOSOPHIE (3 Labore)
+  // ==========================================
+  {
     id: "balance",
     fach: "Philosophie",
+    kategorieDE: "Dialektische Urteilsbildung",
+    kategorieZH: "辩证裁决与论证结构",
+    themenDE: "Sachurteil vs. Werturteil",
+    themenZH: "事实依据与价值准则双轨平衡",
+    stufe: "EF",
     titleDE: "Dialektische Urteils-Waage",
     titleZH: "辩证事实裁决与伦理价值天平",
     descDE: "Sachurteil vs. Werturteil: Abwägen von Pro- und Contra-Argumenten nach Kant & Utilitarismus.",
@@ -482,21 +837,50 @@ export const SIMULATION_REGISTRY: SimEntry[] = [
   {
     id: "ethik-waage",
     fach: "Philosophie",
+    kategorieDE: "Normative Ethik & Dilemma",
+    kategorieZH: "规范伦理与两难决策",
+    themenDE: "Kantische Deontologie vs. Utilitarismus",
+    themenZH: "定言命令四步检验法与快乐算盘",
+    stufe: "EF",
     titleDE: "Ethik-Waage und Dilemma-Entscheidung",
     titleZH: "伦理道德天平与双轨决策工坊",
     descDE: "Utilitarismus vs. Kantische Deontologie: Hedonistisches Kalkuel, Maximenpruefung und Antinomien.",
     descZH: "边沁快乐量度法定量净效用 vs 康德定言命令四步检验法（普遍法则与目的自身公式）。",
-    formula: "\\Delta U = \\sum (F - L) \\quad \\text{vs.} \\quad \\text{Maximenpruefung: Widerspruch in Denken/Wollen}",
+    formula: "\\Delta U = \\sum (F - L) \\quad \\text{vs.} \\quad \\text{Maximenpruefung}",
     tags: ["Ethik", "Philosophie", "Kant", "Utilitarismus", "Dilemma", "Labor"],
   },
   {
-    id: "magisches-viereck",
-    fach: "SoWi",
-    titleDE: "Magisches Viereck (§ 1 StabG 1967)",
-    titleZH: "宏观经济魔术四角形博弈沙盘",
-    descDE: "Stabilitätsgesetz 1967: Wirtschaftswachstum, Vollbeschäftigung, Preisstabilität und Außenbeitrag im Zielkonflikt.",
-    descZH: "增长、充分就业、物价稳定与对外经济平衡四大目标冲突，菲利普斯曲线与货币财政调控沙盘。",
-    formula: "Y = C + I + G + (X - M) \\quad \\text{Zielkonflikt: } \\text{ALQ} \\leftrightarrow \\text{Inflation}",
-    tags: ["Wirtschaft", "SoWi", "Konjunktur", "Stabilitätsgesetz", "EZB", "Fiskalpolitik", "Labor"],
+    id: "dilemma-theatre",
+    fach: "Philosophie",
+    kategorieDE: "Normative Ethik & Dilemma",
+    kategorieZH: "道德两难剧场与情境抉择",
+    themenDE: "Trolley-Dilemma & Autonomie",
+    themenZH: "电车难题、器官分配与善意谎言",
+    stufe: "Q1",
+    titleDE: "DilemmaTheatre: 4-Akt-Ethikbühne (Labor)",
+    titleZH: "通用伦理两难剧场与四幕沉浸抉择台",
+    descDE: "Interaktives 4-Akt-Dilemma-Theater: Trolley-Problem, Organtransplantation und Wahrhaftigkeitspflicht mit Klausur-Urteilskarte.",
+    descZH: "四幕沉浸式伦理剧场：电车转向、ICU 稀缺器官分配与绝对说真话义务，附带高考满分评价模板与答题卡。",
+    formula: "\\text{Kategorischer Imperativ: Handle nur nach derjenigen Maxime...}",
+    tags: ["Philosophie", "DilemmaTheatre", "Trolley", "Ethik", "Labor"],
+  },
+
+  // ==========================================
+  // DEUTSCH / GEWI (1 Labor)
+  // ==========================================
+  {
+    id: "gewi-reading",
+    fach: "Deutsch",
+    kategorieDE: "Textanalyse & Hermeneutik",
+    kategorieZH: "文学戏剧解剖与原典精读",
+    themenDE: "Dramen- & Sachtextanalyse",
+    themenZH: "歌德《浮士德》与学术原典解剖",
+    stufe: "EF",
+    titleDE: "GeWiReadingLab: Sechsdimensionale Textlupe (Labor)",
+    titleZH: "文科学术原典精读与六维戏剧解剖工坊",
+    descDE: "Tufte-inspirierte Textlupe für Goethes Faust, Kants Anthropologie und Borchert: Versanalyse, Metrik, Leitbegriffe und Klausur-Satzbau.",
+    descZH: "北威州高中会考经典选段精读：浮士德之夜独白、康德启蒙宣言与博尔歇特废墟文学，逐行诗韵、修辞格与学术论证装配。",
+    formula: "\\text{Textdeutung} = \\text{Hypothese} + \\text{Belegkette} + \\text{Funktion}",
+    tags: ["Deutsch", "GeWiReadingLab", "Faust", "Textanalyse", "Hermeneutik", "Labor"],
   },
 ];

@@ -272,4 +272,27 @@ export const t = (lang: Lang) => ({
   masteryReview: "Wiederholen",
   masteryReviewZh: "待复习",
   masteryNotes: (count: number) => (lang === "de" ? `${count} Notizen` : `${count} 篇笔记`),
+
+  // Laboratorien & Simulationen (Labor / 实验模块)
+  laborTitle: lang === "de" ? "Laboratorien & Simulationen" : "互动探索实验室 (仿真实验 & 学科工坊)",
+  laborSubtitle:
+    lang === "de"
+      ? "Interaktive PhET- & GeWi-Labore zur empirischen Veranschaulichung"
+      : "北威州高中十科全真交互实验室 · 探索、验证与定理直观",
+  laborSearchPlaceholder:
+    lang === "de"
+      ? "Labor-Simulation nach Begriff, Formel oder Thema suchen …"
+      : "检索实验名称、物理量、公式、考点或学科专题…",
+  laborAllSubjects: lang === "de" ? "Alle Fächer" : "全部学科",
+  laborAllCategories: lang === "de" ? "Alle Themen-Kategorien" : "全部实验专题",
+  laborAllStufen: lang === "de" ? "Alle Stufen (EF/Q1/Q2)" : "全部学段 (EF/Q1/Q2)",
+  laborOpen: lang === "de" ? "Labor öffnen →" : "进入实验 →",
+  laborBack: lang === "de" ? "← Zurück zur Labor-Übersicht" : "← 返回实验室目录",
+  laborReadyCount: (count: number, total: number) =>
+    lang === "de" ? `${count} / ${total} Simulationen bereit` : `${count} / ${total} 个交互实验就绪`,
+  laborDiscussTutor: lang === "de" ? "Mit KI-Tutor analysieren →" : "与 AI 助教深入剖析考点 →",
+  laborExpandStudio: lang === "de" ? "Studio-Vollansicht" : "全景放大研习模式",
+  laborCollapseStudio: lang === "de" ? "Kompaktansicht" : "退出放大 / 紧凑模式",
+  laborCopyFinding: lang === "de" ? "Messdaten kopieren" : "复制实验数据",
+  laborCopySuccess: lang === "de" ? "Ergebnis in die Zwischenablage kopiert!" : "实验结论已复制到剪贴板！",
 });

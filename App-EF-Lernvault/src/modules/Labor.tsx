@@ -1,7 +1,5 @@
-import { EthikWaageSim } from "../components/pedagogy/EthikWaageSim";
-import { MagischesViereckSim } from "../components/pedagogy/MagischesViereckSim";
 import { useState, useMemo } from "react";
-import type { Lang } from "../i18n";
+import { t, type Lang } from "../i18n";
 import { EnergySkateParkSim } from "../components/pedagogy/EnergySkateParkSim";
 import { PendulumLabSim } from "../components/pedagogy/PendulumLabSim";
 import { ProjectileMotionSim } from "../components/pedagogy/ProjectileMotionSim";
@@ -10,6 +8,7 @@ import { CoulombLawSim } from "../components/pedagogy/CoulombLawSim";
 import { SpringPendulumSim } from "../components/pedagogy/SpringPendulumSim";
 import { CircuitOhmSim } from "../components/pedagogy/CircuitOhmSim";
 import { OpticsRefractionSim } from "../components/pedagogy/OpticsRefractionSim";
+import { OpticsBench } from "../components/pedagogy/OpticsBench";
 import { GasPropertiesSim } from "../components/pedagogy/GasPropertiesSim";
 import { StatesMatterSim } from "../components/pedagogy/StatesMatterSim";
 import { HydroPressureSim } from "../components/pedagogy/HydroPressureSim";
@@ -25,7 +24,9 @@ import { MembraneSim } from "../components/pedagogy/MembraneSim";
 import { NeuronSim } from "../components/pedagogy/NeuronSim";
 import { VectorAdditionSim } from "../components/pedagogy/VectorAdditionSim";
 import { TitrationSimulator } from "../components/pedagogy/TitrationSimulator";
+import { TitrationLab } from "../components/pedagogy/TitrationLab";
 import { GleichgewichtSimulator } from "../components/pedagogy/GleichgewichtSimulator";
+import { HaberBoschLab } from "../components/pedagogy/HaberBoschLab";
 import { OsmoseSimulator } from "../components/pedagogy/OsmoseSimulator";
 import { KinematikSim } from "../components/pedagogy/KinematikSim";
 import { SchiefeEbeneSim } from "../components/pedagogy/SchiefeEbeneSim";
@@ -36,6 +37,8 @@ import { FrictionMicroSim } from "../components/pedagogy/FrictionMicroSim";
 import { BoxOptimizerSim } from "../components/pedagogy/BoxOptimizerSim";
 import { TangentSlider } from "../components/pedagogy/TangentSlider";
 import { MarktMechanismusSim } from "../components/pedagogy/MarktMechanismusSim";
+import { MarktWelfareLab } from "../components/pedagogy/MarktWelfareLab";
+import { OrderbuchSimulator } from "../components/pedagogy/OrderbuchSimulator";
 import { GiniAllocatorSim } from "../components/pedagogy/GiniAllocatorSim";
 import { BalanceBoard } from "../components/pedagogy/BalanceBoard";
 import { WaveInterferenceLabSim } from "../components/pedagogy/WaveInterferenceLabSim";
@@ -44,6 +47,11 @@ import { ChargesFieldsSim } from "../components/pedagogy/ChargesFieldsSim";
 import { FaradayInductionSim } from "../components/pedagogy/FaradayInductionSim";
 import { WaveStringSim } from "../components/pedagogy/WaveStringSim";
 import { GravityOrbitSim } from "../components/pedagogy/GravityOrbitSim";
+import { EthikWaageSim } from "../components/pedagogy/EthikWaageSim";
+import { DilemmaTheatre } from "../components/pedagogy/DilemmaTheatre";
+import { MagischesViereckSim } from "../components/pedagogy/MagischesViereckSim";
+import { TrustGameSim } from "../components/pedagogy/TrustGameSim";
+import { GeWiReadingLab } from "../components/pedagogy/GeWiReadingLab";
 import {
   type LaborSimId,
   type SimEntry,
@@ -58,26 +66,76 @@ export interface LaborProps {
 }
 
 export function Labor({ lang, onDiscussInTutor }: LaborProps) {
+  const tr = t(lang);
   const [activeSimId, setActiveSimId] = useState<LaborSimId | null>(null);
   const [searchQuery, setSearchQuery] = useState("");
   const [fachFilter, setFachFilter] = useState<string>("alle");
+  const [kategorieFilter, setKategorieFilter] = useState<string>("alle");
+  const [stufeFilter, setStufeFilter] = useState<string>("alle");
   const [isStudioExpanded, setIsStudioExpanded] = useState<boolean>(true);
+
+  // Available categories based on selected Fach
+  const availableCategories = useMemo(() => {
+    const sims =
+      fachFilter === "alle"
+        ? SIMULATION_REGISTRY
+        : SIMULATION_REGISTRY.filter(
+            (s) => s.fach.toLowerCase() === fachFilter.toLowerCase()
+          );
+
+    const catMap = new Map<string, { de: string; zh: string; count: number }>();
+    for (const s of sims) {
+      const key = s.kategorieDE;
+      const existing = catMap.get(key);
+      if (existing) {
+        existing.count += 1;
+      } else {
+        catMap.set(key, {
+          de: s.kategorieDE,
+          zh: s.kategorieZH,
+          count: 1,
+        });
+      }
+    }
+    return Array.from(catMap.values());
+  }, [fachFilter]);
+
+  // Reset kategorieFilter if selected category does not exist under new subject
+  const handleFachChange = (newFach: string) => {
+    setFachFilter(newFach);
+    setKategorieFilter("alle");
+  };
 
   // Filtered simulations
   const filteredSims = useMemo(() => {
     const q = searchQuery.trim().toLowerCase();
     return SIMULATION_REGISTRY.filter((sim) => {
-      const matchFach = fachFilter === "alle" || sim.fach.toLowerCase() === fachFilter.toLowerCase();
+      const matchFach =
+        fachFilter === "alle" ||
+        sim.fach.toLowerCase() === fachFilter.toLowerCase();
+      const matchKategorie =
+        kategorieFilter === "alle" ||
+        sim.kategorieDE === kategorieFilter ||
+        sim.kategorieZH === kategorieFilter;
+      const matchStufe =
+        stufeFilter === "alle" || sim.stufe.toLowerCase() === stufeFilter.toLowerCase();
+
       const matchQuery =
         !q ||
         sim.titleDE.toLowerCase().includes(q) ||
         sim.titleZH.toLowerCase().includes(q) ||
         sim.descDE.toLowerCase().includes(q) ||
         sim.descZH.toLowerCase().includes(q) ||
+        sim.kategorieDE.toLowerCase().includes(q) ||
+        sim.kategorieZH.toLowerCase().includes(q) ||
+        sim.themenDE.toLowerCase().includes(q) ||
+        sim.themenZH.toLowerCase().includes(q) ||
+        sim.formula.toLowerCase().includes(q) ||
         sim.tags.some((t) => t.toLowerCase().includes(q));
-      return matchFach && matchQuery;
+
+      return matchFach && matchKategorie && matchStufe && matchQuery;
     });
-  }, [searchQuery, fachFilter]);
+  }, [searchQuery, fachFilter, kategorieFilter, stufeFilter]);
 
   const activeSim = useMemo(() => {
     return SIMULATION_REGISTRY.find((s) => s.id === activeSimId) ?? null;
@@ -85,13 +143,14 @@ export function Labor({ lang, onDiscussInTutor }: LaborProps) {
 
   const handleExportFinding = (findingText: string) => {
     if (onDiscussInTutor) {
-      const prompt = lang === "de"
-        ? `Ich habe im Labor "${activeSim?.titleDE}" folgendes Experiment durchgeführt:\n\n${findingText}\n\nBitte erkläre mir die physikalischen/chemischen Hintergründe und typische Klausurfragen dazu.`
-        : `我在 Labor 互动探索实验室「${activeSim?.titleZH}」中得出了以下实验数据：\n\n${findingText}\n\n请结合北威州高中考纲，剖析此现象背后的深层考点与可能的答题陷阱。`;
+      const prompt =
+        lang === "de"
+          ? `Ich habe im Labor "${activeSim?.titleDE}" folgendes Experiment durchgeführt:\n\n${findingText}\n\nBitte erkläre mir die theoretischen Hintergründe und typische Klausurfragen dazu.`
+          : `我在 Labor 互动探索实验室「${activeSim?.titleZH}」中得出了以下实验数据：\n\n${findingText}\n\n请结合北威州高中考纲，剖析此现象背后的深层考点与可能的答题陷阱。`;
       onDiscussInTutor(prompt);
     } else {
       navigator.clipboard.writeText(findingText);
-      alert(lang === "de" ? "Ergebnis in die Zwischenablage kopiert!" : "实验结论已复制到剪贴板！");
+      alert(tr.laborCopySuccess);
     }
   };
 
@@ -114,6 +173,8 @@ export function Labor({ lang, onDiscussInTutor }: LaborProps) {
         return <CircuitOhmSim lang={lang} onExportFinding={handleExportFinding} />;
       case "optics":
         return <OpticsRefractionSim lang={lang} onExportFinding={handleExportFinding} />;
+      case "optics-bench":
+        return <OpticsBench lang={lang} />;
       case "gas":
         return <GasPropertiesSim lang={lang} onExportFinding={handleExportFinding} />;
       case "states-matter":
@@ -144,8 +205,12 @@ export function Labor({ lang, onDiscussInTutor }: LaborProps) {
         return <VectorAdditionSim lang={lang} onExportFinding={handleExportFinding} />;
       case "titration":
         return <TitrationSimulator lang={lang} />;
+      case "titration-lab":
+        return <TitrationLab lang={lang} />;
       case "gleichgewicht":
         return <GleichgewichtSimulator lang={lang} />;
+      case "haber-bosch":
+        return <HaberBoschLab lang={lang} />;
       case "osmose":
         return <OsmoseSimulator lang={lang} />;
       case "kinematik":
@@ -166,6 +231,10 @@ export function Labor({ lang, onDiscussInTutor }: LaborProps) {
         return <TangentSlider lang={lang} onFormulaGenerated={handleExportFinding} />;
       case "markt":
         return <MarktMechanismusSim lang={lang} onFormulaGenerated={handleExportFinding} />;
+      case "markt-welfare":
+        return <MarktWelfareLab lang={lang} />;
+      case "orderbuch":
+        return <OrderbuchSimulator lang={lang} />;
       case "gini":
         return <GiniAllocatorSim lang={lang} />;
       case "balance":
@@ -182,19 +251,29 @@ export function Labor({ lang, onDiscussInTutor }: LaborProps) {
         return <WaveStringSim lang={lang} studioMode={isStudioExpanded} onExportFinding={handleExportFinding} />;
       case "orbit":
         return <GravityOrbitSim lang={lang} studioMode={isStudioExpanded} onExportFinding={handleExportFinding} />;
-            case "ethik-waage":
+      case "ethik-waage":
         return <EthikWaageSim lang={lang} studioMode={isStudioExpanded} onExportFinding={handleExportFinding} />;
+      case "dilemma-theatre":
+        return <DilemmaTheatre lang={lang} />;
       case "magisches-viereck":
         return <MagischesViereckSim lang={lang} />;
-default:
+      case "trust-game":
+        return <TrustGameSim lang={lang} studioMode={isStudioExpanded} onExportFinding={handleExportFinding} />;
+      case "gewi-reading":
+        return <GeWiReadingLab lang={lang} />;
+      default:
         return null;
     }
   };
 
   return (
-    <div className={`mx-auto w-full min-w-0 transition-all duration-200 ${
-      isStudioExpanded && activeSimId ? "max-w-none px-0 space-y-4" : "max-w-5xl px-0 space-y-6"
-    }`}>
+    <div
+      className={`mx-auto w-full min-w-0 transition-all duration-200 ${
+        isStudioExpanded && activeSimId
+          ? "max-w-none px-0 space-y-4"
+          : "max-w-5xl px-0 space-y-6"
+      }`}
+    >
       {/* Top Header */}
       <div className="flex flex-wrap items-center justify-between border-b border-[var(--line)] pb-3 text-xs font-mono text-[var(--gray)]">
         <div className="flex flex-wrap items-center gap-3">
@@ -207,7 +286,7 @@ default:
                 : "hover:text-[var(--ink)]"
             }`}
           >
-            {lang === "de" ? "Laboratorien & Simulationen" : "互动探索实验室 (互动探究)"}
+            {tr.laborTitle}
           </button>
           {activeSim && (
             <>
@@ -216,7 +295,7 @@ default:
                 {activeSim.fach} · {lang === "de" ? activeSim.titleDE : activeSim.titleZH}
               </span>
               <span className="text-[10px] font-mono px-1.5 py-0.5 rounded border border-[var(--accent)] text-[var(--accent)]">
-                Labor
+                {activeSim.stufe} · {lang === "de" ? activeSim.kategorieDE : activeSim.kategorieZH}
               </span>
             </>
           )}
@@ -229,11 +308,11 @@ default:
               onClick={() => setActiveSimId(null)}
               className="text-[var(--accent)] hover:underline"
             >
-              ← {lang === "de" ? "Zurück zur Labor-Übersicht" : "返回实验室列表"}
+              {tr.laborBack}
             </button>
           ) : (
             <span>
-              {filteredSims.length} / {SIMULATION_REGISTRY.length} {lang === "de" ? "Simulationen bereit" : "个交互仿真就绪"}
+              {tr.laborReadyCount(filteredSims.length, SIMULATION_REGISTRY.length)}
             </span>
           )}
         </div>
@@ -249,7 +328,16 @@ default:
               onClick={() => setActiveSimId(null)}
               className="flex items-center gap-1.5 text-xs font-mono text-[var(--gray)] hover:text-[var(--ink)] border border-[var(--line)] px-2.5 py-1 rounded-[var(--radius)] transition-colors"
             >
-              <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 16 16"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="1.6"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
                 <path d="M10 12L6 8l4-4" />
               </svg>
               <span>{lang === "de" ? "Zurück zur Übersicht" : "返回全部实验室"}</span>
@@ -257,10 +345,13 @@ default:
 
             <div className="flex items-center gap-2">
               <span className="font-mono text-xs uppercase px-2 py-0.5 bg-[var(--paper-subtle)] text-[var(--accent)] rounded border border-[var(--line)] font-medium">
-                {activeSim.fach}
+                {activeSim.fach} · {lang === "de" ? activeSim.kategorieDE : activeSim.kategorieZH}
+              </span>
+              <span className="font-mono text-xs px-2 py-0.5 bg-[var(--surface)] text-[var(--gray)] rounded border border-[var(--line)]">
+                {activeSim.stufe}
               </span>
 
-              {/* In-app Studio Expand Button (fills right viewport beside sidebar) */}
+              {/* In-app Studio Expand Button */}
               <button
                 type="button"
                 onClick={() => setIsStudioExpanded(!isStudioExpanded)}
@@ -269,24 +360,25 @@ default:
                     ? "border-[var(--accent)] bg-[var(--paper-subtle)] text-[var(--accent)] font-semibold shadow-xs"
                     : "border-[var(--line)] bg-[var(--paper)] text-[var(--ink)] hover:border-[var(--accent)]"
                 }`}
-                title={lang === "de" ? "Studio-Großansicht (vollflächig neben Navigation)" : "全景放大研习模式（铺满左侧导航栏右侧大部分区域）"}
+                title={isStudioExpanded ? tr.laborCollapseStudio : tr.laborExpandStudio}
               >
                 <span>{isStudioExpanded ? "⤡" : "⤢"}</span>
-                <span>{isStudioExpanded ? (lang === "de" ? "Kompaktansicht" : "退出放大 / 紧凑模式") : (lang === "de" ? "Studio-Vollansicht" : "全景放大研习模式")}</span>
+                <span>{isStudioExpanded ? tr.laborCollapseStudio : tr.laborExpandStudio}</span>
               </button>
 
               {onDiscussInTutor && (
                 <button
                   type="button"
                   onClick={() => {
-                    const prompt = lang === "de"
-                      ? `Ich experimentiere gerade im Labor "${activeSim.titleDE}". Welche konkreten Abitur-Klausuraufgaben und Denkmodelle sind dafür relevant?`
-                      : `我正在使用 Labor 互动实验室「${activeSim.titleZH}」。请问在德国北威州高中期末考与高考大题中，有哪些核心考法和常见失分陷阱？`;
+                    const prompt =
+                      lang === "de"
+                        ? `Ich experimentiere gerade im Labor "${activeSim.titleDE}" (${activeSim.kategorieDE}). Welche konkreten Abitur-Klausuraufgaben und Denkmodelle sind dafür relevant?`
+                        : `我正在使用 Labor 互动实验室「${activeSim.titleZH}」（所属专题：${activeSim.kategorieZH}）。请问在德国北威州高中期末考与高考大题中，有哪些核心考法和常见失分陷阱？`;
                     onDiscussInTutor(prompt);
                   }}
                   className="text-xs font-mono px-3 py-1 bg-[var(--ink)] text-[var(--paper)] rounded-[var(--radius)] hover:bg-[var(--accent)] transition-colors"
                 >
-                  {lang === "de" ? "Mit KI-Tutor diskutieren →" : "与 AI 助教研讨 →"}
+                  {tr.laborDiscussTutor}
                 </button>
               )}
             </div>
@@ -298,29 +390,43 @@ default:
       ) : (
         /* VIEW 2: SIMULATION CATALOG & SEARCH GRID */
         <div className="space-y-6">
-          {/* Filter Bar: Subject Tabs + Search */}
-          <div className="space-y-3">
+          {/* Header Description */}
+          <div className="space-y-1">
+            <h2 className="font-serif text-lg font-bold text-[var(--ink)]">
+              {tr.laborTitle}
+            </h2>
+            <p className="font-sans text-xs text-[var(--gray)]">
+              {tr.laborSubtitle}
+            </p>
+          </div>
+
+          {/* Filter Bar: Tier 1 (Subjects) + Tier 2 (Categories) + Stufe + Search */}
+          <div className="space-y-3.5">
             {/* Subject Tabs */}
             <div className="flex flex-wrap items-center gap-1.5 border-b border-[var(--line)] pb-3">
               {[
                 { id: "alle", de: "Alle Fächer", zh: "全部学科" },
-                { id: "Physik", de: "Physik", zh: "物理 (Mechanik, Optik, E-Lehre)" },
-                { id: "Chemie", de: "Chemie", zh: "化学 (Gase, Säure-Base, Gleichgewicht)" },
-                { id: "Bio", de: "Biologie", zh: "生物 (Osmose, Membran)" },
-                { id: "Mathe", de: "Mathematik", zh: "数学 (Analysis, Vektoren)" },
-                { id: "SoWi", de: "SoWi / Wirtschaft", zh: "社科与经济" },
-                { id: "Philosophie", de: "Philosophie", zh: "哲学与伦理" },
+                { id: "Physik", de: "Physik", zh: "物理 (Mechanik, E-Lehre, Optik, Quanten)" },
+                { id: "Chemie", de: "Chemie", zh: "化学 (Gleichgewicht, Säuren, Gase, VSEPR)" },
+                { id: "Bio", de: "Biologie", zh: "生物 (Osmose, Membran, Neuro)" },
+                { id: "Mathe", de: "Mathematik", zh: "数学 (Analysis, Vektoren, Stochastik)" },
+                { id: "SoWi", de: "SoWi / Wirtschaft", zh: "社科与经济 (Markt, Wohlfahrt, StabG, Gini)" },
+                { id: "Philosophie", de: "Philosophie", zh: "哲学与伦理 (Ethik, Dilemma, Urteil)" },
+                { id: "Deutsch", de: "Deutsch / GeWi", zh: "德语与文科 (Faust, Textlupe)" },
               ].map((f) => {
-                const count = f.id === "alle"
-                  ? SIMULATION_REGISTRY.length
-                  : SIMULATION_REGISTRY.filter((s) => s.fach.toLowerCase() === f.id.toLowerCase()).length;
+                const count =
+                  f.id === "alle"
+                    ? SIMULATION_REGISTRY.length
+                    : SIMULATION_REGISTRY.filter(
+                        (s) => s.fach.toLowerCase() === f.id.toLowerCase()
+                      ).length;
                 const isSelected = fachFilter === f.id;
 
                 return (
                   <button
                     key={f.id}
                     type="button"
-                    onClick={() => setFachFilter(f.id)}
+                    onClick={() => handleFachChange(f.id)}
                     className={`px-3 py-1 text-xs font-mono rounded-[var(--radius)] border transition-all ${
                       isSelected
                         ? "border-[var(--accent)] text-[var(--accent)] bg-[var(--paper-subtle)] font-medium"
@@ -333,28 +439,89 @@ default:
               })}
             </div>
 
-            {/* Search Input */}
-            <div className="relative">
-              <input
-                type="text"
-                value={searchQuery}
-                onChange={(e) => setSearchQuery(e.target.value)}
-                placeholder={
-                  lang === "de"
-                    ? "Labor-Simulation suchen (z.B. Feder, Brechung, Osmose, Gleichgewicht, Vektor)..."
-                    : "检索 Labor 互动实验（如：弹簧振子、光的折射、欧姆定律、勒夏特列、渗透压、向量）..."
-                }
-                className="w-full rounded-[var(--radius)] border border-[var(--line)] bg-[var(--surface)] px-3 py-2 text-xs font-sans text-[var(--ink)] placeholder-[var(--gray)] focus:border-[var(--accent)] focus:outline-none"
-              />
-              {searchQuery && (
-                <button
-                  type="button"
-                  onClick={() => setSearchQuery("")}
-                  className="absolute right-2.5 top-1/2 -translate-y-1/2 text-xs font-mono text-[var(--gray)] hover:text-[var(--ink)]"
-                >
-                  ✕
-                </button>
-              )}
+            {/* Sub-Category Filter Row (Themenkategorien / 实验专题分类) */}
+            <div className="flex flex-wrap items-center gap-1.5 pt-1">
+              <span className="text-[11px] font-mono text-[var(--gray)] mr-1 font-semibold">
+                {lang === "de" ? "Themen-Kategorie:" : "实验专题分类:"}
+              </span>
+              <button
+                type="button"
+                onClick={() => setKategorieFilter("alle")}
+                className={`px-2 py-0.5 text-[11px] font-mono rounded border transition-colors ${
+                  kategorieFilter === "alle"
+                    ? "border-[var(--accent)] bg-[var(--accent)] text-white font-medium"
+                    : "border-[var(--line)] text-[var(--gray)] hover:text-[var(--ink)] hover:bg-[var(--surface)]"
+                }`}
+              >
+                {tr.laborAllCategories}
+              </button>
+              {availableCategories.map((c) => {
+                const isSelected =
+                  kategorieFilter === c.de || kategorieFilter === c.zh;
+                return (
+                  <button
+                    key={c.de}
+                    type="button"
+                    onClick={() => setKategorieFilter(c.de)}
+                    className={`px-2 py-0.5 text-[11px] font-mono rounded border transition-colors ${
+                      isSelected
+                        ? "border-[var(--accent)] bg-[var(--accent)] text-white font-medium"
+                        : "border-[var(--line)] text-[var(--gray)] hover:text-[var(--ink)] hover:bg-[var(--surface)]"
+                    }`}
+                  >
+                    {lang === "de" ? c.de : c.zh} <span className="opacity-75">({c.count})</span>
+                  </button>
+                );
+              })}
+            </div>
+
+            {/* Stufe (EF/Q1/Q2) + Search Bar */}
+            <div className="flex flex-col sm:flex-row gap-2 pt-1 items-stretch sm:items-center">
+              {/* Stufe Pills */}
+              <div className="flex items-center gap-1">
+                <span className="text-[11px] font-mono text-[var(--gray)] mr-1">
+                  {lang === "de" ? "Stufe:" : "学段:"}
+                </span>
+                {[
+                  { id: "alle", label: lang === "de" ? "Alle" : "全部" },
+                  { id: "EF", label: "EF" },
+                  { id: "Q1", label: "Q1" },
+                  { id: "Q2", label: "Q2" },
+                ].map((st) => (
+                  <button
+                    key={st.id}
+                    type="button"
+                    onClick={() => setStufeFilter(st.id)}
+                    className={`px-2 py-0.5 text-[11px] font-mono rounded border ${
+                      stufeFilter === st.id
+                        ? "border-[var(--accent)] text-[var(--accent)] bg-[var(--paper-subtle)] font-bold"
+                        : "border-[var(--line)] text-[var(--gray)] hover:text-[var(--ink)]"
+                    }`}
+                  >
+                    {st.label}
+                  </button>
+                ))}
+              </div>
+
+              {/* Search Input */}
+              <div className="relative flex-1">
+                <input
+                  type="text"
+                  value={searchQuery}
+                  onChange={(e) => setSearchQuery(e.target.value)}
+                  placeholder={tr.laborSearchPlaceholder}
+                  className="w-full rounded-[var(--radius)] border border-[var(--line)] bg-[var(--surface)] px-3 py-1.5 text-xs font-sans text-[var(--ink)] placeholder-[var(--gray)] focus:border-[var(--accent)] focus:outline-none"
+                />
+                {searchQuery && (
+                  <button
+                    type="button"
+                    onClick={() => setSearchQuery("")}
+                    className="absolute right-2.5 top-1/2 -translate-y-1/2 text-xs font-mono text-[var(--gray)] hover:text-[var(--ink)]"
+                  >
+                    ✕
+                  </button>
+                )}
+              </div>
             </div>
           </div>
 
@@ -368,10 +535,17 @@ default:
               >
                 <div className="space-y-2">
                   <div className="flex items-center justify-between">
-                    <span className="font-mono text-[10px] uppercase font-semibold text-[var(--accent)] px-1.5 py-0.5 rounded border border-[var(--accent)]/30 bg-[var(--accent)]/5">
-                      {sim.fach}
+                    <div className="flex items-center gap-1.5">
+                      <span className="font-mono text-[10px] uppercase font-semibold text-[var(--accent)] px-1.5 py-0.5 rounded border border-[var(--accent)]/30 bg-[var(--accent)]/5">
+                        {sim.fach}
+                      </span>
+                      <span className="font-mono text-[10px] font-semibold text-[var(--ink)] px-1.5 py-0.5 rounded border border-[var(--line)] bg-[var(--paper-subtle)]">
+                        {sim.stufe}
+                      </span>
+                    </div>
+                    <span className="text-[10px] font-mono text-[var(--gray)] truncate max-w-[130px]" title={lang === "de" ? sim.kategorieDE : sim.kategorieZH}>
+                      {lang === "de" ? sim.kategorieDE : sim.kategorieZH}
                     </span>
-                    <span className="font-mono text-[10px] text-[var(--gray)]">Labor</span>
                   </div>
 
                   <h3 className="font-serif text-sm font-semibold text-[var(--ink)] group-hover:text-[var(--accent)] transition-colors leading-snug">
@@ -381,14 +555,22 @@ default:
                   <p className="font-sans text-xs text-[var(--gray)] leading-relaxed line-clamp-2">
                     {lang === "de" ? sim.descDE : sim.descZH}
                   </p>
+
+                  {/* Formula Preview Box */}
+                  {sim.formula && (
+                    <div className="font-mono text-[11px] text-[var(--ink)] bg-[var(--paper-subtle)] px-2.5 py-1.5 rounded border border-[var(--line)]/60 truncate" title={sim.formula}>
+                      <span className="text-[var(--gray)] select-none mr-1.5">📐</span>
+                      {sim.formula}
+                    </div>
+                  )}
                 </div>
 
                 <div className="pt-3 border-t border-[var(--line)]/50 mt-3 flex items-center justify-between text-xs font-mono">
-                  <span className="text-[var(--gray)] text-[10px] font-mono">
-                    {sim.tags.slice(0, 2).join(" · ")}
+                  <span className="text-[var(--gray)] text-[10px] font-mono truncate max-w-[180px]">
+                    {lang === "de" ? sim.themenDE : sim.themenZH}
                   </span>
-                  <span className="text-[var(--accent)] font-medium group-hover:translate-x-0.5 transition-transform flex items-center gap-1">
-                    {lang === "de" ? "Labor öffnen →" : "进入实验 →"}
+                  <span className="text-[var(--accent)] font-medium group-hover:translate-x-0.5 transition-transform flex items-center gap-1 shrink-0">
+                    {tr.laborOpen}
                   </span>
                 </div>
               </div>
@@ -398,8 +580,8 @@ default:
           {filteredSims.length === 0 && (
             <div className="border border-dashed border-[var(--line)] bg-[var(--paper-subtle)] p-8 text-center text-xs font-mono text-[var(--gray)] rounded-[var(--radius)]">
               {lang === "de"
-                ? "Keine Simulationen für diese Filterkriterien gefunden."
-                : "未找到符合条件的探索实验室，尝试切换学科或清空搜索关键词。"}
+                ? "Keine Simulationen für diese Filterkriterien gefunden. Bitte Kategorie oder Suchbegriff anpassen."
+                : "未找到符合当前条件的探索实验室。请尝试切换学科、重置专题分类或清空搜索关键词。"}
             </div>
           )}
         </div>
