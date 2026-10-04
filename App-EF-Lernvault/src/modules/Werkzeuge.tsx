@@ -4,11 +4,8 @@ import { FAECHER, type FachId } from "../fach";
 import { getToolsForFach, getFachDidaktik, type DidaktikToolId } from "../engine/fachDidaktik";
 import { SatzbauLego } from "../components/pedagogy/SatzbauLego";
 import { BalanceBoard } from "../components/pedagogy/BalanceBoard";
-import { TangentSlider } from "../components/pedagogy/TangentSlider";
 import FormulaScaffold from "../components/pedagogy/FormulaScaffold";
 import OralExamTimer from "../components/pedagogy/OralExamTimer";
-import { MarktMechanismusSim } from "../components/pedagogy/MarktMechanismusSim";
-import { KinematikSim } from "../components/pedagogy/KinematikSim";
 import { GeWiReadingLab } from "../components/pedagogy/GeWiReadingLab";
 
 interface WerkzeugeProps {
@@ -61,20 +58,6 @@ const TOOLS_CONFIG: ToolMeta[] = [
     ),
   },
   {
-    id: "markt",
-    nameDE: "Markt-Simulator",
-    nameZH: "供求沙盘",
-    descDE: "Angebot, Nachfrage & Preisbildung: Simuliere Kurvenverschiebungen, Mindestpreise & Wohlfahrtseffekte.",
-    descZH: "供求曲线与价格机制：动态模拟供求曲线平移、最高/最低限价干预与市场出清状态。",
-    badgeDE: "SoWi (Wirtschaft)",
-    badgeZH: "社会科学 (经济)",
-    icon: (
-      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" className="h-4 w-4">
-        <path d="M2 14h12M4 11l4-4 2 2 4-5" />
-      </svg>
-    ),
-  },
-  {
     id: "highlighter",
     nameDE: "Textanalyse-Labor",
     nameZH: "原典解剖台",
@@ -85,34 +68,6 @@ const TOOLS_CONFIG: ToolMeta[] = [
     icon: (
       <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" className="h-4 w-4">
         <path d="M11.2 2.3l2.5 2.5-7.6 7.6-3.3.8.8-3.3 7.6-7.6zM9.8 3.7l2.5 2.5" />
-      </svg>
-    ),
-  },
-  {
-    id: "tangent",
-    nameDE: "Tangenten-Simulator",
-    nameZH: "导数沙盘",
-    descDE: "Geometrische Grenzwerterfahrung: Visualisiere die Sekantensteigung Δy/Δx im Grenzübergang zu f'(x).",
-    descZH: "微分极限几何直观：动态推演割线斜率 Δy/Δx 在 Δx→0 逼近切线斜率 f'(x) 的过程。",
-    badgeDE: "Mathematik",
-    badgeZH: "高中数学",
-    icon: (
-      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" className="h-4 w-4">
-        <path d="M2 14L14 2M2 14h12M2 14V2" />
-      </svg>
-    ),
-  },
-  {
-    id: "kinematik",
-    nameDE: "Kinematik-Labor",
-    nameZH: "运动实验",
-    descDE: "Bewegungsgesetze: Erforsche s(t), v(t) & a(t) für gleichförmige und beschleunigte Bewegungen.",
-    descZH: "运动学仿真物理沙盘：探索位移 s(t)、速度 v(t) 与加速度 a(t) 的运动规律与实时曲线。",
-    badgeDE: "Physik (Mechanik)",
-    badgeZH: "物理 (力学)",
-    icon: (
-      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" className="h-4 w-4">
-        <path d="M2 13.5h12M4 9l3-3 3 3 4-5" />
       </svg>
     ),
   },
@@ -349,13 +304,6 @@ export default function Werkzeuge({
               />
             )}
 
-            {activeTool === "markt" && (
-              <MarktMechanismusSim
-                lang={lang}
-                onFormulaGenerated={(sentence) => setLatestOutput(sentence)}
-              />
-            )}
-
             {activeTool === "highlighter" && (
               <GeWiReadingLab
                 lang={lang}
@@ -370,20 +318,6 @@ export default function Werkzeuge({
                     ? "Englisch"
                     : "alle"
                 }
-              />
-            )}
-
-            {activeTool === "tangent" && (
-              <TangentSlider
-                lang={lang}
-                onFormulaGenerated={(formula) => setLatestOutput(formula)}
-              />
-            )}
-
-            {activeTool === "kinematik" && (
-              <KinematikSim
-                lang={lang}
-                onFormulaGenerated={(sentence) => setLatestOutput(sentence)}
               />
             )}
 
@@ -402,6 +336,21 @@ export default function Werkzeuge({
                 onOutlineGenerated={(outline) => setLatestOutput(outline)}
               />
             )}
+          </div>
+
+          {/* 边界划分引导栏：指引客观系统与科学现象仿真至 Labor 板块 */}
+          <div className="rounded-lg border border-dashed border-[var(--line)] bg-[var(--paper-subtle)]/70 p-3.5 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 text-xs font-mono">
+            <div className="space-y-0.5 font-sans">
+              <span className="font-mono font-semibold text-[var(--ink)] flex items-center gap-1.5">
+                <span>🔬</span>
+                <span>{lang === "de" ? "Physikalische & ökonomische Simulationen:" : "物理运动、导数极限与供求曲线沙盘："}</span>
+              </span>
+              <p className="text-[var(--gray)] text-xs leading-relaxed">
+                {lang === "de"
+                  ? "Experimentelle Karts, Sekanten-Grenzwerte und Markt-Ausgleichsmodelle wurden systematisch im Modul 'Labor' gebündelt."
+                  : "客观系统仿真（供求曲线平移出清、微分割线逼近、力学小车实验等）已全量归入【互动实验 (Labor)】板块，教具专区专注于解题认知脚手架。"}
+              </p>
+            </div>
           </div>
 
           {/* Latest Generated Snapshot Bar (when output is present) */}

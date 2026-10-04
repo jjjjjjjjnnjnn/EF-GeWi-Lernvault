@@ -34,7 +34,7 @@ export const FACH_DIDAKTIK: Record<FachId, FachDidaktikProfile> = {
     coreMethodZH: "标准导向价值裁决（效率与合法性评价）、宏观与微观社会理论应用",
     primaryOperators: ["darstellen", "analysieren", "beurteilen", "erörtern"],
     examFormat: "klausur",
-    recommendedTools: ["markt", "balance", "lego"],
+    recommendedTools: ["balance", "lego"],
   },
   Philosophie: {
     fach: "Philosophie",
@@ -78,7 +78,7 @@ export const FACH_DIDAKTIK: Record<FachId, FachDidaktikProfile> = {
     coreMethodZH: "公理化演绎、导数几何直观逼近、规范四步解题法（已知-公式-代入-解释）",
     primaryOperators: ["berechnen", "bestimmen", "herleiten", "begründen"],
     examFormat: "klausur",
-    recommendedTools: ["tangent", "formula"],
+    recommendedTools: ["formula"],
   },
   Physik: {
     fach: "Physik",
@@ -89,7 +89,7 @@ export const FACH_DIDAKTIK: Record<FachId, FachDidaktikProfile> = {
     coreMethodZH: "物理现象到数学模型、受力分析图、严格量纲与单位换算检查",
     primaryOperators: ["erklären", "berechnen", "herleiten", "skizzieren"],
     examFormat: "klausur",
-    recommendedTools: ["kinematik", "formula"],
+    recommendedTools: ["formula"],
   },
   Chemie: {
     fach: "Chemie",

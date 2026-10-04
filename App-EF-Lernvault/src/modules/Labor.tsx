@@ -53,6 +53,7 @@ import { MagischesViereckSim } from "../components/pedagogy/MagischesViereckSim"
 import { TrustGameSim } from "../components/pedagogy/TrustGameSim";
 import { GeWiReadingLab } from "../components/pedagogy/GeWiReadingLab";
 import { UniversalInteractiveWorkbench } from "../components/pedagogy/UniversalInteractiveWorkbench";
+import { GewiInteractiveWorkbench } from "../components/pedagogy/GewiInteractiveWorkbench";
 import {
   type LaborSimId,
   type SimEntry,
@@ -265,6 +266,24 @@ export function Labor({ lang, onDiscussInTutor }: LaborProps) {
         return <GeWiReadingLab lang={lang} />;
       default:
         if (activeSim) {
+          // 文科与社科理论研学路由到全新直观工坊（天平称重、四步做题检验、五幕金字塔、格律打击器）
+          const isGeWi =
+            activeSim.fach === "Deutsch" ||
+            activeSim.fach === "Philosophie" ||
+            (activeSim.fach === "SoWi" &&
+              !["markt", "orderbuch", "gini", "magisches-viereck", "trust-game", "markt-welfare"].includes(activeSim.id));
+
+          if (isGeWi) {
+            return (
+              <GewiInteractiveWorkbench
+                sim={activeSim}
+                lang={lang}
+                studioMode={isStudioExpanded}
+                onExportFinding={handleExportFinding}
+              />
+            );
+          }
+
           return (
             <UniversalInteractiveWorkbench
               sim={activeSim}
