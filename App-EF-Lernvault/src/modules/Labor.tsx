@@ -58,6 +58,8 @@ import { DnaPcrSim } from "../components/pedagogy/DnaPcrSim";
 import { SeeOekologieSim } from "../components/pedagogy/SeeOekologieSim";
 import { GalvanischeZelleSim } from "../components/pedagogy/GalvanischeZelleSim";
 import { RotationskoerperSim } from "../components/pedagogy/RotationskoerperSim";
+import { EzbGeldpolitikSim } from "../components/pedagogy/EzbGeldpolitikSim";
+import { LibetExperimentSim } from "../components/pedagogy/LibetExperimentSim";
 import { UniversalInteractiveWorkbench } from "../components/pedagogy/UniversalInteractiveWorkbench";
 import { GewiInteractiveWorkbench } from "../components/pedagogy/GewiInteractiveWorkbench";
 import {
@@ -282,6 +284,10 @@ export function Labor({ lang, onDiscussInTutor }: LaborProps) {
         return <GalvanischeZelleSim lang={lang} studioMode={isStudioExpanded} onExportFinding={handleExportFinding} />;
       case "mathe-rotationskoerper":
         return <RotationskoerperSim lang={lang} studioMode={isStudioExpanded} onExportFinding={handleExportFinding} />;
+      case "sowi-ezb-geldpolitik":
+        return <EzbGeldpolitikSim lang={lang} studioMode={isStudioExpanded} onExportFinding={handleExportFinding} />;
+      case "philo-willensfreiheit":
+        return <LibetExperimentSim lang={lang} studioMode={isStudioExpanded} onExportFinding={handleExportFinding} />;
       default:
         if (activeSim) {
           // 纯文科文学、哲学伦理与特定社科政策辩论使用专门直观工坊 (GewiInteractiveWorkbench)
