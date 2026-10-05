@@ -13,6 +13,7 @@ import { EthikWaageSim } from "./EthikWaageSim";
 import { MagischesViereckSim } from "./MagischesViereckSim";
 import { SchiefeEbeneSim } from "./SchiefeEbeneSim";
 import { GiniAllocatorSim } from "./GiniAllocatorSim";
+import { GeWiReadingLab } from "./GeWiReadingLab";
 
 describe("Pädagogische Komponenten (Pedagogy UI Library)", () => {
   describe("SatzbauLego", () => {
@@ -278,6 +279,63 @@ describe("Pädagogische Komponenten (Pedagogy UI Library)", () => {
       fireEvent.change(slider, { target: { value: "50" } });
       // Gini sinkt bei starker Umverteilung
       expect(screen.getByText("50%")).toBeInTheDocument();
+    });
+  });
+
+  describe("GeWiReadingLab", () => {
+    it("rendert Faust Nacht initial und zeigt Zeilen und Analyse", () => {
+      render(<GeWiReadingLab lang="zh" defaultExcerptId="faust-monolog" />);
+      expect(screen.getAllByText(/Faust/).length).toBeGreaterThan(0);
+      expect(screen.getByText("Habe nun, ach! Philosophie,")).toBeInTheDocument();
+      expect(screen.getByText("会考原典精读 · 逐题深入")).toBeInTheDocument();
+    });
+
+    it("laedt Nathan der Weise mit dramatischer Konfliktleiste und Sprecherrollen", () => {
+      render(<GeWiReadingLab lang="zh" defaultExcerptId="nathan-ringparabel" />);
+      expect(screen.getByText(/Nathan der Weise/)).toBeInTheDocument();
+      expect(screen.getByText("戏剧冲突态势与人物博弈:")).toBeInTheDocument();
+      expect(screen.getAllByText(/Nathan/).length).toBeGreaterThan(0);
+      expect(screen.getByText(/Vor grauen Jahren/)).toBeInTheDocument();
+    });
+
+    it("laedt Kabale und Liebe mit Miller und Praesident Sprecherdialog", () => {
+      render(<GeWiReadingLab lang="zh" defaultExcerptId="kabale-miller-praesident" />);
+      expect(screen.getByText(/Kabale und Liebe/)).toBeInTheDocument();
+      expect(screen.getAllByText(/Miller/).length).toBeGreaterThan(0);
+      expect(screen.getAllByText(/Präsident/).length).toBeGreaterThan(0);
+    });
+
+    it("unterstuetzt Metrik-Linse bei Willkommen und Abschied", () => {
+      render(<GeWiReadingLab lang="zh" defaultExcerptId="goethe-willkommen-abschied" />);
+      expect(screen.getByText(/Willkommen und Abschied/)).toBeInTheDocument();
+      expect(screen.getByText("格律形制:")).toBeInTheDocument();
+      expect(screen.getByText(/vierhebiger Jambus/)).toBeInTheDocument();
+
+      // Metrum-Linse ist standardmaessig aktiv und zeigt Metrum-Markup
+      expect(screen.getAllByText(/˘\s+´/).length).toBeGreaterThan(0);
+
+      // Klick auf Toggle schaltet Linse um
+      const toggleBtn = screen.getByText("音步透镜: 开启");
+      fireEvent.click(toggleBtn);
+      expect(screen.getByText("音步透镜: 关闭")).toBeInTheDocument();
+    });
+
+    it("beantwortet eine Pruefungsfrage und navigiert durch Diagnose-Reiter", () => {
+      render(<GeWiReadingLab lang="zh" defaultExcerptId="goethe-willkommen-abschied" />);
+      const optA = screen.getByText(/从弱到强的抑扬格/);
+      fireEvent.click(optA);
+
+      // Diagnose-Tabs erscheinen
+      expect(screen.getByText("正解依据与锚点")).toBeInTheDocument();
+      expect(screen.getByText("干扰项深度诊断")).toBeInTheDocument();
+      expect(screen.getByText("时代思潮与哲学")).toBeInTheDocument();
+      expect(screen.getByText("高分句与EHZ")).toBeInTheDocument();
+      expect(screen.getByText("全景展开")).toBeInTheDocument();
+
+      // Klick auf EHZ-Tab
+      fireEvent.click(screen.getByText("高分句与EHZ"));
+      expect(screen.getByText(/德语高分答题句式/)).toBeInTheDocument();
+      expect(screen.getByText(/官方评分期望标准/)).toBeInTheDocument();
     });
   });
 });
