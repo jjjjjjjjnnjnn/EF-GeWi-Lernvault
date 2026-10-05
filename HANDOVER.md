@@ -142,9 +142,9 @@
 ### 1. 先跑门禁建基线（3 条命令，确认「全绿」不是文档声明）
 
 ```bash
-python scripts/vault-check.py                      # 期望 PASS(359/1400/275)
-cd App-EF-Lernvault && npx vitest run              # 期望 57 套件 / 379 测试
-cd App-EF-Lernvault && npm run build               # 期望 ✓ built
+python scripts/vault-check.py                      # 期望 PASS(notes=401, csv_rows=1921, reisen=356)
+cd App-EF-Lernvault && npx vitest run              # 期望 59 套件 / 398 测试 100% PASS
+cd App-EF-Lernvault && npm run build               # 期望 ✓ built (0 错误)
 ```
 
 ### 2. 外部 AI 海量内容搜集与批量充实（核心动作）— ✅ 已完成（2026-09-25）
