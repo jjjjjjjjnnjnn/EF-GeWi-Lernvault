@@ -433,7 +433,7 @@ export function Labor({ lang, onDiscussInTutor }: LaborProps) {
                 onClick={() => setIsStudioExpanded(!isStudioExpanded)}
                 className={`text-xs font-mono px-2.5 py-1 rounded border transition-colors flex items-center gap-1.5 ${
                   isStudioExpanded
-                    ? "border-[var(--accent)] bg-[var(--paper-subtle)] text-[var(--accent)] font-semibold shadow-xs"
+                    ? "border-[var(--accent)] bg-[var(--paper-subtle)] text-[var(--accent)] font-semibold shadow-none"
                     : "border-[var(--line)] bg-[var(--paper)] text-[var(--ink)] hover:border-[var(--accent)]"
                 }`}
                 title={isStudioExpanded ? tr.laborCollapseStudio : tr.laborExpandStudio}
@@ -523,13 +523,13 @@ export function Labor({ lang, onDiscussInTutor }: LaborProps) {
                     {lang === "de" ? "Themen-Kategorie:" : "实验专题分类:"}
                   </span>
                   {kategorieFilter === "alle" ? (
-                    <span className="text-[11px] font-mono px-2 py-0.5 rounded border border-[var(--line)] bg-[var(--paper-subtle)] text-[var(--gray)]">
+                    <span className="text-xs font-mono px-2 py-0.5 rounded border border-[var(--line)] bg-[var(--paper-subtle)] text-[var(--gray)]">
                       {lang === "de"
                         ? `Alle Kategorien (${availableCategories.length})`
                         : `全部专题 (${availableCategories.length} 个分类)`}
                     </span>
                   ) : (
-                    <span className="inline-flex items-center gap-1.5 text-[11px] font-mono px-2.5 py-0.5 rounded border border-[var(--accent)] bg-[var(--accent)] text-white font-medium shadow-xs">
+                    <span className="inline-flex items-center gap-1.5 text-xs font-mono px-2.5 py-0.5 rounded border border-[var(--accent)] bg-[var(--accent)] text-white font-medium shadow-none">
                       <span>
                         {(() => {
                           const match = availableCategories.find(
@@ -542,9 +542,12 @@ export function Labor({ lang, onDiscussInTutor }: LaborProps) {
                         type="button"
                         onClick={() => setKategorieFilter("alle")}
                         title={lang === "de" ? "Filter aufheben" : "清除分类筛选"}
+                        aria-label={lang === "de" ? "Filter aufheben" : "清除分类筛选"}
                         className="hover:opacity-80 font-bold ml-0.5 text-xs leading-none"
                       >
-                        ✕
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" className="w-3 h-3 inline-block">
+                          <path d="M4 4l8 8M12 4l-8 8" />
+                        </svg>
                       </button>
                     </span>
                   )}
@@ -647,9 +650,12 @@ export function Labor({ lang, onDiscussInTutor }: LaborProps) {
                   <button
                     type="button"
                     onClick={() => setSearchQuery("")}
-                    className="absolute right-2.5 top-1/2 -translate-y-1/2 text-xs font-mono text-[var(--gray)] hover:text-[var(--ink)]"
+                    aria-label={lang === "de" ? "Suche leeren" : "清空搜索"}
+                    className="absolute right-2.5 top-1/2 -translate-y-1/2 text-xs font-mono text-[var(--gray)] hover:text-[var(--ink)] flex items-center justify-center cursor-pointer"
                   >
-                    ✕
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" className="w-3.5 h-3.5">
+                      <path d="M4 4l8 8M12 4l-8 8" />
+                    </svg>
                   </button>
                 )}
               </div>
@@ -662,19 +668,19 @@ export function Labor({ lang, onDiscussInTutor }: LaborProps) {
               <div
                 key={sim.id}
                 onClick={() => setActiveSimId(sim.id)}
-                className="group border border-[var(--line)] bg-[var(--surface)] hover:border-[var(--accent)] rounded-[var(--radius)] p-4 flex flex-col justify-between transition-all cursor-pointer hover:shadow-md"
+                className="group border border-[var(--line)] bg-[var(--surface)] hover:border-[var(--accent)] rounded-[var(--radius)] p-4 flex flex-col justify-between transition-all cursor-pointer shadow-none"
               >
                 <div className="space-y-2">
                   <div className="flex items-center justify-between">
                     <div className="flex items-center gap-1.5">
-                      <span className="font-mono text-[10px] uppercase font-semibold text-[var(--accent)] px-1.5 py-0.5 rounded border border-[var(--accent)]/30 bg-[var(--accent)]/5">
+                      <span className="font-mono text-xs uppercase font-semibold text-[var(--accent)] px-1.5 py-0.5 rounded border border-[var(--accent)]/30 bg-[var(--accent)]/5">
                         {sim.fach}
                       </span>
-                      <span className="font-mono text-[10px] font-semibold text-[var(--ink)] px-1.5 py-0.5 rounded border border-[var(--line)] bg-[var(--paper-subtle)]">
+                      <span className="font-mono text-xs font-semibold text-[var(--ink)] px-1.5 py-0.5 rounded border border-[var(--line)] bg-[var(--paper-subtle)]">
                         {sim.stufe}
                       </span>
                     </div>
-                    <span className="text-[10px] font-mono text-[var(--gray)] truncate max-w-[130px]" title={lang === "de" ? sim.kategorieDE : sim.kategorieZH}>
+                    <span className="text-xs font-mono text-[var(--gray)] truncate max-w-[130px]" title={lang === "de" ? sim.kategorieDE : sim.kategorieZH}>
                       {lang === "de" ? sim.kategorieDE : sim.kategorieZH}
                     </span>
                   </div>
@@ -689,15 +695,15 @@ export function Labor({ lang, onDiscussInTutor }: LaborProps) {
 
                   {/* Formula Preview Box */}
                   {sim.formula && (
-                    <div className="font-mono text-[11px] text-[var(--ink)] bg-[var(--paper-subtle)] px-2.5 py-1.5 rounded border border-[var(--line)]/60 truncate" title={sim.formula}>
-                      <span className="text-[var(--gray)] select-none mr-1.5">📐</span>
+                    <div className="font-mono text-xs text-[var(--ink)] bg-[var(--paper-subtle)] px-2.5 py-1.5 rounded border border-[var(--line)]/60 truncate" title={sim.formula}>
+                      <span className="font-mono text-[var(--gray)] select-none mr-1.5">f(x)=</span>
                       {sim.formula}
                     </div>
                   )}
                 </div>
 
                 <div className="pt-3 border-t border-[var(--line)]/50 mt-3 flex items-center justify-between text-xs font-mono">
-                  <span className="text-[var(--gray)] text-[10px] font-mono truncate max-w-[180px]">
+                  <span className="text-[var(--gray)] text-xs font-mono truncate max-w-[180px]">
                     {lang === "de" ? sim.themenDE : sim.themenZH}
                   </span>
                   <span className="text-[var(--accent)] font-medium group-hover:translate-x-0.5 transition-transform flex items-center gap-1 shrink-0">

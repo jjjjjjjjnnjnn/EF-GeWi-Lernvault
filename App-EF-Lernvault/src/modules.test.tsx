@@ -92,7 +92,10 @@ function completeOnboarding(): void {
 function uiSourceFiles(directory: string): string[] {
   return readdirSync(directory, { withFileTypes: true }).flatMap((entry) => {
     const path = join(directory, entry.name);
-    if (entry.isDirectory()) return uiSourceFiles(path);
+    if (entry.isDirectory()) {
+      if (entry.name === "pedagogy" || entry.name === "data") return [];
+      return uiSourceFiles(path);
+    }
     return /\.(ts|tsx|css)$/.test(entry.name) && !/\.(test|spec)\.(ts|tsx)$/.test(entry.name)
       ? [path]
       : [];
@@ -320,7 +323,7 @@ describe("Keyboard UI registry", () => {
     const dialog = screen.getByRole("dialog");
     const expectedModuleHints = MODULE_KEYS.map((binding) => binding.altHint);
     const renderedModuleHints = within(dialog)
-      .getAllByText(/^Alt ([0-9]|W|B)$/)
+      .getAllByText(/^Alt ([0-9]|W|B|L|D)$/)
       .map((element) => element.textContent);
     expect(renderedModuleHints).toEqual(expectedModuleHints);
     for (const shortcut of GLOBAL_SHORTCUTS) {

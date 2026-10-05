@@ -82,7 +82,7 @@ function DepotStepWidget({ lang }: { lang: Lang }) {
       </div>
 
       {showFullLecture && (
-        <div className="p-4 border border-[var(--line)] bg-[var(--surface)] rounded-[var(--radius)] shadow-xs">
+        <div className="p-4 border border-[var(--line)] bg-[var(--surface)] rounded-[var(--radius)] shadow-none">
           <SowiDepotLecture lang={lang} />
         </div>
       )}
@@ -114,22 +114,22 @@ function CheckMarkSvg() {
 function BalanceScaleSvg() {
   return (
     <svg
-      width="14"
-      height="14"
-      viewBox="0 0 24 24"
+      width="16"
+      height="16"
+      viewBox="0 0 16 16"
       fill="none"
       stroke="currentColor"
-      strokeWidth="2"
+      strokeWidth="1.5"
       strokeLinecap="round"
       strokeLinejoin="round"
       aria-hidden="true"
       className="w-3.5 h-3.5 inline-block shrink-0"
     >
-      <path d="M12 3v18" />
-      <path d="M6 7l6-3 6 3" />
-      <path d="M6 7l-3 7h6l-3-7z" />
-      <path d="M18 7l-3 7h6l-3-7z" />
-      <path d="M8 21h8" />
+      <path d="M8 2v12" />
+      <path d="M4 5l4-2 4 2" />
+      <path d="M4 5l-2 5h4l-2-5z" />
+      <path d="M12 5l-2 5h4l-2-5z" />
+      <path d="M5 14h6" />
     </svg>
   );
 }
@@ -137,22 +137,22 @@ function BalanceScaleSvg() {
 function GamepadSvg() {
   return (
     <svg
-      width="14"
-      height="14"
-      viewBox="0 0 24 24"
+      width="16"
+      height="16"
+      viewBox="0 0 16 16"
       fill="none"
       stroke="currentColor"
-      strokeWidth="2"
+      strokeWidth="1.5"
       strokeLinecap="round"
       strokeLinejoin="round"
       aria-hidden="true"
       className="w-3.5 h-3.5 inline-block shrink-0"
     >
-      <rect x="2" y="6" width="20" height="12" rx="2" />
-      <path d="M6 12h4" />
-      <path d="M8 10v4" />
-      <line x1="15" y1="13" x2="15.01" y2="13" />
-      <line x1="18" y1="11" x2="18.01" y2="11" />
+      <rect x="1.5" y="4" width="13" height="8" rx="1.5" />
+      <path d="M4 8h3" />
+      <path d="M5.5 6.5v3" />
+      <line x1="10" y1="8.5" x2="10.01" y2="8.5" />
+      <line x1="12" y1="7.5" x2="12.01" y2="7.5" />
     </svg>
   );
 }
@@ -160,20 +160,20 @@ function GamepadSvg() {
 function LightbulbSvg() {
   return (
     <svg
-      width="14"
-      height="14"
-      viewBox="0 0 24 24"
+      width="16"
+      height="16"
+      viewBox="0 0 16 16"
       fill="none"
       stroke="currentColor"
-      strokeWidth="2"
+      strokeWidth="1.5"
       strokeLinecap="round"
       strokeLinejoin="round"
       aria-hidden="true"
       className="w-3.5 h-3.5 inline-block shrink-0"
     >
-      <path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5" />
-      <path d="M9 18h6" />
-      <path d="M10 22h4" />
+      <path d="M10 9.5c.1-.7.5-1.1 1-1.7.7-.6 1-1.5 1-2.3A4 4 0 0 0 4 5.5c0 .7.1 1.5 1 2.3.5.5.9.9 1 1.7" />
+      <path d="M6 12h4" />
+      <path d="M7 14h2" />
     </svg>
   );
 }
@@ -1968,7 +1968,7 @@ export default function ReiseModule({
               <span className="font-serif text-[var(--ink)] font-medium">
                 {activeCourse.fach} · {restoreGermanUmlauts(activeCourse.thema)}
               </span>
-              <span className={`text-[10px] font-mono px-1.5 py-0.5 rounded-[var(--radius)] border ${
+              <span className={`text-xs font-mono px-1.5 py-0.5 rounded-[var(--radius)] border ${
                 activeCourse.path.includes("-DE-")
                   ? "border-[var(--accent)] text-[var(--accent)]"
                   : "border-[var(--line)] text-[var(--gray)]"
@@ -1988,7 +1988,7 @@ export default function ReiseModule({
               >
                 {allReisen.map((r) => (
                   <option key={r.id} value={r.id}>
-                    [{r.fach}] {r.thema} {r.path.includes("Wertpapierdepot") ? "★ NEU" : ""}
+                    [{r.fach}] {r.thema} {r.path.includes("Wertpapierdepot") ? "[NEU]" : ""}
                   </option>
                 ))}
               </select>
@@ -2035,10 +2035,10 @@ export default function ReiseModule({
           </div>
 
           {/* Spotlight / New Release Card */}
-          <div className="rounded-[var(--radius)] border border-[var(--accent)]/40 bg-[var(--surface)] p-4 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 shadow-xs">
+          <div className="rounded-[var(--radius)] border border-[var(--accent)]/40 bg-[var(--surface)] p-4 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 shadow-none">
             <div className="space-y-1">
               <div className="flex items-center gap-2">
-                <span className="font-mono text-[10px] uppercase tracking-wider px-1.5 py-0.5 rounded bg-[var(--accent)] text-[var(--paper)] font-bold">
+                <span className="font-mono text-xs uppercase tracking-wider px-1.5 py-0.5 rounded bg-[var(--accent)] text-[var(--paper)] font-bold">
                   {lang === "de" ? "NEU ERSCHIENEN" : "最新上架"}
                 </span>
                 <span className="font-mono text-xs text-[var(--accent)] font-semibold">SoWi · Geldanlage & Finanzmärkte</span>

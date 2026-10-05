@@ -342,7 +342,20 @@ export default function Werkzeuge({
           <div className="rounded-lg border border-dashed border-[var(--line)] bg-[var(--paper-subtle)]/70 p-3.5 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 text-xs font-mono">
             <div className="space-y-0.5 font-sans">
               <span className="font-mono font-semibold text-[var(--ink)] flex items-center gap-1.5">
-                <span>🔬</span>
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="1.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  aria-hidden="true"
+                  className="w-3.5 h-3.5 text-current shrink-0"
+                >
+                  <path d="M6 1.5h4M8 1.5v4M4.5 9.5a3.5 3.5 0 0 0 7 0V5.5H4.5v4zM2.5 14.5h11" />
+                </svg>
                 <span>{lang === "de" ? "Physikalische & ökonomische Simulationen:" : "物理运动、导数极限与供求曲线沙盘："}</span>
               </span>
               <p className="text-[var(--gray)] text-xs leading-relaxed">

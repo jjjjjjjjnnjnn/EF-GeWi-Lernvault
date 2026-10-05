@@ -46,7 +46,7 @@ describe("L1 datei -> parser (echte vault-datei)", () => {
     expect(r!.schritte.map((s) => s.typ)).toEqual([
       "entdecken", "entdecken", "entdecken",
       "ausprobieren", "ausprobieren",
-      "check", "szenario", "entdecken",
+      "check", "szenario", "reflexion",
     ]);
     const s3 = r!.schritte[2];
     expect(s3.typ).toBe("entdecken");

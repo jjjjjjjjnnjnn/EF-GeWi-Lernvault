@@ -331,7 +331,7 @@ export default function Settings({
               {lang === "de" ? "Design-Lab in Navigation anzeigen" : "在侧边栏显示 Design-Lab (设计展厅)"}
             </span>
           </label>
-          <span className={`font-mono text-[10px] px-2 py-0.5 rounded border ${
+          <span className={`font-mono text-xs px-2 py-0.5 rounded border ${
             devMode
               ? "border-[var(--accent)] text-[var(--accent)] bg-[var(--accent)]/10"
               : "border-[var(--line)] text-[var(--gray)]"

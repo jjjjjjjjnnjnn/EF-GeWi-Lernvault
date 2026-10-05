@@ -158,8 +158,8 @@ describe("ReiseModule Document Mode & Sticky TOC", () => {
     expect(screen.queryByText(/These/i)).not.toBeInTheDocument();
 
     // 2. Must render the Bio Osmose simulator
-    expect(screen.getByText(/Biomembran & Osmose/i)).toBeInTheDocument();
-    expect(screen.getByText(/Wasserpotenzial-Simulator/i)).toBeInTheDocument();
+    expect(screen.getByText(/Osmose-Labor/i)).toBeInTheDocument();
+    expect(screen.getByText(/Inhaltsfeld 1: Biomembran/i)).toBeInTheDocument();
   });
 
   it("provides working back-to-top button in document view", async () => {

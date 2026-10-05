@@ -52,13 +52,13 @@ export function DesignLab({ lang }: { lang: Lang }) {
           <h1 className="font-serif text-lg font-bold text-[var(--ink)] whitespace-nowrap">
             {de ? "Didaktische Experimentierbühne" : "教学交互实验展厅"}
           </h1>
-          <span className="text-[11px] font-mono text-[var(--gray)] border-l border-[var(--line)] pl-2 hidden md:inline truncate">
+          <span className="text-xs font-mono text-[var(--gray)] border-l border-[var(--line)] pl-2 hidden md:inline truncate">
             {de ? activeDemoMeta.taglineDE : activeDemoMeta.taglineZH}
           </span>
         </div>
 
         {/* 核心工坊切换胶囊 */}
-        <div className="inline-flex rounded-md border border-[var(--line)] bg-[var(--paper-subtle)] p-0.5 shadow-2xs shrink-0">
+        <div className="inline-flex rounded-md border border-[var(--line)] bg-[var(--paper-subtle)] p-0.5 shadow-none shrink-0">
           {DEMO_OPTIONS.map((demo) => {
             const isSelected = demo.id === currentDemo;
             return (
@@ -68,7 +68,7 @@ export function DesignLab({ lang }: { lang: Lang }) {
                 onClick={() => setCurrentDemo(demo.id)}
                 className={`flex items-center gap-1.5 rounded px-2.5 py-1 text-xs transition cursor-pointer ${
                   isSelected
-                    ? "bg-[var(--surface)] text-[var(--ink)] font-semibold shadow-2xs border border-[var(--line)]"
+                    ? "bg-[var(--surface)] text-[var(--ink)] font-semibold shadow-none border border-[var(--line)]"
                     : "text-[var(--gray)] hover:text-[var(--ink)]"
                 }`}
               >

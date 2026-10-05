@@ -365,7 +365,7 @@ function InteractiveQuestionCard({ text, lang }: { text: string; lang?: string }
   return (
     <div className="my-3 rounded-[var(--radius)] border border-[var(--line)] bg-[var(--surface)] p-4 transition-all hover:border-[var(--accent)]/40 shadow-none">
       <div className="flex items-start gap-2.5">
-        <span className="shrink-0 font-mono text-[11px] font-bold uppercase tracking-wider text-[var(--accent)] bg-[var(--accent)]/10 px-2 py-0.5 rounded border border-[var(--accent)]/20 mt-0.5">
+        <span className="shrink-0 font-mono text-xs font-bold uppercase tracking-wider text-[var(--accent)] bg-[var(--accent)]/10 px-2 py-0.5 rounded border border-[var(--accent)]/20 mt-0.5">
           FRAGE
         </span>
         <div className="font-serif text-[15px] font-medium text-[var(--ink)] flex-1 leading-snug">
@@ -380,15 +380,26 @@ function InteractiveQuestionCard({ text, lang }: { text: string; lang?: string }
             onClick={() => setRevealed(true)}
             className="text-xs font-mono text-[var(--gray)] hover:text-[var(--accent)] flex items-center gap-1.5 transition-colors cursor-pointer"
           >
-            <svg className="w-3.5 h-3.5 text-current" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-              <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
-              <circle cx="12" cy="12" r="3" />
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="1.5"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              aria-hidden="true"
+              className="w-3.5 h-3.5 text-current shrink-0"
+            >
+              <path d="M1 8s2.5-5 7-5 7 5 7 5-2.5 5-7 5-7-5-7-5z" />
+              <circle cx="8" cy="8" r="2" />
             </svg>
             <span>{lang === "de" ? "Antwort aufdecken" : "查看权威采分解答 · Aufdecken"}</span>
           </button>
         ) : (
           <div className="flex items-start gap-2.5 animate-in fade-in duration-200">
-            <span className="shrink-0 font-mono text-[11px] font-bold uppercase tracking-wider text-[var(--success)] bg-[var(--success)]/10 px-2 py-0.5 rounded border border-[var(--success)]/20 mt-0.5">
+            <span className="shrink-0 font-mono text-xs font-bold uppercase tracking-wider text-[var(--success)] bg-[var(--success)]/10 px-2 py-0.5 rounded border border-[var(--success)]/20 mt-0.5">
               ANTWORT
             </span>
             <div className="font-serif text-[14.5px] text-[var(--ink)] leading-relaxed flex-1">
@@ -432,10 +443,21 @@ export default function Blocks({
               <h3 className="font-serif text-lg text-[var(--ink)] flex items-center gap-2">
                 {isAnekdote && (
                   <span className="font-mono text-xs uppercase tracking-wider px-2 py-0.5 rounded-[var(--radius)] border border-[var(--accent)]/40 text-[var(--accent)] font-semibold flex items-center gap-1.5">
-                    <svg className="w-3.5 h-3.5 text-current" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                      <circle cx="12" cy="12" r="10" />
-                      <line x1="12" y1="16" x2="12" y2="12" />
-                      <line x1="12" y1="8" x2="12.01" y2="8" />
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="1.5"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      aria-hidden="true"
+                      className="w-3.5 h-3.5 text-current shrink-0"
+                    >
+                      <circle cx="8" cy="8" r="6.5" />
+                      <line x1="8" y1="11" x2="8" y2="8" />
+                      <line x1="8" y1="5.5" x2="8.01" y2="5.5" />
                     </svg>
                     <span>Exkurs & Historischer Kontext</span>
                   </span>
@@ -536,7 +558,7 @@ export default function Blocks({
           return (
             <div
               key={i}
-              className={`my-3 border-l-3 border-[var(--accent)] pl-4 py-1.5 italic bg-[var(--paper-subtle)] rounded-r-[var(--radius)] ${
+              className={`my-3 border-l-2 border-[var(--accent)] pl-4 py-1.5 bg-[var(--paper-subtle)] rounded-r-[var(--radius)] ${
                 b.lang === "zh"
                   ? "font-sans text-sm text-[var(--gray)]"
                   : "font-serif text-[15px] text-[var(--ink)]"
@@ -550,14 +572,25 @@ export default function Blocks({
           if (renderDiagram) return <div key={i}>{renderDiagram(b.text, i)}</div>;
           return (
             <div key={i} className="my-3.5 rounded-[var(--radius)] border border-[var(--line)] bg-[var(--paper-subtle)] overflow-hidden shadow-none">
-              <div className="px-3.5 py-1.5 border-b border-[var(--line)] bg-[var(--surface)] flex items-center justify-between text-[11px] font-mono uppercase tracking-wider text-[var(--gray)]">
+              <div className="px-3.5 py-1.5 border-b border-[var(--line)] bg-[var(--surface)] flex items-center justify-between text-xs font-mono uppercase tracking-wider text-[var(--gray)]">
                 <div className="flex items-center gap-1.5">
-                  <svg className="w-3.5 h-3.5 text-[var(--accent)]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                    <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="1.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    aria-hidden="true"
+                    className="w-3.5 h-3.5 text-[var(--accent)] shrink-0"
+                  >
+                    <polyline points="14.5 8 12 8 10 14 6 2 4 8 1.5 8" />
                   </svg>
                   <span>Wirkungsmodell & Kausalkette</span>
                 </div>
-                <span className="text-[10px] text-[var(--accent)] font-mono font-medium">Flow</span>
+                <span className="text-xs text-[var(--accent)] font-mono font-medium">Flow</span>
               </div>
               <pre className="p-3.5 overflow-x-auto font-mono text-xs leading-relaxed text-[var(--ink)] whitespace-pre-wrap">
                 {b.text}
@@ -578,14 +611,25 @@ export default function Blocks({
             >
               <div className="flex items-center justify-between mb-1.5 pb-1 border-b border-[var(--accent)]/20">
                 <div className="flex items-center gap-1.5">
-                  <svg className="w-3.5 h-3.5 text-[var(--accent)]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="1.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    aria-hidden="true"
+                    className="w-3.5 h-3.5 text-[var(--accent)] shrink-0"
+                  >
+                    <polygon points="8 1.5 10 5.5 14.5 6 11 9.5 12 14 8 11.5 4 14 5 9.5 1.5 6 6 5.5 8 1.5" />
                   </svg>
-                  <span className="font-mono text-[11px] uppercase tracking-wider font-semibold text-[var(--accent)]">
+                  <span className="font-mono text-xs uppercase tracking-wider font-semibold text-[var(--accent)]">
                     Klausur-Punktegarant · 考点采分原句
                   </span>
                 </div>
-                <span className="text-[10px] font-mono text-[var(--gray)]">NRW Standard</span>
+                <span className="text-xs font-mono text-[var(--gray)]">NRW Standard</span>
               </div>
               <div className="font-serif text-[15px] font-medium leading-relaxed text-[var(--ink)]">
                 {renderFormattedText(b.text)}
@@ -610,10 +654,21 @@ export default function Blocks({
               className="my-3.5 p-4 rounded-[var(--radius)] border border-[var(--line)] bg-[var(--paper-subtle)]"
             >
               <div className="font-mono text-xs uppercase tracking-wider text-[var(--ink)] font-bold mb-2 flex items-center gap-2 pb-1.5 border-b border-[var(--line)]">
-                <svg className="w-4 h-4 text-[var(--accent)]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                  <circle cx="12" cy="12" r="10" />
-                  <circle cx="12" cy="12" r="6" />
-                  <circle cx="12" cy="12" r="2" />
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="1.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  aria-hidden="true"
+                  className="w-4 h-4 text-[var(--accent)] shrink-0"
+                >
+                  <circle cx="8" cy="8" r="6.5" />
+                  <circle cx="8" cy="8" r="4" />
+                  <circle cx="8" cy="8" r="1.5" />
                 </svg>
                 <span>Lernziele & Klausur-Fokus (3 Meilensteine)</span>
               </div>
@@ -631,10 +686,21 @@ export default function Blocks({
               key={i}
               className="my-4 p-4 rounded-[var(--radius)] border border-[var(--line)] bg-[var(--surface)] border-l-3 border-l-[var(--gray)] shadow-none"
             >
-              <div className="font-mono text-[11px] uppercase tracking-wider text-[var(--gray)] font-semibold mb-2 flex items-center gap-1.5 pb-1.5 border-b border-[var(--line)]/60">
-                <svg className="w-3.5 h-3.5 text-current" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                  <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
-                  <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" />
+              <div className="font-mono text-xs uppercase tracking-wider text-[var(--gray)] font-semibold mb-2 flex items-center gap-1.5 pb-1.5 border-b border-[var(--line)]/60">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="1.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  aria-hidden="true"
+                  className="w-3.5 h-3.5 text-current shrink-0"
+                >
+                  <path d="M2.5 13A1.5 1.5 0 0 1 4 11.5H13.5" />
+                  <path d="M4 1.5H13.5v13H4A1.5 1.5 0 0 1 2.5 13v-10A1.5 1.5 0 0 1 4 1.5z" />
                 </svg>
                 <span>Alltagsphänomen & Ausgangslage (Hook)</span>
               </div>
