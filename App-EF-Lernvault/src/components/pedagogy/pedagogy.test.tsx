@@ -353,6 +353,22 @@ describe("Pädagogische Komponenten (Pedagogy UI Library)", () => {
       expect(screen.getByText(/Funken des Neuanfangs/)).toBeInTheDocument();
       expect(screen.getByText(/极权主义的本质定义与总体恐怖的运转逻辑/)).toBeInTheDocument();
     });
+
+    it("laedt Max Weber Herrschaftssoziologie und analysiert Idealtypen", () => {
+      render(<GeWiReadingLab lang="zh" defaultExcerptId="weber-herrschaft" filterFach="SoWi" />);
+      expect(screen.getAllByText(/Max Weber/).length).toBeGreaterThan(0);
+      expect(screen.getAllByText(/Macht bedeutet jede Chance/).length).toBeGreaterThan(0);
+      expect(screen.getAllByText(/Gehäuse der Hörigkeit/).length).toBeGreaterThan(0);
+      expect(screen.getByText(/社会学核心基石：权力与支配的范畴分界/)).toBeInTheDocument();
+    });
+
+    it("laedt Juergen Habermas Strukturwandel der Oeffentlichkeit", () => {
+      render(<GeWiReadingLab lang="zh" defaultExcerptId="habermas-oeffentlichkeit" filterFach="SoWi" />);
+      expect(screen.getAllByText(/Jürgen Habermas/).length).toBeGreaterThan(0);
+      expect(screen.getAllByText(/zwanglose Zwang des besseren Arguments/).length).toBeGreaterThan(0);
+      expect(screen.getAllByText(/Refeudalisierung der Öffentlichkeit/).length).toBeGreaterThan(0);
+      expect(screen.getByText(/启蒙市民公共领域的规范性理想与三大支柱/)).toBeInTheDocument();
+    });
   });
 });
 

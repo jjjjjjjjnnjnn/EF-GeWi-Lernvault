@@ -2927,4 +2927,743 @@ export const GEWI_TEXT_REGISTRY: GeWiTextExcerpt[] = [
       },
     ],
   },
+  // =========================================================================
+  // 7. SOWI: Max Weber — Wirtschaft und Gesellschaft (支配类型与官僚制)
+  // =========================================================================
+  {
+    id: "weber-herrschaft",
+    fach: "SoWi",
+    genre: "Sachtext",
+    author: "Max Weber",
+    workTitleDE: "Wirtschaft und Gesellschaft",
+    workTitleZH: "《经济与社会》",
+    sceneTitleDE: "Die drei reinen Typen der legitimen Herrschaft",
+    sceneTitleZH: "合法统治的三种纯粹类型（法理型、传统型与超凡魅力型）",
+    versesRange: "Kap. 1, §16 & Kap. 3, §1–2",
+    epochDE: "Klassische Soziologie der Moderne (1922)",
+    epochZH: "现代经典政治社会学奠基 (1922)",
+    contextDE:
+      "Max Weber begründet die moderne Herrschafts- und Staatssoziologie: Macht ist jede Chance, den eigenen Willen auch gegen Widerstreben durchzusetzen. Herrschaft hingegen bedarf der Bereitschaft zum Gehorsam und gründet auf einem spezifischen Legitimitätsglauben. Weber unterscheidet drei reine Idealtypen legitimer Herrschaft: die rationale (legale), die traditionale und die charismatische Herrschaft.",
+    contextZH:
+      "马克斯·韦伯奠定了现代政治与支配社会学大厦：他将‘支配’（Herrschaft）与原始的‘权力’（Macht）严格剥离，指出稳定持久的政治秩序必然依赖于被统治者的‘合法性信仰’（Legitimitätsglaube）。韦伯抽象出三种纯粹的理想类型（Idealtypen）：法理型官僚统治（现代宪政与科层制）、传统型统治（宗法世袭与长老制）与卡里斯马超凡魅力型统治（英雄受难者与革命领袖）。",
+    verses: [
+      {
+        lineNum: 1,
+        textDE: "Macht bedeutet jede Chance, innerhalb einer sozialen Beziehung den eigenen Willen auch gegen Widerstreben durchzusetzen,",
+        translationZH: "权力意味着在一段社会关系内部，哪怕遭遇抵抗也依然能够贯彻自身意志的一切机会，",
+        toneCategory: "autoritaet",
+        stilmittel: {
+          type: "Fundamentale Begriffsdefinition (社会学权力基本定义)",
+          descDE: "Macht ist soziologisch amorph: Sie kann auf physischer Gewalt, Erpressung oder Überlistung beruhen.",
+          descZH: "权力具有非制度化的不定形性（amorph）：它可能源自暴力胁迫、经济勒索或奸巧欺诈，无法建立持久社会秩序。",
+        },
+      },
+      {
+        lineNum: 2,
+        textDE: "gleichviel worauf diese Chance beruht. Herrschaft aber ist ein Sonderfall von Macht.",
+        translationZH: "而无论这种强行推行意志的机会究竟依赖于何种粗糙基础。相比之下，‘支配’则是权力的一种特殊形态。",
+      },
+      {
+        lineNum: 3,
+        textDE: "Herrschaft soll heißen die Chance, für einen Befehl bestimmten Inhalts bei angebbaren Personen Gehorsam zu finden.",
+        translationZH: "所谓支配，乃是指一项具有特定内容的命令，能够在特定人群中获得自觉顺从与服从的机会。",
+        vocab: {
+          word: "Herrschaft vs. Macht",
+          meaningDE: "Herrschaft setzt die reale Chance voraus, dass ein Befehl als verbindlich anerkannt und befolgt wird.",
+          meaningZH: "支配对比权力：支配必须具备内在服从意愿（Gehorsamspflicht）与稳定制度化预期，而非赤裸裸的强弓硬弩。",
+        },
+      },
+      {
+        lineNum: 4,
+        textDE: "Jede echte Herrschaft pflegt den Glauben an ihre Legitimität zu erwecken und zu pflegen.",
+        translationZH: "任何真正持久的统治系统，都必然极力唤起并悉心培植人们对其‘统治合法性’（Legitimität）的深层信仰。",
+        toneCategory: "moral",
+      },
+      {
+        lineNum: 5,
+        textDE: "Je nach der Art des beanspruchten Legitimitätsglaubens ist der Typus der Herrschaft grundverschieden.",
+        translationZH: "依据统治者所标榜并诉诸的合法性信仰之性质不同，统治的类型亦有着本质分野。",
+      },
+      {
+        lineNum: 6,
+        textDE: "Es gibt drei reine Typen legitimer Herrschaft: Erstens rationalen Charakters, zweitens traditionalen Charakters, drittens charismatischen Charakters.",
+        translationZH: "合法统治存在三种纯粹类型：第一种是法理/理性维度的统治，第二种是传统维度的统治，第三种是超凡魅力（卡里斯马）维度的统治。",
+        vocab: {
+          word: "Drei Idealtypen",
+          meaningDE: "Reine Gedankenkonstruktionen zur methodischen Analyse der empirischen Wirklichkeit.",
+          meaningZH: "三大理想类型：韦伯用于提炼现实政治制度特征的方法论纯粹概念，现实政体多为三者的混合体。",
+        },
+      },
+      {
+        lineNum: 7,
+        textDE: "Rationale Herrschaft beruht auf dem Glauben an die Legalität gesatzter Ordnungen",
+        translationZH: "法理型（理性）统治奠基于人们对经由成文法定程序制定的法规制度之合法性的确信，",
+        toneCategory: "streben",
+      },
+      {
+        lineNum: 8,
+        textDE: "und das Anweisungsrecht der durch sie zur Ausübung der Herrschaft Berufenen (legale Herrschaft).",
+        translationZH: "以及对依法被赋予统治职权者所行使之命令权的崇高认可（现代法治国与宪政国家）。",
+        stilmittel: {
+          type: "Unpersönliche Sachlichkeit (非人格化客观法治原则)",
+          descDE: "Man gehorcht nicht der Person des Vorgesetzten, sondern dem unpersönlichen Gesetz.",
+          descZH: "公民服从的不是长官个人的私欲偏好，而是服从客观中立、人人平等的法律秩序抽象规则。",
+        },
+      },
+      {
+        lineNum: 9,
+        textDE: "Der reinste Typus der legalen Herrschaft ist die bürokratische Verwaltung durch Fachbeamte.",
+        translationZH: "法理型统治最纯粹、最高效的组织体现，便是由专业技术文官构成的‘科层制官僚行政’（Bürokratie）。",
+        vocab: {
+          word: "Bürokratie",
+          meaningDE: "Präzise, unpersönliche, aktenmäßige und arbeitsteilige Verwaltung durch geschulte Spezialisten.",
+          meaningZH: "官僚科层制：依靠分工、专业资历、文书案卷归档与层级节制，成为人类历史上理性效率最高的管理机器。",
+        },
+      },
+      {
+        lineNum: 10,
+        textDE: "Traditionale Herrschaft beruht auf dem Alltagsglauben an die Heiligkeit von jeher geltender Traditionen",
+        translationZH: "传统型统治则奠基于人们对亘古以来代代相传之习俗传统的不可侵犯的神圣日常信仰，",
+        toneCategory: "existenz",
+      },
+      {
+        lineNum: 11,
+        textDE: "und die Legitimität der durch sie zur Autorität Berufenen (Patriarchalismus, Feudalismus).",
+        translationZH: "以及对依据古老宗法传统而被赋予家长式世袭统治权威者的顺从（如封建君主制与宗族世袭酋长）。",
+        vocab: {
+          word: "Traditionale Herrschaft",
+          meaningDE: "Gehorsam aus Pietät gegenüber dem Herkommen ('Weil es immer so war').",
+          meaningZH: "传统型统治：因循守旧与敬祖崇古——服从的法理源自‘自古以来向来如此’的惯性权威。",
+        },
+      },
+      {
+        lineNum: 12,
+        textDE: "Charismatische Herrschaft beruht auf der außeralltäglichen Hingabe an die Heiligkeit oder Heldenkraft",
+        translationZH: "超凡魅力型（卡里斯马）统治，则奠基于对某一个体非凡的超常神圣性、英雄伟力，",
+        toneCategory: "leidenschaft",
+      },
+      {
+        lineNum: 13,
+        textDE: "oder die Vorbildlichkeit einer Person und der durch sie offenbarten oder geschaffenen Ordnungen (Charisma).",
+        translationZH: "或人格楷模特质的狂热个人崇拜与全心奉献，以及对其所宣告之新启示、新秩序的神圣归顺（如宗教先知、革命领袖、军事统帅）。",
+        vocab: {
+          word: "Charisma (Gnadengabe)",
+          meaningDE: "Außeralltägliche persönliche Qualität, die als übermenschlich oder vorbildlich gilt.",
+          meaningZH: "卡里斯马（恩赐魅力）：打破一切官僚与传统束缚的革命性狂澜力量，完全依赖于领袖本人的非凡神迹或功业确证。",
+        },
+      },
+      {
+        lineNum: 14,
+        textDE: "Das Charisma ist die spezifisch revolutionäre Macht in traditionalen und bürokratischen Epochen.",
+        translationZH: "超凡魅力乃是传统因循时代与死气沉沉官僚时代中最具颠覆性、破旧立新的革命性伟力。",
+        stilmittel: {
+          type: "Dialektischer Revolutionsfunke (历史变迁的革命火种)",
+          descDE: "Charisma bricht die Regeln: 'Es steht geschrieben, ich aber sage euch...'",
+          descZH: "卡里斯马是打破成规的利剑：借由‘经上固然有云，我却向你们宣告……’的领袖意志重塑历史走向。",
+        },
+      },
+      {
+        lineNum: 15,
+        textDE: "Aber das Charisma kann nicht dauerhaft bestehen, ohne sich zu veralltäglichen.",
+        translationZH: "然而超凡魅力绝无法长期保持狂热原初态，若要维系，它就必须无可避免地经历‘超凡魅力的日常化’（Veralltäglichung des Charismas）。",
+        vocab: {
+          word: "Veralltäglichung des Charismas",
+          meaningDE: "Übergang von der personalen Ausnahmebeziehung in institutionalisierte Traditionalisierung oder Bürokratisierung.",
+          meaningZH: "魅力日常化：当第一代革命领袖离世，其超凡权威必须转化为血缘世袭宗族（传统化）或文官组织制度（科层制），否则政权立时瓦解。",
+        },
+      },
+      {
+        lineNum: 16,
+        textDE: "Moderne Demokratien bedürfen des Rechtsstaats, drohen aber im 'Gehäuse der Hörigkeit' zu erstarren.",
+        translationZH: "现代民主国家固然迫切需要科层法治国以维系运转，却也时刻面临着窒息于冰冷僵死‘现代奴役铁笼’（Gehäuse der Hörigkeit）中的巨大险境。",
+        toneCategory: "krise",
+        stilmittel: {
+          type: "Kulturpessimistische Warnmetapher (现代性官僚铁笼隐喻)",
+          descDE: "Webers Warnung vor der totalen Entzauberung und Erstarrung im bürokratischen Räderwerk.",
+          descZH: "韦伯对现代性的深层忧患：过度形式理性与专业官僚分工，可能彻底扼杀个体自由、责任心与灵性活力。",
+        },
+      },
+    ],
+    questions: [
+      {
+        id: "q-weber-1",
+        dimension: "argumentation",
+        titleDE: "1. Soziologische Differenzierung von Macht und Herrschaft",
+        titleZH: "社会学核心基石：权力与支配的范畴分界",
+        afb: "AFB I",
+        questionDE:
+          "Worin besteht nach Max Weber der kategoriale Unterschied zwischen 'Macht' und 'Herrschaft'?",
+        questionZH:
+          "在马克斯·韦伯的社会学体系中，‘权力’（Macht）与‘支配/统治’（Herrschaft）之间存在着何种决定性的范畴分界？",
+        options: [
+          {
+            id: "a",
+            textDE:
+              "Macht ist jede amorphe Chance, den eigenen Willen gegen Widerstreben durchzusetzen; Herrschaft hingegen ist institutionalisiert und setzt die begründete Chance voraus, für einen Befehl spezifischen Gehorsam zu finden.",
+            textZH:
+              "权力是哪怕遭遇抵抗也能强行贯彻意志的任何不定形机会（包括强盗勒索）；而支配则是高度制度化的形态，必须具备一项特定命令能够获得被统治者内在自觉顺从与服从（Gehorsam）的稳定概率。",
+            isCorrect: true,
+          },
+          {
+            id: "b",
+            textDE:
+              "Macht besitzen ausschließlich Frauen, während Herrschaft nur von Männern ausgeübt wird.",
+            textZH:
+              "权力专属于女性在家庭内部行使，而支配统治则是男性在工厂车间劳动中的专利。",
+            isCorrect: false,
+          },
+          {
+            id: "c",
+            textDE:
+              "Macht und Herrschaft sind bloße Synonyme für das Besitzen von möglichst viel Geld auf einem Bankkonto.",
+            textZH:
+              "权力与支配完全是同义词，仅仅用来指代某人在瑞士银行账户中拥有多少数额的黄金储备。",
+            isCorrect: false,
+          },
+        ],
+        explanationDE:
+          "Macht ist soziologisch instabil (Zwang vergeht, sobald die Waffe sinkt). Herrschaft ist dauerhaft, weil die Beherrschten den Befehl als bindend anerkennen (Legitimität).",
+        explanationZH:
+          "【正解依据与文本锚点】\n文本第 1–3 行严格界定：‘Macht bedeutet jede Chance... den eigenen Willen auch gegen Widerstreben durchzusetzen... Herrschaft soll heißen die Chance, für einen Befehl... Gehorsam zu finden.’持枪抢劫者对受害者拥有瞬间的‘权力’，但绝非拥有‘支配’。因为受害者一旦脱身就会报警反抗；而国家交警的一声哨响却能让司机自觉刹车靠边，这背后正是‘服从义务’与‘合法性信仰’在发挥制度效能。\n\n【干扰项逐项诊断】\n• 选项 B 诊断（庸俗性别偏见）：韦伯讨论的是纯粹社会关系的形式结构，绝非生物学生别划分；\n• 选项 C 诊断（狭隘经济还原论）：金钱是权力资源之一，但绝不能等同于社会学统治本身。\n\n【时代思潮与哲学脉络】\n理解社会学（Verstehende Soziologie）：韦伯强调社会行动必须包含行动者所赋予的‘主观意义’（subjektiv gemeinter Sinn）。统治之所以成立，关键在于被统治者在心中‘认为该命令是合法的’。",
+        klausurSatzDE:
+          "Weber scheidet Macht als soziologisch amorphe Durchsetzungschance von Herrschaft, welche sich als qualifizierte Machtform durch das Vorhandensein eines Gehorsamsapparates und den Legitimitätsglauben der Beherrschten auszeichnet.",
+        klausurSatzZH:
+          "韦伯将权力界定为社会学上无定形的意志强加概率，并将其与支配严格剥离：支配作为一种高级别的权力形态，其根本特质在于稳定服从机构的存在以及被统治者心中所确立的合法性信仰。",
+        ehzKeyPointsDE: [
+          "Präzise Definition beider Begriffe nach Weber.",
+          "Herausarbeitung des Gehorsams- und Legitimitätskriteriums als Differenzierungsmerkmal.",
+        ],
+        ehzKeyPointsZH: [
+          "采分点 1 (Begriffsdefinition 4P)：精准复述韦伯对 Macht（贯彻意志的机会）与 Herrschaft（获得特定服从的机会）的标准定义。",
+          "采分点 2 (Legitimitätskriterium 4P)：透彻阐明‘合法性信仰与自觉顺从’是权力转化为稳定制度化支配的唯一枢纽。",
+        ],
+      },
+      {
+        id: "q-weber-2",
+        dimension: "theorie",
+        titleDE: "2. Merkmale der rational-legalen Herrschaft und Bürokratie",
+        titleZH: "法理型统治的制度机理与现代官僚科层制特征",
+        afb: "AFB II",
+        questionDE:
+          "Welche Strukturmerkmale kennzeichnen nach Weber die 'rationale Herrschaft' und machen die moderne Bürokratie zur überlegensten Verwaltungsform?",
+        questionZH:
+          "根据韦伯的理想类型理论，哪些制度结构特征定义了‘法理型统治’，并使现代科层官僚制成为人类文明中技术上最理性的行政机器？",
+        options: [
+          {
+            id: "a",
+            textDE:
+              "Unpersönliche Gesetzmäßigkeit, feste sachliche Kompetenzen, Diensthierarchie, Aktenmäßigkeit und die hauptamtliche Fachschulung der Beamten; man gehorcht dem unpersönlichen Gesetz, nicht der Person.",
+            textZH:
+              "非人格化的普遍成文法规、法定明确的职务管辖权、层级节制的职务等级制、严格的书面公文案卷归档（Aktenmäßigkeit）以及专业文官的专职化技术培训；公众服从的是非人格的法律规章，而非官吏个人的私欲。",
+            isCorrect: true,
+          },
+          {
+            id: "b",
+            textDE:
+              "Regierungsämter werden ausschließlich an die Verwandten des Herrschers vererbt, und alle Beamten arbeiten unbezahlt aus reinem Mitleid.",
+            textZH:
+              "所有政府官职完全世袭垄断给统治者亲戚后代，且全部官员出于对贫苦百姓的怜悯自愿不领取任何薪资。",
+            isCorrect: false,
+          },
+          {
+            id: "c",
+            textDE:
+              "Gesetze werden durch spontane Orakel und magische Rituale im Wald beschlossen, die jeden Tag geändert werden.",
+            textZH:
+              "国家法律每日由森林巫师通过神秘占卜与通灵巫术临时决定，并且朝令夕改绝无章法。",
+            isCorrect: false,
+          },
+        ],
+        explanationDE:
+          "Die Bürokratie ist der Inbegriff der Zweckrationalität: Berechenbar, kontinuierlich, sachlich und frei von Willkür. Sie ist der Verwaltung durch Dilettanten technisch haushoch überlegen.",
+        explanationZH:
+          "【正解依据与文本锚点】\n文本第 7–9 行深入论证：‘Rationale Herrschaft beruht auf dem Glauben an die Legalität gesatzter Ordnungen... Der reinste Typus der legalen Herrschaft ist die bürokratische Verwaltung durch Fachbeamte.’与封建主凭喜怒哀乐赐恩、巫师占卜判案相比，现代科层制以精准、稳定、严格纪律与高度可预测性（Berechenbarkeit）运行，如同高精度的工业钟表，构成了工业社会大生产与现代法治国的支柱。\n\n【干扰项逐项诊断】\n• 选项 B 诊断（宗法家产制特征）：裙带世袭是传统型统治（Patrimonialismus）的病灶，正是现代科层制所力图根除的；\n• 选项 C 诊断（原始巫术迷信）：混淆了前现代卡里斯马巫术与理性法理统治。\n\n【时代思潮与哲学脉络】\n世界的祛魅（Entzauberung der Welt）：伴随着理性化进程，一切神秘迷信的魔力皆从公共行政中被驱逐殆尽，取而代之的是冷峻精密的规则与数据。",
+        klausurSatzDE:
+          "Die Überlegenheit der rational-legalen Herrschaft kristallisiert sich im bürokratischen Verwaltungsstab: Durch Sachlichkeit, geschriebene Rechtsnormen, funktionale Arbeitsteilung und Aktenmäßigkeit substituiert sie willkürliche Despotie durch berechenbare Institutionenordnung.",
+        klausurSatzZH:
+          "法理型统治的制度优越性集中结晶于科层官僚行政系统：通过非人格的客观性、成文法规范、专业化职能分工与严密的文书归档机制，它以高度可预测的现代制度秩序彻底取代了前现代的专横暴虐。",
+        ehzKeyPointsDE: [
+          "Benennung der Kernmerkmale moderner Bürokratie (Hierarchie, Sachkompetenz, Aktenführung).",
+          "Erklärung des Übergangs von personaler zu unpersonaler Herrschaftslegitimation.",
+        ],
+        ehzKeyPointsZH: [
+          "采分点 1 (Bürokratie-Merkmale 4P)：清晰列举现代科层官僚制的核心特征（层级制、专业化、公私分离、文卷主义）。",
+          "采分点 2 (Entpersonalisierung 4P)：精准分析从‘服从领袖个人’向‘服从抽象法律条文’的历史飞跃。",
+        ],
+      },
+      {
+        id: "q-weber-3",
+        dimension: "figuren",
+        titleDE: "3. Charisma und das Problem der Veralltäglichung",
+        titleZH: "卡里斯马权威的爆发力与其日常化困境",
+        afb: "AFB II",
+        questionDE:
+          "Warum ist die 'charismatische Herrschaft' nach Max Weber zwar eine radikal revolutionäre Kraft, aber zugleich strukturell instabil und zur 'Veralltäglichung' verurteilt?",
+        questionZH:
+          "为何在韦伯的论析中，‘卡里斯马型统治’虽具有席卷一切旧秩序的激进革命性伟力，却在结构上具有致命的脆弱性，且注定难逃‘日常化’（Veralltäglichung）的命运？",
+        options: [
+          {
+            id: "a",
+            textDE:
+              "Weil Charisma an die konkrete, sterbliche Person des Führers und den ständigen Erfolgsnachweis (Bewährung) gebunden ist; mit dem Tod des Führers oder dem Ausbleiben von Erfolgen muss die Bewegung entweder zerfallen oder in dauerhafte traditional-bürokratische Institutionen überführt werden.",
+            textZH:
+              "因为超凡魅力完全绑定于领袖肉身这一终将死亡的具象个体，并高度依赖于持续不断的战功或神迹确证（Bewährung）；一旦领袖离世或功业受挫，卡里斯马运动若不想立时作鸟兽散，就必须被迫转型为制度化的传统世袭或理性科层组织。",
+            isCorrect: true,
+          },
+          {
+            id: "b",
+            textDE:
+              "Weil charismatische Führer grundsätzlich keine Zähne haben und deshalb in der Politik nicht verstanden werden können.",
+            textZH:
+              "因为卡里斯马型领袖天生不具备演说口才，因此在现代大众政治集会中完全无法与选民沟通。",
+            isCorrect: false,
+          },
+          {
+            id: "c",
+            textDE:
+              "Weil die Bundesbank es gesetzlich verbietet, dass charismatische Menschen in Deutschland Parteien gründen.",
+            textZH:
+              "因为联邦中央银行在金融监管法律中明文禁止具有个人魅力的公民加入政治政党。",
+            isCorrect: false,
+          },
+        ],
+        explanationDE:
+          "Charisma ist 'außeralltäglich'. Menschen können aber nicht ewig im Ausnahmezustand leben. Steuern müssen erhoben, Nachfolger geregelt werden – das Charisma erkaltet und wird Institution.",
+        explanationZH:
+          "【正解依据与文本锚点】\n文本第 13–15 行指出：‘Charismatische Herrschaft beruht auf der außeralltäglichen Hingabe... Aber das Charisma kann nicht dauerhaft bestehen, ohne sich zu veralltäglichen.’卡里斯马处于极端的‘超常状态’（außeralltäglich）。领袖活着时可以呼风唤雨，但一旦生老病死，‘谁是接班人’的问题就会引发灭顶之灾。为了生存，其随从门徒必须收税发薪、制定规则——革命的烈火由此冷却结晶为死板的日常官僚机构。\n\n【干扰项逐项诊断】\n• 选项 B 诊断（无厘头人身矮化）：卡里斯马领袖往往具备极具煽动力的雄辩魅力；\n• 选项 C 诊断（法律常识错乱）：中央银行无权干涉政党结社自由，偷换概念。\n\n【时代思潮与哲学脉络】\n魅力与例行公事的辩证法：基督教早期耶稣的超凡魅力在他受难后，迅速通过使徒行传、主教任命与罗马教廷法典化，完成了从个人卡里斯马到‘制度卡里斯马’（Amtscharisma）的经典日常化蜕变。",
+        klausurSatzDE:
+          "Die immanente Aporie charismatischer Herrschaft wurzelt in ihrer Personenfixierung: Da die außeralltägliche Gnadengabe an der Endlichkeit des Führers scheitert, erzwingt das Kontinuitätsbedürfnis der Anhängerschaft die unvermeidliche 'Veralltäglichung' in legale oder traditionale Dauerstrukturen.",
+        klausurSatzZH:
+          "卡里斯马型统治的内在悖论植根于其激进的人格化依附：由于超凡的恩赐魅力必然受挫于领袖肉身的有限性，追随者对秩序延续性的现实诉求，便倒逼卡里斯马不可逆转地‘日常化’为法理型或传统型的持久体制结构。",
+        ehzKeyPointsDE: [
+          "Charakterisierung des Charismas als personale, außeralltägliche Ausnahmeform.",
+          "Analyse des Nachfolgeproblems und der Mechanismen der Veralltäglichung.",
+        ],
+        ehzKeyPointsZH: [
+          "采分点 1 (Charisma-Dynamik 4P)：精准阐发卡里斯马超常性、反建制性与依赖‘功业确证’的脆弱心理机制。",
+          "采分点 2 (Veralltäglichung 4P)：深刻剖析接班人危机如何不可抗拒地驱动革命政体滑向官僚科层化或宗法传统化。",
+        ],
+      },
+      {
+        id: "q-weber-4",
+        dimension: "theorie",
+        titleDE: "4. Kulturkritik: Das 'Gehäuse der Hörigkeit' und moderne Demokratie",
+        titleZH: "现代性文化批判：官僚‘奴役铁笼’与宪政民主防线",
+        afb: "AFB III",
+        questionDE:
+          "Inwiefern birgt Webers soziologische Diagnose des drohenden 'Gehäuses der Hörigkeit' (Bürokratisierung) eine hochaktuelle Warnung für moderne westliche Demokratien?",
+        questionZH:
+          "在反思现代西方民主制度困局时，马克斯·韦伯所提出的官僚‘现代奴役铁笼’（Gehäuse der Hörigkeit）警世预言，在何种意义上构成了对现代宪政体系最深刻的批判警钟？",
+        options: [
+          {
+            id: "a",
+            textDE:
+              "Weil die vollendete bürokratische Zweckrationalität dazu tendiert, lebendige demokratische Willensbildung durch unhinterfragbare Sachzwänge und anonyme Verwaltungsroutine zu ersetzen; der Bürger droht vom autonomen Staatsbürger (Citoyen) zum bloßen verwalteten Objekt degradiert zu werden.",
+            textZH:
+              "因为极致发展的工具理性与技术官僚制，极易用所谓‘客观不可逆的冰冷客观必要性’（Sachzwänge）和冷漠的行政例行公事，全面架空甚至扼杀鲜活的公民民主意志表达；主权公民面临着从拥有政治自主权的城邦主体，退化为被官僚流水线全方位规训与支配的消极客体。",
+            isCorrect: true,
+          },
+          {
+            id: "b",
+            textDE:
+              "Weil Bürokratie bedeutet, dass alle Bürger gezwungen werden, jeden Tag acht Stunden in einem echten Käfig aus Stahl und Eisen zu schlafen.",
+            textZH:
+              "因为官僚制的字面意思是指国家强制要求所有公民每晚必须在钢铁锻造的真正物理铁笼中睡满八小时。",
+            isCorrect: false,
+          },
+          {
+            id: "c",
+            textDE:
+              "Weber wollte damit ausdrücken, dass es überhaupt keine Probleme mit Behörden gibt und Formulare immer Freude bereiten.",
+            textZH:
+              "韦伯借此仅仅是想表达政府行政部门没有任何弊端，填写政务申请表格始终能为人民带来无尽的快乐与幸福。",
+            isCorrect: false,
+          },
+        ],
+        explanationDE:
+          "Das Gehäuse der Hörigkeit meint die Herrschaft der Experten ohne Geist, der Fachmenschen ohne Herz. Demokratie verkümmert, wenn Politiker nur noch verwalten statt visionär zu führen.",
+        explanationZH:
+          "【正解依据与文本锚点】\n文本第 16 行凝结着韦伯毕生最沉重的叹息：‘Moderne Demokratien bedürfen des Rechtsstaats, drohen aber im Gehäuse der Hörigkeit zu erstarren.’官僚制拥有不可战胜的行政效率，但也孕育着‘专职文官专政’的风险。当政客将一切政治争议皆推脱为‘专家技术报告的唯一客观选择’时，议会的政治辩论便彻底沦为空转，公民对民主制度的效能感被彻底掏空。\n\n【干扰项逐项诊断】\n• 选项 B 诊断（可笑的字面物理化误读）：把深刻的社会学隐喻当成了动物园物理围栏；\n• 选项 C 诊断（彻底颠倒批判立场）：韦伯是极具清醒现实感的现代性批判大师，绝非盲目的官僚赞歌唱家。\n\n【时代思潮与哲学脉络】\n价值理性 vs. 工具理性：法兰克福学派（阿多诺、哈贝马斯）直接继承了韦伯的这一批判，警告大众警惕‘行政管理的世界’（verwaltete Welt）对人的主体性的异化吞噬。",
+        klausurSatzDE:
+          "In weitsichtiger Kulturkritik diagnostiziert Weber das bürokratische 'Gehäuse der Hörigkeit' als latente Totalitarismusgefahr der Moderne: Wenn unpersönliche Sachzwanglogik das primatpolitische Ethos verdrängt, erstarrt die rechtsstaatliche Demokratie zum technokratischen Verwaltungsregime ohne bürgerschaftliche Vitalität.",
+        klausurSatzZH:
+          "在极具远见的文化批判中，韦伯将科层官僚的‘奴役铁笼’诊断为现代性潜在的系统性危机：一旦非人格的‘客观必要性逻辑’彻底驱逐了政治伦理与价值决断，宪政民主体制便极易僵化蜕变为空有程序空壳、丧失公民民主生命力的纯技术官僚专政。",
+        ehzKeyPointsDE: [
+          "Verständnis der Metapher 'Gehäuse der Hörigkeit' (Technokratie- und Bürokratiekritik).",
+          "Aktualisierung für moderne Probleme der Sachzwangpolitik und Partizipationskrise.",
+        ],
+        ehzKeyPointsZH: [
+          "采分点 1 (Metapher-Deutung 4P)：精准阐释‘奴役铁笼’隐喻背后的形式理性过度膨胀与技术官僚专政风险。",
+          "采分点 2 (Demokratiebezug 4P)：高度对接现代代议民主中的公民政治冷漠、客观必要性政治（Sachzwangpolitik）与民粹反弹危机。",
+        ],
+      },
+    ],
+  },
+  // =========================================================================
+  // 8. SOWI: Jürgen Habermas — Strukturwandel der Öffentlichkeit
+  // =========================================================================
+  {
+    id: "habermas-oeffentlichkeit",
+    fach: "SoWi",
+    genre: "Sachtext",
+    author: "Jürgen Habermas",
+    workTitleDE: "Strukturwandel der Öffentlichkeit",
+    workTitleZH: "《公共领域的结构转型》",
+    sceneTitleDE: "Bürgerliche Öffentlichkeit und Refeudalisierung",
+    sceneTitleZH: "市民公共领域的理性批判功能与大众媒介时代的再封建化",
+    versesRange: "§ 4 & § 19 (Auszüge)",
+    epochDE: "Kritische Theorie / Diskursethik (1962)",
+    epochZH: "法兰克福学派批判理论 / 商谈伦理学 (1962)",
+    contextDE:
+      "Jürgen Habermas analysiert Entstehung und Zerfall der bürgerlichen Öffentlichkeit: Im 18. Jahrhundert formierte sich in Salons und Kaffeehäusern ein Publikum privater Bürger, die durch rationales Räsonnement (den 'zwanglosen Zwang des besseren Arguments') die absolutistische Geheimpolitik herausforderten. Im 20. Jahrhundert mutiert diese diskursive Öffentlichkeit unter dem Einfluss von Massenmedien, Public Relations und Konsumindustrie zurück in eine passive Schau-Bühne ('Refeudalisierung der Öffentlichkeit').",
+    contextZH:
+      "尤尔根·哈贝马斯对近代市民公共领域的诞生与蜕变做出了划时代的病理学诊断：18世纪启蒙时代，私人个体在咖啡馆、报刊与沙龙中汇聚为公众，凭借平等理性的公开辩论（Räsonnement）和‘更好论据的无强制力量’，撕开了封建王权密室政治的黑幕，确立了民主合法性根基。然而进入20世纪，在大众传媒垄断、商业公关广告与消费主义狂潮的侵蚀下，批判性的公共讨论急剧退化为被动的政治奇观与选秀作秀，公共领域遭遇了悲剧性的‘再封建化’（Refeudalisierung）。",
+    verses: [
+      {
+        lineNum: 1,
+        textDE: "Die bürgerliche Öffentlichkeit lässt sich vorerst als die Sphäre der zum Publikum versammelten Privatleute begreifen.",
+        translationZH: "市民公共领域首先可以被理解为汇聚为公众的私人个体所构成的自由交往领域。",
+        toneCategory: "streben",
+        stilmittel: {
+          type: "Soziologische Grundlegung (公共领域经典定义)",
+          descDE: "Die Trennung von Staat (öffentliche Gewalt) und bürgerlicher Gesellschaft (Privatsphäre).",
+          descZH: "确立现代政治学基础架构：在国家公共权力机器与市民社会私人领域之间，诞生了一个独立的第三空间——公共舆论场。",
+        },
+      },
+      {
+        lineNum: 2,
+        textDE: "Sie beanspruchten die vom Staat reglementierte Sphäre der öffentlichen Gewalt gegen diese selbst,",
+        translationZH: "他们向受国家管制的公共权力领域发起抗辩，甚至将矛头直指统治机器本身，",
+      },
+      {
+        lineNum: 3,
+        textDE: "um sich mit ihr über die allgemeinen Regeln des Verkehrs in der grundlegend privatisierten Sphäre auseinanderzusetzen.",
+        translationZH: "旨在就商品交换与社会再生产这一根本私域交往的普遍性规则，同国家政权展开公开辩驳与讲理交锋。",
+      },
+      {
+        lineNum: 4,
+        textDE: "Das Medium dieser Auseinandersetzung war das öffentliche Räsonnement der denkenden Privatleute.",
+        translationZH: "而这场划时代思想交锋的唯一媒介，正是拥有批判思考能力的私人个体在公共空间中的理性商谈辩驳（Räsonnement）。",
+        vocab: {
+          word: "Öffentliches Räsonnement",
+          meaningDE: "Gebrauch der Vernunft in freier Diskussion zur Überprüfung von Geltungsansprüchen.",
+          meaningZH: "理性批判辩驳（Räsonnement）：超越宗族私利，基于逻辑论据和事实真相展开的公共审思与质疑过程。",
+        },
+      },
+      {
+        lineNum: 5,
+        textDE: "Drei Kriterien konstituieren das Ideal der bürgerlichen Öffentlichkeit: Erstens das Absehen von Stand und Status,",
+        translationZH: "三大崇高法则共同筑成了市民公共领域的规范性理想：第一是彻底悬置并无视现实中的身份等级与特权地位，",
+        toneCategory: "moral",
+        stilmittel: {
+          type: "Normatives Postulat der Gleichheit (交往平等假定)",
+          descDE: "Im Diskurs zählt nur die Kraft des Arguments, nicht Adelstitel oder Geld.",
+          descZH: "在公共论辩的圆桌上，决定胜负的唯有论据本身的逻辑力量，贵族头衔与财产多寡在此被剥夺一切特权。",
+        },
+      },
+      {
+        lineNum: 6,
+        textDE: "zweitens die Problematisierung bisher unhinterfragter Bereiche der staatlichen und kirchlichen Autorität,",
+        translationZH: "第二是将国家与教会权威迄今为止不容置疑的特权禁区全面‘问题化’、置于理性审判台前，",
+      },
+      {
+        lineNum: 7,
+        textDE: "und drittens die prinzipielle Unabgeschlossenheit des Publikums: Jeder mündige Mensch muss Zutritt haben.",
+        translationZH: "第三是受众原则上的全面开放性：任何具备心智成熟能力的个体皆享有平等准入权，不得设立排他藩篱。",
+        vocab: {
+          word: "Prinzipielle Zugänglichkeit",
+          meaningDE: "Öffentlichkeit verliert ihren Sinn, wenn gesellschaftliche Gruppen systematisch ausgeschlossen werden.",
+          meaningZH: "普遍准入原则：一旦某个社会阶层或群体被制度性排斥，公共领域便立时沦落为少数人的特权俱乐部。",
+        },
+      },
+      {
+        lineNum: 8,
+        textDE: "Geltung beansprucht hier allein der eigentümlich zwanglose Zwang des besseren Arguments.",
+        translationZH: "在此，享有至高合法性裁判权的，唯有‘更好论据那奇妙的无强制力量’（Der zwanglose Zwang des besseren Arguments）。",
+        toneCategory: "streben",
+        stilmittel: {
+          type: "Habermas'sches Oxymoron (著名悖论修辞)",
+          descDE: "'Zwangloser Zwang': Die rationale Überzeugungskraft eines Arguments zwingt den Verstand ohne physische Gewalt.",
+          descZH: "哲学史上最震撼的修辞杰作：论据的逻辑力量没有刀枪的物理胁迫（zwanglos），却能令理性良知心悦诚服、甘愿遵从（Zwang）。",
+        },
+      },
+      {
+        lineNum: 9,
+        textDE: "Im 20. Jahrhundert jedoch vollzieht sich ein tiefgreifender struktureller Wandel dieser Sphäre.",
+        translationZH: "然而进入20世纪大众工业社会后，这一批判性交往领域却遭受了痛彻心扉的深层结构性畸变。",
+        toneCategory: "krise",
+      },
+      {
+        lineNum: 10,
+        textDE: "Aus einem lesenden und urteilenden Publikum wird ein konsumierendes und applaudierendes Massenpublikum.",
+        translationZH: "曾经以阅读经典、沉思审断为本的理性公民公众，退化蜕变为了沉溺于消费快感、只会麻木鼓掌喝彩的大众受众。",
+        stilmittel: {
+          type: "Antithetischer Kulturwandel (批判公众退化为消费大众)",
+          descDE: "Verlust der Mündigkeit zugunsten passiver Medienberieselung und Konsumismus.",
+          descZH: "深刻揭示现代传播异化：主动的理性商谈主体，被降格为被动接受媒介投喂与广告公关操弄的商业流量奴隶。",
+        },
+      },
+      {
+        lineNum: 11,
+        textDE: "Die Massenmedien und die kommerzielle Werbung verwandeln den herrschaftsfreien Diskurs in eine Schau-Bühne.",
+        translationZH: "大众媒体垄断寡头与商业广告公关将不受奴役的自由商谈讲坛，彻底改装为了充满视听感官刺激的商业秀场与娱乐舞台。",
+      },
+      {
+        lineNum: 12,
+        textDE: "Dieser Vorgang lässt sich treffend als 'Refeudalisierung der Öffentlichkeit' bezeichnen.",
+        translationZH: "这一极其危险的历史倒退进程，可以被极其精准地定性为‘公共领域的再封建化’（Refeudalisierung der Öffentlichkeit）。",
+        vocab: {
+          word: "Refeudalisierung",
+          meaningDE: "Wiederkehr von feudalen Repräsentationsformen: Politik als Inszenierung von Glanz und Schein statt Diskurs.",
+          meaningZH: "公共领域再封建化：中世纪领主在子民面前巡游炫耀排场以换取盲从；现代政客利用公关形象、包装作秀，重现封建式的形象代表与盲从收割。",
+        },
+      },
+      {
+        lineNum: 13,
+        textDE: "Politik wird nicht mehr öffentlich diskutiert, sondern vor dem Publikum inszeniert wie eine feudale Prunkentfaltung.",
+        translationZH: "公共政治不再是摆在台面上让公民细致推敲论辩的理性事业，而是演变成了在公众面前如中世纪宫廷巡游般精心排练的权贵作秀表演。",
+        toneCategory: "autoritaet",
+      },
+      {
+        lineNum: 14,
+        textDE: "Public Relations und Wahlkampf-Marketing zielen nicht auf Überzeugung durch Argumente, sondern auf Akklamation und Gefühlsmanagement.",
+        translationZH: "现代政治公关与选举营销的目的早已不是通过真凭实据以理服人，而是旨在诱导大众形成应激式的盲目喝彩与情感煽动控制。",
+      },
+      {
+        lineNum: 15,
+        textDE: "Dennoch bleibt die Idee der deliberativen Demokratie der unaufgebbare Kern moderner Legitimität:",
+        translationZH: "即便如此，‘商谈民主/协商民主’（Deliberative Demokratie）的崇高理念，依然是现代政治合法性不可放弃的终极精神内核：",
+        toneCategory: "streben",
+        vocab: {
+          word: "Deliberative Demokratie",
+          meaningDE: "Legitimität entsteht nicht durch Mehrheitsentscheid allein, sondern durch vorherigen fairen und rationalen Diskurs.",
+          meaningZH: "商谈协商民主：少数服从多数的投票只是形式，唯有在投票前经过充分、平等、透明的理性商谈辩驳，法律才具有真正的伦理正当性。",
+        },
+      },
+      {
+        lineNum: 16,
+        textDE: "Nur solche Normen dürfen Geltung beanspruchen, denen alle möglicherweise Betroffenen in einem herrschaftsfreien Diskurs zustimmen könnten.",
+        translationZH: "唯有那些能够在一场杜绝强权压迫、不受支配的公开商谈中，获得所有潜在利益相关者理性认同的社会法则与法律规范，方配享有神圣的效力尊严！",
+        stilmittel: {
+          type: "Diskursiver Universalisierungsgrundsatz (商谈伦理普遍化原则 U)",
+          descDE: "Habermas' Diskursprinzip: Demokratische Legitimität wurzelt in der kommunikativen Vernunft der Bürger.",
+          descZH: "法兰克福学派的宪政宣言：法律的真理性和正当性，最终源于平民百姓在理智交往与商谈中达成的无强制共识。",
+        },
+      },
+    ],
+    questions: [
+      {
+        id: "q-habermas-1",
+        dimension: "argumentation",
+        titleDE: "1. Konstitutive Merkmale der bürgerlichen Öffentlichkeit",
+        titleZH: "启蒙市民公共领域的规范性理想与三大支柱",
+        afb: "AFB I",
+        questionDE:
+          "Welche drei wesentlichen normativen Kriterien begründen nach Jürgen Habermas das historische Ideal der bürgerlichen Öffentlichkeit im 18. Jahrhundert?",
+        questionZH:
+          "在尤尔根·哈贝马斯对18世纪欧洲启蒙市民公共领域的历史重构中，哪三大核心规范法则构成了其对抗专制王权的理想支柱？",
+        options: [
+          {
+            id: "a",
+            textDE:
+              "1. Absehen von gesellschaftlichem Status (Gleichheit im Argument), 2. Problematisierung staatlicher Monopole und bisheriger Tabus, 3. Prinzipielle Zugänglichkeit für alle mündigen Bürger.",
+            textZH:
+              "1. 辩论时彻底抛弃并悬置社会等级与身份地位（论据面前人人平等）；2. 将国家专制垄断与以往神圣不可侵犯的教条禁区全面置于理性审问之下；3. 原则上面向全体心智成熟的公民无门槛开放准入。",
+            isCorrect: true,
+          },
+          {
+            id: "b",
+            textDE:
+              "1. Verbot von Büchern und Zeitungen, 2. Pflicht zur täglichen Lobpreisung des Kaisers, 3. Nur Millionäre dürfen sprechen.",
+            textZH:
+              "1. 全面查封一切报刊书籍，2. 强制公民每日集会赞颂皇帝功德，3. 唯有资产超过百万的寡头方有发言资格。",
+            isCorrect: false,
+          },
+          {
+            id: "c",
+            textDE:
+              "Es gab überhaupt keine Kriterien; Öffentlichkeit war identisch mit einem mittelalterlichen Viehmarkt ohne Worte.",
+            textZH:
+              "没有任何规范准则；所谓的公共领域与中世纪无声牲畜买卖集市毫无二致。",
+            isCorrect: false,
+          },
+        ],
+        explanationDE:
+          "Das Bürgertum überwand feudale Standesschranken im Geist: Im Kaffeehaus zählte nicht das Adelsprädikat, sondern die Triftigkeit des Arguments.",
+        explanationZH:
+          "【正解依据与文本锚点】\n文本第 5–7 行清晰列出三大要素：‘Drei Kriterien konstituieren das Ideal der bürgerlichen Öffentlichkeit: Erstens das Absehen von Stand und Status, zweitens die Problematisierung bisher unhinterfragter Bereiche... drittens die prinzipielle Unabgeschlossenheit des Publikums.’启蒙时代资产阶级在英国伦敦咖啡馆、法国巴黎哲学沙龙中，确立了平等论辩的新规范。哪怕是平民学者，只要论点论据无懈可击，就能在理智上压倒贵族爵爷。\n\n【干扰项逐项诊断】\n• 选项 B 诊断（封建专制密室表征）：这是公共领域出现前试图压制思想的旧制度反动行为；\n• 选项 C 诊断（抹杀历史启蒙内涵）：混淆了物质商品集市与政治批判公共领域。\n\n【时代思潮与哲学脉络】\n康德《回答这个问题：什么是启蒙？》：哈贝马斯直接承袭了康德关于‘理性的公开运用’（öffentlicher Vernunftgebrauch）的教导——启蒙即人摆脱自身招致的不成熟状态，勇敢运用自己的理智与公意对话。",
+        klausurSatzDE:
+          "Habermas rekonstruiert die bürgerliche Öffentlichkeit als egalitären Kommunikationsraum: Durch Statusabsehen, universelle Themenrelevanz und prinzipielle Inklusivität emanzipierte sich das bürgerliche Räsonnement von absolutistischer Herrschaftsräson.",
+        klausurSatzZH:
+          "哈贝马斯将市民公共领域重构为崇高的平等主义交往空间：通过悬置阶层身份、打破议题禁区与确立普遍包容性，市民阶层的理性批判论辩彻底从绝对主义封建君权的神话支配下解放出来。",
+        ehzKeyPointsDE: [
+          "Nennung und Erläuterung der drei Kriterien (Statusabsehen, Hinterfragung, Inklusion).",
+          "Funktion des Räsonnements als Gegenentwurf zur fürstlichen Arkanpraxis.",
+        ],
+        ehzKeyPointsZH: [
+          "采分点 1 (Drei Kriterien 4P)：精准列举并阐明平等商谈的三大支柱（Statusabsehen, Tabukritik, Inklusion）。",
+          "采分点 2 (Mündigkeit 4P)：透彻分析公共论辩如何终结君主密室专制（Arkanpraxis）并开创现代民主合法性。",
+        ],
+      },
+      {
+        id: "q-habermas-2",
+        dimension: "theorie",
+        titleDE: "2. Die Diagnose der 'Refeudalisierung der Öffentlichkeit'",
+        titleZH: "‘公共领域再封建化’的深刻病理诊断",
+        afb: "AFB II",
+        questionDE:
+          "Was versteht Jürgen Habermas unter der dramatischen Diagnose der 'Refeudalisierung der Öffentlichkeit' im 20. Jahrhundert?",
+        questionZH:
+          "哈贝马斯在批判20世纪大众传媒与资本主义民主异化时，所提出的‘公共领域再封建化’（Refeudalisierung der Öffentlichkeit）核心要义为何？",
+        options: [
+          {
+            id: "a",
+            textDE:
+              "Die Rückverwandlung der argumentativen Öffentlichkeit in eine bloße Schau-Bühne: Durch Massenmedien, PR-Agenturen und Bild-Inszenierungen treten Politiker vor Bürgern auf wie mittelalterliche Feudalherren (Repräsentationsöffentlichkeit), um unkritischen Applaus statt rationale Debatte zu erzeugen.",
+            textZH:
+              "原本以理性论辩为本的公共领域被倒退蜕变回被动的作秀舞台：借由大众媒介巨头垄断、公关形象包装与视听表演，现代政客在大众面前如同中世纪封建领主巡游炫耀威仪一般，旨在谋求无思考的应激掌声与偶像崇拜，彻底抹杀了理性批判辩难。",
+            isCorrect: true,
+          },
+          {
+            id: "b",
+            textDE:
+              "Dass Bundeskanzler und Ministerpräsidenten wieder Kettenhemden tragen und mit Ritterschwertern im Bundestag kämpfen.",
+            textZH:
+              "联邦总理与各州州长重新披上中世纪锁子甲，手持骑士长剑在联邦议会大厦展开肉搏角斗。",
+            isCorrect: false,
+          },
+          {
+            id: "c",
+            textDE:
+              "Dass alle Zeitungen pleitegehen und die Menschen wieder per Rauchzeichen kommunizieren müssen.",
+            textZH:
+              "指代所有纸质报刊破产倒闭后，现代城市居民不得不被迫恢复古代烽火狼烟来传递天气预报。",
+            isCorrect: false,
+          },
+        ],
+        explanationDE:
+          "Feudale Öffentlichkeit war 'Repräsentation vor dem Volk' (Herrscher zeigt Prunk). Bürgerliche Öffentlichkeit war 'Diskurs unter Gleichen'. Refeudalisierung bedeutet Rückfall in PR-Show und Scheindemokratie.",
+        explanationZH:
+          "【正解依据与文本锚点】\n文本第 11–13 行点中死穴：‘Die Massenmedien und die kommerzielle Werbung verwandeln den herrschaftsfreien Diskurs in eine Schau-Bühne... Dieser Vorgang lässt sich treffend als Refeudalisierung der Öffentlichkeit bezeichnen.’中世纪封建公共性是‘在子民面前展现领主光环’（Repräsentation vor dem Volk）；启蒙公共性是‘平民之间的讲理求真’；而在电视竞选与短视频时代，政客比拼的是发型、幽默人设、眼泪与营销口号——这正是现代科技武装下的封建狂欢节。\n\n【干扰项逐项诊断】\n• 选项 B 诊断（可笑的古代实物具象化）：混淆了社会学批判概念与中世纪骑士古装剧道具；\n• 选项 C 诊断（科技通信退化论）：哈贝马斯批判的不是传播技术不足，而是传播内容被商业利益与政治公关彻底空心化。\n\n【时代思潮与哲学脉络】\n批判理论（Kritische Theorie）：阿多诺与霍克海默的‘文化工业’（Kulturindustrie）理论在哈贝马斯身上得到了政治学层面的深化，揭示大众文化如何将公民驯化为听话顺从的消费者。",
+        klausurSatzDE:
+          "Mit dem Diktum der 'Refeudalisierung' entlarvt Habermas die Entartung moderner Mediendemokratien: Durch professionelle PR-Inszenierung und passive Konsumentenhaltung degeneriert der emanzipatorische Bürgerdiskurs zur aristokratischen Repräsentationsbühne, welche bloße Akklamation statt diskursiver Überzeugung generiert.",
+        klausurSatzZH:
+          "通过提出‘再封建化’的警世名言，哈贝马斯无情揭穿了现代媒介民主的蜕变危机：在专业公关操弄作秀与被动消费主义心态的夹击下，原本具有解放意义的公民批判商谈，堕落为了新贵族的形象展示舞台，产出的唯有廉价的盲从喝彩而非理性的共识确证。",
+        ehzKeyPointsDE: [
+          "Präzise Begriffserklärung der 'Refeudalisierung' (Wandel von Diskurs zu Schau).",
+          "Analyse der Rolle von Massenmedien, PR und Konsumkultur bei der Entpolitisierung.",
+        ],
+        ehzKeyPointsZH: [
+          "采分点 1 (Refeudalisierungsbegriff 4P)：精准阐释‘再封建化’的概念内涵——即从‘主体间平等论辩’倒退为‘权贵单向形象展示’。",
+          "采分点 2 (Medienkritik 4P)：透彻剖析公关营销、视听快感消费如何造成现代公众去政治化（Entpolitisierung）与批判力萎缩。",
+        ],
+      },
+      {
+        id: "q-habermas-3",
+        dimension: "theorie",
+        titleDE: "3. Der 'zwanglose Zwang des besseren Arguments'",
+        titleZH: "‘更好论据的无强制力量’与民主法治正当性根基",
+        afb: "AFB II",
+        questionDE:
+          "Welche erkenntnis- und demokratietheoretische Bedeutung besitzt Habermas' berühmte Formel vom 'zwanglosen Zwang des besseren Arguments'?",
+        questionZH:
+          "哈贝马斯所铸就的著名哲学命题——‘更好论据的无强制力量’（Der zwanglose Zwang des besseren Arguments），在认识论与商谈民主理论中具有何等深远的基石意义？",
+        options: [
+          {
+            id: "a",
+            textDE:
+              "Es bezeichnet die rein rationale Einsichtskraft eines Arguments, das frei von physischer Gewalt, sozialem Druck oder Täuschung überzeugt; Gesetze besitzen nur dann echte demokratische Legitimität, wenn sie aus einem solchen fairen, argumentativen Verständigungsprozess hervorgehen.",
+            textZH:
+              "它指代论据本身所蕴含的纯粹理性说服力，在完全杜绝肉体暴力、社会特权施压或欺诈操纵的环境下令人心悦诚服；法律之所以拥有超越强权的真正民主合法性，端赖于其是由所有潜在受影响者通过这种公平平等的商谈达致共识的结果。",
+            isCorrect: true,
+          },
+          {
+            id: "b",
+            textDE:
+              "Es bedeutet, dass derjenige Redner die Wahl gewinnt, der das teuerste Megafon kauft und alle anderen lautstark überschreit.",
+            textZH:
+              "它指代谁购买了最昂贵的大喇叭扬声器并在广场上把所有反对派的呼声彻底盖过，谁的论点就是无可辩驳的真理。",
+            isCorrect: false,
+          },
+          {
+            id: "c",
+            textDE:
+              "Es besagt, dass Polizisten vor jeder Verhaftung ein philosophisches Seminar über Immanuel Kant abhalten müssen.",
+            textZH:
+              "它要求防暴警察在执行紧急逮捕任务之前，必须强制在现场为嫌疑人讲授三个小时康德道德哲学。",
+            isCorrect: false,
+          },
+        ],
+        explanationDE:
+          "Im Diskurs herrscht ideale Sprechsituation: Weder Geld noch Macht dürfen den Konsens erzwingen. Allein die logische Triftigkeit und empirische Wahrheit der Begründung zählen.",
+        explanationZH:
+          "【正解依据与文本锚点】\n文本第 8 行与第 16 行遥相呼应：‘Geltung beansprucht hier allein der eigentümlich zwanglose Zwang des besseren Arguments... Nur solche Normen dürfen Geltung beanspruchen, denen alle Betroffenen zustimmen könnten.’哈贝马斯确立了交往理性（kommunikative Rationalität）的灯塔。多数人暴政（如 51% 投票剥夺 49% 人权）绝非正义；唯有在理想言谈情境（ideale Sprechsituation）下，经过充分说理、兼顾各方正当诉求而达成的理性共识，才是法治文明的尊严所在。\n\n【干扰项逐项诊断】\n• 选项 B 诊断（声浪暴民强权）：赤裸裸的音量暴力恰恰是哈贝马斯所全力批判的伪商谈；\n• 选项 C 诊断（漫画式荒谬嫁接）：将高层次的立法正当性规范歪曲为警务执行条令。\n\n【时代思潮与哲学脉络】\n商谈伦理学（Diskursethik）：哈贝马斯与卡尔-奥托·阿佩尔（Karl-Otto Apel）共同完成了伦理学的‘交往转向’，将康德头脑中孤立个体的‘自省定言命令’，转变为多元社会中不同背景公民之间‘平等的对话求真’。",
+        klausurSatzDE:
+          "Das Postulat des 'zwanglosen Zwangs des besseren Arguments' markiert das Herzstück der Diskursethik: Indem es rationale Überzeugungskraft von illegitimer Machtausübung entkoppelt, fundiert es demokratische Gesetzesgeltung nicht auf bloßer Mehrheitsgewalt, sondern auf prozeduraler Einsichtsfähigkeit autonomer Staatsbürger.",
+        klausurSatzZH:
+          "‘更好论据的无强制力量’构成了商谈伦理学的精髓核心：通过将理性说服力与非法的权力胁迫断然剥离，它将民主法律的效力基础不再草率建立于单纯的多数人强权之上，而是牢牢筑基于自主公民在程序正义中达致的理性洞见能力。",
+        ehzKeyPointsDE: [
+          "Philosophische Interpretation des Oxymorons 'zwangloser Zwang'.",
+          "Abgrenzung von legitimem Diskurskonsens gegenüber strategischer Überredung/Macht.",
+        ],
+        ehzKeyPointsZH: [
+          "采分点 1 (Oxymoron-Analyse 4P)：深刻剖析‘无强制之强制’这一哲学范畴的内在张力与理性解放本质。",
+          "采分点 2 (Legitimationstheorie 4P)：高水平阐发商谈共识对抵御民粹多数人暴政、捍卫宪政合法性的奠基价值。",
+        ],
+      },
+      {
+        id: "q-habermas-4",
+        dimension: "theorie",
+        titleDE: "4. Digitale Öffentlichkeit: Fragmentierung oder Demokratisierung?",
+        titleZH: "数字互联网时代的公共领域：信息茧房、算法垄断与协商民主危机",
+        afb: "AFB III",
+        questionDE:
+          "Wie lässt sich Habermas' Theorie der Öffentlichkeit vor dem Hintergrund digitaler Plattformen (Social Media, Filterblasen, KI-Algorithmen) im 21. Jahrhundert dialektisch beurteilen?",
+        questionZH:
+          "在21世纪社交媒体平台、信息茧房算法（Filterblasen）与人工智能深伪技术横行的数字时代，我们应如何辩证审视哈贝马斯公共领域理论的当代现实穿透力？",
+        options: [
+          {
+            id: "a",
+            textDE:
+              "Einerseits senkt das Internet die Zugangsschranken radikal (Demokratisierungschance); andererseits führen algorithmenbasierte Aufmerksamkeitsökonomie, Echokammern und Desinformation zu einer zersplitterten Teilöffentlichkeit, die den gemeinsamen Boden für rationale Argumentation zerstört und den gesellschaftlichen Konsens gefährdet.",
+            textZH:
+              "一方面，互联网激进打破了传统媒体垄断门槛，赋予人人发声的民主平民化契机；但另一方面，以流量注意力为导向的商业算法、回音室信息茧房与定向谣言操弄，将整体公共领域粉碎为彼此极化撕裂的部落化微群落，摧毁了理性对话的公共常识基石，使民主共识面临瓦解风险。",
+            isCorrect: true,
+          },
+          {
+            id: "b",
+            textDE:
+              "Das Internet hat alle Probleme der Menschheit endgültig gelöst, sodass es im 21. Jahrhundert keinerlei politische Meinungsverschiedenheiten mehr gibt.",
+            textZH:
+              "互联网已经永久解决了人类历史上的一切争端与分歧，21世纪的人类社会已进入人人观点完全相同的绝对和谐大同世界。",
+            isCorrect: false,
+          },
+          {
+            id: "c",
+            textDE:
+              "Habermas hat gefordert, das weltweite Internet sofort abzuschalten und wieder zur Brieftaubenpost des 15. Jahrhunderts zurückzukehren.",
+            textZH:
+              "哈贝马斯在最新著作中严厉呼吁立即切断全球互联网光缆，勒令全人类立刻全面恢复使用15世纪飞鸽传书传递政务信息。",
+            isCorrect: false,
+          },
+        ],
+        explanationDE:
+          "Habermas sprach 2021 von einer 'neuen Strukturwandlung der Öffentlichkeit': Plattformen sind keine neutralen Verleger, sondern stimulieren Affekte für Werbegewinne. Demokratie braucht gemeinsame Fakten.",
+        explanationZH:
+          "【正解依据与文本锚点】\n哈贝马斯在 2021 年发表《公共领域的新结构转型》（Ein neuer Strukturwandel der Öffentlichkeit），再次对时代做出惊人诊断。社交媒体虽然实现了‘全民自媒体’，但平台算法为了牟取广告暴利，专门奖励激进化言论与愤怒情绪传播，导致公共空间碎片化为互相对骂的‘回音壁’。当人们连最基本的‘事实真伪’（如疫苗、选举舞弊、气候变化）都无法达成共识时，理性商谈的底线就坍塌了。\n\n【干扰项逐项诊断】\n• 选项 B 诊断（天真盲目的技术乌托邦）：互联网非但没有消弭政治分歧，反而在很多国家催化了前所未有的政治两极极化；\n• 选项 C 诊断（卢梭式复古倒退讽刺）：哈贝马斯始终是坚定的启蒙现代性守护者，主张用民主法律规制数字平台，绝非盲目砸毁机器的卢德主义者。\n\n【时代思潮与哲学脉络】\n防卫性民主的数字疆界：现代西方公法学者正依据商谈民主理论，推动欧盟出台《数字服务法案》（DSA）与《人工智能法案》（AI Act），旨在用宪政缰绳驯服科技巨头，守护理智公共空间的清明土壤。",
+        klausurSatzDE:
+          "In dialektischer Aktualisierung spiegelt die digitale Netzwerköffentlichkeit Habermas' Warnungen verschärft wider: Die algorithmische Fragmentierung in affektgeladene Echokammern droht die zivilgesellschaftliche deliberative Kommunikationsinfrastruktur zu zerreißen, sofern digitale Plattformen nicht einer strengen rechtsstaatlichen Re-Regulierung unterworfen werden.",
+        klausurSatzZH:
+          "在辩证的当代审视中，数字网络公共空间加剧印证了哈贝马斯的深层忧思：算法驱动的极化信息茧房正在撕裂公民社会的协商商谈基础设施；唯有将跨国数字平台置于法治国宪政框架的严格规制之下，人类方能挽救岌岌可危的理性公共领域。",
+        ehzKeyPointsDE: [
+          "Dialektische Abwägung: Partizipationsgewinn vs. Desinformations- und Fragmentierungsgefahr.",
+          "Verknüpfung von Habermas' Diskurstheorie mit aktuellen Herausforderungen (DSA, Filterblasen).",
+        ],
+        ehzKeyPointsZH: [
+          "采分点 1 (Dialektik 4P)：辩证权衡数字门槛降低的民主赋权机遇，与注意力算法导致的信息极化回音室风险。",
+          "采分点 2 (Verfassungsausblick 4P)：高水平引用欧盟平台规制或宪政法治防线，给出兼具学理厚度与时代关切的 AFB III 终审裁决。",
+        ],
+      },
+    ],
+  },
 ];

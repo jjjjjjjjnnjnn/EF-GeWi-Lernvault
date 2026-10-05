@@ -407,10 +407,37 @@ function renderEmbeddedTool(toolName: string, lang: Lang, fach: string, thema?: 
         </div>
       );
     }
+    if (t === "weber" || t === "herrschaft" || (f.includes("sowi") && (thema?.toLowerCase().includes("weber") || thema?.toLowerCase().includes("herrschaft") || thema?.toLowerCase().includes("legitim") || thema?.toLowerCase().includes("buerokratie")))) {
+      return (
+        <div className="my-3 p-3.5 border border-[var(--line)] bg-[var(--surface)] rounded-[var(--radius)]">
+          <GeWiReadingLab lang={lang} defaultExcerptId="weber-herrschaft" filterFach="SoWi" compact={true} />
+        </div>
+      );
+    }
+    if (t === "habermas" || t === "oeffentlichkeit" || (f.includes("sowi") && (thema?.toLowerCase().includes("habermas") || thema?.toLowerCase().includes("oeffentlichkeit") || thema?.toLowerCase().includes("diskurs") || thema?.toLowerCase().includes("deliberat")))) {
+      return (
+        <div className="my-3 p-3.5 border border-[var(--line)] bg-[var(--surface)] rounded-[var(--radius)]">
+          <GeWiReadingLab lang={lang} defaultExcerptId="habermas-oeffentlichkeit" filterFach="SoWi" compact={true} />
+        </div>
+      );
+    }
     if (t === "rede" || t === "steinmeier" || (f.includes("sowi") && (thema?.toLowerCase().includes("rede") || thema?.toLowerCase().includes("demokratie")))) {
       return (
         <div className="my-3 p-3.5 border border-[var(--line)] bg-[var(--surface)] rounded-[var(--radius)]">
           <GeWiReadingLab lang={lang} defaultExcerptId="steinmeier-rede" filterFach="SoWi" compact={true} />
+        </div>
+      );
+    }
+    if (f.includes("sowi") && (t === "gewi-reading" || t === "reader" || t === "text" || t === "text-analyse")) {
+      let sowiExcerpt = "steinmeier-rede";
+      const th = (thema || "").toLowerCase();
+      if (th.includes("weber") || th.includes("herrschaft") || th.includes("legitim") || th.includes("buerokratie")) sowiExcerpt = "weber-herrschaft";
+      else if (th.includes("habermas") || th.includes("oeffentlichkeit") || th.includes("diskurs") || th.includes("deliberat")) sowiExcerpt = "habermas-oeffentlichkeit";
+      else if (th.includes("rede") || th.includes("steinmeier") || th.includes("demokratie")) sowiExcerpt = "steinmeier-rede";
+
+      return (
+        <div className="my-3 p-3.5 border border-[var(--line)] bg-[var(--surface)] rounded-[var(--radius)]">
+          <GeWiReadingLab lang={lang} defaultExcerptId={sowiExcerpt} filterFach="SoWi" compact={true} />
         </div>
       );
     }
