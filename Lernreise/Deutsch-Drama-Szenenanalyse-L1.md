@@ -84,6 +84,8 @@ PRIMAERTEXT (Studienfassung: Verhoer am Stadttor (Ausschnitt, 15 Zeilen), Studie
 > BOTIN: Melde nichts; gemeldete Naechte werden endlose Akten. (Z. 14)
 > WACHE (tritt beiseite): So geht; das Tor gehorcht dem leiseren Wort. (Z. 15)
 
+[Werkzeug: gewi-reading]
+
 AUFGABE: Untersuche den Primaertext Zeile fuer Zeile und belege jede Aussage mit Zitat und Zeile.
 TARGET: Drei Belege mit Zeile, je mit Funktion und einer Deutung in vier Saetzen.
 

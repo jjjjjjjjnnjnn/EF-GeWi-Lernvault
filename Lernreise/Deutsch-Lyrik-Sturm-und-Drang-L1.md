@@ -83,6 +83,8 @@ PRIMAERTEXT (Studienfassung: Sternensehnsucht (Ausschnitt, 15 Zeilen), Studienfa
 > Ich komme barfuss, doch mit hellem Herzen. (Z. 14)
 > Und was mich hielt, das segne ich im Gehen. (Z. 15)
 
+[Werkzeug: gewi-reading]
+
 AUFGABE: Untersuche den Primaertext Zeile fuer Zeile und belege jede Aussage mit Zitat und Zeile.
 TARGET: Drei Belege mit Zeile, je mit Funktion und einer Deutung in vier Saetzen.
 

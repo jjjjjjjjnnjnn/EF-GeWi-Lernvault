@@ -438,10 +438,13 @@ function renderEmbeddedTool(toolName: string, lang: Lang, fach: string, thema?: 
 
   // 6. DEUTSCH & ENGLISCH TOOLS (GeWiReadingLab + DilemmaTheatre)
   if (f.includes("deutsch") || f.includes("englisch") || f.includes("english")) {
-    if (t === "reader" || t === "originaltext" || t === "text-analyse" || t === "faust" || t === "drama" || t === "woyzeck" || t === "shakespeare") {
+    if (t === "gewi-reading" || t === "reader" || t === "originaltext" || t === "text-analyse" || t === "faust" || t === "drama" || t === "woyzeck" || t === "shakespeare" || t === "nathan" || t === "kabale" || t === "lyrik" || t === "metrum") {
       let defaultExcerpt = "faust-monolog";
       const th = (thema || "").toLowerCase();
-      if (th.includes("woyzeck") || t === "woyzeck") defaultExcerpt = "woyzeck-rasieren";
+      if (th.includes("nathan") || t === "nathan" || th.includes("ringparabel")) defaultExcerpt = "nathan-ringparabel";
+      else if (th.includes("kabale") || th.includes("schiller") || t === "kabale") defaultExcerpt = "kabale-miller-praesident";
+      else if (th.includes("willkommen") || th.includes("abschied") || (th.includes("lyrik") && th.includes("sturm")) || t === "lyrik" || t === "metrum") defaultExcerpt = "goethe-willkommen-abschied";
+      else if (th.includes("woyzeck") || t === "woyzeck") defaultExcerpt = "woyzeck-rasieren";
       else if (th.includes("macbeth") || th.includes("shakespeare") || f.includes("engl") || t === "shakespeare") defaultExcerpt = "macbeth-soliloquy";
       else if (th.includes("pakt") || th.includes("wette")) defaultExcerpt = "faust-pakt";
 
@@ -474,11 +477,19 @@ function renderEmbeddedTool(toolName: string, lang: Lang, fach: string, thema?: 
         </div>
       );
     }
+
+    let fallbackExcerpt = "faust-monolog";
+    const th = (thema || "").toLowerCase();
+    if (th.includes("nathan") || th.includes("ringparabel")) fallbackExcerpt = "nathan-ringparabel";
+    else if (th.includes("kabale") || th.includes("schiller")) fallbackExcerpt = "kabale-miller-praesident";
+    else if (th.includes("willkommen") || th.includes("abschied") || (th.includes("lyrik") && th.includes("sturm"))) fallbackExcerpt = "goethe-willkommen-abschied";
+    else if (f.includes("engl")) fallbackExcerpt = "macbeth-soliloquy";
+
     return (
       <div className="my-3 p-3.5 border border-[var(--line)] bg-[var(--surface)] rounded-[var(--radius)]">
         <GeWiReadingLab
           lang={lang}
-          defaultExcerptId={f.includes("engl") ? "macbeth-soliloquy" : "faust-monolog"}
+          defaultExcerptId={fallbackExcerpt}
           filterFach={f.includes("engl") ? "Englisch" : "Deutsch"}
           compact={true}
         />
