@@ -67,6 +67,12 @@ tags: [EF, SoWi]      # 首标签=EF，次标签=学科
 7. 跑任何 `deeptutor` 命令前先 `. .\scripts\dt-env.ps1`；`data/` 目录永不进vault（见 `00_META/DeepTutor.md` §0）。
 8. `scripts/*.ps1` 注释必须纯ASCII（PS 5.1读无BOM-UTF8中文注释会误解析，实测丢env；路径里的中文除外）。
 9. **未定事项**用 `⏳ 待确认：` 标记并**继续按考纲常规分支展开**（不停摆），同时在 `00_META/Blocker-Register.md` 登记一条（含「阻断范围 / 脱敏状态 / 答案到达后的动作」）；需问老师的统一走 `00_META/Lehrkraft-Anfragen.md` 的德语问询稿，**不要分次打扰**。涉及 web/App 的阻塞（C/D 类）登记后暂缓。
+10. **模块化研发与交付铁律（四步闭环：独立制作 ➔ 独立测试 ➔ 接入集成 ➔ 集成验证）**：
+    - 后续无论重构、扩展或新增任何板块（仿真实验、学科工坊、研习组件、答题判分台等），**全部统一采用模块化推进**；
+    - **① 独立制作（Isolate & Build）**：在独立组件或沙盒环境内构建。严禁出现“空壳页面、只有滑块没有画布、没有直观动画、纯文本占位、大片空白”等未设计半成品；
+    - **② 独立测试（Standalone Test）**：在独立沙盒内做透交互测试，重点排查：参数联动是否驱动图表图形变化、SVG 缩放中心是否严格绑定几何中心（严禁偏心放大，必须绑定 `transformOrigin: ${cx}px ${cy}px` 与 `transformBox: "view-box"`）、字体对比度是否达到 AAA 标准、是否完全符合 Tufte 纯黑白学术纸墨风；
+    - **③ 接入集成（Integrate）**：独立验证通过后，方可将其注册进路由与总工作台，确保无跨学科串味与无默认降级污染；
+    - **④ 集成回归测试（E2E Regression Test）**：执行 `npx tsc -b` 零报错、`vault-check.py` PASS 并完成端到端模拟交互后，单科独立 commit。
 
 ## 6. 检索入口
 
@@ -76,6 +82,10 @@ tags: [EF, SoWi]      # 首标签=EF，次标签=学科
 ## 7. App-EF-Lernvault 约定（桌面软件，半开源自有LICENSE）
 
 - 只读 vault（内容源），不写回；Fehlerlog/csv 增量只生成文本补丁，由用户回 Obsidian 确认提交。
-- 前端改完必须 `npm run build` 通过；不新增 npm 依赖（Tauri 官方包由主 Agent 加）；图标手写内联 SVG，禁 emoji；动效只走 `index.css` token。
+- 前端改完必须 `npm run build`（或 `cmd /c "npx tsc -b"`）通过；不新增 npm 依赖（Tauri 官方包由主 Agent 加）；图标手写内联 SVG，禁 emoji；动效只走 `index.css` token。
+- **视觉排版与交互红线（Tufte 黑白纸墨宪法）**：
+  - **禁用绿色/杂色排版**：严禁出现绿色字体、绿色/彩色背景卡片、低对比度浅色文字。全量统一使用高对比度 `--ink` 墨色文字、`--paper-subtle` 纸面底色与 `--line` 极简细线；
+  - **SVG 交互必须保中心**：任何 SVG 图形悬停放大（hover scale）必须显式注入元素中心坐标 `style={{ transformOrigin: \`${cx}px ${cy}px\`, transformBox: "view-box" }}`，杜绝向右下方偏心漂移；
+  - **全景可视原则**：所有子 Tab（如画像漫游、因果推演、会考评分等）必须具备完整的可视化主画布或结构化演绎链条，绝不允许切换 Tab 后卸载主画布导致大片空白。
 - 设计双规范：`UI-BRIEF.md`（tufte）+ `INTERACTION-BRIEF.md`（交互，新键先登记 `src/keys.ts`）。
 - 打包：`npx tauri build`（需 VS2022+ C++ workload + rust stable）；`src-tauri/target|gen`、签名 `.key`、安装包永不进 git；第三方署名变动同步 `NOTICE.md`。

@@ -24,26 +24,36 @@
 
 ---
 
-## 当前状态（2026-10-04 最新里程碑）
+---
 
-- ✅ **Labor 互动探索实验室五大标志性工坊与哲学思辨深度重构落地**：
-  - **病灶根治**：针对用户指出的“不好玩、空、不存在内容、不直观、标题/名字与内容不符、同质化、缺少创新”等问题，彻底废除粗糙千篇一律的双滑块回退，全量研发上线 5 大全新独立高保真交互工坊：
-    1. **社科旗舰 1：`SinusMilieusSim.tsx`（德国当代 10 大社会群落全景沙盘）**：官方 Sinus-Institut 二维气泡矩阵 + 360° 学术画像显微镜 + 首创 Persona-Builder 自由人画像漫游沙盒，直观体验布尔迪厄阶层固化与流动壁垒；
-    2. **社科旗舰 2：`TrilemmaSim.tsx`（蒙代尔-弗莱明国际金融三元悖论张力沙盘）**：真实等边几何三角形，点击选两边第三边红光断裂，内置三大制度重演与 1992 索罗斯狙击英镑推演沙盒；
-    3. **生物旗舰 1：`DnaPcrSim.tsx`（PCR 变温扩增与琼脂糖凝胶电泳跑带工坊）**：95°-55°-72° 三温阶梯热循环仪动画 + 紫外凝胶电泳槽负电荷向正极迁移发光跑带对比 Marker；
-    4. **生物旗舰 2：`SeeOekologieSim.tsx`（湖泊生态断面、四季全对流与富营养化翻湖沙盒）**：表水层/温跃层/深水层深度纵切面 + 四季全对流/温跃停滞 + 磷氮污染输入致藻华爆发、底层缺氧与黑臭腐泥（Sapropel）剧毒硫化氢释放；
-    5. **化学旗舰：`GalvanischeZelleSim.tsx`（丹尼尔原电池微观反应器）**：Mg/Zn/Fe/Cu/Ag 自由切换电极对 + 导线电子微观流动 + 盐桥离子迁移粒子动画 + 能斯特方程电动势计算；
-    6. **数学旗舰：`RotationskoerperSim.tsx`（立体旋转体体积与黎曼圆盘切片微元工坊）**：香槟杯/艺术花瓶/圆台/指数号角 4 大模型 + 真 3D 轴测透视 + $N=4 \to 40$ 黎曼薄圆盘求和动态逼近定积分极限 $V = \pi \int [f(x)]^2 dx$；
-    7. **哲学三大核心思辨考点补全（`GewiInteractiveWorkbench.tsx`）**：深度补齐罗尔斯无知之幕与差异原则（`philo-rawls-schleier`）、柏拉图洞穴寓言四阶段与数字茧房（`philo-hoehlengleichnis`）、契约论霍布斯vs洛克vs卢梭（`philo-staatsvertrag`）。
-  - **门禁全绿**：`npx tsc -b` 0 报错；`vault-check.py` PASS；`simulate-user-interaction.py` 100% PASS。
-- ✅ **Labor 仿真实验路由精准化与串味/内容不符缺陷根治**：
-  - **根本原因排查**：用户截图反馈 `sowi-ezb-geldpolitik`（欧洲央行货币政策沙盒）打开后竟显示 `philo-willensfreiheit`（李贝特脑电自由意志天平）。经溯源：`Labor.tsx` 原逻辑中以宽泛条件将非硬编码的社科题目通配至文科思辨台，且 `GewiInteractiveWorkbench.tsx` 中硬编码了哲学自由意志默认降级（fallback），且状态未随 `sim.id` 切换重置。
-  - **路由彻底精准化（`Labor.tsx`）**：建立 `GEWI_WORKBENCH_IDS` 白名单，将纯文科、哲学伦理与文学赏析（如自由意志、康德定言、绝对平庸之恶、戏剧五幕、诗歌节拍、卡夫卡异化等）精准导流至 `GewiInteractiveWorkbench`；宏观经济量化模型（如 `sowi-ezb-geldpolitik` 欧洲央行利率走廊、菲利普斯曲线、德国社保转移动态、比较优势等）100% 走 `UniversalInteractiveWorkbench`，呈现真实的货币外生冲击与利率传导机制！
-  - **动态辩证天平生成器（`GewiInteractiveWorkbench.tsx`）**：
-    - 新增核心考点专属实战案例（最低工资与劳资自治 `sowi-mindestlohn`、生态碳税与累退分配 `sowi-oekosteuer`、德国工业区位与双元制 `sowi-standort-deutschland`、议论文逻辑诊断 `deutsch-sachtext-argument`）；
-    - 实现 `getOrGenerateBalanceCase(sim)` 动态生成机制：基于当前微课的学科（Deutsch / Philo / SoWi）、双语标题与核心主题，动态构建 100% 贴合题目本身的论据砝码、事实裁决（Sachurteil）与价值裁决（Werturteil）答题支架，彻底根除任何跨学科无关回退；
-    - 绑定 `useEffect` 状态重置监听，当用户切换不同课题时，天平托盘砝码自动刷新为当前命题。
-- ✅ **全链路门禁与生产编译 100% 零错误**：
+## 当前状态（2026-10-05 最新里程碑与交接就绪）
+
+- 🔴 **新 Agent 接手铁律：全模块化研发生命周期（四步闭环）**：
+  - **核心准则**：后续无论处理任何学科、任何板块（仿真实验、学科工坊、研习组件、真题评分台等），**全部统一使用模块化流程推进**：
+    1. **① 独立制作（Isolate & Build）**：在独立沙盒内开发，严禁未完工半成品强行并入；严禁粗暴卸载主画布，任何子 Tab（如画像漫游、因果推演）必须配备核心视觉画布或结构化流转图，严禁纯文本空壳与大片空白；
+    2. **② 独立测试（Standalone Test）**：独立验证滑块与动效强联动、SVG 悬停放大几何中心锁定（必须配置 `transformOrigin: \`${cx}px ${cy}px\`` 与 `transformBox: "view-box"`，杜绝偏心位移）、AAA 极高对比度与 Tufte 纯黑白墨水规范（**绝对禁用绿色/彩色字体与杂色背景卡片**）；
+    3. **③ 接入集成（Integrate）**：在路由总线与全局状态中精准对接，杜绝跨学科串味；
+    4. **④ 集成验证（E2E Regression Test）**：运行 `npx tsc -b`、`vault-check.py` 及全链路交互仿真全绿后，单科独立 Commit。
+
+- ✅ **Labor 互动探索实验室体验与视觉缺陷深度治理收官（2026-10-04 ~ 2026-10-05）**：
+  1. **Sinus-Milieus 自由人画像漫游 2D 全景地图补齐（`SinusMilieusSim.tsx`）**：
+     - 攻克用户指出的“自由人画像漫游无设计、仅剩两个滑块与大片空白”缺陷；
+     - 在漫游模式下恢复并升级 2D SVG 阶层矩阵，投射动态个人定位锚点（Avatar Pin）、雷达声呐波脉冲环（`animate-ping`）、十字坐标虚线与悬浮标签；
+     - 算法自动高亮相交社群气泡，增设阶层固化天花板标线（Gläserne Decke）；
+     - 新增 5 大典型德国社会画像一键跃迁预设（学术世家、科技创客、奋斗中产、传统工薪、边缘零工）；
+     - 动态解构布尔迪厄三大资本条（经济/文化/社会资本）并支持研报一键复制导出；
+     - 会考真题拆解 15 BE 官方评分要点，提供 15 NP 满分范文与 04 NP 典型低分失误对照。
+  2. **SVG 气泡缩放中心偏心漂移根治**：
+     - 排查修复 SVG `<g>` 标签 `hover:scale-105` 默认以视口 `(0, 0)` 为原点向右下漂移的底层缺陷，全量绑定物理圆心 `${cx}px ${cy}px` 与 `view-box`，实现原地平滑居中膨胀。
+  3. **Tufte 纯黑白墨水排版规范彻底贯彻（根治浅绿/杂色违规）**：
+     - 响应“禁用绿色字体、背景、颜色排版”指令，彻底清除所有残存的浅绿底绿字、浅黄底黄字等弱对比杂色卡片；
+     - 全量统一使用 `--ink` 深墨色文字、`--paper-subtle` 纸面底色与 `--line` 极简细线，气泡内文字叠加深色边缘阴影滤镜（`drop-shadow`），确保 AAA 级锐利阅读体验。
+  4. **市场机制与福利经济学沙盒深度合一（`MarktMechanismusSim.tsx`）**：
+     - 将原分散的供求曲线相交沙盒与最低限价无谓损失（DWL）沙盒深度合并为统一旗舰级沙盒；
+     - 完整呈现消费者剩余（CS）、生产者剩余（PS）与无谓损失（DWL）的透光几何多边形与动态均衡出清。
+  5. **通用工作台四阶段动态因果链与会考评分升级（`UniversalInteractiveWorkbench.tsx`）**：
+     - 将原本平铺的纯文本升级为 4 步因果推演进度阶梯（`01 Impuls` ➔ `02 Mikromechanismus` ➔ `03 System-Reaktion` ➔ `04 Klausur-Fazit`）；
+     - 全量考纲学术术语卡片化，规范 15 NP 评分细则与满分句式。
   - `App-EF-Lernvault`: `npx tsc -b` 0 报错；
   - `npm run build`: 生产构建 6.47s 干净输出（0 语法阻断，0 废弃调用）；
   - `scripts/vault-check.py`: PASS（notes=401, csv_rows=1921, index_links=332, reisen=356, badnames=0, badglossar=0）；

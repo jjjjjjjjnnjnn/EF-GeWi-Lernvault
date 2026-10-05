@@ -28,6 +28,24 @@
     4. 设置中心（Settings §8）直观开关勾选。
   - 开启效果：在侧边栏、快捷搜索（Command Palette）中解锁 `Design-Lab`，供开发者测试全量原子组件、颜色梯度与微观交互。
 
+### 1.3 模块化研发生命周期铁律 (Modular Production Protocol: Isolate ➔ Test ➔ Integrate ➔ Verify)
+后续凡涉及任何交互板块（仿真实验、学科工坊、研习组件、真题评分台等）的开发与升级，**严禁在未完工状态下随手并入全局视图**，必须完整落实四步闭环：
+1. **第一步：独立制作（Isolate & Build）**：
+   - 提取或创建独立的组件文件（如 `SinusMilieusSim.tsx`, `TrilemmaSim.tsx`），保持内部状态自闭环；
+   - **全景可视原则**：每个模式或子 Tab（如画像漫游、因果推演、真题解构）必须配备核心视觉画布或结构化流转图谱，**严禁出现只留滑块、无画布、大片空白的未设计半成品**。
+2. **第二步：独立交互测试（Standalone Testing & Verification）**：
+   - 在独立或 Dev-Mode 沙盒中完成全部交互验证；
+   - 检验滑块调控与图表/动画的强联动（参数变动时图形必有直观响应）；
+   - 检验 SVG 缩放中心绑定（必须显式标注 `transformOrigin: \`${cx}px ${cy}px\`` 与 `transformBox: "view-box"`，杜绝偏心位移）；
+   - 检验排版色彩合规性（**绝对禁用绿色/彩色字体与杂色背景**，严格恪守 Tufte 纯黑白纸墨标准，对比度达到 AAA 级）。
+3. **第三步：系统接入与集成（System Integration）**：
+   - 在路由总线（如 `Labor.tsx`, `Reise.tsx`）中建立精确匹配与白名单分流，禁止粗暴的泛类型 fallback，杜绝跨学科串味；
+   - 确保组件属性（Props）、多语言（`lang`）、状态复位（`useEffect` 监听 ID 切换）完整对齐。
+4. **第四步：端到端回归验证（E2E Regression Testing）**：
+   - 终端静态类型校验通过：`cmd /c "npx tsc -b"` 零报错；
+   - 运行自动化验证脚本与交互仿真；
+   - 确认无副作用后，按学科独立 Commit 入库并记录 Journal。
+
 ---
 
 ## 2. 仓库规范与知识库宪法 (Vault Constitutional Rules)
