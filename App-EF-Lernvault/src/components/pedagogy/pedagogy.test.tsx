@@ -369,6 +369,15 @@ describe("Pädagogische Komponenten (Pedagogy UI Library)", () => {
       expect(screen.getAllByText(/Refeudalisierung der Öffentlichkeit/).length).toBeGreaterThan(0);
       expect(screen.getByText(/启蒙市民公共领域的规范性理想与三大支柱/)).toBeInTheDocument();
     });
+
+    it("laedt Franz Kafka Die Verwandlung und dekonstruiert Entfremdung", () => {
+      render(<GeWiReadingLab lang="zh" defaultExcerptId="kafka-verwandlung" filterFach="Deutsch" />);
+      expect(screen.getAllByText(/Die Verwandlung/).length).toBeGreaterThan(0);
+      expect(screen.getAllByText(/ungeheuren Ungeziefer/).length).toBeGreaterThan(0);
+      expect(screen.getAllByText(/panzerartig harten Rücken/).length).toBeGreaterThan(0);
+      expect(screen.getByText(/叙事视角与冷静文体特征/)).toBeInTheDocument();
+    });
   });
 });
+
 

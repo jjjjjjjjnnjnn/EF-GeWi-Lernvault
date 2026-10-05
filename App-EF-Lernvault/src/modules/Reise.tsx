@@ -492,12 +492,13 @@ function renderEmbeddedTool(toolName: string, lang: Lang, fach: string, thema?: 
 
   // 6. DEUTSCH & ENGLISCH TOOLS (GeWiReadingLab + DilemmaTheatre)
   if (f.includes("deutsch") || f.includes("englisch") || f.includes("english")) {
-    if (t === "gewi-reading" || t === "reader" || t === "originaltext" || t === "text-analyse" || t === "faust" || t === "drama" || t === "woyzeck" || t === "shakespeare" || t === "nathan" || t === "kabale" || t === "lyrik" || t === "metrum") {
+    if (t === "gewi-reading" || t === "reader" || t === "originaltext" || t === "text-analyse" || t === "faust" || t === "drama" || t === "woyzeck" || t === "shakespeare" || t === "nathan" || t === "kabale" || t === "lyrik" || t === "metrum" || t === "kafka" || t === "verwandlung") {
       let defaultExcerpt = "faust-monolog";
       const th = (thema || "").toLowerCase();
       if (th.includes("nathan") || t === "nathan" || th.includes("ringparabel")) defaultExcerpt = "nathan-ringparabel";
       else if (th.includes("kabale") || th.includes("schiller") || t === "kabale") defaultExcerpt = "kabale-miller-praesident";
       else if (th.includes("willkommen") || th.includes("abschied") || (th.includes("lyrik") && th.includes("sturm")) || t === "lyrik" || t === "metrum") defaultExcerpt = "goethe-willkommen-abschied";
+      else if (th.includes("kafka") || th.includes("verwandlung") || th.includes("ungeziefer") || th.includes("samsa") || t === "kafka" || t === "verwandlung") defaultExcerpt = "kafka-verwandlung";
       else if (th.includes("woyzeck") || t === "woyzeck") defaultExcerpt = "woyzeck-rasieren";
       else if (th.includes("macbeth") || th.includes("shakespeare") || f.includes("engl") || t === "shakespeare") defaultExcerpt = "macbeth-soliloquy";
       else if (th.includes("pakt") || th.includes("wette")) defaultExcerpt = "faust-pakt";
@@ -537,6 +538,7 @@ function renderEmbeddedTool(toolName: string, lang: Lang, fach: string, thema?: 
     if (th.includes("nathan") || th.includes("ringparabel")) fallbackExcerpt = "nathan-ringparabel";
     else if (th.includes("kabale") || th.includes("schiller")) fallbackExcerpt = "kabale-miller-praesident";
     else if (th.includes("willkommen") || th.includes("abschied") || (th.includes("lyrik") && th.includes("sturm"))) fallbackExcerpt = "goethe-willkommen-abschied";
+    else if (th.includes("kafka") || th.includes("verwandlung") || th.includes("ungeziefer") || th.includes("samsa")) fallbackExcerpt = "kafka-verwandlung";
     else if (f.includes("engl")) fallbackExcerpt = "macbeth-soliloquy";
 
     return (

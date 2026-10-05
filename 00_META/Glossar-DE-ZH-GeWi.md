@@ -960,3 +960,6 @@ tags: [EF, Meta]
 | Vita activa | 积极生活的三重境界 | Philosophie | Hannah Arendts Vita activa gliedert die menschliche Tätigkeit in Arbeiten, Herstellen und politisches Handeln. |
 | Pluralität | 人类的复多性 | Philosophie | Pluralität bedeutet, dass viele einzigartige Menschen im gemeinsamen öffentlichen Raum politisch handeln. |
 | corrupted American Dream | 蜕变的美国梦/消费主义神话 | Englisch | The corrupted American Dream equates personal happiness and human worth exclusively with material wealth. |
+| Personale Erzählsituation | 限制性人物叙事视角 | Deutsch | Die personale Erzählsituation schildert das Romangeschehen unkommentiert aus der Innensicht der Figur. |
+| Entfremdung der Arbeit | 劳工异化 | Deutsch | Die Entfremdung der Arbeit degradiert das schöpferische Individuum zum ersetzbaren Rädchen im Getriebe. |
+| realisierte Metapher | 实体化隐喻 | Deutsch | Die realisierte Metapher verwandelt eine bildhafte Redewendung in eine physisch erfahrbare Romantatsache. |

@@ -3666,4 +3666,378 @@ export const GEWI_TEXT_REGISTRY: GeWiTextExcerpt[] = [
       },
     ],
   },
+
+  // =========================================================================
+  // 14. DEUTSCH: Franz Kafka — Die Verwandlung (现代叙事文学：异化与荒诞变形)
+  // =========================================================================
+  {
+    id: "kafka-verwandlung",
+    fach: "Deutsch",
+    genre: "Epik",
+    author: "Franz Kafka",
+    workTitleDE: "Die Verwandlung",
+    workTitleZH: "《变形记》",
+    sceneTitleDE: "Kapitel 1 // Das Erwachen als ungeheures Ungeziefer",
+    sceneTitleZH: "第一章：怪诞变形之晨 (劳工异化、生存焦虑与形而上荒诞)",
+    versesRange: "Kapitel 1, Textanfang (Z. 1–38)",
+    epochDE: "Moderne / Früher Expressionismus (1912/1915)",
+    epochZH: "现代主义 / 早期表现主义与存在主义文学 (1912/1915)",
+    contextDE:
+      "Als Gregor Samsa eines Morgens erwacht, findet er sich im Körper eines monströsen Ungeziefers gefangen. Kafka inszeniert diesen unerklärlichen Schockmoment in einer nüchtern-präzisen, bürokratischen Diktion, die das Unfassbare als alltägliche Tatsache festhält.",
+    contextZH:
+      "当小职员格里高尔·萨姆沙清晨醒来，赫然发现自己被禁锢在一具巨大的甲虫肉身之中。卡夫卡拒绝提供任何神话或童话式的超自然解释，而是以惊人客观、冷峻、近乎行政公文般的平铺直叙笔调，将这一荒谬绝伦的生存绝境记录为无法逃避的日常事实。",
+    verses: [
+      {
+        lineNum: 1,
+        textDE: "Als Gregor Samsa eines Morgens aus unruhigen Träumen erwachte...",
+        translationZH: "当格里高尔·萨姆沙某天清晨从不安的睡梦中醒来时……",
+        toneCategory: "krise",
+        vocab: {
+          word: "unruhige Träume",
+          meaningDE: "Psychosomatische Vorboten der existentiellen Entfremdung.",
+          meaningZH: "不安的睡梦：深层潜意识中对奴役式生存状态与家庭重压的生理警讯。",
+        },
+      },
+      {
+        lineNum: 2,
+        textDE: "...fand er sich in seinem Bett zu einem ungeheuren Ungeziefer verwandelt.",
+        translationZH: "……发现自己在床上变成了一只巨大的甲虫（害虫）。",
+        toneCategory: "krise",
+        stilmittel: {
+          type: "Metapher / Chiffre des Monströsen",
+          descDE: "Realisierte Metapher: Der Begriff 'Ungeziefer' objektiviert Gregors Wertlosigkeit im Produktionsprozess.",
+          descZH: "实体化隐喻：'Ungeziefer'（害虫/不可献祭之秽物）将格里高尔在资本生产机器中被榨干剩余价值后的寄生废料本质具象化。",
+        },
+      },
+      {
+        lineNum: 3,
+        textDE: "Er lag auf seinem panzerartig harten Rücken und sah...",
+        translationZH: "他仰卧在坚如铁甲的硬壳后背上，稍微抬眼便看见……",
+        toneCategory: "existenz",
+        vocab: {
+          word: "panzerartig",
+          meaningDE: "Symbol für seelische Verpanzerung und physische Hilflosigkeit.",
+          meaningZH: "铁甲般的：既象征着对外界残酷生存环境的心理硬化防御，又构成了肢体行动彻底瘫痪的实体牢笼。",
+        },
+      },
+      {
+        lineNum: 4,
+        textDE: "...seinen gewölbten, braunen, von bogenförmigen Versteifungen geteilten Bauch,",
+        translationZH: "……自己那褐色隆起、被弓形角质硬皮分割成节的拱形肚皮，",
+        toneCategory: "existenz",
+      },
+      {
+        lineNum: 5,
+        textDE: "auf dessen Höhe sich die Bettdecke, zum gänzlichen Niedergleiten bereit, kaum noch erhalten konnte.",
+        translationZH: "在这隆起的肚皮顶端，被子几乎挂不住，随时都要彻底滑落下来。",
+        toneCategory: "spott",
+      },
+      {
+        lineNum: 6,
+        textDE: "Seine vielen, im Vergleich zu seinem sonstigen Umfang kläglich dünnen Beine...",
+        translationZH: "跟他庞大身躯的其余部分相比，他那许多细得可怜的细腿……",
+        toneCategory: "krise",
+        stilmittel: {
+          type: "Antithese / Groteske Diskrepanz",
+          descDE: "Kontrast zwischen monströsem Panzerkörper und fragilen, zuckenden Gliedmaßen.",
+          descZH: "对照/怪诞反差：庞大沉重的铁甲甲壳与羸弱颤抖、无法受控的细肢之间的荒诞失调。",
+        },
+      },
+      {
+        lineNum: 7,
+        textDE: "...flimmerten ihm hilflos vor den Augen.",
+        translationZH: "……在他眼前无助地晃动挣扎。",
+        toneCategory: "krise",
+      },
+      {
+        lineNum: 8,
+        textDE: "»Was ist mit mir geschehen?«, dachte er. Es war kein Traum.",
+        translationZH: "»我到底怎么了？« 他心里想。但这绝不是一场梦。",
+        toneCategory: "existenz",
+        vocab: {
+          word: "Es war kein Traum",
+          meaningDE: "Radikale Absage an eine fantastische Auflösung: Die Deformation ist physische Realität.",
+          meaningZH: "这绝不是梦：卡夫卡在此粉碎了一切浪漫奇幻解构的幻想，将变形确立为不可逆转的物理现实与存在铁证。",
+        },
+      },
+      {
+        lineNum: 9,
+        textDE: "Sein Zimmer, ein richtiges, nur etwas zu kleines Menschenzimmer, lag ruhig zwischen den vier wohlbekannten Wänden.",
+        translationZH: "他的房间，一间地地道道、只不过稍微偏小的人类居室，安静地坐落在四堵熟悉的墙壁之间。",
+        toneCategory: "autoritaet",
+        stilmittel: {
+          type: "Klaustrophobische Raumsemantik",
+          descDE: "Die vier Wände markieren die bürgerliche Enge und das Gefängnis familiärer Verpflichtungen.",
+          descZH: "密闭空间语义：四堵熟悉却逼仄的人类墙壁，象征着市民阶级狭隘道德规范与家庭无形债务构筑的精神囚笼。",
+        },
+      },
+      {
+        lineNum: 10,
+        textDE: "Über dem Tisch hing das Bild, das er aus einer illustrierten Zeitschrift ausgeschnitten...",
+        translationZH: "桌子上方挂着那张画，是他从一本画报上剪下来、装在镀金相框里的……",
+        toneCategory: "sehnsucht",
+      },
+      {
+        lineNum: 11,
+        textDE: "Gregors Blick richtete sich dann zum Fenster, und das trübe Wetter...",
+        translationZH: "格里高尔的目光随后转向窗外，那阴沉沉的灰暗天气……",
+        toneCategory: "krise",
+      },
+      {
+        lineNum: 12,
+        textDE: "...man hörte Wassertropfen auf das Fensterblech aufschlagen – machte ihn ganz melancholisch.",
+        translationZH: "……雨滴敲打着窗下铁皮的嗒嗒声——使他心头涌起一阵难以名状的忧郁。",
+        toneCategory: "krise",
+        stilmittel: {
+          type: "Symbolik des Wetters (Depression)",
+          descDE: "Tristes Regenwetter spiegelt die Monotonie und Trostlosigkeit seiner Existenz.",
+          descZH: "天气隐喻（忧郁投射）：阴郁雨声与冰冷铁皮不仅是现实环境，更是他空虚、单调、被异化劳作磨灭生机的内心写照。",
+        },
+      },
+      {
+        lineNum: 13,
+        textDE: "»Wie wäre es, wenn ich noch ein wenig weiterschliefe und alle Verrücktheiten vergäße«...",
+        translationZH: "»要是我再睡上一会儿，把所有的疯癫怪事通通忘掉，那该有多好啊«……",
+        toneCategory: "sehnsucht",
+      },
+      {
+        lineNum: 14,
+        textDE: "Aber das war gänzlich unausführbar, denn er war gewohnt, auf der rechten Seite zu schlafen...",
+        translationZH: "但这完全办不到，因为他习惯向右侧睡，却因畸形身躯根本无法侧身翻转……",
+        toneCategory: "spott",
+      },
+      {
+        lineNum: 15,
+        textDE: "»Ach Gott«, dachte er, »was für einen anstrengenden Beruf habe ich gewählt! Tagaus, tagein auf der Reise.«",
+        translationZH: "»哎呀天哪，« 他心里想，»我究竟挑了一份多么累死累人的差事啊！长年累月四处奔波出差。«",
+        toneCategory: "krise",
+        vocab: {
+          word: "anstrengenden Beruf",
+          meaningDE: "Absurde Verdrängung: Das Verpassen des Zuges bedrückt ihn mehr als der Verlust des Menschenkörpers.",
+          meaningZH: "荒谬的心理防御机制：面对肉身非人化的毁灭灾难，他最先担忧的竟仍是业务考勤与迟到受罚，揭示雇佣劳动对其灵魂的深度殖民。",
+        },
+      },
+      {
+        lineNum: 16,
+        textDE: "»Der Teufel soll das alles holen!« Er fühlte ein leichtes Jucken oben auf dem Bauche...",
+        translationZH: "»让魔鬼把这一切都统统抓走吧！« 此时他感到肚皮上方有一阵轻微的发痒……",
+        toneCategory: "streben",
+      },
+    ],
+    questions: [
+      {
+        id: "q-kafka-1",
+        dimension: "wortschatz",
+        afb: "AFB I",
+        titleDE: "Erzählhaltung & Nüchternheit des Stils",
+        titleZH: "叙事视角与冷静文体特征 (AFB I: Darstellen)",
+        questionDE:
+          "Welche Besonderheit kennzeichnet Kafkas Erzählperspektive und sprachliche Diktion in den ersten Sätzen von 'Die Verwandlung'?",
+        questionZH:
+          "卡夫卡在《变形记》开篇第一段中所采取的叙事视角（Erzählperspektive）与语言风格具有何种极具颠覆性的文学特质？",
+        options: [
+          {
+            id: "a",
+            textDE:
+              "Eine personale Erzählperspektive (aus Gregors Innenwahrnehmung), gekoppelt mit einem nüchternen, fast amtlich-protokollarischen Berichtston, der die unfassbare Monstrosität der Verwandlung paradoxerweise als alltägliche Selbstverständlichkeit schildert.",
+            textZH:
+              "采用限制性个人叙事视角（深入格里高尔的主观内在感知），并罕见地嫁接了极度冷静、近乎司法或公文报告般的客观语调，将骇人听闻的怪物变形荒诞现象，悖论式地表述为冷冰冰的既成日常事实。",
+            isCorrect: true,
+          },
+          {
+            id: "b",
+            textDE:
+              "Ein pathetischer, erhabener Hymnenton voller Ausrufezeichen und mythologischer Götteranrufungen, der die Verwandlung als göttliche Belohnung feiert.",
+            textZH:
+              "通篇采用充满惊叹号与古希腊诸神祈祷的崇高颂歌笔调，将这一变成甲虫的变形事件热烈歌颂为神明赐予凡人的神圣奖赏。",
+            isCorrect: false,
+          },
+          {
+            id: "c",
+            textDE:
+              "Ein rein allwissender auktorialer Erzähler, der sich ständig mit moralischen Belehrungen und ironischen Witzen an das Lesepublikum wendet.",
+            textZH:
+              "采用纯粹居高临下的全知全能说教视角，在每一句话后都跳出文本，向读者展开连篇累牍的道德训诫并大讲低俗笑话。",
+            isCorrect: false,
+          },
+        ],
+        explanationDE:
+          "Das Spezifische der 'Kafkaesken Diktion': Das Monströse wird nicht hysterisch skandalisiert, sondern sachlich wie ein Fahrplan oder Behördenbericht registriert.",
+        explanationZH:
+          "【正解依据与文本锚点】\n文学史上著名的‘卡夫卡式笔法’（Das Kafkaeske）：面对‘醒来变成巨型甲虫’这种极度骇人的超现实冲击，叙述者既没有歇斯底里的嚎啕，也没有童话式的神秘解释，而是用‘fand er sich in seinem Bett zu einem ungeheuren Ungeziefer verwandelt’这样平实得如同报告气象或公文的语调平铺直叙。正是这种‘超现实怪物事件’与‘冰冷行政官僚写实语调’之间的巨大张力，造就了卡夫卡无与伦比的荒诞感与存在震撼。\n\n【干扰项逐项诊断】\n• 选项 B 诊断（狂飙突进/古典赞歌混淆）：卡夫卡是现代派冷峻解构大师，绝无古典主义的神性颂歌与浪漫激情；\n• 选项 C 诊断（18世纪全知启蒙小说混淆）：卡夫卡牢牢锁定在格里高尔的个人感知边界内（Personale Erzählsituation），读者与格里高尔一同陷入未知的困惑与幽闭恐慌，无任何外部旁白救场。\n\n【时代思潮与哲学脉络】\n现代主义早期的反崇高：卡夫卡宣告了古典人本主义‘人是万物尺度’的神话破产，现代人被剥夺了神性光环，在官僚流水线时代退化为冰冷无助的数据或‘害虫’。",
+        klausurSatzDE:
+          "Kafka bricht mit traditionellen Gattungskonventionen, indem er das Ungeheuerliche nicht phantastisch verklärt, sondern durch eine betont nüchterne, sachlich-protokollarische personale Erzählsituation als unhintergehbare Alltagswirklichkeit inszeniert.",
+        klausurSatzZH:
+          "卡夫卡颠覆了传统的文体成规，他没有对骇人异变进行浪漫奇幻的粉饰，而是通过高度冷静、近乎行政公文记录般的限制性人物叙事，将这场荒诞的怪物变形塑造成不容置疑且无从遁逃的冷酷现实日常。",
+        ehzKeyPointsDE: [
+          "Bestimmung der Erzählform: Personales Erzählen / erlebte Rede.",
+          "Funktion des nüchternen Tons: Kontrastierung des Absurden mit bürokratischer Präzision.",
+        ],
+        ehzKeyPointsZH: [
+          "采分点 1 (Erzähltechnik 4P)：精准指出‘限制性人物叙事’（Personales Erzählen）及内聚焦特征。",
+          "采分点 2 (Stilfunktion 4P)：深刻提炼‘冷静公文笔调’与‘荒诞超现实灾难’之间的剧烈反差审美张力。",
+        ],
+      },
+      {
+        id: "q-kafka-2",
+        dimension: "motiv",
+        afb: "AFB II",
+        titleDE: "Entfremdung der Arbeit & Verdrängung",
+        titleZH: "劳工异化与心理荒谬逃避机制 (AFB II: Analysieren)",
+        questionDE:
+          "Inwiefern offenbart Gregors unmittelbare Reaktion auf die körperliche Verwandlung (Z. 12–15: Klage über den Reiseberuf und Angst vor Zugverspätung) eine radikale Entfremdung des modernen Menschen?",
+        questionZH:
+          "格里高尔在发现肉身发生怪物畸变后的即刻反应（第12–15句：痛斥推销员差事之劳碌、唯恐上班火车晚点），如何深刻揭示了现代雇佣劳动体制对个体灵魂的极致‘异化’（Entfremdung）？",
+        options: [
+          {
+            id: "a",
+            textDE:
+              "Es liegt eine groteske Verschiebung der Prioritäten vor: Statt Panik über den Verlust seiner menschlichen Existenz zu empfinden, verfällt Gregor sofort in funktionale Arbeitsangst (Verspätung, Zorn des Chefs, familiäre Schuld), was beweist, dass seine Identität restlos auf die Funktion als kapitalistisches Rädchen im Getriebe reduziert wurde.",
+            textZH:
+              "呈现出极其怪诞的‘焦虑重心倒错’：面对人性肉身与生命的毁灭性丧失，格里高尔并未感到应有的求生惊恐，反而立刻陷入对雇佣劳作考勤的条件反射式恐惧（害怕迟到、畏惧老板训斥、焦虑家庭生计债务）。这铁证了他的人格与自我意识已被资本主义生产机器彻底殖民剥夺，沦为毫无独立主体性的齿轮工具。",
+            isCorrect: true,
+          },
+          {
+            id: "b",
+            textDE:
+              "Gregor liebt seine Firma und seinen Chef so leidenschaftlich, dass er die Verwandlung nur deshalb bedauert, weil er heute keine Überstunden für die geliebte Firma machen kann.",
+            textZH:
+              "格里高尔对他的公司与上司怀有无比狂热的敬爱，他之所以为变成甲虫感到遗憾，仅仅是因为今天无法主动为亲爱的老板无偿加班奉献。",
+            isCorrect: false,
+          },
+          {
+            id: "c",
+            textDE:
+              "Es handelt sich um reine Faulheit: Gregor hat sich absichtlich in einen Käfer verwandelt, um einen Krankenschein einzureichen und einen bezahlten Strandurlaub zu erzwingen.",
+            textZH:
+              "这纯属职场员工的偷懒摸鱼：格里高尔是故意通过冥想法把自己变成甲虫的，目的是为了找借口开出病假条，敲诈老板给自己放带薪海滩长假。",
+            isCorrect: false,
+          },
+        ],
+        explanationDE:
+          "Marx'sche Entfremdungstheorie par excellence: Gregor hat seine Arbeit verinnerlicht; das System hat ihn so konditioniert, dass die Pflicht zum Funktionieren selbst seine existenzielle Vernichtung überschattet.",
+        explanationZH:
+          "【正解依据与文本锚点】\n文本呈现了惊人的‘心理置换与异化压抑’：格里高尔浑身长满甲壳、细腿狂颤，按常理应当向家人或医生呼救，但他在内省独白中，第一句话竟然是‘Ach Gott, was für einen anstrengenden Beruf habe ich gewählt!’紧接着分析‘火车的转车问题、推销员业务的繁杂’。他唯恐赶不上早班车遭到公司总管的当面呵斥，唯恐全家的生计债务断供。这无可辩驳地印证了马克思在《1844年经济学哲学手稿》中的论断：在资本主义异化劳动中，劳动者在自己的劳动中不是肯定自己，而是否定自己；人在真正的人的机能中觉得自己像动物，而在动物的机能（维持机器运转）中才觉得自己像人。\n\n【干扰项逐项诊断】\n• 选项 B 诊断（反讽倒置）：格里高尔在内心对老板充满了厌恶（‘Der Chef säße auf dem Pult und spräche von oben herab...’），他唯一的支撑是还清父亲欠下的旧债；\n• 选项 C 诊断（低级庸俗化解读）：变形是格里高尔毫无防备的悲剧，根本不存在任何蓄意逃避劳动的自欺欺人游戏。\n\n【时代思潮与哲学脉络】\n泰勒制与现代官僚社会：20世纪初工业化迅速推进，个体被高度物化（Verdinglichung）。卡夫卡在此完成了对现代工具理性压榨人性的终极文学控诉。",
+        klausurSatzDE:
+          "Die groteske Diskrepanz zwischen physischer Monstrosität und bürokratischer Pflichterfüllung entlarvt Gregors Verinnerlichung kapitalistischer Verwertungszwänge: Das Subjekt ist derart entfremdet, dass selbst die eigene existenzielle Auslöschung hinter der Angst vor ökonomischer Dysfunktionalität zurücktritt.",
+        klausurSatzZH:
+          "身体的怪诞怪物化与对职场考勤义务的执念之间的荒谬反差，深刻揭露了格里高尔对资本主义功利榨取法则的深度内化：主体已经被异化至如此地步，以至于其自身存在维度的彻底毁灭，竟然完全被‘丧失经济齿轮运转功能’的惊恐所掩盖掩蔽。",
+        ehzKeyPointsDE: [
+          "Analyse der Prioritätenverschiebung (funktionale Angst statt biologischer Panik).",
+          "Anbindung an den Begriff der Entfremdung (Marx/Weber) und die Instrumentalisierung des Individuums.",
+        ],
+        ehzKeyPointsZH: [
+          "采分点 1 (Figurenpsychologie 4P)：精准剖析焦虑重心从‘生理形变惊恐’向‘职场功能失效恐惧’的病理学置换。",
+          "采分点 2 (Theorievernetzung 4P)：深度联动异化劳动（Entfremdung）与现代工具理性铁笼概念，达成 15 NP 学理拔高。",
+        ],
+      },
+      {
+        id: "q-kafka-3",
+        dimension: "handlung",
+        afb: "AFB II",
+        titleDE: "Raumsemantik & Familiärer Schuldzusammenhang",
+        titleZH: "密闭空间语义与市民家庭债务枷锁 (AFB II: Einordnen)",
+        questionDE:
+          "Welche dramaturgische und metaphorische Funktion erfüllen die vier Wände von Gregors Zimmer und das Bild der Dame im Pelz (Z. 9–10) im Gesamtzusammenhang des Werks?",
+        questionZH:
+          "格里高尔卧室中狭小逼仄的‘四堵墙壁’以及墙上悬挂的‘裹着皮草的贵妇剪报画像’（第9–10句），在整部小说的象征母题与空间拓扑学中承载了何种深层功能？",
+        options: [
+          {
+            id: "a",
+            textDE:
+              "Das Zimmer fungiert als klaustrophobischer Übergangsraum zwischen bürgerlicher Disziplinierung und animalischer Isolation, während die gerahmte 'Dame im Pelz' ein säkularisiertes Fetisch-Symbol für Gregors unterdrückte Erotik, Wohlstandsträume und seine letzte Reminiszenz an die Menschenwelt darstellt.",
+            textZH:
+              "这间卧室充当了市民阶级道德纪律规训与非人野兽隔绝之间幽闭窒息的‘临界过渡空间’；而装在精致镀金相框中的‘皮草贵妇像’，则构成了格里高尔被压抑的情欲、对资产阶级体面生活的残存幻想，以及他坚守不肯放弃的最后一缕‘人类属性’的拜物教图腾隐喻。",
+            isCorrect: true,
+          },
+          {
+            id: "b",
+            textDE:
+              "Das Bild ist eine wertvolle Original-Mona-Lisa, die Gregor am nächsten Tag auf einer Kunstauktion verkaufen will, um Milliardär zu werden.",
+            textZH:
+              "这张画是价值连城的达芬奇《蒙娜丽莎》真迹，格里高尔打算第二天拿去苏富比艺术拍卖会变现，一举成为亿万富翁退休享清福。",
+            isCorrect: false,
+          },
+          {
+            id: "c",
+            textDE:
+              "Die vier Wände beweisen, dass Gregor in Wirklichkeit ein Schlossbesitzer ist und sich nur aus Spaß als einfacher Handlungsreisender verkleidet hat.",
+            textZH:
+              "四堵墙壁证明格里高尔真实身份其实是一座宏伟古堡的领主，他平日里只是出于个人特殊爱好乔装打扮成推销员游戏人间体验贫民生活。",
+            isCorrect: false,
+          },
+        ],
+        explanationDE:
+          "Raumsemantik bei Kafka ist stets Gefängnis-Semantik: Das Zimmer wird zur Zelle. Das Pelz-Bild wird später im Text zum verzweifelt verteidigten Kern seiner Menschlichkeit.",
+        explanationZH:
+          "【正解依据与文本锚点】\n卡夫卡小说中的空间符号绝非中立背景，而是精神处境的外化：\n1. 空间密闭性（Klaustrophobie）：四堵逼仄的墙壁预示着格里高尔无论变形前后，都早已被关在市民家庭与职场考勤的双重牢笼中。随着剧情推进，三扇紧闭的门将成为家庭成员对他实施放逐与隔离的冷血屏障；\n2. 皮草贵妇画像（Dame im Pelz）：这是格里高尔在无休止的机械出差中，亲手从画报剪下并为之精心镶上镀金画框的物件。它凝聚着他对美丽、温暖、情欲与尊严的渴望。在后续章节中，当母亲和妹妹试图清空他的房间、剥夺他的人性痕迹时，格里高尔不惜用甲虫胸膛紧紧贴在冰冷的玻璃画像上死命护卫，展现出对‘人之尊严’最绝望而动人的悲壮挽留。\n\n【干扰项逐项诊断】\n• 选项 B 诊断（低级常识错误）：文本明确指出这是‘aus einer illustrierten Zeitschrift ausgeschnitten’（从画报上剪下的图），突显其廉价与悲酸；\n• 选项 C 诊断（荒谬歪曲）：格里高尔是背负父亲破产巨额债务、在沉重现实中苦苦挣扎的社会底层齿轮，绝非领主贵族。\n\n【时代思潮与哲学脉络】\n弗洛伊德精神分析与父权压制：格里高尔的生活空间被父亲的暴虐阴影牢牢笼罩。画像既是对缺失母爱与异性温存的代偿，也是弱小自我在严酷超我（父亲与老板）面前的退行避难所。",
+        klausurSatzDE:
+          "Die klaustrophobische Raumkonstellation determiniert Gregors Dasein als schrittweise Verdrängung und Isolierung: Während das Zimmer die familiale Zelle markiert, avanciert die Bildikone der Dame im Pelz zum ambivalenten Symbol seiner unterdrückten Libido sowie seiner letzten, krampfhaften Klammer an die bürgerliche Humanität.",
+        klausurSatzZH:
+          "幽闭窒息的空间拓扑格局将格里高尔的生存命运注定为一步步的排挤与隔绝：如果说卧室标志着家庭伦理规训的冰冷监牢，那么皮草贵妇的画像图腾则跃升为其被压抑的爱欲潜意识、以及他拼死依附于市民阶级残存人性尊严的最后一根救命稻草。",
+        ehzKeyPointsDE: [
+          "Deutung der Raumsemantik: Zimmer als bürgerliches Gefängnis und Isolationsraum.",
+          "Funktion des Pelzbildes: Verdinglichte Ersatzbefriedigung und Symbol humaner Identität.",
+        ],
+        ehzKeyPointsZH: [
+          "采分点 1 (Raumdeutung 4P)：深刻阐发‘卧室四壁’作为市民家庭异化与物理隔离监牢的象征机制。",
+          "采分点 2 (Motivnetz 4P)：精准捕捉‘皮草贵妇画像’作为潜意识欲望投射与人性残存防线的双重意涵。",
+        ],
+      },
+      {
+        id: "q-kafka-4",
+        dimension: "theorie",
+        afb: "AFB III",
+        titleDE: "Existenzphilosophische & Expressionistische Beurteilung",
+        titleZH: "存在主义与表现主义文学史终极评价 (AFB III: Beurteilen)",
+        questionDE:
+          "Inwiefern lässt sich 'Die Verwandlung' vor dem Hintergrund der expressionistischen Entfremdungskrise sowie der frühen Existenzphilosophie (Sartre, Camus) als Schlüsseltext der Moderne beurteilen?",
+        questionZH:
+          "结合表现主义时期的个体异化危机以及早期存在主义哲学（萨特‘他人即地狱’、加缪‘荒诞人’），我们应当如何全方位高度评价《变形记》作为现代主义文学奠基丰碑的时代穿透力？",
+        options: [
+          {
+            id: "a",
+            textDE:
+              "Kafkas Novelle radikalisiert die expressionistische Zivilisationskritik zur existenziellen Grenzsituation: Die Verwandlung ist die physische Materialisierung einer bereits vollzogenen seelischen Entfremdung. Gregor erfährt die Sinnentleerung des Daseins im Sinne des Camus'schen Absurden und erlebt die bürgerliche Familie – getreu Sartres Diktum 'Die Hölle, das sind die anderen' – als scheinheilige Zweckgemeinschaft, die den Unproduktiven gnadenlos vernichtet.",
+            textZH:
+              "卡夫卡的中篇小说将表现主义对工业文明异化的批判激进化为哲理性的‘存在边界处境’（Grenzsituation）：身体的变形实则是现代人灵魂深处早已发生的人性异化向物质肉身的实体化显影。格里高尔直接遭遇了加缪意义上的‘无理荒谬世界’（Das Absurde）；而当他失去赚钱机能后，市民家庭暴露出虚伪残酷的功利冷血本质，精准印证了萨特‘他人即地狱’的名言，展现了现代社会对失去工具价值的无用个体实施的无情社会学生物学双重抹杀。",
+            isCorrect: true,
+          },
+          {
+            id: "b",
+            textDE:
+              "'Die Verwandlung' ist ein harmloses pädagogisches Kinderbuch für das 1. Schuljahr, dessen einziger Zweck darin besteht, den Kindern biologische Insektenkunde und Körperhygiene beizubringen.",
+            textZH:
+              "《变形记》本质上是一本面向小学一年级儿童编写的温和昆虫科普绘本，其唯一目的就是教导小学生注意个人卫生洗手洗脸、认识常见节肢动物分类。",
+            isCorrect: false,
+          },
+          {
+            id: "c",
+            textDE:
+              "Kafka wollte damit beweisen, dass die Monarchie der österreichisch-ungarischen Monarchie die gerechteste Regierungsform der Weltgeschichte war und keinerlei Reformen bedurfte.",
+            textZH:
+              "卡夫卡创作这部作品是为了向奥匈帝国哈布斯堡皇帝表忠心，证明哈布斯堡王朝的官僚统治是人类历史上最完美的仁政天堂，不需要任何改进。",
+            isCorrect: false,
+          },
+        ],
+        explanationDE:
+          "Verbindung von Expressionismus (Krise des Ich, Aufbegehren gegen den Vater) und Existenzialismus: Die körperliche Monstrosität entlarvt die Monstrosität der gesellschaftlichen Konventionen.",
+        explanationZH:
+          "【正解依据与文本锚点】\n《变形记》之所以是世界文学的巅峰里程碑，在于它深刻汇聚了20世纪两大哲学与文学思潮：\n1. 表现主义的‘自我危机与父权破裂’（Ich-Dissoziation & Vater-Konflikt）：表现主义文学核心主题是对机械文明剥夺人性的愤怒控诉。格里高尔的肉身畸变，恰恰是他潜意识中对残酷职场与专制父亲的绝望抗争——当他变成昆虫，他终于‘合情合理地再也不用去赶那该死的火车’；\n2. 存在主义的‘荒诞与他人地狱’（Das Absurde & L'enfer, c'est les autres）：世界毫无理由地给予个体荒谬的打击（毫无因果逻辑的变形）；而在变形之后，曾经享用他薪水供养的父母和妹妹，起初勉强维持虚假的同情，最终当他们发现格里高尔再也无法创造利润时，便毫不犹豫地扔苹果打烂他的背脊，将他活活饿死在杂物堆中，并在他死后轻快地坐电车去郊游挑女婿。这血淋淋地揭露了资产阶级亲情温情脉脉面纱下的资本算计与功利本质。\n\n【干扰项逐项诊断】\n• 选项 B 诊断（低级降智）：将人类存在主义形而上悲剧歪曲为儿童昆虫读物；\n• 选项 C 诊断（颠倒作者背景）：卡夫卡身为布拉格工伤保险局的小职员，对奥匈帝国晚期僵死窒息的官僚机器深恶痛绝，其一生作品都在解构和讽刺国家机器的荒谬暴力。\n\n【时代思潮与哲学脉络】\n从‘异化’到‘非人化’（Dehumanisierung）：卡夫卡精准预言了20世纪极权主义与工业化屠杀中将特定人群贬低为‘害虫’（Ungeziefer）予以抹杀的骇人历史现实，具有超前而深刻的先知性批判力量。",
+        klausurSatzDE:
+          "In existenzphilosophischer Synthese avanciert Kafkas 'Verwandlung' zum Epochenmonument: Die physische Regression zum Insekt entlarvt die radikale Verdinglichung des Individuums in der Moderne und demonstriert mit unerbittlicher Konsequenz, dass die Würde des Menschen in einer kapitalistischen Leistungsordnung unweigerlich mit dem Verlust seiner ökonomischen Verwertbarkeit erlischt.",
+        klausurSatzZH:
+          "在存在主义哲学的宏阔视阈中，卡夫卡的《变形记》升华为跨越时代的丰碑：肉身向昆虫的退化不仅揭示了现代文明对个体生命的极致物化，更以冷酷到底的逻辑宣示，在唯生产力与唯效益论的资本秩序中，当一个人失去经济可榨取价值之时，其作为人的尊严与生存权利便无可挽回地走向熄灭。",
+        ehzKeyPointsDE: [
+          "Verbindung zu existenzialistischen Leitmotiven: Das Absurde, Entfremdung, die Hölle der Mitmenschen.",
+          "Epochenbezug zum Expressionismus: Zivilisationsmüdigkeit, Dehumanisierung, radikale Subjektivitätskrise.",
+        ],
+        ehzKeyPointsZH: [
+          "采分点 1 (Existenzphilosophie 4P)：精准运用加缪‘荒谬’与萨特‘他人即地狱’哲学范畴完成小说主旨评判。",
+          "采分点 2 (Kulturkritik 4P)：深入挖掘现代性资本绩效社会（Leistungsgesellschaft）中生命物化与尊严剥夺的终审反思。",
+        ],
+      },
+    ],
+  },
 ];
+
