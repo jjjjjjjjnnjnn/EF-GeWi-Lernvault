@@ -500,7 +500,7 @@ function renderEmbeddedTool(toolName: string, lang: Lang, fach: string, thema?: 
 
   // 6. DEUTSCH & ENGLISCH TOOLS (GeWiReadingLab + DilemmaTheatre)
   if (f.includes("deutsch") || f.includes("englisch") || f.includes("english")) {
-    if (t === "gewi-reading" || t === "reader" || t === "originaltext" || t === "text-analyse" || t === "faust" || t === "drama" || t === "woyzeck" || t === "shakespeare" || t === "nathan" || t === "kabale" || t === "lyrik" || t === "metrum" || t === "kafka" || t === "verwandlung" || t === "king" || t === "dream") {
+    if (t === "gewi-reading" || t === "reader" || t === "originaltext" || t === "text-analyse" || t === "faust" || t === "drama" || t === "woyzeck" || t === "shakespeare" || t === "nathan" || t === "kabale" || t === "lyrik" || t === "metrum" || t === "kafka" || t === "verwandlung" || t === "king" || t === "dream" || t === "orwell" || t === "1984" || t === "salesman" || t === "miller") {
       let defaultExcerpt = "faust-monolog";
       const th = (thema || "").toLowerCase();
       if (th.includes("nathan") || t === "nathan" || th.includes("ringparabel")) defaultExcerpt = "nathan-ringparabel";
@@ -508,6 +508,8 @@ function renderEmbeddedTool(toolName: string, lang: Lang, fach: string, thema?: 
       else if (th.includes("willkommen") || th.includes("abschied") || (th.includes("lyrik") && th.includes("sturm")) || t === "lyrik" || t === "metrum") defaultExcerpt = "goethe-willkommen-abschied";
       else if (th.includes("kafka") || th.includes("verwandlung") || th.includes("ungeziefer") || th.includes("samsa") || t === "kafka" || t === "verwandlung") defaultExcerpt = "kafka-verwandlung";
       else if (th.includes("king") || th.includes("dream") || th.includes("civil") || th.includes("speech") || t === "king" || t === "dream") defaultExcerpt = "mlk-dream";
+      else if (th.includes("orwell") || th.includes("1984") || th.includes("dystopi") || th.includes("surveillance") || t === "orwell" || t === "1984") defaultExcerpt = "orwell-1984";
+      else if (th.includes("salesman") || th.includes("willy") || th.includes("loman") || th.includes("miller") || t === "salesman" || t === "miller") defaultExcerpt = "miller-salesman";
       else if (th.includes("woyzeck") || t === "woyzeck") defaultExcerpt = "woyzeck-rasieren";
       else if (th.includes("macbeth") || th.includes("shakespeare") || f.includes("engl") || t === "shakespeare") defaultExcerpt = "macbeth-soliloquy";
       else if (th.includes("pakt") || th.includes("wette")) defaultExcerpt = "faust-pakt";
@@ -549,7 +551,10 @@ function renderEmbeddedTool(toolName: string, lang: Lang, fach: string, thema?: 
     else if (th.includes("willkommen") || th.includes("abschied") || (th.includes("lyrik") && th.includes("sturm"))) fallbackExcerpt = "goethe-willkommen-abschied";
     else if (th.includes("kafka") || th.includes("verwandlung") || th.includes("ungeziefer") || th.includes("samsa")) fallbackExcerpt = "kafka-verwandlung";
     else if (f.includes("engl")) {
-      fallbackExcerpt = (th.includes("dream") || th.includes("king") || th.includes("speech") || th.includes("rhetoric")) ? "mlk-dream" : "macbeth-soliloquy";
+      if (th.includes("dream") || th.includes("king") || th.includes("speech") || th.includes("rhetoric")) fallbackExcerpt = "mlk-dream";
+      else if (th.includes("orwell") || th.includes("1984") || th.includes("dystopi") || th.includes("surveillance")) fallbackExcerpt = "orwell-1984";
+      else if (th.includes("salesman") || th.includes("willy") || th.includes("loman") || th.includes("miller")) fallbackExcerpt = "miller-salesman";
+      else fallbackExcerpt = "macbeth-soliloquy";
     }
 
     return (

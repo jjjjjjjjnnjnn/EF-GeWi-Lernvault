@@ -393,8 +393,25 @@ describe("Pädagogische Komponenten (Pedagogy UI Library)", () => {
       expect(screen.getAllByText(/unzufriedener Sokrates/).length).toBeGreaterThan(0);
       expect(screen.getByText(/功利原理与四大核心要素/)).toBeInTheDocument();
     });
+
+    it("laedt George Orwell 1984 und dekonstruiert Doublethink", () => {
+      render(<GeWiReadingLab lang="zh" defaultExcerptId="orwell-1984" filterFach="Englisch" />);
+      expect(screen.getAllByText(/Nineteen Eighty-Four/).length).toBeGreaterThan(0);
+      expect(screen.getAllByText(/clocks were striking thirteen/).length).toBeGreaterThan(0);
+      expect(screen.getAllByText(/BIG BROTHER IS WATCHING YOU/).length).toBeGreaterThan(0);
+      expect(screen.getByText(/全面监控装置与电幕的双向机制/)).toBeInTheDocument();
+    });
+
+    it("laedt Arthur Miller Death of a Salesman und untersucht den American Dream", () => {
+      render(<GeWiReadingLab lang="zh" defaultExcerptId="miller-salesman" filterFach="Englisch" />);
+      expect(screen.getAllByText(/Death of a Salesman/).length).toBeGreaterThan(0);
+      expect(screen.getAllByText(/Nobody dast blame this man/).length).toBeGreaterThan(0);
+      expect(screen.getAllByText(/smile and a shoeshine/).length).toBeGreaterThan(0);
+      expect(screen.getByText(/查利的悼词：现代推销员的生存解剖/)).toBeInTheDocument();
+    });
   });
 });
+
 
 
 

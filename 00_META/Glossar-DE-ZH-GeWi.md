@@ -969,4 +969,7 @@ tags: [EF, Meta]
 | qualitativer Hedonismus | 质性快乐主义 | Philosophie | Der qualitative Hedonismus gewichtet geistig-sittliche Freuden höher als rein körperliche Triebe. |
 | kompetente Richter | 胜任的裁判官 | Philosophie | Kompetente Richter sind erfahrene Urteiler, die über den Vorrang geistiger Freuden empirisch entscheiden. |
 | Teleologie | 目的论/后果伦理学 | Philosophie | Die Teleologie beurteilt den moralischen Wert einer Handlung ausschließlich an deren Folgen. |
+| telescreen | 双向监控电幕 | Englisch | The telescreen is a totalitarian apparatus eliminating private sanctuary through continuous surveillance. |
+| doublethink | 双重思想 | Englisch | Doublethink describes the mental capacity to hold two contradictory beliefs simultaneously and accept both. |
+| commodification of personality | 人格商品化 | Englisch | The commodification of personality forces the worker to package charm and dignity as a marketable good. |
 

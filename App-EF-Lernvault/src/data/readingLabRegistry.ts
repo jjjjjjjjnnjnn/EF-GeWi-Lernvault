@@ -4830,7 +4830,749 @@ export const GEWI_TEXT_REGISTRY: GeWiTextExcerpt[] = [
       },
     ],
   },
+
+  // =========================================================================
+  // 17. ENGLISCH: George Orwell — Nineteen Eighty-Four (反乌托邦与思想控制)
+  // =========================================================================
+  {
+    id: "orwell-1984",
+    fach: "Englisch",
+    genre: "Epik",
+    author: "George Orwell",
+    workTitleDE: "Nineteen Eighty-Four",
+    workTitleZH: "《一九八四》",
+    sceneTitleDE: "Part 1, Chapter 1 // Telescreen, Big Brother & The Ministry of Truth",
+    sceneTitleZH: "第一部第一章：电幕、老大哥与真理部 (全景敞视监控、新话与双重思想)",
+    versesRange: "Part 1, Chapter 1 (Opening excerpt)",
+    epochDE: "Dystopian Fiction / 20th Century English Novel (1949)",
+    epochZH: "反乌托邦讽刺小说 / 20世纪英国经典文学 (1949)",
+    contextDE:
+      "In a bleak, dystopian London ruled by the totalitarian Party (Ingsoc), Winston Smith navigates a suffocating surveillance apparatus. The omnipresent telescreens, the face of Big Brother, and the paradoxical Party slogans enforce total cognitive and linguistic subjugation.",
+    contextZH:
+      "在被极权主义寡头政党（英社 Ingsoc）统治的阴暗反乌托邦伦敦，小职员温斯顿·史密斯在无所不在的全景监控监视器下战战兢兢地生活。无处不在的电幕、老大哥的冷酷面孔以及充满悖论的党的核心口号，对全人类的心智与语言施加了绝对剥夺与精神奴役。",
+    verses: [
+      {
+        lineNum: 1,
+        textDE: "It was a bright cold day in April, and the clocks were striking thirteen.",
+        translationZH: "那是四月里一个晴朗而寒冷的日子，时钟敲响了十三下。",
+        toneCategory: "krise",
+        stilmittel: {
+          type: "Distorted Reality / Estrangement",
+          descDE: "The clock striking 'thirteen' immediately signals an unnatural, distorted reality beyond normality.",
+          descZH: "陌生化现实畸变：'时钟敲响十三下'破空开篇，立即宣告了整个人类文明日常秩序的失常与被篡改。",
+        },
+      },
+      {
+        lineNum: 2,
+        textDE: "Winston Smith, his chin nuzzled into his breast in an effort to escape the vile wind...",
+        translationZH: "温斯顿·史密斯为了躲避寒风把下巴缩在胸前……",
+        toneCategory: "krise",
+      },
+      {
+        lineNum: 3,
+        textDE: "...slipped quickly through the glass doors of Victory Mansions, though not quickly enough to prevent a swirl of gritty dust from entering along with him.",
+        translationZH: "……快步闪进‘胜利大厦’的玻璃门，但风沙还是夹着刺鼻的尘土跟着他卷了进来。",
+        toneCategory: "spott",
+        stilmittel: {
+          type: "Irony of Victory",
+          descDE: "'Victory Mansions' is a filthy, decaying tenement; dramatic irony exposes Party propaganda.",
+          descZH: "讽刺命名（反讽）：破败肮脏、充满霉味的筒子楼却被冠以‘胜利大厦’的宏伟名称，赤裸裸揭示了党宣传语言与凄惨现实的撕裂。",
+        },
+      },
+      {
+        lineNum: 4,
+        textDE: "The hallway smelt of boiled cabbage and old rag mats. At one end of it a coloured poster, too large for indoor display, had been tacked to the wall.",
+        translationZH: "门厅里弥漫着煮烂卷心菜和旧碎布垫子的气味。在门厅一头，一张大得不适宜在室内张贴的彩色招贴画被钉在墙上。",
+        toneCategory: "krise",
+      },
+      {
+        lineNum: 5,
+        textDE: "It depicted simply an enormous face, more than a metre wide: the face of a man of about forty-five, with a heavy black moustache and ruggedly handsome features.",
+        translationZH: "画面上只有一张一米多宽的巨型面孔：那是一个约莫四十五岁男人的面孔，留着浓密的黑胡子，面部线条粗犷英武。",
+        toneCategory: "autoritaet",
+      },
+      {
+        lineNum: 6,
+        textDE: "Winston made for the stairs. It was no use trying the lift. Even at the best of times it was seldom working, and at present the electric current was cut off during daylight hours.",
+        translationZH: "温斯顿朝楼梯走去。试图乘电梯是毫无指望的。即使在情况最好的时候电梯也极少运行，而眼下由于白天实行电力管制，电源早被切断了。",
+        toneCategory: "krise",
+      },
+      {
+        lineNum: 7,
+        textDE: "On each landing, opposite the lift-shaft, the poster with the enormous face gazed from the wall. It was one of those pictures which are so contrived that the eyes follow you about when you move.",
+        translationZH: "在每一个楼梯平台正对电梯井的墙上，那张画着巨脸的招贴画都死死凝视着过往之人。那是那种经过特殊构图绘制的画像，无论你走到哪里，画中的眼睛都仿佛如影随形跟着你。",
+        toneCategory: "autoritaet",
+      },
+      {
+        lineNum: 8,
+        textDE: "BIG BROTHER IS WATCHING YOU, the caption beneath it ran.",
+        translationZH: "画下方的一行大字赫然写着：老大哥正在看着你。",
+        toneCategory: "autoritaet",
+        vocab: {
+          word: "Big Brother is watching you",
+          meaningDE: "Panoptische Chiffre totaler Allgegenwart und Überwachung.",
+          meaningZH: "全景敞视全天候监控密码：剥夺个人哪怕一秒钟的隐私，构筑窒息的心理戒惧。",
+        },
+      },
+      {
+        lineNum: 9,
+        textDE: "Inside the flat a fruity voice was reading out a list of figures which had something to do with the production of pig-iron.",
+        translationZH: "公寓房间里，一个字正腔圆的声音正在大声朗读一份关于生铁产量的统计数字清单。",
+        toneCategory: "spott",
+      },
+      {
+        lineNum: 10,
+        textDE: "The voice came from an oblong metal plaque like a dulled mirror which formed part of the surface of the right-hand wall.",
+        translationZH: "这声音来自一块长方形金属薄板，它像一面暗淡的镜子，嵌在右侧墙壁表面。",
+        toneCategory: "krise",
+        vocab: {
+          word: "telescreen",
+          meaningDE: "Zweiwege-Fernseher: Empfängt Propaganda und sendet simultan Audio- und Videobilder des Bürgers an die Gedankenpolizei.",
+          meaningZH: "电幕（双向监控电视）：不仅是单向宣传灌输工具，更是将房间内每一个公民的呼吸动作与声音24小时不间断上传至思想警察指挥中枢的电子眼。",
+        },
+      },
+      {
+        lineNum: 11,
+        textDE: "The instrument (the telescreen, it was called) could be dimmed, but there was no way of shutting it off completely.",
+        translationZH: "这个仪器（被称为电幕）的音量虽然可以被调小，但绝对没有任何方法能把它彻底关掉！",
+        toneCategory: "krise",
+        stilmittel: {
+          type: "Totalitarian Omnipresence",
+          descDE: "The impossibility of turning it off embodies the absolute annihilation of the private sphere.",
+          descZH: "绝对极权在场性：无法关闭的物理机制，象征着私人生活领域的彻底消亡与国家公权力的无限侵入。",
+        },
+      },
+      {
+        lineNum: 12,
+        textDE: "You had to live—did live, from habit that became instinct—in the assumption that every sound you made was overheard, and, except in darkness, every movement scrutinized.",
+        translationZH: "你必须生活在——而且实际上也正是从习惯演变为本能地生活在——这样一种假定之中：你发出的每一丝声音都被人偷听，除了在彻底黑暗中，你的每一个动作都受到严密审视检视。",
+        toneCategory: "krise",
+      },
+      {
+        lineNum: 13,
+        textDE: "Winston kept his back turned to the telescreen. It was safer, though, as he well knew, even a back can be revealing.",
+        translationZH: "温斯顿背对着电幕坐着。这样更安全些，尽管他也十分清楚，哪怕是一个背影，也能暴露一个人的反叛心思。",
+        toneCategory: "krise",
+        vocab: {
+          word: "thoughtcrime",
+          meaningDE: "Gedankendelikt: Das heiligste Verbrechen im Totalitarismus; Denken gegen die Parteilinie zieht den physischen Tod nach sich.",
+          meaningZH: "思想罪：极权主义社会最高死罪；不忠于党的哪怕一刹那内在思绪闪现，便足以引来物理肉身的彻底蒸发。",
+        },
+      },
+      {
+        lineNum: 14,
+        textDE: "A kilometre away the Ministry of Truth, his place of work, towered vast and white above the grimy landscape.",
+        translationZH: "一公里之外，他供职的真理部（Ministry of Truth）巍峨耸立，洁白宏伟，高高凌驾于周围乌黑肮脏的废墟市容之上。",
+        toneCategory: "autoritaet",
+      },
+      {
+        lineNum: 15,
+        textDE: "This, he thought with a sort of vague distaste—this was London, chief city of Airstrip One, itself the third most populous of the provinces of Oceania.",
+        translationZH: "这就是——他带着一种模糊的厌恶思索着——这就是伦敦，第一空降场的主要城市，也是大洋国人口第三大省份的首府。",
+        toneCategory: "krise",
+      },
+      {
+        lineNum: 16,
+        textDE: "WAR IS PEACE // FREEDOM IS SLAVERY // IGNORANCE IS STRENGTH.",
+        translationZH: "战争即和平 // 自由即奴役 // 无知即力量。",
+        toneCategory: "autoritaet",
+        stilmittel: {
+          type: "Oxymoron / Paradox / Doublethink",
+          descDE: "The ultimate paradoxes of Doublethink: Erasing logical contradictions to destroy rational critical thinking.",
+          descZH: "终极矛盾反讽/双重思想口号：通过强行等同互相否定的反义词，摧毁人类语言的逻辑底线与批判性思考能力。",
+        },
+      },
+    ],
+    questions: [
+      {
+        id: "q-orwell-1",
+        dimension: "wortschatz",
+        afb: "AFB I",
+        titleDE: "Surveillance Architecture & The Telescreen",
+        titleZH: "全面监控装置与电幕的双向机制 (AFB I: Outline & Identify)",
+        questionDE:
+          "How does Orwell construct the pervasive surveillance system in Chapter 1 through the motifs of the 'telescreen' and the 'Big Brother' posters?",
+        questionZH:
+          "奥威尔在第一章中如何通过‘电幕’（telescreen）与‘老大哥招贴画’（Big Brother posters）两大核心意象，建构起一套窒息人性的全天候全景监控体系？",
+        options: [
+          {
+            id: "a",
+            textDE:
+              "The telescreen functions as a bi-directional panoptic apparatus that continuously broadcasts propaganda while simultaneously transmitting visual and auditory data to the Thought Police, making privacy physically impossible; reinforced by the ubiquitous posters whose eyes 'follow you about', the state installs permanent paranoia directly into the citizen's subconsciousness.",
+            textZH:
+              "电幕充当了双向运转的全景敞视控制机器（Panopticon）：它在不间断灌输国家虚假宣传的同时，实时将公民在室内的每一声叹息与每一个微表情上传给思想警察，在物理上彻底消灭了‘私人隐私空间’；配合着那无论走到哪里视线都‘如影随形’的老大哥巨型画像，国家权力将长期的神经质戒惧直接烙印进了每一个公民的潜意识深处。",
+            isCorrect: true,
+          },
+          {
+            id: "b",
+            textDE:
+              "The telescreen was an expensive video game console that Winston purchased to play online soccer with his friends on the weekends.",
+            textZH:
+              "电幕是温斯顿为了在周末和朋友联机踢足球游戏而自费购买的高端大屏幕索尼PlayStation游戏机。",
+            isCorrect: false,
+          },
+          {
+            id: "c",
+            textDE:
+              "The posters of Big Brother were harmless tourism advertisements designed by the London city council to invite French travelers to visit British museums.",
+            textZH:
+              "老大哥招贴画是伦敦旅游局为了吸引法国游客来大英博物馆参观而设计的温和城市文旅宣传画，旨在促进跨国文化交流。",
+            isCorrect: false,
+          },
+        ],
+        explanationDE:
+          "Panopticism according to Foucault: The citizen never knows when he is being watched, so he must assume he is watched at every split second.",
+        explanationZH:
+          "【正解依据与文本锚点】\n边沁与福柯‘全景敞视监狱’（Panoptismus）的终极文学演绎：\n1. 双向电幕（Telescreen）：文本第10–11句明确指出‘could be dimmed, but there was no way of shutting it off completely’。国家机器不仅强行灌输关于生铁产量的谎言数据，更关键的是它剥夺了‘关闭’的权力。任何试图逃离国家视线的举动本身就是犯罪；\n2. 心理内化（Internalized Coercion）：文本第12句写道‘did live, from habit that became instinct, in the assumption that every sound you made was overheard’。当公民无法确认自己是否正在被监视时，他只能被迫在每一个微秒中假定自己正被严密审视，从而在心中建立起一个时刻自我审查的思想警察。\n\n【干扰项逐项诊断】\n• 选项 B 诊断（无厘头娱乐化歪曲）：把极权恐怖降格为儿童电子游戏；\n• 选项 C 诊断（低级反向解读）：完全抹杀冷战极权统治与思想控制的阴森本质。\n\n【时代思潮与哲学脉络】\n现代技术极权批判：奥威尔敏锐预言了现代电子科技与国家官僚机器结合后，可能对个体人权实施的毁灭性监控掠夺，成为当代数字隐私与算法监控资本主义的永恒警钟。",
+        klausurSatzDE:
+          "Orwell conceptualizes the telescreen and the Big Brother icon as an inescapable panoptic architecture: By eliminating the ontological boundary between public authority and private sanctuary, the totalitarian apparatus induces permanent self-censorship and transforms paranoia into a biological survival instinct.",
+        klausurSatzZH:
+          "奥威尔将电幕与老大哥图腾构想为一座无所遁逃的全景敞视控制体系：通过在本体论意义上抹平公共权力与私人庇护所之间的红线界限，极权国家机器诱发了公民不可逆转的自我思想审查，将战战兢兢的偏执戒惧异化为一种生物学本能。",
+        ehzKeyPointsDE: [
+          "Detailed functional analysis of the telescreen (two-way broadcast and eavesdropping).",
+          "Explanation of the psychological internalization of surveillance (habit becoming instinct).",
+        ],
+        ehzKeyPointsZH: [
+          "采分点 1 (Panoptic Mechanics 4P)：精准指出电幕‘不可彻底关闭’与‘双向信息采集’的极权监控特征。",
+          "采分点 2 (Psychological Subjugation 4P)：深刻阐发外部监控如何异化为公民内心深处的‘自动规训与自我思想审查本能’。",
+        ],
+      },
+      {
+        id: "q-orwell-2",
+        dimension: "stilmittel",
+        afb: "AFB II",
+        titleDE: "The Paradoxical Party Slogans & Doublethink",
+        titleZH: "党的核心悖论口号与双重思想机制 (AFB II: Analyse)",
+        questionDE:
+          "How do the three Party slogans 'WAR IS PEACE // FREEDOM IS SLAVERY // IGNORANCE IS STRENGTH' (line 16) embody the linguistic and psychological mechanism of 'Doublethink'?",
+        questionZH:
+          "大洋国执政党的三句核心口号‘战争即和平 // 自由即奴役 // 无知即力量’（第16句），如何通过语言悖论（Paradox / Oxymoron）与认知操控，淋漓尽致地体现了‘双重思想’（Doublethink）的心理奴役机制？",
+        options: [
+          {
+            id: "a",
+            textDE:
+              "The slogans operate through radical semantic oxymora that violently force logically mutually exclusive concepts together; by compelling the human brain to simultaneously hold and sincerely believe contradictory propositions, the Party systematically destroys objective logic and independent critical faculty, conditioning the population to accept that objective truth is whatever the Party dictates at any given moment.",
+            textZH:
+              "这三句口号运用了激进的语义矛盾反讽（Oxymora），强行将逻辑上绝对互斥的对立概念焊死在一起；通过强迫人类大脑同时容纳并真诚相信两个截然矛盾的命题（双重思想），党系统性地摧毁了人类理性逻辑与独立批判思维的基石，成功驯化大众顺从一个终极规则：客观真理没有任何固定标准，党在任何给定时空里宣布什么是真理，什么就是真理！",
+            isCorrect: true,
+          },
+          {
+            id: "b",
+            textDE:
+              "The slogans are simple rhyming slogans used by London primary schools to teach six-year-old children how to read and spell short English words.",
+            textZH:
+              "这三句口号只是伦敦小学为了教六岁儿童认字拼写英语短单词而编写的朗朗上口的押韵童谣顺口溜。",
+            isCorrect: false,
+          },
+          {
+            id: "c",
+            textDE:
+              "The Party slogans were accidentally misspelled by a sleepy sign painter and the government never found the time to fix the spelling mistakes on the Ministry of Truth.",
+            textZH:
+              "这三句口号是印刷厂油漆工在打瞌睡时无意写错的笔误错别字，由于真理部官员工作繁忙，一直没抽出空去纠正外墙上的涂鸦错误。",
+            isCorrect: false,
+          },
+        ],
+        explanationDE:
+          "Linguistic Determinism (Sapir-Whorf Hypothesis): If the language has no words to express freedom or rebellion, rebellion becomes literally unthinkable.",
+        explanationZH:
+          "【正解依据与文本锚点】\n语言决定论与极权认识论（Linguistic Engineering & Epistemological Control）：\n奥威尔在这三句口号中揭示了人类历史上最阴毒的心智控制术：\n1. 语言语义消解：\n   - 战争即和平（WAR IS PEACE）：通过制造虚构的永恒对外战争，消耗国内所有剩余财富，使社会长期处于匮乏与狂热狂躁状态，从而维持国内阶级统治的绝对‘内稳态和平’；\n   - 自由即奴役（FREEDOM IS SLAVERY）：个体追求自由必将死于孤独与无助；唯有交出自我、完全臣服于党的集体不朽，才能获得力量；\n   - 无知即力量（IGNORANCE IS STRENGTH）：民众越缺乏思辨与历史记忆，统治阶级就越不可动摇；\n2. 双重思想（Doublethink）的核心定义：在头脑中同时接受两件矛盾的事物，明知其不可并存，却在思想深处完全接受二者为真。当一个政权能够让所有人相信‘2+2=5’时，它就统治了整个客观实在。\n\n【干扰项逐项诊断】\n• 选项 B 诊断（低级幼态化解构）：将冷酷的政治哲学寓言曲解为幼儿园识字卡；\n• 选项 C 诊断（无厘头荒谬错误）：彻底抹杀口号作为国家意识形态顶层设计的政治严肃性。\n\n【时代思潮与哲学脉络】\n新话（Newspeak）与维特根斯坦：‘语言的界限就是世界的界限’。奥威尔表明，如果通过消灭词汇和逻辑，让人类根本说不出‘暴政’这个词，那么叛乱在生理上就变成‘不可被思想的’（Unthinkable）。",
+        klausurSatzDE:
+          "Through the jarring oxymoronic syntax of the three Party slogans, Orwell crystallizes the totalitarian phenomenon of 'Doublethink': By systematically obliterating the law of non-contradiction, the regime amputates the cognitive apparatus of the individual, replacing rational verification with uncritical ideological orthodoxies.",
+        klausurSatzZH:
+          "通过党的三大口号中那刺耳激烈的语义矛盾反讽句法，奥威尔高度凝练了极权主义‘双重思想’的病理本质：通过系统性肢解形式逻辑中的‘矛盾律’，统治体制切除了个体的认知思考中枢，以盲目驯从的意识形态正统彻底取代了理性的实证求真。",
+        ehzKeyPointsDE: [
+          "Linguistic analysis of the slogans (oxymoron, paradox, antithesis).",
+          "Systematic definition of Doublethink (epistemological control and destruction of logical coherence).",
+        ],
+        ehzKeyPointsZH: [
+          "采分点 1 (Oxymoronic Rhetoric 4P)：精准指出反义词悖论句法所制造的剧烈语义冲突与权威压迫。",
+          "采分点 2 (Doublethink Definition 4P)：深刻阐发‘双重思想’如何通过摧毁人类思维中的矛盾律，达成终极思想殖民。",
+        ],
+      },
+      {
+        id: "q-orwell-3",
+        dimension: "handlung",
+        afb: "AFB II",
+        titleDE: "Decay of the Physical World vs. Party Propaganda",
+        titleZH: "物质废墟的破败写实与虚伪政治狂热的反差 (AFB II: Einordnen)",
+        questionDE:
+          "How does the olfactory and sensory imagery of urban decay ('smelt of boiled cabbage and old rag mats', gritty dust, broken lift) contrast with the triumphant claims of Party ideology?",
+        questionZH:
+          "文本中充斥的‘煮烂卷心菜与旧抹布的恶臭’、呛人的粗砂尘土以及常年损坏的电梯等感官嗅觉描写，如何与党宣传机器中吹嘘的‘生产大捷与伟大胜利’构成强烈的反讽撕裂？",
+        options: [
+          {
+            id: "a",
+            textDE:
+              "The visceral sensory depiction of poverty, physical filth, and systemic scarcity exposes the grotesque chasm between Party myth (glorious industrial quotas, 'Victory Mansions') and the grim reality of squalor; by grounding the reader in repulsive bodily experiences, Orwell demonstrates that totalitarian regimes thrive on perpetual material deprivation to keep the populace exhausted, demoralized, and powerless to organize dissent.",
+            textZH:
+              "对赤贫、脏乱与普遍物资匮乏的直观感官刻画，尖锐揭露了党意识形态神话（虚构的高昂生铁生产指标、虚伪的‘胜利大厦’）与民众凄惨生活现实之间的巨大鸿沟；通过将读者沉浸在令人作呕的肉体生存体验中，奥威尔深刻揭示了极权统治的生存法则：刻意制造长期的物质匮乏与身体疲惫，以彻底消磨大众的尊严与精力，使之无力组织任何政治反抗。",
+            isCorrect: true,
+          },
+          {
+            id: "b",
+            textDE:
+              "London had just won an international prize for the most luxurious organic food city, and the smell of boiled cabbage was a delicacy enjoyed only by billionaires.",
+            textZH:
+              "大洋国伦敦刚刚荣获了全欧洲最奢华有机美食之都大奖，煮烂卷心菜的气味是顶级富豪才能享用的米其林三星名菜。",
+            isCorrect: false,
+          },
+          {
+            id: "c",
+            textDE:
+              "Winston was an amateur plumber who purposely broke the apartment's elevator so that he could get paid overtime to repair it on Monday morning.",
+            textZH:
+              "温斯顿业余兼职水管工，是他为了在周一早晨赚取加班修理费而故意把整栋公寓楼的电梯线路切断搞坏的。",
+            isCorrect: false,
+          },
+        ],
+        explanationDE:
+          "Squalor as tool of domination: Totalitarianism does not build paradise; it rations razor blades and gin to monopolize the individual's mental bandwidth.",
+        explanationZH:
+          "【正解依据与文本锚点】\n反乌托邦与破败现实主义（Dystopian Squalor vs. Utopian Propaganda）：\n1. 感官反讽：大厦叫‘胜利大厦’，但走进去是‘boiled cabbage and old rag mats’（煮烂卷心菜与烂抹布味）；电梯坏了，白天断电；风沙割脸，满嘴沙子；电幕里吹嘘生铁产量翻倍，老百姓却连一把刮胡刀片都买不到；\n2. 政治经济学控制：奥威尔在第三部明确阐释了寡头集权主义的理论：如果社会物资极大丰富，大众摆脱了饥饿与劳碌，就会有闲暇读书与思考，从而发现特权阶层的多余；因此，极权统治必须通过无休止的战争和人为的短缺，让所有人每天为了找肥皂、买鞋带而筋疲力尽，从而丧失一切精神反叛的能量。\n\n【干扰项逐项诊断】\n• 选项 B 诊断（荒谬颠倒）：将极权贫困与营养不良美化为奢华有机美食；\n• 选项 C 诊断（降维破坏）：将社会层面的体制崩溃降格为个人维修恶作剧。\n\n【时代思潮与哲学脉络】\n反思二战战后紧缩（Austerity Britain）：奥威尔以1948年战后伦敦凭票供应、煤炭短缺与废墟瓦砾为蓝本，提炼出超越时代的政治寓言。",
+        klausurSatzDE:
+          "The repulsive olfactory and sensory imagery of dilapidated squalor punctures the triumphalist veneer of Party rhetoric: Physical deprivation is unmasked not as an accidental administrative failure, but as a deliberate political weapon designed to exhaust the human spirit and maintain absolute subservience.",
+        klausurSatzZH:
+          "破败居住环境那令人作呕的嗅觉与感官意象，刺穿了党意识形态狂热宣传的虚伪外衣：物质的普遍匮乏被无可辩驳地揭露为一种精心设计的政治操控武器，其唯一目的就是耗尽人类的心力与精神尊严，维系绝对的极权顺从。",
+        ehzKeyPointsDE: [
+          "Analysis of sensory details (smell of cabbage, broken lift, gritty dust).",
+          "Explanation of the contrast between sensory reality and totalitarian propaganda (Victory Mansions, pig-iron quotas).",
+        ],
+        ehzKeyPointsZH: [
+          "采分点 1 (Sensory Realism 4P)：精准提取煮烂卷心菜气味、损坏电梯等感官细节并剖析其美学功能。",
+          "采分点 2 (Ideology vs. Reality 4P)：深刻阐发物质匮乏如何作为极权政治技术，系统性剥夺个体的反思能力。",
+        ],
+      },
+      {
+        id: "q-orwell-4",
+        dimension: "theorie",
+        afb: "AFB III",
+        titleDE: "Contemporary Relevance: Algorithmic Surveillance & Fake News",
+        titleZH: "当代数字时代终审裁决：算法监控与后真相社会 (AFB III: Evaluate & Assess)",
+        questionDE:
+          "To what extent can Orwell's 1949 vision of 'Nineteen Eighty-Four' be assessed as a chillingly accurate prophecy of 21st-century digital surveillance capitalism, algorithmic tracking, and 'post-truth' politics?",
+        questionZH:
+          "在21世纪跨国科技平台全方位数据追踪、棱镜计划监控、智能手机‘全天候数字电幕’以及‘后真相（Post-Truth）’虚假信息泛滥的数字时代，我们应如何辩证高度评估奥威尔《一九八四》的先知性穿透力与现代异变？",
+        options: [
+          {
+            id: "a",
+            textDE:
+              "In a dialectical assessment, Orwell's vision proves extraordinarily prescient regarding ubiquitous electronic tracking (smartphones as pocket telescreens), the erosion of historical facts (deepfakes, revisionist disinformation), and language truncation; however, unlike Orwell's brutal state-coerced terror, modern surveillance operates primarily through seductive digital convenience and participatory surveillance capitalism (Zuboff), where citizens voluntarily surrender their autonomy in exchange for algorithms and consumer goods.",
+            textZH:
+              "在辩证的现代审视中，奥威尔展现出令人不寒而栗的超前先知力量：智能手机与智能音箱已成为人人随身携带的‘口袋电幕’，数据寡头实时记录每一个点击，而人工智能深伪与‘后真相’政治更是将奥威尔‘谁控制过去就控制未来’的真理部操作推向极致；然而两者的深层机制发生了剧烈变异：现代数字监控不再主要依靠残酷的国家警察暴力强迫，而是通过极具诱惑力的数字便利性、消费主义与祖博夫所揭示的‘监控资本主义’（Surveillance Capitalism）进行柔性操纵——大众是在自愿甚至欢欣鼓舞中，交出了自己的隐私、注意力与灵魂主体性。",
+            isCorrect: true,
+          },
+          {
+            id: "b",
+            textDE:
+              "Orwell was proven completely wrong because the year 1984 already passed four decades ago and nothing bad has ever happened in the history of computer technology since then.",
+            textZH:
+              "奥威尔的预言被历史证明是彻头彻尾的笑话，因为1984年早就过去四十多年了，自那以后计算机行业的发展全都是百分之百的慈善与道德圣洁，不存在任何安全或隐私隐患。",
+            isCorrect: false,
+          },
+          {
+            id: "c",
+            textDE:
+              "Orwell's book has zero relevance today because modern humans have completely stopped speaking languages and now communicate exclusively through medieval smoke signals.",
+            textZH:
+              "这部作品在今天已经毫无阅读价值，因为现代人类早已彻底废弃了所有人类语言，现代社会的几十亿网民现在每天只通过中世纪烽火狼烟进行信息交流。",
+            isCorrect: false,
+          },
+        ],
+        explanationDE:
+          "Huxley vs. Orwell synthesis: In 1984, people are controlled by inflicting pain; in Brave New World, they are controlled by inflicting pleasure. The 21st century combines both.",
+        explanationZH:
+          "【正解依据与文本锚点】\n北威州高中英语会考（Abitur Klausur / Comment）最高阶评分标准（15 NP）：辩证分析当代性（Dialectical Assessment of Modern Surveillance）：\n1. 惊人印证（Thesis / Orwell's Prophecy Fulfilled）：\n   - 斯诺登披露的‘棱镜计划’证明国家情报网络对全球通信的无死角拦截；\n   - 智能手机的麦克风、摄像头与定位芯片，比奥威尔房间墙上的电幕还要贴身百倍；\n   - 政治选战中的算法微靶向投放（Microtargeting）与定向洗脑，完美复刻了真理部的‘现实控制’（Reality Control）；\n2. 机制质变（Antithesis / Structural Difference: Orwell vs. Zuboff & Huxley）：\n   - 奥威尔描绘的是‘硬极权’（Coercive Terror）：用肉体酷刑和饥饿逼你就范；\n   - 21世纪现实演变是‘软监控资本主义’（Surveillance Capitalism）：大众出于对算法推荐、即时聊天、点外卖和刷短视频的依赖，主动把最私密的面部数据、睡眠习惯、人际关系拱手送给科技巨头；\n3. 终审裁决（Synthesis）：\n   奥威尔与赫胥黎（《美丽新世界》）在21世纪达成了可怕的合流：人们既在奥威尔式的算法监控与后真相谣言中被规训，又在赫胥黎式的快餐娱乐与多巴胺茧房中自我麻醉。",
+        klausurSatzDE:
+          "In dialectical evaluation, Orwell's dystopian masterpiece retains unmatched diagnostic power in the age of Big Data and algorithmic tracking: While modern surveillance capitalism operates through voluntary seduction rather than totalitarian terror, the systematic erosion of privacy, historical truth, and linguistic depth vindicates Orwell's warning that democracy erodes whenever power monopolizes the architecture of reality.",
+        klausurSatzZH:
+          "在辩证的时代审视下，奥威尔的反乌托邦巨著在大数据与算法追踪时代依然保持着无可匹敌的诊断穿透力：尽管现代监控资本主义是通过柔性诱惑而非国家恐怖来施展控制，但隐私、历史真相以及语言深度的系统性侵蚀，彻底印证了奥威尔永恒的警示：一旦权力垄断了现实与真理的建构机制，民主大厦便将无可挽回地走向崩塌。",
+        ehzKeyPointsDE: [
+          "Dialectical comparison between Orwell's coercive vision and modern digital surveillance capitalism (Zuboff).",
+          "Integration of contemporary phenomena: Post-truth, fake news, algorithmic bubble, data privacy.",
+        ],
+        ehzKeyPointsZH: [
+          "采分点 1 (Dialectical Comparison 4P)：深刻辨析奥威尔式‘硬性国家恐怖’与现代‘柔性监控资本主义’诱导机制的同异。",
+          "采分点 2 (Post-Truth & Algorithms 4P)：精准切入智能手机口袋电幕、后真相假新闻与现实控制等当代议题，展现 15 NP 高阶学术视野。",
+        ],
+      },
+    ],
+  },
+
+  // =========================================================================
+  // 18. ENGLISCH: Arthur Miller — Death of a Salesman (现代美国戏剧与美国梦幻灭)
+  // =========================================================================
+  {
+    id: "miller-salesman",
+    fach: "Englisch",
+    genre: "Drama",
+    author: "Arthur Miller",
+    workTitleDE: "Death of a Salesman",
+    workTitleZH: "《推销员之死》",
+    sceneTitleDE: "Requiem // At Willy's Grave: He had the wrong dreams",
+    sceneTitleZH: "落幕挽歌幕：他做错了梦 (商品拜物教、消费主义与美国梦的幻灭)",
+    versesRange: "Requiem (Final Scene at the Cemetery)",
+    epochDE: "Modern American Drama / Social Realism (1949)",
+    epochZH: "现代美国戏剧 / 社会现实主义与心理表现主义 (1949)",
+    contextDE:
+      "At Willy Loman's poorly attended grave, his family and neighbour Charley reflect on the deceased salesman's life. While his son Biff recognizes the tragic self-delusion of Willy's career, Charley delivers a famous eulogy defining the precarious, dream-driven existence of the salesman in modern capitalism.",
+    contextZH:
+      "在威利·洛曼那门庭冷落、凄凉无比的墓碑前，他的遗孀琳达、两个儿子比夫、哈皮以及邻居查利，对这位刚刚自杀身亡的普通推销员的一生展开了最后的审视。长子比夫痛心疾首地揭穿了父亲毕生虚妄自欺的美国梦幻象，而查利则发表了戏剧史上著名的悼词，道尽了资本主义商业丛林中推销员随波逐流、靠幻想勉强维生的悲剧命运。",
+    verses: [
+      {
+        lineNum: 1,
+        textDE: "CHARLEY: Nobody dast blame this man.",
+        translationZH: "查利：谁也别想埋怨这个人。",
+        toneCategory: "autoritaet",
+      },
+      {
+        lineNum: 2,
+        textDE: "BIFF: Why, Charley? The man didn't know who he was.",
+        translationZH: "比夫：为什么，查利？这个人一辈子根本不知道他是谁！",
+        toneCategory: "krise",
+        vocab: {
+          word: "didn't know who he was",
+          meaningDE: "Tragischer Identitätsverlust: Willy verleugnete seine wahre handwerkliche Natur für den Konsumtraum.",
+          meaningZH: "悲剧性身份迷失：威利本是一个热爱木工与泥土的动手者，却在消费主义大潮中被洗脑，毕生追逐虚伪体面的推销神话。",
+        },
+      },
+      {
+        lineNum: 3,
+        textDE: "CHARLEY: Nobody dast blame this man. You don't understand: Willy was a salesman.",
+        translationZH: "查利：谁也别想埋怨这个人。你们根本不懂：威利是个推销员。",
+        toneCategory: "moral",
+      },
+      {
+        lineNum: 4,
+        textDE: "And for a salesman, there is no rock bottom to the life.",
+        translationZH: "对于一个推销员来说，生活是永远踩不到坚硬基石的。",
+        toneCategory: "existenz",
+        stilmittel: {
+          type: "Metaphor of Insecurity",
+          descDE: "'No rock bottom' captures the absolute economic and psychological precarity of the salesman.",
+          descZH: "无底深渊隐喻：形象揭示了推销员在残酷雇佣市场中毫无制度保障、随时坠入深渊的极端朝不保夕感。",
+        },
+      },
+      {
+        lineNum: 5,
+        textDE: "He don't put a bolt to a nut, he don't tell you the law or give you medicine.",
+        translationZH: "他不像技工那样把螺丝拧在螺母上，他既不能给别人定法律，也不能给病人开药方。",
+        toneCategory: "existenz",
+        stilmittel: {
+          type: "Parallelismus der Nicht-Produktivität",
+          descDE: "Charley highlights that the salesman produces no tangible physical or institutional goods.",
+          descZH: "非实体生产力排比：点明推销员既不创造实在的物理产品，也不拥有专业特权，其整个生存完全悬浮在人际交易的空中楼阁之上。",
+        },
+      },
+      {
+        lineNum: 6,
+        textDE: "He's a man way out there in the blue, riding on a smile and a shoeshine.",
+        translationZH: "他是一个漂浮在虚无蓝天中的人，单凭着一脸微笑和一双锃亮的皮鞋在那里勉强驰骋打拼。",
+        toneCategory: "spott",
+        vocab: {
+          word: "smile and a shoeshine",
+          meaningDE: "Reine Oberflächenexistenz: Der Verkäufer verkauft nicht Waren, sondern seine eigene Persönlichkeit als Ware.",
+          meaningZH: "微笑与锃亮皮鞋：推销员不是在卖商品，而是把自己的灵魂、尊严与整个人格包装成商品出售。",
+        },
+      },
+      {
+        lineNum: 7,
+        textDE: "And when they start not smiling back—that's an earthquake.",
+        translationZH: "而当客户们开始不再对他以微笑回报时——那便是一场地动山摇的毁灭地震！",
+        toneCategory: "krise",
+        stilmittel: {
+          type: "Metapher des Erdbebens",
+          descDE: "Loss of superficial popularity threatens the salesman's entire existential foundation.",
+          descZH: "地震隐喻：虚饰的商业人际温情一旦破灭，推销员建立在他人认可之上的整个脆弱存在大厦便瞬息坍塌。",
+        },
+      },
+      {
+        lineNum: 8,
+        textDE: "And then you get yourself a couple of spots on your hat, and you're finished.",
+        translationZH: "接着只要你的帽子上沾上了几点污渍，你的整个人生就算彻底完蛋了。",
+        toneCategory: "krise",
+      },
+      {
+        lineNum: 9,
+        textDE: "Nobody dast blame this man. A salesman is got to dream, boy. It comes with the territory.",
+        translationZH: "谁也别想埋怨这个人。推销员必须去做梦，孩子。那是这个行当注定躲不开的宿命！",
+        toneCategory: "moral",
+        vocab: {
+          word: "comes with the territory",
+          meaningDE: "Struktureller Zwang: Das kapitalistische System zwingt den Verkäufer zur ständigen Selbstillusionierung.",
+          meaningZH: "行当宿命/制度性强迫：资本主义神话强迫推销员必须每天向自己灌输虚假幻想，否则根本无法直面冷酷的现实。",
+        },
+      },
+      {
+        lineNum: 10,
+        textDE: "BIFF: Charley, the man didn't know who he was.",
+        translationZH: "比夫：查利，这个人一辈子根本不知道他是谁！",
+        toneCategory: "krise",
+      },
+      {
+        lineNum: 11,
+        textDE: "HAPPY (deeply agitated): Don't say that!",
+        translationZH: "哈皮（情绪激动地大叫）：别这么说！",
+        toneCategory: "krise",
+      },
+      {
+        lineNum: 12,
+        textDE: "BIFF: Why don't you come with me, Happy?",
+        translationZH: "比夫：你为什么不跟我一块儿去西部呢，哈皮？",
+        toneCategory: "sehnsucht",
+      },
+      {
+        lineNum: 13,
+        textDE: "HAPPY: I'm not licked that easily. I'm staying right in this city, and I'm gonna beat this racket!",
+        translationZH: "哈皮：我才不会那么轻易认输。我就要留在这座大城市里，我一定要把这个坑人的竞争行当给踩在脚下！",
+        toneCategory: "streben",
+        stilmittel: {
+          type: "Tragic Repetition / Cycle of Delusion",
+          descDE: "Happy inherits Willy's toxic ambition, perpetuating the catastrophic cycle of the corrupted dream.",
+          descZH: "悲剧循环复现：次子哈皮盲目继承了父亲被污染的毒性野心，预示着美国梦幻灭悲剧在下一代身上的重新轮回。",
+        },
+      },
+      {
+        lineNum: 14,
+        textDE: "He had a good dream. It's the only dream you can have—to come out number-one man.",
+        translationZH: "他的梦想是个好梦。那是你唯一值得去拥有的梦——那就是成为万众瞩目的头号成功人士！",
+        toneCategory: "streben",
+      },
+      {
+        lineNum: 15,
+        textDE: "He fought it out here, and this is where I'm gonna win it for him.",
+        translationZH: "他是在这片土地上战斗到底的，我也要在这里替他把这一仗彻底赢下来！",
+        toneCategory: "streben",
+      },
+      {
+        lineNum: 16,
+        textDE: "LINDA: Forgive me, dear. I can't cry. I made the last payment on the house today... there'll be nobody home. We're free and clear.",
+        translationZH: "琳达：原谅我，亲爱的。我哭不出来。我今天刚刚把房子的最后一笔按揭分期给还清了……可是家里再也没有人了。我们终于无债一身轻了，我们自由了。",
+        toneCategory: "krise",
+        stilmittel: {
+          type: "Crushing Dramatic Irony",
+          descDE: "Paying off the mortgage exactly when the breadwinner is dead exposes the cruelty of capitalism.",
+          descZH: "毁灭性戏剧反讽：在供养者自杀暴毙的这一天，全家终于还清了三十年房屋贷款；获得了冰冷的财产‘自由’，却失去了活生生的生命与爱。",
+        },
+      },
+    ],
+    questions: [
+      {
+        id: "q-salesman-1",
+        dimension: "wortschatz",
+        afb: "AFB I",
+        titleDE: "Charley's Eulogy: The Anatomy of a Salesman",
+        titleZH: "查利的悼词：现代推销员的生存解剖 (AFB I: Outline & Characterize)",
+        questionDE:
+          "How does Charley characterize the existential condition of the salesman in modern capitalism in his famous eulogy (lines 3–9)?",
+        questionZH:
+          "邻居查利在他著名的墓前悼词中（第3–9句），如何精准剖析了现代资本主义商业体系中‘推销员’这一职业的生存宿命与悲剧本质？",
+        options: [
+          {
+            id: "a",
+            textDE:
+              "Charley defines the salesman not as a producer of physical goods, but as someone who must sell his own personality ('riding on a smile and a shoeshine'); because his existence relies entirely on the fleeting, unstable goodwill of others, he has 'no rock bottom' and is structurally forced to sustain himself through perpetual illusions ('a salesman is got to dream').",
+            textZH:
+              "查利指出推销员不从事任何实体物资生产，其本质是将自身的整个人格与尊严当作商品出售（‘单凭一脸微笑和一双锃亮皮鞋打拼’）；因为其生存完全寄托在他人瞬息万变的虚假好感之上，他在制度上‘脚下永远踩不到基石’，处于极端脆弱之中，因而被迫只能依靠无休止的自我幻想（‘推销员必须去做梦’）来维持残存的生存勇气。",
+            isCorrect: true,
+          },
+          {
+            id: "b",
+            textDE:
+              "Charley explains that Willy was a champion horse racer who spent his entire life competing in the Olympic equestrian games in Paris.",
+            textZH:
+              "查利解释说威利其实是一位奥运马术金牌骑手，他这一辈子所有的精力都在巴黎奥运会上参加盛装舞步赛马比赛。",
+            isCorrect: false,
+          },
+          {
+            id: "c",
+            textDE:
+              "Charley accuses Willy of being a billionaire bank robber who buried five million dollars in gold bars under the cemetery grass.",
+            textZH:
+              "查利愤怒控诉威利是一个盗窃银行的亿万巨贪，他在自杀前把搜刮来的五百万美元金条偷偷埋在了墓地草坪下面。",
+            isCorrect: false,
+          },
+        ],
+        explanationDE:
+          "Alienation in sales: The salesman does not produce tangible objects; he commodifies his own smile. When the market rejects his smile, his self-worth instantly evaporates.",
+        explanationZH:
+          "【正解依据与文本锚点】\n资本主义商品拜物教与人格异化（Commodification of the Self）：\n1. 悬浮的生存（'way out there in the blue'）：技工制造螺丝，律师拥有法条，医生拥有医药，唯独推销员手里空无一物。他不仅推销商品，更在推销自己的人格魅力（‘well-liked’）；\n2. 脆弱的基石（'no rock bottom'）：由于缺乏实体生产力支撑，其社会地位完全取决于买家的情绪波动。一旦买家不再回以微笑，推销员面临的不仅是丢单，而是整个存在自我价值的彻底崩塌（‘that's an earthquake’）；\n3. 结构性做梦（'got to dream, it comes with the territory'）：查利深刻地指出，威利的浮夸吹牛绝非个体的道德缺陷，而是资本主义销售制度强加给每一个从业者的精神兴奋剂。\n\n【干扰项逐项诊断】\n• 选项 B 诊断（无厘头荒谬错误）：将社会现实主义悲剧歪曲为骑马运动；\n• 选项 C 诊断（颠倒事实）：威利一生穷困潦倒，最后甚至要向查利每周借50美元来谎称是自己赚的提成，绝非富豪巨贪。\n\n【时代思潮与哲学脉络】\n从‘生产型资本主义’向‘消费型人格资本主义’的转型：社会学家大卫·里斯曼在《孤独的狂欢》（The Lonely Crowd）中指出，现代人从‘内向型’转变为‘他人导向型’（other-directed），威利·洛曼正是这一时代病症最深刻的文学显影。",
+        klausurSatzDE:
+          "Through Charley's poignant funeral oration, Miller delivers a scathing critique of consumer capitalism: The salesman is exposed as a tragically commodified being whose ontological security rests entirely on the marketability of his personality, compelling him into compulsory illusions to endure his systemic precarity.",
+        klausurSatzZH:
+          "通过查利悲怆的墓前悼词，米勒对消费资本主义展开了雷霆万钧的深刻批判：推销员被血淋淋地揭露为一个被彻底商品化的人格躯壳，其本体论意义上的安全感完全悬挂在自身个性迎合市场的可销售性之上，从而在制度上强迫其陷入永恒的虚妄自欺以苟延残喘。",
+        ehzKeyPointsDE: [
+          "Analysis of Charley's core metaphors: 'no rock bottom', 'smile and a shoeshine', 'comes with the territory'.",
+          "Thematic discussion of the commodification of personality and systemic economic precarity.",
+        ],
+        ehzKeyPointsZH: [
+          "采分点 1 (Metaphorical Deconstruction 4P)：精准拆解‘无底深渊’、‘微笑与锃亮皮鞋’等核心隐喻对推销员人格商品化的解剖功能。",
+          "采分点 2 (Systemic Critique 4P)：深刻阐发资本主义雇佣劳动如何结构性逼迫个体走向自我欺骗（Compulsory Delusion）。",
+        ],
+      },
+      {
+        id: "q-salesman-2",
+        dimension: "figuren",
+        afb: "AFB II",
+        titleDE: "Biff vs. Happy: Anagnorisis vs. Perpetual Blindness",
+        titleZH: "比夫的清醒觉悟 vs. 哈皮的执迷不悟 (AFB II: Analysieren)",
+        questionDE:
+          "In what ways do Biff's recognition ('the man didn't know who he was') and Happy's reaction (lines 13–15) present two contrasting responses to the collapse of the American Dream?",
+        questionZH:
+          "长子比夫的痛苦觉悟（‘这个人一辈子根本不知道他是谁’）与次子哈皮的狂躁反应（第13–15句），如何构成了面对美国梦幻灭时两种截然对立的人物心理与悲剧走向？",
+        options: [
+          {
+            id: "a",
+            textDE:
+              "Biff achieves tragic enlightenment (Anagnorisis): By shedding Willy's false pretensions and embracing manual labour, he reclaims his authentic identity outside the rat race; conversely, Happy remains stubbornly blind (Hamartia), inheriting Willy's toxic delusion of becoming 'number-one man' and thereby ensuring that the cycle of capitalist exploitation and spiritual bankruptcy will devour the next generation.",
+            textZH:
+              "比夫达成了古典戏剧意义上的‘悲剧顿悟’（Anagnorisis）：通过坚决撕碎父亲虚伪体面的成功学面具并毅然拥抱纯朴的双手体力劳动，他在残酷的名利场竞争（Rat Race）之外重获了真实的自我认同；相反，次子哈皮则顽固地陷入悲剧性盲目（Hamartia），死死继承了威利‘出人头地做头号大人物’的毒性野心执念，从而注定了资本主义异化掠夺与精神破产将在下一代人身上再次血腥重演。",
+            isCorrect: true,
+          },
+          {
+            id: "b",
+            textDE:
+              "Biff decides to become the President of the United States, while Happy opens a pizza restaurant with his mother in New Jersey.",
+            textZH:
+              "比夫当场决定去竞选美利坚合众国总统，而哈皮则决定带着母亲去新泽西开一家意式披萨连锁快餐店。",
+            isCorrect: false,
+          },
+          {
+            id: "c",
+            textDE:
+              "Both brothers agree that Willy was a brilliant saint whose financial wisdom should be taught at Harvard Business School.",
+            textZH:
+              "两兄弟在墓前完全达成了一致，认为父亲威利是一位圣人先知，他的理财成功学思想应该作为必修课写进哈佛商学院教材。",
+            isCorrect: false,
+          },
+        ],
+        explanationDE:
+          "Anagnorisis vs. tragic repetition: Biff breaks free from the lie; Happy internalizes the lie and becomes Willy 2.0.",
+        explanationZH:
+          "【正解依据与文本锚点】\n人物两极分化与悲剧认同（Character Contrast & Anagnorisis）：\n1. 比夫的觉醒（Biff's Awakening）：比夫在波士顿发现父亲偷情后，心目中的神像早已崩塌。他在墓前发出最透彻的宣判：‘The man didn't know who he was’。威利一生最擅长做木工、修门廊，但在毒性成功学绑架下，他鄙视双手劳作，非要在大都市里装体面绅士。比夫看穿了这个谎言，选择奔向西部农场，完成了对虚伪美国梦的悲壮放逐；\n2. 哈皮的沉沦（Happy's Blindness）：哈皮不仅拒绝正视父亲惨死的真正教训，反而被激起了近乎偏执狂的报复心（‘I'm gonna beat this racket... to come out number-one man’）。哈皮成为了‘威利二世’，全盘接盘了消费主义拜金病毒，展示了意识形态代际传染的无尽恐怖。\n\n【干扰项逐项诊断】\n• 选项 B 诊断（低级荒诞虚构）：脱离剧本根本走向；\n• 选项 C 诊断（颠倒是非）：比夫自始至终都在悲愤地控诉父亲的自我欺骗。",
+        klausurSatzDE:
+          "The antithetical confrontation between Biff and Happy at the graveside epitomizes the drama's philosophical verdict: While Biff attains painful emancipation by stripping away the falsehoods of competitive materialism, Happy's defiant pledge to become 'number-one man' perpetuates the tragic neurosis of the American Dream into an unredeemed future.",
+        klausurSatzZH:
+          "比夫与哈皮在墓碑前的对峙，凝结了整部戏剧的终极哲学判词：如果说比夫通过坚决剥离竞争性功利主义的虚伪迷思而赢得了痛苦却真实的灵魂解放，那么哈皮执迷不悟誓做‘头号成功人士’的誓言，则将美国梦的病态执念无可挽回地延续到了永无救赎的未来轮回之中。",
+        ehzKeyPointsDE: [
+          "Contrasting analysis of Biff's self-discovery (Anagnorisis) and Happy's denial.",
+          "Significance of the ending: Cycle of toxic ambition vs. possibility of authentic existence.",
+        ],
+        ehzKeyPointsZH: [
+          "采分点 1 (Biff's Anagnorisis 4P)：精准指出比夫对‘真实自我’（Authenticity）的找回与对虚妄成功学的决裂。",
+          "采分点 2 (Happy's Tragic Cycle 4P)：深刻阐发哈皮对威利病态执念的接盘与悲剧代际复现的结构性必然性。",
+        ],
+      },
+      {
+        id: "q-salesman-3",
+        dimension: "motiv",
+        afb: "AFB II",
+        titleDE: "Linda's Final Words & The Irony of 'Free and Clear'",
+        titleZH: "琳达的终幕独白与‘还清房贷’的毁灭性戏剧反讽 (AFB II: Interpret)",
+        questionDE:
+          "What is the devastating dramatic irony embedded in Linda's final line: 'I made the last payment on the house today... We're free and clear' (line 16)?",
+        questionZH:
+          "剧终琳达跪在墓前吐出的最后一句话：‘我今天刚刚把房子的最后一笔按揭给还清了……我们终于无债一身轻了，我们自由了’（第16句），蕴含了何种令人心碎的毁灭性戏剧反讽（Dramatic Irony）？",
+        options: [
+          {
+            id: "a",
+            textDE:
+              "The irony lies in the tragic timing: Willy spent his entire adult life sacrificing his mental health and dignity to pay off a thirty-year mortgage, only to commit suicide for the insurance money on the very day the house is finally owned, leaving Linda in an empty house with no one left to live in it; this bitter paradox exposes how capitalism reduces the sacred human ideal of 'freedom' to a cold property transaction stripped of life and love.",
+            textZH:
+              "其反讽在于极端残酷的时间错位：威利耗尽整整一生三十年的精神健康与人性尊严，受尽屈辱按揭供楼，最终为了骗取两万美元人寿保险赔偿金而自杀暴毙；就在他下葬的同一天，房屋产权终于彻底属于他们了，但房子里却空无一人！这一凄厉的悖论残酷证明，在资本主义逻辑中，神圣的人类‘自由’被异化为一笔冷冰冰的房地产抵押清偿，当房子终于属于他们时，生命与家庭却早已荡然无存。",
+            isCorrect: true,
+          },
+          {
+            id: "b",
+            textDE:
+              "Linda was celebrating because she had planned to sell the house immediately to buy a luxury yacht and travel around the Bahamas.",
+            textZH:
+              "琳达在墓前感到无比狂喜，因为她早就蓄谋在还清房贷的当天把房子卖掉套现，买一艘豪华游艇去巴哈马群岛环球度假。",
+            isCorrect: false,
+          },
+          {
+            id: "c",
+            textDE:
+              "The bank made a mathematical error and gave Linda the house for free because the bank manager was Willy's childhood best friend.",
+            textZH:
+              "商业银行在结算时把算术算错了，银行行长因为是威利儿时的发小，大笔一挥直接把整套别墅无偿白送给了琳达。",
+            isCorrect: false,
+          },
+        ],
+        explanationDE:
+          "Alienation of the commodity: Willy gave his life so that an empty box of bricks belongs to his widow. The house is paid, but the human being is dead.",
+        explanationZH:
+          "【正解依据与文本锚点】\n现代戏剧史上的最强反讽终章（The Bitter Irony of 'Free and Clear'）：\n1. 荒谬的胜利：全剧开篇，威利每天抱怨买不起电冰箱零件、还不起汽车贷款、交不起房屋分期。三十年里，他如同一头拉磨的驴子；\n2. 自由的双关嘲弄（Ambiguity of 'Free'）：\n   - 经济层面：'Free and clear'是美国房产法律术语，指‘抵押权解除、全款无负债’；\n   - 存在层面：琳达喃喃自语‘We're free... there'll be nobody home’。自由到来了，但家破人亡；威利用自己碾碎的血肉肉身换取了一座冰冷的水泥砖头空壳；\n3. 消费主义骗局的终极控诉：商品（房子）终于获得了‘清白’，而活着的人却被资本主义流水线彻底榨干吃净，完成了一场彻头彻尾的现代浮士德式血腥交易。\n\n【干扰项逐项诊断】\n• 选项 B 诊断（对悲剧遗孀的恶意污名化）：琳达一生深爱并守护威利，其哭不出来的悲伤是深入骨髓的麻木绝望；\n• 选项 C 诊断（违背常识童话化）：资本主义金融体系冷酷无情，绝无任何白送房产的温情奇迹。\n\n【时代思潮与哲学脉络】\n马克思‘拜物教’（Warenfetischismus）的高潮印证：人与人之间的温情纽带，被彻底物化为人与物（房子、保险金）的算术对价。",
+        klausurSatzDE:
+          "Linda's desolate lament 'we're free and clear' functions as the play's climactic dramatic irony: By synchronizing the financial liberation from the thirty-year mortgage with the physical annihilation of the breadwinner, Miller delivers a searing indictment of a socio-economic order where property ownership is purchased at the cost of human existence itself.",
+        klausurSatzZH:
+          "琳达凄凉绝望的哀叹‘我们无债一身轻了，我们自由了’构成了全剧最高潮的戏剧反讽：通过将三十年房屋贷款的金融清偿与家庭顶梁柱的肉身毁灭在时间上残酷并置，米勒向现代资本主义秩序投掷了最严厉的控诉：在这样的社会中，财产产权的获得，竟然必须以牺牲人的生命本身作为血淋淋的代价！",
+        ehzKeyPointsDE: [
+          "Identification of dramatic irony: Paying the last mortgage payment on the day of Willy's funeral.",
+          "Semantic polysemy of 'free' (financial liberation vs. existential emptiness and bereavement).",
+        ],
+        ehzKeyPointsZH: [
+          "采分点 1 (Dramatic Irony 4P)：精准指出还清三十年房贷与威利自杀下葬同一天发生的残酷错位反讽。",
+          "采分点 2 (Double Meaning of 'Free' 4P)：深刻阐明‘自由’（Free）一词从经济无负债向存在虚无绝望的语义质变。",
+        ],
+      },
+      {
+        id: "q-salesman-4",
+        dimension: "theorie",
+        afb: "AFB III",
+        titleDE: "The Corrupted American Dream & Modern Tragedy",
+        titleZH: "蜕变的美国梦与现代平民悲剧的终审评价 (AFB III: Evaluate & Contextualize)",
+        questionDE:
+          "Inwiefern lässt sich 'Death of a Salesman' im Lichte von Millers Aufsatz 'Tragedy and the Common Man' als Paradigma der modernen bürgerlichen Tragödie und als Abrechnung mit dem korrumpierten American Dream beurteilen?",
+        questionZH:
+          "结合阿瑟·米勒著名文论《悲剧与普通人》（*Tragedy and the Common Man*），我们应当如何全方位高度评价《推销员之死》作为现代平民悲剧的巅峰范式，以及其对‘蜕变扭曲的美国梦’所作出的终审历史清算？",
+        options: [
+          {
+            id: "a",
+            textDE:
+              "Miller revolutionizes classical dramatic theory by asserting that the common man is as apt a subject for tragedy as kings: Willy Loman's tragic flaw (Hamartia) is not excessive pride in nobility, but his fanatical willingness to lay down his life to secure his sense of personal dignity and dignity for his sons; his destruction unmasks the 'American Dream' as a predatory social myth that conflates moral human worth with ruthless capitalist popularity and material wealth, destroying anyone who fails to be marketable.",
+            textZH:
+              "米勒革命性地颠覆了自古希腊亚里士多德以来‘只有帝王将相才配做悲剧主角’的古典成规，提出平民百姓同样具有崇高的悲剧性：威利·洛曼的悲剧致命缺陷（Hamartia）并非贵族的傲慢，而是他为了捍卫哪怕一丝一毫不可剥夺的人人格尊严并为儿子争一口气，不惜献出自己宝贵肉身生命的悲壮执念；他的毁灭将世人崇拜的‘美国梦’无情揭露为一场掠夺性的社会虚妄神话——这个神话粗暴地将人的道德灵魂价值等同于冷血的商业知名度与金钱财富，无情碾碎任何无法在市场上被顺利兜售变现的血肉之躯。",
+            isCorrect: true,
+          },
+          {
+            id: "b",
+            textDE:
+              "'Death of a Salesman' is an aggressive advertisement commissioned by American insurance conglomerates to prove that committing suicide is the safest way to guarantee family wealth.",
+            textZH:
+              "《推销员之死》是全美大型人寿保险集团联合出资赞助拍摄的商业广告片，目的是向全美推销员证明通过车祸自杀是为家庭快速积累财富的最稳妥投资理财渠道。",
+            isCorrect: false,
+          },
+          {
+            id: "c",
+            textDE:
+              "Miller wrote the play to show that everyone in America who fails in business is simply physically handicapped and should be sent to military prison.",
+            textZH:
+              "米勒创作这部戏剧是为了证明所有在商业竞争中落败的美国人全都是智力缺陷者，主张联邦政府把所有失业推销员全部押送进军事监狱强制服苦役。",
+            isCorrect: false,
+          },
+        ],
+        explanationDE:
+          "Tragedy of the Common Man: Willy is heroic because he refuses to accept passivity. He dies fighting for his dignity against an economic system that treats men like garbage.",
+        explanationZH:
+          "【正解依据与文本锚点】\n北威州高中英语会考最高阶学术理论评价（Arthur Miller's Poetics & AFB III）：\n1. 现代平民悲剧范式（Tragedy and the Common Man，1949）：\n   米勒在《纽约时报》发表同名文论，向亚里士多德的《诗学》发起挑战。传统悲剧主角必须是俄狄浦斯、哈姆雷特等王公贵族；米勒断言：当一个普通推销员面对剥夺其人身尊严的社会力量，拼死发起困兽之斗、拒绝默默忍受屈辱之时，他的悲剧庄严性绝不亚于任何古代君王！威利的自杀是一场被扭曲的崇高牺牲——他用生命换取两万美元保险金，试图以此‘给儿子比夫铺就通往成功的最后道路’；\n2. 蜕变美国梦的清算（The Corrupted American Dream）：\n   美国梦最初的清教徒与杰斐逊内涵是‘自由、自治与自食其力的自尊’；但在20世纪垄断资本主义的侵蚀下，美国梦彻底蜕变为‘拜金神话与外表奉承’（Be liked and you will never want）。威利至死都在相信这个谎言，成为这个谎言最悲壮的殉葬品。\n\n【干扰项逐项诊断】\n• 选项 B 诊断（极端反人类荒诞解读）：将批判资本主义掠夺的剧作歪曲为人寿保险推销广告；\n• 选项 C 诊断（倒退法西斯论调）：与米勒作为左翼人道主义剧作家的初衷彻底背道而驰。\n\n【时代思潮与哲学脉络】\n从‘物化’到‘反抗’：威利生前最震撼的一句台词是：‘You can't eat the orange and throw the peel away—a man is not a piece of fruit!’（你不能吃了橘子肉就把皮扔掉——人不是水果！）。这是世界文学史上对现代劳工被当成一次性工具抛弃的最强呐喊。",
+        klausurSatzDE:
+          "In dialectical theoretical synthesis, 'Death of a Salesman' establishes the benchmark for modern tragedy: By transferring the classical hero's quest for dignity onto an ordinary commercial proletarian, Miller exposes the predatory core of the American Dream, proving that an unbridled capitalist ethos inevitaby reduces the sacred worth of the human soul to a disposable factor of economic production.",
+        klausurSatzZH:
+          "在辩证的理论综合审视中，《推销员之死》奠定了现代平民悲剧的不朽丰碑：通过将古典悲剧英雄对尊严的抗争转嫁到一个平民商业无产者身上，米勒彻底剥开了美国梦冷血掠夺的内核，雄辩证明了失去道德缰绳的资本主义功利伦理，势必将人类灵魂的神圣价值贬低为随时可以像垃圾一样抛弃的生产消耗品。",
+        ehzKeyPointsDE: [
+          "Integration of Miller's poetics ('Tragedy and the Common Man'): Dignity of the ordinary citizen.",
+          "Dialectical evaluation of the corrupted American Dream vs. authentic human worth (man is not a fruit).",
+        ],
+        ehzKeyPointsZH: [
+          "采分点 1 (Tragedy of the Common Man 4P)：精准阐释米勒平民悲剧理论中‘普通人对自身不可侵犯尊严的悲壮捍卫’。",
+          "采分点 2 (The Corrupted Dream Critique 4P)：深刻批判将人格与灵魂等同于商品变现的资本主义神话（人不是吃完就扔的橘子皮）。",
+        ],
+      },
+    ],
+  },
 ];
+
 
 
 
