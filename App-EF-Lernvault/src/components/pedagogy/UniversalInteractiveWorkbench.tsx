@@ -1967,7 +1967,8 @@ export function UniversalInteractiveWorkbench({
 
         // Curve mapping: pH 0 to 14 maps to Y = 170 down to 25
         const mapPhToY = (val: number) => 170 - (val / 14) * 145;
-        const currentY = mapPhToY(ph);
+        const clampedPh = Math.max(1, Math.min(13, ph));
+        const currentY = mapPhToY(clampedPh);
         const currentX = 60 + (paramA / 100) * 300;
 
         // Henderson-Hasselbalch titration curve path
@@ -2129,7 +2130,7 @@ export function UniversalInteractiveWorkbench({
             ))}
 
             {/* Active chain end radical */}
-            <line x1={63 + visibleUnits * 32} y1="100" x2={78 + visibleUnits * 32} y2="100" stroke="var(--ink)" strokeWidth="2.5" strokeDasharray="2,2" />
+            <line x1={63 + visibleUnits * 32} y1="100" x2={85 + visibleUnits * 32} y2="100" stroke="var(--ink)" strokeWidth="2.5" strokeDasharray="2,2" />
             <circle cx={85 + visibleUnits * 32} cy="100" r="5" fill="#ef4444" />
             <text x={85 + visibleUnits * 32} y="88" textAnchor="middle" fontSize="8" fill="#ef4444" fontWeight="bold" fontFamily="monospace">
               • (aktiv)
@@ -2389,7 +2390,7 @@ export function UniversalInteractiveWorkbench({
 
             {/* Postsynaptic Depolarisation Wave */}
             <path
-              d={`M 275 125 Q 330 ${125 - epsp * 4} 390 125`}
+              d={`M 275 125 Q 330 ${125 - epsp * 8} 390 125`}
               fill="none"
               stroke={isTriggered ? "#16a34a" : "var(--accent)"}
               strokeWidth="2.5"
@@ -2427,11 +2428,13 @@ export function UniversalInteractiveWorkbench({
           predPts.push(`${i === 0 ? "M" : "L"} ${sx.toFixed(1)} ${syPred.toFixed(1)}`);
         }
 
-        const currentPrey = Math.round(45 + 30 * Math.sin(tCycle) * (capK / 100));
-        const currentPred = Math.round(28 + 22 * Math.sin(tCycle - Math.PI / 2) * (capK / 100));
+        const rawPrey = Math.max(10, 45 + 30 * Math.sin(tCycle) * (capK / 100));
+        const rawPred = Math.max(8, 28 + 22 * Math.sin(tCycle - Math.PI / 2) * (capK / 100));
         const curX = 60 + (paramA / 100) * 330;
-        const curYPrey = 165 - (currentPrey / 90) * 125;
-        const curYPred = 165 - (currentPred / 90) * 125;
+        const curYPrey = 165 - (rawPrey / 90) * 125;
+        const curYPred = 165 - (rawPred / 90) * 125;
+        const currentPrey = Math.round(rawPrey);
+        const currentPred = Math.round(rawPred);
 
         return (
           <svg className="w-full h-64 sm:h-72 rounded bg-[var(--paper-subtle)]/40 border border-[var(--line)]/50" viewBox="0 0 440 200">
@@ -2561,9 +2564,9 @@ export function UniversalInteractiveWorkbench({
                   <circle cx={cx} cy={cy} r={nucleosomeR} fill="#fde047" stroke="#ca8a04" strokeWidth="2" />
                   <text x={cx} y={cy + 3} textAnchor="middle" fontSize="7" fill="#78350f" fontFamily="monospace">Histon</text>
 
-                  {/* DNA strand wrapping around */}
+                  {/* DNA strand wrapping around histone */}
                   <path
-                    d={`M ${cx - nucleosomeR - 4} ${cy} Q ${cx} ${cy - nucleosomeR - 12} ${cx + nucleosomeR + 4} ${cy}`}
+                    d={`M ${cx - nucleosomeR - 4} ${cy} A ${nucleosomeR + 4} ${nucleosomeR + 4} 0 0 1 ${cx + nucleosomeR + 4} ${cy}`}
                     fill="none"
                     stroke="var(--ink)"
                     strokeWidth="2.2"
@@ -2571,10 +2574,10 @@ export function UniversalInteractiveWorkbench({
 
                   {/* Epigenetic tag markers */}
                   {acetyl > 30 && (
-                    <circle cx={cx} cy={cy - nucleosomeR - 6} r="3" fill="#16a34a" />
+                    <circle cx={cx} cy={cy - nucleosomeR - 4} r="3" fill="#16a34a" />
                   )}
                   {methyl > 30 && (
-                    <circle cx={cx} cy={cy + nucleosomeR + 6} r="3" fill="#dc2626" />
+                    <circle cx={cx} cy={cy + nucleosomeR + 4} r="3" fill="#dc2626" />
                   )}
                 </g>
               );
@@ -3474,9 +3477,11 @@ export function UniversalInteractiveWorkbench({
         const ctrl2X = Math.round(210 - kTax * 35);
         const ctrl2Y = Math.round(155 - kTax * 55 - kBasic * 18);
 
-        // Point at 20% population indicating citizen's income floor
-        const p20X = 60 + 44; // 20% of 220px
-        const p20Y = Math.round(163 - kBasic * 25 - kTax * 8);
+        // Point at 20% population indicating citizen's income floor (exact cubic Bézier evaluation)
+        const t20 = 0.2;
+        const inv20 = 1 - t20;
+        const p20X = Math.round(inv20 * inv20 * inv20 * 60 + 3 * inv20 * inv20 * t20 * ctrl1X + 3 * inv20 * t20 * t20 * ctrl2X + t20 * t20 * t20 * 280);
+        const p20Y = Math.round(inv20 * inv20 * inv20 * 165 + 3 * inv20 * inv20 * t20 * ctrl1Y + 3 * inv20 * t20 * t20 * ctrl2Y + t20 * t20 * t20 * 25);
 
         const nettoPath = `M 60 165 C ${ctrl1X} ${ctrl1Y}, ${ctrl2X} ${ctrl2Y}, 280 25`;
         const primaerPath = "M 60 165 C 115 163, 210 155, 280 25";
@@ -4413,7 +4418,18 @@ export function UniversalInteractiveWorkbench({
                 strokeWidth="2.5"
                 strokeLinecap="round"
               />
-              <circle cx={40 + paramA * 3.7} cy={170 - data.graphY * 1.2} r="6" fill="var(--accent)" stroke="var(--paper)" strokeWidth="2" />
+              {(() => {
+                const defT = Math.max(0, Math.min(1, paramA / 100));
+                const p0x = 40, p0y = 170;
+                const p1x = 220, p1y = 170 - data.graphY * 1.3;
+                const p2x = 410, p2y = 170 - data.graphY * 1.1;
+                const inv = 1 - defT;
+                const curCx = inv * inv * p0x + 2 * inv * defT * p1x + defT * defT * p2x;
+                const curCy = inv * inv * p0y + 2 * inv * defT * p1y + defT * defT * p2y;
+                return (
+                  <circle cx={curCx} cy={curCy} r="6" fill="var(--accent)" stroke="var(--paper)" strokeWidth="2" />
+                );
+              })()}
               <text x="50" y="32" fontSize="9" fill="var(--gray)" fontFamily="monospace">
                 f(x) · y = {data.rateValue}
               </text>
