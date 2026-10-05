@@ -337,6 +337,22 @@ describe("Pädagogische Komponenten (Pedagogy UI Library)", () => {
       expect(screen.getByText(/德语高分答题句式/)).toBeInTheDocument();
       expect(screen.getByText(/官方评分期望标准/)).toBeInTheDocument();
     });
+
+    it("laedt Thomas Hobbes Leviathan und analysiert Naturzustand", () => {
+      render(<GeWiReadingLab lang="zh" defaultExcerptId="hobbes-leviathan" filterFach="Philosophie" />);
+      expect(screen.getAllByText(/Leviathan/).length).toBeGreaterThan(0);
+      expect(screen.getByText(/Schwächste Kraft genug hat/)).toBeInTheDocument();
+      expect(screen.getByText(/einsam, armselig, ekelhaft/)).toBeInTheDocument();
+      expect(screen.getByText(/人性假设与自然状态三大冲突根源/)).toBeInTheDocument();
+    });
+
+    it("laedt Hannah Arendt und untersucht Pluralitaet und Natalitaet", () => {
+      render(<GeWiReadingLab lang="zh" defaultExcerptId="arendt-totalitarismus" filterFach="Philosophie" />);
+      expect(screen.getAllByText(/Hannah Arendt/).length).toBeGreaterThan(0);
+      expect(screen.getAllByText(/Pluralität/).length).toBeGreaterThan(0);
+      expect(screen.getByText(/Funken des Neuanfangs/)).toBeInTheDocument();
+      expect(screen.getByText(/极权主义的本质定义与总体恐怖的运转逻辑/)).toBeInTheDocument();
+    });
   });
 });
 

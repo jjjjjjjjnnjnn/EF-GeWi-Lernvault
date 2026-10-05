@@ -2184,4 +2184,747 @@ export const GEWI_TEXT_REGISTRY: GeWiTextExcerpt[] = [
       },
     ],
   },
+  // =========================================================================
+  // 5. PHILOSOPHIE: Thomas Hobbes — Leviathan (自然状态与社会契约)
+  // =========================================================================
+  {
+    id: "hobbes-leviathan",
+    fach: "Philosophie",
+    genre: "Sachtext",
+    author: "Thomas Hobbes",
+    workTitleDE: "Leviathan",
+    workTitleZH: "《利维坦》",
+    sceneTitleDE: "Kapitel 13 & 17 // Naturzustand & Staatsgründung",
+    sceneTitleZH: "自然状态与社会契约（所有人对所有人的战争与利维坦诞生）",
+    versesRange: "Kap. 13 & 17 (Z. 1–16)",
+    epochDE: "Frühe Neuzeit / Vertragstheorie (1651)",
+    epochZH: "早期近代西方哲学 / 唯物契约论 (1651)",
+    contextDE:
+      "Vor dem Hintergrund des blutigen englischen Bürgerkriegs begründet Thomas Hobbes den Staat radikal anthropologisch: Aus der Gleichheit der menschlichen Fähigkeiten und der Konkurrenz um Ressourcen folgt im staatenlosen Naturzustand der kriegerische Zustand von jedem gegen jeden (bellum omnium contra omnes). Um das nackte Überleben zu sichern, gebietet die Vernunft (lex naturalis) den vollständigen Verzicht auf das Naturrecht zugunsten eines unumschränkten Souveräns.",
+    contextZH:
+      "在英国资产阶级革命内战惨剧的阴影下，霍布斯对国家起源做出了石破天惊的唯物主义理性重构：在缺乏足以威慑所有人的统一强力时，人类因本性中的平等与自保欲望必然陷入‘所有人对所有人的战争’。生命注定‘孤独、贫困、肮脏、野蛮和短命’。唯有通过理性建立社会契约，将一切统治权让渡给终有一死的世俗上帝‘利维坦’，人类方能逃离互噬厄运。",
+    verses: [
+      {
+        lineNum: 1,
+        textDE: "Die Natur hat die Menschen hinsichtlich der körperlichen und geistigen Fähigkeiten so gleich geschaffen,",
+        translationZH: "自然赋予人在身心能力上的天赋是如此均等，",
+        toneCategory: "moral",
+        stilmittel: {
+          type: "Anthropologische Prämisse (人类学平等预设)",
+          descDE: "Hobbes bricht radikal mit Aristoteles' Hierarchie-Denken: Alle Menschen sind im Naturzustand potenziell gleich stark und verwundbar.",
+          descZH: "彻底颠覆亚里士多德的天生贵贱论：在自然状态下，人人身体与智性潜能大致平等，皆具备致命杀伤力与脆弱性。",
+        },
+      },
+      {
+        lineNum: 2,
+        textDE: "dass der Schwächste Kraft genug hat, den Stärksten zu töten – sei es durch List, sei es durch Bündnisse.",
+        translationZH: "以至于哪怕最弱小之人也有足够力量杀死最强者——无论通过阴谋诡计，还是拉帮结派。",
+        vocab: {
+          word: "List & Bündnis",
+          meaningDE: "Strategische Klugheit oder Koalitionen zum Ausgleich physischer Defizite.",
+          meaningZH: "智谋狡计或利益同盟：物理强弱在此被彻底抹平，无人能获得绝对安全。",
+        },
+      },
+      {
+        lineNum: 3,
+        textDE: "Aus dieser Gleichheit der Fähigkeiten entsteht die Gleichheit der Hoffnung, unsere Ziele zu erreichen.",
+        translationZH: "正是这种能力上的均等，孕育出人人皆渴望达成自身欲望目标的同等期望。",
+      },
+      {
+        lineNum: 4,
+        textDE: "Und wenn daher zwei Menschen dasselbe begehren, dessen sie sich doch nicht beide erfreuen können,",
+        translationZH: "因此，当两个人渴望拥有同一件不可共享之物时，",
+        toneCategory: "krise",
+      },
+      {
+        lineNum: 5,
+        textDE: "so werden sie Feinde und streben danach, einander zu vernichten oder zu unterwerfen.",
+        translationZH: "他们便立时沦为生死仇敌，企图将对方彻底消灭或征服奴役。",
+        stilmittel: {
+          type: "Logische Kausalität (资源稀缺与冲突之必然)",
+          descDE: "Aus knappen Gütern und Gleichheit folgt unvermeidlich existenzielle Feindschaft.",
+          descZH: "严密演绎因果链：平等与物质稀缺结合，直接推导出无可避免的生存死敌关系。",
+        },
+      },
+      {
+        lineNum: 6,
+        textDE: "So finden wir in der Natur des Menschen drei Hauptursachen für Streit: Erstens Konkurrenz, zweitens Misstrauen, drittens Ruhmsucht.",
+        translationZH: "由此我们发现，在人的本性中存在着三种导致纷争的主要根源：第一是竞争求利，第二是猜忌自保，第三是虚荣求誉。",
+        vocab: {
+          word: "Konkurrenz, Misstrauen, Ruhmsucht",
+          meaningDE: "Die drei anthropologischen Triebfedern für Gewalt im Naturzustand.",
+          meaningZH: "三种暴力原初驱动：为了利益竞争、为了安全猜忌预防、为了虚名声誉复仇。",
+        },
+      },
+      {
+        lineNum: 7,
+        textDE: "Daraus erhellt, dass, solange die Menschen ohne eine gemeinsame Macht leben, die sie alle in Schrecken hält,",
+        translationZH: "显而易见，只要人们生活在一个缺乏足以慑服所有人的公共强力之下，",
+        toneCategory: "autoritaet",
+      },
+      {
+        lineNum: 8,
+        textDE: "sie sich in jenem Zustand befinden, den man Krieg nennt, und zwar ein Krieg eines jeden gegen jeden.",
+        translationZH: "他们就无可避免地处于所谓的‘战争状态’——那是所有人对所有人的你死我活之战。",
+        stilmittel: {
+          type: "Terminus Technicus: Bellum omnium contra omnes (所有人对所有人的战争)",
+          descDE: "Krieg meint nicht permanente Schlacht, sondern die ständige bekannte Neigung dazu ohne Sicherheitsgarantie.",
+          descZH: "战争状态不仅指接连不断的厮杀交火，更是指人人自危、随时可能遭受突袭暴毙的永久性结构危机。",
+        },
+      },
+      {
+        lineNum: 9,
+        textDE: "In einem solchen Zustand gibt es keinen Platz für Fleiß, keine Kultur der Erde, keine Schifffahrt, keine Künste,",
+        translationZH: "在这样的绝境中，勤劳毫无立足之地，没有土地农耕，没有航海贸易，亦无任何艺术科学；",
+        toneCategory: "existenz",
+      },
+      {
+        lineNum: 10,
+        textDE: "und das menschliche Leben ist einsam, armselig, ekelhaft, tierisch und kurz.",
+        translationZH: "人的生命注定是孤独、贫困、卑污、残暴和短促的。",
+        stilmittel: {
+          type: "Asyndetische Klimax (无连接词排比渐强)",
+          descDE: "Die berühmte Quintessenz der Hobbes'schen Anthropologie: 'solitary, poor, nasty, brutish, and short'.",
+          descZH: "西方哲学史震撼人心的至理名言：五连断语将无国家状态下的生存惨状刻画至极点。",
+        },
+      },
+      {
+        lineNum: 11,
+        textDE: "Das natürliche Recht (Ius naturale) ist die Freiheit eines jeden, seine eigene Macht nach seinem Willen zur Erhaltung seines Lebens anzuwenden.",
+        translationZH: "自然权利（Ius naturale）是每个人依其自身意志运用全部力量来保全生命的绝对自由，即拥有掠夺一切的原始权利。",
+        vocab: {
+          word: "Ius naturale",
+          meaningDE: "Vollkommene regellose Handlungsfreiheit im Naturzustand (Recht auf alles).",
+          meaningZH: "自然权利：在前政治状态下为了求生而对一切事物拥有使用与掠夺权，但人人皆有时意味着人人皆无保障。",
+        },
+      },
+      {
+        lineNum: 12,
+        textDE: "Ein Gesetz der Natur (Lex naturalis) aber ist eine von der Vernunft gefundene Vorschrift, nach der es verboten ist, das eigene Leben zu zerstören.",
+        translationZH: "然而自然法则（Lex naturalis）则是理性发现的诫令，严禁人类做出毁灭自身生命的狂暴蠢行。",
+        vocab: {
+          word: "Lex naturalis",
+          meaningDE: "Vernunftgebot zur Selbsterhaltung durch Friedensstiftung.",
+          meaningZH: "自然法则：理性的自我约束指令，驱动人走出丛林状态。",
+        },
+      },
+      {
+        lineNum: 13,
+        textDE: "Die erste und grundlegende Regel der Natur ist: Jeder hat nach Frieden zu suchen, solange Hoffnung darauf besteht.",
+        translationZH: "自然的第一条根本法则便是：只要存有一线希望，人人都当竭尽全力寻求和平。",
+        toneCategory: "streben",
+      },
+      {
+        lineNum: 14,
+        textDE: "Der einzige Weg, eine solche allgemeine Macht zu errichten, besteht darin, alle Macht und Stärke auf einen Mann oder eine Versammlung zu übertragen.",
+        translationZH: "而构建这样一种威慑公共强力的唯一途径，便是将所有人的一切力量与权柄彻底移交给一个人或一个议会。",
+      },
+      {
+        lineNum: 15,
+        textDE: "Ich autorisiere diesen Mann oder diese Versammlung und übertrage ihm mein Recht, mich selbst zu regieren, unter der Bedingung, dass du es ebenso tust.",
+        translationZH: "‘我授权此人或此议会，并将自我统治之权完全转让予他，条件是你也必须同样将权利如数转让。’",
+        stilmittel: {
+          type: "Vertragsformel des Gesellschaftsvertrags (社会契约原初誓约)",
+          descDE: "Horizontaler Vertrag der Untertanen untereinander zugunsten eines unbeteiligten Dritten (Souverän).",
+          descZH: "平民个体之间的水平互约：契约是百姓彼此订立并推举第三方作为受益者，君主本身非契约当事人，不受制于臣民诉求。",
+        },
+      },
+      {
+        lineNum: 16,
+        textDE: "Dies ist die Erzeugung jenes großen Leviathan, jenes sterblichen Gottes, dem wir unter dem unsterblichen Gott unseren Frieden verdanken.",
+        translationZH: "如此便诞生了伟大的‘利维坦’——我们在永生上帝庇佑之下，正是向这位‘终有一死的世俗上帝’索求和平与庇护。",
+        toneCategory: "autoritaet",
+        vocab: {
+          word: "Leviathan (Der sterbliche Gott)",
+          meaningDE: "Das allmächtige Staatsmonopol als Garant für Rechtssicherheit und inneren Frieden.",
+          meaningZH: "利维坦（终有一死的上帝）：国家专政暴力垄断机器，以至高威慑粉碎内战、保障秩序底线。",
+        },
+      },
+    ],
+    questions: [
+      {
+        id: "q-hobbes-1",
+        dimension: "argumentation",
+        titleDE: "1. Anthropologie und Ursachen des Naturzustands",
+        titleZH: "人性假设与自然状态三大冲突根源",
+        afb: "AFB I",
+        questionDE:
+          "Welche drei anthropologischen Hauptursachen führen nach Thomas Hobbes zwingend zum Zustand des 'Krieges aller gegen alle' (bellum omnium contra omnes)?",
+        questionZH:
+          "在霍布斯的严格论证逻辑中，哪三大人性内在根源导致无国家状态下的人类必然陷入‘所有人对所有人的战争’？",
+        options: [
+          {
+            id: "a",
+            textDE:
+              "Konkurrenz (Streben nach Gewinn), Misstrauen (Streben nach Sicherheit) und Ruhmsucht (Streben nach Ansehen).",
+            textZH:
+              "竞争（贪求物质利益与生活资料）、猜忌（恐惧遭受背刺突袭而被迫先发制人求自保）、虚荣（贪图声誉威望与名号尊严）。",
+            isCorrect: true,
+          },
+          {
+            id: "b",
+            textDE:
+              "Religiöser Fanatismus, mangelnde Schulbildung und böse Erziehung durch fehlerhafte Fürsten.",
+            textZH:
+              "宗教狂热煽动、基础教育普及率不足以及封建暴君恶劣教养导致的道德失范。",
+            isCorrect: false,
+          },
+          {
+            id: "c",
+            textDE:
+              "Angeborene biologische Grausamkeit, die den Menschen willenlos zwingt, ohne jeden Grund Blut zu vergießen.",
+            textZH:
+              "一种与生俱来的病理性嗜血本能，强制驱使个体在没有任何利益诉求和理由的情况下无端滥杀同类。",
+            isCorrect: false,
+          },
+        ],
+        explanationDE:
+          "Hobbes leitet den Kriegszustand nicht aus pathologischer Bosheit ab, sondern rational aus der strukturellen Lage: Bei gleicher Verwundbarkeit zwingt gegenseitiges Misstrauen zur Präventivgewalt.",
+        explanationZH:
+          "【正解依据与文本锚点】\n霍布斯在第 6 行明确指出：‘So finden wir in der Natur des Menschen drei Hauptursachen für Streit: Erstens Konkurrenz, zweitens Misstrauen, drittens Ruhmsucht.’极为精辟的是，霍布斯并非认定人天生是嗜血恶魔，而是指出即便理性的普通人，在缺乏法律保护的丛林中，出于自保猜忌（Misstrauen）也只能被迫选择先发制人消灭潜在威胁。\n\n【干扰项逐项诊断】\n• 选项 B 诊断（时代错位与表象归因）：霍布斯在此探讨前政治的人性原初结构，绝非现代教育学或偶发宗教历史议题；\n• 选项 C 诊断（扭曲理性自保内核）：霍布斯的人性是理性唯物主义的‘自保最大化计算机’，而非无意识精神病理学杀人狂。\n\n【时代思潮与哲学脉络】\n近代政治哲学的哥白尼式革命：霍布斯彻底抛弃了中世纪托马斯主义‘天道秩序’与古希腊‘人天生是政治动物’（zoon politikon）的温情幻想，用伽利略物理力学式的机械唯物主义拆解人性冲动。",
+        klausurSatzDE:
+          "Hobbes begründet den Naturzustand nicht mit irrationaler Bösartigkeit, sondern rekonstruiert ihn als rationales Dilemma: Aus Gleichheit und Ressourcenknappheit erwachsen Konkurrenz, präventives Misstrauen und Ruhmsucht als unausweichliche Gewaltursachen.",
+        klausurSatzZH:
+          "霍布斯对自然状态的推演绝非基于非理性的道德谴责，而是将其重构为纳什均衡式的理性困境：在能力平等与资源稀缺的结构下，求利的竞争、先发制人的猜忌自保与求荣的声誉冲动，必然构成为通往总体战争的不可抗力。",
+        ehzKeyPointsDE: [
+          "Präzise Nennung der drei Motive: Konkurrenz, Misstrauen, Ruhmsucht.",
+          "Verständnis der strukturellen Notwendigkeit von Präventivschlägen (Gefangenendilemma).",
+        ],
+        ehzKeyPointsZH: [
+          "采分点 1 (Anthropologie 4P)：精准答出三大冲突根源（Konkurrenz, Misstrauen, Ruhmsucht）及其分别对应的目标（Gewinn, Sicherheit, Ansehen）。",
+          "采分点 2 (Strukturanalyse 4P)：深刻洞见猜忌导致‘先发制人’的囚徒困境机制，点明无政府状态即系统性暴力危机。",
+        ],
+      },
+      {
+        id: "q-hobbes-2",
+        dimension: "theorie",
+        titleDE: "2. Differenzierung von Ius naturale und Lex naturalis",
+        titleZH: "自然权利与自然法则的法哲学本质区别",
+        afb: "AFB II",
+        questionDE:
+          "Wie unterscheidet Thomas Hobbes systematisch zwischen dem 'Ius naturale' (Naturrecht) und der 'Lex naturalis' (Naturgesetz)?",
+        questionZH:
+          "霍布斯如何在法理逻辑上严格区分‘自然权利’（Ius naturale）与‘自然法则’（Lex naturalis）这对核心概念？",
+        options: [
+          {
+            id: "a",
+            textDE:
+              "Das Ius naturale ist die unbegrenzte Freiheit, alles zur Selbsterhaltung einzusetzen (Recht auf alles); die Lex naturalis ist ein Vernunftgebot, das Handlungen zur Selbstzerstörung verbietet und zur Friedenssuche verpflichtet.",
+            textZH:
+              "自然权利是个体为求生而任意使用全部力量的绝对自由（对一切事物的原始占有权）；自然法则则是理性所阐明的戒律，严禁人自残自毁，并勒令个体必须追求和平与转让权利。",
+            isCorrect: true,
+          },
+          {
+            id: "b",
+            textDE:
+              "Das Ius naturale gilt nur für Könige, während die Lex naturalis den einfachen Bauern die Arbeit auf den Feldern vorschreibt.",
+            textZH:
+              "自然权利仅仅专属于封建贵族君王，而自然法则则是强制底层农奴在田野终身劳作的宗教训令。",
+            isCorrect: false,
+          },
+          {
+            id: "c",
+            textDE:
+              "Es gibt keinen Unterschied; beide Begriffe bezeichnen exakt dasselbe geschriebene Verfassungsrecht moderner Staaten.",
+            textZH:
+              "二者完全没有任何区别，仅仅是现代主权国家成文宪法条款在德语翻译上的文字重合。",
+            isCorrect: false,
+          },
+        ],
+        explanationDE:
+          "Freiheit (Ius) versus Pflicht (Lex): Das Recht erlaubt alles zur Selbsterhaltung, das Gesetz verpflichtet durch rationale Einsicht zur Friedensstiftung.",
+        explanationZH:
+          "【正解依据与文本锚点】\n文本第 11–12 行给出经典定义：‘Das natürliche Recht (Ius naturale) ist die Freiheit eines jeden... Ein Gesetz der Natur (Lex naturalis) aber ist eine von der Vernunft gefundene Vorschrift...’权利（Right / Ius）关乎自由（Freiheit zu tun），而法则（Law / Lex）则关乎约束与义务（Verpflichtung）。在自然权利下人人享有抢夺一切之权，导致人人自危；正是自然法则的理性算计命令大家‘放弃对一切之权’换取和平。\n\n【干扰项逐项诊断】\n• 选项 B 诊断（庸俗阶级偏见）：霍布斯的自然状态早于任何国家体制，不存在国王与农奴的政治身份分工；\n• 选项 C 诊断（混淆自然法与实在法）：二者属于前国家的自然哲学范畴，绝非现代制定法宪法。\n\n【时代思潮与哲学脉络】\n理性主义工具化转向：霍布斯的‘理性’不再是柏拉图式注视至善理念的精神器官，而是趋利避害、计算生命存活概率的功利性计算工具（Reason as Reckoning）。",
+        klausurSatzDE:
+          "Systematisch scheidet Hobbes das Ius naturale als schrankenlose Handlungsfreiheit zur Selbsterhaltung (Recht auf alles) von der Lex naturalis als rationalem Pflichtgebot, welches die destruktive Freiheit zugunsten kollektiver Friedenssicherung einschränkt.",
+        klausurSatzZH:
+          "在系统法哲学视域下，霍布斯将自然权利严格界定为求存保命的无边界行动自由（对万物的侵占权），而将自然法则定性为理性的规范性诫令，其功能在于自我限缩破坏性自由以达成集体和平秩序。",
+        ehzKeyPointsDE: [
+          "Begriffsdistinktion: Freiheit (Recht/Ius) vs. Verbindlichkeit/Pflicht (Gesetz/Lex).",
+          "Funktion der Lex naturalis als Brücke aus dem Naturzustand in den Staat.",
+        ],
+        ehzKeyPointsZH: [
+          "采分点 1 (Begriffsdualismus 4P)：精准对比‘自由’（Ius）与‘约束义务’（Lex）的法学逻辑差异。",
+          "采分点 2 (Friedensbrücke 4P)：深刻剖析第一与第二自然法则作为通往文明主权国家过渡桥梁的机制。",
+        ],
+      },
+      {
+        id: "q-hobbes-3",
+        dimension: "figuren",
+        titleDE: "3. Struktur des Gesellschaftsvertrags und der Leviathan",
+        titleZH: "社会契约的结构特征与利维坦的绝对主权",
+        afb: "AFB II",
+        questionDE:
+          "Welche fundamentale Besonderheit kennzeichnet die vertragstheoretische Konstruktion der Staatsgründung bei Thomas Hobbes im Vergleich zu späteren Demokratietheorien?",
+        questionZH:
+          "与后世洛克或卢梭的民主契约论相比，霍布斯所构想的‘利维坦社会契约’在订约结构上具有何种极为严苛的根本特异性？",
+        options: [
+          {
+            id: "a",
+            textDE:
+              "Der Vertrag wird ausschließlich zwischen den Individuen untereinander geschlossen ('horizontal'); der Souverän ist nicht Vertragspartner, sondern Drittbegünstigter und unterliegt keinerlei vertraglichen Kontrollen oder Kündigungsmöglichkeiten.",
+            textZH:
+              "契约纯粹是在平民个体彼此之间横向订立的（水平互约）；主权者利维坦本身绝非契约缔约方，而是权力的唯一第三方受益者，因此主权者不受契约违约审查或罢免弹劾的限制。",
+            isCorrect: true,
+          },
+          {
+            id: "b",
+            textDE:
+              "Das Volk wählt den König alle vier Jahre in freier und geheimer Wahl wieder ab, falls die Steuern zu hoch sind.",
+            textZH:
+              "人民每隔四年通过普选与无记名投票来罢免重选君主，一旦国家赋税过高便随时推翻内阁。",
+            isCorrect: false,
+          },
+          {
+            id: "c",
+            textDE:
+              "Der Souverän teilt seine Macht mit dem Papst in Rom und dem Verfassungsgericht in Karlsruhe.",
+            textZH:
+              "主权者必须严格将统治权与罗马教皇及联邦宪法法院三权分立、相互制衡。",
+            isCorrect: false,
+          },
+        ],
+        explanationDE:
+          "Der Souverän steht legibus solutus (über den Gesetzen): Da er den Vertrag nicht schloss, kann er ihn nicht brechen. Seine einzige Verpflichtung ist die faktische Gewährleistung von Sicherheit.",
+        explanationZH:
+          "【正解依据与文本锚点】\n文本第 15 行的立约誓词揭示了关键秘密：‘Ich autorisiere diesen Mann... unter der Bedingung, dass du es ebenso tust.’（我授权并转让权利，条件是你也转让）。个体之间相互承诺转让权利，共同奉立一个不参与订约的主权者。既然主权者没有向人民做出任何契约承诺，人民便绝无借口指责主权者‘违约’，从而根除了任何以内乱借口推翻政府的合法性。\n\n【干扰项逐项诊断】\n• 选项 B 诊断（嫁接现代代议民主）：霍布斯极度仇视导致内战的分权与频繁更换政府，追求不可分割的绝对主权；\n• 选项 C 诊断（时代荒谬乱入）：霍布斯坚定主张政教合一（君主即教会元首），排斥一切外来宗教权力干预。\n\n【时代思潮与哲学脉络】\n绝对主义主权论（Souveränitätslehre）：霍布斯目睹了英国国会与国王分权相争诱发的十余年惨绝人寰的内战，认定‘分权即内战之母’，唯有不可分割、不可撤销的最高强力方能压制派系野心。",
+        klausurSatzDE:
+          "Die Hobbes'sche Staatsgründung vollzieht sich als reiner Unterwerfungsvertrag der Bürger untereinander zugunsten eines begünstigten Dritten; da der Souverän selbst nicht kontrahierte Partei ist, agiert er legibus solutus und entzieht sich jedem bürgerlichen Kündigungs- oder Widerstandsrecht.",
+        klausurSatzZH:
+          "霍布斯式的建国奠基于臣民彼此之间成立的纯粹屈从互约，其利益悉数归于获益的第三方；由于主权者自身并非立约主体，因而拥有超越法律之上（legibus solutus）的绝对权能，彻底剥夺了臣民的解约权与反抗权。",
+        ehzKeyPointsDE: [
+          "Erklärung des Vertragsmodells (Inter-Pares-Vertrag zugunsten Dritter).",
+          "Konsequenz für das Widerstandsrecht (Ausschluss des Tyrannenmordes).",
+        ],
+        ehzKeyPointsZH: [
+          "采分点 1 (Vertragsstruktur 4P)：精准阐述‘平民之间水平缔约、主权者作为非缔约第三方’的独特法权构造。",
+          "采分点 2 (Legibus solutus 4P)：高水平剖析主权绝对性与排除抵抗权（Widerstandsrecht）的政治哲学意图。",
+        ],
+      },
+      {
+        id: "q-hobbes-4",
+        dimension: "theorie",
+        titleDE: "4. Kritische Beurteilung und Kontroverse mit Locke",
+        titleZH: "利维坦理论批判：安全与自由的终极天平（霍布斯 vs. 洛克）",
+        afb: "AFB III",
+        questionDE:
+          "Inwiefern erweist sich die Hobbes'sche Legitimation des absoluten Staates im Lichte moderner Verfassungsprinzipien (Grundgesetz Art. 1 & 20) als hochgradig problematisch?",
+        questionZH:
+          "在现代宪政民主与德国基本法（Art. 1 人性尊严 & Art. 20 法治国原则）的审视下，霍布斯将‘绝对安全’置于一切权利之上的理论建构存在何种深刻的内在悖论？",
+        options: [
+          {
+            id: "a",
+            textDE:
+              "Indem Hobbes zugunsten reiner physischer Sicherheit auf alle bürgerlichen Freiheits-, Kontroll- und Widerstandsrechte verzichtet, tauscht er die Unsicherheit des Naturzustands gegen die permanente Willkürgefahr eines unkontrollierbaren Staatsmonstrums ein.",
+            textZH:
+              "霍布斯为了换取纯粹的肉体自保安全，彻底剥夺了个体全部公民自由、分权监督与反抗救济权利；这实质上是以避免丛林偶发风险为代价，将人类永恒置于不受控制的国家机器专横暴政的巨大阴影之下。",
+            isCorrect: true,
+          },
+          {
+            id: "b",
+            textDE:
+              "Hobbes' Modell ist identisch mit dem deutschen Grundgesetz, da auch die Bundesrepublik Deutschland von einem absolutistischen Herrscher ohne Parlament regiert wird.",
+            textZH:
+              "霍布斯的理论模型与德国基本法完全等同，因为联邦德国同样是由一位完全废除议会监督的专制君王统治的。",
+            isCorrect: false,
+          },
+          {
+            id: "c",
+            textDE:
+              "Das Modell hat keinerlei historische Bedeutung gehabt und wurde von keinem Philosophen nach 1651 jemals rezipiert.",
+            textZH:
+              "该模型在思想史上毫无任何影响，1651年出版后从未被包括洛克、卢梭在内的任何哲学家所讨论或批判。",
+            isCorrect: false,
+          },
+        ],
+        explanationDE:
+          "Lockes berühmte Replik: Menschen wären töricht, sich vor Marder und Fuchs (Mitbürgern) zu schützen, indem sie sich von einem Löwen (absoluter Souverän) verschlingen lassen.",
+        explanationZH:
+          "【正解依据与文本锚点】\n洛克在《政府论》中给出了哲学史上最犀利的还击：‘人类难道会愚蠢到为了防备黄鼠狼和狐狸（同侪平民的偶发偷窃），就心甘情愿将自己送入狮子（绝对专制君主）的血盆大口之中吗？’霍布斯赋予利维坦剥夺财产、思想审查、随意处决非反抗者的无限特权。而在基本法第 1 条‘人性尊严不可侵犯’的视角下，国家绝非终极目的，国家只是保障公民基本权利与主体尊严的仆从。\n\n【干扰项逐项诊断】\n• 选项 B 诊断（宪政常识颠倒）：德国基本法实行严格的三权分立、议会民主与 Art. 20 Abs. 4 宪法反抗权；\n• 选项 C 诊断（抹杀思想史地位）：霍布斯开创了整个近代社会契约论范式，洛克、卢梭、康德皆在其所立界标上争辩展开。\n\n【时代思潮与哲学脉络】\n从‘秩序至上’迈向‘正义与自由’：霍布斯代表了在内战废墟中寻求秩序底线的初阶近代哲学；而洛克与启蒙运动则代表了追求‘有限政府’、分权制衡与天赋人权不可剥夺的高阶宪政跃迁。",
+        klausurSatzDE:
+          "In kritischer Synthese erkauft Hobbes die Befriedung des Naturzustands um den verfassungsethisch unerträglichen Preis der Totalentmachtung des Individuums: Ohne rechtsstaatliche Bändigung durch Gewaltenteilung und Grundrechte pervertiert der Leviathan von einem Schutzpatron zur unberechenbaren Tyrannei.",
+        klausurSatzZH:
+          "在批判性综合审视中，霍布斯平息自然状态的代价，是让渡个体全部权能的宪政伦理沉痛代价：倘若缺乏分权制衡与基本人权的法治国缰绳羁绊，利维坦便极易从保卫和平的庇护神，蜕变为吞噬一切自由的专横暴虐巨兽。",
+        ehzKeyPointsDE: [
+          "Problematisierung der fehlenden Gewaltenteilung und des fehlenden Grundrechtsschutzes.",
+          "Vergleichender Rekurs auf Lockes Konzeption der unveräußerlichen Naturrechte.",
+        ],
+        ehzKeyPointsZH: [
+          "采分点 1 (Verfassungskritik 4P)：深刻指出缺乏分权机制（Gewaltenteilung）与司法救济对公民基本权利构成的专制侵害。",
+          "采分点 2 (Ideenvergleich 4P)：精准引入洛克自然权利与基本法第 1 条人性尊严，完成 AFB III 高水平辩证权衡。",
+        ],
+      },
+    ],
+  },
+  // =========================================================================
+  // 6. PHILOSOPHIE: Hannah Arendt — Elemente und Ursprünge totaler Herrschaft
+  // =========================================================================
+  {
+    id: "arendt-totalitarismus",
+    fach: "Philosophie",
+    genre: "Sachtext",
+    author: "Hannah Arendt",
+    workTitleDE: "Elemente und Ursprünge totaler Herrschaft",
+    workTitleZH: "《极权主义的起源》",
+    sceneTitleDE: "Ideologie und Terror // Die Zerstörung der Pluralität",
+    sceneTitleZH: "意识形态与恐怖垄断（极权统治对人类复数性与公共空间的摧毁）",
+    versesRange: "Kapitel 13 (Auszüge)",
+    epochDE: "Politische Philosophie der Moderne (1951)",
+    epochZH: "现代政治哲学 / 现象学批判理论 (1951)",
+    contextDE:
+      "Nach der Katastrophe des Nationalsozialismus und des Stalinismus analysiert Hannah Arendt die beispiellose Monstrosität des Totalitarismus: Er ist keine bloße Neuauflage antiker Despotie, sondern ein gänzlich neues Herrschaftsmodell. Durch die Verschmelzung von allgegenwärtigem Terror mit der eisernen Logik einer Ideologie zerstört das totalitäre System die menschliche Pluralität, atomisiert die Gesellschaft in wurzellose Verlassenheit und beraubt den Einzelnen seiner fundamentalen Fähigkeit zu spontanem, politischem Handeln.",
+    contextZH:
+      "在纳粹大屠杀与斯大林主义人类至暗浩劫的废墟上，汉娜·阿伦特对极权主义的前所未有之恶进行了划时代的现象学剖析：极权统治绝非历史上封建暴政的简单翻版，而是一种全新的毁灭性统治范式。它通过无孔不入的总体性恐怖，与宣称掌握‘历史或自然绝对法则’的意识形态铁逻辑相结合，抹杀了个体独特性与人之复数性（Pluralität），将社会原子化为无根漂泊的极端被遗弃感（Verlassenheit），企图彻底消灭人类从事自由行动与道德判断的原初能力。",
+    verses: [
+      {
+        lineNum: 1,
+        textDE: "Totale Herrschaft unterscheidet sich von allen bisherigen Formen politischer Unterdrückung dadurch,",
+        translationZH: "极权统治之所以与人类历史上过往的一切政治压迫形式有着本质区别，",
+        toneCategory: "krise",
+      },
+      {
+        lineNum: 2,
+        textDE: "dass sie nicht nur die politischen Fähigkeiten der Menschen vernichtet, sondern das menschliche Wesen selbst umformt.",
+        translationZH: "在于它不仅摧毁了人类从事政治参与的能力，更企图对人类的生命本质本身实施激进重塑与基因式变异。",
+        stilmittel: {
+          type: "Totalitäre Anthropologie (极权主义对人性的根本篡改)",
+          descDE: "Die Transformation des Individuums in ein willenloses, austauschbares Rädchen im Kollektivorganismus.",
+          descZH: "不仅剥夺权利，更妄图在精神与肉体上将独特生命矮化为均质可替换的生物学零件。",
+        },
+      },
+      {
+        lineNum: 3,
+        textDE: "Das Wesen der totalen Herrschaft ist der Terror, der nicht mehr Mittel zu einem Zweck ist, sondern zum ständigen Prinzip wird.",
+        translationZH: "极权统治的本质乃是恐怖；在此，恐怖不再是达成统治的阶段性手段，而是转化为维持极权运转的永久性本体原则。",
+        vocab: {
+          word: "Terror als Wesen",
+          meaningDE: "Nicht bloße Einschüchterung von Gegnern, sondern lückenloses System der Vernichtung jeder Unberechenbarkeit.",
+          meaningZH: "作为本质的恐怖：并非针对具体敌对分子的弹压，而是旨在彻底清除一切偶然性、自由与自发性的无死角铁笼。",
+        },
+      },
+      {
+        lineNum: 4,
+        textDE: "Der Terror vollstreckt das Gesetz der Geschichte oder der Natur, indem er die Menschheit zu einem einzigen gigantischen Körper zusammenschmilzt.",
+        translationZH: "恐怖自命为‘历史演进法则’或‘自然淘汰法则’的终极行刑官，企图将全人类熔铸为一个抹杀一切个性的庞大单一体。",
+        toneCategory: "autoritaet",
+      },
+      {
+        lineNum: 5,
+        textDE: "Dadurch wird die Pluralität der Menschen – die Tatsache, dass Menschen, nicht der Mensch, die Erde bewohnen – radikal vernichtet.",
+        translationZH: "人类最珍贵的根本事实——即‘是复数的人们，而非抽象的独一之人，栖居于大地之上’（Pluralität）——遭到了毁灭性的粉碎。",
+        stilmittel: {
+          type: "Arendtscher Schlüsselbegriff: Pluralität (人之复数性)",
+          descDE: "Die Einzigartigkeit eines jeden Individuums als fundamentale Bedingung für Politik und Freiheit.",
+          descZH: "阿伦特政治哲学核心奠基范畴：人因各不相同而需要公共交往，复数性是政治、自由与民主存在的本体论前提。",
+        },
+      },
+      {
+        lineNum: 6,
+        textDE: "Die Ideologie ist nicht einfach ein falsches Bewusstsein, sondern der Anspruch, das Welträtsel durch eine einzige Idee vollständig zu erklären.",
+        translationZH: "意识形态绝非简单的虚假意识，而是一种宣称仅凭唯一的先验教条观念即可穷尽解释整个世界全部奥秘的极度狂妄。",
+        vocab: {
+          word: "Ideologischer Absolutheitsanspruch",
+          meaningDE: "Monokausale Welterklärung (Rassenkampf, Klassenkampf), immun gegen Fakten und Widersprüche.",
+          meaningZH: "一元论绝对象征解释：将复杂的历史万象强行塞入阶级或种族单一公式中，严禁任何质疑。",
+        },
+      },
+      {
+        lineNum: 7,
+        textDE: "Ihr Charakteristikum ist die Emanzipation vom Faktischen: Die Wirklichkeit hat sich der logischen Folgerichtigkeit der Idee zu beugen.",
+        translationZH: "它的核心特征是与客观历史经验事实彻底脱钩：活生生的现实必须无条件向教条观念那所谓的‘冷酷逻辑必然性’俯首低头。",
+        toneCategory: "krise",
+      },
+      {
+        lineNum: 8,
+        textDE: "Wer 'A' sagt, muss auch 'B' und 'C' sagen – die eiserne Logik zwingt den Verstand in eine Zwangsbewegung, die kein Urteil mehr erlaubt.",
+        translationZH: "‘既然说了A，就必须被迫说B和C’——这种铁的逻辑迫使人的理智陷入无法脱身的思想专政，剥夺了一切独立的自省与伦理审断。",
+        stilmittel: {
+          type: "Zwang der Deduktion (演绎逻辑的暴政)",
+          descDE: "Die Selbstunterwerfung unter eine deduktive Gedankenkette ersetzt die eigene moralische Urteilskraft.",
+          descZH: "对单一前提逻辑闭环的迷信彻底取代了直面良知的判断力（Urteilskraft），导致平庸之恶的诞生。",
+        },
+      },
+      {
+        lineNum: 9,
+        textDE: "Die Tyrannei verlangte nur Gehorsam; der Totalitarismus aber verlangt die lückenlose innere Selbstaufgabe und Identifikation.",
+        translationZH: "传统暴政仅仅勒令子民在外部行为上屈服顺从；而极权统治却贪婪地勒令个体献出全部内心世界，实现毫无保留的思想同质化。",
+        vocab: {
+          word: "Innere Gleichschaltung",
+          meaningDE: "Beseitigung der Privatsphäre und des Gewissens zugunsten totaler Identifikation mit der Bewegung.",
+          meaningZH: "内部心灵同质化：消灭一切私人生活领地与良心退路，强行与意识形态巨轮同频共振。",
+        },
+      },
+      {
+        lineNum: 10,
+        textDE: "Der ideale Untertan totaler Herrschaft ist nicht der überzeugte Nazi oder Kommunist,",
+        translationZH: "极权统治最理想的顺民与工具，绝非心怀坚定信念的狂热信徒，",
+      },
+      {
+        lineNum: 11,
+        textDE: "sondern Menschen, für die der Unterschied zwischen Fakt und Fiktion, zwischen wahr und falsch, nicht mehr existiert.",
+        translationZH: "而是那些在内心深处，连‘客观事实与虚妄谎言’、‘真实与伪造’之间的界限都已彻底丧失感知与判断力的人。",
+        stilmittel: {
+          type: "Epistemologischer Nihilismus (认知虚无主义底线沦陷)",
+          descDE: "Der Verlust des Wirklichkeitssinns macht die Masse manipulierbar für beliebige Führermythen.",
+          descZH: "失去对客观真理的敬畏，使得大众沦为任由极权领袖谎言编织与摆布的麻木土壤。",
+        },
+      },
+      {
+        lineNum: 12,
+        textDE: "Die soziale Grundlage des Totalitarismus ist die Verlassenheit (Loneliness) des modernen Massenmenschen.",
+        translationZH: "极权统治在社会心理层面的终极温床，是现代大众社会中无家可归、原子化个体的无边‘孤独与被遗弃感’（Verlassenheit）。",
+        vocab: {
+          word: "Verlassenheit (Loneliness)",
+          meaningDE: "Existenzieller Zustand des Völlig-von-allen-Verlassenseins und Verlusts der Zugehörigkeit zur Welt.",
+          meaningZH: "被遗弃感：不仅是形单影只，更是失去了在共同世界中被确证价值的无根绝望状态。",
+        },
+      },
+      {
+        lineNum: 13,
+        textDE: "Isolation ist der Verlust der politischen Handlungsmöglichkeit; Verlassenheit ist der Verlust des Vertrauens in die Welt und sich selbst.",
+        translationZH: "孤立仅仅剥夺了政治行动的公域舞台；而被遗弃感则彻底摧毁了个体对世界常识与自身理性自我确证的全部信赖。",
+        toneCategory: "existenz",
+      },
+      {
+        lineNum: 14,
+        textDE: "Dort, wo alle Menschen gleichgeschaltet sind, hört das Handeln auf; denn Handeln setzt Verschiedenheit voraus.",
+        translationZH: "在所有人都被强制整齐划一、沦为同质齿轮之境，真正的自由‘行动’便告终结；因为行动的前提恰恰是人与人之间的独特与差异。",
+      },
+      {
+        lineNum: 15,
+        textDE: "Jedes Neugeborene aber bringt den Funken des Neuanfangs (Natalität) in die Welt,",
+        translationZH: "然而，每一个来到世间的初生婴孩，都在世界中点燃了重新开启未来的原初火花（Natalität，诞生性），",
+        toneCategory: "streben",
+        vocab: {
+          word: "Natalität (Gebürtigkeit)",
+          meaningDE: "Arendts Begriff für die unzerstörbare menschliche Fähigkeit, einen radikalen Neuanfang zu wagen.",
+          meaningZH: "诞生性（Natalität）：人类因‘被诞生’而拥有向死而生的崭新开端之伟力，自由的终极根基。",
+        },
+      },
+      {
+        lineNum: 16,
+        textDE: "und dieser unberechenbare Ursprung der Freiheit kann von keinem totalitären System jemals vollständig erstickt werden.",
+        translationZH: "而这股无法被算计掌控的自由起源伟力，是任何极权主义机器都绝无可能永久窒息泯灭的。",
+        stilmittel: {
+          type: "Philosophische Hoffnung & Widerstand (不可被窒息的自由尊严)",
+          descDE: "Die Natalität bricht den Determinismus totalitärer Ideologien: Freiheit bleibt eine ontologische Konstante.",
+          descZH: "诞生性彻底打破极权历史决定论的铁律神话：只要人类还在繁衍诞生，自由的奇迹便永不止息。",
+        },
+      },
+    ],
+    questions: [
+      {
+        id: "q-arendt-1",
+        dimension: "argumentation",
+        titleDE: "1. Wesen des Totalitarismus und Begriff des Terrors",
+        titleZH: "极权主义的本质定义与总体恐怖的运转逻辑",
+        afb: "AFB I",
+        questionDE:
+          "Worin besteht nach Hannah Arendt der kategoriale Unterschied zwischen traditionellen Tyranneien und dem modernen Totalitarismus?",
+        questionZH:
+          "在汉娜·阿伦特的经典分析中，传统专制暴政与二十世纪现代极权主义之间存在着何种范畴性的根本分界？",
+        options: [
+          {
+            id: "a",
+            textDE:
+              "Während Tyranneien nur äußeren politischen Gehorsam erzwingen und einen privaten Rückzugsraum belassen, fordert der Totalitarismus durch permanenten Terror und Ideologie die lückenlose innere Gleichschaltung und vernichtet die Pluralität.",
+            textZH:
+              "传统暴政仅仅强求臣民在外部公共事务上屈服顺从，保留了私域私人生活；而极权统治则通过永恒运作的恐怖与意识形态，强求内心世界的绝对同质化，并彻底粉碎人类的复数性与独特性。",
+            isCorrect: true,
+          },
+          {
+            id: "b",
+            textDE:
+              "Tyranneien existierten nur in Afrika, während Totalitarismus ausschließlich ein Phänomen asiatischer Nomadenstämme war.",
+            textZH:
+              "传统暴政只存在于古罗马时代，而极权主义仅仅是极少数游牧部落才会出现的落后宗族习俗。",
+            isCorrect: false,
+          },
+          {
+            id: "c",
+            textDE:
+              "Der Totalitarismus verwendet überhaupt keine Gewalt, sondern stützt sich ausschließlich auf freiwillige Bürgerversammlungen und Volksabstimmungen.",
+            textZH:
+              "极权统治完全摒弃一切暴力和强制，仅仅依靠公民完全自愿参与的自由集会与民主公投维持运转。",
+            isCorrect: false,
+          },
+        ],
+        explanationDE:
+          "Tyrannei zerstört das Gesetz; Totalitarismus behauptet, das höhere Gesetz der Natur (Rasse) oder Geschichte (Klasse) durch lückenlosen Terror zu vollstrecken.",
+        explanationZH:
+          "【正解依据与文本锚点】\n文本第 3 行与第 9 行明确区分：‘Die Tyrannei verlangte nur Gehorsam; der Totalitarismus aber verlangt die lückenlose innere Selbstaufgabe und Identifikation.’传统专制者只要老百姓不造反，并不关心臣民关起门来的私人思想；而纳粹主义与斯大林主义却利用集中营与秘密警察，不仅消灭反对派，更消灭一切潜在的怀疑与中立，企图将每个人熔铸进集体意识形态铁模之中。\n\n【干扰项逐项诊断】\n• 选项 B 诊断（地理与历史错乱）：极权主义是 20 世纪高度现代技术、大众媒介与官僚制结合的西方现代性病理产物；\n• 选项 C 诊断（颠倒事实黑白）：恐怖恰恰是极权统治的本体核心原则，绝非自由自治。\n\n【时代思潮与哲学脉络】\n反思启蒙辩证法：阿伦特与阿多诺、霍克海默遥相呼应，揭示出高度理性的现代工业与官僚工具理性，若脱离伦理审思，可瞬间异化为高效运转的工业化杀人流水线。",
+        klausurSatzDE:
+          "Arendt differenziert die totale Herrschaft von traditioneller Despotie anhand ihres totalen Totalisierungsanspruchs: Indem Terror zum Dauerprinzip avanciert, erstickt das Regime nicht bloß Opposition, sondern liquidiert das menschliche Wesen als plurales Handlungssubjekt.",
+        klausurSatzZH:
+          "阿伦特通过全景总体化诉求将极权统治与传统专制暴政清晰切分：通过将恐怖升级为永久性运转原则，极权政权不仅铲除异见反对派，更在本体论上消解了人类作为复数性行动主体的生命本质。",
+        ehzKeyPointsDE: [
+          "Differenzierung zwischen äußerem Gehorsam (Tyrannei) und innerer Wesensumformung (Totalitarismus).",
+          "Funktion des Terrors als konstitutives Dauerprinzip.",
+        ],
+        ehzKeyPointsZH: [
+          "采分点 1 (Differenzierung 4P)：精准对比外部服从与消灭私域内心的总体化同质化要求。",
+          "采分点 2 (Terror-Analyse 4P)：深刻阐述恐怖从统治‘手段’异化为国家‘本体原则’的质变过程。",
+        ],
+      },
+      {
+        id: "q-arendt-2",
+        dimension: "theorie",
+        titleDE: "2. Mechanismus der Ideologie und Deduktionszwang",
+        titleZH: "意识形态的封闭演绎机制与推演专政",
+        afb: "AFB II",
+        questionDE:
+          "Welche verheerende Funktion erfüllt nach Arendt die 'eiserne Logik' totalitärer Ideologien im Denken des verführten Massenmenschen?",
+        questionZH:
+          "在汉娜·阿伦特的剖析中，极权意识形态那所谓的‘铁的逻辑演绎’在大众心理中发挥了何种灾难性的精神异化功能？",
+        options: [
+          {
+            id: "a",
+            textDE:
+              "Sie emanzipiert sich radikal von realen Erfahrungswerten und Fakten; durch den unentrinnbaren Zwang der formalen Folgerichtigkeit ('Wer A sagt, muss B sagen') lähmt sie die moralische Urteilskraft und rechtfertigt jedes Verbrechen als historische Notwendigkeit.",
+            textZH:
+              "它激进脱离客观现实经验与事实真理；通过‘既然说了A就必须说B’的形式逻辑强权，剥夺了个体的良知批判与伦理判断力，将一切灭绝人性的罪行皆粉饰为历史发展的不可抗必然性。",
+            isCorrect: true,
+          },
+          {
+            id: "b",
+            textDE:
+              "Sie lehrt die Menschen, Gedichte von Schiller auswendig zu lernen, um die deutsche Grammatik zu verbessern.",
+            textZH:
+              "它指导人民背诵古典抒情诗歌，旨在帮助所有人提高修辞文雅水平与德语拼写规范。",
+            isCorrect: false,
+          },
+          {
+            id: "c",
+            textDE:
+              "Sie ermutigt den Bürger zum ständigen Widerspruch und zum skeptischen Hinterfragen aller staatlichen Parolen.",
+            textZH:
+              "它积极鼓励公民独立思考，勇于公开怀疑批判政府一切宣传标语与政策法令。",
+            isCorrect: false,
+          },
+        ],
+        explanationDE:
+          "Ideologie = 'Logik einer Idee'. Sie duldet keine empirische Korrektur durch Realität, sondern unterwirft die Seele einem unbarmherzigen Deduktionszwang.",
+        explanationZH:
+          "【正解依据与文本锚点】\n文本第 7–8 行指出：‘Ihr Charakteristikum ist die Emanzipation vom Faktischen... die eiserne Logik zwingt den Verstand in eine Zwangsbewegung, die kein Urteil mehr erlaubt.’极权意识形态的最大魔力在于其内部完美自洽的逻辑闭环。如果相信了‘种族斗争是历史唯一真理’（前提A），那么为了实现种族纯洁就必须杀戮所谓病弱劣质者（结论B、C）。任何违背这一教条的残酷事实（如受害者的哭喊与无辜）都会被指责为‘资产阶级软弱温情’而被强行压制。\n\n【干扰项逐项诊断】\n• 选项 B 诊断（荒谬无稽的文学矮化）：将毁灭人类生存根基的极权灾难混同为中小学语言背诵课；\n• 选项 C 诊断（彻底颠倒功能）：极权意识形态最恐惧的正是怀疑与经验反思，它以绝对信条禁锢头脑。\n\n【时代思潮与哲学脉络】\n康德批判哲学的反转：康德强调实践理性的主体自律与反思判断力（reflektierende Urteilskraft）；而极权主义则用僵死的决定论演绎法则废黜了判断力，使普通人沦为无需思考的‘执行机器’（如艾希曼审判中的‘平庸之恶’）。",
+        klausurSatzDE:
+          "Die totalitäre Ideologie operiert als hermetisches Deutungssystem: Durch die Emanzipation vom empirisch Faktischen erzeugt ihr deduktiver Zwang eine Denktyrannei, welche die autonome Urteilskraft suspendiert und monströse Verbrechen als wissenschaftliche Notwendigkeit legitimiert.",
+        klausurSatzZH:
+          "极权意识形态作为封闭自足的解释体系运转：通过与经验事实彻底脱钩，其演绎推论的强制性营造出严酷的思想暴政，从而搁置了个体自主的道德判断力，并将滔天暴行包装为不容置疑的科学与历史必然性。",
+        ehzKeyPointsDE: [
+          "Analyse der Entkoppelung von Fakten und logischer Folgerichtigkeit.",
+          "Verbindung zur Ausschaltung der moralischen Urteilskraft (Eichmann-Problematik).",
+        ],
+        ehzKeyPointsZH: [
+          "采分点 1 (Ideologie-Mechanismus 4P)：透彻分析意识形态如何通过脱离事实的演绎闭环控制思维。",
+          "采分点 2 (Urteilskraft-Verlust 4P)：精准建立从‘推演逻辑强权’到‘放弃独立良知判断’的因果论证链。",
+        ],
+      },
+      {
+        id: "q-arendt-3",
+        dimension: "figuren",
+        titleDE: "3. Verlassenheit als soziale Wurzel des Totalitarismus",
+        titleZH: "现代原子化大众的被遗弃感与极权温床",
+        afb: "AFB II",
+        questionDE:
+          "Warum bildet nach Hannah Arendt die psychologische Verfassung der 'Verlassenheit' (Loneliness) das entscheidende soziologische Fundament für den Aufstieg totalitärer Massenbewegungen?",
+        questionZH:
+          "为何在汉娜·阿伦特的社会学洞察中，现代大众‘被遗弃感’（Verlassenheit）的心理危机，成为了极权主义运动崛起的决定性温床？",
+        options: [
+          {
+            id: "a",
+            textDE:
+              "Weil der in der Massengesellschaft isolierte und heimatlose Mensch das Vertrauen in die Mitwelt und die eigene Urteilskraft verloren hat; die totalitäre Bewegung bietet ihm durch ideologische Gewissheit und kollektive Scheingeborgenheit einen trügerischen Halt gegen das Nichts.",
+            textZH:
+              "因为在大众社会中沦为孤立原子且无家可归的个体，已彻底丧失了对公共世界与自身判断力的基本信赖；极权主义运动通过绝对教条的确凿感与集体主义虚幻归属感，为恐惧坠入虚无深渊的人们提供了自欺欺人的寄生依靠。",
+            isCorrect: true,
+          },
+          {
+            id: "b",
+            textDE:
+              "Weil verlassene Menschen immer über zu viel Bargeld verfügen und damit totalitäre Parteien finanzieren wollen.",
+            textZH:
+              "因为感到孤单的人往往手握过多闲置现金，因此迫不及待地想要通过资助激进极端政党来打发无聊时光。",
+            isCorrect: false,
+          },
+          {
+            id: "c",
+            textDE:
+              "Weil Einsamkeit und Verlassenheit völlig identisch mit dem bürgerlichen Familienurlaub am Meer sind.",
+            textZH:
+              "因为现代人的被遗弃感仅仅是指市民家庭在海边度假时偶尔感受到的片刻宁静与闲暇。",
+            isCorrect: false,
+          },
+        ],
+        explanationDE:
+          "Isolation trennt von der Politik; Verlassenheit zerstört das Selbst. Der verlassene Massenmensch klammert sich an die Fiktion der Ideologie, um nicht mit seiner Sinnlosigkeit allein zu sein.",
+        explanationZH:
+          "【正解依据与文本锚点】\n文本第 12–13 行深刻剖析道：‘Die soziale Grundlage des Totalitarismus ist die Verlassenheit... Isolation ist der Verlust der Handlungsmöglichkeit; Verlassenheit ist der Verlust des Vertrauens in die Welt.’第一次世界大战与恶性通胀击碎了传统欧洲市民的稳定阶层坐标，千百万人沦为原子化、无处立足的无业大众。孤独使人丧失自我确证，而纳粹或斯大林的极权冲锋队与宏大叙事，正好给这些脆弱的游魂提供了‘融入历史伟大洪流’的虚假光荣。\n\n【干扰项逐项诊断】\n• 选项 B 诊断（庸俗金钱唯物论）：被遗弃感是深刻的精神与社会存在危机，绝非富豪消遣；\n• 选项 C 诊断（可笑的日常化稀释）：混淆了积极有益的独处（Einsamkeit / Solitude）与痛苦自毁的被遗弃（Verlassenheit / Loneliness）。\n\n【时代思潮与哲学脉络】\n独处（Solitude）vs. 被遗弃（Loneliness）：阿伦特区分道：独处是自我与心灵的二人对话（Das Zwei-in-Einem），是哲思与良心的殿堂；而被遗弃则是连自我对话的能力都被剥夺，只剩与万物隔绝的彻骨寒冬。",
+        klausurSatzDE:
+          "Soziologisch fundiert Arendt den Totalitarismus in der Verlassenheit des modernen Massenindividuums: Aus der Entwurzelung und dem Zusammenbruch traditioneller Gemeinschaftsbindungen erwächst die fatale Bereitschaft, die autonome Existenz zugunsten der trügerischen Geborgenheit in einer totalen Ideologie zu opfern.",
+        klausurSatzZH:
+          "在社会学层面上，阿伦特将极权主义牢牢锚定于现代大众个体的被遗弃感：从传统共同体纽带的瓦解与精神无根漂泊中，催生出一种致命的自毁倾向——即甘愿牺牲独立的个体存在，以换取极权意识形态所许诺的虚妄集体归宿与心理慰藉。",
+        ehzKeyPointsDE: [
+          "Konzeptionelle Trennung von Isolation (politisch) und Verlassenheit (existenziell/sozial).",
+          "Erklärung der Massenpsychologie als Vulnerabilität für totalitäre Rekrutierung.",
+        ],
+        ehzKeyPointsZH: [
+          "采分点 1 (Begriffsgenauigkeit 4P)：精准辨析政治维度的‘孤立’与生存论维度的‘被遗弃感’。",
+          "采分点 2 (Massenpsychologie 4P)：深刻阐明无根大众对极权意识形态虚假安全感的心理依附机制。",
+        ],
+      },
+      {
+        id: "q-arendt-4",
+        dimension: "theorie",
+        titleDE: "4. Pluralität, Natalität und die Widerstandskraft der Demokratie",
+        titleZH: "人之复数性、诞生性与现代自由民主防卫机制",
+        afb: "AFB III",
+        questionDE:
+          "Inwiefern begründet Hannah Arendts philosophisches Konzept der 'Natalität' (Gebürtigkeit) und 'Pluralität' ein unverbrüchliches Fundament gegen jeden totalitären Determinismus?",
+        questionZH:
+          "在反击历史决定论与极权暴政的哲学深层战场上，阿伦特所提出的‘诞生性’（Natalität）与‘复数性’（Pluralität）如何构成了自由民主永不磨灭的希望灯塔？",
+        options: [
+          {
+            id: "a",
+            textDE:
+              "Weil mit jeder Geburt eines neuen Menschen die unberechenbare Fähigkeit zu einem radikalen Neuanfang (Handeln) in die Welt einbricht; da Menschen verschieden sind, lässt sich die Geschichte niemals in ein starres ideologisches Zwangskorsett pressen.",
+            textZH:
+              "因为每一个新生命的降生，都为世界带来了一股无法被预先算计的激进开端与崭新行动潜能（Handeln）；正因为人与人是独特的复数存在，历史进程便绝无可能被永久禁锢于僵死一元的极权意识形态铁笼之中。",
+            isCorrect: true,
+          },
+          {
+            id: "b",
+            textDE:
+              "Weil Neugeborene sofort ein Parteibuch erhalten und damit den Staat vor allen Revolutionen bewahren.",
+            textZH:
+              "因为新出生的婴儿可以立刻被发放入党证书，从而确保任何激进社会变革都无法发生。",
+            isCorrect: false,
+          },
+          {
+            id: "c",
+            textDE:
+              "Weil Arendt damit beweisen wollte, dass menschliches Handeln sinnlos ist und die Geschichte ohnehin von Außerirdischen gelenkt wird.",
+            textZH:
+              "因为阿伦特企图借此证明人类一切政治行动皆毫无意义，整个宇宙历史早已被不可知的超自然神秘力量完全注定。",
+            isCorrect: false,
+          },
+        ],
+        explanationDE:
+          "Der Mensch ist zur Freiheit verurteilt, weil er geboren wurde: Natalität ist der Quell der Spontaneität. Jede neue Generation birgt das Versprechen des Neubeginns gegen den Terror.",
+        explanationZH:
+          "【正解依据与文本锚点】\n文本第 15–16 行闪烁着崇高的哲学光芒：‘Jedes Neugeborene aber bringt den Funken des Neuanfangs (Natalität) in die Welt...’极权主义宣称已经穷尽了历史的终极法则，一切个体都只能服从宿命。而阿伦特引述奥古斯丁的名言：‘为了使开端存在，人被创造出来（Initium ut esset, creatus est homo）。’人之所以有自由，是因为人的本质是‘开端者’（Anfänger）。只要婴儿还在降生，极权就永远无法战胜自由。\n\n【干扰项逐项诊断】\n• 选项 B 诊断（极权体制思维的投射）：将崇高的诞生性自由曲解为极权少先队的体制收编；\n• 选项 C 诊断（虚无主义与荒谬归因）：与阿伦特对政治行动自由的热烈捍卫背道而驰。\n\n【时代思潮与哲学脉络】\n防卫性民主与行动哲学：阿伦特的理论不仅深刻构成了联邦德国《基本法》‘防卫性民主’（streitbare Demokratie）与公民社会公共商谈的灵魂支柱，更在当代极权主义复苏的阴云下，指明了守护公共空间与人之尊严的永恒使命。",
+        klausurSatzDE:
+          "Mit den Theoremen der Pluralität und Natalität formuliert Arendt das unhintergehbare Gegengift zum Totalitarismus: Indem das Geborensein die ontologische Möglichkeit verbürgt, handelnd einen unvorhersehbaren Neuanfang zu stiften, triumphiert die Unverfügbarkeit menschlicher Freiheit über jede ideologische Zwangskonstruktion.",
+        klausurSatzZH:
+          "通过确立复数性与诞生性的哲学公理，阿伦特提炼出抵御极权主义不可动摇的精神解毒剂：生命的诞生性本体论地保证了人类通过自由行动开创新局的潜能，从而使得人类自由不可让渡的神圣尊严，终将战胜一切企图奴役人性的虚妄极权建构。",
+        ehzKeyPointsDE: [
+          "Philosophische Entfaltung der Begriffe Natalität (Neubeginn) und Pluralität (Differenz).",
+          "Klausuradäquate Synthese zur Widerstandskraft offener, deliberativer Demokratien.",
+        ],
+        ehzKeyPointsZH: [
+          "采分点 1 (Natalität & Freiheit 4P)：精准提炼‘诞生性即开端之能’的哲学内涵及其对宿命论的瓦解力量。",
+          "采分点 2 (Demokratieethik 4P)：高水准将复数性理念对接现代开放社会的公共讨论空间与反极权价值防线。",
+        ],
+      },
+    ],
+  },
 ];

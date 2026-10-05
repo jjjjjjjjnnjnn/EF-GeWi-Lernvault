@@ -373,10 +373,37 @@ function renderEmbeddedTool(toolName: string, lang: Lang, fach: string, thema?: 
         </div>
       );
     }
+    if (t === "hobbes" || t === "leviathan" || (f.includes("philo") && (thema?.toLowerCase().includes("hobbes") || thema?.toLowerCase().includes("leviathan") || thema?.toLowerCase().includes("naturzustand")))) {
+      return (
+        <div className="my-3 p-3.5 border border-[var(--line)] bg-[var(--surface)] rounded-[var(--radius)]">
+          <GeWiReadingLab lang={lang} defaultExcerptId="hobbes-leviathan" filterFach="Philosophie" compact={true} />
+        </div>
+      );
+    }
+    if (t === "arendt" || t === "totalitarismus" || (f.includes("philo") && (thema?.toLowerCase().includes("arendt") || thema?.toLowerCase().includes("totalit") || thema?.toLowerCase().includes("pluralit")))) {
+      return (
+        <div className="my-3 p-3.5 border border-[var(--line)] bg-[var(--surface)] rounded-[var(--radius)]">
+          <GeWiReadingLab lang={lang} defaultExcerptId="arendt-totalitarismus" filterFach="Philosophie" compact={true} />
+        </div>
+      );
+    }
     if (t === "kant" || t === "kategorisch" || (f.includes("philo") && (thema?.toLowerCase().includes("kant") || thema?.toLowerCase().includes("pflicht") || thema?.toLowerCase().includes("imperativ")))) {
       return (
         <div className="my-3 p-3.5 border border-[var(--line)] bg-[var(--surface)] rounded-[var(--radius)]">
           <GeWiReadingLab lang={lang} defaultExcerptId="kant-kategorisch" filterFach="Philosophie" compact={true} />
+        </div>
+      );
+    }
+    if (f.includes("philo") && (t === "gewi-reading" || t === "reader" || t === "text" || t === "text-analyse")) {
+      let philoExcerpt = "kant-kategorisch";
+      const th = (thema || "").toLowerCase();
+      if (th.includes("hobbes") || th.includes("leviathan") || th.includes("naturzustand") || th.includes("vertrag")) philoExcerpt = "hobbes-leviathan";
+      else if (th.includes("arendt") || th.includes("totalit") || th.includes("pluralit")) philoExcerpt = "arendt-totalitarismus";
+      else if (th.includes("kant") || th.includes("pflicht") || th.includes("imperativ")) philoExcerpt = "kant-kategorisch";
+
+      return (
+        <div className="my-3 p-3.5 border border-[var(--line)] bg-[var(--surface)] rounded-[var(--radius)]">
+          <GeWiReadingLab lang={lang} defaultExcerptId={philoExcerpt} filterFach="Philosophie" compact={true} />
         </div>
       );
     }
