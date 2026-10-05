@@ -82,6 +82,7 @@
 - Ethik: Utilitarismus vs Kant — [Utilitarismus-vs-Kant](../07_Philosophie/Texte-Analyse/Utilitarismus-vs-Kant.md)
 - Philosophische Fragen stellen (Plickat) — [Philosophische-Fragen-Typen](../07_Philosophie/Texte-Analyse/Philosophische-Fragen-Typen.md)（5 Fragetypen/Operatoren-Mapping）
 - Ethische Dilemmata: Kant vs Utilitarismus — [Ethische-Dilemmata-Sammlung](../07_Philosophie/Texte-Analyse/Ethische-Dilemmata-Sammlung.md)（4案例/双公式检验/快乐计算/8句Merksatz）
+- Ethik: John Stuart Mill (Utilitarismus & Qualitativer Hedonismus) — [Mill-Utilitarismus-Qualitativer-Hedonismus](../07_Philosophie/Texte-Analyse/Mill-Utilitarismus-Qualitativer-Hedonismus.md)（功利四大支柱/边沁纯量化算盘解构/胜任裁判官论证/苏格拉底之猪两难/自动驾驶算法伦理）
 - Kants Kategorischer Imperativ & Maximenprüfung — [Kant-Kategorischer-Imperativ-und-Maximenpruefung](../07_Philosophie/Kant-Kategorischer-Imperativ-und-Maximenpruefung.md)（四步检验法/无矛盾可设想性与可意愿性/人类自为目的公式）
 - Sonderstellung des Menschen — [Sonderstellung-des-Menschen](../07_Philosophie/Sonderstellung-des-Menschen.md)（Gehlen匮乏存在与文化补偿/Scheler世界开放性/Singer动物伦理与物种歧视批判）
 - Abitur-Kernstellen (Aristoteles/Kant/Rousseau/Sartre) — [Philo-Abitur-Kernstellen](../07_Philosophie/Texte-Analyse/Philo-Abitur-Kernstellen.md)（4×3句论证+EF-Anschluss）· [II B/II C Training](../07_Philosophie/Klausur-Training/Philo-Textanalyse-Training.md)（EHZ+Lena-Übung）

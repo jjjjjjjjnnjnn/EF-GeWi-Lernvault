@@ -4442,6 +4442,395 @@ export const GEWI_TEXT_REGISTRY: GeWiTextExcerpt[] = [
       },
     ],
   },
+
+  // =========================================================================
+  // 16. PHILOSOPHIE: John Stuart Mill — Utilitarismus (伦理学：功利原理与质性快乐主义)
+  // =========================================================================
+  {
+    id: "mill-utilitarismus",
+    fach: "Philosophie",
+    genre: "Sachtext",
+    author: "John Stuart Mill",
+    workTitleDE: "Utilitarismus (Kapitel 2: Was der Utilitarismus ist)",
+    workTitleZH: "《功利主义》（第二章：功利主义的含义）",
+    sceneTitleDE: "Ethik // Das Nützlichkeitsprinzip und der qualitative Hedonismus",
+    sceneTitleZH: "伦理学原典：功利原理与质性快乐论 (苏格拉底之猪难题与胜任裁判官论证)",
+    versesRange: "Kapitel 2, Abs. 2–8",
+    epochDE: "19. Jahrhundert / Klassischer englischer Utilitarismus (1861)",
+    epochZH: "19世纪古典功利主义伦理学 / 英国经验主义传统 (1861)",
+    contextDE:
+      "Gegen den Vorwurf seiner Zeitgenossen, der Utilitarismus sei eine 'pig philosophy' (Schweinephilosophie), differenziert John Stuart Mill Benthams rein quantitativen Hedonismus: Höhere geistig-sittliche Freuden besitzen eine unvergleichlich höhere Qualität als bloße sinnliche Triebe. Ein unzufriedener Sokrates steht sittlich unendlich höher als ein zufriedengestelltes Schwein.",
+    contextZH:
+      "针对同时代保守批评家将功利主义诬蔑为仅追求感官享乐的‘猪的哲学’（pig philosophy），约翰·斯图尔特·密尔对杰里米·边沁的纯粹量化快乐计算进行了革命性修正：确立‘质性快乐主义’（qualitativer Hedonismus）。他坚信，人类的理智、审美与道德快乐在性质上绝对凌驾于单纯肉体兽欲之上，宁做痛苦的苏格拉底，不做快乐的肥猪。",
+    verses: [
+      {
+        lineNum: 1,
+        textDE: "Das Glaubensbekenntnis, das die Nützlichkeit oder das Prinzip des größten Glücks als Grundlage der Moral annimmt...",
+        translationZH: "将‘功利’或‘最大幸福原则’作为道德基础的信条坚持认为……",
+        toneCategory: "moral",
+        vocab: {
+          word: "Prinzip des größten Glücks",
+          meaningDE: "Greatest Happiness Principle: Das höchste Gut ist das größtmögliche Glück der größtmöglichen Zahl.",
+          meaningZH: "最大幸福原则：道德的终极至善在于为尽可能多的人创造尽可能大的净幸福总量。",
+        },
+      },
+      {
+        lineNum: 2,
+        textDE: "...besagt, dass Handlungen insoweit moralisch richtig sind, als sie die Tendenz haben, Glück zu befördern.",
+        translationZH: "……任何行为只要倾向于促进幸福，便在道德上是正确的；反之，若倾向于产生不幸，则是错误的。",
+        toneCategory: "moral",
+        stilmittel: {
+          type: "Teleologisches Kriterium (Folgenethik)",
+          descDE: "Handlungen werden ausschließlich nach ihren absehbaren Konsequenzen beurteilt, nicht nach Gesinnung.",
+          descZH: "目的论/后果主义准则：行为善恶完全由其客观后果（幸福或痛苦产出）决定，与康德的纯粹善良意志动机形成尖锐对立。",
+        },
+      },
+      {
+        lineNum: 3,
+        textDE: "Unter 'Glück' ist Lust und das Freisein von Unlust verstanden; unter 'Unglück' Unlust und der Fortfall von Lust.",
+        translationZH: "所谓‘幸福’（Glück），指的是快乐与免除痛苦；所谓‘不幸’（Unglück），指的则是痛苦与快乐的被剥夺。",
+        toneCategory: "existenz",
+        vocab: {
+          word: "Lust und Freisein von Unlust",
+          meaningDE: "Klassische hedonistische Definition: Pleasure and the absence of pain.",
+          meaningZH: "古典快乐主义定义：快乐与痛苦是人类行为唯二的终极奖惩与价值锚点。",
+        },
+      },
+      {
+        lineNum: 4,
+        textDE: "Die Theorie des Lebens, auf der diese Theorie der Moralität beruht, ist: dass Lust und das Freisein von Unlust die einzigen Dinge sind, die als Endzwecke wünschenswert sind.",
+        translationZH: "作为这一道德理论根基的人类生活理论认为：快乐和痛苦的免除，是世间作为终极目的（Endzwecke）唯二真正值得欲求的事物。",
+        toneCategory: "moral",
+      },
+      {
+        lineNum: 5,
+        textDE: "Eine solche Lebensauffassung erregt bei vielen Menschen eine tiefe Abneigung: Sie nennen sie eine Lehre, die nur für Schweine taugt.",
+        translationZH: "这样一种生活观念在许多人心中激起根深蒂固的反感：他们厌恶地斥之为一种只配给猪享用的下贱学说。",
+        toneCategory: "spott",
+        stilmittel: {
+          type: "Antizipation des Einwands (Prolepsis)",
+          descDE: "Vorwegnahme der konservativen 'pig philosophy'-Kritik zur rhetorischen Entkräftung.",
+          descZH: "修辞性预先驳论（Prolepsis）：主动亮出批评者最恶毒的‘猪之哲学’攻击，从而在后续展开决定性学术反杀。",
+        },
+      },
+      {
+        lineNum: 6,
+        textDE: "Wenn man ihnen dies vorwirft, antworten die Epikureer stets: Es sind nicht sie, sondern ihre Ankläger, die die menschliche Natur in einem herabwürdigenden Licht darstellen.",
+        translationZH: "当受到这种攻击时，功利主义者向来如此回应：把人性描绘得如此卑鄙下贱的，恰恰不是功利主义者自己，而是那些自命清高的原告批评家！",
+        toneCategory: "autoritaet",
+      },
+      {
+        lineNum: 7,
+        textDE: "Denn der Vorwurf setzt voraus, dass die Menschen keiner anderen Freuden fähig sind als jener, deren Schweine fähig sind.",
+        translationZH: "因为这个荒谬的指责暗含了一个极其侮辱人的假定：人类所能享受到的快乐，竟然丝毫不比一头猪所享受的烂泥享乐更高明！",
+        toneCategory: "spott",
+      },
+      {
+        lineNum: 8,
+        textDE: "Es ist völlig vereinbar mit dem Nützlichkeitsprinzip, anzuerkennen, dass einige Arten der Freude wünschenswerter und wertvoller sind als andere.",
+        translationZH: "承认某些类型的快乐在性质上比其他快乐更值得欲求、更有价值，这同功利原理是完全一致且全然兼容的！",
+        toneCategory: "streben",
+        vocab: {
+          word: "Arten der Freude",
+          meaningDE: "Bruch mit Bentham: Differenzierung zwischen geistiger und physischer Lust.",
+          meaningZH: "质性快乐论分水岭：彻底决裂边沁‘图钉游戏与诗歌一样好’的粗糙平铺论，将快乐划分为高阶心智与低阶感官。",
+        },
+      },
+      {
+        lineNum: 9,
+        textDE: "Es wäre absurd anzunehmen, dass bei der Beurteilung aller anderen Dinge die Qualität ebenso wie die Quantität zählt, bei den Freuden aber allein die Quantität zählen sollte.",
+        translationZH: "如果说在评估世间万物时我们都会同时衡量其质量与数量，却在衡量快乐时荒谬地只看数量多寡，那是何等愚蠢可笑的偏执！",
+        toneCategory: "spott",
+        stilmittel: {
+          type: "Analogie-Argumentation & Reductio ad absurdum",
+          descDE: "Übertragung der Qualitätsdimension von materiellen Gütern auf emotionale und intellektuelle Zustände.",
+          descZH: "类比归谬论证：将物质商品‘品质重于数量’的普遍公理平移至精神快乐，从而逻辑性驳倒纯数量功利论。",
+        },
+      },
+      {
+        lineNum: 10,
+        textDE: "Von zwei Freuden ist diejenige wünschenswerter, die von allen oder fast allen, die beide erfahren haben, entschieden vorgezogen wird.",
+        translationZH: "在两种快乐之间，如果所有（或绝大多数）对两者皆有亲身体验的人，都毫无保留地坚定优先选择其中一种，那么它就更具内在价值。",
+        toneCategory: "moral",
+        vocab: {
+          word: "beide erfahren haben",
+          meaningDE: "Kompetente Richter (Competent Judges): Erkenntnistheoretischer Schiedsspruch durch empirische Erfahrung.",
+          meaningZH: "胜任的裁判官标准：唯有同时品尝过两种快乐的知情者，才拥有判定快乐等级高下的裁量权。",
+        },
+      },
+      {
+        lineNum: 11,
+        textDE: "Nun ist es aber eine unbestreitbare Tatsache, dass diejenigen, die mit beiden gleichermaßen vertraut sind...",
+        translationZH: "然而，一个毋庸置疑的经验事实是：那些对两种快乐都同样熟知、能够同等评价的人……",
+        toneCategory: "autoritaet",
+      },
+      {
+        lineNum: 12,
+        textDE: "...denjenigen Lebensweisen den Vorzug geben, die ihre höheren Fähigkeiten in Anspruch nehmen.",
+        translationZH: "……无一例外都会断然优先选择那种能够调动其更高阶心智能力（理性、思考、审美）的生活方式！",
+        toneCategory: "streben",
+        vocab: {
+          word: "höhere Fähigkeiten",
+          meaningDE: "Intellektuelle, ästhetische und moralische Vermögen des vernunftbegabten Menschen.",
+          meaningZH: "更高阶能力：理性思维、艺术审美欣赏、同情心与利他主义德性。",
+        },
+      },
+      {
+        lineNum: 13,
+        textDE: "Kein kluger Mensch möchte ein Narr sein, kein gebildeter Mensch ein Unwissender, kein Mensch mit Gefühl und Gewissen ein selbstsüchtiger Schuft sein...",
+        translationZH: "没有一个明智之人甘愿沦为傻瓜，没有一个受过教育之人甘愿变成白痴，没有一个有良知之人甘愿蜕化为卑劣恶棍……",
+        toneCategory: "moral",
+        stilmittel: {
+          type: "Trikolon & Emphatische Negation",
+          descDE: "Drei parallele Negationen zur Untermauerung menschlichen Selbstrespekts und Würdebewusstseins.",
+          descZH: "三重三段排比与肯定性否定：通过聪明人/学者/良知者的三重对照，唤起人类不可妥协的理性尊严感。",
+        },
+      },
+      {
+        lineNum: 14,
+        textDE: "...selbst wenn man sie überzeugte, dass der Narr, der Dummkopf oder der Schuft mit seinem Los zufriedener sei als sie mit dem ihrigen.",
+        translationZH: "……即使有人能够向他们证明，傻瓜、蠢汉或恶棍对自己烂醉如泥命运的‘满足度’，远远超过他们在精神追求中的烦恼与焦虑！",
+        toneCategory: "existenz",
+      },
+      {
+        lineNum: 15,
+        textDE: "Es ist besser, ein unzufriedener Mensch zu sein als ein zufriedengestelltes Schwein...",
+        translationZH: "做一个痛苦不满足的人，远远胜过做一头吃饱喝足、心满意足的肥猪……",
+        toneCategory: "streben",
+        stilmittel: {
+          type: "Aphoristische Antithese (Ethik-Schlüsselsatz)",
+          descDE: "Zuspitzung des qualitativen Hedonismus: Unterscheidung zwischen 'Glück' (Happiness) und bloßer 'Zufriedenheit' (Contentment).",
+          descZH: "格言式对照对偶（伦理学核心警句）：尖锐区分精神‘崇高幸福’（Happiness）与肉体生理‘低级满足’（Contentment）。",
+        },
+      },
+      {
+        lineNum: 16,
+        textDE: "...besser ein unzufriedener Sokrates als ein zufriedener Narr. Und wenn der Narr oder das Schwein anderer Meinung sind, so rührt das daher, dass sie nur ihre eigene Seite der Frage kennen.",
+        translationZH: "……宁做一个痛苦不满足的苏格拉底，也绝不做一只快乐满足的傻子。如果蠢人或猪对此持有异议，那仅仅是因为他们一辈子只了解属于他们自己的猪槽那一面而已！",
+        toneCategory: "streben",
+        vocab: {
+          word: "nur ihre eigene Seite kennen",
+          meaningDE: "Erkenntnistheoretischer Fehlschluss der Ungebildeten: Das Schwein kann den Geist nicht beurteilen.",
+          meaningZH: "认识论的单向性：猪和愚者从未体验过哲思与道德的纯粹狂喜，故而其评判毫无认识论效力。",
+        },
+      },
+    ],
+    questions: [
+      {
+        id: "q-mill-1",
+        dimension: "inhalt",
+        afb: "AFB I",
+        titleDE: "Nützlichkeitsprinzip & Die vier utilitaristischen Teilprinzipien",
+        titleZH: "功利原理与四大核心要素 (AFB I: Darstellen)",
+        questionDE:
+          "Wie definiert John Stuart Mill das 'Prinzip des größten Glücks' (Nützlichkeitsprinzip) und durch welche vier konstitutiven Teilprinzipien wird der klassische Utilitarismus in der philosophischen Ethik charakterisiert?",
+        questionZH:
+          "约翰·斯图尔特·密尔如何界定‘最大幸福原则’（功利原理）？在哲学伦理学中，古典功利主义由哪四大不可分割的核心支柱原则（Vier Teilprinzipien）所共同奠定？",
+        options: [
+          {
+            id: "a",
+            textDE:
+              "Handlungen sind moralisch richtig, wenn sie das größtmögliche Glück für die größtmögliche Zahl befördern. Konstituiert wird die Lehre durch: 1. Konsequenzenprinzip (Folgenethik), 2. Utilitätsprinzip (Nützlichkeit als Kriterium), 3. Hedonistisches Prinzip (Glück als Lust/Freisein von Schmerz) und 4. Universalistisches Prinzip (Gleichwertigkeit aller Betroffenen / 'Jeder zählt für einen').",
+            textZH:
+              "若行为倾向于促进最大多数人的最大幸福，则在道德上是正当的。其哲学大厦依托于四大支柱原则：1. 后果原则（Folgenprinzip/纯看客观结果），2. 功利原则（Utilitätsprinzip/以效用最大化为标尺），3. 快乐原则（Hedonistisches Prinzip/以快乐与免除痛苦为终极善），4. 普遍主义平等原则（Universalistisches Prinzip/每个人都只算作一人，无人享有特权）。",
+            isCorrect: true,
+          },
+          {
+            id: "b",
+            textDE:
+              "Moralisch richtig ist allein das, was der Papst in Rom oder der regierende König in London an jedem Sonntagmorgen per Dekret befiehlt, ungeachtet jeglicher Folgen für die Bevölkerung.",
+            textZH:
+              "道德上唯有罗马教皇或伦敦在位君主每周日早晨签署的法令才是正确的，无论这些法令对老百姓造成多么灾难性的痛苦后果。",
+            isCorrect: false,
+          },
+          {
+            id: "c",
+            textDE:
+              "Der Utilitarismus besagt, dass jeder Mensch das Recht hat, alle anderen Menschen rücksichtslos zu berauben, solange er selbst dabei persönliche Freude empfindet.",
+            textZH:
+              "功利主义主张每个人都有权肆无忌惮地洗劫掠夺他人，只要他本人在这个过程中能获得个人自私的狂欢快乐即可。",
+            isCorrect: false,
+          },
+        ],
+        explanationDE:
+          "Die 4 Säulen des Utilitarismus (Standard-Lehrplan NRW): Folgen (Teleologie), Nutzen, Lust (Hedonismus) und Unparteilichkeit (Universale Gleichheit).",
+        explanationZH:
+          "【正解依据与文本锚点】\n北威州高中哲学会考（Klausur / Abitur）伦理学核心考点：功利主义四大支柱（Die vier utilitaristischen Kriterien）：\n1. 后果原则（Konsequenzenprinzip / Teleologie）：行为善恶不在于行为者主观是否出于善意（与康德决裂），而在于其行为产生的可预见实际效果；\n2. 效用原则（Utilitätsprinzip）：以该后果能否增加整体福祉或减少损害为唯一标准；\n3. 快乐主义原则（Hedonistisches Prinzip）：终极善（Summum bonum）不是虚无的‘理性法则’，而是实实在在的快乐与无痛苦体验；\n4. 普遍性原则（Universalistisches Prinzip / Sozialprinzip）：绝非利己主义（Egoismus）！计算时必须把所有受影响者的利益同等纳入，‘Jeder zählt als einer und keiner für mehr als einen’（任何人都不比别人更高贵）。\n\n【干扰项逐项诊断】\n• 选项 B 诊断（神权专制伦理混淆）：功利主义是彻底启蒙理性化的世俗伦理学，坚决粉碎神权迷信；\n• 选项 C 诊断（将普遍功利歪曲为个人利己主义）：这是对功利主义最粗鄙的庸俗化误读，功利主义追求的是‘集体总福祉’而非单体掠夺。\n\n【时代思潮与哲学脉络】\n功利主义的激进进步性：在19世纪英国阶级森严的环境下，普遍性原则意味着穷人、妇女、工人的快乐与贵族公爵的快乐在天平上拥有绝对等额的权重，推动了英国议会改革法案与监狱人道化改革。",
+        klausurSatzDE:
+          "Der klassische Utilitarismus konstituiert sich als teleologische normative Ethik durch das Zusammenspiel vierer Teilprinzipien: Handlungen werden ausschließlich nach ihren realen Konsequenzen (Folgenprinzip), an ihrem Nutzen (Utilitätsprinzip) für das menschliche Wohlbefinden im Sinne von Lust und Schmerzvermeidung (hedonistisches Prinzip) und unter egalitärer Einbeziehung aller Betroffenen (universalistisches Prinzip) bewertet.",
+        klausurSatzZH:
+          "古典功利主义作为一种规范目的论伦理学，由四大支柱原则的有机协同构建而成：行为之善恶评判，完全依凭其客观现实后果（后果原则），以其对促进人类免除痛苦与享有快乐之福祉的净效用为标尺（功利原则与快乐主义原则），并对所有利益相关方予以不偏不倚的绝对平等考量（普遍性原则）。",
+        ehzKeyPointsDE: [
+          "Präzise Nennung und Erläuterung der vier Teilprinzipien (Konsequenz, Nutzen, Hedonismus, Universalität).",
+          "Abgrenzung des Universalismus gegen Egoismus ('größtes Glück der größten Zahl').",
+        ],
+        ehzKeyPointsZH: [
+          "采分点 1 (Kriterien 4P)：精准阐述后果、效用、快乐、普遍四大子原则及其定义内涵。",
+          "采分点 2 (Universalität 4P)：深刻区分功利主义的普遍利益天平与粗鄙自私利己主义的界限。",
+        ],
+      },
+      {
+        id: "q-mill-2",
+        dimension: "argumentation",
+        afb: "AFB II",
+        titleDE: "Qualitativer Hedonismus & 'Kompetente Richter'",
+        titleZH: "质性快乐主义与‘胜任裁判官’论证机制 (AFB II: Analysieren)",
+        questionDE:
+          "Wie begründet Mill seine These, dass geistige Freuden qualitativ höherwertig seien als rein sinnliche Genüsse, und welche Funktion übernimmt dabei das epistemische Kriterium der 'kompetenten Richter' (Z. 8–12)?",
+        questionZH:
+          "密尔依据何种逻辑论据证明心智理智快乐在‘质’上绝对优越于感官肉体享乐？其中‘胜任的裁判官’（Kompetente Richter）这一认识论判准（第8–12句）承担了何种关键证明功能？",
+        options: [
+          {
+            id: "a",
+            textDE:
+              "Mill bricht mit Benthams rein quantitativer Rechenlehre und postuliert Qualitätsunterschiede: Geistige Freuden (Intellekt, Kunst, moralisches Engagement) sind den körperlichen Trieben kategorial überlegen. Als objektiver Maßstab fungieren 'kompetente Richter'—Individuen, die beide Freudenformen aus eigener Anschauung erprobt haben und sich empirisch stets für die Verwirklichung ihrer höheren Anlagen entscheiden, selbst wenn dies mit größerer Schmerz- und Zweifelsanfälligkeit (Sokrates) einhergeht.",
+            textZH:
+              "密尔决裂了边沁单纯数人头和量化时间的‘快乐算盘’，断言快乐存在不可通约的本质阶序：心智智识与道德快乐在范畴上绝对压倒动物性肉体生理满足。其客观评判基准依托于‘胜任的裁判官’——即对高级理智快乐与低级肉体感官快乐皆有亲身体验的清醒者；经验证明，这些知情者无一例外都会毅然决然地选择更高阶的潜能实现，哪怕这种追求伴随着更多的心灵煎熬与未解疑惑（如苏格拉底），也绝不愿倒退为无知蠢汉。",
+            isCorrect: true,
+          },
+          {
+            id: "b",
+            textDE:
+              "Mill behauptet, dass der britische Premierminister allein qua Amt bestimmen darf, welches Buch als hochgeistig und welches Bier als qualitativ minderwertig verboten wird.",
+            textZH:
+              "密尔主张只有英国首相本人凭借政治特权，才有资格在官报上直接下令指定哪本书算作高雅读物、哪种啤酒算作低俗毒药予以查封禁售。",
+            isCorrect: false,
+          },
+          {
+            id: "c",
+            textDE:
+              "Es gibt laut Mill keinerlei Unterschied zwischen Menschen und Schweinen; wenn Schweine gern im Schlamm baden, sollten alle Universitäten geschlossen und in Schlammgruben umgewandelt werden.",
+            textZH:
+              "密尔认为人与野猪没有任何区别；既然野猪喜欢在泥浆里打滚，那么全人类所有大学都应该立刻关闭拆迁，就地改建为公共泥潭供全体国民滚泥巴享乐。",
+            isCorrect: false,
+          },
+        ],
+        explanationDE:
+          "Differenzierung von Glück vs. Zufriedenheit: Das Schwein erfährt bloße 'Zufriedenheit' (Bedürfnisbefriedigung); der denkende Mensch strebt nach 'Glück' (Selbstverwirklichung und Würde).",
+        explanationZH:
+          "【正解依据与文本锚点】\n密尔对古典功利主义的最伟大拯救（Qualitativer Hedonismus）：\n边沁曾提出著名的极端量化公式：‘只要快乐量相同，玩图钉游戏（push-pin）就同读诗歌（poetry）一样好。’批评者因此指责功利主义鼓励民众沉溺于醉生梦死和低级感官刺激。\n密尔做出关键反击：\n1. 快乐的二元分层：\n   - 低级快乐（Niedere Lust）：饮食、睡眠、性欲等单纯生物学欲求满足（Zufriedenheit / Contentment）；\n   - 高级快乐（Höhere Lust）：探索真理、艺术创作、友谊、同情心、捍卫正义等高阶心智能力（Glück / Happiness）。\n2. 认识论裁判（Kompetente Richter）：如何证明高级快乐更好？不能靠形而上教条，而靠经验实证。谁体验过这两种快乐？受过文明熏陶的人既吃过美食、也体验过哲思狂喜；而愚人和野兽只了解吃喝。正是那些‘双料体验者’坚定不移的裁决，铸就了质性快乐无可辩驳的客观性。\n\n【干扰项逐项诊断】\n• 选项 B 诊断（家长制集权审查歪曲）：密尔是《论自由》的作者，坚决捍卫言论自由，绝非政府独裁论者；\n• 选项 C 诊断（倒置讽刺）：文本第15–16句明确驳斥‘做满足的猪不如做不满足的苏格拉底’。\n\n【时代思潮与哲学脉络】\n人性尊严（Dignity）的回归：密尔在功利主义内部悄然植入了古希腊亚里士多德‘潜能实现’（Entelechie）与人本主义尊严的内核，大大增强了功利主义的道德厚度。",
+        klausurSatzDE:
+          "Indem Mill Benthams quantitative Nutzenkalkulation um die qualitative Dimension erweitert, rettet er den Utilitarismus vor dem Vorwurf einer 'Schweinephilosophie': Das epistemische Kriterium der 'kompetenten Richter' fundiert empirisch, dass geistig-reflexive Freuden aufgrund ihrer Verknüpfung mit menschlicher Würde einen kategorialen Vorrang vor bloßer sinnlicher Triebbefriedigung beanspruchen.",
+        klausurSatzZH:
+          "通过在边沁纯粹量化效用计算中注入质性维度，密尔成功解救了功利主义使其免遭‘猪的哲学’之斥难：‘胜任裁判官’这一认识论判准从经验层面坚实确立，精神反思层面的高阶快乐因其与人性尊严的深刻联结，在范畴上天然凌驾于动物性低阶感官欲望满足之上。",
+        ehzKeyPointsDE: [
+          "Bruch mit Bentham: Abkehr vom reinen Quantitätsprinzip.",
+          "Erläuterung des Konzepts der kompetenten Richter (Erfahrung beider Lustformen als Kriterium).",
+        ],
+        ehzKeyPointsZH: [
+          "采分点 1 (Bentham vs. Mill 4P)：精准剖析从边沁‘纯量化算盘’到密尔‘质性分层’的理论进化跃迁。",
+          "采分点 2 (Kompetente Richter 4P)：深刻阐发‘双料经验体验者’作为经验认识论判准的论证逻辑与效力。",
+        ],
+      },
+      {
+        id: "q-mill-3",
+        dimension: "theorie",
+        afb: "AFB II",
+        titleDE: "Kritik & Aporien des Qualitativen Utilitarismus",
+        titleZH: "质性功利主义的理论阿喀琉斯之踵与精英主义危机 (AFB II: Problematisieren)",
+        questionDE:
+          "Welche grundlegende theoretische Aporie (Widerspruch) werfen moderne Philosophen Mills qualitativem Utilitarismus vor, insbesondere im Hinblick auf Benthams ursprüngliches Nützlichkeitskalkül?",
+        questionZH:
+          "现代伦理学界与分析哲学家指责密尔的‘质性功利主义’陷入了何种难以克服的内在理论自相矛盾（Aporie）？这一修正为何在某种程度上动摇了边沁最初效用主义的理论根基？",
+        options: [
+          {
+            id: "a",
+            textDE:
+              "Durch die Einführung eines qualitativen Maßstabs verlässt Mill heimlich das hedonistische Prinzip: Wenn Freude A wertvoller ist als Freude B, obwohl Freude B quantitativ intensiver empfunden wird, so entscheidet nicht mehr die 'Lust an sich' über den moralischen Wert, sondern ein externes, nicht-hedonistisches Ideal (wie Bildung, menschliche Würde oder Tugend). Damit verliert der Utilitarismus seine mathematische Berechenbarkeit und droht in einen elitären Paternalismus abzugleiten.",
+            textZH:
+              "通过强行引入‘质’的衡量尺度，密尔暗度陈仓地背叛了纯粹快乐主义底线：如果快乐 A 在数量强度上弱于快乐 B，却被判定为更有价值，那么决定其价值的就不再是‘快乐本身’，而是一个外在的、非功利主义的标准（如古典教养、人性尊严、美德或理性能力）。这使得功利主义丧失了边沁所引以为傲的数学客观可计算性，并面临滑向‘知识分子自命清高判定什么是高级快乐’的精英主义家长制专权（Paternalismus）危机。",
+            isCorrect: true,
+          },
+          {
+            id: "b",
+            textDE:
+              "Mill hat vergessen, wie man Grundrechenarten ausführt, weshalb er alle Zahlen in seinem Buch durch lateinische Gedichte ersetzte.",
+            textZH:
+              "密尔在写作时突然忘记了如何进行加减乘除四则运算，因此他赌气在书里用拉丁文十四行诗强行替换掉了所有数学计算公式。",
+            isCorrect: false,
+          },
+          {
+            id: "c",
+            textDE:
+              "Der Utilitarismus von Mill wurde verboten, weil er die Produktion von Shakespeare-Büchern in ganz Europa mit der Todesstrafe bedrohte.",
+            textZH:
+              "密尔的理论在当时被全欧洲查禁，因为他在书中号召欧洲各国立即对所有出版莎士比亚戏剧的印刷厂老板判处绞刑。",
+            isCorrect: false,
+          },
+        ],
+        explanationDE:
+          "Das Methoden-Dilemma: Ist der Wertmaßstab noch 'Lust' oder bereits 'Würde' (Kant'scher Einschlag)? Wenn Qualität zählt, ist der Hedonismus aufgegeben; wenn Quantität zählt, bleibt der Schweine-Vorwurf bestehen.",
+        explanationZH:
+          "【正解依据与文本锚点】\n哲学史上对密尔最深刻的理论解剖（Das Problem des qualitativen Hedonismus）：\n哲学家们指出了密尔两难（Mills Dilemma）：\n1. 放弃快乐主义底色：如果‘读歌德的快乐’比‘喝啤酒的快乐’更高级，甚至当喝啤酒带来的爽感（量）远超读诗时，读诗仍然胜出——那么请问，支撑读诗胜出的‘那个东西’到底是什么？显然已经不再是‘快乐’本身，而是隐藏在其背后的‘理性心智发展’、‘人性尊严’或‘文化教养’！密尔实际上把康德或亚里士多德的德性价值，偷偷塞进了功利主义皮囊中；\n2. 丧失可计算性：边沁的快乐计算法（Hedonistisches Kalkül: 强度、持续时间、确定性、纯度、广度）是可以用数字相加的；一旦引入性质，不同质的快乐根本无法放在同一天平上折算（如同拿一斤苹果去减三只香蕉）；\n3. 精英主义傲慢（Paternalismus）：谁有资格当‘胜任的裁判官’？难道只有受过良好牛津剑桥教育的士绅阶层才能决定什么是‘高尚快乐’？普通工人下班喝啤酒吃炸鸡的快乐难道就活该被贬为‘低贱畜生’？这遭到了民主平权哲学的剧烈质疑。\n\n【干扰项逐项诊断】\n• 选项 B 诊断（无厘头低俗嘲讽）：密尔是逻辑学与经济学泰斗，计算能力极强；\n• 选项 C 诊断（无端造谣）：密尔一生热爱文学与莎士比亚，视诗歌为崇高精神快乐的典范。\n\n【时代思潮与哲学脉络】\n现代偏好功利主义（Präferenzutilitarismus）：正是为了克服密尔的质性困境，彼得·辛格（Peter Singer）等当代哲学家抛弃了模糊的‘快乐’概念，转而以‘当事人的主观偏好能否得到满足’（Erfüllung von Präferenzen）作为全新衡量基石。",
+        klausurSatzDE:
+          "In systematischer Problemexplikation erweist sich Mills qualitativer Utilitarismus als theorieimmanente Aporie: Indem Mill eine Hierarchie der Lüste über nicht-hedonistische Kriterien (wie Vernunftbegabung und Würde) begründet, unterminiert er Benthams mathematisches Nutzenkalkül und setzt sich dem Vorwurf eines bildungsbürgerlichen Paternalismus aus.",
+        klausurSatzZH:
+          "在系统性的学理问题化审视中，密尔的质性功利主义暴露出理论内在难以调和的自相矛盾：密尔一旦借助非快乐主义标准（如理性能力与尊严）确立快乐等级秩序，便实质瓦解了边沁原本清晰的数学效用算盘，并使自身无可避免地陷入了市民阶级文化精英主义家长制的学理诘难。",
+        ehzKeyPointsDE: [
+          "Identifikation des Methodenwiderspruchs: Qualitätsurteil verlässt den reinen Hedonismus.",
+          "Kritik des Paternalismus und der mangelnden mathematischen Berechenbarkeit heterogener Freuden.",
+        ],
+        ehzKeyPointsZH: [
+          "采分点 1 (Aporie-Analyse 4P)：深刻剖析‘质性评判背离纯快乐主义’向德性伦理潜移默化的逻辑断裂。",
+          "采分点 2 (Paternalismus-Kritik 4P)：精准点出量化折算机制崩溃与精英主义裁判官特权带来的合法性危机。",
+        ],
+      },
+      {
+        id: "q-mill-4",
+        dimension: "theorie",
+        afb: "AFB III",
+        titleDE: "Teleologie vs. Deontologie: Mill und Kant im 21. Jahrhundert",
+        titleZH: "目的论与义务论的世纪对决：自动驾驶与现代伦理困境终审 (AFB III: Beurteilen)",
+        questionDE:
+          "Inwiefern lässt sich der fundamentale ethische Dissens zwischen Mills konsequenzialistischem Utilitarismus und Kants deontologischer Pflichtenethik am modernen Dilemma selbstfahrender Fahrzeuge (autonomes Fahren) fruchtbar machen und theoriegeleitet beurteilen?",
+        questionZH:
+          "在21世纪人工智能算法与自动驾驶（Autonomes Fahren）面对不可避免的突发车祸两难抉择时，我们应当如何理论化地辩证评判密尔的后果目的论（Teleologie）与康德的义务论伦理学（Deontologie）的尖锐对决与时代启示？",
+        options: [
+          {
+            id: "a",
+            textDE:
+              "Der Utilitarismus fordert eine strikte Schadensminimierung (Opferung eines Einzelnen zur Rettung von fünf Personen), gerät aber in Konflikt mit dem verfassungsrechtlichen Schutz der Menschenwürde (Art. 1 GG), der eine Verrechnung von Menschenleben verbietet; Kants kategorischer Imperativ verbietet absolut die Instrumentalisierung des Menschen als bloßes Rechenmittel, führt in der Praxis jedoch zu moralischer Handlungslähmung. Eine zeitgemäße Ethik bedarf daher einer kantischen deontologischen Schutzgrenze für Grundrechte, kombiniert mit utilitaristischer Folgenabwägung innerhalb dieser unverletzlichen Grenzen.",
+            textZH:
+              "功利主义主张严格的总伤害最小化原则（牺牲1名行人转向撞墙，以拯救车内5名乘客），但这直接侵犯了德国基本法第1条所捍卫的‘人的尊严不可侵犯’（生命绝对禁止数量相抵）；而康德定言命令坚决禁止将任何人仅仅当作救人的算术工具，但在千钧一发的现实编程中却极易导致‘坐视更大惨剧发生’的行动瘫痪。因此，当代应用伦理学走向了一种辩证综合：以康德义务论确立生命不可剥夺的绝对宪政红线，而在不突破尊严底线的安全空间内，采纳功利主义的高效福祉后果优化。",
+            isCorrect: true,
+          },
+          {
+            id: "b",
+            textDE:
+              "Sowohl Kant als auch Mill haben gefordert, dass Autos grundsätzlich verboten werden müssen und alle Bürger des 21. Jahrhunderts verpflichtet sind, täglich 50 Kilometer zu Fuß zu wandern.",
+            textZH:
+              "康德与密尔在遗嘱中一致强烈要求全面禁止人类生产任何汽车，规定21世纪全体地球公民每天必须强制徒步负重行军50公里作为道德修养。",
+            isCorrect: false,
+          },
+          {
+            id: "c",
+            textDE:
+              "In der modernen Welt spielen philosophische Ethiktheorien keinerlei Rolle mehr, da Softwareprogramme ausschließlich durch den Würfelwurf von Zufallsgeneratoren gesteuert werden sollten.",
+            textZH:
+              "在现代社会中伦理哲学早已毫无意义，自动驾驶系统的所有生死避让程序直接由车载电脑扔骰子掷随机数决定即可。",
+            isCorrect: false,
+          },
+        ],
+        explanationDE:
+          "Klassische Klausur-Synthese (NRW AFB III): Konfrontation von Zweck-Mittel-Relation (Kant) mit Nutzenmaximierung (Mill). Anbindung an das Urteil des BVerfG zum Luftsicherheitsgesetz 2006 (Menschenleben dürfen nicht aufgerechnet werden).",
+        explanationZH:
+          "【正解依据与文本锚点】\n北威州哲学会考最高阶终审辨析（AFB III: Ethisches Urteil）：\n1. 密尔的功利主义视角（Teleologie / Konsequentialismus）：\n   - 核心裁决：若自动驾驶撞击是不可避免的物理事实，算法必须优先撞击人数少的目标，以最大化保全生命净总量。‘5条命大于1条命’是冷静理性的必然算术；\n   - 致命软肋：将无辜第三者剥夺为‘救人工具’，践踏了宪法正义（德国联邦宪法法院在 2006 年《航空安全法》判决中明确裁定：哪怕飞机被恐怖分子劫持飞向万人体育场，政府也绝无权击落客机杀死乘客，因为生命尊严绝对禁止数量相抵计算）；\n2. 康德的义务论视角（Deontologie / Kategorischer Imperativ）：\n   - 核心裁决：‘人类自为目的公式’（Menschheits-Zweck-Formel）——人永远是目的，绝不能被当作实现群体福祉的手段。主动打方向盘碾死路边守法的单个行人来拯救违规穿越马路的群体，是犯下了谋杀的绝对恶行；\n   - 现实局限：在工程与代码的紧急避险中，若完全不做任何转向干预，将导致更多无辜生命涂炭，陷入残酷的道德原教旨停摆；\n3. 高分综合评判（Synthese & Urteil）：\n   当代德国联邦交通部出台的《自动驾驶伦理准则》（Ethik-Kommission für automatisiertes Fahren）采取了折中路径：在尊严原则绝对保障的前提下（禁止按年龄、性别、种族、身体机能区别对待生命），在纯粹的物理损害限度内允许做整体伤害最小化的应急控制。\n\n【干扰项逐项诊断】\n• 选项 B 诊断（低级滑稽反智）：荒谬虚构哲学家反对现代交通；\n• 选项 C 诊断（虚无主义逃避）：伦理算法正是当代科技伦理学与立法机关争议的最核心战场。\n\n【时代思潮与哲学脉络】\n从理论走向宪政实践：康德与密尔的争论不仅是书本哲学，更是当今欧盟与德国起草高科技法案、生命伦理学与医疗资源分配的实际司法基石。",
+        klausurSatzDE:
+          "Im Diskurs moderner Algorithmenethik markieren Mill und Kant zwei antagonistische, gleichwohl komplementäre Paradigmen: Während Mills Utilitarismus die pragmatische Schadensminimierung anleitet, zieht Kants deontologische Menschenwürdeformel eine unüberwindbare Grenze gegen die quantitative Aufrechnung von Menschenleben, sodass eine tragfähige Angewandte Ethik eine deontologische Grundrechtsgrenze mit utilitaristischer Optimierung synthetisieren muss.",
+        klausurSatzZH:
+          "在现代算法伦理的商谈场域中，密尔与康德构成了两座对立却互补的灯塔范式：密尔的功利主义为整体伤害最小化提供了务实的计算指引，而康德义务论的尊严自为目的公式则铸就了一条绝不容逾越的防线，严厉阻绝将生命置于冷血算术天平上称重；因而，成熟的应用伦理学唯有将义务论的基本权利红线与功利主义的福祉优化予以辩证综合。",
+        ehzKeyPointsDE: [
+          "Strukturierter Vergleich von Teleologie (Mill) und Deontologie (Kant) an einem modernen Dilemma.",
+          "Reflexion auf die Unantastbarkeit der Menschenwürde (Art. 1 GG / Verbot der Aufrechnung von Leben).",
+        ],
+        ehzKeyPointsZH: [
+          "采分点 1 (Theorienvergleich 4P)：精准对比目的论（后果算盘）与义务论（责任律令）在自动驾驶两难中的冲突机理。",
+          "采分点 2 (Verfassungsbezug & Urteil 4P)：高水准联动德国基本法第一条尊严条款与 2006 航空安全法判例，给出兼具学理与宪政深度的终审裁决。",
+        ],
+      },
+    ],
+  },
 ];
+
 
 

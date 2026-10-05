@@ -966,4 +966,7 @@ tags: [EF, Meta]
 | promissory note | 期票/法律借据 | Englisch | The promissory note symbolizes the binding constitutional debt America owes to all citizens. |
 | de jure vs de facto | 形式法定与现实实质 | Englisch | De jure equality under statute law does not guarantee de facto socio-economic justice. |
 | rhetorical crescendo | 修辞层层递进高潮 | Englisch | The rhetorical crescendo of repetitive anaphors elevates emotional momentum to a fever pitch. |
+| qualitativer Hedonismus | 质性快乐主义 | Philosophie | Der qualitative Hedonismus gewichtet geistig-sittliche Freuden höher als rein körperliche Triebe. |
+| kompetente Richter | 胜任的裁判官 | Philosophie | Kompetente Richter sind erfahrene Urteiler, die über den Vorrang geistiger Freuden empirisch entscheiden. |
+| Teleologie | 目的论/后果伦理学 | Philosophie | Die Teleologie beurteilt den moralischen Wert einer Handlung ausschließlich an deren Folgen. |
 

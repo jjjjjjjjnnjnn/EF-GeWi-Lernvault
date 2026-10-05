@@ -387,6 +387,13 @@ function renderEmbeddedTool(toolName: string, lang: Lang, fach: string, thema?: 
         </div>
       );
     }
+    if (t === "mill" || t === "utilitarismus" || t === "hedonismus" || (f.includes("philo") && (thema?.toLowerCase().includes("mill") || (thema?.toLowerCase().includes("utilitarismus") && !t.includes("waage"))))) {
+      return (
+        <div className="my-3 p-3.5 border border-[var(--line)] bg-[var(--surface)] rounded-[var(--radius)]">
+          <GeWiReadingLab lang={lang} defaultExcerptId="mill-utilitarismus" filterFach="Philosophie" compact={true} />
+        </div>
+      );
+    }
     if (t === "kant" || t === "kategorisch" || (f.includes("philo") && (thema?.toLowerCase().includes("kant") || thema?.toLowerCase().includes("pflicht") || thema?.toLowerCase().includes("imperativ")))) {
       return (
         <div className="my-3 p-3.5 border border-[var(--line)] bg-[var(--surface)] rounded-[var(--radius)]">
@@ -397,7 +404,8 @@ function renderEmbeddedTool(toolName: string, lang: Lang, fach: string, thema?: 
     if (f.includes("philo") && (t === "gewi-reading" || t === "reader" || t === "text" || t === "text-analyse")) {
       let philoExcerpt = "kant-kategorisch";
       const th = (thema || "").toLowerCase();
-      if (th.includes("hobbes") || th.includes("leviathan") || th.includes("naturzustand") || th.includes("vertrag")) philoExcerpt = "hobbes-leviathan";
+      if (th.includes("mill") || th.includes("utilitarismus") || th.includes("hedonismus") || th.includes("bentham")) philoExcerpt = "mill-utilitarismus";
+      else if (th.includes("hobbes") || th.includes("leviathan") || th.includes("naturzustand") || th.includes("vertrag")) philoExcerpt = "hobbes-leviathan";
       else if (th.includes("arendt") || th.includes("totalit") || th.includes("pluralit")) philoExcerpt = "arendt-totalitarismus";
       else if (th.includes("kant") || th.includes("pflicht") || th.includes("imperativ")) philoExcerpt = "kant-kategorisch";
 

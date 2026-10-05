@@ -385,8 +385,17 @@ describe("Pädagogische Komponenten (Pedagogy UI Library)", () => {
       expect(screen.getAllByText(/promissory note/).length).toBeGreaterThan(0);
       expect(screen.getByText(/金融商业扩展隐喻的功能与机制/)).toBeInTheDocument();
     });
+
+    it("laedt John Stuart Mill Utilitarismus und prueft qualitatives Glueck", () => {
+      render(<GeWiReadingLab lang="zh" defaultExcerptId="mill-utilitarismus" filterFach="Philosophie" />);
+      expect(screen.getAllByText(/John Stuart Mill/).length).toBeGreaterThan(0);
+      expect(screen.getAllByText(/Prinzip des größten Glücks/).length).toBeGreaterThan(0);
+      expect(screen.getAllByText(/unzufriedener Sokrates/).length).toBeGreaterThan(0);
+      expect(screen.getByText(/功利原理与四大核心要素/)).toBeInTheDocument();
+    });
   });
 });
+
 
 
 
