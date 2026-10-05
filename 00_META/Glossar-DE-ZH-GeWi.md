@@ -972,4 +972,7 @@ tags: [EF, Meta]
 | telescreen | 双向监控电幕 | Englisch | The telescreen is a totalitarian apparatus eliminating private sanctuary through continuous surveillance. |
 | doublethink | 双重思想 | Englisch | Doublethink describes the mental capacity to hold two contradictory beliefs simultaneously and accept both. |
 | commodification of personality | 人格商品化 | Englisch | The commodification of personality forces the worker to package charm and dignity as a marketable good. |
+| Verdinglichung | 物化与工具化 | Philosophie | Die Verdinglichung bezeichnet die Verwandlung zwischenmenschlicher Beziehungen in bloße Waren- und Dingverhältnisse. |
+| Prekarisierung | 底层贫困化与就业脆弱化 | SoWi | Die Prekarisierung des Arbeitsmarkts entzieht Beschäftigten existenzsichernde und planbare Lebensgrundlagen. |
+| Menschheitszweckformel | 人类目的公式 | Philosophie | Kants Menschheitszweckformel gebietet, die Menschheit stets zugleich als Zweck, niemals bloß als Mittel zu gebrauchen. |
 

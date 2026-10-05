@@ -78,6 +78,7 @@
 
 ### Philosophie
 - Gerechtigkeit & Wirtschaftsethik — [Gerechtigkeit-Wirtschaftsethik-Vernetzung](../07_Philosophie/Gerechtigkeit-Wirtschaftsethik-Vernetzung.md)（Rawls差异原则/无知之幕/SoWi不平等再分配跨学科）
+- Entfremdung, Kapitalismus & Ungleichheit — [Entfremdung-Kapital-Ungleichheit-Vernetzung](../07_Philosophie/Texte-Analyse/Entfremdung-Kapital-Ungleichheit-Vernetzung.md)（卡夫卡变形记/马克思异化四维/康德目的公式/社科基尼系数与贫困化/米勒推销员人格商品化全景沙盘）
 - Menschenbild — [Menschenbild-Ueberblick](../07_Philosophie/Texte-Analyse/Menschenbild-Ueberblick.md)
 - Ethik: Utilitarismus vs Kant — [Utilitarismus-vs-Kant](../07_Philosophie/Texte-Analyse/Utilitarismus-vs-Kant.md)
 - Philosophische Fragen stellen (Plickat) — [Philosophische-Fragen-Typen](../07_Philosophie/Texte-Analyse/Philosophische-Fragen-Typen.md)（5 Fragetypen/Operatoren-Mapping）
@@ -268,6 +269,7 @@
 - [2026-09-28-golden-archetypes-production-consolidation](Journal/2026-09-28-golden-archetypes-production-consolidation.md) — **五大黄金交互原型提炼、精简与全量转产上线**：剔除低质冗余原型+精炼G1~G5五大黄金范式（8大生产级组件）+生产Reise全自动路由+DesignLab双轨上线+三道门禁全绿
 - [2026-09-28-scholarly-atelier-color-and-layout-redesign](Journal/2026-09-28-scholarly-atelier-color-and-layout-redesign.md) — **学术工坊美学：去 AI 化与全套调色板及布局重构**：剔除深黑发光赛博朋克与霓虹色块+确立毫米方格图纸与墨水/纸张基底+八大生产交互组件与展厅全面脱敏（tsc/vault-check/npm run build全绿）
 - [2026-09-28-vorlesungs-buehne-und-60fps-physics](Journal/2026-09-28-vorlesungs-buehne-und-60fps-physics.md) — **互动微课剧场与60FPS微观物理重构**：哈伯法独立Canvas物理循环根治4FPS跳帧+纯代码驱动免录制微课引擎上线+首门经济学标杆微课《证券存托与订单簿》落地（全绿）
+- [2026-10-05-cross-subject-vernetzung-sandkasten](Journal/2026-10-05-cross-subject-vernetzung-sandkasten.md) — **方向二：跨学科联动树形图与核心考点全景沙盘**：异化劳动/马克思/康德目的公式/社科基尼系数与贫困化/米勒推销员全景沙盘研制+CrossDisciplinarySandbox+Lernbaum一键穿梭透镜集成（60套件419测试全绿+门禁PASS）
 - 约定：文件名 `YYYY-MM-DD-<thema>.md`，头部frontmatter（`fach`可空，`tags: [EF, Meta]`）。
 
 
