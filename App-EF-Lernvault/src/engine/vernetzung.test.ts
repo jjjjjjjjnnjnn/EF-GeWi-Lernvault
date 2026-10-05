@@ -1,6 +1,8 @@
 import { describe, it, expect } from "vitest";
 import {
   findVernetzungBridge,
+  findVernetzungBridgesForNode,
+  getAllVernetzungsClusters,
   formatBridgeForPrompt,
   estimateBridgeTokens,
   VERNETZUNG_BRIDGES,
@@ -46,6 +48,23 @@ describe("vernetzung engine (0ms cross-subject topological bridging)", () => {
     expect(bridge?.dimension).toBe("argumentation_rhetoric");
   });
 
+  it("detects alienation, labor and capitalism bridges across Deutsch, Philo, SoWi, and Englisch", () => {
+    const bridge1 = findVernetzungBridge("Wie spiegelt Gregors Verwandlung bei Kafka die Marxsche Entfremdung wider?", "Deutsch");
+    expect(bridge1).not.toBeNull();
+    expect(bridge1?.targetSubject).toBe("Philosophie");
+    expect(bridge1?.dimension).toBe("alienation_labor_capital");
+
+    const bridge2 = findVernetzungBridge("劳动力市场贫困化 Prekarisierung 与基尼系数如何反映人的异化？", "Philosophie");
+    expect(bridge2).not.toBeNull();
+    expect(bridge2?.targetSubject).toBe("SoWi");
+    expect(bridge2?.dimension).toBe("alienation_labor_capital");
+
+    const bridge3 = findVernetzungBridge("Wie hängt Willy Lomans Scheitern im Death of a Salesman mit Kafkas Entfremdung zusammen?", "Deutsch");
+    expect(bridge3).not.toBeNull();
+    expect(bridge3?.targetSubject).toBe("Englisch");
+    expect(bridge3?.dimension).toBe("alienation_labor_capital");
+  });
+
   it("returns null for unrelated conversational queries", () => {
     expect(findVernetzungBridge("Hallo, wer bist du?")).toBeNull();
     expect(findVernetzungBridge("Wie spät ist es jetzt?")).toBeNull();
@@ -61,6 +80,28 @@ describe("vernetzung engine (0ms cross-subject topological bridging)", () => {
       expect(promptText).toContain(bridge.targetSubject);
       expect(promptText).toContain(bridge.anchorFormulaOrSentenceDE);
     }
+  });
+
+  it("finds multiple cross-subject bridges for a specific topic or tree node", () => {
+    const bridges = findVernetzungBridgesForNode("Deutsch", "Kafka Verwandlung");
+    expect(bridges.length).toBeGreaterThanOrEqual(1);
+    expect(bridges.some((b) => b.targetSubject === "Philosophie")).toBe(true);
+    expect(bridges.some((b) => b.targetSubject === "Englisch")).toBe(true);
+
+    const sowiBridges = findVernetzungBridgesForNode("SoWi", "Soziale Ungleichheit");
+    expect(sowiBridges.length).toBeGreaterThanOrEqual(1);
+    expect(sowiBridges.some((b) => b.targetSubject === "Philosophie")).toBe(true);
+  });
+
+  it("exports valid cross-disciplinary clusters for sand table visualization", () => {
+    const clusters = getAllVernetzungsClusters();
+    expect(clusters.length).toBe(4);
+    const alienation = clusters.find((c) => c.dimension === "alienation_labor_capital");
+    expect(alienation).toBeDefined();
+    expect(alienation?.nodes.length).toBe(4);
+    expect(alienation?.nodes.map((n) => n.fach)).toEqual(
+      expect.arrayContaining(["Deutsch", "Philosophie", "SoWi", "Englisch"])
+    );
   });
 
   it("executes ultra-fast (< 5ms for 100 queries)", () => {

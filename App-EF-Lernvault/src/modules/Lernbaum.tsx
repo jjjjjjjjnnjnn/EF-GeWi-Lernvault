@@ -26,6 +26,8 @@ import {
   type CurriculumNode,
   type CurriculumUnit,
 } from "../engine/curriculumBridge";
+import { CrossDisciplinarySandbox } from "../components/pedagogy/CrossDisciplinarySandbox";
+import { findVernetzungBridgesForNode } from "../engine/vernetzung";
 
 interface VaultNotizEingabe {
   id: string;
@@ -43,7 +45,7 @@ interface LernbaumProps {
   vaultNotes?: VaultNotizEingabe[] | null;
   vaultReisen?: Reise[] | null;
   selectedFach?: string;
-  initialAnsicht?: "pfad" | "karte" | "liste";
+  initialAnsicht?: "pfad" | "karte" | "liste" | "vernetzung";
   onSubjectChange?: (fach: string) => void;
   onJumpToLibrary?: (query: string, fach?: string, noteId?: string) => void;
   onStartCourse?: (courseId: string) => void;
@@ -338,7 +340,9 @@ export default function Lernbaum({
   const [internesFach, setInternesFach] = useState("alle");
   const [reduziert, setReduziert] = useState(false);
   const [ziehen, setZiehen] = useState(false);
-  const [ansicht, setAnsicht] = useState<"pfad" | "karte" | "liste">(initialAnsicht ?? "karte");
+  const [ansicht, setAnsicht] = useState<"pfad" | "karte" | "liste" | "vernetzung">(
+    initialAnsicht ?? "karte"
+  );
   const sucheRef = useRef<HTMLInputElement>(null);
   const flaecheRef = useRef<HTMLDivElement>(null);
   const zugRef = useRef({ aktiv: false, startX: 0, startY: 0, basisX: 0, basisY: 0 });
@@ -665,6 +669,16 @@ export default function Lernbaum({
     );
   }, [auswahl, vaultReisen]);
 
+  const vernetzungsBridges = useMemo(() => {
+    if (!auswahl) return [];
+    const text = [
+      auswahl.knoten.titleDE,
+      auswahl.knoten.titleZH,
+      ...auswahl.knoten.noteKeywords,
+    ].join(" ");
+    return findVernetzungBridgesForNode(auswahl.fach, text);
+  }, [auswahl]);
+
   function renderGliederungsKnoten(node: BaumNode, fach: string, tiefe: number): ReactNode {
     const istEingeklappt = eingeklappt.has(node.id);
     const istSelektiert = auswahlId === node.id;
@@ -966,6 +980,19 @@ export default function Lernbaum({
             }`}
           >
             {lang === "de" ? "Gliederung" : "大纲"}
+          </button>
+          <button
+            type="button"
+            onClick={() => setAnsicht("vernetzung")}
+            aria-label={lang === "de" ? "Vernetzungs-Radar" : "跨学科沙盘"}
+            aria-pressed={ansicht === "vernetzung"}
+            className={`rounded-[var(--radius)] px-2 py-0.5 font-sans text-xs transition-colors cursor-pointer ${
+              ansicht === "vernetzung"
+                ? "bg-[var(--ink)] text-[var(--paper)] font-medium"
+                : "text-[var(--gray)] hover:text-[var(--ink)]"
+            }`}
+          >
+            {lang === "de" ? "Vernetzung" : "跨学科沙盘"}
           </button>
         </div>
       </div>
@@ -1361,6 +1388,20 @@ export default function Lernbaum({
               </div>
             </div>
           )}
+
+          {ansicht === "vernetzung" && (
+            <CrossDisciplinarySandbox
+              lang={lang}
+              onJumpToSubject={(fach, nodeId) => {
+                waehleFach(fach);
+                if (nodeId) {
+                  setAuswahlId(nodeId);
+                  setAnsicht("pfad");
+                }
+              }}
+              onJumpToLibrary={onJumpToLibrary}
+            />
+          )}
         </div>
 
         {(auswahl !== null || selectedCurriculumNode !== null) && (
@@ -1475,6 +1516,50 @@ export default function Lernbaum({
                     </div>
                   )}
                 </div>
+
+                {vernetzungsBridges.length > 0 && (
+                  <div className="mt-3 border-t border-[var(--line)] pt-2">
+                    <p className="font-sans text-xs text-[var(--gray)]">
+                      {lang === "de"
+                        ? "Topologische Vernetzung (AFB III)"
+                        : "跨学科考点穿梭 (AFB III)"}
+                    </p>
+                    <div className="mt-1 flex flex-col gap-1.5">
+                      {vernetzungsBridges.map((b) => (
+                        <div
+                          key={b.id}
+                          className="rounded-[var(--radius)] border border-[var(--line)] bg-[var(--paper)] p-2 text-xs"
+                        >
+                          <div className="flex items-center justify-between gap-1 font-mono text-xs">
+                            <span className="font-medium text-[var(--ink)]">
+                              {b.badgeLabel}
+                            </span>
+                            <button
+                              type="button"
+                              onClick={() => {
+                                waehleFach(b.targetSubject);
+                                onJumpToLibrary?.(
+                                  b.targetThema,
+                                  b.targetSubject,
+                                  b.targetNotePath
+                                );
+                              }}
+                              className="rounded border border-[var(--line)] px-1.5 py-0.5 hover:border-[var(--accent)] hover:bg-[var(--paper-subtle)] cursor-pointer"
+                            >
+                              {lang === "de" ? "Transit →" : "穿梭 →"}
+                            </button>
+                          </div>
+                          <p className="mt-1 font-serif text-xs text-[var(--ink)]">
+                            {b.anchorFormulaOrSentenceDE}
+                          </p>
+                          <p className="mt-0.5 font-sans text-xs text-[var(--gray)]">
+                            {b.anchorSentenceZH}
+                          </p>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                )}
 
                 <div className="mt-4 flex flex-col gap-2 border-t border-[var(--line)] pt-3">
                   {matchedReise && onStartCourse && (

@@ -465,5 +465,24 @@ describe("Lernpfad Stufen und Aktionen", () => {
     await user.click(klausurBtns[0]);
     expect(onJumpToKlausur).toHaveBeenCalledWith("SoWi");
   });
+
+  it("schaltet auf die Vernetzungs-Radar-Ansicht und rendert den CrossDisciplinarySandbox", async () => {
+    const user = userEvent.setup();
+    render(
+      <Lernbaum
+        lang="zh"
+        baeume={baeume}
+        vaultNotes={vaultNotes}
+        vaultReisen={mockReisen}
+        initialAnsicht="karte"
+      />
+    );
+
+    const vernetzungBtn = screen.getByRole("button", { name: "跨学科沙盘" });
+    await user.click(vernetzungBtn);
+
+    expect(screen.getByTestId("cross-disciplinary-sandbox")).toBeInTheDocument();
+  });
 });
+
 
