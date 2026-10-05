@@ -963,3 +963,7 @@ tags: [EF, Meta]
 | Personale Erzählsituation | 限制性人物叙事视角 | Deutsch | Die personale Erzählsituation schildert das Romangeschehen unkommentiert aus der Innensicht der Figur. |
 | Entfremdung der Arbeit | 劳工异化 | Deutsch | Die Entfremdung der Arbeit degradiert das schöpferische Individuum zum ersetzbaren Rädchen im Getriebe. |
 | realisierte Metapher | 实体化隐喻 | Deutsch | Die realisierte Metapher verwandelt eine bildhafte Redewendung in eine physisch erfahrbare Romantatsache. |
+| promissory note | 期票/法律借据 | Englisch | The promissory note symbolizes the binding constitutional debt America owes to all citizens. |
+| de jure vs de facto | 形式法定与现实实质 | Englisch | De jure equality under statute law does not guarantee de facto socio-economic justice. |
+| rhetorical crescendo | 修辞层层递进高潮 | Englisch | The rhetorical crescendo of repetitive anaphors elevates emotional momentum to a fever pitch. |
+

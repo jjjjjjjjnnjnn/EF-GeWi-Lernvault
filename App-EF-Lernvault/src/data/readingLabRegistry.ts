@@ -4039,5 +4039,409 @@ export const GEWI_TEXT_REGISTRY: GeWiTextExcerpt[] = [
       },
     ],
   },
+
+  // =========================================================================
+  // 15. ENGLISCH: Martin Luther King Jr. — I Have a Dream (政治演说与修辞巅峰)
+  // =========================================================================
+  {
+    id: "mlk-dream",
+    fach: "Englisch",
+    genre: "Sachtext",
+    author: "Martin Luther King Jr.",
+    workTitleDE: "I Have a Dream (Address at March on Washington)",
+    workTitleZH: "《我有一个梦想》（华盛顿大游行历史性演说）",
+    sceneTitleDE: "Speech Analysis // The Promissory Note & The Bank of Justice",
+    sceneTitleZH: "演说修辞解剖：自由的期票与正义银行 (商业金融隐喻与四重首语排比)",
+    versesRange: "Lincoln Memorial Speech (Paragraphs 1–5)",
+    epochDE: "Civil Rights Movement / 1960s American Oratory",
+    epochZH: "非裔美国人民权运动 / 20世纪经典政论演说修辞 (1963)",
+    contextDE:
+      "On August 28, 1963, Martin Luther King Jr. delivered his historic speech before 250,000 demonstrators at the Lincoln Memorial. Employing masterclass rhetorical devices—extended financial metaphors, anaphoras, and biblical imagery—he transformed civil rights into a sacred constitutional promise.",
+    contextZH:
+      "1963年8月28日，马丁·路德·金在林肯纪念堂前向超过25万名抗议群众发表了这篇震撼世界的演讲。他将美国建国先父的宪政承诺比作一张写给所有公民的‘期票’（promissory note），运用金融商业隐喻、磅礴的首语从复与圣经光影意象，将民权斗争升华为不可违逆的立国道德契约。",
+    verses: [
+      {
+        lineNum: 1,
+        textDE: "Five score years ago, a great American, in whose symbolic shadow we stand today, signed the Emancipation Proclamation.",
+        translationZH: "一百年前（五打岁月前），一位伟大的美国人，今天我们就站在他象征性的伟岸阴影下，签署了《解放黑奴宣言》。",
+        toneCategory: "autoritaet",
+        stilmittel: {
+          type: "Archaismus & Allusion",
+          descDE: "Archaic phrasing ('Five score years ago') echoing Lincoln's Gettysburg Address ('Four score and seven years ago').",
+          descZH: "拟古措辞与历史用典：'Five score years ago'（五打岁月前）精准呼应林肯葛底斯堡演说的庄严开场，奠定崇高的历史与宪法权威（Ethos）。",
+        },
+      },
+      {
+        lineNum: 2,
+        textDE: "This momentous decree came as a great beacon light of hope to millions of Negro slaves...",
+        translationZH: "这一具有划时代意义的法令，犹如一道巨大的希望灯塔之光，普照着千百万黑奴……",
+        toneCategory: "streben",
+        stilmittel: {
+          type: "Metapher des Lichts",
+          descDE: "'Beacon light of hope' establishes the archetype of light versus dark.",
+          descZH: "光明隐喻：'希望的灯塔之光'构筑了启蒙、救赎与引导的原型意象。",
+        },
+      },
+      {
+        lineNum: 3,
+        textDE: "...who had been seared in the flames of withering injustice.",
+        translationZH: "……他们在摧残毁灭性的不公烈焰中备受残酷煎熬。",
+        toneCategory: "krise",
+        stilmittel: {
+          type: "Metapher der Zerstörung",
+          descDE: "'Flames of withering injustice' illustrates unbearable suffering.",
+          descZH: "毁灭烈焰隐喻：将制度性的奴役压迫具象化为灼烧皮肉的恶火，极具感官冲击力（Pathos）。",
+        },
+      },
+      {
+        lineNum: 4,
+        textDE: "It came as a joyous daybreak to end the long night of their captivity.",
+        translationZH: "它的到来如同欢欣的破晓黎明，终结了羁绊奴役他们的漫漫长夜。",
+        toneCategory: "streben",
+        stilmittel: {
+          type: "Antithese (Licht vs. Dunkelheit)",
+          descDE: "Contrast of 'joyous daybreak' and 'long night of captivity'.",
+          descZH: "光影对照：'欢欣破晓'与'漫漫囚禁长夜'形成鲜明对立，唤起出埃及记式的宗教神圣解脱感。",
+        },
+      },
+      {
+        lineNum: 5,
+        textDE: "But 100 years later, the Negro still is not free.",
+        translationZH: "然而一百年后的今天，黑人依然没有获得真正的自由。",
+        toneCategory: "krise",
+        stilmittel: {
+          type: "Klimax & Thesenauftakt",
+          descDE: "The blunt, sobering reality disrupts the preceding historical celebration.",
+          descZH: "现实断裂突转：冷峻利落的短句粉碎了前文对历史法令的欢庆，点出百年未解的核心社会矛盾。",
+        },
+      },
+      {
+        lineNum: 6,
+        textDE: "One hundred years later, the life of the Negro is still sadly crippled by the manacles of segregation...",
+        translationZH: "一百年后的今天，黑人的生活依然悲惨地被种族隔离的镣铐所残害……",
+        toneCategory: "krise",
+        stilmittel: {
+          type: "Anapher (1) & Physische Metapher",
+          descDE: "First anaphora 'One hundred years later'; 'manacles of segregation' evokes physical slavery.",
+          descZH: "四重首语从复（第1次）与肉体束缚隐喻：'种族隔离的镣铐'将吉姆·克劳法案的法律压迫具象化为肉体上的铁拷镣铐。",
+        },
+      },
+      {
+        lineNum: 7,
+        textDE: "...and the chains of discrimination.",
+        translationZH: "……以及被种族歧视的沉重锁链所死死束缚。",
+        toneCategory: "krise",
+      },
+      {
+        lineNum: 8,
+        textDE: "One hundred years later, the Negro lives on a lonely island of poverty...",
+        translationZH: "一百年后的今天，黑人依然孤零零地生活在贫困的凄凉孤岛之上……",
+        toneCategory: "krise",
+        stilmittel: {
+          type: "Anapher (2) & Raum-Metapher",
+          descDE: "Second anaphora; 'lonely island of poverty' highlights geographical and social segregation.",
+          descZH: "首语从复（第2次）与空间地理隐喻：'贫困孤岛'揭示了黑人社区在经济结构上的残酷边缘化与空间隔离。",
+        },
+      },
+      {
+        lineNum: 9,
+        textDE: "...in the midst of a vast ocean of material prosperity.",
+        translationZH: "……尽管其四周环绕着整个美国物质繁华的汪洋大海。",
+        toneCategory: "spott",
+        stilmittel: {
+          type: "Antithese (Insel vs. Ozean)",
+          descDE: "Sharp contrast between extreme minority deprivation and majority affluence.",
+          descZH: "尖锐对照：将少数族裔的赤贫孤岛与全美白人主流社会的富裕汪洋对立，揭示资本繁荣背后的制度性掠夺。",
+        },
+      },
+      {
+        lineNum: 10,
+        textDE: "One hundred years later, the Negro is still languished in the corners of American society...",
+        translationZH: "一百年后的今天，黑人依然在受难萎缩于美国社会的阴暗角落……",
+        toneCategory: "krise",
+        stilmittel: {
+          type: "Anapher (3)",
+          descDE: "Third repetition emphasizing temporal persistence of systemic injustice.",
+          descZH: "首语从复（第3次）：强化百年来美国制度性不公在时间维度上的顽固停滞。",
+        },
+      },
+      {
+        lineNum: 11,
+        textDE: "...and finds himself an exile in his own land. And so we've come here today to dramatize a shameful condition.",
+        translationZH: "……发现自己竟然在自己的故土上沦为流亡异客。因此我们今天齐聚于此，就是要将这一可耻的现实处境戏剧化地公之于众。",
+        toneCategory: "streben",
+        vocab: {
+          word: "exile in his own land",
+          meaningDE: "Paradoxon der Entwurzelung im eigenen Heimatstaat.",
+          meaningZH: "故土异客悖论：本国公民却被剥夺宪政权利，陷入双重心理放逐与异化。",
+        },
+      },
+      {
+        lineNum: 12,
+        textDE: "In a sense we've come to our nation's capital to cash a check.",
+        translationZH: "在某种意义上说，我们来到国家的首都，是为了兑现一张支票。",
+        toneCategory: "streben",
+        stilmittel: {
+          type: "Erweiterte Metapher (Finanzanalogie)",
+          descDE: "Introduction of the master metaphor: Translating human rights into enforceable fiscal debt.",
+          descZH: "主导商业隐喻引入：将抽象的人权与宪法价值具象化为具有不可撤销法定清偿力的金融支票。",
+        },
+      },
+      {
+        lineNum: 13,
+        textDE: "When the architects of our republic wrote the magnificent words of the Constitution...",
+        translationZH: "当我们共和国的建筑师们写下宪法与《独立宣言》的宏伟华章时……",
+        toneCategory: "autoritaet",
+      },
+      {
+        lineNum: 14,
+        textDE: "...they were signing a promissory note to which every American was to fall heir.",
+        translationZH: "……他们实际上是在签署一张所有美国人都有权作为法定继承人兑现的‘期票’（借据）。",
+        toneCategory: "moral",
+        vocab: {
+          word: "promissory note",
+          meaningDE: "Juridisch bindendes Schuldversprechen der Gründerväter.",
+          meaningZH: "期票/具有法律效力的无条件付款承诺书：建国先父签署的不可抵赖的制度性欠条。",
+        },
+      },
+      {
+        lineNum: 15,
+        textDE: "It is obvious today that America has defaulted on this promissory note... America has given the Negro people a bad check...",
+        translationZH: "显而易见，美国今天在这张期票上违约跳票了……美国给了黑人一张退票的空头支票……",
+        toneCategory: "krise",
+        stilmittel: {
+          type: "Metapher des 'Bad Check'",
+          descDE: "'A check marked insufficient funds' indicts state hypocrisy.",
+          descZH: "'资金不足的空头支票'隐喻：用极其辛辣通俗的商业欺诈常识，控诉联邦政府对少数族裔公民权利的长期虚伪毁约。",
+        },
+      },
+      {
+        lineNum: 16,
+        textDE: "But we refuse to believe that the bank of justice is bankrupt! We refuse to believe that there are insufficient funds in the great vaults of opportunity!",
+        translationZH: "但我们拒绝相信正义的银行已经破产！我们拒绝相信在这个国家的宏大机遇宝库中会资金不足！",
+        toneCategory: "streben",
+        stilmittel: {
+          type: "Parallelismus & Emphatische Negation",
+          descDE: "'We refuse to believe...' rejects despair and reclaims the democratic promise.",
+          descZH: "平行句式与坚定重申：'我们拒绝相信……'两次重击，以不容置疑的正义信念彻底扭转悲情，激发排山倒海的斗争意志。",
+        },
+      },
+    ],
+    questions: [
+      {
+        id: "q-mlk-1",
+        dimension: "wortschatz",
+        afb: "AFB I",
+        titleDE: "Extended Financial Metaphor (Promissory Note & Bad Check)",
+        titleZH: "金融商业扩展隐喻的功能与机制 (AFB I: Outline & Identify)",
+        questionDE:
+          "Which rhetorical mechanism underlies King's use of the extended financial metaphor ('promissory note', 'cash a check', 'bad check', 'bank of justice') in paragraphs 4–5?",
+        questionZH:
+          "金博士在第4–5段中所展开的‘金融商业扩展隐喻’（期票、兑现支票、空头支票、正义银行）构成了何种独特的修辞机制与说服功能？",
+        options: [
+          {
+            id: "a",
+            textDE:
+              "King translates abstract philosophical and constitutional concepts (inalienable human rights, equality) into a concrete, pragmatic contractual debt of everyday commercial life that every ordinary American citizen intuitively understands, thereby framing racial equality not as a benevolent charitable gift, but as an overdue legal obligation that the federal government must settle.",
+            textZH:
+              "金博士将抽象高深的宪政哲学概念（不可剥夺的人权、平等人人）具象化为美国日常商业文明中最熟悉的‘契约清偿债务’。这使所有普通听众都能瞬间直观理解：民权绝非统治阶级高高在上的施舍与慈善恩赐，而是联邦政府早已签字画押、如今严重逾期违约必须立即无条件兑付的法律金钱契约！",
+            isCorrect: true,
+          },
+          {
+            id: "b",
+            textDE:
+              "King was a professional stockbroker on Wall Street and wanted to convince the protesters to open new savings accounts at the Federal Reserve Bank.",
+            textZH:
+              "金博士在华尔街兼职股票经纪人，他发表这番演讲是为了推销新型理财产品，号召游行民众赶紧去美联储开设活期储蓄账户。",
+            isCorrect: false,
+          },
+          {
+            id: "c",
+            textDE:
+              "King claimed that the US dollar should be abolished immediately and replaced by British gold pounds from the 17th century.",
+            textZH:
+              "金博士要求立即废除美钞流通，主张美国全境重新恢复使用17世纪的英国金镑作为唯一法定货币。",
+            isCorrect: false,
+          },
+        ],
+        explanationDE:
+          "Financial metaphor as persuasive bridge: Contract law is holy in American culture. By using 'promissory note' and 'default', King uses America's own capitalist value system against segregationist practices.",
+        explanationZH:
+          "【正解依据与文本锚点】\n演说修辞的高级典范：在美国这个商业立国的契约社会中，‘合同与支票’具有无可撼动的神圣契约效力（Sanctity of Contracts）。金博士极其高明地没有停留于空泛的道德呼吁，而是将美国《独立宣言》和《宪法》直接定义为一张‘promissory note’（本票/借据）。签署人是国父华盛顿与杰斐逊，收款人是所有美国后代。黑人手里的宪法支票被盖上‘insufficient funds’（资金不足退票），这是直接把美国政府推上了道德与商业欺诈的被告席。任何一个自诩讲信用的美国人，都无法反驳‘欠债必须还钱、支票必须兑现’的常识铁律。\n\n【干扰项逐项诊断】\n• 选项 B 诊断（低级庸俗化解读）：把正义的形而上修辞歪曲为金融推销；\n• 选项 C 诊断（无厘头搞笑选项）：与金博士捍卫美国宪法精神的根本立场彻底背道而驰。\n\n【时代思潮与哲学脉络】\n美国公民宗教（Civil Religion）：金博士深谙美国政治修辞传统，他将美国信条（The American Creed）与清教徒约法传统结合，使民权运动获得了宪政正统性与不可动摇的合法性。",
+        klausurSatzDE:
+          "By employing an extended financial conceit of the 'promissory note' and the 'bad check', King masterfully grounds abstract constitutional ideals in the sacrosanct American ethos of contractual obligation, transforming civil rights from an act of philanthropic mercy into a non-negotiable legal debt.",
+        klausurSatzZH:
+          "通过精湛构筑‘期票’与‘空头支票’的扩展金融隐喻，金博士将抽象的宪政理想牢牢锚定在神圣不可侵犯的美国契约伦理之中，将民权平权从统治者的居高施舍彻底重塑为不可延期抵赖的法定债务清偿。",
+        ehzKeyPointsDE: [
+          "Identification of the extended metaphor: Promissory note, default, bad check, bank of justice.",
+          "Analysis of rhetorical effect: Making civil rights understandable via contractual culture; mobilizing ethos and legal legitimacy.",
+        ],
+        ehzKeyPointsZH: [
+          "采分点 1 (Metaphor Identification 4P)：精准识别期票、空头支票、正义银行等系列商业隐喻及其结构延展。",
+          "采分点 2 (Communicative Function 4P)：深刻阐发将‘人权’置换为‘契约债务’在美国商业文化中所激发的无敌说道理据与合法性赋能。",
+        ],
+      },
+      {
+        id: "q-mlk-2",
+        dimension: "stilmittel",
+        afb: "AFB II",
+        titleDE: "Anaphora & Incremental Emotional Crescendo",
+        titleZH: "四重首语从复与层层递进的情感交响 (AFB II: Analyse)",
+        questionDE:
+          "How does the fourfold anaphora 'One hundred years later' (lines 5–11), combined with sensual sensory metaphors, establish rhetorical urgency and emotional resonance (Pathos)?",
+        questionZH:
+          "金博士连续四次使用‘One hundred years later’（一百年后的今天）这一强有力的首语从复（Anaphora），并配合感官肢体隐喻，在听众心目中激起了怎样的修辞紧迫感与情感共振（Pathos）？",
+        options: [
+          {
+            id: "a",
+            textDE:
+              "The rhythmic repetition of 'One hundred years later' creates an incantatory, pulpit-like musical crescendo that hammer-beats the intolerable duration of injustice into the listener's consciousness, while vivid tactile and spatial images ('manacles of segregation', 'chains of discrimination', 'lonely island of poverty') make systemic racism physically painful and viscerally experienced.",
+            textZH:
+              "连续四次‘一百年后的今天’构成如同教堂布道般排山倒海的音乐节律感（Crescendo），像重锤一样将‘不公持续时间之漫长残忍’深深夯入每一位听众的心智；同时，触觉与空间隐喻（‘种族隔离的铁铐’、‘歧视的锁链’、‘繁华汪洋中的贫困孤岛’）将抽象的制度性压迫转化为让人皮开肉绽、感同身受的肉体痛楚，激发出无与伦比的同理共鸣与道德愤怒。",
+            isCorrect: true,
+          },
+          {
+            id: "b",
+            textDE:
+              "The repetition proves that King had forgotten his speech notes and had to stall for time while the sound engineers fixed his microphone.",
+            textZH:
+              "这种重复证明金博士当时把演讲稿忘在后台了，他只是为了拖延时间等待调音师修理坏掉的麦克风而故意不断重复同一句话。",
+            isCorrect: false,
+          },
+          {
+            id: "c",
+            textDE:
+              "King repeated the date because he wanted to prove that the year 1963 has no connection to the American Civil War.",
+            textZH:
+              "金博士重复这句话是为了证明1963年与美国南北战争和林肯解放奴隶没有任何历史因果关联。",
+            isCorrect: false,
+          },
+        ],
+        explanationDE:
+          "Oratory tradition of the Black Church: The repetition builds a dramatic rhythmic momentum that moves the audience from historical nostalgia (Lincoln) to the boiling crisis of the present.",
+        explanationZH:
+          "【正解依据与文本锚点】\n黑人浸信会教堂布道传统的巅峰修辞（African-American Call-and-Response tradition）：\n1. 结构递进（Rhythm & Climax）：从第5句‘the Negro still is not free’破空而出，紧接着以四次‘One hundred years later’发动连续攻势。时间的一再重复，不断逼问现场白人政客与全国听众的良心：一个世纪整整过去了，承诺为何依然落空？\n2. 意象层层加码：\n   - 第1重：肉体禁锢（manacles & chains，触觉痛苦）；\n   - 第2重：阶级贫困（island of poverty in an ocean of prosperity，视觉空间对照）；\n   - 第3重：社会边缘（corners of society，幽闭绝望）；\n   - 第4重：精神放逐（an exile in his own land，政治身份异化）。\n四重排比层层剥茧，形成无法抗拒的情感海啸（Pathos）。\n\n【干扰项逐项诊断】\n• 选项 B 诊断（对修辞大师的荒谬贬损）：首语从复是古典演说自西塞罗以来最高超的修辞武器，绝非忘词拖延；\n• 选项 C 诊断（历史常识错误）：1863年林肯签署《解放黑奴宣言》，1963年整整一百周年，金博士精准利用了这一百年祭的历史时间锚点。\n\n【时代思潮与哲学脉络】\n修辞三要素的完美结合：金博士将理性逻辑（Logos: 宪法债务）、道德威信（Ethos: 牧师与林肯继承人）与强烈共情（Pathos: 肉体枷锁与时代呐喊）熔于一炉，奠定了这篇演说无可复制的文学地位。",
+        klausurSatzDE:
+          "Through the incantatory cadence of the fourfold anaphora 'One hundred years later', King orchestrates an escalating crescendo of moral indignation, converting temporal distance into an acute ethical indictment that renders gradualist political compromise morally indefensible.",
+        klausurSatzZH:
+          "通过四重首语从复‘一百年后的今天’那宛如咒语般的跌宕韵律，金博士谱写了一曲层层递进的道德愤慨交响乐，将历史时间的遥远流逝转化为对当下体制的尖锐伦理控诉，使一切主张拖延妥协的渐进主义政治借口在道德上不攻自破。",
+        ehzKeyPointsDE: [
+          "Detailed functional analysis of anaphora: Cadence, emotional urgency, temporal insistence.",
+          "Examination of imagery: Sensory tactile and spatial metaphors (manacles, chains, island vs. ocean).",
+        ],
+        ehzKeyPointsZH: [
+          "采分点 1 (Rhetorical Cadence 4P)：精准分析首语从复所营造的音律回荡、情感层层蓄势与道德逼问力量。",
+          "采分点 2 (Imagery & Pathos 4P)：细致拆解肉体束缚与贫困孤岛等感官隐喻对受众同理心（Pathos）的强大激发机制。",
+        ],
+      },
+      {
+        id: "q-mlk-3",
+        dimension: "motiv",
+        afb: "AFB II",
+        titleDE: "Archetypal Imagery: Light vs. Darkness & Exodus Allusion",
+        titleZH: "光明与黑暗的原型对照与《出埃及记》圣经用典 (AFB II: Contextualize)",
+        questionDE:
+          "What is the ideological and persuasive purpose of contrasting 'beacon light of hope' / 'joyous daybreak' with 'flames of withering injustice' / 'long night of captivity' in lines 2–4?",
+        questionZH:
+          "在第2–4句中，将‘希望的灯塔之光’、‘欢欣的破晓黎明’与‘毁灭性不公的烈焰’、‘漫漫囚禁长夜’进行剧烈对比，具有何种意识形态与说服意图？",
+        options: [
+          {
+            id: "a",
+            textDE:
+              "King invokes universal religious and mythological archetypes (light as divine truth/deliverance, darkness as sin/oppression) rooted in the biblical narrative of the Exodus, elevating the political fight against segregation to a sacred metaphysical struggle between divine justice and demonic evil, which commands unconditional moral allegiance across religious boundaries.",
+            textZH:
+              "金博士借用了根植于圣经《出埃及记》（Exodus）叙事中的普遍神话与宗教原型（光芒象征神圣真理与摩西出红海的救赎解脱，黑暗烈焰象征罪孽与法老奴役）。这直接将世俗政治层面反对种族隔离的街头抗争，拔高为一场神圣正义对决恶魔不公的形而上道德圣战，从而超越党派与宗派偏见，唤起全体国民无条件的道德忠诚与崇高担当。",
+            isCorrect: true,
+          },
+          {
+            id: "b",
+            textDE:
+              "King was commenting on the electricity shortages in Washington D.C. and advising the city council to install stronger street lamps.",
+            textZH:
+              "金博士是在抱怨华盛顿特区当晚市政供电不足，诚恳建议华盛顿市议会赶紧在林肯纪念堂周围多装几座高功率LED路灯。",
+            isCorrect: false,
+          },
+          {
+            id: "c",
+            textDE:
+              "The metaphors were copied directly from an ancient Egyptian weather manual and had no symbolic meaning whatsoever.",
+            textZH:
+              "这些隐喻是金博士前一天从一本古埃及气象学手册上照抄的降水记录，除了预测降雨外没有任何文学或象征意涵。",
+            isCorrect: false,
+          },
+        ],
+        explanationDE:
+          "Biblical typologies in American rhetoric: King as the modern Moses. The contrast between night/daybreak echoes prophetic scripture (Isaiah, Amos), granting his speech transcendental moral gravity.",
+        explanationZH:
+          "【正解依据与文本锚点】\n原型批评与圣经神学互文（Archetypal Criticism & Biblical Allusion）：\n金博士作为浸信会牧师，深谙旧约先知文学（以赛亚书、阿摩司书）的修辞精髓。在人类潜意识中：\n- 光明（Light / Daybreak）= 生命、自由、上帝的启示与真理；\n- 黑暗与烈焰（Darkness / Flames）= 绝望、沉沦、地狱火刑与无尽苦难。\n通过将《解放黑奴宣言》比作‘joyous daybreak to end the long night’，金博士把黑人的历史苦难直接等同于以色列人在埃及四百年为奴的漫漫长夜。这种神圣叙事使原本可能引发争议的政治权利诉求，升华为任何信奉基督教伦理的美国人都不容置疑的天道正义。\n\n【干扰项逐项诊断】\n• 选项 B 诊断（低级滑稽错误）：把文学光影隐喻降格为市政电费账单；\n• 选项 C 诊断（虚无主义荒谬选项）：完全无视金博士作为神学博士的学术深厚造诣。\n\n【时代思潮与哲学脉络】\n非暴力抵抗与神圣之爱（Agape）：金博士受甘地非暴力与基督教博爱思想启发，始终强调抗争的目的不是报复与消灭白人，而是消灭罪恶的制度，实现黑白兄弟同胞‘光明的和解’。",
+        klausurSatzDE:
+          "By weaving archaic biblical typologies of radiant daybreak and suffocating nocturnal captivity into his oratorical tapestry, King elevates the secular struggle for racial equality into a cosmic, providential drama of divine redemption, thereby endowing the Civil Rights Movement with transcendental spiritual authority.",
+        klausurSatzZH:
+          "通过将破晓曙光与窒息黑夜等源自圣经神学的原型意象编织进演说锦缎之中，金博士将世俗层面的种族平权抗争升华为一幕充满天意救赎色彩的宇宙神圣诗剧，从而赋予了非裔民权运动无可撼动的超验精神权威。",
+        ehzKeyPointsDE: [
+          "Identification of light/dark antithesis and archetype symbolism.",
+          "Explanation of religious subtext: Biblical Exodus typology, prophetic voice, transcendental authority.",
+        ],
+        ehzKeyPointsZH: [
+          "采分点 1 (Antithetical Imagery 4P)：精准指出光明与黑暗的原型对照象征及其审美张力。",
+          "采分点 2 (Theological Dimension 4P)：深刻揭示《出埃及记》神圣救赎母题如何赋予非暴力民权运动超越政见的超验道德正统性。",
+        ],
+      },
+      {
+        id: "q-mlk-4",
+        dimension: "theorie",
+        afb: "AFB III",
+        titleDE: "Contemporary Assessment & The Unfulfilled Dream",
+        titleZH: "当代多元社会终审裁决与未竟之梦 (AFB III: Evaluate & Comment)",
+        questionDE:
+          "To what extent can Martin Luther King Jr.'s 1963 speech be judged as both a triumphant catalyst of civil rights legislation and an unfulfilled ideal in 21st-century multicultural societies?",
+        questionZH:
+          "在21世纪欧美多元文化社会的坐标系下（面对种族财富鸿沟、司法系统性偏见、Black Lives Matter与极右翼民粹抬头），我们应如何辩证高度评判这篇演说的历史胜利与当代未竟挑战？",
+        options: [
+          {
+            id: "a",
+            textDE:
+              "In a dialectical assessment, King's speech stands as a triumphant landmark that successfully mobilized public conscience and precipitated landmark federal legislation (Civil Rights Act 1964, Voting Rights Act 1965); however, his dream remains tragically unfulfilled today, as structural wealth gaps, systemic criminal justice disparities, voter suppression, and cultural polarization prove that de jure legal equality has not yet translated into de facto socio-economic justice.",
+            textZH:
+              "在辩证的现代审视中，金博士的演说是一座无可置疑的胜利丰碑：它成功唤醒了全美公众良知，并直接催生了划时代的联邦平权法案（1964年《民权法案》与1965年《选举权法案》），废除了法律层面的种族隔离；然而，在深层社会现实中，他的梦想仍远未彻底实现：惊人的种族财富鸿沟、刑事司法系统中的不成比例监禁、隐蔽的选民压制以及文化部落主义撕裂铁证表明，法律上的‘程序平等’（de jure）绝未自动转化为现实生活中的‘实质社会经济正义’（de facto）。",
+            isCorrect: true,
+          },
+          {
+            id: "b",
+            textDE:
+              "The speech has lost all relevance because racism was completely erased from the planet Earth on August 29, 1963, and no discrimination has ever occurred anywhere since.",
+            textZH:
+              "这篇演说在今天已毫无现实意义，因为种族主义在演说发表第二天（1963年8月29日）就已经从地球上彻底灭绝，自那以后世界上再也没有发生过任何歧视事件。",
+            isCorrect: false,
+          },
+          {
+            id: "c",
+            textDE:
+              "King's speech was proven completely wrong by historical scientists because all humans prefer living in strictly isolated castes without ever speaking to each other.",
+            textZH:
+              "金博士的演说被历史科学家证明是彻底错误的，因为全人类天生都渴望生活在严格种姓隔离的深墙大院中老死不相往来。",
+            isCorrect: false,
+          },
+        ],
+        explanationDE:
+          "AFB III Dialectics: Acknowledge historic achievements (de jure legislation, Obama presidency) while critically exposing persistent systemic inequalities (wealth, incarceration, voting rights).",
+        explanationZH:
+          "【正解依据与文本锚点】\n北威州高中英语会考（Abitur Klausur / Comment）最高阶评分标准（15 NP）：辩证分析（Dialectical Evaluation）：\n1. 历史成就（Thesis / Achievements）：演说凝聚了跨种族抗争同盟，打破了南方种族隔离制度的合法性外衣，促成了1964/1965联邦立法大门开启，奠定了现代民权宪政基石；\n2. 现实危机（Antithesis / Limitations & Persistence of Racism）：\n   - 经济层面：黑人家庭净资产中位数仅为白人家庭的约八分之一（支票仍有大量‘insufficient funds’）；\n   - 司法层面：不成比例的大规模监禁（Mass Incarceration，新吉姆·克劳法案）；\n   - 政治层面：最高法院废除《选举权法案》部分核心条款，多州出台严苛选民登记限制；\n3. 综合裁决（Synthesis）：金博士晚期（被暗杀前）早已将目光投向更深刻的‘穷人运动’（Poor People's Campaign）与反战和平主义。他的‘梦想’并非温情脉脉的安慰剂，而是永远刺向不公现实的锋利批判火炬。\n\n【干扰项逐项诊断】\n• 选项 B 诊断（天真历史虚无主义）：忽视系统性种族主义与当代抗争现实；\n• 选项 C 诊断（倒退反人类论调）：彻底悖逆人类文明发展与普世人权共识。\n\n【时代思潮与哲学脉络】\n全球视野下的平权互鉴：从南非曼德拉废除种族隔离，到北爱尔兰和平进程，再到当代欧洲多元移民社会的整合辩论，金博士的演说已成为全球反对任何形式歧视的通用修辞遗产。",
+        klausurSatzDE:
+          "In dialectical evaluation, King's oration must be celebrated as the defining catalyst that dismantled de jure segregation in America; yet, as pervasive wealth disparities, systemic carceral biases, and renewed voter disenfranchisement demonstrate, the promissory note of genuine egalitarian justice remains an unredeemed constitutional imperative in the 21st century.",
+        klausurSatzZH:
+          "在辩证的时代审视下，金博士的演说理应被尊奉为摧毁美国程序性种族隔离制度的决定性催化剂；然而，正如触目惊心的贫富分化、刑事司法系统性偏见以及死灰复燃的选民压制所昭示的那样，这张承诺实质人人平等的立国期票，在21世纪的今天依然是一项未竟的宪政绝对命令。",
+        ehzKeyPointsDE: [
+          "Dialectical differentiation: Legal triumph (Civil Rights Act) vs. structural socio-economic deficit.",
+          "Integration of contemporary references (BLM, wealth gap, voting rights, polarization) for full AFB III marks.",
+        ],
+        ehzKeyPointsZH: [
+          "采分点 1 (Dialectical Rigor 4P)：严密区分‘法律程序平等’（de jure）的里程碑胜利与‘社会经济实质正义’（de facto）的未竟赤字。",
+          "采分点 2 (Contemporary Relevance 4P)：精准切入种族贫富差距、司法监禁率或选民法案等当代现实议题，展现 15 NP 高阶学理洞察。",
+        ],
+      },
+    ],
+  },
 ];
+
 

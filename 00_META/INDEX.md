@@ -97,6 +97,7 @@
 
 ### Englisch
 - Role Models — [Role-Models-Analysis](../02_Englisch/Texte-Analyse/Role-Models-Analysis.md)（Teil A三任务链/Summary自查/P.E.E./Comment句型）
+- Political Speech & Rhetoric: Martin Luther King Jr. (I Have a Dream) — [MLK-I-Have-a-Dream-Speech-Analysis](../02_Englisch/Texte-Analyse/MLK-I-Have-a-Dream-Speech-Analysis.md)（商业期票隐喻/四重首语从复/亚里士多德修辞三角/de jure vs de facto辩证评析）
 - Mediation & Kommunikative Strategien — [Mediation-und-Kommunikative-Strategien](../02_Englisch/Mediation-und-Kommunikative-Strategien.md)（Teil B跨文化调解准则/体裁格式契合/文化概念释义）
 - Klett Bridge→IQB Themenfelder映射 — [Klett-Themenfelder-Mapping](../02_Englisch/Texte-Analyse/Klett-Themenfelder-Mapping.md)（5单元23媒体→Bereich1/2/5/7，混淆ID工作假设待目录页核对）
 - Teil B Doppelpack — [Klausur-Teil-B-Doppelpack](../02_Englisch/Texte-Analyse/Klausur-Teil-B-Doppelpack.md)（Hörverstehen四题型+Mediation三段式，待老师定考轨）

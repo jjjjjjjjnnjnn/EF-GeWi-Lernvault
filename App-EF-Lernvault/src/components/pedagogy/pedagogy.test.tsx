@@ -377,7 +377,16 @@ describe("Pädagogische Komponenten (Pedagogy UI Library)", () => {
       expect(screen.getAllByText(/panzerartig harten Rücken/).length).toBeGreaterThan(0);
       expect(screen.getByText(/叙事视角与冷静文体特征/)).toBeInTheDocument();
     });
+
+    it("laedt Martin Luther King I Have a Dream und analysiert Rhetorik", () => {
+      render(<GeWiReadingLab lang="zh" defaultExcerptId="mlk-dream" filterFach="Englisch" />);
+      expect(screen.getAllByText(/Martin Luther King/).length).toBeGreaterThan(0);
+      expect(screen.getAllByText(/Five score years ago/).length).toBeGreaterThan(0);
+      expect(screen.getAllByText(/promissory note/).length).toBeGreaterThan(0);
+      expect(screen.getByText(/金融商业扩展隐喻的功能与机制/)).toBeInTheDocument();
+    });
   });
 });
+
 
 
