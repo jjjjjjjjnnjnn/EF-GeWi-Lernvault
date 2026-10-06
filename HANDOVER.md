@@ -28,7 +28,12 @@
 
 ## 当前状态（2026-10-06 最新里程碑与交接就绪）
 
-- ✅ **Phase 2.1 & 2.2 官方会考自检诊断台与理科步进式 BE 采分闭环交付（2026-10-06 最新交付）**：
+- ✅ **Phase 2.3 错误日志诊断编码与 SM-2/FSRS 智能加权深度打通（2026-10-06 最新交付）**：
+  - **结构化诊断引擎落地（`diagnostics.ts`）**：将文科 D1–D5（审题、三层次分离、引证、术语、复合句衔接）与理科 MINT 四阶 BE（公式起步、SI量纲、有效数字精度、结论句）进行状态与缺陷模式建模，支持自动诊断识别与建议输出；
+  - **KlausurSim 错题补丁联动升级**：考场评审自查面板在复制 Fehlerlog 补丁时，自动将诊断出的 D1–D5 / BE 缺陷结构化格式化为 Markdown 规范行，直接沉淀入 `Fehlerlog.md`；
+  - **SM-2 / FSRS 考点智能加权与穿透（`applyDiagnosticWeighting`）**：在 `scheduler.ts` 中实现缺陷加权算法（基于诊断代码的 Priority Boost 抑制稳定性 Stability Damping、增加难度 Difficulty Boost，并将受影响卡片立即设为到期），并在 `KlausurSim.tsx` 评审区提供一键「Defizite in FSRS priorisieren」调度，与 `Flashcards` 记忆系统实现无缝联动。
+
+- ✅ **Phase 2.1 & 2.2 官方会考自检诊断台与理科步进式 BE 采分闭环交付（2026-10-06）**：
   - **NRW 教师常规脱敏与 Blocker 解锁**：吸纳 NRW 高中文理中学教师核心教学法常规（歌德浮士德/毕希纳沃伊采克、尼日利亚第三文化、GK学制、田径+球类对抗等），全面解除 A 类台账阻塞风险，精简 [`00_META/Lehrkraft-Anfragen.md`](00_META/Lehrkraft-Anfragen.md) 为每科 1–2 问精准确认函；
   - **Phase 2.1：KlausurSim 接入 D1–D5 自查打分雷达与 MINT BE 核查模块**：在客户端 `KlausurSim.tsx` 评审面板中植入官方双轨制 Darstellungsleistung（20分）交互自查调节器，实时演算 15 NP；为理科（数理化生）植入四阶步进式 BE 自查核验卡（Ansatz 25% $\to$ Einsetzen 25% $\to$ Exaktheit 25% $\to$ Antwortsatz 25%），高对比度 Tufte 纯黑白纸墨风；
   - **Phase 2.2：MINT 步进式 BE 评分标准与防失分总纲落地**：完成规范笔记 [`03_Mathe/Klausur-Training/Mathe-Operatoren-Check.md`](03_Mathe/Klausur-Training/Mathe-Operatoren-Check.md)，解剖 Folgefehler（后续分保留原则）、单位遗漏（-1 BE）与有效数字陷阱，同步扩充术语与词卡。
