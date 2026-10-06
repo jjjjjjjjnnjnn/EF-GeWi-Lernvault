@@ -976,3 +976,6 @@ tags: [EF, Meta]
 | Prekarisierung | 底层贫困化与就业脆弱化 | SoWi | Die Prekarisierung des Arbeitsmarkts entzieht Beschäftigten existenzsichernde und planbare Lebensgrundlagen. |
 | Menschheitszweckformel | 人类目的公式 | Philosophie | Kants Menschheitszweckformel gebietet, die Menschheit stets zugleich als Zweck, niemals bloß als Mittel zu gebrauchen. |
 
+| lokale Änderungsrate | 瞬时变化率/导数 | Mathe | Die lokale Änderungsrate entspricht der Tangentensteigung an einer Stelle und quantifiziert Momentangeschwindigkeit oder Reaktionsrate. |
+| Fließgleichgewicht | 动态流平衡/稳态 | Bio | Das Fließgleichgewicht beschreibt einen dynamischen stationären Zustand offener Systeme mit kontinuierlichem Stoff- und Energiedurchsatz. |
+| Erhaltungssatz | 守恒定律 | Physik | Ein physikalischer Erhaltungssatz besagt, dass die Gesamtmenge einer fundamentalen Größe in einem abgeschlossenen System zeitlich unveränderlich ist. |

@@ -126,6 +126,7 @@
 - CN-Begriffe + Tricks + Training — [Begriffshandbuch](../06_Bio/CN-Bio-Begriffshandbuch.md) · [Tricks](../06_Bio/CN-Bio-Tricks.md) · [Training](../06_Bio/Klausur-Training/CN-Bio-Training.md)（三语桥/EF+Ausblick，4+6自编题）
 
 ### Mathe
+- Änderungsrate & Erhaltungssätze (MINT-Vernetzung) — [Aenderungsrate-Erhaltungssaetze-MINT-Vernetzung](../03_Mathe/Aenderungsrate-Erhaltungssaetze-MINT-Vernetzung.md)（数理化生大一统：瞬时导数切线/运动学守恒/反应速率动力学/酶饱和稳态四维全景沙盘）
 - Analysis & Kinetik — [Analysis-Physik-Kinetik-Vernetzung](../03_Mathe/Analysis-Physik-Kinetik-Vernetzung.md)（微积分导数与运动学瞬时速度深度联动）
 - Kurvendiskussion & Polynome — [Ganzrationale-Funktionen-Kurvendiskussion](../03_Mathe/Ganzrationale-Funktionen-Kurvendiskussion.md)（多项式函数性质/极值拐点/实际极值问题建模）
 - Steckbriefaufgaben & Funktionsrekonstruktion — [Steckbriefaufgaben-und-Funktionsanpassung](../03_Mathe/Steckbriefaufgaben-und-Funktionsanpassung.md)（几何条件翻译/代数方程组/四步设解）
