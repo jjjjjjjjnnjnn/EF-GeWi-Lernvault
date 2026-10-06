@@ -166,6 +166,25 @@ export const allVaultNotes: GeneratedNote[] = [
     "path": "01_Deutsch/Klausur-Training/Muendliche-QA-Kette-Deutsch.md"
   },
   {
+    "id": "deutsch-argumentationslogik-und-sprachmacht-vernetzung",
+    "fach": "Deutsch",
+    "thema": "Argumentationslogik, Rhetorik und Diskursmacht im Faechervergleich",
+    "zh": "跨学科学术论辩、修辞透镜与话语权力全景",
+    "operatoren": [
+      "analysieren",
+      "vergleichen",
+      "beurteilen"
+    ],
+    "klausurrelevant": true,
+    "bodyDE": [
+      "Thema: Argumentationslogik, Rhetorik und Diskursmacht im Faechervergleich (Deutsch). Exam-relevante Wissensnotiz."
+    ],
+    "bodyZH": [
+      "Deutsch 核心考纲笔记：跨学科学术论辩、修辞透镜与话语权力全景。"
+    ],
+    "path": "01_Deutsch/Texte-Analyse/Argumentationslogik-und-Sprachmacht-Vernetzung.md"
+  },
+  {
     "id": "deutsch-aufgabenart-iii-eroerterung",
     "fach": "Deutsch",
     "thema": "Aufgabenart III — Erörterung (IIIa / IIIb)",
@@ -322,6 +341,25 @@ export const allVaultNotes: GeneratedNote[] = [
       "QP 新增 `Sprechsituation` 维度（谁在对谁说、在什么情境下说），这是 EF 笔记里不存在的 [已验证]。"
     ],
     "path": "01_Deutsch/Texte-Analyse/Gedichtvergleich-Ib.md"
+  },
+  {
+    "id": "deutsch-kafka-die-verwandlung-epik",
+    "fach": "Deutsch",
+    "thema": "Kafka Die Verwandlung (Epik-Analyse)",
+    "zh": "卡夫卡《变形记》叙事文本解剖",
+    "operatoren": [
+      "analysieren",
+      "deuten",
+      "beurteilen"
+    ],
+    "klausurrelevant": true,
+    "bodyDE": [
+      "Thema: Kafka Die Verwandlung (Epik-Analyse) (Deutsch). Exam-relevante Wissensnotiz."
+    ],
+    "bodyZH": [
+      "Deutsch 核心考纲笔记：卡夫卡《变形记》叙事文本解剖。"
+    ],
+    "path": "01_Deutsch/Texte-Analyse/Kafka-Die-Verwandlung-Epik.md"
   },
   {
     "id": "deutsch-kommunikationsmodelle",
@@ -1111,6 +1149,26 @@ export const allVaultNotes: GeneratedNote[] = [
     "path": "02_Englisch/Texte-Analyse/Leseverstehen-Strategien-Implizit.md"
   },
   {
+    "id": "englisch-mlk-i-have-a-dream-speech-analysis",
+    "fach": "Englisch",
+    "thema": "Martin Luther King I Have a Dream (Speech Analysis)",
+    "zh": "演讲修辞与民权说服机制解剖",
+    "operatoren": [
+      "analyse",
+      "examine",
+      "assess",
+      "evaluate"
+    ],
+    "klausurrelevant": true,
+    "bodyDE": [
+      "Thema: Martin Luther King I Have a Dream (Speech Analysis) (Englisch). Exam-relevante Wissensnotiz."
+    ],
+    "bodyZH": [
+      "Englisch 核心考纲笔记：演讲修辞与民权说服机制解剖。"
+    ],
+    "path": "02_Englisch/Texte-Analyse/MLK-I-Have-a-Dream-Speech-Analysis.md"
+  },
+  {
     "id": "englisch-mediation-de-en-abitur-teil-b",
     "fach": "Englisch",
     "thema": "Mediation DE-EN: Abitur Teil B (Sprachmittlung)",
@@ -1178,6 +1236,26 @@ export const allVaultNotes: GeneratedNote[] = [
       "Englisch 核心考纲笔记：Mediation Mustertexte。"
     ],
     "path": "02_Englisch/Texte-Analyse/Mediation-Mustertexte.md"
+  },
+  {
+    "id": "englisch-miller-death-of-a-salesman-american-dream",
+    "fach": "Englisch",
+    "thema": "Arthur Miller Death of a Salesman (American Dream)",
+    "zh": "推销员之死与美国梦幻灭解剖",
+    "operatoren": [
+      "analyse",
+      "examine",
+      "interpret",
+      "evaluate"
+    ],
+    "klausurrelevant": true,
+    "bodyDE": [
+      "Thema: Arthur Miller Death of a Salesman (American Dream) (Englisch). Exam-relevante Wissensnotiz."
+    ],
+    "bodyZH": [
+      "Englisch 核心考纲笔记：推销员之死与美国梦幻灭解剖。"
+    ],
+    "path": "02_Englisch/Texte-Analyse/Miller-Death-of-a-Salesman-American-Dream.md"
   },
   {
     "id": "englisch-multimodale-texte-journalismus-und-social-media",
@@ -1258,6 +1336,26 @@ export const allVaultNotes: GeneratedNote[] = [
       "另有一条**三域共用**条目：**`Politik, Kultur, Gesellschaft – zwischen Wandel und Tradition`** [已验证]。"
     ],
     "path": "02_Englisch/Texte-Analyse/Orientierungswissen-USA.md"
+  },
+  {
+    "id": "englisch-orwell-1984-dystopian-surveillance",
+    "fach": "Englisch",
+    "thema": "George Orwell 1984 (Dystopia & Surveillance)",
+    "zh": "反乌托邦与极权监控解剖",
+    "operatoren": [
+      "analyse",
+      "examine",
+      "discuss",
+      "evaluate"
+    ],
+    "klausurrelevant": true,
+    "bodyDE": [
+      "Thema: George Orwell 1984 (Dystopia & Surveillance) (Englisch). Exam-relevante Wissensnotiz."
+    ],
+    "bodyZH": [
+      "Englisch 核心考纲笔记：反乌托邦与极权监控解剖。"
+    ],
+    "path": "02_Englisch/Texte-Analyse/Orwell-1984-Dystopian-Surveillance.md"
   },
   {
     "id": "englisch-primaertext-analyse-attention-economy-en",
@@ -1432,6 +1530,26 @@ export const allVaultNotes: GeneratedNote[] = [
       "**Klausur-Relevanz**：**文类判定是 Teil 3 的开篇砖块**——文类判错会导致后续方向全偏（把 Kommentar 当 Bericht 去找「客观性」）。"
     ],
     "path": "02_Englisch/Texte-Analyse/Textsortenmerkmale-und-Belegtechniken.md"
+  },
+  {
+    "id": "mathe-aenderungsrate-erhaltungssaetze-mint-vernetzung",
+    "fach": "Mathe",
+    "thema": "Aenderungsrate-Erhaltungssaetze-MINT-Vernetzung",
+    "zh": "MINT理科大一统：瞬时变化率与动力学守恒沙盘",
+    "operatoren": [
+      "berechnen",
+      "analysieren",
+      "interpretieren",
+      "vergleichen"
+    ],
+    "klausurrelevant": true,
+    "bodyDE": [
+      "Thema: Aenderungsrate-Erhaltungssaetze-MINT-Vernetzung (Mathe). Exam-relevante Wissensnotiz."
+    ],
+    "bodyZH": [
+      "Mathe 核心考纲笔记：MINT理科大一统：瞬时变化率与动力学守恒沙盘。"
+    ],
+    "path": "03_Mathe/Aenderungsrate-Erhaltungssaetze-MINT-Vernetzung.md"
   },
   {
     "id": "mathe-analysis-physik-kinetik-vernetzung",
@@ -2220,6 +2338,28 @@ export const allVaultNotes: GeneratedNote[] = [
       "解题的关键绝非单纯求导，而是**算子对齐与情境还原**： - 算子 `berechnen` 要求给出严密的代数推演步骤。"
     ],
     "path": "03_Mathe/Klausur-Training/Mathe-EF-Klausurtraining-Analysis.md"
+  },
+  {
+    "id": "mathe-mathe-operatoren-check",
+    "fach": "Mathe",
+    "thema": "Mathe Operatoren & Bewertungseinheiten (BE) Check",
+    "zh": "Mathe Operatoren & Bewertungseinheiten (BE) Check",
+    "operatoren": [
+      "berechnen",
+      "bestimmen",
+      "skizzieren",
+      "interpretieren",
+      "beweisen",
+      "beurteilen"
+    ],
+    "klausurrelevant": true,
+    "bodyDE": [
+      "Thema: Mathe Operatoren & Bewertungseinheiten (BE) Check (Mathe). Exam-relevante Wissensnotiz."
+    ],
+    "bodyZH": [
+      "Mathe 核心考纲笔记：Mathe Operatoren & Bewertungseinheiten (BE) Check。"
+    ],
+    "path": "03_Mathe/Klausur-Training/Mathe-Operatoren-Check.md"
   },
   {
     "id": "mathe-mockklausur-nrw-mathe",
@@ -5666,6 +5806,27 @@ export const allVaultNotes: GeneratedNote[] = [
     "path": "07_Philosophie/Klausur-Training/Philo-Textanalyse-Training.md"
   },
   {
+    "id": "philosophie-entfremdung-kapital-ungleichheit-vernetzung",
+    "fach": "Philosophie",
+    "thema": "Entfremdung, Kapitalismus und Ungleichheit: Interdisziplinaere Synthese",
+    "zh": "现代异化劳动、主体物化与资本主义批判全景沙盘",
+    "operatoren": [
+      "analysieren",
+      "vergleichen",
+      "beurteilen"
+    ],
+    "klausurrelevant": true,
+    "bodyDE": [
+      "Thema: Entfremdung, Kapitalismus und Ungleichheit: Interdisziplinaere Synthese (Philosophie). Exam-relevante Wissensnotiz."
+    ],
+    "bodyZH": [
+      "现代资本主义生产机制不仅是一个经济增长系统，更深刻重塑了人与自身、人与劳动、人与社会的关系。",
+      "- **德语文学视角（Deutsch）**：卡夫卡在《变形记》（*Die Verwandlung*）中通过格里高尔·萨姆沙沦为甲虫的荒诞具象，揭示了雇佣劳动者被彻底工具化为经济齿轮后的非人化命运。",
+      "毕希纳在《沃伊采克》（*Woyzeck*）中描绘了底层军士沦为医学实验与阶级剥削对象的悲剧。"
+    ],
+    "path": "07_Philosophie/Texte-Analyse/Entfremdung-Kapital-Ungleichheit-Vernetzung.md"
+  },
+  {
     "id": "philosophie-ethische-dilemmata-sammlung",
     "fach": "Philosophie",
     "thema": "Ethische Dilemmata Kant vs Utilitarismus",
@@ -5701,6 +5862,26 @@ export const allVaultNotes: GeneratedNote[] = [
       "Philosophie 核心考纲笔记：人是什么。"
     ],
     "path": "07_Philosophie/Texte-Analyse/Menschenbild-Ueberblick.md"
+  },
+  {
+    "id": "philosophie-mill-utilitarismus-qualitativer-hedonismus",
+    "fach": "Philosophie",
+    "thema": "Mill Utilitarismus (Qualitativer Hedonismus)",
+    "zh": "功利原理与质性快乐主义解剖",
+    "operatoren": [
+      "darstellen",
+      "analysieren",
+      "vergleichen",
+      "beurteilen"
+    ],
+    "klausurrelevant": true,
+    "bodyDE": [
+      "Thema: Mill Utilitarismus (Qualitativer Hedonismus) (Philosophie). Exam-relevante Wissensnotiz."
+    ],
+    "bodyZH": [
+      "Philosophie 核心考纲笔记：功利原理与质性快乐主义解剖。"
+    ],
+    "path": "07_Philosophie/Texte-Analyse/Mill-Utilitarismus-Qualitativer-Hedonismus.md"
   },
   {
     "id": "philosophie-philo-abitur-kernstellen",

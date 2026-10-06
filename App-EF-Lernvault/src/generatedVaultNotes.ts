@@ -4985,6 +4985,359 @@ export const allVaultNotesWithBlocks: GeneratedVaultNote[] = [
     ]
   },
   {
+    "id": "deutsch-argumentationslogik-und-sprachmacht-vernetzung",
+    "path": "01_Deutsch/Texte-Analyse/Argumentationslogik-und-Sprachmacht-Vernetzung.md",
+    "fach": "Deutsch",
+    "thema": "Argumentationslogik, Rhetorik und Diskursmacht im Faechervergleich",
+    "operatoren": [
+      "analysieren",
+      "vergleichen",
+      "beurteilen"
+    ],
+    "klausurrelevant": true,
+    "datum": "2026-10-06",
+    "tags": [
+      "EF",
+      "Deutsch",
+      "Vernetzung",
+      "Philosophie",
+      "SoWi",
+      "Englisch"
+    ],
+    "blocks": [
+      {
+        "kind": "quote",
+        "text": "**直觉破冰与生活隐喻 (Der intuitive Anker / Alltagsanalogie)**：",
+        "lang": "zh"
+      },
+      {
+        "kind": "quote",
+        "text": "想象一场法庭辩论：法官（哲学/Philosophie）只关注证据链条在逻辑上是否无懈可击、是否存在偷换概念或假两难推理；演说律师（德语/Deutsch 与 英语/Englisch）则精通修辞策略与修辞问句，用富有感染力的隐喻和排比引导陪审团的情感与注意力；而议会政治家与社会学家（社科/SoWi）则洞察法庭规则背后的权力结构——究竟是谁制定了辩论规则？话语权掌握在精英手中，还是通过民主协商形成共识？",
+        "lang": "zh"
+      },
+      {
+        "kind": "quote",
+        "text": "在 NRW 跨学料会考中，一篇高分文本分析绝不仅是孤立寻找修辞手法，而是将**哲学逻辑有效性**、**德英文学修辞引导**与**社科话语权力**熔铸为一体的批判性解构。",
+        "lang": "zh"
+      },
+      {
+        "kind": "quote",
+        "text": "**Klausur-Relevanz (Abitur 核心考点定位)**：",
+        "lang": "zh"
+      },
+      {
+        "kind": "quote",
+        "text": "覆盖 NRW 考纲 Deutsch IF 2 (Pragmatische Texte), Englisch Task A/B (Speech / Comment / Mediation), Philosophie IF 2 (Erkenntnis & Sprache) 以及 SoWi IF 2 (Politische Partizipation & Deliberation)。在 AFB II/III 阶段，掌握此三维透镜是斩获 14–15 NP (sehr gut) 的满分利器。",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "---",
+        "lang": "de"
+      },
+      {
+        "kind": "h2",
+        "text": "1. 核心概念与 SBF 机理解构 (Kernbegriffe & SBF-Modell)",
+        "lang": "zh"
+      },
+      {
+        "kind": "h3",
+        "text": "1.1 术语与中德对齐表",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "| 术语 (DE) | 对应中文 | English (US/AP) | 严谨学术定义 (Fachsprache) / 核心公式 | 考场易错标记 |",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "|---|---|---|---|---|",
+        "lang": "de"
+      },
+      {
+        "kind": "p",
+        "text": "| der Syllogismus | 三段论演绎 | Syllogism | Logische Schlussfigur aus Obersatz, Untersatz und Konklusion ($A \\to B, B \\to C \\implies A \\to C$). | 混淆前提真（Wahrheit）与形式有效（Gültigkeit） |",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "| die Leserlenkung | 读者引导/修辞操控 | Audience manipulation / Reader guidance | Gezielter Einsatz von Stilmitteln, Selektion und Framing zur Steuerung der Rezipientenhaltung. | 仅罗列修辞名称，缺失“读者心理机制”分析 |",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "| der Fehlschluss (Fallacy) | 逻辑谬误 | Logical fallacy | Scheinargument, das formal ungültig ist (z. B. Argumentum ad hominem, Strohmann, falsches Dilemma). | 误将情绪反弹直接当作形式反驳 |",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "| deliberative Demokratie | 协商民主 | Deliberative democracy | Modell von Habermas: Legitimität politischer Entscheidungen entsteht durch herrschaftsfreien Diskurs und Sachargumente. | 误解为简单的多数决投票 |",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "| die Diskursmacht | 话语权力 | Discursive power / Hegemony | Die Fähigkeit gesellschaftlicher Akteure, Deutungsmuster und das „Sagbare“ institutionell zu prägen (Foucault). | 忽略语言背后的制度与阶层壁垒 |",
+        "lang": "zh"
+      },
+      {
+        "kind": "h3",
+        "text": "1.2 系统 SBF 维度拆解 (Struktur - Verhalten - Funktion)",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "**Struktur (系统结构与要素)**：论题（These）、前提（Prämissen）、证据/行号支撑（Evidenz / Belege）、修辞透镜（Stilmittel）与权力场域（Akteure / Institutionen）。",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "**Verhalten (动态机制与推导因果)**：作者提出争议性主张 $\\to$ 运用权威/规范/事实论据构筑说服壁垒 $\\to$ 施加情感唤起与二元对立框架 $\\to$ 诱导受众得出预设推论。",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "**Funktion (宏观功能与评价目标)**：实现共识凝聚或意识形态霸权；在考场上完成由文本表层向深层意图与哲学正当性的批判性穿透。",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "---",
+        "lang": "de"
+      },
+      {
+        "kind": "h2",
+        "text": "2. 知识结构与双重编码图解 (Struktur & Visual Schema)",
+        "lang": "zh"
+      },
+      {
+        "kind": "diagram",
+        "text": "┌────────────────────────────────────────────────────────┐\n                 │       Der Dreiklang der Text-Dekonstruktion (AFB II/III) │\n                 └───────────────────────────┬────────────────────────────┘\n                                             │\n         ┌───────────────────────────────────┼───────────────────────────────────┐\n         ▼                                   ▼                                   ▼\n ┌───────────────┐                   ┌───────────────┐                   ┌───────────────┐\n │  Philosophie  │                   │ Deutsch / EN  │                   │     SoWi      │\n │ Formale Logik │                   │ Rhetorik &    │                   │ Diskursmacht &│\n │ (Syllogistik) │                   │ Leserlenkung  │                   │ Institutionen │\n └───────┬───────┘                   └───────┬───────┘                   └───────┬───────┘\n         │                                   │                                   │\n         ├─ Gültigkeit der Prämissen         ├─ Tropen & Figuren                 ├─ Partizipation\n         ├─ Deduktion vs. Induktion          ├─ P.E.E.-Schema                    ├─ Hegemonie\n         └─ Entlarvung von Fehlschlüssen     └─ Emotionale Adressierung          └─ Deliberation",
+        "lang": "de"
+      },
+      {
+        "kind": "h3",
+        "text": "2.1 核心原理解构",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "1. **哲学维度的形式检验 (Formale Stichhaltigkeit)**：任何具有说服力的论证必须经受反例检验。若作者的前提隐藏着偏见（implizite Prämissen），其推论即使修辞再华丽，亦属逻辑无效。",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "2. **德英维度的修辞共鸣 (Rhetorische Persuasion)**：通过排比（Anapher）、隐喻（Metapher）与设问（Hypophora），作者建立情感联结并将抽象逻辑具象化为政治行动号召。",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "3. **社科维度的话语权力 (Politische Institutionalisierung)**：哈贝马斯指出，只有在“理想交往情境（ideale Sprechsituation）”中、免于强制的话语才是合法的；现实演讲往往利用恐惧（Populismus）或专家垄断掩盖利益冲突。",
+        "lang": "zh"
+      },
+      {
+        "kind": "quote",
+        "text": "*Klausur-Satz (德语核心公理句)*:",
+        "lang": "zh"
+      },
+      {
+        "kind": "quote",
+        "text": "„Ein literarischer oder politischer Sachtext entfaltet seine persuasive Kraft erst durch die Synthese aus logischer Deduktion, rhetorischer Leserlenkung und institutioneller Diskursmacht.“",
+        "lang": "de"
+      },
+      {
+        "kind": "p",
+        "text": "---",
+        "lang": "de"
+      },
+      {
+        "kind": "h2",
+        "text": "3. 解题方法与决策树 (Methoden & Entscheidungsbaum)",
+        "lang": "zh"
+      },
+      {
+        "kind": "diagram",
+        "text": "[Textpassage im Klausurtext]\n                                    |\n          +-------------------------+-------------------------+\n          |                                                   |\n 【Fall A: Behauptung / These】                     【Fall B: Sprachliches Bild / Tropus】\n          |                                                   |\n   1. Rekonstruktion (Prämisse -> Konklusion)          1. Benennung des Mittels (D4)\n   2. Prüfung auf logische Fehlschlüsse (Philo)        2. Zeilennachweis (D3)\n   3. Gesellschaftliche Interessen offenlegen (SoWi)  3. Psychologische Leserlenkung analysieren (D2)",
+        "lang": "de"
+      },
+      {
+        "kind": "h3",
+        "text": "3.1 Vier-Schritt-Prüfung (四步解剖法)",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "1. **Schritt 1 (These & Zeile)**: Konkrete Textstelle lokalisieren und Kernaussage benennen.",
+        "lang": "de"
+      },
+      {
+        "kind": "p",
+        "text": "2. **Schritt 2 (Logische Prämisse)**: Welche unausgesprochene Annahme liegt der Aussage zugrunde?",
+        "lang": "de"
+      },
+      {
+        "kind": "p",
+        "text": "3. **Schritt 3 (Rhetorisches Instrument)**: Welches Stilmittel forciert die Plausibilität (z. B. falsches Dilemma, Antithese)?",
+        "lang": "de"
+      },
+      {
+        "kind": "p",
+        "text": "4. **Schritt 4 (Kritische Reflexion)**: Welche gesellschaftliche Gruppe profitiert von dieser Deutung (Habermas-Kriterium)?",
+        "lang": "de"
+      },
+      {
+        "kind": "p",
+        "text": "---",
+        "lang": "de"
+      },
+      {
+        "kind": "h2",
+        "text": "4.  中国学生专属方法 (CN-Methode: 三棱镜折射法)",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "中国学生在面对德国 Sachtextanalyse 或 Speech Analysis 时，极易陷入**“修辞手法大点兵”**的误区（只指出使用了 Metapher 或 Alliteration，但无法阐明其论证逻辑与社会学功能）。",
+        "lang": "zh"
+      },
+      {
+        "kind": "h3",
+        "text": "记忆口诀：“一析前提真伪，二辨修辞心术，三照权力照妖镜”",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "**一析前提 (Philosophie)**：抓出“大前提-小前提-结论”。问自己：前提站得住脚吗？",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "**二辨心术 (Deutsch/Englisch)**：抓出作者如何操纵受众情绪（Framing）。他把我们置于什么立场？",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "**三照权力 (SoWi)**：问自己：谁被赋权？谁被边缘化？这是否符合透明协商的标准？",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "---",
+        "lang": "de"
+      },
+      {
+        "kind": "h2",
+        "text": "5. 考试训练与标杆示范 (Klausur-Training & Anwendungsbeispiel)",
+        "lang": "zh"
+      },
+      {
+        "kind": "h3",
+        "text": "5.1 Szenario (Auszug aus einer politischen Grundsatzrede)",
+        "lang": "de"
+      },
+      {
+        "kind": "quote",
+        "text": "*„Wer unsere Reformen ablehnt, verweigert der Jugend die Zukunft. Es gibt keinen dritten Weg zwischen entschlossenem Fortschritt und dem gesellschaftlichen Abgrund.“ (Z. 45–48)*",
+        "lang": "de"
+      },
+      {
+        "kind": "h3",
+        "text": "5.2 Musterlösung (15 NP Niveau — Dreiklang-Dekonstruktion)",
+        "lang": "de"
+      },
+      {
+        "kind": "li",
+        "text": "**AFB II (Analyse)**:",
+        "lang": "de"
+      },
+      {
+        "kind": "p",
+        "text": "In Zeile 45–48 bedient sich der Redner einer polarisierenden Antithese, indem er die Akzeptanz der Reformen mit der „Zukunft der Jugend“ gleichsetzt und dem Ablehnenden die moralische Schuld an einem „gesellschaftlichen Abgrund“ zuweist. Rhetorisch konstruiert dieser Satz ein **falsches Dilemma (Bifurkation)**, das jegliche differenzierte Mittelposition sprachlich tabuisiert und beim Rezipienten Verlustängste evoziert.",
+        "lang": "de"
+      },
+      {
+        "kind": "li",
+        "text": "**AFB III (Kritische Beurteilung nach Fächerkanon)**:",
+        "lang": "de"
+      },
+      {
+        "kind": "p",
+        "text": "Philosophisch betrachtet begeht der Verfasser hier einen argumentum ad baculum (Appell an die Furcht) und unterläuft die logische Begründungspflicht: Aus der Ablehnung einer konkreten Gesetzesvorlage folgt logisch keineswegs zwingend die Verweigerung von Zukunftschancen. Sozialwissenschaftlich entlarvt diese Rhetorik ein autoritäres Diskursmuster, das den von Jürgen Habermas geforderten herrschaftsfreien Diskurs sabotiert. Statt Bürger deliberativ einzubinden, wird Dissens als destruktiv delegitimiert, um das Durchregieren der exekutiven Elite abzusichern.",
+        "lang": "de"
+      },
+      {
+        "kind": "p",
+        "text": "---",
+        "lang": "de"
+      },
+      {
+        "kind": "h2",
+        "text": "6. 易错点与陷阱 (Typische Fehlerquellen)",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "| 典型错误 (Fehler) | 考官扣分点 | 满分解答标准 (Best Practice) |",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "|---|---|---|",
+        "lang": "de"
+      },
+      {
+        "kind": "p",
+        "text": "| 纯修辞清单式罗列 (Katalogisieren) | D1 & D2 降为 Defizitär | 严禁只写「Hier liegt eine Metapher vor」。必须写明：「Die Metapher bewirkt beim Leser [...], indem sie [...] funktional stützt。」 |",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "| 混淆论点与论据 | D4 概念模糊 | 论点是主张（Claim），论据是支撑理由（Fakten, Normen, Empirie）。必须清晰隔离。 |",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "| 脱离文本打嘴仗 | D1 扣分（fehlender Textbezug） | 任何逻辑批判必须精准锚定文本行号（Z. 12f.），并在其上下文语境中评估。 |",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "---",
+        "lang": "de"
+      },
+      {
+        "kind": "h2",
+        "text": "7. 跨学科链接与网络 (Vernetzung)",
+        "lang": "zh"
+      },
+      {
+        "kind": "diagram",
+        "text": "[Argumentationslogik & Rhetorik]\n                                             │\n      ┌──────────────────────┬───────────────┴──────────────┬──────────────────────┐\n      ▼                      ▼                              ▼                      ▼\n  [01_Deutsch]          [02_Englisch]                 [07_Philosophie]          [08_SoWi]\nSachtextanalyse         Mediation &                   Logik, Fallacies &        Politische Reden,\nLeserlenkung &          P.E.E.-Schema                 Diskursethik              Deliberation &\nFigurendialoge          (Speech Analysis)             (Habermas / Kant)         Populismus",
+        "lang": "de"
+      },
+      {
+        "kind": "li",
+        "text": "**Deutsch**: `01_Deutsch/Texte-Analyse/Rhetorik-Mediation-Vernetzung.md`",
+        "lang": "de"
+      },
+      {
+        "kind": "li",
+        "text": "**Englisch**: `02_Englisch/Texte-Analyse/MLK-I-Have-a-Dream-Speech-Analysis.md`",
+        "lang": "de"
+      },
+      {
+        "kind": "li",
+        "text": "**Philosophie**: `07_Philosophie/Texte-Analyse/Philosophische-Fragen-Typen.md`",
+        "lang": "de"
+      },
+      {
+        "kind": "li",
+        "text": "**SoWi**: `08_SoWi/Klausur-Training/Satzbausteine.md` (Effizienz vs. Legitimität)",
+        "lang": "de"
+      }
+    ]
+  },
+  {
     "id": "deutsch-aufgabenart-iii-eroerterung",
     "path": "01_Deutsch/Texte-Analyse/Aufgabenart-III-Eroerterung.md",
     "fach": "Deutsch",
@@ -8326,6 +8679,367 @@ export const allVaultNotesWithBlocks: GeneratedVaultNote[] = [
       {
         "kind": "quote",
         "text": "**版权**：本笔记全部例句与训练材料为自写（2026-09-24），**未引用任何具体诗歌原文**；KLP 内容仅作标题级结构化摘要。题干结构参照 NRW 官方 Ib 设问，解析全为原创。",
+        "lang": "zh"
+      }
+    ]
+  },
+  {
+    "id": "deutsch-kafka-die-verwandlung-epik",
+    "path": "01_Deutsch/Texte-Analyse/Kafka-Die-Verwandlung-Epik.md",
+    "fach": "Deutsch",
+    "thema": "Kafka Die Verwandlung (Epik-Analyse)",
+    "operatoren": [
+      "analysieren",
+      "deuten",
+      "beurteilen"
+    ],
+    "klausurrelevant": true,
+    "datum": "2026-10-05",
+    "tags": [
+      "EF",
+      "Deutsch",
+      "Epik",
+      "Moderne"
+    ],
+    "blocks": [
+      {
+        "kind": "quote",
+        "text": "**直觉破冰与生活隐喻 (Der intuitive Anker / Alltagsanalogie)**：",
+        "lang": "zh"
+      },
+      {
+        "kind": "quote",
+        "text": "想象你是一个连轴转熬夜加班、不敢请一天假的打工人。某天早晨醒来你发现自己发高烧瘫痪在床，动弹不得，而你脑海里跳出的第一个念头竟然不是“赶紧叫救护车”，而是“糟糕！今天打卡迟到了，老板会扣光我的全勤奖，我怎么还房贷？！”——卡夫卡用极其荒谬的肉身变形（变成一只大甲虫），精准刺穿了现代人被工作和生存压力彻底榨干人性、物化为流水线工具零件的终极悲哀。",
+        "lang": "zh"
+      },
+      {
+        "kind": "quote",
+        "text": "**Klausur-Relevanz (Abitur 核心考点定位)**：",
+        "lang": "zh"
+      },
+      {
+        "kind": "quote",
+        "text": "散文叙事文本分析（Analyse eines epischen Textes / Erzähltextanalyse）在北威州高中会考（Aufgabentyp 1A）中权重高达 100 分。核心考核点：限制性人物叙事视角（Personale Erzählhaltung）、超现实荒诞怪诞（Das Groteske）、异化劳动与家庭功利性批判（Entfremdung der Arbeit & bürgerliche Familie）、AFB I-III 贯通与 15 NP 学术德语论证。",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "---",
+        "lang": "de"
+      },
+      {
+        "kind": "h2",
+        "text": "1. 核心概念与 SBF 机理解构 (Kernbegriffe & SBF-Modell)",
+        "lang": "zh"
+      },
+      {
+        "kind": "h3",
+        "text": "1.1 术语与中德对齐表",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "| 术语 (DE) | 对应中文 | English (US/AP) | 严谨学术定义 (Fachsprache) / 核心内涵 | 考场易错标记 |",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "|---|---|---|---|---|",
+        "lang": "de"
+      },
+      {
+        "kind": "p",
+        "text": "| **Personale Erzählsituation** | 限制性人物叙事视角 | Third-person limited POV | Das Geschehen wird vorrangig aus der Innenperspektive einer Figur (Gregor) reflektiert, ohne allwissenden Kommentar. | 禁混淆为第一人称Ich-Erzähler（仍是Er-Form但视角受限） |",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "| **Das Groteske** | 怪诞/荒谬 | The Grotesque | Paradoxe Verbindung von Unvereinbarem: Unfassbare Monstrosität geschildert in nüchtern-bürokratischer Alltagssprache. | 禁写成单纯的童话奇幻（Märchen/Fantasy） |",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "| **Entfremdung** | 异化 | Alienation | Zustand, in dem das Subjekt sich seiner Arbeit, Mitmenschen und eigenen Identität entfremdet und zur Ware degradiert wird. | 必须紧扣马克思劳工异化与心理置换 |",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "| **Realisierte Metapher** | 实体化隐喻 | Realized metaphor | Die sprachliche Redewendung (wie Ungeziefer behandelt zu werden) wird zur physischen Tatsache. | 突出甲虫肉身正是内在异化的外部物质化显影 |",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "| **Klaustrophobie (Raumsemantik)** | 幽闭空间语义 | Claustrophobic spatial semantics | Das enge Zimmer und die geschlossenen Türen symbolisieren bürgerliche Disziplinierung und Isolation. | 空间描写必须联系心理与社会压迫解读 |",
+        "lang": "zh"
+      },
+      {
+        "kind": "h3",
+        "text": "1.2 系统 SBF 维度拆解 (Struktur - Verhalten - Funktion)",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "**Struktur (系统结构与叙事框架)**：",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "核心三角角色关系：格里高尔（异化受害者/养家者） ↔ 父亲（暴虐权威/父权社会超我） ↔ 母亲与妹妹格蕾特（从虚假温情退化至功利放逐）。",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "空间拓扑结构：狭窄卧室（异化监牢） ↔ 三扇门（家庭与社会审判的分水岭） ↔ 客厅（市民阶级绩效场域）。",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "**Verhalten (动态行为与演化因果)**：",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "初始阶段：身体变形  心理防御性压抑（只焦虑火车与迟到）  尝试翻身失败；",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "激化阶段：总管上门催逼  变形曝光  父亲暴力挥拐杖驱赶（空间禁锢）；",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "终局阶段：失去赚钱功能  亲情温情彻底撕破（扔苹果击穿甲壳）  绝食消亡与家庭解脱。",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "**Funktion (宏观功能与文学价值)**：",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "彻底瓦解启蒙运动以来“人是万物尺度”的人本主义神话；",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "控诉资本绩效社会中，人之尊严完全依附于其经济剩余价值。",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "---",
+        "lang": "de"
+      },
+      {
+        "kind": "h2",
+        "text": "2. 知识结构与双重编码图解 (Struktur & Visual Schema)",
+        "lang": "zh"
+      },
+      {
+        "kind": "diagram",
+        "text": "+-----------------------------------------------------------------------------------+\n|                           KAFKAS \"DIE VERWANDLUNG\" (1915)                         |\n+-----------------------------------------------------------------------------------+\n                                          |\n                +-------------------------+-------------------------+\n                |                                                   |\n    【Ebene 1: Erzähltechnik】                             【Ebene 2: Soziologische Entfremdung】\n    • Personales Erzählen (Gregor)                         • Kapitalistische Leistungsordnung\n    • Nüchterner Amtston (Protokollstil)                   • Mensch = ökonomischer Funktionswert\n    • Realisierte Metapher (\"Ungeziefer\")                  • Familie = bürgerliche Zweckgemeinschaft\n                |                                                   |\n                +-------------------------+-------------------------+\n                                          |\n                         [Kernantithese im Textanfang]\n         Physische Monstrosität          vs.          Bürokratische Pflichterfüllung\n         (Panzer, dünne Beine,                        (Zugverspätung, Zorn des Chefs,\n          körperliche Lähmung)                         Schuldentilgung für Eltern)\n                                          |\n                                          v\n                    【Synthese / Klausur-Kernaussage】\n         Die Deformation ist kein biologischer Zufall, sondern die\n         somatisierte Manifestation einer zerstörten menschlichen Existenz.",
+        "lang": "de"
+      },
+      {
+        "kind": "h3",
+        "text": "2.1 核心原理解构与高分公理句",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "卡夫卡小说最震撼人心的核心，在于其将“形而上的生存危机”伪装成“官僚公文的机械日常”。",
+        "lang": "zh"
+      },
+      {
+        "kind": "quote",
+        "text": "*Klausur-Satz (德语核心公理句)*:",
+        "lang": "zh"
+      },
+      {
+        "kind": "quote",
+        "text": "\"Kafkas Diktion zeichnet sich durch eine radikale Ent-Emotionalisierung aus: Indem die physische Deformation zum Insekt in der nüchternen Sachlichkeit eines Protokolls geschildert wird, entlarvt der Text die Absurdität einer Lebenswelt, in der das Funktionieren des Rädchens im Getriebe höher wiegt als die menschliche Existenz selbst.\"",
+        "lang": "de"
+      },
+      {
+        "kind": "p",
+        "text": "---",
+        "lang": "de"
+      },
+      {
+        "kind": "h2",
+        "text": "3. 解题方法与决策树 (Methoden & Entscheidungsbaum)",
+        "lang": "zh"
+      },
+      {
+        "kind": "diagram",
+        "text": "[考场题目指令: Analysieren Sie den Textauszug...]\n                                         |\n         +-------------------------------+-------------------------------+\n         |                                                               |\n  【AFB I: Textanalyse / Aufbau】                                 【AFB II: Erzähltechnik & Motive】\n  1. Basissatz (Autor, Epoche, Gattung)                           1. Erzählform & Blickwinkel bestimmen\n  2. Sinnabschnitte & Handlungsverlauf                             2. Groteske Textstellen belegen (Zitate)\n  3. Konstituierung der Figur Gregor                              3. Motive: Raum, Beruf, Wetter, Familie\n         |                                                               |\n         +-------------------------------+-------------------------------+\n                                         |\n                       【AFB III: Kontextuelle Deutung】\n                       1. Einordnung in Epoche (Expressionismus / Moderne)\n                       2. Deutungsansatz: Psychoanalytisch / Marxistisch / Existenzialistisch\n                       3. Fazit mit theoriegeleitetem Abitur-Urteil",
+        "lang": "de"
+      },
+      {
+        "kind": "p",
+        "text": "---",
+        "lang": "de"
+      },
+      {
+        "kind": "h2",
+        "text": "4.  中文深度心法与提分桥梁 (CN-Methode)",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "**心法 1：切忌将《变形记》写成奇幻志怪小说**",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "中国学生容易受《聊斋志异》或西方魔幻故事影响，在考卷中大谈“巫术变异”。德国评分官（Erwartungshorizont）严厉扣分点就在于此：卡夫卡的变形是**心理现实的物质化**（Psychische Realität somatisiert），决不能当作魔法看，必须从社会学与心理学层面剖析。",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "**心法 2：“焦虑倒错”是 AFB II 的满分必杀技**",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "在分析第二段格里高尔的心理活动时，必须写出专用术语 **`Prioritätenverschiebung`**（优先级错乱倒置）与 **`Funktionalismus`**（功能主义）：面对变成虫子的滔天大祸，他脑子里想的却是火车时刻表与向老板请罪，这种怪诞感正是 15 NP 采分核心。",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "**心法 3：家庭关系的双重撕裂**",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "家庭表面上是避风港，本质上是债务索求者。格里高尔一旦丧失劳动生产力，家庭成员对他的爱立刻烟消云散，退化为厌弃与消灭。这一批判必须扣在 **`bürgerliche Scheinfamilie`**（市民阶级虚伪家庭）上。",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "---",
+        "lang": "de"
+      },
+      {
+        "kind": "h2",
+        "text": "5. 仿真训练与官方标准评分 (Klausur-Training & EHZ)",
+        "lang": "zh"
+      },
+      {
+        "kind": "h3",
+        "text": "5.1 考场真题示范 (AFB II: Analyse)",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "**Aufgabe**:",
+        "lang": "de"
+      },
+      {
+        "kind": "p",
+        "text": "*Analysieren Sie Kafkas Schilderung der morgendlichen Situation unter besonderer Berücksichtigung der sprachlichen Mittel und der Figurencharakteristik Gregors.*",
+        "lang": "de"
+      },
+      {
+        "kind": "h3",
+        "text": "5.2 15 NP 满分德语示范作答",
+        "lang": "zh"
+      },
+      {
+        "kind": "quote",
+        "text": "\"Bereits im einleitenden Satz etabliert Kafka die für sein Werk konstitutive Diskrepanz zwischen realem Horror und bürokratischer Gleichmut. Die Wortwahl 'ungeheures Ungeziefer' (Z. 2) evoziert Assoziationen des Ekels und der sozialen Ausgrenzung, wird jedoch grammatikalisch in einen unaufgeregten Temporalsatz eingebettet.",
+        "lang": "de"
+      },
+      {
+        "kind": "quote",
+        "text": "Die anschließende Detailbeschreibung von Gregors Körper (Z. 3–7) bedient sich geometrisch-präziser Begriffe wie 'bogenförmigen Versteifungen' und antithetischer Gegenüberstellungen ('panzerartig harter Rücken' vs. 'kläglich dünne Beine'). Hierdurch wird die physische Hilflosigkeit des Protagonisten sinnfällig gemacht.",
+        "lang": "de"
+      },
+      {
+        "kind": "quote",
+        "text": "Auf psychologischer Ebene offenbart Gregors innerer Monolog eine groteske Verschiebung der Prioritäten: Statt existenzielle Panik zu artikulieren, reflektiert er pragmatisch über die 'Plage des Reisens' (Z. 13) und die 'Sorgen um die Zuganschlüsse' (Z. 14). Diese Verdrängung der eigenen Deformation belegt seine tiefgreifende Entfremdung: Gregors Subjektivität ist der ökonomischen Funktionalität derart untergeordnet, dass er seine eigene Vernichtung erst wahrzunehmen vermag, als sie seine Arbeitsfähigkeit sabotiert.\"",
+        "lang": "de"
+      },
+      {
+        "kind": "p",
+        "text": "---",
+        "lang": "de"
+      },
+      {
+        "kind": "h2",
+        "text": "6. 易错陷阱与避坑指南 (Fehlerquellen)",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "**陷阱 1**：把叙述者写成“Ich-Erzähler”（第一人称叙述者）。",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "**修正**：全篇为 Er-Form，但视角极度内收（Personale Erzählhaltung mit erlebter Rede）。",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "**陷阱 2**：泛泛而谈“可怜的格里高尔”，使用大量主观抒情同情词汇。",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "**修正**：严格使用学术德语（Fachsprache）：`Instrumentalisierung`, `Verdinglichung`, `psychosomatische Reaktion`, `subversive Kritik`。",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "**陷阱 3**：忽略天气的隐喻功能。",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "**修正**：下雨天（trübes Wetter / Wassertropfen）不仅是环境写实，更是内心忧郁绝望（Melancholie）的外化。",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "---",
+        "lang": "de"
+      },
+      {
+        "kind": "h2",
+        "text": "7. 跨学科知识网络 (Vernetzung)",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "**Philosophie (哲学)**：",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "萨特《禁闭》（Jean-Paul Sartre: *Huis Clos*）：*L'enfer, c'est les autres*（他人即地狱）；",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "加缪《西西弗神话》（Albert Camus: *Le Mythe de Sisyphe*）：面对荒诞世界的清醒抗争与幻灭；",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "**SoWi (社会学与政治学)**：",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "卡尔·马克思《1844年经济学哲学手稿》：劳工异化理论（Entfremdung der Arbeit）；",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "马克斯·韦伯《新教伦理与资本主义精神》：现代官僚科层制与理性奴役铁笼（Gehäuse der Hörigkeit）。",
         "lang": "zh"
       }
     ]
@@ -28299,6 +29013,374 @@ export const allVaultNotesWithBlocks: GeneratedVaultNote[] = [
     ]
   },
   {
+    "id": "englisch-mlk-i-have-a-dream-speech-analysis",
+    "path": "02_Englisch/Texte-Analyse/MLK-I-Have-a-Dream-Speech-Analysis.md",
+    "fach": "Englisch",
+    "thema": "Martin Luther King I Have a Dream (Speech Analysis)",
+    "operatoren": [
+      "analyse",
+      "examine",
+      "assess",
+      "evaluate"
+    ],
+    "klausurrelevant": true,
+    "datum": "2026-10-05",
+    "tags": [
+      "EF",
+      "Englisch",
+      "Rhetoric",
+      "Speech",
+      "CivilRights"
+    ],
+    "blocks": [
+      {
+        "kind": "quote",
+        "text": "**直觉破冰与生活隐喻 (Der intuitive Anker / Alltagsanalogie)**：",
+        "lang": "zh"
+      },
+      {
+        "kind": "quote",
+        "text": "想象你在一家百年老店买了一张大额提货券（期票）。一百年后你去店里提货，店员却冷冰冰地在你的提货单上盖上“资金不足，恕不兑现”的退单印章，同时你发现店老板每天都在享用山珍海味——马丁·路德·金将美国《独立宣言》比作一张人人有份的“期票”，而黑人手里拿到的却是一张被跳票的“空头支票”。这种将宏大宪政原则直接平移至人人皆知的“商业违约”逻辑，让哪怕完全不懂政治的普通美国白人中产，也无法在良心和契约道德上辩白抵赖。",
+        "lang": "zh"
+      },
+      {
+        "kind": "quote",
+        "text": "**Klausur-Relevanz (Abitur 核心考点定位)**：",
+        "lang": "zh"
+      },
+      {
+        "kind": "quote",
+        "text": "政治演讲与修辞分析（Speech & Rhetorical Analysis / Aufgabenart 1.1）是北威州高中英语会考必考王牌大题。核心采分点：修辞手法结构化定性（Extended Financial Metaphors, Anaphoras, Biblical Allusions）、修辞诉求三角（Logos 宪政契约 ↔ Ethos 林肯与牧师威信 ↔ Pathos 痛苦肉体枷锁与历史控诉）、AFB III 辩证评析（法律程序平等 de jure vs 结构性正义赤字 de facto）以及 15 NP 学术英语写作模板。",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "---",
+        "lang": "de"
+      },
+      {
+        "kind": "h2",
+        "text": "1. 核心概念与 SBF 机理解构 (Kernbegriffe & SBF-Modell)",
+        "lang": "zh"
+      },
+      {
+        "kind": "h3",
+        "text": "1.1 术语与中德英对齐表",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "| 术语 (EN) | 德语对应 (DE) | 中文对应 (ZH) | 严谨学术定义 (Fachsprache) / 核心内涵 | 考场易错标记 |",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "|---|---|---|---|---|",
+        "lang": "de"
+      },
+      {
+        "kind": "p",
+        "text": "| **Promissory note** | Schuldschein / Verpflichtungsschein | 期票/法定借据 | Legally binding financial promise to pay a specific sum to the bearer. | 必须指出其将道德权利转化为法律硬债务的功能 |",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "| **Anaphora** | Anapher | 首语从复/首字排比 | Intentional repetition of a word/phrase at the start of successive clauses. | 禁仅停留在“强调”（emphasis），必须剖析情感交响节律 |",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "| **Antithesis** | Antithese | 对照/对偶 | Juxtaposition of contrasting ideas in balanced phrases (light vs. dark). | 需指出其黑白分明的善恶对决戏剧张力 |",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "| **Pathos / Ethos / Logos** | Rhetorische Triade | 亚里士多德修辞三角 | Three classical modes of persuasion: Emotional appeal, moral credibility, logical reason. | 考卷中必须说明三者的互动转化链条 |",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "| **De jure vs. De facto** | Rechtlich vs. Faktisch | 法律程序形式 vs. 现实社会实质 | Distinction between formal statutory law and real socio-economic condition. | AFB III 论证的满分王牌哲理辨析词 |",
+        "lang": "zh"
+      },
+      {
+        "kind": "h3",
+        "text": "1.2 系统 SBF 维度拆解 (Struktur - Verhalten - Funktion)",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "**Struktur (系统结构与修辞要素)**：",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "核心诉求三位一体：宪法先父历史期票（Logos） ↔ 林肯纪念堂下的先知牧师威望（Ethos） ↔ 奴役苦难与破晓救赎体验（Pathos）；",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "结构层级：历史回顾（1863解放宣言）  现实当头棒喝（百年未获自由）  商业违约索偿（兑现支票）  拒绝绝望（正义银行未破产）  梦想宣言。",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "**Verhalten (动态行为与演化因果)**：",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "情感曲线：庄严崇高  尖锐幻灭  道德紧迫（The fierce urgency of now）  圣洁坚定  狂欢释怀；",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "语言节奏：从舒缓沉郁的散文句，逐步过渡为排山倒海的黑人教堂宣讲对答节奏（Call and response crescendo）。",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "**Funktion (宏观功能与文明价值)**：",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "瓦解吉姆·克劳法案（Jim Crow laws）的道德合法性；",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "促成 1964 年《民权法案》与 1965 年《选举权法案》的历史性立法落地。",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "---",
+        "lang": "de"
+      },
+      {
+        "kind": "h2",
+        "text": "2. 知识结构与双重编码图解 (Struktur & Visual Schema)",
+        "lang": "zh"
+      },
+      {
+        "kind": "diagram",
+        "text": "+-----------------------------------------------------------------------------------+\n|               MARTIN LUTHER KING JR.: \"I HAVE A DREAM\" (1963)                     |\n+-----------------------------------------------------------------------------------+\n                                          |\n                +-------------------------+-------------------------+\n                |                                                   |\n    【Level 1: Rhetorical Masterclasses】                  【Level 2: Thematic & Ideological Core】\n    • Extended Metaphor: Financial Conceit                  • The American Creed & Constitution\n    • Anaphora: \"One hundred years later\"                   • Non-violent Resistance (Agape)\n    • Archetypal Antithesis: Light vs. Darkness             • Civil Religion: Biblical Exodus\n                |                                                   |\n                +-------------------------+-------------------------+\n                                          |\n                        [The Persuasive Arsenal]\n      LOGOS (The Check)          ETHOS (Lincoln & God)        PATHOS (Chains & Agony)\n      Statutory obligation;      Moral authority of the       Visceral suffering;\n      unredeemed contract        prophet and the founder      crying for deliverance\n                                          |\n                                          v\n                    【Synthese / Klausur-Kernaussage】\n      King reclaims the foundational promise of America to dismantle\n      segregation, proving that discrimination is constitutional treason.",
+        "lang": "de"
+      },
+      {
+        "kind": "h3",
+        "text": "2.1 核心原理解构与高分公理句",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "金博士演说的最高绝招，是“以子之矛攻子之盾”：利用美国人最自豪的宪政与商业信誉，倒逼统治当局认错。",
+        "lang": "zh"
+      },
+      {
+        "kind": "quote",
+        "text": "*Klausur-Satz (德语/英语核心高分句)*:",
+        "lang": "zh"
+      },
+      {
+        "kind": "quote",
+        "text": "\"By transposing the constitutional promise of inalienable rights into the commercial idiom of a defaulted 'promissory note', King deprives segregation of its political legitimacy and establishes that equal civil rights are not a negotiable concession, but an overdue debt owed by the American republic.\"",
+        "lang": "de"
+      },
+      {
+        "kind": "p",
+        "text": "---",
+        "lang": "de"
+      },
+      {
+        "kind": "h2",
+        "text": "3. 解题方法与决策树 (Methoden & Entscheidungsbaum)",
+        "lang": "zh"
+      },
+      {
+        "kind": "diagram",
+        "text": "[考场题目指令: Analyse the speech regarding rhetorical devices...]\n                                         |\n         +-------------------------------+-------------------------------+\n         |                                                               |\n  【Task 1: Summary / Structure】                                 【Task 2: Rhetorical Analysis】\n  1. State speaker, date, occasion, thesis                        1. Identify device with precise line quote\n  2. Divide into argumentative stages                              2. Explain functional mechanism (Logos/Pathos)\n  3. No personal comments in Task 1!                              3. Deduce audience impact (Reader-response)\n         |                                                               |\n         +-------------------------------+-------------------------------+\n                                         |\n                       【Task 3: Evaluation / Comment】\n                       1. Historic milestone (Civil Rights Act, Voting Rights)\n                       2. Contemporary deficit (Systemic racism, BLM, wealth gap)\n                       3. Dialectical synthesis: A living promise yet unredeemed",
+        "lang": "de"
+      },
+      {
+        "kind": "p",
+        "text": "---",
+        "lang": "de"
+      },
+      {
+        "kind": "h2",
+        "text": "4.  中文深度心法与提分桥梁 (CN-Methode)",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "**心法 1：彻底警惕“修辞报菜名”低分陷阱**",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "中国学生在考场上极易犯的通病是：罗列了 5 个 Metaphor、3 个 Anaphora，然后写一句通篇万能废话“It makes the speech more vivid and impressive”。在德国评分标准（Erwartungshorizont）中，这只能拿 AFB I 分（甚至 0 分）。必须写出**修辞的微观心理转化功能**：*Why does the financial metaphor disarm conservative white opposition?*（为什么商业支票隐喻能直接卸下白人保守派的心防？因为击中了他们的契约信仰！）。",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "**心法 2：亚里士多德修辞三角（Logos/Ethos/Pathos）必须成对联动**",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "在分析第二段时，将肉体锁链（Pathos: 触觉痛感）与林肯葛底斯堡用典（Ethos: 政治神圣性）相绑定，展现 15 NP 学术深度。",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "**心法 3：AFB III 必须展现辩证批判视野（Dialectics）**",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "既不能盲目歌颂“美国种族问题已完美解决”（天真幼稚），也不能全盘否定称“一切毫无改变”（历史虚无）。满分答案必须精准锚定：**法律制度层面（de jure）取得里程碑胜利，但经济社会实质层面（de facto）依然面临结构性鸿沟**。",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "---",
+        "lang": "de"
+      },
+      {
+        "kind": "h2",
+        "text": "5. 仿真训练与官方标准评分 (Klausur-Training & EHZ)",
+        "lang": "zh"
+      },
+      {
+        "kind": "h3",
+        "text": "5.1 考场真题示范 (AFB II: Analysis)",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "**Task**:",
+        "lang": "de"
+      },
+      {
+        "kind": "p",
+        "text": "*Analyse how King employs rhetorical devices and stylistic techniques in lines 1–16 to convince his audience of the urgent need for racial justice.*",
+        "lang": "de"
+      },
+      {
+        "kind": "h3",
+        "text": "5.2 15 NP 满分学术示范作答",
+        "lang": "zh"
+      },
+      {
+        "kind": "quote",
+        "text": "\"From the very outset, King clothes his civil rights plea in the sacred vestments of national history. Through the archaic opening 'Five score years ago' (l. 1), he alludes to Lincoln's iconic Gettysburg Address, thereby establishing an unshakeable moral Ethos.",
+        "lang": "de"
+      },
+      {
+        "kind": "quote",
+        "text": "He immediately constructs a striking archetypal antithesis between light and dark: The Emancipation Proclamation is hailed as a 'great beacon light of hope' (l. 2) and a 'joyous daybreak' (l. 4), contrasted with the 'flames of withering injustice' (l. 3) and the 'long night of captivity' (l. 4). This biblical typology elevates the historical emancipation into a providential liberation akin to the Exodus.",
+        "lang": "de"
+      },
+      {
+        "kind": "quote",
+        "text": "However, King brutally shatters this reverie through a sober reality check: The abrupt assertion 'the Negro still is not free' (l. 5) introduces a relentless fourfold anaphora 'One hundred years later' (ll. 6–10). This repetitive rhythmic cadence operates as an emotional crescendo (Pathos). Visceral tactile and spatial metaphors—such as 'manacles of segregation', 'chains of discrimination', and the 'lonely island of poverty in the midst of a vast ocean of prosperity'—materialize systemic exclusion into physical torture and economic banishment.",
+        "lang": "de"
+      },
+      {
+        "kind": "quote",
+        "text": "Most innovatively, King shifts from emotional outrage to contractual rationality (Logos) by introducing an extended financial conceit: The US Constitution and Declaration of Independence are defined as a 'promissory note' (l. 11), while America's failure to grant equality is branded as issuing a 'bad check' marked 'insufficient funds' (l. 15). By transposing human dignity into the inviolable American creed of commercial integrity, King disarms segregationist arguments: To deny civil rights is not merely cruel, but amounts to legal fraud against the republic's founding contract.\"",
+        "lang": "de"
+      },
+      {
+        "kind": "p",
+        "text": "---",
+        "lang": "de"
+      },
+      {
+        "kind": "h2",
+        "text": "6. 易错陷阱与避坑指南 (Fehlerquellen)",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "**陷阱 1**：把演讲文体当作小说或诗歌分析，忽略“现场演讲与受众反馈”（Oratory & Audience Interaction）。",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "**修正**：强调语言的音乐性（cadence）、布道传统（pulpit style）与呼应效应（call and response）。",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "**陷阱 2**：混淆 Metaphor 与 Simile。",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "**修正**：文本中几乎全都是隐喻（'chains of discrimination', 'bank of justice'），绝非带有 like/as 的明喻。",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "**陷阱 3**：在 Task 1（Summary）中加入主观评价或修辞分析。",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "**修正**：Task 1 严格中立概括核心论点，禁止出现任何修辞术语与个人感叹！",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "---",
+        "lang": "de"
+      },
+      {
+        "kind": "h2",
+        "text": "7. 跨学科知识网络 (Vernetzung)",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "**Deutsch (德语文学与修辞)**：",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "贝托尔特·布莱希特与毕希纳政治小册子《黑森快报》（*Der Hessische Landbote*：'Friede den Hütten! Krieg den Palästen!'）；",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "联邦总统施泰因迈尔《民主演讲》（*Rede zur Demokratie*）：修辞抗争与制度认同；",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "**Philosophie (哲学)**：",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "约翰·罗尔斯《正义论》（John Rawls: *A Theory of Justice*）：无知之幕与基本自由平等分配；",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "**SoWi (社会学与政治学)**：",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "结构性不平等（Soziale Ungleichheit）、吉尼系数（Gini-Koeffizient）与防卫性民主（Wehrhafte Demokratie）。",
+        "lang": "zh"
+      }
+    ]
+  },
+  {
     "id": "englisch-mediation-de-en-abitur-teil-b",
     "path": "02_Englisch/Texte-Analyse/Mediation-DE-EN-Abitur-Teil-B.md",
     "fach": "Englisch",
@@ -30302,6 +31384,379 @@ export const allVaultNotesWithBlocks: GeneratedVaultNote[] = [
       {
         "kind": "p",
         "text": "2. 元认知：哪里最卡/最易混？因为…所以下次先…（扶手：是因为分不清 formal vs semi-formal，还是忍不住全翻？因为…所以下次先看读者再动笔…）",
+        "lang": "zh"
+      }
+    ]
+  },
+  {
+    "id": "englisch-miller-death-of-a-salesman-american-dream",
+    "path": "02_Englisch/Texte-Analyse/Miller-Death-of-a-Salesman-American-Dream.md",
+    "fach": "Englisch",
+    "thema": "Arthur Miller Death of a Salesman (American Dream)",
+    "operatoren": [
+      "analyse",
+      "examine",
+      "interpret",
+      "evaluate"
+    ],
+    "klausurrelevant": true,
+    "datum": "2026-10-05",
+    "tags": [
+      "EF",
+      "Englisch",
+      "Drama",
+      "AmericanDream",
+      "Capitalism"
+    ],
+    "blocks": [
+      {
+        "kind": "quote",
+        "text": "**直觉破冰与生活隐喻 (Der intuitive Anker / Alltagsanalogie)**：",
+        "lang": "zh"
+      },
+      {
+        "kind": "quote",
+        "text": "想象一个人为了一家公司整整拉车卖命三十年。他每天强颜欢笑，把自己的性格、脾气和尊严统统打包成“讨人喜欢的产品”卖给客户；到了六十岁，他老态龙钟跑不动业务了，年轻的冷酷老板毫不留情地把他当场解雇。他在绝望中故意制造车祸自杀，只为了让家人领到两万美元人寿保险赔偿金来还清最后一期房贷——阿瑟·米勒在1949年写下的《推销员之死》，刺穿了资本主义消费社会最血腥的拜金神话：当一个人被商品化、物化为流水线工具零件时，他连死，都只能把自己算作一笔金钱对价。",
+        "lang": "zh"
+      },
+      {
+        "kind": "quote",
+        "text": "**Klausur-Relevanz (Abitur 核心考点定位)**：",
+        "lang": "zh"
+      },
+      {
+        "kind": "quote",
+        "text": "现代美国戏剧与美国梦的蜕变（Modern American Drama & The Corrupted American Dream）是北威州高中英语会考长盛不衰的必考压轴核心。重点考查：平民悲剧理论（Tragedy and the Common Man）、推销员的人格商品化（Commodification of Personality / Smile and Shoeshine）、表现主义舞台时空交织（Mobile Concurrency）、终幕落幕挽歌（Requiem）的戏剧反讽（Free and Clear）与资本主义批判。",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "---",
+        "lang": "de"
+      },
+      {
+        "kind": "h2",
+        "text": "1. 核心概念与 SBF 机理解构 (Kernbegriffe & SBF-Modell)",
+        "lang": "zh"
+      },
+      {
+        "kind": "h3",
+        "text": "1.1 术语与中德英对齐表",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "| 术语 (EN) | 德语对应 (DE) | 中文对应 (ZH) | 严谨学术定义 (Fachsprache) / 核心内涵 | 考场易错标记 |",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "|---|---|---|---|---|",
+        "lang": "de"
+      },
+      {
+        "kind": "p",
+        "text": "| **The Corrupted American Dream** | Der korrumpierte amerikanische Traum | 蜕变扭曲的美国梦 | Degeneration of the original puritan/democratic ideal of self-reliance into ruthless material consumerism. | 必须指出从“艰苦奋斗与自治”堕落为“拜金与名利场” |",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "| **Commodification of the Self** | Kommodifizierung der Persönlichkeit | 人格/自我商品化 | The psychological process where an individual packages their character, smile and dignity as marketable goods. | 必须联系威利“riding on a smile and a shoeshine”论述 |",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "| **Tragedy of the Common Man** | Tragödie des gewöhnlichen Menschen | 平民悲剧理论 | Arthur Miller's poetics: The ordinary working citizen possesses tragic nobility when fighting for their dignity. | 绝不可写成古典贵族悲剧（Aristoteles/Shakespeare） |",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "| **Mobile Concurrency** | Mobile Konkurrenz der Zeitebenen | 表现主义时空交织舞台手法 | Fluid blending of past memories, guilt hallucinations, and present reality directly on stage. | 舞台布景分析中的王牌专业术语 |",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "| **Dramatic Irony** | Dramatische Ironie | 戏剧反讽 | Irony created when the audience or situation exposes bitter contrasts unknown or unresolved by characters. | 聚焦分析琳达最后一句“We're free and clear” |",
+        "lang": "zh"
+      },
+      {
+        "kind": "h3",
+        "text": "1.2 系统 SBF 维度拆解 (Struktur - Verhalten - Funktion)",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "**Struktur (系统结构与家庭悲剧架构)**：",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "人物关系星座：威利·洛曼（迷执的悲剧父亲） ↔ 琳达（盲目守护的共谋母亲） ↔ 比夫（觉醒觉悟的长子） ↔ 哈皮（沉沦继承毒性野心的次子） ↔ 查利与伯纳德（脚踏实地的理性对照组）；",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "空间舞台拓扑：布鲁克林逼仄的小屋（被周围现代摩天大楼压迫得透不过气） ↔ 枯死的后院草坪（象征生命生机的枯竭与无法生根）。",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "**Verhalten (动态行为与演化因果)**：",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "精神崩溃曲线：业务下滑  幻想回忆穿插  遭年轻老板霍华德当场羞辱解雇  种子发芽失败  用车祸自杀换取保单；",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "价值冲突因果：威利坚信“只要讨人喜欢，就能在商界无往不利”  遭到市场无情抛弃  比夫撕破皇帝的新衣  哈皮执迷不悟。",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "**Funktion (宏观功能与文学价值)**：",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "宣告战后美国中产阶级消费主义乌托邦的神话破产；",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "捍卫普通劳动者面对资本主义异化掠夺时不可剥夺的人人格尊严（“A man is not a piece of fruit!”）。",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "---",
+        "lang": "de"
+      },
+      {
+        "kind": "h2",
+        "text": "2. 知识结构与双重编码图解 (Struktur & Visual Schema)",
+        "lang": "zh"
+      },
+      {
+        "kind": "diagram",
+        "text": "+-----------------------------------------------------------------------------------+\n|               ARTHUR MILLER: \"DEATH OF A SALESMAN\" (1949)                         |\n+-----------------------------------------------------------------------------------+\n                                          |\n                +-------------------------+-------------------------+\n                |                                                   |\n    【Level 1: The Corrupted American Dream】              【Level 2: The Two Sons' Divergence】\n    • Shift from Jeffersonian hard work                    • BIFF: Anagnorisis & Liberation\n      to cutthroat popularity & superficial charm           \"The man didn't know who he was\"\n    • Personality as merchandise (Smile & shoeshine)        Reclaims authentic manual existence\n    • \"No rock bottom\" (Permanent precarity)               • HAPPY: Tragic Repetition & Blindness\n                |                                           \"I'm gonna beat this racket\"\n                +-------------------------+-------------------------+\n                                          |\n                        [The Climactic Irony in Requiem]\n       Financial Liberation               vs.               Existential Annihilation\n       Mortgage paid off today;                             The breadwinner is dead;\n       thirty years of debt cleared                         nobody left in the empty home\n                                          |\n                                          v\n                    【Synthese / Klausur-Kernaussage】\n      Willy's suicide is not a triumph of love, but the ultimate commodification:\n      He trades his biological flesh for a $20,000 insurance policy.",
+        "lang": "de"
+      },
+      {
+        "kind": "h3",
+        "text": "2.1 核心原理解构与高分公理句",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "米勒对美国战后资本主义文明最犀利的控诉，在于它把神圣的生命兑换成了冰冷的会计负债表。",
+        "lang": "zh"
+      },
+      {
+        "kind": "quote",
+        "text": "*Klausur-Satz (德语/英语核心高分句)*:",
+        "lang": "zh"
+      },
+      {
+        "kind": "quote",
+        "text": "\"In 'Death of a Salesman', Miller unmasks the predatory nature of the American Dream: Willy Loman's tragic downfall demonstrates that an economic system founded exclusively on marketability and consumer success inevitably reduces the working individual to a disposable commodity, commodifying even his death into an insurance settlement.\"",
+        "lang": "de"
+      },
+      {
+        "kind": "p",
+        "text": "---",
+        "lang": "de"
+      },
+      {
+        "kind": "h2",
+        "text": "3. 解题方法与决策树 (Methoden & Entscheidungsbaum)",
+        "lang": "zh"
+      },
+      {
+        "kind": "diagram",
+        "text": "[考场题目指令: Analyse the excerpt from the Requiem...]\n                                         |\n         +-------------------------------+-------------------------------+\n         |                                                               |\n  【Task 1: Character Perspectives】                              【Task 2: Dramatic Techniques】\n  1. Contrast Charley's eulogy with Biff's verdict               1. Deconstruct metaphors (\"in the blue\", \"earthquake\")\n  2. Explain Happy's stubborn inheritance of ambition            2. Analyse staging (cemetery, silence, flute motif)\n  3. Contextualize Linda's inability to weep                     3. Interpret crushing dramatic irony (\"free and clear\")\n         |                                                               |\n         +-------------------------------+-------------------------------+\n                                         |\n                       【Task 3: Theoretical Comment】\n                       1. Miller's poetics: Tragedy and the Common Man\n                       2. The illusion of popularity vs. authentic self-worth\n                       3. Contemporary relevance: Burnout, gig economy & precarity",
+        "lang": "de"
+      },
+      {
+        "kind": "p",
+        "text": "---",
+        "lang": "de"
+      },
+      {
+        "kind": "h2",
+        "text": "4.  中文深度心法与提分桥梁 (CN-Methode)",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "**心法 1：切忌把威利仅仅当作一个“吹牛可恶的失败者”**",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "中国学生极易受到道德评判影响，在试卷上指责威利“虚荣、不诚实、对妻子不忠”。在德国评分标准（Erwartungshorizont）中，威利绝不是简单的反面人物，而是一个**崇高与悲剧纠缠的牺牲品**：他自始至终深爱着儿子，他为了给比夫留下创业基金甘愿摔得粉身碎骨。写出这种**崇高性与被异化的荒诞性交织**，是获得 15 NP 的分水岭。",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "**心法 2：深挖“自由”（Free）的双关多义性**",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "在分析终幕琳达的台词“We're free and clear”时，必须指出其双关语（Polysemy）：表面上是房贷清零、经济自由；深层却是全家人格破产、生命毁灭。房子属于他们了，但家没有了。",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "**心法 3：比夫的觉醒是通向“真实生活”（Authenticity）的救赎**",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "比夫看穿了父亲一辈子在推销员面具下的自欺欺人，选择回到西部农场干体力活。这象征着从“被异化的虚伪中产阶级神话”回归到“双手劳动的尊严”。",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "---",
+        "lang": "de"
+      },
+      {
+        "kind": "h2",
+        "text": "5. 仿真训练与官方标准评分 (Klausur-Training & EHZ)",
+        "lang": "zh"
+      },
+      {
+        "kind": "h3",
+        "text": "5.1 考场真题示范 (AFB II: Analysis)",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "**Task**:",
+        "lang": "de"
+      },
+      {
+        "kind": "p",
+        "text": "*Analyse how Charley, Biff, and Happy interpret Willy's life and death in the Requiem, and examine the dramatic irony of Linda's closing words.*",
+        "lang": "de"
+      },
+      {
+        "kind": "h3",
+        "text": "5.2 15 NP 满分学术示范作答",
+        "lang": "zh"
+      },
+      {
+        "kind": "quote",
+        "text": "\"In the concluding Requiem, Miller orchestrates a profound dramatic dialectic between conflicting interpretations of Willy's demise.",
+        "lang": "de"
+      },
+      {
+        "kind": "quote",
+        "text": "Charley acts as a compassionate societal commentator, delivering a poetic defense of the salesman's fate. Through evocative spatial and tactile metaphors, Charley describes the salesman as a man 'way out there in the blue, riding on a smile and a shoeshine' (ll. 6–7). Since the salesman produces no tangible commodities, he is forced to commodify his own personality. His existence has 'no rock bottom' (l. 4); thus, Charley absolves Willy of personal blame, declaring that self-delusion is an occupational necessity in consumer capitalism ('a salesman is got to dream... it comes with the territory').",
+        "lang": "de"
+      },
+      {
+        "kind": "quote",
+        "text": "In sharp contrast, Biff arrives at a sobering tragic enlightenment (Anagnorisis): 'The man didn't know who he was' (l. 2, l. 10). Biff diagnoses Willy's fundamental error: By conforming to the hollow capitalist myth of being 'well-liked', Willy betrayed his authentic affinity for manual carpentry. Biff breaks the chain of illusion by refusing to participate in the metropolitan rat race. Conversely, Happy regresses into obstinate blindness (Hamartia). By vowing to 'beat this racket' and achieve Willy's dream of coming out 'number-one man' (ll. 13–14), Happy perpetuates the toxic cycle of competitive materialism into the next generation.",
+        "lang": "de"
+      },
+      {
+        "kind": "quote",
+        "text": "Finally, Linda's heart-wrenching lament culminates in devastating dramatic irony: 'I made the last payment on the house today... there'll be nobody home. We're free and clear' (l. 16). The legal ambiguity of 'free' exposes the brutal logic of modern capitalism: The mortgage is paid off, the private property is secured, yet the human soul who laboured for thirty years to buy it has been physically annihilated. Financial freedom arrives precisely when life itself has been forfeited.\"",
+        "lang": "de"
+      },
+      {
+        "kind": "p",
+        "text": "---",
+        "lang": "de"
+      },
+      {
+        "kind": "h2",
+        "text": "6. 易错陷阱与避坑指南 (Fehlerquellen)",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "**陷阱 1**：把戏剧当成纯粹的社会学论著，忽略舞台视听符号。",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "**修正**：结合笛声隐喻（Flute motif 代表父亲拓荒时代的纯朴与大自然）、被摩天大楼遮挡的阳光与墓地寂静等舞台意象展开立体分析。",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "**陷阱 2**：忽视邻居查利（Charley）的真正对照功能。",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "**修正**：查利和他的儿子伯纳德（Bernard）从不吹牛，脚踏实地钻研法律成为最高法院律师，反衬出威利一家的浮夸成功学幻梦。",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "**陷阱 3**：将威利的自杀简单定性为懦弱逃避。",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "**修正**：自杀在他扭曲的心智中是一场“英雄主义的商业交易”（用命换两万美金保险）。",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "---",
+        "lang": "de"
+      },
+      {
+        "kind": "h2",
+        "text": "7. 跨学科知识网络 (Vernetzung)",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "**Deutsch (德语文学与戏剧)**：",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "弗朗茨·卡夫卡《变形记》：小职员为偿还家庭债务遭异化榨取；",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "格奥尔格·毕希纳《沃伊采克》：社会底层无产者被制度逼入疯狂与毁灭；",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "**Philosophie (哲学)**：",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "卡尔·马克思《资本论》：商品拜物教（Warenfetischismus）与劳工异化；",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "**SoWi (社会科学)**：",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "劳动力市场灵活化与零工经济的不稳定性（Prekarisierung / Gig Economy）；",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "消费主义生活方式与社会阶层流动的制度性障碍。",
         "lang": "zh"
       }
     ]
@@ -32343,6 +33798,364 @@ export const allVaultNotesWithBlocks: GeneratedVaultNote[] = [
       {
         "kind": "quote",
         "text": "**版权**：KLP 条目名引自 NRW KLP Englisch 2023 的结构性描述 [已验证]；题干结构取自 NRW 公开题 [据推断]；素材与解析均为原创。未抄出版社教辅、未搬教材正文。",
+        "lang": "zh"
+      }
+    ]
+  },
+  {
+    "id": "englisch-orwell-1984-dystopian-surveillance",
+    "path": "02_Englisch/Texte-Analyse/Orwell-1984-Dystopian-Surveillance.md",
+    "fach": "Englisch",
+    "thema": "George Orwell 1984 (Dystopia & Surveillance)",
+    "operatoren": [
+      "analyse",
+      "examine",
+      "discuss",
+      "evaluate"
+    ],
+    "klausurrelevant": true,
+    "datum": "2026-10-05",
+    "tags": [
+      "EF",
+      "Englisch",
+      "Dystopia",
+      "Surveillance",
+      "Media"
+    ],
+    "blocks": [
+      {
+        "kind": "quote",
+        "text": "**直觉破冰与生活隐喻 (Der intuitive Anker / Alltagsanalogie)**：",
+        "lang": "zh"
+      },
+      {
+        "kind": "quote",
+        "text": "想象你买了一部永远无法关机、没有静音键的智能手机。不仅如此，前置摄像头和麦克风24小时无死角开启，把你翻身、打哈欠、看特定网页时哪怕0.1秒的微表情，统统上传给由算法驱动的“思想警察”；如果你在心里产生了一丝对学校或公司的怨恨，你的肉身就会在第二天清晨直接从世界上被注销抹除——奥威尔在1949年构想的“电幕”（telescreen），正是现代大数据算法监控、信息茧房与后真相时代最震撼人心的警世寓言。",
+        "lang": "zh"
+      },
+      {
+        "kind": "quote",
+        "text": "**Klausur-Relevanz (Abitur 核心考点定位)**：",
+        "lang": "zh"
+      },
+      {
+        "kind": "quote",
+        "text": "反乌托邦小说与媒体控制（Dystopian Fiction & Media Manipulation）在北威州高中英语会考（Aufgabentyp 1A）中占绝对统治地位。核心考核：全景敞视监控机制（Panoptic Surveillance）、新话与语言决定论（Newspeak & Linguistic Determinism）、双重思想（Doublethink）的认识论摧毁、AFB III 辩证评析现代“监控资本主义”（Surveillance Capitalism vs. Totalitarian Coercion）。",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "---",
+        "lang": "de"
+      },
+      {
+        "kind": "h2",
+        "text": "1. 核心概念与 SBF 机理解构 (Kernbegriffe & SBF-Modell)",
+        "lang": "zh"
+      },
+      {
+        "kind": "h3",
+        "text": "1.1 术语与中德英对齐表",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "| 术语 (EN) | 德语对应 (DE) | 中文对应 (ZH) | 严谨学术定义 (Fachsprache) / 核心内涵 | 考场易错标记 |",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "|---|---|---|---|---|",
+        "lang": "de"
+      },
+      {
+        "kind": "p",
+        "text": "| **Telescreen** | Teleschirm | 电幕（双向监控电视） | Bi-directional apparatus broadcasting propaganda while constantly transmitting audio/video to the Thought Police. | 必须指出其“无法被完全关闭”的物理特性 |",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "| **Doublethink** | Doppeldenk | 双重思想 | The power of holding two contradictory beliefs in one's mind simultaneously, and accepting both of them. | 禁混同于单纯的撒谎（撒谎者知情，双重思想则自我洗脑） |",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "| **Newspeak** | Neusprech | 新话 | The official language designed to diminish the range of thought by eliminating words of freedom. | 必须结合萨丕尔-沃尔夫假说（语言决定思维）论证 |",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "| **Thoughtcrime** | Gedankendelikt | 思想罪 | The criminal act of holding unspoken, unorthodox thoughts contrary to the Party ideology. | 指出其将“心理思绪”等同于“肉体极刑”的恐怖机制 |",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "| **Panopticism** | Panoptismus | 全景敞视控制 | Architectural/technological surveillance where subjects never know when they are watched, forcing internal self-policing. | 规范引用边沁/福柯全景敞视概念 |",
+        "lang": "zh"
+      },
+      {
+        "kind": "h3",
+        "text": "1.2 系统 SBF 维度拆解 (Struktur - Verhalten - Funktion)",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "**Struktur (系统结构与监控网络)**：",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "核心压迫矩阵：内党（寡头脑髓） ↔ 外党成员如温斯顿（被全面监控的齿轮） ↔ 无产者（被放任愚昧化的工蚁）；",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "监控实体网络：双向电幕 ↔ 老大哥巨幅招贴画 ↔ 巡逻直升机 ↔ 告密儿童（Junior Spies） ↔ 思想警察。",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "**Verhalten (动态行为与演化因果)**：",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "心理内化因果链：不可撤销的监控  假定自己每秒都在被审视  习惯内化为生存反射本能  自我思想阉割；",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "语言改造因果链：每年精简新话词典  削减多义词与同义词  摧毁反抗的词汇载体  反叛在生理上不可被思想。",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "**Funktion (宏观功能与政治本质)**：",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "极权主义权力的纯粹追求：“权力不是手段，权力本身就是目的；建立权力的目的就是彻底粉碎人类心灵并按照自己的意愿重新塑形”。",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "---",
+        "lang": "de"
+      },
+      {
+        "kind": "h2",
+        "text": "2. 知识结构与双重编码图解 (Struktur & Visual Schema)",
+        "lang": "zh"
+      },
+      {
+        "kind": "diagram",
+        "text": "+-----------------------------------------------------------------------------------+\n|               GEORGE ORWELL: \"NINETEEN EIGHTY-FOUR\" (1949)                        |\n+-----------------------------------------------------------------------------------+\n                                          |\n                +-------------------------+-------------------------+\n                |                                                   |\n    【Level 1: Technological Panopticon】                  【Level 2: Epistemological Control】\n    • Telescreen (No off-switch)                           • Doublethink (Contradictions accepted)\n    • Big Brother Posters (Eyes follow you)                • Newspeak (Linguistic amputation)\n    • Permanent paranoia as bodily habit                   • Reality Control (Mutability of past)\n                |                                                   |\n                +-------------------------+-------------------------+\n                                          |\n                        [The Three Paradoxical Slogans]\n         WAR IS PEACE             FREEDOM IS SLAVERY         IGNORANCE IS STRENGTH\n         (Perpetual conflict      (Isolation is fatal;       (Eliminate critical\n          consumes surplus)        surrender to the Party)    thought for stability)\n                                          |\n                                          v\n                    【Synthese / Klausur-Kernaussage】\n      Totalitarianism does not merely demand external obedience;\n      it conquers the human interior by abolishing the concept of objective truth.",
+        "lang": "de"
+      },
+      {
+        "kind": "h3",
+        "text": "2.1 核心原理解构与高分公理句",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "奥威尔反乌托邦最骇人之处，在于它打破了“人的内心是不可侵犯的避难所”的古典信念。",
+        "lang": "zh"
+      },
+      {
+        "kind": "quote",
+        "text": "*Klausur-Satz (德语/英语核心高分句)*:",
+        "lang": "zh"
+      },
+      {
+        "kind": "quote",
+        "text": "\"Orwell's dystopian nightmare demonstrates that the ultimate goal of totalitarian power is not mere physical compliance, but the total colonization of the human mind: By weaponizing the panoptic telescreen and amputating language via Newspeak, the Party destroys the very cognitive structures required for independent conscience.\"",
+        "lang": "de"
+      },
+      {
+        "kind": "p",
+        "text": "---",
+        "lang": "de"
+      },
+      {
+        "kind": "h2",
+        "text": "3. 解题方法与决策树 (Methoden & Entscheidungsbaum)",
+        "lang": "zh"
+      },
+      {
+        "kind": "diagram",
+        "text": "[考场题目指令: Analyse the depiction of surveillance and control...]\n                                         |\n         +-------------------------------+-------------------------------+\n         |                                                               |\n  【Task 1: Setting & Atmosphere】                                【Task 2: Literary Techniques】\n  1. Depict dreary London / Victory Mansions                      1. Sensory imagery (decay, cabbage, dust)\n  2. Contrast poverty with Party propaganda                       2. Panoptic motifs (telescreen, posters)\n  3. Establish Winston's precarious position                      3. Semantic paradoxes (Party slogans)\n         |                                                               |\n         +-------------------------------+-------------------------------+\n                                         |\n                       【Task 3: Comment / Evaluation】\n                       1. Orwell's prophecy vs. 21st century reality\n                       2. Hard coercion (1984) vs. soft surveillance capitalism (Zuboff)\n                       3. Synthesis: Post-truth, algorithmic echo chambers & data privacy",
+        "lang": "de"
+      },
+      {
+        "kind": "p",
+        "text": "---",
+        "lang": "de"
+      },
+      {
+        "kind": "h2",
+        "text": "4.  中文深度心法与提分桥梁 (CN-Methode)",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "**心法 1：精准区分“硬暴力恐怖”与“语言认知控制”的双重维度**",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "在分析奥威尔时，切忌只写“警察抓人打人”（那是 AFB I 浅层复述）。满分答卷必须写出**认知层面的双重思想（Doublethink）与新话（Newspeak）**：极权统治不是消灭肉体，而是让你真心实意地热爱老大哥，发自内心地承认“2+2=5”。",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "**心法 2：破败感（Squalor）的政治经济学功能**",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "嗅觉与触觉描写（煮烂卷心菜的味道、断电的电梯、粗糙的杜松子酒）绝不是随便写写环境，它是**极权控制的物资匮乏工具**（Weaponized Deprivation）：让人终日为肥皂和刮胡刀片奔波，从而彻底剥夺民众精神反思的闲暇（Bandwidth）。",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "**心法 3：AFB III 必须引入“监控资本主义”（Surveillance Capitalism）做辩证对比**",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "现代社会没有思想警察拿枪顶着你，但每个人自愿把人脸数据、定位信息、搜索记录交给科技寡头。结合肖莎娜·祖博夫（Shoshana Zuboff）的监控资本主义理论，指出当代是从“外部强迫”走向“柔性自愿出卖隐私”，能够直接斩获 15 NP。",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "---",
+        "lang": "de"
+      },
+      {
+        "kind": "h2",
+        "text": "5. 仿真训练与官方标准评分 (Klausur-Training & EHZ)",
+        "lang": "zh"
+      },
+      {
+        "kind": "h3",
+        "text": "5.1 考场真题示范 (AFB II: Analysis)",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "**Task**:",
+        "lang": "de"
+      },
+      {
+        "kind": "p",
+        "text": "*Analyse how Orwell creates a claustrophobic and oppressive atmosphere in lines 1–16 through sensory details, symbols, and linguistic paradoxes.*",
+        "lang": "de"
+      },
+      {
+        "kind": "h3",
+        "text": "5.2 15 NP 满分学术示范作答",
+        "lang": "zh"
+      },
+      {
+        "kind": "quote",
+        "text": "\"Right from the introductory sentence, Orwell unsettles the reader through the estranged, uncanny image of clocks striking 'thirteen' (l. 1), instantly subverting the familiar temporal order.",
+        "lang": "de"
+      },
+      {
+        "kind": "quote",
+        "text": "The setting is built upon a sharp, ironic contrast between ideological nomenclature and sordid reality: The decaying tenement is satirically christened 'Victory Mansions' (l. 3), yet the sensory details evoke nauseating deprivation—the hallway 'smelt of boiled cabbage and old rag mats' (l. 4), the elevator is broken, and electric current is cut off. This squalor illustrates how material scarcity is systematically deployed to exhaust the human spirit.",
+        "lang": "de"
+      },
+      {
+        "kind": "quote",
+        "text": "Furthermore, Orwell establishes a panoptic architecture of total subjugation. The gargantuan posters of Big Brother with eyes that 'follow you about when you move' (l. 7) institutionalize an omniscient patriarchal tyrant. This is reinforced mechanically by the 'telescreen' (l. 10), which cannot be shut off, erasing the sacrosanct boundary between state coercion and private intimacy. Winston's defensive posture—turning his back to the plaque—betrays that paranoia has become a physiological instinct.",
+        "lang": "de"
+      },
+      {
+        "kind": "quote",
+        "text": "Finally, the three paradoxical slogans 'WAR IS PEACE // FREEDOM IS SLAVERY // IGNORANCE IS STRENGTH' (l. 16) materialize the psychological regime of Doublethink. By violently equating mutually exclusive semantic opposites, the Party dismantles formal logic, ensuring that language no longer serves as a vehicle for truth, but as an instrument of total ideological domination.\"",
+        "lang": "de"
+      },
+      {
+        "kind": "p",
+        "text": "---",
+        "lang": "de"
+      },
+      {
+        "kind": "h2",
+        "text": "6. 易错陷阱与避坑指南 (Fehlerquellen)",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "**陷阱 1**：把《1984》当成科幻冒险小说（Sci-Fi action）。",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "**修正**：其文体定位是反乌托邦政治讽刺寓言（Dystopian political satire / allegorical fiction）。",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "**陷阱 2**：混淆 Big Brother 与具体的某个人。",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "**修正**：老大哥可能根本不是真人，而是一个永不死亡的意识形态神化面具与凝聚崇拜的心理图腾。",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "**陷阱 3**：忽略 Winston 自身的妥协与局限性。",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "**修正**：温斯顿不是无敌的好莱坞英雄，他最终在 101 号房间被老鼠酷刑彻底击溃，并在精神上完全向党投降。",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "---",
+        "lang": "de"
+      },
+      {
+        "kind": "h2",
+        "text": "7. 跨学科知识网络 (Vernetzung)",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "**Philosophie (哲学)**：",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "汉娜·阿伦特《极权主义的起源》：意识形态与全面恐怖的本质；",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "维特根斯坦《逻辑哲学论》：语言界限与思维边界的制约；",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "**SoWi (社会科学)**：",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "防卫性民主（Wehrhafte Demokratie）与基本权利保护；",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "数字化平台寡头垄断与注意力经济（Aufmerksamkeitsökonomie）。",
         "lang": "zh"
       }
     ]
@@ -37110,6 +38923,680 @@ export const allVaultNotesWithBlocks: GeneratedVaultNote[] = [
       {
         "kind": "quote",
         "text": "⏳ 待确认：EF 阶段的 **young adult novel 书名未定**（老师未答复）[未获取到]。本篇方法不依赖具体书名；书名确认后只需补「本书人物表 + 叙事视角清单」，结构不变。",
+        "lang": "zh"
+      }
+    ]
+  },
+  {
+    "id": "mathe-aenderungsrate-erhaltungssaetze-mint-vernetzung",
+    "path": "03_Mathe/Aenderungsrate-Erhaltungssaetze-MINT-Vernetzung.md",
+    "fach": "Mathe",
+    "thema": "Aenderungsrate-Erhaltungssaetze-MINT-Vernetzung",
+    "operatoren": [
+      "berechnen",
+      "analysieren",
+      "interpretieren",
+      "vergleichen"
+    ],
+    "klausurrelevant": true,
+    "datum": "2026-10-06",
+    "tags": [
+      "EF",
+      "Mathe",
+      "Physik",
+      "Chemie",
+      "Bio",
+      "Vernetzung"
+    ],
+    "blocks": [
+      {
+        "kind": "quote",
+        "text": "**直觉破冰与生活隐喻 (Der intuitive Anker / Alltagsanalogie)**：",
+        "lang": "zh"
+      },
+      {
+        "kind": "quote",
+        "text": "想象你正在驾驶一辆混合动力汽车：仪表盘上的车速表显示的不是你今天开过的总里程除以总时间（平均变化率），而是指针在这一瞬间指着的刻度——这就是**导数（Lokale Änderungsrate / 瞬时变化率）**。当你踩下刹车，动能转化为电池电能，总能量没有凭空消失——这就是**守恒律（Erhaltungssatz）**。",
+        "lang": "zh"
+      },
+      {
+        "kind": "quote",
+        "text": "在理科四大基础学科中，大自然其实使用着同一种数学母语：",
+        "lang": "zh"
+      },
+      {
+        "kind": "quote",
+        "text": "**数学**将它抽象为极限差商与切线斜率 $f'(x) = \\lim_{\\Delta x \\to 0} \\frac{\\Delta y}{\\Delta x}$；",
+        "lang": "zh"
+      },
+      {
+        "kind": "quote",
+        "text": "**物理**用它描述位置对时间的导数 $v(t) = s'(t)$，并以能量守恒定律作为系统约束；",
+        "lang": "zh"
+      },
+      {
+        "kind": "quote",
+        "text": "**化学**用它衡量物质浓度随时间的消耗与生成速率 $v = -\\frac{1}{\\nu}\\frac{dc}{dt}$，并以质量与电荷守恒维持平衡；",
+        "lang": "zh"
+      },
+      {
+        "kind": "quote",
+        "text": "**生物**用它量化活细胞酶促反应速率与生态种群动态增长 $\\frac{dN}{dt}$，并在开放系统中维持动态稳态（Fließgleichgewicht）。",
+        "lang": "zh"
+      },
+      {
+        "kind": "quote",
+        "text": "**Klausur-Relevanz (Abitur 核心考点定位)**：",
+        "lang": "zh"
+      },
+      {
+        "kind": "quote",
+        "text": "贯穿 NRW KLP 数学（Analysis IF1）、物理（Kinematik & Dynamik IF1）、化学（Kinetik & Gleichgewicht IF1/IF2）与生物（Enzymkinetik & Oekologie IF1/IF3）。跨学科图表斜率解读（Steigungsinterpretation im Sachzusammenhang）是 AFB II 与 AFB III 综合大题的必考采分点。",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "---",
+        "lang": "de"
+      },
+      {
+        "kind": "h2",
+        "text": "1. 核心概念与 SBF 机理解构 (Kernbegriffe & SBF-Modell)",
+        "lang": "zh"
+      },
+      {
+        "kind": "h3",
+        "text": "1.1 术语与中德对齐表",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "| 术语 (DE) | 对应中文 | English (US/AP) | 严谨学术定义 (Fachsprache) / 核心公式 | 考场易错标记 |",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "|---|---|---|---|---|",
+        "lang": "de"
+      },
+      {
+        "kind": "p",
+        "text": "| **Lokale Änderungsrate** | 瞬时变化率 / 导数 | Instantaneous Rate of Change | $f'(x_0) = \\lim_{h \\to 0}\\frac{f(x_0+h)-f(x_0)}{h}$，曲线在切点处的斜率 | 混淆平均与瞬时变化率 |",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "| **Momentangeschwindigkeit** | 瞬时速度 | Instantaneous Velocity | $v(t) = s'(t) = \\frac{ds}{dt}$，位移关于时间的一阶导数 | 忽略运动方向与正负号 |",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "| **Beschleunigung** | 加速度 | Acceleration | $a(t) = v'(t) = s''(t) = \\frac{dv}{dt}$，速度关于时间的一阶导数 | 误以为速度为0时加速度必为0 |",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "| **Reaktionsgeschwindigkeit** | 化学反应速率 | Reaction Rate | $v = -\\frac{1}{\\nu_A}\\frac{dc_A}{dt} = \\frac{1}{\\nu_B}\\frac{dc_B}{dt}$，浓度随时间的变化率 | 漏写反应物消耗的负号 |",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "| **Enzymkinetik (Michaelis-Menten)** | 米氏酶促反应动力学 | Enzyme Kinetics | $v = \\frac{v_{\\max} \\cdot [S]}{K_m + [S]}$，底物饱和双曲线关系 | 误以为底物浓度无限增加速率无限上升 |",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "| **Wachstumsrate (Logistisches Wachstum)** | 逻辑斯蒂增长率 | Logistic Growth Rate | $\\frac{dN}{dt} = r \\cdot N \\left(1 - \\frac{N}{K}\\right)$，受环境容纳量制约的变化率 | 混淆指数增长与逻辑斯蒂饱和 |",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "| **Erhaltungssatz** | 守恒定律 | Conservation Law | 封闭孤立系统中某一物理量总量在时间演化中恒定不变（如 $\\Delta E = 0$） | 混淆孤立系统与开放系统稳态 |",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "| **Dynamisches Gleichgewicht / Fließgleichgewicht** | 动态平衡 / 流平衡 | Dynamic Equilibrium / Steady State | 化学中正逆反应速率相等 ($v_{\\text{hin}} = v_{\\text{rueck}}$)；生物中输入输出速率相等但维持非零梯度 | 误以为活细胞处于化学死平衡 ($\\Delta G = 0$) |",
+        "lang": "zh"
+      },
+      {
+        "kind": "h3",
+        "text": "1.2 系统 SBF 维度拆解 (Struktur - Verhalten - Funktion)",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "**Struktur (系统结构与变量)**：",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "自变量：时间 $t$ 或空间位置 $x$；",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "状态变量：位置 $s(t)$、能量 $E$、化学物质浓度 $c(t)$、酶底物复合物 $[ES]$、种群个体数 $N(t)$。",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "**Verhalten (动态行为与演化因果)**：",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "微观机制：质点受力产生加速度引起速度变化；分子碰撞频率与活化能决定化学反应速率；酶分子活性中心与底物结合解离；",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "宏观表征：曲线斜率从陡峭走向平缓，极值点处切线斜率为零，平衡体系在受到扰动时依据勒夏特列原理移动。",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "**Funktion (宏观功能与学科价值)**：",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "在数学中确立极限与函数微积分工具；",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "在自然科学中实现未来演化轨迹预测与封闭体系能量/质量守恒核算。",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "---",
+        "lang": "de"
+      },
+      {
+        "kind": "h2",
+        "text": "2. 知识结构与双重编码图解 (Struktur & Visual Schema)",
+        "lang": "zh"
+      },
+      {
+        "kind": "diagram",
+        "text": "【统一数学母语：微积分导数与变化率 f'(t)】\n                                       |\n        +------------------------------+------------------------------+\n        |                                                             |\n   [物理运动学与守恒]                                            [化学与生物动力学]\n        |                                                             |\n   位移 s(t)                                                     反应物浓度 c(t)\n   一阶导: 速度 v(t) = s'(t)                                     一阶导: 速率 v = -dc/dt\n   二阶导: 加速度 a(t) = v'(t) = s''(t)                          二阶导: 速率变化率 v'(t)\n        |                                                             |\n   【约束：能量守恒定律】                                        【约束：质量守恒与动平衡】\n   E_kin + E_pot = const. (Erbruch=0)                            v_hin = v_rueck (MWG: Kc)\n        |                                                             |\n        v                                                             v\n   自由落体 / 机械振动                                           酶促饱和 / 血液缓冲稳态\n   (Hochpunkt: v=0, a=-g)                                        (Sättigung: v -> vmax, v' -> 0)",
+        "lang": "de"
+      },
+      {
+        "kind": "h3",
+        "text": "2.1 四大学科核心映射矩阵",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "| 学科 | 原函数 $f(t)$ | 一阶导数 $f'(t)$（瞬时变化率） | 极值与边界特征 ($f'(t) = 0$) | 守恒定律 / 稳态约束 |",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "|---|---|---|---|---|",
+        "lang": "de"
+      },
+      {
+        "kind": "p",
+        "text": "| **Mathe** | 任意可导函数 $f(x)$ | 切线斜率 $f'(x) = \\lim \\frac{\\Delta y}{\\Delta x}$ | 驻点 / 相对极值点 (Hoch-/Tiefpunkt) | 定积分微积分基本定理 $\\int_a^b f'(x)dx = f(b)-f(a)$ |",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "| **Physik** | 空间位移 $s(t)$ | 瞬时速度 $v(t) = s'(t)$ | 转向点 (Umkehrpunkt, $v=0$) | 机械能守恒 $E_{\\text{ges}} = E_{\\text{kin}} + E_{\\text{pot}} = \\text{const.}$ |",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "| **Chemie** | 反应物浓度 $c(t)$ | 反应速率 $v(t) = -\\frac{dc}{dt}$ | 达到化学平衡 ($v_{\\text{hin}} = v_{\\text{rueck}}$) | 质量守恒与勒夏特列平衡移动 |",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "| **Bio** | 产物浓度 $[P](t)$ 或种群 $N(t)$ | 酶促速率 $v(t) = \\frac{d[P]}{dt}$ / 增长率 $\\frac{dN}{dt}$ | 酶饱和最大速率 $v_{\\max}$ / 环境容纳量 $K$ | 开放系统动态流平衡 (Fließgleichgewicht) |",
+        "lang": "zh"
+      },
+      {
+        "kind": "quote",
+        "text": "*Klausur-Satz (德语核心公理句)*:",
+        "lang": "zh"
+      },
+      {
+        "kind": "quote",
+        "text": "*\"Die erste mathematische Ableitung einer Zeit-Zustands-Funktion quantifiziert physikalisch die Momentangeschwindigkeit, chemisch die Reaktionsgeschwindigkeit und biologisch die metabolische Umsatzrate; deren Verschwinden markiert stets einen Zustand transienter Ruhe, Sättigung oder dynamischen Gleichgewichts.\"*",
+        "lang": "de"
+      },
+      {
+        "kind": "p",
+        "text": "---",
+        "lang": "de"
+      },
+      {
+        "kind": "h2",
+        "text": "3. 解题方法与决策树 (Methoden & Entscheidungsbaum)",
+        "lang": "zh"
+      },
+      {
+        "kind": "diagram",
+        "text": "[考场综合图表与题干识别 (Signalwörter im Sachkontext)]\n                                          |\n          +-------------------------------+-------------------------------+\n          |                                                               |\n  【求某时刻的具体变化程度】                                      【求极值、最大值或平衡状态】\n  (Signal: \"Momentan\", \"Steigung\", \"Rate\")                       (Signal: \"Maximal\", \"Stillstand\", \"Gleichgewicht\")\n          |                                                               |\n  [步骤 A: 导数求值流程]                                          [步骤 B: 极值与守恒方程求解]\n  1. 明确自变量 (t) 与状态函数 (s/c/N)                            1. 建立一阶导方程 f'(t) = 0\n  2. 运用求导法则写出 f'(t)                                      2. 求出临界时间点 t_crit\n  3. 代入指定时间点求数值                                        3. 结合物理/化学守恒方程代入原函数验证\n  4. 规范回答含单位与物理意义                                    4. 输出规范解释 (Hochpunkt / Gleichgewichtslage)",
+        "lang": "de"
+      },
+      {
+        "kind": "h3",
+        "text": "3.1 跨学科解题三步走规范",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "1. **Schritt 1: Mathematisierung & Ableitung (数学建模与求导)**",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "提取题干函数关系，确定物理/化学变量与对应导数算子（如 $v(t) = s'(t)$ 或 $v_{\\text{chem}} = -c'(t)$）。",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "2. **Schritt 2: Bedingungsansatz & Berechnung (条件建立与代数求解)**",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "依题意建立方程：瞬时值直接求导带值；极值点或平衡点令导数等于 0 并求解驻点。",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "3. **Schritt 3: Interpretation im Sachzusammenhang (情境解释与因果闭环)**",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "必须标明物理量单位（如 $\\text{m/s}$, $\\text{mol/(L}\\cdot\\text{s)}$），并用 Fachsprache 解释现实含义（例如“速度为正表示向上运动”、“导数为零表示达到动态平衡”）。",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "---",
+        "lang": "de"
+      },
+      {
+        "kind": "h2",
+        "text": "4.  中德思维桥梁与技法衔接 (CN-Methode & Transfer)",
+        "lang": "zh"
+      },
+      {
+        "kind": "h3",
+        "text": "CN-Methode: 变化率十字映射法 (Ableitungs-Matrix-Methode)",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "**技法优势与直觉转换**：",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "中国高中理科训练中，导数求极值、物理 $v-t$ 图像面积与斜率、化学平衡常数表达式被高度割裂在不同科目中；",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "变化率十字映射法将坐标轴统一转化为：**横轴永远是演化自变量（时间 $t$ 或底物浓度 $[S]$），纵轴是系统累积量，切线斜率是流速/变化率，曲线下面积是净变量**。通过这一矩阵，看到任何陌生的理科实验曲线（如心电图、滴定曲线、酶动力学曲线），都能一秒拆解为导数问题。",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "**DE-Anschluss (德国考纲合规对接)**：",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "德国评分准则（Erwartungshorizont）严禁“只有公式代数计算而无德语文段解释”；",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "每一步运算结果必须配备 **Antwortsatz im Sachzusammenhang**，清晰阐明导数的符号意义与单位；",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "极限符号与开闭区间书写需符合德标（如区间 `[0; 10]` 使用分号分隔，导数符号 $f'(t)$ 代替点导记号 $\\dot{s}$）。",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "---",
+        "lang": "de"
+      },
+      {
+        "kind": "h2",
+        "text": "5. Klausur-Training & Erwartungshorizont (考场全真训练)",
+        "lang": "zh"
+      },
+      {
+        "kind": "h3",
+        "text": "5.1 官方题型定位",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "| 项 | 内容规范 |",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "|---|---|",
+        "lang": "de"
+      },
+      {
+        "kind": "p",
+        "text": "| Aufgabenart | Fächerübergreifende Klausuraufgabe (MINT-Vernetzung) |",
+        "lang": "de"
+      },
+      {
+        "kind": "p",
+        "text": "| Operator | berechnen (AFB II), interpretieren (AFB II), beurteilen (AFB III) |",
+        "lang": "de"
+      },
+      {
+        "kind": "p",
+        "text": "| AFB-Anforderung | AFB I (25%) + AFB II (50%) + AFB III (25%) |",
+        "lang": "de"
+      },
+      {
+        "kind": "p",
+        "text": "| 建议时长 / 分值 | 30 分钟 / 24 BE |",
+        "lang": "zh"
+      },
+      {
+        "kind": "h3",
+        "text": "5.2 德语考卷满分原句 (Klausur-Satzbausteine)",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "**变化率规范陈述 (AFB I/II)**：",
+        "lang": "zh"
+      },
+      {
+        "kind": "quote",
+        "text": "*\"Die mathematische Ableitung $c'(t)$ an der Stelle $t = 5\\,\\text{min}$ quantifiziert die momentane Reaktionsgeschwindigkeit des Stoffumsatzes in $\\text{mol}\\cdot\\text{L}^{-1}\\cdot\\text{min}^{-1}$.\"*",
+        "lang": "de"
+      },
+      {
+        "kind": "li",
+        "text": "**极值与动平衡判定 (AFB II)**：",
+        "lang": "zh"
+      },
+      {
+        "kind": "quote",
+        "text": "*\"Da an der Stelle $t = t_{\\text{eq}}$ die erste Ableitung $f'(t) = 0$ beträgt und die Konzentrationen der Edukte und Produkte zeitlich konstant bleiben, befindet sich das geschlossene Reaktionssystem im dynamischen Gleichgewicht.\"*",
+        "lang": "de"
+      },
+      {
+        "kind": "li",
+        "text": "**生物流平衡评价 (AFB III)**：",
+        "lang": "zh"
+      },
+      {
+        "kind": "quote",
+        "text": "*\"Im Gegensatz zu einem statischen thermodynamischen Gleichgewicht ($\\Delta G = 0$) operiert die Zelle in einem Fließgleichgewicht: Die kontinuierliche Energiezufuhr verhindert das Erreichen des chemischen Gleichgewichts und erhält die Lebensfähigkeit aufrecht.\"*",
+        "lang": "de"
+      },
+      {
+        "kind": "h3",
+        "text": "5.3 全真训练题与评分细则 (Aufgabe & Musterlösung)",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "**Aufgabe: Raketenstart und Schadstoffabbau (火箭发射与生物净化动力学)**",
+        "lang": "zh"
+      },
+      {
+        "kind": "quote",
+        "text": "一枚气象科研火箭发射升空，其在 $0 \\le t \\le 8$ 秒内的垂直高度（单位：米）近似满足：",
+        "lang": "zh"
+      },
+      {
+        "kind": "quote",
+        "text": "$$h(t) = -t^3 + 12t^2 \\quad (t \\text{ in Sekunden})$$",
+        "lang": "de"
+      },
+      {
+        "kind": "quote",
+        "text": "火箭燃料燃烧产生的副产物在土壤微生物催化下的降解浓度 $c(t)$（单位：$\\text{mmol/L}$，时间 $t$ 单位：小时）满足：",
+        "lang": "zh"
+      },
+      {
+        "kind": "quote",
+        "text": "$$c(t) = \\frac{10}{1 + t} \\quad (t \\ge 0)$$",
+        "lang": "de"
+      },
+      {
+        "kind": "quote",
+        "text": "1. (AFB II, 6 BE) Berechnen Sie die Momentangeschwindigkeit und die Beschleunigung der Rakete zum Zeitpunkt $t = 2\\,\\text{s}$. Interpretieren Sie die Werte im Sachzusammenhang.",
+        "lang": "de"
+      },
+      {
+        "kind": "quote",
+        "text": "2. (AFB II, 8 BE) Ermitteln Sie den Zeitpunkt, an dem die Rakete ihre maximale Aufstiegsgeschwindigkeit erreicht, und bestimmen Sie diesen Maximalwert.",
+        "lang": "de"
+      },
+      {
+        "kind": "quote",
+        "text": "3. (AFB II, 4 BE) Bestimmen Sie die momentane Abbaurate des Schadstoffs nach $t = 3\\,\\text{h}$.",
+        "lang": "de"
+      },
+      {
+        "kind": "quote",
+        "text": "4. (AFB III, 6 BE) Beurteilen Sie den Unterschied zwischen dem Stillstand der Rakete am Umkehrpunkt ($v = 0$) und dem metabolischen Fließgleichgewicht einer Zelle hinsichtlich des thermodynamischen Gleichgewichts.",
+        "lang": "de"
+      },
+      {
+        "kind": "p",
+        "text": "**Musterlösung mit BE-Verteilung (采分点解析)**",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "1. **Teilaufgabe 1 (6 BE)**:",
+        "lang": "de"
+      },
+      {
+        "kind": "li",
+        "text": "Ableitungen bilden: $v(t) = h'(t) = -3t^2 + 24t$ *(2 BE)*, $a(t) = v'(t) = -6t + 24$ *(1 BE)*.",
+        "lang": "de"
+      },
+      {
+        "kind": "li",
+        "text": "Werte einsetzen: $v(2) = -3(4) + 24(2) = 36\\,\\text{m/s}$ *(1 BE)*; $a(2) = -6(2) + 24 = 12\\,\\text{m/s}^2$ *(1 BE)*.",
+        "lang": "de"
+      },
+      {
+        "kind": "li",
+        "text": "*Antwortsatz*: Zum Zeitpunkt $t = 2\\,\\text{s}$ steigt die Rakete mit einer Momentangeschwindigkeit von $36\\,\\text{m/s}$ nach oben und erfährt eine positive Beschleunigung von $12\\,\\text{m/s}^2$ *(1 BE)*.",
+        "lang": "de"
+      },
+      {
+        "kind": "p",
+        "text": "2. **Teilaufgabe 2 (8 BE)**:",
+        "lang": "de"
+      },
+      {
+        "kind": "li",
+        "text": "Notwendige Bedingung für maximales $v(t)$: $v'(t) = a(t) = 0$ *(2 BE)*.",
+        "lang": "de"
+      },
+      {
+        "kind": "li",
+        "text": "$-6t + 24 = 0 \\implies t = 4\\,\\text{s}$ *(2 BE)*.",
+        "lang": "de"
+      },
+      {
+        "kind": "li",
+        "text": "Hinreichende Bedingung: $v''(4) = a'(4) = -6 < 0 \\implies$ relatives Maximum nachgewiesen *(2 BE)*.",
+        "lang": "de"
+      },
+      {
+        "kind": "li",
+        "text": "Maximalwert: $v(4) = -3(16) + 24(4) = -48 + 96 = 48\\,\\text{m/s}$ *(2 BE)*.",
+        "lang": "de"
+      },
+      {
+        "kind": "p",
+        "text": "3. **Teilaufgabe 3 (4 BE)**:",
+        "lang": "de"
+      },
+      {
+        "kind": "li",
+        "text": "Ableitung von $c(t) = 10(1+t)^{-1}$: $c'(t) = -10(1+t)^{-2}$ *(2 BE)*.",
+        "lang": "de"
+      },
+      {
+        "kind": "li",
+        "text": "Einsetzen von $t = 3$: $c'(3) = -\\frac{10}{(1+3)^2} = -\\frac{10}{16} = -0{,}625\\,\\text{mmol}\\cdot\\text{L}^{-1}\\cdot\\text{h}^{-1}$ *(1 BE)*.",
+        "lang": "de"
+      },
+      {
+        "kind": "li",
+        "text": "*Antwortsatz*: Die Abbaurate beträgt $0{,}625\\,\\text{mmol}/(\\text{L}\\cdot\\text{h})$ (das negative Vorzeichen signalisiert die Abnahme der Schadstoffkonzentration) *(1 BE)*.",
+        "lang": "de"
+      },
+      {
+        "kind": "p",
+        "text": "4. **Teilaufgabe 4 (6 BE)**:",
+        "lang": "de"
+      },
+      {
+        "kind": "li",
+        "text": "Analyse Raketen-Umkehrpunkt: Bei $v = 0$ liegt lediglich eine momentane kinematische Ruhe vor; das System befindet sich unter Schwerkrafteinfluss keineswegs in statischer Ruhe (Beschleunigung $a \\neq 0$) *(2 BE)*.",
+        "lang": "de"
+      },
+      {
+        "kind": "li",
+        "text": "Analyse zelluläres Fließgleichgewicht: Das Fließgleichgewicht ist ein dynamischer Zustand eines offenen Systems mit kontinuierlichem Energie- und Stoffdurchsatz. Im Gegensatz zum thermodynamischen Gleichgewicht ($\\Delta G = 0$, chemischer Tod) bleibt die Entropie lokal niedrig und die Arbeitsfähigkeit erhalten *(3 BE)*.",
+        "lang": "de"
+      },
+      {
+        "kind": "li",
+        "text": "Fazit: Kinematische Nullstellen sind punktuelle mechanische Zustände, während Fließgleichgewichte dissipative stationäre Systemstrukturen fernab des thermischen Gleichgewichts sind *(1 BE)*.",
+        "lang": "de"
+      },
+      {
+        "kind": "p",
+        "text": "---",
+        "lang": "de"
+      },
+      {
+        "kind": "h2",
+        "text": "6. Fehlerquellen & 易混对抗矩阵 (Pitfalls & Kontrast)",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "| 混淆概念对 / 典型错误 | 概念本质差异 | 图像/符号表征差异 | 阅卷老师扣分红线与防错绝招 |",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "|---|---|---|---|",
+        "lang": "de"
+      },
+      {
+        "kind": "p",
+        "text": "| **平均变化率 vs 瞬时变化率** | 平均变化率是区间割线（宏观均值）；瞬时变化率是切线斜率（微观微分值）。 | $\\frac{\\Delta y}{\\Delta x}$（两点割线） vs $f'(x) = \\lim \\frac{\\Delta y}{\\Delta x}$（切线）。 | 计算速度或反应速率时直接拿总量除以总时间被判 0 分；必须先求导函数再代入。 |",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "| **最高点静止误区 ($v=0 \\implies a=0$)** | 速度为 0 仅代表位移原函数切线斜率为 0；受力不为 0 时加速度绝不为 0。 | $h'(t_0) = 0$ 但 $h''(t_0) = -g \\neq 0$。 | 答题时误称“最高点合外力为零”，直接扣除物理概念分；牢记牛顿第二定律 $F = ma$。 |",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "| **化学平衡与反应终止** | 化学平衡是微观动态对等（正逆反应依然高速进行）；绝非分子停止反应。 | $v_{\\text{hin}} = v_{\\text{rueck}} > 0$（动态平衡） vs $v = 0$（反应彻底耗尽）。 | 严禁使用“die Reaktion hört auf”，必须规范书写“die Hin- und Rückreaktion laufen mit gleicher Geschwindigkeit ab”。 |",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "| **化学死平衡 vs 生物流平衡** | 封闭系统最终走向平衡（$\\Delta G = 0$）；生命细胞是开放系统，维持恒定浓度梯度的流平衡。 | $\\Delta G = 0$（无可用自由能） vs $\\Delta G \\neq 0$（耗散结构不断摄取能量维持梯度）。 | 描述生物体内代谢时误用“Chemisches Gleichgewicht”会被重扣；必须使用“Fließgleichgewicht (steady state)”。 |",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "---",
+        "lang": "de"
+      },
+      {
+        "kind": "h2",
+        "text": "7. 融会贯通与跨学科迁移 (Vernetzung & Meta-Transfer)",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "**学科横向联结 (Interdisziplinär)**：",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "**物理联结**：[[04_Physik/Gleichfoermige-Bewegung-Training|Gleichfoermige-Bewegung-Training]]（位移-时间图斜率与加速度推演）；",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "**化学联结**：[[05_Chemie/Kinetik-Gleichgewicht-Bio-Vernetzung|Kinetik-Gleichgewicht-Bio-Vernetzung]]（反应速率导数定义与活化能降低）；",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "**生物联结**：[[06_Bio/Zellbiologie-Grundlagen|Zellbiologie-Grundlagen]]（酶促底物饱和与细胞呼吸动态平衡）；",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "**数学核心**：[[03_Mathe/Analysis-Physik-Kinetik-Vernetzung|Analysis-Physik-Kinetik-Vernetzung]]（微积分切线定义与运动学实战）。",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "**认知系统上下游**：",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "前置奠基节点：[[03_Mathe/Mathe-Sekante-zu-Tangente-L1]]（从割线到切线微课）",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "后继进阶节点：[[03_Mathe/Mathe-Abitur-Aufgabentraining]]（Abitur 综合函数与情境建模大题）",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "**Anki 术语记忆卡沉淀**：",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "`Lokale Änderungsrate;瞬时变化率 / 导数;Die lokale Änderungsrate f'(x0) entspricht der Tangentensteigung an der Stelle x0.;Mathe;Analysis`",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "`Fließgleichgewicht;动态流平衡 / 稳态;Im Gegensatz zum statischen chemischen Gleichgewicht befinden sich lebende Zellen im Fließgleichgewicht fernab des thermodynamischen Minimums.;Bio;Metabolismus`",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "`Momentangeschwindigkeit;瞬时速度;Die Momentangeschwindigkeit ist die erste Ableitung der Ortsfunktion nach der Zeit: v(t) = s'(t).;Physik;Kinematik`",
         "lang": "zh"
       }
     ]
@@ -59054,6 +61541,195 @@ export const allVaultNotesWithBlocks: GeneratedVaultNote[] = [
         "kind": "li",
         "text": "*Analysis ist die Sprache der Änderungsraten: Wer die Ableitung physikalisch versteht, beherrscht jede Sachkontext-Aufgabe.*",
         "lang": "de"
+      }
+    ]
+  },
+  {
+    "id": "mathe-mathe-operatoren-check",
+    "path": "03_Mathe/Klausur-Training/Mathe-Operatoren-Check.md",
+    "fach": "Mathe",
+    "thema": "Mathe Operatoren & Bewertungseinheiten (BE) Check",
+    "operatoren": [
+      "berechnen",
+      "bestimmen",
+      "skizzieren",
+      "interpretieren",
+      "beweisen",
+      "beurteilen"
+    ],
+    "klausurrelevant": true,
+    "datum": "2026-10-06",
+    "tags": [
+      "EF",
+      "Mathe",
+      "Klausur",
+      "BE"
+    ],
+    "blocks": [
+      {
+        "kind": "quote",
+        "text": "**中文一句话核心**：数学卷不给同情分，只看步进式采分点 (Bewertungseinheiten, BE)！算题先写公式模型，代入必须明写计算过程与单位，图形必须标坐标轴与极值，解释与判定必须写带情境单位的完整结论句。",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "---",
+        "lang": "de"
+      },
+      {
+        "kind": "h2",
+        "text": "1. NRW 数学卷步进式采分点结构 (Das 4-Schritte BE-Raster)",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "在 NRW 高中会考与 EF 统考 (ZKE) 中，每道小题的满分（通常 3–8 BE）按严格的四阶步进式采分模型切分：",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "| 采分阶 | 步骤名称 (Schritt) | 占比 (BE-Anteil) | 采分硬性要求与标准表述 | 典型失分陷阱 (Abzug) |",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "|---|---|---|---|---|",
+        "lang": "de"
+      },
+      {
+        "kind": "p",
+        "text": "| **BE 1** | **Ansatz & Modellwahl** (列式与模型声明) | ca. 25% | 显式写出基础公式或数学定理，如：$f'(x_0) = 0$ (notwendige Bed.), $t(x) = f'(x_0)(x-x_0)+f(x_0)$。 | 直接在计算器按出数字未写判据公式 $\\to$ 扣全部 Ansatz-BE。 |",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "| **BE 2** | **Algebraische Durchführung** (代数推演与代入) | ca. 25% | 写出代入已知数值的具体方程或导函数表达式，清晰呈现降次、因式分解或方程化简。 | 过程跳步过大导致阅卷老师无法追溯运算逻辑。 |",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "| **BE 3** | **Rechnerische Exaktheit** (准确值与有效位) | ca. 25% | 得出精确解（如分数 $\\frac{3}{4}$、根式 $\\sqrt{2}$）或题干要求的小数位（NRW 惯例保留 2–3 位）。 | 提前四舍五入导致最终累积误差超出容差范围。 |",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "| **BE 4** | **Sachbezogene Antwort & Einheit** (情境解释与单位) | ca. 25% | 将数值还原至物理/几何现实（例如：“Der maximale Zufluss beträgt $45{,}2\\,\\text{m}^3/\\text{h}$ nach $3{,}5$ Stunden.”）。 | 仅写数字 $45{,}2$ 缺少单位或未回答实际问题 $\\to$ 扣 1 BE。 |",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "---",
+        "lang": "de"
+      },
+      {
+        "kind": "h2",
+        "text": "2. 官方高频 Operatoren 答题规范对照表",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "| Operator | 认知层级 | 考场动作与规范要求 (Erwartungshorizont) | 标准答题示范句 (Muster-Formulierung) |",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "|---|---|---|---|",
+        "lang": "de"
+      },
+      {
+        "kind": "p",
+        "text": "| **berechnen** | AFB I/II | **纯代数推演**：必须完整写出计算过程，严禁仅写 WTR/CAS 结果！ | `Ansatz: f'(x) = 0. Notwendige Bedingung: 3x² - 6x = 0 <=> 3x(x - 2) = 0. Daraus folgt x₁ = 0, x₂ = 2.` |",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "| **bestimmen / ermitteln** | AFB I/II | **结合图形/工具求解**：可借助图形计算器或已知图表，但必须清晰声明判据与路径。 | `Aus dem Graphen der Ableitung f' lässt sich der Vorzeichenwechsel von + nach - an der Stelle x = 2 ablesen; folglich liegt ein lokales Maximum vor.` |",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "| **skizzieren** | AFB I | **徒手规范草图**：必须使用铅笔/直尺标明坐标轴名称 ($x, y$)、比例刻度、关键点（截距、极值、拐点）。 | `Achsen beschriften, charakteristische Punkte (Nullstellen, Hoch-/Tiefpunkte) maßstäblich eintragen und den Kurvenverlauf knickfrei verbinden.` |",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "| **interpretieren** | AFB II/III | **背景还原**：必须将数学符号（如 $f(t), f'(t), \\int$）用现实情境中的具体物理量与时间点完整叙述。 | `Die Steigung f'(3) = 12 bedeutet im Sachzusammenhang, dass die Pflanze zum Zeitpunkt t = 3 Wochen mit einer momentanen Wachstumsrate von 12 cm pro Woche wächst.` |",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "| **begründen / nachweisen** | AFB II/III | **逻辑定理援引**：通过数学定理（如中间值定理、符号改变准则 VZW）进行严密逻辑推演。 | `Da f auf [0; 5] stetig ist und f(0) = -2 < 0 sowie f(5) = 4 > 0 gilt, existiert nach dem Zwischenwertsatz mindestens eine Nullstelle im Intervall.` |",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "| **beurteilen** | AFB III | **批判性裁决**：依据数学边界和现实约束（如材料负荷、成本边界）进行优缺点权衡与最终定夺。 | `Unter Berücksichtigung der technischen Toleranz erweist sich das vorgeschlagene Modell als ungeeignet, da die maximale Randsteigung von 18 % die Sicherheitsnorm übersteigt.` |",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "---",
+        "lang": "de"
+      },
+      {
+        "kind": "h2",
+        "text": "3. NRW 评卷标志与扣分潜规则 (Korrekturzeichen & Fallstricke)",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "**`f` (falsch / fachlicher Fehler)**: 选错数学公式或逻辑错误（如把极值充分条件写成 $f''(x) = 0$）。",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "**`F` (Folgefehler)**: **对中国学生的重大保护规则**！只要前一步计算失误但后续算法逻辑完全正确，后续步骤仍然获得全额后续 BE (volle Folgepunkte)！",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "**`E` (Einheitenfehler)**: 遗漏物理/几何单位，整道题最多扣 1 BE。",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "**`R / r` (Rechenfehler)**: 纯算术错误，扣除该步计算分，保留后续推导分。",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "**`G` (Genauigkeit)**: 未按要求取保留位数，或提前舍入导致终值漂移。",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "---",
+        "lang": "de"
+      },
+      {
+        "kind": "h2",
+        "text": "4. 满分答卷自查清单 (Checkliste vor Abgabe)",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "[ ] **Modell deklariert?**（是否写明了所用的导数、方程或几何定理名称？）",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "[ ] **Bedingungen explizit?**（极值题是否同时写了必要条件 $f'(x)=0$ 与充分条件 $f''(x) \\neq 0$ / VZW？）",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "[ ] **Einheiten vorhanden?**（所有物理量与结果是否都附带了正确单位，如 $\\text{m}, \\text{s}, \\text{kg}, \\text{EUR}$？）",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "[ ] **Antwortsatz formuliert?**（应用大题最后一句是否针对题目的现实问题给出了完整的肯定/否定陈述？）",
+        "lang": "zh"
       }
     ]
   },
@@ -151489,6 +154165,323 @@ export const allVaultNotesWithBlocks: GeneratedVaultNote[] = [
     ]
   },
   {
+    "id": "philosophie-entfremdung-kapital-ungleichheit-vernetzung",
+    "path": "07_Philosophie/Texte-Analyse/Entfremdung-Kapital-Ungleichheit-Vernetzung.md",
+    "fach": "Philosophie",
+    "thema": "Entfremdung, Kapitalismus und Ungleichheit: Interdisziplinaere Synthese",
+    "operatoren": [
+      "analysieren",
+      "vergleichen",
+      "beurteilen"
+    ],
+    "klausurrelevant": true,
+    "datum": "2026-10-05",
+    "tags": [
+      "EF",
+      "Philosophie",
+      "Deutsch",
+      "SoWi",
+      "Englisch"
+    ],
+    "blocks": [
+      {
+        "kind": "quote",
+        "text": "**中文理解**：现代资本主义生产机制不仅是一个经济增长系统，更深刻重塑了人与自身、人与劳动、人与社会的关系。",
+        "lang": "zh"
+      },
+      {
+        "kind": "quote",
+        "text": "**德语文学视角（Deutsch）**：卡夫卡在《变形记》（*Die Verwandlung*）中通过格里高尔·萨姆沙沦为甲虫的荒诞具象，揭示了雇佣劳动者被彻底工具化为经济齿轮后的非人化命运；毕希纳在《沃伊采克》（*Woyzeck*）中描绘了底层军士沦为医学实验与阶级剥削对象的悲剧；",
+        "lang": "zh"
+      },
+      {
+        "kind": "quote",
+        "text": "**哲学人类学与伦理学视角（Philosophie）**：马克思在《1844年经济学哲学手稿》中剖析了异化劳动的四重维度（与劳动产品异化、与生产活动异化、与类本质异化、与他人异化）；康德的目的公式（Menschheitszweckformel）明确禁止将人降格为纯粹手段；密尔（J. S. Mill）通过质性快乐反击了将一切简化为金钱效用算盘的庸俗功利主义；",
+        "lang": "zh"
+      },
+      {
+        "kind": "quote",
+        "text": "**社会学与政治经济学视角（SoWi）**：社会不平等（Soziale Ungleichheit）通过基尼系数（Gini-Koeffizient）与五等分财富分配量化，劳动力市场弹性化催生了“新贫困层”（Prekarisierung），家庭出身对受教育权的隐性垄断导致阶层流动壁垒；",
+        "lang": "zh"
+      },
+      {
+        "kind": "quote",
+        "text": "**跨文化与英语叙事视角（Englisch）**：阿瑟·米勒在《推销员之死》（*Death of a Salesman*）中刻画了威利·洛曼的人格商品化（commodification of personality）以及建立在虚假成功神话上的美国梦幻灭。",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "---",
+        "lang": "de"
+      },
+      {
+        "kind": "h2",
+        "text": "1. 核心概念与四大学科锚点对照 (Epistemische Kernbegriffe)",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "| 学科 (Fach) | 核心概念 (Fachbegriff) | 核心原典/事实锚点 (Textanker & Fakten) | 会考题型应用 (AFB I-III) |",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "|---|---|---|---|",
+        "lang": "de"
+      },
+      {
+        "kind": "p",
+        "text": "| **Deutsch** | **Verdinglichung & Entfremdung** (物化与异化) | Franz Kafka: *Die Verwandlung* (Gregor als austauschbares Rädchen; Verwertung durch die Familie); Georg Büchner: *Woyzeck* | Aufgabenart I (Epik-Analyse, Motive, Figurenkonstellation, Deutungshypothese) |",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "| **Philosophie** | **Vierfache Entfremdung & Zweck-Mittel-Formel** | Karl Marx: *Ökonomisch-philosophische Manuskripte* (1844); Immanuel Kant: *Grundlegung zur Metaphysik der Sitten* (Mensch niemals bloß als Mittel) | Textanalyse (Argumentrekonstruktion, Kriteriengeleitete Erörterung) |",
+        "lang": "de"
+      },
+      {
+        "kind": "p",
+        "text": "| **SoWi** | **Soziale Ungleichheit & Prekarisierung** | Gini-Index Deutschland (~0,76 Vermögen, ~0,30 Einkommen); Atypische Beschäftigung, Bildungsbenachteiligung | Aufgabenart I-III (Materialanalyse, Statistik/Karikatur, Urteil Effizienz vs. Legitimität) |",
+        "lang": "de"
+      },
+      {
+        "kind": "p",
+        "text": "| **Englisch** | **Commodification & The American Dream** | Arthur Miller: *Death of a Salesman* (Willy Loman; \"riding on a smile and a shoeshine\", alienation in post-war consumerism) | Teil A (Reading Comprehension, Characterization, P.E.E. Argumentation, Comment) |",
+        "lang": "de"
+      },
+      {
+        "kind": "p",
+        "text": "---",
+        "lang": "de"
+      },
+      {
+        "kind": "h2",
+        "text": "2. 知识结构与四维映射全景图 (Vernetzungs-Architektur)",
+        "lang": "zh"
+      },
+      {
+        "kind": "math",
+        "text": "[ 现代资本主义生产与社会批判 ]\n                                     │\n         ┌───────────────────────────┼───────────────────────────┐\n         ▼                           ▼                           ▼\n  【文学表征: 存在困境】       【哲学反思: 规范伦理】       【社会实证: 制度阶层】\n   Deutsch & Englisch          Philosophie                 SoWi\n   ├─ Kafka: Gregor Samsa      ├─ Marx: Entfremdung         ├─ Gini-Koeffizient\n   │   (Physische Metamorphose │   (Produkt, Akt, Gattung,  │   (Vermögenskonzentration)\n   │    als Verdinglichung)    │    Mitmensch)             ├─ Prekarisierung\n   └─ Miller: Willy Loman      ├─ Kant: Zweck-Mittel        │   (Atypische Beschäftigung)\n       (Commodification of     │   (Verbot reiner Funktion) └─ Bildungsmonopol\n        Personality / Myth)    └─ Mill: Qualitativer Nutzen     (Soziale Mobilitätsgrenze)",
+        "lang": "de"
+      },
+      {
+        "kind": "p",
+        "text": "---",
+        "lang": "de"
+      },
+      {
+        "kind": "h2",
+        "text": "3. 解题方法与跨学科论据赋能法 (Klausur-Methode: Interdisziplinärer Transfersprung)",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "在会考最高评价阶（**AFB III / Erörterung & Beurteilung**）中，单纯复述单一学科常识往往止步于 10–11 NP；若能引入跨学科上位范畴与哲学规范，可稳稳斩获 **14–15 NP（Sehr gut）**：",
+        "lang": "zh"
+      },
+      {
+        "kind": "h3",
+        "text": "核心论证三步法 (3-Schritt-Transfer)",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "1. **Schritt 1: 实证聚焦 (Phänomen benennen)**",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "在社科材料题中点出：材料所反映的非标准就业和低薪资阶层，其本质是劳动力市场的“商品化与风险转嫁”（Prekarisierung）；",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "2. **Schritt 2: 规范升级 (Philosophischer Kriterien-Check)**",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "调取康德目的公式或马克思劳动异化论：这种雇佣状态将劳动者还原为纯粹的资本增殖工具（bloßes Produktionsmittel），剥夺了人作为自主主体的自由与尊严（Menschenwürde）；",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "3. **Schritt 3: 文学/文化映射 (Literarische Illustration)**",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "引用卡夫卡《变形记》格里高尔或米勒《推销员之死》威利·洛曼作为典型具象：当一个人仅以“经济效用（ökonomische Nützlichkeit）”被家庭与社会衡量时，一旦丧失劳动生产力便遭遇无情驱逐，形成现代主体的终极悲剧。",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "---",
+        "lang": "de"
+      },
+      {
+        "kind": "h2",
+        "text": "4.  极简记忆锚桩 (CN-Methode)",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "**“卡马康米索”五星连锁记忆桩**：",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "**卡（卡夫卡 Kafka）**：变甲虫 = 人变齿轮，不挣钱就被家庭扫地出门（文学具象）。",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "**马（马克思 Marx）**：异化四维度（产品、生产劳动、人与人的类本质、社会关系），劳动创造物反噬劳动者。",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "**康（康德 Kant）**：目的公式是底线，人绝不能只是赚钱剥削的手段。",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "**米（米勒 Miller）**：推销员赔笑脸卖自己，死在虚幻的美国梦算盘里。",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "**索（社科 SoWi）**：基尼系数算贫富，底层贫困化断生路，税收福利来再调。",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "---",
+        "lang": "de"
+      },
+      {
+        "kind": "h2",
+        "text": "5. 会考模拟真题训练 (Klausur-Training)",
+        "lang": "zh"
+      },
+      {
+        "kind": "h3",
+        "text": "任务情境 (Aufgabenstellung)",
+        "lang": "zh"
+      },
+      {
+        "kind": "quote",
+        "text": "*Ein aktueller Sachtext problematisiert die zunehmende Entgrenzung von Arbeit im Homeoffice und auf digitalen Plattformen (Gig-Economy). Beurteilen Sie diese Entwicklung unter Rückgriff auf das soziologische Phänomen der Prekarisierung und die philosophische Kategorie der Entfremdung.*",
+        "lang": "de"
+      },
+      {
+        "kind": "h3",
+        "text": "15 NP 满分答题示范 (Musterantwort AFB III)",
+        "lang": "zh"
+      },
+      {
+        "kind": "quote",
+        "text": "**Einordnung und These**: Die Flexibilisierung digitaler Plattformarbeit erzeugt eine ambivalente Scheinfreiheit: Während Arbeitnehmer formale Autonomie über ihre Arbeitszeit gewinnen, manifestiert sich strukturell eine verschärfte Entfremdung und ökonomische Prekarisierung.",
+        "lang": "de"
+      },
+      {
+        "kind": "quote",
+        "text": "**Entfremdungstheoretische Analyse (Marx & Kant)**: Nach Karl Marx kennzeichnet sich entfremdete Arbeit dadurch, dass der Produzent weder Einfluss auf den Produktionsprozess noch auf die Verwertung seines Produkts besitzt. In der algorithmengesteuerten Gig-Economy wird die Arbeitskraft minutengenau parzelliert und unterliegt anonymer Plattformkontrolle. Der Arbeiter wird nach Immanuel Kants Kategorischem Imperativ in unzulässiger Weise zum „bloßen Mittel“ für die Profitmaximierung digitaler Monopole degradiert. Seine schöpferische Tätigkeit verkommt zur bloßen Ware.",
+        "lang": "de"
+      },
+      {
+        "kind": "quote",
+        "text": "**Soziologische Konsequenzen (SoWi)**: Soziologisch führt diese Entwicklung zur Prekarisierung des Arbeitsmarktes: Risiken von Krankheit, Altersarmut und Auftragsflaute werden vollständig vom Unternehmer auf das ungeschützte Individuum abgewälzt. Dies spiegelt sich in einer Verfestigung der Ungleichheit wider, da atypisch Beschäftigte vom kollektiven Tarifsystem und sozialstaatlichen Sicherungsnetzen entkoppelt werden.",
+        "lang": "de"
+      },
+      {
+        "kind": "quote",
+        "text": "**Literarische Parallelität (Kafka)**: Dieses Dilemma korrespondiert mit Kafkas Parabel *Die Verwandlung*: Wie Gregor Samsa, der sich rastlos für das kaufmännische Geschäft aufreibt und dennoch beim ersten Versagen als wertlos verstoßen wird, geraten Plattformarbeiter in eine existenzielle Vereinsamung und seelische Verdinglichung.",
+        "lang": "de"
+      },
+      {
+        "kind": "quote",
+        "text": "**Urteil / Synthese**: Die Digitalisierung der Arbeitswelt erfordert daher dringend ordnungspolitische Leitplanken (Mindesthonorare, arbeitnehmerähnlicher Kündigungsschutz), um die wirtschaftliche Dynamik mit dem verfassungsrechtlichen Schutz der Menschenwürde (Art. 1 Abs. 1 GG) in Einklang zu bringen.",
+        "lang": "de"
+      },
+      {
+        "kind": "p",
+        "text": "---",
+        "lang": "de"
+      },
+      {
+        "kind": "h2",
+        "text": "6. 常见思维陷阱 (Fehlerquellen)",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "| 典型错误 | 诊断原因 | 考场修正与提分对策 |",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "|---|---|---|",
+        "lang": "de"
+      },
+      {
+        "kind": "p",
+        "text": "| **误将异化单纯当成心理情绪** | 以为异化只是“工作心情不好、压力大” | **纠正**：异化在哲学和社科中是客观的制度与结构性状态，源于生产资料占有与资本主义劳资分配机制。 |",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "| **空洞堆砌术语没有材料结合** | 机械罗列马克思或卡夫卡名字，却不结合材料具体数据与细节 | **纠正**：凡提概念必扣题干（例如：由“按件计酬算法”联结至“按劳计件异化”，由“零福利保障”联结至“Prekarisierung”）。 |",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "| **忽视文学作品的时代特殊性** | 以为卡夫卡与阿瑟·米勒写的是同一回事 | **纠正**：卡夫卡聚焦世纪初布拉格市民阶级家庭的冷血物化与官僚异化；米勒聚焦战后美国消费主义繁荣下的成功神话与人格商品化。 |",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "---",
+        "lang": "de"
+      },
+      {
+        "kind": "h2",
+        "text": "7. 跨学科知识网与关联笔记 (Vernetzung)",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "**德语文学**：[[01_Deutsch/Texte-Analyse/Kafka-Die-Verwandlung-Epik|Kafka: Die Verwandlung]]",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "**英语戏剧**：[[02_Englisch/Texte-Analyse/Miller-Death-of-a-Salesman-American-Dream|Miller: Death of a Salesman]]",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "**哲学伦理**：[[07_Philosophie/Texte-Analyse/Mill-Utilitarismus-Qualitativer-Hedonismus|Mill: Utilitarismus & Qualitativer Hedonismus]]",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "**分配正义**：[[07_Philosophie/Gerechtigkeit-Wirtschaftsethik-Vernetzung|Rawls & Wirtschaftsethik]]",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "**社科不平等**：[[08_SoWi/Texte-Analyse/Soziale-Ungleichheit|Soziale Ungleichheit]]",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "**社科理论**：[[08_SoWi/Texte-Analyse/Ungleichheitsmodelle-Theorien|Ungleichheitsmodelle & Theorien]]",
+        "lang": "zh"
+      }
+    ]
+  },
+  {
     "id": "philosophie-ethische-dilemmata-sammlung",
     "path": "07_Philosophie/Texte-Analyse/Ethische-Dilemmata-Sammlung.md",
     "fach": "Philosophie",
@@ -152222,6 +155215,358 @@ export const allVaultNotesWithBlocks: GeneratedVaultNote[] = [
       {
         "kind": "p",
         "text": "Menschenbild::Vorstellung davon, was den Menschen ausmacht / 人像",
+        "lang": "zh"
+      }
+    ]
+  },
+  {
+    "id": "philosophie-mill-utilitarismus-qualitativer-hedonismus",
+    "path": "07_Philosophie/Texte-Analyse/Mill-Utilitarismus-Qualitativer-Hedonismus.md",
+    "fach": "Philosophie",
+    "thema": "Mill Utilitarismus (Qualitativer Hedonismus)",
+    "operatoren": [
+      "darstellen",
+      "analysieren",
+      "vergleichen",
+      "beurteilen"
+    ],
+    "klausurrelevant": true,
+    "datum": "2026-10-05",
+    "tags": [
+      "EF",
+      "Philosophie",
+      "Ethik",
+      "Utilitarismus"
+    ],
+    "blocks": [
+      {
+        "kind": "quote",
+        "text": "**直觉破冰与生活隐喻 (Der intuitive Anker / Alltagsanalogie)**：",
+        "lang": "zh"
+      },
+      {
+        "kind": "quote",
+        "text": "想象有两个按纽：按纽 A 能让你一辈子躺在沙发上吃炸鸡、刷短视频，永远处于不用动脑的傻乐状态（低级感官满足）；按纽 B 让你成为一名充满求知欲的学者，虽然每天要苦读、思考复杂的难题甚至经历精神挫败，但能体会到解开真理与创造艺术的狂喜。如果只算纯粹的多巴胺快乐点数，短视频肥宅可能一辈子得分更高——密尔断然回答：“宁做一个痛苦的苏格拉底，不做一头快乐的猪！”人类精神的尊严，就在于绝不放弃更高阶的心智潜能。",
+        "lang": "zh"
+      },
+      {
+        "kind": "quote",
+        "text": "**Klausur-Relevanz (Abitur 核心考点定位)**：",
+        "lang": "zh"
+      },
+      {
+        "kind": "quote",
+        "text": "功利主义伦理学（Utilitarismus）是北威州高中哲学会考（Ethik）两大恒定基石之一（与康德义务论平分秋色）。核心考点：四大功利支柱（Folgen-, Utilitäts-, Hedonistisches und Universales Prinzip）、边沁纯量化算盘与密尔质性分层的断裂演进、胜任裁判官（Kompetente Richter）的认识论论证、AFB III 自动驾驶与电车难题中功利论与基本法尊严条款（Art. 1 GG）的终审对决。",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "---",
+        "lang": "de"
+      },
+      {
+        "kind": "h2",
+        "text": "1. 核心概念与 SBF 机理解构 (Kernbegriffe & SBF-Modell)",
+        "lang": "zh"
+      },
+      {
+        "kind": "h3",
+        "text": "1.1 术语与中德对齐表",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "| 术语 (DE) | 对应中文 | English (US/AP) | 严谨学术定义 (Fachsprache) / 核心内涵 | 考场易错标记 |",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "|---|---|---|---|---|",
+        "lang": "de"
+      },
+      {
+        "kind": "p",
+        "text": "| **Prinzip des größten Glücks** | 最大幸福原则 | Greatest Happiness Principle | Handlungen sind moralisch richtig, insoweit sie die Tendenz haben, Glück (Lust) zu fördern. | 必须包含“对最大多数人”的普遍性维度 |",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "| **Qualitativer Hedonismus** | 质性快乐主义 | Qualitative hedonism | Differenzierung zwischen niederen sinnlichen und höheren geistigen Freuden. | 绝不能混淆为边沁的纯数量加减法 |",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "| **Kompetente Richter** | 胜任的裁判官 | Competent judges | Personen, die beide Lustarten aus eigener Erfahrung kennen und urteilsfähig sind. | 考卷中必须说明其认识论判准功能 |",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "| **Teleologie / Konsequentialismus** | 目的论/后果主义 | Consequentialism | Ethische Bewertung ausschließlich anhand der tatsächlichen Handlungskonsequenzen. | 禁混入康德式“纯粹善良意志动机” |",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "| **Universalistisches Prinzip** | 普遍性/不偏不倚原则 | Principle of impartiality | 'Jeder zählt für einen, keiner für mehr als einen' (Bentham/Mill). | 严禁与自私自利（Egoismus）混为一谈 |",
+        "lang": "zh"
+      },
+      {
+        "kind": "h3",
+        "text": "1.2 系统 SBF 维度拆解 (Struktur - Verhalten - Funktion)",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "**Struktur (系统结构与伦理框架)**：",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "四大基本支柱：后果准则（Konsequenzen） ↔ 功利效用（Utilität） ↔ 快乐主义（Hedonismus） ↔ 普遍平等（Universalität）；",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "快乐层级天平：低阶感官肉体享乐（Niedere Freuden / Contentment） ↔ 高阶理性与道德审美享受（Höhere Freuden / Happiness）。",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "**Verhalten (动态行为与演化因果)**：",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "行为抉择动力学：面对道德两难  预测所有受影响主体的后果  加权质性与量化快乐  选择产生净幸福最大化的方案；",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "认知升华过程：经历过启蒙与教育的人，受人性尊严感驱使，宁承受思考之苦亦不愿倒退为野兽。",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "**Funktion (宏观功能与文明价值)**：",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "破除神权神谕与封建阶级特权，建立世俗、民主、不偏不倚的现代立法与伦理计算基石。",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "---",
+        "lang": "de"
+      },
+      {
+        "kind": "h2",
+        "text": "2. 知识结构与双重编码图解 (Struktur & Visual Schema)",
+        "lang": "zh"
+      },
+      {
+        "kind": "diagram",
+        "text": "+-----------------------------------------------------------------------------------+\n|               JOHN STUART MILLS QUALITATIVER UTILITARISMUS (1861)                 |\n+-----------------------------------------------------------------------------------+\n                                          |\n                +-------------------------+-------------------------+\n                |                                                   |\n    【Jeremy Bentham: Quantitativ】                        【J.S. Mill: Qualitativ】\n    • Hedonistisches Kalkül (7 Faktoren)                   • Qualität schlägt Quantität!\n    • \"Push-pin is as good as poetry\"                      • \"Besser Sokrates unzufrieden\n    • Reine Zahlen- und Dauer-Addition                      als ein Schwein zufrieden\"\n                |                                                   |\n                +-------------------------+-------------------------+\n                                          |\n                   [Erkenntnistheoretisches Kriterium]\n                  Die \"Kompetenten Richter\" (Urteilsfähige,\n                  die BEIDE Freudenformen empirisch kennen)\n                                          |\n                                          v\n                    【Synthese / Klausur-Kernaussage】\n      Geistige Freuden (Intellekt, Kunst, Moral) besitzen einen kategorialen\n      Vorrang vor bloßer sinnlicher Bedürfnisbefriedigung (Würdebewusstsein).",
+        "lang": "de"
+      },
+      {
+        "kind": "h3",
+        "text": "2.1 核心原理解构与高分公理句",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "密尔将功利主义从“庸俗的猪槽算术”升华为人性尊严与德性潜能的实现。",
+        "lang": "zh"
+      },
+      {
+        "kind": "quote",
+        "text": "*Klausur-Satz (德语核心公理句)*:",
+        "lang": "zh"
+      },
+      {
+        "kind": "quote",
+        "text": "\"Indem Mill Benthams utilitaristisches Kalkül um die qualitative Hierarchie der Freuden erweitert, rettet er die Ethik vor dem Einwand der 'pig philosophy': Durch den Rekurs auf die empirische Präferenz 'kompetenter Richter' begründet er, dass geistig-reflexive Lüste untrennbar mit dem menschlichen Würdebewusstsein verwoben sind und daher normativ über bloßen Sinnesreizen stehen.\"",
+        "lang": "de"
+      },
+      {
+        "kind": "p",
+        "text": "---",
+        "lang": "de"
+      },
+      {
+        "kind": "h2",
+        "text": "3. 解题方法与决策树 (Methoden & Entscheidungsbaum)",
+        "lang": "zh"
+      },
+      {
+        "kind": "diagram",
+        "text": "[考场题目指令: Beurteilen Sie das Dilemma nach Mill und Kant...]\n                                         |\n         +-------------------------------+-------------------------------+\n         |                                                               |\n  【Prüfschritt 1: Teleologischer Weg (Mill)】                     【Prüfschritt 2: Deontologischer Weg (Kant)】\n  1. Identifikation aller Betroffenen                              1. Formulierung der subjektiven Maxime\n  2. Schadens- und Nutzenbilanz berechnen                          2. Universalisierung (Kategorischer Imperativ)\n  3. Qualitative Differenzierung (Würde!)                          3. Zweck-Mittel-Formel: Menschenwürde Art. 1 GG\n         |                                                               |\n         +-------------------------------+-------------------------------+\n                                         |\n                       【Synthese & Ethisches Abitur-Urteil】\n                       1. Spannungsverhältnis: Maximierung vs. Instrumentalisierungsverbot\n                       2. Konkreter Lösungsweg (z.B. Ethik-Kommission autonomes Fahren)\n                       3. Fazit mit 15 NP philosophischer Fachsprache",
+        "lang": "de"
+      },
+      {
+        "kind": "p",
+        "text": "---",
+        "lang": "de"
+      },
+      {
+        "kind": "h2",
+        "text": "4.  中文深度心法与提分桥梁 (CN-Methode)",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "**心法 1：彻底分清“边沁”与“密尔”的质差**",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "在考场上写 Utilitarismus 时，绝对不能混为一谈。边沁（Bentham）是**纯粹量化计算**（Quantitativ），主张快乐无高下；密尔（Mill）是**质性快乐主义**（Qualitativ），强调智识与道德的不可替代性。写出两者的断裂是获得 14-15 NP 的关键门槛。",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "**心法 2：“苏格拉底之猪”的哲学深度剖析**",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "绝不仅是背诵一句名言，必须点出背后的认识论论证：为什么猪和傻子不服气？因为他们是“单向度的人”（Nur ihre eigene Seite kennen），从未登堂入室领略过精神之美；而智者兼具两者经验，具有最高发言权。",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "**心法 3：密尔两难（Mills Dilemma）是 AFB II 论证的杀手锏**",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "如果你想拿到德意志文理高中哲学满分，必须主动暴露密尔的理论缺陷：一旦密尔承认“质”优于“量”，他就实际上借用了非快乐主义的外部标准（如亚里士多德的潜能实现或康德的理性尊严），从而动摇了功利主义作为纯粹唯经验哲学的根基。",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "---",
+        "lang": "de"
+      },
+      {
+        "kind": "h2",
+        "text": "5. 仿真训练与官方标准评分 (Klausur-Training & EHZ)",
+        "lang": "zh"
+      },
+      {
+        "kind": "h3",
+        "text": "5.1 考场真题示范 (AFB III: Beurteilen)",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "**Aufgabe**:",
+        "lang": "de"
+      },
+      {
+        "kind": "p",
+        "text": "*Beurteilen Sie aus utilitaristischer Sicht (Mill) und deontologischer Sicht (Kant) das Dilemma, ob ein autonomes Fahrzeug bei unvermeidbarem Bremsversagen auf den Bürgersteig ausweichen darf, um fünf Fahrzeuginsassen auf Kosten eines unbeteiligten Fußgängers zu retten.*",
+        "lang": "de"
+      },
+      {
+        "kind": "h3",
+        "text": "5.2 15 NP 满分学术示范作答",
+        "lang": "zh"
+      },
+      {
+        "kind": "quote",
+        "text": "\"Aus der Perspektive von John Stuart Mills Utilitarismus steht die Gesamtnutzenbilanz im Zentrum der ethischen Abwägung. Da das Nützlichkeitsprinzip die Schadensminimierung aller Betroffenen gebietet und der Tod von fünf Insassen quantitativ wie qualitativ ein ungleich größeres Leid zur Folge hätte als der Tod einer Einzelperson, plädiert eine konsequenzialistische Nutzenrechnung primär für das Ausweichmanöver. Dennoch wirft Mills qualitativer Hedonismus Bedenken auf: Die Zerstörung des Vertrauens in die rechtsstaatliche Sicherheit des öffentlichen Raums stellt ein übergeordnetes geistig-gesellschaftliches Übel dar.",
+        "lang": "de"
+      },
+      {
+        "kind": "quote",
+        "text": "Demgegenüber verbietet Immanuel Kants deontologische Pflichtenethik die Instrumentalisierung des Fußgängers kategorisch. Gemäß der Menschheits-Zweck-Formel darf ein menschliches Subjekt niemals bloß als Mittel zur Rettung anderer gebraucht werden. Das gezielte Ansteuern des Fußgängers degradiert diesen zum reinen Rechenobjekt, was einen fundamentalen Verstoß gegen die Unantastbarkeit der Menschenwürde (Art. 1 Abs. 1 GG) darstellt.",
+        "lang": "de"
+      },
+      {
+        "kind": "quote",
+        "text": "Im theoriegeleiteten Urteil erweist sich die kantische Position als verfassungsrechtlich bindend, wie das Bundesverfassungsgericht 2006 im Urteil zum Luftsicherheitsgesetz klarstellte: Menschliches Leben entzieht sich jeder quantitativen Aufrechnung. Für die Programmierung autonomer Systeme bedeutet dies, dass Algorithmen rein unfallvermeidend agieren dürfen, eine aktive Opferung Unbeteiligter zur utilitaristischen Nutzenmaximierung jedoch strikt unzulässig bleibt.\"",
+        "lang": "de"
+      },
+      {
+        "kind": "p",
+        "text": "---",
+        "lang": "de"
+      },
+      {
+        "kind": "h2",
+        "text": "6. 易错陷阱与避坑指南 (Fehlerquellen)",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "**陷阱 1**：把功利主义当成“自私自利的实用主义”（Pragmatismus / Egoismus）。",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "**修正**：功利主义是不偏不倚的（Unparteiisch），要求决策者如同“仁慈而中立的旁观者”（Benevolent Spectator）。",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "**陷阱 2**：忽视普遍性原则中动物痛苦的纳入。",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "**修正**：边沁明确指出“问题不是他们能否推理，而是他们能否感到痛苦”（Can they suffer?），开创了现代动物伦理学先河。",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "**陷阱 3**：混淆行为功利主义（Handlungsutilitarismus）与规则功利主义（Regelutilitarismus）。",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "**修正**：行为功利主义每次算个案；规则功利主义则计算“若将此行为立为普遍社会规则”会产生何种净效用（与康德产生微妙对话）。",
+        "lang": "zh"
+      },
+      {
+        "kind": "p",
+        "text": "---",
+        "lang": "de"
+      },
+      {
+        "kind": "h2",
+        "text": "7. 跨学科知识网络 (Vernetzung)",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "**SoWi (社会学与经济学)**：",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "序数效用论与基数效用论（Nutzenfunktion）；",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "福利经济学（Wohlfahrtsökonomik）、帕累托最优与庇古税；",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "**Deutsch (德语文学与戏剧)**：",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "席勒《阴谋与爱情》（宰相对平民利益的冷酷功利算计）；",
+        "lang": "zh"
+      },
+      {
+        "kind": "li",
+        "text": "迪伦马特《物理学家》（科学发现的后果责任与全人类毁灭危险）。",
         "lang": "zh"
       }
     ]

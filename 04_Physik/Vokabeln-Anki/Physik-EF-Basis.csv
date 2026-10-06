@@ -25,7 +25,7 @@ Kraeftegleichgewicht;力平衡;Im Kraeftegleichgewicht ist die resultierende Kra
 Haftreibung;静摩擦;Die Haftreibung verhindert das Gleiten.;Physik;Abitur
 Gleitreibung;滑动摩擦;Die Gleitreibung wirkt entgegen der Relativbewegung.;Physik;Abitur
 Reibungskoeffizient;摩擦系数;Der Reibungskoeffizient charakterisiert die Reibung.;Physik;CN
-Arbeit;功;Arbeit ist Kraft mal Weg unter Beruecksichtigung der Richtung.;Physik;Abitur
+Arbeit;机械功/能量转化量;Die mechanische Arbeit W entspricht dem Skalarprodukt aus Kraftvektor und Wegvektor (W = F · s · cos α).;Physik;Abitur
 Leistung;功率;Die Leistung ist Arbeit pro Zeit.;Physik;Abitur
 Kinetische Energie;动能;Kinetische Energie ist proportional zu m mal v quadrat.;Physik;CN
 Potenzielle Energie;势能;Potenzielle Energie ist bei der Schwerkraft m mal g mal h.;Physik;CN
@@ -154,7 +154,7 @@ Punktdiagramm;散点图;Im Punktdiagramm werden nur die Messpunkte ohne Verbindu
 Lageenergie;重力势能;Die Lageenergie eines Koerpers waechst mit seiner Hoehe ueber dem Nullniveau.;Physik;Energieerhaltung
 Dissipation;耗散;Durch Dissipation wird mechanische Energie in innere Energie umgewandelt.;Physik;Energieerhaltung
 Geschwindigkeit;速度;Die Geschwindigkeit gibt an, welcher Weg in einer Sekunde zurueckgelegt wird.;Physik;Formeln
-Kraft;力;Eine Kraft erkennt man daran, dass sie die Bewegung eines Koerpers aendert.;Physik;Formeln
+Kraft;物理力/运动状态改变量;Eine Kraft F ist die Ursache für eine Bewegungsänderung oder Verformung und ist definiert als Masse mal Beschleunigung (F = m · a).;Physik;Formeln
 Energie;能量;Die Energie eines Koerpers wird in Joule gemessen.;Physik;Formeln
 Strecke;路程;Die Strecke ist die gesamte Laenge des zurueckgelegten Weges.;Physik;Kinematik
 Flaeche unter der Linie;曲线下面积;Die Flaeche unter der Linie im v-t-Diagramm liefert die Strecke.;Physik;Kinematik

@@ -128,11 +128,11 @@ die Verteilungsgerechtigkeit;分配正义;Die Verteilungsgerechtigkeit fragt nac
 die Lohnpolitik;工资政策;Die Lohnpolitik beeinflusst die Beschaeftigung.;SoWi;Synthese
 der CO2-Preis;碳价;Der CO2-Preis macht Umweltkosten sichtbar.;SoWi;Synthese
 der aktivierende Sozialstaat;激活性社会国家;Der aktivierende Sozialstaat foerdert statt nur zu helfen.;SoWi;Synthese
-die Konjunktur;景气;Die Konjunktur schwankt um den Trend.;SoWi;Wirtschaft
-der Konjunkturzyklus;景气周期;Der Konjunkturzyklus hat vier Phasen.;SoWi;Wirtschaft
+die Konjunktur;景气周期/宏观经济波动;Die Konjunktur beschreibt die zyklischen Schwankungen der gesamtwirtschaftlichen Aktivität (Auslastung des Produktionspotenzials) um den langfristigen Trend.;SoWi;Wirtschaft
+der Konjunkturzyklus;景气循环四阶段;Ein typischer Konjunkturzyklus gliedert sich in Aufschwung (Expansion), Boom (Hochkonjunktur), Abschwung (Rezession) und Tiefphase (Depression).;SoWi;Wirtschaft
 der Aufschwung;复苏;Im Aufschwung steigt die Beschaeftigung.;SoWi;Wirtschaft
-die Rezession;衰退;In der Rezession sinkt die Produktion.;SoWi;Wirtschaft
-das Bruttoinlandsprodukt;国内生产总值;Das Bruttoinlandsprodukt misst die Produktion.;SoWi;Wirtschaft
+die Rezession;经济衰退/连续两季度负增长;Eine Rezession ist ein markanter Konjunkturabschwung, der bei sinkendem realen BIP in mindestens zwei aufeinanderfolgenden Quartalen vorliegt.;SoWi;Wirtschaft
+das Bruttoinlandsprodukt;国内生产总值(BIP);Das BIP misst den Gesamtwert aller im Inland in einer Periode hergestellten Waren und Dienstleistungen nach Abzug der Vorleistungen.;SoWi;Wirtschaft
 das quantitative Wachstum;数量型增长;Das quantitative Wachstum misst nur die Menge.;SoWi;Nachhaltigkeit
 das qualitative Wachstum;质量型增长;Das qualitative Wachstum bewertet Struktur und Kosten.;SoWi;Nachhaltigkeit
 die nachhaltige Entwicklung;可持续发展;Die nachhaltige Entwicklung denkt an die Nachwelt.;SoWi;Nachhaltigkeit

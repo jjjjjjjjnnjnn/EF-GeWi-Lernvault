@@ -1,8 +1,8 @@
 Deutsch;Chinesisch;Beispielsatz;Fach;Thema
-Ableitung;导数;Die Ableitung an der Stelle x0 gibt die Tangentensteigung an.;Mathe;ZKE
+Ableitung;导数/瞬时变化率;Die Ableitung f'(x_0) entspricht dem Grenzwert des Differenzenquotienten und beschreibt die Tangentensteigung im Punkt (x_0 | f(x_0)).;Mathe;ZKE
 mittlere Aenderungsrate;平均变化率;Die Sekante durch zwei Punkte zeigt die mittlere Aenderungsrate.;Mathe;ZKE
 kollinear;共线;Die Vektoren sind kollinear, da b = 2 mal a gilt.;Mathe;ZKE
-Wendepunkt;拐点;Am Wendepunkt wechselt der Graph die Kruemmung.;Mathe;ZKE
+Wendepunkt;拐点/曲率转折点;Am Wendepunkt wechselt der Graph sein Krümmungsverhalten (f''(x)=0 mit VZW oder f'''(x)≠0), dort ist die Steigung extrem.;Mathe;ZKE
 Ableitungsregel;求导法则;Die Ableitungsregel liefert zu jeder Potenz die Steigung.;Mathe;CN
 Satz von Vieta;韦达定理;Nach dem Satz von Vieta pruefe ich Summe und Produkt.;Mathe;CN
 Ungleichung;不等式;Die Ungleichung gilt nur fuer positive Zahlen.;Mathe;CN
@@ -10,12 +10,12 @@ Sinussatz;正弦定理;Der Sinussatz verbindet Seiten mit ihren Winkeln.;Mathe;C
 Kosinussatz;余弦定理;Der Kosinussatz nutzt zwei Seiten und den Winkel dazwischen.;Mathe;CN
 Kreisgleichung;圆方程;Die Kreisgleichung zeigt Mittelpunkt und Radius.;Mathe;CN
 Ortsvektor;位置向量;Der Ortsvektor zeigt vom Ursprung zum Punkt.;Mathe;CN
-Tangente;切线;Die Tangente nutzt Punkt und Steigung zusammen.;Mathe;CN
+Tangente;切线/局部线性逼近;Die Tangente t(x) = f'(x_0)·(x - x_0) + f(x_0) berührt den Funktionsgraphen und linearisiert ihn lokal.;Mathe;CN
 Baumdiagramm;树形图;Entlang dem Pfad multipliziere ich die Stufen.;Mathe;CN
 Ausschlussverfahren;排除法;Mit dem Ausschlussverfahren streiche ich falsche Faelle.;Mathe;CN
 Definitionsbereich;定义域;Der Definitionsbereich enthaelt alle zulaessigen x-Werte.;Mathe;CN
 Wertebereich;值域;Der Wertebereich enthaelt alle y-Werte der Funktion.;Mathe;Abitur
-Nullstelle;零点;Am x-Wert einer Nullstelle ist der Funktionswert null.;Mathe;Abitur
+Nullstelle;函数零点/与x轴交点横坐标;Eine Nullstelle x_0 erfüllt die Bedingung f(x_0) = 0 und markiert den Schnittpunkt mit der x-Achse.;Mathe;Abitur
 Potenzfunktion;幂函数;Potenzfunktionen besitzen die Form x hoch n.;Mathe;Abitur
 Ganzrationale Funktion;有理整函数;Eine ganzrationale Funktion ist ein Polynom.;Mathe;Abitur
 Symmetrieachse;对称轴;Die Symmetrieachse einer Parabel geht durch den Scheitel.;Mathe;Abitur
@@ -26,13 +26,13 @@ Normalensteigung;法线斜率;Die Normalensteigung steht senkrecht auf der Tange
 Monotonie;单调性;Die Monotonie beschreibt das Steigen oder Fallen der Funktion.;Mathe;Abitur
 Hochpunkt;极大点;Ein Hochpunkt kann durch einen Vorzeichenwechsel entstehen.;Mathe;Abitur
 Tiefpunkt;极小点;Ein Tiefpunkt kann durch einen Vorzeichenwechsel entstehen.;Mathe;Abitur
-Sattelpunkt;鞍点;Ein Sattelpunkt beschreibt einen Wechsel der Kruemmung.;Mathe;Abitur
+Sattelpunkt;鞍点/水平拐点;Ein Sattelpunkt ist ein Wendepunkt mit waagerechter Tangente, an dem sowohl f'(x)=0 als auch f''(x)=0 gilt (ohne Extremum).;Mathe;Abitur
 Vorzeichentabelle;符号表;Die Vorzeichentabelle zeigt das Vorzeichen der Ableitung.;Mathe;CN
 Notwendige Bedingung;必要条件;Nullstellen der ersten Ableitung sind notwendig fuer Extrema.;Mathe;Abitur
 Hinreichende Bedingung;充分条件;Der Vorzeichenwechsel ist eine hinreichende Bedingung fuer ein Extremum.;Mathe;Abitur
 Kruemmung;凹凸性;Die Kruemmung wird durch die zweite Ableitung beschrieben.;Mathe;Abitur
 Stammfunktion;原函数;Eine Stammfunktion F erfuellt F gleich F Strich.;Mathe;Abitur
-Integral;积分;Das Integral einer Aenderungsrate liefert die Gesamtaenderung.;Mathe;Abitur
+Integral;定积分/累积总量;Das bestimmte Integral einer Änderungsrate f(t) über [a, b] liefert nach dem Hauptsatz der Analysis den Netto-Gesamtzuwachs.;Mathe;Abitur
 Skalarprodukt;标量积;Das Skalarprodukt zweier Vektoren ist eine Zahl.;Mathe;CN
 Vektorbetrag;向量模;Der Vektorbetrag gibt die Laenge des Vektors an.;Mathe;Abitur
 Richtungsvektor;方向向量;Ein Richtungsvektor gibt die Richtung einer Geraden an.;Mathe;Abitur
