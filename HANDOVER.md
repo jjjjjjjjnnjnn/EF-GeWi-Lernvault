@@ -20,7 +20,7 @@
 - **文科交互教学与工坊总纲**：[`00_META/GEISTESWISSENSCHAFTEN-INTERACTIVE-PEDAGOGY-PLAN.md`](00_META/GEISTESWISSENSCHAFTEN-INTERACTIVE-PEDAGOGY-PLAN.md)（**文科可探索解释与 GeWi-Labor 24款工坊建设总纲：博弈系统、道德天平、论证树、漫画透镜、戏剧张力与音乐动机**）。
 - 目标：德国 NRW Gymnasium EF 十科笔试/口试提分，中德双语，**完全离线**。
 - **内容铁律**：所有题目材料只能来自用户自己的笔记原文 —— **超纲率 = 0**。
-- **当前规模**：笔记 **409** · Anki 卡片 **1936** · 互动课程 **356 篇**（`Lernreise/`，十科全覆盖，含 Lesson-v3 全量高阶微课与多学科学术解剖台）· 术语表 **939 行** · 十科 Abi-Baum 应试树 **403 节点** · 考纲体系（NRW 十科 + 中国理科四科 + 中德映射）· 本地真题池 **760 份 PDF (2024–2026 全科 Klausuren + Vorgaben)**。
+- **当前规模**：笔记 **410** · Anki 卡片 **1939** · 互动课程 **356 篇**（`Lernreise/`，十科全覆盖，含 Lesson-v3 全量高阶微课与多学科学术解剖台）· 术语表 **943 行** · 十科 Abi-Baum 应试树 **403 节点** · 考纲体系（NRW 十科 + 中国理科四科 + 中德映射）· 本地真题池 **760 份 PDF (2024–2026 全科 Klausuren + Vorgaben)**。
 
 ---
 
@@ -28,7 +28,12 @@
 
 ## 当前状态（2026-10-06 最新里程碑与交接就绪）
 
-- ✅ **Standardsicherung NRW 官方全真试题池提炼与评分模型解剖（2026-10-06 最新交付）**：
+- ✅ **文科四科 Satzbausteine 全面升级与跨学科沙盘 Cluster 4 落地（2026-10-06 最新交付）**：
+  - **D1–D5 满分表达话术库重塑**：依据 NRW 官方会考 20 分 Darstellungsleistung (D1–D5) 模型，全面重塑 Deutsch, Englisch, SoWi, Philosophie 四大学科的 `Satzbausteine.md`，提供 Aufgabenbezug 镜像句、三态严格分流词、Konjunktiv I 间接引证范式与 15 NP 高阶学术复合句；
+  - **跨学科考点沙盘 Cluster 4（论辩修辞与语言中继）落地**：升级 `vernetzung.ts`，将德语文论修辞、哲学三段论演绎与逻辑谬误检验、英语中继 P.E.E. 结构以及社科政治话语权力（哈贝马斯协商民主与民粹修辞解构）熔铸为四位一体沙盘拓扑，配套单元测试 100% PASS；
+  - **跨学科研习沉淀**：完成规范八段式笔记 `01_Deutsch/Texte-Analyse/Argumentationslogik-und-Sprachmacht-Vernetzung.md`，同步扩充术语表与 Anki 词卡。
+
+- ✅ **Standardsicherung NRW 官方全真试题池提炼与评分模型解剖（2026-10-06）**：
   - **资源池入库**：本地私有目录 `_Downloads/StanSi-Klausuren/` 成功完成 2024–2026 年 NRW 全科（Deutsch, Englisch, Mathe, SoWi, Philo, Physik, Chemie, Bio 等）全真考试原题与官方 Erwartungshorizont (EHZ) 的规整（共 760 份 PDF，合规隔离在 gitignore 中，绝对不外泄）；
   - **分析脚本与结构提炼**：编写 [`scripts/analyze-stansi-klausuren.py`](scripts/analyze-stansi-klausuren.py)，完成对 65 套核心考卷的全量题型、分值及 Operator 矩阵结构提取；
   - **评分宪法解剖沉淀**：完成 [`00_META/NRW-Erwartungshorizont-Bewertungsmatrix.md`](00_META/NRW-Erwartungshorizont-Bewertungsmatrix.md)，全面解构文科双轨制评分（Inhalt 80% + Darstellungsleistung 20% 的 D1–D5 五维标准）与理科步进式 BE 采分点标准，为全库提供了 15 NP 满分答卷框架。
