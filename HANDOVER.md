@@ -20,13 +20,18 @@
 - **文科交互教学与工坊总纲**：[`00_META/GEISTESWISSENSCHAFTEN-INTERACTIVE-PEDAGOGY-PLAN.md`](00_META/GEISTESWISSENSCHAFTEN-INTERACTIVE-PEDAGOGY-PLAN.md)（**文科可探索解释与 GeWi-Labor 24款工坊建设总纲：博弈系统、道德天平、论证树、漫画透镜、戏剧张力与音乐动机**）。
 - 目标：德国 NRW Gymnasium EF 十科笔试/口试提分，中德双语，**完全离线**。
 - **内容铁律**：所有题目材料只能来自用户自己的笔记原文 —— **超纲率 = 0**。
-- **当前规模**：笔记 **407** · Anki 卡片 **1932** · 互动课程 **356 篇**（`Lernreise/`，十科全覆盖，含 Lesson-v3 全量高阶微课与多学科学术解剖台）· 术语表 **936 行** · 十科 Abi-Baum 应试树 **403 节点** · 考纲体系（NRW 十科 + 中国理科四科 + 中德映射）。
+- **当前规模**：笔记 **409** · Anki 卡片 **1936** · 互动课程 **356 篇**（`Lernreise/`，十科全覆盖，含 Lesson-v3 全量高阶微课与多学科学术解剖台）· 术语表 **939 行** · 十科 Abi-Baum 应试树 **403 节点** · 考纲体系（NRW 十科 + 中国理科四科 + 中德映射）· 本地真题池 **760 份 PDF (2024–2026 全科 Klausuren + Vorgaben)**。
 
 ---
 
 ---
 
 ## 当前状态（2026-10-06 最新里程碑与交接就绪）
+
+- ✅ **Standardsicherung NRW 官方全真试题池提炼与评分模型解剖（2026-10-06 最新交付）**：
+  - **资源池入库**：本地私有目录 `_Downloads/StanSi-Klausuren/` 成功完成 2024–2026 年 NRW 全科（Deutsch, Englisch, Mathe, SoWi, Philo, Physik, Chemie, Bio 等）全真考试原题与官方 Erwartungshorizont (EHZ) 的规整（共 760 份 PDF，合规隔离在 gitignore 中，绝对不外泄）；
+  - **分析脚本与结构提炼**：编写 [`scripts/analyze-stansi-klausuren.py`](scripts/analyze-stansi-klausuren.py)，完成对 65 套核心考卷的全量题型、分值及 Operator 矩阵结构提取；
+  - **评分宪法解剖沉淀**：完成 [`00_META/NRW-Erwartungshorizont-Bewertungsmatrix.md`](00_META/NRW-Erwartungshorizont-Bewertungsmatrix.md)，全面解构文科双轨制评分（Inhalt 80% + Darstellungsleistung 20% 的 D1–D5 五维标准）与理科步进式 BE 采分点标准，为全库提供了 15 NP 满分答卷框架。
 
 - 🔴 **新 Agent 接手铁律：全模块化研发生命周期（四步闭环）**：
   - **核心准则**：后续无论处理任何学科、任何板块（仿真实验、学科工坊、研习组件、真题评分台等），**全部统一使用模块化流程推进**：

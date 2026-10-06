@@ -34,7 +34,7 @@
   - 中国高中课标（理科 4 科）：[Mathe-CN](Curriculum/China/Mathe-CN-Kursstandard.md) · [Physik-CN](Curriculum/China/Physik-CN-Kursstandard.md) · [Chemie-CN](Curriculum/China/Chemie-CN-Kursstandard.md) · [Bio-CN](Curriculum/China/Bio-CN-Kursstandard.md)
   - 中德对照（理科 4 科，含 CN-Methode 技法卡）：[Mathe](Curriculum/Mapping/Mathe-DE-CN-Mapping.md) · [Physik](Curriculum/Mapping/Physik-DE-CN-Mapping.md) · [Chemie](Curriculum/Mapping/Chemie-DE-CN-Mapping.md) · [Bio](Curriculum/Mapping/Bio-DE-CN-Mapping.md)
   - 跨科统一源：[Operatoren 十科汇总](Curriculum/Deutschland/Operatoren-NRW-Alle-Faecher.md)（230 动词）· [Klausur/Abitur 形式](Curriculum/Klausur-Formate/Klausur-und-Abitur-Formate.md)
-- [Ziele](Ziele.md) · [NRW-EF-Lehrplan-Uebersicht](NRW-EF-Lehrplan-Uebersicht.md) · [Lernsystem](Lernsystem.md) · [Lernmethoden-Evidenz](Lernmethoden-Evidenz.md) · [Methoden-Quellen](Methoden-Quellen.md) · [Operatoren-NRW-GeWi](Operatoren-NRW-GeWi.md) · [Glossar-DE-ZH-GeWi](Glossar-DE-ZH-GeWi.md)
+- [Ziele](Ziele.md) · [NRW-EF-Lehrplan-Uebersicht](NRW-EF-Lehrplan-Uebersicht.md) · [Lernsystem](Lernsystem.md) · [Lernmethoden-Evidenz](Lernmethoden-Evidenz.md) · [Methoden-Quellen](Methoden-Quellen.md) · [Operatoren-NRW-GeWi](Operatoren-NRW-GeWi.md) · [Glossar-DE-ZH-GeWi](Glossar-DE-ZH-GeWi.md) · [NRW-Erwartungshorizont-Bewertungsmatrix](NRW-Erwartungshorizont-Bewertungsmatrix.md)
 - [Download-Quellen](Download-Quellen.md) — 本地 `_Downloads/` 采集清单（PDF不进git）
 - [DeepTutor](DeepTutor.md) — 提分引擎：Quiz/抽认卡/模拟卷命令手册
 - Skills：[klausur-drill](../Skills/klausur-drill/SKILL.md) · [vokabel-trainer](../Skills/vokabel-trainer/SKILL.md) · [texte-analyse](../Skills/texte-analyse/SKILL.md)
