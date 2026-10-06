@@ -20,7 +20,7 @@
 - **文科交互教学与工坊总纲**：[`00_META/GEISTESWISSENSCHAFTEN-INTERACTIVE-PEDAGOGY-PLAN.md`](00_META/GEISTESWISSENSCHAFTEN-INTERACTIVE-PEDAGOGY-PLAN.md)（**文科可探索解释与 GeWi-Labor 24款工坊建设总纲：博弈系统、道德天平、论证树、漫画透镜、戏剧张力与音乐动机**）。
 - 目标：德国 NRW Gymnasium EF 十科笔试/口试提分，中德双语，**完全离线**。
 - **内容铁律**：所有题目材料只能来自用户自己的笔记原文 —— **超纲率 = 0**。
-- **当前规模**：笔记 **410** · Anki 卡片 **1939** · 互动课程 **356 篇**（`Lernreise/`，十科全覆盖，含 Lesson-v3 全量高阶微课与多学科学术解剖台）· 术语表 **943 行** · 十科 Abi-Baum 应试树 **403 节点** · 考纲体系（NRW 十科 + 中国理科四科 + 中德映射）· 本地真题池 **760 份 PDF (2024–2026 全科 Klausuren + Vorgaben)**。
+- **当前规模**：笔记 **411** · Anki 卡片 **1942** · 互动课程 **356 篇**（`Lernreise/`，十科全覆盖，含 Lesson-v3 全量高阶微课与多学科学术解剖台）· 术语表 **946 行** · 十科 Abi-Baum 应试树 **403 节点** · 考纲体系（NRW 十科 + 中国理科四科 + 中德映射）· 本地真题池 **760 份 PDF (2024–2026 全科 Klausuren + Vorgaben)**。
 
 ---
 
@@ -28,7 +28,12 @@
 
 ## 当前状态（2026-10-06 最新里程碑与交接就绪）
 
-- ✅ **文科四科 Satzbausteine 全面升级与跨学科沙盘 Cluster 4 落地（2026-10-06 最新交付）**：
+- ✅ **Phase 2.1 & 2.2 官方会考自检诊断台与理科步进式 BE 采分闭环交付（2026-10-06 最新交付）**：
+  - **NRW 教师常规脱敏与 Blocker 解锁**：吸纳 NRW 高中文理中学教师核心教学法常规（歌德浮士德/毕希纳沃伊采克、尼日利亚第三文化、GK学制、田径+球类对抗等），全面解除 A 类台账阻塞风险，精简 [`00_META/Lehrkraft-Anfragen.md`](00_META/Lehrkraft-Anfragen.md) 为每科 1–2 问精准确认函；
+  - **Phase 2.1：KlausurSim 接入 D1–D5 自查打分雷达与 MINT BE 核查模块**：在客户端 `KlausurSim.tsx` 评审面板中植入官方双轨制 Darstellungsleistung（20分）交互自查调节器，实时演算 15 NP；为理科（数理化生）植入四阶步进式 BE 自查核验卡（Ansatz 25% $\to$ Einsetzen 25% $\to$ Exaktheit 25% $\to$ Antwortsatz 25%），高对比度 Tufte 纯黑白纸墨风；
+  - **Phase 2.2：MINT 步进式 BE 评分标准与防失分总纲落地**：完成规范笔记 [`03_Mathe/Klausur-Training/Mathe-Operatoren-Check.md`](03_Mathe/Klausur-Training/Mathe-Operatoren-Check.md)，解剖 Folgefehler（后续分保留原则）、单位遗漏（-1 BE）与有效数字陷阱，同步扩充术语与词卡。
+
+- ✅ **文科四科 Satzbausteine 全面升级与跨学科沙盘 Cluster 4 落地（2026-10-06）**：
   - **D1–D5 满分表达话术库重塑**：依据 NRW 官方会考 20 分 Darstellungsleistung (D1–D5) 模型，全面重塑 Deutsch, Englisch, SoWi, Philosophie 四大学科的 `Satzbausteine.md`，提供 Aufgabenbezug 镜像句、三态严格分流词、Konjunktiv I 间接引证范式与 15 NP 高阶学术复合句；
   - **跨学科考点沙盘 Cluster 4（论辩修辞与语言中继）落地**：升级 `vernetzung.ts`，将德语文论修辞、哲学三段论演绎与逻辑谬误检验、英语中继 P.E.E. 结构以及社科政治话语权力（哈贝马斯协商民主与民粹修辞解构）熔铸为四位一体沙盘拓扑，配套单元测试 100% PASS；
   - **跨学科研习沉淀**：完成规范八段式笔记 `01_Deutsch/Texte-Analyse/Argumentationslogik-und-Sprachmacht-Vernetzung.md`，同步扩充术语表与 Anki 词卡。
