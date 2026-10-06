@@ -84,7 +84,7 @@ Kontinuitaet: Vorher Englisch-Attention-Economy-Focus-L1.md | Nachher Englisch-A
 
 BEISPIEL（正确例题示范，含教具操作与解答）：
 
-[Werkzeug: highlighter]
+[Werkzeug: text-analyse]
 
 AUFGABE (examine & analyze, AFB I/II)：
 Given is the following excerpt from Macbeth's soliloquy in Act 5, Scene 5:

@@ -65,7 +65,7 @@ The Reality of Failure:                 The Hallucinations of Escape:
 
 ## Schritt 4 — ausprobieren: The Close Reading Workshop on the Firing Scene
 
-[Werkzeug: highlighter]
+[Werkzeug: text-analyse]
 
 AUFGABE (analyze & characterize, AFB I/II):
 Examine the dramatic confrontation between Willy Loman and his young employer Howard Wagner (Act 2):

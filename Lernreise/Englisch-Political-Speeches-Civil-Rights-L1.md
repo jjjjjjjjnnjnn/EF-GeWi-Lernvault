@@ -62,7 +62,7 @@ The Clarion Call ("Let Freedom Ring from every hill and molehill")
 
 ## Schritt 4 — ausprobieren: The Speech Analysis Workshop
 
-[Werkzeug: highlighter]
+[Werkzeug: text-analyse]
 
 AUFGABE (analyze & explain, AFB I/II):
 Examine the following excerpt from Dr. King's address:

@@ -64,7 +64,7 @@ Bezug zum Konzept: `CN: 安抚加删除等于去异议。EN: Comfort plus deleti
 
 ## Schritt 4 — ausprobieren: Die Sandkasten-Pruefung mit Textlupe
 
-[Werkzeug: highlighter]
+[Werkzeug: text-analyse]
 
 PRIMAERTEXT（Study text: Hatchery of Smiles (15 lines)，study version，100-200词）：
 
