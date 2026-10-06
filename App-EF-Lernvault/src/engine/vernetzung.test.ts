@@ -102,6 +102,13 @@ describe("vernetzung engine (0ms cross-subject topological bridging)", () => {
     expect(alienation?.nodes.map((n) => n.fach)).toEqual(
       expect.arrayContaining(["Deutsch", "Philosophie", "SoWi", "Englisch"])
     );
+
+    const rhetoric = clusters.find((c) => c.dimension === "argumentation_rhetoric");
+    expect(rhetoric).toBeDefined();
+    expect(rhetoric?.nodes.length).toBe(4);
+    expect(rhetoric?.nodes.map((n) => n.fach)).toEqual(
+      expect.arrayContaining(["Deutsch", "Philosophie", "SoWi", "Englisch"])
+    );
   });
 
   it("executes ultra-fast (< 5ms for 100 queries)", () => {
