@@ -20,13 +20,13 @@
 - **文科交互教学与工坊总纲**：[`00_META/GEISTESWISSENSCHAFTEN-INTERACTIVE-PEDAGOGY-PLAN.md`](00_META/GEISTESWISSENSCHAFTEN-INTERACTIVE-PEDAGOGY-PLAN.md)（**文科可探索解释与 GeWi-Labor 24款工坊建设总纲：博弈系统、道德天平、论证树、漫画透镜、戏剧张力与音乐动机**）。
 - 目标：德国 NRW Gymnasium EF 十科笔试/口试提分，中德双语，**完全离线**。
 - **内容铁律**：所有题目材料只能来自用户自己的笔记原文 —— **超纲率 = 0**。
-- **当前规模**：笔记 **401** · Anki 卡片 **1931** · 互动课程 **356 篇**（`Lernreise/`，十科全覆盖，含 Lesson-v3 全量高阶微课与多学科学术解剖台）· 术语表 **933 行** · 十科 Abi-Baum 应试树 **403 节点** · 考纲体系（NRW 十科 + 中国理科四科 + 中德映射）。
+- **当前规模**：笔记 **407** · Anki 卡片 **1932** · 互动课程 **356 篇**（`Lernreise/`，十科全覆盖，含 Lesson-v3 全量高阶微课与多学科学术解剖台）· 术语表 **936 行** · 十科 Abi-Baum 应试树 **403 节点** · 考纲体系（NRW 十科 + 中国理科四科 + 中德映射）。
 
 ---
 
 ---
 
-## 当前状态（2026-10-05 最新里程碑与交接就绪）
+## 当前状态（2026-10-06 最新里程碑与交接就绪）
 
 - 🔴 **新 Agent 接手铁律：全模块化研发生命周期（四步闭环）**：
   - **核心准则**：后续无论处理任何学科、任何板块（仿真实验、学科工坊、研习组件、真题评分台等），**全部统一使用模块化流程推进**：
@@ -35,29 +35,36 @@
     3. **③ 接入集成（Integrate）**：在路由总线与全局状态中精准对接，杜绝跨学科串味；
     4. **④ 集成验证（E2E Regression Test）**：运行 `npx tsc -b`、`vault-check.py` 及全链路交互仿真全绿后，单科独立 Commit。
 
-- ✅ **Labor 互动探索实验室体验与视觉缺陷深度治理收官（2026-10-04 ~ 2026-10-05）**：
-  1. **Sinus-Milieus 自由人画像漫游 2D 全景地图补齐（`SinusMilieusSim.tsx`）**：
-     - 攻克用户指出的“自由人画像漫游无设计、仅剩两个滑块与大片空白”缺陷；
-     - 在漫游模式下恢复并升级 2D SVG 阶层矩阵，投射动态个人定位锚点（Avatar Pin）、雷达声呐波脉冲环（`animate-ping`）、十字坐标虚线与悬浮标签；
-     - 算法自动高亮相交社群气泡，增设阶层固化天花板标线（Gläserne Decke）；
-     - 新增 5 大典型德国社会画像一键跃迁预设（学术世家、科技创客、奋斗中产、传统工薪、边缘零工）；
-     - 动态解构布尔迪厄三大资本条（经济/文化/社会资本）并支持研报一键复制导出；
-     - 会考真题拆解 15 BE 官方评分要点，提供 15 NP 满分范文与 04 NP 典型低分失误对照。
-  2. **SVG 气泡缩放中心偏心漂移根治**：
-     - 排查修复 SVG `<g>` 标签 `hover:scale-105` 默认以视口 `(0, 0)` 为原点向右下漂移的底层缺陷，全量绑定物理圆心 `${cx}px ${cy}px` 与 `view-box`，实现原地平滑居中膨胀。
-  3. **Tufte 纯黑白墨水排版规范彻底贯彻（根治浅绿/杂色违规）**：
-     - 响应“禁用绿色字体、背景、颜色排版”指令，彻底清除所有残存的浅绿底绿字、浅黄底黄字等弱对比杂色卡片；
-     - 全量统一使用 `--ink` 深墨色文字、`--paper-subtle` 纸面底色与 `--line` 极简细线，气泡内文字叠加深色边缘阴影滤镜（`drop-shadow`），确保 AAA 级锐利阅读体验。
-  4. **市场机制与福利经济学沙盒深度合一（`MarktMechanismusSim.tsx`）**：
-     - 将原分散的供求曲线相交沙盒与最低限价无谓损失（DWL）沙盒深度合并为统一旗舰级沙盒；
-     - 完整呈现消费者剩余（CS）、生产者剩余（PS）与无谓损失（DWL）的透光几何多边形与动态均衡出清。
-  5. **通用工作台四阶段动态因果链与会考评分升级（`UniversalInteractiveWorkbench.tsx`）**：
-     - 将原本平铺的纯文本升级为 4 步因果推演进度阶梯（`01 Impuls` ➔ `02 Mikromechanismus` ➔ `03 System-Reaktion` ➔ `04 Klausur-Fazit`）；
-     - 全量考纲学术术语卡片化，规范 15 NP 评分细则与满分句式。
-  - `App-EF-Lernvault`: `npx tsc -b` 0 报错；
-  - `npm run build`: 生产构建 6.47s 干净输出（0 语法阻断，0 废弃调用）；
-  - `scripts/vault-check.py`: PASS（notes=401, csv_rows=1921, index_links=332, reisen=356, badnames=0, badglossar=0）；
-  - `scripts/simulate-user-interaction.py`: 100% PASS（356 门互动微课、1,931 张词卡、403 个拓扑节点、933 跨学科术语全量仿真通过）。
+- ✅ **全量交互实验曲线轨迹与指示圆点几何偏位大面积扫描与数学级精修（2026-10-05 ~ 2026-10-06）**：
+  1. **二次贝塞尔曲线顶点衰减率精准修正（`UniversalInteractiveWorkbench.tsx`）**：
+     - 攻克用户反馈的“大量图的点都不在线上”（以化学突触去极化波形为典型）缺陷；
+     - 准确根据二次贝塞尔极值公式 $B_y(0.5) = 0.25 y_0 + 0.5 cy + 0.25 y_2$ 调整控制点，将去极化波控制点 Y 修正为 `125 - epsp * 8`，使曲线波峰与指示圆点在 `125 - epsp * 4` 处 100% 严丝合缝重合；
+  2. **全局通用分析画布（`default`）动态轨迹求解**：
+     - 彻底废除旧版静态硬编码高度 `cy = 170 - data.graphY * 1.2`，引入精确二次贝塞尔参数方程求值函数 $(curCx, curCy) = B(paramA / 100)$，使圆点实时沿抛物线平滑滑行；
+  3. **社科福利国家洛伦兹再分配曲线（`sozialstaat`）三次贝塞尔精确计算**：
+     - 在 $t = 0.2$ 处精确求解三次贝塞尔多项式方程，确保 Bürgergeld 底层兜底指示圆点与净收入绿色曲线完美吻合；
+  4. **生态波动与缓冲滴定连续映射治理**：
+     - 洛特卡-沃尔泰拉（`raeuber-beute`）统一采用未截断的连续浮点值计算圆点坐标，消除舍入偏差；
+     - 缓冲溶液滴定（`puffer`）与电泳条带、表观遗传组蛋白缠绕圆弧完成数学级吻合与闭合连接。
+
+- ✅ **一键启动本地服务器并自动打开浏览器程序交付（2026-10-05）**：
+  - 根目录下新建直观入口：[启动本地服务器并打开浏览器.bat](启动本地服务器并打开浏览器.bat) 与 [停止本地服务器.bat](停止本地服务器.bat)；
+  - 桌面直达快捷方式 `Start-EF-Lernvault`；
+  - Windows 原生 TCP 端口状态侦测（`Get-NetTCPConnection -LocalPort 1420`），毫秒级就绪唤起默认浏览器，严格遵守 PS 5.1 ASCII 编码约束。
+
+- ✅ **跨学科联动树形图与核心考点全景沙盘研制完成（方向二）**：
+  - 核心拓扑关联引擎升级：`vernetzung.ts` 增设 4 大跨学科考点沙盘簇（异化劳动与资本、正义论与再分配、变化率与守恒律、论辩修辞与语言中继）；
+  - 独立交互沙盘组件：`CrossDisciplinarySandbox.tsx` 交互式 SVG 弦图与卫星节点，遵循 Tufte 纯黑白学术纸墨风；
+  - 知识树无缝集成：`Lernbaum.tsx` 增设第 4 种全局模式 `vernetzung`，节点详情抽屉内嵌 AFB III 拓扑透镜与一键跨学科穿梭（1-Klick-Transit）；
+  - 跨学科研习笔记：`07_Philosophie/Texte-Analyse/Entfremdung-Kapital-Ungleichheit-Vernetzung.md`。
+
+- ✅ **文科工坊原典精读深度扩充（方向一）**：
+  - 德语（Goethe, Büchner, Lessing, Schiller, Kafka, Borchert）、英语（Shakespeare, Orwell, Miller）、哲学（Kant, Mill, Hobbes, Locke, Rousseau, Rawls, Popper, Arendt）与社科（Weber, Habermas）原典精读解剖台与会考答题示范。
+
+- ✅ **门禁与测试体系全绿**：
+  - `npx tsc -b` 0 报错；
+  - `npm test`：60 个测试文件、419 个单元测试 100% 全部通过；
+  - `scripts/vault-check.py`：PASS（notes=407, csv_rows=1932, index_links=339, reisen=356, badnames=0, badglossar=0）。
 
   - 全量微课通过自动化双门禁系统（`scripts/vault-check.py` PASS, `scripts/audit-pedagogy-integrity.py` 0 缺陷）；
   - 课程体系严格遵循 Lesson-v3 规范：生动导入、预训练盒、概念图谱、模块化教具（balance-board, lego, highlighter, etc.）、双极深度对比、三级真题 Szenario、口试 Blitz、元认知反思与考前速记 Spickzettel；
