@@ -983,3 +983,6 @@ tags: [EF, Meta]
 | Leserlenkung | 读者心理引导/修辞调控 | Deutsch | Die Leserlenkung steuert die Aufmerksamkeit und emotionale Haltung des Rezipienten über gezielte Rhetorik. |
 | Fehlschluss | 逻辑谬误（形式或实质假论证） | Philosophie | Ein logischer Fehlschluss verletzt die formale Gültigkeit oder stützt sich auf unbewiesene Prämissen. |
 | Diskursmacht | 话语权力与意识形态霸权 | SoWi | Die Diskursmacht prägt institutionell, welche Positionen in der Öffentlichkeit als legitim und sagbar gelten. |
+| Bewertungseinheit | 采分点（BE） | Mathe | Eine Bewertungseinheit BE ist das kleinste atomare Bepunktungselement im offiziellen NRW-Erwartungshorizont. |
+| Folgefehler | 后续推导保留分（防连坐机制） | Mathe | Ein Folgefehler beschreibt das Prinzip, dass trotz vorangegangenem Rechenfehler alle formal korrekten Folgeschritte voll bepunktet werden. |
+| mathematischer Ansatz | 列式与模型声明 | Mathe | Der mathematische Ansatz deklariert die zu verwendende Grundgleichung oder Theorem vor dem rechnerischen Einsetzen. |

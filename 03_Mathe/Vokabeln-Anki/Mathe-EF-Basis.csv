@@ -168,3 +168,6 @@ die lokale Aenderungsrate;瞬时变化率;Die lokale Aenderungsrate f'(x0) entsp
 das Fliessgleichgewicht;动态流平衡与稳态;Lebende Zellen operieren im Fliessgleichgewicht fernab des thermodynamischen Todes.;Mathe;MINT-Vernetzung
 der Erhaltungssatz;守恒定律;Ein physikalischer Erhaltungssatz besagt, dass die Gesamtgroesse zeitlich konstant bleibt.;Mathe;MINT-Vernetzung
 die Momentangeschwindigkeit;瞬时速度;Die Momentangeschwindigkeit ist die zeitliche Ableitung der Ortsfunktion v(t) = s'(t).;Mathe;MINT-Vernetzung
+die Bewertungseinheit;采分点BE;Jede Teilaufgabe wird in praezise Bewertungseinheiten BE unterteilt.;Mathe;Klausur
+der Folgefehler;后续推导保留分;Bei einem Folgefehler bleiben alle nachfolgenden korrekten Rechenschritte voll bepunktet.;Mathe;Klausur
+der Ansatz;列式建模模型假设;Ohne expliziten mathematischen Ansatz gehen die grundlegenden Modellierungs-BE verloren.;Mathe;Klausur
