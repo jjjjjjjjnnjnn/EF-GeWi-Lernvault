@@ -174,6 +174,19 @@ export const KlausurSim: React.FC<KlausurSimProps> = ({
   const [masterySaved, setMasterySaved] = useState(false);
   const [copiedPatch, setCopiedPatch] = useState(false);
   const [revealedCriteria, setRevealedCriteria] = useState<Record<string, boolean>>({});
+  const [dScores, setDScores] = useState<{ d1: number; d2: number; d3: number; d4: number; d5: number }>({
+    d1: 5,
+    d2: 4,
+    d3: 3,
+    d4: 4,
+    d5: 4,
+  });
+  const [mintChecks, setMintChecks] = useState<Record<string, boolean>>({
+    formelansatz: true,
+    einheiten: true,
+    genauigkeit: true,
+    antwortsatz: true,
+  });
   const toggleCriteria = (taskId: string) => {
     setRevealedCriteria((prev) => ({ ...prev, [taskId]: !prev[taskId] }));
   };
@@ -787,6 +800,168 @@ export const KlausurSim: React.FC<KlausurSimProps> = ({
                   );
                 })()}
               </div>
+              {/* GeWi / Sprachen: Offizielle Darstellungsleistung (D1-D5 / 20 Punkte) */}
+              {["Deutsch", "Englisch", "Philosophie", "SoWi"].includes(subject) && (
+                <div className="p-3 space-y-3 rounded-[var(--radius)] border border-[var(--line)] bg-[var(--surface)]">
+                  <div className="flex items-center justify-between border-b border-[var(--line)] pb-2">
+                    <div>
+                      <h3 className="font-serif font-semibold text-sm">
+                        Amtliche Darstellungsleistung (D1–D5 · 20 Punkte)
+                      </h3>
+                      <p className="text-xs text-[var(--gray)] mt-0.5">
+                        Nordrhein-Westfalen Abitur-Erwartungshorizont (EHZ): Inhaltliche Leistung (80%) + Darstellungsleistung (20%).
+                      </p>
+                    </div>
+                    <div className="text-right">
+                      <span className="font-mono text-sm font-semibold text-[var(--accent)]">
+                        {dScores.d1 + dScores.d2 + dScores.d3 + dScores.d4 + dScores.d5} / 20 P.
+                      </span>
+                      <span className="block text-xs text-[var(--gray)]">Selbstdiagnose</span>
+                    </div>
+                  </div>
+
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-3 text-xs">
+                    <div className="p-2 rounded border border-[var(--line)] bg-[var(--paper-subtle)] space-y-1">
+                      <div className="flex justify-between items-center font-medium">
+                        <span>D1: Aufgabenbezug & Stringenz</span>
+                        <select
+                          className="font-mono text-xs px-1.5 py-0.5 rounded border border-[var(--line)] bg-[var(--surface)] text-[var(--ink)]"
+                          value={dScores.d1}
+                          onChange={(e) => setDScores({ ...dScores, d1: Number(e.target.value) })}
+                        >
+                          {[0, 1, 2, 3, 4, 5].map((v) => (
+                            <option key={v} value={v}>{v} / 5 P.</option>
+                          ))}
+                        </select>
+                      </div>
+                      <p className="text-[var(--gray)] leading-tight">
+                        Text strukturiert, schlüssig, stringente Gedankenführung, Spiegelung der Operatoren im Einleitungssatz.
+                      </p>
+                    </div>
+
+                    <div className="p-2 rounded border border-[var(--line)] bg-[var(--paper-subtle)] space-y-1">
+                      <div className="flex justify-between items-center font-medium">
+                        <span>D2: Drei-Ebenen-Trennung</span>
+                        <select
+                          className="font-mono text-xs px-1.5 py-0.5 rounded border border-[var(--line)] bg-[var(--surface)] text-[var(--ink)]"
+                          value={dScores.d2}
+                          onChange={(e) => setDScores({ ...dScores, d2: Number(e.target.value) })}
+                        >
+                          {[0, 1, 2, 3, 4].map((v) => (
+                            <option key={v} value={v}>{v} / 4 P.</option>
+                          ))}
+                        </select>
+                      </div>
+                      <p className="text-[var(--gray)] leading-tight">
+                        Klare Trennung: Deskription (Befund) vs. Analyse (Funktion) vs. Wertung (eigenes Kriterienurteil).
+                      </p>
+                    </div>
+
+                    <div className="p-2 rounded border border-[var(--line)] bg-[var(--paper-subtle)] space-y-1">
+                      <div className="flex justify-between items-center font-medium">
+                        <span>D3: Beleg- & Zitiertechnik</span>
+                        <select
+                          className="font-mono text-xs px-1.5 py-0.5 rounded border border-[var(--line)] bg-[var(--surface)] text-[var(--ink)]"
+                          value={dScores.d3}
+                          onChange={(e) => setDScores({ ...dScores, d3: Number(e.target.value) })}
+                        >
+                          {[0, 1, 2, 3].map((v) => (
+                            <option key={v} value={v}>{v} / 3 P.</option>
+                          ))}
+                        </select>
+                      </div>
+                      <p className="text-[var(--gray)] leading-tight">
+                        Flüssig integrierte Zitate mit Zeilennachweisen (Z. 12f.), keine Zitat-Inseln, Konjunktiv I in Wiedergabe.
+                      </p>
+                    </div>
+
+                    <div className="p-2 rounded border border-[var(--line)] bg-[var(--paper-subtle)] space-y-1">
+                      <div className="flex justify-between items-center font-medium">
+                        <span>D4: Fachsprache & Differenzierung</span>
+                        <select
+                          className="font-mono text-xs px-1.5 py-0.5 rounded border border-[var(--line)] bg-[var(--surface)] text-[var(--ink)]"
+                          value={dScores.d4}
+                          onChange={(e) => setDScores({ ...dScores, d4: Number(e.target.value) })}
+                        >
+                          {[0, 1, 2, 3, 4].map((v) => (
+                            <option key={v} value={v}>{v} / 4 P.</option>
+                          ))}
+                        </select>
+                      </div>
+                      <p className="text-[var(--gray)] leading-tight">
+                        Präzise Verwendungsweise fachspezifischer Begrifflichkeiten und theoriegeleiteter Kriterienkataloge.
+                      </p>
+                    </div>
+
+                    <div className="p-2 rounded border border-[var(--line)] bg-[var(--paper-subtle)] space-y-1 md:col-span-2">
+                      <div className="flex justify-between items-center font-medium">
+                        <span>D5: Sprachliche Richtigkeit, Stil & Satzverknüpfung</span>
+                        <select
+                          className="font-mono text-xs px-1.5 py-0.5 rounded border border-[var(--line)] bg-[var(--surface)] text-[var(--ink)]"
+                          value={dScores.d5}
+                          onChange={(e) => setDScores({ ...dScores, d5: Number(e.target.value) })}
+                        >
+                          {[0, 1, 2, 3, 4].map((v) => (
+                            <option key={v} value={v}>{v} / 4 P.</option>
+                          ))}
+                        </select>
+                      </div>
+                      <p className="text-[var(--gray)] leading-tight">
+                        Orthographie, Grammatik, Interpunktion sowie flüssiger akademischer Satzbau (Kausale & konzessive Verknüpfungen).
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              )}
+
+              {/* MINT: Bewertungseinheiten (BE) & Schrittfolge-Checkliste */}
+              {["Mathe", "Physik", "Chemie", "Bio"].includes(subject) && (
+                <div className="p-3 space-y-3 rounded-[var(--radius)] border border-[var(--line)] bg-[var(--surface)]">
+                  <div className="flex items-center justify-between border-b border-[var(--line)] pb-2">
+                    <div>
+                      <h3 className="font-serif font-semibold text-sm">
+                        MINT Teilleistungen / BE-Schrittfolge (步进式采分点核验)
+                      </h3>
+                      <p className="text-xs text-[var(--gray)] mt-0.5">
+                        Offizielles Korrekturraster: Bewertungseinheiten (BE) erfordern lückenlose physikalische und mathematische Deduktion.
+                      </p>
+                    </div>
+                    <span className="font-mono text-xs text-[var(--accent)] font-semibold">
+                      {Object.values(mintChecks).filter(Boolean).length} / 4 Kriterien
+                    </span>
+                  </div>
+
+                  <div className="space-y-2 text-xs">
+                    {[
+                      { key: "formelansatz", title: "1. Modellierung & Ansatz (Formel)", desc: "Grundgleichung explizit hingeschrieben (z. B. v(t) = s'(t) oder v = dc/dt) vor dem Einsetzen." },
+                      { key: "einheiten", title: "2. Physikalisch/chemische Einheiten", desc: "Konsistente SI-Einheiten durchgehend mitgeführt; keine 'nackten' Zahlen im Zwischenschritt." },
+                      { key: "genauigkeit", title: "3. Rechnerische Genauigkeit & Rundung", desc: "Signifikante Stellen beachtet (in NRW i. d. R. 2–3 Stellen gemäß Aufgabenangabe)." },
+                      { key: "antwortsatz", title: "4. Kontextbezogener Antwortsatz & Deutung", desc: "Ergebnis im Sachkontext interpretiert (z. B. Wendepunkt als maximale Wachstumsrate)." },
+                    ].map((item) => (
+                      <label
+                        key={item.key}
+                        className="flex items-start gap-2.5 p-2 rounded border border-[var(--line)] bg-[var(--paper-subtle)] cursor-pointer"
+                      >
+                        <input
+                          type="checkbox"
+                          checked={Boolean(mintChecks[item.key])}
+                          onChange={(e) => setMintChecks({ ...mintChecks, [item.key]: e.target.checked })}
+                          style={{ accentColor: "var(--accent)", marginTop: 2 }}
+                        />
+                        <div>
+                          <strong className="block text-[var(--ink)]">{item.title}</strong>
+                          <span className="text-[var(--gray)] leading-tight">{item.desc}</span>
+                        </div>
+                      </label>
+                    ))}
+                  </div>
+
+                  <div className="p-2 rounded bg-[var(--paper-subtle)] text-[var(--gray)] text-xs border border-[var(--line)]">
+                    <strong className="text-[var(--accent)]">NRW-Korrekturpraxis:</strong> Fehlende Einheiten führen zu pauschalem Punktabzug (-1 BE pro Aufgabe); Rechenfehler mit Folgefehler-Regelung (Folge-BE bleiben erhalten).
+                  </div>
+                </div>
+              )}
+
               <p className="text-xs" style={mutedStyle}>
                 Diese lokale Heuristik ist keine amtliche Korrektur. Bewertet werden ausschließlich die festen ganzen Punkte der erzeugten Übungsaufgabe nach NRW Oberstufen-Punkteschlüssel (APO-GOSt).
               </p>
