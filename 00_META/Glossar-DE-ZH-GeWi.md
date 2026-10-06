@@ -979,3 +979,7 @@ tags: [EF, Meta]
 | lokale Änderungsrate | 瞬时变化率/导数 | Mathe | Die lokale Änderungsrate entspricht der Tangentensteigung an einer Stelle und quantifiziert Momentangeschwindigkeit oder Reaktionsrate. |
 | Fließgleichgewicht | 动态流平衡/稳态 | Bio | Das Fließgleichgewicht beschreibt einen dynamischen stationären Zustand offener Systeme mit kontinuierlichem Stoff- und Energiedurchsatz. |
 | Erhaltungssatz | 守恒定律 | Physik | Ein physikalischer Erhaltungssatz besagt, dass die Gesamtmenge einer fundamentalen Größe in einem abgeschlossenen System zeitlich unveränderlich ist. |
+| Syllogismus | 三段论演绎 | Deutsch | Der Syllogismus ist eine logische Schlussfigur aus Obersatz, Untersatz und notwendiger Konklusion. |
+| Leserlenkung | 读者心理引导/修辞调控 | Deutsch | Die Leserlenkung steuert die Aufmerksamkeit und emotionale Haltung des Rezipienten über gezielte Rhetorik. |
+| Fehlschluss | 逻辑谬误（形式或实质假论证） | Philosophie | Ein logischer Fehlschluss verletzt die formale Gültigkeit oder stützt sich auf unbewiesene Prämissen. |
+| Diskursmacht | 话语权力与意识形态霸权 | SoWi | Die Diskursmacht prägt institutionell, welche Positionen in der Öffentlichkeit als legitim und sagbar gelten. |

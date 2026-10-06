@@ -89,6 +89,7 @@
 - Abitur-Kernstellen (Aristoteles/Kant/Rousseau/Sartre) — [Philo-Abitur-Kernstellen](../07_Philosophie/Texte-Analyse/Philo-Abitur-Kernstellen.md)（4×3句论证+EF-Anschluss）· [II B/II C Training](../07_Philosophie/Klausur-Training/Philo-Textanalyse-Training.md)（EHZ+Lena-Übung）
 
 ### Deutsch
+- Argumentationslogik, Rhetorik & Diskursmacht (Fächervergleich) — [Argumentationslogik-und-Sprachmacht-Vernetzung](../01_Deutsch/Texte-Analyse/Argumentationslogik-und-Sprachmacht-Vernetzung.md)（三位一体文本解构：形式三段论逻辑/德英修辞读者引导/社科话语霸权与协商民主四维沙盘）
 - Rhetorik & Mediation — [Rhetorik-Mediation-Vernetzung](../01_Deutsch/Texte-Analyse/Rhetorik-Mediation-Vernetzung.md)（德语议论文剖析与英语中继写作跨语言联动）
 - Lyrik: Sturm und Drang (Goethe) — [Lyrik-Sturm-Drang-Goethe](../01_Deutsch/Texte-Analyse/Lyrik-Sturm-Drang-Goethe.md)（Willkommen und Abschied/6 Mittel/Deutungshypothese）
 - Epik / Moderne: Franz Kafka (Die Verwandlung) — [Kafka-Die-Verwandlung-Epik](../01_Deutsch/Texte-Analyse/Kafka-Die-Verwandlung-Epik.md)（限制性人物叙事/怪诞写实/劳工异化与家庭功利性批判/15 NP德语答卷句型）
