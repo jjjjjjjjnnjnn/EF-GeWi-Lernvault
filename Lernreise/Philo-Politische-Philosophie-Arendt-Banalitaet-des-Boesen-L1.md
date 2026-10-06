@@ -64,7 +64,7 @@ NIEDRIGSTE STUFE:
 
 ## Schritt 4 — ausprobieren: Das Urteilskraft-Labor im Eichmann-Szenario
 
-[Werkzeug: balance-board]
+[Werkzeug: text-analyse]
 
 AUFGABE (rekonstruieren & beurteilen, AFB I/II):
 Betrachte folgende Aussage von Adolf Eichmann vor dem Jerusalemer Gericht:
