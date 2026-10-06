@@ -194,8 +194,8 @@ function getAutoToolForContext(fach: string, thema: string): string | null {
   if (f === "philosophie" || th.includes("ethik") || th.includes("moral") || th.includes("urteil") || th.includes("gerechtigkeit")) {
     return "balance";
   }
-  if (f === "deutsch" || f === "englisch" || th.includes("analyse") || th.includes("text") || th.includes("gedicht")) {
-    return "highlighter";
+  if (f === "deutsch" || f === "englisch" || th.includes("analyse") || th.includes("text") || th.includes("gedicht") || th.includes("drama") || th.includes("faust") || th.includes("shakespeare")) {
+    return "text-analyse";
   }
   if (f === "chemie" || f === "bio") {
     return "formula";
@@ -1311,8 +1311,9 @@ export default function ReiseModule({
         (s.title && s.title.toLowerCase().includes("duell"));
       const tool =
         stepAus.toolId ||
+        (stepAus as any).werkzeug ||
         (toolMatch ? toolMatch[1] : null) ||
-        (!isDuelStep && s.stepNumber === 4 ? getAutoToolForContext(activeCourse.fach, activeCourse.thema) : null);
+        (!isDuelStep ? getAutoToolForContext(activeCourse.fach, activeCourse.thema) : null);
 
       const curInput = isDoc ? getTryInput(s.stepNumber) : tryInput;
       const curImage = isDoc ? getTryImage(s.stepNumber) : tryImage;
