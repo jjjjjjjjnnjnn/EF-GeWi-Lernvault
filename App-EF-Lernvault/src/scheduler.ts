@@ -75,6 +75,64 @@ export function prioritizeThema<T extends { id: string; thema: string }>(cards: 
 }
 
 /**
+ * Zieht Karten eines Themas oder Fachs bei diagnostizierten Defiziten (z. B. D1, D4 oder BE-Ansatz)
+ * mit erhöhtem Schwierigkeitsgrad (Difficulty Boost) und reduzierter Stabilität (Stability Damping)
+ * direkt in die Wiederholungs-Warteschlange (SM-2 / FSRS Re-Weighting).
+ *
+ * @param cards Kartengesamtheit mit Fach/Thema-Metadaten
+ * @param matcher Prädikat oder Thema/Fach zur Identifikation betroffener Karten
+ * @param weight Stufenfaktor (z. B. 2 oder 3 gemäß DIAGNOSTIC_CODES)
+ * @returns Anzahl modifizierter/vorgezogener Karten
+ */
+export function applyDiagnosticWeighting<T extends { id: string; fach?: string; thema?: string }>(
+  cards: T[],
+  matcher: { fach?: string; thema?: string },
+  weight = 2
+): number {
+  const store = loadFsrsStorage();
+  const now = new Date();
+  const dueImmediate = new Date(now.getTime() - 1000).toISOString();
+  let affected = 0;
+
+  for (const card of cards) {
+    const matchesFach = !matcher.fach || (card.fach && card.fach.toLowerCase() === matcher.fach.toLowerCase());
+    const matchesThema = !matcher.thema || (card.thema && card.thema.toLowerCase().includes(matcher.thema.toLowerCase()));
+
+    if (matchesFach && matchesThema) {
+      const prev = store.cards[card.id];
+      if (prev) {
+        // Bestehende Karte: Stabilität dämpfen, Schwierigkeit anheben, Fälligkeit sofort
+        store.cards[card.id] = {
+          ...prev,
+          due: dueImmediate,
+          difficulty: Math.min(10.0, Math.round((prev.difficulty + weight * 0.4) * 100) / 100),
+          stability: Math.max(0.6, Math.round((prev.stability * (1 / (1 + weight * 0.25))) * 100) / 100),
+          lapses: prev.lapses + 1,
+        };
+        affected++;
+      } else {
+        // Neue Karte: mit erhöhtem Vorab-Schwierigkeitswert initialisieren und sofort fällig stellen
+        store.cards[card.id] = {
+          state: 1, // Learning
+          due: dueImmediate,
+          stability: Math.max(0.6, Math.round((2.0 * (1 / (1 + weight * 0.25))) * 100) / 100),
+          difficulty: Math.min(10.0, 5.0 + weight * 0.5),
+          reps: 0,
+          lapses: 1,
+          lastReview: now.toISOString(),
+        };
+        affected++;
+      }
+    }
+  }
+
+  if (affected > 0) {
+    saveFsrsStorage(store);
+  }
+  return affected;
+}
+
+/**
  * Grade a card and return the updated CardState and scheduled interval in days.
  */
 export function gradeCard(

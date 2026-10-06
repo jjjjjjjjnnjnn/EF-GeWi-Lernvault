@@ -18,6 +18,12 @@ import {
   type ExamOptionSelections,
   type MathToolset,
 } from "../engine/examComposer";
+import {
+  detectDiagnosticIssues,
+  buildDiagnosticFehlerlogRows,
+  type DetectedDiagnosticIssue,
+} from "../engine/diagnostics";
+import { applyDiagnosticWeighting } from "../scheduler";
 
 export interface KlausurSimProps {
   notes: VaultNote[];
@@ -394,21 +400,77 @@ export const KlausurSim: React.FC<KlausurSimProps> = ({
     setRadarVersion((version) => version + 1);
   };
 
+  const [diagnosticWeightedCount, setDiagnosticWeightedCount] = useState<number | null>(null);
+
+  const detectedDiagnosticIssues: DetectedDiagnosticIssue[] = useMemo(() => {
+    return detectDiagnosticIssues({
+      fach: subject,
+      dScores: ["Deutsch", "Englisch", "Philosophie", "SoWi"].includes(subject) ? dScores : undefined,
+      mintChecks: ["Mathe", "Physik", "Chemie", "Bio"].includes(subject) ? mintChecks : undefined,
+    });
+  }, [dScores, mintChecks, subject]);
+
   const handleCopyPatch = () => {
     if (!gradingResult || !exam) return;
-    const patch = gradingResult.taskGrades
+    const taskRows = gradingResult.taskGrades
       .flatMap((taskGrade) => {
         const task = exam.tasks.find((item) => item.id === taskGrade.taskId);
         return taskGrade.missingCriteriaDE.map(
           (criterion) => `- [ ] ${task?.sourceNotePaths[0] ?? exam.subject} (${task?.code ?? taskGrade.taskId}): ${criterion}`
         );
-      })
-      .join("\n");
+      });
+
+    // Diagnostische Zeilen für Fehlerlog.md
+    const currentThema = exam.tasks[0]?.promptDE ? exam.tasks[0].promptDE.slice(0, 30) : exam.subject;
+    const diagnosticRows = buildDiagnosticFehlerlogRows(exam.subject, currentThema, detectedDiagnosticIssues);
+
+    const patchLines = [
+      `<!-- EF-Lernvault Fehlerlog & Diagnose-Patch -->`,
+      `<!-- Fach: ${exam.subject} · Modus: ${courseType} -->`,
+      ``,
+    ];
+
+    if (diagnosticRows.length > 0) {
+      patchLines.push(
+        `### Diagnostizierte Defizite (D1–D5 / MINT-BE)`,
+        `| Datum | Thema | Fehlertyp | Eigener Fehler / Fehlvorstellung | Korrektur & Klausursatz |`,
+        `|---|---|---|---|---|`,
+        ...diagnosticRows,
+        ``
+      );
+    }
+
+    if (taskRows.length > 0) {
+      patchLines.push(
+        `### Kriterien-Fehlstellen (Aufgabenbezug)`,
+        ...taskRows
+      );
+    }
+
+    const patch = patchLines.join("\n");
     if (!navigator.clipboard) return;
     void navigator.clipboard.writeText(patch).then(() => {
       setCopiedPatch(true);
       window.setTimeout(() => setCopiedPatch(false), 2500);
     });
+  };
+
+  const handleApplyDiagnosticToCards = () => {
+    if (!exam || detectedDiagnosticIssues.length === 0) return;
+    // Berechne maximalen Gewichtungsfaktor aus den identifizierten Defiziten
+    const maxBoost = Math.max(
+      2,
+      ...detectedDiagnosticIssues.map((issue) => issue.definition.ankiPriorityBoost)
+    );
+    // Beziehe Karten über note.path oder subject
+    const relatedCards = subjectNotes.map((n) => ({
+      id: n.id,
+      fach: n.fach,
+      thema: n.thema,
+    }));
+    const count = applyDiagnosticWeighting(relatedCards, { fach: exam.subject }, maxBoost);
+    setDiagnosticWeightedCount(count);
+    window.setTimeout(() => setDiagnosticWeightedCount(null), 3000);
   };
 
   if (availableSubjects.length === 0) {
@@ -969,6 +1031,18 @@ export const KlausurSim: React.FC<KlausurSimProps> = ({
                 <button type="button" style={buttonStyle} onClick={handleCopyPatch}>
                   {copiedPatch ? "Patch kopiert" : "Fehlerlog-Patch kopieren"}
                 </button>
+                {detectedDiagnosticIssues.length > 0 && (
+                  <button
+                    type="button"
+                    style={diagnosticWeightedCount !== null ? buttonStyle : primaryButtonStyle}
+                    onClick={handleApplyDiagnosticToCards}
+                    title="Gewichtet betroffene Karten des Fachs im FSRS/SM-2 Stapel vor"
+                  >
+                    {diagnosticWeightedCount !== null
+                      ? `Defizite vorgezogen (${diagnosticWeightedCount} Karten)`
+                      : `Defizite in FSRS priorisieren (${detectedDiagnosticIssues.length})`}
+                  </button>
+                )}
                 <button
                   type="button"
                   style={masterySaved ? buttonStyle : primaryButtonStyle}

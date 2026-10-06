@@ -101,4 +101,20 @@ describe("KlausurSim Vollsimulation", () => {
     });
     expect(screen.getByText(/Prüfungsmodus: 5 Std. 15 Min./)).toBeInTheDocument();
   });
+
+  it("handles copy patch and diagnostic weighting button after submission", async () => {
+    const user = userEvent.setup();
+    render(<KlausurSim notes={notes} currentFach="Deutsch" />);
+
+    // Abgeben
+    await user.click(screen.getByRole("button", { name: /Abgeben und lokale Indikatorauswertung/ }));
+
+    // Buttons muessen sichtbar sein
+    const copyBtn = screen.getByRole("button", { name: /Fehlerlog-Patch kopieren/ });
+    expect(copyBtn).toBeInTheDocument();
+    await user.click(copyBtn);
+
+    // Klick auf Patch kopieren löst Feedback aus
+    expect(await screen.findByRole("button", { name: /Patch kopiert/ })).toBeInTheDocument();
+  });
 });

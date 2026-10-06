@@ -1,5 +1,5 @@
 import { beforeEach, describe, expect, it } from "vitest";
-import { gradeCard, loadFsrsStorage, partitionQueue, type Rating } from "./scheduler";
+import { applyDiagnosticWeighting, gradeCard, loadFsrsStorage, partitionQueue, type Rating } from "./scheduler";
 
 beforeEach(() => {
   localStorage.clear();
@@ -111,5 +111,28 @@ describe("session-snapshot invariant (regression: fruehes finish)", () => {
     expect(snapshot).toHaveLength(4);
     // naechste partition waere kuerzer -> genau der alte bug; snapshot verhindert ihn
     expect(partitionQueue(items).activeQueue.length).toBeLessThan(4);
+  });
+});
+
+describe("applyDiagnosticWeighting", () => {
+  it("daempft Stabilitaet und erhoeht Schwierigkeit bei diagnostiziertem Defizit", () => {
+    const cards = [
+      { id: "mathe-1", fach: "Mathe", thema: "Ableitungen" },
+      { id: "deutsch-1", fach: "Deutsch", thema: "Sachtextanalyse" },
+    ];
+    // Zunaechst als Good bewerten (Stabilität 3.0, Difficulty 4.9)
+    gradeCard("mathe-1", 3);
+    const stateBefore = loadFsrsStorage().cards["mathe-1"];
+    expect(stateBefore?.stability).toBe(3.0);
+
+    // Diagnostisches Defizit anwenden (z.B. BE-Ansatz in Mathe)
+    const count = applyDiagnosticWeighting(cards, { fach: "Mathe" }, 3);
+    expect(count).toBe(1);
+
+    const stateAfter = loadFsrsStorage().cards["mathe-1"];
+    expect(stateAfter?.stability).toBeLessThan(stateBefore!.stability);
+    expect(stateAfter?.difficulty).toBeGreaterThan(stateBefore!.difficulty);
+    // Karte ist sofort faellig
+    expect(new Date(stateAfter!.due).getTime()).toBeLessThan(Date.now());
   });
 });
