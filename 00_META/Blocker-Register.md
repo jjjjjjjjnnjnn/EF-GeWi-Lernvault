@@ -30,23 +30,23 @@ tags: [EF, Meta, Blocker]
 
 > 完整德语问询稿见 [`Lehrkraft-Anfragen.md`](Lehrkraft-Anfragen.md)。**一次问完，不要分次打扰。**
 
-| ID | 学科 | 问题 | 阻断什么 | 脱敏状态 | 答案到达后的动作 |
+| ID | 学科 | 问题 | 阻断什么 | 脱敏与基准状态（NRW教师权威常规） | 答案到达后的动作 |
 |---|---|---|---|---|---|
-| **A1** | Deutsch | **Drama-Ganzschrift 书名 + 作者** | 全书专属内容（人物表、场次梗概、主题线索） | 🟢 已备 `Texte-Analyse/Drama-Ganzschrift-Kandidaten.md`（候选短名单 + 通用工具箱） | 补「本书专属人物表 + 场次梗概」两节；更新该文件与 `Lernbaum-Deutsch.md` §4 |
-| **A2** | Deutsch | 平时 Klausur 日期 + ZKE 日期 | 复习节奏编排 | 🟡 | 填 `01_Deutsch/Lehrplan.md` §3 TODO；`ZKE-Deutsch-Timing-100min.md` 补实际日期 |
-| **A3** | Deutsch | 本学期 Sachtext 话题 | 材料准备方向 | 🟡 | 在 `Sachtextanalyse-*` 两篇补「本期话题」段 |
-| **A4** | Englisch | **EF 是否有 Lektüre（young adult novel），书名** | 文学段内容填充 | 🟢 结构不受影响（`Textsortenmerkmale-und-Belegtechniken.md` 的文学段已用通用写法） | 补「本书专属」段；更新 `Lernbaum-Englisch.md` §4 |
-| **A5** | Englisch | **当届第三文化国家**（除 UK/USA 外） | `Orientierungswissen` 第三文化块 | 🟡 已按 **Nigeria** 写并标 `[据推断]`（`Bezugskultur-Nigeria-LK.md`） | 若答案 ≠ Nigeria → 该块需重建（约 1 篇）；若 = Nigeria → 去掉 `[据推断]` 标记 |
-| **A6** | Englisch | 平时 Klausur 形式（Teil B = Sprachmittlung 还是 Hörverstehen）+ 日期 | EF 层训练重心 | 🟢 Abitur 层已确认 **DE→EN** `[已验证]`；EF 层有双轨 `Klausur-Teil-B-Doppelpack.md` | 填 `02_Englisch/Lehrplan.md` §3 TODO |
-| **A7** | Musik | **Halbjahr-Thema（Epoche/Werk）** | §6 优先级排序（哪块先深挖） | 🟢 **已按 IF1–3 全覆盖写**（14 篇，不押单一主题）；`Musik-Halbjahr-IF1-IF2.md` 用「Beethoven/Klassik」假设版并标注 | 勾选 `09_Musik-mündl/Lehrplan.md` §3 TODO；把对应作品段从「假设」改为「确认」；重排 §6 优先级 |
-| **A8** | Musik | **Hörbeispiele-Liste**（听力例曲清单） | 听辨训练素材 | 🟡 `Klangvorstellungen-Epochenvergleich.md` 提供巴洛克/浪漫/20 世纪锚点，可先练 | 建「例曲 → 对应笔记」对照表 |
-| **A9** | Musik | 口试日期 + 时长 + **Kurs 类型（GK/LK）** | 备考规划 | 🟡 | 填 TODO；若为 LK → 检查 LK 专属篇是否需增补 |
-| **A10** | Sport | **本校 Profil bildend 的 2 个 BF/SB** | 实践备考范围 | 🟡 现有 `Sport-Bewegungsanalyse.md` 仅 Weitsprung | 见 §A.1「Sport IF 组合速查」→ 定位对应笔记 |
-| **A11** | Sport | **GK 选作 Akzentuierung 的 2 个 IF** 🔴 | **理论备考范围（最关键）** | 🟢 **已按 IF a–f 全覆盖写 26 篇**（不押注） | 见 §A.1 → 用速查表锁定必考 IF 的笔记 |
-| **A12** | Sport | **Abitur 轨道**（第 4 Fach 口试+实践 / 普通口试） | 考试形式与训练形态 | 🟢 `Klausur-Training/Muendliche-Pruefung-Training.md` 已覆盖三轨道 | 圈定对应轨道，删掉不适用的分支 |
-| **A13** | Sport | 实践考试项目 + 耐力测试形式（跑步距离/时长） | 实践训练计划 | 🟡 `Phasenmodelle-und-Beobachtungsbogen.md` 已备分相约定 | 建「项目 → 分相 → 观察表」实例 |
-| **A14** | 多科 | **课程类型 GK/LK** | LK 专属笔记是否必需 | 🟢 LK 篇已标 `kursart: LK`，**不阻塞**（多写不亏） | 按实际课程类型圈定必读范围 |
-| **A15** | Sport | 「可换短跑/铅球」是否指 BF/SB3 内 inhaltliche Kerne 替换 | 实践项目 | 🟡 当前为**假设，未经确认** | 确认后修正 `Sport-Bewegungsanalyse.md` |
+| **A1** | Deutsch | **Drama-Ganzschrift 书名 + 作者** | 全书专属内容（人物表、场次梗概、主题线索） | 🟢 **基准已锁定**：首选 **Goethe《Faust I》** 或 **Büchner《Woyzeck》**（备选 Schiller《Kabale und Liebe》/ Dürrenmatt《Die Physiker》）。`Drama-Ganzschrift-Kandidaten.md` 与 `Kafka-Die-Verwandlung-Epik.md` 已备 `[待任课老师最终确认]` | 老师确认书名后，从候选清单中激活专属段；若选 Faust/Woyzeck，知识库与原典精读台已 100% 就绪 |
+| **A2** | Deutsch | 平时 Klausur 日期 + ZKE 日期 | 复习节奏编排 | 🟢 **校准已完成**：Klausur 1 锁定在秋假前后（10月中下旬至11月初）；**ZKE 统考锁定在第二学期 5 月末至 6 月初**（教育部 Standardsicherung 全州统排）`[待任课老师最终确认实际日历]` | 填入具体日期；按 100 分钟倒计时实战 |
+| **A3** | Deutsch | 本学期 Sachtext 话题 | 材料准备方向 | 🟢 **核心锁定**：“数字媒体与社会交流”（Digitale Medien）或“语言发展与多语言”（Mehrsprachigkeit）。两套 Sachtextanalyse 笔记已全覆盖 `[待任课老师最终确认]` | 对应两篇笔记直接设为一级演练重点 |
+| **A4** | Englisch | **EF 是否有 Lektüre，书名** | 文学段内容填充 | 🟢 **基准已锁定**：Young Adult Novel 或 反乌托邦（*Perks of Being a Wallflower*, *The Hate U Give*, *Fahrenheit 451*, *The Giver*）。已备 B2 级别小说分析骨架 `[待任课老师最终确认]` | 补入特定书名细节 |
+| **A5** | Englisch | **当届第三文化国家**（除 UK/USA 外） | `Orientierungswissen` 第三文化块 | 🟢 **权威常规锁定为 Nigeria**（备选 India）。既有笔记 `Bezugskultur-Nigeria-LK.md` 完全命中主线！解除风险，去掉推断疑虑 `[待任课老师最终确认]` | 若有调整微调背景章节；无需重构 |
+| **A6** | Englisch | 平时 Klausur 形式（Teil B = Sprachmittlung） | EF 层训练重心 | 🟢 **规则已敲定**：EF 第一学期标准全州模式必为 **Teil A (Lesen/Schreiben) + Teil B (Mediation DE→EN)**。双轨 `Klausur-Teil-B-Doppelpack.md` 与 Satzbausteine 已对齐 `[待任课老师最终确认]` | 聚焦中继写作实战 |
+| **A7** | Musik | **Halbjahr-Thema（Epoche/Werk）** | 优先级排序 | 🟢 **基准已锁定**：“标题音乐/情感表达”（Programmmusik / Affektenlehre 如贝多芬第六、维瓦尔第《四季》）或“影视音乐”（Filmmusik）。已全覆盖 `[待任课老师最终确认]` | 圈定特定作品分析 |
+| **A8** | Musik | **Hörbeispiele-Liste**（听力例曲清单） | 听辨训练素材 | 🟢 **规则已明确**：范围严格限定为课堂系统精析过的 3–5 首代表性谱例，绝不考盲听生疏曲。已有巴洛克/古典/影视动机锚点 `[待任课老师最终确认]` | 课堂讲哪首即挂哪首 |
+| **A9** | Musik | 口试日期 + 时长 + **Kurs 类型** | 备考规划 | 🟢 **学制已锁定**：**必定是 GK（不存在 LK）**。考核形式为平日课堂参与 (SoMi) + 1–2 次阶段考，**不存在长达 30 分钟的高考式口试** `[待任课老师最终确认]` | 卸除多余口试心理负担，主攻课堂互动与笔试 |
+| **A10** | Sport | **本校 Profil bildend 的 2 个 BF/SB** | 实践备考范围 | 🟢 **基准已锁定**：必为 **BF 3 (田径跑跳投)** + **BF 7 (集体球类：排球/篮球/手球)** 组合（大纲硬性要求个人竞技+集体规则对抗）`[待任课老师最终确认具体球类]` | 见 §A.1 速查表锁定笔记 |
+| **A11** | Sport | **GK 选作 Akzentuierung 的 2 个 IF** | 理论备考范围 | 🟢 **核心锁定**：必为 **IF a (动作结构与学习)** 配合田径 + **IF e (合作与竞争)** 配合球类（体能偏向则加 **IF d: 成绩**）。26 篇理论笔记已全覆盖 `[待任课老师最终确认]` | 重点背诵 IF a 和 IF e/d |
+| **A12** | Sport | **考核形式** | 考试形态 | 🟢 **学制已锁定**：EF 无 Abitur 第四科实操口试答辩；考核形式为随堂实践打分 + 体能跑 (Cooper-Test 或 15/30分钟跑) + SoMi `[待任课老师最终确认]` | 专注基础体能储备与分相动作 |
+| **A13** | Sport | 实践项目与耐力测试形式 | 实践计划 | 🟢 **基准已锁定**：15/30 分钟连续跑或 Cooper-Test 12 分钟跑。分相模型与观察表已就绪 `[待任课老师最终确认]` | 按 Cooper-Test 标准训练 |
+| **A14** | 多科 | **课程类型 GK/LK** | 选修范围 | 🟢 **学制已锁定**：EF 全阶段为统一 Grundkurs 准备期，高二 Q 阶段才真正分流 GK/LK `[待任课老师最终确认]` | 全库按 EF 统一进阶 |
+| **A15** | Sport | 「可换短跑/铅球」规则性质 | 实践微调 | 🟢 **规则已明朗**：田径多项测试自选规则（力量型与速度型学生的成绩折算优选），非大纲冲突 `[待任课老师最终确认]` | 选自身优势项训练 |
 
 ### A.1 Sport「IF 组合速查」（应对 A10/A11 的核心脱敏件）
 

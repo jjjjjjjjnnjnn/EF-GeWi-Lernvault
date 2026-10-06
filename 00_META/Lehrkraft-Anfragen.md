@@ -19,32 +19,27 @@ tags: [EF, Meta, Blocker]
 
 Guten Tag,
 
-ich bereite mich gerade strukturiert auf die Klausuren und die weitere Oberstufe vor. Dabei sind vier kurze Fragen offen geblieben – zu Deutsch, Englisch, Musik und Sport. Es würde mir sehr helfen, wenn Sie sie in einer Nachricht beantworten könnten.
+ich bereite mich gerade strukturiert auf die anstehenden Klausuren und Lernschwerpunkte der Oberstufe vor. Basierend auf den allgemeinen Vorgaben des Kernlehrplans NRW habe ich die Rahmenbedingungen bereits weitgehend erarbeitet. 
 
-**1. Deutsch (EF)**
-a) Welche Ganzschrift – welches Drama mit welchem Autor – lesen wir in diesem Schuljahr?
-b) Wann schreiben wir die nächste Klausur, und wann findet die Zentrale Klausur (ZKE) statt?
-c) Welches Thema behandeln wir in diesem Halbjahr im Bereich Sachtextanalyse?
+Um meine individuelle Vorbereitung exakt abzustimmen, wäre ich Ihnen für eine kurze Bestätigung von jeweils 1–2 schul- bzw. kursspezifischen Details sehr dankbar:
 
-**2. Englisch (EF)**
-a) Gibt es in EF eine Lektüre (zum Beispiel einen young adult novel)? Wenn ja: welcher Titel?
-b) Welcher dritte Bezugskultur-Raum (neben UK und USA) ist in diesem Jahr vorgesehen?
-c) Wann ist die nächste Klausur, und hat Teil B die Form Sprachmittlung oder Hörverstehen?
+1. **Deutsch**:
+   - Welche Ganzschrift (Drama, z. B. Goethe: *Faust I* oder Büchner: *Woyzeck*) werden wir in der EF schwerpunktmäßig lesen?
+   - Welches Rahmenthema (z. B. Digitale Medien oder Sprachentwicklung) steht für die Sachtextanalyse im Vordergrund?
 
-**3. Musik (EF, mündlich)**
-a) Was ist das Halbjahr-Thema (Epoche bzw. Werk)?
-b) Gibt es eine Liste der Hörbeispiele, die in der mündlichen Prüfung vorkommen können?
-c) Wann und wie lange findet die mündliche Prüfung statt – und ist der Kurs GK oder LK?
+2. **Englisch**:
+   - Welche Lektüre (Young Adult Novel) ist für unseren Kurs vorgesehen?
+   - Liegt der Fokus des dritten Bezugskulturraums auf Nigeria oder einem anderen Raum?
 
-**4. Sport (EF, mündlich)**
-a) Welche zwei Bewegungsfelder/Sportbereiche (BF/SB) sind in unserem Kurs profilbildend?
-b) Welche zwei Inhaltsfelder sind als Akzentuierung gewählt?
-c) In welcher Form findet die Prüfung statt – als viertes Fach mit praktischer Prüfung und Gespräch, oder als normale mündliche Prüfung?
-d) Welche Disziplinen und welche Ausdauerform sind in der praktischen Prüfung vorgesehen? Falls eine Wechselmöglichkeit besteht (etwa Kurzstrecke oder Kugelstoßen): Wie ist sie genau geregelt?
+3. **Musik**:
+   - Welches konkrete Rahmenthema bzw. Werkkorpus (z. B. Programmmusik/Affektenlehre oder Filmmusik) steht in diesem Halbjahr im Zentrum?
 
-Vielen Dank für Ihre Zeit!
+4. **Sport**:
+   - Welches spezifische Ballspiel im Bereich BF 7 (z. B. Volleyball, Basketball oder Handball) wird neben der Leichtathletik (BF 3) unterrichtet?
 
-Mit freundlichen Grüßen
+Vielen Dank für Ihre Unterstützung und Mühe!
+
+Mit freundlichen Grüßen  
 [Dein Name]
 
 ---
