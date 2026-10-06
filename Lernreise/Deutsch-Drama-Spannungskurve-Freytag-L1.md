@@ -87,7 +87,7 @@ Kontinuitaet: Vorher Lyrik-Sturm-Drang-Goethe.md | Nachher Drama-Ganzschrift-Kan
 
 BEISPIEL（正确例题示范，含教具操作与解答）：
 
-[Werkzeug: highlighter]
+[Werkzeug: text-analyse]
 
 AUFGABE (analysieren & deuten, AFB II)：In einer Klausur erhalten Sie eine Szene aus Schillers Trauerspiel "Kabale und Liebe": Ferdinand und Luise sprechen im Zimmer des Musikers Miller ueber ihre Liebe. Ferdinand schlaegt die gemeinsame Flucht vor, doch Luise zoegert wegen ihrer familiaeren und religioesen Pflichten (Akt III, Szene 4).
 1. Ordnen Sie die Szene in den Handlungsverlauf nach Freytags Pyramide ein. (10 BE)

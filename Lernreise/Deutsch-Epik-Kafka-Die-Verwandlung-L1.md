@@ -62,7 +62,7 @@ Drei Phasen des Abstiegs und der Verwandlung:
 
 ## Schritt 4 — ausprobieren: Die Textlupe im Zimmer des Ungeziefers
 
-[Werkzeug: highlighter]
+[Werkzeug: text-analyse]
 
 AUFGABE (analysieren & deuten, AFB I/II):
 Betrachte folgende Schluesselszene aus dem 3. Kapitel, als Gregor dem Geigenspiel seiner Schwester im Wohnzimmer lauscht:

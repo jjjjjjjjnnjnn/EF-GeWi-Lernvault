@@ -59,7 +59,7 @@ Gretchen (Buergerliche Welt):            Faust (Renaissance-/Sturm-und-Drang-Men
 
 ## Schritt 4 — ausprobieren: Die Textlupe im Dramendialog
 
-[Werkzeug: highlighter]
+[Werkzeug: text-analyse]
 
 AUFGABE (einordnen & analysieren, AFB I/II):
 Betrachte Fausts beruehmte Replik in Marthes Garten (Verse 3432–3458):
