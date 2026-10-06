@@ -75,6 +75,8 @@ MUSTERLOESUNG:
    - Mit der Antithese zwischen "Gefuehl" (Substanz) und "Name/Schall und Rauch" (leere Huelle) uebertraegt er die Gottesfrage in ein emotional-aesthetisches Naturerlebnis.
    - Gretchen durchschaut diese rhetorische Verschleierung intuitiv: Sie spuert, dass Fausts Religion keine dogmatische und damit auch keine sittlich bindende Kraft entfaltet. Wo kein Gott als Richter existiert, gibt es fuer Faust auch keine Suende – was Gretchens buergerlich-christliche Lebenswelt fundamental bedroht.
 
+`Klausur-Satz: Bei Aufgaben zu Goethes Faust I – Die Gretchenfrage und der Gelehrtenkonflikt muss die theoriegeleitete Begruendung stets durch exakte Fachtermini und empirische Belege abgesichert werden.`
+
 ## Schritt 5 — ausprobieren: Duell der Weltbilder: Dogma vs. Pantheismus
 
 VERGLEICH: Kirchliches Dogma vs. Pantheistische Gefuehlsreligion (选概念)
@@ -112,6 +114,8 @@ ANTWORT: Eine entscheidende, gewissenspruefende Frage, die den Befragten zwingt,
 
 FRAGE: Welche beruehmte Formel praegt Faust, um theologische Begriffe abzuwerten?
 ANTWORT: "Gefuehl ist alles; Name ist Schall und Rauch, umnebelnd Himmelsglut."
+
+`Klausur-Satz: Die differenzierte Reflexion erfordert eine stringente Verknuepfung von theoretischem Kriterienkatalog und konkretem Klausurmaterial.`
 
 ## Schritt 8 — reflexion: Meisterschaft & Naechste Mission
 

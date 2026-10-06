@@ -86,6 +86,8 @@ MUSTERLOESUNG:
      - Die Staedte "knien" wie demuetige Glaeubige um den Goetzen herum (Gottesdienst des Verderbens).
      - Die Kirchenglocken laeuten nicht mehr zum Lobe Gottes, sondern ihre "ungeheure Zahl" wogt auf wie ein akustisches Brandopfer zu Ehren des Daemonen aus dem "schwarzen Tuerme-Meer". Gott ist abwesend; an seine Stelle ist die zerstörerische Macht der industrialisierten Metropole getreten.
 
+`Klausur-Satz: Bei Aufgaben zu Lyrikanalyse des Expressionismus: Grossstadt, Reizueberflutung und Entfremdung muss die theoriegeleitete Begruendung stets durch exakte Fachtermini und empirische Belege abgesichert werden.`
+
 ## Schritt 5 — ausprobieren: Duell der lyrischen Welten: Romantik vs. Expressionismus
 
 VERGLEICH: Romantische Naturstimmung vs. Expressionistischer Grossstadtschock (选概念)
@@ -124,6 +126,8 @@ ANTWORT: Die parataktische Aneinanderreihung eigenstaendiger, oft grotesker Einz
 
 FRAGE: Welche Funktion erfuellt die Verwendung der strengen Sonettform bei Dichtern wie Georg Heym?
 ANTWORT: Sie bildet ein starres metrisches Schutzgitter, um die chaotisch-zerstoererischen Affekte der modernen Welt formal zu disziplinieren und die Ohnmacht des Subjekts aesthetisch einzufangen.
+
+`Klausur-Satz: Die differenzierte Reflexion erfordert eine stringente Verknuepfung von theoretischem Kriterienkatalog und konkretem Klausurmaterial.`
 
 ## Schritt 8 — reflexion: Meisterschaft & Naechste Mission
 

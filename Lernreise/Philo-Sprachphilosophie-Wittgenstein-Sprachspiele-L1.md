@@ -81,6 +81,8 @@ MUSTERLOESUNG:
    - Es gibt kein einziges Merkmal, das ausnahmslos allen Spielen gemeinsam ist.
    - Dennoch verwenden wir das Wort "Spiel" absolut zielsicher: Die Phaenomene bilden ein dichtes Geflecht von Aehnlichkeiten, genau wie die Gesichtszuege einer Familie (die gleiche Nase, die gleiche Augenfarbe, der gleiche Gang), die sich kreuzen, ohne dass ein einzelnes Merkmal bei allen Mitgliedern auftaucht.
 
+`Klausur-Satz: Bei Aufgaben zu Sprachphilosophie: Ludwig Wittgenstein – Von der Abbildtheorie zu den Sprachspielen muss die theoriegeleitete Begruendung stets durch exakte Fachtermini und empirische Belege abgesichert werden.`
+
 ## Schritt 5 — ausprobieren: Duell der Sprachwelten: Spiegel vs. Werkzeugkasten
 
 VERGLEICH: Sprache als Spiegel der Natur (Tractatus) vs. Sprache als Werkzeugkasten (Spätphilosophie) (选概念)
@@ -120,6 +122,8 @@ ANTWORT: Eine rein klaerende und therapeutische Aufgabe: Sie soll keine neuen Th
 
 FRAGE: Was meint Wittgenstein mit dem Begriff "Lebensform"?
 ANTWORT: Das historisch gewachsene, gemeinsame soziokulturelle Praxis- und Verhaltensfundament einer menschlichen Gemeinschaft, das die unhinterfragte Basis fuer das Funktionieren aller Sprachspiele bildet.
+
+`Klausur-Satz: Die differenzierte Reflexion erfordert eine stringente Verknuepfung von theoretischem Kriterienkatalog und konkretem Klausurmaterial.`
 
 ## Schritt 8 — reflexion: Meisterschaft & Naechste Mission
 

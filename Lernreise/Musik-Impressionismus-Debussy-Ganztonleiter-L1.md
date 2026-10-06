@@ -76,6 +76,8 @@ MUSTERLOESUNG:
    - In der traditionellen Harmonik ist der Tritonus (uebermaessige Quarte / verminderte Quinte) der Inbegriff schaerfster Dissonanz, der zwingend nach sofortiger Halbtonaufloesung verlangt.
    - Debussy isoliert den Tritonus cis-g jedoch als melodische Schwingungsachse: Das Thema pendelt zwischen diesen beiden Polen hin und her, ohne dass eine dominante Aufloesung erfolgt. Der Tritonus wird von seiner traditionellen "Erloesungspflicht" emanzipiert und dient als schillernder, exotisch-antiker Farbreiz fuer das pastorale Sujet des Nymphen jaegenden Fauns.
 
+`Klausur-Satz: Bei Aufgaben zu Impressionismus in der Musik: Debussy und die Aufloesung der Dur-Moll-Tonalitaet muss die theoriegeleitete Begruendung stets durch exakte Fachtermini und empirische Belege abgesichert werden.`
+
 ## Schritt 5 — ausprobieren: Duell der Tonsysteme: Kadenz vs. Farbflaeche
 
 VERGLEICH: Funktionale Kadenzharmonik vs. Impressionistische Klangfarbenflaechen (选概念)
@@ -115,6 +117,8 @@ ANTWORT: Aus genau sechs Toenen (im Abstand von jeweils zwei Halbtonschritten), 
 
 FRAGE: Was verstand Debussy unter dem Vorwurf des "Wagnerismus", von dem er sich abgrenzen wollte?
 ANTWORT: Die ueberladene, philosophisch ueberfrachtete deutsche Monumentaldramatik mit ihren ewigen Leitton-Seufzern und schwerfaelligen Riesenorchestern, der er franzoesische Klarheit, Leichtigkeit und Sinnlichkeit entgegensetzte.
+
+`Klausur-Satz: Die differenzierte Reflexion erfordert eine stringente Verknuepfung von theoretischem Kriterienkatalog und konkretem Klausurmaterial.`
 
 ## Schritt 8 — reflexion: Meisterschaft & Naechste Mission
 

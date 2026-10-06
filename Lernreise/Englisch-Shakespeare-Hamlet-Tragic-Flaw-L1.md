@@ -83,6 +83,8 @@ MUSTERLOESUNG:
    - "To take arms against a sea of troubles": You can take up arms (weapons) against soldiers, but taking up a sword or shield against an infinite, engulfing body of water (the sea) is logically impossible and suicidal.
    - Through this deliberate mixed metaphor, Shakespeare reveals Hamlet's subconscious awareness that physical violence cannot resolve an existential crisis; taking arms against a sea merely guarantees that you will drown in the attempt.
 
+`Klausur-Satz: Bei Aufgaben zu Shakespearean Tragedy: Hamlet's Soliloquy and the Tragic Flaw muss die theoriegeleitete Begruendung stets durch exakte Fachtermini und empirische Belege abgesichert werden.`
+
 ## Schritt 5 — ausprobieren: Duel of Tragic Drives: Violent Revenge vs. Existential Dread
 
 VERGLEICH: Heroic Action vs. Intellectual Paralysis (选概念)
@@ -122,6 +124,8 @@ ANTWORT: Unrhymed lines of ten syllables following an iambic rhythm (five altern
 
 FRAGE: Why does Hamlet hesitate to kill Claudius when he finds him alone on his knees in Act 3, Scene 3?
 ANTWORT: Because Claudius is praying; Hamlet fears that killing him during prayer would send Claudius's soul straight to heaven instead of to hell, which would not be adequate revenge for his father's purgatorial torment.
+
+`Klausur-Satz: Die differenzierte Reflexion erfordert eine stringente Verknuepfung von theoretischem Kriterienkatalog und konkretem Klausurmaterial.`
 
 ## Schritt 8 — reflexion: Meisterschaft & Naechste Mission
 

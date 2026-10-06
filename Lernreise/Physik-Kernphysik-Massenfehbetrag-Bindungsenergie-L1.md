@@ -84,6 +84,8 @@ MUSTERLOESUNG:
    - Bindungsenergie pro Nukleon ($A = 4$):
      $$\frac{E_B}{A} = \frac{28{,}29\,\text{MeV}}{4} \approx 7{,}07\,\text{MeV/Nukleon}$$
 
+`Klausur-Satz: Bei Aufgaben zu Kernphysik: Massendefekt, Bindungsenergie und Kernspaltung muss die theoriegeleitete Begruendung stets durch exakte Fachtermini und empirische Belege abgesichert werden.`
+
 ## Schritt 5 — ausprobieren: Duell der Kernprozesse: Spaltung vs. Fusion
 
 VERGLEICH: Kernspaltung (Schwere Kerne) vs. Kernfusion (Leichte Kerne) (选概念)
@@ -126,6 +128,8 @@ ANTWORT: Die Differenz zwischen der Summe der Ruhemassen aller freien Protonen u
 
 FRAGE: Welches chemische Element besitzt den Atomkern mit der hoechsten Bindungsenergie pro Nukleon?
 ANTWORT: Eisen-56 (und Nickel-62) mit ca. 8,8 MeV pro Nukleon.
+
+`Klausur-Satz: Die differenzierte Reflexion erfordert eine stringente Verknuepfung von theoretischem Kriterienkatalog und konkretem Klausurmaterial.`
 
 ## Schritt 8 — reflexion: Meisterschaft & Naechste Mission
 

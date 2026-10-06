@@ -81,6 +81,8 @@ MUSTERLOESUNG:
    - Ein Moerder, der denkt, weiss, dass er mit einem Moerder zusammenleben muss – diese innere Spaltung erzeugt das Gewissen und die Scham.
    - Eichmann hingegen verweigerte diesen inneren Dialog: Er benutzte vorgefertigte Phrasen, Amtsjargon und Klischees wie Schutzschilde gegen die Wirklichkeit. Wer nicht denkt, kann kein Gewissen entwickeln, weil er sich selbst niemals im Denken gegenuebertritt.
 
+`Klausur-Satz: Bei Aufgaben zu Politische Philosophie: Hannah Arendt – Banalitaet des Boesen und Vita activa muss die theoriegeleitete Begruendung stets durch exakte Fachtermini und empirische Belege abgesichert werden.`
+
 ## Schritt 5 — ausprobieren: Duell der Ethiken: Radikale Bosheit vs. Gedankenlosigkeit
 
 VERGLEICH: Radikales Boeses (Kant) vs. Banalitaet des Boesen (Arendt) (选概念)
@@ -118,6 +120,8 @@ ANTWORT: Die Faehigkeit des Menschen, durch politisches Handeln vollkommen neue,
 
 FRAGE: Warum wehrte sich Arendt dagegen, Adolf Eichmann als "Daemon" oder "Sadisten" darzustellen?
 ANTWORT: Weil eine Daemonisierung den Taeter zu einem unbegreiflichen Ausnahmemonster verklärt und die unheimliche Wahrheit verschleiert: dass normale, phrasendreschende Buerokraten durch Gedankenlosigkeit faehig sind, den groessten Massenmord der Geschichte zu organisieren.
+
+`Klausur-Satz: Die differenzierte Reflexion erfordert eine stringente Verknuepfung von theoretischem Kriterienkatalog und konkretem Klausurmaterial.`
 
 ## Schritt 8 — reflexion: Meisterschaft & Naechste Mission
 

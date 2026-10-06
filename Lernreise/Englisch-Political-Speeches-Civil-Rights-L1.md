@@ -77,6 +77,8 @@ MUSTERLOESUNG:
 2. Establishment of Ethos:
    - King grounds his credibility not in personal ambition, but in revered American history. By standing in Lincoln's "symbolic shadow," he acts not as an outside rebel, but as a custodian of founding constitutional promises, disarming accusations of un-American radicalism.
 
+`Klausur-Satz: Bei Aufgaben zu Political Speeches and Rhetoric in the Civil Rights Movement muss die theoriegeleitete Begruendung stets durch exakte Fachtermini und empirische Belege abgesichert werden.`
+
 ## Schritt 5 — ausprobieren: Duel of Persuasion: Rational Argument vs. Emotional Appeal
 
 VERGLEICH: Logos (Rational Argumentation) vs. Pathos (Emotional Appeal) (选概念)
@@ -115,6 +117,8 @@ ANTWORT: An anaphora establishes a rhythmic cadence, creates emotional momentum,
 
 FRAGE: Why did Dr. King choose the financial metaphor of a "bad check" to describe racial injustice?
 ANTWORT: Because the financial transaction of a signed promissory note was an everyday, indisputable concept understood by every American, making it obvious that America had failed to fulfill its legal and ethical promise.
+
+`Klausur-Satz: Die differenzierte Reflexion erfordert eine stringente Verknuepfung von theoretischem Kriterienkatalog und konkretem Klausurmaterial.`
 
 ## Schritt 8 — reflexion: Meisterschaft & Naechste Mission
 

@@ -76,6 +76,8 @@ Klassifiziere auf dem erkenntnistheoretischen Balance-Board Kants vier fundament
 
 *Erkenntnis*: Hume glaubte, Kausalitaet sei nur eine blinde Gewohnheit. Kant rettet die Naturwissenschaft, indem er beweist, dass Kausalitaet eine unhintergehbare Struktur unseres eigenen Verstandes ist!
 
+`Klausur-Satz: Bei Aufgaben zu Erkenntnistheorie: Immanuel Kant — Kritik der reinen Vernunft (Kopernikanische Wende und synthetische Urteile a priori) muss die theoriegeleitete Begruendung stets durch exakte Fachtermini und empirische Belege abgesichert werden.`
+
 ## Schritt 5 — check: Das Konzeptduell
 VERGLEICH: Empirismus (Hume) versus Transzendentalphilosophie (Kant)
 

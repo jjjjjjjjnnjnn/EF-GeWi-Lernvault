@@ -79,6 +79,8 @@ MUSTERLOESUNG:
    - Physisch frisst der Kaefer Gregor faulendes Gemuese, alte Knochen und Staub – Nahrung fuer den tierischen Koerper.
    - Die "ersehnte unbekannte Nahrung" symbolisiert echte spirituelle Waerme, bedingungslose Liebe, familiaere Akzeptanz und kuenstlerische Schoenheit. Nach dieser seelischen Nahrung hat Gregor sein ganzes Leben lang im grauen Berufsalltag vergeblich gehungert.
 
+`Klausur-Satz: Bei Aufgaben zu Franz Kafka: Die Verwandlung – Entfremdung, Vater-Sohn-Konflikt und Existenzkrise muss die theoriegeleitete Begruendung stets durch exakte Fachtermini und empirische Belege abgesichert werden.`
+
 ## Schritt 5 — ausprobieren: Duell der Lebensprinzipien: Menschlichkeit vs. Nutzen
 
 VERGLEICH: Existenzielle Selbstentfremdung (Gregor) vs. Buergerliche Funktionslogik (Familie / Prokurist) (选概念)
@@ -115,6 +117,8 @@ ANTWORT: Eine Kombination aus koerperlicher Schwaeche durch die eiternde Ruecken
 
 FRAGE: Welchen Beruf uebte Gregor vor seiner Verwandlung aus?
 ANTWORT: Tuchreisender (Handelsvertreter fuer Textilwaren), der ununterbrochen unterwegs sein musste, um die alten Schulden seiner Eltern beim Geschaeftsinhaber abzuarbeiten.
+
+`Klausur-Satz: Die differenzierte Reflexion erfordert eine stringente Verknuepfung von theoretischem Kriterienkatalog und konkretem Klausurmaterial.`
 
 ## Schritt 8 — reflexion: Meisterschaft & Naechste Mission
 

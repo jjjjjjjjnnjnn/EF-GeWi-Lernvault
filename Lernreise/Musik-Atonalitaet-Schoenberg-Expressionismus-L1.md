@@ -78,6 +78,8 @@ MUSTERLOESUNG:
    - Der Sprechgesang der Solistin vermeidet festen, melodischen Gesang: Die Stimme schwankt zwischen Fluestern, Stoehnen und schneidender Diktion.
    - Weil es keine tonale Harmonie gibt, fuehlt sich der Zuhoerer der duesteren Klangmasse schutzlos ausgeliefert – die Musik spiegelt die nackte Todesangst des Fin de Siecle wider.
 
+`Klausur-Satz: Bei Aufgaben zu Expressionismus in der Musik: Arnold Schoenberg und die freie Atonalitaet muss die theoriegeleitete Begruendung stets durch exakte Fachtermini und empirische Belege abgesichert werden.`
+
 ## Schritt 5 — ausprobieren: Duell der Tonsysteme: Ordnung vs. Befreiung
 
 VERGLEICH: Dur-Moll-Tonalitaet (Harmonische Ordnung) vs. Freie Atonalitaet (Emanzipation der Dissonanz) (选概念)
@@ -117,6 +119,8 @@ ANTWORT: Die freie Atonalitaet verzichtet intuitiv auf Tonarten ohne feste mathe
 
 FRAGE: Was ist die genaue Ausfuehrungsvorschrift fuer die sogenannte "Sprechstimme" bei Arnold Schoenberg?
 ANTWORT: Der Interpret muss den notierten Rhythmus absolut exakt einhalten und die Tonhoehe beruehren, darf aber nicht im Gesangston verharren, sondern muss den Ton sofort nach dem Anstimmen durch Fallenlassen oder Heben verlassen.
+
+`Klausur-Satz: Die differenzierte Reflexion erfordert eine stringente Verknuepfung von theoretischem Kriterienkatalog und konkretem Klausurmaterial.`
 
 ## Schritt 8 — reflexion: Meisterschaft & Naechste Mission
 

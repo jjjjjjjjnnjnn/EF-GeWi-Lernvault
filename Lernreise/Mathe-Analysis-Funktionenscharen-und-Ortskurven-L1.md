@@ -93,6 +93,8 @@ MUSTERLOESUNG:
      $$\frac{1}{a \cdot b} x^2 = 1 \iff x^2 = a \cdot b$$
    - Die Schnittstellen haengen explizit von den gewaehlten Parametern $a$ und $b$ ab; folglich gibt es keinen universellen gemeinsamen Punkt fuer alle Kurven der Schar.
 
+`Klausur-Satz: Bei Aufgaben zu Analysis: Funktionenscharen und Bestimmung von Ortskurven muss die theoriegeleitete Begruendung stets durch exakte Fachtermini und empirische Belege abgesichert werden.`
+
 ## Schritt 5 — ausprobieren: Duell der Rechenwege: Einzelfall vs. Scharanalyse
 
 VERGLEICH: Einzelkurvendiskussion vs. Allgemeine Scharanalyse (选程序)
@@ -132,6 +134,8 @@ ANTWORT: Die Ortskurve ist nur fuer diejenigen x-Werte gueltig, die sich aus dem
 
 FRAGE: Wie findet man rechnerisch heraus, ob eine Schar von Kurven einen gemeinsamen Schnittpunkt besitzt?
 ANTWORT: Man setzt fk(x) = fm(x) fuer zwei verschiedene Parameter k ungleich m und loest nach x auf. Haengt die Loesung fuer x nicht mehr von k und m ab, existiert ein gemeinsamer Punkt.
+
+`Klausur-Satz: Die differenzierte Reflexion erfordert eine stringente Verknuepfung von theoretischem Kriterienkatalog und konkretem Klausurmaterial.`
 
 ## Schritt 8 — reflexion: Meisterschaft & Naechste Mission
 

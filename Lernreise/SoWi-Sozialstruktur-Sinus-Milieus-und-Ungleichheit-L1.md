@@ -69,6 +69,8 @@ Balanciere auf dem soziologischen Balance-Board die Charakteristika dreier exemp
 
 *Erkenntnis*: Die politische Polarisierung entsteht nicht mehr nur an der Grenze zwischen Arm und Reich, sondern vor allem im Wertekonflikt zwischen universalistisch-kosmopolitischen Milieus (Postmaterielle) und lokal-sicherheitsorientierten Milieus (Prekaere / Traditionelle).
 
+`Klausur-Satz: Bei Aufgaben zu Sozialstrukturanalyse: Sinus-Milieus, soziale Lagen und moderne Dimensionen von Ungleichheit muss die theoriegeleitete Begruendung stets durch exakte Fachtermini und empirische Belege abgesichert werden.`
+
 ## Schritt 5 — check: Das Konzeptduell
 VERGLEICH: Dahrendorf-Haus (Schichtmodell) versus Sinus-Milieus (Lebensweltmodell)
 

@@ -84,6 +84,8 @@ MUSTERLOESUNG:
    - Da $Q_c < K_c$ gilt, ist der Zaehler (Produkte) im Verhaeltnis zum Nenner (Edukte) viel zu klein.
    - Die Hinreaktion laeuft schneller ab als die Rueckreaktion: Es muessen weitere Edukte verbraucht und zusaetzlicher Ester gebildet werden, bis der Quotient den Wert 4,0 erreicht. Die Reaktion verschiebt sich nach rechts (zur Produktseite).
 
+`Klausur-Satz: Bei Aufgaben zu Chemisches Gleichgewicht: Massenwirkungsgesetz und Reaktionsquotient muss die theoriegeleitete Begruendung stets durch exakte Fachtermini und empirische Belege abgesichert werden.`
+
 ## Schritt 5 — ausprobieren: Duell der Zustaende: Dynamisch vs. Statisch
 
 VERGLEICH: Dynamisches Gleichgewicht vs. Statischer Stillstand (选概念)
@@ -123,6 +125,8 @@ ANTWORT: Kc bleibt voellig unveraendert! Kc ist eine reine Temperaturfunktion. B
 
 FRAGE: Welche Konzentrationen fester Stoffe (z. B. reines Calciumcarbonat) gehen in das Massenwirkungsgesetz heterogener Gleichgewichte ein?
 ANTWORT: Feste Phasen besitzen eine konstante Dichte/Aktivitaet und werden konventionsgemaess mit dem Wert 1 angesetzt bzw. direkt in die Gleichgewichtskonstante Kc einbezogen.
+
+`Klausur-Satz: Die differenzierte Reflexion erfordert eine stringente Verknuepfung von theoretischem Kriterienkatalog und konkretem Klausurmaterial.`
 
 ## Schritt 8 — reflexion: Meisterschaft & Naechste Mission
 

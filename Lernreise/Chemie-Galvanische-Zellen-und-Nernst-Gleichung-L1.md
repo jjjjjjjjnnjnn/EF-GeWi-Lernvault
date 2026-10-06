@@ -78,6 +78,8 @@ MUSTERLOESUNG:
    $$U = E(\text{Cu}) - E(\text{Zn}) = +0{,}3489\,\text{V} - (-0{,}8485\,\text{V}) = 1{,}1974\,\text{V} \approx 1{,}20\,\text{V}$$
    Die Zelle liefert rund $0{,}10\,\text{V}$ mehr Spannung als das Standard-Element, da das verringerte Zinkangebot die Oxidation thermodynamisch beguenstigt und das erhoehte Kupferangebot die Reduktion verstaerkt.
 
+`Klausur-Satz: Bei Aufgaben zu Galvanische Zellen und Nernst-Gleichung muss die theoriegeleitete Begruendung stets durch exakte Fachtermini und empirische Belege abgesichert werden.`
+
 ## Schritt 5 — ausprobieren: Duell der Potenziale: Standard vs. Konzentration
 
 VERGLEICH: Standardpotenzial (E0) vs. Konzentrationsabhaengiges Potenzial (E) (选概念)
@@ -115,6 +117,8 @@ ANTWORT: Sie schliesst den Stromkreis durch Ionenwanderung, verhindert aber die 
 
 FRAGE: An welcher Elektrode findet im galvanischen Element immer die Oxidation statt?
 ANTWORT: An der Anode (Minuspol beim galvanischen Element). Merkregel: O-A (Oxidation an der Anode).
+
+`Klausur-Satz: Die differenzierte Reflexion erfordert eine stringente Verknuepfung von theoretischem Kriterienkatalog und konkretem Klausurmaterial.`
 
 ## Schritt 8 — reflexion: Meisterschaft & Naechste Mission
 

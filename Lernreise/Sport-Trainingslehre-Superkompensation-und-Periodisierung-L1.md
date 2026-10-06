@@ -78,6 +78,8 @@ MUSTERLOESUNG:
    - Das leichte Grundlagentraining an den Zwischentagen foerdert durch verbesserte Kapillarisierung den Abtransport von Stoffwechselabbauprodukten (aktive Regeneration).
    - Das Leistungsplateau wird progressiv angehoben.
 
+`Klausur-Satz: Bei Aufgaben zu Trainingslehre: Modell der Superkompensation und sportliche Periodisierung muss die theoriegeleitete Begruendung stets durch exakte Fachtermini und empirische Belege abgesichert werden.`
+
 ## Schritt 5 — ausprobieren: Duell der Anpassungen: Superkompensation vs. Reizstagnation
 
 VERGLEICH: Optimales Erholungsfenster vs. Uebertraining / Fehlende Anpassung (选概念)
@@ -115,6 +117,8 @@ ANTWORT: Die erhoehte Leistungsfaehigkeit bildet sich allmaehlich wieder auf das
 
 FRAGE: Wie lange benoetigt die vollstaendige Wiederauffuellung voellig entleerter Muskelglykogenspeicher nach einem erschoepfenden Langstreckenlauf im Durchschnitt?
 ANTWORT: Bei kohlenhydratreicher Ernaehrung etwa 24 bis 48 Stunden.
+
+`Klausur-Satz: Die differenzierte Reflexion erfordert eine stringente Verknuepfung von theoretischem Kriterienkatalog und konkretem Klausurmaterial.`
 
 ## Schritt 8 — reflexion: Meisterschaft & Naechste Mission
 

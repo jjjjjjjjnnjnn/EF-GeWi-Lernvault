@@ -84,6 +84,8 @@ MUSTERLOESUNG:
    $$2d_1 \cdot \sin(\theta_1) = 1 \cdot \lambda \implies \sin(\theta_1) = \frac{\lambda}{2d_1} = \frac{1{,}94 \times 10^{-11}\,\text{m}}{2 \cdot 2{,}13 \times 10^{-10}\,\text{m}} = \frac{1{,}94}{4{,}26} \approx 0{,}0455$$
    $$\theta_1 = \arcsin(0{,}0455) \approx 2{,}61^\circ$$
 
+`Klausur-Satz: Bei Aufgaben zu Quantenphysik: De-Broglie-Hypothese, Materiewellen und Elektronenbeugung muss die theoriegeleitete Begruendung stets durch exakte Fachtermini und empirische Belege abgesichert werden.`
+
 ## Schritt 5 — ausprobieren: Duell der Naturauffassungen: Partikel vs. Welle
 
 VERGLEICH: Klassisches Punktteilchen vs. Quantenmechanische Materiewelle (选概念)
@@ -121,6 +123,8 @@ ANTWORT: Der Ringdurchmesser wird kleiner! Hoehere Spannung bedeutet hoehere Ges
 
 FRAGE: Warum verwendet man fuer Elektronenbeugung Kristallgitter (wie Graphit) und keine kuenstlich geritzten optischen Gitter?
 ANTWORT: Weil die De-Broglie-Wellenlaengen von schnellen Elektronen im Pikometer-Bereich (ca. 10 bis 50 pm) liegen. Kuenstliche Gitter haben Spaltabstaende im Mikrometerbereich; nur die winzigen Atomabstaende in Kristallen sind klein genug, um messbare Beugungswinkel zu erzeugen.
+
+`Klausur-Satz: Die differenzierte Reflexion erfordert eine stringente Verknuepfung von theoretischem Kriterienkatalog und konkretem Klausurmaterial.`
 
 ## Schritt 8 — reflexion: Meisterschaft & Naechste Mission
 

@@ -82,6 +82,8 @@ MUSTERLOESUNG:
    - Howard represents the new generation of ruthless, technocratic corporate managers. He is utterly obsessed with his new technological toy (the wire recorder), enthusiastically listening to recordings of his children and wife while completely tuning out Willy's desperate pleas for bread.
    - He patronizingly calls the sixty-three-year-old Willy "kid", reversing the natural hierarchy of age, and fires him without a shred of empathy: "I don't want you representing us. I've been meaning to tell you for a long time." His politeness is merely a superficial veneer masking an ice-cold capitalist calculation.
 
+`Klausur-Satz: Bei Aufgaben zu Arthur Miller: Death of a Salesman – The Fallacy of the American Dream muss die theoriegeleitete Begruendung stets durch exakte Fachtermini und empirische Belege abgesichert werden.`
+
 ## Schritt 5 — ausprobieren: Duel of the Sons: Awakening vs. Blind Continuation
 
 VERGLEICH: Biff's Epiphany vs. Happy's Stubbornness (选概念)
@@ -119,6 +121,8 @@ ANTWORT: He travelled to Boston to ask his father for help after failing mathema
 
 FRAGE: What is the tragic significance of Linda Lomans line "We're free and clear" at the end of the play?
 ANTWORT: It refers to paying the final instalment of the thirty-year mortgage on their house; the tragedy is that they now own the empty house, but Willy is dead and the family has completely fragmented.
+
+`Klausur-Satz: Die differenzierte Reflexion erfordert eine stringente Verknuepfung von theoretischem Kriterienkatalog und konkretem Klausurmaterial.`
 
 ## Schritt 8 — reflexion: Meisterschaft & Naechste Mission
 

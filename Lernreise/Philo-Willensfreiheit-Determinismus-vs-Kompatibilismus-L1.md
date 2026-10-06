@@ -76,6 +76,8 @@ MUSTERLOESUNG:
    - Echte Freiheit bedeutet nicht die Abwesenheit von Ursachen, sondern die Faehigkeit zur inneren Urteilsbildung: Hatte der Taeter die Faehigkeit, ueber seine Wuensche nachzudenken, rationale Gruende abzuwaegen und verstandesmaessige Sanktionen zu verstehen?
    - Solange der Angeklagte nicht unter einer akuten Psychose oder unter Drogenzwang stand, war sein Entschluss Ausdruck seiner eigenen persoenlichen Identitaet. Er traegt Verantwortung fuer die Gruende, die sein Gehirn gebilligt hat.
 
+`Klausur-Satz: Bei Aufgaben zu Anthropologie: Determinismus, Libet-Experiment und Willensfreiheit muss die theoriegeleitete Begruendung stets durch exakte Fachtermini und empirische Belege abgesichert werden.`
+
 ## Schritt 5 — ausprobieren: Duell der Konzepte: Harter vs. Weicher Determinismus
 
 VERGLEICH: Harter Determinismus vs. Weicher Determinismus (Kompatibilismus) (选概念)
@@ -115,6 +117,8 @@ ANTWORT: Handlungsfreiheit bedeutet, das tun zu koennen, was man will (Freiheit 
 
 FRAGE: Welche Rettungsmoeglichkeit fuer die Willensfreiheit schlug Benjamin Libet selbst vor?
 ANTWORT: Die Veto-Theorie ("Free Won't"): Das Bewusstsein kann die vom Gehirn unbewusst angebahnte Bewegung in den letzten 100 Millisekunden vor der Ausfuehrung noch willentlich stoppen.
+
+`Klausur-Satz: Die differenzierte Reflexion erfordert eine stringente Verknuepfung von theoretischem Kriterienkatalog und konkretem Klausurmaterial.`
 
 ## Schritt 8 — reflexion: Meisterschaft & Naechste Mission
 

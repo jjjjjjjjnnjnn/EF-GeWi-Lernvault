@@ -79,6 +79,8 @@ MUSTERLOESUNG:
    - Patient A (Curare): Da Curare die Bindungsstellen der Na+-Kanaele besetzt, kann Acetylcholin nicht binden. Die Na+-Kanaele bleiben geschlossen. Es entsteht kein EPSP; das Membranpotenzial verharrt starr auf dem Ruhepotenzial (-70 mV).
    - Patient C (AChE-Hemmer): Das ausgeschuettete Acetylcholin wird nicht abgebaut und verbleibt permanent im synaptischen Spalt. Es bindet wiederholt an die Rezeptoren. Die Na+-Kanaele bleiben ununterbrochen geoeffnet, was zu einer massiven Dauerdepolarisation (Dauer-EPSP) und unkontrollierten Krampfzustaenden fuehrt.
 
+`Klausur-Satz: Bei Aufgaben zu Synaptische Signaluebertragung, Neurotransmitter und Neurotoxine muss die theoriegeleitete Begruendung stets durch exakte Fachtermini und empirische Belege abgesichert werden.`
+
 ## Schritt 5 — ausprobieren: Duell der Synapsentypen: Erregung vs. Hemmung
 
 VERGLEICH: Erregende Synapse (EPSP) vs. Hemmende Synapse (IPSP) (选概念)
@@ -118,6 +120,8 @@ ANTWORT: Das Calcium-Ion (Ca2+), welches durch spannungsgesteuerte Calciumkanäl
 
 FRAGE: Welche Ionenstroeme fuehren typischerweise zur Ausbildung eines inhibitorischen postsynaptischen Potenzials (IPSP)?
 ANTWORT: Ein Einstrom von Chlorid-Ionen (Cl-) oder ein Ausstrom von Kalium-Ionen (K+), was zur Hyperpolarisation fuehrt.
+
+`Klausur-Satz: Die differenzierte Reflexion erfordert eine stringente Verknuepfung von theoretischem Kriterienkatalog und konkretem Klausurmaterial.`
 
 ## Schritt 8 — reflexion: Meisterschaft & Naechste Mission
 

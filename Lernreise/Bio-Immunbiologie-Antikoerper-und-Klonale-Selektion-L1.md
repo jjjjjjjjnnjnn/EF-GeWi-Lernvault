@@ -77,6 +77,8 @@ Simuliere auf dem immunologischen Balance-Board die quantitative Verschiebung de
 
 *Erkenntnis*: Durch den Pool langlebiger Gedaechtniszellen faellt die Verzoegerungsphase (Lag-Phase) beim Zweitkontakt quasi komplett weg; die Affinitaet und Titerhoehe uebertreffen die Erstinfektion um mindestens das Zehn- bis Hundertfache.
 
+`Klausur-Satz: Bei Aufgaben zu Immunbiologie: Antikoerper-Struktur und Klonale Selektionstheorie muss die theoriegeleitete Begruendung stets durch exakte Fachtermini und empirische Belege abgesichert werden.`
+
 ## Schritt 5 — check: Das Konzeptduell
 VERGLEICH: Klonale Selektionstheorie (Burnet) versus Historische Instruktionstheorie (Pauling)
 

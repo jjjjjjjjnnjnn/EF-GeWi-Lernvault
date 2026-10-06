@@ -79,6 +79,8 @@ MUSTERLOESUNG:
    - Eine hoehere Kapillardichte gewaehrleistet eine optimale Sauerstoffdiffusion in die Muskelfasern.
    - Seine Enzyme des aeroben Fettstoffwechsels (Beta-Oxidation) arbeiten hocheffizient; er schont seine Glykogenspeicher und produziert bei $12\,\text{km/h}$ fast kein Laktat, waehrend Laeufer 1 mangels Sauerstoffkapazitaet fast vollstaendig auf anaerobe Glykolyse zurueckgreifen muss.
 
+`Klausur-Satz: Bei Aufgaben zu Trainingslehre: Laktatstufentest, Aerobe und Anaerobe Schwelle muss die theoriegeleitete Begruendung stets durch exakte Fachtermini und empirische Belege abgesichert werden.`
+
 ## Schritt 5 — ausprobieren: Duell der Stoffwechselbereiche: Aerob vs. Anaerob
 
 VERGLEICH: Aerobe Schwelle (2 mmol/l) vs. Anaerobe Schwelle (4 mmol/l / MLSS) (选概念)
@@ -119,6 +121,8 @@ ANTWORT: Die hoechste Belastungsintensitaet, bei der die Laktatkonzentration im 
 
 FRAGE: Warum fuehrt eine Uebersaeuerung des Muskels durch Wasserstoffionen (Azidose) zum Kraftverlust?
 ANTWORT: Die freien H+-Ionen senken den intrazellulaeren pH-Wert; dadurch werden Schluesselenzyme der Glykolyse (wie Phosphofructokinase) gehemmt und die Bindung von Calcium an die Aktin-Myosin-Filamente blockiert.
+
+`Klausur-Satz: Die differenzierte Reflexion erfordert eine stringente Verknuepfung von theoretischem Kriterienkatalog und konkretem Klausurmaterial.`
 
 ## Schritt 8 — reflexion: Meisterschaft & Naechste Mission
 

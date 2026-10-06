@@ -75,6 +75,8 @@ Balanciere auf dem stochastischen Balance-Board das Verhaeltnis zwischen Signifi
 
 *Erkenntnis*: Je kleiner man $\alpha$ waehlt (Schutz vor Fehler 1. Art), desto groesser wird zwangslaeufig $\beta$ (Gefahr, eine echte Unwirksamkeit nicht zu bemerken). Die einzige Moeglichkeit, BEIDE Fehler gleichzeitig zu senken, ist die Erhoehung des Stichprobenumfangs $n$!
 
+`Klausur-Satz: Bei Aufgaben zu Stochastik: Einseitiger und zweiseitiger Hypothesentest sowie Fehler 1. und 2. Art muss die theoriegeleitete Begruendung stets durch exakte Fachtermini und empirische Belege abgesichert werden.`
+
 ## Schritt 5 — check: Das Konzeptduell
 VERGLEICH: Fehler 1. Art ($\alpha$-Fehler) versus Fehler 2. Art ($\beta$-Fehler)
 

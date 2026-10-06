@@ -90,6 +90,8 @@ MUSTERLOESUNG:
    - Koordinaten von $P(4 | 6 | 9)$ einsetzen:
      $$d(P, E) = \left| \frac{4 + 5 \cdot 6 - 2 \cdot 9 - 11}{\sqrt{30}} \right| = \left| \frac{4 + 30 - 18 - 11}{\sqrt{30}} \right| = \left| \frac{5}{\sqrt{30}} \right| = \frac{5}{\sqrt{30}} \approx 0{,}913\,\text{LE}$$
 
+`Klausur-Satz: Bei Aufgaben zu Analytische Geometrie: Ebenenformen und Normalenvektor muss die theoriegeleitete Begruendung stets durch exakte Fachtermini und empirische Belege abgesichert werden.`
+
 ## Schritt 5 — ausprobieren: Duell der Rechenwege: Parameter vs. Koordinaten
 
 VERGLEICH: Parameterform vs. Koordinaten- / Normalenform (选程序)
@@ -129,6 +131,8 @@ ANTWORT: Sie bilden exakt die Komponenten eines Normalenvektors n = (a, b, c), d
 
 FRAGE: Wie prueft man rechnerisch, ob eine Gerade parallel zu einer Ebene verlaeuft?
 ANTWORT: Man bildet das Skalarprodukt aus dem Richtungsvektor der Geraden und dem Normalenvektor der Ebene. Ist das Skalarprodukt null (u * n = 0), ist die Gerade parallel zur Ebene (oder liegt ganz darin).
+
+`Klausur-Satz: Die differenzierte Reflexion erfordert eine stringente Verknuepfung von theoretischem Kriterienkatalog und konkretem Klausurmaterial.`
 
 ## Schritt 8 — reflexion: Meisterschaft & Naechste Mission
 

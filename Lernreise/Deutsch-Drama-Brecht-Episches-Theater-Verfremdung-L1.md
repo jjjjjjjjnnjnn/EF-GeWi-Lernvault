@@ -74,6 +74,8 @@ MUSTERLOESUNG:
    - Mutter Courage hingegen lernt bis zur allerletzten Sekunde rein gar nichts: Sie hat alles verloren, zieht aber dennoch weiter gierig hinter dem toedlichen Krieg her.
    - Brechts theaterpaedagogische Absicht: Nicht die Figur auf der Buehne soll lernen, sondern der Zuschauer im Parkett muss die Lehre ziehen! Der Zuschauer muss begreifen, dass der kleine Mann vom imperialistischen Krieg niemals profitiert, sondern immer als Futter fuer die Kanonen bezahlt.
 
+`Klausur-Satz: Bei Aufgaben zu Bertolt Brecht: Das epische Theater – Verfremdungseffekt und Gesellschaftskritik muss die theoriegeleitete Begruendung stets durch exakte Fachtermini und empirische Belege abgesichert werden.`
+
 ## Schritt 5 — ausprobieren: Duell der Dramenkonzepte: Katharsis vs. Erkenntnis
 
 VERGLEICH: Aristotelisches Theater (Katharsis & Einfuehlung) vs. Episches Theater (Verfremdung & Kritisches Denken) (选概念)
@@ -112,6 +114,8 @@ ANTWORT: Die sichtbare, koerperliche und sprachliche Haltung einer Figur, die ih
 
 FRAGE: Warum darf die Buehne bei Brecht nicht in stimmungsvolles Halbdunkel getaucht werden?
 ANTWORT: Weil das Licht vollstaendig hell sein muss, um das Theater als kuenstliche Werkstatt zu entlarven und zu verhindern, dass die Zuschauer in eine traeumerische Illusion abgleiten.
+
+`Klausur-Satz: Die differenzierte Reflexion erfordert eine stringente Verknuepfung von theoretischem Kriterienkatalog und konkretem Klausurmaterial.`
 
 ## Schritt 8 — reflexion: Meisterschaft & Naechste Mission
 

@@ -76,6 +76,8 @@ MUSTERLOESUNG:
 2. Ausscheidung:
    - Durch die sechsfache koordinative Umhuellung ist das toxische $Pb^{2+}$-Kation vollstaendig im inneren Hohlraum des EDTA-Kaefigs thermodynamisch "eingesperrt" und maskiert. Es kann nicht mehr an SH-Gruppen koerpereigener Enzyme binden und wird unzersetzt ueber den Urin filtriert.
 
+`Klausur-Satz: Bei Aufgaben zu Komplexchemie: Ligandenaustausch, Chelateffekt und Ligandenfeldaufspaltung muss die theoriegeleitete Begruendung stets durch exakte Fachtermini und empirische Belege abgesichert werden.`
+
 ## Schritt 5 — ausprobieren: Duell der Liganden: Wasser vs. Ammoniak
 
 VERGLEICH: Aquakomplex vs. Tetraamminkomplex (选概念)
@@ -118,6 +120,8 @@ ANTWORT: Der Entropie-Effekt: Bei der Bildung des Chelatkomplexes werden viele k
 
 FRAGE: Welche Eigenschaft muss ein Teilchen besitzen, um als Ligand in einem Komplex fungieren zu koennen?
 ANTWORT: Es muss mindestens ein freies, nicht-bindendes Elektronenpaar besitzen, um als Lewis-Base eine koordinative (dative) kovalente Bindung mit den leeren Orbitalen des Zentralions einzugehen.
+
+`Klausur-Satz: Die differenzierte Reflexion erfordert eine stringente Verknuepfung von theoretischem Kriterienkatalog und konkretem Klausurmaterial.`
 
 ## Schritt 8 — reflexion: Meisterschaft & Naechste Mission
 

@@ -91,6 +91,8 @@ MUSTERLOESUNG:
    $$s_{\text{Erde}} = v \cdot \Delta t = (0{,}998 \cdot 3{,}00 \times 10^8\,\text{m/s}) \cdot 3{,}48 \times 10^{-5}\,\text{s} \approx 2{,}994 \times 10^8 \cdot 3{,}48 \times 10^{-5} \approx 10.420\,\text{m} = 10{,}42\,\text{km}$$
    - Da die Reichweite von $10{,}42\,\text{km}$ groesser ist als die Entstehungshoehe von $10{,}0\,\text{km}$, erreichen zahlreiche Myonen vor ihrem Zerfall den Erdboden. Das Experiment bestaetigt die Zeitdilatation mit hoechster Praezision.
 
+`Klausur-Satz: Bei Aufgaben zu Spezielle Relativitaetstheorie: Lichtuhr, Zeitdilatation und Lorentzfaktor muss die theoriegeleitete Begruendung stets durch exakte Fachtermini und empirische Belege abgesichert werden.`
+
 ## Schritt 5 — ausprobieren: Duell der Weltbilder: Newtons Absolutheit vs. Einsteins Relativitaet
 
 VERGLEICH: Absoluter Newtonscher Zeitbegriff vs. Relativistische Raumzeit (选概念)
@@ -129,6 +131,8 @@ ANTWORT: Die Zeitspanne zwischen zwei Ereignissen, die von einer Uhr gemessen wi
 
 FRAGE: Warum kann kein Koerper mit Ruhemasse jemals die exakte Lichtgeschwindigkeit c im Vakuum erreichen?
 ANTWORT: Weil der Lorentzfaktor gamma fuer v gegen c gegen Unendlich strebt; die relativistische Masse bzw. Energie wuerde unendlich gross werden, sodass unendlich viel Beschleunigungsarbeit erforderlich waere.
+
+`Klausur-Satz: Die differenzierte Reflexion erfordert eine stringente Verknuepfung von theoretischem Kriterienkatalog und konkretem Klausurmaterial.`
 
 ## Schritt 8 — reflexion: Meisterschaft & Naechste Mission
 

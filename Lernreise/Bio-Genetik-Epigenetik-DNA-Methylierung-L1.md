@@ -81,6 +81,8 @@ MUSTERLOESUNG:
    - Als die Kinder jedoch in die wohlhabende westliche Nachkriegsgesellschaft mit permanentem Ueberfluss an Fetten und raffiniertem Zucker hineinwuchsen, kollidierte der hocheffiziente "Sparstoffwechsel" mit der Kalorienflut.
    - Der Koerper speicherte ueberschiessend viszerales Fett, entwickelte Insulinresistenzen und erhoehte Blutdruckwerte – die fruehe epigenetische Schutzmassnahme verwandelte sich in der Konsumgesellschaft in ein chronisches Krankheitsrisiko.
 
+`Klausur-Satz: Bei Aufgaben zu Genetik & Epigenetik: DNA-Methylierung und Histonmodifikation muss die theoriegeleitete Begruendung stets durch exakte Fachtermini und empirische Belege abgesichert werden.`
+
 ## Schritt 5 — ausprobieren: Duell der molekularen Schalter: Anheften vs. Abspalten
 
 VERGLEICH: DNA-Methylierung (Gen-Silencing) vs. Histon-Acetylierung (Gen-Aktivierung) (选概念)
@@ -121,6 +123,8 @@ ANTWORT: Eine Mutation veraendert die chemische Basensequenz der DNA dauerhaft u
 
 FRAGE: Welche Aminosaeure an den Histon-Proteinen ist die primaere Zielscheibe fuer die Histonacetylierung?
 ANTWORT: Die basische Aminosaeure Lysin, deren positive Ladung durch das Anhaengen der Acetylgruppe neutralisiert wird.
+
+`Klausur-Satz: Die differenzierte Reflexion erfordert eine stringente Verknuepfung von theoretischem Kriterienkatalog und konkretem Klausurmaterial.`
 
 ## Schritt 8 — reflexion: Meisterschaft & Naechste Mission
 

@@ -76,6 +76,8 @@ Balanciere auf dem quantenphysikalischen Balance-Board die gemessenen Gegenspann
 $$m = \frac{\Delta U_g}{\Delta f} = \frac{1{,}44\,\text{V} - 0{,}18\,\text{V}}{8{,}22 \cdot 10^{14}\,\text{Hz} - 5{,}19 \cdot 10^{14}\,\text{Hz}} = \frac{1{,}26\,\text{V}}{3{,}03 \cdot 10^{14}\,\text{s}^{-1}} \approx 4{,}16 \cdot 10^{-15}\,\text{V}\cdot\text{s}$$
 $$h = e \cdot m = 1{,}602 \cdot 10^{-19}\,\text{C} \cdot 4{,}16 \cdot 10^{-15}\,\text{V}\cdot\text{s} \approx 6{,}66 \cdot 10^{-34}\,\text{J}\cdot\text{s} \quad (\approx h_{\text{Literatur}})$$
 
+`Klausur-Satz: Bei Aufgaben zu Quantenphysik: Der aeussere Photoeffekt, Gegenfeldmethode und Bestimmung von h muss die theoriegeleitete Begruendung stets durch exakte Fachtermini und empirische Belege abgesichert werden.`
+
 ## Schritt 5 — check: Das Konzeptduell
 VERGLEICH: Klassische Wellenlehre versus Einsteins Lichtquantenhypothese
 

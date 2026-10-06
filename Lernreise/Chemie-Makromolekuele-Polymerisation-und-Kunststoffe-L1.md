@@ -85,6 +85,8 @@ MUSTERLOESUNG:
    - Synthese 1 (Polymerisation): Alle Atome der Ethen-Ausgangsmolekuele befinden sich am Ende vollstaendig im Polymer. Es entsteht kein Nebenprodukt (100 % Atomeffizienz).
    - Synthese 2 (Polykondensation): Die Verknuepfung einer Carboxygruppe ($-COOH$) mit einer Aminogruppe ($-NH_2$) fuehrt zur Bildung einer Peptid-/Amidbindung unter kontinuierlicher Abspaltung je eines Wassermolekuels ($H_2O$). Damit das Molekuel zu einer Kette wachsen kann, muessen beide Monomere zwingend an beiden Enden reaktive funktionelle Gruppen tragen (bifunktionell).
 
+`Klausur-Satz: Bei Aufgaben zu Makromolekulare Chemie: Polymerisation, Polykondensation und Kunststoffe muss die theoriegeleitete Begruendung stets durch exakte Fachtermini und empirische Belege abgesichert werden.`
+
 ## Schritt 5 — ausprobieren: Duell der Werkstoffe: Thermoplast vs. Duroplast
 
 VERGLEICH: Thermoplast vs. Duroplast (选概念)
@@ -123,6 +125,8 @@ ANTWORT: Das Erhitzen von Kautschuk mit Schwefel, wodurch die linearen Polyisopr
 
 FRAGE: Welcher strukturelle Unterschied besteht zwischen Polyethylen niedriger Dichte (LD-PE) und Polyethylen hoher Dichte (HD-PE)?
 ANTWORT: LD-PE besitzt stark verzweigte Polymerketten, die sich nicht dicht packen koennen (weich, geringe Dichte), waehrend HD-PE fast unverzweigte, lineare Ketten besitzt, die dichte kristalline Bereiche bilden (hart, steif, hoehere Dichte).
+
+`Klausur-Satz: Die differenzierte Reflexion erfordert eine stringente Verknuepfung von theoretischem Kriterienkatalog und konkretem Klausurmaterial.`
 
 ## Schritt 8 — reflexion: Meisterschaft & Naechste Mission
 

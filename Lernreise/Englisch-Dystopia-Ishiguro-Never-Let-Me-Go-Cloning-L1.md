@@ -74,6 +74,8 @@ Analyse the insidious euphemistic lexicon in Ishiguro's text using the analytica
 | *"Carer"* | **Traumatised clone escorting doomed companions** | Keeps the clones self-policing; turns victims into functioning gears of the execution machinery. |
 | *"The Sales"* | **Second-hand junk markets inside Hailsham** | Trains the children to value synthetic junk, distracting them from their total lack of legal rights. |
 
+`Klausur-Satz: Bei Aufgaben zu Dystopian Literature: Kazuo Ishiguro — Never Let Me Go (Ethics of Human Cloning and Social Conditioning) muss die theoriegeleitete Begruendung stets durch exakte Fachtermini und empirische Belege abgesichert werden.`
+
 ## Schritt 5 — check: The Concept Duel
 VERGLEICH: Violent Dystopia (1984) versus Insidious Dystopia (Never Let Me Go)
 

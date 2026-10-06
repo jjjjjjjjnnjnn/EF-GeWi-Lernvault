@@ -78,6 +78,8 @@ MUSTERLOESUNG:
    - Nach Newton gilt: $F_{\text{brems}} = m \cdot a = 2000\,\text{kg} \cdot (3{,}5 \cdot 9{,}81\,\text{m/s}^2) = 68.670\,\text{N}$.
    - Bremskonstante: $k = \frac{F_{\text{brems}}}{v_0} = \frac{68.670\,\text{N}}{25\,\text{m/s}} \approx 2746{,}8\,\text{N}\cdot\text{s/m}$.
 
+`Klausur-Satz: Bei Aufgaben zu Faradaysches Induktionsgesetz und Lenzsche Regel muss die theoriegeleitete Begruendung stets durch exakte Fachtermini und empirische Belege abgesichert werden.`
+
 ## Schritt 5 — ausprobieren: Duell der Magnetfelder: Statisch vs. Dynamisch
 
 VERGLEICH: Statisches Magnetfeld vs. Zeitlich veraenderlicher magnetischer Fluss (选概念)
@@ -117,6 +119,8 @@ ANTWORT: Durch den Laengsschlitz wird der geschlossene Kreisstrom um den Zylinde
 
 FRAGE: Welche zwei Moeglichkeiten gibt es grundsaetzlich, um eine Induktionsspannung in einer Spule zu erzeugen?
 ANTWORT: Entweder durch zeitliche Veraenderung der magnetischen Flussdichte B bei konstanter Flaeche A (z. B. Wechselstrom im Elektromagneten) oder durch zeitliche Veraenderung der vom Feld durchsetzten Flaeche A bei konstanter Flussdichte (z. B. Rotation einer Leiterschleife im homogenen Feld).
+
+`Klausur-Satz: Die differenzierte Reflexion erfordert eine stringente Verknuepfung von theoretischem Kriterienkatalog und konkretem Klausurmaterial.`
 
 ## Schritt 8 — reflexion: Meisterschaft & Naechste Mission
 

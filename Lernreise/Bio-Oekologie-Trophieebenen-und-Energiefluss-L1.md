@@ -84,6 +84,8 @@ MUSTERLOESUNG:
    - Szenario B ernaehrt: $\frac{1.000\,\text{MJ}}{3.600\,\text{MJ/Person}} \approx 0{,}28$ Personen pro Hektar.
    - Eine vegetarisch basierte Agrarnutzung kann bei identischer Flaeche exakt die zehnfache Anzahl an Menschen mit Lebensenergie versorgen!
 
+`Klausur-Satz: Bei Aufgaben zu Oekologie: Trophieebenen, 10-Prozent-Regel und Energiefluss muss die theoriegeleitete Begruendung stets durch exakte Fachtermini und empirische Belege abgesichert werden.`
+
 ## Schritt 5 — ausprobieren: Duell der Prozesse: Kreislauf vs. Einbahnstrasse
 
 VERGLEICH: Geschlossener Stoffkreislauf vs. Offener Energiefluss (选概念)
@@ -123,6 +125,8 @@ ANTWORT: Sie werden durch die Zellatmung der Organismen fuer Bewegung, Erwaermun
 
 FRAGE: Warum kann eine Zahlenpyramide im Wald umgekehrt geformt sein (unten schmal, oben breit)?
 ANTWORT: Weil ein einziger riesiger Produzent (z. B. eine hundertjaehrige Eiche) tausenden kleinen Insekten und Blattlaeusen als Nahrung dienen kann, waehrend die Energiepyramide immer strikt pyramidenfoermig nach oben spitz zulaeufen muss.
+
+`Klausur-Satz: Die differenzierte Reflexion erfordert eine stringente Verknuepfung von theoretischem Kriterienkatalog und konkretem Klausurmaterial.`
 
 ## Schritt 8 — reflexion: Meisterschaft & Naechste Mission
 

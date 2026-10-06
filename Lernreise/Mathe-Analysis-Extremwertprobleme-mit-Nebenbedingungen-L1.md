@@ -91,6 +91,8 @@ MUSTERLOESUNG:
    $$h = 2r \implies \frac{h}{2r} = 1$$
    Der materialoptimale Zylinder besitzt eine Hoehe, die exakt gleich seinem Durchmesser ist!
 
+`Klausur-Satz: Bei Aufgaben zu Analysis: Extremwertprobleme mit Nebenbedingungen muss die theoriegeleitete Begruendung stets durch exakte Fachtermini und empirische Belege abgesichert werden.`
+
 ## Schritt 5 — ausprobieren: Duell der Ansaetze: Einsetzen vs. Lagrange
 
 VERGLEICH: Einsetzungsverfahren vs. Geometrische Schaetzung (选程序)
@@ -130,6 +132,8 @@ ANTWORT: Beide Werte muessen in die zweite Ableitung eingesetzt werden, um zu pr
 
 FRAGE: Warum ist die Randwertpruefung bei geometrischen Extremwertaufgaben unverzichtbar?
 ANTWORT: Weil der berechnete Hoch- oder Tiefpunkt nur ein lokales Extremum ist; an den Raendern des Definitionsbereichs (z. B. extrem flache oder extrem schmale Formen) koennte der Funktionswert theoretisch noch groesser oder kleiner sein.
+
+`Klausur-Satz: Die differenzierte Reflexion erfordert eine stringente Verknuepfung von theoretischem Kriterienkatalog und konkretem Klausurmaterial.`
 
 ## Schritt 8 — reflexion: Meisterschaft & Naechste Mission
 

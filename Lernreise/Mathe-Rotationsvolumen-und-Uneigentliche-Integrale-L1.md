@@ -76,6 +76,8 @@ MUSTERLOESUNG:
      $$V_{\infty} = \lim_{u \to \infty} \frac{\pi}{3} \left( 1 - \frac{1}{u^3} \right) = \frac{\pi}{3} \cdot (1 - 0) = \frac{\pi}{3} \approx 1{,}047\,\text{VE}$$
    - Das Integral konvergiert absolut krisenfest gegen den exakten Wert $\frac{\pi}{3}$.
 
+`Klausur-Satz: Bei Aufgaben zu Rotationsvolumen und Uneigentliche Integrale muss die theoriegeleitete Begruendung stets durch exakte Fachtermini und empirische Belege abgesichert werden.`
+
 ## Schritt 5 — ausprobieren: Duell der Integrale: Flaeche vs. Volumen
 
 VERGLEICH: Flaechenintegral vs. Rotationsvolumen-Integral (选程序)
@@ -114,6 +116,8 @@ ANTWORT: Man vergisst entweder den Faktor pi vor dem Integral, oder man quadrier
 
 FRAGE: Wann heisst ein uneigentliches Integral divergent?
 ANTWORT: Wenn der Grenzwert des endlichen Integrals fuer u gegen Unendlich nicht existiert oder gegen plus/minus Unendlich strebt.
+
+`Klausur-Satz: Die differenzierte Reflexion erfordert eine stringente Verknuepfung von theoretischem Kriterienkatalog und konkretem Klausurmaterial.`
 
 ## Schritt 8 — reflexion: Meisterschaft & Naechste Mission
 

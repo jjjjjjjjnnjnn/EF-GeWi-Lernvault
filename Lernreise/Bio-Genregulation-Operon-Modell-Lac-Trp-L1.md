@@ -77,6 +77,8 @@ MUSTERLOESUNG:
 2. Ueberlebensfaehigkeit:
    - Stamm C stirbt auf dem reinen Laktosemedium, da er mangels Spaltungsenzymen (Beta-Galaktosidase) die Laktose nicht verwerten kann und verhungert. Staemme A und B ueberleben, verschwenden allerdings unnoetig ATP.
 
+`Klausur-Satz: Bei Aufgaben zu Genregulation bei Prokaryoten: Das Operon-Modell muss die theoriegeleitete Begruendung stets durch exakte Fachtermini und empirische Belege abgesichert werden.`
+
 ## Schritt 5 — ausprobieren: Duell der Regulationsmodelle: Abbau vs. Aufbau
 
 VERGLEICH: Substrat-Induktion (Lac-Operon) vs. Endprodukt-Repression (Trp-Operon) (选概念)
@@ -117,6 +119,8 @@ ANTWORT: Die Enzymhemmung schaltet bereits existierende Proteine in Sekundenbruc
 
 FRAGE: Welche Rolle spielt cAMP bei der prokaryotischen Genexpression?
 ANTWORT: cAMP signalisiert Glukosemangel. Es bindet an das CAP-Protein, aktiviert es und unterstuetzt die RNA-Polymerase dabei, effizient an den Promotor alternativer Operons (wie Lac) zu binden.
+
+`Klausur-Satz: Die differenzierte Reflexion erfordert eine stringente Verknuepfung von theoretischem Kriterienkatalog und konkretem Klausurmaterial.`
 
 ## Schritt 8 — reflexion: Meisterschaft & Naechste Mission
 

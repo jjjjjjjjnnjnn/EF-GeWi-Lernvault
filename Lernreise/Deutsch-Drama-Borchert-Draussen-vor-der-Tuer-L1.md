@@ -77,6 +77,8 @@ Untersuche mit dem textanalytischen Highlighter einen Auszug aus Beckmanns Monol
 | *"Die Gasmaskenbrille sitzt auf der Nase wie eine Schnauze. Durch diese Brille sieht die Welt ganz anders aus."* | **Leitmotivische Metapher** | Die Brille zwingt Beckmann, die Nachkriegswelt ohne die rosarote Brille des Wirtschaftswunder-Verdraengens zu sehen. |
 | *"Der Oberst lacht. Ein volles, rundes, sattes Lachen. Warum lachen Sie denn? Das ist doch kein Witz!"* | **Akustischer Kontrast** | Zynische Harmlosmachung des Kriegsleids durch die elitaere Offizierskaste, die sich sofort wieder im Buertum einrichtet. |
 
+`Klausur-Satz: Bei Aufgaben zu Dramenanalyse: Wolfgang Borchert — Draussen vor der Tuer (Truemmerliteratur und Heimkehrer-Trauma) muss die theoriegeleitete Begruendung stets durch exakte Fachtermini und empirische Belege abgesichert werden.`
+
 ## Schritt 5 — check: Das Konzeptduell
 VERGLEICH: Expressionismus (Aufbruch) versus Truemmerliteratur (Zusammenbruch)
 

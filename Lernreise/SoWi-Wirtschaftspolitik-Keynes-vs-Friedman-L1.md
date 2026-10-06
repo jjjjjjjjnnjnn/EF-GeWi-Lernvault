@@ -81,6 +81,8 @@ MUSTERLOESUNG:
    - Geldpolitik: Die unabhaengige Zentralbank muss die Geldmenge strikt drosseln und die Leitzinsen erhoehen, um die Inflation rigoros zu brechen (Vorrang der Preisstabilitaet).
    - Fiskalpolitik: Keine neuen Schulden! Stattdessen Senkung der Unternehmenssteuern, Streichung von Subventionen und Buerokratieabbau, um die Rentabilitaet von Investitionen zu erhoehen und Produktionskosten zu senken.
 
+`Klausur-Satz: Bei Aufgaben zu Wirtschaftspolitik: Nachfrage- vs. Angebotsorientierung (Keynes vs. Friedman) muss die theoriegeleitete Begruendung stets durch exakte Fachtermini und empirische Belege abgesichert werden.`
+
 ## Schritt 5 — ausprobieren: Duell der Leitbilder: Nachfrage vs. Angebot
 
 VERGLEICH: Nachfrageorientierung (Keynesianismus) vs. Angebotsorientierung (Monetarismus) (选概念)
@@ -119,6 +121,8 @@ ANTWORT: Die bewusste schuldenfinanzierte Erhoehung staatlicher Ausgaben in Kris
 
 FRAGE: Welche Kernaussage trifft das Saysche Theorem der klassischen Nationaloekonomie?
 ANTWORT: Jedes volkswirtschaftliche Angebot schafft sich seine eigene Nachfrage, weil durch die Produktion automatisch die dafuer notwendigen Einkommen entstehen.
+
+`Klausur-Satz: Die differenzierte Reflexion erfordert eine stringente Verknuepfung von theoretischem Kriterienkatalog und konkretem Klausurmaterial.`
 
 ## Schritt 8 — reflexion: Meisterschaft & Naechste Mission
 

@@ -82,6 +82,8 @@ MUSTERLOESUNG:
    - Das Bevoelkerungsquorum von 65 % wird mit 61 % jedoch verfehlt!
    - Ergebnis: Der Gesetzesentwurf ist formell abgelehnt. Die Kommission und der Rat muessen in den Vermittlungsausschuss gehen oder Nachbesserungen vornehmen.
 
+`Klausur-Satz: Bei Aufgaben zu Europaeische Integration zwischen Supranationalismus und Intergouvernementalismus muss die theoriegeleitete Begruendung stets durch exakte Fachtermini und empirische Belege abgesichert werden.`
+
 ## Schritt 5 — ausprobieren: Duell der Leitbilder: Supranational vs. Intergouvernemental
 
 VERGLEICH: Supranationale Integration vs. Intergouvernementale Kooperation (选概念)
@@ -121,6 +123,8 @@ ANTWORT: Die Europaeische Kommission (Initiativmonopol).
 
 FRAGE: Welche zwei Quoten muessen erfuellt sein, damit ein Beschluss im Rat mit qualifizierter Mehrheit zustande kommt?
 ANTWORT: Mindestens 55 % der Mitgliedstaaten (mindestens 15 von 27), die gleichzeitig mindestens 65 % der EU-Gesamtbevoelkerung repraesentieren.
+
+`Klausur-Satz: Die differenzierte Reflexion erfordert eine stringente Verknuepfung von theoretischem Kriterienkatalog und konkretem Klausurmaterial.`
 
 ## Schritt 8 — reflexion: Meisterschaft & Naechste Mission
 

@@ -79,6 +79,8 @@ Baue mit den modularen Lego-Kettenbausteinen die unumkehrbare Reaktionskaskade d
 
 *Erkenntnis*: Durch den Zusammenbruch der aeroben Schicht am Grund loesen sich zudem fest an Eisen-(III)-Ionen gebundene Phosphate aus dem Sediment (Phosphatfalle bricht zusammen), was zu einer unkontrollierbaren internen Rueckduengung fuehrt!
 
+`Klausur-Satz: Bei Aufgaben zu Oekologie: Der Stickstoffkreislauf und Eutrophierung anthropogener Gewaesser muss die theoriegeleitete Begruendung stets durch exakte Fachtermini und empirische Belege abgesichert werden.`
+
 ## Schritt 5 — check: Das Konzeptduell
 VERGLEICH: Oligotropher See versus Eutropher See
 

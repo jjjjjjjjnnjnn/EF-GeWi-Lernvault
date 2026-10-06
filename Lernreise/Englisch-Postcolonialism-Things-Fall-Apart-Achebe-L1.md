@@ -86,6 +86,8 @@ MUSTERLOESUNG:
    - He seamlessly incorporates Igbo vocabulary (Chi, Obi, Egwugwu, Ogbanje) without italicizing or translating them condescendingly.
    - He adopts the cadence of traditional oral storytelling, thereby forcing the Western reader to step inside the African linguistic universe and prove that English can carry the weight of African thought.
 
+`Klausur-Satz: Bei Aufgaben zu Postcolonial Literature: Chinua Achebe's Things Fall Apart – Cultural Collision and Identity muss die theoriegeleitete Begruendung stets durch exakte Fachtermini und empirische Belege abgesichert werden.`
+
 ## Schritt 5 — ausprobieren: Duel of Worldviews: Indigenous Tradition vs. Colonial Authority
 
 VERGLEICH: Traditional Communal Balance vs. Colonial Imposition (选概念)
@@ -123,6 +125,8 @@ ANTWORT: It is taken from William Butler Yeats's famous poem "The Second Coming"
 
 FRAGE: Why does Okonkwo commit suicide at the end of the novel, and why is his suicide a final tragedy in Igbo culture?
 ANTWORT: He realizes that his people will not fight a war against the British; furthermore, in Igbo religion suicide is an abomination (an offence against Ani, the earth goddess), meaning his own clansmen cannot bury his body and must treat him as an outcast.
+
+`Klausur-Satz: Die differenzierte Reflexion erfordert eine stringente Verknuepfung von theoretischem Kriterienkatalog und konkretem Klausurmaterial.`
 
 ## Schritt 8 — reflexion: Meisterschaft & Naechste Mission
 

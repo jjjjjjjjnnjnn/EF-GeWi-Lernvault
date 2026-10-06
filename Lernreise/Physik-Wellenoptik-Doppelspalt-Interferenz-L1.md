@@ -87,6 +87,8 @@ MUSTERLOESUNG:
      $$\lambda = \frac{2{,}5 \times 10^{-4}\,\text{m} \cdot 1{,}52 \times 10^{-2}\,\text{m}}{3 \cdot 2{,}00\,\text{m}} = \frac{3{,}8 \times 10^{-6}}{6{,}00} \approx 6{,}333 \times 10^{-7}\,\text{m} = 633{,}3\,\text{nm}$$
    - Das Licht liegt bei ca. $633\,\text{nm}$ und besitzt eine charakteristische leuchtend rote Spektralfarbe.
 
+`Klausur-Satz: Bei Aufgaben zu Wellenoptik: Doppelspalt-Interferenz und Beugung des Lichts muss die theoriegeleitete Begruendung stets durch exakte Fachtermini und empirische Belege abgesichert werden.`
+
 ## Schritt 5 — ausprobieren: Duell der Modelle: Welle vs. Korpuskel
 
 VERGLEICH: Wellenmodell vs. Newtonsches Teilchenmodell des Lichts (选概念)
@@ -125,6 +127,8 @@ ANTWORT: Der Gangunterschied muss ein ungeradzahliges Vielfaches der halben Well
 
 FRAGE: Was geschieht mit dem Abstand der Interferenzstreifen auf dem Schirm, wenn man das gesamte Experiment unter Wasser durchfuehrt?
 ANTWORT: Da die Lichtgeschwindigkeit im Wasser geringer ist, sinkt die Wellenlaenge lambda (lambda_Wasser = lambda_Vakuum / n). Dadurch ruecken die Interferenzstreifen enger zusammen.
+
+`Klausur-Satz: Die differenzierte Reflexion erfordert eine stringente Verknuepfung von theoretischem Kriterienkatalog und konkretem Klausurmaterial.`
 
 ## Schritt 8 — reflexion: Meisterschaft & Naechste Mission
 

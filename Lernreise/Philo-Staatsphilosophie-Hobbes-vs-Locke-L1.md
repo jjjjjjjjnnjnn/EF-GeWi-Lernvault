@@ -76,6 +76,8 @@ MUSTERLOESUNG:
    - Bei Hobbes schliesst der Leviathan selbst den Vertrag nicht mit den Buergern ab, sondern die Buerger schliessen ihn untereinander zugunsten des Herrschers. Daher kann der Leviathan den Vertrag formell gar nicht brechen. Ein Widerstandsrecht existiert nur in dem extremen Einzelfall, in dem der Souveraen das physische Leben des Buergers direkt bedroht (da der Schutz des Lebens der einzige Zweck der Vertragsunterzeichnung war).
    - Bei Locke hingegen ist der Staat ein Treuhaender mit klarem Auftrag: den Schutz von Leben, Freiheit und Eigentum zu garantieren. Missbraucht der Herrscher seine Macht (Tyrannei) oder bricht das Treuhaenderverhaeltnis, faellt die Gewalt an das Volk zurueck. Die Buerger haben das moralische und verfassungsrechtliche Recht zum bewaffneten Widerstand und zur Einsetzung einer neuen Regierung.
 
+`Klausur-Satz: Bei Aufgaben zu Staatsphilosophie: Naturzustand und Gesellschaftsvertrag bei Hobbes und Locke muss die theoriegeleitete Begruendung stets durch exakte Fachtermini und empirische Belege abgesichert werden.`
+
 ## Schritt 5 — ausprobieren: Duell der Naturzustaende: Wolf vs. Vernunftwesen
 
 VERGLEICH: Leviathan-Absolutismus (Hobbes) vs. Gewaltenteilung-Naturrechte (Locke) (选概念)
@@ -115,6 +117,8 @@ ANTWORT: Weil der Herrscher nicht Vertragspartner ist, sondern der Vertrag nur z
 
 FRAGE: Welche drei Kernrechte bilden bei John Locke das unveraeusserliche Naturrecht?
 ANTWORT: Das Recht auf Leben (Life), Freiheit (Liberty) und Eigentum (Estate).
+
+`Klausur-Satz: Die differenzierte Reflexion erfordert eine stringente Verknuepfung von theoretischem Kriterienkatalog und konkretem Klausurmaterial.`
 
 ## Schritt 8 — reflexion: Meisterschaft & Naechste Mission
 

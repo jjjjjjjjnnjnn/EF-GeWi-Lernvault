@@ -91,6 +91,8 @@ MUSTERLOESUNG:
      $$x = 2y = \frac{2}{3} \approx 66{,}7\,\%$$
    - Ergebnis: Auf lange Sicht scheint an genau $\frac{2}{3}$ aller Tage die Sonne und an $\frac{1}{3}$ aller Tage regnet es – vollkommen unabhaengig vom Wetter am Starttag!
 
+`Klausur-Satz: Bei Aufgaben zu Stochastik & Lineare Algebra: Markov-Ketten und Uebergangsmatrizen muss die theoriegeleitete Begruendung stets durch exakte Fachtermini und empirische Belege abgesichert werden.`
+
 ## Schritt 5 — ausprobieren: Duell der Berechnungsmethoden: Potenzierung vs. Fixvektor
 
 VERGLEICH: Matrizenpotenz M^n vs. Lineares Gleichungssystem M*v=v (选程序)
@@ -130,6 +132,8 @@ ANTWORT: Die Summe aller Elemente in jeder einzelnen Spalte muss exakt gleich 1 
 
 FRAGE: Warum darf man beim Loesen von (M - E)*v = 0 eine der Gleichungen einfach streichen und durch die Normierungsbedingung x + y + ... = 1 ersetzen?
 ANTWORT: Weil die Zeilen der Matrix (M - E) aufgrund der Spaltensummen-Eigenschaft stets linear abhaengig sind (eine Zeile ist redundant). Die Normierungsgleichung liefert die notwendige zusaetzliche Information, um eine eindeutige Loesung zu erhalten.
+
+`Klausur-Satz: Die differenzierte Reflexion erfordert eine stringente Verknuepfung von theoretischem Kriterienkatalog und konkretem Klausurmaterial.`
 
 ## Schritt 8 — reflexion: Meisterschaft & Naechste Mission
 

@@ -78,6 +78,8 @@ MUSTERLOESUNG:
      $$\text{pH}_{\text{neu}} = 4{,}75 + \lg\left(\frac{0{,}08}{0{,}22}\right) = 4{,}75 + \lg(0{,}3636) \approx 4{,}75 - 0{,}44 = 4{,}31$$
    - Auswertung: Der pH-Wert sinkt lediglich um minimale $0{,}14$ Einheiten von $4{,}45$ auf $4{,}31$ ab! (In reinem Wasser wuerde dieselbe Saeuremenge den pH-Wert dramatisch von $7{,}0$ auf $1{,}7$ stuerzen lassen – eine mehr als hunderttausendfache Saeurekatastrophe!).
 
+`Klausur-Satz: Bei Aufgaben zu Saeure-Base-Gleichgewichte: Pufferloesungen und Henderson-Hasselbalch-Gleichung muss die theoriegeleitete Begruendung stets durch exakte Fachtermini und empirische Belege abgesichert werden.`
+
 ## Schritt 5 — ausprobieren: Duell der Systeme: Ungepuffert vs. Dynamisch Gepuffert
 
 VERGLEICH: Starke Saeure (Vollstaendige Dissoziation) vs. Schwache Saeure im Puffer (Dynamisches Abfedern) (选概念)
@@ -117,6 +119,8 @@ ANTWORT: Im Bereich von pH = pKs +/- 1 (also eine pH-Einheit oberhalb und unterh
 
 FRAGE: Warum ist das Kohlensaeure-Hydrogencarbonat-System im Blut ein sogenannter "offener Puffer"?
 ANTWORT: Weil das fluechtige Kohlendioxid (CO2) ueber die Lunge kontinuierlich an die Atmosphaere abgegeben oder durch Veraenderung der Atemfrequenz reguliert werden kann, waehrend die Konzentration in geschlossenen Gefaessen starr bliebe.
+
+`Klausur-Satz: Die differenzierte Reflexion erfordert eine stringente Verknuepfung von theoretischem Kriterienkatalog und konkretem Klausurmaterial.`
 
 ## Schritt 8 — reflexion: Meisterschaft & Naechste Mission
 
