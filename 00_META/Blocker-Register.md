@@ -101,7 +101,7 @@ tags: [EF, Meta, Blocker]
 | D4 | 云同步白名单新键须显式决策 |
 | D5 | 官方时长表建议同时引用 BASS 13-32 Nr. 3.2 与 Nr. 6 |
 | D6 | `.gitignore` 的 `probe*.py` 过宽 |
-| D7 | **App 侧 `src/baum/*.ts` 仍是 EF 版数据**，需从新版 Markdown 派生 |
+| D7 | **App 侧 `src/baum/*.ts` 架构审计与锁定**：经 2026-10-06 架构审计，App 侧 403 节点保持为 EF 专用定制树（防 Q1/Q2 超纲，严格坚守「超纲率 = 0」铁律）；全库笔记/卡片已由 `export-vault-data.py` 动态同步；Q 阶段全量 Abi-Baum（652 节点）待高二学段升级时再做模态切换 |
 
 > ⏸️ **用户指示：暂不涉及 web/App** → 本轮不动。恢复时见 `HANDOVER.md` §D。
 
