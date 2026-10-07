@@ -61,9 +61,24 @@ tags: [EF, Meta, Journal]
      4. **牛津沉静**（理性深邃蓝灰，学府专注氛围，`oxford`）
    - 状态持久化到 `localStorage` 与 `document.documentElement[data-theme]`，彻底消除“颜色不受控制”的问题。
 
-## 5. 质量门禁与验证
+## 5. 多邻国（Duolingo）式破框交互与无缝 Divided List 终局重构
+1. **左下角任务处方改用完全无缝列表（Divided List）**：
+   - 彻底清除每个子任务外层套着的孤立灰色边框与卡片样式，消除“表单后台碎屑感”；
+   - 使用统一的 `divide-y divide-slate-100`，单行靠悬停柔和底色 `hover:bg-slate-50/80` 与优雅内边距分隔；
+   - 任务标题加粗 `text-xs font-semibold text-slate-800`，辅助信息 `5 分钟 · FSRS 复习 · +40 XP`，右侧“去执行 →”无缝衔接。
+2. **规范化路线图（带贯穿连接轨道的 Stepper）**：
+   - 背景铺设贯穿细实线轨道（`absolute left-6 right-6 top-1/2 -translate-y-1/2 h-[2px] bg-slate-200`）；
+   - 节点 1 为绿勾实心圆点（SVG），节点 2 为当前高亮带 `animate-ping` 琥珀色呼吸扩散动效，节点 3 为终局空心圆点；节点悬浮在轨道之上，既具推进动量，又 100% 满足单元测试交互契约。
+3. **多邻国式破框交互（Card Overhang）与剧情化雷达图**：
+   - **右上角冲刺卡**：手捧火苗的连胜狐狸（`state="streak"`）采用 `-top-9 -right-2` 破框搭在卡片右上边缘，主按钮换装品牌狐狸橙（`bg-[#D96E3A]`），强化打卡战斗感；
+   - **右侧失分几何雷达**：手持放大镜的侦探狐狸（`state="deficit"`）贴在雷达图左下角，头顶浮动深青灰（`#2D4F5C`）对话气泡：*“注意！D2 论证穿透度是最大失分点！”*，瞬间将静态图表转化为伴学侦探剧情。
+4. **侧边栏快捷键修复**：
+   - 将所有快捷键徽章修复为高对比度固定胶囊（`text-slate-600 bg-slate-100/90 border border-slate-200/90 font-semibold`），杜绝因过度淡化而隐形的问题。
+
+## 6. 质量门禁与验证
 - `npx vitest run src/modules/DashboardCockpit.test.tsx src/modules.test.tsx`: 27 个测试全部通过（含 UI source contract：零 Emoji、无非法阴影/斜体门禁）；
 - `npx tsc -b`: 0 编译错误；
 - `python scripts/vault-check.py`: PASS。
+
 
 
