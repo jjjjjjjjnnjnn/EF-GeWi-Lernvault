@@ -41,8 +41,29 @@ tags: [EF, Meta, Journal]
    - 雷达图 Tab 按钮升级为高质感 Segmented Control；
    - 失分点列表中薄弱项（D2、D4、有效数字等）配备清晰的内联 SVG 警告图标与醒目的红底药丸（`薄弱项`），失分情况一目了然。
 
-## 4. 质量门禁与验证
+## 4. “去草稿化”高级视觉精修与 4 大学术主题全量打通
+1. **处方任务列表去框化（告别套娃硬线框）**：
+   - 彻底移除任务列表每一行外层套着的灰线边框和卡片样式；
+   - 改为纯净优雅的紧凑列表格式（`divide-y divide-slate-100` 行分割，配合 `py-3 px-2 rounded-xl hover:bg-slate-50/80` 悬停过渡）；
+   - 任务标题字号与字重强化（`text-sm font-semibold text-slate-900`），辅助信息字深提升（`text-xs text-slate-500 font-mono`），扫读体验扎实清晰。
+2. **升阶路线 Stepper 轻量化（去除白色小方盒套娃）**：
+   - 彻底移除包裹在“第一阶 / 第二阶 / 第三阶”外面的三个白色矩形小方盒；
+   - 改为纯净横向时间轴：微型圆点状态指示 + 文本标签 + 细连接线（`h-px bg-slate-200 flex-1`）；第二阶（当前）粗体加深高亮，保持 100% 满足单元测试交互。
+3. **右上角行动卡空间重整（饱满沉稳对称）**：
+   - 垂直结构优化为 `justify-between`；
+   - 中间区域注入结构化收益摘要微卡（`3 项靶向攻坚包 · 15 Min`），消除大片断层真空，主按钮配备微环境光。
+4. **统一背景颜色控制，4 大学术主题风格全量打通**：
+   - 将 `index.css` 的 `.card-elevation` 与 Design Tokens 彻底打通（`background-color: var(--surface); border: 1px solid var(--line); color: var(--ink);`），平滑过渡；
+   - 顶栏主题切换器全面接入 4 大学术主题风格循环：
+     1. **极简学术**（高精黑白灰，冷静理性专注提分，`academic`）
+     2. **暗黑精锐**（深炭灰磨砂底，电竞作战室高能沉浸，`cyber`）
+     3. **温润纸书**（温暖象牙书卷质感，久读不刺眼，`classic`）
+     4. **牛津沉静**（理性深邃蓝灰，学府专注氛围，`oxford`）
+   - 状态持久化到 `localStorage` 与 `document.documentElement[data-theme]`，彻底消除“颜色不受控制”的问题。
+
+## 5. 质量门禁与验证
 - `npx vitest run src/modules/DashboardCockpit.test.tsx src/modules.test.tsx`: 27 个测试全部通过（含 UI source contract：零 Emoji、无非法阴影/斜体门禁）；
 - `npx tsc -b`: 0 编译错误；
 - `python scripts/vault-check.py`: PASS。
+
 
