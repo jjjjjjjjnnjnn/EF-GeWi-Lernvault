@@ -11,6 +11,7 @@ import { xpStore } from "./engine/stores";
 import { FSRS_STORAGE_KEY, LANG_STORAGE_KEY } from "./engine/storageKeys";
 import Library from "./modules/Library";
 import Home from "./modules/Home";
+import DashboardCockpit from "./modules/DashboardCockpit";
 import Flashcards from "./modules/Flashcards";
 import Quiz from "./modules/Quiz";
 import Tutor from "./modules/Tutor";
@@ -177,6 +178,7 @@ const getInitialTab = (): Tab => {
 export default function App() {
   const [tab, setTab] = useState<Tab>(getInitialTab);
   const [devMode, setDevModeState] = useState<boolean>(isDevModeActive);
+  const [useCockpitHome, setUseCockpitHome] = useState<boolean>(true);
 
   const setDevMode = (active: boolean) => {
     setDevModeState(active);
@@ -599,8 +601,8 @@ export default function App() {
               title={`${tr.home} (Alt 1)`}
               className={`group flex h-8 w-full items-center justify-center rounded-[var(--radius)] px-2 text-left text-xs transition-colors cursor-pointer xl:justify-start xl:gap-2 ${
                 tab === "home"
-                  ? "border-l-2 border-[var(--accent)] bg-[var(--surface)] font-medium text-[var(--accent)] shadow-none"
-                  : "border-l-2 border-transparent text-[var(--gray)] hover:bg-[var(--surface)] hover:text-[var(--ink)]"
+                  ? "bg-[var(--surface)] font-medium text-[var(--accent)] border border-[var(--line)] shadow-none"
+                  : "text-[var(--gray)] hover:bg-[var(--surface)] hover:text-[var(--ink)]"
               }`}
             >
               <span className="flex h-4 w-4 shrink-0 items-center justify-center select-none text-current">
@@ -609,9 +611,9 @@ export default function App() {
               <span className="hidden truncate font-sans text-xs font-medium xl:inline">
                 {tr.home}
               </span>
-              <span className="ml-auto hidden font-mono text-[var(--text-meta)] text-[var(--gray)] xl:inline">
+              <kbd className="ml-auto hidden font-mono text-[var(--text-meta)] text-[var(--gray)] px-1.5 py-0.5 rounded border border-[var(--line)] bg-[var(--paper)] xl:inline select-none">
                 Alt 1
-              </span>
+              </kbd>
             </button>
           </div>
 
@@ -632,8 +634,8 @@ export default function App() {
                   title={`${sub.label} (${sub.shortcut})`}
                   className={`group flex h-8 w-full items-center justify-center rounded-[var(--radius)] px-2 text-left text-xs transition-colors cursor-pointer xl:justify-start xl:gap-2 ${
                     isActive
-                      ? "border-l-2 border-[var(--accent)] bg-[var(--surface)] font-medium text-[var(--accent)] shadow-none"
-                      : "border-l-2 border-transparent text-[var(--gray)] hover:bg-[var(--surface)] hover:text-[var(--ink)]"
+                      ? "bg-[var(--surface)] font-medium text-[var(--accent)] border border-[var(--line)] shadow-none"
+                      : "text-[var(--gray)] hover:bg-[var(--surface)] hover:text-[var(--ink)]"
                   }`}
                 >
                   <span className="flex h-4 w-4 shrink-0 items-center justify-center select-none text-current">
@@ -642,9 +644,9 @@ export default function App() {
                   <span className="hidden truncate font-sans text-xs font-medium xl:inline">
                     {sub.label}
                   </span>
-                  <span className="ml-auto hidden font-mono text-[var(--text-meta)] text-[var(--gray)] xl:inline">
+                  <kbd className="ml-auto hidden font-mono text-[var(--text-meta)] text-[var(--gray)] px-1.5 py-0.5 rounded border border-[var(--line)] bg-[var(--paper)] xl:inline select-none">
                     {sub.shortcut}
-                  </span>
+                  </kbd>
                 </button>
               );
             })}
@@ -667,8 +669,8 @@ export default function App() {
                   title={`${sub.label} (${sub.shortcut})`}
                   className={`group flex h-8 w-full items-center justify-center rounded-[var(--radius)] px-2 text-left text-xs transition-colors cursor-pointer xl:justify-start xl:gap-2 ${
                     isActive
-                      ? "border-l-2 border-[var(--accent)] bg-[var(--surface)] font-medium text-[var(--accent)] shadow-none"
-                      : "border-l-2 border-transparent text-[var(--gray)] hover:bg-[var(--surface)] hover:text-[var(--ink)]"
+                      ? "bg-[var(--surface)] font-medium text-[var(--accent)] border border-[var(--line)] shadow-none"
+                      : "text-[var(--gray)] hover:bg-[var(--surface)] hover:text-[var(--ink)]"
                   }`}
                 >
                   <span className="flex h-4 w-4 shrink-0 items-center justify-center select-none text-current">
@@ -677,9 +679,9 @@ export default function App() {
                   <span className="hidden truncate font-sans text-xs font-medium xl:inline">
                     {sub.label}
                   </span>
-                  <span className="ml-auto hidden font-mono text-[var(--text-meta)] text-[var(--gray)] xl:inline">
+                  <kbd className="ml-auto hidden font-mono text-[var(--text-meta)] text-[var(--gray)] px-1.5 py-0.5 rounded border border-[var(--line)] bg-[var(--paper)] xl:inline select-none">
                     {sub.shortcut}
-                  </span>
+                  </kbd>
                 </button>
               );
             })}
@@ -702,8 +704,8 @@ export default function App() {
                   title={`${sub.label} (${sub.shortcut})`}
                   className={`group flex h-8 w-full items-center justify-center rounded-[var(--radius)] px-2 text-left text-xs transition-colors cursor-pointer xl:justify-start xl:gap-2 ${
                     isActive
-                      ? "border-l-2 border-[var(--accent)] bg-[var(--surface)] font-medium text-[var(--accent)] shadow-none"
-                      : "border-l-2 border-transparent text-[var(--gray)] hover:bg-[var(--surface)] hover:text-[var(--ink)]"
+                      ? "bg-[var(--surface)] font-medium text-[var(--accent)] border border-[var(--line)] shadow-none"
+                      : "text-[var(--gray)] hover:bg-[var(--surface)] hover:text-[var(--ink)]"
                   }`}
                 >
                   <span className="flex h-4 w-4 shrink-0 items-center justify-center select-none text-current">
@@ -712,9 +714,9 @@ export default function App() {
                   <span className="hidden truncate font-sans text-xs font-medium xl:inline">
                     {sub.label}
                   </span>
-                  <span className="ml-auto hidden font-mono text-[var(--text-meta)] text-[var(--gray)] xl:inline">
+                  <kbd className="ml-auto hidden font-mono text-[var(--text-meta)] text-[var(--gray)] px-1.5 py-0.5 rounded border border-[var(--line)] bg-[var(--paper)] xl:inline select-none">
                     {sub.shortcut}
-                  </span>
+                  </kbd>
                 </button>
               );
             })}
@@ -729,8 +731,8 @@ export default function App() {
             title={`${tr.settings} (Alt 0)`}
             className={`group flex h-8 w-full items-center justify-center rounded-[var(--radius)] px-2 text-left text-xs transition-colors cursor-pointer xl:justify-start xl:gap-2 ${
               tab === "einstellungen"
-                ? "border-l-2 border-[var(--accent)] bg-[var(--surface)] font-medium text-[var(--accent)] shadow-none"
-                : "border-l-2 border-transparent text-[var(--gray)] hover:bg-[var(--surface)] hover:text-[var(--ink)]"
+                ? "bg-[var(--surface)] font-medium text-[var(--accent)] border border-[var(--line)] shadow-none"
+                : "text-[var(--gray)] hover:bg-[var(--surface)] hover:text-[var(--ink)]"
             }`}
           >
             <span className="flex h-4 w-4 shrink-0 items-center justify-center select-none text-current">
@@ -739,9 +741,9 @@ export default function App() {
             <span className="hidden truncate font-sans text-xs font-medium xl:inline">
               {tr.settings}
             </span>
-            <span className="ml-auto hidden font-mono text-[var(--text-meta)] text-[var(--gray)] xl:inline">
+            <kbd className="ml-auto hidden font-mono text-[var(--text-meta)] text-[var(--gray)] px-1.5 py-0.5 rounded border border-[var(--line)] bg-[var(--paper)] xl:inline select-none">
               Alt 0
-            </span>
+            </kbd>
           </button>
         </div>
 
@@ -834,7 +836,36 @@ export default function App() {
 
         {/* Content Viewport */}
         <div key={tab} className="tab-enter min-w-0 flex-1 overflow-y-auto p-4 sm:p-6 xl:p-8">
-          {tab === "home" && <Home lang={lang} cards={vault?.cards ?? null} onJumpToLibrary={jumpToLibrary} />}
+          {tab === "home" && (
+            useCockpitHome ? (
+              <DashboardCockpit
+                lang={lang}
+                onNavigateToTab={(targetTab, context) => {
+                  if (context?.fach) {
+                    setSelectedFach(context.fach);
+                  }
+                  if (targetTab === "library" && context?.query) {
+                    setQuery(context.query);
+                  }
+                  switchTab(targetTab as Tab);
+                }}
+                onSwitchToLegacy={() => setUseCockpitHome(false)}
+              />
+            ) : (
+              <div className="space-y-4">
+                <div className="flex justify-end">
+                  <button
+                    type="button"
+                    onClick={() => setUseCockpitHome(true)}
+                    className="font-mono text-xs text-[var(--accent)] hover:underline border border-[var(--line)] px-2.5 py-1 rounded bg-[var(--surface)] cursor-pointer"
+                  >
+                    {lang === "de" ? "-> Zum neuen Cockpit V3 (Diagnose & Stufen)" : "-> 切换到全新战力总台 V3 (诊断与段位天梯)"}
+                  </button>
+                </div>
+                <Home lang={lang} cards={vault?.cards ?? null} onJumpToLibrary={jumpToLibrary} />
+              </div>
+            )
+          )}
           {tab === "library" && (
             <Library
               query={query}

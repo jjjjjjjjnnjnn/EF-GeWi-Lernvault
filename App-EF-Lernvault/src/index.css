@@ -80,6 +80,22 @@
   --radius: 4px;
 }
 
+/* Theme 4: Cyber Obsidian (Dark Mode / High-Tech Focus) */
+[data-theme="cyber"] {
+  color-scheme: dark;
+  --paper: #090A0F;
+  --paper-subtle: #12151F;
+  --surface: #181C28;
+  --ink: #F1F5F9;
+  --gray: #94A3B8;
+  --line: #262D3D;
+  --accent: #38BDF8;
+  --focus: #38BDF8;
+  --success: #10B981;
+  --warning: #F43F5E;
+  --radius: 4px;
+}
+
 * {
   box-sizing: border-box;
 }

@@ -1,4 +1,4 @@
-export type ThemeId = "academic" | "classic" | "oxford";
+export type ThemeId = "academic" | "classic" | "oxford" | "cyber";
 export type DensityId = "compact" | "balanced";
 
 export interface ThemeConfig {
@@ -24,6 +24,13 @@ export const THEMES: readonly ThemeConfig[] = [
     nameZH: "极简学术",
     descDE: "Klar, hochpräzise, Graustufen-Fokus",
     descZH: "高精黑白灰，冷静理性专注提分",
+  },
+  {
+    id: "cyber",
+    nameDE: "Cyber Obsidian",
+    nameZH: "暗黑精锐",
+    descDE: "Dunkler High-Tech-Fokus, Neon-Akzente",
+    descZH: "深炭灰磨砂底，电竞作战室高能沉浸",
   },
   {
     id: "classic",
@@ -65,7 +72,7 @@ export function getStoredTheme(): ThemeId {
   if (typeof window === "undefined") return "academic";
   try {
     const val = localStorage.getItem(THEME_KEY);
-    if (val === "academic" || val === "classic" || val === "oxford") return val;
+    if (val === "academic" || val === "classic" || val === "oxford" || val === "cyber") return val;
   } catch {
     // ignore
   }
