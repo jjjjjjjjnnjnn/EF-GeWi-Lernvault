@@ -469,60 +469,69 @@ export function DashboardCockpit({
             </div>
           </div>
 
-          {/* 3. 内嵌式轻量时间线 Stepper (去套娃矩形框，纯净点线连接) */}
+          {/* 3. 规范化考纲阶段推进 Stepper (带贯穿连接轨道线) */}
           <div className="pt-4 border-t border-slate-100 space-y-2.5">
             <div className="flex items-center justify-between text-xs">
               <span className="font-mono text-[10px] uppercase tracking-wider text-slate-500 font-bold">
-                {de ? "Abitur-Stufenleiter" : "考纲三阶晋升路线"}
+                {de ? "Abitur-Stufenleiter" : "考纲阶段推进路线"}
               </span>
               <span className="font-mono text-[11px] text-slate-700 font-bold">
                 {currentStufe.id.toUpperCase()} · &ge; {currentStufe.minNP} NP
               </span>
             </div>
 
-            {/* 纯净时间线节点展示 */}
-            <div className="flex items-center justify-between gap-1 py-1">
-              {DEMO_STUFEN.map((s, index) => {
-                const isDone = s.status === "completed";
-                const isCurr = s.status === "current";
-                const isSelected = s.id === selectedStufeId;
+            {/* 带连接轨道的步骤条 */}
+            <div className="relative flex items-center justify-between py-2 px-1">
+              {/* 背景贯穿线 */}
+              <div className="absolute left-6 right-6 top-1/2 -translate-y-1/2 h-[2px] bg-slate-200 z-0" />
 
-                return (
-                  <div key={s.id} className="flex items-center flex-1 last:flex-none">
-                    <button
-                      type="button"
-                      onClick={() => setSelectedStufeId(s.id)}
-                      className={`flex items-center gap-1.5 py-1 px-1.5 rounded-lg transition-all cursor-pointer ${
-                        isSelected
-                          ? "bg-slate-100/90 text-slate-900 font-bold"
-                          : "hover:bg-slate-50 text-slate-700"
-                      }`}
-                    >
-                      <div className="w-4 h-4 rounded-full flex items-center justify-center shrink-0 border border-slate-300 bg-white">
-                        {isDone ? (
-                          <svg width="9" height="9" viewBox="0 0 12 12" fill="none">
-                            <path d="M2.5 6L5 8.5L9.5 3.5" stroke="#16A34A" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" />
-                          </svg>
-                        ) : isCurr ? (
-                          <span className="w-2 h-2 rounded-full bg-slate-900" />
-                        ) : (
-                          <span className="w-1.5 h-1.5 rounded-full bg-slate-300" />
-                        )}
-                      </div>
-                      <span className={`text-xs ${isCurr ? "font-bold text-slate-900" : "font-medium"}`}>
-                        {de ? s.stufeDE : s.stufeZH}
-                      </span>
-                      <span className="font-mono text-[10px] text-slate-400">
-                        (&ge;{s.minNP})
-                      </span>
-                    </button>
+              {/* 节点 1: 已完成 */}
+              <button
+                type="button"
+                onClick={() => setSelectedStufeId("ef_basis")}
+                className={`relative z-10 flex items-center gap-1.5 bg-white px-2 py-1 text-xs transition-all cursor-pointer rounded-lg border border-transparent ${
+                  selectedStufeId === "ef_basis" ? "border-slate-300 font-bold text-slate-900 bg-slate-50" : "text-slate-600 font-medium hover:bg-slate-50"
+                }`}
+              >
+                <span className="w-4 h-4 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center shrink-0">
+                  <svg width="9" height="9" viewBox="0 0 12 12" fill="none">
+                    <path d="M2.5 6L5 8.5L9.5 3.5" stroke="#16A34A" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" />
+                  </svg>
+                </span>
+                <span>{de ? "Stufe I (EF)" : "第一阶 · 高一导入"}</span>
+              </button>
 
-                    {index < DEMO_STUFEN.length - 1 && (
-                      <div className="h-px bg-slate-200 flex-1 mx-2 min-w-3" />
-                    )}
-                  </div>
-                );
-              })}
+              {/* 节点 2: 当前进行中 (高亮动效) */}
+              <button
+                type="button"
+                onClick={() => setSelectedStufeId("q1_vertiefung")}
+                className={`relative z-10 flex items-center gap-2 bg-white px-2.5 py-1 text-xs cursor-pointer rounded-lg border ${
+                  selectedStufeId === "q1_vertiefung" ? "border-amber-300 bg-amber-50/50" : "border-transparent hover:bg-slate-50"
+                }`}
+              >
+                <span className="relative flex h-3 w-3 shrink-0">
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-amber-400 opacity-75" />
+                  <span className="relative inline-flex rounded-full h-3 w-3 bg-amber-500" />
+                </span>
+                <span className="font-bold text-slate-900">
+                  {de ? "Stufe II · Q1" : "第二阶 · 会考进阶"}
+                  <span className="text-[10px] text-amber-700 font-semibold ml-1">
+                    {de ? "(Aktiv)" : "(当前)"}
+                  </span>
+                </span>
+              </button>
+
+              {/* 节点 3: 未完成 */}
+              <button
+                type="button"
+                onClick={() => setSelectedStufeId("q2_abitur")}
+                className={`relative z-10 flex items-center gap-1.5 bg-white px-2 py-1 text-xs transition-all cursor-pointer rounded-lg border border-transparent ${
+                  selectedStufeId === "q2_abitur" ? "border-slate-300 font-bold text-slate-900 bg-slate-50" : "text-slate-400 font-medium hover:bg-slate-50"
+                }`}
+              >
+                <span className="w-3.5 h-3.5 rounded-full border border-slate-300 bg-slate-50 shrink-0" />
+                <span>{de ? "Stufe III · Abitur" : "第三阶 · 终局满分"}</span>
+              </button>
             </div>
 
             {/* 当前选中阶的特权清单 */}
@@ -542,30 +551,35 @@ export function DashboardCockpit({
           </div>
         </div>
 
-        {/* 右侧：今日行动卡 (4 Col, Surface 1 白卡，饱满对称沉稳) */}
-        <div className="lg:col-span-4 card-elevation p-6 flex flex-col justify-between relative overflow-hidden space-y-4">
-          {/* 极浅的环境装饰光 (Diffuse Accent) */}
-          <div className="absolute -top-12 -right-12 w-36 h-36 bg-amber-500/10 rounded-full blur-2xl pointer-events-none" />
+        {/* 右侧：今日行动卡 (4 Col, Surface 1 白卡，多邻国破框打卡) */}
+        <div className="lg:col-span-4 card-elevation p-6 flex flex-col justify-between relative overflow-visible space-y-4">
+          {/* 破框而出的狐狸（手捧火焰，趴在卡片右上角） */}
+          <div className="absolute -top-9 -right-2 w-24 h-24 pointer-events-none z-10 select-none">
+            <MascotFox state="streak" size={82} animate={true} />
+          </div>
 
-          <div>
-            <div className="flex items-center justify-between">
-              <span className="text-[11px] font-bold uppercase tracking-wider text-amber-800 bg-amber-50 px-2 py-0.5 rounded-md border border-amber-300 font-mono">
-                Daily Focus
+          <div className="pr-16 sm:pr-20">
+            <div className="flex items-center gap-2">
+              <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-xs font-bold bg-[#D96E3A]/10 text-[#D96E3A] border border-[#D96E3A]/30">
+                <svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor">
+                  <path d="M8 1c.5 1.5 2 3.5 2 5.5 0 2-1 3.5-2 3.5s-2-1.5-2-3.5C6 4.5 7.5 2.5 8 1zm0 7c.8 0 1.5.7 1.5 1.5 0 1-.7 2-1.5 2s-1.5-1-1.5-2c0-.8.7-1.5 1.5-1.5z" />
+                </svg>
+                <span>18 {de ? "Tage Serie" : "天连胜"}</span>
               </span>
-              <span className="text-xs text-slate-600 font-mono font-bold">15 Min</span>
+              <span className="text-xs text-slate-500 font-mono font-bold">15 Min</span>
             </div>
-            <h3 className="text-lg font-bold text-slate-900 mt-2.5 font-serif">
+            <h3 className="text-lg font-bold text-[#2D4F5C] mt-2 font-serif">
               {de ? "Klausur-Fokussprint" : "今日考点靶向冲刺"}
             </h3>
-            <p className="text-xs text-slate-700 mt-1 leading-relaxed">
+            <p className="text-xs text-slate-600 mt-1 leading-relaxed">
               {de
                 ? "3 gezielte Schwachstellenrezepte · Voraussichtlich +230 XP"
                 : "包含 3 项核心弱项处方，执行完毕预估获得"}{" "}
-              <strong className="text-slate-900 font-bold">+230 XP</strong>
+              <strong className="text-amber-800 font-bold">+230 XP</strong>
             </p>
           </div>
 
-          {/* 中部收益摘要微卡，消除大片真空 */}
+          {/* 中部收益摘要微卡 */}
           <div className="p-3 rounded-xl bg-slate-50/80 border border-slate-200/80 space-y-1 text-xs">
             <div className="flex items-center justify-between text-slate-700 font-medium">
               <span>{de ? "Fokus-Paket:" : "今日攻坚包:"}</span>
@@ -582,7 +596,7 @@ export function DashboardCockpit({
             <button
               type="button"
               onClick={() => onNavigateToTab?.("flashcards")}
-              className="w-full py-2.5 px-4 bg-slate-900 hover:bg-slate-800 active:scale-[0.99] text-white font-semibold text-xs rounded-xl transition-all shadow-none flex items-center justify-center gap-2 cursor-pointer select-none"
+              className="w-full py-2.5 px-4 bg-[#D96E3A] hover:bg-[#c25e2d] active:scale-[0.99] text-white font-bold text-xs rounded-xl transition-all shadow-none flex items-center justify-center gap-2 cursor-pointer select-none"
             >
               <span>{de ? "Jetzt starten" : "立即开始执行"}</span>
               <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
@@ -643,15 +657,13 @@ export function DashboardCockpit({
                   return (
                     <div
                       key={m.id}
-                      className={`py-3 px-2 rounded-xl flex items-center justify-between group gap-3 hover:bg-slate-50/80 transition-colors ${
-                        done ? "opacity-60" : ""
-                      }`}
+                      className="py-3 px-2 flex items-center justify-between hover:bg-slate-50/80 rounded-lg transition-colors group gap-3"
                     >
-                      <div className="flex items-start gap-3">
+                      <div className="flex items-center gap-3 min-w-0">
                         <button
                           type="button"
                           onClick={() => toggleMission(m.id, m.xpReward)}
-                          className="mt-0.5 w-4 h-4 rounded border border-slate-300 bg-white flex items-center justify-center text-xs font-mono cursor-pointer hover:border-slate-500 transition-all shrink-0"
+                          className="w-4 h-4 rounded border border-slate-300 bg-white flex items-center justify-center text-xs font-mono cursor-pointer hover:border-slate-500 transition-all shrink-0"
                           title={de ? "Als erledigt markieren" : "勾选标记完成"}
                         >
                           {done && (
@@ -660,22 +672,19 @@ export function DashboardCockpit({
                             </svg>
                           )}
                         </button>
-                        <div className="space-y-1">
-                          <div className="flex items-center gap-2 flex-wrap">
-                            <span className="px-2 py-0.5 rounded text-[10px] font-bold bg-blue-50 text-blue-800 border border-blue-200 font-mono">
-                              {m.fach.toUpperCase()}
-                            </span>
-                            <span className="px-1.5 py-0.5 rounded text-[10px] font-bold bg-slate-100 text-slate-700 border border-slate-200 font-mono">
-                              {m.tag}
-                            </span>
-                            <span className="text-sm font-semibold text-slate-900 group-hover:text-blue-700 transition-colors">
-                              {de ? m.titleDE : m.titleZH}
-                            </span>
+                        <span className="px-2 py-0.5 rounded text-[11px] font-bold bg-blue-50 text-blue-700 border border-blue-200/50 shrink-0 font-mono">
+                          {m.fach.toUpperCase()}
+                        </span>
+                        <div className="min-w-0">
+                          <div className={`text-xs font-semibold text-slate-800 group-hover:text-blue-700 transition-colors truncate ${done ? "line-through opacity-60" : ""}`}>
+                            {de ? m.titleDE : m.titleZH}
                           </div>
-                          <div className="text-xs text-slate-500 font-mono flex items-center gap-2">
-                            <span className="font-medium">{de ? m.difficultyDE : m.difficultyZH}</span>
+                          <div className="text-[11px] text-slate-500 mt-0.5 font-mono flex items-center gap-1.5 flex-wrap">
+                            <span>{de ? m.difficultyDE : m.difficultyZH}</span>
                             <span>&bull;</span>
-                            <span className="text-amber-800 font-bold">+{m.xpReward} XP</span>
+                            <span>{m.tag}</span>
+                            <span>&bull;</span>
+                            <span className="text-amber-700 font-bold">+{m.xpReward} XP</span>
                           </div>
                         </div>
                       </div>
@@ -683,13 +692,11 @@ export function DashboardCockpit({
                       <button
                         type="button"
                         onClick={() => onNavigateToTab?.(m.targetTab, m.targetContext)}
-                        className="shrink-0 text-xs font-bold text-slate-800 hover:text-slate-950 px-3 py-1.5 rounded-lg border border-slate-300 hover:border-slate-400 bg-white transition-all cursor-pointer flex items-center gap-1.5 shadow-none"
+                        className="shrink-0 text-xs font-medium text-slate-700 group-hover:text-slate-900 px-3 py-1.5 rounded-lg border border-slate-200 bg-white hover:border-slate-300 transition-all cursor-pointer flex items-center gap-1"
                         aria-label={de ? "Start ->" : "去执行 ->"}
                       >
                         <span>{de ? "Start" : "去执行"}</span>
-                        <svg width="10" height="10" viewBox="0 0 12 12" fill="none">
-                          <path d="M4.5 2.5L8 6L4.5 9.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                        </svg>
+                        <span>&rarr;</span>
                       </button>
                     </div>
                   );
@@ -703,7 +710,7 @@ export function DashboardCockpit({
         <section className="lg:col-span-5 space-y-5">
           <div className="card-elevation p-6 space-y-4">
             <div className="flex items-center justify-between pb-3 border-b border-slate-100">
-              <h3 className="font-bold text-sm text-slate-900 font-serif">
+              <h3 className="font-bold text-sm text-[#2D4F5C] font-serif">
                 {de ? "Klausur-Kompetenznetz" : "核心失分点几何雷达图"}
               </h3>
 
@@ -739,8 +746,19 @@ export function DashboardCockpit({
               </div>
             </div>
 
-            {/* SVG 雷达画布 */}
-            <div className="flex flex-col items-center justify-center p-3 rounded-xl border border-slate-100 bg-slate-50/50 transition-all">
+            {/* SVG 雷达画布 + 侦探狐狸剧情化互动 */}
+            <div className="relative flex flex-col items-center justify-center p-3 rounded-xl border border-slate-100 bg-slate-50/50 transition-all overflow-visible">
+              {/* 左下角侦探狐狸 (手持放大镜) */}
+              <div className="absolute -bottom-2 -left-1 w-14 h-14 pointer-events-none z-10 select-none">
+                <MascotFox state="deficit" size={50} animate={true} />
+              </div>
+
+              {/* 多邻国式对话气泡 */}
+              <div className="absolute -bottom-2.5 left-12 bg-[#2D4F5C] text-white text-[10px] py-1 px-2.5 rounded-lg shadow-none max-w-[155px] leading-tight select-none z-20">
+                <span>{de ? "Achtung! D2 ist die größte Lücke!" : "注意！D2 论证穿透度是最大失分点！"}</span>
+                <div className="absolute top-2 -left-1 w-0 h-0 border-y-4 border-y-transparent border-r-4 border-r-[#2D4F5C]" />
+              </div>
+
               <svg
                 width="170"
                 height="170"

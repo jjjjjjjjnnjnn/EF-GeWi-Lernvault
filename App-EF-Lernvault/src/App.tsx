@@ -612,7 +612,7 @@ export default function App() {
               <span className="hidden truncate font-sans text-xs font-medium xl:inline">
                 {tr.home}
               </span>
-              <kbd className="ml-auto hidden font-mono text-[10px] text-slate-400 bg-slate-100 px-1.5 py-0.5 rounded border border-slate-200/60 opacity-60 xl:inline select-none">
+              <kbd className="ml-auto hidden font-mono text-[10px] font-semibold text-slate-600 bg-slate-100/90 px-1.5 py-0.5 rounded border border-slate-200/90 xl:inline select-none">
                 Alt 1
               </kbd>
             </button>
@@ -645,7 +645,7 @@ export default function App() {
                   <span className="hidden truncate font-sans text-xs font-medium xl:inline">
                     {sub.label}
                   </span>
-                  <kbd className="ml-auto hidden font-mono text-[10px] text-slate-400 bg-slate-100 px-1.5 py-0.5 rounded border border-slate-200/60 opacity-60 xl:inline select-none">
+                  <kbd className="ml-auto hidden font-mono text-[10px] font-semibold text-slate-600 bg-slate-100/90 px-1.5 py-0.5 rounded border border-slate-200/90 xl:inline select-none">
                     {sub.shortcut}
                   </kbd>
                 </button>
@@ -680,7 +680,7 @@ export default function App() {
                   <span className="hidden truncate font-sans text-xs font-medium xl:inline">
                     {sub.label}
                   </span>
-                  <kbd className="ml-auto hidden font-mono text-[10px] text-slate-400 bg-slate-100 px-1.5 py-0.5 rounded border border-slate-200/60 opacity-60 xl:inline select-none">
+                  <kbd className="ml-auto hidden font-mono text-[10px] font-semibold text-slate-600 bg-slate-100/90 px-1.5 py-0.5 rounded border border-slate-200/90 xl:inline select-none">
                     {sub.shortcut}
                   </kbd>
                 </button>
@@ -715,7 +715,7 @@ export default function App() {
                   <span className="hidden truncate font-sans text-xs font-medium xl:inline">
                     {sub.label}
                   </span>
-                  <kbd className="ml-auto hidden font-mono text-[10px] text-slate-400 bg-slate-100 px-1.5 py-0.5 rounded border border-slate-200/60 opacity-60 xl:inline select-none">
+                  <kbd className="ml-auto hidden font-mono text-[10px] font-semibold text-slate-600 bg-slate-100/90 px-1.5 py-0.5 rounded border border-slate-200/90 xl:inline select-none">
                     {sub.shortcut}
                   </kbd>
                 </button>
@@ -742,7 +742,7 @@ export default function App() {
             <span className="hidden truncate font-sans text-xs font-medium xl:inline">
               {tr.settings}
             </span>
-            <kbd className="ml-auto hidden font-mono text-[10px] text-slate-400 bg-slate-100 px-1.5 py-0.5 rounded border border-slate-200/60 opacity-60 xl:inline select-none">
+            <kbd className="ml-auto hidden font-mono text-[10px] font-semibold text-slate-600 bg-slate-100/90 px-1.5 py-0.5 rounded border border-slate-200/90 xl:inline select-none">
               Alt 0
             </kbd>
           </button>
