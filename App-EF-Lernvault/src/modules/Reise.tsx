@@ -51,6 +51,7 @@ import { GeWiReadingLab } from "../components/pedagogy/GeWiReadingLab";
 import { BentoMastery } from "../components/pedagogy/BentoMastery";
 import { SowiDepotLecture } from "../components/pedagogy/SowiDepotLecture";
 import { OrderbuchSimulator } from "../components/pedagogy/OrderbuchSimulator";
+import { CrossDisciplinarySandbox } from "../components/pedagogy/CrossDisciplinarySandbox";
 
 function DepotStepWidget({ lang }: { lang: Lang }) {
   const [showFullLecture, setShowFullLecture] = useState(false);
@@ -209,6 +210,38 @@ function getAutoToolForContext(fach: string, thema: string): string | null {
 function renderEmbeddedTool(toolName: string, lang: Lang, fach: string, thema?: string) {
   const t = toolName.toLowerCase().trim();
   const f = (fach || "").toLowerCase();
+
+  // 0. CROSS-DISCIPLINARY SANDBOX / VERNETZUNG TOOL
+  if (
+    t === "cross-disciplinary-sandbox" ||
+    t === "vernetzung" ||
+    t === "vernetzungs-sandbox" ||
+    t === "sandbox" ||
+    t === "cluster" ||
+    t === "cross-subject"
+  ) {
+    let initialClusterId = "cluster_rate_of_change";
+    const th = (thema || "").toLowerCase();
+    if (th.includes("entfremd") || th.includes("arbeit") || th.includes("kapital") || th.includes("marx") || th.includes("faust")) {
+      initialClusterId = "cluster_alienation_labor";
+    } else if (th.includes("gerechtig") || th.includes("verteil") || th.includes("rawls") || th.includes("sozialstaat") || th.includes("gini")) {
+      initialClusterId = "cluster_justice_welfare";
+    } else if (th.includes("rhetorik") || th.includes("argument") || th.includes("mediation") || th.includes("sprache") || th.includes("diskurs")) {
+      initialClusterId = "cluster_argumentation_rhetoric";
+    } else if (th.includes("änderung") || th.includes("ableitung") || th.includes("kinetik") || th.includes("kinematik") || th.includes("rate")) {
+      initialClusterId = "cluster_rate_of_change";
+    }
+
+    return (
+      <div className="my-3 p-3.5 border border-[var(--line)] bg-[var(--surface)] rounded-[var(--radius)]">
+        <div className="flex items-center justify-between text-xs font-mono text-[var(--accent)] mb-2 font-medium">
+          <span>{lang === "de" ? "Interaktives Werkzeug: Fächerübergreifender Prüfungssandkasten" : "交互教具：跨学科核心考点沙盘（AFB III 会考拓扑）"}</span>
+          <span className="text-[var(--text-meta)] text-[var(--gray)]">{fach}</span>
+        </div>
+        <CrossDisciplinarySandbox lang={lang} initialClusterId={initialClusterId} />
+      </div>
+    );
+  }
 
   // 1. BIOLOGIE GUARDS & TOOLS
   if (f.includes("bio")) {
