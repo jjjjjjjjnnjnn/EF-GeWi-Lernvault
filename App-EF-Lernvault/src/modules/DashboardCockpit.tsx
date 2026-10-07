@@ -410,56 +410,90 @@ export function DashboardCockpit({
         </div>
       </header>
 
-      {/* 2. 核心战力看板 (Hero Section: 紧凑左右结构 + 饱满轨道) */}
-      <section className="bg-white rounded-xl border border-slate-200/80 p-5 md:p-6 space-y-5 transition-all">
-        <div className="flex flex-col md:flex-row md:items-center justify-between gap-5">
-          {/* 左侧：等级大号排版 + 微圆角 Badge + XP 进度 */}
-          <div className="space-y-1.5">
-            <div className="flex items-center gap-3 flex-wrap">
-              <span className="font-serif text-3xl md:text-4xl font-bold tracking-tight text-slate-900">
+      {/* 2. 核心战力驾驶舱 (8:4 黄金分栏结构) */}
+      <section className="grid grid-cols-1 lg:grid-cols-12 gap-5 items-stretch">
+        {/* 左侧：战力指标看板 (8 Col) */}
+        <div className="lg:col-span-8 card-elevation p-6 flex flex-col justify-between space-y-6">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+            <div className="flex items-baseline gap-3 flex-wrap">
+              <span className="font-serif text-4xl font-extrabold tracking-tight text-slate-900">
                 11 Notenpunkte
               </span>
-              <span className="font-mono text-xs px-2.5 py-0.5 rounded-md border border-blue-200 bg-blue-50 text-blue-700 font-semibold">
-                {de ? "Stufe II · Q1-Niveau" : "第二阶 · Q1 进阶期"}
-              </span>
-              <span className="font-mono text-xs px-2 py-0.5 rounded-md border border-slate-200 bg-slate-50 text-slate-600 font-medium">
-                {de ? "Note 2 (Gut)" : "2分档 · 良好 (Gut)"}
+              <span className="px-2.5 py-0.5 rounded-full text-xs font-medium bg-amber-50 text-amber-800 border border-amber-200/70">
+                {de ? "Stufe II · Q1-Niveau" : "第二阶 · Q1 进阶期"} &bull; {de ? "Gut (2-)" : "良好 (Gut)"}
               </span>
             </div>
-            <div className="flex items-center gap-2 font-mono text-xs text-slate-500 tabular-nums">
-              <span className="text-slate-800 font-semibold">{currentXP} / {targetXP} XP</span>
-              <span className="text-slate-300">&bull;</span>
-              <span>{de ? `noch ${targetXP - currentXP} XP bis Sprung auf 13 NP (Note 1- Sehr gut)` : `还差 ${targetXP - currentXP} XP 跃升 13 NP (1分档·优秀)`}</span>
+            <div className="font-mono text-xs text-slate-500 tabular-nums">
+              {currentXP} / {targetXP} XP
             </div>
           </div>
 
-          {/* 右侧：激励互动与主行动 CTA */}
-          <div className="flex flex-col sm:flex-row items-center gap-3">
-            {/* 伴学助手微互动 */}
+          {/* 精致刻度进度槽：双层轨道 + 渐变琥珀橙填充 + 无下垂蓝点 */}
+          <div className="space-y-2">
+            <div className="relative w-full h-2.5 bg-slate-100 rounded-full overflow-hidden">
+              <div
+                className="h-full bg-gradient-to-r from-amber-500 to-orange-500 rounded-full transition-all duration-700 ease-out"
+                style={{ width: mounted ? `${(currentXP / targetXP) * 100}%` : "0%" }}
+              />
+            </div>
+            <div className="flex justify-between text-[11px] font-medium text-slate-400 px-0.5">
+              <span>10 NP (及格)</span>
+              <span className="text-slate-900 font-bold">11 NP (当前)</span>
+              <span className="text-slate-600 font-semibold">13 NP (目标: Sehr Gut)</span>
+              <span>15 NP (满分)</span>
+            </div>
+          </div>
+
+          {/* 伴学助手微状态 */}
+          <div className="pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
             <button
               type="button"
               onClick={() => {
                 setMascotMood((m) => (m === "focus" ? "cheer" : m === "cheer" ? "proud" : "focus"));
               }}
-              className="w-full sm:w-auto px-3 py-2 rounded-xl border border-slate-200 bg-slate-50/70 hover:bg-slate-100 text-left transition-all cursor-pointer flex items-center gap-2.5 select-none"
+              className="flex items-center gap-2 text-slate-600 hover:text-slate-900 transition-colors cursor-pointer select-none"
               title={de ? "Klick mich für Feedback" : "点击伴学伙伴互动"}
             >
-              <div className="w-7 h-7 rounded-full border border-slate-200 bg-white flex items-center justify-center shrink-0 overflow-hidden">
+              <div className="w-5 h-5 rounded-full border border-slate-200 bg-slate-50 flex items-center justify-center shrink-0 overflow-hidden">
                 <MascotFox
                   state={mascotMood === "focus" ? "avatar" : mascotMood === "cheer" ? "levelup" : "streak"}
-                  size={24}
+                  size={18}
                 />
               </div>
-              <div className="text-xs font-sans text-slate-700">
+              <span className="font-sans text-xs">
                 {mascotMood === "focus"
-                  ? (de ? "Fokus bereit" : "保持专注")
+                  ? (de ? "Fokus bereit: Bereit für die nächste Lerneinheit" : "伴学状态: 保持专注 · 冲刺下一学习单元")
                   : mascotMood === "cheer"
-                  ? (de ? "Du schaffst das!" : "今日冲刺！")
-                  : (de ? "18 Tage stark!" : "连胜势头超强！")}
-              </div>
+                  ? (de ? "Du schaffst das! Klausur-Boost aktiv" : "伴学状态: 备考势头极佳 · 今日冲刺！")
+                  : (de ? "18 Tage stark! Spitzenleistung" : "伴学状态: 18天连续打卡 · 战力持续稳步攀升！")}
+              </span>
             </button>
+            <span className="font-mono text-xs text-slate-400">
+              {de ? `noch ${targetXP - currentXP} XP` : `还差 ${targetXP - currentXP} XP 跃升`}
+            </span>
+          </div>
+        </div>
 
-            {/* 每日首战增益 */}
+        {/* 右侧：今日冲刺行动卡 (4 Col, 深色高质感焦糖/曜石黑 + 主动聚焦) */}
+        <div className="lg:col-span-4 bg-gradient-to-br from-slate-950 via-slate-900 to-slate-800 text-white rounded-xl p-6 border border-slate-800 flex flex-col justify-between space-y-4">
+          <div className="space-y-1.5">
+            <div className="flex items-center justify-between">
+              <span className="text-[11px] font-mono font-semibold uppercase tracking-wider text-amber-400">
+                DAILY SPRINT
+              </span>
+              <MascotFox state="streak" size={20} animate={false} />
+            </div>
+            <h3 className="text-lg font-bold tracking-tight text-white font-serif">
+              {de ? "Klausur-Fokussprint" : "今日考点靶向冲刺"}
+            </h3>
+            <p className="text-xs text-slate-300 leading-relaxed font-sans">
+              {de
+                ? "3 gezielte Schwachstellenrezepte · Voraussichtlich +220 XP"
+                : "包含 3 项弱项处方 · 预估获得 +220 XP"}
+            </p>
+          </div>
+
+          <div className="space-y-2 pt-2">
             {!chestClaimed ? (
               <button
                 type="button"
@@ -467,25 +501,23 @@ export function DashboardCockpit({
                   setChestClaimed(true);
                   setCurrentXP((x) => Math.min(targetXP, x + 50));
                 }}
-                className="w-full sm:w-auto px-3 py-2 rounded-xl border border-blue-200 bg-blue-50 hover:bg-blue-100 text-xs font-mono text-blue-700 font-semibold flex items-center justify-center gap-1.5 cursor-pointer transition-all select-none"
-                title={de ? "Tages-Booster: +50 XP freischalten" : "领取今日探索增益: +50 XP"}
+                className="w-full py-1.5 px-3 rounded-lg border border-amber-400/40 bg-amber-400/10 hover:bg-amber-400/20 text-xs font-mono text-amber-300 font-semibold flex items-center justify-center gap-1.5 cursor-pointer transition-all select-none"
               >
                 <span>+</span>
-                <span>{de ? "Tages-Bonus (+50 XP)" : "首战增益 (+50 XP)"}</span>
+                <span>{de ? "Tages-Bonus (+50 XP freischalten)" : "领取今日首战增益 (+50 XP)"}</span>
               </button>
             ) : (
-              <span className="w-full sm:w-auto px-3 py-2 rounded-xl border border-slate-200 bg-slate-50 text-xs font-mono text-slate-400 select-none text-center">
-                {de ? "Bonus aktiv" : "增益已生效"}
-              </span>
+              <div className="w-full py-1 text-center font-mono text-[11px] text-emerald-400 select-none">
+                {de ? "Bonus bereits aktiviert" : "首战增益已生效 (+50 XP)"}
+              </div>
             )}
 
-            {/* 主行动号召 (CTA 按钮: 深色饱满圆角 + 精细 SVG 箭头) */}
             <button
               type="button"
               onClick={() => onNavigateToTab?.("flashcards")}
-              className="w-full sm:w-auto flex items-center justify-center gap-2.5 px-6 py-2.5 rounded-xl border border-slate-900 bg-slate-900 text-white font-sans text-xs font-medium hover:bg-slate-800 transition-all cursor-pointer select-none group"
+              className="w-full py-2.5 px-4 bg-amber-500 hover:bg-amber-400 text-slate-950 font-sans font-semibold text-xs rounded-lg transition-all flex items-center justify-center gap-2 cursor-pointer select-none group"
             >
-              <span>{de ? "Heute lernen (15 Min. starten)" : "开始今日冲刺 (15分钟)"}</span>
+              <span>{de ? "Jetzt starten (15 Min.)" : "立即开始执行 (15分钟)"}</span>
               <svg
                 width="14"
                 height="14"
@@ -497,40 +529,12 @@ export function DashboardCockpit({
                 <path
                   d="M6 3.5L10.5 8L6 12.5"
                   stroke="currentColor"
-                  strokeWidth="1.8"
+                  strokeWidth="2"
                   strokeLinecap="round"
                   strokeLinejoin="round"
                 />
               </svg>
             </button>
-          </div>
-        </div>
-
-        {/* 经验进度槽 (h-3 高度 + 刻度节点点位) */}
-        <div className="pt-3 border-t border-slate-100 space-y-2">
-          {/* 刻度文字与节点 */}
-          <div className="relative flex justify-between font-mono text-[10px] text-slate-500 tabular-nums px-1">
-            <span className="text-slate-400">05 NP</span>
-            <span className="text-slate-600 font-medium">10 NP (Defizit)</span>
-            <span className="text-blue-600 font-bold">11 NP (Aktuell)</span>
-            <span className="text-slate-600 font-medium">13 NP (Sehr Gut)</span>
-            <span className="text-slate-400">15 NP</span>
-          </div>
-
-          <div className="relative w-full h-3 rounded-full bg-slate-100 overflow-hidden">
-            <div
-              className="h-full bg-slate-800 rounded-full transition-all duration-700 ease-out"
-              style={{ width: mounted ? `${(currentXP / targetXP) * 100}%` : "0%" }}
-            />
-          </div>
-
-          {/* 刻度点指示 */}
-          <div className="relative w-full flex justify-between px-1 -mt-1 pointer-events-none">
-            <span className="w-1.5 h-1.5 rounded-full bg-slate-300" />
-            <span className="w-1.5 h-1.5 rounded-full bg-slate-400" />
-            <span className="w-2 h-2 rounded-full bg-blue-600 ring-2 ring-blue-100 -mt-0.5" />
-            <span className="w-1.5 h-1.5 rounded-full bg-slate-400" />
-            <span className="w-1.5 h-1.5 rounded-full bg-slate-300" />
           </div>
         </div>
       </section>
