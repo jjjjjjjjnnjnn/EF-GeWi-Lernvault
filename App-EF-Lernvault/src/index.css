@@ -270,8 +270,143 @@ h3.de-heading {
   }
 }
 
+@keyframes rise-stagger-1 {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes rise-stagger-2 {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes rise-stagger-3 {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes shimmer-sweep {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(200%);
+  }
+}
+
+@keyframes pulse-subtle {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.6;
+    transform: scale(0.95);
+  }
+}
+
 .tab-enter {
-  animation: rise 180ms var(--ease-out);
+  animation: rise 220ms var(--ease-out);
+}
+
+.stagger-1 {
+  animation: rise-stagger-1 320ms var(--ease-out) backwards;
+}
+
+.stagger-2 {
+  animation: rise-stagger-2 420ms var(--ease-out) backwards;
+}
+
+.stagger-3 {
+  animation: rise-stagger-3 520ms var(--ease-out) backwards;
+}
+
+.academic-card {
+  background-color: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  transition: transform var(--dur-normal) var(--ease-out),
+              border-color var(--dur-normal) var(--ease-out),
+              background-color var(--dur-normal) var(--ease-out);
+}
+
+.academic-card-interactive {
+  background-color: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  transition: transform 160ms var(--ease-out),
+              border-color 160ms var(--ease-out),
+              background-color 160ms var(--ease-out);
+}
+
+.academic-card-interactive:hover {
+  transform: translateY(-2px);
+  border-color: var(--accent);
+}
+
+.academic-hero-button {
+  position: relative;
+  overflow: hidden;
+  transition: transform 120ms var(--ease-out),
+              background-color 150ms var(--ease-out),
+              border-color 150ms var(--ease-out);
+}
+
+.academic-hero-button:active {
+  transform: scale(0.98);
+}
+
+.academic-shimmer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.12),
+    transparent
+  );
+  transform: translateX(-100%);
+  pointer-events: none;
+}
+
+.academic-hero-button:hover .academic-shimmer {
+  animation: shimmer-sweep 850ms ease-out infinite;
+}
+
+.kbd-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  line-height: 1;
+  padding: 2px 4px;
+  border-radius: 3px;
+  border: 1px solid var(--line);
+  background-color: var(--paper-subtle);
+  color: var(--gray);
+  user-select: none;
 }
 
 .palette-enter {

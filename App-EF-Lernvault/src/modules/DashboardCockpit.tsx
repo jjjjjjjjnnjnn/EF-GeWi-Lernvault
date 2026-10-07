@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import type { Lang } from "../i18n";
 
 export interface DashboardCockpitProps {
@@ -303,6 +303,15 @@ export function DashboardCockpit({
   const [hoveredMetricCode, setHoveredMetricCode] = useState<string | null>(null);
   // 交互状态：是否展开答题细则抽屉 (Accordion)
   const [expandedDetail, setExpandedDetail] = useState<boolean>(false);
+  // 挂载平滑补间动画状态
+  const [mounted, setMounted] = useState<boolean>(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setMounted(true);
+    }, 50);
+    return () => clearTimeout(timer);
+  }, []);
 
   const toggleMission = (id: string, xp: number) => {
     setCompletedMissions((prev) => {
@@ -390,54 +399,67 @@ export function DashboardCockpit({
       </header>
 
       {/* 2. 减负聚合区：极简 HERO 战力卡片 + 主行动号召 (PRIMARY HERO) */}
-      <section className="rounded border border-[var(--line)] bg-[var(--surface)] p-5 transition-colors">
-        <div className="flex flex-col md:flex-row md:items-center justify-between gap-5">
+      <section className="stagger-1 academic-card p-5 transition-all relative overflow-hidden">
+        {/* 背景微环境柔光 (Academic Focus Glow) */}
+        <div className="absolute -top-12 -right-12 w-48 h-48 rounded-full bg-[var(--accent)]/5 pointer-events-none blur-2xl" />
+
+        <div className="flex flex-col md:flex-row md:items-center justify-between gap-5 relative z-10">
           {/* 左侧：战力徽章与经验池 */}
           <div className="flex items-center gap-4">
-            <div className="flex items-center justify-center w-14 h-14 rounded border border-[var(--line)] bg-[var(--paper)] shrink-0 select-none">
+            {/* 精致学术盾牌/质感印章徽标 */}
+            <div className="flex items-center justify-center w-14 h-14 rounded border border-[var(--accent)]/30 bg-[var(--paper-subtle)] shrink-0 select-none transition-transform hover:scale-105 duration-200">
               <div className="text-center">
-                <span className="block font-mono text-[9px] uppercase tracking-wider text-[var(--gray)]">LEVEL</span>
-                <span className="block font-serif text-xl font-bold text-[var(--ink)] leading-none">11</span>
-                <span className="block font-mono text-[8px] text-[var(--accent)] font-semibold">NP</span>
+                <span className="block font-mono text-[9px] uppercase tracking-wider text-[var(--gray)] font-semibold">
+                  LEVEL
+                </span>
+                <span className="block font-serif text-2xl font-bold text-[var(--ink)] leading-none">
+                  11
+                </span>
+                <span className="block font-mono text-[8px] text-[var(--accent)] font-bold tracking-tight">
+                  NP
+                </span>
               </div>
             </div>
 
             <div className="space-y-1">
               <div className="flex items-center gap-2">
-                <span className="font-serif text-xl font-normal text-[var(--ink)]">
+                <span className="font-serif text-xl font-medium text-[var(--ink)]">
                   11 Notenpunkte
                 </span>
-                <span className="font-mono text-[10px] uppercase px-2 py-0.5 rounded bg-[var(--accent)] text-[var(--paper)] font-bold">
+                <span className="font-mono text-[10px] uppercase px-2 py-0.5 rounded bg-[var(--accent)] text-[var(--paper)] font-bold tracking-wide">
                   {de ? "Stufe II · Q1-Niveau" : "第二阶 · Q1 进阶期"}
                 </span>
               </div>
               <div className="flex items-center gap-2 font-mono text-xs text-[var(--gray)]">
-                <span>{currentXP} / {targetXP} XP</span>
+                <span className="text-[var(--ink)] font-semibold">{currentXP} / {targetXP} XP</span>
                 <span>·</span>
                 <span>{de ? `noch ${targetXP - currentXP} XP bis Stufe 12 NP` : `还差 ${targetXP - currentXP} XP 晋升 12 NP`}</span>
               </div>
             </div>
           </div>
 
-          {/* 右侧：唯一的超级主行动 CTA 按钮 */}
+          {/* 右侧：唯一的超级主行动 CTA 按钮 (学术暗黑金属质感 + 微光波扫过) */}
           <div className="flex items-center gap-3">
             <button
               type="button"
               onClick={() => onNavigateToTab?.("flashcards")}
-              className="w-full md:w-auto flex items-center justify-center gap-2 px-6 py-3 rounded border border-[var(--ink)] bg-[var(--ink)] text-[var(--paper)] font-sans text-sm font-medium hover:bg-[var(--accent)] hover:border-[var(--accent)] active:scale-95 transition-all cursor-pointer select-none"
+              className="academic-hero-button w-full md:w-auto flex items-center justify-center gap-2.5 px-6 py-3 rounded border border-[var(--ink)] bg-[var(--ink)] text-[var(--paper)] font-sans text-sm font-medium hover:bg-[var(--accent)] hover:border-[var(--accent)] cursor-pointer select-none group"
             >
+              <div className="academic-shimmer" />
               <span>{de ? "Heute lernen (15 Min. starten)" : "开始今日冲刺 (15分钟)"}</span>
-              <span className="font-mono font-bold">{"->"}</span>
+              <span className="font-mono font-bold transition-transform duration-150 group-hover:translate-x-1">
+                {"->"}
+              </span>
             </button>
           </div>
         </div>
 
-        {/* 经验进度条 */}
+        {/* 经验进度条 (平滑补间动画与微光条) */}
         <div className="mt-4 pt-3 border-t border-[var(--line)]/50">
           <div className="h-1.5 w-full rounded-full bg-[var(--paper-subtle)] overflow-hidden">
             <div
               className="h-full bg-[var(--accent)] rounded-full transition-all duration-700 ease-out"
-              style={{ width: `${(currentXP / targetXP) * 100}%` }}
+              style={{ width: mounted ? `${(currentXP / targetXP) * 100}%` : "0%" }}
             />
           </div>
         </div>
@@ -446,7 +468,7 @@ export function DashboardCockpit({
       {/* 3. 二分屏核心动线：左侧 60% 今日战场 (Actionable) vs 右侧 40% 战力与弱项诊断 (Analytical) */}
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
         {/* ===================== 左侧主体 (7 / 12 约 58%)：今日战场 ===================== */}
-        <section className="lg:col-span-7 space-y-4">
+        <section className="lg:col-span-7 space-y-4 stagger-2">
           {/* 今日任务卡片容器 */}
           <div className="rounded border border-[var(--line)] bg-[var(--surface)] p-5 space-y-4">
             <div className="flex items-center justify-between border-b border-[var(--line)]/60 pb-3">
@@ -458,7 +480,7 @@ export function DashboardCockpit({
                   {de ? "Tages-Rezeptur (15 Minuten)" : "靶向弱项消除处方"}
                 </h2>
               </div>
-              <span className="font-mono text-xs text-[var(--gray)] border border-[var(--line)] px-2 py-0.5 rounded bg-[var(--paper-subtle)]">
+              <span className="font-mono text-xs text-[var(--gray)] border border-[var(--line)] px-2 py-0.5 rounded bg-[var(--paper-subtle)] font-medium">
                 {completedCount} / {DEMO_MISSIONS.length} {de ? "erledigt" : "已完成"}
               </span>
             </div>
@@ -481,10 +503,10 @@ export function DashboardCockpit({
                   return (
                     <div
                       key={m.id}
-                      className={`flex items-start justify-between p-3.5 rounded border transition-all duration-200 gap-3 ${
+                      className={`group flex items-start justify-between p-3.5 rounded border transition-all duration-200 gap-3 ${
                         done
                           ? "border-[var(--line)] bg-[var(--paper-subtle)]/40 opacity-60"
-                          : "border-[var(--line)] bg-[var(--paper)] hover:border-[var(--accent)]"
+                          : "border-[var(--line)] bg-[var(--paper)] hover:border-[var(--accent)] hover:-translate-y-0.5"
                       }`}
                     >
                       <div className="flex items-start gap-3">
@@ -498,7 +520,7 @@ export function DashboardCockpit({
                         </button>
                         <div className="space-y-1">
                           <div className="flex items-center gap-1.5 flex-wrap">
-                            <span className="font-mono text-[9px] uppercase px-1.5 py-0.2 rounded border border-[var(--line)] bg-[var(--surface)] text-[var(--gray)]">
+                            <span className="font-mono text-[9px] uppercase px-1.5 py-0.2 rounded border border-[var(--line)] bg-[var(--surface)] text-[var(--gray)] font-medium">
                               {m.tag}
                             </span>
                             <span className="font-mono text-xs text-[var(--accent)] font-bold">
@@ -509,7 +531,7 @@ export function DashboardCockpit({
                             </span>
                           </div>
                           <div
-                            className={`font-sans text-xs font-medium ${
+                            className={`font-sans text-xs font-medium transition-colors ${
                               done ? "line-through text-[var(--gray)]" : "text-[var(--ink)]"
                             }`}
                           >
@@ -521,9 +543,9 @@ export function DashboardCockpit({
                       <button
                         type="button"
                         onClick={() => onNavigateToTab?.(m.targetTab, m.targetContext)}
-                        className="shrink-0 font-mono text-xs text-[var(--ink)] border border-[var(--line)] hover:border-[var(--accent)] hover:text-[var(--accent)] px-2.5 py-1 rounded bg-[var(--surface)] active:scale-95 transition-all cursor-pointer font-medium"
+                        className="shrink-0 font-mono text-xs text-[var(--ink)] border border-[var(--line)] hover:border-[var(--accent)] hover:text-[var(--accent)] px-2.5 py-1 rounded bg-[var(--surface)] active:scale-95 transition-all cursor-pointer font-medium flex items-center gap-1 group-hover:border-[var(--accent)]"
                       >
-                        {de ? "Start" : "去执行 ->"}
+                        <span>{de ? "Start ->" : "去执行 ->"}</span>
                       </button>
                     </div>
                   );
@@ -532,13 +554,13 @@ export function DashboardCockpit({
             )}
           </div>
 
-          {/* 年级战役通关路线 (收纳折叠或轻量展现) */}
+          {/* 年级战役通关路线 (带柔和激活焦点环与阻尼过渡) */}
           <div className="rounded border border-[var(--line)] bg-[var(--surface)] p-4 space-y-3">
             <div className="flex items-center justify-between border-b border-[var(--line)]/50 pb-2">
               <span className="font-mono text-[10px] uppercase tracking-wider text-[var(--gray)]">
                 {de ? "Abitur-Stufenleiter" : "年级战役路线"}
               </span>
-              <span className="font-mono text-xs text-[var(--gray)]">
+              <span className="font-mono text-xs text-[var(--accent)] font-semibold">
                 {currentStufe.id.toUpperCase()}
               </span>
             </div>
@@ -554,15 +576,15 @@ export function DashboardCockpit({
                     key={s.id}
                     type="button"
                     onClick={() => setSelectedStufeId(s.id)}
-                    className={`p-2.5 rounded border text-left transition-all cursor-pointer ${
+                    className={`p-2.5 rounded border text-left transition-all duration-150 cursor-pointer ${
                       isSelected
-                        ? "border-[var(--accent)] bg-[var(--paper)]"
-                        : "border-[var(--line)] bg-[var(--paper)]/60 hover:bg-[var(--paper)]"
+                        ? "border-[var(--accent)] bg-[var(--paper)] -translate-y-0.5"
+                        : "border-[var(--line)] bg-[var(--paper)]/60 hover:bg-[var(--paper)] hover:border-[var(--line)]/80"
                     }`}
                   >
                     <div className="flex items-center justify-between font-mono text-[10px]">
                       <span className="font-bold text-[var(--ink)]">0{idx + 1}</span>
-                      <span className="text-[var(--gray)]">
+                      <span className={`font-semibold ${isDone ? "text-[var(--success)]" : isCurr ? "text-[var(--accent)]" : "text-[var(--gray)]"}`}>
                         {isDone ? "[OK]" : isCurr ? "[*]" : "[ ]"}
                       </span>
                     </div>
@@ -597,7 +619,7 @@ export function DashboardCockpit({
         </section>
 
         {/* ===================== 右侧辅助 (5 / 12 约 42%)：战力诊断室 ===================== */}
-        <section className="lg:col-span-5 space-y-4">
+        <section className="lg:col-span-5 space-y-4 stagger-3">
           <div className="rounded border border-[var(--line)] bg-[var(--surface)] p-5 space-y-4">
             {/* 诊断室头部与轨道微切换 */}
             <div className="flex items-center justify-between border-b border-[var(--line)]/60 pb-3">
@@ -619,7 +641,7 @@ export function DashboardCockpit({
                   }}
                   className={`px-2 py-0.5 text-[10px] font-mono rounded transition-all cursor-pointer ${
                     radarTrack === "gewi"
-                      ? "bg-[var(--surface)] text-[var(--ink)] font-bold border border-[var(--line)]"
+                      ? "bg-[var(--surface)] text-[var(--ink)] font-bold border border-[var(--line)] shadow-none"
                       : "text-[var(--gray)] hover:text-[var(--ink)]"
                   }`}
                 >
@@ -633,7 +655,7 @@ export function DashboardCockpit({
                   }}
                   className={`px-2 py-0.5 text-[10px] font-mono rounded transition-all cursor-pointer ${
                     radarTrack === "mint"
-                      ? "bg-[var(--surface)] text-[var(--ink)] font-bold border border-[var(--line)]"
+                      ? "bg-[var(--surface)] text-[var(--ink)] font-bold border border-[var(--line)] shadow-none"
                       : "text-[var(--gray)] hover:text-[var(--ink)]"
                   }`}
                 >
@@ -643,7 +665,7 @@ export function DashboardCockpit({
             </div>
 
             {/* 紧凑版 SVG 几何雷达画布 */}
-            <div className="flex flex-col items-center justify-center p-3 rounded border border-[var(--line)] bg-[var(--paper)]">
+            <div className="flex flex-col items-center justify-center p-3 rounded border border-[var(--line)] bg-[var(--paper)] transition-all">
               <svg
                 width="170"
                 height="170"
@@ -652,8 +674,8 @@ export function DashboardCockpit({
               >
                 <defs>
                   <linearGradient id="academicRadarGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                    <stop offset="0%" stopColor="var(--ink)" stopOpacity="0.18" />
-                    <stop offset="100%" stopColor="var(--accent)" stopOpacity="0.08" />
+                    <stop offset="0%" stopColor="var(--ink)" stopOpacity="0.22" />
+                    <stop offset="100%" stopColor="var(--accent)" stopOpacity="0.12" />
                   </linearGradient>
                 </defs>
 
@@ -688,7 +710,7 @@ export function DashboardCockpit({
                 <polygon
                   points={polygonPointsString}
                   fill="url(#academicRadarGrad)"
-                  stroke="var(--ink)"
+                  stroke="var(--accent)"
                   strokeWidth="1.5"
                   className="transition-all duration-500 ease-out"
                 />
@@ -708,10 +730,11 @@ export function DashboardCockpit({
                       <circle
                         cx={pt.x}
                         cy={pt.y}
-                        r={isSelected ? "4.5" : isHovered ? "4" : "3"}
+                        r={isSelected ? "5" : isHovered ? "4" : "3"}
                         fill={pt.m.isWeak ? "var(--warning)" : "var(--ink)"}
                         stroke="var(--surface)"
-                        strokeWidth="1.2"
+                        strokeWidth="1.5"
+                        className="transition-all duration-200"
                       />
                       <text
                         x={pt.x + (pt.x > radarCenter ? 6 : -6)}
@@ -737,14 +760,14 @@ export function DashboardCockpit({
                   <div
                     key={item.code}
                     onClick={() => setActiveMetricCode(item.code)}
-                    className={`flex items-center justify-between p-2 rounded border text-xs cursor-pointer transition-all ${
+                    className={`flex items-center justify-between p-2.5 rounded border text-xs cursor-pointer transition-all duration-150 ${
                       isSelected
-                        ? "border-[var(--accent)] bg-[var(--paper)]"
+                        ? "border-[var(--accent)] bg-[var(--paper)] -translate-x-0.5"
                         : "border-[var(--line)] bg-[var(--surface)] hover:bg-[var(--paper-subtle)]"
                     }`}
                   >
                     <div className="flex items-center gap-2">
-                      <span className="font-mono font-medium text-[var(--ink)]">
+                      <span className="font-mono font-semibold text-[var(--ink)]">
                         [{item.code}]
                       </span>
                       <span className="font-sans text-xs text-[var(--ink)]">
@@ -754,10 +777,10 @@ export function DashboardCockpit({
 
                     <div className="flex items-center gap-2">
                       <span
-                        className={`font-mono text-[10px] px-1.5 py-0.2 rounded border ${
+                        className={`font-mono text-[10px] px-2 py-0.5 rounded border font-medium ${
                           item.isWeak
-                            ? "border-[var(--warning)] text-[var(--warning)] bg-[var(--paper)] font-bold"
-                            : "border-[var(--line)] text-[var(--gray)]"
+                            ? "border-[var(--warning)]/40 text-[var(--warning)] bg-[var(--warning)]/5 font-bold"
+                            : "border-[var(--line)] text-[var(--gray)] bg-[var(--paper-subtle)]"
                         }`}
                       >
                         {item.isWeak && "[!] "}
