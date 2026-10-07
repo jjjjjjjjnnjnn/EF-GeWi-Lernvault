@@ -101,7 +101,15 @@ tags: [EF, Meta, Journal]
    - 全面引入 `tracking-tight`，所有主标题与分值统一加粗至 `text-slate-900 font-extrabold`；
    - 彻底消除正文与标题中发虚发淡的 `text-slate-400`，字阶对比坚实有力；
    - 在 100% 原始缩放比例下，无需缩放即可清晰利落全景收尽。
-4. **全量门禁检验结果**：
+## 10. 全量打通主题颜色设计 Token（解决“温润纸书”等模式背景未随主题变色）
+1. **症结深度定位**：
+   - 之前在 `App.tsx` 中 `<main className="...">` 针对 `tab === "home"` 硬编码了冷浅灰 `bg-[#F8FAFC]`，覆写了 CSS 变量；导致切换到「温润纸书」（`data-theme="classic"`）或「暗黑精锐」（`data-theme="cyber"`）时，侧边栏与普通页面正确切换为浅黄象牙白（`#F9F8F5`）/深黑，但首页的主视口背景依然是突兀的死灰冷白；
+   - 在 `DashboardCockpit.tsx` 内部，部分元素写死了 `bg-white`，导致卡片与容器未跟随 `--surface` 变换。
+2. **系统级修复落地**：
+   - 将 `App.tsx` 中的 `<main>` 背景统一重构为响应当前主题变量的 `bg-[var(--paper)]`；
+   - 将 `DashboardCockpit.tsx` 中所有的硬编码背景（头像底框、行动卡底色、Stepper 节点、次级按钮）全部换成语义化 Token `bg-[var(--surface)]`、`bg-[var(--paper-subtle)]` 与 `border-[var(--line)]`；
+   - 切换到「温润纸书」模式时，整个首页画布底色、卡片底色与温暖书卷材质严丝合缝统一为柔和浅黄象牙纸质（`#F9F8F5` / `#FFFFFF`），久读不刺眼。
+3. **全套门禁通过**：
    - `vitest run src/modules/DashboardCockpit.test.tsx` 4/4 PASS；
    - `vitest run src/modules.test.tsx` 23/23 PASS；
    - `npx tsc -b` 0 报错；
